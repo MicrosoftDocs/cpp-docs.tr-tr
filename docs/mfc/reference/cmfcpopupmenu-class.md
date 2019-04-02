@@ -160,12 +160,12 @@ helpviewer_keywords:
 - CMFCPopupMenu [MFC], OnChangeHot
 - CMFCPopupMenu [MFC], OnChooseItem
 ms.assetid: 9555dca1-8c9c-44c9-af72-0659ddad128e
-ms.openlocfilehash: b45ac09ff87c191e55e403951fdff18cae33256d
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: bd6629df4274af8a4f450024f0bad6da45ae3683
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57292282"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58776017"
 ---
 # <a name="cmfcpopupmenu-class"></a>CMFCPopupMenu sınıfı
 
@@ -278,7 +278,7 @@ Normalde, MFC açılır menüleri otomatik olarak oluşturur. Oluşturmak istiyo
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, bir açılır menü nesneyi yapılandırma gösterilmektedir. Örnek, logo ve açılır menüyü sesi ayarlayın, animasyon hızı ve türünü ayarlama, dışında ana çerçeve açılır menü görüntülendiğinde menüsü, gölgeler çizmek, maksimum genişliğini ayarlamak ve açılır menüyü sağ menü hizalamasını ayarlama gösterilmektedir. Bu kod parçacığı parçasıdır [özel sayfaları örnek](../../visual-cpp-samples.md).
+Aşağıdaki örnek, bir açılır menü nesneyi yapılandırma gösterilmektedir. Örnek, logo ve açılır menüyü sesi ayarlayın, animasyon hızı ve türünü ayarlama, dışında ana çerçeve açılır menü görüntülendiğinde menüsü, gölgeler çizmek, maksimum genişliğini ayarlamak ve açılır menüyü sağ menü hizalamasını ayarlama gösterilmektedir. Bu kod parçacığı parçasıdır [özel sayfaları örnek](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_CustomPages#2](../../mfc/reference/codesnippet/cpp/cmfcpopupmenu-class_1.cpp)]
 
@@ -451,7 +451,7 @@ Varsa *bOwnMessage* menü iletiler TRUE, framework yollar olan *pWndParent*. *pW
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki örnek nasıl kullanılacağını gösterir `Create` yöntemi `CMFCPopuMenu` sınıfı. Bu kod parçacığı parçasıdır [özel sayfaları örnek](../../visual-cpp-samples.md).
+Aşağıdaki örnek nasıl kullanılacağını gösterir `Create` yöntemi `CMFCPopuMenu` sınıfı. Bu kod parçacığı parçasıdır [özel sayfaları örnek](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_CustomPages#1](../../mfc/reference/codesnippet/cpp/cmfcpopupmenu-class_2.cpp)]
 

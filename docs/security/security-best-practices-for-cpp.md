@@ -8,12 +8,12 @@ helpviewer_keywords:
 - security [C++]
 - security [C++], best practices
 ms.assetid: 86acaccf-cdb4-4517-bd58-553618e3ec42
-ms.openlocfilehash: 81a15f7a34ebe6c4c101932074c63cb1c7f7fd26
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.openlocfilehash: bc449d0bbf222391868dc7586e0245fd6e8cd2ac
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57742474"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58769868"
 ---
 # <a name="security-best-practices-for-c"></a>C++ İçin En İyi Güvenlik Uygulamaları
 
@@ -46,7 +46,7 @@ C çalışma zamanı kitaplığı (CRT) güvenlik riskleri konusunda sizi uyarma
 
 ## <a name="safeint-library"></a>SafeInt Kitaplığı
 
-[SafeInt Kitaplığı](../windows/safeint-library.md) tamsayı taşıyor ve uygulama matematiksel işlemler gerçekleştirdiğinde oluşabilecek açıklardan diğer hataları önlemeye yardımcı olur. `SafeInt` Kitaplığı içerir [SafeInt sınıfı](../windows/safeint-class.md), [Safeıntexception sınıfı](../windows/safeintexception-class.md)ve birkaç [SafeInt işlevleri](../windows/safeint-functions.md).
+[SafeInt Kitaplığı](../safeint/safeint-library.md) tamsayı taşıyor ve uygulama matematiksel işlemler gerçekleştirdiğinde oluşabilecek açıklardan diğer hataları önlemeye yardımcı olur. `SafeInt` Kitaplığı içerir [SafeInt sınıfı](../safeint/safeint-class.md), [Safeıntexception sınıfı](../safeint/safeintexception-class.md)ve birkaç [SafeInt işlevleri](../safeint/safeint-functions.md).
 
 `SafeInt` Sıfırla bölme yararlanan ve sınıfı tamsayı taşması karşı korur. Farklı türlerde değerler arasında karşılaştırma işlemek için bunu kullanabilirsiniz. Bu iki hata işleme ilkeleri sağlar. İçin varsayılan ilkedir `SafeInt` sınıfının bir `SafeIntException` sınıfı özel durumu raporuna neden bir matematiksel işlem tamamlanamıyor. İkinci ilkeyi içindir `SafeInt` sınıfı programın yürütülmesini durdurur. Ayrıca, özel bir ilke de tanımlayabilirsiniz.
 

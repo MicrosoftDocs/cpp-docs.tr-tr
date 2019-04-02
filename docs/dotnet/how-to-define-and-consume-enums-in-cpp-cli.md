@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - enum class, specifying underlying types
 ms.assetid: df8f2b91-b9d2-4fab-9be4-b1d58b8bc570
-ms.openlocfilehash: 0252c4b64690f6a2fb0fd97b97841fe45fcce244
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.openlocfilehash: 9787b7b96f83b2926c65209254c88eb56fe1a8ab
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57751459"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58774743"
 ---
 # <a name="how-to-define-and-consume-enums-in-ccli"></a>Nasıl yapılır: Tanımlama ve kullanma numaralandırmalar C + +/ CLI
 
@@ -92,7 +92,7 @@ Aşağıdaki işleçleri geçerli numaralandırmalar C + +/ CLI:
 Derleyici, hiçbir statik veya dinamik bir sabit listesi işlemin sonucu denetimi yapar; bir işlem değil geçerli sabit listesine numaralandırıcılar aralığında bir değer neden olabilir.
 
 > [!NOTE]
->  C ++ 11, C + yönetilen enum sınıfları önemli ölçüde farklı enum sınıf türleri yönetilmeyen kodda tanıtır +/ CLI. Özellikle, C ++ 11 enum sınıfı türü yönetilen enum sınıfı türü olarak aynı işleçler C + desteklemiyor +/ CLI ve C + +/ CLI kaynak kodu sağlamalısınız bir yönetilen Numaralandırıcı erişilebilirlik belirticisini sınıf bildirimleri yönetilmeyen (C++'tan bunları ayırt etmek için 11) enum sınıf bildirimleri. C + enum sınıfları hakkında daha fazla bilgi için +/ CLI, C + +/ CX ve C ++ 11, [sabit listesi sınıfı](../windows/enum-class-cpp-component-extensions.md).
+>  C ++ 11, C + yönetilen enum sınıfları önemli ölçüde farklı enum sınıf türleri yönetilmeyen kodda tanıtır +/ CLI. Özellikle, C ++ 11 enum sınıfı türü yönetilen enum sınıfı türü olarak aynı işleçler C + desteklemiyor +/ CLI ve C + +/ CLI kaynak kodu sağlamalısınız bir yönetilen Numaralandırıcı erişilebilirlik belirticisini sınıf bildirimleri yönetilmeyen (C++'tan bunları ayırt etmek için 11) enum sınıf bildirimleri. C + enum sınıfları hakkında daha fazla bilgi için +/ CLI, C + +/ CX ve C ++ 11, [sabit listesi sınıfı](../extensions/enum-class-cpp-component-extensions.md).
 
 ```
 // mcppv2_enum_5.cpp
@@ -137,4 +137,4 @@ True
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[sabit listesi sınıfı](../windows/enum-class-cpp-component-extensions.md)
+[sabit listesi sınıfı](../extensions/enum-class-cpp-component-extensions.md)

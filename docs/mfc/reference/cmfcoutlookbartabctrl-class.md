@@ -44,12 +44,12 @@ helpviewer_keywords:
 - CMFCOutlookBarTabCtrl [MFC], SetToolbarImageList
 - CMFCOutlookBarTabCtrl [MFC], SetVisiblePageButtons
 ms.assetid: b1f2b3f7-cc59-49a3-99d8-7ff9b37c044b
-ms.openlocfilehash: 01effb8cb1142db0bcae6f9c456e4a3b3abd69e8
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: c791f3988c7257ed7d188917394e74a6dbeca98b
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57269948"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58776810"
 ---
 # <a name="cmfcoutlookbartabctrl-class"></a>CMFCOutlookBarTabCtrl Class
 
@@ -109,7 +109,7 @@ Yerleştirme desteği olan bir Outlook çubuğu oluşturmak için bir `CMFCOutlo
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek nasıl başlatılacağını gösterir. bir `CMFCOutlookBarTabCtrl` nesne ve çeşitli yöntemlerle kullanma `CMFCOutlookBarTabCtrl` sınıfı. Örnek Outlook Çubuğu sekmesinde sayfa düğmelerini üzerindeki metin etiketinin yerinde düzenlemeyi etkinleştir, animasyon etkinleştirmek için kullanıcının Outlook Çubuğu bölmesi düğmelerini kaydırmak Outlook sekmesini devamı kenarlık boyutunu ayarlayın kaydırma tanıtıcıları etkinleştirme nasıl gösterir Rol ve Outlook Çubuğu sekme düğmelerinin metin etiketlerini hizalamasını ayarlama. Bu kod parçacığı parçasıdır [Outlook gösterim örneği](../../visual-cpp-samples.md).
+Aşağıdaki örnek nasıl başlatılacağını gösterir. bir `CMFCOutlookBarTabCtrl` nesne ve çeşitli yöntemlerle kullanma `CMFCOutlookBarTabCtrl` sınıfı. Örnek Outlook Çubuğu sekmesinde sayfa düğmelerini üzerindeki metin etiketinin yerinde düzenlemeyi etkinleştir, animasyon etkinleştirmek için kullanıcının Outlook Çubuğu bölmesi düğmelerini kaydırmak Outlook sekmesini devamı kenarlık boyutunu ayarlayın kaydırma tanıtıcıları etkinleştirme nasıl gösterir Rol ve Outlook Çubuğu sekme düğmelerinin metin etiketlerini hizalamasını ayarlama. Bu kod parçacığı parçasıdır [Outlook gösterim örneği](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_OutlookDemo#1](../../mfc/reference/codesnippet/cpp/cmfcoutlookbartabctrl-class_1.cpp)]
 [!code-cpp[NVC_MFC_OutlookDemo#2](../../mfc/reference/codesnippet/cpp/cmfcoutlookbartabctrl-class_2.cpp)]
@@ -170,7 +170,7 @@ Ayarlarsanız *bDetachable* true olarak `AddControl` dahili oluşturur bir `CDoc
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki örnek nasıl kullanılacağını gösterir `AddControl` yönteminde `CMFCOutlookBarTabCtrl` sınıfı. Bu kod parçacığı parçasıdır [Outlook gösterim örneği](../../visual-cpp-samples.md).
+Aşağıdaki örnek nasıl kullanılacağını gösterir `AddControl` yönteminde `CMFCOutlookBarTabCtrl` sınıfı. Bu kod parçacığı parçasıdır [Outlook gösterim örneği](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_OutlookDemo#3](../../mfc/reference/codesnippet/cpp/cmfcoutlookbartabctrl-class_3.cpp)]
 

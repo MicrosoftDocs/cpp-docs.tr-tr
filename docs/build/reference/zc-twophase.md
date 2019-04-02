@@ -9,12 +9,12 @@ helpviewer_keywords:
 - twoPhase
 - disable two-phase name lookup
 - /Zc:twoPhase
-ms.openlocfilehash: ebd577bc25a2789e3a6b328a4c9cd2e1596d04da
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.openlocfilehash: b9e94f131448cb9be6c31962ecd19607ceb1b708
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57821410"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58776043"
 ---
 # <a name="zctwophase--disable-two-phase-name-lookup"></a>/ZC:twoPhase-(iki aşamalı ad aramayı devre dışı bırak)
 
@@ -158,7 +158,7 @@ typename T::template X<T>::TYPE func(typename T::TYPE)
 
 Altında **/Zc:twoPhase-** ve eski derleyicilerde Derleyici yalnızca gerektirir `template` satır 2 anahtar sözcüğü. Varsayılan olarak uyumluluk modunda, derleyici artık da gerektirir ve `template` göstermek için 4. satırı şuna anahtar sözcüğü `T::X<T>` bir şablondur. Bu anahtar sözcük eksik olan kodunu arayın ve kodunuzu standardına uygun hale getirmek için sağlayın.
 
-Uyumluluk sorunları hakkında daha fazla bilgi için bkz. [Visual Studio'da C++ uyumluluk geliştirmeleri](../../cpp-conformance-improvements-2017.md) ve [standart dışı davranış](../../cpp/nonstandard-behavior.md).
+Uyumluluk sorunları hakkında daha fazla bilgi için bkz. [Visual Studio'da C++ uyumluluk geliştirmeleri](../../overview/cpp-conformance-improvements-2017.md) ve [standart dışı davranış](../../cpp/nonstandard-behavior.md).
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
 

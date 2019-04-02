@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4484
 ms.assetid: 3d30e5b3-2297-45b7-a37a-1360056fdd0e
-ms.openlocfilehash: 71a3d903ba32fecac4b2d8bfc3e0a93f19d0f4ed
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 29e99da02aa0144699d3c20e523b5e5e4b6b8f72
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50473183"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58766806"
 ---
 # <a name="compiler-warning-c4484"></a>Derleyici Uyarısı C4484
 
@@ -23,9 +23,9 @@ Daha fazla bilgi için bkz.:
 
 - [/clr (Ortak Dil Çalışma Zamanı Derlemesi)](../../build/reference/clr-common-language-runtime-compilation.md)
 
-- [override](../../windows/override-cpp-component-extensions.md)
+- [override](../../extensions/override-cpp-component-extensions.md)
 
-- [Yeni (vtable'da yeni yuva)](../../windows/new-new-slot-in-vtable-cpp-component-extensions.md)
+- [Yeni (vtable'da yeni yuva)](../../extensions/new-new-slot-in-vtable-cpp-component-extensions.md)
 
 C4484 her zaman hata olarak verilir. Kullanım [uyarı](../../preprocessor/warning.md) C4484 bastırmak için pragması.
 

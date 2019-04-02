@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4485
 ms.assetid: a6f2b437-ca93-4dcd-b9cb-df415e10df86
-ms.openlocfilehash: 7138f1a3cecaaf75fbab01fd1aee18529b7a3a84
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b5afb829485e0e9533a14e818e6d6785f268a83b
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50652480"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58772103"
 ---
 # <a name="compiler-warning-c4485"></a>Derleyici Uyarısı C4485
 
@@ -19,7 +19,7 @@ ms.locfileid: "50652480"
 
 Erişimci, ile veya olmadan geçersiz kılmalar `virtual` anahtar sözcüğü, bir temel sınıf erişimci işlevi ancak `override` veya `new` tanımlayıcısı geçersiz kılma işlevi imzasının bir parçası değildi. Ekleme `new` veya `override` bu uyarıyı çözmek için tanımlayıcısı.
 
-Bkz: [geçersiz kılma](../../windows/override-cpp-component-extensions.md) ve [yeni (vtable'da yeni yuva)](../../windows/new-new-slot-in-vtable-cpp-component-extensions.md) daha fazla bilgi için.
+Bkz: [geçersiz kılma](../../extensions/override-cpp-component-extensions.md) ve [yeni (vtable'da yeni yuva)](../../extensions/new-new-slot-in-vtable-cpp-component-extensions.md) daha fazla bilgi için.
 
 C4485 her zaman hata olarak verilir. Kullanım [uyarı](../../preprocessor/warning.md) C4485 bastırmak için pragması.
 

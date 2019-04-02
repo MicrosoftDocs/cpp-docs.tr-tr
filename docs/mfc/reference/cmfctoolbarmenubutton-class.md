@@ -92,12 +92,12 @@ helpviewer_keywords:
 - CMFCToolBarMenuButton [MFC], DrawDocumentIcon
 - CMFCToolBarMenuButton [MFC], m_bAlwaysCallOwnerDraw
 ms.assetid: cfa50176-7e4b-4527-9904-86a1b48fc1bc
-ms.openlocfilehash: 775d977fa1c995c42cc85660b1c9d13aea40a01e
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 7733969a0218dacf481ac82c764911c61ecabbbf
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57281531"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58769158"
 ---
 # <a name="cmfctoolbarmenubutton-class"></a>CMFCToolBarMenuButton sınıfı
 
@@ -183,7 +183,7 @@ A `CMFCToolBarMenuButton` menü, alt menüyü içeren bir menü öğesi, bir men
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek nasıl yapılandırılacağını gösteren bir `CMFCToolBarMenuButton` nesne. Kod açılan menüsü palet modunda olduğunu belirtin ve kullanıcı menü düğmesine bir menü çubuğu dışına sürüklediğinde oluşturulur etkinleştiriliyorken çubuğu için kimliği belirtin gösterilmektedir. Bu kod parçacığı parçasıdır [Word paneli örnek](../../visual-cpp-samples.md).
+Aşağıdaki örnek nasıl yapılandırılacağını gösteren bir `CMFCToolBarMenuButton` nesne. Kod açılan menüsü palet modunda olduğunu belirtin ve kullanıcı menü düğmesine bir menü çubuğu dışına sürüklediğinde oluşturulur etkinleştiriliyorken çubuğu için kimliği belirtin gösterilmektedir. Bu kod parçacığı parçasıdır [Word paneli örnek](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_WordPad#10](../../mfc/reference/codesnippet/cpp/cmfctoolbarmenubutton-class_1.cpp)]
 
@@ -241,7 +241,7 @@ Varsa *uiID* geçerli bir komut kimliği, kullanıcı tıkladığında bu komut 
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki örnek, bir nesne oluşturmak gösterilmiştir `CMFCToolBarMenuButton` sınıfı. Bu kod parçacığı parçasıdır [Word paneli örnek](../../visual-cpp-samples.md).
+Aşağıdaki örnek, bir nesne oluşturmak gösterilmiştir `CMFCToolBarMenuButton` sınıfı. Bu kod parçacığı parçasıdır [Word paneli örnek](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_WordPad#9](../../mfc/reference/codesnippet/cpp/cmfctoolbarmenubutton-class_2.cpp)]
 

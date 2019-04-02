@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2144
 ms.assetid: 49f3959b-324f-4c06-9588-c0ecef5dc5b3
-ms.openlocfilehash: f6472fc70ee4a86bed1422941e758127009f14cb
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: a75330d26b0924e60f7e46d10d617341709d7e23
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50483336"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58778292"
 ---
 # <a name="compiler-error-c2144"></a>Derleyici Hatası C2144
 
@@ -23,7 +23,7 @@ Bu hata, bir eksik kapanış ayracı, sağ parantez veya noktalı virgül taraf�
 
 C2144, boşluk karakterini içeren bir CLR anahtar sözcüğü bir makro oluşturmaya çalışırken de oluşabilir.
 
-Tür iletme çalışıyorsanız C2144 de görebilirsiniz. Bkz: [tür iletme (C + +/ CLI)](../../windows/type-forwarding-cpp-cli.md) daha fazla bilgi için.
+Tür iletme çalışıyorsanız C2144 de görebilirsiniz. Bkz: [tür iletme (C + +/ CLI)](../../extensions/type-forwarding-cpp-cli.md) daha fazla bilgi için.
 
 ## <a name="examples"></a>Örnekler
 

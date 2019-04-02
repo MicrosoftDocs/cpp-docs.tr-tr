@@ -52,12 +52,12 @@ helpviewer_keywords:
 - CPropertySheet [MFC], SetWizardMode
 - CPropertySheet [MFC], m_psh
 ms.assetid: 8461ccff-d14f-46e0-a746-42ad642ef94e
-ms.openlocfilehash: c5fd3a682aa649091712a09a9131081c06d29ca6
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 0e5194a356684f2ff86d74a0ed1f37f332bcffeb
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57300628"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58781659"
 ---
 # <a name="cpropertysheet-class"></a>CPropertySheet sınıfı
 
@@ -607,7 +607,7 @@ void MapDialogRect(LPRECT lpRect) const;
 ### <a name="parameters"></a>Parametreler
 
 *lpRect*<br/>
-İşaret eden bir [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) yapısı veya [CRect](../../atl-mfc-shared/reference/crect-class.md) iletişim kutusu içeren nesne koordinatları dönüştürülecek.
+İşaret eden bir [RECT](/previous-versions/dd162897\(v=vs.85\)) yapısı veya [CRect](../../atl-mfc-shared/reference/crect-class.md) iletişim kutusu içeren nesne koordinatları dönüştürülecek.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -830,9 +830,9 @@ Bir anahtar Özellik Sayfası Sihirbazı kullanıcı kullanarak ileri gider veya
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MFC örnek CMNCTRL1](../../visual-cpp-samples.md)<br/>
-[MFC örnek CMNCTRL2](../../visual-cpp-samples.md)<br/>
-[MFC örnek PROPDLG](../../visual-cpp-samples.md)<br/>
-[MFC örnek SNAPVW](../../visual-cpp-samples.md)<br/>
+[MFC örnek CMNCTRL1](../../overview/visual-cpp-samples.md)<br/>
+[MFC örnek CMNCTRL2](../../overview/visual-cpp-samples.md)<br/>
+[MFC örnek PROPDLG](../../overview/visual-cpp-samples.md)<br/>
+[MFC örnek SNAPVW](../../overview/visual-cpp-samples.md)<br/>
 [CWnd Sınıfı](../../mfc/reference/cwnd-class.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)

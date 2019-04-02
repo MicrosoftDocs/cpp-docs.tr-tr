@@ -32,12 +32,12 @@ helpviewer_keywords:
 - CSpinButtonCtrl [MFC], SetPos
 - CSpinButtonCtrl [MFC], SetRange
 ms.assetid: 509bfd76-1c5a-4af6-973f-e133c0b87734
-ms.openlocfilehash: 3c973d92550469804a5389b84f53005e4f2c154f
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 6f864a37c46158ab98776cd96d9f50d7cfaeb13d
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57290436"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58776355"
 ---
 # <a name="cspinbuttonctrl-class"></a>CSpinButtonCtrl sınıfı
 
@@ -120,7 +120,7 @@ virtual BOOL Create(
 Döndürme düğme denetiminin stilini belirtir. Değer değiştirme düğmesi denetimi stilleri herhangi bir birleşimini denetimi için geçerlidir. Bu stiller açıklanan [yukarı-aşağı denetim stilleri](/windows/desktop/Controls/up-down-control-styles) Windows SDK.
 
 *Rect*<br/>
-Döndürme düğme denetiminin boyutunu ve konumunu belirtir. Ya da olabilir bir [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesi veya bir [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) yapısı
+Döndürme düğme denetiminin boyutunu ve konumunu belirtir. Ya da olabilir bir [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesi veya bir [RECT](/previous-versions/dd162897\(v=vs.85\)) yapısı
 
 *pParentWnd*<br/>
 Değer değiştirme düğmesi denetiminin üst penceresine, genellikle bir işaretçi bir `CDialog`. NULL olmamalıdır.
@@ -160,7 +160,7 @@ Oluşturulan denetimin genişletilmiş stilini belirtir. Genişletilmiş windows
 Döndürme düğme denetiminin stilini belirtir. Değer değiştirme düğmesi denetimi stilleri herhangi bir birleşimini denetimi için geçerlidir. Bu stiller açıklanan [yukarı-aşağı denetim stilleri](/windows/desktop/Controls/up-down-control-styles) Windows SDK.
 
 *Rect*<br/>
-Bir başvuru bir [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) istemci koordinatları olarak oluşturulması için pencerenin konumunu ve boyutunu açıklayan yapısı *pParentWnd*.
+Bir başvuru bir [RECT](/previous-versions/dd162897\(v=vs.85\)) istemci koordinatları olarak oluşturulması için pencerenin konumunu ve boyutunu açıklayan yapısı *pParentWnd*.
 
 *pParentWnd*<br/>
 Denetimin ana penceresine bir işaretçi.
@@ -399,7 +399,7 @@ Denetimi üst ve alt sınırları. İçin `SetRange`, hiçbir sınır UD_MAXVAL 
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MFC örnek CMNCTRL2](../../visual-cpp-samples.md)<br/>
+[MFC örnek CMNCTRL2](../../overview/visual-cpp-samples.md)<br/>
 [CWnd Sınıfı](../../mfc/reference/cwnd-class.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
 [CSliderCtrl Sınıfı](../../mfc/reference/csliderctrl-class.md)

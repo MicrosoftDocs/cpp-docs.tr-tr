@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - boxing, implicit
 ms.assetid: 33f7fc7d-5674-44a2-a859-0e6a04fae519
-ms.openlocfilehash: 35d5cbbec8d1364fbc954457b42470f82a01ed35
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.openlocfilehash: b771f9e9c1dc05fcd2ead19f5202747d7c475a09
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57744430"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58774457"
 ---
 # <a name="standard-conversions-and-implicit-boxing"></a>Standart Dönüştürmeler ve Örtük Kutulama
 
@@ -40,4 +40,4 @@ int main() {
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Kutulama](../windows/boxing-cpp-component-extensions.md)
+[Kutulama](../extensions/boxing-cpp-component-extensions.md)

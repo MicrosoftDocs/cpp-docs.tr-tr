@@ -26,12 +26,12 @@ helpviewer_keywords:
 - CMFCRibbonProgressBar [MFC], SetPos
 - CMFCRibbonProgressBar [MFC], SetRange
 ms.assetid: de3d9f2e-ed59-480e-aa7d-08a33ab36c67
-ms.openlocfilehash: 626666a8f03a8312bd26fceca745f82ad1ab89b1
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 7c16217378cb8825ca4605687770de177e720c1d
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57285925"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58778175"
 ---
 # <a name="cmfcribbonprogressbar-class"></a>CMFCRibbonProgressBar sınıfı
 
@@ -71,7 +71,7 @@ A `CMFCRibbonProgressBar` iki modda çalışabilir: normal ve sonsuz. Normal mod
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, çeşitli yöntemlerin nasıl kullanılacağını gösterir `CMFCRibbonProgressBar` sınıfı. Örnek, ilerleme çubuğu için minimum ve maksimum değerler ve ilerleme çubuğu geçerli konumunu ayarlayın (bir işlemi tamamlama süresi bilinmeyen olduğu), sonsuz modunda çalışacak şekilde ilerleme çubuğu ayarlama işlemini gösterir. Bu kod parçacığı parçasıdır [MS Office 2007 Demo örnek](../../visual-cpp-samples.md).
+Aşağıdaki örnek, çeşitli yöntemlerin nasıl kullanılacağını gösterir `CMFCRibbonProgressBar` sınıfı. Örnek, ilerleme çubuğu için minimum ve maksimum değerler ve ilerleme çubuğu geçerli konumunu ayarlayın (bir işlemi tamamlama süresi bilinmeyen olduğu), sonsuz modunda çalışacak şekilde ilerleme çubuğu ayarlama işlemini gösterir. Bu kod parçacığı parçasıdır [MS Office 2007 Demo örnek](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_MSOffice2007Demo#11](../../mfc/reference/codesnippet/cpp/cmfcribbonprogressbar-class_1.cpp)]
 

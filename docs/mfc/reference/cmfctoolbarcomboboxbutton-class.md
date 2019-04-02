@@ -64,12 +64,12 @@ helpviewer_keywords:
 - CMFCToolBarComboBoxButton [MFC], SetDropDownHeight
 - CMFCToolBarComboBoxButton [MFC], SetFlatMode
 ms.assetid: 32fa39f7-8e4e-4f0a-a31d-7b540d969a6c
-ms.openlocfilehash: fae70e44657023b7a7b93f72599bef4ba6faf307
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: e3c124103aa95d9db5095e438a6b21d46c7cb35d
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57303176"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58772078"
 ---
 # <a name="cmfctoolbarcomboboxbutton-class"></a>CMFCToolBarComboBoxButton Class
 
@@ -136,7 +136,7 @@ Daha fazla bilgi için [izlenecek yol: Araç çubuklarına denetimler yerleştir
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, çeşitli yöntemlerin nasıl kullanılacağını gösterir `CMFCToolBarComboBoxButton` sınıfı. Örnek düzenleme ve birleşik giriş kutularını etkinleştirmek, dikey konumu birleşik giriş kutusu düğmeleri uygulamada ayarlayın, bırakıldığında, liste kutusunun yüksekliğini ayarlama, birleşik giriş kutusu düğmeleri düz stil görünümünü uygulamada ayarlamak nasıl gösterir , metin düzenleme kutusuna birleşik giriş kutusu düğmesi ayarlayın. Bu kod parçacığı parçasıdır [Visual Studio gösterim örneği](../../visual-cpp-samples.md).
+Aşağıdaki örnek, çeşitli yöntemlerin nasıl kullanılacağını gösterir `CMFCToolBarComboBoxButton` sınıfı. Örnek düzenleme ve birleşik giriş kutularını etkinleştirmek, dikey konumu birleşik giriş kutusu düğmeleri uygulamada ayarlayın, bırakıldığında, liste kutusunun yüksekliğini ayarlama, birleşik giriş kutusu düğmeleri düz stil görünümünü uygulamada ayarlamak nasıl gösterir , metin düzenleme kutusuna birleşik giriş kutusu düğmesi ayarlayın. Bu kod parçacığı parçasıdır [Visual Studio gösterim örneği](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_VisualStudioDemo#36](../../mfc/codesnippet/cpp/cmfctoolbarcomboboxbutton-class_1.cpp)]
 [!code-cpp[NVC_MFC_VisualStudioDemo#37](../../mfc/codesnippet/cpp/cmfctoolbarcomboboxbutton-class_2.cpp)]

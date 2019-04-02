@@ -30,12 +30,12 @@ helpviewer_keywords:
 - CPageSetupDialog [MFC], PreDrawPage
 - CPageSetupDialog [MFC], m_psd
 ms.assetid: 049c0ac8-f254-4854-9414-7a8271d1447a
-ms.openlocfilehash: 9a8940aa23b23281a6de6ce7e75bb1e43341b14a
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 01a320fbcd9760bab484f3c75553613852ca9aed
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57277891"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58778097"
 ---
 # <a name="cpagesetupdialog-class"></a>CPageSetupDialog sınıfı
 
@@ -405,6 +405,6 @@ Resmin çizim özelleştirmek için bu işlevi geçersiz kılar. Bu işlev geçe
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MFC örnek WORDPAD](../../visual-cpp-samples.md)<br/>
+[MFC örnek WORDPAD](../../overview/visual-cpp-samples.md)<br/>
 [CCommonDialog Sınıfı](../../mfc/reference/ccommondialog-class.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)

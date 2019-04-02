@@ -104,12 +104,12 @@ helpviewer_keywords:
 - CMFCTabCtrl [MFC], SynchronizeScrollBar
 - CMFCTabCtrl [MFC], m_bEnableActivate
 ms.assetid: d441385d-2c72-4203-96fa-deae2273da35
-ms.openlocfilehash: 8dc8c51cc1847d29b76e2017db4c1368b35b9a9f
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 43eb171ce9b3ea3454855dc1f92d9aa1b74645d4
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57281687"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58778461"
 ---
 # <a name="cmfctabctrl-class"></a>CMFCTabCtrl sınıfı
 
@@ -243,7 +243,7 @@ Olarak takma denetim çubuğunu sekmeli bir pencere oluşturma örneği için bk
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, çeşitli yöntemlerin nasıl kullanılacağını gösterir `CMFCTabCtrl` yapılandırmak için sınıf bir `CMFCTabCtrl` nesne. Örneğin, sekme ekleyin, Kapat düğmesi etkin sekmede Göster, düzenlenebilir sekme etiketleri etkinleştirmek ve sekmeli pencere etiketlerin açılır menüyü görüntülemek açıklanmaktadır. Bu örneğin parçasıdır [durumu toplama örnek](../../visual-cpp-samples.md).
+Aşağıdaki örnek, çeşitli yöntemlerin nasıl kullanılacağını gösterir `CMFCTabCtrl` yapılandırmak için sınıf bir `CMFCTabCtrl` nesne. Örneğin, sekme ekleyin, Kapat düğmesi etkin sekmede Göster, düzenlenebilir sekme etiketleri etkinleştirmek ve sekmeli pencere etiketlerin açılır menüyü görüntülemek açıklanmaktadır. Bu örneğin parçasıdır [durumu toplama örnek](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_StateCollection#1](../../mfc/reference/codesnippet/cpp/cmfctabctrl-class_1.h)]
 [!code-cpp[NVC_MFC_StateCollection#3](../../mfc/reference/codesnippet/cpp/cmfctabctrl-class_2.cpp)]
@@ -355,7 +355,7 @@ Aşağıdaki tablo için belirlediğiniz değerleri listeler *konumu* parametres
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki örnek nasıl kullanılacağını gösterir `Create` yönteminde `CMFCTabCtrl` sınıfı. Bu örneğin parçasıdır [durumu toplama örnek](../../visual-cpp-samples.md).
+Aşağıdaki örnek nasıl kullanılacağını gösterir `Create` yönteminde `CMFCTabCtrl` sınıfı. Bu örneğin parçasıdır [durumu toplama örnek](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_StateCollection#1](../../mfc/reference/codesnippet/cpp/cmfctabctrl-class_1.h)]
 [!code-cpp[NVC_MFC_StateCollection#2](../../mfc/reference/codesnippet/cpp/cmfctabctrl-class_3.cpp)]

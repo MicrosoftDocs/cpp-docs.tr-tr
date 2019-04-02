@@ -140,12 +140,12 @@ helpviewer_keywords:
 - CMFCToolBarImages [MFC], PreMultiplyAlpha
 - CMFCToolBarImages [MFC], m_bDisableTrueColorAlpha
 ms.assetid: d4e50518-9ffc-406f-9996-f79e5cd38155
-ms.openlocfilehash: bbd2a2d301646b4d3897d9fe4990bdfd1e48325b
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 210432b8ec193efccc0bf2338089dbccca310726
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57303354"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58776420"
 ---
 # <a name="cmfctoolbarimages-class"></a>Cmfctoolbarımages sınıfı
 
@@ -252,7 +252,7 @@ Araç çubuğu görüntülerini tarafından yönetilen, tam bit eşlem `CMFCTool
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek nasıl yapılandırılacağını gösteren bir `CMFCToolBarImages` çeşitli yöntemleri kullanarak nesne `CMFCToolBarImages` sınıfı. Örneğin, araç çubuğu görüntüsü boyutunu ayarlayın, bir görüntüyü yükleme ve resminin saydam rengi ayarlamak gösterilmektedir. Bu kod parçacığı parçasıdır [Visual Studio gösterim örneği](../../visual-cpp-samples.md).
+Aşağıdaki örnek nasıl yapılandırılacağını gösteren bir `CMFCToolBarImages` çeşitli yöntemleri kullanarak nesne `CMFCToolBarImages` sınıfı. Örneğin, araç çubuğu görüntüsü boyutunu ayarlayın, bir görüntüyü yükleme ve resminin saydam rengi ayarlamak gösterilmektedir. Bu kod parçacığı parçasıdır [Visual Studio gösterim örneği](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_VisualStudioDemo#32](../../mfc/codesnippet/cpp/cmfctoolbarimages-class_1.h)]
 [!code-cpp[NVC_MFC_VisualStudioDemo#33](../../mfc/codesnippet/cpp/cmfctoolbarimages-class_2.cpp)]

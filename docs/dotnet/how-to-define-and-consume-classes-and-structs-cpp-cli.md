@@ -5,12 +5,12 @@ helpviewer_keywords:
 - structs [C++]
 - classes [C++], instantiating
 ms.assetid: 1c03cb0d-1459-4b5e-af65-97d6b3094fd7
-ms.openlocfilehash: 2c43234ca05c661d8f3d920b1129256a7550a5e2
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.openlocfilehash: 090259a4ad6b46eccf66dca6c99b4eb532b7ae5c
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57751836"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58774925"
 ---
 # <a name="how-to-define-and-consume-classes-and-structs-ccli"></a>Nasıl yapılır: Sınıfları ve yapıları tanımlama ve kullanma (C + +/ CLI)
 
@@ -97,7 +97,7 @@ int main() {
 
 Bir *örtük olarak soyut sınıf* örneği oluşturulamıyor. Bir sınıfın temel türü bir arabirim ve sınıfın tüm üye işlevleri arabirimin uygulamıyor örtük olarak soyut sınıftır.
 
-Bir arabirimden türetilmiş bir sınıftan nesneleri oluşturmak bulamıyorsanız, örtük olarak soyut sınıf olduğunu neden olabilir. Soyut sınıflar hakkında daha fazla bilgi için bkz: [soyut](../windows/abstract-cpp-component-extensions.md).
+Bir arabirimden türetilmiş bir sınıftan nesneleri oluşturmak bulamıyorsanız, örtük olarak soyut sınıf olduğunu neden olabilir. Soyut sınıflar hakkında daha fazla bilgi için bkz: [soyut](../extensions/abstract-cpp-component-extensions.md).
 
 Aşağıdaki kod örneği gösteren `MyClass` çünkü sınıfı'nin başlatılamaz olamaz işlevi `MyClass::func2` uygulanmadı. Derlemek örnek etkinleştirmek için açıklama durumundan çıkarın `MyClass::func2`.
 
@@ -229,7 +229,7 @@ Bu tabloda, çeşitli erişim belirticileri etkisini özetlenmektedir:
 |public|Üye, iç ve derleme dışından erişilebilir.  Bkz: [genel](../cpp/public-cpp.md) daha fazla bilgi için.|
 |private|Üye içinde ne derleme dışından erişilebilir değil.  Bkz: [özel](../cpp/private-cpp.md) daha fazla bilgi için.|
 |protected|Üye ve derleme dışından, ancak yalnızca türetilmiş türleri içinde erişilebilir.  Bkz: [korumalı](../cpp/protected-cpp.md) daha fazla bilgi için.|
-|internal|Derleme içinde geneldir ancak özel derleme dışından üyesidir.  `internal` bağlama duyarlı bir anahtar sözcüktür.  Daha fazla bilgi için [Context-Sensitive Keywords](../windows/context-sensitive-keywords-cpp-component-extensions.md).|
+|internal|Derleme içinde geneldir ancak özel derleme dışından üyesidir.  `internal` bağlama duyarlı bir anahtar sözcüktür.  Daha fazla bilgi için [Context-Sensitive Keywords](../extensions/context-sensitive-keywords-cpp-component-extensions.md).|
 |Genel korumalı - veya - korumalı ortak|Derleme içinde geneldir ancak derleme dışından korumalı üyesidir.|
 |Özel korumalı - veya - korumalı özel|Derleme içinde korumalı ancak özel derleme dışından üyesidir.|
 
@@ -499,9 +499,9 @@ Bu farklı semantikleri `this` varsayılan dizin oluşturucu çağrıldığında
 
 Daha fazla bilgi için bkz.
 
-- [İşlenecek nesne işleci (^)](../windows/handle-to-object-operator-hat-cpp-component-extensions.md)
+- [İşlenecek nesne işleci (^)](../extensions/handle-to-object-operator-hat-cpp-component-extensions.md)
 
-- [interior_ptr (C++/CLI)](../windows/interior-ptr-cpp-cli.md)
+- [interior_ptr (C++/CLI)](../extensions/interior-ptr-cpp-cli.md)
 
 ```cpp
 // compile with: /clr
@@ -797,7 +797,7 @@ Visual C++ programında yazılan ve kullanarak derlenmiş kod **/CLR** türün y
 
 - Nesne, yok Edicisi çalıştıran bir nesne içindeki üyeye ' dir.
 
-- Çağırmanızı [Sil](../cpp/delete-operator-cpp.md) bir tanıtıcı işlecinin ([işlemek nesne işleci (^)](../windows/handle-to-object-operator-hat-cpp-component-extensions.md)).
+- Çağırmanızı [Sil](../cpp/delete-operator-cpp.md) bir tanıtıcı işlecinin ([işlemek nesne işleci (^)](../extensions/handle-to-object-operator-hat-cpp-component-extensions.md)).
 
 - Yok ediciyi açıkça çağırmak.
 
@@ -844,7 +844,7 @@ Bir nesnenin Sonlandırıcısı çalıştırıldıktan sonra tüm temel sınıfl
 
 Bir sonlandırıcı yönetilen bir tür içinde yerel bir işaretçi silerse, başvurular için veya yerel işaretçisi aracılığıyla zamanından önce toplanmaz emin olmanız gerekir; call yok Edicisi kullanmak yerine yönetilen türü <xref:System.GC.KeepAlive%2A>.
 
-Derleme zamanında bir sonlandırıcı ya da bir yok edici bir tür olup olmadığını tespit edebilirsiniz. Daha fazla bilgi için [tür özellikleri için derleyici desteği](../windows/compiler-support-for-type-traits-cpp-component-extensions.md).
+Derleme zamanında bir sonlandırıcı ya da bir yok edici bir tür olup olmadığını tespit edebilirsiniz. Daha fazla bilgi için [tür özellikleri için derleyici desteği](../extensions/compiler-support-for-type-traits-cpp-component-extensions.md).
 
 Sonraki örnek, iki tür, yönetilmeyen kaynaklar içeren diğeri belirleyici yayımlanan kaynakları yönetilen olan gösterir.
 
@@ -914,5 +914,5 @@ int main() {
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Sınıflar ve Yapılar](../windows/classes-and-structs-cpp-component-extensions.md)<br/>
-[Sınıflar ve Yapılar](../windows/classes-and-structs-cpp-component-extensions.md)
+[Sınıflar ve Yapılar](../extensions/classes-and-structs-cpp-component-extensions.md)<br/>
+[Sınıflar ve Yapılar](../extensions/classes-and-structs-cpp-component-extensions.md)

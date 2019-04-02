@@ -15,12 +15,12 @@ helpviewer_keywords:
 - destruction [MFC], data objects
 - data sources [MFC], creating
 ms.assetid: ac216d54-3ca5-4ce7-850d-cd1f6a90d4f1
-ms.openlocfilehash: 74119d7ea33eef68f0cb4a67c8419514cbb73c10
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 68ee5fbfec554df8865ca50c265ca2fa2f226a29
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57304456"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58775250"
 ---
 # <a name="data-objects-and-data-sources-creation-and-destruction"></a>Veri nesneleri ve veri kaynakları: Oluşturma ve yok etme
 
@@ -68,7 +68,7 @@ Veri kaynakları, bir uygulama verileri panoya kopyalamak gerektiğinde oluştur
 
 1. Bu ise bir **Kes** işlemi veya `DoDragDrop` döndürür **DROPEFFECT_MOVE**, belge 1. adımda seçilen verileri silinir.
 
-Bu senaryo, MFC OLE örnekleri tarafından uygulanan [OCLIENT](../visual-cpp-samples.md) ve [HIERSVR](../visual-cpp-samples.md). Her uygulama kaynağı bakın `CView`-türetilmiş sınıf için tüm `GetClipboardData` ve `OnGetClipboardData` işlevleri. Bu iki işlevler ötekisi `COleClientItem` veya `COleServerItem`-türetilmiş sınıf uygulamaları. Bu örnek programları nasıl uygulanacağını bu kavramları iyi bir örnek sağlar.
+Bu senaryo, MFC OLE örnekleri tarafından uygulanan [OCLIENT](../overview/visual-cpp-samples.md) ve [HIERSVR](../overview/visual-cpp-samples.md). Her uygulama kaynağı bakın `CView`-türetilmiş sınıf için tüm `GetClipboardData` ve `OnGetClipboardData` işlevleri. Bu iki işlevler ötekisi `COleClientItem` veya `COleServerItem`-türetilmiş sınıf uygulamaları. Bu örnek programları nasıl uygulanacağını bu kavramları iyi bir örnek sağlar.
 
 İçinde oluşturmak istediğiniz bir durum bir `COleDataSource` nesnesi, bir Sürükle ve bırak işlemi varsayılan davranışını değiştiriyorsanız gerçekleşir. Daha fazla bilgi için [sürükle ve bırak: Özelleştirme](../mfc/drag-and-drop-customizing.md) makalesi.
 

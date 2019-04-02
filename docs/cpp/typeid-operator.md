@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - typeid operator
 ms.assetid: 8871cee6-d6b9-4301-a5cb-bf3dc9798d61
-ms.openlocfilehash: dfbf5275391e2820c94d2827c9b2c3eb252365c5
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b1185f48df4a941eb2a5d81bfa67d07cdf4387d0
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50571931"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58780892"
 ---
 # <a name="typeid-operator"></a>typeid İşleci
 
@@ -26,7 +26,7 @@ typeid(expression)
 
 Sonucu **TypeID** olduğu bir `const type_info&`. Değer bir başvurudur bir `type_info` temsil eden nesne *türü kimliği* veya türü *ifade*bağlı olarak hangi tür **TypeID** kullanılır. Bkz: [type_info sınıfı](../cpp/type-info-class.md) daha fazla bilgi için.
 
-**TypeID** işleci yönetilen türlerle (soyut Bildirimciler veya örnekleri) çalışmaz, bkz: [TypeID](../windows/typeid-cpp-component-extensions.md) alma hakkında bilgi <xref:System.Type> belirli bir türde.
+**TypeID** işleci yönetilen türlerle (soyut Bildirimciler veya örnekleri) çalışmaz, bkz: [TypeID](../extensions/typeid-cpp-component-extensions.md) alma hakkında bilgi <xref:System.Type> belirli bir türde.
 
 **TypeID** işlecinin yaptığı bir l değeri olarak bir çok biçimli bir sınıf türünün uygulandığında bir çalışma zamanı denetimi burada sağlanan statik bilgilerle doğru nesne türü belirlenemiyor. Bu gibi durumlar şunlardır:
 

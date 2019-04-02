@@ -9,24 +9,24 @@ helpviewer_keywords:
 - projects [C++], deploying programs
 - application deployment [C++], walkthroughs
 ms.assetid: 79e6cc4e-dced-419d-aaf7-d62d1367603f
-ms.openlocfilehash: 051ef3aa8c691a2191d25183ef96f17b557a47c1
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.openlocfilehash: aa0e1cd6ec7c27b8d3ccc1e327f3cb8da526d4f7
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57820214"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58769270"
 ---
 # <a name="walkthrough-deploying-your-program-c"></a>İzlenecek yol: Programınızı dağıtma (C++)
 
-Listelenen önceki izlenecek yolları, tamamlayarak uygulamanızı oluşturdunuz [C++ Masaüstü geliştirmesi için Visual Studio IDE kullanarak](../ide/using-the-visual-studio-ide-for-cpp-desktop-development.md), böylece diğer kullanıcıların bir yükleyici oluşturmak için son adımdır programı kendi bilgisayarlarına yükleyin. Yükleyici için varolan çözümünüze yeni bir proje ekleyeceksiniz. Bu yeni proje çıktısı uygulamanız başka bir bilgisayara yükleyecek bir setup.exe dosyasıdır.
+Önceki izlenecek yolları tamamlayarak uygulamanızı oluşturdunuz, son adım, böylece diğer kullanıcıların programı kendi bilgisayarlarına yükleyebilmek için bir yükleyici oluşturmaktır. Yükleyici için varolan çözümünüze yeni bir proje ekleyeceksiniz. Bu yeni proje çıktısı uygulamanız başka bir bilgisayara yükleyecek bir setup.exe dosyasıdır.
 
-İzlenecek yol, uygulamanızı dağıtmak için Windows Installer kullanmayı gösterir. Bir uygulamayı dağıtmak için ClickOnce da kullanabilirsiniz. Daha fazla bilgi için [Visual C++ uygulamaları için ClickOnce dağıtımı](../ide/clickonce-deployment-for-visual-cpp-applications.md). Genel olarak, dağıtım hakkında daha fazla bilgi için bkz [uygulamaları dağıtma, hizmetleri ve bileşenleri](/visualstudio/deployment/deploying-applications-services-and-components).
+İzlenecek yol, uygulamanızı dağıtmak için Windows Installer kullanmayı gösterir. Bir uygulamayı dağıtmak için ClickOnce da kullanabilirsiniz. Daha fazla bilgi için [Visual C++ uygulamaları için ClickOnce dağıtımı](../windows/clickonce-deployment-for-visual-cpp-applications.md). Genel olarak, dağıtım hakkında daha fazla bilgi için bkz [uygulamaları dağıtma, hizmetleri ve bileşenleri](/visualstudio/deployment/deploying-applications-services-and-components).
 
 ## <a name="prerequisites"></a>Önkoşullar
 
 - İzlenecek yol, C++ dili temellerini anladığınızı varsayar.
 
-- Ayrıca, listelenen önceki izlenecek yolları tamamladığınız varsayılır [C++ Masaüstü geliştirmesi için Visual Studio IDE kullanarak](../ide/using-the-visual-studio-ide-for-cpp-desktop-development.md).
+- Ayrıca, listelenen önceki izlenecek yolları tamamladığınız varsayılır [C++ Masaüstü geliştirmesi için Visual Studio IDE kullanarak](using-the-visual-studio-ide-for-cpp-desktop-development.md).
 
 - İzlenecek yol, Visual Studio'nun Express sürümlerinde tamamlanamaz.
 
@@ -72,10 +72,10 @@ Listelenen önceki izlenecek yolları, tamamlayarak uygulamanızı oluşturdunuz
 
 ## <a name="next-steps"></a>Sonraki Adımlar
 
-**Önceki:** [İzlenecek yol: Proje Hatalarını Ayıklama (C++)](../ide/walkthrough-debugging-a-project-cpp.md)<br/>
+**Önceki:** [İzlenecek yol: Proje Hatalarını Ayıklama (C++)](walkthrough-debugging-a-project-cpp.md)<br/>
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [C++ Dil Başvurusu](../cpp/cpp-language-reference.md)<br/>
-[Projeler ve yapı sistemi](../build/projects-and-build-systems-cpp.md)<br/>
-[Masaüstü uygulamalarını dağıtma](../ide/deploying-native-desktop-applications-visual-cpp.md)<br/>
+[Projeler ve derleme sistemleri](../build/projects-and-build-systems-cpp.md)<br/>
+[Masaüstü uygulamalarını dağıtma](../windows/deploying-native-desktop-applications-visual-cpp.md)<br/>

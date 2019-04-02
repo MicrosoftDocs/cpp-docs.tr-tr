@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - handlers, global
 ms.assetid: dd88a812-3bc7-4ce8-8283-4b674c246534
-ms.openlocfilehash: f6b46de22ad962f6ef7653db0c38447d14ca0b54
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.openlocfilehash: d1b8452d19172bf16817c36032189accfd855539
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57739262"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58777214"
 ---
 # <a name="how-to-define-and-install-a-global-exception-handler"></a>Nasıl yapılır: Genel özel durum işleyicisi tanımlama ve yükleme
 
@@ -73,4 +73,4 @@ int main()
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Özel Durum İşleme](../windows/exception-handling-cpp-component-extensions.md)
+[Özel Durum İşleme](../extensions/exception-handling-cpp-component-extensions.md)

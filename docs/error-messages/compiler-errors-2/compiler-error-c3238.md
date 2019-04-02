@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3238
 ms.assetid: 19942497-b3c5-4df0-9144-142ced92468b
-ms.openlocfilehash: d81fd0fb3612a8c22fa6365aa7fc6dddb89cf120
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d70bb6dac7cb43701b57f3821872e02ab31426dc
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50481165"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58775634"
 ---
 # <a name="compiler-error-c3238"></a>Derleyici Hatası C3238
 
@@ -19,7 +19,7 @@ ms.locfileid: "50481165"
 
 Bir tür, başvurulan bir derleme söz dizimi iletme türü ile tanımlanmış bir istemci uygulamasında tanımlandı. Her iki tür uygulama kapsamı içinde tanımlanamaz.
 
-Bkz: [tür iletme (C + +/ CLI)](../../windows/type-forwarding-cpp-cli.md) daha fazla bilgi için.
+Bkz: [tür iletme (C + +/ CLI)](../../extensions/type-forwarding-cpp-cli.md) daha fazla bilgi için.
 
 ## <a name="example"></a>Örnek
 

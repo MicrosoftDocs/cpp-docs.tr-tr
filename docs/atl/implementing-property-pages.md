@@ -6,12 +6,12 @@ helpviewer_keywords:
 - IPropertyPage class
 - property pages, implementing
 ms.assetid: 62f29440-33a7-40eb-a1ef-3634c95f640c
-ms.openlocfilehash: 0e335c20464d8ea71fd75ce2e67f67ca14edacb0
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 8999f6469e420fa86cb1267675f10dc173d45ff0
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57299328"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58776257"
 ---
 # <a name="implementing-property-pages"></a>Özellik sayfaları uygulama
 
@@ -48,4 +48,4 @@ ATL kullanarak bir özellik sayfası oluşturmak için:
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Özellik Sayfaları](../atl/atl-com-property-pages.md)<br/>
-[ATLPages örnek](../visual-cpp-samples.md)
+[ATLPages örnek](../overview/visual-cpp-samples.md)

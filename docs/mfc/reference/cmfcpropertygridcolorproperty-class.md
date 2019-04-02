@@ -20,12 +20,12 @@ helpviewer_keywords:
 - CMFCPropertyGridColorProperty [MFC], SetColumnsNumber
 - CMFCPropertyGridColorProperty [MFC], SetOriginalValue
 ms.assetid: af37be93-a91e-40a2-9a65-0f3412c6f0f8
-ms.openlocfilehash: 65c2c22c93dc3acb50fc4627c3710a3f0c86aeb0
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 95dcbbc2b445e2ff67979b90816daed0fb0c0fba
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57303969"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58767723"
 ---
 # <a name="cmfcpropertygridcolorproperty-class"></a>CMFCPropertyGridColorProperty Class
 
@@ -69,7 +69,7 @@ class CMFCPropertyGridColorProperty : public CMFCPropertyGridProperty
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, bir nesne oluşturmak gösterilmiştir `CMFCPropertyGridColorProperty` sınıfı ve çeşitli yöntemleri kullanarak bu nesneyi yapılandırma `CMFCPropertyGridColorProperty` sınıfı. Kod, otomatik ve diğer düğmeleri etkinleştirme ve renk ve sütun sayısını nasıl ayarlanacağı açıklanmaktadır. Bu örneğin parçasıdır [yeni denetimler örnek](../../visual-cpp-samples.md).
+Aşağıdaki örnek, bir nesne oluşturmak gösterilmiştir `CMFCPropertyGridColorProperty` sınıfı ve çeşitli yöntemleri kullanarak bu nesneyi yapılandırma `CMFCPropertyGridColorProperty` sınıfı. Kod, otomatik ve diğer düğmeleri etkinleştirme ve renk ve sütun sayısını nasıl ayarlanacağı açıklanmaktadır. Bu örneğin parçasıdır [yeni denetimler örnek](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_NewControls#13](../../mfc/reference/codesnippet/cpp/cmfcpropertygridcolorproperty-class_1.cpp)]
 

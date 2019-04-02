@@ -92,12 +92,12 @@ f1_keywords:
 helpviewer_keywords:
 - CMFCVisualManagerOffice2003 Class [MFC]
 ms.assetid: 115482cd-e349-450a-8dc4-c6023d092aab
-ms.openlocfilehash: c3b0a031db8ff843bb43f7dfa69f046d6ae99a96
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: dd62ea4073ae1982f01a279a411c8d11e8e5cec3
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57273276"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58776212"
 ---
 # <a name="cmfcvisualmanageroffice2003-class"></a>CMFCVisualManagerOffice2003 sınıfı
 
@@ -207,7 +207,7 @@ Kullandığınız `CMFCVisualManagerOffice2003` Microsoft Office 2003 benzeyecek
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, office 2003 görsel yöneticiyi Ayarla gösterilmiştir. Bu kod parçacığı parçasıdır [Masaüstü uyarı gösterim örneği](../../visual-cpp-samples.md).
+Aşağıdaki örnek, office 2003 görsel yöneticiyi Ayarla gösterilmiştir. Bu kod parçacığı parçasıdır [Masaüstü uyarı gösterim örneği](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_DesktopAlertDemo#6](../../mfc/reference/codesnippet/cpp/cmfcvisualmanageroffice2003-class_1.cpp)]
 

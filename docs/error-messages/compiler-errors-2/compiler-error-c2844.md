@@ -6,18 +6,18 @@ f1_keywords:
 helpviewer_keywords:
 - C2844
 ms.assetid: dcaf4cd2-21b0-4280-ae42-0a706c524d83
-ms.openlocfilehash: 8af9f42be279f728f72fc6968aeba98ee5d2474a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 2676a32cee487595a2241359496ae9b0380126b8
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50462718"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58775017"
 ---
 # <a name="compiler-error-c2844"></a>Derleyici Hatası C2844
 
 'member': 'interface' arabiriminin üyesi olamaz
 
-Bir [arabirim sınıfı](../../windows/interface-class-cpp-component-extensions.md) ayrıca bir özellik olmadığı sürece bir veri üyesini içeremez.
+Bir [arabirim sınıfı](../../extensions/interface-class-cpp-component-extensions.md) ayrıca bir özellik olmadığı sürece bir veri üyesini içeremez.
 
 Bir özellik veya üye işlev dışındaki herhangi bir arabirimde izin verilmez. Ayrıca, Oluşturucular, Yıkıcılar ve işleçler izin verilmez.
 

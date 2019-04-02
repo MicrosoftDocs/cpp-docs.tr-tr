@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - try-catch keyword [C++], exception handling
 ms.assetid: a6aa08de-669d-4ce8-9ec3-ec20d1354fcf
-ms.openlocfilehash: a155d56cc234c11534f5456ef92ea913e094f1a8
-ms.sourcegitcommit: ff3cbe4235b6c316edcc7677f79f70c3e784ad76
+ms.openlocfilehash: 506ead1b6e96f59717a92b6b0c48db0270b1822f
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/19/2018
-ms.locfileid: "53627286"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58779527"
 ---
 # <a name="exception-handling-in-visual-c"></a>Visual C++'da Özel Durum İşleme
 
@@ -33,7 +33,7 @@ Visual C++ üç özel durum işleme türünü destekler:
 
 Kullanma [/EH](../build/reference/eh-exception-handling-model.md) bir projede; kullanmak için özel durum işleme türünü belirtmek için derleyici seçeneği C++ özel durum işleme varsayılandır. Hata işleme düzenekleri karıştırmayın; Örneğin, C++ özel durumlarını, yapılandırılmış özel durum işleme ile kullanmayın. C++ özel durum işlemeyi kullanarak kodunuzun daha taşınabilir yapar ve herhangi bir türde özel durumları işlemenizi sağlar. Yapılandırılmış özel durum işleme dezavantajları hakkında daha fazla bilgi için bkz. [yapılandırılmış özel durum işleme](../cpp/structured-exception-handling-c-cpp.md). MFC makroları ve C++ özel durumlarını karıştırma hakkında daha fazla öneri için bkz. [özel durumlar: MFC makroları ve C++ özel durumlarını kullanma](../mfc/exceptions-using-mfc-macros-and-cpp-exceptions.md).
 
-CLR uygulamaları özel durumları işleme hakkında daha fazla bilgi için bkz: [özel durum işleme (C + +/ CLI ve C + +/ CX)](../windows/exception-handling-cpp-component-extensions.md).
+CLR uygulamaları özel durumları işleme hakkında daha fazla bilgi için bkz: [özel durum işleme (C + +/ CLI ve C + +/ CX)](../extensions/exception-handling-cpp-component-extensions.md).
 
 Özel durum x64 üzerinde işleme hakkında bilgi için işlemciler bkz [x64 özel durum işleme](../build/exception-handling-x64.md).
 

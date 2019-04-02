@@ -6,18 +6,18 @@ f1_keywords:
 helpviewer_keywords:
 - C3460
 ms.assetid: adbf8775-10ca-4654-acdf-58dd765351cd
-ms.openlocfilehash: 3a7fe5c6bbb7198f18f5a5cf7cac26add6e6709b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 9ffbc5102855574aba668a2c501cd08dbaebe5b8
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50676700"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58775185"
 ---
 # <a name="compiler-error-c3460"></a>Derleyici Hatası C3460
 
 'type': yalnızca bir kullanıcı tanımlı bir tür iletilebilir
 
-Daha fazla bilgi için [tür iletme (C + +/ CLI)](../../windows/type-forwarding-cpp-cli.md).
+Daha fazla bilgi için [tür iletme (C + +/ CLI)](../../extensions/type-forwarding-cpp-cli.md).
 
 ## <a name="example"></a>Örnek
 

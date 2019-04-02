@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2061
 ms.assetid: b0e61c0c-a205-4820-b9aa-301d6c6fe6eb
-ms.openlocfilehash: 0bd1e770e38fcb85164bfa205470ac55a12e1c87
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 85357d94c7bc2d709e852daa60caf269949ad1b8
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50466202"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58771467"
 ---
 # <a name="compiler-error-c2061"></a>Derleyici Hatası C2061
 
@@ -34,7 +34,7 @@ template < A a >   // C2061
 class c{};
 ```
 
-Bir örnek adı için geçirirseniz C2061 oluşabilir [TypeID](../../windows/typeid-cpp-component-extensions.md):
+Bir örnek adı için geçirirseniz C2061 oluşabilir [TypeID](../../extensions/typeid-cpp-component-extensions.md):
 
 ```
 // C2061b.cpp

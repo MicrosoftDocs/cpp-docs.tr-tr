@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3099
 ms.assetid: b3dded0f-76c9-42c1-991b-532eb8619661
-ms.openlocfilehash: e9a76fa2e0dc5602a88324cfd2fef85457ad7e99
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 0f3eac1c232ef159d220a347d6b6dc3aed2fdd9a
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50512118"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58771493"
 ---
 # <a name="compiler-error-c3099"></a>Derleyici Hatası C3099
 
@@ -19,7 +19,7 @@ ms.locfileid: "50512118"
 
 Kullanım <xref:System.AttributeUsageAttribute> bildirmek için **/CLR** öznitelikleri. Kullanım `Windows::Foundation::Metadata::AttributeUsageAttribute` Windows çalışma zamanı öznitelik bildirmek için.
 
-/ CLR öznitelikleri hakkında daha fazla bilgi için bkz. [kullanıcı tanımlı öznitelikler](../../windows/user-defined-attributes-cpp-component-extensions.md). Windows çalışma zamanı için desteklenen öznitelik [Windows.Foundation.Metadata ad alanı](https://msdn.microsoft.com/library/windows/apps/windows.foundation.metadata.aspx)
+/ CLR öznitelikleri hakkında daha fazla bilgi için bkz. [kullanıcı tanımlı öznitelikler](../../extensions/user-defined-attributes-cpp-component-extensions.md). Windows çalışma zamanı için desteklenen öznitelik [Windows.Foundation.Metadata ad alanı](/uwp/api/windows.foundation.metadata)
 
 ## <a name="example"></a>Örnek
 

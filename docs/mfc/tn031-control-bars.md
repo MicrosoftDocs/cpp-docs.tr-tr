@@ -14,12 +14,12 @@ helpviewer_keywords:
 - TN031
 - styles [MFC], control bars
 ms.assetid: 8cb895c0-40ea-40ef-90ee-1dd29f34cfd1
-ms.openlocfilehash: 07178597e66975a006a0ea5293192ee7ea099e42
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 39309408c6d1fc6cbb4223eda22c511865f14498
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57286472"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58772520"
 ---
 # <a name="tn031-control-bars"></a>TN031: Denetim Çubukları
 
@@ -136,7 +136,7 @@ Bit eşlem düğmeleri araç çubuğunda bir bit eşlem alınır. Bu bit eşlemi
 
 Her düğme aynı boyutta olması gerekir. Standart 24 x 22 piksel varsayılandır. Her görüntü/glif aynı boyutta olması gerekir ve yan yana olmalı, bit eşlem. Varsayılan görüntü/simge boyutu 16 x 15 pikseldir. Bu nedenle, 10 düğmeler (standart boyutlarını kullanarak) ile bir araç için 160 piksel genişliğinde ve 15 piksel yüksekliğinde bir bit eşlem gerekir.
 
-Her bir düğme bir ve yalnızca bir görüntü/glif vardır. Farklı bir düğmeyi belirtir ve stilleri (basılı, örneğin, aşağı, devre dışı, aşağı, belirsiz devre dışı) bir o yansıma/glif algorithmically oluşturulur. Herhangi bir renk bit eşlem veya DIB teorik olarak kullanılabilir. Özgün Görüntü gri ise farklı bir düğmeyi oluşturmak için algoritma en iyi şekilde çalışır belirtir. Standart araç çubuğu düğmeleri ve MFC genel örnek sağlanan araç çubuğu düğmesi küçük bakın [küçük](../visual-cpp-samples.md) örnekler.
+Her bir düğme bir ve yalnızca bir görüntü/glif vardır. Farklı bir düğmeyi belirtir ve stilleri (basılı, örneğin, aşağı, devre dışı, aşağı, belirsiz devre dışı) bir o yansıma/glif algorithmically oluşturulur. Herhangi bir renk bit eşlem veya DIB teorik olarak kullanılabilir. Özgün Görüntü gri ise farklı bir düğmeyi oluşturmak için algoritma en iyi şekilde çalışır belirtir. Standart araç çubuğu düğmeleri ve MFC genel örnek sağlanan araç çubuğu düğmesi küçük bakın [küçük](../overview/visual-cpp-samples.md) örnekler.
 
 Araç çubuğunda kullanılan renkleri de Windows arabirimi uygulaması Tasarım Kılavuzu önerisi ile tutarlı değil. Bu renklerin değil sabit kodlanmış ve yanıt olarak Denetim Masası'ndaki kullanıcı özelleştirme dinamik olarak değiştirilir.
 

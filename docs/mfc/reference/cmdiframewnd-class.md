@@ -34,12 +34,12 @@ helpviewer_keywords:
 - CMDIFrameWnd [MFC], MDISetMenu
 - CMDIFrameWnd [MFC], MDITile
 ms.assetid: fa8736e6-511b-4c51-8b4d-eba78378aeb9
-ms.openlocfilehash: d3fc71c3e294b26aea405b8800199cf88120fa08
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 9f5289491a7c14749865cfd163417440bc542aba
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57282454"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58776537"
 ---
 # <a name="cmdiframewnd-class"></a>CMDIFrameWnd sınıfı
 
@@ -459,9 +459,9 @@ Bir döşeme bayrak belirtir. Bu parametre aşağıdaki bayraklar herhangi biri 
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MFC örnek MDI](../../visual-cpp-samples.md)<br/>
-[MFC örnek MDIDOCVW](../../visual-cpp-samples.md)<br/>
-[MFC örnek SNAPVW](../../visual-cpp-samples.md)<br/>
+[MFC örnek MDI](../../overview/visual-cpp-samples.md)<br/>
+[MFC örnek MDIDOCVW](../../overview/visual-cpp-samples.md)<br/>
+[MFC örnek SNAPVW](../../overview/visual-cpp-samples.md)<br/>
 [CFrameWnd Sınıfı](../../mfc/reference/cframewnd-class.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
 [CWnd Sınıfı](../../mfc/reference/cwnd-class.md)<br/>

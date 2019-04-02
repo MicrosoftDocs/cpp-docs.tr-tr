@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3450
 ms.assetid: 78892cf7-0b82-4589-90d0-e06666247003
-ms.openlocfilehash: bedf78ef1cea9f17903fd05f9440c6baa69f7333
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: a5228e0396221c51f5fc7336255656416c1e553b
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50481243"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58780190"
 ---
 # <a name="compiler-error-c3450"></a>Derleyici Hatası C3450
 
@@ -19,7 +19,7 @@ ms.locfileid: "50481243"
 
 Kullanıcı tanımlı yönetilen özniteliği devralmalıdır <xref:System.ComponentModel.AttributeCollection.%23ctor%2A>. Bir Windows çalışma zamanı öznitelik tanımlanmalıdır `Windows::Foundation::Metadata` ad alanı.
 
-Daha fazla bilgi için [kullanıcı tanımlı öznitelikler](../../windows/user-defined-attributes-cpp-component-extensions.md).
+Daha fazla bilgi için [kullanıcı tanımlı öznitelikler](../../extensions/user-defined-attributes-cpp-component-extensions.md).
 
 ## <a name="example"></a>Örnek
 

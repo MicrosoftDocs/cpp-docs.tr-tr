@@ -2,12 +2,12 @@
 title: Olası yükseltme sorunlarına (Visual C++) genel bakış
 ms.date: 11/04/2016
 ms.assetid: 2c99a8cb-098f-4a9d-bf2c-b80fd06ace43
-ms.openlocfilehash: e4a1f4ecb6492bf74fca46df6f096ca79c71da18
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 16918a70d4ce56a7415c3a807485e72c085d1194
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50504266"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58775048"
 ---
 # <a name="overview-of-potential-upgrade-issues-visual-c"></a>Olası yükseltme sorunlarına (Visual C++) genel bakış
 
@@ -96,7 +96,7 @@ Aşağıdaki tablo, Visual Studio 2015 ile başlayan adları değiştirildi kita
 |||
 |-|-|
 |Kullandıysanız:|İle değiştirmeniz gerekir:|
-|LIBCMT.lib|libucrt.lib, libvcruntime.lib|
+|libcmt.lib|libucrt.lib, libvcruntime.lib|
 |libcmtd.lib|libucrtd.lib, libvcruntimed.lib|
 |msvcrt.lib|ucrt.lib, vcruntime.lib|
 |msvcrtd.lib|ucrtd.lib, vcruntimed.lib|
@@ -111,7 +111,7 @@ Microsoft Visual C++ derleyicisi, sürekli olarak, standart C++ uyumluluk yılla
 
 Const olmayan bir bağımsız değişken için const bir parametre olarak geçirildiğinde yükseltirken görebileceğiniz ortak bir derleyici hatası için bir örnektir. Eski sürümleri, derleyici her zaman bu hata olarak bayrak. Daha fazla bilgi için [derleyicinin daha katı dönüştürmeler](porting-guide-spy-increment.md#stricter_conversions).
 
-Belirli bir uyumluluk geliştirmeleri hakkında daha fazla bilgi için bkz. [Visual C++ değişiklik geçmişi 2003-2015](visual-cpp-change-history-2003-2015.md) ve [Visual Studio 2017'deki C++ uyumluluk geliştirmeleri](../cpp-conformance-improvements-2017.md).
+Belirli bir uyumluluk geliştirmeleri hakkında daha fazla bilgi için bkz. [Visual C++ değişiklik geçmişi 2003-2015](visual-cpp-change-history-2003-2015.md) ve [Visual Studio 2017'deki C++ uyumluluk geliştirmeleri](../overview/cpp-conformance-improvements-2017.md).
 
 ## <a name="errors-involving-stdinth-integral-types"></a>Hatalar içeren \<stdint.h > tam sayı türleri
 
@@ -127,7 +127,7 @@ Basabilirsiniz **F12** (**Tanıma Git**) söz konusu tür tanımlandığı görm
 
 Birçok değişiklik için C çalışma zamanı yıllar içinde yapıldı. İşlevlerin güvenli sürümleri birçok eklenen ve bazı kaldırıldı. Ayrıca, bu makalenin önceki bölümlerinde açıklandığı gibi CRT, Microsoft'un uygulama Visual Studio 2015'te yeni ikili dosyaları ve ilişkili .lib dosyaları halinde yeniden düzenlenmeden.
 
-Hata bir CRT işlevini içeriyorsa, arama [Visual C++ değişiklik geçmişi 2003-2015](visual-cpp-change-history-2003-2015.md) veya [Visual Studio 2017'deki C++ uyumluluk geliştirmeleri](../cpp-conformance-improvements-2017.md) bu konulara ek bilgileri içerip içermediğini görmek için. Hatası LNK2019, çözülmemiş dış ise işlev kaldırılmamıştır emin olun. İşlev hala mevcut olduğundan ve çağırma kodunun doğru olduğundan emin olup, aksi takdirde, projenizi kullanıp kullanmadığını denetleyin `/NODEFAULTLIB`. Bu durumda, böylece yeni evrensel (UCRT) kitaplıkları kullanan proje kitaplıkların listesini güncelleştirmeniz gerekir. Kitaplık ve bağımlılıklarını daha fazla bilgi için yukarıdaki bölüme bakın.
+Hata bir CRT işlevini içeriyorsa, arama [Visual C++ değişiklik geçmişi 2003-2015](visual-cpp-change-history-2003-2015.md) veya [Visual Studio 2017'deki C++ uyumluluk geliştirmeleri](../overview/cpp-conformance-improvements-2017.md) bu konulara ek bilgileri içerip içermediğini görmek için. Hatası LNK2019, çözülmemiş dış ise işlev kaldırılmamıştır emin olun. İşlev hala mevcut olduğundan ve çağırma kodunun doğru olduğundan emin olup, aksi takdirde, projenizi kullanıp kullanmadığını denetleyin `/NODEFAULTLIB`. Bu durumda, böylece yeni evrensel (UCRT) kitaplıkları kullanan proje kitaplıkların listesini güncelleştirmeniz gerekir. Kitaplık ve bağımlılıklarını daha fazla bilgi için yukarıdaki bölüme bakın.
 
 Hata içeriyorsa `printf` veya `scanf`, özel olarak ya da işlev stdio.h dahil etmeden tanımladığınız değil, emin olun. Bu durumda, özel tanımları kaldırın veya bağlantısını için eski\_stdio\_definitions.lib. Bunu ayarlayabilirsiniz **özellik sayfaları** iletişim altında **yapılandırma özellikleri** > **bağlayıcı** > **giriş**, **ek bağımlılıklar** özelliği. Windows 8.1 SDK'sı ile bağlama veya önceki bir sürümü varsa, eski eklersiniz\_stdio\_definitions.lib.
 
@@ -161,11 +161,11 @@ Daha fazla bilgi için [hedef Windows sürümüne güncelleştirmeden](porting-g
 
 ## <a name="atl--mfc"></a>ATL / MFC
 
-ATL ve MFC göreceli olarak kararlı apı'lerdir ancak bazen yapılan değişiklikler. Bkz: [Visual C++ değişiklik geçmişi 2003-2015](visual-cpp-change-history-2003-2015.md) daha fazla bilgi ve [Visual c++ Visual Studio 2017'deki yenilikler](../what-s-new-for-visual-cpp-in-visual-studio.md) ve [VisualStudio2017'dekiC++uyumlulukgeliştirmeleri](../cpp-conformance-improvements-2017.md).
+ATL ve MFC göreceli olarak kararlı apı'lerdir ancak bazen yapılan değişiklikler. Bkz: [Visual C++ değişiklik geçmişi 2003-2015](visual-cpp-change-history-2003-2015.md) daha fazla bilgi ve [Visual c++ Visual Studio 2017'deki yenilikler](../overview/what-s-new-for-visual-cpp-in-visual-studio.md) ve [VisualStudio2017'dekiC++uyumlulukgeliştirmeleri](../overview/cpp-conformance-improvements-2017.md).
 
 ### <a name="lnk-2005-dllmain12-already-defined-in-msvcrtdlib"></a>LNK 2005 _DllMain@12 MSVCRTD.lib içinde zaten tanımlı
 
-MFC uygulamalarında bu hata oluşabilir. Bu, CRT kitaplık ve MFC kitaplığını arasındaki sıralama bir sorun olduğunu gösterir. MFC, böylece yeni sağlar önce bağlantılı ve delete işleçleri gerekiyor. Hatayı düzeltmek için kullanmak `/NODEFAULTLIB` bu varsayılan kitaplıkları Yoksay olarak geçiş: MSVCRTD.lib ve mfcs140d.lib. Daha sonra bu aynı libs ek bağımlılıkları olarak ekleyin.
+MFC uygulamalarında bu hata oluşabilir. Bu, CRT kitaplık ve MFC kitaplığını arasındaki sıralama bir sorun olduğunu gösterir. MFC, böylece yeni sağlar önce bağlantılı ve delete işleçleri gerekiyor. Hatayı düzeltmek için kullanmak `/NODEFAULTLIB` bu varsayılan kitaplıkları Yoksay olarak geçin: MSVCRTD.lib and mfcs140d.lib. Daha sonra bu aynı libs ek bağımlılıkları olarak ekleyin.
 
 ## <a name="32-vs-64-bit"></a>32 ve 64 bit
 
@@ -182,4 +182,4 @@ Daha fazla bilgi için [MBCS, Unicode taşıma](porting-guide-spy-increment.md#p
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Önceki Visual C++ Sürümü Projelerini Yükseltme](upgrading-projects-from-earlier-versions-of-visual-cpp.md)<br/>
-[Visual Studio 2017’deki C++ uyumluluk geliştirmeleri](../cpp-conformance-improvements-2017.md)
+[Visual Studio 2017’deki C++ uyumluluk geliştirmeleri](../overview/cpp-conformance-improvements-2017.md)

@@ -5,12 +5,12 @@ helpviewer_keywords:
 - simple properties
 - properties [C++], simple
 ms.assetid: f5d82547-e214-4f05-9e1b-ddb6d0dc5e4c
-ms.openlocfilehash: f29bf419ca19ce1bbe45e36adb08d7f4e5629f5a
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.openlocfilehash: cd0748993b6ac92bbf9f66fa868ac6e814e21bb5
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57739287"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58781633"
 ---
 # <a name="how-to-use-properties-in-ccli"></a>Nasıl yapılır: Özellikleri kullanmak C + +/ CLI
 
@@ -259,7 +259,7 @@ int main() {
 
 ## <a name="abstract-and-sealed-properties"></a>Soyut ve korumalı Özellikler
 
-Ancak [soyut](../windows/abstract-cpp-component-extensions.md) ve [korumalı](../windows/sealed-cpp-component-extensions.md) anahtar sözcükleri belirtilen geçerli olarak, ECMA C + +/ CLI belirtimine, Visual C++ derleyicisi için belirtemezsiniz bunları Önemsiz özellikleri ya da özelliği Önemsiz bir özellik bildirimi.
+Ancak [soyut](../extensions/abstract-cpp-component-extensions.md) ve [korumalı](../extensions/sealed-cpp-component-extensions.md) anahtar sözcükleri belirtilen geçerli olarak, ECMA C + +/ CLI belirtimine, Visual C++ derleyicisi için belirtemezsiniz bunları Önemsiz özellikleri ya da özelliği Önemsiz bir özellik bildirimi.
 
 Korumalı veya soyut bir özelliği bildirme için Önemsiz olmayan bir özellik tanımlayın ve ardından belirtin `abstract` veya `sealed` anahtar sözcüğü, alma ve ayarlama erişimci işlevleri.
 
@@ -409,4 +409,4 @@ int main() {
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[property](../windows/property-cpp-component-extensions.md)
+[property](../extensions/property-cpp-component-extensions.md)

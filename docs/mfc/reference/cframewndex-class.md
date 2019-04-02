@@ -178,12 +178,12 @@ helpviewer_keywords:
 - CFrameWndEx [MFC], UpdateCaption
 - CFrameWndEx [MFC], WinHelp
 ms.assetid: 5830aca8-4a21-4f31-91f1-dd5477ffcc8d
-ms.openlocfilehash: 6ba0c2b5449cb0058c1b274d9d9c0d7ae33bcd7f
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: d336e85020d8d2e855afb0568058057594ec8829
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57302993"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58769660"
 ---
 # <a name="cframewndex-class"></a>CFrameWndEx sınıfı
 
@@ -291,7 +291,7 @@ class CFrameWndEx : public CFrameWnd
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek bir sınıftan gösterilmektedir `CFrameWndEx` sınıfı. Örnek yöntem imzaları alt ve nasıl geçersiz kılınacağını gösterir `OnShowPopupMenu` yöntemi. Bu kod parçacığı parçasıdır [Word paneli örnek](../../visual-cpp-samples.md).
+Aşağıdaki örnek bir sınıftan gösterilmektedir `CFrameWndEx` sınıfı. Örnek yöntem imzaları alt ve nasıl geçersiz kılınacağını gösterir `OnShowPopupMenu` yöntemi. Bu kod parçacığı parçasıdır [Word paneli örnek](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_WordPad#3](../../mfc/reference/codesnippet/cpp/cframewndex-class_1.h)]
 [!code-cpp[NVC_MFC_WordPad#4](../../mfc/reference/codesnippet/cpp/cframewndex-class_2.cpp)]

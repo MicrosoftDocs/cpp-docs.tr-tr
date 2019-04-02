@@ -22,12 +22,12 @@ helpviewer_keywords:
 - COlePropertiesDialog [MFC], m_psh
 - COlePropertiesDialog [MFC], m_vp
 ms.assetid: a54dbc89-1447-4329-bd01-00e98ec9e935
-ms.openlocfilehash: 37197ee20b31564c589099b10e0f8d3f0d1f7e86
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: e574f535609ec9401bd76badf11fa7e05cc0c619
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57263877"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58781867"
 ---
 # <a name="colepropertiesdialog-class"></a>COlePropertiesDialog sınıfı
 
@@ -261,7 +261,7 @@ Varsayılan uygulama, hiçbir şey yapmaz. Ölçeklendirme denetimlerini etkinle
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MFC örnek DAİ](../../visual-cpp-samples.md)<br/>
+[MFC örnek DAİ](../../overview/visual-cpp-samples.md)<br/>
 [COleDialog Sınıfı](../../mfc/reference/coledialog-class.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
 [COleDialog Sınıfı](../../mfc/reference/coledialog-class.md)<br/>

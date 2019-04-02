@@ -114,12 +114,12 @@ helpviewer_keywords:
 - CMFCRibbonPanel [MFC], SetKeys
 - CMFCRibbonPanel [MFC], ShowPopup
 ms.assetid: 51d70749-1140-4386-b103-f14082049ba6
-ms.openlocfilehash: 438fc753e91092502c84acfc491ec64c15133023
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 1ba7057405da2ebd7fd1bf699a69f97a650fa47c
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57305061"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58773209"
 ---
 # <a name="cmfcribbonpanel-class"></a>CMFCRibbonPanel sınıfı
 
@@ -207,7 +207,7 @@ Bir Şerit çağırarak bir Şerit kategoride bulunan panolar elde edebilirsiniz
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek nasıl yapılandırılacağını gösteren bir `CMFCRibbonPanel` çeşitli yöntemleri kullanarak nesne `CMFCRibbonPanel` sınıfı. Örneğin, Şerit paneli görüntüler klavye kısayolunu ayarlamak, panel öğeleri sütunu örneğe göre Dikey Hizala ve sütun gerekçe etkinleştirmek gösterilmektedir. Bu kod parçacığı parçasıdır [MS Office 2007 Demo örnek](../../visual-cpp-samples.md).
+Aşağıdaki örnek nasıl yapılandırılacağını gösteren bir `CMFCRibbonPanel` çeşitli yöntemleri kullanarak nesne `CMFCRibbonPanel` sınıfı. Örneğin, Şerit paneli görüntüler klavye kısayolunu ayarlamak, panel öğeleri sütunu örneğe göre Dikey Hizala ve sütun gerekçe etkinleştirmek gösterilmektedir. Bu kod parçacığı parçasıdır [MS Office 2007 Demo örnek](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_MSOffice2007Demo#10](../../mfc/reference/codesnippet/cpp/cmfcribbonpanel-class_1.cpp)]
 

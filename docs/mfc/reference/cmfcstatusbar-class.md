@@ -72,12 +72,12 @@ helpviewer_keywords:
 - CMFCStatusBar [MFC], SetTipText
 - CMFCStatusBar [MFC], OnDrawPane
 ms.assetid: f2960d1d-f4ed-41e8-bd99-0382b2f8d88e
-ms.openlocfilehash: 94876dcf6549842a5fedbd96a93ef2cc760225ce
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 87f75769e2f400a7721a8c9089d6c5596c31a4e3
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57326757"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58775965"
 ---
 # <a name="cmfcstatusbar-class"></a>CMFCStatusBar sınıfı
 
@@ -138,26 +138,26 @@ class CMFCStatusBar : public CPane
 
 ## <a name="remarks"></a>Açıklamalar
 
-Durum çubuğunda bir şekilden Aşağıdaki diyagramda gösterilmiştir [durum çubuğu gösterim örneği](../../visual-cpp-samples.md) uygulama.
+Durum çubuğunda bir şekilden Aşağıdaki diyagramda gösterilmiştir [durum çubuğu gösterim örneği](../../overview/visual-cpp-samples.md) uygulama.
 
 ![CMFCStatusBar örneği](../../mfc/reference/media/cmfcstatusbar.png "CMFCStatusBar örneği")
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, çeşitli yöntemleri çağırmak için uygulamanın kullandığı yerel değişkenlerini gösterir `CMFCStatusBar` sınıfı. Bu değişkenler StatusBarDemoView.h bildirilir. Ana çerçeve MainFrm.h içinde bildirildiği belge içinde StatusBarDemoDoc.h bildirilir ve görünümü içinde StatusBarDemoView.h bildirilir. Bu kod parçacığı parçasıdır [durum çubuğu gösterim örneği](../../visual-cpp-samples.md).
+Aşağıdaki örnek, çeşitli yöntemleri çağırmak için uygulamanın kullandığı yerel değişkenlerini gösterir `CMFCStatusBar` sınıfı. Bu değişkenler StatusBarDemoView.h bildirilir. Ana çerçeve MainFrm.h içinde bildirildiği belge içinde StatusBarDemoDoc.h bildirilir ve görünümü içinde StatusBarDemoView.h bildirilir. Bu kod parçacığı parçasıdır [durum çubuğu gösterim örneği](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_StatusBarDemo#9](../../mfc/reference/codesnippet/cpp/cmfcstatusbar-class_1.h)]
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, bir başvuru almak gösterilmiştir `CMFCStatusBar` giriş nesnesi `GetStatusBar` MainFrm.h ve ardından bu yöntemi çağırmadan yöntemi `GetStatusBar` StatusBarDemoView.h yöntemi. Bu kod parçacığı parçasıdır [durum çubuğu gösterim örneği](../../visual-cpp-samples.md).
+Aşağıdaki örnek, bir başvuru almak gösterilmiştir `CMFCStatusBar` giriş nesnesi `GetStatusBar` MainFrm.h ve ardından bu yöntemi çağırmadan yöntemi `GetStatusBar` StatusBarDemoView.h yöntemi. Bu kod parçacığı parçasıdır [durum çubuğu gösterim örneği](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_StatusBarDemo#7](../../mfc/reference/codesnippet/cpp/cmfcstatusbar-class_2.h)]
 [!code-cpp[NVC_MFC_StatusBarDemo#8](../../mfc/reference/codesnippet/cpp/cmfcstatusbar-class_3.h)]
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, çeşitli yöntemleri çağırmak gösterilmiştir `CMFCStatusBar` StatusBarDemoView.cpp sınıfta. Sabitler MainFrm.h bildirilir. Örnek Ayarla simgesi, durum çubuğu bölmesinin araç ipucu metnini ayarlamak, belirtilen bölmesinde bir ilerleme çubuğu gösteriliyor, animasyon için belirtilen bölmesinde atamak, metin ve durum çubuğu bölmesinin genişliğini ayarlamak ve progr geçerli ilerleme göstergesini ayarlamak nasıl gösterir Durum çubuğu bölmesinin çubuğu Sırala. Bu kod parçacığı parçasıdır [durum çubuğu gösterim örneği](../../visual-cpp-samples.md).
+Aşağıdaki örnek, çeşitli yöntemleri çağırmak gösterilmiştir `CMFCStatusBar` StatusBarDemoView.cpp sınıfta. Sabitler MainFrm.h bildirilir. Örnek Ayarla simgesi, durum çubuğu bölmesinin araç ipucu metnini ayarlamak, belirtilen bölmesinde bir ilerleme çubuğu gösteriliyor, animasyon için belirtilen bölmesinde atamak, metin ve durum çubuğu bölmesinin genişliğini ayarlamak ve progr geçerli ilerleme göstergesini ayarlamak nasıl gösterir Durum çubuğu bölmesinin çubuğu Sırala. Bu kod parçacığı parçasıdır [durum çubuğu gösterim örneği](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_StatusBarDemo#6](../../mfc/reference/codesnippet/cpp/cmfcstatusbar-class_4.h)]
 [!code-cpp[NVC_MFC_StatusBarDemo#1](../../mfc/reference/codesnippet/cpp/cmfcstatusbar-class_5.cpp)]

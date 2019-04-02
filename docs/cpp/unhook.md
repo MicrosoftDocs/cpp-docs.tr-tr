@@ -8,12 +8,12 @@ helpviewer_keywords:
 - event handlers [C++], dissociating events
 - __unhook keyword [C++]
 ms.assetid: 953a14f3-5199-459d-81e5-fcf015a19878
-ms.openlocfilehash: f6e5031cb77729ede053b275c90fa93bf251fcb6
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e8f42c35024995c026ae10fc7f0ab3db77d1e5dc
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50486781"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58769530"
 ---
 # <a name="unhook"></a>__unhook
 
@@ -48,7 +48,7 @@ long  __unhook(
 - Yönetilen olaylar: *SourceClass* olay kaynak sınıfı ve *oluşur* etkinliğidir.
 
 *interface*<br/>
-Gelen unhooked arabirim adı *alıcı*, yalnızca, COM Olay alıcıları için *layout_dependent* parametresinin [event_receiver](../windows/event-receiver.md) özniteliktir **true**.
+Gelen unhooked arabirim adı *alıcı*, yalnızca, COM Olay alıcıları için *layout_dependent* parametresinin [event_receiver](../windows/attributes/event-receiver.md) özniteliktir **true**.
 
 *source*<br/>
 Olay kaynağının bir örneği için bir işaretçi. Kod bağlı olarak `type` belirtilen `event_receiver`, *kaynak* aşağıdakilerden biri olabilir:
@@ -89,7 +89,7 @@ COM olayları hariç **__hook** ve **__unhook** olay alıcısı çağrılabilir.
 
 Kullanmaya alternatif **__unhook** -= işleci kullanmaktır.
 
-Yeni sözdiziminde yönetilen olaylar kodlama hakkında daha fazla bilgi için bkz: [olay](../windows/event-cpp-component-extensions.md).
+Yeni sözdiziminde yönetilen olaylar kodlama hakkında daha fazla bilgi için bkz: [olay](../extensions/event-cpp-component-extensions.md).
 
 > [!NOTE]
 >  Şablonlu bir alan veya yapı, olay içeremez.
@@ -101,8 +101,8 @@ Bkz: [olay işleme yerel C++'ta](../cpp/event-handling-in-native-cpp.md) ve [com
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Anahtar Sözcükler](../cpp/keywords-cpp.md)<br/>
-[event_source](../windows/event-source.md)<br/>
-[event_receiver](../windows/event-receiver.md)<br/>
+[event_source](../windows/attributes/event-source.md)<br/>
+[event_receiver](../windows/attributes/event-receiver.md)<br/>
 [__event](../cpp/event.md)<br/>
 [__hook](../cpp/hook.md)<br/>
 [__raise](../cpp/raise.md)

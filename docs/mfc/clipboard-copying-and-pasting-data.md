@@ -5,12 +5,12 @@ helpviewer_keywords:
 - Clipboard, copying data to
 - Clipboard, pasting
 ms.assetid: 580e10be-241f-4f9f-94cf-8302edc5beef
-ms.openlocfilehash: da589743e98b2ac020e006aedb0ccc0415998f17
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: cff9094315dc97e2040eb4dbad25d044c7c51a81
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57270741"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58776108"
 ---
 # <a name="clipboard-copying-and-pasting-data"></a>Pano: Veri kopyalama ve yapıştırma
 
@@ -32,7 +32,7 @@ Kopyalama veya yapıştırarak uygulamadan önce ilk Düzen menüsünde Kopyala,
 
 1. Kullanıcı, bir kopyalama işlemi yerine bir kesme işlemi seçerseniz, seçilen verileri uygulamanızdan silin.
 
-Bu sıralı bir örneğini görmek için bkz: `OnEditCut` ve `OnEditCopy` işlevlerde MFC OLE örnek programlar [OCLIENT](../visual-cpp-samples.md) ve [HIERSVR](../visual-cpp-samples.md). 1. adım zaten tamamlandı, bu nedenle bu örnekleri şu anda seçili veri işaretçisi korumak unutmayın.
+Bu sıralı bir örneğini görmek için bkz: `OnEditCut` ve `OnEditCopy` işlevlerde MFC OLE örnek programlar [OCLIENT](../overview/visual-cpp-samples.md) ve [HIERSVR](../overview/visual-cpp-samples.md). 1. adım zaten tamamlandı, bu nedenle bu örnekleri şu anda seçili veri işaretçisi korumak unutmayın.
 
 ##  <a name="_core_pasting_data"></a> Veri yapıştırma
 
@@ -50,7 +50,7 @@ Veri yapıştırma uygulamanıza veri yapıştırma içinde kullanılacak biçim
 
 1. Yapıştırma biçimi gerçekleştirin.
 
-Bunun nasıl çalıştığına ilişkin bir örnek için bkz: `OnEditPaste` MFC OLE örnek programlardan içinde tanımlanan görünüm sınıflardaki üye işlevleri [OCLIENT](../visual-cpp-samples.md) ve [HIERSVR](../visual-cpp-samples.md).
+Bunun nasıl çalıştığına ilişkin bir örnek için bkz: `OnEditPaste` MFC OLE örnek programlardan içinde tanımlanan görünüm sınıflardaki üye işlevleri [OCLIENT](../overview/visual-cpp-samples.md) ve [HIERSVR](../overview/visual-cpp-samples.md).
 
 > [!TIP]
 >  Yapıştırma işlemi kendi işlevine ayırma ana avantajı, bir Sürükle ve bırak işlemi sırasında uygulamanızdaki veri bırakıldığında aynı Yapıştır kodu kullanılabilir ' dir. OCLIENT ve HIERSVR, olduğu gibi `OnDrop` işlevi ayrıca çağırabilir `DoPasteItem`, yapıştır işlemlerini uygulamak için yazılmış kodu yeniden kullanma.

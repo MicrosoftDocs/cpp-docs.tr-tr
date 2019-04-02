@@ -4,18 +4,18 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - ICollectionOnSTLImpl interface
 ms.assetid: 6d49f819-1957-4813-b074-3f12c494d8ca
-ms.openlocfilehash: 90583f34c9e9fb500bb48fdbd3c1a17d343d865f
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 609ec2547cf7a8ab93ef757f7a8e460542c9de28
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57292932"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58779254"
 ---
 # <a name="implementing-a-c-standard-library-based-collection"></a>Bir C++ Standart Kitaplığı temelli koleksiyon uygulama
 
 ATL sağlar `ICollectionOnSTLImpl` hızla, nesneler üzerinde arabirimlerini C++ Standart Kitaplığı temelli koleksiyon uygulama sağlamak için arabirim. Bu sınıf nasıl çalıştığını anlamak için Otomasyon istemcileri amaçlayan bir salt okunur koleksiyon uygulamak için bu sınıfı kullanan basit bir örnek (aşağıda) üzerinden çalışır.
 
-Örnek kod dandır [ATLCollections örnek](../visual-cpp-samples.md).
+Örnek kod dandır [ATLCollections örnek](../overview/visual-cpp-samples.md).
 
 Bu yordamı tamamlamak için şunları yapacaksınız:
 
@@ -75,7 +75,7 @@ Visual Basic desteği bu arabirimin başarısı için önemli olduğundan, numar
 
 [!code-cpp[NVC_ATL_COM#26](../atl/codesnippet/cpp/implementing-an-stl-based-collection_3.h)]
 
-Bu örnekte, özel kullanabileceğiniz `GenericCopy` VCUE_Copy.h ve gelen VCUE_CopyString.h tanımlanmış sınıf [ATLCollections](../visual-cpp-samples.md) örnek. Bu sınıf diğer kodda kullanabilirsiniz, ancak daha da uzmanlıkları da tanımlamanız gerekebilir `GenericCopy` kendi koleksiyonlarında kullanılan veri türlerini desteklemek için. Daha fazla bilgi için [ATL kopyalama İlkesi sınıfları](../atl/atl-copy-policy-classes.md).
+Bu örnekte, özel kullanabileceğiniz `GenericCopy` VCUE_Copy.h ve gelen VCUE_CopyString.h tanımlanmış sınıf [ATLCollections](../overview/visual-cpp-samples.md) örnek. Bu sınıf diğer kodda kullanabilirsiniz, ancak daha da uzmanlıkları da tanımlamanız gerekebilir `GenericCopy` kendi koleksiyonlarında kullanılan veri türlerini desteklemek için. Daha fazla bilgi için [ATL kopyalama İlkesi sınıfları](../atl/atl-copy-policy-classes.md).
 
 ##  <a name="vcconenumeration_and_collection"></a> Sabit listesi ve koleksiyon için tür tanımları oluşturma
 
@@ -102,5 +102,5 @@ Artık, seçtiğiniz istemci ile kodu test edebilirsiniz.
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Koleksiyonlar ve numaralandırmalar](../atl/atl-collections-and-enumerators.md)<br/>
-[ATLCollections örnek](../visual-cpp-samples.md)<br/>
+[ATLCollections örnek](../overview/visual-cpp-samples.md)<br/>
 [ATL Kopyalama İlkesi Sınıfları](../atl/atl-copy-policy-classes.md)

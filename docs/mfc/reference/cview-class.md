@@ -52,12 +52,12 @@ helpviewer_keywords:
 - CView [MFC], OnPrint
 - CView [MFC], OnUpdate
 ms.assetid: 9cff3c56-7564-416b-b9a4-71a9254ed755
-ms.openlocfilehash: fe9b282fd248f8dd03a6a7f078c03866d1b14b2d
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 06c6d4dff28399f3d8e6ac7f46d9ed751850036f
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57305022"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58775315"
 ---
 # <a name="cview-class"></a>CView sınıfı
 
@@ -351,7 +351,7 @@ DROPEFFECT arasında bir değer türü, kullanıcı, nesneyi bu konumda açtı. 
 
 - DROPEFFECT_MOVE MK_ALT için bırakılan nesne ve delete orijinal nesnenin bir kopyasını oluşturur. Görünüm bu verisi nesnesini kabul edebilir, bu genellikle varsayılan bırakma etkili olur.
 
-Daha fazla bilgi için bkz. MFC Gelişmiş kavramlar örneği [OCLIENT](../../visual-cpp-samples.md).
+Daha fazla bilgi için bkz. MFC Gelişmiş kavramlar örneği [OCLIENT](../../overview/visual-cpp-samples.md).
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -405,7 +405,7 @@ DROPEFFECT arasında bir değer türü, kullanıcı, nesneyi bu konumda açtı. 
 
 - DROPEFFECT_MOVE MK_ALT için bırakılan nesne ve delete orijinal nesnenin bir kopyasını oluşturur. Görünüm veri nesnesini kabul edebilir, bu genellikle varsayılan bırakma etkili olur.
 
-Daha fazla bilgi için bkz. MFC Gelişmiş kavramlar örneği [OCLIENT](../../visual-cpp-samples.md).
+Daha fazla bilgi için bkz. MFC Gelişmiş kavramlar örneği [OCLIENT](../../overview/visual-cpp-samples.md).
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -445,7 +445,7 @@ DROPEFFECT arasında bir değer türü, kullanıcı, nesneyi bu konumda açtı. 
 
 - DROPEFFECT_SCROLL sürükleme kaydırma işlemi gerçekleşmek üzere olan veya hedef Görünümü'nde oluştuğunu gösterir.
 
-Daha fazla bilgi için bkz. MFC Gelişmiş kavramlar örneği [OCLIENT](../../visual-cpp-samples.md).
+Daha fazla bilgi için bkz. MFC Gelişmiş kavramlar örneği [OCLIENT](../../overview/visual-cpp-samples.md).
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -871,7 +871,7 @@ Varsa *lHint* 0'dır ve *pHint* null, belge genel güncelleştirme bildirim gön
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MFC örnek MDIDOCVW](../../visual-cpp-samples.md)<br/>
+[MFC örnek MDIDOCVW](../../overview/visual-cpp-samples.md)<br/>
 [CWnd Sınıfı](../../mfc/reference/cwnd-class.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
 [CWnd Sınıfı](../../mfc/reference/cwnd-class.md)<br/>

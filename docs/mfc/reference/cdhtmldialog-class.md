@@ -116,12 +116,12 @@ helpviewer_keywords:
 - CDHtmlDialog [MFC], m_strCurrentUrl
 - CDHtmlDialog [MFC], m_szHtmlResID
 ms.assetid: 3f941c85-87e1-4f0f-9cc5-ffee8498b312
-ms.openlocfilehash: bda980c26f9791e1d4f03026f7e118e69a4ab881
-ms.sourcegitcommit: 309dc532f13242854b47759cef846de59bb807f1
+ms.openlocfilehash: d53d3afb464b9dcfa32ab3cf4ee51446f8313a92
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58565811"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58771831"
 ---
 # <a name="cdhtmldialog-class"></a>CDHtmlDialog sınıfı
 
@@ -1524,6 +1524,6 @@ Bu üye işlevi CDHtmlDialog'ın uygulamasıdır [IDocHostUIHandler::UpdateUI](/
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MFC örnek DHtmlExplore](../../visual-cpp-samples.md)<br/>
+[MFC örnek DHtmlExplore](../../overview/visual-cpp-samples.md)<br/>
 [DDX_DHtml Yardımcı Makroları](#ddx_dhtml_helper_macros)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)

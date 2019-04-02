@@ -6,18 +6,18 @@ f1_keywords:
 helpviewer_keywords:
 - C4693
 ms.assetid: 72d8db01-5e6f-4794-8731-76107e8f064a
-ms.openlocfilehash: 49d101ea56cd868e18489b6c74724a2d106c9265
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: cac5918eb4a1689fd215e07272958eeca48247ad
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50536665"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58781906"
 ---
 # <a name="compiler-warning-c4693"></a>Derleyici Uyarısı C4693
 
 > 'class': kapalı bir soyut sınıf 'Test' örnek üyelerine sahip olamaz
 
-Bir tür işaretlenmişse [korumalı](../../windows/sealed-cpp-component-extensions.md) ve [soyut](../../windows/abstract-cpp-component-extensions.md), yalnızca statik üyeleri olabilir.
+Bir tür işaretlenmişse [korumalı](../../extensions/sealed-cpp-component-extensions.md) ve [soyut](../../extensions/abstract-cpp-component-extensions.md), yalnızca statik üyeleri olabilir.
 
 Bu uyarı, bir hata için otomatik olarak yükseltilir. Bu davranışı değiştirmek istiyorsanız, [#pragma Uyarısı](../../preprocessor/warning.md).
 

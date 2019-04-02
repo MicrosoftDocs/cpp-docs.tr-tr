@@ -6,18 +6,18 @@ f1_keywords:
 helpviewer_keywords:
 - C3888
 ms.assetid: 40820812-79c5-4dcd-a19d-b4164d25fc8a
-ms.openlocfilehash: 067412e59041cb98b68cb373c4671c243ab8a0ec
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 20251292ec4635ea855a56890878bc55f567ab62
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50479072"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58777473"
 ---
 # <a name="compiler-error-c3888"></a>Derleyici Hatası C3888
 
 'name': Bu sabit değerli veri üyesiyle ilişkili const ifadesi C + tarafından desteklenmiyor +/ CLI
 
-*Adı* ile bildirilen veri üyesi [değişmez değer](../../windows/literal-cpp-component-extensions.md) anahtar sözcüğü, derleyici desteği olmayan bir değer ile başlatılır. Derleyici, yalnızca sabit integral, enum veya dize türleri destekler. Olası nedeni **C3888** hatadır veri üyesi bir bayt dizisi ile başlatılır.
+*Adı* ile bildirilen veri üyesi [değişmez değer](../../extensions/literal-cpp-component-extensions.md) anahtar sözcüğü, derleyici desteği olmayan bir değer ile başlatılır. Derleyici, yalnızca sabit integral, enum veya dize türleri destekler. Olası nedeni **C3888** hatadır veri üyesi bir bayt dizisi ile başlatılır.
 
 ### <a name="to-correct-this-error"></a>Bu hatayı düzeltmek için
 
@@ -25,4 +25,4 @@ ms.locfileid: "50479072"
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[değişmez değer](../../windows/literal-cpp-component-extensions.md)
+[değişmez değer](../../extensions/literal-cpp-component-extensions.md)

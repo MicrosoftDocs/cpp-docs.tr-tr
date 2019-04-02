@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - static_cast keyword [C++]
 ms.assetid: 1f7c0c1c-b288-476c-89d6-0e2ceda5c293
-ms.openlocfilehash: 8e39fe7eb0fb9b77a82b305fa2f8186ad4e855a1
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: dca6d5297379e6ddc1c70dba80f35f2f55672e49
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50601714"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58776927"
 ---
 # <a name="staticcast-operator"></a>static_cast İşleci
 
@@ -103,7 +103,7 @@ Herhangi bir ifade tarafından void türüne açıkça dönüştürülebilir **s
 
 **Static_cast** işleci beklenmedik şekilde atayamaz **const**, **geçici**, veya **__unaligned** öznitelikleri. Bkz: [const_cast işleci](../cpp/const-cast-operator.md) bu öznitelikleri kaldırma hakkında bilgi için.
 
-Yeniden konumlandırma atık Toplayıcıya, kullanımını üstte denetlenmeyen yayınlar gerçekleştirme tehlikesi nedeniyle **static_cast** düzgün çalışır emin olduğunuzda yalnızca performans açısından kritik kodda olmalıdır. Kullanmanız gerekirse **static_cast** yayın modunda ile yerine [safe_cast](../windows/safe-cast-cpp-component-extensions.md) başarı sağlamak için hata ayıklama yapılarınızda.
+**C++/CLI:** Yeniden konumlandırma atık Toplayıcıya, kullanımını üstte denetlenmeyen yayınlar gerçekleştirme tehlikesi nedeniyle **static_cast** düzgün çalışır emin olduğunuzda yalnızca performans açısından kritik kodda olmalıdır. Kullanmanız gerekirse **static_cast** yayın modunda ile yerine [safe_cast](../extensions/safe-cast-cpp-component-extensions.md) başarı sağlamak için hata ayıklama yapılarınızda.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

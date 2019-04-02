@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3379
 ms.assetid: a66c2c4e-091c-4426-9cde-7c4cfb2ffce1
-ms.openlocfilehash: 2d6b2cb15cfaa0b72b946c0edb3b451737b51772
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 5bf4e2e42b4534d47a2a7d3c9a838c404a99ba68
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50553510"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58769998"
 ---
 # <a name="compiler-error-c3379"></a>Derleyici Hatası C3379
 
@@ -19,7 +19,7 @@ ms.locfileid: "50553510"
 
 Sınıf veya yapı, gibi bir yönetilen türü uygulandığında [genel](../../cpp/public-cpp.md) ve [özel](../../cpp/private-cpp.md) anahtar sözcükleri sınıfı derleme meta verileri kullanıma sunulacak olup olmadığını gösterir. `public` veya `private` derleme erişimi kapsayan sınıfın devralacak bir iç içe geçmiş sınıf uygulanamaz.
 
-İle kullanıldığında [/CLR](../../build/reference/clr-common-language-runtime-compilation.md), `ref` ve `value` anahtar sözcükleri belirten bir sınıf yönetilir (bkz [sınıfları ve yapıları](../../windows/classes-and-structs-cpp-component-extensions.md)).
+İle kullanıldığında [/CLR](../../build/reference/clr-common-language-runtime-compilation.md), `ref` ve `value` anahtar sözcükleri belirten bir sınıf yönetilir (bkz [sınıfları ve yapıları](../../extensions/classes-and-structs-cpp-component-extensions.md)).
 
 Aşağıdaki örnek, C3379 oluşturur:
 

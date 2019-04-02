@@ -42,12 +42,12 @@ helpviewer_keywords:
 - CMapStringToOb [MFC], RemoveKey
 - CMapStringToOb [MFC], SetAt
 ms.assetid: b45794c2-fe6b-4edb-a8ca-faa03b57b4a8
-ms.openlocfilehash: d18cad73f9cf42ffd04ecbcde840d50f6167743a
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: ed717497866076681e39cdee7803a45eb8e097d3
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57266230"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58780372"
 ---
 # <a name="cmapstringtostring-class"></a>CMapStringToString sınıfı
 
@@ -226,6 +226,6 @@ Verilen anahtara tam olarak eşleşen bir anahtara bir eşleme öğeyi aramak i�
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MFC örnek Topla](../../visual-cpp-samples.md)<br/>
+[MFC örnek Topla](../../overview/visual-cpp-samples.md)<br/>
 [CObject Sınıfı](../../mfc/reference/cobject-class.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)

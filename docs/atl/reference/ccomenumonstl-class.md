@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - CComEnumOnSTL class
 ms.assetid: befe1a44-7a00-4f28-9a2e-cc0fa526643c
-ms.openlocfilehash: 56d0de1131791def3ea536c6e5a7f5ce0bef9617
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: f9bf9c227984b2fdbf460f970357f395934b238c
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57290514"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58779865"
 ---
 # <a name="ccomenumonstl-class"></a>CComEnumOnSTL sınıfı
 
@@ -102,7 +102,7 @@ Bu kod oluşturur bir **typedef** için `CComEnumOnSTL` oluşan bir vektörü su
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [IEnumOnSTLImpl](../../atl/reference/ienumonstlimpl-class.md)<br/>
-[ATLCollections örneği: Icollectiononstlımpl ve CComEnumOnSTL özel kopyalama İlkesi sınıfları gösterir](../../visual-cpp-samples.md)<br/>
+[ATLCollections örneği: Icollectiononstlımpl ve CComEnumOnSTL özel kopyalama İlkesi sınıfları gösterir](../../overview/visual-cpp-samples.md)<br/>
 [Sınıfına genel bakış](../../atl/atl-class-overview.md)<br/>
 [CComObjectRootEx Sınıfı](../../atl/reference/ccomobjectrootex-class.md)<br/>
 [CComObjectThreadModel](atl-typedefs.md#ccomobjectthreadmodel)<br/>

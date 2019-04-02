@@ -10,12 +10,12 @@ f1_keywords:
 helpviewer_keywords:
 - for each keyword [C++]
 ms.assetid: 0c3a364b-2747-43f3-bb8d-b7d3b7023f79
-ms.openlocfilehash: c5ee72e557c62e3db2eeb5dac4811133719183f6
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.openlocfilehash: b1dfe3a32f88c0e9456e3d73c31c533911f8d3ac
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57746330"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58770697"
 ---
 # <a name="for-each-in"></a>for each, in
 
@@ -35,7 +35,7 @@ Bir dizi ya da koleksiyonda yinelenir. Bu standart olmayan anahtar sözcük, hem
 Türünü `identifier`.
 
 *tanımlayıcı*<br/>
-Koleksiyon öğesini temsil eden yineleme değişkeni.  Zaman `identifier` olduğu bir [Tracking Reference Operator](../windows/tracking-reference-operator-cpp-component-extensions.md), öğeyi değiştirebilirsiniz.
+Koleksiyon öğesini temsil eden yineleme değişkeni.  Zaman `identifier` olduğu bir [Tracking Reference Operator](../extensions/tracking-reference-operator-cpp-component-extensions.md), öğeyi değiştirebilirsiniz.
 
 *İfade*<br/>
 Bir dizi ifadesi veya koleksiyon. Koleksiyon öğesi, derleyicinin kendisine dönüştürebileceği şekilde olmalıdır `identifier` türü.
@@ -49,7 +49,7 @@ Yürütülecek bir veya daha fazla deyim.
 
 *Deyimleri* dizi veya koleksiyon içindeki her öğe için yürütülür. Koleksiyondaki tüm öğeler için yineleme tamamlandıktan sonra Denetim izleyen deyime aktarılır `for each` blok.
 
-`for each` ve `in` olan [bağlama duyarlı anahtar sözcükler](../windows/context-sensitive-keywords-cpp-component-extensions.md).
+`for each` ve `in` olan [bağlama duyarlı anahtar sözcükler](../extensions/context-sensitive-keywords-cpp-component-extensions.md).
 
 Daha fazla bilgi için:
 
@@ -159,4 +159,4 @@ Testing
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Çalışma Zamanı Platformları için Bileşen Uzantıları](../windows/component-extensions-for-runtime-platforms.md)
+[Çalışma Zamanı Platformları için Bileşen Uzantıları](../extensions/component-extensions-for-runtime-platforms.md)

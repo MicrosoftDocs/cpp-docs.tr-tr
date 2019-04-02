@@ -106,12 +106,12 @@ helpviewer_keywords:
 - CMFCMenuBar [MFC], SetRecentlyUsedMenus
 - CMFCMenuBar [MFC], SetShowAllCommands
 ms.assetid: 8a3ce4c7-b012-4dc0-b4f8-53c10b4b86b8
-ms.openlocfilehash: e4b1a7eba31ef28578c515c437978bc59cbd08f1
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 87844e843057bb295c904b5f1b3d7dd03fa4d797
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57267374"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58775900"
 ---
 # <a name="cmfcmenubar-class"></a>CMFCMenuBar sınıfı
 
@@ -191,7 +191,7 @@ Kullanılacak bir `CMFCMenuBar` nesne, ana pencere çerçevesi nesnesinde ekleme
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, çeşitli yöntemlerin nasıl kullanılacağını gösterir `CMFCMenuBar` sınıfı. Örnek bölmesinin stilini ayarlayın, özelleştirme düğmesini etkinleştir, etkinleştir Yardım kutusu, gölge açılır menüler için etkinleştirmek ve menü çubuğu güncelleştirmek nasıl gösterir. Bu kod parçacığı parçasıdır [IE gösterim örneği](../../visual-cpp-samples.md).
+Aşağıdaki örnek, çeşitli yöntemlerin nasıl kullanılacağını gösterir `CMFCMenuBar` sınıfı. Örnek bölmesinin stilini ayarlayın, özelleştirme düğmesini etkinleştir, etkinleştir Yardım kutusu, gölge açılır menüler için etkinleştirmek ve menü çubuğu güncelleştirmek nasıl gösterir. Bu kod parçacığı parçasıdır [IE gösterim örneği](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_IEDemo#1](../../mfc/reference/codesnippet/cpp/cmfcmenubar-class_1.h)]
 [!code-cpp[NVC_MFC_IEDemo#3](../../mfc/reference/codesnippet/cpp/cmfcmenubar-class_2.cpp)]
@@ -395,7 +395,7 @@ Ek stilleri bir listesi için bkz. [araç çubuğu denetimi ve düğme stilleri]
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki örnek nasıl kullanılacağını gösterir `CreateEx` yöntemi `CMFCMenuBar` sınıfı. Bu kod parçacığı parçasıdır [IE gösterim örneği](../../visual-cpp-samples.md).
+Aşağıdaki örnek nasıl kullanılacağını gösterir `CreateEx` yöntemi `CMFCMenuBar` sınıfı. Bu kod parçacığı parçasıdır [IE gösterim örneği](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_IEDemo#1](../../mfc/reference/codesnippet/cpp/cmfcmenubar-class_1.h)]
 [!code-cpp[NVC_MFC_IEDemo#2](../../mfc/reference/codesnippet/cpp/cmfcmenubar-class_3.cpp)]

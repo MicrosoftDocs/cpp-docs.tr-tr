@@ -20,12 +20,12 @@ helpviewer_keywords:
 - CFont [MFC], FromHandle
 - CFont [MFC], GetLogFont
 ms.assetid: 3fad6bfe-d6ce-4ab9-967a-5ce0aa102800
-ms.openlocfilehash: 60a717136f69b29df48dd8f449ddaffe5c15ccbf
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 04136b3550675f0e50f905047fee551e27da7069
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57271872"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58768114"
 ---
 # <a name="cfont-class"></a>CFont sınıfı
 
@@ -359,6 +359,6 @@ Grafik nesneler kullanma hakkında daha fazla bilgi için bkz. [grafik nesneleri
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MFC örnek HIERSVR](../../visual-cpp-samples.md)<br/>
+[MFC örnek HIERSVR](../../overview/visual-cpp-samples.md)<br/>
 [CGdiObject Sınıfı](../../mfc/reference/cgdiobject-class.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)

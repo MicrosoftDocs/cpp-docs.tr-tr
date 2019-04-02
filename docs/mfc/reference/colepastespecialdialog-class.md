@@ -28,12 +28,12 @@ helpviewer_keywords:
 - COlePasteSpecialDialog [MFC], GetSelectionType
 - COlePasteSpecialDialog [MFC], m_ps
 ms.assetid: 0e82ef9a-9bbe-457e-8240-42c86a0534f7
-ms.openlocfilehash: 1d135a2a254f71a4123a8bd338e1d6e9f87b74c2
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 9c31ed6f82f4280206bf233999fac74981636db3
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57303328"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58776914"
 ---
 # <a name="colepastespecialdialog-class"></a>COlePasteSpecialDialog sınıfı
 
@@ -383,7 +383,7 @@ Daha fazla bilgi için [OLEUIPASTESPECIAL](/windows/desktop/api/oledlg/ns-oledlg
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MFC örnek OCLIENT](../../visual-cpp-samples.md)<br/>
+[MFC örnek OCLIENT](../../overview/visual-cpp-samples.md)<br/>
 [COleDialog Sınıfı](../../mfc/reference/coledialog-class.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
 [COleDialog Sınıfı](../../mfc/reference/coledialog-class.md)

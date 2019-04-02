@@ -14,12 +14,12 @@ helpviewer_keywords:
 - CMFCDesktopAlertWndInfo [MFC], m_strText
 - CMFCDesktopAlertWndInfo [MFC], m_strURL
 ms.assetid: 5c9bb84e-6c96-4748-8e74-6951b6ae8e84
-ms.openlocfilehash: 3c40424a1aba81a7048ba89781fe6c4324f86ccd
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: a4b3d8769b3d267c0bd3f81269dd3b8ab3cf3184
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57301642"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58768295"
 ---
 # <a name="cmfcdesktopalertwndinfo-class"></a>Cmfcdesktopalertwndınfo sınıfı
 
@@ -68,7 +68,7 @@ Varsayılan iletişim yeterli değilse, özel bir iletişim kutusu oluşturun ve
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, çeşitli üyeleri kullanılacak gösterilmiştir `CMFCDesktopAlertWndInfo` sınıfı. Örnek tanıtıcı gösterilen simge Masaüstü Uyarısı açılır penceresi, Masaüstü Uyarısı açılır penceresi üzerinde görüntülenen bağlantıyı ve bağlantı Masaüstü Uyarısı açılır penceresi ile ilişkili komut Kimliğini görüntülenen metni ayarlama işlemini gösterir. Bu örneğin parçasıdır [Masaüstü uyarı gösterim örneği](../../visual-cpp-samples.md).
+Aşağıdaki örnek, çeşitli üyeleri kullanılacak gösterilmiştir `CMFCDesktopAlertWndInfo` sınıfı. Örnek tanıtıcı gösterilen simge Masaüstü Uyarısı açılır penceresi, Masaüstü Uyarısı açılır penceresi üzerinde görüntülenen bağlantıyı ve bağlantı Masaüstü Uyarısı açılır penceresi ile ilişkili komut Kimliğini görüntülenen metni ayarlama işlemini gösterir. Bu örneğin parçasıdır [Masaüstü uyarı gösterim örneği](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_DesktopAlertDemo#3](../../mfc/reference/codesnippet/cpp/cmfcdesktopalertwndinfo-class_1.cpp)]
 

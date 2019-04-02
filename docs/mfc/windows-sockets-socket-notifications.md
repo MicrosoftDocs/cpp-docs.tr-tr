@@ -6,12 +6,12 @@ helpviewer_keywords:
 - notifications [MFC], socket
 - sockets [MFC], notifications
 ms.assetid: 87d5bf70-6e77-49a9-9a64-aaadee2ad018
-ms.openlocfilehash: c08305b8aeeca00eaf41e4f1c24b51a46a8c4254
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: df7bfe8a95221682d0f7f4ebb123bd15b79144d5
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57289916"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58774340"
 ---
 # <a name="windows-sockets-socket-notifications"></a>Windows Yuvaları: Yuva bildirimleri
 
@@ -43,7 +43,7 @@ Veri gönderme veya alma gibi bir işlem sırasında bir `CSocket` nesne zaman u
 > [!NOTE]
 >  İçinde `CSocket`, `OnConnect` bildirim işlevini hiçbir zaman çağrılır. Bağlantılar için çağırmanızı `Connect`, bağlantı (başarıyla veya hata) tamamlandığında döndürülür. Bağlantı bildirimleri nasıl işleneceğini bir MFC Uygulama ayrıntısı olduğunu.
 
-İşlev sınıfı altında her bildirim işlevi hakkında daha fazla ayrıntı için bkz `CAsyncSocket` içinde *MFC başvurusu*. Kaynak kodu ve MFC örnekleri hakkında bilgi için bkz: [MFC örnekleri](../visual-cpp-samples.md).
+İşlev sınıfı altında her bildirim işlevi hakkında daha fazla ayrıntı için bkz `CAsyncSocket` içinde *MFC başvurusu*. Kaynak kodu ve MFC örnekleri hakkında bilgi için bkz: [MFC örnekleri](../overview/visual-cpp-samples.md).
 
 Daha fazla bilgi için bkz.:
 

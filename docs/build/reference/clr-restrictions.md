@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - /clr compiler option [C++], restrictions
 ms.assetid: 385f6462-2c68-46d6-810e-469553ead447
-ms.openlocfilehash: e2205740aea5a2e557b8d93c3c60045435c4b71d
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.openlocfilehash: 21b7ead553871854c73021756eb2086f9e6e7393
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57816106"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58777824"
 ---
 # <a name="clr-restrictions"></a>/clr Kısıtlamalar
 
@@ -29,7 +29,7 @@ Kullanımı ile ilgili aşağıdaki kısıtlamalara dikkat edin **/CLR**:
 
 - [Naked](../../cpp/naked-cpp.md) [__declspec](../../cpp/declspec.md) değiştiricisi, / CLR altında yoksayılır.
 
-- Translator işlevi belirlediği [_set_se_translator](../../c-runtime-library/reference/set-se-translator.md) yalnızca yönetilmeyen kodda Özek durumları yakalayan etkiler. Bkz: [özel durum işleme](../../windows/exception-handling-cpp-component-extensions.md) daha fazla bilgi için.
+- Translator işlevi belirlediği [_set_se_translator](../../c-runtime-library/reference/set-se-translator.md) yalnızca yönetilmeyen kodda Özek durumları yakalayan etkiler. Bkz: [özel durum işleme](../../extensions/exception-handling-cpp-component-extensions.md) daha fazla bilgi için.
 
 - İşlev işaretçileri karşılaştırma altında izin verilmiyor **/CLR**.
 

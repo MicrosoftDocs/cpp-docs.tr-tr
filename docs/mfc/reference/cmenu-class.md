@@ -84,12 +84,12 @@ helpviewer_keywords:
 - CMenu [MFC], TrackPopupMenuEx
 - CMenu [MFC], m_hMenu
 ms.assetid: 40cacfdc-d45c-4ec7-bf28-991c72812499
-ms.openlocfilehash: bdc5f2ebf20949f63b3892ee8e8c6eedf05e2838
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 464b59f7e598ea1901cf88c47c5887cbbf308607
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57293868"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58770856"
 ---
 # <a name="cmenu-class"></a>CMenu sınıfı
 
@@ -561,7 +561,7 @@ Bkz: [CWnd::OnDrawItem](../../mfc/reference/cwnd-class.md#ondrawitem) açıklama
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki kod MFC'den olan [CTRLTEST](../../visual-cpp-samples.md) örnek:
+Aşağıdaki kod MFC'den olan [CTRLTEST](../../overview/visual-cpp-samples.md) örnek:
 
 [!code-cpp[NVC_MFCWindowing#24](../../mfc/reference/codesnippet/cpp/cmenu-class_4.cpp)]
 
@@ -1094,7 +1094,7 @@ Bkz: [CWnd::OnMeasureItem](../../mfc/reference/cwnd-class.md#onmeasureitem) aç�
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki kod MFC'den olan [CTRLTEST](../../visual-cpp-samples.md) örnek:
+Aşağıdaki kod MFC'den olan [CTRLTEST](../../overview/visual-cpp-samples.md) örnek:
 
 [!code-cpp[NVC_MFCWindowing#31](../../mfc/reference/codesnippet/cpp/cmenu-class_11.cpp)]
 
@@ -1484,8 +1484,8 @@ Kayan bir açılır menü, ekranda her yerde görünebilir. Açılır menü olu�
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MFC örnek CTRLTEST](../../visual-cpp-samples.md)<br/>
-[MFC örnek DYNAMENU](../../visual-cpp-samples.md)<br/>
+[MFC örnek CTRLTEST](../../overview/visual-cpp-samples.md)<br/>
+[MFC örnek DYNAMENU](../../overview/visual-cpp-samples.md)<br/>
 [CObject Sınıfı](../../mfc/reference/cobject-class.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
 [CObject Sınıfı](../../mfc/reference/cobject-class.md)

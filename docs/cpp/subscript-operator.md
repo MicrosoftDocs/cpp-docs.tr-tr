@@ -9,12 +9,12 @@ helpviewer_keywords:
 - '[] operator'
 - subscript operator [C++], syntax
 ms.assetid: 69c31494-52da-4dd0-8bbe-6ccbfd50f197
-ms.openlocfilehash: 5921b89c7637f1a4d1171c8835bb1b5300b718fb
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 2d55c18d2c9faa1a704bea129f2551937e76133c
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50572919"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58767931"
 ---
 # <a name="subscript-operator-"></a>Alt simge işleci]
 
@@ -28,7 +28,7 @@ postfix-expression [ expression ]
 
 Alt simge işleci (de birincil bir ifade olabilir) bir sonek ifadesi **[]**, dizi dizini oluşturma belirtir.
 
-Yönetilen diziler hakkında daha fazla bilgi için bkz. [diziler](../windows/arrays-cpp-component-extensions.md).
+C + yönetilen diziler hakkında daha fazla bilgi için +/ CLI, bkz: [diziler](../extensions/arrays-cpp-component-extensions.md).
 
 Genellikle, tarafından temsil edilen değeri *sonek ifadesi* bir işaretçi değeri, bir dizi tanımlayıcısına gibi ve *ifade* (numaralandırılmış türler dahil) bir tamsayı değeri. Ancak, tüm sözdizimsel olarak olan bir ifadenin bir işaretçi türünde olması ve diğeri Tamsayı türünde olması gereklidir. Tamsayı değeri bu nedenle olabilir *sonek ifadesi* konumu ve işaretçi değeri parantez içinde olabilir *ifade* veya alt simge konumu. Aşağıdaki kod parçasını göz önünde bulundurun:
 
@@ -52,7 +52,7 @@ Adresleri `aDb[0]` ve `aDb[1]` 8 bayt uzaklıkta olduğu — türünde bir nesne
 
 Bir alt simge ifadesinde de aşağıdaki gibi birden fazla alt simge olabilir:
 
-*İfade1* **[** *expression2* **] [** *ifade3* **]** ...
+*expression1* **[** *expression2* **] [** *expression3* **]** ...
 
 Alt simge ifadeleri soldan sağa ilişkilendirilir. En soldaki alt simge ifadesi *İfade1* **[** *expression2* **]**, ilk olarak değerlendirilir. Eklemesini sonuçları adresi *İfade1* ve *expression2* bir işaretçi ifadesi; forms ardından *ifade3* yeni bir form için bu işaretçi ifadesine eklenir vb. son alt simge ifadesi eklenene dek işaretçi ifadesi. Yöneltme işleci (<strong>\*</strong>) son işaretçi değeri bir dizi türü adresleri sürece son simgeli ifade değerinden sonra uygulanır.
 

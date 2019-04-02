@@ -164,12 +164,12 @@ helpviewer_keywords:
 - COleClientItem [MFC], OnScrollBy
 - COleClientItem [MFC], OnShowItem
 ms.assetid: 7f571b7c-2758-4839-847a-0cf1ef643128
-ms.openlocfilehash: ec3048e7bd033e5c296b558dd2083c648bc377e7
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 2687dfc9941a512523a7cb771cb872c78b97ce2d
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57295363"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58773989"
 ---
 # <a name="coleclientitem-class"></a>Coleclientıtem sınıfı
 
@@ -2187,8 +2187,8 @@ Daha fazla bilgi için [IOleLink::Update](/windows/desktop/api/oleidl/nf-oleidl-
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MFC örnek MFCBIND](../../visual-cpp-samples.md)<br/>
-[MFC örnek OCLIENT](../../visual-cpp-samples.md)<br/>
+[MFC örnek MFCBIND](../../overview/visual-cpp-samples.md)<br/>
+[MFC örnek OCLIENT](../../overview/visual-cpp-samples.md)<br/>
 [CDocItem Sınıfı](../../mfc/reference/cdocitem-class.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
 [COleServerItem Sınıfı](../../mfc/reference/coleserveritem-class.md)

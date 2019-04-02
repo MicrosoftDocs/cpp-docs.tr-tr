@@ -1,15 +1,9 @@
 ---
 layout: HubPage
 title: Visual C++ belgeleri
-description: C++ uygulamaları, hizmetleri ve araçları, platformlar ve cihazlar için geliştirmek için kullanmayı öğrenin.
+description: 'C++ uygulamaları, hizmetleri ve araçları, platformlar ve cihazlar için geliştirmek için kullanmayı öğrenin.'
 author: mikeblome
 ms.author: mblome
-ms.openlocfilehash: e8fe8dec14560579e255446c4de3ee5a17e302f6
-ms.sourcegitcommit: e98671a4f741b69d6277da02e6b4c9b1fd3c0ae5
-ms.translationtype: MT
-ms.contentlocale: tr-TR
-ms.lasthandoff: 02/04/2019
-ms.locfileid: "55703213"
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -51,7 +45,7 @@ ms.locfileid: "55703213"
                 </a>
             </li>
             <li>
-                <a href="/cpp/what-s-new-for-visual-cpp-in-visual-studio">
+                <a href="/cpp/what-s-new-for-overview/visual-cpp-in-visual-studio.md">
                     <div class="cardSize">
                         <div class="cardPadding">
                             <div class="card">
@@ -233,7 +227,7 @@ ms.locfileid: "55703213"
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Derleme</h3>
+                                                    <h3>Yapı</h3>
                                                     <p>Derleme ve kodunuzu bağlayın ve en fazla işleme için en iyi duruma getirme.</p>
                                                 </div>
                                             </div>

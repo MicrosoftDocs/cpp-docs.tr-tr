@@ -16,12 +16,12 @@ helpviewer_keywords:
 - CONTAIN tutorial [MFC]
 - Links menu item [MFC]
 ms.assetid: 425448be-8ca0-412e-909a-a3a9ce845288
-ms.openlocfilehash: ad3431f78d3637bcdfdb0266c8abdb43047ca28d
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: b1a74fef743592d3d052226dac926fc7ddc58578
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57279364"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58770349"
 ---
 # <a name="menus-and-resources-container-additions"></a>Menüler ve kaynaklar: Kapsayıcı ekleme
 
@@ -29,7 +29,7 @@ Bu makalede, menüler ve görsel düzenleme kapsayıcısı uygulamasında diğer
 
 Kapsayıcı uygulamalar, iki tür değişiklik yapılması gereken: OLE görsel düzenleme ve yerinde etkinleştirme için kullanılan yeni kaynaklar desteklemek için mevcut kaynaklar yapılan değişiklikler. Kapsayıcı uygulamanızı oluşturmak için Uygulama Sihirbazı'nı kullanırsanız aşağıdaki adımları sizin yerinize yapılır, ancak bunların bazı özelleştirme gerektirebilir.
 
-Uygulama Sihirbazı'nı kullanmıyorsanız OCLIENT aramak isteyebilirsiniz. RC, bu değişiklikleri nasıl uygulandığını görmek için OCLIENT örnek uygulama için kaynak betiği. MFC OLE örnek görmek [OCLIENT](../visual-cpp-samples.md).
+Uygulama Sihirbazı'nı kullanmıyorsanız OCLIENT aramak isteyebilirsiniz. RC, bu değişiklikleri nasıl uygulandığını görmek için OCLIENT örnek uygulama için kaynak betiği. MFC OLE örnek görmek [OCLIENT](../overview/visual-cpp-samples.md).
 
 Bu makalede ele alınan konular:
 
@@ -62,7 +62,7 @@ Yerinde etkinleştirme destekleniyorsa, bir kapsayıcı uygulama Hızlandırıc�
 |--------|---------|----------|
 |ID_CANCEL_EDIT_CNTR|VK_ESCAPE|**VIRTKEY'E**|
 
-İkinci değişiklik yerinde etkinleştirme için oluşturulan yeni menü kaynağı karşılık gelen yeni bir Hızlandırıcı tablosu oluşturmaktır. Bu tablo, yukarıdaki VK_ESCAPE giriş yanı sıra dosya ve pencere menüleri girişlerine sahiptir. Aşağıdaki örnek, yerinde etkinleştirme MFC örneğinde oluşturulan Hızlandırıcı tablo [KAPSAYICI](../visual-cpp-samples.md):
+İkinci değişiklik yerinde etkinleştirme için oluşturulan yeni menü kaynağı karşılık gelen yeni bir Hızlandırıcı tablosu oluşturmaktır. Bu tablo, yukarıdaki VK_ESCAPE giriş yanı sıra dosya ve pencere menüleri girişlerine sahiptir. Aşağıdaki örnek, yerinde etkinleştirme MFC örneğinde oluşturulan Hızlandırıcı tablo [KAPSAYICI](../overview/visual-cpp-samples.md):
 
 |Kimlik|Anahtar|Tür|
 |--------|---------|----------|

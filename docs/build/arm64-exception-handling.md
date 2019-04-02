@@ -1,12 +1,12 @@
 ---
 title: ARM64 özel durum işleme
 ms.date: 11/19/2018
-ms.openlocfilehash: 921029704e4bf5adabfbe0a82387dadc911b9036
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.openlocfilehash: 78d3d7d206adcb123c9537e91c2d5976b8be5baa
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57816158"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58770076"
 ---
 # <a name="arm64-exception-handling"></a>ARM64 özel durum işleme
 
@@ -54,7 +54,7 @@ ARM64 üzerinde Windows Donanım tarafından oluşturulan zaman uyumsuz özel du
 
 ![yığın çerçevesi düzeni](media/arm64-exception-handling-stack-frame.png "yığın çerçevesi düzeni")
 
-Zincirleme çerçeve işlevler için yerel değişken alanı en iyi duruma getirme konuları bağlı olarak herhangi bir konumda fp ve lr çifti kaydedilebilir. Çerçeve işaretçisini (r29) veya yığın işaretçisi (sp) temel alan bir tek yönerge tarafından erişilebilen Yereller sayısı en üst düzeye çıkarmak için kullanılan hedeftir. Ancak için `alloca` İşlevler, zincirleme gerekir ve r29 yığının sonuna işaret etmelidir. Kalıcı daha iyi register çifti-adresleme-modu kapsamı için izin vermek için yerel yığın üstüne alanları konumlandırılır aave kaydedin. En verimli giriş dizilerini bazılarını gösteren örnekleri aşağıda verilmiştir. Açıklık ve daha iyi önbellek yerleşim yeri için tüm canonical açıklanabilmeleri içinde Çağrılan Kaydedilmiş Yazmaçlar depolamanın "yukarı büyüyen" sırayla sırasıdır. `#framesz` Aşağıda (alloca alanı dışında) tüm yığın boyutunu temsil eder. `#localsz` ve `#outsz` yerel boyutu belirtmek (kaydetme dahil olmak üzere alanı \<r29, lr > çifti) ve parametre boyutu sırasıyla giden.
+Zincirleme çerçeve işlevler için yerel değişken alanı en iyi duruma getirme konuları bağlı olarak herhangi bir konumda fp ve lr çifti kaydedilebilir. Çerçeve işaretçisini (r29) veya yığın işaretçisi (sp) temel alan bir tek yönerge tarafından erişilebilen Yereller sayısı en üst düzeye çıkarmak için kullanılan hedeftir. Ancak için `alloca` İşlevler, zincirleme gerekir ve r29 yığının sonuna işaret etmelidir. Daha iyi register çifti-adresleme-modu kapsamı için izin vermek için kalıcı kayıt alanları kaydetme konumlandırıldığı yerel yığın üstüne. En verimli giriş dizilerini bazılarını gösteren örnekleri aşağıda verilmiştir. Açıklık ve daha iyi önbellek yerleşim yeri için tüm canonical açıklanabilmeleri içinde Çağrılan Kaydedilmiş Yazmaçlar depolamanın "yukarı büyüyen" sırayla sırasıdır. `#framesz` Aşağıda (alloca alanı dışında) tüm yığın boyutunu temsil eder. `#localsz` ve `#outsz` yerel boyutu belirtmek (kaydetme dahil olmak üzere alanı \<r29, lr > çifti) ve parametre boyutu sırasıyla giden.
 
 1. Zincirleme #localsz \<= 512
 
@@ -267,7 +267,7 @@ ULONG ComputeXdataSize(PULONG *Xdata)
 }
 ```
 
-Giriş ve her bitiş sahip olsa da, kendi dizine geriye doğru izleme kodları, tablo, bunlar arasında paylaşılır ve tamamen olası (ve tamamen seyrek) unutulmamalıdır bunlar tüm (bkz. örnek 2'de ek A) aynı kodu paylaşabilirsiniz. Belirtilebilecek en büyük dizinden 255 olduğundan derleyici yazıcıları bu durumda, özellikle bu nedenle belirli bir işlev için geriye doğru izleme kodları toplam sayısını sınırlama iyileştirmeniz gerekir.
+Giriş ve her bitiş sahip olsa da, kendi dizine geriye doğru izleme kodları, tablo, bunlar arasında paylaşılır ve tamamen olası (ve tamamen seyrek) unutulmamalıdır bunlar tüm (bkz. örnek 2 örnek bölümü bel aynı kodu paylaşabilirsiniz Göster). Belirtilebilecek en büyük dizinden 255 olduğundan derleyici yazıcıları bu durumda, özellikle bu nedenle belirli bir işlev için geriye doğru izleme kodları toplam sayısını sınırlama iyileştirmeniz gerekir.
 
 ### <a name="unwind-codes"></a>Geriye doğru izleme kodları
 
@@ -340,7 +340,7 @@ Alanları aşağıdaki gibidir:
 
 - **İşlevi Başlat RVA** 32-bit RVA işlevi başlangıcı olduğu.
 - **Bayrağı** 2 bit alanı yukarıda, aşağıdaki anlamlara ile aynıdır:
-  - 00 = paketlenmiş kullanılmıyor; veri bırakma Aşağıda, sanal işlem bulunur kayda kalan bitleri noktası
+  - 00 = paketlenmiş kullanılmıyor; veri bırakma Kalan bitleri için bir sanal işlem bulunur kayıt noktası
   - 01 = paketlenmiş tek giriş ve bitiş başlangıcına ve sonuna kapsamı ile aşağıda açıklandığı gibi kullanılan veri bırakma
   - 10 = paketlenmiş herhangi bir giriş ve bitiş; olmadan kod için aşağıda açıklandığı gibi kullanılan veri bırakma Bu, ayrılmış işlevi segmentleri açıklamak için kullanışlıdır.
   - 11 = ayrılmıştır;
@@ -353,7 +353,7 @@ Alanları aşağıdaki gibidir:
   - 11 = zincirleme işlevi, giriş/sonuç deposu/yük çifti yönerge kullanılan \<r29, lr >
 - **H** işlevi çok başlangıcında depolayarak olan işlev tam sayı parametresi homes olup olmadığını belirten bir 1 bit bayrağı (r0-r7) kaydeder. (0 = 1 kaydeder ev değil havaalanlarından kayıtları =).
 - **RegI** kurallı yığın konuma kaydedildiğinde geçici olmayan INT kayıtları (r28 r19) sayısını gösteren bir 4-bit alanıdır.
-- **RegF** kurallı yığın konuma kaydedildiğinde geçici olmayan FP kayıtları (d15 d8) sayısını gösteren bir 3-bit alanıdır. (0 = yok FP kaydı kaydedilir, m > 0: m + 1 FP kayıtları kaydedilir). İşlevi yalnızca bir paketin FP kaydına, geriye doğru izleme kaydetmek için veri uygulanamaz.
+- **RegF** kurallı yığın konuma kaydedildiğinde geçici olmayan FP kayıtları (d15 d8) sayısını gösteren bir 3-bit alanıdır. (RegF = 0: yok FP kaydına kaydedilir; RegF > 0: RegF + 1 FP kayıtları kaydedilir). Paketlenmiş geriye doğru izleme verileri için yalnızca bir FP kaydına Kaydet işlevi kullanılamaz.
 
 Yukarıdaki bölümde 1, 2 (olmadan Giden parametre alanı), 3 ve 4 kategorilere giren kurallı açıklanabilmeleri paketlenmiş geriye doğru izleme biçimi tarafından temsil edilebilir.  Kurallı işlevler çok benzer bir form izleyin başlangıçları dışındaki **H** hiçbir etkisi `set_fp` yönerge atlanırsa ve adımları ve bunun yanı sıra her bir adımın yönergeleri sırasını bölümünde tersine çevrilir. Paketlenmiş xdata algoritması, aşağıdaki tabloda ayrıntılı adımları izler:
 
@@ -386,7 +386,7 @@ Adım #|Bayrak değerleri|yönerge sayısı|Opcode|Kod geriye doğru izleme
 
 \*\* Varsa **RegI** == **CR** == 0, ve **RegF** ! = 0 ise, ilk stp kayan nokta azaltma için.
 
-\*\*\* Yönerge için karşılık gelen `mov r29, sp` bölümünde yok. Biz kullanamazsınız sp geri r29'nden bir işlev gerektiriyorsa, paketli veri bırakma.
+\*\*\* Yönerge için karşılık gelen `mov r29, sp` bölümünde yok. Paketlenmiş geriye doğru izleme verileri, bir işlev sp geri r29 gelen gerektiriyorsa kullanılamaz.
 
 ### <a name="unwinding-partial-prologs-and-epilogs"></a>Geriye doğru izleme kısmi açıklanabilmeleri ve sonuç
 

@@ -80,12 +80,12 @@ helpviewer_keywords:
 - CMFCButton [MFC], m_nAlignStyle
 - CMFCButton [MFC], m_nFlatStyle
 ms.assetid: 4b32f57c-7a53-4734-afb9-d47e3359f62e
-ms.openlocfilehash: 804c3219356d36f6a0a733937c5e354822a4be83
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 0659e5335e1ebc495280a4e0cb5c0167f3b45e1d
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57269818"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58768226"
 ---
 # <a name="cmfcbutton-class"></a>CMFCButton sınıfı
 
@@ -180,7 +180,7 @@ Bir iletişim kutusu uygulama bildirim iletilerini işlemek için bir ileti eşl
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, çeşitli yöntemlerle kullanarak düğmesi özelliklerini yapılandırma işlemi gösterilmektedir `CMFCButton` sınıfı. Bir örneğin parçasıdır [yeni denetimler örnek](../../visual-cpp-samples.md).
+Aşağıdaki örnek, çeşitli yöntemlerle kullanarak düğmesi özelliklerini yapılandırma işlemi gösterilmektedir `CMFCButton` sınıfı. Bir örneğin parçasıdır [yeni denetimler örnek](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_NewControls#28](../../mfc/reference/codesnippet/cpp/cmfcbutton-class_1.h)]
 [!code-cpp[NVC_MFC_NewControls#31](../../mfc/reference/codesnippet/cpp/cmfcbutton-class_2.cpp)]
@@ -542,7 +542,7 @@ Aşağıdaki tabloda `CMFCButton::m_nFlatStyle` bir düğmenin görünümünü b
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki örnek, değerlerini ayarlamak gösterilmiştir `m_nFlatStyle` üye değişkeni `CMFCButton` sınıfı. Bu örneğin parçasıdır [yeni denetimler örnek](../../visual-cpp-samples.md).
+Aşağıdaki örnek, değerlerini ayarlamak gösterilmiştir `m_nFlatStyle` üye değişkeni `CMFCButton` sınıfı. Bu örneğin parçasıdır [yeni denetimler örnek](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_NewControls#28](../../mfc/reference/codesnippet/cpp/cmfcbutton-class_1.h)]
 [!code-cpp[NVC_MFC_NewControls#29](../../mfc/reference/codesnippet/cpp/cmfcbutton-class_5.cpp)]
@@ -867,7 +867,7 @@ void SetImage(
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki örnek, çeşitli sürümlerini kullanma işlemini gösterir `SetImage` yönteminde `CMFCButton` sınıfı. Bir örneğin parçasıdır [yeni denetimler örnek](../../visual-cpp-samples.md).
+Aşağıdaki örnek, çeşitli sürümlerini kullanma işlemini gösterir `SetImage` yönteminde `CMFCButton` sınıfı. Bir örneğin parçasıdır [yeni denetimler örnek](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_NewControls#28](../../mfc/reference/codesnippet/cpp/cmfcbutton-class_1.h)]
 [!code-cpp[NVC_MFC_NewControls#31](../../mfc/reference/codesnippet/cpp/cmfcbutton-class_2.cpp)]
@@ -891,7 +891,7 @@ Elle imleci gibi bir imleç görüntü düğme ile ilişkilendirmek için bu yö
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki örnek nasıl kullanılacağını gösterir `SetMouseCursor` yönteminde `CMFCButton` sınıfı. Örneğin kodda bir parçasıdır [yeni denetimler örnek](../../visual-cpp-samples.md).
+Aşağıdaki örnek nasıl kullanılacağını gösterir `SetMouseCursor` yönteminde `CMFCButton` sınıfı. Örneğin kodda bir parçasıdır [yeni denetimler örnek](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_NewControls#28](../../mfc/reference/codesnippet/cpp/cmfcbutton-class_1.h)]
 [!code-cpp[NVC_MFC_NewControls#30](../../mfc/reference/codesnippet/cpp/cmfcbutton-class_6.cpp)]

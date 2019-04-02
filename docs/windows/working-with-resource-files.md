@@ -6,19 +6,19 @@ helpviewer_keywords:
 - resources [C++], about resource files
 - resource files [C++], about resource files
 ms.assetid: 2699a539-b369-4b78-80f0-df03eb7b6780
-ms.openlocfilehash: 71a76da9f4eadfdca0d69873b821f4ea8eb8fc05
-ms.sourcegitcommit: e540706f4e2675e7f597cfc5b4f8dde648b007bb
+ms.openlocfilehash: 0a13fb05f0e6e8582d5e476eb889e307458f528d
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56676428"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58767307"
 ---
 # <a name="working-with-resource-files"></a>Kaynak Dosyalarıyla Çalışma
 
 > [!WARNING]
 > Bu bölüm, C++ ile yazılmış Windows Masaüstü uygulamaları için geçerlidir.
 >
-> C++ programında yazılan Evrensel Windows platformu uygulamaları kaynaklar hakkında daha fazla bilgi için bkz [tanımlama uygulama kaynaklarını](/windows/uwp/app-resources/), veya kaynak ekleme C + +/ (yönetilen) CLI projeleri için bkz. [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu*.
+> C++ programında yazılan Evrensel Windows platformu uygulamaları kaynaklar hakkında daha fazla bilgi için bkz [tanımlama uygulama kaynaklarını](/windows/uwp/app-resources/), veya kaynak ekleme C + +/ (yönetilen) CLI projeleri için bkz. [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index) içinde .NET Framework Geliştirici Kılavuzu.
 
 Kaynakları gibi çeşitli öğeleri oluşabilir:
 
@@ -28,6 +28,9 @@ Kaynakları gibi çeşitli öğeleri oluşabilir:
 - Menü ve iletişim kutusu kaynakları.
 
 Yeni kaynakları projenize ekleyin ve kaynaklarla ilgili kaynak Düzenleyicisi'ni kullanarak değiştirin. Çoğu Visual C++ sihirbazları, projeniz için bir .rc dosyasını otomatik olarak oluşturur.
+
+> [!NOTE]
+> **Kaynak düzenleyicileri** ve **kaynak görünümü** Express sürümlerinde kullanılamaz.
 
 Kaynak dosyalarını yönetilen projelere el ile eklemek için bkz [Creating Resource Files Masaüstü uygulamaları için](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Bu makalede, kaynaklara erişme, statik kaynakları görüntüleme ve kaynak dizelerini özelliklere atama işlemleri açıklanır.
 
@@ -46,7 +49,7 @@ Visual Studio ve her bir düzenleyiciyle değiştirebileceğiniz kaynak türleri
 
 ## <a name="related-sections"></a>İlgili Bölümler
 
-[Visual C++](../visual-cpp-in-visual-studio.md)<br/>
+[Visual C++](../overview/visual-cpp-in-visual-studio.md)<br/>
 Visual C++ belgelerine ilişkin bağlantıları sağlar.
 
 [Bizimle İletişime Geçin](/visualstudio/ide/talk-to-us)<br/>

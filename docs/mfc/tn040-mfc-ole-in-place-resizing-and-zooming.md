@@ -9,12 +9,12 @@ helpviewer_keywords:
 - zooming and in-place activation
 - in-place activation, zooming and resizing
 ms.assetid: 4d7859bd-0b2e-4254-be62-2735cecf02c6
-ms.openlocfilehash: e2f6c6acfefaae877790fd2cc0926bc2474c79b8
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: c2cb25388184ac969bec7c01d8077a458c03a03a
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57283767"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58775289"
 ---
 # <a name="tn040-mfcole-in-place-resizing-and-zooming"></a>TN040: MFC/OLE yerinde yeniden boyutlandırma ve yakınlaştırma
 
@@ -40,7 +40,7 @@ Yük çoğunu sunucu kapsayıcının yakınlaştırma faktörünü unutmayın ve
 
 Geçerli yakınlaştırma faktörünü çağırarak belirlenebilir `COleServerDoc::GetZoomFactor`. Belge yerinde etkin olmadığında bu çağrı, her zaman bir % 100 yakınlaştırma faktörünü (veya 1:1 oranını) sonuçlanır. Yerinde etkin % 100'dışında bir şey döndürebilir sırasında bunu çağırma.
 
-MFC OLE örnek doğru yakınlaştırma örneği için bkz. [HIERSVR](../visual-cpp-samples.md). Metni görüntüler ve metin, genel olarak, doğrusal bir şekilde (ipuçları, tipografi kuralları, tasarım genişlikleri ve karmaşık olursa olsun tüm yüksekliklerini) ölçeklenmez olarak HIERSVR içinde yakınlaştırma karmaşık. Yine de HIERSVR doğru yakınlaştırma uygulamak için makul bir başvuru ve bu nedenle MFC öğreticidir [KARALAMA](../visual-cpp-samples.md) (7. adım).
+MFC OLE örnek doğru yakınlaştırma örneği için bkz. [HIERSVR](../overview/visual-cpp-samples.md). Metni görüntüler ve metin, genel olarak, doğrusal bir şekilde (ipuçları, tipografi kuralları, tasarım genişlikleri ve karmaşık olursa olsun tüm yüksekliklerini) ölçeklenmez olarak HIERSVR içinde yakınlaştırma karmaşık. Yine de HIERSVR doğru yakınlaştırma uygulamak için makul bir başvuru ve bu nedenle MFC öğreticidir [KARALAMA](../overview/visual-cpp-samples.md) (7. adım).
 
 `COleServerDoc::GetZoomFactor` Yakınlaştırma faktörünü farklı mevcut olan ölçümler kapsayıcısından veya uygulanması sayısına göre belirler, `COleServerItem` ve `COleServerDoc` sınıfları. Kısacası, geçerli yakınlaştırma faktörünü aşağıdaki formül tarafından belirlenir:
 

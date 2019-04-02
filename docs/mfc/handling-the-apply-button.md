@@ -5,12 +5,12 @@ helpviewer_keywords:
 - Apply button in property sheet
 - property sheets, Apply button
 ms.assetid: 7e977015-59b8-406f-b545-aad0bfd8d55b
-ms.openlocfilehash: eb438351d273c872def8c98a67b7010cec0b4d76
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 30ee549a334a684deeb4a845f2fc49ee8bbe11db
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57279451"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58770843"
 ---
 # <a name="handling-the-apply-button"></a>Uygula Düğmesini İşleme
 
@@ -30,7 +30,7 @@ Rapor olarak değiştirilen bir sayfası ve Uygula düğmesini etkinleştirmek i
 
 Uygula düğmesini etkisini uygulamak için özellik sayfası sahibi veya başka bir dış nesne özellik sayfalarındaki geçerli ayarları uygulamak için bu uygulamada söylemeniz gerekir. Aynı zamanda, özellik sayfasında Uygula düğmesini çağırarak devre dışı bırakmanız gerekir `CPropertyPage::SetModified( FALSE )` kendi değişikliklerini dış nesne için uygulanan tüm sayfalar için.
 
-Bu işlemin bir örneği için bkz: MFC genel örnek [PROPDLG](../visual-cpp-samples.md).
+Bu işlemin bir örneği için bkz: MFC genel örnek [PROPDLG](../overview/visual-cpp-samples.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

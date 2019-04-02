@@ -4,16 +4,16 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - event handling [C++], Visual C++
 ms.assetid: e4b9219a-15d8-42fb-83c8-6d2e4e087c8d
-ms.openlocfilehash: 210eea760e80814041b4e97f50c4164ef98d75e9
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 93bfcc93c680618ea3a51eabd145548a4f47563a
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50457557"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58772338"
 ---
 # <a name="event-handling-in-native-c"></a>Yerel C++'da Olay İşleme
 
-Yerel C++ olay işlemede, ayarladığınız kullanarak bir olay kaynağı ve olay alıcı [event_source](../windows/event-source.md) ve [event_receiver](../windows/event-receiver.md) sırasıyla belirten öznitelikleri `type` = `native`. Bu öznitelikler, sınıfların olayları tetiklemesine ve olayları yerel, COM olmayan bir bağlamda işlemek için uygulanmadan izin verin.
+Yerel C++ olay işlemede, ayarladığınız kullanarak bir olay kaynağı ve olay alıcı [event_source](../windows/attributes/event-source.md) ve [event_receiver](../windows/attributes/event-receiver.md) sırasıyla belirten öznitelikleri `type` = `native`. Bu öznitelikler, sınıfların olayları tetiklemesine ve olayları yerel, COM olmayan bir bağlamda işlemek için uygulanmadan izin verin.
 
 ## <a name="declaring-events"></a>Olayları Bildirme
 

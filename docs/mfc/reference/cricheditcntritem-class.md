@@ -10,12 +10,12 @@ helpviewer_keywords:
 - CRichEditCntrItem [MFC], CRichEditCntrItem
 - CRichEditCntrItem [MFC], SyncToRichEditObject
 ms.assetid: 6c0b4efe-0fb8-4621-b5e1-fdcb8ec48c3b
-ms.openlocfilehash: 0f71607147b353c5071830bdce481f1e5e5d4717
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 674937df9b4ecef0d159a47a45a716d1175ad5d9
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57268492"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58773846"
 ---
 # <a name="cricheditcntritem-class"></a>CRichEditCntrItem Class
 
@@ -49,7 +49,7 @@ class CRichEditCntrItem : public COleClientItem
 
 Bu Windows ortak denetimi (ve bu nedenle [CRichEditCtrl](../../mfc/reference/cricheditctrl-class.md) ve ilgili sınıflar) ve üzeri yalnızca Windows 95/98 ve Windows NT sürümler 3.51 altında çalışan programlar için kullanılabilir.
 
-Zengin düzenleme kapsayıcı öğeleri bir MFC uygulamasında kullanma örneği için bkz: [WORDPAD](../../visual-cpp-samples.md) örnek uygulama.
+Zengin düzenleme kapsayıcı öğeleri bir MFC uygulamasında kullanma örneği için bkz: [WORDPAD](../../overview/visual-cpp-samples.md) örnek uygulama.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -110,7 +110,7 @@ Daha fazla bilgi için [DVASPECT](/windows/desktop/api/wtypes/ne-wtypes-tagdvasp
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MFC örnek WORDPAD](../../visual-cpp-samples.md)<br/>
+[MFC örnek WORDPAD](../../overview/visual-cpp-samples.md)<br/>
 [COleClientItem Sınıfı](../../mfc/reference/coleclientitem-class.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
 [CRichEditDoc Sınıfı](../../mfc/reference/cricheditdoc-class.md)<br/>

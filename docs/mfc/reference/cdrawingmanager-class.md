@@ -56,12 +56,12 @@ helpviewer_keywords:
 - CDrawingManager [MFC], SetPixel
 - CDrawingManager [MFC], SmartMixColors
 ms.assetid: 9e4775ca-101b-4aa9-a85a-4d047c701215
-ms.openlocfilehash: f14b21c97e5a36d5107e7db526e4153446ae2a01
-ms.sourcegitcommit: 90817d9d78fbaed8ffacde63f3add334842e596f
+ms.openlocfilehash: 506ab7a06653942ecff05043a7e7efabd535115f
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "58278545"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58781698"
 ---
 # <a name="cdrawingmanager-class"></a>CDrawingManager sınıfı
 
@@ -389,7 +389,7 @@ Ayarlarsanız *bRightShadow* altında ve dikdörtgen alan solundaki gölge FALSE
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki örnek nasıl kullanılacağını gösterir `DrawShadow` yöntemi `CDrawingManager` sınıfı. Bu kod parçacığı parçasıdır [Prop sayfası gösterim örneği](../../visual-cpp-samples.md).
+Aşağıdaki örnek nasıl kullanılacağını gösterir `DrawShadow` yöntemi `CDrawingManager` sınıfı. Bu kod parçacığı parçasıdır [Prop sayfası gösterim örneği](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_PropSheetDemo#1](../../mfc/reference/codesnippet/cpp/cdrawingmanager-class_1.cpp)]
 
@@ -473,7 +473,7 @@ void FillGradient(
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki örnek nasıl kullanılacağını gösterir `FillGradient` yöntemi `CDrawingManager` sınıfı. Bu kod parçacığı parçasıdır [MS Office 2007 Demo örnek](../../visual-cpp-samples.md).
+Aşağıdaki örnek nasıl kullanılacağını gösterir `FillGradient` yöntemi `CDrawingManager` sınıfı. Bu kod parçacığı parçasıdır [MS Office 2007 Demo örnek](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_MSOffice2007Demo#12](../../mfc/reference/codesnippet/cpp/cdrawingmanager-class_2.cpp)]
 
@@ -509,7 +509,7 @@ Kullanım *nAngle* renk gradyanı yönünü belirtmek için. Renk gradyanı yön
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki örnek nasıl kullanılacağını gösterir `FillGradient2` yöntemi `CDrawingManager` sınıfı. Bu kod parçacığı parçasıdır [yeni denetimler örnek](../../visual-cpp-samples.md).
+Aşağıdaki örnek nasıl kullanılacağını gösterir `FillGradient2` yöntemi `CDrawingManager` sınıfı. Bu kod parçacığı parçasıdır [yeni denetimler örnek](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_NewControls#37](../../mfc/reference/codesnippet/cpp/cdrawingmanager-class_3.cpp)]
 

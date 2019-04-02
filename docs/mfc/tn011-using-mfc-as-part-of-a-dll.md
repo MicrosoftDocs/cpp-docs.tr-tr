@@ -10,12 +10,12 @@ helpviewer_keywords:
 - DLLs [MFC], linking
 - MFC DLLs [MFC], linking regular MFC DLLs to MFC
 ms.assetid: 76753e9c-59dc-40f6-b6a7-f6bb9a7c4190
-ms.openlocfilehash: 63e97c3b9260465259d76cf6996d1d389f65ee41
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 7e9fda44e2af4ec32bae6299fbcc0eda17984f9b
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57326458"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58769738"
 ---
 # <a name="tn011-using-mfc-as-part-of-a-dll"></a>TN011: Bir DLL'in bir parçası MFC kullanma
 
@@ -57,7 +57,7 @@ Ayrıca bu sembolleri tanımlayın ve bu derleyici anahtarları, dinamik olarak 
 
 ' % S'arabirimleri (API) uygulama ve DLL arasında açıkça verilmelidir. Düşük bant genişliği olacak şekilde, arabirimler tanımlar ve yalnızca C arabirimleri yapabiliyorsanız kullanın öneririz. Doğrudan C arabirimleri korumak daha karmaşık C++ sınıfları kolaydır.
 
-Apı'lerinizi hem C hem de C++ dosyaları dahil edilebilmesi için ayrı bir üstbilgi yerleştirin. MFC Gelişmiş kavramlar örneği üstbilgisinde ScreenCap.h bkz [ile ilgili](../visual-cpp-samples.md) örneği. İşlevlerinizi dışarı aktarmak için bunları girin `EXPORTS` bölümünü, modül tanım dosyası (. DEF) veya dahil `__declspec(dllexport)` , işlev tanımları üzerinde. Kullanım `__declspec(dllimport)` bu işlevler yürütülebilir istemci içeri aktarmak için.
+Apı'lerinizi hem C hem de C++ dosyaları dahil edilebilmesi için ayrı bir üstbilgi yerleştirin. MFC Gelişmiş kavramlar örneği üstbilgisinde ScreenCap.h bkz [ile ilgili](../overview/visual-cpp-samples.md) örneği. İşlevlerinizi dışarı aktarmak için bunları girin `EXPORTS` bölümünü, modül tanım dosyası (. DEF) veya dahil `__declspec(dllexport)` , işlev tanımları üzerinde. Kullanım `__declspec(dllimport)` bu işlevler yürütülebilir istemci içeri aktarmak için.
 
 Dinamik olarak MFC'ye bağlanan normal MFC DLL'leri dışarı aktarılan işlevlerin başında AFX_MANAGE_STATE makrosuna eklemeniz gerekir. Bu makro, bir DLL için geçerli modül durumunu ayarlar. Bu makroyu kullanmak için işlevleri bir DLL'den dışarı başlangıcına aşağıdaki kod satırını ekleyin:
 

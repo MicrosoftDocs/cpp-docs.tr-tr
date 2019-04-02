@@ -9,18 +9,18 @@ helpviewer_keywords:
 - drag and drop [MFC], initiating drag operations
 - drag and drop [MFC], drop source
 ms.assetid: 0ed2fda0-63fa-4b1e-b398-f1f142f40035
-ms.openlocfilehash: cceed8517c7b63588c7b1b90e3306d90f0921b78
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 2aa593fa953f7a9874036d48124ae7b92d88e0a6
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57300758"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58768646"
 ---
 # <a name="drag-and-drop-implementing-a-drop-source"></a>Sürükle ve bırak: Bir bırakma kaynağı uygulama
 
 Bu makalede, bir Sürükle ve bırak işlemi verilerini sağlamak için uygulamanızı açıklanmaktadır.
 
-Bir bırakma kaynağı uygulaması oldukça basittir. İlk adım, hangi olayların bir sürükleme işlemi başlamadan belirlemektir. Kullanıcı arabirimi yönergelerine tanımlayan bir sürükleme işlemi başına veri seçimi önerilen ve **WM_LBUTTONDOWN** içinde seçili veri noktasına oluşan olay. MFC OLE örnekleri [OCLIENT](../visual-cpp-samples.md) ve [HIERSVR](../visual-cpp-samples.md) aşağıdaki yönergeleri izleyin.
+Bir bırakma kaynağı uygulaması oldukça basittir. İlk adım, hangi olayların bir sürükleme işlemi başlamadan belirlemektir. Kullanıcı arabirimi yönergelerine tanımlayan bir sürükleme işlemi başına veri seçimi önerilen ve **WM_LBUTTONDOWN** içinde seçili veri noktasına oluşan olay. MFC OLE örnekleri [OCLIENT](../overview/visual-cpp-samples.md) ve [HIERSVR](../overview/visual-cpp-samples.md) aşağıdaki yönergeleri izleyin.
 
 Uygulamanızı bir kapsayıcı, seçilen veri bağlantılı veya katıştırılmış nesne türü ise `COleClientItem`, arama, `DoDragDrop` üye işlevi. Aksi takdirde, oluşturun bir `COleDataSource` nesne, seçimi başlatın ve veri kaynağı nesnesinin çağrı `DoDragDrop` üye işlevi. Uygulamanız bir sunucu ise kullanın `COleServerItem::DoDragDrop`. Standart sürükle-bırak davranışı özelleştirme hakkında daha fazla bilgi için bkz [sürükle ve bırak: Özelleştirme](../mfc/drag-and-drop-customizing.md).
 

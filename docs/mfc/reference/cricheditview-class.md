@@ -100,12 +100,12 @@ helpviewer_keywords:
 - CRichEditView [MFC], m_nBulletIndent
 - CRichEditView [MFC], m_nWordWrap
 ms.assetid: bd576b10-4cc0-4050-8f76-e1a0548411e4
-ms.openlocfilehash: 9cedcfbfb662d7d4d635a02b82ea45828c54b958
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 60eeaa2a37dd824ae418b25e95743c21c65ae7ce
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57259522"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58773729"
 ---
 # <a name="cricheditview-class"></a>CRichEditView sınıfı
 
@@ -194,7 +194,7 @@ class CRichEditView : public CCtrlView
 
 Bu Windows ortak denetimi (ve bu nedenle [CRichEditCtrl](../../mfc/reference/cricheditctrl-class.md) ve ilgili sınıflar) ve üzeri yalnızca Windows 95/98 ve Windows NT sürümler 3.51 altında çalışan programlar için kullanılabilir.
 
-Bir MFC uygulamasında bir zengin düzenleme görünümünü kullanma örneği için bkz: [WORDPAD](../../visual-cpp-samples.md) örnek uygulama.
+Bir MFC uygulamasında bir zengin düzenleme görünümünü kullanma örneği için bkz: [WORDPAD](../../overview/visual-cpp-samples.md) örnek uygulama.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -1284,7 +1284,7 @@ Zengin düzenleme görünümü değiştirmek için bu işlevi yanıt değişikli
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MFC örnek WORDPAD](../../visual-cpp-samples.md)<br/>
+[MFC örnek WORDPAD](../../overview/visual-cpp-samples.md)<br/>
 [CCtrlView Sınıfı](../../mfc/reference/cctrlview-class.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
 [CRichEditDoc Sınıfı](../../mfc/reference/cricheditdoc-class.md)<br/>

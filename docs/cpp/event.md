@@ -8,12 +8,12 @@ helpviewer_keywords:
 - __event keyword [C++]
 - events [C++], __event
 ms.assetid: d3019b3e-722e-48df-8536-c05878461f9e
-ms.openlocfilehash: bd5f53e5d2b80b22c3a38f413c4fa79b27fa7026
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 3a837e30d3cd66f7caa9b44971f432e00b0917ae
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50606485"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58778266"
 ---
 # <a name="event"></a>__event
 
@@ -62,7 +62,7 @@ Bkz: [olay işleme yerel C++'ta](../cpp/event-handling-in-native-cpp.md) örnek 
 
 COM olayları arabirimdir. Olay kaynağı arabirim içindeki bir yönteminin parametreleri olmalıdır *içinde* parametreleri (ancak bu titizlikle zorunlu değildir), çünkü bir *kullanıma* parametresi, çok noktaya yayın olduğunda kullanışlı değildir. Düzey 1 uyarısı kullanırsanız verilecek bir *kullanıma* parametresi.
 
-Dönüş türü genellikle HRESULT olduğu veya **void**, ancak herhangi bir tamsayı türü olabilir dahil olmak üzere **enum**. Bir olay bir integral dönüş türü kullanır ve bir olay işleyicisi sıfır olmayan bir değer döndürür çalışması gerçekleştirilen olay diğer temsilcileri çağrıları iptal ettiğinde, bir hata koşulu olur. Derleyicinin otomatik olarak bir olay kaynağı arabirim olarak işaretlemek Not bir [kaynak](../windows/source-cpp.md) oluşturulan IDL içinde.
+Dönüş türü genellikle HRESULT olduğu veya **void**, ancak herhangi bir tamsayı türü olabilir dahil olmak üzere **enum**. Bir olay bir integral dönüş türü kullanır ve bir olay işleyicisi sıfır olmayan bir değer döndürür çalışması gerçekleştirilen olay diğer temsilcileri çağrıları iptal ettiğinde, bir hata koşulu olur. Derleyicinin otomatik olarak bir olay kaynağı arabirim olarak işaretlemek Not bir [kaynak](../windows/attributes/source-cpp.md) oluşturulan IDL içinde.
 
 [__İnterface](../cpp/interface.md) anahtar sözcüğü sonra gerekli her zaman **__event** bir COM olay kaynağı.
 
@@ -75,7 +75,7 @@ Bkz: [com'da olay işleme](../cpp/event-handling-in-com.md) örnek kod için.
 
 ## <a name="managed-events"></a>Yönetilen olaylar
 
-Yeni sözdiziminde olayları kodlama hakkında daha fazla bilgi için bkz: [olay](../windows/event-cpp-component-extensions.md).
+Yeni sözdiziminde olayları kodlama hakkında daha fazla bilgi için bkz: [olay](../extensions/event-cpp-component-extensions.md).
 
 Yönetilen olaylar, veri üyeleri veya yöntemleri şunlardır. Bir olay ile kullanıldığında, bir temsilcinin dönüş türü ile uyumlu olmalıdır [ortak dil belirtimi](/dotnet/standard/language-independence-and-language-independent-components). Olay işleyicisi dönüş türünü temsilcinin dönüş türü eşleşmelidir. Temsilciler hakkında daha fazla bilgi için bkz. [Temsilciler ve olaylar](../dotnet/delegates-and-events.md). Yönetilen bir olay bir veri üyesi ise, bir temsilci için bir işaretçi türü olmalıdır.
 
@@ -101,7 +101,7 @@ public:
 };
 ```
 
-## <a name="example-com-events"></a>Örnek: COM olayları
+## <a name="example-com-events"></a>Örnek: COM Olayları
 
 ```cpp
 // EventHandling_COM_Event.cpp
@@ -131,8 +131,8 @@ public:
 
 [Anahtar Sözcükler](../cpp/keywords-cpp.md)<br/>
 [Olay İşleme](../cpp/event-handling.md)<br/>
-[event_source](../windows/event-source.md)<br/>
-[event_receiver](../windows/event-receiver.md)<br/>
+[event_source](../windows/attributes/event-source.md)<br/>
+[event_receiver](../windows/attributes/event-receiver.md)<br/>
 [__hook](../cpp/hook.md)<br/>
 [__unhook](../cpp/unhook.md)<br/>
 [__raise](../cpp/raise.md)

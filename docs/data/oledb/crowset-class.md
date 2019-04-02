@@ -238,12 +238,12 @@ helpviewer_keywords:
 - Update method
 - UpdateAll method
 ms.assetid: b0228a90-b8dd-47cc-b397-8d4c15c1e7f4
-ms.openlocfilehash: 4a24dada2f1211138449e65a8865810a46230970
-ms.sourcegitcommit: c1f646c8b72f330fa8cf5ddb0f8f261ba10d16f0
+ms.openlocfilehash: eda4bb09865698a657828c6d4684a8df92ffe9b6
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58329019"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58779462"
 ---
 # <a name="crowset-class"></a>CRowset Sınıfı
 
@@ -534,7 +534,7 @@ Standart bir HRESULT.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlevi kullanmak nasıl bir örnek için bkz [MultiRead örnek](../../visual-cpp-samples.md).
+Bu işlevi kullanmak nasıl bir örnek için bkz [MultiRead örnek](../../overview/visual-cpp-samples.md).
 
 ## <a name="getoriginaldata"></a> CRowset::GetOriginalData
 
@@ -937,8 +937,8 @@ Standart bir HRESULT.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[DBVIEWER örneği](../../visual-cpp-samples.md)<br/>
-[MultiRead örnek](../../visual-cpp-samples.md)<br/>
-[Örnek multiRead öznitelikleri](../../visual-cpp-samples.md)<br/>
+[DBVIEWER örneği](../../overview/visual-cpp-samples.md)<br/>
+[MultiRead örnek](../../overview/visual-cpp-samples.md)<br/>
+[Örnek multiRead öznitelikleri](../../overview/visual-cpp-samples.md)<br/>
 [OLE DB Tüketici Şablonları](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
 [OLE DB Tüketici Şablonları Başvurusu](../../data/oledb/ole-db-consumer-templates-reference.md)

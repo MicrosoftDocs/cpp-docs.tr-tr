@@ -182,12 +182,12 @@ helpviewer_keywords:
 - CToolBarCtrl [MFC], SetToolTips
 - CToolBarCtrl [MFC], SetWindowTheme
 ms.assetid: 8f2f8ad2-05d7-4975-8715-3f2eed795248
-ms.openlocfilehash: 61cbcbd2a64e8648c6467ebbc0d86d6f89953442
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 92f5adcea50e660ecfad131313247e118312e609
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57302518"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58781269"
 ---
 # <a name="ctoolbarctrl-class"></a>CToolBarCtrl sınıfı
 
@@ -627,7 +627,7 @@ virtual BOOL Create(
 Araç çubuğu denetiminin stilini belirtir. Araç çubukları, her zaman WS_CHILD stil olması gerekir. Ayrıca, altında açıklandığı gibi herhangi bir birleşimini toolbar stilleri ve pencere stilleri belirtebilirsiniz **açıklamalar**.
 
 *Rect*<br/>
-İsteğe bağlı olarak araç çubuğu denetiminin boyutunu ve konumunu belirtir. Ya da olabilir bir [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesi veya bir [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) yapısı.
+İsteğe bağlı olarak araç çubuğu denetiminin boyutunu ve konumunu belirtir. Ya da olabilir bir [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesi veya bir [RECT](/previous-versions/dd162897\(v=vs.85\)) yapısı.
 
 *pParentWnd*<br/>
 Araç çubuğu denetiminin üst penceresine belirtir. NULL olmamalıdır.
@@ -681,7 +681,7 @@ Oluşturulan denetimin genişletilmiş stilini belirtir. Genişletilmiş Windows
 Araç çubuğu denetiminin stilini belirtir. Araç çubukları, her zaman WS_CHILD stil olması gerekir. Ayrıca, açıklandığı toolbar stilleri ve pencere stilleri herhangi bir birleşimini belirtebilirsiniz **açıklamalar** bölümünü [Oluştur](#create).
 
 *Rect*<br/>
-Bir başvuru bir [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) istemci koordinatları olarak oluşturulması için pencerenin konumunu ve boyutunu açıklayan yapısı *pParentWnd*.
+Bir başvuru bir [RECT](/previous-versions/dd162897\(v=vs.85\)) istemci koordinatları olarak oluşturulması için pencerenin konumunu ve boyutunu açıklayan yapısı *pParentWnd*.
 
 *pParentWnd*<br/>
 Denetimin ana penceresine bir işaretçi.
@@ -1085,7 +1085,7 @@ BOOL GetItemRect(
 Bilgi almak istediğiniz düğme sıfır tabanlı dizini.
 
 *lpRect*<br/>
-Adresi bir [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) yapısı veya [CRect](../../atl-mfc-shared/reference/crect-class.md) koordinatlarını dikdörtgen alan nesnesi.
+Adresi bir [RECT](/previous-versions/dd162897\(v=vs.85\)) yapısı veya [CRect](../../atl-mfc-shared/reference/crect-class.md) koordinatlarını dikdörtgen alan nesnesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1202,7 +1202,7 @@ BOOL GetRect(
 Düğme tanımlayıcısı.
 
 *lpRect*<br/>
-Bir işaretçi bir [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) yapısı sınırlayıcı bir dikdörtgen bilgileri almak için.
+Bir işaretçi bir [RECT](/previous-versions/dd162897\(v=vs.85\)) yapısı sınırlayıcı bir dikdörtgen bilgileri almak için.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1325,7 +1325,7 @@ int HitTest(LPPOINT ppt) const;
 ### <a name="parameters"></a>Parametreler
 
 *ppt*<br/>
-Bir işaretçi bir [noktası](https://msdn.microsoft.com/library/windows/desktop/dd162805) isabet testi x koordinatını içeren yapısı `x` üye ve y test koordinatını isabet `y` üyesi. Araç çubuğunun istemci alanına göre koordinatlar belirlenir.
+Bir işaretçi bir [noktası](/previous-versions/dd162805\(v=vs.85\)) isabet testi x koordinatını içeren yapısı `x` üye ve y test koordinatını isabet `y` üyesi. Araç çubuğunun istemci alanına göre koordinatlar belirlenir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1428,7 +1428,7 @@ BOOL InsertMarkHitTest(
 ### <a name="parameters"></a>Parametreler
 
 *ppt*<br/>
-Bir işaretçi bir [noktası](https://msdn.microsoft.com/library/windows/desktop/dd162805) isabet testi içeren yapısı koordinatları, araç istemci alanına göre.
+Bir işaretçi bir [noktası](/previous-versions/dd162805\(v=vs.85\)) isabet testi içeren yapısı koordinatları, araç istemci alanına göre.
 
 *ptbim*<br/>
 Bir işaretçi bir [TBINSERTMARK](/windows/desktop/api/commctrl/ns-commctrl-tbinsertmark) ekleme işareti bilgileri alan yapısı.
@@ -2295,7 +2295,7 @@ void SetRows(
 Araç çubuğu için istenen satır sayısını yeniden boyutlandırılamaz, daha fazla satır veya daha az sayıda satır kullanılıp kullanılmayacağını belirtir.
 
 *lpRect*<br/>
-İşaret [CRect](../../atl-mfc-shared/reference/crect-class.md) nesne veya [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) araç yeni sınırlayıcı dikdörtgenini alacak yapısı.
+İşaret [CRect](../../atl-mfc-shared/reference/crect-class.md) nesne veya [RECT](/previous-versions/dd162897\(v=vs.85\)) araç yeni sınırlayıcı dikdörtgenini alacak yapısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -2386,8 +2386,8 @@ Bu üye işlevi işlevselliğine öykünür [TB_SETWINDOWTHEME](/windows/desktop
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MFC örnek CMNCTRL1](../../visual-cpp-samples.md)<br/>
-[MFC örnek MFCIE](../../visual-cpp-samples.md)<br/>
+[MFC örnek CMNCTRL1](../../overview/visual-cpp-samples.md)<br/>
+[MFC örnek MFCIE](../../overview/visual-cpp-samples.md)<br/>
 [CWnd Sınıfı](../../mfc/reference/cwnd-class.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
 [CToolBar Sınıfı](../../mfc/reference/ctoolbar-class.md)

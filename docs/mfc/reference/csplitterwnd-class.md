@@ -72,12 +72,12 @@ helpviewer_keywords:
 - CSplitterWnd [MFC], OnDrawSplitter
 - CSplitterWnd [MFC], OnInvertTracker
 ms.assetid: fd0de258-6dbe-4552-9e47-a39de0471d51
-ms.openlocfilehash: 42913ddea7818636dce8d630ed2d79d13c19ce81
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 065735c13a3e763208142eb6bc989d3a496221f0
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57302110"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58781451"
 ---
 # <a name="csplitterwnd-class"></a>CSplitterWnd sınıfı
 
@@ -175,9 +175,9 @@ Bölümlendirici pencereler hakkında daha fazla bilgi için bkz: [Teknik Not 29
 
 Dinamik Bölümlendirici pencereler oluşturma hakkında daha fazla bilgi için bkz:
 
-- MFC örnek [karalama](../../visual-cpp-samples.md)
+- MFC örnek [karalama](../../overview/visual-cpp-samples.md)
 
-- MFC örnek [VIEWEX](../../visual-cpp-samples.md).
+- MFC örnek [VIEWEX](../../overview/visual-cpp-samples.md).
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -1036,7 +1036,7 @@ Bir cihaz bağlamı için bir işaretçi.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MFC örnek VIEWEX](../../visual-cpp-samples.md)<br/>
+[MFC örnek VIEWEX](../../overview/visual-cpp-samples.md)<br/>
 [CWnd Sınıfı](../../mfc/reference/cwnd-class.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
 [CView Sınıfı](../../mfc/reference/cview-class.md)<br/>

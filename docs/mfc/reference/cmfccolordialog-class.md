@@ -22,12 +22,12 @@ helpviewer_keywords:
 - CMFCColorDialog [MFC], SetPageOne
 - CMFCColorDialog [MFC], SetPageTwo
 ms.assetid: 235bbbbc-a3b1-46e0-801b-fb55093ec579
-ms.openlocfilehash: d94c223ed1e0b236ae8565d13a9f2c9652b6eb84
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 1b9f57e46d5ac74dd52f7ddb7ebd90f8888891e3
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57270327"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58772757"
 ---
 # <a name="cmfccolordialog-class"></a>CMFCColorDialog sınıfı
 
@@ -100,7 +100,7 @@ Oluşturulabilir bir `CMFCColorDialog` yığında nesne ve sonra çağrı `DoMod
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, çeşitli yöntemlerle kullanarak renkli bir iletişimde yapılandırma işlemi gösterilmektedir `CMFCColorDialog` sınıfı. Örnek, geçerli ve yeni renklerinin iletişim nasıl ayarlanacağını ve seçili rengin kırmızı, yeşil ve mavi bileşenlerinin renk iletişim kutusu iki özellik sayfalarında ayarlama işlemini gösterir. Bu örneğin parçasıdır [yeni denetimler örnek](../../visual-cpp-samples.md).
+Aşağıdaki örnek, çeşitli yöntemlerle kullanarak renkli bir iletişimde yapılandırma işlemi gösterilmektedir `CMFCColorDialog` sınıfı. Örnek, geçerli ve yeni renklerinin iletişim nasıl ayarlanacağını ve seçili rengin kırmızı, yeşil ve mavi bileşenlerinin renk iletişim kutusu iki özellik sayfalarında ayarlama işlemini gösterir. Bu örneğin parçasıdır [yeni denetimler örnek](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_NewControls#3](../../mfc/reference/codesnippet/cpp/cmfccolordialog-class_1.cpp)]
 

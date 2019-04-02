@@ -2,16 +2,16 @@
 title: DHTML Düzenleme Komutu Eşlemeleri
 ms.date: 11/04/2016
 ms.assetid: c1b49876-039e-4a26-bb24-ea98ccf254a1
-ms.openlocfilehash: 1f84a56876f1108e9b02d44f6ef0dec50f065c57
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 7f420619983283c225ca8fca23c5ea349def1d1b
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57278268"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58776160"
 ---
 # <a name="dhtml-editing-command-maps"></a>DHTML Düzenleme Komutu Eşlemeleri
 
-DHTML düzenleme komutlarında eşlemek için aşağıdaki makroları kullanılabilir [CHtmlEditView](../../mfc/reference/chtmleditview-class.md)-türetilmiş sınıflar. Kullanımları örneği için bkz: [HTMLEdit örnek](../../visual-cpp-samples.md).
+DHTML düzenleme komutlarında eşlemek için aşağıdaki makroları kullanılabilir [CHtmlEditView](../../mfc/reference/chtmleditview-class.md)-türetilmiş sınıflar. Kullanımları örneği için bkz: [HTMLEdit örnek](../../overview/visual-cpp-samples.md).
 
 ### <a name="dhtml-editing-command-map-macros"></a>DHTML düzenleme komutu eşleme makroları
 
@@ -46,7 +46,7 @@ Kullanım [begın_dhtmledıtıng_cmdmap](#begin_dhtmlediting_cmdmap) haritayı u
 
 ### <a name="example"></a>Örnek
 
-Bkz: [HTMLEdit örnek](../../visual-cpp-samples.md).
+Bkz: [HTMLEdit örnek](../../overview/visual-cpp-samples.md).
 
 ### <a name="requirements"></a>Gereksinimler
 
@@ -89,7 +89,7 @@ END_DHTMLEDITING_CMDMAP()
 
 ### <a name="example"></a>Örnek
 
-Bkz: [HTMLEdit örnek](../../visual-cpp-samples.md).
+Bkz: [HTMLEdit örnek](../../overview/visual-cpp-samples.md).
 
 ### <a name="requirements"></a>Gereksinimler
 
@@ -113,7 +113,7 @@ Hangi komut düzenleme HTML *cmdID* (IDM_COPY gibi) eşleştirir.
 
 ### <a name="example"></a>Örnek
 
-Bkz: [HTMLEdit örnek](../../visual-cpp-samples.md).
+Bkz: [HTMLEdit örnek](../../overview/visual-cpp-samples.md).
 
 ### <a name="requirements"></a>Gereksinimler
 
@@ -140,7 +140,7 @@ Komut için eşlenmiş ileti işleyici işlevinin adı.
 
 ### <a name="example"></a>Örnek
 
-Bkz: [HTMLEdit örnek](../../visual-cpp-samples.md).
+Bkz: [HTMLEdit örnek](../../overview/visual-cpp-samples.md).
 
 ### <a name="requirements"></a>Gereksinimler
 
@@ -167,7 +167,7 @@ Kullanıcı arabirimi öğesi türü; AFX_UI_ELEMTYPE_NORMAL, AFX_UI_ELEMTYPE_CH
 
 ### <a name="example"></a>Örnek
 
-Bkz: [HTMLEdit örnek](../../visual-cpp-samples.md).
+Bkz: [HTMLEdit örnek](../../overview/visual-cpp-samples.md).
 
 ### <a name="requirements"></a>Gereksinimler
 
@@ -197,7 +197,7 @@ Kullanıcı arabirimi öğesi türü; AFX_UI_ELEMTYPE_NORMAL, AFX_UI_ELEMTYPE_CH
 
 ### <a name="example"></a>Örnek
 
-Bkz: [HTMLEdit örnek](../../visual-cpp-samples.md).
+Bkz: [HTMLEdit örnek](../../overview/visual-cpp-samples.md).
 
 ### <a name="requirements"></a>Gereksinimler
 

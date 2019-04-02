@@ -162,12 +162,12 @@ helpviewer_keywords:
 - CTreeCtrl [MFC], SortChildren
 - CTreeCtrl [MFC], SortChildrenCB
 ms.assetid: 96e20031-6161-4143-8c12-8d1816c66d90
-ms.openlocfilehash: 9bc31cc9cff12146e6f5fe227e0e191d1c555063
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 3819e861b7a5e6ff27fe632a33413b588a5a4835
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57271404"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58782010"
 ---
 # <a name="ctreectrl-class"></a>CTreeCtrl sınıfı
 
@@ -315,7 +315,7 @@ virtual BOOL Create(
 Ağaç görünümü denetiminin stilini belirtir. Pencere stilleri açıklanan, geçerli [CreateWindow](/windows/desktop/api/winuser/nf-winuser-createwindowa)ve herhangi bir birleşimini [ağaç görünümü denetimi stilleri](/windows/desktop/Controls/tree-view-control-window-styles) Windows SDK içinde açıklandığı gibi.
 
 *Rect*<br/>
-Ağaç görünümü denetiminin boyutunu ve konumunu belirtir. Ya da olabilir bir [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesi veya bir [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) yapısı.
+Ağaç görünümü denetiminin boyutunu ve konumunu belirtir. Ya da olabilir bir [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesi veya bir [RECT](/previous-versions/dd162897\(v=vs.85\)) yapısı.
 
 *pParentWnd*<br/>
 Ağaç görünümü denetiminin üst penceresine, genellikle belirtir bir `CDialog`. NULL olmamalıdır.
@@ -361,7 +361,7 @@ Oluşturulan denetimin genişletilmiş stilini belirtir. Genişletilmiş Windows
 Ağaç görünümü denetiminin stilini belirtir. Pencere stilleri açıklanan, geçerli [CreateWindow](/windows/desktop/api/winuser/nf-winuser-createwindowa)ve herhangi bir birleşimini [ağaç görünümü denetimi stilleri](/windows/desktop/Controls/tree-view-control-window-styles) Windows SDK içinde açıklandığı gibi.
 
 *Rect*<br/>
-Bir başvuru bir [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) istemci koordinatları olarak oluşturulması için pencerenin konumunu ve boyutunu açıklayan yapısı *pParentWnd*.
+Bir başvuru bir [RECT](/previous-versions/dd162897\(v=vs.85\)) istemci koordinatları olarak oluşturulması için pencerenin konumunu ve boyutunu açıklayan yapısı *pParentWnd*.
 
 *pParentWnd*<br/>
 Denetimin ana penceresine bir işaretçi.
@@ -887,7 +887,7 @@ BOOL GetItemPartRect(
 |---------------|-----------------|
 |*hItem*|[in] Bir ağaç görünümü denetimi öğesi işler.|
 |*nPart*|[in] Bölümü için tanımlayıcı. TVGIPR_BUTTON için ayarlamanız gerekir.|
-|*lpRect*|[out] İşaretçi bir [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) yapısı. Bu yöntem başarılı olursa, yapı bölümü tarafından belirtilen dikdörtgen koordinatlarını alır *hItem* ve *nPart*.|
+|*lpRect*|[out] İşaretçi bir [RECT](/previous-versions/dd162897\(v=vs.85\)) yapısı. Bu yöntem başarılı olursa, yapı bölümü tarafından belirtilen dikdörtgen koordinatlarını alır *hItem* ve *nPart*.|
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -928,7 +928,7 @@ BOOL GetItemRect(
 Bir ağaç görünümü denetimi öğesinin tanıtıcısı.
 
 *lpRect*<br/>
-İşaretçi bir [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) dikdörtgen alan yapısı. Ağaç görünümü denetiminin sol üst köşesinde göreli koordinatları.
+İşaretçi bir [RECT](/previous-versions/dd162897\(v=vs.85\)) dikdörtgen alan yapısı. Ağaç görünümü denetiminin sol üst köşesinde göreli koordinatları.
 
 *bTextOnly*<br/>
 Bu parametre sıfır değilse, yalnızca öğenin metnini dikdörtgen içerir. Aksi takdirde ağaç görünümü denetiminde öğe kapladığı satırın tamamını içerir.
@@ -2341,7 +2341,7 @@ Yapının karşılaştırma işlevi `lpfnCompare`, negatif bir değer döndürme
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MFC örnek CMNCTRL1](../../visual-cpp-samples.md)<br/>
+[MFC örnek CMNCTRL1](../../overview/visual-cpp-samples.md)<br/>
 [CWnd Sınıfı](../../mfc/reference/cwnd-class.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
 [CImageList Sınıfı](../../mfc/reference/cimagelist-class.md)

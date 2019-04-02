@@ -90,12 +90,12 @@ helpviewer_keywords:
 - CMonthCalCtrl [MFC], SizeMinReq
 - CMonthCalCtrl [MFC], SizeRectToMin
 ms.assetid: a42f6bd6-ab5c-4335-82f8-839982fc64a2
-ms.openlocfilehash: 9807d45f12b5336ebbb80ea9718af77cf8d38188
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: bd062a4e0d4db364c9cb628608c6af165dc0edc2
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57303676"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58777174"
 ---
 # <a name="cmonthcalctrl-class"></a>CMonthCalCtrl sınıfı
 
@@ -227,10 +227,10 @@ virtual BOOL Create(
 Aylık takvim denetimine uygulanan Windows stilleri birleşimi belirtir. Bkz: [aylık takvim denetimi stilleri](/windows/desktop/Controls/month-calendar-control-styles) stilleri hakkında daha fazla bilgi için Windows SDK.
 
 *Rect*<br/>
-Bir başvuru bir [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) yapısı. Aylık takvim denetiminin boyutunu ve konumunu içerir.
+Bir başvuru bir [RECT](/previous-versions/dd162897\(v=vs.85\)) yapısı. Aylık takvim denetiminin boyutunu ve konumunu içerir.
 
 *PT*<br/>
-Bir başvuru bir [noktası](https://msdn.microsoft.com/library/windows/desktop/dd162805) aylık takvim denetiminin konumunu tanımlayan yapısı.
+Bir başvuru bir [noktası](/previous-versions/dd162805\(v=vs.85\)) aylık takvim denetiminin konumunu tanımlayan yapısı.
 
 *pParentWnd*<br/>
 Bir işaretçi bir [CWnd](../../mfc/reference/cwnd-class.md) aylık takvim denetiminin üst penceresine olan nesne. NULL olmamalıdır.
@@ -523,7 +523,7 @@ BOOL GetMinReqRect(RECT* pRect) const;
 ### <a name="parameters"></a>Parametreler
 
 *pRect*<br/>
-Bir işaretçi bir [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) sınırlayıcı dikdörtgeni bilgi alacak yapısı. Bu parametre, geçerli bir adres olmalıdır ve NULL olamaz.
+Bir işaretçi bir [RECT](/previous-versions/dd162897\(v=vs.85\)) sınırlayıcı dikdörtgeni bilgi alacak yapısı. Bu parametre, geçerli bir adres olmalıdır ve NULL olamaz.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1290,11 +1290,11 @@ LPRECT SizeRectToMin(LPRECT lpRect);
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|*lpRect*|[in] İşaretçi bir [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) takvimler istenen sayısını içeren bir dikdörtgen tanımlayan yapısını.|
+|*lpRect*|[in] İşaretçi bir [RECT](/previous-versions/dd162897\(v=vs.85\)) takvimler istenen sayısını içeren bir dikdörtgen tanımlayan yapısını.|
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İşaretçi bir [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) boyutu dikdörtgen küçük veya ona eşit olan bir dikdörtgen tanımlayan yapısını tarafından tanımlanan *lpRect* parametresi.
+İşaretçi bir [RECT](/previous-versions/dd162897\(v=vs.85\)) boyutu dikdörtgen küçük veya ona eşit olan bir dikdörtgen tanımlayan yapısını tarafından tanımlanan *lpRect* parametresi.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -1304,7 +1304,7 @@ Bu yöntem gönderir [MCM_SIZERECTTOMIN](/windows/desktop/Controls/mcm-sizerectt
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MFC örnek CMNCTRL1](../../visual-cpp-samples.md)<br/>
+[MFC örnek CMNCTRL1](../../overview/visual-cpp-samples.md)<br/>
 [CWnd Sınıfı](../../mfc/reference/cwnd-class.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
 [CDateTimeCtrl Sınıfı](../../mfc/reference/cdatetimectrl-class.md)

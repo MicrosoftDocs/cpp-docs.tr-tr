@@ -13,12 +13,12 @@ f1_keywords:
 helpviewer_keywords:
 - CDacl class
 ms.assetid: 2dc76616-6362-4967-b6cf-e2d39ca37ddd
-ms.openlocfilehash: edfa7a47fa94e659d6529706d04021dfc800c269
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 1beac6106b825c775012b85ccd01226c3dfab795
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57280127"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58770025"
 ---
 # <a name="cdacl-class"></a>CDacl sınıfı
 
@@ -262,7 +262,7 @@ Kaldırır her `ACE` (erişim denetimi girişi) yapısı (varsa) içinde `CDacl`
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Güvenliği örneği](../../visual-cpp-samples.md)<br/>
+[Güvenliği örneği](../../overview/visual-cpp-samples.md)<br/>
 [CAcl Sınıfı](../../atl/reference/cacl-class.md)<br/>
 [ACL'ler](/windows/desktop/SecAuthZ/access-control-lists)<br/>
 [ACE](/windows/desktop/SecAuthZ/access-control-entries)<br/>

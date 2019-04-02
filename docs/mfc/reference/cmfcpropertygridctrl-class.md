@@ -150,12 +150,12 @@ helpviewer_keywords:
 - CMFCPropertyGridCtrl [MFC], OnSelectCombo
 - CMFCPropertyGridCtrl [MFC], ValidateItemData
 ms.assetid: 95877cae-2311-4a2a-9031-0c8c3cf0a5f9
-ms.openlocfilehash: f194879cf4a1388fc156fa4e92f4f9bea5056191
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 93ace0388981f429ac4a422947fbdaae8cdb8f24
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57296013"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58781984"
 ---
 # <a name="cmfcpropertygridctrl-class"></a>CMFCPropertyGridCtrl Class
 
@@ -297,7 +297,7 @@ Aşağıdaki çizimler iki yolla özelliklerini görüntüler bir özellik Kıla
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, çeşitli yöntemlerle kullanarak bir özellik Kılavuzu denetimini nesnesi yapılandırma işlemi gösterilmektedir `CMFCPropertyGridCtrl` sınıfı. Üstbilgi denetimi etkinleştir, Açıklama alanını etkinleştir ve özellik Kılavuzu denetimini görünümünü ayarlama hakkında örnek gösterir. Örnek özellik adlarına göre içerdiği tüm özellikleri alfabetik modu ile denetim sıralar denetimi için ayarlama ve özellik Kılavuzu denetimini çeşitli öğeler için özel renkler ayarlama işlemini de gösterir. Bu örneğin parçasıdır [yeni denetimler örnek](../../visual-cpp-samples.md).
+Aşağıdaki örnek, çeşitli yöntemlerle kullanarak bir özellik Kılavuzu denetimini nesnesi yapılandırma işlemi gösterilmektedir `CMFCPropertyGridCtrl` sınıfı. Üstbilgi denetimi etkinleştir, Açıklama alanını etkinleştir ve özellik Kılavuzu denetimini görünümünü ayarlama hakkında örnek gösterir. Örnek özellik adlarına göre içerdiği tüm özellikleri alfabetik modu ile denetim sıralar denetimi için ayarlama ve özellik Kılavuzu denetimini çeşitli öğeler için özel renkler ayarlama işlemini de gösterir. Bu örneğin parçasıdır [yeni denetimler örnek](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_NewControls#14](../../mfc/reference/codesnippet/cpp/cmfcpropertygridctrl-class_1.h)]
 [!code-cpp[NVC_MFC_NewControls#16](../../mfc/reference/codesnippet/cpp/cmfcpropertygridctrl-class_2.cpp)]
@@ -480,7 +480,7 @@ Pencerenin başarıyla oluşturulursa TRUE; Aksi takdirde FALSE.
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki örnek nasıl kullanılacağını gösterir `Create` yönteminde `CMFCPropertyGridCtrl` sınıfı. Bu örneğin parçasıdır [yeni denetimler örnek](../../visual-cpp-samples.md).
+Aşağıdaki örnek nasıl kullanılacağını gösterir `Create` yönteminde `CMFCPropertyGridCtrl` sınıfı. Bu örneğin parçasıdır [yeni denetimler örnek](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_NewControls#15](../../mfc/reference/codesnippet/cpp/cmfcpropertygridctrl-class_6.cpp)]
 

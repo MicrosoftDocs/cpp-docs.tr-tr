@@ -22,12 +22,12 @@ helpviewer_keywords:
 - CSettingsStore [MFC], Read
 - CSettingsStore [MFC], Write
 ms.assetid: 0ea181de-a13e-4b29-b560-7c43838223ff
-ms.openlocfilehash: 1de26ceedfd29f276693be512bd41f169fb44b94
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 1e1373da86c1c3fea3b1ddd6ff17f0fac4f76980
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57274550"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58770401"
 ---
 # <a name="csettingsstore-class"></a>CSettingsStore sınıfı
 
@@ -65,7 +65,7 @@ class CSettingsStore : public CObject
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnekte, Aç ve okuma yöntemleri kullanmak gösterilmektedir `CSettingsStore` sınıfı. Bu kod parçacığı parçasıdır [araç ipucu gösterim örneği](../../visual-cpp-samples.md).
+Aşağıdaki örnekte, Aç ve okuma yöntemleri kullanmak gösterilmektedir `CSettingsStore` sınıfı. Bu kod parçacığı parçasıdır [araç ipucu gösterim örneği](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_ToolTipDemo#1](../../mfc/reference/codesnippet/cpp/csettingsstore-class_1.cpp)]
 

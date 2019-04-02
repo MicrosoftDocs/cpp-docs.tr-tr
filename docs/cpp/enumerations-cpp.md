@@ -10,19 +10,19 @@ helpviewer_keywords:
 - named constants, enumeration declarations
 - declaring enumerations
 ms.assetid: 081829db-5dca-411e-a53c-bffef315bcb3
-ms.openlocfilehash: 3ed135c0fc32f9218783c964ed4ce79a9b3ec067
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.openlocfilehash: caec9ea7ac5482ff23b73676a3fd7b3d25ad293f
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51332419"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58772571"
 ---
 # <a name="enumerations-c"></a>Numaralandırmalar [C++]
 
 Bir numaralandırma, numaralandırıcılar olarak bilinen adlandırılmış integral sabitleri kümesinden oluşan kullanıcı tanımlı bir tür ' dir.
 
 > [!NOTE]
->  Bu makale ISO standardı C++ dili kapsamaktadır **enum** türü ve kapsamlı (veya türü kesin belirlenmiş) **sabit listesi sınıfı** C ++ 11'de kullanıma sunulan türü. Hakkında bilgi için **genel sabit listesi sınıfı** veya **özel enum sınıfı** türleri C + +/ CLI ve C + +/ CX, bkz: [sabit listesi sınıfı](../windows/enum-class-cpp-component-extensions.md).
+>  Bu makale ISO standardı C++ dili kapsamaktadır **enum** türü ve kapsamlı (veya türü kesin belirlenmiş) **sabit listesi sınıfı** C ++ 11'de kullanıma sunulan türü. Hakkında bilgi için **genel sabit listesi sınıfı** veya **özel enum sınıfı** türleri C + +/ CLI ve C + +/ CX, bkz: [sabit listesi sınıfı](../extensions/enum-class-cpp-component-extensions.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -49,7 +49,7 @@ enum class C : short;  // ... may have any integral underlying type
 *tanımlayıcı*<br/>
 Numaralandırmaya verilen tür adı.
 
-*Türü*<br/>
+*type*<br/>
 Numaralandırmaların temel türü; tüm sabit listelerinin arkasındaki tür aynıdır. Herhangi bir tamsayı türü olabilir.
 
 *Numaralandırma listesi*<br/>
@@ -145,7 +145,7 @@ Dikkat satır `hand = account_num;` hala daha önce gösterildiği gibi kapsams�
 
 ## <a name="no_enumerators"></a> Numaralandırmalar ile hiçbir numaralandırıcıları
 
-**Visual Studio 2017 sürüm 15.3 ve üzeri** (bulunan [/Std: c ++ 17](../build/reference/std-specify-language-standard-version.md)): açık bir temel alınan türü ile hiçbir numaralandırıcılar enum (normal veya kapsamlı) tanımlayarak, aslında bir yeni ortaya çıkarabilir integral türü herhangi bir tür için örtük dönüştürme vardır. Yerleşik temel alınan türü yerine bu türü kullanarak, ince hatalar nedeniyle yanlışlıkla örtük dönüştürmeler tarafından olasılığını ortadan kaldırabilir.
+**Visual Studio 2017 sürüm 15.3 ve üzeri** (bulunan [/Std: c ++ 17](../build/reference/std-specify-language-standard-version.md)): Açık bir temel alınan türü ile hiçbir numaralandırıcılar enum (normal veya kapsamlı) tanımlayarak, geçerli herhangi bir tür için örtük dönüştürme olan yeni bir integral türü ortaya çıkarabilir. Yerleşik temel alınan türü yerine bu türü kullanarak, ince hatalar nedeniyle yanlışlıkla örtük dönüştürmeler tarafından olasılığını ortadan kaldırabilir.
 
 ```cpp
 enum class byte : unsigned char { };

@@ -5,12 +5,12 @@ helpviewer_keywords:
 - applications [OLE], OLE container
 - OLE containers [MFC], implementing
 ms.assetid: af1e2079-619a-4eac-9327-985ad875823a
-ms.openlocfilehash: 0ab91316c9ee07296fbc46f9f17b3c46c71ee96f
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: b0d737a2025ed0006db00425d42c02ebf0bdeda8
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57271430"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58767892"
 ---
 # <a name="containers-implementing-a-container"></a>Kapsayıcılar: Bir kapsayıcı uygulama
 
@@ -36,7 +36,7 @@ Bu özellikler, MFC Uygulama Sihirbazı kapsayıcılı bir uygulama oluşturmak 
 
 1. Uygulama bir `OnSize` , kendi dikdörtgeni içeren görünümündeki boyutundaki değişikliği yansıtacak şekilde değiştirmek için gerekli bir OLE bildirmek için ileti işleyicisi öğesi katıştırılmış.
 
-Uygulama bu özelliklerin bir uygulamadan diğerine önemli ölçüde değişir olduğundan, Uygulama Sihirbazı'nı yalnızca temel bir uygulamasını sağlar. Büyük olasılıkla uygulamanızı düzgün çalışması için bu işlevleri özelleştirmek gerekecektir. Bu örnek için bkz [KAPSAYICI](../visual-cpp-samples.md) örnek.
+Uygulama bu özelliklerin bir uygulamadan diğerine önemli ölçüde değişir olduğundan, Uygulama Sihirbazı'nı yalnızca temel bir uygulamasını sağlar. Büyük olasılıkla uygulamanızı düzgün çalışması için bu işlevleri özelleştirmek gerekecektir. Bu örnek için bkz [KAPSAYICI](../overview/visual-cpp-samples.md) örnek.
 
 #### <a name="to-handle-embedded-and-linked-items"></a>Katıştırılmış ve bağlantılı öğeler işlemek için
 
@@ -44,7 +44,7 @@ Uygulama bu özelliklerin bir uygulamadan diğerine önemli ölçüde değişir 
 
 1. Geçersiz kılma `OnChange`, `OnChangeItemPosition`, ve `OnGetItemPosition`. Bu işlevler, katıştırılmış ve bağlantılı iş öğelerini değiştirme boyutlandırma ve konumlandırma işleyin.
 
-Uygulama Sihirbazı'nı sizin için sınıf derleyeceği fakat geçersiz kılmak büyük olasılıkla gerekir `OnChange` ve diğer işlevler önceki yordamdaki 2. adımda birlikte listelenir. Bu işlevleri farklı bir uygulamadan diğerine uygulanır nedeniyle iskelet uygulamaları çoğu uygulama için özelleştirilmiş gerekir. Bu örnekler için bkz. MFC örnekleri [DRAWCLI](../visual-cpp-samples.md) ve [KAPSAYICI](../visual-cpp-samples.md).
+Uygulama Sihirbazı'nı sizin için sınıf derleyeceği fakat geçersiz kılmak büyük olasılıkla gerekir `OnChange` ve diğer işlevler önceki yordamdaki 2. adımda birlikte listelenir. Bu işlevleri farklı bir uygulamadan diğerine uygulanır nedeniyle iskelet uygulamaları çoğu uygulama için özelleştirilmiş gerekir. Bu örnekler için bkz. MFC örnekleri [DRAWCLI](../overview/visual-cpp-samples.md) ve [KAPSAYICI](../overview/visual-cpp-samples.md).
 
 OLE desteklemek için kapsayıcı uygulama menüsü yapısı birçok öğe eklemeniz gerekir. Bunlar hakkında daha fazla bilgi için bkz: [menüler ve kaynaklar: Kapsayıcı ekleme](../mfc/menus-and-resources-container-additions.md).
 

@@ -10,12 +10,12 @@ helpviewer_keywords:
 - serialization [MFC], collection classes
 - collection classes [MFC], deriving from nontemplate
 ms.assetid: 7230b2db-4283-4083-b098-eb231bf5b89e
-ms.openlocfilehash: d4241a77184458f5253b6d8987c310604310683c
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: c8be781bad699edb8cb0be844d79802269c3e0c5
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57295194"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58781529"
 ---
 # <a name="how-to-make-a-type-safe-collection"></a>Nasıl yapılır: Tür kullanımı uyumlu koleksiyon yapma
 
@@ -27,7 +27,7 @@ Bu makalede, kendi veri türleri için tür kullanımı uyumlu koleksiyon yapma 
 
 - [Şablon Olmayandan koleksiyon sınıflarını kullanma](#_core_using_nontemplate_collection_classes)
 
-Microsoft Foundation Class Kitaplığı, C++ şablonları temel alan önceden tanımlanmış tür kullanımı uyumlu koleksiyonlar sağlar. Şablonları oldukları için bu sınıflar, tür güvenliği ve tür atama ve bu amaç için bir şablon Olmayandan sınıfı kullanan diğer ek iş olmadan kullanım kolaylığı sağlamaya yardımcı olur. MFC örnek [TOPLAMAK](../visual-cpp-samples.md) şablona dayalı koleksiyon sınıfları bir MFC uygulamasında kullanımını gösterir. Genel olarak, bu sınıflar, yeni Koleksiyonlar kod yazmak istediğiniz zaman kullanın.
+Microsoft Foundation Class Kitaplığı, C++ şablonları temel alan önceden tanımlanmış tür kullanımı uyumlu koleksiyonlar sağlar. Şablonları oldukları için bu sınıflar, tür güvenliği ve tür atama ve bu amaç için bir şablon Olmayandan sınıfı kullanan diğer ek iş olmadan kullanım kolaylığı sağlamaya yardımcı olur. MFC örnek [TOPLAMAK](../overview/visual-cpp-samples.md) şablona dayalı koleksiyon sınıfları bir MFC uygulamasında kullanımını gösterir. Genel olarak, bu sınıflar, yeni Koleksiyonlar kod yazmak istediğiniz zaman kullanın.
 
 ##  <a name="_core_using_template.2d.based_classes_for_type_safety"></a> Şablona dayalı sınıflar için tür güvenliği kullanma
 

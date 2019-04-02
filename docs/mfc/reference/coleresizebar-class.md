@@ -10,12 +10,12 @@ helpviewer_keywords:
 - COleResizeBar [MFC], COleResizeBar
 - COleResizeBar [MFC], Create
 ms.assetid: 56a708d9-28c5-4eb0-9404-77b688d91c63
-ms.openlocfilehash: 631276a065652ec991c4c1b5264e87b7244fb7b9
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 0b950e7533ba6f95c76ef8d4569980a9a82ea591
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57275954"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58769166"
 ---
 # <a name="coleresizebar-class"></a>COleResizeBar sınıfı
 
@@ -105,7 +105,7 @@ Yeniden boyutlandırma çubuğunu oluşturulduğu olursa sıfır dışı; Aksi d
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MFC örnek SUPERPAD](../../visual-cpp-samples.md)<br/>
+[MFC örnek SUPERPAD](../../overview/visual-cpp-samples.md)<br/>
 [CControlBar Sınıfı](../../mfc/reference/ccontrolbar-class.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
 [COleServerDoc Sınıfı](../../mfc/reference/coleserverdoc-class.md)

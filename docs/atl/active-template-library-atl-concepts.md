@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - ATL, about ATL
 ms.assetid: a3960991-4d76-4da5-9568-3fa7fde53ff4
-ms.openlocfilehash: 90fd096f15f185feebc6f6ae8b73b010fe3c1813
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 7eb7eb1c369f825fbb689cd476d43be538ae8d9a
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57265346"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58774626"
 ---
 # <a name="active-template-library-atl-concepts"></a>Etkin Şablon Kitaplığı (ATL) Kavramlar
 
@@ -87,7 +87,7 @@ Yollar ve URL'leri biçiminde işlemek için kod sağlar [CPathT](../atl/referen
 
 ## <a name="related-sections"></a>İlgili Bölümler
 
-[ATL örnekleri](../visual-cpp-samples.md)<br/>
+[ATL örnekleri](../overview/visual-cpp-samples.md)<br/>
 Açıklamaları ve örnek ATL programları için bağlantılar sağlar.
 
 [ATL Projesi Oluşturma](../atl/reference/creating-an-atl-project.md)<br/>

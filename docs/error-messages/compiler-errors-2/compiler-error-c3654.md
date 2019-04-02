@@ -6,18 +6,18 @@ f1_keywords:
 helpviewer_keywords:
 - C3654
 ms.assetid: 57d96e3f-6bbb-4eaa-934b-26c23b4ceb2e
-ms.openlocfilehash: eca5081daaaf92a7b95a076a1e93bc06799bd9f8
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e66f0071a3d086c84a51c8b69e52b06643344c4d
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50649026"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58779501"
 ---
 # <a name="compiler-error-c3654"></a>Derleyici Hatası C3654
 
 'metin': açık geçersiz kılma işleminde sözdizimi hatası
 
-Beklenmeyen bir dize içinde açık bir geçersiz kılma oluştu. Daha fazla bilgi için [açık geçersiz kılmalar](../../windows/explicit-overrides-cpp-component-extensions.md).
+Beklenmeyen bir dize içinde açık bir geçersiz kılma oluştu. Daha fazla bilgi için [açık geçersiz kılmalar](../../extensions/explicit-overrides-cpp-component-extensions.md).
 
 Aşağıdaki örnek, C3654 oluşturur:
 

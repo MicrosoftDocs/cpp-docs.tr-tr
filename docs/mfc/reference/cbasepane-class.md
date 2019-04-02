@@ -166,12 +166,12 @@ helpviewer_keywords:
 - CBasePane [MFC], UndockPane
 - CBasePane [MFC], DoPaint
 ms.assetid: 8163dd51-d7c7-4def-9c74-61f8ecdfad82
-ms.openlocfilehash: 30a5eff8b18df8372c23b5f400c90ff85bdad0eb
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: e0d6b844ba4a5c373dd69c0435bbb9972db3b49b
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57259821"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58774483"
 ---
 # <a name="cbasepane-class"></a>CBasePane sınıfı
 
@@ -342,7 +342,7 @@ Aşağıdaki özelleştirme ipuçları ilgilidir `CBasePane Class` ve ondan devr
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, çeşitli yöntemlerin nasıl kullanılacağını gösterir `CBasePane` sınıfı. Örnek bir bölmesinden almak nasıl gösterir `CFrameWndEx` sınıfı ve yerleştirme modu, bölmesinde hizalama ve bölmesinde stilini ayarlama. Kod dandır [Word paneli örnek](../../visual-cpp-samples.md).
+Aşağıdaki örnek, çeşitli yöntemlerin nasıl kullanılacağını gösterir `CBasePane` sınıfı. Örnek bir bölmesinden almak nasıl gösterir `CFrameWndEx` sınıfı ve yerleştirme modu, bölmesinde hizalama ve bölmesinde stilini ayarlama. Kod dandır [Word paneli örnek](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_WordPad#2](../../mfc/reference/codesnippet/cpp/cbasepane-class_1.cpp)]
 

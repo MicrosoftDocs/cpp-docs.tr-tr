@@ -16,12 +16,12 @@ helpviewer_keywords:
 - CAxWindow class
 - ATL, hosting ActiveX controls
 ms.assetid: 85e79261-43e4-4770-bde0-1ff87f222b0f
-ms.openlocfilehash: 3cf1c773c96a2bf1bc6c67420d72052e68ee2a53
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 33c5b48c88a6fc7a4ed18a93e874d318a16a20dd
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57297599"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58775445"
 ---
 # <a name="caxwindow-class"></a>CAxWindow sınıfı
 
@@ -367,7 +367,7 @@ Dış `IDocHostUIHandlerDispatch` arabirimi ana bilgisayarın site için sorgu d
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[ATLCON örnek](../../visual-cpp-samples.md)<br/>
+[ATLCON örnek](../../overview/visual-cpp-samples.md)<br/>
 [CWindow Sınıfı](../../atl/reference/cwindow-class.md)<br/>
 [Bileşik Denetim temelleri](../../atl/atl-composite-control-fundamentals.md)<br/>
 [Sınıfına genel bakış](../../atl/atl-class-overview.md)<br/>

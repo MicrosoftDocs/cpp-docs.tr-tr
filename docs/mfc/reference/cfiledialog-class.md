@@ -132,12 +132,12 @@ helpviewer_keywords:
 - CFileDialog [MFC], OnTypeChange
 - CFileDialog [MFC], m_ofn
 ms.assetid: fda4fd3c-08b8-4ce0-8e9d-7bab23f8c6c0
-ms.openlocfilehash: aaa05fc3e97fe690e8d6a0cd9eba826c482b410d
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: f74d883fa0dcdce025345848caf49069736ee0fa
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57262109"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58779215"
 ---
 # <a name="cfiledialog-class"></a>CFileDialog sınıfı
 
@@ -251,7 +251,7 @@ Bazı `CFileDialog` yöntemleri altında Windows Vista veya sonraki desteklenmez
 
 - [CDialog::OnSetFont](../../mfc/reference/cdialog-class.md#onsetfont)
 
-Windows iletileri `CFileDialog` sınıfı hangi işletim sistemine göre değişir. Örneğin, Windows XP desteklemediği [CDialog::OnCancel](../../mfc/reference/cdialog-class.md#oncancel) ve [CDialog::OnOK](../../mfc/reference/cdialog-class.md#onok) için `CFileDialog` sınıfı. Ancak, Windows Vista ve sonraki işletim sistemlerinde bunları destekler. Oluşturulan farklı iletileri ve bunlar alınan sırası hakkında daha fazla bilgi için bkz: [CFileDialog örnek: Günlük olayı sırası](../../visual-cpp-samples.md).
+Windows iletileri `CFileDialog` sınıfı hangi işletim sistemine göre değişir. Örneğin, Windows XP desteklemediği [CDialog::OnCancel](../../mfc/reference/cdialog-class.md#oncancel) ve [CDialog::OnOK](../../mfc/reference/cdialog-class.md#onok) için `CFileDialog` sınıfı. Ancak, Windows Vista ve sonraki işletim sistemlerinde bunları destekler. Oluşturulan farklı iletileri ve bunlar alınan sırası hakkında daha fazla bilgi için bkz: [CFileDialog örnek: Günlük olayı sırası](../../overview/visual-cpp-samples.md).
 
 Kullanılacak bir `CFileDialog` nesne, ilk kullanarak nesne oluşturma `CFileDialog` Oluşturucusu. İletişim kutusu oluşturulmuş sonra ayarlayabilir veya herhangi bir değer değiştirme [CFileDialog::m_ofn](#m_ofn) yapısı değerleri veya iletişim kutusu denetimleri durumları başlatılamadı. `m_ofn` Yapısıdır türünü `OPENFILENAME`. Daha fazla bilgi için [LPSTRFİLE](/windows/desktop/api/commdlg/ns-commdlg-tagofna) Windows SDK'sındaki yapısı.
 

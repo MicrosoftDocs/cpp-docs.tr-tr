@@ -7,12 +7,12 @@ helpviewer_keywords:
 - resource files, multiple
 - TN035
 ms.assetid: 1f08ce5e-a912-44cc-ac56-7dd93ad73fb6
-ms.openlocfilehash: 7d97e4536c2a43e7e224e9056aa39df5480daeca
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 0493dd45caf5eb78da435987a4590442a908a5a3
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57279934"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58772770"
 ---
 # <a name="tn035-using-multiple-resource-files-and-header-files-with-visual-c"></a>TN035: Visual C++ birden çok kaynak dosya ve üstbilgi dosyası kullanma
 
@@ -177,7 +177,7 @@ Visual C++ ve kaynak derleyicisi birden çok destekler. RC dosyaları ile aynı 
 
 - İnsan tarafından okunabilir formda bir metin düzenleyicisi ile bir kaynak sürdürmek istiyorsanız, bir ad seçmelisiniz bir. RC dosyası bir Visual C++'dan ayrı düzenler.
 
-- Daha sonra başka bir özelleştirilmiş veri Düzenleyicisi tarafından yorumlanabilen bir ikili ya da metin biçiminde kullanıcı tanımlı bir kaynağı tutmanız gerekiyorsa, bunu ayrı bir tutmalısınız. RC dosyası için Visual C++ biçimi onaltılık veri olarak değiştirmez. . MFC Gelişmiş kavramlar örneği WAV (ses) dosyası kaynakları [SPEAKN](../visual-cpp-samples.md) güzel bir örnektir.
+- Daha sonra başka bir özelleştirilmiş veri Düzenleyicisi tarafından yorumlanabilen bir ikili ya da metin biçiminde kullanıcı tanımlı bir kaynağı tutmanız gerekiyorsa, bunu ayrı bir tutmalısınız. RC dosyası için Visual C++ biçimi onaltılık veri olarak değiştirmez. . MFC Gelişmiş kavramlar örneği WAV (ses) dosyası kaynakları [SPEAKN](../overview/visual-cpp-samples.md) güzel bir örnektir.
 
 Yapabilecekleriniz # ikinci include. RC sürümünde dahil edilenleri Ayarla iletişim kutusunda derleme zamanı yönergeleri:
 

@@ -59,12 +59,12 @@ helpviewer_keywords:
 - ID_FILE_NEW command [MFC]
 - ID_INDICATOR_NUM command
 ms.assetid: a7883b46-23f7-4870-ac3a-804aed9258b5
-ms.openlocfilehash: 4c066521ba2b5be9ac24a8abaece42e57b8ad85f
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 8d568760cc75a4c1f2ddb6dd88108cc830783194
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57279378"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58775837"
 ---
 # <a name="tn022-standard-commands-implementation"></a>TN022: Standart komutları uygulama
 
@@ -221,7 +221,7 @@ Her komut kimliği için dosya İSTEMLERİ bulunabilir standart ileti satır ist
 
    Şu anda bu komut için standart uygulaması yoktur. Bu her biri için uygulamanız gereken `CView`-türetilmiş sınıf.
 
-   Bu komut uygulamak seçerseniz, bu komut kimliği kullanmanızı öneririz MFC öğretici örnek görmek [KARALAMA](../visual-cpp-samples.md) örnek uygulama.
+   Bu komut uygulamak seçerseniz, bu komut kimliği kullanmanızı öneririz MFC öğretici örnek görmek [KARALAMA](../overview/visual-cpp-samples.md) örnek uygulama.
 
 - Id_edıt_copy geçerli Seçimi panoya kopyalar.
 
@@ -438,7 +438,7 @@ Her komut kimliği için dosya İSTEMLERİ bulunabilir standart ileti satır ist
 
    Bu komut tüm OLE istemci uygulamaları uygulamalıdır. AppWizard OLE seçeneğiyle bir çatı uygulaması oluşturacaktır `OnInsertObject` görünümü sınıfınızda, tamamlanması gerekir.
 
-   MFC OLE örnek görmek [OCLIENT](../visual-cpp-samples.md) bu komut, tam bir uygulama için örnek.
+   MFC OLE örnek görmek [OCLIENT](../overview/visual-cpp-samples.md) bu komut, tam bir uygulama için örnek.
 
 - Id_ole_edıt_lınks düzenler OLE bağlantılar
 

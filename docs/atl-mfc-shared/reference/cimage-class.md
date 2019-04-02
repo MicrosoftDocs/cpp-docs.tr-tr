@@ -54,12 +54,12 @@ helpviewer_keywords:
 - CImage class
 - transparent color
 ms.assetid: 52861e3d-bf7e-481f-a240-90e88f76c490
-ms.openlocfilehash: c954955ad52197316da0952dc6dd415a91782444
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.openlocfilehash: 14a4691e0c1f25a8f9e8b2b652c6e582f51c954a
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57739443"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58775952"
 ---
 # <a name="cimage-class"></a>Cımage sınıfı
 
@@ -1658,8 +1658,8 @@ BOOL TransparentBlt(CImage* pSrcImage, CImage* pDstImage,
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MMXSwarm örnek](../../visual-cpp-samples.md)<br/>
-[SimpleImage örnek](../../visual-cpp-samples.md)<br/>
+[MMXSwarm örnek](../../overview/visual-cpp-samples.md)<br/>
+[SimpleImage örnek](../../overview/visual-cpp-samples.md)<br/>
 [CİHAZDAN bağımsız bit eşlemler](/windows/desktop/gdi/device-independent-bitmaps)<br/>
 [CreateDIBSection](/windows/desktop/api/wingdi/nf-wingdi-createdibsection)<br/>
 [ATL COM Masaüstü Bileşenleri](../../atl/atl-com-desktop-components.md)<br/>

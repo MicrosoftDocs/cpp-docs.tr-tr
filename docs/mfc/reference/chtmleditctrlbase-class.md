@@ -220,12 +220,12 @@ helpviewer_keywords:
 - CHtmlEditCtrlBase [MFC], Unlink
 - CHtmlEditCtrlBase [MFC], UnorderList
 ms.assetid: e0cc74b4-8320-4570-b673-16c03d2ae266
-ms.openlocfilehash: 09d4c4f1fde563d82fa007a96723f078eb31dc1b
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: a3c90f4b75b79dc51091c87a5a84b5c59a70646f
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57423242"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58772585"
 ---
 # <a name="chtmleditctrlbase-class"></a>CHtmlEditCtrlBase sınıfı
 
@@ -2565,4 +2565,4 @@ Bu yöntem gönderir [IDM UNORDERLIST komut kimliği](/previous-versions/aa76998
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
-[HTMLEdit örnek](../../visual-cpp-samples.md)
+[HTMLEdit örnek](../../overview/visual-cpp-samples.md)

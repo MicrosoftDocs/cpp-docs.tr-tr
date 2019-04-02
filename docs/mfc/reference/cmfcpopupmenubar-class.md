@@ -46,12 +46,12 @@ helpviewer_keywords:
 - CMFCPopupMenuBar [MFC], StartPopupMenuTimer
 - CMFCPopupMenuBar [MFC], m_bDisableSideBarInXPMode
 ms.assetid: 4c93c459-7f70-4240-8c63-280bb811e374
-ms.openlocfilehash: 14f1636917244efe4decc0108579f81fbad2f457
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: acb1e2be7d40e5e0c569fffcc92c57c750be8f91
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57300784"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58776784"
 ---
 # <a name="cmfcpopupmenubar-class"></a>CMFCPopupMenuBar sınıfı
 
@@ -101,7 +101,7 @@ class CMFCPopupMenuBar : public CMFCToolBar
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek nasıl başlatılacağını gösterir. bir `CMFCPopupMenuBar` nesnesinden bir `CMFCPopupMenu` nesne. Bu kod parçacığı parçasıdır [çizmek istemci örneği](../../visual-cpp-samples.md).
+Aşağıdaki örnek nasıl başlatılacağını gösterir. bir `CMFCPopupMenuBar` nesnesinden bir `CMFCPopupMenu` nesne. Bu kod parçacığı parçasıdır [çizmek istemci örneği](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_DrawClient#7](../../mfc/reference/codesnippet/cpp/cmfcpopupmenubar-class_1.cpp)]
 

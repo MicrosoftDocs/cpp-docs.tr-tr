@@ -7,19 +7,19 @@ helpviewer_keywords:
 - single document interface (SDI), adding views
 - views [MFC], SDI applications
 ms.assetid: 86d0c134-01d5-429c-b672-36cfb956dc01
-ms.openlocfilehash: b665f090fc680221be70f170452d756dd5f68dc5
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 593c59c73b58b4364c9d652ce8eb415c17af496c
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57284287"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58767593"
 ---
 # <a name="adding-multiple-views-to-a-single-document"></a>Tek Bir Belgeye Birden Çok Görünüm Ekleme
 
 Microsoft Foundation Class (MFC) kitaplığı ile oluşturulan bir tek Belgeli Arabirim (SDI) uygulamasında, her bir belge türü tek bir görünüm türü ile ilişkilidir. Bazı durumlarda, bir belge öğesinin geçerli görünümü ile yeni bir görünüm geçiş olanağı sağlamak için tercih edilir.
 
 > [!TIP]
->  Tek bir belgenin birden çok görünüm uygulama ile ilgili ek yordamlar için bkz. [CDocument::AddView](../mfc/reference/cdocument-class.md#addview) ve [TOPLAMAK](../visual-cpp-samples.md) MFC örneği.
+>  Tek bir belgenin birden çok görünüm uygulama ile ilgili ek yordamlar için bkz. [CDocument::AddView](../mfc/reference/cdocument-class.md#addview) ve [TOPLAMAK](../overview/visual-cpp-samples.md) MFC örneği.
 
 Yeni bir ekleyerek bu işlevi uygulayabilirsiniz `CView`-türetilmiş sınıf ve görünümler varolan bir MFC uygulamasına dinamik geçiş için ek kod.
 

@@ -156,12 +156,12 @@ helpviewer_keywords:
 - CMDIFrameWndEx [MFC], m_bCanCovertControlBarToMDIChild
 - CMDIFrameWndEx [MFC], m_bDisableSetRedraw
 ms.assetid: dbcafcb3-9a7a-4f11-9dfe-ba57565c81d0
-ms.openlocfilehash: 81d227c241adf0ce72ccd4a554134d7d858b4a6d
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: b24afd943f2168657c6b4437fed65b0a45689b52
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57275434"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58778565"
 ---
 # <a name="cmdiframewndex-class"></a>Cmdıframewndex sınıfı
 
@@ -270,7 +270,7 @@ MDI uygulamanıza genişletilmiş özelleştirme özelliklerden yararlanmak içi
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek bir sınıftan türetilen `CMDIFrameWndEx`. Bu kod parçacığı geldiği [DrawClient örnek: MFC Şerit tabanlı OLE nesne çizim uygulaması](../../visual-cpp-samples.md).
+Aşağıdaki örnek bir sınıftan türetilen `CMDIFrameWndEx`. Bu kod parçacığı geldiği [DrawClient örnek: MFC Şerit tabanlı OLE nesne çizim uygulaması](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_DrawClient#1](../../mfc/reference/codesnippet/cpp/cmdiframewndex-class_1.h)]
 
@@ -449,7 +449,7 @@ Kayıt defterinden yüklendikleri olduğunda belgeleri oluşturmak için bu yön
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki örnekte gösterildiği nasıl `CreateDocumentWindow` kullanılır [VisualStudioDemo örnek: Visual Studio DllMain'den](../../visual-cpp-samples.md).
+Aşağıdaki örnekte gösterildiği nasıl `CreateDocumentWindow` kullanılır [VisualStudioDemo örnek: Visual Studio DllMain'den](../../overview/visual-cpp-samples.md).
 
 Bu örnekte, `g_strStartViewName` "aslında bir disk dosyasından yüklenmemiş bir sanal belgenin adını" (örneğin, "Başlangıç sayfası") olabilir. Bu nedenle bu durumda işlemek için özel işleme gerekir.
 
@@ -505,7 +505,7 @@ Bu yöntem belirtilen docks olan çerçeve penceresi taraflı bölmesine belirti
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki örnek, kullanımını gösterir `DockPane` yöntemi. Bu kod parçacığı geldiği [VisualStudioDemo örnek: Visual Studio DllMain'den](../../visual-cpp-samples.md).
+Aşağıdaki örnek, kullanımını gösterir `DockPane` yöntemi. Bu kod parçacığı geldiği [VisualStudioDemo örnek: Visual Studio DllMain'den](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_VisualStudioDemo#4](../../mfc/codesnippet/cpp/cmdiframewndex-class_3.cpp)]
 
@@ -537,7 +537,7 @@ BOOL DockPaneLeftOf(
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki örnekte gösterildiği nasıl `DockPaneLeftOf` yöntemi kullanılır [VisualStudioDemo örnek: Visual Studio DllMain'den](../../visual-cpp-samples.md).
+Aşağıdaki örnekte gösterildiği nasıl `DockPaneLeftOf` yöntemi kullanılır [VisualStudioDemo örnek: Visual Studio DllMain'den](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_VisualStudioDemo#5](../../mfc/codesnippet/cpp/cmdiframewndex-class_4.cpp)]
 
@@ -568,7 +568,7 @@ Ana çerçeve penceresinin belirtilen yan yerleştirildiğinde bölmeleri otomat
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki örnekte gösterildiği nasıl `EnableAutoHidePanes` yöntemi kullanılır [VisualStudioDemo örnek: Visual Studio DllMain'den](../../visual-cpp-samples.md).
+Aşağıdaki örnekte gösterildiği nasıl `EnableAutoHidePanes` yöntemi kullanılır [VisualStudioDemo örnek: Visual Studio DllMain'den](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_VisualStudioDemo#6](../../mfc/codesnippet/cpp/cmdiframewndex-class_5.cpp)]
 
@@ -595,7 +595,7 @@ Ait bölme yerleştirme etkinleştirmek için bu işlevi çağırın `CMDIFrameW
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki örnekte gösterildiği nasıl `EnableDocking` yöntemi kullanılır [VisualStudioDemo örnek: Visual Studio DllMain'den](../../visual-cpp-samples.md).
+Aşağıdaki örnekte gösterildiği nasıl `EnableDocking` yöntemi kullanılır [VisualStudioDemo örnek: Visual Studio DllMain'den](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_VisualStudioDemo#7](../../mfc/codesnippet/cpp/cmdiframewndex-class_6.cpp)]
 
@@ -686,7 +686,7 @@ Sekmeli grupları MDI kullanma hakkında daha fazla bilgi için bkz: [MDI sekmel
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki örnekte gösterildiği nasıl `EnableMDITabbedGroups` kullanılır [VisualStudioDemo örnek: Visual Studio DllMain'den](../../visual-cpp-samples.md).
+Aşağıdaki örnekte gösterildiği nasıl `EnableMDITabbedGroups` kullanılır [VisualStudioDemo örnek: Visual Studio DllMain'den](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_VisualStudioDemo#8](../../mfc/codesnippet/cpp/cmdiframewndex-class_7.cpp)]
 
@@ -738,7 +738,7 @@ Varsa *bTabCustomTooltips* TRUE ise ana çerçeve penceresine bir AFX_WM_ON_GET_
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki örnekte gösterildiği nasıl `EnableMDITabs` kullanılır [MDITabsDemo örnek: MFC sekmeli MDI uygulaması](../../visual-cpp-samples.md).
+Aşağıdaki örnekte gösterildiği nasıl `EnableMDITabs` kullanılır [MDITabsDemo örnek: MFC sekmeli MDI uygulaması](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_MDITabsDemo#3](../../mfc/reference/codesnippet/cpp/cmdiframewndex-class_8.cpp)]
 
@@ -807,7 +807,7 @@ Açılır bölmesi menüsünde uygulamanın bölmeleri listesini görüntüler v
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki örnekte gösterildiği nasıl `EnablePaneMenu` kullanılır [VisualStudioDemo örnek: Visual Studio DllMain'den](../../visual-cpp-samples.md).
+Aşağıdaki örnekte gösterildiği nasıl `EnablePaneMenu` kullanılır [VisualStudioDemo örnek: Visual Studio DllMain'den](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_VisualStudioDemo#9](../../mfc/codesnippet/cpp/cmdiframewndex-class_9.cpp)]
 
@@ -849,7 +849,7 @@ Bir MDI alt pencere yönetimi iletişim kutusu, komutu çağıran bir menü öğ
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki örnekte gösterildiği nasıl `EnableWindowsDialog` kullanılır [VisualStudioDemo örnek: Visual Studio DllMain'den](../../visual-cpp-samples.md).
+Aşağıdaki örnekte gösterildiği nasıl `EnableWindowsDialog` kullanılır [VisualStudioDemo örnek: Visual Studio DllMain'den](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_VisualStudioDemo#10](../../mfc/codesnippet/cpp/cmdiframewndex-class_10.cpp)]
 
@@ -1224,7 +1224,7 @@ Yüklemek veya MDI sekme ve Grup durumu ve açılmış belgelerin listesini kayd
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki örnekte gösterildiği nasıl `LoadMDIState` kullanılır [VisualStudioDemo örnek: Visual Studio DllMain'den](../../visual-cpp-samples.md).
+Aşağıdaki örnekte gösterildiği nasıl `LoadMDIState` kullanılır [VisualStudioDemo örnek: Visual Studio DllMain'den](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_VisualStudioDemo#11](../../mfc/codesnippet/cpp/cmdiframewndex-class_11.cpp)]
 
@@ -1260,7 +1260,7 @@ Yeni bir oluşturmak için bu işlevi kullanın (yeni sekmeli grup) penceresi se
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki örnekte gösterildiği nasıl `MDITabNewGroup` kullanılır [VisualStudioDemo örnek: Visual Studio DllMain'den](../../visual-cpp-samples.md).
+Aşağıdaki örnekte gösterildiği nasıl `MDITabNewGroup` kullanılır [VisualStudioDemo örnek: Visual Studio DllMain'den](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_VisualStudioDemo#12](../../mfc/codesnippet/cpp/cmdiframewndex-class_12.cpp)]
 
@@ -1280,7 +1280,7 @@ Varsayılan değer `FALSE` şeklindedir.
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki örnekte gösterildiği nasıl `m_bCanCovertControlBarToMDIChild` kullanılır [VisualStudioDemo örnek: Visual Studio DllMain'den](../../visual-cpp-samples.md).
+Aşağıdaki örnekte gösterildiği nasıl `m_bCanCovertControlBarToMDIChild` kullanılır [VisualStudioDemo örnek: Visual Studio DllMain'den](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_VisualStudioDemo#13](../../mfc/codesnippet/cpp/cmdiframewndex-class_2.cpp)]
 
@@ -1621,7 +1621,7 @@ Bu yöntemin bir [CBCGPMDIFrameWnd](../../mfc/reference/cmdiframewndex-class.md)
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki örnekte gösterildiği nasıl `OnShowMDITabContextMenu` kullanılır [VisualStudioDemo örnek: Visual Studio DllMain'den](../../visual-cpp-samples.md).
+Aşağıdaki örnekte gösterildiği nasıl `OnShowMDITabContextMenu` kullanılır [VisualStudioDemo örnek: Visual Studio DllMain'den](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_VisualStudioDemo#14](../../mfc/codesnippet/cpp/cmdiframewndex-class_13.cpp)]
 
@@ -1856,7 +1856,7 @@ Yüklemek veya MDI sekme ve Grup durumu ve açılmış belgelerin listesini kayd
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki örnekte gösterildiği nasıl `SaveMDIState` kullanılır [VisualStudioDemo örnek: Visual Studio DllMain'den](../../visual-cpp-samples.md).
+Aşağıdaki örnekte gösterildiği nasıl `SaveMDIState` kullanılır [VisualStudioDemo örnek: Visual Studio DllMain'den](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_VisualStudioDemo#15](../../mfc/codesnippet/cpp/cmdiframewndex-class_14.cpp)]
 
@@ -1939,7 +1939,7 @@ Bölmesini göster veya gizle için bu yöntemi çağırın. Kullanmayın `ShowW
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki örnekte gösterildiği nasıl `ShowPane` kullanılır [VisualStudioDemo örnek: Visual Studio DllMain'den](../../visual-cpp-samples.md).
+Aşağıdaki örnekte gösterildiği nasıl `ShowPane` kullanılır [VisualStudioDemo örnek: Visual Studio DllMain'den](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_VisualStudioDemo#16](../../mfc/codesnippet/cpp/cmdiframewndex-class_15.cpp)]
 
@@ -1953,7 +1953,7 @@ void ShowWindowsDialog();
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki örnekte gösterildiği nasıl `ShowWindowsDialog` kullanılır [VisualStudioDemo örnek: Visual Studio DllMain'den](../../visual-cpp-samples.md).
+Aşağıdaki örnekte gösterildiği nasıl `ShowWindowsDialog` kullanılır [VisualStudioDemo örnek: Visual Studio DllMain'den](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_VisualStudioDemo#18](../../mfc/codesnippet/cpp/cmdiframewndex-class_16.cpp)]
 
@@ -1980,7 +1980,7 @@ Yerleştirme bölmesine bir sekmeli belge dönüştürmek için bu yöntemi kull
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki örnekte gösterildiği nasıl `TabbedDocumentToControlBar` kullanılır [VisualStudioDemo örnek: Visual Studio DllMain'den](../../visual-cpp-samples.md).
+Aşağıdaki örnekte gösterildiği nasıl `TabbedDocumentToControlBar` kullanılır [VisualStudioDemo örnek: Visual Studio DllMain'den](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_VisualStudioDemo#19](../../mfc/codesnippet/cpp/cmdiframewndex-class_17.cpp)]
 

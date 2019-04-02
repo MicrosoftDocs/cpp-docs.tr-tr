@@ -334,12 +334,12 @@ helpviewer_keywords:
 - COleControl [MFC], IsInvokeAllowed
 - COleControl [MFC], SetInitialDataFormats
 ms.assetid: 53e95299-38e8-447b-9c5f-a381d27f5123
-ms.openlocfilehash: 8587eb76f38c07d54234c810dfd6ab79f487e740
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 30d73d546ee68a25f1e59776020477d038da65e8
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57283429"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58771506"
 ---
 # <a name="colecontrol-class"></a>COleControl sınıfı
 
@@ -4209,8 +4209,8 @@ Denetimin ileti eşlemesi aracılığıyla belirli iletilerini dağıtmak için 
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MFC örnek CIRC3](../../visual-cpp-samples.md)<br/>
-[MFC örnek TESTHELP](../../visual-cpp-samples.md)<br/>
+[MFC örnek CIRC3](../../overview/visual-cpp-samples.md)<br/>
+[MFC örnek TESTHELP](../../overview/visual-cpp-samples.md)<br/>
 [COlePropertyPage Sınıfı](../../mfc/reference/colepropertypage-class.md)<br/>
 [CWnd Sınıfı](../../mfc/reference/cwnd-class.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>

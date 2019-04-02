@@ -42,12 +42,12 @@ helpviewer_keywords:
 - CMFCShellListCtrl [MFC], Refresh
 - CMFCShellListCtrl [MFC], SetItemTypes
 ms.assetid: ad472958-5586-4c50-aadf-1844c30bf6e7
-ms.openlocfilehash: a08cfff3996d3dce617cf80293a96675083a39d1
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: a513a5e85ae5cf00f7ea874967a709245e016b34
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57302552"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58772117"
 ---
 # <a name="cmfcshelllistctrl-class"></a>CMFCShellListCtrl sınıfı
 
@@ -92,7 +92,7 @@ A [CMFCShellTreeCtrl](../../mfc/reference/cmfcshelltreectrl-class.md) nesne ili�
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, bir nesnenin oluşturulacağı gösterilmektedir `CMFCShellListCtrl` sınıfı ve şu anda görüntülenen klasörün üst klasörü görüntüleme. Bu kod parçacığı parçasıdır [Gezgini örneği](../../visual-cpp-samples.md).
+Aşağıdaki örnek, bir nesnenin oluşturulacağı gösterilmektedir `CMFCShellListCtrl` sınıfı ve şu anda görüntülenen klasörün üst klasörü görüntüleme. Bu kod parçacığı parçasıdır [Gezgini örneği](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_Explorer#1](../../mfc/reference/codesnippet/cpp/cmfcshelllistctrl-class_1.h)]
 [!code-cpp[NVC_MFC_Explorer#2](../../mfc/reference/codesnippet/cpp/cmfcshelllistctrl-class_2.cpp)]

@@ -10,12 +10,12 @@ helpviewer_keywords:
 - pointers [C++], marshaling
 - data marshaling [C++], embedded pointers
 ms.assetid: 05fb8858-97f2-47aa-86b2-2c0ad713bdb2
-ms.openlocfilehash: 89194dabb4b124aa7cbd4d1d34a74de491fba66f
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.openlocfilehash: c6d622060aaf700b6ea1a3bfe797ab3190eee797
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57738473"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58780242"
 ---
 # <a name="how-to-marshal-embedded-pointers-using-c-interop"></a>Nasıl yapılır: C++ birlikte çalışması kullanarak katıştırılmış işaretçileri sıralama
 
@@ -23,7 +23,7 @@ Aşağıdaki kod örnekleri kullan [yönetilen, yönetilmeyen](../preprocessor/m
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, işaretçileri içeren bir yapıya alan yönetilmeyen bir işlev yönetilen bir işlevden nasıl çağrılabileceğini gösterir. Yönetilen işlev yapısının bir örneğini oluşturur ve yeni anahtar sözcüğü ile katıştırılmış işaretçi başlatır (yerine [yeni başvuru, gcnew](../windows/ref-new-gcnew-cpp-component-extensions.md) anahtar sözcüğü). Bu yerel yığında bellek ayırır olduğundan, çöp toplama bastırmak için diziyi sabitlemek için gerek yoktur. Ancak, bellek Bellek sızıntısını önlemek için açıkça silinmelidir.
+Aşağıdaki örnek, işaretçileri içeren bir yapıya alan yönetilmeyen bir işlev yönetilen bir işlevden nasıl çağrılabileceğini gösterir. Yönetilen işlev yapısının bir örneğini oluşturur ve yeni anahtar sözcüğü ile katıştırılmış işaretçi başlatır (yerine [yeni başvuru, gcnew](../extensions/ref-new-gcnew-cpp-component-extensions.md) anahtar sözcüğü). Bu yerel yığında bellek ayırır olduğundan, çöp toplama bastırmak için diziyi sabitlemek için gerek yoktur. Ancak, bellek Bellek sızıntısını önlemek için açıkça silinmelidir.
 
 ```
 // marshal_embedded_pointer.cpp

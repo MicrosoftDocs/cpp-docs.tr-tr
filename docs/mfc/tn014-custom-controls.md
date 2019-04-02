@@ -7,18 +7,18 @@ helpviewer_keywords:
 - TN014
 - custom controls [MFC]
 ms.assetid: 1917a498-f643-457c-b570-9a0af7dbf7bb
-ms.openlocfilehash: d529b235daa1c6aa889b69e8d6bb2f02a58436bb
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: c68b60f065e69213b3ab32c887bc7af129a70fef
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57297495"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58772130"
 ---
 # <a name="tn014-custom-controls"></a>TN014: Özel denetimler
 
 Bu Not, özel ve kendi kendine çizim denetimleri için MFC desteğini açıklar. Ayrıca Dinamik sınıflara açıklar ve arasındaki ilişkiyi açıklar [CWnd](../mfc/reference/cwnd-class.md) nesneleri ve `HWND`s.
 
-MFC örnek uygulamayı CTRLTEST birçok özel denetimler kullanılması gösterilmektedir. MFC genel örnek için kaynak koduna bakın [CTRLTEST](../visual-cpp-samples.md) ve çevrimiçi Yardım.
+MFC örnek uygulamayı CTRLTEST birçok özel denetimler kullanılması gösterilmektedir. MFC genel örnek için kaynak koduna bakın [CTRLTEST](../overview/visual-cpp-samples.md) ve çevrimiçi Yardım.
 
 ## <a name="owner-draw-controlsmenus"></a>Özelleştirilmiş Çizimli denetimler/menüleri
 
@@ -104,7 +104,7 @@ Liste kutuları ve birleşik giriş kutuları, kendi kendine çizmek için `OnDe
 
 ## <a name="examples-of-self-drawing-controls-and-menus"></a>Kendi kendine çizim denetimleri ve menüler örnekleri
 
-MFC genel örnek [CTRLTEST](../visual-cpp-samples.md) bir kendi kendine çizim menüsü ve kendi kendine çizim liste kutusu örnekleri sağlar.
+MFC genel örnek [CTRLTEST](../overview/visual-cpp-samples.md) bir kendi kendine çizim menüsü ve kendi kendine çizim liste kutusu örnekleri sağlar.
 
 En sık karşılaşılan bir kendi kendine çizim düğmesini bir bit eşlem düğmesi örneğidir. Bir bit eşlem düğmesi, bir, iki veya üç farklı durumlar için bit eşlem resimleri gösteren bir düğme vardır. Buna örnek olarak, MFC sınıfı sağlanan [CBitmapButton](../mfc/reference/cbitmapbutton-class.md).
 
@@ -130,7 +130,7 @@ Yöntemleri kullanarak dinamik sınıflara elde edebileceğiniz [CWnd::SubclassW
 
 Her iki yordam ekleme bir `CWnd` varolan nesne `HWND`. `SubclassWindow` alan `HWND` doğrudan. `SubclassDlgItem` Denetim kimliği ve ana pencereyi bir yardımcı işlevdir. `SubclassDlgItem` bir iletişim kutusu şablondan oluşturulan iletişim kutusu denetimleri için C++ nesneleri eklemek için tasarlanmıştır.
 
-Bkz: [CTRLTEST](../visual-cpp-samples.md) ne zaman kullanılacağı çeşitli örneklerini örneğin `SubclassWindow` ve `SubclassDlgItem`.
+Bkz: [CTRLTEST](../overview/visual-cpp-samples.md) ne zaman kullanılacağı çeşitli örneklerini örneğin `SubclassWindow` ve `SubclassDlgItem`.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

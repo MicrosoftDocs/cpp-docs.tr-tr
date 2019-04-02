@@ -17,18 +17,18 @@ helpviewer_keywords:
 - server applications [MFC], OLE menus and resources
 - OLE initialization failure [MFC]
 ms.assetid: 56ce9e8d-8f41-4db8-8dee-e8b0702d057c
-ms.openlocfilehash: 0cf5b495ca1e3f6e7b0ae434c09e014a29eadb00
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 85c7b6059a868e93c6c6a7ebbd7b08dac3233612
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57281962"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58767209"
 ---
 # <a name="menus-and-resources-server-additions"></a>Menüler ve kaynaklar: Sunucu ekleme
 
 Bu makalede, menüler ve diğer kaynakları görsel düzenleme sunucu (Bileşen) uygulaması, yapılması gereken değişiklikleri açıklar. Sunucu uygulaması, birçok ekleme menüsü yapısı ve diğer kaynaklara gerektirir, çünkü bu üç moddan birini başlatılabilir: tek başına, katıştırılmış, ya da yerinde bekleyin. Bölümünde anlatıldığı gibi [menüler ve kaynaklar (OLE)](../mfc/menus-and-resources-ole.md) makalesi, en fazla dört menüleri kümesi vardır. Dört yalnızca üç bir miniserver için kullanılan bir MDI tam sunucu uygulaması için kullanılabilir. Uygulama Sihirbazı'nı menüsü düzeni için kullanmak istediğiniz sunucu türünü oluşturur. Bazı özelleştirme gerekli olabilir.
 
-Uygulama Sihirbazı'nı kullanmıyorsanız HIERSVR aramak isteyebilirsiniz. RC, MFC örnek uygulama için kaynak betiği [HIERSVR](../visual-cpp-samples.md)bu değişiklikleri nasıl uygulandığını görmek için.
+Uygulama Sihirbazı'nı kullanmıyorsanız HIERSVR aramak isteyebilirsiniz. RC, MFC örnek uygulama için kaynak betiği [HIERSVR](../overview/visual-cpp-samples.md)bu değişiklikleri nasıl uygulandığını görmek için.
 
 Bu makalede ele alınan konular:
 
@@ -56,7 +56,7 @@ Sunucu uygulamaları için iki yeni Hızlandırıcı tablo kaynaklarını eklenm
 
 İkinci tabloda görünümün Hızlandırıcı tablosu neredeyse tam bir kopyası var. Belirtilen tamamen açık menüsünde yapılan değişikliklerin farkları paralel [sunucu menü eklemeleri](#_core_server_menu_additions).
 
-Bu Hızlandırıcı tablosu değişiklikleri örneği için IDR_HIERSVRTYPE_SRVR_IP ve IDR_HIERSVRTYPE_SRVR_EMB Hızlandırıcı tablolarını IDR_MAINFRAME HIERSVR içinde ile karşılaştırın. MFC OLE örnekte bulunan RC dosyası [HIERSVR](../visual-cpp-samples.md). Dosya ve pencere Hızlandırıcıları yerinde tablosundan eksik ve bunları tam kopyalarını katıştırılmış tabloda yer alan.
+Bu Hızlandırıcı tablosu değişiklikleri örneği için IDR_HIERSVRTYPE_SRVR_IP ve IDR_HIERSVRTYPE_SRVR_EMB Hızlandırıcı tablolarını IDR_MAINFRAME HIERSVR içinde ile karşılaştırın. MFC OLE örnekte bulunan RC dosyası [HIERSVR](../overview/visual-cpp-samples.md). Dosya ve pencere Hızlandırıcıları yerinde tablosundan eksik ve bunları tam kopyalarını katıştırılmış tabloda yer alan.
 
 ##  <a name="_core_string_table_additions_for_server_applications"></a> Sunucu uygulamaları için dize tablosu ekleme
 

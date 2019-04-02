@@ -12,12 +12,12 @@ helpviewer_keywords:
 - CMFCToolBarFontComboBox [MFC], GetFontDesc
 - CMFCToolBarFontComboBox [MFC], SetFont
 ms.assetid: 25f8e08c-aadd-4cb5-9581-a99d49d444b1
-ms.openlocfilehash: 4ab4eece67406b1c5a52669beafc9bfd8acd32e6
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 89767a3ed6880703c3c754700ea5669c0cc183e5
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57283728"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58779202"
 ---
 # <a name="cmfctoolbarfontcombobox-class"></a>CMFCToolBarFontComboBox sınıfı
 
@@ -142,7 +142,7 @@ Genellikle, `CMFCToolBarFontComboBox` nesneleri depolamak kullanılabilir yazı 
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki örnek nasıl oluşturulacağını gösterir. bir `CMFCToolBarFontComboBox` nesne. Bu kod parçacığı parçasıdır [Word paneli örnek](../../visual-cpp-samples.md).
+Aşağıdaki örnek nasıl oluşturulacağını gösterir. bir `CMFCToolBarFontComboBox` nesne. Bu kod parçacığı parçasıdır [Word paneli örnek](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_WordPad#7](../../mfc/reference/codesnippet/cpp/cmfctoolbarfontcombobox-class_1.cpp)]
 

@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3915
 ms.assetid: 2b0a5e5f-3aec-4a4b-9157-233031817084
-ms.openlocfilehash: 511da8ebe896cb2d0e2869f36bdb474cae5ba521
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 85654e266c3157ab145e7ac7aab454a0d4f6c102
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50507763"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58776460"
 ---
 # <a name="compiler-error-c3915"></a>Derleyici Hatası C3915
 
@@ -19,7 +19,7 @@ ms.locfileid: "50507763"
 
 Bir tür bir varsayılan, dizinlenmiş özellik yok.
 
-Daha fazla bilgi için [özelliği](../../windows/property-cpp-component-extensions.md).
+Daha fazla bilgi için [özelliği](../../extensions/property-cpp-component-extensions.md).
 
 ## <a name="example"></a>Örnek
 

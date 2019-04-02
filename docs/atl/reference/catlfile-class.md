@@ -20,12 +20,12 @@ f1_keywords:
 helpviewer_keywords:
 - CAtlFile class
 ms.assetid: 93ed160b-af2a-448c-9cbe-e5fa46c199bb
-ms.openlocfilehash: 19e230f150803019d47e1ea710e7d713d1822a53
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 0faae50afcd26948bdcb4d4333efb25d5cca33ea
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57270104"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58772975"
 ---
 # <a name="catlfile-class"></a>CAtlFile sınıfı
 
@@ -449,6 +449,6 @@ Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Kayan örnek](../../visual-cpp-samples.md)<br/>
+[Kayan örnek](../../overview/visual-cpp-samples.md)<br/>
 [Sınıfına genel bakış](../../atl/atl-class-overview.md)<br/>
 [CHandle Sınıfı](../../atl/reference/chandle-class.md)

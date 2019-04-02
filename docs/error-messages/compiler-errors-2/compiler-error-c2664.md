@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2664
 ms.assetid: 3595d66e-cf87-4fda-a896-c0cd81f95db4
-ms.openlocfilehash: d9ebea5c955dcf89308654feec9866d4fdc924cd
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: cffd178e1736358333ee27d4572d3531de23f527
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50501367"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58774613"
 ---
 # <a name="compiler-error-c2664"></a>Derleyici Hatası C2664
 
@@ -31,7 +31,7 @@ C2664 düzeltmek için
 
 C2664, aynı zamanda, bir sınıf, temel sınıflarından birinde bir üye gizlediğinde de meydana gelebilir.
 
-Daha fazla bilgi için [nasıl yapılır: dönüştürme System:: String'i wchar_t * veya char\*](../../dotnet/how-to-convert-system-string-to-wchar-t-star-or-char-star.md).
+Daha fazla bilgi için [nasıl yapılır: System:: String'i wchar_t * veya char dönüştürme\*](../../dotnet/how-to-convert-system-string-to-wchar-t-star-or-char-star.md).
 
 ## <a name="example"></a>Örnek
 
@@ -189,7 +189,7 @@ int main( ) {
 
 ## <a name="example"></a>Örnek
 
-Enum değişkeni, temelindeki türe işlev çağrısını karşılayacak şekilde dönüştürülemez. Daha fazla bilgi için [sabit listesi sınıfı](../../windows/enum-class-cpp-component-extensions.md). Aşağıdaki örnek C2664 oluşturur ve bu sorunun nasıl gösterir.
+Enum değişkeni, temelindeki türe işlev çağrısını karşılayacak şekilde dönüştürülemez. Daha fazla bilgi için [sabit listesi sınıfı](../../extensions/enum-class-cpp-component-extensions.md). Aşağıdaki örnek C2664 oluşturur ve bu sorunun nasıl gösterir.
 
 ```
 // C2664f.cpp

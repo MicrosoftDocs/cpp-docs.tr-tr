@@ -4,18 +4,18 @@ ms.date: 08/30/2017
 helpviewer_keywords:
 - breaking changes [C++]
 ms.assetid: b38385a9-a483-4de9-99a6-797488bc5110
-ms.openlocfilehash: 20920a5f1a1cdf2a4e10263a7b1de3010f24f9c0
-ms.sourcegitcommit: c1f646c8b72f330fa8cf5ddb0f8f261ba10d16f0
+ms.openlocfilehash: 9be4db9e0f7c50054dc6e6ca498b1c9d49715a8d
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58329045"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58775419"
 ---
 # <a name="visual-c-change-history-2003---2015"></a>Visual C++ değişiklik geçmişi 2003-2015
 
 Bu makalede, Visual Studio 2015 için Visual Studio 2003 ve bu makalede "yeni davranış" koşulları yukarıda bahsedilen tüm bozucu değişiklikleri açıklar veya Visual Studio 2015'e ve daha sonra "Şimdi" bakın. Koşulları "eski davranışı" ve "önce" Visual Studio 2013 ve önceki sürümleri için bkz.
 
-Visual Studio 2017 hakkında daha fazla bilgi için bkz: [Visual Studio 2017'deki Visual c++ yenilikleri](../what-s-new-for-visual-cpp-in-visual-studio.md) ve [Visual Studio 2017'de Visual c++ uyumluluk geliştirmeleri](../cpp-conformance-improvements-2017.md).
+Visual Studio 2017 hakkında daha fazla bilgi için bkz: [Visual Studio 2017'deki Visual c++ yenilikleri](../overview/what-s-new-for-visual-cpp-in-visual-studio.md) ve [Visual Studio 2017'de Visual c++ uyumluluk geliştirmeleri](../overview/cpp-conformance-improvements-2017.md).
 
 > [!NOTE]
 > Visual Studio 2015 ve Visual Studio 2017 arasında yeni değişiklikler hiçbir ikili dosya vardır.
@@ -383,8 +383,7 @@ Yeni iyileştirmeleri ve hata ayıklama denetimlerini etkinleştirmek için, C++
 
 - **Launch::ANY ve launch::sync ilkeleri**
 
-   Standart olmayan `launch::any` ve `launch::sync` ilkeleri kaldırıldı. Bunun yerine, için `launch::any`, kullanın `launch:async | launch:deferred`. 
-  `launch::sync` için `launch::deferred`'i kullanın. Bkz: [launch numaralandırması](../standard-library/future-enums.md#launch).
+   Standart olmayan `launch::any` ve `launch::sync` ilkeleri kaldırıldı. Bunun yerine, için `launch::any`, kullanın `launch:async | launch:deferred`. `launch::sync` için `launch::deferred`'i kullanın. Bkz: [launch numaralandırması](../standard-library/future-enums.md#launch).
 
 ####  <a name="BK_MFC"></a> MFC ve ATL
 
@@ -3525,4 +3524,4 @@ Visual Studio 2013 C++ derleyicisi, uyuşmazlıkları Visual Studio 2010'da uygu
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Visual Studio'da Visual C++ yenilikleri](../what-s-new-for-visual-cpp-in-visual-studio.md)
+[Visual Studio'da Visual C++ yenilikleri](../overview/what-s-new-for-visual-cpp-in-visual-studio.md)

@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - Platform::Enum Struct
 ms.assetid: cf82f0eb-7a37-4e4e-bbe7-e4aebbc9ec0a
-ms.openlocfilehash: d91974cb1c98561ba61927b84d06ad45cffc1291
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.openlocfilehash: 67870a0fcc685c420c7d24510e90c6f4ef9b72a9
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57745153"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58780281"
 ---
 # <a name="platformenum-class"></a>Platform::Enum sınıfı
 
@@ -30,7 +30,7 @@ Sabit listesi sınıfı ' lerin üzerine yaz ve GetHashCode() ToString() yöntem
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kullanım [genel sabit listesi sınıfı](../windows/enum-class-cpp-component-extensions.md) sabit listeleri oluşturmak için anahtar sözcüğü. Platform::Enum Türü açıkça kullanmayın. Daha fazla bilgi için [numaralandırmalar](../cppcx/enums-c-cx.md).
+Kullanım [genel sabit listesi sınıfı](../extensions/enum-class-cpp-component-extensions.md) sabit listeleri oluşturmak için anahtar sözcüğü. Platform::Enum Türü açıkça kullanmayın. Daha fazla bilgi için [numaralandırmalar](../cppcx/enums-c-cx.md).
 
 ### <a name="requirements"></a>Gereksinimler
 

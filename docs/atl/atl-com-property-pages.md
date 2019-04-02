@@ -9,12 +9,12 @@ helpviewer_keywords:
 - COM objects, ATL
 - ATL property pages
 ms.assetid: 663c7caa-2e5e-4b5c-b8ea-fd434ceb1654
-ms.openlocfilehash: 90dafc411f3262dc458c5158df049740a9d7a683
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: d374569c6c3e9bb63b6b026d2b0f86226d158f36
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57266906"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58768419"
 ---
 # <a name="atl-com-property-pages"></a>ATL COM Özellik Sayfaları
 
@@ -36,7 +36,7 @@ Daha fazla bilgi için [özellik bölümleri ve özellik sayfaları](/windows/de
 
 ## <a name="related-sections"></a>İlgili Bölümler
 
-[ATLPages örnek](../visual-cpp-samples.md)<br/>
+[ATLPages örnek](../overview/visual-cpp-samples.md)<br/>
 Örnek özet kullanarak bir özellik sayfası uygulayan ATLPages örnek `IPropertyPageImpl`.
 
 [ATL](../atl/active-template-library-atl-concepts.md)<br/>

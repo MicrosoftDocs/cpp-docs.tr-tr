@@ -7,12 +7,12 @@ helpviewer_keywords:
 - __hook keyword [C++]
 - event handlers [C++], connecting events to
 ms.assetid: f4cabb10-d293-4c0e-a1d2-4745ef9cc22c
-ms.openlocfilehash: a8a7fb6a88fb22fee5f5f8ec8c0dc215479c62fd
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c4887d85e01344c171fb0fdfe957f2d8a669ff6a
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50489745"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58771675"
 ---
 # <a name="hook"></a>__hook
 
@@ -45,7 +45,7 @@ Olay işleyicisi yöntemine bağlama olay yöntemi için bir işaretçi:
 - Yönetilen olaylar: *SourceClass* olay kaynak sınıfı ve *oluşur* etkinliğidir.
 
 *interface*<br/>
-İçin kancalandı arabirim adı *alıcı*, yalnızca, COM Olay alıcıları için *layout_dependent* parametresinin [event_receiver](../windows/event-receiver.md) özniteliktir **true**.
+İçin kancalandı arabirim adı *alıcı*, yalnızca, COM Olay alıcıları için *layout_dependent* parametresinin [event_receiver](../windows/attributes/event-receiver.md) özniteliktir **true**.
 
 *source*<br/>
 Olay kaynağının bir örneği için bir işaretçi. Kod bağlı olarak `type` belirtilen `event_receiver`, *kaynak* aşağıdakilerden biri olabilir:
@@ -76,7 +76,7 @@ Ana olay alıcısı sınıfına dışında da dahil olmak üzere, herhangi bir i
 
 İç işlevini **__hook** içinde veya bir olay yöntemi ile bir işleyici yöntemi kanca ilişkilendirmek için bir olay alıcısı. Belirtilen olay kaynağı çektiğinde belirtilen işleyici sonra çağrılır. Birden çok tek bir olay işleyicilere bağlayın veya tek bir işleyici çeşitli olaylara bağlama.
 
-İki tür vardır **__hook**. Çoğu durumda, ilk (dört bağımsız değişken) form özellikle, COM Olay alıcıları için kullanabileceğiniz *layout_dependent* parametresinin [event_receiver](../windows/event-receiver.md) özniteliği **false** .
+İki tür vardır **__hook**. Çoğu durumda, ilk (dört bağımsız değişken) form özellikle, COM Olay alıcıları için kullanabileceğiniz *layout_dependent* parametresinin [event_receiver](../windows/attributes/event-receiver.md) özniteliği **false** .
 
 Bu gibi durumlarda yöntemlerinden biri olan bir olayı tetiklemeden önce tüm bir arabirimdeki yöntemlerde kanca gerekmez; Olay işleme yöntemi yalnızca yayılmış gerekir. İkinci (iki bağımsız) biçiminde kullanabileceğiniz **__hook** yalnızca, bir COM olay alıcısının için *layout_dependent* **= true**.
 
@@ -88,7 +88,7 @@ COM olayları hariç **__hook** ve **__unhook** olay alıcısı çağrılabilir.
 
 Kullanmaya alternatif **__hook** += işlecini kullanmaktır.
 
-Yeni sözdiziminde yönetilen olaylar kodlama hakkında daha fazla bilgi için bkz: [olay](../windows/event-cpp-component-extensions.md).
+Yeni sözdiziminde yönetilen olaylar kodlama hakkında daha fazla bilgi için bkz: [olay](../extensions/event-cpp-component-extensions.md).
 
 > [!NOTE]
 > Şablonlu bir alan veya yapı, olay içeremez.
@@ -101,7 +101,7 @@ Bkz: [olay işleme yerel C++'ta](../cpp/event-handling-in-native-cpp.md) ve [com
 
 [Anahtar Sözcükler](../cpp/keywords-cpp.md)<br/>
 [Olay İşleme](../cpp/event-handling.md)<br/>
-[event_source](../windows/event-source.md)<br/>
-[event_receiver](../windows/event-receiver.md)<br/>
+[event_source](../windows/attributes/event-source.md)<br/>
+[event_receiver](../windows/attributes/event-receiver.md)<br/>
 [__unhook](../cpp/unhook.md)<br/>
 [__raise](../cpp/raise.md)<br/>

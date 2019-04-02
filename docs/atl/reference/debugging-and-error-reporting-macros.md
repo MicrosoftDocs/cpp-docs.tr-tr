@@ -11,12 +11,12 @@ f1_keywords:
 helpviewer_keywords:
 - macros, error reporting
 ms.assetid: 4da9b87f-ec5c-4a32-ab93-637780909b9d
-ms.openlocfilehash: 24ab589ae19bd2027e2527ebefbf48dbf24e399d
-ms.sourcegitcommit: 309dc532f13242854b47759cef846de59bb807f1
+ms.openlocfilehash: 0d5010f913521848675987b145a1277c7b00decf
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58565049"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58775055"
 ---
 # <a name="debugging-and-error-reporting-macros"></a>Hata ayıklama ve hata raporlama makroları
 
@@ -220,7 +220,7 @@ ATLTRACE2(
 
 ### <a name="remarks"></a>Açıklamalar
 
-ATLTRACE2 kısa formunu hata ayıklayıcının çıkış penceresinde bir dize yazar. ATLTRACE2 ikinci biçimi de çıkış hata ayıklayıcının çıkış penceresinde Yazar ancak ATL/MFC izleme aracı ayarlarını tabi olduğunu (bkz [ATLTraceTool örnek](../../visual-cpp-samples.md)). Örneğin, ayarlarsanız *düzeyi* 4 ve ATL/MFC izleme aracı düzeyi 0 ', ileti görüntülenmez. *düzey* 0, 1, 2, 3 veya 4 olabilir. Varsayılan, 0, yalnızca en önemli sorunları bildirir.
+ATLTRACE2 kısa formunu hata ayıklayıcının çıkış penceresinde bir dize yazar. ATLTRACE2 ikinci biçimi de çıkış hata ayıklayıcının çıkış penceresinde Yazar ancak ATL/MFC izleme aracı ayarlarını tabi olduğunu (bkz [ATLTraceTool örnek](../../overview/visual-cpp-samples.md)). Örneğin, ayarlarsanız *düzeyi* 4 ve ATL/MFC izleme aracı düzeyi 0 ', ileti görüntülenmez. *düzey* 0, 1, 2, 3 veya 4 olabilir. Varsayılan, 0, yalnızca en önemli sorunları bildirir.
 
 *Kategori* parametre kümesi için izleme bayrakları listeler. Bu bayraklar raporlamak istediğiniz yöntemleri türlerine karşılık gelir. Aşağıdaki tablolarda listelemek için kullanabileceğiniz geçerli izleme bayrakları *kategori* parametresi.
 

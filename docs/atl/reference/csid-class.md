@@ -1,6 +1,6 @@
 ---
 title: CSid sınıfı
-ms.date: 11/04/2016
+ms.date: 03/27/2019
 f1_keywords:
 - CSid
 - ATLSECURITY/ATL::CSid
@@ -21,12 +21,12 @@ f1_keywords:
 helpviewer_keywords:
 - CSid class
 ms.assetid: be58b7ca-5958-49c3-a833-ca341aaaf753
-ms.openlocfilehash: 02b7cbb9e66e1e8297699503fc510247efed1629
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 87f889a079b1c55d82f547230a1917540de276af
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57301902"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58770517"
 ---
 # <a name="csid-class"></a>CSid sınıfı
 
@@ -86,8 +86,8 @@ class CSid
 |-|-|
 |[işleç ==](#operator_eq_eq)|İki güvenlik tanımlayıcısı nesne eşitliği sınar.|
 |[işleç! =](#operator_neq)|Testler iki güvenlik tanımlayıcısı nesneleri için eşitsizlik|
-|[İşleci \<](#operator_lt_)|İki güvenlik tanımlayıcısı nesneleri göreli değerini karşılaştırır.|
-|[operator >](#operator_gt_)|İki güvenlik tanımlayıcısı nesneleri göreli değerini karşılaştırır.|
+|[İşleci \<](#operator_lt)|İki güvenlik tanımlayıcısı nesneleri göreli değerini karşılaştırır.|
+|[operator >](#operator_gt)|İki güvenlik tanımlayıcısı nesneleri göreli değerini karşılaştırır.|
 |[İşleci \<=](#operator_lt__eq)|İki güvenlik tanımlayıcısı nesneleri göreli değerini karşılaştırır.|
 |[operator > =](#operator_gt__eq)|İki güvenlik tanımlayıcısı nesneleri göreli değerini karşılaştırır.|
 
@@ -119,7 +119,7 @@ Hesap adına işaret eden LPCTSTR döndürür.
 
 Bu yöntem için belirtilen bir ad bulmayı dener `SID` (güvenlik tanımlayıcısı). Tüm Ayrıntılar için bkz. [LookupAccountSid](/windows/desktop/api/winbase/nf-winbase-lookupaccountsida).
 
-Hesap adı yok, `SID` bulunabilir, `AccountName` boş bir dize döndürür. Bu durum ağ zaman aşımı bu yöntem adı bulmasını engeller ortaya çıkabilir. Oturum açma gibi karşılık gelen hiçbir hesap adıyla güvenlik tanımlayıcıları için de gerçekleşir `SID` oturum tanımlar.
+Hesap adı yok, `SID` bulunabilir, `AccountName` boş bir dize döndürür. Bu durum ağ zaman aşımı bu yöntem adı bulmasını engeller ortaya çıkabilir. Ayrıca güvenlik tanımlayıcıları karşılık gelen hiçbir hesap adıyla için gibi gerçekleşir bir `SID` bir oturum açma oturumu tanımlar.
 
 ##  <a name="csid"></a>  CSid::CSid
 
@@ -210,7 +210,7 @@ Döndürür `LPCTSTR` etki alanına işaret eden.
 
 Bu yöntem için belirtilen bir ad bulmayı dener `SID` (güvenlik tanımlayıcısı). Tüm Ayrıntılar için bkz. [LookupAccountSid](/windows/desktop/api/winbase/nf-winbase-lookupaccountsida).
 
-Hesap adı yok, `SID` bulunabilir, `Domain` etki alanı boş bir dize olarak döndürür. Bu durum ağ zaman aşımı bu yöntem adı bulmasını engeller ortaya çıkabilir. Oturum açma gibi karşılık gelen hiçbir hesap adıyla güvenlik tanımlayıcıları için de gerçekleşir `SID` oturum tanımlar.
+Hesap adı yok, `SID` bulunabilir, `Domain` etki alanı boş bir dize olarak döndürür. Bu durum ağ zaman aşımı bu yöntem adı bulmasını engeller ortaya çıkabilir. Ayrıca güvenlik tanımlayıcıları karşılık gelen hiçbir hesap adıyla için gibi gerçekleşir bir `SID` bir oturum açma oturumu tanımlar.
 
 ##  <a name="equalprefix"></a>  CSid::EqualPrefix
 
@@ -574,7 +574,7 @@ Durumunu açıklayan bir değer depolar veri üyesinin değerini döndürür `CS
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Güvenliği örneği](../../visual-cpp-samples.md)<br/>
+[Güvenliği örneği](../../overview/visual-cpp-samples.md)<br/>
 [Sınıfına genel bakış](../../atl/atl-class-overview.md)<br/>
 [Güvenlik Genel İşlevleri](../../atl/reference/security-global-functions.md)<br/>
 [İşleçler](../../atl/reference/atl-operators.md)

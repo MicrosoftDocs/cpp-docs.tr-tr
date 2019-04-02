@@ -16,12 +16,12 @@ helpviewer_keywords:
 - COleLinkingDoc [MFC], OnFindEmbeddedItem
 - COleLinkingDoc [MFC], OnGetLinkedItem
 ms.assetid: 9f547f35-2f95-427f-b9c0-85c31940198b
-ms.openlocfilehash: 275119b2343c4d13b6a32f939fc8c3b2b5d5890c
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: c5076ceef0c6626fac0232fadf6818edd78b4ccf
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57300417"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58773560"
 ---
 # <a name="colelinkingdoc-class"></a>COleLinkingDoc sınıfı
 
@@ -57,7 +57,7 @@ class COleLinkingDoc : public COleDocument
 
 ## <a name="remarks"></a>Açıklamalar
 
-Katıştırılmış öğelere bağlamayı destekleyen bir kapsayıcı uygulama "bağlantı kapsayıcı." adı verilir [OCLIENT](../../visual-cpp-samples.md) örnek uygulamanın bir bağlantı kapsayıcı örneği verilmiştir.
+Katıştırılmış öğelere bağlamayı destekleyen bir kapsayıcı uygulama "bağlantı kapsayıcı." adı verilir [OCLIENT](../../overview/visual-cpp-samples.md) örnek uygulamanın bir bağlantı kapsayıcı örneği verilmiştir.
 
 Bir bağlantılı öğenin kaynak başka bir belgede gömülü bir öğe olduğunda, gömülü öğenin düzenlenmesi sırayla içeren belge yüklenmesi gerekir. Bu nedenle, bir bağlantı kapsayıcı bir bağlantılı öğenin kaynağını düzenlemek kullanıcı istediği zaman başka bir kapsayıcı uygulama tarafından başlatılması mümkün olması gerekir. Uygulamanızı de kullanmanız gerekir [COleTemplateServer](../../mfc/reference/coletemplateserver-class.md) başlatıldığında program aracılığıyla belgeleri oluşturabilmesi sınıfı.
 
@@ -75,7 +75,7 @@ Bağlanma, `COleTemplateServer` nesnenin çağırarak belge şablonlarınızı n
 
 [!code-cpp[NVC_MFCOleContainer#25](../../mfc/codesnippet/cpp/colelinkingdoc-class_3.cpp)]
 
-Bir örnek için `CWinApp`-türetilmiş sınıf tanımı ve `InitInstance` işlev, OCLIENT bakın. H ve OCLIENT. MFC örnekteki CPP [OCLIENT](../../visual-cpp-samples.md).
+Bir örnek için `CWinApp`-türetilmiş sınıf tanımı ve `InitInstance` işlev, OCLIENT bakın. H ve OCLIENT. MFC örnekteki CPP [OCLIENT](../../overview/visual-cpp-samples.md).
 
 Kullanma hakkında daha fazla bilgi için `COleLinkingDoc`, makalelere göz atın [kapsayıcıları: Bir kapsayıcı uygulama](../../mfc/containers-implementing-a-container.md) ve [kapsayıcıları: Gelişmiş Özellikler](../../mfc/containers-advanced-features.md).
 
@@ -193,7 +193,7 @@ Adlandırılmış dosya kapatıldığında bu işlevi çağırmanız gerekir, an
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MFC örnek OCLIENT](../../visual-cpp-samples.md)<br/>
+[MFC örnek OCLIENT](../../overview/visual-cpp-samples.md)<br/>
 [COleDocument Sınıfı](../../mfc/reference/coledocument-class.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
 [CDocTemplate Sınıfı](../../mfc/reference/cdoctemplate-class.md)

@@ -9,12 +9,12 @@ helpviewer_keywords:
 - registering custom Clipboard data formats
 - custom Clipboard data formats
 ms.assetid: aea58159-65ed-4385-aeaa-3d9d5281903b
-ms.openlocfilehash: 16e949973ff621b1e4e36475d95763ac47b4a00d
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 182abe71ccc9552c113ebb114b4351178e48b096
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57280224"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58766853"
 ---
 # <a name="clipboard-adding-other-formats"></a>Pano: Diğer biçimleri ekleme
 
@@ -36,7 +36,7 @@ Bu panoya yerleştirilen diğer biçimler eklemek için geçersiz kılmanız ger
 
 1. Çağırarak Standard biçimleri ekleme `COleDataSource::CacheGlobalData` desteklemek istediğiniz her bir standart biçim için.
 
-MFC OLE örnek program bu yöntem kullanılır [HIERSVR](../visual-cpp-samples.md) (inceleyin `OnGetClipboardData` üye işlevinin **CServerItem** sınıfı). Bu örnekte tek fark, herhangi bir standart biçim HIERSVR desteklediği için bu üç adımı uygulanmadı.
+MFC OLE örnek program bu yöntem kullanılır [HIERSVR](../overview/visual-cpp-samples.md) (inceleyin `OnGetClipboardData` üye işlevinin **CServerItem** sınıfı). Bu örnekte tek fark, herhangi bir standart biçim HIERSVR desteklediği için bu üç adımı uygulanmadı.
 
 ### <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz
 

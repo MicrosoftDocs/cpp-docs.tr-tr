@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - __super keyword [C++]
 ms.assetid: f0957c31-9256-405b-b402-cad182404b5f
-ms.openlocfilehash: 778ed2d80aa926c7282073a99898a6aa355a3379
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: a69d177bb83ce404a18d50c8f966be5d81f5fa72
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50602624"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58779657"
 ---
 # <a name="super"></a>__super
 
@@ -33,7 +33,7 @@ Tüm erişilebilir temel sınıf yöntemleri aşırı yükleme çözünürlüğ�
 
 **__super** kullanarak bir kullanılamaz bildirimi. Bkz: [using bildirimi](../cpp/using-declaration.md) daha fazla bilgi için.
 
-Sunulmasıyla birlikte [öznitelikleri](../windows/cpp-attributes-reference.md) kod ekleme, kodunuzu bilginiz, ancak adları çağırmak istediğiniz yöntemi içeren bir veya daha fazla temel sınıfları içerebilir.
+Sunulmasıyla birlikte [öznitelikleri](../windows/attributes/attributes-alphabetical-reference.md) kod ekleme, kodunuzu bilginiz, ancak adları çağırmak istediğiniz yöntemi içeren bir veya daha fazla temel sınıfları içerebilir.
 
 ## <a name="example"></a>Örnek
 

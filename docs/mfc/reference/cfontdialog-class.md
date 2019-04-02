@@ -34,12 +34,12 @@ helpviewer_keywords:
 - CFontDialog [MFC], IsUnderline
 - CFontDialog [MFC], m_cf
 ms.assetid: 6228d500-ed0f-4156-81e5-ab0d57d1dcf4
-ms.openlocfilehash: 3dea0f2ba358582b49de107c234a66a751e8f0b0
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: b711ca65e552d495e466ea2e46a6779cf43ecbe3
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57267192"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58767750"
 ---
 # <a name="cfontdialog-class"></a>CFontDialog sınıfı
 
@@ -394,6 +394,6 @@ Oluşturma sonrasında bir `CFontDialog` nesne kullanabileceğiniz `m_cf` çağ�
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MFC örnek HIERSVR](../../visual-cpp-samples.md)<br/>
+[MFC örnek HIERSVR](../../overview/visual-cpp-samples.md)<br/>
 [CCommonDialog Sınıfı](../../mfc/reference/ccommondialog-class.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)

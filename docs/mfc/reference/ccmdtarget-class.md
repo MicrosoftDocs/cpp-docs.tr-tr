@@ -46,12 +46,12 @@ helpviewer_keywords:
 - CCmdTarget [MFC], OnFinalRelease
 - CCmdTarget [MFC], RestoreWaitCursor
 ms.assetid: 8883b132-2057-4ce0-a5f2-88979f8f2b13
-ms.openlocfilehash: 0416d7387fe4250c7a42dca5a0d6d56d7857aed2
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 9314717fab53b1a89b87d657ec617a4c6bd45b8b
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57259119"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58776199"
 ---
 # <a name="ccmdtarget-class"></a>CCmdTarget sınıfı
 
@@ -169,7 +169,7 @@ Fiili sayısal tanımlayıcısı.
 Nesne içeren belge penceresi tanıtıcısı.
 
 *lpRect*<br/>
-İşaretçi [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) içeren nesneyi tanımlayan piksel koordinatları yapısı dikdörtgende çevreleyen *hwndParent*.
+İşaretçi [RECT](/previous-versions/dd162897\(v=vs.85\)) içeren nesneyi tanımlayan piksel koordinatları yapısı dikdörtgende çevreleyen *hwndParent*.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -524,7 +524,7 @@ void RestoreWaitCursor();
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[ACDUAL örneği](../../visual-cpp-samples.md)<br/>
+[ACDUAL örneği](../../overview/visual-cpp-samples.md)<br/>
 [CObject Sınıfı](../../mfc/reference/cobject-class.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
 [CCmdUI Sınıfı](../../mfc/reference/ccmdui-class.md)<br/>

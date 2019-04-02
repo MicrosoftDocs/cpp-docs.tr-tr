@@ -94,12 +94,12 @@ helpviewer_keywords:
 - CEdit [MFC], ShowBalloonTip
 - CEdit [MFC], Undo
 ms.assetid: b1533c30-7f10-4663-88d3-8b7f2c9f7024
-ms.openlocfilehash: e1ca69382591dc7d3afe9b5871dfdebd64aedce4
-ms.sourcegitcommit: 0064d37467f958dd6a5111f20d7660eaccd53ee9
+ms.openlocfilehash: 45c03d142c34186660aa2715081ffb0f45e85ccc
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58417007"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58773755"
 ---
 # <a name="cedit-class"></a>CEdit sınıfı
 
@@ -1449,8 +1449,8 @@ Daha fazla bilgi için [EM_UNDO](/windows/desktop/Controls/em-undo) Windows SDK.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MFC örnek CALCDRIV](../../visual-cpp-samples.md)<br/>
-[MFC örnek CMNCTRL2](../../visual-cpp-samples.md)<br/>
+[MFC örnek CALCDRIV](../../overview/visual-cpp-samples.md)<br/>
+[MFC örnek CMNCTRL2](../../overview/visual-cpp-samples.md)<br/>
 [CWnd Sınıfı](../../mfc/reference/cwnd-class.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
 [CWnd Sınıfı](cwnd-class.md)<br/>

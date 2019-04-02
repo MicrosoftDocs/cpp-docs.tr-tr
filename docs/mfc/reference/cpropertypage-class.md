@@ -40,12 +40,12 @@ helpviewer_keywords:
 - CPropertyPage [MFC], SetModified
 - CPropertyPage [MFC], m_psp
 ms.assetid: d9000a21-aa81-4530-85d9-f43432afb4dc
-ms.openlocfilehash: ef46001e230813afb0abb857b7aee39bf5fba05d
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 9d4100037c5a6cd2eeef1a50fb2d5a46b2cb6505
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57260757"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58772729"
 ---
 # <a name="cpropertypage-class"></a>CPropertyPage sınıfı
 
@@ -574,10 +574,10 @@ Framework tutar izleme hangi sayfaların "kirli" diğer bir deyişle, kendisi i�
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MFC örnek CMNCTRL1](../../visual-cpp-samples.md)<br/>
-[MFC örnek CMNCTRL2](../../visual-cpp-samples.md)<br/>
-[MFC örnek PROPDLG](../../visual-cpp-samples.md)<br/>
-[MFC örnek SNAPVW](../../visual-cpp-samples.md)<br/>
+[MFC örnek CMNCTRL1](../../overview/visual-cpp-samples.md)<br/>
+[MFC örnek CMNCTRL2](../../overview/visual-cpp-samples.md)<br/>
+[MFC örnek PROPDLG](../../overview/visual-cpp-samples.md)<br/>
+[MFC örnek SNAPVW](../../overview/visual-cpp-samples.md)<br/>
 [CDialog Sınıfı](../../mfc/reference/cdialog-class.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
 [CPropertySheet Sınıfı](../../mfc/reference/cpropertysheet-class.md)<br/>

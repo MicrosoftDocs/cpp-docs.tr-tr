@@ -22,12 +22,12 @@ helpviewer_keywords:
 - CTabView [MFC], IsScrollBar
 - CTabView [MFC], OnActivateView
 ms.assetid: 8e6ecd9d-d28d-432b-8ec8-0446f0204d52
-ms.openlocfilehash: 5ac62d04c38dbddda90d2f33a9c14c9c131fcd9c
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 56640edbd0d2e74a1cc00dad5441350ad3d35725
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57326601"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58772104"
 ---
 # <a name="ctabview-class"></a>CTabView sınıfı
 
@@ -65,7 +65,7 @@ Bu sınıf, bir belge/görünüm uygulamasına sekmeler halinde görüntüleniyo
 
 Örneğin, farklı şekilde temsil edilebilen bir belge olabilir: bir elektronik tablo, bir grafik, bir düzenlenebilir formda ve benzeri. Verileri gereken şekilde çizim tek bir görünüm oluşturun, bunları eklemek, `CTabView`-türetilmiş bir nesneye ve herhangi ek kodlama olmadan sekmeli sağlayabilirsiniz.
 
-[TabbedView örneği: MFC sekmeli görünüm uygulaması](../../visual-cpp-samples.md) kullanımını `CTabView`.
+[TabbedView örneği: MFC sekmeli görünüm uygulaması](../../overview/visual-cpp-samples.md) kullanımını `CTabView`.
 
 ## <a name="example"></a>Örnek
 

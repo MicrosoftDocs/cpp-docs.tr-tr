@@ -232,12 +232,12 @@ helpviewer_keywords:
 - CMFCRibbonBaseElement [MFC], OnProcessKey
 - CMFCRibbonBaseElement [MFC], OnSetFocus
 ms.assetid: 419ea91b-5062-44cc-b0a3-f87d29566f62
-ms.openlocfilehash: 4fe7c84981d116d5915013cb466c3e91119f20e1
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 6daa5b6249c7ff18a8bc01c2309ffb94d3fb88ce
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57289981"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58773079"
 ---
 # <a name="cmfcribbonbaseelement-class"></a>CMFCRibbonBaseElement sınıfı
 
@@ -394,7 +394,7 @@ Boyutuna bağlı olarak, Şerit öğesi ya da küçük veya büyük bir resim g�
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, çeşitli yöntemlerin nasıl kullanılacağını gösterir `CMFCRibbonBaseElement` sınıfı. Bu örnek nasıl alınacağı gösterilmiştir bir `CMFCRibbonBaseElement` nesnesinden bir `CMFCRibbonStatusBar` sınıfı, Şerit öğesi için açıklama metnini ayarlamak, bir tuş ipucunu ayarlayın ve Şerit öğesi için araç ipucu metni ayarlayın. Bu kod parçacığı parçasıdır [çizmek istemci örneği](../../visual-cpp-samples.md).
+Aşağıdaki örnek, çeşitli yöntemlerin nasıl kullanılacağını gösterir `CMFCRibbonBaseElement` sınıfı. Bu örnek nasıl alınacağı gösterilmiştir bir `CMFCRibbonBaseElement` nesnesinden bir `CMFCRibbonStatusBar` sınıfı, Şerit öğesi için açıklama metnini ayarlamak, bir tuş ipucunu ayarlayın ve Şerit öğesi için araç ipucu metni ayarlayın. Bu kod parçacığı parçasıdır [çizmek istemci örneği](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_DrawClient#8](../../mfc/reference/codesnippet/cpp/cmfcribbonbaseelement-class_1.cpp)]
 [!code-cpp[NVC_MFC_DrawClient#9](../../mfc/reference/codesnippet/cpp/cmfcribbonbaseelement-class_2.cpp)]

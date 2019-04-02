@@ -6,18 +6,18 @@ f1_keywords:
 helpviewer_keywords:
 - C3655
 ms.assetid: 724919ab-2915-4b61-8794-44648e162d62
-ms.openlocfilehash: 268994b2e694c6260a3fc9e9edf102ec0127ee31
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 7a13d4d7c08f6510e5ab71c07c31baa9359b47b7
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50448612"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58781854"
 ---
 # <a name="compiler-error-c3655"></a>Derleyici Hatası C3655
 
 'function': zaten açıkça geçersiz kılınmış işlev
 
-Bir işlev yalnızca açıkça bir kez geçersiz kılınabilir. Daha fazla bilgi için [açık geçersiz kılmalar](../../windows/explicit-overrides-cpp-component-extensions.md).
+Bir işlev yalnızca açıkça bir kez geçersiz kılınabilir. Daha fazla bilgi için [açık geçersiz kılmalar](../../extensions/explicit-overrides-cpp-component-extensions.md).
 
 Aşağıdaki örnek, C3655 oluşturur:
 

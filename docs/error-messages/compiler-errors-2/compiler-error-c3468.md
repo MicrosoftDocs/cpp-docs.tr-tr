@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3468
 ms.assetid: cfd320db-2f6e-4e0d-ba02-e79ece87e1e0
-ms.openlocfilehash: 185bd35bb732f592c75912fe69d4491252fe9d0b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e3870fa21e2b4a932937edd49091980406a5ff0d
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50476121"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58777238"
 ---
 # <a name="compiler-error-c3468"></a>Derleyici Hatası C3468
 
@@ -21,7 +21,7 @@ ms.locfileid: "50476121"
 
 Yalnızca bir bütünleştirilmiş kodundaki türler iletilebilir.
 
-Daha fazla bilgi için [tür iletme (C + +/ CLI)](../../windows/type-forwarding-cpp-cli.md).
+Daha fazla bilgi için [tür iletme (C + +/ CLI)](../../extensions/type-forwarding-cpp-cli.md).
 
 ## <a name="example"></a>Örnek
 

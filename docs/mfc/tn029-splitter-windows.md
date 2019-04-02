@@ -7,12 +7,12 @@ helpviewer_keywords:
 - TN029
 - splitter windows [MFC], about splitter windows
 ms.assetid: 2c57ce99-2a3c-4eff-9cea-baccb13af075
-ms.openlocfilehash: 0c27545c6f425eda952e87c80ed1d37de9e1093a
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 6c2f619d9cd619ca598c66ca657faa1b9dccaaa2
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57294999"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58781737"
 ---
 # <a name="tn029-splitter-windows"></a>TN029: Bölümlendirici Windows
 
@@ -46,7 +46,7 @@ Dinamik ayırıcılar için belirttiğiniz bölmeleri sayısı 2 sütun 2 satır
 
 ## <a name="splitter-examples"></a>Bölümlendirici örnekleri
 
-MFC örnek programların birçoğu Bölümlendirici pencereler doğrudan veya dolaylı olarak kullanın. MFC genel örnek [VIEWEX](../visual-cpp-samples.md) statik ayırıcılar, içinde bir ayırıcı bir ayırıcı alma dahil olmak üzere çeşitli kullanımlarını gösterir.
+MFC örnek programların birçoğu Bölümlendirici pencereler doğrudan veya dolaylı olarak kullanın. MFC genel örnek [VIEWEX](../overview/visual-cpp-samples.md) statik ayırıcılar, içinde bir ayırıcı bir ayırıcı alma dahil olmak üzere çeşitli kullanımlarını gösterir.
 
 ClassWizard, yeni bir ayırıcı penceresi içeren birden çok belge arabirimi (MDI) alt çerçeve penceresi sınıfı oluşturmak için de kullanabilirsiniz. Bölümlendirici pencereler hakkında daha fazla bilgi için bkz. [birden çok belge türü, görünümler ve çerçeve Windows](../mfc/multiple-document-types-views-and-frame-windows.md).
 

@@ -74,12 +74,12 @@ helpviewer_keywords:
 - CMFCColorBar [MFC], SetPropList
 - CMFCColorBar [MFC], ShowCommandMessageString
 ms.assetid: 4756ee40-25a5-4cee-af7f-acab7993d1c7
-ms.openlocfilehash: f1f7610fc315da65145798058fdcf9752e7873d0
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 4eee24eb93be446f6b4f2631b70736c13a02f45c
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57283260"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58771413"
 ---
 # <a name="cmfccolorbar-class"></a>CMFCColorBar sınıfı
 
@@ -202,7 +202,7 @@ Kullanıcı renk çubuğu denetim düğmesine tıkladığında framework kullana
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, bir renk çubuğu çeşitli yöntemlerle kullanarak yapılandırma işlemi gösterilmektedir `CMFCColorBar` sınıfı. Yöntemleri yatay ve dikey kenar boşluklarının ayarlanmadığı, diğer düğmeyi etkinleştir, bir renk çubuğu denetimi penceresi oluştur ve şu anda seçili rengini ayarlar. Bu örneğin parçasıdır [yeni denetimler örnek](../../visual-cpp-samples.md).
+Aşağıdaki örnek, bir renk çubuğu çeşitli yöntemlerle kullanarak yapılandırma işlemi gösterilmektedir `CMFCColorBar` sınıfı. Yöntemleri yatay ve dikey kenar boşluklarının ayarlanmadığı, diğer düğmeyi etkinleştir, bir renk çubuğu denetimi penceresi oluştur ve şu anda seçili rengini ayarlar. Bu örneğin parçasıdır [yeni denetimler örnek](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_NewControls#1](../../mfc/reference/codesnippet/cpp/cmfccolorbar-class_1.h)]
 [!code-cpp[NVC_MFC_NewControls#2](../../mfc/reference/codesnippet/cpp/cmfccolorbar-class_2.cpp)]

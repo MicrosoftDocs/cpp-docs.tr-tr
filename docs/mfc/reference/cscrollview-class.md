@@ -28,12 +28,12 @@ helpviewer_keywords:
 - CScrollView [MFC], SetScaleToFitSize
 - CScrollView [MFC], SetScrollSizes
 ms.assetid: 4ba16dac-1acb-4be0-bb55-5fb695b6948d
-ms.openlocfilehash: ea95de2bceab290f94bb7c0e7bbc94a90048ee13
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: d60082092bd42fbe220eee08953ad5fda0ff0a85
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57259262"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58774159"
 ---
 # <a name="cscrollview-class"></a>CScrollView sınıfı
 
@@ -82,7 +82,7 @@ Klavye yanıt iletilerine otomatik olarak kaydırmak için WM_KEYDOWN iletisi ek
 
 Fare tekerleği kendiniz ileti eşlemeli geçersiz kılarak kaydırma işleyebilir [OnMouseWheel](../../mfc/reference/cwnd-class.md#onmousewheel) ve [OnRegisteredMouseWheel](../../mfc/reference/cwnd-class.md#onregisteredmousewheel) üye işlevleri. İçin oldukları gibi `CScrollView`, bu üye işlevleri desteklemek için önerilen davranışı [WM_MOUSEWHEEL](/windows/desktop/inputdev/wm-mousewheel), tekerlek döndürme ileti.
 
-Otomatik kaydırma avantajından yararlanmak için görünümü sınıfından türetilen `CScrollView` yerine gelen `CView`. Görünüm ilk oluşturulduğunda, belge, çağrı boyutuna göre kaydırılabilir görünümü boyutunu hesaplamak isterseniz `SetScrollSizes` kılacağınızı ya da üye işlev [CView::OnInitialUpdate](../../mfc/reference/cview-class.md#oninitialupdate) veya [ CView::OnUpdate](../../mfc/reference/cview-class.md#onupdate). (Belgenin boyutunu sorgulamak için kendi kodunuzu yazmanız gerekir. Bir örnek için bkz. [Scribble örneğinin](../../visual-cpp-samples.md).)
+Otomatik kaydırma avantajından yararlanmak için görünümü sınıfından türetilen `CScrollView` yerine gelen `CView`. Görünüm ilk oluşturulduğunda, belge, çağrı boyutuna göre kaydırılabilir görünümü boyutunu hesaplamak isterseniz `SetScrollSizes` kılacağınızı ya da üye işlev [CView::OnInitialUpdate](../../mfc/reference/cview-class.md#oninitialupdate) veya [ CView::OnUpdate](../../mfc/reference/cview-class.md#onupdate). (Belgenin boyutunu sorgulamak için kendi kodunuzu yazmanız gerekir. Bir örnek için bkz. [Scribble örneğinin](../../overview/visual-cpp-samples.md).)
 
 Çağrı `SetScrollSizes` üye işlevi, görünümün eşleme modu, kaydırma görünümü ve yatay ve dikey kaydırma tutarlarının toplam boyutunu ayarlar. Tüm boyutlarda mantıksal birimler cinsinden. Bu görünüm mantıksal boyutu genellikle belge içinde depolanan verilerden hesaplanır, ancak bazı durumlarda bir sabit boyut belirtmek isteyebilirsiniz. Her iki yaklaşım örnekleri için bkz: [CScrollView::SetScrollSizes](#setscrollsizes).
 
@@ -376,7 +376,7 @@ MM_ISOTROPIC veya MM_ANISOTROPIC dışında Windows eşleme modun herhangi birin
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MFC örnek DIBLOOK](../../visual-cpp-samples.md)<br/>
+[MFC örnek DIBLOOK](../../overview/visual-cpp-samples.md)<br/>
 [CView Sınıfı](../../mfc/reference/cview-class.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
 [CView Sınıfı](../../mfc/reference/cview-class.md)<br/>

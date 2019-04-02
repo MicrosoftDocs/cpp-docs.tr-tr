@@ -20,12 +20,12 @@ helpviewer_keywords:
 - frame window classes [MFC], toolbar embedded in
 - LoadToolBar method [MFC]
 ms.assetid: cc00aaff-8a56-433b-b0c0-b857d76b4ffd
-ms.openlocfilehash: 39e790e5152dd07ab40901140ecdd8f8791a446e
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 9c784db2e1a482b313147e6837d6bbbd16d0ecb4
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57258404"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58775497"
 ---
 # <a name="toolbar-fundamentals"></a>Araç Çubuğu Temelleri
 
@@ -62,7 +62,7 @@ Araç çubuğu oluşturma oluşuyor `CMainFrame::OnCreate`. MFC çağrıları [O
 1. Yerleştirme, kayan ve araç ipuçlarını etkinleştirme işlevleri çağırır. Bu çağrılar hakkında daha fazla ayrıntı için bkz [Docking ve kayan araç çubukları](../mfc/docking-and-floating-toolbars.md).
 
 > [!NOTE]
->  MFC genel örnek [DOCKTOOL](../visual-cpp-samples.md) eski ve yeni MFC araç çubukları çizimleri içerir. Kullandığınız araç çubuklarını `COldToolbar` çağrılar için 2. adımda gerektirir `LoadBitmap` (yerine `LoadToolBar`) ve `SetButtons`. Çağrılar yeni araç çubukları gerektiren `LoadToolBar`.
+>  MFC genel örnek [DOCKTOOL](../overview/visual-cpp-samples.md) eski ve yeni MFC araç çubukları çizimleri içerir. Kullandığınız araç çubuklarını `COldToolbar` çağrılar için 2. adımda gerektirir `LoadBitmap` (yerine `LoadToolBar`) ve `SetButtons`. Çağrılar yeni araç çubukları gerektiren `LoadToolBar`.
 
 Yerleştirme, kayan ve araç ipuçları çağrıları isteğe bağlıdır. Bu satırlardan kaldırabilirsiniz `OnCreate` tercih ederseniz. Sonuç, sabit, float veya redock yapılamıyor ve araç ipuçları görüntülenemiyor kalan bir araç çubuğudur.
 

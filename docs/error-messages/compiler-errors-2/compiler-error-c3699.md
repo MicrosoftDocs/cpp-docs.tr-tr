@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3699
 ms.assetid: 47c29afc-ab8b-4238-adfe-788dd6e00b3b
-ms.openlocfilehash: e413e4a08ce22ef109179ff0f98baf32ebba41c2
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 93058d34ca9a17ab175a55a7bc7b953d369e65c5
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50525859"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58776745"
 ---
 # <a name="compiler-error-c3699"></a>Derleyici Hatası C3699
 
@@ -36,7 +36,7 @@ int main() {
 
 ## <a name="example"></a>Örnek
 
-Önemsiz özellik başvuru türüne sahip olamaz. Bkz: [özelliği](../../windows/property-cpp-component-extensions.md) daha fazla bilgi için. Aşağıdaki örnek, C3699 oluşturur.
+Önemsiz özellik başvuru türüne sahip olamaz. Bkz: [özelliği](../../extensions/property-cpp-component-extensions.md) daha fazla bilgi için. Aşağıdaki örnek, C3699 oluşturur.
 
 ```
 // C3699_b.cpp

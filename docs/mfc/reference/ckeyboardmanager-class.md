@@ -30,12 +30,12 @@ helpviewer_keywords:
 - CKeyboardManager [MFC], TranslateCharToUpper
 - CKeyboardManager [MFC], UpdateAccelTable
 ms.assetid: 4809ece6-89df-4479-8b53-9bf476ee107b
-ms.openlocfilehash: c953958b3e0112997423376d42b62953b936049a
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 3360a28d50f64546837cc5ef35dcfc761b4fb0f5
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57303613"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58779813"
 ---
 # <a name="ckeyboardmanager-class"></a>CKeyboardManager sınıfı
 
@@ -81,7 +81,7 @@ Oluşturacağınız değil bir `CKeyboardManager` el ile nesne. Uygulamanızın 
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, bir işaretçi almak gösterilmiştir bir `CKeyboardManager` nesnesinden bir `CWinAppEx` sınıfı ve menü komutları ile ilişkili tüm kısayol tuşlarının gösterme. Bu kod parçacığı parçasıdır [özel sayfaları örnek](../../visual-cpp-samples.md).
+Aşağıdaki örnek, bir işaretçi almak gösterilmiştir bir `CKeyboardManager` nesnesinden bir `CWinAppEx` sınıfı ve menü komutları ile ilişkili tüm kısayol tuşlarının gösterme. Bu kod parçacığı parçasıdır [özel sayfaları örnek](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_CustomPages#5](../../mfc/reference/codesnippet/cpp/ckeyboardmanager-class_1.cpp)]
 

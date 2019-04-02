@@ -6,18 +6,18 @@ f1_keywords:
 helpviewer_keywords:
 - C3880
 ms.assetid: b0e05d1e-32d0-4034-9246-f37d23573ea9
-ms.openlocfilehash: 60b96a9e704215ec1cbbab63eb77ca5d43ccb627
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 0b169309db88291f8a83b6d1192787b6396e84a5
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50626948"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58770516"
 ---
 # <a name="compiler-error-c3880"></a>Derleyici Hatası C3880
 
 'var': sabit değerli veri üyesi olamaz
 
-Türü bir [değişmez değer](../../windows/literal-cpp-component-extensions.md) özniteliği olmalıdır, ya da derleme zamanı dönüştürülebilir için aşağıdaki türlerden biri:
+Türü bir [değişmez değer](../../extensions/literal-cpp-component-extensions.md) özniteliği olmalıdır, ya da derleme zamanı dönüştürülebilir için aşağıdaki türlerden biri:
 
 - tamsayı türü
 

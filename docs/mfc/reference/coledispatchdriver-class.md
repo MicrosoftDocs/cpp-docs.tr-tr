@@ -26,12 +26,12 @@ helpviewer_keywords:
 - COleDispatchDriver [MFC], m_bAutoRelease
 - COleDispatchDriver [MFC], m_lpDispatch
 ms.assetid: 3ed98daf-cdc7-4374-8a0c-cf695a8d3657
-ms.openlocfilehash: 22ba71bc0abaefd20cb68d82d4fefe06ab7fa929
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: c0c1fd14105bae3b5413f92b547339ccabf3bb91
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57274589"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58774782"
 ---
 # <a name="coledispatchdriver-class"></a>COleDispatchDriver sınıfı
 
@@ -408,7 +408,7 @@ Tek bir parametre tarafından belirtilen türde *vtProp*.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MFC örnek CALCDRIV](../../visual-cpp-samples.md)<br/>
-[ACDUAL örneği](../../visual-cpp-samples.md)<br/>
+[MFC örnek CALCDRIV](../../overview/visual-cpp-samples.md)<br/>
+[ACDUAL örneği](../../overview/visual-cpp-samples.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
 [CCmdTarget Sınıfı](../../mfc/reference/ccmdtarget-class.md)

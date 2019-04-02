@@ -24,12 +24,12 @@ helpviewer_keywords:
 - CMFCToolBarsCustomizeDialog [MFC], OnInitDialog
 - CMFCToolBarsCustomizeDialog [MFC], PostNcDestroy
 ms.assetid: 78e2cddd-4f13-4097-afc3-1ad646a113f1
-ms.openlocfilehash: e4aaede3eb2d5c922c196e2bdfbbe533c4e65e47
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: e1dd6fff9fa4f03dbf93510da26c78c73e86c6ab
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57295038"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58780970"
 ---
 # <a name="cmfctoolbarscustomizedialog-class"></a>CMFCToolBarsCustomizeDialog sınıfı
 
@@ -96,7 +96,7 @@ Sırada **Özelleştir** iletişim kutusu etkin olduğu, uygulama, kullanıcıya
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, çeşitli yöntemlerin nasıl kullanılacağını gösterir `CMFCToolBarsCustomizeDialog` sınıfı. Örnek üzerinde bir araç çubuğu düğmesi liste kutusunda komutların nasıl değiştirileceğini gösterir **komutları** sayfasında, kullanarak yeni araç çubukları oluşturma etkinleştirme **Özelleştir** iletişim kutusu ve görüntü  **Özelleştirme** iletişim kutusu. Bu kod parçacığı parçasıdır [IE gösterim örneği](../../visual-cpp-samples.md).
+Aşağıdaki örnek, çeşitli yöntemlerin nasıl kullanılacağını gösterir `CMFCToolBarsCustomizeDialog` sınıfı. Örnek üzerinde bir araç çubuğu düğmesi liste kutusunda komutların nasıl değiştirileceğini gösterir **komutları** sayfasında, kullanarak yeni araç çubukları oluşturma etkinleştirme **Özelleştir** iletişim kutusu ve görüntü  **Özelleştirme** iletişim kutusu. Bu kod parçacığı parçasıdır [IE gösterim örneği](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_IEDemo#4](../../mfc/reference/codesnippet/cpp/cmfctoolbarscustomizedialog-class_1.cpp)]
 
@@ -158,7 +158,7 @@ Varsa `iInsertBefore` -1, düğmeyi kategorileri listesine eklenir; Aksi takdird
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki örnek nasıl kullanılacağını gösterir `AddButton` yöntemi `CMFCToolBarsCustomizeDialog` sınıfı. Bu kod parçacığı parçasıdır [kaydırıcı örnek](../../visual-cpp-samples.md).
+Aşağıdaki örnek nasıl kullanılacağını gösterir `AddButton` yöntemi `CMFCToolBarsCustomizeDialog` sınıfı. Bu kod parçacığı parçasıdır [kaydırıcı örnek](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_Slider#1](../../mfc/reference/codesnippet/cpp/cmfctoolbarscustomizedialog-class_2.cpp)]
 
@@ -246,7 +246,7 @@ Yöntem başarılı olursa TRUE; Aksi durumda FALSE.
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki örnek nasıl kullanılacağını gösterir `AddToolBar` yönteminde `CMFCToolBarsCustomizeDialog` sınıfı. Bu kod parçacığı parçasıdır [Word paneli örnek](../../visual-cpp-samples.md).
+Aşağıdaki örnek nasıl kullanılacağını gösterir `AddToolBar` yönteminde `CMFCToolBarsCustomizeDialog` sınıfı. Bu kod parçacığı parçasıdır [Word paneli örnek](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_WordPad#11](../../mfc/reference/codesnippet/cpp/cmfctoolbarscustomizedialog-class_3.cpp)]
 
@@ -327,7 +327,7 @@ CMFCToolBarsCustomizeDialog(
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki örnek, bir nesne oluşturmak gösterilmiştir `CMFCToolBarsCustomizeDialog` sınıfı. Bu kod parçacığı parçasıdır [özel sayfaları örnek](../../visual-cpp-samples.md).
+Aşağıdaki örnek, bir nesne oluşturmak gösterilmiştir `CMFCToolBarsCustomizeDialog` sınıfı. Bu kod parçacığı parçasıdır [özel sayfaları örnek](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_CustomPages#3](../../mfc/reference/codesnippet/cpp/cmfctoolbarscustomizedialog-class_4.cpp)]
 
@@ -725,7 +725,7 @@ Zaman [CMFCToolBarsCustomizeDialog::AddMenu](#addmenu), [CMFCToolBarsCustomizeDi
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki örnek nasıl kullanılacağını gösterir `ReplaceButton` yönteminde `CMFCToolBarsCustomizeDialog` sınıfı. Bu kod parçacığı parçasıdır [Visual Studio gösterim örneği](../../visual-cpp-samples.md).
+Aşağıdaki örnek nasıl kullanılacağını gösterir `ReplaceButton` yönteminde `CMFCToolBarsCustomizeDialog` sınıfı. Bu kod parçacığı parçasıdır [Visual Studio gösterim örneği](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_VisualStudioDemo#34](../../mfc/codesnippet/cpp/cmfctoolbarscustomizedialog-class_5.cpp)]
 

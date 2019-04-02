@@ -14,12 +14,12 @@ helpviewer_keywords:
 - CMFCToolBarFontSizeComboBox [MFC], RebuildFontSizes
 - CMFCToolBarFontSizeComboBox [MFC], SetTwipSize
 ms.assetid: 72e0c44c-6a0e-4194-a71f-ab64e3afb9b5
-ms.openlocfilehash: a1dd85ed7bf80f5307bf0bd07ef5ef74875c8562
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 43832f6c9b02c43fbe4a05cbea3add8783150113
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57258950"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58767671"
 ---
 # <a name="cmfctoolbarfontsizecombobox-class"></a>CMFCToolBarFontSizeComboBox sınıfı
 
@@ -57,7 +57,7 @@ Kullanıcı, yeni bir yazı tipi seçtiğinde bir `CMFCToolBarFontComboBox` nesn
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, çeşitli yöntemlerin nasıl kullanılacağını gösterir `CMFCToolBarFontSizeComboBox` yapılandırmak için sınıf bir `CMFCToolBarFontSizeComboBox` nesne. Örneğin, metin kutusundan twip cinsinden yazı tipi boyutunu almak, tüm geçerli verilen yazı tipi boyutlarını ile yazı tipi boyutu birleşik giriş kutusu doldurun ve yazı tipi boyutunu twip cinsinden belirtin gösterilmektedir. Bu kod parçacığı parçasıdır [Word paneli örnek](../../visual-cpp-samples.md).
+Aşağıdaki örnek, çeşitli yöntemlerin nasıl kullanılacağını gösterir `CMFCToolBarFontSizeComboBox` yapılandırmak için sınıf bir `CMFCToolBarFontSizeComboBox` nesne. Örneğin, metin kutusundan twip cinsinden yazı tipi boyutunu almak, tüm geçerli verilen yazı tipi boyutlarını ile yazı tipi boyutu birleşik giriş kutusu doldurun ve yazı tipi boyutunu twip cinsinden belirtin gösterilmektedir. Bu kod parçacığı parçasıdır [Word paneli örnek](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_WordPad#8](../../mfc/reference/codesnippet/cpp/cmfctoolbarfontsizecombobox-class_1.cpp)]
 

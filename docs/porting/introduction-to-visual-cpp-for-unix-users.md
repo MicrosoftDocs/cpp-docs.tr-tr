@@ -4,12 +4,12 @@ ms.date: 09/01/2017
 helpviewer_keywords:
 - UNIX [C++]
 ms.assetid: 36108b31-e7fa-49a8-a1f7-7077fcbec873
-ms.openlocfilehash: 0cffdc2be00b4af9badbbbc80bcfef48b3f76e19
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.openlocfilehash: 2b0736bca9cc0b67f9ea8ac83dc18fadaeefdb3c
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57818381"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58780827"
 ---
 # <a name="introduction-to-visual-c-for-unix-users"></a>UNIX Kullanıcıları için Visual C++'a Giriş
 
@@ -51,7 +51,7 @@ Bir proje oluşturduğunuzda, projeyi adlandırın gerekir. Varsayılan olarak d
 
 Microsoft Visual C++ derleyicisi, Windows işletim sistemleri için programlamayı desteklemek için programlama dili standart C++ birkaç uzantı uygular. Bu uzantılar, çağırma kuralları işlev depolama sınıfı öznitelikleri belirtmek için kullanılır ve tabanlı adresleme, diğerlerinin yanında. Desteklenen tüm C++ uzantıları tam bir listesi için bkz. [Microsoft'a özel değiştiriciler](../cpp/microsoft-specific-modifiers.md).
 
-Kullanarak tüm Microsoft özel C++ uzantılarını devre dışı bırakabilirsiniz `/Za` derleyici seçeneği. Birden çok platformda çalışacak kod yazmak istiyorsanız, bu seçenek önerilir. Daha fazla bilgi için `/Za` derleyici seçeneği bkz [/Za, /Ze (dil uzantılarını devre dışı bırak)](../build/reference/za-ze-disable-language-extensions.md). C++ Derleyici uyumluluğu hakkında daha fazla bilgi için bkz. [Visual C++ dil uyumluluğu](../visual-cpp-language-conformance.md) ve [standart dışı davranış](../cpp/nonstandard-behavior.md).
+Kullanarak tüm Microsoft özel C++ uzantılarını devre dışı bırakabilirsiniz `/Za` derleyici seçeneği. Birden çok platformda çalışacak kod yazmak istiyorsanız, bu seçenek önerilir. Daha fazla bilgi için `/Za` derleyici seçeneği bkz [/Za, /Ze (dil uzantılarını devre dışı bırak)](../build/reference/za-ze-disable-language-extensions.md). C++ Derleyici uyumluluğu hakkında daha fazla bilgi için bkz. [Visual C++ dil uyumluluğu](../overview/visual-cpp-language-conformance.md) ve [standart dışı davranış](../cpp/nonstandard-behavior.md).
 
 ## <a name="precompiled-headers"></a>Önceden derlenmiş üst bilgiler
 
@@ -65,4 +65,4 @@ Daha fazla bilgi için [UNIX'ten Win32'ye taşıma](../porting/porting-from-unix
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Projeler ve yapı sistemi](../build/projects-and-build-systems-cpp.md)
+[Projeler ve derleme sistemleri](../build/projects-and-build-systems-cpp.md)

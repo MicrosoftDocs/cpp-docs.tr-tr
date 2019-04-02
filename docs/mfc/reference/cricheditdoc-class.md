@@ -14,12 +14,12 @@ helpviewer_keywords:
 - CRichEditDoc [MFC], GetView
 - CRichEditDoc [MFC], m_bRTF
 ms.assetid: c936ec18-d516-49d4-b7fb-c9aa0229eddc
-ms.openlocfilehash: 4c2021128dcc06a76cf3b68c0ec49b72a5860046
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 4cc3af7649d30a153b67cd8269e595c11018833f
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57295142"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58769801"
 ---
 # <a name="cricheditdoc-class"></a>CRichEditDoc Class
 
@@ -55,7 +55,7 @@ class CRichEditDoc : public COleServerDoc
 
 Bu Windows ortak denetimi (ve bu nedenle [CRichEditCtrl](../../mfc/reference/cricheditctrl-class.md) ve ilgili sınıflar) ve üzeri yalnızca Windows 95/98 ve Windows NT sürümler 3.51 altında çalışan programlar için kullanılabilir.
 
-Bir MFC uygulamasında bir zengin düzenleme belge kullanma örneği için bkz: [WORDPAD](../../visual-cpp-samples.md) örnek uygulama.
+Bir MFC uygulamasında bir zengin düzenleme belge kullanma örneği için bkz: [WORDPAD](../../overview/visual-cpp-samples.md) örnek uygulama.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -146,7 +146,7 @@ BOOL m_bRTF;
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MFC örnek WORDPAD](../../visual-cpp-samples.md)<br/>
+[MFC örnek WORDPAD](../../overview/visual-cpp-samples.md)<br/>
 [COleServerDoc Sınıfı](../../mfc/reference/coleserverdoc-class.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
 [CRichEditView Sınıfı](../../mfc/reference/cricheditview-class.md)<br/>

@@ -6,18 +6,18 @@ f1_keywords:
 helpviewer_keywords:
 - C3622
 ms.assetid: 02836f78-0cf2-4947-b87e-710187d81014
-ms.openlocfilehash: 69565a1a2d159623bca927a94543834d18c13299
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ed307f46db1261d79d5b0ec6b36852cac2e6d13e
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50518098"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58781919"
 ---
 # <a name="compiler-error-c3622"></a>Derleyici Hatası C3622
 
 'class': bir sınıf 'anahtar sözcüğü' örneği olarak bildirilen
 
-Olarak işaretlenmiş bir sınıf örneği için bir girişimde bulunuldu [soyut](../../windows/abstract-cpp-component-extensions.md). Bir sınıf olarak işaretlenmiş `abstract` bir temel sınıf olabilir, ancak örneği oluşturulamıyor.
+Olarak işaretlenmiş bir sınıf örneği için bir girişimde bulunuldu [soyut](../../extensions/abstract-cpp-component-extensions.md). Bir sınıf olarak işaretlenmiş `abstract` bir temel sınıf olabilir, ancak örneği oluşturulamıyor.
 
 ## <a name="example"></a>Örnek
 

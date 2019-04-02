@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - Platform::Delegate Class
 ms.assetid: 82b21271-768f-4193-9ca2-be68ddfd546e
-ms.openlocfilehash: 6a509827b3b8e14b6d28995b5b4ca468ee9a662e
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.openlocfilehash: 4116de3240c3ef334db51095997f946731372708
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57741176"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58769244"
 ---
 # <a name="platformdelegate-class"></a>Platform::delegate sınıfı
 
@@ -30,7 +30,7 @@ GetHashCode(), üzerine yaz temsilci sınıfında ve ToString() yöntemleri tür
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kullanma [temsilci](../windows/delegate-cpp-component-extensions.md) ; temsilci oluşturmak için anahtar sözcüğü Platform::Delegate açıkça kullanmayın. Daha fazla bilgi için [Temsilciler](../cppcx/delegates-c-cx.md). Bir temsilci oluşturup ilişkin bir örnek için bkz: [C++'ta Windows çalışma zamanı bileşenleri oluşturma](/windows/uwp/winrt-components/creating-windows-runtime-components-in-cpp).
+Kullanma [temsilci](../extensions/delegate-cpp-component-extensions.md) ; temsilci oluşturmak için anahtar sözcüğü Platform::Delegate açıkça kullanmayın. Daha fazla bilgi için [Temsilciler](../cppcx/delegates-c-cx.md). Bir temsilci oluşturup ilişkin bir örnek için bkz: [C++'ta Windows çalışma zamanı bileşenleri oluşturma](/windows/uwp/winrt-components/creating-windows-runtime-components-in-cpp).
 
 ### <a name="requirements"></a>Gereksinimler
 

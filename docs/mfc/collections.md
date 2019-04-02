@@ -17,12 +17,12 @@ helpviewer_keywords:
 - collection classes [MFC], lists
 - collection classes [MFC], shapes
 ms.assetid: 02586e4c-851d-41d0-a722-feb11c17c74c
-ms.openlocfilehash: 5b74ee8a779ad2fffa801749d9818f985bc8c352
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: f3dea68deaae73313fe389be49e8bbed7da3c93a
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57273315"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58767190"
 ---
 # <a name="collections"></a>Koleksiyonlar
 
@@ -55,7 +55,7 @@ Her üç sağlanan koleksiyon şekillerinin daha kısa bir süre sonra bu konuda
 
 ##  <a name="_core_the_template_based_collection_classes"></a> Şablona dayalı koleksiyon sınıfları
 
-Herhangi bir türde nesneleri içeren bir tür kullanımı uyumlu koleksiyon uygulamak için en kolay yolu MFC şablona dayalı sınıflar birini kullanmaktır. Bu sınıfların örnekleri için bkz. MFC örnek [TOPLAMAK](../visual-cpp-samples.md).
+Herhangi bir türde nesneleri içeren bir tür kullanımı uyumlu koleksiyon uygulamak için en kolay yolu MFC şablona dayalı sınıflar birini kullanmaktır. Bu sınıfların örnekleri için bkz. MFC örnek [TOPLAMAK](../overview/visual-cpp-samples.md).
 
 MFC şablona dayalı koleksiyon sınıfları aşağıdaki tabloda listelenmektedir.
 

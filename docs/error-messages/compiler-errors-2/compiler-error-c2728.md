@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2728
 ms.assetid: 65635f91-1cd1-46e4-9ad7-14726d0546af
-ms.openlocfilehash: 3e3584d5e9166bb57e3be56e33f0198cacace7c1
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 1fbbc3d63386ebe98a447de8b7166a5263d2168f
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50615182"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58767424"
 ---
 # <a name="compiler-error-c2728"></a>Derleyici Hatası C2728
 
@@ -19,7 +19,7 @@ ms.locfileid: "50615182"
 
 Dizi oluşturma sözdizimi, bir dizi oluşturmak için kullanılan yönetilen veya WinRT nesneleri. Bir dizi oluşturamazsınız yönetilen veya yerel bir dizi söz dizimini kullanarak WinRT nesneleri.
 
-Daha fazla bilgi için [dizi](../../windows/arrays-cpp-component-extensions.md).
+Daha fazla bilgi için [dizi](../../extensions/arrays-cpp-component-extensions.md).
 
 Aşağıdaki örnek, C2728 oluşturur ve bu sorunun nasıl gösterir:
 

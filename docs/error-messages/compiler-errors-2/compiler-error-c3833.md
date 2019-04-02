@@ -6,18 +6,18 @@ f1_keywords:
 helpviewer_keywords:
 - C3833
 ms.assetid: 8152be53-e01e-48cd-9eef-9de38723664c
-ms.openlocfilehash: eb320dda9a69937e49f669153bb77e484c5a15fc
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 99c18e899a46c5e1d7a643ba32546f827c320373
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50549597"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58768984"
 ---
 # <a name="compiler-error-c3833"></a>Derleyici Hatası C3833
 
 'type': pointer_type için geçersiz hedef türü
 
-Bir [interior_ptr](../../windows/interior-ptr-cpp-cli.md) veya [pin_ptr](../../windows/pin-ptr-cpp-cli.md) hatalı bildirilmiş.
+Bir [interior_ptr](../../extensions/interior-ptr-cpp-cli.md) veya [pin_ptr](../../extensions/pin-ptr-cpp-cli.md) hatalı bildirilmiş.
 
 Aşağıdaki örnek, C3833 oluşturur:
 

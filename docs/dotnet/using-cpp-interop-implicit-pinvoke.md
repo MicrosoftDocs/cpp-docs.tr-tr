@@ -20,12 +20,12 @@ helpviewer_keywords:
 - C++ COM Interop
 - .NET [C++], porting C++ native to
 ms.assetid: 5f710bf1-88ae-4c4e-8326-b3f0b7c4c68a
-ms.openlocfilehash: ffe4aaeecc3e0f65851a87840cd21f81c4806fb4
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: aaa07373b7dd22807290ceefa9197b4013c61fe5
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50464597"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58778240"
 ---
 # <a name="using-c-interop-implicit-pinvoke"></a>C++ Birlikte Çalışabilirliği Kullanma (Örtük PInvoke)
 
@@ -59,7 +59,7 @@ COM doğrudan veya bir CRCW aracılığıyla kullanılıp kullanılmamasına bak
 
 ## <a name="blittable-types"></a>Blok halinde kopyalanabilir türler
 
-Basit, iç türleri kullanan yönetilmeyen API için (bkz [blok halinde kopyalanabilir ve örnekteki](/dotnet/framework/interop/blittable-and-non-blittable-types)), özel kodlama bu veri türlerini bellekte aynı gösterimi vardır, ancak daha karmaşık veri türleri gerektirir gereklidir. açık veri hazırlama. Bir örnek için bkz. [nasıl yapılır: yönetilen kod kullanarak PInvoke Yerel DLL'leri Çağırma](../dotnet/how-to-call-native-dlls-from-managed-code-using-pinvoke.md).
+Basit, iç türleri kullanan yönetilmeyen API için (bkz [blok halinde kopyalanabilir ve örnekteki](/dotnet/framework/interop/blittable-and-non-blittable-types)), özel kodlama bu veri türlerini bellekte aynı gösterimi vardır, ancak daha karmaşık veri türleri gerektirir gereklidir. açık veri hazırlama. Bir örnek için bkz [nasıl yapılır: Yönetilen Koddan PInvoke kullanarak yerel DLL'leri Çağırma](../dotnet/how-to-call-native-dlls-from-managed-code-using-pinvoke.md).
 
 ## <a name="example"></a>Örnek
 
@@ -93,19 +93,19 @@ Done
 
 ## <a name="in-this-section"></a>Bu Bölümde
 
-- [Nasıl yapılır: C++ Birlikte Çalışması Kullanarak ANSI Dizelerini Sıralama](../dotnet/how-to-marshal-ansi-strings-using-cpp-interop.md)
+- [Nasıl yapılır: C++ Birlikte Çalışması Kullanarak ANSI Dizelerini Hazırlama](../dotnet/how-to-marshal-ansi-strings-using-cpp-interop.md)
 
-- [Nasıl yapılır: C++ Çalışabilirliği Kullanarak Unicode Dizelerini Sıralama](../dotnet/how-to-marshal-unicode-strings-using-cpp-interop.md)
+- [Nasıl yapılır: C++ Birlikte Çalışması Kullanarak Unicode Dizelerini Hazırlama](../dotnet/how-to-marshal-unicode-strings-using-cpp-interop.md)
 
-- [Nasıl yapılır: C++ Birlikte Çalışması Kullanarak COM Dizelerini Sıralama](../dotnet/how-to-marshal-com-strings-using-cpp-interop.md)
+- [Nasıl yapılır: C++ Birlikte Çalışması Kullanarak COM Dizelerini Hazırlama](../dotnet/how-to-marshal-com-strings-using-cpp-interop.md)
 
-- [Nasıl yapılır: C++ Birlikte Çalışması Kullanarak Yapıları Sıralama](../dotnet/how-to-marshal-structures-using-cpp-interop.md)
+- [Nasıl yapılır: C++ Birlikte Çalışması Kullanarak Yapıları Hazırlama](../dotnet/how-to-marshal-structures-using-cpp-interop.md)
 
-- [Nasıl yapılır: C++ Birlikte Çalışması Kullanarak Dizileri Sıralama](../dotnet/how-to-marshal-arrays-using-cpp-interop.md)
+- [Nasıl yapılır: C++ Birlikte Çalışması Kullanarak Dizileri Hazırlama](../dotnet/how-to-marshal-arrays-using-cpp-interop.md)
 
-- [Nasıl yapılır: C++ Birlikte Çalışmayı Kullanarak Geri Çağrıları ve Temsilcileri Sıralama](../dotnet/how-to-marshal-callbacks-and-delegates-by-using-cpp-interop.md)
+- [Nasıl yapılır: C++ Birlikte Çalışmayı Kullanarak Geri Çağrıları ve Temsilcileri Hazırlama](../dotnet/how-to-marshal-callbacks-and-delegates-by-using-cpp-interop.md)
 
-- [Nasıl yapılır: C++ Birlikte Çalışması Kullanarak Katıştırılmış İşaretçileri Sıralama](../dotnet/how-to-marshal-embedded-pointers-using-cpp-interop.md)
+- [Nasıl yapılır: C++ Birlikte Çalışması Kullanarak Eklenmiş İşaretçileri Hazırlama](../dotnet/how-to-marshal-embedded-pointers-using-cpp-interop.md)
 
 - [Nasıl yapılır: Bir System::String'deki Karakterlere Erişme](../dotnet/how-to-access-characters-in-a-system-string.md)
 
@@ -123,9 +123,9 @@ Done
 
 - [Nasıl yapılır: Yerel İşlevde Başvuru Sınıfını Değiştirme](../dotnet/how-to-modify-reference-class-in-a-native-function.md)
 
-- [Nasıl yapılır: Bir Resmin Yerel mi yoksa CLR mi olduğunu belirleme](../dotnet/how-to-determine-if-an-image-is-native-or-clr.md)
+- [Nasıl yapılır: Resmin Yerel mi yoksa CLR mi Olduğunu Belirleme](../dotnet/how-to-determine-if-an-image-is-native-or-clr.md)
 
-- [Nasıl yapılır: Yerel DLL'i Genel Derleme Önbelleğine Ekleme](../dotnet/how-to-add-native-dll-to-global-assembly-cache.md)
+- [Nasıl yapılır: Yerel DLL'yi Genel Derleme Önbelleğine Ekleme](../dotnet/how-to-add-native-dll-to-global-assembly-cache.md)
 
 - [Nasıl yapılır: Yerel Tür İçinde Değer Türüne Başvuruyu Tutma](../dotnet/how-to-hold-reference-to-value-type-in-native-type.md)
 
@@ -135,15 +135,15 @@ Done
 
 - [Nasıl yapılır: System::Guid ve GUID Arasında Dönüştürme](../dotnet/how-to-convert-between-system-guid-and-guid.md)
 
-- [Nasıl yapılır: Bir out Parametresini Belirleme](../dotnet/how-to-specify-an-out-parameter.md)
+- [Nasıl yapılır: Bir out Parametresi Belirtme](../dotnet/how-to-specify-an-out-parameter.md)
 
-- [Nasıl yapılır: bir/CLR derlemesinde yerel tür kullanma](../dotnet/how-to-use-a-native-type-in-a-clr-compilation.md)
+- [Nasıl yapılır: Bir/CLR derlemesinde yerel tür kullanma](../dotnet/how-to-use-a-native-type-in-a-clr-compilation.md)
 
 - [Nasıl yapılır: Yerel Türlerde İşleyicileri Bildirme](../dotnet/how-to-declare-handles-in-native-types.md)
 
 - [Nasıl yapılır: C# Tarafından Kullanılması için Yerel Sınıfı Sarmalama](../dotnet/how-to-wrap-native-class-for-use-by-csharp.md)
 
-Birlikte çalışma bir senaryoda kullanma hakkında daha fazla bilgi için bkz: [temsilci (C++ bileşen uzantıları)](../windows/delegate-cpp-component-extensions.md).
+Birlikte çalışma bir senaryoda kullanma hakkında daha fazla bilgi için bkz: [temsilci (C++ bileşen uzantıları)](../extensions/delegate-cpp-component-extensions.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

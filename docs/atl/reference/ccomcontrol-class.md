@@ -19,12 +19,12 @@ helpviewer_keywords:
 - ambient properties
 - controls [ATL], properties
 ms.assetid: 55368c27-bd16-45a7-b701-edb36157c8e8
-ms.openlocfilehash: 29eeb31c0823a0614fa1404cf7efc1c281bab3a4
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: ffbec7c1a83c0dd829878f4c73340528d32fb852
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57261589"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58771558"
 ---
 # <a name="ccomcontrol-class"></a>CComControl sınıfı
 
@@ -73,7 +73,7 @@ Pencereleme işlevleri uygulayan temel sınıf. Varsayılan olarak [Cwindowımpl
 
 Bir denetim oluşturma hakkında daha fazla bilgi için bkz. [ATL öğretici](../../atl/active-template-library-atl-tutorial.md). ATL projesi Sihirbazı hakkında daha fazla bilgi için bkz [ATL projesi oluşturma](../../atl/reference/creating-an-atl-project.md).
 
-Tanıtımı için `CComControl` yöntemleri ve veri üyeleri [DAİ](../../visual-cpp-samples.md) örnek.
+Tanıtımı için `CComControl` yöntemleri ve veri üyeleri [DAİ](../../overview/visual-cpp-samples.md) örnek.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 

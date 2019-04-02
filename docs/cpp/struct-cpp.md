@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - struct constructors
 ms.assetid: 3c6ba273-e248-4ff1-8c69-d2abcf1263c6
-ms.openlocfilehash: 78d3df4a96cb769cb31760c53c8486c86189e00c
-ms.sourcegitcommit: c85c8a1226d8fbbaa29f4691ed719f8e6cc6575c
+ms.openlocfilehash: e9ffd30dd0017e912fd7c196e2d3f0e987fb0810
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54893346"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58780866"
 ---
 # <a name="struct-c"></a>struct (C++)
 
@@ -56,7 +56,7 @@ Yapı türü, kullanıcı tanımlı bileşik bir türdür. Farklı türlere sahi
 
 Üyeleri şeylerdir ancak C++'da, bir sınıf ile aynı yapısıdır **genel** varsayılan olarak.
 
-Yönetilen sınıflar ve yapı birimleri hakkında daha fazla bilgi için bkz: [sınıfları ve yapıları](../windows/classes-and-structs-cpp-component-extensions.md).
+Bilgi yönetilen sınıflar ve yapılar C + +/ CLI, bkz: [sınıfları ve yapıları](../extensions/classes-and-structs-cpp-component-extensions.md).
 
 ## <a name="using-a-structure"></a>Bir Yapı Kullanma
 

@@ -1,5 +1,5 @@
 ---
-title: "TN033: MFC'nin DLL Sürümü"
+title: "TN033: MFC'nin DLL sürümü"
 ms.date: 06/28/2018
 f1_keywords:
 - vc.mfc.dll
@@ -10,14 +10,14 @@ helpviewer_keywords:
 - DLL version of MFC [MFC]
 - TN033
 ms.assetid: b6f1080b-b66b-4b1e-8fb1-926c5816392c
-ms.openlocfilehash: 17ffc8b46060e742449c9612424b1cd06dd8a9d3
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.openlocfilehash: 4bfc60e20a073dd34945b91dd48ba82cdf4ab9f3
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51523974"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58767788"
 ---
-# <a name="tn033-dll-version-of-mfc"></a>TN033: MFC'nin DLL Sürümü
+# <a name="tn033-dll-version-of-mfc"></a>TN033: MFC'nin DLL sürümü
 
 Bu Not MFCxx.DLL kullanabilirsiniz ve (burada x MFC sürüm numarasıdır) paylaşılan dinamik bağlantı kitaplıkları paylaşılan MFC uygulamaları ve MFC uzantısı DLL'leri ile nasıl açıklanmaktadır. Normal MFC DLL'leri hakkında daha fazla bilgi için bkz: [bir DLL'in bir parçası olarak MFC kullanma](../mfc/tn011-using-mfc-as-part-of-a-dll.md).
 
@@ -31,31 +31,31 @@ Bu teknik Not DLL'leri üç yönlerini kapsar. Daha gelişmiş kullanıcılar i�
 
 Bir DLL ile MFC olmayan uygulamalar (Bu çağrılır Normal MFC DLL'SİNİN) kullanılabilir MFC kullanarak oluşturmak istiyorsanız, bakın [Teknik Not 11](../mfc/tn011-using-mfc-as-part-of-a-dll.md).
 
-## <a name="overview-of-mfcxxdll-support-terminology-and-files"></a>MFCxx.DLL desteğine genel bakış: terminoloji ve dosyaları
+## <a name="overview-of-mfcxxdll-support-terminology-and-files"></a>MFCxx.DLL desteğine genel bakış: Terminoloji ve dosyaları
 
-**Normal MFC DLL'SİNİN**: bazı MFC sınıflarını kullanarak tek başına bir DLL yapılandırmak için Normal MFC DLL'SİNİN kullanın. Arabirimleri arasında uygulama/DLL sınır "C" arabirimdir ve istemci uygulama bir MFC uygulaması yok.
+**Normal MFC DLL'SİNİN**: Normal MFC DLL'SİNİN bazı MFC sınıflarını kullanarak tek başına bir DLL yapılandırmak için kullanın. Arabirimleri arasında uygulama/DLL sınır "C" arabirimdir ve istemci uygulama bir MFC uygulaması yok.
 
-DLL desteği MFC 1.0 desteklenen sürümüdür. İçinde açıklanan [Teknik Not 11](../mfc/tn011-using-mfc-as-part-of-a-dll.md) ve MFC Gelişmiş kavramlar örneği [ile ilgili](../visual-cpp-samples.md).
+DLL desteği MFC 1.0 desteklenen sürümüdür. İçinde açıklanan [Teknik Not 11](../mfc/tn011-using-mfc-as-part-of-a-dll.md) ve MFC Gelişmiş kavramlar örneği [ile ilgili](../overview/visual-cpp-samples.md).
 
 > [!NOTE]
 > Visual C++ sürüm 4.0 itibariyle terimi **USRDLL** kullanımdan kalkmıştır ve statik olarak MFC'ye bağlanan normal bir MFC DLL ile değiştirilmiştir. Ayrıca, bir normal dinamik olarak MFC'ye bağlanan MFC DLL da oluşturabilirsiniz.
 
 MFC 3.0 (ve üstü) Normal MFC DLL'leri OLE ve veritabanı sınıfları da dahil olmak üzere tüm yeni işlevlerle destekler.
 
-**AFXDLL**: Bu aynı zamanda paylaşılan MFC kitaplıklarını sürümü adlandırılır. MFC 2.0 sürümünde yeni DLL desteği budur. DLL'ler (aşağıda açıklanmıştır) çeşitli MFC kitaplığı olan ve bir istemci uygulaması veya DLL gerekli DLL'lerin dinamik olarak bağlar. Uygulama/DLL sınırı arasında arabirimdir C + +/ MFC sınıfı arabirimleri. İstemci uygulaması, bir MFC uygulaması olmalıdır. Bu, tüm MFC 3.0 işlevselliği destekler (özel durum: UNICODE veritabanı sınıfları için desteklenmez).
+**AFXDLL**: Bu paylaşılan MFC kitaplıklarını sürümü da adlandırılır. MFC 2.0 sürümünde yeni DLL desteği budur. DLL'ler (aşağıda açıklanmıştır) çeşitli MFC kitaplığı olan ve bir istemci uygulaması veya DLL gerekli DLL'lerin dinamik olarak bağlar. Uygulama/DLL sınırı arasında arabirimdir C + +/ MFC sınıfı arabirimleri. İstemci uygulaması, bir MFC uygulaması olmalıdır. Bu, tüm MFC 3.0 işlevselliği destekler (özel durum: UNICODE veritabanı sınıfları için desteklenmiyor).
 
 > [!NOTE]
 > Visual C++ sürüm 4.0 itibariyle bu tür bir DLL "Uzantı olarak DLL." başvuruda bulunulur
 
 Bu Not, MFCxx.DLL, içeren MFC DLL ayarlanırsa, tüm başvurmak için kullanacağınız:
 
-- Hata ayıklama: paylaşılan (toplam) ve MFCSxxD.LIB (statik).
+- Hata ayıklama: Paylaşılan (toplam) ve MFCSxxD.LIB (statik).
 
-- Sürüm: (toplam) MFCxx.DLL ve MFCSxx.LIB (statik).
+- Sürüm: (Toplam) MFCxx.DLL ve MFCSxx.LIB (statik).
 
-- Unicode hata ayıklama: MFCxxUD.DLL (toplam) ve MFCSxxD.LIB (statik).
+- Unicode hata ayıklama: (Toplam) MFCxxUD.DLL ve MFCSxxD.LIB (statik).
 
-- Unicode sürüm: (toplam) MFCxxU.DLL ve MFCSxxU.LIB (statik).
+- Unicode sürümü: (Toplam) MFCxxU.DLL ve MFCSxxU.LIB (statik).
 
 > [!NOTE]
 > MFCSxx [U] [D]. LIB kitaplıkları kullanıldığı MFC ile birlikte paylaşılan DLL'er. Bu kitaplıklar için uygulama veya DLL statik olarak bağlanmalıdır kodunu içerir.
@@ -64,7 +64,7 @@ Karşılık gelen bir uygulama bağlantı kitaplıklarını içeri aktarın:
 
 - Hata ayıklama: MFCxxD.LIB
 
-- Yayın: MFCxx.LIB
+- Sürüm: MFCxx.LIB
 
 - Unicode hata ayıklama: MFCxxUD.LIB
 
@@ -98,7 +98,7 @@ MFC uzantısı DLL, sınıfları ve işlevleri MFC sınıflarını işlevselliğ
 
 - MFC uzantısı DLL, genellikle oluşturmak için bir başlatma yordamı sağlayacak bir `CDynLinkLibrary` MFC uzantısı DLL dışarı aktarma isterse `CRuntimeClass`es veya kaynakları uygulama. Türetilmiş bir sınıf, `CDynLinkLibrary` uygulama başına veri MFC uzantısı DLL tutulması gereken varsa kullanılabilir.
 
-Bu noktalar aşağıda daha ayrıntılı olarak açıklanmıştır. MFC Gelişmiş kavramlar örneği için ayrıca başvurmanız gerekir [DLLHUSK](../visual-cpp-samples.md) olduğundan bunu göstermektedir:
+Bu noktalar aşağıda daha ayrıntılı olarak açıklanmıştır. MFC Gelişmiş kavramlar örneği için ayrıca başvurmanız gerekir [DLLHUSK](../overview/visual-cpp-samples.md) olduğundan bunu göstermektedir:
 
 - Paylaşılan kitaplıklar kullanarak uygulama oluşturma. (DLLHUSK. EXE için MFC kitaplıkları sair DLL'lerin dinamik olarak bağlanan bir MFC uygulamasıdır.)
 
@@ -324,7 +324,7 @@ Dinamik bir C++ sınıf adı verilen C++ nesnelerinin oluşturulması benzerdir.
 
 İstemci uygulaması olan sınıflar, MFC uzantısı DLL içinde kullanmak isterseniz `DECLARE_SERIAL`, sonra istemci uygulamasına görünür olmasını sınıfları dışarı aktarmanız gerekecektir. Bu yürüyen tarafından yapılır `CDynLinkLibrary` listesi.
 
-MFC Gelişmiş kavramlar örneği söz konusu olduğunda [DLLHUSK](../visual-cpp-samples.md), liste şöyle görünür:
+MFC Gelişmiş kavramlar örneği söz konusu olduğunda [DLLHUSK](../overview/visual-cpp-samples.md), liste şöyle görünür:
 
 ```Example
 head ->   DLLHUSK.EXE   - or - DLLHUSK.EXE
@@ -339,7 +339,7 @@ head ->   DLLHUSK.EXE   - or - DLLHUSK.EXE
 
 Kaynak ve sınıf listesi genellikle son MFCxx.DLL. MFCxx.DLL tüm standart komut kimlikleri için komut istemi dizeleri dahil olmak üzere tüm standart MFC kaynakları içerir. Listenin kuyruğunu yerleştirme sağlar DLL'ler ve sahip değil istemci uygulamanın kendisi bir paylaşılan kaynaklar MFCxx.dll yerine dayanan şekilde ancak standart MFC kaynakları, kendilerine ait kopyasında.
 
-Kaynaklar ve sınıf adları tüm DLL'leri, istemci uygulamanın adı alanına birleştirme, hangi kimlikleri dikkatli olmak zorunda olumsuz veya adları vardır. Tabii bu özellik ya da vererek olmayan kaynaklarınızı devre dışı bırakabilirsiniz veya `CDynLinkLibrary` istemci uygulamasına nesne. [DLLHUSK](../visual-cpp-samples.md) örnek paylaşılan kaynak ad alanı birden çok üstbilgi dosyasını kullanarak yönetir. Bkz: [Teknik Not 35](../mfc/tn035-using-multiple-resource-files-and-header-files-with-visual-cpp.md) paylaşılan kaynak dosyalarını kullanma hakkında daha fazla ipucu için.
+Kaynaklar ve sınıf adları tüm DLL'leri, istemci uygulamanın adı alanına birleştirme, hangi kimlikleri dikkatli olmak zorunda olumsuz veya adları vardır. Tabii bu özellik ya da vererek olmayan kaynaklarınızı devre dışı bırakabilirsiniz veya `CDynLinkLibrary` istemci uygulamasına nesne. [DLLHUSK](../overview/visual-cpp-samples.md) örnek paylaşılan kaynak ad alanı birden çok üstbilgi dosyasını kullanarak yönetir. Bkz: [Teknik Not 35](../mfc/tn035-using-multiple-resource-files-and-header-files-with-visual-cpp.md) paylaşılan kaynak dosyalarını kullanma hakkında daha fazla ipucu için.
 
 ### <a name="initializing-the-dll"></a>DLL başlatma
 
@@ -411,7 +411,7 @@ Visual C++'ın dış derleme görevleri dosyası özelliğini kullanarak ya da N
 
 Derleyici bayraklarına gerekli:
 
-- **/ D_AFXDLL /MD**
+- **/D_AFXDLL /MD**
    **/D_AFXDLL**
 
 Standart MFC üstbilgileri bu simge tanımlanması gerekir:
@@ -432,7 +432,7 @@ MFC örnek programların çoğu, Visual C++ ya da komut satırından paylaşıla
 
 MFCxx.DLL kullanılacak Bu örnek hiçbirini dönüştürmek için yükleyebilirsiniz. MAK, Visual C++'ta dosya ve proje seçeneklerinde yukarıda açıklanan şekilde ayarlayın. NMAKE derleme kullanıyorsanız, belirtebilmeniz için "AFXDLL = 1" üzerinde NMAKE komut satırı ve, paylaşılan MFC kitaplıklarını kullanarak örneği oluşturmak.
 
-MFC Gelişmiş kavramlar örneği [DLLHUSK](../visual-cpp-samples.md) MFC'nin DLL sürümü ile oluşturulmuştur. Bu örnek yalnızca ile MFCxx.DLL bağlı bir uygulamanın nasıl oluşturulacağını gösterir, ancak aynı zamanda bir MFC DLL paketleme seçeneğinin MFC uzantı DLL'leri daha sonra bu Teknik Not açıklandığı gibi diğer özellikleri gösterilmektedir.
+MFC Gelişmiş kavramlar örneği [DLLHUSK](../overview/visual-cpp-samples.md) MFC'nin DLL sürümü ile oluşturulmuştur. Bu örnek yalnızca ile MFCxx.DLL bağlı bir uygulamanın nasıl oluşturulacağını gösterir, ancak aynı zamanda bir MFC DLL paketleme seçeneğinin MFC uzantı DLL'leri daha sonra bu Teknik Not açıklandığı gibi diğer özellikleri gösterilmektedir.
 
 ### <a name="packaging-notes"></a>Paketleme notları
 

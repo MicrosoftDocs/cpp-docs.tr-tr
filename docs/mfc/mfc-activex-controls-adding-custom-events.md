@@ -15,12 +15,12 @@ helpviewer_keywords:
 - custom events [MFC]
 - FireEvent method, adding custom events
 ms.assetid: c584d053-1e34-47aa-958e-37d3e9b85892
-ms.openlocfilehash: 626aae04e0b19dc951814e4741cad3729acd3b72
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 48c5ddbc8a3bcf6f74c251820e83cdebcef05bc9
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57263019"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58781009"
 ---
 # <a name="mfc-activex-controls-adding-custom-events"></a>MFC ActiveX denetimleri: Özel olaylar ekleme
 
@@ -92,7 +92,7 @@ Olay Ekleme Sihirbazı'nı kullanarak Clickın özel olay ekledik, bu olay başl
 
 1. Yeni işleyici işlevi uygulamasında ileti işleyicinizin kodunu atlamak için Sınıf Görünümü'nde çift tıklayın (. ActiveX denetiminizin CPP) dosyası.
 
-Aşağıdaki kod örneği çağrıları `InCircle` denetim pencereye farenin sol düğmesine tıklandığında her zaman çalışması. Bu örnek WM_LBUTTONDOWN işleyici işlevi içinde bulunabilir `OnLButtonDown`, [Dai örnek](../visual-cpp-samples.md) soyut.
+Aşağıdaki kod örneği çağrıları `InCircle` denetim pencereye farenin sol düğmesine tıklandığında her zaman çalışması. Bu örnek WM_LBUTTONDOWN işleyici işlevi içinde bulunabilir `OnLButtonDown`, [Dai örnek](../overview/visual-cpp-samples.md) soyut.
 
 [!code-cpp[NVC_MFC_AxUI#10](../mfc/codesnippet/cpp/mfc-activex-controls-adding-custom-events_4.cpp)]
 

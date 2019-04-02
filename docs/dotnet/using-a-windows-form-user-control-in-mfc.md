@@ -9,12 +9,12 @@ helpviewer_keywords:
 - interop [C++], MFC
 - Windows Forms [C++], MFC support
 ms.assetid: 63fb099b-1dff-469c-9e34-dab52e122fcd
-ms.openlocfilehash: d36932a3edc0129f0497cb8db4095283650c5c96
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 38c5c37712b430b137934d441056e60f2c130f78
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50494165"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58773105"
 ---
 # <a name="using-a-windows-form-user-control-in-mfc"></a>MFC içinde Windows Formu Kullanıcı Denetimi Kullanma
 
@@ -34,7 +34,7 @@ Aşağıdaki bölümlerde nasıl yapılır:
 > [!NOTE]
 > MFC Windows Forms arabirimi DLL (mfcmifc80.dll'ye) özel (değiştirilmiş) bir kopyasını kullanarak uygulamanızı oluşturduğunuzda Microsoft anahtarını kendi satıcı anahtarla değiştirin sürece GAC'ye yüklemek başarısız olur. Derleme imzalama hakkında daha fazla bilgi için bkz. [Derlemelerle programlama](/dotnet/framework/app-domains/programming-with-assemblies) ve [tanımlayıcı ad derlemeleri (derleme imzalama) (C + +/ CLI)](../dotnet/strong-name-assemblies-assembly-signing-cpp-cli.md).
 
-MFC uygulamanız Windows Forms kullanıyorsa, mfcmifc80.dll'ye uygulamanızla birlikte yeniden dağıtmanız gerekir. Daha fazla bilgi için [MFC kitaplığını yeniden dağıtma](../ide/redistributing-the-mfc-library.md).
+MFC uygulamanız Windows Forms kullanıyorsa, mfcmifc80.dll'ye uygulamanızla birlikte yeniden dağıtmanız gerekir. Daha fazla bilgi için [MFC kitaplığını yeniden dağıtma](../windows/redistributing-the-mfc-library.md).
 
 ## <a name="in-this-section"></a>Bu Bölümde
 

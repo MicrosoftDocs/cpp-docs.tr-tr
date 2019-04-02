@@ -4,16 +4,16 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - reference types, C++ stack semantics for
 ms.assetid: 319a1304-f4a4-4079-8b84-01cec847d531
-ms.openlocfilehash: 6ba17a56c5274295c44cdc5aa651380d1e6c83d3
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.openlocfilehash: 69771de120dc413496a3b7b0613e51a13d208e22
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57740930"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58772611"
 ---
 # <a name="c-stack-semantics-for-reference-types"></a>Referans Türleri için C++ Yığın Anlamları
 
-Visual C++ 2005'ten önce bir başvuru türünün bir örneği yalnızca kullanarak oluşturulabilir `new` toplanan yığın atık nesneyi oluşturan işleci. Bununla birlikte, artık yığında yerel türünün örneğini oluşturmak için kullanacağınız aynı sözdizimini kullanarak bir başvuru türünün bir örneğini oluşturabilirsiniz. Bu nedenle, kullanın gerekmez [yeni başvuru, gcnew](../windows/ref-new-gcnew-cpp-component-extensions.md) başvuru türünde bir nesne oluşturmak için. Ve nesne kapsam dışına çıktığında, derleyicinin nesnenin yok Edicisi çağırır.
+Visual C++ 2005'ten önce bir başvuru türünün bir örneği yalnızca kullanarak oluşturulabilir `new` toplanan yığın atık nesneyi oluşturan işleci. Bununla birlikte, artık yığında yerel türünün örneğini oluşturmak için kullanacağınız aynı sözdizimini kullanarak bir başvuru türünün bir örneğini oluşturabilirsiniz. Bu nedenle, kullanın gerekmez [yeni başvuru, gcnew](../extensions/ref-new-gcnew-cpp-component-extensions.md) başvuru türünde bir nesne oluşturmak için. Ve nesne kapsam dışına çıktığında, derleyicinin nesnenin yok Edicisi çağırır.
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -41,9 +41,9 @@ Derleyici ayrıca sağlar bir `%` birli işleç, temel alınan tanıtıcı tür�
 
 Yığın anlamları ile kullanmak için aşağıdaki başvuru türleri kullanılamıyor:
 
-- [temsilci (C++ Bileşen Uzantıları)](../windows/delegate-cpp-component-extensions.md)
+- [temsilci (C++ Bileşen Uzantıları)](../extensions/delegate-cpp-component-extensions.md)
 
-- [Diziler](../windows/arrays-cpp-component-extensions.md)
+- [Diziler](../extensions/arrays-cpp-component-extensions.md)
 
 - <xref:System.String>
 
@@ -113,4 +113,4 @@ int main() {
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Sınıflar ve Yapılar](../windows/classes-and-structs-cpp-component-extensions.md)
+[Sınıflar ve Yapılar](../extensions/classes-and-structs-cpp-component-extensions.md)

@@ -6,18 +6,18 @@ f1_keywords:
 helpviewer_keywords:
 - C3900
 ms.assetid: a94cc561-8fa8-4344-9e01-e81ff462fae5
-ms.openlocfilehash: d031b55407d108b4f8be362156911bfae688326a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 35df94ccfcd7942f9057cb37ceee349c09b80607
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50512365"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58777421"
 ---
 # <a name="compiler-error-c3900"></a>Derleyici Hatası C3900
 
 'member': geçerli kapsamda izin verilmiyor
 
-İşlev bildirimleri ve yalnızca satır içi işlev tanımları, özellik blok içerebilir. Üye işlevleri dışındaki özellik bloklarında izin verilir. Hiçbir tür tanımları, işleçler ve arkadaş işlevleri izin verilir. Daha fazla bilgi için [özelliği](../../windows/property-cpp-component-extensions.md).
+İşlev bildirimleri ve yalnızca satır içi işlev tanımları, özellik blok içerebilir. Üye işlevleri dışındaki özellik bloklarında izin verilir. Hiçbir tür tanımları, işleçler ve arkadaş işlevleri izin verilir. Daha fazla bilgi için [özelliği](../../extensions/property-cpp-component-extensions.md).
 
 Olay tanımlarına yalnızca erişim yöntemleri ve işlevleri içerebilir.
 

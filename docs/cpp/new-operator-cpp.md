@@ -4,19 +4,19 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - new keyword [C++]
 ms.assetid: 69fee812-1c28-4882-8fda-d1ad17860004
-ms.openlocfilehash: 83800f823ffd14fd61a9735b09b12d2f07f6d0a4
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: bcb7784e59966510970bd9b3ae0157ae982e462d
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50477993"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58768074"
 ---
 # <a name="new-operator-c"></a>new İşleci (C++)
 
 Bir nesne veya nesneler dizisi için bellek ayırır *tür adı* boş depolamak ve nesneye uygun türde, sıfır olmayan bir işaretçi döndürür.
 
 > [!NOTE]
->  Microsoft C++ bileşen uzantıları için destek sağlar **yeni** anahtar sözcüğü vtable yuvası girişlerinin eklenebilmesi için. Daha fazla bilgi için [yeni (vtable'da yeni yuva)](../windows/new-new-slot-in-vtable-cpp-component-extensions.md)
+>  Microsoft C++ bileşen uzantıları için destek sağlar **yeni** anahtar sözcüğü vtable yuvası girişlerinin eklenebilmesi için. Daha fazla bilgi için [yeni (vtable'da yeni yuva)](../extensions/new-new-slot-in-vtable-cpp-component-extensions.md)
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -29,7 +29,7 @@ Bir nesne veya nesneler dizisi için bellek ayırır *tür adı* boş depolamak 
 
 İşlem başarısız olursa, **yeni** sıfır döndürür veya bir özel durum oluşturur; bkz [yeni ve delete işleçleri](../cpp/new-and-delete-operators.md) daha fazla bilgi için. Bu varsayılan davranışı özel bir özel durum işleme yordamı yazarak ve çağırma değiştirebilirsiniz [_set_new_handler](../c-runtime-library/reference/set-new-handler.md) değişken bağımsız değişken olarak çalışma zamanı kitaplığı işlevi.
 
-Yönetilen yığındaki bir nesne oluşturma hakkında daha fazla bilgi için bkz: [gcnew](../windows/ref-new-gcnew-cpp-component-extensions.md).
+Yönetilen yığındaki bir nesne oluşturma hakkında daha fazla bilgi için bkz: [gcnew](../extensions/ref-new-gcnew-cpp-component-extensions.md).
 
 Zaman **yeni** olduğu bellek atandıktan sonra bir C++ sınıfı nesne için bellek ayırmak için kullanıldığında, nesnenin oluşturucusunun adı verilir.
 

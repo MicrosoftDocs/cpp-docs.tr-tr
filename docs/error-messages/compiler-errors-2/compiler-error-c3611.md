@@ -6,18 +6,18 @@ f1_keywords:
 helpviewer_keywords:
 - C3611
 ms.assetid: 42f3e320-41de-420a-bd05-8924cab765aa
-ms.openlocfilehash: 08e9b969c9eb03dd0259813487bfeb04bfaa5ca9
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 2d4c5cb02b1b8c5472502380fe7c74ff4a91954a
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50590251"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58781932"
 ---
 # <a name="compiler-error-c3611"></a>Derleyici Hatası C3611
 
 'function': korumalı bir işlevin saf belirticisi olamaz
 
-Korumalı bir işlevin yanlış bildirildi.  Daha fazla bilgi için [korumalı](../../windows/sealed-cpp-component-extensions.md).
+Korumalı bir işlevin yanlış bildirildi.  Daha fazla bilgi için [korumalı](../../extensions/sealed-cpp-component-extensions.md).
 
 ## <a name="example"></a>Örnek
 

@@ -36,12 +36,12 @@ helpviewer_keywords:
 - CComboBoxEx [MFC], SetItem
 - CComboBoxEx [MFC], SetWindowTheme
 ms.assetid: 33ca960a-2409-478c-84a4-a2ee8ecfe8f7
-ms.openlocfilehash: d7a39dd19a51bc5bab0f924d360d594bddf89b44
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: c3fd57510a38d597b827f80ab98a0be280ad31e3
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57265944"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58767775"
 ---
 # <a name="ccomboboxex-class"></a>CComboBoxEx Class
 
@@ -150,7 +150,7 @@ virtual BOOL Create(
 Açılan kutu uygulanan birleşik giriş kutusu stilleri bileşimini belirtir. Bkz: **açıklamalar** aşağıda stilleri hakkında daha fazla bilgi.
 
 *Rect*<br/>
-Bir başvuru bir [CRect](../../atl-mfc-shared/reference/crect-class.md) nesne veya [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) birleşik giriş kutusunun boyutunu ve konumunu olan yapısı.
+Bir başvuru bir [CRect](../../atl-mfc-shared/reference/crect-class.md) nesne veya [RECT](/previous-versions/dd162897\(v=vs.85\)) birleşik giriş kutusunun boyutunu ve konumunu olan yapısı.
 
 *pParentWnd*<br/>
 Bir işaretçi bir [CWnd](../../mfc/reference/cwnd-class.md) birleşik giriş kutusunun üst pencere nesnesini (genellikle bir `CDialog`). NULL olmamalıdır.
@@ -210,7 +210,7 @@ Oluşturulan denetimin genişletilmiş stilini belirtir. Genişletilmiş Windows
 Birleşik giriş kutusu denetiminin stili. Bkz: [Oluştur](#create) stilleri listesi.
 
 *Rect*<br/>
-Bir başvuru bir [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) istemci koordinatları olarak oluşturulması için pencerenin konumunu ve boyutunu açıklayan yapısı *pParentWnd*.
+Bir başvuru bir [RECT](/previous-versions/dd162897\(v=vs.85\)) istemci koordinatları olarak oluşturulması için pencerenin konumunu ve boyutunu açıklayan yapısı *pParentWnd*.
 
 *pParentWnd*<br/>
 Denetimin ana penceresine bir işaretçi.
@@ -470,7 +470,7 @@ Bu üye işlevi işlevselliğine öykünür [CBEM_SETWINDOWTHEME](/windows/deskt
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MFC örnek MFCIE](../../visual-cpp-samples.md)<br/>
+[MFC örnek MFCIE](../../overview/visual-cpp-samples.md)<br/>
 [CComboBox Sınıfı](../../mfc/reference/ccombobox-class.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
 [CComboBox Sınıfı](../../mfc/reference/ccombobox-class.md)

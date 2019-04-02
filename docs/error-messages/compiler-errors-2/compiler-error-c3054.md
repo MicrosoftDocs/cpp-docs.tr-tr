@@ -6,18 +6,18 @@ f1_keywords:
 helpviewer_keywords:
 - C3054
 ms.assetid: 6f4b7ac5-0d12-474b-b611-76ff26ee41ac
-ms.openlocfilehash: c45a59f136b989190a46fd9fbe00fdd0e4b89527
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 1dd6450d661700d9b2f7f94e625abd9ecc64ed08
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50470140"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58773001"
 ---
 # <a name="compiler-error-c3054"></a>Derleyici Hatası C3054
 
 '#pragma omp parallel' şu anda bir genel sınıfta veya işlevde desteklenmiyor
 
-Daha fazla bilgi için [genel türler](../../windows/generics-cpp-component-extensions.md) ve [OpenMP](../../parallel/openmp/openmp-in-visual-cpp.md).
+Daha fazla bilgi için [genel türler](../../extensions/generics-cpp-component-extensions.md) ve [OpenMP](../../parallel/openmp/openmp-in-visual-cpp.md).
 
 ## <a name="example"></a>Örnek
 

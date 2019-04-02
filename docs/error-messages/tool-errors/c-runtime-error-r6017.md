@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - R6017
 ms.assetid: df3ec5f5-6771-4648-ba06-0e26c6a1cc6a
-ms.openlocfilehash: 75e2512196937b483d6bc1a9817f6957bb468418
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 45f3b07f540cb72a955b19420130a5a806b750d7
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50653927"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58774704"
 ---
 # <a name="c-runtime-error-r6017"></a>C çalışma zamanı hatası R6017
 
@@ -30,4 +30,4 @@ ms.locfileid: "50653927"
 
 İşlem, C çalışma zamanı çoklu iş parçacığı kilit sistem kaynağına erişmeye çalışılırken beklenmeyen bir hata aldı. Bu hata genellikle işlemi çalışma zamanı yığın verileri yanlışlıkla değiştirirse oluşur. Ancak, bu da çalışma zamanı kitaplığı veya işletim sistemi kod içinde bir iç hata neden olabilir.
 
-Bu sorunu düzeltmek için kodunuzu yığın bozulması hataları kontrol edin. Daha fazla bilgi ve örnekler için bkz. [CRT hata ayıklama öbeği ayrıntıları](/visualstudio/debugger/crt-debug-heap-details). Ardından, uygulama dağıtımınız için en son yeniden dağıtılabilir dosyaları kullandığınızdan emin olun. Bilgi için [Visual C++ üzerinde dağıtım](../../ide/deployment-in-visual-cpp.md).
+Bu sorunu düzeltmek için kodunuzu yığın bozulması hataları kontrol edin. Daha fazla bilgi ve örnekler için bkz. [CRT hata ayıklama öbeği ayrıntıları](/visualstudio/debugger/crt-debug-heap-details). Ardından, uygulama dağıtımınız için en son yeniden dağıtılabilir dosyaları kullandığınızdan emin olun. Bilgi için [Visual C++ üzerinde dağıtım](../../windows/deployment-in-visual-cpp.md).

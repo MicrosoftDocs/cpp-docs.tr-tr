@@ -32,12 +32,12 @@ helpviewer_keywords:
 - CreateAccessor method
 - CreateParameterAccessor method
 ms.assetid: a0088074-7135-465c-b228-69097a50b8cc
-ms.openlocfilehash: b3d4a1a6f4680579adafec7c1fcf5f4372f9918e
-ms.sourcegitcommit: c40469825b6101baac87d43e5f4aed6df6b078f5
+ms.openlocfilehash: 9050415795bab51992e21cedeb5188fd885b56b2
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/12/2018
-ms.locfileid: "51556718"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58776823"
 ---
 # <a name="cmanualaccessor-class"></a>CManualAccessor Sınıfı
 
@@ -84,7 +84,7 @@ void AddBindEntry(DBORDINAL nOrdinal,
 
 #### <a name="parameters"></a>Parametreler
 
-Bkz: [IAccessor::CreateAccessor'ı](https://docs.microsoft.com/previous-versions/windows/desktop/ms716845(v=vs.85)) içinde *OLE DB Programcının Başvurusu*.
+Bkz: [IAccessor::CreateAccessor'ı](/previous-versions/windows/desktop/ms716845(v=vs.85)) içinde *OLE DB Programcının Başvurusu*.
 
 *nOrdinal*<br/>
 [in] Sütun numarası.
@@ -125,7 +125,7 @@ void AddParameterEntry(DBORDINAL nOrdinal,
 
 #### <a name="parameters"></a>Parametreler
 
-Bkz: [IAccessor::CreateAccessor'ı](https://docs.microsoft.com/previous-versions/windows/desktop/ms716845(v=vs.85)) içinde *OLE DB Programcının Başvurusu*.
+Bkz: [IAccessor::CreateAccessor'ı](/previous-versions/windows/desktop/ms716845(v=vs.85)) içinde *OLE DB Programcının Başvurusu*.
 
 *nOrdinal*<br/>
 [in] Parametre numarası.
@@ -216,7 +216,7 @@ Standart HRESULT değerlerinden biri.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[DBViewer](../../visual-cpp-samples.md)<br/>
+[DBViewer](../../overview/visual-cpp-samples.md)<br/>
 [OLE DB Tüketici Şablonları](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
 [OLE DB Tüketici Şablonları Başvurusu](../../data/oledb/ole-db-consumer-templates-reference.md)<br/>
 [CAccessor Sınıfı](../../data/oledb/caccessor-class.md)<br/>

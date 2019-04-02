@@ -1,5 +1,5 @@
 ---
-title: 'TN041: MFC-OLE1 geçişi MFC-OLE 2'
+title: 'TN041: MFC-OLE 2 MFC-OLE1 geçişi'
 ms.date: 10/18/2018
 f1_keywords:
 - vc.mfc.ole
@@ -13,14 +13,14 @@ helpviewer_keywords:
 - upgrading Visual C++ applications [MFC], OLE1 to OLE2
 - TN041
 ms.assetid: 67f55552-4b04-4ddf-af0b-4d9eaf5da957
-ms.openlocfilehash: 2bdf0c353151c8e932b3e8641a72b2116c45f3f4
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b398a1adbf2f47343eed076f32ade5bb2564cd52
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50568533"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58767983"
 ---
-# <a name="tn041-mfcole1-migration-to-mfcole-2"></a>TN041: MFC/OLE 2'ye MFC/OLE1 Geçişi
+# <a name="tn041-mfcole1-migration-to-mfcole-2"></a>TN041: MFC/OLE 2 MFC/OLE1 geçişi
 
 > [!NOTE]
 > Aşağıdaki Teknik Not çevrimiçi belgelere ilk eklenmiştir beri güncelleştirilmemiş. Eski veya yanlış sonuç olarak, bazı yordamlar ve konular olabilir. En son bilgiler için bu konuyu çevrimiçi belge dizininde arama önerilir.
@@ -29,7 +29,7 @@ ms.locfileid: "50568533"
 
 Tasarım hedefleri OLE 2 sınıflar, MFC 2.5 (ve üzeri) için MFC 2.0 OLE 1.0 desteği yararlanılmasını aynı mimariye çoğunu korumak için biriydi. Sonuç olarak, birçok MFC 2.0 aynı OLE sınıfları MFC'nin bu sürümünü mevcut (`COleDocument`, `COleServerDoc`, `COleClientItem`, `COleServerItem`). Ayrıca, bu sınıflar API'leri birçoğu tam olarak aynıdır. Ancak, bazı ayrıntılar değişmiş beklediğiniz şekilde OLE 2 OLE 1.0 önemli ölçüde farklılık gösterir. MFC 2.0'ın OLE1 desteğiyle biliyorsanız, evde MFC'nin 2.0 desteğiyle rahattır.
 
-Varolan bir MFC/OLE1 uygulama alma ve OLE 2 işlevselliğini eklemeden önce bu not okumalısınız. Bu Not OLE1 işlevinizi MFC/OLE 2'ye taşıma sırasında karşılaşabileceğiniz ve ardından MFC 2.0 dahil iki uygulama taşıma sırasında ortaya çıkardı sorunlar ele alınmaktadır bazı genel sorunları ele alır: MFC OLE örnekleri [OCLIENT](../visual-cpp-samples.md) ve [HIERSVR](../visual-cpp-samples.md).
+Varolan bir MFC/OLE1 uygulama alma ve OLE 2 işlevselliğini eklemeden önce bu not okumalısınız. Bu Not OLE1 işlevinizi MFC/OLE 2'ye taşıma sırasında karşılaşabileceğiniz ve ardından MFC 2.0 dahil iki uygulama taşıma sırasında ortaya çıkardı sorunlar ele alınmaktadır bazı genel sorunları ele alır: MFC OLE örnekleri [OCLIENT](../overview/visual-cpp-samples.md) ve [HIERSVR](../overview/visual-cpp-samples.md).
 
 ## <a name="mfc-documentview-architecture-is-important"></a>MFC belge/görünüm mimarisi önemlidir
 
@@ -45,19 +45,19 @@ MFC canned"uygulama" sınıflar gibi `CToolBar`, `CStatusBar`, ve `CScrollView` 
 
 OLE işlevselliği eklemek MFC örnekleri vardır. Bu uygulamaların her biri farklı bir açıdan OLE uygular:
 
-- [HIERSVR](../visual-cpp-samples.md) çoğunlukla bir sunucu uygulaması olarak kullanmak için. MFC/OLE1 uygulama olarak MFC 2.0 dahil MFC/OLE 2'ye unity'nin ve OLE 2'de kullanılabilen birçok OLE özellikler uygular, ardından genişletilmiş.
+- [HIERSVR](../overview/visual-cpp-samples.md) çoğunlukla bir sunucu uygulaması olarak kullanmak için. MFC/OLE1 uygulama olarak MFC 2.0 dahil MFC/OLE 2'ye unity'nin ve OLE 2'de kullanılabilen birçok OLE özellikler uygular, ardından genişletilmiş.
 
-- [OCLIENT](../visual-cpp-samples.md) OLE özelliklerin çoğu kapsayıcı açısından göstermek için gereken bir tek başına kapsayıcı uygulaması budur. MFC 2.0 ' çok alındığını ve ardından özel Pano biçimleri ve katıştırılmış öğelerine bağlantılar gibi daha gelişmiş OLE özelliklerin çoğunu destekleyecek şekilde genişletilmiş.
+- [OCLIENT](../overview/visual-cpp-samples.md) OLE özelliklerin çoğu kapsayıcı açısından göstermek için gereken bir tek başına kapsayıcı uygulaması budur. MFC 2.0 ' çok alındığını ve ardından özel Pano biçimleri ve katıştırılmış öğelerine bağlantılar gibi daha gelişmiş OLE özelliklerin çoğunu destekleyecek şekilde genişletilmiş.
 
-- [DRAWCLI](../visual-cpp-samples.md) OCLIENT gibi bunu var olan bir nesne yönelimli çizim programında Framework'te yapar dışında bu uygulama OLE kapsayıcı desteği çok uygular. Size nasıl olabileceğiniz OLE kapsayıcı desteği uygulamak ve var olan uygulamanızla tümleştirme gösterir.
+- [DRAWCLI](../overview/visual-cpp-samples.md) OCLIENT gibi bunu var olan bir nesne yönelimli çizim programında Framework'te yapar dışında bu uygulama OLE kapsayıcı desteği çok uygular. Size nasıl olabileceğiniz OLE kapsayıcı desteği uygulamak ve var olan uygulamanızla tümleştirme gösterir.
 
-- [SUPERPAD](../visual-cpp-samples.md) bu uygulama, hem de ince bir tek başına uygulama olduğunu da OLE sunucusu. Bunu uygulayan sunucu desteği oldukça minimal bir kullanım sağlar ' dir. İlginizi çeken nasıl verileri panoya kopyalamak için OLE Pano hizmetlerini kullandığını olmakla birlikte Pano Yapıştır işlevselliği uygulamak için yerleşik Windows "düzenleme" denetimine işlevselliğini kullanır. Bu yeni OLE API'leri ile tümleştirme yanı sıra geleneksel Windows API kullanımı ilgi çekici bir karışımını gösterir.
+- [SUPERPAD](../overview/visual-cpp-samples.md) bu uygulama, hem de ince bir tek başına uygulama olduğunu da OLE sunucusu. Bunu uygulayan sunucu desteği oldukça minimal bir kullanım sağlar ' dir. İlginizi çeken nasıl verileri panoya kopyalamak için OLE Pano hizmetlerini kullandığını olmakla birlikte Pano Yapıştır işlevselliği uygulamak için yerleşik Windows "düzenleme" denetimine işlevselliğini kullanır. Bu yeni OLE API'leri ile tümleştirme yanı sıra geleneksel Windows API kullanımı ilgi çekici bir karışımını gösterir.
 
 Örnek uygulamalar hakkında daha fazla bilgi için "MFC örnek Yardım" konusuna bakın.
 
-## <a name="case-study-oclient-from-mfc-20"></a>Örnek olay incelemesi: OCLIENT MFC'den 2.0
+## <a name="case-study-oclient-from-mfc-20"></a>Örnek Olay İncelemesi: MFC 2.0 OCLIENT
 
-Yukarıda açıklandığı gibi [OCLIENT](../visual-cpp-samples.md) MFC 2.0 sürümünde eklenmiştir ve OLE MFC/OLE1 ile uygulanır. Bu uygulamanın başlangıçta MFC/OLE 2 sınıflarını kullanmak için dönüştürüldü adımlar aşağıda açıklanmıştır. MFC/OLE sınıfları daha iyi anlamak için başlangıç bağlantı noktası tamamlandıktan sonra birçok özellik eklendi. Bu özellikler burada ele alınacak değil; Bu gelişmiş özellikleri hakkında daha fazla bilgi için örnek kendisini bakın.
+Yukarıda açıklandığı gibi [OCLIENT](../overview/visual-cpp-samples.md) MFC 2.0 sürümünde eklenmiştir ve OLE MFC/OLE1 ile uygulanır. Bu uygulamanın başlangıçta MFC/OLE 2 sınıflarını kullanmak için dönüştürüldü adımlar aşağıda açıklanmıştır. MFC/OLE sınıfları daha iyi anlamak için başlangıç bağlantı noktası tamamlandıktan sonra birçok özellik eklendi. Bu özellikler burada ele alınacak değil; Bu gelişmiş özellikleri hakkında daha fazla bilgi için örnek kendisini bakın.
 
 > [!NOTE]
 > Derleyici hataları ve adım adım işlemi Visual C++ 2.0 ile oluşturuldu. Visual C++ 4.0 ile belirli hata iletileri ve konumlar değişmiş olabilir, ancak kavramsal bilgileri geçerli kalır.
@@ -291,7 +291,7 @@ Bu noktada, OCLIENT işlevsel bir OLE kapsayıcı uygulaması değil. Herhangi b
 
 OLE en ilginç özelliklerinin yerinde etkinleştirme (veya "Görsel düzenleme") biridir. Bu özellik, kapsayıcının kullanıcı arabirimi bölümlerini sağlanan için daha sorunsuz bir düzenleme arabirimi kullanıcıya almak sunucu uygulaması sağlar. Yerinde etkinleştirme OCLIENT uygulamak için bazı özel kaynakların yanı sıra bazı ek kod eklenmesi gerekir. Bu kaynaklar ve kod normalde AppWizard tarafından sağlanan — aslında, kodu buraya çoğunu doğrudan bir uygulamadan yeni AppWizard "Container" desteğiyle ödünç.
 
-Öncelikle, yerinde etkin olan bir öğe olduğunda kullanılacak bir menü kaynağı eklemek gereklidir. IDR_OCLITYPE kaynak kopyalama ve tüm dosya ve pencere pencereleri kaldırarak, bu ek menü kaynağı Visual C++'da oluşturabilirsiniz. İki ayırıcı çubukları grupları ayrımı belirtmek için dosya ve pencere pencereleri arasında eklenir (gibi görünmelidir: dosya &#124; &#124; pencere). Bu ayırıcılar anlamı ve nasıl sunucusu ve menüler birleştirilir hakkında daha fazla bilgi için bkz. [menüler ve kaynaklar: menü birleştirme](../mfc/menus-and-resources-menu-merging.md).
+Öncelikle, yerinde etkin olan bir öğe olduğunda kullanılacak bir menü kaynağı eklemek gereklidir. IDR_OCLITYPE kaynak kopyalama ve tüm dosya ve pencere pencereleri kaldırarak, bu ek menü kaynağı Visual C++'da oluşturabilirsiniz. İki ayırıcı çubukları grupları ayrımı belirtmek için dosya ve pencere pencereleri arasında eklenir (gibi görünmelidir: Dosya &#124; &#124; pencere). Bu ayırıcılar anlamı ve nasıl sunucusu ve menüler birleştirilir hakkında daha fazla bilgi için bkz [menüler ve kaynaklar: Menü birleştirme](../mfc/menus-and-resources-menu-merging.md).
 
 Oluşturulan bu menüleri oluşturduktan sonra bunları hakkında bilmeniz framework izin gerekir. Bu çağrılarak gerçekleştirilir `CDocTemplate::SetContainerInfo` belge şablonu listesine, Initınstance'a eklemeden önce belge şablonu için. Belge şablonu kaydetmek için yeni kod şöyle görünür:
 
@@ -351,7 +351,7 @@ BOOL CRectItem::OnChangeItemPosition(const CRect& rectPos)
 }
 ```
 
-Bu noktada, yerinde etkin ve etkin olduğunda, öğeyi taşıma ve boyutlandırma ile dağıtılacak öğeyi izin vermek için yeterli kod yoktur, ancak hiçbir kod düzenleme oturumu çıkmak kullanıcı izin verir. Bazı sunucular bu işlevselliği kendilerini escape tuşu işleyerek sağlayacak olsa da, kapsayıcıları öğeyi devre dışı bırakmak için iki yol sağladığını önerilir: (1) dışındaki bir öğeye tıklayarak ve (2) ESCAPE tuşuna basarak.
+Bu noktada, yerinde etkin ve etkin olduğunda, öğeyi taşıma ve boyutlandırma ile dağıtılacak öğeyi izin vermek için yeterli kod yoktur, ancak hiçbir kod düzenleme oturumu çıkmak kullanıcı izin verir. Bazı sunucular bu işlevselliği kendilerini escape tuşu işleyerek sağlayacak olsa da, kapsayıcıları öğeyi devre dışı bırakmak için iki yol sağladığını önerilir: (1) öğe dışında ve (2) ESCAPE tuşuna basarak tıklayarak.
 
 Çıkış anahtarı için bir komuta VK_ESCAPE tuşu eşleştiren Visual C++ ile bir Hızlandırıcı ekleyin, ID_CANCEL_EDIT kaynaklarına eklenir. Bu komutun işleyicisi aşağıdaki gibidir:
 
@@ -420,9 +420,9 @@ void CMainView::OnSize(UINT nType, int cx, int cy)
 }
 ```
 
-## <a name="case-study-hiersvr-from-mfc-20"></a>Örnek olay incelemesi: HIERSVR MFC'den 2.0
+## <a name="case-study-hiersvr-from-mfc-20"></a>Örnek Olay İncelemesi: MFC 2.0 HIERSVR
 
-[HIERSVR](../visual-cpp-samples.md) OLE MFC/OLE1 ile uygulanan ve MFC 2. 0'da eklenmiştir. Bu Not, bu uygulamanın başlangıçta MFC/OLE 2 sınıflarını kullanmak için dönüştürüldü adımları kısaca açıklanmaktadır. MFC/OLE 2 sınıfları daha iyi anlamak için başlangıç bağlantı noktası tamamlandıktan sonra birçok özellik eklendi. Bu özellikler burada ele alınacak değil; Bu gelişmiş özellikleri hakkında daha fazla bilgi için örnek kendisini bakın.
+[HIERSVR](../overview/visual-cpp-samples.md) OLE MFC/OLE1 ile uygulanan ve MFC 2. 0'da eklenmiştir. Bu Not, bu uygulamanın başlangıçta MFC/OLE 2 sınıflarını kullanmak için dönüştürüldü adımları kısaca açıklanmaktadır. MFC/OLE 2 sınıfları daha iyi anlamak için başlangıç bağlantı noktası tamamlandıktan sonra birçok özellik eklendi. Bu özellikler burada ele alınacak değil; Bu gelişmiş özellikleri hakkında daha fazla bilgi için örnek kendisini bakın.
 
 > [!NOTE]
 > Derleyici hataları ve adım adım işlemi Visual C++ 2.0 ile oluşturuldu. Visual C++ 4.0 ile belirli hata iletileri ve konumlar değişmiş olabilir, ancak kavramsal bilgileri geçerli kalır.
@@ -600,7 +600,7 @@ CSize CServerItem::CalcNodeSize()
 }
 ```
 
-Ayrıca CServerItem geçersiz kılar `COleServerItem::OnGetTextData`. Bu işlev, MFC/OLE kullanımdan kalkmıştır ve farklı bir mekanizma tarafından değiştirilir. MFC OLE örnek MFC 3.0 sürümünü [HIERSVR](../visual-cpp-samples.md) geçersiz kılarak bu işlevselliğini uygular `COleServerItem::OnRenderFileData`. Bu işlev OnGetTextData geçersiz kılma kaldırabilmeniz için bu temel bağlantı noktası için önemli değil.
+Ayrıca CServerItem geçersiz kılar `COleServerItem::OnGetTextData`. Bu işlev, MFC/OLE kullanımdan kalkmıştır ve farklı bir mekanizma tarafından değiştirilir. MFC OLE örnek MFC 3.0 sürümünü [HIERSVR](../overview/visual-cpp-samples.md) geçersiz kılarak bu işlevselliğini uygular `COleServerItem::OnRenderFileData`. Bu işlev OnGetTextData geçersiz kılma kaldırabilmeniz için bu temel bağlantı noktası için önemli değil.
 
 Ele alınmayan çok daha fazla hata svritem.cpp de vardır. Bunlar "gerçek" hatalar değildir — önceki hatalarının neden yalnızca hataları.
 
@@ -644,7 +644,7 @@ Bu sunucu uygulaması için "Görsel düzenleme" (veya yerinde etkinleştirme) e
 
 - Bu özel kaynak ve sınıflarını hakkında framework söylemeniz gerekir.
 
-Menü kaynağı oluşturmak kolaydır. Visual C++ çalıştırın, menü kaynağı IDR_HIERSVRTYPE IDR_HIERSVRTYPE_SRVR_IP adlı bir menü kaynağı kopyalayın. Yalnızca düzenleme ve Yardım menüsü açılır sol menü değiştirin. Düzenle ve Yardım menüler arasında menü iki ayırıcılar ekleyin (gibi görünmelidir: düzenleme &#124; &#124; yardımcı). Bu ayırıcılar anlamı ve nasıl sunucusu ve menüler birleştirilir hakkında daha fazla bilgi için bkz. [menüler ve kaynaklar: menü birleştirme](../mfc/menus-and-resources-menu-merging.md).
+Menü kaynağı oluşturmak kolaydır. Visual C++ çalıştırın, menü kaynağı IDR_HIERSVRTYPE IDR_HIERSVRTYPE_SRVR_IP adlı bir menü kaynağı kopyalayın. Yalnızca düzenleme ve Yardım menüsü açılır sol menü değiştirin. Düzenle ve Yardım menüler arasında menü iki ayırıcılar ekleyin (gibi görünmelidir: Düzen &#124; &#124; yardımcı). Bu ayırıcılar anlamı ve nasıl sunucusu ve menüler birleştirilir hakkında daha fazla bilgi için bkz. [menüler ve kaynaklar: Menü birleştirme](../mfc/menus-and-resources-menu-merging.md).
 
 Alt araç çubuğu için bit eşlem işaretli bir "Sunucu" seçeneği ile yeni bir AppWizard tarafından oluşturulan uygulama adresinden kopyalayarak kolayca oluşturulabilir. Bu bit eşlem ardından Visual C++'ta içeri aktarılabilir. Bit eşlem, bir kimliği IDR_HIERSVRTYPE_SRVR_IP verdiğinizden emin olun.
 

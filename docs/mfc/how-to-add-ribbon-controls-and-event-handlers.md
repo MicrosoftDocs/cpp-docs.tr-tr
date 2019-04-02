@@ -5,12 +5,12 @@ helpviewer_keywords:
 - event handlers [MFC], adding
 - ribbon controls [MFC], adding
 ms.assetid: b31f25bc-ede7-49c3-9e3c-dffe4e174a69
-ms.openlocfilehash: 8a164101dc42241a2cc76c91a3baa66e02e4dc90
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: c21e8b86962ebf37ca1a06bae056d09b9a9dbb2f
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57291138"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58770129"
 ---
 # <a name="how-to-add-ribbon-controls-and-event-handlers"></a>Nasıl yapılır: Şerit denetimleri ve olay işleyicileri ekleme
 
@@ -40,5 +40,5 @@ Bu konu başlığında, Şerit Tasarımcısını açmanın, bir düğme ekleyin 
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[RibbonGadgets örneği: Şerit araçları uygulaması](../visual-cpp-samples.md)<br/>
+[RibbonGadgets örneği: Şerit araçları uygulaması](../overview/visual-cpp-samples.md)<br/>
 [Şerit Tasarımcısı (MFC)](../mfc/ribbon-designer-mfc.md)

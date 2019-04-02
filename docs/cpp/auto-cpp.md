@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - auto keyword [C++]
 ms.assetid: e9d495d7-601c-4547-b897-998389a311f4
-ms.openlocfilehash: f4d17069ed4e06a85b80d2027433ff87be6d1521
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.openlocfilehash: 3d77a17d490f8d7680f095367c309ce0e4f366b7
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51518573"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58776342"
 ---
 # <a name="auto-c"></a>Otomatik (C++)
 
@@ -34,13 +34,13 @@ auto declarator initializer;
 
 Kullanmanızı öneririz **otomatik** çoğu durum için anahtar sözcüğü — bir dönüştürme gerçekten istemediğiniz sürece; çünkü bu avantajlar sağlar:
 
-- **Sağlamlık:** ifadenin türü değiştirilirse — Bu, bir işlevin dönüş türü değiştirildiğinde içerir — düzgün çalışır.
+- **Sağlamlık:** İfadenin türü değiştirilirse — Bu, bir işlevin dönüş türü değiştirildiğinde içerir — düzgün çalışır.
 
-- **Performans:** dönüştürme olacaktır garanti.
+- **Performans:** Hiçbir dönüştürme olacaktır garanti.
 
-- **Kullanılabilirlik:** türü adı yazım güçlükler ve yazım yanlışları hakkında endişelenmeniz gerekmez.
+- **Kullanılabilirlik:** Tür adı yazım güçlükler ve yazım hataları hakkında endişelenmeniz gerekmez.
 
-- **Verimliliği:** kodlamanızı daha verimli olabilir.
+- **Verimliliği:** Kodlamanızı daha verimli olabilir.
 
 Dönüştürme durumları değil istediğiniz kullanılacak **otomatik**:
 
@@ -52,7 +52,7 @@ Kullanılacak **otomatik** anahtar sözcüğü, bir tür yerine bir değişken b
 
 Atama (eşittir işareti sözdizimi) doğrudan başlatmadaki (işlev stili sözdizimi) başlatma ifadesi olabilir bir [new işleci](new-operator-cpp.md) ifadesi veya başlatma ifadesi olabilir  *için aralığı-bildirimi* parametresinde bir [aralık tabanlı for deyimi (C++)](../cpp/range-based-for-statement-cpp.md) deyimi. Daha fazla bilgi için [başlatıcılar](../cpp/initializers.md) ve daha sonra bu belgedeki kod örnekleri.
 
-**Otomatik** anahtar sözcüğü bir tür için bir yer tutucudur, ancak kendisi değil bir tür. Bu nedenle, **otomatik** anahtar sözcüğü kullanılamaz atamaları veya işleçler gibi [sizeof](../cpp/sizeof-operator.md) ve [TypeID](../windows/typeid-cpp-component-extensions.md).
+**Otomatik** anahtar sözcüğü bir tür için bir yer tutucudur, ancak kendisi değil bir tür. Bu nedenle, **otomatik** anahtar sözcüğü kullanılamaz atamaları veya işleçler gibi [sizeof](../cpp/sizeof-operator.md) ve (C + +/ CLI) [TypeID](../extensions/typeid-cpp-component-extensions.md).
 
 ## <a name="usefulness"></a>Fayda
 
@@ -133,7 +133,7 @@ Kullanma kısıtlamaları aşağıdaki tabloda **otomatik** anahtar sözcüğü 
 |[C3536](../error-messages/compiler-errors-2/compiler-error-c3536.md)|Bir sembol başlatılmadan önce kullanılamaz. Uygulamada, kendisini başlatmak için bir değişken kullanılamaz anlamına gelir.|
 |[C3537](../error-messages/compiler-errors-2/compiler-error-c3537.md)|İle bildirilen bir türe dönüştürülemiyor **otomatik** anahtar sözcüğü.|
 |[C3538](../error-messages/compiler-errors-2/compiler-error-c3538.md)|Bir bildirimci listesinde ile bildirilen tüm sembolleri **otomatik** anahtar sözcüğü, aynı türe çözümlemelisiniz. Daha fazla bilgi için [bildirimlerinin ve tanımlarının](declarations-and-definitions-cpp.md).|
-|[C3540](../error-messages/compiler-errors-2/compiler-error-c3540.md), [C3541](../error-messages/compiler-errors-2/compiler-error-c3541.md)|[Sizeof](../cpp/sizeof-operator.md) ve [TypeID](../windows/typeid-cpp-component-extensions.md) işleçleri ile bildirilen bir sembol uygulanamaz **otomatik** anahtar sözcüğü.|
+|[C3540](../error-messages/compiler-errors-2/compiler-error-c3540.md), [C3541](../error-messages/compiler-errors-2/compiler-error-c3541.md)|[Sizeof](../cpp/sizeof-operator.md) ve [TypeID](../extensions/typeid-cpp-component-extensions.md) işleçleri ile bildirilen bir sembol uygulanamaz **otomatik** anahtar sözcüğü.|
 
 ## <a name="examples"></a>Örnekler
 
@@ -225,7 +225,7 @@ int main()
 [Anahtar Sözcükler](../cpp/keywords-cpp.md)<br/>
 [/Zc:auto (Değişken Türünü Türet)](../build/reference/zc-auto-deduce-variable-type.md)<br/>
 [sizeof İşleci](../cpp/sizeof-operator.md)<br/>
-[typeid](../windows/typeid-cpp-component-extensions.md)<br/>
+[typeid](../extensions/typeid-cpp-component-extensions.md)<br/>
 [new işleci](new-operator-cpp.md)<br/>
 [Bildirimler ve Tanımlar](declarations-and-definitions-cpp.md)<br/>
 [Lambda İfadeleri Örnekleri](../cpp/examples-of-lambda-expressions.md)<br/>

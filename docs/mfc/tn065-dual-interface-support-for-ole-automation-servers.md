@@ -1,5 +1,5 @@
 ---
-title: 'TN065: OLE Otomasyon Sunucuları için Çift Arabirim Desteği'
+title: 'TN065: OLE otomasyon sunucuları için çift arabirim desteği'
 ms.date: 06/28/2018
 f1_keywords:
 - vc.ole
@@ -9,19 +9,19 @@ helpviewer_keywords:
 - ACDUAL sample [MFC]
 - Automation servers [MFC], dual-interface support
 ms.assetid: b5c8ed09-2f7f-483c-80fc-2a47ad896063
-ms.openlocfilehash: 5a04c2712182fe9c9ed3fd9e5fe4548404f96a5d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 33828f3979fb938ae6e88fa3cb0d6ee24daa958c
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50575220"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58776680"
 ---
-# <a name="tn065-dual-interface-support-for-ole-automation-servers"></a>TN065: OLE Otomasyon Sunucuları için Çift Arabirim Desteği
+# <a name="tn065-dual-interface-support-for-ole-automation-servers"></a>TN065: OLE otomasyon sunucuları için çift arabirim desteği
 
 > [!NOTE]
 > Aşağıdaki Teknik Not çevrimiçi belgelere ilk eklenmiştir beri güncelleştirilmemiş. Eski veya yanlış sonuç olarak, bazı yordamlar ve konular olabilir. En son bilgiler için bu konuyu çevrimiçi belge dizininde arama önerilir.
 
-Bu Not, MFC tabanlı OLE Otomasyon sunucu uygulaması için çift arabirim desteği eklemek anlatılmaktadır. [ACDUAL](../visual-cpp-samples.md) örnek çift arabirim desteği gösterir ve örnek kod bu not, ACDUAL alınır. DECLARE_DUAL_ERRORINFO DUAL_ERRORINFO_PART ve IMPLEMENT_DUAL_ERRORINFO, gibi bu not açıklandığı makroları ACDUAL örneğinde bir parçasıdır ve MFCDUAL içinde bulunabilir. H
+Bu Not, MFC tabanlı OLE Otomasyon sunucu uygulaması için çift arabirim desteği eklemek anlatılmaktadır. [ACDUAL](../overview/visual-cpp-samples.md) örnek çift arabirim desteği gösterir ve örnek kod bu not, ACDUAL alınır. DECLARE_DUAL_ERRORINFO DUAL_ERRORINFO_PART ve IMPLEMENT_DUAL_ERRORINFO, gibi bu not açıklandığı makroları ACDUAL örneğinde bir parçasıdır ve MFCDUAL içinde bulunabilir. H
 
 ## <a name="dual-interfaces"></a>Çift arabirimler
 
@@ -43,7 +43,7 @@ OLE Otomasyonu olanak tanır ancak bir `IDispatch` arabirimi, VTBL arabirimi vey
 
 ODL dosya sunucunuzun nesneleriniz için çift arabirim tanımlamak ilk olarak değiştirin. Çift arabirim tanımlamak için bir arabirimi deyimi yerine kullanmalısınız `DISPINTERFACE` Visual C++ sihirbazları oluşturma deyimi. Varolan kaldırma yerine `DISPINTERFACE` deyimi, yeni bir arabirim bildirimi ekleyin. Elinizde tutarak `DISPINTERFACE` form devam edebilirsiniz, nesne için özellikler ve yöntemler eklemek için ClassWizard kullanın, ancak eşdeğer özellikleri ve yöntemleri arabirimi Ekstrenizi eklemeniz gerekir.
 
-Bir interface deyimi için çift arabirim olmalıdır *OLEAUTOMATION* ve *çift* öznitelikleri ve arabirimi gerekir türetilen `IDispatch`. Kullanabileceğiniz [GUIDgen](../visual-cpp-samples.md) oluşturmak için örnek bir **IID** çift arabirim için:
+Bir interface deyimi için çift arabirim olmalıdır *OLEAUTOMATION* ve *çift* öznitelikleri ve arabirimi gerekir türetilen `IDispatch`. Kullanabileceğiniz [GUIDgen](../overview/visual-cpp-samples.md) oluşturmak için örnek bir **IID** çift arabirim için:
 
 ```IDL
 [ uuid(0BDD0E81-0DD7-11cf-BBA8-444553540000), // IID_IDualAClick
@@ -310,7 +310,7 @@ STDMETHODIMP CAutoClickDoc::XDualAClick::put_text(BSTR newText)
 }
 ```
 
-`CATCH_ALL_DUAL` doğru hata kodunu döndüren bir özel durum oluştuğunda üstlenir. `CATCH_ALL_DUAL` OLE Otomasyonu hata işleme bilgileri kullanarak bir MFC özel durum dönüştürür `ICreateErrorInfo` arabirimi. (Örnek `CATCH_ALL_DUAL` MFCDUAL dosyasında makrodur. H [ACDUAL](../visual-cpp-samples.md) örnek. Özel durumları işlemek için çağıran işlev `DualHandleException`, MFCDUAL dosyasıdır. CPP.) `CATCH_ALL_DUAL` oluşan özel durum türüne göre döndürülecek hata kodu belirler:
+`CATCH_ALL_DUAL` doğru hata kodunu döndüren bir özel durum oluştuğunda üstlenir. `CATCH_ALL_DUAL` OLE Otomasyonu hata işleme bilgileri kullanarak bir MFC özel durum dönüştürür `ICreateErrorInfo` arabirimi. (Örnek `CATCH_ALL_DUAL` MFCDUAL dosyasında makrodur. H [ACDUAL](../overview/visual-cpp-samples.md) örnek. Özel durumları işlemek için çağıran işlev `DualHandleException`, MFCDUAL dosyasıdır. CPP.) `CATCH_ALL_DUAL` oluşan özel durum türüne göre döndürülecek hata kodu belirler:
 
 - [COleDispatchException](../mfc/reference/coledispatchexception-class.md) - bu durumda, `HRESULT` kullanılarak aşağıdaki kod oluşturulur:
 
@@ -332,7 +332,7 @@ OLE Otomasyonu hata işleyicisini kullanılır, ayrıca uygulamalıdır belirtme
 
 Son olarak, desteklemek için tanımlanmış bir sınıf uygulamak `ISupportErrorInfo`.
 
-( [ACDUAL](../visual-cpp-samples.md) örnek içeren aşağıdaki üç adımda yapmanız yardımcı olması için üç makroları `DECLARE_DUAL_ERRORINFO`, `DUAL_ERRORINFO_PART`, ve `IMPLEMENT_DUAL_ERRORINFO`, MFCDUAL içerdiği tüm. H)
+( [ACDUAL](../overview/visual-cpp-samples.md) örnek içeren aşağıdaki üç adımda yapmanız yardımcı olması için üç makroları `DECLARE_DUAL_ERRORINFO`, `DUAL_ERRORINFO_PART`, ve `IMPLEMENT_DUAL_ERRORINFO`, MFCDUAL içerdiği tüm. H)
 
 Aşağıdaki örnek desteklemek için tanımlanmış bir sınıf uygulayan `ISupportErrorInfo`. `CAutoClickDoc` Otomasyon sınıfınıza adıdır ve `IID_IDualAClick` olduğu **IID** OLE Otomasyonu hata nesnesi bildirilen hatalar kaynağı arabirimi için:
 

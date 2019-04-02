@@ -11,12 +11,12 @@ helpviewer_keywords:
 - paint messages in view class [MFC]
 - device contexts, screen drawings
 ms.assetid: e3761db6-0f19-4482-a4cd-ac38ef7c4d3a
-ms.openlocfilehash: 77844ebd31f624229870d27c72b08a987b7533bd
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: bc461347b56379976cdf62014507e3a15529f081
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57280777"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58772572"
 ---
 # <a name="drawing-in-a-view"></a>Bir Görünümde Çizim Yapma
 
@@ -42,7 +42,7 @@ Bu örnekte tanımlayın `GetData` belge türetilmiş sınıfınızın bir üye 
 
 Örnek Görünümü'nde ortalanmış belgeden alır herhangi bir dize yazdırır. Varsa `OnDraw` çağrıdır ekran çizim için `CDC` geçirilen nesne *pDC* olduğu bir `CPaintDC` , Oluşturucusu zaten adlı sahiptir `BeginPaint`. İşlevleri çizim çağrıları, cihaz bağlam işaretçiyle yapılır. Cihaz bağlamları ve çizim çağrıları hakkında daha fazla bilgi için bkz. [CDC](../mfc/reference/cdc-class.md) içinde *MFC başvurusu* ve [pencere nesneleriyle çalışma](../mfc/working-with-window-objects.md).
 
-Yazma konusunda daha fazla örnek için `OnDraw`, bkz: [MFC örnekleri](../visual-cpp-samples.md).
+Yazma konusunda daha fazla örnek için `OnDraw`, bkz: [MFC örnekleri](../overview/visual-cpp-samples.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -44,12 +44,12 @@ helpviewer_keywords:
 - CMFCDesktopAlertWnd [MFC], SetSmallCaption
 - CMFCDesktopAlertWnd [MFC], SetTransparency
 ms.assetid: 73a2dd7b-ea84-4ae2-9830-7cf6e8dd2425
-ms.openlocfilehash: 6b7d72b048d9f44233f96a3af859315ea20e9747
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 3ff74f5025d888077b51f8191f043237597dfdbe
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57291645"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58776979"
 ---
 # <a name="cmfcdesktopalertwnd-class"></a>CMFCDesktopAlertWnd sınıfı
 
@@ -120,7 +120,7 @@ Masaüstü Uyarısı açılır penceresi davranışını denetlemek için aşağ
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, çeşitli yöntemlerin nasıl kullanılacağını gösterir `CMFCDesktopAlertWnd` yapılandırmak için sınıf bir `CMFCDesktopAlertWnd` nesne. Örneğin, bir animasyon türü ayarlayın, açılan pencerenin saydamlığı ayarlayın, uyarı pencere bir küçük resim yazısı görüntüler belirtin ve uyarı penceresi otomatik olarak kapanmadan önce geçen süreyi ayarlamak gösterilmektedir. Örnek oluşturma ve başlatma Masaüstü Uyarısı açılır penceresi de gösterir. Bu kod parçacığı parçasıdır [Masaüstü uyarı gösterim örneği](../../visual-cpp-samples.md).
+Aşağıdaki örnek, çeşitli yöntemlerin nasıl kullanılacağını gösterir `CMFCDesktopAlertWnd` yapılandırmak için sınıf bir `CMFCDesktopAlertWnd` nesne. Örneğin, bir animasyon türü ayarlayın, açılan pencerenin saydamlığı ayarlayın, uyarı pencere bir küçük resim yazısı görüntüler belirtin ve uyarı penceresi otomatik olarak kapanmadan önce geçen süreyi ayarlamak gösterilmektedir. Örnek oluşturma ve başlatma Masaüstü Uyarısı açılır penceresi de gösterir. Bu kod parçacığı parçasıdır [Masaüstü uyarı gösterim örneği](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_DesktopAlertDemo#1](../../mfc/reference/codesnippet/cpp/cmfcdesktopalertwnd-class_1.cpp)]
 

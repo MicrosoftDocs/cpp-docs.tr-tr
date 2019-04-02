@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4754
 ms.assetid: e0e4606a-754a-4f42-a274-21a34978d21d
-ms.openlocfilehash: 82036017188acc3f882e9751096af8ab268fd9db
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.openlocfilehash: 203f2b97547c7ff8b1d68e3640e62d531b2600e9
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51525177"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58780359"
 ---
 # <a name="compiler-warning-level-4-c4754"></a>Derleyici Uyarısı (düzey 4) C4754
 
@@ -19,7 +19,7 @@ Bir karşılaştırma içindeki aritmetik işlemler için dönüştürme kuralla
 
 Karşılaştırmanın sonucu her zaman aynı olduğu için C4754 uyarı verilir. Bu, ilişkili tamsayı ifade hatalı olduğu bir koşulun dalların hiçbir zaman, büyük olasılıkla yerine getirildiğini gösterir. Bu kod hatası yanlış tamsayı taşması denetimlerini 64-bit mimarilerde sıklıkla oluşuyor.
 
-Tamsayı dönüştürme kuralları karmaşıktır ve çoğu Zarif Tuzaklar vardır. Her C4754 uyarı düzeltiliyor alternatif olarak kullanmak için kodu güncelleştirebilirsiniz [SafeInt Kitaplığı](../../windows/safeint-library.md).
+Tamsayı dönüştürme kuralları karmaşıktır ve çoğu Zarif Tuzaklar vardır. Her C4754 uyarı düzeltiliyor alternatif olarak kullanmak için kodu güncelleştirebilirsiniz [SafeInt Kitaplığı](../../safeint/safeint-library.md).
 
 ## <a name="example"></a>Örnek
 

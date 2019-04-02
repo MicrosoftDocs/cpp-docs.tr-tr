@@ -6,18 +6,18 @@ f1_keywords:
 helpviewer_keywords:
 - C3282
 ms.assetid: bac2ac89-c360-4c24-bb81-c20c62ece9ba
-ms.openlocfilehash: 7092ddc3bf6859212cbb143572de1ef3604a13d3
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 46be1f5250c1ca787909c48646d59180d62bd899
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50491513"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58780853"
 ---
 # <a name="compiler-error-c3282"></a>Derleyici Hatası C3282
 
 genel parametre listeleri üzerinde yalnızca görüntülenebilir yönetilen veya WinRTclasses, yapılar veya işlevleri
 
-Genel parametre listesi yanlış kullanıldı.  Daha fazla bilgi için [genel türler](../../windows/generics-cpp-component-extensions.md).
+Genel parametre listesi yanlış kullanıldı.  Daha fazla bilgi için [genel türler](../../extensions/generics-cpp-component-extensions.md).
 
 ## <a name="example"></a>Örnek
 

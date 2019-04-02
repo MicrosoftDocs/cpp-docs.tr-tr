@@ -18,12 +18,12 @@ helpviewer_keywords:
 - data types [C++], enumerating
 - public members [C++]
 ms.assetid: 46b6ff4a-e441-4022-8892-78e69422f230
-ms.openlocfilehash: 9d7d2623608d7dab27de78567582c7043468e98f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: a17910e0288b81723aa837ba9204bb40713d5d49
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50444024"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58770828"
 ---
 # <a name="reflection-ccli"></a>Yansıma (C++/CLI)
 
@@ -31,12 +31,12 @@ Yansıma bilinen veri türleri, çalışma zamanında denetlenmesine olanak sağ
 
 Sağlanan derleme adı için tanımlayıcı adı olduğunu unutmayın (bkz [bkz](/dotnet/framework/app-domains/create-and-use-strong-named-assemblies)), derleme sürümü, kültürü ve imza bilgilerini içerir. Ayrıca, veri türünün tanımlandığı ad alanı adı, temel sınıfın adı ile birlikte alınabilir olduğunu unutmayın.
 
-Yansıma özelliklerine erişmek için en yaygın yollarından biri sayesinde <xref:System.Object.GetType%2A> yöntemi. Bu yöntem tarafından sağlanan [System::Object](https://msdn.microsoft.com/library/system.object.aspx), hangi atık olarak toplanmış tüm sınıflar türetilen öğesinden.
+Yansıma özelliklerine erişmek için en yaygın yollarından biri sayesinde <xref:System.Object.GetType%2A> yöntemi. Bu yöntem tarafından sağlanan <xref:System.Object?displayProperty=nameWithType>, hangi atık olarak toplanmış tüm sınıflar türetilen öğesinden.
 
 > [!NOTE]
 > Visual C++ derleyicisi ile .exe yansıma .exe ile oluşturulursa yalnızca izin **/CLR: pure** veya **/CLR: safe** derleyici seçenekleri. **/CLR: pure** ve **/CLR: safe** derleyici seçenekleri, Visual Studio 2015'te kullanım dışı ve Visual Studio 2017'de kullanılamaz. Bkz: [/CLR (ortak dil çalışma zamanı derlemesi)](../build/reference/clr-common-language-runtime-compilation.md) daha fazla bilgi için.
 
-Daha fazla bilgi için [System.Reflection Namespace](https://msdn.microsoft.com/library/system.reflection.aspx)
+Daha fazla bilgi için bkz. <xref:System.Reflection>
 
 ## <a name="example-gettype"></a>Örnek: GetType
 
@@ -79,7 +79,7 @@ type of i = 'System.Int32'
 
 ## <a name="example-typeid"></a>Örnek: typeid
 
-Olduğu gibi `GetType` yöntemi [TypeID](../windows/typeid-cpp-component-extensions.md) işleci bir işaretçi döndürür bir **türü** nesne türü adı bu kodu gösterir şekilde **System.Int32**. Tür adları görüntüleme yansıma en temel özelliğidir, ancak potansiyel olarak daha yararlı bir Teknik İnceleme veya numaralandırılmış türler için geçerli değerleri bulmak için. Bu statik kullanarak yapılabilir **Enum::GetNames** işlev, her bir numaralandırma değeri metin biçiminde içeren bir dize dizesi döndürür.  Aşağıdaki örnek değeri sabit listesi değerlerini tanımlayan bir dize dizisi alır **seçenekleri** (CLR) sabit listesi ve bir döngüde görüntüler.
+Olduğu gibi `GetType` yöntemi [TypeID](../extensions/typeid-cpp-component-extensions.md) işleci bir işaretçi döndürür bir **türü** nesne türü adı bu kodu gösterir şekilde **System.Int32**. Tür adları görüntüleme yansıma en temel özelliğidir, ancak potansiyel olarak daha yararlı bir Teknik İnceleme veya numaralandırılmış türler için geçerli değerleri bulmak için. Bu statik kullanarak yapılabilir **Enum::GetNames** işlev, her bir numaralandırma değeri metin biçiminde içeren bir dize dizesi döndürür.  Aşağıdaki örnek değeri sabit listesi değerlerini tanımlayan bir dize dizisi alır **seçenekleri** (CLR) sabit listesi ve bir döngüde görüntüler.
 
 Dördüncü bir seçenek eklenirse **seçenekleri** sabit listesi, bu kod gerekmeksizin, sabit listesi, ayrı bir derlemede tanımlanan olsa bile yeni seçenek bildirir.
 
@@ -177,9 +177,9 @@ public:
 
 ## <a name="example-inspection-of-assemblies"></a>Örnek: inceleme derleme
 
-Yukarıdaki kod vcpp_reflection_6.dll adlı bir DLL içine derlenir, bu derlemenin içeriğini incelemek için yansıma kullanabilirsiniz. Bu statik yansıma API'si işlevinin kullanılmasına [Assembly::Load](https://msdn.microsoft.com/library/system.reflection.assembly.load.aspx) derlemesi yüklenemiyor. Bu işlev adresini döndürür bir **derleme** içindeki türler ve modüller hakkında sorgulanabilir bir nesne.
+Yukarıdaki kod vcpp_reflection_6.dll adlı bir DLL içine derlenir, bu derlemenin içeriğini incelemek için yansıma kullanabilirsiniz. Bu derlemeyi API işlevi xref:System.Reflection.Assembly.Load%2A?displayProperty=nameWithType statik yansıma kullanarak içerir. Bu işlev adresini döndürür bir **derleme** içindeki türler ve modüller hakkında sorgulanabilir bir nesne.
 
-Yansıma sistem derleme, bir dizi başarıyla yüklendikten sonra **türü** nesneleri ile alınır [Assembly::GetTypes](https://msdn.microsoft.com/library/system.reflection.assembly.gettypes.aspx) işlevi. Bu durumda, yalnızca bir sınıf tanımlanır ancak her dizi öğesi farklı bir türle ilgili bilgi içerir. Bir döngü kullanarak her **türü** kullanarak tür üyeleri hakkında bu dizinin içinde sorgulanır **Type::GetMembers** işlevi. Bu işlev bir dizi döndürür **MethodInfo** nesneleri, üye işlevi, veri üyesi veya özellik türü hakkında bilgi içeren her bir nesne.
+Yansıma sistem derleme, bir dizi başarıyla yüklendikten sonra **türü** nesneleri ile alınır <xref:System.Reflection.Assembly.GetTypes%2A?displayProperty=nameWithType> işlevi. Bu durumda, yalnızca bir sınıf tanımlanır ancak her dizi öğesi farklı bir türle ilgili bilgi içerir. Bir döngü kullanarak her **türü** kullanarak tür üyeleri hakkında bu dizinin içinde sorgulanır **Type::GetMembers** işlevi. Bu işlev bir dizi döndürür **MethodInfo** nesneleri, üye işlevi, veri üyesi veya özellik türü hakkında bilgi içeren her bir nesne.
 
 Yöntemlerin listesi işlevleri açıkça içeren Not tanımlanan **TestClass** ve işlev örtük olarak devralındığı **System::Object** sınıfı. .NET yerine Visual C++ sözdizimi tanımlanmakta bir parçası olarak, Özellikler get/set işlevleri tarafından erişilen temel alınan veri üyesi olarak görünür. Get/set işlevleri, normal yöntemler olarak bu listede görünür. Yansıma, ortak dil çalışma zamanı değil Visual C++ Derleyici tarafından desteklenir.
 
@@ -232,7 +232,7 @@ int main() {
 }
 ```
 
-## <a name="implement"></a> Nasıl yapılır: yansıma kullanarak eklenti bileşeni mimarisi uygulama
+## <a name="implement"></a> Nasıl Yapılır: Yansıma kullanarak eklenti bileşeni mimarisi uygulama
 
 Aşağıdaki kod örnekleri, basit bir "eklentisi" mimarisi uygulama yansıma kullanımını gösterir. İlk liste uygulamadır ve ikinci eklentidir. Uygulamanın kendisi bir komut satırı bağımsız değişken olarak sağlanan eklentisi dll bulunan herhangi bir form tabanlı sınıflar dolduran bir birden çok belge biçimidir.
 
@@ -340,7 +340,7 @@ protected:
 };
 ```
 
-## <a name="enumerate"></a> Nasıl yapılır: yansıma kullanarak derlemelerde veri türlerini numaralandırma
+## <a name="enumerate"></a> Nasıl Yapılır: Yansıma kullanarak derlemelerde veri türlerini numaralandırma
 
 Aşağıdaki kod, genel türler ve üyeler kullanarak numaralandırmasını gösterir <xref:System.Reflection>.
 

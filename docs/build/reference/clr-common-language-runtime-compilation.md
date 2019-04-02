@@ -13,12 +13,12 @@ helpviewer_keywords:
 - Managed Extensions for C++, compiling
 - common language runtime, /clr compiler option
 ms.assetid: fec5a8c0-40ec-484c-a213-8dec918c1d6c
-ms.openlocfilehash: 124f54f46e71ac8fb8511d12fba43ab77d04c32e
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.openlocfilehash: 1946fdabe66934e64cf95d3c3f12e16bc98ba664
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57822475"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58779358"
 ---
 # <a name="clr-common-language-runtime-compilation"></a>/clr (Ortak Dil Çalışma Zamanı Derlemesi)
 
@@ -67,13 +67,13 @@ Bir veya daha fazla aşağıdaki anahtarları, virgülle ayrılmış.
 
 Yönetilen kod inceledi ve CLR tarafından yönetilen koddur. Yönetilen kod, yönetilen nesnelere erişebilir. Daha fazla bilgi için [/CLR kısıtlamalar](clr-restrictions.md).
 
-Tanımlama ve yönetilen türleri kullanma uygulamaları geliştirme hakkında daha fazla bilgi için bkz: [çalışma zamanı platformları için bileşen uzantıları](../../windows/component-extensions-for-runtime-platforms.md).
+Tanımlama ve yönetilen türleri kullanma uygulamaları geliştirme hakkında daha fazla bilgi için bkz: [çalışma zamanı platformları için bileşen uzantıları](../../extensions/component-extensions-for-runtime-platforms.md).
 
 Kullanılarak derlenmiş bir uygulama **/CLR** olabilir veya yönetilen veri içermeyebilir.
 
 Yönetilen bir uygulama üzerinde hata ayıklamayı etkinleştirmek için bkz: [assemblydebug (DebuggableAttribute ekleme)](assemblydebug-add-debuggableattribute.md).
 
-Yalnızca CLR Türleri atık toplanan yığında örneği oluşturulur. Daha fazla bilgi için [sınıfları ve yapıları](../../windows/classes-and-structs-cpp-component-extensions.md). Bir işlev yerel kod olarak derlemek için kullanın `unmanaged` pragması. Daha fazla bilgi için [yönetilen, yönetilmeyen](../../preprocessor/managed-unmanaged.md).
+Yalnızca CLR Türleri atık toplanan yığında örneği oluşturulur. Daha fazla bilgi için [sınıfları ve yapıları](../../extensions/classes-and-structs-cpp-component-extensions.md). Bir işlev yerel kod olarak derlemek için kullanın `unmanaged` pragması. Daha fazla bilgi için [yönetilen, yönetilmeyen](../../preprocessor/managed-unmanaged.md).
 
 Varsayılan olarak, **/CLR** etkili değildir. Zaman **/CLR** kıyaslandığında geçerli **/MD** ayrıca etkilidir. Daha fazla bilgi için [/MD, / MT, /LD (çalışma zamanı kitaplığını kullan)](md-mt-ld-use-run-time-library.md). **/ MD** dinamik olarak bağlanmış, çok iş parçacıklı çalışma zamanı yordamları sürümleri standart üstbilgi (.h) dosyalarından seçilmesini sağlar. CLR çöp toplayıcısı sonlandırıcılar yardımcı bir iş parçacığında çalıştığı için programlama yönetilen için çoklu iş parçacığı kullanımı gereklidir.
 
@@ -105,5 +105,5 @@ class {} x;
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MSVC derleyici seçenekleri](compiler-options.md)<br/>
-[MSVC derleyici komut satırı sözdizimi](compiler-command-line-syntax.md)
+[MSVC Derleyicisi Seçenekleri](compiler-options.md)<br/>
+[MSVC Derleyicisi Komut Satırı Söz Dizimi](compiler-command-line-syntax.md)

@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3638
 ms.assetid: 8d8bc5ca-75aa-480e-b6b6-3178fab51b1d
-ms.openlocfilehash: 8b1ef7f4cb38653f0ccdfae5684eb2907a735af7
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 33bb248faf946c39543de4a14a44e2ebbda49880
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50486898"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58775237"
 ---
 # <a name="compiler-error-c3638"></a>Derleyici Hatası C3638
 
@@ -19,7 +19,7 @@ ms.locfileid: "50486898"
 
 Derleyici örtük olarak kutulama desteklemek için her bir yönetilen sınıf için dönüştürme işleci tanımlar. Bu işleci tanımlanamaz.
 
-Daha fazla bilgi için [örtük kutulama](../../windows/boxing-cpp-component-extensions.md).
+Daha fazla bilgi için [örtük kutulama](../../extensions/boxing-cpp-component-extensions.md).
 
 Aşağıdaki örnek, C3638 oluşturur:
 

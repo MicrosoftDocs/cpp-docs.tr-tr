@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4489
 ms.assetid: 43b51c8c-27b5-44c9-b974-fe4b48f4896f
-ms.openlocfilehash: 4da96fd13fe9ba03c19808d32d3cdd9c73ec2b18
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: dd150621ad3474444861982c095ae8a6addb52fa
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50584736"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58768243"
 ---
 # <a name="compiler-warning-level-1-c4489"></a>Derleyici Uyarısı (düzey 1) C4489
 
@@ -19,7 +19,7 @@ ms.locfileid: "50584736"
 
 Belirleyicisi anahtar sözcüğü, bir arabirimi yöntemi üzerinde yanlış kullanıldı.
 
-Daha fazla bilgi için [geçersiz kılma tanımlayıcıları](../../windows/override-specifiers-cpp-component-extensions.md).
+Daha fazla bilgi için [geçersiz kılma tanımlayıcıları](../../extensions/override-specifiers-cpp-component-extensions.md).
 
 ## <a name="example"></a>Örnek
 

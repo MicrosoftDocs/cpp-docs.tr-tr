@@ -160,12 +160,12 @@ helpviewer_keywords:
 - CDockingManager [MFC], m_nTimeOutBeforeDockingBarDock
 - CDockingManager [MFC], m_nTimeOutBeforeToolBarDock
 ms.assetid: 98e69c43-55d8-4f43-b861-4fda80ec1e32
-ms.openlocfilehash: 268a46e1bdecc1ea468c152fd0ed480873c36591
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 6d3bbafa15ada97f53710f0faf6a18ea8e892f6c
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57260393"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58771324"
 ---
 # <a name="cdockingmanager-class"></a>CDockingManager Class
 
@@ -292,7 +292,7 @@ Aşağıdaki ipuçları uygulamak `CDockingManager` nesneler:
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, çeşitli yöntemlerin nasıl kullanılacağını gösterir `CDockingManager` yapılandırmak için sınıf bir `CDockingManager` nesne. Örneğin, nesnesinin yerleştirme modunu ayarlama ve açılır menüde tüm yerleştirme bölmesine Resim yazılarının açan bir düğme görüntülemek nasıl gösterir. Bu kod parçacığı parçasıdır [Visual Studio gösterim örneği](../../visual-cpp-samples.md).
+Aşağıdaki örnek, çeşitli yöntemlerin nasıl kullanılacağını gösterir `CDockingManager` yapılandırmak için sınıf bir `CDockingManager` nesne. Örneğin, nesnesinin yerleştirme modunu ayarlama ve açılır menüde tüm yerleştirme bölmesine Resim yazılarının açan bir düğme görüntülemek nasıl gösterir. Bu kod parçacığı parçasıdır [Visual Studio gösterim örneği](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_VisualStudioDemo#24](../../mfc/codesnippet/cpp/cdockingmanager-class_1.cpp)]
 

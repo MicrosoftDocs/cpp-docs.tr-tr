@@ -120,12 +120,12 @@ helpviewer_keywords:
 - CDocument [MFC], m_clrRichPreviewTextColor
 - CDocument [MFC], m_lfRichPreviewFont
 ms.assetid: e5a2891d-e1e1-4599-8c7e-afa9b4945446
-ms.openlocfilehash: b7358c2206c15660b9ffb283802283ee71e57f03
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 2d87ff67000fb5b70c0a5c965638875e6f50b22c
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57299081"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58774189"
 ---
 # <a name="cdocument-class"></a>CDocument sınıfı
 
@@ -1254,9 +1254,9 @@ Bu işlev çağrıları [CView::OnUpdate](../../mfc/reference/cview-class.md#onu
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MFC örnek MDIDOCVW](../../visual-cpp-samples.md)<br/>
-[MFC örnek SNAPVW](../../visual-cpp-samples.md)<br/>
-[MFC örnek NPP](../../visual-cpp-samples.md)<br/>
+[MFC örnek MDIDOCVW](../../overview/visual-cpp-samples.md)<br/>
+[MFC örnek SNAPVW](../../overview/visual-cpp-samples.md)<br/>
+[MFC örnek NPP](../../overview/visual-cpp-samples.md)<br/>
 [CCmdTarget Sınıfı](../../mfc/reference/ccmdtarget-class.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
 [CCmdTarget Sınıfı](../../mfc/reference/ccmdtarget-class.md)<br/>

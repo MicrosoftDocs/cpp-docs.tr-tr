@@ -8,12 +8,12 @@ helpviewer_keywords:
 - _Copy class
 - _CopyInterface class
 ms.assetid: 06704b68-d318-4c5d-a65b-71457fe9d00d
-ms.openlocfilehash: 24d81506f1518f980576899a4a104bbfdc0a1438
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 73bec31b4ae140797c85a06ee7c5023c9e0c4446
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57296351"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58776966"
 ---
 # <a name="atl-copy-policy-classes"></a>ATL kopyalama İlkesi sınıfları
 
@@ -62,7 +62,7 @@ ATL şeklinde iki kopyalama İlkesi sınıfları sağlar `_Copy` ve `_CopyInterf
 
 ## <a name="custom-implementations"></a>Özel uygulamalar
 
-Genellikle, heterojen (diğer bir deyişle, veri türleri arasında dönüştürme) kopyalamak için kendi kopyalama İlkesi sınıfları tanımlamanız gerekir. Özel kopyalama İlkesi sınıfları bazı örnekler için VCUE_Copy.h ve VCUE_CopyString.h içinde dosyaları bakın [ATLCollections](../visual-cpp-samples.md) örnek. İki şablon kopyalama İlkesi sınıfları, bu dosyaları içeren `GenericCopy` ve `MapCopy`, uzmanlıkları sayısı artı `GenericCopy` farklı veri türleri için.
+Genellikle, heterojen (diğer bir deyişle, veri türleri arasında dönüştürme) kopyalamak için kendi kopyalama İlkesi sınıfları tanımlamanız gerekir. Özel kopyalama İlkesi sınıfları bazı örnekler için VCUE_Copy.h ve VCUE_CopyString.h içinde dosyaları bakın [ATLCollections](../overview/visual-cpp-samples.md) örnek. İki şablon kopyalama İlkesi sınıfları, bu dosyaları içeren `GenericCopy` ve `MapCopy`, uzmanlıkları sayısı artı `GenericCopy` farklı veri türleri için.
 
 ### <a name="genericcopy"></a>GenericCopy
 
@@ -81,4 +81,4 @@ VCUE_Copy.h Ayrıca bu sınıf aşağıdaki uzmanlıklarını içerir: `GenericC
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [C++ Standart Kitaplığı Temelli Koleksiyon Uygulama](../atl/implementing-an-stl-based-collection.md)<br/>
-[ATLCollections örnek](../visual-cpp-samples.md)
+[ATLCollections örnek](../overview/visual-cpp-samples.md)

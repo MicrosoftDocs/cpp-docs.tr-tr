@@ -112,12 +112,12 @@ helpviewer_keywords:
 - CMDIChildWndEx [MFC], UnregisterTaskbarTab
 - CMDIChildWndEx [MFC], UpdateTaskbarTabIcon
 ms.assetid: d39fec06-0bd6-4271-917d-35aae3b24d8e
-ms.openlocfilehash: 625104ecddd9e14ac77aa05ac54cb578c4d62f85
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: e12cf9f65e6fd6dd7f68edc4a94103baa5a8df62
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57293435"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58781763"
 ---
 # <a name="cmdichildwndex-class"></a>Cmdıchildwndex sınıfı
 
@@ -201,7 +201,7 @@ MDI uygulamaları genişletilmiş yerleştirme özelliklerden yararlanmak için 
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek bir sınıftan türetilen `CMDIChildWndEx`. Bu kod parçacığı geldiği [VisualStudioDemo örnek: Visual Studio DllMain'den](../../visual-cpp-samples.md).
+Aşağıdaki örnek bir sınıftan türetilen `CMDIChildWndEx`. Bu kod parçacığı geldiği [VisualStudioDemo örnek: Visual Studio DllMain'den](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_VisualStudioDemo#3](../../mfc/codesnippet/cpp/cmdichildwndex-class_1.h)]
 
@@ -431,7 +431,7 @@ Bir dosyadan yüklenmemiş bir belge penceresini görüntüler, türetilen bir s
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki örnek, kullanımını gösterir `GetDocumentName` yöntemi. Bu kod parçacığı geldiği [VisualStudioDemo örnek: Visual Studio DllMain'den](../../visual-cpp-samples.md).
+Aşağıdaki örnek, kullanımını gösterir `GetDocumentName` yöntemi. Bu kod parçacığı geldiği [VisualStudioDemo örnek: Visual Studio DllMain'den](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_VisualStudioDemo#17](../../mfc/codesnippet/cpp/cmdichildwndex-class_2.cpp)]
 
@@ -602,7 +602,7 @@ Bu işlev önlemek için kullanılan salt okunur belgelerin kaydediliyor.
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki örnek, geçersiz kılma gösterir `IsReadOnly` yöntemi. Bu kod parçacığı geldiği [VisualStudioDemo örnek: Visual Studio DllMain'den](../../visual-cpp-samples.md).
+Aşağıdaki örnek, geçersiz kılma gösterir `IsReadOnly` yöntemi. Bu kod parçacığı geldiği [VisualStudioDemo örnek: Visual Studio DllMain'den](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_VisualStudioDemo#2](../../mfc/codesnippet/cpp/cmdichildwndex-class_3.cpp)]
 

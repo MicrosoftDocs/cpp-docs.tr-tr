@@ -10,12 +10,12 @@ helpviewer_keywords:
 - dialog boxes [MFC], OLE
 - Insert object
 ms.assetid: 73c41eb8-738a-4d02-9212-d3395bb09a3a
-ms.openlocfilehash: 1081a831cc2b9fc0ab22e2c80a4f657466534d86
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: fa3d87e2cc17e297c3e6387920c6d527d8ddbe39
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57270897"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58767658"
 ---
 # <a name="dialog-boxes-in-ole"></a>OLE'deki İletişim Kutuları
 
@@ -31,7 +31,7 @@ Bu iletişim kutusu veri bileşik bir belgeye yapıştırırken kullanılan biç
 Bu iletişim kutusu, kullanıcının simgeyi bağlantılı veya katıştırılmış bir öğeyi temsil etmek için görüntülenen seçmesine olanak sağlar. Kullanıcı Düzenle Menüsü'nden simge seçer veya simge düğme ya da Özel Yapıştır ve Dönüştürme iletişim kutularında seçer, bu iletişim kutusunu görüntüleyin. Ayrıca kullanıcı Nesne Ekle iletişim kutusu açılır ve simge olarak seçer görüntüleyin. Kullanım [Colechangeıcondialog](../mfc/reference/colechangeicondialog-class.md) bu iletişim kutusunu görüntülemek için sınıf.
 
 *Dönüştürme*<br/>
-Bu iletişim kutusunu bir gömülü veya bağlantılı öğe türünü değiştirmesine izin verir. Örneğin, bir meta dosyası bir bileşik belgeye gömülü ve daha sonra başka bir uygulama, katıştırılmış meta değiştirmek için kullanmak istediğiniz, dönüştürme iletişim kutusunu kullanabilirsiniz. Bu iletişim kutusunu tıklatarak genellikle görüntülenen *öğesi türünü* dönüştürme tıklayarak nesne için düzenleme menüsünü ve ardından basamaklı menüsü. Kullanım [COleConvertDialog](../mfc/reference/coleconvertdialog-class.md) bu iletişim kutusunu görüntülemek için sınıf. Örneğin, MFC OLE örneği çalıştırmak [OCLIENT](../visual-cpp-samples.md).
+Bu iletişim kutusunu bir gömülü veya bağlantılı öğe türünü değiştirmesine izin verir. Örneğin, bir meta dosyası bir bileşik belgeye gömülü ve daha sonra başka bir uygulama, katıştırılmış meta değiştirmek için kullanmak istediğiniz, dönüştürme iletişim kutusunu kullanabilirsiniz. Bu iletişim kutusunu tıklatarak genellikle görüntülenen *öğesi türünü* dönüştürme tıklayarak nesne için düzenleme menüsünü ve ardından basamaklı menüsü. Kullanım [COleConvertDialog](../mfc/reference/coleconvertdialog-class.md) bu iletişim kutusunu görüntülemek için sınıf. Örneğin, MFC OLE örneği çalıştırmak [OCLIENT](../overview/visual-cpp-samples.md).
 
 *Düzenleme bağlantıları veya bağlantıları güncelleştir*<br/>
 Edit Links iletişim kutusu kaynağı bağlı nesnede hakkındaki bilgileri değiştirmesine izin verir. Güncelleştirme Links iletişim kutusu, geçerli iletişim kutusunu bağlı tüm öğelerin kaynakları doğrular ve gerekirse Edit Links iletişim kutusu görüntüler. Kullanıcı bağlantıları Düzenle Menüsü'nden seçtiğinde Edit Links iletişim kutusu görüntüler. Güncelleştirme Links iletişim kutusu, genellikle bir bileşik belge ilk kez açıldığında görüntülenir. Hangisini [COleLinksDialog](../mfc/reference/colelinksdialog-class.md) veya [COleUpdateDialog](../mfc/reference/coleupdatedialog-class.md) sınıfı, görüntülemek istediğiniz bağlı olarak hangi iletişim kutusu.

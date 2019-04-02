@@ -24,12 +24,12 @@ helpviewer_keywords:
 - CMFCMaskedEdit [MFC], SetWindowText
 - CMFCMaskedEdit [MFC], IsMaskedChar
 ms.assetid: 13b1a645-2d5d-4c37-8599-16d5003f23a5
-ms.openlocfilehash: 88a9c49b55dca9d98976924127efff67c479a96a
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: c1dcf89811fa5225283cb5bec120d3bd2fdfb003
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57276990"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58773794"
 ---
 # <a name="cmfcmaskededit-class"></a>CMFCMaskedEdit sınıfı
 
@@ -88,7 +88,7 @@ Maske, geçerli karakterler ve varsayılan metin başlatmak için bir veya daha 
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnekte maske (örneğin bir telefon numarası) kullanarak ayarlamak gösterilmiştir `EnableMask` maskeli düzen denetimi, maske oluşturmak için gereken yöntemini `SetValidChars` yanısırakullanıcınıngirebileceğigeçerlikarakterdizesinibelirtmekiçinyöntemi`SetWindowText` maskelenmiş bir komut istemi görüntülenecek yöntemi düzenleme denetimi. Bu örneğin parçasıdır [yeni denetimler örnek](../../visual-cpp-samples.md).
+Aşağıdaki örnekte maske (örneğin bir telefon numarası) kullanarak ayarlamak gösterilmiştir `EnableMask` maskeli düzen denetimi, maske oluşturmak için gereken yöntemini `SetValidChars` yanısırakullanıcınıngirebileceğigeçerlikarakterdizesinibelirtmekiçinyöntemi`SetWindowText` maskelenmiş bir komut istemi görüntülenecek yöntemi düzenleme denetimi. Bu örneğin parçasıdır [yeni denetimler örnek](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_NewControls#11](../../mfc/reference/codesnippet/cpp/cmfcmaskededit-class_1.h)]
 [!code-cpp[NVC_MFC_NewControls#12](../../mfc/reference/codesnippet/cpp/cmfcmaskededit-class_2.cpp)]

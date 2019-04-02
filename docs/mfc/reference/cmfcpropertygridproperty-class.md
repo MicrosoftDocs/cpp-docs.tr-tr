@@ -166,12 +166,12 @@ helpviewer_keywords:
 - CMFCPropertyGridProperty [MFC], m_strFormatLong
 - CMFCPropertyGridProperty [MFC], m_strFormatShort
 ms.assetid: 36f3fabe-0efe-468b-8a0b-5a7956db38a2
-ms.openlocfilehash: 550f238ae66bcaf7d5afc245b709c42c78769949
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: aa88cc2d4ee915b970157ee6ed280512e2352bcc
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57305074"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58779033"
 ---
 # <a name="cmfcpropertygridproperty-class"></a>CMFCPropertyGridProperty Class
 
@@ -297,7 +297,7 @@ Bir özellik nesnesi, dizeler, tarihler ve Boole veya tamsayı değerleri gibi v
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek nasıl oluşturulacağını gösterir. bir `CMFCPropertyGridProperty` nesne. Bu örnek ayrıca çeşitli yöntemlerle nasıl yapılacağı açıklanır `CMFCPropertyGridProperty` bir seçenek ekleyin, bir alt öğe eklemek, bir özelliğini etkinleştirmek ve bir özelliği görüntülemek için sınıf. Bu örneğin parçasıdır [yeni denetimler örnek](../../visual-cpp-samples.md).
+Aşağıdaki örnek nasıl oluşturulacağını gösterir. bir `CMFCPropertyGridProperty` nesne. Bu örnek ayrıca çeşitli yöntemlerle nasıl yapılacağı açıklanır `CMFCPropertyGridProperty` bir seçenek ekleyin, bir alt öğe eklemek, bir özelliğini etkinleştirmek ve bir özelliği görüntülemek için sınıf. Bu örneğin parçasıdır [yeni denetimler örnek](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_NewControls#27](../../mfc/reference/codesnippet/cpp/cmfcpropertygridproperty-class_1.cpp)]
 
@@ -801,7 +801,7 @@ CMFCPropertyGridProperty* GetSubItem(int nIndex) const;
 
 Bu özelliğin bir alt öğesi olan bir özellik nesne işaretçisi.
 
--veya-
+veya
 
 Perakende modunda yoksa NULL *nIndex* parametresi geçersiz. Hata ayıklama modunda, bu yöntem onaylar.
 

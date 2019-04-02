@@ -8,12 +8,12 @@ helpviewer_keywords:
 - CDialog class [MFC], MFC dialog boxes
 - MFC dialog boxes
 ms.assetid: e4feea1a-8360-4ccb-9b84-507f1ccd9ef3
-ms.openlocfilehash: 9add6f003f0f6cd4ab85980e1e35370770da43aa
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 32a8f8784459338131d4893f25d8798f8031b68b
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57282064"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58778500"
 ---
 # <a name="dialog-boxes"></a>İletişim Kutuları
 
@@ -61,7 +61,7 @@ Herhangi bir program parçasını kullanmadan önce iletişim kutusunu kapatmak 
 
 - [Ole'deki iletişim kutuları](../mfc/dialog-boxes-in-ole.md)
 
-- Bir iletişim kutusu, kullanıcı arabirimi olan bir uygulama oluşturun: bkz [CMNCTRL1](../visual-cpp-samples.md) veya [CMNCTRL2](../visual-cpp-samples.md) örnek programlar. Uygulama Sihirbazı'nı bu seçeneği de sağlar.
+- Bir iletişim kutusu, kullanıcı arabirimi olan bir uygulama oluşturun: bkz [CMNCTRL1](../overview/visual-cpp-samples.md) veya [CMNCTRL2](../overview/visual-cpp-samples.md) örnek programlar. Uygulama Sihirbazı'nı bu seçeneği de sağlar.
 
 - [Örnekler](../mfc/dialog-sample-list.md)
 

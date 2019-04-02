@@ -20,12 +20,12 @@ helpviewer_keywords:
 - MFC COM, Automation
 - methods [MFC], Automation
 ms.assetid: 329117f0-c1aa-4680-a901-bfb71277dfba
-ms.openlocfilehash: b26a08bbe9ef9b9151910871201abe05a44d2f6c
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 7818aa708a762f2a284be029a6c3f3facd971d9a
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57265576"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58767736"
 ---
 # <a name="automation"></a>Otomatikleştirme
 
@@ -55,17 +55,17 @@ Otomasyon yöntemi oluşturma bir zorluk, otomasyon sunucuları ve istemciler ar
 
 ## <a name="automation-samples"></a>Otomasyon örnekleri
 
-- [AUTOCLIK](../visual-cpp-samples.md) Otomasyon teknikleri öğrenmek için bu örneği kullanmak ve Uzaktan Otomasyon öğrenmek için bir temel olarak.
+- [AUTOCLIK](../overview/visual-cpp-samples.md) Otomasyon teknikleri öğrenmek için bu örneği kullanmak ve Uzaktan Otomasyon öğrenmek için bir temel olarak.
 
-- [ACDUAL](../visual-cpp-samples.md) Otomasyon sunucu uygulaması için çift arabirim ekler.
+- [ACDUAL](../overview/visual-cpp-samples.md) Otomasyon sunucu uygulaması için çift arabirim ekler.
 
-- [CALCDRIV](../visual-cpp-samples.md) MFCCALC sürüş otomasyon istemci uygulaması.
+- [CALCDRIV](../overview/visual-cpp-samples.md) MFCCALC sürüş otomasyon istemci uygulaması.
 
-- [InProc](../visual-cpp-samples.md) bir işlem içi Otomasyon sunucu uygulaması gösterir.
+- [InProc](../overview/visual-cpp-samples.md) bir işlem içi Otomasyon sunucu uygulaması gösterir.
 
-- [IPDRIVE](../visual-cpp-samples.md) InProc sürüş otomasyon istemci uygulaması.
+- [IPDRIVE](../overview/visual-cpp-samples.md) InProc sürüş otomasyon istemci uygulaması.
 
-- [MFCCALC](../visual-cpp-samples.md) bir otomasyon istemci uygulaması gösterir.
+- [MFCCALC](../overview/visual-cpp-samples.md) bir otomasyon istemci uygulaması gösterir.
 
 ## <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz
 

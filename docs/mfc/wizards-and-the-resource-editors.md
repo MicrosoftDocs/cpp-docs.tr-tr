@@ -12,12 +12,12 @@ helpviewer_keywords:
 - MFC, wizards
 - Class View tool, managing Windows messages
 ms.assetid: f5dd4d13-9dc1-4a49-b6bf-5b3cb45fa8ba
-ms.openlocfilehash: 5316899b7eb8828847af6d7db95edf3d8ba3822a
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 41cbb86b4245bd78baecd222b5573ba5e877243a
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57265528"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58773833"
 ---
 # <a name="wizards-and-the-resource-editors"></a>Sihirbazlar ve Kaynak Düzenleyicileri
 
@@ -46,7 +46,7 @@ Programlama göreviniz büyük bir bölümünü hangi nesnelerin eşlemek için 
 
 Visual c++'ta kullanmak [kaynak düzenleyicileri](../windows/resource-editors.md) oluşturmak ve menüler, iletişim kutuları, özel denetimler, Hızlandırıcı tuşları, bit eşlemler, simgeler, işaretçiler, dizeleri ve sürüm kaynakları düzenlemek için. Visual C++ sürüm 4.0 itibariyle bir araç çubuğu Düzenleyicisi oluşturulurken araç çubukları kolaylaştırır.
 
-Daha fazla yardımcı olmak için Microsoft Foundation Class Kitaplığı ortak adlı bir dosya sağlar. RES gelen ortak kopyalayabilirsiniz "küçük resim" kaynakları içerir. RES ve kendi kaynak dosyasına yapıştırın. ORTAK. RES araç çubuğu düğmeleri, ortak imleçler, simgeler ve daha fazlasını içerir. Kullanın, değiştirebilir ve bu kaynakları uygulamanızda yeniden dağıtabilirsiniz. Ortak hakkında daha fazla bilgi için. RES, bkz: [küçük örnek](../visual-cpp-samples.md).
+Daha fazla yardımcı olmak için Microsoft Foundation Class Kitaplığı ortak adlı bir dosya sağlar. RES gelen ortak kopyalayabilirsiniz "küçük resim" kaynakları içerir. RES ve kendi kaynak dosyasına yapıştırın. ORTAK. RES araç çubuğu düğmeleri, ortak imleçler, simgeler ve daha fazlasını içerir. Kullanın, değiştirebilir ve bu kaynakları uygulamanızda yeniden dağıtabilirsiniz. Ortak hakkında daha fazla bilgi için. RES, bkz: [küçük örnek](../overview/visual-cpp-samples.md).
 
 MFC Uygulama Sihirbazı, Visual C++ sihirbazları, kaynak düzenleyicileri ve MFC çerçevesi sizin için çok fazla iş yapın ve kodunuzu çok daha kolay yönetme yapın. Uygulamaya özel kodunuzun toplu, belge ve görünüm sınıfları ' dir.
 

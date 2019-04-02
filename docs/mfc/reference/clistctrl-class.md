@@ -264,12 +264,12 @@ helpviewer_keywords:
 - CListCtrl [MFC], SubItemHitTest
 - CListCtrl [MFC], Update
 ms.assetid: fe08a1ca-4b05-4ff7-a12a-ee4c765a2197
-ms.openlocfilehash: 850c16420606452414cbe284c5f9f25031859c93
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: eea37d03ca5a4fab450fbca0c4c3f6c76fefb407
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57304528"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58780619"
 ---
 # <a name="clistctrl-class"></a>CListCtrl sınıfı
 
@@ -619,7 +619,7 @@ virtual BOOL Create(
 Liste denetiminin stilini belirtir. Liste Denetim stillerini herhangi bir birleşimini denetimi için geçerlidir. Bkz: [liste görünümü pencere stilleri](/windows/desktop/Controls/list-view-window-styles) bu stiller tam listesi için Windows SDK. Genişletilmiş stiller kullanarak bir denetimi belirli kümesi [SetExtendedStyle](#setextendedstyle).
 
 *Rect*<br/>
-Liste denetimin boyutunu ve konumunu belirtir. Ya da olabilir bir `CRect` nesnesi veya bir [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) yapısı.
+Liste denetimin boyutunu ve konumunu belirtir. Ya da olabilir bir `CRect` nesnesi veya bir [RECT](/previous-versions/dd162897\(v=vs.85\)) yapısı.
 
 *pParentWnd*<br/>
 Liste denetiminin üst penceresine, genellikle belirtir bir `CDialog`. NULL olmamalıdır.
@@ -667,7 +667,7 @@ Oluşturulan denetimin genişletilmiş stilini belirtir. Genişletilmiş Windows
 Liste denetiminin stilini belirtir. Liste Denetim stillerini herhangi bir birleşimini denetimi için geçerlidir. Bu stiller tam bir listesi için bkz. [liste görünümü pencere stilleri](/windows/desktop/Controls/list-view-window-styles) Windows SDK.
 
 *Rect*<br/>
-Bir başvuru bir [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) istemci koordinatları olarak oluşturulması için pencerenin konumunu ve boyutunu açıklayan yapısı *pParentWnd*.
+Bir başvuru bir [RECT](/previous-versions/dd162897\(v=vs.85\)) istemci koordinatları olarak oluşturulması için pencerenin konumunu ve boyutunu açıklayan yapısı *pParentWnd*.
 
 *pParentWnd*<br/>
 Denetimin ana penceresine bir işaretçi.
@@ -701,7 +701,7 @@ CImageList* CreateDragImage(
 Oluşturulacak olan Sürükle görüntü listesi olan öğenin dizini.
 
 *Lppoınt*<br/>
-Adresi bir [noktası](https://msdn.microsoft.com/library/windows/desktop/dd162805) ilk resmin sol üst köşesinin konumunu alır yapısı görünümünde düzenler.
+Adresi bir [noktası](/previous-versions/dd162805\(v=vs.85\)) ilk resmin sol üst köşesinin konumunu alır yapısı görünümünde düzenler.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1442,7 +1442,7 @@ BOOL GetGroupRect(
 |Parametre|Açıklama|
 |---------------|-----------------|
 |*iGroupId*|[in] Bir grubu belirtir.|
-|*lpRect*|[out içinde] İşaretçi bir [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) yapısı. Bu yöntem başarılı olursa, yapı tarafından belirtilen grubun dikdörtgen koordinatlarını alır *iGroupId*.|
+|*lpRect*|[out içinde] İşaretçi bir [RECT](/previous-versions/dd162897\(v=vs.85\)) yapısı. Bu yöntem başarılı olursa, yapı tarafından belirtilen grubun dikdörtgen koordinatlarını alır *iGroupId*.|
 |*iCoords*|[in] Dikdörtgen koordinatları alınacak belirtir. Şu değerlerden birini kullanın:<br /><br /> -LVGGR_GROUP - tüm genişletilmiş grubu koordinatları (varsayılan).<br />-LVGGR_HEADER - koordinatları yalnızca üst bilgisi (daraltılmış grubu).<br />-LVGGR_SUBSETLINK - yalnızca alt bağlantısı (biçimlendirme alt) düzenler.|
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -1451,7 +1451,7 @@ Bu yöntem başarılı olursa TRUE; Aksi takdirde FALSE.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çağıranın sorumlu olan [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) yapısı tarafından işaret edilen *pRect* parametresi.
+Çağıranın sorumlu olan [RECT](/previous-versions/dd162897\(v=vs.85\)) yapısı tarafından işaret edilen *pRect* parametresi.
 
 Bu yöntem gönderir [LVM_GETGROUPRECT](/windows/desktop/Controls/lvm-getgrouprect) Windows SDK'da açıklanan ileti.
 
@@ -1790,7 +1790,7 @@ BOOL GetItemIndexRect(
 |*pItemIndex*|[in] İşaretçi bir [LVITEMINDEX](https://msdn.microsoft.com/library/windows/desktop/bb774762) üst öğenin alt yapısı.<br /><br /> Ayırma ve üyelerinin ayarlamak için çağıran sorumludur [LVITEMINDEX](https://msdn.microsoft.com/library/windows/desktop/bb774762) yapısı. Bu parametre NULL olamaz.|
 |*iColumn*|[in] Denetim bir sütunun sıfır tabanlı dizini.|
 |*rectType*|[in] İçin sınırlayıcı dikdörtgenini alınacağı liste görünüm alt kısmı. Aşağıdaki değerlerden birini belirtin:<br /><br /> LVIR_BOUNDS - etiket ve simgeyi dahil olmak üzere tüm alt sınırlayıcı dikdörtgenini döndürür.<br /><br /> LVIR_ICON - sınırlayıcı dikdörtgenini simge veya alt küçük simgesini döndürür.<br /><br /> LVIR_LABEL - alt metnin dikdörtgen döndürür.|
-|*pRect*|[out] İşaretçi bir [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) yapısı alt dikdörtgen hakkındaki bilgileri alır.<br /><br /> Çağıranın sorumlu olan [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) yapısı. Bu parametre NULL olamaz.|
+|*pRect*|[out] İşaretçi bir [RECT](/previous-versions/dd162897\(v=vs.85\)) yapısı alt dikdörtgen hakkındaki bilgileri alır.<br /><br /> Çağıranın sorumlu olan [RECT](/previous-versions/dd162897\(v=vs.85\)) yapısı. Bu parametre NULL olamaz.|
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1844,7 +1844,7 @@ BOOL GetItemPosition(
 Alınacak konumu olan öğenin dizini.
 
 *Lppoınt*<br/>
-Adresi bir [noktası](https://msdn.microsoft.com/library/windows/desktop/dd162805) öğenin sol üst köşesinin konumunu alır yapısı görünümünde düzenler.
+Adresi bir [noktası](/previous-versions/dd162805\(v=vs.85\)) öğenin sol üst köşesinin konumunu alır yapısı görünümünde düzenler.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1883,7 +1883,7 @@ BOOL GetItemRect(
 Alınacak konumu olan öğenin dizini.
 
 *lpRect*<br/>
-Adresi bir [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) dikdörtgen alan yapısı.
+Adresi bir [RECT](/previous-versions/dd162897\(v=vs.85\)) dikdörtgen alan yapısı.
 
 *nCode*<br/>
 Liste görünümü öğesi dikdörtgen almak istediğiniz bölümü. Şu değerlerden biri olabilir:
@@ -2220,7 +2220,7 @@ BOOL GetOrigin(LPPOINT lpPoint) const;
 ### <a name="parameters"></a>Parametreler
 
 *Lppoınt*<br/>
-Adresi bir [noktası](https://msdn.microsoft.com/library/windows/desktop/dd162805) yapısı görünümü kaynağını alır.
+Adresi bir [noktası](/previous-versions/dd162805\(v=vs.85\)) yapısı görünümü kaynağını alır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -2531,7 +2531,7 @@ BOOL GetViewRect(LPRECT lpRect) const;
 ### <a name="parameters"></a>Parametreler
 
 *lpRect*<br/>
-Adresi bir [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) yapısı.
+Adresi bir [RECT](/previous-versions/dd162897\(v=vs.85\)) yapısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -2834,7 +2834,7 @@ int InsertMarkHitTest(
 ### <a name="parameters"></a>Parametreler
 
 *pPoint*<br/>
-Bir işaretçi bir [noktası](https://msdn.microsoft.com/library/windows/desktop/dd162805) isabet testi içeren yapısı koordinatları, liste denetimi istemci alanına göre.
+Bir işaretçi bir [noktası](/previous-versions/dd162805\(v=vs.85\)) isabet testi içeren yapısı koordinatları, liste denetimi istemci alanına göre.
 
 *lvim*<br/>
 Bir işaretçi bir [LVINSERTMARK](/windows/desktop/api/commctrl/ns-commctrl-lvinsertmark) noktası parametresi tarafından tanımlanan koordinatlara en yakın noktasını belirten yapısı.
@@ -3854,7 +3854,7 @@ BOOL SetItemPosition(
 Ayarlanacak konumu olan öğenin dizini.
 
 *PT*<br/>
-A [noktası](https://msdn.microsoft.com/library/windows/desktop/dd162805) yapısı görünümü'nde yeni konumunu belirten koordinatları, öğenin sol üst köşesinde.
+A [noktası](/previous-versions/dd162805\(v=vs.85\)) yapısı görünümü'nde yeni konumunu belirten koordinatları, öğenin sol üst köşesinde.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -4422,7 +4422,7 @@ LVS_AUTOARRANGE stili varsa, bu işlev Ayrıca liste görünümü denetimi düze
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MFC örnek ROWLIST](../../visual-cpp-samples.md)<br/>
+[MFC örnek ROWLIST](../../overview/visual-cpp-samples.md)<br/>
 [CWnd Sınıfı](cwnd-class.md)<br/>
 [Hiyerarşi Grafiği](../hierarchy-chart.md)<br/>
 [CImageList Sınıfı](cimagelist-class.md)

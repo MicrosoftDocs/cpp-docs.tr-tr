@@ -12,19 +12,19 @@ helpviewer_keywords:
 - IPF, command-line compiler
 - x64 [C++], command-line compiler
 ms.assetid: 4da93a19-e20d-4778-902a-5eee9a6a90b5
-ms.openlocfilehash: b30b831522016ce61f138f7e0521c42ff44e04d9
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.openlocfilehash: 8436254a3d8c5c1dae018c2309ceaad7bd5b2408
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57809775"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58769283"
 ---
 # <a name="how-to-enable-a-64-bit-x64-hosted-msvc-toolset-on-the-command-line"></a>Nasıl yapılır: 64 Bit etkinleştirmek için komut satırında MSVC araç takımı x64 barındırılan
 
 Visual Studio C++ Derleyicileri, linkers ve 32-bit, 64-bit veya ARM tabanlı Windows işletim sistemlerinde çalışan, uygulamaları platforma özgü sürümlerini oluşturmak için kullanabileceğiniz diğer araçlar içerir. İsteğe bağlı diğer Visual Studio iş yükleri, iOS, Android ve Linux gibi diğer platformlarda hedeflemek için C++ Araçları'nı kullanmanıza izin verir. Varsayılan yapı mimarisi, 32-bit, x86 yerel Windows kod oluşturmak için 32-bit, x86 barındırılan araçları kullanır. Ancak büyük olasılıkla bir 64 bit bilgisayar vardır. İşlemci ve bellek alanı 64-bit kod için kullanılabilir x86, x64 ya da ARM işlemcileri için kod oluşturma sırasında 64 bit, x64 barındırılan bir araç takımı kullanarak yararlanabilirsiniz.
 
 > [!NOTE]
-> Her Visual Studio sürüm ile birlikte gelen belirli araçları hakkında daha fazla bilgi için bkz: [Visual C++ Araçları ve özellikleri Visual Studio sürümlerinde](../ide/visual-cpp-tools-and-features-in-visual-studio-editions.md).
+> Her Visual Studio sürüm ile birlikte gelen belirli araçları hakkında daha fazla bilgi için bkz: [Visual C++ Araçları ve özellikleri Visual Studio sürümlerinde](../overview/visual-cpp-tools-and-features-in-visual-studio-editions.md).
 >
 > Visual Studio IDE 64 bit uygulamalar oluşturmak için nasıl kullanılacağı hakkında daha fazla bilgi için bkz. [nasıl yapılır: 64-Bit, hedeflemek için Visual C++ projeleri x64 yapılandırma platformları](how-to-configure-visual-cpp-projects-to-target-64-bit-platforms.md).
 

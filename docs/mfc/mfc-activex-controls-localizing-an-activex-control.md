@@ -10,12 +10,12 @@ helpviewer_keywords:
 - LocaleID ambient property [MFC]
 - LOCALIZE sample [MFC]
 ms.assetid: a44b839a-c652-4ec5-b824-04392708a5f9
-ms.openlocfilehash: 4e9ef9a2f79bda5d41c01984f063622b3b73fb51
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 13c8ff545763017b01685e012ab2d497eaf7084a
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57268220"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58767554"
 ---
 # <a name="mfc-activex-controls-localizing-an-activex-control"></a>MFC ActiveX denetimleri: ActiveX denetimini yerelleştirme
 
@@ -28,7 +28,7 @@ ActiveX denetimi bir Uluslararası pazara uyarlamak isterseniz, Denetim yerelle�
 
 Genel olarak, ActiveX denetimleri, yerel ayar LocaleID ortam özelliği temel her zaman. Bunu yapmak için üç yolu vardır:
 
-- Her zaman geçerli LocaleID ortam özelliği değerine göre isteğe bağlı kaynakları yükleyin. MFC ActiveX denetimleri örnek [YERELLEŞTİRİN](../visual-cpp-samples.md) bu strateji kullanır.
+- Her zaman geçerli LocaleID ortam özelliği değerine göre isteğe bağlı kaynakları yükleyin. MFC ActiveX denetimleri örnek [YERELLEŞTİRİN](../overview/visual-cpp-samples.md) bu strateji kullanır.
 
 - İlk denetim, ortam LocaleID özelliğini temel alarak örnekli yükleme kaynakları ve diğer tüm örnekleri için bu kaynakları kullanın. Bu makalede, bu strateji gösterilmektedir.
 
@@ -40,7 +40,7 @@ Genel olarak, ActiveX denetimleri, yerel ayar LocaleID ortam özelliği temel he
     > [!NOTE]
     >  Bu denetim için çalışır, ancak LocaleID ortam özelliği değiştiğinde çalışma zamanı DLL kendi kaynaklarını dinamik olarak güncelleştirmez. Ayrıca, çalışma zamanı dll ActiveX denetimleri için yerel kaynaklarını belirlemek için iş parçacığı yerel ayarı kullanın.
 
-Bu makalenin geri kalanında, iki yerelleştirme stratejilerini açıklar. İlk strateji [denetimin programlama arabirimi yerelletirilmesi](#_core_localizing_your_control.92.s_programmability_interface) (özellikleri, yöntemleri ve olayları adları). İkinci strateji [denetimin kullanıcı arabirimi yerelletirilmesi](#_core_localizing_the_control.92.s_user_interface), kapsayıcının ortam LocaleID özelliğini kullanma. MFC ActiveX denetimleri örnek denetimi yerelleştirme gösterimi için bkz. [YERELLEŞTİRİN](../visual-cpp-samples.md).
+Bu makalenin geri kalanında, iki yerelleştirme stratejilerini açıklar. İlk strateji [denetimin programlama arabirimi yerelletirilmesi](#_core_localizing_your_control.92.s_programmability_interface) (özellikleri, yöntemleri ve olayları adları). İkinci strateji [denetimin kullanıcı arabirimi yerelletirilmesi](#_core_localizing_the_control.92.s_user_interface), kapsayıcının ortam LocaleID özelliğini kullanma. MFC ActiveX denetimleri örnek denetimi yerelleştirme gösterimi için bkz. [YERELLEŞTİRİN](../overview/visual-cpp-samples.md).
 
 ##  <a name="_core_localizing_your_control.92.s_programmability_interface"></a> Denetimin programlama arabirimi yerelleştirme
 
@@ -88,7 +88,7 @@ Aşağıdaki kod örneği bulun ve belirli bir yerel ayar için kaynak DLL'ini y
 
 [!code-cpp[NVC_MFC_AxLoc#3](../mfc/codesnippet/cpp/mfc-activex-controls-localizing-an-activex-control_3.cpp)]
 
-Alt dili kimliği daha özel yerelleştirme sağlamak için switch deyimi, her durumda iade edilemedi unutmayın. Bu işlev bir gösterimi için bkz. `GetResourceHandle` işlevinde MFC ActiveX denetimleri örnek [YERELLEŞTİRİN](../visual-cpp-samples.md).
+Alt dili kimliği daha özel yerelleştirme sağlamak için switch deyimi, her durumda iade edilemedi unutmayın. Bu işlev bir gösterimi için bkz. `GetResourceHandle` işlevinde MFC ActiveX denetimleri örnek [YERELLEŞTİRİN](../overview/visual-cpp-samples.md).
 
 Denetimin ilk kez kendisi bir kapsayıcıya yüklediğinde çağırabilirsiniz [COleControl::AmbientLocaleID](../mfc/reference/colecontrol-class.md#ambientlocaleid) yerel ayar kimliğini almak için Denetimin ardından döndürülen yerel ayar kimliği değeri geçirebilirsiniz `GetLocalizedResourceHandle` uygun kaynak kitaplığı yükleyen bir işlev. Denetim varsa, sonuçta elde edilen tanıtıcı geçmelidir için [AfxSetResourceHandle](../mfc/reference/application-information-and-management.md#afxsetresourcehandle):
 

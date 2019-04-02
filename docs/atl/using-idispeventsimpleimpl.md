@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - IDispEventSimpleImpl class, using
 ms.assetid: 8640ad1a-4bd0-40a5-b5e4-7322685d7aab
-ms.openlocfilehash: 2da4c017f686f35f721dd2bff45436e95fb33630
-ms.sourcegitcommit: faa42c8a051e746d99dcebe70fd4bbaf3b023ace
+ms.openlocfilehash: 40edca3a99fb6e9d57d617e79d0bd37ebbfcd4ad
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57811198"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58768570"
 ---
 # <a name="using-idispeventsimpleimpl"></a>Using IDispEventSimpleImpl
 
@@ -31,7 +31,7 @@ Kullanırken `IDispEventSimpleImpl` olayları işlemek için yapmanız gerekir:
 
 Aşağıdaki örnekte nasıl işleneceğini gösterir `DocumentChange` olay harekete Word tarafından **uygulama** nesne. Bu olay üzerinde bir yöntemi olarak tanımlanan `ApplicationEvents` dispinterface.
 
-Örnek dandır [ATLEventHandling örnek](../visual-cpp-samples.md).
+Örnek dandır [ATLEventHandling örnek](../overview/visual-cpp-samples.md).
 
 ```cpp
 [ uuid(000209F7-0000-0000-C000-000000000046), hidden ]
@@ -66,4 +66,4 @@ Aşağıdaki kod, Simple.cpp şöyledir:
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Olay İşleme](../atl/event-handling-and-atl.md)<br/>
-[ATLEventHandling örnek](../visual-cpp-samples.md)
+[ATLEventHandling örnek](../overview/visual-cpp-samples.md)

@@ -6,18 +6,18 @@ f1_keywords:
 helpviewer_keywords:
 - C3902
 ms.assetid: feb3bb29-f836-4d77-ba71-3876f7f4f216
-ms.openlocfilehash: 22536f380187c6dceac3e355224d9d118cd1a2df
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d90bf299c566ce72e3d1cbfeb545def0a43d6cbf
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50564534"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58776303"
 ---
 # <a name="compiler-error-c3902"></a>Derleyici Hatası C3902
 
 'erişimcisi': son parametrenin türü 'type' olmalıdır
 
-En az bir kümesi yönteminin son parametrenin türü özellik türü eşleşmelidir. Daha fazla bilgi için [özelliği](../../windows/property-cpp-component-extensions.md).
+En az bir kümesi yönteminin son parametrenin türü özellik türü eşleşmelidir. Daha fazla bilgi için [özelliği](../../extensions/property-cpp-component-extensions.md).
 
 Aşağıdaki örnek, C3902 oluşturur:
 

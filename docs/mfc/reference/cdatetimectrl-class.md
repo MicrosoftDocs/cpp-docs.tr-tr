@@ -40,12 +40,12 @@ helpviewer_keywords:
 - CDateTimeCtrl [MFC], SetRange
 - CDateTimeCtrl [MFC], SetTime
 ms.assetid: 7113993b-5d37-4148-939f-500a190c5bdc
-ms.openlocfilehash: a68f3570f0e8c3315e8b0716cddcd37563894e76
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: 8c69473ab813c2fa692044fddc406a74a5aeb197
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57422500"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58779826"
 ---
 # <a name="cdatetimectrl-class"></a>CDateTimeCtrl sınıfı
 
@@ -599,7 +599,7 @@ Bu üye işlevi Win32 ileti davranışı uygulayan [DTM_SETSYSTEMTIME](/windows/
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MFC örnek CMNCTRL1](../../visual-cpp-samples.md)<br/>
+[MFC örnek CMNCTRL1](../../overview/visual-cpp-samples.md)<br/>
 [CWnd Sınıfı](../../mfc/reference/cwnd-class.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
 [CMonthCalCtrl Sınıfı](../../mfc/reference/cmonthcalctrl-class.md)

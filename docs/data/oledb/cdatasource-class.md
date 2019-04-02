@@ -57,12 +57,12 @@ helpviewer_keywords:
 - OpenWithPromptFileName method
 - OpenWithServiceComponents method
 ms.assetid: 99bf862c-9d5c-4117-9501-aa0e2672085c
-ms.openlocfilehash: 53e9305dd308e77afbd8d53754614c1cfb559f94
-ms.sourcegitcommit: c40469825b6101baac87d43e5f4aed6df6b078f5
+ms.openlocfilehash: cb92c19dd839fc09ed803e170a2762e4ac7cd494
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/12/2018
-ms.locfileid: "51557082"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58770824"
 ---
 # <a name="cdatasource-class"></a>CDataSource Sınıfı
 
@@ -98,7 +98,7 @@ class CDataSource
 
 Bir veya daha fazla veritabanı oturumları için tek bir bağlantı oluşturabilirsiniz. Bu oturumlar tarafından temsil edilen `CSession`. Çağırmalısınız [CDataSource::Open](../../data/oledb/cdatasource-open.md) bir oturumla oluşturmadan önce bağlantıyı açmak için `CSession::Open`.
 
-Nasıl kullanılacağına ilişkin bir örnek `CDataSource`, bkz: [CatDB](../../visual-cpp-samples.md) örnek.
+Nasıl kullanılacağına ilişkin bir örnek `CDataSource`, bkz: [CatDB](../../overview/visual-cpp-samples.md) örnek.
 
 ## <a name="close"></a> CDataSource::Close
 
@@ -152,7 +152,7 @@ HRESULT GetProperties(ULONG ulPropIDSets,
 
 #### <a name="parameters"></a>Parametreler
 
-Bkz: [IDBProperties::GetProperties](https://docs.microsoft.com/previous-versions/windows/desktop/ms714344(v=vs.85)) içinde *OLE DB Programcının Başvurusu* Windows SDK içinde.
+Bkz: [IDBProperties::GetProperties](/previous-versions/windows/desktop/ms714344(v=vs.85)) içinde *OLE DB Programcının Başvurusu* Windows SDK içinde.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -244,10 +244,10 @@ HRESULT Open(LPCSTR szProgID,
 [in] `CLSID` Veri sağlayıcısı.
 
 *pPropSet*<br/>
-[in] Bir dizi işaretçi [DBPROPSET](https://docs.microsoft.com/previous-versions/windows/desktop/ms714367(v=vs.85)) özelliklerini ve değerlerini ayarlamak için içeren yapılar. Bkz: [özellik kümeleri ve özellik gruplarını](https://docs.microsoft.com/previous-versions/windows/desktop/ms713696(v=vs.85)) içinde *OLE DB Programcının Başvurusu* Windows SDK içinde.
+[in] Bir dizi işaretçi [DBPROPSET](/previous-versions/windows/desktop/ms714367(v=vs.85)) özelliklerini ve değerlerini ayarlamak için içeren yapılar. Bkz: [özellik kümeleri ve özellik gruplarını](/previous-versions/windows/desktop/ms713696(v=vs.85)) içinde *OLE DB Programcının Başvurusu* Windows SDK içinde.
 
 *nPropertySets*<br/>
-[in] Sayısını [DBPROPSET](https://docs.microsoft.com/previous-versions/windows/desktop/ms714367(v=vs.85)) yapıları geçirilen *pPropSet* bağımsız değişken.
+[in] Sayısını [DBPROPSET](/previous-versions/windows/desktop/ms714367(v=vs.85)) yapıları geçirilen *pPropSet* bağımsız değişken.
 
 *Sağlayıcı adı*<br/>
 [in] Bağlanılacak veritabanının adı.
@@ -259,7 +259,7 @@ HRESULT Open(LPCSTR szProgID,
 [in] Kullanıcının parolası.
 
 *nInitMode*<br/>
-[in] Veritabanı başlatma modu. Bkz: [başlatma özellikleri](https://docs.microsoft.com/previous-versions/windows/desktop/ms723127(v=vs.85))içinde *OLE DB Programcının Başvurusu* geçerli başlatma modlarının bir listesi için Windows SDK. Varsa *nInitMode* sıfır, hiçbir başlatma işlemi modu bağlantıyı açmak için kullanılan özellik kümesine eklenir.
+[in] Veritabanı başlatma modu. Bkz: [başlatma özellikleri](/previous-versions/windows/desktop/ms723127(v=vs.85))içinde *OLE DB Programcının Başvurusu* geçerli başlatma modlarının bir listesi için Windows SDK. Varsa *nInitMode* sıfır, hiçbir başlatma işlemi modu bağlantıyı açmak için kullanılan özellik kümesine eklenir.
 
 *szProgID*<br/>
 [in] Bir program tanımlayıcısı.
@@ -304,7 +304,7 @@ HRESULT OpenFromFileName(LPCOLESTR szFileName) throw();
 *szFileName*<br/>
 [in] Bir dosya, genellikle bir veri kaynağı bağlantısı adı (. UDL) dosyası.
 
-Veri bağlantısı dosyalarını (UDL dosyaları) hakkında daha fazla bilgi için bkz: [veri bağlantısı API'sine genel bakış](https://docs.microsoft.com/previous-versions/windows/desktop/ms718102(v=vs.85)) Windows SDK.
+Veri bağlantısı dosyalarını (UDL dosyaları) hakkında daha fazla bilgi için bkz: [veri bağlantısı API'sine genel bakış](/previous-versions/windows/desktop/ms718102(v=vs.85)) Windows SDK.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -399,10 +399,10 @@ HRESULT OpenWithServiceComponents (LPCSTR szProgID,
 [in] Program Kimliği bir veri sağlayıcısı.
 
 *pPropset*<br/>
-[in] Bir dizi işaretçi [DBPROPSET](https://docs.microsoft.com/previous-versions/windows/desktop/ms714367(v=vs.85)) özelliklerini ve değerlerini ayarlamak için içeren yapılar. Bkz: [özellik kümeleri ve özellik gruplarını](https://docs.microsoft.com/previous-versions/windows/desktop/ms713696(v=vs.85)) içinde *OLE DB Programcının Başvurusu* Windows SDK içinde. Veri kaynağı nesnesi başlatılırsa, özellikleri veri kaynağı özelliği grubuna ait olmalıdır. Aynı özellik birden çok kez belirtilmişse *pPropset*, hangi değerin kullanıldığını sağlayıcıya özgü kaldırılır. Varsa *ulPropSets* sıfırsa, bu parametre yoksayılır.
+[in] Bir dizi işaretçi [DBPROPSET](/previous-versions/windows/desktop/ms714367(v=vs.85)) özelliklerini ve değerlerini ayarlamak için içeren yapılar. Bkz: [özellik kümeleri ve özellik gruplarını](/previous-versions/windows/desktop/ms713696(v=vs.85)) içinde *OLE DB Programcının Başvurusu* Windows SDK içinde. Veri kaynağı nesnesi başlatılırsa, özellikleri veri kaynağı özelliği grubuna ait olmalıdır. Aynı özellik birden çok kez belirtilmişse *pPropset*, hangi değerin kullanıldığını sağlayıcıya özgü kaldırılır. Varsa *ulPropSets* sıfırsa, bu parametre yoksayılır.
 
 *ulPropSets*<br/>
-[in] Sayısını [DBPROPSET](https://docs.microsoft.com/previous-versions/windows/desktop/ms714367(v=vs.85)) yapıları geçirilen *pPropSet* bağımsız değişken. Sağlayıcı bu sıfırsa yoksayar *pPropset*.
+[in] Sayısını [DBPROPSET](/previous-versions/windows/desktop/ms714367(v=vs.85)) yapıları geçirilen *pPropSet* bağımsız değişken. Sağlayıcı bu sıfırsa yoksayar *pPropset*.
 
 ### <a name="return-value"></a>Dönüş Değeri
 

@@ -44,12 +44,12 @@ helpviewer_keywords:
 - CMFCColorButton [MFC], UpdateColor
 - CMFCColorButton [MFC], m_bEnabledInCustomizeMode
 ms.assetid: 9fdf34ae-4cc5-4c5e-9d89-1c50e8a73699
-ms.openlocfilehash: 05a4ad17feea20c67069e65c5c5df43d543e2377
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: c0c9ad79342f2013aa071240c684fce168e55c9e
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57293491"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58780008"
 ---
 # <a name="cmfccolorbutton-class"></a>CMFCColorButton sınıfı
 
@@ -126,7 +126,7 @@ Renk Seçici iletişim kutusu ( [CMFCColorBar sınıfı](../../mfc/reference/cmf
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, bir renk düğmesi çeşitli yöntemlerle kullanarak yapılandırma işlemi gösterilmektedir `CMFCColorButton` sınıfı. Yöntemler rengi düğmesi ve sütunların sayısı rengini ayarlama ve otomatik ve diğer düğmeyi etkinleştir. Bu örneğin parçasıdır [durum çubuğu gösterim örneği](../../visual-cpp-samples.md).
+Aşağıdaki örnek, bir renk düğmesi çeşitli yöntemlerle kullanarak yapılandırma işlemi gösterilmektedir `CMFCColorButton` sınıfı. Yöntemler rengi düğmesi ve sütunların sayısı rengini ayarlama ve otomatik ve diğer düğmeyi etkinleştir. Bu örneğin parçasıdır [durum çubuğu gösterim örneği](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_StatusBarDemo#10](../../mfc/reference/codesnippet/cpp/cmfccolorbutton-class_1.h)]
 [!code-cpp[NVC_MFC_StatusBarDemo#11](../../mfc/reference/codesnippet/cpp/cmfccolorbutton-class_2.cpp)]

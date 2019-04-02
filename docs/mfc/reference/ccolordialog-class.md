@@ -20,12 +20,12 @@ helpviewer_keywords:
 - CColorDialog [MFC], OnColorOK
 - CColorDialog [MFC], m_cc
 ms.assetid: d013dc25-9290-4b5d-a97e-95ad7208e13b
-ms.openlocfilehash: 39868ed27a0dfb8756b4829ea7c378c798bd2ff3
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: bc9bc76b328359d4c8ec7796de7dfaa7d3a9cf2c
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57304216"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58772845"
 ---
 # <a name="ccolordialog-class"></a>CColorDialog sınıfı
 
@@ -268,7 +268,7 @@ Bu işlev bir ileti işleyicisinin içerisinde çağrılır veya `OnColorOK`. İ
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MFC örnek MDI](../../visual-cpp-samples.md)<br/>
-[MFC örnek DRAWCLI](../../visual-cpp-samples.md)<br/>
+[MFC örnek MDI](../../overview/visual-cpp-samples.md)<br/>
+[MFC örnek DRAWCLI](../../overview/visual-cpp-samples.md)<br/>
 [CCommonDialog Sınıfı](../../mfc/reference/ccommondialog-class.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)

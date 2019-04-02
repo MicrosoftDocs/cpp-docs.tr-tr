@@ -14,12 +14,12 @@ helpviewer_keywords:
 - CBitmapButton [MFC], LoadBitmaps
 - CBitmapButton [MFC], SizeToContent
 ms.assetid: 9ad6cb45-c3c4-4fb1-96d3-1fe3df7bbcfc
-ms.openlocfilehash: c800b40fcf2bb3008b35614390e4aafcb43a54f5
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 45e0214cafb80c3e00a7e888a3170040f46113f1
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57296767"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58770284"
 ---
 # <a name="cbitmapbutton-class"></a>CBitmapButton Class
 
@@ -224,6 +224,6 @@ void SizeToContent();
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MFC örnek CTRLTEST](../../visual-cpp-samples.md)<br/>
+[MFC örnek CTRLTEST](../../overview/visual-cpp-samples.md)<br/>
 [CButton Sınıfı](../../mfc/reference/cbutton-class.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)

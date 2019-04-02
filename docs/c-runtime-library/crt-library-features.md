@@ -18,12 +18,12 @@ helpviewer_keywords:
 - libraries [C++], run-time
 - linking [C++], libraries
 ms.assetid: a889fd39-807d-48f2-807f-81492612463f
-ms.openlocfilehash: 08d85cd6993a2f3558ddb501dacac671c0d5d797
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b9a2691d492a277ffe0018b6e86b00cd245840ed
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50540276"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58767697"
 ---
 # <a name="crt-library-features"></a>CRT Kitaplık Özellikleri
 
@@ -33,7 +33,7 @@ Bu konuda, C çalışma zamanı kitaplıklarının yanı sıra ilgili derleme se
 
 C çalışma zamanı kitaplığı (CRT) ISO C99 standart Kitaplığı'na dahil C++ Standart Kitaplığı'nun bir parçasıdır. Yerel kod geliştirme CRT uygulamak için Visual C++ kitaplıklarını destekler ve hem de yerel ve yönetilen kod karma. Çok iş parçacıklı geliştirme CRT tüm sürümlerini destekler. Hem statik, doğrudan kodunuza, kitaplık bağlamak için bağlama veya, kod kullanmak yaygın DLL dosyaları izin vermek için dinamik bağlantı kitaplıkları çoğunu destekler.
 
-Visual Studio 2015'ten başlayarak, CRT yeni ikili dosyalarınıza düzenlendi. İşlevler ve genel öğeleri standart C99 CRT kitaplığı tarafından dışarı aktarılan Evrensel CRT (UCRT) içerir. UCRT artık Windows bir bileşendir ve Windows 10 'un bir parçası olarak sunulur. Statik kitaplık, DLL içeri aktarma kitaplığını ve UCRT için üst bilgi dosyaları artık Windows 10 SDK'sı bulunamadı. Visual C++'ı yüklediğinizde, Visual Studio kurulumunu UCRT kullanmak için gerekli Windows 10 SDK'sının alt yükler. Visual Studio 2015 ve sonraki sürümleri tarafından desteklenen Windows sürümlerini UCRT kullanabilirsiniz. Windows 10 dışında Windows'ın desteklenen sürümleri için vcredist kullanarak dağıtabilirsiniz. Daha fazla bilgi için [Visual C++ dosyalarını yeniden dağıtma](../ide/redistributing-visual-cpp-files.md).
+Visual Studio 2015'ten başlayarak, CRT yeni ikili dosyalarınıza düzenlendi. İşlevler ve genel öğeleri standart C99 CRT kitaplığı tarafından dışarı aktarılan Evrensel CRT (UCRT) içerir. UCRT artık Windows bir bileşendir ve Windows 10 'un bir parçası olarak sunulur. Statik kitaplık, DLL içeri aktarma kitaplığını ve UCRT için üst bilgi dosyaları artık Windows 10 SDK'sı bulunamadı. Visual C++'ı yüklediğinizde, Visual Studio kurulumunu UCRT kullanmak için gerekli Windows 10 SDK'sının alt yükler. Visual Studio 2015 ve sonraki sürümleri tarafından desteklenen Windows sürümlerini UCRT kullanabilirsiniz. Windows 10 dışında Windows'ın desteklenen sürümleri için vcredist kullanarak dağıtabilirsiniz. Daha fazla bilgi için [Visual C++ dosyalarını yeniden dağıtma](../windows/redistributing-visual-cpp-files.md).
 
 Aşağıdaki tabloda UCRT uygulayan kitaplıkları listeler.
 
@@ -42,7 +42,7 @@ Aşağıdaki tabloda UCRT uygulayan kitaplıkları listeler.
 |libucrt.lib|Yok.|Statik olarak UCRT kodunuza bağlar.|**/MT**|_MT|
 |libucrtd.lib|Yok.|Statik bağlama UCRT sürümünü hata ayıklayın. Değil yeniden dağıtılabilir.|**/MTd**|_DEBUG, _MT|
 |ucrt.lib|ucrtbase.dll|DLL içeri aktarma kitaplığını UCRT için.|**/MD**|_MT, _DLL|
-|ucrtd.lib|ucrtbased.dll dosyasını|DLL Kitaplığı UCRT hata ayıklama sürümünü içeri aktarın. Değil yeniden dağıtılabilir.|**/MDd**|_DEBUG, _MT, _DLL|
+|ucrtd.lib|ucrtbased.dll|DLL Kitaplığı UCRT hata ayıklama sürümünü içeri aktarın. Değil yeniden dağıtılabilir.|**/MDd**|_DEBUG, _MT, _DLL|
 
 Visual C++ CRT uygulamaya özgü kod özel durum işleme ve hata ayıklama desteği, çalışma zamanı denetimleri ve tür bilgileri, uygulama ayrıntıları ve bazı genişletilmiş kitaplık işlevleri gibi vcruntime kitaplığı içerir. Bu kitaplık, kullanılan derleyici sürümüne özeldir.
 
@@ -64,7 +64,7 @@ Bu tablo, CRT başlatma ve sonlandırma uygulayan kitaplıkları listeler.
 
 |Kitaplığı|Özellikler|Seçenek|Ön işlemci yönergeleri|
 |-------------|---------------------|------------|-----------------------------|
-|LIBCMT.lib|Statik olarak yerel CRT başlatma kodunuza bağlar.|**/MT**|_MT|
+|libcmt.lib|Statik olarak yerel CRT başlatma kodunuza bağlar.|**/MT**|_MT|
 |libcmtd.lib|Hata ayıklama sürümü yerel CRT başlatma, statik olarak bağlar. Değil yeniden dağıtılabilir.|**/MTd**|_DEBUG, _MT|
 |msvcrt.lib|Yerel CRT başlatma DLL UCRT ve vcruntime ile kullanılmak için statik kitaplığı.|**/MD**|_MT, _DLL|
 |msvcrtd.lib|Hata ayıklama sürümü, yerel CRT başlatma DLL UCRT ve vcruntime ile kullanılmak için statik kitaplığı. Değil yeniden dağıtılabilir.|**/MDd**|_DEBUG, _MT, _DLL|

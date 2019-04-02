@@ -8,16 +8,16 @@ f1_keywords:
 helpviewer_keywords:
 - Platform::Type Class
 ms.assetid: d6b03f1e-b240-49b9-a08e-53a460030475
-ms.openlocfilehash: 73338e5b4c723c7f66dbecaea5add3b197f3493d
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.openlocfilehash: 456dbff652c8f1b800308ff757930b425616a83f
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57744033"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58781750"
 ---
 # <a name="platformtype-class"></a>Platform::type sınıfı
 
-Çalışma zamanı türü bilgilerini içerir — özellikle, bir dize adı ve typecode'u işlenemiyor. Çağırılarak [Object::GetType](../cppcx/platform-object-class.md#gettype) herhangi bir nesne üzerinde veya bu adı kullanıyor [TypeID](../windows/typeid-cpp-component-extensions.md) operatörü bir sınıfın veya yapının adı.
+Çalışma zamanı türü bilgilerini içerir — özellikle, bir dize adı ve typecode'u işlenemiyor. Çağırılarak [Object::GetType](../cppcx/platform-object-class.md#gettype) herhangi bir nesne üzerinde veya bu adı kullanıyor [TypeID](../extensions/typeid-cpp-component-extensions.md) operatörü bir sınıfın veya yapının adı.
 
 ## <a name="syntax"></a>Sözdizimi
 

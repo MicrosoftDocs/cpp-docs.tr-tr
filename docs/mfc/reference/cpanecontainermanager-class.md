@@ -106,12 +106,12 @@ helpviewer_keywords:
 - CPaneContainerManager [MFC], SetResizeMode
 - CPaneContainerManager [MFC], StoreRecentDockSiteInfo
 ms.assetid: 3d974c15-a62f-4648-bb5b-cc31ab7950af
-ms.openlocfilehash: 7e0c55981b895540d490e2e38f43eb68abf48e32
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 887b771ee76034256c77aa3d038da96696eca6ed
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57294661"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58774600"
 ---
 # <a name="cpanecontainermanager-class"></a>CPaneContainerManager Class
 
@@ -189,7 +189,7 @@ Framework örneklerini otomatik olarak oluşturur. `CPaneContainerManager` nesne
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, bir başvuru almak gösterilmiştir bir `CPaneContainerManager` nesne. Bu kod parçacığı parçasıdır [bölme boyutunu ayarlayın örnek](../../visual-cpp-samples.md).
+Aşağıdaki örnek, bir başvuru almak gösterilmiştir bir `CPaneContainerManager` nesne. Bu kod parçacığı parçasıdır [bölme boyutunu ayarlayın örnek](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_SetPaneSize#5](../../mfc/reference/codesnippet/cpp/cpanecontainermanager-class_1.cpp)]
 

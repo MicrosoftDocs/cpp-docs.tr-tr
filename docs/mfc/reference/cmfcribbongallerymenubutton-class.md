@@ -18,12 +18,12 @@ helpviewer_keywords:
 - CMFCRibbonGalleryMenuButton [MFC], HasButton
 - CMFCRibbonGalleryMenuButton [MFC], IsEmptyMenuAllowed
 ms.assetid: 4d459d9b-8b1a-4371-92f6-dc4ce6cc42c8
-ms.openlocfilehash: 9398e0c07d64760d7140b9c4ecf3bbf987a636f3
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: b63eab7c1e4d03a9103795892603b819eb7d02f3
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57326770"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58777148"
 ---
 # <a name="cmfcribbongallerymenubutton-class"></a>CMFCRibbonGalleryMenuButton sınıfı
 
@@ -152,7 +152,7 @@ Galeri menü düğmesine bir ok olan bir açılır menü olarak görüntülenir.
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki örnek oluşturucusuna kullanımı gösterilmiştir `CMFCRibbonGalleryMenuButton` sınıfı. Bu kod parçacığı parçasıdır [MS Office 2007 Demo örnek](../../visual-cpp-samples.md).
+Aşağıdaki örnek oluşturucusuna kullanımı gösterilmiştir `CMFCRibbonGalleryMenuButton` sınıfı. Bu kod parçacığı parçasıdır [MS Office 2007 Demo örnek](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_MSOffice2007Demo#8](../../mfc/reference/codesnippet/cpp/cmfcribbongallerymenubutton-class_1.cpp)]
 

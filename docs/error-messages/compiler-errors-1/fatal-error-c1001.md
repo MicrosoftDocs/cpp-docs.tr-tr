@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C1001
 ms.assetid: 5736cdb3-22c8-4fad-aa85-d5e0d2b232f4
-ms.openlocfilehash: a7130ed0568de387c99b8296dc4e10d92baec337
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.openlocfilehash: beb382b9c6ccf80d01f5a0262832e7fb7e1ea0a4
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57821371"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58770934"
 ---
 # <a name="fatal-error-c1001"></a>Önemli hata C1001
 
@@ -23,4 +23,4 @@ Genellikle, bir veya daha fazla iyileştirme seçenekleri kaldırarak bir iyile�
 
 En iyi duruma getirme hatası için sorumlu emin değilseniz, burada raporlanan hata satırı veya birkaç satırdaki çevreleyen kod satırlarını yeniden deneyin. Kod derleyici görür, ön işleme sonra biçimini görmek için kullanabileceğiniz [/P (dosyaya ön işleme)](../../build/reference/p-preprocess-to-a-file.md) seçeneği.
 
-Hatanın kaynağını yalıtmak ve derleyici iç hatası Microsoft'a hakkında daha fazla bilgi için bkz. [Visual C++ araç takımı ile ilgili bir sorun bildirme](../../how-to-report-a-problem-with-the-visual-cpp-toolset.md).
+Hatanın kaynağını yalıtmak ve derleyici iç hatası Microsoft'a hakkında daha fazla bilgi için bkz. [Visual C++ araç takımı ile ilgili bir sorun bildirme](../../overview/how-to-report-a-problem-with-the-visual-cpp-toolset.md).

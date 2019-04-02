@@ -6,12 +6,12 @@ helpviewer_keywords:
 - troubleshooting isolated applications
 - troubleshooting Visual C++
 ms.assetid: 3257257a-1f0b-4ede-8564-9277a7113a35
-ms.openlocfilehash: d23662d6dd6d2f241c48e0c83f2fa5ed9532c3f7
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.openlocfilehash: 32896939ddc7fd0b841e1b6904124b06c9bc51c9
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57807955"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58766065"
 ---
 # <a name="troubleshooting-cc-isolated-applications-and-side-by-side-assemblies"></a>C/C++ Yalıtılmış Uygulamalar ve Yan Yana Derlemeler ile İlgili Sorunları Giderme
 
@@ -31,7 +31,7 @@ Buna benzer bir hata iletisi görüntülenebilir, uygulamanızı hiçbir bildiri
 
 Uygulamanızı Visual Studio'su olmayan bir bilgisayarda dağıtılır ve öncekinin benzer hata iletileri ile çöküyor, bunları denetleyin:
 
-1. Açıklanan adımları [Visual C++ uygulaması bağımlılıklarını anlama](../ide/understanding-the-dependencies-of-a-visual-cpp-application.md). Bir uygulama veya DLL için çoğu bağımlılıkları bağımlılık Denetçisi'ni gösterebilirsiniz. Bazı DLL'lerin eksik olduğunu gözlemlerseniz, uygulamanızı çalıştırmak çalıştığınız bilgisayarda yükleyin.
+1. Açıklanan adımları [Visual C++ uygulaması bağımlılıklarını anlama](../windows/understanding-the-dependencies-of-a-visual-cpp-application.md). Bir uygulama veya DLL için çoğu bağımlılıkları bağımlılık Denetçisi'ni gösterebilirsiniz. Bazı DLL'lerin eksik olduğunu gözlemlerseniz, uygulamanızı çalıştırmak çalıştığınız bilgisayarda yükleyin.
 
 1. İşletim sistemi yükleyicisi uygulama bağımlı derlemeler yüklemek için uygulama bildirimini kullanır. Bildirim ikili bir kaynak olarak gömülü, veya ayrı bir dosya uygulama klasöründe olarak yüklenir. Bildirim ikili dosyada gömülü olup olmadığını denetlemek için ikili Visual Studio'da açın ve rt_manıfest için kaynakları listesinde arayın. < Binary_name > gibi bir şey adlı bir dosya için uygulama klasöründe bir gömülü bildirim bulamazsa, bakın. \<uzantısı > .manifest.
 

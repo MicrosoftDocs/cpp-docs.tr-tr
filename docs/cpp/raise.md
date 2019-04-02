@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - __raise keyword [C++]
 ms.assetid: 6f1ae418-5f0f-48b6-9f6e-8ea7e66b239a
-ms.openlocfilehash: 865524fe91b7d137e3a943973dcca6d833bd16df
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c5703c87945667f4ac65647019a72b304363bee2
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50471444"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58780632"
 ---
 # <a name="raise"></a>__raise
 
@@ -26,7 +26,7 @@ __raise method-declarator;
 
 ## <a name="remarks"></a>Açıklamalar
 
-Yönetilen koddan bir olay yalnızca tanımlandığı sınıfın içinden oluşturulabilir. Bkz: [olay](../windows/event-cpp-component-extensions.md) daha fazla bilgi için.
+Yönetilen koddan bir olay yalnızca tanımlandığı sınıfın içinden oluşturulabilir. Bkz: [olay](../extensions/event-cpp-component-extensions.md) daha fazla bilgi için.
 
 Anahtar sözcüğü **__raise** dışı bir olay çağırırsanız yayılan bir hataya neden olur.
 
@@ -63,4 +63,4 @@ int main() {
 
 [Anahtar Sözcükler](../cpp/keywords-cpp.md)<br/>
 [Olay İşleme](../cpp/event-handling.md)<br/>
-[Çalışma Zamanı Platformları için Bileşen Uzantıları](../windows/component-extensions-for-runtime-platforms.md)
+[Çalışma Zamanı Platformları için Bileşen Uzantıları](../extensions/component-extensions-for-runtime-platforms.md)

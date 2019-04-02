@@ -8,12 +8,12 @@ helpviewer_keywords:
 - active document containers [MFC], about active document containers
 - MFC COM, active document containment
 ms.assetid: b8dfa74b-75ce-47df-b75e-fc87b7f7d687
-ms.openlocfilehash: 1811febdb26091785f8b709e90f8cdd7a7f8afdd
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: dc13384454c4732d3efbf99def5d05dd4f2d44aa
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57258300"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58776576"
 ---
 # <a name="active-document-containment"></a>Etkin Belge Kapsaması
 
@@ -35,7 +35,7 @@ Etkin belge kapsayıcı uygulaması, kullanıcılar, etkin belgeler (Office Bind
 
 ## <a name="sample-programs"></a>Örnek program
 
-- [MFCBIND](../visual-cpp-samples.md) örnek etkin belge kapsayıcı uygulaması uygulanışı gösterilmektedir.
+- [MFCBIND](../overview/visual-cpp-samples.md) örnek etkin belge kapsayıcı uygulaması uygulanışı gösterilmektedir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

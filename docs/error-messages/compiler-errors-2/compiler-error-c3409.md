@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3409
 ms.assetid: e372d9fa-230c-4b28-b6d3-6ad81ccf9dbb
-ms.openlocfilehash: b6ceb6f2e8700a5459dbd01db443ef90de314b5e
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.openlocfilehash: a4d9271153618fab47a8b5b9cb11b2a5eed35230
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51330092"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58769309"
 ---
 # <a name="compiler-error-c3409"></a>Derleyici Hatası C3409
 
@@ -19,7 +19,7 @@ ms.locfileid: "51330092"
 
 ## <a name="remarks"></a>Açıklamalar
 
-Köşeli ayraç derleyici tarafından yorumlanan bir [özniteliği](../../windows/cpp-attributes-reference.md) blok, ancak hiç öznitelik bulunamadı.
+Köşeli ayraç derleyici tarafından yorumlanan bir [özniteliği](../../windows/attributes-alphabetical-reference.md) blok, ancak hiç öznitelik bulunamadı.
 
 Köşeli ayraçlar bir lambda ifadesinin tanımının bir parçası kullandığınızda, derleyici bu hatayı oluşturabilir. Derleyici köşeli ayraç bir lambda ifadesi veya bir öznitelik blok tanımının bir parçası olup olmadığını belirleyemiyor. Bu hata oluşur. Lambda ifadeleri hakkında daha fazla bilgi için bkz. [Lambda ifadeleri](../../cpp/lambda-expressions-in-cpp.md).
 
@@ -69,6 +69,6 @@ int main()
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[attribute](../../windows/cpp-attributes-reference.md)<br/>
+[attribute](../../windows/attributes-alphabetical-reference.md)<br/>
 [Lambda İfadeleri](../../cpp/lambda-expressions-in-cpp.md)<br/>
 [Lambda İfadesi Söz Dizimi](../../cpp/lambda-expression-syntax.md)

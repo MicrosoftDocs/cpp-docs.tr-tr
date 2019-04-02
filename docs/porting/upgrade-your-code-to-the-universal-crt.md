@@ -2,12 +2,12 @@
 title: Kodunuzu Evrensel CRT'ye yükseltme
 ms.date: 03/31/2017
 ms.assetid: eaf34c1b-da98-4058-a059-a10db693a5ce
-ms.openlocfilehash: ba987c6c88a3b559b8fe6224fd27dfbfe8c9d821
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.openlocfilehash: 368b61820310135f14cbe4225b9315e62d3686a7
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57741339"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58769192"
 ---
 # <a name="upgrade-your-code-to-the-universal-crt"></a>Kodunuzu Evrensel CRT'ye yükseltme
 
@@ -35,9 +35,9 @@ Güncelleştirdiğinizde, Visual C++ projeleri projenin ayarlarsanız **bağlay�
 
 UCRT artık Microsoft Windows işletim sisteminin bir bileşeni olduğundan, Windows 10 işletim sisteminin parçası olarak dahil edilir ve eski işletim sistemleri, Windows Vista ile Windows 8.1 için Windows Update aracılığıyla kullanılabilir. Yeniden dağıtılabilir sürüm, Windows XP için kullanılabilir. Bir işletim sistemi bileşeni olarak bağımsız olarak Visual Studio ve Microsoft C++ Derleyici sürümleri UCRT güncelleştirmeler ve Bakım Windows Update tarafından yönetilir. Güvenlik ve güncelleştirmeler ve daha küçük bir görüntü boyutu kolaylığı için bir Windows bileşeni UCRT olduğundan UCRT uygulamanız için merkezi dağıtımı önerilir.
 
-Visual Studio 2015 veya Visual Studio 2017 tarafından desteklenen Windows sürümlerini UCRT kullanabilirsiniz. Windows 10 dışında Windows'ın desteklenen sürümleri için vcredist paketini kullanarak dağıtabilirsiniz. Vcredist paketleri UCRT bileşenleri içerir ve otomatik olarak Windows işletim sistemlerinde, bunları varsayılan olarak yüklü olmayan yükleyin. Daha fazla bilgi için [Visual C++ dosyalarını yeniden dağıtma](../ide/redistributing-visual-cpp-files.md).
+Visual Studio 2015 veya Visual Studio 2017 tarafından desteklenen Windows sürümlerini UCRT kullanabilirsiniz. Windows 10 dışında Windows'ın desteklenen sürümleri için vcredist paketini kullanarak dağıtabilirsiniz. Vcredist paketleri UCRT bileşenleri içerir ve otomatik olarak Windows işletim sistemlerinde, bunları varsayılan olarak yüklü olmayan yükleyin. Daha fazla bilgi için [Visual C++ dosyalarını yeniden dağıtma](../windows/redistributing-visual-cpp-files.md).
 
-Hem performans hem de güvenlik nedeniyle önerilmez olsa UCRT uygulaması yerel dağıtımını desteklenir. Uygulama yerel dağıtım DLL'leri altında Windows SDK ' nın bir parçası olarak dahil edilen **redist** alt. Gereken DLL'leri ucrtbase.dll ve bir dizi içeren **APISet ileticisi** API adlı DLL'leri-ms-win -_alt_.dll. Her işletim sisteminde gerekli DLL'lerin kümesini uygulaması yerel dağıtım kullandığınızda tüm DLL'leri dahil önerilen şekilde değişir. Ek ayrıntılar ve yerel uygulama dağıtımı hakkında uyarılar için bkz: [Visual C++ üzerinde dağıtım](../ide/deployment-in-visual-cpp.md).
+Hem performans hem de güvenlik nedeniyle önerilmez olsa UCRT uygulaması yerel dağıtımını desteklenir. Uygulama yerel dağıtım DLL'leri altında Windows SDK ' nın bir parçası olarak dahil edilen **redist** alt. Gereken DLL'leri ucrtbase.dll ve bir dizi içeren **APISet ileticisi** API adlı DLL'leri-ms-win -_alt_.dll. Her işletim sisteminde gerekli DLL'lerin kümesini uygulaması yerel dağıtım kullandığınızda tüm DLL'leri dahil önerilen şekilde değişir. Ek ayrıntılar ve yerel uygulama dağıtımı hakkında uyarılar için bkz: [Visual C++ üzerinde dağıtım](../windows/deployment-in-visual-cpp.md).
 
 ## <a name="changes-to-the-universal-crt-functions-and-macros"></a>Değişiklikleri makroları ve evrensel CRT işlevleri
 
@@ -49,4 +49,4 @@ Birçok işlev eklendi veya ISO C99 uyumluluğu artırmak için UCRT ve kod kali
 [Olası Yükseltme Sorunlarına Genel Bakış (Visual C++)](overview-of-potential-upgrade-issues-visual-cpp.md)<br/>
 [Önceki Visual C++ Sürümü Projelerini Yükseltme](upgrading-projects-from-earlier-versions-of-visual-cpp.md)<br/>
 [Visual C++ değişiklik geçmişi 2003 - 2015](visual-cpp-change-history-2003-2015.md)<br/>
-[Visual Studio 2017’deki C++ uyumluluk geliştirmeleri](../cpp-conformance-improvements-2017.md)
+[Visual Studio 2017’deki C++ uyumluluk geliştirmeleri](../overview/cpp-conformance-improvements-2017.md)

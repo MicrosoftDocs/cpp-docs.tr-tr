@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3675
 ms.assetid: 87461613-6633-430b-b95d-c7cb1bb63776
-ms.openlocfilehash: c154a0fe1989c92bb5e07c0710d3846883d1a113
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e29e536bf89aef887dc043327e4b4596703d0538
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50546333"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58775198"
 ---
 # <a name="compiler-error-c3675"></a>Derleyici Hatası C3675
 
@@ -19,7 +19,7 @@ ms.locfileid: "50546333"
 
 Basit bir özelliğin bildirdiğinizde, derleyici alma ve ayarlama erişimci yöntemlerinin ve bu oluşturur adlardır programınızı kapsamı içinde mevcut.  Derleyicinin ürettiği adları get_ ve set_ özellik adının önüne eklenerek oluşturulur.  Bu nedenle, İşlevler derleyici tarafından oluşturulan erişimcileri aynı ada sahip bildiremezsiniz.
 
-Bkz: [özelliği](../../windows/property-cpp-component-extensions.md) daha fazla bilgi için.
+Bkz: [özelliği](../../extensions/property-cpp-component-extensions.md) daha fazla bilgi için.
 
 ## <a name="example"></a>Örnek
 

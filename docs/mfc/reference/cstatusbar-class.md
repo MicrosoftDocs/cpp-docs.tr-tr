@@ -36,12 +36,12 @@ helpviewer_keywords:
 - CStatusBar [MFC], SetPaneStyle
 - CStatusBar [MFC], SetPaneText
 ms.assetid: a3bde3db-e71c-4881-a3ca-1d5481c345ba
-ms.openlocfilehash: e7aa577d237c1800ca9df3f0af4c44acdaae9ae2
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: d714159aa9fd52df682b1e5f3dbf3957bbef1b91
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57279503"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58777343"
 ---
 # <a name="cstatusbar-class"></a>CStatusBar sınıfı
 
@@ -283,7 +283,7 @@ void GetItemRect(
 Gösterge dikdörtgeni koordinatları alınacak olan dizini.
 
 *lpRect*<br/>
-İşaret eden bir [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) yapısı veya [CRect](../../atl-mfc-shared/reference/crect-class.md) tarafından belirtilen göstergenin koordinat alacak nesne *nIndex*.
+İşaret eden bir [RECT](/previous-versions/dd162897\(v=vs.85\)) yapısı veya [CRect](../../atl-mfc-shared/reference/crect-class.md) tarafından belirtilen göstergenin koordinat alacak nesne *nIndex*.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -506,8 +506,8 @@ Başarılı olursa sıfır dışı; Aksi durumda 0.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MFC örnek CTRLBARS](../../visual-cpp-samples.md)<br/>
-[MFC örnek DLGCBR32](../../visual-cpp-samples.md)<br/>
+[MFC örnek CTRLBARS](../../overview/visual-cpp-samples.md)<br/>
+[MFC örnek DLGCBR32](../../overview/visual-cpp-samples.md)<br/>
 [CControlBar Sınıfı](../../mfc/reference/ccontrolbar-class.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
 [CStatusBarCtrl Sınıfı](../../mfc/reference/cstatusbarctrl-class.md)<br/>

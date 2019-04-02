@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3821
 ms.assetid: 2b327c7a-5faf-443c-ae82-944fae25b4df
-ms.openlocfilehash: 1cfc762cc7151eb2d55f8bd681bec935aea2acd4
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 248431afb25aa4b9480818f76388f6ad56d8e006
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50625972"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58778253"
 ---
 # <a name="compiler-error-c3821"></a>Derleyici Hatası C3821
 
@@ -19,7 +19,7 @@ ms.locfileid: "50625972"
 
 Satır içi derlemeyle işlevler veya [setjmp](../../c-runtime-library/reference/setjmp.md) değer türleri veya yönetilen sınıflar içeremez. Bu hatayı düzeltmek için satır içi derleme kaldırın ve `setjmp` yönetilen nesnelerini veya kaldırın.
 
-Otomatik depolama vararg işlevinde kullanmayı denerseniz C3821 da meydana gelebilir.  Daha fazla bilgi için [değişken bağımsız değişken listeleri (...) (C + +/ CLI) ](../../windows/variable-argument-lists-dot-dot-dot-cpp-cli.md) ve [başvuru türleri için C++ yığın anlamları](../../dotnet/cpp-stack-semantics-for-reference-types.md).
+Otomatik depolama vararg işlevinde kullanmayı denerseniz C3821 da meydana gelebilir.  Daha fazla bilgi için [değişken bağımsız değişken listeleri (...) (C + +/ CLI) ](../../extensions/variable-argument-lists-dot-dot-dot-cpp-cli.md) ve [başvuru türleri için C++ yığın anlamları](../../dotnet/cpp-stack-semantics-for-reference-types.md).
 
 ## <a name="example"></a>Örnek
 

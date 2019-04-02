@@ -7,12 +7,12 @@ helpviewer_keywords:
 - Add References Dialog Box (C++)
 - .NET Framework (C++), Add References Dialog Box
 ms.assetid: 12b8f571-0f21-40b3-9404-5318a57e9cb5
-ms.openlocfilehash: 8daba00432d7f14c8517da3ed4dc506cfd80865a
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.openlocfilehash: eb4d970527ba919af10eadab7c907f5108767b9b
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57823976"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58780476"
 ---
 # <a name="consuming-libraries-and-components"></a>Kitaplıklar ve bileşenleri kullanma
 
@@ -20,7 +20,7 @@ Genellikle, arama işlevleri veya ikili dosyaları gibi statik kitaplık (.lib d
 
 ## <a name="consuming-libraries-downloaded-via-vcpkg"></a>Vcpkg indirilen kitaplıkları kullanma
 
-Kullanarak yüklediğiniz bir kitaplık kullanmak üzere **vcpkg** Paket Yöneticisi, aşağıdaki yönergeleri yok sayabilirsiniz. Bkz: [vcpkg: Windows, Linux ve MacOS için C++ Paket Yöneticisi](../vcpkg.md#integrate-with-visual-studio-windows) daha fazla bilgi için.
+Kullanarak yüklediğiniz bir kitaplık kullanmak üzere **vcpkg** Paket Yöneticisi, aşağıdaki yönergeleri yok sayabilirsiniz. Bkz: [vcpkg: Windows, Linux ve MacOS için C++ Paket Yöneticisi](vcpkg.md#integrate-with-visual-studio-windows) daha fazla bilgi için.
 
 ## <a name="consuming-static-libraries"></a>Statik kitaplıklar kullanma
 
@@ -167,4 +167,4 @@ Aşağıdaki özellikleri, COM ve .NET derleme başvurularını bulunur ve deği
 ## <a name="see-also"></a>Ayrıca Bkz.
 
 [C++ projesi özellik Sayfa başvurusu](reference/property-pages-visual-cpp.md)<br>
-[C++ derleyicisi ayarlayın ve derleme Visual Studio özellikleri](working-with-project-properties.md)
+[Visual Studio’da C++ derleyicisi ve derleme özelliklerini ayarlama](working-with-project-properties.md)

@@ -6,18 +6,18 @@ f1_keywords:
 helpviewer_keywords:
 - C3388
 ms.assetid: 34336545-ed13-4d81-ab5f-f869799fe4c2
-ms.openlocfilehash: 1f6e51542cc852543d648f9f94a964ae0cab3b30
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 3b56aae115b1a1721f3f8a8688e36b25edc7f33f
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50512702"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58780034"
 ---
 # <a name="compiler-error-c3388"></a>Derleyici Hatası C3388
 
 'type': 'ref class' varsayılıyor bir kısıtlama olarak kullanılamaz ayrıştırmaya devam etmek için
 
-Genel türde bir kısıtlama belirtildi, ancak kısıtlaması düzgün belirtilmedi. Bkz: [genel tür parametrelerindeki kısıtlamalar (C + +/ CLI)](../../windows/constraints-on-generic-type-parameters-cpp-cli.md) daha fazla bilgi için.
+Genel türde bir kısıtlama belirtildi, ancak kısıtlaması düzgün belirtilmedi. Bkz: [genel tür parametrelerindeki kısıtlamalar (C + +/ CLI)](../../extensions/constraints-on-generic-type-parameters-cpp-cli.md) daha fazla bilgi için.
 
 ## <a name="example"></a>Örnek
 

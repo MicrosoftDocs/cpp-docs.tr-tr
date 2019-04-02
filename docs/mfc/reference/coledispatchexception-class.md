@@ -16,12 +16,12 @@ helpviewer_keywords:
 - COleDispatchException [MFC], m_strSource
 - COleDispatchException [MFC], m_wCode
 ms.assetid: 0e95c8be-e21a-490c-99ec-181c6a9a26d0
-ms.openlocfilehash: f6440ef202d0eafc4730b1e63ca4627d5dab61bc
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 2d5b9d2a0dc1e716ea8cb20f0d0dcb4c5d765079
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57299965"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58769062"
 ---
 # <a name="coledispatchexception-class"></a>COleDispatchException sınıfı
 
@@ -131,7 +131,7 @@ Bu üye işlevi tarafından ayarlanan [AfxThrowOleDispatchException](exception-p
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MFC örnek CALCDRIV](../../visual-cpp-samples.md)<br/>
+[MFC örnek CALCDRIV](../../overview/visual-cpp-samples.md)<br/>
 [CException Sınıfı](../../mfc/reference/cexception-class.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
 [COleDispatchDriver Sınıfı](../../mfc/reference/coledispatchdriver-class.md)<br/>

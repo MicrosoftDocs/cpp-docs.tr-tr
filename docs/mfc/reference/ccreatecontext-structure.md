@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - CCreateContext structure [MFC]
 ms.assetid: 337a0e44-d910-49a8-afc0-c7207666a9dc
-ms.openlocfilehash: f84c0da7530a774ebe2b33aea0bddc5b0bf0fe17
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 795b20cba41eeca8cc1a32e312edf065b718f364
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57326354"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58768492"
 ---
 # <a name="ccreatecontext-structure"></a>CCreateContext yapısı
 
@@ -56,7 +56,7 @@ Bazı genel yönergeler şunlardır:
 
 Framework Varsayılanları kullanırsanız, genel olarak, yoksayabilirsiniz `CCreateContext`. Daha gelişmiş değişiklikler, Microsoft Foundation Class Kitaplığı kaynak kodunu veya örnek programlardan VIEWEX gibi çalışırsanız size yol gösterir. Gerekli parametre unutursanız, framework onaylama, unuttum bildirir.
 
-Daha fazla bilgi için `CCreateContext`, MFC örnek görmek [VIEWEX](../../visual-cpp-samples.md).
+Daha fazla bilgi için `CCreateContext`, MFC örnek görmek [VIEWEX](../../overview/visual-cpp-samples.md).
 
 ## <a name="requirements"></a>Gereksinimler
 

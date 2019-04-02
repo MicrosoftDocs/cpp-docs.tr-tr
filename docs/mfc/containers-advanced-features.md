@@ -12,12 +12,12 @@ helpviewer_keywords:
 - server/container applications [MFC]
 - containers [MFC], container applications
 ms.assetid: 221fd99c-b138-40fa-ad6a-974e3b3ad1f8
-ms.openlocfilehash: 9d83ba601766f4b6fb84576571239a250169abb1
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 350431975a4335fc06e436237b7e0d3388faab64
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57278710"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58769569"
 ---
 # <a name="containers-advanced-features"></a>Kapsayıcılar: Gelişmiş Özellikler
 
@@ -39,7 +39,7 @@ Makaleyi [sunucuları: Sunucu uygulama](../mfc/servers-implementing-a-server.md)
 
 - Geçersiz kılma `COleClientItem::CanActivate` sunucu yerinde düzenleme için kullanıldığı sırada öğeleri yerinde düzenleme önlemek için.
 
-   Örneğin, MFC OLE örnek [OCLIENT](../visual-cpp-samples.md) kapsayıcı/sunucu uygulamanız tarafından oluşturulan bir öğe katıştırılmış. OCLIENT uygulamayı açın ve yerinde kapsayıcı/sunucu uygulamanız tarafından oluşturulan öğenin düzenleyin. Uygulamanızın öğe düzenlenirken, MFC OLE örnek tarafından oluşturulan bir öğe eklemek istediğinize karar [HIERSVR](../visual-cpp-samples.md). Bunu yapmak için yerinde etkinleştirme kullanamazsınız. Tam olarak bu öğesini etkinleştirmek için HIERSVR açmanız gerekir. Microsoft Foundation Class Kitaplığı Bu OLE özellik desteklemediği için geçersiz kılma `COleClientItem::CanActivate` bu durum için denetleyin ve uygulamanızdaki olası bir çalışma zamanı hatası önlemeye olanak tanır.
+   Örneğin, MFC OLE örnek [OCLIENT](../overview/visual-cpp-samples.md) kapsayıcı/sunucu uygulamanız tarafından oluşturulan bir öğe katıştırılmış. OCLIENT uygulamayı açın ve yerinde kapsayıcı/sunucu uygulamanız tarafından oluşturulan öğenin düzenleyin. Uygulamanızın öğe düzenlenirken, MFC OLE örnek tarafından oluşturulan bir öğe eklemek istediğinize karar [HIERSVR](../overview/visual-cpp-samples.md). Bunu yapmak için yerinde etkinleştirme kullanamazsınız. Tam olarak bu öğesini etkinleştirmek için HIERSVR açmanız gerekir. Microsoft Foundation Class Kitaplığı Bu OLE özellik desteklemediği için geçersiz kılma `COleClientItem::CanActivate` bu durum için denetleyin ve uygulamanızdaki olası bir çalışma zamanı hatası önlemeye olanak tanır.
 
 Yeni bir uygulama oluşturma ve kapsayıcı/sunucu uygulaması çalışabilmesi için istediğiniz seçeneği Uygulama Sihirbazı'nı ve bu destek OLE Seçenekler iletişim kutusundaki otomatik olarak oluşturulması'ı seçin. Daha fazla bilgi için bkz [genel bakış: Bir ActiveX denetimi kapsayıcısı oluşturma](../mfc/reference/creating-an-mfc-activex-control-container.md). MFC örnekleri MFC örnekleri hakkında daha fazla bilgi için bkz.
 
@@ -69,7 +69,7 @@ Katıştırılmış nesneler özellik bağlanan kapsayıcı uygulamanızı için
 
          If the application is launched with the "/Embedded" switch, it should not show its main window, similar to a server application.
 
-MFC OLE örnek [OCLIENT](../visual-cpp-samples.md) bu özelliği uygular. Bunun nasıl yapıldığına bir örnek için bkz `InitInstance` işlevi *OCLIENT. CPP* Bu örnek uygulamanın dosya.
+MFC OLE örnek [OCLIENT](../overview/visual-cpp-samples.md) bu özelliği uygular. Bunun nasıl yapıldığına bir örnek için bkz `InitInstance` işlevi *OCLIENT. CPP* Bu örnek uygulamanın dosya.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

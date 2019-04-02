@@ -22,12 +22,12 @@ helpviewer_keywords:
 - CMFCMenuButton [MFC], m_hMenu
 - CMFCMenuButton [MFC], m_nMenuResult
 ms.assetid: 53d3d459-1e5a-47c5-8b7f-2e61f6af5187
-ms.openlocfilehash: bacd8726fd4c833f956f763cca81a88d41d1f167
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: cbdf4005ee1a0249e7ed2b5f1d50621fb951f64f
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57298210"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58777369"
 ---
 # <a name="cmfcmenubutton-class"></a>CMFCMenuButton sınıfı
 
@@ -72,7 +72,7 @@ Oluştururken bir `CMFCMenuButton`, ilişkili açılır menüsüne bir tanıtıc
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, framework tarafından görüntülenen açılır menü düğmesine iliştirilmiş menü tanıtıcısı yapmak, düğme metin ve görüntü boyutuna göre yeniden boyutlandır ve gösterilmektedir. Bu kod parçacığı parçasıdır [yeni denetimler örnek](../../visual-cpp-samples.md).
+Aşağıdaki örnek, framework tarafından görüntülenen açılır menü düğmesine iliştirilmiş menü tanıtıcısı yapmak, düğme metin ve görüntü boyutuna göre yeniden boyutlandır ve gösterilmektedir. Bu kod parçacığı parçasıdır [yeni denetimler örnek](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_NewControls#38](../../mfc/reference/codesnippet/cpp/cmfcmenubutton-class_1.h)]
 [!code-cpp[NVC_MFC_NewControls#39](../../mfc/reference/codesnippet/cpp/cmfcmenubutton-class_2.cpp)]

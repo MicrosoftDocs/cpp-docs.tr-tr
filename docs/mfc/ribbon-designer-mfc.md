@@ -7,12 +7,12 @@ helpviewer_keywords:
 - Ribbon Designer (MFC)
 - MFC Ribbon Designer
 ms.assetid: 0806dfd6-7d11-471a-99e1-4072852231f9
-ms.openlocfilehash: 0972cdfbb80129b0c87c96fa7daf6768d18aa0c4
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 5740b2f93f451a74407483c98ce5bf547b79bf35
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57288794"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58769491"
 ---
 # <a name="ribbon-designer-mfc"></a>Şerit Tasarımcısı (MFC)
 
@@ -107,7 +107,7 @@ Aşağıdaki konular, Şerit Tasarımcısı'nda özelliklerini kullanmak nasıl 
 
 - **Pano:** Bir alan bir ilgili denetimlerin grubunu görüntüleyen Şerit çubuğu. Her Şerit kategorisi bir veya daha fazla Şerit paneli içerir.
 
-- **Şerit öğeleri:** Panel üzerindeki, örneğin, düğmeler ve birleşik giriş kutuları denetler. Bir Şeritte barındırılabilecek farklı denetimleri görmek için bkz: [RibbonGadgets örneği: Şerit araçları uygulaması](../visual-cpp-samples.md).
+- **Şerit öğeleri:** Panel üzerindeki, örneğin, düğmeler ve birleşik giriş kutuları denetler. Bir Şeritte barındırılabilecek farklı denetimleri görmek için bkz: [RibbonGadgets örneği: Şerit araçları uygulaması](../overview/visual-cpp-samples.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -152,12 +152,12 @@ helpviewer_keywords:
 - CRichEditCtrl [MFC], StreamOut
 - CRichEditCtrl [MFC], Undo
 ms.assetid: 2be52788-822c-4c27-aafd-2471231e74eb
-ms.openlocfilehash: ca6185e7ee41726c7bf583056cb66eeb1be7021c
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 5517efca66744c43eeccd3fb91b97a6fedc8180e
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57303440"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58779280"
 ---
 # <a name="cricheditctrl-class"></a>CRichEditCtrl Class
 
@@ -269,7 +269,7 @@ Kullanma hakkında daha fazla bilgi için `CRichEditCtrl`, bkz:
 
 - [CRichEditCtrl Kullanma](../../mfc/using-cricheditctrl.md)
 
-Bir MFC uygulamasında bir zengin düzenleme denetimini kullanmak bir örnek için bkz: [WORDPAD](../../visual-cpp-samples.md) örnek uygulama.
+Bir MFC uygulamasında bir zengin düzenleme denetimini kullanmak bir örnek için bkz: [WORDPAD](../../overview/visual-cpp-samples.md) örnek uygulama.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -489,7 +489,7 @@ Oluşturulan denetimin genişletilmiş stilini belirtir. Genişletilmiş Windows
 Düzenleme denetiminin stilini belirtir. Listelenen pencere stilleri birleşimi geçerli **açıklamalar** bölümünü [Oluştur](#create) ve [düzenleme denetimi stilleri](/windows/desktop/Controls/edit-control-styles)Windows SDK içinde açıklandığı gibi.
 
 *Rect*<br/>
-Bir başvuru bir [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) istemci koordinatları olarak oluşturulması için pencerenin konumunu ve boyutunu açıklayan yapısı *pParentWnd*.
+Bir başvuru bir [RECT](/previous-versions/dd162897\(v=vs.85\)) istemci koordinatları olarak oluşturulması için pencerenin konumunu ve boyutunu açıklayan yapısı *pParentWnd*.
 
 *pParentWnd*<br/>
 Denetimin ana penceresine bir işaretçi.
@@ -2198,7 +2198,7 @@ Daha fazla bilgi için [EM_UNDO](/windows/desktop/Controls/em-undo) Windows SDK.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MFC örnek WORDPAD](../../visual-cpp-samples.md)<br/>
+[MFC örnek WORDPAD](../../overview/visual-cpp-samples.md)<br/>
 [CWnd Sınıfı](../../mfc/reference/cwnd-class.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
 [CEdit Sınıfı](../../mfc/reference/cedit-class.md)<br/>

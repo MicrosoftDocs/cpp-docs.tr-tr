@@ -29,12 +29,12 @@ helpviewer_keywords:
 - data transfer [C++], asynchronous
 - CBindStatusCallback class
 ms.assetid: 0f5da276-6031-4418-b2a9-a4750ef29e77
-ms.openlocfilehash: e8c8d3f170803a792ca2ea8c7a37a18fd2cebd48
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 6e5e55a23ee678bbedf76f608bc4fdf562cc1822
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57259210"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58773131"
 ---
 # <a name="cbindstatuscallback-class"></a>CBindStatusCallback sınıfı
 
@@ -101,7 +101,7 @@ Tarafından döndürülen bağlama bayrakları belirtir [GetBindInfo](#getbindin
 
 `CBindStatusCallback` Sınıfının Implements `IBindStatusCallback` arabirimi. `IBindStatusCallback` uygulamanız tarafından bir zaman uyumsuz veri aktarımı bildirim alabilir şekilde uygulanmalıdır. Sistem tarafından sağlanan zaman uyumsuz ad kullanan `IBindStatusCallback` göndermek ve zaman uyumsuz veri hakkında bilgi almak için yöntemleri aktarma nesnenizin gelen ve giden.
 
-Genellikle, `CBindStatusCallback` nesne bir belirli bağlama işlemi ile ilişkili değil. Örneğin, [zaman UYUMSUZ](../../visual-cpp-samples.md) URL'si özelliğini ayarladığınızda bu örnek, oluşturur bir `CBindStatusCallback` nesne çağrısında `Download`:
+Genellikle, `CBindStatusCallback` nesne bir belirli bağlama işlemi ile ilişkili değil. Örneğin, [zaman UYUMSUZ](../../overview/visual-cpp-samples.md) URL'si özelliğini ayarladığınızda bu örnek, oluşturur bir `CBindStatusCallback` nesne çağrısında `Download`:
 
 [!code-cpp[NVC_ATL_Windowing#86](../../atl/codesnippet/cpp/cbindstatuscallback-class_1.h)]
 
@@ -528,7 +528,7 @@ void Function_Name(
     DWORD dwSize);
 ```
 
-Aşağıdaki örnekte (alınan [zaman UYUMSUZ](../../visual-cpp-samples.md) örnek), işlev `OnData` bir metin kutusu alınan verileri yazar.
+Aşağıdaki örnekte (alınan [zaman UYUMSUZ](../../overview/visual-cpp-samples.md) örnek), işlev `OnData` bir metin kutusu alınan verileri yazar.
 
 ### <a name="example"></a>Örnek
 

@@ -16,12 +16,12 @@ f1_keywords:
 helpviewer_keywords:
 - msclr::ptr class
 ms.assetid: 0144d0e4-919c-45f9-a3f8-fbc9edba32bf
-ms.openlocfilehash: 8909f91e31279f1fc1395610aea4708b79731113
-ms.sourcegitcommit: 9813e146a4eb30929d8352872859e8fcb7ff6d2f
+ms.openlocfilehash: 342c222b837e179e2e13dbbd27c88efc18b12332
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54805974"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58774179"
 ---
 # <a name="comptr-class"></a>com::ptr Sınıfı
 
@@ -43,7 +43,7 @@ COM arabirimi.
 
 A `com::ptr` yerel işlev değişken olarak çeşitli COM görevleri basitleştirin ve ömür Yönetimi otomatik hale getirmek için de kullanılabilir.
 
-A `com::ptr` doğrudan işlevi parametre olarak kullanılamaz; kullanmak bir [izleme başvurusu işleci](../windows/tracking-reference-operator-cpp-component-extensions.md) veya [işlemek nesne işleci (^)](../windows/handle-to-object-operator-hat-cpp-component-extensions.md) yerine.
+A `com::ptr` doğrudan işlevi parametre olarak kullanılamaz; kullanmak bir [izleme başvurusu işleci](../extensions/tracking-reference-operator-cpp-component-extensions.md) veya [işlemek nesne işleci (^)](../extensions/handle-to-object-operator-hat-cpp-component-extensions.md) yerine.
 
 A `com::ptr` doğrudan bir işlevden döndürülen kullanılamaz; bunun yerine bir tanıtıcı kullanın.
 

@@ -102,12 +102,12 @@ helpviewer_keywords:
 - CListBox [MFC], SetTopIndex
 - CListBox [MFC], VKeyToItem
 ms.assetid: 7ba3c699-c286-4cd9-9066-532c41ec05d1
-ms.openlocfilehash: 17ff89fde3ef893c2cfcd8beeb8482722af60358
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: b448f725bac68c2b67dc44d660c664c075aa86da
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57280322"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58778773"
 ---
 # <a name="clistbox-class"></a>CListBox sınıfı
 
@@ -1538,7 +1538,7 @@ Dönüş değeri 0 veya daha büyük, liste kutusunda bir öğenin dizinini beli
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MFC örnek CTRLTEST](../../visual-cpp-samples.md)<br/>
+[MFC örnek CTRLTEST](../../overview/visual-cpp-samples.md)<br/>
 [CWnd Sınıfı](../../mfc/reference/cwnd-class.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
 [CWnd Sınıfı](../../mfc/reference/cwnd-class.md)<br/>

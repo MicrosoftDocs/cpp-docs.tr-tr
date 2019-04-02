@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4972
 ms.assetid: d18e8e65-b2ef-4d75-a207-fbd0c17c9060
-ms.openlocfilehash: dcf08f26809c7c61e3e00c41c555416c95f4a0e0
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 7c58258298fb91d04014e719732135a1f33f13b6
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50598841"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58777083"
 ---
 # <a name="compiler-warning-c4972"></a>Derleyici Uyarısı C4972
 
@@ -19,7 +19,7 @@ Doğrudan değiştirme ya da açma işleminin sonucu lvalue olarak değerlendirm
 
 Bir değer türü için bir tanıtıcı başvurusunun kaldırılması, olarak da bilinen kutudan çıkarma ve kendisine atama doğrulanabilir değil.
 
-Daha fazla bilgi için [kutulama](../../windows/boxing-cpp-component-extensions.md).
+Daha fazla bilgi için [kutulama](../../extensions/boxing-cpp-component-extensions.md).
 
 ## <a name="example"></a>Örnek
 

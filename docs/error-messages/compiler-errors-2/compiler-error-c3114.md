@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3114
 ms.assetid: b5d2df4f-87d0-4292-9981-25c6a6013c05
-ms.openlocfilehash: 6ce5b9860cd75619f26a3585981af5807c33535a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c5a4feae5c8805a27c020b532fd58e0562e46b6b
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50606680"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58773781"
 ---
 # <a name="compiler-error-c3114"></a>Derleyici Hatası C3114
 
@@ -19,7 +19,7 @@ ms.locfileid: "50606680"
 
 Geçerli bir adlandırılmış bağımsız değişkeni olarak bir öznitelik sınıfı veri üyesi için sırada bu değil işaretlenmelidir `static`, `const`, veya `literal`. Bir özellik, özelliğin olmamalıdır `static` ve gereken get ve set erişimcileri.
 
-Daha fazla bilgi için [özelliği](../../windows/property-cpp-component-extensions.md) ve [kullanıcı tanımlı öznitelikler](../../windows/user-defined-attributes-cpp-component-extensions.md).
+Daha fazla bilgi için [özelliği](../../extensions/property-cpp-component-extensions.md) ve [kullanıcı tanımlı öznitelikler](../../extensions/user-defined-attributes-cpp-component-extensions.md).
 
 ## <a name="example"></a>Örnek
 

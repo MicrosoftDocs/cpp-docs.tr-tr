@@ -36,12 +36,12 @@ helpviewer_keywords:
 - COleDataSource [MFC], OnSetData
 - COleDataSource [MFC], SetClipboard
 ms.assetid: 02c8ee7d-8e10-4463-8613-bb2a0305ca69
-ms.openlocfilehash: bc3d9f089dc6289331c79c6a1e18eccbc9ff4993
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 37de6fd74f1e9210dcd9b9a356719436814c0c7f
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57296981"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58776836"
 ---
 # <a name="coledatasource-class"></a>COleDataSource sınıfı
 
@@ -488,8 +488,8 @@ void SetClipboard();
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MFC örnek HIERSVR](../../visual-cpp-samples.md)<br/>
-[MFC örnek OCLIENT](../../visual-cpp-samples.md)<br/>
+[MFC örnek HIERSVR](../../overview/visual-cpp-samples.md)<br/>
+[MFC örnek OCLIENT](../../overview/visual-cpp-samples.md)<br/>
 [CCmdTarget Sınıfı](../../mfc/reference/ccmdtarget-class.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
 [COleDataObject Sınıfı](../../mfc/reference/coledataobject-class.md)

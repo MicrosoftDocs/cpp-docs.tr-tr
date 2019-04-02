@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - CSingleDocTemplate [MFC], CSingleDocTemplate
 ms.assetid: 4f3a8212-81ee-48a0-ad22-e0ed7c36a391
-ms.openlocfilehash: fe85119761d2b56ca72c8efff00664c62d4767bb
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 4d1361734f38d903e2171839b95888863126974a
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57299536"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58771703"
 ---
 # <a name="csingledoctemplate-class"></a>CSingleDocTemplate sınıfı
 
@@ -117,7 +117,7 @@ Dinamik olarak ayırabilir bir `CSingleDocTemplate` nesne ve geçirin `CWinApp::
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MFC örnek DOCKTOOL](../../visual-cpp-samples.md)<br/>
+[MFC örnek DOCKTOOL](../../overview/visual-cpp-samples.md)<br/>
 [CDocTemplate Sınıfı](../../mfc/reference/cdoctemplate-class.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
 [CDocTemplate Sınıfı](../../mfc/reference/cdoctemplate-class.md)<br/>

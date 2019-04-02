@@ -5,12 +5,12 @@ helpviewer_keywords:
 - ribbon application, creating (MFC)
 - creating a ribbon aplication (MFC)
 ms.assetid: e61393e2-1d6b-4594-a7ce-157d3d1b0d9f
-ms.openlocfilehash: a74e8863c32199d1c0309f70bceae867993ce721
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 29991a389a09e1fe3dc0074b80fd9a255458f673
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57271339"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58781230"
 ---
 # <a name="walkthrough-creating-a-ribbon-application-by-using-mfc"></a>İzlenecek yol: MFC kullanarak Şerit uygulaması oluşturma
 
@@ -87,9 +87,9 @@ Bu izlenecek yol, Visual Studio'yu kullanın belirlediğinizi varsayar **genel g
 
 [Nasıl yapılır: Uygulama düğmesini özelleştirme](../mfc/how-to-customize-the-application-button.md)
 
-Uçtan uca örnekler için bkz: [örnekler (MFC özellik paketi)](../visual-cpp-samples.md).
+Uçtan uca örnekler için bkz: [örnekler (MFC özellik paketi)](../overview/visual-cpp-samples.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [İzlenecek Yollar](../mfc/walkthroughs-mfc.md)<br/>
-[Örnekler (MFC özellik paketi)](../visual-cpp-samples.md)
+[Örnekler (MFC özellik paketi)](../overview/visual-cpp-samples.md)

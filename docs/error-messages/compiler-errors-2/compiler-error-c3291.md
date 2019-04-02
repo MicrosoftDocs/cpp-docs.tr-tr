@@ -6,18 +6,18 @@ f1_keywords:
 helpviewer_keywords:
 - C3291
 ms.assetid: ed2e9f89-8dbc-4387-bc26-cc955e840858
-ms.openlocfilehash: 6d9602d1ec9f2e4a72784e20bfd90c7f3aac0781
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e3f20d7d7e63079ed9c7a078e9fc9eac06d32677
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50611347"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58781620"
 ---
 # <a name="compiler-error-c3291"></a>Derleyici Hatası C3291
 
 'default': Önemsiz bir özelliğin adı olamaz
 
-Önemsiz özellik adlı `default`. Bkz: [özelliği](../../windows/property-cpp-component-extensions.md) daha fazla bilgi için.
+Önemsiz özellik adlı `default`. Bkz: [özelliği](../../extensions/property-cpp-component-extensions.md) daha fazla bilgi için.
 
 ## <a name="example"></a>Örnek
 
