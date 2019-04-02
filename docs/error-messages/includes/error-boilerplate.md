@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: bcf2372f039ccec4b46bf51fb4da9f4175289f14
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.translationtype: MT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58807982"
+---
 Visual Studio derleyicileri ve derleme araçları pek çok hata ve uyarı bildirebilirsiniz. Bir hata veya uyarı bulunduktan sonra derleme araçları kodun amacı hakkında varsayımlar ve böylece aynı anda daha fazla sorunlar bildirilebilir. devam etmek çalışır. Araçlar yanlış varsayım yapıyorsa, sonraki hatalar ya da uyarılar projenize geçerli olmayabilir. Projenizdeki sorunları düzelttiğinizde, her zaman ilk hata veya uyarı bildirilen ile başlayın ve sık sık yeniden derleyin. Bir düzeltme uzaklaşıyor birçok sonraki hatalar kalmasına neden olabilir.
 
 Visual Studio'da belirli bir tanılama iletisi hakkında Yardım almak için onu seçip **çıkış** penceresi ve ENTER tuşuna **F1** anahtarı varsa, bu hata için belgeler sayfası açın. Ayrıca, belirli hatalar veya uyarılar hakkında makaleler bulmak için yukarıdaki arama aracı kullanın veya hataları ve Uyarıları araç ve Gezinti bölmesinde türüne göre listesine göz atın.
@@ -7,4 +15,4 @@ Visual Studio'da belirli bir tanılama iletisi hakkında Yardım almak için onu
 
 Microsoft'un ortak forumlarında hatalar ve Uyarılar için Ek Yardım bulabilirsiniz. Hata veya uyarı numarası üzerinde arayabilirsiniz [Geliştirici topluluğu](https://developercommunity.visualstudio.com/spaces/8/index.html) site. Ayrıca arama hataları ve uyarıları ve sorular [Stack Overflow](http://stackoverflow.com/) çözümler bulabilirsiniz.
 
-Ek Yardım ve topluluk kaynakları, bağlantılar için bkz. [Visual C++ Yardım ve topluluk](../../visual-cpp-help-and-community.md).
+Ek Yardım ve topluluk kaynakları, bağlantılar için bkz. [Visual C++ Yardım ve topluluk](../../overview/visual-cpp-help-and-community.md).
