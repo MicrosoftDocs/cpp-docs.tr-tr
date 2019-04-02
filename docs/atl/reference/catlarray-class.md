@@ -25,12 +25,12 @@ f1_keywords:
 helpviewer_keywords:
 - CAtlArray class
 ms.assetid: 0b503aa8-2357-40af-a326-6654bf1da098
-ms.openlocfilehash: ca4b0f4c8ffc3382984660caec7ae04107c8797a
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 6a0b83f722d1b616e9c10713646d337f9cb090a4
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57301863"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58775705"
 ---
 # <a name="catlarray-class"></a>CAtlArray sınıfı
 
@@ -549,9 +549,9 @@ Belirtilen öğenin yeni değeri.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MMXSwarm örnek](../../visual-cpp-samples.md)<br/>
-[DynamicConsumer örnek](../../visual-cpp-samples.md)<br/>
-[Oluşturma](../../visual-cpp-samples.md)<br/>
-[Kayan örnek](../../visual-cpp-samples.md)<br/>
+[MMXSwarm örnek](../../overview/visual-cpp-samples.md)<br/>
+[DynamicConsumer örnek](../../overview/visual-cpp-samples.md)<br/>
+[Oluşturma](../../overview/visual-cpp-samples.md)<br/>
+[Kayan örnek](../../overview/visual-cpp-samples.md)<br/>
 [CArray Sınıfı](../../mfc/reference/carray-class.md)<br/>
 [Sınıfına genel bakış](../../atl/atl-class-overview.md)
