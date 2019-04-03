@@ -1,12 +1,12 @@
 ---
 title: ARM64 özel durum işleme
 ms.date: 11/19/2018
-ms.openlocfilehash: 78d3d7d206adcb123c9537e91c2d5976b8be5baa
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.openlocfilehash: 43e43beae5ee02f9ef4537da08a1c9915056b777
+ms.sourcegitcommit: 5fc76f5b3c4c3ee49f38f05b37261a324591530b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58770076"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58870799"
 ---
 # <a name="arm64-exception-handling"></a>ARM64 özel durum işleme
 
@@ -371,7 +371,7 @@ Yukarıdaki bölümde 1, 2 (olmadan Giden parametre alanı), 3 ve 4 kategorilere
 
 Adım #|Bayrak değerleri|yönerge sayısı|Opcode|Kod geriye doğru izleme
 -|-|-|-|-
-0|||`#intsz = RegI * 8;`<br/>`if (CR==01) #intsz += 8; // lr`<br/>`#fpsz = RegF * 8;`<br/>`if(RegF) #fpsz += 8;`<br/>`#savsz=((#intsz+#fpsz+8*H)+0xf)&~0xf)`<br/>`#locsz = #famsz - #savsz`|
+0|||`#intsz = RegI * 8;`<br/>`if (CR==01) #intsz += 8; // lr`<br/>`#fpsz = RegF * 8;`<br/>`if(RegF) #fpsz += 8;`<br/>`#savsz=((#intsz+#fpsz+8*8*H)+0xf)&~0xf)`<br/>`#locsz = #famsz - #savsz`|
 1.|0 < **regI** < 10 =|RegI / 2 + **RegI** % 2|`stp r19,r20,[sp,#savsz]!`<br/>`stp r21,r22,[sp,16]`<br/>`...`|`save_regp_x`<br/>`save_regp`<br/>`...`
 2|**CR**==01*|1.|`str lr,[sp, #intsz-8]`\*|`save_reg`
 3|0 < **RegF** < = 7|(RegF + 1) / 2 +<br/>(RegF + 1) % 2).|`stp d8,d9,[sp, #intsz]`\*\*<br/>`stp d10,d11,[sp, #intsz+16]`<br/>`...`<br/>`str d(8+RegF),[sp, #intsz+#fpsz-8]`|`save_fregp`<br/>`...`<br/>`save_freg`
@@ -627,4 +627,4 @@ Not: EpilogStart dizini [4], giriş geriye doğru izleme kodu (kısmen yeniden g
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [ARM64 ABI kurallarına genel bakış](arm64-windows-abi-conventions.md)<br/>
-[ARM Özel Durum İşleme](arm-exception-handling.md)
+[ARM özel durum işleme](arm-exception-handling.md)

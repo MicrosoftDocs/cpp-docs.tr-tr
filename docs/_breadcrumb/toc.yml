@@ -9,7 +9,7 @@ items:
     items:
     - name: Belgeler
       tocHref: /cpp/
-      topicHref: /cpp/visual-cpp-in-visual-studio
+      topicHref: /cpp/overview/visual-cpp-in-visual-studio
       items:
       - name: C++ Dili
         tocHref: /cpp/cpp/
@@ -125,9 +125,9 @@ items:
       - name: Bulut ve Web
         tocHref: /cpp/cloud
         topicHref: /cpp/cloud/cloud-and-web-programming-in-visual-cpp
-ms.openlocfilehash: 5a39a8b1a86657acb9e1f61bde45ab0e4a1e7bdd
-ms.sourcegitcommit: c1f646c8b72f330fa8cf5ddb0f8f261ba10d16f0
+ms.openlocfilehash: 24cac73c1777d61b15be9fa6f39358ef583445c1
+ms.sourcegitcommit: 5fc76f5b3c4c3ee49f38f05b37261a324591530b
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58328331"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58870747"
