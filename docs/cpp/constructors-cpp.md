@@ -6,12 +6,12 @@ helpviewer_keywords:
 - objects [C++], creating
 - instance constructors
 ms.assetid: 3e9f7211-313a-4a92-9584-337452e061a9
-ms.openlocfilehash: cad88af9e81a60857fbbd6c90cf81cdcafbd7a12
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.openlocfilehash: a45cee1abd9351a8fef56769706fe8944a7965b8
+ms.sourcegitcommit: b72a10a7b12e722fd91a17406b91b270026f763a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58781477"
+ms.lasthandoff: 04/03/2019
+ms.locfileid: "58898745"
 ---
 # <a name="constructors-c"></a>Oluşturucular (C++)
 
@@ -636,7 +636,7 @@ Derived d3 = d2 calls: Base(Base&)
 Derived d4 calls: Base()*/
 ```
 
-**Visual Studio 2017 sürüm 15.7 ve üzeri**: **Kullanarak** deyiminde **/Std: c ++ 17** modu, temel sınıftan türetilmiş bir sınıf içindeki Oluşturucu ile aynı imzaya sahip olanlar dışındaki tüm oluşturucular kapsamına getirir. Genel olarak, devralma oluşturucuları türetilen sınıfın yeni hiçbir veri üyeleri bildirir olduğunda veya oluşturucuları kullanmak en iyisidir. Ayrıca bkz: [Visual Studio 2017 sürüm 15.7 geliştirmeleri](../overview/cpp-conformance-improvements-2017.md#improvements_157).
+**Visual Studio 2017 sürüm 15.7 ve üzeri**: **Kullanarak** deyiminde **/Std: c ++ 17** modu, temel sınıftan türetilmiş bir sınıf içindeki Oluşturucu ile aynı imzaya sahip olanlar dışındaki tüm oluşturucular kapsamına getirir. Genel olarak, devralma oluşturucuları türetilen sınıfın yeni hiçbir veri üyeleri bildirir olduğunda veya oluşturucuları kullanmak en iyisidir. Ayrıca bkz: [Visual Studio 2017 sürüm 15.7 geliştirmeleri](../overview/cpp-conformance-improvements.md#improvements_157).
 
 Bu tür bir temel sınıf belirtiyorsa bir sınıf şablonunun tür bağımsız değişkeninden tüm oluşturucuları devralabilir:
 

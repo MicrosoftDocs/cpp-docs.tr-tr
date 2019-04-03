@@ -4,18 +4,18 @@ ms.date: 08/30/2017
 helpviewer_keywords:
 - breaking changes [C++]
 ms.assetid: b38385a9-a483-4de9-99a6-797488bc5110
-ms.openlocfilehash: 9be4db9e0f7c50054dc6e6ca498b1c9d49715a8d
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.openlocfilehash: b381a2b7cc9a4ad4749f382838bdec5872a3decf
+ms.sourcegitcommit: b72a10a7b12e722fd91a17406b91b270026f763a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58775419"
+ms.lasthandoff: 04/03/2019
+ms.locfileid: "58898888"
 ---
 # <a name="visual-c-change-history-2003---2015"></a>Visual C++ değişiklik geçmişi 2003-2015
 
 Bu makalede, Visual Studio 2015 için Visual Studio 2003 ve bu makalede "yeni davranış" koşulları yukarıda bahsedilen tüm bozucu değişiklikleri açıklar veya Visual Studio 2015'e ve daha sonra "Şimdi" bakın. Koşulları "eski davranışı" ve "önce" Visual Studio 2013 ve önceki sürümleri için bkz.
 
-Visual Studio 2017 hakkında daha fazla bilgi için bkz: [Visual Studio 2017'deki Visual c++ yenilikleri](../overview/what-s-new-for-visual-cpp-in-visual-studio.md) ve [Visual Studio 2017'de Visual c++ uyumluluk geliştirmeleri](../overview/cpp-conformance-improvements-2017.md).
+Visual Studio'nun en son sürümü hakkında daha fazla bilgi için bkz: [Visual Studio'da Visual C++ yenilikleri](../overview/what-s-new-for-visual-cpp-in-visual-studio.md) ve [Visual Studio'daki Visual c++ uyumluluk geliştirmeleri](../overview/cpp-conformance-improvements.md).
 
 > [!NOTE]
 > Visual Studio 2015 ve Visual Studio 2017 arasında yeni değişiklikler hiçbir ikili dosya vardır.
@@ -62,7 +62,7 @@ Ayrıca, derleyici uyumluluğu yapılan sürekli geliştirmeler bazen nasıl der
 
    Hataları gidermek için dahil \<cmath > öğesinden kaldırılan işlevlerin bildirimleri almak için \<math.h >. Bu işlevler taşındı:
 
-  - `double abs(double)` ve `float abs(float)`
+  - `double abs(double)` and `float abs(float)`
 
   - `double pow(double, int)`, `float pow(float, float)`, `float pow(float, int)`, `long double pow(long double, long double)`, `long double pow(long double, int)`
 
@@ -275,7 +275,7 @@ Ayrıca, derleyici uyumluluğu yapılan sürekli geliştirmeler bazen nasıl der
 
 #### <a name="timeh"></a>\<TIME.h >
 
-- **clock**
+- **saat**
 
    Önceki sürümlerde, [saat](../c-runtime-library/reference/clock.md) işlevi uygulanan Windows API kullanarak [GetSystemTimeAsFileTime](/windows/desktop/api/sysinfoapi/nf-sysinfoapi-getsystemtimeasfiletime). Clock işlevi bu uygulama ile Sistem saati hassas ve böylece mutlaka monoton değildi. Clock işlevi açısından reimplemented [QueryPerformanceCounter](https://msdn.microsoft.com/library/windows/desktop/ms644904.aspx) ve monoton sunulmuştur.
 
@@ -333,7 +333,7 @@ Yeni iyileştirmeleri ve hata ayıklama denetimlerini etkinleştirmek için, C++
 
    C++ Standart const öğelerin kapsayıcıları her zaman Yasak (vektör gibi\<const T > veya\<const T >). Visual Studio 2013 veya önceki gibi kapsayıcılar kabul edildi. Geçerli sürümde bu tür kapsayıcıları derleme başarısız.
 
-- **std::allocator::deallocate**
+- **Std::Allocator:: serbest bırak**
 
    Visual Studio 2013 ve önceki sürümlerinde, `std::allocator::deallocate(p, n)` geçirilen bağımsız değişken yok sayıldı *n*.  C++ Standart her zaman zorunlu *n* çalıştırılışı için ilk bağımsız değişken olarak geçirilen değere eşit olmalıdır `allocate` verilmesi *p*. Ancak, geçerli sürümde, değerini *n* Denetlenmekte. Bağımsız değişkenler için geçen kod *n* ne standart çalışma zamanında kilitlenebilir gerektirir öğesinden farklı.
 
@@ -387,7 +387,7 @@ Yeni iyileştirmeleri ve hata ayıklama denetimlerini etkinleştirmek için, C++
 
 ####  <a name="BK_MFC"></a> MFC ve ATL
 
-- **Microsoft Foundation Sınıfları (MFC)**
+- **Microsoft Foundation sınıfları (MFC)**
 
    Artık Visual Studio'nun "Tipik" bir yüklemede nedeniyle büyük boyutuna dahildir. MFC yüklemek için seçin **özel** seçeneği Visual Studio 2015 kurulumunda yüklediniz. Visual Studio 2015'i zaten varsa, MFC çalıştırarak yükleyebilirsiniz **Visual Studio** Kurulum'u yeniden çalıştırın. Seçin **özel** seçeneği yükleyin ve ardından **Microsoft Foundation sınıfları**. Çalıştırabileceğiniz **Visual Studio** Kurulumu'nu **Denetim Masası** denetimi **programlar ve Özellikler**, veya yükleme medyasından.
 

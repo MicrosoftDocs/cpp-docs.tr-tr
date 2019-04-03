@@ -5,18 +5,18 @@ ms.technology: cpp-language
 ms.assetid: 475da6e9-0d78-4b4e-bd23-f41c406c4efe
 author: corob-msft
 ms.author: corob
-ms.openlocfilehash: 151ffecc0a9497d84b23a631477827ed2e86711a
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.openlocfilehash: 69591186550a915edb49889617740e454817f154
+ms.sourcegitcommit: b72a10a7b12e722fd91a17406b91b270026f763a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58787692"
+ms.lasthandoff: 04/03/2019
+ms.locfileid: "58898810"
 ---
 # <a name="visual-c-language-conformance"></a>Visual C++ dil uyumluluğu
 
 Bu konuda, ISO C ++ 03, C ++ 11, C ++ 14, C ++ 17 ve taslak C ++ 20 dil standartlara uyumluluk derleyici özelliklerini ve Visual Studio 2017 ve önceki sürümlerde C++ derleyicisi için standart kitaplık özellikleri özetlenmektedir. Her derleyici ve standart kitaplığı özellik adı bağlantılar özelliği, bir yayın zaman olup olmadığını açıklayan ISO C++ standardı teklif kağıt. Özelliğin ilk göründüğü için desteklenen sütun destekleyen Visual Studio sürümünde listeler.
 
-Uyumluluk geliştirmeleri ve Visual Studio 2017'deki diğer değişiklikler hakkında daha fazla bilgi için bkz: [Visual Studio 2017'deki C++ uyumluluk geliştirmeleri](cpp-conformance-improvements-2017.md) ve [Visual c++ Visual Studio 2017'deki yenilikler](what-s-new-for-visual-cpp-in-visual-studio.md). Önceki sürümlerde uyumluluk değişiklikleri için bkz. [Visual C++ değişiklik geçmişi](../porting/visual-cpp-change-history-2003-2015.md) ve [Visual C++ neler yeni 2003 ile 2015 arasındaki](../porting/visual-cpp-what-s-new-2003-through-2015.md). C++ ekibinden güncel Haberleri için ziyaret [Visual C++ ekip blogu'ndan](https://blogs.msdn.microsoft.com/vcblog/).
+Uyumluluk geliştirmeleri ve Visual Studio 2017'deki diğer değişiklikler hakkında daha fazla bilgi için bkz: [Visual Studio 2017'deki C++ uyumluluk geliştirmeleri](cpp-conformance-improvements.md) ve [Visual c++ Visual Studio 2017'deki yenilikler](what-s-new-for-visual-cpp-in-visual-studio.md). Önceki sürümlerde uyumluluk değişiklikleri için bkz. [Visual C++ değişiklik geçmişi](../porting/visual-cpp-change-history-2003-2015.md) ve [Visual C++ neler yeni 2003 ile 2015 arasındaki](../porting/visual-cpp-what-s-new-2003-through-2015.md). C++ ekibinden güncel Haberleri için ziyaret [Visual C++ ekip blogu'ndan](https://blogs.msdn.microsoft.com/vcblog/).
 
 > [!NOTE]
 > Visual Studio 2015 ve Visual Studio 2017 arasında yeni değişiklikler hiçbir ikili dosya vardır.
@@ -25,13 +25,13 @@ Uyumluluk geliştirmeleri ve Visual Studio 2017'deki diğer değişiklikler hakk
 
 |Özellik alanı| |
 |----|---|
-|__C ++ 03/11 çekirdek dil özellikleri__|__Destekleniyor__|
+|__C ++ 03/11 çekirdek dil özellikleri__|__Desteklenir__|
 |&nbsp;&nbsp;Diğer her şey|VS 2015 <sup>[A](#note_A)</sup>|
 |&nbsp;&nbsp;İki aşamalı ad arama|VS 2017 15.7 <sup>[B](#note_B)</sup>|
 |&nbsp;&nbsp;[N2634 İfade SFINAE](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2008/n2634.html)|VS 2017 15.7|
 |&nbsp;&nbsp;[N1653 C99 önişlemcisi](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2004/n1653.htm)|Kısmi <sup> [D](#note_D)</sup>|
 |&nbsp;&nbsp;[N1988 genişletilmiş tamsayı türleri](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2006/n1988.pdf)|YOK <sup> [E](#note_E)</sup>|
-|__C ++ 14 çekirdek dil özellikleri__|__Destekleniyor__|
+|__C ++ 14 çekirdek dil özellikleri__|__Desteklenir__|
 |&nbsp;&nbsp;[Bağlamsal dönüştürmeleri için N3323 Tweaked ifadesi](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2012/n3323.pdf)|VS 2013|
 |&nbsp;&nbsp;[N3472 ikili sabit dizeler](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2012/n3472.pdf)|VS 2015|
 |&nbsp;&nbsp;[N3638 otomatik ve decltype(auto) dönüş türleri](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2013/n3638.html)|VS 2015|
@@ -44,7 +44,7 @@ Uyumluluk geliştirmeleri ve Visual Studio 2017'deki diğer değişiklikler hakk
 |&nbsp;&nbsp;[N3652 genişletilmiş constexpr](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2013/n3652.html)|VS 2017|
 |&nbsp;&nbsp;[Toplamlar için N3653 Nsdmıs](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2013/n3653.html)|VS 2017|
 |&nbsp;&nbsp;[N3664 Sakınma ve işlerken ayırmalar](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2013/n3664.html)|YOK <sup> [F](#note_F)</sup>|
-|__C ++ 17 çekirdek dil özellikleri__|__Destekleniyor__|
+|__C ++ 17 çekirdek dil özellikleri__|__Desteklenir__|
 |&nbsp;&nbsp;[Trigrafları N4086 kaldırılıyor](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2014/n4086.html)|VS 2010 <sup>[14](#note_14)</sup>|
 |&nbsp;&nbsp;[İle küme ayraçlı başlatma listelerinde auto için N3922 yeni kurallar](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2014/n3922.html)|VS 2015 <sup>[14](#note_14)</sup>|
 |&nbsp;&nbsp;[Şablon Şablon parametrelerinde N4051 typename](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2014/n4051.html)|VS 2015 <sup>[14](#note_14)</sup>|
@@ -88,7 +88,7 @@ Uyumluluk geliştirmeleri ve Visual Studio 2017'deki diğer değişiklikler hakk
 
 |Özellik alanı| |
 |----|---|
-|__(Hata raporları) c ++ 17 çekirdek dil özellikleri__|__Destekleniyor__|
+|__(Hata raporları) c ++ 17 çekirdek dil özellikleri__|__Desteklenir__|
 |&nbsp;&nbsp;[Başlatıcı listesi oluşturucuları için sınıfın şablon bağımsız değişkeni kesintisi P0702R1 düzeltme](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0702r1.html)|VS 2017 15.7 <sup>[17](#note_17)</sup>|
 |&nbsp;&nbsp;[Örtük lambda yakalama P0588R1 basitleştirme](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0588r1.html)|Hayır|
 |&nbsp;&nbsp;[CWG 1581: Ne zaman constexpr üye işlevleri tanımlanır?](https://wg21.cmeerw.net/cwg/issue1581)|Hayır|
@@ -98,7 +98,7 @@ Uyumluluk geliştirmeleri ve Visual Studio 2017'deki diğer değişiklikler hakk
 
 |Özellik alanı| |
 |----|---|
-|__C ++ 20 çekirdek dil özellikleri__|__Destekleniyor__|
+|__C ++ 20 çekirdek dil özellikleri__|__Desteklenir__|
 |&nbsp;&nbsp;[P0306R4 ekleme &#95; &#95;VA_OPT&#95; &#95; virgülle atlama ve virgül silme](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0306r4.html)|Hayır|
 |&nbsp;&nbsp;[P0329R4 belirtilen başlatma](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0329r4.pdf)|Hayır|
 |&nbsp;&nbsp;[P0409R2 izin vererek lambda [=, bu] yakalama](http://open-std.org/JTC1/SC22/WG21/docs/papers/2017/p0409r2.html)|Hayır|
@@ -111,7 +111,7 @@ Uyumluluk geliştirmeleri ve Visual Studio 2017'deki diğer değişiklikler hakk
 
 |Özellik alanı| |
 |---|---|
-|__C ++ 20 standart kitaplık özellikleri__|__Destekleniyor__|
+|__C ++ 20 standart kitaplık özellikleri__|__Desteklenir__|
 |&nbsp;&nbsp; [Gereksiz Decay P0777R1 kaçınma](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0777r1.pdf)|VS 2017 15.7 <sup>[14](#note_14)</sup>|
 |&nbsp;&nbsp;[P0463R1 endian](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0463r1.html)|Hayır|
 |&nbsp;&nbsp;[Diziler için P0674R1 make_shared()](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0674r1.html)|Hayır|
@@ -135,7 +135,7 @@ Uyumluluk geliştirmeleri ve Visual Studio 2017'deki diğer değişiklikler hakk
 |&nbsp;&nbsp; [İs_pod P0767R1 kullanım dışı bırakılıyor](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0767r1.html)|Hayır|
 |&nbsp;&nbsp; [P0768R1 savaş Gemisi karşılaştırma işleci için kitaplık desteği \<=>](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0768r1.pdf)|Hayır|
 |&nbsp;&nbsp; [P0966R1 dize:: reserve() küçültme değil](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/p0966r1.html)|Hayır|
-|__C ++ 17 standart kitaplığı özellikleri__|__Destekleniyor__|
+|__C ++ 17 standart kitaplığı özellikleri__|__Desteklenir__|
 |&nbsp;&nbsp;[P0433R2 tümleştirme şablon kesintisi sınıf şablonları standart kitaplığa](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0433r2.html)<br />&nbsp;&nbsp;[Standart kitaplığa sınıf şablonu bağımsız değişkeni kesintisi tümleştirme P0739R0 geliştirme](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0739r0.html)|VS 2017 15.7|
 |&nbsp;&nbsp;[Char_traits için P0426R1 constexpr](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0426r1.html)|VS 2017 15.7|
 |&nbsp;&nbsp;[P0030R1 hypot (x, y, z)](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2015/p0030r1.pdf)|VS 2017 15.7|
@@ -214,7 +214,7 @@ Uyumluluk geliştirmeleri ve Visual Studio 2017'deki diğer değişiklikler hakk
 |&nbsp;&nbsp;[N4389 bool_constant](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2015/n4389.html)|VS 2015 <sup>[14](#note_14)</sup>|
 |&nbsp;&nbsp;[P0063R3 C11 standart kitaplığı](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0063r3.html)|VS 2015 <sup>[C11](#note_C11), [14](#note_14)</sup>|
 |&nbsp;&nbsp;[N4510 destekleyen eksik türleri, vektör/listesi/forward_list](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2015/n4510.html)|VS 2013 <sup>[14](#note_14)</sup>|
-|__C ++ 14 standart kitaplık özellikleri__|__Destekleniyor__|
+|__C ++ 14 standart kitaplık özellikleri__|__Desteklenir__|
 |&nbsp;&nbsp;[N3462 SFINAE dostu result_of](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2012/n3462.html)|VS 2015.2|
 |&nbsp;&nbsp;[N3302 constexpr için \<karmaşık >](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2011/n3302.html)|VS 2015|
 |&nbsp;&nbsp;[N3469 constexpr için \<chrono >](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2012/n3469.html)|VS 2015|
@@ -315,8 +315,8 @@ Aşağıdaki algoritmaları paralelleştirildi:
 
 [C++ Dil Başvurusu](../cpp/cpp-language-reference.md)<br/>
 [C++ Standart Kitaplığı](../standard-library/cpp-standard-library-reference.md)<br/>
-[Visual Studio 2017’deki C++ uyumluluk geliştirmeleri](cpp-conformance-improvements-2017.md)<br/>
-[Visual Studio 2017'deki Visual C++ Yenilikleri](what-s-new-for-visual-cpp-in-visual-studio.md)<br/>
+[Visual Studio'da C++ uyumluluk geliştirmeleri](cpp-conformance-improvements.md)<br/>
+[Visual Studio'da Visual C++ yenilikleri](what-s-new-for-visual-cpp-in-visual-studio.md)<br/>
 [Visual C++ değişiklik geçmişi 2003-2015](../porting/visual-cpp-change-history-2003-2015.md)<br/>
-[Visual C++ 2003 ile 2015 Arasındaki Farklar](../porting/visual-cpp-what-s-new-2003-through-2015.md)<br/>
+[Visual C++ 2015 tarihinden itibaren yeni 2003 nedir](../porting/visual-cpp-what-s-new-2003-through-2015.md)<br/>
 [Visual C++ ekip blogu](https://blogs.msdn.microsoft.com/vcblog/)

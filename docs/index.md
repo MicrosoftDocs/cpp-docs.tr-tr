@@ -4,18 +4,18 @@ title: Visual C++ belgeleri
 description: C++ uygulamaları, hizmetleri ve araçları, platformlar ve cihazlar için geliştirmek için kullanmayı öğrenin.
 author: mikeblome
 ms.author: mblome
-ms.openlocfilehash: 77a35fdd35d6af617ec9503f3613134ccbc9cdd6
-ms.sourcegitcommit: 5fc76f5b3c4c3ee49f38f05b37261a324591530b
-ms.translationtype: HT
+ms.openlocfilehash: f402087b101487a444996e7e27b186382c4874fd
+ms.sourcegitcommit: b72a10a7b12e722fd91a17406b91b270026f763a
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58870773"
+ms.lasthandoff: 04/03/2019
+ms.locfileid: "58898680"
 ---
 <div id="main" class="v2">
     <div class="container">
         <ul class="cardsY panelContent featuredContent">
             <li>
-                <a href="/visualstudio/install/install-visual-studio">
+                <a href="/cpp/build/vscpp-step-0-installation">
                     <div class="cardSize">
                         <div class="cardPadding">
                             <div class="card">
@@ -33,7 +33,7 @@ ms.locfileid: "58870773"
                 </a>
             </li>
             <li>
-                <a href="/visualstudio/ide/getting-started-with-cpp-in-visual-studio">
+                <a href="/cpp/get-started/tutorial-console-cpp">
                     <div class="cardSize">
                         <div class="cardPadding">
                             <div class="card">
@@ -61,7 +61,7 @@ ms.locfileid: "58870773"
                                     </div>
                                 </div>
                                 <div class="cardText">
-                                    <h3>Visual Studio 2017'de C++ için Yenilikler</h3>
+                                    <h3>Visual Studio'da C++ için Yenilikler</h3>
                                 </div>
                             </div>
                         </div>

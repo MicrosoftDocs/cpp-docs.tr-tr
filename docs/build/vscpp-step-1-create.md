@@ -2,16 +2,16 @@
 title: C++ konsol uygulama projesi oluşturma
 description: Visual c++'ta bir Hello World konsol uygulaması oluşturma
 ms.custom: mvc
-ms.date: 12/12/2017
+ms.date: 04/02/2019
 ms.topic: tutorial
 ms.devlang: cpp
 ms.assetid: 45138d70-719d-42dc-90d7-1d0ca31a2f54
-ms.openlocfilehash: 3bbbd40534e3e429d68dbb6205134c57db40c851
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.openlocfilehash: 739da0b6e5400117c0b09a3d4c3335bd44529a25
+ms.sourcegitcommit: b72a10a7b12e722fd91a17406b91b270026f763a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57817732"
+ms.lasthandoff: 04/03/2019
+ms.locfileid: "58898784"
 ---
 # <a name="create-a-c-console-app-project"></a>C++ konsol uygulama projesi oluşturma
 
@@ -19,11 +19,31 @@ Her zamanki başlangıç noktası C++ programcısı için bir "Hello, world!" ko
 
 ## <a name="prerequisites"></a>Önkoşullar
 
-- Visual Studio ile masaüstü geliştirme, yüklü ve bilgisayarınızda çalışan C++ iş yükünde sahip. Henüz yüklü değilse, bkz. [Visual Studio 2017'de C++ yükleme desteği](vscpp-step-0-installation.md).
+- Visual Studio ile masaüstü geliştirme, yüklü ve bilgisayarınızda çalışan C++ iş yükünde sahip. Henüz yüklü değilse, bkz. [Visual Studio'da C++ yükleme desteği](vscpp-step-0-installation.md).
 
 ## <a name="create-your-app-project"></a>Uygulama projenizi oluşturun
 
 Visual Studio kullanan *projeleri* bir uygulama için kod düzenleme ve *çözümleri* projelerinizi düzenlemek için. Bir proje, tüm seçenekleri, yapılandırmaları ve uygulamalarınızı oluşturmak için kullanılan kuralları içerir ve tüm proje dosyaları ve dış dosyaları arasındaki ilişki yönetir. Uygulamanızı oluşturmak için ilk olarak, yeni proje ve çözüm oluşturacaksınız.
+
+::: moniker range=">=vs-2019"
+
+1. Visual Studio'da açın **dosya** menüsünü seçip **yeni** > **proje** açmak için **yeni bir proje oluşturun** iletişim. Seçin **konsol uygulaması** şablonu seçip **sonraki**.
+
+   ![Yeni proje oluşturma](media/vs2019-choose-console-app.png "yeni proje iletişim kutusu oluşturma açın")
+
+1. İçinde **yeni projenizi yapılandırın** iletişim kutusunda girin *HelloWorld* içinde **proje adı** düzenleme kutusu. Seçin **Oluştur** projeyi oluşturmak için.
+
+   ![Ad ve yeni proje oluşturma](media/vs2019-configure-new-project-hello-world.png "adı ve yeni proje oluşturma")
+
+   Visual Studio, ekleme ve kaynak kodunuzu düzenleme hazır yeni bir proje oluşturur. Varsayılan olarak, kaynak kodunuzu "Hello World" uygulaması ile konsol uygulaması şablonu doldurur:
+
+   ![Hello World proje IDE'de](media/vs2019-hello-world-code.png "IDE'de proje Merhaba Dünya")
+
+   Kod Düzenleyicisi'nde şuna benzer, sonraki adıma gidin ve uygulamanızı oluşturmaya hazırsınız.
+
+::: moniker-end
+
+::: moniker range="<=vs-2017"
 
 1. Visual Studio'da açın **dosya** menüsünü seçip **yeni > Proje** açmak için **yeni proje** iletişim.
 
@@ -85,10 +105,14 @@ Kod Düzenleyicisi'nde şuna benzer, sonraki adıma gidin ve uygulamanızı olu�
 
 [Bir sorunla karşılaşırsanız çalıştırdım.](#add-a-source-code-file-issues)
 
+::: moniker-end
+
 ## <a name="next-steps"></a>Sonraki Adımlar
 
 > [!div class="nextstepaction"]
 > [Derleme ve C++ projesi çalıştırma](vscpp-step-2-build.md)
+
+::: moniker range="<=vs-2017"
 
 ## <a name="troubleshooting-guide"></a>Sorun giderme kılavuzu
 
@@ -108,7 +132,7 @@ Görmüyorsanız **bağlayıcı** altında listelenen **yapılandırma özellikl
 
 Dropdown denetimi görünmez **alt** özellik düzenleme kutusuna kadar özelliğini seçin. İşaretçiyi kullanarak seçim yapabilir veya iletişim kutusu denetimleri kadar arasında geçiş yapmak için sekmesinde basabilirsiniz **alt** vurgulanır. Aşağı açılır denetimden seçin veya açmak için Alt + Aşağı Ok tuşuna basın.
 
-[Geri Git](#make-your-project-a-console-app)
+[Geri git](#make-your-project-a-console-app)
 
 ### <a name="add-a-source-code-file-issues"></a>Bir kaynak kodu dosyası sorunları ekleme
 
@@ -125,5 +149,7 @@ Yeniden açmak için kaynak kod dosya Düzenleyicisi penceresi, yanlışlıkla k
 Kaynak Kod düzenleyicisinde herhangi bir şey altında kırmızı dalgalı çizgiler görünüyorsa, kodunuzun çalışması yazım ve noktalama işaretleri örnekte eşleştiğini kontrol edin. C++ kodunda önemli bir durumdur.
 
 [Geri dön](#add-code-to-the-source-file).
+
+::: moniker-end
 
 <iframe src="" height="0" width="0" frameborder="0" name="frameTarget" />

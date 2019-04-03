@@ -7,12 +7,12 @@ helpviewer_keywords:
 - Visual C++, home page
 author: mikeblome
 ms.author: mblome
-ms.openlocfilehash: 7ef43491c35ec4f57f7a691851e584e6aad58ef3
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.openlocfilehash: 6430d57ddc8718c419076d2da1008e21efdb9b13
+ms.sourcegitcommit: b72a10a7b12e722fd91a17406b91b270026f763a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58787830"
+ms.lasthandoff: 04/03/2019
+ms.locfileid: "58898719"
 ---
 # <a name="c-in-visual-studio"></a>Visual Studio’da C++
 
@@ -26,30 +26,30 @@ Microsoft Visual Visual C++ ya da MSVC, genellikle kısalttık C++, C++, C ve de
 
 ## <a name="whats-new-and-conformance-history"></a>Yenilikler ve uyumluluk geçmişi
 
-[Visual Studio 2017'de C++ için Yenilikler](what-s-new-for-visual-cpp-in-visual-studio.md)<br/>
-Visual Studio 2017'deki yenilikleri öğrenin.
+[Visual Studio'da C++ için Yenilikler](what-s-new-for-visual-cpp-in-visual-studio.md)<br/>
+Visual Studio'daki yenilikleri öğrenin.
 
 [Visual Studio 2003 ile 2015'teki c++ yenilikleri](../porting/visual-cpp-what-s-new-2003-through-2015.md)<br/>
 C++'da yeni Visual Studio'nun her sürümü için 2003 ile 2015 arasındaki bulun.
 
-[Visual Studio 2017’deki C++ uyumluluk geliştirmeleri](cpp-conformance-improvements-2017.md)<br/>
-Visual Studio 2017'deki C++ uyumluluk geliştirmeleri hakkında bilgi edinin.
+[Visual Studio'da C++ uyumluluk geliştirmeleri](cpp-conformance-improvements.md)<br/>
+Visual Studio'da C++ uyumluluk geliştirmeleri hakkında bilgi edinin.
 
 [Visual C++ dil uyumluluğu](visual-cpp-language-conformance.md)<br/>
 MSVC C++ derleyicisinde özelliğiyle uygunluk durumu listesi.
 
-[Visual C++ değişiklik geçmişi 2003 - 2015](../porting/visual-cpp-change-history-2003-2015.md)<br/>
+[Visual C++ değişiklik geçmişi 2003-2015](../porting/visual-cpp-change-history-2003-2015.md)<br/>
 Önceki sürümler, bozucu değişiklikler hakkında bilgi edinin.
 
 ## <a name="install-visual-studio-and-upgrade-from-earlier-versions"></a>Visual Studio'yu yükleyin ve önceki sürümlerinden yükseltme
 
-[Visual Studio'ya C++ desteği yükleme](../build/vscpp-step-0-installation.md)<br/>
+[Visual Studio'da C++ desteği yükleme](../build/vscpp-step-0-installation.md)<br/>
 Visual Studio 2015 veya Visual Studio 2017'yi indirip Visual C++ Araç Takımı'nı yükleyin.
 
-[Visual C++ Taşıma ve Yükseltme Kılavuzu](../porting/visual-cpp-porting-and-upgrading-guide.md)<br/>
+[Visual C++ taşıma ve yükseltme Kılavuzu](../porting/visual-cpp-porting-and-upgrading-guide.md)<br/>
 Kod taşıma ve Visual Studio 2015 veya Visual Studio 2017, Windows 10 ve evrensel Windows platformu için C++ kodunu taşıma dahil olmak üzere projelerini Yükseltme Kılavuzu.
 
-[Visual Studio Sürümlerinde Visual C++ Araçları ve Özellikleri](visual-cpp-tools-and-features-in-visual-studio-editions.md)<br/>
+[Visual C++ Araçları ve özellikleri Visual Studio sürümleri](visual-cpp-tools-and-features-in-visual-studio-editions.md)<br/>
 Farklı Visual Studio sürümleri hakkında bilgi edinin.
 
 [Desteklenen Platformlar](supported-platforms-visual-cpp.md)<br/>
@@ -57,7 +57,7 @@ Hangi platformların desteklendiğini öğrenin.
 
 ## <a name="learn-c"></a>Learn C++
 
-[C++ tekrar Hoş Geldiniz](../cpp/welcome-back-to-cpp-modern-cpp.md)<br/>
+[C++'a Tekrar Hoş Geldiniz](../cpp/welcome-back-to-cpp-modern-cpp.md)<br/>
 C stili programlama düşebileceğiniz tuzakları birçoğu önlemek ve daha hızlı yazmanıza olanak tanıyan C ++ 14 ve C ++ 11 dayalı programlama modern C++ hakkında güvenli kod öğrenin.
 
 [Standart C++](http://isocpp.org/)<br/>
@@ -74,7 +74,7 @@ C++ öğrenmeye başlayın.
 [Visual Studio'da C++ geliştirme genel bakış](overview-of-cpp-development.md)<br/>
 Visual Studio IDE kullanmak projeler oluşturun, kod düzenleme, kitaplıklarına bağlanması, derleme, hata ayıklama, birim testleri oluşturma, statik analiz yapmak için dağıtma ve daha.
 
-[Projeler ve Derleme Sistemleri](../build/projects-and-build-systems-cpp.md)<br/>
+[Projeler ve yapı sistemi](../build/projects-and-build-systems-cpp.md)<br/>
 Nasıl oluşturun ve Visual Studio C++ projeleri, CMake projelerini ve diğer tür projelere MSVC derleyici ve bağlayıcı seçeneklerini yapılandırın.
 
 [Yazma ve C++ kodu yeniden düzenleme](../ide/writing-and-refactoring-code-cpp.md)<br/>
@@ -91,28 +91,28 @@ C++, Google Test, Boost.Test veya CTest için Microsoft birim testi çerçevesin
 
 ## <a name="write-applications-in-c"></a>C++'da uygulamaları yazma
 
-[Evrensel Windows uygulamaları](../windows/universal-windows-apps-cpp.md)<br/>
+[Evrensel Windows Uygulamaları](../windows/universal-windows-apps-cpp.md)<br/>
 Kılavuzları ve referans içeriği Windows Geliştirici Merkezi'nde bulabilirsiniz. UWP uygulamaları geliştirme hakkında daha fazla bilgi için bkz: [Evrensel Windows platformu giriş](/windows/uwp/get-started/universal-application-platform-guide) ve [C++ kullanarak ilk UWP uygulamanızı oluşturmak](/windows/uwp/get-started/create-a-basic-windows-10-app-in-cpp).
 
 [Masaüstü uygulamaları (C++)](../windows/desktop-applications-visual-cpp.md)<br/>
 Geleneksel yerel C++ Masaüstü uygulamaları için Windows oluşturmayı öğrenin.
 
-[C++/CLI ile .NET programlama](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)<br/>
+[.NET programlama ile C + +/ CLI](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)<br/>
 C# veya Visual Basic gibi dillerde yazılan yerel C++ ve .NET programlar arasında birlikte çalışabilirliği sağlamak DLL'leri oluşturmayı öğrenin.
 
 [Linux programlama](../linux/index.md)<br/>
 Kodu Visual Studio IDE kullanın ve GCC ile derleme için bir uzak Linux makinesine dağıtın.
 
-[Visual C++'ta DLL'ler](../build/dlls-in-visual-cpp.md)<br/>
+[Visual C++'da DLL'ler](../build/dlls-in-visual-cpp.md)<br/>
 Windows masaüstü DLL'leri oluşturmak için Win32, ATL ve MFC'nin nasıl kullanılacağını öğretir ve DLL dosyanızı nasıl derleyeceğiniz ve kaydedeceğiniz hakkında bilgiler sağlar.
 
 [Paralel Programlama](../parallel/parallel-programming-in-visual-cpp.md)<br/>
 Paralel Desenler Kitaplığı, C++ AMP, OpenMP ve Windows'ta çoklu iş parçacığı kullanımıyla ilişkili diğer özellikleri nasıl kullanacağınızı öğrenin.
 
-[En iyi güvenlik uygulamaları](../security/security-best-practices-for-cpp.md)<br/>
+[En İyi Güvenlik Uygulamaları](../security/security-best-practices-for-cpp.md)<br/>
 Uygulamaları kötü amaçlı kod ve yetkisiz kullanıma karşı nasıl koruyacağınızı öğrenin.
 
-[Bulut ve Web programlama](../cloud/cloud-and-web-programming-in-visual-cpp.md)<br/>
+[Bulut ve Web Programlama](../cloud/cloud-and-web-programming-in-visual-cpp.md)<br/>
 C++'da, web ve buluta bağlamak için birkaç seçeneğiniz vardır.
 
 [Veri Erişimi](../data/data-access-in-cpp.md)<br/>
@@ -125,9 +125,9 @@ Farklı metin ve dize biçimleri ve yerel ve uluslararası geliştirme için Kod
 
 [C++ Dil Başvurusu](../cpp/cpp-language-reference.md)
 
-[C/C++ Ön İşlemci Başvurusu](../preprocessor/c-cpp-preprocessor-reference.md)
+[C/C++ Ön işlemci Başvurusu](../preprocessor/c-cpp-preprocessor-reference.md)
 
-[C Dil Başvurusu](../c-language/c-language-reference.md)
+[C Dili Başvurusu](../c-language/c-language-reference.md)
 
 [Derleyici İç Bilgileri ve Derleme Dili](../intrinsics/compiler-intrinsics-and-assembly-language.md)
 
@@ -141,10 +141,10 @@ Güvenlik sorunlarına neden olduğu bilinen işlevlere alternatif olarak güven
 [C++ Standart Kitaplığı](../standard-library/cpp-standard-library-reference.md)<br/>
 C++ Standart Kitaplığı.
 
-[Etkin Şablon Kitaplığı (ATL)](../atl/atl-com-desktop-components.md)<br/>
+[Etkin Şablon kitaplığı (ATL)](../atl/atl-com-desktop-components.md)<br/>
 COM bileşenleri ve uygulamaları için destek.
 
-[Microsoft Foundation Class (MFC) kitaplıkları](../mfc/mfc-desktop-applications.md)<br/>
+[{1&gt;Microsoft Foundation Class (MFC) kitaplıkları&lt;1}](../mfc/mfc-desktop-applications.md)<br/>
 Geleneksel veya Office stili kullanıcı arabirimleri olan masaüstü uygulamaları oluşturma desteği.
 
 [Paralel Desen Kitaplığı (PPL)](../parallel/concrt/parallel-patterns-library-ppl.md)<br/>
@@ -156,7 +156,7 @@ GPU üzerinde yürütülen yoğun paralel algoritmalar.
 [Windows çalışma zamanı Şablon kitaplığı (WRL)](../windows/windows-runtime-cpp-template-library-wrl.md)<br/>
 Evrensel Windows Platformu (UWP) uygulamaları ve bileşenleri.
 
-[C++/CLI ile .NET programlama](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)<br/>
+[.NET programlama ile C + +/ CLI](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)<br/>
 Ortak dil çalışma zamanı (CLR) için programlama.
 
 ## <a name="third-party-open-source-c-libraries"></a>Üçüncü taraf açık kaynak C++ kitaplıkları
@@ -165,7 +165,7 @@ Platformlar arası **vcpkg** komut satırı aracı bulma ve yükleme 900 C++ aç
 
 ## <a name="feedback-and-community"></a>Geri bildirim ve topluluk
 
-[Visual C++ Araç Takımıyla İlgili Bir Sorunu Bildirme](how-to-report-a-problem-with-the-visual-cpp-toolset.md)<br/>
+[Visual C++ araç takımı ile ilgili bir sorun bildirme](how-to-report-a-problem-with-the-visual-cpp-toolset.md)<br/>
 Visual C++ araç takımı (Derleyici, bağlayıcı ve diğer araçları) ve raporunuzun göndermenin yolu karşı etkin hata raporlarını oluşturmayı öğrenin.
 
 [Visual C++ ekip blogu](http://blogs.msdn.com/b/vcblog/)<br/>
@@ -176,6 +176,6 @@ Visual Studio hakkında yardım almayı, hataları dosyalamayı ve öneride bulu
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [C Dil Başvurusu](../c-language/c-language-reference.md)
+- [C Dili Başvurusu](../c-language/c-language-reference.md)
 - [C Çalışma Zamanı Kitaplığı Başvurusu](../c-runtime-library/c-run-time-library-reference.md)
 - [Derleyici İç Bilgileri ve Derleme Dili](../intrinsics/compiler-intrinsics-and-assembly-language.md)

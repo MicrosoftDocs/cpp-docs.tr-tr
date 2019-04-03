@@ -2,12 +2,12 @@
 title: Kodunuzu Evrensel CRT'ye yükseltme
 ms.date: 03/31/2017
 ms.assetid: eaf34c1b-da98-4058-a059-a10db693a5ce
-ms.openlocfilehash: 368b61820310135f14cbe4225b9315e62d3686a7
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.openlocfilehash: bdf1615d47361654e9690977520d01c332098438
+ms.sourcegitcommit: b72a10a7b12e722fd91a17406b91b270026f763a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58769192"
+ms.lasthandoff: 04/03/2019
+ms.locfileid: "58898771"
 ---
 # <a name="upgrade-your-code-to-the-universal-crt"></a>Kodunuzu Evrensel CRT'ye yükseltme
 
@@ -45,8 +45,8 @@ Birçok işlev eklendi veya ISO C99 uyumluluğu artırmak için UCRT ve kod kali
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Visual C++ Taşıma ve Yükseltme Kılavuzu](visual-cpp-porting-and-upgrading-guide.md)<br/>
-[Olası Yükseltme Sorunlarına Genel Bakış (Visual C++)](overview-of-potential-upgrade-issues-visual-cpp.md)<br/>
+[Visual C++ taşıma ve yükseltme Kılavuzu](visual-cpp-porting-and-upgrading-guide.md)<br/>
+[Olası yükseltme sorunlarına (Visual C++) genel bakış](overview-of-potential-upgrade-issues-visual-cpp.md)<br/>
 [Önceki Visual C++ Sürümü Projelerini Yükseltme](upgrading-projects-from-earlier-versions-of-visual-cpp.md)<br/>
-[Visual C++ değişiklik geçmişi 2003 - 2015](visual-cpp-change-history-2003-2015.md)<br/>
-[Visual Studio 2017’deki C++ uyumluluk geliştirmeleri](../overview/cpp-conformance-improvements-2017.md)
+[Visual C++ değişiklik geçmişi 2003-2015](visual-cpp-change-history-2003-2015.md)<br/>
+[Visual Studio'da C++ uyumluluk geliştirmeleri](../overview/cpp-conformance-improvements.md)
