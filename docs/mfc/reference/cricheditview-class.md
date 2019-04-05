@@ -101,10 +101,10 @@ helpviewer_keywords:
 - CRichEditView [MFC], m_nWordWrap
 ms.assetid: bd576b10-4cc0-4050-8f76-e1a0548411e4
 ms.openlocfilehash: 60eeaa2a37dd824ae418b25e95743c21c65ae7ce
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/05/2019
 ms.locfileid: "58773729"
 ---
 # <a name="cricheditview-class"></a>CRichEditView sınıfı
@@ -1285,7 +1285,7 @@ Zengin düzenleme görünümü değiştirmek için bu işlevi yanıt değişikli
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [MFC örnek WORDPAD](../../overview/visual-cpp-samples.md)<br/>
-[CCtrlView Sınıfı](../../mfc/reference/cctrlview-class.md)<br/>
+[CCtrlView sınıfı](../../mfc/reference/cctrlview-class.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
-[CRichEditDoc Sınıfı](../../mfc/reference/cricheditdoc-class.md)<br/>
-[CRichEditCntrItem Sınıfı](../../mfc/reference/cricheditcntritem-class.md)
+[CRichEditDoc Class](../../mfc/reference/cricheditdoc-class.md)<br/>
+[CRichEditCntrItem Class](../../mfc/reference/cricheditcntritem-class.md)

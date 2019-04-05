@@ -25,10 +25,10 @@ helpviewer_keywords:
 - CBrush [MFC], GetLogBrush
 ms.assetid: e5ef2c62-dd95-4973-9090-f52f605900e1
 ms.openlocfilehash: f2a2e385a9f210b3644d7fade00b72c4befa47ef
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/05/2019
 ms.locfileid: "58778877"
 ---
 # <a name="cbrush-class"></a>CBrush Class
@@ -436,7 +436,7 @@ Grafik nesneler kullanma hakkında daha fazla bilgi için bkz. [grafik nesneleri
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [MFC örnek PROPDLG](../../overview/visual-cpp-samples.md)<br/>
-[CGdiObject Sınıfı](../../mfc/reference/cgdiobject-class.md)<br/>
+[CGdiObject sınıfı](../../mfc/reference/cgdiobject-class.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
-[CBitmap Sınıfı](../../mfc/reference/cbitmap-class.md)<br/>
-[CDC Sınıfı](../../mfc/reference/cdc-class.md)
+[CBitmap sınıfı](../../mfc/reference/cbitmap-class.md)<br/>
+[CDC sınıfı](../../mfc/reference/cdc-class.md)

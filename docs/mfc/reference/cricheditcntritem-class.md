@@ -11,10 +11,10 @@ helpviewer_keywords:
 - CRichEditCntrItem [MFC], SyncToRichEditObject
 ms.assetid: 6c0b4efe-0fb8-4621-b5e1-fdcb8ec48c3b
 ms.openlocfilehash: 674937df9b4ecef0d159a47a45a716d1175ad5d9
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/05/2019
 ms.locfileid: "58773846"
 ---
 # <a name="cricheditcntritem-class"></a>CRichEditCntrItem Class
@@ -111,7 +111,7 @@ Daha fazla bilgi için [DVASPECT](/windows/desktop/api/wtypes/ne-wtypes-tagdvasp
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [MFC örnek WORDPAD](../../overview/visual-cpp-samples.md)<br/>
-[COleClientItem Sınıfı](../../mfc/reference/coleclientitem-class.md)<br/>
+[Coleclientıtem sınıfı](../../mfc/reference/coleclientitem-class.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
-[CRichEditDoc Sınıfı](../../mfc/reference/cricheditdoc-class.md)<br/>
-[CRichEditView Sınıfı](../../mfc/reference/cricheditview-class.md)
+[CRichEditDoc Class](../../mfc/reference/cricheditdoc-class.md)<br/>
+[CRichEditView sınıfı](../../mfc/reference/cricheditview-class.md)

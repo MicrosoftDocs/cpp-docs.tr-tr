@@ -109,10 +109,10 @@ helpviewer_keywords:
 - CComboBox [MFC], ShowDropDown
 ms.assetid: 4e73b5df-0d2e-4658-9706-38133fb10513
 ms.openlocfilehash: a76be4be87471f26970a5b517d9993ae324b56c5
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/05/2019
 ms.locfileid: "58778526"
 ---
 # <a name="ccombobox-class"></a>CComboBox sınıfı
@@ -382,7 +382,7 @@ virtual BOOL Create(
 *dwStyle*<br/>
 Birleşik giriş kutusu stilini belirtir. Herhangi bir birleşimini uygulamak [birleşik giriş kutusu stilleri](../../mfc/reference/styles-used-by-mfc.md#combo-box-styles) kutusu.
 
-*Rect*<br/>
+*rect*<br/>
 Birleşik giriş kutusunun boyutunu ve konumunu işaret eder. Olabilir bir [RECT yapısı](/windows/desktop/api/windef/ns-windef-tagrect) veya `CRect` nesne.
 
 *pParentWnd*<br/>
@@ -1558,12 +1558,12 @@ Bu üye işlevi ile oluşturulan bir birleşik giriş kutusu üzerinde hiçbir e
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [MFC örnek CTRLBARS](../../overview/visual-cpp-samples.md)<br/>
-[CWnd Sınıfı](../../mfc/reference/cwnd-class.md)<br/>
+[CWnd sınıfı](../../mfc/reference/cwnd-class.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
-[CWnd Sınıfı](../../mfc/reference/cwnd-class.md)<br/>
-[CButton Sınıfı](../../mfc/reference/cbutton-class.md)<br/>
-[CEdit Sınıfı](../../mfc/reference/cedit-class.md)<br/>
-[CListBox Sınıfı](../../mfc/reference/clistbox-class.md)<br/>
-[CScrollBar Sınıfı](../../mfc/reference/cscrollbar-class.md)<br/>
-[CStatic Sınıfı](../../mfc/reference/cstatic-class.md)<br/>
-[CDialog Sınıfı](../../mfc/reference/cdialog-class.md)
+[CWnd sınıfı](../../mfc/reference/cwnd-class.md)<br/>
+[CButton sınıfı](../../mfc/reference/cbutton-class.md)<br/>
+[CEdit sınıfı](../../mfc/reference/cedit-class.md)<br/>
+[CListBox sınıfı](../../mfc/reference/clistbox-class.md)<br/>
+[CScrollBar sınıfı](../../mfc/reference/cscrollbar-class.md)<br/>
+[CStatic sınıfı](../../mfc/reference/cstatic-class.md)<br/>
+[CDialog sınıfı](../../mfc/reference/cdialog-class.md)

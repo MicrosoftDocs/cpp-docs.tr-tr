@@ -9,10 +9,10 @@ helpviewer_keywords:
 - MFC dialog boxes
 ms.assetid: e4feea1a-8360-4ccb-9b84-507f1ccd9ef3
 ms.openlocfilehash: 32a8f8784459338131d4893f25d8798f8031b68b
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/05/2019
 ms.locfileid: "58778500"
 ---
 # <a name="dialog-boxes"></a>İletişim Kutuları
@@ -67,4 +67,4 @@ Herhangi bir program parçasını kullanmadan önce iletişim kutusunu kapatmak 
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Kullanıcı arabirimi öğeleri](../mfc/user-interface-elements-mfc.md)
+[Kullanıcı Arabirim Öğeleri](../mfc/user-interface-elements-mfc.md)

@@ -8,12 +8,12 @@ helpviewer_keywords:
 - '#include directive'
 - include directive (#include)
 ms.assetid: 17067dc0-8db1-4f2d-b43e-ec12ecf83238
-ms.openlocfilehash: 67a44574a5a72a7b7addc0ed3d7b51cd3eb5b984
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.openlocfilehash: 7ffccb34d52f8ffa1e6b9cc64a58d3471d02ac92
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57821405"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59038987"
 ---
 # <a name="include-directive-cc"></a>#include Yönergesi (C/C++)
 
@@ -69,7 +69,7 @@ Bu örnek DEFS tarafından belirtilen dosyanın içeriklerini ekler. Kaynak prog
 
 Dahil etme dosyaları iç içe geçmiş en fazla 10 düzeye kadar devam eder. İç içe **#include** olan işlendiğinde, önişlemci kapsayan içerik dosyasını orijinal kaynak dosyasına eklemeye devam eder.
 
-**Microsoft'a özgü**
+**Microsoft'a Özgü**
 
 Dahil edilebilecek kaynak dosyalarını bulmak için önişlemci ilk tarafından belirtilen dizinleri arar **/I** derleyici seçeneği. Varsa **/I** seçeneği mevcut değil veya başarısız olursa, önişlemci INCLUDE ortam değişkeni köşeli ayraç içindeki içerik dosyalarını bulmak için kullanır. INCLUDE ortam değişkeni ve **/I** derleyici seçeneği noktalı virgülle ayırarak birden fazla yol içerebilir (**;**). Kapsamında birden fazla dizin görünüyorsa **/I** seçeneğini veya INCLUDE ortam değişkeni içinde önişlemci bunları göründükleri sırayla arar.
 
@@ -92,9 +92,9 @@ Dosya adı tam olarak bir dahil etme dosyası için bir yol olan belirtildiyse, 
 
 Olarak belirtilen dosyaları eklemek `#include "path-spec"`, dizin arama ana dosyanın başlar ve ardından üst dosyaların dizinleriyle devam eder. Diğer bir deyişle, arama içeren kaynak dosyayı içeren dizine göre başlar **#include** işleniyor yönergesi. Dosya adı köşeli ayraçlar içine alınan iki üst dosya yok ve dosyayı bulunamadı, arama gibi devam eder.
 
-**END Microsoft özgü**
+**END Microsoft'a Özgü**
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Ön işlemci Yönergeleri](../preprocessor/preprocessor-directives.md)<br/>
 [/I (ek içeren dizinler)](../build/reference/i-additional-include-directories.md)<br/>

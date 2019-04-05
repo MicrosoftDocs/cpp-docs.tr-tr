@@ -7,10 +7,10 @@ helpviewer_keywords:
 - C3611
 ms.assetid: 42f3e320-41de-420a-bd05-8924cab765aa
 ms.openlocfilehash: 2d4c5cb02b1b8c5472502380fe7c74ff4a91954a
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/05/2019
 ms.locfileid: "58781932"
 ---
 # <a name="compiler-error-c3611"></a>Derleyici Hatası C3611

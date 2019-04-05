@@ -95,10 +95,10 @@ helpviewer_keywords:
 - CEdit [MFC], Undo
 ms.assetid: b1533c30-7f10-4663-88d3-8b7f2c9f7024
 ms.openlocfilehash: 45c03d142c34186660aa2715081ffb0f45e85ccc
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/05/2019
 ms.locfileid: "58773755"
 ---
 # <a name="cedit-class"></a>CEdit sınıfı
@@ -348,7 +348,7 @@ virtual BOOL Create(
 *dwStyle*<br/>
 Düzenleme denetiminin stilini belirtir. Herhangi bir birleşimini uygulamak [düzenleme stilleri](styles-used-by-mfc.md#edit-styles) denetimi.
 
-*Rect*<br/>
+*rect*<br/>
 Düzenleme denetiminin boyutunu ve konumunu belirtir. Olabilir bir `CRect` nesne veya `RECT` yapısı.
 
 *pParentWnd*<br/>
@@ -1196,7 +1196,7 @@ void SetPasswordChar(TCHAR ch);
 
 ### <a name="parameters"></a>Parametreler
 
-*ch*<br/>
+*Ch*<br/>
 Kullanıcı tarafından yazılan karakter yerine görüntülenecek karakter belirtir. Varsa *ch* 0 ise, kullanıcı tarafından yazılan karakterlerini görüntülenir.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -1451,12 +1451,12 @@ Daha fazla bilgi için [EM_UNDO](/windows/desktop/Controls/em-undo) Windows SDK.
 
 [MFC örnek CALCDRIV](../../overview/visual-cpp-samples.md)<br/>
 [MFC örnek CMNCTRL2](../../overview/visual-cpp-samples.md)<br/>
-[CWnd Sınıfı](../../mfc/reference/cwnd-class.md)<br/>
+[CWnd sınıfı](../../mfc/reference/cwnd-class.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
-[CWnd Sınıfı](cwnd-class.md)<br/>
-[CButton Sınıfı](cbutton-class.md)<br/>
-[CComboBox Sınıfı](ccombobox-class.md)<br/>
-[CListBox Sınıfı](clistbox-class.md)<br/>
-[CScrollBar Sınıfı](cscrollbar-class.md)<br/>
-[CStatic Sınıfı](cstatic-class.md)<br/>
-[CDialog Sınıfı](cdialog-class.md)
+[CWnd sınıfı](cwnd-class.md)<br/>
+[CButton sınıfı](cbutton-class.md)<br/>
+[CComboBox sınıfı](ccombobox-class.md)<br/>
+[CListBox sınıfı](clistbox-class.md)<br/>
+[CScrollBar sınıfı](cscrollbar-class.md)<br/>
+[CStatic sınıfı](cstatic-class.md)<br/>
+[CDialog sınıfı](cdialog-class.md)

@@ -5,12 +5,12 @@ ms.topic: reference
 f1_keywords:
 - client/Microsoft::WRL::Details::RemoveIUnknown
 ms.assetid: 998e711a-7d1a-44c6-a016-e6167aa40863
-ms.openlocfilehash: bfe397f64650caedab1408f1f74fabd005dd98cf
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.openlocfilehash: 3b54f6a3072d82d40db4ac698503f0939e745472
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58787073"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59036779"
 ---
 # <a name="removeiunknown-class"></a>RemoveIUnknown Sınıfı
 
@@ -57,6 +57,6 @@ Varsayılan olarak, COM yöntemleri sanal sağlamak `QueryInterface`, `AddRef`, 
 
 **Namespace:** Microsoft::wrl:: details
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Microsoft::WRL::Details Ad Alanı](microsoft-wrl-details-namespace.md)

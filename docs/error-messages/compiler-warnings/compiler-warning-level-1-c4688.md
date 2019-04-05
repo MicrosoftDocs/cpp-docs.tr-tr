@@ -7,10 +7,10 @@ helpviewer_keywords:
 - C4688
 ms.assetid: a027df3c-b2b8-4c49-8539-c2bc42db74e8
 ms.openlocfilehash: 1c94198eca0a88174c8655e0d571c37f82a2df36
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/05/2019
 ms.locfileid: "58781971"
 ---
 # <a name="compiler-warning-level-1-c4688"></a>Derleyici Uyarısı (düzey 1) C4688
