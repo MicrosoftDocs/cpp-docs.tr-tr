@@ -41,10 +41,10 @@ helpviewer_keywords:
 - CDateTimeCtrl [MFC], SetTime
 ms.assetid: 7113993b-5d37-4148-939f-500a190c5bdc
 ms.openlocfilehash: 8c69473ab813c2fa692044fddc406a74a5aeb197
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/05/2019
 ms.locfileid: "58779826"
 ---
 # <a name="cdatetimectrl-class"></a>CDateTimeCtrl sınıfı
@@ -157,7 +157,7 @@ virtual BOOL Create(
 *dwStyle*<br/>
 Tarih Saat Denetim stilleri bileşimini belirtir. Bkz: [tarih ve Saat Seçici denetim stilleri](/windows/desktop/Controls/date-and-time-picker-control-styles) tarih ve Saat Seçici stilleri hakkında daha fazla bilgi için Windows SDK.
 
-*Rect*<br/>
+*rect*<br/>
 Bir başvuru bir [RECT](/previous-versions/dd162897\(v=vs.85\)) tarih ve Saat Seçici denetiminin boyutunu ve konumunu olan yapısı.
 
 *pParentWnd*<br/>
@@ -600,6 +600,6 @@ Bu üye işlevi Win32 ileti davranışı uygulayan [DTM_SETSYSTEMTIME](/windows/
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [MFC örnek CMNCTRL1](../../overview/visual-cpp-samples.md)<br/>
-[CWnd Sınıfı](../../mfc/reference/cwnd-class.md)<br/>
+[CWnd sınıfı](../../mfc/reference/cwnd-class.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
-[CMonthCalCtrl Sınıfı](../../mfc/reference/cmonthcalctrl-class.md)
+[CMonthCalCtrl sınıfı](../../mfc/reference/cmonthcalctrl-class.md)

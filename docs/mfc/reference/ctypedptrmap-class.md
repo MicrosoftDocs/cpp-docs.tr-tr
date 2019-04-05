@@ -15,10 +15,10 @@ helpviewer_keywords:
 - CTypedPtrMap [MFC], SetAt
 ms.assetid: 9f377385-c6e9-4471-8b40-8fe220c50164
 ms.openlocfilehash: bc164125f867cf3e2f27b74e69b826cbed31ff1d
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/05/2019
 ms.locfileid: "58781802"
 ---
 # <a name="ctypedptrmap-class"></a>CTypedPtrMap Class
@@ -218,7 +218,7 @@ Daha ayrıntılı açıklamalar için bkz. [CMapStringToOb::SetAt](../../mfc/ref
 
 [MFC örnek Topla](../../overview/visual-cpp-samples.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
-[CMapPtrToPtr Sınıfı](../../mfc/reference/cmapptrtoptr-class.md)<br/>
-[CMapPtrToWord Sınıfı](../../mfc/reference/cmapptrtoword-class.md)<br/>
-[CMapWordToPtr Sınıfı](../../mfc/reference/cmapwordtoptr-class.md)<br/>
-[CMapStringToPtr Sınıfı](../../mfc/reference/cmapstringtoptr-class.md)
+[CMapPtrToPtr sınıfı](../../mfc/reference/cmapptrtoptr-class.md)<br/>
+[CMapPtrToWord Class](../../mfc/reference/cmapptrtoword-class.md)<br/>
+[CMapWordToPtr sınıfı](../../mfc/reference/cmapwordtoptr-class.md)<br/>
+[CMapStringToPtr sınıfı](../../mfc/reference/cmapstringtoptr-class.md)

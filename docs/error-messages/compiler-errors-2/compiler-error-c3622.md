@@ -7,10 +7,10 @@ helpviewer_keywords:
 - C3622
 ms.assetid: 02836f78-0cf2-4947-b87e-710187d81014
 ms.openlocfilehash: ed307f46db1261d79d5b0ec6b36852cac2e6d13e
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/05/2019
 ms.locfileid: "58781919"
 ---
 # <a name="compiler-error-c3622"></a>Derleyici Hatası C3622

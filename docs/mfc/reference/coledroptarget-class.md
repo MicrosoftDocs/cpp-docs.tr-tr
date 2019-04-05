@@ -25,10 +25,10 @@ helpviewer_keywords:
 - COleDropTarget [MFC], Revoke
 ms.assetid: a58c9a48-6a93-4357-b078-4594df258311
 ms.openlocfilehash: 9a1633ed48c763b986f3421c33589a05f8bba126
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/05/2019
 ms.locfileid: "58781646"
 ---
 # <a name="coledroptarget-class"></a>COleDropTarget sınıfı
@@ -388,6 +388,6 @@ Daha fazla bilgi için [RevokeDragDrop](/windows/desktop/api/ole2/nf-ole2-revoke
 
 [MFC örnek HIERSVR](../../overview/visual-cpp-samples.md)<br/>
 [MFC örnek OCLIENT](../../overview/visual-cpp-samples.md)<br/>
-[CCmdTarget Sınıfı](../../mfc/reference/ccmdtarget-class.md)<br/>
+[CCmdTarget sınıfı](../../mfc/reference/ccmdtarget-class.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
-[COleDropSource Sınıfı](../../mfc/reference/coledropsource-class.md)
+[COleDropSource sınıfı](../../mfc/reference/coledropsource-class.md)

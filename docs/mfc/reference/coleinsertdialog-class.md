@@ -25,10 +25,10 @@ helpviewer_keywords:
 - COleInsertDialog [MFC], m_io
 ms.assetid: a9ec610b-abde-431e-bd01-c40159a66dbb
 ms.openlocfilehash: 27bf98ea4fe6951624873c1463d50f37558c9234
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/05/2019
 ms.locfileid: "58781490"
 ---
 # <a name="coleinsertdialog-class"></a>Coleınsertdialog sınıfı
@@ -305,6 +305,6 @@ Daha fazla bilgi için [OLEUIINSERTOBJECT](/windows/desktop/api/oledlg/ns-oledlg
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [MFC örnek OCLIENT](../../overview/visual-cpp-samples.md)<br/>
-[COleDialog Sınıfı](../../mfc/reference/coledialog-class.md)<br/>
+[COleDialog sınıfı](../../mfc/reference/coledialog-class.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
-[COleDialog Sınıfı](../../mfc/reference/coledialog-class.md)
+[COleDialog sınıfı](../../mfc/reference/coledialog-class.md)

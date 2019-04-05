@@ -8,10 +8,10 @@ helpviewer_keywords:
 - strings [C++], converting
 ms.assetid: e7e4f741-3c82-45f0-b8c0-1e1e343b0e77
 ms.openlocfilehash: 21006f19f7c811f87f3f75e346983f7a8e7e0bf5
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/05/2019
 ms.locfileid: "58778331"
 ---
 # <a name="how-to-convert-between-various-string-types"></a>Nasıl yapılır: Çeşitli dize türleri arasında dönüştürme
@@ -803,9 +803,9 @@ Hello, World! (basic_string)
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [ATL ve MFC dize dönüşüm makroları](../atl/reference/string-conversion-macros.md)<br/>
-[C Stili Dizelerle İlgili CString İşlemleri](../atl-mfc-shared/cstring-operations-relating-to-c-style-strings.md)<br/>
-[Nasıl yapılır: Standart Dizeyi System::String Olarak Dönüştürme](../dotnet/how-to-convert-standard-string-to-system-string.md)<br/>
-[Nasıl yapılır: System::String'i Standart Dizeye Dönüştürme](../dotnet/how-to-convert-system-string-to-standard-string.md)<br/>
+[C stili dizelerle ilgili CString işlemleri](../atl-mfc-shared/cstring-operations-relating-to-c-style-strings.md)<br/>
+[Nasıl yapılır: Standart dizeyi System::String olarak dönüştürme](../dotnet/how-to-convert-standard-string-to-system-string.md)<br/>
+[Nasıl yapılır: System:: String'i standart dizeye dönüştürme](../dotnet/how-to-convert-system-string-to-standard-string.md)<br/>
 [Nasıl yapılır: System:: String'i wchar_t * veya char olarak dönüştürme\*](../dotnet/how-to-convert-system-string-to-wchar-t-star-or-char-star.md)<br/>
 [CComBSTR ile programlama](../atl/programming-with-ccombstr-atl.md)<br/>
 [mbstowcs_s, _mbstowcs_s_l](../c-runtime-library/reference/mbstowcs-s-mbstowcs-s-l.md)<br/>

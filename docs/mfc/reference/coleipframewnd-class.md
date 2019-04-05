@@ -13,10 +13,10 @@ helpviewer_keywords:
 - COleIPFrameWnd [MFC], RepositionFrame
 ms.assetid: 24abb2cb-826c-4dda-a287-d8a8900a5763
 ms.openlocfilehash: 34388e635ba89d732ae3993074a2c8268e2289a3
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/05/2019
 ms.locfileid: "58779618"
 ---
 # <a name="coleipframewnd-class"></a>Coleıpframewnd sınıfı
@@ -133,6 +133,6 @@ Denetim çubukları kapsayıcı penceresinde düzenini farklıdır bir OLE dış
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [MFC örnek HIERSVR](../../overview/visual-cpp-samples.md)<br/>
-[CFrameWnd Sınıfı](../../mfc/reference/cframewnd-class.md)<br/>
+[CFrameWnd sınıfı](../../mfc/reference/cframewnd-class.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
-[CFrameWnd Sınıfı](../../mfc/reference/cframewnd-class.md)
+[CFrameWnd sınıfı](../../mfc/reference/cframewnd-class.md)

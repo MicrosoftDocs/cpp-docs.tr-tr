@@ -79,10 +79,10 @@ helpviewer_keywords:
 - CMFCRibbonGallery [MFC], OnDrawPaletteIcon
 ms.assetid: 9734c9c9-981c-4b3f-8c59-264fd41811b4
 ms.openlocfilehash: 818ce55e44d91520e568308a1a1e8a1fa0c8658d
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/05/2019
 ms.locfileid: "58780398"
 ---
 # <a name="cmfcribbongallery-class"></a>CMFCRibbonGallery sınıfı
@@ -691,7 +691,7 @@ virtual BOOL SetACCData(
 *pParent*<br/>
 [in] Şerit Galerisi penceresinin üst pencere.
 
-*Veri*<br/>
+*veri*<br/>
 [out] A `CAccessibilityData` Şerit Galeriden erişilebilirlik veri alan nesnesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -820,5 +820,5 @@ Galeriden bir kullanıcı seçili için belirli bir öğeyi belirlemek için ça
 
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
 [Sınıflar](../../mfc/reference/mfc-classes.md)<br/>
-[CMFCRibbonButton Sınıfı](../../mfc/reference/cmfcribbonbutton-class.md)<br/>
-[CMFCRibbonGalleryMenuButton Sınıfı](../../mfc/reference/cmfcribbongallerymenubutton-class.md)
+[CMFCRibbonButton sınıfı](../../mfc/reference/cmfcribbonbutton-class.md)<br/>
+[CMFCRibbonGalleryMenuButton sınıfı](../../mfc/reference/cmfcribbongallerymenubutton-class.md)

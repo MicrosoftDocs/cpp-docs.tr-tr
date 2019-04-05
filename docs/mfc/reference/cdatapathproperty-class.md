@@ -21,10 +21,10 @@ helpviewer_keywords:
 - CDataPathProperty [MFC], SetPath
 ms.assetid: 1f96efdb-54e4-460b-862c-eba5d4103488
 ms.openlocfilehash: 89cb8ddcdd42643f52f755516e8845109163c57a
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/05/2019
 ms.locfileid: "58780346"
 ---
 # <a name="cdatapathproperty-class"></a>CDataPathProperty Class
@@ -64,7 +64,7 @@ Sınıf `CDataPathProperty` türetilir `CAysncMonikerFile`. OLE denetimleriniz z
 
 Zaman uyumsuz adlar ve ActiveX denetimleri, Internet uygulamalarında kullanma hakkında daha fazla bilgi için aşağıdaki makalelere bakın:
 
-- [Internet ilk adımlar: ActiveX denetimleri](../../mfc/activex-controls-on-the-internet.md)
+- [Internet ilk adımlar: ActiveX Denetimleri](../../mfc/activex-controls-on-the-internet.md)
 
 - [Internet ilk adımlar: Zaman uyumsuz adlar](../../mfc/asynchronous-monikers-on-the-internet.md)
 
@@ -218,6 +218,6 @@ Mutlak veya göreli zaman uyumsuz olarak yüklenen özelliğine olabilen bir yol
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [MFC örneği görüntüsü](../../overview/visual-cpp-samples.md)<br/>
-[CAsyncMonikerFile Sınıfı](../../mfc/reference/casyncmonikerfile-class.md)<br/>
+[CAsyncMonikerFile sınıfı](../../mfc/reference/casyncmonikerfile-class.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
-[CAsyncMonikerFile Sınıfı](../../mfc/reference/casyncmonikerfile-class.md)
+[CAsyncMonikerFile sınıfı](../../mfc/reference/casyncmonikerfile-class.md)

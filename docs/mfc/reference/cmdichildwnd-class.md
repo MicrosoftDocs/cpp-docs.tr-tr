@@ -23,10 +23,10 @@ helpviewer_keywords:
 - CMDIChildWnd [MFC], SetHandles
 ms.assetid: 6d07f5d4-9a3e-4723-9fa5-e65bb669fdd5
 ms.openlocfilehash: 13f027e68184a4869e88883ff8b8d3b123b94e3e
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/05/2019
 ms.locfileid: "58774593"
 ---
 # <a name="cmdichildwnd-class"></a>Cmdıchildwnd sınıfı
@@ -150,7 +150,7 @@ Pencere adının temsil eden bir boş sonlandırılmış karakter dizesi işaret
 *dwStyle*<br/>
 Pencerenin belirtir [stili](../../mfc/reference/styles-used-by-mfc.md#window-styles) öznitelikleri. WS_CHILD stili gereklidir.
 
-*Rect*<br/>
+*rect*<br/>
 Pencerenin konumunu ve boyutunu içerir. `rectDefault` Değer sağlayan yeni konumunu ve boyutunu belirtmek Windows `CMDIChildWnd`.
 
 *pParentWnd*<br/>
@@ -290,7 +290,7 @@ MDI alt penceresi nesne tarafından kullanılan menüsü ve Hızlandırıcı kay
 [MFC örnek MDI](../../overview/visual-cpp-samples.md)<br/>
 [MFC örnek MDIDOCVW](../../overview/visual-cpp-samples.md)<br/>
 [MFC örnek SNAPVW](../../overview/visual-cpp-samples.md)<br/>
-[CFrameWnd Sınıfı](../../mfc/reference/cframewnd-class.md)<br/>
+[CFrameWnd sınıfı](../../mfc/reference/cframewnd-class.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
-[CWnd Sınıfı](../../mfc/reference/cwnd-class.md)<br/>
-[CMDIFrameWnd Sınıfı](../../mfc/reference/cmdiframewnd-class.md)
+[CWnd sınıfı](../../mfc/reference/cwnd-class.md)<br/>
+[CMDIFrameWnd sınıfı](../../mfc/reference/cmdiframewnd-class.md)

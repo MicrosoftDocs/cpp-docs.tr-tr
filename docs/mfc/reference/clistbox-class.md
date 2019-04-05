@@ -103,10 +103,10 @@ helpviewer_keywords:
 - CListBox [MFC], VKeyToItem
 ms.assetid: 7ba3c699-c286-4cd9-9066-532c41ec05d1
 ms.openlocfilehash: b448f725bac68c2b67dc44d660c664c075aa86da
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/05/2019
 ms.locfileid: "58778773"
 ---
 # <a name="clistbox-class"></a>CListBox sınıfı
@@ -374,7 +374,7 @@ virtual BOOL Create(
 *dwStyle*<br/>
 Liste kutusu stilini belirtir. Herhangi bir birleşimini uygulamak [liste kutusu stilleri](../../mfc/reference/styles-used-by-mfc.md#list-box-styles) kutusu.
 
-*Rect*<br/>
+*rect*<br/>
 Liste kutusu boyutunu ve konumunu belirtir. Olabilir bir `CRect` nesnesi veya bir `RECT` yapısı.
 
 *pParentWnd*<br/>
@@ -1539,11 +1539,11 @@ Dönüş değeri 0 veya daha büyük, liste kutusunda bir öğenin dizinini beli
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [MFC örnek CTRLTEST](../../overview/visual-cpp-samples.md)<br/>
-[CWnd Sınıfı](../../mfc/reference/cwnd-class.md)<br/>
+[CWnd sınıfı](../../mfc/reference/cwnd-class.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
-[CWnd Sınıfı](../../mfc/reference/cwnd-class.md)<br/>
-[CButton Sınıfı](../../mfc/reference/cbutton-class.md)<br/>
-[CComboBox Sınıfı](../../mfc/reference/ccombobox-class.md)<br/>
-[CEdit Sınıfı](../../mfc/reference/cedit-class.md)<br/>
-[CScrollBar Sınıfı](../../mfc/reference/cscrollbar-class.md)<br/>
-[CStatic Sınıfı](../../mfc/reference/cstatic-class.md)
+[CWnd sınıfı](../../mfc/reference/cwnd-class.md)<br/>
+[CButton sınıfı](../../mfc/reference/cbutton-class.md)<br/>
+[CComboBox sınıfı](../../mfc/reference/ccombobox-class.md)<br/>
+[CEdit sınıfı](../../mfc/reference/cedit-class.md)<br/>
+[CScrollBar sınıfı](../../mfc/reference/cscrollbar-class.md)<br/>
+[CStatic sınıfı](../../mfc/reference/cstatic-class.md)

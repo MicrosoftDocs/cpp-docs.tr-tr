@@ -7,10 +7,10 @@ helpviewer_keywords:
 - C3900
 ms.assetid: a94cc561-8fa8-4344-9e01-e81ff462fae5
 ms.openlocfilehash: 35df94ccfcd7942f9057cb37ceee349c09b80607
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/05/2019
 ms.locfileid: "58777421"
 ---
 # <a name="compiler-error-c3900"></a>Derleyici Hatası C3900

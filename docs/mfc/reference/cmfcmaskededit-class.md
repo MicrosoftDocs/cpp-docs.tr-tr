@@ -25,10 +25,10 @@ helpviewer_keywords:
 - CMFCMaskedEdit [MFC], IsMaskedChar
 ms.assetid: 13b1a645-2d5d-4c37-8599-16d5003f23a5
 ms.openlocfilehash: c1dcf89811fa5225283cb5bec120d3bd2fdfb003
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/05/2019
 ms.locfileid: "58773794"
 ---
 # <a name="cmfcmaskededit-class"></a>CMFCMaskedEdit sınıfı
@@ -340,4 +340,4 @@ Bu yöntem'ı yeniden tanımladığı [CWnd::SetWindowText](../../mfc/reference/
 
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
 [Sınıflar](../../mfc/reference/mfc-classes.md)<br/>
-[CEdit Sınıfı](../../mfc/reference/cedit-class.md)
+[CEdit sınıfı](../../mfc/reference/cedit-class.md)

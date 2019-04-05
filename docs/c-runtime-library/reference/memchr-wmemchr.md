@@ -1,6 +1,6 @@
 ---
 title: memchr, wmemchr
-ms.date: 11/04/2016
+ms.date: 03/31/2019
 apiname:
 - wmemchr
 - memchr
@@ -24,12 +24,12 @@ helpviewer_keywords:
 - memchr function
 - wmemchr function
 ms.assetid: 5a348581-28f1-4256-8434-687245f7fc9f
-ms.openlocfilehash: cbd8b80ed42a6532fb7161fab7217a772a2cb777
-ms.sourcegitcommit: e06648107065f3dea35f40c1ae5999391087b80b
+ms.openlocfilehash: 00a1f0d12047cc388b56074a657ffd739e986827
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57209905"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "58866922"
 ---
 # <a name="memchr-wmemchr"></a>memchr, wmemchr
 
@@ -78,7 +78,7 @@ Arabellek için işaretçi.
 *c*<br/>
 Aranacak karakter.
 
-*Sayısı*<br/>
+*count*<br/>
 Denetlenecek karakter sayısı.
 
 ## <a name="return-value"></a>Dönüş Değeri
@@ -87,9 +87,9 @@ Başarılı olursa, bir işaretçi ilk konumunu döndürür *c* içinde *arabell
 
 ## <a name="remarks"></a>Açıklamalar
 
-`memchr` ve `wmemchr` ilk oluşumunu arayın *c* ilk *sayısı* bayt *arabellek*. Bulduğunda durdurulmadan *c* veya ne zaman kullanıma ilk *sayısı* bayt.
+`memchr` ve `wmemchr` ilk oluşumunu arayın *c* ilk *sayısı* karakterlerinden *arabellek*. Bulduğunda durdurulmadan *c* veya ne zaman kullanıma ilk *sayısı* karakter.
 
-C'de bu işlevler alır bir **const** ilk bağımsız değişken için bir işaretçi. C++'da, iki aşırı yüklemesi kullanılabilir. Bir işaretçi alan aşırı yükleme **const** bir işaretçi döndürür **const**; olmayan bir işaretçiye alan sürüm**const** olmayan bir işaretçi döndürür**const** . Her iki makro _CRT_CONST_CORRECT_OVERLOADS tanımlanan **const** ve olmayan-**const** bu işlevlerin sürümleri mevcuttur. Olmayan gerektiriyorsa**const** davranışı için her iki C++, C++ overloadsin _const_return sembolünü.
+C'de bu işlevler alır bir **const** ilk bağımsız değişken için bir işaretçi. C++'da, iki aşırı yüklemesi kullanılabilir. Bir işaretçi alan aşırı yükleme **const** bir işaretçi döndürür **const**; olmayan bir işaretçiye alan sürüm**const** olmayan bir işaretçi döndürür**const** . Makro \_CRT\_CONST\_doğru\_aşırı yüklemeler, hem de tanımlanır **const** ve olmayan-**const** bu işlevlerin sürümleri mevcuttur. Olmayan gerektiriyorsa**const** davranışı için her iki C++ aşırı C++ ' ta tanımlamak sembol \_CONST\_DÖNDÜRÜR.
 
 ## <a name="requirements"></a>Gereksinimler
 

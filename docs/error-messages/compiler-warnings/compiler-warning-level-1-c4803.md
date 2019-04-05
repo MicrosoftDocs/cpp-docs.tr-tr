@@ -7,10 +7,10 @@ helpviewer_keywords:
 - C4803
 ms.assetid: 2552f3a6-c418-49f4-98a2-a929857be658
 ms.openlocfilehash: bb8f5fe9d55a44193325a2fcfe9ef7675a2b3b89
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/05/2019
 ms.locfileid: "58774886"
 ---
 # <a name="compiler-warning-level-1-c4803"></a>Derleyici Uyarısı (düzey 1) C4803

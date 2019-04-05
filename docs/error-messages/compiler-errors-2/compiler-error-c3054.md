@@ -7,10 +7,10 @@ helpviewer_keywords:
 - C3054
 ms.assetid: 6f4b7ac5-0d12-474b-b611-76ff26ee41ac
 ms.openlocfilehash: 1dd6450d661700d9b2f7f94e625abd9ecc64ed08
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/05/2019
 ms.locfileid: "58773001"
 ---
 # <a name="compiler-error-c3054"></a>Derleyici Hatası C3054

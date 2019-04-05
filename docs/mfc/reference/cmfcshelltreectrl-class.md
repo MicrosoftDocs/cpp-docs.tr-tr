@@ -29,10 +29,10 @@ helpviewer_keywords:
 - CMFCShellTreeCtrl [MFC], SetRelatedList
 ms.assetid: 3d1da715-9554-4ed7-968c-055c48146267
 ms.openlocfilehash: 1fc422c3aca3efe1fb177e7a3567530d70c27119
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/05/2019
 ms.locfileid: "58779761"
 ---
 # <a name="cmfcshelltreectrl-class"></a>CMFCShellTreeCtrl sınıfı
@@ -294,5 +294,5 @@ Bu yöntemi kullanmak [CMFCShellTreeCtrl::GetRelatedList](#getrelatedlist) alın
 
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
 [Sınıflar](../../mfc/reference/mfc-classes.md)<br/>
-[CTreeCtrl Sınıfı](../../mfc/reference/ctreectrl-class.md)<br/>
-[CMFCShellListCtrl Sınıfı](../../mfc/reference/cmfcshelllistctrl-class.md)
+[CTreeCtrl sınıfı](../../mfc/reference/ctreectrl-class.md)<br/>
+[CMFCShellListCtrl sınıfı](../../mfc/reference/cmfcshelllistctrl-class.md)

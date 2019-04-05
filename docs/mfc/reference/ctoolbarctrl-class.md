@@ -183,10 +183,10 @@ helpviewer_keywords:
 - CToolBarCtrl [MFC], SetWindowTheme
 ms.assetid: 8f2f8ad2-05d7-4975-8715-3f2eed795248
 ms.openlocfilehash: 92f5adcea50e660ecfad131313247e118312e609
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/05/2019
 ms.locfileid: "58781269"
 ---
 # <a name="ctoolbarctrl-class"></a>CToolBarCtrl sınıfı
@@ -626,7 +626,7 @@ virtual BOOL Create(
 *dwStyle*<br/>
 Araç çubuğu denetiminin stilini belirtir. Araç çubukları, her zaman WS_CHILD stil olması gerekir. Ayrıca, altında açıklandığı gibi herhangi bir birleşimini toolbar stilleri ve pencere stilleri belirtebilirsiniz **açıklamalar**.
 
-*Rect*<br/>
+*rect*<br/>
 İsteğe bağlı olarak araç çubuğu denetiminin boyutunu ve konumunu belirtir. Ya da olabilir bir [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesi veya bir [RECT](/previous-versions/dd162897\(v=vs.85\)) yapısı.
 
 *pParentWnd*<br/>
@@ -680,7 +680,7 @@ Oluşturulan denetimin genişletilmiş stilini belirtir. Genişletilmiş Windows
 *dwStyle*<br/>
 Araç çubuğu denetiminin stilini belirtir. Araç çubukları, her zaman WS_CHILD stil olması gerekir. Ayrıca, açıklandığı toolbar stilleri ve pencere stilleri herhangi bir birleşimini belirtebilirsiniz **açıklamalar** bölümünü [Oluştur](#create).
 
-*Rect*<br/>
+*rect*<br/>
 Bir başvuru bir [RECT](/previous-versions/dd162897\(v=vs.85\)) istemci koordinatları olarak oluşturulması için pencerenin konumunu ve boyutunu açıklayan yapısı *pParentWnd*.
 
 *pParentWnd*<br/>
@@ -1817,7 +1817,7 @@ BOOL SetBitmapSize(CSize size);
 
 ### <a name="parameters"></a>Parametreler
 
-*Boyutu*<br/>
+*size*<br/>
 Genişliği ve yüksekliği, piksel cinsinden bit eşlemli görüntüler.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -1864,7 +1864,7 @@ BOOL SetButtonSize(CSize size);
 
 ### <a name="parameters"></a>Parametreler
 
-*Boyutu*<br/>
+*size*<br/>
 Genişlik ve yüksekliğini piksel cinsinden düğmeleri.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -2388,6 +2388,6 @@ Bu üye işlevi işlevselliğine öykünür [TB_SETWINDOWTHEME](/windows/desktop
 
 [MFC örnek CMNCTRL1](../../overview/visual-cpp-samples.md)<br/>
 [MFC örnek MFCIE](../../overview/visual-cpp-samples.md)<br/>
-[CWnd Sınıfı](../../mfc/reference/cwnd-class.md)<br/>
+[CWnd sınıfı](../../mfc/reference/cwnd-class.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
-[CToolBar Sınıfı](../../mfc/reference/ctoolbar-class.md)
+[CToolBar sınıfı](../../mfc/reference/ctoolbar-class.md)

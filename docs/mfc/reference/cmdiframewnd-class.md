@@ -35,10 +35,10 @@ helpviewer_keywords:
 - CMDIFrameWnd [MFC], MDITile
 ms.assetid: fa8736e6-511b-4c51-8b4d-eba78378aeb9
 ms.openlocfilehash: 9f5289491a7c14749865cfd163417440bc542aba
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/05/2019
 ms.locfileid: "58776537"
 ---
 # <a name="cmdiframewnd-class"></a>CMDIFrameWnd sınıfı
@@ -462,7 +462,7 @@ Bir döşeme bayrak belirtir. Bu parametre aşağıdaki bayraklar herhangi biri 
 [MFC örnek MDI](../../overview/visual-cpp-samples.md)<br/>
 [MFC örnek MDIDOCVW](../../overview/visual-cpp-samples.md)<br/>
 [MFC örnek SNAPVW](../../overview/visual-cpp-samples.md)<br/>
-[CFrameWnd Sınıfı](../../mfc/reference/cframewnd-class.md)<br/>
+[CFrameWnd sınıfı](../../mfc/reference/cframewnd-class.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
-[CWnd Sınıfı](../../mfc/reference/cwnd-class.md)<br/>
-[CMDIChildWnd Sınıfı](../../mfc/reference/cmdichildwnd-class.md)
+[CWnd sınıfı](../../mfc/reference/cwnd-class.md)<br/>
+[Cmdıchildwnd sınıfı](../../mfc/reference/cmdichildwnd-class.md)

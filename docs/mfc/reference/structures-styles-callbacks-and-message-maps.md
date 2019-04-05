@@ -10,10 +10,10 @@ helpviewer_keywords:
 - structures, MFC
 ms.assetid: 27566602-7d84-4089-880c-8e90fb04fa56
 ms.openlocfilehash: a5f0be66cdcb5c4a37d16b1e83cbc40cf023df32
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/05/2019
 ms.locfileid: "58780203"
 ---
 # <a name="structures-styles-callbacks-and-message-maps"></a>Yapılar, Stiller, Geri Çağrılar ve İleti Eşlemeleri
@@ -31,7 +31,7 @@ MFC nesneleri oluşturulurken kullanılan stilleri bağlantılar sağlar.
 [MFC Tarafından Kullanılan Geri Çağırma İşlevleri](../../mfc/reference/callback-functions-used-by-mfc.md)<br/>
 MFC Kitaplığı'nda görünen geri arama işlevlerine bağlantılar sağlar.
 
-[İleti eşlemeleri](../../mfc/reference/message-maps-mfc.md)<br/>
+[İleti Eşlemeleri](../../mfc/reference/message-maps-mfc.md)<br/>
 İleti eşleme makroları açıklar ve `CWnd` ileti eşlemesi girişleri.
 
 ## <a name="related-sections"></a>İlgili Bölümler

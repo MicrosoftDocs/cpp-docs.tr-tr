@@ -21,10 +21,10 @@ helpviewer_keywords:
 - CDragListBox [MFC], ItemFromPt
 ms.assetid: fee20b42-60ae-4aa9-83f9-5a3d9b96e33b
 ms.openlocfilehash: d8afc5b14f5f52ca7a4d28a3d3c3c5440b7c819f
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/05/2019
 ms.locfileid: "58781594"
 ---
 # <a name="cdraglistbox-class"></a>CDragListBox sınıfı
@@ -219,6 +219,6 @@ Sürükleme liste kutusu öğesinin sıfır tabanlı dizini.
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [MFC örnek TSTCON](../../overview/visual-cpp-samples.md)<br/>
-[CListBox Sınıfı](../../mfc/reference/clistbox-class.md)<br/>
+[CListBox sınıfı](../../mfc/reference/clistbox-class.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
-[CListBox Sınıfı](../../mfc/reference/clistbox-class.md)
+[CListBox sınıfı](../../mfc/reference/clistbox-class.md)

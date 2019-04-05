@@ -7,10 +7,10 @@ helpviewer_keywords:
 - C3460
 ms.assetid: adbf8775-10ca-4654-acdf-58dd765351cd
 ms.openlocfilehash: 9ffbc5102855574aba668a2c501cd08dbaebe5b8
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/05/2019
 ms.locfileid: "58775185"
 ---
 # <a name="compiler-error-c3460"></a>Derleyici Hatası C3460

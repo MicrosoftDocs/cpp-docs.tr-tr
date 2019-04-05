@@ -37,10 +37,10 @@ helpviewer_keywords:
 - CStatusBar [MFC], SetPaneText
 ms.assetid: a3bde3db-e71c-4881-a3ca-1d5481c345ba
 ms.openlocfilehash: d714159aa9fd52df682b1e5f3dbf3957bbef1b91
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/05/2019
 ms.locfileid: "58777343"
 ---
 # <a name="cstatusbar-class"></a>CStatusBar sınıfı
@@ -508,7 +508,7 @@ Başarılı olursa sıfır dışı; Aksi durumda 0.
 
 [MFC örnek CTRLBARS](../../overview/visual-cpp-samples.md)<br/>
 [MFC örnek DLGCBR32](../../overview/visual-cpp-samples.md)<br/>
-[CControlBar Sınıfı](../../mfc/reference/ccontrolbar-class.md)<br/>
+[CControlBar sınıfı](../../mfc/reference/ccontrolbar-class.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
-[CStatusBarCtrl Sınıfı](../../mfc/reference/cstatusbarctrl-class.md)<br/>
-[CControlBar Sınıfı](../../mfc/reference/ccontrolbar-class.md)
+[CStatusBarCtrl sınıfı](../../mfc/reference/cstatusbarctrl-class.md)<br/>
+[CControlBar sınıfı](../../mfc/reference/ccontrolbar-class.md)

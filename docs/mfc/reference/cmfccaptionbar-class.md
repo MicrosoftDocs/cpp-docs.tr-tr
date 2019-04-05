@@ -67,10 +67,10 @@ helpviewer_keywords:
 - CMFCCaptionBar [MFC], m_clrBarText
 ms.assetid: acb54d5f-14ff-4c96-aeb3-7717cf566d9a
 ms.openlocfilehash: c6385cb6bd3eec3ce5fefe0475d771c774777820
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/05/2019
 ms.locfileid: "58781880"
 ---
 # <a name="cmfccaptionbar-class"></a>CMFCCaptionBar sınıfı
@@ -356,7 +356,7 @@ virtual void OnDrawBackground(
 *pDC*<br/>
 [in] Başlık çubuğunun cihaz bağlamı için bir işaretçi.
 
-*Rect*<br/>
+*rect*<br/>
 [in] Doldurmak için sınırlayıcı dikdörtgeni.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -380,7 +380,7 @@ virtual void OnDrawBorder(
 *pDC*<br/>
 [in] Kenarlıklar görüntülemek için kullanılan bir cihaz bağlamı.
 
-*Rect*<br/>
+*rect*<br/>
 [in] Dikdörtgen.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -406,7 +406,7 @@ virtual void OnDrawButton(
 *pDC*<br/>
 [in] Bir düğme görüntülemek için kullanılan bir cihaz bağlamı için bir işaretçi.
 
-*Rect*<br/>
+*rect*<br/>
 [in] Dikdörtgen düğmesi.
 
 *strButton*<br/>
@@ -434,7 +434,7 @@ virtual void OnDrawImage(
 *pDC*<br/>
 [in] Görüntüyü görüntülemek için kullanılan bir cihaz bağlamı için bir işaretçi.
 
-*Rect*<br/>
+*rect*<br/>
 [in] Sınırlayıcı dikdörtgeni görüntünün belirtir.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -457,7 +457,7 @@ virtual void OnDrawText(
 *pDC*<br/>
 [in] Bir düğme görüntülemek için kullanılan bir cihaz bağlamı için bir işaretçi.
 
-*Rect*<br/>
+*rect*<br/>
 [in] Dikdörtgen metin.
 
 *strText*<br/>

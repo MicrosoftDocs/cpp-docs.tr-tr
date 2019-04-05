@@ -41,10 +41,10 @@ helpviewer_keywords:
 - CEditView [MFC], dwStyleDefault
 ms.assetid: bf38255c-fcbe-450c-95b2-3c5e35f86c37
 ms.openlocfilehash: 3ab276e83e8642aa5de2fd96305cb6d7b648fc40
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/05/2019
 ms.locfileid: "58781243"
 ---
 # <a name="ceditview-class"></a>CEditView Class
@@ -493,10 +493,10 @@ void UnlockBuffer() const;
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [MFC örnek SUPERPAD](../../overview/visual-cpp-samples.md)<br/>
-[CCtrlView Sınıfı](../../mfc/reference/cctrlview-class.md)<br/>
+[CCtrlView sınıfı](../../mfc/reference/cctrlview-class.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
-[CEdit Sınıfı](../../mfc/reference/cedit-class.md)<br/>
-[CDocument Sınıfı](../../mfc/reference/cdocument-class.md)<br/>
-[CDocTemplate Sınıfı](../../mfc/reference/cdoctemplate-class.md)<br/>
-[CCtrlView Sınıfı](../../mfc/reference/cctrlview-class.md)<br/>
-[CRichEditView Sınıfı](../../mfc/reference/cricheditview-class.md)
+[CEdit sınıfı](../../mfc/reference/cedit-class.md)<br/>
+[CDocument sınıfı](../../mfc/reference/cdocument-class.md)<br/>
+[CDocTemplate sınıfı](../../mfc/reference/cdoctemplate-class.md)<br/>
+[CCtrlView sınıfı](../../mfc/reference/cctrlview-class.md)<br/>
+[CRichEditView sınıfı](../../mfc/reference/cricheditview-class.md)

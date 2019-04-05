@@ -7,10 +7,10 @@ helpviewer_keywords:
 - C3915
 ms.assetid: 2b0a5e5f-3aec-4a4b-9157-233031817084
 ms.openlocfilehash: 85654e266c3157ab145e7ac7aab454a0d4f6c102
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/05/2019
 ms.locfileid: "58776460"
 ---
 # <a name="compiler-error-c3915"></a>Derleyici Hatası C3915

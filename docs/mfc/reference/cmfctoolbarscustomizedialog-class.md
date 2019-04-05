@@ -25,10 +25,10 @@ helpviewer_keywords:
 - CMFCToolBarsCustomizeDialog [MFC], PostNcDestroy
 ms.assetid: 78e2cddd-4f13-4097-afc3-1ad646a113f1
 ms.openlocfilehash: e1dd6fff9fa4f03dbf93510da26c78c73e86c6ab
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/05/2019
 ms.locfileid: "58780970"
 ---
 # <a name="cmfctoolbarscustomizedialog-class"></a>CMFCToolBarsCustomizeDialog sınıfı
@@ -586,7 +586,7 @@ virtual BOOL OnEditToolbarMenuImage(
 *pWndParent*<br/>
 [in] Üst penceresine bir işaretçi.
 
-*Bit eşlem*<br/>
+*bit eşlem*<br/>
 [in] Düzenlenecek bir bit eşlem nesnesine bir başvuru.
 
 *nBitsPerPixel*<br/>
@@ -754,4 +754,4 @@ Yöntem başarılı olursa TRUE; Aksi durumda FALSE.
 
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
 [Sınıflar](../../mfc/reference/mfc-classes.md)<br/>
-[CPropertySheet Sınıfı](../../mfc/reference/cpropertysheet-class.md)
+[CPropertySheet sınıfı](../../mfc/reference/cpropertysheet-class.md)

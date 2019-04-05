@@ -51,10 +51,10 @@ helpviewer_keywords:
 - CList [MFC], SetAt
 ms.assetid: 6f6273c3-c8f6-47f5-ac2a-0a950379ae5d
 ms.openlocfilehash: 383222e4892bccc653f010ce4939bca23f2adc93
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/05/2019
 ms.locfileid: "58780957"
 ---
 # <a name="clist-class"></a>CList sınıfı
@@ -291,7 +291,7 @@ const TYPE& GetAt(POSITION position) const;
 *TÜRÜ*<br/>
 Listede nesne türünü belirten bir şablon parametre.
 
-*Konumu*<br/>
+*konum*<br/>
 Alınacak öğenin konumunu listesinde.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -515,7 +515,7 @@ POSITION InsertAfter(POSITION position, ARG_TYPE newElement);
 
 ### <a name="parameters"></a>Parametreler
 
-*Konumu*<br/>
+*konum*<br/>
 Bir önceki tarafından döndürülen bir konum değeri `GetNext`, `GetPrev`, veya `Find` üye işlev çağrısı.
 
 *ARG_TYPE*<br/>
@@ -542,7 +542,7 @@ POSITION InsertBefore(POSITION position, ARG_TYPE newElement);
 
 ### <a name="parameters"></a>Parametreler
 
-*Konumu*<br/>
+*konum*<br/>
 Bir önceki tarafından döndürülen bir konum değeri `GetNext`, `GetPrev`, veya `Find` üye işlev çağrısı.
 
 *ARG_TYPE*<br/>
@@ -605,7 +605,7 @@ void RemoveAt(POSITION position);
 
 ### <a name="parameters"></a>Parametreler
 
-*Konumu*<br/>
+*konum*<br/>
 Listeden kaldırılacak öğenin konumu.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -698,7 +698,7 @@ KONUM değeri geçerli bir konum listesinde temsil ettiğini emin olmanız gerek
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [MFC örnek Topla](../../overview/visual-cpp-samples.md)<br/>
-[CObject Sınıfı](../../mfc/reference/cobject-class.md)<br/>
+[CObject sınıfı](../../mfc/reference/cobject-class.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
-[CMap Sınıfı](../../mfc/reference/cmap-class.md)<br/>
-[CArray Sınıfı](../../mfc/reference/carray-class.md)
+[CMap sınıfı](../../mfc/reference/cmap-class.md)<br/>
+[CArray sınıfı](../../mfc/reference/carray-class.md)

@@ -29,10 +29,10 @@ helpviewer_keywords:
 - CScrollView [MFC], SetScrollSizes
 ms.assetid: 4ba16dac-1acb-4be0-bb55-5fb695b6948d
 ms.openlocfilehash: d60082092bd42fbe220eee08953ad5fda0ff0a85
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/05/2019
 ms.locfileid: "58774159"
 ---
 # <a name="cscrollview-class"></a>CScrollView sınıfı
@@ -377,7 +377,7 @@ MM_ISOTROPIC veya MM_ANISOTROPIC dışında Windows eşleme modun herhangi birin
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [MFC örnek DIBLOOK](../../overview/visual-cpp-samples.md)<br/>
-[CView Sınıfı](../../mfc/reference/cview-class.md)<br/>
+[CView sınıfı](../../mfc/reference/cview-class.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
-[CView Sınıfı](../../mfc/reference/cview-class.md)<br/>
-[CSplitterWnd Sınıfı](../../mfc/reference/csplitterwnd-class.md)
+[CView sınıfı](../../mfc/reference/cview-class.md)<br/>
+[CSplitterWnd sınıfı](../../mfc/reference/csplitterwnd-class.md)

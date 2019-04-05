@@ -121,10 +121,10 @@ helpviewer_keywords:
 - CDocument [MFC], m_lfRichPreviewFont
 ms.assetid: e5a2891d-e1e1-4599-8c7e-afa9b4945446
 ms.openlocfilehash: 2d87ff67000fb5b70c0a5c965638875e6f50b22c
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/05/2019
 ms.locfileid: "58774189"
 ---
 # <a name="cdocument-class"></a>CDocument sınıfı
@@ -1070,7 +1070,7 @@ virtual void RemoveChunk(
 
 ### <a name="parameters"></a>Parametreler
 
-*GUID*<br/>
+*Guid*<br/>
 Kaldırılacak bir öbeğin GUID belirtir.
 
 *PID*<br/>
@@ -1257,8 +1257,8 @@ Bu işlev çağrıları [CView::OnUpdate](../../mfc/reference/cview-class.md#onu
 [MFC örnek MDIDOCVW](../../overview/visual-cpp-samples.md)<br/>
 [MFC örnek SNAPVW](../../overview/visual-cpp-samples.md)<br/>
 [MFC örnek NPP](../../overview/visual-cpp-samples.md)<br/>
-[CCmdTarget Sınıfı](../../mfc/reference/ccmdtarget-class.md)<br/>
+[CCmdTarget sınıfı](../../mfc/reference/ccmdtarget-class.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
-[CCmdTarget Sınıfı](../../mfc/reference/ccmdtarget-class.md)<br/>
-[CView Sınıfı](../../mfc/reference/cview-class.md)<br/>
-[CDocTemplate Sınıfı](../../mfc/reference/cdoctemplate-class.md)
+[CCmdTarget sınıfı](../../mfc/reference/ccmdtarget-class.md)<br/>
+[CView sınıfı](../../mfc/reference/cview-class.md)<br/>
+[CDocTemplate sınıfı](../../mfc/reference/cdoctemplate-class.md)

@@ -7,10 +7,10 @@ helpviewer_keywords:
 - C3625
 ms.assetid: fdf49f21-d6b1-42f4-9eec-23b04ae8b4aa
 ms.openlocfilehash: a3c69b05e22c2d267ad07f19a0d0ab60f3eebb94
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/05/2019
 ms.locfileid: "58779020"
 ---
 # <a name="compiler-error-c3625"></a>Derleyici Hatası C3625

@@ -5,10 +5,10 @@ helpviewer_keywords:
 - DateTimePicker control [MFC]
 ms.assetid: f03c3a22-7725-45eb-8f8e-dddb2d15c3ca
 ms.openlocfilehash: 9de28d5407da6e83ed3b7cd77cad3f636538a70f
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/05/2019
 ms.locfileid: "58780749"
 ---
 # <a name="date-and-time-picker-control-examples"></a>Tarih ve Saat Seçici Denetimine Örnekler
