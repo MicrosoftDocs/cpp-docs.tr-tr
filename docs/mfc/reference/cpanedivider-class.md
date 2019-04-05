@@ -85,10 +85,10 @@ helpviewer_keywords:
 - CPaneDivider [MFC], m_pSliderRTC
 ms.assetid: 8e828a5d-232f-4127-b8e3-7fa45a7a476e
 ms.openlocfilehash: 43cba977d50e161c58d3e240e1282049a415c88d
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: b72a10a7b12e722fd91a17406b91b270026f763a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/04/2019
 ms.locfileid: "58773859"
 ---
 # <a name="cpanedivider-class"></a>CPaneDivider sınıfı
@@ -735,7 +735,7 @@ void StoreRecentTabRelatedInfo(
 
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
 [Sınıflar](../../mfc/reference/mfc-classes.md)<br/>
-[CPaneContainerManager Sınıfı](../../mfc/reference/cpanecontainermanager-class.md)<br/>
-[CPaneContainer Sınıfı](../../mfc/reference/cpanecontainer-class.md)<br/>
-[CDockingManager Sınıfı](../../mfc/reference/cdockingmanager-class.md)<br/>
-[CBasePane Sınıfı](../../mfc/reference/cbasepane-class.md)
+[CPaneContainerManager Class](../../mfc/reference/cpanecontainermanager-class.md)<br/>
+[CPaneContainer Class](../../mfc/reference/cpanecontainer-class.md)<br/>
+[CDockingManager Class](../../mfc/reference/cdockingmanager-class.md)<br/>
+[CBasePane sınıfı](../../mfc/reference/cbasepane-class.md)
