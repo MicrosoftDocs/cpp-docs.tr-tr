@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - optional attribute
 ms.assetid: 86656a66-8e11-4589-8e30-9b0f34eeed03
-ms.openlocfilehash: 440e605b1dfd0b24060965c5ea5dd55424701cf7
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: bc6422ff652cfaba5fa71285294b93c1f0e8990e
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50590118"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59032946"
 ---
 # <a name="optional-c"></a>isteğe bağlı (C++)
 
@@ -50,14 +50,14 @@ __interface IFireTabCtrl : IDispatch
 
 |||
 |-|-|
-|**İçin geçerlidir**|Parametre arabirimi|
+|**Uygulandığı öğe:**|Parametre arabirimi|
 |**Tekrarlanabilir**|Hayır|
 |**Gerekli öznitelikleri**|Yok.|
-|**Geçersiz öznitelikler**|Yok.|
+|**Geçersiz öznitelikler**|None|
 
 Öznitelik bağlamları hakkında daha fazla bilgi için bkz: [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[IDL öznitelikleri](idl-attributes.md)<br/>
+[IDL Öznitelikleri](idl-attributes.md)<br/>
 [Parametre Öznitelikleri](parameter-attributes.md)

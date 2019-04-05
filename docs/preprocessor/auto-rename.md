@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - auto_rename attribute
 ms.assetid: 1075f3ab-f6fc-4e04-8e22-ebe02695a567
-ms.openlocfilehash: 20b971e838488d3e974b393a5e280ca765dac893
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ba07b8532ba64c99f835e59d7c71aac8e3f2b03d
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50446585"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59035127"
 ---
 # <a name="autorename"></a>auto_rename
 
@@ -31,7 +31,7 @@ Bu öznitelik, değişken adı olarak bir veya daha fazla C++ ayrılmış sözc�
 
 **END C++ özgü**
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[#import öznitelikleri](../preprocessor/hash-import-attributes-cpp.md)<br/>
-[#import yönergesi](../preprocessor/hash-import-directive-cpp.md)
+[#import Öznitelikleri](../preprocessor/hash-import-attributes-cpp.md)<br/>
+[#import Yönergesi](../preprocessor/hash-import-directive-cpp.md)

@@ -12,12 +12,12 @@ helpviewer_keywords:
 - GetString method
 - SetString method
 ms.assetid: 138dc4de-c7c3-478c-863e-431e48249027
-ms.openlocfilehash: dff36dfb2b898c6a4df65492e2d9386c748f049b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 6ba56143beb3411734899839a46ab42992dfa4d8
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50534621"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59035669"
 ---
 # <a name="cdynamicstringaccessor-class"></a>CDynamicStringAccessor Sınıfı
 
@@ -110,7 +110,7 @@ HRESULT SetString(const WCHAR* pColumnName,
 *pColumnName*<br/>
 [in] Sütun adı içeren bir karakter dizesine bir işaretçi.
 
-*Veri*<br/>
+*veri*<br/>
 [in] Belirtilen sütuna yazılacak dize verileri için bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -123,7 +123,7 @@ Belirtilen sütun kümesi dize değeri için bir işaretçi. Değer türünde `B
 
 Sıfır olmayan bir değer olmasını _SECURE_ATL tanımlanırsa, bir çalışma zamanı onaylama işlemi hatası oluşturulur giriş *veri* dizedir başvurulan veri sütununun maksimum izin verilen uzunluktan daha uzun. Aksi takdirde, giriş dizesi, izin verilen uzunluk üst sınırından daha uzun olması durumunda kesilecek.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [OLE DB Tüketici Şablonları](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
 [OLE DB Tüketici Şablonları Başvurusu](../../data/oledb/ole-db-consumer-templates-reference.md)<br/>

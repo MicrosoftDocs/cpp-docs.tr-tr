@@ -6,12 +6,12 @@ helpviewer_keywords:
 - pointers, interior
 - arrays [C++], managed
 ms.assetid: e61a2c09-a7d0-4867-91ea-6b8788a01079
-ms.openlocfilehash: 61c6f9c2cd8a483711509a060b320b11ec273148
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.openlocfilehash: 0f7ec6551b09b2125fdb21736a851dae0dadbd4a
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58787867"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59035873"
 ---
 # <a name="how-to-declare-and-use-interior-pointers-and-managed-arrays-ccli"></a>Nasıl yapılır: İç işaretçiler ve yönetilen diziler bildirme ve kullanma (C + +/ CLI)
 
@@ -54,6 +54,6 @@ ipi points to memory address whose value is: 1
 after incrementing ipi, it points to memory address whose value is: 2
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [interior_ptr (C++/CLI)](interior-ptr-cpp-cli.md)

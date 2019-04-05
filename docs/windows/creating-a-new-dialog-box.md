@@ -14,12 +14,12 @@ helpviewer_keywords:
 - dialog boxes [C++], size
 - dialog boxes [C++], positioning
 ms.assetid: 303de801-c4f8-42e1-b622-353f6423f688
-ms.openlocfilehash: 7e7cfcc206ce58ab401bcdb9c9ac6103c50e997f
-ms.sourcegitcommit: c1f646c8b72f330fa8cf5ddb0f8f261ba10d16f0
+ms.openlocfilehash: c5f026683881ba8e608bd00089879e0e2a7b4af2
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58328642"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59036334"
 ---
 # <a name="how-to-create-a-dialog-box-c"></a>Nasıl yapılır: Oluştur iletişim kutusu (C++)
 
@@ -102,7 +102,7 @@ Bir iletişim kutusunu test ettiğinizde, genellikle ana program penceresiyle il
 
 Win32
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [İletişim Kutusu Düzenleyicisi](../windows/dialog-editor.md)<br/>
 [Nasıl yapılır: İletişim kutusu denetimleri yönetme](../windows/controls-in-dialog-boxes.md)<br/>

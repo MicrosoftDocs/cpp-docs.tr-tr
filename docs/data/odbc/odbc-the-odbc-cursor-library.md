@@ -1,5 +1,5 @@
 ---
-title: 'ODBC: ODBC İmleç Kitaplığı'
+title: 'ODBC: ODBC imleç kitaplığı'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - cursor library [ODBC]
@@ -16,14 +16,14 @@ helpviewer_keywords:
 - ODBC, timestamp
 - positioning cursors
 ms.assetid: 6608db92-82b1-4164-bb08-78153c227be3
-ms.openlocfilehash: e175a9b27cb19b0c2a67a08751b7a7717226ac55
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 862303a0dc66fbd49bfcba83336ab29dfc7145c0
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50435145"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59032238"
 ---
-# <a name="odbc-the-odbc-cursor-library"></a>ODBC: ODBC İmleç Kitaplığı
+# <a name="odbc-the-odbc-cursor-library"></a>ODBC: ODBC imleç kitaplığı
 
 Bu konuda ODBC imleç kitaplığını ve nasıl kullanılacağını açıklar. Daha fazla bilgi için bkz.:
 
@@ -65,6 +65,6 @@ Bazı durumlarda, bir kayıt kümesi değişmeyen bu alanlardan biri olarak bir 
 
 Bir veri kaynağına bağlandığınızda — çağırarak [CDatabase::OpenEx](../../mfc/reference/cdatabase-class.md#openex) veya [CDatabase::Open](../../mfc/reference/cdatabase-class.md#open) — veri kaynağı için imleç kitaplığı kullanıp kullanmayacağınızı belirtin. Bu veri kaynağında anlık görüntüleri oluşturacaksanız belirtin `CDatabase::useCursorLib` seçeneğini `dwOptions` parametresi `OpenEx` veya belirtmek için TRUE *bUseCursorLib* parametresi `Open` (varsayılan değer: DOĞRU). ODBC sürücünüz dynaset'ler destekliyorsa ve dinamik kümeler veri kaynağında açmak istediğiniz, imleç kitaplığı (dynasets için gereken bazı sürücü işlevleri maskeleri) kullanmayın. Bu durumda, belirtmeyin `CDatabase::useCursorLib` içinde `OpenEx` veya için FALSE belirtin *bUseCursorLib* parametresinde `Open`.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [ODBC Temelleri](../../data/odbc/odbc-basics.md)

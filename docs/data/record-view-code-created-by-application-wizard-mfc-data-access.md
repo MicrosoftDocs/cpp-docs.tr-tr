@@ -6,12 +6,12 @@ helpviewer_keywords:
 - record views, refreshing controls
 - record views, application wizard code
 ms.assetid: 18fd4703-5939-491d-b759-985f767b951f
-ms.openlocfilehash: 5340926789925d8243ecd20c27537c9690582a41
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e25ca9cad1390dd11ab7328ffefed31badf6fc0b
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50427982"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59036081"
 ---
 # <a name="record-view-code-created-by-application-wizard--mfc-data-access"></a>Uygulama Sihirbazı (MFC veri erişimi)'ın oluşturduğu kayıt görünümü kodu
 
@@ -30,6 +30,6 @@ Kayıt kümesi açıldığında kayıt seçer. [CRecordset::Open](../mfc/referen
 > [!NOTE]
 >  Son kullanıcılarınızı kayıt kümesindeki kayıt görüntüleme denetimlerini Yenile olanağı vermesi gerekir. Bir kullanıcı için geçersiz bir değer, bir denetimin değeri değişirse bu yetenek olmadan kullanıcı kalıcı olarak geçerli kayıt için takılabilir. Denetimleri yenilemek için çağrı `CWnd` üye işlevi [UpdateData](../mfc/reference/cwnd-class.md#updatedata) parametresi yanlış.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[Kayıt görünümünü kullanma](../data/using-a-record-view-mfc-data-access.md)
+[Kayıt Görünümünü Kullanma](../data/using-a-record-view-mfc-data-access.md)

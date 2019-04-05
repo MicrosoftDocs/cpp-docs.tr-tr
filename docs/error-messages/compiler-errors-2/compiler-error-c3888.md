@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3888
 ms.assetid: 40820812-79c5-4dcd-a19d-b4164d25fc8a
-ms.openlocfilehash: 20251292ec4635ea855a56890878bc55f567ab62
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.openlocfilehash: e4d52946126e7be6c6f2aef34b5eb5a93a0babad
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58777473"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59033647"
 ---
 # <a name="compiler-error-c3888"></a>Derleyici Hatası C3888
 
@@ -23,6 +23,6 @@ ms.locfileid: "58777473"
 
 1. Desteklenen bir türde bildirilen sabit değerli veri üyesi olduğundan emin olun.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [değişmez değer](../../extensions/literal-cpp-component-extensions.md)

@@ -10,16 +10,16 @@ helpviewer_keywords:
 - __emul intrinsic
 - __emulu intrinsic
 ms.assetid: 79545236-cca2-40b8-a4e1-8abce9b26311
-ms.openlocfilehash: 9144ce4f25d2e8e5554602533c13d5619e15360a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 8657c0fb034ac6bbcfbebb946e059ad08d9e7046
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50542461"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59030056"
 ---
 # <a name="emul-emulu"></a>__emul, __emulu
 
-**Microsoft'a özgü**
+**Microsoft'a Özgü**
 
 Bir 32 bit tamsayı basılı tutabilirsiniz overflow multiplications gerçekleştirir.
 
@@ -102,8 +102,8 @@ int main()
 4294967295 * 251658240 = 1080863910317260800
 ```
 
-**END Microsoft özgü**
+**END Microsoft'a Özgü**
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)

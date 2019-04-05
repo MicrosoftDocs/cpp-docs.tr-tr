@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - last_is attribute
 ms.assetid: 9e045ac0-fa38-4249-af55-67bde5d0a58c
-ms.openlocfilehash: ce19d8d727a359054289200b2cdcb6a6427dc706
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 39b35b218f3402839d956c4da0a00f290fe5d595
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50545723"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59033293"
 ---
 # <a name="lastis"></a>last_is
 
@@ -25,7 +25,7 @@ Aktarılacak olan son dizi öğenin dizinini belirtir.
 
 ### <a name="parameters"></a>Parametreler
 
-*İfade*<br/>
+*ifade*<br/>
 Bir veya daha fazla C dili ifadeleri. Boş bağımsız değişken yuvaları izin verilir.
 
 ## <a name="remarks"></a>Açıklamalar
@@ -42,16 +42,16 @@ Bkz: [first_is](first-is.md) örneği nasıl bir dizinin bir bölümünü belirt
 
 |||
 |-|-|
-|**İçin geçerlidir**|İçinde alan **yapı** veya **birleşim**, parametre arabirim, arabirim yöntemi|
+|**Uygulandığı öğe:**|İçinde alan **yapı** veya **birleşim**, parametre arabirim, arabirim yöntemi|
 |**Tekrarlanabilir**|Hayır|
 |**Gerekli öznitelikleri**|Yok.|
 |**Geçersiz öznitelikler**|Yok.|
 
 Daha fazla bilgi için [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[IDL öznitelikleri](idl-attributes.md)<br/>
+[IDL Öznitelikleri](idl-attributes.md)<br/>
 [Typedef, Enum, Union ve Struct Öznitelikleri](typedef-enum-union-and-struct-attributes.md)<br/>
 [Parametre Öznitelikleri](parameter-attributes.md)<br/>
 [first_is](first-is.md)<br/>

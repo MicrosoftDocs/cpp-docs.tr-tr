@@ -8,12 +8,12 @@ helpviewer_keywords:
 - partial
 - C++/CX, partial
 ms.assetid: 43adf1f5-10c5-44aa-a66f-7507e2bdabf8
-ms.openlocfilehash: f1837eb785f53e53a4b5ff621a898b0375cfc0fa
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.openlocfilehash: eb9b3907008147cb21f04aec5f42e4896fa35b3c
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58787838"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59029952"
 ---
 # <a name="partial--ccli-and-ccx"></a>Kısmi (C + +/ CLI ve C + +/ CX)
 
@@ -77,6 +77,6 @@ Derleyici seçeneği: `/ZW`
 
 (Bu dil özelliği ortak dil çalışma zamanı için geçerli değildir.)
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Kısmi sınıflar (C + +/ CX)](http://go.microsoft.com/fwlink/p/?LinkId=249023)

@@ -1,5 +1,5 @@
 ---
-title: 'Kayıt Kümesi: Kayıt Kümelerinin Kayıtları Güncelleştirmesi (ODBC)'
+title: 'Kayıt kümesi: Kümelerinin kayıtları Güncelleştirmesi (ODBC) kayıtları'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - records, updating
@@ -8,14 +8,14 @@ helpviewer_keywords:
 - updating recordsets
 - recordsets, updating
 ms.assetid: 5ceecc06-7a86-43b1-93db-a54fb1e717c7
-ms.openlocfilehash: 3b9bea1cc8fc0a11773d2392f88fff333eb7084f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: bf71f562714e2dacfe75540e1e532219b3eb307f
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50510012"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59034488"
 ---
-# <a name="recordset-how-recordsets-update-records-odbc"></a>Kayıt Kümesi: Kayıt Kümelerinin Kayıtları Güncelleştirmesi (ODBC)
+# <a name="recordset-how-recordsets-update-records-odbc"></a>Kayıt kümesi: Kümelerinin kayıtları Güncelleştirmesi (ODBC) kayıtları
 
 Bu konu MFC ODBC sınıflarına uygulanır.
 
@@ -25,7 +25,7 @@ Bir veri kaynağındaki kayıtları seçmek için kendi yeteneği yanı sıra ka
 >  SQL, `CRecordset` nesnesi kümenizin güncellenebilirliğini etkileyebilir. Örneğin, SQL birleştirme içeriyorsa veya **GROUP BY** yan tümcesi, MFC ayarlar güncellenebilirliğini FALSE.
 
 > [!NOTE]
->  Bu konu, türetilmiş nesneler için geçerlidir. `CRecordset` toplu satır getirme uygulanmadı. Toplu satır getirme kullanıyorsanız bkz [kayıt kümesi: Kayıtları toplu (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md).
+>  Bu konu, türetilmiş nesneler için geçerlidir. `CRecordset` toplu satır getirme uygulanmadı. Toplu satır getirme kullanıyorsanız bkz [kayıt kümesi: Kayıtları toplu yakalama (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md).
 
 Bu konu şunları açıklar:
 
@@ -35,7 +35,7 @@ Bu konu şunları açıklar:
 
 [Kayıt kümesi: Nasıl AddNew, düzenleme ve silme çalışma (ODBC)](../../data/odbc/recordset-how-addnew-edit-and-delete-work-odbc.md) açısından kayıt kümesinin bu işlevlerin eylemleri açıklar.
 
-[Kayıt kümesi: Daha fazla ilgili güncelleştirmeleri (ODBC)](../../data/odbc/recordset-more-about-updates-odbc.md) kayıt güncelleştirme hikayesi yaptığınız güncelleştirmeler diğer güncelleştirmeleri ile nasıl etkileşime işlemlerin güncelleştirmeleri etkilemesi ve güncelleştirme işlemleri sürüyor kayıt kapatma veya kaydırma nasıl etkilediğini açıklayarak tamamlar. Kullanıcılar.
+[Kayıt kümesi: Daha fazla ilgili güncelleştirmeleri (ODBC)](../../data/odbc/recordset-more-about-updates-odbc.md) güncelleştirmelerinizi diğer kullanıcıların güncelleştirmeleri ile nasıl etkileşime işlemlerin güncelleştirmeleri etkilemesi ve güncelleştirme işlemleri sürüyor kayıt kapatma veya kaydırma nasıl etkilediğini açıklayarak kayıt güncelleştirme hikayesi tamamlar.
 
 ##  <a name="_core_your_role_in_recordset_updating"></a> Kayıt kümesi güncelleştiriliyor sizin rolünüz
 
@@ -70,7 +70,7 @@ Topluca alındığında, bir kayıt kümesi alan veri üyeleri bir kayıt içere
 
 [Dynaset'ler](../../data/odbc/dynaset.md) kayda gezinirken bir kaydın içeriğini yenileyin. [Anlık görüntüleri](../../data/odbc/snapshot.md) kayıtları statik temsillerini olduğundan, çağırmadığınız sürece bir kaydın içeriğini yenilenmedi [Requery](../../mfc/reference/crecordset-class.md#requery). Dynaset'ler tüm işlevlerini kullanmak için doğru düzeyini ODBC API desteği için uygun bir ODBC sürücüsü ile çalışmalısınız. Daha fazla bilgi için [ODBC](../../data/odbc/odbc-basics.md) ve [Dynaset](../../data/odbc/dynaset.md).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Kayıt Kümesi (ODBC)](../../data/odbc/recordset-odbc.md)<br/>
-[Kayıt Kümesi: AddNew, Düzenleme ve Silmenin Çalışması (ODBC)](../../data/odbc/recordset-how-addnew-edit-and-delete-work-odbc.md)
+[Kayıt kümesi: Nasıl AddNew, düzenleme ve silme çalışma (ODBC)](../../data/odbc/recordset-how-addnew-edit-and-delete-work-odbc.md)

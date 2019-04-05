@@ -6,12 +6,12 @@ helpviewer_keywords:
 - preprocessor, macros
 - Visual C++, preprocessor macros
 ms.assetid: a7bfc5d4-2537-4fe0-bef0-70cec0b43388
-ms.openlocfilehash: eb576fae7a2a895b88aa958c61b3170e58fbb070
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 281aaf686c07894b5cb1fab187ba903179c51de8
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50656306"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59032186"
 ---
 # <a name="macros-cc"></a>Makrolar (C/C++)
 Ön işleme, önişlemci yönergeleri olmayan tüm satırları makrolarındaki genişletir (sahip olmayan satırlar bir **#** ilk boşluk olmayan karakter olarak) ve bir parçası olarak atlandı değildir yönergelerden bazıları bölümlerini bir Koşullu derleme. Hangi metin blokları belirlemek için tanımlayıcı geçirilir derleyicisi ve hangi metin blokları sırasında kaynak dosyasından kaldırılır ya da sabit bir ifade test ederek bir kaynak dosyasının bölümlerini derleme gizlemek "Koşullu derleme" yönergeleri sağlar ön işleme.
@@ -32,8 +32,8 @@ Daha fazla bilgi için bkz:
 
 - [Variadic Makrolar](../preprocessor/variadic-macros.md)
 
-- [Önceden Tanımlanmış Makrolar](../preprocessor/predefined-macros.md)
+- [Önceden Tanımlı Makrolar](../preprocessor/predefined-macros.md)
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[C/C++ Ön İşlemci Başvurusu](../preprocessor/c-cpp-preprocessor-reference.md)
+[C/C++ Ön işlemci Başvurusu](../preprocessor/c-cpp-preprocessor-reference.md)

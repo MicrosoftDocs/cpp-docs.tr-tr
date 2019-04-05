@@ -8,12 +8,12 @@ helpviewer_keywords:
 - pragmas, optimize
 - optimize pragma
 ms.assetid: cb13c1cc-186a-45bc-bee7-95a8de7381cc
-ms.openlocfilehash: 65948f2b466bdd40bd753dbba99e2e235c57b0f6
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 9f5240fc59f59a71ddb3d18b67fadf3463a0d1ea
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50615871"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59035406"
 ---
 # <a name="optimize"></a>optimize
 
@@ -35,9 +35,9 @@ ms.locfileid: "50615871"
 
 |Parametre|İyileştirme türü|
 |--------------------|--------------------------|
-|*g*|Genel iyileştirmeler sağlar.|
+|*G*|Genel iyileştirmeler sağlar.|
 |*s* veya *t*|Makine kodu kısa veya hızlı dizisi belirtin.|
-|*Y*|Programın yığınında çerçeve işaretçileri oluşturur.|
+|*y*|Programın yığınında çerçeve işaretçileri oluşturur.|
 
 İle kullanılan aynı harflerini bunlar [/O](../build/reference/o-options-optimize-code.md) derleyici seçenekleri. Örneğin, aşağıdaki pragma değerine eşdeğer olan `/Os` derleyici seçeneği:
 
@@ -59,6 +59,6 @@ Kullanırken *üzerinde* parametresi ile belirtilen bu iyileştirmeler sıfırla
 #pragma optimize( "", on )
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Pragma Yönergeleri ve __Pragma Anahtar Sözcüğü](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

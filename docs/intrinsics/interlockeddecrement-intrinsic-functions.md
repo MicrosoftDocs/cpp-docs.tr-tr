@@ -44,16 +44,16 @@ helpviewer_keywords:
 - _InterlockedDecrement64_nf intrinsic
 - InterlockedDecrement_rel intrinsic
 ms.assetid: 5268fce3-86b5-4b2b-b96c-2e531a3fb9b5
-ms.openlocfilehash: e2816d99991fcd051c5bbfbe6f4be6a43db2ef2e
-ms.sourcegitcommit: c1f646c8b72f330fa8cf5ddb0f8f261ba10d16f0
+ms.openlocfilehash: 525c40f4260d59f370f0580d2cb7d9e8f184ee4c
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58328564"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59035098"
 ---
 # <a name="interlockeddecrement-intrinsic-functions"></a>_Interlockeddecrement iç işlevleri
 
-**Microsoft'a özgü**
+**Microsoft'a Özgü**
 
 Win32 Windows SDK'sı için derleyici iç desteği sağlayan [InterlockedDecrement](/windows/desktop/api/winnt/nf-winnt-interlockeddecrement) işlevi.
 
@@ -196,8 +196,8 @@ void __cdecl SimpleThread(void* pParam) {
 }
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)<br/>
-[Anahtar Sözcükler](../cpp/keywords-cpp.md)<br/>
+[anahtar sözcükler](../cpp/keywords-cpp.md)<br/>
 [x86 Derleyicisi ile Çakışma](../build/x64-software-conventions.md#conflicts-with-the-x86-compiler)

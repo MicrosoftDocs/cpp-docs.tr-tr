@@ -35,12 +35,12 @@ helpviewer_keywords:
 - calculated symbols
 - shared symbols
 ms.assetid: 26541832-8dba-4177-b642-e08f94502ea7
-ms.openlocfilehash: f2edafb0b60cfafcf7ad53b8402ffc39a6fc2f7c
-ms.sourcegitcommit: c1f646c8b72f330fa8cf5ddb0f8f261ba10d16f0
+ms.openlocfilehash: ebf10ade734d321c5a83644110d3511e4b6c827a
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58328850"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59034001"
 ---
 # <a name="how-to-manage-symbols"></a>Nasıl yapılır: Semboller yönetme
 
@@ -212,8 +212,8 @@ Ortamı doğru olduğu sürece bu hesaplanan semboller yorumlar:
 
 Win32
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[Kaynak Tanımlayıcıları (Semboller)](../windows/symbols-resource-identifiers.md)<br/>
-[Nasıl yapılır: Sembol Oluşturma](../windows/creating-new-symbols.md)<br/>
+[Kaynak Tanımlayıcıları (simge)](../windows/symbols-resource-identifiers.md)<br/>
+[Nasıl yapılır: Semboller oluşturma](../windows/creating-new-symbols.md)<br/>
 [Önceden Tanımlanmış Sembol Kimlikleri](../windows/predefined-symbol-ids.md)<br/>

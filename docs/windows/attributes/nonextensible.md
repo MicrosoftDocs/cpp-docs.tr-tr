@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - nonextensible attribute
 ms.assetid: c7ef1554-809f-4ea0-a7cd-dc7786d40c3e
-ms.openlocfilehash: 332f61148ccf8cb5816e8bd347181ac9d130a730
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ed396b3d55e16cf195949c713ab574812b796a1a
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50512456"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59032082"
 ---
 # <a name="nonextensible"></a>nonextensible
 
@@ -54,14 +54,14 @@ __interface IFireTabCtrl
 
 |||
 |-|-|
-|**İçin geçerlidir**|**interface**|
+|**Uygulandığı öğe:**|**arabirim**|
 |**Tekrarlanabilir**|Hayır|
 |**Gerekli öznitelikleri**|`dual` ve `oleautomation`, veya `dispinterface`|
 |**Geçersiz öznitelikler**|Yok.|
 
 Öznitelik bağlamları hakkında daha fazla bilgi için bkz: [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[IDL öznitelikleri](idl-attributes.md)<br/>
+[IDL Öznitelikleri](idl-attributes.md)<br/>
 [Arabirim Öznitelikleri](interface-attributes.md)

@@ -9,12 +9,12 @@ helpviewer_keywords:
 - file translation [C++], compiler process
 - files [C++], translation
 ms.assetid: a7f7a8c9-e8ba-4321-9e50-ebfbbdcce9db
-ms.openlocfilehash: 75fc7f7c768094d90d41840fc47effa8179556fb
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 11e36e06adc4fa95cb9aa607704e72f64c812429
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50513005"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59036159"
 ---
 # <a name="phases-of-translation"></a>Çeviri Aşamaları
 
@@ -64,6 +64,6 @@ Derleyici, sözdizimi hataları bulduğu çeviri aşamaları sırasında bir uya
 
 Bağlayıcının dış başvuruları çözümleniyor ve bir araya getirerek bir yürütülebilir programı veya DLL oluşturur veya daha fazla standart kitaplıkları birlikte çeviri birimleri ayrı olarak işlenir.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[Ön İşlemci](../preprocessor/preprocessor.md)
+[Ön işlemci](../preprocessor/preprocessor.md)

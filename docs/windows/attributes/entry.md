@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - entry attribute
 ms.assetid: ba4843e3-d7ad-4b86-9a15-0b4192f0f698
-ms.openlocfilehash: b6c34a603f3ba8abaf070759a22ddf2b8e9c2106
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 703a55ee7c56b64a5b168016770508508bab09e0
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50663261"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59036308"
 ---
 # <a name="entry"></a>giriş
 
@@ -25,7 +25,7 @@ Dışarı aktarılan işlevin ya da sabit bir modülün dll giriş noktası beli
 
 ### <a name="parameters"></a>Parametreler
 
-*id*<br/>
+*kimlik*<br/>
 Giriş noktası kimliği.
 
 ## <a name="remarks"></a>Açıklamalar
@@ -42,13 +42,13 @@ Giriş noktası kimliği.
 
 |||
 |-|-|
-|**İçin geçerlidir**|`idl_module` Özniteliği|
+|**Uygulandığı öğe:**|`idl_module` özniteliği|
 |**Tekrarlanabilir**|Hayır|
-|**Gerekli öznitelikleri**|Yok.|
+|**Gerekli öznitelikleri**|None|
 |**Geçersiz öznitelikler**|Yok.|
 
 Daha fazla bilgi için [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[IDL öznitelikleri](idl-attributes.md)
+[IDL Öznitelikleri](idl-attributes.md)

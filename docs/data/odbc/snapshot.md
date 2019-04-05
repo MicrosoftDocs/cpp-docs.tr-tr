@@ -11,12 +11,12 @@ helpviewer_keywords:
 - cursor library [ODBC], snapshots
 - snapshots
 ms.assetid: b5293a52-0657-43e9-bd71-fe3785b21c7e
-ms.openlocfilehash: 99e1d76f8d65def326b0514f3219cef43f695220
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 5999f89156d895ff0c87c892be892c6a614a0132
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50512698"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59037652"
 ---
 # <a name="snapshot"></a>Anlık Görüntü
 
@@ -44,6 +44,6 @@ Anlık görüntüler yalnızca ODBC imleç kitaplığı yüklenmişse kullanıla
 
 Tüm kayıt kümelerini ile özellikleri anlık görüntüleri paylaşımı hakkında daha fazla bilgi için bkz. [kayıt kümesi (ODBC)](../../data/odbc/recordset-odbc.md). ODBC ve ODBC imleç kitaplığı dahil olmak üzere anlık görüntüler hakkında daha fazla bilgi için bkz. [ODBC](../../data/odbc/odbc-basics.md).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Açık Veritabanı Bağlantısı (ODBC)](../../data/odbc/open-database-connectivity-odbc.md)
