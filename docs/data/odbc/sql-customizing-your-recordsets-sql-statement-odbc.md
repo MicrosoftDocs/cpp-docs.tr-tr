@@ -1,5 +1,5 @@
 ---
-title: 'SQL: Kayıt Kümenizin SQL Deyimini Özelleştirme (ODBC)'
+title: 'SQL: Kayıt Kümenizin SQL deyimini özelleştirme (ODBC)'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - recordsets, SQL statements
@@ -10,14 +10,14 @@ helpviewer_keywords:
 - overriding, SQL statements
 - SQL, opening recordsets
 ms.assetid: 72293a08-cef2-4be2-aa1c-30565fcfbaf9
-ms.openlocfilehash: 84ce18ccbf3cc59dd9c94826366595d2f128784f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: eabaab019ee94b0c5617573c534d920ec710e9b2
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50459937"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59036201"
 ---
-# <a name="sql-customizing-your-recordsets-sql-statement-odbc"></a>SQL: Kayıt Kümenizin SQL Deyimini Özelleştirme (ODBC)
+# <a name="sql-customizing-your-recordsets-sql-statement-odbc"></a>SQL: Kayıt Kümenizin SQL deyimini özelleştirme (ODBC)
 
 Bu konu şunları açıklar:
 
@@ -56,7 +56,7 @@ Varsayılan geçersiz kılmak için **seçin** deyimi, bir dizeyi içeren eksiks
 > [!NOTE]
 >  Değişmez değer dizeleri filtrelerinizi (veya diğer bölümlerini SQL deyimi) kullanırsanız, "Teklif" gerekebilir (içinde belirtilen sınırlayıcılardan alın) gibi dizeleri DBMS özgü sabit değerli önek ve değişmez değerli karakter (veya karakterler) soneki.
 
-Bu gibi durumlarda, dış birleştirme gibi işlemler için özel sözdizimsel gereksinimler de bağlı olarak, DBMS karşılaşabilirsiniz. ODBC işlevleri için DBMS sürücünüzden bu bilgileri almak için kullanın. Örneğin, çağrı `::SQLGetTypeInfo` , belirli veri türü için gibi `SQL_VARCHAR`LITERAL_PREFIX ve LITERAL_SUFFIX karakterleri istemek için. Veritabanı-bağımsız kod yazıyorsanız, bkz. [ek C: SQL dil bilgisi](/sql/odbc/reference/appendixes/appendix-c-sql-grammar) içinde [ODBC Programcının Başvurusu](/sql/odbc/reference/odbc-programmer-s-reference) ayrıntılı söz dizimi bilgi.
+Bu gibi durumlarda, dış birleştirme gibi işlemler için özel sözdizimsel gereksinimler de bağlı olarak, DBMS karşılaşabilirsiniz. ODBC işlevleri için DBMS sürücünüzden bu bilgileri almak için kullanın. Örneğin, çağrı `::SQLGetTypeInfo` , belirli veri türü için gibi `SQL_VARCHAR`LITERAL_PREFIX ve LITERAL_SUFFIX karakterleri istemek için. Veritabanı-bağımsız kod yazıyorsanız bkz [ek C: SQL dil bilgisi](/sql/odbc/reference/appendixes/appendix-c-sql-grammar) içinde [ODBC Programcının Başvurusu](/sql/odbc/reference/odbc-programmer-s-reference) ayrıntılı söz dizimi bilgi.
 
 Özel bir SQL deyimi geçirmezseniz kayıtları seçmek için kullandığı SQL deyimi bir kayıt kümesi nesnesi oluşturur. Nasıl yapıldığını çoğunlukla geçirdiğiniz değere bağlıdır. *lpszSQL* parametresinin `Open` üye işlevi.
 
@@ -144,11 +144,11 @@ Sütun listesi el ile otomatik olarak oluşturmak için RFX'in güvenmek yerine 
 
    Örneğin, uygulama dağıtıldıktan sonra uygulamanızın bir müşteri veritabanı tablolarına eklenen yeni sütunlar barındırmak isteyebilirsiniz. Sınıf Sihirbazı ile bildirilen zaman bilinmeyen bu ek alan veri üyeleri eklemeniz gerekir.
 
-   Bağlantısında listelendiği gibi sütun listesi sütun adlarını ve türlerini aynı sırayla eşleşmelidir `DoFieldExchange`çizgidir el ile ilişkili sütunların adları. Daha fazla bilgi için [kayıt kümesi: dinamik olarak bağlama veri sütunları (ODBC)](../../data/odbc/recordset-dynamically-binding-data-columns-odbc.md).
+   Bağlantısında listelendiği gibi sütun listesi sütun adlarını ve türlerini aynı sırayla eşleşmelidir `DoFieldExchange`çizgidir el ile ilişkili sütunların adları. Daha fazla bilgi için [kayıt kümesi: (ODBC) veri sütunlarını dinamik olarak bağlama](../../data/odbc/recordset-dynamically-binding-data-columns-odbc.md).
 
 - Birden çok tablodan belirterek tabloları birleştirme istediğiniz **FROM** yan tümcesi.
 
-   Bilgi ve örnek için bkz. [kayıt kümesi: bir birleştirme (ODBC) gerçekleştirme](../../data/odbc/recordset-performing-a-join-odbc.md).
+   Bilgi ve örnek için bkz. [kayıt kümesi: Birleşim gerçekleştirme (ODBC)](../../data/odbc/recordset-performing-a-join-odbc.md).
 
 ### <a name="case-4---lpszsql--selectfrom-plus-where-andor-order-by"></a>Durum 4 lpszSQL SELECT = / FROM + WHERE ve/veya ORDER BY
 
@@ -158,9 +158,9 @@ Her şeyi belirtin: sütun listesi (RFX çağrılarında göre `DoFieldExchange`
 
 Önceden tanımlanmış sorgu (örneğin, bir Microsoft SQL Server veritabanında bir saklı yordam) çağırmak gerekiyorsa, yazmanız gereken bir **çağrı** geçirmek için dize deyiminde *lpszSQL*. Sihirbazlar, önceden tanımlanmış sorgu çağırmak için bir kayıt kümesi sınıf bildirme desteklemez. Tüm önceden tanımlanmış sorguları, kayıtları döndürür.
 
-Önceden tanımlanmış sorgu kayıtları döndürmezse kullanabileceğiniz `CDatabase` üye işlevi `ExecuteSQL` doğrudan. Kayıt döndüren bir önceden tanımlanmış sorgu için el ile de RFX çağrıları yazmanız gereken `DoFieldExchange` yordamı için tüm sütunları döndürür. RFX çağrılarının aynı sırayla ve aynı türlerini, önceden tanımlanmış sorgu dönüş gerekir. Daha fazla bilgi için [kayıt kümesi: bir önceden tanımlanmış sorgu (ODBC için) bir sınıf bildirme](../../data/odbc/recordset-declaring-a-class-for-a-predefined-query-odbc.md).
+Önceden tanımlanmış sorgu kayıtları döndürmezse kullanabileceğiniz `CDatabase` üye işlevi `ExecuteSQL` doğrudan. Kayıt döndüren bir önceden tanımlanmış sorgu için el ile de RFX çağrıları yazmanız gereken `DoFieldExchange` yordamı için tüm sütunları döndürür. RFX çağrılarının aynı sırayla ve aynı türlerini, önceden tanımlanmış sorgu dönüş gerekir. Daha fazla bilgi için [kayıt kümesi: Bir sınıf bildirme (ODBC) önceden tanımlanmış sorgu için](../../data/odbc/recordset-declaring-a-class-for-a-predefined-query-odbc.md).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[SQL: SQL ve C++ Veri Türleri (ODBC)](../../data/odbc/sql-sql-and-cpp-data-types-odbc.md)<br/>
-[SQL: Doğrudan SQL Çağrıları Yapma (ODBC)](../../data/odbc/sql-making-direct-sql-calls-odbc.md)
+[SQL: SQL ve C++ veri türleri (ODBC)](../../data/odbc/sql-sql-and-cpp-data-types-odbc.md)<br/>
+[SQL: Doğrudan SQL çağrıları yapma (ODBC)](../../data/odbc/sql-making-direct-sql-calls-odbc.md)

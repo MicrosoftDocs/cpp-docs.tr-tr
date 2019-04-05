@@ -1,5 +1,5 @@
 ---
-title: 'Kayıt Alanı Değişimi: RFX İşlevlerini Kullanma'
+title: 'Kayıt Alanı Değişimi: RFX işlevlerini kullanma'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - ODBC [C++], data types
@@ -10,19 +10,19 @@ helpviewer_keywords:
 - RFX (ODBC) [C++], data types
 - function calls, RFX functions
 ms.assetid: c594300b-5a29-4119-a68b-e7ca32def696
-ms.openlocfilehash: 00b995890cf0cced5d06c52c4d702c1c89111dc3
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: dc717336a5279e7eda1b7c39b19a7c76f9055cd3
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50489966"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59035990"
 ---
-# <a name="record-field-exchange-using-the-rfx-functions"></a>Kayıt Alanı Değişimi: RFX İşlevlerini Kullanma
+# <a name="record-field-exchange-using-the-rfx-functions"></a>Kayıt Alanı Değişimi: RFX işlevlerini kullanma
 
 Bu konuda, gövdesini oluşturan RFX işlev çağrıları kullanmayı açıklar, `DoFieldExchange` geçersiz kılar.
 
 > [!NOTE]
->  Bu konu, türetilen sınıflar için geçerlidir. [CRecordset](../../mfc/reference/crecordset-class.md) toplu satır getirme uygulanmadı. Toplu satır getirme kullanıyorsanız, toplu kayıt alanı değişimi (Bulk RFX) uygulanır. Toplu RFX RFX için benzerdir. Farkları anlamak için bkz: [kayıt kümesi: Kayıtları toplu (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md).
+>  Bu konu, türetilen sınıflar için geçerlidir. [CRecordset](../../mfc/reference/crecordset-class.md) toplu satır getirme uygulanmadı. Toplu satır getirme kullanıyorsanız, toplu kayıt alanı değişimi (Bulk RFX) uygulanır. Toplu RFX RFX için benzerdir. Farkları anlamak için bkz: [kayıt kümesi: Kayıtları toplu yakalama (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md).
 
 RFX genel işlevleri, veri kaynağını ve alan veri üyeleri kümenizde sütunlarda arasında veri değişimi. RFX işlev çağrılarını kümenizin içinde yazdığınız [DoFieldExchange](../../mfc/reference/crecordset-class.md#dofieldexchange) üye işlevi. Bu konu, işlevleri kısaca açıklar ve RFX işlevleri kullanılabilir veri türlerini gösterir. [Teknik Not 43](../../mfc/tn043-rfx-routines.md) nasıl ek veri türleri için kendi RFX işlevleri yazılacağını açıklar.
 
@@ -40,7 +40,7 @@ Her RFX işlevi üç parametre alır (ve bazı isteğe bağlı dördüncü veya 
 
 - (İsteğe bağlı) İçinde `RFX_Text` işlevi, bazen beşinci parametrenin bir sütunun veri türünü belirtmek için kullanın.
 
-Daha fazla bilgi için bkz. altında RFX işlevleri [makroları ve genel öğeleri](../../mfc/reference/mfc-macros-and-globals.md) içinde *sınıf kitaplığı başvurusu*. Parametreleri zaman özel yapabileceğiniz örneği için bkz [kayıt kümesi: SUM'ları almak ve diğer toplama sonuçlarını (ODBC)](../../data/odbc/recordset-obtaining-sums-and-other-aggregate-results-odbc.md).
+Daha fazla bilgi için bkz. altında RFX işlevleri [makroları ve genel öğeleri](../../mfc/reference/mfc-macros-and-globals.md) içinde *sınıf kitaplığı başvurusu*. Parametreleri zaman özel yapabileceğiniz örneği için bkz [kayıt kümesi: SUM'ları ve diğer toplama sonuçlarını (ODBC) alma](../../data/odbc/recordset-obtaining-sums-and-other-aggregate-results-odbc.md).
 
 ##  <a name="_core_rfx_data_types"></a> RFX veri türleri
 
@@ -49,9 +49,9 @@ Sınıf kitaplığı, birçok farklı veri türleri kümeleriniz ve veri kaynağ
 |İşlev|Veri türü|
 |--------------|---------------|
 |`RFX_Bool`|**BOOL**|
-|`RFX_Byte`|**BAYT**|
+|`RFX_Byte`|**BYTE**|
 |`RFX_Binary`|`CByteArray`|
-|`RFX_Double`|**double**|
+|`RFX_Double`|**çift**|
 |`RFX_Single`|**float**|
 |`RFX_Int`|**int**|
 |`RFX_Long`|**long**|
@@ -62,11 +62,11 @@ Sınıf kitaplığı, birçok farklı veri türleri kümeleriniz ve veri kaynağ
 
 Daha fazla bilgi için bkz. altında RFX işlev belgelerine [makroları ve genel öğeleri](../../mfc/reference/mfc-macros-and-globals.md) içinde *sınıf kitaplığı başvurusu*. Tablonun ANSI SQL veri türleri eşlenen C++ veri türleri için C++ veri türleri SQL veri türleriyle nasıl eşleştiği hakkında daha fazla bilgi için bkz, [SQL: SQL ve C++ veri türleri (ODBC)](../../data/odbc/sql-sql-and-cpp-data-types-odbc.md).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Kayıt Alanı Değişimi (RFX)](../../data/odbc/record-field-exchange-rfx.md)<br/>
-[Kayıt Alanı Değişimi: RFX'in Çalışması](../../data/odbc/record-field-exchange-how-rfx-works.md)<br/>
-[Kayıt Kümesi: Bir Kayıt Kümesini Parametreleştirme (ODBC)](../../data/odbc/recordset-parameterizing-a-recordset-odbc.md)<br/>
-[Kayıt Kümesi: Veri Sütunlarını Dinamik Olarak Bağlama (ODBC)](../../data/odbc/recordset-dynamically-binding-data-columns-odbc.md)<br/>
-[CRecordset Sınıfı](../../mfc/reference/crecordset-class.md)<br/>
-[CFieldExchange Sınıfı](../../mfc/reference/cfieldexchange-class.md)
+[Kayıt Alanı Değişimi: RFX'in çalışması](../../data/odbc/record-field-exchange-how-rfx-works.md)<br/>
+[Kayıt kümesi: (ODBC) bir kayıt kümesini parametreleştirme](../../data/odbc/recordset-parameterizing-a-recordset-odbc.md)<br/>
+[Kayıt kümesi: (ODBC) veri sütunlarını dinamik olarak bağlama](../../data/odbc/recordset-dynamically-binding-data-columns-odbc.md)<br/>
+[CRecordset sınıfı](../../mfc/reference/crecordset-class.md)<br/>
+[CFieldExchange sınıfı](../../mfc/reference/cfieldexchange-class.md)

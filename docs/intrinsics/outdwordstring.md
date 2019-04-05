@@ -8,16 +8,16 @@ helpviewer_keywords:
 - __outdwordstring intrinsic
 - rep outsd instruction
 ms.assetid: 55b31a65-aab7-4b5c-b61d-d9e2fb0c497a
-ms.openlocfilehash: 5579258c813850cdb8f29758bb4bd5d87270467f
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.openlocfilehash: 51cb4a97d271d6d41d39d1025e3a5d34b273cdc4
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51330287"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59035260"
 ---
 # <a name="outdwordstring"></a>__outdwordstring
 
-**Microsoft'a özgü**
+**Microsoft'a Özgü**
 
 Oluşturur `rep outsd` gönderen yönerge `Count` başlayan doublewords `Buffer` çıkış tarafından belirtilen g/ç bağlantı noktasına `Port`.
 
@@ -33,13 +33,13 @@ void __outdwordstring(
 
 #### <a name="parameters"></a>Parametreler
 
-*Bağlantı noktası*<br/>
+*Bağlantı Noktası*<br/>
 [in] Veri göndermek için bağlantı noktası.
 
 *Arabellek*<br/>
 [in] Belirtilen bağlantı noktasına gönderilecek verileri için bir işaretçi.
 
-*Sayısı*<br/>
+*Sayı*<br/>
 [in] Gönderilecek doublewords sayısı.
 
 ## <a name="requirements"></a>Gereksinimler
@@ -54,8 +54,8 @@ void __outdwordstring(
 
 Bu yordam yalnızca bir iç öğe olarak kullanılabilir.
 
-**END Microsoft özgü**
+**END Microsoft'a Özgü**
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)

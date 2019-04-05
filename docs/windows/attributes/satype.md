@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - satype attribute
 ms.assetid: 1716590b-6bcb-4aba-b1bc-82f7335f02c3
-ms.openlocfilehash: 3d2d921e750adad0089df0d00590f256b56c732e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 7588e8d855d648309c46d981898cfbbf7888f4c9
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50517695"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59025730"
 ---
 # <a name="satype"></a>satype
 
@@ -34,10 +34,10 @@ Veri türü için `SAFEARRAY` arabirim yöntemi için parametre olarak geçirile
 
 |||
 |-|-|
-|**İçin geçerlidir**|Arabirimi parametresi, arabirim yöntemi|
+|**Uygulandığı öğe:**|Arabirimi parametresi, arabirim yöntemi|
 |**Tekrarlanabilir**|Hayır|
 |**Gerekli öznitelikleri**|Yok.|
-|**Geçersiz öznitelikler**|Yok.|
+|**Geçersiz öznitelikler**|None|
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -59,9 +59,9 @@ __interface A {
 };
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Derleyici Öznitelikleri](compiler-attributes.md)<br/>
 [Parametre Öznitelikleri](parameter-attributes.md)<br/>
 [Yöntem Öznitelikleri](method-attributes.md)<br/>
-[id](id.md)
+[kimlik](id.md)

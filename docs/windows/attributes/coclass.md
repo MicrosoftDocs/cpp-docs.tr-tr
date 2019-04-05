@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - coclass attribute
 ms.assetid: 42da6a10-3af9-4b43-9a1d-689d00b61eb3
-ms.openlocfilehash: 69f749dd6f8b2a8c42b4c75dd3790b9f7fbcf291
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e1f99a2780ab4f451533a3e797e473f60680c6ab
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50603092"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59035208"
 ---
 # <a name="coclass"></a>coclass
 
@@ -131,16 +131,16 @@ public:
 
 |||
 |-|-|
-|**İçin geçerlidir**|**sınıf**, **yapısı**|
+|**Uygulandığı öğe:**|**sınıf**, **yapısı**|
 |**Tekrarlanabilir**|Hayır|
-|**Gerekli öznitelikleri**|Yok.|
+|**Gerekli öznitelikleri**|None|
 |**Geçersiz öznitelikler**|Yok.|
 
 Öznitelik bağlamları hakkında daha fazla bilgi için bkz: [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[IDL öznitelikleri](idl-attributes.md)<br/>
+[IDL Öznitelikleri](idl-attributes.md)<br/>
 [COM Öznitelikleri](com-attributes.md)<br/>
 [Sınıf Öznitelikleri](class-attributes.md)<br/>
 [Typedef, Enum, Union ve Struct Öznitelikleri](typedef-enum-union-and-struct-attributes.md)<br/>

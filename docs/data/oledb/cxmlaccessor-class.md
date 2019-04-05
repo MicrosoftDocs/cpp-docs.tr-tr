@@ -20,12 +20,12 @@ helpviewer_keywords:
 - GetXMLColumnData method
 - GetXMLRowData method
 ms.assetid: c88c082c-ec2f-4351-8947-a330b15e448a
-ms.openlocfilehash: 1d57251e48f2496b07a4eb4f94976c7a44b165f9
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.openlocfilehash: 85fddb9b77cfc089b2236f2ff82944fec6ef9632
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51328519"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59036107"
 ---
 # <a name="cxmlaccessor-class"></a>CXMLAccessor Sınıfı
 
@@ -124,7 +124,7 @@ Aşağıdaki XML'de biçimlendirilmiş satır verileri nasıl gösterir. `DATA` 
 
 `</row>`
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [OLE DB Tüketici Şablonları](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
 [OLE DB Tüketici Şablonları Başvurusu](../../data/oledb/ole-db-consumer-templates-reference.md)<br/>

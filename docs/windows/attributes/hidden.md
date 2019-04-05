@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - hidden attribute
 ms.assetid: 199c96dd-fc07-46c7-af93-92020aebebe7
-ms.openlocfilehash: c1d8c8d894ed9a54c0dd3af775d6fbfda0385906
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d1d87ea057b22984a0e0f8f5518899e36f7d0221
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50597619"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59038427"
 ---
 # <a name="hidden"></a>gizli
 
@@ -37,16 +37,16 @@ ms.locfileid: "50597619"
 
 |||
 |-|-|
-|**İçin geçerlidir**|**arabirimi**, **sınıfı**, **yapı**, yöntem, özellik|
+|**Uygulandığı öğe:**|**arabirimi**, **sınıfı**, **yapı**, yöntem, özellik|
 |**Tekrarlanabilir**|Hayır|
 |**Gerekli öznitelikleri**|**coclass'ı** (uygulandığında **sınıfı** veya **yapı**)|
 |**Geçersiz öznitelikler**|Yok.|
 
 Daha fazla bilgi için [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[IDL öznitelikleri](idl-attributes.md)<br/>
+[IDL Öznitelikleri](idl-attributes.md)<br/>
 [Arabirim Öznitelikleri](interface-attributes.md)<br/>
 [Sınıf Öznitelikleri](class-attributes.md)<br/>
 [Yöntem Öznitelikleri](method-attributes.md)

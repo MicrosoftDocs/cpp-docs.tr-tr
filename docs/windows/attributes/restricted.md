@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - restricted attribute
 ms.assetid: 504a96be-b904-4269-8be1-920feba201b4
-ms.openlocfilehash: 1aa18255f7d7a0740494050a149d436fb167fe8a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 86f40fa49daf88668e37bef07f0db33d01cf1942
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50521059"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59029525"
 ---
 # <a name="restricted"></a>kısıtlı
 
@@ -27,7 +27,7 @@ Bir modül, arabirim veya dispinterface üyesi rasgele çağrılamaz belirtir.
 
 ### <a name="parameters"></a>Parametreler
 
-*Arabirimleri*<br/>
+*arabirimler*<br/>
 Rasgele bir COM nesnesi üzerinde çağrılamaz bir veya daha fazla arabirim. Bu parametre, yalnızca bir sınıfa uygulandığında geçerlidir.
 
 ## <a name="remarks"></a>Açıklamalar
@@ -67,15 +67,15 @@ class c : public a, public b
 
 |||
 |-|-|
-|**İçin geçerlidir**|Arabirim yöntemini **arabirimi**, **sınıfı**, **yapısı**|
+|**Uygulandığı öğe:**|Arabirim yöntemini **arabirimi**, **sınıfı**, **yapısı**|
 |**Tekrarlanabilir**|Hayır|
 |**Gerekli öznitelikleri**|**coclass'ı** (uygulandığında **sınıfı** veya **yapı**)|
 |**Geçersiz öznitelikler**|Yok.|
 
 Öznitelik bağlamları hakkında daha fazla bilgi için bkz: [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[IDL öznitelikleri](idl-attributes.md)<br/>
+[IDL Öznitelikleri](idl-attributes.md)<br/>
 [Arabirim Öznitelikleri](interface-attributes.md)<br/>
 [Yöntem Öznitelikleri](method-attributes.md)

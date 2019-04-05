@@ -7,16 +7,16 @@ helpviewer_keywords:
 - nop instruction
 - __nop intrinsic
 ms.assetid: 7a2a938b-87e0-476d-a348-03ea7635b6b9
-ms.openlocfilehash: b0033b0e3a62a16c2856b0e25daeebdb5df0c81f
-ms.sourcegitcommit: a1fad0a266b20b313364a74b16c9ac45d089b1e9
+ms.openlocfilehash: 1e76110c1ef0c4b98c295578189eedc99d76eeb9
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "54220393"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59038257"
 ---
 # <a name="nop"></a>__nop
 
-**Microsoft'a özgü**
+**Microsoft'a Özgü**
 
 İşlem gerçekleştirmeyecek bir platforma özgü makine koduna oluşturur.
 
@@ -30,17 +30,17 @@ void __nop();
 
 |İç|Mimari|
 |---------------|------------------|
-|`__nop`|x86, ARM, ARM64 olan x64|
+|`__nop`|x86, ARM, x64, ARM64|
 
 **Üst bilgi dosyası** \<intrin.h >
 
-**END Microsoft özgü**
+**END Microsoft'a Özgü**
 
 ## <a name="remarks"></a>Açıklamalar
 
 `__nop` İşlev, eşdeğer `NOP` makine yönergesi. Belge için x86 ve x64 hakkında daha fazla bilgi için arama "Intel mimarisi yazılım geliştirici el ile 2 birim: Yönerge kümesi başvurusu"konumunda [Intel Corporation'da](https://software.intel.com/articles/intel-sdm) site.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)<br/>
 [__noop](../intrinsics/noop.md)

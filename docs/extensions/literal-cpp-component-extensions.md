@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - literal keyword [C++]
 ms.assetid: 6b1a1f36-2e1d-4a23-8eb6-172f4f3c477f
-ms.openlocfilehash: dc48f2e14ec9a79a92882c23f584bf03303b03a3
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.openlocfilehash: c0de82d0d1d102f02ea79a4245f2e393439f2e0b
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58787145"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59037804"
 ---
 # <a name="literal-ccli-and-ccx"></a>değişmez değer (C + +/ CLI ve C + +/ CX)
 
@@ -125,6 +125,6 @@ class B {
 
 Derleyici seçeneği: `/clr`
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[.NET ve UWP İçin Bileşen Uzantıları](component-extensions-for-runtime-platforms.md)
+[.NET ve UWP için bileşen uzantıları](component-extensions-for-runtime-platforms.md)

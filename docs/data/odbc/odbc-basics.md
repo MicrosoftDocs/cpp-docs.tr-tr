@@ -8,12 +8,12 @@ helpviewer_keywords:
 - ODBC, about ODBC
 - ODBC, components
 ms.assetid: ec529702-0fb2-4754-b8de-d1efa8eca18f
-ms.openlocfilehash: 81b1f6d06d909b5b046703b97c4574270efbdd46
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e14f5d051b9684cd79a34f5fb50feeb785d2f927
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50591730"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59033248"
 ---
 # <a name="odbc-basics"></a>ODBC Temelleri
 
@@ -65,6 +65,6 @@ Veritabanı sınıfları için ODBC sürücüsü olan herhangi bir veri kaynağ�
 
 Visual C++'ın bu sürümünde bulunan ODBC sürücülerinin listesini ve ek sürücüler hakkında bilgi için bkz: [ODBC sürücü listesi](../../data/odbc/odbc-driver-list.md).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Açık Veritabanı Bağlantısı (ODBC)](../../data/odbc/open-database-connectivity-odbc.md)

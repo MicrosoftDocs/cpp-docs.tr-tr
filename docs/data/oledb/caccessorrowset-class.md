@@ -30,12 +30,12 @@ helpviewer_keywords:
 - FreeRecordMemory method
 - GetColumnInfo method
 ms.assetid: bd4f58ed-cebf-4d43-8985-1e5fcbf06953
-ms.openlocfilehash: 6f870cf6c079786c49846bcf7c3010998ccdbe00
-ms.sourcegitcommit: c40469825b6101baac87d43e5f4aed6df6b078f5
+ms.openlocfilehash: af38695ccee79e539782dc3f695a567f72fa41c7
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/12/2018
-ms.locfileid: "51556499"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59033910"
 ---
 # <a name="caccessorrowset-class"></a>CAccessorRowset Sınıfı
 
@@ -67,11 +67,11 @@ Bir satır kümesi sınıfı.
 
 |||
 |-|-|
-|[Bind](#bind)|Bağlamaları oluşturur (kullanılabilir `bBind` olarak belirtilen **false** içinde [CCommand::Open](../../data/oledb/ccommand-open.md)).|
+|[bağlama](#bind)|Bağlamaları oluşturur (kullanılabilir `bBind` olarak belirtilen **false** içinde [CCommand::Open](../../data/oledb/ccommand-open.md)).|
 |[CAccessorRowset](#caccessorrowset)|Oluşturucu.|
-|[Kapat](#close)|Satır kümesi ve tüm erişimcileri kapatır.|
+|[Close](#close)|Satır kümesi ve tüm erişimcileri kapatır.|
 |[FreeRecordMemory](#freerecordmemory)|Hiçbir sütun boşaltılması için gereken geçerli kayıtta serbest bırakır.|
-|[GetColumnInfo](#getcolumninfo)|Implements [IColumnsInfo::GetColumnInfo](https://docs.microsoft.com/previous-versions/windows/desktop/ms722704(v=vs.85)).|
+|[GetColumnInfo](#getcolumninfo)|Implements [IColumnsInfo::GetColumnInfo](/previous-versions/windows/desktop/ms722704\(v=vs.85\)).|
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -142,7 +142,7 @@ HRESULT GetColumnInfo(DBORDINAL* pColumns,
 
 #### <a name="parameters"></a>Parametreler
 
-Bkz: [IColumnsInfo::GetColumnInfo](https://docs.microsoft.com/previous-versions/windows/desktop/ms722704(v=vs.85)) içinde *OLE DB Programcının Başvurusu*.
+Bkz: [IColumnsInfo::GetColumnInfo](/previous-versions/windows/desktop/ms722704\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -152,9 +152,9 @@ Standart bir HRESULT.
 
 Kullanıcı, döndürülen sütun bilgileri ve dize arabellek boşaltmanız gerekir. Dosyanın ikinci sürümü, bu yöntemi kullandığınızda kullanın [CDynamicAccessor](../../data/oledb/cdynamicaccessor-class.md) ve bağlamaları geçersiz kılmanız gerekir.
 
-Daha fazla bilgi için [IColumnsInfo::GetColumnInfo](https://docs.microsoft.com/previous-versions/windows/desktop/ms722704(v=vs.85)) içinde *OLE DB Programcının Başvurusu*.
+Daha fazla bilgi için [IColumnsInfo::GetColumnInfo](/previous-versions/windows/desktop/ms722704\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [OLE DB Tüketici Şablonları](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
 [OLE DB Tüketici Şablonları Başvurusu](../../data/oledb/ole-db-consumer-templates-reference.md)

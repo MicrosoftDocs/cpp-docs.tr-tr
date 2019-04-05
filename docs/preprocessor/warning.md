@@ -10,12 +10,12 @@ helpviewer_keywords:
 - pop warning pragma
 - warning pragma
 ms.assetid: 8e9a0dec-e223-4657-b21d-5417ebe29cc8
-ms.openlocfilehash: 53f79061ded358c9cb895fd7e8e245c46ed99fd5
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 1341472af22582635207a2bdff93b4367fd59330
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50631731"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59037756"
 ---
 # <a name="warning-pragma"></a>warning Pragması
 Derleyici uyarı iletilerini davranışını seçmeli değiştirilmesini sağlar.
@@ -38,7 +38,7 @@ Aşağıdaki uyarı-specifier parametreleri büyük/küçük harf kullanılabili
 |*1, 2, 3, 4*|Belirtilen düzeyi için belirtilen uyarı geçerlidir. Bu da varsayılan olarak kapalıdır belirtilen bir uyarı açar.|
 |*default*|Uyarı davranışı, varsayılan değerine sıfırlayın. Bu da varsayılan olarak kapalıdır belirtilen bir uyarı açar. Uyarı, varsayılan olarak oluşturulan, belgelenen düzeyi.<br /><br /> Daha fazla bilgi için [derleyici uyarıları emin olan kapalı varsayılan](../preprocessor/compiler-warnings-that-are-off-by-default.md).|
 |*Devre dışı bırak*|Belirtilen uyarı iletileri sorun değil.|
-|*Hata*|Belirtilen uyarıları hata olarak bildirin.|
+|*error*|Belirtilen uyarıları hata olarak bildirin.|
 |*once*|Belirtilen iletileri yalnızca bir kez görüntülenir.|
 |*gösterme*|Yığına pragma geçerli durumunu, sonraki satır için belirtilen uyarı devre dışı bırakır ve böylece pragma durumu sıfırlama uyarısı yığın yığından açar.|
 
@@ -116,6 +116,6 @@ Bu kod, sonunda *pop* her uyarı durumunu geri yükler (4705 4706 ve 4707 içeri
 
 Uyarı, derleyici yardımcı olan seçeneklerdir gösterme hakkında daha fazla bilgi için bkz [/FI](../build/reference/fi-name-forced-include-file.md) ve [/w](../build/reference/compiler-option-warning-level.md).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Pragma Yönergeleri ve __Pragma Anahtar Sözcüğü](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

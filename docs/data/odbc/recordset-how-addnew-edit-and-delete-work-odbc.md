@@ -1,5 +1,5 @@
 ---
-title: 'Kayıt Kümesi: AddNew, Düzenleme ve Silmenin Çalışması (ODBC)'
+title: 'Kayıt kümesi: Nasıl AddNew, düzenleme ve silme çalışma (ODBC)'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - records [C++], updating
@@ -17,14 +17,14 @@ helpviewer_keywords:
 - ODBC recordsets [C++], editing records
 - records [C++], editing
 ms.assetid: cab43d43-235a-4bed-ac05-67d10e94f34e
-ms.openlocfilehash: 84d4c2f1128f7b73189f69b056eee96619c31ef5
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.openlocfilehash: e5fc6ad2a1fe00367cd8a0b1c53ac914b95018ab
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51331977"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59033216"
 ---
-# <a name="recordset-how-addnew-edit-and-delete-work-odbc"></a>Kayıt Kümesi: AddNew, Düzenleme ve Silmenin Çalışması (ODBC)
+# <a name="recordset-how-addnew-edit-and-delete-work-odbc"></a>Kayıt kümesi: Nasıl AddNew, düzenleme ve silme çalışma (ODBC)
 
 Bu konu MFC ODBC sınıflarına uygulanır.
 
@@ -39,9 +39,9 @@ Bu konu açıklar nasıl `AddNew`, `Edit`, ve `Delete` sınıfın üye işlevler
 - [Kayıtların işleri nasıl silinir](#_core_deleting_a_record)
 
 > [!NOTE]
->  Bu konu, türetilmiş nesneler için geçerlidir. `CRecordset` toplu satır getirme uygulanmadı. Toplu satır getirme kullanıyorsanız bkz [kayıt kümesi: Kayıtları toplu (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md).
+>  Bu konu, türetilmiş nesneler için geçerlidir. `CRecordset` toplu satır getirme uygulanmadı. Toplu satır getirme kullanıyorsanız bkz [kayıt kümesi: Kayıtları toplu yakalama (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md).
 
-Ek olarak, okumak isteyebilirsiniz [kayıt alanı değişimi: RFX Works nasıl](../../data/odbc/record-field-exchange-how-rfx-works.md), RFX güncelleştirme işlemlerine karşılık gelen rolünü açıklar.
+Ek olarak, okumak isteyebilirsiniz [kayıt alanı değişimi: RFX'in çalışması](../../data/odbc/record-field-exchange-how-rfx-works.md), RFX güncelleştirme işlemlerine karşılık gelen rolünü açıklar.
 
 ##  <a name="_core_adding_a_record"></a> Kayıt ekleme
 
@@ -118,7 +118,7 @@ Arama için bir önkoşul olarak `Update`, kayıt kümesi boş olmamalı ve geç
 
    1. Değişiklikleri, varsa `Update` SQL yapıları **güncelleştirme** deyimi. Listelenen sütunları **güncelleştirme** ifadesi, değişen alan veri üyeleri dayalı.
 
-   1. `Update` değişiklikleri uygular — yürütür **güncelleştirme** deyimi — ve veri kaynağında kayıt değiştirilir, ancak bir işlem değil taahhüt varsa ediyor (bkz [işlem: bir kayıt kümesi (ODBC)işlemgerçekleştirme](../../data/odbc/transaction-performing-a-transaction-in-a-recordset-odbc.md) işlem güncelleştirme nasıl etkilediği hakkında bilgi için). ODBC kaydı da değiştiren bir kopyasını tutar.
+   1. `Update` değişiklikleri uygular — yürütür **güncelleştirme** deyimi — ve veri kaynağında kayıt değiştirilir, ancak bir işlem değil taahhüt varsa ediyor (bkz [işlem: Bir kayıt kümesi (ODBC) işlem gerçekleştirme](../../data/odbc/transaction-performing-a-transaction-in-a-recordset-odbc.md) işlem güncelleştirme nasıl etkilediği hakkında bilgi için). ODBC kaydı da değiştiren bir kopyasını tutar.
 
    1. İşlemin aksine `AddNew`, `Edit` işlem depolanmış kayıt geri yüklemiyor. Düzenlenmiş kayıt yerinde geçerli kayıt olarak kalır.
 
@@ -157,8 +157,8 @@ Arama için bir önkoşul olarak `Delete`kayıt güncelleştirilebilir olmalıd�
 
 Güncelleştirme işlemlerinde kullanılan SQL deyimleri hakkında daha fazla bilgi için bkz. [SQL](../../data/odbc/sql.md).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Kayıt Kümesi (ODBC)](../../data/odbc/recordset-odbc.md)<br/>
-[Kayıt Kümesi: Güncelleştirmeler Hakkında Daha Fazla Bilgi (ODBC)](../../data/odbc/recordset-more-about-updates-odbc.md)<br/>
+[Kayıt kümesi: Güncelleştirmeler hakkında daha fazla (ODBC)](../../data/odbc/recordset-more-about-updates-odbc.md)<br/>
 [Kayıt Alanı Değişimi (RFX)](../../data/odbc/record-field-exchange-rfx.md)

@@ -8,12 +8,12 @@ helpviewer_keywords:
 - pragmas, pack
 - pack pragma
 ms.assetid: e4209cbb-5437-4b53-b3fe-ac264501d404
-ms.openlocfilehash: 9b959c161a933cc76590cfbd65d295aad36f07d7
-ms.sourcegitcommit: ff3cbe4235b6c316edcc7677f79f70c3e784ad76
+ms.openlocfilehash: bf1ae81184d53dd271f63c26e8f9a52a6410b232
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/19/2018
-ms.locfileid: "53627520"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59038453"
 ---
 # <a name="pack"></a>pack
 Yapı, birleşim ve sınıf üyeleri için paketleme hizalamasını belirtir.
@@ -115,6 +115,6 @@ Aşağıdaki örnek nasıl kullanılacağını gösterir *anında iletme*, *pop*
 #pragma pack(show)   // C4810
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Pragma Yönergeleri ve __Pragma Anahtar Sözcüğü](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

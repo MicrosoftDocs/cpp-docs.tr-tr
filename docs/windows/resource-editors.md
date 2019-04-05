@@ -21,12 +21,12 @@ helpviewer_keywords:
 - properties [C++], resources
 - resources [C++], properties
 ms.assetid: e20a29ec-d6fb-4ead-98f3-431a0e23aaaf
-ms.openlocfilehash: a0b5e3905daf72307702dbe4f05c2871cf768ac0
-ms.sourcegitcommit: c1f646c8b72f330fa8cf5ddb0f8f261ba10d16f0
+ms.openlocfilehash: 774575e978a8e7f94868eb1b5dad90c6ac345460
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58328811"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59038667"
 ---
 # <a name="resource-editors-c"></a>Kaynak Düzenleyicileri (C++)
 
@@ -40,9 +40,9 @@ Bir kaynak oluşturduğunuzda veya açtığınızda uygun Düzenleyicisi'ni otom
 |Kullan...|Düzenlemek için...|
 |----------------|----------------|
 |[Hızlandırıcı Düzenleyicisi](../windows/accelerator-editor.md)|Hızlandırıcı tablolarında Visual C++ projeleri.|
-|[İkili Düzenleyicisi](binary-editor.md)|İkili veri bilgileri ve Visual C++, Visual Basic veya Visual C# projelerinde özel kaynaklar.|
+|[İkili Düzenleyici](binary-editor.md)|İkili veri bilgileri ve Visual C++, Visual Basic veya Visual C# projelerinde özel kaynaklar.|
 |[İletişim Kutusu Düzenleyicisi](../windows/dialog-editor.md)|Visual C++ projelerinde iletişim kutuları.|
-|[Görüntü Düzenleyicisi](../windows/image-editor-for-icons.md)|Bit eşlemler, simgeler, işaretçiler ve diğer Visual C++, Visual Basic veya Visual C# projelerinde görüntü dosyaları.|
+|[Görüntü Düzenleyici](../windows/image-editor-for-icons.md)|Bit eşlemler, simgeler, işaretçiler ve diğer Visual C++, Visual Basic veya Visual C# projelerinde görüntü dosyaları.|
 |[Menü Düzenleyicisi](../windows/menu-editor.md)|Visual C++ projelerinde menüsü kaynaklarını.|
 |[Ribbon Düzenleyicisi](../mfc/ribbon-designer-mfc.md)|MFC projeleri Şerit kaynakları.|
 |[Dize Düzenleyicisi](../windows/string-editor.md)|Visual C++ projeleri tablolarında dize.|
@@ -124,10 +124,10 @@ Aşağıdaki kaynaklar, görüntü önizlemesini sağlaması gerekmez: Hızland�
 
 ## <a name="requirements"></a>Gereksinimler
 
-Yok.
+None
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Kaynak Dosyalarıyla Çalışma](../windows/working-with-resource-files.md)<br/>
 [Kaynak Dosyalar](../windows/resource-files-visual-studio.md)<br/>
-[Kaynak Tanımlayıcıları (Semboller)](../windows/symbols-resource-identifiers.md)<br/>
+[Kaynak Tanımlayıcıları (simge)](../windows/symbols-resource-identifiers.md)<br/>

@@ -49,12 +49,12 @@ helpviewer_keywords:
 - SetParameterInfo method
 - Unprepare method
 ms.assetid: 0760bfc5-b9ee-4aee-8e54-31bd78714d3a
-ms.openlocfilehash: f25c552001411565e4ad370c6e454b4c0ae4ae48
-ms.sourcegitcommit: c40469825b6101baac87d43e5f4aed6df6b078f5
+ms.openlocfilehash: 406a78ff1958d565fcc74781f6a63d4784f48bfc
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/12/2018
-ms.locfileid: "51557004"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59039734"
 ---
 # <a name="ccommand-class"></a>CCommand Sınıfı
 
@@ -81,7 +81,7 @@ Erişimci sınıf türü (gibi `CDynamicParameterAccessor`, `CDynamicStringAcces
 Satır kümesi sınıfı türü (gibi `CArrayRowset` veya `CNoRowset`) kullanmak için komutu istiyor. Varsayılan, `CRowset` değeridir.
 
 *TMultiple*<br/>
-Birden çok sonuç döndüren bir OLE DB komutu kullanmak için belirtin [CMultipleResults](../../data/oledb/cmultipleresults-class.md). Aksi takdirde kullanın [CNoMultipleResults](../../data/oledb/cnomultipleresults-class.md). Ayrıntılar için bkz [IMultipleResults](https://docs.microsoft.com/previous-versions/windows/desktop/ms721289(v=vs.85)).
+Birden çok sonuç döndüren bir OLE DB komutu kullanmak için belirtin [CMultipleResults](../../data/oledb/cmultipleresults-class.md). Aksi takdirde kullanın [CNoMultipleResults](../../data/oledb/cnomultipleresults-class.md). Ayrıntılar için bkz [IMultipleResults](/previous-versions/windows/desktop/ms721289(v=vs.85)).
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -93,15 +93,15 @@ Birden çok sonuç döndüren bir OLE DB komutu kullanmak için belirtin [CMulti
 
 |||
 |-|-|
-|[Kapat](#close)|Geçerli komut kapatır.|
+|[Close](#close)|Geçerli komut kapatır.|
 |[GetNextResult](#getnextresult)|Birden çok sonuç kümeleri kullanırken, sonraki sonuç getirir.|
-|[açın](#open)|Yürütür ve isteğe bağlı olarak komut bağlar.|
+|[Open](#open)|Yürütür ve isteğe bağlı olarak komut bağlar.|
 
 ### <a name="inherited-methods"></a>Devralınan yöntemleri
 
 |||
 |-|-|
-|[Oluşturma](#create)|Belirtilen oturum için yeni bir komut oluşturur, ardından komut metni ayarlar.|
+|[Create](#create)|Belirtilen oturum için yeni bir komut oluşturur, ardından komut metni ayarlar.|
 |[CreateCommand](#createcommand)|Yeni bir komut oluşturur.|
 |[GetParameterInfo](#getparameterinfo)|Komut parametreleri, adlarını ve türlerini listesini alır.|
 |[Hazırlama](#prepare)|Doğrular ve geçerli komutu en iyi duruma getirir.|
@@ -213,13 +213,13 @@ HRESULT Open(DBPROPSET *pPropSet = NULL,
 [in] Oturumda yürütüleceği komutu.
 
 *wszCommand*<br/>
-[in] Komutu yürütmek için bir Unicode dize olarak geçirildi. Kullanırken NULL olabilir `CAccessor`, bu durumda komutu için geçirilen değer alınacağı konum [DEFINE_COMMAND](../../data/oledb/define-command.md) makrosu. Bkz: [ICommand::Execute](https://docs.microsoft.com/previous-versions/windows/desktop/ms718095(v=vs.85)) içinde *OLE DB Programcının Başvurusu* Ayrıntılar için.
+[in] Komutu yürütmek için bir Unicode dize olarak geçirildi. Kullanırken NULL olabilir `CAccessor`, bu durumda komutu için geçirilen değer alınacağı konum [DEFINE_COMMAND](../../data/oledb/define-command.md) makrosu. Bkz: [ICommand::Execute](/previous-versions/windows/desktop/ms718095(v=vs.85)) içinde *OLE DB Programcının Başvurusu* Ayrıntılar için.
 
 *szCommand*<br/>
 [in] Aynı *wszCommand* dışında bu parametre bir ANSI komut dizesi alır. Dördüncü formu bu yöntemin bir NULL değer alabilir. Ayrıntılar için bu konunun ilerleyen bölümlerindeki "Açıklamalar" bakın.
 
 *pPropSet*<br/>
-[in] Bir dizi işaretçi [DBPROPSET](https://docs.microsoft.com/previous-versions/windows/desktop/ms714367(v=vs.85)) özelliklerini ve değerlerini ayarlamak için içeren yapılar. Bkz: [özellik kümeleri ve özellik gruplarını](https://docs.microsoft.com/previous-versions/windows/desktop/ms713696(v=vs.85)) içinde *OLE DB Programcının Başvurusu* Windows SDK içinde.
+[in] Bir dizi işaretçi [DBPROPSET](/previous-versions/windows/desktop/ms714367(v=vs.85)) özelliklerini ve değerlerini ayarlamak için içeren yapılar. Bkz: [özellik kümeleri ve özellik gruplarını](/previous-versions/windows/desktop/ms713696(v=vs.85)) içinde *OLE DB Programcının Başvurusu* Windows SDK içinde.
 
 *pRowsAffected*<br/>
 [daraltma/genişletme] Burada bir komut tarafından etkilenen satır sayısı döndürülür bellek işaretçisi. Varsa  *\*pRowsAffected* NULL ise hiçbir satır sayısı döndürülür. Aksi takdirde, `Open` ayarlar  *\*pRowsAffected* aşağıdaki koşullara uygun:
@@ -231,13 +231,13 @@ HRESULT Open(DBPROPSET *pPropSet = NULL,
 |Komutu değil güncelleştirin, silin veya Satır Ekle|*\*pRowsAffected* tanımsızdır.|
 
 *guidCommand*<br/>
-[in] Komut metni ayrıştırma söz dizimi ve genel kurallar için kullanılacak sağlayıcıyı belirtir bir GUID. Bkz: [ICommandText::GetCommandText](https://docs.microsoft.com/previous-versions/windows/desktop/ms709825(v=vs.85)) ve [ICommandText::SetCommandText](https://docs.microsoft.com/previous-versions/windows/desktop/ms709757(v=vs.85)) içinde *OLE DB Programcının Başvurusu* Ayrıntılar için.
+[in] Komut metni ayrıştırma söz dizimi ve genel kurallar için kullanılacak sağlayıcıyı belirtir bir GUID. Bkz: [ICommandText::GetCommandText](/previous-versions/windows/desktop/ms709825(v=vs.85)) ve [ICommandText::SetCommandText](/previous-versions/windows/desktop/ms709757(v=vs.85)) içinde *OLE DB Programcının Başvurusu* Ayrıntılar için.
 
 *bBind*<br/>
 [in] Komut yürütülen sonra otomatik olarak bağlamak belirtir. Varsayılan değer **true**, otomatik olarak bağlanacak komutu neden olur. Ayarı *bBind* için **false** böylece el ile bağlama komutu, otomatik bağlama engeller. (El ile OLAP kullanıcılara belirli ilgilenilen bağlamadır.)
 
 *ulPropSets*<br/>
-[in] Sayısını [DBPROPSET](https://docs.microsoft.com/previous-versions/windows/desktop/ms714367(v=vs.85)) yapıları geçirilen *pPropSet* bağımsız değişken.
+[in] Sayısını [DBPROPSET](/previous-versions/windows/desktop/ms714367(v=vs.85)) yapıları geçirilen *pPropSet* bağımsız değişken.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -260,7 +260,7 @@ Dördüncü biçiminde kullanın `Open` ne zaman bir komut zaten oluşturduğunu
 
 ## <a name="create"></a> CCommand::Create
 
-Çağrıları [CCommand::CreateCommand](../../data/oledb/ccommand-createcommand.md) belirtilen oturum için bir komut oluşturmak için daha sonra çağırır [ICommandText::SetCommandText](https://docs.microsoft.com/previous-versions/windows/desktop/ms709825(v=vs.85)) komut metni belirtmek için.
+Çağrıları [CCommand::CreateCommand](../../data/oledb/ccommand-createcommand.md) belirtilen oturum için bir komut oluşturmak için daha sonra çağırır [ICommandText::SetCommandText](/previous-versions/windows/desktop/ms709825(v=vs.85)) komut metni belirtmek için.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -286,7 +286,7 @@ HRESULT CCommandBase::Create(const CSession& session,
 [in] Komut dizesi, ANSI metin işaretçisi.
 
 *guidCommand*<br/>
-[in] Komut metni ayrıştırma söz dizimi ve genel kurallar için kullanılacak sağlayıcıyı belirtir bir GUID. Diyalektler açıklaması için bkz: [ICommandText::GetCommandText](https://docs.microsoft.com/previous-versions/windows/desktop/ms709825(v=vs.85)) içinde *OLE DB Programcının Başvurusu*.
+[in] Komut metni ayrıştırma söz dizimi ve genel kurallar için kullanılacak sağlayıcıyı belirtir bir GUID. Diyalektler açıklaması için bkz: [ICommandText::GetCommandText](/previous-versions/windows/desktop/ms709825(v=vs.85)) içinde *OLE DB Programcının Başvurusu*.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -333,7 +333,7 @@ HRESULT CCommandBase::GetParameterInfo(DB_UPARAMS* pParams,
 
 #### <a name="parameters"></a>Parametreler
 
-Bkz: [ICommandWithParameters::GetParameterInfo](https://docs.microsoft.com/previous-versions/windows/desktop/ms714917(v=vs.85)) içinde *OLE DB Programcının Başvurusu*.
+Bkz: [ICommandWithParameters::GetParameterInfo](/previous-versions/windows/desktop/ms714917(v=vs.85)) içinde *OLE DB Programcının Başvurusu*.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -360,7 +360,7 @@ Standart bir HRESULT.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, OLE DB yöntemi sarmalar [ICommandPrepare::Prepare](https://docs.microsoft.com/previous-versions/windows/desktop/ms718370(v=vs.85)).
+Bu yöntem, OLE DB yöntemi sarmalar [ICommandPrepare::Prepare](/previous-versions/windows/desktop/ms718370(v=vs.85)).
 
 ## <a name="releasecommand"></a> CCommand::ReleaseCommand
 
@@ -390,7 +390,7 @@ HRESULT CCommandBase::SetParameterInfo(DB_UPARAMS ulParams,
 
 #### <a name="parameters"></a>Parametreler
 
-Bkz: [ICommandWithParameters::SetParameterInfo](https://docs.microsoft.com/previous-versions/windows/desktop/ms725393(v=vs.85)) içinde *OLE DB Programcının Başvurusu*.
+Bkz: [ICommandWithParameters::SetParameterInfo](/previous-versions/windows/desktop/ms725393(v=vs.85)) içinde *OLE DB Programcının Başvurusu*.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -412,9 +412,9 @@ Standart bir HRESULT.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, OLE DB yöntemi sarmalar [ICommandPrepare::Unprepare](https://docs.microsoft.com/previous-versions/windows/desktop/ms719635(v=vs.85)).
+Bu yöntem, OLE DB yöntemi sarmalar [ICommandPrepare::Unprepare](/previous-versions/windows/desktop/ms719635(v=vs.85)).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [OLE DB Tüketici Şablonları](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
 [OLE DB Tüketici Şablonları Başvurusu](../../data/oledb/ole-db-consumer-templates-reference.md)

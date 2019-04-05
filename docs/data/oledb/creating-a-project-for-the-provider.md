@@ -6,20 +6,20 @@ helpviewer_keywords:
 - OLE DB providers, projects
 - projects [C++], creating
 ms.assetid: 076a75de-1d4b-486a-bcf8-9c0f6b049fa2
-ms.openlocfilehash: f63b09d47dd8f3ebe8750275bb005be89ca8fde8
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: dc085b1f663369033947ed2a5577f334dd79c0aa
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50677116"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59030744"
 ---
 # <a name="creating-a-project-for-the-provider"></a>Sağlayıcı için Proje Oluşturma
 
 ## <a name="to-create-a-project-in-which-the-ole-db-provider-will-reside"></a>OLE DB sağlayıcısı içinde yer alacağını bir proje oluşturmak için
 
-1. Gelen **dosya** menüsünde tıklatın **yeni**ve ardından **proje**.
+1. **Dosya** menüsünde **Yeni**'ye ve ardından **Proje**'ye tıklayın.
 
-   **Yeni proje** iletişim kutusu görüntülenir.
+   **Yeni Proje** iletişim kutusu görünür.
 
 1. İçinde **proje türleri** bölmesinde tıklayın **yüklü** > **Visual C++** > **MFC/ATL** klasör. İçinde **şablonları** bölmesinde tıklayın **ATL projesi**.
 
@@ -34,6 +34,6 @@ ms.locfileid: "50677116"
 
 1. **Son**'a tıklayın.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [OLE DB Sağlayıcısı Oluşturma](../../data/oledb/creating-an-ole-db-provider.md)

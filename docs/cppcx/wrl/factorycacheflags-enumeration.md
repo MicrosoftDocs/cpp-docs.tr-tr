@@ -5,12 +5,12 @@ ms.topic: reference
 f1_keywords:
 - module/Microsoft::WRL::FactoryCacheFlags
 ms.assetid: 6f54258f-0144-4264-9608-414e5905f6fb
-ms.openlocfilehash: 6fecacd6038d1c41e57515307c1b810d0623d16f
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.openlocfilehash: 8cf4af2ac0b4557fc6b175b84c47f83dd8a6e4ba
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58787129"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59037451"
 ---
 # <a name="factorycacheflags-enumeration"></a>FactoryCacheFlags Numaralandırması
 
@@ -38,6 +38,6 @@ Varsayılan olarak, önbelleğe alma İlkesi Fabrika olarak belirtilen [ModuleTy
 
 **Namespace:** Microsoft::WRL
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Microsoft::WRL Ad Alanı](microsoft-wrl-namespace.md)

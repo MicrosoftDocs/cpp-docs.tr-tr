@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - db_param attribute
 ms.assetid: a28315f5-4722-459e-92ef-32e83c0b205a
-ms.openlocfilehash: 2de051b099da5f179a7634cddfb359d85f4b1f83
-ms.sourcegitcommit: c1f646c8b72f330fa8cf5ddb0f8f261ba10d16f0
+ms.openlocfilehash: a3cfcf3c7ce3313eaff9a3b35854e1e077fc906f
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58328798"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59038102"
 ---
 # <a name="dbparam"></a>db_param
 
@@ -40,16 +40,16 @@ Satır kümesi veri bağlanacak bir alana karşılık gelen sütun numarası (DB
 *DbType*<br/>
 (İsteğe bağlı) Bir OLE DB [türü göstergesi](/previous-versions/windows/desktop/ms711251(v=vs.85)) sütun girişi.
 
-*Duyarlık*<br/>
+*duyarlık*<br/>
 (İsteğe bağlı) Sütun girişini kullanılacak hassasiyet. Ayrıntılar için açıklamasını görmek `bPrecision` öğesinin [IAccessor::CreateAccessor'ı yapısı](/previous-versions/windows/desktop/ms716845(v=vs.85))
 
-*Ölçek*<br/>
+*ölçek*<br/>
 (İsteğe bağlı) Sütun girişi için kullanılacak ölçek. Ayrıntılar için açıklamasını görmek `bScale` öğesinin [IAccessor::CreateAccessor'ı yapısı](/previous-versions/windows/desktop/ms716845(v=vs.85))
 
-*Durumu*<br/>
+*durum*<br/>
 (İsteğe bağlı) Bu sütun durumunu tutmak için kullanılan bir üye değişkeni. Durum sütun değeri veri değeri NULL gibi diğer bazı değeri olup olmadığını gösterir. Olası değerler için bkz. [durumu](/previous-versions/windows/desktop/ms722617(v=vs.85)) içinde *OLE DB Programcının Başvurusu*.
 
-*Uzunluğu*<br/>
+*length*<br/>
 (İsteğe bağlı) Sütun boyutunu bayt cinsinden tutmak için kullanılan bir üye değişkeni.
 
 ## <a name="remarks"></a>Açıklamalar
@@ -108,13 +108,13 @@ struct CSalesbyYear {
 
 |||
 |-|-|
-|**İçin geçerlidir**|**sınıf**, **yapı**, üye, yöntem, yerel|
+|**Uygulandığı öğe:**|**sınıf**, **yapı**, üye, yöntem, yerel|
 |**Tekrarlanabilir**|Hayır|
 |**Gerekli öznitelikleri**|Yok.|
 |**Geçersiz öznitelikler**|Yok.|
 
 Öznitelik bağlamları hakkında daha fazla bilgi için bkz: [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [OLE DB Tüketici Öznitelikleri](ole-db-consumer-attributes.md)

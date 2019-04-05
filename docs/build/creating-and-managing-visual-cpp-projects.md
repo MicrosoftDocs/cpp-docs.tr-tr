@@ -11,12 +11,12 @@ helpviewer_keywords:
 - Visual C++ projects
 - ATL projects
 ms.assetid: 11003cd8-9046-4630-a189-a32bf3b88047
-ms.openlocfilehash: a3ddafab143224b6e20a3e01d1d643c42bbe19e0
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.openlocfilehash: b4772b9bd625a542a18039386fefe42840ab65b1
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58775328"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59038044"
 ---
 # <a name="visual-studio-projects---c"></a>Visual Studio projeleri - C++
 
@@ -60,21 +60,21 @@ Hata listesinde basabilirsiniz **F1** vurgulanan hatada kendi belgeleri konusuna
 
 ## <a name="in-this-section"></a>Bu Bölümde
 
-[Visual Studio’da C++ derleyicisi ve derleme özelliklerini ayarlama](working-with-project-properties.md)<br/>
+[C++ derleyicisi ayarlayın ve derleme Visual Studio özellikleri](working-with-project-properties.md)<br/>
 Proje ayarlarınızı belirtmek için özellik sayfaları ve özellik sayfalarını kullanma
 
-[Derleme zamanında kitaplıklara ve bileşenlere başvurma](adding-references-in-visual-cpp-projects.md)<br/>
+[Başvuru kitaplıkları ve derleme zamanında bileşenleri](adding-references-in-visual-cpp-projects.md)<br/>
 Nasıl bir projede kitaplıklar, DLL'ler COM ve .NET bileşenleri içerir.
  
-[Proje Çıkış Dosyalarını Düzenleme](how-to-organize-project-output-files-for-builds.md)<br/>
+[Proje çıktı dosyalarını düzenleme](how-to-organize-project-output-files-for-builds.md)<br/>
 Yapı işlemi sırasında oluşturulan yürütülebilir dosyalarının konumunu özelleştirmek nasıl.
 
-[Özel Derleme Adımları ve Derleme Olayları](understanding-custom-build-steps-and-build-events.md)<br/>
+[Özel derleme adımlarını ve derleme olaylarını](understanding-custom-build-steps-and-build-events.md)<br/>
 Derleme işlemi sırasında isteğe bağlı bir komut ekleme noktası belirtilmemiş.
 
 [Mevcut koddan proje oluşturma](how-to-create-a-cpp-project-from-existing-code.md)<br/>
 Kaynak dosyaları gevşek koleksiyonundan yeni bir Visual Studio projesi oluşturma
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[Projeler ve derleme sistemleri](projects-and-build-systems-cpp.md)<br>
+[Projeler ve yapı sistemi](projects-and-build-systems-cpp.md)<br>

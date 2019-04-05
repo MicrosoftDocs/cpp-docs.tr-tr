@@ -8,12 +8,12 @@ helpviewer_keywords:
 - user records, described
 - rowsets, user record
 ms.assetid: 9c0d2864-2738-4f62-a750-1016d9c3523f
-ms.openlocfilehash: 4a06a378ba7d4084b68c98ab029aec1670be982d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b37835f1a3161edd10f61f9b4e76cfb5f558e07b
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50570329"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59038531"
 ---
 # <a name="user-record"></a>Kullanıcı Kaydı
 
@@ -66,6 +66,6 @@ PROVIDER_COLUMN_MAP makroları yardımcı oluştururken bir `GetColumnInfo` işl
 
 Geçersiz kılmak daha ayrıntılı bir örnek `GetColumnInfo` bir kullanıcı kaydı görebilirsiniz [dinamik olarak belirleme sütunları döndürülen tüketici](../../data/oledb/dynamically-determining-columns-returned-to-the-consumer.md).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [OLE DB Sağlayıcı Şablonu Mimarisi](../../data/oledb/ole-db-provider-template-architecture.md)<br/>

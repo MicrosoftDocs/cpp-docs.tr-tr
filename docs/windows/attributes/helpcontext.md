@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - helpcontext attribute
 ms.assetid: 6fbb022d-a4b7-4989-a02f-7f18a9b0ad96
-ms.openlocfilehash: 921e5370303cb62830ec281bcefd7c03331efaeb
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 22023b4087c67b62d540d021fa06fd3582c7e4e2
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50552756"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59038180"
 ---
 # <a name="helpcontext"></a>helpcontext
 
@@ -25,8 +25,8 @@ Bu öğe ile ilgili kullanıcı bilgilerini görüntüle sağlayan bir bağlam k
 
 ### <a name="parameters"></a>Parametreler
 
-*id*<br/>
-Yardım içeriği kimliği. Bkz: [HTML Help: Context-Sensitive Help for Your Programs](../../mfc/html-help-context-sensitive-help-for-your-programs.md) bağlam kimlikleri hakkında daha fazla bilgi için.
+*kimlik*<br/>
+Yardım içeriği kimliği. Bkz: [HTML Yardımı: Programlarınızı için bağlama duyarlı Yardım](../../mfc/html-help-context-sensitive-help-for-your-programs.md) bağlam kimlikleri hakkında daha fazla bilgi için.
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -42,16 +42,16 @@ Yardım içeriği kimliği. Bkz: [HTML Help: Context-Sensitive Help for Your Pro
 
 |||
 |-|-|
-|**İçin geçerlidir**|**arabirimi**, **typedef**, **sınıfı**, yöntem, özellik|
+|**Uygulandığı öğe:**|**arabirimi**, **typedef**, **sınıfı**, yöntem, özellik|
 |**Tekrarlanabilir**|Hayır|
 |**Gerekli öznitelikleri**|Yok.|
 |**Geçersiz öznitelikler**|Yok.|
 
 Daha fazla bilgi için [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[IDL öznitelikleri](idl-attributes.md)<br/>
+[IDL Öznitelikleri](idl-attributes.md)<br/>
 [Arabirim Öznitelikleri](interface-attributes.md)<br/>
 [Sınıf Öznitelikleri](class-attributes.md)<br/>
 [Yöntem Öznitelikleri](method-attributes.md)<br/>
