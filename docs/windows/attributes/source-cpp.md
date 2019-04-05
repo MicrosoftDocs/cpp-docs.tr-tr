@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - source attribute
 ms.assetid: 1878d05d-7709-4e97-b114-c62f38f5140e
-ms.openlocfilehash: 59ed66acbbd6ef876e6052767dc5a5243d4b8dd6
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 699ea64de49a4383bc8fb62b2f3b2133d7c496c9
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50476537"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59030251"
 ---
 # <a name="source-c"></a>kaynak (C++)
 
@@ -25,7 +25,7 @@ Sınıfta, COM nesnesinin kaynak arabirimleri için bağlantı noktalarını bel
 
 ### <a name="parameters"></a>Parametreler
 
-*Arabirimleri*<br/>
+*arabirimler*<br/>
 Kaynak uyguladığınızda belirttiğiniz bir veya daha fazla arabirim bir sınıfa öznitelik. Kaynak bir özellik veya yöntem uygulandığında, bu parametre kullanılmaz.
 
 ## <a name="remarks"></a>Açıklamalar
@@ -74,16 +74,16 @@ class NN : public b
 
 |||
 |-|-|
-|**İçin geçerlidir**|**sınıf**, **yapı**, **arabirimi**|
+|**Uygulandığı öğe:**|**sınıf**, **yapı**, **arabirimi**|
 |**Tekrarlanabilir**|Hayır|
 |**Gerekli öznitelikleri**|`coclass` (sınıf veya yapı için uygulandığında)|
 |**Geçersiz öznitelikler**|Yok.|
 
 Öznitelik bağlamları hakkında daha fazla bilgi için bkz: [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[IDL öznitelikleri](idl-attributes.md)<br/>
+[IDL Öznitelikleri](idl-attributes.md)<br/>
 [Sınıf Öznitelikleri](class-attributes.md)<br/>
 [Yöntem Öznitelikleri](method-attributes.md)<br/>
 [coclass](coclass.md)

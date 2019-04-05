@@ -7,12 +7,12 @@ helpviewer_keywords:
 - OLE DB consumer templates [C++]
 - databases [C++], consumers
 ms.assetid: d3e42612-0bc0-4d65-9c32-0e8a7b219e82
-ms.openlocfilehash: a93b0a48bc5996cbb96194762b9c03ea143556e2
-ms.sourcegitcommit: c1f646c8b72f330fa8cf5ddb0f8f261ba10d16f0
+ms.openlocfilehash: d2697c955d2063bb075e06536b083c0b138aa4ac
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58328733"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59031965"
 ---
 # <a name="ole-db-consumer-templates-c"></a>OLE DB Tüketici Şablonları (C++)
 
@@ -56,7 +56,7 @@ Daha fazla bilgi için aşağıdaki konulara bakın:
 
 - [OLE DB Tüketici senaryoları (örnekler)](../../data/oledb/working-with-ole-db-consumer-templates.md)
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [OLE DB Programlama](../../data/oledb/ole-db-programming.md)<br/>
 [Veri Erişimi](../data-access-in-cpp.md)<br/>

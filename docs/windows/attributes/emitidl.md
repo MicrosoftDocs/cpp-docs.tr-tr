@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - emitidl attribute
 ms.assetid: 85b80c56-578e-4392-ac03-8443c74ebb7d
-ms.openlocfilehash: 4270c760c0d9d0ab833ee96dfbbaa9d6205026f0
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 6c4055e0f14bced1e5047fc502a4bf274126f804
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50437971"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59031640"
 ---
 # <a name="emitidl"></a>emitidl
 
@@ -25,7 +25,7 @@ Tüm sonraki IDL öznitelikleri işlenir ve oluşturulan .idl dosyasında yerle�
 
 ### <a name="parameters"></a>Parametreler
 
-*durumu*<br/>
+*durum*<br/>
 Bu değerlerden biri: `true`, `false`, `forced`, `restricted`, `push`, veya `pop`.
 
 - Varsa `true`, bir kaynak kodu dosyasında karşılaşılan kategori IDL öznitelikleri oluşturulan .idl dosyasında yerleştirilir. İçin varsayılan ayar budur **emitidl**.
@@ -58,14 +58,14 @@ Derleyici, yeni bir dosya karşılaştığında her zaman **emitidl** örtük ol
 
 |||
 |-|-|
-|**İçin geçerlidir**|Her yerde|
+|**Uygulandığı öğe:**|Her yerde|
 |**Tekrarlanabilir**|Hayır|
 |**Gerekli öznitelikleri**|Yok.|
 |**Geçersiz öznitelikler**|Yok.|
 
 Daha fazla bilgi için [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Derleyici Öznitelikleri](compiler-attributes.md)<br/>
 [Tek Başına Öznitelikler](stand-alone-attributes.md)

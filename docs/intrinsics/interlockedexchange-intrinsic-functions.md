@@ -44,16 +44,16 @@ helpviewer_keywords:
 - _InterlockedExchange intrinsic
 - _InterlockedExchange8_nf
 ms.assetid: be2f232a-6301-462a-a92b-fcdeb8b0f209
-ms.openlocfilehash: bccf9f46a886a622c493485818601044afff232d
-ms.sourcegitcommit: c1f646c8b72f330fa8cf5ddb0f8f261ba10d16f0
+ms.openlocfilehash: 3945b8a7516962531050e999e96bdef31b179bbb
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58328525"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59021501"
 ---
 # <a name="interlockedexchange-intrinsic-functions"></a>_Interlockedexchange iç işlevleri
 
-**Microsoft'a özgü**
+**Microsoft'a Özgü**
 
 Belirtilen değere ayarlanacak atomik bir yönerge oluşturur.
 
@@ -180,10 +180,10 @@ Bu yordamlar, yalnızca iç öğe olarak kullanılabilir.
 
 Nasıl kullanılacağını gösteren bir örnek `_InterlockedExchange`, bkz: [_ınterlockeddecrement](../intrinsics/interlockeddecrement-intrinsic-functions.md).
 
-**END Microsoft özgü**
+**END Microsoft'a Özgü**
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)<br/>
-[Anahtar Sözcükler](../cpp/keywords-cpp.md)<br/>
+[anahtar sözcükler](../cpp/keywords-cpp.md)<br/>
 [x86 Derleyicisi ile Çakışma](../build/x64-software-conventions.md#conflicts-with-the-x86-compiler)

@@ -8,16 +8,16 @@ helpviewer_keywords:
 - __stosb intrinsic
 - stosb instruction
 ms.assetid: 634589ed-2da3-439b-a381-a214d89bf10c
-ms.openlocfilehash: 25b037d17c1648816fe97fc5140aa0bfa7284f05
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 679f1a892a6ee5b458a05d1577ecf766bed385dd
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50465214"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59035010"
 ---
 # <a name="stosb"></a>__stosb
 
-**Microsoft'a özgü**
+**Microsoft'a Özgü**
 
 Bir depolama dize yönergesi oluşturur (`rep stosb`).
 
@@ -39,7 +39,7 @@ void __stosb(
 *Veri*<br/>
 [in] Depolamak için veriler.
 
-*Sayısı*<br/>
+*Sayı*<br/>
 [in] Yazılacak bayt Blok uzunluğu.
 
 ## <a name="requirements"></a>Gereksinimler
@@ -83,8 +83,8 @@ int main()
 *@@@@@@**************************
 ```
 
-**END Microsoft özgü**
+**END Microsoft'a Özgü**
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)

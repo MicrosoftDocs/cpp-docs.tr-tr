@@ -3,12 +3,12 @@ title: 'Nasıl yapılır: WRL kullanarak Windows çalışma zamanı bileşenini 
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 54828f02-6af3-45d1-b965-d0104442f8d5
-ms.openlocfilehash: ccc64769ca319e8aba141ce95a00eb876cc051f3
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.openlocfilehash: 8c0bed825f76fdf0f2c5cc1fa095e54f08bb8a67
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58787212"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59037223"
 ---
 # <a name="how-to-activate-and-use-a-windows-runtime-component-using-wrl"></a>Nasıl yapılır: WRL kullanarak Windows çalışma zamanı bileşenini etkinleştirme ve kullanma
 
@@ -78,6 +78,6 @@ Kodu derlemek için kopyalayın ve bir Visual Studio projesine yapıştırın ve
 
 `cl.exe wrl-consume-component.cpp runtimeobject.lib`
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Windows Çalışma Zamanı C++ Şablon Kitaplığı (WRL)](windows-runtime-cpp-template-library-wrl.md)

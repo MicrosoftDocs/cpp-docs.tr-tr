@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - max_is attribute
 ms.assetid: 7c851f5c-6649-4d77-a792-247c37d8f560
-ms.openlocfilehash: 10732d5ba3251185dc7027e3449486af3037f763
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: dca2a3dc18aa3c3e75bbb682ed0b1b90adcd9236
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50627480"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59041315"
 ---
 # <a name="maxis"></a>max_is
 
@@ -25,7 +25,7 @@ Geçerli dizi dizini için maksimum değeri atar.
 
 ### <a name="parameters"></a>Parametreler
 
-*İfade*<br/>
+*ifade*<br/>
 Bir veya daha fazla C dili ifadeleri. Boş bağımsız değişken yuvaları izin verilir.
 
 ## <a name="remarks"></a>Açıklamalar
@@ -38,9 +38,9 @@ Bir veya daha fazla C dili ifadeleri. Boş bağımsız değişken yuvaları izin
 
 |||
 |-|-|
-|**İçin geçerlidir**|İçinde alan **yapı** veya **birleşim**, parametre arabirim, arabirim yöntemi|
+|**Uygulandığı öğe:**|İçinde alan **yapı** veya **birleşim**, parametre arabirim, arabirim yöntemi|
 |**Tekrarlanabilir**|Hayır|
-|**Gerekli öznitelikleri**|Yok.|
+|**Gerekli öznitelikleri**|None|
 |**Geçersiz öznitelikler**|**size_is**|
 
 Daha fazla bilgi için [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
@@ -49,9 +49,9 @@ Daha fazla bilgi için [öznitelik bağlamları](cpp-attributes-com-net.md#conte
 
 Bkz: [first_is](first-is.md) örneği nasıl bir dizinin bir bölümünü belirtin.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[IDL öznitelikleri](idl-attributes.md)<br/>
+[IDL Öznitelikleri](idl-attributes.md)<br/>
 [Typedef, Enum, Union ve Struct Öznitelikleri](typedef-enum-union-and-struct-attributes.md)<br/>
 [Parametre Öznitelikleri](parameter-attributes.md)<br/>
 [first_is](first-is.md)<br/>

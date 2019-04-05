@@ -30,12 +30,12 @@ helpviewer_keywords:
 - OnPropertyChanged method
 - SetPropValue method
 ms.assetid: bb525178-765c-4e23-a110-c0fd70c05437
-ms.openlocfilehash: 1c45e28e0e74d7216023f06ad22896c53c9226b8
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: 3f1af90bcf454a3651dd8de65bbee7cb6b5960ca
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57423059"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59037626"
 ---
 # <a name="cutlprops-class"></a>CUtlProps Sınıfı
 
@@ -94,7 +94,7 @@ OUT_OF_LINE HRESULT GetPropValue(const GUID* pguidPropSet,
 *pguidPropSet*<br/>
 [in] PropSet GUİD'i.
 
-*Dwpropıd*<br/>
+*dwPropId*<br/>
 [in] Özellik dizini.
 
 *pvValue*<br/>
@@ -216,7 +216,7 @@ HRESULT SetPropValue(const GUID* pguidPropSet,
 *pguidPropSet*<br/>
 [in] PropSet GUİD'i.
 
-*Dwpropıd*<br/>
+*dwPropId*<br/>
 [in] Özellik dizini.
 
 *pvValue*<br/>
@@ -226,7 +226,7 @@ HRESULT SetPropValue(const GUID* pguidPropSet,
 
 `Failure` hata ve başarılıysa S_OK.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[OLE DB sağlayıcı şablonları](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>
+[OLE DB Sağlayıcı Şablonları](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>
 [OLE DB Sağlayıcı Şablonu Mimarisi](../../data/oledb/ole-db-provider-template-architecture.md)

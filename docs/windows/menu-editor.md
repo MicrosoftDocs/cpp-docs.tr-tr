@@ -39,12 +39,12 @@ helpviewer_keywords:
 - commands [C++], deleting from menus
 - menus [C++], deleting
 ms.assetid: 421fb215-6e12-4ec9-a3af-82d77f87bfa6
-ms.openlocfilehash: 0681cc0a0d93d78633dd5488defaa0e9db55b1c6
-ms.sourcegitcommit: b4645761ce5acf8c2fc7a662334dd5a471ea976d
+ms.openlocfilehash: b5d809fa4e0f608d4c0e6cbdaf8697688c6d3f9c
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "57563140"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59037282"
 ---
 # <a name="menu-editor-c"></a>Menü Düzenleyicisi (C++)
 
@@ -194,7 +194,7 @@ Normalde, ne zaman çalışmakta olduğunuz **Menü Düzenleyici**, menü kayna�
 
 Win32
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Kaynak Düzenleyicileri](../windows/resource-editors.md)<br/>
 [Menü Komutları](../windows/menu-command-properties.md)<br/>

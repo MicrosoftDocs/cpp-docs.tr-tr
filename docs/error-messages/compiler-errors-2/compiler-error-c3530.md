@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3530
 ms.assetid: 21be81ce-b699-4c74-81bc-80a0c34d2d5a
-ms.openlocfilehash: 90f6000c7d4c4bfa0d610bd5942df0b958e47c60
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: dd4368faaf323a75116128ec3a47666260436fce
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50643636"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59029125"
 ---
 # <a name="compiler-error-c3530"></a>Derleyici Hatası C3530
 
@@ -37,6 +37,6 @@ int main()
 }
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [auto Anahtar Sözcüğü](../../cpp/auto-keyword.md)

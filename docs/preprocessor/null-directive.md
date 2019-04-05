@@ -7,12 +7,12 @@ helpviewer_keywords:
 - preprocessor directives
 - preprocessor, directives
 ms.assetid: df59990f-b420-43f3-b415-5c25493abeee
-ms.openlocfilehash: 740ef6d59295a96eaa93c3f2eeaf9a561b420b31
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ddb8239e6c168a3c20aeb252125e9dde60c7c4bf
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50437766"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59031819"
 ---
 # <a name="null-directive"></a>Null Yönergesi
 Boş ön işlemci yönergesi bir tek sayı işaretidir (**#**) tek başına bir satırdaki. Hiçbir etkisi yoktur.
@@ -23,6 +23,6 @@ Boş ön işlemci yönergesi bir tek sayı işaretidir (**#**) tek başına bir 
 #
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Ön işlemci Yönergeleri](../preprocessor/preprocessor-directives.md)

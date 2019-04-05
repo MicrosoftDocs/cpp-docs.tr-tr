@@ -7,12 +7,12 @@ helpviewer_keywords:
 - preprocessor, operators
 - '## preprocessor operator'
 ms.assetid: 4f173503-990f-4bff-aef3-ec4d1f1458ef
-ms.openlocfilehash: c013d6a4ce34372e2f195876166e299f62d85d3f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: dab4da5fd65fc280d2061256a580a015917d24b6
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50605952"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59029949"
 ---
 # <a name="token-pasting-operator-"></a>Belirteç Yapıştıran İşleç (##)
 
@@ -65,6 +65,6 @@ int main()
 token9 = 9
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[Ön İşlemci İşleçleri](../preprocessor/preprocessor-operators.md)
+[Ön işlemci İşleçleri](../preprocessor/preprocessor-operators.md)

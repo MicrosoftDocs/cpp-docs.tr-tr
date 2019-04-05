@@ -8,12 +8,12 @@ helpviewer_keywords:
 - <code> C++ XML tag
 - code C++ XML tag
 ms.assetid: 687db3f8-d435-4a90-b781-8da503fa39bc
-ms.openlocfilehash: c50b14d1905d7d827215ba9583026f8489c3a1e0
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.openlocfilehash: d368f3c82afd028ce557db7d0507b3a6a4d7c118
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57823646"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59035815"
 ---
 # <a name="ltcodegt"></a>&lt;Kod&gt;
 
@@ -27,7 +27,7 @@ ms.locfileid: "57823646"
 
 #### <a name="parameters"></a>Parametreler
 
-*İçeriği*<br/>
+*içerik*<br/>
 Kod olarak işaretlenmiş istediğiniz metin.
 
 ## <a name="remarks"></a>Açıklamalar
@@ -40,6 +40,6 @@ Derleme [/doc](doc-process-documentation-comments-c-cpp.md) işlem belgeleri aç
 
 Bkz: [ \<örnek >](example-visual-cpp.md) nasıl kullanılacağına ilişkin bir örnek için konu \<kod > etiketi.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [XML Belgeleri](xml-documentation-visual-cpp.md)

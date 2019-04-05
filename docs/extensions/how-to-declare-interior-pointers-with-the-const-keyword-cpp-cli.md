@@ -5,12 +5,12 @@ ms.topic: reference
 helpviewer_keywords:
 - pointers, interior
 ms.assetid: 64e08b0e-9396-4046-ab51-8f6588f32330
-ms.openlocfilehash: 22e190edb1f3e7a971a650c6db9af0e57d1034a5
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.openlocfilehash: 62daa255749747e3c4b9b24e29d38c0cb6f50d0f
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58787879"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59026678"
 ---
 # <a name="how-to-declare-interior-pointers-with-the-const-keyword-ccli"></a>Nasıl yapılır: Const anahtar sözcüğü ile iç işaretçileri bildirme (C + +/ CLI)
 
@@ -78,6 +78,6 @@ int main() {
 };
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [interior_ptr (C++/CLI)](interior-ptr-cpp-cli.md)

@@ -8,16 +8,16 @@ helpviewer_keywords:
 - __outbytestring intrinsic
 - outsb instruction
 ms.assetid: c9150661-9c18-427f-bae8-710bba6ed78c
-ms.openlocfilehash: c5d99ee230780d1bfdcd104c1fcf3b3bd099fd6e
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.openlocfilehash: 41064dda6a1a0b9ad4c15f98c3f3081f08ef8db6
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51326933"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59032199"
 ---
 # <a name="outbytestring"></a>__outbytestring
 
-**Microsoft'a özgü**
+**Microsoft'a Özgü**
 
 Oluşturur `rep outsb` gönderen ilk yönerge `Count` verileri baytlık tarafından işaret edilen `Buffer` tarafından belirtilen bağlantı noktasına `Port`.
 
@@ -33,13 +33,13 @@ void __outbytestring(
 
 #### <a name="parameters"></a>Parametreler
 
-*Bağlantı noktası*<br/>
+*Bağlantı Noktası*<br/>
 [in] Veri göndermek için bağlantı noktası.
 
 *Arabellek*<br/>
 [in] Belirtilen bağlantı noktasına gönderilecek veri.
 
-*Sayısı*<br/>
+*Sayı*<br/>
 [in] Veri gönderilecek bayt sayısı.
 
 ## <a name="requirements"></a>Gereksinimler
@@ -54,8 +54,8 @@ void __outbytestring(
 
 Bu yordam yalnızca bir iç öğe olarak kullanılabilir.
 
-**END Microsoft özgü**
+**END Microsoft'a Özgü**
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)

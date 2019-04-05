@@ -10,12 +10,12 @@ helpviewer_keywords:
 - ODBC data sources [C++], connections
 - database connections [C++], MFC ODBC classes
 ms.assetid: ef6c8c98-5979-43a8-9fb5-5bb06fc59f36
-ms.openlocfilehash: b7bb0ffe169fd9b4167e6af4b772df23acf02212
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 1740a34036798dac69ffc8b486e03bf6439845a5
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50575532"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59024568"
 ---
 # <a name="connecting-to-a-data-source"></a>Veri Kaynağına Bağlanma
 
@@ -33,6 +33,6 @@ Veri kaynağı bağlantıları sınıfı tarafından Kapsüllenen [CDatabase](..
 
 Veri kaynağı bağlantısı ile çalışmayı bitirdiğinizde, siz kapatana `CDatabase` nesne ve onu yok veya yeniden kullanmak için yeni bir bağlantı. Veri kaynağı bağlantıları hakkında daha fazla bilgi için bkz. [veri kaynağı (ODBC)](../../data/odbc/data-source-odbc.md).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [ODBC ve MFC](../../data/odbc/odbc-and-mfc.md)

@@ -13,16 +13,16 @@ helpviewer_keywords:
 - __addfsword intrinsic
 - __addfsbyte intrinsic
 ms.assetid: 706c70df-6b52-4401-9268-2977ed8ad715
-ms.openlocfilehash: 477d8ddfe970c6d04e61a47eb4bb10e3fbc570de
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.openlocfilehash: 61053d9f8c56d8352b12ed535dfa870c0856f558
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51329078"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59032709"
 ---
 # <a name="addfsbyte-addfsword-addfsdword"></a>__addfsbyte, __addfsword, __addfsdword
 
-**Microsoft'a özgü**
+**Microsoft'a Özgü**
 
 Başlangıcına göre bir uzaklık tarafından belirtilen bellek konumuna bir değer ekleyin `FS` kesimi.
 
@@ -45,7 +45,7 @@ void __addfsdword(
 
 #### <a name="parameters"></a>Parametreler
 
-*uzaklık*<br/>
+*Uzaklık*<br/>
 [in] Başından uzaklık `FS`.
 
 *Veri*<br/>
@@ -63,9 +63,9 @@ void __addfsdword(
 
 Bu yordamlar, yalnızca iç öğe olarak kullanılabilir.
 
-**END Microsoft özgü**
+**END Microsoft'a Özgü**
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [__incfsbyte, \__incfsword, \__incfsdword](../intrinsics/incfsbyte-incfsword-incfsdword.md)<br/>
 [__readfsbyte, \__readfsdword, \__readfsqword, \__readfsword](../intrinsics/readfsbyte-readfsdword-readfsqword-readfsword.md)<br/>

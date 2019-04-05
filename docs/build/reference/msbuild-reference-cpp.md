@@ -3,12 +3,12 @@ title: Visual Studio'da C++ projeleri için MSBuild başvurusu
 ms.date: 12/08/2018
 helpviewer_keywords:
 - MSBuild reference [C++]
-ms.openlocfilehash: 854dc0554c327f191b4b4b9694548cdb9983c5f8
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.openlocfilehash: b6ec6b5d276cb7104cf61c229476596d2a2a7684
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57823651"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59024705"
 ---
 # <a name="msbuild-reference-for-c-projects"></a>C++ projeleri için MSBuild başvurusu
 
@@ -38,6 +38,6 @@ Kaynak dosyaları ve Visual Studio projesine eklediğiniz diğer öğeleri açı
 [Visual Studio Proje Özellik Başvurusu](property-pages-visual-cpp.md)<br/>
 Proje özellikleri, Visual Studio IDE içinde ayarlamak için başvuru belgeleri.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[C/C++ Derleme Başvurusu](c-cpp-building-reference.md)
+[C/C++ Oluşturma Başvurusu](c-cpp-building-reference.md)

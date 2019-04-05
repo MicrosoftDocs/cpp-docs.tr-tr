@@ -7,16 +7,16 @@ helpviewer_keywords:
 - movntss instruction
 - _mm_stream_ss intrinsic
 ms.assetid: c53dffe9-0dfe-4063-85d3-e8987b870fce
-ms.openlocfilehash: 089f8d5501c18b679a3d5878bb30762d2dcc1e04
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 76c6c848351df773b9857b2f83726b64db982d9f
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50438915"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59031204"
 ---
 # <a name="mmstreamss"></a>_mm_stream_ss
 
-**Microsoft'a özgü**
+**Microsoft'a Özgü**
 
 32-bit veri önbelleklerinin kirletmesini olmadan bir bellek konumuna yazar.
 
@@ -87,11 +87,11 @@ f[0] = -1, f[1] = -2
 f[2] = -3, f[3] = 3
 ```
 
-**END Microsoft özgü**
+**END Microsoft'a Özgü**
 
 Telif Hakkı 2007 Gelişmiş Micro cihazlar, Inc. Tüm hakları saklıdır. Gelişmiş Micro cihazlar, Inc. izniyle üretilemez
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [_mm_stream_sd](../intrinsics/mm-stream-sd.md)<br/>
 [_mm_stream_ps](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_stream_ps)<br/>

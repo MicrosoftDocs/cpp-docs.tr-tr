@@ -1,5 +1,5 @@
 ---
-title: 'Kayıt kümesi: Kayıtları Ekleme, Güncelleştirme ve Silme (ODBC)'
+title: 'Kayıt kümesi: Ekleme, güncelleştirme ve silme kayıtlarını (ODBC)'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - records [C++], updating
@@ -18,22 +18,22 @@ helpviewer_keywords:
 - ODBC recordsets [C++], editing records
 - records [C++], editing
 ms.assetid: 760c8889-bec4-482b-a8f2-319792a6af98
-ms.openlocfilehash: a13bffdc79f01c49c290b8b5d4388f06ce777105
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 28c885119816c1df662cc0b941e02cb3cf747f3d
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50512378"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59024614"
 ---
-# <a name="recordset-adding-updating-and-deleting-records-odbc"></a>Kayıt kümesi: Kayıtları Ekleme, Güncelleştirme ve Silme (ODBC)
+# <a name="recordset-adding-updating-and-deleting-records-odbc"></a>Kayıt kümesi: Ekleme, güncelleştirme ve silme kayıtlarını (ODBC)
 
 Bu konu MFC ODBC sınıflarına uygulanır.
 
 > [!NOTE]
->  Artık kayıtları toplu olarak daha verimli bir şekilde ekleyebilirsiniz. Daha fazla bilgi için [kayıt kümesi: kayıtları ekleme (ODBC) toplu](../../data/odbc/recordset-adding-records-in-bulk-odbc.md).
+>  Artık kayıtları toplu olarak daha verimli bir şekilde ekleyebilirsiniz. Daha fazla bilgi için [kayıt kümesi: Kayıtları toplu yakalama (ODBC) içinde ekleme](../../data/odbc/recordset-adding-records-in-bulk-odbc.md).
 
 > [!NOTE]
->  Bu konu, türetilmiş nesneler için geçerlidir. `CRecordset` toplu satır getirme uygulanmadı. Toplu satır getirme kullanıyorsanız bkz [kayıt kümesi: Kayıtları toplu (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md).
+>  Bu konu, türetilmiş nesneler için geçerlidir. `CRecordset` toplu satır getirme uygulanmadı. Toplu satır getirme kullanıyorsanız bkz [kayıt kümesi: Kayıtları toplu yakalama (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md).
 
 Eklemeyi, güncelleştirilebilir anlık görüntüler ve dinamik kümeler (güncelleştirme) Düzenle ve kayıtlarını silin. Bu konu şunları açıklar:
 
@@ -45,7 +45,7 @@ Eklemeyi, güncelleştirilebilir anlık görüntüler ve dinamik kümeler (günc
 
 - [Bir kaydı silmek nasıl](#_core_deleting_a_record_from_a_recordset).
 
-Güncelleştirmelerin nasıl yapıldığı hakkında daha fazla bilgi için çıkış ve güncelleştirmelerinizi diğer kullanıcılara gösterilme görmek [kayıt kümesi: nasıl kayıt kümelerini güncelleştirme kayıtları (ODBC)](../../data/odbc/recordset-how-recordsets-update-records-odbc.md). Normalde, eklemek, düzenlemek veya kayıt silme, veri kaynağı hemen kayıt kümesini değiştirir. Bunun yerine işlemleri toplu ilgili güncelleştirmeler grupları. Bir işlem devam ediyor, işlemin yürütene kadar güncelleştirme son olmaz. Bu, geri alabilir veya değişiklikleri geri alma sağlar. İşlemler hakkında daha fazla bilgi için bkz. [işlem (ODBC)](../../data/odbc/transaction-odbc.md).
+Güncelleştirmelerin nasıl yapıldığı hakkında daha fazla bilgi için çıkış ve güncelleştirmelerinizi diğer kullanıcılara gösterilme görmek [kayıt kümesi: Kümelerinin kayıtları Güncelleştirmesi (ODBC) kayıtları](../../data/odbc/recordset-how-recordsets-update-records-odbc.md). Normalde, eklemek, düzenlemek veya kayıt silme, veri kaynağı hemen kayıt kümesini değiştirir. Bunun yerine işlemleri toplu ilgili güncelleştirmeler grupları. Bir işlem devam ediyor, işlemin yürütene kadar güncelleştirme son olmaz. Bu, geri alabilir veya değişiklikleri geri alma sağlar. İşlemler hakkında daha fazla bilgi için bkz. [işlem (ODBC)](../../data/odbc/transaction-odbc.md).
 
 Aşağıdaki tabloda, farklı güncelleştirme özellikleri olan kayıt kümeleri için kullanılabilen seçenekler özetlenmektedir.
 
@@ -102,9 +102,9 @@ Yeni kayıtlar, kayıt kümesine ekleyebilirsiniz, [CanAppend](../../mfc/referen
 
 1. Kayıt kümesi nesnenin `Update` üye işlevi.
 
-   `Update` Ayrıca, veri kaynağına yeni kayıt yazarak tamamlar. Hakkında bilgi çağırmak başarısız olur için `Update`, bkz: [kayıt kümesi: nasıl kayıt kümelerini güncelleştirme kayıtları (ODBC)](../../data/odbc/recordset-how-recordsets-update-records-odbc.md).
+   `Update` Ayrıca, veri kaynağına yeni kayıt yazarak tamamlar. Hakkında bilgi çağırmak başarısız olur için `Update`, bkz: [kayıt kümesi: Kümelerinin kayıtları Güncelleştirmesi (ODBC) kayıtları](../../data/odbc/recordset-how-recordsets-update-records-odbc.md).
 
-Kayıt eklemeler nasıl çalışır ve eklenen kayıtlar kümenizde görünür olduğunda hakkında bilgi için bkz [kayıt kümesi: nasıl AddNew, düzenleme ve silme çalışma (ODBC)](../../data/odbc/recordset-how-addnew-edit-and-delete-work-odbc.md).
+Kayıt eklemeler nasıl çalışır ve eklenen kayıtlar kümenizde görünür olduğunda hakkında bilgi için bkz [kayıt kümesi: Nasıl AddNew, düzenleme ve silme (ODBC) iş](../../data/odbc/recordset-how-addnew-edit-and-delete-work-odbc.md).
 
 Aşağıdaki örnek, yeni bir kayıt eklemek gösterilmektedir:
 
@@ -147,7 +147,7 @@ Var olan kayıtların düzenleyebilirsiniz kümenizin [CanUpdate](../../mfc/refe
 
 1. Kayıt kümesi nesnenin `Update` üye işlevi.
 
-   `Update` Düzen, veri kaynağına değiştirilmiş kayıt yazarak tamamlar. Hakkında bilgi çağırmak başarısız olur için `Update`, bkz: [kayıt kümesi: nasıl kayıt kümelerini güncelleştirme kayıtları (ODBC)](../../data/odbc/recordset-how-recordsets-update-records-odbc.md).
+   `Update` Düzen, veri kaynağına değiştirilmiş kayıt yazarak tamamlar. Hakkında bilgi çağırmak başarısız olur için `Update`, bkz: [kayıt kümesi: Kümelerinin kayıtları Güncelleştirmesi (ODBC) kayıtları](../../data/odbc/recordset-how-recordsets-update-records-odbc.md).
 
 Bir kayıt düzenledikten sonra geçerli kayıt düzenlenmiş kayıt kalır.
 
@@ -197,9 +197,9 @@ rsStudent.Delete( );
 rsStudent.MoveNext( );
 ```
 
-Etkileri hakkında daha fazla bilgi için `AddNew`, `Edit`, ve `Delete` üye işlevleri [kayıt kümesi: nasıl kayıt kümelerini güncelleştirme kayıtları (ODBC)](../../data/odbc/recordset-how-recordsets-update-records-odbc.md).
+Etkileri hakkında daha fazla bilgi için `AddNew`, `Edit`, ve `Delete` üye işlevleri [kayıt kümesi: Kümelerinin kayıtları Güncelleştirmesi (ODBC) kayıtları](../../data/odbc/recordset-how-recordsets-update-records-odbc.md).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Kayıt Kümesi (ODBC)](../../data/odbc/recordset-odbc.md)<br/>
-[Kayıt Kümesi: Kayıtları Kilitleme (ODBC)](../../data/odbc/recordset-locking-records-odbc.md)
+[Kayıt kümesi: Kayıtları Kilitleme (ODBC)](../../data/odbc/recordset-locking-records-odbc.md)

@@ -6,12 +6,12 @@ helpviewer_keywords:
 - generic interfaces
 - interfaces, generic [C++}
 ms.assetid: f3da788a-ba83-4db7-9dcf-9b95a8fb9d1a
-ms.openlocfilehash: b37cf7fee6dba46d99788bd91c42a8e36846b1bd
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.openlocfilehash: 035636f2723cd949f5a1852b3d5500a20f5fb493
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58787598"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59021507"
 ---
 # <a name="generic-interfaces-ccli"></a>Genel arabirimler (C + +/ CLI)
 
@@ -32,7 +32,7 @@ Arabirimleri hakkında daha fazla bilgi için bkz. [arabirim sınıfı](interfac
 
 ## <a name="remarks"></a>Açıklamalar
 
-*Öznitelikleri*<br/>
+*öznitelikler*<br/>
 (İsteğe bağlı) Ek bildirim temelli bilgiler. Öznitelikler ve öznitelik sınıfları hakkında daha fazla bilgi için bkz. **öznitelikleri**.
 
 *sınıf anahtarı*<br/>
@@ -56,7 +56,7 @@ Arabirim adı.
 *Arabirim-gövdesi*<br/>
 Arabirim üyelerinin bildirimleri.
 
-*Bildirimciler*<br/>
+*bildirimciler*<br/>
 (İsteğe bağlı) Bu türe dayanan değişkenlerin bildirimleri.
 
 ## <a name="example"></a>Örnek
@@ -313,6 +313,6 @@ The integer field contains: 1234
 The String field contains: My string
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Genel Türler](generics-cpp-component-extensions.md)

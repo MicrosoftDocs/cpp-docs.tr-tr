@@ -40,12 +40,12 @@ helpviewer_keywords:
 - Open method
 - StartTransaction method
 ms.assetid: 83cd798f-b45d-4f11-a23c-29183390450c
-ms.openlocfilehash: c4f6cc19897b66bfe26c6d53ccb87c35dbed82c9
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.openlocfilehash: b34a6300473db94621360f1d04fd73ddd7e8bd69
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58777655"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59041464"
 ---
 # <a name="csession-class"></a>CSession Sınıfı
 
@@ -67,11 +67,11 @@ class CSession
 
 |||
 |-|-|
-|[Abort](#abort)|İptal (sonlandırır) işlem.|
-|[Kapat](#close)|Bir oturumu kapatır.|
+|[Durdurma](#abort)|İptal (sonlandırır) işlem.|
+|[Close](#close)|Bir oturumu kapatır.|
 |[İşleme](#commit)|hareketi tamamlar.|
 |[GetTransactionInfo](#gettransactioninfo)|Bir işlem ile ilgili bilgileri döndürür.|
-|[açın](#open)|Veri kaynağı nesnesi için yeni bir oturum açar.|
+|[Open](#open)|Veri kaynağı nesnesi için yeni bir oturum açar.|
 |[StartTransaction](#starttransaction)|Bu oturum için yeni bir işlem başlar.|
 
 ## <a name="remarks"></a>Açıklamalar
@@ -214,7 +214,7 @@ Standart bir HRESULT.
 
 Daha fazla bilgi için [ITransactionLocal::StartTransaction](/previous-versions/windows/desktop/ms709786(v=vs.85)) içinde *OLE DB Programcının Başvurusu*.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [CatDB](../../overview/visual-cpp-samples.md)<br/>
 [OLE DB Tüketici Şablonları](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>

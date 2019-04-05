@@ -1,5 +1,5 @@
 ---
-title: 'Kayıt Kümesi: Kayıt Kümeleri Oluşturma ve Kapatma (ODBC)'
+title: 'Kayıt kümesi: Oluşturma ve kapatma (ODBC) kayıt kümeleri'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - ODBC recordsets, creating
@@ -9,14 +9,14 @@ helpviewer_keywords:
 - ODBC recordsets, closing
 - ODBC recordsets, opening
 ms.assetid: 8d2aac23-4396-4ce2-8c60-5ecf1b360d3d
-ms.openlocfilehash: d98f7e59e52b86a1b9b1c3ffac5c3e7160e6c36d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 5d5dae5bc766c0cfc31b4fb76f7fe104be0dbd74
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50581512"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59041273"
 ---
-# <a name="recordset-creating-and-closing-recordsets-odbc"></a>Kayıt Kümesi: Kayıt Kümeleri Oluşturma ve Kapatma (ODBC)
+# <a name="recordset-creating-and-closing-recordsets-odbc"></a>Kayıt kümesi: Oluşturma ve kapatma (ODBC) kayıt kümeleri
 
 Bu konu MFC ODBC sınıflarına uygulanır.
 
@@ -71,10 +71,10 @@ if(!rsStudent.Open(CRecordset::snapshot, NULL, CRecordset::readOnly))
 // Use the snapshot to operate on its records...
 ```
 
-Çağırdıktan sonra `Open`, nesnenin üye işlevleri ve veri üyelerine kayıtlarıyla çalışmak üzere kullanın. Bazı durumlarda, requery veya veri kaynağı üzerinde oluşan değişikliklerin eklenmesi için kayıt kümesini yenilemek isteyebilirsiniz. Daha fazla bilgi için [kayıt kümesi: bir kayıt kümesi (ODBC) kümesinde yeniden sorgulama](../../data/odbc/recordset-requerying-a-recordset-odbc.md).
+Çağırdıktan sonra `Open`, nesnenin üye işlevleri ve veri üyelerine kayıtlarıyla çalışmak üzere kullanın. Bazı durumlarda, requery veya veri kaynağı üzerinde oluşan değişikliklerin eklenmesi için kayıt kümesini yenilemek isteyebilirsiniz. Daha fazla bilgi için [kayıt kümesi: (ODBC) bir kayıt kümesinde yeniden sorgulama](../../data/odbc/recordset-requerying-a-recordset-odbc.md).
 
 > [!TIP]
->  Geliştirme sırasında kullandığınız bağlantı dizesi, son kullanıcılarınızın gereken aynı bağlantı dizesini olmayabilir. Bu konuda, uygulamanızın genelleştiriliyor hakkında daha fazla fikir için bkz [veri kaynağı: bağlantıları yönetme (ODBC)](../../data/odbc/data-source-managing-connections-odbc.md).
+>  Geliştirme sırasında kullandığınız bağlantı dizesi, son kullanıcılarınızın gereken aynı bağlantı dizesini olmayabilir. Bu konuda, uygulamanızın genelleştiriliyor hakkında daha fazla fikir için bkz [veri kaynağı: Bağlantıları yönetme (ODBC)](../../data/odbc/data-source-managing-connections-odbc.md).
 
 ##  <a name="_core_setting_recordset_options"></a> Kayıt kümesi seçeneklerini ayarlama
 
@@ -107,8 +107,8 @@ Kümenizin ile işiniz bittiğinde, atabilirsiniz ve kendi bellek ayırması ger
 
 `Close` kayıt kümesi boşaltır `HSTMT` tanıtıcı. C++ nesne yok.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Kayıt Kümesi (ODBC)](../../data/odbc/recordset-odbc.md)<br/>
-[Kayıt Kümesi: Kaydırma (ODBC)](../../data/odbc/recordset-scrolling-odbc.md)<br/>
-[Kayıt kümesi: Kayıtları Ekleme, Güncelleştirme ve Silme (ODBC)](../../data/odbc/recordset-adding-updating-and-deleting-records-odbc.md)
+[Kayıt kümesi: Kaydırma (ODBC)](../../data/odbc/recordset-scrolling-odbc.md)<br/>
+[Kayıt kümesi: Ekleme, güncelleştirme ve silme kayıtlarını (ODBC)](../../data/odbc/recordset-adding-updating-and-deleting-records-odbc.md)

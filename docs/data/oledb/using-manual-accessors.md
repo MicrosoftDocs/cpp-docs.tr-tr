@@ -6,12 +6,12 @@ helpviewer_keywords:
 - manual accessors
 - accessors [C++], manual
 ms.assetid: 29f00a89-0240-482b-8413-4120b9644672
-ms.openlocfilehash: 8b969b7bb939d8e7d2217234795b564e8d137208
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 4a7e2dcde20cdb06a2f4e708149e24ee7144597c
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50651769"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59028341"
 ---
 # <a name="using-manual-accessors"></a>El ile Çalışan Erişimcileri Kullanma
 
@@ -45,6 +45,6 @@ OLE DB Tüketici Şablonları ile bunları yapmak için `CManualAccessor` sını
 
 El ile erişimci örneği için bkz: `CDBListView::CallProcedure` içinde [DBVIEWER](https://github.com/Microsoft/VCSamples) örnek.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Erişimcileri Kullanma](../../data/oledb/using-accessors.md)

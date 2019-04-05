@@ -6,16 +6,16 @@ f1_keywords:
 helpviewer_keywords:
 - _writecr3 intrinsic
 ms.assetid: 959d49fa-69d5-47cf-88d2-7688367fe38f
-ms.openlocfilehash: ede5e08d5bbf2807597eec3c7569bc9a6166518d
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.openlocfilehash: 88467e4fb39abc9526e47a73f998d630470111a9
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51332029"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59037373"
 ---
 # <a name="writecr3"></a>__writecr3
 
-**Microsoft'a özgü**
+**Microsoft'a Özgü**
 
 Değeri Yazar `Data` CR3 kaydı.
 
@@ -44,8 +44,8 @@ void writecr3(
 
 Bu iç yalnızca çekirdek modunda kullanılabilir ve yordam yalnızca bir iç öğe olarak kullanılabilir.
 
-**END Microsoft özgü**
+**END Microsoft'a Özgü**
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)

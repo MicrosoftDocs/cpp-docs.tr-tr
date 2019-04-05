@@ -5,12 +5,12 @@ ms.topic: reference
 helpviewer_keywords:
 - custom attributes, targets
 ms.assetid: b4e6e224-da77-4520-b6e6-b96846e0ebc1
-ms.openlocfilehash: 837682a708099287e5642417ccf6f49de1a2c893
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.openlocfilehash: 502f5ba2e5bbb5bd5a5fcceca16acaa3987db4bc
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58787774"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59026684"
 ---
 # <a name="attribute-targets-ccli-and-ccx"></a>Öznitelik hedefleri (C + +/ CLI ve C + +/ CX)
 
@@ -272,6 +272,6 @@ ref class MyClass {};
 value struct MyStruct {};
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[Kullanıcı tanımlı öznitelikler](user-defined-attributes-cpp-component-extensions.md)
+[Kullanıcı Tanımlı Öznitelikler](user-defined-attributes-cpp-component-extensions.md)

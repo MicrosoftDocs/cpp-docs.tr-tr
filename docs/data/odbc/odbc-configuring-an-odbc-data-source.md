@@ -1,19 +1,19 @@
 ---
-title: 'ODBC: ODBC Veri Kaynağını Yapılandırma'
+title: 'ODBC: ODBC veri kaynağını yapılandırma'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - ODBC data sources, configuring
 - ODBC connections, configuring
 - configuring ODBC data sources
 ms.assetid: 1cd03e6a-8d59-4eca-a8c6-1010582d5e67
-ms.openlocfilehash: 96f4694e8aa321dc5844fc413ae9740bec5a416c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 259f0e2afa61096e4529a50ee2ba7de07b293c46
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50643087"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59034138"
 ---
-# <a name="odbc-configuring-an-odbc-data-source"></a>ODBC: ODBC Veri Kaynağını Yapılandırma
+# <a name="odbc-configuring-an-odbc-data-source"></a>ODBC: ODBC veri kaynağını yapılandırma
 
 Kullanılacak bir [veri kaynağı](../../data/odbc/data-source-odbc.md) geliştirdiğinizde, bir uygulama ile yapılandırmak için ODBC Yöneticisi kullanmanız gerekir. ODBC Yöneticisi kullanılabilir veri kaynakları ve bağlantı bilgilerini Windows kayıt defterinde izler. Eklemek, değiştirmek ve veri kaynakları silmek için ODBC Yöneticisi'ni kullanma **veri kaynakları** iletişim kutusu ekleyin ve ODBC sürücüleri silin.
 
@@ -24,7 +24,7 @@ ODBC Yöneticisi, Microsoft Foundation Classes (MFC) Kitaplığı veritabanı de
 
 MFC veritabanı uygulamaları için ODBC Kurulum ve yönetim programları yazma hakkında daha fazla bilgi için[Teknik Not 48](../../mfc/tn048-writing-odbc-setup-and-administration-programs.md).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [ODBC Temelleri](../../data/odbc/odbc-basics.md)<br/>
-[ODBC: ODBC API İşlevlerini Doğrudan Çağırma](../../data/odbc/odbc-calling-odbc-api-functions-directly.md)
+[ODBC: ODBC API işlevlerini doğrudan çağırma](../../data/odbc/odbc-calling-odbc-api-functions-directly.md)

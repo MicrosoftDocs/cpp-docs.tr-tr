@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - includelib attribute
 ms.assetid: cd90ea6e-5ae8-4f11-b8d1-662db95412b2
-ms.openlocfilehash: 4cfadc84b9131aa787323b4967ae9cfc4baabbcb
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 57f039eeae527dd03884b12e7d9eb424d87f597f
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50570423"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59030006"
 ---
 # <a name="includelib-c"></a>includelib (C++)
 
@@ -49,18 +49,18 @@ Aşağıdaki kodu, .cpp dosyasında gösterilir:
 
 |||
 |-|-|
-|**İçin geçerlidir**|Her yerde|
+|**Uygulandığı öğe:**|Her yerde|
 |**Tekrarlanabilir**|Evet|
 |**Gerekli öznitelikleri**|Yok.|
 |**Geçersiz öznitelikler**|Yok.|
 
 Daha fazla bilgi için [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[IDL öznitelikleri](idl-attributes.md)<br/>
+[IDL Öznitelikleri](idl-attributes.md)<br/>
 [Tek Başına Öznitelikler](stand-alone-attributes.md)<br/>
-[import](import.md)<br/>
+[içeri aktar](import.md)<br/>
 [importidl](importidl.md)<br/>
 [include](include-cpp.md)<br/>
 [importlib](importlib.md)

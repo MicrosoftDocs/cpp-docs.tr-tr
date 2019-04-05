@@ -8,12 +8,12 @@ helpviewer_keywords:
 - interface class keyword
 - interface struct keyword
 ms.assetid: 3ccea701-f50b-4da7-ad6b-f0ee1203e2b9
-ms.openlocfilehash: 3d6f559360b25cef118d9fee35a0a221a4074889
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.openlocfilehash: 60e8965e3ef2538554d8c664b35bd0849bd5e69e
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58787769"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59035858"
 ---
 # <a name="interface-class--ccli-and-ccx"></a>arabirim sınıfı (C + +/ CLI ve C + +/ CX)
 
@@ -34,7 +34,7 @@ name :  inherit_accessbase_interface{};interface_accessinterface structname :  i
 *interface_access*<br/>
 Bir arabirimin derleme dışından erişilebilirlik.  Olası değerler **genel** ve **özel**.  **özel** varsayılandır. İç içe geçmiş arabirimleri sahip bir *interface_access* tanımlayıcısı.
 
-*Adı*<br/>
+*name*<br/>
 Arabirimin adı.
 
 *inherit_access*<br/>
@@ -57,7 +57,7 @@ Daha fazla bilgi için bkz.:
 
 - [Arabirim statik Oluşturucusu](../dotnet/how-to-define-an-interface-static-constructor-cpp-cli.md)
 
-- [Genel Arabirimler (C++/CLI)](generic-interfaces-visual-cpp.md)
+- [Genel arabirimler (C + +/ CLI)](generic-interfaces-visual-cpp.md)
 
 Diğer CLR türleri hakkında daha fazla bilgi için bkz. [sınıfları ve yapıları](classes-and-structs-cpp-component-extensions.md).
 
@@ -218,6 +218,6 @@ ref struct R : I, J {
 };
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[.NET ve UWP İçin Bileşen Uzantıları](component-extensions-for-runtime-platforms.md)
+[.NET ve UWP için bileşen uzantıları](component-extensions-for-runtime-platforms.md)

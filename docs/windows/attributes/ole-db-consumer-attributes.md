@@ -9,12 +9,12 @@ helpviewer_keywords:
 - database attributes [C++/CLI]
 - attributes [C++/CLI], OLE DB consumer
 ms.assetid: 017b591f-8f9a-42b4-84d5-cc42a21ab0cc
-ms.openlocfilehash: 036ac539fcac715ba12e4c7cf7fc83edd7a23c38
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 9f89af963c9c49a8a94b2a4f0c8930ab714926e7
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50662952"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59035737"
 ---
 # <a name="ole-db-consumer-attributes"></a>OLE DB Tüketici Öznitelikleri
 OLE DB tüketici öznitelikleri temel kodu ekleme [OLE DB Tüketici Şablonları](../../data/oledb/ole-db-consumer-templates-reference.md)komutları çalıştırma ve veri erişimi açılış tablolar gibi görevleri gerçekleştiren bir çalışma OLE DB tüketici oluşturmak için.
@@ -28,6 +28,6 @@ OLE DB tüketici öznitelikleri temel kodu ekleme [OLE DB Tüketici Şablonları
 |[db_source](db-source.md)|Oluşturur ve bir veri kaynağı sağlayıcısı üzerinden bir bağlantı kapsüller.|
 |[db_table](db-table.md)|Bir OLE DB tablosu açılır.|
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Gruplara Göre Öznitelikler](attributes-by-group.md)

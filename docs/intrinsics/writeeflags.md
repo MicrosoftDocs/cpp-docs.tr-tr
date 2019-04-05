@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - __writeeflags intrinsics
 ms.assetid: a62a522c-d7fa-4f10-a620-a3b32bdf3f17
-ms.openlocfilehash: 8509bf37019d1525cdaca33bf1819d85ace7d75a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 6679a3b16def3ed413c5cec2a4bb7d5fe5d732c8
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50600050"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59030361"
 ---
 # <a name="writeeflags"></a>__writeeflags
 
@@ -42,9 +42,9 @@ Bu yordamlar, yalnızca iç öğe olarak kullanılabilir.
 
 **Üst bilgi dosyası** \<intrin.h >
 
-**END Microsoft özgü**
+**END Microsoft'a Özgü**
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)<br/>
 [__readeflags](../intrinsics/readeflags.md)

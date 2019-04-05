@@ -7,16 +7,16 @@ helpviewer_keywords:
 - UD2 instruction
 - __ud2 intrinsic
 ms.assetid: 0831cd5a-8b65-402e-bb57-11e1d5d7ffd2
-ms.openlocfilehash: dd876f26349c39e0af0d2e0f100fb4e13efa50f4
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: a36ab5c25ac9138b2a4d6810cc2a339e534f1695
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50666550"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59029414"
 ---
 # <a name="ud2"></a>__ud2
 
-**Microsoft'a özgü**
+**Microsoft'a Özgü**
 
 Tanımlanmayan bir yönerge oluşturur.
 
@@ -30,7 +30,7 @@ void __ud2();
 
 İşlemci, tanımlanmayan bir yönerge yürütmeyi bir geçersiz işlem kodu özel durum başlatır.
 
-`__ud2` İşlev, eşdeğer `UD2` makine yönerge ve yalnızca çekirdek modunda kullanılabilir. Belge için daha fazla bilgi için arama "Intel mimarisi yazılım geliştirici el ile 2 birim: yönerge kümesi başvurusu" konumunda [Intel Corporation'da](https://software.intel.com/articles/intel-sdm) site.
+`__ud2` İşlev, eşdeğer `UD2` makine yönerge ve yalnızca çekirdek modunda kullanılabilir. Belge için daha fazla bilgi için arama "Intel mimarisi yazılım geliştirici el ile 2 birim: Yönerge kümesi başvurusu"konumunda [Intel Corporation'da](https://software.intel.com/articles/intel-sdm) site.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -40,7 +40,7 @@ void __ud2();
 
 **Üst bilgi dosyası** \<intrin.h >
 
-**END Microsoft özgü**
+**END Microsoft'a Özgü**
 
 ## <a name="example"></a>Örnek
 
@@ -82,6 +82,6 @@ Before __ud2(). Return code = 0.
 After __ud2().  Return code = 1.
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)

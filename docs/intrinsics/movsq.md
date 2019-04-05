@@ -8,16 +8,16 @@ helpviewer_keywords:
 - rep movsq instruction
 - movsq instruction
 ms.assetid: be116a6e-2176-4ca4-93b1-9ccf3e7e7835
-ms.openlocfilehash: 06f42befa24d4024b3ad4b0c0a8d0897cb2aee9b
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.openlocfilehash: 4e4908cd5ffc28840b5a48b735048cccb557e97c
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51326374"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59036753"
 ---
 # <a name="movsq"></a>__movsq
 
-**Microsoft'a özgü**
+**Microsoft'a Özgü**
 
 Taşıma yinelenen bir dize oluşturur (`rep movsq`) yönerge.
 
@@ -39,7 +39,7 @@ void __movsq(
 *Kaynak*<br/>
 [in] İşlem kaynağı.
 
-*Sayısı*<br/>
+*Sayı*<br/>
 [in] Kopyalanacak quadwords sayısı.
 
 ## <a name="requirements"></a>Gereksinimler
@@ -83,8 +83,8 @@ int main()
 950 850 750 650 550 450 350 250 150 50
 ```
 
-**END Microsoft özgü**
+**END Microsoft'a Özgü**
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)

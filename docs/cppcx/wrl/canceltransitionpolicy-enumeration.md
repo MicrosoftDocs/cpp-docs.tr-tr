@@ -9,12 +9,12 @@ f1_keywords:
 helpviewer_keywords:
 - CancelTransitionPolicy Enumeration
 ms.assetid: 5de49f7d-e5e3-43e9-bbca-666caf226cef
-ms.openlocfilehash: cfd8e25f98ec1001a8fbd287eaec12408b9f240e
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.openlocfilehash: cb07f28794d466dde08719057a21ebf62f989e85
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58787050"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59038060"
 ---
 # <a name="canceltransitionpolicy-enumeration"></a>CancelTransitionPolicy Numaralandırması
 
@@ -41,6 +41,6 @@ enum CancelTransitionPolicy;
 
 **Namespace:** Microsoft::WRL
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Microsoft::WRL Ad Alanı](microsoft-wrl-namespace.md)

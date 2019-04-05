@@ -12,12 +12,12 @@ helpviewer_keywords:
 - open constructed types [C++]
 - constructed types, closed [C++]
 ms.assetid: 21f10637-0fce-4916-b925-6c86a126d3aa
-ms.openlocfilehash: 0f265fcbbbaa708c4c7347bd8002c105b46060d7
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.openlocfilehash: 38d33faec3610495e8cc5e97db2e81bd74be8b8b
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58787666"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59034705"
 ---
 # <a name="overview-of-generics-in-ccli"></a>Genel türlerin yararları C + +/ CLI
 
@@ -130,6 +130,6 @@ Tür parametresinin varsayılan bir örnek kullanılarak oluşturulabilir. `()` 
 
 Burada `T` genel bir sınıf veya yöntemin tanımındaki bir tür parametresi olduğundan, varsayılan değerine değişkenini ayarlar. Varsa `T` ise bir başvuru sınıfının bir null işaretçi; olacaktır `T` bir değer sınıfı, nesne sıfır olarak başlatılır. Bu adlı bir *Başlatıcı varsayılan*.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Genel Türler](generics-cpp-component-extensions.md)

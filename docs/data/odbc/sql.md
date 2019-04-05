@@ -7,12 +7,12 @@ helpviewer_keywords:
 - SQL [C++], ODBC
 - ODBC [C++], SQL implementation
 ms.assetid: e3923bc4-b317-4e0b-afd8-3cd403eb0faf
-ms.openlocfilehash: c9ea15520f98a86f8af7c278bfc77463689a4606
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 8f93d97530068695359273b523e7d2ae46de01cb
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50576849"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59037863"
 ---
 # <a name="sql"></a>SQL
 
@@ -47,12 +47,12 @@ Veritabanı sınıfları, SQL veri işleme dili (DML) olarak bilinen bir bölüm
 
 |SQL anahtar sözcüğü|Sihirbazlar ve veritabanı sınıfları bunu kullanın.|
 |-----------------|---------------------------------------------|
-|**SELECT**|Tanımlamak için hangi tablolar ve sütunlar veri kaynağında kullanıma yöneliktir.|
+|**SEÇ**|Tanımlamak için hangi tablolar ve sütunlar veri kaynağında kullanıma yöneliktir.|
 |**WHERE**|Bir filtre uygulamak için bu seçimi daraltır.|
-|**ORDER BY**|Kayıt kümesi için bir sıralama düzeni uygulamak için.|
+|**SIRALAMA ÖLÇÜTÜ**|Kayıt kümesi için bir sıralama düzeni uygulamak için.|
 |**EKLE**|Yeni kayıtlar için bir kayıt eklemek için.|
 |**DELETE**|Bir kayıt kümesinden kayıtları silmek için.|
-|**GÜNCELLEŞTİRME**|Bir kaydın alanlarını değiştirmek için.|
+|**GÜNCELLEŞTİR**|Bir kaydın alanlarını değiştirmek için.|
 
 Ayrıca, ODBC veritabanı sınıfları tanımak **çağrı** deyimleri, bazı veri kaynakları üzerinde önceden tanımlanmış sorgu (veya saklı yordam) aramak için kullanabilirsiniz. ODBC veritabanı sürücüsü, bu deyimler yorumlar ve her DBMS için uygun komut yerini alır.
 
@@ -61,7 +61,7 @@ Ayrıca, ODBC veritabanı sınıfları tanımak **çağrı** deyimleri, bazı ve
 
 Sınıfları bir kullanıcı tarafından sağlanan bir deyimde tanıyamaz `CRecordset::Open`, bir tablonun adı olarak yorumlanır.
 
-Nasıl framework SQL deyimleri oluşturan bir açıklaması için bkz [kayıt kümesi: nasıl kayıt kümeleri seçin kayıtları (ODBC)](../../data/odbc/recordset-how-recordsets-select-records-odbc.md) ve [SQL: özelleştirme Kümenizin SQL deyimini (ODBC)](../../data/odbc/sql-customizing-your-recordsets-sql-statement-odbc.md).
+Nasıl framework SQL deyimleri oluşturan bir açıklaması için bkz [kayıt kümesi: Kayıtları seçme biçimi (ODBC) kayıtları nasıl](../../data/odbc/recordset-how-recordsets-select-records-odbc.md) ve [SQL: Kayıt Kümenizin SQL deyimini özelleştirme (ODBC)](../../data/odbc/sql-customizing-your-recordsets-sql-statement-odbc.md).
 
 SQL veritabanları, C ve C++ içinde kullanılan benzer veri türlerini kullanın. Bu benzerlikler bir tartışma için bkz [SQL: SQL ve C++ veri türleri (ODBC)](../../data/odbc/sql-sql-and-cpp-data-types-odbc.md).
 
@@ -79,11 +79,11 @@ Aşağıdaki konular, SQL veritabanı sınıflarını kullanma hakkında daha fa
 
 - [SQL: Kayıt Kümenizin SQL deyimini özelleştirme (ODBC)](../../data/odbc/sql-customizing-your-recordsets-sql-statement-odbc.md)
 
-- [SQL: SQL ve C++ Veri Türleri (ODBC)](../../data/odbc/sql-sql-and-cpp-data-types-odbc.md)
+- [SQL: SQL ve C++ veri türleri (ODBC)](../../data/odbc/sql-sql-and-cpp-data-types-odbc.md)
 
-- [SQL: Doğrudan SQL Çağrıları Yapma (ODBC)](../../data/odbc/sql-making-direct-sql-calls-odbc.md)
+- [SQL: Doğrudan SQL çağrıları yapma (ODBC)](../../data/odbc/sql-making-direct-sql-calls-odbc.md)
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Açık Veritabanı Bağlantısı (ODBC)](../../data/odbc/open-database-connectivity-odbc.md)<br/>
 [ODBC Temelleri](../../data/odbc/odbc-basics.md)

@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3536
 ms.assetid: 8d866075-866b-49eb-9979-ee27b308f7e3
-ms.openlocfilehash: b58136cc03efda83071c531b25889743de3485f5
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: a16c5bd46d806d09861d5734b637c2c9d9b2f9d0
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50456751"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59031911"
 ---
 # <a name="compiler-error-c3536"></a>Derleyici Hatası C3536
 
@@ -41,6 +41,6 @@ int main()
 };
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [auto Anahtar Sözcüğü](../../cpp/auto-keyword.md)

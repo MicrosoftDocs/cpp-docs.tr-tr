@@ -5,12 +5,12 @@ ms.topic: reference
 helpviewer_keywords:
 - Functions with interior and native pointers, overloading
 ms.assetid: d70df625-4aad-457c-84f5-70a0a290cc1f
-ms.openlocfilehash: bd2bc59d85854dedd0f1a349885312d4346aa925
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.openlocfilehash: f84a7efc87985f23b62139f0547c292989537aa6
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58787848"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59038550"
 ---
 # <a name="how-to-overload-functions-with-interior-pointers-and-native-pointers-ccli"></a>Nasıl yapılır: İç işaretçiler ve yerel işaretçilerle işlevleri tekrar yükleme (C + +/ CLI)
 
@@ -63,6 +63,6 @@ in f( int* pi )
 in f( interior_ptr<int> pi )
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [interior_ptr (C++/CLI)](interior-ptr-cpp-cli.md)

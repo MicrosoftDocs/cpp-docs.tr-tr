@@ -12,12 +12,12 @@ helpviewer_keywords:
 - multidimensional arrays
 - arrays [C++]
 ms.assetid: 49445812-d775-4db1-a231-869598dbb955
-ms.openlocfilehash: 0fb3f9423fd4ca44ac5d5f17624caa7966916c16
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.openlocfilehash: e4173c16e13c08a54b36e42183e6e18b6ed4fdc2
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58787152"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59035341"
 ---
 # <a name="arrays-ccli-and-ccx"></a>Diziler (C + +/ CLI ve C + +/ CX)
 
@@ -32,7 +32,7 @@ Standart C++, farklı alt simge oluşturma işaretçi aritmetik işlemlerine ili
 
 Diziler hakkında daha fazla bilgi için bkz:
 
-- [Nasıl yapılır: C++/CLI Üzerinde Dizileri Kullanma](../dotnet/how-to-use-arrays-in-cpp-cli.md)
+- [Nasıl yapılır: Diziler kullanmak C + +/ CLI](../dotnet/how-to-use-arrays-in-cpp-cli.md)
 
 - [Değişken Bağımsız Değişken Listeleri (...) (C++/CLI)](variable-argument-lists-dot-dot-dot-cpp-cli.md)
 
@@ -58,7 +58,7 @@ Sözdiziminin ilk örnekte **yeni başvuru** bir dizi ayırmak için toplam anah
 *dizi türü*<br/>
 Dizi değişkeni türü. Geçerli türler, Windows çalışma zamanı sınıflar ve temel türler, başvuru sınıfları ve yapıları, değer sınıfları ve yapıları ve yerel işaretçileri olan (`type*`).
 
-*rank*<br/>
+*derece*<br/>
 (İsteğe bağlı) Dizinin boyut sayısı. 1 olmalıdır.
 
 *tanımlayıcı*<br/>
@@ -114,7 +114,7 @@ Sözdiziminin ilk örnekte **gcnew** anahtar sözcüğü, bir dizi ayırmak içi
 *dizi türü*<br/>
 Dizi değişkeni türü. Geçerli türler Windows çalışma zamanı sınıflar ve temel türler, başvuru sınıfları ve yapıları, değer sınıfları ve yapıları, yerel işaretçiler (`type*`) ve yerel POD (düz eski veriler) türleri.
 
-*rank*<br/>
+*derece*<br/>
 (İsteğe bağlı) Dizinin boyut sayısı. Varsayılan değer 1'dir; en fazla 32'dir. Dizinin her boyutunun kendisi bir dizidir.
 
 *tanımlayıcı*<br/>
@@ -168,6 +168,6 @@ int main() {
 }
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[.NET ve UWP İçin Bileşen Uzantıları](component-extensions-for-runtime-platforms.md)
+[.NET ve UWP için bileşen uzantıları](component-extensions-for-runtime-platforms.md)

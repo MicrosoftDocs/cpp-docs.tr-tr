@@ -7,16 +7,16 @@ helpviewer_keywords:
 - __segmentlimit intrinsic
 - lsl instruction
 ms.assetid: d0bc3630-90cb-4185-8667-686fd41e23d4
-ms.openlocfilehash: 2748eee7db3a56b026e9d1896e35824c93938256
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.openlocfilehash: 650a847be3270782dc441d0e68c2c80d910e9d1e
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51326062"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59036714"
 ---
 # <a name="segmentlimit"></a>__segmentlimit
 
-**Microsoft'a özgü**
+**Microsoft'a Özgü**
 
 Oluşturur `lsl` (yük kesimi sınırını) yönerge.
 
@@ -105,8 +105,8 @@ Success!
 sl was changed
 ```
 
-**END Microsoft özgü**
+**END Microsoft'a Özgü**
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)

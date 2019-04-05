@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - auto_search attribute
 ms.assetid: 0fee2503-cd28-4d8c-b4d5-15ca0a91d2d2
-ms.openlocfilehash: 54695f54414439349638a62189393c8790512625
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 29638afbe42a5c5f1894bc7047d10e05363f494e
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50631263"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59023561"
 ---
 # <a name="autosearch"></a>auto_search
 
@@ -29,7 +29,7 @@ auto_search
 
 **END C++ özgü**
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[#import öznitelikleri](../preprocessor/hash-import-attributes-cpp.md)<br/>
-[#import yönergesi](../preprocessor/hash-import-directive-cpp.md)
+[#import Öznitelikleri](../preprocessor/hash-import-attributes-cpp.md)<br/>
+[#import Yönergesi](../preprocessor/hash-import-directive-cpp.md)

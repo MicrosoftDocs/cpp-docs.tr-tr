@@ -1,17 +1,17 @@
 ---
-title: 'İşlem: Kayıt Kümesinde İşlem Gerçekleştirme (ODBC)'
+title: 'İşlem: (ODBC) kayıt kümesinde işlem gerçekleştirme'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - transactions, updating recordsets
 ms.assetid: cf1d6b48-7fb8-4903-84f7-a1822054534d
-ms.openlocfilehash: df7c28ebfbb68f3e0163368247b90ff69058726d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 9e06d61d3d86233e136b0b3fe78f149a6778649b
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50659605"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59035247"
 ---
-# <a name="transaction-performing-a-transaction-in-a-recordset-odbc"></a>İşlem: Kayıt Kümesinde İşlem Gerçekleştirme (ODBC)
+# <a name="transaction-performing-a-transaction-in-a-recordset-odbc"></a>İşlem: (ODBC) kayıt kümesinde işlem gerçekleştirme
 
 Bu konuda, bir kayıt kümesinde işlem gerçekleştirme açıklanmaktadır.
 
@@ -22,7 +22,7 @@ Bu konuda, bir kayıt kümesinde işlem gerçekleştirme açıklanmaktadır.
 
 1. Çağrı `CDatabase` nesnenin `BeginTrans` üye işlevi.
 
-1. Toplu satır getirme değil uyguladıysanız, çağrı `AddNew/Update`, `Edit/Update`, ve `Delete` nesnelerin bir veya daha fazla kayıt aynı veritabanında gerektiği birçok üye işlevleri. Daha fazla bilgi için [kayıt kümesi: ekleme, güncelleştirme ve silme kayıtlarını (ODBC)](../../data/odbc/recordset-adding-updating-and-deleting-records-odbc.md). Toplu satır getirme uyguladıysanız, veri kaynağını güncelleştirmek için kendi işlevlerinizi yazmanız gerekir.
+1. Toplu satır getirme değil uyguladıysanız, çağrı `AddNew/Update`, `Edit/Update`, ve `Delete` nesnelerin bir veya daha fazla kayıt aynı veritabanında gerektiği birçok üye işlevleri. Daha fazla bilgi için [kayıt kümesi: Ekleme, güncelleştirme ve silme (ODBC) kayıtları](../../data/odbc/recordset-adding-updating-and-deleting-records-odbc.md). Toplu satır getirme uyguladıysanız, veri kaynağını güncelleştirmek için kendi işlevlerinizi yazmanız gerekir.
 
 1. Son olarak, çağrı `CDatabase` nesnenin `CommitTrans` üye işlevi. Güncelleştirmelerden biri bir hata oluşursa ya değişiklikleri iptal etmek karar verirseniz, arama, `Rollback` üye işlevi.
 
@@ -81,9 +81,9 @@ BOOL CEnrollDoc::RemoveStudent( CString strStudentID )
 > [!NOTE]
 >  Çağırma `BeginTrans` yeniden çağırmadan `CommitTrans` veya `Rollback` bir hatadır.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [İşlem (ODBC)](../../data/odbc/transaction-odbc.md)<br/>
-[İşlem: İşlemlerin Güncelleştirmeleri Etkilemesi (ODBC)](../../data/odbc/transaction-how-transactions-affect-updates-odbc.md)<br/>
-[CDatabase Sınıfı](../../mfc/reference/cdatabase-class.md)<br/>
-[CRecordset Sınıfı](../../mfc/reference/crecordset-class.md)
+[İşlem: İşlemler (ODBC) güncelleştirmeleri nasıl etkiler](../../data/odbc/transaction-how-transactions-affect-updates-odbc.md)<br/>
+[CDatabase sınıfı](../../mfc/reference/cdatabase-class.md)<br/>
+[CRecordset sınıfı](../../mfc/reference/crecordset-class.md)

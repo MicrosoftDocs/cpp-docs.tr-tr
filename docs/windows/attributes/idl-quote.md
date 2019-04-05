@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - idl_quote attribute
 ms.assetid: a370e1b7-948b-4e67-9a25-58facf24e4c9
-ms.openlocfilehash: edfeb18053f3ae4fa8c45211833e0ceaa037cf79
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: fd7455298c9a1b69926d85766b6cd7f96bd374cc
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50595578"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59037123"
 ---
 # <a name="idlquote"></a>idl_quote
 
@@ -25,7 +25,7 @@ Visual C++'ın geçerli sürümünde desteklenmeyen IDL yapıları kullanmanıza
 
 ### <a name="parameters"></a>Parametreler
 
-*Metin*<br/>
+*metin*<br/>
 Visual C++ derleyicisi aracılığıyla oluşturulan .idl dosyasına bir derleyici hatası dönmeden iletmek için istediğinize öznitelik adı.
 
 ## <a name="remarks"></a>Açıklamalar
@@ -77,14 +77,14 @@ Bu kod neden `MYFLOT` ve `MYDUB` ve *metin* oluşturulan .idl dosyasında yerle�
 
 |||
 |-|-|
-|**İçin geçerlidir**|Her yerde|
+|**Uygulandığı öğe:**|Her yerde|
 |**Tekrarlanabilir**|Hayır|
 |**Gerekli öznitelikleri**|Yok.|
-|**Geçersiz öznitelikler**|Yok.|
+|**Geçersiz öznitelikler**|None|
 
 Daha fazla bilgi için [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[IDL öznitelikleri](idl-attributes.md)<br/>
+[IDL Öznitelikleri](idl-attributes.md)<br/>
 [Tek Başına Öznitelikler](stand-alone-attributes.md)

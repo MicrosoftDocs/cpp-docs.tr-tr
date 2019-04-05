@@ -1,5 +1,5 @@
 ---
-title: 'Kayıt Kümesi: Veri Sütunlarını Dinamik Olarak Bağlama (ODBC)'
+title: 'Kayıt kümesi: (ODBC) veri sütunlarını dinamik olarak bağlama'
 ms.date: 11/19/2018
 helpviewer_keywords:
 - ODBC recordsets [C++], binding columns dynamically
@@ -8,14 +8,14 @@ helpviewer_keywords:
 - data binding [C++], columns in recordsets
 - columns [C++], binding to recordsets
 ms.assetid: bff67254-d953-4ae4-9716-91c348cb840b
-ms.openlocfilehash: c2fc870ba08bbec0a886b3d77281f3c697ae09fe
-ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
+ms.openlocfilehash: c2f2a6a6696f46fb5b8f2777c6c911269c9e7a80
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52175671"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59035139"
 ---
-# <a name="recordset-dynamically-binding-data-columns-odbc"></a>Kayıt Kümesi: Veri Sütunlarını Dinamik Olarak Bağlama (ODBC)
+# <a name="recordset-dynamically-binding-data-columns-odbc"></a>Kayıt kümesi: (ODBC) veri sütunlarını dinamik olarak bağlama
 
 Bu konu MFC ODBC sınıflarına uygulanır.
 
@@ -26,7 +26,7 @@ Tasarım zamanında belirttiğiniz bağlama tablo sütunları kayıt kümelerini
 - [Sütunları dinamik olarak çalışma zamanında bağlamak nasıl](#_core_how_to_bind_columns_dynamically).
 
 > [!NOTE]
->  Bu konu, türetilmiş nesneler için geçerlidir. `CRecordset` toplu satır getirme uygulanmadı. Toplu satır getirme kullanıyorsanız genel olarak açıklanan olan tekniklerle önerilmez. Toplu satır getirme hakkında daha fazla bilgi için bkz. [kayıt kümesi: Kayıtları toplu (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md).
+>  Bu konu, türetilmiş nesneler için geçerlidir. `CRecordset` toplu satır getirme uygulanmadı. Toplu satır getirme kullanıyorsanız genel olarak açıklanan olan tekniklerle önerilmez. Toplu satır getirme hakkında daha fazla bilgi için bkz. [kayıt kümesi: Kayıtları toplu yakalama (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md).
 
 ##  <a name="_core_when_you_might_bind_columns_dynamically"></a> Sütunları dinamik olarak bağladığınızda
 
@@ -140,7 +140,7 @@ Ardından, sütunları dinamik olarak bağlanması için depolama konumlarını 
 
    En yaygın durumda dinamik sütun değerleri türünde öğelere sahip `CString`. Sütunları farklı veri türleri ile uğraşıyorsanız, çeşitli türleri öğelerini içerebilir bir listesi gerekir.
 
-Aşağıdaki yordamlardan iki ana liste sonucudur:-bağlama-adlarını sütun ve dinamik sütun geçerli kayda sütundaki değerleri içeren değerleri içeren dinamik sütunlar.
+İki ana liste aşağıdaki yordamlardan oluşur: Bağlama-dinamik sütunlar sütunlarının adlarını içeren ve dinamik sütun değerleri geçerli kayda sütundaki değerleri içeren.
 
 > [!TIP]
 > Yeni sütunlar tümü aynı veri türünde değilse, ek bir paralel şekilde sütun listesinde karşılık gelen her öğe türünü tanımlayan içeren öğeleri listesinde isteyebilirsiniz. (Ve vb. için bu, kullanmak istediğiniz değerleri AFX_RFX_BOOL AFX_RFX_BYTE kullanabilirsiniz. Bu sabitler AFXDB içinde tanımlanır. H) Sütun veri türlerini nasıl temsil bağlı bir liste türünü seçin.
@@ -168,7 +168,7 @@ RFX işlevleri hakkında daha fazla bilgi için bkz. [makroları ve genel öğel
 
 Framework çağırdığında `DoFieldExchange` sırasında `Open` statik sütunları bu sütunları bağlamak için kayıt kümesi RFX çağrıları sütunları bağlamak için işlem. Daha sonra döngünüzü dinamik sütunlar için tekrar tekrar RFX işlevleri çağırır.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Kayıt Kümesi (ODBC)](../../data/odbc/recordset-odbc.md)<br/>
-[Kayıt kümesi: Büyük Veri Öğeleri ile Çalışma (ODBC)](../../data/odbc/recordset-working-with-large-data-items-odbc.md)
+[Kayıt kümesi: Büyük veri öğeleri ile çalışma (ODBC)](../../data/odbc/recordset-working-with-large-data-items-odbc.md)

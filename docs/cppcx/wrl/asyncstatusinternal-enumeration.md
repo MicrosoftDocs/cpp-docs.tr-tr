@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - AsyncStatusInternal enumeration
 ms.assetid: b783923f-3f1c-4487-9384-be572cbc62d7
-ms.openlocfilehash: b38d58603eafeaa76c79873bbf375b4a3b405cdb
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.openlocfilehash: f12bf4aafc87e44a6e2fb15ba79de4a9744bea58
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58787678"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59029732"
 ---
 # <a name="asyncstatusinternal-enumeration"></a>AsyncStatusInternal Numaralandırması
 
@@ -51,6 +51,6 @@ Eşdeğerdir `::Windows::Foundation::AsyncStatus::Error`
 
 **Namespace:** Microsoft::wrl:: details
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Microsoft::WRL::Details Ad Alanı](microsoft-wrl-details-namespace.md)

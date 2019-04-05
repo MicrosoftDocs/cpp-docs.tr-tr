@@ -8,12 +8,12 @@ helpviewer_keywords:
 - pragmas, inline_depth
 - inline_depth pragma
 ms.assetid: 2bba60fe-43ea-4d09-90f7-aafaba3bad07
-ms.openlocfilehash: b08578406fab4fe3a025d502f71cfd90f8dca75b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 18d772c8a9f6218ed3afaa385f214445bd0fe8e6
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50471372"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59039027"
 ---
 # <a name="inlinedepth"></a>inline_depth
 Bir derinlikteyse (çağrı grafında içinde) daha büyük ise, hiçbir işlevin satır içine alınmış şekilde satır içi buluşsal arama derinliğini belirtir *n*.
@@ -41,7 +41,7 @@ Satır içi derinlik, genişletme sırasında azaltılabilir, ancak artırılmaz
 > [!NOTE]
 > Özyinelemeli işlevler, satır içinde en fazla 16 çağrılık bir derinlikle değiştirilebilir.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Pragma Yönergeleri ve __Pragma Anahtar Sözcüğü](../preprocessor/pragma-directives-and-the-pragma-keyword.md)<br/>
 [inline_recursion](../preprocessor/inline-recursion.md)

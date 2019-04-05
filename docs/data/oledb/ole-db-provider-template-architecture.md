@@ -6,12 +6,12 @@ helpviewer_keywords:
 - architecture [C++], OLE DB Provider
 - OLE DB provider templates, object model
 ms.assetid: 639304a3-f9e0-44dc-8d0c-0ebd2455b363
-ms.openlocfilehash: b6d177d793451b7c5e9c19f6d40add973a627d60
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: 65a7e5b8f169d06ca11d8d27ec99ce3db4b63014
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57423007"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59028554"
 ---
 # <a name="ole-db-provider-template-architecture"></a>OLE DB Sağlayıcı Şablonu Mimarisi
 
@@ -29,11 +29,11 @@ OLE DB sağlayıcı şablonları, önceden paketlenmiş uygulamalar için gerekl
 
 - [Veri kaynağı](../../data/oledb/data-source-object-interfaces.md)
 
-- [Oturumu](../../data/oledb/session-object-interfaces.md)
+- [Oturum](../../data/oledb/session-object-interfaces.md)
 
 - [Satır kümesi](../../data/oledb/rowset-object-interfaces.md)
 
-- [Komutu](../../data/oledb/command-object-interfaces.md)
+- [Komut](../../data/oledb/command-object-interfaces.md)
 
 - [İşlem](../../data/oledb/transaction-object-interfaces.md)
 
@@ -41,7 +41,7 @@ OLE DB sağlayıcı şablonları satır ve depolama nesnelerinin kullanılmaz.
 
 Aşağıdaki tabloda, yukarıda listelenen nesneler için zorunlu ve isteğe bağlı arabirimler listelenmiştir göre [OLE DB 2.6 SDK Belgeleri](/previous-versions/windows/desktop/ms722784(v=vs.85)).
 
-|Bileşen|Arabirim|Açıklama|
+|Bileşen|Arabirim|Yorum|
 |---------------|---------------|-------------|
 |[Veri kaynağı](../../data/oledb/data-source-object-interfaces.md) ([CDataSource](../../data/oledb/cdatasource-class.md))|[zorunlu] `IDBCreateSession`<br /><br /> [zorunlu] `IDBInitialize`<br /><br /> [zorunlu] `IDBProperties`<br /><br /> [zorunlu] `IPersist`<br /><br /> [isteğe bağlı] `IConnectionPointContainer`<br /><br /> [isteğe bağlı] `IDBAsynchStatus`<br /><br /> [isteğe bağlı] `IDBDataSourceAdmin`<br /><br /> [isteğe bağlı] `IDBInfo`<br /><br /> [isteğe bağlı] `IPersistFile`<br /><br /> [isteğe bağlı] `ISupportErrorInfo`|Sağlayıcı için tüketici bağlantısı. Nesnesi, kullanıcı Kimliğinizi, parolanızı ve veri kaynağı adı gibi bağlantı özelliklerini belirtmek için kullanılır. Nesne veri kaynağı yönetmek için de kullanılabilir (oluşturmak, güncelleştirmek, tablo, silme ve benzeri).|
 |[Oturum](../../data/oledb/session-object-interfaces.md) ([CSession](../../data/oledb/cdataconnection-operator-csession-amp.md))|[zorunlu] `IGetDataSource`<br /><br /> [zorunlu] `IOpenRowset`<br /><br /> [zorunlu] `ISessionProperties`<br /><br /> [isteğe bağlı] `IAlterIndex`<br /><br /> [isteğe bağlı] `IAlterTable`<br /><br /> [isteğe bağlı] `IBindResource`<br /><br /> [isteğe bağlı] `ICreateRow`<br /><br /> [isteğe bağlı] `IDBCreateCommand`<br /><br /> [isteğe bağlı] `IDBSchemaRowset`<br /><br /> [isteğe bağlı] `IIndexDefinition`<br /><br /> [isteğe bağlı] `ISupportErrorInfo`<br /><br /> [isteğe bağlı] `ITableCreation`<br /><br /> [isteğe bağlı] `ITableDefinition`<br /><br /> [isteğe bağlı] `ITableDefinitionWithConstraints`<br /><br /> [isteğe bağlı] `ITransaction`<br /><br /> [isteğe bağlı] `ITransactionJoin`<br /><br /> [isteğe bağlı] `ITransactionLocal`<br /><br /> [isteğe bağlı] `ITransactionObject`|Bir müşteri ve sağlayıcı arasında tek bir konuşma oturum nesnedir. ODBC benzer `HSTMT` olabilir, birçok eş zamanlı oturumların etkin.<br /><br /> Oturum nesnesi, OLE DB işlevselliğine erişmek için birincil bağlantıdır. Komut, işlem veya satır kümesi nesnesi almak için oturum nesnesini gözden geçirin.|
@@ -55,7 +55,7 @@ Daha fazla bilgi için aşağıdaki konulara bakın:
 
 - [Kullanıcı kaydı](../../data/oledb/user-record.md)
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[OLE DB sağlayıcı şablonları](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>
+[OLE DB Sağlayıcı Şablonları](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>
 [OLE DB arabirimleri](/previous-versions/windows/desktop/ms709709(v=vs.85))<br/>

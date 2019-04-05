@@ -6,12 +6,12 @@ helpviewer_keywords:
 - release builds
 - debug builds, converting to release build
 ms.assetid: fa9a78fa-f4b5-4722-baf4-aec655c4ff0f
-ms.openlocfilehash: 6167c024ae76952573475a815f24d2cf4be01119
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.openlocfilehash: cf11e63354502be000ba5f7259d9e36dfa774060
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57824145"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59038171"
 ---
 # <a name="release-builds"></a>Yayın Derlemeleri
 
@@ -23,10 +23,10 @@ Yayın derlemesi iyileştirmeleri kullanır. Yayın derlemesi oluşturma için e
 [Yayın Derlemesi Sorunlarını Giderme](fixing-release-build-problems.md)<br/>
 [ASSERT Yerine VERIFY Kullanma](using-verify-instead-of-assert.md)<br/>
 [Belleğin Üzerine Yazma Denetimi için Hata Ayıklama Derlemesini Kullanma](using-the-debug-build-to-check-for-memory-overwrite.md)<br/>
-[Nasıl yapılır: Yayın Derlemesinde Hata Ayıklama](how-to-debug-a-release-build.md)<br/>
+[Nasıl yapılır: Bir yayın derlemesinde hata ayıklama](how-to-debug-a-release-build.md)<br/>
 [Bellek Üzerine Yazmalarını Denetleme](checking-for-memory-overwrites.md)<br/>
 [Kodunuzu İyileştirme](optimizing-your-code.md)<br/>
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[C/C++ Derleme Başvurusu](reference/c-cpp-building-reference.md)
+[C/C++ Oluşturma Başvurusu](reference/c-cpp-building-reference.md)

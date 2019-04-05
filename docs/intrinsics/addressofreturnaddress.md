@@ -8,16 +8,16 @@ helpviewer_keywords:
 - _AddressOfReturnAddress intrinsic
 - AddressOfReturnAddress intrinsic
 ms.assetid: c7e10b8c-445e-4236-a602-e2d90200f70a
-ms.openlocfilehash: 678128c4b09b083b4afe3a86c9b2315eb3c87b1b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 79d1e4645c60fb4231a53aaefdcf1fe0f3c876c4
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50584490"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59024783"
 ---
 # <a name="addressofreturnaddress"></a>_AddressOfReturnAddress
 
-**Microsoft'a özgü**
+**Microsoft'a Özgü**
 
 Geçerli fonksiyonun dönüş adresi tutan bellek konumunun adresini sağlar. Bu adres, diğer bellek konumları (örneğin, işlev bağımsız) erişmek için kullanılamaz.
 
@@ -73,9 +73,9 @@ int main() {
 00401058
 ```
 
-**END Microsoft özgü**
+**END Microsoft'a Özgü**
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)<br/>
-[Anahtar Sözcükler](../cpp/keywords-cpp.md)
+[anahtar sözcükler](../cpp/keywords-cpp.md)

@@ -8,16 +8,16 @@ helpviewer_keywords:
 - __rdtscp intrinsic
 - rdtscp instruction
 ms.assetid: f17d9a9c-88bb-44e0-b69d-d516bc1c93ee
-ms.openlocfilehash: 813f13e20e74890cfcb52ae25234aa348e1d522d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b28052fbe0a1ab0e1a6f037ce61f43abea5cf771
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50496311"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59028486"
 ---
 # <a name="rdtscp"></a>__rdtscp
 
-**Microsoft'a özgü**
+**Microsoft'a Özgü**
 
 Oluşturur `rdtscp` yönergesi, Yazar `TSC_AUX[31:0`] bellek ve 64-bit zaman damgası sayacı döndürür (`TSC)` sonucu.
 
@@ -77,11 +77,11 @@ printf_s("TSC_AUX was %x\n", ui);
 TSC_AUX was 0
 ```
 
-**END Microsoft özgü**
+**END Microsoft'a Özgü**
 
 Telif Hakkı 2007 Gelişmiş Micro cihazlar, Inc. Tüm hakları saklıdır. Gelişmiş Micro cihazlar, Inc. izniyle üretilemez
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [__rdtsc](../intrinsics/rdtsc.md)<br/>
 [Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)

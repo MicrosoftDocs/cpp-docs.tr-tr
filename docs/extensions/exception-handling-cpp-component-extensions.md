@@ -10,12 +10,12 @@ helpviewer_keywords:
 - exception handling, types of
 - System::Exception class in managed applications
 ms.assetid: ccb11fe8-6938-41ac-b477-a183e85865b9
-ms.openlocfilehash: ee784130c5a6d7fc72d2b2ad61980089260d217e
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.openlocfilehash: b477f7355ee1f4f70a0ad3df8b85c4276c07d397
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58787785"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59037178"
 ---
 # <a name="exception-handling--ccli-and-ccx"></a>Özel durum işleme (C + +/ CLI ve C + +/ CX)
 
@@ -32,13 +32,13 @@ Standart davranış C++ özel durum işleme farkları açıklar.
 [finally](../dotnet/finally.md)<br/>
 Nasıl kullanılacağı ele alınmaktadır finally anahtar sözcüğü.
 
-[Nasıl yapılır: Genel Bir Özel Durum İşleyicisi Tanımlama ve Yükleme](../dotnet/how-to-define-and-install-a-global-exception-handler.md)<br/>
+[Nasıl yapılır: Genel özel durum işleyicisi tanımlama ve yükleme](../dotnet/how-to-define-and-install-a-global-exception-handler.md)<br/>
 Nasıl işlenmeyen özel durumları gösterir yakalanabilir.
 
-[Nasıl yapılır: MSIL'den Oluşan Yerel Kodda Catch Özel Durumları](../dotnet/how-to-catch-exceptions-in-native-code-thrown-from-msil.md)<br/>
+[Nasıl yapılır: Özel durumlar MSIL'den oluşan yerel kodda catch](../dotnet/how-to-catch-exceptions-in-native-code-thrown-from-msil.md)<br/>
 CLR ve C++ özel durumlarını yerel kodda catch anlatılmaktadır.
 
-[Nasıl yapılır: Genel Bir Özel Durum İşleyicisi Tanımlama ve Yükleme](../dotnet/how-to-define-and-install-a-global-exception-handler.md)<br/>
+[Nasıl yapılır: Genel özel durum işleyicisi tanımlama ve yükleme](../dotnet/how-to-define-and-install-a-global-exception-handler.md)<br/>
 Tüm işlenmemiş özel durumları yakalamak nasıl gösterir.
 
 ## <a name="related-sections"></a>İlgili Bölümler
@@ -46,6 +46,6 @@ Tüm işlenmemiş özel durumları yakalamak nasıl gösterir.
 [Özel Durum İşleme](../cpp/exception-handling-in-visual-cpp.md)<br/>
 Standart C++ içinde özel durum işleme açıklar.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[.NET ve UWP İçin Bileşen Uzantıları](component-extensions-for-runtime-platforms.md)
+[.NET ve UWP için bileşen uzantıları](component-extensions-for-runtime-platforms.md)

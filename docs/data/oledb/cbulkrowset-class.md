@@ -102,12 +102,12 @@ helpviewer_keywords:
 - ReleaseRows method
 - SetRows method
 ms.assetid: c6bde426-c543-4022-a98a-9519d9e2ae59
-ms.openlocfilehash: bb7f7ee0b4c190889daf661816a9e1c96575a052
-ms.sourcegitcommit: c40469825b6101baac87d43e5f4aed6df6b078f5
+ms.openlocfilehash: ba6b41a708cd854e398cbaa80609472ebbe167e8
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/12/2018
-ms.locfileid: "51557095"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59023236"
 ---
 # <a name="cbulkrowset-class"></a>CBulkRowset Sınıfı
 
@@ -154,7 +154,7 @@ Aşağıdaki örnek, kullanımını gösterir. `CBulkRowset` sınıfı.
 
 ## <a name="addrefrows"></a> CBulkRowset::AddRefRows
 
-Çağrıları [IRowset::AddRefRows](https://docs.microsoft.com/previous-versions/windows/desktop/ms719619(v=vs.85)) şu anda toplu satır kümesinden alınan tüm satırlar için başvuru sayısını artırmak için.
+Çağrıları [IRowset::AddRefRows](/previous-versions/windows/desktop/ms719619(v=vs.85)) şu anda toplu satır kümesinden alınan tüm satırlar için başvuru sayısını artırmak için.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -253,7 +253,7 @@ HRESULT MoveToBookmark(const CBookmarkBase& bookmark,
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bkz: ['yı](https://docs.microsoft.com/previous-versions/windows/desktop/ms716988(v=vs.85)) içinde *OLE DB Programcının Başvurusu*.
+Bkz: ['yı](/previous-versions/windows/desktop/ms716988(v=vs.85)) içinde *OLE DB Programcının Başvurusu*.
 
 ## <a name="movetoratio"></a> CBulkRowset::MoveToRatio
 
@@ -284,11 +284,11 @@ Standart bir HRESULT.
 
 `(nNumerator *  RowsetSize ) / nDenominator`
 
-Burada `RowsetSize` satırlarda ölçülen satır boyutu. Bu formül doğruluğunu belirli sağlayıcısına bağlıdır. Ayrıntılar için bkz [IRowsetScroll::GetRowsAtRatio](https://docs.microsoft.com/previous-versions/windows/desktop/ms709602(v=vs.85)) içinde *OLE DB Programcının Başvurusu*.
+Burada `RowsetSize` satırlarda ölçülen satır boyutu. Bu formül doğruluğunu belirli sağlayıcısına bağlıdır. Ayrıntılar için bkz [IRowsetScroll::GetRowsAtRatio](/previous-versions/windows/desktop/ms709602(v=vs.85)) içinde *OLE DB Programcının Başvurusu*.
 
 ## <a name="releaserows"></a> CBulkRowset::ReleaseRows
 
-Çağrıları [IRowset::ReleaseRows](https://docs.microsoft.com/previous-versions/windows/desktop/ms719771(v=vs.85)) şu anda toplu satır kümesinden alınan tüm satırlar için başvuru sayısını azaltmak için.
+Çağrıları [IRowset::ReleaseRows](/previous-versions/windows/desktop/ms719771(v=vs.85)) şu anda toplu satır kümesinden alınan tüm satırlar için başvuru sayısını azaltmak için.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -319,7 +319,7 @@ void SetRows(DBROWCOUNT nRows) throw();
 
 Bu işlev çağırırsanız, satır kümesi açılmadan önce olmalıdır.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [OLE DB Tüketici Şablonları](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
 [OLE DB Tüketici Şablonları Başvurusu](../../data/oledb/ole-db-consumer-templates-reference.md)

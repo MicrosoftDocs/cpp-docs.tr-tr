@@ -1931,12 +1931,12 @@ helpviewer_keywords:
 - cl.exe compiler, intrinsics
 - intrinsics, ARM
 ms.assetid: d3d7dadd-7bd5-4508-8bff-371a66913e20
-ms.openlocfilehash: e4c962b7911c97095e22c670dabfaa3d3d4b2709
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.openlocfilehash: 47fd2f449568494bafde993e035d3ec37c44f6fe
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51525515"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59027637"
 ---
 # <a name="arm-intrinsics"></a>ARM İç Bilgileri
 
@@ -1958,7 +1958,7 @@ Visual C++ derleyicisi ile ARM derleyici arasındaki birincil fark, Visual C++ d
 |_arm_umlal|UMLAL|imzalanmamış __int64 _arm_umlal (işaretsiz \__int64 _RdHiLo, _Rn işaretsiz int, işaretsiz int _Rm)|
 |_arm_clz|CLZ|işaretsiz int _arm_clz (işaretsiz int _Rm)|
 |_arm_qadd|QADD|int _arm_qadd (_Rm int, int _Rn)|
-|_arm_qdadd|QDADD|int _arm_qdadd (_Rm int, int _Rn)|
+|_arm_qdadd|QDADD|int _arm_qdadd(int _Rm, int _Rn)|
 |_arm_qdsub|QDSUB|int _arm_qdsub (_Rm int, int _Rn)|
 |_arm_qsub|QSUB|int _arm_qsub (_Rm int, int _Rn)|
 |_arm_smlabb|SMLABB|int _arm_smlabb (int _Rn, _Rm int, int _Ra)|
@@ -2081,7 +2081,7 @@ Visual C++ derleyicisi ile ARM derleyici arasındaki birincil fark, Visual C++ d
 |__ldrexd|LDREXD|__int64 \__ldrexd (const volatile \__int64 \*)|
 |__prefetch|PLD|void __cdecl \__prefetch (const void \*)<br /><br /> Sağlar bir `PLD` bellek, bellek veya belirtilen yakın sisteme ipucu adresi erişilebilir olan en kısa sürede. Bazı sistemler, çalışma zamanı performansını artırmak bu bellek erişim deseni için en iyi duruma getirmeyi tercih edebilirsiniz. Ancak, C++ dil açısından, işlev gözlemlenebilir etkiye sahip değildir ve hiçbir şey hiç yapabilirsiniz.|
 |__rdpmccntr64||imzalanmamış __int64 \__rdpmccntr64(void)|
-|__sev|ÖNEM DERECESİ|void __sev(void)|
+|__sev|SEV|void __sev(void)|
 |__static_assert||void __static_assert (int, const char \*)|
 |__swi|SVC|işaretsiz int __swi (işaretsiz int,...)|
 |__trap|BKPT|int __trap (int,...)|
@@ -2358,8 +2358,8 @@ Aşağıdaki tabloda, ARM platformlarında desteklenen diğer mimarilere yapı i
 |__code_seg|void __code_seg (const char \*)|
 |__debugbreak|void __cdecl \__debugbreak(void)|
 |__fastfail|__declspec(noreturn) void \__fastfail (işaretsiz int)|
-|__nop|__nop(void) void **Not:** üzerinde ARM platformlarında, bir hedef mimari uygulanırsa, bu işlev NOP yönerge oluşturur; Aksi takdirde, program veya CPU durumu değiştirmez, alternatif bir yönerge oluşturulan — Örneğin, `MOV r8, r8`. Bu işlevsel olarak eşdeğerdir \__nop için diğer donanım mimarilerde iç. Program veya CPU durumu üzerinde hiçbir etkisi bir yönerge bir iyileştirme olarak hedef mimari tarafından göz ardı nedeniyle yönerge CPU çevrimleri mutlaka tüketmez. Bu nedenle, kullanmayın \__nop CPU nasıl davranacağını hakkında olmadıkça bir kod dizisi yürütme süresini yönetmek için iç. Bunun yerine kullanabileceğiniz \__nop belirli 32-bit sınır adresine sonraki yönergeyi hizalamak için iç.|
-|__yield|__yield(void) void **Not:** üzerinde ARM platformlarında, bu işlev, iş parçacığının yürütülmesini geçici olarak askıya bir görev çalıştığını gösteren YIELD talimat oluşturur — Örneğin, bir spinlock — olmadan program olumsuz etkileyen. Bu, aksi takdirde boşa gidecektir yürütme döngüsü sırasında diğer görevleri yürütmek CPU sağlar.|
+|__nop|__nop(void) void **Not:**  Hedef mimari uygulanmışsa ARM platformlarında, bu işlev NOP yönerge oluşturur; Aksi takdirde, program veya CPU durumu değiştirmez, alternatif bir yönerge oluşturulur; Örneğin, `MOV r8, r8`. Bu işlevsel olarak eşdeğerdir \__nop için diğer donanım mimarilerde iç. Program veya CPU durumu üzerinde hiçbir etkisi bir yönerge bir iyileştirme olarak hedef mimari tarafından göz ardı nedeniyle yönerge CPU çevrimleri mutlaka tüketmez. Bu nedenle, kullanmayın \__nop CPU nasıl davranacağını hakkında olmadıkça bir kod dizisi yürütme süresini yönetmek için iç. Bunun yerine kullanabileceğiniz \__nop belirli 32-bit sınır adresine sonraki yönergeyi hizalamak için iç.|
+|__yield|__yield(void) void **Not:**  ARM platformlarında, bu işlevi iş parçacığının yürütülmesini geçici olarak askıya bir görev çalıştığını gösteren YIELD talimat oluşturur — Örneğin, bir spinlock — program olumsuz etkilemeden. Bu, aksi takdirde boşa gidecektir yürütme döngüsü sırasında diğer görevleri yürütmek CPU sağlar.|
 |_AddressOfReturnAddress|void \* _AddressOfReturnAddress(void)|
 |_BitScanForward|İmzasız char _BitScanForward (işaretsiz uzun \* _ındex, işaretsiz uzun _maskesi)|
 |_BitScanReverse|İmzasız char _BitScanReverse (işaretsiz uzun \* _ındex, işaretsiz uzun _maskesi)|
@@ -2367,11 +2367,11 @@ Aşağıdaki tabloda, ARM platformlarında desteklenen diğer mimarilere yapı i
 |_bittestandcomplement|İmzasız char _bittestandcomplement (uzun \*, uzun)|
 |_bittestandreset|İmzasız char _bittestandreset (uzun \*, uzun)|
 |_bittestandset|İmzasız char _bittestandset (uzun \*, uzun)|
-|_byteswap_uint64|imzalanmamış __int64 \__cdecl _byteswap_uint64 (işaretsiz \__int64)|
+|_byteswap_uint64|unsigned __int64 \__cdecl _byteswap_uint64(unsigned \__int64)|
 |_byteswap_ulong|işaretsiz uzun __cdecl _byteswap_ulong(unsigned long)|
-|_byteswap_ushort|işaretsiz kısa __cdecl _byteswap_ushort (işaretsiz kısa)|
-|_disable|__cdecl _disable(void) void **Not:** ARM platformlarında, bu işlev CPSID yönerge oluşturur; yalnızca bir iç öğe olarak kullanılabilir.|
-|_enable|__cdecl _enable(void) void **Not:** ARM platformlarında, bu işlev CPSIE yönerge oluşturur; yalnızca bir iç öğe olarak kullanılabilir.|
+|_byteswap_ushort|unsigned short __cdecl _byteswap_ushort(unsigned short)|
+|_disable|__cdecl _disable(void) void **Not:**  ARM platformlarında, bu işlev CPSID yönerge oluşturur; yalnızca bir iç öğe olarak kullanılabilir.|
+|_enable|__cdecl _enable(void) void **Not:**  ARM platformlarında, bu işlev CPSIE yönerge oluşturur; yalnızca bir iç öğe olarak kullanılabilir.|
 |_lrotl|işaretsiz uzun __cdecl _lrotl (işaretsiz uzun tamsayı)|
 |_lrotr|işaretsiz uzun __cdecl _lrotr (işaretsiz uzun tamsayı)|
 |_ReadBarrier|void _ReadBarrier(void)|
@@ -2399,14 +2399,14 @@ Aşağıdaki tabloda, olmayan-birbirine geçmiş bittest ön tanımlı ARM deste
 ||8|16|32|64|P|
 |-|-------|--------|--------|--------|-------|
 |Ekle|Yok.|Yok.|Tam|Tam|Yok.|
-|ve|Tam|Tam|Tam|Tam|Yok.|
+|And|Tam|Tam|Tam|Tam|Yok.|
 |CompareExchange|Tam|Tam|Tam|Tam|Tam|
-|Azaltma|Yok.|Tam|Tam|Tam|Yok.|
+|Azaltma|Yok.|Tam|Tam|Tam|None|
 |Exchange|Kısmi|Kısmi|Kısmi|Kısmi|Kısmi|
 |ExchangeAdd|Tam|Tam|Tam|Tam|Yok.|
-|Artırma|Yok.|Tam|Tam|Tam|Yok.|
-|Veya|Tam|Tam|Tam|Tam|Yok.|
-|Xor|Tam|Tam|Tam|Tam|Yok.|
+|Artırma|None|Tam|Tam|Tam|Yok.|
+|Or|Tam|Tam|Tam|Tam|None|
+|Xor|Tam|Tam|Tam|Tam|None|
 
 Anahtar:
 
@@ -2414,7 +2414,7 @@ Anahtar:
 
 - **Kısmi**: düz, destekler `_acq`, ve `_nf` forms.
 
-- **Hiçbiri**: desteklenmez
+- **Hiçbiri**: Desteklenmez
 
 ###  <a name="nf_suffix"></a> Sonek _nf (sınır yok)
 
@@ -2425,10 +2425,10 @@ Anahtar:
 |İşlev adı|İşlev prototipi|
 |-------------------|------------------------|
 |_Interlockedadd|uzun _ınterlockedadd (uzun _volatile \*, uzun)|
-|_Interlockedadd64|__int64 _ınterlockedadd64 (\__int64 geçici \*, \__int64)|
+|_InterlockedAdd64|__int64 _ınterlockedadd64 (\__int64 geçici \*, \__int64)|
 |_InterlockedAdd64_acq|__int64 _ınterlockedadd64_acq (\__int64 geçici \*, \__int64)|
 |_Interlockedadd64_nf|__int64 _ınterlockedadd64_nf (\__int64 geçici \*, \__int64)|
-|_Interlockedadd64_rel|__int64 _ınterlockedadd64_rel (\__int64 geçici \*, \__int64)|
+|_InterlockedAdd64_rel|__int64 _ınterlockedadd64_rel (\__int64 geçici \*, \__int64)|
 |_InterlockedAdd_acq|uzun _ınterlockedadd_acq (uzun geçici \*, uzun)|
 |_InterlockedAdd_nf|uzun _ınterlockedadd_nf (uzun geçici \*, uzun)|
 |_InterlockedAdd_rel|uzun _ınterlockedadd_nf (uzun geçici \*, uzun)|
@@ -2528,7 +2528,7 @@ Anahtar:
 |_InterlockedOr16_acq|kısa _InterlockedOr16_acq (kısa geçici \*, kısa)|
 |_InterlockedOr16_nf|kısa _InterlockedOr16_nf (kısa geçici \*, kısa)|
 |_InterlockedOr16_rel|kısa _InterlockedOr16_rel (kısa geçici \*, kısa)|
-|_InterlockedOr64|__int64 _InterlockedOr64 (\__int64 geçici \*, \__int64)|
+|_InterlockedOr64|__int64 _InterlockedOr64(\__int64 volatile \*, \__int64)|
 |_InterlockedOr64_acq|__int64 _InterlockedOr64_acq (\__int64 geçici \*, \__int64)|
 |_InterlockedOr64_nf|__int64 _InterlockedOr64_nf (\__int64 geçici \*, \__int64)|
 |_InterlockedOr64_rel|__int64 _InterlockedOr64_rel (\__int64 geçici \*, \__int64)|
@@ -2558,7 +2558,7 @@ Anahtar:
 
 [[NEON](#top)]
 
-### <a name="interlockedbittest-intrinsics"></a>_interlockedbittest iç bilgileri
+### <a name="interlockedbittest-intrinsics"></a>_interlockedbittest Intrinsics
 
 Düz bir birbirine kenetlenmiş bittest yapı içlerini tüm platformlar için ortak olan. ARM ekler `_acq`, `_rel`, ve `_nf` yalnızca bir işlemin engel semantiği açıklandığı şekilde değiştirmeniz çeşitleri [_nf (sınır yok) soneki](#nf_suffix) bu makalenin üst kısmındaki.
 
@@ -2575,7 +2575,7 @@ Düz bir birbirine kenetlenmiş bittest yapı içlerini tüm platformlar için o
 
 [[NEON](#top)]
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)<br/>
 [ARM Assembler Başvurusu](../assembler/arm/arm-assembler-reference.md)<br/>

@@ -11,12 +11,12 @@ helpviewer_keywords:
 - ActivatableClass
 - ActivatableClassWithFactoryEx
 ms.assetid: 9bd64709-ec2c-4678-8c96-ea5982622bdd
-ms.openlocfilehash: eee8267e2e76eead267eb2486836dbcc38a90231
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.openlocfilehash: 7d38db9e7d3fa94c89195b6379e14692f26f7ee5
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58787739"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59037600"
 ---
 # <a name="activatableclass-macros"></a>ActivatableClass Makroları
 
@@ -62,6 +62,6 @@ Kullandığınız sürece bu makrolar ile klasik COM kullanmayın `#undef` emin 
 
 **Namespace:** Microsoft::WRL
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Modül Sınıfı](module-class.md)

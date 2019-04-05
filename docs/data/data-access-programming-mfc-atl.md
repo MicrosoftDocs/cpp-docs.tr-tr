@@ -8,12 +8,12 @@ helpviewer_keywords:
 - data [C++], data access technologies
 - data access [C++], class libraries for databases
 ms.assetid: def97b2c-b5a6-445f-afeb-308050fd4852
-ms.openlocfilehash: 5417918ee3cf966183e1910fdbc12bd7b8cc046e
-ms.sourcegitcommit: 984fb4814a2dd9bcea5ec88c9528707f17a7cffa
+ms.openlocfilehash: b4f5fb6ed21fb23195af340c8de3ee7c654f7fee
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "51949498"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59037837"
 ---
 # <a name="data-access-programming-mfcatl"></a>Veri erişim programlama (MFC/ATL)
 
@@ -33,7 +33,7 @@ C + kullanırsanız +/ CLI, devam edebilirsiniz ADO.NET olarak her zaman kullan�
 
 Veri erişim teknolojileri üzerinde Microsoft Windows geçmişi hakkında daha fazla bilgi için bkz. [Microsoft Data Access Components (Wikipedia)](https://en.wikipedia.org/wiki/Microsoft_Data_Access_Components).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Veri Erişimi](data-access-in-cpp.md)<br/>
 [Microsoft açık veritabanı bağlantısı (ODBC)](/sql/odbc/microsoft-open-database-connectivity-odbc)<br/>

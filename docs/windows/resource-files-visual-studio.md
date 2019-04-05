@@ -24,12 +24,12 @@ helpviewer_keywords:
 - files [C++], editable types
 - resource editing
 ms.assetid: 4d2b6fcc-07cf-4289-be87-83a60f69533c
-ms.openlocfilehash: bd73db481659573d51e4abd56da9689e2e8ade25
-ms.sourcegitcommit: e540706f4e2675e7f597cfc5b4f8dde648b007bb
+ms.openlocfilehash: 45db6d0139cfa3aa8a2eaa8fe6d18158cb6646ce
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56676441"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59029405"
 ---
 # <a name="resource-files-c"></a>Kaynak Dosyalar (C++)
 
@@ -121,16 +121,16 @@ Bir bildirim kaynakta yer alan bilgileri yazın ve sürümünü görüntülemek 
 
 1. Genişletin **kaynak dosyaları** klasörü, ardından:
 
-   - Metin Düzenleyicisi'nde açmak için .manifest dosyasını çift tıklatın.
+   - Metin Düzenleyicisi'nde açmak için çift tıklayın *.manifest* dosya.
 
-   - Başka bir düzenleyicide açık olarak .manifest dosyasını sağ tıklatın ve seçin **birlikte Aç...** . Düzenleyiciyi kullanın ve belirtin **açık**.
+   - Başka bir düzenleyicide açık olarak sağ *.manifest* seçin ve dosya **birlikte Aç**. Düzenleyicisi kullanın ve seçmek için belirttiğiniz **açık**.
 
 ## <a name="requirements"></a>Gereksinimler
 
 Win32
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Kaynak Dosyalarıyla Çalışma](../windows/working-with-resource-files.md)<br/>
-[Kaynak Tanımlayıcıları (Semboller)](../windows/symbols-resource-identifiers.md)<br/>
+[Kaynak Tanımlayıcıları (simge)](../windows/symbols-resource-identifiers.md)<br/>
 [Kaynak Düzenleyicileri](../windows/resource-editors.md)<br/>

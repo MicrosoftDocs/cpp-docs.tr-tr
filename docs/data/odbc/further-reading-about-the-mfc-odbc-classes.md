@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - MFC ODBC classes
 ms.assetid: 155c092b-3577-4cb8-b00e-f1adf4cb2adc
-ms.openlocfilehash: 42f8a066728b1800ce245435584dd5e61f786440
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 96286fc7a60a6ab43190dae6262948ac99ca30d6
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50440345"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59035195"
 ---
 # <a name="further-reading-about-the-mfc-odbc-classes"></a>MFC ODBC Sınıfları Hakkında Daha Fazla Okuma
 
@@ -25,9 +25,9 @@ Aşağıdaki konularda daha fazla, kavramlar ve teknikler bu konu başlığı al
 
 - [Özel durumlar: Veritabanı Özel Durumları](../../mfc/exceptions-database-exceptions.md)
 
-- [MFC: Belgeler ve Görünümler ile Veritabanı Sınıflarını Kullanma](../../data/mfc-using-database-classes-with-documents-and-views.md)
+- [MFC: Belgeler ve görünümler ile veritabanı sınıflarını kullanma](../../data/mfc-using-database-classes-with-documents-and-views.md)
 
-- [MFC: Belgeler ve Görünümler Olmadan Veritabanı Sınıflarını Kullanma](../../data/mfc-using-database-classes-without-documents-and-views.md)
+- [MFC: Belgeler ve görünümler olmadan veritabanı sınıflarını kullanma](../../data/mfc-using-database-classes-without-documents-and-views.md)
 
 - [ODBC](../../data/odbc/odbc-basics.md)
 
@@ -37,9 +37,9 @@ Aşağıdaki konularda daha fazla, kavramlar ve teknikler bu konu başlığı al
 
 - [Kayıt Kümesi (ODBC)](../../data/odbc/recordset-odbc.md)
 
-- [Kayıt görünümleri](../../data/record-views-mfc-data-access.md)
+- [Kayıt Görünümleri](../../data/record-views-mfc-data-access.md)
 
-- [Seri Hale Getirme: Seri Hale Getirme ile Veritabanı giriş/çıkışı](../../mfc/serialization-serialization-vs-database-input-output.md)
+- [Seri hale getirme: Serileştirme vs. Veritabanı giriş/çıkışı](../../mfc/serialization-serialization-vs-database-input-output.md)
 
 - [Anlık Görüntü](../../data/odbc/snapshot.md)
 
@@ -51,7 +51,7 @@ Okuma başlatmak için iyi bir yer olan [kayıt kümesi (ODBC)](../../data/odbc/
 
 İçinde *MFC başvurusu*, bkz: [CDatabase](../../mfc/reference/cdatabase-class.md), [CRecordset](../../mfc/reference/crecordset-class.md), [CRecordView](../../mfc/reference/crecordview-class.md), [CFieldExchange](../../mfc/reference/cfieldexchange-class.md), ve [CDBException](../../mfc/reference/cdbexception-class.md).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [ODBC ve MFC](../../data/odbc/odbc-and-mfc.md)<br/>
 [Veri erişim programlama (MFC/ATL)](../../data/data-access-programming-mfc-atl.md)

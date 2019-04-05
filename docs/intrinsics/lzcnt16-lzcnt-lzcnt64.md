@@ -14,16 +14,16 @@ helpviewer_keywords:
 - lzcnt64 intrinsic
 - __lzcnt64 intrinsic
 ms.assetid: 412113e7-052e-46e5-8bfa-d5ad72abc10e
-ms.openlocfilehash: 7b1e499eff8c8c7de59dc6f96cb1060ce845e27d
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.openlocfilehash: 333d9f2b23fb90388af8395945256956c9222ab9
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51523461"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59041344"
 ---
 # <a name="lzcnt16-lzcnt-lzcnt64"></a>__lzcnt16, __lzcnt, __lzcnt64
 
-**Microsoft'a özgü**
+**Microsoft'a Özgü**
 
 Sayıları, bir 16, 32 veya 64-bit tamsayı içinde satır sayısını sıfırlar.
 
@@ -56,7 +56,7 @@ unsigned __int64 __lzcnt64(
 |---------------|------------------|
 |`__lzcnt16`|AMD: Gelişmiş Bit işleme (ABM)<br /><br /> Intel: Haswell|
 |`__lzcnt`|AMD: Gelişmiş Bit işleme (ABM)<br /><br /> Intel: Haswell|
-|`__lzcnt64`|AMD: Bit işleme (ABM) 64 bit modunda Gelişmiş.<br /><br /> Intel: Haswell|
+|`__lzcnt64`|AMD: Gelişmiş Bit işleme (ABM) 64 bit modunda.<br /><br /> Intel: Haswell|
 
 **Üst bilgi dosyası** \<intrin.h >
 
@@ -105,10 +105,10 @@ __lzcnt(0xffff) = 16
 __lzcnt(0xffffffff) = 0
 ```
 
-**END Microsoft özgü**
+**END Microsoft'a Özgü**
 
 Bu içerik bölümlerini Micro cihazlar, Inc. Gelişmiş telif hakkı 2007 olan Tüm hakları saklıdır. Gelişmiş Micro cihazlar, Inc. izniyle üretilemez
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)

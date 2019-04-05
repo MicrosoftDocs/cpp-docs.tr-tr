@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - MixIn structure
 ms.assetid: 47e2df9b-3a2e-4ae8-8ba3-b1fd3aa73566
-ms.openlocfilehash: d0306f4c497dd26e782b1ef2c012cb7d348db07f
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.openlocfilehash: 16fd6b46d616df7163a304afa7f32ac3c095d398
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58787873"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59031082"
 ---
 # <a name="mixin-structure"></a>MixIn Yapısı
 
@@ -54,6 +54,6 @@ Windows çalışma zamanı hem sınıf COM arabirimleri türetilmiş bir sınıf
 
 **Namespace:** Microsoft::WRL
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Microsoft::WRL Ad Alanı](microsoft-wrl-namespace.md)

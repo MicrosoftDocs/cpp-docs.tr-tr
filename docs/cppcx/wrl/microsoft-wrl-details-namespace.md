@@ -3,12 +3,12 @@ title: Microsoft::WRL::Details Ad Alanı
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: d71fe149-d804-4c6f-961d-43fe21ef8630
-ms.openlocfilehash: 149b78a20061dc9083c62df4e58d638009c5e0a2
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.openlocfilehash: fce6e620600164e73d3708d98d8a7fa979e8ab42
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58787657"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59027490"
 ---
 # <a name="microsoftwrldetails-namespace"></a>Microsoft::WRL::Details Ad Alanı
 
@@ -65,7 +65,7 @@ namespace Microsoft::WRL::Details;
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[AsyncStatusInternal Sabit Listesi](asyncstatusinternal-enumeration.md)|Zaman uyumsuz işlemler durumu için iç sabit listeleri arasındaki eşlemeyi belirtir ve `Windows::Foundation::AsyncStatus` sabit listesi.|
+|[AsyncStatusInternal Numaralandırması](asyncstatusinternal-enumeration.md)|Zaman uyumsuz işlemler durumu için iç sabit listeleri arasındaki eşlemeyi belirtir ve `Windows::Foundation::AsyncStatus` sabit listesi.|
 
 ### <a name="functions"></a>İşlevler
 
@@ -74,7 +74,7 @@ namespace Microsoft::WRL::Details;
 |[ActivationFactoryCallback İşlevi](activationfactorycallback-function.md)|Belirtilen etkinleştirme kimliği için kullanılan etkinleştirme üreteci alır|
 |[Move İşlevi](move-function.md)|Belirtilen bağımsız değişken bir konumdan diğerine taşır.|
 |[RaiseException İşlevi](raiseexception-function.md)|Çağıran iş parçacığında bir özel durum oluşturur.|
-|[Swap İşlevi (WRL)](swap-function-wrl.md)|İki belirtilen bağımsız değişken değerlerini birbiriyle değiştirir.|
+|[Swap işlevi (WRL)](swap-function-wrl.md)|İki belirtilen bağımsız değişken değerlerini birbiriyle değiştirir.|
 |[TerminateMap İşlevi](terminatemap-function.md)|Belirtilen modül sınıfı Fabrikalar kapatır.|
 
 ## <a name="requirements"></a>Gereksinimler
@@ -83,7 +83,7 @@ namespace Microsoft::WRL::Details;
 
 **Namespace:** Microsoft::wrl:: details
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Microsoft::WRL Ad Alanı](microsoft-wrl-namespace.md)<br/>
 [Microsoft::WRL::Wrappers Ad Alanı](microsoft-wrl-wrappers-namespace.md)

@@ -7,12 +7,12 @@ helpviewer_keywords:
 - Visual C++, managed code
 - managed code [C++]
 ms.assetid: 339f89df-a5d2-4040-831a-ddbe25b5dce4
-ms.openlocfilehash: d0a006c6928bf42c3e6f4adfbc3d1fdde7ff7c87
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.openlocfilehash: fcac0079185b6ceef981b9acfeb555ef29d464e0
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58773053"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59034676"
 ---
 # <a name="walkthrough-compile-a-ccli-program-that-targets-the-clr-in-visual-studio"></a>İzlenecek yol: Derleme C + +/ CLI programını, Visual Studio'da CLR'yi hedefleyen
 
@@ -74,7 +74,7 @@ Bu konular, C++ dili temellerini anladığınızı varsayar.
    > [!NOTE]
    > Boş CLR seçerek proje şablonu otomatik olarak `/clr` derleyici seçeneği. Bunu doğrulamak için projeye sağ **Çözüm Gezgini** tıklayıp **özellikleri**, iade edin **ortak dil çalışma zamanı desteği** seçeneği **Genel** düğümünün **yapılandırma özellikleri**.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [C++ Dil Başvurusu](../cpp/cpp-language-reference.md)<br/>
-[Projeler ve derleme sistemleri](../build/projects-and-build-systems-cpp.md)<br/>
+[Projeler ve yapı sistemi](../build/projects-and-build-systems-cpp.md)<br/>

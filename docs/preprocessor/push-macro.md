@@ -8,12 +8,12 @@ helpviewer_keywords:
 - pragmas, push_macro
 - push_macro pragma
 ms.assetid: ac89efc9-afd1-4dfe-bfd1-497229b3e81d
-ms.openlocfilehash: 9b866fd5907faf46872665bbcaef97f2352efea9
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 5602dd91b7d017c49a122524e469100b0ec6debf
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50535687"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59029748"
 ---
 # <a name="pushmacro"></a>push_macro
 Değerini kaydeder *macro_name* bu makroya yönelik yığının en üstündeki makrosu.
@@ -32,6 +32,6 @@ Değerini alabilir *macro_name* ile `pop_macro`.
 
 Bkz: [pop_macro](../preprocessor/pop-macro.md) örneği.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Pragma Yönergeleri ve __Pragma Anahtar Sözcüğü](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

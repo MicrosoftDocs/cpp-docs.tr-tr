@@ -6,12 +6,12 @@ helpviewer_keywords:
 - override specifiers, C++
 - override specifiers
 ms.assetid: 155bbf6f-4722-4654-afb1-9cb52af799fb
-ms.openlocfilehash: 9640270caa50f53c106bb7b970959f0c092a47df
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.openlocfilehash: c1e8e7db2879b0226eaff562f5b5b826bce14caf
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58787622"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59029933"
 ---
 # <a name="override-specifiers--ccli-and-ccx"></a>Geçersiz kılma tanımlayıcıları (C + +/ CLI ve C + +/ CX)
 
@@ -25,11 +25,11 @@ Geçersiz kılma tanımlayıcıları hakkında daha fazla bilgi için bkz:
 
 - [abstract](abstract-cpp-component-extensions.md)
 
-- [Yeni (vtable'da yeni yuva)](new-new-slot-in-vtable-cpp-component-extensions.md)
+- [yeni (vtable'de yeni yuva)](new-new-slot-in-vtable-cpp-component-extensions.md)
 
 - [override](override-cpp-component-extensions.md)
 
-- [sealed](sealed-cpp-component-extensions.md)
+- [korumalı](sealed-cpp-component-extensions.md)
 
 - [Geçersiz kılma tanımlayıcıları ve yerel derlemeler](../dotnet/how-to-declare-override-specifiers-in-native-compilations-cpp-cli.md)
 
@@ -53,6 +53,6 @@ Derleyici seçeneği: `/ZW`
 
 Derleyici seçeneği: `/clr`
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[.NET ve UWP İçin Bileşen Uzantıları](component-extensions-for-runtime-platforms.md)
+[.NET ve UWP için bileşen uzantıları](component-extensions-for-runtime-platforms.md)

@@ -7,16 +7,16 @@ helpviewer_keywords:
 - __vmx_vmptrst intrinsic
 - VMPTRST instruction
 ms.assetid: 8dc66e47-03a0-41b0-8e25-c1485f42817a
-ms.openlocfilehash: 4d7e2ed29daac276c9b6cba07a727371a212fd4a
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.openlocfilehash: 5ef02dd4401e0c10a84be008d7cb25841e0359cd
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51331899"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59029521"
 ---
 # <a name="vmxvmptrst"></a>__vmx_vmptrst
 
-**Microsoft'a özgü**
+**Microsoft'a Özgü**
 
 Belirtilen adresteki geçerli sanal makine denetim yapısı (Windows VMCS) işaretçi depolar.
 
@@ -47,9 +47,9 @@ Bir 64 bit fiziksel adresi Windows VMCS işaretçisidir.
 
 **Üst bilgi dosyası** \<intrin.h >
 
-**END Microsoft özgü**
+**END Microsoft'a Özgü**
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)<br/>
 [__vmx_vmptrld](../intrinsics/vmx-vmptrld.md)

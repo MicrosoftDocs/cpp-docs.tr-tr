@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2483
 ms.assetid: 5762b325-914b-442d-a604-e4617ba04038
-ms.openlocfilehash: d1a5632328c00ca2dcd03519d03fbdb648776a51
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 7a627ce28e60f42dabcf0a257464a8bfbd58b9a4
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50637885"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59028633"
 ---
 # <a name="compiler-error-c2483"></a>Derleyici Hatası C2483
 
@@ -34,6 +34,6 @@ __declspec(thread) struct A {
 __declspec(thread) struct B {} b;   // OK
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [thread](../../cpp/thread.md)

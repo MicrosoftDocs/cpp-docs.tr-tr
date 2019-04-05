@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - dual attribute
 ms.assetid: 5d4a9069-d819-42cd-ba56-bbcda17157d9
-ms.openlocfilehash: 30d334f58f0eb91c9ca44ba5a5b6b8edf3970510
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 8f02f6b69b31f10b41d5c920cfc2ad62dfa1cef2
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50509960"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59023964"
 ---
 # <a name="dual"></a>çift
 
@@ -59,18 +59,18 @@ __interface IStatic : IDispatch
 
 |||
 |-|-|
-|**İçin geçerlidir**|**interface**|
+|**Uygulandığı öğe:**|**arabirim**|
 |**Tekrarlanabilir**|Hayır|
-|**Gerekli öznitelikleri**|Yok.|
+|**Gerekli öznitelikleri**|None|
 |**Geçersiz öznitelikler**|`dispinterface`|
 
 Daha fazla bilgi için [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[IDL öznitelikleri](idl-attributes.md)<br/>
+[IDL Öznitelikleri](idl-attributes.md)<br/>
 [Kullanıma Göre Öznitelikler](attributes-by-usage.md)<br/>
-[custom](custom-cpp.md)<br/>
+[özel](custom-cpp.md)<br/>
 [dispinterface](dispinterface.md)<br/>
-[object](object-cpp.md)<br/>
+[nesne](object-cpp.md)<br/>
 [__interface](../../cpp/interface.md)

@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - helpstring attribute [C++]
 ms.assetid: 0401e905-a63e-4fad-98d0-d1efea111966
-ms.openlocfilehash: 12707dde61013caa1ed9feb1d0daa74cbb7b9d9a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 623b2c7fb4ce7c3e5de87d21f012d008720fdee2
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50591379"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59022211"
 ---
 # <a name="helpstring"></a>helpstring
 
@@ -25,7 +25,7 @@ Uygulandığı öğe açıklamak için kullanılan bir karakter dizesi belirtir.
 
 ### <a name="parameters"></a>Parametreler
 
-*string*<br/>
+*dize*<br/>
 Yardım dizesi metni.
 
 ## <a name="remarks"></a>Açıklamalar
@@ -42,16 +42,16 @@ Yardım dizesi metni.
 
 |||
 |-|-|
-|**İçin geçerlidir**|**arabirimi**, **typedef**, **sınıfı**, yöntem, özellik|
+|**Uygulandığı öğe:**|**arabirimi**, **typedef**, **sınıfı**, yöntem, özellik|
 |**Tekrarlanabilir**|Hayır|
-|**Gerekli öznitelikleri**|Yok.|
+|**Gerekli öznitelikleri**|None|
 |**Geçersiz öznitelikler**|Yok.|
 
 Daha fazla bilgi için [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[IDL öznitelikleri](idl-attributes.md)<br/>
+[IDL Öznitelikleri](idl-attributes.md)<br/>
 [Arabirim Öznitelikleri](interface-attributes.md)<br/>
 [Sınıf Öznitelikleri](class-attributes.md)<br/>
 [Yöntem Öznitelikleri](method-attributes.md)<br/>

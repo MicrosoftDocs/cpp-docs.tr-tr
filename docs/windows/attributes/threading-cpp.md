@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - threading attribute
 ms.assetid: 9b558cd6-fbf0-4602-aed5-31c068550ce3
-ms.openlocfilehash: 0feb258941993ff9776bb9f94f61a556d7d4caec
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: cdebf06a62ebbd1d8648b9777fe200bc7a373261
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50449848"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59038284"
 ---
 # <a name="threading-c"></a>iş parçacığı oluşturma (C++)
 
@@ -25,7 +25,7 @@ Bir COM nesnesi için iş parçacığı modelini belirtir.
 
 ### <a name="parameters"></a>Parametreler
 
-*Model*<br/>
+*model*<br/>
 (İsteğe bağlı) Aşağıdaki iş parçacığı oluşturma modelleri biri:
 
 - `apartment` (Grup iş parçacığı)
@@ -58,14 +58,14 @@ Bkz: [lisanslı](licensed.md) örnek kullanımını örneğin **iş parçacığ�
 
 |||
 |-|-|
-|**İçin geçerlidir**|**sınıf**, **yapısı**|
+|**Uygulandığı öğe:**|**sınıf**, **yapısı**|
 |**Tekrarlanabilir**|Hayır|
 |**Gerekli öznitelikleri**|**coclass**|
-|**Geçersiz öznitelikler**|Yok.|
+|**Geçersiz öznitelikler**|None|
 
 Öznitelik bağlamları hakkında daha fazla bilgi için bkz: [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [COM Öznitelikleri](com-attributes.md)<br/>
 [Typedef, Enum, Union ve Struct Öznitelikleri](typedef-enum-union-and-struct-attributes.md)<br/>

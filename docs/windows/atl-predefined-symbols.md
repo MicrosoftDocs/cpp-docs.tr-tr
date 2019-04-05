@@ -5,18 +5,18 @@ helpviewer_keywords:
 - symbols [C++], ATL predefined
 - ATL symbols
 ms.assetid: 60d8f4e6-6ed9-47f3-9051-e4bf34384456
-ms.openlocfilehash: 16991746c5c858310466f7eebd91a8478d2dcc5c
-ms.sourcegitcommit: f127b08f114b8d6cab6b684febcb6f2ae0e055ba
+ms.openlocfilehash: 6e876fe27bd57194513f637fda90845ca68c59ee
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56954854"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59033936"
 ---
 # <a name="atl-predefined-symbols"></a>ATL Önceden Tanımlanmış Semboller
 
 Bu simgeleri ATL üstbilgi dosyalarında tanımlanır, ancak standart Windows uygulama işlevler ve Eylemler destekler. Bu simgeler, iletişim kutuları ağırlıklı olarak kullanılır.
 
-Çalışırken iletişim kutuları ve denetimleri ile de [iletişim kutusu Düzenleyicisi](../windows/dialog-editor.md), bu simgeler görünür **özellikleri** ortak denetimleri ile ilişkili penceresi. Örneği için iletişim kutusu varsa bir **iptal** düğmesini komut IDCANCEL sembolü ile ilişkilendirilmesi, [Özellikler penceresi](/visualstudio/ide/reference/properties-window).
+Çalışırken iletişim kutuları ve denetimleri ile de [iletişim kutusu Düzenleyicisi](../windows/dialog-editor.md), bu simgeler görünür [Özellikler penceresi](/visualstudio/ide/reference/properties-window) ortak denetimleri ile ilişkili. Örneği için iletişim kutusu varsa bir **iptal** düğmesini komut IDCANCEL sembolü ile ilişkilendirilmesi, **özellikleri** penceresi.
 
 |||
 |-|-|
@@ -35,7 +35,7 @@ Bu simgeleri ATL üstbilgi dosyalarında tanımlanır, ancak standart Windows uy
 
 ATL
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Önceden Tanımlanmış Sembol Kimlikleri](../windows/predefined-symbol-ids.md)<br/>
 [MFC Önceden Tanımlanmış Semboller](../windows/mfc-predefined-symbols.md)<br/>

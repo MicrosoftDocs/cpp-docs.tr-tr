@@ -34,16 +34,16 @@ helpviewer_keywords:
 - InterlockedXor64 intrinsic
 - _InterlockedXor intrinsic
 ms.assetid: faef1796-cb5a-4430-b1e2-9d5eaf9b4a91
-ms.openlocfilehash: 8410420564ae641ff5e624cc5a1ddb0f260672e6
-ms.sourcegitcommit: ff3cbe4235b6c316edcc7677f79f70c3e784ad76
+ms.openlocfilehash: c86a743df84df37ffe3234d82d79abd987a4dcda
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/19/2018
-ms.locfileid: "53627383"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59023146"
 ---
 # <a name="interlockedxor-intrinsic-functions"></a>_Interlockedxor iç işlevleri
 
-**Microsoft'a özgü**
+**Microsoft'a Özgü**
 
 Bir atomik bit düzeyinde özel or (XOR) işlemi birden çok iş parçacığı tarafından paylaşılan bir değişken üzerinde gerçekleştirin.
 
@@ -202,9 +202,9 @@ int main()
 0xffff0000 0xffff00 0xff00ff00
 ```
 
-**END Microsoft özgü**
+**END Microsoft'a Özgü**
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)<br/>
 [x86 Derleyicisi ile Çakışma](../build/x64-software-conventions.md#conflicts-with-the-x86-compiler)

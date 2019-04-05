@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - R6035
 ms.assetid: f8fb50b8-18bf-4258-b96a-b0a9de468d16
-ms.openlocfilehash: bb215668fc13ecf84efdbf5f7ec6bb25c922181b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: cbade3ce8686c8c293b8d40a73c546805e42215d
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50668266"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59034027"
 ---
 # <a name="c-runtime-error-r6035"></a>C çalışma zamanı hatası R6035
 
@@ -68,6 +68,6 @@ Bu durumda, DllEntryPoint arabellek taşmalarına karşı korumalı değildir (y
 > [!NOTE]
 >  Hata iletisi R6035 x86 tarafından oluşturulan yalnızca CRT hata ayıklama ve yapılandırılmış özel durum işleme, ancak bir koşul için bir hata özel durum biçimlerinin yanı sıra, tüm platformlarda, C++ EH gibi işleyen.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [MSVC güvenlik özellikleri](https://blogs.msdn.microsoft.com/vcblog/2017/06/28/security-features-in-microsoft-visual-c/)

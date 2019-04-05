@@ -5,12 +5,12 @@ ms.topic: reference
 helpviewer_keywords:
 - custom attributes, parameter types
 ms.assetid: d9f127a3-7f08-456f-acc6-256805632712
-ms.openlocfilehash: 04431e62a7ecd78a6ebc3360a030af724774e8ea
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.openlocfilehash: fbb2bd68f589630608e341b944b4201c12d67211
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58787740"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59041318"
 ---
 # <a name="attribute-parameter-types--ccli-and-ccx"></a>Öznitelik parametre türleri (C + +/ CLI ve C + +/ CX)
 
@@ -122,6 +122,6 @@ public ref struct ABC : public Attribute {
 ref struct AStruct{};
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[Kullanıcı tanımlı öznitelikler](user-defined-attributes-cpp-component-extensions.md)
+[Kullanıcı Tanımlı Öznitelikler](user-defined-attributes-cpp-component-extensions.md)

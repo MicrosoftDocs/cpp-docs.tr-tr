@@ -50,12 +50,12 @@ helpviewer_keywords:
 - buttons [C++], tool tips
 - Toolbar editor [C++], creating tool tips
 ms.assetid: aa9f0adf-60f6-4f79-ab05-bc330f15ec43
-ms.openlocfilehash: 83402159d19f07cf94a0d00ccd79d68549b124e9
-ms.sourcegitcommit: c1f646c8b72f330fa8cf5ddb0f8f261ba10d16f0
+ms.openlocfilehash: 9d50561c598f17e251425972590c0663efe6e832
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58328863"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59038173"
 ---
 # <a name="toolbar-editor-c"></a>Araç çubuğu Düzenleyicisi (C++)
 
@@ -90,10 +90,10 @@ Araç çubuğu düğmesi, aşağıdaki özelliklere sahiptir:
 
 |Özellik|Açıklama|
 |--------------|-----------------|
-|**ID**|Düğme için kimliği tanımlar. Açılır listede ortak sağlar **kimliği** adları.|
+|**Kimlik**|Düğme için kimliği tanımlar. Açılır listede ortak sağlar **kimliği** adları.|
 |**Genişlik**|Düğmesinin genişliğini belirler. 16 piksel önerilir.|
 |**Yükseklik**|Düğmenin yüksekliğini belirler. Bir düğme yüksekliğini, araç çubuğundaki tüm düğmeler yüksekliğini değiştirir. 15 piksel önerilir.|
-|**Sor**|Durum çubuğunda görüntülenen ileti tanımlar. Ekleme *\n* ve bir ad ekler bir **araç ipucu** bu araç çubuğu düğmesi için. Daha fazla bilgi için [bir araç ipucu oluşturmanın](../windows/creating-a-tool-tip-for-a-toolbar-button.md).|
+|**İstem**|Durum çubuğunda görüntülenen ileti tanımlar. Ekleme *\n* ve bir ad ekler bir **araç ipucu** bu araç çubuğu düğmesi için. Daha fazla bilgi için [bir araç ipucu oluşturmanın](../windows/creating-a-tool-tip-for-a-toolbar-button.md).|
 
 **Genişlik** ve **yükseklik** tüm düğmeler için geçerlidir. Araç çubuğu oluşturmak için kullanılan bir bit eşlem 2048, maksimum genişliği sahip bu nedenle düğme genişliğini ayarlamak *512*, dört düğme dbmigrationsconfiguration ve genişliğini ayarlayın, *513*, yalnızca üç düğme olabilir.
 
@@ -201,7 +201,7 @@ Efekt kullanarak bu istiyorsanız **araç çubuğu Düzenleyicisi**ayarlayın **
 
 MFC veya ATL
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Kaynak Düzenleyicileri](../windows/resource-editors.md)
 <!--

@@ -8,12 +8,12 @@ helpviewer_keywords:
 - pragmas, inline_recursion
 - inline_recursion pragma
 ms.assetid: cfef5791-63b7-45ac-9574-623747b9b9c9
-ms.openlocfilehash: 635d33d91e779d88b56e353d0cddf6b34b313855
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 80ffabc6ac7c95fd7d9fb4e62bea38c2a04b04f0
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50523861"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59026918"
 ---
 # <a name="inlinerecursion"></a>inline_recursion
 Doğrudan veya karşılıklı özyinelemeli işlev çağrıları satır içi genişlemeyi denetler.
@@ -30,7 +30,7 @@ Olarak işaretlenmiş denetim işlevleri bu pragmayı kullanmak [satır içi](..
 
 **İnline_recursion** pragma denetimleri nasıl özyinelemeli işlevler genişletilir. Varsa **inline_recursion** kapalıdır ve satır içi işlev kendisi (doğrudan veya dolaylı olarak), işlev çağrıları, genişletilmiş yalnızca bir kez yapılır. Varsa **inline_recursion** açıktır, işlevi, birden çok kez genişletilir, ile ayarlanan değere ulaşana kadar [inline_depth](../preprocessor/inline-depth.md) pragması, özyinelemeli işlevler için tarafındantanımlananvarsayılandeğer`inline_depth` pragma veya bir kapasite sınırlayın.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Pragma Yönergeleri ve __Pragma Anahtar Sözcüğü](../preprocessor/pragma-directives-and-the-pragma-keyword.md)<br/>
 [inline_depth](../preprocessor/inline-depth.md)<br/>

@@ -6,12 +6,12 @@ helpviewer_keywords:
 - pointers, pinning
 - arrays [C++], pinning
 ms.assetid: ee783260-e676-46b8-a38e-11a06f1d57b0
-ms.openlocfilehash: 0b75b9c59c24f276142f6b8b5d662f86bb04d177
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.openlocfilehash: ae8c1da79f41cf9209f2765ce5aa2f7ca3d34aea
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58787878"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59025691"
 ---
 # <a name="how-to-pin-pointers-and-arrays"></a>Nasıl yapılır: PIN işaretçiler ve dizileri
 
@@ -45,6 +45,6 @@ int main() {
 ++
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [pin_ptr (C++/CLI)](pin-ptr-cpp-cli.md)

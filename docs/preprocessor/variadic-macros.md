@@ -5,12 +5,12 @@ helpviewer_keywords:
 - variadic macros [C++]
 - __VA_ARGS__ variadic macro specifier
 ms.assetid: 51e757dc-0134-4bb2-bb74-64ea5ad75134
-ms.openlocfilehash: 0674359b8f620c2b5023ce2ef75b4e247ae765f1
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: da159ef979ccc38845064debebae55356bc9e9bd
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50547461"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59022846"
 ---
 # <a name="variadic-macros"></a>Variadic Makrolar
 
@@ -59,6 +59,6 @@ hello, world
 error
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Makrolar (C/C++)](../preprocessor/macros-c-cpp.md)

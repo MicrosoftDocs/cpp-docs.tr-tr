@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - idl_module attribute
 ms.assetid: 3578b337-e38a-4334-b747-15404c02dbc0
-ms.openlocfilehash: c58997928fb3121c1ab8e277790969a93d9066de
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 80e4909a61b5b53ecde19471f2c838dd4c425874
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50608698"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59034984"
 ---
 # <a name="idlmodule"></a>idl_module
 
@@ -26,10 +26,10 @@ function declaration
 
 ### <a name="parameters"></a>Parametreler
 
-*Adı*<br/>
+*name*<br/>
 Kullanıcı tanımlı bir ad .idl dosyasında görünür kod bloğu için.
 
-*dll adı*<br/>
+*dllname*<br/>
 (İsteğe bağlı) Dışarı aktarma içeren .dll dosyası.
 
 *uuid*<br/>
@@ -44,10 +44,10 @@ Kullanıcı tanımlı bir ad .idl dosyasında görünür kod bloğu için.
 *helpcontext*<br/>
 (İsteğe bağlı) Bu tür kitaplığı Yardım kimliği.
 
-*hidden*<br/>
+*gizli*<br/>
 (İsteğe bağlı) Kitaplık görüntülenmesini engeller. bir parametre. Bkz: [gizli](/windows/desktop/Midl/hidden) daha fazla bilgi için MIDL özniteliği.
 
-*restricted*<br/>
+*kısıtlı*<br/>
 (İsteğe bağlı) Kitaplık üyelerini rasgele çağrılamaz. Bkz: [kısıtlı](/windows/desktop/Midl/restricted) daha fazla bilgi için MIDL özniteliği.
 
 *işlev bildirimi*<br/>
@@ -82,15 +82,15 @@ void FuncName(int i);
 
 |||
 |-|-|
-|**İçin geçerlidir**|Her yerde|
+|**Uygulandığı öğe:**|Her yerde|
 |**Tekrarlanabilir**|Hayır|
 |**Gerekli öznitelikleri**|Yok.|
-|**Geçersiz öznitelikler**|Yok.|
+|**Geçersiz öznitelikler**|None|
 
 Daha fazla bilgi için [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[IDL öznitelikleri](idl-attributes.md)<br/>
+[IDL Öznitelikleri](idl-attributes.md)<br/>
 [Tek Başına Öznitelikler](stand-alone-attributes.md)<br/>
-[entry](entry.md)
+[giriş](entry.md)

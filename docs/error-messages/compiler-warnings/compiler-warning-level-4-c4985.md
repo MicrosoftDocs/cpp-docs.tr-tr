@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - C4985
 ms.assetid: 832f001c-afe7-403d-a8b4-02334724c79e
-ms.openlocfilehash: 6f098b25848d4fca0431663bd61ad71646c8d644
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 73abb166910cc421f042d22d67efc122e416bceb
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50661077"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59024445"
 ---
 # <a name="compiler-warning-level-4-c4985"></a>Derleyici Uyarısı (düzey 4) C4985
 
@@ -25,6 +25,6 @@ Proje sahip olmadığı sürece SAL makroları genişletilemez dikkat edin [/ an
 
 1. Aynı SAL ek açıklamalarını tanımında bir yöntem ve tüm bildirimleri kullanın.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [SAL Ek Açıklamaları](../../c-runtime-library/sal-annotations.md)

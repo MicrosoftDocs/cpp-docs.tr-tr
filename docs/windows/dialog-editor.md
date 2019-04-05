@@ -23,37 +23,37 @@ helpviewer_keywords:
 - Dialog Editor [C++], switching between controls and code
 - Dialog Editor [C++], shortcut keys
 ms.assetid: d94884ef-2cca-49d8-9b58-775f34848134
-ms.openlocfilehash: fef4a7f0d4c785a40ea946127d8e3c84c797e1aa
-ms.sourcegitcommit: 24592ba0a38c7c996ffd3d55fe1024231a59ccc2
+ms.openlocfilehash: dc5a823951e07af96efceec52d2aa23552c2d002
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56336702"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59029492"
 ---
 # <a name="dialog-editor-c"></a>İletişim kutusu Düzenleyicisi (C++)
 
-**İletişim** Düzenleyicisi oluşturma veya düzenleme iletişim kutusu kaynakları sağlar. İletişim kutusu Düzenleyicisi iletişim kutusu .rc dosyasına çift tıklayarak açın **kaynak görünümü** penceresi (**görünümü** > **kaynak görünümü**). Unutmayın **kaynak görünümü** Express sürümlerinde kullanılamaz.
+**İletişim kutusu Düzenleyicisi** oluşturma veya düzenleme iletişim kutusu kaynakları sağlar.
 
-Yeni iletişim kutusu (veya iletişim kutusu şablonu) yapma, ilk adımlarından biri, denetimleri iletişim kutusuna eklemektir. İçinde **iletişim** Düzenleyicisi, belirli bir boyut, Şekil veya hizalama sığması için denetimleri düzenlemek ya da bunları yaklaşık iletişim kutusu içinde çalışacak şekilde taşıyabilirsiniz. Bir denetimi silmek kolaydır.
+- Bir iletişim kutusu .rc dosyasında düzenleyicisini açmak için çift **kaynak görünümü** pencere veya menü Git **görünümü** > **kaynak görünümü**.
+
+Yeni iletişim kutusu veya iletişim kutusu şablonu yapma, ilk adımlarından denetimleri eklemektir. İçinde **iletişim kutusu Düzenleyicisi**, belirli bir boyut, Şekil veya hizalama sığması için denetimleri düzenleyebilirsiniz veya bunları yaklaşık iletişim kutusu içinde çalışacak şekilde taşıyabilirsiniz. Bir denetimi silmek kolaydır.
 
 Onu tekrar kullanabilirsiniz, böylece şablon olarak bir iletişim kutusu depolayabilirsiniz. Ayrıca bir kolayca iletişim kutusu tasarlama ve onu uygulayan kod düzenleme arasında geçiş yapabilirsiniz.
 
-İletişim kutusu düzenleyicisinde tek veya birden çok denetim özelliklerini düzenlemek mümkündür. Sekme sırasını değiştirebilirsiniz, diğer bir deyişle, hangi denetimlerin elde sırasını Odaklan ne zaman **sekmesini** tuşuna basıldığında veya klavyeyi kullanarak denetim seçmelerini sağlar bir erişim anahtarı (bir tuş bileşimi) tanımlayabilirsiniz.
+Tek özelliklerini düzenlemek mümkündür ya da birden çok denetimleri içinde **iletişim kutusu Düzenleyicisi**. Sekme sırasını değiştirebilirsiniz, diğer bir deyişle, hangi denetimlerin elde sırasını Odaklan ne zaman **sekmesini** tuşuna basıldığında veya bir erişim anahtarı veya klavyeyi kullanarak denetim seçmelerini sağlar tuş bileşimini tanımlayabilirsiniz.
 
-**İletişim** Düzenleyicisi de ActiveX denetimleri de dahil olmak üzere özel denetimler kullanmanızı sağlar. Ayrıca, düzenleyebileceğiniz bir [form görünümü](../mfc/reference/cformview-class.md), [kayıt görünümleri](../data/record-views-mfc-data-access.md), veya [iletişim kutusu çubukları](../mfc/dialog-bars.md).
+**İletişim kutusu Düzenleyicisi** ayrıca ActiveX denetimleri de dahil olmak üzere özel denetimler kullanmanıza olanak tanır. Ayrıca düzenleyebileceğiniz bir [form görünümü](../mfc/reference/cformview-class.md), [kayıt görünümleri](../data/record-views-mfc-data-access.md), veya [iletişim kutusu çubukları](../mfc/dialog-bars.md).
 
-Visual Studio 2015 ile başlayarak, iletişim kutusu Düzenleyicisi nasıl denetimleri taşımak kullanıcının bir iletişim kutusu boyutlandırdığında yeniden boyutlandırma belirtin ve dinamik düzenleri tanımlamak için kullanabilirsiniz. Daha fazla bilgi için [dinamik düzen](../mfc/dynamic-layout.md).
+Kullanabileceğiniz Visual Studio 2015 ile başlayarak, **iletişim kutusu Düzenleyicisi** bir iletişim kutusu kullanıcı yeniden boyutlandırdığında nasıl denetimleri taşımak belirtin dinamik düzenler ve yeniden boyutlandırma tanımlamak için. Daha fazla bilgi için [dinamik düzen](../mfc/dynamic-layout.md).
 
-- [Nasıl yapılır: Bir iletişim kutusu oluşturma](../windows/creating-a-new-dialog-box.md)
+Kaynaklar hakkında daha fazla bilgi için bkz. nasıl [Oluştur iletişim kutusu](../windows/creating-a-new-dialog-box.md) ve [iletişim kutusu denetimleri](../windows/controls-in-dialog-boxes.md).
 
-- [İletişim Kutularındaki Denetimler](../windows/controls-in-dialog-boxes.md)
-
-   > [!TIP]
-   > Kullanırken **iletişim** Düzenleyicisi, çoğu durumda, seçebileceğiniz sık kullanılan komutlar bir kısayol menüsünü görüntülemek için sağ fare düğmesi.
+> [!TIP]
+> Kullanırken **iletişim kutusu Düzenleyicisi**, çoğu durumda, sık kullanılan komutlar bir kısayol menüsünü görüntülemek için farenin sağ düğmesiyle seçebilirsiniz.
 
 ## <a name="dialog-editor-toolbar"></a>İletişim kutusu Düzenleyicisi araç çubuğu
 
-Açtığınızda **iletişim** Düzenleyicisi'nde bir C++ projesi **iletişim kutusu Düzenleyicisi** araç otomatik olarak çözümünüzü üst kısmında görünür.
+**İletişim kutusu Düzenleyicisi** araç çubuğu düğmeleri düzenleme iletişim kutusunda, örneğin boyutu ve hizalama denetim düzeni için içerir. **İletişim kutusu Düzenleyicisi** araç çubuğu düğmeleri üzerinde komutları karşılık **biçimi** menüsü.
 
 |Simge|Açıklama|Simge|Açıklama|
 |----------|-------------|----------|-------------|
@@ -65,38 +65,32 @@ Açtığınızda **iletişim** Düzenleyicisi'nde bir C++ projesi **iletişim ku
 |![Dikey Orta düğmesi](../mfc/media/vcdialogeditorvertical.png "vcDialogEditorVertical")|Dikey|![İki durumlu kılavuz düğmesi](../mfc/media/vcdialogeditortogglegrid.png "vcDialogEditorToggleGrid")|Kılavuzu Aç/Kapat|
 |![Yatay Orta düğmesi](../mfc/media/vcdialogeditorhorizontal.png "vcDialogEditorHorizontal")|Yatay|![Geçiş kılavuzlarını düğmesi](../mfc/media/vcdialogeditortoggleguides.png "vcDialogEditorToggleGuides")|Rehberi Aç/Kapat|
 
-**İletişim kutusu Düzenleyicisi** araç çubuğu düğmeleri düzenleme iletişim kutusunda, örneğin boyutu ve hizalama denetim düzeni için içerir. **İletişim kutusu Düzenleyicisi** araç çubuğu düğmeleri üzerinde komutları karşılık **biçimi** menüsü.
+- Göstermek veya gizlemek için **iletişim kutusu Düzenleyicisi** araç menüsüne gidin **görünümü** > **araç çubukları** > **iletişim kutusu Düzenleyicisi**.
 
-Uygulamasındayken **iletişim** Düzenleyicisi görüntülenmesini geçiş yapabileceğiniz **iletişim kutusu Düzenleyicisi** kullanılabilir araç çubukları ve windows listesinden seçerek araç çubuğu.
-
-- Göstermek veya iletişim kutusu Düzenleyicisi araç çubuğunda gizlemek için **görünümü** menüsünde **araç çubukları**, ardından **iletişim kutusu Düzenleyicisi** alt.
-
-   > [!NOTE]
-   > **İletişim kutusu Düzenleyicisi** bir iletişim kutusu kaynağı iletişim kutusu Düzenleyicisi'nde açtığınız zaman, araç varsayılan olarak görüntülenir; ancak, araç açıkça kapatırsanız, bir iletişim kutusu kaynağına sonraki açışınızda çağırma gerekecektir.
+Açtığınızda **iletişim kutusu Düzenleyicisi** bir C++ projesinde **iletişim kutusu Düzenleyicisi** araç otomatik olarak çözümünüzü üst kısmında görüntülenir, ancak açıkça araç kapatırsanız, onu çağırmak gerekecektir bir sonraki açışınızda **iletişim kutusu Düzenleyicisi**. Mevcut araç çubukları ve windows listesinden seçerek görünümünü geçiş yapabilirsiniz.
 
 ## <a name="switch-between-dialog-box-controls-and-code"></a>İletişim kutusu denetimleri ile kod arasında geçiş yapma
 
 MFC uygulamalarında iletişim kutusu denetimleri üzerinde işleyici kodlarını atlayın veya hızlı bir şekilde saplama işleyici işlevleri oluşturmak için çift tıklayabilirsiniz.
 
-Bir denetim seçili durumdayken tıklayın **ControlEvents'i** düğmesini veya **iletileri** düğmesine [Özellikler penceresi](/visualstudio/ide/reference/properties-window) Windows iletileri ve olayları tam listesini görüntülemek için Seçili öğe için kullanılabilir. Oluşturma veya düzenleme işleyici işlevleri listeden seçin.
+Bir denetim seçili durumdayken seçin **ControlEvents'i** düğmesini veya **iletileri** düğmesine [Özellikler penceresi](/visualstudio/ide/reference/properties-window) Windows iletileri ve olayları tam listesini görüntülemek için Seçili öğe için kullanılabilir. Oluşturma veya düzenleme işleyici işlevleri listeden seçin.
 
-- İletişim kutusu Düzenleyicisi'nden kodu atlamak için bir denetim, en son uygulanan ileti işleme işlevinin bildirimi atlamak için iletişim kutusuna çift tıklayın. (İletişim ATL tabanlı sınıflar için her zaman Oluşturucusu tanımına atlayın.)
+- Koddan atlamak için **iletişim kutusu Düzenleyicisi**, Denetim, en son uygulanan ileti işleme işlevinin bildirimi atlamak için iletişim kutusuna çift tıklayın.
 
-- Bir denetimle bir denetim seçiliyken, olayları görüntülemeyi **ControlEvents'i** düğmesine [Özellikler penceresi](/visualstudio/ide/reference/properties-window).
+   ATL tabanlı iletişim sınıfları için her zaman Oluşturucusu tanımına atlayın.
+
+- Bir denetimle bir denetim seçiliyken, olayları görüntülemeyi **ControlEvents'i** düğmesine **özellikleri** penceresi.
+
+   Tek bir denetim, iletişim kutusunda odağa sahip olduğunda, sağ seçin tıklayıp **olay işleyici Ekle**. Bu sınıfı işleyici ekleneceği belirtmenize olanak sağlar. Daha fazla bilgi için [olay işleyici ekleme](../ide/adding-an-event-handler-visual-cpp.md).
 
    > [!NOTE]
-   > Seçme **ControlEvents'i** olduğunda düğme *iletişim kutusu* odak kullanıma sunan sonra olayları tek tek denetimler için Düzen genişletebilirsiniz iletişim kutusunda, tüm denetimleri listesi vardır.
+   > Seçme **ControlEvents'i** iletişim kutusu odağa sahip olduğunda düğme sonra olayları tek tek denetimler için Düzen genişletebilirsiniz iletişim kutusunda, tüm denetimlerin listesini gösterir.
 
-   Tek bir denetim, iletişim kutusunda odağa sahip olduğunda, sağ tıklatın ve seçin **olay işleyici Ekle** kısayol menüsünden. Bu sınıfı işleyici ekleneceği belirtmenize olanak sağlar. Daha fazla bilgi için [olay işleyici ekleme](../ide/adding-an-event-handler-visual-cpp.md).
-
-- Seçili, iletişim kutusu ile bir iletişim kutusu iletileri görüntülemeyi **iletileri** düğmesine [Özellikler penceresi](/visualstudio/ide/reference/properties-window).
+- Seçili, iletişim kutusu ile bir iletişim kutusu iletileri görüntülemeyi **iletileri** düğmesine **özellikleri** penceresi.
 
 ## <a name="accelerator-keys"></a>Hızlandırıcı Tuşları
 
-Aşağıda varsayılan Hızlandırıcı tuşları iletişim kutusu Düzenleyicisi komutları için verilmiştir. Kısayol tuşlarını değiştirmek için seçin **seçenekleri** üzerinde **Araçları** menüsünde, ardından **klavye** altında **ortam** klasör. Daha fazla bilgi için [tanımlama ve özelleştirme klavye kısayolları](/visualstudio/ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio).
-
-> [!NOTE]
-> İletişim kutuları, adları ve konumları gördüğünüz gibi menü komutlarının Seçenekleri Yardımı'nda, etkin ayarlarınıza ve sürüm bağlı olarak açıklanan nedir öğesinden farklı olabilir. Ayarlarınızı değiştirmek için seçin **içeri ve dışarı aktarma ayarları** üzerinde **Araçları** menüsü. Daha fazla bilgi için [Visual Studio IDE'yi kişiselleştirme](/visualstudio/ide/personalizing-the-visual-studio-ide).
+Varsayılan Hızlandırıcı tuşları aşağıda verilmiştir **iletişim kutusu Düzenleyicisi** komutları.  
 
 |Komut|anahtarları|Açıklama|
 |-------------|----------|-----------------|
@@ -108,26 +102,35 @@ Aşağıda varsayılan Hızlandırıcı tuşları iletişim kutusu Düzenleyicis
 |Format.AlignTops|**CTRL** + **Shift** + **yukarı ok**|Üst kenarları Seçili denetimleri baskın denetimi ile hizalar.|
 |Format.ButtonBottom|**CTRL** + **B**|Seçili düğmelerini iletişim kutusunun alt ortaya koyar.|
 |Format.ButtonRight|**Ctrl** + **R**|Seçili düğmelerini iletişim kutusunun sağ üst köşedeki yerleştirir.|
-|Format.CenterHorizontal|**CTRL** + **Shift** + **F9**|Denetimleri yatay olarak iletişim kutusu içinde ortalar.|
+|Format.CenterHorizontal|**CTRL** + **Shift** + **F9**|Denetimler iletişim kutusu içinde yatay olarak merkezlendirir.|
 |Format.CenterVertical|**CTRL** + **F9**|Denetimler iletişim kutusu içinde dikey olarak ortalar.|
-|Format.CheckMnemonics|**CTRL** + **M**|Anımsatıcıları benzersizliğini denetimleri|
-|Format.SizeToContent|**Shift** + **F7**|Seçili denetim açıklamalı alt yazı metni uyacak şekilde yeniden boyutlandırır|
-|Format.SpaceAcross|**Alt** + **sol ok**|Seçili denetimleri yatay olarak eşit boşluk|
-|Format.SpaceDown|**Alt** + **aşağı ok**|Seçili denetimleri dikey olarak eşit boşluk|
-|Format.TabOrder|**Ctrl** + **D**|İletişim kutusu içinde denetimlerin sırasını ayarlar|
-|Format.TestDialog|**CTRL** + **T**|Görünümünü ve davranışını test etmek için iletişim kutusu çalıştırır|
-|Format.ToggleGuides|**CTRL** + **G**|İletişim düzenlemek için hiçbir kılavuz, Kılavuzlar ve kılavuz arasında geçiş yapar|
+|Format.CheckMnemonics|**CTRL** + **M**|Anımsatıcıları benzersizliğini denetler.|
+|Format.SizeToContent|**Shift** + **F7**|Seçili denetim açıklamalı alt yazı metni uyacak şekilde yeniden boyutlandırır.|
+|Format.SpaceAcross|**Alt** + **sol ok**|Eşit olarak seçili denetimleri yatay boşluk.|
+|Format.SpaceDown|**Alt** + **aşağı ok**|Seçili denetimleri eşit dikey boşluk.|
+|Format.TabOrder|**Ctrl** + **D**|İletişim kutusu içinde denetimlerin sırasını ayarlar.|
+|Format.TestDialog|**CTRL** + **T**|Görünümünü ve davranışını test etmek için iletişim kutusu çalıştırır.|
+|Format.ToggleGuides|**CTRL** + **G**|İletişim düzenlemek için döngüleri arasında hiçbir kılavuz, Kılavuzlar ve kılavuz.|
+
+- Kısayol tuşlarını değiştirmek için menüsüne gidin **Araçları** > **seçenekleri**ve **klavye** altında **ortam** klasör.
+
+   Daha fazla bilgi için [tanımlama ve özelleştirme klavye kısayolları](/visualstudio/ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio).
+
+- Ayarlarınızı değiştirmek için menüsüne gidin **Araçları** > **içeri ve dışarı aktarma ayarları**.
+
+   Açıklanan nedir gelen iletişim kutuları, adları ve konumları gördüğünüz gibi menü komutlarının seçenekleri değişebilir **yardımcı** bağlı olarak, etkin ayarlarınıza ve sürüm.  Daha fazla bilgi için [Visual Studio IDE'yi kişiselleştirme](/visualstudio/ide/personalizing-the-visual-studio-ide).
 
 ## <a name="requirements"></a>Gereksinimler
 
 Win32
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Kaynak Düzenleyicileri](../windows/resource-editors.md)<br/>
-[Kaynak Dosyalar](../windows/resource-files-visual-studio.md)<br/>
-[Nasıl yapılır: Kaynak Oluşturma](../windows/how-to-create-a-resource.md)<br/>
-[Denetimler](../mfc/controls-mfc.md)<br/>
-[Denetim Sınıfları](../mfc/control-classes.md)<br/>
-[İletişim Kutusu Sınıfları](../mfc/dialog-box-classes.md)<br/>
-[İletişim Kutusu Denetimleri ve Değişken Türleri](../ide/dialog-box-controls-and-variable-types.md)
+[Nasıl yapılır: Bir iletişim kutusu oluşturma](../windows/creating-a-new-dialog-box.md)<br/>
+[İletişim kutusu denetimleri](../windows/controls-in-dialog-boxes.md)<br/>
+<!--
+[Controls](../mfc/controls-mfc.md)<br/>
+[Control Classes](../mfc/control-classes.md)<br/>
+[Dialog Box Classes](../mfc/dialog-box-classes.md)<br/>
+[Dialog Box Controls and Variable Types](../ide/dialog-box-controls-and-variable-types.md)-->

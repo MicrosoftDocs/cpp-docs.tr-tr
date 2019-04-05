@@ -14,12 +14,12 @@ helpviewer_keywords:
 - .def files
 - licensing ActiveX controls
 ms.assetid: 2b0ee2e0-ae81-4185-9bb9-11da3c99a283
-ms.openlocfilehash: 7ef8127b829b60d84af72874292c33ae1c7c4636
-ms.sourcegitcommit: c1f646c8b72f330fa8cf5ddb0f8f261ba10d16f0
+ms.openlocfilehash: b0f780b122b147d633d5d7cd949da805d267f757
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58327587"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59033381"
 ---
 # <a name="file-types-created-for-visual-studio-c-projects"></a>Visual Studio C++ projeleri için oluşturulan dosya türleri
 
@@ -27,13 +27,13 @@ Bu konuda, Klasik Masaüstü uygulamaları için Visual Studio projeleri ile ili
 
 - [Proje ve Çözüm Dosyaları](project-and-solution-files.md)
 
-- [CLR projeleri](files-created-for-clr-projects.md)
+- [CLR Projeleri](files-created-for-clr-projects.md)
 
 - [ATL Programı veya Denetim Kaynağı ve Başlık Dosyaları](atl-program-or-control-source-and-header-files.md)
 
 - [MFC Programı veya Denetim Kaynağı ve Başlık Dosyaları](mfc-program-or-control-source-and-header-files.md)
 
-- [Önceden Derlenmiş Üst Bilgi Dosyaları](../creating-precompiled-header-files.md)
+- [Önceden Derlenmiş Başlık Dosyaları](../creating-precompiled-header-files.md)
 
 - [Kaynak Dosyalar](resource-files-cpp.md)
 
@@ -91,7 +91,7 @@ Proje dosyaları Çözüm Gezgini'nde klasörler halinde düzenlenir. Visual Stu
 
 Bir projeye bir öğe eklediğinizde, öğe derlenebilir olup olmadığına bakılmaksızın bu proje için tüm yapılandırmalar için öğeyi ekleyin. MyProject adlı bir proje varsa, örneğin, bir öğe ekleme, hata ayıklama ve yayın proje yapılandırmaları için ekler.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Visual Studio C++ proje oluşturma ve yönetme](../creating-and-managing-visual-cpp-projects.md)<br>
 [Visual Studio C++ proje türleri](visual-cpp-project-types.md)<br>

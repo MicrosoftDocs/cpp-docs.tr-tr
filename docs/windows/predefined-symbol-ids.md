@@ -5,12 +5,12 @@ helpviewer_keywords:
 - symbols [C++], predefined IDs
 - predefined symbol IDs
 ms.assetid: 91a5d610-1a04-47e8-b8a4-63ad650a90df
-ms.openlocfilehash: 7d3581a9f6f2a2080f72634a01d3417ffecf82a4
-ms.sourcegitcommit: f127b08f114b8d6cab6b684febcb6f2ae0e055ba
+ms.openlocfilehash: 5acaf9d470ce3d1cccad65bc8235cacfd7a56427
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56954919"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59024549"
 ---
 # <a name="predefined-symbol-ids"></a>Önceden Tanımlanmış Sembol Kimlikleri
 
@@ -18,7 +18,7 @@ Proje türüne bağlı olarak yeni bir proje başladığınızda bazı sembol ki
 
 Bu sembol kimlikleri, kaynaklarla çalışırken önemli hale gelmiştir. Bunlar, Hızlandırıcı tablolarını düzenleme ve bunlardan bazıları zaten sanal anahtarları ile ilişkili olduğunda kullanılabilir. Ayrıca, kullanılabilir [Özellikler penceresi](/visualstudio/ide/reference/properties-window). Yeni kaynaklar için önceden tanımlanmış sembol kimlikleri atayabilirsiniz veya bunları ve Kimliğini otomatik olarak bu tuş bileşimi ile ilişkilendirir simgesiyle ilişkili işlevselliği için hızlandırma tuşları atayabilirsiniz.
 
-Bu kitaplıklar önceden tanımlanmış semboller projenin bir parçası görünecek:
+Kitaplıklarını önceden tanımlanmış semboller projenin bir parçası görünecek:
 
 - [ATL Önceden Tanımlanmış Semboller](../windows/atl-predefined-symbols.md)
 
@@ -33,8 +33,8 @@ Bu kitaplıklar önceden tanımlanmış semboller projenin bir parçası görün
 
 Win32, MFC veya ATL
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[Kaynak Tanımlayıcıları (Semboller)](../windows/symbols-resource-identifiers.md)<br/>
-[Nasıl yapılır: Sembol Oluşturma](../windows/creating-new-symbols.md)<br/>
-[Nasıl yapılır: Sembolleri Yönetme](../windows/changing-a-symbol-or-symbol-name-id.md)<br/>
+[Kaynak Tanımlayıcıları (simge)](../windows/symbols-resource-identifiers.md)<br/>
+[Nasıl yapılır: Semboller oluşturma](../windows/creating-new-symbols.md)<br/>
+[Nasıl yapılır: Semboller yönetme](../windows/changing-a-symbol-or-symbol-name-id.md)<br/>

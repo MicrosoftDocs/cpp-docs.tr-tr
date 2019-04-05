@@ -6,12 +6,12 @@ helpviewer_keywords:
 - generic delegates
 - delegates, generic [C++]
 ms.assetid: 09d430b2-1aef-4fbc-87f9-9d7b8185d798
-ms.openlocfilehash: 1152656156a2f1002167fd83762f2d9a33342c49
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.openlocfilehash: 449659126f52997d548ebd7785a78c1200038ee6
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58787591"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59029563"
 ---
 # <a name="generic-delegates-ccli"></a>Genel temsilciler (C + +/ CLI)
 
@@ -29,7 +29,7 @@ generic < [class | typename] type-parameter-identifiers>
 
 ### <a name="parameters"></a>Parametreler
 
-*Öznitelikleri*<br/>
+*öznitelikler*<br/>
 (İsteğe bağlı) Ek bildirim temelli bilgiler. Öznitelikleri öznitelikleri ve öznitelik sınıfları hakkında daha fazla bilgi için bkz.
 
 *tür-parametresi-tanımlayıcıları*<br/>
@@ -162,6 +162,6 @@ Invoking the integer delegate: i = 123, j = 123
 Invoking the double delegate: m = 0.123, n = 0.123
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Genel Türler](generics-cpp-component-extensions.md)

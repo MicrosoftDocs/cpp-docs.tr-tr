@@ -12,12 +12,12 @@ helpviewer_keywords:
 - preprocessor, directives
 - COM, type library header file
 ms.assetid: 787d1112-e543-40d7-ab15-a63d43f4030a
-ms.openlocfilehash: 72fd1d025ab19b7db9521e08655d00936b77581e
-ms.sourcegitcommit: 309dc532f13242854b47759cef846de59bb807f1
+ms.openlocfilehash: 98a0f9f66fb209bb41215fc1e86a9682a4fed023
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58564972"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59031991"
 ---
 # <a name="import-directive-c"></a>#import Yönergesi (C++)
 
@@ -34,7 +34,7 @@ Tür kitaplığından bilgileri birleştirmek için kullanılır. Tür kitaplı�
 
 ### <a name="parameters"></a>Parametreler
 
-*Dosya adı*<br/>
+*filename*<br/>
 İçe aktarılacak tür kitaplığını belirtir. *filename* aşağıdakilerden biri olabilir:
 
 - .Olb, .tlb veya .dll dosyası gibi bir tür kitaplığı içeren bir dosya adı. Anahtar sözcüğü **dosya:**, her dosya adının önüne gelebilir.
@@ -65,7 +65,7 @@ Tür kitaplığından bilgileri birleştirmek için kullanılır. Tür kitaplı�
 
 - Tarafından anlaşılabilir herhangi bir dosya biçiminde **LoadTypeLib** API.
 
-*Öznitelikleri*<br/>
+*öznitelikler*<br/>
 Bir veya daha fazla [#import öznitelikleri](#_predir_the_23import_directive_import_attributes). Ayrı öznitelikleri boşluk veya virgül ile. Örneğin:
 
 ```cpp
@@ -191,7 +191,7 @@ Daha fazla bilgi için [#import öznitelikleri](../preprocessor/hash-import-attr
 
 **END C++ özgü**
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Ön işlemci Yönergeleri](../preprocessor/preprocessor-directives.md)<br/>
 [Derleyici COM Desteği](../cpp/compiler-com-support.md)

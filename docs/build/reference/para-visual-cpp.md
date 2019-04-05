@@ -8,12 +8,12 @@ helpviewer_keywords:
 - <para> C++ XML tag
 - para C++ XML tag
 ms.assetid: 35f2a1b3-bc14-4f13-bcb0-c39ccbf74d59
-ms.openlocfilehash: e7cb997d18a778bca3efd4552f543ec5401e8dd0
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.openlocfilehash: d8de55344eef7634d8a9a55a32b8ff5beb8852d4
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57823562"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59021436"
 ---
 # <a name="ltparagt"></a>&lt;para&gt;
 
@@ -27,7 +27,7 @@ ms.locfileid: "57823562"
 
 #### <a name="parameters"></a>Parametreler
 
-*İçeriği*<br/>
+*içerik*<br/>
 Paragraf metni.
 
 ## <a name="remarks"></a>Açıklamalar
@@ -38,6 +38,6 @@ Derleme [/doc](doc-process-documentation-comments-c-cpp.md) işlem belgeleri aç
 
 Bkz: [ \<Özet >](summary-visual-cpp.md) kullanma örneği için \<para >.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [XML Belgeleri](xml-documentation-visual-cpp.md)

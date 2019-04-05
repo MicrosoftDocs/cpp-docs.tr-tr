@@ -7,16 +7,16 @@ helpviewer_keywords:
 - VMREAD instruction
 - __vmx_vmread intrinsic
 ms.assetid: 08bdd7a0-6435-4ea6-b9a0-f592d870e5aa
-ms.openlocfilehash: 0a4528bed4426ce5b611e986a69f4b0b8c750548
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 5c7b72ba3bf1bd60324704b774bcedaf5612240f
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50499105"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59028392"
 ---
 # <a name="vmxvmread"></a>__vmx_vmread
 
-**Microsoft'a özgü**
+**Microsoft'a Özgü**
 
 Belirtilen alan geçerli sanal makine denetim yapısından (Windows VMCS) okur ve belirtilen konuma yerleştirir.
 
@@ -56,9 +56,9 @@ unsigned char __vmx_vmread(
 
 **Üst bilgi dosyası** \<intrin.h >
 
-**END Microsoft özgü**
+**END Microsoft'a Özgü**
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)<br/>
 [__vmx_vmwrite](../intrinsics/vmx-vmwrite.md)

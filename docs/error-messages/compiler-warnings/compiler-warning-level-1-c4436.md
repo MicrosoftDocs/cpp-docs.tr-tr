@@ -2,12 +2,12 @@
 title: Derleyici Uyarısı (düzey 1) C4436
 ms.date: 11/04/2016
 ms.assetid: 2b54a1fc-c9c6-4cc9-90be-faa44fc715d5
-ms.openlocfilehash: b8f62b7556d458f285597b4ae92a4f6e15ee60c9
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 487fb8c804ac34ba52661774c2552199c764f6b0
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50658001"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59041357"
 ---
 # <a name="compiler-warning-level-1-c4436"></a>Derleyici Uyarısı (düzey 1) C4436
 
@@ -69,7 +69,7 @@ int main()
 }
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [dynamic_cast İşleci](../../cpp/dynamic-cast-operator.md)<br/>
 [vtordisp](../../preprocessor/vtordisp.md)<br/>

@@ -16,16 +16,16 @@ helpviewer_keywords:
 - __addgsdword intrinsic
 - __addgsbyte intrinsic
 ms.assetid: 4fa03e69-d849-49ed-ba37-1d3aa23c2a21
-ms.openlocfilehash: 9514c193468d526aa645ea7984691034feebc07a
-ms.sourcegitcommit: a1fad0a266b20b313364a74b16c9ac45d089b1e9
+ms.openlocfilehash: 61fff704e600296443964ab62a0b58799c87b51b
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "54220471"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59031228"
 ---
 # <a name="addgsbyte-addgsword-addgsdword-addgsqword"></a>__addgsbyte, __addgsword, __addgsdword, __addgsqword
 
-**Microsoft'a özgü**
+**Microsoft'a Özgü**
 
 Başlangıcına göre bir uzaklık tarafından belirtilen bellek konumuna bir değer ekleyin `GS` kesimi.
 
@@ -52,7 +52,7 @@ void __addgsqword(
 
 #### <a name="parameters"></a>Parametreler
 
-*uzaklık*<br/>
+*Uzaklık*<br/>
 [in] Başından uzaklık `GS`.
 
 *Veri*<br/>
@@ -71,9 +71,9 @@ void __addgsqword(
 
 Bu yordamlar yalnızca bir iç öğe olarak kullanılabilir.
 
-**END Microsoft özgü**
+**END Microsoft'a Özgü**
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [__incgsbyte, \__incgsword, \__incgsdword, \__incgsqword](../intrinsics/incgsbyte-incgsword-incgsdword-incgsqword.md)<br/>
 [__readgsbyte, \__readgsdword, \__readgsqword, \__readgsword](../intrinsics/readgsbyte-readgsdword-readgsqword-readgsword.md)<br/>

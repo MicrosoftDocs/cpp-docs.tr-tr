@@ -9,16 +9,16 @@ helpviewer_keywords:
 - _enable intrinsic
 - ssm instruction
 ms.assetid: 8bee669b-6bd8-4e25-9383-bb7d57295b4d
-ms.openlocfilehash: 1d129db17b489972555efb0b5df2de52e01fa649
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e1ece6d6f4040b81b55d8400407d46f165b56b53
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50631259"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59024523"
 ---
 # <a name="enable"></a>_enable
 
-**Microsoft'a özgü**
+**Microsoft'a Özgü**
 
 Kesme sağlar.
 
@@ -42,8 +42,8 @@ void _enable(void);
 
 Bu işlev, yalnızca çekirdek modunda kullanılabilir. Kullanıcı modunda kullandıysanız, bir ayrıcalıklı yönerge özel durum oluşturulur.
 
-**END Microsoft özgü**
+**END Microsoft'a Özgü**
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)

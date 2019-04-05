@@ -5,12 +5,12 @@ helpviewer_keywords:
 - bookmarks [C++], dynamically determining columns
 - dynamically determining columns [C++]
 ms.assetid: 58522b7a-894e-4b7d-a605-f80e900a7f5f
-ms.openlocfilehash: 7db319aa153cb281c8fd8b4eec16972f5ac0c2c9
-ms.sourcegitcommit: 943c792fdabf01c98c31465f23949a829eab9aad
+ms.openlocfilehash: 81353581d22f3d075fd19d783591ec856c21e241
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "51265184"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59037665"
 ---
 # <a name="dynamically-determining-columns-returned-to-the-consumer"></a>Tüketiciye Döndürülecek Olan Sütunları Dinamik Olarak Belirleme
 
@@ -104,7 +104,7 @@ ATLCOLUMNINFO* CCustomWindowsFile::GetColumnInfo(void* pThis, ULONG* pcCols)
 }
 ```
 
-Bu örnek, statik bir dizi sütun bilgileri tutmak için kullanır. Yer işareti sütunu tüketici istememektedir, dizi bir giriş kullanılmıyor. İki dizi makro oluşturma bilgilerini işlemek için: ADD_COLUMN_ENTRY ve ADD_COLUMN_ENTRY_EX. ADD_COLUMN_ENTRY_EX ek bir parametre alan *bayrakları*, yani sizin belirlediğiniz bir yer işareti sütunu gerekli.
+Bu örnek, statik bir dizi sütun bilgileri tutmak için kullanır. Yer işareti sütunu tüketici istememektedir, dizi bir giriş kullanılmıyor. Bilgilerini işlemek için iki dizi makro oluşturun: ADD_COLUMN_ENTRY ve ADD_COLUMN_ENTRY_EX. ADD_COLUMN_ENTRY_EX ek bir parametre alan *bayrakları*, yani sizin belirlediğiniz bir yer işareti sütunu gerekli.
 
 ```cpp
 ////////////////////////////////////////////////////////////////////////  
@@ -145,6 +145,6 @@ ADD_COLUMN_ENTRY_EX(ulCols, OLESTR("Bookmark"), 0, sizeof(DWORD),
 
 Şimdi, derleyin ve Gelişmiş Sağlayıcısı'nı çalıştırın. Sağlayıcıyı test için test tüketici açıklandığı şekilde değiştirmeniz [basit tüketici uygulama](../../data/oledb/implementing-a-simple-consumer.md). Test müşteri ve sağlayıcı ile çalıştırmak ve test tüketici sağlayıcıdan doğru dizeleri alır doğrulayın.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Basit Salt Okunur Sağlayıcıyı Geliştirme](../../data/oledb/enhancing-the-simple-read-only-provider.md)<br/>

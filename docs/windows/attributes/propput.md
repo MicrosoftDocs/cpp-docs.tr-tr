@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - propput attribute
 ms.assetid: 1f84dda9-9cce-4e16-aaf0-b2c5219827f2
-ms.openlocfilehash: 1902ba61417be457b4c296b513e1632bfdd8cec6
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c9853b38675abfa0a94a319ac752eb2ef61a48e0
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50492735"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59031745"
 ---
 # <a name="propput"></a>propput
 
@@ -37,16 +37,16 @@ Bir özellik ayarı işlevi belirtir.
 
 |||
 |-|-|
-|**İçin geçerlidir**|Yöntem|
+|**Uygulandığı öğe:**|Yöntem|
 |**Tekrarlanabilir**|Hayır|
 |**Gerekli öznitelikleri**|Yok.|
 |**Geçersiz öznitelikler**|`propget`, `propputref`|
 
 Öznitelik bağlamları hakkında daha fazla bilgi için bkz: [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[IDL öznitelikleri](idl-attributes.md)<br/>
+[IDL Öznitelikleri](idl-attributes.md)<br/>
 [Yöntem Öznitelikleri](method-attributes.md)<br/>
 [propget](propget.md)<br/>
 [propputref](propputref.md)

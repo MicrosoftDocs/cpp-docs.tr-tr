@@ -8,12 +8,12 @@ helpviewer_keywords:
 - accelerator keys
 - Image editor [C++], accelerator keys
 ms.assetid: add37861-3e17-4a6f-89e8-46df12e74a90
-ms.openlocfilehash: 0b29f435ab91b10e010e956d26fb8d2d116edc6e
-ms.sourcegitcommit: b4645761ce5acf8c2fc7a662334dd5a471ea976d
+ms.openlocfilehash: 45afdf4b3b557b560d7597b1bb4330c36a1fc84d
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "57563127"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59025091"
 ---
 # <a name="accelerator-keys-c-image-editor-for-icons"></a>Hızlandırma tuşları (simgeler için görüntü Düzenleyicisi C++)
 
@@ -40,7 +40,7 @@ Anahtarlar için varsayılan olarak bağlı olan Resim Düzenleyicisi komutları
 |Image.LineTool|**CTRL** + **m**|Seçilen şekle, boyutu ve rengi düz bir çizgi çizer.|
 |Image.MagnificationTool|**CTRL** + **M**|Etkinleştirir **Magnıfy** görüntünüzün belirli bölümlerini büyütmenize izin veren bir araç.|
 |Image.Magnify|**CTRL** + **Shift** + **M**|Geçerli büyütme ve 1:1 büyütme arasında geçiş yapar.|
-|Image.NewImageType|**Ekle**|Başlatan [yeni \<cihaz > görüntü türü iletişim kutusu](../windows/new-device-image-type-dialog-box-image-editor-for-icons.md) ile farklı bir görüntü türü için bir görüntü oluşturabilirsiniz.|
+|Image.NewImageType|**Ekleme**|Başlatan [yeni \<cihaz > görüntü türü iletişim kutusu](../windows/new-device-image-type-dialog-box-image-editor-for-icons.md) ile farklı bir görüntü türü için bir görüntü oluşturabilirsiniz.|
 |Image.NextColor|**CTRL** + **]**<br /><br /> - veya -<br /><br /> **CTRL** + **sağ ok**|Çizim ön plan rengini sonraki palet rengine değiştirir.|
 |Image.NextRightColor|**CTRL** + **Shift** + **]**<br /><br /> - veya -<br /><br /> **Shift** + **Ctrl** + **sağ ok**|Çizim arkaplan rengini sonraki palet rengine değiştirir.|
 |Image.OutlinedEllipseTool|**Shift** + **Alt** + **P**|Bir dış dolu bir elips çizer.|
@@ -64,12 +64,12 @@ Anahtarlar için varsayılan olarak bağlı olan Resim Düzenleyicisi komutları
 
 ## <a name="requirements"></a>Gereksinimler
 
-Hiçbiri
+Yok.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[Simgeler için Görüntü Düzenleyicisi](../windows/image-editor-for-icons.md)<br/>
-[Nasıl yapılır: Simge veya Başka Görüntü Oluşturma](../windows/creating-an-icon-or-other-image-image-editor-for-icons.md)<br/>
-[Nasıl yapılır: Görüntü Kopyalama](../windows/selecting-an-area-of-an-image-image-editor-for-icons.md)<br/>
-[Nasıl yapılır: Çizim Aracı Kullanma](../windows/using-a-drawing-tool-image-editor-for-icons.md)<br/>
+[Simgeler İçin Görüntü Düzenleyicisi](../windows/image-editor-for-icons.md)<br/>
+[Nasıl yapılır: Simge veya başka görüntü oluşturma](../windows/creating-an-icon-or-other-image-image-editor-for-icons.md)<br/>
+[Nasıl yapılır: Görüntü Düzenle](../windows/selecting-an-area-of-an-image-image-editor-for-icons.md)<br/>
+[Nasıl yapılır: Çizim aracı kullanma](../windows/using-a-drawing-tool-image-editor-for-icons.md)<br/>
 [Nasıl yapılır: Renklerle Çalışma](../windows/working-with-color-image-editor-for-icons.md)<br/>

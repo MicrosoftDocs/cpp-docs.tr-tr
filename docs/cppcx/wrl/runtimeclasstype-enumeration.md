@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - RuntimeClassType enumeration
 ms.assetid: d380712d-672e-4ea9-b7c5-cf9fa7dbb770
-ms.openlocfilehash: 3b869be00cdc405569b82bdf3730f8d4ca4f3aab
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.openlocfilehash: 80e8a120f7e3666721ff839a2a696388a64d734e
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58787845"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59035964"
 ---
 # <a name="runtimeclasstype-enumeration"></a>RuntimeClassType Numaralandırması
 
@@ -43,6 +43,6 @@ enum RuntimeClassType;
 
 **Namespace:** Microsoft::WRL
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Microsoft::WRL Ad Alanı](microsoft-wrl-namespace.md)

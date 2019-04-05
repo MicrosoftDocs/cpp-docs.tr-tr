@@ -6,12 +6,12 @@ helpviewer_keywords:
 - BLOB (binary large object), retrieving
 - OLE DB, BLOBs (binary large objects)
 ms.assetid: 2893eb0a-5c05-4016-8914-1e40ccbaf0b3
-ms.openlocfilehash: 42b7b95f2da4313bdfcb1d9d8a064ca5be563e40
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: 23bc20355e1e2b17ac20cf975df2ff58d6553ef9
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57423254"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59023093"
 ---
 # <a name="retrieving-a-blob"></a>BLOB Alma
 
@@ -53,7 +53,7 @@ while (categories.MoveNext() == S_OK)
 
 BLOB verilerini işleme makrolar hakkında daha fazla bilgi için bkz. **sütun eşleme makroları** içinde [makroları ve genel işlevler için OLE DB Tüketici Şablonları](../../data/oledb/macros-and-global-functions-for-ole-db-consumer-templates.md).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Erişimcileri Kullanma](../../data/oledb/using-accessors.md)<br/>
 [OLE DB Tüketici Şablonları için Makrolar ve Genel İşlevler](../../data/oledb/macros-and-global-functions-for-ole-db-consumer-templates.md)<br/>

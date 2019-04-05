@@ -8,16 +8,16 @@ helpviewer_keywords:
 - rep movsb instruction
 - __movsb intrinsic
 ms.assetid: ba5469f6-f797-4cd2-bee8-74c7666c26d4
-ms.openlocfilehash: 9dc32f460a2098d2a216c725f49c0389f77043c2
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.openlocfilehash: 42124743c27b297c723780c1bc19038fb54e638d
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51329039"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59025000"
 ---
 # <a name="movsb"></a>__movsb
 
-**Microsoft'a özgü**
+**Microsoft'a Özgü**
 
 Taşıma bir dize oluşturur (`rep movsb`) yönerge.
 
@@ -39,7 +39,7 @@ void __movsb(
 *Kaynak*<br/>
 [in] Kopyasının kaynağı olan bir işaretçi.
 
-*Sayısı*<br/>
+*Sayı*<br/>
 [in] Kopyalanacak bayt sayısı.
 
 ## <a name="requirements"></a>Gereksinimler
@@ -80,8 +80,8 @@ int main()
 A big black dog. A big black dog.
 ```
 
-**END Microsoft özgü**
+**END Microsoft'a Özgü**
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)

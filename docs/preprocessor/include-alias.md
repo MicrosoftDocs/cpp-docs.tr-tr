@@ -8,12 +8,12 @@ helpviewer_keywords:
 - pragmas, include_alias
 - include_alias pragma
 ms.assetid: 3256d589-12b3-4af0-a586-199e96eabacc
-ms.openlocfilehash: 9d32cad2533b6044348651797d0278bcbebcafd6
-ms.sourcegitcommit: ae2f71fe0d64f1a90ef722759fe93c82abc064ab
+ms.openlocfilehash: 187fa94f7c2a5457df655081b87a7f49d38adfa2
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53587882"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59024107"
 ---
 # <a name="includealias"></a>include_alias
 
@@ -103,6 +103,6 @@ Ayrıca geçişliliğin desteklenmediğini unutmayın. Aşağıdaki yönergeler 
 
 Derleyici dosya three.h yerine için two.h arar.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Pragma Yönergeleri ve __Pragma Anahtar Sözcüğü](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

@@ -2,12 +2,12 @@
 title: Belge açıklamaları (C++ belgeleri açıklamaları) için önerilen etiketler
 ms.date: 11/04/2016
 ms.assetid: 6548e798-5235-4a38-9482-bdc7b88f40a9
-ms.openlocfilehash: adb8440dc07f8f3e193b58be6782859fbb8413e4
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.openlocfilehash: 2a6a2c3983c10579a6cd96b69be81aa7df8b8ee7
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57823711"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59027902"
 ---
 # <a name="recommended-tags-for-documentation-comments"></a>Belge Açıklamaları için Önerilen Etiketler
 
@@ -35,6 +35,6 @@ Derleyici, geçerli bir XML değil herhangi bir etiket işleyecektir. Aşağıda
 
 Geçerli sürümde MSVC derleyicisi desteklemediği `<paramref>`, diğer Visual Studio derleyicileri tarafından desteklenen bir etiket. Visual C++ destekleyebilir `<paramref>` gelecek sürümlerden birinde.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [XML Belgeleri](xml-documentation-visual-cpp.md)

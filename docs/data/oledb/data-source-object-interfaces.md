@@ -9,12 +9,12 @@ helpviewer_keywords:
 - OLE DB provider templates [C++], object interfaces
 - OLE DB [C++], interfaces
 ms.assetid: 929e100c-c08c-4b64-8437-d8d1357226f6
-ms.openlocfilehash: aaa9e90996750b0518999803487fcb39729c76f9
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: fc8d2f5edf854766dcb5dcc8ed6d57a849b8f2a0
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50519658"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59033196"
 ---
 # <a name="data-source-object-interfaces"></a>Veri Kaynağı Nesne Arabirimleri
 
@@ -34,6 +34,6 @@ Aşağıdaki tabloda, bir veri kaynağı nesnesi için OLE DB tarafından tanım
 
 Veri kaynağı nesnesi uygulayan `IDBProperties`, `IDBInitialize`, ve `IDBCreateSession` devralma yoluyla arabirimleri. Bu uygulama sınıflarının birinden devralan değil ya da ek işlevleri destekleyen seçebilirsiniz. Desteklemek istiyorsanız `IDBDataSourceAdmin` arabirimi, devralmalıdır `IDBDataSourceAdminImpl` sınıfı.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [OLE DB Sağlayıcı Şablonu Mimarisi](../../data/oledb/ole-db-provider-template-architecture.md)<br/>

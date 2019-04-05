@@ -4,12 +4,12 @@ ms.date: 11/06/2018
 helpviewer_keywords:
 - OLE DB consumers, creating
 ms.assetid: ae32d657-72ea-4db8-9839-75cb5cff68ae
-ms.openlocfilehash: 4346bca99d3744657072a4940776934e3c03e9de
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.openlocfilehash: 060a39a8436ff73900ebfaea7d1c882b9862ee7e
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51326647"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59025143"
 ---
 # <a name="creating-a-simple-consumer"></a>Basit Tüketici Oluşturma
 
@@ -19,7 +19,7 @@ Kullanım **ATL projesi Sihirbazı** ve **ATL OLE DB Tüketicisi Sihirbazı** bi
 
 1. Üzerinde **dosya** menüsünde tıklatın **yeni**ve ardından **proje**.
 
-   **Yeni proje** iletişim kutusu görüntülenir.
+   **Yeni Proje** iletişim kutusu görünür.
 
 1. İçinde **proje türleri** bölmesinde tıklayın **yüklü** > **Visual C++** > **Windows Masaüstü** klasörü ve ardından **Windows Masaüstü Sihirbazı'nı** simgesini **şablonları** bölmesi. İçinde **adı** kutusunda, projenizin adını girin, örneğin, *MyCons*.
 
@@ -39,7 +39,7 @@ Ardından, **ATL OLE DB Tüketicisi Sihirbazı** OLE DB Tüketici nesne eklemek 
 
 1. Kısayol menüsünde **Ekle**ve ardından **yeni öğe**.
 
-   **Yeni Öğe Ekle** iletişim kutusu görüntülenir.
+   **Yeni Öğe Ekle** iletişim kutusu görünür.
 
 1. İçinde **kategorileri** bölmesinde tıklayın **yüklü** > **Visual C++** > **ATL**, tıklayın**ATL OLEDB tüketicisi** simgesini **şablonları** bölmesi ve ardından **Ekle**.
 
@@ -56,7 +56,7 @@ Ardından, **ATL OLE DB Tüketicisi Sihirbazı** OLE DB Tüketici nesne eklemek 
    1. Üzerinde **bağlantı** sekmesinde, sunucu üzerinde sunucu adı, oturum açma kimliği ve parolası veri kaynağı ve veritabanı gibi gerekli bilgileri belirtin.
 
       > [!NOTE]
-      > Bir güvenlik sorun **parola kaydetmeye izin ver** özelliği **veri bağlantı özellikleri** iletişim kutusu. İçinde **sunucuya oturum açmak için bilgi girin**, iki radyo düğmeleri vardır: **kullanım Windows NT tümleşik güvenliği** ve **belirli bir kullanıcı adı ve parolayı kullanın**.
+      > Bir güvenlik sorun **parola kaydetmeye izin ver** özelliği **veri bağlantı özellikleri** iletişim kutusu. İçinde **sunucuya oturum açmak için bilgi girin**, iki radyo düğmeleri vardır: **Kullanım Windows NT tümleşik güvenliği** ve **belirli bir kullanıcı adı ve parolayı kullanın**.
 
       > [!NOTE]
       > Seçerseniz **belirli bir kullanıcı adı ve parolayı kullanın**, parola kaydetme seçeneğiniz vardır (kullanarak **parola kaydetmeye izin ver** onay kutusu); ancak, bu seçeneği güvenli değildir. Seçtiğiniz önerilir **kullanım Windows NT tümleşik güvenliği**; bu seçenek, kimliğinizi doğrulamak için Windows NT kullanır.
@@ -98,6 +98,6 @@ Sihirbaz gösterildiği gibi bir komut ve bir kullanıcı kaydı sınıfı oluş
 > [!NOTE]
 > Bu satırı önleyen tüketici uygulama engeller ve bağlantı dizenizi sabit kodlanmış parolalar için denetlenecek anımsatır. Bağlantı dizenizi denetledikten sonra bu kod satırı kaldırabilirsiniz.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Sihirbaz Kullanarak bir OLE DB Tüketicisi Oluşturma](../../data/oledb/creating-an-ole-db-consumer-using-a-wizard.md)

@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - CMultipleResults class
 ms.assetid: 6ce5bbb9-b551-483c-988a-e6aee9135a19
-ms.openlocfilehash: 0fb25d4106c04622a6bf5fd782432fc75b92c236
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 5bc1bb9ab1e0b6f5f8b2914e4249361ff37cce08
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50535036"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59028447"
 ---
 # <a name="cmultipleresults-class"></a>CMultipleResults Sınıfı
 
@@ -33,7 +33,7 @@ Birden çok sonuç işlemek için ayarlar, [CCommand](../../data/oledb/ccommand-
 
 **Başlık:** atldbcli
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [OLE DB Tüketici Şablonları](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
 [OLE DB Tüketici Şablonları Başvurusu](../../data/oledb/ole-db-consumer-templates-reference.md)

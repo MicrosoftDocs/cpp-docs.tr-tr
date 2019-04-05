@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - Wrappers namespace
 ms.assetid: 36ac38c7-1fc3-42da-a879-5c68661dc9e1
-ms.openlocfilehash: 953318e09c4c0d00748f2b6189615dbd66677a96
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.openlocfilehash: 4b88ad0da31321a696c1238f1c9838d3b3a1c927
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58787575"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59030121"
 ---
 # <a name="microsoftwrlwrappers-namespace"></a>Microsoft::WRL::Wrappers Ad Alanı
 
@@ -37,11 +37,11 @@ namespace Microsoft::WRL::Wrappers;
 |Ad|Açıklama|
 |----------|-----------------|
 |[CriticalSection Sınıfı](criticalsection-class.md)|Kritik bölüm nesneyi temsil eder.|
-|[Event Sınıfı (WRL)](event-class-wrl.md)|Bir olayı temsil eder.|
+|[Olay sınıfı (WRL)](event-class-wrl.md)|Bir olayı temsil eder.|
 |[HandleT Sınıfı](handlet-class.md)|Bir tutamacı nesneyi temsil eder.|
 |[HString Sınıfı](hstring-class.md)|HSTRING tutamaçları düzenlenmesi için destek sağlar.|
 |[HStringReference Sınıfı](hstringreference-class.md)|Varolan bir dizeden oluşturulan bir HSTRING temsil eder.|
-|[Mutex sınıfı](mutex-class.md)|Paylaşılan bir kaynağa özel olarak denetleyen bir eşitleme nesnesi temsil eder.|
+|[Mutex Sınıfı](mutex-class.md)|Paylaşılan bir kaynağa özel olarak denetleyen bir eşitleme nesnesi temsil eder.|
 |[RoInitializeWrapper Sınıfı](roinitializewrapper-class.md)|Windows çalışma zamanı'nı başlatır.|
 |[Semafor Sınıfı](semaphore-class.md)|Sınırlı sayıda kullanıcıları destekleyen bir paylaşılan kaynak denetleyen bir eşitleme nesnesi temsil eder.|
 |[SRWLock Sınıfı](srwlock-class.md)|Bir ince Okuyucu/Yazıcı kilidi temsil eder.|
@@ -52,6 +52,6 @@ namespace Microsoft::WRL::Wrappers;
 
 **Namespace:** Microsoft::wrl:: Wrappers
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Microsoft::WRL Ad Alanı](microsoft-wrl-namespace.md)

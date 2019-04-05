@@ -3,12 +3,12 @@ title: 'Nasıl yapılır: Doğrudan WRL bileşenlerinin örneğini oluşturma'
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 1a9fa011-0cee-4abf-bf83-49adf53ff906
-ms.openlocfilehash: 3caa29125de0de8cbe73379b8d7244206a5f9229
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.openlocfilehash: 3f622a79aed6a1e42feccb92e1a01b3bc1277151
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58787076"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59035750"
 ---
 # <a name="how-to-instantiate-wrl-components-directly"></a>Nasıl yapılır: Doğrudan WRL bileşenlerinin örneğini oluşturma
 
@@ -45,7 +45,7 @@ Bu belge, iki örnek gösterir. İlk örnekte `Make` bir bileşen örneği için
 
    [!code-cpp[wrl-logger-makeandinitialize#2](../codesnippet/CPP/how-to-instantiate-wrl-components-directly_4.cpp)]
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Windows Çalışma Zamanı C++ Şablon Kitaplığı (WRL)](windows-runtime-cpp-template-library-wrl.md)<br/>
 [Microsoft::wrl:: Make](make-function.md)<br/>

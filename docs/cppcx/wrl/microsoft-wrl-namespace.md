@@ -14,12 +14,12 @@ f1_keywords:
 helpviewer_keywords:
 - WRL namespace
 ms.assetid: 01118a8f-f564-4859-b87e-9444848585a1
-ms.openlocfilehash: d402f2a1292088b52ce921bbc0007ab96554189e
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.openlocfilehash: 749469c7ae2acf3a0da92d24a51bbfca9b68971d
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58787065"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59033527"
 ---
 # <a name="microsoftwrl-namespace"></a>Microsoft::WRL Ad Alanı
 
@@ -70,16 +70,16 @@ namespace Microsoft::WRL;
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[AsyncResultType Sabit Listesi](asyncresulttype-enumeration.md)|Tarafından döndürülen sonuç türü belirtir `GetResults()` yöntemi.|
-|[ModuleType Sabit Listesi](moduletype-enumeration.md)|Bir modülü bir işlem sunucusu veya bir işlem dışı sunucu desteklemesi gerekip gerekmediğini belirtir.|
-|[RuntimeClassType Sabit Listesi](runtimeclasstype-enumeration.md)|Türünü belirten [RuntimeClass](runtimeclass-class.md) desteklenen örneği.|
+|[AsyncResultType Numaralandırması](asyncresulttype-enumeration.md)|Tarafından döndürülen sonuç türü belirtir `GetResults()` yöntemi.|
+|[ModuleType Numaralandırması](moduletype-enumeration.md)|Bir modülü bir işlem sunucusu veya bir işlem dışı sunucu desteklemesi gerekip gerekmediğini belirtir.|
+|[RuntimeClassType Numaralandırması](runtimeclasstype-enumeration.md)|Türünü belirten [RuntimeClass](runtimeclass-class.md) desteklenen örneği.|
 
 ### <a name="functions"></a>İşlevler
 
 |Ad|Açıklama|
 |----------|-----------------|
 |[AsWeak İşlevi](asweak-function.md)|Belirtilen bir örneğe zayıf bir başvuru alır.|
-|[Callback İşlevi (WRL)](callback-function-wrl.md)|Üye işlevi bir geri çağırma yöntemi olan nesne oluşturur.|
+|[Geri çağırma işlevi (WRL)](callback-function-wrl.md)|Üye işlevi bir geri çağırma yöntemi olan nesne oluşturur.|
 |[CreateActivationFactory İşlevi](createactivationfactory-function.md)|Windows çalışma zamanı tarafından etkinleştirilebilen belirtilen sınıf örneklerini oluşturan bir Üreteç oluşturur.|
 |[CreateClassFactory İşlevi](createclassfactory-function.md)|Belirtilen sınıfın örneklerini oluşturan bir Üreteç oluşturur.|
 |[Make İşlevi](make-function.md)|Belirtilen Windows çalışma zamanı sınıf başlatır.|
@@ -90,6 +90,6 @@ namespace Microsoft::WRL;
 
 **Namespace:** Microsoft::WRL
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Microsoft::WRL::Wrappers Ad Alanı](microsoft-wrl-wrappers-namespace.md)

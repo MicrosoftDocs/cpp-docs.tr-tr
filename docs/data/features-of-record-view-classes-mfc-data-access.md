@@ -5,12 +5,12 @@ helpviewer_keywords:
 - record views, classes
 - record view classes
 ms.assetid: e7b2820f-09c4-483f-83c0-317e8be42bdf
-ms.openlocfilehash: 2feda8f8f446e02a5056287c656707ea038f5387
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 5f8de956065571109c988bd2940d21822bba7cfd
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50461158"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59029881"
 ---
 # <a name="features-of-record-view-classes--mfc-data-access"></a>Kayıt görünümü sınıfları (MFC veri erişimi) özellikleri
 
@@ -22,9 +22,9 @@ Form tabanlı veri erişim programlama sınıfı ile yapabileceğiniz [Cformview
 
 - Güncelleştirmeleri, kullanıcının başka bir kayıda taşır, geçerli kayıtta değiştirir.
 
-Gezintisi hakkında daha fazla bilgi için bkz. [kayıt görünümleri: kayıt görünümü içinde gezinme destekleyen](../data/supporting-navigation-in-a-record-view-mfc-data-access.md).
+Gezintisi hakkında daha fazla bilgi için bkz. [kayıt görünümleri: Kayıt görünümünde gezintiyi destekleme](../data/supporting-navigation-in-a-record-view-mfc-data-access.md).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Kayıt görünümleri (MFC veri erişimi)](../data/record-views-mfc-data-access.md)<br/>
 [ODBC Sürücü Listesi](../data/odbc/odbc-driver-list.md)

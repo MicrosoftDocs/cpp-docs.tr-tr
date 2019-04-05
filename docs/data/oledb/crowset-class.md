@@ -238,12 +238,12 @@ helpviewer_keywords:
 - Update method
 - UpdateAll method
 ms.assetid: b0228a90-b8dd-47cc-b397-8d4c15c1e7f4
-ms.openlocfilehash: eda4bb09865698a657828c6d4684a8df92ffe9b6
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.openlocfilehash: dc4f619fb0dba924693682c927247e809fe2cfe9
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58779462"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59032332"
 ---
 # <a name="crowset-class"></a>CRowset Sınıfı
 
@@ -272,17 +272,17 @@ Bir erişimci sınıfı. Varsayılan, `CAccessorBase` değeridir.
 |||
 |-|-|
 |[AddRefRows](#addrefrows)|Artışlarla başvuru sayısı geçerli satır ile ilişkili.|
-|[Kapat](#close)|Satırları ve geçerli sürümleri `IRowset` arabirimi.|
-|[Compare](#compare)|Karşılaştırır iki yer işaretlerini kullanarak [IRowsetLocate::Compare](/previous-versions/windows/desktop/ms709539(v=vs.85)).|
+|[Close](#close)|Satırları ve geçerli sürümleri `IRowset` arabirimi.|
+|[{1&gt;Karşılaştır&lt;1}](#compare)|Karşılaştırır iki yer işaretlerini kullanarak [IRowsetLocate::Compare](/previous-versions/windows/desktop/ms709539(v=vs.85)).|
 |[CRowset](#crowset)|Yeni bir oluşturur `CRowset` nesne ve bunu ile ilişkilendirir (isteğe bağlı olarak) bir `IRowset` bir parametre olarak sağlanan arabirim.|
-|[Delete](#delete)|Satır kümesi kullanarak satırları siler [IRowsetChange:DeleteRows](/previous-versions/windows/desktop/ms724362(v=vs.85)).|
+|[Sil](#delete)|Satır kümesi kullanarak satırları siler [IRowsetChange:DeleteRows](/previous-versions/windows/desktop/ms724362(v=vs.85)).|
 |[FindNextRow](#findnextrow)|Belirtilen yer işaretinden sonra sonraki eşleşen satırı bulur.|
 |[GetApproximatePosition](#getapproximateposition)|Yaklaşık bir yer işaretine karşılık gelen bir satır konumunu döndürür.|
 |[GetData](#getdata)|Satır satır kümesinin kopyadan verileri alır.|
 |[GetDataHere](#getdatahere)|Belirtilen arabellek verilerini alır.|
 |[GetOriginalData](#getoriginaldata)|En son öğesinden alınan veya bekleyen değişiklikleri yoksayma veri kaynağına gönderilen verileri alır.|
 |[GetRowStatus](#getrowstatus)|Tüm satırları durumunu döndürür.|
-|[Ekle](#insert)|Oluşturur ve kullanarak yeni bir satır ekler [IRowsetChange:InsertRow](/previous-versions/windows/desktop/ms716921(v=vs.85)).|
+|[Ekleme](#insert)|Oluşturur ve kullanarak yeni bir satır ekler [IRowsetChange:InsertRow](/previous-versions/windows/desktop/ms716921(v=vs.85)).|
 |[Issamerow](#issamerow)|Geçerli satır belirtilen satırı karşılaştırır.|
 |[MoveFirst](#movefirst)|Sonraki getirme konumunu ilk konumuna yeniden konumlandırır.|
 |[MoveLast](#movelast)|Son kayda gider.|
@@ -293,7 +293,7 @@ Bir erişimci sınıfı. Varsayılan, `CAccessorBase` değeridir.
 |[ReleaseRows](#releaserows)|Çağrıları [IRowset::ReleaseRows](/previous-versions/windows/desktop/ms719771(v=vs.85)) geçerli satır tanıtıcısını bırakmak için.|
 |[SetData](#setdata)|Kullanarak bir satır bir veya daha fazla sütun veri değerlerini ayarlar [IRowsetChange:SetData](/previous-versions/windows/desktop/ms721232(v=vs.85)).|
 |[Geri alma](#undo)|Satır son getirme bu yana yapılan değişiklikleri geri alır veya [güncelleştirme](../../data/oledb/crowset-update.md).|
-|[Güncelleştir](#update)|Bekleyen tüm geçerli satırın son getirme veya güncelleştirme yapılan değişiklikleri iletir.|
+|[Güncelleştirme](#update)|Bekleyen tüm geçerli satırın son getirme veya güncelleştirme yapılan değişiklikleri iletir.|
 |[UpdateAll](#updateall)|Bekleyen tüm son getirme veya güncelleştirme tüm satırları için yapılan değişiklikleri iletir.|
 
 ## <a name="remarks"></a>Açıklamalar
@@ -935,7 +935,7 @@ Bu yöntem, isteğe bağlı bir arabirim gerektirir `IRowsetUpdate`, tüm sağla
 
 Standart bir HRESULT.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [DBVIEWER örneği](../../overview/visual-cpp-samples.md)<br/>
 [MultiRead örnek](../../overview/visual-cpp-samples.md)<br/>

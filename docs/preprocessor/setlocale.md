@@ -8,12 +8,12 @@ helpviewer_keywords:
 - pragmas, setlocale
 - setlocale pragma
 ms.assetid: e60b43d9-fbdf-4c4e-ac85-805523a13b86
-ms.openlocfilehash: e5a190e18dd38c5d2b6e03703c5ee08043cd6e41
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b2f28a14b4d4585575a39dd9a936a56a84eeddc4
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50487964"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59022431"
 ---
 # <a name="setlocale"></a>setlocale
 
@@ -39,6 +39,6 @@ Değer olarak "C" yerel dizesindeki her karakterle eşleyen bir **wchar_t** (iş
 
 Bir dil dizesi oluşturabilme olanağı, kod sayfası ve dil kimliği desteği bilgisayarınızda bağlıdır.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Pragma Yönergeleri ve __Pragma Anahtar Sözcüğü](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - Move function
 ms.assetid: c9525426-97e8-4d8c-9877-b689d8a0dc67
-ms.openlocfilehash: 1a03216197462090f38d3bc2065fe227f0667919
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.openlocfilehash: 8d7c959ecb2d3c06872871ba062d2be603489141
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58787670"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59031280"
 ---
 # <a name="move-function"></a>Move İşlevi
 
@@ -32,7 +32,7 @@ inline typename RemoveReference<T>::Type&& Move(
 *T*<br/>
 Bağımsız değişken türü.
 
-*bağımsız değişken*<br/>
+*arg*<br/>
 Taşımak için bir bağımsız değişken.
 
 ## <a name="return-value"></a>Dönüş Değeri
@@ -51,6 +51,6 @@ Daha fazla bilgi için **taşıma semantiği** bölümünü [Rvalue başvuru Bil
 
 **Namespace:** Microsoft::wrl:: details
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Microsoft::WRL::Details Ad Alanı](microsoft-wrl-details-namespace.md)

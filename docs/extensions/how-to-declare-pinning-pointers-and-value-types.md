@@ -6,12 +6,12 @@ helpviewer_keywords:
 - value types, declaring
 - pinning pointers
 ms.assetid: 57c5ec8a-f85a-48c4-ba8b-a81268bcede0
-ms.openlocfilehash: 2f62d8e93af48d0d916349f7c58fbd5fe445e322
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.openlocfilehash: 901980c76aac5dd364f2fa2fae0e007f5d25f3d8
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58787752"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59035724"
 ---
 # <a name="how-to-declare-pinning-pointers-and-value-types"></a>Nasıl yapılır: Sabitleme işaretçileri ve değer türleri
 
@@ -45,6 +45,6 @@ int main() {
 7
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [pin_ptr (C++/CLI)](pin-ptr-cpp-cli.md)

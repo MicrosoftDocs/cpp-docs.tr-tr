@@ -9,12 +9,12 @@ helpviewer_keywords:
 - OLE DB, record views
 - MFC, record views
 ms.assetid: 1cd3e595-ce08-43d8-a0a9-d03b5d3e24ce
-ms.openlocfilehash: 631e78e1a397ec360b1f3b2d94d7340e96925e23
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 83f4d64252ab5c2b80d62419ea448c1ffd0cdd69
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50582727"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59025879"
 ---
 # <a name="using-ole-db-record-views"></a>OLE DB Kayıt Görünümlerini Kullanma
 
@@ -31,7 +31,7 @@ Görünüm alanlarını görüntüler `CRowset` iletişim kutusunun denetimleri 
 
 DDX işlevleri ile kullanabileceğiniz `COleDbRecordView` doğrudan veritabanı kayıt kümesinden veri almak ve bir iletişim kutusu denetiminde görüntüleme. Kullanım **DDX_** <strong>\*</strong> yöntemleri (gibi `DDX_Text`) değil **DDX_Field** <strong>\*</strong> işlevleri () gibi `DDX_FieldText`) ile `COleDbRecordView`.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Erişimcileri Kullanma](../../data/oledb/using-accessors.md)<br/>
-[COleDBRecordView Sınıfı](../../mfc/reference/coledbrecordview-class.md)<br/>
+[COleDBRecordView sınıfı](../../mfc/reference/coledbrecordview-class.md)<br/>

@@ -5,12 +5,12 @@ helpviewer_keywords:
 - macros, C++
 - macros
 ms.assetid: 83a344c1-73c9-4ace-8b93-cccfb62c6133
-ms.openlocfilehash: cd5d1237bc025cceb25cc290509b929b595a215f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d4915526d5bb84b33f0595678781257d754aaf2d
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50499898"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59024922"
 ---
 # <a name="macros-and-c"></a>Makrolar ve C++
 C++, bazıları ANSI C önişlemcisi tarafından sunulanların yerini alan yeni işlevler sunmaktadır. Bu yeni işlevler tür güvenliğini ve dilin öngörülebilirliğini geliştirir:
@@ -27,7 +27,7 @@ Satır içi işlevleri hakkında daha fazla bilgi için bkz. [satır içi, __inl
 
 Geriye dönük uyumluluk için, ANSI C ve önceki C++'ta varolan tüm önişlemci özellikleri Microsoft C++ için korunur.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[Önceden Tanımlanmış Makrolar](../preprocessor/predefined-macros.md)<br/>
+[Önceden Tanımlı Makrolar](../preprocessor/predefined-macros.md)<br/>
 [Makrolar (C/C++)](../preprocessor/macros-c-cpp.md)

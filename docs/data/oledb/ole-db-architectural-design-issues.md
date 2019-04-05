@@ -4,12 +4,12 @@ ms.date: 10/22/2018
 helpviewer_keywords:
 - OLE DB, application design considerations
 ms.assetid: 8caa7d99-d2bb-42c9-8884-74f228bb6ecc
-ms.openlocfilehash: 3e0175c6b554c319a662ffd726023caf7176d9fe
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 2f0a7a114c671e17d8f95280ab00ed93570e8609
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50461977"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59037678"
 ---
 # <a name="ole-db-architectural-design-issues"></a>OLE DB Mimari Tasarım Sorunları
 
@@ -37,7 +37,7 @@ Olası eşleştirme birleşimlerini (örneğin, OLE DB bileşenlerle ADO bileşe
 
 - [Microsoft Data Access teknik makaleler genel bakış](https://msdn.microsoft.com/library/ms810811.aspx)
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [OLE DB Programlama](../../data/oledb/ole-db-programming.md)<br/>
 [OLE DB Programlamaya Genel Bakış](../../data/oledb/ole-db-programming-overview.md)

@@ -8,16 +8,16 @@ helpviewer_keywords:
 - rep stosd instruction
 - __stosd intrinsic
 ms.assetid: 03104247-1cea-49f6-b6f8-287917bf5680
-ms.openlocfilehash: c32c439af5544eb561f776381cb1afa98337efcb
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.openlocfilehash: 43a0efcfb94b7e53dacec16caccdacf86a96f5bb
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51328844"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59032173"
 ---
 # <a name="stosd"></a>__stosd
 
-**Microsoft'a özgü**
+**Microsoft'a Özgü**
 
 Bir depolama dize yönergesi oluşturur (`rep stosd`).
 
@@ -39,7 +39,7 @@ void __stosd(
 *Veri*<br/>
 [in] Depolamak için veriler.
 
-*Sayısı*<br/>
+*Sayı*<br/>
 [in] Yazılacak doublewords bloğunu uzunluğu.
 
 ## <a name="requirements"></a>Gereksinimler
@@ -85,8 +85,8 @@ printf_s( "%u %u %u %u",
 0 99999 99999 0
 ```
 
-**END Microsoft özgü**
+**END Microsoft'a Özgü**
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)

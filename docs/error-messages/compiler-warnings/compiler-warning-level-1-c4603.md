@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4603
 ms.assetid: f065994e-e3e5-4694-b868-c124472b3342
-ms.openlocfilehash: abecf4edad9ebe7abe1aec9cedae524639fe0201
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.openlocfilehash: 7934b9eab6d6ee91a99f3d03913983c2e98ca409
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57822372"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59034932"
 ---
 # <a name="compiler-warning-level-1-c4603"></a>Derleyici Uyarısı (düzey 1) C4603
 
@@ -19,6 +19,6 @@ ms.locfileid: "57822372"
 
 Tarafından belirtilen makro *tanımlayıcı* tutucudur farklı ya da artık tanımlanmış ön derleyici üstbilgi kullanıldıktan sonra.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Önceden Derlenmiş Üst Bilgi Dosyaları Oluşturma](../../build/creating-precompiled-header-files.md)

@@ -56,16 +56,16 @@ helpviewer_keywords:
 - _InterlockedAnd8 intrinsic
 - _InterlockedAnd_HLEAcquire intrinsic
 ms.assetid: ad271dc3-42cd-47d0-9f65-30d5cfeb66fc
-ms.openlocfilehash: 70e618944ddac3468c0e49443cde116c8496df7c
-ms.sourcegitcommit: ff3cbe4235b6c316edcc7677f79f70c3e784ad76
+ms.openlocfilehash: b38a181102247ab203c86ccb6310a72135dccc8b
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/19/2018
-ms.locfileid: "53626774"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59033326"
 ---
 # <a name="interlockedand-intrinsic-functions"></a>_Interlockedand iç işlevleri
 
-**Microsoft'a özgü**
+**Microsoft'a Özgü**
 
 Birden çok iş parçacığı tarafından paylaşılan bir değişken üzerinde atomik bir bit düzeyinde AND işlemi gerçekleştirmek için kullanılır.
 
@@ -225,9 +225,9 @@ int main()
 0xff00 0xffff00 0xff00ff00
 ```
 
-**END Microsoft özgü**
+**END Microsoft'a Özgü**
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)<br/>
 [x86 Derleyicisi ile Çakışma](../build/x64-software-conventions.md#conflicts-with-the-x86-compiler)

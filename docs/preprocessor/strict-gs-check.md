@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - strict_gs_check pragma
 ms.assetid: decfec81-c916-42e0-a07f-8cc26df6a7ce
-ms.openlocfilehash: f09a2b4b50c97faeaa986049abfc636d7cefdc8b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b62e1be466e65c0de6fb4eaa33ac6e99915529e6
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50534738"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59037811"
 ---
 # <a name="strictgscheck"></a>strict_gs_check
 
@@ -65,7 +65,7 @@ void ** ReverseArray(void **pData,
 }
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Pragma Yönergeleri ve __Pragma Anahtar Sözcüğü](../preprocessor/pragma-directives-and-the-pragma-keyword.md)<br/>
 [/GS (Arabellek Güvenlik Denetimi)](../build/reference/gs-buffer-security-check.md)

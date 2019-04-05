@@ -10,12 +10,12 @@ helpviewer_keywords:
 - recordsets [C++], transactions
 - ODBC recordsets [C++], transactions
 ms.assetid: a2ec0995-2029-45f2-8092-6efd6f2a77f4
-ms.openlocfilehash: 0deb21a43ff17ca94efe29bdec37db7611331a86
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: a151ec5ca2b4bdc19bfa7dc626aebda0740a2c9e
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50615819"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59023676"
 ---
 # <a name="transaction-odbc"></a>İşlem (ODBC)
 
@@ -29,7 +29,7 @@ Bir işlem grubu ya da toplu işlem, güncelleştirmeleri bir dizi için bir yol
 Çağrılar `AddNew` ve `Edit` üye işlevlerinin bir `CRecordset` çağırdığınızda hemen veri kaynağını etkileyen nesne `Update`. `Delete` aramalar da hemen etkili olur. Buna karşılık, birden çok çağrı oluşan bir işlem kullanabilirsiniz `AddNew`, `Edit`, `Update`, ve `Delete`, hangi gerçekleştirildi ancak siz çağrılana kadar tamamlanmayan `CommitTrans` açıkça. Bir işlem oluşturarak, geri alma özelliğini koruyarak bir dizi böyle çağrılar yürütebilir. Kritik bir kaynak kullanılamıyor veya başka bir koşul tüm işlemin tamamlanmasını engeller, işlem kabul etmek yerine geri alabilirsiniz. Bu durumda işleme ait değişikliklerin hiçbiri veri kaynağını etkilemez.
 
 > [!NOTE]
->  Şu anda, sınıf `CRecordset` toplu satır getirme uyguladıysanız güncelleştirmeleri veri kaynağına desteklemez. Bu çağrılar yapılamıyor anlamına gelir `AddNew`, `Edit`, `Delete`, veya `Update`. Ancak, güncelleştirmeler gerçekleştirin ve ardından belirli bir işlem içinde bu işlevleri çağırmak için kendi işlevler yazabilirsiniz. Toplu satır getirme hakkında daha fazla bilgi için bkz. [kayıt kümesi: Kayıtları toplu (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md).
+>  Şu anda, sınıf `CRecordset` toplu satır getirme uyguladıysanız güncelleştirmeleri veri kaynağına desteklemez. Bu çağrılar yapılamıyor anlamına gelir `AddNew`, `Edit`, `Delete`, veya `Update`. Ancak, güncelleştirmeler gerçekleştirin ve ardından belirli bir işlem içinde bu işlevleri çağırmak için kendi işlevler yazabilirsiniz. Toplu satır getirme hakkında daha fazla bilgi için bkz. [kayıt kümesi: Kayıtları toplu yakalama (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md).
 
 > [!NOTE]
 >  Kümenizin etkileyen yanı sıra işlemler ODBC kullandığınız sürece, doğrudan yürütme SQL deyimleri etkiler **HDBC** ilişkili, `CDatabase` nesnesi veya bir ODBC **HSTMT** göre **HDBC**.
@@ -43,10 +43,10 @@ Veritabanı sınıfları gerçekleştirdiğiniz işlemleri aracılığıyla `CDa
 
 Aşağıdaki konular, işlemlerin nasıl gerçekleştirileceği hakkında daha fazla bilgi sağlar:
 
-- [İşlem: Kayıt Kümesinde İşlem Gerçekleştirme (ODBC)](../../data/odbc/transaction-performing-a-transaction-in-a-recordset-odbc.md)
+- [İşlem: (ODBC) kayıt kümesinde işlem gerçekleştirme](../../data/odbc/transaction-performing-a-transaction-in-a-recordset-odbc.md)
 
-- [İşlem: İşlemlerin Güncelleştirmeleri Etkilemesi (ODBC)](../../data/odbc/transaction-how-transactions-affect-updates-odbc.md)
+- [İşlem: İşlemler (ODBC) güncelleştirmeleri nasıl etkiler](../../data/odbc/transaction-how-transactions-affect-updates-odbc.md)
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Açık Veritabanı Bağlantısı (ODBC)](../../data/odbc/open-database-connectivity-odbc.md)

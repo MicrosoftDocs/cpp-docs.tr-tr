@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3551
 ms.assetid: c8ee23da-6568-40db-93a6-3ddb7ac47712
-ms.openlocfilehash: 9dfdee155e85bd772ed1d4ce22c525f8a4c79f5c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 48b378eb734c5830bedbf417d99d34955e2e6d0f
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50458753"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59023275"
 ---
 # <a name="compiler-error-c3551"></a>Derleyici Hatası C3551
 
@@ -23,6 +23,6 @@ Kullanırsanız `auto` anahtar sözcüğü bir işlevin dönüş türü için ye
 auto myFunction()->int(*)[4];
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [auto](../../cpp/auto-cpp.md)
