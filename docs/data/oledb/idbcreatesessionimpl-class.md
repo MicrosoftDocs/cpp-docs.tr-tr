@@ -12,16 +12,16 @@ helpviewer_keywords:
 - IDBCreateSessionImpl class
 - CreateSession method
 ms.assetid: 48c02c5c-8362-45ac-af8e-bb119cf8c5c7
-ms.openlocfilehash: ecc06bf5e3514ea87c86de17dbafd59b9da9f8b6
-ms.sourcegitcommit: c40469825b6101baac87d43e5f4aed6df6b078f5
+ms.openlocfilehash: ae59abc542a4599d289c099801fc34d56b2b13d4
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/12/2018
-ms.locfileid: "51556428"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59028541"
 ---
 # <a name="idbcreatesessionimpl-class"></a>IDBCreateSessionImpl Sınıfı
 
-Bir uygulamasını sağlar [IDBCreateSession](https://docs.microsoft.com/previous-versions/windows/desktop/ms724076(v=vs.85)) arabirimi.
+Bir uygulamasını sağlar [IDBCreateSession](/previous-versions/windows/desktop/ms724076(v=vs.85)) arabirimi.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -69,9 +69,9 @@ STDMETHOD(CreateSession)(IUnknown * pUnkOuter,
 
 #### <a name="parameters"></a>Parametreler
 
-Bkz: [IDBCreateSession::CreateSession](https://docs.microsoft.com/previous-versions/windows/desktop/ms714942(v=vs.85)) içinde *OLE DB Programcının Başvurusu*.
+Bkz: [IDBCreateSession::CreateSession](/previous-versions/windows/desktop/ms714942(v=vs.85)) içinde *OLE DB Programcının Başvurusu*.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[OLE DB sağlayıcı şablonları](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>
+[OLE DB Sağlayıcı Şablonları](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>
 [OLE DB Sağlayıcı Şablonu Mimarisi](../../data/oledb/ole-db-provider-template-architecture.md)

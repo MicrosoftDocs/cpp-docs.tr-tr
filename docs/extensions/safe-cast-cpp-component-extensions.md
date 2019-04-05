@@ -9,12 +9,12 @@ f1_keywords:
 helpviewer_keywords:
 - safe_cast keyword [C++]
 ms.assetid: 4fa688bf-a8ec-49bc-a4c5-f48134efa4f7
-ms.openlocfilehash: 0162105e0d05ec2be925241c7d1c30c2afdc7a37
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.openlocfilehash: 199fda710a077998c6b10f101f6ebc15573e675e
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58787574"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59038880"
 ---
 # <a name="safecast-ccli-and-ccx"></a>safe_cast (C + +/ CLI ve C + +/ CX)
 
@@ -45,7 +45,7 @@ ms.locfileid: "58787574"
 *tür kimliği*<br/>
 Dönüştürme türü *ifade* için. Bir başvuru veya değer türü, bir değer türü veya başvuru veya değer türüne yönelik izleme başvurusuna yönelik bir tanıtıcı.
 
-*İfade*<br/>
+*ifade*<br/>
 Bir başvuru veya değer türü, bir değer türü veya başvuru veya değer türüne yönelik izleme başvurusuna yönelik bir tanıtıcı için değerlendirilen bir ifade.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -105,7 +105,7 @@ Caught expected exception: InvalidCastException
 *tür kimliği*<br/>
 Bir başvuru veya değer türü, bir değer türü veya başvuru veya değer türüne yönelik izleme başvurusuna yönelik bir tanıtıcı.
 
-*İfade*<br/>
+*ifade*<br/>
 Bir başvuru veya değer türü, bir değer türü veya başvuru veya değer türüne yönelik izleme başvurusuna yönelik bir tanıtıcı için değerlendirilen bir ifade.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -124,9 +124,9 @@ Atamaları hakkında daha fazla bilgi için bkz: [atama işleçleri](../cpp/cast
 
 Daha fazla bilgi için **safe_cast**, bkz:
 
-- [/ CLR ile C türü atamalar (C + +/ CLI)](c-style-casts-with-clr-cpp-cli.md)
+- [/clr ile C Türü Atamalar (C++/CLI)](c-style-casts-with-clr-cpp-cli.md)
 
-- [Nasıl yapılır: C++/CLI üzerinde safe_cast kullanma](../dotnet/how-to-use-safe-cast-in-cpp-cli.md)
+- [Nasıl yapılır: Üzerinde safe_cast kullanma C + +/ CLI](../dotnet/how-to-use-safe-cast-in-cpp-cli.md)
 
 ### <a name="requirements"></a>Gereksinimler
 
@@ -164,6 +164,6 @@ int main() {
 Caught expected exception
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[.NET ve UWP İçin Bileşen Uzantıları](component-extensions-for-runtime-platforms.md)
+[.NET ve UWP için bileşen uzantıları](component-extensions-for-runtime-platforms.md)

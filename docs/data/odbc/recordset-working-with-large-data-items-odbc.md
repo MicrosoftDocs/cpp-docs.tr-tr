@@ -1,5 +1,5 @@
 ---
-title: 'Kayıt kümesi: Büyük Veri Öğeleri ile Çalışma (ODBC)'
+title: 'Kayıt kümesi: Büyük veri öğeleri ile çalışma (ODBC)'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - BLOB (binary large object), recordsets
@@ -8,19 +8,19 @@ helpviewer_keywords:
 - binary large objects
 - CLongBinary class, using in recordsets
 ms.assetid: 3e80b5a8-b6e7-43c6-a816-e54befc513a3
-ms.openlocfilehash: 8ef32621821d731d9137a446bea220564cb7f92f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 3ba8d4af5b0781c425dd3b1223e2208b279f055e
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50460378"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59033050"
 ---
-# <a name="recordset-working-with-large-data-items-odbc"></a>Kayıt kümesi: Büyük Veri Öğeleri ile Çalışma (ODBC)
+# <a name="recordset-working-with-large-data-items-odbc"></a>Kayıt kümesi: Büyük veri öğeleri ile çalışma (ODBC)
 
 Bu konuda, hem MFC ODBC sınıfları ve MFC DAO sınıflarına uygulanır.
 
 > [!NOTE]
->  MFC DAO sınıflarına kullanıyorsanız, büyük veri öğeleri sınıfı ile yönetme [CByteArray](../../mfc/reference/cbytearray-class.md) sınıfı yerine [CLongBinary](../../mfc/reference/clongbinary-class.md). MFC ODBC sınıfları toplu satır getirme ile kullanıyorsanız, `CLongBinary` yerine `CByteArray`. Toplu satır getirme hakkında daha fazla bilgi için bkz. [kayıt kümesi: Kayıtları toplu (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md).
+>  MFC DAO sınıflarına kullanıyorsanız, büyük veri öğeleri sınıfı ile yönetme [CByteArray](../../mfc/reference/cbytearray-class.md) sınıfı yerine [CLongBinary](../../mfc/reference/clongbinary-class.md). MFC ODBC sınıfları toplu satır getirme ile kullanıyorsanız, `CLongBinary` yerine `CByteArray`. Toplu satır getirme hakkında daha fazla bilgi için bkz. [kayıt kümesi: Kayıtları toplu yakalama (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md).
 
 Veritabanınızın büyük bit eşlemler (çalışan fotoğrafları, haritalar, resimler ürünleri, OLE nesneleri, vb.) gibi veri parçalarını depolayabilirsiniz varsayalım. Bu tür verilerin genellikle bir ikili büyük nesne (veya BLOB) çünkü adlandırılır:
 
@@ -59,8 +59,8 @@ Buna karşılık, kullandığınız `HGLOBAL` tutamacını `m_hData`herhangi ver
 > [!CAUTION]
 >  CLongBinary nesneleri, işlev çağrıları parametre olarak kullanılamaz. Ek olarak, `::SQLGetData`, kaydırılabilir bir anlık görüntü için kayan performansı yavaşlatabilir. Kullandığınızda da doğru olabilir bir `::SQLGetData` çağrısını kendiniz dinamik şema sütunları alınamıyor.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Kayıt Kümesi (ODBC)](../../data/odbc/recordset-odbc.md)<br/>
-[Kayıt Kümesi: SUM'ları ve Diğer Toplama Sonuçlarını Alma (ODBC)](../../data/odbc/recordset-obtaining-sums-and-other-aggregate-results-odbc.md)<br/>
+[Kayıt kümesi: SUM'ları ve diğer toplama sonuçlarını (ODBC) alma](../../data/odbc/recordset-obtaining-sums-and-other-aggregate-results-odbc.md)<br/>
 [Kayıt Alanı Değişimi (RFX)](../../data/odbc/record-field-exchange-rfx.md)

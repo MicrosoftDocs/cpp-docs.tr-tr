@@ -9,12 +9,12 @@ helpviewer_keywords:
 - databases [C++], transactions
 - distributed transactions [C++]
 ms.assetid: 3d72e583-ad38-42ff-8f11-e2166d60a5a7
-ms.openlocfilehash: 647112f480f6470f7d893ecd1d5177618dc23708
-ms.sourcegitcommit: c40469825b6101baac87d43e5f4aed6df6b078f5
+ms.openlocfilehash: 3c71200e39641a69443599e0445f89f469aceeda
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/12/2018
-ms.locfileid: "51556276"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59038754"
 ---
 # <a name="supporting-transactions-in-ole-db"></a>OLE DB'de İşlemleri Destekleme
 
@@ -22,11 +22,11 @@ A [işlem](../../data/transactions-mfc-data-access.md) grubu ya da toplu işlem,
 
 OLE DB, aşağıdaki üç yöntemi ile işlemleri destekler:
 
-- [ITransactionLocal::StartTransaction](https://docs.microsoft.com/previous-versions/windows/desktop/ms709786(v=vs.85))
+- [ITransactionLocal::StartTransaction](/previous-versions/windows/desktop/ms709786(v=vs.85))
 
-- [ITransaction::Commit](https://docs.microsoft.com/previous-versions/windows/desktop/ms713008(v=vs.85))
+- [ITransaction::Commit](/previous-versions/windows/desktop/ms713008(v=vs.85))
 
-- [Iİşlem::Durdur](https://docs.microsoft.com/previous-versions/windows/desktop/ms709833(v=vs.85))
+- [Iİşlem::Durdur](/previous-versions/windows/desktop/ms709833(v=vs.85))
 
 ## <a name="relationship-of-sessions-and-transactions"></a>Oturumlar ve işlemler arasındaki ilişki
 
@@ -48,12 +48,12 @@ Oturum, bir işlem girdiğinde, ilgili oturum içindeki veri deposunda gerçekle
 
 ## <a name="nested-transactions"></a>İç içe işlemler
 
-A [işlem iç içe geçmiş](https://docs.microsoft.com/previous-versions/windows/desktop/ms716985(v=vs.85)) oturum etkin bir işlem zaten mevcut olduğunda yeni bir yerel işlem başlatıldığında gerçekleşir. Yeni işlem geçerli işlemin altında iç içe geçmiş bir işlem olarak başlatıldı. İç içe işlem sağlayıcısı desteklemiyorsa, çağırma `StartTransaction` zaten oturum etkin bir işlem XACT_E_XTIONEXISTS döndürür.
+A [işlem iç içe geçmiş](/previous-versions/windows/desktop/ms716985(v=vs.85)) oturum etkin bir işlem zaten mevcut olduğunda yeni bir yerel işlem başlatıldığında gerçekleşir. Yeni işlem geçerli işlemin altında iç içe geçmiş bir işlem olarak başlatıldı. İç içe işlem sağlayıcısı desteklemiyorsa, çağırma `StartTransaction` zaten oturum etkin bir işlem XACT_E_XTIONEXISTS döndürür.
 
-## <a name="distributed-transactions"></a>Dağıtılmış işlemler
+## <a name="distributed-transactions"></a>Dağıtılmış İşlemler
 
 Dağıtılmış işlem dağıtılmış verileri güncelleştiren bir işlemdir; diğer bir deyişle, veriler üzerinde birden fazla ağa bağlı bilgisayar sistemi. Dağıtılmış bir sistemde işlemleri desteklemek istiyorsanız, OLE DB transaction desteği yerine .NET Framework kullanmanız gerekir.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Erişimcileri Kullanma](../../data/oledb/using-accessors.md)

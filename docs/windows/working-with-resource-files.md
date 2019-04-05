@@ -6,12 +6,12 @@ helpviewer_keywords:
 - resources [C++], about resource files
 - resource files [C++], about resource files
 ms.assetid: 2699a539-b369-4b78-80f0-df03eb7b6780
-ms.openlocfilehash: 0a13fb05f0e6e8582d5e476eb889e307458f528d
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.openlocfilehash: a08c7ecb153b790f06da386ac93d1f05f5981e61
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58767307"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59037743"
 ---
 # <a name="working-with-resource-files"></a>Kaynak Dosyalarıyla Çalışma
 
@@ -41,7 +41,7 @@ Globalize ve yönetilen uygulamalardaki kaynaklar yerelleştirmek için bkz: [Gl
 [Kaynak Dosyalar](../windows/resource-files-visual-studio.md)<br/>
 Kaynak dosyaları ve bunların Windows masaüstü uygulamalarında nasıl kullanıldığı açıklanmaktadır. Ayrıca kaynak dosyaları kullanmayı açıklayan makaleleri için bağlantılar sağlar.
 
-[Kaynak Tanımlayıcıları (Semboller)](../windows/symbols-resource-identifiers.md)<br/>
+[Kaynak Tanımlayıcıları (simge)](../windows/symbols-resource-identifiers.md)<br/>
 Sembolleri tanımlar ve kullanma hakkında bilgi sağlar **kaynak sembolleri** sembolleri projelerinizde yönetmek için iletişim kutusu.
 
 [Kaynak Düzenleyicileri](../windows/resource-editors.md)<br/>
@@ -55,7 +55,7 @@ Visual C++ belgelerine ilişkin bağlantıları sağlar.
 [Bizimle İletişime Geçin](/visualstudio/ide/talk-to-us)<br/>
 Belge kümesini kullanarak, ürün desteği ile iletişime ve erişilebilirlik özelliklerini kullanan bilgilere bağlantılar sağlar.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Windows Masaüstü uygulamaları](../windows/windows-desktop-applications-cpp.md)<br/>
 [Menüler ve diğer kaynaklar](https://msdn.microsoft.com/library/windows/desktop/ms632583.aspx)

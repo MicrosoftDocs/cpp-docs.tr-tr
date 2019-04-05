@@ -8,12 +8,12 @@ helpviewer_keywords:
 - once pragma
 - pragmas, once
 ms.assetid: c7517556-6403-4b16-8898-f2aa0a6f685f
-ms.openlocfilehash: 3adb7ab30b445ab3223246d247be006d24475afa
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 6061fe77960aa64e2dcb39db05897ef0e7fb5f2e
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50534608"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59039890"
 ---
 # <a name="once"></a>once
 Bir kaynak kodu dosyasını derlerken dosyanın (açık) yalnızca bir kez derleyici tarafından dahil olacağını belirtir.
@@ -54,6 +54,6 @@ Her ikisi de kullanmak için herhangi bir avantaj sağlamaz # guard deyim includ
 
 Kullanmamaya özen `#pragma once` veya `#include guard` ifadede etkilerini kontrol etmek için önişlemci sembolleri kullanarak tasarlanmış birden çok kez eklenmesi üst bilgi dosyaları. Bu tasarım örneği için bkz: \<assert.h > üst bilgi dosyası. Ayrıca yönetmek dikkatli olun yenmek eklenen dosyalar, çoklu yolları oluşturmaktan kaçınmak için yol eklemeyi iyileştirme her ikisi için de birden çok dahil `#include guard`s ve `#pragma once`.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Pragma Yönergeleri ve __Pragma Anahtar Sözcüğü](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

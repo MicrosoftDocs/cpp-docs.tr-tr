@@ -5,12 +5,12 @@ helpviewer_keywords:
 - sample applications [C++], OLE DB Templates
 - OLE DB consumer templates, about consumer templates
 ms.assetid: 526aa897-5961-4396-85cb-c84f77113551
-ms.openlocfilehash: 79eb11a2a9d6403eb267098bb4f893b4424d6a67
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 81bb80446ef3df09eaed7a8728e789de67c27122
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50466345"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59040812"
 ---
 # <a name="working-with-ole-db-consumer-templates"></a>OLE DB Tüketici Şablonlarıyla Çalışma
 
@@ -58,6 +58,6 @@ Aşağıdaki örnekler, OLE DB Tüketici şablonları kullanma örnekleri de bul
 
 - [MultiRead](https://github.com/Microsoft/VCSamples)
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [OLE DB Tüketici Şablonları](../../data/oledb/ole-db-consumer-templates-cpp.md)

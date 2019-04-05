@@ -1,5 +1,5 @@
 ---
-title: 'Veri Kaynağı: Program Aracılığıyla ODBC Veri Kaynağını Yapılandırma'
+title: 'Veri kaynağı: Program aracılığıyla ODBC veri kaynağını yapılandırma'
 ms.date: 11/04/2016
 f1_keywords:
 - SQLConfigDataSource
@@ -9,14 +9,14 @@ helpviewer_keywords:
 - ODBC connections, configuring
 - configuring ODBC data sources
 ms.assetid: b8cabe9b-9e12-4d73-ae36-7cb12dee3213
-ms.openlocfilehash: 3d02a19d6c61e79fffd31b67ef1b8f7ea9007fcb
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 33269b65835812a6e1a03e091833831781d97b6d
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50677376"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59037970"
 ---
-# <a name="data-source-programmatically-configuring-an-odbc-data-source"></a>Veri Kaynağı: Program Aracılığıyla ODBC Veri Kaynağını Yapılandırma
+# <a name="data-source-programmatically-configuring-an-odbc-data-source"></a>Veri kaynağı: Program aracılığıyla ODBC veri kaynağını yapılandırma
 
 Bu konuda, açık veritabanı bağlantısı (ODBC) veri kaynağı adları program aracılığıyla nasıl yapılandırabileceğiniz açıklanmaktadır. Bu size esneklik verilere erişmek için açıkça ODBC Yöneticisi'ni veya diğer programları veri kaynaklarının adlarını belirtmek için kullanılacak kullanıcının zorlamadan sağlar.
 
@@ -41,7 +41,7 @@ SQLConfigDataSource(NULL,ODBC_ADD_DSN, "Excel Files (*.xls)",
 
 Veri kaynağının aslında bir dizin (C:\EXCELDIR); olduğuna dikkat edin Bu dizinin var olması gerekir. Excel sürücüsü dizinleri (.xls dosyası başına bir tablo) bireysel tablolar gibi dosyaları ve veri kaynağı kullanır.
 
-Tablo oluşturma hakkında daha fazla bilgi için bkz. [veri kaynağı: program aracılığıyla ODBC veri kaynağında tablo'ı oluşturma](../../data/odbc/data-source-programmatically-creating-a-table-in-an-odbc-data-source.md).
+Tablo oluşturma hakkında daha fazla bilgi için bkz. [veri kaynağı: Program aracılığıyla ODBC veri kaynağında tablo oluşturma](../../data/odbc/data-source-programmatically-creating-a-table-in-an-odbc-data-source.md).
 
 Aşağıdaki bilgiler ele alınmaktadır geçirilmesi gereken parametreler `::SQLConfigDataSource` ODBC API işlevi. Kullanılacak `::SQLConfigDataSource`, Odbcinst.h üstbilgi dosyasını eklemeniz ve Odbcinst.lib içeri aktarma kitaplığını kullanmanız gerekir. Ayrıca Odbccp32.dll çalışma süresi (veya 16 bit için Odbcinst.dll) yolu olmalıdır.
 
@@ -94,7 +94,7 @@ Anahtar adlarını ve değerleri bulmanın bir yolu *lpszAttributes* parametresi
 
    - 32 bit için anahtarını bulun **HKEY_CURRENT_USER\Software\ODBC\ODBC. INI\ODBC Data Sources** sol bölmesinde.
 
-      Sağ bölmede form girişlerini listeler: "pub: REG_SZ:*<data source name>*" burada *<data source name>* istenen ayarları için istediğinize sürücüsü ile önceden yapılandırılmış bir veri kaynağı kullanılacak. İstediğiniz veri kaynağı, örneğin, SQL Server'ı seçin. Dizesini izleyen öğeler "pub:" olan, sipariş, keyname ve değeri kullanmak için *lpszAttributes* parametresi.
+      Sağ bölmede form girişlerini listeler: "pub: REG_SZ:*<data source name>*"burada *<data source name>* kullanmayı düşündüğünüz sürücü için istediğiniz ayarlarla önceden yapılandırılmış bir veri kaynağı. İstediğiniz veri kaynağı, örneğin, SQL Server'ı seçin. Dizesini izleyen öğeler "pub:" olan, sipariş, keyname ve değeri kullanmak için *lpszAttributes* parametresi.
 
    - 16 bit için Odbc.ini dosyasına tarafından işaretlenen bölümü bulun. [*\<veri kaynağı adı >*].
 
@@ -114,6 +114,6 @@ Kullanacağınız belirli bir sürücünün belgelerini incelemek isteyebilirsin
 
 ODBC Yöneticisi belirli sürücü için yeni bir veri kaynağı oluşturmak amacıyla bilgileri görüntülediğinde, tıklayın **yardımcı**. Bu, genellikle sürücünün kullanımı hakkında önemli bilgiler içeren, belirli bir sürücünün Yardım dosyasını açar.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Veri Kaynağı (ODBC)](../../data/odbc/data-source-odbc.md)

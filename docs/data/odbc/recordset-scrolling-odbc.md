@@ -1,5 +1,5 @@
 ---
-title: 'Kayıt Kümesi: Kaydırma (ODBC)'
+title: 'Kayıt kümesi: Kaydırma (ODBC)'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - recordsets [C++], end of
@@ -11,14 +11,14 @@ helpviewer_keywords:
 - scrolling [C++], recordsets
 - Move method (recordsets)
 ms.assetid: f38d2dcb-1e88-4e41-af25-98b00c276be4
-ms.openlocfilehash: e41b526b86922bafd1d923fa5848a5ef8ed4825e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 5df8151664bd7e726087cb5323c1e4622264ad23
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50579614"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59040062"
 ---
-# <a name="recordset-scrolling-odbc"></a>Kayıt Kümesi: Kaydırma (ODBC)
+# <a name="recordset-scrolling-odbc"></a>Kayıt kümesi: Kaydırma (ODBC)
 
 Bu konu MFC ODBC sınıflarına uygulanır.
 
@@ -32,7 +32,7 @@ Bu konu şunları açıklar:
 
 ##  <a name="_core_scrolling_from_one_record_to_another"></a> Başka bir kayıttan kaydırma
 
-Sınıf `CRecordset` sağlar `Move` üye işlevleri için bir kayıt kümesi içinde kaydırma. Bu işlevler, satır kümeleri tarafından geçerli kayıt taşıyın. Toplu satır getirme, uyguladıysanız bir `Move` işlemi kayıt kümesi boyutuyla yeniden konumlandırır. Toplu satır getirme, bir çağrı uyguladıysanız değil, bir `Move` işlevi yeniden konumlandırır kayıt kümesi tek bir kayıt olarak her zaman. Toplu satır getirme hakkında daha fazla bilgi için bkz. [kayıt kümesi: Kayıtları toplu (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md).
+Sınıf `CRecordset` sağlar `Move` üye işlevleri için bir kayıt kümesi içinde kaydırma. Bu işlevler, satır kümeleri tarafından geçerli kayıt taşıyın. Toplu satır getirme, uyguladıysanız bir `Move` işlemi kayıt kümesi boyutuyla yeniden konumlandırır. Toplu satır getirme, bir çağrı uyguladıysanız değil, bir `Move` işlevi yeniden konumlandırır kayıt kümesi tek bir kayıt olarak her zaman. Toplu satır getirme hakkında daha fazla bilgi için bkz. [kayıt kümesi: Kayıtları toplu yakalama (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md).
 
 > [!NOTE]
 >  Bir kayıt kümesi taşırken, silinen kayıtlar atlandı değildir. Daha fazla bilgi için [IsDeleted](../../mfc/reference/crecordset-class.md#isdeleted) üye işlevi.
@@ -89,7 +89,7 @@ rsCustSet.MoveFirst( );
 
 `IsEOF` kayıt kümesi son kaydı konumlandırılmış olursa sıfır olmayan bir değer döndürür. `IsBOF` kayıt kümesi (önce tüm kayıtlar) ilk kaydı önüne yerleştirilmiş sıfır olmayan bir değer döndürür. Her iki durumda da, üzerinde çalışılacak geçerli kayıt yok. Çağırırsanız `MovePrev` olduğunda `IsBOF` zaten TRUE veya çağrı `MoveNext` olduğunda `IsEOF` zaten framework oluşturur TRUE ise bir `CDBException`. Ayrıca `IsBOF` ve `IsEOF` boş bir kayıt kümesi için denetlenecek.
 
-Kayıt kümesi gezintisi hakkında daha fazla bilgi için bkz. [kayıt kümesi: yer işaretleri ve Mutlak Konumlar (ODBC)](../../data/odbc/recordset-bookmarks-and-absolute-positions-odbc.md).
+Kayıt kümesi gezintisi hakkında daha fazla bilgi için bkz. [kayıt kümesi: Yer işaretleri ve Mutlak Konumlar (ODBC)](../../data/odbc/recordset-bookmarks-and-absolute-positions-odbc.md).
 
 ##  <a name="_core_when_scrolling_is_supported"></a> Kaydırma Desteklendiğinde
 
@@ -101,9 +101,9 @@ Kayıt kümesi gezintisi hakkında daha fazla bilgi için bkz. [kayıt kümesi: 
 > [!NOTE]
 >  MFC DAO sınıflarına, bir dizi MFC ODBC sınıfları sağlamaz `Find` belirlenmiş ölçütleri karşılayan sonraki (veya önceki) bir kaydı bulmak için çalışır.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Kayıt Kümesi (ODBC)](../../data/odbc/recordset-odbc.md)<br/>
 [CRecordset::CanScroll](../../mfc/reference/crecordset-class.md#canscroll)<br/>
 [CRecordset::CheckRowsetError](../../mfc/reference/crecordset-class.md#checkrowseterror)<br/>
-[Kayıt Kümesi: Kayıtları Filtreleme (ODBC)](../../data/odbc/recordset-filtering-records-odbc.md)
+[Kayıt kümesi: Kayıtları filtreleme (ODBC)](../../data/odbc/recordset-filtering-records-odbc.md)

@@ -14,16 +14,16 @@ helpviewer_keywords:
 - GetProperties method
 - SetProperties method
 ms.assetid: ca0ba254-c7dc-4c52-abec-cf895a0c6a63
-ms.openlocfilehash: a6b2abc97a44117c0fdd7c08c61de7ba900d1115
-ms.sourcegitcommit: c40469825b6101baac87d43e5f4aed6df6b078f5
+ms.openlocfilehash: ed8b7a271bc6ac234fc9276d6c88d26848da24f8
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/12/2018
-ms.locfileid: "51556315"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59039578"
 ---
 # <a name="isessionpropertiesimpl-class"></a>ISessionPropertiesImpl Sınıfı
 
-Bir uygulamasını sağlar [ISessionProperties](https://docs.microsoft.com/previous-versions/windows/desktop/ms713721(v=vs.85)) arabirimi.
+Bir uygulamasını sağlar [ISessionProperties](/previous-versions/windows/desktop/ms713721(v=vs.85)) arabirimi.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -74,7 +74,7 @@ STDMETHOD(GetProperties)(ULONG cPropertyIDSets,
 
 #### <a name="parameters"></a>Parametreler
 
-Bkz: [ISessionProperties::GetProperties](https://docs.microsoft.com/previous-versions/windows/desktop/ms723643(v=vs.85)) içinde *OLE DB Programcının Başvurusu*.
+Bkz: [ISessionProperties::GetProperties](/previous-versions/windows/desktop/ms723643(v=vs.85)) içinde *OLE DB Programcının Başvurusu*.
 
 ## <a name="setproperties"></a> Isessionpropertiesımpl::SetProperties
 
@@ -89,9 +89,9 @@ STDMETHOD(SetProperties)(ULONG cPropertySets,
 
 #### <a name="parameters"></a>Parametreler
 
-Bkz: [ISessionProperties::SetProperties](https://docs.microsoft.com/previous-versions/windows/desktop/ms714405(v=vs.85)) içinde *OLE DB Programcının Başvurusu*.
+Bkz: [ISessionProperties::SetProperties](/previous-versions/windows/desktop/ms714405(v=vs.85)) içinde *OLE DB Programcının Başvurusu*.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[OLE DB sağlayıcı şablonları](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>
+[OLE DB Sağlayıcı Şablonları](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>
 [OLE DB Sağlayıcı Şablonu Mimarisi](../../data/oledb/ole-db-provider-template-architecture.md)

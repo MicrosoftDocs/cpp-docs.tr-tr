@@ -8,16 +8,16 @@ helpviewer_keywords:
 - in instruction
 - __indword intrinsic
 ms.assetid: 1068d686-586e-4e36-b962-d1d7c3315260
-ms.openlocfilehash: f4b37247093da14c8d5e8fed69b01265d3fed2ee
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 063ebd92682f8011bc6b60eee14c3443bc04c333
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50599816"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59029336"
 ---
 # <a name="indword"></a>__indword
 
-**Microsoft'a özgü**
+**Microsoft'a Özgü**
 
 Belirtilen bağlantı noktası kullanarak verilerin bir çift sözcük okur `in` yönergesi.
 
@@ -31,7 +31,7 @@ unsigned long __indword(
 
 #### <a name="parameters"></a>Parametreler
 
-*Bağlantı noktası*<br/>
+*Bağlantı Noktası*<br/>
 [in] Okunacak bağlantı noktası.
 
 ## <a name="return-value"></a>Dönüş Değeri
@@ -50,8 +50,8 @@ Word bağlantı noktasından okuyun.
 
 Bu yordam yalnızca bir iç öğe olarak kullanılabilir.
 
-**END Microsoft özgü**
+**END Microsoft'a Özgü**
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)

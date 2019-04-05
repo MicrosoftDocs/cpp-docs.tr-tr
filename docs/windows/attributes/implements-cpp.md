@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - implements attribute
 ms.assetid: 9cf0858b-cb7d-4d3c-81a6-97d87ed00d25
-ms.openlocfilehash: 519bbe0bdbef786c95ca3f6711b344b7a4f6b641
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.openlocfilehash: 9425f998f0e8fbe5f16e6eb136e00ba3fb7bd5d9
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51329897"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59033689"
 ---
 # <a name="implements-c"></a>uygulamalar (C++)
 
@@ -26,7 +26,7 @@ IDL coclass'ı üyesi olmaya zorlanıp dağıtma arabirimleri belirtir.
 
 ### <a name="parameters"></a>Parametreler
 
-*Arabirimleri*<br/>
+*arabirimler*<br/>
 Virgülle ayrılmış bir IDL coclass'ı üyesi olacak arabirimlerin listesi. Tek bir arabirim belirtmek için bir toplu yöntemi **uygular (** *interface_name* **)**.
 
 *görüntüleme*<br/>
@@ -42,7 +42,7 @@ Varsayılan olarak, COM-olan arabirimler yalnızca temel sınıfları `coclass` 
 
 |||
 |-|-|
-|**İçin geçerlidir**|**sınıf**, **yapısı**|
+|**Uygulandığı öğe:**|**sınıf**, **yapısı**|
 |**Tekrarlanabilir**|Evet|
 |**Gerekli öznitelikleri**|Yok.|
 |**Geçersiz öznitelikler**|Yok.|
@@ -484,7 +484,7 @@ public:
 };
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Derleyici Öznitelikleri](compiler-attributes.md)<br/>
 [Sınıf Öznitelikleri](class-attributes.md)

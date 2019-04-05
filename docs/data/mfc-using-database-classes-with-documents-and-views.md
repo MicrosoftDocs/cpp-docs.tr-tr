@@ -14,12 +14,12 @@ helpviewer_keywords:
 - ODBC recordsets [C++], documents and views
 - ODBC [C++], forms
 ms.assetid: 83979974-fc63-46ac-b162-e8403a572e2c
-ms.openlocfilehash: f8bb3be7cdc253f53b50898cfc3ee840e70b2d68
-ms.sourcegitcommit: bd637e9c39650cfd530520ea978a22fa4caa0e42
+ms.openlocfilehash: 78765d17b52889123f13c492699230834decba66
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55849759"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59026298"
 ---
 # <a name="mfc-using-database-classes-with-documents-and-views"></a>MFC: Belgeler ve görünümler ile veritabanı sınıflarını kullanma
 
@@ -71,6 +71,6 @@ Görünümde ne olursa olsun, yazdırma uygulamak isteyebilirsiniz, bunun bir fo
 
 Belgeler ve görünümler tüm kullanılacak istemeyebilirsiniz. Bu durumda bkz [MFC: Belgeler ve görünümler olmadan veritabanı sınıflarını kullanma](../data/mfc-using-database-classes-without-documents-and-views.md).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[MFC Veritabanı Sınıfları](../data/mfc-database-classes-odbc-and-dao.md)
+[MFC veritabanı sınıfları](../data/mfc-database-classes-odbc-and-dao.md)

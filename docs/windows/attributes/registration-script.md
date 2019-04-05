@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - registration_script attribute
 ms.assetid: 786f8072-9187-4163-a979-7a604dd4c888
-ms.openlocfilehash: 304d4139cb1adbbb7c345cd3ce6f7fc985907712
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 0b2c4d576a699dea7772821b5635944b2663c57c
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50555135"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59024380"
 ---
 # <a name="registrationscript"></a>registration_script
 
@@ -25,7 +25,7 @@ Belirtilen özel kayıt betiği çalıştırır.
 
 ### <a name="parameters"></a>Parametreler
 
-*komut dosyası*<br/>
+*betik*<br/>
 Özel kayıt betiği (.rgs) dosyasının tam yolu. Değerini **hiçbiri**, gibi `script = "none"`, coclass'ı hiçbir kayıt gereksinimleri sahip olduğunu gösterir.
 
 ## <a name="remarks"></a>Açıklamalar
@@ -63,14 +63,14 @@ class CMyClass:public IFace {};
 
 |||
 |-|-|
-|**İçin geçerlidir**|**sınıf**, **yapısı**|
+|**Uygulandığı öğe:**|**sınıf**, **yapısı**|
 |**Tekrarlanabilir**|Hayır|
 |**Gerekli öznitelikleri**|Bir veya daha fazlasını: `coclass`, `progid`, veya `vi_progid`.|
 |**Geçersiz öznitelikler**|Yok.|
 
 Öznitelik bağlamları hakkında daha fazla bilgi için bkz: [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [COM Öznitelikleri](com-attributes.md)<br/>
 [Sınıf Öznitelikleri](class-attributes.md)<br/>

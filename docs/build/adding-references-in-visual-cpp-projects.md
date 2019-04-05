@@ -7,12 +7,12 @@ helpviewer_keywords:
 - Add References Dialog Box (C++)
 - .NET Framework (C++), Add References Dialog Box
 ms.assetid: 12b8f571-0f21-40b3-9404-5318a57e9cb5
-ms.openlocfilehash: eb4d970527ba919af10eadab7c907f5108767b9b
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.openlocfilehash: dff057977e6b6ff0c36d3a888bc4d5c3aa778576
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58780476"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59038773"
 ---
 # <a name="consuming-libraries-and-components"></a>Kitaplıklar ve bileşenleri kullanma
 
@@ -144,7 +144,7 @@ Aşağıdaki özellikleri, COM ve .NET derleme başvurularını bulunur ve deği
 
    .NET Frameworkassemblies için tam yolunu görüntüler. COM bileşenleri için GUID görüntüler.
 
-- **Etiket**
+- **Etiketle**
 
    Başvurunun etiketi görüntüler.
 
@@ -164,7 +164,7 @@ Aşağıdaki özellikleri, COM ve .NET derleme başvurularını bulunur ve deği
 
    Başvurulan derlemenin sürümünü gösterir.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [C++ projesi özellik Sayfa başvurusu](reference/property-pages-visual-cpp.md)<br>
-[Visual Studio’da C++ derleyicisi ve derleme özelliklerini ayarlama](working-with-project-properties.md)
+[C++ derleyicisi ayarlayın ve derleme Visual Studio özellikleri](working-with-project-properties.md)

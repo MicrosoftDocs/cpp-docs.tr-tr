@@ -43,12 +43,12 @@ helpviewer_keywords:
 - RichEdit 1.0 control
 - rich edit controls [C++], RichEdit 1.0
 ms.assetid: 73cef03f-5c8c-456a-87d1-1458dff185cf
-ms.openlocfilehash: 217bde10ea1b7f6457d141c3006c8c8fb2efaadf
-ms.sourcegitcommit: c1f646c8b72f330fa8cf5ddb0f8f261ba10d16f0
+ms.openlocfilehash: 2e3e671cd92313ad120d2cd6aae3f7e815e09e65
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58328512"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59025370"
 ---
 # <a name="how-to-add-edit-or-delete-controls-c"></a>Nasıl yapılır: Ekleme, düzenleme veya silme denetimleri (C++)
 
@@ -193,7 +193,7 @@ Visual Studio, iletişim kutusuna ActiveX denetimleri eklemenize olanak tanır. 
 |Özellik|Açıklama|
 |---|---|
 |**ActiveX denetimi**|ActiveX denetimleri listesini görüntüler.<br/><br/>Bu iletişim kutusundan bir denetim ekleme, bir sarmalayıcı sınıfı oluşturmaz. Sarmalayıcı sınıf ihtiyacınız varsa, [sınıf görünümü](/visualstudio/ide/viewing-the-structure-of-code) oluşturmak için bkz: [sınıf ekleme](../ide/adding-a-class-visual-cpp.md).<br/><br/>Bu iletişim kutusunda ActiveX denetimi görünmüyorsa, satıcının yönergelerine göre denetim yükleme deneyin.|
-|**Yolu**|ActiveX denetimi içinde bulunan dosyayı görüntüler.|
+|**Yol**|ActiveX denetimi içinde bulunan dosyayı görüntüler.|
 
 > [!CAUTION]
 > ActiveX denetimleri, sisteminizdeki tüm dağıtmak için geçerli olmayabilir. Lütfen denetimleri yüklü yazılımlar için lisans sözleşmesi bakın veya yazılım şirketine başvurun.
@@ -228,11 +228,11 @@ ActiveX denetimleri bağımsız satıcıları tarafından sağlanan kendi özell
 
 Win32
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [İletişim kutusu denetimleri yönetme](controls-in-dialog-boxes.md)<br/>
-[Nasıl yapılır: Düzen Denetimleri](arrangement-of-controls-on-dialog-boxes.md)<br/>
-[Nasıl yapılır: Denetim Erişimini ve Değerlerini Tanımlama](defining-mnemonics-access-keys.md)<br/>
+[Nasıl yapılır: Düzen denetimleri](arrangement-of-controls-on-dialog-boxes.md)<br/>
+[Nasıl yapılır: Erişimi denetlemek ve değerleri tanımlayın](defining-mnemonics-access-keys.md)<br/>
 
 <!-- excluded links
 [Mapping Messages to Functions](../mfc/reference/mapping-messages-to-functions.md)<br/>

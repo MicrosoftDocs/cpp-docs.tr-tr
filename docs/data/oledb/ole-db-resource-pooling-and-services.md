@@ -9,12 +9,12 @@ helpviewer_keywords:
 - OLE DB services [OLE DB]
 - OLE DB providers, resource pooling
 ms.assetid: 360c36e2-25ae-4caf-8ee7-d4a6b6898f68
-ms.openlocfilehash: 1fb5164b9e744175f60c920a1d92278e9d5213f2
-ms.sourcegitcommit: 943c792fdabf01c98c31465f23949a829eab9aad
+ms.openlocfilehash: f46c6f493ae41570c75c384fcc836707faeab99f
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "51264664"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59023756"
 ---
 # <a name="ole-db-resource-pooling-and-services"></a>OLE DB Kaynak Havuzu ve Hizmetleri
 
@@ -28,6 +28,6 @@ Uzak bir veritabanına bağlanmak ve bu bağlantının kaybolabilir olup olmadı
 
 Son olarak, otomatik bir işlem kaydı, genellikle havuzu oluşan ve aynı düzeyde uygulanır sürece çalışmaz. Bu liste DBPROP_INIT_OLEDBSERVICES özelliği gösterme ve DBPROPVAL_OS_TXNENLISTMENT kaldırılırsa, kaydı devre dışı bırakma devre dışı bırakma otomatik bir işlem kaydı desteği sağlayıcıları desteklemelidir.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Gelişmiş Sağlayıcı Teknikleri](../../data/oledb/advanced-provider-techniques.md)

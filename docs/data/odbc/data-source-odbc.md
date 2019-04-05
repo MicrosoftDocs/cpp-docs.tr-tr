@@ -8,12 +8,12 @@ helpviewer_keywords:
 - configuring ODBC data sources
 - ODBC data sources, represented by CDatabase
 ms.assetid: b246721f-b9e1-49bd-a6c7-f348b8c3d537
-ms.openlocfilehash: df61ca28a1a5c7fb1f2096f2cc22654794f5dbdc
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b435c65bab565e109d37e1dd24e051993cbb30c8
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50469803"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59038401"
 ---
 # <a name="data-source-odbc"></a>Veri Kaynağı (ODBC)
 
@@ -25,10 +25,10 @@ Bir veya daha fazla veri kaynağı tek seferde uygulamanızda etkin olabilir, he
 
 Aşağıdaki konularda, veri kaynakları hakkında daha fazla açıklanır:
 
-- [Veri Kaynağı: Bağlantıları Yönetme (ODBC)](../../data/odbc/data-source-managing-connections-odbc.md)
+- [Veri kaynağı: Bağlantıları yönetme (ODBC)](../../data/odbc/data-source-managing-connections-odbc.md)
 
-- [Veri Kaynağı: Veri Kaynağının Şemasını Belirleme (ODBC)](../../data/odbc/data-source-determining-the-schema-of-the-data-source-odbc.md)
+- [Veri kaynağı: (ODBC) veri kaynağının şemasını belirleme](../../data/odbc/data-source-determining-the-schema-of-the-data-source-odbc.md)
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Açık Veritabanı Bağlantısı (ODBC)](../../data/odbc/open-database-connectivity-odbc.md)

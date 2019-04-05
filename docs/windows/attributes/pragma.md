@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - pragma attribute
 ms.assetid: 3f90d023-b8b5-4007-8311-008bb72cbea1
-ms.openlocfilehash: d90e37e27f7e2a13ffebd11043e415c1d43751c5
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 159e1570c2bde07bb4df8fa904a519e8e0018a6a
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50430505"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59041195"
 ---
 # <a name="pragma"></a>pragması
 
@@ -54,15 +54,15 @@ __interface A
 
 |||
 |-|-|
-|**İçin geçerlidir**|Her yerde|
+|**Uygulandığı öğe:**|Her yerde|
 |**Tekrarlanabilir**|Hayır|
-|**Gerekli öznitelikleri**|Yok.|
-|**Geçersiz öznitelikler**|Yok.|
+|**Gerekli öznitelikleri**|None|
+|**Geçersiz öznitelikler**|None|
 
 Öznitelik bağlamları hakkında daha fazla bilgi için bkz: [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[IDL öznitelikleri](idl-attributes.md)<br/>
+[IDL Öznitelikleri](idl-attributes.md)<br/>
 [Tek Başına Öznitelikler](stand-alone-attributes.md)<br/>
 [pack](../../preprocessor/pack.md)

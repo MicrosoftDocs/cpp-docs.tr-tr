@@ -5,12 +5,12 @@ ms.topic: reference
 helpviewer_keywords:
 - boxing, C++
 ms.assetid: b5fd2c98-c578-4f83-8257-6dd663478665
-ms.openlocfilehash: c37d9e67424e8ef5082ac7129956f8577d9c745e
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.openlocfilehash: 0b41cacba8c279447e1e944cc3214ca1ba607665
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58787734"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59038699"
 ---
 # <a name="boxing--ccli-and-ccx"></a>Kutulama (C + +/ CLI ve C + +/ CX)
 
@@ -82,11 +82,11 @@ Nesne olarak kabul edilmesi için kutulama ve kutudan çıkarma etkinleştir de�
 
 Daha fazla bilgi için bkz.:
 
-- [Nasıl yapılır: Açık Şekilde İstek Paketleme](../dotnet/how-to-explicitly-request-boxing.md)
+- [Nasıl yapılır: Açık şekilde istek paketleme](../dotnet/how-to-explicitly-request-boxing.md)
 
-- [Nasıl yapılır: Değer Türleri Oluşturmak için gcnew Kullanma ve Örtük Kutulamayı Kullanma](../dotnet/how-to-use-gcnew-to-create-value-types-and-use-implicit-boxing.md)
+- [Nasıl yapılır: Gcnew değer türleri oluşturmak ve örtük kutulamayı kullanma](../dotnet/how-to-use-gcnew-to-create-value-types-and-use-implicit-boxing.md)
 
-- [Nasıl yapılır: Kutudan Çıkarma](../dotnet/how-to-unbox.md)
+- [Nasıl yapılır: unbox](../dotnet/how-to-unbox.md)
 
 - [Standart Dönüştürmeler ve Örtük Kutulama](../dotnet/standard-conversions-and-implicit-boxing.md)
 
@@ -188,6 +188,6 @@ in func2(System::ValueType^)
 in func2(System::ValueType^)
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[.NET ve UWP İçin Bileşen Uzantıları](component-extensions-for-runtime-platforms.md)
+[.NET ve UWP için bileşen uzantıları](component-extensions-for-runtime-platforms.md)

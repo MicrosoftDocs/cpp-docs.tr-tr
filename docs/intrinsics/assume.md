@@ -8,16 +8,16 @@ f1_keywords:
 helpviewer_keywords:
 - __assume keyword [C++]
 ms.assetid: d8565123-b132-44b1-8235-5a8c8bff85a7
-ms.openlocfilehash: a1e5d096b996ef7b8a29c978be8070e3c682387d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 1d84e9306dcd468153f38cc0c3085b43388e1dbd
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50662130"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59029427"
 ---
 # <a name="assume"></a>__assume
 
-**Microsoft'a özgü**
+**Microsoft'a Özgü**
 
 İyileştirici ipucu geçirir.
 
@@ -31,7 +31,7 @@ __assume(
 
 #### <a name="parameters"></a>Parametreler
 
-*İfade*<br/>
+*ifade*<br/>
 Doğru olarak değerlendirilebilmesi için kabul herhangi bir ifade.
 
 ## <a name="remarks"></a>Açıklamalar
@@ -114,9 +114,9 @@ Ne yazık ki bu kullanımını `assert` derleyici, bu belgenin önceki bölümle
       NODEFAULT;
 ```
 
-**END Microsoft özgü**
+**END Microsoft'a Özgü**
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)<br/>
-[Anahtar Sözcükler](../cpp/keywords-cpp.md)
+[anahtar sözcükler](../cpp/keywords-cpp.md)

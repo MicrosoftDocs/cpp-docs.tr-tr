@@ -1,5 +1,5 @@
 ---
-title: 'Kayıt Kümesi: Kayıtları Toplu Yakalama (ODBC)'
+title: 'Kayıt kümesi: Kayıtları toplu yakalama (ODBC)'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - bulk row fetching, implementing
@@ -14,14 +14,14 @@ helpviewer_keywords:
 - rowsets, bulk row fetching
 - RFX (ODBC), bulk row fetching
 ms.assetid: 20d10fe9-c58a-414a-b675-cdf9aa283e4f
-ms.openlocfilehash: 55a89a66b36d12e6341b85d7dfa655b299638fcd
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 2fdcbf18fcb0d97ba7b2a39aa9bbbd79e65a4112
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50628208"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59027772"
 ---
-# <a name="recordset-fetching-records-in-bulk-odbc"></a>Kayıt Kümesi: Kayıtları Toplu Yakalama (ODBC)
+# <a name="recordset-fetching-records-in-bulk-odbc"></a>Kayıt kümesi: Kayıtları toplu yakalama (ODBC)
 
 Bu konu MFC ODBC sınıflarına uygulanır.
 
@@ -137,9 +137,9 @@ void MultiRowSet::DoBulkFieldExchange( CFieldExchange* pFX )
 > [!NOTE]
 >  Çağırmalısınız `Close` üye işlevi türetilmiş önce `CRecordset` sınıfı kapsam dışına gider. Bu çerçeve tarafından ayrılan belleği serbest olduğunu sağlar. İyi bir her zaman açıkça çağırmak için programlama `Close`olup toplu satır getirme uyguladıysanız bakılmaksızın.
 
-Kayıt alanı değişimi (RFX) hakkında daha fazla bilgi için bkz: [kayıt alanı değişimi: RFX Works nasıl](../../data/odbc/record-field-exchange-how-rfx-works.md). Parametreleri kullanma hakkında daha fazla bilgi için bkz. [CFieldExchange::SetFieldType](../../mfc/reference/cfieldexchange-class.md#setfieldtype) ve [kayıt kümesi: bir kayıt kümesi (ODBC) kümesini parametreleştirme](../../data/odbc/recordset-parameterizing-a-recordset-odbc.md).
+Kayıt alanı değişimi (RFX) hakkında daha fazla bilgi için bkz. [kayıt alanı değişimi: RFX'in çalışması](../../data/odbc/record-field-exchange-how-rfx-works.md). Parametreleri kullanma hakkında daha fazla bilgi için bkz. [CFieldExchange::SetFieldType](../../mfc/reference/cfieldexchange-class.md#setfieldtype) ve [kayıt kümesi: (ODBC) bir kayıt kümesini parametreleştirme](../../data/odbc/recordset-parameterizing-a-recordset-odbc.md).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Kayıt Kümesi (ODBC)](../../data/odbc/recordset-odbc.md)<br/>
 [CRecordset::m_nFields](../../mfc/reference/crecordset-class.md#m_nfields)<br/>

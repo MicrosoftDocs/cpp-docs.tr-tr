@@ -4,19 +4,19 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - preprocessor
 ms.assetid: e120eda3-b413-49f1-a07c-e9fb128cf500
-ms.openlocfilehash: bd139dcbbbe519cc4c9750a657f8b47c5a5bcd18
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b1443d88fdba470cb8ed5058c9a9012bfbdc5bc7
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50530976"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59028580"
 ---
 # <a name="preprocessor"></a>Ön işlemci
 Önişlemci bir kaynak dosyasının metin çevirisi ilk aşamasının bir parçası yöneten bir metin işleyicisidir. Önişlemci kaynak metin ayrıştırılamadığından, ancak, bu belirteçleri makrosu çağrıları bulmak amacıyla halinde bölmek. Derleyici, normalde, ilk seferde önişlemci çağırır olsa da, önişlemci ayrıca ayrı olarak olmadan derleme metin işlemek için çağrılabilir.
 
 Önişlemci ilgili başvuru malzemeleridir aşağıdaki bölümleri içerir:
 
-- [Önişlemci yönergeleri](../preprocessor/preprocessor-directives.md)
+- [Ön işlemci yönergeleri](../preprocessor/preprocessor-directives.md)
 
 - [Ön İşlemci işleçleri](../preprocessor/preprocessor-operators.md)
 
@@ -24,11 +24,11 @@ ms.locfileid: "50530976"
 
 - [Pragmalar](../preprocessor/pragma-directives-and-the-pragma-keyword.md)
 
-**Microsoft'a özgü**
+**Microsoft'a Özgü**
 
 Kullanarak ön işleme sonra kaynak kodunuzda bir listesini alabilirsiniz [/E](../build/reference/e-preprocess-to-stdout.md) veya [/EP](../build/reference/ep-preprocess-to-stdout-without-hash-line-directives.md) derleyici seçeneği. İki seçenek de, önişlemci çağırın ve çoğu durumda, konsolu olan standart çıktı cihazına oluşturulan metin çıktısı. /E içerdiğini fark iki seçenek arasındaki `#line` yönergeleri ve /EP out bu yönergeler kaldırır.
 
-**END Microsoft özgü**
+**END Microsoft'a Özgü**
 
 ##  <a name="_predir_special_terminology"></a> Özel terimleri
 
@@ -36,7 +36,7 @@ Kullanarak ön işleme sonra kaynak kodunuzda bir listesini alabilirsiniz [/E](.
 
 "Değişken" terimi, bir basit C türü veri nesnesine ifade eder. "Nesne" C++ nesnelerinin hem değişkenleri gösterir. Bu kapsamlı bir terimdir.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[C/C++ Ön İşlemci Başvurusu](../preprocessor/c-cpp-preprocessor-reference.md)<br/>
+[C/C++ Ön işlemci Başvurusu](../preprocessor/c-cpp-preprocessor-reference.md)<br/>
 [Çeviri Aşamaları](../preprocessor/phases-of-translation.md)

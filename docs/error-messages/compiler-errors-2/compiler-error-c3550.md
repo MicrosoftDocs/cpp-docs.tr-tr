@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3550
 ms.assetid: 9f2d5ffc-e429-41a1-89e3-7acc4fd47e14
-ms.openlocfilehash: dbed14b9f2fa0f2163484edd8b5dfa330af9cbf1
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 106ac93496eebb25ee603251d84680053e1310b7
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50498893"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59032343"
 ---
 # <a name="compiler-error-c3550"></a>Derleyici Hatası C3550
 
@@ -19,6 +19,6 @@ Bu bağlamda yalnızca düz 'decltype(auto)' kullanılabilir
 
 Varsa `decltype(auto)` kullanılan işlevin dönüş türü için bir yer tutucu olarak, kendisi tarafından kullanılmalıdır. Bir işaretçi bildirimi bir parçası olarak kullanılamaz (`decltype(auto*)`), bir başvuru bildirimi (`decltype(auto&)`), veya tüm diğer tür nitelemesini.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [auto](../../cpp/auto-cpp.md)

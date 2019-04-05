@@ -5,12 +5,12 @@ helpviewer_keywords:
 - global constants
 - constants, global
 ms.assetid: df5a9bd4-d0a8-4c1c-956e-b481d0bded7d
-ms.openlocfilehash: 3da61b7718dadba9b454ee079651ce6372f21756
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 1ae29b8744e24b6471f0d5536f3f13cc5ae59499
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50432623"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59030199"
 ---
 # <a name="global-constants-in-c"></a>C++'da Global Sabitler
 
@@ -43,6 +43,6 @@ void test() {
 }
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Bağlayıcı Araçları Hatası LNK2019](../../error-messages/tool-errors/linker-tools-error-lnk2019.md)

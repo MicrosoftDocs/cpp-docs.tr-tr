@@ -7,16 +7,16 @@ helpviewer_keywords:
 - movnti instruction
 - _mm_stream_si64x intrinsic
 ms.assetid: 114c2cd0-085f-41aa-846e-87bdd56c9ee7
-ms.openlocfilehash: 11b289deeb2fd4aadf9b5d500a3379d8af26fbb9
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.openlocfilehash: d7f7a75be1602fbb70a230b0dd3a791be99d092a
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51330443"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59039604"
 ---
 # <a name="mmstreamsi64x"></a>_mm_stream_si64x
 
-**Microsoft'a özgü**
+**Microsoft'a Özgü**
 
 MOVNTI yönerge oluşturur. Verileri Yazar `Source` tarafından belirtilen bellek konumuna `Dest`, önbellekler kirletmesini olmadan.
 
@@ -75,8 +75,8 @@ int main()
 0 ffffffffffff 0 0
 ```
 
-**END Microsoft özgü**
+**END Microsoft'a Özgü**
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)

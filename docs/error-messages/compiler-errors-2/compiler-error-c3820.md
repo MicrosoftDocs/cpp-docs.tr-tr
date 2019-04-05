@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3820
 ms.assetid: 98638838-068f-4a62-b8d5-1068368a0ff1
-ms.openlocfilehash: e969a20238366ee169256f2893b537ef9418bce7
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 9472c080f9cb63198843e774ffb450f5f67d7e58
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50464495"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59028379"
 ---
 # <a name="compiler-error-c3820"></a>Derleyici Hatası C3820
 
@@ -23,7 +23,7 @@ ms.locfileid: "50464495"
 
 1. Yönetilen Başlatıcı yöntemini belirtin.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Başlatıcılar](../../cpp/initializers.md)<br/>
 [Ek Başlatma Konuları](../../cpp/additional-startup-considerations.md)

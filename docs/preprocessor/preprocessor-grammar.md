@@ -6,24 +6,24 @@ helpviewer_keywords:
 - grammar, preprocessor
 - preprocessor, grammar
 ms.assetid: 6cd33fad-0b08-4592-9be8-7359c43e24e9
-ms.openlocfilehash: 17768b7ec1442f2af1abf76596527d4df69b1534
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 6177cf5fddba549e410842ef3f270edcc13d4782
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50614194"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59032420"
 ---
 # <a name="preprocessor-grammar"></a>Ön işlemci Dil Bilgisi
 
 *Satır içi denetim*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**#define** *tanımlayıcı* *belirteç dizesinde*<sub>iyileştirilmiş</sub><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**#define** <em>tanımlayıcı</em>**(** *tanımlayıcı*<sub>iyileştirilmiş</sub> **,** ... **,** *tanımlayıcı*<sub>iyileştirilmiş</sub> **)** *belirteç dizesinde*<sub>iyileştirilmiş</sub><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**#define** <em>identifier</em>**(** *identifier*<sub>opt</sub> **,** ... **,** *identifier*<sub>opt</sub> **)** *token-string*<sub>opt</sub><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**#include** **"** *path-spec* **"**<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**#include** **\<** *path-spec* **>**<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**#line** *basamak dizisi***"** *filename* **"**<sub>iyileştirilmiş</sub><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**#undef** *tanımlayıcısı*<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**#error** *belirteci dizesi*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**#pragma** *belirteci dizesi*
+&nbsp;&nbsp;&nbsp;&nbsp;**#pragma** *token-string*
 
 *Sabit ifade*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**tanımlanan (** *tanımlayıcı* **)**<br/>
@@ -46,7 +46,7 @@ ms.locfileid: "50614194"
 &nbsp;&nbsp;&nbsp;&nbsp;*elif-parts* *elif-satırı* *metin*
 
 *elif-satırı* :<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**#elif** *sabit-ifade*
+&nbsp;&nbsp;&nbsp;&nbsp;**#elif** *constant-expression*
 
 *else bölümünü* :<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*başka satır* *metin*
@@ -62,7 +62,7 @@ ms.locfileid: "50614194"
 &nbsp;&nbsp;&nbsp;&nbsp;*basamak dizisi* *basamak*
 
 *basamak* : biri<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**0 1, 2, 3, 4, 5, 6, 7, 8, 9**
+&nbsp;&nbsp;&nbsp;&nbsp;**0 1 2 3 4 5 6 7 8 9**
 
 *belirteç dizesinde* :<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;Dize belirteçleri
@@ -86,6 +86,6 @@ ms.locfileid: "50614194"
 > [!NOTE]
 > İçinde aşağıdaki Terminal olmayanları Genişletilmiş [sözcük kuralları](../cpp/lexical-conventions.md) bölümünü *C++ dil başvurusu*: *sabit*, *sabit-ifade* , *tanımlayıcı*, *anahtar sözcüğü*, *işleci*, ve *noktalama işaretçisi*.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Dilbilgisi Özeti (C/C++)](../preprocessor/grammar-summary-c-cpp.md)

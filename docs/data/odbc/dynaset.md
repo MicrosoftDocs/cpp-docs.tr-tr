@@ -10,12 +10,12 @@ helpviewer_keywords:
 - recordsets [C++], dynasets
 - dynasets
 ms.assetid: 2867e6be-208e-4fe7-8bbe-b8697cb1045c
-ms.openlocfilehash: 66db216b92132638f04627ccf341e2e4ce20e429
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 21c47546d14d9a121bdd0698fe96eb133dbc44a0
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50585698"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59040416"
 ---
 # <a name="dynaset"></a>Dynaset
 
@@ -71,6 +71,6 @@ Genellikle, MFC dynaset'ler (ancak değil salt iletme kayıt kümeleri) bir düz
 
 Visual C++'ın bu sürümünde bulunan ODBC sürücülerinin listesini ve ek sürücüler hakkında bilgi için bkz: [ODBC sürücü listesi](../../data/odbc/odbc-driver-list.md).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Açık Veritabanı Bağlantısı (ODBC)](../../data/odbc/open-database-connectivity-odbc.md)

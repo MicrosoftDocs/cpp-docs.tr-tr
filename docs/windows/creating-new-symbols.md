@@ -19,12 +19,12 @@ helpviewer_keywords:
 - View Use button
 - resource editors [C++], resource symbols
 ms.assetid: 35168d31-3af6-4ecd-9362-3707d47b53f3
-ms.openlocfilehash: c2e2f67a6547b05fca198a54b13776a1d3fafecf
-ms.sourcegitcommit: c1f646c8b72f330fa8cf5ddb0f8f261ba10d16f0
+ms.openlocfilehash: 8bb73c1a9e8d253492a7068c444dd7ddea8417da
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58328928"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59026363"
 ---
 # <a name="how-to-create-symbols-c"></a>Nasıl yapılır: Simgeler (C++) oluştur
 
@@ -43,9 +43,9 @@ Yeni bir proje başlıyor olun ister, atanmış oldukları kaynakları oluşturm
 |**Değer**|Sembolün sayısal değerini görüntüler.<br/><br/>Daha fazla bilgi için [sembol değeri kısıtlamaları](../windows/symbol-value-restrictions.md).|
 |**Kullanımda**|Bu onay kutusu seçildiğinde, simge bir veya daha fazla kaynak tarafından kullanılmakta olduğunu belirtir.<br/><br/>Kaynak veya kaynak listelenen **tarafından kullanılan** kutusu.|
 |**Salt okunur sembolleri Göster**|Bu onay kutusu seçildiğinde, salt okunur kaynakları görüntüler.<br/><br/>Varsayılan olarak, **kaynak sembolü** iletişim kutusu, kaynak kod dosyanıza yalnızca değiştirilebilir kaynakları görüntüler ancak bu seçenek belirtilmişse, değiştirilebilir kaynakları kalın metin olarak görüntülenir ve salt okunur kaynaklar düz metin olarak görünür.|
-|**Tarafından kullanılan**|Kaynak veya kaynak sembolleri listede seçilen sembolünü kullanarak görüntüler.<br/><br/>Belirli bir kaynak için düzenleyici taşımak için kaynağı seçin **tarafından kullanılan** seçin ve kutusunda **görünüm kullanımı**.|
+|**Kullanan**|Kaynak veya kaynak sembolleri listede seçilen sembolünü kullanarak görüntüler.<br/><br/>Belirli bir kaynak için düzenleyici taşımak için kaynağı seçin **tarafından kullanılan** seçin ve kutusunda **görünüm kullanımı**.|
 |**Yeni**|Açılır **yeni sembol** adını tanımlamak sağlayan bir iletişim kutusu ve gerekirse, yeni bir sembolik kaynak tanımlayıcısı için bir değer.|
-|**Değişiklik**|Açılır **sembol değiştirme** adı ya da bir sembolün değerini değiştirmek izin veren bir iletişim kutusu.<br/><br/>Simge bir denetim veya kaynağı için ise, simge yalnızca ilgili kaynak Düzenleyicisi'nden değiştirilebilir. Daha fazla bilgi için [yönetme sembolleri](../windows/changing-unassigned-symbols.md).|
+|**Değiştir**|Açılır **sembol değiştirme** adı ya da bir sembolün değerini değiştirmek izin veren bir iletişim kutusu.<br/><br/>Simge bir denetim veya kaynağı için ise, simge yalnızca ilgili kaynak Düzenleyicisi'nden değiştirilebilir. Daha fazla bilgi için [yönetme sembolleri](../windows/changing-unassigned-symbols.md).|
 |**Görünüm kullanımı**|Karşılık gelen kaynak Düzenleyicisi sembolü içeren kaynak açılır.|
 
 ## <a name="create-symbols"></a>Semboller oluşturma
@@ -86,8 +86,8 @@ Ne zaman, tarama sembolleri **kaynak sembolleri**, belirli bir sembolle nasıl k
 
 Win32
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[Kaynak Tanımlayıcıları (Semboller)](../windows/symbols-resource-identifiers.md)<br/>
-[Nasıl yapılır: Sembolleri Yönetme](../windows/changing-a-symbol-or-symbol-name-id.md)<br/>
+[Kaynak Tanımlayıcıları (simge)](../windows/symbols-resource-identifiers.md)<br/>
+[Nasıl yapılır: Semboller yönetme](../windows/changing-a-symbol-or-symbol-name-id.md)<br/>
 [Önceden Tanımlanmış Sembol Kimlikleri](../windows/predefined-symbol-ids.md)<br/>

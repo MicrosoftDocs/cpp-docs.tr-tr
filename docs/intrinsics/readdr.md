@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - __readdr intrinsic
 ms.assetid: 061b05da-c85e-4052-b392-106f14bb84f1
-ms.openlocfilehash: 7e6f485eef5e3c54cb406d0c2b3abe824dbf584b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 9d265fe75abaa7ad3cfd508613766cc3b600ee14
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50438772"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59025672"
 ---
 # <a name="readdr"></a>__readdr
 
@@ -45,9 +45,9 @@ Bu iç öğeler yalnızca çekirdek modunda kullanılabilir ve yordamlar yalnız
 
 **Üst bilgi dosyası** \<intrin.h >
 
-**END Microsoft özgü**
+**END Microsoft'a Özgü**
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)<br/>
 [__readeflags](../intrinsics/readeflags.md)

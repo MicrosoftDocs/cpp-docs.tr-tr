@@ -8,16 +8,16 @@ helpviewer_keywords:
 - ll_lshift intrinsic
 - __ll_lshift intrinsic
 ms.assetid: fe98f733-426d-44b3-8f24-5d0d6d44bd94
-ms.openlocfilehash: 2f0c8f257188dbd3b03ece4269b8c353c7fa26f2
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 5a91ce5db46b19be570f8d48a584a2caeabcc163
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50625985"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59024471"
 ---
 # <a name="lllshift"></a>__ll_lshift
 
-**Microsoft'a özgü**
+**Microsoft'a Özgü**
 
 Sağlanan 64-bit değeri belirtilen bit sayısı kadar sola kaydırır.
 
@@ -85,9 +85,9 @@ int main()
 
 **Not** sola kaydırma işleminin işaretsiz sürümü yoktur. Bunun nedeni, `__ll_lshift` işaretsiz bir giriş parametresi zaten kullanıyor. Sağa kaydırma yoktur hiçbir oturum bağımlılığı sola kaydırma için en az önemli bit sonuçta her zaman kaydırılacağı uzaklık değeri ne olursa olsun işaretini sıfır olarak ayarlanmış olduğundan.
 
-**END Microsoft özgü**
+**END Microsoft'a Özgü**
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [__ll_rshift](../intrinsics/ll-rshift.md)<br/>
 [__ull_rshift](../intrinsics/ull-rshift.md)<br/>

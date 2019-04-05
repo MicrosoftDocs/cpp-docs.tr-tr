@@ -3,12 +3,12 @@ title: 'Nasıl yapılır: WRL kullanarak zaman uyumsuz işlemleri tamamlama'
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 02173eae-731b-49bc-b412-f1f69388b99d
-ms.openlocfilehash: 321bb273f661ec16fe85443c449b425ae56b99e3
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.openlocfilehash: 09c341e5e3d4f6007d5d5f66b7c06e1f0af5a65c
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58787710"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59040231"
 ---
 # <a name="how-to-complete-asynchronous-operations-using-wrl"></a>Nasıl yapılır: WRL kullanarak zaman uyumsuz işlemleri tamamlama
 
@@ -121,6 +121,6 @@ Kodu derlemek için kopyalayın ve bir Visual Studio projesine yapıştırın ve
 
 `cl.exe wrl-consume-asyncOp.cpp runtimeobject.lib`
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Windows Çalışma Zamanı C++ Şablon Kitaplığı (WRL)](windows-runtime-cpp-template-library-wrl.md)

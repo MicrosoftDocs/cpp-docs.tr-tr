@@ -1,19 +1,19 @@
 ---
-title: 'SQL: SQL ve C++ Veri Türleri (ODBC)'
+title: 'SQL: SQL ve C++ veri türleri (ODBC)'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - data types [C++], SQL vs. C++
 - SQL data types [C++]
 - SQL [C++], vs. C++ data types
 ms.assetid: 066e0070-d4da-435c-9c4b-f7cab3352c86
-ms.openlocfilehash: 6767d009ca376d8e8579baf32f2c9af1e282abce
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 3efa36342b7d16968113acd818a7a1386e4cefcc
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50649507"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59024354"
 ---
-# <a name="sql-sql-and-c-data-types-odbc"></a>SQL: SQL ve C++ Veri Türleri (ODBC)
+# <a name="sql-sql-and-c-data-types-odbc"></a>SQL: SQL ve C++ veri türleri (ODBC)
 
 > [!NOTE]
 >  Bu bilgiler, MFC ODBC sınıflarına uygulanır. MFC DAO sınıflarına ile çalışıyorsanız, "Karşılaştırma, Microsoft Jet veritabanı altyapısı SQL ve ANSI SQL" DAO Yardım konusuna bakın.
@@ -25,22 +25,22 @@ Aşağıdaki tabloda, ANSI SQL veri türleri için C++ veri türleri eşler. Bu 
 |ANSI SQL veri türü|C++ veri türü|
 |------------------------|---------------------|
 |**CHAR**|`CString`|
-|**ONDALIK**|`CString` 1|
+|**DECIMAL**|`CString` 1.|
 |**TAMSAYI**|**int**|
 |**GERÇEK**|**float**|
-|**TAMSAYI**|**long**|
-|**KAYAN NOKTA**|**double**|
-|**ÇİFT**|**double**|
-|**SAYISAL**|`CString` 1|
+|**INTEGER**|**long**|
+|**KAYAN NOKTA**|**çift**|
+|**ÇİFT**|**çift**|
+|**NUMERIC**|`CString` 1.|
 |**VARCHAR**|`CString`|
 |**LONGVARCHAR**|`CLongBinary`, `CString` 2|
 |**BIT**|**BOOL**|
-|**MİNİ TAMSAYI**|**BAYT**|
-|**BIGINT**|`CString` 1|
+|**MİNİ TAMSAYI**|**BYTE**|
+|**BIGINT**|`CString` 1.|
 |**İKİLİ**|`CByteArray`|
 |**VARBINARY**|`CByteArray`|
 |**LONGVARBINARY**|`CLongBinary`, `CByteArray` 3|
-|**TARİH**|`CTime`, `CString`|
+|**DATE**|`CTime`, `CString`|
 |**SAAT**|`CTime`, `CString`|
 |**ZAMAN DAMGASI**|`CTime`, `CString`|
 
@@ -54,7 +54,7 @@ ODBC imleç kitaplığı kullanmıyorsanız, iki güncellemeye çalışırken ve
 
 MFC ODBC veritabanı sınıfları ve Microsoft SQL Server ODBC sürücüsü ile ODBC imleç kitaplığı kullanıyorsanız bir **ASSERT** ile birlikte oluşabilir bir `CDBException` çağrısı ise `CRecordset::Update` takip `CRecordset::Requery`. Bunun yerine çağrı `CRecordset::Close` ve `CRecordset::Open` yerine `CRecordset::Requery`. SQL Server ve SQL Server ODBC sürücüsü yerel destek işaretçiler için yerel olarak sağlar ve ODBC imleç kitaplığı gerekli değildir çünkü ODBC imleç kitaplığını kullanma başka bir çözümdür.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [SQL](../../data/odbc/sql.md)<br/>
-[SQL: Doğrudan SQL Çağrıları Yapma (ODBC)](../../data/odbc/sql-making-direct-sql-calls-odbc.md)
+[SQL: Doğrudan SQL çağrıları yapma (ODBC)](../../data/odbc/sql-making-direct-sql-calls-odbc.md)

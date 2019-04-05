@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - RemoveReference structure
 ms.assetid: 43ff91bb-815a-440e-b9fb-7dcbb7c863af
-ms.openlocfilehash: 7364fd3a123336bd2419006a9de9d7880f12e538
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.openlocfilehash: 342980ac9a7cae8a98ffd0f367c666487e34e5de
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58787837"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59021624"
 ---
 # <a name="removereference-structure"></a>RemoveReference Yapısı
 
@@ -58,6 +58,6 @@ Belirtilen sınıf şablonu parametre başvurusunu veya rvalue başvurusunu nite
 
 **Namespace:** Microsoft::wrl:: details
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Microsoft::WRL::Details Ad Alanı](microsoft-wrl-details-namespace.md)

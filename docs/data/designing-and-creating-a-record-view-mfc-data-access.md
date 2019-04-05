@@ -9,12 +9,12 @@ helpviewer_keywords:
 - application wizards [C++], creating record view classes
 - designing record views
 ms.assetid: 1d6f5439-754f-4b8b-a19d-841a4657827b
-ms.openlocfilehash: b97ac5e61530742280dd8ee2183ec54229fb4441
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 15a8afde8c86d3dae8198e8f42b2b7c3b49f0dfa
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50613453"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59035549"
 ---
 # <a name="designing-and-creating-a-record-view--mfc-data-access"></a>Kayıt görünümü (MFC veri erişimi) tasarlama ve oluşturma
 
@@ -34,13 +34,13 @@ Kayıt görünümü sınıfınıza oluşturabilirsiniz [MFC Uygulama Sihirbazı]
 
 Kayıt görünümleri kullanma ek ayrıntılı bilgi aşağıdaki konularda açıklanır:
 
-- [Kayıt görünümleri: Kayıt görünümünde gezintiyi destekleme](../data/supporting-navigation-in-a-record-view-mfc-data-access.md)
+- [Kayıt görünümleri: Kayıt Görünümünde Gezintiyi Destekleme](../data/supporting-navigation-in-a-record-view-mfc-data-access.md)
 
-- [Kayıt görünümleri: kayıt görünümünü kullanma](../data/using-a-record-view-mfc-data-access.md)
+- [Kayıt görünümleri: Kayıt Görünümünü Kullanma](../data/using-a-record-view-mfc-data-access.md)
 
-- [Kayıt görünümleri: ikinci kayıt kümesinden liste kutusunu doldurma](../data/filling-a-list-box-from-a-second-recordset-mfc-data-access.md)
+- [Kayıt görünümleri: İkinci Kayıt Kümesinden Liste Kutusunu Doldurma](../data/filling-a-list-box-from-a-second-recordset-mfc-data-access.md)
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Kayıt görünümleri (MFC veri erişimi)](../data/record-views-mfc-data-access.md)<br/>
 [Kayıt Kümesi (ODBC)](../data/odbc/recordset-odbc.md)<br/>

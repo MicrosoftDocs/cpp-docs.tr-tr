@@ -5,18 +5,18 @@ helpviewer_keywords:
 - record views, customizing default code
 - MFC, record views
 ms.assetid: 691e89a5-ff21-4ca3-9278-69d4678288bb
-ms.openlocfilehash: 1f1361baafa5bb3dc884adcc464a3571aee04dd3
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c5c35208f654cff90e3cdf87e697e654bdfbe307
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50478643"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59033011"
 ---
 # <a name="your-role-in-working-with-a-record-view--mfc-data-access"></a>Kayıt görünümü (MFC veri erişimi) ile çalışırken sizin rolünüz
 
 Aşağıdaki tabloda, genellikle kayıt görünümü ile çalışmak için neler gerekir ve framework sizin için ne yaptığını gösterir.
 
-### <a name="working-with-a-record-view-you-and-the-framework"></a>Kayıt görünümü ile çalışırken: siz ve Framework
+### <a name="working-with-a-record-view-you-and-the-framework"></a>Kayıt görünümü ile çalışırken: Siz ve Framework
 
 |Bunun için,|Framework|
 |---------|-------------------|
@@ -29,9 +29,9 @@ Aşağıdaki tabloda, genellikle kayıt görünümü ile çalışmak için neler
 |[İsteğe bağlı] Herhangi bir özel doğrulama için kod yazın.||
 |[İsteğe bağlı] Kayıtlarını eklemek veya silmek için kod yazın.||
 
-Form tabanlı programlama veritabanı ile çalışmaya yalnızca bir yaklaşımdır. Başka bir kullanıcı arabirimi veya herhangi bir kullanıcı arabirimi kullanarak uygulamaları hakkında daha fazla bilgi için bkz. [MFC: belgeler ve görünümler ile veritabanı sınıflarını kullanarak](../data/mfc-using-database-classes-with-documents-and-views.md) ve [MFC: olmadan veritabanı sınıflarını belgeleri kullanarak ve görünümleri](../data/mfc-using-database-classes-without-documents-and-views.md). Veritabanı kayıtlarını görüntüleyen alternatif yaklaşım için bkz: sınıfları [CListView](../mfc/reference/clistview-class.md) ve [CTreeView](../mfc/reference/ctreeview-class.md).
+Form tabanlı programlama veritabanı ile çalışmaya yalnızca bir yaklaşımdır. Başka bir kullanıcı arabirimi veya herhangi bir kullanıcı arabirimi kullanarak uygulamaları hakkında daha fazla bilgi için bkz. [MFC: Belgeler ve görünümler ile veritabanı sınıflarını kullanma](../data/mfc-using-database-classes-with-documents-and-views.md) ve [MFC: Belgeler ve görünümler olmadan veritabanı sınıflarını kullanma](../data/mfc-using-database-classes-without-documents-and-views.md). Veritabanı kayıtlarını görüntüleyen alternatif yaklaşım için bkz: sınıfları [CListView](../mfc/reference/clistview-class.md) ve [CTreeView](../mfc/reference/ctreeview-class.md).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Kayıt görünümleri (MFC veri erişimi)](../data/record-views-mfc-data-access.md)<br/>
 [ODBC Sürücü Listesi](../data/odbc/odbc-driver-list.md)

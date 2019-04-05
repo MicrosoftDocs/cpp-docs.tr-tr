@@ -7,16 +7,16 @@ helpviewer_keywords:
 - __vmx_vmresume intrinsic
 - VMRESUME instruction
 ms.assetid: 233fe1b6-c727-493a-a484-1b2363732281
-ms.openlocfilehash: 4be197566f32c5edf49a9036b1ac641416d28fc4
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d2bfe9a8f98b8a03a82768177217d70674708c39
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50616859"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59040599"
 ---
 # <a name="vmxvmresume"></a>__vmx_vmresume
 
-**Microsoft'a özgü**
+**Microsoft'a Özgü**
 
 VMX kök olmayan işlemi, geçerli sanal makine denetim yapısı (Windows VMCS) kullanarak sürdürür.
 
@@ -49,9 +49,9 @@ Bir uygulama kullanarak bir VM girin işlemi gerçekleştirebilir [__vmx_vmlaunc
 
 **Üst bilgi dosyası** \<intrin.h >
 
-**END Microsoft özgü**
+**END Microsoft'a Özgü**
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)<br/>
 [__vmx_vmlaunch](../intrinsics/vmx-vmlaunch.md)<br/>

@@ -8,18 +8,18 @@ f1_keywords:
 - C5001
 - C5012
 ms.assetid: d8f4844a-f414-42ab-b9a5-925a5da9d365
-ms.openlocfilehash: 69e174a000edfea7027a04f9cf97bf5a1aeb585e
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.openlocfilehash: 6f80bc9d2a2438a6003c93ce7e60de50fd639a16
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51518769"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59023912"
 ---
 # <a name="vectorizer-and-parallelizer-messages"></a>Vektör Yapıcı ve Paralel Hale Getirici İletileri
 
 Visual C++ derleyici seçeneklerini kullanabilirsiniz [/Qpar-report](../../build/reference/qpar-report-auto-parallelizer-reporting-level.md) ve [/Qvec-report](../../build/reference/qvec-report-auto-vectorizer-reporting-level.md) ayarlanacak [otomatik Paralelleştirme ve otomatik Vektörleştirme](../../parallel/auto-parallelization-and-auto-vectorization.md) çıkış neden kodları için ve kendi etkinliğiyle ilgili bilgi iletileri. Bu makalede, neden kodları ve iletiler açıklanmaktadır.
 
-- [Bilgilendirme iletileri](#BKMK_InformationalMessages)
+- [Bilgi İletileri](#BKMK_InformationalMessages)
 
 - [5XX](#BKMK_ReasonCode50x)
 
@@ -980,11 +980,11 @@ void code_1505(int *A, int *B)
 }
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Otomatik Paralelleştirme ve Otomatik Vektörleştirme](../../parallel/auto-parallelization-and-auto-vectorization.md)<br/>
 [Yerel kodda paralel programlama](http://go.microsoft.com/fwlink/p/?linkid=263662)<br/>
 [#pragma loop()](../../preprocessor/loop.md)<br/>
 [/Q Seçenekler (Düşük Düzey İşlemler)](../../build/reference/q-options-low-level-operations.md)<br/>
-[/Qpar-report (Otomatik Paralel Hale Getirici Raporlama Düzeyi)](../../build/reference/qpar-report-auto-parallelizer-reporting-level.md)<br/>
+[/Qpar-rapor (Otomatik Paralel Hale Getirici Raporlama Düzeyi)](../../build/reference/qpar-report-auto-parallelizer-reporting-level.md)<br/>
 [/Qvec-report (Otomatik Vektör Hale Getirici Raporlama Düzeyi)](../../build/reference/qvec-report-auto-vectorizer-reporting-level.md)

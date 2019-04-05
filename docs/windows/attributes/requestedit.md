@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - requestedit attribute
 ms.assetid: b3c24790-3c4a-4646-8722-03d7b51172ee
-ms.openlocfilehash: 27e6190cbb5908d46150acb758e2b4d5efaff1bb
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 30b0c5ec807865280c8e538ea701c3d1a5c4ef9c
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50611595"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59033897"
 ---
 # <a name="requestedit"></a>requestedit
 
@@ -37,16 +37,16 @@ ms.locfileid: "50611595"
 
 |||
 |-|-|
-|**İçin geçerlidir**|Arabirim yöntemi|
+|**Uygulandığı öğe:**|Arabirim yöntemi|
 |**Tekrarlanabilir**|Hayır|
-|**Gerekli öznitelikleri**|Yok.|
-|**Geçersiz öznitelikler**|Yok.|
+|**Gerekli öznitelikleri**|None|
+|**Geçersiz öznitelikler**|None|
 
 Öznitelik bağlamları hakkında daha fazla bilgi için bkz: [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[IDL öznitelikleri](idl-attributes.md)<br/>
+[IDL Öznitelikleri](idl-attributes.md)<br/>
 [Yöntem Öznitelikleri](method-attributes.md)<br/>
 [Veri Üyesi Öznitelikleri](data-member-attributes.md)<br/>
 [defaultbind](defaultbind.md)<br/>

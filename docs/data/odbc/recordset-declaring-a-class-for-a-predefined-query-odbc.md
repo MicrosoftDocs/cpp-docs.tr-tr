@@ -1,5 +1,5 @@
 ---
-title: 'Kayıt Kümesi: Önceden Tanımlanmış Sorgu için Bir Sınıf Bildirme (ODBC)'
+title: 'Kayıt kümesi: Bir sınıf bildirme (ODBC) önceden tanımlanmış sorgu için'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - ODBC recordsets, queries
@@ -8,21 +8,21 @@ helpviewer_keywords:
 - recordsets, predefined queries
 - recordsets, stored procedures
 ms.assetid: d27c4df9-dad2-4484-ba72-92ab0c8ff928
-ms.openlocfilehash: e83bf2ecb24a9abfd8dc9800a3a10d2d65025336
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d4ae9f21c4bd53a8050d6f8c3765bb9823d077ba
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50611269"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59026533"
 ---
-# <a name="recordset-declaring-a-class-for-a-predefined-query-odbc"></a>Kayıt Kümesi: Önceden Tanımlanmış Sorgu için Bir Sınıf Bildirme (ODBC)
+# <a name="recordset-declaring-a-class-for-a-predefined-query-odbc"></a>Kayıt kümesi: Bir sınıf bildirme (ODBC) önceden tanımlanmış sorgu için
 
 Bu konu MFC ODBC sınıflarına uygulanır.
 
 Bu konu (Microsoft SQL Server gibi bir saklı yordam olarak da adlandırılır) önceden tanımlanmış sorgu için bir kayıt kümesi sınıfı oluşturma işlemini açıklar.
 
 > [!NOTE]
->  Bu konu, türetilmiş nesneler için geçerlidir. `CRecordset` toplu satır getirme uygulanmadı. Toplu satır getirme uygulanmışsa çok benzer bir işlemdir. Toplu satır getirme uygulayan kayıt kümeleri ve değişmeyen arasındaki farkları anlamak için bkz: [kayıt kümesi: Kayıtları toplu (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md).
+>  Bu konu, türetilmiş nesneler için geçerlidir. `CRecordset` toplu satır getirme uygulanmadı. Toplu satır getirme uygulanmışsa çok benzer bir işlemdir. Toplu satır getirme uygulayan kayıt kümeleri ve değişmeyen arasındaki farkları anlamak için bkz: [kayıt kümesi: Kayıtları toplu yakalama (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md).
 
 Bazı veritabanı yönetim sistemi (DBMS), önceden tanımlanmış bir sorgu oluşturun ve bir işlev gibi programlarınızın çağırmanıza olanak tanır. Sorgu bir ada sahip parametre alabilir ve kayıtları döndürebilir. Bu konudaki yordamı kayıtları döndürür (ve belki de kullandığı Parametreler) önceden tanımlanmış sorgu çağırmak nasıl açıklar.
 
@@ -63,7 +63,7 @@ Veritabanı sınıfları, önceden tanımlanmış sorguları güncelleme destekl
 
 1. Sorgu parametreleri alırsa, her bir parametre, her bir RFX işlev çağrısı ve her bir başlatma parametre veri üyesi ekleyin.
 
-1. Artırmanız gerekir `m_nParams` yaptığınız gibi her parametre, eklenen için `m_nFields` için alanları bu yordamın 4. adımında eklendi. Daha fazla bilgi için [kayıt kümesi: bir kayıt kümesi (ODBC) kümesini parametreleştirme](../../data/odbc/recordset-parameterizing-a-recordset-odbc.md).
+1. Artırmanız gerekir `m_nParams` yaptığınız gibi her parametre, eklenen için `m_nFields` için alanları bu yordamın 4. adımında eklendi. Daha fazla bilgi için [kayıt kümesi: (ODBC) bir kayıt kümesini parametreleştirme](../../data/odbc/recordset-parameterizing-a-recordset-odbc.md).
 
 1. El ile bir SQL deyimi dizesiyle aşağıdaki biçimde yazın:
 
@@ -150,9 +150,9 @@ Bu kod, bir anlık görüntü oluşturur, daha önce kullanıcıdan alınan bir 
 > [!TIP]
 >  Bir saklı yordamdan gelen dönüş değeri (çıkış parametresi) işlemek isteyebilirsiniz. Daha fazla bilgi ve örnek için bkz. [CFieldExchange::SetFieldType](../../mfc/reference/cfieldexchange-class.md#setfieldtype).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Kayıt Kümesi (ODBC)](../../data/odbc/recordset-odbc.md)<br/>
-[Kayıt kümesi: Bir Kayıt Kümesinde Yeniden Sorgulama (ODBC)](../../data/odbc/recordset-requerying-a-recordset-odbc.md)<br/>
-[Kayıt Kümesi: Tablo için Sınıf Bildirme (ODBC)](../../data/odbc/recordset-declaring-a-class-for-a-table-odbc.md)<br/>
-[Kayıt Kümesi: Birleşim Gerçekleştirme (ODBC)](../../data/odbc/recordset-performing-a-join-odbc.md)
+[Kayıt kümesi: (ODBC) bir kayıt kümesinde yeniden sorgulama](../../data/odbc/recordset-requerying-a-recordset-odbc.md)<br/>
+[Kayıt kümesi: Bir sınıf bildirme (ODBC) için bir tablo](../../data/odbc/recordset-declaring-a-class-for-a-table-odbc.md)<br/>
+[Kayıt kümesi: Birleşim gerçekleştirme (ODBC)](../../data/odbc/recordset-performing-a-join-odbc.md)

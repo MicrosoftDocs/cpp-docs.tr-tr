@@ -6,16 +6,16 @@ f1_keywords:
 helpviewer_keywords:
 - _ReadBarrier intrinsic
 ms.assetid: f9e54a92-61bc-4f55-8195-b8932065a796
-ms.openlocfilehash: d898f85398fffa79a9b484f0f82343b1675b61e4
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: f31293b2bef0304bcdc58f0a8dbfce0436df9843
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50565171"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59025492"
 ---
 # <a name="readbarrier"></a>_ReadBarrier
 
-**Microsoft'a özgü**
+**Microsoft'a Özgü**
 
 Arama noktasındaki bellek erişim işlemini tekrar sıralayabileceğiniz derleyici iyileştirmelerini sınırlar.
 
@@ -40,9 +40,9 @@ void _ReadBarrier(void);
 
 `_ReadBarrier` İç kaldırabilir veya arama noktasındaki bellek erişim işlemini yeniden sıralama derleyici iyileştirmelerini sınırlar.
 
-**END Microsoft özgü**
+**END Microsoft'a Özgü**
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)<br/>
-[Anahtar Sözcükler](../cpp/keywords-cpp.md)
+[anahtar sözcükler](../cpp/keywords-cpp.md)

@@ -9,12 +9,12 @@ helpviewer_keywords:
 - forScope conform pragma
 - pragmas, conform
 ms.assetid: 71b3e174-c53c-4bfc-adf3-af39b1554191
-ms.openlocfilehash: 6589fe23359eecd654b23380747fbd3213c54dce
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 35c3b06106779a9056f682ff76c6ed4b4ab1ab41
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50432909"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59026584"
 ---
 # <a name="conform"></a>conform
 **C++ özgü**
@@ -23,11 +23,11 @@ ms.locfileid: "50432909"
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **#pragma uygun (** *adı* [**, Göster** ] [**,** { **üzerinde** | **kapalı** }] [[**,** { **anında iletme** | **pop** }] [**,** *tanımlayıcı* ]] **)**
+> **#pragma conform(** *name* [**, show** ] [**,** { **on** | **off** } ] [ [**,** { **push** | **pop** } ] [**,** *identifier* ] ] **)**
 
 ### <a name="parameters"></a>Parametreler
 
-*Adı*<br/>
+*name*<br/>
 Değiştirilecek derleyici seçeneğinin adı belirtir. Yalnızca geçerli *adı* olduğu `forScope`.
 
 **Show**<br/>
@@ -63,6 +63,6 @@ Değiştirilecek derleyici seçeneğinin adı belirtir. Yalnızca geçerli *adı
 int main() {}
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Pragma Yönergeleri ve __Pragma Anahtar Sözcüğü](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

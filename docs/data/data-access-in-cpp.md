@@ -8,12 +8,12 @@ helpviewer_keywords:
 - data [C++], data access technologies
 - data access [C++], class libraries for databases
 ms.assetid: 95da6237-bbe2-480a-ae50-3a520051ceff
-ms.openlocfilehash: a56c15f76b83620e4f67c188450a6b5d2f68c22f
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.openlocfilehash: 142d067b6fbc9e2357ff8fc23fd931a1194477e9
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58766046"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59041260"
 ---
 # <a name="data-access-in-visual-c"></a>Visual C++'da Veri Erişimi
 
@@ -55,6 +55,6 @@ Azure Blob Depolama, yapılandırılmamış verileri nesne/BLOB olarak bulutta d
 [ ODBC Programcının Başvurusu](https://docs.microsoft.com/sql/odbc/reference/odbc-programmer-s-reference)<br/>
 ODBC arabirimi C programlama dilini ile kullanılmak üzere tasarlanmıştır. ODBC arabirimi kullanımını üç alandan yayılır: SQL deyimleri, ODBC işlev çağrıları ve C programlama.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Visual C++](../overview/visual-cpp-in-visual-studio.md)

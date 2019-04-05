@@ -7,12 +7,12 @@ helpviewer_keywords:
 - cl.exe compiler, performance
 - cl.exe compiler, intrinsics
 ms.assetid: 48bb9929-7d78-4fd8-a092-ae3c9f971858
-ms.openlocfilehash: f66c6247aba92a1528489dcf689239c9341b7d2b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 9a014e870d731d7e7d443c3bfefd66884aa50d5d
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50560023"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59029284"
 ---
 # <a name="compiler-intrinsics"></a>Derleyici İç Bilgileri
 
@@ -40,13 +40,13 @@ Aşağıdaki bölümlerde, çeşitli mimarilerde bulunan tüm yapı içleri list
 
 - [x64 (amd64) İç Bilgi Listesi](../intrinsics/x64-amd64-intrinsics-list.md)
 
-- [Tüm Mimarilerde Kullanılabilen İç Bilgiler](../intrinsics/intrinsics-available-on-all-architectures.md)
+- [Tüm mimarilerde kullanılabilen iç bilgiler](../intrinsics/intrinsics-available-on-all-architectures.md)
 
-- [İç İşlevlerin Alfabetik Listesi](../intrinsics/alphabetical-listing-of-intrinsic-functions.md)
+- [İç işlevlerin alfabetik listesi](../intrinsics/alphabetical-listing-of-intrinsic-functions.md)
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [ARM Assembler Başvurusu](../assembler/arm/arm-assembler-reference.md)<br/>
 [Microsoft Macro Assembler Başvurusu](../assembler/masm/microsoft-macro-assembler-reference.md)<br/>
-[Anahtar Sözcükler](../cpp/keywords-cpp.md)<br/>
+[anahtar sözcükler](../cpp/keywords-cpp.md)<br/>
 [C Çalışma Zamanı Kitaplığı Başvurusu](../c-runtime-library/c-run-time-library-reference.md)

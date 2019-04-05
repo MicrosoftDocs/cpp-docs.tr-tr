@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3483
 ms.assetid: 18b3a2c5-dfc9-4661-9653-08a5798474cf
-ms.openlocfilehash: c958eee234d25b008eb8cb03f40b45b8aaba81a2
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: acbe89b5183d0991fb8d4a571a9595d6f6bafc6c
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50573465"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59026129"
 ---
 # <a name="compiler-error-c3483"></a>Derleyici Hatası C3483
 
@@ -37,6 +37,6 @@ int main()
 }
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Lambda İfadeleri](../../cpp/lambda-expressions-in-cpp.md)

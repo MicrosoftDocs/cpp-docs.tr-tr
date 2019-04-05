@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - Foundation namespace
 ms.assetid: 96a6b5e0-ddee-4b21-ae4e-da5feeb945c3
-ms.openlocfilehash: c055718cc618ba6d4d20da227407cc72263c311f
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.openlocfilehash: cd16a888594e928214ef45cbdddb1e0fdac7c82a
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58787148"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59030502"
 ---
 # <a name="windowsfoundation-namespace"></a>Windows::Foundation Ad Alanı
 
@@ -40,6 +40,6 @@ namespace Windows::Foundation;
 
 **Namespace:** Windows
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Windows UWP ad alanları](/uwp/api/)

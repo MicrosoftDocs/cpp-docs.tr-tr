@@ -5,12 +5,12 @@ helpviewer_keywords:
 - stored procedures, returning result sets
 - multiple result sets
 ms.assetid: c450c12c-a76c-4ae4-9675-071a41eeac05
-ms.openlocfilehash: fe41bfe1d9fb0207f55d2cd653a56a1ff00ce2d1
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 69e5c956d897e217501cbac9b9b93db868731221
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50570686"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59028431"
 ---
 # <a name="using-multiple-result-sets-from-one-stored-procedure"></a>Depolanmış Bir Yordamdan Birden Çok Sonuç Kümesi Kullanma
 
@@ -26,6 +26,6 @@ En saklı yordamlar, birden çok sonuç kümesi döndürür. Saklı bir yordam g
 
 1. Çağrı `GetNextResult` üzerinde `CCommand` sınıfı. Başka bir sonuç satır kümesi kullanılabiliyorsa, `GetNextResult` S_OK döndürür ve el ile erişimci kullanıyorsanız sütunlarınızı yeniden. Varsa `GetNextResult` hata verir kullanılabilir başka hiçbir sonuç kümesi vardır.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Saklı Yordamları Kullanma](../../data/oledb/using-stored-procedures.md)

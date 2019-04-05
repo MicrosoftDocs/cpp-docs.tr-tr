@@ -1,5 +1,5 @@
 ---
-title: 'Kayıt Kümesi: Yer İşaretleri ve Mutlak Konumlar (ODBC)'
+title: 'Kayıt kümesi: Yer işaretleri ve Mutlak Konumlar (ODBC)'
 ms.date: 11/04/2016
 f1_keywords:
 - SetAbsolutePosition
@@ -21,14 +21,14 @@ helpviewer_keywords:
 - GetBookmark method
 - SetAbsolutePosition method, bookmarks
 ms.assetid: 189788d6-33c1-41c5-9265-97db2a5d43cc
-ms.openlocfilehash: 826c1c0124eb261c97fff8f1e2fa01c8becb073a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c4a223f01b25b4c321ccfb4f4c03c3c5241381ec
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50500951"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59023795"
 ---
-# <a name="recordset-bookmarks-and-absolute-positions-odbc"></a>Kayıt Kümesi: Yer İşaretleri ve Mutlak Konumlar (ODBC)
+# <a name="recordset-bookmarks-and-absolute-positions-odbc"></a>Kayıt kümesi: Yer işaretleri ve Mutlak Konumlar (ODBC)
 
 Bu konu MFC ODBC sınıflarına uygulanır.
 
@@ -80,8 +80,8 @@ Geçerli kayıt işaretçiyi kullanarak mutlak konum taşımak için çağrı [C
 > [!NOTE]
 >  Bir kaydın mutlak konumunu potansiyel olarak güvenilir değil. Kullanıcı kayıtları, kayıt kümesinden silerse, herhangi bir sonraki kayıt sıralı konumunu değiştirir. Yer işaretleri, geçerli kayıt taşımak için önerilen bir yöntemdir. Daha fazla bilgi için [MFC ODBC içinde yer işaretleri](#_core_bookmarks_in_mfc_odbc).
 
-Kayıt kümesi gezintisi hakkında daha fazla bilgi için bkz. [kayıt kümesi: kaydırma (ODBC)](../../data/odbc/recordset-scrolling-odbc.md).
+Kayıt kümesi gezintisi hakkında daha fazla bilgi için bkz. [kayıt kümesi: Kaydırma (ODBC)](../../data/odbc/recordset-scrolling-odbc.md).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Kayıt Kümesi (ODBC)](../../data/odbc/recordset-odbc.md)

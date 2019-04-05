@@ -35,12 +35,12 @@ helpviewer_keywords:
 - m_dwRef
 - m_iRowset
 ms.assetid: 06d9621d-60cc-4508-8b0c-528d1b1a809b
-ms.openlocfilehash: dba86b310dcd9b89026d95732f9ca542e6995146
-ms.sourcegitcommit: c40469825b6101baac87d43e5f4aed6df6b078f5
+ms.openlocfilehash: 19b90f4454e784907366ef6cf7e3e7e1b9ada799
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/12/2018
-ms.locfileid: "51556640"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59023847"
 ---
 # <a name="csimplerow-class"></a>CSimpleRow Sınıfı
 
@@ -63,7 +63,7 @@ class CSimpleRow
 |||
 |-|-|
 |[AddRefRow](#addrefrow)|Var olan bir satır işleyici için bir başvuru sayısı ekler.|
-|[Compare](#compare)|Aynı satır örneğine başvurmak görmek için iki satır karşılaştırır.|
+|[{1&gt;Karşılaştır&lt;1}](#compare)|Aynı satır örneğine başvurmak görmek için iki satır karşılaştırır.|
 |[CSimpleRow](#csimplerow)|Oluşturucu.|
 |[ReleaseRow](#releaserow)|Satır serbest bırakır.|
 
@@ -105,7 +105,7 @@ Bir işaretçi bir `CSimpleRow` nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Genellikle S_OK HRESULT değerini, iki satır aynı satır örneği mı S_FALSE, iki satır belirten farklı belirten. Bkz: [IRowsetIdentity::IsSameRow](https://docs.microsoft.com/previous-versions/windows/desktop/ms719629(v=vs.85)) içinde *OLE DB Programcının Başvurusu* diğer olası dönüş değerleri için.
+Genellikle S_OK HRESULT değerini, iki satır aynı satır örneği mı S_FALSE, iki satır belirten farklı belirten. Bkz: [IRowsetIdentity::IsSameRow](/previous-versions/windows/desktop/ms719629(v=vs.85)) içinde *OLE DB Programcının Başvurusu* diğer olası dönüş değerleri için.
 
 ## <a name="csimplerow"></a> CSimpleRow::CSimpleRow
 
@@ -156,8 +156,8 @@ DWORD m_dwRef;
 KeyType m_iRowset;
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[OLE DB sağlayıcı şablonları](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>
+[OLE DB Sağlayıcı Şablonları](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>
 [OLE DB Sağlayıcı Şablonu Mimarisi](../../data/oledb/ole-db-provider-template-architecture.md)<br/>
 [IRowsetImpl Sınıfı](../../data/oledb/irowsetimpl-class.md)

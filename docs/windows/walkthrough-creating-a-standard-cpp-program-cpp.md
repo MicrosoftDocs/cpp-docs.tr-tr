@@ -1,5 +1,5 @@
 ---
-title: 'İzlenecek yol: standart bir C++ programını (C++) oluşturma'
+title: 'İzlenecek yol: Standart bir C++ programını (C++) oluşturma'
 ms.custom: get-started-article
 ms.date: 09/18/2018
 f1_keywords:
@@ -9,14 +9,14 @@ helpviewer_keywords:
 - command-line applications [C++], standard
 - standard applications [C++]
 ms.assetid: 48217e35-d892-46b7-93e3-f6f0b7e2da35
-ms.openlocfilehash: 78d19a277f8bedcdbd098a662c69d6fc622a7cff
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d58d23e757a97402985ef60badf551523c0a275e
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50647479"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59030627"
 ---
-# <a name="walkthrough-creating-a-standard-c-program-c"></a>İzlenecek yol: standart bir C++ programını (C++) oluşturma
+# <a name="walkthrough-creating-a-standard-c-program-c"></a>İzlenecek yol: Standart bir C++ programını (C++) oluşturma
 
 Standart C++ programlar oluşturmak için Visual Studio tümleşik geliştirme ortamında (IDE) Visual C++ kullanabilirsiniz. Bu kılavuzda açıklanan adımları izleyerek, bir proje oluşturun, projeye yeni bir dosya ekleyin, yapabilirsiniz C++ kodu eklemek ve ardından derleyin ve Visual Studio kullanarak programı çalıştırmak için dosyasını değiştirin.
 
@@ -73,10 +73,10 @@ Bu adım adım öğreticiyi tamamlamak için C++ dilinin temellerini anlamanız 
 
 ## <a name="next-steps"></a>Sonraki Adımlar
 
-**Önceki:** [konsol uygulamalarında Visual C++](../windows/console-applications-in-visual-cpp.md)<br/>
-**Sonraki:** [izlenecek yol: komut satırında yerel C++ programı derleme](../build/walkthrough-compiling-a-native-cpp-program-on-the-command-line.md)<br/>
+**Önceki:** [Visual C++'ta Konsol Uygulamaları](../windows/console-applications-in-visual-cpp.md)<br/>
+**Sonraki:** [İzlenecek yol: Komut Satırında Yerel C++ Programı Derleme](../build/walkthrough-compiling-a-native-cpp-program-on-the-command-line.md)<br/>
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [C++ Dil Başvurusu](../cpp/cpp-language-reference.md)<br/>
 [C++ Standart Kitaplığı](../standard-library/cpp-standard-library-reference.md)<br/>

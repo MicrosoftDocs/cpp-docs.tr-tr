@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - helpfile attribute
 ms.assetid: d75161c1-1363-4019-ae09-e7e3b8a3971e
-ms.openlocfilehash: 594ab4d02065e9b4efe1142c5ced9b76642e5481
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 7aff6addffb13d2d45953d190eeaac518fe48d6d
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50488055"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59039313"
 ---
 # <a name="helpfile"></a>helpfile
 
@@ -25,7 +25,7 @@ Bir tür kitaplığı için Yardım dosyasına adını ayarlar.
 
 ### <a name="parameters"></a>Parametreler
 
-*Dosya adı*<br/>
+*filename*<br/>
 Yardım konuları içeren dosyanın adı.
 
 ## <a name="remarks"></a>Açıklamalar
@@ -42,16 +42,16 @@ Yardım konuları içeren dosyanın adı.
 
 |||
 |-|-|
-|**İçin geçerlidir**|**arabirimi**, **typedef**, **sınıfı**, yöntemi **özelliği**|
+|**Uygulandığı öğe:**|**arabirimi**, **typedef**, **sınıfı**, yöntemi **özelliği**|
 |**Tekrarlanabilir**|Hayır|
-|**Gerekli öznitelikleri**|Yok.|
-|**Geçersiz öznitelikler**|Yok.|
+|**Gerekli öznitelikleri**|None|
+|**Geçersiz öznitelikler**|None|
 
 Daha fazla bilgi için [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[IDL öznitelikleri](idl-attributes.md)<br/>
+[IDL Öznitelikleri](idl-attributes.md)<br/>
 [Arabirim Öznitelikleri](interface-attributes.md)<br/>
 [Sınıf Öznitelikleri](class-attributes.md)<br/>
 [Yöntem Öznitelikleri](method-attributes.md)<br/>

@@ -7,16 +7,16 @@ helpviewer_keywords:
 - WriteBarrier intrinsic
 - _WriteBarrier intrinsic
 ms.assetid: a5ffdad9-0ca1-4eb7-b2f3-0f092c4bf4b5
-ms.openlocfilehash: b1b5ba2d70a8fc64eb47b3c6f3ff157214dcb94d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d2db648c9f41bd4f773f5bf152f31cf990a75c8e
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50653030"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59025778"
 ---
 # <a name="writebarrier"></a>_WriteBarrier
 
-**Microsoft'a özgü**
+**Microsoft'a Özgü**
 
 Arama noktasındaki bellek erişim işlemini tekrar sıralayabileceğiniz derleyici iyileştirmelerini sınırlar.
 
@@ -41,11 +41,11 @@ void _WriteBarrier(void);
 
 `_WriteBarrier` İç kaldırabilir veya arama noktasındaki bellek erişim işlemini yeniden sıralama derleyici iyileştirmelerini sınırlar.
 
-**END Microsoft özgü**
+**END Microsoft'a Özgü**
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [_ReadBarrier](../intrinsics/readbarrier.md)<br/>
 [_ReadWriteBarrier](../intrinsics/readwritebarrier.md)<br/>
 [Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)<br/>
-[Anahtar Sözcükler](../cpp/keywords-cpp.md)
+[anahtar sözcükler](../cpp/keywords-cpp.md)

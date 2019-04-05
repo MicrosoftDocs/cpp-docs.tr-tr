@@ -1,5 +1,5 @@
 ---
-title: 'Kayıt kümesi: Bir Kayıt Kümesinde Yeniden Sorgulama (ODBC)'
+title: 'Kayıt kümesi: (ODBC) bir kayıt kümesinde yeniden sorgulama'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - recordsets, requerying
@@ -8,14 +8,14 @@ helpviewer_keywords:
 - ODBC recordsets, requerying
 - refreshing recordsets
 ms.assetid: 4ebc3b5b-5b91-4f51-a967-245223c6b8e1
-ms.openlocfilehash: b8e7de569a8310fdad0273ae70449d2da544f6e3
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 7edc1c04da617f96165b25a47ce169b266ae0003
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50482760"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59024601"
 ---
-# <a name="recordset-requerying-a-recordset-odbc"></a>Kayıt kümesi: Bir Kayıt Kümesinde Yeniden Sorgulama (ODBC)
+# <a name="recordset-requerying-a-recordset-odbc"></a>Kayıt kümesi: (ODBC) bir kayıt kümesinde yeniden sorgulama
 
 Bu konu MFC ODBC sınıflarına uygulanır.
 
@@ -29,7 +29,7 @@ Bir kayıt kümesinde yeniden sorgulama için asıl nedeni vardır:
 
 ##  <a name="_core_bringing_the_recordset_up_to_date"></a> Kayıt güncelleme
 
-Genelde, bunu getirmek için kayıt kümesi nesnesi requery güncel isteyebilirsiniz. Çok kullanıcılı veritabanı ortamında, diğer kullanıcılar için veri kümenizin ömrü sırasında değişiklik yapabilirsiniz. Ne zaman kümenizin diğer kullanıcılar tarafından yapılan değişiklikleri yansıtır ve ne zaman diğer kullanıcıların kayıt kümeleri yaptığınız değişiklikleri yansıtacak hakkında daha fazla bilgi için bkz. [kayıt kümesi: nasıl kayıt kümelerini güncelleştirme kayıtları (ODBC)](../../data/odbc/recordset-how-recordsets-update-records-odbc.md) ve [Dynaset](../../data/odbc/dynaset.md).
+Genelde, bunu getirmek için kayıt kümesi nesnesi requery güncel isteyebilirsiniz. Çok kullanıcılı veritabanı ortamında, diğer kullanıcılar için veri kümenizin ömrü sırasında değişiklik yapabilirsiniz. Ne zaman kümenizin diğer kullanıcılar tarafından yapılan değişiklikleri yansıtır ve ne zaman diğer kullanıcıların kayıt kümeleri yaptığınız değişiklikleri yansıtacak hakkında daha fazla bilgi için bkz. [kayıt kümesi: Kümelerinin kayıtları Güncelleştirmesi (ODBC) kayıtları](../../data/odbc/recordset-how-recordsets-update-records-odbc.md) ve [Dynaset](../../data/odbc/dynaset.md).
 
 ##  <a name="_core_requerying_based_on_new_parameters"></a> Yeni parametrelere göre kümesinde yeniden sorgulama
 
@@ -48,15 +48,15 @@ Dynaset'ler dinamik güncel verilerle bir kayıt kümesi sunmak için nedeni, ge
 
 Alternatif olarak, kapatın ve özgün kayıt yeniden açın. Her iki durumda da, yeni kayıt veri kaynağı geçerli durumunu temsil eder.
 
-Bir örnek için bkz. [kayıt görünümleri: ikinci kayıt kümesinden liste kutusunu doldurma](../../data/filling-a-list-box-from-a-second-recordset-mfc-data-access.md).
+Bir örnek için bkz [kayıt görünümleri: İkinci kayıt kümesinden liste kutusunu doldurma](../../data/filling-a-list-box-from-a-second-recordset-mfc-data-access.md).
 
 > [!TIP]
 >  En iyi duruma getirme `Requery` performans, kayıt kümesinin değiştirmekten kaçının [filtre](../../data/odbc/recordset-filtering-records-odbc.md) veya [sıralama](../../data/odbc/recordset-sorting-records-odbc.md). Parametre değeri yalnızca çağırmadan önce değiştirme `Requery`.
 
 Varsa `Requery` çağrısı başarısız olur, çağrıyı yeniden deneyin; Aksi takdirde, uygulamanızın düzgün bir şekilde sonlandırması gerekir. Bir çağrı `Requery` veya `Open` herhangi bir dizi nedenden biri için başarısız olabilir. Belki de bir ağ hatası oluşur; veya, arama sırasında var olan verileri yayımlandıktan sonra ancak yeni veriler elde edilen önce başka bir kullanıcı özel erişim alabilirsiniz; veya bağımlı olduğu kayıt tablosu silinemedi.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Kayıt Kümesi (ODBC)](../../data/odbc/recordset-odbc.md)<br/>
-[Kayıt Kümesi: Veri Sütunlarını Dinamik Olarak Bağlama (ODBC)](../../data/odbc/recordset-dynamically-binding-data-columns-odbc.md)<br/>
-[Kayıt Kümesi: Kayıt Kümeleri Oluşturma ve Kapatma (ODBC)](../../data/odbc/recordset-creating-and-closing-recordsets-odbc.md)
+[Kayıt kümesi: (ODBC) veri sütunlarını dinamik olarak bağlama](../../data/odbc/recordset-dynamically-binding-data-columns-odbc.md)<br/>
+[Kayıt kümesi: Oluşturma ve kapatma (ODBC) kayıt kümeleri](../../data/odbc/recordset-creating-and-closing-recordsets-odbc.md)

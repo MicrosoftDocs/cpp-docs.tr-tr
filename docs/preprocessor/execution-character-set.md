@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - pragma execution_character_set
 ms.assetid: 32248cbc-7c92-4dca-8442-230c052b53ad
-ms.openlocfilehash: ff6ff550f39dc746bb687d8d3147baa0837a6cff
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: bd31e8e91a1bcbfa6ace9b47fa2b13dd945adb20
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50472676"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59039932"
 ---
 # <a name="executioncharacterset"></a>execution_character_set
 
@@ -26,7 +26,7 @@ Dize ve karakter değişmez değerleri için kullanılan yürütme karakter küm
 
 ### <a name="parameters"></a>Parametreler
 
-*Hedef*<br/>
+*hedef*<br/>
 Hedef yürütme karakter kümesini belirtir. Şu anda desteklenen ayarlama yalnızca hedef yürütme "utf-8" dir.
 
 ## <a name="remarks"></a>Açıklamalar
@@ -39,8 +39,8 @@ Varsayılan olarak, yürütme karakter kümesi geçerli kod sayfasını kullanar
 
 Varsayılan olarak, Visual Studio, kaynak kodunuz için çıkış yorumlamak için kullanılan kaynak karakter kümesi olarak geçerli kod sayfası kullanır. Bir dosya içinde okunduğunda, Visual Studio, geçerli kod sayfasına göre dosya kod sayfası ayarlamadıysanız veya dosyanın başında bayt sırası işareti (BOM) ya da UTF-16 karakter algılanan sürece yorumlar. Otomatik algılama kaynak dosyaları içermeyen bir ürün reçetesi UTF-8 olarak kodlanmış karşılaştığında geçerli kod sayfası UTF-8 olarak ayarlanamıyor çünkü Visual Studio, geçerli kod sayfası kullanılarak kodlanır varsayar. Kod sayfası Derleyici uyarılarını ve hataları neden aralığı dışında belirtilen veya otomatik olarak algılanan karakter kaynak dosyası.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Pragma yönergeleri ve \_ \_Pragma anahtar sözcüğü](../preprocessor/pragma-directives-and-the-pragma-keyword.md)<br/>
 [/ Execution-Charset (yürütme karakter kümesini Ayarla)](../build/reference/execution-charset-set-execution-character-set.md)<br/>
-[/utf-8 (Kaynak ve Yürütülebilir karakter kümelerini UTF-8 olarak ayarla)](../build/reference/utf-8-set-source-and-executable-character-sets-to-utf-8.md)
+[/ UTF-8 (kaynak ayarlayın ve yürütülebilir karakter kümelerini UTF-8)](../build/reference/utf-8-set-source-and-executable-character-sets-to-utf-8.md)

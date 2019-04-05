@@ -9,12 +9,12 @@ helpviewer_keywords:
 - methods [C++], generic
 - generic functions
 ms.assetid: 8e409364-58f9-4360-b486-e7d555e0c218
-ms.openlocfilehash: b2935c4c1a9e5fbbbcc8078d3d599128d989ed38
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.openlocfilehash: a4a1702c8b9902f5265a8a5f92316d7c82751609
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58787668"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59038702"
 ---
 # <a name="generic-functions-ccli"></a>Genel İşlevler (C++/CLI)
 
@@ -53,10 +53,10 @@ return-type identifier<type-parameter identifier(s)>
 
 ### <a name="parameters"></a>Parametreler
 
-*Öznitelikleri*<br/>
+*öznitelikler*<br/>
 (İsteğe bağlı) Ek bildirim temelli bilgiler. Öznitelikleri öznitelikleri ve öznitelik sınıfları hakkında daha fazla bilgi için bkz.
 
-*Değiştiriciler*<br/>
+*değiştiriciler*<br/>
 (İsteğe bağlı) Statik gibi işlevine yönelik bir değiştirici.  **Sanal** sanal yöntem genel olamaz bu yana izin verilmez.
 
 *dönüş türü*<br/>
@@ -181,7 +181,7 @@ My function returned an int: 2003
 My function returned a string: Hello generic functions!
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[.NET ve UWP İçin Bileşen Uzantıları](component-extensions-for-runtime-platforms.md)<br/>
+[.NET ve UWP için bileşen uzantıları](component-extensions-for-runtime-platforms.md)<br/>
 [Genel Türler](generics-cpp-component-extensions.md)

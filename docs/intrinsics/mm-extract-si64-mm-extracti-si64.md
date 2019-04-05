@@ -9,16 +9,16 @@ helpviewer_keywords:
 - _mm_extracti_si64 intrinsic
 - _mm_extract_si64 intrinsic
 ms.assetid: 459fdd72-cc54-4ee5-bbd5-d2c6067a88e7
-ms.openlocfilehash: 21e2b23ca4ac3b98c44ea7152badc5c79f386c09
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e77ca5589ed50a4199921603afec1d9888c6cca5
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50630106"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59040218"
 ---
 # <a name="mmextractsi64-mmextractisi64"></a>_mm_extract_si64, _mm_extracti_si64
 
-**Microsoft'a özgü**
+**Microsoft'a Özgü**
 
 Oluşturur `extrq` ilk bağımsız değişkeninin düşük 64 bit görüntüyü belirtilen BITS ayıklanacak yönergesi.
 
@@ -47,7 +47,7 @@ __m128i _mm_extracti_si64(
 *Uzunluğu*<br/>
 [in] Ayıklanacak alan uzunluğunu belirten bir tamsayı.
 
-*Index*<br/>
+*Dizin*<br/>
 [in] Ayıklanacak alan dizinini belirten bir tamsayı
 
 ## <a name="return-value"></a>Dönüş Değeri
@@ -108,11 +108,11 @@ result2 = 0x30eca86
 result3 = 0x30eca86
 ```
 
-**END Microsoft özgü**
+**END Microsoft'a Özgü**
 
 Telif Hakkı 2007 Gelişmiş Micro cihazlar, Inc. Tüm hakları saklıdır. Gelişmiş Micro cihazlar, Inc. izniyle üretilemez
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [_mm_insert_si64, _mm_inserti_si64](../intrinsics/mm-insert-si64-mm-inserti-si64.md)<br/>
 [Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)

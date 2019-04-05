@@ -8,12 +8,12 @@ helpviewer_keywords:
 - C++, generics
 - generics [C++], performance
 ms.assetid: f14a175b-301f-46cc-86e4-c82d35f9aa3e
-ms.openlocfilehash: e2a038790c1605b97f144684ac2e8b6e731ef2d8
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.openlocfilehash: 958da08716022bedaa8d0fe217814fa2bd86c065
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58787616"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59038783"
 ---
 # <a name="how-to-improve-performance-with-generics-ccli"></a>Nasıl yapılır: Türlerle performansı artırma (C + +/ CLI)
 
@@ -124,6 +124,6 @@ int main()
 14
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Genel Türler](generics-cpp-component-extensions.md)

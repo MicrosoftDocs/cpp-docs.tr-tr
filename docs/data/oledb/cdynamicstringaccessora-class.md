@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - CDynamicStringAccessorA class
 ms.assetid: ed0d9821-a655-41f1-a902-43c3042ac49c
-ms.openlocfilehash: bfe4cf2d6aa107c21ed0d8b226616ebaa8488102
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 3a0da9c779230fc1bf58bfa1d685623f844012c7
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50537442"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59031363"
 ---
 # <a name="cdynamicstringaccessora-class"></a>CDynamicStringAccessorA Sınıfı
 
@@ -33,7 +33,7 @@ Her ikisi de sağlayıcı veri deposu olarak dize verileri, erişilen tüm veril
 
 **Üst bilgi**: atldbcli.h
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [OLE DB Tüketici Şablonları](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
 [OLE DB Tüketici Şablonları Başvurusu](../../data/oledb/ole-db-consumer-templates-reference.md)<br/>

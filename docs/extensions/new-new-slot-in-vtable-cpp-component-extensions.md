@@ -5,12 +5,12 @@ ms.topic: reference
 helpviewer_keywords:
 - new keyword [C++]
 ms.assetid: 1a9a5704-f02f-46ae-ad65-f0f2b6dbabc3
-ms.openlocfilehash: 04c0c8d9e9d686d7b9b9ee8e7d47594cf015cbad
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.openlocfilehash: c5446e5e84491ff7d736ce3b3af49dacd471c010
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58787736"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59025792"
 ---
 # <a name="new-new-slot-in-vtable--ccli-and-ccx"></a>Yeni (vtable'da yeni yuva) (C + +/ CLI ve C + +/ CX)
 
@@ -103,8 +103,8 @@ D::g() called
 E::f() called
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[.NET ve UWP İçin Bileşen Uzantıları](component-extensions-for-runtime-platforms.md)<br/>
+[.NET ve UWP için bileşen uzantıları](component-extensions-for-runtime-platforms.md)<br/>
 
-[Geçersiz kılma tanımlayıcıları](override-specifiers-cpp-component-extensions.md)
+[Geçersiz Kılma Tanımlayıcıları](override-specifiers-cpp-component-extensions.md)

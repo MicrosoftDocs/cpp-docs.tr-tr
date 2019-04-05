@@ -6,12 +6,12 @@ helpviewer_keywords:
 - __nullptr keyword (C++)
 - nullptr keyword [C++]
 ms.assetid: 594cfbf7-06cb-4366-9ede-c0b703e1d095
-ms.openlocfilehash: b8ce6748a6fe82bb7d2432044458f93ff642d10e
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.openlocfilehash: 05aaaa8a0d0056e0f5318f5e9329d90824760728
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58787690"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59040828"
 ---
 # <a name="nullptr--ccli-and-ccx"></a>nullptr (C + +/ CLI ve C + +/ CX)
 
@@ -223,7 +223,7 @@ int main() {
 
 Derleyici seçeneği: (Gerekli; dahil olmak üzere tüm kod oluşturma seçenekleri tarafından desteklenen `/ZW` ve `/clr`)
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[.NET ve UWP İçin Bileşen Uzantıları](component-extensions-for-runtime-platforms.md)<br/>
+[.NET ve UWP için bileşen uzantıları](component-extensions-for-runtime-platforms.md)<br/>
 [nullptr](../cpp/nullptr.md)

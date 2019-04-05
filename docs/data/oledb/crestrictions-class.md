@@ -13,12 +13,12 @@ helpviewer_keywords:
 - CRestrictions class
 - Open method
 ms.assetid: 0aaa2364-641c-4318-b110-7446aada4b4f
-ms.openlocfilehash: 95517931f3156c4850e07c78910ccbffff424faa
-ms.sourcegitcommit: c40469825b6101baac87d43e5f4aed6df6b078f5
+ms.openlocfilehash: 309bb7e707d649cf78528f3d0df6cf8e43201823
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/12/2018
-ms.locfileid: "51556523"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59040625"
 ---
 # <a name="crestrictions-class"></a>CRestrictions Sınıfı
 
@@ -53,7 +53,7 @@ GUID şema için bir işaretçi.
 
 |||
 |-|-|
-|[açın](#open)|Kullanıcı tarafından sağlanan kısıtlamalar göre bir sonuç döndürür.|
+|[Open](#open)|Kullanıcı tarafından sağlanan kısıtlamalar göre bir sonuç döndürür.|
 
 ## <a name="open"></a> CRestrictions::Open
 
@@ -92,9 +92,9 @@ Standart HRESULT değerlerinden biri.
 
 Şema satır kümesinde en fazla yedi kısıtlamaları belirtebilirsiniz.
 
-Bkz: [IDBSchemaRowset](https://docs.microsoft.com/previous-versions/windows/desktop/ms713686(v=vs.85)) her şeması satır kümesi tanımlanmış kısıtlamalar hakkında bilgi için.
+Bkz: [IDBSchemaRowset](/previous-versions/windows/desktop/ms713686(v=vs.85)) her şeması satır kümesi tanımlanmış kısıtlamalar hakkında bilgi için.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [OLE DB Tüketici Şablonları](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
 [OLE DB Tüketici Şablonları Başvurusu](../../data/oledb/ole-db-consumer-templates-reference.md)<br/>

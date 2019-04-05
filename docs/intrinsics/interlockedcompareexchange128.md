@@ -8,16 +8,16 @@ helpviewer_keywords:
 - cmpxchg16b instruction
 - _InterlockedCompareExchange128 intrinsic
 ms.assetid: f05918fc-716a-4f6d-b746-1456d6b96c56
-ms.openlocfilehash: 3cfe9d650b66dc08a96599652b52f0b153198afa
-ms.sourcegitcommit: ff3cbe4235b6c316edcc7677f79f70c3e784ad76
+ms.openlocfilehash: 9330b1405ca247364cd04d3ab399f66e4f332273
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/19/2018
-ms.locfileid: "53627404"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59037876"
 ---
 # <a name="interlockedcompareexchange128"></a>_InterlockedCompareExchange128
 
-**Microsoft'a özgü**
+**Microsoft'a Özgü**
 
 128-bit birbirine kenetlenmiş karşılaştırma ve değişim gerçekleştirir.
 
@@ -123,12 +123,12 @@ int main(void)
 BigInt.Int[1] = 34, BigInt.Int[0] = 12
 ```
 
-**END Microsoft özgü**
+**END Microsoft'a Özgü**
 
 Telif Hakkı 2007 Gelişmiş Micro cihazlar, Inc. Tüm hakları saklıdır. Gelişmiş Micro cihazlar, Inc. izniyle üretilemez
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)<br/>
-[_InterlockedCompareExchange İç İşlevleri](../intrinsics/interlockedcompareexchange-intrinsic-functions.md)<br/>
+[_Interlockedcompareexchange iç işlevleri](../intrinsics/interlockedcompareexchange-intrinsic-functions.md)<br/>
 [x86 Derleyicisi ile Çakışma](../build/x64-software-conventions.md#conflicts-with-the-x86-compiler)

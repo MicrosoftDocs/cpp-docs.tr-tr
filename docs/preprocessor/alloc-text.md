@@ -8,12 +8,12 @@ helpviewer_keywords:
 - alloc_text pragma
 - pragmas, alloc_text
 ms.assetid: 1fd7be18-e4f7-4f70-b079-6326f72b871a
-ms.openlocfilehash: 43f516830d0aa0fb8de6195c5958beadbeba9df6
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 399e8956a511f289b480e66db7f03cac0a6c7c20
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50450381"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59031371"
 ---
 # <a name="alloctext"></a>alloc_text
 Belirtilen işlev tanımlarının bulunduğu kod bölümünü adlandırır. Pragma, işlev bildirimcisi ve adlandırılan işlevlerin işlev tanımı arasında gerçekleşmelidir.
@@ -42,6 +42,6 @@ Diğer sınırlamalar **alloc_text** aşağıdaki gibidir:
 
 - İşlev bildirildikten sonra, ancak işlev tanımlanmadan önce kullanılmalıdır.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Pragma Yönergeleri ve __Pragma Anahtar Sözcüğü](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

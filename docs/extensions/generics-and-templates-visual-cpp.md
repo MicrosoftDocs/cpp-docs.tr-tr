@@ -6,12 +6,12 @@ helpviewer_keywords:
 - generics [C++], vs. templates
 - templates, C++
 ms.assetid: 63adec79-b1dc-4a1a-a21d-b8a72a8fce31
-ms.openlocfilehash: 17d2f84c163a04a9fc9a3f17932ac9bf2aba1c87
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.openlocfilehash: 74cfd791e8400b788d38f272eed3d421ca4230e3
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58787783"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59021504"
 ---
 # <a name="generics-and-templates-ccli"></a>Genel türler ve temsilciler (C + +/ CLI)
 
@@ -92,6 +92,6 @@ int main() {
 F
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Genel Türler](generics-cpp-component-extensions.md)

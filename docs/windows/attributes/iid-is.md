@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - iid_is attribute
 ms.assetid: 2f9b42a9-7130-4b08-9b1e-0d5d360e10ff
-ms.openlocfilehash: 176ab83bfae18ff7f43fe0860591f2d1ac50d7eb
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b91fb7937bb0e20f2500eace9695bc0ddba21b26
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50535336"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59038563"
 ---
 # <a name="iidis"></a>iid_is
 
@@ -25,7 +25,7 @@ Bir arabirim işaretçisi tarafından işaret edilen COM arabirimi Laboratuvarda
 
 ### <a name="parameters"></a>Parametreler
 
-*İfade*<br/>
+*ifade*<br/>
 Bir COM arabirimi Laboratuvardaki belirten C dil ifadesi için bir arabirim işaretçisi tarafından işaret.
 
 ## <a name="remarks"></a>Açıklamalar
@@ -57,14 +57,14 @@ __interface IFireTabCtrl : IDispatch
 
 |||
 |-|-|
-|**İçin geçerlidir**|Arabirimi parametresi, veri üyesi|
+|**Uygulandığı öğe:**|Arabirimi parametresi, veri üyesi|
 |**Tekrarlanabilir**|Hayır|
 |**Gerekli öznitelikleri**|Yok.|
-|**Geçersiz öznitelikler**|Yok.|
+|**Geçersiz öznitelikler**|None|
 
 Daha fazla bilgi için [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[IDL öznitelikleri](idl-attributes.md)<br/>
+[IDL Öznitelikleri](idl-attributes.md)<br/>
 [Parametre Öznitelikleri](parameter-attributes.md)

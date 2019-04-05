@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3499
 ms.assetid: 6717de5c-ae0f-4024-bdf2-b5598009e7b6
-ms.openlocfilehash: 937b4e993919f5b6e28e3c389476854be36fa1cd
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 381e665745f79f6156350f66e412f0580a06f6fb
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50668292"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59027317"
 ---
 # <a name="compiler-error-c3499"></a>Derleyici Hatası C3499
 
@@ -60,6 +60,6 @@ int main()
 }
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Lambda İfadeleri](../../cpp/lambda-expressions-in-cpp.md)

@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4750
 ms.assetid: b0b2c938-7d2a-4c36-8270-7daee15ffee3
-ms.openlocfilehash: e82640b26df5ceab030d0c3f0e716e0ed72102ab
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 2a6d83074f180a455e9c305fb4ca8ea270d0a593
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50595755"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59037736"
 ---
 # <a name="compiler-warning-level-1-c4750"></a>Derleyici Uyarısı (düzey 1) C4750
 
@@ -55,6 +55,6 @@ int main(void)
 }
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [_alloca](../../c-runtime-library/reference/alloca.md)

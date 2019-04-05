@@ -55,16 +55,16 @@ helpviewer_keywords:
 - _InterlockedExchangeAdd16_nf intrinsic
 - _InterlockedExchangeAdd64_rel intrinsic
 ms.assetid: 25809e1f-9c60-4492-9f7c-0fb59c8d13d2
-ms.openlocfilehash: 8cb4c4a5f1b8048995684e3f5c630acecc74000b
-ms.sourcegitcommit: ff3cbe4235b6c316edcc7677f79f70c3e784ad76
+ms.openlocfilehash: 2cffd5a088c4b3c67441e79bc04bd709be6bf8ef
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/19/2018
-ms.locfileid: "53627506"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59039182"
 ---
 # <a name="interlockedexchangeadd-intrinsic-functions"></a>_InterlockedExchangeAdd İç İşlevleri
 
-**Microsoft'a özgü**
+**Microsoft'a Özgü**
 
 Win32 Windows SDK'sı derleyici iç desteği [_ınterlockedexchangeadd iç işlevleri](../intrinsics/interlockedexchangeadd-intrinsic-functions.md) işlevi.
 
@@ -189,10 +189,10 @@ Bu yordamlar, yalnızca iç öğe olarak kullanılabilir. Bu nedenle, mi iç ols
 
 Nasıl kullanılacağını gösteren bir örnek `_InterlockedExchangeAdd`, bkz: [_ınterlockeddecrement](../intrinsics/interlockeddecrement-intrinsic-functions.md).
 
-**END Microsoft özgü**
+**END Microsoft'a Özgü**
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)<br/>
-[Anahtar Sözcükler](../cpp/keywords-cpp.md)<br/>
+[anahtar sözcükler](../cpp/keywords-cpp.md)<br/>
 [x86 Derleyicisi ile Çakışma](../build/x64-software-conventions.md#conflicts-with-the-x86-compiler)

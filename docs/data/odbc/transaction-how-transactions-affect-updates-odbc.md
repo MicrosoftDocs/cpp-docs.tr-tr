@@ -1,5 +1,5 @@
 ---
-title: 'İşlem: İşlemlerin Güncelleştirmeleri Etkilemesi (ODBC)'
+title: 'İşlem: İşlemler (ODBC) güncelleştirmeleri nasıl etkiler'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - transactions, updating recordsets
@@ -8,19 +8,19 @@ helpviewer_keywords:
 - CommitTrans method
 - Rollback method, ODBC transactions
 ms.assetid: 9e00bbf4-e9fb-4332-87fc-ec8ac61b3f68
-ms.openlocfilehash: 68ff6970243b36b56ab206b16bb2c3608cef71e1
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 996b8410366661cb91cf82cfff823f17d3aad8b4
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50437862"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59033124"
 ---
-# <a name="transaction-how-transactions-affect-updates-odbc"></a>İşlem: İşlemlerin Güncelleştirmeleri Etkilemesi (ODBC)
+# <a name="transaction-how-transactions-affect-updates-odbc"></a>İşlem: İşlemler (ODBC) güncelleştirmeleri nasıl etkiler
 
-Güncelleştirmeleri [veri kaynağı](../../data/odbc/data-source-odbc.md) sırasında işlem düzenleme arabelleği (işlem dışında kullanılan aynı yönteme) kullanılarak yönetilir. Kayıt alan veri üyeleri topluca kayıt sırasında geçici olarak yedekler geçerli kayıt içeren düzenleme arabelleği görevi gören bir `AddNew` veya `Edit`. Sırasında bir `Delete` işlemi, geçerli kayıt yedeklenmez bir işlem içinde. Düzenleme arabelleği ve nasıl kayıt güncelleştirmeleri depolamak hakkında daha fazla bilgi için bkz. [kayıt kümesi: nasıl kayıt kümelerini güncelleştirme kayıtları (ODBC)](../../data/odbc/recordset-how-recordsets-update-records-odbc.md).
+Güncelleştirmeleri [veri kaynağı](../../data/odbc/data-source-odbc.md) sırasında işlem düzenleme arabelleği (işlem dışında kullanılan aynı yönteme) kullanılarak yönetilir. Kayıt alan veri üyeleri topluca kayıt sırasında geçici olarak yedekler geçerli kayıt içeren düzenleme arabelleği görevi gören bir `AddNew` veya `Edit`. Sırasında bir `Delete` işlemi, geçerli kayıt yedeklenmez bir işlem içinde. Düzenleme arabelleği ve nasıl kayıt güncelleştirmeleri depolamak hakkında daha fazla bilgi için bkz. [kayıt kümesi: Kümelerinin kayıtları Güncelleştirmesi (ODBC) kayıtları](../../data/odbc/recordset-how-recordsets-update-records-odbc.md).
 
 > [!NOTE]
->  Toplu satır getirme uyguladıysanız çağıramazsınız `AddNew`, `Edit`, veya `Delete`. Bunun yerine, veri kaynağı güncelleştirmelerini gerçekleştirmek için kendi işlevleri yazmanız gerekir. Toplu satır getirme hakkında daha fazla bilgi için bkz. [kayıt kümesi: Kayıtları toplu (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md).
+>  Toplu satır getirme uyguladıysanız çağıramazsınız `AddNew`, `Edit`, veya `Delete`. Bunun yerine, veri kaynağı güncelleştirmelerini gerçekleştirmek için kendi işlevleri yazmanız gerekir. Toplu satır getirme hakkında daha fazla bilgi için bkz. [kayıt kümesi: Kayıtları toplu yakalama (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md).
 
 İşlem sırasında `AddNew`, `Edit`, ve `Delete` işlem kaydedilmiş veya geri alındı. Etkilerini `CommitTrans` ve `Rollback` geçerli kayıt düzenleme ara yüklenmemesine neden olabilir. Geçerli kayıt düzgün bir şekilde geri yüklendiğinden emin olmak için anlamak önemlidir nasıl `CommitTrans` ve `Rollback` üye işlevleri `CDatabase` güncelleştirme işlevlerini ile çalışmak `CRecordset`.
 
@@ -48,14 +48,14 @@ Aşağıdaki tablo etkilerini açıklar `Rollback` işlemlerle ilgili.
 |---------------|------------------------------|-------------------|---------------------------|
 |`AddNew` ve `Update`, ardından `Rollback`|Geçerli kayıt içeriğini yer açmak için yeni kayıt için geçici olarak depolanır. Yeni kayıt düzenleme arabelleğine girilir. Sonra `Update` çağrıldığında, geçerli kayıt düzenleme ara geri yüklenir.||Veri kaynağı tarafından yapılan bir eklemedir `Update` ters çevrilir.|
 |`AddNew` (olmadan `Update`), ardından `Rollback`|Geçerli kayıt içeriğini yer açmak için yeni kayıt için geçici olarak depolanır. Düzen arabellek, yeni bir kayıt içerir.|Çağrı `AddNew` yeniden düzenleme arabellek boş, yeni bir kayıt için geri yüklemek için. Veya çağrı `Move`eski değerleri düzenleme ara geri yüklemek için (0).|Çünkü `Update` çağrılmadı, veri kaynağına yapılan bir değişiklik yoktur.|
-|`Edit` ve `Update`, ardından `Rollback`|Geçerli kayıt düzenlenmemiş bir sürümünü geçici olarak depolanır. Düzenlemeler düzenleme arabellek içeriği yapılır. Sonra `Update` çağrıldığında düzenlenmemiş kaydın sürümünü yine de geçici olarak depolanır.|*Dynaset*: geçerli kayıt düzenlenmemiş sürüm kaydının düzenleme ara geri yüklemek için geri gelin.<br /><br /> *Anlık Görüntü*: çağrı `Requery` kayıt veri kaynağından yenilenemedi.|Veri kaynağı tarafından yapılan değişiklikleri `Update` alınır.|
+|`Edit` ve `Update`, ardından `Rollback`|Geçerli kayıt düzenlenmemiş bir sürümünü geçici olarak depolanır. Düzenlemeler düzenleme arabellek içeriği yapılır. Sonra `Update` çağrıldığında düzenlenmemiş kaydın sürümünü yine de geçici olarak depolanır.|*Dynaset*: Geçerli kayıt düzenlenmemiş sürüm kaydının düzenleme ara geri yüklemek için geri gelin.<br /><br /> *Anlık Görüntü*: Çağrı `Requery` kayıt veri kaynağından yenilenemedi.|Veri kaynağı tarafından yapılan değişiklikleri `Update` alınır.|
 |`Edit` (olmadan `Update`), ardından `Rollback`|Geçerli kayıt düzenlenmemiş bir sürümünü geçici olarak depolanır. Düzenlemeler düzenleme arabellek içeriği yapılır.|Çağrı `Edit` yeniden düzenleme ara kaydı düzenlenmemiş sürümünü geri yüklemek için.|Çünkü `Update` çağrılmadı, veri kaynağına yapılan bir değişiklik yoktur.|
 |`Delete` Ardından `Rollback`|Geçerli kayıt içeriğini silinir.|Çağrı `Requery` veri kaynağından geçerli kayıt içeriğini geri yüklemek için.|Veri kaynağı silme işlemi ters çevrilir.|
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [İşlem (ODBC)](../../data/odbc/transaction-odbc.md)<br/>
 [İşlem (ODBC)](../../data/odbc/transaction-odbc.md)<br/>
-[İşlem: Kayıt Kümesinde İşlem Gerçekleştirme (ODBC)](../../data/odbc/transaction-performing-a-transaction-in-a-recordset-odbc.md)<br/>
-[CDatabase Sınıfı](../../mfc/reference/cdatabase-class.md)<br/>
-[CRecordset Sınıfı](../../mfc/reference/crecordset-class.md)
+[İşlem: (ODBC) kayıt kümesinde işlem gerçekleştirme](../../data/odbc/transaction-performing-a-transaction-in-a-recordset-odbc.md)<br/>
+[CDatabase sınıfı](../../mfc/reference/cdatabase-class.md)<br/>
+[CRecordset sınıfı](../../mfc/reference/crecordset-class.md)

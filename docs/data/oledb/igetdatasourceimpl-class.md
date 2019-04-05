@@ -14,16 +14,16 @@ helpviewer_keywords:
 - IGetDataSourceImpl class
 - GetDataSource method
 ms.assetid: d63f3178-d663-4f01-8c09-8aab2dd6805a
-ms.openlocfilehash: cd6b56f4281a2fdde77229ec54be6d6289a87148
-ms.sourcegitcommit: c40469825b6101baac87d43e5f4aed6df6b078f5
+ms.openlocfilehash: 2056b93fd6c1d32b72996970352e87670ff406de
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/12/2018
-ms.locfileid: "51556575"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59034215"
 ---
 # <a name="igetdatasourceimpl-class"></a>IGetDataSourceImpl Sınıfı
 
-Bir uygulamasını sağlar [IGetDataSource](https://docs.microsoft.com/previous-versions/windows/desktop/ms709721(v=vs.85)) nesne.
+Bir uygulamasını sağlar [IGetDataSource](/previous-versions/windows/desktop/ms709721(v=vs.85)) nesne.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -66,13 +66,13 @@ STDMETHOD(GetDataSource)(REFIID riid,
 
 #### <a name="parameters"></a>Parametreler
 
-Bkz: [IGetDataSource::GetDataSource](https://docs.microsoft.com/previous-versions/windows/desktop/ms725443(v=vs.85)) içinde *OLE DB Programcının Başvurusu*.
+Bkz: [IGetDataSource::GetDataSource](/previous-versions/windows/desktop/ms725443(v=vs.85)) içinde *OLE DB Programcının Başvurusu*.
 
 ### <a name="remarks"></a>Açıklamalar
 
 Veri kaynağı nesnesinin özelliklerine erişmek istiyorsanız kullanışlıdır.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[OLE DB sağlayıcı şablonları](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>
+[OLE DB Sağlayıcı Şablonları](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>
 [OLE DB Sağlayıcı Şablonu Mimarisi](../../data/oledb/ole-db-provider-template-architecture.md)

@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - first_is attribute
 ms.assetid: 89acbf56-3b38-4d44-83e8-1ce2f6f74ffd
-ms.openlocfilehash: fcabad8d6c512a84e44f050cd5b34d985d687636
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 79ddcb3a3ca256af4c7c30536d65c820dcef2afe
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50512845"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59033089"
 ---
 # <a name="firstis"></a>first_is
 
@@ -25,7 +25,7 @@ Aktarılacak ilk dizi öğesinin dizinini belirtir.
 
 ### <a name="parameters"></a>Parametreler
 
-*İfade*<br/>
+*ifade*<br/>
 Bir veya daha fazla C dili ifadeleri. Boş bağımsız değişken yuvaları izin verilir.
 
 ## <a name="remarks"></a>Açıklamalar
@@ -62,16 +62,16 @@ requestedit] HRESULT get_I([out, retval]long *i);
 
 |||
 |-|-|
-|**İçin geçerlidir**|İçinde alan **yapı** veya **birleşim**, parametre arabirim, arabirim yöntemi|
+|**Uygulandığı öğe:**|İçinde alan **yapı** veya **birleşim**, parametre arabirim, arabirim yöntemi|
 |**Tekrarlanabilir**|Hayır|
 |**Gerekli öznitelikleri**|Yok.|
 |**Geçersiz öznitelikler**|Yok.|
 
 Daha fazla bilgi için [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[IDL öznitelikleri](idl-attributes.md)<br/>
+[IDL Öznitelikleri](idl-attributes.md)<br/>
 [Typedef, Enum, Union ve Struct Öznitelikleri](typedef-enum-union-and-struct-attributes.md)<br/>
 [Parametre Öznitelikleri](parameter-attributes.md)<br/>
 [last_is](last-is.md)<br/>

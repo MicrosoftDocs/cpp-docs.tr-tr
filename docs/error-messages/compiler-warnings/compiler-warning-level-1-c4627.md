@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4627
 ms.assetid: 8840f3e6-b496-423a-8635-eb55d5f854a2
-ms.openlocfilehash: ef00d6691195fa5fb925448dce9513d1ecb08b6d
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.openlocfilehash: 06db3d7e585dfe49b2e0854973f63834648613b7
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57809957"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59039669"
 ---
 # <a name="compiler-warning-level-1-c4627"></a>Derleyici Uyarısı (düzey 1) C4627
 
@@ -34,6 +34,6 @@ int main()
 }
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Önceden Derlenmiş Üst Bilgi Dosyaları Oluşturma](../../build/creating-precompiled-header-files.md)

@@ -13,12 +13,12 @@ helpviewer_keywords:
 - m_nParams data member
 - m_nFields data member, recordsets
 ms.assetid: 47555ddb-11be-4b9e-9b9a-f2931764d298
-ms.openlocfilehash: fc44f2b4fcae51cef78d6b660f0cc86ee516e5e6
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 5904a69f81dd1fbf22171a46040da5d4f5511588
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50651197"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59039656"
 ---
 # <a name="recordset-architecture-odbc"></a>Kayıt kümesi: Mimari (ODBC)
 
@@ -33,7 +33,7 @@ Bu konu, bir kayıt kümesi nesnesi mimarisi oluşturan veri üyelerini açıkla
 - [M_nFields ve m_nParams veri üyelerini kullanma](#_core_using_m_nfields_and_m_nparams)
 
 > [!NOTE]
->  Bu konu, türetilmiş nesneler için geçerlidir. `CRecordset` toplu satır getirme uygulanmadı. Toplu satır getirme uygulanmışsa, benzer bir mimaridir. Farkları anlamak için bkz: [kayıt kümesi: Kayıtları toplu (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md).
+>  Bu konu, türetilmiş nesneler için geçerlidir. `CRecordset` toplu satır getirme uygulanmadı. Toplu satır getirme uygulanmışsa, benzer bir mimaridir. Farkları anlamak için bkz: [kayıt kümesi: Kayıtları toplu yakalama (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md).
 
 ##  <a name="_core_a_sample_class"></a> Örnek sınıfı
 
@@ -83,7 +83,7 @@ Parametre veri üyeleri tanımlayarak SQL dizesi parametrelerinde framework anla
 >  MFC kendisini başka bir şey parametrelerle yapmaz; özellikle, bir metin değiştirme gerçekleştirmez. Bunun yerine, MFC ODBC parametrenin nereden bildirir; ODBC verileri alır ve gerekli parametrelemeyi gerçekleştirir.
 
 > [!NOTE]
->  Parametreler sırası önemlidir. Bu konu hakkında bilgi ve parametreleri hakkında daha fazla bilgi için bkz: [kayıt kümesi: bir kayıt kümesi (ODBC) kümesini parametreleştirme](../../data/odbc/recordset-parameterizing-a-recordset-odbc.md).
+>  Parametreler sırası önemlidir. Bu konu hakkında bilgi ve parametreleri hakkında daha fazla bilgi için bkz: [kayıt kümesi: (ODBC) bir kayıt kümesini parametreleştirme](../../data/odbc/recordset-parameterizing-a-recordset-odbc.md).
 
 ##  <a name="_core_using_m_nfields_and_m_nparams"></a> M_nFields ve m_nParams kullanma
 
@@ -91,8 +91,8 @@ Bir sihirbaz sınıfınız için bir oluşturucu yazdığında, ayrıca başlat�
 
 Daha fazla bilgi ve örnekler için bkz. [kayıt alanı değişimi: RFX kullanma](../../data/odbc/record-field-exchange-using-rfx.md).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Kayıt Kümesi (ODBC)](../../data/odbc/recordset-odbc.md)<br/>
-[Kayıt Kümesi: Tablo için Sınıf Bildirme (ODBC)](../../data/odbc/recordset-declaring-a-class-for-a-table-odbc.md)<br/>
+[Kayıt kümesi: Bir sınıf bildirme (ODBC) için bir tablo](../../data/odbc/recordset-declaring-a-class-for-a-table-odbc.md)<br/>
 [Kayıt Alanı Değişimi (RFX)](../../data/odbc/record-field-exchange-rfx.md)

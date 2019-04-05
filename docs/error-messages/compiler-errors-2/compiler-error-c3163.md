@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3163
 ms.assetid: 17dcafa3-f416-4e04-a232-f9569218ba75
-ms.openlocfilehash: b5c689842f59a9cf999de08f10926efce0ade5ec
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: eda3910c99f4c8ea96568f2d475c5d6a1e4cdc7c
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50490213"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59041052"
 ---
 # <a name="compiler-error-c3163"></a>Derleyici Hatası C3163
 
@@ -38,6 +38,6 @@ using namespace System;
 // [CLSCompliant(true)] void f() {}
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [SAL Ek Açıklamaları](../../c-runtime-library/sal-annotations.md)

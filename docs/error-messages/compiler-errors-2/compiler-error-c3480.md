@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3480
 ms.assetid: 7b2e055a-9604-4d13-861b-b38bda1a6940
-ms.openlocfilehash: b856f607d764ac0a42781a80787663d965748317
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 2ebcce496fd06c30420558d80cc0a0c9318d4376
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50626908"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59039000"
 ---
 # <a name="compiler-error-c3480"></a>Derleyici Hatası C3480
 
@@ -51,6 +51,6 @@ int main()
 }
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Lambda İfadeleri](../../cpp/lambda-expressions-in-cpp.md)

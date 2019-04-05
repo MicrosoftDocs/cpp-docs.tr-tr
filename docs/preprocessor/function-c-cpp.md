@@ -8,12 +8,12 @@ helpviewer_keywords:
 - function pragma
 - pragmas, function
 ms.assetid: cbd1bd60-fabf-4b5a-9c3d-2d9f4b871365
-ms.openlocfilehash: 1c8c250e3ea28d56aec837f5c3353c3bb6515442
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c57ff2053b3c1fd52474c7eb0dd598641632f789
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50611464"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59027265"
 ---
 # <a name="function-cc"></a>function (C/C++)
 Pragmanın bağımsız değişken listesinde belirtilen işlevlere çağrıları oluşturulacağını belirtir.
@@ -82,6 +82,6 @@ str is 'Now************'
 str is '!!!!!!!!!!!!!!!'
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Pragma Yönergeleri ve __Pragma Anahtar Sözcüğü](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

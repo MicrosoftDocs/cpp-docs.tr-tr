@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - com_interface_entry attribute
 ms.assetid: 10368f81-b99b-4a0f-ba4f-a142e6911a5c
-ms.openlocfilehash: 9d83cae79b257c9ddfc6d9ab910bb5502ae78307
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 65d174679f851613e064568b071cfcbdad8f0f06
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50559698"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59030413"
 ---
 # <a name="cominterfaceentry-c"></a>com_interface_entry (C++)
 
@@ -109,14 +109,14 @@ END_COM_MAP()
 
 |||
 |-|-|
-|**İçin geçerlidir**|**sınıf**, **yapısı**|
+|**Uygulandığı öğe:**|**sınıf**, **yapısı**|
 |**Tekrarlanabilir**|Evet|
 |**Gerekli öznitelikleri**|Bir veya daha fazlasını: `coclass`, `progid`, veya `vi_progid`.|
 |**Geçersiz öznitelikler**|Yok.|
 
 Öznitelik bağlamları hakkında daha fazla bilgi için bkz: [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [COM Öznitelikleri](com-attributes.md)<br/>
 [Sınıf Öznitelikleri](class-attributes.md)<br/>

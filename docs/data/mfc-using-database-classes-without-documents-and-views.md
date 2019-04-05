@@ -1,5 +1,5 @@
 ---
-title: 'MFC: Belgeler ve Görünümler Olmadan Veritabanı Sınıflarını Kullanma'
+title: 'MFC: Belgeler ve görünümler olmadan veritabanı sınıflarını kullanma'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - ODBC applications [C++], without views
@@ -17,14 +17,14 @@ helpviewer_keywords:
 - database applications [C++], without documents
 - user interface [C++], drawing information
 ms.assetid: 15bf52d4-91cf-4b1d-8b37-87c3ae70123a
-ms.openlocfilehash: 558917f1a1485f1a886356b3c272842579f6b03e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ab9946609fa20c4644873a684a754cbc8a41742f
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50602221"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59024640"
 ---
-# <a name="mfc-using-database-classes-without-documents-and-views"></a>MFC: Belgeler ve Görünümler Olmadan Veritabanı Sınıflarını Kullanma
+# <a name="mfc-using-database-classes-without-documents-and-views"></a>MFC: Belgeler ve görünümler olmadan veritabanı sınıflarını kullanma
 
 Bazen, veritabanı uygulamalarında framework'ün belge/görünüm mimarisini kullanan istemeyebilirsiniz. Bu konu şunları açıklar:
 
@@ -54,12 +54,12 @@ MFC Uygulama Sihirbazı birkaç seçenek vardır **seçin veritabanı desteği**
 
 |Seçenek|Görüntüle|Belge|
 |------------|----------|--------------|
-|**Yok**|Türetilmiş `CView`.|Hiçbir veritabanı desteği sağlar. Varsayılan seçenek budur.<br /><br /> Seçerseniz **belge/görünüm mimarisi desteği** seçeneğini [Application Type, MFC Uygulama Sihirbazı](../mfc/reference/application-type-mfc-application-wizard.md) sayfasında, serileştirme dahil olmak üzere tam belge desteği alın ve **yeni** , **Açık**, **Kaydet**, ve **Kaydet** komutlarını **dosya** menüsü. Bkz: [hiçbir belge uygulamalarla](#_core_applications_with_no_document).|
+|**Yok.**|Türetilmiş `CView`.|Hiçbir veritabanı desteği sağlar. Varsayılan seçenek budur.<br /><br /> Seçerseniz **belge/görünüm mimarisi desteği** seçeneğini [Application Type, MFC Uygulama Sihirbazı](../mfc/reference/application-type-mfc-application-wizard.md) sayfasında, serileştirme dahil olmak üzere tam belge desteği alın ve **yeni** , **Açık**, **Kaydet**, ve **Kaydet** komutlarını **dosya** menüsü. Bkz: [hiçbir belge uygulamalarla](#_core_applications_with_no_document).|
 |**Yalnızca üst bilgi dosyaları**|Türetilmiş `CView`.|Uygulamanız için temel düzeyde bir veritabanı desteği sağlar.<br /><br /> Afxdb.h içerir. Bağlantı kitaplıkları ekler, ancak herhangi bir veritabanı özgü sınıflar oluşturmaz. Daha sonra kayıt kümeleri oluşturma ve bunları inceleyin ve kayıtları güncelleştirmek için kullanın.|
 |**Dosya desteği olmadan veritabanı görünümü**|Öğesinden türetilen `CRecordView`|Belge desteği, ancak hiçbir serileştirme desteği sağlar. Belge kayıt depolayabilir ve birden çok görünüm koordine; Seri duruma getirmeyi desteklemeyen veya **yeni**, **açık**, **Kaydet**, ve **Kaydet** komutları. Bkz: [en az Belgeli Uygulamalar](#_core_applications_with_minimal_documents). Bir veritabanı görünümü eklerseniz, veri kaynağı belirtmeniz gerekir.<br /><br /> Veritabanı üst bilgi dosyaları, bağlantı kitaplıkları, kayıt görünümü ve bir kayıt kümesi içerir. (Kullanılabilir olan uygulamalar için **belge/görünüm mimarisi desteği** seçeneği seçili [Application Type, MFC Uygulama Sihirbazı](../mfc/reference/application-type-mfc-application-wizard.md) sayfası.)|
 |**Dosya destekli veritabanı görünümü**|Öğesinden türetilen `CRecordView`|Serileştirme dahil olmak üzere tam belge desteği sağlar ve ilgili **dosya** menü komutları. Yerine dosya ve bu nedenle temel serileştirme gerekmez veritabanı uygulamaları, genellikle kayıt başına temelinde çalışır. Ancak, serileştirme için özel bir kullanım olabilir. Bkz: [en az Belgeli Uygulamalar](#_core_applications_with_minimal_documents). Bir veritabanı görünümü eklerseniz, veri kaynağı belirtmeniz gerekir.<br /><br /> Veritabanı üst bilgi dosyaları, bağlantı kitaplıkları, kayıt görünümü ve bir kayıt kümesi içerir. (Kullanılabilir olan uygulamalar için **belge/görünüm mimarisi desteği** seçeneği seçili [Application Type, MFC Uygulama Sihirbazı](../mfc/reference/application-type-mfc-application-wizard.md) sayfası.)|
 
-Serileştirme ve seri hale getirme için alternatif alternatifleri için bkz [seri hale getirme: seri hale getirme vs. Veritabanı giriş/çıkış](../mfc/serialization-serialization-vs-database-input-output.md).
+Serileştirme ve seri hale getirme için alternatif alternatifleri için bkz [seri hale getirme: Serileştirme vs. Veritabanı giriş/çıkış](../mfc/serialization-serialization-vs-database-input-output.md).
 
 ##  <a name="_core_applications_with_minimal_documents"></a> En az Belgeli Uygulamalar
 
@@ -81,7 +81,7 @@ Genellikle basit form tabanlı uygulamalar için bu seçeneği kullanın. Uygula
 
 ###  <a name="_core_a_document_with_file_support"></a> Dosya destekli belge
 
-Uygulama Sihirbazı'nı veritabanı seçeneğini **görünümü dosya destekli veritabanı** belgeyle ilgili için alternatif kullanımınız olduğunda **dosya** menü komutları ve Belge Serileştirme. Programınız için veri erişim bölümü, belge aynı şekilde açıklandığı gibi kullanabileceğiniz [dosya desteği olmadan belge](#_core_a_document_without_file_support). Örneğin, okuma ve yazma, kullanıcının tercihlerini veya diğer yararlı bilgileri depolayan bir serileştirilmiş kullanıcı profili belgesini belgenin seri hale getirme özelliği kullanabilirsiniz. Daha fazla fikir için bkz [seri hale getirme: seri hale getirme vs. Veritabanı giriş/çıkış](../mfc/serialization-serialization-vs-database-input-output.md).
+Uygulama Sihirbazı'nı veritabanı seçeneğini **görünümü dosya destekli veritabanı** belgeyle ilgili için alternatif kullanımınız olduğunda **dosya** menü komutları ve Belge Serileştirme. Programınız için veri erişim bölümü, belge aynı şekilde açıklandığı gibi kullanabileceğiniz [dosya desteği olmadan belge](#_core_a_document_without_file_support). Örneğin, okuma ve yazma, kullanıcının tercihlerini veya diğer yararlı bilgileri depolayan bir serileştirilmiş kullanıcı profili belgesini belgenin seri hale getirme özelliği kullanabilirsiniz. Daha fazla fikir için bkz [seri hale getirme: Serileştirme vs. Veritabanı giriş/çıkış](../mfc/serialization-serialization-vs-database-input-output.md).
 
 Bu seçenek, Uygulama Sihirbazı'nı destekler, ancak belgeyi serileştiren kod yazmanız gerekir. Serileştirilmiş bilgiler belge veri üyelerinde Store.
 
@@ -119,6 +119,6 @@ Belge sahibi olduğundan `CRecordset` nesne büyük olasılıkla istediğiniz bi
 
 - Bir belge ya da bir görünüm bağlamı içinde olduğu gibi kayıt kümesi nesnelerini kullanma. Kayıt kümeleri, üye işlevleri uygulamanızın veya çerçeve pencere nesneleri oluşturun.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[MFC Veritabanı Sınıfları](../data/mfc-database-classes-odbc-and-dao.md)
+[MFC veritabanı sınıfları](../data/mfc-database-classes-odbc-and-dao.md)

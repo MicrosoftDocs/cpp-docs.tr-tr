@@ -11,12 +11,12 @@ helpviewer_keywords:
 - CMyProviderRowset class in MyProviderRS.H
 - CCustomRowset class in CustomRS.H
 ms.assetid: 7ba1a124-3842-40eb-a36b-302190a1af3a
-ms.openlocfilehash: 2e54b1f3434434dc8c6028bc04a8b1dba17d8305
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 9f9dcb97ecd6b5f37f1af2187abf8b5612eedce3
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50434976"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59026155"
 ---
 # <a name="ccustomrowset-customrsh"></a>CCustomRowset (CustomRS.H)
 
@@ -38,6 +38,6 @@ class CMyRowsetImpl:
 
 *RowsetInterface* parametresi de kullanmanıza olanak verir `IRowsetLocate` veya `IRowsetScroll` arabirimi. `IRowsetLocate` Ve `IRowsetScroll` arabirimleri hem de devralan `IRowset`. Bu nedenle, OLE DB sağlayıcı şablonları özel işleme için bu arabirimler sağlamanız gerekir. Bu arabirimler birini kullanmak istiyorsanız, bu parametreyi kullanmanız gerekir.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Sağlayıcı Sihirbazı Tarafından Üretilen Dosyalar](../../data/oledb/provider-wizard-generated-files.md)<br/>

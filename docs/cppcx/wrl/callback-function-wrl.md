@@ -5,12 +5,12 @@ ms.topic: reference
 f1_keywords:
 - event/Microsoft::WRL::Callback
 ms.assetid: afb15d25-3230-44f7-b321-e17c54872943
-ms.openlocfilehash: e5cccd337514df34729fc916900a7b16a15596fc
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.openlocfilehash: d37e6fdd2521f07728305bfbf5441cebb363030a
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58787058"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59041396"
 ---
 # <a name="callback-function-wrl"></a>Geri çağırma işlevi (WRL)
 
@@ -227,13 +227,13 @@ ComPtr<TDelegateInterface> Callback(
 *TArg9*<br/>
 Şablon parametresi dokuzuncu geri çağırma yöntemi bağımsız değişken türünü belirtir.
 
-*geri çağırma*<br/>
+*geri arama*<br/>
 Geri çağırma nesnesi ve onun üye işlevini temsil eden bir nesne.
 
-*object*<br/>
+*nesne*<br/>
 Bir olay oluştuğunda üye işlevi çağrılan nesne.
 
-*Yöntemi*<br/>
+*yöntemi*<br/>
 Bir olay oluştuğunda çağrılacak üye işlevi.
 
 ## <a name="return-value"></a>Dönüş Değeri
@@ -250,6 +250,6 @@ Bir temsilci nesnesinin temeli olmalıdır `IUnknown`değil `IInspectable`.
 
 **Namespace:** Microsoft::WRL
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Microsoft::WRL Ad Alanı](microsoft-wrl-namespace.md)

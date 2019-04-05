@@ -5,12 +5,12 @@ helpviewer_keywords:
 - recordsets, MFC ODBC
 - ODBC recordsets
 ms.assetid: ebde4180-e3de-474a-a5ab-6135e41763a7
-ms.openlocfilehash: 72e394ae8d8bef72acf62edd81b356b76b1b18c0
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 9d6a2b49f518fd9eaacf589e893bc240d1409a4b
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50567940"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59023899"
 ---
 # <a name="use-mfc-odbc-recordsets"></a>MFC ODBC Kayıt Kümelerini Kullanma
 
@@ -76,6 +76,6 @@ Bu konular ile MFC ODBC kayıt kümeleri ile nasıl çalışılacağını açık
 
 - [Veri sütunları bir kayıt kümesinde çalışma zamanında dinamik olarak bağlama](../../data/odbc/recordset-dynamically-binding-data-columns-odbc.md)
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Açık Veritabanı Bağlantısı (ODBC)](../../data/odbc/open-database-connectivity-odbc.md)

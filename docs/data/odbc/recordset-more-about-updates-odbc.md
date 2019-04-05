@@ -1,5 +1,5 @@
 ---
-title: 'Kayıt Kümesi: Güncelleştirmeler Hakkında Daha Fazla Bilgi (ODBC)'
+title: 'Kayıt kümesi: Güncelleştirmeler hakkında daha fazla (ODBC)'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - records, updating
@@ -10,14 +10,14 @@ helpviewer_keywords:
 - updating recordsets
 - recordsets, updating
 ms.assetid: 0353a742-d226-4fe2-8881-a7daeffe86cd
-ms.openlocfilehash: b34f6f51c6ff3a0995f4cf6044ddd7949644f42c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c29ff110fc507c4e449b2f3d082d98c159a35107
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50665302"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59040774"
 ---
-# <a name="recordset-more-about-updates-odbc"></a>Kayıt Kümesi: Güncelleştirmeler Hakkında Daha Fazla Bilgi (ODBC)
+# <a name="recordset-more-about-updates-odbc"></a>Kayıt kümesi: Güncelleştirmeler hakkında daha fazla (ODBC)
 
 Bu konu MFC ODBC sınıflarına uygulanır.
 
@@ -30,7 +30,7 @@ Bu konu şunları açıklar:
 - [Update ve Delete üye işlevleri hakkında daha fazla](#_core_more_about_update_and_delete).
 
 > [!NOTE]
->  Bu konu, türetilmiş nesneler için geçerlidir. `CRecordset` toplu satır getirme uygulanmadı. Toplu satır getirme uyguladıysanız, bazı bilgiler geçerli değildir. Örneğin, çağıramazsınız `AddNew`, `Edit`, `Delete`, ve `Update` üye işlevleri; ancak, işlemleri gerçekleştirebilirsiniz. Toplu satır getirme hakkında daha fazla bilgi için bkz. [kayıt kümesi: Kayıtları toplu (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md).
+>  Bu konu, türetilmiş nesneler için geçerlidir. `CRecordset` toplu satır getirme uygulanmadı. Toplu satır getirme uyguladıysanız, bazı bilgiler geçerli değildir. Örneğin, çağıramazsınız `AddNew`, `Edit`, `Delete`, ve `Update` üye işlevleri; ancak, işlemleri gerçekleştirebilirsiniz. Toplu satır getirme hakkında daha fazla bilgi için bkz. [kayıt kümesi: Kayıtları toplu yakalama (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md).
 
 ##  <a name="_core_how_other_operations_affect_updates"></a> Diğer işlemlerin güncelleştirmeleri etkilemesi
 
@@ -53,7 +53,7 @@ Bir kayıt veya ilişkili kapatırsanız `CDatabase` sahip bir işlem devam eden
 
 ###  <a name="_core_how_scrolling_affects_updates"></a> Kaydırma güncelleştirmeleri nasıl etkiler
 
-Olduğunda, [kayıt kümesi: kaydırma (ODBC)](../../data/odbc/recordset-scrolling-odbc.md) bir kayıt kümesinde düzenleme arabelleği (önceki kaydı önce depolanmaz) her yeni geçerli kayıt ile doldurulur. Önceden silinen kayıtlar atlar kaydırma. Sonra kaydırırsanız bir `AddNew` veya `Edit` çağırmadan çağrı `Update`, `CommitTrans`, veya `Rollback` yeni bir kaydı düzenleme arabelleğe getirildikten gibi ilk olarak, tüm değişiklikler (ile herhangi bir uyarı yapılmadan) kaybedilir. Düzenleme arabelleği kaydırılan kayıt ile doldurulur, depolanmış kayıt serbest bırakılır ve veri kaynağında değişiklik gerçekleşir. Bu, her ikisi için de geçerlidir `AddNew` ve `Edit`.
+Olduğunda, [kayıt kümesi: Kaydırma (ODBC)](../../data/odbc/recordset-scrolling-odbc.md) bir kayıt kümesinde düzenleme arabelleği (önceki kaydı önce depolanmaz) her yeni geçerli kayıt ile doldurulur. Önceden silinen kayıtlar atlar kaydırma. Sonra kaydırırsanız bir `AddNew` veya `Edit` çağırmadan çağrı `Update`, `CommitTrans`, veya `Rollback` yeni bir kaydı düzenleme arabelleğe getirildikten gibi ilk olarak, tüm değişiklikler (ile herhangi bir uyarı yapılmadan) kaybedilir. Düzenleme arabelleği kaydırılan kayıt ile doldurulur, depolanmış kayıt serbest bırakılır ve veri kaynağında değişiklik gerçekleşir. Bu, her ikisi için de geçerlidir `AddNew` ve `Edit`.
 
 ##  <a name="_core_your_updates_and_the_updates_of_other_users"></a> Güncelleştirmeleri ve diğer kullanıcıların güncelleştirmeleri
 
@@ -102,10 +102,10 @@ Bu özel durumlar oluşturulduğunda, kalan `AddNew` veya `Edit` olduğunuz olar
 
 - Tablo güncelleştirmekte olduğunuz AFX_SQL_ERROR_MULTIPLE_ROWS_AFFECTED birincil anahtarı yok veya yeterli sayıda sütun benzersiz dizin ve tablo satırı benzersiz olarak tanımlanabilmesi için kayıt kümesinde yoktur.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Kayıt Kümesi (ODBC)](../../data/odbc/recordset-odbc.md)<br/>
-[Kayıt Kümesi: Kayıt Kümelerinin Kayıtları Seçme Biçimi (ODBC)](../../data/odbc/recordset-how-recordsets-select-records-odbc.md)<br/>
+[Kayıt kümesi: Kayıtları seçme biçimi (ODBC) nasıl kaydeder](../../data/odbc/recordset-how-recordsets-select-records-odbc.md)<br/>
 [Kayıt Alanı Değişimi (RFX)](../../data/odbc/record-field-exchange-rfx.md)<br/>
 [SQL](../../data/odbc/sql.md)<br/>
 [Özel durumlar: Veritabanı Özel Durumları](../../mfc/exceptions-database-exceptions.md)

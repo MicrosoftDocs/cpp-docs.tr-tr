@@ -52,16 +52,16 @@ helpviewer_keywords:
 - m_bCancelWhenExecuting
 - m_bIsExecuting
 ms.assetid: ef285fef-0d66-45e6-a762-b03357098e3b
-ms.openlocfilehash: c5e599b437f7660801a1eb40618eb49bee84a918
-ms.sourcegitcommit: c40469825b6101baac87d43e5f4aed6df6b078f5
+ms.openlocfilehash: d890b62e4e4aabb9f8ca7ebb9d3051c53febd91f
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/12/2018
-ms.locfileid: "51556822"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59026798"
 ---
 # <a name="icommandimpl-class"></a>ICommandImpl Sınıfı
 
-Uygulamasını sağlar [ICommand](https://docs.microsoft.com/previous-versions/windows/desktop/ms709737(v=vs.85)) arabirimi.
+Uygulamasını sağlar [ICommand](/previous-versions/windows/desktop/ms709737(v=vs.85)) arabirimi.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -88,10 +88,10 @@ Bir komut arabirimi. Varsayılan, `ICommand` değeridir.
 
 |||
 |-|-|
-|[İptal Etme](#cancel)|Geçerli komut yürütme iptal eder.|
+|[İptal](#cancel)|Geçerli komut yürütme iptal eder.|
 |[CancelExecution](#cancelexecution)|Geçerli komut yürütme iptal eder.|
 |[CreateRowset](#createrowset)|Bir satır kümesi nesnesi oluşturur.|
-|[Execute](#execute)|Komutu yürütür.|
+|[Yürütme](#execute)|Komutu yürütür.|
 |[GetDBSession](#getdbsession)|Komutu tarafından oluşturulan oturuma bir arabirim işaretçisini döndürür.|
 |[Icommandımpl](#icommandimpl)|Oluşturucu.|
 
@@ -119,7 +119,7 @@ STDMETHOD(Cancel)();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bkz: [ICommand::Cancel](https://docs.microsoft.com/previous-versions/windows/desktop/ms714402(v=vs.85)) içinde *OLE DB Programcının Başvurusu*.
+Bkz: [ICommand::Cancel](/previous-versions/windows/desktop/ms714402(v=vs.85)) içinde *OLE DB Programcının Başvurusu*.
 
 ## <a name="cancelexecution"></a> Icommandımpl::cancelexecution
 
@@ -178,7 +178,7 @@ Standart bir HRESULT değerini. Bkz: `ICommand::Execute` genel değerler listesi
 
 Birden fazla satır kümesi oluşturmak için ya da farklı satır kümeleri oluşturmak için kendi koşulları sağlamak için farklı çağrıları yerleştirin `CreateRowset` içinden `Execute`.
 
-Bkz: [ICommand::Execute](https://docs.microsoft.com/previous-versions/windows/desktop/ms718095(v=vs.85)) içinde *OLE DB Programcının Başvurusu.*
+Bkz: [ICommand::Execute](/previous-versions/windows/desktop/ms718095(v=vs.85)) içinde *OLE DB Programcının Başvurusu.*
 
 ## <a name="execute"></a> Icommandımpl::Execute
 
@@ -196,7 +196,7 @@ HRESULT Execute(IUnknown* pUnkOuter,
 
 #### <a name="parameters"></a>Parametreler
 
-Bkz: [ICommand::Execute](https://docs.microsoft.com/previous-versions/windows/desktop/ms718095(v=vs.85)) içinde *OLE DB Programcının Başvurusu*.
+Bkz: [ICommand::Execute](/previous-versions/windows/desktop/ms718095(v=vs.85)) içinde *OLE DB Programcının Başvurusu*.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -217,7 +217,7 @@ STDMETHOD (GetDBSession) (REFIID riid,
 
 #### <a name="parameters"></a>Parametreler
 
-Bkz: [ICommand::GetDBSession](https://docs.microsoft.com/previous-versions/windows/desktop/ms719622(v=vs.85)) içinde *OLE DB Programcının Başvurusu*.
+Bkz: [ICommand::GetDBSession](/previous-versions/windows/desktop/ms719622(v=vs.85)) içinde *OLE DB Programcının Başvurusu*.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -275,7 +275,7 @@ unsigned m_bIsExecuting:1;
 
 `Execute` Komutu sınıfınızın yöntemi bu değişkeni ayarlayabilirsiniz **true**.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[OLE DB sağlayıcı şablonları](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>
+[OLE DB Sağlayıcı Şablonları](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>
 [OLE DB Sağlayıcı Şablonu Mimarisi](../../data/oledb/ole-db-provider-template-architecture.md)

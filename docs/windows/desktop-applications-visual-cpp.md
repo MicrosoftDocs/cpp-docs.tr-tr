@@ -2,12 +2,12 @@
 title: Masaüstü uygulamaları (Visual C++)
 ms.date: 11/04/2016
 ms.assetid: a020b534-293c-44e2-aa48-516c43ddeb8f
-ms.openlocfilehash: 090180062139642d8a686e9f1bf063f3e65aee88
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.openlocfilehash: 1242878c6b79616aaadb6a176cd29deeb89a7daf
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58771925"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59033127"
 ---
 # <a name="desktop-applications-visual-c"></a>Masaüstü uygulamaları (Visual C++)
 
@@ -37,23 +37,23 @@ Bir masaüstü uygulaması C++, C çalışma zamanı (CRT) ve standart kitaplı�
 
 |Başlık|Açıklama|
 |-----------|-----------------|
-|[C++ içinde Windows Konsol Uygulamaları](console-applications-in-visual-cpp.md)|Konsol uygulamaları hakkında bilgi içerir. Bir Win32 (veya Win64) konsol uygulaması, kendi hiçbir penceresi ve ileti döngüsü vardır. Konsol penceresinde çalışır ve girdi ve çıktı komut satırı aracılığıyla işlenir.|
-|[İzlenecek yol: Windows Masaüstü Uygulaması Oluşturma (C++)](walkthrough-creating-windows-desktop-applications-cpp.md)|Basit bir Windows masaüstü uygulaması oluşturun.|
-|[Boş Windows Masaüstü Uygulaması Oluşturma](creating-an-empty-windows-desktop-application.md)|Varsayılan dosya olmadığı bir Windows Masaüstü projesi oluşturma|
+|[C++'ta Windows konsol uygulamaları](console-applications-in-visual-cpp.md)|Konsol uygulamaları hakkında bilgi içerir. Bir Win32 (veya Win64) konsol uygulaması, kendi hiçbir penceresi ve ileti döngüsü vardır. Konsol penceresinde çalışır ve girdi ve çıktı komut satırı aracılığıyla işlenir.|
+|[İzlenecek yol: Windows Masaüstü uygulamaları oluşturma (C++)](walkthrough-creating-windows-desktop-applications-cpp.md)|Basit bir Windows masaüstü uygulaması oluşturun.|
+|[Boş Windows masaüstü uygulaması oluşturma](creating-an-empty-windows-desktop-application.md)|Varsayılan dosya olmadığı bir Windows Masaüstü projesi oluşturma|
 |[Boş Win32 Uygulamalarına Dosya Ekleme](adding-files-to-an-empty-win32-applications.md)|Dosyaları için boş bir proje ekleme.|
 |[Kaynak Dosyalarıyla Çalışma](working-with-resource-files.md)|Görüntüler, simgeler, dize tabloları ve diğer kaynaklar için bir masaüstü uygulaması ekleme.|
-|[(C++) DirectX kullanarak oyun oluşturmak için kaynaklar](resources-for-creating-a-game-using-directx.md)|C++ ile oyun oluşturmak için içerik bağlar.|
+|[DirectX Kullanarak Oyun Oluşturmak için Kaynaklar (C++)](resources-for-creating-a-game-using-directx.md)|C++ ile oyun oluşturmak için içerik bağlar.|
 |[İzlenecek yol: Statik kitaplık oluşturma ve kullanma](walkthrough-creating-and-using-a-static-library-cpp.md)|Bir .lib ikili dosyasının nasıl oluşturulacağı.|
-|[Nasıl yapılır: Windows 10 SDK’yı bir Windows Masaüstü Uygulamasında Kullanma](how-to-use-the-windows-10-sdk-in-a-windows-desktop-application.md)|Windows 10 SDK'sını kullanarak oluşturmak projenizi ayarlamak için adımları içerir.|
+|[Nasıl yapılır: Windows 10 kullanan Windows Masaüstü uygulama SDK'sı](how-to-use-the-windows-10-sdk-in-a-windows-desktop-application.md)|Windows 10 SDK'sını kullanarak oluşturmak projenizi ayarlamak için adımları içerir.|
 
 ## <a name="related-articles"></a>İlgili Makaleler
 
 |Başlık|Açıklama|
 |-----------|-----------------|
-|[Windows Geliştirme](/windows/desktop/index)|Windows API'si ve COM hakkında bilgiler içerir (Bazı Windows API'leri ve üçüncü parti DLL'ler COM nesneleri olarak uygulanır.)|
+|[Windows geliştirme](/windows/desktop/index)|Windows API'si ve COM hakkında bilgiler içerir (Bazı Windows API'leri ve üçüncü parti DLL'ler COM nesneleri olarak uygulanır.)|
 |[Hilo: Windows 7 için C++ uygulamaları geliştirme](https://msdn.microsoft.com/library/windows/desktop/ff708696.aspx)|Atlıkarınca tarzı bir kullanıcı arabirimi oluşturmak için Windows animasyon ve Direct2D kullanan zengin istemci Windows Masaüstü uygulamasının nasıl oluşturulacağını açıklar.  Bu öğretici, Windows 7 beri güncelleştirilmemiş ancak yine de tam bir Win32 programlamaya giriş sağlar.|
-|[C++'ta Windows Programlamasına Genel Bakış](overview-of-windows-programming-in-cpp.md)|C++'ta Windows Masaüstü anahtar özelliklerini açıklar.|
+|[C++'da Windows Programlamasına Genel Bakış](overview-of-windows-programming-in-cpp.md)|C++'ta Windows Masaüstü anahtar özelliklerini açıklar.|
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Visual C++](../overview/visual-cpp-in-visual-studio.md)

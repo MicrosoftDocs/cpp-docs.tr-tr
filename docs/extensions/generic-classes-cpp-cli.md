@@ -9,12 +9,12 @@ helpviewer_keywords:
 - generic classes
 - generics [C++], declaring generic classes
 ms.assetid: 0beb99e1-1ec4-4fee-9836-ce9657d67a3a
-ms.openlocfilehash: 77c432542aac82fb4b66e5124e68f16afc52cc05
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.openlocfilehash: 71850807f6332f31195ef9bafbd9468f48cb6fb3
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58787738"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59041425"
 ---
 # <a name="generic-classes-ccli"></a>Genel Sınıflar (C++/CLI)
 
@@ -37,7 +37,7 @@ class-body
 
 Yukarıdaki söz diziminde aşağıdaki terimler kullanılır:
 
-*Öznitelikleri*<br/>
+*öznitelikler*<br/>
 (İsteğe bağlı) Ek bildirim temelli bilgiler. Öznitelikleri öznitelikleri ve öznitelik sınıfları hakkında daha fazla bilgi için bkz.
 
 *sınıf anahtarı*<br/>
@@ -59,7 +59,7 @@ Genel bir sınıf için erişilebilirlik değiştiricileri. Windows çalışma z
 *tanımlayıcı*<br/>
 Geçerli bir C++ tanımlayıcısı genel sınıfın adı.
 
-*Değiştiriciler*<br/>
+*değiştiriciler*<br/>
 (İsteğe bağlı) Değiştiriciler dahil izin **korumalı** ve **soyut**.
 
 *temel-liste*<br/>
@@ -68,7 +68,7 @@ Virgülle ayrılmış tüm arabirimleri ve herhangi bir temel sınıf içeren bi
 *sınıf-gövdesi*<br/>
 Alanlar, üye işlevleri, vb. içeren sınıfın gövdesi.
 
-*Bildirimciler*<br/>
+*bildirimciler*<br/>
 Bu türün tüm değişkenlerin bildirimleri. Örneğin: `^` *tanımlayıcı*[`,` ...]
 
 Genel sınıflar şunlar gibi bildirebilirsiniz (unutmayın anahtar sözcüğü **sınıfı** yerine kullanılabilir **typename**). Bu örnekte, `ItemType`, `KeyType` ve `ValueType` noktada belirtilen bilinmeyen türleri burada türü. `HashTable<int, int>` genel tür bir oluşturulmuş tür `HashTable<KeyType, ValueType>`. Tek bir genel türü bir dizi farklı oluşturulan türler oluşturulabilir. Oluşturulan türler genel sınıflardan oluşturulmuş gibi başka bir başvuru sınıfı türü kabul edilir.
@@ -710,6 +710,6 @@ The field is assigned the double value: 0.123
 The field is assigned the string: Hello Generics!
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Genel Türler](generics-cpp-component-extensions.md)

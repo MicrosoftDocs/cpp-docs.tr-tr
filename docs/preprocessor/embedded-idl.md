@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - embedded_idl attribute
 ms.assetid: f1c1c2e8-3872-4172-8795-8d1288a20452
-ms.openlocfilehash: 202d5b23a5e2e8e673e3c220b9618cfe6cd4f0d9
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c46924d2757d01a934c21a70f23e6556f6a10fd3
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50525612"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59034095"
 ---
 # <a name="embeddedidl"></a>embedded_idl
 
@@ -30,9 +30,9 @@ embedded_idl[("param")]
 *param*<br/>
 İki değerden biri olabilir:
 
-- **emitidl**: Tür Kitaplığı ' alınan tür bilgileri öznitelikli proje için üretilen IDL mevcut olacaktır.  Bu varsayılan ve geçerli bir parametre belirtmezseniz `embedded_idl`.
+- **emitidl**: Typelib'den içeri aktarılan tür bilgilerini öznitelikli proje için üretilen IDL de mevcut olacaktır.  Bu varsayılan ve geçerli bir parametre belirtmezseniz `embedded_idl`.
 
-- **no_emitidl**: Tür Kitaplığı ' alınan tür bilgileri öznitelikli proje için üretilen IDL mevcut olmayacaktır.
+- **no_emitidl**: Typelib'den içeri aktarılan tür bilgilerini öznitelikli proje için üretilen IDL içinde mevcut olmaz.
 
 ## <a name="example"></a>Örnek
 
@@ -48,7 +48,7 @@ embedded_idl[("param")]
 
 **END C++ özgü**
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[#import öznitelikleri](../preprocessor/hash-import-attributes-cpp.md)<br/>
-[#import yönergesi](../preprocessor/hash-import-directive-cpp.md)
+[#import Öznitelikleri](../preprocessor/hash-import-attributes-cpp.md)<br/>
+[#import Yönergesi](../preprocessor/hash-import-directive-cpp.md)

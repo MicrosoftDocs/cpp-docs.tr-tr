@@ -4,12 +4,12 @@ ms.date: 10/12/2018
 helpviewer_keywords:
 - OLE DB consumers, creating
 ms.assetid: e8241cfe-5faf-48f8-9de3-241203de020b
-ms.openlocfilehash: a4b95674c2c9c6f0a5dae29e68cff44c759e0fa9
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 029fe6866df81d366cc3bc15096f638791faa413
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50578613"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59030426"
 ---
 # <a name="creating-a-consumer-without-using-a-wizard"></a>Sihirbaz Kullanmadan bir Tüketici Oluşturma
 
@@ -76,6 +76,6 @@ Program aracılığıyla, bir tüketici genellikle sırasıyla aşağıdaki işl
     CoUninitialize();
     ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [OLE DB Tüketicisi Oluşturma](../../data/oledb/creating-an-ole-db-consumer.md)

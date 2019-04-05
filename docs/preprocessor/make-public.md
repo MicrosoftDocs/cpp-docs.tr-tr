@@ -8,12 +8,12 @@ helpviewer_keywords:
 - pragmas, make_public
 - make_public pragma
 ms.assetid: c3665f4d-268a-4932-9661-c37c8ae6a341
-ms.openlocfilehash: cfc8d13ead28c0b817d7de015b9c507db152de6a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d569758f90b9e55f65ad13517f86dea41d151ca8
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50508972"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59039130"
 ---
 # <a name="makepublic"></a>make_public
 Yerel bir tür genel derleme erişilebilirliği olmayacağını gösterir.
@@ -61,6 +61,6 @@ public ref struct A {
 };
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Pragma Yönergeleri ve __Pragma Anahtar Sözcüğü](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

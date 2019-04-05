@@ -20,16 +20,16 @@ helpviewer_keywords:
 - InterlockedExchangePointer_acq intrinsic
 - InterlockedExchangePointer intrinsic
 ms.assetid: 0eaca0b0-d79e-406b-892d-b3b462c50bbb
-ms.openlocfilehash: 021c754436d6abe877e6b7dd372ba235869d8975
-ms.sourcegitcommit: ff3cbe4235b6c316edcc7677f79f70c3e784ad76
+ms.openlocfilehash: 1f6e66ae4d5524518c3388f5af843cc15f65da50
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/19/2018
-ms.locfileid: "53627499"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59024536"
 ---
 # <a name="interlockedexchangepointer-intrinsic-functions"></a>_Interlockedexchangepointer iç işlevleri
 
-**Microsoft'a özgü**
+**Microsoft'a Özgü**
 
 İkinci bağımsız değişken olarak geçirilen ilk adresi kopyalar ve ilk özgün adresini döndüren bir atomik değiştirme işlemi gerçekleştirin.
 
@@ -94,9 +94,9 @@ Donanım kilit eleme (HLE) yönergeleri yapı içleri ile destekleyen Intel plat
 
 Bu yordamlar, yalnızca iç öğe olarak kullanılabilir.
 
-**END Microsoft özgü**
+**END Microsoft'a Özgü**
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)<br/>
 [x86 Derleyicisi ile Çakışma](../build/x64-software-conventions.md#conflicts-with-the-x86-compiler)

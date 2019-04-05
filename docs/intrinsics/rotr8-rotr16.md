@@ -8,16 +8,16 @@ helpviewer_keywords:
 - _rotr8 intrinsic
 - _rotr16 intrinsic
 ms.assetid: dfbd2c82-82b4-427a-ad52-51609027ebff
-ms.openlocfilehash: 218fb14c118cb9208cdfc29176897543f680b593
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.openlocfilehash: 27c3a9d914d04ecdffb7fa74dc3c8f79a442445c
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51329728"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59028749"
 ---
 # <a name="rotr8-rotr16"></a>_rotr8, _rotr16
 
-**Microsoft'a özgü**
+**Microsoft'a Özgü**
 
 Giriş değerleri tarafından belirtilen bit konumları sayısı en az önemli bite (LSB'si) Sağa Döndür.
 
@@ -39,7 +39,7 @@ unsigned short _rotr16(
 *value*<br/>
 [in] Döndürülecek değer.
 
-*Kaydırma*<br/>
+*kaydırma*<br/>
 [in] Döndürmek için bit sayısı.
 
 ## <a name="return-value"></a>Dönüş Değeri
@@ -99,9 +99,9 @@ Rotating 0x41 right by 7 bits gives 0x82
 Rotating unsigned short 0x12 right by 10 bits gives 0x480
 ```
 
-**END Microsoft özgü**
+**END Microsoft'a Özgü**
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [_rotl8, _rotl16](../intrinsics/rotl8-rotl16.md)<br/>
 [Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)

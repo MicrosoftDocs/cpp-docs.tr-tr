@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - no_registry attribute
 ms.assetid: d30de4e2-551c-428c-98fd-951330d578d3
-ms.openlocfilehash: bd101f5ca1776518ff4c5092da99134110bbb0b0
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 2a0fd9a761f765aa9562ab18c095f683b80c7987
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50503031"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59023431"
 ---
 # <a name="noregistry"></a>no_registry
 
@@ -25,7 +25,7 @@ ms.locfileid: "50503031"
 
 ### <a name="parameters"></a>Parametreler
 
-*Dosya adı*<br/>
+*filename*<br/>
 Bir tür kitaplığı.
 
 ## <a name="remarks"></a>Açıklamalar
@@ -38,7 +38,7 @@ Zaman `auto_search` belirtilirse, ek `#import`s ile oluşturulacak **no_registry
 
 **no_registry** çapraz başvurulan tür kitaplıkları dosyanın daha eski bir sürümünü kayıt defterinde bulma derleyici riski olmadan içeri aktarmak istediğiniz durumlarda kullanışlıdır. **no_registry** tür kitaplığı kayıtlı değil de kullanışlıdır.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[#import öznitelikleri](../preprocessor/hash-import-attributes-cpp.md)<br/>
-[#import yönergesi](../preprocessor/hash-import-directive-cpp.md)
+[#import Öznitelikleri](../preprocessor/hash-import-attributes-cpp.md)<br/>
+[#import Yönergesi](../preprocessor/hash-import-directive-cpp.md)

@@ -10,12 +10,12 @@ helpviewer_keywords:
 - '#define directive, syntax'
 - '#define directive'
 ms.assetid: 33cf25c6-b24e-40bf-ab30-9008f0391710
-ms.openlocfilehash: dec555de64a3ebd166bdff5558957f09e1c2755e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 8a0cc7e7836a0c82c72055fe8d9e7497995485d0
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50653758"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59039518"
 ---
 # <a name="define-directive-cc"></a>#define Yönergesi (C/C++)
 
@@ -62,7 +62,7 @@ Tanımlanmakta olan makro adı içinde oluşursa *belirteç dizesinde* (hatta ba
 
 İkinci **#define** ikinci belirteç sırası birinciyle aynı olmadığı sürece bir makro aynı ada sahip bir uyarı oluşturur.
 
-**Microsoft'a özgü**
+**Microsoft'a Özgü**
 
 Microsoft C/C++ yeni tanım sözdizimi kurallarına göre orijinal tanımla özdeş bir makroyu yeniden tanımlamanıza olanak sağlar. Diğer bir deyişle, iki tanımın farklı parametre adları olabilir. Bu davranış, iki tanımın sözcüksel olarak aynı olmasını gerektiren ANSI C farklıdır.
 
@@ -80,7 +80,7 @@ Microsoft C/C++ yeni tanım sözdizimi kurallarına göre orijinal tanımla özd
 #define multiply( a1, a2 ) ( b1 * b2 )
 ```
 
-**END Microsoft özgü**
+**END Microsoft'a Özgü**
 
 Bu örnekte **#define** yönergesi:
 
@@ -109,12 +109,12 @@ var = 80 + 10 * 20;
 
 hangi 280 için değerlendirir.
 
-**Microsoft'a özgü**
+**Microsoft'a Özgü**
 
 Makrolar ve sabitler ile tanımlama [/D](../build/reference/d-preprocessor-definitions.md) derleyici seçeneğini kullanmakla aynı etkiye sahip bir **#define** dosyanızın başında ön işleme yönergesi. /D seçeneğiyle en fazla 30 makro tanımlanabilir.
 
-**END Microsoft özgü**
+**END Microsoft'a Özgü**
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Ön işlemci Yönergeleri](../preprocessor/preprocessor-directives.md)

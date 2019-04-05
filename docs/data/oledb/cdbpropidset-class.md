@@ -33,12 +33,12 @@ helpviewer_keywords:
 - operator=, property sets
 - SetGUID method
 ms.assetid: 52bb806c-9581-494d-9af7-50d8a4834805
-ms.openlocfilehash: fdda18243366de059b26fd566b5eecb308cbed14
-ms.sourcegitcommit: c40469825b6101baac87d43e5f4aed6df6b078f5
+ms.openlocfilehash: 9e878af3acf4c4d3a6ca785454c4bb072f17cf09
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/12/2018
-ms.locfileid: "51556653"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59022417"
 ---
 # <a name="cdbpropidset-class"></a>CDBPropIDSet Sınıfı
 
@@ -60,8 +60,8 @@ class CDBPropIDSet : public tagDBPROPIDSET
 
 |||
 |-|-|
-|[AddPropertyID](#addpropertyid)|Bir özellik için özellik kimliği kümesi ekler.|
-|[CDBPropIDSet](#cdbpropidset)|Oluşturucu.|
+|[Addpropertyıd](#addpropertyid)|Bir özellik için özellik kimliği kümesi ekler.|
+|[Cdbpropıdset](#cdbpropidset)|Oluşturucu.|
 |[Setguıd](#setguid)|Ayarlar özellik kimliği GUID'si.|
 
 ### <a name="operators"></a>İşleçler
@@ -72,7 +72,7 @@ class CDBPropIDSet : public tagDBPROPIDSET
 
 ## <a name="remarks"></a>Açıklamalar
 
-OLE DB tüketicileri kullanım `DBPROPIDSET` yapıları için tüketici istediği özellik bilgilerini almak özellik kimlikleri dizisi geçirilecek. Tek bir tanımlanmış özellikler [DBPROPIDSET](https://docs.microsoft.com/previous-versions/windows/desktop/ms717981(v=vs.85)) yapısı bir özellik kümesine ait.
+OLE DB tüketicileri kullanım `DBPROPIDSET` yapıları için tüketici istediği özellik bilgilerini almak özellik kimlikleri dizisi geçirilecek. Tek bir tanımlanmış özellikler [DBPROPIDSET](/previous-versions/windows/desktop/ms717981(v=vs.85)) yapısı bir özellik kümesine ait.
 
 ## <a name="addpropertyid"></a> Cdbpropıdset::addpropertyıd
 
@@ -91,7 +91,7 @@ bool AddPropertyID(DBPROPID propid) throw();
 
 ## <a name="cdbpropidset"></a> Cdbpropıdset::cdbpropıdset
 
-Oluşturucu. Başlatır `rgProperties`, `cProperties`ve (isteğe bağlı olarak) `guidPropertySet` alanlarının [DBPROPIDSET](https://docs.microsoft.com/previous-versions/windows/desktop/ms717981(v=vs.85)) yapısı.
+Oluşturucu. Başlatır `rgProperties`, `cProperties`ve (isteğe bağlı olarak) `guidPropertySet` alanlarının [DBPROPIDSET](/previous-versions/windows/desktop/ms717981(v=vs.85)) yapısı.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -124,7 +124,7 @@ void SetGUID(const GUID& guid) throw();
 #### <a name="parameters"></a>Parametreler
 
 *GUID*<br/>
-[in] Ayarlamak için kullanılan bir GUID `guidPropertySet` alanını [DBPROPIDSET](https://docs.microsoft.com/previous-versions/windows/desktop/ms717981(v=vs.85)) yapısı.
+[in] Ayarlamak için kullanılan bir GUID `guidPropertySet` alanını [DBPROPIDSET](/previous-versions/windows/desktop/ms717981(v=vs.85)) yapısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -140,7 +140,7 @@ Bir özellik kimliği başka bir kimlik özelliği için set içeriğini atar.
 CDBPropIDSet& operator =(CDBPropIDSet& propset) throw();
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [OLE DB Tüketici Şablonları](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
 [OLE DB Tüketici Şablonları Başvurusu](../../data/oledb/ole-db-consumer-templates-reference.md)

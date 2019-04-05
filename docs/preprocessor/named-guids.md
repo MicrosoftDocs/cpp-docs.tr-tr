@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - named_guids attribute
 ms.assetid: b905e5e5-07fe-4874-8993-e05b9d639045
-ms.openlocfilehash: 93b8dd33b7c9b3ce7e9de80497dda3162507e366
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 4304e9533467bd33cf61a88ac918fe6d16285d6e
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50643540"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59024432"
 ---
 # <a name="namedguids"></a>named_guids
 **C++ özgü**
@@ -28,7 +28,7 @@ named_guids
 
 **END C++ özgü**
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[#import öznitelikleri](../preprocessor/hash-import-attributes-cpp.md)<br/>
-[#import yönergesi](../preprocessor/hash-import-directive-cpp.md)
+[#import Öznitelikleri](../preprocessor/hash-import-attributes-cpp.md)<br/>
+[#import Yönergesi](../preprocessor/hash-import-directive-cpp.md)

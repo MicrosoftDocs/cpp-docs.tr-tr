@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - targets, specifying in NMAKE
 ms.assetid: 826ee849-4278-4c6e-97c3-79a2b5fe6463
-ms.openlocfilehash: 4bb80b01993ee3f3715f551c73337cf24cd43f2c
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.openlocfilehash: 52b2f3293b97955b605e2821102247f506c2950b
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57823552"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59040854"
 ---
 # <a name="targets"></a>Hedefler
 
@@ -27,6 +27,6 @@ Bir bağımlılık satırında herhangi bir geçerli dosya adı, dizin adı'nı 
 
 [Bağımlılık yan etkileri](dependency-side-effects.md)
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Açıklama Blokları](description-blocks.md)

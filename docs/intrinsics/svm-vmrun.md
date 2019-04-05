@@ -7,16 +7,16 @@ helpviewer_keywords:
 - __svm_vmrun intrinsic
 - VMRUN instruction
 ms.assetid: ae98a781-fc17-47b2-b40f-86fcebf1867b
-ms.openlocfilehash: ffedf366453a800ce420914376b8d9bb441a602a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 40e53b2ebd54fc109b47f3067e5f89ce50b327de
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50603569"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59041065"
 ---
 # <a name="svmvmrun"></a>__svm_vmrun
 
-**Microsoft'a özgü**
+**Microsoft'a Özgü**
 
 Belirtilen sanal makine denetim bloğu (VMCB) karşılık gelen sanal makine Konuk kod yürütmeyi başlatır.
 
@@ -38,7 +38,7 @@ void __svm_vmrun(
 
 `__svm_vmrun` İşlevi sanal makine Konuk kodu yürütmeye başlamak için VMCB içinde en az miktarda bilgi kullanır. Kullanım [__svm_vmsave](../intrinsics/svm-vmsave.md) veya [__svm_vmload](../intrinsics/svm-vmload.md) karmaşık kesmeyi işlemek için veya başka bir konuk geçiş yapmak için daha fazla bilgi gerekiyorsa işlev.
 
-`__svm_vmrun` İşlev, eşdeğer `VMRUN` makine yönergesi. Bu işlev, bir konuk işletim sistemi ve uygulamaları ile bir konağın sanal makine İzleyici etkileşimi destekler. Belge için daha fazla bilgi için arama "AMD64 mimarisi Programcı el ile birim 2: Sistem programlama" belge numarasını 24593, düzeltme 3.11 ya da en üstü [AMD corporation](https://developer.amd.com/resources/developer-guides-manuals/) site.
+`__svm_vmrun` İşlev, eşdeğer `VMRUN` makine yönergesi. Bu işlev, bir konuk işletim sistemi ve uygulamaları ile bir konağın sanal makine İzleyici etkileşimi destekler. Belge için daha fazla bilgi için arama "AMD64 mimarisi Programcı el ile birim 2: Belge numarasını 24593, düzeltme 3.11 ya da daha sonra sistem programlama," [AMD corporation](https://developer.amd.com/resources/developer-guides-manuals/) site.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -48,9 +48,9 @@ void __svm_vmrun(
 
 **Üst bilgi dosyası** \<intrin.h >
 
-**END Microsoft özgü**
+**END Microsoft'a Özgü**
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)<br/>
 [__svm_vmsave](../intrinsics/svm-vmsave.md)<br/>

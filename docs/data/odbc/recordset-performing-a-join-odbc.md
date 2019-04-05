@@ -1,5 +1,5 @@
 ---
-title: 'Kayıt Kümesi: Birleşim Gerçekleştirme (ODBC)'
+title: 'Kayıt kümesi: Birleşim gerçekleştirme (ODBC)'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - joins [C++], in recordsets
@@ -10,14 +10,14 @@ helpviewer_keywords:
 - ODBC recordsets [C++], joins
 - recordsets [C++], joining tables
 ms.assetid: ca720900-a156-4780-bf01-4293633bea64
-ms.openlocfilehash: 135992e7eebd56c985c24228370695f10ac6da3a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 9e589f00ec0512794d14accc6bb33c0e7adbd378
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50523945"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59035419"
 ---
-# <a name="recordset-performing-a-join-odbc"></a>Kayıt Kümesi: Birleşim Gerçekleştirme (ODBC)
+# <a name="recordset-performing-a-join-odbc"></a>Kayıt kümesi: Birleşim gerçekleştirme (ODBC)
 
 Bu konu MFC ODBC sınıflarına uygulanır.
 
@@ -35,9 +35,9 @@ Birleştirilmiş bir tablodan sütun içeren kayıtları seçmek için aşağıd
 
 İkiden fazla tabloları eşitleyerek birden çok çiftlerini sütunları, SQL anahtar sözcüğüyle birleştirilmiş her bir çifti tarafından aynı şekilde birleştirebilirsiniz **ve**.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Kayıt Kümesi (ODBC)](../../data/odbc/recordset-odbc.md)<br/>
-[Kayıt Kümesi: Önceden Tanımlanmış Sorgu için Bir Sınıf Bildirme (ODBC)](../../data/odbc/recordset-declaring-a-class-for-a-predefined-query-odbc.md)<br/>
-[Kayıt Kümesi: Tablo için Sınıf Bildirme (ODBC)](../../data/odbc/recordset-declaring-a-class-for-a-table-odbc.md)<br/>
-[Kayıt kümesi: Bir Kayıt Kümesinde Yeniden Sorgulama (ODBC)](../../data/odbc/recordset-requerying-a-recordset-odbc.md)
+[Kayıt kümesi: Bir sınıf bildirme (ODBC) önceden tanımlanmış sorgu için](../../data/odbc/recordset-declaring-a-class-for-a-predefined-query-odbc.md)<br/>
+[Kayıt kümesi: Bir sınıf bildirme (ODBC) için bir tablo](../../data/odbc/recordset-declaring-a-class-for-a-table-odbc.md)<br/>
+[Kayıt kümesi: (ODBC) bir kayıt kümesinde yeniden sorgulama](../../data/odbc/recordset-requerying-a-recordset-odbc.md)

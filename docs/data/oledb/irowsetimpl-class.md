@@ -91,12 +91,12 @@ helpviewer_keywords:
 - m_iRowset
 - m_rgRowHandles
 ms.assetid: 6a9189af-7556-45b1-adcb-9d62bb36704c
-ms.openlocfilehash: a1826155bec3313afe503ee1c58f786a5c4739e8
-ms.sourcegitcommit: c40469825b6101baac87d43e5f4aed6df6b078f5
+ms.openlocfilehash: 47b03a542933c6223e098bc9d8fa8d45bf5e047b
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/12/2018
-ms.locfileid: "51556991"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59024458"
 ---
 # <a name="irowsetimpl-class"></a>IRowsetImpl Sınıfı
 
@@ -162,7 +162,7 @@ Sağlayıcı tarafından tutulan tüm olan satır işleyicilerini depolama birim
 
 ## <a name="remarks"></a>Açıklamalar
 
-[IRowset](https://docs.microsoft.com/previous-versions/windows/desktop/ms720986(v=vs.85)) temel satır kümesi arabirimidir.
+[IRowset](/previous-versions/windows/desktop/ms720986(v=vs.85)) temel satır kümesi arabirimidir.
 
 ## <a name="addrefrows"></a> Irowsetımpl::addrefrows
 
@@ -179,7 +179,7 @@ STDMETHOD(AddRefRows )(DBCOUNTITEM cRows,
 
 #### <a name="parameters"></a>Parametreler
 
-Bkz: [IRowset::AddRefRows](https://docs.microsoft.com/previous-versions/windows/desktop/ms719619(v=vs.85)) içinde *OLE DB Programcının Başvurusu*.
+Bkz: [IRowset::AddRefRows](/previous-versions/windows/desktop/ms719619(v=vs.85)) içinde *OLE DB Programcının Başvurusu*.
 
 ## <a name="createrow"></a> Irowsetımpl::createrow
 
@@ -222,7 +222,7 @@ STDMETHOD(GetData )(HROW hRow,
 
 #### <a name="parameters"></a>Parametreler
 
-Bkz: ['yı](https://docs.microsoft.com/previous-versions/windows/desktop/ms716988(v=vs.85)) içinde *OLE DB Programcının Başvurusu*.
+Bkz: ['yı](/previous-versions/windows/desktop/ms716988(v=vs.85)) içinde *OLE DB Programcının Başvurusu*.
 
 Bazı parametreler karşılık *OLE DB Programcının Başvurusu* açıklanan farklı adlar parametrelerinin `IRowset::GetData`:
 
@@ -255,7 +255,7 @@ virtual DBSTATUS GetDBStatus(RowClass* currentRow,
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-[DBSTATUS](https://docs.microsoft.com/previous-versions/windows/desktop/ms722617(v=vs.85)) sütunun bayrakları.
+[DBSTATUS](/previous-versions/windows/desktop/ms722617(v=vs.85)) sütunun bayrakları.
 
 ## <a name="getnextrows"></a> Irowsetımpl::GetNextRows
 
@@ -273,7 +273,7 @@ STDMETHOD(GetNextRows )(HCHAPTER hReserved,
 
 #### <a name="parameters"></a>Parametreler
 
-Bkz: [IRowset::GetNextRows](https://docs.microsoft.com/previous-versions/windows/desktop/ms709827(v=vs.85)) içinde *OLE DB Programcının Başvurusu*.
+Bkz: [IRowset::GetNextRows](/previous-versions/windows/desktop/ms709827(v=vs.85)) içinde *OLE DB Programcının Başvurusu*.
 
 ## <a name="irowsetimpl"></a> Irowsetımpl::ırowsetımpl
 
@@ -305,7 +305,7 @@ HRESULT RefRows(DBCOUNTITEM cRows,
 
 #### <a name="parameters"></a>Parametreler
 
-Bkz: [IRowset::AddRefRows](https://docs.microsoft.com/previous-versions/windows/desktop/ms719619(v=vs.85)) içinde *OLE DB Programcının Başvurusu*.
+Bkz: [IRowset::AddRefRows](/previous-versions/windows/desktop/ms719619(v=vs.85)) içinde *OLE DB Programcının Başvurusu*.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -327,7 +327,7 @@ STDMETHOD(ReleaseRows )(DBCOUNTITEM cRows,
 
 #### <a name="parameters"></a>Parametreler
 
-Bkz: [IRowset::ReleaseRows](https://docs.microsoft.com/previous-versions/windows/desktop/ms719771(v=vs.85)) içinde *OLE DB Programcının Başvurusu*.
+Bkz: [IRowset::ReleaseRows](/previous-versions/windows/desktop/ms719771(v=vs.85)) içinde *OLE DB Programcının Başvurusu*.
 
 ## <a name="restartposition"></a> Irowsetımpl::restartposition
 
@@ -341,7 +341,7 @@ STDMETHOD(RestartPosition )(HCHAPTER /* hReserved */);
 
 #### <a name="parameters"></a>Parametreler
 
-Bkz: [IRowset::RestartPosition](https://docs.microsoft.com/previous-versions/windows/desktop/ms712877(v=vs.85)) içinde *OLE DB Programcının Başvurusu*.
+Bkz: [IRowset::RestartPosition](/previous-versions/windows/desktop/ms712877(v=vs.85)) içinde *OLE DB Programcının Başvurusu*.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -362,7 +362,7 @@ virtual HRESULT SetDBStatus(DBSTATUS* statusFlags,
 #### <a name="parameters"></a>Parametreler
 
 *statusFlags*<br/>
-[DBSTATUS](https://docs.microsoft.com/previous-versions/windows/desktop/ms722617(v=vs.85)) bayraklar için sütunu ayarlayın.
+[DBSTATUS](/previous-versions/windows/desktop/ms722617(v=vs.85)) bayraklar için sütunu ayarlayın.
 
 *currentRow*<br/>
 Geçerli satır.
@@ -444,8 +444,8 @@ MapClass m_rgRowHandles;
 
 Satır işleyicilerini çağırarak kaldırılır `ReleaseRows`. Bkz: [Irowsetımpl genel bakış](../../data/oledb/irowsetimpl-class.md) tanımını *MapClass*.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[OLE DB sağlayıcı şablonları](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>
+[OLE DB Sağlayıcı Şablonları](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>
 [OLE DB Sağlayıcı Şablonu Mimarisi](../../data/oledb/ole-db-provider-template-architecture.md)<br/>
 [CSimpleRow Sınıfı](../../data/oledb/csimplerow-class.md)

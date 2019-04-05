@@ -21,12 +21,12 @@ helpviewer_keywords:
 - elif directive (#elif)
 - defined directive
 ms.assetid: c77a175f-6ca8-47d4-8df9-7bac5943d01b
-ms.openlocfilehash: 76b8be265145896105490a82946c50bc576e6f9f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 90fbab45c6408c30198c2a52a42545718002cc11
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50520430"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59028097"
 ---
 # <a name="if-elif-else-and-endif-directives-cc"></a>#if, #elif, #else ve #endif Yönergeleri (C/C++)
 
@@ -50,7 +50,7 @@ ms.locfileid: "50520430"
 &nbsp;&nbsp;&nbsp;&nbsp;*elif-parts elif-line metni*
 
 *elif-satırı* :<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**#elif***sabit-ifade*
+&nbsp;&nbsp;&nbsp;&nbsp;**#elif**  *constant-expression*
 
 *else bölümünü* :<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*else-line metni*
@@ -65,7 +65,7 @@ Her **#if** yönergesi kaynak dosyada bir kapanış eşleştirilmelidir **#endif
 
 **#İf**, **#elif**, **#else**, ve **#endif** yönergelerinin metin bölümlerinde diğer iç içe **#if**yönergeleri. Her iç içe **#else**, **#elif**, veya **#endif** yönergesi ait olduğu en yakın önceki **#if** yönergesi.
 
-Tüm koşullu derleme yönergeleri gibi **#if** ve **#ifdef**, kapanış ile eşleştirilmesi gerekir **#endif** yönergeleri önce dosya sonu; Aksi takdirde bir hata ileti oluşturulur. Koşullu derleme yönergeleri dahil etme dosyalarında olduğu zaman aynı koşulları karşılaması gerekir: hiçbir eşleşmeyen koşullu derleme yönergeleri dahil etme dosyasının sonunda olması gerekir.
+Tüm koşullu derleme yönergeleri gibi **#if** ve **#ifdef**, kapanış ile eşleştirilmesi gerekir **#endif** yönergeleri önce dosya sonu; Aksi takdirde bir hata ileti oluşturulur. Koşullu derleme yönergeleri içerdiği dosyaları içerir, aynı koşulları karşılaması gerekir: Hiçbir eşleşmeyen koşullu derleme yönergeleri dahil etme dosyasının sonunda olması gerekir.
 
 Makro değiştirme, izleyen komut satırı bölümünde gerçekleştirilir bir **#elif** makro çağrısı kullanılabilir böylece komut *sabit-ifade*.
 
@@ -97,7 +97,7 @@ Tüm oluşumlarını *sabit-ifade* yanlış olan veya hiçbir **#elif** yönerge
 
 tanımlanan ( `identifier` )
 
-Tanımlanan `identifier`
+tanımlanmış `identifier`
 
 Bu sabit ifade true (sıfırdan farklı) ise değerlendirilir *tanımlayıcı* şu anda tanımlanır; Aksi halde koşul false (0). Boş metin olarak kabul edilir olarak tanımlanan bir tanımlayıcı, tanımlanmış. **Tanımlanan** yönergesi olarak kullanılabilir bir **#if** ve **#elif** yönergesi, ancak başka bir yerde kullanılamaz.
 
@@ -174,7 +174,7 @@ Yukarıdaki kod olup olmadığını denetler. sembolik sabitin `EXAMPLE_H` tanı
 
 ## <a name="hasinclude"></a>__has_include
 
-**Visual Studio 2017 sürüm 15.3 ve üzeri**: kitaplığı üstbilgi ekleme için kullanılabilir olup olmadığını belirler:
+**Visual Studio 2017 sürüm 15.3 ve üzeri**:  Bir kitaplığı üstbilgi ekleme için kullanılabilir olup olmadığını belirler:
 
 ```cpp
 #ifdef __has_include
@@ -191,6 +191,6 @@ Yukarıdaki kod olup olmadığını denetler. sembolik sabitin `EXAMPLE_H` tanı
 #endif
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Ön işlemci Yönergeleri](../preprocessor/preprocessor-directives.md)

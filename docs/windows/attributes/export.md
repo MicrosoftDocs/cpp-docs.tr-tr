@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - export attribute
 ms.assetid: 70b3e848-fad6-4e09-8c72-be60ca72a4df
-ms.openlocfilehash: 951c0ef2f0da0fa897c299aa6b547d5c0788b285
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 5ffa4283b8a2b265809d06b72be96e217cf8bf9f
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50661597"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59023613"
 ---
 # <a name="export"></a>dışarı aktar
 
@@ -54,14 +54,14 @@ struct MyStruct {
 
 |||
 |-|-|
-|**İçin geçerlidir**|**birleşim**, **typedef**, **enum**, **yapı**, veya **arabirimi**|
+|**Uygulandığı öğe:**|**birleşim**, **typedef**, **enum**, **yapı**, veya **arabirimi**|
 |**Tekrarlanabilir**|Hayır|
 |**Gerekli öznitelikleri**|Yok.|
-|**Geçersiz öznitelikler**|Yok.|
+|**Geçersiz öznitelikler**|None|
 
 Daha fazla bilgi için [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Derleyici Öznitelikleri](compiler-attributes.md)<br/>
 [Typedef, Enum, Union ve Struct Öznitelikleri](typedef-enum-union-and-struct-attributes.md)

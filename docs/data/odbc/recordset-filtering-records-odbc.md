@@ -1,5 +1,5 @@
 ---
-title: 'Kayıt Kümesi: Kayıtları Filtreleme (ODBC)'
+title: 'Kayıt kümesi: Kayıtları filtreleme (ODBC)'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - data [MFC], filtering
@@ -8,14 +8,14 @@ helpviewer_keywords:
 - ODBC recordsets [C++], filtering records
 - filters [C++], recordset object
 ms.assetid: 5c075f37-c837-464d-90c1-d028a9d1c175
-ms.openlocfilehash: 47ac2b83df4da5fcfe0cbe5e9546571a50ecdfac
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 050524df840be28d661da89d04b685a44238f88c
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50514757"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59041221"
 ---
-# <a name="recordset-filtering-records-odbc"></a>Kayıt Kümesi: Kayıtları Filtreleme (ODBC)
+# <a name="recordset-filtering-records-odbc"></a>Kayıt kümesi: Kayıtları filtreleme (ODBC)
 
 Bu konu MFC ODBC sınıflarına uygulanır.
 
@@ -44,7 +44,7 @@ Kayıt kümesi nesnesinin filtre nesneyi oluşturduktan sonra ancak çağırmada
     > [!NOTE]
     >  "MATH101" sabit dizesini tek tırnak işaretleri ile yukarıdaki gösterilir. ODBC SQL belirtiminde tek tırnak, değişmez bir karakter dizesini belirtmek için kullanılır. Bu durumda teklif gereksinimleri için ODBC sürücü belgelerinize bakın. Bu söz dizimi de ele daha, bu konunun sonuna yakın.
 
-1. Sıralama düzeni, kilitleme modu veya parametreleri gibi gereken diğer seçeneklerini ayarlayın. Parametre belirtmekle özellikle yararlıdır. Filtreniz kümesini parametreleştirme hakkında daha fazla bilgi için bkz: [kayıt kümesi: bir kayıt kümesi (ODBC) kümesini parametreleştirme](../../data/odbc/recordset-parameterizing-a-recordset-odbc.md).
+1. Sıralama düzeni, kilitleme modu veya parametreleri gibi gereken diğer seçeneklerini ayarlayın. Parametre belirtmekle özellikle yararlıdır. Filtreniz kümesini parametreleştirme hakkında daha fazla bilgi için bkz: [kayıt kümesi: (ODBC) bir kayıt kümesini parametreleştirme](../../data/odbc/recordset-parameterizing-a-recordset-odbc.md).
 
 1. Çağrı `Open` yeni nesne için (veya `Requery` önceden açılmış bir nesne için).
 
@@ -82,15 +82,15 @@ Tek tırnak işareti karakter kullanımına dikkat edin. filtre dizesi doğrudan
 m_strFilter = "StudentID = 100";   // incorrect for some drivers
 ```
 
-ODBC belirtimine uygun yukarıda gösterilen Alıntısı, ancak bazı DBMS diğer tırnak karakterleri gerektirebilir. Daha fazla bilgi için [SQL: özelleştirme Kümenizin SQL deyimini (ODBC)](../../data/odbc/sql-customizing-your-recordsets-sql-statement-odbc.md).
+ODBC belirtimine uygun yukarıda gösterilen Alıntısı, ancak bazı DBMS diğer tırnak karakterleri gerektirebilir. Daha fazla bilgi için [SQL: Kayıt Kümenizin SQL deyimini özelleştirme (ODBC)](../../data/odbc/sql-customizing-your-recordsets-sql-statement-odbc.md).
 
 > [!NOTE]
->  Kendi SQL dizesi geçirerek kümesinin varsayılan SQL dizesi geçersiz kılmak isterseniz `Open`, özel dizenizi varsa bir filtre ayarlanmamalıdır bir **burada** yan tümcesi. Varsayılan SQL geçersiz kılma hakkında daha fazla bilgi için bkz. [SQL: özelleştirme Kümenizin SQL deyimini (ODBC)](../../data/odbc/sql-customizing-your-recordsets-sql-statement-odbc.md).
+>  Kendi SQL dizesi geçirerek kümesinin varsayılan SQL dizesi geçersiz kılmak isterseniz `Open`, özel dizenizi varsa bir filtre ayarlanmamalıdır bir **burada** yan tümcesi. Varsayılan SQL geçersiz kılma hakkında daha fazla bilgi için bkz. [SQL: Kayıt Kümenizin SQL deyimini özelleştirme (ODBC)](../../data/odbc/sql-customizing-your-recordsets-sql-statement-odbc.md).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Kayıt Kümesi (ODBC)](../../data/odbc/recordset-odbc.md)<br/>
-[Kayıt Kümesi: Kayıtları Sıralama (ODBC)](../../data/odbc/recordset-sorting-records-odbc.md)<br/>
-[Kayıt Kümesi: Kayıt Kümelerinin Kayıtları Seçme Biçimi (ODBC)](../../data/odbc/recordset-how-recordsets-select-records-odbc.md)<br/>
-[Kayıt Kümesi: Kayıt Kümelerinin Kayıtları Güncelleştirmesi (ODBC)](../../data/odbc/recordset-how-recordsets-update-records-odbc.md)<br/>
-[Kayıt Kümesi: Kayıtları Kilitleme (ODBC)](../../data/odbc/recordset-locking-records-odbc.md)
+[Kayıt kümesi: Kayıtları sıralama (ODBC)](../../data/odbc/recordset-sorting-records-odbc.md)<br/>
+[Kayıt kümesi: Kayıtları seçme biçimi (ODBC) nasıl kaydeder](../../data/odbc/recordset-how-recordsets-select-records-odbc.md)<br/>
+[Kayıt kümesi: Kümelerinin kayıtları Güncelleştirmesi (ODBC) kayıtları](../../data/odbc/recordset-how-recordsets-update-records-odbc.md)<br/>
+[Kayıt kümesi: Kayıtları Kilitleme (ODBC)](../../data/odbc/recordset-locking-records-odbc.md)

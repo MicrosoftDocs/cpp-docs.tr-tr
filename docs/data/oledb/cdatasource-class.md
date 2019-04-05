@@ -57,12 +57,12 @@ helpviewer_keywords:
 - OpenWithPromptFileName method
 - OpenWithServiceComponents method
 ms.assetid: 99bf862c-9d5c-4117-9501-aa0e2672085c
-ms.openlocfilehash: cb92c19dd839fc09ed803e170a2762e4ac7cd494
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.openlocfilehash: 2564d4d9b0a2e5df1f575d6f2627ce80f48533c1
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58770824"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59021923"
 ---
 # <a name="cdatasource-class"></a>CDataSource Sınıfı
 
@@ -84,11 +84,11 @@ class CDataSource
 
 |||
 |-|-|
-|[Kapat](#close)|Bağlantıyı kapatır.|
-|[Getınitializationstring](#getinitializationstring)|Şu anda açık olan veri kaynağının başlatma dizesi alır.|
+|[Close](#close)|Bağlantıyı kapatır.|
+|[GetInitializationString](#getinitializationstring)|Şu anda açık olan veri kaynağının başlatma dizesi alır.|
 |[GetProperties](#getproperties)|Bağlı veri kaynağı için ayarlanmış özelliklerin değerlerini alır.|
 |[GetProperty](#getproperty)|Bağlı veri kaynağı için ayarlanmış tek bir özelliğin değerini alır.|
-|[açın](#open)|Bir sağlayıcı (veri kaynağı) kullanarak bir bağlantı oluşturur bir `CLSID`, `ProgID`, veya bir `CEnumerator` çağıran tarafından sağlanan bir bilinen ad.|
+|[Open](#open)|Bir sağlayıcı (veri kaynağı) kullanarak bir bağlantı oluşturur bir `CLSID`, `ProgID`, veya bir `CEnumerator` çağıran tarafından sağlanan bir bilinen ad.|
 |[OpenFromFileName](#openfromfilename)|Bir veri kaynağı, kullanıcı tarafından sağlanan dosya adıyla belirtilen bir dosya açar.|
 |[OpenFromInitializationString](#openfrominitializationstring)|Bir başlatma dizesi tarafından belirtilen veri kaynağı açılır.|
 |[OpenWithPromptFileName](#openwithpromptfilename)|İlgili veri kaynağını açmak için bir önceden oluşturulmuş bir veri bağlantısı dosyasını seçmesini sağlar.|
@@ -412,7 +412,7 @@ Standart bir HRESULT.
 
 Bu yöntem oledb32.dll hizmet bileşenlerini kullanarak bir veri kaynağı nesnesi açılır; Bu DLL, kaynak havuzu, otomatik bir işlem kaydı ve benzeri gibi hizmet bileşenleri özellikleri uygulamasını içerir. Daha fazla bilgi için bkz: "OLE DB hizmetleri" OLE DB Programcı Başvurusu, [ https://msdn.microsoft.com/library/default.asp?url=/library/oledb/htm/oledbole_db_services.asp?frame=true ](https://msdn.microsoft.com/library/default.asp?url=/library/oledb/htm/oledbole_db_services.asp?frame=true).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [OLE DB Tüketici Şablonları](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
 [OLE DB Tüketici Şablonları Başvurusu](../../data/oledb/ole-db-consumer-templates-reference.md)

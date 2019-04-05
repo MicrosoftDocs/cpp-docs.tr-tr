@@ -8,12 +8,12 @@ helpviewer_keywords:
 - pragmas, code_seg
 - code_seg pragma
 ms.assetid: bf4faac1-a511-46a6-8d9e-456851d97d56
-ms.openlocfilehash: 80edcb709073021ccf024aaf14c9a914bd8d8939
-ms.sourcegitcommit: 31a2a9845f5e1d35ab054906d8cdc6582a5220bd
+ms.openlocfilehash: e566fb01bf70b343b75254a10466bdda2bc7ce1b
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51597709"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59041247"
 ---
 # <a name="codeseg"></a>code_seg
 İşlevlerin .obj dosyasında saklandığı metin segmentini belirtir.
@@ -40,7 +40,7 @@ ms.locfileid: "51597709"
 "*segment-name*"<br/>
 (İsteğe bağlı) Segmentin adı. İle kullanıldığında **pop**, yığın silinir ve *segment-name* etkin metin segmentinin adı haline gelir.
 
-"*segment sınıfı*"<br/>
+"*segment-class*"<br/>
 (İsteğe bağlı) Sürüm 2. 0'dan önceki C++ sürümleriyle uyumluluk için eklendi ancak yok sayıldı.
 
 ## <a name="remarks"></a>Açıklamalar
@@ -84,7 +84,7 @@ Bir bölüm oluşturmak için kullanılmaması adlarının listesi için bkz. [/
 
 Başlatılmış veriler için bölümler belirtebilirsiniz ([data_seg](../preprocessor/data-seg.md)), başlatılmamış veriler ([bss_seg](../preprocessor/bss-seg.md)) ve const değişkenleri ([const_seg](../preprocessor/const-seg.md)).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [code_seg (__declspec)](../cpp/code-seg-declspec.md)<br/>
 [Pragma Yönergeleri ve __Pragma Anahtar Sözcüğü](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

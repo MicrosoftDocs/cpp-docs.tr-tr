@@ -4,12 +4,12 @@ ms.date: 03/27/2019
 helpviewer_keywords:
 - CMake in Visual C++
 ms.assetid: 444d50df-215e-4d31-933a-b41841f186f8
-ms.openlocfilehash: 479179d94a0534f5f0c790fea18e281053b686e2
-ms.sourcegitcommit: 309dc532f13242854b47759cef846de59bb807f1
+ms.openlocfilehash: 22a8ecc34e6413c32628381241d45d3d76b39ecc
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58565301"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59030439"
 ---
 # <a name="cmake-projects-in-visual-studio"></a>Visual Studio'da CMake projeleri
 
@@ -158,13 +158,13 @@ CMake Visual Studio Yükleyicisi'nden yüklediyseniz, aşağıdaki adımları iz
 
 1. CMake derleme/Uygulamanızı yapılandırmak için çalıştırın.
   
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[Öğretici: Visual Studio’da platformlar arası C++ projeleri oluşturma](get-started-linux-cmake.md)<br/>
+[Öğretici: Visual Studio'da C++ platformlar arası projeler oluşturma](get-started-linux-cmake.md)<br/>
 [Linux CMake projesi yapılandırma](../linux/cmake-linux-project.md)<br/>
 [Uzak Linux bilgisayarınıza bağlanma](../linux/connect-to-your-remote-linux-computer.md)<br/>
 [CMake derleme ayarlarını özelleştirme](customize-cmake-settings.md)<br/>
 [CMakeSettings.json başvurusu](cmakesettings-reference.md)<br/>
-[CMake hata ayıklama oturumlarını yapılandırma](configure-cmake-debugging-sessions.md)<br/>
-[Linux projenizi dağıtma, çalıştırma ve projenizin hatalarını ayıklama](../linux/deploy-run-and-debug-your-linux-project.md)<br/>
+[Hata ayıklama oturumları CMake yapılandırma](configure-cmake-debugging-sessions.md)<br/>
+[Dağıtma, çalıştırma ve Linux projenizin hatalarını ayıklama](../linux/deploy-run-and-debug-your-linux-project.md)<br/>
 [Önceden tanımlanmış CMake yapılandırma başvurusu](cmake-predefined-configuration-reference.md)<br/>

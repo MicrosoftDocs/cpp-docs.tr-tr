@@ -7,12 +7,12 @@ helpviewer_keywords:
 - bookmarks, OLE DB
 - OLE DB providers, bookmark support
 ms.assetid: 7fa1d1a8-5063-4aa9-93ee-815bb9c98fae
-ms.openlocfilehash: 1f8ef4c25ad921dad66e5587f4005585b3e017f5
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 579e67151858904e877a34bf30467e3cb97fe2c4
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50635662"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59028499"
 ---
 # <a name="using-bookmarks"></a>Yer İşaretlerini Kullanma
 
@@ -57,6 +57,6 @@ product.GetBookmark(&bookmark);
 
 Yer işaretleri sağlayıcı belirtilen bölümler destekleme hakkında daha fazla bilgi için bkz: [yer işaretleri sağlayıcı desteği](../../data/oledb/provider-support-for-bookmarks.md).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Erişimcileri Kullanma](../../data/oledb/using-accessors.md)

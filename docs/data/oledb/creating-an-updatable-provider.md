@@ -6,12 +6,12 @@ helpviewer_keywords:
 - notifications, support in providers
 - OLE DB providers, creating
 ms.assetid: bdfd5c9f-1c6f-4098-822c-dd650e70ab82
-ms.openlocfilehash: 04db02bc8ad4db0c669e07a0bcf1b60ffa22e8ad
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.openlocfilehash: d3f8314e7cd57617e35e50a67a4562d4055cb93a
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51521407"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59024747"
 ---
 # <a name="creating-an-updatable-provider"></a>Güncelleştirilebilir Sağlayıcı Oluşturma
 
@@ -109,9 +109,9 @@ Unutmayın `IRowsetUpdateImpl` türetildiği `IRowsetChangeImpl`. Bu nedenle, `I
 
    Uygularsanız `IRowsetChangeImpl`, sağlayıcınız üzerinde aşağıdaki özellikleri ayarlayın. Bu özellikler öncelikle arabirimleri aracılığıyla istemek için kullanılan `ICommandProperties::SetProperties`.
 
-   - `DBPROP_IRowsetChange`: Bu otomatik olarak kümelerini ayarlama `DBPROP_IRowsetChange`.
+   - `DBPROP_IRowsetChange`: Kümeleri otomatik olarak bu ayarı `DBPROP_IRowsetChange`.
 
-   - `DBPROP_UPDATABILITY`: Desteklenen yöntemlerden belirtme bir bit maskesi `IRowsetChange`: `SetData`, `DeleteRows`, veya `InsertRow`.
+   - `DBPROP_UPDATABILITY`: Desteklenen yöntemlerden belirterek bir bit maskesi `IRowsetChange`: `SetData`, `DeleteRows`, veya `InsertRow`.
 
    - `DBPROP_CHANGEINSERTEDROWS`: Tüketici çağırabilir `IRowsetChange::DeleteRows` veya `SetData` yeni eklenen satırlar için.
 
@@ -121,7 +121,7 @@ Unutmayın `IRowsetUpdateImpl` türetildiği `IRowsetChangeImpl`. Bu nedenle, `I
 
    Uygularsanız `IRowsetUpdateImpl`, aşağıdaki özellikleri sağlayıcınız üzerinde ayrıca tüm özelliklerini ayarlamak ayarlamanız gerekir `IRowsetChangeImpl` daha önce listelenen:
 
-   - `DBPROP_IRowsetUpdate`.
+   - `DBPROP_IRowsetUpdate`biçimindeki telefon numarasıdır.
 
    - `DBPROP_OWNINSERT`: READ_ONLY ve VARIANT_TRUE olması gerekir.
 
@@ -133,7 +133,7 @@ Unutmayın `IRowsetUpdateImpl` türetildiği `IRowsetChangeImpl`. Bu nedenle, `I
 
    - `DBPROP_REMOVEDELETED`: READ_ONLY ve VARIANT_TRUE olması gerekir.
 
-   - `DBPROP_MAXPENDINGROWS`.
+   - `DBPROP_MAXPENDINGROWS`biçimindeki telefon numarasıdır.
 
    > [!NOTE]
    > Bildirimleri destekliyorsa, bazı diğer özellikleri de da olabilir; bölümüne `IRowsetNotifyCP` bu listesi.
@@ -434,6 +434,6 @@ m_rgRowData.Add(trData[0]);
 
 Bu kod, diğerlerinin yanı sıra sütunu yazılabilir, 0, varsayılan değeri destekler ve sütundaki tüm verilerin aynı uzunluğa sahip olduğunu belirtir. Değişken uzunluğa sahip bir sütun verileri istiyorsanız, bu bayrağı ayarlamazsınız.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [OLE DB Sağlayıcısı Oluşturma](creating-an-ole-db-provider.md)

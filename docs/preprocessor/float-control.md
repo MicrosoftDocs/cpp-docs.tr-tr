@@ -8,12 +8,12 @@ helpviewer_keywords:
 - float_control pragma
 - pragmas, float_control
 ms.assetid: 4f4ba5cf-3707-413e-927d-5ecdbc0a9a43
-ms.openlocfilehash: 63e27e992778776e186345da07937d1a88844e5d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 8a7829252cebb726363c67c990a94d08b0d6467a
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50611022"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59032316"
 ---
 # <a name="floatcontrol"></a>float_control
 
@@ -21,7 +21,7 @@ Bir işlev için kayan nokta davranışını belirtir.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **#pragma float_control** [ **(** [ *değer* **,** *ayarı* [ **, anında iletme** ]] | [ **anında iletme** | **pop** ] **)** ]
+> **#pragma float_control** [ **(** [ *value* **,** *setting* [ **, push** ] ] | [ **push** | **pop** ] **)** ]
 
 ## <a name="options"></a>Seçenekler
 
@@ -106,6 +106,6 @@ int main( ) {
 Pass
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Pragma Yönergeleri ve __Pragma Anahtar Sözcüğü](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

@@ -12,16 +12,16 @@ helpviewer_keywords:
 - __writegsword intrinsic
 - __writegsdword intrinsic
 ms.assetid: 7746cf6d-2259-4139-9aab-c07dd75c8037
-ms.openlocfilehash: 9276c727d93491e3d85cbae26f6b3df9c0384c59
-ms.sourcegitcommit: a1fad0a266b20b313364a74b16c9ac45d089b1e9
+ms.openlocfilehash: dbd3fff75107ae61f7680dee84b72ff3153bfa8e
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "54220250"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59041438"
 ---
 # <a name="writegsbyte-writegsdword-writegsqword-writegsword"></a>__writegsbyte, __writegsdword, __writegsqword, __writegsword
 
-**Microsoft'a özgü**
+**Microsoft'a Özgü**
 
 GS kesim başlangıcına göre bir uzaklık tarafından belirtilen bir konuma bellek yazın.
 
@@ -48,7 +48,7 @@ void __writegsqword(
 
 #### <a name="parameters"></a>Parametreler
 
-*uzaklık*<br/>
+*Uzaklık*<br/>
 [in] Yazılacak GS başından uzaklığı.
 
 *Veri*<br/>
@@ -69,9 +69,9 @@ void __writegsqword(
 
 Bu yordamlar yalnızca bir iç öğe olarak kullanılabilir.
 
-**END Microsoft özgü**
+**END Microsoft'a Özgü**
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [__readgsbyte, \__readgsdword, \__readgsqword, \__readgsword](../intrinsics/readgsbyte-readgsdword-readgsqword-readgsword.md)<br/>
 [Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)

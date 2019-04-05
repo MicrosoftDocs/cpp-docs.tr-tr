@@ -65,12 +65,12 @@ helpviewer_keywords:
 - operator CSession*
 - CSession* operator
 ms.assetid: 77432d85-4e20-49ec-a0b0-142137828471
-ms.openlocfilehash: 769dfc99f431cb5ba803075e28176713f9bd7092
-ms.sourcegitcommit: 309dc532f13242854b47759cef846de59bb807f1
+ms.openlocfilehash: 94c7025185a24b07d5968157d49c856d4359b33a
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58565512"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59021637"
 ---
 # <a name="cdataconnection-class"></a>CDataConnection Sınıfı
 
@@ -94,7 +94,7 @@ class CDataConnection
 |-|-|
 |[CDataConnection](#cdataconnection)|Oluşturucu. Oluşturur ve başlatır bir `CDataConnection` nesne.|
 |[Kopyala](#copy)|Mevcut bir veri bağlantısı bir kopyasını oluşturur.|
-|[açın](#open)|Başlatma dizesi kullanarak bir veri kaynağı bir bağlantı açar.|
+|[Open](#open)|Başlatma dizesi kullanarak bir veri kaynağı bir bağlantı açar.|
 |[OpenNewSession](#opennewsession)|Geçerli bağlantı üzerinde yeni bir oturum açar.|
 
 ### <a name="operators"></a>İşleçler
@@ -102,11 +102,11 @@ class CDataConnection
 |||
 |-|-|
 |[BOOL işleci](#op_bool)|Geçerli oturumu açık olup olmadığını belirler.|
-|[bool işleci](#op_bool_ole)|Geçerli oturumu açık olup olmadığını belirler.|
+|[işleç bool değeri](#op_bool_ole)|Geçerli oturumu açık olup olmadığını belirler.|
 |[işleç CDataSource &](#op_cdata_amp)|Kapsanan bir başvuru döndürür `CDataSource` nesne.|
 |[CDataSource * işleci](#op_cdata_star)|Kapsanan bir işaretçi döndürür `CDataSource` nesne.|
-|[işleç CSession &](#op_csession_amp)|Kapsanan bir başvuru döndürür `CSession` nesne.|
-|[işleç CSession *](#op_csession_star)|Kapsanan bir işaretçi döndürür `CSession` nesne.|
+|[işleç CSession&](#op_csession_amp)|Kapsanan bir başvuru döndürür `CSession` nesne.|
+|[işleç CSession*](#op_csession_star)|Kapsanan bir işaretçi döndürür `CSession` nesne.|
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -304,7 +304,7 @@ Bu işleç içerdiği için bir işaretçi döndürür `CSession` geçirmenize i
 
 Bkz: [işleç CSession &](../../data/oledb/cdataconnection-operator-csession-amp.md) bir kullanım örneği için.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [OLE DB Tüketici Şablonları](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
 [OLE DB Tüketici Şablonları Başvurusu](../../data/oledb/ole-db-consumer-templates-reference.md)

@@ -1,5 +1,5 @@
 ---
-title: 'Kayıt Kümesi: Bir Kayıt Kümesini Parametreleştirme (ODBC)'
+title: 'Kayıt kümesi: (ODBC) bir kayıt kümesini parametreleştirme'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - parameterizing recordsets
@@ -7,14 +7,14 @@ helpviewer_keywords:
 - recordsets, parameterizing
 - passing parameters, to queries at runtime
 ms.assetid: 7d1dfeb6-5ee0-45e2-aacc-63bc52a465cd
-ms.openlocfilehash: f58a33a0c43cb0d70d98f3f2ae33f766058b1c23
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.openlocfilehash: df67256c54cae3e2adb054d653d3e58bb91dd631
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51331275"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59026168"
 ---
-# <a name="recordset-parameterizing-a-recordset-odbc"></a>Kayıt Kümesi: Bir Kayıt Kümesini Parametreleştirme (ODBC)
+# <a name="recordset-parameterizing-a-recordset-odbc"></a>Kayıt kümesi: (ODBC) bir kayıt kümesini parametreleştirme
 
 Bu konu MFC ODBC sınıflarına uygulanır.
 
@@ -46,7 +46,7 @@ Parametreler için tipik kullanımları şunlardır:
 
 - Önceden tanımlanmış sorgu için çalışma zamanı bağımsız değişkenleri geçirme.
 
-   Bir saklı yordamın parametreleri geçirmek için tam bir özel ODBC belirtmelisiniz **çağrı** deyimi — parametresi tutucularla — çağırdığınızda `Open`, kümesinin varsayılan SQL deyimi geçersiz kılma. Daha fazla bilgi için [CRecordset::Open](../../mfc/reference/crecordset-class.md#open) içinde *sınıf kitaplığı başvurusu* ve [SQL: özelleştirme Kümenizin SQL deyimini (ODBC)](../../data/odbc/sql-customizing-your-recordsets-sql-statement-odbc.md) ve [ Kayıt kümesi: önceden tanımlanmış bir sorgu (ODBC) için bir sınıf bildirme](../../data/odbc/recordset-declaring-a-class-for-a-predefined-query-odbc.md).
+   Bir saklı yordamın parametreleri geçirmek için tam bir özel ODBC belirtmelisiniz **çağrı** deyimi — parametresi tutucularla — çağırdığınızda `Open`, kümesinin varsayılan SQL deyimi geçersiz kılma. Daha fazla bilgi için [CRecordset::Open](../../mfc/reference/crecordset-class.md#open) içinde *sınıf kitaplığı başvurusu* ve [SQL: Kayıt Kümenizin SQL deyimini özelleştirme (ODBC)](../../data/odbc/sql-customizing-your-recordsets-sql-statement-odbc.md) ve [kayıt kümesi: Bir sınıf bildirme (ODBC) önceden tanımlanmış sorgu için](../../data/odbc/recordset-declaring-a-class-for-a-predefined-query-odbc.md).
 
 - Verimli bir şekilde farklı parametre bilgileri ile çok sayıda sorgular gerçekleştirme.
 
@@ -75,19 +75,19 @@ Parametreler için tipik kullanımları şunlardır:
                                        // for some drivers
     ```
 
-   Teklif doğru için filtre dizeleri kullanma hakkında bilgi için bkz. [kayıt kümesi: kayıtları filtreleme (ODBC)](../../data/odbc/recordset-filtering-records-odbc.md).
+   Teklif için filtre dizeleri doğru kullanma hakkında bir tartışma için bkz [kayıt kümesi: Kayıtları filtreleme (ODBC)](../../data/odbc/recordset-filtering-records-odbc.md).
 
    Parametre değeri kayıt için yeni bir öğrenci kimliği requery her zaman farklıdır
 
    > [!TIP]
    > Bir parametre kullanarak, sadece bir filtre kullanmaktan daha verimlidir. Parametreli bir kayıt kümesi için bir SQL veritabanı işlemelisiniz **seçin** deyimi yalnızca bir kez. Parametresiz, filtrelenmiş bir kayıt kümesi için **seçin** deyimi işlenmelidir her zaman `Requery` ile yeni bir filtre değeri.
 
-Filtreleri hakkında daha fazla bilgi için bkz. [kayıt kümesi: kayıtları filtreleme (ODBC)](../../data/odbc/recordset-filtering-records-odbc.md).
+Filtreleri hakkında daha fazla bilgi için bkz. [kayıt kümesi: Kayıtları filtreleme (ODBC)](../../data/odbc/recordset-filtering-records-odbc.md).
 
 ##  <a name="_core_parameterizing_your_recordset_class"></a> Sınıfınıza kayıt kümesini parametreleştirme
 
 > [!NOTE]
-> Bu bölüm, türetilmiş nesneler için geçerlidir. `CRecordset` toplu satır getirme uygulanmadı. Toplu satır getirme, parametreleri uygulama kullanıyorsanız benzer bir işlemdir. Daha fazla bilgi için [kayıt kümesi: Kayıtları toplu (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md).
+> Bu bölüm, türetilmiş nesneler için geçerlidir. `CRecordset` toplu satır getirme uygulanmadı. Toplu satır getirme, parametreleri uygulama kullanıyorsanız benzer bir işlemdir. Daha fazla bilgi için [kayıt kümesi: Kayıtları toplu yakalama (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md).
 
 Kayıt kümesi sınıfı oluşturmadan önce gereksinim duyduğunuz parametreleri, veri türlerini nelerdir ve kayıt bunları nasıl kullandığını belirleyin.
 
@@ -114,7 +114,7 @@ Kayıt kümesi sınıfı oluşturmadan önce gereksinim duyduğunuz parametreler
 
    Sonra alan Sihirbazı tarafından üretilen veri üyeleri, parametre veri üyeleri ekleyin. "Parametre" sözcüğü için her bir kullanıcı tarafından tanımlanan parametre adı eklemek için kullanılan kuraldır.
 
-1. Değiştirme [DoFieldExchange](../../mfc/reference/crecordset-class.md#dofieldexchange) üye işlev tanımında .cpp dosyası. RFX işlev çağrısı bir sınıfa eklediğiniz her parametre veri üyesi ekleyin. RFX işlevlerinizi yazma hakkında daha fazla bilgi için bkz: [kayıt alanı değişimi: RFX Works nasıl](../../data/odbc/record-field-exchange-how-rfx-works.md). RFX çağrıları parametreleri için tek bir çağrı ile koyun:
+1. Değiştirme [DoFieldExchange](../../mfc/reference/crecordset-class.md#dofieldexchange) üye işlev tanımında .cpp dosyası. RFX işlev çağrısı bir sınıfa eklediğiniz her parametre veri üyesi ekleyin. RFX işlevlerinizi yazma hakkında daha fazla bilgi için bkz. [kayıt alanı değişimi: RFX'in çalışması](../../data/odbc/record-field-exchange-how-rfx-works.md). RFX çağrıları parametreleri için tek bir çağrı ile koyun:
 
     ```cpp
     pFX->SetFieldType( CFieldExchange::param );
@@ -123,7 +123,7 @@ Kayıt kümesi sınıfı oluşturmadan önce gereksinim duyduğunuz parametreler
 
 1. Kayıt kümesi sınıfı oluşturucusunun içinde parametre sayısını artırmak `m_nParams`.
 
-   Bilgi için [kayıt alanı değişimi: sihirbaz kodu ile çalışma](../../data/odbc/record-field-exchange-working-with-the-wizard-code.md).
+   Bilgi için [kayıt alanı değişimi: Sihirbaz kodu ile çalışma](../../data/odbc/record-field-exchange-working-with-the-wizard-code.md).
 
 1. Bu sınıfın bir kayıt kümesi nesnesi oluşturan kodu yazdığınız zaman yerleştirileceği bir "?" bir parametre değiştirilecek olduğu her yerde SQL deyimi dizelerinizi (soru işareti) simgesi.
 
@@ -173,8 +173,8 @@ Kayıt kümesi kayıtlarını çalışma zamanı parametrelerinden oluşturulmu�
 > [!NOTE]
 >  Gerekli olursa, parametre veri üyesinin değerini Null olarak ayarlayabilirsiniz kullanarak [SetParamNull](../../mfc/reference/crecordset-class.md#setparamnull). Benzer şekilde bir parametre veri üyesi Null olup olmadığını denetleyebiliriz kullanarak [IsFieldNull](../../mfc/reference/crecordset-class.md#isfieldnull).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Kayıt Kümesi (ODBC)](../../data/odbc/recordset-odbc.md)<br/>
-[Kayıt kümesi: Kayıtları Ekleme, Güncelleştirme ve Silme (ODBC)](../../data/odbc/recordset-adding-updating-and-deleting-records-odbc.md)<br/>
-[Kayıt Kümesi: Kayıt Kümelerinin Kayıtları Seçme Biçimi (ODBC)](../../data/odbc/recordset-how-recordsets-select-records-odbc.md)
+[Kayıt kümesi: Ekleme, güncelleştirme ve silme kayıtlarını (ODBC)](../../data/odbc/recordset-adding-updating-and-deleting-records-odbc.md)<br/>
+[Kayıt kümesi: Kayıtları seçme biçimi (ODBC) nasıl kaydeder](../../data/odbc/recordset-how-recordsets-select-records-odbc.md)

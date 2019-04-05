@@ -5,12 +5,12 @@ ms.topic: reference
 helpviewer_keywords:
 - ^ handle to object [C++]
 ms.assetid: 70c411e6-be57-4468-a944-6ea7be89f392
-ms.openlocfilehash: a6626cff8847e849bdab161b95b72fca91e1225d
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.openlocfilehash: bdf19b6b472cd4d224d749f59c75ca77d11c34f8
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58787592"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59039919"
 ---
 # <a name="handle-to-object-operator---ccli-and-ccx"></a>Tanıtıcı nesne işleci (^) (C + +/ CLI ve C + +/ CX)
 
@@ -221,7 +221,7 @@ int main() {
 
 Derleyici seçeneği: `/clr`
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[.NET ve UWP İçin Bileşen Uzantıları](component-extensions-for-runtime-platforms.md)<br/>
-[İzleme başvurusu işleci](tracking-reference-operator-cpp-component-extensions.md)
+[.NET ve UWP için bileşen uzantıları](component-extensions-for-runtime-platforms.md)<br/>
+[İzleme Başvurusu İşleci](tracking-reference-operator-cpp-component-extensions.md)

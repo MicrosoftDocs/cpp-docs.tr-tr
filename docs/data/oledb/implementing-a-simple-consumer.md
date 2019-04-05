@@ -5,12 +5,12 @@ helpviewer_keywords:
 - clients, creating
 - OLE DB consumers, implementing
 ms.assetid: 13828167-23a4-4e94-8b6c-878262fda464
-ms.openlocfilehash: 141c2f48b2069410b14f969171f2b1c185a0506e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 9067e8645fac9a06bd85ca5ef18fbaff45d16aae
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50669033"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59033540"
 ---
 # <a name="implementing-a-simple-consumer"></a>Basit Tüketici Uygulama
 
@@ -196,6 +196,6 @@ Bir yer işareti tablosundaki satırları benzersiz olarak tanımlayan bir sütu
 
 Yer işaretleri hakkında daha fazla bilgi için bkz. [kullanarak yer işaretleri](../../data/oledb/using-bookmarks.md). Yer işaretleri örnekleri de gösterilir [satır kümelerini güncelleştirme](../../data/oledb/updating-rowsets.md).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Sihirbaz Kullanarak bir OLE DB Tüketicisi Oluşturma](../../data/oledb/creating-an-ole-db-consumer-using-a-wizard.md)

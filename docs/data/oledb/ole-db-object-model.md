@@ -5,12 +5,12 @@ helpviewer_keywords:
 - rowsets, OLE DB object model
 - OLE DB, object model
 ms.assetid: 1a274a25-c310-4430-a1ec-bd2bd8120eff
-ms.openlocfilehash: 83e94a1075392bdf730b98f8f10a9751662ec976
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 303ad4166f0f1126182956fae9c19f513be7cfb3
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50486807"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59039169"
 ---
 # <a name="ole-db-object-model"></a>OLE DB Nesne Modeli
 
@@ -76,7 +76,7 @@ Herhangi bir OLE DB Nesne herhangi bir arabirimde hatalara neden olabilir. İste
 
 Bildirimleri (burada paylaşımı tüketicilerin aynı işlem içinde çalışmıyor olabilir varsayılır anlamına gelir), satır kümesi paylaşan kurduğuna ilişkin tüketici grupları tarafından kullanılır. Satır kümesi kendi eşleri tarafından gerçekleştirilen eylemler hakkında bilgilendirilmesi kurduğuna ilişkin tüketicileri bir satır kümesi paylaşan bildirimlerini etkinleştirin.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [OLE DB Programlama](../../data/oledb/ole-db-programming.md)<br/>
 [OLE DB Programlamaya Genel Bakış](../../data/oledb/ole-db-programming-overview.md)

@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - include() attribute
 ms.assetid: 86c9dcb2-d9e0-4fd5-97d7-0bb3e23d6ecc
-ms.openlocfilehash: 8f3227ba49cc0928fec5d5917efcd8869982d94a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 1208f14a9f6b3724dd5353df57213baa3910d07f
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50599751"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59040933"
 ---
 # <a name="include"></a>include()
 
@@ -39,7 +39,7 @@ Tür kitaplıkları, sistem üstbilgileri veya diğer tür kitaplıklarında tan
 
 **END C++ özgü**
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[#import öznitelikleri](../preprocessor/hash-import-attributes-cpp.md)<br/>
-[#import yönergesi](../preprocessor/hash-import-directive-cpp.md)
+[#import Öznitelikleri](../preprocessor/hash-import-attributes-cpp.md)<br/>
+[#import Yönergesi](../preprocessor/hash-import-directive-cpp.md)

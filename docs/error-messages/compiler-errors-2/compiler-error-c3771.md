@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3771
 ms.assetid: 68c23b25-7f21-4eaa-8f7e-38fda1130a69
-ms.openlocfilehash: 8ff2993cbd5f289ca9208d8c532d7fa8329af086
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 6b15d867bbaf66f511cbda200d692f5db4371ab3
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50453396"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59026714"
 ---
 # <a name="compiler-error-c3771"></a>Derleyici Hatası C3771
 
@@ -47,6 +47,6 @@ namespace NB {
 }
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Şablonlar](../../cpp/templates-cpp.md)

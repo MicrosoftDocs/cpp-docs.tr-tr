@@ -4,12 +4,12 @@ ms.description: Visual Studio provides several predefined build configurations f
 ms.date: 03/05/2019
 helpviewer_keywords:
 - CMake redefined configurations
-ms.openlocfilehash: d1e77db7ddc38fa41771a512a5b863d403bfdc28
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.openlocfilehash: cecadaec2e409dfba3b1929e406c36df3e498307
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57823735"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59031458"
 ---
 # <a name="cmake-predefined-build-configurations"></a>Önceden tanımlanmış CMake derleme yapılandırmaları
 
@@ -344,11 +344,11 @@ Bu seçenekler uzak sistemde, önce ve sonra yapı ve CMake oluşturma önce kom
 }
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Visual Studio'da CMake projeleri](cmake-projects-in-visual-studio.md)<br/>
 [Linux CMake projesi yapılandırma](../linux/cmake-linux-project.md)<br/>
 [Uzak Linux bilgisayarınıza bağlanma](../linux/connect-to-your-remote-linux-computer.md)<br/>
-[CMake hata ayıklama oturumlarını yapılandırma](configure-cmake-debugging-sessions.md)<br/>
-[Linux projenizi dağıtma, çalıştırma ve projenizin hatalarını ayıklama](../linux/deploy-run-and-debug-your-linux-project.md)<br/>
+[Hata ayıklama oturumları CMake yapılandırma](configure-cmake-debugging-sessions.md)<br/>
+[Dağıtma, çalıştırma ve Linux projenizin hatalarını ayıklama](../linux/deploy-run-and-debug-your-linux-project.md)<br/>
 [Önceden tanımlanmış CMake yapılandırma başvurusu](cmake-predefined-configuration-reference.md)<br/>

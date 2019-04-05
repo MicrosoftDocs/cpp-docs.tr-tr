@@ -14,16 +14,16 @@ helpviewer_keywords:
 - IConvertTypeImpl class
 - CanConvert method
 ms.assetid: 7f81e79e-7d3f-4cbe-b93c-d632a94b15f6
-ms.openlocfilehash: 0b3c0f239b3c80d0b4d3c8425b03a3612a0e6db2
-ms.sourcegitcommit: c40469825b6101baac87d43e5f4aed6df6b078f5
+ms.openlocfilehash: 546a5a007f9e4c1c2a0e581eff2e7984947bdbb5
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/12/2018
-ms.locfileid: "51556237"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59023730"
 ---
 # <a name="iconverttypeimpl-class"></a>IConvertTypeImpl Sınıfı
 
-Bir uygulamasını sağlar [IConvertType](https://docs.microsoft.com/previous-versions/windows/desktop/ms715926(v=vs.85)) arabirimi.
+Bir uygulamasını sağlar [IConvertType](/previous-versions/windows/desktop/ms715926(v=vs.85)) arabirimi.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -68,13 +68,13 @@ STDMETHOD(CanConvert)(DBTYPE wFromType,
 
 #### <a name="parameters"></a>Parametreler
 
-Bkz: [IConvertType::CanConvert](https://docs.microsoft.com/previous-versions/windows/desktop/ms711224(v=vs.85)) içinde *OLE DB Programcının Başvurusu*.
+Bkz: [IConvertType::CanConvert](/previous-versions/windows/desktop/ms711224(v=vs.85)) içinde *OLE DB Programcının Başvurusu*.
 
 ### <a name="remarks"></a>Açıklamalar
 
 OLE DB veri dönüştürme kullanan `MSADC.DLL`.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[OLE DB sağlayıcı şablonları](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>
+[OLE DB Sağlayıcı Şablonları](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>
 [OLE DB Sağlayıcı Şablonu Mimarisi](../../data/oledb/ole-db-provider-template-architecture.md)

@@ -6,16 +6,16 @@ f1_keywords:
 helpviewer_keywords:
 - __readcr2 intrinsic
 ms.assetid: d02c97d8-1953-46e7-a79e-a781e2c5bf27
-ms.openlocfilehash: e11f6c4fd0f5483b0d47abdaf6b8b371a8c61f09
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e26ccbb3db1dfc113f84210314379b06dae93542
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50496505"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59031108"
 ---
 # <a name="readcr2"></a>__readcr2
 
-**Microsoft'a özgü**
+**Microsoft'a Özgü**
 
 CR2 yazmacını okuyarak ve değerini döndürür.
 
@@ -41,8 +41,8 @@ CR2 kayıttaki değeri.
 
 Bu iç yalnızca çekirdek modunda kullanılabilir ve yordam yalnızca bir iç öğe olarak kullanılabilir.
 
-**END Microsoft özgü**
+**END Microsoft'a Özgü**
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)

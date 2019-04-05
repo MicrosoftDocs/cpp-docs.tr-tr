@@ -8,12 +8,12 @@ helpviewer_keywords:
 - undef directive (#undef)
 - preprocessor, directives
 ms.assetid: 88900e0e-2c19-4a63-b681-f3d3133c24ca
-ms.openlocfilehash: cb3a08165e41f336df0e141f50310f191cd83257
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 4f4f5ce244be6d7f4e13d7a2abc5d21232c08d9d
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50537273"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59039013"
 ---
 # <a name="undef-directive-cc"></a>#undef Yönergesi (C/C++)
 Daha önce `#define` ile oluşturulmuş bir adı kaldırır (tanımsız hale getirir).
@@ -45,12 +45,12 @@ Aşağıdaki örnekte, **#undef** yönergesi sembolik bir sabitin ve bir makronu
 #undef ADD
 ```
 
-**Microsoft'a özgü**
+**Microsoft'a Özgü**
 
 Makrolar kullanılarak komut satırından tanımsız olabilir `/U` kaldırılacak makro adlarını ardından seçeneği. Bu komutu çalıştırmanın etkisi dizisi ile eşdeğerdir `#undef` *makro adı* dosyasının başında deyimleri.
 
-**END Microsoft özgü**
+**END Microsoft'a Özgü**
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Ön işlemci Yönergeleri](../preprocessor/preprocessor-directives.md)

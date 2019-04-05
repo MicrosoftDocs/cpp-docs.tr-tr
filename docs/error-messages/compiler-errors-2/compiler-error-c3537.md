@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3537
 ms.assetid: f537ebd1-4fb0-4e09-a453-4f38db2c6881
-ms.openlocfilehash: 22387470019b0118d06b4cacd82a1df5c3e505fb
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 50a06180dabfa192292fae7ba1962b6b7455bb89
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50576130"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59024030"
 ---
 # <a name="compiler-error-c3537"></a>Derleyici Hatası C3537
 
@@ -38,6 +38,6 @@ int main()
 }
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [auto Anahtar Sözcüğü](../../cpp/auto-keyword.md)

@@ -1,5 +1,5 @@
 ---
-title: 'Veri Kaynağı: Bağlantıları Yönetme (ODBC)'
+title: 'Veri kaynağı: Bağlantıları yönetme (ODBC)'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - ODBC data sources [C++], multiuser environments
@@ -18,14 +18,14 @@ helpviewer_keywords:
 - ODBC data sources [C++], connections
 - database connections [C++], MFC ODBC classes
 ms.assetid: c0adbcdd-c000-40c6-b199-09ffdc7b6ef2
-ms.openlocfilehash: 0f10dd1053819cb201385098b0125042ad556a47
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 5b646ca0eb86d3addabaad59ca23f56cfe914114
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50568512"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59041170"
 ---
-# <a name="data-source-managing-connections-odbc"></a>Veri Kaynağı: Bağlantıları Yönetme (ODBC)
+# <a name="data-source-managing-connections-odbc"></a>Veri kaynağı: Bağlantıları yönetme (ODBC)
 
 Bu konu MFC ODBC sınıflarına uygulanır.
 
@@ -72,7 +72,7 @@ Bir Excel dosyasını veri kaynağı olarak kullanabilirsiniz ve kayıtlı ve g�
 
 ##  <a name="_core_working_in_a_multiuser_environment"></a> Çok kullanıcılı bir ortamda çalışma
 
-Birden çok kullanıcı bir veri kaynağına bağlanırsa, kayıt kümeleri içinde düzenleme ancak bunlar veri değiştirebilirsiniz. Benzer şekilde, değişiklikleriniz diğer kullanıcıların kayıt kümeleri etkileyebilir. Daha fazla bilgi için [kayıt kümesi: nasıl kayıt kümelerini güncelleştirme kayıtları (ODBC)](../../data/odbc/recordset-how-recordsets-update-records-odbc.md) ve [işlem (ODBC)](../../data/odbc/transaction-odbc.md).
+Birden çok kullanıcı bir veri kaynağına bağlanırsa, kayıt kümeleri içinde düzenleme ancak bunlar veri değiştirebilirsiniz. Benzer şekilde, değişiklikleriniz diğer kullanıcıların kayıt kümeleri etkileyebilir. Daha fazla bilgi için [kayıt kümesi: Kümelerinin kayıtları Güncelleştirmesi (ODBC) kayıtları](../../data/odbc/recordset-how-recordsets-update-records-odbc.md) ve [işlem (ODBC)](../../data/odbc/transaction-odbc.md).
 
 ##  <a name="_core_generalizing_the_connection_string"></a> Bağlantı dizelerini genelleme
 
@@ -136,8 +136,8 @@ Yeniden kullanabileceğiniz bir `CDatabase` aynı veri kaynağına yeniden bağl
 
 1. Çağrı nesneyi yok etmek yerine kendi `OpenEx` veya `Open` yeniden üye işlevi.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Veri Kaynağı (ODBC)](../../data/odbc/data-source-odbc.md)<br/>
-[Veri Kaynağı: Veri Kaynağının Şemasını Belirleme (ODBC)](../../data/odbc/data-source-determining-the-schema-of-the-data-source-odbc.md)<br/>
-[CRecordset Sınıfı](../../mfc/reference/crecordset-class.md)
+[Veri kaynağı: (ODBC) veri kaynağının şemasını belirleme](../../data/odbc/data-source-determining-the-schema-of-the-data-source-odbc.md)<br/>
+[CRecordset sınıfı](../../mfc/reference/crecordset-class.md)

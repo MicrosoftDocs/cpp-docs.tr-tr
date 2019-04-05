@@ -6,12 +6,12 @@ helpviewer_keywords:
 - testing providers
 - OLE DB providers, testing
 ms.assetid: bf824fe4-81af-4ffb-beb3-4fa2928dc450
-ms.openlocfilehash: 9bb42af69a204c88e6068444642275b59ea5bf5c
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.openlocfilehash: d7a3adad546834e2bdc80a695f4c3bf2259dc0ba
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51518300"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59038323"
 ---
 # <a name="testing-your-provider"></a>Sağlayıcınızı Test Etme
 
@@ -23,6 +23,6 @@ Bir sağlayıcı yayınlamadan önce gösterilen sırada aşağıdaki testleri y
 
 1. Sağlayıcınız için OLE DB Sağlayıcısı 0 standart düzeyi karşıladığını gösterilecek (ADO uygunluk testlerini dahil) OLE DB uygunluk testlerini çalıştırın. (0 düzeyi açıklaması için arama **OLE DB düzeyi 0 uygunluk testlerini** adresindeki [OLE DB Programcı Kılavuzu](/sql/connect/oledb/ole-db/oledb-driver-for-sql-server-programming). Bu testleri ve ilişkili belgeler Visual C++'da veri erişim SDK'sı dahil edilmiştir. Bu testleri sağlayıcınız da diğerini toplandığında çalıştığını göstermek için de yardımcı [hizmeti sağlayıcıları](../../data/oledb/ole-db-resource-pooling-and-services.md) değiştirir veya özellik eklemek özellikle yararlıdır. Uygunluk testleri hakkında daha fazla bilgi için Visual Studio CDs birinde bulunan veri erişim SDK'sı için Benioku dosyasına bakın.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [OLE DB Sağlayıcı Şablonlarıyla Çalışma](../../data/oledb/working-with-ole-db-provider-templates.md)

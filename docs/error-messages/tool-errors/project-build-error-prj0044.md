@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - PRJ0044
 ms.assetid: 5d78c45a-f9e9-4d2b-a3b6-5a5d1421ab84
-ms.openlocfilehash: 9321bb500f69c4d79da45ef9d74bc1644fb90280
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.openlocfilehash: 3d9fd25dc5b39de69735c7d3d5cf0a6bb64c0482
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57812167"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59026200"
 ---
 # <a name="project-build-error-prj0044"></a>Proje Derleme Hatası PRJ0044
 
@@ -21,6 +21,6 @@ ms.locfileid: "57812167"
 
 Daha fazla bilgi için [belirterek özel derleme Araçları](../../build/specifying-custom-build-tools.md).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Proje Derleme Hataları ve Uyarıları (PRJxxxx)](../../error-messages/tool-errors/project-build-errors-and-warnings-prjxxxx.md)

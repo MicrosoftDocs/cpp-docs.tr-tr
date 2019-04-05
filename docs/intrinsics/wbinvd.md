@@ -7,16 +7,16 @@ helpviewer_keywords:
 - __wbinvd intrinsic
 - wbinvd instruction
 ms.assetid: 628d0981-39e5-49e1-bd43-706d123af121
-ms.openlocfilehash: 0f775ba94c2dee1c2568e66b09fa1ffb31f512bb
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 99c7a452e063dea328e4aa1362aae8783929deb0
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50482543"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59039273"
 ---
 # <a name="wbinvd"></a>__wbinvd
 
-**Microsoft'a özgü**
+**Microsoft'a Özgü**
 
 Geri yazma ve geçersiz bir önbellek oluşturur (`wbinvd`) yönerge.
 
@@ -38,8 +38,8 @@ void __wbinvd(void);
 
 Bu işlev yalnızca 0 ayrıcalık düzeyi (CPL) ile çekirdek modunda kullanılabilir ve yordam yalnızca bir iç öğe olarak kullanılabilir.
 
-**END Microsoft özgü**
+**END Microsoft'a Özgü**
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)

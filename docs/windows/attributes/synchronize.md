@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - synchronize attribute
 ms.assetid: 15fc8544-955d-4765-b3d5-0f619c8b3f40
-ms.openlocfilehash: e5afec6257c421c0d3d5c95ba77c29767d0df280
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ea5236b887fb0df2a0acdd1e4050c66a4719072b
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50620902"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59037066"
 ---
 # <a name="synchronize"></a>eşitle
 
@@ -66,13 +66,13 @@ class CMyClass {
 
 |||
 |-|-|
-|**İçin geçerlidir**|Sınıf yöntemi yöntemi|
+|**Uygulandığı öğe:**|Sınıf yöntemi yöntemi|
 |**Tekrarlanabilir**|Hayır|
 |**Gerekli öznitelikleri**|Bir veya daha fazlasını: `coclass`, `progid`, veya `vi_progid`.|
 |**Geçersiz öznitelikler**|Yok.|
 
 Öznitelik bağlamları hakkında daha fazla bilgi için bkz: [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [COM Öznitelikleri](com-attributes.md)

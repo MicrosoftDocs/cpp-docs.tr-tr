@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - LNK4049
 ms.assetid: 5fd5fb24-c860-4149-a557-0ac26a65d97c
-ms.openlocfilehash: ed17a6014ddf420256848c87a90a37f190a0663e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: f9e5f1d9d5628a0da49300f541a4d5d4ce321c5f
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50429087"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59024497"
 ---
 # <a name="linker-tools-warning-lnk4049"></a>Bağlayıcı Araçları Uyarısı LNK4049
 
@@ -72,7 +72,7 @@ int main()
 }
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Bağlayıcı Araçları Uyarısı LNK4217](../../error-messages/tool-errors/linker-tools-warning-lnk4217.md)<br/>
 [dllexport, dllimport](../../cpp/dllexport-dllimport.md)

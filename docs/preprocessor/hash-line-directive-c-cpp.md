@@ -8,12 +8,12 @@ helpviewer_keywords:
 - line directive (#line)
 - '#line directive'
 ms.assetid: 585c1dc4-5184-4f01-98f4-80c1909744d7
-ms.openlocfilehash: e478d287af097081910d192e2ac0fbee6890bfa2
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ad0fe1514e89b861bab046652b1768862cc8045b
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50614766"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59023743"
 ---
 # <a name="line-directive-cc"></a>#line Yönergesi (C/C++)
 
@@ -51,6 +51,6 @@ Bu örnekte, makro `ASSERT` önceden tanımlanmış makrolar kullanan `__LINE__`
 __LINE__, __FILE__ );}
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Ön işlemci Yönergeleri](../preprocessor/preprocessor-directives.md)

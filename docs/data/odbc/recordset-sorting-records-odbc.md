@@ -1,19 +1,19 @@
 ---
-title: 'Kayıt Kümesi: Kayıtları Sıralama (ODBC)'
+title: 'Kayıt kümesi: Kayıtları sıralama (ODBC)'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - sorting data, recordset data
 - ODBC recordsets, sorting
 - recordsets, sorting
 ms.assetid: b40b152e-0a91-452e-be7b-e5bc27f744c7
-ms.openlocfilehash: 708ba8e851fa81ef2adb4360fe582880acd23c31
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 831f21901186ed0ae010b0f332327eefcba94b51
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50621281"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59024666"
 ---
-# <a name="recordset-sorting-records-odbc"></a>Kayıt Kümesi: Kayıtları Sıralama (ODBC)
+# <a name="recordset-sorting-records-odbc"></a>Kayıt kümesi: Kayıtları sıralama (ODBC)
 
 Bu konu MFC ODBC sınıflarına uygulanır.
 
@@ -59,8 +59,8 @@ Kayıt kümesi tüm azalan sırada (Z-A) olarak, ardından adlarına göre sıra
 > [!NOTE]
 >  Kendi SQL dizesi geçirerek kümesinin varsayılan SQL dizesi geçersiz kılmak isterseniz `Open`, özel dizenizi varsa bir sıralama ayarlı değil bir **ORDER BY** yan tümcesi.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Kayıt Kümesi (ODBC)](../../data/odbc/recordset-odbc.md)<br/>
-[Kayıt Kümesi: Bir Kayıt Kümesini Parametreleştirme (ODBC)](../../data/odbc/recordset-parameterizing-a-recordset-odbc.md)<br/>
-[Kayıt Kümesi: Kayıtları Filtreleme (ODBC)](../../data/odbc/recordset-filtering-records-odbc.md)
+[Kayıt kümesi: (ODBC) bir kayıt kümesini parametreleştirme](../../data/odbc/recordset-parameterizing-a-recordset-odbc.md)<br/>
+[Kayıt kümesi: Kayıtları filtreleme (ODBC)](../../data/odbc/recordset-filtering-records-odbc.md)

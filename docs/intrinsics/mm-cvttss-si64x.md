@@ -7,16 +7,16 @@ helpviewer_keywords:
 - _mm_cvttss_si64x intrinsic
 - cvttss2si instruction
 ms.assetid: f9a3fd07-5bd8-4758-8744-6315c082cf87
-ms.openlocfilehash: 2097ec50eca68cbe5735d30e772644552ab0df3b
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.openlocfilehash: cfdea6ded622cbcbe42bd555edb3029fabad7823
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51329026"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59023717"
 ---
 # <a name="mmcvttsssi64x"></a>_mm_cvttss_si64x
 
-**Microsoft'a özgü**
+**Microsoft'a Özgü**
 
 Genişletilmiş x64 yayan kesilmesi tek duyarlıklı Floating-Point numarası 64-Bit tamsayıya dönüştürme sürümünü (`cvttss2si`) yönerge.
 
@@ -85,9 +85,9 @@ int main()
 101
 ```
 
-**END Microsoft özgü**
+**END Microsoft'a Özgü**
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [__m128](../cpp/m128.md)<br/>
 [Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)

@@ -1,12 +1,12 @@
 ---
 title: ARM64 özel durum işleme
 ms.date: 11/19/2018
-ms.openlocfilehash: 43e43beae5ee02f9ef4537da08a1c9915056b777
-ms.sourcegitcommit: 5fc76f5b3c4c3ee49f38f05b37261a324591530b
+ms.openlocfilehash: ec81374f9a20cf5d23edda7d925705b6a4d5e2e6
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58870799"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59031738"
 ---
 # <a name="arm64-exception-handling"></a>ARM64 özel durum işleme
 
@@ -219,15 +219,15 @@ Bu veriler, dört bölüme ayrılır:
 
    e. **Sonuç sayısı** durumuna bağlı olarak iki anlama sahip 5-bit alanı **E** bit:
 
-      1. Varsa **E** 0 olarak ayarlayın: 2. bölümünde açıklanan özel durum kapsamları toplam sayısı sayısını belirtir. Birden fazla 31 kapsamları işlevinde varsa sonra **kod sözcükleri** alan bir uzantı Word'ün gerekli olduğunu belirtmek için 0 olarak ayarlanmalıdır.
+      1. Varsa **E** 0 olarak ayarlayın: toplam sayısı 2. bölümde açıklanan bitiş kapsamları sayısını belirtir. Birden fazla 31 kapsamları işlevinde varsa sonra **kod sözcükleri** alan bir uzantı Word'ün gerekli olduğunu belirtmek için 0 olarak ayarlanmalıdır.
 
       2. Varsa **E** Bu alan bir ve yalnızca sonuç açıklayan ilk geriye doğru izleme kodu dizinini belirten 1 olarak ayarlanır.
 
-   f. **Kod sözcük** tüm bölüm 4'teki geriye doğru izleme kodları içermesi için gerekli 32 bit sözcük sayısını belirten bir 5-bit alanıdır. 31'den fazla sözcük gerekiyorsa (örneğin, kod bayt 124'den fazla bırakma), sonra da bu alanı bir uzantı Word'ün gerekli olduğunu belirtmek için 0 olarak ayarlanması gerekir.
+   f. **Kod sözcük** tüm bölümünde 3 geriye doğru izleme kodları içermesi için gerekli 32 bit sözcük sayısını belirten bir 5-bit alanıdır. 31'den fazla sözcük gerekiyorsa (örneğin, kod bayt 124'den fazla bırakma), sonra da bu alanı bir uzantı Word'ün gerekli olduğunu belirtmek için 0 olarak ayarlanması gerekir.
 
    g. **Sonuç sayısı Genişletilmiş** ve **genişletilmiş kod sözcükleri** 16-bit ve 8-bit alanları, sırasıyla, olağan dışı derecede büyük bir sonuç sayısı kodlama için daha fazla alan sağlayan veya bir çok sayıda kod sözcükleri geriye doğru izleme. Bu alanlar içeren uzantı sözcüğünü yalnızca her iki mevcut **sonuç sayısı** ve **kod sözcükleri** ilk üstbilgi sözcük alanlara 0 olarak ayarlanır.
 
-1. Sonra özel durum verileri varsa **sonuç sayısı** sıfır değil, sonuç kapsamları hakkında bilgi listesi bir Word paketlenmiş ve, başlangıç uzaklığını artan sıraya göre depolanır. Her kapsam, aşağıdaki bit içerir:
+1. Üst bilgi ve isteğe bağlı genişletilmiş üst bilgisi, yukarıda açıklanan sonra **sonuç sayısı** sıfır değil, sonuç kapsamları hakkında bilgi listesi bir Word paketlenmiş ve, başlangıç uzaklığını artan sıraya göre depolanır. Her kapsam, aşağıdaki bit içerir:
 
    a. **Başlangıç ve bitiş uzaklığı** işlevi başlangıcını göre sonuç 4, bölü, bayt uzaklığı açıklayan bir 18 bit alanı
 
@@ -237,7 +237,7 @@ Bu veriler, dört bölüme ayrılır:
 
 1. Geriye doğru izleme kodları içeren bir bayt dizisi bitiş kapsam listesi çağrıldıktan sonra bir sonraki bölümde ayrıntılı açıklanmıştır. Bu dizi için en yakın tam sözcük sınırı sonunda sıfır eklenir. Küçük endian modunda doğrudan getirilebilir, böylece bayt little endian sırayla depolanır.
 
-1. Son olarak, geriye doğru izleme kodu bayt sonra (ve **X** bit üst bilgisindeki 1 olarak ayarlanmıştır) özel durum işleyicisi bilgileri alınır. Bu tek bir oluşur **özel durum işleyicisi RVA** adresi özel durum işleyicisinin kendisi, sağlama ve ardından hemen bir özel durum işleyici tarafından gerekli veri değişken uzunluklu miktarı.
+1. Son olarak, geriye doğru izleme kodu bayt sonra varsa **X** bit üst bilgisindeki gelen özel durum işleyicisi bilgilerini 1 olarak ayarlandığı. Bu tek bir oluşur **özel durum işleyicisi RVA** adresi özel durum işleyicisinin kendisi, sağlama ve ardından hemen bir özel durum işleyici tarafından gerekli veri değişken uzunluklu miktarı.
 
 Yukarıdaki sanal işlem bulunur kaydı ilk 8 bayt getirmek ve tam boyutunu (eksi aşağıdaki özel durum değişken boyutlu veri uzunluğu) kaydı, işlem olası olduğu şekilde tasarlanmıştır. Aşağıdaki kod parçacığı, kayıt boyutunu hesaplar:
 
