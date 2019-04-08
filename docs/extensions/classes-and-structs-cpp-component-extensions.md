@@ -8,12 +8,12 @@ helpviewer_keywords:
 - value struct keyword [C++]
 - ref struct keyword [C++]
 ms.assetid: 5c360764-b229-49c6-9357-66213afbc372
-ms.openlocfilehash: 34158b8d4ff2c052543328767ea928bbe5788ef0
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.openlocfilehash: fcc50109ce521e005e32a8c19b13aabe2230989b
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58787741"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59029735"
 ---
 # <a name="ref-class-and-ref-struct--ccli-and-ccx"></a>başvuru sınıfı ve ref struct (C + +/ CLI ve C + +/ CX)
 
@@ -38,10 +38,10 @@ class_accessvalue structnamemodifier :  inherit_accessbase_type {};
 *class_access*<br/>
 (İsteğe bağlı) Sınıfın veya yapının derleme dışından erişilebilirlik. Olası değerler **genel** ve **özel** (**özel** varsayılandır). İç içe geçmiş sınıflar veya yapılar sahip bir *class_access* tanımlayıcısı.
 
-*Adı*<br/>
+*name*<br/>
 Sınıfın veya yapının adı.
 
-*Değiştiricisi*<br/>
+* değiştiricisi*<br/>
 (İsteğe bağlı) [soyut](abstract-cpp-component-extensions.md) ve [korumalı](sealed-cpp-component-extensions.md) geçerli değiştiricilerdir.
 
 *inherit_access*<br/>
@@ -66,7 +66,7 @@ Sınıflar ve yapı birimleri hakkında daha fazla bilgi için bkz.
 
 - [Referans Türleri için C++ Yığın Anlamları](../dotnet/cpp-stack-semantics-for-reference-types.md)
 
-- [Sınıflar, yapılar ve birleşimler](../cpp/classes-and-structs-cpp.md)
+- [Sınıflar, Yapılar ve Birleşimler](../cpp/classes-and-structs-cpp.md)
 
 - [Yok ediciler ve sonlandırıcılar, nasıl yapılır: Sınıfları ve yapıları tanımlama ve kullanma (C + +/ CLI)](../dotnet/how-to-define-and-consume-classes-and-structs-cpp-cli.md#BKMK_Destructors_and_finalizers)
 
@@ -74,7 +74,7 @@ Sınıflar ve yapı birimleri hakkında daha fazla bilgi için bkz.
 
 - [Kullanıcı Tanımlı Dönüşümler (C++/CLI)](../dotnet/user-defined-conversions-cpp-cli.md)
 
-- [Nasıl yapılır: C# Tarafından Kullanılması için Yerel Sınıfı Sarmalama](../dotnet/how-to-wrap-native-class-for-use-by-csharp.md)
+- [Nasıl yapılır: Tarafından kullanım için yerel sınıfı sarmalamaC#](../dotnet/how-to-wrap-native-class-for-use-by-csharp.md)
 
 - [Genel Sınıflar (C++/CLI)](generic-classes-cpp-cli.md)
 
@@ -116,6 +116,6 @@ Aşağıdaki tabloda gösterilen söz dizimi farklılıklarını **tüm çalış
 
 Derleyici seçeneği: `/clr`
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[.NET ve UWP İçin Bileşen Uzantıları](component-extensions-for-runtime-platforms.md)
+[.NET ve UWP için bileşen uzantıları](component-extensions-for-runtime-platforms.md)

@@ -157,10 +157,10 @@ helpviewer_keywords:
 - CMDIFrameWndEx [MFC], m_bDisableSetRedraw
 ms.assetid: dbcafcb3-9a7a-4f11-9dfe-ba57565c81d0
 ms.openlocfilehash: b24afd943f2168657c6b4437fed65b0a45689b52
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/05/2019
 ms.locfileid: "58778565"
 ---
 # <a name="cmdiframewndex-class"></a>Cmdıframewndex sınıfı
@@ -719,7 +719,7 @@ Sekme etiketleri konumunu belirtir.
 *bTabCloseButton*<br/>
 Sekme Kapat düğmeleri görüntülenip görüntülenmeyeceğini belirtir.
 
-*Stil*<br/>
+* stili*<br/>
 Sekmeleri stilini belirtir. STYLE_3D_SCROLLED normal sekmeler veya STYLE_3D_ONENOTE için Microsoft OneNote sekmelerini kullanın.
 
 *bTabCustomTooltips*<br/>
@@ -2029,4 +2029,4 @@ Bu metot geçersiz kılmaları [CWnd::WinHelp](../../mfc/reference/cwnd-class.md
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
 [Sınıflar](../../mfc/reference/mfc-classes.md)<br/>
 [CMDIFrameWnd](../../mfc/reference/cframewnd-class.md)<br/>
-[CMDIChildWndEx Sınıfı](../../mfc/reference/cmdichildwndex-class.md)
+[Cmdıchildwndex sınıfı](../../mfc/reference/cmdichildwndex-class.md)

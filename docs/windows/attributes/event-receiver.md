@@ -12,12 +12,12 @@ helpviewer_keywords:
 - event sinks, creating
 - event sinks
 ms.assetid: bf8fe770-3ea2-4128-b46b-166222ee4097
-ms.openlocfilehash: e483ece1019d4a8203215eddbc4d3b9d545328a6
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 81a3ec88c336ddeb550f133e657854b3b6f89d96
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50663209"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59023301"
 ---
 # <a name="eventreceiver"></a>event_receiver
 
@@ -32,7 +32,7 @@ Bir olay alıcısı (havuz) oluşturur.
 
 ### <a name="parameters"></a>Parametreler
 
-*Türü*<br/>
+* türü*<br/>
 Sabit listesi aşağıdaki değerlerden biri:
 
 - `native` Yönetilmeyen C/C++ kodu için (varsayılan yerel sınıflar için).
@@ -69,14 +69,14 @@ Belirtin *layout_dependent* yalnızca `type` = **com**. *layout_dependent* bir B
 
 |||
 |-|-|
-|**İçin geçerlidir**|**sınıf**, **yapısı**|
+|**Uygulandığı öğe:**|**sınıf**, **yapısı**|
 |**Tekrarlanabilir**|Hayır|
 |**Gerekli öznitelikleri**|`coclass` zaman *layout_dependent*=**true**|
 |**Geçersiz öznitelikler**|Yok.|
 
 Daha fazla bilgi için [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Derleyici Öznitelikleri](compiler-attributes.md)<br/>
 [event_source](event-source.md)<br/>

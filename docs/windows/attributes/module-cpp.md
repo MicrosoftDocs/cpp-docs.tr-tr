@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - module attributes
 ms.assetid: 02223b2a-62b5-4262-832f-564b1e11e58e
-ms.openlocfilehash: bafdb65f255ddf33964d22e5ea80a62446c2ad45
-ms.sourcegitcommit: c85c8a1226d8fbbaa29f4691ed719f8e6cc6575c
+ms.openlocfilehash: 5c69e0aa9e3444ec9b43470f8feb4d1f870dc9c8
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54893528"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59040586"
 ---
 # <a name="module-c"></a>modül (C++)
 
@@ -25,7 +25,7 @@ Kitaplık blok .idl dosyasında tanımlar.
 
 ### <a name="parameters"></a>Parametreler
 
-*type*<br/>
+* türü*<br/>
 (İsteğe bağlı) Aşağıdakilerden biri olabilir:
 
 - `dll` İşlevleri ve işlemde COM sunucusu olarak çalışabilmesi ortaya çıkan DLL'yi izin sınıflar ekler. Varsayılan değer budur.
@@ -36,10 +36,10 @@ Kitaplık blok .idl dosyasında tanımlar.
 
 - `unspecified` Modül özniteliği için ilgili ATL kod ekleme devre dışı bırakır: ekleme ATL modül sınıfı, genel örnek _AtlModule ve giriş noktası işlevleri. ATL kod projesinde diğer öznitelikleri nedeniyle ekleme devre dışı bırakmaz.
 
-*Adı*<br/>
+*name*<br/>
 (İsteğe bağlı) Kitaplık blok adı.
 
-*version*<br/>
+*sürüm*<br/>
 (İsteğe bağlı) Kitaplığını bloğuna atamak istediğiniz sürüm numarası. 1.0 varsayılan değerdir.
 
 *uuid*<br/>
@@ -48,7 +48,7 @@ Kitaplık için benzersiz kimliği. Bu parametreyi unutursanız, kitaplık için
 *lcid*<br/>
 Yerelleştirme parametre. Bkz: [LCID](/windows/desktop/Midl/lcid) daha fazla bilgi için.
 
-*control*<br/>
+* denetimi*<br/>
 (İsteğe bağlı) Kitaplığı'nda, tüm coclass'ları denetimleri olduğunu belirtir.
 
 *helpstring*<br/>
@@ -66,13 +66,13 @@ Tür kitaplığını belirtir.
 *helpstringcontext*<br/>
 (İsteğe bağlı) Bkz: [helpstringcontext](helpstringcontext.md) daha fazla bilgi için.
 
-*hidden*<br/>
+*gizli*<br/>
 (İsteğe bağlı) Tüm Kitaplığı görüntülenmesini engeller. Bu kullanım denetimleri ile kullanıma yöneliktir. Genişletilmiş özelliklere sahip bir denetim sarmalayan yeni bir tür kitaplığı oluşturmak konakları gerekir. Bkz: [gizli](/windows/desktop/Midl/hidden) daha fazla bilgi için MIDL özniteliği.
 
-*restricted*<br/>
+*kısıtlı*<br/>
 (İsteğe bağlı) Kitaplık üyelerini rasgele çağrılamaz. Bkz: [kısıtlı](/windows/desktop/Midl/restricted) daha fazla bilgi için MIDL özniteliği.
 
-*custom*<br/>
+*özel*<br/>
 (İsteğe bağlı) Bir veya daha fazla öznitelik varsa Bu benzer [özel](custom-cpp.md) özniteliği. İlk parametre olarak *özel* özniteliğinin GUID'dir. Örneğin:
 
 ```
@@ -152,22 +152,22 @@ BOOL WINAPI DllMain(DWORD dwReason, LPVOID lpReserved) {
 
 |||
 |-|-|
-|**İçin geçerlidir**|Her yerde|
+|**Uygulandığı öğe:**|Her yerde|
 |**Tekrarlanabilir**|Hayır|
-|**Gerekli öznitelikleri**|Hiçbiri|
-|**Geçersiz öznitelikler**|Hiçbiri|
+|**Gerekli öznitelikleri**|Yok.|
+|**Geçersiz öznitelikler**|Yok.|
 
 Daha fazla bilgi için [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[IDL öznitelikleri](idl-attributes.md)<br/>
+[IDL Öznitelikleri](idl-attributes.md)<br/>
 [Sınıf Öznitelikleri](class-attributes.md)<br/>
 [Tek Başına Öznitelikler](stand-alone-attributes.md)<br/>
 [Typedef, Enum, Union ve Struct Öznitelikleri](typedef-enum-union-and-struct-attributes.md)<br/>
 [usesgetlasterror](usesgetlasterror.md)<br/>
-[Kitaplık](/windows/desktop/Midl/library)<br/>
+[kitaplık](/windows/desktop/Midl/library)<br/>
 [helpcontext](helpcontext.md)<br/>
 [helpstring](helpstring.md)<br/>
 [helpfile](helpfile.md)<br/>
-[version](version-cpp.md)
+[sürüm](version-cpp.md)

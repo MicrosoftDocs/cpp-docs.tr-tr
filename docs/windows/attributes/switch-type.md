@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - switch_type attribute
 ms.assetid: e24544dc-b3bc-48ae-b249-f967db49271e
-ms.openlocfilehash: e8827fe576282b86f1d3bc633ec7f9f954c015b7
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b461769d3d988efae0be7380e1e0112e3f3cf801
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50448795"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59027863"
 ---
 # <a name="switchtype"></a>switch_type
 
@@ -27,7 +27,7 @@ type
 
 ### <a name="parameters"></a>Parametreler
 
-*Türü*<br/>
+* türü*<br/>
 Anahtar türü, bir tamsayı, karakter, Boole veya numaralandırma türü olabilir.
 
 ## <a name="remarks"></a>Açıklamalar
@@ -63,15 +63,15 @@ Bkz: [çalışması](case-cpp.md) örnek kullanımını örneğin **switch_type*
 
 |||
 |-|-|
-|**İçin geçerlidir**|**tür tanımı**|
+|**Uygulandığı öğe:**|**typedef**|
 |**Tekrarlanabilir**|Hayır|
 |**Gerekli öznitelikleri**|Yok.|
 |**Geçersiz öznitelikler**|Yok.|
 
 Öznitelik bağlamları hakkında daha fazla bilgi için bkz: [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[IDL öznitelikleri](idl-attributes.md)<br/>
+[IDL Öznitelikleri](idl-attributes.md)<br/>
 [Typedef, Enum, Union ve Struct Öznitelikleri](typedef-enum-union-and-struct-attributes.md)<br/>
-[export](export.md)
+[dışarı aktar](export.md)

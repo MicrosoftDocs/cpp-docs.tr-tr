@@ -105,10 +105,10 @@ helpviewer_keywords:
 - CMFCTabCtrl [MFC], m_bEnableActivate
 ms.assetid: d441385d-2c72-4203-96fa-deae2273da35
 ms.openlocfilehash: 43eb171ce9b3ea3454855dc1f92d9aa1b74645d4
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/05/2019
 ms.locfileid: "58778461"
 ---
 # <a name="cmfctabctrl-class"></a>CMFCTabCtrl sınıfı
@@ -310,10 +310,10 @@ BOOL Create(
 
 ### <a name="parameters"></a>Parametreler
 
-*Stil*<br/>
+* stili*<br/>
 [in] Sekme denetimi stili. Daha fazla bilgi için açıklamalara bakın.
 
-*Rect*<br/>
+*rect*<br/>
 [in] Sekme denetimi sınırların bir dikdörtgen.
 
 *pParentWnd*<br/>
@@ -564,7 +564,7 @@ virtual void GetTabsRect(CRect& rect) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*Rect*<br/>
+*rect*<br/>
 [out] Bu yöntem döndürüldüğünde, *rect* sekme alanı sınırların bir dikdörtgen parametresi içerir.
 
 ##  <a name="getwndarea"></a>  CMFCTabCtrl::GetWndArea
@@ -577,7 +577,7 @@ void GetWndArea(CRect& rect) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*Rect*<br/>
+*rect*<br/>
 [out içinde] Bu yöntem döndürüldüğünde, bu parametre, geçerli sekme denetimi sınırların bir dikdörtgen içerir.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -835,7 +835,7 @@ BOOL ModifyTabStyle(Style style);
 
 ### <a name="parameters"></a>Parametreler
 
-*Stil*<br/>
+* stili*<br/>
 [in] Sekme denetiminin görünümünü belirten numaralandırma değerlerinden biri. Daha fazla bilgi için açıklamalar içindeki tabloya bakın.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -1139,6 +1139,6 @@ Bu yöntem yalnızca düz sekmeleri görüntüleyen bir sekme denetimi etkiler. 
 
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
 [Sınıflar](../../mfc/reference/mfc-classes.md)<br/>
-[CDockablePane Sınıfı](../../mfc/reference/cdockablepane-class.md)<br/>
-[CDockablePane Sınıfı](../../mfc/reference/cdockablepane-class.md)<br/>
-[CMFCBaseTabCtrl Sınıfı](../../mfc/reference/cmfcbasetabctrl-class.md)
+[CDockablePane sınıfı](../../mfc/reference/cdockablepane-class.md)<br/>
+[CDockablePane sınıfı](../../mfc/reference/cdockablepane-class.md)<br/>
+[CMFCBaseTabCtrl sınıfı](../../mfc/reference/cmfcbasetabctrl-class.md)

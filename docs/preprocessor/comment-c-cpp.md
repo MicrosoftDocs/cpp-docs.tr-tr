@@ -10,12 +10,12 @@ helpviewer_keywords:
 - pragmas, comment
 - comment pragma
 ms.assetid: 20f099ff-6303-49b3-9c03-a94b6aa69b85
-ms.openlocfilehash: ec80e8cf177becdc25bdf49d6dfa9ad9c7794b88
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: fb9bfef2ae751529b8424143cde020e78f17ec72
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50612832"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59025276"
 ---
 # <a name="comment-cc"></a>comment (C/C++)
 
@@ -31,7 +31,7 @@ Bir yorum kaydı, bir nesne dosyası veya yürütülebilir dosyanın yerleştiri
 
 *Açıklama türü* , aşağıda açıklanan önceden tanımlanmış tanımlayıcıları, yorum kayıt türünü belirten biridir. İsteğe bağlı *commentstring* olan bazı açıklama türleri için ek bilgi sağlayan bir dize sabit değeri. Çünkü *commentstring* bir değişmez dize sabit değerleri kaçış karakterleri, katıştırılmış tırnak işaretleri ile ilgili tüm kuralları ilişkiden bir dizedir (`"`) ve birleştirme.
 
-### <a name="compiler"></a>derleyicisi
+### <a name="compiler"></a> derleyicisi
 
 Derleyicinin adını ve sürüm numarası, nesne dosyasına yerleştirir. Bu açıklama kayıt bağlayıcı tarafından göz ardı edilir. Sağlarsanız, bir *commentstring* parametresi için bu bir kayıt türü, derleyici bir uyarı oluşturur.
 
@@ -67,7 +67,7 @@ Yalnızca aşağıdaki (*açıklama türü*) bağlayıcı tanımlayıcısına ge
 
 - [/ MERGE](../build/reference/merge-combine-sections.md)
 
-- [/ SECTION](../build/reference/section-specify-section-attributes.md)
+- [/SECTION](../build/reference/section-specify-section-attributes.md)
 
 ### <a name="user"></a>kullanıcı
 
@@ -92,6 +92,6 @@ Aşağıdaki pragması, derleyicinin nesne dosyasında derleyicinin adını ve s
 #pragma comment( user, "Compiled on " __DATE__ " at " __TIME__ )
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Pragma Yönergeleri ve __Pragma Anahtar Sözcüğü](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

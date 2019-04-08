@@ -233,10 +233,10 @@ helpviewer_keywords:
 - CMFCRibbonBaseElement [MFC], OnSetFocus
 ms.assetid: 419ea91b-5062-44cc-b0a3-f87d29566f62
 ms.openlocfilehash: 6daa5b6249c7ff18a8bc01c2309ffb94d3fb88ce
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/05/2019
 ms.locfileid: "58773079"
 ---
 # <a name="cmfcribbonbaseelement-class"></a>CMFCRibbonBaseElement sınıfı
@@ -580,7 +580,7 @@ virtual void DrawImage(
 *pDC*<br/>
 [in] Bir cihaz bağlamı işaretçisi.
 
-*type*<br/>
+* türü*<br/>
 [in] Görüntü türü numaralandırılmış değeri. Olası değerler listesi için Açıklamalar bölümüne bakın.
 
 *rectImage*<br/>
@@ -1700,7 +1700,7 @@ virtual void OnDrawKeyTip(
 *pDC*<br/>
 [in] Bir cihaz bağlamı işaretçisi.
 
-*Rect*<br/>
+*rect*<br/>
 [in] Tuş ipucunu için sınır dikdörtgen.
 
 *bIsMenu*<br/>
@@ -1723,7 +1723,7 @@ virtual BOOL OnDrawMenuImage(
 *pDC*<br/>
 [in] Bir cihaz bağlamı işaretçisi.
 
-*Rect*<br/>
+*rect*<br/>
 [in] Dikdörtgen resim menüsü.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -1757,7 +1757,7 @@ virtual void OnDrawOnList(
 *nTextOffset*<br/>
 [in] Görüntülenecek metni liste kutusuna sol tarafındaki piksel cinsinden uzaklığı.
 
-*Rect*<br/>
+*rect*<br/>
 [in] Şerit öğesi için görünen dikdörtgen.
 
 *bIsSelected*<br/>
@@ -1933,7 +1933,7 @@ virtual BOOL SetACCData(
 *pParent*<br/>
 Şerit öğesi için üst pencere.
 
-*Veri*<br/>
+*veri*<br/>
 Şerit öğesi için erişilebilirlik verileri.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -2135,7 +2135,7 @@ void SetRect(CRect rect);
 
 ### <a name="parameters"></a>Parametreler
 
-*Rect*<br/>
+*rect*<br/>
 [in] Dikdörtgenin boyutları.
 
 ### <a name="remarks"></a>Açıklamalar

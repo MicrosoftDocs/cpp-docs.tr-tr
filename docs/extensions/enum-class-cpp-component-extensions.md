@@ -3,12 +3,12 @@ title: sabit listesi sınıfı (C + +/ CLI ve C + +/ CX)
 ms.date: 10/12/2018
 ms.topic: reference
 ms.assetid: 8010fa8c-bad6-45b4-8214-b4db64d7ffe1
-ms.openlocfilehash: 0c93bc6b8994b8a02050466a1dcba5bc77fddd32
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.openlocfilehash: da9097a02de08fd1615f5401d08c438c5f64c139
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58787604"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59037032"
 ---
 # <a name="enum-class--ccli-and-ccx"></a>sabit listesi sınıfı (C + +/ CLI ve C + +/ CX)
 
@@ -34,7 +34,7 @@ accessenum structenumeration-identifier[:underlying-type] { enumerator-list } [v
 
 ### <a name="parameters"></a>Parametreler
 
-*Erişim*<br/>
+*erişim*<br/>
 Erişilebilirlik olabilir numaralandırma **genel** veya **özel**.
 
 *Numaralandırma tanımlayıcı*<br/>
@@ -82,16 +82,16 @@ accessenum structname [:type] { enumerator-list } var;
 
 ### <a name="parameters"></a>Parametreler
 
-*Erişim*<br/>
+*erişim*<br/>
 Sabit listesinin erişilebilirlik. Olabilir **genel** veya **özel**.
 
 *Numaralandırıcı-listesi*<br/>
 Sabit tanımlayıcıları (Numaralandırıcı) virgülle ayrılmış listesi.
 
-*Adı*<br/>
+*name*<br/>
 Sabit listesinin adı. Anonim yönetilen numaralandırmalar izin verilmez.
 
-*type*<br/>
+* türü*<br/>
 (İsteğe bağlı) Temel alınan türü *tanımlayıcıları*. Bu imzalı veya imzasız sürümleri gibi herhangi bir skalar türü olabilir **int**, **kısa**, veya **uzun**.  **bool** veya **char** da izin verilir.
 
 *var*<br/>
@@ -219,6 +219,6 @@ convert to int: 1
 1
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[.NET ve UWP İçin Bileşen Uzantıları](component-extensions-for-runtime-platforms.md)
+[.NET ve UWP için bileşen uzantıları](component-extensions-for-runtime-platforms.md)

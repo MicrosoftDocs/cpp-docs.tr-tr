@@ -143,12 +143,12 @@ helpviewer_keywords:
 - _WINRT_DLL macro
 - __func__ identifier
 ms.assetid: 1cc5f70a-a225-469c-aed0-fe766238e23f
-ms.openlocfilehash: 9ebc23545817de0f249185700454237c66610c13
-ms.sourcegitcommit: d441305fb19131afbd7fc259d8cda63ea26f2343
+ms.openlocfilehash: 9dcc0922f3715d1e583605a071535f51fa8b2f57
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51678360"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59032459"
 ---
 # <a name="predefined-macros"></a>Önceden Tanımlı Makrolar
 
@@ -395,7 +395,7 @@ Microsoft Visual C++ bu ek önceden tanımlı makrolar destekler.
 
    Daha fazla bilgi için [Visual C++ Derleyici sürümü](https://blogs.msdn.microsoft.com/vcblog/2016/10/05/visual-c-compiler-version/) Visual C++ Team blogunda.
 
-- **&#95;MSVC&#95;LANG** derleyici tarafından hedeflenen C++ dil standardı belirten bir tamsayı sabit değeri olarak tanımlanır. C++ derlendiğinde, makro tamsayı değişmez değer 201402 L ise [/Std: c ++ 14](../build/reference/std-specify-language-standard-version.md) derleyici seçeneği ayarlanır veya varsayılan olarak; 201703 M'ye varsa ayarlanır [/Std: c ++ 17](../build/reference/std-specify-language-standard-version.md) ayarlanır ve derleyici seçeneği ayarlanır; bir Yüksek, belirtilmeyen değeri [/Std: c ++ Son](../build/reference/std-specify-language-standard-version.md). Aksi takdirde, makro tanımsız olur. **&#95;MSVC&#95;LANG** makrosu ve [/Std (dil standart sürümünü belirtin)](../build/reference/std-specify-language-standard-version.md) derleyici seçenekleri olan Visual Studio 2015 güncelleştirme 3'te sonraki sürümlerinde kullanılabilir.
+- **&#95;MSVC&#95;LANG** derleyici tarafından hedeflenen C++ dil standardı belirten bir tamsayı sabit değeri olarak tanımlanır. C++ derlendiğinde, makro tamsayı değişmez değer 201402 L ise [/Std: c ++ 14](../build/reference/std-specify-language-standard-version.md) derleyici seçeneği ayarlanır veya varsayılan olarak; 201703 M'ye varsa ayarlanır [/Std: c ++ 17](../build/reference/std-specify-language-standard-version.md) ayarlanır ve derleyici seçeneği ayarlanır; bir Yüksek, belirtilmeyen değeri [/Std: c ++ Son](../build/reference/std-specify-language-standard-version.md). Aksi takdirde, makro tanımsız olur.  **&#95;MSVC&#95;LANG** makrosu ve [/Std (dil standart sürümünü belirtin)](../build/reference/std-specify-language-standard-version.md) derleyici seçenekleri olan Visual Studio 2015 güncelleştirme 3'te sonraki sürümlerinde kullanılabilir.
 
 - **&#95;&#95;MSVC&#95;çalışma zamanı&#95;DENETLER** biri 1 tanımlanmış, [/RTC](../build/reference/rtc-run-time-error-checks.md) derleyici seçeneklerini ayarlayın. Aksi takdirde, tanımlı değil.
 
@@ -420,7 +420,7 @@ Microsoft Visual C++ bu ek önceden tanımlı makrolar destekler.
 
 - **&#95;VC&#95;NODEFAULTLIB** 1 olduğunda tanımlanan [/Zl (varsayılan kitaplık adını atla)](../build/reference/zl-omit-default-library-name.md) derleyici seçeneği ayarlanır. Aksi takdirde, tanımlı değil.
 
-- **&#95;WCHAR&#95;T&#95;TANIMLANAN** 1 olduğunda tanımlanan varsayılan [/ZC: wchar_t](../build/reference/zc-wchar-t-wchar-t-is-native-type.md) derleyici seçeneği ayarlanır. **&#95;WCHAR&#95;T&#95;TANIMLANAN** makrosu tanımlandı, ancak hiçbir değer sahipse `/Zc:wchar_t-` derleyici seçeneği ayarlanır, ve **wchar_t** dahil olan sistem üstbilgi dosyasında tanımlanan, Proje. Aksi takdirde, tanımlı değil.
+- **&#95;WCHAR&#95;T&#95;TANIMLANAN** 1 olduğunda tanımlanan varsayılan [/ZC: wchar_t](../build/reference/zc-wchar-t-wchar-t-is-native-type.md) derleyici seçeneği ayarlanır.  **&#95;WCHAR&#95;T&#95;TANIMLANAN** makrosu tanımlandı, ancak hiçbir değer sahipse `/Zc:wchar_t-` derleyici seçeneği ayarlanır, ve **wchar_t** dahil olan sistem üstbilgi dosyasında tanımlanan, Proje. Aksi takdirde, tanımlı değil.
 
 - **&#95;WIN32** tanımlanan 32 bit ARM, 64-bit ARM x86, derleme hedef olduğunda 1 olarak veya x 64. Aksi takdirde, tanımlı değil.
 
@@ -434,8 +434,8 @@ ATL veya MFC kitaplık sürümünü belirlemek için kullanılan Önişlemci mak
 
 - **&#95;MFC&#95;VER** tanımlanan \<afxver_.h > MFC sürüm numarasını kodlayan bir tamsayı sabit değeri olarak.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Makrolar (C/C++)](../preprocessor/macros-c-cpp.md)<br/>
-[Ön İşlemci İşleçleri](../preprocessor/preprocessor-operators.md)<br/>
+[Ön işlemci İşleçleri](../preprocessor/preprocessor-operators.md)<br/>
 [Ön işlemci Yönergeleri](../preprocessor/preprocessor-directives.md)

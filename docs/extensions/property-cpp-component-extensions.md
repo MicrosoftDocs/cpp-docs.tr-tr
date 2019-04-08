@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - property keyword [C++]
 ms.assetid: cc79d2b2-f013-4d81-8252-eece97a18704
-ms.openlocfilehash: 31b5673426a8c31cea203002018cc3a465952859
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.openlocfilehash: 8ec76db37cffb1b3d15447165300bedf1a8771c9
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58787156"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59038812"
 ---
 # <a name="property--ccli-and-ccx"></a>özellik (C + +/ CLI ve C + +/ CX)
 
@@ -61,7 +61,7 @@ property type default[index_list] {
 
 ### <a name="parameters"></a>Parametreler
 
-*type*<br/>
+* türü*<br/>
 Özellik değeri ve bu nedenle özelliği veri türü.
 
 *property_name*<br/>
@@ -113,10 +113,10 @@ modifier property type default[index];
 
 ### <a name="parameters"></a>Parametreler
 
-*Değiştiricisi*<br/>
+* değiştiricisi*<br/>
 Özellik bildiriminde ya da bir get/set erişimcisine yöntemi kullanılabilir değiştiricisi. Olası değerler **statik** ve **sanal**.
 
-*type*<br/>
+* türü*<br/>
 Özelliği tarafından temsil edilen değerin türü.
 
 *property_name*<br/>
@@ -213,6 +213,6 @@ test
 21
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[.NET ve UWP İçin Bileşen Uzantıları](component-extensions-for-runtime-platforms.md)
+[.NET ve UWP için bileşen uzantıları](component-extensions-for-runtime-platforms.md)

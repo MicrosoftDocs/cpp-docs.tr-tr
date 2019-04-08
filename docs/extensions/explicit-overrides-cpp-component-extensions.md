@@ -5,12 +5,12 @@ ms.topic: reference
 helpviewer_keywords:
 - overriding, override [C++]
 ms.assetid: 4ec3eaf5-163b-4df8-8f16-7a2ec04c3d0f
-ms.openlocfilehash: 64b50505104b2f4ee9e5aade4f9bca104c1d5565
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.openlocfilehash: 7d36793e4467f9454aca1eb207f3c3dfbd483bff
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58787653"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59021423"
 ---
 # <a name="explicit-overrides--ccli-and-ccx"></a>Açık geçersiz kılmalar (C + +/ CLI ve C + +/ CX)
 
@@ -30,10 +30,10 @@ overriding-function-declarator = function { overriding-function-definition }
 *geçersiz kılma-işlevi-declarator*<br/>
 Geçersiz kılma işlev dönüş türü, adı ve bağımsız değişken listesi.  Geçersiz kılma işlevi geçersiz kılınmasını işlevi aynı ada sahip olmadığını unutmayın.
 
-*type*<br/>
+* türü*<br/>
 Geçersiz kılmak için bir işlevi içeren temel türü.
 
-*İşlevi*<br/>
+* işlevi*<br/>
 Geçersiz kılmak için bir veya daha fazla işlev adlarının virgülle ayrılmış listesi.
 
 *geçersiz kılma-işlevi-definition*<br/>
@@ -172,6 +172,6 @@ public:
 };
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[.NET ve UWP İçin Bileşen Uzantıları](component-extensions-for-runtime-platforms.md)
+[.NET ve UWP için bileşen uzantıları](component-extensions-for-runtime-platforms.md)

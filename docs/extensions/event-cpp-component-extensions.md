@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - event keyword [C++]
 ms.assetid: c4998e42-883c-4419-bbf4-36cdc979dd27
-ms.openlocfilehash: a0e3ffbd4bce156ea4bf04e1524d2e778d24de79
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.openlocfilehash: 26bfc3bb9892486353f55a71cfd86a17f2de98b5
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58787078"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59033092"
 ---
 # <a name="event--ccli-and-ccx"></a>Olay (C + +/ CLI ve C + +/ CX)
 
@@ -40,10 +40,10 @@ modifiereventdelegate^ event_name
 
 ### <a name="parameters"></a>Parametreler
 
-*Değiştiricisi*<br/>
+* değiştiricisi*<br/>
 Olay bildirimi ya da bir olay erişimci yöntemi kullanılabilir değiştiricisi.  Olası değerler **statik** ve **sanal**.
 
-*delegate*<br/>
+*temsilci*<br/>
 [Temsilci](delegate-cpp-component-extensions.md), imzası olan olay işleyicisi eşleşmesi gerekir.
 
 *EVENT_NAME*<br/>
@@ -104,10 +104,10 @@ modifiereventdelegate^ event_name
 
 ### <a name="parameters"></a>Parametreler
 
-*Değiştiricisi*<br/>
+* değiştiricisi*<br/>
 Olay bildirimi ya da bir olay erişimci yöntemi kullanılabilir değiştiricisi.  Olası değerler **statik** ve **sanal**.
 
-*delegate*<br/>
+*temsilci*<br/>
 [Temsilci](delegate-cpp-component-extensions.md), imzası olan olay işleyicisi eşleşmesi gerekir.
 
 *EVENT_NAME*<br/>
@@ -270,6 +270,6 @@ int main() {
 688
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[.NET ve UWP İçin Bileşen Uzantıları](component-extensions-for-runtime-platforms.md)
+[.NET ve UWP için bileşen uzantıları](component-extensions-for-runtime-platforms.md)

@@ -1,5 +1,5 @@
 ---
-title: iletisi
+title: " iletisi"
 ms.date: 11/04/2016
 f1_keywords:
 - message_CPP
@@ -8,14 +8,14 @@ helpviewer_keywords:
 - message pragma
 - pragmas, message
 ms.assetid: 67414f25-ed47-4079-a5dc-21d9d1a39754
-ms.openlocfilehash: a55721fb954cf9383022b4fc8e84327ea4c772e7
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e9383238fd308ec59a9767f56af1c07fc3cfcf07
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50627389"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59030212"
 ---
-# <a name="message"></a>iletisi
+# <a name="message"></a> iletisi
 Derlemeyi sonlandırmadan standart çıktıya bir dize sabiti gönderir.
 
 ## <a name="syntax"></a>Sözdizimi
@@ -57,6 +57,6 @@ Aşağıdaki kod parçası kullanan **ileti** pragması, derleme sırasında ile
 #pragma message("")
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Pragma Yönergeleri ve __Pragma Anahtar Sözcüğü](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

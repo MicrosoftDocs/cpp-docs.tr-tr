@@ -5,12 +5,12 @@ helpviewer_keywords:
 - union attributes
 - attributes [C++/CLI], reference topics
 ms.assetid: f8a4fe94-dc02-4aed-bc31-3e500d42f4c7
-ms.openlocfilehash: 289935c3651535b5f935624dc33246fbe83a4ceb
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 2b56ada13a0c597866d538991ed1e83078924ac9
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50631068"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59029589"
 ---
 # <a name="typedef-enum-union-and-struct-attributes"></a>Typedef, Enum, Union ve Struct Öznitelikleri
 
@@ -20,9 +20,9 @@ Aşağıdaki öznitelikler uygulamak [typedef](../../cpp/aliases-and-typedefs-cp
 
 |Öznitelik|Açıklama|
 |---------------|-----------------|
-|[case](case-cpp.md)|İle kullanılan [switch_type](switch-type.md) özniteliğini bir **birleşim**.|
-|[custom](custom-cpp.md)|Kendi özniteliğinizi tanımlamanızı sağlar.|
-|[export](export.md)|Bir veri yapısı .idl dosyasında yerleştirilmesine neden olur.|
+|[büyük/küçük harf](case-cpp.md)|İle kullanılan [switch_type](switch-type.md) özniteliğini bir **birleşim**.|
+|[özel](custom-cpp.md)|Kendi özniteliğinizi tanımlamanızı sağlar.|
+|[dışarı aktar](export.md)|Bir veri yapısı .idl dosyasında yerleştirilmesine neden olur.|
 |[first_is](first-is.md)|Aktarılacak ilk dizi öğesinin dizinini belirtir.|
 |[helpcontext](helpcontext.md)|Kullanıcı Yardım dosyasında bu öğe hakkındaki bilgileri görüntüleme sağlayan bir bağlam kimliği belirtir.|
 |[helpfile](helpfile.md)|Bir tür kitaplığı için Yardım dosyasına adını ayarlar.|
@@ -40,8 +40,8 @@ Aşağıdaki öznitelikler uygulamak [typedef](../../cpp/aliases-and-typedefs-cp
 
 |Öznitelik|Açıklama|
 |---------------|-----------------|
-|[custom](custom-cpp.md)|Kendi özniteliğinizi tanımlamanızı sağlar.|
-|[export](export.md)|Bir veri yapısı .idl dosyasında yerleştirilmesine neden olur.|
+|[özel](custom-cpp.md)|Kendi özniteliğinizi tanımlamanızı sağlar.|
+|[dışarı aktar](export.md)|Bir veri yapısı .idl dosyasında yerleştirilmesine neden olur.|
 |[uuid](uuid-cpp-attributes.md)|Bir sınıf veya arabirim için benzersiz Kimliğini belirtir.|
 |[v1_enum](v1-enum.md)|Belirtilen listeden seçimli türü 16-bit varsayılan yerine bir 32-bit varlık olarak iletilmesi yönlendirir.|
 
@@ -49,8 +49,8 @@ Aşağıdaki öznitelikler uygulamak [typedef](../../cpp/aliases-and-typedefs-cp
 
 |Öznitelik|Açıklama|
 |---------------|-----------------|
-|[custom](custom-cpp.md)|Kendi özniteliğinizi tanımlamanızı sağlar.|
-|[export](export.md)|Bir veri yapısı .idl dosyasında yerleştirilmesine neden olur.|
+|[özel](custom-cpp.md)|Kendi özniteliğinizi tanımlamanızı sağlar.|
+|[dışarı aktar](export.md)|Bir veri yapısı .idl dosyasında yerleştirilmesine neden olur.|
 |[first_is](first-is.md)|Aktarılacak ilk dizi öğesinin dizinini belirtir.|
 |[last_is](last-is.md)|Aktarılacak olan son dizi öğenin dizinini belirtir.|
 |[length_is](length-is.md)|Aktarılacak dizi öğelerinin sayısını belirtir.|
@@ -75,8 +75,8 @@ Aşağıdaki öznitelikler uygulamak [typedef](../../cpp/aliases-and-typedefs-cp
 |[appobject](appobject.md)|Coclass'ı bir tam .exe uygulamayla ilişkili olan ve bu tür kitaplığında coclass'ı özellikleri ve işlevleri genel olarak kullanılabilir olduğunu gösterir bir uygulama nesnesi olarak tanımlar.|
 |[coclass](coclass.md)|Bir ActiveX denetimi oluşturur.|
 |[com_interface_entry](com-interface-entry-cpp.md)|Bir arabirim giriş için bir COM eşlemesi ekler.|
-|[control](control.md)|Kullanıcı tanımlı tür bir denetimi olduğunu belirtir.|
-|[custom](custom-cpp.md)|Kendi özniteliğinizi tanımlamanızı sağlar.|
+|[ denetimi](control.md)|Kullanıcı tanımlı tür bir denetimi olduğunu belirtir.|
+|[özel](custom-cpp.md)|Kendi özniteliğinizi tanımlamanızı sağlar.|
 |[db_column](db-column.md)|Belirtilen sütun, satır kümesine bağlar.|
 |[db_command](db-command.md)|OLE DB komut oluşturur.|
 |[db_param](db-param.md)|Belirtilen üye bağımsız değişkenine bir giriş veya çıkış parametresi ile ilişkilendirir ve değişken sınırlandırır.|
@@ -86,22 +86,22 @@ Aşağıdaki öznitelikler uygulamak [typedef](../../cpp/aliases-and-typedefs-cp
 |[defaultvtable](defaultvtable.md)|Bir denetim için varsayılan vtable arabirimi olarak bir arabirim tanımlar.|
 |[event_receiver](event-receiver.md)|Bir olay alıcısı oluşturur.|
 |[event_source](event-source.md)|Olay kaynağı oluşturur.|
-|[export](export.md)|Bir veri yapısı .idl dosyasında yerleştirilmesine neden olur.|
+|[dışarı aktar](export.md)|Bir veri yapısı .idl dosyasında yerleştirilmesine neden olur.|
 |[first_is](first-is.md)|Aktarılacak ilk dizi öğesinin dizinini belirtir.|
-|[hidden](hidden.md)|Öğe var ancak kullanıcıya dayalı tarayıcıda görüntülenmemesi gerektiğini belirtir.|
+|[gizli](hidden.md)|Öğe var ancak kullanıcıya dayalı tarayıcıda görüntülenmemesi gerektiğini belirtir.|
 |[implements_category](implements-category.md)|Sınıfı için uygulanan bir bileşen kategorilerini belirtir.|
 |[last_is](last-is.md)|Aktarılacak olan son dizi öğenin dizinini belirtir.|
 |[length_is](length-is.md)|Aktarılacak dizi öğelerinin sayısını belirtir.|
 |[max_is](max-is.md)|Geçerli dizi dizini için maksimum değeri atar.|
 |[requires_category](requires-category.md)|Hedef sınıfın gerekli bileşen kategorilerini belirler.|
 |[size_is](size-is.md)|Bellek boyutu boyutlu işaretçiler için ayrılan, boyutlandırılmış işaretçiler ve tek veya çok boyutlu diziler işaretçilere boyutu belirtir.|
-|[source](source-cpp.md)|Sınıfta, COM nesnesinin kaynak arabirimleri için bağlantı noktalarını belirtir. Özellik veya yöntem üyesi bir nesne veya bir olay kaynağı olan Değişken döndürür gösterir.|
-|[threading](threading-cpp.md)|Bir COM nesnesi için iş parçacığı modelini belirtir.|
+|[kaynak](source-cpp.md)|Sınıfta, COM nesnesinin kaynak arabirimleri için bağlantı noktalarını belirtir. Özellik veya yöntem üyesi bir nesne veya bir olay kaynağı olan Değişken döndürür gösterir.|
+|[iş parçacığı oluşturma](threading-cpp.md)|Bir COM nesnesi için iş parçacığı modelini belirtir.|
 |[unique](unique-cpp.md)|Bir benzersiz işaretçi belirtir.|
 |[uuid](uuid-cpp-attributes.md)|Bir sınıf veya arabirim için benzersiz Kimliğini belirtir.|
-|[version](version-cpp.md)|Bir sınıfın birden çok sürümü arasında belirli bir sürümünü tanımlar.|
+|[sürüm](version-cpp.md)|Bir sınıfın birden çok sürümü arasında belirli bir sürümünü tanımlar.|
 |[vi_progid](vi-progid.md)|ProgID sürümden bağımsız biçimi belirtir.|
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Kullanıma Göre Öznitelikler](attributes-by-usage.md)
