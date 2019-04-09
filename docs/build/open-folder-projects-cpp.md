@@ -4,12 +4,12 @@ ms.date: 03/21/2019
 helpviewer_keywords:
 - Open Folder Projects in Visual C++
 ms.assetid: abd1985e-3717-4338-9e80-869db5435175
-ms.openlocfilehash: 2dedd56759b6bb49260221e22218da6f4300a970
-ms.sourcegitcommit: 42e65c171aaa17a15c20b155d22e3378e27b4642
+ms.openlocfilehash: 380a96bcb1a119b2b6d4104d60936217d1350fbb
+ms.sourcegitcommit: 35c4b3478f8cc310ebbd932a18963ad8ab846ed9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58356094"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59237139"
 ---
 # <a name="open-folder-projects-for-c"></a>C++ için klasör Proje Aç
 
@@ -107,7 +107,3 @@ Ek bağımsız değişkenlerini belirtmek için bunları eklemeniz yeterlidir `a
 ```
 
 Bu dosyayı kaydettiğinizde, yeni yapılandırmayı hata ayıklama hedefi açılır menüde görünür ve hata ayıklayıcıyı başlatmak için bunu seçebilirsiniz. Dilediğiniz sayıda yürütülebilir dosyalar için birçok hata ayıklama yapılandırması oluşturabilirsiniz. Basarsanız **F5** hata ayıklayıcısı artık, başlar ve zaten ayarladığınız bir kesme noktasına ulaşırsınız. Tüm alıştığınız hata ayıklayıcı pencereleri ve işlevleri artık kullanılabilir.
-
-## <a name="see-also"></a>Ayrıca bkz.
-
-

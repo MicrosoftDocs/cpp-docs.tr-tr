@@ -4,12 +4,12 @@ ms.custom: how-to
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 19ecc5d4-297d-4c4e-b4f3-4fccab890b3d
-ms.openlocfilehash: 2dada25ea712b7bb6d48d80525c824a0457b18cf
-ms.sourcegitcommit: a1fad0a266b20b313364a74b16c9ac45d089b1e9
+ms.openlocfilehash: 37ebcc646864774b15513c9e1891ba14e0705298
+ms.sourcegitcommit: 35c4b3478f8cc310ebbd932a18963ad8ab846ed9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "54220562"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59237204"
 ---
 # <a name="how-to-design-for-exception-safety"></a>Nasıl yapılır: Özel durum güvenliği tasarımı
 
@@ -23,7 +23,7 @@ Bir işlev "özel durum açısından güvenli," sağlanmasına yardımcı olmak 
 
 ### <a name="keep-resource-classes-simple"></a>Kaynak sınıfları basit tutun
 
-El ile kaynak yönetimi sınıflardaki yalıtma, her kaynak için başka bir şey yapmaz bir sınıf kullanma; Aksi takdirde, sızıntılarına yol açabilir. Kullanım [akıllı işaretçileri](../cpp/smart-pointers-modern-cpp.md) mümkün olduğunda, aşağıdaki örnekte gösterildiği gibi. Kasıtlı olarak yapay ve alıyormuş farklar vurgulamak için bu örnekte, zaman `shared_ptr` kullanılır.
+El ile kaynak yönetimi sınıflardaki yalıtma, tek bir kaynak yönetme dışında hiçbir şey yapmaz bir sınıfı kullanın. Sınıf basit hizada tutarak kaynak sızıntılarını giriş riskini azaltmak. Kullanım [akıllı işaretçileri](../cpp/smart-pointers-modern-cpp.md) mümkün olduğunda, aşağıdaki örnekte gösterildiği gibi. Kasıtlı olarak yapay ve alıyormuş farklar vurgulamak için bu örnekte, zaman `shared_ptr` kullanılır.
 
 ```cpp
 // old-style new/delete version

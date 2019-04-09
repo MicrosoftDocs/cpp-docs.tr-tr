@@ -1,41 +1,48 @@
 ---
 title: Derleyici Uyarısı (düzey 4) C4062
-ms.date: 11/04/2016
+ms.date: 04/05/2019
 f1_keywords:
 - C4062
 helpviewer_keywords:
 - C4062
 ms.assetid: 36d1c6ae-c917-4b08-bf30-2eb49ee94169
-ms.openlocfilehash: 6a7129f71eebb33e7bde333dfd90ed4ca173d44c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 79658afc31565b708cdbd8a88f49b887cdd10cf3
+ms.sourcegitcommit: 35c4b3478f8cc310ebbd932a18963ad8ab846ed9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50602650"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59237191"
 ---
 # <a name="compiler-warning-level-4-c4062"></a>Derleyici Uyarısı (düzey 4) C4062
 
-'enumeration' numaralandırıcısının switch ' identifier' numaralandırıcısı işlenmiyor
+> Numaralandırıcı '*tanımlayıcı*'numaralandırıcısının switch' ın*numaralandırma*' işlenmezse
 
-İlişkili işleyici yok listeleme sahip bir `switch` deyimi ve hiçbir **varsayılan** etiketi.
+Numaralandırıcı *tanımlayıcı* yok ilişkili `case` işleyicisinde bir `switch` deyimi ve hiçbir `default` yakalamak etiket. Eksik servis talebi bir gözetim olabilir ve kodunuzdaki olası bir hatadır. İlgili bir uyarı kullanılmayan numaralandırıcılar üzerinde `switch` sahip deyimleri bir `default` durumda bkz [C4061](compiler-warning-level-4-c4061.md).
 
-Varsayılan olarak bu uyarıyı kapalıdır. Bkz: [derleyici uyarıları emin olan kapalı varsayılan](../../preprocessor/compiler-warnings-that-are-off-by-default.md) daha fazla bilgi için.
+Varsayılan olarak bu uyarıyı kapalıdır. Varsayılan olarak kapalı olan uyarıları etkinleştirme hakkında daha fazla bilgi için bkz. [derleyici uyarıları, olan kapalı varsayılan](../../preprocessor/compiler-warnings-that-are-off-by-default.md).
 
-Aşağıdaki örnek, C4062 oluşturur:
+## <a name="example"></a>Örnek
 
-```
+Aşağıdaki örnek, C4062 oluşturur ve bu sorunun nasıl gösterir:
+
+```cpp
 // C4062.cpp
-// compile with: /W4
+// compile with: /EHsc /W4
 #pragma warning(default : 4062)
 enum E { a, b, c };
 void func ( E e ) {
    switch(e) {
       case a:
       case b:
+   // case c:  // to fix, uncomment this line
       break;   // no default label
-   }   // C4062, enumerate 'c' not handled
+   }   // C4062, enumerator 'c' not handled
 }
 
 int main() {
 }
 ```
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[Derleyici Uyarısı (düzey 4) C4061](compiler-warning-level-4-c4061.md)
