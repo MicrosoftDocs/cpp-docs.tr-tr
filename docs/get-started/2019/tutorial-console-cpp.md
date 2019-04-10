@@ -6,12 +6,12 @@ ms.date: 03/25/2019
 ms.topic: tutorial
 ms.devlang: cpp
 ms.assetid: 45138d70-719d-42dc-90d7-1d0ca31a2f54
-ms.openlocfilehash: b558b2e0c381b8521fe0ba5f18647a933175ce07
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.openlocfilehash: f1e6b06c3212ae3ff192fdf402c0167575161656
+ms.sourcegitcommit: 39debf8c525c3951af6913ee5e514617658f8859
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
-ms.locfileid: "58867374"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59430758"
 ---
 # <a name="create-a-c-console-app-project"></a>C++ konsol uygulama projesi oluşturma
 
@@ -34,6 +34,9 @@ Visual Studio kullanan *projeleri* bir uygulama için kod düzenleme ve *çözü
 1. Proje şablonları listesinde seçin **konsol uygulaması**, ardından **sonraki**.
 
    ![Konsol uygulaması şablonu seçin](./media/calc-vs2019-choose-console-app.png "konsol uygulaması şablonu seçin")
+
+   > [!Important]
+   > Seçtiğinizden emin olun C++ sürümünü **konsol uygulaması** şablonu. Sahip **C++**, **Windows**, ve **konsol** etiket ve simgeyi "++" köşedeki.
 
 1. İçinde **yeni projenizi yapılandırın** iletişim kutusunda **proje adı** düzenleme kutusu, yeni projenizi adlandırın *CalculatorTutorial*, ardından **oluştur** .
 
