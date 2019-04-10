@@ -1,41 +1,41 @@
 ---
 title: Bağlayıcı Araçları Uyarısı LNK4049
-ms.date: 11/04/2016
+ms.date: 04/09/2019
 f1_keywords:
 - LNK4049
 helpviewer_keywords:
 - LNK4049
 ms.assetid: 5fd5fb24-c860-4149-a557-0ac26a65d97c
-ms.openlocfilehash: f9e5f1d9d5628a0da49300f541a4d5d4ce321c5f
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.openlocfilehash: 357bf5a981dddadfd79d2d6981ccc9c478909097
+ms.sourcegitcommit: 0ad3f4517e64900a2702dd3d366586f9e2bce2c2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
-ms.locfileid: "59024497"
+ms.lasthandoff: 04/10/2019
+ms.locfileid: "59477359"
 ---
 # <a name="linker-tools-warning-lnk4049"></a>Bağlayıcı Araçları Uyarısı LNK4049
 
-Sembol 'symbol' içeri aktarılan yerel olarak tanımlanan
+> Sembol '*sembol*'içinde tanımlanan'*filename.obj*' alınır
 
 Simgenin hem öğesinden dışarı aktarılan ve programa içeri aktarıldı.
 
-Bu uyarı bağlayıcı tarafından oluşturulan kullanarak bir sembol bildirdiğinizde `__declspec(dllexport)` depolama sınıfı özniteliğini bir nesne dosyasında ve kullanarak referans `__declspec(dllimport)` başka bir öznitelik.
+Bir nesne dosyasında simge tanımlamak ve kullanarak başvuru olduğunda bu uyarı bağlayıcı tarafından oluşturulan `__declspec(dllimport)` başka bir bildirim değiştirici.
 
-Uyarısı LNK4049 daha genel bir sürümü olan [Bağlayıcı araçları uyarısı LNK4217](../../error-messages/tool-errors/linker-tools-warning-lnk4217.md). Hangi işlevden alınan sembol başvuruldu belirleyemediğinde bağlayıcı uyarısı LNK4049 oluşturur.
+Uyarısı LNK4049 daha genel bir sürümü olan [Bağlayıcı araçları uyarısı LNK4217](linker-tools-warning-lnk4217.md). Sembolü içeri aktarılan bir işlevin veya nesnenin hangi dosya başvurulan belirleyemediğinde uyarısı LNK4049 bağlayıcı oluşturur.
 
 LNK4049 LNK4217 yerine oluşturulduğu yaygın durumlar şunlardır:
 
-- Artımlı bağlamayı kullanarak gerçekleştirme [/INCREMENTAL](../../build/reference/incremental-link-incrementally.md) seçeneği.
+- Kullanırken [/INCREMENTAL](../../build/reference/incremental-link-incrementally.md) seçeneği.
 
-- Bütün program iyileştirmesi gerçekleştirme [/LTCG](../../build/reference/ltcg-link-time-code-generation.md) seçeneği.
+- Kullanırken [/LTCG](../../build/reference/ltcg-link-time-code-generation.md) seçeneği.
 
-LNK4049 çözmek için aşağıdakilerden birini deneyin:
+LNK4049 çözmek için aşağıdaki yordamlardan birini deneyin:
 
-- Kaldırma `__declspec(dllimport)` LNK4049 tetikleyen simgenin İleri dönük bildirimi bildirimden olarak adlandırın. İkili bir görüntü içindeki semboller kullanarak arayabilirsiniz **DUMPBIN** yardımcı programı. **DUMPBIN/SEMBOLLER** anahtarı görüntüsü COFF sembol tablosu görüntüler. Daha fazla bilgi için **DUMPBIN** yardımcı programını bkz [DUMPBIN başvurusu](../../build/reference/dumpbin-reference.md).
+- Kaldırma `__declspec(dllimport)` LNK4049 tetikleyen simgenin İleri dönük bildirimi gelen değiştiricisi. İkili bir görüntü içindeki semboller kullanarak arayabilirsiniz **DUMPBIN** yardımcı programı. **DUMPBIN /SYMBOLS** anahtarı görüntüsü COFF sembol tablosu görüntüler. Daha fazla bilgi için **DUMPBIN** yardımcı programını bkz [DUMPBIN başvurusu](../../build/reference/dumpbin-reference.md).
 
-- Artımlı bağlamayı ve bütün program iyileştirmesi geçici olarak devre dışı bırakın. Uygulama yeniden derlendiğinde, içeri aktarılan sembol başvurulan işlevinin adını içeren uyarısı LNK4217 oluşturur. Kaldırma `__declspec(dllimport)` bildirimden alınan sembol ve artımlı bağlamayı etkinleştir veya bütün program iyileştirmesi gerektiğinde.
+- Artımlı bağlamayı ve bütün program iyileştirmesi geçici olarak devre dışı bırakın. Yeniden derlenen uygulamanın içeri aktarılan sembol başvuran işlevinin adını içeren uyarısı LNK4217 oluşturur. Kaldırma `__declspec(dllimport)` içeri aktarılan sembol ve artımlı bağlamayı etkinleştir yeniden veya bütün program iyileştirmesi gerektiğinde bildirim değiştirici.
 
-Son oluşturulan kodun doğru şekilde davranmaz olsa da, içeri aktarılan işlevi çağırmak için oluşturulan kodu işlevi doğrudan çağırma daha verimli değildir. Seçeneğini kullanarak derleme yaptığınızda bu uyarıyı görünmez [/CLR](../../build/reference/clr-common-language-runtime-compilation.md).
+Son oluşturulan kodun doğru şekilde davranır ancak, içeri aktarılan işlevi çağırmak için oluşturulan kodu işlevi doğrudan çağırma değerinden daha az verimlidir. Bu uyarı kullanarak derleme yaptığınızda görünmez [/CLR](../../build/reference/clr-common-language-runtime-compilation.md) seçeneği.
 
 Hakkında daha fazla bilgi almak ve veri bildirimlerini dışarı aktarmak için bkz. [dllexport, dllimport](../../cpp/dllexport-dllimport.md).
 
@@ -43,7 +43,7 @@ Hakkında daha fazla bilgi almak ve veri bildirimlerini dışarı aktarmak için
 
 Aşağıdaki iki modül bağlama LNK4049 oluşturur. Tek bir dışa aktarılan işlevi içeren bir nesne dosyası birinci modülü oluşturur.
 
-```
+```cpp
 // LNK4049a.cpp
 // compile with: /c
 
@@ -53,11 +53,9 @@ __declspec(dllexport) int func()
 }
 ```
 
-## <a name="example"></a>Örnek
+İkinci modül içinde bu işlevi çağrısı yanı sıra ilk modülünde dışarı aktarılan işleve bir ileri dönük bildirimi içeren bir nesne dosyası oluşturur `main` işlevi. Bu modül ilk modülü ile bağlama LNK4049 oluşturur. Kaldırma `__declspec(dllimport)` uyarıyı çözmek için bildirim alanından değiştiricisi.
 
-İkinci modül içinde bu işlevi çağrısı yanı sıra ilk modülünde dışarı aktarılan işleve bir ileri dönük bildirimi içeren bir nesne dosyası oluşturur `main` işlevi. Bu modül ilk modülü ile bağlama LNK4049 oluşturur. Kaldırma `__declspec(dllimport)` bildirimi, uyarı giderir.
-
-```
+```cpp
 // LNK4049b.cpp
 // compile with: /link /WX /LTCG LNK4049a.obj
 // LNK4049 expected
@@ -74,5 +72,6 @@ int main()
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Bağlayıcı Araçları Uyarısı LNK4217](../../error-messages/tool-errors/linker-tools-warning-lnk4217.md)<br/>
+[Bağlayıcı araçları uyarısı LNK4217](linker-tools-warning-lnk4217.md) \
+[Bağlayıcı araçları uyarısı LNK4286](linker-tools-warning-lnk4286.md) \
 [dllexport, dllimport](../../cpp/dllexport-dllimport.md)
