@@ -1,6 +1,6 @@
 ---
 title: /MP (Birden Çok Süreçle Derleme)
-ms.date: 02/22/2018
+ms.date: 04/08/2019
 f1_keywords:
 - VC.Project.VCCLCompilerTool.MultiProcessorCompilation
 helpviewer_keywords:
@@ -8,12 +8,12 @@ helpviewer_keywords:
 - /MP compiler option (C++)
 - MP compiler option (C++)
 - cl.exe compiler, multi-process build
-ms.openlocfilehash: 8a66f6f6f1f4ce77e33df992b915be9ca5dcce70
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.openlocfilehash: e005b0314e87270e81dbb155dfdaa67be067cd3f
+ms.sourcegitcommit: 39debf8c525c3951af6913ee5e514617658f8859
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57808462"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59424150"
 ---
 # <a name="mp-build-with-multiple-processes"></a>/MP (Birden Çok Süreçle Derleme)
 
@@ -51,7 +51,7 @@ Aşağıdaki tablo, derleyici seçenekleri ve ile uyumsuz dil özelliklerini lis
 |--------------------------------|-----------------|
 |[#import](../../preprocessor/hash-import-directive-cpp.md) önişlemci yönergesi|Bir tür kitaplığındaki tür C++ sınıflarına dönüştürür ve ardından söz konusu sınıfın bir üst bilgi dosyasına yazar.|
 |[/E](e-preprocess-to-stdout.md), [/EP](ep-preprocess-to-stdout-without-hash-line-directives.md)|Önişlemci çıktısını standart çıktıya kopyalar (**stdout**).|
-|[/Gm](gm-enable-minimal-rebuild.md)|Bir artımlı yeniden etkinleştirir.|
+|[/GM derlemeyi](gm-enable-minimal-rebuild.md)|Kullanım dışı. Bir artımlı yeniden etkinleştirir.|
 |[/ showıncludes](showincludes-list-include-files.md)|Standart hatayı ekleme kodu dosyalarının bir listesini yazar (**stderr**).|
 |[/Yc](yc-create-precompiled-header-file.md)|Önceden derlenmiş üst bilgi dosyasına yazar.|
 
@@ -125,12 +125,8 @@ MSBuild kullanılacak karar yönelik yönerge veya **/MP** teknoloji aşağıdak
 
 - Projeleri ve dosyaları proje başına sayısını dengeli hem MSBuild kullanın ve **/MP**. Başlangıçta ayarladığınız **/maxcpucount** derleme proje sayısı seçeneğine ve **/MP** bilgisayarınızda işlemci sayısını seçeneği. Performansı ölçme ve en iyi sonuçları elde etmek üzere ayarlarınızı yapın. Toplam derleme süresiyle memnun olana kadar bu döngüyü tekrarlayın.
 
-#### <a name="the-gm-compiler-option"></a>/Gm derleyici seçeneği
-
-Varsayılan olarak, bir projeyi derleme etkinleştirir **/GM derlemeyi** derleyici seçeneği (artımlı derlemeleri) hata ayıklama yapıları ve sürüm için yapıların devre dışı bırakır. Bu nedenle, **/MP** derleyici seçeneği otomatik olarak devre dışıdır hata ayıklama yapılarında varsayılan ile çakıştığı için **/GM derlemeyi** derleyici seçeneği.
-
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[#import yönergesi](../../preprocessor/hash-import-directive-cpp.md)<br/>
+[#import Yönergesi](../../preprocessor/hash-import-directive-cpp.md)<br/>
 [Komut Satırı Başvurusu](/visualstudio/msbuild/msbuild-command-line-reference)<br/>
-[/ZF (Daha hızlı PDB oluşturma)](zf.md)<br/>
+[/ZF (daha hızlı PDB oluşturma)](zf.md)<br/>

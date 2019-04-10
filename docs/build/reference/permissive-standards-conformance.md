@@ -1,6 +1,6 @@
 ---
 title: / permissive-(standartlara uyumluluk)
-ms.date: 06/21/2018
+ms.date: 03/08/2019
 f1_keywords:
 - /permissive
 - VC.Project.VCCLCompilerTool.ConformanceMode
@@ -10,12 +10,12 @@ helpviewer_keywords:
 - Standards conformance compiler options
 - permissive compiler options [C++]
 ms.assetid: db1cc175-6e93-4a2e-9396-c3725d2d8f71
-ms.openlocfilehash: 5590996c7598016365bb122977084835830f95ab
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.openlocfilehash: 05089ef4f0a516f932d82f13be979da572701ae2
+ms.sourcegitcommit: 39debf8c525c3951af6913ee5e514617658f8859
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57820799"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59424137"
 ---
 # <a name="permissive--standards-conformance"></a>/ permissive-(standartlara uyumluluk)
 
@@ -35,15 +35,15 @@ Varsayılan olarak, **/ permissive-** seçeneği, Visual Studio 2017 sürüm 15.
 
 **/ Permissive-** seçeneği, neredeyse tüm son Windows Setleri, Yazılım Geliştirme Seti (SDK) veya Windows Sürücü Seti'nin (WDK), Windows Fall Creators SDK (10.0.16299.0) başlatma gibi üstbilgi dosyalarından ile uyumludur. Altında derlemek SDK'sının daha eski sürümleri kaydedemeyebilir **/ permissive-** çeşitli kod uyumluluk nedeniyle kaynağı için. Derleyici ve SDK'ları sevk üzerinde farklı yayın zaman çizelgelerini, bu nedenle kalan bazı sorunlar vardır. Özel üst bilgi dosyası sorunları için bkz: [Windows üst bilgi sorunları](#windows-header-issues) aşağıda.
 
-**/ Permissive-** seçenek kümeleri [/ZC: strictstrings](zc-conformance.md) ve [/ZC: rvaluecast](zc-conformance.md) uyumlu davranışı seçenekleri. Bunlar varsayılan DSCP davranışı için. Belirli geçirebilirsiniz **/Zc** sonra seçenekleri **/ permissive-** bu davranışı geçersiz kılmak için komut satırında.
+**/ Permissive-** seçenek kümeleri [/ZC: referencebinding](zc-referencebinding-enforce-reference-binding-rules.md), [/ZC: strictstrings](zc-strictstrings-disable-string-literal-type-conversion.md), ve [/ZC: rvaluecast](zc-rvaluecast-enforce-type-conversion-rules.md) uygun seçenekleri davranış. Bu seçenekleri varsayılan olarak DSCP davranışı. Belirli geçirebilirsiniz **/Zc** sonra seçenekleri **/ permissive-** bu davranışı geçersiz kılmak için komut satırında.
 
-Visual Studio 2017 sürüm 15.3, derleyici başlangıçta sürümlerinde **/ permissive-** seçenek kümeleri [/ZC: ternary](zc-ternary.md) seçeneği. Derleyici daha iki aşamalı ad arama gereksinimlerini uygular. Zaman **/ permissive-** seçeneği ayarlanır, derleme şablonlarında kullanılan bağımlı ve bağımlı olmayan adları tanımlama, işlevi ve sınıf şablonu tanımlarını ayrıştırır. Bu sürümde, yalnızca ad bağımlılık analizi gerçekleştirilir.
+Visual Studio 2017 sürüm 15.3, derleyici başlangıçta sürümlerinde **/ permissive-** seçenek kümeleri [/ZC: ternary](zc-ternary.md) seçeneği. Derleyici daha iki aşamalı ad arama gereksinimlerini uygular. Zaman **/ permissive-** seçeneği ayarlanır, derleyici, işlevi ve sınıf şablonu tanımlarını ayrıştırır ve şablonlarında kullanılan bağımlı ve bağımlı olmayan adları tanımlar. Bu sürümde, yalnızca ad bağımlılık analizi gerçekleştirilir.
 
 Ortama özgü Uzantılar ve standart uygulama en fazla bırakır dil alanları etkilenmez **/ permissive-**. Örneğin, Microsoft'a özgü `__declspec`, çağırma kuralı ve yapılandırılmış özel durum işleme anahtar sözcükler ve derleyiciye özgü pragma yönergeleri veya öznitelikleri değil işaretlenir derleyici tarafından **/ permissive-** modu.
 
 **/ Permissive-** seçeneği DSCP hangi dil yapıları belirlemek üzere geçerli derleyici sürümünde uyumluluk desteği kullanır. Seçeneği, kodu belirli bir C++ standart sürümü için uygun olup olmadığı. En son taslak standardı için tüm uygulanan derleyici desteği etkinleştirmek için [/std:latest](std-specify-language-standard-version.md) seçeneği. Şu anda uygulanan C ++ 17'ye standart derleyici desteği kısıtlamak için [/Std: c ++ 17](std-specify-language-standard-version.md) seçeneği. Derleyici desteği, C ++ 14 standardı daha yakından eşleşecek şekilde kısıtlamak için [/Std: c ++ 14](std-specify-language-standard-version.md) seçeneği, varsayılan değerdir.
 
-Değil tüm C ++ 11, C ++ 14 ve C ++ 17 standartlarına uygun kod, Visual Studio 2017'de MSVC derleyici tarafından desteklenir. Visual Studio sürümüne bağlı olarak **/ permissive-** seçeneği ile ilgili bazı yönleri iki aşamalı ad aramayı, geçici bir const olmayan başvuruya bağlanıyor, kopya başlatma doğrudan init davranılması, izin sorunları algılama birden çok kullanıcı tanımlı dönüşümler başlatma veya alternatif belirteçler için mantıksal işleçler ve diğer desteklenmeyen uygunluk alanları. Visual C++'ta uyumluluk sorunları hakkında daha fazla bilgi için bkz: [standart dışı davranış](../../cpp/nonstandard-behavior.md). En iyi şekilde faydalanmaya yönelik **/ permissive-**, Visual Studio'nun en son sürüme güncelleştirin.
+Değil tüm C ++ 11, C ++ 14 ve C ++ 17 standartlarına uygun kod, Visual Studio 2017'in tüm sürümlerinde MSVC derleyici tarafından desteklenir. Visual Studio sürümüne bağlı olarak **/ permissive-** seçeneği ile ilgili bazı yönleri iki aşamalı ad aramayı, geçici bir const olmayan başvuruya bağlanıyor, kopya başlatma doğrudan init davranılması, izin sorunları algılama birden çok kullanıcı tanımlı dönüşümler başlatma veya alternatif belirteçler için mantıksal işleçler ve diğer desteklenmeyen uygunluk alanları. Visual C++'ta uyumluluk sorunları hakkında daha fazla bilgi için bkz: [standart dışı davranış](../../cpp/nonstandard-behavior.md). En iyi şekilde faydalanmaya yönelik **/ permissive-**, Visual Studio'nun en son sürüme güncelleştirin.
 
 ### <a name="how-to-fix-your-code"></a>Kodunuzu düzeltmenin nasıl
 
@@ -56,7 +56,7 @@ void func(int default); // Error C2321: 'default' is a keyword, and
                         // cannot be used in this context
 ```
 
-#### <a name="lookup-members-in-dependent-base"></a>Bağımlı tabanında arama üyeleri
+#### <a name="look-up-members-in-dependent-base"></a>Bağımlı temel üye arayın
 
 ```cpp
 template <typename T>
@@ -237,7 +237,7 @@ class ATL_NO_VTABLE CFooImpl : public ICustom,
 
 Visual Studio 2017 sürüm 15.3 önce derleyici sürümlerinde, derleyici bağımsız değişkenleri koşullu işleç (veya Üçlü işleci) kabul edilen `?:` , değerlendirilir belirsiz standardına göre. İçinde **/ permissive-** modu, derleyici artık önceki sürümlerde tanılama olmadan derlenmiş durumlarda bir veya daha fazla tanılama verir.
 
-Bu değişiklik sonuçlanabilir Commmon hataları şunlardır:
+Bu değişiklik sonuçlanabilir ve sık karşılaşılan hatalar şunlardır:
 
 - hatası C2593: 'işlecini'? belirsiz
 
@@ -247,7 +247,7 @@ Bu değişiklik sonuçlanabilir Commmon hataları şunlardır:
 
 - hatası C2446: ':': hiçbir 'A'-'B' dönüşümü
 
-Bazı C sınıfı türüne t T başka bir türden bir açık olmayan Oluşturucu hem bir açık olmayan bir dönüşüm işleci sağladığında bu soruna neden olabilecek bir tipik kod modelidir Bu durumda, hem 2 bağımsız değişkenin 3 tür dönüştürme ve 3 bağımsız değişkenin 2 tür dönüştürme geçerli dönüşümler standardına göre belirsiz'dır.
+Bazı C sınıfı türüne t T başka bir türden bir açık olmayan Oluşturucu hem bir açık olmayan bir dönüşüm işleci sağladığında bu soruna neden olabilecek bir tipik kod modelidir Bu durumda, hem ikinci bağımsız değişkenin üçüncü bağımsız değişken türünü dönüştürme ve üçüncü bağımsız değişken ikinci bağımsız değişken türünü dönüştürme geçerli dönüşümler'dır. Her ikisi de geçerli olduğundan, standardına göre belirsiz.
 
 ```cpp
 // Example 1: class that provides conversion to and initialization from some type T
@@ -313,7 +313,7 @@ const char (&z)[2] = count > 3 ? "A" : "B"; // const char* without /Zc:ternary
 
 #### <a name="two-phase-name-look-up"></a>İki aşamalı ad arama
 
-Zaman **/ permissive-** seçeneği ayarlanır, derleyici bağımlı ve bağımlı olmayan adları şablonlarında gerektiği gibi iki aşamalı ad arama için kullanılan tanımlama, işlevi ve sınıf şablonu tanımlarını ayrıştırır. Visual Studio 2017 sürüm 15.3, adı bağımlılık analizi gerçekleştirilir. Özellikle, bir tanılama iletisi ISO C++ standartlarına gerektirdiği gibi bir şablon tanımı bağlamda bildirilmemiş olan bağımlı olmayan adları neden. Visual Studio 2017 sürüm 15.7, bağımsız değişken bağımlı Ara tanımı bağlamda gerektirir bağımlı olmayan adları bağlama da gerçekleştirilir.
+Zaman **/ permissive-** seçeneği ayarlanır, derleyici bağımlı ve bağımlı olmayan adları şablonlarında gerektiği gibi iki aşamalı ad arama için kullanılan tanımlama, işlevi ve sınıf şablonu tanımlarını ayrıştırır. Visual Studio 2017 sürüm 15.3, adı bağımlılık analizi gerçekleştirilir. Özellikle, bir tanılama iletisi ISO C++ standartlarına gerektirdiği gibi bir şablon tanımı bağlamda bildirilmemiş olan bağımlı olmayan adları neden. Visual Studio 2017 sürüm 15.7, bağımsız değişkene bağlı arama tanımı bağlamda gerektirir bağımlı olmayan adları bağlama da gerçekleştirilir.
 
 ```cpp
 // dependent base

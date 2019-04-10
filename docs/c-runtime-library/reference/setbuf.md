@@ -1,6 +1,6 @@
 ---
 title: setbuf
-ms.date: 11/04/2016
+ms.date: 04/08/2019
 apiname:
 - setbuf
 apilocation:
@@ -22,12 +22,12 @@ helpviewer_keywords:
 - setbuf function
 - stream buffering
 ms.assetid: 13beda22-7b56-455d-8a6c-f2eb636885b9
-ms.openlocfilehash: 3b5fbccd304d406131b0c4f7d16a289f80484642
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 89f8a4d8eb853c774f4f7299ceaa9b9eb6177b42
+ms.sourcegitcommit: 39debf8c525c3951af6913ee5e514617658f8859
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50440502"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59424176"
 ---
 # <a name="setbuf"></a>setbuf
 
@@ -44,7 +44,7 @@ void setbuf(
 
 ### <a name="parameters"></a>Parametreler
 
-*Stream*<br/>
+*akış*<br/>
 İşaretçi **dosya** yapısı.
 
 *Arabellek*<br/>
@@ -52,9 +52,9 @@ Kullanıcı tarafından ayrılan bir arabellek.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Setbuf** işlev denetimleri için arabelleğe alma *stream*. *Stream* bağımsız değişkeni, okuma yazılan veya açık bir dosyaya başvurmalıdır. Varsa *arabellek* bağımsız değişkeni **NULL**, hazırlanmamış arabelleğe alınan bir akıştır. Arabellek uzunluğu bir karakter dizisi olarak işaret etmiyor, varsa **BUFSIZ**burada **BUFSIZ** STDIO içinde tanımlanan arabellek boyutu olan. H Kullanıcı tarafından belirtilen arabellek, belirtilen akışa için varsayılan sistem tarafından ayrılmış arabellek yerine g/ç için kullanılan arabelleğe alma. **Stderr** akış varsayılan olarak beklemediğiniz arabelleğe alınan ancak kullanabilirsiniz **setbuf** arabelleklere atamak **stderr**.
+**Setbuf** işlev denetimleri için arabelleğe alma *stream*. *Stream* bağımsız değişkeni, okunabilir veya yazılabilir olmayan açık bir dosyaya başvurmalıdır. Varsa *arabellek* bağımsız değişkeni **NULL**, Ara belleksiz bir akıştır. Arabellek uzunluğu bir karakter dizisi olarak işaret etmiyor, varsa **BUFSIZ**burada **BUFSIZ** STDIO içinde tanımlanan arabellek boyutu olan. H Kullanıcı tarafından belirtilen arabellek, belirtilen akışa için varsayılan sistem tarafından ayrılmış arabellek yerine g/ç için kullanılan arabelleğe alma. **Stderr** varsayılan akışı arabelleğe alınmayan ancak kullanabilirsiniz **setbuf** arabelleklere atamak **stderr**.
 
-**setbuf** almıştır [setvbuf](setvbuf.md), yeni kodu için tercih edilen yordamı olduğu. **setbuf** mevcut kodlarda uyumluluk için tutulmaktadır.
+**setbuf** almıştır [setvbuf](setvbuf.md), yeni kodu için tercih edilen yordamı olduğu. Farklı **setvbuf**, **setbuf** hata bildiren bir yolu yoktur. **setvbuf** ayrıca arabelleğe alma modu hem de arabellek boyutu denetlemenize olanak tanır. **setbuf** mevcut kodlarda uyumluluk için bulunmaktadır.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -105,7 +105,7 @@ stream2 buffering disabled
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Stream g/ç](../../c-runtime-library/stream-i-o.md)<br/>
+[Akış G/Ç](../../c-runtime-library/stream-i-o.md)<br/>
 [fclose, _fcloseall](fclose-fcloseall.md)<br/>
 [fflush](fflush.md)<br/>
 [fopen, _wfopen](fopen-wfopen.md)<br/>
