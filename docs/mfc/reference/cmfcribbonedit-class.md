@@ -74,10 +74,10 @@ helpviewer_keywords:
 - CMFCRibbonEdit [MFC], SetWidth
 ms.assetid: 9b85f1f2-446b-454e-9af9-104fdad8a897
 ms.openlocfilehash: 80ee43ae32416f9f62df419c4afbd46a0aa63cc8
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 39debf8c525c3951af6913ee5e514617658f8859
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/10/2019
 ms.locfileid: "58780489"
 ---
 # <a name="cmfcribbonedit-class"></a>CMFCRibbonEdit sınıfı
@@ -532,7 +532,7 @@ virtual void OnDrawOnList(
 *nTextOffset*<br/>
 [in] Görüntülenecek metni liste kutusuna sol tarafındaki piksel cinsinden uzaklığı.
 
-*Rect*<br/>
+*rect*<br/>
 [in] İçin görünen dikdörtgen `CMFCRibbonEdit` denetimi.
 
 *bIsSelected*<br/>
@@ -681,7 +681,7 @@ virtual BOOL SetACCData(
 *pParent*<br/>
 Üst penceresine bir işaretçi `CMFCRibbonEdit` nesne.
 
-*Veri*<br/>
+*veri*<br/>
 Erişilebilirlik verilerini `CMFCRibbonEdit` nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -754,5 +754,5 @@ Kayan modu genişliğini ayarlamak için TRUE; Normal mod genişliğini ayarlama
 
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
 [Sınıflar](../../mfc/reference/mfc-classes.md)<br/>
-[CMFCRibbonButton Sınıfı](../../mfc/reference/cmfcribbonbutton-class.md)<br/>
-[CMFCRibbonBar Sınıfı](../../mfc/reference/cmfcribbonbar-class.md)
+[CMFCRibbonButton sınıfı](../../mfc/reference/cmfcribbonbutton-class.md)<br/>
+[CMFCRibbonBar sınıfı](../../mfc/reference/cmfcribbonbar-class.md)
