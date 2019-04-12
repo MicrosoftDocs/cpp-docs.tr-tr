@@ -1,12 +1,12 @@
 ---
 title: ARM64 özel durum işleme
 ms.date: 11/19/2018
-ms.openlocfilehash: ec81374f9a20cf5d23edda7d925705b6a4d5e2e6
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.openlocfilehash: 55476119499a3216f6801877dba692b2a0d1d9ee
+ms.sourcegitcommit: 88631cecbe3e3fa752eae3ad05b7f9d9f9437b4d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
-ms.locfileid: "59031738"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "59534129"
 ---
 # <a name="arm64-exception-handling"></a>ARM64 özel durum işleme
 
@@ -44,7 +44,7 @@ ARM64 üzerinde Windows Donanım tarafından oluşturulan zaman uyumsuz özel du
 
 1. Sonuç koşullu kodu yok.
 
-1. Adanmış çerçeve işaretçisi kaydı: Sp kaydı giriş başka bir kayıt (r29) kaydedilir, böylece özgün sp herhangi bir zamanda kurtarılabilir işlevi değişmeden kalır.
+1. Adanmış çerçeve işaretçisi kaydı: Sp kaydı giriş olarak başka bir kayıttaki (x29) kaydedilirse, böylece özgün sp herhangi bir zamanda kurtarılabilir işlevi değişmeden kalır.
 
 1. Sp başka bir kayıttaki kaydedilmezse tüm yığın işaretçisi işlenmesini kesinlikle giriş ve bitiş içinde gerçekleşir.
 
@@ -54,90 +54,90 @@ ARM64 üzerinde Windows Donanım tarafından oluşturulan zaman uyumsuz özel du
 
 ![yığın çerçevesi düzeni](media/arm64-exception-handling-stack-frame.png "yığın çerçevesi düzeni")
 
-Zincirleme çerçeve işlevler için yerel değişken alanı en iyi duruma getirme konuları bağlı olarak herhangi bir konumda fp ve lr çifti kaydedilebilir. Çerçeve işaretçisini (r29) veya yığın işaretçisi (sp) temel alan bir tek yönerge tarafından erişilebilen Yereller sayısı en üst düzeye çıkarmak için kullanılan hedeftir. Ancak için `alloca` İşlevler, zincirleme gerekir ve r29 yığının sonuna işaret etmelidir. Daha iyi register çifti-adresleme-modu kapsamı için izin vermek için kalıcı kayıt alanları kaydetme konumlandırıldığı yerel yığın üstüne. En verimli giriş dizilerini bazılarını gösteren örnekleri aşağıda verilmiştir. Açıklık ve daha iyi önbellek yerleşim yeri için tüm canonical açıklanabilmeleri içinde Çağrılan Kaydedilmiş Yazmaçlar depolamanın "yukarı büyüyen" sırayla sırasıdır. `#framesz` Aşağıda (alloca alanı dışında) tüm yığın boyutunu temsil eder. `#localsz` ve `#outsz` yerel boyutu belirtmek (kaydetme dahil olmak üzere alanı \<r29, lr > çifti) ve parametre boyutu sırasıyla giden.
+Zincirleme çerçeve işlevler için yerel değişken alanı en iyi duruma getirme konuları bağlı olarak herhangi bir konumda fp ve lr çifti kaydedilebilir. Çerçeve işaretçisini (x29) veya yığın işaretçisi (sp) temel alan bir tek yönerge tarafından erişilebilen Yereller sayısı en üst düzeye çıkarmak için kullanılan hedeftir. Ancak için `alloca` İşlevler, zincirleme gerekir ve x29 yığının sonuna işaret etmelidir. Daha iyi register çifti-adresleme-modu kapsamı için izin vermek için kalıcı kayıt alanları kaydetme konumlandırıldığı yerel yığın üstüne. En verimli giriş dizilerini bazılarını gösteren örnekleri aşağıda verilmiştir. Açıklık ve daha iyi önbellek yerleşim yeri için tüm canonical açıklanabilmeleri içinde Çağrılan Kaydedilmiş Yazmaçlar depolamanın "yukarı büyüyen" sırayla sırasıdır. `#framesz` Aşağıda (alloca alanı dışında) tüm yığın boyutunu temsil eder. `#localsz` ve `#outsz` yerel boyutu belirtmek (kaydetme dahil olmak üzere alanı \<x29, lr > çifti) ve parametre boyutu sırasıyla giden.
 
 1. Zincirleme #localsz \<= 512
 
     ```asm
-        stp    r19,r20,[sp,-96]!        // pre-indexed, save in 1st FP/INT pair
-        stp    d8,d9,[sp,16]            // save in FP regs (optional)
-        stp    r0,r1,[sp,32]            // home params (optional)
-        stp    r2,r3,[sp, 48]
-        stp    r4,r5,[sp,64]
-        stp    r6,r7,[sp,72]
-        stp    r29, lr, [sp, -#localsz]!    // save <r29,lr> at bottom of local area
-        mov    r29,sp                   // r29 points to bottom of local
-        sub    sp, #outsz               // (optional for #outsz != 0)
+        stp    x19,x20,[sp,#-96]!        // pre-indexed, save in 1st FP/INT pair
+        stp    d8,d9,[sp,#16]            // save in FP regs (optional)
+        stp    x0,x1,[sp,#32]            // home params (optional)
+        stp    x2,x3,[sp,#48]
+        stp    x4,x5,[sp,#64]
+        stp    x6,x7,[sp,#72]
+        stp    x29,lr,[sp,#-localsz]!   // save <x29,lr> at bottom of local area
+        mov    x29,sp                   // x29 points to bottom of local
+        sub    sp,sp,#outsz             // (optional for #outsz != 0)
     ```
 
 1. Zincirleme #localsz > 512
 
     ```asm
-        stp    r19,r20,[sp,-96]!        // pre-indexed, save in 1st FP/INT pair
-        stp    d8,d9,[sp,16]            // save in FP regs (optional)
-        stp    r0,r1,[sp,32]            // home params (optional)
-        stp    r2,r3,[sp, 48]
-        stp    r4,r5,[sp,64]
-        stp    r6,r7,[sp,72]
-        sub    sp,#localsz+#outsz       // allocate remaining frame
-        stp    r29, lr, [sp, #outsz]    // save <r29,lr> at bottom of local area
-        add    r29,sp, #outsz           // setup r29 points to bottom of local area
+        stp    x19,x20,[sp,#-96]!        // pre-indexed, save in 1st FP/INT pair
+        stp    d8,d9,[sp,#16]            // save in FP regs (optional)
+        stp    x0,x1,[sp,#32]            // home params (optional)
+        stp    x2,x3,[sp,#48]
+        stp    x4,x5,[sp,#64]
+        stp    x6,x7,[sp,#72]
+        sub    sp,sp,#(localsz+outsz)   // allocate remaining frame
+        stp    x29,lr,[sp,#outsz]       // save <x29,lr> at bottom of local area
+        add    x29,sp,#outsz            // setup x29 points to bottom of local area
     ```
 
 1. Unchained, yaprak işlevleri (kaydedilmemiş lr)
 
     ```asm
-        stp    r19,r20,[sp, -72]!       // pre-indexed, save in 1st FP/INT reg-pair
-        stp    r21,r22,[sp, 16]
-        str    r23 [sp,32]
-        stp    d8,d9,[sp,40]            // save FP regs (optional)
-        stp    d10,d11,[sp,56]
-        sub    sp,#framesz-72           // allocate the remaining local area
+        stp    x19,x20,[sp,#-80]!       // pre-indexed, save in 1st FP/INT reg-pair
+        stp    x21,x22,[sp,#16]
+        str    x23,[sp,#32]
+        stp    d8,d9,[sp,#40]           // save FP regs (optional)
+        stp    d10,d11,[sp,#56]
+        sub    sp,sp,#(framesz-80)      // allocate the remaining local area
     ```
 
-   Tüm yerel öğeler üzerinde SP'yi tabanlı erişilir \<r29, lr > Önceki çerçeveye işaret eder. Çerçeve boyutu için \<= 512, "sub sp..." yığını altına kaydedilmiş regs alan taşınırsa hemen iyileştirilebilir. Olumsuz tarafı, söz konusu diğer yukarıdaki düzenleriyle tutarlı değil ve kaydedilen regs çifti regs ve öncesi ve sonrası dizinli uzaklık adresleme modu aralığının bir parçası olması ' dir.
+   Tüm yerel öğeler üzerinde SP'yi tabanlı erişilir \<x29, lr > Önceki çerçeveye işaret eder. Çerçeve boyutu için \<= 512, "sub sp..." yığını altına kaydedilmiş regs alan taşınırsa hemen iyileştirilebilir. Olumsuz tarafı, söz konusu diğer yukarıdaki düzenleriyle tutarlı değil ve kaydedilen regs çifti regs ve öncesi ve sonrası dizinli uzaklık adresleme modu aralığının bir parçası olması ' dir.
 
 1. (Lr kaydedilen Int alanına kaydedilir) unchained ve yaprak olmayan işlevler
 
     ```asm
-        stp    r19,r20,[sp,-80]!        // pre-indexed, save in 1st FP/INT reg-pair
-        stp    r21,r22,[sp,16]          // ...
-        stp    r23, lr,[sp, 32]         // save last Int reg and lr
-        stp    d8,d9,[sp, 48]           // save FP reg-pair (optional)
-        stp    d10,d11,[sp,64]          // ...
-        sub    sp,#framesz-80           // allocate the remaining local area
+        stp    x19,x20,[sp,#-80]!       // pre-indexed, save in 1st FP/INT reg-pair
+        stp    x21,x22,[sp,#16]         // ...
+        stp    x23,lr,[sp,#32]          // save last Int reg and lr
+        stp    d8,d9,[sp,#48]           // save FP reg-pair (optional)
+        stp    d10,d11,[sp,#64]         // ...
+        sub    sp,sp,#(framesz-80)      // allocate the remaining local area
     ```
 
    Veya, çift sayı ile kaydedilmiş Int yazmaçlar,
 
     ```asm
-        stp    r19,r20,[sp,-72]!        // pre-indexed, save in 1st FP/INT reg-pair
-        stp    r21,r22,[sp,16]          // ...
-        str    lr,[sp, 32]              // save lr
-        stp    d8,d9,[sp, 40]           // save FP reg-pair (optional)
-        stp    d10,d11,[sp,56]          // ...
-        sub    sp,#framesz-72           // allocate the remaining local area
+        stp    x19,x20,[sp,#-80]!       // pre-indexed, save in 1st FP/INT reg-pair
+        stp    x21,x22,[sp,#16]         // ...
+        str    lr,[sp,#32]              // save lr
+        stp    d8,d9,[sp,#40]           // save FP reg-pair (optional)
+        stp    d10,d11,[sp,#56]         // ...
+        sub    sp,sp,#(framesz-80)      // allocate the remaining local area
     ```
 
-   Yalnızca kaydedilmiş r19:
+   Yalnızca kaydedilmiş x19:
 
     ```asm
-        sub    sp, sp, #16              // reg save area allocation*
-        stp    r19,lr,[sp,0]            // save r19, lr
-        sub    sp,#framesz-16           // allocate the remaining local area
+        sub    sp,sp,#16                // reg save area allocation*
+        stp    x19,lr,[sp]              // save x19, lr
+        sub    sp,sp,#(framesz-16)      // allocate the remaining local area
     ```
 
    \* Önceden dizinlenmiş reg lr stp geriye doğru izleme kodları ile gösterilemez çünkü alanı ayırmasını kaydetme reg stp katlanmadı.
 
-   Tüm yerel öğeler üzerinde SP'yi tabanlı erişilir \<r29 > Önceki çerçeveye işaret eder.
+   Tüm yerel öğeler üzerinde SP'yi tabanlı erişilir \<x29 > Önceki çerçeveye işaret eder.
 
 1. Zincirleme #framesz \<= 512, #outsz = 0
 
     ```asm
-        stp    r29, lr, [sp, -#framesz]!    // pre-indexed, save <r29,lr>
-        mov    r29,sp                       // r29 points to bottom of stack
-        stp    r19,r20,[sp, #framesz -32]   // save INT pair
-        stp    d8,d9,[sp, #framesz -16]     // save FP pair
+        stp    x29,lr,[sp,#-framesz]!       // pre-indexed, save <x29,lr>
+        mov    x29,sp                       // x29 points to bottom of stack
+        stp    x19,x20,[sp,#(framesz-32)]   // save INT pair
+        stp    d8,d9,[sp,#(framesz-16)]     // save FP pair
     ```
 
    Yukarıdaki #1 giriş için karşılaştırma, avantajı tüm kayıt yönergeleri kaydetme yönerge ayırma sağa tek yığın sonra yürütülecek hazır değildir. Bu nedenle, olduğundan koruma hiçbir bağımlılığı yönerge düzeyi paralellik engelleyen sp.
@@ -145,38 +145,38 @@ Zincirleme çerçeve işlevler için yerel değişken alanı en iyi duruma getir
 1. Zincirleme, çerçeve boyutu 512 > (alloca olmayan işlevler için isteğe bağlı)
 
     ```asm
-        stp    r29, lr, [sp, -80]!          // pre-indexed, save <r29,lr>
-        stp    r19,r20,[sp,16]              // save in INT regs
-        stp    r21,r22,[sp,32]              // ...
-        stp    d8,d9,[sp,48]                // save in FP regs
-        stp    d10,d11,[sp,64]
-        mov    r29,sp                       // r29 points to top of local area
-        sub    sp,#framesz-80               // allocate the remaining local area
+        stp    x29,lr,[sp,#-80]!            // pre-indexed, save <x29,lr>
+        stp    x19,x20,[sp,#16]             // save in INT regs
+        stp    x21,x22,[sp,#32]             // ...
+        stp    d8,d9,[sp,#48]               // save in FP regs
+        stp    d10,d11,[sp,#64]
+        mov    x29,sp                       // x29 points to top of local area
+        sub    sp,sp,#(framesz-80)          // allocate the remaining local area
     ```
 
-   En iyi duruma getirme amacıyla "çifti reg" ve adresleme modu öncesi/sonrası-indexed uzaklığı için daha iyi bir tedarik sağlamak için yerel herhangi bir konumda r29 yeniden koyabilirsiniz. Çerçeve işaretçilerini aşağıda Yereller SP'yi üzerinde temel erişilebilir.
+   En iyi duruma getirme amacıyla "çifti reg" ve adresleme modu öncesi/sonrası-indexed uzaklığı için daha iyi bir tedarik sağlamak için yerel herhangi bir konumda x29 yeniden koyabilirsiniz. Çerçeve işaretçilerini aşağıda Yereller SP'yi üzerinde temel erişilebilir.
 
 1. Zincirleme, çerçeve ile veya olmadan alloca() > 4K, boyut,
 
     ```asm
-        stp    r29, lr, [sp, -80]!          // pre-indexed, save <r29,lr>
-        stp    r19,r20,[sp,16]              // save in INT regs
-        stp    r21,r22,[sp,32]              // ...
-        stp    d8,d9,[sp,48]                // save in FP regs
-        stp    d10,d11,[sp,64]
-        mov    r29,sp                       // r29 points to top of local area
-        mov    r8, #framesz/16
-        bl     chkstk
-        sub    sp, r8*16                    // allocate remaining frame
+        stp    x29,lr,[sp,#-80]!            // pre-indexed, save <x29,lr>
+        stp    x19,x20,[sp,#16]             // save in INT regs
+        stp    x21,x22,[sp,#32]             // ...
+        stp    d8,d9,[sp,#48]               // save in FP regs
+        stp    d10,d11,[sp,#64]
+        mov    x29,sp                       // x29 points to top of local area
+        mov    x15,#(framesz/16)
+        bl     __chkstk
+        sub    sp,sp,x15,lsl#4              // allocate remaining frame
                                             // end of prolog
         ...
-        sp = alloca                         // more alloca() in body
+        sub    sp,sp,#alloca                // more alloca() in body
         ...
                                             // beginning of epilog
-        mov    sp,r29                       // sp points to top of local area
-        ldp    d10,d11, [sp,64],
+        mov    sp,x29                       // sp points to top of local area
+        ldp    d10,d11,[sp,#64]
         ...
-        ldp    r29, lr, [sp], -80           // post-indexed, reload <r29,lr>
+        ldp    x29,lr,[sp],#80              // post-indexed, reload <x29,lr>
     ```
 
 ## <a name="arm64-exception-handling-information"></a>ARM64 özel durum işleme bilgileri
@@ -235,7 +235,7 @@ Bu veriler, dört bölüme ayrılır:
 
    c. **Başlangıç ve bitiş dizin** 10-bit, (2 daha fazla bitten **genişletilmiş kod sözcükleri**) alan ilk bayt dizinini belirten geriye doğru izleme, bu sonuç açıklar.
 
-1. Geriye doğru izleme kodları içeren bir bayt dizisi bitiş kapsam listesi çağrıldıktan sonra bir sonraki bölümde ayrıntılı açıklanmıştır. Bu dizi için en yakın tam sözcük sınırı sonunda sıfır eklenir. Küçük endian modunda doğrudan getirilebilir, böylece bayt little endian sırayla depolanır.
+1. Geriye doğru izleme kodları içeren bir bayt dizisi bitiş kapsam listesi çağrıldıktan sonra bir sonraki bölümde ayrıntılı açıklanmıştır. Bu dizi için en yakın tam sözcük sınırı sonunda sıfır eklenir. Geriye doğru izleme kodları işlevi kenarlarına taşıma işlevinin gövdesi için en yakın ile başlayarak, bu diziye yazılır. Bayt her geriye doğru izleme kodu için işlemi ve kodun geri kalanını uzunluğunu tanımlayan bunlar doğrudan, ilk olarak, en önemli bayt ile başlayan getirilebilir, böylece büyük endian sıraya göre depolanır.
 
 1. Son olarak, geriye doğru izleme kodu bayt sonra varsa **X** bit üst bilgisindeki gelen özel durum işleyicisi bilgilerini 1 olarak ayarlandığı. Bu tek bir oluşur **özel durum işleyicisi RVA** adresi özel durum işleyicisinin kendisi, sağlama ve ardından hemen bir özel durum işleyici tarafından gerekli veri değişken uzunluklu miktarı.
 
@@ -286,22 +286,22 @@ Geriye doğru izleme kodları aşağıdaki tabloya göre kodlanır. Tüm geriye 
 |Kod geriye doğru izleme|BITS ve yorumu|
 |-|-|
 |`alloc_s`|000xxxxx: küçük yığın boyutu ayırma \< 512 (2 ^ 5 * 16).|
-|`save_r19r20_x`|    001zzzzz: Kaydet \<r19, r20 > çifti, [sp #Z * 8]!, önceden dizinlenmiş uzaklığı >-248 = |
-|`save_fplr`|        01zzzzzz: Kaydet \<r29, lr > adresindeki pair [sp + #Z * 8], offset \<504 =. |
-|`save_fplr_x`|        10zzzzzz: Kaydet \<r29, lr > adresindeki pair [sp-(#Z + 1) * 8]!, önceden dizinlenmiş uzaklığı > -512 = |
+|`save_r19r20_x`|    001zzzzz: Kaydet \<x19, x20 > çifti, [sp #Z * 8]!, önceden dizinlenmiş uzaklığı >-248 = |
+|`save_fplr`|        01zzzzzz: Kaydet \<x29, lr > adresindeki pair [sp + #Z * 8], offset \<504 =. |
+|`save_fplr_x`|        10zzzzzz: Kaydet \<x29, lr > adresindeki pair [sp-(#Z + 1) * 8]!, önceden dizinlenmiş uzaklığı > -512 = |
 |`alloc_m`|        11000xxx'xxxxxxxx: büyük yığın boyutu ayırma \< 16 k (2 ^ 11 * 16). |
-|`save_regp`|        110010xx'xxzzzzzz: r(19+#X) çifti, kaydetme [sp + #Z * 8], offset \<504 = |
-|`save_regp_x`|        110011xx'xxzzzzzz: çifti r(19+#X) adresindeki Kaydet [sp-(#Z + 1) * 8]!, önceden dizinlenmiş uzaklığı > -512 = |
-|`save_reg`|        110100xx'xxzzzzzz: reg r(19+#X) adresindeki Kaydet [sp + #Z * 8], offset \<504 = |
-|`save_reg_x`|        1101010 x'xxxzzzzz: reg r(19+#X) adresindeki Kaydet [sp-(#Z + 1) * 8]!, önceden dizinlenmiş uzaklığı >-256 = |
-|`save_lrpair`|         1101011 x'xxzzzzzz: çifti Kaydet \<r19 + 2 *#X, lr > konumundaki [sp + #Z*8], offset \<504 = |
+|`save_regp`|        110010xx'xxzzzzzz: x(19+#X) çifti, kaydetme [sp + #Z * 8], offset \<504 = |
+|`save_regp_x`|        110011xx'xxzzzzzz: çifti x(19+#X) adresindeki Kaydet [sp-(#Z + 1) * 8]!, önceden dizinlenmiş uzaklığı > -512 = |
+|`save_reg`|        110100xx'xxzzzzzz: reg x(19+#X) adresindeki Kaydet [sp + #Z * 8], offset \<504 = |
+|`save_reg_x`|        1101010 x'xxxzzzzz: reg x(19+#X) adresindeki Kaydet [sp-(#Z + 1) * 8]!, önceden dizinlenmiş uzaklığı >-256 = |
+|`save_lrpair`|         1101011 x'xxzzzzzz: çifti Kaydet \<x (19 + 2 *#X), lr > konumundaki [sp + #Z*8], offset \<504 = |
 |`save_fregp`|        1101100 x'xxzzzzzz: çifti d(8+#X) adresindeki Kaydet [sp + #Z * 8], offset \<504 = |
 |`save_fregp_x`|        1101101 x'xxzzzzzz: adresindeki çifti d(8+#X) kaydetme [sp-(#Z + 1) * 8]!, önceden dizinlenmiş uzaklığı > -512 = |
 |`save_freg`|        1101110 x'xxzzzzzz: reg d(8+#X) adresindeki Kaydet [sp + #Z * 8], offset \<504 = |
 |`save_freg_x`|        11011110' xxxzzzzz: reg d(8+#X) adresindeki Kaydet [sp-(#Z + 1) * 8]!, önceden dizinlenmiş uzaklığı >-256 = |
 |`alloc_l`|         11100000' xxxxxxxx 'xxxxxxxx' xxxxxxxx: büyük yığın boyutu ayırma \< 256 M (2 ^ 24 * 16) |
-|`set_fp`|        11100001: r29 ayarlayın: ile: mov r29 sp |
-|`add_fp`|        11100010' xxxxxxxx: r29 ile ayarlayın: ekleme r29, sp, #x * 8 |
+|`set_fp`|        11100001: x29 ayarlayın: ile: mov x29, sp |
+|`add_fp`|        11100010' xxxxxxxx: x29 ile ayarlayın: x29, sp ekleme #x * 8 |
 |`nop`|            11100011: hiçbir bırakma işlemi gerekiyor. |
 |`end`|            11100100: bırakma kod sonu. Gelir bölümünde ret. |
 |`end_c`|        11100101: zincirleme geçerli kapsamda geriye doğru izleme kodu sonu. |
@@ -347,12 +347,12 @@ Alanları aşağıdaki gibidir:
 - **İşlev uzunluğu** tüm işlevi bölü 4 bayt cinsinden uzunluğunu sağlayan bir 11 bit alanıdır. İşlev 8 k'dan büyükse, bir tam sanal işlem bulunur kaydı yerine kullanılmalıdır.
 - **Çerçeve boyutu** 16 tarafından ayrılmış, bu işlev için ayrılan yığınının bayt sayısını gösteren bir 9-bit alanıdır. Büyük (8 k-16) bayt yığın ayırma işlevleri tam bir sanal işlem bulunur kaydı kullanmanız gerekir. Bu parametre alanı, Int ve FP alan ve çağrılan kaydedilmiş ve giriş parametresi alan giden ancak dinamik ayırma alan hariç olmak üzere yerel değişken alan içerir.
 - **CR** olan işlev bir çerçeve zinciri ve dönüş bağlantı ayarlamak için ek yönergeler içerip içermeyeceğini belirten bir 2 bit bayrağı:
-  - 00 unchained işlevi = \<r29, lr > çifti yığınında kaydedilmez.
+  - 00 unchained işlevi = \<x29, lr > çifti yığınında kaydedilmez.
   - 01 unchained işlevi = \<lr > yığınında kaydedildi
   - 10 = ayrılmıştır;
-  - 11 = zincirleme işlevi, giriş/sonuç deposu/yük çifti yönerge kullanılan \<r29, lr >
-- **H** işlevi çok başlangıcında depolayarak olan işlev tam sayı parametresi homes olup olmadığını belirten bir 1 bit bayrağı (r0-r7) kaydeder. (0 = 1 kaydeder ev değil havaalanlarından kayıtları =).
-- **RegI** kurallı yığın konuma kaydedildiğinde geçici olmayan INT kayıtları (r28 r19) sayısını gösteren bir 4-bit alanıdır.
+  - 11 = zincirleme işlevi, giriş/sonuç deposu/yük çifti yönerge kullanılan \<x29, lr >
+- **H** olan işlev tam sayı parametresi homes olup olmadığını belirten bir 1 bit bayrağı işlevi çok başlangıcında depolayarak (x7 x0) kaydeder. (0 = 1 kaydeder ev değil havaalanlarından kayıtları =).
+- **RegI** kurallı yığın konuma kaydedildiğinde geçici olmayan INT kayıtları (x28 x19) sayısını gösteren bir 4-bit alanıdır.
 - **RegF** kurallı yığın konuma kaydedildiğinde geçici olmayan FP kayıtları (d15 d8) sayısını gösteren bir 3-bit alanıdır. (RegF = 0: yok FP kaydına kaydedilir; RegF > 0: RegF + 1 FP kayıtları kaydedilir). Paketlenmiş geriye doğru izleme verileri için yalnızca bir FP kaydına Kaydet işlevi kullanılamaz.
 
 Yukarıdaki bölümde 1, 2 (olmadan Giden parametre alanı), 3 ve 4 kategorilere giren kurallı açıklanabilmeleri paketlenmiş geriye doğru izleme biçimi tarafından temsil edilebilir.  Kurallı işlevler çok benzer bir form izleyin başlangıçları dışındaki **H** hiçbir etkisi `set_fp` yönerge atlanırsa ve adımları ve bunun yanı sıra her bir adımın yönergeleri sırasını bölümünde tersine çevrilir. Paketlenmiş xdata algoritması, aşağıdaki tabloda ayrıntılı adımları izler:
@@ -367,26 +367,26 @@ Yukarıdaki bölümde 1, 2 (olmadan Giden parametre alanı), 3 ve 4 kategorilere
 
 4. Adım: Giriş bağımsız değişkeni giriş parametre alanında kaydedin.
 
-5. Adım: Yerel ağ dahil olmak üzere, kalan yığın ayırma \<r29, lr > eşleştirme ve parametre alanı giden. 5a 1 kurallı türüne karşılık gelir. 5b ve 5c kurallı tür 2 ' dir. 5d ve 5e her iki tür için 3 ve 4 yazın.
+5. Adım: Yerel ağ dahil olmak üzere, kalan yığın ayırma \<x29, lr > eşleştirme ve parametre alanı giden. 5a 1 kurallı türüne karşılık gelir. 5b ve 5c kurallı tür 2 ' dir. 5d ve 5e her iki tür için 3 ve 4 yazın.
 
 Adım #|Bayrak değerleri|yönerge sayısı|Opcode|Kod geriye doğru izleme
 -|-|-|-|-
 0|||`#intsz = RegI * 8;`<br/>`if (CR==01) #intsz += 8; // lr`<br/>`#fpsz = RegF * 8;`<br/>`if(RegF) #fpsz += 8;`<br/>`#savsz=((#intsz+#fpsz+8*8*H)+0xf)&~0xf)`<br/>`#locsz = #famsz - #savsz`|
-1.|0 < **regI** < 10 =|RegI / 2 + **RegI** % 2|`stp r19,r20,[sp,#savsz]!`<br/>`stp r21,r22,[sp,16]`<br/>`...`|`save_regp_x`<br/>`save_regp`<br/>`...`
-2|**CR**==01*|1.|`str lr,[sp, #intsz-8]`\*|`save_reg`
-3|0 < **RegF** < = 7|(RegF + 1) / 2 +<br/>(RegF + 1) % 2).|`stp d8,d9,[sp, #intsz]`\*\*<br/>`stp d10,d11,[sp, #intsz+16]`<br/>`...`<br/>`str d(8+RegF),[sp, #intsz+#fpsz-8]`|`save_fregp`<br/>`...`<br/>`save_freg`
-4|**H** 1 ==|4|`stp r0,r1,[sp, #intsz+#fpsz]`<br/>`stp r2,r3,[sp, #intsz+#fpsz+16]`<br/>`stp r4,r5,[sp, #intsz+#fpsz+32]`<br/>`stp r6,r7,[sp, #intsz+#fpsz+48]`|`nop`<br/>`nop`<br/>`nop`<br/>`nop`
-5a|**CR** 11 == & & #locsz<br/> <= 512|2|`stp r29,lr,[sp,-#locsz]!`<br/>`mov r29,sp`\*\*\*|`save_fplr_x`<br/>`set_fp`
-5b|**CR** 11 == &AMP; &AMP;<br/>512 < #locsz <= 4088|3|`sub sp,sp, #locsz`<br/>`stp r29,lr,[sp,0]`<br/>`add r29, sp, 0`|`alloc_m`<br/>`save_fplr`<br/>`set_fp`
-5c|**CR** 11 == & & #locsz > 4088|4|`sub sp,sp,4088`<br/>`sub sp,sp, (#locsz-4088)`<br/>`stp r29,lr,[sp,0]`<br/>`add r29, sp, 0`|`alloc_m`<br/>`alloc_s`/`alloc_m`<br/>`save_fplr`<br/>`set_fp`
-5d|(**CR** 00 == \| \| **CR**01 ==) &AMP; &AMP;<br/>#locsz < 4088 =|1.|`sub sp,sp, #locsz`|`alloc_s`/`alloc_m`
-5e|(**CR** 00 == \| \| **CR**01 ==) &AMP; &AMP;<br/>#locsz > 4088|2|`sub sp,sp,4088`<br/>`sub sp,sp, (#locsz-4088)`|`alloc_m`<br/>`alloc_s`/`alloc_m`
+1.|0 < **regI** < 10 =|RegI / 2 + **RegI** % 2|`stp x19,x20,[sp,#savsz]!`<br/>`stp x21,x22,[sp,#16]`<br/>`...`|`save_regp_x`<br/>`save_regp`<br/>`...`
+2|**CR**==01*|1.|`str lr,[sp,#(intsz-8)]`\*|`save_reg`
+3|0 < **RegF** < = 7|(RegF + 1) / 2 +<br/>(RegF + 1) % 2).|`stp d8,d9,[sp,#intsz]`\*\*<br/>`stp d10,d11,[sp,#(intsz+16)]`<br/>`...`<br/>`str d(8+RegF),[sp,#(intsz+fpsz-8)]`|`save_fregp`<br/>`...`<br/>`save_freg`
+4|**H** 1 ==|4|`stp x0,x1,[sp,#(intsz+fpsz)]`<br/>`stp x2,x3,[sp,#(intsz+fpsz+16)]`<br/>`stp x4,x5,[sp,#(intsz+fpsz+32)]`<br/>`stp x6,x7,[sp,#(intsz+fpsz+48)]`|`nop`<br/>`nop`<br/>`nop`<br/>`nop`
+5a|**CR** 11 == & & #locsz<br/> <= 512|2|`stp x29,lr,[sp,#-locsz]!`<br/>`mov x29,sp`\*\*\*|`save_fplr_x`<br/>`set_fp`
+5b|**CR** 11 == &AMP; &AMP;<br/>512 < #locsz <= 4080|3|`sub sp,sp,#locsz`<br/>`stp x29,lr,[sp,0]`<br/>`add x29,sp,0`|`alloc_m`<br/>`save_fplr`<br/>`set_fp`
+5c|**CR** 11 == & & #locsz > 4080|4|`sub sp,sp,4080`<br/>`sub sp,sp,#(locsz-4080)`<br/>`stp x29,lr,[sp,0]`<br/>`add x29,sp,0`|`alloc_m`<br/>`alloc_s`/`alloc_m`<br/>`save_fplr`<br/>`set_fp`
+5d|(**CR** 00 == \| \| **CR**01 ==) &AMP; &AMP;<br/>#locsz < 4080 =|1.|`sub sp,sp,#locsz`|`alloc_s`/`alloc_m`
+5e|(**CR** 00 == \| \| **CR**01 ==) &AMP; &AMP;<br/>#locsz > 4080|2|`sub sp,sp,4080`<br/>`sub sp,sp,#(locsz-4080)`|`alloc_m`<br/>`alloc_s`/`alloc_m`
 
 \* Varsa **CR** 01 == ve **RegI** tek sayı, adım 2 ve 1. adımda son save_rep bir save_regp birleştirilir.
 
 \*\* Varsa **RegI** == **CR** == 0, ve **RegF** ! = 0 ise, ilk stp kayan nokta azaltma için.
 
-\*\*\* Yönerge için karşılık gelen `mov r29, sp` bölümünde yok. Paketlenmiş geriye doğru izleme verileri, bir işlev sp geri r29 gelen gerektiriyorsa kullanılamaz.
+\*\*\* Yönerge için karşılık gelen `mov x29,sp` bölümünde yok. Paketlenmiş geriye doğru izleme verileri, bir işlev sp geri x29 gelen gerektiriyorsa kullanılamaz.
 
 ### <a name="unwinding-partial-prologs-and-epilogs"></a>Geriye doğru izleme kısmi açıklanabilmeleri ve sonuç
 
@@ -397,16 +397,16 @@ Bir giriş veya çıkış yürütülürken bir özel durum veya kesinti nerede o
 Örneğin, bu giriş ve bitiş dizisi alır:
 
 ```asm
-0000:    stp    r29, lr, [sp, -256]!        // save_fplr_x  256 (pre-indexed store)
-0004:    stp    d8,d9,[sp,224]              // save_fregp 0, 224
-0008:    stp    r19,r20,[sp,240]            // save_regp 0, 240
-000c:    mov    r29,sp                      // set_fp
+0000:    stp    x29,lr,[sp,#-256]!          // save_fplr_x  256 (pre-indexed store)
+0004:    stp    d8,d9,[sp,#224]             // save_fregp 0, 224
+0008:    stp    x19,x20,[sp,#240]           // save_regp 0, 240
+000c:    mov    x29,sp                      // set_fp
          ...
-0100:    mov    sp,r29                      // set_fp
-0104:    ldp    r19,r20,[sp,240]            // save_regp 0, 240
+0100:    mov    sp,x29                      // set_fp
+0104:    ldp    x19,x20,[sp,#240]           // save_regp 0, 240
 0108:    ldp    d8,d9,[sp,224]              // save_fregp 0, 224
-010c:    ldp    r29, lr, [sp, -256]!        // save_fplr_x  256 (post-indexed load)
-0110:    ret     lr                         // end
+010c:    ldp    x29,lr,[sp],#256            // save_fplr_x  256 (post-indexed load)
+0110:    ret    lr                          // end
 ```
 
 Her opcode yanında, bu işlem açıklayan uygun geriye doğru izleme kodudur. Dikkat edilecek ilk şey geriye doğru izleme kodları giriş için bir dizi geriye doğru izleme kodları bitiş (Bitiş'ın son yönergede sayılmaz) için tam bir Ayna görüntüsünü olmasıdır. Bu yaygın bir durumdur ve bu nedenle geriye doğru izleme kodları giriş için her zaman girişin yürütme siparişi ters sırada depolanır varsayılır.
@@ -442,9 +442,9 @@ Bir normal işlev parçalarını durumudur "ayırma ile derleyicinin kod" kod an
 - (bölge 1: başlar)
 
     ```asm
-        stp     r29, lr, [sp, -256]!    // save_fplr_x  256 (pre-indexed store)
-        stp     r19,r20,[sp,240]        // save_regp 0, 240
-        mov     r29,sp                  // set_fp
+        stp     x29,lr,[sp,#-256]!      // save_fplr_x  256 (pre-indexed store)
+        stp     x19,x20,[sp,#240]       // save_regp 0, 240
+        mov     x29,sp                  // set_fp
         ...
     ```
 
@@ -460,9 +460,9 @@ Bir normal işlev parçalarını durumudur "ayırma ile derleyicinin kod" kod an
 
     ```asm
     ...
-        mov     sp,r29                  // set_fp
-        ldp     r19,r20,[sp,240]        // save_regp 0, 240
-        ldp     r29, lr, [sp, -256]!    // save_fplr_x  256 (post-indexed load)
+        mov     sp,x29                  // set_fp
+        ldp     x19,x20,[sp,#240]       // save_regp 0, 240
+        ldp     x29,lr,[sp],#256        // save_fplr_x  256 (post-indexed load)
         ret     lr                      // end
     ```
 
@@ -489,27 +489,27 @@ Başka bir daha karmaşık işlevi parçaları "ile derleyicinin sarmalama küç
 - (bölge 1: başlar)
 
     ```asm
-        stp     r29, lr, [sp, -256]!    // save_fplr_x  256 (pre-indexed store)
-        stp     r19,r20,[sp,240]        // save_regp 0, 240
-        mov     r29,sp                  // set_fp
+        stp     x29,lr,[sp,#-256]!      // save_fplr_x  256 (pre-indexed store)
+        stp     x19,x20,[sp,#240]       // save_regp 0, 240
+        mov     x29,sp                  // set_fp
         ...
     ```
 
 - (bölge 2: başlar)
 
     ```asm
-        stp     r21,r22,[sp,224]        // save_regp 2, 224
+        stp     x21,x22,[sp,#224]       // save_regp 2, 224
         ...
-        ldp     r21,r22,[sp,224]        // save_regp 2, 224
+        ldp     x21,x22,[sp,#224]       // save_regp 2, 224
     ```
 
 - (bölge 2: Son)
 
     ```asm
         ...
-        mov     sp,r29                  // set_fp
-        ldp     r19,r20,[sp,240]        // save_regp 0, 240
-        ldp     r29, lr, [sp, -256]!    // save_fplr_x  256 (post-indexed load)
+        mov     sp,x29                  // set_fp
+        ldp     x19,x20,[sp,#240]       // save_regp 0, 240
+        ldp     x29,lr,[sp],#256        // save_fplr_x  256 (post-indexed load)
         ret     lr                      // end
     ```
 
@@ -627,4 +627,4 @@ Not: EpilogStart dizini [4], giriş geriye doğru izleme kodu (kısmen yeniden g
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [ARM64 ABI kurallarına genel bakış](arm64-windows-abi-conventions.md)<br/>
-[ARM özel durum işleme](arm-exception-handling.md)
+[ARM Özel Durum İşleme](arm-exception-handling.md)
