@@ -5,10 +5,10 @@ helpviewer_keywords:
 - breaking changes [C++]
 ms.assetid: b38385a9-a483-4de9-99a6-797488bc5110
 ms.openlocfilehash: b381a2b7cc9a4ad4749f382838bdec5872a3decf
-ms.sourcegitcommit: b72a10a7b12e722fd91a17406b91b270026f763a
+ms.sourcegitcommit: 88631cecbe3e3fa752eae3ad05b7f9d9f9437b4d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/03/2019
+ms.lasthandoff: 04/15/2019
 ms.locfileid: "58898888"
 ---
 # <a name="visual-c-change-history-2003---2015"></a>Visual C++ değişiklik geçmişi 2003-2015
@@ -62,7 +62,7 @@ Ayrıca, derleyici uyumluluğu yapılan sürekli geliştirmeler bazen nasıl der
 
    Hataları gidermek için dahil \<cmath > öğesinden kaldırılan işlevlerin bildirimleri almak için \<math.h >. Bu işlevler taşındı:
 
-  - `double abs(double)` and `float abs(float)`
+  - `double abs(double)` ve `float abs(float)`
 
   - `double pow(double, int)`, `float pow(float, float)`, `float pow(float, int)`, `long double pow(long double, long double)`, `long double pow(long double, int)`
 
@@ -98,13 +98,13 @@ Ayrıca, derleyici uyumluluğu yapılan sürekli geliştirmeler bazen nasıl der
 
 - **_beginthread ve _beginthreadex**
 
-   [_Beginthread](../c-runtime-library/reference/beginthread-beginthreadex.md) ve [_beginthreadex](../c-runtime-library/reference/beginthread-beginthreadex.md) işlevleri artık süresi boyunca, iş parçacığının iş parçacığı yordamı tanımlanır modülüne bir başvuru tutun. Bu, bir iş parçacığı çalıştırılıp tamamlandıktan kadar modülleri yüklenmemiş olmamasını yardımcı olur.
+   The [_beginthread](../c-runtime-library/reference/beginthread-beginthreadex.md) and [_beginthreadex](../c-runtime-library/reference/beginthread-beginthreadex.md) functions now hold a reference to the module in which the thread procedure is defined for the duration of the thread. Bu, bir iş parçacığı çalıştırılıp tamamlandıktan kadar modülleri yüklenmemiş olmamasını yardımcı olur.
 
 #### <a name="stdargh"></a>\<stdarg.h >
 
 - **va_start ve başvuru türleri**
 
-   C++ kodunu derlerken [va_start](../c-runtime-library/reference/va-arg-va-copy-va-end-va-start.md) artık kendisine geçirilen bağımsız değişken başvuru türünde değil. derleme zamanı sırasında doğrular. Başvuru türü bağımsız değişkenleri C++ standardı tarafından yasaktır.
+   Derleme sırasında C++ kodu [va_start](../c-runtime-library/reference/va-arg-va-copy-va-end-va-start.md) artık kendisine geçirilen bağımsız değişken başvuru türünde değil. derleme zamanı sırasında doğrular. Başvuru türü bağımsız değişkenleri C++ standardı tarafından yasaktır.
 
 #### <a name="stdioh-and-conioh"></a>\<stdio.h > ve \<conio.h >
 
@@ -275,7 +275,7 @@ Ayrıca, derleyici uyumluluğu yapılan sürekli geliştirmeler bazen nasıl der
 
 #### <a name="timeh"></a>\<TIME.h >
 
-- **saat**
+- **clock**
 
    Önceki sürümlerde, [saat](../c-runtime-library/reference/clock.md) işlevi uygulanan Windows API kullanarak [GetSystemTimeAsFileTime](/windows/desktop/api/sysinfoapi/nf-sysinfoapi-getsystemtimeasfiletime). Clock işlevi bu uygulama ile Sistem saati hassas ve böylece mutlaka monoton değildi. Clock işlevi açısından reimplemented [QueryPerformanceCounter](https://msdn.microsoft.com/library/windows/desktop/ms644904.aspx) ve monoton sunulmuştur.
 
@@ -313,7 +313,7 @@ Yeni iyileştirmeleri ve hata ayıklama denetimlerini etkinleştirmek için, C++
 
 - **steady_clock**
 
-   \<Chrono > uygulaması [steady_clock](../standard-library/steady-clock-struct.md) steadiness ve monotonicity C++ Standart gereksinimlerini karşılayacak şekilde değişti. `steady_clock` artık üzerinde temel [QueryPerformanceCounter](https://msdn.microsoft.com/library/windows/desktop/ms644904.aspx) ve `high_resolution_clock` için bir typedef sunulmuştur `steady_clock`. Sonuç olarak, Visual Studio'da `steady_clock::time_point` için bir typedef sunulmuştur `chrono::time_point<steady_clock>`; ancak, bu durum diğer uygulamaları için mutlaka geçerli değildir.
+   \<Chrono > uygulaması [steady_clock](../standard-library/steady-clock-struct.md) karşılayacak şekilde değişti C++ steadiness ve monotonicity standart gereksinimleri. `steady_clock` artık üzerinde temel [QueryPerformanceCounter](https://msdn.microsoft.com/library/windows/desktop/ms644904.aspx) ve `high_resolution_clock` için bir typedef sunulmuştur `steady_clock`. Sonuç olarak, Visual Studio'da `steady_clock::time_point` için bir typedef sunulmuştur `chrono::time_point<steady_clock>`; ancak, bu durum diğer uygulamaları için mutlaka geçerli değildir.
 
 - **ayırıcılar ve const**
 
@@ -333,7 +333,7 @@ Yeni iyileştirmeleri ve hata ayıklama denetimlerini etkinleştirmek için, C++
 
    C++ Standart const öğelerin kapsayıcıları her zaman Yasak (vektör gibi\<const T > veya\<const T >). Visual Studio 2013 veya önceki gibi kapsayıcılar kabul edildi. Geçerli sürümde bu tür kapsayıcıları derleme başarısız.
 
-- **Std::Allocator:: serbest bırak**
+- **std::allocator::deallocate**
 
    Visual Studio 2013 ve önceki sürümlerinde, `std::allocator::deallocate(p, n)` geçirilen bağımsız değişken yok sayıldı *n*.  C++ Standart her zaman zorunlu *n* çalıştırılışı için ilk bağımsız değişken olarak geçirilen değere eşit olmalıdır `allocate` verilmesi *p*. Ancak, geçerli sürümde, değerini *n* Denetlenmekte. Bağımsız değişkenler için geçen kod *n* ne standart çalışma zamanında kilitlenebilir gerektirir öğesinden farklı.
 
@@ -387,7 +387,7 @@ Yeni iyileştirmeleri ve hata ayıklama denetimlerini etkinleştirmek için, C++
 
 ####  <a name="BK_MFC"></a> MFC ve ATL
 
-- **Microsoft Foundation sınıfları (MFC)**
+- **Microsoft Foundation Sınıfları (MFC)**
 
    Artık Visual Studio'nun "Tipik" bir yüklemede nedeniyle büyük boyutuna dahildir. MFC yüklemek için seçin **özel** seçeneği Visual Studio 2015 kurulumunda yüklediniz. Visual Studio 2015'i zaten varsa, MFC çalıştırarak yükleyebilirsiniz **Visual Studio** Kurulum'u yeniden çalıştırın. Seçin **özel** seçeneği yükleyin ve ardından **Microsoft Foundation sınıfları**. Çalıştırabileceğiniz **Visual Studio** Kurulumu'nu **Denetim Masası** denetimi **programlar ve Özellikler**, veya yükleme medyasından.
 
@@ -2926,7 +2926,7 @@ Bu farklılıklar, kaynak kodu veya diğer derleme yapıtlarının etkileyebilir
 
 ### <a name="standard-library"></a>Standart Kitaplık
 
-Visual Studio 2013 C++ derleyicisi, uyuşmazlıkları Visual Studio 2010'da uygulanmıştır, _ıterator_debug_level uyuşmazlıklarını ve RuntimeLibrary uyuşmazlıklarını algılar. Bu uyuşmazlıkları oluşur, derleyici seçenekleri `/MT` (statik sürüm) `/MTd` (statik hata ayıklama), `/MD` (dinamik sürüm) ve `/MDd` (dinamik hata ayıklama) karıştırılır.
+C++ Derleyici Visual Studio 2013, Visual Studio 2010'da uygulanmıştır, _ıterator_debug_level uyuşmazlıkları algılar ve RuntimeLibrary eşleşmiyor. Bu uyuşmazlıkları oluşur, derleyici seçenekleri `/MT` (statik sürüm) `/MTd` (statik hata ayıklama), `/MD` (dinamik sürüm) ve `/MDd` (dinamik hata ayıklama) karıştırılır.
 
 - Kodunuzu önceki yayındaki benzetilmiş diğer ad şablonlarını kabul ederse, bunu değiştirmeniz gerekir. Örneğin, yerine, `allocator_traits<A>::rebind_alloc<U>::other`başvurduysanız, artık `allocator_traits<A>::rebind_alloc<U>`. Ancak `ratio_add<R1, R2>::type` artık gerekli ve biz öneriyor olmamıza sunulmuştur `ratio_add<R1, R2>`, eski hala çünkü derleyeceği `ratio<N, D>` , zaten azaltılmışsa aynı türde olacak bir oran, bir "tür" typedef olması gereklidir.
 
@@ -3032,7 +3032,7 @@ Visual Studio 2013 C++ derleyicisi, uyuşmazlıkları Visual Studio 2010'da uygu
 
 ### <a name="ide"></a>IDE
 
-- Windows Forms uygulamaları C +'da oluşturduğunuz değil öneririz ancak +/ CLI, bakım mevcut C + +/ CLI UI uygulamaları desteklenir. Bir Windows Forms uygulaması veya başka bir .NET kullanıcı Arabirimi uygulama oluşturmak varsa, C# veya Visual Basic kullanın. Kullanmak C + +/ CLI birlikte çalışabilirliği için yalnızca amacıyla.
+- Windows Forms uygulamalarında oluşturmayın öneririz ancak C++/CLI, mevcut Bakım C++CLI UI uygulamaları desteklenir. Bir Windows Forms uygulaması veya başka bir .NET kullanıcı Arabirimi uygulama oluşturmak varsa, C# veya Visual Basic kullanın. Kullanım C++/CLI birlikte çalışabilirlik için yalnızca amacıyla.
 
 ### <a name="parallel-patterns-library-and-concurrency-runtime-library"></a>Paralel Desen kitaplığı ve Eşzamanlılık Çalışma Zamanı Kitaplığı
 
@@ -3046,11 +3046,11 @@ Visual Studio 2013 C++ derleyicisi, uyuşmazlıkları Visual Studio 2010'da uygu
 
 - Visual C++ 2010 benzetimli variadic şablonları — Örneğin, `make_shared<T>(arg1, arg2, argN)`— bağımsız değişkenleri, aşırı yüklemeler ve uzmanlıkları out ile önişlemci makineler damgası tarafından 10, bir sınıra kadar. Visual Studio 2012'de, derleme sürelerini ve kullanıcıların çoğu için derleyicinin bellek tüketimini geliştirmek için beş bağımsız değişkenler için bu sınır azaltılır. Ancak, _varıadıc_max açıkça proje genelinde 10 tanımlayarak önceki sınırı ayarlayabilirsiniz.
 
-- C ++ 11 17.6.4.3.1 [macro.names]/2 yasaklıyor Makro değişikliği anahtar sözcüklerin, C++ Standart Kitaplığı üst bilgiler dahil edilir. Bunlar anahtar sözcükleri makrosu yerini tespit ederse üstbilgileri derleyici hataları artık gösterin. (Bu kodu derlemek _ALLOW_KEYWORD_MACROS tanımlama verir, ancak biz kesinlikle bu kullanımı önerilmemektedir.) Özel durum, makro biçiminde olarak `new` üstbilgileri aygıtlarınızı kendilerini kullanarak savunmak varsayılan olarak, izin `#pragma push_macro("new")` / `#undef new` / `#pragma pop_macro("new")`. Tam olarak bu ne adından da anlaşılacağı _ENFORCE_BAN_OF_MACRO_NEW tanımlama yapar.
+- C ++ 11 17.6.4.3.1 [macro.names]/2 engelliyor anahtar sözcüklerin Makro değişikliği olduğunda C++ standart kitaplığı üst bilgiler dahil edilir. Bunlar anahtar sözcükleri makrosu yerini tespit ederse üstbilgileri derleyici hataları artık gösterin. (Bu kodu derlemek _ALLOW_KEYWORD_MACROS tanımlama verir, ancak biz kesinlikle bu kullanımı önerilmemektedir.) Özel durum, makro biçiminde olarak `new` üstbilgileri aygıtlarınızı kendilerini kullanarak savunmak varsayılan olarak, izin `#pragma push_macro("new")` / `#undef new` / `#pragma pop_macro("new")`. Tam olarak bu ne adından da anlaşılacağı _ENFORCE_BAN_OF_MACRO_NEW tanımlama yapar.
 
-- Çeşitli iyileştirmeler ve hata ayıklama denetimlerini uygulamak için C++ Standart Kitaplığı uygulaması kasıtlı olarak Visual Studio sürümleri arasında ikili uyumluluğu keser (2005, 2008, 2010, 2012). C++ Standart Kitaplığı kullanıldığında, nesne dosyaları ve statik kitaplıklar bir ikili olarak (EXE veya DLL) farklı sürümler kullanılarak derlenmiş ve C++ Standart Kitaplığı nesneleri geçirme tarafından derlenmiş ikili dosyaları arasında engelliyor karıştırma engelliyor farklı sürümleri kullanılarak. Nesne dosyaları ve statik kitaplıklar karıştırma (C++ kullanılarak derlenmiş bulunanlarla Visual C++ 2010 kullanılarak derlenmiş C++ Standart Kitaplığı'nı kullanarak Visual Studio 2012'de derleyici _MSC_VER uyuşmazlığı, _MSC_VER olduğu ilgili bağlayıcı hataları yayar Derleyicinin ana sürümünü (Visual Studio 2012'deki Visual c++ 1700) içeren makrosu. Bu denetim DLL karmasını algılayamaz ve Visual C++ 2008 veya önceki bir sürümü içeren karmasını algılayamaz.
+- Çeşitli iyileştirmeler ve hata ayıklama denetimlerini uygulamak için C++ Standart Kitaplığı uygulaması kasıtlı olarak Visual Studio sürümleri arasında ikili uyumluluğu keser (2005, 2008, 2010, 2012). C++ Standart Kitaplığı kullanıldığında, nesne dosyaları ve statik kitaplıklar bir ikili olarak (EXE veya DLL) farklı sürümler kullanılarak derlenmiş ve C++ Standart Kitaplığı nesneleri geçirme tarafından derlenmiş ikili dosyaları arasında engelliyor karıştırma engelliyor farklı sürümleri kullanılarak. Nesne dosyaları ve statik kitaplıklar karıştırma (kullanarak C++ Visual kullanılarak derlenmiş standart Kitaplığı C++ 2010 kullanılarak derlenmiş bulunanlarla C++ Visual Studio 2012'de derleyici _MSC_VER uyuşmazlığı ilgili bağlayıcı hataları yayar _MSC_VER, derleyicinin ana sürümünü içeren makrodur olduğu (görsel için 1700 C++ Visual Studio 2012'de). Bu denetim DLL karmasını algılayamaz ve Visual C++ 2008 veya önceki bir sürümü içeren karmasını algılayamaz.
 
-- Visual Studio 2012'de C++ derleyicisi, _ıterator_debug_level uyuşmazlıkları Visual C++ 2010 içinde olan algılama ek olarak, çalışma zamanı kitaplığı uyuşmazlıkları algılar. Bu uyuşmazlıkları oluşur, derleyici seçeneklerinin `/MT` (statik sürüm), `/MTd` (statik hata ayıklama), `/MD` (dinamik sürüm) ve `/MDd` (dinamik hata ayıklama) karıştırılır.
+- _Iterator_debug_level uyuşmazlıkları algılamak ek olarak, hangi uygulanan görselde C++ 2010 C++ derleyici Visual Studio 2012'de çalışma zamanı kitaplığı uyuşmazlıkları algılar. Bu uyuşmazlıkları oluşur, derleyici seçeneklerinin `/MT` (statik sürüm), `/MTd` (statik hata ayıklama), `/MD` (dinamik sürüm) ve `/MDd` (dinamik hata ayıklama) karıştırılır.
 
 - `operator<()`, `operator>()`, `operator<=()`, ve `operator>=()` için daha önce sağlanan `std::unordered_map` ve `stdext::hash_map` aileleri kapsayıcıların, ancak kendi uygulamalarını kullanışlı değildir. Bu standart işleçler, Visual Studio 2012'de Visual C++'da kaldırılmıştır. Ayrıca, uygulanması `operator==()` ve `operator!=()` için `std::unordered_map` ailesi karşılamak için genişletilmişse `stdext::hash_map` ailesi. (Kullanımını kaçınmanızı öneririz `stdext::hash_map` yeni kod ailesi.)
 
@@ -3386,7 +3386,7 @@ Visual Studio 2013 C++ derleyicisi, uyuşmazlıkları Visual Studio 2010'da uygu
 
 ### <a name="atl"></a>ATL
 
-- ATL CRT üzerinde bir bağımlılık oluşturulamıyor. Visual Studio'nun önceki sürümlerinde kullanabileceğinizi #define atl_mın_crt ATL projesinde CRT üzerinde en düşük düzeyde bağımlı hale getirmek için. Visual C++ 2008'de tüm ATL projeleri atl_mın_crt tanımlanan bağımsız olarak CRT üzerinde en düşük düzeyde bağımlıdır.
+- ATL CRT üzerinde bir bağımlılık oluşturulamıyor. Visual Studio'nun önceki sürümlerinde kullanabileceğinizi #define atl_mın_crt ATL projesinde CRT üzerinde en düşük düzeyde bağımlı hale getirmek için. Görselde C++ 2008 ' in tüm ATL projeleri atl_mın_crt tanımlanan bağımsız olarak CRT üzerinde en düşük düzeyde bağımlı olan.
 
 - ATL Sunucu codebase Codeplex'te bir paylaşılan kaynak proje olarak yayımlanmıştır ve Visual Studio'nun bir parçası yüklü değildir. Kodlama ve sınıflardan atlenc.h ve yardımcı işlevleri ve sınıfları atlutil.h ve atlpath.h kod çözme veri tutulmuştur ve artık ATL Kitaplığı'nın bir parçasıdır. ATL Sunucu ile ilişkilendirilen çeşitli dosyalar artık, Visual Studio'nun bir parçası değildir.
 
@@ -3396,7 +3396,7 @@ Visual Studio 2013 C++ derleyicisi, uyuşmazlıkları Visual Studio 2010'da uygu
 
 ### <a name="atlmfc-shared-classes"></a>ATL/MFC Paylaşılan Sınıfları
 
-- ATL CRT üzerinde bir bağımlılık oluşturulamıyor. Visual Studio'nun önceki sürümlerinde kullanabileceğinizi `#define ATL_MIN_CRT` ATL projesinde CRT üzerinde en düşük düzeyde bağımlı hale getirmek için. Visual C++ 2008'de tüm ATL projeleri atl_mın_crt tanımlanan bağımsız olarak CRT üzerinde en düşük düzeyde bağımlıdır.
+- ATL CRT üzerinde bir bağımlılık oluşturulamıyor. Visual Studio'nun önceki sürümlerinde kullanabileceğinizi `#define ATL_MIN_CRT` ATL projesinde CRT üzerinde en düşük düzeyde bağımlı hale getirmek için. Görselde C++ 2008 ' in tüm ATL projeleri atl_mın_crt tanımlanan bağımsız olarak CRT üzerinde en düşük düzeyde bağımlı olan.
 
 - ATL Sunucu codebase Codeplex'te bir paylaşılan kaynak proje olarak yayımlanmıştır ve Visual Studio'nun bir parçası yüklü değildir. Kodlama ve sınıflardan atlenc.h ve yardımcı işlevleri ve sınıfları atlutil.h ve atlpath.h kod çözme veri tutulmuştur ve artık ATL Kitaplığı'nın bir parçasıdır. ATL Sunucu ile ilişkilendirilen çeşitli dosyalar artık, Visual Studio'nun bir parçası değildir.
 
