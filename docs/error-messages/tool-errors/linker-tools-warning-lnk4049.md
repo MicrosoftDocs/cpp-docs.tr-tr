@@ -1,23 +1,25 @@
 ---
 title: Bağlayıcı Araçları Uyarısı LNK4049
-ms.date: 04/09/2019
+ms.date: 04/15/2019
 f1_keywords:
 - LNK4049
 helpviewer_keywords:
 - LNK4049
 ms.assetid: 5fd5fb24-c860-4149-a557-0ac26a65d97c
-ms.openlocfilehash: 357bf5a981dddadfd79d2d6981ccc9c478909097
-ms.sourcegitcommit: 0ad3f4517e64900a2702dd3d366586f9e2bce2c2
+ms.openlocfilehash: b527d15310dba70c1bae21e601db17db2900e219
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/10/2019
-ms.locfileid: "59477359"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59674259"
 ---
 # <a name="linker-tools-warning-lnk4049"></a>Bağlayıcı Araçları Uyarısı LNK4049
 
 > Sembol '*sembol*'içinde tanımlanan'*filename.obj*' alınır
 
-Simgenin hem öğesinden dışarı aktarılan ve programa içeri aktarıldı.
+[__declspec(dllimport)](../../cpp/dllexport-dllimport.md) için belirtilen *sembol* sembolü nesne dosyasında tanımlanan olsa bile *filename.obj* aynı görüntüde. Kaldırma `__declspec(dllimport)` bu uyarıyı çözmek için değiştiricisi.
+
+## <a name="remarks"></a>Açıklamalar
 
 Bir nesne dosyasında simge tanımlamak ve kullanarak başvuru olduğunda bu uyarı bağlayıcı tarafından oluşturulan `__declspec(dllimport)` başka bir bildirim değiştirici.
 
@@ -33,7 +35,7 @@ LNK4049 çözmek için aşağıdaki yordamlardan birini deneyin:
 
 - Kaldırma `__declspec(dllimport)` LNK4049 tetikleyen simgenin İleri dönük bildirimi gelen değiştiricisi. İkili bir görüntü içindeki semboller kullanarak arayabilirsiniz **DUMPBIN** yardımcı programı. **DUMPBIN /SYMBOLS** anahtarı görüntüsü COFF sembol tablosu görüntüler. Daha fazla bilgi için **DUMPBIN** yardımcı programını bkz [DUMPBIN başvurusu](../../build/reference/dumpbin-reference.md).
 
-- Artımlı bağlamayı ve bütün program iyileştirmesi geçici olarak devre dışı bırakın. Yeniden derlenen uygulamanın içeri aktarılan sembol başvuran işlevinin adını içeren uyarısı LNK4217 oluşturur. Kaldırma `__declspec(dllimport)` içeri aktarılan sembol ve artımlı bağlamayı etkinleştir yeniden veya bütün program iyileştirmesi gerektiğinde bildirim değiştirici.
+- Artımlı bağlamayı ve bütün program iyileştirmesi geçici olarak devre dışı bırakın. Yeniden derlenen uygulamanın içeri aktarılan sembol başvuruları işlevinin adını içeren uyarısı LNK4217 oluşturur. Kaldırma `__declspec(dllimport)` içeri aktarılan sembol ve artımlı bağlamayı etkinleştir yeniden veya bütün program iyileştirmesi gerektiğinde bildirim değiştirici.
 
 Son oluşturulan kodun doğru şekilde davranır ancak, içeri aktarılan işlevi çağırmak için oluşturulan kodu işlevi doğrudan çağırma değerinden daha az verimlidir. Bu uyarı kullanarak derleme yaptığınızda görünmez [/CLR](../../build/reference/clr-common-language-runtime-compilation.md) seçeneği.
 
