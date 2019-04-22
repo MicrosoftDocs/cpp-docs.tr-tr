@@ -1,1 +1,0 @@
-Visual Studio 2012'de Visual C++

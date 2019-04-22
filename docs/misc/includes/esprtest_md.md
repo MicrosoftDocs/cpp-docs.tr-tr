@@ -1,1 +1,0 @@
-Sınayıcılar için Team Edition

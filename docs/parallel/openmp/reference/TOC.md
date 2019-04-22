@@ -1,7 +1,0 @@
-# [OpenMP yönergeleri](openmp-directives.md)
-# [OpenMP yan tümceleri](openmp-clauses.md)
-# [OpenMP kitaplık başvurusu](openmp-library-reference.md)
-## [OpenMP kitaplıkları](openmp-libraries.md)
-## [OpenMP veri türleri](openmp-data-types.md)
-## [OpenMP ortam değişkenleri](openmp-environment-variables.md)
-## [OpenMP işlevleri](openmp-functions.md)

@@ -1,1 +1,0 @@
-Ortak Dil Çalışma Zamanı

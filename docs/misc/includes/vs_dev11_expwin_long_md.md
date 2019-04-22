@@ -1,1 +1,0 @@
-Windows 8 için Visual Studio Express 2012

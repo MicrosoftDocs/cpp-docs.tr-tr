@@ -1,1 +1,0 @@
-Daha fazla bilgi

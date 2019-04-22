@@ -1,1 +1,0 @@
-Windows Çalışma Zamanı C++ Şablon Kitaplığı
