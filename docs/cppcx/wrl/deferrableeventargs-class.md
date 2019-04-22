@@ -12,10 +12,10 @@ helpviewer_keywords:
 - Microsoft::WRL::DeferrableEventArgs::InvokeAllFinished method
 ms.assetid: ece89267-7b72-40e1-8185-550c865b070a
 ms.openlocfilehash: 4a3786e65873d6837389ad4fa5e7d06a14d66460
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58787781"
 ---
 # <a name="deferrableeventargs-class"></a>DeferrableEventArgs Sınıfı

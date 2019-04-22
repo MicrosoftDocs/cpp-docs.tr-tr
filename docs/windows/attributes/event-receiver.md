@@ -13,10 +13,10 @@ helpviewer_keywords:
 - event sinks
 ms.assetid: bf8fe770-3ea2-4128-b46b-166222ee4097
 ms.openlocfilehash: 81a3ec88c336ddeb550f133e657854b3b6f89d96
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59023301"
 ---
 # <a name="eventreceiver"></a>event_receiver
@@ -32,7 +32,7 @@ Bir olay alıcısı (havuz) oluşturur.
 
 ### <a name="parameters"></a>Parametreler
 
-* türü*<br/>
+*type*<br/>
 Sabit listesi aşağıdaki değerlerden biri:
 
 - `native` Yönetilmeyen C/C++ kodu için (varsayılan yerel sınıflar için).
@@ -54,7 +54,7 @@ Belirtin *layout_dependent* yalnızca `type` = **com**. *layout_dependent* bir B
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Event_receiver** C++ özniteliği, sınıf veya yapı, uygulandığı Visual C++ birleştirilmiş olay modeli kullanarak bir olay alıcısı olacağını belirtir.
+**Event_receiver** C++ özniteliği, sınıf veya yapı, uygulandığı görseli kullanarak bir olay alıcısı olacağını belirtir C++ birleştirilmiş olay modeli.
 
 **event_receiver** ile kullanılan [event_source](event-source.md) özniteliği ve [__hook](../../cpp/hook.md) ve [__unhook](../../cpp/unhook.md) anahtar sözcükleri. Kullanım `event_source` olay kaynakları oluşturmak için. Kullanım **__hook** olayları olay kaynağı ("kanca") olay alıcı yöntemlere ilişkilendirilecek olay alıcısı'nın yöntemler içindeki. Kullanım **__unhook** bunları ilişkilendirmesini kaldırmak.
 
@@ -69,7 +69,7 @@ Belirtin *layout_dependent* yalnızca `type` = **com**. *layout_dependent* bir B
 
 |||
 |-|-|
-|**Uygulandığı öğe:**|**sınıf**, **yapısı**|
+|**İçin geçerlidir**|**sınıf**, **yapısı**|
 |**Tekrarlanabilir**|Hayır|
 |**Gerekli öznitelikleri**|`coclass` zaman *layout_dependent*=**true**|
 |**Geçersiz öznitelikler**|Yok.|

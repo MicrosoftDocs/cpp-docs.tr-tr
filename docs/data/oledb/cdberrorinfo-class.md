@@ -45,10 +45,10 @@ helpviewer_keywords:
 - GetErrorRecords method
 ms.assetid: 9a5c18a2-ee3e-40f5-ab4c-581288d7f737
 ms.openlocfilehash: bc13137a4222ba51cf3745f9706353d48068a072
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59021546"
 ---
 # <a name="cdberrorinfo-class"></a>CDBErrorInfo Sınıfı
@@ -71,7 +71,7 @@ class CDBErrorInfo
 
 |||
 |-|-|
-|[Getallerrorınfo](#getallerrorinfo)|Bir hata kaydında bulunan tüm hata bilgilerini döndürür.|
+|[GetAllErrorInfo](#getallerrorinfo)|Bir hata kaydında bulunan tüm hata bilgilerini döndürür.|
 |[GetBasicErrorInfo](#getbasicerrorinfo)|Çağrıları [IErrorRecords::GetBasicErrorInfo](/previous-versions/windows/desktop/ms723907(v=vs.85)) belirtilen hata hakkındaki temel bilgileri döndürmek için.|
 |[GetCustomErrorObject](#getcustomerrorobject)|Çağrıları [IErrorRecords::GetCustomErrorObject](/previous-versions/windows/desktop/ms725417(v=vs.85)) bir özel hata nesnesi üzerinde bir arabirim işaretçisi döndürülecek.|
 |[GetErrorInfo](#geterrorinfo)|Çağrıları [IErrorRecords::GetErrorInfo](/previous-versions/windows/desktop/ms711230(v=vs.85)) döndürülecek bir `IErrorInfo` belirtilen kayıt arabirim işaretçisi.|

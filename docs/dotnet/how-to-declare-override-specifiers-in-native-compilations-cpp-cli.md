@@ -1,17 +1,17 @@
 ---
-title: 'Nasıl yapılır: Geçersiz kılma tanımlayıcılarını bildirme (C + +/ CLI)'
+title: 'Nasıl yapılır: Geçersiz kılma tanımlayıcılarını bildirme (C++/CLI)'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - override specifiers in native compilation, overriding
 ms.assetid: d0551836-9ac7-41eb-a6e9-a4b3ef60767d
 ms.openlocfilehash: db74ef226242ec8f4f70f2769fbc8ba102a808c8
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58777187"
 ---
-# <a name="how-to-declare-override-specifiers-in-native-compilations-ccli"></a>Nasıl yapılır: Yerel derlemelerde geçersiz kılma tanımlayıcılarını bildirme (C + +/ CLI)
+# <a name="how-to-declare-override-specifiers-in-native-compilations-ccli"></a>Nasıl yapılır: Yerel derlemelerde geçersiz kılma tanımlayıcılarını bildirme (C++/CLI)
 
 [korumalı](../extensions/sealed-cpp-component-extensions.md), [soyut](../extensions/abstract-cpp-component-extensions.md), ve [geçersiz kılma](../extensions/override-cpp-component-extensions.md) kullanmayan derlemelerde kullanılabilir **/ZW** veya [/CLR](../build/reference/clr-common-language-runtime-compilation.md).
 
@@ -88,4 +88,4 @@ int main() {
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Geçersiz kılma tanımlayıcıları](../extensions/override-specifiers-cpp-component-extensions.md)
+[Geçersiz Kılma Tanımlayıcıları](../extensions/override-specifiers-cpp-component-extensions.md)

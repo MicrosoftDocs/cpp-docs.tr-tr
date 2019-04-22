@@ -43,10 +43,10 @@ helpviewer_keywords:
 - CArray [MFC], SetSize
 ms.assetid: fead8b00-4cfd-4625-ad0e-251df62ba92f
 ms.openlocfilehash: f82dbf7dce2e14bf760bb76d23d23f667797ee0f
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58779852"
 ---
 # <a name="carray-class"></a>CArray sınıfı
@@ -631,7 +631,7 @@ Dizi kullanmaya başlamadan önce dizinin boyutunu ayarlamak için bu işlevi ku
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [MFC örnek Topla](../../overview/visual-cpp-samples.md)<br/>
-[CObject sınıfı](../../mfc/reference/cobject-class.md)<br/>
+[CObject Sınıfı](../../mfc/reference/cobject-class.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
-[CObArray sınıfı](../../mfc/reference/cobarray-class.md)<br/>
+[CObArray Sınıfı](../../mfc/reference/cobarray-class.md)<br/>
 [Koleksiyon Sınıfı Yardımcıları](../../mfc/reference/collection-class-helpers.md)

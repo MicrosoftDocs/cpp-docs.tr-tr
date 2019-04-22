@@ -15,10 +15,10 @@ helpviewer_keywords:
 - licensing ActiveX controls
 ms.assetid: 2b0ee2e0-ae81-4185-9bb9-11da3c99a283
 ms.openlocfilehash: eee53acbb8b0b8432a7d5819fb773b616f0e8897
-ms.sourcegitcommit: 39debf8c525c3951af6913ee5e514617658f8859
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59424099"
 ---
 # <a name="file-types-created-for-visual-studio-c-projects"></a>Visual Studio C++ projeleri için oluşturulan dosya türleri
@@ -27,13 +27,13 @@ Birçok türdeki dosyayı Klasik Masaüstü uygulamaları için Visual Studio pr
 
 - [Proje ve Çözüm Dosyaları](project-and-solution-files.md)
 
-- [CLR Projeleri](files-created-for-clr-projects.md)
+- [CLR projeleri](files-created-for-clr-projects.md)
 
 - [ATL Programı veya Denetim Kaynağı ve Başlık Dosyaları](atl-program-or-control-source-and-header-files.md)
 
 - [MFC Programı veya Denetim Kaynağı ve Başlık Dosyaları](mfc-program-or-control-source-and-header-files.md)
 
-- [Önceden Derlenmiş Başlık Dosyaları](../creating-precompiled-header-files.md)
+- [Önceden Derlenmiş Üst Bilgi Dosyaları](../creating-precompiled-header-files.md)
 
 - [Kaynak Dosyalar](resource-files-cpp.md)
 
@@ -49,17 +49,17 @@ Aşağıdaki tabloda, Visual Studio projesinde ortak dosyaları gösterir ve bun
 
 |Dosya uzantısı|Tür|İçindekiler|
 |--------------------|----------|--------------|
-|.asmx|Kaynak|Dağıtım dosyası.|
-|.asp|Kaynak|Active Server Page dosyası.|
+|.asmx|Source|Dağıtım dosyası.|
+|.asp|Source|Active Server Page dosyası.|
 |.ATP|Project|Uygulama Şablonu proje dosyası.|
 |.bmp, .dib, .gif, .jpg, .jpe, .png|Kaynak|Genel görüntü dosyaları.|
 |.bsc|Derleme|Tarayıcı kod dosyası.|
-|.cpp, .c|Kaynak|Uygulamanız için ana kaynak kodu dosyaları.|
+|.cpp, .c|Source|Uygulamanız için ana kaynak kodu dosyaları.|
 |.cur|Kaynak|Grafik bit eşlem dosyası imleç.|
 |.dbp|Project|Veritabanı Proje dosyası.|
-|.disco|Kaynak|Devingen keşif belgesi dosyası. XML Web hizmeti bulma işler.|
+|.disco|Source|Devingen keşif belgesi dosyası. XML Web hizmeti bulma işler.|
 |.exe, .dll|Project|Yürütülebilir dosya veya dinamik bağlantı kitaplığı dosyaları.|
-|.h|Kaynak|Bir üst bilgisi (dahil) dosyası.|
+|.h|Source|Bir üst bilgisi (dahil) dosyası.|
 |.htm, .html, .xsp, .asp, .htc, .hta, .xml|Kaynak|Ortak Web dosyaları.|
 |.HxC|Project|Proje dosyası yardımcı olur.|
 |.ico|Kaynak|Simge bit eşlem grafik dosyası.|

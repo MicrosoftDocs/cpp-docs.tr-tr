@@ -58,10 +58,10 @@ helpviewer_keywords:
 - OpenWithServiceComponents method
 ms.assetid: 99bf862c-9d5c-4117-9501-aa0e2672085c
 ms.openlocfilehash: 2564d4d9b0a2e5df1f575d6f2627ce80f48533c1
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59021923"
 ---
 # <a name="cdatasource-class"></a>CDataSource Sınıfı
@@ -84,11 +84,11 @@ class CDataSource
 
 |||
 |-|-|
-|[Close](#close)|Bağlantıyı kapatır.|
-|[GetInitializationString](#getinitializationstring)|Şu anda açık olan veri kaynağının başlatma dizesi alır.|
+|[Kapat](#close)|Bağlantıyı kapatır.|
+|[Getınitializationstring](#getinitializationstring)|Şu anda açık olan veri kaynağının başlatma dizesi alır.|
 |[GetProperties](#getproperties)|Bağlı veri kaynağı için ayarlanmış özelliklerin değerlerini alır.|
 |[GetProperty](#getproperty)|Bağlı veri kaynağı için ayarlanmış tek bir özelliğin değerini alır.|
-|[Open](#open)|Bir sağlayıcı (veri kaynağı) kullanarak bir bağlantı oluşturur bir `CLSID`, `ProgID`, veya bir `CEnumerator` çağıran tarafından sağlanan bir bilinen ad.|
+|[açın](#open)|Bir sağlayıcı (veri kaynağı) kullanarak bir bağlantı oluşturur bir `CLSID`, `ProgID`, veya bir `CEnumerator` çağıran tarafından sağlanan bir bilinen ad.|
 |[OpenFromFileName](#openfromfilename)|Bir veri kaynağı, kullanıcı tarafından sağlanan dosya adıyla belirtilen bir dosya açar.|
 |[OpenFromInitializationString](#openfrominitializationstring)|Bir başlatma dizesi tarafından belirtilen veri kaynağı açılır.|
 |[OpenWithPromptFileName](#openwithpromptfilename)|İlgili veri kaynağını açmak için bir önceden oluşturulmuş bir veri bağlantısı dosyasını seçmesini sağlar.|

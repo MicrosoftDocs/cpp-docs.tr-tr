@@ -10,10 +10,10 @@ helpviewer_keywords:
 - data marshaling [C++], arrays
 ms.assetid: c2b37ab1-8acf-4855-ad3c-7d2864826b14
 ms.openlocfilehash: 91fd86a547a0241f0cfcca7cfc36c204429d80ac
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58776901"
 ---
 # <a name="how-to-marshal-arrays-using-c-interop"></a>Nasıl yapılır: C++ Çalışabilirliği kullanarak dizileri sıralama
@@ -24,7 +24,7 @@ Aşağıdaki kod örnekleri kullan [yönetilen, yönetilmeyen](../preprocessor/m
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek nasıl yönetilen bir diziyi yönetilmeyen bir işleve nasıl geçirileceğini gösterir. Yönetilen işlevini kullanan [pin_ptr (C + +/ CLI)](../extensions/pin-ptr-cpp-cli.md) yönetilmeyen işlevi çağırmadan önce çöp toplama dizi bastırmak için. GC yığınında sabitlenmiş bir işaretçi ile yönetilmeyen işlev sağlayarak, dizinin bir kopyasını oluşturma ek yükü önlenebilir. Yönetilmeyen işlev GC yığın bellek eriştiği, dizinin içeriğini değiştirir ve değişiklikler göstermek için zaman Yönetilen işlev denetimi devam ettirir yansıtılır.
+Aşağıdaki örnek nasıl yönetilen bir diziyi yönetilmeyen bir işleve nasıl geçirileceğini gösterir. Yönetilen işlevini kullanan [pin_ptr (C++/CLI)](../extensions/pin-ptr-cpp-cli.md) yönetilmeyen işlevi çağırmadan önce çöp toplama dizi bastırmak için. GC yığınında sabitlenmiş bir işaretçi ile yönetilmeyen işlev sağlayarak, dizinin bir kopyasını oluşturma ek yükü önlenebilir. Yönetilmeyen işlev GC yığın bellek eriştiği, dizinin içeriğini değiştirir ve değişiklikler göstermek için zaman Yönetilen işlev denetimi devam ettirir yansıtılır.
 
 ```
 // PassArray1.cpp

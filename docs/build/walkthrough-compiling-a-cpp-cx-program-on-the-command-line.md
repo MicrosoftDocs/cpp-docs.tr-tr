@@ -1,19 +1,19 @@
 ---
-title: 'İzlenecek yol: Derleme C + +/ CX programı komut satırında'
+title: 'İzlenecek yol: Derleme bir C++komut satırında /CX programı'
 ms.date: 09/24/2018
 ms.assetid: 626f5544-69ed-4736-83a9-f11389b371b2
 ms.openlocfilehash: 099bef402d22abc12a31f105f63e5405c65a1d82
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58766072"
 ---
-# <a name="walkthrough-compiling-a-ccx-program-on-the-command-line"></a>İzlenecek yol: Derleme C + +/ CX programı komut satırında
+# <a name="walkthrough-compiling-a-ccx-program-on-the-command-line"></a>İzlenecek yol: Derleme bir C++komut satırında /CX programı
 
-Windows çalışma zamanını hedefleyen ve onları komut satırında derleme Visual C++ programlar oluşturabilirsiniz. Visual C++, Visual C++ bileşen uzantıları destekler (C + +/ CX), Windows çalışma zamanı programlama modeli hedeflemek için ek türleri ve işleçler sahip. Kullanabileceğiniz C + +/ CX için evrensel Windows Platformu (UWP), Windows Phone 8.1 ve Windows Masaüstü uygulamaları oluşturmak için. Daha fazla bilgi için [bir tur, c + +/ CX](https://msdn.microsoft.com/magazine/dn166929.aspx) ve [çalışma zamanı platformları için bileşen uzantıları](../extensions/component-extensions-for-runtime-platforms.md).
+Windows çalışma zamanını hedefleyen ve onları komut satırında derleme Visual C++ programlar oluşturabilirsiniz. Görsel C++ Visual destekler C++ bileşen uzantıları (C++/CX), Windows çalışma zamanı programlama modeli hedeflemek için ek türleri ve işleçler sahip. Kullanabileceğiniz C++/CX Evrensel Windows Platformu (UWP), Windows Phone 8.1 ve Windows Masaüstü için uygulamalar oluşturun. Daha fazla bilgi için [ilişkin bir tura C++/CX](https://msdn.microsoft.com/magazine/dn166929.aspx) ve [çalışma zamanı platformları için bileşen uzantıları](../extensions/component-extensions-for-runtime-platforms.md).
 
-Bu kılavuzda, temel C + oluşturmak için bir metin düzenleyicisi kullanın +/ CX programı ve sonra komut satırında derleyin. (Kullanabileceğiniz kendi C + +/ CX programı gösterilen bir yazmak yerine veya kullanabileceğiniz bir C + +/ CX kod örneğini başka bir Yardım makalesi. Bu teknik oluşturmak ve UI öğesi içermeyen olan küçük modülleri test etmek için kullanışlıdır.)
+Bu kılavuzda, temel C + oluşturmak için bir metin düzenleyicisi kullanın +/ CX programı ve sonra komut satırında derleyin. (Kendi kullanabilirsiniz C++gösterilen bir yazmak yerine /CX program veya kullanabileceğiniz bir C++/CX kod örneğini başka bir Yardım makalesi. Bu teknik oluşturmak ve UI öğesi içermeyen olan küçük modülleri test etmek için kullanışlıdır.)
 
 > [!NOTE]
 > C + derlemek için Visual Studio IDE kullanabilirsiniz +/ CX programlar. IDE tasarım, hata ayıklama, öykünme ve dağıtım desteği, komut satırında kullanılamaz içerdiğinden, Evrensel Windows Platformu (UWP) uygulamaları oluşturmak için IDE'yi kullanmanızı öneririz. Daha fazla bilgi için [c++'ta bir UWP uygulaması oluşturma](/windows/uwp/get-started/create-a-basic-windows-10-app-in-cpp).
@@ -22,11 +22,11 @@ Bu kılavuzda, temel C + oluşturmak için bir metin düzenleyicisi kullanın +/
 
 C++ dilinin temellerini anlamanız.
 
-## <a name="compiling-a-ccx-program"></a>Derleme C + +/ CX programı
+## <a name="compiling-a-ccx-program"></a>Derleme bir C++/CX programı
 
-Etkinleştirme derleme için C + +/ CX, kullanmalıdır [/ZW](reference/zw-windows-runtime-compilation.md) derleyici seçeneği. MSVC derleyicisi, Windows çalışma zamanını hedefleyen ve gerekli kitaplıklara bağlantılar bir .exe dosyası oluşturur.
+Derleme için etkinleştirmek için C++/CX, kullanmalıdır [/ZW](reference/zw-windows-runtime-compilation.md) derleyici seçeneği. MSVC derleyicisi, Windows çalışma zamanını hedefleyen ve gerekli kitaplıklara bağlantılar bir .exe dosyası oluşturur.
 
-#### <a name="to-compile-a-ccx-application-on-the-command-line"></a>Derlenecek C + +/ CX uygulama komut satırında
+#### <a name="to-compile-a-ccx-application-on-the-command-line"></a>Derlemek için bir C++komut satırında /CX uygulama
 
 1. Açık bir **Geliştirici komut istemi** penceresi. (Üzerinde **Başlat** penceresini açık **uygulamaları**. Açık **Visual Studio Araçları** klasörü altında Visual Studio sürümünüz ve ardından **Geliştirici komut istemi** kısayol.) Bir geliştirici komut istemi penceresi açmak hakkında daha fazla bilgi için bkz. [komut satırından MSVC araç takımı kullanın](building-on-the-command-line.md).
 

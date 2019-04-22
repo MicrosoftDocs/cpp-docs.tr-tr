@@ -7,10 +7,10 @@ helpviewer_keywords:
 - uuid attribute
 ms.assetid: 90562a94-5e28-451b-a4b0-cadda7f66efe
 ms.openlocfilehash: 8d9d55fc2a340165480cab4036ad1e5323e6b625
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59026048"
 ---
 # <a name="uuid-c-attributes"></a>uuid (C++ Öznitelikleri)
@@ -50,16 +50,16 @@ Bkz: [bağlanabilir](bindable.md) örnek kullanımını örneğin **UUID**.
 
 |||
 |-|-|
-|**Uygulandığı öğe:**|**sınıf**, **yapı**, **arabirimi**, **birleşim**, **sabit listesi**|
+|**İçin geçerlidir**|**sınıf**, **yapı**, **arabirimi**, **birleşim**, **sabit listesi**|
 |**Tekrarlanabilir**|Hayır|
-|**Gerekli öznitelikleri**|None|
+|**Gerekli öznitelikleri**|Yok.|
 |**Geçersiz öznitelikler**|Yok.|
 
 Öznitelik bağlamları hakkında daha fazla bilgi için bkz: [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[IDL Öznitelikleri](idl-attributes.md)<br/>
+[IDL öznitelikleri](idl-attributes.md)<br/>
 [Arabirim Öznitelikleri](interface-attributes.md)<br/>
 [Sınıf Öznitelikleri](class-attributes.md)<br/>
 [Typedef, Enum, Union ve Struct Öznitelikleri](typedef-enum-union-and-struct-attributes.md)<br/>

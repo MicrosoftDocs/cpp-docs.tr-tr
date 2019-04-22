@@ -73,10 +73,10 @@ helpviewer_keywords:
 - CSplitterWnd [MFC], OnInvertTracker
 ms.assetid: fd0de258-6dbe-4552-9e47-a39de0471d51
 ms.openlocfilehash: 065735c13a3e763208142eb6bc989d3a496221f0
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58781451"
 ---
 # <a name="csplitterwnd-class"></a>CSplitterWnd sınıfı
@@ -818,7 +818,7 @@ Değerini `enum ESplitType`, olabilen aşağıdakilerden biri:
 
     - `splitBorder` Bölünmüş pencere kenarlıklarını.
 
-*rect*<br/>
+*Rect*<br/>
 Bir başvuru bir [CRect](../../atl-mfc-shared/reference/crect-class.md) nesne boyutu ve şekli bölünmüş Windows belirtme.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -837,7 +837,7 @@ virtual void OnInvertTracker(const CRect& rect);
 
 ### <a name="parameters"></a>Parametreler
 
-*rect*<br/>
+*Rect*<br/>
 Başvuru bir `CRect` izleme dikdörtgen belirterek nesne.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -1037,7 +1037,7 @@ Bir cihaz bağlamı için bir işaretçi.
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [MFC örnek VIEWEX](../../overview/visual-cpp-samples.md)<br/>
-[CWnd sınıfı](../../mfc/reference/cwnd-class.md)<br/>
+[CWnd Sınıfı](../../mfc/reference/cwnd-class.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
-[CView sınıfı](../../mfc/reference/cview-class.md)<br/>
-[CWnd sınıfı](../../mfc/reference/cwnd-class.md)
+[CView Sınıfı](../../mfc/reference/cview-class.md)<br/>
+[CWnd Sınıfı](../../mfc/reference/cwnd-class.md)

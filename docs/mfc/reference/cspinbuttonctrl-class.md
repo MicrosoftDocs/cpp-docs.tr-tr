@@ -33,10 +33,10 @@ helpviewer_keywords:
 - CSpinButtonCtrl [MFC], SetRange
 ms.assetid: 509bfd76-1c5a-4af6-973f-e133c0b87734
 ms.openlocfilehash: 6f864a37c46158ab98776cd96d9f50d7cfaeb13d
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58776355"
 ---
 # <a name="cspinbuttonctrl-class"></a>CSpinButtonCtrl sınıfı
@@ -119,7 +119,7 @@ virtual BOOL Create(
 *dwStyle*<br/>
 Döndürme düğme denetiminin stilini belirtir. Değer değiştirme düğmesi denetimi stilleri herhangi bir birleşimini denetimi için geçerlidir. Bu stiller açıklanan [yukarı-aşağı denetim stilleri](/windows/desktop/Controls/up-down-control-styles) Windows SDK.
 
-*rect*<br/>
+*Rect*<br/>
 Döndürme düğme denetiminin boyutunu ve konumunu belirtir. Ya da olabilir bir [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesi veya bir [RECT](/previous-versions/dd162897\(v=vs.85\)) yapısı
 
 *pParentWnd*<br/>
@@ -159,7 +159,7 @@ Oluşturulan denetimin genişletilmiş stilini belirtir. Genişletilmiş windows
 *dwStyle*<br/>
 Döndürme düğme denetiminin stilini belirtir. Değer değiştirme düğmesi denetimi stilleri herhangi bir birleşimini denetimi için geçerlidir. Bu stiller açıklanan [yukarı-aşağı denetim stilleri](/windows/desktop/Controls/up-down-control-styles) Windows SDK.
 
-*rect*<br/>
+*Rect*<br/>
 Bir başvuru bir [RECT](/previous-versions/dd162897\(v=vs.85\)) istemci koordinatları olarak oluşturulması için pencerenin konumunu ve boyutunu açıklayan yapısı *pParentWnd*.
 
 *pParentWnd*<br/>
@@ -400,6 +400,6 @@ Denetimi üst ve alt sınırları. İçin `SetRange`, hiçbir sınır UD_MAXVAL 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [MFC örnek CMNCTRL2](../../overview/visual-cpp-samples.md)<br/>
-[CWnd sınıfı](../../mfc/reference/cwnd-class.md)<br/>
+[CWnd Sınıfı](../../mfc/reference/cwnd-class.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
-[CSliderCtrl sınıfı](../../mfc/reference/csliderctrl-class.md)
+[CSliderCtrl Sınıfı](../../mfc/reference/csliderctrl-class.md)

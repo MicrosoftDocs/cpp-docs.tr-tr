@@ -167,10 +167,10 @@ helpviewer_keywords:
 - CMFCPropertyGridProperty [MFC], m_strFormatShort
 ms.assetid: 36f3fabe-0efe-468b-8a0b-5a7956db38a2
 ms.openlocfilehash: aa88cc2d4ee915b970157ee6ed280512e2352bcc
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58779033"
 ---
 # <a name="cmfcpropertygridproperty-class"></a>CMFCPropertyGridProperty Class
@@ -477,7 +477,7 @@ virtual CComboBox* CreateCombo(
 *pWndParent*<br/>
 [in] Birleşik giriş kutusunun ana pencere işaretçisi.
 
-*rect*<br/>
+*Rect*<br/>
 [in] Birleşik giriş kutusu sınırlayıcı dikdörtgenini.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -801,7 +801,7 @@ CMFCPropertyGridProperty* GetSubItem(int nIndex) const;
 
 Bu özelliğin bir alt öğesi olan bir özellik nesne işaretçisi.
 
-veya
+-veya-
 
 Perakende modunda yoksa NULL *nIndex* parametresi geçersiz. Hata ayıklama modunda, bu yöntem onaylar.
 
@@ -1280,7 +1280,7 @@ virtual void OnDrawDescription(
 *pDC*<br/>
 [in] Bir cihaz bağlamı için bir işaretçi.
 
-*rect*<br/>
+*Rect*<br/>
 [in] Description özelliği nerede belirtir sınırlayıcı bir dikdörtgen.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -1324,7 +1324,7 @@ virtual void OnDrawName(
 *pDC*<br/>
 [in] Bir cihaz bağlamı için bir işaretçi.
 
-*rect*<br/>
+*Rect*<br/>
 [in] Özellik adı nerede belirtir sınırlayıcı bir dikdörtgen.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -1344,7 +1344,7 @@ virtual void OnDrawValue(
 *pDC*<br/>
 [in] Bir cihaz bağlamı için bir işaretçi.
 
-*rect*<br/>
+*Rect*<br/>
 [in] Özellik değeri nerede belirtir sınırlayıcı bir dikdörtgen.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -1714,4 +1714,4 @@ void Show(
 
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
 [Sınıflar](../../mfc/reference/mfc-classes.md)<br/>
-[CMFCPropertyGridCtrl Class](../../mfc/reference/cmfcpropertygridctrl-class.md)
+[CMFCPropertyGridCtrl Sınıfı](../../mfc/reference/cmfcpropertygridctrl-class.md)

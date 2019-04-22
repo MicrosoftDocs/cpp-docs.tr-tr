@@ -47,10 +47,10 @@ helpviewer_keywords:
 - CCmdTarget [MFC], RestoreWaitCursor
 ms.assetid: 8883b132-2057-4ce0-a5f2-88979f8f2b13
 ms.openlocfilehash: 9314717fab53b1a89b87d657ec617a4c6bd45b8b
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58776199"
 ---
 # <a name="ccmdtarget-class"></a>CCmdTarget sınıfı
@@ -525,13 +525,13 @@ void RestoreWaitCursor();
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [ACDUAL örneği](../../overview/visual-cpp-samples.md)<br/>
-[CObject sınıfı](../../mfc/reference/cobject-class.md)<br/>
+[CObject Sınıfı](../../mfc/reference/cobject-class.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
-[Ccmduı sınıfı](../../mfc/reference/ccmdui-class.md)<br/>
-[CDocument sınıfı](../../mfc/reference/cdocument-class.md)<br/>
-[CDocTemplate sınıfı](../../mfc/reference/cdoctemplate-class.md)<br/>
-[CWinApp sınıfı](../../mfc/reference/cwinapp-class.md)<br/>
-[CWnd sınıfı](../../mfc/reference/cwnd-class.md)<br/>
-[CView sınıfı](../../mfc/reference/cview-class.md)<br/>
-[CFrameWnd sınıfı](../../mfc/reference/cframewnd-class.md)<br/>
-[COleDispatchDriver sınıfı](../../mfc/reference/coledispatchdriver-class.md)
+[CCmdUI Sınıfı](../../mfc/reference/ccmdui-class.md)<br/>
+[CDocument Sınıfı](../../mfc/reference/cdocument-class.md)<br/>
+[CDocTemplate Sınıfı](../../mfc/reference/cdoctemplate-class.md)<br/>
+[CWinApp Sınıfı](../../mfc/reference/cwinapp-class.md)<br/>
+[CWnd Sınıfı](../../mfc/reference/cwnd-class.md)<br/>
+[CView Sınıfı](../../mfc/reference/cview-class.md)<br/>
+[CFrameWnd Sınıfı](../../mfc/reference/cframewnd-class.md)<br/>
+[COleDispatchDriver Sınıfı](../../mfc/reference/coledispatchdriver-class.md)

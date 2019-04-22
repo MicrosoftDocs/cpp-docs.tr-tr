@@ -1,5 +1,5 @@
 ---
-title: nullptr (C + +/ CLI ve C + +/ CX)
+title: nullptr (C++/CLI ve C++/CX)
 ms.date: 10/12/2018
 ms.topic: reference
 helpviewer_keywords:
@@ -7,13 +7,13 @@ helpviewer_keywords:
 - nullptr keyword [C++]
 ms.assetid: 594cfbf7-06cb-4366-9ede-c0b703e1d095
 ms.openlocfilehash: 05aaaa8a0d0056e0f5318f5e9329d90824760728
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59040828"
 ---
-# <a name="nullptr--ccli-and-ccx"></a>nullptr (C + +/ CLI ve C + +/ CX)
+# <a name="nullptr--ccli-and-ccx"></a>nullptr (C++/CLI ve C++/CX)
 
 **Nullptr** anahtar sözcüğü temsil eden bir *null işaretçi değeri*. Bir null işaretçi değeri bir nesne tanıtıcısı, iç işaretçi veya yerel bir işaretçi türü bir nesneye göstermiyor belirtmek için kullanın.
 
@@ -225,5 +225,5 @@ Derleyici seçeneği: (Gerekli; dahil olmak üzere tüm kod oluşturma seçenekl
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[.NET ve UWP için bileşen uzantıları](component-extensions-for-runtime-platforms.md)<br/>
+[.NET ve UWP İçin Bileşen Uzantıları](component-extensions-for-runtime-platforms.md)<br/>
 [nullptr](../cpp/nullptr.md)

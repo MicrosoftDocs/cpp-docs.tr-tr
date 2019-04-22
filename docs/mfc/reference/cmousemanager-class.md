@@ -23,10 +23,10 @@ helpviewer_keywords:
 - CMouseManager [MFC], SetCommandForDblClk
 ms.assetid: a4d05017-4e44-4a40-8b57-4ece0de20481
 ms.openlocfilehash: f92a72e36fecbb39e57cbdf9583047aca0c1ebd5
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58773742"
 ---
 # <a name="cmousemanager-class"></a>CMouseManager sınıfı
@@ -271,5 +271,5 @@ Varsa *uiCmd* ayarlanmış 0 olarak belirtilen görünümü artık bir komut ile
 
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
 [Sınıflar](../../mfc/reference/mfc-classes.md)<br/>
-[CWinAppEx Class](../../mfc/reference/cwinappex-class.md)<br/>
+[CWinAppEx Sınıfı](../../mfc/reference/cwinappex-class.md)<br/>
 [Klavye ve Fare Özelleştirmesi](../../mfc/keyboard-and-mouse-customization.md)

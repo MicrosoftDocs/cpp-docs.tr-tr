@@ -163,10 +163,10 @@ helpviewer_keywords:
 - CTreeCtrl [MFC], SortChildrenCB
 ms.assetid: 96e20031-6161-4143-8c12-8d1816c66d90
 ms.openlocfilehash: 3819e861b7a5e6ff27fe632a33413b588a5a4835
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58782010"
 ---
 # <a name="ctreectrl-class"></a>CTreeCtrl sınıfı
@@ -314,7 +314,7 @@ virtual BOOL Create(
 *dwStyle*<br/>
 Ağaç görünümü denetiminin stilini belirtir. Pencere stilleri açıklanan, geçerli [CreateWindow](/windows/desktop/api/winuser/nf-winuser-createwindowa)ve herhangi bir birleşimini [ağaç görünümü denetimi stilleri](/windows/desktop/Controls/tree-view-control-window-styles) Windows SDK içinde açıklandığı gibi.
 
-*rect*<br/>
+*Rect*<br/>
 Ağaç görünümü denetiminin boyutunu ve konumunu belirtir. Ya da olabilir bir [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesi veya bir [RECT](/previous-versions/dd162897\(v=vs.85\)) yapısı.
 
 *pParentWnd*<br/>
@@ -360,7 +360,7 @@ Oluşturulan denetimin genişletilmiş stilini belirtir. Genişletilmiş Windows
 *dwStyle*<br/>
 Ağaç görünümü denetiminin stilini belirtir. Pencere stilleri açıklanan, geçerli [CreateWindow](/windows/desktop/api/winuser/nf-winuser-createwindowa)ve herhangi bir birleşimini [ağaç görünümü denetimi stilleri](/windows/desktop/Controls/tree-view-control-window-styles) Windows SDK içinde açıklandığı gibi.
 
-*rect*<br/>
+*Rect*<br/>
 Bir başvuru bir [RECT](/previous-versions/dd162897\(v=vs.85\)) istemci koordinatları olarak oluşturulması için pencerenin konumunu ve boyutunu açıklayan yapısı *pParentWnd*.
 
 *pParentWnd*<br/>
@@ -2342,6 +2342,6 @@ Yapının karşılaştırma işlevi `lpfnCompare`, negatif bir değer döndürme
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [MFC örnek CMNCTRL1](../../overview/visual-cpp-samples.md)<br/>
-[CWnd sınıfı](../../mfc/reference/cwnd-class.md)<br/>
+[CWnd Sınıfı](../../mfc/reference/cwnd-class.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
-[Cımagelist sınıfı](../../mfc/reference/cimagelist-class.md)
+[CImageList Sınıfı](../../mfc/reference/cimagelist-class.md)

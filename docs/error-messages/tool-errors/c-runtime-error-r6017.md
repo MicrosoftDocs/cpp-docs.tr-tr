@@ -1,5 +1,5 @@
 ---
-title: C çalışma zamanı hatası R6017
+title: C Çalışma Zamanı Hatası R6017
 ms.date: 11/04/2016
 f1_keywords:
 - R6017
@@ -7,13 +7,13 @@ helpviewer_keywords:
 - R6017
 ms.assetid: df3ec5f5-6771-4648-ba06-0e26c6a1cc6a
 ms.openlocfilehash: 45f3b07f540cb72a955b19420130a5a806b750d7
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58774704"
 ---
-# <a name="c-runtime-error-r6017"></a>C çalışma zamanı hatası R6017
+# <a name="c-runtime-error-r6017"></a>C Çalışma Zamanı Hatası R6017
 
 Çoklu iş parçacığı beklenmeyen kilitleme hatası
 

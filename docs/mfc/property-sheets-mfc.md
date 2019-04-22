@@ -8,10 +8,10 @@ helpviewer_keywords:
 - tab dialog boxes
 ms.assetid: 09439f65-921d-45a2-b3cc-e13884a087b1
 ms.openlocfilehash: 974d6cc0004985544f1786139a9a89c61f00382f
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58770089"
 ---
 # <a name="property-sheets-mfc"></a>Özellik Sayfaları (MFC)

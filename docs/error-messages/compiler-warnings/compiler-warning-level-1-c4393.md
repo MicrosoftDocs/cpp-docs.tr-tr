@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C4393
 ms.assetid: 353a0539-d1ea-4c1b-8849-c9b321ec9842
 ms.openlocfilehash: 4226c8ecd41e890d70fa5741decae605d45b620f
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58768997"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59777048"
 ---
 # <a name="compiler-warning-level-1-c4393"></a>Derleyici Uyarısı (düzey 1) C4393
 

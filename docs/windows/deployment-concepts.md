@@ -9,10 +9,10 @@ helpviewer_keywords:
 - libraries [C++], application deployment issues
 ms.assetid: ebd7f246-ab54-40e8-87fa-dac02c0047b3
 ms.openlocfilehash: ec472e506e78a57b65186bf6a5b801419fb141fb
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58787620"
 ---
 # <a name="deployment-concepts"></a>Dağıtım Kavramları

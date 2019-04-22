@@ -41,10 +41,10 @@ helpviewer_keywords:
 - StartTransaction method
 ms.assetid: 83cd798f-b45d-4f11-a23c-29183390450c
 ms.openlocfilehash: b34a6300473db94621360f1d04fd73ddd7e8bd69
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59041464"
 ---
 # <a name="csession-class"></a>CSession Sınıfı
@@ -67,11 +67,11 @@ class CSession
 
 |||
 |-|-|
-|[Durdurma](#abort)|İptal (sonlandırır) işlem.|
-|[Close](#close)|Bir oturumu kapatır.|
+|[Abort](#abort)|İptal (sonlandırır) işlem.|
+|[Kapat](#close)|Bir oturumu kapatır.|
 |[İşleme](#commit)|hareketi tamamlar.|
 |[GetTransactionInfo](#gettransactioninfo)|Bir işlem ile ilgili bilgileri döndürür.|
-|[Open](#open)|Veri kaynağı nesnesi için yeni bir oturum açar.|
+|[açın](#open)|Veri kaynağı nesnesi için yeni bir oturum açar.|
 |[StartTransaction](#starttransaction)|Bu oturum için yeni bir işlem başlar.|
 
 ## <a name="remarks"></a>Açıklamalar

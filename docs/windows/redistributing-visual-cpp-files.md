@@ -9,10 +9,10 @@ helpviewer_keywords:
 - redistributing applications [C++], about redistributing applications
 ms.assetid: d201b2ce-36f1-44e5-a96c-0db81a1ba652
 ms.openlocfilehash: 2bf4297a6c61d16c68d6a9cb893aed78b9d7609d
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58787088"
 ---
 # <a name="redistributing-visual-c-files"></a>Visual C++ Dosyalarını Yeniden Dağıtma
@@ -40,7 +40,7 @@ Bu tür bir hatayı gidermek için uygulama Yükleyicinizle doğru bir şekilde 
 
 |Başlık|Açıklama|
 |-----------|-----------------|
-|[Birleştirme modüllerini kullanarak yeniden dağıtma](redistributing-components-by-using-merge-modules.md)|Visual C++ yeniden dağıtılabilir birleştirme modülleri Visual C++ çalışma zamanı kitaplıklarını %windir%\system32\ klasörüne paylaşılan dll olarak yüklemek için nasıl kullanılacağını açıklar.|
+|[Birleştirme modüllerini kullanarak yeniden dağıtma](redistributing-components-by-using-merge-modules.md)|Visual kullanmayı açıklar C++ görsel yüklemek için yeniden dağıtılabilir birleştirme modülleri C++ çalışma zamanı kitaplıklarını %windir%\system32\ klasörüne paylaşılan dll olarak.|
 |[Visual C++ ActiveX Denetimlerini Yeniden Dağıtma](redistributing-visual-cpp-activex-controls.md)|ActiveX Denetimlerini kullanan bir uygulamanın nasıl yeniden dağıtılması gerektiği açıklanmaktadır.|
 |[MFC Kitaplığını Yeniden Dağıtma](redistributing-the-mfc-library.md)|MFC kullanan bir uygulamanın nasıl yeniden dağıtılacağı açıklanmaktadır.|
 |[ATL uygulamasını yeniden dağıtma](redistributing-an-atl-application.md)|ATL kullanan bir uygulama dağıtılacağı açıklanmaktadır Visual Studio 2012'den itibaren yeniden dağıtılabilir kitaplık için ATL gereklidir.|

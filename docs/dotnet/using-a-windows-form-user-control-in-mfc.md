@@ -10,10 +10,10 @@ helpviewer_keywords:
 - Windows Forms [C++], MFC support
 ms.assetid: 63fb099b-1dff-469c-9e34-dab52e122fcd
 ms.openlocfilehash: 38c5c37712b430b137934d441056e60f2c130f78
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58773105"
 ---
 # <a name="using-a-windows-form-user-control-in-mfc"></a>MFC içinde Windows Formu Kullanıcı Denetimi Kullanma
@@ -32,7 +32,7 @@ Aşağıdaki bölümlerde nasıl yapılır:
 > MFC Windows Forms tümleştirme ile MFC'ye dinamik olarak projeleri çalışır (hangi projelerinde `_AFXDLL` tanımlanır).
 
 > [!NOTE]
-> MFC Windows Forms arabirimi DLL (mfcmifc80.dll'ye) özel (değiştirilmiş) bir kopyasını kullanarak uygulamanızı oluşturduğunuzda Microsoft anahtarını kendi satıcı anahtarla değiştirin sürece GAC'ye yüklemek başarısız olur. Derleme imzalama hakkında daha fazla bilgi için bkz. [Derlemelerle programlama](/dotnet/framework/app-domains/programming-with-assemblies) ve [tanımlayıcı ad derlemeleri (derleme imzalama) (C + +/ CLI)](../dotnet/strong-name-assemblies-assembly-signing-cpp-cli.md).
+> MFC Windows Forms arabirimi DLL (mfcmifc80.dll'ye) özel (değiştirilmiş) bir kopyasını kullanarak uygulamanızı oluşturduğunuzda Microsoft anahtarını kendi satıcı anahtarla değiştirin sürece GAC'ye yüklemek başarısız olur. Derleme imzalama hakkında daha fazla bilgi için bkz. [Derlemelerle programlama](/dotnet/framework/app-domains/programming-with-assemblies) ve [tanımlayıcı ad derlemeleri (derleme imzalama) (C++/CLI)](../dotnet/strong-name-assemblies-assembly-signing-cpp-cli.md).
 
 MFC uygulamanız Windows Forms kullanıyorsa, mfcmifc80.dll'ye uygulamanızla birlikte yeniden dağıtmanız gerekir. Daha fazla bilgi için [MFC kitaplığını yeniden dağıtma](../windows/redistributing-the-mfc-library.md).
 

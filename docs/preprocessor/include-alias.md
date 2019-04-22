@@ -9,10 +9,10 @@ helpviewer_keywords:
 - include_alias pragma
 ms.assetid: 3256d589-12b3-4af0-a586-199e96eabacc
 ms.openlocfilehash: 187fa94f7c2a5457df655081b87a7f49d38adfa2
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59024107"
 ---
 # <a name="includealias"></a>include_alias

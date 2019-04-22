@@ -1,14 +1,14 @@
 ---
-title: Visual C++ araç takımı ile ilgili bir sorun bildirme
+title: Visual C++ araç takımıyla ilgili bir sorunu bildirme
 ms.date: 06/21/2018
 ms.technology: cpp-ide
 author: corob-msft
 ms.author: corob
 ms.openlocfilehash: 266ea37510b636cd1dc1cfa5909552ace50df1bc
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58787792"
 ---
 # <a name="how-to-report-a-problem-with-the-visual-c-toolset-or-documentation"></a>Visual C++ araç takımı veya belgeleri ile ilgili bir sorun bildirme
@@ -251,17 +251,17 @@ C + işleniyorsa +/ CX kaynak kodu dosyası veya C++ modülleri özelliğinin ku
 
 #### <a name="to-confirm-that-the-error-still-repros-with-the-preprocessed-file"></a>Onaylamak için hata önceden işlenmiş dosyayı oluşturmalar hala
 
-1. Geliştirici komut istemi konsol penceresinde komutu girin **cl** *bağımsız değişkenleri* **/TP** *filename*.i derlemek için cl.exe bildirmek için önceden işlenmiş dosyayı bir C++ kaynak dosyası olarak nerede *bağımsız değişkenleri* yukarıda, ancak tüm yakalanan bağımsız değişkenler listesi **/D** ve **/I** (çünkü bağımsız değişkenleri kaldırıldı Bunlar zaten önceden işlenmiş dosyayı dahil edilmiş); ve nerede *filename*.i, önceden işlenmiş dosya adıdır.
+1. Geliştirici komut istemi konsol penceresinde komutu girin **cl** *bağımsız değişkenleri* **/TP** *filename*.i derlemek için cl.exe bildirmek için önceden işlenmiş dosya olarak bir C++ kaynak dosyası burada *bağımsız değişkenleri* yukarıda, ancak tüm yakalanan bağımsız değişkenler listesi **/D** ve **/I** (bağımsız değişkenleri kaldırıldı zaten sahip oldukları önceden işlenmiş dosyayı dahil edilmiş); ve nerede *filename*.i, önceden işlenmiş dosya adıdır.
 
 1. Sorunu yeniden olduğunu onaylayın.
 
 Son olarak, önceden işlenmiş yineleme ekleme *filename*.i raporunuza.
 
-### <a name="preprocessed-ccx-winrtuwp-code-repros"></a>Önceden işlenmiş C + +/ CX WinRT/UWP kod oluşturmalar
+### <a name="preprocessed-ccx-winrtuwp-code-repros"></a>Önceden işlenmiş C++/CX WinRT/UWP kod oluşturmalar
 
 C + kullanıyorsanız +/ CX yürütülebilir dosyanızı oluşturmak için oluşturma ve önceden işlenmiş istiyorduk doğrulamak için gereken bazı ek adımlar vardır.
 
-#### <a name="to-preprocess-ccx-source-code"></a>İçin önceden işlenir C + +/ CX kaynak kodu
+#### <a name="to-preprocess-ccx-source-code"></a>Ön işleme için C++/CX kaynak kodu
 
 1. Önceden işlenmiş kaynak dosyası açıklandığı oluşturma [bir kaynak kodu dosyası ön işleme için](#to-preprocess-a-source-code-file).
 

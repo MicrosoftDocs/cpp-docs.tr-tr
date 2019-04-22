@@ -7,10 +7,10 @@ helpviewer_keywords:
 - C3488
 ms.assetid: 0a6fcd76-dd3b-48d7-abb3-22eccda96034
 ms.openlocfilehash: ed3cccb77a40ab646c9a6375cf4c182de62aa478
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59025065"
 ---
 # <a name="compiler-error-c3488"></a>Derleyici Hatası C3488

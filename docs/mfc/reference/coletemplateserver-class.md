@@ -15,10 +15,10 @@ helpviewer_keywords:
 - COleTemplateServer [MFC], UpdateRegistry
 ms.assetid: 47a2887d-8162-4993-a842-a784177c7f5c
 ms.openlocfilehash: 3abdf1dc2da5ef9a111371b501d5cd8ce208825d
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58781217"
 ---
 # <a name="coletemplateserver-class"></a>COleTemplateServer sınıfı
@@ -172,7 +172,7 @@ Daha fazla bilgi için [IDispatch arabirimi uygulama](/previous-versions/windows
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [MFC örnek HIERSVR](../../overview/visual-cpp-samples.md)<br/>
-[COleObjectFactory sınıfı](../../mfc/reference/coleobjectfactory-class.md)<br/>
+[COleObjectFactory Sınıfı](../../mfc/reference/coleobjectfactory-class.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
-[COleServerDoc sınıfı](../../mfc/reference/coleserverdoc-class.md)<br/>
-[Coleserverıtem sınıfı](../../mfc/reference/coleserveritem-class.md)
+[COleServerDoc Sınıfı](../../mfc/reference/coleserverdoc-class.md)<br/>
+[COleServerItem Sınıfı](../../mfc/reference/coleserveritem-class.md)

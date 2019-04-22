@@ -221,10 +221,10 @@ helpviewer_keywords:
 - CHtmlEditCtrlBase [MFC], UnorderList
 ms.assetid: e0cc74b4-8320-4570-b673-16c03d2ae266
 ms.openlocfilehash: a3c90f4b75b79dc51091c87a5a84b5c59a70646f
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58772585"
 ---
 # <a name="chtmleditctrlbase-class"></a>CHtmlEditCtrlBase sınıfı

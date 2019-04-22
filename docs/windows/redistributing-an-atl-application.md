@@ -8,10 +8,10 @@ helpviewer_keywords:
 - OLE DB templates, redistributing
 ms.assetid: 9a696b22-2345-43ec-826b-be7cb8cfd676
 ms.openlocfilehash: a1da92a00d6bf88f41801f8eb99433d0c64812b1
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58787693"
 ---
 # <a name="redistributing-an-atl-application"></a>ATL uygulamasını yeniden dağıtma

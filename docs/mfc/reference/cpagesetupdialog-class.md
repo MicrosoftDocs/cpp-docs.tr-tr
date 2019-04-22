@@ -31,10 +31,10 @@ helpviewer_keywords:
 - CPageSetupDialog [MFC], m_psd
 ms.assetid: 049c0ac8-f254-4854-9414-7a8271d1447a
 ms.openlocfilehash: 01a320fbcd9760bab484f3c75553613852ca9aed
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58778097"
 ---
 # <a name="cpagesetupdialog-class"></a>CPageSetupDialog sınıfı
@@ -406,5 +406,5 @@ Resmin çizim özelleştirmek için bu işlevi geçersiz kılar. Bu işlev geçe
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [MFC örnek WORDPAD](../../overview/visual-cpp-samples.md)<br/>
-[CCommonDialog sınıfı](../../mfc/reference/ccommondialog-class.md)<br/>
+[CCommonDialog Sınıfı](../../mfc/reference/ccommondialog-class.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)

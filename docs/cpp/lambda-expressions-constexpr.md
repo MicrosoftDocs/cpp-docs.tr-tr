@@ -5,10 +5,10 @@ helpviewer_keywords:
 - lambda expressions [C++], constexpr
 ms.assetid: b56346cd-fbff-475f-aeaa-ed2010c6d6f7
 ms.openlocfilehash: d1bc60a6da813e54c857da38b0164f544216be00
-ms.sourcegitcommit: 39debf8c525c3951af6913ee5e514617658f8859
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59424189"
 ---
 # <a name="constexpr-lambda-expressions-in-c"></a>C++'ta constexpr lambda ifadeleri
@@ -54,6 +54,6 @@ Bir lambda, örtük veya açık ise **constexpr**ve bir işlev işaretçisine d�
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [C++ Dil Başvurusu](../cpp/cpp-language-reference.md)<br/>
-[C++ Standart kitaplığındaki işlev nesneleri](../standard-library/function-objects-in-the-stl.md)<br/>
+[C++ Standart Kitaplığındaki İşlev Nesneleri](../standard-library/function-objects-in-the-stl.md)<br/>
 [İşlev Çağrısı](../cpp/function-call-cpp.md)<br/>
 [for_each](../standard-library/algorithm-functions.md#for_each)

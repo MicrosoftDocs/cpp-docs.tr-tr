@@ -27,15 +27,15 @@ helpviewer_keywords:
 - _InterlockedAdd64_rel intrinsic
 ms.assetid: 3d319603-ea9c-4fdd-ae61-e52430ccc3b1
 ms.openlocfilehash: 348e936bb05796e36ae45095f25b943076cec464
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59040961"
 ---
 # <a name="interlockedadd-intrinsic-functions"></a>_InterlockedAdd İç İşlevleri
 
-**Microsoft'a Özgü**
+**Microsoft'a özgü**
 
 Bu işlevler, birden fazla iş parçacığı paylaşılan değişkene erişimi olduğunda işlemi başarıyla tamamlandığından emin olmasını sağlayan bir atomik toplama gerçekleştirir.
 
@@ -167,7 +167,7 @@ ff0000000000 + ff0000ffffffff = ffff00ffffffff
 Return value: ffff00ffffffff
 ```
 
-**END Microsoft'a Özgü**
+**END Microsoft özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

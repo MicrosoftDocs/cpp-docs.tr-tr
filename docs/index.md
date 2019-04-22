@@ -5,10 +5,10 @@ description: C++ uygulamaları, hizmetleri ve araçları, platformlar ve cihazla
 author: mikeblome
 ms.author: mblome
 ms.openlocfilehash: f402087b101487a444996e7e27b186382c4874fd
-ms.sourcegitcommit: b72a10a7b12e722fd91a17406b91b270026f763a
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/03/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58898680"
 ---
 <div id="main" class="v2">
@@ -198,10 +198,10 @@ ms.locfileid: "58898680"
                 </ul>
             </li>
             <li>
-                <a href="#features">Özellikler</a>
+                <a href="#features">Özellikleri</a>
                 <ul id="features">
                     <li>
-                        <a href="#features1">Özellikler</a>
+                        <a href="#features1">Özellikleri</a>
                         <ul id="features1" class="cardsC">
                             <li>
                                 <a href="/cpp/ide/writing-and-refactoring-code-cpp">
@@ -377,7 +377,7 @@ ms.locfileid: "58898680"
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Bileşen uzantıları</h3>
-                                                    <p>C++ bileşen uzantıları: C + +/ CLI .NET programlama ve C + +/ CX UWP programlama için.</p>
+                                                    <p>C++ bileşen uzantıları: C++/ .NET programlama için CLI ve C++/CX UWP programlama için.</p>
                                                 </div>
                                             </div>
                                         </div>

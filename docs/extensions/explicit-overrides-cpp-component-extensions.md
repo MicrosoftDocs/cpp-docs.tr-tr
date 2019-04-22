@@ -1,18 +1,18 @@
 ---
-title: Açık geçersiz kılmalar (C + +/ CLI ve C + +/ CX)
+title: Açık geçersiz kılmalar (C++/CLI ve C++/CX)
 ms.date: 10/12/2018
 ms.topic: reference
 helpviewer_keywords:
 - overriding, override [C++]
 ms.assetid: 4ec3eaf5-163b-4df8-8f16-7a2ec04c3d0f
 ms.openlocfilehash: 7d36793e4467f9454aca1eb207f3c3dfbd483bff
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59021423"
 ---
-# <a name="explicit-overrides--ccli-and-ccx"></a>Açık geçersiz kılmalar (C + +/ CLI ve C + +/ CX)
+# <a name="explicit-overrides--ccli-and-ccx"></a>Açık geçersiz kılmalar (C++/CLI ve C++/CX)
 
 Bu konu, temel sınıfta veya arabirimde üye açıkça geçersiz kılma anlatılmaktadır. (Açık) adlandırılmış bir geçersiz kılma, farklı bir ada sahip bir türetilmiş yöntemi ile bir yöntemi geçersiz kılmak için yalnızca kullanılmalıdır.
 
@@ -30,10 +30,10 @@ overriding-function-declarator = function { overriding-function-definition }
 *geçersiz kılma-işlevi-declarator*<br/>
 Geçersiz kılma işlev dönüş türü, adı ve bağımsız değişken listesi.  Geçersiz kılma işlevi geçersiz kılınmasını işlevi aynı ada sahip olmadığını unutmayın.
 
-* türü*<br/>
+*type*<br/>
 Geçersiz kılmak için bir işlevi içeren temel türü.
 
-* işlevi*<br/>
+*İşlevi*<br/>
 Geçersiz kılmak için bir veya daha fazla işlev adlarının virgülle ayrılmış listesi.
 
 *geçersiz kılma-işlevi-definition*<br/>
@@ -174,4 +174,4 @@ public:
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[.NET ve UWP için bileşen uzantıları](component-extensions-for-runtime-platforms.md)
+[.NET ve UWP İçin Bileşen Uzantıları](component-extensions-for-runtime-platforms.md)

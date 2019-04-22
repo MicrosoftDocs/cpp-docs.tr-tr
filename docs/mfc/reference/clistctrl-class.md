@@ -265,10 +265,10 @@ helpviewer_keywords:
 - CListCtrl [MFC], Update
 ms.assetid: fe08a1ca-4b05-4ff7-a12a-ee4c765a2197
 ms.openlocfilehash: eea37d03ca5a4fab450fbca0c4c3f6c76fefb407
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58780619"
 ---
 # <a name="clistctrl-class"></a>CListCtrl sınıfı
@@ -618,7 +618,7 @@ virtual BOOL Create(
 *dwStyle*<br/>
 Liste denetiminin stilini belirtir. Liste Denetim stillerini herhangi bir birleşimini denetimi için geçerlidir. Bkz: [liste görünümü pencere stilleri](/windows/desktop/Controls/list-view-window-styles) bu stiller tam listesi için Windows SDK. Genişletilmiş stiller kullanarak bir denetimi belirli kümesi [SetExtendedStyle](#setextendedstyle).
 
-*rect*<br/>
+*Rect*<br/>
 Liste denetimin boyutunu ve konumunu belirtir. Ya da olabilir bir `CRect` nesnesi veya bir [RECT](/previous-versions/dd162897\(v=vs.85\)) yapısı.
 
 *pParentWnd*<br/>
@@ -666,7 +666,7 @@ Oluşturulan denetimin genişletilmiş stilini belirtir. Genişletilmiş Windows
 *dwStyle*<br/>
 Liste denetiminin stilini belirtir. Liste Denetim stillerini herhangi bir birleşimini denetimi için geçerlidir. Bu stiller tam bir listesi için bkz. [liste görünümü pencere stilleri](/windows/desktop/Controls/list-view-window-styles) Windows SDK.
 
-*rect*<br/>
+*Rect*<br/>
 Bir başvuru bir [RECT](/previous-versions/dd162897\(v=vs.85\)) istemci koordinatları olarak oluşturulması için pencerenin konumunu ve boyutunu açıklayan yapısı *pParentWnd*.
 
 *pParentWnd*<br/>
@@ -2416,7 +2416,7 @@ BOOL GetTileInfo(PLVTILEINFO pti) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*PTI*<br/>
+*pti*<br/>
 Bir işaretçi bir [LVTILEINFO](/windows/desktop/api/commctrl/ns-commctrl-taglvtileinfo) kutucuk bilgileri alan yapısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -2702,7 +2702,7 @@ LRESULT InsertGroup(
 
 ### <a name="parameters"></a>Parametreler
 
-*dizin*<br/>
+*Dizin*<br/>
 Gruba eklenecek olduğu öğenin dizini.
 
 *pgrp*<br/>
@@ -2875,7 +2875,7 @@ BOOL IsItemVisible(int index) const;
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|*dizin*|[in] Geçerli liste görünümü denetimi içindeki bir öğenin sıfır tabanlı dizini.|
+|*Dizin*|[in] Geçerli liste görünümü denetimi içindeki bir öğenin sıfır tabanlı dizini.|
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -2897,7 +2897,7 @@ UINT MapIDToIndex(UINT id) const;
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|*kimlik*|[in] Öğeyi benzersiz kimliği.|
+|*id*|[in] Öğeyi benzersiz kimliği.|
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -2923,7 +2923,7 @@ UINT MapIndexToID(UINT index) const;
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|*dizin*|[in] Bir öğenin sıfır tabanlı dizini.|
+|*Dizin*|[in] Bir öğenin sıfır tabanlı dizini.|
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -3097,7 +3097,7 @@ BOOL Scroll(CSize size);
 
 ### <a name="parameters"></a>Parametreler
 
-*size*<br/>
+*Boyutu*<br/>
 A `CSize` , piksel cinsinden yatay ve dikey kaydırma miktarını belirten nesne. `y` Üyesi *boyutu* yüksekliğini piksel cinsinden liste görünüm denetiminin satır bölünür ve denetim elde edilen satırları sayısına göre kaydırılan.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -3496,7 +3496,7 @@ X eksenindeki simge arasındaki uzaklığı (piksel cinsinden).
 *CY*<br/>
 Y ekseninde simge arasındaki uzaklığı (piksel cinsinden).
 
-*size*<br/>
+*Boyutu*<br/>
 A `CSize` nesne üzerinde x - simgeler ve y eksenleri uzaklığı (piksel cinsinden) belirtme.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -3598,7 +3598,7 @@ COLORREF SetInsertMarkColor(COLORREF color);
 
 ### <a name="parameters"></a>Parametreler
 
-*color*<br/>
+*Renk*<br/>
 A [COLORREF](/windows/desktop/gdi/colorref) yapısı ekleme noktasını ayarlamak için renk belirtme.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -3955,7 +3955,7 @@ COLORREF SetOutlineColor(COLORREF color);
 
 ### <a name="parameters"></a>Parametreler
 
-*color*<br/>
+*Renk*<br/>
 Yeni [COLORREF](/windows/desktop/gdi/colorref) rengini içeren yapısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -4075,7 +4075,7 @@ BOOL SetTileInfo(PLVTILEINFO pti);
 
 ### <a name="parameters"></a>Parametreler
 
-*PTI*<br/>
+*pti*<br/>
 Bir işaretçi bir [LVTILEINFO](/windows/desktop/api/commctrl/ns-commctrl-taglvtileinfo) ayarlamak için bilgi içeren yapıya.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -4423,6 +4423,6 @@ LVS_AUTOARRANGE stili varsa, bu işlev Ayrıca liste görünümü denetimi düze
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [MFC örnek ROWLIST](../../overview/visual-cpp-samples.md)<br/>
-[CWnd sınıfı](cwnd-class.md)<br/>
+[CWnd Sınıfı](cwnd-class.md)<br/>
 [Hiyerarşi Grafiği](../hierarchy-chart.md)<br/>
-[Cımagelist sınıfı](cimagelist-class.md)
+[CImageList Sınıfı](cimagelist-class.md)

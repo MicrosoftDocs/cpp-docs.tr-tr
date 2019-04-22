@@ -66,10 +66,10 @@ helpviewer_keywords:
 - CSession* operator
 ms.assetid: 77432d85-4e20-49ec-a0b0-142137828471
 ms.openlocfilehash: 94c7025185a24b07d5968157d49c856d4359b33a
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59021637"
 ---
 # <a name="cdataconnection-class"></a>CDataConnection Sınıfı
@@ -94,7 +94,7 @@ class CDataConnection
 |-|-|
 |[CDataConnection](#cdataconnection)|Oluşturucu. Oluşturur ve başlatır bir `CDataConnection` nesne.|
 |[Kopyala](#copy)|Mevcut bir veri bağlantısı bir kopyasını oluşturur.|
-|[Open](#open)|Başlatma dizesi kullanarak bir veri kaynağı bir bağlantı açar.|
+|[açın](#open)|Başlatma dizesi kullanarak bir veri kaynağı bir bağlantı açar.|
 |[OpenNewSession](#opennewsession)|Geçerli bağlantı üzerinde yeni bir oturum açar.|
 
 ### <a name="operators"></a>İşleçler
@@ -102,11 +102,11 @@ class CDataConnection
 |||
 |-|-|
 |[BOOL işleci](#op_bool)|Geçerli oturumu açık olup olmadığını belirler.|
-|[işleç bool değeri](#op_bool_ole)|Geçerli oturumu açık olup olmadığını belirler.|
+|[bool işleci](#op_bool_ole)|Geçerli oturumu açık olup olmadığını belirler.|
 |[işleç CDataSource &](#op_cdata_amp)|Kapsanan bir başvuru döndürür `CDataSource` nesne.|
 |[CDataSource * işleci](#op_cdata_star)|Kapsanan bir işaretçi döndürür `CDataSource` nesne.|
-|[işleç CSession&](#op_csession_amp)|Kapsanan bir başvuru döndürür `CSession` nesne.|
-|[işleç CSession*](#op_csession_star)|Kapsanan bir işaretçi döndürür `CSession` nesne.|
+|[işleç CSession &](#op_csession_amp)|Kapsanan bir başvuru döndürür `CSession` nesne.|
+|[işleç CSession *](#op_csession_star)|Kapsanan bir işaretçi döndürür `CSession` nesne.|
 
 ## <a name="remarks"></a>Açıklamalar
 

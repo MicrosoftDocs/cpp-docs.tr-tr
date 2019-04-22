@@ -7,10 +7,10 @@ helpviewer_keywords:
 - value types, creating
 ms.assetid: ceb48841-d6bd-47be-a167-57f44c961603
 ms.openlocfilehash: c67f8e0b9511f4ed1610e72e4a7df41c949b1d27
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58770830"
 ---
 # <a name="how-to-use-gcnew-to-create-value-types-and-use-implicit-boxing"></a>Nasıl yapılır: Gcnew değer türleri oluşturmak ve örtük kutulamayı kullanma

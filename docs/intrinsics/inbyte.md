@@ -9,15 +9,15 @@ helpviewer_keywords:
 - __inbyte intrinsic
 ms.assetid: 03b61799-2a08-474d-adc4-2cbf7c81a4d5
 ms.openlocfilehash: 20c583b874c2bdb56affc6a90c8464b82c4824f0
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59040841"
 ---
 # <a name="inbyte"></a>__inbyte
 
-**Microsoft'a Özgü**
+**Microsoft'a özgü**
 
 Oluşturur `in` yönerge tarafından belirtilen bağlantı noktası okuma bayt döndüren `Port`.
 
@@ -31,7 +31,7 @@ unsigned char __inbyte(
 
 #### <a name="parameters"></a>Parametreler
 
-*Bağlantı Noktası*<br/>
+*Bağlantı noktası*<br/>
 [in] Okunacak bağlantı noktası.
 
 ## <a name="return-value"></a>Dönüş Değeri
@@ -46,7 +46,7 @@ Belirtilen bağlantı noktasından bayt okuyun.
 
 **Üst bilgi dosyası** \<intrin.h >
 
-**END Microsoft'a Özgü**
+**END Microsoft özgü**
 
 ## <a name="remarks"></a>Açıklamalar
 

@@ -3,10 +3,10 @@ title: 'Nasıl yapılır: Mevcut C++ kodunu Evrensel Windows platformu uygulamas
 ms.date: 04/08/2019
 ms.assetid: 87e5818c-3081-42f3-a30d-3dca2cf0645c
 ms.openlocfilehash: 3aeef205effe072a25fc0b3dabb9145245461d45
-ms.sourcegitcommit: 39debf8c525c3951af6913ee5e514617658f8859
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59424202"
 ---
 # <a name="how-to-use-existing-c-code-in-a-universal-windows-platform-app"></a>Nasıl yapılır: Mevcut C++ kodunu Evrensel Windows platformu uygulamasında kullanma
@@ -231,4 +231,4 @@ Statik kitaplıkta bir UWP uygulamasında yerel API'lerin kullanmasını istedi�
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Evrensel Windows Platformu’na bağlantı noktası oluşturma](../porting/porting-to-the-universal-windows-platform-cpp.md)
+[Evrensel Windows Platformu'na bağlantı noktası](../porting/porting-to-the-universal-windows-platform-cpp.md)

@@ -7,10 +7,10 @@ helpviewer_keywords:
 - C3496
 ms.assetid: e19885f2-677f-4c1e-bc69-e35852262dc3
 ms.openlocfilehash: 025498f3fe244916cd0a06e36feee6fdb532acc6
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59026710"
 ---
 # <a name="compiler-error-c3496"></a>Derleyici Hatası C3496

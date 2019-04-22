@@ -7,10 +7,10 @@ helpviewer_keywords:
 - C3163
 ms.assetid: 17dcafa3-f416-4e04-a232-f9569218ba75
 ms.openlocfilehash: eda3910c99f4c8ea96568f2d475c5d6a1e4cdc7c
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59041052"
 ---
 # <a name="compiler-error-c3163"></a>Derleyici Hatası C3163

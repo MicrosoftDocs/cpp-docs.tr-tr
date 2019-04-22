@@ -3,10 +3,10 @@ title: Evrensel Windows Uygulamaları (C++)
 ms.date: 03/30/2018
 ms.assetid: 357121cc-d390-4bae-b34a-39614861a9f4
 ms.openlocfilehash: fbd5366ee52dfe32baef9458a82c16914666699e
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58787075"
 ---
 # <a name="universal-windows-apps-c"></a>Evrensel Windows Uygulamaları (C++)
@@ -15,23 +15,23 @@ Evrensel Windows Platformu (UWP) Windows için modern programlama arabirimidir. 
 
 UWP belgeleri çoğunu olan Windows içerik ağacını [Evrensel Windows platformu belgeleri](/windows/uwp/). Başlangıç öğreticileri bulabiliriz başvuru belgeleri. 
 
-Yeni UWP uygulamaları ve bileşenleri için kullanmanızı öneririz [C + +/ WinRT](/windows/uwp/cpp-and-winrt-apis/), yeni standart C ++ 17 dil projeksiyon Windows Runtime API'ları için. C + +/ WinRT, Windows 10 SDK sürüm 1803 ileriye doğru kullanılabilir. C + +/ WinRT tamamen üstbilgi dosyalarında uygulanır ve modern Windows API ile birinci sınıf erişim sağlamak için tasarlanmıştır. Farklı olarak C + +/ CX uygulaması. C + +/ WinRT standart olmayan söz dizimi veya Microsoft dil uzantılarını kullanmaz ve yüksek oranda iyileştirilmiş çıktı oluşturmak için C++ Derleyici tam avantajlarından yararlanır. Daha fazla bilgi için [giriş C + +/ WinRT](/windows/uwp/cpp-and-winrt-apis/intro-to-using-cpp-with-winrt).
+Yeni UWP uygulamaları ve bileşenleri için kullanmanızı öneririz [ C++/WinRT](/windows/uwp/cpp-and-winrt-apis/), yeni standart C ++ 17 dil projeksiyon Windows Runtime API'ları için. C++/ WinRT Windows 10 SDK sürüm 1803 ileriye doğru kullanıma sunulmuştur. C++/ WinRT tamamen üstbilgi dosyalarında uygulanır ve modern Windows API ile birinci sınıf erişim sağlamak için tasarlanmıştır. Farklı C++/CX uygulaması. C++/ WinRT standart olmayan söz dizimi veya Microsoft dil uzantılarını kullanmaz ve tam avantajlarından yararlanır C++ yüksek oranda iyileştirilmiş çıktı oluşturmak için derleyici. Daha fazla bilgi için [giriş C++/WinRT](/windows/uwp/cpp-and-winrt-apis/intro-to-using-cpp-with-winrt).
 
 Microsoft Store aracılığıyla dağıtımı için var olan masaüstü uygulamanızı paketlemek için Masaüstü Köprüsü uygulaması dönüştürücüyü kullanabilirsiniz. Daha fazla bilgi için [kullanarak Visual C++ çalışma zamanı Centennial projesinde](https://blogs.msdn.microsoft.com/vcblog/2016/07/07/using-visual-c-runtime-in-centennial-project) ve [Masaüstü köprüsü](/windows/uwp/porting/desktop-to-uwp-root).
 
-## <a name="uwp-apps-that-use-ccx"></a>UWP uygulamaları kullanmak C + +/ CX
+## <a name="uwp-apps-that-use-ccx"></a>Kullanan UWP uygulamaları C++/CX
 
 |||
 |-|-|
-|[Visual C++ Dil Başvurusu (C + +/ CX)](visual-c-language-reference-c-cx.md)|Windows çalışma zamanı API'ları C++ kullanımını kolaylaştıran ve özel durumlar temelinde hata işlemesini etkinleştirmek uzantıları kümesini açıklar.|
+|[Görsel C++ dil başvurusu (C++/CX)](visual-c-language-reference-c-cx.md)|Windows çalışma zamanı API'ları C++ kullanımını kolaylaştıran ve özel durumlar temelinde hata işlemesini etkinleştirmek uzantıları kümesini açıklar.|
 |[Uygulama ve Kitaplık Oluşturma (C++/CX)](building-apps-and-libraries-c-cx.md)|DLL'lerin ve C + erişilebilir statik kitaplıklar oluşturmayı açıklar +/ CX uygulama veya bileşen.|
-|[Öğretici: Bir UWP oluşturma "Hello, World" uygulaması C + +/ CX](/windows/uwp/get-started/create-a-basic-windows-10-app-in-cpp)|UWP uygulama geliştirme C + temel konseptlerini tanıtan bir kılavuz +/ CX. |
-|[Windows çalışma zamanı bileşenleri oluşturma C + +/ CX](/windows/uwp/winrt-components/creating-windows-runtime-components-in-cpp)|Diğer UWP uygulamaları ve bileşenlerinin kullanabileceği DLL'lerin nasıl oluşturulacağını açıklar.|
+|[Öğretici: Bir UWP oluşturma "Hello, World" uygulamasında C++/CX](/windows/uwp/get-started/create-a-basic-windows-10-app-in-cpp)|UWP uygulama geliştirme C + temel konseptlerini tanıtan bir kılavuz +/ CX. |
+|[Windows çalışma zamanı bileşenleri oluşturma C++/CX](/windows/uwp/winrt-components/creating-windows-runtime-components-in-cpp)|Diğer UWP uygulamaları ve bileşenlerinin kullanabileceği DLL'lerin nasıl oluşturulacağını açıklar.|
 |[UWP oyunu programlama](/windows/uwp/gaming/)|DirectX ve C + kullanmayı açıklar +/ CX oyunlar oluşturmak için.|
 
 ## <a name="uwp-apps-that-use-the-windows-runtime-c-template-library-wrl"></a>Windows çalışma zamanı C++ Şablon kitaplığı (WRL) kullanan UWP uygulamaları
 
-Windows çalışma zamanı C++ Şablon kitaplığı, Windows çalışma zamanı özel durum gerektirmeyen bir ortamda erişebilmeniz için ISO C++ kod tarafından alt düzey COM arabirimleri sağlar. Çoğu durumda, C + kullanmanızı öneririz +/ WinRT ya da C + +/ CX UWP uygulama geliştirme için Windows çalışma zamanı C++ Şablon kitaplığı yerine. Windows çalışma zamanı C++ Şablon Kitaplığı hakkında daha fazla bilgi için bkz. [Windows çalışma zamanı C++ Şablon kitaplığı (WRL)](wrl/windows-runtime-cpp-template-library-wrl.md).
+Windows çalışma zamanı C++ Şablon kitaplığı, Windows çalışma zamanı özel durum gerektirmeyen bir ortamda erişebilmeniz için ISO C++ kod tarafından alt düzey COM arabirimleri sağlar. Çoğu durumda, biz kullanmanızı öneririz. C++/WinRT veya C++Windows çalışma zamanı yerine /CX C++ UWP uygulama geliştirme için Şablon kitaplığı. Windows çalışma zamanı C++ Şablon Kitaplığı hakkında daha fazla bilgi için bkz. [Windows çalışma zamanı C++ Şablon kitaplığı (WRL)](wrl/windows-runtime-cpp-template-library-wrl.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

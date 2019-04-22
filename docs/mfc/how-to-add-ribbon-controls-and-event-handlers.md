@@ -6,10 +6,10 @@ helpviewer_keywords:
 - ribbon controls [MFC], adding
 ms.assetid: b31f25bc-ede7-49c3-9e3c-dffe4e174a69
 ms.openlocfilehash: c21e8b86962ebf37ca1a06bae056d09b9a9dbb2f
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58770129"
 ---
 # <a name="how-to-add-ribbon-controls-and-event-handlers"></a>Nasıl yapılır: Şerit denetimleri ve olay işleyicileri ekleme

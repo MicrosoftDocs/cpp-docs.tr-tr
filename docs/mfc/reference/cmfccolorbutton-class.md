@@ -45,10 +45,10 @@ helpviewer_keywords:
 - CMFCColorButton [MFC], m_bEnabledInCustomizeMode
 ms.assetid: 9fdf34ae-4cc5-4c5e-9d89-1c50e8a73699
 ms.openlocfilehash: c0c9ad79342f2013aa071240c684fce168e55c9e
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58780008"
 ---
 # <a name="cmfccolorbutton-class"></a>CMFCColorButton sınıfı
@@ -263,7 +263,7 @@ virtual void OnDraw(
 *pDC*<br/>
 [in] Düğme görüntüsü oluşturmak için kullanılan cihaz bağlamı işaret eder.
 
-*rect*<br/>
+*Rect*<br/>
 [in] Düğme sınırların bir dikdörtgen.
 
 *uiState*<br/>
@@ -355,7 +355,7 @@ void SetColor(COLORREF color);
 
 ### <a name="parameters"></a>Parametreler
 
-*color*<br/>
+*Renk*<br/>
 [in] Bir RGB değeri.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -372,7 +372,7 @@ static void SetColorName(
 
 ### <a name="parameters"></a>Parametreler
 
-*color*<br/>
+*Renk*<br/>
 [in] Renk RGB değeri.
 
 *strName*<br/>
@@ -465,7 +465,7 @@ virtual void UpdateColor(COLORREF color);
 
 ### <a name="parameters"></a>Parametreler
 
-*color*<br/>
+*Renk*<br/>
 [in] Kullanıcının seçtiği bir renk.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -476,11 +476,11 @@ virtual void UpdateColor(COLORREF color);
 
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
 [Sınıflar](../../mfc/reference/mfc-classes.md)<br/>
-[CMFCButton sınıfı](../../mfc/reference/cmfcbutton-class.md)<br/>
-[CMFCColorBar sınıfı](../../mfc/reference/cmfccolorbar-class.md)<br/>
+[CMFCButton Sınıfı](../../mfc/reference/cmfcbutton-class.md)<br/>
+[CMFCColorBar Sınıfı](../../mfc/reference/cmfccolorbar-class.md)<br/>
 [CMFCColorButton::OnShowColorPopup](#onshowcolorpopup)<br/>
 [COLORREF](/windows/desktop/gdi/colorref)<br/>
-[CPalette sınıfı](../../mfc/reference/cpalette-class.md)<br/>
-[CArray sınıfı](../../mfc/reference/carray-class.md)<br/>
-[CList sınıfı](../../mfc/reference/clist-class.md)<br/>
+[CPalette Sınıfı](../../mfc/reference/cpalette-class.md)<br/>
+[CArray Sınıfı](../../mfc/reference/carray-class.md)<br/>
+[CList Sınıfı](../../mfc/reference/clist-class.md)<br/>
 [CString](../../atl-mfc-shared/reference/cstringt-class.md)

@@ -9,10 +9,10 @@ helpviewer_keywords:
 - MP compiler option (C++)
 - cl.exe compiler, multi-process build
 ms.openlocfilehash: e005b0314e87270e81dbb155dfdaa67be067cd3f
-ms.sourcegitcommit: 39debf8c525c3951af6913ee5e514617658f8859
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59424150"
 ---
 # <a name="mp-build-with-multiple-processes"></a>/MP (Birden Çok Süreçle Derleme)
@@ -51,7 +51,7 @@ Aşağıdaki tablo, derleyici seçenekleri ve ile uyumsuz dil özelliklerini lis
 |--------------------------------|-----------------|
 |[#import](../../preprocessor/hash-import-directive-cpp.md) önişlemci yönergesi|Bir tür kitaplığındaki tür C++ sınıflarına dönüştürür ve ardından söz konusu sınıfın bir üst bilgi dosyasına yazar.|
 |[/E](e-preprocess-to-stdout.md), [/EP](ep-preprocess-to-stdout-without-hash-line-directives.md)|Önişlemci çıktısını standart çıktıya kopyalar (**stdout**).|
-|[/GM derlemeyi](gm-enable-minimal-rebuild.md)|Kullanım dışı. Bir artımlı yeniden etkinleştirir.|
+|[/Gm](gm-enable-minimal-rebuild.md)|Kullanım dışı. Bir artımlı yeniden etkinleştirir.|
 |[/ showıncludes](showincludes-list-include-files.md)|Standart hatayı ekleme kodu dosyalarının bir listesini yazar (**stderr**).|
 |[/Yc](yc-create-precompiled-header-file.md)|Önceden derlenmiş üst bilgi dosyasına yazar.|
 
@@ -127,6 +127,6 @@ MSBuild kullanılacak karar yönelik yönerge veya **/MP** teknoloji aşağıdak
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[#import Yönergesi](../../preprocessor/hash-import-directive-cpp.md)<br/>
+[#import yönergesi](../../preprocessor/hash-import-directive-cpp.md)<br/>
 [Komut Satırı Başvurusu](/visualstudio/msbuild/msbuild-command-line-reference)<br/>
-[/ZF (daha hızlı PDB oluşturma)](zf.md)<br/>
+[/ZF (Daha hızlı PDB oluşturma)](zf.md)<br/>

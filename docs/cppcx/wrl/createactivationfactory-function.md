@@ -8,10 +8,10 @@ helpviewer_keywords:
 - CreateActivationFactory function
 ms.assetid: a1a53e04-6757-4faf-a4c8-ecf06e43b959
 ms.openlocfilehash: ca3469128cf3d412138d5d39a1587cbc20150699
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59040612"
 ---
 # <a name="createactivationfactory-function"></a>CreateActivationFactory İşlevi
@@ -30,10 +30,10 @@ template<typename Factory>
 
 ### <a name="parameters"></a>Parametreler
 
-*bayraklar*<br/>
+*bayrakları*<br/>
 Bir veya daha fazla birleşimi [RuntimeClassType](runtimeclasstype-enumeration.md) sabit listesi değerleri.
 
-*giriş*<br/>
+*entry*<br/>
 İşaretçi bir [CreatorMap](creatormap-structure.md) parametresi başlatma ve kayıt bilgilerini içeren *riid*.
 
 *riid*<br/>

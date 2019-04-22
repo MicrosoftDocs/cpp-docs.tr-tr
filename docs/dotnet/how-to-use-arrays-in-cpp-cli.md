@@ -1,19 +1,19 @@
 ---
-title: 'Nasıl yapılır: Diziler kullanmak C + +/ CLI'
+title: 'Nasıl yapılır: İçindeki diziler kullanın C++/CLI'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - arrays [C++], single-dimension
 ms.assetid: 301cfb3e-199f-42c8-8151-629dce9e87f3
 ms.openlocfilehash: 65d384cbac7691d000ae6e895c9cf63e71726689
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58780931"
 ---
-# <a name="how-to-use-arrays-in-ccli"></a>Nasıl yapılır: Diziler kullanmak C + +/ CLI
+# <a name="how-to-use-arrays-in-ccli"></a>Nasıl yapılır: İçindeki diziler kullanın C++/CLI
 
-Bu makalede dizileri kullanma C + +/ CLI.
+Bu makalede, dizilerde kullanmayı açıklar C++/CLI.
 
 ## <a name="single-dimension-arrays"></a>Tek boyutlu diziler
 

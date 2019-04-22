@@ -15,10 +15,10 @@ helpviewer_keywords:
 - COleDropSource [MFC], QueryContinueDrag
 ms.assetid: d3eecc5f-a70b-4a01-b705-7d2c098ebe17
 ms.openlocfilehash: a2773333ea1dd89f73e7bdf3c5dc2f36945e0810
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58778513"
 ---
 # <a name="coledropsource-class"></a>COleDropSource sınıfı
@@ -165,5 +165,5 @@ Bu işlev sık çağrıldığından, mümkün olduğunca hale getirilmiştir.
 
 [MFC örnek HIERSVR](../../overview/visual-cpp-samples.md)<br/>
 [MFC örnek OCLIENT](../../overview/visual-cpp-samples.md)<br/>
-[CCmdTarget sınıfı](../../mfc/reference/ccmdtarget-class.md)<br/>
+[CCmdTarget Sınıfı](../../mfc/reference/ccmdtarget-class.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)

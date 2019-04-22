@@ -6,10 +6,10 @@ helpviewer_keywords:
 - redistributing MFC library
 ms.assetid: 72714ce1-385e-4c1c-afa5-96b03e873866
 ms.openlocfilehash: faca2e7213ab0ad0c9b1a1a0fd6a7274094853f1
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58787705"
 ---
 # <a name="redistributing-the-mfc-library"></a>MFC Kitaplığını Yeniden Dağıtma

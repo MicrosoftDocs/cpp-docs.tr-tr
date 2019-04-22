@@ -57,10 +57,10 @@ helpviewer_keywords:
 - CDrawingManager [MFC], SmartMixColors
 ms.assetid: 9e4775ca-101b-4aa9-a85a-4d047c701215
 ms.openlocfilehash: 506ab7a06653942ecff05043a7e7efabd535115f
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58781698"
 ---
 # <a name="cdrawingmanager-class"></a>CDrawingManager sınıfı
@@ -157,9 +157,9 @@ static HBITMAP __stdcall CreateBitmap_32(
 |||
 |-|-|
 |Parametre|Açıklama|
-|*size*|[in] A [CSize](../../atl-mfc-shared/reference/csize-class.md) bit eşlem boyutunu belirten bir parametre.|
+|*Boyutu*|[in] A [CSize](../../atl-mfc-shared/reference/csize-class.md) bit eşlem boyutunu belirten bir parametre.|
 |*pBits*|[out] Bir işaretçi DIB'ın yerini alan veri işaretçisi bit değerleri.|
-|*bit eşlem*|Özgün bit eşlem işleyici|
+|*Bit eşlem*|Özgün bit eşlem işleyici|
 |*clrTransparent*|Özgün bit eşlem saydam rengini belirten bir RGB değeri.|
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -213,7 +213,7 @@ void DrawEllipse(
 
 ### <a name="parameters"></a>Parametreler
 
-*rect*<br/>
+*Rect*<br/>
 [in] Dikdörtgen elipsin.
 
 *clrFill*<br/>
@@ -243,7 +243,7 @@ BOOL DrawGradientRing(
 
 ### <a name="parameters"></a>Parametreler
 
-*rect*<br/>
+*Rect*<br/>
 [in] A [CRect](../../atl-mfc-shared/reference/crect-class.md) parametresi gradyan halka sınırlarını belirtir.
 
 *colorStart*<br/>
@@ -298,7 +298,7 @@ void DrawLineA(
 |-|-|
 |Parametre|Açıklama|
 |*x1*|[in] Çizginin başladığı x koordinatı.|
-|*Y1*|[in] Çizginin başladığı y koordinatı.|
+|*y1*|[in] Çizginin başladığı y koordinatı.|
 |*x2*|[in] Satırı sona ereceği x koordinatı.|
 |*y2*|[in] Satırı sona ereceği y koordinatı.|
 |*clrLine*|[in] Çizginin rengi.|
@@ -320,7 +320,7 @@ void DrawRect(
 
 ### <a name="parameters"></a>Parametreler
 
-*rect*<br/>
+*Rect*<br/>
 [in] Dikdörtgen için sınırlar.
 
 *clrFill*<br/>
@@ -351,7 +351,7 @@ BOOL DrawShadow(
 
 ### <a name="parameters"></a>Parametreler
 
-*rect*<br/>
+*Rect*<br/>
 [in] Uygulamanızdaki bir dikdörtgen alan. Çizim Yöneticisi altındaki Bu alan bir gölge çizer.
 
 *nDepth*<br/>
@@ -410,7 +410,7 @@ void Fill4ColorsGradient(
 
 ### <a name="parameters"></a>Parametreler
 
-*rect*<br/>
+*Rect*<br/>
 [in] Doldurmak için dikdörtgen.
 
 *colorStart1*<br/>
@@ -453,7 +453,7 @@ void FillGradient(
 
 ### <a name="parameters"></a>Parametreler
 
-*rect*<br/>
+*Rect*<br/>
 [in] Doldurmak için dikdörtgen alan.
 
 *colorStart*<br/>
@@ -491,7 +491,7 @@ void FillGradient2 (
 
 ### <a name="parameters"></a>Parametreler
 
-*rect*<br/>
+*Rect*<br/>
 [in] Doldurmak için dikdörtgen alan.
 
 *colorStart*<br/>
@@ -527,7 +527,7 @@ BOOL GrayRect(
 
 ### <a name="parameters"></a>Parametreler
 
-*rect*<br/>
+*Rect*<br/>
 [in] Doldurmak için dikdörtgen alan.
 
 *nPercentage*<br/>
@@ -564,7 +564,7 @@ BOOL HighlightRect(
 
 ### <a name="parameters"></a>Parametreler
 
-*rect*<br/>
+*Rect*<br/>
 [in] Vurgulamak için bir dikdörtgen alan.
 
 *nPercentage*<br/>
@@ -699,7 +699,7 @@ static BYTE __stdcall HueToRGB(
 
 ### <a name="parameters"></a>Parametreler
 
-*m1*<br/>
+*M1*<br/>
 [in] Açıklamalara bakın.
 
 *M2*<br/>
@@ -714,7 +714,7 @@ static BYTE __stdcall HueToRGB(
 *rm2*<br/>
 [in] Açıklamalara bakın.
 
-*RH*<br/>
+*rh*<br/>
 [in] Açıklamalara bakın.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -745,7 +745,7 @@ void MirrorRect(
 
 ### <a name="parameters"></a>Parametreler
 
-*rect*<br/>
+*Rect*<br/>
 [in] Çevrilecek alan sınırlayıcı dikdörtgenini.
 
 *bHorz*<br/>
@@ -921,13 +921,13 @@ static void __stdcall SetAlphaPixel(
 *pBits*<br/>
 [in] Bit eşlem bit değerleri için bir işaretçi.
 
-*rect*<br/>
+*Rect*<br/>
 [in] Uygulamanızdaki bir dikdörtgen alan. Çizim Yöneticisi altında ve bu alan sağındaki gölge çizer.
 
 *x*<br/>
 [in] Piksel renk yatay koordinatı.
 
-*y*<br/>
+*Y*<br/>
 [in] Piksel renk dikey koordinatı.
 
 *Yüzde*<br/>
@@ -971,8 +971,8 @@ static void __stdcall SetPixel(
 |*cx*|[in] Bit eşlem toplam genişliği.|
 |*CY*|[in] Bit eşlem toplam yüksekliği.|
 |*x*|[in] X koordinatı değiştirmek için bit eşlemin piksel.|
-|*y*|[in] Y koordinatını değiştirmek için bit eşlemin piksel.|
-|*color*|[in] Yeni sağlanan koordinatları tarafından tanımlanan piksel rengi.|
+|*Y*|[in] Y koordinatını değiştirmek için bit eşlemin piksel.|
+|*Renk*|[in] Yeni sağlanan koordinatları tarafından tanımlanan piksel rengi.|
 
 ##  <a name="smartmixcolors"></a>  CDrawingManager::SmartMixColors
 

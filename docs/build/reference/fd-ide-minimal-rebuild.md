@@ -9,10 +9,10 @@ helpviewer_keywords:
 - FD compiler option [C++]
 ms.assetid: 7ef21b8c-a448-4bb4-9585-a2a870028e17
 ms.openlocfilehash: ac63b021dc0cb9ee5964af7fa2e168f710653979
-ms.sourcegitcommit: 39debf8c525c3951af6913ee5e514617658f8859
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59424059"
 ---
 # <a name="fd-ide-minimal-rebuild"></a>/FD (IDE En Az Yeniden Derleme)
@@ -24,5 +24,5 @@ Kullanım dışı etkinleştirmezseniz **/GM derlemeyi** geliştirme ortamındak
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Çıktı Dosyası (/F) Seçenekleri](output-file-f-options.md)<br/>
-[MSVC derleyici seçenekleri](compiler-options.md)<br/>
-[MSVC derleyici komut satırı sözdizimi](compiler-command-line-syntax.md)
+[MSVC Derleyicisi Seçenekleri](compiler-options.md)<br/>
+[MSVC Derleyicisi Komut Satırı Söz Dizimi](compiler-command-line-syntax.md)

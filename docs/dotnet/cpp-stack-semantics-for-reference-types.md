@@ -5,10 +5,10 @@ helpviewer_keywords:
 - reference types, C++ stack semantics for
 ms.assetid: 319a1304-f4a4-4079-8b84-01cec847d531
 ms.openlocfilehash: 69771de120dc413496a3b7b0613e51a13d208e22
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58772611"
 ---
 # <a name="c-stack-semantics-for-reference-types"></a>Referans Türleri için C++ Yığın Anlamları
@@ -27,7 +27,7 @@ Derleyici, bir başvuru türü için bir kopya Oluşturucu oluşturmaz. Bu neden
 
 Derleyicinin bir varsayılan atama işleci bir başvuru türü için oluşturmaz. Atama işleci, yığın anlamları kullanarak bir nesne oluşturun ve yığın anlamları kullanarak oluşturduğunuz var olan bir nesne ile başlatmak sağlar. Bir atama işleci bir başvuru türü için bir imza aşağıdaki biçime sahiptir: `void operator=( R% ){}`.
 
-Türün yok Edicisi kritik kaynakları serbest bırakır ve başvuru türleri için yığın anlamları kullanırsanız yok ediciyi açıkça çağırmak gerekmez (veya çağrı `delete`). Başvuru türlerindeki Yıkıcılar hakkında daha fazla bilgi için bkz. [yok ediciler ve sonlandırıcılar, nasıl yapılır: Sınıfları ve yapıları tanımlama ve kullanma (C + +/ CLI)](../dotnet/how-to-define-and-consume-classes-and-structs-cpp-cli.md#BKMK_Destructors_and_finalizers).
+Türün yok Edicisi kritik kaynakları serbest bırakır ve başvuru türleri için yığın anlamları kullanırsanız yok ediciyi açıkça çağırmak gerekmez (veya çağrı `delete`). Başvuru türlerindeki Yıkıcılar hakkında daha fazla bilgi için bkz. [yok ediciler ve sonlandırıcılar, nasıl yapılır: Sınıfları ve yapıları tanımlama ve kullanma (C++/CLI)](../dotnet/how-to-define-and-consume-classes-and-structs-cpp-cli.md#BKMK_Destructors_and_finalizers).
 
 Derleyici tarafından üretilen atama işleci aşağıdaki eklemelerle normal standart C++ kurallarını izler:
 

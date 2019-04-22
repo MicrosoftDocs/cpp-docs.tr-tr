@@ -3,10 +3,10 @@ title: Olası yükseltme sorunlarına (Visual C++) genel bakış
 ms.date: 11/04/2016
 ms.assetid: 2c99a8cb-098f-4a9d-bf2c-b80fd06ace43
 ms.openlocfilehash: 1dac6ad201656dc83428aa5182a59cb8ff824651
-ms.sourcegitcommit: b72a10a7b12e722fd91a17406b91b270026f763a
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/03/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58898836"
 ---
 # <a name="overview-of-potential-upgrade-issues-visual-c"></a>Olası yükseltme sorunlarına (Visual C++) genel bakış
@@ -83,7 +83,7 @@ dumpbin.exe /LINKERMEMBER somelibrary.lib
 
 ### <a name="zcwchart-wchart-is-native-type"></a>/Zc:wchar_t (wchar_t Yerel Tür)
 
-(Microsoft Visual C++ 6.0 ve önceki sürümlerinde, **wchar_t** yerleşik bir tür olarak uygulanmadı, ancak wchar.h içinde işaretsiz için bir typedef bildirildi.) C++ Standart gerektiren **wchar_t** yerleşik bir tür olabilir. Typedef sürümünü kullanarak, taşınabilirlik sorunlarına neden olabilir. Visual Studio'nun önceki sürümlerinden yükseltin ve kod örtük dönüştürmeye çalıştığı için derleyici hatası C2664 karşılaştığınız bir **wchar_t** için **işaretsiz**, size değiştirmenizi öneririz ayar yerine hatayı gidermek için kod `/Zc:wchar_t-`. Daha fazla bilgi için [/ZC: wchar_t (wchar_t yerel türü olduğu)](../build/reference/zc-wchar-t-wchar-t-is-native-type.md).
+(Microsoft Visual içinde C++ 6.0 ve önceki sürümleri, **wchar_t** yerleşik bir tür olarak uygulanmadı, ancak wchar.h içinde işaretsiz için bir typedef bildirildi.) C++ Standart gerektirir **wchar_t** yerleşik bir tür olabilir. Typedef sürümünü kullanarak, taşınabilirlik sorunlarına neden olabilir. Visual Studio'nun önceki sürümlerinden yükseltin ve kod örtük dönüştürmeye çalıştığı için derleyici hatası C2664 karşılaştığınız bir **wchar_t** için **işaretsiz**, size değiştirmenizi öneririz ayar yerine hatayı gidermek için kod `/Zc:wchar_t-`. Daha fazla bilgi için [/ZC: wchar_t (wchar_t yerel türü olduğu)](../build/reference/zc-wchar-t-wchar-t-is-native-type.md).
 
 ### <a name="upgrading-with-the-linker-options-nodefaultlib-entry-and-noentry"></a>/ Nodefaultlıb/Entry ve/NOENTRY bağlayıcı seçenekleri ile yükseltme
 

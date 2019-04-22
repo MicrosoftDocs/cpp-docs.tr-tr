@@ -9,10 +9,10 @@ ms.assetid: 0d893056-4008-411a-b3d1-5f57fd7da95c
 author: mikeblome
 ms.author: mblome
 ms.openlocfilehash: 39be17904f19bebdd9313a767de91a7315c3ca66
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58787635"
 ---
 # <a name="supported-platforms-visual-c"></a>Desteklenen Platformlar (Visual C++)

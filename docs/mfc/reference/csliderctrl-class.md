@@ -75,10 +75,10 @@ helpviewer_keywords:
 - CSliderCtrl [MFC], SetToolTips
 ms.assetid: dd12b084-4eda-4550-a810-8f3cfb06b871
 ms.openlocfilehash: 4db27112daf65b2c3f477527cd7b4351b91d7f18
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58776641"
 ---
 # <a name="csliderctrl-class"></a>CSliderCtrl sınıfı
@@ -208,7 +208,7 @@ virtual BOOL Create(
 *dwStyle*<br/>
 Kaydırıcı denetiminin stilini belirtir. Herhangi bir birleşimini uygulamak [kaydırıcı denetim stilleri](/windows/desktop/Controls/trackbar-control-styles)denetlemek için Windows SDK içinde açıklandığı gibi.
 
-*rect*<br/>
+*Rect*<br/>
 Kaydırıcı denetiminin boyutunu ve konumunu belirtir. Ya da olabilir bir [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesi veya bir [RECT](/previous-versions/dd162897\(v=vs.85\)) yapısı.
 
 *pParentWnd*<br/>
@@ -250,7 +250,7 @@ Oluşturulan denetimin genişletilmiş stilini belirtir. Genişletilmiş Windows
 *dwStyle*<br/>
 Kaydırıcı denetiminin stilini belirtir. Herhangi bir birleşimini uygulamak [kaydırıcı denetim stilleri](/windows/desktop/Controls/trackbar-control-styles)denetlemek için Windows SDK içinde açıklandığı gibi.
 
-*rect*<br/>
+*Rect*<br/>
 Bir başvuru bir [RECT](/previous-versions/dd162897\(v=vs.85\)) istemci koordinatları olarak oluşturulması için pencerenin konumunu ve boyutunu açıklayan yapısı *pParentWnd*.
 
 *pParentWnd*<br/>
@@ -802,6 +802,6 @@ Bu üye işlevi Win32 ileti davranışı uygulayan [TBM_SETTOOLTIPS](/windows/de
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [MFC örnek CMNCTRL2](../../overview/visual-cpp-samples.md)<br/>
-[CWnd sınıfı](../../mfc/reference/cwnd-class.md)<br/>
+[CWnd Sınıfı](../../mfc/reference/cwnd-class.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
-[CProgressCtrl sınıfı](../../mfc/reference/cprogressctrl-class.md)
+[CProgressCtrl Sınıfı](../../mfc/reference/cprogressctrl-class.md)

@@ -19,10 +19,10 @@ helpviewer_keywords:
 - public members [C++]
 ms.assetid: 46b6ff4a-e441-4022-8892-78e69422f230
 ms.openlocfilehash: a17910e0288b81723aa837ba9204bb40713d5d49
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58770828"
 ---
 # <a name="reflection-ccli"></a>Yansıma (C++/CLI)

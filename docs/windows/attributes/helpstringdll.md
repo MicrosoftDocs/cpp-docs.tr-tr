@@ -7,10 +7,10 @@ helpviewer_keywords:
 - helpstringdll attribute [C++]
 ms.assetid: 121271fa-f061-492b-b87f-bbfcf4b02e7b
 ms.openlocfilehash: 72f5926018e3ac7ec4770f83d7a2c3438b67d861
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59025211"
 ---
 # <a name="helpstringdll"></a>helpstringdll
@@ -25,7 +25,7 @@ Belge dize arama (yerelleştirme) gerçekleştirmek için kullanılacak DLL'in a
 
 ### <a name="parameters"></a>Parametreler
 
-*dize*<br/>
+*string*<br/>
 Belge dize arama gerçekleştirmek için kullanılacak DLL.
 
 ## <a name="remarks"></a>Açıklamalar
@@ -53,16 +53,16 @@ __interface IMyI
 
 |||
 |-|-|
-|**Uygulandığı öğe:**|**sınıf**, **arabirimi**, arabirim yöntemi|
+|**İçin geçerlidir**|**sınıf**, **arabirimi**, arabirim yöntemi|
 |**Tekrarlanabilir**|Hayır|
 |**Gerekli öznitelikleri**|None|
-|**Geçersiz öznitelikler**|Yok.|
+|**Geçersiz öznitelikler**|None|
 
 Daha fazla bilgi için [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[IDL Öznitelikleri](idl-attributes.md)<br/>
+[IDL öznitelikleri](idl-attributes.md)<br/>
 [Arabirim Öznitelikleri](interface-attributes.md)<br/>
 [Sınıf Öznitelikleri](class-attributes.md)<br/>
 [Yöntem Öznitelikleri](method-attributes.md)

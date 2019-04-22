@@ -17,10 +17,10 @@ helpviewer_keywords:
 - CTooltipManager [MFC], UpdateTooltips
 ms.assetid: c71779d7-8b6e-47ef-8500-d4552731fe86
 ms.openlocfilehash: e8b88f2722f5a4379276f13c2ef159aa4d120533
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58776511"
 ---
 # <a name="ctooltipmanager-class"></a>CTooltipManager sınıfı
@@ -208,5 +208,5 @@ void UpdateTooltips();
 
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
 [Sınıflar](../../mfc/reference/mfc-classes.md)<br/>
-[CMFCToolTipCtrl sınıfı](../../mfc/reference/cmfctooltipctrl-class.md)<br/>
-[CMFCToolTipInfo Class](../../mfc/reference/cmfctooltipinfo-class.md)
+[CMFCToolTipCtrl Sınıfı](../../mfc/reference/cmfctooltipctrl-class.md)<br/>
+[CMFCToolTipInfo Sınıfı](../../mfc/reference/cmfctooltipinfo-class.md)

@@ -7,10 +7,10 @@ helpviewer_keywords:
 - intrinsics
 ms.assetid: 178f88a2-7e8e-43ac-b55e-ef3298bef895
 ms.openlocfilehash: 67206e63d163b489c5087e6bc6759cde30a3d6c4
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59026207"
 ---
 # <a name="alphabetical-listing-of-intrinsic-functions"></a>İç işlevlerin alfabetik listesi
@@ -73,31 +73,31 @@ Aşağıdaki bölümlerde, Microsoft'a özgü iç işlevleri kullanılabilir baz
 
 [_InterlockedAddLargeStatistic](../intrinsics/interlockedaddlargestatistic.md)
 
-[_Interlockedand iç işlevleri](../intrinsics/interlockedand-intrinsic-functions.md)
+[_InterlockedAnd İç İşlevleri](../intrinsics/interlockedand-intrinsic-functions.md)
 
-[_interlockedbittestandreset iç işlevleri](../intrinsics/interlockedbittestandreset-intrinsic-functions.md)
+[_interlockedbittestandreset İç İşlevleri](../intrinsics/interlockedbittestandreset-intrinsic-functions.md)
 
-[_interlockedbittestandset iç işlevleri](../intrinsics/interlockedbittestandset-intrinsic-functions.md)
+[_interlockedbittestandset İç İşlevleri](../intrinsics/interlockedbittestandset-intrinsic-functions.md)
 
-[_Interlockedcompareexchange iç işlevleri](../intrinsics/interlockedcompareexchange-intrinsic-functions.md)
+[_InterlockedCompareExchange İç İşlevleri](../intrinsics/interlockedcompareexchange-intrinsic-functions.md)
 
 [_InterlockedCompareExchange128](../intrinsics/interlockedcompareexchange128.md)
 
-[_Interlockedcompareexchangepointer iç işlevleri](../intrinsics/interlockedcompareexchangepointer-intrinsic-functions.md)
+[_InterlockedCompareExchangePointer İç İşlevleri](../intrinsics/interlockedcompareexchangepointer-intrinsic-functions.md)
 
-[_Interlockeddecrement iç işlevleri](../intrinsics/interlockeddecrement-intrinsic-functions.md)
+[_InterlockedDecrement İç İşlevleri](../intrinsics/interlockeddecrement-intrinsic-functions.md)
 
-[_Interlockedexchange iç işlevleri](../intrinsics/interlockedexchange-intrinsic-functions.md)
+[_InterlockedExchange İç İşlevleri](../intrinsics/interlockedexchange-intrinsic-functions.md)
 
 [_InterlockedExchangeAdd İç İşlevleri](../intrinsics/interlockedexchangeadd-intrinsic-functions.md)
 
-[_Interlockedexchangepointer iç işlevleri](../intrinsics/interlockedexchangepointer-intrinsic-functions.md)
+[_InterlockedExchangePointer İç İşlevleri](../intrinsics/interlockedexchangepointer-intrinsic-functions.md)
 
-[_Interlockedıncrement iç işlevleri](../intrinsics/interlockedincrement-intrinsic-functions.md)
+[_InterlockedIncrement İç İşlevleri](../intrinsics/interlockedincrement-intrinsic-functions.md)
 
-[_Interlockedor iç işlevleri](../intrinsics/interlockedor-intrinsic-functions.md)
+[_InterlockedOr İç İşlevleri](../intrinsics/interlockedor-intrinsic-functions.md)
 
-[_Interlockedxor iç işlevleri](../intrinsics/interlockedxor-intrinsic-functions.md)
+[_InterlockedXor İç İşlevleri](../intrinsics/interlockedxor-intrinsic-functions.md)
 
 [__invlpg](../intrinsics/invlpg.md)
 

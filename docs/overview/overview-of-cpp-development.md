@@ -1,5 +1,5 @@
 ---
-title: Visual Studio'da C++ geliştirme genel bakış
+title: Visual Studio’da C++ geliştirmeye genel bakış
 description: Visual Studio IDE Windows, Linux, Android ve iOS bir kod Düzenleyicisi, hata ayıklayıcı, test çerçeveleri, statik çözümleyiciler ve başka programlama araçları ile C++ geliştirme destekler.
 ms.date: 03/08/2019
 helpviewer_keywords:
@@ -7,13 +7,13 @@ helpviewer_keywords:
 author: corob-msft
 ms.author: corob
 ms.openlocfilehash: 207d99419499187715cf9088652d64b79b7ba34d
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58787883"
 ---
-# <a name="overview-of-c-development-in-visual-studio"></a>Visual Studio'da C++ geliştirme genel bakış
+# <a name="overview-of-c-development-in-visual-studio"></a>Visual Studio’da C++ geliştirmeye genel bakış
 
 Visual Studio tümleşik geliştirme ortamı (IDE) parçası olarak, Microsoft C++ (MSVC) birçok windows ve diğer diller ortak Araçlar paylaşır. Bu da dahil olmak üzere birçok **Çözüm Gezgini**, Kod Düzenleyicisi ve hata ayıklayıcı altında belgelenen [Visual Studio IDE](/visualstudio/get-started/visual-studio-ide). Genellikle, paylaşılan bir aracı veya pencere biraz farklı bir özellik kümesi için C++ JavaScript veya .NET dilleri için vardır. Bazı windows veya araçları yalnızca Visual Studio Professional veya Visual Studio Enterprise sürümlerinde kullanılabilir.
 

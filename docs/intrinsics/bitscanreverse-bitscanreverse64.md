@@ -12,15 +12,15 @@ helpviewer_keywords:
 - BitScanReverse intrinsic
 ms.assetid: 2520a207-af8b-4aad-9ae7-831abeadf376
 ms.openlocfilehash: 3639aac38f4c7df82cbbdb23ed9038ac86ba2cc0
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59021976"
 ---
 # <a name="bitscanreverse-bitscanreverse64"></a>_BitScanReverse, _BitScanReverse64
 
-**Microsoft'a Özgü**
+**Microsoft'a özgü**
 
 En az önemli bit (LSB'si) belirlenen bitin (1) için en anlamlı bit (MSB) maskesi verileri arayın.
 
@@ -39,7 +39,7 @@ unsigned char _BitScanReverse64(
 
 #### <a name="parameters"></a>Parametreler
 
-*Dizin*<br/>
+*Index*<br/>
 [out] Bulunan bit konumunu ilk set bit (1) ile yüklendi.
 
 *Maskesi*<br/>
@@ -100,7 +100,7 @@ Enter a positive integer as the mask:
 Mask: 12 Index: 3
 ```
 
-**END Microsoft'a Özgü**
+**END Microsoft özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

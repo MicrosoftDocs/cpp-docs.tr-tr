@@ -8,15 +8,15 @@ helpviewer_keywords:
 - __svm_skinit intrinsic
 ms.assetid: 787ec781-4cf2-40a2-aa20-5192334b131a
 ms.openlocfilehash: 199cba2623f9d8e47c08be642ec485599b87976e
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59026142"
 ---
 # <a name="svmskinit"></a>__svm_skinit
 
-**Microsoft'a Özgü**
+**Microsoft'a özgü**
 
 Bir sanal makine İzleyici gibi doğrulanabilir şekilde güvenli yazılım yüklemesini başlatır.
 
@@ -50,7 +50,7 @@ Bu işlev, bir konuk işletim sistemi ve uygulamaları ile bir konağın sanal m
 
 **Üst bilgi dosyası** \<intrin.h >
 
-**END Microsoft'a Özgü**
+**END Microsoft özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

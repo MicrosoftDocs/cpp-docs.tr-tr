@@ -9,10 +9,10 @@ helpviewer_keywords:
 - dialog bars [MFC], about dialog bars
 ms.assetid: 485c8055-6bb0-4051-8417-dd2971499321
 ms.openlocfilehash: e4e843327daba6f0aa468cb07394165bc70fa7f0
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58779514"
 ---
 # <a name="dialog-bars"></a>İletişim Kutusu Çubukları
@@ -32,5 +32,5 @@ Kendi iletişim sınıflarından normal olsa `CDialog`, genellikle bir iletişim
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Kullanıcı Arabirim Öğeleri](../mfc/user-interface-elements-mfc.md)<br/>
+[Kullanıcı arabirimi öğeleri](../mfc/user-interface-elements-mfc.md)<br/>
 [Örnek](../overview/visual-cpp-samples.md)

@@ -11,10 +11,10 @@ helpviewer_keywords:
 - LOCALIZE sample [MFC]
 ms.assetid: a44b839a-c652-4ec5-b824-04392708a5f9
 ms.openlocfilehash: 13c8ff545763017b01685e012ab2d497eaf7084a
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58767554"
 ---
 # <a name="mfc-activex-controls-localizing-an-activex-control"></a>MFC ActiveX denetimleri: ActiveX denetimini yerelleştirme

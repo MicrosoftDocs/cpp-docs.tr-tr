@@ -10,10 +10,10 @@ helpviewer_keywords:
 - MFC, about MFC
 ms.assetid: 7101cb18-a681-495c-8f2b-069ad20c72f7
 ms.openlocfilehash: 042412000ba59c8400c5a3a64edae5d60756116a
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58766501"
 ---
 # <a name="mfc-desktop-applications"></a>MFC Masaüstü Uygulamaları

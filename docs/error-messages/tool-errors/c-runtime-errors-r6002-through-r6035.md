@@ -1,17 +1,17 @@
 ---
-title: C çalışma zamanı hataları R6002 ile r6035 arasındaki
+title: R6002 ile R6035 Arasındaki C Çalışma Zamanı Hataları
 ms.date: 11/17/2017
 f1_keywords:
 - c.errors
 ms.assetid: 78019050-9a30-4b61-8250-a5702e0e2393
 ms.openlocfilehash: b1a4aa5114965451791f44d88eb9e5ca61ff9c57
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58766892"
 ---
-# <a name="c-runtime-errors-r6002-through-r6035"></a>C çalışma zamanı hataları R6002 ile r6035 arasındaki
+# <a name="c-runtime-errors-r6002-through-r6035"></a>R6002 ile R6035 Arasındaki C Çalışma Zamanı Hataları
 
 Bu bölümde, uygulamanızın yüklü veya çalışıyor olduğunda, C çalışma zamanı kitaplığı (CRT) tarafından oluşturulan hatalara bir başvurudur. İleti için Microsoft Visual C++ çalışma zamanı başvuruda bulunuyor olsa da, bu hatalar, uygulamanızın kodunda bir hata veya çalışma zamanı kitaplığı işleyemez, düşük bellek gibi bir koşul belirtin. Uygulamanızın son kullanıcılar, bunları neden olan koşulları önlemek için uygulamanıza kod, bir ya da bu hataları yakalamaya ve kolay bir ileti kullanıcılarınıza sunmak için kod yazma bu hataları görebilirsiniz.
 

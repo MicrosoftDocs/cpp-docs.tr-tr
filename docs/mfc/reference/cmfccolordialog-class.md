@@ -23,10 +23,10 @@ helpviewer_keywords:
 - CMFCColorDialog [MFC], SetPageTwo
 ms.assetid: 235bbbbc-a3b1-46e0-801b-fb55093ec579
 ms.openlocfilehash: 1b9f57e46d5ac74dd52f7ddb7ebd90f8888891e3
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58772757"
 ---
 # <a name="cmfccolordialog-class"></a>CMFCColorDialog sınıfı

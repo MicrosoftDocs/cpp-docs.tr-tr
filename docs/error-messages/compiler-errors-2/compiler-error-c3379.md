@@ -7,10 +7,10 @@ helpviewer_keywords:
 - C3379
 ms.assetid: a66c2c4e-091c-4426-9cde-7c4cfb2ffce1
 ms.openlocfilehash: 5bf4e2e42b4534d47a2a7d3c9a838c404a99ba68
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58769998"
 ---
 # <a name="compiler-error-c3379"></a>Derleyici Hatası C3379

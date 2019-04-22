@@ -11,10 +11,10 @@ helpviewer_keywords:
 - TN033
 ms.assetid: b6f1080b-b66b-4b1e-8fb1-926c5816392c
 ms.openlocfilehash: 4bfc60e20a073dd34945b91dd48ba82cdf4ab9f3
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58767788"
 ---
 # <a name="tn033-dll-version-of-mfc"></a>TN033: MFC'nin DLL sürümü
@@ -42,7 +42,7 @@ DLL desteği MFC 1.0 desteklenen sürümüdür. İçinde açıklanan [Teknik Not
 
 MFC 3.0 (ve üstü) Normal MFC DLL'leri OLE ve veritabanı sınıfları da dahil olmak üzere tüm yeni işlevlerle destekler.
 
-**AFXDLL**: Bu paylaşılan MFC kitaplıklarını sürümü da adlandırılır. MFC 2.0 sürümünde yeni DLL desteği budur. DLL'ler (aşağıda açıklanmıştır) çeşitli MFC kitaplığı olan ve bir istemci uygulaması veya DLL gerekli DLL'lerin dinamik olarak bağlar. Uygulama/DLL sınırı arasında arabirimdir C + +/ MFC sınıfı arabirimleri. İstemci uygulaması, bir MFC uygulaması olmalıdır. Bu, tüm MFC 3.0 işlevselliği destekler (özel durum: UNICODE veritabanı sınıfları için desteklenmiyor).
+**AFXDLL**: Bu paylaşılan MFC kitaplıklarını sürümü da adlandırılır. MFC 2.0 sürümünde yeni DLL desteği budur. DLL'ler (aşağıda açıklanmıştır) çeşitli MFC kitaplığı olan ve bir istemci uygulaması veya DLL gerekli DLL'lerin dinamik olarak bağlar. Uygulama/DLL sınırı arasında arabirimdir C++/MFC sınıfı arabirimleri. İstemci uygulaması, bir MFC uygulaması olmalıdır. Bu, tüm MFC 3.0 işlevselliği destekler (özel durum: UNICODE veritabanı sınıfları için desteklenmiyor).
 
 > [!NOTE]
 > Visual C++ sürüm 4.0 itibariyle bu tür bir DLL "Uzantı olarak DLL." başvuruda bulunulur
@@ -476,7 +476,7 @@ MFCxx.DLL kullanarak uygulama paylaşılan C çalışma zamanı DLL MSVCRTxx.DLL
 
 ### <a name="ordinals-and-class-declspecdllexport-and-dll-naming"></a>Sıra sayıları ve sınıf __declspec(dllexport) ve DLL adlandırma
 
-Biz kullanmayın `class` **__declspec(dllexport)** işlevselliğini C++ derleyicisi. Bunun yerine, sınıf kitaplık kaynakları (MFCxx.DEF ve MFCxxD.DEF) ile bir listesini dışarı aktarma dahildir. Yalnızca bu grup giriş noktaları (İşlevler ve veriler) izin verilir. MFC özel uygulama işlevler veya sınıflar gibi diğer simgeler verilmeyen tüm dışarı sıralı olmayan bir dize adı yerleşik veya yerleşik olmayan adı tablosundaki tarafından gerçekleştirilir.
+Biz kullanmayın `class` **__declspec(dllexport)** işlevselliğini C++ derleyici. Bunun yerine, sınıf kitaplık kaynakları (MFCxx.DEF ve MFCxxD.DEF) ile bir listesini dışarı aktarma dahildir. Yalnızca bu grup giriş noktaları (İşlevler ve veriler) izin verilir. MFC özel uygulama işlevler veya sınıflar gibi diğer simgeler verilmeyen tüm dışarı sıralı olmayan bir dize adı yerleşik veya yerleşik olmayan adı tablosundaki tarafından gerçekleştirilir.
 
 Kullanarak `class` **__declspec(dllexport)** MFC, dışa aktarma mekanizması varsayılan gibi büyük bir DLL söz konusu olduğunda ancak daha küçük DLL'leri oluşturmak için uygun bir alternatif, verimlilik ve kapasite sahip olabilir sınırlar.
 

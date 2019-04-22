@@ -12,10 +12,10 @@ helpviewer_keywords:
 - macros, error reporting
 ms.assetid: 4da9b87f-ec5c-4a32-ab93-637780909b9d
 ms.openlocfilehash: 0d5010f913521848675987b145a1277c7b00decf
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58775055"
 ---
 # <a name="debugging-and-error-reporting-macros"></a>Hata ayıklama ve hata raporlama makroları
@@ -176,7 +176,7 @@ ATLTRACE(
 ### <a name="parameters"></a>Parametreler
 
 *exp*<br/>
-[in] Visual C++ çıkış penceresine veya bu iletiler yakalar herhangi bir uygulama göndermek için değişkenleri ve dize.
+[in] Dize ve görseli göndermek için değişkenleri C++ çıkış penceresine veya herhangi bir uygulama bu iletileri yakalar.
 
 *Kategori*<br/>
 [in] Olay ya da rapora olan yöntem türü. Kategori listesi için açıklamalara bakın.
@@ -207,7 +207,7 @@ ATLTRACE2(
 ### <a name="parameters"></a>Parametreler
 
 *exp*<br/>
-[in] Visual C++ çıkış penceresine veya bu iletiler yakalar herhangi bir uygulama göndermek için dize.
+[in] Görsele göndermek için dize C++ çıkış penceresine veya herhangi bir uygulama bu iletileri yakalar.
 
 *Kategori*<br/>
 [in] Olay ya da rapora olan yöntem türü. Kategori listesi için açıklamalara bakın.

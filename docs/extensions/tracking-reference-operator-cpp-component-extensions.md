@@ -1,5 +1,5 @@
 ---
-title: İzleme başvurusu işleci (C + +/ CLI ve C + +/ CX)
+title: İzleme başvurusu işleci (C++/CLI ve C++/CX)
 ms.date: 10/12/2018
 ms.topic: reference
 f1_keywords:
@@ -9,13 +9,13 @@ helpviewer_keywords:
 - '% tracking reference [C++]'
 ms.assetid: 142a7269-ab69-4b54-a6d7-833bef06228f
 ms.openlocfilehash: c6fef4562545b03e212d0e4e58742a1209a6ab81
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58787755"
 ---
-# <a name="tracking-reference-operator-ccli-and-ccx"></a>İzleme başvurusu işleci (C + +/ CLI ve C + +/ CX)
+# <a name="tracking-reference-operator-ccli-and-ccx"></a>İzleme başvurusu işleci (C++/CLI ve C++/CX)
 
 A *yönelik izleme başvurusuna* (`%`) sıradan bir C++ başvurusu gibi davranır (`&`) dışında bir nesne bir izleme başvurusuna atandığında, nesnenin başvuru sayısının artırılır.
 
@@ -37,7 +37,7 @@ A *yönelik izleme başvurusuna* (`%`) sıradan bir C++ başvurusu gibi davranı
 
 ## <a name="windows-runtime"></a>Windows Çalışma Zamanı
 
-İzleme başvurusu, başvuru sayılan bir % olması dışında standart bir C++ başvurusu gibi davranır. Aşağıdaki kod parçacığı % arasında nasıl dönüştürme yapılacağını gösterir ve ^ türleri:
+İzleme başvurusu bir standart gibi davranır C++ başvuru sayılan bir % olması dışında başvuru. Aşağıdaki kod parçacığı % arasında nasıl dönüştürme yapılacağını gösterir ve ^ türleri:
 
 ```cpp
 Foo^ spFoo = ref new Foo();
@@ -65,7 +65,7 @@ ref class Foo sealed {};
 
 ## <a name="common-language-runtime"></a>Ortak Dil Çalışma Zamanı
 
-C + +/ CLI, kullanabileceğiniz bir tanıtıcı izleme başvurusu atık olarak toplanmış yığındaki CLR türü bir nesneye bağlanırken.
+İçinde C++/CLI, kullanabileceğiniz bir tanıtıcı izleme başvurusu atık olarak toplanmış yığındaki CLR türü bir nesneye bağlanırken.
 
 CLR değeri içinde çöp toplayıcı başvurulan nesneyi her taşıdığında izleme başvurusu değişken otomatik olarak güncelleştirilir.
 
@@ -79,7 +79,7 @@ C + başvuruları izleme hakkında daha fazla bilgi için +/ CLI, bkz:
 
 ### <a name="examples"></a>Örnekler
 
-Aşağıdaki örnek C + +/ CLI bir izleme başvurusu yerel ve yönetilen türlerle kullanma işlemini gösterir.
+Aşağıdaki örnek için C++/CLI bir izleme başvurusu yerel ve yönetilen türlerle kullanma işlemini gösterir.
 
 ```cpp
 // tracking_reference_1.cpp
@@ -117,7 +117,7 @@ int main() {
 }
 ```
 
-Aşağıdaki örnek C + +/ CLI nasıl bir izleme başvurusunun bir diziye bağlanacağını gösterir.
+Aşağıdaki örnek için C++/CLI nasıl bir izleme başvurusunun bir diziye bağlanacağını gösterir.
 
 ```cpp
 // tracking_reference_2.cpp

@@ -9,10 +9,10 @@ helpviewer_keywords:
 - Visual C++, language reference
 ms.assetid: 4be9cacb-c862-4391-894a-3a118c9c93ce
 ms.openlocfilehash: 8da5a4f7113bbb4256e45e7ec3c91a9c6677643c
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58774041"
 ---
 # <a name="c-language-reference"></a>C++ Dil Başvurusu
@@ -81,7 +81,7 @@ Olayları ve olay işleyicileri bildirme.
 Microsoft C++'ya özgü değiştiriciler. Bellek adresleme, çağırma kuralları, **naked** işlevleri, genişletilmiş depolama sınıfı öznitelikleri (**__declspec**), **__w64**.
 
 [Satır İçi Assembler](../assembler/inline/inline-assembler.md)<br/>
-Assembly dili ve c++'ta kullanarak **__asm** engeller.
+Derleme dili kullanma ve C++ içinde **__asm** engeller.
 
 [Derleyici COM Desteği](../cpp/compiler-com-support.md)<br/>
 COM türlerini destekleyen Microsoft'a özgü sınıflar ve genel işlevler için bir başvuru.

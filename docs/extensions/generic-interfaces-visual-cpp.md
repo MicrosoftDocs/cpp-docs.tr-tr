@@ -1,5 +1,5 @@
 ---
-title: Genel arabirimler (C + +/ CLI)
+title: Genel arabirimler (C++/CLI)
 ms.date: 10/12/2018
 ms.topic: reference
 helpviewer_keywords:
@@ -7,15 +7,15 @@ helpviewer_keywords:
 - interfaces, generic [C++}
 ms.assetid: f3da788a-ba83-4db7-9dcf-9b95a8fb9d1a
 ms.openlocfilehash: 035636f2723cd949f5a1852b3d5500a20f5fb493
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59021507"
 ---
-# <a name="generic-interfaces-ccli"></a>Genel arabirimler (C + +/ CLI)
+# <a name="generic-interfaces-ccli"></a>Genel arabirimler (C++/CLI)
 
-Sınıflarında tür parametreleri için kısıtlamalar arabirimleri üzerinde tür parametreleri için geçerli aynıdır (bkz [Genel sınıflar (C + +/ CLI)](generic-classes-cpp-cli.md)).
+Sınıflarında tür parametreleri için kısıtlamalar arabirimleri üzerinde tür parametreleri için geçerli aynıdır (bkz [Genel sınıflar (C++/CLI)](generic-classes-cpp-cli.md)).
 
 İşlev aşırı yüklemesi denetleyen kuralları işlevleri Genel sınıflar veya genel arabirimler için aynıdır.
 
@@ -32,7 +32,7 @@ Arabirimleri hakkında daha fazla bilgi için bkz. [arabirim sınıfı](interfac
 
 ## <a name="remarks"></a>Açıklamalar
 
-*öznitelikler*<br/>
+*Öznitelikleri*<br/>
 (İsteğe bağlı) Ek bildirim temelli bilgiler. Öznitelikler ve öznitelik sınıfları hakkında daha fazla bilgi için bkz. **öznitelikleri**.
 
 *sınıf anahtarı*<br/>
@@ -42,7 +42,7 @@ Arabirimleri hakkında daha fazla bilgi için bkz. [arabirim sınıfı](interfac
 Tanımlayıcıları virgülle ayrılmış listesi.
 
 *tür parametresi kısıtlamaları tümceleri*<br/>
-Belirtilen biçimi alır [genel tür parametrelerindeki kısıtlamalar (C + +/ CLI)](constraints-on-generic-type-parameters-cpp-cli.md)
+Belirtilen biçimi alır [genel tür parametrelerindeki kısıtlamalar (C++/CLI)](constraints-on-generic-type-parameters-cpp-cli.md)
 
 *erişilebilirlik değiştiricileri*<br/>
 (İsteğe bağlı) Erişilebilirlik değiştiricileri (örneğin **genel ve özel**).
@@ -56,7 +56,7 @@ Arabirim adı.
 *Arabirim-gövdesi*<br/>
 Arabirim üyelerinin bildirimleri.
 
-*bildirimciler*<br/>
+*Bildirimciler*<br/>
 (İsteğe bağlı) Bu türe dayanan değişkenlerin bildirimleri.
 
 ## <a name="example"></a>Örnek

@@ -1,19 +1,19 @@
 ---
-title: 'Nasıl yapılır: Kullanma izleme başvurularını C + +/ CLI'
+title: 'Nasıl yapılır: İzleme başvurularını kullanma C++/CLI'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - CLR types, passing by reference
 ms.assetid: d91e471c-34ff-4786-9e0d-c6db0494b946
 ms.openlocfilehash: 8be575bd39bc3b2e6512ba1bcb40d9206731f83a
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58777057"
 ---
-# <a name="how-to-use-tracking-references-in-ccli"></a>Nasıl yapılır: Kullanma izleme başvurularını C + +/ CLI
+# <a name="how-to-use-tracking-references-in-ccli"></a>Nasıl yapılır: İzleme başvurularını kullanma C++/CLI
 
-Bu makalede bir izleme başvurusunun (%) nasıl kullanılacağını gösterir. C + +/ CLI, ortak dil çalışma zamanı (CLR) türleri başvuruya göre geçirilecek.
+Bu makalede bir izleme başvurusunun (%) nasıl kullanılacağını gösterir. içinde C++/CLI ortak dil çalışma zamanı (CLR) türleri başvuruya göre geçirilecek.
 
 ## <a name="to-pass-clr-types-by-reference"></a>CLR Türleri başvuruya göre geçirmek için
 
@@ -70,7 +70,7 @@ int main() {
 zip == 20100
 ```
 
-Sonraki örnek, bir izleme başvurusu adresinin alınmasına döndürür gösterir bir [interior_ptr (C + +/ CLI)](../extensions/interior-ptr-cpp-cli.md), değiştirmek ve bir izleme başvurusu verilere erişmek nasıl gösterilir.
+Sonraki örnek, bir izleme başvurusu adresinin alınmasına döndürür gösterir bir [interior_ptr (C++/CLI)](../extensions/interior-ptr-cpp-cli.md), değiştirmek ve bir izleme başvurusu verilere erişmek nasıl gösterilir.
 
 ```cpp
 // tracking_reference_data.cpp
@@ -343,4 +343,4 @@ T &
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[İzleme başvurusu işleci](../extensions/tracking-reference-operator-cpp-component-extensions.md)
+[İzleme Başvurusu İşleci](../extensions/tracking-reference-operator-cpp-component-extensions.md)

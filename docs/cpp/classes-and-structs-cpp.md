@@ -9,10 +9,10 @@ helpviewer_keywords:
 - user-defined types, C++ classes
 ms.assetid: 516dd496-13fb-4f17-845a-e9ca45437873
 ms.openlocfilehash: c28f83e7853ffb09bba7721ec71ab43c85aedb0c
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58779397"
 ---
 # <a name="classes-and-structs-c"></a>Sınıflar ve Yapılar (C++)
@@ -51,7 +51,7 @@ Aşağıdaki konular bulunur:
 
 Üç sınıf yapısı, sınıf ve union türleridir. Kullanılarak bildirilirler [yapı](../cpp/struct-cpp.md), [sınıfı](../cpp/class-cpp.md), ve [birleşim](../cpp/unions.md) anahtar sözcükleri. Aşağıdaki tabloda, üç sınıf türleri arasındaki farklar gösterilmektedir.
 
-Birleşimler hakkında daha fazla bilgi için bkz. [birleşimler](../cpp/unions.md). Bilgi sınıfları ve yapıları C + +/ CLI ve C + +/ CX, bkz: [sınıfları ve yapıları](../extensions/classes-and-structs-cpp-component-extensions.md).
+Birleşimler hakkında daha fazla bilgi için bkz. [birleşimler](../cpp/unions.md). Sınıflar ve yapılar için hakkında bilgi için C++/CLI ve C++/CX, bkz: [sınıfları ve yapıları](../extensions/classes-and-structs-cpp-component-extensions.md).
 
 ### <a name="access-control-and-constraints-of-structures-classes-and-unions"></a>Erişim denetimi ve kısıtlamalar yapıları, sınıflar ve birleşimler
 

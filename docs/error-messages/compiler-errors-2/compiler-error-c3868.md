@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3868
 ms.assetid: f0e45c2a-2149-4885-a03b-0d230069f03a
 ms.openlocfilehash: 3d759d8e527bf38c7408f3497b27287e030d387e
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58771857"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59776803"
 ---
 # <a name="compiler-error-c3868"></a>Derleyici Hatası C3868
 

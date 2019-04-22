@@ -8,10 +8,10 @@ helpviewer_keywords:
 - custom controls [MFC]
 ms.assetid: 1917a498-f643-457c-b570-9a0af7dbf7bb
 ms.openlocfilehash: c68b60f065e69213b3ab32c887bc7af129a70fef
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58772130"
 ---
 # <a name="tn014-custom-controls"></a>TN014: Özel denetimler

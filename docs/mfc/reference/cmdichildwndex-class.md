@@ -113,10 +113,10 @@ helpviewer_keywords:
 - CMDIChildWndEx [MFC], UpdateTaskbarTabIcon
 ms.assetid: d39fec06-0bd6-4271-917d-35aae3b24d8e
 ms.openlocfilehash: e12cf9f65e6fd6dd7f68edc4a94103baa5a8df62
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58781763"
 ---
 # <a name="cmdichildwndex-class"></a>Cmdıchildwndex sınıfı
@@ -828,7 +828,7 @@ virtual BOOL SetTaskbarThumbnailClipRect(CRect rect);
 
 ### <a name="parameters"></a>Parametreler
 
-*rect*<br/>
+*Rect*<br/>
 Yeni Dikdörtgen kırpımını belirtir. Kırpma dikdörtgenini boş veya null ise, kaldırılır.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -941,7 +941,7 @@ Etkinleştirilmekte olan pencerenin en üst düzey üst penceresine bir işaret�
 *nHitTest*<br/>
 İsabet testi alan kodu belirtir. İsabet sınaması imleç konumunu belirleyen bir testtir.
 
-* iletisi*<br/>
+*message*<br/>
 Fare ileti sayısını belirtir.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -1187,6 +1187,6 @@ virtual void ActivateTopLevelFrame();
 
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
 [Sınıflar](../../mfc/reference/mfc-classes.md)<br/>
-[Cmdıchildwnd sınıfı](../../mfc/reference/cmdichildwnd-class.md)<br/>
-[CMFCWindowsManagerDialog sınıfı](../../mfc/reference/cmfcwindowsmanagerdialog-class.md)<br/>
-[Cmdıframewndex sınıfı](../../mfc/reference/cmdiframewndex-class.md)
+[CMDIChildWnd Sınıfı](../../mfc/reference/cmdichildwnd-class.md)<br/>
+[CMFCWindowsManagerDialog Sınıfı](../../mfc/reference/cmfcwindowsmanagerdialog-class.md)<br/>
+[CMDIFrameWndEx Sınıfı](../../mfc/reference/cmdiframewndex-class.md)

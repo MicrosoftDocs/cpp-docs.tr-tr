@@ -9,17 +9,17 @@ helpviewer_keywords:
 - data access [C++], class libraries for databases
 ms.assetid: 95da6237-bbe2-480a-ae50-3a520051ceff
 ms.openlocfilehash: 142d067b6fbc9e2357ff8fc23fd931a1194477e9
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59041260"
 ---
 # <a name="data-access-in-visual-c"></a>Visual C++'da Veri Erişimi
 
 Neredeyse tüm veritabanı ürünler, SQL ve NoSQL, yerel C++ uygulamaları için bir arabirim sağlar. Sektörde standart büyük SQL veritabanı ürün ve birçok NoSQL ürünleri tarafından desteklenen ODBC arabirimidir. Microsoft olmayan ürünler için daha fazla bilgi için satıcıya başvurun. Üçüncü taraf kitaplıklar çeşitli lisans koşullarıyla birlikte de kullanılabilir.
 
-2011'den beri Microsoft, Microsoft SQL Server veritabanlarını, hem şirket içinde ve bulutta bağlama için yerel uygulamalar için standart olarak ODBC hizalı. Daha fazla bilgi için [veri erişim programlama \(MFC-ATL\)](data-access-programming-mfc-atl.md). C + +/ CLI kitaplıklar, yerel ODBC sürücüleri ya da ADO.NET kullanabilirsiniz. Daha fazla bilgi için bkz. [veri erişim ADO.NET kullanma (C + +/ CLI)](../dotnet/data-access-using-adonet-cpp-cli.md) ve [Visual Studio'da verilere erişme](https://docs.microsoft.com/visualstudio/data-tools/accessing-data-in-visual-studio).
+2011'den beri Microsoft, Microsoft SQL Server veritabanlarını, hem şirket içinde ve bulutta bağlama için yerel uygulamalar için standart olarak ODBC hizalı. Daha fazla bilgi için [veri erişim programlama \(MFC-ATL\)](data-access-programming-mfc-atl.md). C++/ CLI kitaplıklarını yerel ODBC sürücüleri ya da ADO.NET kullanabilirsiniz. Daha fazla bilgi için [kullanarak veri erişim ADO.NET (C++/CLI)](../dotnet/data-access-using-adonet-cpp-cli.md) ve [Visual Studio'da verilere erişme](https://docs.microsoft.com/visualstudio/data-tools/accessing-data-in-visual-studio).
 
 ## <a name="in-this-section"></a>Bu Bölümde
 

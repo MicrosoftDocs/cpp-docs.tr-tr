@@ -11,10 +11,10 @@ helpviewer_keywords:
 - Insert object
 ms.assetid: 73c41eb8-738a-4d02-9212-d3395bb09a3a
 ms.openlocfilehash: fa3d87e2cc17e297c3e6387920c6d527d8ddbe39
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58767658"
 ---
 # <a name="dialog-boxes-in-ole"></a>OLE'deki İletişim Kutuları

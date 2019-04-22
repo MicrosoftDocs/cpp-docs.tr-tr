@@ -15,10 +15,10 @@ helpviewer_keywords:
 - styles [MFC], control bars
 ms.assetid: 8cb895c0-40ea-40ef-90ee-1dd29f34cfd1
 ms.openlocfilehash: 39309408c6d1fc6cbb4223eda22c511865f14498
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58772520"
 ---
 # <a name="tn031-control-bars"></a>TN031: Denetim Çubukları

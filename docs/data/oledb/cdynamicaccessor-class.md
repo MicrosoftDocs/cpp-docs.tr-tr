@@ -128,10 +128,10 @@ helpviewer_keywords:
 - SetValue method
 ms.assetid: 374b13b7-1f09-457d-9e6b-df260ff4d178
 ms.openlocfilehash: 19b8d0c86044e04cc60fd7aab89ec828c46f5fb9
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59040974"
 ---
 # <a name="cdynamicaccessor-class"></a>CDynamicAccessor Sınıfı
@@ -156,7 +156,7 @@ class CDynamicAccessor : public CAccessorBase
 |-|-|
 |[AddBindEntry](#addbindentry)|Çıktı sütunları için varsayılan erişimciyi geçersiz kılma bir bağlama girişi ekler.|
 |[CDynamicAccessor](#cdynamicaccessor)|Oluşturur ve başlatır `CDynamicAccessor` nesne.|
-|[Close](#close)|Tüm sütunları bağlantısını keser, ayrılan belleği serbest bırakır ve serbest [IAccessor](/previous-versions/windows/desktop/ms719672(v=vs.85)) sınıfında arabirim işaretçisi.|
+|[Kapat](#close)|Tüm sütunları bağlantısını keser, ayrılan belleği serbest bırakır ve serbest [IAccessor](/previous-versions/windows/desktop/ms719672(v=vs.85)) sınıfında arabirim işaretçisi.|
 |[GetBlobHandling](#getblobhandling)|Geçerli satırı için değer işleme BLOB alır.|
 |[GetBlobSizeLimit](#getblobsizelimit)|En yüksek BLOB boyutu bayt cinsinden alır.|
 |[GetBookmark](#getbookmark)|Geçerli satır için yer alır.|
@@ -529,7 +529,7 @@ bool GetValue(const WCHAR* pColumnName, ctype* pData) const throw();
 
 #### <a name="parameters"></a>Parametreler
 
-*ctype*<br/>
+*CType*<br/>
 [in] Herhangi bir veri türü dize türleri dışındaki işleme şablonlu bir parametre (`CHAR*`, `WCHAR*`), özel işlem gerektirir. `GetValue` ne burada belirttiğiniz üzerinde göre uygun veri türü kullanır.
 
 *nColumn*<br/>
@@ -655,7 +655,7 @@ bool SetStatus(const WCHAR* pColumnName,
 *nColumn*<br/>
 [in] Sütun numarası. Sütun numaraları 1 ile başlayın. 0 değeri, varsa, yer işareti sütunu, ifade eder.
 
-*durum*<br/>
+*Durumu*<br/>
 [in] Sütun durumu. Bkz: [DBSTATUS](/previous-versions/windows/desktop/ms722617(v=vs.85)) içinde *OLE DB Programcının Başvurusu* daha fazla bilgi için.
 
 *pColumnName*<br/>
@@ -690,13 +690,13 @@ bool SetValue(
 
 #### <a name="parameters"></a>Parametreler
 
-*ctype*<br/>
+*CType*<br/>
 [in] Herhangi bir veri türü dize türleri dışındaki işleme şablonlu bir parametre (`CHAR*`, `WCHAR*`), özel işlem gerektirir. `GetValue` ne burada belirttiğiniz üzerinde göre uygun veri türü kullanır.
 
 *pColumnName*<br/>
 [in] Sütun adı içeren bir karakter dizesine bir işaretçi.
 
-*veri*<br/>
+*Veri*<br/>
 [in] Veri içeren bellek işaretçisi.
 
 *nColumn*<br/>

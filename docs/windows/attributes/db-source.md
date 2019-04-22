@@ -7,10 +7,10 @@ helpviewer_keywords:
 - db_source attribute
 ms.assetid: 0ec8bbf7-ade2-4899-bf4c-8608b92779bc
 ms.openlocfilehash: 884cab78d64c20bef00958f0cc0319281fd69921
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59026337"
 ---
 # <a name="dbsource"></a>db_source
@@ -28,7 +28,7 @@ Bir veri kaynağı için bir bağlantı oluşturur.
 *db_source*<br/>
 Veri kaynağına bağlanmak için kullanılan bağlantı dizesi. Bağlantı dizesinin biçimi için bkz: [bağlantı dizelerini ve veri bağlantıları](/previous-versions/windows/desktop/ms718376(v=vs.85)) içinde SDK Microsoft Data Access Components (MDAC).
 
-*name*<br/>
+*Adı*<br/>
 (İsteğe bağlı) Kullanırken **db_source** bir sınıfta *adı* sahip bir veri kaynağı nesnesinin bir örneğini **db_source** (bkz. örnek 1) uygulanan bir öznitelik. Kullanırken **db_source** satır bir yöntem uygulaması içinde *adı* verilere erişmek için kullanılan bir değişken (yöntemi yerel) (2 örneğe bakın) kaynak. Bu geçirdiğiniz *adı* için *source_name* parametresinin `db_command` veri kaynağı bir komut ile ilişkilendirilecek.
 
 *HRESULT*<br/>
@@ -72,7 +72,7 @@ class CMyCommand {};
 
 |||
 |-|-|
-|**Uygulandığı öğe:**|**sınıf**, **yapı**, üye, yöntem, yerel|
+|**İçin geçerlidir**|**sınıf**, **yapı**, üye, yöntem, yerel|
 |**Tekrarlanabilir**|Hayır|
 |**Gerekli öznitelikleri**|None|
 |**Geçersiz öznitelikler**|Yok.|

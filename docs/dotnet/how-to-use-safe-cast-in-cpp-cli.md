@@ -1,19 +1,19 @@
 ---
-title: 'Nasıl yapılır: Üzerinde safe_cast kullanma C + +/ CLI'
+title: 'Nasıl yapılır: İçinde üzerinde safe_cast kullanma C++/CLI'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - safe_cast keyword [C++], upcasting
 ms.assetid: 0fbc87d8-ecdf-4cd5-81f4-0d8cc18e2aff
 ms.openlocfilehash: 66faadba9530bc7f3c12513277582e405e1b1b34
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58781841"
 ---
-# <a name="how-to-use-safecast-in-ccli"></a>Nasıl yapılır: Üzerinde safe_cast kullanma C + +/ CLI
+# <a name="how-to-use-safecast-in-ccli"></a>Nasıl yapılır: İçinde üzerinde safe_cast kullanma C++/CLI
 
-Bu makale safe_cast kullanma C + +/ CLI uygulamalarında. Bilgileri safe_cast C + +/ CX, bakın [safe_cast](../extensions/safe-cast-cpp-component-extensions.md).
+Bu makalede, üzerinde safe_cast kullanma işlemi gösterilmektedir C++/CLI uygulamalar. Safe_cast içinde hakkında bilgi için C++/CX, bkz: [safe_cast](../extensions/safe-cast-cpp-component-extensions.md).
 
 ## <a name="upcasting"></a>Yukarı çevrim
 

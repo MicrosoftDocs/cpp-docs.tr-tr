@@ -13,10 +13,10 @@ helpviewer_keywords:
 - Visual C++, build options
 ms.assetid: fa6ed4ff-334a-4d99-b5e2-a1f83d2b3008
 ms.openlocfilehash: 6a4048d741cf291d8d6173c1444b6933523c6851
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58775432"
 ---
 # <a name="cc-projects-and-build-systems-in-visual-studio"></a>C/C++ projeleri ve Visual Studio'da derleme sistemleri

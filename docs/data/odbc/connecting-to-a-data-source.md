@@ -11,10 +11,10 @@ helpviewer_keywords:
 - database connections [C++], MFC ODBC classes
 ms.assetid: ef6c8c98-5979-43a8-9fb5-5bb06fc59f36
 ms.openlocfilehash: 1740a34036798dac69ffc8b486e03bf6439845a5
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59024568"
 ---
 # <a name="connecting-to-a-data-source"></a>Veri Kaynağına Bağlanma

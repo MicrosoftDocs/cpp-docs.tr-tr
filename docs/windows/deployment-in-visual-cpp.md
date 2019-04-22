@@ -6,10 +6,10 @@ helpviewer_keywords:
 - application deployment [C++]
 ms.assetid: d4b4ffc0-d2bd-4e4a-84a6-62f1c26f6a09
 ms.openlocfilehash: 8dccf581cff88dc2e8c4a889bed8b47fc140eb7c
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58787681"
 ---
 # <a name="deployment-in-visual-c"></a>Visual C++ üzerinde Dağıtım
@@ -28,7 +28,7 @@ Visual C++ kitaplıklarını merkezi olarak dağıtmak için bu iki kaynak dosya
 
 - *Yeniden dağıtılabilir birleştirme modülleri* (.msm dosyaları), belirli kitaplıkları dağıtmak için kullanabileceğiniz ve uygulamanızın Windows Installer (.msi) dosyasına dahil.
 
-Yeniden dağıtılabilir paket dosyası tüm belirli bir sistem mimarisi için Visual C++ kitaplıklarını yükler. Örneğin, uygulamanız için x64 oluşturulursa, uygulamanızın kullandığı tüm Visual C++ kitaplıklarını yüklemek için vcredist_x64.exe yeniden dağıtılabilir paketi kullanabilirsiniz. Uygulamanızı yüklemeden önce bir önkoşul olarak yeniden dağıtılabilir paketi çalıştırmak için uygulama Yükleyicinizle programlayabilirsiniz.
+Yeniden dağıtılabilir paket dosyası tüm belirli bir sistem mimarisi için Visual C++ kitaplıklarını yükler. Örneğin, uygulamanız için x64 oluşturulursa tüm görsel yüklemek için vcredist_x64.exe yeniden dağıtılabilir paketi kullanabilirsiniz C++ kitaplıkları uygulamanız kullanır. Uygulamanızı yüklemeden önce bir önkoşul olarak yeniden dağıtılabilir paketi çalıştırmak için uygulama Yükleyicinizle programlayabilirsiniz.
 
 Bir Windows Installer uygulama kurulum dosyası içinde belirli bir Visual C++ Kitaplığı için Kurulum mantığının eklenmesi bir birleştirme modülü sağlar. Uygulamanızın gerektirdiği sayıda veya az sayıda birleştirme modüllerini içerebilir. Birleştirme modüllerini dağıtım ikili boyutu en aza indirmek, ihtiyacınız olduğunda kullanın.
 

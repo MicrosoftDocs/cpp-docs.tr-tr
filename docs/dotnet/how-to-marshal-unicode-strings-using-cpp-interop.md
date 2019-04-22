@@ -10,10 +10,10 @@ helpviewer_keywords:
 - Unicode, marshaling strings
 ms.assetid: 96c2141d-6c5d-43ef-a1aa-5785afb9a9aa
 ms.openlocfilehash: 37b56834e000cff686557730252f3d425f642772
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58777681"
 ---
 # <a name="how-to-marshal-unicode-strings-using-c-interop"></a>Nasıl yapılır: C++ Çalışabilirliği kullanarak Unicode dizelerini sıralama
@@ -30,7 +30,7 @@ Bu konu, Unicode dizelerini nasıl olabileceğini gösterir yönetilen bir işle
 
 ## <a name="example"></a>Örnek
 
-(Vcclr.h içinde bildirilen) PtrToStringChars işlevi yönetilmeyen bir işleve bir Unicode dize yönetilen bir işlevden geçirmek için kullanılabilir yönetilen dize depolandığı bellekteki erişim için. Bu adresi bir yerel işleve geçirilir, bellek ile sabitlenmiş önemlidir, çünkü [pin_ptr (C + +/ CLI)](../extensions/pin-ptr-cpp-cli.md) string veri taşınmasını önlemek için atık toplama döngüsü sırasında gerçekleşmesi gereken Yönetilmeyen işlevi yürütür.
+(Vcclr.h içinde bildirilen) PtrToStringChars işlevi yönetilmeyen bir işleve bir Unicode dize yönetilen bir işlevden geçirmek için kullanılabilir yönetilen dize depolandığı bellekteki erişim için. Bu adresi bir yerel işleve geçirilir, bellek ile sabitlenmiş önemlidir, çünkü [pin_ptr (C++/CLI)](../extensions/pin-ptr-cpp-cli.md) string veri taşınmasını önlemek için atık toplama döngüsü sırasında gerçekleşmesi gereken Yönetilmeyen işlevi yürütür.
 
 ```
 // MarshalUnicode1.cpp

@@ -3,10 +3,10 @@ title: Visual C++ ne&#39;s yeni 2003 ile 2015 arasındaki
 ms.date: 11/04/2016
 ms.assetid: c4afde6f-3d75-40bf-986f-be57e3818e26
 ms.openlocfilehash: ae21a81869bd68c5a2641dba47b89d7e10b67567
-ms.sourcegitcommit: b72a10a7b12e722fd91a17406b91b270026f763a
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/03/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58898862"
 ---
 # <a name="visual-c-what39s-new-2003-through-2015"></a>Visual C++ ne&#39;s yeni 2003 ile 2015 arasındaki
@@ -1104,7 +1104,7 @@ Bu farklılıklar, kaynak kodu veya diğer derleme yapıtlarının etkileyebilir
     };
    ```
 
-- `volatile` ***üye değişkenleri önlemek örtük olarak tanımlı oluşturucular ve atama işleçleri** önceki derleyici sürümleri sahip bir sınıfı izin **geçici** varsayılan üye değişkenleri kopyalama/taşıma oluşturucuları ve otomatik olarak oluşturulan varsayılan kopyalama/taşıma atama işleçleri.TBu eski davranışı yanlış ve C++ standartlarına uygun değil.TDerleyici artık otomatik olarak oluşturulan varsayılan uygulamaları bu işleçlerin önleyen Önemsiz oluşturma ve atama işleçleri için geçici üye değişkenlerine sahip bir sınıf olarak kabul eder.WBu tür bir sınıfının bir birleşim (veya bir sınıf içinde anonim birleşim) üyesi olduğunda, kopyalama/taşıma oluşturucuları ve kopyalama/taşıma atama işleçleri union (veya unonymous union içeren sınıfın) örtük olarak silindi olarak tanımlanır.AOluşturmak veya bunları açıkça tanımlamadan UNION (veya anonim birleşim içeren sınıf) kopyalama girişimi hatayla ve derleyici sorunları derleyici hatası C2280 sonuç olarak.
+- `volatile` **üye değişkenleri önlemek örtük olarak tanımlı oluşturucular ve atama işleçleri** önceki derleyici sürümleri sahip bir sınıfı izin **geçici** varsayılan üye değişkenleri kopyalama/taşıma oluşturucuları ve otomatik olarak oluşturulan varsayılan kopyalama/taşıma atama işleçleri. Bu eski davranışı yanlış ve C++ standartlarına uygun değil. Derleyici artık otomatik olarak oluşturulan varsayılan uygulamaları bu işleçlerin önleyen Önemsiz oluşturma ve atama işleçleri için geçici üye değişkenlerine sahip bir sınıf olarak kabul eder. Bu tür bir sınıfının bir birleşim (veya bir sınıf içinde anonim birleşim) üyesi olduğunda, kopyalama/taşıma oluşturucuları ve kopyalama/taşıma atama işleçleri union (veya unonymous union içeren sınıfın) örtük olarak silindi olarak tanımlanır. Oluşturmak veya bunları açıkça tanımlamadan UNION (veya anonim birleşim içeren sınıf) kopyalama girişimi hatayla ve derleyici sorunları derleyici hatası C2280 sonuç olarak.
 
    ```Output
     error C2280: 'B::B(const B &)': attempting to reference a deleted function
@@ -1534,7 +1534,7 @@ Microsoft Visual C++ derleyicisi, şu ISO C ++ 11 dil özelliklerini destekler:
 - Belirtilen başlatıcılar.
 - Bildirimleri kod ile karıştırma.
 - Dize değiştirilebilir değerlere dönüştürme yeni derleyici seçeneğini kullanarak izin verilmeyen `/Zc:strictStrings`. C ++ 98, değişmez dize dönüştürme `char*` (ve geniş dize değişmez değerleri için `wchar_t*`) kullanım dışı bırakıldı. C ++ 11'de, dönüştürme tamamen kaldırıldı. Derleme kesinlikle standarda olsa da, bunun yerine sağladığı `/Zc:strictStrings` böylece dönüştürmeyi denetleyebilirsiniz seçeneği. Varsayılan olarak, seçenek kapalıdır. Bu seçenek hata ayıklama modunda kullanırken, STL'nin derlenmeyeceğine olduğunu unutmayın.
-- rvalue/lvalue başvuru atamaları. Rvalue başvurularıyla C ++ 11 lvalues ve rvalues arasında NET bir şekilde ayırt edebilir. Daha önce Derleyici bunu belirli atama senaryolarında sağlamıyordu. Yeni bir derleyici seçeneği `/Zc:rvalueCast`, C++ dili çalışma Paper(see section 5.4, [expr.cast]/1) ile derleyici uyumlu hale getirmek üzere eklendi. Bu seçenek belirtilmediğinde varsayılan davranış, Visual Studio 2012 olduğu gibi aynıdır.
+- rvalue/lvalue başvuru atamaları. Rvalue başvurularıyla C ++ 11 lvalues ve rvalues arasında NET bir şekilde ayırt edebilir. Daha önce Derleyici bunu belirli atama senaryolarında sağlamıyordu. Yeni bir derleyici seçeneği `/Zc:rvalueCast`, ile derleyici uyumlu hale getirmek için eklenen C++ dil Paper(see section 5.4, [expr.cast]/1) çalışma. Bu seçenek belirtilmediğinde varsayılan davranış, Visual Studio 2012 olduğu gibi aynıdır.
 
 > [!NOTE]
 > Kullanılan varsayılan işlevler için = varsayılan üye tabanlı taşıma oluşturucuları ve taşıma atama işleçleri desteklenmez.
@@ -1586,7 +1586,7 @@ Bu geliştirilmiş ISO C/C++ standartları desteği, C ++ 11 ile uyumlu olması 
 
 - **Daha zengin özel durum bilgileri.**
 
-   C + +/ CX, uygulama ikili arabiriminde (ABI) yakalanması ve yayılmasını zengin özel durum bilgileri sağlayan yeni Windows hata modelini destekler Bu çağrı yığınları ve özel ileti dizelerini içerir.
+   C++/CX uygulama ikili arabiriminde (ABI) yakalanması ve yayılmasını zengin özel durum bilgileri sağlayan yeni Windows hata modelini destekler. Bu çağrı yığınları ve özel ileti dizelerini içerir.
 
 - **Nesne:: ToString() sanal sunulmuştur.**
 
@@ -1648,7 +1648,7 @@ Bu geliştirilmiş ISO C/C++ standartları desteği, C ++ 11 ile uyumlu olması 
 
 **Yeniden boyutlandırılabilir C++ proje özellikleri penceresi**
 
-**Otomatik olarak oluşturulmasını, olay işleyici kodunun C + +/ CX ve C + +/ CLI.**  Yazdığınızda kod bir olay işleyicisi ekleme C + +/ CX veya C + +/ CLI kod dosyasında Düzenleyici temsilci örneğini ve olay işleyici tanımını otomatik olarak oluşturabilirsiniz. Olay işleyici kodu otomatik olarak oluşturulan bir araç ipucu penceresi görünür.
+**Otomatik olarak oluşturulmasını, olay işleyici kodunun C++/CX ve C++/CLI.**  Yazdığınızda bir olay işleyicisi eklemek için kod bir C++/CX veya C++/CLI kod dosyası, düzenleyici temsilci örneğini ve olay işleyici tanımını otomatik olarak oluşturabilirsiniz. Olay işleyici kodu otomatik olarak oluşturulan bir araç ipucu penceresi görünür.
 
 **DPI tanıma geliştirme.** Uygulama bildirim dosyalarının DPI tanıma ayarı artık "her izleyici yüksek DPI tanıma" ayarını destekler.
 
@@ -1682,7 +1682,7 @@ Bu geliştirilmiş ISO C/C++ standartları desteği, C ++ 11 ile uyumlu olması 
 ### <a name="windows-runtime-app-development-support"></a>Windows çalışma zamanı uygulaması geliştirme desteği
 
 - **Yerel XAML tabanlı UI modeli**. Windows çalışma zamanı uygulamaları için yeni yerel XAML tabanlı UI modeli kullanabilirsiniz.
-- **Visual C++ bileşen uzantıları**. Bu uzantılar, Windows çalışma zamanı uygulamalarını gerekli bir parçası olan Windows çalışma zamanı nesnelerinin tüketimini basitleştirin. Daha fazla bilgi için [C++ kullanan Windows Runtime için yol haritası uygulamaları](../windows/universal-windows-apps-cpp.md) ve [Visual C++ Dil Başvurusu (C + +/ CX)](../cppcx/visual-c-language-reference-c-cx.md)
+- **Visual C++ bileşen uzantıları**. Bu uzantılar, Windows çalışma zamanı uygulamalarını gerekli bir parçası olan Windows çalışma zamanı nesnelerinin tüketimini basitleştirin. Daha fazla bilgi için [kullanarak yol haritası için Windows çalışma zamanı uygulamaları C++ ](../windows/universal-windows-apps-cpp.md) ve [Visual C++ dil başvurusu (C++/CX)](../cppcx/visual-c-language-reference-c-cx.md)
 - **DirectX oyunları**. Windows çalışma zamanı uygulamaları için yeni destek DirectX kullanarak etkileyici oyunlar geliştirme yapabilirsiniz.
 - **XAML/DirectX Interop**. Artık hem XAML hem de DirectX kullanan Windows çalışma zamanı uygulamaları verimli bir şekilde çalışmak.
 - **Windows çalışma zamanı DLL bileşeni geliştirme**. Bileşen DLL geliştirme, Genişletilebilir Windows çalışma zamanı ortamı sağlar.
@@ -1704,7 +1704,7 @@ Visual C++ derleyicisi ve kitaplıklarında hedef Windows XP ve Windows Server 2
 
 C++ AMP ayrı ekran kartı GPU'da normalde mevcut olan veri-paralel donanımlardan yararlanarak C++ kod yürütülmesini hızlandırır. C++ AMP programlama modeli çok boyutlu diziler, dizin oluşturma, bellek aktarımı, döşeme ve bir matematiksel işlev kitaplığını içerir. C++ AMP dil uzantılarını ve derleyici kısıtlamaları'ı kullanarak nasıl verilerin CPU'dan GPU'ya ve geri taşındığını kontrol edebilirsiniz.
 
-**Hata Ayıklama.** Hata ayıklama deneyimini GPU hedeflemek için C++ AMP kullanan uygulamalar için yalnızca diğer C++ uygulamaları için hata ayıklama gibi ' dir. Bu, daha önce bahsedilen eklemeleri hata ayıklama yeni paralel içerir.
+**Hata ayıklama.** Hata ayıklama deneyimini GPU hedeflemek için C++ AMP kullanan uygulamalar için yalnızca diğer C++ uygulamaları için hata ayıklama gibi ' dir. Bu, daha önce bahsedilen eklemeleri hata ayıklama yeni paralel içerir.
 
 **Profil oluşturma.** Var. Şimdi C++ AMP ve diğer Direct3D tabanlı programlama modellerine göre GPU etkinliği için profil oluşturma desteği.
 
@@ -1731,7 +1731,7 @@ Ek olarak **Paralel Görevler** penceresi ve **Paralel Yığınlar** penceresi, 
 
 **Uzaktan hata ayıklama için otomatik dağıtım.** Visual C++'da uzaktan hata ayıklama dosyalarının dağıtım basitleştirilmiştir. **Dağıt** proje bağlam menüsü seçeneği otomatik olarak hata ayıklama yapılandırma özelliklerinde belirtilen dosyaları uzak bilgisayara kopyalar. Dosyaları uzak bilgisayara el ile kopyalama artık gerekli değildir.
 
-**C++/CLI IntelliSense.** C + +/ CLI artık tam IntelliSense desteği vardır. IntelliSense özellikleri gibi hızlı bilgi, parametre Yardımı, listesi üyeleri ve otomatik tamamlama için C + çalıştığını +/ CLI. Ayrıca, bu belgede listelenen diğer IntelliSense ve IDE geliştirmeleri de C + için çözüm +/ CLI.
+**C++/ CLI IntelliSense.** C++/ CLI artık tam IntelliSense desteğine sahiptir. IntelliSense özellikleri gibi hızlı bilgi, parametre Yardımı, listesi üyeleri ve otomatik tamamlama için C + çalıştığını +/ CLI. Ayrıca, bu belgede listelenen diğer IntelliSense ve IDE geliştirmeleri de C + için çözüm +/ CLI.
 
 **Daha zengin IntelliSense araç ipuçları.** C++ IntelliSense hızlı bilgi araç ipuçları, daha zengin XML belgeleri yorumları artık stil bilgilerini gösterir. Bir Kitaplığı'ndan bir API kullanıyorsanız — Örneğin, C++ AMP — XML belge açıklamaları olan ve IntelliSense araç ipucu bildirimi daha fazla bilgi gösterir. Ayrıca, kodunuzu XML belge açıklamaları varsa, IntelliSense araç ipuçları daha zengin bilgi gösterir.
 
@@ -1785,7 +1785,7 @@ Kod Kapsamı aracı ikili çalışma zamanında dinamik olarak güncelleştirild
 
 **Rvalue başvuru.** Rvalue başvuru bildirimcisi (& &) bir rvalue başvuru bildirir. Kullandığınız bir rvalue başvurusu sağlar, semantiği ve daha verimli Oluşturucular, işlevleri ve şablon yazmak için kusursuz iletme taşıyın.
 
-**static_assert bildirimi.** A **static_assert** bildirimi derleme zamanında çalışma zamanında test diğer onaylama mekanizmaları aksine bir yazılım onayını sınar. Onaylama başarısız olursa, derleme başarısız olur ve belirtilen hata iletisi verilir.
+**static_assert Declaration.** A **static_assert** bildirimi derleme zamanında çalışma zamanında test diğer onaylama mekanizmaları aksine bir yazılım onayını sınar. Onaylama başarısız olursa, derleme başarısız olur ve belirtilen hata iletisi verilir.
 
 **nullptr ve __nullptr anahtar sözcükler.** Visual C++ derleyicisi kullanmanıza olanak tanıyan **nullptr** yerel kod veya yönetilen kod ile anahtar sözcüğü. **Nullptr** anahtar sözcüğü bir nesne tanıtıcısı, iç işaretçi veya yerel bir işaretçi türü bir nesneye göstermiyor gösterir. Derleyici, Yorumlar **nullptr** olmasını kullandığınızda yönetilen kod `/clr` derleyici seçeneği ve kullandığınızda, yerel kod `/clr` seçeneği.
 Microsoft'a özgü **__nullptr** anahtar sözcüğü sahip aynı anlamı **nullptr**, ancak yalnızca yerel kod için geçerlidir. Yerel C/C++ kod kullanarak derlerseniz `/clr` derleyici seçeneği, derleyicinin belirleyemiyor olmadığını **nullptr** anahtar sözcüğü, bir yerel veya yönetilen bir terim. Amacınız, derleyicinin Temizle hale getirmek için yönetilen terimi belirtmek için nullptr anahtar sözcüğü kullanın ve **__nullptr** yerel terimi belirtmek için.
@@ -2059,9 +2059,9 @@ Derleyici, bu sürümdeki bozucu değişiklikler var.
 - __CLR_VER önceden tanımlanmış makro eklendi.
 - Açıklama (C/C++) pragmayı artık kabul `/MANIFESTDEPENDENCY` bağlayıcı yorum olarak. Açıklama exestr seçeneği kullanım dışı bırakıldı.
 - `embedded_idl` öznitelik ( `#import` yönergesi) artık isteğe bağlı bir parametre alır.
-- `fenv_access` pragması
-- `float_control` pragması
-- `fp_contract` pragması
+- `fenv_access` Pragması
+- `float_control` Pragması
+- `fp_contract` Pragması
 - Genel değişkenler pragması yerleştirebilirsiniz yönetilmeyen hem de yönetilmeyen bölümler, yönetilen, genel değişkenler varsa bildirildikleri sırada başlatılmayacak. Bu olası bir değişiklik olur, örneğin, yönetilen bir genel değişkenlerle bir yönetilmeyen genel değişkeni başlatılır ve oluşturulmuş tam olarak yönetilen bir nesnenin gereklidir.
 - İnit_seg ile belirtilen bölümler artık salt okunur ve okuma/önceki sürümlerinde olduğu gibi yazma değil.
 - inline_depth varsayılan artık 16'dır. Visual C++ .NET 2003'te geçerli bir varsayılan değer 16 ayrıca oldu.
@@ -2069,7 +2069,7 @@ Derleyici, bu sürümdeki bozucu değişiklikler var.
 - _M_CEE _M_CEE_PURE ve _M_CEE_SAFE önceden tanımlanmış makrolar eklendi, önceden tanımlanmış makrolar bakın.
 - _M_ıx86_fp önceden tanımlanmış makro eklendi.
 - _M_X64 önceden tanımlanmış makro eklendi.
-- `make_public` pragması
+- `make_public` Pragması
 - `managed`, `unmanaged` pragma söz dizimi güncelleştirildi (artık `push` ve `pop`)
 - mscorlib.dll artık örtük olarak tarafından başvuruluyor `#using` tüm yönerge `/clr` derlemeleri.
 - _OPENMP önceden tanımlanmış makro eklendi.
@@ -2185,7 +2185,7 @@ Derleyici, bu sürümdeki bozucu değişiklikler var.
 - Her işlev konuda, .NET Framework eşdeğerleri bir bölüm eklenmiştir.
 - Birçok dize işlevleri artık çıkış arabelleği çok küçük olduğunda başarısız yerine dize kesilmesi seçeneğiniz vardır; bkz: **_TRUNCATE**.
 - `_set_se_translator` artık gerektirir `/EHa` derleyici seçeneği.
-- `fpos_t` artık **__int64** altında `/Za` (için C kodu) ve ne zaman __STDC__ (C++ kodunu) el ile ayarlayın. Eskiden olduğu bir **yapı**.
+- `fpos_t` artık **__int64** altında `/Za` (için C kodu) ve ne zaman __STDC__ el ile ayarlamanız (için C++ kod). Eskiden olduğu bir **yapı**.
 - _Crt_dısable_perfcrıt_locks tek iş parçacıklı programlar g/ç performansını artırabilir.
 - POSIX adları yerine ISO C++ uyumlu adları kullanımdan kaldırıldı (örneğin, `_getch` yerine `getch`).
 - Yeni bağlantı seçenekleri .obj dosyaları pure modunda için kullanılabilir
@@ -2235,4 +2235,4 @@ Aşağıdaki bağlayıcı anahtarlarını eklenmiştir:
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Visual C++ taşıma ve yükseltme Kılavuzu](visual-cpp-porting-and-upgrading-guide.md)
+[Visual C++ Taşıma ve Yükseltme Kılavuzu](visual-cpp-porting-and-upgrading-guide.md)

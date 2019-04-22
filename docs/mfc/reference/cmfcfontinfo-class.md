@@ -19,10 +19,10 @@ helpviewer_keywords:
 - CMFCFontInfo [MFC], m_strScript
 ms.assetid: f88329b2-d74e-4921-9441-a3bb6536a049
 ms.openlocfilehash: 930aceb4514195f0e844c35d326b52d9cd8d31fa
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58781334"
 ---
 # <a name="cmfcfontinfo-class"></a>CMFCFontInfo Class
@@ -194,5 +194,5 @@ Daha fazla bilgi için *lpszScript* parametresinin [CMFCFontInfo::CMFCFontInfo](
 
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
 [Sınıflar](../../mfc/reference/mfc-classes.md)<br/>
-[CMFCToolBarFontComboBox sınıfı](../../mfc/reference/cmfctoolbarfontcombobox-class.md)<br/>
-[CMFCToolBarFontSizeComboBox sınıfı](../../mfc/reference/cmfctoolbarfontsizecombobox-class.md)
+[CMFCToolBarFontComboBox Sınıfı](../../mfc/reference/cmfctoolbarfontcombobox-class.md)<br/>
+[CMFCToolBarFontSizeComboBox Sınıfı](../../mfc/reference/cmfctoolbarfontsizecombobox-class.md)

@@ -7,10 +7,10 @@ helpviewer_keywords:
 - decorated names, calling conventions
 ms.assetid: 8327a27b-bb4f-49f2-8218-b851b9d2a463
 ms.openlocfilehash: b916a73e0b8f86755384914fa85ef8a901e4a64c
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59041529"
 ---
 # <a name="name-decoration"></a>Düzenlemeyi Adlandır
@@ -38,4 +38,4 @@ Eşleşmeyen parametrelerine sahip işlev prototipleri sahip bu hataya neden ola
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Bağlayıcı araçları hatası LNK2001](../../error-messages/tool-errors/linker-tools-error-lnk2001.md)
+[Bağlayıcı Araçları Hatası LNK2001](../../error-messages/tool-errors/linker-tools-error-lnk2001.md)

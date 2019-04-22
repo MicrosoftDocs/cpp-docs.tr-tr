@@ -8,15 +8,15 @@ helpviewer_keywords:
 - VMPTRLD instruction
 ms.assetid: 95c9ec5b-1a81-41ba-983e-327bd6a65fcb
 ms.openlocfilehash: e3d552720d454a4f22af368616b3953452c6db0e
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59040429"
 ---
 # <a name="vmxvmptrld"></a>__vmx_vmptrld
 
-**Microsoft'a Özgü**
+**Microsoft'a özgü**
 
 İmleci belirtilen adres geçerli sanal makine denetim yapısı (Windows VMCS) yükler.
 
@@ -58,7 +58,7 @@ Bir 64 bit fiziksel adresi Windows VMCS işaretçisidir.
 
 **Üst bilgi dosyası** \<intrin.h >
 
-**END Microsoft'a Özgü**
+**END Microsoft özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

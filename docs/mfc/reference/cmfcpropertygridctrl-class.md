@@ -151,10 +151,10 @@ helpviewer_keywords:
 - CMFCPropertyGridCtrl [MFC], ValidateItemData
 ms.assetid: 95877cae-2311-4a2a-9031-0c8c3cf0a5f9
 ms.openlocfilehash: 93ace0388981f429ac4a422947fbdaae8cdb8f24
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58781984"
 ---
 # <a name="cmfcpropertygridctrl-class"></a>CMFCPropertyGridCtrl Class
@@ -284,10 +284,10 @@ Aşağıdaki tabloda dört seçim özellik türleri listeler:
 
 |örneği|Açıklama|
 |-----------|-----------------|
-|[CMFCPropertyGridProperty Class](../../mfc/reference/cmfcpropertygridproperty-class.md)|Genel amaçlı özellik vb. dizeler, Boole, tarih değerini belirtmek için kullanılır.|
-|[CMFCPropertyGridColorProperty Class](../../mfc/reference/cmfcpropertygridcolorproperty-class.md)|Bir renk değeri seçmek için kullanılan özellik.|
-|[CMFCPropertyGridFileProperty sınıfı](../../mfc/reference/cmfcpropertygridfileproperty-class.md)|Bir dosya seçmek için kullanılan özellik.|
-|[CMFCPropertyGridFontProperty Class](../../mfc/reference/cmfcpropertygridfontproperty-class.md)|Bir yazı tipi seçmek için kullanılan özellik.|
+|[CMFCPropertyGridProperty Sınıfı](../../mfc/reference/cmfcpropertygridproperty-class.md)|Genel amaçlı özellik vb. dizeler, Boole, tarih değerini belirtmek için kullanılır.|
+|[CMFCPropertyGridColorProperty Sınıfı](../../mfc/reference/cmfcpropertygridcolorproperty-class.md)|Bir renk değeri seçmek için kullanılan özellik.|
+|[CMFCPropertyGridFileProperty Sınıfı](../../mfc/reference/cmfcpropertygridfileproperty-class.md)|Bir dosya seçmek için kullanılan özellik.|
+|[CMFCPropertyGridFontProperty Sınıfı](../../mfc/reference/cmfcpropertygridfontproperty-class.md)|Bir yazı tipi seçmek için kullanılan özellik.|
 
 ## <a name="illustrations"></a>Çizimler
 
@@ -461,7 +461,7 @@ virtual BOOL Create(
 *dwStyle*<br/>
 [in] Bit düzeyinde birleşimi (veya) [pencere stilleri](../../mfc/reference/styles-used-by-mfc.md#window-styles).
 
-*rect*<br/>
+*Rect*<br/>
 [in] İstemci pencerenin konumunu ve boyutunu belirten sınırlayıcı bir dikdörtgen koordinatları *pParentWnd*.
 
 *pParentWnd*<br/>
@@ -1309,7 +1309,7 @@ virtual void OnDrawDescription(
 *pDC*<br/>
 [in] Bir cihaz bağlamı için bir işaretçi.
 
-*rect*<br/>
+*Rect*<br/>
 [in] Açıklama alanını çizmek konumu belirtir bir dikdörtgen.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -1608,7 +1608,7 @@ virtual void UpdateColor(COLORREF color);
 
 ### <a name="parameters"></a>Parametreler
 
-*color*<br/>
+*Renk*<br/>
 [in] Bir RGB renk değeri.
 
 ### <a name="remarks"></a>Açıklamalar

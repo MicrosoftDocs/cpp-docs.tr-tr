@@ -4,10 +4,10 @@ ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: b915afce-553b-44a7-b8dc-0ab601758eb0
 ms.openlocfilehash: 5c1a4e7df424499f400dbd70d675956deef6bc5d
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58787132"
 ---
 # <a name="windows-runtime-c-template-library-wrl"></a>Windows Çalışma Zamanı C++ Şablon Kitaplığı (WRL)
@@ -15,21 +15,21 @@ ms.locfileid: "58787132"
 Windows çalışma zamanı C++ Şablon kitaplığı (WRL) yazıp Windows çalışma zamanı bileşenlerini kullanmanın alt düzey bir yolunu sağlayan bir şablon kitaplığıdır.
 
 > [!NOTE]
-> WRL artık yerini tarafından C + +/ WinRT, standart C ++ 17 dil projeksiyon Windows Runtime API'ları için. C + +/ WinRT, Windows 10 SDK sürüm 1803 ileriye doğru kullanılabilir. C + +/ WinRT tamamen üstbilgi dosyalarında uygulanan ve modern Windows API ile birinci sınıf erişim sağlayacak şekilde tasarlanmıştır.
+> WRL tarafından değiştirilen artık C++/WinRT, standart C ++ 17 dil projeksiyon Windows Runtime API'ları için. C++/ WinRT Windows 10 SDK sürüm 1803 ileriye doğru kullanıma sunulmuştur. C++/ WinRT, üst bilgi dosyalarını tamamen uygulanan ve modern Windows API ile birinci sınıf erişim sağlayacak şekilde tasarlanmıştır.
 >
-> İle C + +/ WinRT, size hem kullanabilir ve Windows çalışma zamanı API'leri kullanarak tüm standartlara uyumlu C ++ 17 derleyici yazar. C + +/ WinRT genellikle daha iyi gerçekleştirir ve Windows çalışma zamanı için diğer bir dil seçeneği değerinden daha küçük ikili dosyaları üretir. Biz C + desteklemeye devam edecektir +/ CX ve WRL, ancak yüksek yeni uygulama C + kullanmanız +/ WinRT. Daha fazla bilgi için [C + +/ WinRT](https://docs.microsoft.com/windows/uwp/cpp-and-winrt-apis/index).
+> İle C++/WinRT, size hem kullanabilir ve Windows çalışma zamanı API'leri kullanarak tüm standartlara uyumlu C ++ 17 derleyici yazar. C++/ WinRT, genellikle daha iyi gerçekleştirir ve Windows çalışma zamanı için diğer bir dil seçeneği değerinden daha küçük ikili dosyaları üretir. Biz C + desteklemeye devam edecektir +/ CX ve WRL, ancak yüksek yeni uygulama C + kullanmanız +/ WinRT. Daha fazla bilgi için [ C++/WinRT](https://docs.microsoft.com/windows/uwp/cpp-and-winrt-apis/index).
 
 ## <a name="benefits"></a>Yararları
 
 Windows çalışma zamanı C++ Şablon Kitaplığı daha kolay uygulamanızı ve Bileşen Nesne Modeli (COM) bileşenlerini kullanmasını sağlar. Bu nesnelerin ömrünü yönetmek için başvuru sayımı ve bir işlemi başarılı veya başarısız olduğunu belirlemek için HRESULT değerleri test etme gibi temizlik teknikleri sunar. Başarıyla Windows çalışma zamanı C++ Şablon kitaplığı kullanmak için bu kuralları ve teknikleri dikkatle izlemeniz gerekir.
 
-C + +/ CX, Windows çalışma zamanı bileşenlerini kullanmak için üst düzey, dile dayanan bir yoludur. Windows çalışma zamanı C++ Şablon Kitaplığı hem C + +/ CX, temizlik görevlerini adınıza otomatik olarak gerçekleştirerek Windows çalışma zamanı için kod yazma basitleştirin.
+C++/CX, Windows çalışma zamanı bileşenlerini kullanmak için üst düzey, dile dayanan bir yoludur. Her iki, bir Windows çalışma zamanı C++ Şablon kitaplığı ve C++/CX temizlik görevlerini adınıza otomatik olarak gerçekleştirerek Windows çalışma zamanı için kod yazımını basitleştirir.
 
-Windows çalışma zamanı C++ Şablon kitaplığı ve C + +/ CX farklı avantajları sunar. Windows çalışma zamanı C++ Şablon kitaplığı C + yerine kullanmak istemenize Bazı nedenlerle +/ CX:
+Windows çalışma zamanı C++ Şablon kitaplığı ve C++/CX farklı avantajları sunar. Windows çalışma zamanı C++ Şablon kitaplığı C + yerine kullanmak istemenize Bazı nedenlerle +/ CX:
 
 - Windows çalışma zamanı C++ Şablon kitaplığı çok az soyutlama Windows çalışma zamanı uygulama ikili arabirimi (ABI üzerinden) ekler, size temel kodu daha iyi kontrol etme becerisinin oluşturabilir veya Windows çalışma zamanı API'leri.
 
-- C + +/ CX COM HRESULT değerlerini özel durumlar olarak temsil eder. COM veya özel durumlar kullanmayan bir kullanan bir kod tabanına devraldıysanız, Windows çalışma zamanı C++ Şablon kitaplığı özel durumlar kullanmak durumunda olmadığınızdan dolayı Windows çalışma zamanı ile çalışmak için daha doğal bir yol olduğunu fark edebilirsiniz.
+- C++/CX COM HRESULT değerlerini özel durumlar olarak temsil eder. COM veya özel durumlar kullanmayan bir kullanan bir kod tabanına devraldıysanız, Windows çalışma zamanı C++ Şablon kitaplığı özel durumlar kullanmak durumunda olmadığınızdan dolayı Windows çalışma zamanı ile çalışmak için daha doğal bir yol olduğunu fark edebilirsiniz.
 
    > [!NOTE]
    > Windows çalışma zamanı C++ Şablon kitaplığı HRESULT değerleri kullanır ve özel durum oluşturmaz. Ayrıca, uygulama kodunuz bir özel durum oluşturduğunda nesnelerin düzgün şekilde yok edileceğini garanti etmeye yardımcı olmak için akıllı işaretçiler ve RAII deseni Windows çalışma zamanı C++ Şablon kitaplığı kullanır. Akıllı işaretçiler ve RAII hakkında daha fazla bilgi için bkz. [akıllı işaretçiler](../../cpp/smart-pointers-modern-cpp.md) ve [nesneleri kendi kaynakları (RAII)](../../cpp/objects-own-resources-raii.md).
@@ -147,5 +147,5 @@ A `WeakRef` nesnesi genelde, varlığı harici bir iş parçacığı ya da uygul
 |-|-|
 |[Kategoriye göre başlıca API'ler](key-wrl-apis-by-category.md)|Birincil Windows çalışma zamanı C++ Şablon kitaplığı türleri, işlevlerini ve makrolarını vurgular.|
 |[Başvuru](wrl-reference.md)|Windows çalışma zamanı C++ Şablon kitaplığı için başvuru bilgileri içerir.|
-|[Hızlı Başvuru (Windows Runtime ve Visual C++)](../../cppcx/quick-reference-c-cx.md)|Kısaca açıklar C + +/ CX özellikleri, Windows çalışma zamanı desteği.|
-|[Visual C++'ta Windows çalışma zamanı bileşenlerini kullanma](/windows/uwp/winrt-components/walkthrough-creating-a-basic-windows-runtime-component-in-cpp-and-calling-it-from-javascript-or-csharp)|Gösterilmektedir kullanmak C + +/ CX temel bir Windows çalışma zamanı bileşeni oluşturma.|
+|[Hızlı Başvuru (Windows Runtime ve Visual C++)](../../cppcx/quick-reference-c-cx.md)|Kısaca açıklar C++Windows çalışma zamanı desteği /CX özellikleri.|
+|[Visual C++'ta Windows çalışma zamanı bileşenlerini kullanma](/windows/uwp/winrt-components/walkthrough-creating-a-basic-windows-runtime-component-in-cpp-and-calling-it-from-javascript-or-csharp)|Nasıl kullanılacağını gösterir C++/CX temel bir Windows çalışma zamanı bileşeni oluşturma.|

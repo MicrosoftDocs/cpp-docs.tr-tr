@@ -1,5 +1,5 @@
 ---
-title: Visual C++ Araçları ve özellikleri Visual Studio sürümleri
+title: Visual Studio Sürümlerinde Visual C++ Araçları ve Özellikleri
 ms.date: 02/28/2018
 helpviewer_keywords:
 - versions [C++]
@@ -7,13 +7,13 @@ helpviewer_keywords:
 - editions [C++]
 ms.assetid: 3d88607b-9cc4-490a-8d4c-31ee7610a26f
 ms.openlocfilehash: 3e5b173741700ed6cccf95b479eb5693a62ed02e
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58787799"
 ---
-# <a name="visual-c-tools-and-features-in-visual-studio-editions"></a>Visual C++ Araçları ve özellikleri Visual Studio sürümleri
+# <a name="visual-c-tools-and-features-in-visual-studio-editions"></a>Visual Studio Sürümlerinde Visual C++ Araçları ve Özellikleri
 
 Aşağıdaki tablolarda, Visual Studio'da bulunan Visual C++ özellikleri gösterilmiştir. Bir hücredeki X, özelliğin kullanılabilir olduğunu gösterir; boş bir hücreye, özelliğin kullanılabilir olmadığını gösterir. Parantez içindeki Notlar bir özelliğin kullanılabileceğini, ancak sınırlı olduğunu gösterir.
 

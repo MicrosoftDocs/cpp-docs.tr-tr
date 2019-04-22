@@ -45,10 +45,10 @@ helpviewer_keywords:
 - CMFCOutlookBarTabCtrl [MFC], SetVisiblePageButtons
 ms.assetid: b1f2b3f7-cc59-49a3-99d8-7ff9b37c044b
 ms.openlocfilehash: c791f3988c7257ed7d188917394e74a6dbeca98b
-ms.sourcegitcommit: 39debf8c525c3951af6913ee5e514617658f8859
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/10/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58776810"
 ---
 # <a name="cmfcoutlookbartabctrl-class"></a>CMFCOutlookBarTabCtrl Class
@@ -219,7 +219,7 @@ virtual BOOL Create(
 
 ### <a name="parameters"></a>Parametreler
 
-*rect*<br/>
+*Rect*<br/>
 [in] Başlangıç boyutu ve konumu, piksel cinsinden belirtir.
 
 *pParentWnd*<br/>
@@ -508,6 +508,6 @@ void SetVisiblePageButtons(int nVisiblePageButtons);
 
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
 [Sınıflar](../../mfc/reference/mfc-classes.md)<br/>
-[CMFCBaseTabCtrl sınıfı](../../mfc/reference/cmfcbasetabctrl-class.md)<br/>
-[CMFCOutlookBar sınıfı](../../mfc/reference/cmfcoutlookbar-class.md)<br/>
-[CMFCOutlookBarPane sınıfı](../../mfc/reference/cmfcoutlookbarpane-class.md)
+[CMFCBaseTabCtrl Sınıfı](../../mfc/reference/cmfcbasetabctrl-class.md)<br/>
+[CMFCOutlookBar Sınıfı](../../mfc/reference/cmfcoutlookbar-class.md)<br/>
+[CMFCOutlookBarPane Sınıfı](../../mfc/reference/cmfcoutlookbarpane-class.md)

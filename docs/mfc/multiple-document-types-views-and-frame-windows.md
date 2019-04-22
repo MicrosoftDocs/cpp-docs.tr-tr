@@ -16,10 +16,10 @@ helpviewer_keywords:
 - splitter windows [MFC], static
 ms.assetid: c6b9e4e0-7c9c-45f1-a804-aeac39c9a128
 ms.openlocfilehash: 154fc67dc35d5e5633c72c27100da9be56c0c68c
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58779683"
 ---
 # <a name="multiple-document-types-views-and-frame-windows"></a>Birden Fazla Belge Türü, Görünüm ve Çerçeve Penceresi
@@ -87,4 +87,4 @@ Daha fazla bilgi için bkz. [CSplitterWnd](../mfc/reference/csplitterwnd-class.m
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Belge/Görünüm Mimarisi](../mfc/document-view-architecture.md)
+[Belge/görünüm mimarisi](../mfc/document-view-architecture.md)

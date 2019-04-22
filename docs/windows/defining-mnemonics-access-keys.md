@@ -23,10 +23,10 @@ helpviewer_keywords:
 - combo boxes [C++], testing values
 ms.assetid: 60a85435-aa30-4c5c-98b6-42fb045b9eb2
 ms.openlocfilehash: c49913597f51ef231073b89d60ad9718b1113f44
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59041490"
 ---
 # <a name="how-to-define-control-access-and-values-c"></a>Nasıl yapılır: Erişimi denetlemek ve değerleri (C++) tanımlayın
@@ -156,5 +156,5 @@ Win32
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [İletişim kutusu denetimleri yönetme](controls-in-dialog-boxes.md)<br/>
-[Nasıl yapılır: Ekleme, düzenleme veya silme denetimleri](adding-editing-or-deleting-controls.md)<br/>
-[Nasıl yapılır: Düzen denetimleri](arrangement-of-controls-on-dialog-boxes.md)<br/>
+[Nasıl yapılır: Denetimleri Ekleme, Düzenleme veya Silme](adding-editing-or-deleting-controls.md)<br/>
+[Nasıl yapılır: Düzen Denetimleri](arrangement-of-controls-on-dialog-boxes.md)<br/>

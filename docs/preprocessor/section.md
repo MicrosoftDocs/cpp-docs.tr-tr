@@ -9,10 +9,10 @@ helpviewer_keywords:
 - section pragma
 ms.assetid: c67215e9-2c4a-4b0f-b691-2414d2e2d96f
 ms.openlocfilehash: 41479d7d8767438d0e59fbe6beb7e435459dcb1b
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59023249"
 ---
 # <a name="section"></a>section
@@ -40,7 +40,7 @@ Bir bölüm tanımlandıktan sonra derleme geri kalanı için geçerli kalır. A
 |**read**|Verileri okuma işlemleri sağlar.|
 |**write**|Veri yazma işlemleri sağlar.|
 |**Yürütme**|Yürütülecek kodu sağlar.|
-|**shared**|Resmi yüklemek tüm işlemler arasında bölümü paylaşır.|
+|**Paylaşılan**|Resmi yüklemek tüm işlemler arasında bölümü paylaşır.|
 |**nopage**|Bölüm alınabilir değil olarak işaretler; Win32 aygıt sürücülerini yönetmek için kullanışlıdır.|
 |**NoCache**|Bölüm önbelleğe alınabilir değil olarak işaretler; Win32 aygıt sürücülerini yönetmek için kullanışlıdır.|
 |**Atma**|Bölüm discardable olarak işaretler; Win32 aygıt sürücülerini yönetmek için kullanışlıdır.|

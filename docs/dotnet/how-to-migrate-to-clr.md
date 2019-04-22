@@ -11,10 +11,10 @@ helpviewer_keywords:
 - /clr compiler option [C++], porting to
 ms.assetid: c9290b8b-436a-4510-8b56-eae51f4a9afc
 ms.openlocfilehash: 6ac470b85a14bfe32c7f3fe47168180687669ec6
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58781321"
 ---
 # <a name="how-to-migrate-to-clr"></a>Nasıl yapılır: / CLR'ye geçiş
@@ -154,7 +154,7 @@ Bazı durumlarda, CLR kapatılabilir yönetilen kodunuzun bitirmeden önce çal�
 
 Uygulama derlerken, bağlantılar ve çalıştırmaları sonra herhangi bir modüle ile derlenmiş .NET özellikleri kullanmaya başlayabilirsiniz **/CLR**. Daha fazla bilgi için [çalışma zamanı platformları için bileşen uzantıları](../extensions/component-extensions-for-runtime-platforms.md).
 
-C++ için Yönetilen Uzantılar'ı kullandıysanız, kodunuzu yeni söz dizimini kullanacak şekilde dönüştürebilirsiniz. C++ için Yönetilen Uzantılar dönüştürme hakkında daha fazla bilgi için bkz [C + +/ CLI geçiş öncüsü](../dotnet/cpp-cli-migration-primer.md).
+C++ için Yönetilen Uzantılar'ı kullandıysanız, kodunuzu yeni söz dizimini kullanacak şekilde dönüştürebilirsiniz. Ayrıntılar için Yönetilen Uzantılar dönüştürme için C++, bkz: [ C++CLI geçiş öncüsü](../dotnet/cpp-cli-migration-primer.md).
 
 Visual c++'ta .NET hakkında bilgi için bkz:
 

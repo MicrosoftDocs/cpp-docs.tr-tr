@@ -11,10 +11,10 @@ helpviewer_keywords:
 - declaring enumerations
 ms.assetid: 081829db-5dca-411e-a53c-bffef315bcb3
 ms.openlocfilehash: caec9ea7ac5482ff23b73676a3fd7b3d25ad293f
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58772571"
 ---
 # <a name="enumerations-c"></a>Numaralandırmalar [C++]
@@ -22,7 +22,7 @@ ms.locfileid: "58772571"
 Bir numaralandırma, numaralandırıcılar olarak bilinen adlandırılmış integral sabitleri kümesinden oluşan kullanıcı tanımlı bir tür ' dir.
 
 > [!NOTE]
->  Bu makale ISO standardı C++ dili kapsamaktadır **enum** türü ve kapsamlı (veya türü kesin belirlenmiş) **sabit listesi sınıfı** C ++ 11'de kullanıma sunulan türü. Hakkında bilgi için **genel sabit listesi sınıfı** veya **özel enum sınıfı** türleri C + +/ CLI ve C + +/ CX, bkz: [sabit listesi sınıfı](../extensions/enum-class-cpp-component-extensions.md).
+>  Bu makale ISO standardı C++ dili kapsamaktadır **enum** türü ve kapsamlı (veya türü kesin belirlenmiş) **sabit listesi sınıfı** C ++ 11'de kullanıma sunulan türü. Hakkında bilgi için **genel sabit listesi sınıfı** veya **özel enum sınıfı** türlerini C++/CLI ve C++/CX, bkz: [sabit listesi sınıfı](../extensions/enum-class-cpp-component-extensions.md).
 
 ## <a name="syntax"></a>Sözdizimi
 

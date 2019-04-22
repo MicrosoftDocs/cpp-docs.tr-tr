@@ -7,17 +7,17 @@ helpviewer_keywords:
 - C3394
 ms.assetid: 4e025d79-27ba-43c8-b0d9-839ecef98126
 ms.openlocfilehash: 826084d375c69ca289a858a29a12ae16874c1fbd
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
-ms.locfileid: "58781464"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59775434"
 ---
 # <a name="compiler-error-c3394"></a>Derleyici Hatası C3394
 
 kısıtlama yan tümcesinde sözdizimi hatası: 'identifier' beklenen bir tür bulunamadı
 
-Kısıtlama ill oluşturulmuş.  Daha fazla bilgi için [genel tür parametrelerindeki kısıtlamalar (C + +/ CLI)](../../extensions/constraints-on-generic-type-parameters-cpp-cli.md).
+Kısıtlama ill oluşturulmuş.  Daha fazla bilgi için [genel tür parametrelerindeki kısıtlamalar (C++/CLI)](../../extensions/constraints-on-generic-type-parameters-cpp-cli.md).
 
 ## <a name="example"></a>Örnek
 

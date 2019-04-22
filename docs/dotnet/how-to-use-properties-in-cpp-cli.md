@@ -1,20 +1,20 @@
 ---
-title: 'Nasıl yapılır: Özellikleri kullanmak C + +/ CLI'
+title: 'Nasıl yapılır: İçindeki özellikleri kullanın C++/CLI'
 ms.date: 07/21/2017
 helpviewer_keywords:
 - simple properties
 - properties [C++], simple
 ms.assetid: f5d82547-e214-4f05-9e1b-ddb6d0dc5e4c
 ms.openlocfilehash: cd0748993b6ac92bbf9f66fa868ac6e814e21bb5
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58781633"
 ---
-# <a name="how-to-use-properties-in-ccli"></a>Nasıl yapılır: Özellikleri kullanmak C + +/ CLI
+# <a name="how-to-use-properties-in-ccli"></a>Nasıl yapılır: İçindeki özellikleri kullanın C++/CLI
 
-Bu makale özelliklerini kullanma C + +/ CLI.
+Bu makale özelliklerini kullanmayı C++/CLI.
 
 ## <a name="basic-properties"></a>Temel özellikleri
 
@@ -88,7 +88,7 @@ Dizinlenmiş bir özelliği, genellikle bir alt simge işleci kullanılarak eri�
 
 Kullanırsanız, varsayılan bir özelliğin dizini, sınıf adına bakarak veri yapısı erişebilir, ancak kullanıcı tanımlı bir dizinlenmiş özellik kullanırsanız, veri yapısı erişmek için özellik adını belirtmek için gerekir.
 
-Yazılmış olduğu bir dizin oluşturucusunu kullanma hakkında bilgi için C#, bkz: [nasıl yapılır: Tüketen bir C# dizin oluşturucu (C + +/ CLI)](../dotnet/how-to-consume-a-csharp-indexer-cpp-cli.md).
+Yazılmış olduğu bir dizin oluşturucusunu kullanma hakkında bilgi için C#, bkz: [nasıl yapılır: Tüketen bir C# dizin oluşturucu (C++/CLI)](../dotnet/how-to-consume-a-csharp-indexer-cpp-cli.md).
 
 Bu kod örneği, varsayılan ve kullanıcı tarafından tanımlanan dizinli özellikleri nasıl kullanacağınızı gösterir:
 
@@ -259,7 +259,7 @@ int main() {
 
 ## <a name="abstract-and-sealed-properties"></a>Soyut ve korumalı Özellikler
 
-Ancak [soyut](../extensions/abstract-cpp-component-extensions.md) ve [korumalı](../extensions/sealed-cpp-component-extensions.md) anahtar sözcükleri belirtilen geçerli olarak, ECMA C + +/ CLI belirtimine, Visual C++ derleyicisi için belirtemezsiniz bunları Önemsiz özellikleri ya da özelliği Önemsiz bir özellik bildirimi.
+Ancak [soyut](../extensions/abstract-cpp-component-extensions.md) ve [korumalı](../extensions/sealed-cpp-component-extensions.md) anahtar sözcükleri ECMA geçerli olarak belirtilen C++görsel /CLI belirtimi C++ derleyici, belirtemezsiniz bunları Önemsiz özellikleri üzerinde ya da Önemsiz bir özelliğin özellik bildirimi.
 
 Korumalı veya soyut bir özelliği bildirme için Önemsiz olmayan bir özellik tanımlayın ve ardından belirtin `abstract` veya `sealed` anahtar sözcüğü, alma ve ayarlama erişimci işlevleri.
 
