@@ -7,10 +7,10 @@ helpviewer_keywords:
 - C3374
 ms.assetid: 41431299-bd20-47d4-a0c8-1334dd79018b
 ms.openlocfilehash: 4b00b1cea8ac462c82c11d9f5b207706af74959c
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59022638"
 ---
 # <a name="compiler-error-c3374"></a>Derleyici Hatası C3374
@@ -44,4 +44,4 @@ int main() {
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Nasıl yapılır: Temsilcileri tanımlama ve kullanma (C + +/ CLI)](../../dotnet/how-to-define-and-use-delegates-cpp-cli.md)
+[Nasıl yapılır: Temsilcileri Tanımlama ve Kullanma (C++/CLI)](../../dotnet/how-to-define-and-use-delegates-cpp-cli.md)

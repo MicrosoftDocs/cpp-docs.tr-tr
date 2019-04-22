@@ -12,10 +12,10 @@ helpviewer_keywords:
 - CCustomSession class in CustomSess.H
 ms.assetid: d37ad471-cf05-49c5-aa47-cd10824d777f
 ms.openlocfilehash: 5cb462aba671e79450e9ee7b8447410252f8edc9
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59023470"
 ---
 # <a name="ccustomsession-customsessh"></a>CCustomSession (CustomSess.H)

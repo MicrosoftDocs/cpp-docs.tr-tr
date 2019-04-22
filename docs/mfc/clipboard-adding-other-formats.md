@@ -10,10 +10,10 @@ helpviewer_keywords:
 - custom Clipboard data formats
 ms.assetid: aea58159-65ed-4385-aeaa-3d9d5281903b
 ms.openlocfilehash: 182abe71ccc9552c113ebb114b4351178e48b096
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58766853"
 ---
 # <a name="clipboard-adding-other-formats"></a>Pano: Diğer biçimleri ekleme

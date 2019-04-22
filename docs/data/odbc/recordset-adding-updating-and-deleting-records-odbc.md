@@ -19,10 +19,10 @@ helpviewer_keywords:
 - records [C++], editing
 ms.assetid: 760c8889-bec4-482b-a8f2-319792a6af98
 ms.openlocfilehash: 28c885119816c1df662cc0b941e02cb3cf747f3d
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59024614"
 ---
 # <a name="recordset-adding-updating-and-deleting-records-odbc"></a>Kayıt kümesi: Ekleme, güncelleştirme ve silme kayıtlarını (ODBC)

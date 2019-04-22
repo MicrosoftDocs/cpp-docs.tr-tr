@@ -11,10 +11,10 @@ helpviewer_keywords:
 - callbacks [C++], marshaling
 ms.assetid: 2313e9eb-5df9-4367-be0f-14b4712d8d2d
 ms.openlocfilehash: f8088bf90162fd2177599c252b0eee6332d61289
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58766943"
 ---
 # <a name="how-to-marshal-callbacks-and-delegates-by-using-c-interop"></a>Nasıl yapılır: C++ birlikte çalışmayı kullanarak geri çağrıları ve temsilcileri sıralama
@@ -27,7 +27,7 @@ Aşağıdaki kod örnekleri kullan [yönetilen, yönetilmeyen](../preprocessor/m
 
 Aşağıdaki örnek, yönetilen bir temsilci tetiklemek için yönetilmeyen bir API'nin gösterilmiştir. Yönetilen bir temsilci oluşturulur ve birlikte çalışma yöntemi <xref:System.Runtime.InteropServices.Marshal.GetFunctionPointerForDelegate%2A>, temel alınan giriş noktası için temsilci almak için kullanılır. Bu adres, daha sonra yönetilen bir işlev uygulanır olgu olanağıyla ile çağrı yönetilmeyen işleve geçirilir.
 
-Olası, ancak gerekli PIN kullanarak temsilci dikkat [pin_ptr (C + +/ CLI)](../extensions/pin-ptr-cpp-cli.md) yeniden bulunan veya çöp toplayıcısı tarafından elden önlemek için. Erken çöp toplama korumadan gereklidir, ancak sabitleme koleksiyon engeller ancak aynı zamanda yeniden konumlandırma engeller gerekli olandan daha fazla koruma sağlar.
+Olası, ancak gerekli PIN kullanarak temsilci dikkat [pin_ptr (C++/CLI)](../extensions/pin-ptr-cpp-cli.md) yeniden bulunan veya çöp toplayıcısı tarafından elden önlemek için. Erken çöp toplama korumadan gereklidir, ancak sabitleme koleksiyon engeller ancak aynı zamanda yeniden konumlandırma engeller gerekli olandan daha fazla koruma sağlar.
 
 Bir temsilci bir çöp toplama tarafından yeniden bulunuyorsa, yerleştirildiyse geri çağırma böylece etkilemez <xref:System.Runtime.InteropServices.GCHandle.Alloc%2A> temsilci temsilcinin izin vererek, ancak elden engelleyen bir başvuru eklemek için kullanılır. GCHandle yerine pin_ptr kullanarak yönetilen yığının parçalanma olasılığını azaltır.
 

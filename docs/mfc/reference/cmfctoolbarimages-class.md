@@ -141,10 +141,10 @@ helpviewer_keywords:
 - CMFCToolBarImages [MFC], m_bDisableTrueColorAlpha
 ms.assetid: d4e50518-9ffc-406f-9996-f79e5cd38155
 ms.openlocfilehash: 210432b8ec193efccc0bf2338089dbccca310726
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58776420"
 ---
 # <a name="cmfctoolbarimages-class"></a>Cmfctoolbarımages sınıfı
@@ -473,7 +473,7 @@ BOOL Draw(
 *x*<br/>
 [in] Görüntü çizilecek olduğu dikdörtgenin sol tarafının X koordinatı.
 
-*y*<br/>
+*Y*<br/>
 [in] Görüntü çizilecek olduğu dikdörtgenin üstünün Y koordinatı.
 
 *iImageIndex*<br/>
@@ -585,7 +585,7 @@ static void FillDitheredRect(
 *pDC*<br/>
 [in] Bir cihaz bağlamı için bir işaretçi.
 
-*rect*<br/>
+*Rect*<br/>
 [in] Doldurmak için bir dikdörtgen koordinatları.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -893,7 +893,7 @@ BOOL Load(
 *hinstRes*<br/>
 [in] Kaynak DLL'si örneği.
 
-*Bekle*<br/>
+*bAdd*<br/>
 [in] Var olan bit eşlem değiştirmek için yüklenen bit eşlem var olan bit eşlem ya da FALSE eklemek için TRUE.
 
 *lpszBmpFileName*<br/>
@@ -1385,6 +1385,6 @@ Yeniden boyutlandırma işlemi başarılı olursa TRUE; Aksi durumda FALSE.
 
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
 [Sınıflar](../../mfc/reference/mfc-classes.md)<br/>
-[CObject sınıfı](../../mfc/reference/cobject-class.md)<br/>
-[CMFCToolBar sınıfı](../../mfc/reference/cmfctoolbar-class.md)<br/>
-[CMFCToolBarButton sınıfı](../../mfc/reference/cmfctoolbarbutton-class.md)
+[CObject Sınıfı](../../mfc/reference/cobject-class.md)<br/>
+[CMFCToolBar Sınıfı](../../mfc/reference/cmfctoolbar-class.md)<br/>
+[CMFCToolBarButton Sınıfı](../../mfc/reference/cmfctoolbarbutton-class.md)

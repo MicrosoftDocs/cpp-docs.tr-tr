@@ -11,10 +11,10 @@ helpviewer_keywords:
 - comment pragma
 ms.assetid: 20f099ff-6303-49b3-9c03-a94b6aa69b85
 ms.openlocfilehash: fb9bfef2ae751529b8424143cde020e78f17ec72
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59025276"
 ---
 # <a name="comment-cc"></a>comment (C/C++)
@@ -67,7 +67,7 @@ Yalnızca aşağıdaki (*açıklama türü*) bağlayıcı tanımlayıcısına ge
 
 - [/ MERGE](../build/reference/merge-combine-sections.md)
 
-- [/SECTION](../build/reference/section-specify-section-attributes.md)
+- [/ SECTION](../build/reference/section-specify-section-attributes.md)
 
 ### <a name="user"></a>kullanıcı
 

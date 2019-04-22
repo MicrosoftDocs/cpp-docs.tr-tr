@@ -7,10 +7,10 @@ helpviewer_keywords:
 - containers, STL/CLR
 ms.assetid: 34ca8031-2041-46b9-aed9-29082d1972ea
 ms.openlocfilehash: dc2e5ce3263c61839a1ba434ab0d2a39e6a9078f
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58774548"
 ---
 # <a name="stlclr-containers"></a>STL/CLR Kapsayıcıları

@@ -32,10 +32,10 @@ helpviewer_keywords:
 - SafeSubtract function
 ms.assetid: fdc208e5-5d8a-41a9-8271-567fd438958d
 ms.openlocfilehash: e31cf35c903a0e7572ce7d47ada21c4603119cb2
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58787224"
 ---
 # <a name="safeint-functions"></a>SafeInt İşlevleri

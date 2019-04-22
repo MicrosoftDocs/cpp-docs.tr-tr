@@ -3,10 +3,10 @@ title: Belge-görünüm örnek listesi
 ms.date: 11/04/2016
 ms.assetid: 6f087ce8-2f46-433c-b674-4c110743b289
 ms.openlocfilehash: ae7104478fb643701c1f659136a33dd3cd69f6e1
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58770713"
 ---
 # <a name="documentview-sample-list"></a>Belge/Görünüm Örnek Listesi

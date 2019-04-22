@@ -9,10 +9,10 @@ helpviewer_keywords:
 - MFC COM, active document containment
 ms.assetid: b8dfa74b-75ce-47df-b75e-fc87b7f7d687
 ms.openlocfilehash: dc13384454c4732d3efbf99def5d05dd4f2d44aa
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58776576"
 ---
 # <a name="active-document-containment"></a>Etkin Belge Kapsaması

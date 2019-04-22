@@ -1,5 +1,5 @@
 ---
-title: Genel türler ve temsilciler (C + +/ CLI)
+title: Genel türler ve temsilciler (C++/CLI)
 ms.date: 10/12/2018
 ms.topic: reference
 helpviewer_keywords:
@@ -7,13 +7,13 @@ helpviewer_keywords:
 - templates, C++
 ms.assetid: 63adec79-b1dc-4a1a-a21d-b8a72a8fce31
 ms.openlocfilehash: 74cfd791e8400b788d38f272eed3d421ca4230e3
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59021504"
 ---
-# <a name="generics-and-templates-ccli"></a>Genel türler ve temsilciler (C + +/ CLI)
+# <a name="generics-and-templates-ccli"></a>Genel türler ve temsilciler (C++/CLI)
 
 Genel türler ve temsilciler parametreli türler için destek sağlayan her iki dil özellikleridir. Ancak, farklıdır ve farklı kullanır sahip. Bu konu, pek çok fark genel bir bakış sağlar.
 

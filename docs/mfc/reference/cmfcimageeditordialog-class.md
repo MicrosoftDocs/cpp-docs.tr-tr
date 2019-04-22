@@ -9,10 +9,10 @@ helpviewer_keywords:
 - CMFCImageEditorDialog [MFC], CMFCImageEditorDialog
 ms.assetid: 6a7d08f3-1ec2-4062-9b79-a0c2776b58d1
 ms.openlocfilehash: 97f16fa00b2e90fd9c43bf9b6792b4eafe7d7b88
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58780451"
 ---
 # <a name="cmfcimageeditordialog-class"></a>CMFCImageEditorDialog sınıfı
@@ -108,4 +108,4 @@ Aşağıdaki örnek, bir nesne oluşturmak gösterilmiştir `CMFCImageEditorDial
 
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
 [Sınıflar](../../mfc/reference/mfc-classes.md)<br/>
-[CMFCToolBar sınıfı](../../mfc/reference/cmfctoolbar-class.md)
+[CMFCToolBar Sınıfı](../../mfc/reference/cmfctoolbar-class.md)

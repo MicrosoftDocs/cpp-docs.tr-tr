@@ -7,10 +7,10 @@ helpviewer_keywords:
 - C3537
 ms.assetid: f537ebd1-4fb0-4e09-a453-4f38db2c6881
 ms.openlocfilehash: 50a06180dabfa192292fae7ba1962b6b7455bb89
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59024030"
 ---
 # <a name="compiler-error-c3537"></a>Derleyici Hatası C3537

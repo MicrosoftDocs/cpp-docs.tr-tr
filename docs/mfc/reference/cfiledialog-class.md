@@ -133,10 +133,10 @@ helpviewer_keywords:
 - CFileDialog [MFC], m_ofn
 ms.assetid: fda4fd3c-08b8-4ce0-8e9d-7bab23f8c6c0
 ms.openlocfilehash: f74d883fa0dcdce025345848caf49069736ee0fa
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58779215"
 ---
 # <a name="cfiledialog-class"></a>CFileDialog sınıfı
@@ -1640,5 +1640,5 @@ Bu örnekte güncelleştirmeleri `CFileDialog` görüntülemeden önce. Güncell
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[CCommonDialog sınıfı](../../mfc/reference/ccommondialog-class.md)<br/>
+[CCommonDialog Sınıfı](../../mfc/reference/ccommondialog-class.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)

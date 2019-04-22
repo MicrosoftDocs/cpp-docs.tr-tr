@@ -10,15 +10,15 @@ helpviewer_keywords:
 - disable intrinsic
 ms.assetid: 52da3df9-815c-4524-9839-6d1742cff5c6
 ms.openlocfilehash: 93db063c6b53f0bec739ba134728b83379a21f53
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59024689"
 ---
 # <a name="disable"></a>_disable
 
-**Microsoft'a Özgü**
+**Microsoft'a özgü**
 
 Kesmeleri devre dışı bırakır.
 
@@ -44,7 +44,7 @@ Bu işlev, yalnızca çekirdek modunda kullanılabilir. Ayrıcalıklı yönerge 
 
 ARM platformlarında, bu yordam yalnızca bir iç öğe olarak kullanılabilir.
 
-**END Microsoft'a Özgü**
+**END Microsoft özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -8,10 +8,10 @@ helpviewer_keywords:
 - MFC [C++], ODBC and
 ms.assetid: b166f82d-6f85-4556-aac8-fb851235d22c
 ms.openlocfilehash: 7692a8128e3dac97c9107e986f6698db76c22c58
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59025996"
 ---
 # <a name="odbc-and-the-database-classes"></a>ODBC ve Veritabanı Sınıfları

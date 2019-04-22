@@ -16,10 +16,10 @@ helpviewer_keywords:
 - data sources [MFC], creating
 ms.assetid: ac216d54-3ca5-4ce7-850d-cd1f6a90d4f1
 ms.openlocfilehash: 68ee5fbfec554df8865ca50c265ca2fa2f226a29
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58775250"
 ---
 # <a name="data-objects-and-data-sources-creation-and-destruction"></a>Veri nesneleri ve veri kaynakları: Oluşturma ve yok etme
@@ -85,5 +85,5 @@ Daha fazla bilgi için [sürükle ve bırak](../mfc/drag-and-drop-ole.md), [Pano
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Veri Nesneleri ve Veri Kaynakları (OLE)](../mfc/data-objects-and-data-sources-ole.md)<br/>
-[COleDataObject sınıfı](../mfc/reference/coledataobject-class.md)<br/>
-[COleDataSource sınıfı](../mfc/reference/coledatasource-class.md)
+[COleDataObject Sınıfı](../mfc/reference/coledataobject-class.md)<br/>
+[COleDataSource Sınıfı](../mfc/reference/coledatasource-class.md)

@@ -9,10 +9,10 @@ helpviewer_keywords:
 - '#line directive'
 ms.assetid: 585c1dc4-5184-4f01-98f4-80c1909744d7
 ms.openlocfilehash: ad0fe1514e89b861bab046652b1768862cc8045b
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59023743"
 ---
 # <a name="line-directive-cc"></a>#line Yönergesi (C/C++)

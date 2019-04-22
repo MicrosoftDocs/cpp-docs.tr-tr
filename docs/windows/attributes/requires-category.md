@@ -7,10 +7,10 @@ helpviewer_keywords:
 - requires_category attribute
 ms.assetid: a645fdc6-1ef5-414d-8c56-5fe2686d4687
 ms.openlocfilehash: ec35a1958d9fbcf77fef7f498c6c0dba3ab17df9
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59022145"
 ---
 # <a name="requirescategory"></a>requires_category
@@ -59,7 +59,7 @@ class CMyClass {};
 
 |||
 |-|-|
-|**Uygulandığı öğe:**|**sınıf**, **yapısı**|
+|**İçin geçerlidir**|**sınıf**, **yapısı**|
 |**Tekrarlanabilir**|Hayır|
 |**Gerekli öznitelikleri**|Bir veya daha fazlasını: `coclass`, `progid`, veya `vi_progid`.|
 |**Geçersiz öznitelikler**|Yok.|

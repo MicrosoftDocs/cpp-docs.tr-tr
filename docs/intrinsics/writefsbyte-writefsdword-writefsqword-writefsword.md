@@ -17,15 +17,15 @@ helpviewer_keywords:
 - writefsword intrinsic
 ms.assetid: 23ac6e8e-bc91-4e90-a4c6-da02993637ad
 ms.openlocfilehash: 6461ef730760298e3159e4ac70dbbdf7bd827092
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59025787"
 ---
 # <a name="writefsbyte-writefsdword-writefsqword-writefsword"></a>__writefsbyte, __writefsdword, __writefsqword, __writefsword
 
-**Microsoft'a Özgü**
+**Microsoft'a özgü**
 
 Bellek FS kesim başlangıcına göre bir uzaklık tarafından belirtilen bir konuma yazma.
 
@@ -52,7 +52,7 @@ void __writefsqword(
 
 #### <a name="parameters"></a>Parametreler
 
-*Uzaklık*<br/>
+*uzaklık*<br/>
 [in] Yazılacak FS başından uzaklığı.
 
 *Veri*<br/>
@@ -73,7 +73,7 @@ void __writefsqword(
 
 Bu yordamlar, yalnızca iç öğe olarak kullanılabilir.
 
-**END Microsoft'a Özgü**
+**END Microsoft özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -1,19 +1,19 @@
 ---
-title: 'Nasıl yapılır: Tanımlama ve kullanma numaralandırmalar C + +/ CLI'
+title: 'Nasıl yapılır: İçinde numaralandırmaları tanımlama ve kullanma C++/CLI'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - enum class, specifying underlying types
 ms.assetid: df8f2b91-b9d2-4fab-9be4-b1d58b8bc570
 ms.openlocfilehash: 9787b7b96f83b2926c65209254c88eb56fe1a8ab
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58774743"
 ---
-# <a name="how-to-define-and-consume-enums-in-ccli"></a>Nasıl yapılır: Tanımlama ve kullanma numaralandırmalar C + +/ CLI
+# <a name="how-to-define-and-consume-enums-in-ccli"></a>Nasıl yapılır: İçinde numaralandırmaları tanımlama ve kullanma C++/CLI
 
-Bu konuda ele alınmıştır numaralandırmalar C + +/ CLI.
+Bu konuda ele alınmıştır sabit listelerinde C++/CLI.
 
 ## <a name="specifying-the-underlying-type-of-an-enum"></a>Bir sabit listesi türünü temel belirtme
 
@@ -77,7 +77,7 @@ a and day2 are the same
 
 ## <a name="operators-and-enums"></a>İşleçler ve numaralandırmalar
 
-Aşağıdaki işleçleri geçerli numaralandırmalar C + +/ CLI:
+Aşağıdaki işleçleri sabit listelerinde üzerinde geçerli C++/CLI:
 
 |İşleç|
 |--------------|
@@ -92,7 +92,7 @@ Aşağıdaki işleçleri geçerli numaralandırmalar C + +/ CLI:
 Derleyici, hiçbir statik veya dinamik bir sabit listesi işlemin sonucu denetimi yapar; bir işlem değil geçerli sabit listesine numaralandırıcılar aralığında bir değer neden olabilir.
 
 > [!NOTE]
->  C ++ 11, C + yönetilen enum sınıfları önemli ölçüde farklı enum sınıf türleri yönetilmeyen kodda tanıtır +/ CLI. Özellikle, C ++ 11 enum sınıfı türü yönetilen enum sınıfı türü olarak aynı işleçler C + desteklemiyor +/ CLI ve C + +/ CLI kaynak kodu sağlamalısınız bir yönetilen Numaralandırıcı erişilebilirlik belirticisini sınıf bildirimleri yönetilmeyen (C++'tan bunları ayırt etmek için 11) enum sınıf bildirimleri. C + enum sınıfları hakkında daha fazla bilgi için +/ CLI, C + +/ CX ve C ++ 11, [sabit listesi sınıfı](../extensions/enum-class-cpp-component-extensions.md).
+>  C ++ 11, C + yönetilen enum sınıfları önemli ölçüde farklı enum sınıf türleri yönetilmeyen kodda tanıtır +/ CLI. Özellikle, C ++ 11 enum sınıfı türü yönetilen enum sınıfı türü olarak aynı işleçleri desteklemiyor C++/CLI, ve C++/CLI kaynak kodu sağlamalısınız bir yönetilen Numaralandırıcı erişilebilirlik belirticisini sınıf bildirimleri bunları ayırt etmek için Yönetilmeyen (C ++ 11) enum sınıf bildirimleri. Enum sınıfları hakkında daha fazla bilgi için C++/CLI, C++/CX ve C ++ 11, see [sabit listesi sınıfı](../extensions/enum-class-cpp-component-extensions.md).
 
 ```
 // mcppv2_enum_5.cpp

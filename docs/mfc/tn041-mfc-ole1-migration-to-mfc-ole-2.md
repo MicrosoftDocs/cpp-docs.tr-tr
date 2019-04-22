@@ -14,10 +14,10 @@ helpviewer_keywords:
 - TN041
 ms.assetid: 67f55552-4b04-4ddf-af0b-4d9eaf5da957
 ms.openlocfilehash: b398a1adbf2f47343eed076f32ade5bb2564cd52
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58767983"
 ---
 # <a name="tn041-mfcole1-migration-to-mfcole-2"></a>TN041: MFC/OLE 2 MFC/OLE1 geçişi
@@ -291,7 +291,7 @@ Bu noktada, OCLIENT işlevsel bir OLE kapsayıcı uygulaması değil. Herhangi b
 
 OLE en ilginç özelliklerinin yerinde etkinleştirme (veya "Görsel düzenleme") biridir. Bu özellik, kapsayıcının kullanıcı arabirimi bölümlerini sağlanan için daha sorunsuz bir düzenleme arabirimi kullanıcıya almak sunucu uygulaması sağlar. Yerinde etkinleştirme OCLIENT uygulamak için bazı özel kaynakların yanı sıra bazı ek kod eklenmesi gerekir. Bu kaynaklar ve kod normalde AppWizard tarafından sağlanan — aslında, kodu buraya çoğunu doğrudan bir uygulamadan yeni AppWizard "Container" desteğiyle ödünç.
 
-Öncelikle, yerinde etkin olan bir öğe olduğunda kullanılacak bir menü kaynağı eklemek gereklidir. IDR_OCLITYPE kaynak kopyalama ve tüm dosya ve pencere pencereleri kaldırarak, bu ek menü kaynağı Visual C++'da oluşturabilirsiniz. İki ayırıcı çubukları grupları ayrımı belirtmek için dosya ve pencere pencereleri arasında eklenir (gibi görünmelidir: Dosya &#124; &#124; pencere). Bu ayırıcılar anlamı ve nasıl sunucusu ve menüler birleştirilir hakkında daha fazla bilgi için bkz [menüler ve kaynaklar: Menü birleştirme](../mfc/menus-and-resources-menu-merging.md).
+Öncelikle, yerinde etkin olan bir öğe olduğunda kullanılacak bir menü kaynağı eklemek gereklidir. Bu ek menü kaynağı görselde oluşturabilirsiniz C++ IDR_OCLITYPE kaynak kopyalayarak ve tüm dosya ve pencere pencereleri kaldırma. İki ayırıcı çubukları grupları ayrımı belirtmek için dosya ve pencere pencereleri arasında eklenir (gibi görünmelidir: Dosya &#124; &#124; pencere). Bu ayırıcılar anlamı ve nasıl sunucusu ve menüler birleştirilir hakkında daha fazla bilgi için bkz [menüler ve kaynaklar: Menü birleştirme](../mfc/menus-and-resources-menu-merging.md).
 
 Oluşturulan bu menüleri oluşturduktan sonra bunları hakkında bilmeniz framework izin gerekir. Bu çağrılarak gerçekleştirilir `CDocTemplate::SetContainerInfo` belge şablonu listesine, Initınstance'a eklemeden önce belge şablonu için. Belge şablonu kaydetmek için yeni kod şöyle görünür:
 
@@ -307,7 +307,7 @@ pTemplate->SetContainerInfo(IDR_OLECLITYPE_INPLACE);
 AddDocTemplate(pTemplate);
 ```
 
-Visual c++'ta oluşturulan özel yerinde kaynak IDR_OLECLITYPE_INPLACE kaynaktır.
+Görselde oluşturulan özel yerinde kaynak IDR_OLECLITYPE_INPLACE kaynaktır C++.
 
 Yerinde etkinleştirme etkinleştirmek için her ikisini birden değiştirmek için gereken bazı şeyler vardır `CView` (CMainView) türetilmiş sınıf yanı sıra `COleClientItem` türetilmiş bir sınıf (CRectItem). Tüm bu geçersiz kılmaları AppWizard tarafından sağlanır ve uygulamalarının çoğu, doğrudan bir varsayılan AppWizard uygulamasından gelir.
 
@@ -353,7 +353,7 @@ BOOL CRectItem::OnChangeItemPosition(const CRect& rectPos)
 
 Bu noktada, yerinde etkin ve etkin olduğunda, öğeyi taşıma ve boyutlandırma ile dağıtılacak öğeyi izin vermek için yeterli kod yoktur, ancak hiçbir kod düzenleme oturumu çıkmak kullanıcı izin verir. Bazı sunucular bu işlevselliği kendilerini escape tuşu işleyerek sağlayacak olsa da, kapsayıcıları öğeyi devre dışı bırakmak için iki yol sağladığını önerilir: (1) öğe dışında ve (2) ESCAPE tuşuna basarak tıklayarak.
 
-Çıkış anahtarı için bir komuta VK_ESCAPE tuşu eşleştiren Visual C++ ile bir Hızlandırıcı ekleyin, ID_CANCEL_EDIT kaynaklarına eklenir. Bu komutun işleyicisi aşağıdaki gibidir:
+ESCAPE tuşu için görsel içeren bir Hızlandırıcı ekleyin C++ , komut VK_ESCAPE tuşu eşler, ID_CANCEL_EDIT kaynaklarına eklenir. Bu komutun işleyicisi aşağıdaki gibidir:
 
 ```cpp
 // The following command handler provides the standard
@@ -527,7 +527,7 @@ BOOL COLEServerApp::InitInstance()
 
 Yukarıdaki kod yeni bir kaynak kimliği için IDR_HIERSVRTYPE_SRVR_EMB anlamına geldiğini göreceksiniz. Başka bir kapsayıcı içinde gömülü bir belge düzenlendiğinde kullanılacak menü kaynağı budur. MFC/OLE1 gömülü bir öğe düzenlemek için belirli menü öğelerinin çalışma sırasında değiştirildi. Bir dosya tabanlı belge düzenleme yerine gömülü bir öğe düzenlenirken bir tamamen farklı menüsü yapısı kullanarak bu iki ayrı modları için farklı kullanıcı arabirimleri sağlamak üzere kolaylaşır. Daha sonra göreceğiniz gibi bir katıştırılmış nesne yerinde düzenlenirken bir tamamen ayrı bir menü kaynağı kullanılır.
 
-Bu kaynak oluşturmak için Visual C++'ta kaynak betiği yüklemeye ve mevcut IDR_HIERSVRTYPE menü kaynağı kopyalayın. Yeni kaynak için (Bu, AppWizard kullandığı aynı adlandırma kuralı) IDR_HIERSVRTYPE_SRVR_EMB yeniden adlandırın. "Dosya Kaydet" için "dosyayı güncelleştir"; Sonraki değişiklik Bu kimliği ıd_fıle_update komutu verin. Ayrıca "Dosyayı farklı kaydet" "Dosya kopyayı Farklı Kaydet için"; değiştirme Bu kimliği ıd_fıle_save_copy_as komutu verin. Framework uygulamasını bu komutların ikisi de sağlar.
+Bu kaynak oluşturmak için kaynak betiği görsele yük C++ ve mevcut IDR_HIERSVRTYPE menü kaynağı kopyalayın. Yeni kaynak için (Bu, AppWizard kullandığı aynı adlandırma kuralı) IDR_HIERSVRTYPE_SRVR_EMB yeniden adlandırın. "Dosya Kaydet" için "dosyayı güncelleştir"; Sonraki değişiklik Bu kimliği ıd_fıle_update komutu verin. Ayrıca "Dosyayı farklı kaydet" "Dosya kopyayı Farklı Kaydet için"; değiştirme Bu kimliği ıd_fıle_save_copy_as komutu verin. Framework uygulamasını bu komutların ikisi de sağlar.
 
 ```Output
 \hiersvr\svritem.h(60) : error C2433: 'OLESTATUS' : 'virtual' not permitted on data declarations
@@ -644,7 +644,7 @@ Bu sunucu uygulaması için "Görsel düzenleme" (veya yerinde etkinleştirme) e
 
 - Bu özel kaynak ve sınıflarını hakkında framework söylemeniz gerekir.
 
-Menü kaynağı oluşturmak kolaydır. Visual C++ çalıştırın, menü kaynağı IDR_HIERSVRTYPE IDR_HIERSVRTYPE_SRVR_IP adlı bir menü kaynağı kopyalayın. Yalnızca düzenleme ve Yardım menüsü açılır sol menü değiştirin. Düzenle ve Yardım menüler arasında menü iki ayırıcılar ekleyin (gibi görünmelidir: Düzen &#124; &#124; yardımcı). Bu ayırıcılar anlamı ve nasıl sunucusu ve menüler birleştirilir hakkında daha fazla bilgi için bkz. [menüler ve kaynaklar: Menü birleştirme](../mfc/menus-and-resources-menu-merging.md).
+Menü kaynağı oluşturmak kolaydır. Visual çalıştırma C++, menü kaynağı IDR_HIERSVRTYPE IDR_HIERSVRTYPE_SRVR_IP adlı bir menü kaynağı kopyalayın. Yalnızca düzenleme ve Yardım menüsü açılır sol menü değiştirin. Düzenle ve Yardım menüler arasında menü iki ayırıcılar ekleyin (gibi görünmelidir: Düzen &#124; &#124; yardımcı). Bu ayırıcılar anlamı ve nasıl sunucusu ve menüler birleştirilir hakkında daha fazla bilgi için bkz. [menüler ve kaynaklar: Menü birleştirme](../mfc/menus-and-resources-menu-merging.md).
 
 Alt araç çubuğu için bit eşlem işaretli bir "Sunucu" seçeneği ile yeni bir AppWizard tarafından oluşturulan uygulama adresinden kopyalayarak kolayca oluşturulabilir. Bu bit eşlem ardından Visual C++'ta içeri aktarılabilir. Bit eşlem, bir kimliği IDR_HIERSVRTYPE_SRVR_IP verdiğinizden emin olun.
 

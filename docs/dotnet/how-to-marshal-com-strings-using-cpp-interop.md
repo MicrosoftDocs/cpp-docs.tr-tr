@@ -10,10 +10,10 @@ helpviewer_keywords:
 - COM [C++], marshaling strings
 ms.assetid: 06590759-bf99-4e34-a3a9-4527ea592cc2
 ms.openlocfilehash: e86cf0b3e57eda9a0f4fa5fe2337d0c42de5669f
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58780879"
 ---
 # <a name="how-to-marshal-com-strings-using-c-interop"></a>Nasıl yapılır: C++ birlikte çalışması kullanarak COM dizelerini sıralama
@@ -28,7 +28,7 @@ Aşağıdaki kod örnekleri kullan [yönetilen, yönetilmeyen](../preprocessor/m
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, bir BSTR (COM programlamada kullanılan bir dize biçimi) nasıl geçirilebilir gösterir. yönetilmeyen bir işleve bir yönetilen öğesinden. Arama Yönetilen işlev <xref:System.Runtime.InteropServices.Marshal.StringToBSTR%2A> .NET System.String içeriğini BSTR gösterimini adresini almak için. This işaretçisi kullanılarak sabitlenmiş [pin_ptr (C + +/ CLI)](../extensions/pin-ptr-cpp-cli.md) yönetilmeyen işlev çalışırken fiziksel adresini bir çöp toplama döngüsü sırasında değiştirilmez emin olmak için. Çöp toplayıcı belleği kadar taşınmasını Yasaklanmış [pin_ptr (C + +/ CLI)](../extensions/pin-ptr-cpp-cli.md) kapsam dışına gider.
+Aşağıdaki örnek, bir BSTR (COM programlamada kullanılan bir dize biçimi) nasıl geçirilebilir gösterir. yönetilmeyen bir işleve bir yönetilen öğesinden. Arama Yönetilen işlev <xref:System.Runtime.InteropServices.Marshal.StringToBSTR%2A> .NET System.String içeriğini BSTR gösterimini adresini almak için. This işaretçisi kullanılarak sabitlenmiş [pin_ptr (C++/CLI)](../extensions/pin-ptr-cpp-cli.md) yönetilmeyen işlev çalışırken fiziksel adresini bir çöp toplama döngüsü sırasında değiştirilmez emin olmak için. Çöp toplayıcı belleği kadar taşınmasını Yasaklanmış [pin_ptr (C++/CLI)](../extensions/pin-ptr-cpp-cli.md) kapsam dışına gider.
 
 ```
 // MarshalBSTR1.cpp

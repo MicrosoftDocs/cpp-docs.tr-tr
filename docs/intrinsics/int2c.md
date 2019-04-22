@@ -10,15 +10,15 @@ helpviewer_keywords:
 - __int2c intrinsic
 ms.assetid: aa20ff30-adef-42bb-8577-8010f3122f8e
 ms.openlocfilehash: 36ef8acd3d71c08a356d4210f16205828f691fa5
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59023496"
 ---
 # <a name="int2c"></a>__int2c
 
-**Microsoft'a Özgü**
+**Microsoft'a özgü**
 
 Oluşturur `int 2c` tetikleyen bir yönerge, `2c` kesme.
 
@@ -36,7 +36,7 @@ void __int2c(void);
 
 **Üst bilgi dosyası** \<intrin.h >
 
-**END Microsoft'a Özgü**
+**END Microsoft özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

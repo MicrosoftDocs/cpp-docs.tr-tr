@@ -7,10 +7,10 @@ helpviewer_keywords:
 - rdx attribute
 ms.assetid: ff8e4312-c1ad-4934-bdaa-86f54409651e
 ms.openlocfilehash: 2790c3de01d21242daee73fc442ad22d88739355
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59023886"
 ---
 # <a name="rdx"></a>rdx
@@ -46,9 +46,9 @@ Bu öznitelik ile birlikte kullanılabilir [coclass'ı](coclass.md), [ProgID](pr
 
 |||
 |-|-|
-|**Uygulandığı öğe:**|**sınıf** veya **yapı** üyesi|
+|**İçin geçerlidir**|**sınıf** veya **yapı** üyesi|
 |**Tekrarlanabilir**|Hayır|
-|**Gerekli öznitelikleri**|Yok.|
+|**Gerekli öznitelikleri**|None|
 |**Geçersiz öznitelikler**|Yok.|
 
 Öznitelik bağlamları hakkında daha fazla bilgi için bkz: [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).

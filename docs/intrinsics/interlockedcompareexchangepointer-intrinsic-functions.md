@@ -25,15 +25,15 @@ helpviewer_keywords:
 - _InterlockedCompareExchangePointer_np intrinsic
 ms.assetid: 97fde59d-2bf9-42aa-a0fe-a5b6befdd44b
 ms.openlocfilehash: 2db18c73f7765454d29e2dfdbd9408f62c51d32a
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59024822"
 ---
 # <a name="interlockedcompareexchangepointer-intrinsic-functions"></a>_Interlockedcompareexchangepointer iç işlevleri
 
-**Microsoft'a Özgü**
+**Microsoft'a özgü**
 
 Depolayan atomik işlem gerçekleştirir `Exchange` içindeki adres `Destination` adres `Comparand` ve `Destination` adresi eşit.
 
@@ -116,9 +116,9 @@ Donanım kilit eleme (HLE) yönergeleri yapı içleri ile destekleyen Intel plat
 
 Bu yordamlar, yalnızca iç öğe olarak kullanılabilir.
 
-**END Microsoft'a Özgü**
+**END Microsoft özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)<br/>
-[anahtar sözcükler](../cpp/keywords-cpp.md)
+[Anahtar Sözcükler](../cpp/keywords-cpp.md)

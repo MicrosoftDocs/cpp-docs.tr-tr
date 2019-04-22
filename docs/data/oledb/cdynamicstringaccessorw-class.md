@@ -7,10 +7,10 @@ helpviewer_keywords:
 - CDynamicStringAccessorW class
 ms.assetid: 9b7fd5cc-3a9b-4b57-b907-f1e35de2c98f
 ms.openlocfilehash: 20ea4a2d795108e00c4b11c3abea6cf7b9953ca7
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59025156"
 ---
 # <a name="cdynamicstringaccessorw-class"></a>CDynamicStringAccessorW Sınıfı

@@ -49,15 +49,15 @@ helpviewer_keywords:
 - _InterlockedCompareExchange64_rel intrinsic
 ms.assetid: c3ad79c0-a523-4930-a3a4-69a65d7d5c81
 ms.openlocfilehash: 6c0fabe7cbada87253960faca8e207bb10dd07bd
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59021475"
 ---
 # <a name="interlockedcompareexchange-intrinsic-functions"></a>_Interlockedcompareexchange iç işlevleri
 
-**Microsoft'a Özgü**
+**Microsoft'a özgü**
 
 Bir birbirine kenetlenmiş karşılaştırma ve değişim gerçekleştirir.
 
@@ -431,12 +431,12 @@ int main(
 <29
 ```
 
-**END Microsoft'a Özgü**
+**END Microsoft özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [_InterlockedCompareExchange128](../intrinsics/interlockedcompareexchange128.md)<br/>
-[_Interlockedcompareexchangepointer iç işlevleri](../intrinsics/interlockedcompareexchangepointer-intrinsic-functions.md)<br/>
+[_InterlockedCompareExchangePointer İç İşlevleri](../intrinsics/interlockedcompareexchangepointer-intrinsic-functions.md)<br/>
 [Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)<br/>
-[anahtar sözcükler](../cpp/keywords-cpp.md)<br/>
+[Anahtar Sözcükler](../cpp/keywords-cpp.md)<br/>
 [x86 Derleyicisi ile Çakışma](../build/x64-software-conventions.md#conflicts-with-the-x86-compiler)

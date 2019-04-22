@@ -7,10 +7,10 @@ helpviewer_keywords:
 - cpp_quote attribute
 ms.assetid: f75327ff-42bd-498b-9177-7ffa25427e1f
 ms.openlocfilehash: 378435ced5a541785b7b32bc9d2f408034d5a2d8
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59024692"
 ---
 # <a name="cppquote"></a>cpp_quote
@@ -46,14 +46,14 @@ Ayrıca **cpp_quote** ve MIDL derlemenin bir parçası bir .h dosyası oluşturu
 
 |||
 |-|-|
-|**Uygulandığı öğe:**|Her yerde|
+|**İçin geçerlidir**|Her yerde|
 |**Tekrarlanabilir**|Hayır|
-|**Gerekli öznitelikleri**|None|
-|**Geçersiz öznitelikler**|None|
+|**Gerekli öznitelikleri**|Yok.|
+|**Geçersiz öznitelikler**|Yok.|
 
 Öznitelik bağlamları hakkında daha fazla bilgi için bkz: [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[IDL Öznitelikleri](idl-attributes.md)<br/>
+[IDL öznitelikleri](idl-attributes.md)<br/>
 [Tek Başına Öznitelikler](stand-alone-attributes.md)

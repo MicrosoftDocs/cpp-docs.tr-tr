@@ -8,10 +8,10 @@ helpviewer_keywords:
 - TN035
 ms.assetid: 1f08ce5e-a912-44cc-ac56-7dd93ad73fb6
 ms.openlocfilehash: 0493dd45caf5eb78da435987a4590442a908a5a3
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58772770"
 ---
 # <a name="tn035-using-multiple-resource-files-and-header-files-with-visual-c"></a>TN035: Visual C++ birden çok kaynak dosya ve üstbilgi dosyası kullanma
@@ -286,7 +286,7 @@ Visual C++ kaynak bağımlılığı önler. Aşağıdaki açıklamayı kaynak il
 
 Geliştirme ortamı bu yorumu, kaynak değişiklikleri yoksayma şeklinde yorumlar. Bu nedenle bağımlı H. CPP dosyalarına derlenmesi gerekli değildir.
 
-Visual C++ her zaman ekler //{{NO_DEPENDENCIES}} yorum satırını ekler bir. In dosyayı kaydederken RC dosyası. Bazı durumlarda, kaynak derleme bağımlılığını atlamak. H bağlantı zamanında algılanamayan çalışma zamanı hatalarına neden olabilir. Örneğin, bir kaynak için bir sembole atanmış sayısal değerleri değiştirmek için Sembol tarayıcısını kullanırsanız, kaynak doğru bulunamayan ve uygulama çalışma zamanı Eğer sırasında yüklenir. Kaynağa başvuran CPP dosyasına derlenir değil. Böyle durumlarda, açıkça herhangi derlemeniz. Bildiğiniz CPP dosyalarına kaynak içindeki sembol değişikliklerinden etkilenir. H veya select **Rebuild All**. Sık kaynakların belirli bir grup için Sembol değerlerini değiştirmek için gereken varsa, büyük olasılıkla, daha kullanışlı ve güvenli bu sembolleri ayrı salt okunur başlık dosyası, ayırmak yukarıdaki bölümde açıklandığı gibi bulursunuz [dahil Ek üstbilgi dosyaları](#_mfcnotes_tn035_including).
+Görsel C++ her zaman //{{NO_DEPENDENCIES ekler}} yorum satırını ekler bir. In dosyayı kaydederken RC dosyası. Bazı durumlarda, kaynak derleme bağımlılığını atlamak. H bağlantı zamanında algılanamayan çalışma zamanı hatalarına neden olabilir. Örneğin, bir kaynak için bir sembole atanmış sayısal değerleri değiştirmek için Sembol tarayıcısını kullanırsanız, kaynak doğru bulunamayan ve uygulama çalışma zamanı Eğer sırasında yüklenir. Kaynağa başvuran CPP dosyasına derlenir değil. Böyle durumlarda, açıkça herhangi derlemeniz. Bildiğiniz CPP dosyalarına kaynak içindeki sembol değişikliklerinden etkilenir. H veya select **Rebuild All**. Sık kaynakların belirli bir grup için Sembol değerlerini değiştirmek için gereken varsa, büyük olasılıkla, daha kullanışlı ve güvenli bu sembolleri ayrı salt okunur başlık dosyası, ayırmak yukarıdaki bölümde açıklandığı gibi bulursunuz [dahil Ek üstbilgi dosyaları](#_mfcnotes_tn035_including).
 
 ## <a name="_mfcnotes_tn035_set_includes"></a> Visual C++ yönetir nasıl bilgi ** dahil edilenleri Ayarla
 
@@ -364,7 +364,7 @@ Derleme zamanı yönergeleri MYAPP sonunda dahil edilir. RC sürümünde aşağ�
 #endif  // not APSTUDIO_INVOKED
 ```
 
-#İfndef apstudıo_ınvoked yönergesi Visual C++'ın derleme zamanı yönergeleri'ni atlamasını söyler.
+#İfndef apstudıo_ınvoked yönergesi Visual bildirir C++ derleme zamanı yönergeleri atlanacak.
 
 Karşılık gelen TEXTINCLUDE kaynağı şudur:
 

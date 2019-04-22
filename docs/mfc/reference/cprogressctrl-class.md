@@ -43,10 +43,10 @@ helpviewer_keywords:
 - CProgressCtrl [MFC], StepIt
 ms.assetid: 222630f4-1598-4026-8198-51649b1192ab
 ms.openlocfilehash: 15241485278f09d16c86fc7274f2fc1d85a7a2f7
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58778955"
 ---
 # <a name="cprogressctrl-class"></a>CProgressCtrl sınıfı
@@ -148,7 +148,7 @@ virtual BOOL Create(
 
 - PBS_SMOOTH görüntüler gradual, ilerleme çubuğu denetimi doldurma kesintisiz. Bu bayrak olmadan, denetim blokları ile doldurur.
 
-*rect*<br/>
+*Rect*<br/>
 İlerleme çubuğu denetiminin boyutunu ve konumunu belirtir. Ya da olabilir bir [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesi veya bir [RECT](/previous-versions/dd162897\(v=vs.85\)) yapısı. Denetimi alt pencere olması gerektiğinden, belirtilen koordinatlara göre istemci alanının olan *pParentWnd*.
 
 *pParentWnd*<br/>
@@ -190,7 +190,7 @@ Oluşturulan denetimin genişletilmiş stilini belirtir. Genişletilmiş Windows
 *dwStyle*<br/>
 İlerleme çubuğu denetiminin stilini belirtir. Herhangi bir birleşimini açıklanan pencere stilleri uygulamak [CreateWindow](/windows/desktop/api/winuser/nf-winuser-createwindowa) Windows SDK.
 
-*rect*<br/>
+*Rect*<br/>
 Bir başvuru bir [RECT](/previous-versions/dd162897\(v=vs.85\)) istemci koordinatları olarak oluşturulması için pencerenin konumunu ve boyutunu açıklayan yapısı *pParentWnd*.
 
 *pParentWnd*<br/>
@@ -605,5 +605,5 @@ Adım artırma belirlediği `CProgressCtrl::SetStep` üye işlevi.
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [MFC örnek CMNCTRL2](../../overview/visual-cpp-samples.md)<br/>
-[CWnd sınıfı](../../mfc/reference/cwnd-class.md)<br/>
+[CWnd Sınıfı](../../mfc/reference/cwnd-class.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)

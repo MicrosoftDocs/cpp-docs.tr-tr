@@ -10,10 +10,10 @@ helpviewer_keywords:
 - Microsoft::WRL::Details::BoolStruct::Member data member
 ms.assetid: 666eae78-e81d-4fb7-a9e4-1ba617d6d4cd
 ms.openlocfilehash: cdec425e317585abbd9730447e2c4fbb19b8250a
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58787688"
 ---
 # <a name="boolstruct-structure"></a>BoolStruct Yapısı

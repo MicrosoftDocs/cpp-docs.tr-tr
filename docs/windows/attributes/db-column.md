@@ -7,10 +7,10 @@ helpviewer_keywords:
 - db_column attribute
 ms.assetid: 58da4afc-f69c-4ae6-af9a-3f9515f56081
 ms.openlocfilehash: e0e2c873452884275e97663ae2d9d6df2f790ffd
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59024848"
 ---
 # <a name="dbcolumn"></a>db_column
@@ -36,16 +36,16 @@ Sıralı sütun sayısı (`DBCOLUMNINFO` sıralı) veya satır kümesi veri bağ
 *DbType*<br/>
 (İsteğe bağlı) Bir OLE DB [türü göstergesi](/previous-versions/windows/desktop/ms711251(v=vs.85)) sütun girişi.
 
-*duyarlık*<br/>
+*Duyarlık*<br/>
 (İsteğe bağlı) Sütun girişini kullanılacak hassasiyet. Ayrıntılar için açıklamasını görmek `bPrecision` öğesinin [IAccessor::CreateAccessor'ı yapısı](/previous-versions/windows/desktop/ms716845(v=vs.85))
 
-*ölçek*<br/>
+*Ölçek*<br/>
 (İsteğe bağlı) Sütun girişi için kullanılacak ölçek. Ayrıntılar için açıklamasını görmek `bScale` öğesinin [IAccessor::CreateAccessor'ı yapısı](/previous-versions/windows/desktop/ms716845(v=vs.85))
 
-*durum*<br/>
+*Durumu*<br/>
 (İsteğe bağlı) Bu sütun durumunu tutmak için kullanılan bir üye değişkeni. Durum sütun değeri veri değeri NULL gibi diğer bazı değeri olup olmadığını gösterir. Olası değerler için bkz. [durumu](/previous-versions/windows/desktop/ms722617(v=vs.85)) içinde *OLE DB Programcının Başvurusu*.
 
-*length*<br/>
+*Uzunluğu*<br/>
 (İsteğe bağlı) Sütun boyutunu bayt cinsinden tutmak için kullanılan bir üye değişkeni.
 
 ## <a name="remarks"></a>Açıklamalar
@@ -104,10 +104,10 @@ class CProducts {
 
 |||
 |-|-|
-|**Uygulandığı öğe:**|**sınıf**, **yapı**, üye, yöntemi|
+|**İçin geçerlidir**|**sınıf**, **yapı**, üye, yöntemi|
 |**Tekrarlanabilir**|Hayır|
 |**Gerekli öznitelikleri**|Yok.|
-|**Geçersiz öznitelikler**|None|
+|**Geçersiz öznitelikler**|Yok.|
 
 Öznitelik bağlamları hakkında daha fazla bilgi için bkz: [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 

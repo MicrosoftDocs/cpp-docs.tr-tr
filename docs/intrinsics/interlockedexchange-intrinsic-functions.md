@@ -45,15 +45,15 @@ helpviewer_keywords:
 - _InterlockedExchange8_nf
 ms.assetid: be2f232a-6301-462a-a92b-fcdeb8b0f209
 ms.openlocfilehash: 3945b8a7516962531050e999e96bdef31b179bbb
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59021501"
 ---
 # <a name="interlockedexchange-intrinsic-functions"></a>_Interlockedexchange iç işlevleri
 
-**Microsoft'a Özgü**
+**Microsoft'a özgü**
 
 Belirtilen değere ayarlanacak atomik bir yönerge oluşturur.
 
@@ -180,10 +180,10 @@ Bu yordamlar, yalnızca iç öğe olarak kullanılabilir.
 
 Nasıl kullanılacağını gösteren bir örnek `_InterlockedExchange`, bkz: [_ınterlockeddecrement](../intrinsics/interlockeddecrement-intrinsic-functions.md).
 
-**END Microsoft'a Özgü**
+**END Microsoft özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)<br/>
-[anahtar sözcükler](../cpp/keywords-cpp.md)<br/>
+[Anahtar Sözcükler](../cpp/keywords-cpp.md)<br/>
 [x86 Derleyicisi ile Çakışma](../build/x64-software-conventions.md#conflicts-with-the-x86-compiler)

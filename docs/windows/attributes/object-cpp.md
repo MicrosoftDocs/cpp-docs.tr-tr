@@ -7,10 +7,10 @@ helpviewer_keywords:
 - object attribute
 ms.assetid: f2d3c231-630d-4b4c-bd15-b1c30df362dd
 ms.openlocfilehash: c0f544e84e5110761dfd01e25abef4352f055ff5
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59022365"
 ---
 # <a name="object-c"></a>nesne (C++)
@@ -39,18 +39,18 @@ Bkz: [nonbrowsable](nonbrowsable.md) nasıl kullanılacağına ilişkin bir örn
 
 |||
 |-|-|
-|**Uygulandığı öğe:**|**arabirim**|
+|**İçin geçerlidir**|**interface**|
 |**Tekrarlanabilir**|Hayır|
 |**Gerekli öznitelikleri**|None|
-|**Geçersiz öznitelikler**|None|
+|**Geçersiz öznitelikler**|Yok.|
 
 Öznitelik bağlamları hakkında daha fazla bilgi için bkz: [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[IDL Öznitelikleri](idl-attributes.md)<br/>
+[IDL öznitelikleri](idl-attributes.md)<br/>
 [Arabirim Öznitelikleri](interface-attributes.md)<br/>
-[çift](dual.md)<br/>
+[dual](dual.md)<br/>
 [dispinterface](dispinterface.md)<br/>
-[özel](custom-cpp.md)<br/>
+[custom](custom-cpp.md)<br/>
 [__interface](../../cpp/interface.md)

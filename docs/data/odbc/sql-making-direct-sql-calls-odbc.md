@@ -9,10 +9,10 @@ helpviewer_keywords:
 - direct SQL calls from ODBC
 ms.assetid: 091988d2-f5a5-4c2d-aa09-8779a9fb9607
 ms.openlocfilehash: fd528e7abb713e4b3eb2bd5388a29958a1bb006c
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59024987"
 ---
 # <a name="sql-making-direct-sql-calls-odbc"></a>SQL: Doğrudan SQL çağrıları yapma (ODBC)

@@ -8,10 +8,10 @@ helpviewer_keywords:
 - documents [C++], MFC
 ms.assetid: 349b142d-1c5a-4b99-9de4-241e41d3d2f1
 ms.openlocfilehash: 030ac53b924e4746bcd79e712313ce2f30b4198c
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59023991"
 ---
 # <a name="working-with-documents-and-views"></a>Belgeler ve Görünümler ile Çalışma

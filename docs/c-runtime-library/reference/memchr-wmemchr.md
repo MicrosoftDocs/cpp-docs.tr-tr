@@ -25,10 +25,10 @@ helpviewer_keywords:
 - wmemchr function
 ms.assetid: 5a348581-28f1-4256-8434-687245f7fc9f
 ms.openlocfilehash: 00a1f0d12047cc388b56074a657ffd739e986827
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58866922"
 ---
 # <a name="memchr-wmemchr"></a>memchr, wmemchr
@@ -78,7 +78,7 @@ Arabellek için işaretçi.
 *c*<br/>
 Aranacak karakter.
 
-*count*<br/>
+*Sayısı*<br/>
 Denetlenecek karakter sayısı.
 
 ## <a name="return-value"></a>Dönüş Değeri

@@ -5,10 +5,10 @@ helpviewer_keywords:
 - MSBuild overview
 ms.assetid: dd258f6f-ab51-48d9-b274-f7ba911d05ca
 ms.openlocfilehash: 6c8e891f6bf6ed6b3bb3d1c84dbc13b64ab7b868
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59021910"
 ---
 # <a name="msbuild-internals-for-c-projects"></a>C++ projeleri için MSBuild iç işlevleri
@@ -95,7 +95,7 @@ Aşağıdaki tabloda, kullanıcıya yönelik bazı yararlı hedefler listeler.
 [CL Görevi](/visualstudio/msbuild/cl-task)<br/>
 [CPPClean Görevi](/visualstudio/msbuild/cppclean-task)<br/>
 [LIB Görevi](/visualstudio/msbuild/lib-task)<br/>
-[Bağlantı Görevi](/visualstudio/msbuild/link-task)<br/>
+[Link Görevi](/visualstudio/msbuild/link-task)<br/>
 [MIDL Görevi](/visualstudio/msbuild/midl-task)<br/>
 [MT Görevi](/visualstudio/msbuild/mt-task)<br/>
 [RC Görevi](/visualstudio/msbuild/rc-task)<br/>

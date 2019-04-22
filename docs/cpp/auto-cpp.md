@@ -8,10 +8,10 @@ helpviewer_keywords:
 - auto keyword [C++]
 ms.assetid: e9d495d7-601c-4547-b897-998389a311f4
 ms.openlocfilehash: 3d77a17d490f8d7680f095367c309ce0e4f366b7
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58776342"
 ---
 # <a name="auto-c"></a>Otomatik (C++)
@@ -52,7 +52,7 @@ Kullanılacak **otomatik** anahtar sözcüğü, bir tür yerine bir değişken b
 
 Atama (eşittir işareti sözdizimi) doğrudan başlatmadaki (işlev stili sözdizimi) başlatma ifadesi olabilir bir [new işleci](new-operator-cpp.md) ifadesi veya başlatma ifadesi olabilir  *için aralığı-bildirimi* parametresinde bir [aralık tabanlı for deyimi (C++)](../cpp/range-based-for-statement-cpp.md) deyimi. Daha fazla bilgi için [başlatıcılar](../cpp/initializers.md) ve daha sonra bu belgedeki kod örnekleri.
 
-**Otomatik** anahtar sözcüğü bir tür için bir yer tutucudur, ancak kendisi değil bir tür. Bu nedenle, **otomatik** anahtar sözcüğü kullanılamaz atamaları veya işleçler gibi [sizeof](../cpp/sizeof-operator.md) ve (C + +/ CLI) [TypeID](../extensions/typeid-cpp-component-extensions.md).
+**Otomatik** anahtar sözcüğü bir tür için bir yer tutucudur, ancak kendisi değil bir tür. Bu nedenle, **otomatik** anahtar sözcüğü kullanılamaz atamaları veya işleçler gibi [sizeof](../cpp/sizeof-operator.md) ve (için C++/CLI) [TypeID](../extensions/typeid-cpp-component-extensions.md).
 
 ## <a name="usefulness"></a>Fayda
 

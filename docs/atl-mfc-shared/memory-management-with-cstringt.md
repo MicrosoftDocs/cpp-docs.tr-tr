@@ -15,10 +15,10 @@ helpviewer_keywords:
 - CStringT class, memory management
 ms.assetid: 88b8342d-19b5-48c4-9cf6-e4c44cece21e
 ms.openlocfilehash: 8f83b088becf97ca3d8779a537e42369b4a8c832
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58768386"
 ---
 # <a name="memory-management-with-cstringt"></a>CStringT ile bellek yönetimi

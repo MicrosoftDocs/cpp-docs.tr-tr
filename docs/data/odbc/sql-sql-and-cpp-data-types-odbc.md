@@ -7,10 +7,10 @@ helpviewer_keywords:
 - SQL [C++], vs. C++ data types
 ms.assetid: 066e0070-d4da-435c-9c4b-f7cab3352c86
 ms.openlocfilehash: 3efa36342b7d16968113acd818a7a1386e4cefcc
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59024354"
 ---
 # <a name="sql-sql-and-c-data-types-odbc"></a>SQL: SQL ve C++ veri türleri (ODBC)
@@ -25,22 +25,22 @@ Aşağıdaki tabloda, ANSI SQL veri türleri için C++ veri türleri eşler. Bu 
 |ANSI SQL veri türü|C++ veri türü|
 |------------------------|---------------------|
 |**CHAR**|`CString`|
-|**DECIMAL**|`CString` 1.|
+|**ONDALIK**|`CString` 1|
 |**TAMSAYI**|**int**|
 |**GERÇEK**|**float**|
-|**INTEGER**|**long**|
-|**KAYAN NOKTA**|**çift**|
-|**ÇİFT**|**çift**|
-|**NUMERIC**|`CString` 1.|
+|**TAMSAYI**|**long**|
+|**KAYAN NOKTA**|**double**|
+|**ÇİFT**|**double**|
+|**SAYISAL**|`CString` 1|
 |**VARCHAR**|`CString`|
 |**LONGVARCHAR**|`CLongBinary`, `CString` 2|
 |**BIT**|**BOOL**|
-|**MİNİ TAMSAYI**|**BYTE**|
-|**BIGINT**|`CString` 1.|
+|**MİNİ TAMSAYI**|**BAYT**|
+|**BIGINT**|`CString` 1|
 |**İKİLİ**|`CByteArray`|
 |**VARBINARY**|`CByteArray`|
 |**LONGVARBINARY**|`CLongBinary`, `CByteArray` 3|
-|**DATE**|`CTime`, `CString`|
+|**TARİH**|`CTime`, `CString`|
 |**SAAT**|`CTime`, `CString`|
 |**ZAMAN DAMGASI**|`CTime`, `CString`|
 

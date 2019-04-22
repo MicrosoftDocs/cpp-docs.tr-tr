@@ -14,10 +14,10 @@ helpviewer_keywords:
 - Dialog Editor [C++], custom controls
 ms.assetid: e216c4f9-2fd4-429d-889a-8ebce7bad177
 ms.openlocfilehash: 563cf73299c00413889ada2520b1bf4fcd86f2be
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59023704"
 ---
 # <a name="dialog-box-controls-c"></a>İletişim kutusu denetimleri (C++)

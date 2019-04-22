@@ -7,10 +7,10 @@ helpviewer_keywords:
 - helpstring attribute [C++]
 ms.assetid: 0401e905-a63e-4fad-98d0-d1efea111966
 ms.openlocfilehash: 623b2c7fb4ce7c3e5de87d21f012d008720fdee2
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59022211"
 ---
 # <a name="helpstring"></a>helpstring
@@ -25,7 +25,7 @@ Uygulandığı öğe açıklamak için kullanılan bir karakter dizesi belirtir.
 
 ### <a name="parameters"></a>Parametreler
 
-*dize*<br/>
+*string*<br/>
 Yardım dizesi metni.
 
 ## <a name="remarks"></a>Açıklamalar
@@ -42,7 +42,7 @@ Yardım dizesi metni.
 
 |||
 |-|-|
-|**Uygulandığı öğe:**|**arabirimi**, **typedef**, **sınıfı**, yöntem, özellik|
+|**İçin geçerlidir**|**arabirimi**, **typedef**, **sınıfı**, yöntem, özellik|
 |**Tekrarlanabilir**|Hayır|
 |**Gerekli öznitelikleri**|None|
 |**Geçersiz öznitelikler**|Yok.|
@@ -51,7 +51,7 @@ Daha fazla bilgi için [öznitelik bağlamları](cpp-attributes-com-net.md#conte
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[IDL Öznitelikleri](idl-attributes.md)<br/>
+[IDL öznitelikleri](idl-attributes.md)<br/>
 [Arabirim Öznitelikleri](interface-attributes.md)<br/>
 [Sınıf Öznitelikleri](class-attributes.md)<br/>
 [Yöntem Öznitelikleri](method-attributes.md)<br/>

@@ -18,10 +18,10 @@ helpviewer_keywords:
 - Microsoft::WRL::ChainInterfaces::Verify method
 ms.assetid: d7415b59-5468-4bef-a3fd-8d82b12f0e9c
 ms.openlocfilehash: 9fd315f017d3dcc9823054ea99e845ec99bc4192
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58787637"
 ---
 # <a name="chaininterfaces-structure"></a>ChainInterfaces Yapısı

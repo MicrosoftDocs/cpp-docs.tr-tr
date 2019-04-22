@@ -5,10 +5,10 @@ helpviewer_keywords:
 - walkthroughs [MFC]
 ms.assetid: 602df5c2-17d4-4cd9-8cf6-dff652c4cae5
 ms.openlocfilehash: c22a11c54b1957c1d4ac735fe8cb577d9c483d35
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58781711"
 ---
 # <a name="walkthrough-updating-the-mfc-scribble-application-part-2"></a>İzlenecek yol: (2. bölüm) MFC karalama uygulamasını güncelleştirme

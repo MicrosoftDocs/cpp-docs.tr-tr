@@ -9,10 +9,10 @@ helpviewer_keywords:
 - events [C++], __event
 ms.assetid: d3019b3e-722e-48df-8536-c05878461f9e
 ms.openlocfilehash: 3a837e30d3cd66f7caa9b44971f432e00b0917ae
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58778266"
 ---
 # <a name="event"></a>__event

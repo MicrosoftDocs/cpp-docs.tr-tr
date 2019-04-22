@@ -9,10 +9,10 @@ helpviewer_keywords:
 - SafeInt library
 ms.assetid: 5321e875-67c5-49d7-9650-85a876552d14
 ms.openlocfilehash: 67aafdb978d5574c5031ea6911b464555094ad5e
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58787862"
 ---
 # <a name="safeint-library"></a>SafeInt Kitaplığı

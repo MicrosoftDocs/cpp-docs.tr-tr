@@ -7,10 +7,10 @@ helpviewer_keywords:
 - support_error_info attribute
 ms.assetid: 20a2b55c-4738-4b35-a71d-e5e9c3a7e3bc
 ms.openlocfilehash: c05b6735c5c29e44f3cc190a150a5efe02025519
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59023782"
 ---
 # <a name="supporterrorinfo"></a>support_error_info
@@ -64,10 +64,10 @@ class CMyClass
 
 |||
 |-|-|
-|**Uygulandığı öğe:**|**sınıf**|
+|**İçin geçerlidir**|**class**|
 |**Tekrarlanabilir**|Evet|
 |**Gerekli öznitelikleri**|Yok.|
-|**Geçersiz öznitelikler**|None|
+|**Geçersiz öznitelikler**|Yok.|
 
 Öznitelik bağlamları hakkında daha fazla bilgi için bkz: [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 

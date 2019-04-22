@@ -3,10 +3,10 @@ title: C++'da Windows Programlamasına Genel Bakış
 ms.date: 03/28/2019
 ms.assetid: efc691d7-21f3-47ae-ae56-cab999ccf59d
 ms.openlocfilehash: 35842ae73e59685946afe31e88729a36a6431768
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58772910"
 ---
 # <a name="overview-of-windows-programming-in-c"></a>C++'da Windows Programlamasına Genel Bakış
@@ -33,7 +33,7 @@ En Masaüstü uygulama senaryoları için (diğer bir deyişle, değil hedefleme
 - DirectX erişim
 - Standart C++ kitaplıklarını ağır kullanımı
 
-Bir kullanıcı arabiriminde oluşturabilirsiniz C# ve C + +/ CLI yerel C++ kitaplıkları kullanmak uygulamayı etkinleştirmek için. Daha fazla bilgi için [.NET programlama ile C + +/ CLI](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md).
+Bir kullanıcı arabiriminde oluşturabilirsiniz C# ve C++yerel kullanmak uygulamanın etkinleştirileceği /CLI C++ kitaplıkları. Daha fazla bilgi için [.NET programlama C++/CLI](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md).
 
 ## <a name="com-components"></a>COM bileşenleri
 
@@ -43,7 +43,7 @@ Bir kullanıcı arabiriminde oluşturabilirsiniz C# ve C + +/ CLI yerel C++ kita
 
 Evrensel Windows Platformu (UWP) modern Windows API'dir. UWP uygulamaları, tüm Windows 10 cihazlarda çalıştırmak, XAML için kullanıcı arabirimini kullanın ve tam olarak dokunmatik. UWP hakkında daha fazla bilgi için bkz: [bir evrensel Windows Platformu (UWP) uygulaması nedir?](/windows/uwp/get-started/whats-a-uwp) ve [Evrensel Windows uygulamaları Kılavuzu](/windows/uwp/get-started/universal-application-platform-guide).
 
-Toplamda UWP özgün C++ desteği (1), C + +/ CX kapsamında, SQL diyalektiği C++ sözdizimi uzantılarını ile veya (2 Windows çalışma zamanı kitaplığı (Standart C++ ve COM dayalı WRL) Hem C + +/ CX ve WRL desteklenmeye devam eder. Yeni projeler için öneririz [C + +/ WinRT](/windows/uwp/cpp-and-winrt-apis/intro-to-using-cpp-with-winrt) tamamen standart C++ temel alır ve daha hızlı performans sağlar. 
+Özgün C++ (1) UWP toplamda desteği C++/CX, bir SQL diyalektiği C++ sözdizimi uzantılarını veya (2 Windows çalışma zamanı kitaplığı (standardına dayalı olan WRL) ile C++ ve COM Her ikisi de C++/CX ve WRL desteklenmeye devam eder. Yeni projeler için öneririz [ C++/WinRT](/windows/uwp/cpp-and-winrt-apis/intro-to-using-cpp-with-winrt) standart temelli tamamen C++ ve daha hızlı performans sağlar. 
 
 ## <a name="desktop-bridge"></a>Masaüstü köprüsü
 
@@ -96,20 +96,20 @@ Visual Studio yerel kod, statik çözümleme araçları, grafik hata ayıklama a
 ## <a name="in-this-section"></a>Bu bölümde
 |Başlık|Açıklama|
 |-----------|-----------------|
-|[İzlenecek yol: Standart C++ programı oluşturma](walkthrough-creating-a-standard-cpp-program-cpp.md)| Bir Windows konsol uygulaması oluşturun.|
-|[İzlenecek yol: Windows Masaüstü uygulamaları oluşturma (C++)](walkthrough-creating-windows-desktop-applications-cpp.md)|Basit bir Windows masaüstü uygulaması oluşturun.|
+|[İzlenecek yol: Standart Bir C++ Programı Oluşturma](walkthrough-creating-a-standard-cpp-program-cpp.md)| Bir Windows konsol uygulaması oluşturun.|
+|[İzlenecek yol: Windows Masaüstü Uygulaması Oluşturma (C++)](walkthrough-creating-windows-desktop-applications-cpp.md)|Basit bir Windows masaüstü uygulaması oluşturun.|
 |[Windows Masaüstü Sihirbazı](windows-desktop-wizard.md)|Yeni Windows projeleri oluşturmak için Sihirbazı'nı kullanın.|
-|[Etkin Şablon kitaplığı (ATL)](../atl/TOC.md)|ATL kitaplığı, C++ ile COM bileşenleri oluşturmak için kullanın.|
-|[Microsoft Foundation sınıfları (MFC)](../mfc/TOC.md)|MFC iletişim kutuları ve denetimleri ile büyük veya küçük Windows uygulamaları oluşturmak için kullanın|
-|[ATL ve MFC paylaşılan sınıfları](../atl-mfc-shared/TOC.md)|ATL ve MFC paylaşılan sınıfları CString gibi kullanın.|
+|[Etkin Şablon Kitaplığı (ATL)](../atl/TOC.md)|ATL kitaplığı, C++ ile COM bileşenleri oluşturmak için kullanın.|
+|[Microsoft Foundation Sınıfları (MFC)](../mfc/TOC.md)|MFC iletişim kutuları ve denetimleri ile büyük veya küçük Windows uygulamaları oluşturmak için kullanın|
+|[ATL ve MFC Paylaşılan Sınıfları](../atl-mfc-shared/TOC.md)|ATL ve MFC paylaşılan sınıfları CString gibi kullanın.|
 |[Veri Erişimi](../data/data-access-in-cpp.md)| OLE DB ve ODBC|
 |[Metin ve Dizeler](../text/text-and-strings-in-visual-cpp.md)|Windows üzerinde çeşitli dize türleri.|
 |[DirectX Kullanarak Oyun Oluşturmak için Kaynaklar](resources-for-creating-a-game-using-directx.md)
-|[Nasıl yapılır: Windows 10 kullanan Windows Masaüstü uygulama SDK'sı](how-to-use-the-windows-10-sdk-in-a-windows-desktop-application.md)|Windows SDK|
+|[Nasıl yapılır: Windows 10 SDK’yı bir Windows Masaüstü Uygulamasında Kullanma](how-to-use-the-windows-10-sdk-in-a-windows-desktop-application.md)|Windows SDK|
 |[Kaynak Dosyalarıyla Çalışma](working-with-resource-files.md)|Görüntüler, simgeler, dize tabloları ve diğer kaynaklar için bir masaüstü uygulaması ekleme.|
-|[DirectX Kullanarak Oyun Oluşturmak için Kaynaklar (C++)](resources-for-creating-a-game-using-directx.md)|C++ ile oyun oluşturmak için içerik bağlar.|
-|[Nasıl yapılır: Windows 10 kullanan Windows Masaüstü uygulama SDK'sı](how-to-use-the-windows-10-sdk-in-a-windows-desktop-application.md)|Windows 10 SDK'sını kullanarak oluşturmak projenizi ayarlamak için adımları içerir.|
-|[Yerleşik Masaüstü uygulamalarını dağıtma](deploying-native-desktop-applications-visual-cpp.md)|Yerel Windows uygulamaları dağıtın.|
+|[(C++) DirectX kullanarak oyun oluşturmak için kaynaklar](resources-for-creating-a-game-using-directx.md)|C++ ile oyun oluşturmak için içerik bağlar.|
+|[Nasıl yapılır: Windows 10 SDK’yı bir Windows Masaüstü Uygulamasında Kullanma](how-to-use-the-windows-10-sdk-in-a-windows-desktop-application.md)|Windows 10 SDK'sını kullanarak oluşturmak projenizi ayarlamak için adımları içerir.|
+|[Yerel Masaüstü Uygulamaları Dağıtma](deploying-native-desktop-applications-visual-cpp.md)|Yerel Windows uygulamaları dağıtın.|
 
 
 ## <a name="related-articles"></a>İlgili Makaleler
@@ -117,8 +117,8 @@ Visual Studio yerel kod, statik çözümleme araçları, grafik hata ayıklama a
 |Başlık|Açıklama|
 |-----------|-----------------|
 |[Visual C++](../overview/visual-cpp-in-visual-studio.md)|Visual C++ Geliştirici içeriği için üst konu.|
-[.NET geliştirme ile C + +/ CLI](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)|.NET uygulamaları ve bileşenleri ile iletişimi etkinleştir yerel C++ kitaplıkları için sarmalayıcıları oluşturun.|
-|[.NET ve UWP için bileşen uzantıları](../extensions/component-extensions-for-runtime-platforms.md)|C + tarafından paylaşılan söz dizimi öğeleri için başvuru +/ CX ve C + +/ CLI.|
-|[Evrensel Windows Uygulamaları (C++)](universal-windows-apps-cpp.md)|Yazma UWP uygulamaları kullanarak C + +/ CX veya Windows çalışma zamanı Şablon kitaplığı (WRL).|
-|[COM ve .NET için C++ öznitelikleri](attributes/cpp-attributes-com-net.md)|Standart olmayan öznitelikler için .NET veya COM kullanarak yalnızca Windows programlama|
+[C++/CLI ile .NET Geliştirme](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)|.NET uygulamaları ve bileşenleri ile iletişimi etkinleştir yerel C++ kitaplıkları için sarmalayıcıları oluşturun.|
+|[.NET ve UWP İçin Bileşen Uzantıları](../extensions/component-extensions-for-runtime-platforms.md)|Söz dizimi öğeleri tarafından paylaşılan başvurusunu C++/CX ve C++/CLI.|
+|[Evrensel Windows Uygulamaları (C++)](universal-windows-apps-cpp.md)|UWP uygulamaları kullanarak yazma C++/CX veya Windows çalışma zamanı Şablon kitaplığı (WRL).|
+|[COM ve .NET için C++ Öznitelikleri](attributes/cpp-attributes-com-net.md)|Standart olmayan öznitelikler için .NET veya COM kullanarak yalnızca Windows programlama|
 

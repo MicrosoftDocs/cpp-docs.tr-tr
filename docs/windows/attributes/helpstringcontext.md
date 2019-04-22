@@ -7,10 +7,10 @@ helpviewer_keywords:
 - helpstringcontext attribute [C++]
 ms.assetid: d4cd135e-d91c-4aa3-9353-8aeb096f52cf
 ms.openlocfilehash: a6df5b63291fbc54d6c12a116fccd8372e8ced9a
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59026116"
 ---
 # <a name="helpstringcontext"></a>helpstringcontext
@@ -54,7 +54,7 @@ __interface IMyI
 
 |||
 |-|-|
-|**Uygulandığı öğe:**|**sınıf**, **arabirimi**, arabirim yöntemi|
+|**İçin geçerlidir**|**sınıf**, **arabirimi**, arabirim yöntemi|
 |**Tekrarlanabilir**|Hayır|
 |**Gerekli öznitelikleri**|None|
 |**Geçersiz öznitelikler**|None|
@@ -63,8 +63,8 @@ Daha fazla bilgi için [öznitelik bağlamları](cpp-attributes-com-net.md#conte
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[IDL Öznitelikleri](idl-attributes.md)<br/>
+[IDL öznitelikleri](idl-attributes.md)<br/>
 [Arabirim Öznitelikleri](interface-attributes.md)<br/>
 [Sınıf Öznitelikleri](class-attributes.md)<br/>
 [Yöntem Öznitelikleri](method-attributes.md)<br/>
-[modül](module-cpp.md)
+[module](module-cpp.md)

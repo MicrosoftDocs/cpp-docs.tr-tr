@@ -9,17 +9,17 @@ f1_keywords:
 - C5012
 ms.assetid: d8f4844a-f414-42ab-b9a5-925a5da9d365
 ms.openlocfilehash: 6f80bc9d2a2438a6003c93ce7e60de50fd639a16
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59023912"
 ---
 # <a name="vectorizer-and-parallelizer-messages"></a>Vektör Yapıcı ve Paralel Hale Getirici İletileri
 
 Visual C++ derleyici seçeneklerini kullanabilirsiniz [/Qpar-report](../../build/reference/qpar-report-auto-parallelizer-reporting-level.md) ve [/Qvec-report](../../build/reference/qvec-report-auto-vectorizer-reporting-level.md) ayarlanacak [otomatik Paralelleştirme ve otomatik Vektörleştirme](../../parallel/auto-parallelization-and-auto-vectorization.md) çıkış neden kodları için ve kendi etkinliğiyle ilgili bilgi iletileri. Bu makalede, neden kodları ve iletiler açıklanmaktadır.
 
-- [Bilgi İletileri](#BKMK_InformationalMessages)
+- [Bilgilendirme iletileri](#BKMK_InformationalMessages)
 
 - [5XX](#BKMK_ReasonCode50x)
 
@@ -986,5 +986,5 @@ void code_1505(int *A, int *B)
 [Yerel kodda paralel programlama](http://go.microsoft.com/fwlink/p/?linkid=263662)<br/>
 [#pragma loop()](../../preprocessor/loop.md)<br/>
 [/Q Seçenekler (Düşük Düzey İşlemler)](../../build/reference/q-options-low-level-operations.md)<br/>
-[/Qpar-rapor (Otomatik Paralel Hale Getirici Raporlama Düzeyi)](../../build/reference/qpar-report-auto-parallelizer-reporting-level.md)<br/>
+[/Qpar-report (Otomatik Paralel Hale Getirici Raporlama Düzeyi)](../../build/reference/qpar-report-auto-parallelizer-reporting-level.md)<br/>
 [/Qvec-report (Otomatik Vektör Hale Getirici Raporlama Düzeyi)](../../build/reference/qvec-report-auto-vectorizer-reporting-level.md)

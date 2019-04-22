@@ -22,10 +22,10 @@ helpviewer_keywords:
 - SetAbsolutePosition method, bookmarks
 ms.assetid: 189788d6-33c1-41c5-9265-97db2a5d43cc
 ms.openlocfilehash: c4a223f01b25b4c321ccfb4f4c03c3c5241381ec
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59023795"
 ---
 # <a name="recordset-bookmarks-and-absolute-positions-odbc"></a>Kayıt kümesi: Yer işaretleri ve Mutlak Konumlar (ODBC)

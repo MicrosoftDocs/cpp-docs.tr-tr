@@ -5,10 +5,10 @@ helpviewer_keywords:
 - boxing, implicit
 ms.assetid: 33f7fc7d-5674-44a2-a859-0e6a04fae519
 ms.openlocfilehash: b771f9e9c1dc05fcd2ead19f5202747d7c475a09
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58774457"
 ---
 # <a name="standard-conversions-and-implicit-boxing"></a>Standart Dönüştürmeler ve Örtük Kutulama

@@ -9,10 +9,10 @@ helpviewer_keywords:
 - procedure calls, stored procedures
 ms.assetid: 4f7c2700-1c2d-42f3-8c9f-7e83962b2442
 ms.openlocfilehash: 196c50ea62c3e3188b61a3b35a9e2752740c4ad5
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59027460"
 ---
 # <a name="output-parameters"></a>Çıktı Parametreleri

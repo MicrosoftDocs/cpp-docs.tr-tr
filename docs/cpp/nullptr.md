@@ -7,10 +7,10 @@ helpviewer_keywords:
 - nullptr keyword [C++]
 ms.assetid: e9d80ea6-2506-4eb5-b47b-2349df085832
 ms.openlocfilehash: 57be8d71f1dac4f347ea6567c02a385719bb7306
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58781087"
 ---
 # <a name="nullptr"></a>nullptr
@@ -18,7 +18,7 @@ ms.locfileid: "58781087"
 Bir boş işaretçi sabiti türü belirler `std::nullptr_t`, olan herhangi bir ham işaretçi türüne dönüştürülebilir.  Anahtar sözcüğünü kullanmanız mümkün olmakla birlikte **nullptr** kodunuzu türü kullanıyorsa, tüm üst bilgiler dahil olmadan `std::nullptr_t`, üst bilgisi ekleyerek tanımlamalıdır sonra `<cstddef>`.
 
 > [!NOTE]
->  **Nullptr** anahtar sözcüğü de tanımlanan C + +/ CLI için yönetilen kod uygulamaları ve ISO Standard C++ anahtar sözcüğü ile değiştirilebilir değildir. Kodunuzu kullanılarak derlenmiş, [/CLR](../build/reference/clr-common-language-runtime-compilation.md) derleyici seçeneği, yönetilen kod hedefler, ardından kullanmak `__nullptr` herhangi bir satırında kod burada gerekir garanti derleyici yerel C++ yorumu kullanır. Daha fazla bilgi için [nullptr](../extensions/nullptr-cpp-component-extensions.md).
+>  **Nullptr** anahtar sözcüğü tanımlanan ayrıca C++/CLI için yönetilen kod uygulamaları ve ISO Standard ile değiştirilebilir değildir C++ anahtar sözcüğü. Kodunuzu kullanılarak derlenmiş, [/CLR](../build/reference/clr-common-language-runtime-compilation.md) derleyici seçeneği, yönetilen kod hedefler, ardından kullanmak `__nullptr` herhangi bir satırında kod burada gerekir garanti derleyici yerel C++ yorumu kullanır. Daha fazla bilgi için [nullptr](../extensions/nullptr-cpp-component-extensions.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -27,4 +27,4 @@ NULL veya sıfır kullanmaktan kaçının (`0`) olarak; boş işaretçi sabiti *
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Anahtar Sözcükler](../cpp/keywords-cpp.md)<br/>
-[nullptr](../extensions/nullptr-cpp-component-extensions.md)(C + +/ CLI)
+[nullptr](../extensions/nullptr-cpp-component-extensions.md)(C++/CLI)

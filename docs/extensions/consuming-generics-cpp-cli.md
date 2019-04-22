@@ -6,10 +6,10 @@ helpviewer_keywords:
 - generics [C++], consuming from .NET languages
 ms.assetid: e6330ef5-e907-432e-b527-7a22f5899639
 ms.openlocfilehash: 116d12b301af2769c4d4571a07ce604f18f67152
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59021420"
 ---
 # <a name="consuming-generics-ccli"></a>Genel Türleri Kullanma (C++/CLI)

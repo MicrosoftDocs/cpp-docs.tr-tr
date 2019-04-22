@@ -103,10 +103,10 @@ helpviewer_keywords:
 - SetRows method
 ms.assetid: c6bde426-c543-4022-a98a-9519d9e2ae59
 ms.openlocfilehash: ba6b41a708cd854e398cbaa80609472ebbe167e8
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59023236"
 ---
 # <a name="cbulkrowset-class"></a>CBulkRowset Sınıfı

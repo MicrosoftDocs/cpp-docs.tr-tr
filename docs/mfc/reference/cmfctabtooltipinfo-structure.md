@@ -7,10 +7,10 @@ helpviewer_keywords:
 - CMFCTabToolTipInfo struct
 ms.assetid: 9c3b3fb9-1497-4d59-932b-0da9348dd5e2
 ms.openlocfilehash: 87c8820bc33f3a344933faa797a9fc60d2422b13
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58773170"
 ---
 # <a name="cmfctabtooltipinfo-structure"></a>Cmfctabtooltipınfo yapısı

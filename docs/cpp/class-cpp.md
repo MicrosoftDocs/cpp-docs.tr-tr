@@ -8,10 +8,10 @@ helpviewer_keywords:
 - class keyword [C++]
 ms.assetid: dd23c09f-6598-4069-8bff-69c7f2518b9f
 ms.openlocfilehash: c4ef9690a41737147354ee0976f6912c4711ff67
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58774821"
 ---
 # <a name="class-c"></a>class (C++)
@@ -66,7 +66,7 @@ Sınıflar hakkında daha fazla bilgi için genel olarak, aşağıdaki konularda
 
 - [__virtual_inheritance](../cpp/inheritance-keywords.md)
 
-Bilgi yönetilen sınıflar ve yapılar C + +/ CLI ve C + +/ CX, bkz: [sınıflar ve yapılar](../extensions/classes-and-structs-cpp-component-extensions.md)
+Yönetilen sınıflar ve yapılar için hakkında daha fazla bilgi için C++/CLI ve C++/CX, bkz: [sınıflar ve yapılar](../extensions/classes-and-structs-cpp-component-extensions.md)
 
 ## <a name="example"></a>Örnek
 

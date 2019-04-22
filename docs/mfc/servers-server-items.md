@@ -9,10 +9,10 @@ helpviewer_keywords:
 - OLE server applications [MFC], server items
 ms.assetid: 28ba81a1-726a-4728-a52d-68bc7efd5a3c
 ms.openlocfilehash: abee619aa921b3e036a2bbeb1b4f5ae08d83f5bb
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58767905"
 ---
 # <a name="servers-server-items"></a>Sunucular: Sunucu öğeleri

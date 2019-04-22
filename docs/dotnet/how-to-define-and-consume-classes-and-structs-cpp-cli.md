@@ -1,18 +1,18 @@
 ---
-title: 'Nasıl yapılır: Sınıfları ve yapıları tanımlama ve kullanma (C + +/ CLI)'
+title: 'Nasıl yapılır: Sınıfları ve yapıları tanımlama ve kullanma (C++/CLI)'
 ms.date: 09/12/2018
 helpviewer_keywords:
 - structs [C++]
 - classes [C++], instantiating
 ms.assetid: 1c03cb0d-1459-4b5e-af65-97d6b3094fd7
 ms.openlocfilehash: 090259a4ad6b46eccf66dca6c99b4eb532b7ae5c
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58774925"
 ---
-# <a name="how-to-define-and-consume-classes-and-structs-ccli"></a>Nasıl yapılır: Sınıfları ve yapıları tanımlama ve kullanma (C + +/ CLI)
+# <a name="how-to-define-and-consume-classes-and-structs-ccli"></a>Nasıl yapılır: Sınıfları ve yapıları tanımlama ve kullanma (C++/CLI)
 
 Bu makalede, kullanıcı tarafından tanımlanan başvuru türleri ve değer türleri C + tanımlama ve kullanma işlemi gösterilmektedir +/ CLI.
 
@@ -455,7 +455,7 @@ Sınıfı statik Oluşturucusu varsa derleyici satır içi oluşturucu çağrıs
 
 Yalnızca CLR tarafından çağrılacak anlamına geldiğinden statik Oluşturucu bir özel üye işlevi tanımlar.
 
-Statik oluşturucular hakkında daha fazla bilgi için bkz: [nasıl yapılır: Arabirim statik oluşturucusunu tanımlama (C + +/ CLI)](../dotnet/how-to-define-an-interface-static-constructor-cpp-cli.md) .
+Statik oluşturucular hakkında daha fazla bilgi için bkz: [nasıl yapılır: Arabirim statik oluşturucusunu tanımlama (C++/CLI)](../dotnet/how-to-define-an-interface-static-constructor-cpp-cli.md) .
 
 ```cpp
 // compile with: /clr
@@ -499,7 +499,7 @@ Bu farklı semantikleri `this` varsayılan dizin oluşturucu çağrıldığında
 
 Daha fazla bilgi için bkz.
 
-- [İşlenecek nesne işleci (^)](../extensions/handle-to-object-operator-hat-cpp-component-extensions.md)
+- [İşlenecek Nesne İşleci (^)](../extensions/handle-to-object-operator-hat-cpp-component-extensions.md)
 
 - [interior_ptr (C++/CLI)](../extensions/interior-ptr-cpp-cli.md)
 

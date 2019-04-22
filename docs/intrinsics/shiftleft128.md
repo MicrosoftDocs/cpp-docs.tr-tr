@@ -7,15 +7,15 @@ helpviewer_keywords:
 - __shiftleft128 intrinsic
 ms.assetid: 557b846a-8fb0-469d-91ac-1b1fad80dc2a
 ms.openlocfilehash: 5fcb797694c7a45dc4f2113f3d2ed4a2f578c894
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59024861"
 ---
 # <a name="shiftleft128"></a>__shiftleft128
 
-**Microsoft'a Özgü**
+**Microsoft'a özgü**
 
 İki 64-bit miktarlar olarak temsil edilen bir 128-bit miktarı kaydırır `LowPart` ve `HighPart`, sol tarafından belirtilen bit sayısı `Shift` ve yüksek 64 bit sonuç döndürür.
 
@@ -37,7 +37,7 @@ unsigned __int64 __shiftleft128(
 *HighPart*<br/>
 [in] Yüksek 64 bit kaydırmak için 128 bit miktarı.
 
-*Shift*<br/>
+*Kaydırma*<br/>
 [in] Kaydırılacak bit sayısı.
 
 ## <a name="return-value"></a>Dönüş Değeri
@@ -94,7 +94,7 @@ int main()
 0x100000000000000001 >> 1 = 0x080000000000000000
 ```
 
-**END Microsoft'a Özgü**
+**END Microsoft özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

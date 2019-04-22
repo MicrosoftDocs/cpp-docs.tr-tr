@@ -8,15 +8,15 @@ helpviewer_keywords:
 - cvttss2si instruction
 ms.assetid: f9a3fd07-5bd8-4758-8744-6315c082cf87
 ms.openlocfilehash: cfdea6ded622cbcbe42bd555edb3029fabad7823
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59023717"
 ---
 # <a name="mmcvttsssi64x"></a>_mm_cvttss_si64x
 
-**Microsoft'a Özgü**
+**Microsoft'a özgü**
 
 Genişletilmiş x64 yayan kesilmesi tek duyarlıklı Floating-Point numarası 64-Bit tamsayıya dönüştürme sürümünü (`cvttss2si`) yönerge.
 
@@ -85,7 +85,7 @@ int main()
 101
 ```
 
-**END Microsoft'a Özgü**
+**END Microsoft özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

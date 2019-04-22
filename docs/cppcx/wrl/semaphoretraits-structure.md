@@ -10,10 +10,10 @@ helpviewer_keywords:
 - Microsoft::WRL::Wrappers::HandleTraits::SemaphoreTraits::Unlock method
 ms.assetid: eddb8576-d063-409b-9201-cc87ca5d111e
 ms.openlocfilehash: e7bd2e5d0993c8e4be7223d98ffb1dbec14cbb74
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58787796"
 ---
 # <a name="semaphoretraits-structure"></a>SemaphoreTraits Yapısı

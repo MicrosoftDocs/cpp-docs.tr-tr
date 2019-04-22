@@ -107,10 +107,10 @@ helpviewer_keywords:
 - CPaneContainerManager [MFC], StoreRecentDockSiteInfo
 ms.assetid: 3d974c15-a62f-4648-bb5b-cc31ab7950af
 ms.openlocfilehash: 887b771ee76034256c77aa3d038da96696eca6ed
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58774600"
 ---
 # <a name="cpanecontainermanager-class"></a>CPaneContainerManager Class
@@ -880,6 +880,6 @@ virtual void StoreRecentDockSiteInfo(CDockablePane* pBar);
 
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
 [Sınıflar](../../mfc/reference/mfc-classes.md)<br/>
-[CObject sınıfı](../../mfc/reference/cobject-class.md)<br/>
-[CPaneContainer Class](../../mfc/reference/cpanecontainer-class.md)<br/>
-[CPaneDivider sınıfı](../../mfc/reference/cpanedivider-class.md)
+[CObject Sınıfı](../../mfc/reference/cobject-class.md)<br/>
+[CPaneContainer Sınıfı](../../mfc/reference/cpanecontainer-class.md)<br/>
+[CPaneDivider Sınıfı](../../mfc/reference/cpanedivider-class.md)

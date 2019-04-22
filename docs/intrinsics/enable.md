@@ -10,15 +10,15 @@ helpviewer_keywords:
 - ssm instruction
 ms.assetid: 8bee669b-6bd8-4e25-9383-bb7d57295b4d
 ms.openlocfilehash: e1ece6d6f4040b81b55d8400407d46f165b56b53
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59024523"
 ---
 # <a name="enable"></a>_enable
 
-**Microsoft'a Özgü**
+**Microsoft'a özgü**
 
 Kesme sağlar.
 
@@ -42,7 +42,7 @@ void _enable(void);
 
 Bu işlev, yalnızca çekirdek modunda kullanılabilir. Kullanıcı modunda kullandıysanız, bir ayrıcalıklı yönerge özel durum oluşturulur.
 
-**END Microsoft'a Özgü**
+**END Microsoft özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

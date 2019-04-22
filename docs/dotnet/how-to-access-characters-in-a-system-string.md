@@ -8,10 +8,10 @@ helpviewer_keywords:
 - strings [C++], accessing characters
 ms.assetid: cfc89756-aef3-4988-907e-fb236dcb7087
 ms.openlocfilehash: 6b9e30a18ab1d2b8463ccccae0b265bc20904020
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58775978"
 ---
 # <a name="how-to-access-characters-in-a-systemstring"></a>Nasıl yapılır: String'deki karakterlere erişim
@@ -22,7 +22,7 @@ Karakter erişebileceğiniz bir <xref:System.String> yönetilmeyen yüksek perfo
 
 `PtrToStringChars` döndürür bir <xref:System.Char>, iç işaretçiye olduğu (olarak da bilinen bir `byref`). Bu nedenle, çöp toplama tabi olduğu. Yerel bir işleve geçirilecek gideceğinizi sürece bu işaretçiyi sabitleme gerekmez.
 
-Aşağıdaki kodu düşünün.  Sabitleme gerekli değildir çünkü `ppchar` iç işaretçidir ve atık toplayıcı işaret için dize geçerse de güncelleştirir `ppchar`. Olmadan bir [pin_ptr (C + +/ CLI)](../extensions/pin-ptr-cpp-cli.md), kod ve değil olası performans düşüşüne neden olmuş sabitleyerek.
+Aşağıdaki kodu düşünün.  Sabitleme gerekli değildir çünkü `ppchar` iç işaretçidir ve atık toplayıcı işaret için dize geçerse de güncelleştirir `ppchar`. Olmadan bir [pin_ptr (C++/CLI)](../extensions/pin-ptr-cpp-cli.md), kod ve değil olası performans düşüşüne neden olmuş sabitleyerek.
 
 Geçirirseniz `ppchar` yerel bir işleve ardından, bir sabitleme işaretçisi olması gerekir; çöp toplayıcı yönetilmeyen yığın çerçevesinde herhangi bir işaretçinin güncelleştirmeniz mümkün olmayacaktır.
 

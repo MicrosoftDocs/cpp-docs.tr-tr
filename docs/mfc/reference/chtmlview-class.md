@@ -195,10 +195,10 @@ helpviewer_keywords:
 - CHtmlView [MFC], Stop
 ms.assetid: 904976af-73de-4aba-84ac-cfae8e2be09a
 ms.openlocfilehash: 17979dce7899820db3da3c24968385914c3a57e9
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58777291"
 ---
 # <a name="chtmlview-class"></a>CHtmlView sınıfı

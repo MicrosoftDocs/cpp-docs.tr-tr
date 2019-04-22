@@ -5,10 +5,10 @@ helpviewer_keywords:
 - CRectTracker class [MFC], implementing trackers
 ms.assetid: baaeca2c-5114-485f-bf58-8807db1bc973
 ms.openlocfilehash: 0f037480e83b8ca1ba12af56904afe25a33e4d6c
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58774470"
 ---
 # <a name="how-to-implement-tracking-in-your-code"></a>Nasıl yapılır: Kodunuzda izleme uygulama

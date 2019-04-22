@@ -4,10 +4,10 @@ ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: d71fe149-d804-4c6f-961d-43fe21ef8630
 ms.openlocfilehash: fce6e620600164e73d3708d98d8a7fa979e8ab42
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59027490"
 ---
 # <a name="microsoftwrldetails-namespace"></a>Microsoft::WRL::Details Ad Alanı
@@ -65,7 +65,7 @@ namespace Microsoft::WRL::Details;
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[AsyncStatusInternal Numaralandırması](asyncstatusinternal-enumeration.md)|Zaman uyumsuz işlemler durumu için iç sabit listeleri arasındaki eşlemeyi belirtir ve `Windows::Foundation::AsyncStatus` sabit listesi.|
+|[AsyncStatusInternal Sabit Listesi](asyncstatusinternal-enumeration.md)|Zaman uyumsuz işlemler durumu için iç sabit listeleri arasındaki eşlemeyi belirtir ve `Windows::Foundation::AsyncStatus` sabit listesi.|
 
 ### <a name="functions"></a>İşlevler
 
@@ -74,7 +74,7 @@ namespace Microsoft::WRL::Details;
 |[ActivationFactoryCallback İşlevi](activationfactorycallback-function.md)|Belirtilen etkinleştirme kimliği için kullanılan etkinleştirme üreteci alır|
 |[Move İşlevi](move-function.md)|Belirtilen bağımsız değişken bir konumdan diğerine taşır.|
 |[RaiseException İşlevi](raiseexception-function.md)|Çağıran iş parçacığında bir özel durum oluşturur.|
-|[Swap işlevi (WRL)](swap-function-wrl.md)|İki belirtilen bağımsız değişken değerlerini birbiriyle değiştirir.|
+|[Swap İşlevi (WRL)](swap-function-wrl.md)|İki belirtilen bağımsız değişken değerlerini birbiriyle değiştirir.|
 |[TerminateMap İşlevi](terminatemap-function.md)|Belirtilen modül sınıfı Fabrikalar kapatır.|
 
 ## <a name="requirements"></a>Gereksinimler

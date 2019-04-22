@@ -7,10 +7,10 @@ helpviewer_keywords:
 - RCustomRowset
 ms.assetid: 33089c90-98a4-43e7-8e67-d4bb137e267e
 ms.openlocfilehash: d22c6902667ec84abe7bd85ffbffd1f5c5c57f2a
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59024874"
 ---
 # <a name="modifying-the-inheritance-of-rcustomrowset"></a>RCustomRowset devralmayı değiştirme

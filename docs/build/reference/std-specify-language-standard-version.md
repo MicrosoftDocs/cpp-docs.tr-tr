@@ -7,10 +7,10 @@ f1_keywords:
 - VC.Project.VCCLCompilerTool.CppLanguageStandard
 ms.assetid: 0acb74ba-1aa8-4c05-b96c-682988dc19bd
 ms.openlocfilehash: 32c63240f578b6170ae351cdf0cd1628167464b6
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58779748"
 ---
 # <a name="std-specify-language-standard-version"></a>/ Std (dil standart sürümünü belirt)

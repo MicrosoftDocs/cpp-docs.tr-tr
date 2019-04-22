@@ -11,10 +11,10 @@ helpviewer_keywords:
 - SQL aggregate values, retrieving from recordsets
 ms.assetid: 94500662-22a4-443e-82d7-acbe6eca447b
 ms.openlocfilehash: e10f2e1574dae234d98d210784d4a8ddef3bb57e
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59025328"
 ---
 # <a name="recordset-obtaining-sums-and-other-aggregate-results-odbc"></a>Kayıt kümesi: SUM'ları ve diğer toplama sonuçlarını (ODBC) alma

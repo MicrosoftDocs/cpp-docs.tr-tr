@@ -25,10 +25,10 @@ helpviewer_keywords:
 - CMenuTearOffManager [MFC], SetupTearOffMenus
 ms.assetid: ab7ca272-ce42-4678-95f7-6ad75038f5a0
 ms.openlocfilehash: 8b92ddad9d3a6de41cf6914dee268f6e54b5d420
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58776069"
 ---
 # <a name="cmenutearoffmanager-class"></a>CMenuTearOffManager sınıfı
@@ -224,4 +224,4 @@ void SetupTearOffMenus(HMENU hMenu);
 
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
 [Sınıflar](../../mfc/reference/mfc-classes.md)<br/>
-[CWinAppEx Class](../../mfc/reference/cwinappex-class.md)
+[CWinAppEx Sınıfı](../../mfc/reference/cwinappex-class.md)

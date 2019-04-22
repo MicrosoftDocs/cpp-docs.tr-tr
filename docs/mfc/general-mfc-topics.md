@@ -7,10 +7,10 @@ helpviewer_keywords:
 - MFC, application development
 ms.assetid: 617e9945-9bb3-471d-a3ba-e235fcfb55d1
 ms.openlocfilehash: 71cdda0abea8cec29c3b6e17ddfb584e32a931c6
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58769725"
 ---
 # <a name="general-mfc-topics"></a>Genel MFC Konuları

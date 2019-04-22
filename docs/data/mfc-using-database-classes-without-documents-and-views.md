@@ -18,10 +18,10 @@ helpviewer_keywords:
 - user interface [C++], drawing information
 ms.assetid: 15bf52d4-91cf-4b1d-8b37-87c3ae70123a
 ms.openlocfilehash: ab9946609fa20c4644873a684a754cbc8a41742f
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59024640"
 ---
 # <a name="mfc-using-database-classes-without-documents-and-views"></a>MFC: Belgeler ve görünümler olmadan veritabanı sınıflarını kullanma
@@ -121,4 +121,4 @@ Belge sahibi olduğundan `CRecordset` nesne büyük olasılıkla istediğiniz bi
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MFC veritabanı sınıfları](../data/mfc-database-classes-odbc-and-dao.md)
+[MFC Veritabanı Sınıfları](../data/mfc-database-classes-odbc-and-dao.md)

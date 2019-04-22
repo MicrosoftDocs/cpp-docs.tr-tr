@@ -7,10 +7,10 @@ helpviewer_keywords:
 - expressions [C++], postfix
 ms.assetid: 7ac62a57-06df-422f-b012-a75b37d7cb9b
 ms.openlocfilehash: eb6e6e8914cf260df09581232066caf3f873c04e
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58779267"
 ---
 # <a name="postfix-expressions"></a>Sonek İfadeleri
@@ -149,7 +149,7 @@ Elipsler bağımsız değişkenlerin gerekli olabileceğini, ancak sayı ve tür
 
 Elipsler kullandıysanız, son bağımsız değişken listesinde bildirilmesi gerekir. Değişken sayıda bağımsız değişken geçirme hakkında daha fazla bilgi için, bkz [va_arg, va_start ve va_list](../c-runtime-library/reference/va-arg-va-copy-va-end-va-start.md) içinde *çalışma zamanı kitaplığı başvurusu*.
 
-CLR programlamada varsayılan bağımsız değişkenler hakkında daha fazla bilgi için bkz: [değişken bağımsız değişken listeleri (...) (C + +/ CLI) ](../extensions/variable-argument-lists-dot-dot-dot-cpp-cli.md).
+CLR programlamada varsayılan bağımsız değişkenler hakkında daha fazla bilgi için bkz: [değişken bağımsız değişken listeleri (...) (C++/CLI) ](../extensions/variable-argument-lists-dot-dot-dot-cpp-cli.md).
 
 Varsayılan bağımsız değişken bağımsız değişken yok işlev çağrısında sağlanırsa değer belirtmenize olanak verir. Aşağıdaki kod parçası, varsayılan bağımsız değişkenler nasıl çalıştığını gösterir. Varsayılan bağımsız değişkenleri belirtme sınırlamaları hakkında daha fazla bilgi için bkz: [varsayılan bağımsız değişkenler](../cpp/default-arguments.md).
 

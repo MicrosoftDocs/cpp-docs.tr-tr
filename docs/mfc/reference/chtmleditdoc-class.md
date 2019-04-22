@@ -15,10 +15,10 @@ helpviewer_keywords:
 - CHtmlEditDoc [MFC], OpenURL
 ms.assetid: b2cca61f-e5d6-4099-b0d1-46bf85f0bd64
 ms.openlocfilehash: c2a00b2501647f6101fed8ed1d4cd23dad7ab209
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58767073"
 ---
 # <a name="chtmleditdoc-class"></a>CHtmlEditDoc Class

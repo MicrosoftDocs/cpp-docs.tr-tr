@@ -5,10 +5,10 @@ helpviewer_keywords:
 - property pages, implementing
 ms.assetid: c30b67fe-ce08-4249-ae29-f3060fa8d61e
 ms.openlocfilehash: 9aaf75916196f33904a51289d0a49725e042aa9e
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58777044"
 ---
 # <a name="example-implementing-a-property-page"></a>Örnek: Özellik sayfası uygulama

@@ -7,10 +7,10 @@ helpviewer_keywords:
 - satype attribute
 ms.assetid: 1716590b-6bcb-4aba-b1bc-82f7335f02c3
 ms.openlocfilehash: 7588e8d855d648309c46d981898cfbbf7888f4c9
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59025730"
 ---
 # <a name="satype"></a>satype
@@ -34,9 +34,9 @@ Veri türü için `SAFEARRAY` arabirim yöntemi için parametre olarak geçirile
 
 |||
 |-|-|
-|**Uygulandığı öğe:**|Arabirimi parametresi, arabirim yöntemi|
+|**İçin geçerlidir**|Arabirimi parametresi, arabirim yöntemi|
 |**Tekrarlanabilir**|Hayır|
-|**Gerekli öznitelikleri**|Yok.|
+|**Gerekli öznitelikleri**|None|
 |**Geçersiz öznitelikler**|None|
 
 ## <a name="remarks"></a>Açıklamalar
@@ -64,4 +64,4 @@ __interface A {
 [Derleyici Öznitelikleri](compiler-attributes.md)<br/>
 [Parametre Öznitelikleri](parameter-attributes.md)<br/>
 [Yöntem Öznitelikleri](method-attributes.md)<br/>
-[kimlik](id.md)
+[id](id.md)

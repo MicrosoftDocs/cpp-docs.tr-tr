@@ -6,10 +6,10 @@ f1_keywords:
 - implements/Microsoft::WRL::InspectableClass
 ms.assetid: ff390b26-58cc-424f-87ac-1fe3cc692b59
 ms.openlocfilehash: 9d194f5a87ac4a142301bc896cb3ed172f119473
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59025717"
 ---
 # <a name="inspectableclass-macro"></a>InspectableClass Makrosu

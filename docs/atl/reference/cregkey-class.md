@@ -43,10 +43,10 @@ helpviewer_keywords:
 - registry, deleting keys
 ms.assetid: 3afce82b-ba2c-4c1a-8404-dc969e1af74b
 ms.openlocfilehash: 1215c66f1f40cfbc96b813d4eb5084f07698bc01
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58778305"
 ---
 # <a name="cregkey-class"></a>CRegKey sınıfı

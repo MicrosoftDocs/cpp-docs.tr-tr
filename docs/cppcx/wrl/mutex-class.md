@@ -14,10 +14,10 @@ helpviewer_keywords:
 - Microsoft::WRL::Wrappers::Mutex::operator= operator
 ms.assetid: 682a0963-721c-46a2-8871-000e9997505b
 ms.openlocfilehash: 93de43ac7e5314501d0391e2cde862ba32be0b4b
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58787708"
 ---
 # <a name="mutex-class"></a>Mutex Sınıfı

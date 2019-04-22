@@ -1,5 +1,5 @@
 ---
-title: Visual Studio'da C++ desteği yükleme
+title: Visual Studio’ya C++ desteği yükleme
 description: Visual C++ için Visual Studio desteği yükleme
 ms.custom: mvc
 ms.date: 04/02/2019
@@ -7,13 +7,13 @@ ms.topic: tutorial
 ms.devlang: cpp
 ms.assetid: 45138d70-719d-42dc-90d7-1d0ca31a2f54
 ms.openlocfilehash: 2c2bed4063194bdc3c0f3fbc405be6bf9a4031e7
-ms.sourcegitcommit: 5fc76f5b3c4c3ee49f38f05b37261a324591530b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/02/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58870786"
 ---
-# <a name="install-c-support-in-visual-studio"></a>Visual Studio'da C++ desteği yükleme
+# <a name="install-c-support-in-visual-studio"></a>Visual Studio’ya C++ desteği yükleme
 
 İndirilen ve henüz Visual Studio ve Visual C++ Araçları yüklü olmayan, kullanmaya nasıl başlayacağınızı aşağıda verilmiştir.
 
@@ -49,7 +49,7 @@ Visual Studio 2019 ile yan yana Visual Studio'nun önceki sürümleri çalışt�
 Ardından, Visual Studio önyükleyicisi dosyasını indirin. Bunu yapmak için aşağıdaki düğmeyi seçin, seçmek istediğiniz Visual Studio sürümünü **Kaydet**ve ardından **Klasör Aç**.
 
  > [!div class="button"]
- > [Visual Studio’yu İndir](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2019+rc)
+ > [Visual Studio'yu indirin](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2019+rc)
 
 ### <a name="step-3---install-the-visual-studio-installer"></a>3. adım - Visual Studio Yükleyicisi'ni yükleme
 
@@ -71,7 +71,7 @@ Yükleyici yüklendikten sonra bunu seçerek yüklemenizi özelleştirmek için 
 
 1. Bulmak istediğiniz iş yükünü **Visual Studio'yu** ekran.
 
-   ![Visual Studio 2019: Bir iş yükünü yükleyin](../get-started/media/vs-installer-workloads.png)
+   ![Visual Studio 2019 : Bir iş yükünü yükleyin](../get-started/media/vs-installer-workloads.png)
 
    Çekirdek C++ desteği için "C++ ile masaüstü geliştirme" iş yükünü seçin. Bu, temel kod düzenleme açın ve projeye gerek kalmadan herhangi bir klasörden kodu düzenleme olanağı 20'den dil için destek içerir ve tümleşik kaynak kod denetimi varsayılan çekirdek Düzenleyicisi ile birlikte gelir.
 
