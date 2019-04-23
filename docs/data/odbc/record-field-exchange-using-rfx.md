@@ -5,10 +5,10 @@ helpviewer_keywords:
 - RFX (ODBC), implementing
 ms.assetid: ada8f043-37e6-4d41-9db3-92c997a61957
 ms.openlocfilehash: 2a029f653753363e08b3c4f8b9fceab6295924af
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59034121"
 ---
 # <a name="record-field-exchange-using-rfx"></a>Kayıt Alanı Değişimi: RFX kullanma
@@ -43,7 +43,7 @@ Aşağıdaki tabloda rolünüze göre framework sizin için ne yaptığını gö
 [Kayıt Alanı Değişimi (RFX)](../../data/odbc/record-field-exchange-rfx.md)<br/>
 [Kayıt Alanı Değişimi: RFX'in çalışması](../../data/odbc/record-field-exchange-how-rfx-works.md)<br/>
 [Kayıt kümesi: SUM'ları ve diğer toplama sonuçlarını (ODBC) alma](../../data/odbc/recordset-obtaining-sums-and-other-aggregate-results-odbc.md)<br/>
-[CRecordset sınıfı](../../mfc/reference/crecordset-class.md)<br/>
-[CFieldExchange sınıfı](../../mfc/reference/cfieldexchange-class.md)<br/>
-[Makrolar, Genel İşlevler ve Genel Değişkenler](../../mfc/reference/mfc-macros-and-globals.md)
+[CRecordset Sınıfı](../../mfc/reference/crecordset-class.md)<br/>
+[CFieldExchange Sınıfı](../../mfc/reference/cfieldexchange-class.md)<br/>
+[Makrolar, genel işlevler ve genel değişkenler](../../mfc/reference/mfc-macros-and-globals.md)
 

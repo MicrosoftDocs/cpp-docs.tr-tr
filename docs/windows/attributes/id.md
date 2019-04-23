@@ -7,10 +7,10 @@ helpviewer_keywords:
 - id attribute
 ms.assetid: a48d2c99-c5d2-4f46-bf96-5ac88dcb5d0c
 ms.openlocfilehash: 5faf08418771deda3086a434cff6b1900a37e36e
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59034702"
 ---
 # <a name="id"></a>kimlik
@@ -42,7 +42,7 @@ Arabirim yöntemi için gönderme kimliği.
 
 |||
 |-|-|
-|**Uygulandığı öğe:**|Arabirim yöntemi|
+|**İçin geçerlidir**|Arabirim yöntemi|
 |**Tekrarlanabilir**|Hayır|
 |**Gerekli öznitelikleri**|Yok.|
 |**Geçersiz öznitelikler**|Yok.|
@@ -51,9 +51,9 @@ Daha fazla bilgi için [öznitelik bağlamları](cpp-attributes-com-net.md#conte
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[IDL Öznitelikleri](idl-attributes.md)<br/>
+[IDL öznitelikleri](idl-attributes.md)<br/>
 [Yöntem Öznitelikleri](method-attributes.md)<br/>
 [Veri Üyesi Öznitelikleri](data-member-attributes.md)<br/>
 [defaultvalue](defaultvalue.md)<br/>
-[içinde](in-cpp.md)<br/>
+[in](in-cpp.md)<br/>
 [out](out-cpp.md)

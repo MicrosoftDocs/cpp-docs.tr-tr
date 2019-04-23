@@ -9,10 +9,10 @@ helpviewer_keywords:
 - pragmas, hdrstop
 ms.assetid: 5ea8370a-10d1-4538-ade6-4c841185da0e
 ms.openlocfilehash: 1590b5916a8d9c00b6e988bacc7cd857c29d6775
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59035221"
 ---
 # <a name="hdrstop"></a>hdrstop

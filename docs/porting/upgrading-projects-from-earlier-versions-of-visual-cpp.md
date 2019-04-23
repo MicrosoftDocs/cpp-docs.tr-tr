@@ -6,10 +6,10 @@ helpviewer_keywords:
 - upgrading Visual C++ applications, 32-bit code
 ms.assetid: 18cdacaa-4742-43db-9e4c-2d9e73d8cc84
 ms.openlocfilehash: 41cac1b23d5ab16825891ef654341016958ab826
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59034919"
 ---
 # <a name="upgrading-projects-from-earlier-versions-of-visual-c"></a>Önceki Visual C++ Sürümü Projelerini Yükseltme
@@ -35,16 +35,16 @@ Hedeflenen Windows sürümlerine yönelik güncelleştirme hakkında daha fazla 
 
 ## <a name="in-this-section"></a>Bu bölümde
 
-[Kodunuzu Evrensel CRT'ye yükseltme](upgrade-your-code-to-the-universal-crt.md)<br/>
+[Kodunuzu Evrensel CRT’ye Yükseltme](upgrade-your-code-to-the-universal-crt.md)<br/>
 [WINVER ve _WIN32_WINNT'de Değişiklik Yapma](modifying-winver-and-win32-winnt.md)<br/>
-[Kitaplık içeriklerindeki bağımlılıklarınızı düzeltme](fix-your-dependencies-on-library-internals.md)<br/>
-[Kayan nokta geçiş sorunları](floating-point-migration-issues.md)<br/>
-[Yerel çoklu sürüm desteğinin Visual Studio'da eski projeleri oluşturmak için kullanın](use-native-multi-targeting.md)<br/>
-[Visual Studio 2019 Önizleme'de kullanım dışı visual C++ özellikleri](features-deprecated-in-visual-studio.md)<br/>
+[Kitaplık İçeriklerindeki Bağımlılıklarınızı Düzeltme](fix-your-dependencies-on-library-internals.md)<br/>
+[Kayan Nokta Geçiş Sorunları](floating-point-migration-issues.md)<br/>
+[Visual Studio’da Eski Projeleri Oluşturmak için Yerel Çoklu Sürüm Paketi Kullanma](use-native-multi-targeting.md)<br/>
+[Visual Studio 2019 önizlemede kullanım dışı bırakılan Visual C++ özellikleri](features-deprecated-in-visual-studio.md)<br/>
 [Derleme Sistemi Değişiklikleri](build-system-changes.md)<br/>
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Visual Studio 2017'de Visual C++ yenilikleri](../overview/what-s-new-for-visual-cpp-in-visual-studio.md)<br/>
-[Visual C++ değişiklik geçmişi 2003-2015](../porting/visual-cpp-change-history-2003-2015.md)<br/>
-[Standart Dışı Davranış](../cpp/nonstandard-behavior.md)
+[Visual Studio 2017'deki Visual C++ Yenilikleri](../overview/what-s-new-for-visual-cpp-in-visual-studio.md)<br/>
+[Visual C++ değişiklik geçmişi 2003 - 2015](../porting/visual-cpp-change-history-2003-2015.md)<br/>
+[Standart Olmayan Davranış](../cpp/nonstandard-behavior.md)

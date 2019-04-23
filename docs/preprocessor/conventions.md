@@ -6,10 +6,10 @@ helpviewer_keywords:
 - preprocessor, conventions
 ms.assetid: 469ce448-dc6c-4d0e-ba2b-e2e7a10155e1
 ms.openlocfilehash: c84be60938752e7401e2178dbcbf98c6ed32b1cc
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59034280"
 ---
 # <a name="conventions"></a>Kurallar
@@ -17,7 +17,7 @@ Kurallar, sözdiziminin farklı bileşenleri için farklı yazı tipi öznitelik
 
 |Öznitelik|Açıklama|
 |---------------|-----------------|
-|*terminal olmayan*|İtalik tür terminal olmayanları gösterir.|
+|*bildirimlere*|İtalik tür terminal olmayanları gösterir.|
 |#include|Kalın türdeki terminaller, gösterildiği gibi girilmesi gereken sabit ayrılmış sözcükler ve simgelerdir. Bu bağlamdaki karakterler, her zaman büyük/küçük harfe duyarlıdır.|
 |opt|Terminal dışı arkasından <sub>iyileştirilmiş</sub> her zaman isteğe bağlıdır.|
 |varsayılan yazı tipi|Bu yazı tipinde açıklanan veya listelenen kümedeki karakterler, deyimlerde terminaller olarak kullanılabilir.|

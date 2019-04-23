@@ -5,10 +5,10 @@ helpviewer_keywords:
 - MFC ODBC classes
 ms.assetid: 155c092b-3577-4cb8-b00e-f1adf4cb2adc
 ms.openlocfilehash: 96286fc7a60a6ab43190dae6262948ac99ca30d6
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59035195"
 ---
 # <a name="further-reading-about-the-mfc-odbc-classes"></a>MFC ODBC Sınıfları Hakkında Daha Fazla Okuma
@@ -23,7 +23,7 @@ Aşağıdaki konularda daha fazla, kavramlar ve teknikler bu konu başlığı al
 
 - [Dynaset](../../data/odbc/dynaset.md)
 
-- [Özel durumlar: Veritabanı Özel Durumları](../../mfc/exceptions-database-exceptions.md)
+- [Özel durumlar: Veritabanı özel durumları](../../mfc/exceptions-database-exceptions.md)
 
 - [MFC: Belgeler ve görünümler ile veritabanı sınıflarını kullanma](../../data/mfc-using-database-classes-with-documents-and-views.md)
 
@@ -37,7 +37,7 @@ Aşağıdaki konularda daha fazla, kavramlar ve teknikler bu konu başlığı al
 
 - [Kayıt Kümesi (ODBC)](../../data/odbc/recordset-odbc.md)
 
-- [Kayıt Görünümleri](../../data/record-views-mfc-data-access.md)
+- [Kayıt görünümleri](../../data/record-views-mfc-data-access.md)
 
 - [Seri hale getirme: Serileştirme vs. Veritabanı giriş/çıkışı](../../mfc/serialization-serialization-vs-database-input-output.md)
 

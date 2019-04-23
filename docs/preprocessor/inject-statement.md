@@ -7,10 +7,10 @@ helpviewer_keywords:
 - inject_statement attribute
 ms.assetid: 07d6f0f4-d9fb-4e18-aa62-f235f142ff5e
 ms.openlocfilehash: 237ca796028aad7aff55442eb2806fe400330a29
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59034293"
 ---
 # <a name="injectstatement"></a>inject_statement
@@ -38,5 +38,5 @@ Metin, üstbilgi dosyasında tür kitaplığı içeriğini saran ad alanı bildi
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[#import Öznitelikleri](../preprocessor/hash-import-attributes-cpp.md)<br/>
-[#import Yönergesi](../preprocessor/hash-import-directive-cpp.md)
+[#import öznitelikleri](../preprocessor/hash-import-attributes-cpp.md)<br/>
+[#import yönergesi](../preprocessor/hash-import-directive-cpp.md)

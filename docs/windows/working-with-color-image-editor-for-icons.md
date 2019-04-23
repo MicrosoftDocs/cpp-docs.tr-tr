@@ -63,10 +63,10 @@ helpviewer_keywords:
 - colors [C++], inverting
 ms.assetid: d34ff96f-241d-494f-abdd-13811ada8cd3
 ms.openlocfilehash: c424d2e613c51f901def13c4bf42a066797cc65c
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59034150"
 ---
 # <a name="how-to-work-with-color"></a>Nasıl yapılır: Renklerle Çalışma
@@ -227,8 +227,8 @@ None
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Simgeler İçin Görüntü Düzenleyicisi](../windows/image-editor-for-icons.md)<br/>
-[Nasıl yapılır: Simge veya başka görüntü oluşturma](../windows/creating-an-icon-or-other-image-image-editor-for-icons.md)<br/>
-[Nasıl yapılır: Görüntü Düzenle](../windows/selecting-an-area-of-an-image-image-editor-for-icons.md)<br/>
-[Nasıl yapılır: Çizim aracı kullanma](../windows/using-a-drawing-tool-image-editor-for-icons.md)<br/>
+[Simgeler için Görüntü Düzenleyicisi](../windows/image-editor-for-icons.md)<br/>
+[Nasıl yapılır: Simge veya Başka Görüntü Oluşturma](../windows/creating-an-icon-or-other-image-image-editor-for-icons.md)<br/>
+[Nasıl yapılır: Görüntü Kopyalama](../windows/selecting-an-area-of-an-image-image-editor-for-icons.md)<br/>
+[Nasıl yapılır: Çizim Aracı Kullanma](../windows/using-a-drawing-tool-image-editor-for-icons.md)<br/>
 [Hızlandırıcı Tuşları](../windows/accelerator-keys-image-editor-for-icons.md)<br/>

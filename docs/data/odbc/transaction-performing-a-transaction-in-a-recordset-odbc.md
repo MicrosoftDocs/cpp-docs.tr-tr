@@ -5,10 +5,10 @@ helpviewer_keywords:
 - transactions, updating recordsets
 ms.assetid: cf1d6b48-7fb8-4903-84f7-a1822054534d
 ms.openlocfilehash: 9e06d61d3d86233e136b0b3fe78f149a6778649b
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59035247"
 ---
 # <a name="transaction-performing-a-transaction-in-a-recordset-odbc"></a>İşlem: (ODBC) kayıt kümesinde işlem gerçekleştirme
@@ -85,5 +85,5 @@ BOOL CEnrollDoc::RemoveStudent( CString strStudentID )
 
 [İşlem (ODBC)](../../data/odbc/transaction-odbc.md)<br/>
 [İşlem: İşlemler (ODBC) güncelleştirmeleri nasıl etkiler](../../data/odbc/transaction-how-transactions-affect-updates-odbc.md)<br/>
-[CDatabase sınıfı](../../mfc/reference/cdatabase-class.md)<br/>
-[CRecordset sınıfı](../../mfc/reference/crecordset-class.md)
+[CDatabase Sınıfı](../../mfc/reference/cdatabase-class.md)<br/>
+[CRecordset Sınıfı](../../mfc/reference/crecordset-class.md)

@@ -1,5 +1,5 @@
 ---
-title: Derleme C + +/ CLI programını, CLR'yi hedefleyen
+title: Derleme bir C++CLR'yi hedefleyen /CLI programı
 ms.date: 09/17/2018
 helpviewer_keywords:
 - command-line applications [C++], managed code
@@ -8,15 +8,15 @@ helpviewer_keywords:
 - managed code [C++]
 ms.assetid: 339f89df-a5d2-4040-831a-ddbe25b5dce4
 ms.openlocfilehash: fcac0079185b6ceef981b9acfeb555ef29d464e0
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59034676"
 ---
-# <a name="walkthrough-compile-a-ccli-program-that-targets-the-clr-in-visual-studio"></a>İzlenecek yol: Derleme C + +/ CLI programını, Visual Studio'da CLR'yi hedefleyen
+# <a name="walkthrough-compile-a-ccli-program-that-targets-the-clr-in-visual-studio"></a>İzlenecek yol: Derleme bir C++Visual Studio'da CLR'yi hedefleyen /CLI programı
 
-Kullanarak C + +/ CLI dil uzantıları .NET sınıflarını kullanın ve bunları Visual Studio geliştirme ortamını kullanarak derlemek ve C++ programları oluşturabilirsiniz.
+Kullanarak C++/CLI dil uzantıları oluşturabilirsiniz C++ .NET sınıflarını kullanın ve bunları Visual Studio geliştirme ortamını kullanarak derlemek programları.
 
 Bu yordam için kendi C++ programınızı yazabilir veya örnek programlardan birini kullanın. Bu yordamda kullandığımız örnek program, textfile.txt adlı bir metin dosyası oluşturur ve proje dizinine kaydeder.
 
@@ -31,7 +31,7 @@ Bu konular, C++ dili temellerini anladığınızı varsayar.
 1. Visual C++ proje türlerinden tıklayın **CLR**ve ardından **CLR boş proje**.
 
    > [!NOTE]
-   > Varsa **CLR boş proje** türü (Visual Studio 2017 yalnızca) eksik, seçin **açık Visual Studio yükleyicisi** sol bölmesinde **yeni proje** iletişim kutusu. Yükle seçeneği altında bulunan **C++ ile masaüstü geliştirme** içinde **isteğe bağlı** adlı bileşenleri bölümünde **C + +/ CLI desteği**.<br/>
+   > Varsa **CLR boş proje** türü (Visual Studio 2017 yalnızca) eksik, seçin **açık Visual Studio yükleyicisi** sol bölmesinde **yeni proje** iletişim kutusu. Yükle seçeneği altında bulunan **ile masaüstü geliştirme C++**  içinde **isteğe bağlı** adlı bileşenleri bölümünde  **C++CLI desteği**.<br/>
 
 1. Bir proje adı yazın.
 
@@ -51,7 +51,7 @@ Bu konular, C++ dili temellerini anladığınızı varsayar.
 
 1. Visual Studio'da yeni oluşturulan sekmesine tıklayın ve geçerli bir Visual C++ programı yazın veya kopyalayın ve örnek programlardan birini yapıştırın.
 
-   Örneğin, kullanabileceğiniz [nasıl yapılır: Metin dosyaları yazma (C + +/ CLI)](how-to-write-a-text-file-cpp-cli.md) örnek program (içinde **dosya işleme ve g/ç** düğümünün Programlama Kılavuzu).
+   Örneğin, kullanabileceğiniz [nasıl yapılır: Metin dosyaları yazma (C++/CLI)](how-to-write-a-text-file-cpp-cli.md) örnek program (içinde **dosya işleme ve g/ç** düğümünün Programlama Kılavuzu).
 
    Örnek programı kullanırsanız, kullandığına dikkat edin `gcnew` anahtar sözcüğü yerine `new` bir .NET nesnesini ve oluştururken `gcnew` bir tanıtıcı döndürür (`^`) yerine bir işaretçi (`*`):
 
@@ -77,4 +77,4 @@ Bu konular, C++ dili temellerini anladığınızı varsayar.
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [C++ Dil Başvurusu](../cpp/cpp-language-reference.md)<br/>
-[Projeler ve yapı sistemi](../build/projects-and-build-systems-cpp.md)<br/>
+[Projeler ve derleme sistemleri](../build/projects-and-build-systems-cpp.md)<br/>
