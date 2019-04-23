@@ -8,15 +8,15 @@ helpviewer_keywords:
 - VMRUN instruction
 ms.assetid: ae98a781-fc17-47b2-b40f-86fcebf1867b
 ms.openlocfilehash: 40e53b2ebd54fc109b47f3067e5f89ce50b327de
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59041065"
 ---
 # <a name="svmvmrun"></a>__svm_vmrun
 
-**Microsoft'a Özgü**
+**Microsoft'a özgü**
 
 Belirtilen sanal makine denetim bloğu (VMCB) karşılık gelen sanal makine Konuk kod yürütmeyi başlatır.
 
@@ -48,7 +48,7 @@ void __svm_vmrun(
 
 **Üst bilgi dosyası** \<intrin.h >
 
-**END Microsoft'a Özgü**
+**END Microsoft özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

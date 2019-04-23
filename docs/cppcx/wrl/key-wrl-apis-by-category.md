@@ -4,10 +4,10 @@ ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 7367bacf-6b7c-4ecd-a0ce-a662db46fc66
 ms.openlocfilehash: f3065323c567c944dab12fc1ebbcbd6bb57127e9
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59039065"
 ---
 # <a name="key-wrl-apis-by-category"></a>Kategoriye Göre Başlıca WRL API'leri
@@ -53,7 +53,7 @@ Aşağıdaki tablolar, birincil Windows çalışma zamanı C++ Şablon kitaplı�
 |-----------|-----------------|
 |[ActivateInstance İşlevi](activateinstance-function.md)|Kaydeder ve belirtilen sınıf kimliğinde tanımlanan belirli bir türün bir örneğini alır.|
 |[AsWeak İşlevi](asweak-function.md)|Belirtilen bir örneğe zayıf bir başvuru alır.|
-|[Callback İşlevi](callback-function-wrl.md)|Üye işlevi bir geri çağırma yöntemi olan nesne oluşturur.|
+|[Geri çağırma işlevi](callback-function-wrl.md)|Üye işlevi bir geri çağırma yöntemi olan nesne oluşturur.|
 |[CreateActivationFactory İşlevi](createactivationfactory-function.md)|Windows çalışma zamanı tarafından etkinleştirilebilen belirtilen sınıf örneklerini oluşturan bir Üreteç oluşturur.|
 |[CreateClassFactory İşlevi](createclassfactory-function.md)|Belirtilen sınıfın örneklerini oluşturan bir Üreteç oluşturur.|
 |[GetActivationFactory İşlevi](getactivationfactory-function.md)|Şablon parametresi tarafından belirtilen tür için bir etkinleştirme üretecini alır.|

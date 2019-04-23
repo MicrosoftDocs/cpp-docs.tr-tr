@@ -7,10 +7,10 @@ helpviewer_keywords:
 - helpfile attribute
 ms.assetid: d75161c1-1363-4019-ae09-e7e3b8a3971e
 ms.openlocfilehash: 7aff6addffb13d2d45953d190eeaac518fe48d6d
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59039313"
 ---
 # <a name="helpfile"></a>helpfile
@@ -25,7 +25,7 @@ Bir tür kitaplığı için Yardım dosyasına adını ayarlar.
 
 ### <a name="parameters"></a>Parametreler
 
-*filename*<br/>
+*Dosya adı*<br/>
 Yardım konuları içeren dosyanın adı.
 
 ## <a name="remarks"></a>Açıklamalar
@@ -42,16 +42,16 @@ Yardım konuları içeren dosyanın adı.
 
 |||
 |-|-|
-|**Uygulandığı öğe:**|**arabirimi**, **typedef**, **sınıfı**, yöntemi **özelliği**|
+|**İçin geçerlidir**|**arabirimi**, **typedef**, **sınıfı**, yöntemi **özelliği**|
 |**Tekrarlanabilir**|Hayır|
-|**Gerekli öznitelikleri**|None|
-|**Geçersiz öznitelikler**|None|
+|**Gerekli öznitelikleri**|Yok.|
+|**Geçersiz öznitelikler**|Yok.|
 
 Daha fazla bilgi için [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[IDL Öznitelikleri](idl-attributes.md)<br/>
+[IDL öznitelikleri](idl-attributes.md)<br/>
 [Arabirim Öznitelikleri](interface-attributes.md)<br/>
 [Sınıf Öznitelikleri](class-attributes.md)<br/>
 [Yöntem Öznitelikleri](method-attributes.md)<br/>

@@ -9,10 +9,10 @@ helpviewer_keywords:
 - include directive (#include)
 ms.assetid: 17067dc0-8db1-4f2d-b43e-ec12ecf83238
 ms.openlocfilehash: 7ffccb34d52f8ffa1e6b9cc64a58d3471d02ac92
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59038987"
 ---
 # <a name="include-directive-cc"></a>#include Yönergesi (C/C++)
@@ -69,7 +69,7 @@ Bu örnek DEFS tarafından belirtilen dosyanın içeriklerini ekler. Kaynak prog
 
 Dahil etme dosyaları iç içe geçmiş en fazla 10 düzeye kadar devam eder. İç içe **#include** olan işlendiğinde, önişlemci kapsayan içerik dosyasını orijinal kaynak dosyasına eklemeye devam eder.
 
-**Microsoft'a Özgü**
+**Microsoft'a özgü**
 
 Dahil edilebilecek kaynak dosyalarını bulmak için önişlemci ilk tarafından belirtilen dizinleri arar **/I** derleyici seçeneği. Varsa **/I** seçeneği mevcut değil veya başarısız olursa, önişlemci INCLUDE ortam değişkeni köşeli ayraç içindeki içerik dosyalarını bulmak için kullanır. INCLUDE ortam değişkeni ve **/I** derleyici seçeneği noktalı virgülle ayırarak birden fazla yol içerebilir (**;**). Kapsamında birden fazla dizin görünüyorsa **/I** seçeneğini veya INCLUDE ortam değişkeni içinde önişlemci bunları göründükleri sırayla arar.
 
@@ -92,7 +92,7 @@ Dosya adı tam olarak bir dahil etme dosyası için bir yol olan belirtildiyse, 
 
 Olarak belirtilen dosyaları eklemek `#include "path-spec"`, dizin arama ana dosyanın başlar ve ardından üst dosyaların dizinleriyle devam eder. Diğer bir deyişle, arama içeren kaynak dosyayı içeren dizine göre başlar **#include** işleniyor yönergesi. Dosya adı köşeli ayraçlar içine alınan iki üst dosya yok ve dosyayı bulunamadı, arama gibi devam eder.
 
-**END Microsoft'a Özgü**
+**END Microsoft özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -10,15 +10,15 @@ helpviewer_keywords:
 - _mm_extract_si64 intrinsic
 ms.assetid: 459fdd72-cc54-4ee5-bbd5-d2c6067a88e7
 ms.openlocfilehash: e77ca5589ed50a4199921603afec1d9888c6cca5
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59040218"
 ---
 # <a name="mmextractsi64-mmextractisi64"></a>_mm_extract_si64, _mm_extracti_si64
 
-**Microsoft'a Özgü**
+**Microsoft'a özgü**
 
 Oluşturur `extrq` ilk bağımsız değişkeninin düşük 64 bit görüntüyü belirtilen BITS ayıklanacak yönergesi.
 
@@ -47,7 +47,7 @@ __m128i _mm_extracti_si64(
 *Uzunluğu*<br/>
 [in] Ayıklanacak alan uzunluğunu belirten bir tamsayı.
 
-*Dizin*<br/>
+*Index*<br/>
 [in] Ayıklanacak alan dizinini belirten bir tamsayı
 
 ## <a name="return-value"></a>Dönüş Değeri
@@ -108,7 +108,7 @@ result2 = 0x30eca86
 result3 = 0x30eca86
 ```
 
-**END Microsoft'a Özgü**
+**END Microsoft özgü**
 
 Telif Hakkı 2007 Gelişmiş Micro cihazlar, Inc. Tüm hakları saklıdır. Gelişmiş Micro cihazlar, Inc. izniyle üretilemez
 

@@ -1,5 +1,5 @@
 ---
-title: uyarı
+title: warning
 ms.date: 11/04/2016
 f1_keywords:
 - warning_CPP
@@ -11,10 +11,10 @@ helpviewer_keywords:
 - warning pragma
 ms.assetid: 8e9a0dec-e223-4657-b21d-5417ebe29cc8
 ms.openlocfilehash: 1341472af22582635207a2bdff93b4367fd59330
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59037756"
 ---
 # <a name="warning-pragma"></a>warning Pragması
@@ -38,7 +38,7 @@ Aşağıdaki uyarı-specifier parametreleri büyük/küçük harf kullanılabili
 |*1, 2, 3, 4*|Belirtilen düzeyi için belirtilen uyarı geçerlidir. Bu da varsayılan olarak kapalıdır belirtilen bir uyarı açar.|
 |*default*|Uyarı davranışı, varsayılan değerine sıfırlayın. Bu da varsayılan olarak kapalıdır belirtilen bir uyarı açar. Uyarı, varsayılan olarak oluşturulan, belgelenen düzeyi.<br /><br /> Daha fazla bilgi için [derleyici uyarıları emin olan kapalı varsayılan](../preprocessor/compiler-warnings-that-are-off-by-default.md).|
 |*Devre dışı bırak*|Belirtilen uyarı iletileri sorun değil.|
-|*error*|Belirtilen uyarıları hata olarak bildirin.|
+|*Hata*|Belirtilen uyarıları hata olarak bildirin.|
 |*once*|Belirtilen iletileri yalnızca bir kez görüntülenir.|
 |*gösterme*|Yığına pragma geçerli durumunu, sonraki satır için belirtilen uyarı devre dışı bırakır ve böylece pragma durumu sıfırlama uyarısı yığın yığından açar.|
 

@@ -8,10 +8,10 @@ helpviewer_keywords:
 - .NET Framework (C++), Add References Dialog Box
 ms.assetid: 12b8f571-0f21-40b3-9404-5318a57e9cb5
 ms.openlocfilehash: dff057977e6b6ff0c36d3a888bc4d5c3aa778576
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59038773"
 ---
 # <a name="consuming-libraries-and-components"></a>Kitaplıklar ve bileşenleri kullanma
@@ -46,11 +46,11 @@ DLL uygulama çözümün bir parçası değilse, DLL dosyasına dışarı aktar�
 
 ## <a name="com-objects"></a>COM nesneleri
 
-Yerel C++ uygulamanızı bir COM nesnesi kullanmasını gerektiren durumlar ve söz konusu nesne ise *kayıtlı*, yapmanız gereken tek şey sonra CoCreateInstance çağırın ve nesneyi CLSID geçirin. Sistem, Windows kayıt defterinde bulun ve yükleyin. C + +/ CLI projesinin bir COM nesnesi olarak kullanabilir, aynı şekilde ya da ondan bir başvuru eklemeyi **başvuruları Ekle > COM** listesi ve aracılığıyla hangi kendi [çalışma zamanı çağrılabilir sarmalayıcı](/dotnet/framework/interop/runtime-callable-wrapper). 
+Yerel C++ uygulamanızı bir COM nesnesi kullanmasını gerektiren durumlar ve söz konusu nesne ise *kayıtlı*, yapmanız gereken tek şey sonra CoCreateInstance çağırın ve nesneyi CLSID geçirin. Sistem, Windows kayıt defterinde bulun ve yükleyin. A C++/CLI proje bir COM nesnesi olarak kullanabilir, aynı şekilde ya da ondan bir başvuru eklemeyi **başvuruları Ekle > COM** listesi ve aracılığıyla hangi kendi [çalışma zamanı çağrılabilir sarmalayıcı](/dotnet/framework/interop/runtime-callable-wrapper). 
 
 ## <a name="net-assemblies-and-windows-runtime-components"></a>.NET derlemelerini ve Windows çalışma zamanı bileşenleri
 
-UWP veya C + +/ CLI projeleri .NET derlemeleri veya Windows çalışma zamanı bileşenleri ekleyerek kullanan bir *başvuru* derleme veya bileşen için. Altında **başvuruları** düğüm UWP veya C + +/ CLI projesinin, sık kullanılan bileşenleri başvurular bakın. Sağ **başvuruları** düğümünde **Çözüm Gezgini** ortaya çıkarmak için **başvuru Yöneticisi** ve göz atma sisteme bilinen ek bileşenler. Tıklayın **Gözat** düğmesini herhangi bir özel bileşene bulunduğu klasöre gidin. .NET derlemelerini ve Windows çalışma zamanı bileşenleri yerleşik tür bilgilerini içerdiğinden, yöntemleri ve sınıfları sağ tıklayıp seçerek görüntüleyebileceğiniz **Nesne Tarayıcısı görünümünde**. 
+UWP içinde veya C++/CLI projeleri .NET derlemeleri veya Windows çalışma zamanı bileşenleri ekleyerek kullanan bir *başvuru* derleme veya bileşen için. Altında **başvuruları** bir UWP düğümünde veya C++/CLI proje sık kullanılan bileşenleri başvurular görürsünüz. Sağ **başvuruları** düğümünde **Çözüm Gezgini** ortaya çıkarmak için **başvuru Yöneticisi** ve göz atma sisteme bilinen ek bileşenler. Tıklayın **Gözat** düğmesini herhangi bir özel bileşene bulunduğu klasöre gidin. .NET derlemelerini ve Windows çalışma zamanı bileşenleri yerleşik tür bilgilerini içerdiğinden, yöntemleri ve sınıfları sağ tıklayıp seçerek görüntüleyebileceğiniz **Nesne Tarayıcısı görünümünde**. 
 
 ## <a name="reference-properties"></a>Başvuru özellikleri
 
@@ -80,9 +80,9 @@ ActiveX başvurusu özellikleri yalnızca COM bileşenleri başvurular için kul
 
    Başvurulan COM kitaplığından ya da ActiveX denetiminden birlikte çalışma derlemesi oluşturmak için kullanılan araç görüntüler.
 
-### <a name="assembly-reference-properties-ccli"></a>Derleme başvurusu özellikleri (C + +/ CLI)
+### <a name="assembly-reference-properties-ccli"></a>Derleme başvurusu özellikleri (C++/CLI)
 
-Derleme başvurusu özellikleri yüklenebilir yalnızca .NET Framework derlemelerine C + +/ CLI projeleri. .NET Framework derlemesi yalnızca seçildiğinde, bu özellikleri görüntülenir **başvuruları** bölmesi. Özellikleri değiştirilemez.
+Derleme başvurusu özellikleri, yalnızca içinde .NET Framework derlemelerine başvurular için kullanılabilir C++/CLI projeleri. .NET Framework derlemesi yalnızca seçildiğinde, bu özellikleri görüntülenir **başvuruları** bölmesi. Özellikleri değiştirilemez.
 
 - **Göreli yolu**
 
@@ -96,7 +96,7 @@ Aşağıdaki özellikler, çeşitli türlerdeki başvurular üzerinde kullanıla
 
    Başvurulan derlemenin bilgisayarın bir yapı sırasında hedef konuma otomatik olarak kopyalanıp kopyalanmayacağını belirtir.
 
-- **Yerel uydu derlemelerini kopyala (C + +/ CLI)**
+- **Yerel uydu derlemelerini kopyala (C++/CLI)**
 
    Başvurulan derlemenin uydu derlemelerinin bilgisayarın bir yapı sırasında hedef konuma otomatik olarak kopyalanıp kopyalanmayacağını belirtir. Yalnızca **Yereli Kopyala** olduğu **true**.
 
@@ -144,7 +144,7 @@ Aşağıdaki özellikleri, COM ve .NET derleme başvurularını bulunur ve deği
 
    .NET Frameworkassemblies için tam yolunu görüntüler. COM bileşenleri için GUID görüntüler.
 
-- **Etiketle**
+- **Etiket**
 
    Başvurunun etiketi görüntüler.
 
@@ -167,4 +167,4 @@ Aşağıdaki özellikleri, COM ve .NET derleme başvurularını bulunur ve deği
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [C++ projesi özellik Sayfa başvurusu](reference/property-pages-visual-cpp.md)<br>
-[C++ derleyicisi ayarlayın ve derleme Visual Studio özellikleri](working-with-project-properties.md)
+[Visual Studio’da C++ derleyicisi ve derleme özelliklerini ayarlama](working-with-project-properties.md)

@@ -8,10 +8,10 @@ helpviewer_keywords:
 - ODBC [C++], SQL implementation
 ms.assetid: e3923bc4-b317-4e0b-afd8-3cd403eb0faf
 ms.openlocfilehash: 8f93d97530068695359273b523e7d2ae46de01cb
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59037863"
 ---
 # <a name="sql"></a>SQL
@@ -47,12 +47,12 @@ Veritabanı sınıfları, SQL veri işleme dili (DML) olarak bilinen bir bölüm
 
 |SQL anahtar sözcüğü|Sihirbazlar ve veritabanı sınıfları bunu kullanın.|
 |-----------------|---------------------------------------------|
-|**SEÇ**|Tanımlamak için hangi tablolar ve sütunlar veri kaynağında kullanıma yöneliktir.|
+|**SELECT**|Tanımlamak için hangi tablolar ve sütunlar veri kaynağında kullanıma yöneliktir.|
 |**WHERE**|Bir filtre uygulamak için bu seçimi daraltır.|
-|**SIRALAMA ÖLÇÜTÜ**|Kayıt kümesi için bir sıralama düzeni uygulamak için.|
+|**ORDER BY**|Kayıt kümesi için bir sıralama düzeni uygulamak için.|
 |**EKLE**|Yeni kayıtlar için bir kayıt eklemek için.|
 |**DELETE**|Bir kayıt kümesinden kayıtları silmek için.|
-|**GÜNCELLEŞTİR**|Bir kaydın alanlarını değiştirmek için.|
+|**GÜNCELLEŞTİRME**|Bir kaydın alanlarını değiştirmek için.|
 
 Ayrıca, ODBC veritabanı sınıfları tanımak **çağrı** deyimleri, bazı veri kaynakları üzerinde önceden tanımlanmış sorgu (veya saklı yordam) aramak için kullanabilirsiniz. ODBC veritabanı sürücüsü, bu deyimler yorumlar ve her DBMS için uygun komut yerini alır.
 

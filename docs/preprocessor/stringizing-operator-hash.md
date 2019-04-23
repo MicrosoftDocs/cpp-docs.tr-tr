@@ -13,10 +13,10 @@ helpviewer_keywords:
 - '# preprocessor operator'
 ms.assetid: 1175dd19-4538-43b3-ad97-a008ab80e7b1
 ms.openlocfilehash: 4f23eea017197ae1f984e097bb3967c1228fef09
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59035721"
 ---
 # <a name="stringizing-operator-"></a>Dizeleyen İşleç (#)
@@ -78,4 +78,4 @@ FB1(F B)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Ön işlemci İşleçleri](../preprocessor/preprocessor-operators.md)
+[Ön İşlemci İşleçleri](../preprocessor/preprocessor-operators.md)

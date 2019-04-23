@@ -1,18 +1,18 @@
 ---
-title: Tanıtıcı nesne işleci (^) (C + +/ CLI ve C + +/ CX)
+title: Tanıtıcı nesne işleci (^) (C++/CLI ve C++/CX)
 ms.date: 10/12/2018
 ms.topic: reference
 helpviewer_keywords:
 - ^ handle to object [C++]
 ms.assetid: 70c411e6-be57-4468-a944-6ea7be89f392
 ms.openlocfilehash: bdf19b6b472cd4d224d749f59c75ca77d11c34f8
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59039919"
 ---
-# <a name="handle-to-object-operator---ccli-and-ccx"></a>Tanıtıcı nesne işleci (^) (C + +/ CLI ve C + +/ CX)
+# <a name="handle-to-object-operator---ccli-and-ccx"></a>Tanıtıcı nesne işleci (^) (C++/CLI ve C++/CX)
 
 *Tanıtıcı Bildiricisi* (`^`, "hat" olarak okunur), tür [belirticisi](../cpp/overview-of-declarators.md) sistem bir nesne olduğunu belirlediğinde, bildirilen nesnenin otomatik olarak silinmesi gerektiğini ifade etmek için artık erişilebilir.
 
@@ -223,5 +223,5 @@ Derleyici seçeneği: `/clr`
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[.NET ve UWP için bileşen uzantıları](component-extensions-for-runtime-platforms.md)<br/>
+[.NET ve UWP İçin Bileşen Uzantıları](component-extensions-for-runtime-platforms.md)<br/>
 [İzleme Başvurusu İşleci](tracking-reference-operator-cpp-component-extensions.md)

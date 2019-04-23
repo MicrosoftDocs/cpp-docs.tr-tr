@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3103
 ms.assetid: 7984bd3e-d51d-43e4-b6f4-08c1e9fb9704
 ms.openlocfilehash: 6a68e39ac92433eadacd666861f9e00431e4a34a
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
-ms.locfileid: "58780151"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59775939"
 ---
 # <a name="compiler-error-c3103"></a>Derleyici Hatası C3103
 

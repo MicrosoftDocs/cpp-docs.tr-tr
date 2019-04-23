@@ -12,10 +12,10 @@ helpviewer_keywords:
 - drivers [C++], ODBC
 ms.assetid: b8652790-3437-4e7d-bc83-6ea6981f008b
 ms.openlocfilehash: ac893981ff8c697dc090f1e6ad5ac61886a69f99
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59035870"
 ---
 # <a name="odbc-administrator"></a>ODBC Yöneticisi

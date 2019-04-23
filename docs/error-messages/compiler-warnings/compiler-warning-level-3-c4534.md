@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C4534
 ms.assetid: ec2adf3b-d7a1-4005-bb0c-5d219df78dc8
 ms.openlocfilehash: 81445ff42aca78a8e40e9c88eff4bb76a41a8669
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58772663"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59776905"
 ---
 # <a name="compiler-warning-level-3-c4534"></a>Derleyici Uyarısı (Düzey 3) C4534
 

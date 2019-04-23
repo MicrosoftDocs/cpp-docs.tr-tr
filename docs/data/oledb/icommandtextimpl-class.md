@@ -23,10 +23,10 @@ helpviewer_keywords:
 - SetCommandText method
 ms.assetid: 9c2715cc-1e55-4468-8327-85341617ed46
 ms.openlocfilehash: de9e930056db7b91968ca1ce471a87809693376a
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59037110"
 ---
 # <a name="icommandtextimpl-class"></a>ICommandTextImpl Sınıfı
@@ -111,5 +111,5 @@ CComBSTR m_strCommandText;
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[OLE DB Sağlayıcı Şablonları](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>
+[OLE DB sağlayıcı şablonları](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>
 [OLE DB Sağlayıcı Şablonu Mimarisi](../../data/oledb/ole-db-provider-template-architecture.md)

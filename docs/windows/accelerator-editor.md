@@ -34,10 +34,10 @@ helpviewer_keywords:
 - accelerator tables [C++], changing properties
 ms.assetid: 013c30b6-5d61-4f1c-acef-8bd15bed7060
 ms.openlocfilehash: f5ae9880719a3a8b799ea8deb751b6f0a85542bd
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59041130"
 ---
 # <a name="accelerator-editor-c"></a>Hızlandırıcı Düzenleyicisi (C++)
@@ -71,14 +71,14 @@ Her hızlandırıcının **kimliği** üç özelliğe sahiptir: **Değiştiricis
 
    |Değer|Açıklama|
    |-----------|-----------------|
-   |**None**|Kullanıcı yalnızca **anahtar** değeri.<br/><br/>Bu değer en etkili bir şekilde 026 aracılığıyla 001 ASCII/ANSI değerleri olarak yorumlanıp kullanılır ^ A-^ Z (**Ctrl + A** aracılığıyla **Ctrl + Z**).|
+   |**Yok.**|Kullanıcı yalnızca **anahtar** değeri.<br/><br/>Bu değer en etkili bir şekilde 026 aracılığıyla 001 ASCII/ANSI değerleri olarak yorumlanıp kullanılır ^ A-^ Z (**Ctrl + A** aracılığıyla **Ctrl + Z**).|
    |**Alt**|Kullanıcı gerekir basın **Alt** önce **anahtar** değeri.|
-   |**Ctrl**|Kullanıcı gerekir basın **Ctrl** önce **anahtar** değer, ASCII türü geçerli değil.|
-   |**Shift**|Kullanıcı gerekir basın **Shift** önce **anahtar** değeri.|
-   |**Ctrl+Alt**|Kullanıcı gerekir basın **Ctrl** ve **Alt** önce **anahtar** değer, ASCII türü geçerli değil.|
-   |**Ctrl+Shift**|Kullanıcı gerekir basın **Ctrl** ve **Shift** önce **anahtar** değer, ASCII türü geçerli değil.|
+   |**CTRL**|Kullanıcı gerekir basın **Ctrl** önce **anahtar** değer, ASCII türü geçerli değil.|
+   |**Kaydırma**|Kullanıcı gerekir basın **Shift** önce **anahtar** değeri.|
+   |**Ctrl + Alt**|Kullanıcı gerekir basın **Ctrl** ve **Alt** önce **anahtar** değer, ASCII türü geçerli değil.|
+   |**CTRL + üst karakter**|Kullanıcı gerekir basın **Ctrl** ve **Shift** önce **anahtar** değer, ASCII türü geçerli değil.|
    |**Alt + üst karakter**|Kullanıcı gerekir basın **Alt** ve **Shift** önce **anahtar** değer, ASCII türü geçerli değil.|
-   |**Ctrl+Alt+Shift**|Kullanıcı gerekir basın **Ctrl**, **Alt**, ve **Shift** önce **anahtar** değer, ASCII türü geçerli değil.|
+   |**Ctrl + Alt + üst karakter**|Kullanıcı gerekir basın **Ctrl**, **Alt**, ve **Shift** önce **anahtar** değer, ASCII türü geçerli değil.|
 
 **Anahtar** özelliği Hızlandırıcı olarak kullanılacak gerçek anahtarı ayarlar.
 

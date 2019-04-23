@@ -8,15 +8,15 @@ helpviewer_keywords:
 - _mm_stream_si64x intrinsic
 ms.assetid: 114c2cd0-085f-41aa-846e-87bdd56c9ee7
 ms.openlocfilehash: d7f7a75be1602fbb70a230b0dd3a791be99d092a
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59039604"
 ---
 # <a name="mmstreamsi64x"></a>_mm_stream_si64x
 
-**Microsoft'a Özgü**
+**Microsoft'a özgü**
 
 MOVNTI yönerge oluşturur. Verileri Yazar `Source` tarafından belirtilen bellek konumuna `Dest`, önbellekler kirletmesini olmadan.
 
@@ -75,7 +75,7 @@ int main()
 0 ffffffffffff 0 0
 ```
 
-**END Microsoft'a Özgü**
+**END Microsoft özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

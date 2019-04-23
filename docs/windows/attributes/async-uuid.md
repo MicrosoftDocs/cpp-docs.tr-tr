@@ -7,10 +7,10 @@ helpviewer_keywords:
 - async_uuid attribute
 ms.assetid: 235cb0d7-be58-4dd9-983c-e2a21bbc42c6
 ms.openlocfilehash: 4c2bca9165d8b23f8cfa4f0f5523c882fd2f52bf
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59035802"
 ---
 # <a name="asyncuuid"></a>async_uuid
@@ -52,7 +52,7 @@ __interface ICustom {
 
 |||
 |-|-|
-|**Uygulandığı öğe:**|`interface`|
+|**İçin geçerlidir**|`interface`|
 |**Tekrarlanabilir**|Hayır|
 |**Gerekli öznitelikleri**|Yok.|
 |**Geçersiz öznitelikler**|**çift**, **dispinterface**|
@@ -61,5 +61,5 @@ __interface ICustom {
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[IDL Öznitelikleri](idl-attributes.md)<br/>
+[IDL öznitelikleri](idl-attributes.md)<br/>
 [Arabirim Öznitelikleri](interface-attributes.md)

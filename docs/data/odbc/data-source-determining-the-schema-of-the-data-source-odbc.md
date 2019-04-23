@@ -7,10 +7,10 @@ helpviewer_keywords:
 - data sources [C++], determining schema
 ms.assetid: 17284acb-eb10-4f27-9944-ad1d973c0b05
 ms.openlocfilehash: c419a3ac2d870e6a85675492ee6c9b726427a0e9
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59040036"
 ---
 # <a name="data-source-determining-the-schema-of-the-data-source-odbc"></a>Veri kaynağı: (ODBC) veri kaynağının şemasını belirleme

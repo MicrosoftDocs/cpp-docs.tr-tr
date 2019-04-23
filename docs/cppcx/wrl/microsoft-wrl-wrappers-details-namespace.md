@@ -14,10 +14,10 @@ helpviewer_keywords:
 - Details namespace
 ms.assetid: 6d3f04ac-9b53-4a82-a188-a85309ec34a4
 ms.openlocfilehash: deccd4519b2ddf18725dca5af13b94ac79d6e280
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59038728"
 ---
 # <a name="microsoftwrlwrappersdetails-namespace"></a>Microsoft::WRL::Wrappers::Details Ad Alanı
@@ -43,7 +43,7 @@ namespace Microsoft::WRL::Wrappers::Details;
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[CompareStringOrdinal Yöntemi](comparestringordinal-method.md)|Belirtilen iki karşılaştırır `HSTRING` nesneleri ve bir sıralama düzeni kendi göreli konumunu belirten bir tamsayı döndürür.|
+|[CompareStringOrdinal Metodu](comparestringordinal-method.md)|Belirtilen iki karşılaştırır `HSTRING` nesneleri ve bir sıralama düzeni kendi göreli konumunu belirten bir tamsayı döndürür.|
 
 ## <a name="requirements"></a>Gereksinimler
 

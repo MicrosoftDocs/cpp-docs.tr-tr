@@ -7,10 +7,10 @@ helpviewer_keywords:
 - unique attribute
 ms.assetid: abd7ed14-5ae7-44a8-8333-0058e9c92b2f
 ms.openlocfilehash: c5d7a2d60dc295a4390f777a9ff3718f41321ddd
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59038796"
 ---
 # <a name="unique-c"></a>benzersiz (C++)
@@ -37,7 +37,7 @@ Bkz: [ref](ref-cpp.md) örnek kullanımını örneğin **benzersiz**.
 
 |||
 |-|-|
-|**Uygulandığı öğe:**|**TypeDef**, **yapı**, **birleşim**, parametre arabirim, arabirim yöntemi|
+|**İçin geçerlidir**|**TypeDef**, **yapı**, **birleşim**, parametre arabirim, arabirim yöntemi|
 |**Tekrarlanabilir**|Hayır|
 |**Gerekli öznitelikleri**|None|
 |**Geçersiz öznitelikler**|None|
@@ -46,6 +46,6 @@ Bkz: [ref](ref-cpp.md) örnek kullanımını örneğin **benzersiz**.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[IDL Öznitelikleri](idl-attributes.md)<br/>
+[IDL öznitelikleri](idl-attributes.md)<br/>
 [Typedef, Enum, Union ve Struct Öznitelikleri](typedef-enum-union-and-struct-attributes.md)<br/>
 [Parametre Öznitelikleri](parameter-attributes.md)

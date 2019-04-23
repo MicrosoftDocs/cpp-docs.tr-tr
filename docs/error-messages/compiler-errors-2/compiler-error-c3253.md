@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3253
 ms.assetid: da40be26-0f78-4730-8727-ad11cddf8869
 ms.openlocfilehash: 5d161dfab8dff48a1ddd5a8a5036c0bb4d5549aa
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58773391"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59775772"
 ---
 # <a name="compiler-error-c3253"></a>Derleyici Hatası C3253
 

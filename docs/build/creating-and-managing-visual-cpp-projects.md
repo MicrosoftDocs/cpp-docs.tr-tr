@@ -12,10 +12,10 @@ helpviewer_keywords:
 - ATL projects
 ms.assetid: 11003cd8-9046-4630-a189-a32bf3b88047
 ms.openlocfilehash: b4772b9bd625a542a18039386fefe42840ab65b1
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59038044"
 ---
 # <a name="visual-studio-projects---c"></a>Visual Studio projeleri - C++
@@ -60,16 +60,16 @@ Hata listesinde basabilirsiniz **F1** vurgulanan hatada kendi belgeleri konusuna
 
 ## <a name="in-this-section"></a>Bu Bölümde
 
-[C++ derleyicisi ayarlayın ve derleme Visual Studio özellikleri](working-with-project-properties.md)<br/>
+[Visual Studio’da C++ derleyicisi ve derleme özelliklerini ayarlama](working-with-project-properties.md)<br/>
 Proje ayarlarınızı belirtmek için özellik sayfaları ve özellik sayfalarını kullanma
 
-[Başvuru kitaplıkları ve derleme zamanında bileşenleri](adding-references-in-visual-cpp-projects.md)<br/>
+[Derleme zamanında kitaplıklara ve bileşenlere başvurma](adding-references-in-visual-cpp-projects.md)<br/>
 Nasıl bir projede kitaplıklar, DLL'ler COM ve .NET bileşenleri içerir.
  
-[Proje çıktı dosyalarını düzenleme](how-to-organize-project-output-files-for-builds.md)<br/>
+[Proje Çıkış Dosyalarını Düzenleme](how-to-organize-project-output-files-for-builds.md)<br/>
 Yapı işlemi sırasında oluşturulan yürütülebilir dosyalarının konumunu özelleştirmek nasıl.
 
-[Özel derleme adımlarını ve derleme olaylarını](understanding-custom-build-steps-and-build-events.md)<br/>
+[Özel Derleme Adımları ve Derleme Olayları](understanding-custom-build-steps-and-build-events.md)<br/>
 Derleme işlemi sırasında isteğe bağlı bir komut ekleme noktası belirtilmemiş.
 
 [Mevcut koddan proje oluşturma](how-to-create-a-cpp-project-from-existing-code.md)<br/>
@@ -77,4 +77,4 @@ Kaynak dosyaları gevşek koleksiyonundan yeni bir Visual Studio projesi oluştu
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Projeler ve yapı sistemi](projects-and-build-systems-cpp.md)<br>
+[Projeler ve derleme sistemleri](projects-and-build-systems-cpp.md)<br>

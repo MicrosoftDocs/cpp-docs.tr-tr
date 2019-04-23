@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C4687
 ms.assetid: 2f28e0b1-7358-4c88-bd70-aad8f0aa004c
 ms.openlocfilehash: 1978e1a35ba5b5d59b5961a21378d8af6921d145
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
-ms.locfileid: "58778669"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59776320"
 ---
 # <a name="compiler-warning-c4687"></a>Derleyici Uyarısı C4687
 

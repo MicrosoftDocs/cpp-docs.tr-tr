@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3913
 ms.assetid: a678bfce-9524-470d-9f23-7d08ecb972c8
 ms.openlocfilehash: 3a38f7bffd56f025510e092ad37b5f810cb11a9b
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
-ms.locfileid: "58776524"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59776957"
 ---
 # <a name="compiler-error-c3913"></a>Derleyici Hatası C3913
 

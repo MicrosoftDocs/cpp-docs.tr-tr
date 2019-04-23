@@ -8,15 +8,15 @@ helpviewer_keywords:
 - _mm_cvtsi64x_ss intrinsic
 ms.assetid: 01e5d321-c18a-46fd-a6f6-324364514e1f
 ms.openlocfilehash: 3ba9dc56cbb027e8cf9f31d293b3f96908aff5e4
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59039786"
 ---
 # <a name="mmcvtsi64xss"></a>_mm_cvtsi64x_ss
 
-**Microsoft'a Özgü**
+**Microsoft'a özgü**
 
 Genişletilmiş x64 oluşturur sürüm skaler tek duyarlık Floating-Point değerine dönüştürme 64-Bit tamsayı (`cvtsi2ss`) yönerge.
 
@@ -87,7 +87,7 @@ int main()
 54.000000 0.000000 0.000000 0.000000
 ```
 
-**END Microsoft'a Özgü**
+**END Microsoft özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

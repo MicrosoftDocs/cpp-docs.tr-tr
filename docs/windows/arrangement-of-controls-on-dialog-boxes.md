@@ -81,10 +81,10 @@ helpviewer_keywords:
 - scroll bars [C++], width
 ms.assetid: 832491cf-98af-42e5-a854-2cb135fd45c6
 ms.openlocfilehash: 878b7371dfa77880d68f1001444ed44b84d7240c
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59037427"
 ---
 # <a name="how-to-layout-controls-c"></a>Nasıl yapılır: Düzen denetimleri (C++)
@@ -114,7 +114,7 @@ Denetimler ile iletişim kutularında düzenleyebilirsiniz **iletişim kutusu D�
 |Özellik|Açıklama|
 |---|---|
 |**Düzen kılavuzları**|Düzen kılavuzları ayarlarını görüntüler.|
-|**None**|Düzen Araçları gizler.|
+|**Yok.**|Düzen Araçları gizler.|
 |**Cetveller ve Kılavuzlar**|Etkin olduğunda, düzeni araçları Cetveller ekler ve kılavuzları cetvellerin yerleştirilmesini sağlar. Varsayılan, kenar boşlukları kılavuzlardır.|
 |**Kılavuz**|Düzen kılavuzunu oluşturur. Yeni denetimler kılavuza otomatik olarak uyum sağlar.|
 |**Kılavuz aralığı**|Kılavuz aralığı Ayarları iletişim kutusu birimleri (Dlu'lar) görüntüler.|
@@ -249,7 +249,7 @@ Bir denetimi yeniden boyutlandırmak için boyutlandırma tutamaçlarını kulla
    |-----|-----------|
    |**Hizala**|Seçili denetimleri, sol kenarı boyunca hizalar.|
    |**Merkezleri**|Seçili denetimleri yatay olarak kendi center noktalarını boyunca hizalar.|
-   |**Haklar**|Seçili denetimleri kendi sağ kenarı boyunca hizalar.|
+   |**Hakları**|Seçili denetimleri kendi sağ kenarı boyunca hizalar.|
    |**Kırpın**|Seçili denetimleri üst kenarları boyunca hizalar.|
    |**Ortaları**|Seçili denetimleri dikey olarak kendi orta noktaları boyunca hizalar.|
    |**Alta**|Seçili denetimleri alt kenarları boyunca hizalar.|
@@ -274,7 +274,7 @@ Bir denetimi yeniden boyutlandırmak için boyutlandırma tutamaçlarını kulla
 
    |Düzenleme|Açıklama|
    |---|---|
-   |**Sağ**|Basma düğmelerini iletişim kutusunun sağ kenarı hizalar.|
+   |**sağ**|Basma düğmelerini iletişim kutusunun sağ kenarı hizalar.|
    |**alt**|Basma düğmelerini iletişim kutusunun alt kenarı hizalar.|
 
    Bir denetimin bir itme düğmesi dışında seçerseniz konumuna etkilenmez.
@@ -286,5 +286,5 @@ Win32
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [İletişim kutusu denetimleri yönetme](controls-in-dialog-boxes.md)<br/>
-[Nasıl yapılır: Ekleme, düzenleme veya silme denetimleri](adding-editing-or-deleting-controls.md)<br/>
-[Nasıl yapılır: Erişimi denetlemek ve değerleri tanımlayın](defining-mnemonics-access-keys.md)<br/>
+[Nasıl yapılır: Denetimleri Ekleme, Düzenleme veya Silme](adding-editing-or-deleting-controls.md)<br/>
+[Nasıl yapılır: Denetim Erişimini ve Değerlerini Tanımlama](defining-mnemonics-access-keys.md)<br/>

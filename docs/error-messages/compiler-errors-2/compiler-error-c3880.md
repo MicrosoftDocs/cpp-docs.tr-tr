@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3880
 ms.assetid: b0e05d1e-32d0-4034-9246-f37d23573ea9
 ms.openlocfilehash: 0b169309db88291f8a83b6d1192787b6396e84a5
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58770516"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59776341"
 ---
 # <a name="compiler-error-c3880"></a>Derleyici Hatası C3880
 

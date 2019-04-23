@@ -11,10 +11,10 @@ helpviewer_keywords:
 - recordsets [C++], joining tables
 ms.assetid: ca720900-a156-4780-bf01-4293633bea64
 ms.openlocfilehash: 9e589f00ec0512794d14accc6bb33c0e7adbd378
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59035419"
 ---
 # <a name="recordset-performing-a-join-odbc"></a>Kayıt kümesi: Birleşim gerçekleştirme (ODBC)

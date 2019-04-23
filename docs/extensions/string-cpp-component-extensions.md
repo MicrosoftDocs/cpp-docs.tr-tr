@@ -1,5 +1,5 @@
 ---
-title: Dize (C + +/ CLI ve C + +/ CX)
+title: Dize (C++/CLI ve C++/CX)
 ms.date: 10/08/2018
 ms.topic: reference
 helpviewer_keywords:
@@ -7,13 +7,13 @@ helpviewer_keywords:
 - /clr compiler option [C++], string support
 ms.assetid: c695f965-9be0-4e20-9661-373bfee6557e
 ms.openlocfilehash: 8440ddf510f99618c28a6b6d585c8628df85f9cb
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59038547"
 ---
-# <a name="string--ccli-and-ccx"></a>Dize (C + +/ CLI ve C + +/ CX)
+# <a name="string--ccli-and-ccx"></a>Dize (C++/CLI ve C++/CX)
 
 Windows çalışma zamanı ve ortak dil çalışma zamanı dizeleri, ayrılan bellek otomatik olarak yönetilen nesneler olarak temsil eder. Diğer bir deyişle, kapsamdan dize değişkeni çıktığında veya uygulamanızı sona erdiğinde bir dize için belleği açıkça iptal gerekmez. Bir dize nesnesi ömrü otomatik olarak yönetilecek olduğunu belirtmek için ile dize türü bildirin [tanıtıcı nesnesi (^)](handle-to-object-operator-hat-cpp-component-extensions.md) değiştiricisi.
 
@@ -55,7 +55,7 @@ Derleyici, bunların davranışını özelleştirmek için geçersiz kılabilirs
 Geçirildiğinde bir <xref:System.String>, derleyici kutusuna, gerekirse ve ardından nesne (ToString) dizesi ile birleştirin.
 
 > [!NOTE]
-> Giriş işaretini ("^") için C + tanıtıcı bildirilmiş bir değişken gösterir +/ CLI yönetilen nesne.
+> Giriş işaretini ("^") bildirilmiş bir değişken için bir tanıtıcı olduğunu belirten bir C++/CLI yönetilen nesne.
 
 Daha fazla bilgi için [dize ve karakter değişmez değerleri](../cpp/string-and-character-literals-cpp.md).
 
@@ -261,6 +261,6 @@ System.String
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[.NET ve UWP için bileşen uzantıları](component-extensions-for-runtime-platforms.md)<br/>
+[.NET ve UWP İçin Bileşen Uzantıları](component-extensions-for-runtime-platforms.md)<br/>
 [Dize ve Karakter Değişmez Değerleri](../cpp/string-and-character-literals-cpp.md)<br/>
 [/clr (Ortak Dil Çalışma Zamanı Derlemesi)](../build/reference/clr-common-language-runtime-compilation.md)

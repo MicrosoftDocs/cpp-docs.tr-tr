@@ -9,10 +9,10 @@ helpviewer_keywords:
 - optimize pragma
 ms.assetid: cb13c1cc-186a-45bc-bee7-95a8de7381cc
 ms.openlocfilehash: 9f5240fc59f59a71ddb3d18b67fadf3463a0d1ea
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59035406"
 ---
 # <a name="optimize"></a>optimize
@@ -35,9 +35,9 @@ ms.locfileid: "59035406"
 
 |Parametre|İyileştirme türü|
 |--------------------|--------------------------|
-|*G*|Genel iyileştirmeler sağlar.|
+|*g*|Genel iyileştirmeler sağlar.|
 |*s* veya *t*|Makine kodu kısa veya hızlı dizisi belirtin.|
-|*y*|Programın yığınında çerçeve işaretçileri oluşturur.|
+|*Y*|Programın yığınında çerçeve işaretçileri oluşturur.|
 
 İle kullanılan aynı harflerini bunlar [/O](../build/reference/o-options-optimize-code.md) derleyici seçenekleri. Örneğin, aşağıdaki pragma değerine eşdeğer olan `/Os` derleyici seçeneği:
 

@@ -13,10 +13,10 @@ helpviewer_keywords:
 - SetString method
 ms.assetid: 138dc4de-c7c3-478c-863e-431e48249027
 ms.openlocfilehash: 6ba56143beb3411734899839a46ab42992dfa4d8
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59035669"
 ---
 # <a name="cdynamicstringaccessor-class"></a>CDynamicStringAccessor Sınıfı
@@ -110,7 +110,7 @@ HRESULT SetString(const WCHAR* pColumnName,
 *pColumnName*<br/>
 [in] Sütun adı içeren bir karakter dizesine bir işaretçi.
 
-*veri*<br/>
+*Veri*<br/>
 [in] Belirtilen sütuna yazılacak dize verileri için bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri

@@ -6,10 +6,10 @@ f1_keywords:
 - implements/Microsoft::WRL::Details::MakeAndInitialize
 ms.assetid: 71ceeb12-d2a2-4317-b010-3dcde1b39467
 ms.openlocfilehash: 14ae5117194748748ceecf97ac83fc8813bba2d3
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59037490"
 ---
 # <a name="makeandinitialize-function"></a>MakeAndInitialize İşlevi

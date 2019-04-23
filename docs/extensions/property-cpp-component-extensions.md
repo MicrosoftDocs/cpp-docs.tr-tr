@@ -1,5 +1,5 @@
 ---
-title: özellik (C + +/ CLI ve C + +/ CX)
+title: özellik (C++/CLI ve C++/CX)
 ms.date: 10/12/2018
 ms.topic: reference
 f1_keywords:
@@ -9,13 +9,13 @@ helpviewer_keywords:
 - property keyword [C++]
 ms.assetid: cc79d2b2-f013-4d81-8252-eece97a18704
 ms.openlocfilehash: 8ec76db37cffb1b3d15447165300bedf1a8771c9
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59038812"
 ---
-# <a name="property--ccli-and-ccx"></a>özellik (C + +/ CLI ve C + +/ CX)
+# <a name="property--ccli-and-ccx"></a>özellik (C++/CLI ve C++/CX)
 
 Bildiren bir *özelliği*, görür ve bir veri üyesi veya bir dizi öğesine gibi erişilen bir üye işlev olduğu.
 
@@ -61,7 +61,7 @@ property type default[index_list] {
 
 ### <a name="parameters"></a>Parametreler
 
-* türü*<br/>
+*type*<br/>
 Özellik değeri ve bu nedenle özelliği veri türü.
 
 *property_name*<br/>
@@ -86,7 +86,7 @@ Ayarlama işleminin özelliğine atayın veya bir get işlemi almak için değer
 
 ## <a name="windows-runtime"></a>Windows Çalışma Zamanı
 
-Daha fazla bilgi için [özellikler (C + +/ CX)](https://msdn.microsoft.com/library/windows/apps/hh755807.aspx).
+Daha fazla bilgi için [özellikleri (C++/CX)](https://msdn.microsoft.com/library/windows/apps/hh755807.aspx).
 
 ### <a name="requirements"></a>Gereksinimler
 
@@ -113,10 +113,10 @@ modifier property type default[index];
 
 ### <a name="parameters"></a>Parametreler
 
-* değiştiricisi*<br/>
+*Değiştiricisi*<br/>
 Özellik bildiriminde ya da bir get/set erişimcisine yöntemi kullanılabilir değiştiricisi. Olası değerler **statik** ve **sanal**.
 
-* türü*<br/>
+*type*<br/>
 Özelliği tarafından temsil edilen değerin türü.
 
 *property_name*<br/>
@@ -215,4 +215,4 @@ test
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[.NET ve UWP için bileşen uzantıları](component-extensions-for-runtime-platforms.md)
+[.NET ve UWP İçin Bileşen Uzantıları](component-extensions-for-runtime-platforms.md)

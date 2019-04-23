@@ -50,10 +50,10 @@ helpviewer_keywords:
 - Unprepare method
 ms.assetid: 0760bfc5-b9ee-4aee-8e54-31bd78714d3a
 ms.openlocfilehash: 406a78ff1958d565fcc74781f6a63d4784f48bfc
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59039734"
 ---
 # <a name="ccommand-class"></a>CCommand Sınıfı
@@ -93,15 +93,15 @@ Birden çok sonuç döndüren bir OLE DB komutu kullanmak için belirtin [CMulti
 
 |||
 |-|-|
-|[Close](#close)|Geçerli komut kapatır.|
+|[Kapat](#close)|Geçerli komut kapatır.|
 |[GetNextResult](#getnextresult)|Birden çok sonuç kümeleri kullanırken, sonraki sonuç getirir.|
-|[Open](#open)|Yürütür ve isteğe bağlı olarak komut bağlar.|
+|[açın](#open)|Yürütür ve isteğe bağlı olarak komut bağlar.|
 
 ### <a name="inherited-methods"></a>Devralınan yöntemleri
 
 |||
 |-|-|
-|[Create](#create)|Belirtilen oturum için yeni bir komut oluşturur, ardından komut metni ayarlar.|
+|[Oluşturma](#create)|Belirtilen oturum için yeni bir komut oluşturur, ardından komut metni ayarlar.|
 |[CreateCommand](#createcommand)|Yeni bir komut oluşturur.|
 |[GetParameterInfo](#getparameterinfo)|Komut parametreleri, adlarını ve türlerini listesini alır.|
 |[Hazırlama](#prepare)|Doğrular ve geçerli komutu en iyi duruma getirir.|

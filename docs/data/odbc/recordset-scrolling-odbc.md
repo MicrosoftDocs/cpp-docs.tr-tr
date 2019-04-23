@@ -12,10 +12,10 @@ helpviewer_keywords:
 - Move method (recordsets)
 ms.assetid: f38d2dcb-1e88-4e41-af25-98b00c276be4
 ms.openlocfilehash: 5df8151664bd7e726087cb5323c1e4622264ad23
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59040062"
 ---
 # <a name="recordset-scrolling-odbc"></a>Kayıt kümesi: Kaydırma (ODBC)

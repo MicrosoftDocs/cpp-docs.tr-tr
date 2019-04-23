@@ -45,15 +45,15 @@ helpviewer_keywords:
 - InterlockedIncrement intrinsic
 ms.assetid: 37700615-f372-438b-bcef-d76e11839482
 ms.openlocfilehash: b41ce5c744bde7cd89cabed6c829cfb06da75129
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59039364"
 ---
 # <a name="interlockedincrement-intrinsic-functions"></a>_Interlockedıncrement iç işlevleri
 
-**Microsoft'a Özgü**
+**Microsoft'a özgü**
 
 Win32 Windows SDK'sı derleyici iç desteği [InterlockedIncrement](/windows/desktop/api/winnt/nf-winnt-interlockedincrement) işlevi.
 
@@ -132,10 +132,10 @@ Bu yordamlar, yalnızca iç öğe olarak kullanılabilir.
 
 Nasıl kullanılacağını gösteren bir örnek `_InterlockedIncrement`, bkz: [_ınterlockeddecrement](../intrinsics/interlockeddecrement-intrinsic-functions.md).
 
-**END Microsoft'a Özgü**
+**END Microsoft özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)<br/>
-[anahtar sözcükler](../cpp/keywords-cpp.md)<br/>
+[Anahtar Sözcükler](../cpp/keywords-cpp.md)<br/>
 [x86 Derleyicisi ile Çakışma](../build/x64-software-conventions.md#conflicts-with-the-x86-compiler)

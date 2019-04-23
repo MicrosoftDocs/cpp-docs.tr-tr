@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3910
 ms.assetid: cfcbe620-b463-463b-95ea-2d60ad33ebb5
 ms.openlocfilehash: 186cd67d77e9aafbfe6a7d9dc18afb2bdbd94f0c
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58768815"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59776526"
 ---
 # <a name="compiler-error-c3910"></a>Derleyici Hatası C3910
 

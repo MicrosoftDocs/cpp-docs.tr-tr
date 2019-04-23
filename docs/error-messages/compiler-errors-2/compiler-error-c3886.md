@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3886
 ms.assetid: 485f6c12-cc1b-4146-9034-409a0a5e615e
 ms.openlocfilehash: e9e9d4b478d5b53e50203d1f009295e1da444f2d
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58770726"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59775849"
 ---
 # <a name="compiler-error-c3886"></a>Derleyici Hatası C3886
 

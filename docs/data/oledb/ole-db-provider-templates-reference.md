@@ -7,10 +7,10 @@ helpviewer_keywords:
 - OLE DB provider templates
 ms.assetid: 518358f0-bab1-4de9-bce9-4062cc87c11f
 ms.openlocfilehash: e1d6be9687085361edd9141d8fb471e21b6f6376
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59038683"
 ---
 # <a name="ole-db-provider-templates-reference"></a>OLE DB Sağlayıcı Şablonları Başvurusu
@@ -21,7 +21,7 @@ Sınıfları aşağıdaki adlandırma kuralını kullanabilirsiniz: desen ile ad
 
 ## <a name="session-classes"></a>Oturum sınıfı
 
-[Idbcreatesessionımpl](../../data/oledb/idbcreatesessionimpl-class.md)<br/>
+[IDBCreateSessionImpl](../../data/oledb/idbcreatesessionimpl-class.md)<br/>
 Veri kaynağı nesnesinin yeni bir oturum oluşturur ve yeni oluşturulan oturum istenen arabirim döndürür. Veri kaynağı nesneleri zorunlu arabirimde.
 
 [ISessionPropertiesImpl](../../data/oledb/isessionpropertiesimpl-class.md)<br/>
@@ -42,7 +42,7 @@ OLE DB sağlayıcıları uygulamak gerektiren bir `HACCESSOR`, bir dizi için bi
 [Icolumnsınfoımpl](../../data/oledb/icolumnsinfoimpl-class.md)<br/>
 Sağlayıcı sütun eşlemesi tarafından tanımlanan statik bir işlevi temsil eder. Zorunlu bir arabirim satır kümeleri ve komutları.
 
-[Iconverttypeımpl](../../data/oledb/iconverttypeimpl-class.md)<br/>
+[IConvertTypeImpl](../../data/oledb/iconverttypeimpl-class.md)<br/>
 Bir komutu veya bir satır kümesi tür dönüştürmeleri kullanılabilirliği hakkında bilgi sağlar. Zorunlu komutları, satır kümeleri ve dizin satır kümeleri. Implements `IConvertType` OLE DB tarafından sağlanan dönüştürme nesne için temsilci tarafından arabirimi.
 
 [IDBSchemaRowsetImpl](../../data/oledb/idbschemarowsetimpl-class.md)<br/>
@@ -63,7 +63,7 @@ Implements `IRowsetIdentity` arabirimi, iki veri satırını aynı olup olmadı�
 [Irowsetımpl](../../data/oledb/irowsetimpl-class.md)<br/>
 Bir uygulamasını sağlar `IRowset` temel satır kümesi arabirimi olan arabirimi.
 
-[Irowsetınfoımpl](../../data/oledb/irowsetinfoimpl-class.md)<br/>
+[IRowsetInfoImpl](../../data/oledb/irowsetinfoimpl-class.md)<br/>
 Implements özelliğini kullanarak satır kümesi özelliklerini komut Sınıfınız içinde tanımlanan eşlemesi ayarlayın. Satır kümeleri zorunlu arabirimde.
 
 [IRowsetLocateImpl](../../data/oledb/irowsetlocateimpl-class.md)<br/>
@@ -86,7 +86,7 @@ Bu uygulaması `ICommandProperties` arabirim tarafından tanımlanan statik işl
 [Icommandtextımpl](../../data/oledb/icommandtextimpl-class.md)<br/>
 Ayarlar, depolar ve komut metni döndürür. Zorunlu açma komutları.
 
-[Idbcreatecommandımpl](../../data/oledb/idbcreatecommandimpl-class.md)<br/>
+[IDBCreateCommandImpl](../../data/oledb/idbcreatecommandimpl-class.md)<br/>
 Oturum nesnesinden yeni bir komut oluşturur ve yeni oluşturulan komut üzerinde istenen arabirim döndürür. Oturum nesneleri üzerinde isteğe bağlı bir arabirim.
 
 Diğer komut sınıflardır `IColumnsInfoImpl` ve `IAccessorImpl`yukarıdaki satır kümesi sınıfları bölümünde açıklandığı gibi.
@@ -96,7 +96,7 @@ Diğer komut sınıflardır `IColumnsInfoImpl` ve `IAccessorImpl`yukarıdaki sat
 [Idbınitializeımpl](../../data/oledb/idbinitializeimpl-class.md)<br/>
 Oluşturur ve tüketici bağlantıyla siler. Veri kaynağı nesneleri ve isteğe bağlı bir arabirim numaralandırıcılar üzerinde zorunlu arabirim.
 
-[Idbpropertiesımpl](../../data/oledb/idbpropertiesimpl-class.md)<br/>
+[IDBPropertiesImpl](../../data/oledb/idbpropertiesimpl-class.md)<br/>
 `IDBProperties` veri kaynağı nesneleri için zorunlu bir arabirim ve numaralandırıcılar için isteğe bağlı bir arabirim değildir. Ancak, bir numaralandırıcı sunarsa `IDBInitialize`, açığa çıkarmalıdır `IDBProperties` (veri kaynağı özellikleri).
 
 [IGetDataSourceImpl](../../data/oledb/igetdatasourceimpl-class.md)<br/>

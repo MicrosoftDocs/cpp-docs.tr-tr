@@ -1,5 +1,5 @@
 ---
-title: değişmez değer (C + +/ CLI ve C + +/ CX)
+title: değişmez değer (C++/CLI ve C++/CX)
 ms.date: 10/12/2018
 ms.topic: reference
 f1_keywords:
@@ -9,13 +9,13 @@ helpviewer_keywords:
 - literal keyword [C++]
 ms.assetid: 6b1a1f36-2e1d-4a23-8eb6-172f4f3c477f
 ms.openlocfilehash: c0de82d0d1d102f02ea79a4245f2e393439f2e0b
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59037804"
 ---
-# <a name="literal-ccli-and-ccx"></a>değişmez değer (C + +/ CLI ve C + +/ CX)
+# <a name="literal-ccli-and-ccx"></a>değişmez değer (C++/CLI ve C++/CX)
 
 Bir değişken (veri üyesi) olarak işaretlenmiş **değişmez değer** içinde bir **/CLR** derleme yerel denk olan bir **statik const** değişkeni.
 
@@ -127,4 +127,4 @@ Derleyici seçeneği: `/clr`
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[.NET ve UWP için bileşen uzantıları](component-extensions-for-runtime-platforms.md)
+[.NET ve UWP İçin Bileşen Uzantıları](component-extensions-for-runtime-platforms.md)

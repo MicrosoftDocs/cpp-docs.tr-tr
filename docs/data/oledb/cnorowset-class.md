@@ -11,10 +11,10 @@ helpviewer_keywords:
 - CNoRowset class
 ms.assetid: 55c6c7a4-9e3a-4775-a2dd-c8b333012fa6
 ms.openlocfilehash: 6193e2d461761c53fb05e5c16b3914c56d545173
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59035682"
 ---
 # <a name="cnorowset-class"></a>CNoRowset Sınıfı

@@ -13,10 +13,10 @@ helpviewer_keywords:
 - region pragma
 ms.assetid: c697f807-622f-4796-851b-68a42bbecd84
 ms.openlocfilehash: c73a90aa2be83d643b74dde4645081e89da3ff73
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59037940"
 ---
 # <a name="region-endregion"></a>region, endregion
@@ -32,10 +32,10 @@ ms.locfileid: "59037940"
 
 ### <a name="parameters"></a>Parametreler
 
-*comment*<br/>
+*Açıklama*<br/>
 (İsteğe bağlı) Kod Düzenleyicisi'nde görüntüleyen bir açıklama.
 
-*name*<br/>
+*Adı*<br/>
 (İsteğe bağlı) Bölge adı.  Bu ad, Kod Düzenleyicisi'nde görüntülenir.
 
 ## <a name="remarks"></a>Açıklamalar

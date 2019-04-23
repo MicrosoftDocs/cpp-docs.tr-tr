@@ -19,15 +19,15 @@ helpviewer_keywords:
 - _interlockedbittestandreset intrinsic
 ms.assetid: 9bbb1442-f2e9-4dc2-b0da-97f3de3493b9
 ms.openlocfilehash: 54ea8b1ccac15eab600c91302969b606c188dc59
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59040656"
 ---
 # <a name="interlockedbittestandreset-intrinsic-functions"></a>_interlockedbittestandreset iç işlevleri
 
-**Microsoft'a Özgü**
+**Microsoft'a özgü**
 
 Bit ayarlayan bir yönerge oluşturur `b` adresinin `a` sıfır ve özgün değeri döndürür.
 
@@ -104,7 +104,7 @@ Donanım kilit eleme (HLE) yönergeleri yapı içleri ile destekleyen Intel işl
 
 Bu yordamlar, yalnızca iç öğe olarak kullanılabilir.
 
-**END Microsoft'a Özgü**
+**END Microsoft özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

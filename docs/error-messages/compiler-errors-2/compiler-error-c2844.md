@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2844
 ms.assetid: dcaf4cd2-21b0-4280-ae42-0a706c524d83
 ms.openlocfilehash: 2676a32cee487595a2241359496ae9b0380126b8
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
-ms.locfileid: "58775017"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59776901"
 ---
 # <a name="compiler-error-c2844"></a>Derleyici Hatası C2844
 

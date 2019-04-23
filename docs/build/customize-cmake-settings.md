@@ -4,10 +4,10 @@ ms.date: 03/05/2019
 helpviewer_keywords:
 - CMake build settings
 ms.openlocfilehash: 1bdf4ef3e20b055b6fa3d5449a880ddb7aab44a0
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
-ms.translationtype: MT
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59037529"
 ---
 # <a name="customize-cmake-build-settings"></a>CMake derleme ayarlarını özelleştirme
@@ -239,6 +239,6 @@ Sonraki örnekte, kendi değerini x86 hata ayıklama yapılandırmasını tanım
 [Visual Studio'da CMake projeleri](cmake-projects-in-visual-studio.md)<br/>
 [Linux CMake projesi yapılandırma](../linux/cmake-linux-project.md)<br/>
 [Uzak Linux bilgisayarınıza bağlanma](../linux/connect-to-your-remote-linux-computer.md)<br/>
-[Hata ayıklama oturumları CMake yapılandırma](configure-cmake-debugging-sessions.md)<br/>
-[Dağıtma, çalıştırma ve Linux projenizin hatalarını ayıklama](../linux/deploy-run-and-debug-your-linux-project.md)<br/>
+[CMake hata ayıklama oturumlarını yapılandırma](configure-cmake-debugging-sessions.md)<br/>
+[Linux projenizi dağıtma, çalıştırma ve projenizin hatalarını ayıklama](../linux/deploy-run-and-debug-your-linux-project.md)<br/>
 [Önceden tanımlanmış CMake yapılandırma başvurusu](cmake-predefined-configuration-reference.md)<br/>

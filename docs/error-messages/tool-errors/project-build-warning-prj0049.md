@@ -5,10 +5,10 @@ helpviewer_keywords:
 - PRJ0049
 ms.assetid: 8b38afa1-e080-4efd-ae89-776cfd044413
 ms.openlocfilehash: 0252103757df1c5dc95c9691c6da1d3630d29772
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59035565"
 ---
 # <a name="project-build-warning-prj0049"></a>Proje Derleme Uyarısı PRJ0049

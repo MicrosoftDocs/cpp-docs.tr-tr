@@ -7,10 +7,10 @@ helpviewer_keywords:
 - errors [C++], linker
 ms.assetid: d4b12c0f-4dae-48b2-9b9e-fedf94c94cb0
 ms.openlocfilehash: 6fe4a37cc3665ac2b7886589018339b77babab2d
-ms.sourcegitcommit: 0ad3f4517e64900a2702dd3d366586f9e2bce2c2
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/10/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59477424"
 ---
 # <a name="linker-tools-errors-and-warnings"></a>Bağlayıcı Araçları Hataları ve Uyarıları
@@ -129,7 +129,7 @@ BAĞLANTI, LIB, DUMPBIN ve EDITBIN şu hatalar ve uyarılar oluşturur.
 
 [Bağlayıcı Araçları Hatası LNK1561](../../error-messages/tool-errors/linker-tools-error-lnk1561.md)
 
-[Bağlayıcı araçları hatası LNK2001](../../error-messages/tool-errors/linker-tools-error-lnk2001.md)
+[Bağlayıcı Araçları Hatası LNK2001](../../error-messages/tool-errors/linker-tools-error-lnk2001.md)
 
 [Bağlayıcı Araçları Hatası LNK2004](../../error-messages/tool-errors/linker-tools-error-lnk2004.md)
 

@@ -9,15 +9,15 @@ helpviewer_keywords:
 - sfence instruction
 ms.assetid: 6c6eb973-3cf0-4306-b3af-cfde9b0210a5
 ms.openlocfilehash: a0c8027f443a475b03521920e2e036e7ed4eaafb
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59036701"
 ---
 # <a name="faststorefence"></a>__faststorefence
 
-**Microsoft'a Özgü**
+**Microsoft'a özgü**
 
 Her ikisi de dahil olmak üzere her önceki bellek başvuru yüklemek ve bellek başvuruları depolamak garantileri önce herhangi bir sonraki bellek başvurusu genel olarak görünür.
 
@@ -43,7 +43,7 @@ AMD64 platformunda, bu yordam daha hızlı bir depolama sınırı olan bir yöne
 
 Bu yordam yalnızca bir iç öğe olarak kullanılabilir.
 
-**END Microsoft'a Özgü**
+**END Microsoft özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -7,10 +7,10 @@ helpviewer_keywords:
 - nonbrowsable attribute
 ms.assetid: e71a98e7-4b65-454a-9829-342b9f2a84be
 ms.openlocfilehash: 0a5e01c0fde49c7debb7749f5a1d148acb9cca6f
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59038414"
 ---
 # <a name="nonbrowsable"></a>nonbrowsable
@@ -49,7 +49,7 @@ __interface IMyI
 
 |||
 |-|-|
-|**Uygulandığı öğe:**|Arabirim yöntemi|
+|**İçin geçerlidir**|Arabirim yöntemi|
 |**Tekrarlanabilir**|Hayır|
 |**Gerekli öznitelikleri**|Yok.|
 |**Geçersiz öznitelikler**|Yok.|
@@ -58,5 +58,5 @@ __interface IMyI
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[IDL Öznitelikleri](idl-attributes.md)<br/>
+[IDL öznitelikleri](idl-attributes.md)<br/>
 [Yöntem Öznitelikleri](method-attributes.md)

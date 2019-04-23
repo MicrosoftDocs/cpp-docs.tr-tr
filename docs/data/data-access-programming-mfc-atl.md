@@ -9,10 +9,10 @@ helpviewer_keywords:
 - data access [C++], class libraries for databases
 ms.assetid: def97b2c-b5a6-445f-afeb-308050fd4852
 ms.openlocfilehash: b4f5fb6ed21fb23195af340c8de3ee7c654f7fee
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59037837"
 ---
 # <a name="data-access-programming-mfcatl"></a>Veri erişim programlama (MFC/ATL)
@@ -27,7 +27,7 @@ Eski uygulamanızı SQL Server'a bağlanmak için OLE DB ya da daha üst düzey 
 
 ODBC uygulamaları için SQL Native Client bileşeni (SNAC), tek bir DLL'nin OLE DB ve ODBC sürücülerini paketler kullanım dışı bırakılmıştır. SQL Server 2012 sürümünü SNAC (SQLNCLI11. Diğer SQL Server bileşenleri bağımlı olduğundan, DLL) SQL Server 2016 ile birlikte gelir. Ancak, SQL Server veya Azure SQL veritabanına ODBC üzerinden bağlanma yeni C++ uygulamalarını kullanması gereken [en son ODBC sürücüsü](/sql/connect/odbc/download-odbc-driver-for-sql-server). Daha fazla bilgi için [SQL Server yerel istemcisi programlama](/sql/relational-databases/native-client/sql-server-native-client-programming)
 
-C + kullanırsanız +/ CLI, devam edebilirsiniz ADO.NET olarak her zaman kullanın. Daha fazla bilgi için bkz. [veri erişim ADO.NET kullanma (C + +/ CLI)](../dotnet/data-access-using-adonet-cpp-cli.md), ve [Visual Studio'da verilere erişme](/visualstudio/data-tools/accessing-data-in-visual-studio).
+C + kullanırsanız +/ CLI, devam edebilirsiniz ADO.NET olarak her zaman kullanın. Daha fazla bilgi için [kullanarak veri erişim ADO.NET (C++/CLI)](../dotnet/data-access-using-adonet-cpp-cli.md), ve [Visual Studio'da verilere erişme](/visualstudio/data-tools/accessing-data-in-visual-studio).
 
 - ODBC sarmalayıcı sınıflarının yanı sıra, MFC ayrıca veri erişim nesneleri (DAO) sarmalayıcı sınıflar Access veritabanına bağlanmak için sağlar.  Ancak, DAO kullanımdan kalkmıştır. CDaoDatabase veya CDaoRecordset göre herhangi bir kod yükseltilmelidir.
 

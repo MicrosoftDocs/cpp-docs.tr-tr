@@ -9,10 +9,10 @@ helpviewer_keywords:
 - forms [C++], data access tasks
 ms.assetid: 562122d9-01d8-4284-acf6-ea109ab0408d
 ms.openlocfilehash: 199f51f20dd42ee9105b4e09f579c1f48948745f
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59040205"
 ---
 # <a name="record-views--mfc-data-access"></a>Kayıt görünümleri (MFC veri erişimi)
@@ -37,15 +37,15 @@ Malzeme konular, ODBC tabanlı ve DAO tabanlı sınıflar için geçerlidir. Kul
 
 Konular şunlardır:
 
-- [Kayıt Görünümü Sınıflarının Özellikleri](../data/features-of-record-view-classes-mfc-data-access.md)
+- [Kayıt görünümü sınıflarının özellikleri](../data/features-of-record-view-classes-mfc-data-access.md)
 
-- [Kayıt Görünümleri için Veri Değişimi](../data/data-exchange-for-record-views-mfc-data-access.md)
+- [Kayıt görünümleri için veri değişimi](../data/data-exchange-for-record-views-mfc-data-access.md)
 
-- [Kayıt Görünümü ile Çalışırken Sizin Rolünüz](../data/your-role-in-working-with-a-record-view-mfc-data-access.md)
+- [Kayıt görünümü ile çalışırken sizin rolünüz](../data/your-role-in-working-with-a-record-view-mfc-data-access.md)
 
-- [Kayıt Görünümü Tasarlama ve Oluşturma](../data/designing-and-creating-a-record-view-mfc-data-access.md)
+- [Kayıt görünümü tasarlama ve oluşturma](../data/designing-and-creating-a-record-view-mfc-data-access.md)
 
-- [Kayıt Görünümünü Kullanma](../data/using-a-record-view-mfc-data-access.md)
+- [Kayıt görünümünü kullanma](../data/using-a-record-view-mfc-data-access.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

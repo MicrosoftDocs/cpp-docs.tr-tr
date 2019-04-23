@@ -7,10 +7,10 @@ helpviewer_keywords:
 - resource files [C++], about resource files
 ms.assetid: 2699a539-b369-4b78-80f0-df03eb7b6780
 ms.openlocfilehash: a08c7ecb153b790f06da386ac93d1f05f5981e61
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59037743"
 ---
 # <a name="working-with-resource-files"></a>Kaynak Dosyalarıyla Çalışma
@@ -18,7 +18,7 @@ ms.locfileid: "59037743"
 > [!WARNING]
 > Bu bölüm, C++ ile yazılmış Windows Masaüstü uygulamaları için geçerlidir.
 >
-> C++ programında yazılan Evrensel Windows platformu uygulamaları kaynaklar hakkında daha fazla bilgi için bkz [tanımlama uygulama kaynaklarını](/windows/uwp/app-resources/), veya kaynak ekleme C + +/ (yönetilen) CLI projeleri için bkz. [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index) içinde .NET Framework Geliştirici Kılavuzu.
+> Evrensel Windows platformu uygulamaları yazılan kaynaklar hakkında bilgi için C++, bakın [tanımlama uygulama kaynaklarını](/windows/uwp/app-resources/), veya kaynak için ekleme C++/ (yönetilen) CLI projeleri için bkz [Masaüstüuygulamalarındakikaynaklar](/dotnet/framework/resources/index) .NET Framework Geliştirici Kılavuzu'nda.
 
 Kaynakları gibi çeşitli öğeleri oluşabilir:
 
@@ -41,7 +41,7 @@ Globalize ve yönetilen uygulamalardaki kaynaklar yerelleştirmek için bkz: [Gl
 [Kaynak Dosyalar](../windows/resource-files-visual-studio.md)<br/>
 Kaynak dosyaları ve bunların Windows masaüstü uygulamalarında nasıl kullanıldığı açıklanmaktadır. Ayrıca kaynak dosyaları kullanmayı açıklayan makaleleri için bağlantılar sağlar.
 
-[Kaynak Tanımlayıcıları (simge)](../windows/symbols-resource-identifiers.md)<br/>
+[Kaynak Tanımlayıcıları (Semboller)](../windows/symbols-resource-identifiers.md)<br/>
 Sembolleri tanımlar ve kullanma hakkında bilgi sağlar **kaynak sembolleri** sembolleri projelerinizde yönetmek için iletişim kutusu.
 
 [Kaynak Düzenleyicileri](../windows/resource-editors.md)<br/>

@@ -7,10 +7,10 @@ helpviewer_keywords:
 - overriding, dynamic accessors
 ms.assetid: cbefd156-6da5-490d-b795-c2d7d874f7ce
 ms.openlocfilehash: 01beab80fb8574e0caa4ad3054d174c60106ce94
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59039196"
 ---
 # <a name="overriding-a-dynamic-accessor"></a>Dinamik Erişimciyi Geçersiz Kılma

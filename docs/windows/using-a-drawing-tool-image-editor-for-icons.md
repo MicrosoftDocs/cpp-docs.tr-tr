@@ -17,10 +17,10 @@ helpviewer_keywords:
 - custom brushes
 ms.assetid: 1f8c6eef-7760-45a9-a5cb-9e15c6f91245
 ms.openlocfilehash: 7b362749c9a5cb1c7ec77e5cac8625aa7eb260f0
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59037795"
 ---
 # <a name="how-to-use-a-drawing-tool"></a>Nasıl yapılır: Çizim aracı kullanma
@@ -136,12 +136,12 @@ Tuşuna **Esc** veya başka bir çizim Aracı'nı seçin.
 
 ## <a name="requirements"></a>Gereksinimler
 
-None
+Yok.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Simgeler İçin Görüntü Düzenleyicisi](../windows/image-editor-for-icons.md)<br/>
-[Nasıl yapılır: Simge veya başka görüntü oluşturma](../windows/creating-an-icon-or-other-image-image-editor-for-icons.md)<br/>
-[Nasıl yapılır: Görüntü Düzenle](../windows/selecting-an-area-of-an-image-image-editor-for-icons.md)<br/>
+[Simgeler için Görüntü Düzenleyicisi](../windows/image-editor-for-icons.md)<br/>
+[Nasıl yapılır: Simge veya Başka Görüntü Oluşturma](../windows/creating-an-icon-or-other-image-image-editor-for-icons.md)<br/>
+[Nasıl yapılır: Görüntü Kopyalama](../windows/selecting-an-area-of-an-image-image-editor-for-icons.md)<br/>
 [Nasıl yapılır: Renklerle Çalışma](../windows/working-with-color-image-editor-for-icons.md)<br/>
 [Hızlandırıcı Tuşları](../windows/accelerator-keys-image-editor-for-icons.md)<br/>

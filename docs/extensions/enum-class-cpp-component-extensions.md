@@ -1,16 +1,16 @@
 ---
-title: sabit listesi sınıfı (C + +/ CLI ve C + +/ CX)
+title: sabit listesi sınıfı (C++/CLI ve C++/CX)
 ms.date: 10/12/2018
 ms.topic: reference
 ms.assetid: 8010fa8c-bad6-45b4-8214-b4db64d7ffe1
 ms.openlocfilehash: da9097a02de08fd1615f5401d08c438c5f64c139
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59037032"
 ---
-# <a name="enum-class--ccli-and-ccx"></a>sabit listesi sınıfı (C + +/ CLI ve C + +/ CX)
+# <a name="enum-class--ccli-and-ccx"></a>sabit listesi sınıfı (C++/CLI ve C++/CX)
 
 Numaralandırıcı olarak adlandırılan sabitler kümesinden oluşan kullanıcı tanımlı türü olan ad alanı kapsamında bir sabit listesi bildirir.
 
@@ -18,7 +18,7 @@ Numaralandırıcı olarak adlandırılan sabitler kümesinden oluşan kullanıc�
 
 ### <a name="remarks"></a>Açıklamalar
 
-C + +/ CX ve C + +/ CLI desteği **genel sabit listesi sınıfı** ve **özel enum sınıfı** olduğu için standart C++ benzer **sabit listesi sınıfı** ancak ek olarak erişilebilirlik tanımlayıcı. Altında **/CLR**, C ++ 11 **sabit listesi sınıfı** tür izin verilir, ancak gerçekten ISO sabit listesi türü ve değil C + istediğinizden emin olmak için tasarlanmıştır C4472 uyarı oluşturacak +/ CX ve C + +/ CLI türü. ISO Standard C++ hakkında daha fazla bilgi için **enum** anahtar sözcüğü, bkz: [numaralandırmalar](../cpp/enumerations-cpp.md).
+C++/CX ve C++/CLI desteği **genel sabit listesi sınıfı** ve **özel enum sınıfı** standart benzer olan C++ **sabit listesi sınıfı** ancak ek olarak Erişilebilirlik tanımlayıcısı. Altında **/CLR**, C ++ 11 **sabit listesi sınıfı** tür izin verilir, ancak gerçekten ISO sabit listesi türü istediğinizden emin olmak için tasarlanmıştır C4472 uyarısı oluşturur ve C++/CX ve C++/CLI türü. ISO Standard C++ hakkında daha fazla bilgi için **enum** anahtar sözcüğü, bkz: [numaralandırmalar](../cpp/enumerations-cpp.md).
 
 ## <a name="windows-runtime"></a>Windows Çalışma Zamanı
 
@@ -34,7 +34,7 @@ accessenum structenumeration-identifier[:underlying-type] { enumerator-list } [v
 
 ### <a name="parameters"></a>Parametreler
 
-*erişim*<br/>
+*Erişim*<br/>
 Erişilebilirlik olabilir numaralandırma **genel** veya **özel**.
 
 *Numaralandırma tanımlayıcı*<br/>
@@ -82,16 +82,16 @@ accessenum structname [:type] { enumerator-list } var;
 
 ### <a name="parameters"></a>Parametreler
 
-*erişim*<br/>
+*Erişim*<br/>
 Sabit listesinin erişilebilirlik. Olabilir **genel** veya **özel**.
 
 *Numaralandırıcı-listesi*<br/>
 Sabit tanımlayıcıları (Numaralandırıcı) virgülle ayrılmış listesi.
 
-*name*<br/>
+*Adı*<br/>
 Sabit listesinin adı. Anonim yönetilen numaralandırmalar izin verilmez.
 
-* türü*<br/>
+*type*<br/>
 (İsteğe bağlı) Temel alınan türü *tanımlayıcıları*. Bu imzalı veya imzasız sürümleri gibi herhangi bir skalar türü olabilir **int**, **kısa**, veya **uzun**.  **bool** veya **char** da izin verilir.
 
 *var*<br/>
@@ -101,9 +101,9 @@ Sabit listesinin adı. Anonim yönetilen numaralandırmalar izin verilmez.
 
 **sabit listesi sınıfı** ve **enum struct** eşdeğer bildirimlerdir.
 
-Numaralandırmalar iki tür vardır: yönetilen veya C + +/ CX ve standart.
+Numaralandırmalar iki tür vardır: yönetilen veya C++/CX ve standart.
 
-Yönetilen veya C + +/ CX sabit listesi aşağıdaki gibi tanımlanabilir
+Yönetilen veya C++/CX sabit listesi aşağıdaki gibi tanımlanabilir
 
 ```cpp
 public enum class day {sun, mon };
@@ -221,4 +221,4 @@ convert to int: 1
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[.NET ve UWP için bileşen uzantıları](component-extensions-for-runtime-platforms.md)
+[.NET ve UWP İçin Bileşen Uzantıları](component-extensions-for-runtime-platforms.md)

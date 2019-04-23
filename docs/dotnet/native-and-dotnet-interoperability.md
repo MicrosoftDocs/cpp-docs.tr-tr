@@ -15,10 +15,10 @@ helpviewer_keywords:
 - native code [C++], .NET interoperatibility
 ms.assetid: f3ec6c99-c745-4256-b95b-f1d12ba17a5a
 ms.openlocfilehash: 486796e404ad1aee39fbeb85251d26cc078b1160
-ms.sourcegitcommit: 35c4b3478f8cc310ebbd932a18963ad8ab846ed9
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/08/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59237152"
 ---
 # <a name="native-and-net-interoperability"></a>Yerel ve.NET Birlikte Çalışabilirliği

@@ -10,10 +10,10 @@ helpviewer_keywords:
 - generics [C++], declaring generic classes
 ms.assetid: 0beb99e1-1ec4-4fee-9836-ce9657d67a3a
 ms.openlocfilehash: 71850807f6332f31195ef9bafbd9468f48cb6fb3
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59041425"
 ---
 # <a name="generic-classes-ccli"></a>Genel Sınıflar (C++/CLI)
@@ -37,7 +37,7 @@ class-body
 
 Yukarıdaki söz diziminde aşağıdaki terimler kullanılır:
 
-*öznitelikler*<br/>
+*Öznitelikleri*<br/>
 (İsteğe bağlı) Ek bildirim temelli bilgiler. Öznitelikleri öznitelikleri ve öznitelik sınıfları hakkında daha fazla bilgi için bkz.
 
 *sınıf anahtarı*<br/>
@@ -59,7 +59,7 @@ Genel bir sınıf için erişilebilirlik değiştiricileri. Windows çalışma z
 *tanımlayıcı*<br/>
 Geçerli bir C++ tanımlayıcısı genel sınıfın adı.
 
-*değiştiriciler*<br/>
+*Değiştiriciler*<br/>
 (İsteğe bağlı) Değiştiriciler dahil izin **korumalı** ve **soyut**.
 
 *temel-liste*<br/>
@@ -68,7 +68,7 @@ Virgülle ayrılmış tüm arabirimleri ve herhangi bir temel sınıf içeren bi
 *sınıf-gövdesi*<br/>
 Alanlar, üye işlevleri, vb. içeren sınıfın gövdesi.
 
-*bildirimciler*<br/>
+*Bildirimciler*<br/>
 Bu türün tüm değişkenlerin bildirimleri. Örneğin: `^` *tanımlayıcı*[`,` ...]
 
 Genel sınıflar şunlar gibi bildirebilirsiniz (unutmayın anahtar sözcüğü **sınıfı** yerine kullanılabilir **typename**). Bu örnekte, `ItemType`, `KeyType` ve `ValueType` noktada belirtilen bilinmeyen türleri burada türü. `HashTable<int, int>` genel tür bir oluşturulmuş tür `HashTable<KeyType, ValueType>`. Tek bir genel türü bir dizi farklı oluşturulan türler oluşturulabilir. Oluşturulan türler genel sınıflardan oluşturulmuş gibi başka bir başvuru sınıfı türü kabul edilir.
@@ -97,7 +97,7 @@ int main() {
 
 Her ikisi de değer türleri (ya da yerleşik türleri gibi **int** veya **çift**, veya kullanıcı tanımlı değer türleri) ve başvuru türleri bir genel tür bağımsız değişkeni kullanılır. Söz dizimi genel tanımındaki bağımsız olarak aynıdır. Sözdizimi, bir başvuru türü değilmiş gibi bilinmeyen tür kabul edilir. Ancak, çalışma zamanı gerçekten kullanılan türü bir değer türü olup olmadığını belirleyebilir ve doğrudan erişim üyeleri için uygun oluşturulan kodu değiştirin. Genel tür bağımsız değişkenleri kullanılan değer türleri Kutulu değil ve bu nedenle kutulama ile ilişkili performans cezası karşılaşmaz. Genel gövdesinde kullanılan sözdizimi olmalıdır `T^` ve `->` yerine `.`. Kullanımı [yeni başvuru, gcnew](ref-new-gcnew-cpp-component-extensions.md) tür bağımsız değişkeni bir değer türü ise türü için parametre uygun şekilde çalışma zamanı tarafından basit oluşturulmasını bir değer türü yorumlanacaktır.
 
-Genel bir sınıf ile aynı zamanda bildirebilirsiniz [genel tür parametrelerindeki kısıtlamalar (C + +/ CLI)](constraints-on-generic-type-parameters-cpp-cli.md) türlerinde tür parametresi için kullanılabilir. Aşağıdaki örnekte herhangi bir türü kullanılan `ItemType` uygulamalıdır `IItem` arabirimi. Kullanılmaya çalışılıyor **int**, örneğin, hangi uygulamıyor `IItem`, tür bağımsız değişkeni kısıtlamasını karşılamaz çünkü bir derleme zamanı hatası oluşturur.
+Genel bir sınıf ile aynı zamanda bildirebilirsiniz [genel tür parametrelerindeki kısıtlamalar (C++/CLI)](constraints-on-generic-type-parameters-cpp-cli.md) türlerinde tür parametresi için kullanılabilir. Aşağıdaki örnekte herhangi bir türü kullanılan `ItemType` uygulamalıdır `IItem` arabirimi. Kullanılmaya çalışılıyor **int**, örneğin, hangi uygulamıyor `IItem`, tür bağımsız değişkeni kısıtlamasını karşılamaz çünkü bir derleme zamanı hatası oluşturur.
 
 ```cpp
 // generic_classes_2.cpp

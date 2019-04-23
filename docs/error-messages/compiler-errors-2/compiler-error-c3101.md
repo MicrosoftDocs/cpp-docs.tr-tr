@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3101
 ms.assetid: 4f673766-d4f7-4632-94a5-d36a83f7f4b5
 ms.openlocfilehash: d39afc548010df95bdf31b2c7708bc4fa0310bcd
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58779241"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59776138"
 ---
 # <a name="compiler-error-c3101"></a>Derleyici Hatası C3101
 

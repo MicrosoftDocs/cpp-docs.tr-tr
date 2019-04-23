@@ -9,15 +9,15 @@ helpviewer_keywords:
 - ll_rshift intrinsic
 ms.assetid: ef13b732-d122-44a0-add9-f5544a2c4ab2
 ms.openlocfilehash: e39f8fe797467569077dd24baf49670607915107
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59041026"
 ---
 # <a name="llrshift"></a>__ll_rshift
 
-**Microsoft'a Özgü**
+**Microsoft'a özgü**
 
 İkinci parametre tarafından belirtilen bit sayısı sağa ilk parametre tarafından belirtilen 64-bit bir değer kaydırılır.
 
@@ -89,7 +89,7 @@ fffffffffffffff0
 
 **Not** varsa `_ull_rshift` olmuştur istenen sonuç negatif bir değer söz konusu olduğunda alındıktan değil şekilde kullanılan, Tamamlama sağa kaydırılacak değerin sıfır olacaktı.
 
-**END Microsoft'a Özgü**
+**END Microsoft özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

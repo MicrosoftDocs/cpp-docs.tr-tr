@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3095
 ms.assetid: cde725be-0936-40f6-9e57-e1d7d0710f83
 ms.openlocfilehash: d0cf35e7964925623be39c0177d77fc5a6231ad2
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
-ms.locfileid: "58774119"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59776762"
 ---
 # <a name="compiler-error-c3095"></a>Derleyici Hatası C3095
 

@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3114
 ms.assetid: b5d2df4f-87d0-4292-9981-25c6a6013c05
 ms.openlocfilehash: c5a4feae5c8805a27c020b532fd58e0562e46b6b
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
-ms.locfileid: "58773781"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59775602"
 ---
 # <a name="compiler-error-c3114"></a>Derleyici Hatası C3114
 

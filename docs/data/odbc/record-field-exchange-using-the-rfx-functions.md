@@ -11,10 +11,10 @@ helpviewer_keywords:
 - function calls, RFX functions
 ms.assetid: c594300b-5a29-4119-a68b-e7ca32def696
 ms.openlocfilehash: dc717336a5279e7eda1b7c39b19a7c76f9055cd3
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59035990"
 ---
 # <a name="record-field-exchange-using-the-rfx-functions"></a>Kayıt Alanı Değişimi: RFX işlevlerini kullanma
@@ -49,9 +49,9 @@ Sınıf kitaplığı, birçok farklı veri türleri kümeleriniz ve veri kaynağ
 |İşlev|Veri türü|
 |--------------|---------------|
 |`RFX_Bool`|**BOOL**|
-|`RFX_Byte`|**BYTE**|
+|`RFX_Byte`|**BAYT**|
 |`RFX_Binary`|`CByteArray`|
-|`RFX_Double`|**çift**|
+|`RFX_Double`|**double**|
 |`RFX_Single`|**float**|
 |`RFX_Int`|**int**|
 |`RFX_Long`|**long**|
@@ -68,5 +68,5 @@ Daha fazla bilgi için bkz. altında RFX işlev belgelerine [makroları ve genel
 [Kayıt Alanı Değişimi: RFX'in çalışması](../../data/odbc/record-field-exchange-how-rfx-works.md)<br/>
 [Kayıt kümesi: (ODBC) bir kayıt kümesini parametreleştirme](../../data/odbc/recordset-parameterizing-a-recordset-odbc.md)<br/>
 [Kayıt kümesi: (ODBC) veri sütunlarını dinamik olarak bağlama](../../data/odbc/recordset-dynamically-binding-data-columns-odbc.md)<br/>
-[CRecordset sınıfı](../../mfc/reference/crecordset-class.md)<br/>
-[CFieldExchange sınıfı](../../mfc/reference/cfieldexchange-class.md)
+[CRecordset Sınıfı](../../mfc/reference/crecordset-class.md)<br/>
+[CFieldExchange Sınıfı](../../mfc/reference/cfieldexchange-class.md)

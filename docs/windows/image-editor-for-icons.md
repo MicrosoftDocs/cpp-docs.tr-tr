@@ -43,10 +43,10 @@ helpviewer_keywords:
 - grid settings, Image editor
 ms.assetid: 586d2b8b-0348-4883-a85d-1ff0ddbf14dd
 ms.openlocfilehash: dd7da76d3df68fa63c87f64610524accfd4302ef
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59041555"
 ---
 # <a name="image-editor-for-icons-c"></a>Simgeler (C++) için görüntü Düzenleyicisi
@@ -143,7 +143,7 @@ Bu iletişim kutusuna erişmek için seçin **yazı tipi** düğmesine **metin a
 |---|---|
 |**Yazı tipi**|Yazı tiplerini listeler.|
 |**Yazı tipi stili**|Belirtilen yazı tipi için kullanılabilir stilleri listeler.|
-|**Boyut**|Belirtilen yazı tipi noktası kullanılabilir boyutları listeler.|
+|**Boyutu**|Belirtilen yazı tipi noktası kullanılabilir boyutları listeler.|
 |**Örnek**|Metnin belirtilen yazı tipi ayarlarını ile nasıl görüneceğini gösterir.|
 |**Komut Dosyası**|Belirtilen yazı tipi kullanılabilir dil kodları listeler.<br/><br/>Farklı dil komut dosyasını seçin, karakter için dil, çok dilli belgeleri oluşturmak için kullanılabilir duruma ayarlanır.|
 
@@ -215,7 +215,7 @@ Tüm **Resim Düzenleyicisi** bölmeleri katsayısını 4 veya daha büyük ile 
 
 ## <a name="requirements"></a>Gereksinimler
 
-None
+Yok.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

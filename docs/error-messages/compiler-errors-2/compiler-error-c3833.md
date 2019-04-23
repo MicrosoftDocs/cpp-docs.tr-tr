@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3833
 ms.assetid: 8152be53-e01e-48cd-9eef-9de38723664c
 ms.openlocfilehash: 99c18e899a46c5e1d7a643ba32546f827c320373
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58768984"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59775668"
 ---
 # <a name="compiler-error-c3833"></a>Derleyici Hatası C3833
 

@@ -1,18 +1,18 @@
 ---
-title: 'Nasıl yapılır: İç işaretçiler ve yerel işaretçilerle işlevleri tekrar yükleme (C + +/ CLI)'
+title: 'Nasıl yapılır: İç işaretçiler ve yerel işaretçilerle işlevleri tekrar yükleme (C++/CLI)'
 ms.date: 10/12/2018
 ms.topic: reference
 helpviewer_keywords:
 - Functions with interior and native pointers, overloading
 ms.assetid: d70df625-4aad-457c-84f5-70a0a290cc1f
 ms.openlocfilehash: f84a7efc87985f23b62139f0547c292989537aa6
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59038550"
 ---
-# <a name="how-to-overload-functions-with-interior-pointers-and-native-pointers-ccli"></a>Nasıl yapılır: İç işaretçiler ve yerel işaretçilerle işlevleri tekrar yükleme (C + +/ CLI)
+# <a name="how-to-overload-functions-with-interior-pointers-and-native-pointers-ccli"></a>Nasıl yapılır: İç işaretçiler ve yerel işaretçilerle işlevleri tekrar yükleme (C++/CLI)
 
 İşlevler, parametre türü iç işaretçiye veya yerel bir işaretçi olduğuna bağlı olarak aşırı yüklenebilir.
 

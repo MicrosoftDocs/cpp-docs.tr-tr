@@ -8,15 +8,15 @@ helpviewer_keywords:
 - _mm_cvtss_si64x intrinsic
 ms.assetid: c279aff2-ee29-4271-8829-3ec691bf7718
 ms.openlocfilehash: a3b7ece325d975045046e865e6b090f3f6729558
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59036832"
 ---
 # <a name="mmcvtsssi64x"></a>_mm_cvtss_si64x
 
-**Microsoft'a Özgü**
+**Microsoft'a özgü**
 
 Genişletilmiş x64 oluşturur Dönüştür skaler tek duyarlıklı kayan nokta sayısı 64-bit tamsayıya sürümünü (`cvtss2si`) yönerge.
 
@@ -85,7 +85,7 @@ int main()
 101
 ```
 
-**END Microsoft'a Özgü**
+**END Microsoft özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

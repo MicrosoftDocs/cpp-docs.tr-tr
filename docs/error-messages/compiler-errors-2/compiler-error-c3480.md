@@ -7,10 +7,10 @@ helpviewer_keywords:
 - C3480
 ms.assetid: 7b2e055a-9604-4d13-861b-b38bda1a6940
 ms.openlocfilehash: 2ebcce496fd06c30420558d80cc0a0c9318d4376
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59039000"
 ---
 # <a name="compiler-error-c3480"></a>Derleyici Hatası C3480

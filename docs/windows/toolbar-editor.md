@@ -51,10 +51,10 @@ helpviewer_keywords:
 - Toolbar editor [C++], creating tool tips
 ms.assetid: aa9f0adf-60f6-4f79-ab05-bc330f15ec43
 ms.openlocfilehash: 9d50561c598f17e251425972590c0663efe6e832
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59038173"
 ---
 # <a name="toolbar-editor-c"></a>Araç çubuğu Düzenleyicisi (C++)
@@ -90,10 +90,10 @@ Araç çubuğu düğmesi, aşağıdaki özelliklere sahiptir:
 
 |Özellik|Açıklama|
 |--------------|-----------------|
-|**Kimlik**|Düğme için kimliği tanımlar. Açılır listede ortak sağlar **kimliği** adları.|
+|**ID**|Düğme için kimliği tanımlar. Açılır listede ortak sağlar **kimliği** adları.|
 |**Genişlik**|Düğmesinin genişliğini belirler. 16 piksel önerilir.|
 |**Yükseklik**|Düğmenin yüksekliğini belirler. Bir düğme yüksekliğini, araç çubuğundaki tüm düğmeler yüksekliğini değiştirir. 15 piksel önerilir.|
-|**İstem**|Durum çubuğunda görüntülenen ileti tanımlar. Ekleme *\n* ve bir ad ekler bir **araç ipucu** bu araç çubuğu düğmesi için. Daha fazla bilgi için [bir araç ipucu oluşturmanın](../windows/creating-a-tool-tip-for-a-toolbar-button.md).|
+|**Sor**|Durum çubuğunda görüntülenen ileti tanımlar. Ekleme *\n* ve bir ad ekler bir **araç ipucu** bu araç çubuğu düğmesi için. Daha fazla bilgi için [bir araç ipucu oluşturmanın](../windows/creating-a-tool-tip-for-a-toolbar-button.md).|
 
 **Genişlik** ve **yükseklik** tüm düğmeler için geçerlidir. Araç çubuğu oluşturmak için kullanılan bir bit eşlem 2048, maksimum genişliği sahip bu nedenle düğme genişliğini ayarlamak *512*, dört düğme dbmigrationsconfiguration ve genişliğini ayarlayın, *513*, yalnızca üç düğme olabilir.
 

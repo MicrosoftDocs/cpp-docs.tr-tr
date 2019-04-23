@@ -7,10 +7,10 @@ helpviewer_keywords:
 - C3495
 ms.assetid: 1fd40cb8-8373-403d-b8a8-f08424a50807
 ms.openlocfilehash: 3e387fe77c521a4f25ba67205f1fbd552397e272
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59035828"
 ---
 # <a name="compiler-error-c3495"></a>Derleyici Hatası C3495

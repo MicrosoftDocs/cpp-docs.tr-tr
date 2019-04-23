@@ -33,10 +33,10 @@ helpviewer_keywords:
 - m_rgbookmarks
 ms.assetid: a8aa3149-7ce8-4976-a680-2da193fd3234
 ms.openlocfilehash: e3513084697a60a33b9fa2ab02222a9b332cce79
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59039825"
 ---
 # <a name="irowsetlocateimpl-class"></a>IRowsetLocateImpl Sınıfı
@@ -94,7 +94,7 @@ Yer işareti tarafından tutulan tüm olan satır işleyicilerini depolama birim
 
 |||
 |-|-|
-|[{1&gt;Karşılaştır&lt;1}](#compare)|İki yer işaretleri karşılaştırır.|
+|[Compare](#compare)|İki yer işaretleri karşılaştırır.|
 |[GetRowsAt](#getrowsat)|Bir yer işareti uzaklığı tarafından belirtilen satır ile başlayan satırları getirir.|
 |[GetRowsByBookmark](#getrowsbybookmark)|Belirtilen yer işaretleri eşleşen satırları getirir.|
 |[Karma](#hash)|Belirtilen yer işaretleri için değerleri verir karma.|
@@ -235,7 +235,7 @@ CAtlArray<DBROWCOUNT> m_rgBookmarks;
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[OLE DB Sağlayıcı Şablonları](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>
+[OLE DB sağlayıcı şablonları](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>
 [OLE DB Sağlayıcı Şablonu Mimarisi](../../data/oledb/ole-db-provider-template-architecture.md)<br/>
 [IRowsetLocate:IRowset](/previous-versions/windows/desktop/ms721190(v=vs.85))
 [yer işaretleri sağlayıcı desteği](../../data/oledb/provider-support-for-bookmarks.md)<br/>

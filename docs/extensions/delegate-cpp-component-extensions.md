@@ -1,5 +1,5 @@
 ---
-title: delegate (C + +/ CLI ve C + +/ CX)
+title: Temsilci (C++/CLI ve C++/CX)
 ms.date: 10/12/2018
 ms.topic: reference
 f1_keywords:
@@ -9,13 +9,13 @@ helpviewer_keywords:
 - delegate keyword [C++]
 ms.assetid: 03caf23d-7873-4a23-9b34-becf42aaf429
 ms.openlocfilehash: 29bf305ed5e4845437b90ed672d1ab0c0de9ced6
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59036951"
 ---
-# <a name="delegate--ccli-and-ccx"></a>delegate (C + +/ CLI ve C + +/ CX)
+# <a name="delegate--ccli-and-ccx"></a>Temsilci (C++/CLI ve C++/CX)
 
 Bir işlev işaretçisi temsil eden bir tür bildirir.
 
@@ -31,7 +31,7 @@ Bir tür bir delegate ise derleme zamanında algılamak için kullanmak `__is_de
 
 ## <a name="windows-runtime"></a>Windows Çalışma Zamanı
 
-C + +/ CX temsilciler aşağıdaki sözdizimini destekler.
+C++/CX temsilciler aşağıdaki sözdizimini destekler.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -47,7 +47,7 @@ delegate-type-identifier
 
 ### <a name="parameters"></a>Parametreler
 
-*erişim*<br/>
+*Erişim*<br/>
 (isteğe bağlı) Olabilir temsilci erişilebilirliğini **genel** (varsayılan) veya **özel**. İşlev prototipi ile de nitelendirilmesi **const** veya **geçici** anahtar sözcükleri.
 
 *dönüş türü*<br/>
@@ -61,7 +61,7 @@ Bildirilen temsilci türünün adı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kullanım *temsilci türü tanımlayıcısı* temsilci olarak aynı prototipe sahip bir olay bildirmek için. Daha fazla bilgi için [temsilciler (C + +/ CX)](../cppcx/delegates-c-cx.md).
+Kullanım *temsilci türü tanımlayıcısı* temsilci olarak aynı prototipe sahip bir olay bildirmek için. Daha fazla bilgi için [temsilciler (C++/CX)](../cppcx/delegates-c-cx.md).
 
 ### <a name="requirements"></a>Gereksinimler
 
@@ -81,7 +81,7 @@ function_declaration
 
 ### <a name="parameters"></a>Parametreler
 
-*erişim*<br/>
+*Erişim*<br/>
 (isteğe bağlı) Derlemenin dışında temsilci erişilebilirliğini genel veya özel olabilir.  Varsayılan büyük/küçük harf özeldir.  Bir sınıf içinde bir temsilci, herhangi bir erişilebilirlik sahip olabilir.
 
 *function_declaration*<br/>
@@ -119,9 +119,9 @@ Statik veya genel bir işlev bir temsilciye oluştururken, yalnızca bir paramet
 
 Temsilciler hakkında daha fazla bilgi için bkz.
 
-- [Nasıl yapılır: Temsilcileri tanımlama ve kullanma (C + +/ CLI)](../dotnet/how-to-define-and-use-delegates-cpp-cli.md)
+- [Nasıl yapılır: Temsilcileri Tanımlama ve Kullanma (C++/CLI)](../dotnet/how-to-define-and-use-delegates-cpp-cli.md)
 
-- [Genel temsilciler (C + +/ CLI)](generic-delegates-visual-cpp.md)
+- [Genel Temsilciler (C++/CLI)](generic-delegates-visual-cpp.md)
 
 ### <a name="requirements"></a>Gereksinimler
 
@@ -202,4 +202,4 @@ in static func3 11
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[.NET ve UWP için bileşen uzantıları](component-extensions-for-runtime-platforms.md)
+[.NET ve UWP İçin Bileşen Uzantıları](component-extensions-for-runtime-platforms.md)

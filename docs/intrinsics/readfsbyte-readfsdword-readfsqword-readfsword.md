@@ -17,15 +17,15 @@ helpviewer_keywords:
 - __readfsqword intrinsic
 ms.assetid: f6ee7203-4179-402c-a464-0746c84ce6ac
 ms.openlocfilehash: f291747d1f46ebdf3ea1f71cd9ab7e074058201d
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59036818"
 ---
 # <a name="readfsbyte-readfsdword-readfsqword-readfsword"></a>__readfsbyte, __readfsdword, __readfsqword, __readfsword
 
-**Microsoft'a Özgü**
+**Microsoft'a özgü**
 
 Bellek FS kesim başlangıcına göre bir uzaklık tarafından belirtilen bir konumdan okunamıyor.
 
@@ -48,7 +48,7 @@ unsigned __int64 __readfsqword(
 
 #### <a name="parameters"></a>Parametreler
 
-*Uzaklık*<br/>
+*uzaklık*<br/>
 [in] Başından uzaklık `FS` okuma için.
 
 ## <a name="return-value"></a>Dönüş Değeri
@@ -70,7 +70,7 @@ Bayt, word, doubleword veya (çağrılan işlev adı tarafından belirtildiği �
 
 Bu yordamlar, yalnızca iç öğe olarak kullanılabilir.
 
-**END Microsoft'a Özgü**
+**END Microsoft özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

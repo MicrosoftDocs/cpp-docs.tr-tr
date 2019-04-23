@@ -53,10 +53,10 @@ helpviewer_keywords:
 - m_mapCachedData
 ms.assetid: f85af76b-ab6f-4f8b-8f4a-337c9679d68f
 ms.openlocfilehash: 6c20698e2219cf7c3e1d840e23b5f8113947ae9f
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59037725"
 ---
 # <a name="irowsetupdateimpl-class"></a>IRowsetUpdateImpl Sınıfı
@@ -119,7 +119,7 @@ Sağlayıcı tarafından tutulan tüm olan satır işleyicilerini depolama birim
 |[GetPendingRows](#getpendingrows)|Satırları bekleyen değişiklikler listesi döndürür.|
 |[GetRowStatus](#getrowstatus)|Belirtilen satırları durumunu döndürür.|
 |[Geri alma](#undo)|Herhangi bir değişiklik satırın son getirme veya güncelleştirme iptal eder.|
-|[Güncelleştirme](#update)|Satırın son getirme veya güncelleştirme yapılan değişiklikleri iletir.|
+|[Güncelleştir](#update)|Satırın son getirme veya güncelleştirme yapılan değişiklikleri iletir.|
 
 ### <a name="implementation-methods-callback"></a>Uygulama yöntemlerinin (geri çağırma)
 
@@ -297,7 +297,7 @@ HRESULT IsUpdateAllowed(DBPENDINGSTATUS /* [in] */ /* status */,
 
 #### <a name="parameters"></a>Parametreler
 
-*durum*<br/>
+*Durumu*<br/>
 [in] Bekleyen işlemler satırlarda durumu.
 
 *hRowUpdate*<br/>
@@ -334,6 +334,6 @@ Veri satırları için işleyin.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[OLE DB Sağlayıcı Şablonları](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>
+[OLE DB sağlayıcı şablonları](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>
 [OLE DB Sağlayıcı Şablonu Mimarisi](../../data/oledb/ole-db-provider-template-architecture.md)<br/>
 [Güncelleştirilebilir Sağlayıcı Oluşturma](../../data/oledb/creating-an-updatable-provider.md)

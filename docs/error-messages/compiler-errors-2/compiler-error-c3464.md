@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3464
 ms.assetid: 0ede05dc-4486-4921-8e8c-78ab5a2e09c5
 ms.openlocfilehash: b21810d6df1fbfaf5ea94d9515487b16d00af548
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
-ms.locfileid: "58775302"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59776489"
 ---
 # <a name="compiler-error-c3464"></a>Derleyici Hatası C3464
 
@@ -19,7 +19,7 @@ ms.locfileid: "58775302"
 
 Tür iletme iç içe geçmiş türler üzerinde çalışmaz.
 
-Daha fazla bilgi için [tür iletme (C + +/ CLI)](../../extensions/type-forwarding-cpp-cli.md).
+Daha fazla bilgi için [tür iletme (C++/CLI)](../../extensions/type-forwarding-cpp-cli.md).
 
 ## <a name="example"></a>Örnek
 

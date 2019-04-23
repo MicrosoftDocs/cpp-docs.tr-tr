@@ -7,10 +7,10 @@ helpviewer_keywords:
 - C4627
 ms.assetid: 8840f3e6-b496-423a-8635-eb55d5f854a2
 ms.openlocfilehash: 06db3d7e585dfe49b2e0854973f63834648613b7
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59039669"
 ---
 # <a name="compiler-warning-level-1-c4627"></a>Derleyici Uyarısı (düzey 1) C4627

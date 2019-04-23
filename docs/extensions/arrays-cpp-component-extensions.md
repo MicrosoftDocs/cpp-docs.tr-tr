@@ -1,5 +1,5 @@
 ---
-title: Diziler (C + +/ CLI ve C + +/ CX)
+title: Diziler (C++/CLI ve C++/CX)
 ms.date: 10/12/2018
 ms.topic: reference
 f1_keywords:
@@ -13,15 +13,15 @@ helpviewer_keywords:
 - arrays [C++]
 ms.assetid: 49445812-d775-4db1-a231-869598dbb955
 ms.openlocfilehash: e4173c16e13c08a54b36e42183e6e18b6ed4fdc2
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59035341"
 ---
-# <a name="arrays-ccli-and-ccx"></a>Diziler (C + +/ CLI ve C + +/ CX)
+# <a name="arrays-ccli-and-ccx"></a>Diziler (C++/CLI ve C++/CX)
 
-`Platform::Array<T>` Türü C + +/ CX, veya **dizi** anahtar sözcüğü C + +/ CLI, belirtilen tür ve ilk değer dizisi bildirir.
+`Platform::Array<T>` Yazın C++/CX, veya **dizi** anahtar sözcüğünü C++/CLI, belirtilen tür ve ilk değer dizisi bildirir.
 
 ## <a name="all-platforms"></a>Tüm Platformlar
 
@@ -32,7 +32,7 @@ Standart C++, farklı alt simge oluşturma işaretçi aritmetik işlemlerine ili
 
 Diziler hakkında daha fazla bilgi için bkz:
 
-- [Nasıl yapılır: Diziler kullanmak C + +/ CLI](../dotnet/how-to-use-arrays-in-cpp-cli.md)
+- [Nasıl yapılır: C++/CLI Üzerinde Dizileri Kullanma](../dotnet/how-to-use-arrays-in-cpp-cli.md)
 
 - [Değişken Bağımsız Değişken Listeleri (...) (C++/CLI)](variable-argument-lists-dot-dot-dot-cpp-cli.md)
 
@@ -58,7 +58,7 @@ Sözdiziminin ilk örnekte **yeni başvuru** bir dizi ayırmak için toplam anah
 *dizi türü*<br/>
 Dizi değişkeni türü. Geçerli türler, Windows çalışma zamanı sınıflar ve temel türler, başvuru sınıfları ve yapıları, değer sınıfları ve yapıları ve yerel işaretçileri olan (`type*`).
 
-*derece*<br/>
+*rank*<br/>
 (İsteğe bağlı) Dizinin boyut sayısı. 1 olmalıdır.
 
 *tanımlayıcı*<br/>
@@ -114,7 +114,7 @@ Sözdiziminin ilk örnekte **gcnew** anahtar sözcüğü, bir dizi ayırmak içi
 *dizi türü*<br/>
 Dizi değişkeni türü. Geçerli türler Windows çalışma zamanı sınıflar ve temel türler, başvuru sınıfları ve yapıları, değer sınıfları ve yapıları, yerel işaretçiler (`type*`) ve yerel POD (düz eski veriler) türleri.
 
-*derece*<br/>
+*rank*<br/>
 (İsteğe bağlı) Dizinin boyut sayısı. Varsayılan değer 1'dir; en fazla 32'dir. Dizinin her boyutunun kendisi bir dizidir.
 
 *tanımlayıcı*<br/>
@@ -135,13 +135,13 @@ Dizideki her boyutun boyutu virgülle ayrılmış listesi. Alternatif olarak, *b
 
 **dizi** bulunduğu [Platform, varsayılan ve cli ad alanları](platform-default-and-cli-namespaces-cpp-component-extensions.md) ad alanı.
 
-Standart C++ gibi bir dizi dizinleri sıfır tabanlıdır ve bir dizi köşeli ayraç ([]) kullanarak alt simgeli. Standart C++, çok boyutlu bir dizi dizinleri her boyut için köşeli ayraç ([]) işleçleri kümesini yerine her boyut için dizin listesinde belirtilir. Örneğin, *tanımlayıcı*[*index1*, *index2*] yerine *tanımlayıcı*[*index1*] [ *index2*].
+Standart gibi C++, bir dizi dizinleri sıfır tabanlıdır ve bir dizi köşeli ayraç ([]) kullanarak alt simgeli. Standart aksine C++, çok boyutlu bir dizi dizinleri her boyut için köşeli ayraç ([]) işleçleri kümesini yerine her boyut için dizin listesinde belirtilir. Örneğin, *tanımlayıcı*[*index1*, *index2*] yerine *tanımlayıcı*[*index1*] [ *index2*].
 
 Tüm yönetilen diziler devralınacak `System::Array`. Herhangi bir yöntemi veya özelliği `System::Array` dizi değişkenine doğrudan uygulanabilir.
 
 Öğe türü bir dizi ayırmak zaman işaretçisidir-yönetilen bir sınıf için öğeleri 0 olarak başlatılır.
 
-Bir değer türü olduğunda, öğe türü bir dizi ayırmak `V`, için varsayılan oluşturucu `V` her dizi öğesine uygulanır. Daha fazla bilgi için [C++ yerel türlerinin .NET Framework eşdeğerleri (C + +/ CLI)](../dotnet/dotnet-framework-equivalents-to-cpp-native-types-cpp-cli.md).
+Bir değer türü olduğunda, öğe türü bir dizi ayırmak `V`, için varsayılan oluşturucu `V` her dizi öğesine uygulanır. Daha fazla bilgi için [.NET Framework eşdeğerleri C++ yerel türler (C++/CLI)](../dotnet/dotnet-framework-equivalents-to-cpp-native-types-cpp-cli.md).
 
 Derleme zamanında bir türde bir ortak dil çalışma zamanı (CLR) diziyle olup algılayabilir `__is_ref_array(type)`. Daha fazla bilgi için [tür özellikleri için derleyici desteği](compiler-support-for-type-traits-cpp-component-extensions.md).
 
@@ -170,4 +170,4 @@ int main() {
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[.NET ve UWP için bileşen uzantıları](component-extensions-for-runtime-platforms.md)
+[.NET ve UWP İçin Bileşen Uzantıları](component-extensions-for-runtime-platforms.md)

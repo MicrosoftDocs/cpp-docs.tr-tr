@@ -10,10 +10,10 @@ helpviewer_keywords:
 - configuring ODBC data sources
 ms.assetid: b8cabe9b-9e12-4d73-ae36-7cb12dee3213
 ms.openlocfilehash: 33269b65835812a6e1a03e091833831781d97b6d
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59037970"
 ---
 # <a name="data-source-programmatically-configuring-an-odbc-data-source"></a>Veri kaynağı: Program aracılığıyla ODBC veri kaynağını yapılandırma

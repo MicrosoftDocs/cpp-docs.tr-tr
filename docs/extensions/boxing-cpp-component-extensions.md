@@ -1,18 +1,18 @@
 ---
-title: Kutulama (C + +/ CLI ve C + +/ CX)
+title: Kutulama (C++/CLI ve C++/CX)
 ms.date: 10/12/2018
 ms.topic: reference
 helpviewer_keywords:
 - boxing, C++
 ms.assetid: b5fd2c98-c578-4f83-8257-6dd663478665
 ms.openlocfilehash: 0b41cacba8c279447e1e944cc3214ca1ba607665
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59038699"
 ---
-# <a name="boxing--ccli-and-ccx"></a>Kutulama (C + +/ CLI ve C + +/ CX)
+# <a name="boxing--ccli-and-ccx"></a>Kutulama (C++/CLI ve C++/CX)
 
 Değer türlerinin nesneleri dönüştürme çağrılır *kutulama*, ve değer türleri nesnelerin dönüştürme çağrılır *kutudan çıkarma*.
 
@@ -22,7 +22,7 @@ Değer türlerinin nesneleri dönüştürme çağrılır *kutulama*, ve değer t
 
 ## <a name="windows-runtime"></a>Windows Çalışma Zamanı
 
-C + +/ CX değer türleri kutulama ve kutudan çıkarma başvuru türleri için toplu değer sözdizimi destekler. Türünde bir değişkene atandığında bir değer türü kutulanmaz `Object`. Bir `Object` değişkendir kutulanmamış ne zaman bir değer türü değişkenine atanır ve kutulanmamış türü, parantez içinde belirtilir; diğer bir deyişle, nesne değişkeni için bir değer türü olduğunda cast.
+C++/CX değer türleri kutulama ve kutudan çıkarma başvuru türleri için toplu değer sözdizimi destekler. Türünde bir değişkene atandığında bir değer türü kutulanmaz `Object`. Bir `Object` değişkendir kutulanmamış ne zaman bir değer türü değişkenine atanır ve kutulanmamış türü, parantez içinde belirtilir; diğer bir deyişle, nesne değişkeni için bir değer türü olduğunda cast.
 
 ```cpp
   Platform::Object^
@@ -72,7 +72,7 @@ void BlankPage::OnNavigatedTo(NavigationEventArgs^ e)
 }
 ```
 
-Daha fazla bilgi için [kutulama (C + +/ CX)](https://msdn.microsoft.com/library/windows/apps/hh969554.aspx).
+Daha fazla bilgi için [kutulama (C++/CX)](https://msdn.microsoft.com/library/windows/apps/hh969554.aspx).
 
 ## <a name="common-language-runtime"></a>Ortak Dil Çalışma Zamanı
 
@@ -82,11 +82,11 @@ Nesne olarak kabul edilmesi için kutulama ve kutudan çıkarma etkinleştir de�
 
 Daha fazla bilgi için bkz.:
 
-- [Nasıl yapılır: Açık şekilde istek paketleme](../dotnet/how-to-explicitly-request-boxing.md)
+- [Nasıl yapılır: Açık Şekilde İstek Paketleme](../dotnet/how-to-explicitly-request-boxing.md)
 
-- [Nasıl yapılır: Gcnew değer türleri oluşturmak ve örtük kutulamayı kullanma](../dotnet/how-to-use-gcnew-to-create-value-types-and-use-implicit-boxing.md)
+- [Nasıl yapılır: Değer Türleri Oluşturmak için gcnew Kullanma ve Örtük Kutulamayı Kullanma](../dotnet/how-to-use-gcnew-to-create-value-types-and-use-implicit-boxing.md)
 
-- [Nasıl yapılır: unbox](../dotnet/how-to-unbox.md)
+- [Nasıl yapılır: Kutudan Çıkarma](../dotnet/how-to-unbox.md)
 
 - [Standart Dönüştürmeler ve Örtük Kutulama](../dotnet/standard-conversions-and-implicit-boxing.md)
 
@@ -190,4 +190,4 @@ in func2(System::ValueType^)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[.NET ve UWP için bileşen uzantıları](component-extensions-for-runtime-platforms.md)
+[.NET ve UWP İçin Bileşen Uzantıları](component-extensions-for-runtime-platforms.md)
