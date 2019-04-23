@@ -10,10 +10,10 @@ helpviewer_keywords:
 - interior_ptr keyword [C++]
 ms.assetid: 25160f74-569e-492d-9e3c-67ece7486baa
 ms.openlocfilehash: 0fba04efeaa634f5e21600768297aee0d999d1c6
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59028327"
 ---
 # <a name="interiorptr-ccli"></a>interior_ptr (C++/CLI)
@@ -47,7 +47,7 @@ cli::interior_ptr<cv_qualifier type> var = &initializer;
 *cv_qualifier*<br/>
 **const** veya **geçici** niteleyicileri.
 
-* türü*<br/>
+*type*<br/>
 Türünü *Başlatıcı*.
 
 *var*<br/>
@@ -74,13 +74,13 @@ Atık toplanan yığında taşınamaz bir nesneye işaret eden bir işaretçiye 
 
 İç işaretçiler hakkında daha fazla bilgi için bkz.
 
-- [Nasıl yapılır: İç işaretçiler ve yönetilen diziler bildirme ve kullanma (C + +/ CLI)](how-to-declare-and-use-interior-pointers-and-managed-arrays-cpp-cli.md)
+- [Nasıl yapılır: İç İşaretçiler ve Yönetilen Diziler Bildirme ve Kullanma (C++/CLI)](how-to-declare-and-use-interior-pointers-and-managed-arrays-cpp-cli.md)
 
-- [Nasıl yapılır: İnterior_ptr anahtar sözcüğü ile değer türleri bildirme (C + +/ CLI)](how-to-declare-value-types-with-the-interior-ptr-keyword-cpp-cli.md)
+- [Nasıl yapılır: interior_ptr Anahtar Sözcüğü ile Değer Türleri Bildirme (C++/CLI)](how-to-declare-value-types-with-the-interior-ptr-keyword-cpp-cli.md)
 
-- [Nasıl yapılır: İç işaretçiler ve yerel işaretçilerle işlevleri tekrar yükleme (C + +/ CLI)](how-to-overload-functions-with-interior-pointers-and-native-pointers-cpp-cli.md)
+- [Nasıl yapılır: İç İşaretçiler ve Yerel İşaretçilerle İşlevleri Tekrar Yükleme (C++/CLI)](how-to-overload-functions-with-interior-pointers-and-native-pointers-cpp-cli.md)
 
-- [Nasıl yapılır: Const anahtar sözcüğü ile iç işaretçileri bildirme (C + +/ CLI)](how-to-declare-interior-pointers-with-the-const-keyword-cpp-cli.md)
+- [Nasıl yapılır: const Anahtar Sözcüğü ile İç İşaretçileri Bildirme (C++/CLI)](how-to-declare-interior-pointers-with-the-const-keyword-cpp-cli.md)
 
 ### <a name="requirements"></a>Gereksinimler
 
@@ -124,4 +124,4 @@ int main() {
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[.NET ve UWP için bileşen uzantıları](component-extensions-for-runtime-platforms.md)
+[.NET ve UWP İçin Bileşen Uzantıları](component-extensions-for-runtime-platforms.md)

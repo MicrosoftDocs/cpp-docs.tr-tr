@@ -7,10 +7,10 @@ helpviewer_keywords:
 - navigation [C++], in record view
 ms.assetid: 227f2a6d-87c9-4656-807a-8e246965bcce
 ms.openlocfilehash: 88c76d31ae542d35476473888ad6282e3693405f
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59029531"
 ---
 # <a name="supporting-navigation-in-a-record-view--mfc-data-access"></a>(MFC veri erişimi) kayıt görünümünde gezintiyi destekleme

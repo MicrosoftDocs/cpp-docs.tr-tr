@@ -7,10 +7,10 @@ helpviewer_keywords:
 - range attribute
 ms.assetid: f352f79e-ecb3-4cdd-9cdd-8406ef473594
 ms.openlocfilehash: 9ce941fe95f2bbef3895c039984db1e1d2985ae1
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59029544"
 ---
 # <a name="range-c"></a>aralık (C++)
@@ -57,16 +57,16 @@ __interface ICustom {
 
 |||
 |-|-|
-|**Uygulandığı öğe:**|Arabirim yöntemini, arabirim parametresi|
+|**İçin geçerlidir**|Arabirim yöntemini, arabirim parametresi|
 |**Tekrarlanabilir**|Hayır|
-|**Gerekli öznitelikleri**|None|
-|**Geçersiz öznitelikler**|None|
+|**Gerekli öznitelikleri**|Yok.|
+|**Geçersiz öznitelikler**|Yok.|
 
 Öznitelik bağlamları hakkında daha fazla bilgi için bkz: [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[IDL Öznitelikleri](idl-attributes.md)<br/>
+[IDL öznitelikleri](idl-attributes.md)<br/>
 [Yöntem Öznitelikleri](method-attributes.md)<br/>
 [Parametre Öznitelikleri](parameter-attributes.md)<br/>
 [Veri Üyesi Öznitelikleri](data-member-attributes.md)

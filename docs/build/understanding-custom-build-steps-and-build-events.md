@@ -12,10 +12,10 @@ helpviewer_keywords:
 - builds [C++], custom build steps
 ms.assetid: beb2f017-3e9f-4b2c-9b57-2572fd2628e4
 ms.openlocfilehash: fc12689148e3bf23c233e4656249625d1156f9a7
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59028512"
 ---
 # <a name="understanding-custom-build-steps-and-build-events"></a>Özel Derleme Adımlarını ve Derleme Olaylarını Anlama
@@ -66,12 +66,12 @@ Derleme olayları ve özel derleme adımları birlikte başka yapılandırma ad�
 
 ## <a name="in-this-section"></a>Bu bölümde
 
-[Özel derleme araçlarını belirtme](specifying-custom-build-tools.md)<br/>
-[Derleme olayları belirtme](specifying-build-events.md)<br/>
-[Derleme özelleştirmeleri sorunlarını giderme](troubleshooting-build-customizations.md)<br/>
-[Özel derleme adımının veya derleme olayının çıktısını biçimi](formatting-the-output-of-a-custom-build-step-or-build-event.md)<br/>
+[Özel Derleme Araçlarını Belirtme](specifying-custom-build-tools.md)<br/>
+[Derleme Olaylarını Belirtme](specifying-build-events.md)<br/>
+[Derleme Özelleştirmelerinin Sorunlarını Giderme](troubleshooting-build-customizations.md)<br/>
+[Özel Derleme Adımının veya Derleme Olayının Çıkışını Biçimlendirme](formatting-the-output-of-a-custom-build-step-or-build-event.md)<br/>
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Visual Studio projeleri - C++](creating-and-managing-visual-cpp-projects.md)<br>
-[Genel derleme komutları ve Özellikler makroları](reference/common-macros-for-build-commands-and-properties.md)
+[Visual Studio Projeleri - C++](creating-and-managing-visual-cpp-projects.md)<br>
+[Derleme komutları ve özellikleri için genel makrolar](reference/common-macros-for-build-commands-and-properties.md)

@@ -18,10 +18,10 @@ helpviewer_keywords:
 - Check Mnemonics command
 ms.assetid: 6d308205-3c9e-42f2-ab42-45e656940e45
 ms.openlocfilehash: c9abf46907c473d4cf6d9e945038f70aa75bfc48
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59026285"
 ---
 # <a name="menu-commands-c"></a>Menü komutları (C++)
@@ -31,17 +31,17 @@ Aşağıdaki bilgilere göre düzenlenmiş **menü** görünen Özellikler [Öze
 |Özellik|Açıklama|
 |--------------|-----------------|
 |**sonu**|Şu değerlerden biri olabilir:<br/>  - **Hiçbiri**: Kesme yok. Bu varsayılandır.<br/>  - **Sütun**: Statik menüleri için bu değer, yeni bir satıra menü komutunu yerleştirir.<br/>      Açılır menüler için bu değeri hiçbir sütunları arasındaki çizgi ile yeni bir sütun menü komutunu yerleştirir.<br/>      Bu özelliğin ayarlanması menü görünümünü yalnızca çalışma zamanında, menü Düzenleyicisi'nde etkiler.<br />   - **Çubuk**: Aynı **sütun** dışında açılır menüler için bu değeri yeni bir sütun içeren bir dikey çizgi eski sütunu ayırır.<br/>      Bu özelliğin ayarlanması etkiler menü görünümünü yalnızca çalışma zamanında değil **Menü Düzenleyici**.|
-|**Başlık**|Menü komutunu (menü adı) etiket metni. Bir harf menüsünün açıklamasındaki kısayol tuşu komutu, bir ampersan ile önünde olmak için (&).|
+|**Resim yazısı**|Menü komutunu (menü adı) etiket metni. Bir harf menüsünün açıklamasındaki kısayol tuşu komutu, bir ampersan ile önünde olmak için (&).|
 |**İşaretli**|Varsa **True**, menü komutunu başlangıçta denetlenir. Tür: **bool**. Varsayılan: **False**.|
 |**Etkin**|Varsa **False**, menü öğesi devre dışı bırakıldı.|
 |**Gri**|Varsa **True**, başlangıçta gri ve etkin olmayan menü komutu. Tür: **bool**. Varsayılan: **False**.|
 |**Yardım**|Menü öğesi sağa hizalar. Varsayılan: **False**.<br/><br/>Örneğin, **yardımcı** menü komutu olduğundan her zaman, tüm Windows uygulamalarını sağdaki. Bir menü öğesi bu özelliği ayarlarsanız, bu öğe en çok sağdaki ve menüsünün en sonunda görünür. Üst düzey öğeleri için geçerlidir.|
-|**Kimlik**|Üst bilgi dosyasında tanımlanan bir simge. Tür: **Sembol**, **tamsayı**, veya **sınırlandırılmış**.<br/><br/>Yaygın olarak kullanılabilen düzenleyicileri hiçbirinde olsa bile herhangi bir simge kullanabilir [Özellikler penceresi](/visualstudio/ide/reference/properties-window) arasından seçim yapabileceğiniz bir açılan liste sağlamaz.|
+|**ID**|Üst bilgi dosyasında tanımlanan bir simge. Tür: **Sembol**, **tamsayı**, veya **sınırlandırılmış**.<br/><br/>Yaygın olarak kullanılabilen düzenleyicileri hiçbirinde olsa bile herhangi bir simge kullanabilir [Özellikler penceresi](/visualstudio/ide/reference/properties-window) arasından seçim yapabileceğiniz bir açılan liste sağlamaz.|
 |**Açılan Pencere**|Varsa **True**, açılır menü menü komutudur. Tür: **bool**. Varsayılan: **Doğru** değilse, menü çubuğunda en üst düzey menüler için **False**.|
-|**İstem**|Bu menü komutu vurgulandığında durum çubuğunda görüntülenecek metni içerir. Menü komutu ile aynı tanımlayıcıyla dize tablosunda metin yerleştirilir.<br/><br/>Bu özellik, her türden proje için kullanılabilir, ancak MFC belirli çalışma zamanı işlevdir.|
+|**Sor**|Bu menü komutu vurgulandığında durum çubuğunda görüntülenecek metni içerir. Menü komutu ile aynı tanımlayıcıyla dize tablosunda metin yerleştirilir.<br/><br/>Bu özellik, her türden proje için kullanılabilir, ancak MFC belirli çalışma zamanı işlevdir.|
 |**Sağdan Sola Yasla**|Sağa hizalar çalışma zamanında menü çubuğundaki menü komutu. Tür: **bool**. Varsayılan: **False**.|
 |**Sağa sola düzeni için**|Sağ İbranice ve Arapça gibi sola, okuyan herhangi bir dil için yerelleştirilmiş arabirim sağdan sola görüntülemek, menü komutlarını sağlar.|
-|**Ayırıcı**|Varsa **True**, menü komutunu olduğu bir ayırıcı. Tür: **bool**. Varsayılan: **False**.|
+|**Ayıraç**|Varsa **True**, menü komutunu olduğu bir ayırıcı. Tür: **bool**. Varsayılan: **False**.|
 
 ## <a name="associate-menu-commands"></a>İlişkilendirme menü komutları
 

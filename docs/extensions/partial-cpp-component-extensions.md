@@ -1,5 +1,5 @@
 ---
-title: Kısmi (C + +/ CLI ve C + +/ CX)
+title: Kısmi (C++/CLI ve C++/CX)
 ms.date: 10/12/2018
 ms.topic: reference
 f1_keywords:
@@ -9,13 +9,13 @@ helpviewer_keywords:
 - C++/CX, partial
 ms.assetid: 43adf1f5-10c5-44aa-a66f-7507e2bdabf8
 ms.openlocfilehash: eb9b3907008147cb21f04aec5f42e4896fa35b3c
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59029952"
 ---
-# <a name="partial--ccli-and-ccx"></a>Kısmi (C + +/ CLI ve C + +/ CX)
+# <a name="partial--ccli-and-ccx"></a>Kısmi (C++/CLI ve C++/CX)
 
 **Kısmi** farklı bölümlerini birbirinden bağımsız olarak ve farklı dosyalar yazılması gereken aynı başvuru sınıfı anahtar sözcüğü sağlar.
 
@@ -67,7 +67,7 @@ Tam tanımı: Sınıfın tam tanımlarken *tanımlayıcı*, aynı durum geçerli
 
 Genel türler: Kısmi bir sınıf tam tanımı genel bir genel olabilir. Ancak her kısmi ve tam sınıf tam olarak biçimsel parametre adları da dahil olmak üzere aynı genel parametre olmalıdır.
 
-Nasıl kullanılacağı hakkında daha fazla bilgi için **kısmi** anahtar sözcüğü, bkz: [kısmi sınıflar (C + +/ CX)](http://go.microsoft.com/fwlink/p/?LinkId=249023).
+Nasıl kullanılacağı hakkında daha fazla bilgi için **kısmi** anahtar sözcüğü, bkz: [kısmi sınıflar (C++/CX)](http://go.microsoft.com/fwlink/p/?LinkId=249023).
 
 ### <a name="requirements"></a>Gereksinimler
 
@@ -79,4 +79,4 @@ Derleyici seçeneği: `/ZW`
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Kısmi sınıflar (C + +/ CX)](http://go.microsoft.com/fwlink/p/?LinkId=249023)
+[Kısmi sınıflar (C++/CX)](http://go.microsoft.com/fwlink/p/?LinkId=249023)

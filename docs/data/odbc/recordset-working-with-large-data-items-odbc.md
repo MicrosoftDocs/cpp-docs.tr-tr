@@ -9,10 +9,10 @@ helpviewer_keywords:
 - CLongBinary class, using in recordsets
 ms.assetid: 3e80b5a8-b6e7-43c6-a816-e54befc513a3
 ms.openlocfilehash: 3ba8d4af5b0781c425dd3b1223e2208b279f055e
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59033050"
 ---
 # <a name="recordset-working-with-large-data-items-odbc"></a>Kayıt kümesi: Büyük veri öğeleri ile çalışma (ODBC)

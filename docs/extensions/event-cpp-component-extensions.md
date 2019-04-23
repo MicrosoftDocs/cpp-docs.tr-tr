@@ -1,5 +1,5 @@
 ---
-title: Olay (C + +/ CLI ve C + +/ CX)
+title: Olay (C++/CLI ve C++/CX)
 ms.date: 10/12/2018
 ms.topic: reference
 f1_keywords:
@@ -9,19 +9,19 @@ helpviewer_keywords:
 - event keyword [C++]
 ms.assetid: c4998e42-883c-4419-bbf4-36cdc979dd27
 ms.openlocfilehash: 26bfc3bb9892486353f55a71cfd86a17f2de98b5
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59033092"
 ---
-# <a name="event--ccli-and-ccx"></a>Olay (C + +/ CLI ve C + +/ CX)
+# <a name="event--ccli-and-ccx"></a>Olay (C++/CLI ve C++/CX)
 
 **Olay** anahtar sözcüğü bildiren bir *olay*, kayıtlı aboneleri için bir bildirim olduğu (*olay işleyicileri*), ilgilendiğiniz bir sorun oluştu.
 
 ## <a name="all-runtimes"></a>Tüm Çalışma Zamanları
 
-C + +/ CX destekler bildirme bir *olay üyesi* veya *olay blok*. Bir olay üyesi bir olay bloğu bildirmek için toplu özelliktir. Varsayılan olarak, bir olay üyesi bildirir `add()`, `remove()`, ve `raise()` açıkça bir olay blokta bildirilen işlevler. Bir olay üyesi işlevleri özelleştirmek için bir olay bloğu yerine bildirme ve ihtiyacınız olan işlevleri geçersiz kılın.
+C++/CX destekler bildirme bir *olay üyesi* veya *olay blok*. Bir olay üyesi bir olay bloğu bildirmek için toplu özelliktir. Varsayılan olarak, bir olay üyesi bildirir `add()`, `remove()`, ve `raise()` açıkça bir olay blokta bildirilen işlevler. Bir olay üyesi işlevleri özelleştirmek için bir olay bloğu yerine bildirme ve ihtiyacınız olan işlevleri geçersiz kılın.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -40,10 +40,10 @@ modifiereventdelegate^ event_name
 
 ### <a name="parameters"></a>Parametreler
 
-* değiştiricisi*<br/>
+*Değiştiricisi*<br/>
 Olay bildirimi ya da bir olay erişimci yöntemi kullanılabilir değiştiricisi.  Olası değerler **statik** ve **sanal**.
 
-*temsilci*<br/>
+*delegate*<br/>
 [Temsilci](delegate-cpp-component-extensions.md), imzası olan olay işleyicisi eşleşmesi gerekir.
 
 *EVENT_NAME*<br/>
@@ -75,7 +75,7 @@ Kullanabileceğiniz **işleçleri +=** ve **-= işleci** ekleme ve kaldırma ola
 
 ### <a name="remarks"></a>Açıklamalar
 
-Daha fazla bilgi için [olaylar (C + +/ CX)](https://msdn.microsoft.com/library/windows/apps/hh755799.aspx).
+Daha fazla bilgi için [olayları (C++/CX)](https://msdn.microsoft.com/library/windows/apps/hh755799.aspx).
 
 Ekle ve Kaldır'ı bir olay işleyicisi yapmak istiyorsanız, ekleme işlemi tarafından döndürülen EventRegistrationToken yapısı kaydetmeniz gerekir. Ardından kaldırma işleminde kaldırılacak olay işleyicisi tanımlamak için kaydedilen EventRegistrationToken yapısı kullanmalısınız.
 
@@ -104,10 +104,10 @@ modifiereventdelegate^ event_name
 
 ### <a name="parameters"></a>Parametreler
 
-* değiştiricisi*<br/>
+*Değiştiricisi*<br/>
 Olay bildirimi ya da bir olay erişimci yöntemi kullanılabilir değiştiricisi.  Olası değerler **statik** ve **sanal**.
 
-*temsilci*<br/>
+*delegate*<br/>
 [Temsilci](delegate-cpp-component-extensions.md), imzası olan olay işleyicisi eşleşmesi gerekir.
 
 *EVENT_NAME*<br/>
@@ -161,7 +161,7 @@ Oluşturma ve olayları Visual c++'ta kullanmak için aşağıdaki adımlar atı
 
    - Olay tanımını içeren sınıfın bir nesnesi oluşturun.
 
-Daha fazla bilgi C + +/ CLI olaylara bakın
+Daha fazla bilgi için C++/CLI olaylara bakın
 
 - [Arabirim içindeki olaylar](../dotnet/how-to-use-events-in-cpp-cli.md)
 
@@ -272,4 +272,4 @@ int main() {
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[.NET ve UWP için bileşen uzantıları](component-extensions-for-runtime-platforms.md)
+[.NET ve UWP İçin Bileşen Uzantıları](component-extensions-for-runtime-platforms.md)

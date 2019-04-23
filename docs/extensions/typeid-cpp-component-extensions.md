@@ -1,18 +1,18 @@
 ---
-title: typeid (C + +/ CLI ve C + +/ CX)
+title: typeid (C++/CLI ve C++/CX)
 ms.date: 10/12/2018
 ms.topic: reference
 helpviewer_keywords:
 - typeid keyword [C++]
 ms.assetid: e9706cae-e7c4-4d6d-b474-646d73df3e70
 ms.openlocfilehash: ec64388d5f71cff01207129e337cf20bb151db1a
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59031517"
 ---
-# <a name="typeid--ccli-and-ccx"></a>typeid (C + +/ CLI ve C + +/ CX)
+# <a name="typeid--ccli-and-ccx"></a>typeid (C++/CLI ve C++/CX)
 
 Bir nesne türünü gösteren bir değer alır.
 
@@ -47,7 +47,7 @@ Tür adı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-C + +/ CX, typeid döndürür bir [Platform::Type](../cppcx/platform-type-class.md) çalışma zamanı türü bilgileri oluşturulur.
+İçinde C++/TypeID CX, returns bir [Platform::Type](../cppcx/platform-type-class.md) çalışma zamanı türü bilgileri oluşturulur.
 
 ### <a name="requirements"></a>Gereksinimler
 
@@ -63,7 +63,7 @@ type::typeid
 
 ### <a name="parameters"></a>Parametreler
 
-* türü*<br/>
+*type*<br/>
 İstediğiniz bir türün (soyut bildirimci) adını `System::Type` nesne.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -74,7 +74,7 @@ type::typeid
 
 `typeid` GetType çalışma zamanında döndürülecek tür değerlendirir ise, bir tür adı (tür) derleme zamanında değerlendirilmesi mümkün olması gerekir.
 
-`typeid` bir yerel tür adı veya yerel bir tür adı için ortak dil çalışma zamanı diğer adı alabilir; bkz: [C++ yerel türlerinin .NET Framework eşdeğerleri (C + +/ CLI)](../dotnet/dotnet-framework-equivalents-to-cpp-native-types-cpp-cli.md) daha fazla bilgi için.
+`typeid` bir yerel tür adı veya yerel bir tür adı için ortak dil çalışma zamanı diğer adı alabilir; bkz: [.NET Framework eşdeğerleri C++ yerel türler (C++/CLI)](../dotnet/dotnet-framework-equivalents-to-cpp-native-types-cpp-cli.md) daha fazla bilgi için.
 
 `typeid` hala bir System::Type döndürür ancak yerel türler ile de çalışır.  Type_info yapısı almak için kullanın [typeid işleci](../cpp/typeid-operator.md).
 
@@ -190,4 +190,4 @@ int::typeid == handle_to_int::typeid, as expected
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[.NET ve UWP için bileşen uzantıları](component-extensions-for-runtime-platforms.md)
+[.NET ve UWP İçin Bileşen Uzantıları](component-extensions-for-runtime-platforms.md)

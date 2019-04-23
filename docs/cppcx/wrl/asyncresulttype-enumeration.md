@@ -8,10 +8,10 @@ helpviewer_keywords:
 - AsyncResultType enumeration
 ms.assetid: 4195d234-3f3f-4363-9118-6ad2a7551cf2
 ms.openlocfilehash: d3f99fa85a777ae8361ed6f7cb82fe97ddd8d667
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59028061"
 ---
 # <a name="asyncresulttype-enumeration"></a>AsyncResultType Numaralandırması

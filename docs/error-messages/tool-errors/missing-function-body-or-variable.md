@@ -6,10 +6,10 @@ helpviewer_keywords:
 - variables, missing
 ms.assetid: 1a88d809-b14f-46a4-97c4-3e48beb418f2
 ms.openlocfilehash: c287d804df3222475d7cf32c6eb025f642dfb913
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59031867"
 ---
 # <a name="missing-function-body-or-variable"></a>Eksik İşlev Gövdesi veya Değişken

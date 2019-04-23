@@ -8,10 +8,10 @@ helpviewer_keywords:
 - templates [C++], OLE DB
 ms.assetid: fccff85f-2af8-4500-82bd-6312d28a74b8
 ms.openlocfilehash: 793aa08630ec92f99c33c2a4f3688e78630a6c58
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59027493"
 ---
 # <a name="ole-db-provider-templates-c"></a>OLE DB Sağlayıcı Şablonları (C++)

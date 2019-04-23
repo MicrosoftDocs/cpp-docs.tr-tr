@@ -7,10 +7,10 @@ helpviewer_keywords:
 - BK1503
 ms.assetid: e6582344-b91e-486f-baf3-4f9028d83c3b
 ms.openlocfilehash: c81e955b912e03b322c0429097410fae74713b9d
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59031598"
 ---
 # <a name="bscmake-error-bk1503"></a>BSCMAKE Hatası BK1503

@@ -9,10 +9,10 @@ helpviewer_keywords:
 - pragmas, alloc_text
 ms.assetid: 1fd7be18-e4f7-4f70-b079-6326f72b871a
 ms.openlocfilehash: 399e8956a511f289b480e66db7f03cac0a6c7c20
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59031371"
 ---
 # <a name="alloctext"></a>alloc_text
@@ -28,7 +28,7 @@ textsection
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Alloc_text** pragması, C++ üye işlevlerini veya aşırı yüklenmiş işlevleri işlemez. Yalnızca C bağlantısıyla bildirilen işlevler için geçerlidir; diğer bir deyişle, bildirilen işlevler **extern "C"** bağlama belirtimi. Bu pragmayı C++ bağlantısı olan bir işlevde kullanırsanız, bir derleyici hatası oluşturulur.
+**Alloc_text** pragma işlemez C++ üye işlevlerini veya aşırı yüklenmiş işlevler. Yalnızca C bağlantısıyla bildirilen işlevler için geçerlidir; diğer bir deyişle, bildirilen işlevler **extern "C"** bağlama belirtimi. Bu pragmayı C++ bağlantısı olan bir işlevde kullanırsanız, bir derleyici hatası oluşturulur.
 
 İşlev adresi kullanarak bu yana `__based` , bölüm konumları kullanılmasını gerektiren belirtilmesi desteklenmiyor **alloc_text** pragması. Tarafından belirtilen adı *textsection* çift tırnak içine alınmalıdır.
 

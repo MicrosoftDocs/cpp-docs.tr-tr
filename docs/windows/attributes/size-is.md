@@ -7,10 +7,10 @@ helpviewer_keywords:
 - size_is attribute
 ms.assetid: 70192d09-f6c5-4d52-b3fe-303f8cb10aa5
 ms.openlocfilehash: a7b990a708bafba78c9dc4153315f8b7b20351ba
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59033239"
 ---
 # <a name="sizeis"></a>size_is
@@ -25,7 +25,7 @@ Bellek boyutu boyutlu işaretçiler için ayrılan, boyutlandırılmış işaret
 
 ### <a name="parameters"></a>Parametreler
 
-*ifade*<br/>
+*İfade*<br/>
 Boyutlandırılmış işaretçiler için ayrılan bellek boyutu.
 
 ## <a name="remarks"></a>Açıklamalar
@@ -42,7 +42,7 @@ Boyutlandırılmış işaretçiler için ayrılan bellek boyutu.
 
 |||
 |-|-|
-|**Uygulandığı öğe:**|İçinde alan **yapı** veya **birleşim**, parametre arabirim, arabirim yöntemi|
+|**İçin geçerlidir**|İçinde alan **yapı** veya **birleşim**, parametre arabirim, arabirim yöntemi|
 |**Tekrarlanabilir**|Hayır|
 |**Gerekli öznitelikleri**|Yok.|
 |**Geçersiz öznitelikler**|`max_is`|
@@ -51,7 +51,7 @@ Boyutlandırılmış işaretçiler için ayrılan bellek boyutu.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[IDL Öznitelikleri](idl-attributes.md)<br/>
+[IDL öznitelikleri](idl-attributes.md)<br/>
 [Typedef, Enum, Union ve Struct Öznitelikleri](typedef-enum-union-and-struct-attributes.md)<br/>
 [Parametre Öznitelikleri](parameter-attributes.md)<br/>
 [first_is](first-is.md)<br/>

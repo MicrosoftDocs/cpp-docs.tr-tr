@@ -11,10 +11,10 @@ helpviewer_keywords:
 - pointers_to_members pragma
 ms.assetid: 8325428c-c90a-4aed-9e82-cb1dda23f4ca
 ms.openlocfilehash: 5ee45a77a7094fb1ef9ba536bae391aaad00e812
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59032069"
 ---
 # <a name="pointerstomembers"></a>pointers_to_members
@@ -45,7 +45,7 @@ Koyabilirsiniz bir **pointers_to_members** pragma kullanmaya alternatif olarak, 
 |Bağımsız Değişken|Açıklamalar|
 |--------------|--------------|
 |*single_inheritance*|En genel gösterim, bir üye işlevi işaretçisi olan single-inheritance'tır. Kendisi için bir üye işaretçisinin bildirildiği bir sınıf tanımının devralma modeli birden çok veya sanal ise hataya neden olur.|
-|*multiple_inheritance*|En genel gösterim, bir üye işlev işaretçisi olan multiple-inheritance'tır. Kendisi için bir üye işaretçisinin bildirildiği bir sınıf tanımının devralma modeli sanal ise hataya neden olur.|
+|*birden çok devralma*|En genel gösterim, bir üye işlev işaretçisi olan multiple-inheritance'tır. Kendisi için bir üye işaretçisinin bildirildiği bir sınıf tanımının devralma modeli sanal ise hataya neden olur.|
 |*virtual_inheritance*|En genel devralma, bir üye işlev işaretçisi olan virtual-inheritance'tır. Hiçbir zaman hataya neden olmaz. Bu varsayılan bağımsız değişkendir, `#pragma pointers_to_members(full_generality)` kullanılır.|
 
 > [!CAUTION]

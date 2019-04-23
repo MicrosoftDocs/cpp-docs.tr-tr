@@ -7,10 +7,10 @@ helpviewer_keywords:
 - OLE DB provider templates, object model
 ms.assetid: 639304a3-f9e0-44dc-8d0c-0ebd2455b363
 ms.openlocfilehash: 65a7e5b8f169d06ca11d8d27ec99ce3db4b63014
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59028554"
 ---
 # <a name="ole-db-provider-template-architecture"></a>OLE DB Sağlayıcı Şablonu Mimarisi
@@ -33,7 +33,7 @@ OLE DB sağlayıcı şablonları, önceden paketlenmiş uygulamalar için gerekl
 
 - [Satır kümesi](../../data/oledb/rowset-object-interfaces.md)
 
-- [Komut](../../data/oledb/command-object-interfaces.md)
+- [Komutu](../../data/oledb/command-object-interfaces.md)
 
 - [İşlem](../../data/oledb/transaction-object-interfaces.md)
 
@@ -57,5 +57,5 @@ Daha fazla bilgi için aşağıdaki konulara bakın:
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[OLE DB Sağlayıcı Şablonları](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>
+[OLE DB sağlayıcı şablonları](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>
 [OLE DB arabirimleri](/previous-versions/windows/desktop/ms709709(v=vs.85))<br/>

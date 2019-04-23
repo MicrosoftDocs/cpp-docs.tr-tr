@@ -23,10 +23,10 @@ helpviewer_keywords:
 - Open method
 ms.assetid: 25805f1b-26e3-402f-af83-1b5fe5ddebf7
 ms.openlocfilehash: 23467caf46d38175a74dab061f60e11009f1f481
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59030186"
 ---
 # <a name="cenumerator-class"></a>CEnumerator Sınıfı
@@ -52,7 +52,7 @@ class CEnumerator :
 |-|-|
 |[Bul](#find)|Belirtilen ada sahip bir arayan yok sağlayıcıları (veri kaynakları) arar.|
 |[GetMoniker](#getmoniker)|Alır `IMoniker` geçerli kayıt için arabirim.|
-|[Open](#open)|Numaralandırıcı açılır.|
+|[açın](#open)|Numaralandırıcı açılır.|
 
 ## <a name="remarks"></a>Açıklamalar
 

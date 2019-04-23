@@ -9,10 +9,10 @@ helpviewer_keywords:
 - interfaces, list of
 ms.assetid: ac01a958-6dde-4bd7-8b63-94459e488335
 ms.openlocfilehash: 2fb91365fec0709e1bb2a26afa519e6565862681
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59031462"
 ---
 # <a name="session-object-interfaces"></a>Oturum Nesnesi Arabirimleri
@@ -36,7 +36,7 @@ Aşağıdaki tabloda, bir oturum nesnesi için OLE DB tarafından tanımlanan zo
 |[ITableDefinition](/previous-versions/windows/desktop/ms714277(v=vs.85))|İsteğe Bağlı|Hayır|
 |[ITableDefinitionWithConstraints](/previous-versions/windows/desktop/ms720947(v=vs.85))|İsteğe Bağlı|Hayır|
 |[ITransaction](/previous-versions/windows/desktop/ms723053(v=vs.85))|İsteğe Bağlı|Hayır|
-|[ITransactionJoin'i](/previous-versions/windows/desktop/ms718071(v=vs.85))|İsteğe Bağlı|Hayır|
+|[ITransactionJoin](/previous-versions/windows/desktop/ms718071(v=vs.85))|İsteğe Bağlı|Hayır|
 |[ITransactionLocal](/previous-versions/windows/desktop/ms714893(v=vs.85))|İsteğe Bağlı|Hayır|
 |[ITransactionObject](/previous-versions/windows/desktop/ms713659(v=vs.85))|İsteğe Bağlı|Hayır|
 

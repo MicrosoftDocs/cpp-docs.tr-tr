@@ -9,10 +9,10 @@ helpviewer_keywords:
 - recordsets, stored procedures
 ms.assetid: d27c4df9-dad2-4484-ba72-92ab0c8ff928
 ms.openlocfilehash: d4ae9f21c4bd53a8050d6f8c3765bb9823d077ba
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59026533"
 ---
 # <a name="recordset-declaring-a-class-for-a-predefined-query-odbc"></a>Kayıt kümesi: Bir sınıf bildirme (ODBC) önceden tanımlanmış sorgu için

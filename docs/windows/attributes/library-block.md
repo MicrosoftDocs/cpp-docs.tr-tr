@@ -7,10 +7,10 @@ helpviewer_keywords:
 - library_block attribute
 ms.assetid: ae7a7ebe-5e1a-4eda-a058-11bbd058ece8
 ms.openlocfilehash: 219f6a89dd7f80246e0337c2ef3bcad43540b165
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59033222"
 ---
 # <a name="libraryblock"></a>library_block
@@ -48,9 +48,9 @@ __interface IMyInterface {
 
 |||
 |-|-|
-|**Uygulandığı öğe:**|Her yerde|
+|**İçin geçerlidir**|Her yerde|
 |**Tekrarlanabilir**|Hayır|
-|**Gerekli öznitelikleri**|None|
+|**Gerekli öznitelikleri**|Yok.|
 |**Geçersiz öznitelikler**|Yok.|
 
 Daha fazla bilgi için [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).

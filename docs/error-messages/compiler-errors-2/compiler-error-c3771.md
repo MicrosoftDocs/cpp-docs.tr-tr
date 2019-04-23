@@ -7,10 +7,10 @@ helpviewer_keywords:
 - C3771
 ms.assetid: 68c23b25-7f21-4eaa-8f7e-38fda1130a69
 ms.openlocfilehash: 6b15d867bbaf66f511cbda200d692f5db4371ab3
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59026714"
 ---
 # <a name="compiler-error-c3771"></a>Derleyici Hatası C3771

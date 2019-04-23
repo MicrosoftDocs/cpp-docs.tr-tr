@@ -9,15 +9,15 @@ helpviewer_keywords:
 - __stosq intrinsic
 ms.assetid: 3ea28297-4369-4c2d-bf0c-91fa539ce209
 ms.openlocfilehash: eacb12f7c02b82607d980281f8d4a0bc1e1d7c14
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59032446"
 ---
 # <a name="stosq"></a>__stosq
 
-**Microsoft'a Özgü**
+**Microsoft'a özgü**
 
 Bir depolama dize yönergesi oluşturur (`rep stosq`).
 
@@ -39,7 +39,7 @@ void __stosb(
 *Veri*<br/>
 [in] Depolamak için veriler.
 
-*Sayı*<br/>
+*Sayısı*<br/>
 [in] Yazılacak quadwords bloğunu uzunluğu.
 
 ## <a name="requirements"></a>Gereksinimler
@@ -82,7 +82,7 @@ int main()
 0 ffffffffffff ffffffffffff 0
 ```
 
-**END Microsoft'a Özgü**
+**END Microsoft özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

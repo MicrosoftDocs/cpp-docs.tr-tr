@@ -8,15 +8,15 @@ helpviewer_keywords:
 - __noop keyword [C++]
 ms.assetid: 81ac6e97-7bf8-496b-b3c4-fd02837573e5
 ms.openlocfilehash: 674b5170dd2bba7038dfe11af906e31540acd993
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59030238"
 ---
 # <a name="noop"></a>__noop
 
-**Microsoft'a Özgü**
+**Microsoft'a özgü**
 
 `__noop` İç işlev yoksayılıp yoksayılmaması gerektiğini belirtir ve bağımsız değişken listesi ayrıştırılır ancak kod üretilmedi bağımsız değişkenleri. Değişken sayıda bağımsız değişken genel hata ayıklama işlevlerini kullanmak için tasarlanmıştır.
 
@@ -45,4 +45,4 @@ int main() {
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)<br/>
-[anahtar sözcükler](../cpp/keywords-cpp.md)
+[Anahtar Sözcükler](../cpp/keywords-cpp.md)

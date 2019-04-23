@@ -10,10 +10,10 @@ helpviewer_keywords:
 - data [MFC], displaying in a form
 ms.assetid: c56185c4-12cb-40b1-b499-02b29ea83e3a
 ms.openlocfilehash: e50c433e701fbae2e607d79d7abb34efe8eba5b5
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59033754"
 ---
 # <a name="displaying-and-manipulating-data-in-a-form"></a>Formdaki Verileri Görüntüleme ve Düzenleme

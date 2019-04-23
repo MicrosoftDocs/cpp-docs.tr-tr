@@ -7,10 +7,10 @@ helpviewer_keywords:
 - C3485
 ms.assetid: d67536f9-67a1-4ad9-9a94-d8bbbca3d0dc
 ms.openlocfilehash: 2fcaecd6be35e2ae6822133930b48b6bbf02aafe
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59027590"
 ---
 # <a name="compiler-error-c3485"></a>Derleyici Hatası C3485

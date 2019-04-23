@@ -7,10 +7,10 @@ helpviewer_keywords:
 - transmit_as attribute
 ms.assetid: 53d0b8ab-5b06-423e-83eb-3d01a10424b2
 ms.openlocfilehash: e432d1a8f39cbc5e12f192ed7b07c29421bc403e
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59032108"
 ---
 # <a name="transmitas"></a>transmit_as
@@ -25,7 +25,7 @@ ms.locfileid: "59032108"
 
 ### <a name="parameters"></a>Parametreler
 
-* türü*<br/>
+*type*<br/>
 İstemci ve sunucu arasında aktarılan veri türünü belirtir.
 
 ## <a name="remarks"></a>Açıklamalar
@@ -70,15 +70,15 @@ struct _TREE_NODE_TYPE * right;
 
 |||
 |-|-|
-|**Uygulandığı öğe:**|**typedef**|
+|**İçin geçerlidir**|**tür tanımı**|
 |**Tekrarlanabilir**|Hayır|
 |**Gerekli öznitelikleri**|None|
-|**Geçersiz öznitelikler**|Yok.|
+|**Geçersiz öznitelikler**|None|
 
 Öznitelik bağlamları hakkında daha fazla bilgi için bkz: [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[IDL Öznitelikleri](idl-attributes.md)<br/>
+[IDL öznitelikleri](idl-attributes.md)<br/>
 [Typedef, Enum, Union ve Struct Öznitelikleri](typedef-enum-union-and-struct-attributes.md)<br/>
-[dışarı aktar](export.md)
+[export](export.md)

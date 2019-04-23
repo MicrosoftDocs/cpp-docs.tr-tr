@@ -9,15 +9,15 @@ helpviewer_keywords:
 - InterlockedAddLargeStatistic intrinsic
 ms.assetid: 2802e74b-bcee-46e4-b562-894908d44409
 ms.openlocfilehash: 6f9d599a8d7668c6c8a37846275e8338002589d1
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59033420"
 ---
 # <a name="interlockedaddlargestatistic"></a>_InterlockedAddLargeStatistic
 
-**Microsoft'a Özgü**
+**Microsoft'a özgü**
 
 İlk işleneni bir 64-bit değeri olduğu bir birbirine kenetlenmiş ek gerçekleştirir.
 
@@ -56,7 +56,7 @@ Kilitli yönergeleri iki ayrı olarak uygulanan çünkü bu iç atomik değildir
 
 Bu işlev, bir okuma-yazma engel davranır. Daha fazla bilgi için [_ReadWriteBarrier](../intrinsics/readwritebarrier.md).
 
-**END Microsoft'a Özgü**
+**END Microsoft özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

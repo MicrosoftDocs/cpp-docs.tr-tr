@@ -11,10 +11,10 @@ helpviewer_keywords:
 - RFX (ODBC) [C++], binding fields and parameters
 ms.assetid: e647cacd-62b0-4b80-9e20-b392deca5a88
 ms.openlocfilehash: 7da9d480f16dcb6bc5ded0a1dff559b1b1ac4b38
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59032683"
 ---
 # <a name="record-field-exchange-how-rfx-works"></a>Kayıt Alanı Değişimi: RFX'in çalışması
@@ -90,7 +90,7 @@ Yeni bir kayıt eklemek, kayıt yeni bir kaydın içeriğini oluşturmak için b
 
 1. `AddNew` veya `Edit` alanları düzenleme arabelleğindeki RFX değiştirilen alan veri üyeleri algılayabilmesi için hazırlar.
 
-   Yeni bir kayıt yenilerini ile Karşılaştırılacak önceki değer olmadığından `AddNew` PSEUDO_NULL değerine her alan veri üyesinin değerini ayarlar. Daha sonra çağırdığınızda `Update`, RFX her veri üyesinin değerini PSEUDO_NULL değerle karşılaştırır. Bir fark varsa, veri üyesi olarak ayarlandı. (PSEUDO_NULL kayıt sütunu doğru bir Null değeri ile aynı değil ya da bunlardan birisi olan C++ NULL olarak aynı.)
+   Yeni bir kayıt yenilerini ile Karşılaştırılacak önceki değer olmadığından `AddNew` PSEUDO_NULL değerine her alan veri üyesinin değerini ayarlar. Daha sonra çağırdığınızda `Update`, RFX her veri üyesinin değerini PSEUDO_NULL değerle karşılaştırır. Bir fark varsa, veri üyesi olarak ayarlandı. (PSEUDO_NULL true Null değerine sahip bir kayıt sütunu aynı değildir veya bunların ya da aynı C++ NULL.)
 
    Farklı `Update` çağrısı `AddNew`, `Update` çağrısı `Edit` karşılaştırır, daha önce depolanan değerleri ile PSEUDO_NULL kullanmak yerine değerler güncelleştirildi. Fark `AddNew` hiçbir daha önce depolanan değerleri karşılaştırma için vardır.
 
@@ -123,7 +123,7 @@ Kaydı sildiğinizde RFX tüm alanları kaydı silinir ve devre dışı taşıma
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Kayıt Alanı Değişimi (RFX)](../../data/odbc/record-field-exchange-rfx.md)<br/>
-[MFC ODBC Tüketici](../../mfc/reference/adding-an-mfc-odbc-consumer.md)<br/>
-[Makrolar, Genel İşlevler ve Genel Değişkenler](../../mfc/reference/mfc-macros-and-globals.md)<br/>
-[CFieldExchange sınıfı](../../mfc/reference/cfieldexchange-class.md)<br/>
+[MFC ODBC tüketici](../../mfc/reference/adding-an-mfc-odbc-consumer.md)<br/>
+[Makrolar, genel işlevler ve genel değişkenler](../../mfc/reference/mfc-macros-and-globals.md)<br/>
+[CFieldExchange Sınıfı](../../mfc/reference/cfieldexchange-class.md)<br/>
 [CRecordset::DoFieldExchange](../../mfc/reference/crecordset-class.md#dofieldexchange)

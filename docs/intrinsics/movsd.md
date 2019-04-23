@@ -9,15 +9,15 @@ helpviewer_keywords:
 - movsd instruction
 ms.assetid: eb5cccf3-aa76-47f0-b9fc-eeca38fd943f
 ms.openlocfilehash: 950e83f2cd03e92bb5a9f953affe8e7ff479a408
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59031306"
 ---
 # <a name="movsd"></a>__movsd
 
-**Microsoft'a Özgü**
+**Microsoft'a özgü**
 
 Taşıma bir dize oluşturur (`rep movsd`) yönerge.
 
@@ -39,7 +39,7 @@ void __movsd(
 *Kaynak*<br/>
 [in] İşlem kaynağı.
 
-*Sayı*<br/>
+*Sayısı*<br/>
 [in] Kopyalanacak doublewords sayısı.
 
 ## <a name="requirements"></a>Gereksinimler
@@ -83,7 +83,7 @@ int main()
 950 850 750 650 550 450 350 250 150 50
 ```
 
-**END Microsoft'a Özgü**
+**END Microsoft özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

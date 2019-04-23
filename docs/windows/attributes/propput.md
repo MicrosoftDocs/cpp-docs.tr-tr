@@ -7,10 +7,10 @@ helpviewer_keywords:
 - propput attribute
 ms.assetid: 1f84dda9-9cce-4e16-aaf0-b2c5219827f2
 ms.openlocfilehash: c9853b38675abfa0a94a319ac752eb2ef61a48e0
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59031745"
 ---
 # <a name="propput"></a>propput
@@ -37,16 +37,16 @@ Bir özellik ayarı işlevi belirtir.
 
 |||
 |-|-|
-|**Uygulandığı öğe:**|Yöntem|
+|**İçin geçerlidir**|Yöntem|
 |**Tekrarlanabilir**|Hayır|
-|**Gerekli öznitelikleri**|Yok.|
+|**Gerekli öznitelikleri**|None|
 |**Geçersiz öznitelikler**|`propget`, `propputref`|
 
 Öznitelik bağlamları hakkında daha fazla bilgi için bkz: [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[IDL Öznitelikleri](idl-attributes.md)<br/>
+[IDL öznitelikleri](idl-attributes.md)<br/>
 [Yöntem Öznitelikleri](method-attributes.md)<br/>
 [propget](propget.md)<br/>
 [propputref](propputref.md)

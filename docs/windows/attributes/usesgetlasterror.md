@@ -7,10 +7,10 @@ helpviewer_keywords:
 - usesgetlasterror attribute
 ms.assetid: d149e33d-35a7-46cb-9137-ae6883d86122
 ms.openlocfilehash: 9f050bbf69edf1ab8327a283299cb5e687ce5380
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59032212"
 ---
 # <a name="usesgetlasterror"></a>usesgetlasterror
@@ -37,13 +37,13 @@ Bkz: [idl_module](idl-module.md) nasıl kullanılacağına ilişkin bir örnek i
 
 |||
 |-|-|
-|**Uygulandığı öğe:**|**Modül** özniteliği|
+|**İçin geçerlidir**|**Modül** özniteliği|
 |**Tekrarlanabilir**|Hayır|
 |**Gerekli öznitelikleri**|Yok.|
-|**Geçersiz öznitelikler**|None|
+|**Geçersiz öznitelikler**|Yok.|
 
 Öznitelik bağlamları hakkında daha fazla bilgi için bkz: [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[IDL Öznitelikleri](idl-attributes.md)
+[IDL öznitelikleri](idl-attributes.md)

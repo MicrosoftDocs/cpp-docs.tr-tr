@@ -7,10 +7,10 @@ helpviewer_keywords:
 - switch_is attribute
 ms.assetid: f1fffe5d-12d2-4e0f-8803-ccb715177d2d
 ms.openlocfilehash: ccac405480e415df17b42f02dce74759f578d025
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59031095"
 ---
 # <a name="switchis"></a>switch_is
@@ -37,15 +37,15 @@ Bkz: [çalışması](case-cpp.md) örnek kullanımını örneğin **switch_is**.
 
 |||
 |-|-|
-|**Uygulandığı öğe:**|**typedef**|
+|**İçin geçerlidir**|**tür tanımı**|
 |**Tekrarlanabilir**|Hayır|
-|**Gerekli öznitelikleri**|Yok.|
+|**Gerekli öznitelikleri**|None|
 |**Geçersiz öznitelikler**|Yok.|
 
 Öznitelik bağlamları hakkında daha fazla bilgi için bkz: [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[IDL Öznitelikleri](idl-attributes.md)<br/>
+[IDL öznitelikleri](idl-attributes.md)<br/>
 [Typedef, Enum, Union ve Struct Öznitelikleri](typedef-enum-union-and-struct-attributes.md)<br/>
 [switch_type](switch-type.md)

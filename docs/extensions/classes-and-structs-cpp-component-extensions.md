@@ -1,5 +1,5 @@
 ---
-title: başvuru sınıfı ve ref struct (C + +/ CLI ve C + +/ CX)
+title: başvuru sınıfı ve ref struct (C++/CLI ve C++/CX)
 ms.date: 10/12/2018
 ms.topic: reference
 helpviewer_keywords:
@@ -9,13 +9,13 @@ helpviewer_keywords:
 - ref struct keyword [C++]
 ms.assetid: 5c360764-b229-49c6-9357-66213afbc372
 ms.openlocfilehash: fcc50109ce521e005e32a8c19b13aabe2230989b
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59029735"
 ---
-# <a name="ref-class-and-ref-struct--ccli-and-ccx"></a>başvuru sınıfı ve ref struct (C + +/ CLI ve C + +/ CX)
+# <a name="ref-class-and-ref-struct--ccli-and-ccx"></a>başvuru sınıfı ve ref struct (C++/CLI ve C++/CX)
 
 **Başvuru sınıfı** veya **ref struct** uzantıları bildirmek için bir sınıf veya yapı, *nesne yaşam süresi* otomatik olarak yönetilir. Nesnenin artık erişilebilir değil veya kapsam dışına gider, belleği serbest kalır.
 
@@ -38,10 +38,10 @@ class_accessvalue structnamemodifier :  inherit_accessbase_type {};
 *class_access*<br/>
 (İsteğe bağlı) Sınıfın veya yapının derleme dışından erişilebilirlik. Olası değerler **genel** ve **özel** (**özel** varsayılandır). İç içe geçmiş sınıflar veya yapılar sahip bir *class_access* tanımlayıcısı.
 
-*name*<br/>
+*Adı*<br/>
 Sınıfın veya yapının adı.
 
-* değiştiricisi*<br/>
+*Değiştiricisi*<br/>
 (İsteğe bağlı) [soyut](abstract-cpp-component-extensions.md) ve [korumalı](sealed-cpp-component-extensions.md) geçerli değiştiricilerdir.
 
 *inherit_access*<br/>
@@ -66,15 +66,15 @@ Sınıflar ve yapı birimleri hakkında daha fazla bilgi için bkz.
 
 - [Referans Türleri için C++ Yığın Anlamları](../dotnet/cpp-stack-semantics-for-reference-types.md)
 
-- [Sınıflar, Yapılar ve Birleşimler](../cpp/classes-and-structs-cpp.md)
+- [Sınıflar, yapılar ve birleşimler](../cpp/classes-and-structs-cpp.md)
 
-- [Yok ediciler ve sonlandırıcılar, nasıl yapılır: Sınıfları ve yapıları tanımlama ve kullanma (C + +/ CLI)](../dotnet/how-to-define-and-consume-classes-and-structs-cpp-cli.md#BKMK_Destructors_and_finalizers)
+- [Yok ediciler ve sonlandırıcılar, nasıl yapılır: Sınıfları ve yapıları tanımlama ve kullanma (C++/CLI)](../dotnet/how-to-define-and-consume-classes-and-structs-cpp-cli.md#BKMK_Destructors_and_finalizers)
 
 - [Kullanıcı Tanımlı İşleçler (C++/CLI)](../dotnet/user-defined-operators-cpp-cli.md)
 
 - [Kullanıcı Tanımlı Dönüşümler (C++/CLI)](../dotnet/user-defined-conversions-cpp-cli.md)
 
-- [Nasıl yapılır: Tarafından kullanım için yerel sınıfı sarmalamaC#](../dotnet/how-to-wrap-native-class-for-use-by-csharp.md)
+- [Nasıl yapılır: C# Tarafından Kullanılması için Yerel Sınıfı Sarmalama](../dotnet/how-to-wrap-native-class-for-use-by-csharp.md)
 
 - [Genel Sınıflar (C++/CLI)](generic-classes-cpp-cli.md)
 
@@ -118,4 +118,4 @@ Derleyici seçeneği: `/clr`
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[.NET ve UWP için bileşen uzantıları](component-extensions-for-runtime-platforms.md)
+[.NET ve UWP İçin Bileşen Uzantıları](component-extensions-for-runtime-platforms.md)

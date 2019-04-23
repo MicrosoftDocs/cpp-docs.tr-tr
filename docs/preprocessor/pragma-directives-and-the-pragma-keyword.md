@@ -14,10 +14,10 @@ helpviewer_keywords:
 - pragma directives (#pragma)
 ms.assetid: 9867b438-ac64-4e10-973f-c3955209873f
 ms.openlocfilehash: b6c2ff579c6fafa78cbfd0a2879a71fca2bfaa01
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59027447"
 ---
 # <a name="pragma-directives-and-the-pragma-keyword"></a>Pragma Yönergeleri ve __Pragma Anahtar Sözcüğü
@@ -46,20 +46,20 @@ Microsoft C and C++ Derleyicileri aşağıdaki pragmaları tanır:
 ||||
 |-|-|-|
 |[alloc_text](../preprocessor/alloc-text.md)|[auto_inline](../preprocessor/auto-inline.md)|[bss_seg](../preprocessor/bss-seg.md)|
-|[check_stack](../preprocessor/check-stack.md)|[code_seg](../preprocessor/code-seg.md)|[comment](../preprocessor/comment-c-cpp.md)|
-|[bileşenleri](../preprocessor/component.md)|[uygun](../preprocessor/conform.md) <sup>1</sup>|[const_seg](../preprocessor/const-seg.md)|
+|[check_stack](../preprocessor/check-stack.md)|[code_seg](../preprocessor/code-seg.md)|[Açıklama](../preprocessor/comment-c-cpp.md)|
+|[component](../preprocessor/component.md)|[uygun](../preprocessor/conform.md) <sup>1</sup>|[const_seg](../preprocessor/const-seg.md)|
 |[data_seg](../preprocessor/data-seg.md)|[deprecated](../preprocessor/deprecated-c-cpp.md)|[detect_mismatch](../preprocessor/detect-mismatch.md)|
 |[fenv_access](../preprocessor/fenv-access.md)|[float_control](../preprocessor/float-control.md)|[fp_contract](../preprocessor/fp-contract.md)|
-|[ işlevi](../preprocessor/function-c-cpp.md)|[hdrstop](../preprocessor/hdrstop.md)|[include_alias](../preprocessor/include-alias.md)|
+|[İşlevi](../preprocessor/function-c-cpp.md)|[hdrstop](../preprocessor/hdrstop.md)|[include_alias](../preprocessor/include-alias.md)|
 |[init_seg](../preprocessor/init-seg.md) <sup>1</sup>|[inline_depth](../preprocessor/inline-depth.md)|[inline_recursion](../preprocessor/inline-recursion.md)|
-|[ içi](../preprocessor/intrinsic.md)|[döngü](../preprocessor/loop.md) <sup>1</sup>|[make_public](../preprocessor/make-public.md)|
-|[yönetilen](../preprocessor/managed-unmanaged.md)|[ iletisi](../preprocessor/message.md)||
+|[intrinsic](../preprocessor/intrinsic.md)|[döngü](../preprocessor/loop.md) <sup>1</sup>|[make_public](../preprocessor/make-public.md)|
+|[Yönetilen](../preprocessor/managed-unmanaged.md)|[message](../preprocessor/message.md)||
 |[omp](../preprocessor/omp.md)|[once](../preprocessor/once.md)||
 |[optimize](../preprocessor/optimize.md)|[pack](../preprocessor/pack.md)|[pointers_to_members](../preprocessor/pointers-to-members.md) <sup>1</sup>|
 |[pop_macro](../preprocessor/pop-macro.md)|[push_macro](../preprocessor/push-macro.md)|[region, endregion](../preprocessor/region-endregion.md)|
 |[runtime_checks](../preprocessor/runtime-checks.md)|[section](../preprocessor/section.md)|[setlocale](../preprocessor/setlocale.md)|
-|[strict_gs_check](../preprocessor/strict-gs-check.md)|[yönetilmeyen](../preprocessor/managed-unmanaged.md)|[vtordisp](../preprocessor/vtordisp.md) <sup>1</sup>|
-|[uyarı](../preprocessor/warning.md)|||
+|[strict_gs_check](../preprocessor/strict-gs-check.md)|[Yönetilmeyen](../preprocessor/managed-unmanaged.md)|[vtordisp](../preprocessor/vtordisp.md) <sup>1</sup>|
+|[warning](../preprocessor/warning.md)|||
 
 <sup>1</sup> yalnızca C++ Derleyici tarafından desteklenir.
 
@@ -108,6 +108,6 @@ return _hr; \
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C/C++ Ön işlemci Başvurusu](../preprocessor/c-cpp-preprocessor-reference.md)<br/>
+[C/C++ Ön İşlemci Başvurusu](../preprocessor/c-cpp-preprocessor-reference.md)<br/>
 [C Pragmaları](../c-language/c-pragmas.md)<br/>
-[anahtar sözcükler](../cpp/keywords-cpp.md)
+[Anahtar Sözcükler](../cpp/keywords-cpp.md)

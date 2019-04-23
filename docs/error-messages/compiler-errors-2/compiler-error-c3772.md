@@ -7,10 +7,10 @@ helpviewer_keywords:
 - C3772
 ms.assetid: 63e938d4-088d-41cc-a562-5881a05b5710
 ms.openlocfilehash: 420e1eb12cbb178459a96f55efab444a538e6c2b
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59027942"
 ---
 # <a name="compiler-error-c3772"></a>Derleyici Hatası C3772
@@ -60,4 +60,4 @@ class X {
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Şablonlar](../../cpp/templates-cpp.md)<br/>
-[Şablon uzmanlığı](../../cpp/template-specialization-cpp.md)
+[Şablon Uzmanlığı](../../cpp/template-specialization-cpp.md)

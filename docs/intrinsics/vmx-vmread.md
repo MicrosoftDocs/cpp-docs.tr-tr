@@ -8,15 +8,15 @@ helpviewer_keywords:
 - __vmx_vmread intrinsic
 ms.assetid: 08bdd7a0-6435-4ea6-b9a0-f592d870e5aa
 ms.openlocfilehash: 5c7b72ba3bf1bd60324704b774bcedaf5612240f
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59028392"
 ---
 # <a name="vmxvmread"></a>__vmx_vmread
 
-**Microsoft'a Özgü**
+**Microsoft'a özgü**
 
 Belirtilen alan geçerli sanal makine denetim yapısından (Windows VMCS) okur ve belirtilen konuma yerleştirir.
 
@@ -56,7 +56,7 @@ unsigned char __vmx_vmread(
 
 **Üst bilgi dosyası** \<intrin.h >
 
-**END Microsoft'a Özgü**
+**END Microsoft özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

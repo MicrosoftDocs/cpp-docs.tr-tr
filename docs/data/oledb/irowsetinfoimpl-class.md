@@ -27,10 +27,10 @@ helpviewer_keywords:
 - GetSpecification method
 ms.assetid: 9c654155-7727-464e-bd31-143e68391a47
 ms.openlocfilehash: b42ecf6c03dd1023d1ba150d579f77c4bae8998a
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59029177"
 ---
 # <a name="irowsetinfoimpl-class"></a>IRowsetInfoImpl Sınıfı
@@ -126,5 +126,5 @@ Bu yöntemi kullanmak [Igetdatasourceımpl](../../data/oledb/igetdatasourceimpl-
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[OLE DB Sağlayıcı Şablonları](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>
+[OLE DB sağlayıcı şablonları](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>
 [OLE DB Sağlayıcı Şablonu Mimarisi](../../data/oledb/ole-db-provider-template-architecture.md)

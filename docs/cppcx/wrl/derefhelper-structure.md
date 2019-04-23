@@ -8,10 +8,10 @@ helpviewer_keywords:
 - DerefHelper structure
 ms.assetid: 86ded58b-c3ee-4a4f-bb86-4f67b895d427
 ms.openlocfilehash: 96b7e83a854765fb872b87d062928311731cfd26
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59032017"
 ---
 # <a name="derefhelper-structure"></a>DerefHelper Yapısı

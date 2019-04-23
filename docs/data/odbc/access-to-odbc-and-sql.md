@@ -10,10 +10,10 @@ helpviewer_keywords:
 - ODBC [C++], API functions
 ms.assetid: 5613d7dc-00b7-4646-99ae-1116c05c52b4
 ms.openlocfilehash: 7a539d911bbf4f4d9582da0ebedaeffaa0d8fa7b
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59030160"
 ---
 # <a name="access-to-odbc-and-sql"></a>ODBC'ye ve SQL'e Erişim

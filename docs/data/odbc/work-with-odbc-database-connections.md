@@ -10,10 +10,10 @@ helpviewer_keywords:
 - ODBC connections [C++], databases
 ms.assetid: f41a67c7-168d-4657-9999-257535e44c87
 ms.openlocfilehash: 3dc6706f945a5a7b0aa21c9ced8017d0a9905fb1
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59031293"
 ---
 # <a name="work-with-odbc-database-connections"></a>ODBC Veritabanı Bağlantılarıyla Çalışma

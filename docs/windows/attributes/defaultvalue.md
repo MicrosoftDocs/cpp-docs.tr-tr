@@ -7,10 +7,10 @@ helpviewer_keywords:
 - defaultvalue attribute
 ms.assetid: efa5d050-b2cc-4d9e-9b8e-79954f218d3a
 ms.openlocfilehash: ff6924db6f4805bb5f2dbab69076a86020b2a075
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59026324"
 ---
 # <a name="defaultvalue"></a>defaultvalue
@@ -60,19 +60,19 @@ __interface IFireTabCtrl : IDispatch {
 
 |||
 |-|-|
-|**Uygulandığı öğe:**|Parametre arabirimi|
+|**İçin geçerlidir**|Parametre arabirimi|
 |**Tekrarlanabilir**|Hayır|
-|**Gerekli öznitelikleri**|None|
+|**Gerekli öznitelikleri**|Yok.|
 |**Geçersiz öznitelikler**|Yok.|
 
 Daha fazla bilgi için [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[IDL Öznitelikleri](idl-attributes.md)<br/>
+[IDL öznitelikleri](idl-attributes.md)<br/>
 [Parametre Öznitelikleri](parameter-attributes.md)<br/>
 [out](out-cpp.md)<br/>
 [retval](retval.md)<br/>
-[içinde](in-cpp.md)<br/>
+[in](in-cpp.md)<br/>
 [pointer_default](pointer-default.md)<br/>
 [unique](unique-cpp.md)

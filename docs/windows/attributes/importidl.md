@@ -7,10 +7,10 @@ helpviewer_keywords:
 - importidl attribute
 ms.assetid: 4b0a4b55-6c57-4e6e-bc7b-a12cc8063941
 ms.openlocfilehash: 9db62d4f2a36b8cc0592c924b113077a758915c0
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59029920"
 ---
 # <a name="importidl"></a>importidl
@@ -30,7 +30,7 @@ Uygulamanız için oluşturulacak .idl dosyası ile birleştirmek istediğiniz .
 
 ## <a name="remarks"></a>Açıklamalar
 
-**İmportidl** C++ özniteliği yerleştirir kitaplığı bloğu dışında bölümü (içinde *idl_file*) programınızın oluşturulan .idl dosyasının ve kitaplık bölümü (içinde *idl_file*) kitaplığa programınızın bölümünü .idl dosyası oluşturulur.
+**İmportidl** C++ özniteliği yerleştirir kitaplığı bloğu dışında bölümü (içinde *idl_file*) programınızın oluşturulan .idl dosyasının ve kitaplık bölümü (içinde *idl_file*) kitaplığa programınızın bölümünü .idl dosyası oluşturuldu.
 
 Kullanmak istediğiniz **importidl**, örneğin, bir .idl el kodlanmış ile oluşturulan .idl dosyası kullanmak istiyorsanız.
 
@@ -49,10 +49,10 @@ Kullanmak istediğiniz **importidl**, örneğin, bir .idl el kodlanmış ile olu
 
 |||
 |-|-|
-|**Uygulandığı öğe:**|Her yerde|
+|**İçin geçerlidir**|Her yerde|
 |**Tekrarlanabilir**|Hayır|
 |**Gerekli öznitelikleri**|None|
-|**Geçersiz öznitelikler**|Yok.|
+|**Geçersiz öznitelikler**|None|
 
 Daha fazla bilgi için [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 
@@ -60,7 +60,7 @@ Daha fazla bilgi için [öznitelik bağlamları](cpp-attributes-com-net.md#conte
 
 [Derleyici Öznitelikleri](compiler-attributes.md)<br/>
 [Tek Başına Öznitelikler](stand-alone-attributes.md)<br/>
-[içeri aktar](import.md)<br/>
+[import](import.md)<br/>
 [importlib](importlib.md)<br/>
 [include](include-cpp.md)<br/>
 [includelib](includelib-cpp.md)

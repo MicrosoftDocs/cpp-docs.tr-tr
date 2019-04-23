@@ -7,10 +7,10 @@ helpviewer_keywords:
 - ODBC recordsets, selecting records
 ms.assetid: 7f0b3a4a-9941-4475-a612-9ec8d15b7691
 ms.openlocfilehash: fa8b63dab24c921804c474df73f6b6da192a4cd8
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59027499"
 ---
 # <a name="selecting-and-manipulating-records"></a>Kayıtları Seçme ve Düzenleme

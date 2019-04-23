@@ -41,10 +41,10 @@ helpviewer_keywords:
 - Properties window, image editor
 ms.assetid: 8b6ce4ad-eba1-4ece-86ba-cea92c3edff2
 ms.openlocfilehash: 849da0d14987a057d39d5f9531e97545b3d4b8cf
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59033300"
 ---
 # <a name="how-to-edit-an-image"></a>Nasıl yapılır: Görüntü Düzenle
@@ -210,7 +210,7 @@ Ayarlayabilir veya kullanmanın bir görüntü özelliklerini değiştirme [Öze
    |**Renkler**|Görüntü için renk düzenini belirtir. Seçin **tek renkli**, **16**, veya **256**, veya **gerçek renk**.<br/><br/>Zaten bir 16-renk paletini görüntüsüyle kazandık, seçerek **tek renkli** değişimler siyah beyaz renkler için görüntüyü neden olur. Karşıtlık her zaman tutulmaz: Örneğin, kırmızı ve yeşil bitişik alanlarının her ikisini de siyah olarak dönüştürülür.|
    |**Dosya adı**|Görüntü dosyasının adını belirtir.<br/><br/>Varsayılan olarak, Visual Studio varsayılan kaynak tanımlayıcısı (IDB_BITMAP1) ve uygun uzantısı ekleme ("IDB_") ilk dört karakterleri kaldırarak oluşturulan temel bir dosya adı atar. Bu örnekte bir görüntü için dosya adı *BITMAP1.bmp*. Bunu adlandırabilirsiniz *MYBITMAP1.bmp*.|
    |**Yükseklik**|Resmin yüksekliğini (piksel cinsinden) ayarlar. Varsayılan değer 48'dir.<br/><br/>Resim kırpılmış veya mevcut görüntü altında boş bir boşluk eklenir.|
-   |**Kimlik**|Kaynağın tanımlayıcısını ayarlar.<br/><br/>Bir görüntü için Microsoft Visual Studio, varsayılan olarak, serideki sonraki kullanılabilir tanımlayıcı atar: IDB_BITMAP1 IDB_BITMAP2 ve benzeri. Benzer adlar, simgeler ve İmleçler için kullanılır.|
+   |**ID**|Kaynağın tanımlayıcısını ayarlar.<br/><br/>Bir görüntü için Microsoft Visual Studio, varsayılan olarak, serideki sonraki kullanılabilir tanımlayıcı atar: IDB_BITMAP1 IDB_BITMAP2 ve benzeri. Benzer adlar, simgeler ve İmleçler için kullanılır.|
    |**Palet**|Özellikleri rengi değiştirir.<br/><br/>Bir renk seçin ve görüntülemek için çift [Özel Renk Seçici iletişim kutusu](../windows/custom-color-selector-dialog-box-image-editor-for-icons.md). Renk RGB veya HSL değerleri ilgili metin kutularına yazarak tanımlayın.|
    |**SaveCompressed**|Görüntü sıkıştırılmış bir biçimde olup olmadığını belirtir. Bu özellik salt okunurdur.<br/><br/>Visual Studio, görüntüleri sıkıştırılmış bir biçimde kaydetmek izin vermez böylece Visual Studio'da oluşturulan herhangi bir görüntü için bu özellik **False**. (Başka bir programda oluşturan) bir sıkıştırılmış görüntüyü Visual Studio'da açarsanız, bu özellik olacak **True**. Visual Studio kullanarak bir sıkıştırılmış görüntüyü kaydederseniz, sıkıştırılmamış ve bu özellik, geri dönecek **False**.|
    |**Genişlik**|Resmin genişliğini (piksel cinsinden) ayarlar. 48 bit eşlemler için varsayılan değerdir.<br/><br/>Resim kırpılmış veya boş alan var olan görüntünün sağına eklenir.|
@@ -221,8 +221,8 @@ Yok.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Simgeler İçin Görüntü Düzenleyicisi](../windows/image-editor-for-icons.md)<br/>
-[Nasıl yapılır: Simge veya başka görüntü oluşturma](../windows/creating-an-icon-or-other-image-image-editor-for-icons.md)<br/>
-[Nasıl yapılır: Çizim aracı kullanma](../windows/using-a-drawing-tool-image-editor-for-icons.md)<br/>
+[Simgeler için Görüntü Düzenleyicisi](../windows/image-editor-for-icons.md)<br/>
+[Nasıl yapılır: Simge veya Başka Görüntü Oluşturma](../windows/creating-an-icon-or-other-image-image-editor-for-icons.md)<br/>
+[Nasıl yapılır: Çizim Aracı Kullanma](../windows/using-a-drawing-tool-image-editor-for-icons.md)<br/>
 [Nasıl yapılır: Renklerle Çalışma](../windows/working-with-color-image-editor-for-icons.md)<br/>
 [Hızlandırıcı Tuşları](../windows/accelerator-keys-image-editor-for-icons.md)<br/>

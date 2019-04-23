@@ -7,10 +7,10 @@ helpviewer_keywords:
 - implements attribute
 ms.assetid: 9cf0858b-cb7d-4d3c-81a6-97d87ed00d25
 ms.openlocfilehash: 9425f998f0e8fbe5f16e6eb136e00ba3fb7bd5d9
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59033689"
 ---
 # <a name="implements-c"></a>uygulamalar (C++)
@@ -26,7 +26,7 @@ IDL coclass'ı üyesi olmaya zorlanıp dağıtma arabirimleri belirtir.
 
 ### <a name="parameters"></a>Parametreler
 
-*arabirimler*<br/>
+*Arabirimleri*<br/>
 Virgülle ayrılmış bir IDL coclass'ı üyesi olacak arabirimlerin listesi. Tek bir arabirim belirtmek için bir toplu yöntemi **uygular (** *interface_name* **)**.
 
 *görüntüleme*<br/>
@@ -42,7 +42,7 @@ Varsayılan olarak, COM-olan arabirimler yalnızca temel sınıfları `coclass` 
 
 |||
 |-|-|
-|**Uygulandığı öğe:**|**sınıf**, **yapısı**|
+|**İçin geçerlidir**|**sınıf**, **yapısı**|
 |**Tekrarlanabilir**|Evet|
 |**Gerekli öznitelikleri**|Yok.|
 |**Geçersiz öznitelikler**|Yok.|

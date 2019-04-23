@@ -1932,10 +1932,10 @@ helpviewer_keywords:
 - intrinsics, ARM
 ms.assetid: d3d7dadd-7bd5-4508-8bff-371a66913e20
 ms.openlocfilehash: 47fd2f449568494bafde993e035d3ec37c44f6fe
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59027637"
 ---
 # <a name="arm-intrinsics"></a>ARM İç Bilgileri
@@ -2398,13 +2398,13 @@ Aşağıdaki tabloda, olmayan-birbirine geçmiş bittest ön tanımlı ARM deste
 
 ||8|16|32|64|P|
 |-|-------|--------|--------|--------|-------|
-|Ekle|Yok.|Yok.|Tam|Tam|Yok.|
+|Ekle|Yok.|Yok.|Tam|Tam|None|
 |And|Tam|Tam|Tam|Tam|Yok.|
 |CompareExchange|Tam|Tam|Tam|Tam|Tam|
-|Azaltma|Yok.|Tam|Tam|Tam|None|
+|Azaltma|None|Tam|Tam|Tam|None|
 |Exchange|Kısmi|Kısmi|Kısmi|Kısmi|Kısmi|
-|ExchangeAdd|Tam|Tam|Tam|Tam|Yok.|
-|Artırma|None|Tam|Tam|Tam|Yok.|
+|ExchangeAdd|Tam|Tam|Tam|Tam|None|
+|Artırma|Yok.|Tam|Tam|Tam|None|
 |Or|Tam|Tam|Tam|Tam|None|
 |Xor|Tam|Tam|Tam|Tam|None|
 

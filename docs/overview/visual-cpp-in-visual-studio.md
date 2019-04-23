@@ -9,7 +9,7 @@ author: mikeblome
 ms.author: mblome
 ms.openlocfilehash: 6430d57ddc8718c419076d2da1008e21efdb9b13
 ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/18/2019
 ms.locfileid: "58898719"

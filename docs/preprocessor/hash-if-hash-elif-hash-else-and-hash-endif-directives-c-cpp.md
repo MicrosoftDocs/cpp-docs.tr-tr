@@ -22,10 +22,10 @@ helpviewer_keywords:
 - defined directive
 ms.assetid: c77a175f-6ca8-47d4-8df9-7bac5943d01b
 ms.openlocfilehash: 90fbab45c6408c30198c2a52a42545718002cc11
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59028097"
 ---
 # <a name="if-elif-else-and-endif-directives-cc"></a>#if, #elif, #else ve #endif Yönergeleri (C/C++)
@@ -97,7 +97,7 @@ Tüm oluşumlarını *sabit-ifade* yanlış olan veya hiçbir **#elif** yönerge
 
 tanımlanan ( `identifier` )
 
-tanımlanmış `identifier`
+Tanımlanan `identifier`
 
 Bu sabit ifade true (sıfırdan farklı) ise değerlendirilir *tanımlayıcı* şu anda tanımlanır; Aksi halde koşul false (0). Boş metin olarak kabul edilir olarak tanımlanan bir tanımlayıcı, tanımlanmış. **Tanımlanan** yönergesi olarak kullanılabilir bir **#if** ve **#elif** yönergesi, ancak başka bir yerde kullanılamaz.
 

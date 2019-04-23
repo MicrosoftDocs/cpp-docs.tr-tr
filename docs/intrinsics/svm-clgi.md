@@ -8,15 +8,15 @@ helpviewer_keywords:
 - __svm_clgi intrinsic
 ms.assetid: 6640f5ab-9472-46f9-a042-e15c4f1ff858
 ms.openlocfilehash: fe25141499a19a265e2ac3ec746664ecd6cc9a2e
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59028703"
 ---
 # <a name="svmclgi"></a>__svm_clgi
 
-**Microsoft'a Özgü**
+**Microsoft'a özgü**
 
 Genel kesme bayrağını kaldırır.
 
@@ -40,7 +40,7 @@ Bu işlev, bir konuk işletim sistemi ve uygulamaları ile bir konağın sanal m
 
 **Üst bilgi dosyası** \<intrin.h >
 
-**END Microsoft'a Özgü**
+**END Microsoft özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

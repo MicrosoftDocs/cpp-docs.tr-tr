@@ -7,10 +7,10 @@ helpviewer_keywords:
 - C2483
 ms.assetid: 5762b325-914b-442d-a604-e4617ba04038
 ms.openlocfilehash: 7a627ce28e60f42dabcf0a257464a8bfbd58b9a4
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59028633"
 ---
 # <a name="compiler-error-c2483"></a>Derleyici Hatası C2483

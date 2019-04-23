@@ -9,15 +9,15 @@ helpviewer_keywords:
 - rep insw instruction
 ms.assetid: 6de37939-017a-4740-9e3d-7de78a30daba
 ms.openlocfilehash: 52c36754e1eea56b84eeb494e82e37a5b043246e
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59030225"
 ---
 # <a name="inwordstring"></a>__inwordstring
 
-**Microsoft'a Özgü**
+**Microsoft'a özgü**
 
 Belirtilen bağlantı noktası kullanarak verileri okuyan `rep insw` yönergesi.
 
@@ -33,13 +33,13 @@ void __inwordstring(
 
 #### <a name="parameters"></a>Parametreler
 
-*Bağlantı Noktası*<br/>
+*Bağlantı noktası*<br/>
 [in] Okunacak bağlantı noktası.
 
 *Arabellek*<br/>
 [out] Bağlantı noktasından okunan veriler burada yazılır.
 
-*Sayı*<br/>
+*Sayısı*<br/>
 [in] Veri okumak için sözcük sayısı.
 
 ## <a name="requirements"></a>Gereksinimler
@@ -54,7 +54,7 @@ void __inwordstring(
 
 Bu yordam yalnızca bir iç öğe olarak kullanılabilir.
 
-**END Microsoft'a Özgü**
+**END Microsoft özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

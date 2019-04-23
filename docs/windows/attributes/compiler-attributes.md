@@ -6,10 +6,10 @@ helpviewer_keywords:
 - attributes [C++/CLI], compiler
 ms.assetid: 53cd9bee-1521-48ec-b171-80feac2096cc
 ms.openlocfilehash: ea4d3119a640c0642664210384c297e011104411
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59030825"
 ---
 # <a name="compiler-attributes"></a>Derleyici Öznitelikleri
@@ -21,15 +21,15 @@ Derleyici öznitelikleri işlevleri çeşitli sağlar.
 |[emitidl](emitidl.md)|Tüm sonraki IDL öznitelikleri işlem görüp oluşturulan .idl dosyasında yerleştirilmiş olup olmadığını belirler.|
 |[event_receiver](event-receiver.md)|Bir olay alıcısı oluşturur.|
 |[event_source](event-source.md)|Olay kaynağı oluşturur.|
-|[dışarı aktar](export.md)|Bir veri yapısı .idl dosyasında yerleştirilmesine neden olur.|
-|[uygulamalar](implements-cpp.md)|IDL coclass'ı üyesi olmaya zorlanıp dağıtma arabirimleri belirtir.|
+|[export](export.md)|Bir veri yapısı .idl dosyasında yerleştirilmesine neden olur.|
+|[implements](implements-cpp.md)|IDL coclass'ı üyesi olmaya zorlanıp dağıtma arabirimleri belirtir.|
 |[importidl](importidl.md)|Belirtilen .idl dosyası oluşturulan .idl dosyasına ekler.|
 |[importlib](importlib.md)|Zaten başka bir tür kitaplığına oluşturulan tür kitaplığı için kullanılabilir derlenmiştir türleri sağlar.|
 |[includelib](includelib-cpp.md)|Oluşturulan .idl dosyasına eklenecek bir .idl veya .h dosyası neden olur.|
 |[library_block](library-block.md)|.İdl dosyasının kitaplığı bloğu içinde bir yapısı yerleştirir.|
 |[no_injected_text](no-injected-text.md)|Derleyici, özellik kullanımı sonucu olarak kod ekleme öğesinden engeller.|
 |[satype](satype.md)|Veri türü belirtir `SAFEARRAY`.|
-|[sürüm](version-cpp.md)|Belirli bir sürüm arasında bir arabirim veya sınıf birden çok sürümünü tanımlar.|
+|[version](version-cpp.md)|Belirli bir sürüm arasında bir arabirim veya sınıf birden çok sürümünü tanımlar.|
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

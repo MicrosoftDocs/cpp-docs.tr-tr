@@ -1,5 +1,5 @@
 ---
-title: C çalışma zamanı hatası R6035
+title: C Çalışma Zamanı Hatası R6035
 ms.date: 11/04/2016
 f1_keywords:
 - R6035
@@ -7,13 +7,13 @@ helpviewer_keywords:
 - R6035
 ms.assetid: f8fb50b8-18bf-4258-b96a-b0a9de468d16
 ms.openlocfilehash: cbade3ce8686c8c293b8d40a73c546805e42215d
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59034027"
 ---
-# <a name="c-runtime-error-r6035"></a>C çalışma zamanı hatası R6035
+# <a name="c-runtime-error-r6035"></a>C Çalışma Zamanı Hatası R6035
 
 Bu güvenlik tanımlama bilgisinde bağlı olan bir işlev etkin durumdayken Microsoft Visual C++ çalışma zamanı kitaplığı, hatası R6035 - Bu uygulamadaki bir modül modülün genel güvenlik tanımlama bilgisi başlatılıyor.  __Security_init_cookie önceki çağırın.
 

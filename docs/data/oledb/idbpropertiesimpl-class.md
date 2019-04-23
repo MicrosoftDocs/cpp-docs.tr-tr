@@ -23,10 +23,10 @@ helpviewer_keywords:
 - SetProperties method
 ms.assetid: a7f15a8b-95b2-4316-b944-d5d03f8d74ab
 ms.openlocfilehash: 807cdf55a5a2fa6e0cc063c22b1685d8156c41a5
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59031345"
 ---
 # <a name="idbpropertiesimpl-class"></a>IDBPropertiesImpl Sınıfı
@@ -144,5 +144,5 @@ Sağlayıcı başlatılır, bu yöntem DBPROPSET_DATASOURCE, DBPROPSET_DATASOURC
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[OLE DB Sağlayıcı Şablonları](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>
+[OLE DB sağlayıcı şablonları](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>
 [OLE DB Sağlayıcı Şablonu Mimarisi](../../data/oledb/ole-db-provider-template-architecture.md)

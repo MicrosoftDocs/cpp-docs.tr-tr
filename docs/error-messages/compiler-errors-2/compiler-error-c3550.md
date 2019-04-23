@@ -7,10 +7,10 @@ helpviewer_keywords:
 - C3550
 ms.assetid: 9f2d5ffc-e429-41a1-89e3-7acc4fd47e14
 ms.openlocfilehash: 106ac93496eebb25ee603251d84680053e1310b7
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59032343"
 ---
 # <a name="compiler-error-c3550"></a>Derleyici Hatası C3550

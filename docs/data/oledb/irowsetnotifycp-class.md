@@ -25,10 +25,10 @@ helpviewer_keywords:
 - Fire_OnRowsetChange method
 ms.assetid: ccef402b-94a0-4c2e-9a13-7e854ef82390
 ms.openlocfilehash: a3ab63206ce7ac53ff996ecf1bb64bdaa0b79fcb
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59031692"
 ---
 # <a name="irowsetnotifycp-class"></a>IRowsetNotifyCP Sınıfı
@@ -77,7 +77,7 @@ Türünde bir dizi [CComDynamicUnkArray](../../atl/reference/ccomdynamicunkarray
 
 ## <a name="remarks"></a>Açıklamalar
 
-`IRowsetNotifyCP` Uygular bağlantı noktası üzerinde dinleyici bildirmek için işlevleri yayın `IID_IRowsetNotify` değişiklik kümesi içeriği.
+`IRowsetNotifyCP` uygular bağlantı noktası üzerinde dinleyici bildirmek için işlevleri yayın `IID_IRowsetNotify` değişiklik kümesi içeriği.
 
 Ayrıca uygulama ve kaydetme gerekir unutmayın `IRowsetNotify` kullanarak tüketici (diğer adıyla "havuz") [IRowsetNotifyImpl](../../data/oledb/irowsetnotifyimpl-class.md) tüketici bildirimleri işleyebilmeniz. Bkz: [bildirimleri alma](../../data/oledb/receiving-notifications.md) tüketici üzerinde bağlantı noktası arabirimini uygulayan hakkında.
 
@@ -141,7 +141,7 @@ Bkz: [IRowsetNotify::OnRowsetChange](/previous-versions/windows/desktop/ms722669
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[OLE DB Sağlayıcı Şablonları](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>
+[OLE DB sağlayıcı şablonları](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>
 [OLE DB Sağlayıcı Şablonu Mimarisi](../../data/oledb/ole-db-provider-template-architecture.md)<br/>
 [Bildirimler (COM)](/windows/desktop/com/notifications)<br/>
 [BEGIN_CONNECTION_POINT_MAP](../../atl/reference/connection-point-macros.md#begin_connection_point_map)<br/>

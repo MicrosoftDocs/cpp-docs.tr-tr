@@ -7,10 +7,10 @@ helpviewer_keywords:
 - vi_progid attribute
 ms.assetid: a52449be-b93e-4111-b883-44bb8da53261
 ms.openlocfilehash: 7050543c9acf3801a99d3e32e119325900bdb050
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59033595"
 ---
 # <a name="viprogid"></a>vi_progid
@@ -25,7 +25,7 @@ ProgID sürümden bağımsız biçimi belirtir.
 
 ### <a name="parameters"></a>Parametreler
 
-*name*<br/>
+*Adı*<br/>
 Sürüm bağımsız ProgID temsil eden nesne.
 
 Progid'ler COM/ActiveX nesneleri tanımlamak için kullanılan sınıf tanımlayıcısı (CLSID) kullanıcı tarafından okunabilen bir sürümü var.
@@ -50,16 +50,16 @@ Bkz: [coclass'ı](coclass.md) örnek kullanımını örneğin **vi_progid**.
 
 |||
 |-|-|
-|**Uygulandığı öğe:**|**sınıf**, **yapısı**|
+|**İçin geçerlidir**|**sınıf**, **yapısı**|
 |**Tekrarlanabilir**|Hayır|
-|**Gerekli öznitelikleri**|Yok.|
+|**Gerekli öznitelikleri**|None|
 |**Geçersiz öznitelikler**|Yok.|
 
 Öznitelik bağlamları hakkında daha fazla bilgi için bkz: [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[IDL Öznitelikleri](idl-attributes.md)<br/>
+[IDL öznitelikleri](idl-attributes.md)<br/>
 [Typedef, Enum, Union ve Struct Öznitelikleri](typedef-enum-union-and-struct-attributes.md)<br/>
 [Sınıf Öznitelikleri](class-attributes.md)<br/>
 [ProgID anahtarı](/windows/desktop/com/-progid--key)

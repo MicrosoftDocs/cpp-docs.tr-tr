@@ -14,15 +14,15 @@ helpviewer_keywords:
 - __addfsbyte intrinsic
 ms.assetid: 706c70df-6b52-4401-9268-2977ed8ad715
 ms.openlocfilehash: 61053d9f8c56d8352b12ed535dfa870c0856f558
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59032709"
 ---
 # <a name="addfsbyte-addfsword-addfsdword"></a>__addfsbyte, __addfsword, __addfsdword
 
-**Microsoft'a Özgü**
+**Microsoft'a özgü**
 
 Başlangıcına göre bir uzaklık tarafından belirtilen bellek konumuna bir değer ekleyin `FS` kesimi.
 
@@ -45,7 +45,7 @@ void __addfsdword(
 
 #### <a name="parameters"></a>Parametreler
 
-*Uzaklık*<br/>
+*uzaklık*<br/>
 [in] Başından uzaklık `FS`.
 
 *Veri*<br/>
@@ -63,7 +63,7 @@ void __addfsdword(
 
 Bu yordamlar, yalnızca iç öğe olarak kullanılabilir.
 
-**END Microsoft'a Özgü**
+**END Microsoft özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

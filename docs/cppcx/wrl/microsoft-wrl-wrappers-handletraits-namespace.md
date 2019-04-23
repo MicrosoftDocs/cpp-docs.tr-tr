@@ -8,10 +8,10 @@ helpviewer_keywords:
 - HandleTraits namespace
 ms.assetid: 2fb5c6d1-bfc2-4e09-91eb-31705064ffb3
 ms.openlocfilehash: 6ed8156b6a0e71d40d1579fc9a33912f698e1773
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59030400"
 ---
 # <a name="microsoftwrlwrappershandletraits-namespace"></a>Microsoft::WRL::Wrappers::HandleTraits Ad Alanı

@@ -10,10 +10,10 @@ helpviewer_keywords:
 - GetActivationFactory function
 ms.assetid: 5736d285-6beb-42aa-8788-e261c0010afe
 ms.openlocfilehash: 3e138eee9e5bc02971cd1eb34c78f2be4ad5c9a0
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59033949"
 ---
 # <a name="getactivationfactory-function"></a>GetActivationFactory İşlevi

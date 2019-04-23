@@ -9,15 +9,15 @@ helpviewer_keywords:
 - _rotr16 intrinsic
 ms.assetid: dfbd2c82-82b4-427a-ad52-51609027ebff
 ms.openlocfilehash: 27c3a9d914d04ecdffb7fa74dc3c8f79a442445c
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59028749"
 ---
 # <a name="rotr8-rotr16"></a>_rotr8, _rotr16
 
-**Microsoft'a Özgü**
+**Microsoft'a özgü**
 
 Giriş değerleri tarafından belirtilen bit konumları sayısı en az önemli bite (LSB'si) Sağa Döndür.
 
@@ -39,7 +39,7 @@ unsigned short _rotr16(
 *value*<br/>
 [in] Döndürülecek değer.
 
-*kaydırma*<br/>
+*Kaydırma*<br/>
 [in] Döndürmek için bit sayısı.
 
 ## <a name="return-value"></a>Dönüş Değeri
@@ -99,7 +99,7 @@ Rotating 0x41 right by 7 bits gives 0x82
 Rotating unsigned short 0x12 right by 10 bits gives 0x480
 ```
 
-**END Microsoft'a Özgü**
+**END Microsoft özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

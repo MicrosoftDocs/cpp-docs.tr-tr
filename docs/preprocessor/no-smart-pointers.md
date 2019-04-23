@@ -7,10 +7,10 @@ helpviewer_keywords:
 - no_smart_pointers attribute
 ms.assetid: d69dd71e-08a8-4446-a3d0-a062dc29cb17
 ms.openlocfilehash: ed4950b9e90ef968fcf0c42e4f0a9775c58ea7ec
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59030173"
 ---
 # <a name="nosmartpointers"></a>no_smart_pointers
@@ -32,5 +32,5 @@ Varsayılan olarak kullandığınızda, `#import`, bir tür kitaplığındaki t�
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[#import Öznitelikleri](../preprocessor/hash-import-attributes-cpp.md)<br/>
-[#import Yönergesi](../preprocessor/hash-import-directive-cpp.md)
+[#import öznitelikleri](../preprocessor/hash-import-attributes-cpp.md)<br/>
+[#import yönergesi](../preprocessor/hash-import-directive-cpp.md)

@@ -25,10 +25,10 @@ helpviewer_keywords:
 - resource editing
 ms.assetid: 4d2b6fcc-07cf-4289-be87-83a60f69533c
 ms.openlocfilehash: 45db6d0139cfa3aa8a2eaa8fe6d18158cb6646ce
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59029405"
 ---
 # <a name="resource-files-c"></a>Kaynak Dosyalar (C++)
@@ -132,5 +132,5 @@ Win32
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Kaynak Dosyalarıyla Çalışma](../windows/working-with-resource-files.md)<br/>
-[Kaynak Tanımlayıcıları (simge)](../windows/symbols-resource-identifiers.md)<br/>
+[Kaynak Tanımlayıcıları (Semboller)](../windows/symbols-resource-identifiers.md)<br/>
 [Kaynak Düzenleyicileri](../windows/resource-editors.md)<br/>

@@ -6,10 +6,10 @@ helpviewer_keywords:
 - record view classes
 ms.assetid: e7b2820f-09c4-483f-83c0-317e8be42bdf
 ms.openlocfilehash: 5f8de956065571109c988bd2940d21822bba7cfd
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59029881"
 ---
 # <a name="features-of-record-view-classes--mfc-data-access"></a>Kayıt görünümü sınıfları (MFC veri erişimi) özellikleri

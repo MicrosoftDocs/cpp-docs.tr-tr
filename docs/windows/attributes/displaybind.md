@@ -7,10 +7,10 @@ helpviewer_keywords:
 - displaybind attribute
 ms.assetid: b3d70396-78e4-43d9-9583-16ddb8c9bb1f
 ms.openlocfilehash: b16e809781170d0c5dfe301e6dd73e6a27046835
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59028626"
 ---
 # <a name="displaybind"></a>displaybind
@@ -37,16 +37,16 @@ Kullanıcıya bağlanabilir olarak görüntülenmesi gereken özelliği belirtir
 
 |||
 |-|-|
-|**Uygulandığı öğe:**|Arabirim yöntemi|
+|**İçin geçerlidir**|Arabirim yöntemi|
 |**Tekrarlanabilir**|Hayır|
-|**Gerekli öznitelikleri**|Yok.|
+|**Gerekli öznitelikleri**|None|
 |**Geçersiz öznitelikler**|Yok.|
 
 Daha fazla bilgi için [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[IDL Öznitelikleri](idl-attributes.md)<br/>
+[IDL öznitelikleri](idl-attributes.md)<br/>
 [Yöntem Öznitelikleri](method-attributes.md)<br/>
 [Veri Üyesi Öznitelikleri](data-member-attributes.md)<br/>
 [defaultbind](defaultbind.md)<br/>

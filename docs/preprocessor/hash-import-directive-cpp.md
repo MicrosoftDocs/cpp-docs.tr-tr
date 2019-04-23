@@ -13,10 +13,10 @@ helpviewer_keywords:
 - COM, type library header file
 ms.assetid: 787d1112-e543-40d7-ab15-a63d43f4030a
 ms.openlocfilehash: 98a0f9f66fb209bb41215fc1e86a9682a4fed023
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59031991"
 ---
 # <a name="import-directive-c"></a>#import Yönergesi (C++)
@@ -34,7 +34,7 @@ Tür kitaplığından bilgileri birleştirmek için kullanılır. Tür kitaplı�
 
 ### <a name="parameters"></a>Parametreler
 
-*filename*<br/>
+*Dosya adı*<br/>
 İçe aktarılacak tür kitaplığını belirtir. *filename* aşağıdakilerden biri olabilir:
 
 - .Olb, .tlb veya .dll dosyası gibi bir tür kitaplığı içeren bir dosya adı. Anahtar sözcüğü **dosya:**, her dosya adının önüne gelebilir.
@@ -65,7 +65,7 @@ Tür kitaplığından bilgileri birleştirmek için kullanılır. Tür kitaplı�
 
 - Tarafından anlaşılabilir herhangi bir dosya biçiminde **LoadTypeLib** API.
 
-*öznitelikler*<br/>
+*Öznitelikleri*<br/>
 Bir veya daha fazla [#import öznitelikleri](#_predir_the_23import_directive_import_attributes). Ayrı öznitelikleri boşluk veya virgül ile. Örneğin:
 
 ```cpp

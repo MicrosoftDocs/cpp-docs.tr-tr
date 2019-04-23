@@ -10,10 +10,10 @@ helpviewer_keywords:
 - data segment initializing [C++]
 ms.assetid: 40a5898a-5c85-4aa9-8d73-3d967eb13610
 ms.openlocfilehash: 801496739fd9bd2b8a14e699ca4da9fe79f3a28d
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59026637"
 ---
 # <a name="initseg"></a>init_seg
@@ -36,13 +36,13 @@ Genel statik nesnelerin başlatılması kodu yürüten içerebildiğinden, nesne
 
 Seçenekleri **init_seg** Pragma:
 
-* derleyicisi*<br/>
+*Derleyici*<br/>
 Microsoft C çalışma zamanı kitaplığı başlatma için ayrılmış. Bu gruptaki nesnelere önce oluşturulur.
 
 *lib*<br/>
 Sınıf kitaplığı üçüncü taraf satıcıların başlatmalar için kullanılabilir. Bu gruptaki nesnelere olarak işaretlenenler sonra özniteliklerden *derleyici* ancak diğerleri önce.
 
-*kullanıcı*<br/>
+*Kullanıcı*<br/>
 Herhangi bir kullanıcı için kullanılabilir. Bu gruptaki nesnelere son oluşturulur.
 
 *Bölüm adı* başlatma bölümünün açık belirtilmesine izin verir. Kullanıcı tanımlı nesneler *bölüm adı* örtük olarak oluşturulan değildir; ancak, adresleri tarafından adlandırılmış bölüm yerleştirilir *bölüm adı*.

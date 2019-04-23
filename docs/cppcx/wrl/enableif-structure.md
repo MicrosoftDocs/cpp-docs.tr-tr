@@ -8,10 +8,10 @@ helpviewer_keywords:
 - EnableIf structure
 ms.assetid: 7825b283-e6b2-4f39-a4b9-c03bcd431b8e
 ms.openlocfilehash: daaba919acaa35615af56831f9458831c3d35427
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59029991"
 ---
 # <a name="enableif-structure"></a>EnableIf Yapısı

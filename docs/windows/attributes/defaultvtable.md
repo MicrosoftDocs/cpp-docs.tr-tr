@@ -7,10 +7,10 @@ helpviewer_keywords:
 - defaultvtable attribute
 ms.assetid: 5b3ed483-f69e-44dd-80fc-952028eb9d73
 ms.openlocfilehash: 813fb9dd4edf2f6e522e7310ba1e8bfcd55ed2b9
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59028353"
 ---
 # <a name="defaultvtable"></a>defaultvtable
@@ -25,7 +25,7 @@ Varsayılan vtable arabirim bir COM nesnesi için bir arabirim tanımlar.
 
 ### <a name="parameters"></a>Parametreler
 
-*arabirim*<br/>
+*interface*<br/>
 COM nesnesi için varsayılan vtable olmasını istediğiniz belirtilen arabirim.
 
 ## <a name="remarks"></a>Açıklamalar
@@ -68,7 +68,7 @@ class CMyC3 : public IMyI3 {};
 
 |||
 |-|-|
-|**Uygulandığı öğe:**|**sınıf**, **yapısı**|
+|**İçin geçerlidir**|**sınıf**, **yapısı**|
 |**Tekrarlanabilir**|Hayır|
 |**Gerekli öznitelikleri**|**coclass**|
 |**Geçersiz öznitelikler**|Yok.|
@@ -77,5 +77,5 @@ Daha fazla bilgi için [öznitelik bağlamları](cpp-attributes-com-net.md#conte
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[IDL Öznitelikleri](idl-attributes.md)<br/>
+[IDL öznitelikleri](idl-attributes.md)<br/>
 [Sınıf Öznitelikleri](class-attributes.md)

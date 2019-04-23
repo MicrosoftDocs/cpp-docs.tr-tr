@@ -8,10 +8,10 @@ helpviewer_keywords:
 - CloakedIid structure
 ms.assetid: 82e0e377-ca3a-46bc-b850-ae2c46c15bb5
 ms.openlocfilehash: 10dc2af1897147045382e8463b6602fa015fc899
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59033729"
 ---
 # <a name="cloakediid-structure"></a>CloakedIid Yapısı

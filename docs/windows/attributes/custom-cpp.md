@@ -7,10 +7,10 @@ helpviewer_keywords:
 - custom attributes, defining
 ms.assetid: 3abac928-4d55-4ea6-8cf6-8427a4ad79f1
 ms.openlocfilehash: 227e67696e679452a9c6c0e18c04e3d918f7a93f
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59029440"
 ---
 # <a name="custom-c"></a>özel (C++)
@@ -46,16 +46,16 @@ Bir değişken koyabilirsiniz bir değer.
 
 |||
 |-|-|
-|**Uygulandığı öğe:**|COM olmayan **arabirimi**, **sınıfı**, **enum**s, `idl_module` yöntemleri, arabirim üyeleri, arabirim parametrelerini **typedef**s, **birleşim**s, **yapı**s|
+|**İçin geçerlidir**|COM olmayan **arabirimi**, **sınıfı**, **enum**s, `idl_module` yöntemleri, arabirim üyeleri, arabirim parametrelerini **typedef**s, **birleşim**s, **yapı**s|
 |**Tekrarlanabilir**|Evet|
 |**Gerekli öznitelikleri**|**coclass'ı** (sınıfı kullanıldığında)|
-|**Geçersiz öznitelikler**|Yok.|
+|**Geçersiz öznitelikler**|None|
 
 Öznitelik bağlamları hakkında daha fazla bilgi için bkz: [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[IDL Öznitelikleri](idl-attributes.md)<br/>
+[IDL öznitelikleri](idl-attributes.md)<br/>
 [Tek Başına Öznitelikler](stand-alone-attributes.md)<br/>
 [Typedef, Enum, Union ve Struct Öznitelikleri](typedef-enum-union-and-struct-attributes.md)<br/>
 [Parametre Öznitelikleri](parameter-attributes.md)<br/>

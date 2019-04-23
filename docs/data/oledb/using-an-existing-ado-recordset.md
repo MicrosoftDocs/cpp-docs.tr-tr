@@ -7,10 +7,10 @@ helpviewer_keywords:
 - recordsets [C++], using in OLE DB
 ms.assetid: a9b1de8a-d379-49b1-a26e-578741e9f6a8
 ms.openlocfilehash: eb558bb319bb5ddb61d0383846099d708f99c627
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59030500"
 ---
 # <a name="using-an-existing-ado-recordset"></a>Varolan ADO Kayıt Kümesini Kullanma

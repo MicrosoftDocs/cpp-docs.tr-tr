@@ -7,18 +7,18 @@ helpviewer_keywords:
 - parameter arrays
 ms.assetid: db1a27f4-02a8-4318-8690-1f2893f52b38
 ms.openlocfilehash: ec1e2cefa33bc9d749d0f05e170c2f2db9b25f02
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59031614"
 ---
 # <a name="variable-argument-lists--ccli"></a>Değişken Bağımsız Değişken Listeleri (...) (C++/CLI)
 
-Bu örnek nasıl kullanılacağını göstermektedir `...` söz dizimi C + +/ CLI, değişken sayıda bağımsız değişkenlere sahip işlevler uygulamak için.
+Bu örnek nasıl kullanılacağını göstermektedir `...` sözdiziminde C++/CLI değişken sayıda bağımsız değişkenlere sahip işlevler uygulamak için.
 
 > [!NOTE]
-> Bu konuda ilgilidir C + +/ CLI. Kullanma hakkında bilgi için `...` ISO Standard C++ içinde bkz [üç nokta ve Variadic şablonları](../cpp/ellipses-and-variadic-templates.md) ve üç nokta ve varsayılan bağımsız değişkenler [sonek ifadeleri](../cpp/postfix-expressions.md).
+> Bu konu ilgili C++/CLI. Kullanma hakkında bilgi için `...` ISO Standard C++ içinde bkz [üç nokta ve Variadic şablonları](../cpp/ellipses-and-variadic-templates.md) ve üç nokta ve varsayılan bağımsız değişkenler [sonek ifadeleri](../cpp/postfix-expressions.md).
 
 Kullanan bir parametre `...` parametre listesindeki son parametre olmalıdır.
 

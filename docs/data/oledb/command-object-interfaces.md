@@ -7,10 +7,10 @@ helpviewer_keywords:
 - OLE DB [C++], command object interfaces
 ms.assetid: dacff5ae-252c-4f20-9ad7-4e602cc48536
 ms.openlocfilehash: 755c44cf8d0cb5bf5066197bfd0ead3e0f25e1f9
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59032407"
 ---
 # <a name="command-object-interfaces"></a>Komut Nesnesi Arabirimleri

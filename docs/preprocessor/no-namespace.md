@@ -7,10 +7,10 @@ helpviewer_keywords:
 - no_namespace attribute
 ms.assetid: 5d81b741-a558-451b-b493-1f3b18967337
 ms.openlocfilehash: f6bd60de02bf0166d5cf0b0cd1bc1de56ceda5bf
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59028723"
 ---
 # <a name="nonamespace"></a>no_namespace
@@ -34,5 +34,5 @@ Farklı bir ad kullanmak istiyorsanız, ardından kullanmak [rename_namespace](.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[#import Öznitelikleri](../preprocessor/hash-import-attributes-cpp.md)<br/>
-[#import Yönergesi](../preprocessor/hash-import-directive-cpp.md)
+[#import öznitelikleri](../preprocessor/hash-import-attributes-cpp.md)<br/>
+[#import yönergesi](../preprocessor/hash-import-directive-cpp.md)

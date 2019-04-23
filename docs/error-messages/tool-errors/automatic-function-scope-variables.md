@@ -8,10 +8,10 @@ helpviewer_keywords:
 - scope, declared within functions
 ms.assetid: 6e1a14c2-1fb0-4937-8628-8d963cc35ed4
 ms.openlocfilehash: fe326621f421ecbbb0ce09dac91f1a71e8d669aa
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59030319"
 ---
 # <a name="automatic-function-scope-variables"></a>Otomatik (İşlev Kapsamı) Değişkenleri

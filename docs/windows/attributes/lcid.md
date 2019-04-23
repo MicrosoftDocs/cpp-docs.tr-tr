@@ -7,10 +7,10 @@ helpviewer_keywords:
 - LCID attribute
 ms.assetid: 7f248c69-ee1c-42c3-9411-39cf27c9f43d
 ms.openlocfilehash: d97ad86e143102c96e87ae0a32245b0c01042501
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59032439"
 ---
 # <a name="lcid"></a>lcid
@@ -48,14 +48,14 @@ __interface IStatic {
 
 |||
 |-|-|
-|**Uygulandığı öğe:**|Parametre arabirimi|
+|**İçin geçerlidir**|Parametre arabirimi|
 |**Tekrarlanabilir**|Hayır|
-|**Gerekli öznitelikleri**|Yok.|
-|**Geçersiz öznitelikler**|Yok.|
+|**Gerekli öznitelikleri**|None|
+|**Geçersiz öznitelikler**|None|
 
 Daha fazla bilgi için [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[IDL Öznitelikleri](idl-attributes.md)<br/>
+[IDL öznitelikleri](idl-attributes.md)<br/>
 [Parametre Öznitelikleri](parameter-attributes.md)

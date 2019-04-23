@@ -6,10 +6,10 @@ helpviewer_keywords:
 - service providers [OLE DB]
 ms.assetid: 3deac1bb-f660-407a-92ef-95e139e280c0
 ms.openlocfilehash: d91f08accf1a8be69f63d6bbcaa4c620d68c1077
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59033037"
 ---
 # <a name="enabling-and-disabling-services-for-a-provider"></a>Sağlayıcı için Etkinleştirme ve Devre Dışı Bırakma Hizmetleri

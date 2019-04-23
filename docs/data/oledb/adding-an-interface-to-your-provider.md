@@ -5,10 +5,10 @@ helpviewer_keywords:
 - OLE DB provider templates, object interfaces
 ms.assetid: b0fc7cf8-428a-4584-9d64-ce9074d0eb66
 ms.openlocfilehash: c0452ca74509b65de3787af93bff41b3cb399c99
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59033884"
 ---
 # <a name="adding-an-interface-to-your-provider"></a>Sağlayıcınıza Arabirim Ekleme

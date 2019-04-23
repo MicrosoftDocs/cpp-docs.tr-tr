@@ -7,10 +7,10 @@ helpviewer_keywords:
 - CDynamicStringAccessorA class
 ms.assetid: ed0d9821-a655-41f1-a902-43c3042ac49c
 ms.openlocfilehash: 3a0da9c779230fc1bf58bfa1d685623f844012c7
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59031363"
 ---
 # <a name="cdynamicstringaccessora-class"></a>CDynamicStringAccessorA Sınıfı

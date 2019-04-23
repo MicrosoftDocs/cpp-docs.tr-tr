@@ -7,15 +7,15 @@ helpviewer_keywords:
 - __readcr3 intrinsic
 ms.assetid: e24392c3-cad7-4788-8f31-94bf2e9e0053
 ms.openlocfilehash: 8b5839d233154b6ddb69d2bbe0b13497c3b66305
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59031121"
 ---
 # <a name="readcr3"></a>__readcr3
 
-**Microsoft'a Özgü**
+**Microsoft'a özgü**
 
 CR3 yazmacını okuyarak ve değerini döndürür.
 
@@ -41,7 +41,7 @@ CR3 kayıttaki değeri.
 
 Bu iç yalnızca çekirdek modunda kullanılabilir ve yordam yalnızca bir iç öğe olarak kullanılabilir.
 
-**END Microsoft'a Özgü**
+**END Microsoft özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

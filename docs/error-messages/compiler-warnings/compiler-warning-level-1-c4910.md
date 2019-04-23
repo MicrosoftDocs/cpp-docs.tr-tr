@@ -5,10 +5,10 @@ helpviewer_keywords:
 - C4910
 ms.assetid: 67963560-fbca-4ca7-93db-06beaf7055f0
 ms.openlocfilehash: 49cbbf3369fc4765d93e67e2dca84a4d975560d7
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59027583"
 ---
 # <a name="compiler-warning-level-1-c4910"></a>Derleyici Uyarısı (düzey 1) C4910

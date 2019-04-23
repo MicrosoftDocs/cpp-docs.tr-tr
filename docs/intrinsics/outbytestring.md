@@ -9,15 +9,15 @@ helpviewer_keywords:
 - outsb instruction
 ms.assetid: c9150661-9c18-427f-bae8-710bba6ed78c
 ms.openlocfilehash: 41064dda6a1a0b9ad4c15f98c3f3081f08ef8db6
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59032199"
 ---
 # <a name="outbytestring"></a>__outbytestring
 
-**Microsoft'a Özgü**
+**Microsoft'a özgü**
 
 Oluşturur `rep outsb` gönderen ilk yönerge `Count` verileri baytlık tarafından işaret edilen `Buffer` tarafından belirtilen bağlantı noktasına `Port`.
 
@@ -33,13 +33,13 @@ void __outbytestring(
 
 #### <a name="parameters"></a>Parametreler
 
-*Bağlantı Noktası*<br/>
+*Bağlantı noktası*<br/>
 [in] Veri göndermek için bağlantı noktası.
 
 *Arabellek*<br/>
 [in] Belirtilen bağlantı noktasına gönderilecek veri.
 
-*Sayı*<br/>
+*Sayısı*<br/>
 [in] Veri gönderilecek bayt sayısı.
 
 ## <a name="requirements"></a>Gereksinimler
@@ -54,7 +54,7 @@ void __outbytestring(
 
 Bu yordam yalnızca bir iç öğe olarak kullanılabilir.
 
-**END Microsoft'a Özgü**
+**END Microsoft özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

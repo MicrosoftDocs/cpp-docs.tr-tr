@@ -1,5 +1,5 @@
 ---
-title: Platform, varsayılan ve cli ad alanları (C + +/ CLI ve C + +/ CX)
+title: Platform, varsayılan ve cli ad alanları (C++/CLI ve C++/CX)
 ms.date: 10/12/2018
 ms.topic: reference
 f1_keywords:
@@ -10,13 +10,13 @@ helpviewer_keywords:
 - cli namespace
 ms.assetid: 9d38bd1e-dc78-47d1-a84b-9b4683e52c9c
 ms.openlocfilehash: a7599e2987d27626e6f5c9d049d9a3bd4509c3ff
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59028515"
 ---
-# <a name="platform-default-and-cli-namespaces--ccli-and-ccx"></a>Platform, varsayılan ve cli ad alanları (C + +/ CLI ve C + +/ CX)
+# <a name="platform-default-and-cli-namespaces--ccli-and-ccx"></a>Platform, varsayılan ve cli ad alanları (C++/CLI ve C++/CX)
 
 Bir ad alanı dil öğelerinin adlarını kaynak kod içindeki başka bir yerde benzer adlarla çakışmamaları için örtük olarak nitelendirir. Bir ad çakışması derleyicinin tanımasını gibi engelleyebilir [Context-Sensitive Keywords](context-sensitive-keywords-cpp-component-extensions.md). Ad alanları derleyici tarafından kullanılır, ancak oluşturulmuş derlemede korunmaz.
 
@@ -26,7 +26,7 @@ Proje oluşturduğunuzda, visual Studio projeniz için varsayılan ad alanı sa�
 
 ## <a name="windows-runtime"></a>Windows Çalışma Zamanı
 
-Daha fazla bilgi için [ad alanları ve tür görünürlüğü (C + +/ CX)](https://msdn.microsoft.com/library/windows/apps/hh969551.aspx).
+Daha fazla bilgi için [ad alanları ve tür görünürlüğü (C++/CX)](https://msdn.microsoft.com/library/windows/apps/hh969551.aspx).
 
 ### <a name="requirements"></a>Gereksinimler
 
@@ -42,7 +42,7 @@ using namespace cli;
 
 ### <a name="remarks"></a>Açıklamalar
 
-C + +/ CLI destekler **CLI** ad alanı. İle derlerken `/clr`, **kullanarak** sözdizimi bölümündeki deyimi kastedilir.
+C++/CLI destekler **CLI** ad alanı. İle derlerken `/clr`, **kullanarak** sözdizimi bölümündeki deyimi kastedilir.
 
 Aşağıdaki dil özellikleri **CLI** ad alanı:
 
@@ -80,4 +80,4 @@ int main() {
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[.NET ve UWP için bileşen uzantıları](component-extensions-for-runtime-platforms.md)
+[.NET ve UWP İçin Bileşen Uzantıları](component-extensions-for-runtime-platforms.md)

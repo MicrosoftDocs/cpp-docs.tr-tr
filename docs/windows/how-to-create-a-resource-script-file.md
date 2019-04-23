@@ -37,10 +37,10 @@ helpviewer_keywords:
 - .rct files [C++]
 ms.assetid: 82be732a-cdcd-4a58-8de7-976d1418f86b
 ms.openlocfilehash: c22df99240c0fa076124e33224a4f6f4ab9a957e
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59028528"
 ---
 # <a name="how-to-create-resources-c"></a>Nasıl yapılır: Kaynaklar (C++) oluştur
@@ -119,7 +119,7 @@ Sağ tıklama üzerinde de uygulayabilirsiniz **kaynak görünümü** penceresi 
 |---|---|
 | **Kaynak Türü** | Oluşturmak istediğiniz kaynak türünü belirtin.<br/><br/>Bulunan ek kaynaklar ortaya çıkarmak için imleç ve iletişim kutusunu kaynak kategorileri genişletebilirsiniz *... \Microsoft visual Studio \<sürüm\>\VC\VCResourceTemplates\\< LCID\>\mfc.rct*. .Rct dosyaları eklemeniz gerekiyorsa, buraya yerleştirin veya başka bir tane belirtin [yolunu](../windows/how-to-specify-include-directories-for-resources.md). Ağaç denetimi üst düzeyde gösterilen kaynağı, Visual Studio tarafından sağlanan varsayılan kaynaklardır. .Rct dosyalarındaki kaynaklar ikinci düzey uygun kategorisinin altında görünür. Ekleyebileceğiniz .rct dosyaları sayısı önceden belirlenmiş bir sınır yoktur.<br/><br/> |
 | **Yeni** | Seçili türüne göre kaynak Oluştur **kaynak türü** kutusuna ve kaynak uygun Düzenleyicisi'nde açın.<br/><br/>Örneğin, bir iletişim kutusu kaynağı oluşturursanız, kaynakta açar [iletişim kutusu Düzenleyicisi](../windows/dialog-editor.md). |
-| **İçeri Aktarma** | Açık **alma** iletişim kutusu, geçerli projenin içine aktarmak istediğiniz kaynağa gidin.<br/><br/>Aktarabilirsiniz bir bit eşlem simgesi, imleç, HTML, ses (. WAV) veya özel kaynak dosyası. |
+| **İçeri Aktar** | Açık **alma** iletişim kutusu, geçerli projenin içine aktarmak istediğiniz kaynağa gidin.<br/><br/>Aktarabilirsiniz bir bit eşlem simgesi, imleç, HTML, ses (. WAV) veya özel kaynak dosyası. |
 | **Özel** | Açık **yeni özel kaynak** özel bir kaynak oluşturmak için iletişim kutusu.<br/><br/>Ayrıca içeren bir **kaynak türü** özel kaynak türü adını girmek metin kutusu sağlayan bir özellik. Çıkış, visual C++ otomatik olarak ad büyük harfe dönüştürür. Özel kaynaklar yalnızca içinde düzenlenebilir [ikili düzenleyici](../windows/binary-editor.md). |
 
 Yeni bir kaynak oluşturduğunuzda, Visual C++ benzersiz bir ad, örneğin atar `IDD_Dialog1`. Bu kaynak kimliği, ilişkili kaynak Düzenleyicisi'ni veya kaynak özellikleri düzenleyerek özelleştirebilirsiniz [Özellikler penceresi](/visualstudio/ide/reference/properties-window).
@@ -190,5 +190,5 @@ Win32
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Kaynak Dosyalar](../windows/resource-files-visual-studio.md)<br/>
-[Nasıl yapılır: Kaynakları yönetme](../windows/how-to-copy-resources.md)<br/>
-[Nasıl yapılır: Derleme sırasında kaynak ekleme](../windows/how-to-include-resources-at-compile-time.md)<br/>
+[Nasıl yapılır: Kaynakları yönet](../windows/how-to-copy-resources.md)<br/>
+[Nasıl yapılır: Derleme Sırasında Kaynak Ekleme](../windows/how-to-include-resources-at-compile-time.md)<br/>

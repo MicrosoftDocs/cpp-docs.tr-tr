@@ -13,10 +13,10 @@ helpviewer_keywords:
 - OLE DB consumer templates, classes
 ms.assetid: cfc7f698-1a0e-4a09-a4d3-ccb99e6654fe
 ms.openlocfilehash: fb0b24798b3f2682bbbec7624df34b40a2a9f4cc
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59032277"
 ---
 # <a name="ole-db-consumer-templates-reference"></a>OLE DB Tüketici Şablonları Başvurusu
@@ -124,7 +124,7 @@ Basit bir satır kümesinde parametresiz erişmek için kullanılır.
 
 ## <a name="property-classes"></a>Özellik sınıfları
 
-[Cdbpropıdset](../../data/oledb/cdbpropidset-class.md)<br/>
+[CDBPropIDSet](../../data/oledb/cdbpropidset-class.md)<br/>
 Bir dizi özellik kimlikleri için özellik bilgilerini tüketici istediği geçirmek için kullanılır. Özellikleri bir özellik kümesine ait değil.
 
 [CDBPropSet](../../data/oledb/cdbpropset-class.md)<br/>
@@ -137,7 +137,7 @@ Bir satır kümesi veri erişimi için bir dizin olarak kullanılır.
 
 ## <a name="error-class"></a>Hata sınıfı
 
-[Cdberrorınfo](../../data/oledb/cdberrorinfo-class.md)<br/>
+[CDBErrorInfo](../../data/oledb/cdberrorinfo-class.md)<br/>
 OLE DB hata bilgilerini almak için kullanılır.
 
 ## <a name="see-also"></a>Ayrıca bkz.

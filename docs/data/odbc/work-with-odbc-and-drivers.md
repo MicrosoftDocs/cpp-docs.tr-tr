@@ -5,10 +5,10 @@ helpviewer_keywords:
 - ODBC drivers, using
 ms.assetid: ae1bf357-4ca4-4748-9336-8fc317f294ab
 ms.openlocfilehash: fa0ccf65584d08088635d3939e609eb2d763abe7
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59030082"
 ---
 # <a name="work-with-odbc-and-drivers"></a>ODBC ve Sürücülerle Çalışma

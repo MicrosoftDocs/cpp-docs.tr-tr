@@ -1,5 +1,5 @@
 ---
-title: Genel temsilciler (C + +/ CLI)
+title: Genel temsilciler (C++/CLI)
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -7,15 +7,15 @@ helpviewer_keywords:
 - delegates, generic [C++]
 ms.assetid: 09d430b2-1aef-4fbc-87f9-9d7b8185d798
 ms.openlocfilehash: 449659126f52997d548ebd7785a78c1200038ee6
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59029563"
 ---
-# <a name="generic-delegates-ccli"></a>Genel temsilciler (C + +/ CLI)
+# <a name="generic-delegates-ccli"></a>Genel temsilciler (C++/CLI)
 
-Genel tür parametreleri ile temsilciler kullanabilirsiniz. Temsilciler hakkında daha fazla bilgi için bkz. [temsilci (C + +/ CLI ve C + +/ CX)](delegate-cpp-component-extensions.md).
+Genel tür parametreleri ile temsilciler kullanabilirsiniz. Temsilciler hakkında daha fazla bilgi için bkz. [temsilci (C++/CLI ve C++/CX)](delegate-cpp-component-extensions.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -29,14 +29,14 @@ generic < [class | typename] type-parameter-identifiers>
 
 ### <a name="parameters"></a>Parametreler
 
-*öznitelikler*<br/>
+*Öznitelikleri*<br/>
 (İsteğe bağlı) Ek bildirim temelli bilgiler. Öznitelikleri öznitelikleri ve öznitelik sınıfları hakkında daha fazla bilgi için bkz.
 
 *tür-parametresi-tanımlayıcıları*<br/>
 Virgülle ayrılmış tanımlayıcılar tür parametrelerinin listesi.
 
 *tür parametresi kısıtlamaları tümceleri*<br/>
-Belirtilen biçimi alır [genel tür parametrelerindeki kısıtlamalar (C + +/ CLI)](constraints-on-generic-type-parameters-cpp-cli.md)
+Belirtilen biçimi alır [genel tür parametrelerindeki kısıtlamalar (C++/CLI)](constraints-on-generic-type-parameters-cpp-cli.md)
 
 *erişilebilirlik değiştiricileri*<br/>
 (İsteğe bağlı) Erişilebilirlik değiştiricileri (örneğin **genel**, **özel**).

@@ -9,10 +9,10 @@ helpviewer_keywords:
 - pragmas, message
 ms.assetid: 67414f25-ed47-4079-a5dc-21d9d1a39754
 ms.openlocfilehash: e9383238fd308ec59a9767f56af1c07fc3cfcf07
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59030212"
 ---
 # <a name="message"></a> iletisi

@@ -1,18 +1,18 @@
 ---
-title: Windows çalışma zamanı ve yönetilen şablonlar (C + +/ CLI ve C + +/ CX)
+title: Windows çalışma zamanı ve yönetilen şablonlar (C++/CLI ve C++/CX)
 ms.date: 10/12/2018
 ms.topic: reference
 helpviewer_keywords:
 - templates, with CLR types
 ms.assetid: cf59d16b-5514-448b-9a95-e0b4fcb616a6
 ms.openlocfilehash: a8cc429763d042ba262d5543f4a2d85bbf8aa29a
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59029560"
 ---
-# <a name="windows-runtime-and-managed-templates-ccli-and-ccx"></a>Windows çalışma zamanı ve yönetilen şablonlar (C + +/ CLI ve C + +/ CX)
+# <a name="windows-runtime-and-managed-templates-ccli-and-ccx"></a>Windows çalışma zamanı ve yönetilen şablonlar (C++/CLI ve C++/CX)
 
 Şablonları, bir Windows çalışma zamanı veya ortak dil çalışma zamanı türü prototipin tanımlamanıza olanak sağlar ve ardından farklı bir şablon türü parametreleri kullanarak bu tür çeşidi örneği.
 
@@ -40,7 +40,7 @@ Derleyici seçeneği: `/clr`
 
 ### <a name="examples"></a>Örnekler
 
-Yönetilen tür şablonu parametresi olan bir genel tipi örneklemeli mümkündür, ancak bir genel tür şablonu parametresi ile yönetilen bir şablon örneği oluşturulamıyor. Genel türler çalışma zamanında çözümlenir olmasıdır. Daha fazla bilgi için [genel türler ve temsilciler (C + +/ CLI)](generics-and-templates-visual-cpp.md).
+Yönetilen tür şablonu parametresi olan bir genel tipi örneklemeli mümkündür, ancak bir genel tür şablonu parametresi ile yönetilen bir şablon örneği oluşturulamıyor. Genel türler çalışma zamanında çözümlenir olmasıdır. Daha fazla bilgi için [genel türler ve temsilciler (C++/CLI)](generics-and-templates-visual-cpp.md).
 
 ```cpp
 // managed_templates.cpp
@@ -132,4 +132,4 @@ class A <int> {};
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[.NET ve UWP için bileşen uzantıları](component-extensions-for-runtime-platforms.md)
+[.NET ve UWP İçin Bileşen Uzantıları](component-extensions-for-runtime-platforms.md)
