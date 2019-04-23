@@ -818,12 +818,12 @@ helpviewer_keywords:
 - CWnd [MFC], WindowProc
 - CWnd [MFC], m_hWnd
 ms.assetid: 49a832ee-bc34-4126-88b3-bc1d9974f6c4
-ms.openlocfilehash: 7427d8b50dadd9694112ad27c2892ee228a93864
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
-ms.translationtype: MT
+ms.openlocfilehash: 493fe04f34f615d9113196e3db8bc744f420d4a2
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57276552"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57426270"
 ---
 # <a name="cwnd-class"></a>CWnd sınıfı
 
@@ -2685,10 +2685,10 @@ BOOL DrawAnimatedRects(
 Animasyon türünü belirtir. IDANI_CAPTION belirtirseniz, pencere başlığı tarafından belirtilen konumdan animasyon uygular *lprcFrom* tarafından belirtilen konuma *lprcTo*. Etkisini en aza veya bir penceresinin ekranı kaplamasını benzer.
 
 *lprcFrom*<br/>
-İşaretçi bir [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) yapısı simge veya simge durumuna küçültülmüş pencerenin boyutunu ve konumunu belirtme.
+İşaretçi bir [RECT](/previous-versions/dd162897\(v=vs.85\)) yapısı simge veya simge durumuna küçültülmüş pencerenin boyutunu ve konumunu belirtme.
 
 *lprcTo*<br/>
-İşaretçi bir [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) yapısı geri yüklenen pencere boyutunu ve konumunu belirtme
+İşaretçi bir [RECT](/previous-versions/dd162897\(v=vs.85\)) yapısı geri yüklenen pencere boyutunu ve konumunu belirtme
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -5363,7 +5363,7 @@ Belirtilen tür parametrelerinin değişken listesi *pbParamInfo*.
 
 ### <a name="remarks"></a>Açıklamalar
 
-*PbParamInfo* parametresi yöntemi veya özelliği için geçirilen parametre türlerini belirtir. Bağımsız değişken listesi tarafından temsil edilen *...*  söz dizimi bildirimi.
+*PbParamInfo* parametresi yöntemi veya özelliği için geçirilen parametre türlerini belirtir. Bağımsız değişken listesi tarafından temsil edilen *...* söz dizimi bildirimi.
 
 Bu işlev parametreleri VARIANTARG değerlerine dönüştürür ve ardından çağırır `IDispatch::Invoke` yöntemi ActiveX denetimi. Çağrı `IDispatch::Invoke` başarısız olursa, bu işlev bir özel durum oluşturur. ' % S'SCODE (durum kodu) tarafından döndürülen, `IDispatch::Invoke` DISP_E_EXCEPTION, olan bu işlevin bir [COleException](../../mfc/reference/coleexception-class.md) atar nesnesi, aksi bir [COleDispatchException](../../mfc/reference/coledispatchexception-class.md).
 

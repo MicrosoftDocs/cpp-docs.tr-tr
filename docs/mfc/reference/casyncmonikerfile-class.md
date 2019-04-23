@@ -32,12 +32,12 @@ helpviewer_keywords:
 - CAsyncMonikerFile [MFC], OnStartBinding
 - CAsyncMonikerFile [MFC], OnStopBinding
 ms.assetid: 17378b66-a49a-4b67-88e3-7756ad26a2fc
-ms.openlocfilehash: 48d7c3b5dd1b43c7a1639c6d5c56979b422d7017
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
-ms.translationtype: MT
+ms.openlocfilehash: b86cba0c2e8f7991902a552d404355d6c1474138
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57262629"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57425828"
 ---
 # <a name="casyncmonikerfile-class"></a>CAsyncMonikerFile sınıfı
 
@@ -158,7 +158,7 @@ Alternatif olarak, COM nesnenizin MFC'nin uygulaması çağırarak temsilci olar
 
 [CAsyncMonikerFile::Open](#open) çağrıları `CreateBindStatusCallback`.
 
-Zaman uyumsuz adlar ve zaman uyumsuz bağlama hakkında daha fazla bilgi için bkz. [IBindStatusCallback](https://msdn.microsoft.com/library/ie/ms775060) arabirimi ve [ne zaman uyumsuz bağlama ve depolama iş](/windows/desktop/Stg/how-asynchronous-binding-and-storage-work). Toplama için bkz [toplama](/windows/desktop/com/aggregation). Tüm üç Windows SDK'da konulardır.
+Zaman uyumsuz adlar ve zaman uyumsuz bağlama hakkında daha fazla bilgi için bkz. [IBindStatusCallback](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/ms775060\(v=vs.85\)) arabirimi ve [ne zaman uyumsuz bağlama ve depolama iş](/windows/desktop/Stg/how-asynchronous-binding-and-storage-work). Toplama için bkz [toplama](/windows/desktop/com/aggregation). Tüm üç Windows SDK'da konulardır.
 
 ##  <a name="getbindinfo"></a>  CAsyncMonikerFile::GetBindInfo
 
@@ -176,7 +176,7 @@ Ayarlarını alır `IBindStatusCallBack`. Bir açıklaması için `IBindStatusCa
 
 Varsayılan uygulama bağlama depolama Orta (akışı) kullanın ve veri gönderimi modelini kullanmak için uyumsuz olarak ayarlar. Bağlama davranışını değiştirmek istiyorsanız, bu işlev geçersiz kılar.
 
-Veri çekme modeli yerine veri gönderme modeli kullanarak bağlamak için bunu yapmak için bir neden olacaktır. Bir veri çekme modeli, bağlama işlemi istemci sürücüleri ve onu okunduğunda ad verileri istemciye yalnızca sağlar. Bir veri alım modelinde bilinen ad, zaman uyumsuz bağlama işlemi sürücüleri ve yeni veriler kullanılabilir olduğunda istemci sürekli olarak bildirir.
+Veri çekme modeli yerine veri gönderme modeli kullanarak bağlamak için bunu yapmak için bir neden olacaktır. Bir veri çekme modeli, bağlama işlemi istemci sürücüleri ve onu okunduğunda ad verileri istemciye yalnızca sağlar.. Bir veri alım modelinde bilinen ad, zaman uyumsuz bağlama işlemi sürücüleri ve yeni veriler kullanılabilir olduğunda istemci sürekli olarak bildirir.
 
 ##  <a name="getbinding"></a>  CAsyncMonikerFile::GetBinding
 
