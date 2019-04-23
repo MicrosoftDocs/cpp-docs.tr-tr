@@ -1,6 +1,6 @@
 ---
-title: OpenMP ortam değişkenleri
-ms.date: 10/23/2018
+title: OpenMP Ortam Değişkenleri
+ms.date: 03/20/2019
 f1_keywords:
 - OpenMP environment variables
 - OMP_DYNAMIC
@@ -14,25 +14,25 @@ helpviewer_keywords:
 - OMP_NUM_THREADS OpenMP environment variable
 - OMP_SCHEDULE OpenMP environment variable
 ms.assetid: 2178ce2b-ffa1-45ec-a455-64437711d15d
-ms.openlocfilehash: 99868fec581d93f451d321af365f6c4546319077
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 73fb11db14df22e5df95fdec556ccdfc16a935e5
+ms.sourcegitcommit: 14b292596bc9b9b883a9c58cd3e366b282a1f7b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50449692"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60124973"
 ---
-# <a name="openmp-environment-variables"></a>OpenMP ortam değişkenleri
+# <a name="openmp-environment-variables"></a>OpenMP Ortam Değişkenleri
 
 OpenMP API çağrısında kullanılan ortam değişkenlerini bağlantılar sağlar.
 
 Standart OpenMP Visual C++ uygulaması, aşağıdaki ortam değişkenlerini içerir. Bu ortam değişkenleri, program başlangıcında okunduğu ve değerlerine yapılan değişiklikler çalışma zamanında yok sayıldı (örnek olarak, [_putenv, _wputenv](../../../c-runtime-library/reference/putenv-wputenv.md)).
 
-|ortam değişkeni|Açıklama|
+|Ortam değişkeni|Açıklama|
 |--------------------|-----------|
+|[OMP_SCHEDULE](#omp-schedule)|Davranışını değiştiren [zamanlama](openmp-clauses.md#schedule) yan tümcesi olduğunda `schedule(runtime)` belirtilen bir `for` veya `parallel for` yönergesi.|
+|[OMP_NUM_THREADS](#omp-num-threads)|İş parçacığı sayısı tarafından geçersiz kılınmadığı sürece paralel bölgenin içinde ayarlar [omp_set_num_threads](openmp-functions.md#omp-set-num-threads) veya [num_threads](openmp-clauses.md#num-threads).|
 |[OMP_DYNAMIC](#omp-dynamic)|Çalışma zamanı OpenMP bir paralel bölgenin içinde iş parçacığı sayısını ayarlayıp ayarlayamayacağını belirler.|
 |[OMP_NESTED](#omp-nested)|İç içe geçmiş paralellik etkin veya ile devre dışı sürece iç içe geçmiş paralellik, etkin olup olmadığını belirten `omp_set_nested`.|
-|[OMP_NUM_THREADS](#omp-num-threads)|İş parçacığı sayısı tarafından geçersiz kılınmadığı sürece paralel bölgenin içinde ayarlar [omp_set_num_threads](openmp-functions.md#omp-set-num-threads) veya [num_threads](openmp-clauses.md#num-threads).|
-|[OMP_SCHEDULE](#omp-schedule)|Davranışını değiştiren [zamanlama](openmp-clauses.md#schedule) yan tümcesi olduğunda `schedule(runtime)` belirtilen bir `for` veya `parallel for` yönergesi.|
 
 ## <a name="omp-dynamic"></a>OMP_DYNAMIC
 
@@ -117,7 +117,7 @@ Daha fazla bilgi için [4.2 OMP_NUM_THREADS](../../../parallel/openmp/4-2-omp-nu
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki komut kümelerini `OMP_NUM_THREADS` 16 ortam değişkeni:
+Aşağıdaki komut kümelerini `OMP_NUM_THREADS` ortam değişkenine `16`:
 
 ```
 set OMP_NUM_THREADS=16
@@ -140,15 +140,10 @@ set OMP_SCHEDULE[=type[,size]]
 ### <a name="parameters"></a>Parametreler
 
 *Boyutu*<br/>
-(İsteğe bağlı) Yinelemeler boyutunu belirtir. `size` Pozitif bir tamsayı olmalıdır. Varsayılan değer 1, aşağıdakiler haricinde `type` statiktir. Geçersiz zaman `type` olduğu `runtime`.
+(İsteğe bağlı) Yinelemeler boyutunu belirtir. *boyutu* pozitif bir tamsayı olmalıdır. Varsayılan değer `1`, ne zaman hariç *türü* statiktir. Geçersiz zaman *türü* olduğu `runtime`.
 
-*Türü*<br/>
-Zamanlama türü:
-
-- `dynamic`
-- `guided`
-- `runtime`
-- `static`
+*type*<br/>
+Zamanlama, ya da tür `dynamic`, `guided`, `runtime`, veya `static`.
 
 ### <a name="remarks"></a>Açıklamalar
 

@@ -7,12 +7,12 @@ helpviewer_keywords:
 - Visual C++, home page
 author: mikeblome
 ms.author: mblome
-ms.openlocfilehash: 6430d57ddc8718c419076d2da1008e21efdb9b13
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
-ms.translationtype: HT
+ms.openlocfilehash: d8826c92077ac374b67a7294fe040d6fe8dea927
+ms.sourcegitcommit: 14b292596bc9b9b883a9c58cd3e366b282a1f7b3
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58898719"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60124752"
 ---
 # <a name="c-in-visual-studio"></a>Visual Studio’da C++
 
@@ -32,7 +32,7 @@ Visual Studio'daki yenilikleri öğrenin.
 [Visual Studio 2003 ile 2015'teki c++ yenilikleri](../porting/visual-cpp-what-s-new-2003-through-2015.md)<br/>
 C++'da yeni Visual Studio'nun her sürümü için 2003 ile 2015 arasındaki bulun.
 
-[Visual Studio'da C++ uyumluluk geliştirmeleri](cpp-conformance-improvements.md)<br/>
+[Visual Studio’deki C++ uyumluluk geliştirmeleri](cpp-conformance-improvements.md)<br/>
 Visual Studio'da C++ uyumluluk geliştirmeleri hakkında bilgi edinin.
 
 [Visual C++ dil uyumluluğu](visual-cpp-language-conformance.md)<br/>
@@ -168,8 +168,8 @@ Platformlar arası **vcpkg** komut satırı aracı bulma ve yükleme 900 C++ aç
 [Visual C++ Araç Takımıyla İlgili Bir Sorunu Bildirme](how-to-report-a-problem-with-the-visual-cpp-toolset.md)<br/>
 Visual C++ araç takımı (Derleyici, bağlayıcı ve diğer araçları) ve raporunuzun göndermenin yolu karşı etkin hata raporlarını oluşturmayı öğrenin.
 
-[Visual C++ ekip blogu](http://blogs.msdn.com/b/vcblog/)<br/>
-Yeni özellikler ve geliştiricilerinden en son bilgiler hakkında daha fazla bilgi [!INCLUDE[vcprvc](../build/includes/vcprvc_md.md)].
+Microsoft [ C++ ekip blogu](https://devblogs.microsoft.com/cppblog/)<br/>
+Yeni özellikler ve geliştiricilerinden en son bilgiler hakkında daha fazla bilgi C++ Visual Studio Araçları.
 
 [Visual Studio Geliştirici topluluğu](https://developercommunity.visualstudio.com/)<br/>
 Visual Studio hakkında yardım almayı, hataları dosyalamayı ve öneride bulunmayı öğrenin.

@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2440
 ms.assetid: 36e6676c-f04f-4715-8ba1-f096c4bf3b44
 ms.openlocfilehash: c85a8284c91037e981f0d1ea82507b49be8121a3
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
-ms.locfileid: "58780684"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59777147"
 ---
 # <a name="compiler-error-c2440"></a>Derleyici Hatası C2440
 
@@ -143,7 +143,7 @@ int main() {
 
 ## <a name="example"></a>Örnek
 
-C2440, kullanıcı tanımlı bir dönüştürmenin yanlış kullanımı için de oluşabilir. Örneğin, ne zaman bir dönüştürme operatörünün tanımlanmış olarak `explicit`, derleyici örtük bir dönüştürme kullanamazsınız. Kullanıcı tanımlı dönüştürmeler hakkında daha fazla bilgi için bkz. [kullanıcı tanımlı Dönüşümler (C + +/ CLI)](../../dotnet/user-defined-conversions-cpp-cli.md)). Bu örnek C2440 oluşturur:
+C2440, kullanıcı tanımlı bir dönüştürmenin yanlış kullanımı için de oluşabilir. Örneğin, ne zaman bir dönüştürme operatörünün tanımlanmış olarak `explicit`, derleyici örtük bir dönüştürme kullanamazsınız. Kullanıcı tanımlı dönüştürmeler hakkında daha fazla bilgi için bkz. [kullanıcı tanımlı Dönüşümler (C++/CLI)](../../dotnet/user-defined-conversions-cpp-cli.md)). Bu örnek C2440 oluşturur:
 
 ```cpp
 // C2440d.cpp
@@ -194,7 +194,7 @@ C2440 öznitelik özelliğinde yapılan değişiklikler nedeniyle de oluşabilir
 
 ## <a name="example"></a>Örnek
 
-Visual C++ derleyicisi artık sağlayan [const_cast işleci](../../cpp/const-cast-operator.md) alta dönüştürmesine için kullanan kaynak kodu **/CLR** programlama derlenmiştir.
+Görsel C++ derleyici artık sağlayan [const_cast işleci](../../cpp/const-cast-operator.md) alta dönüştürmesine için kullanan kaynak kodu **/CLR** programlama derlenmiştir.
 
 Bu c2440 hatasını düzeltmek için doğru atama işlecini kullanın. Daha fazla bilgi için [atama işleçleri](../../cpp/casting-operators.md).
 

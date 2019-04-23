@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3665
 ms.assetid: 893bb47e-8de1-43aa-af7d-fa47ad149ee9
 ms.openlocfilehash: 40de7a7b1ede5e6dbbc20d2128b782c0ad6f798b
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
-ms.locfileid: "58781035"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59778806"
 ---
 # <a name="compiler-error-c3665"></a>Derleyici Hatası C3665
 

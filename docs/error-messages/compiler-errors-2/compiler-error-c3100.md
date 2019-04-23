@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3100
 ms.assetid: 7a9c9eaf-08ef-442d-94a0-e457beee8549
 ms.openlocfilehash: 98fa90d184db596458ec7b943e3c35ddc5b7bce9
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58771610"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59777295"
 ---
 # <a name="compiler-error-c3100"></a>Derleyici Hatası C3100
 

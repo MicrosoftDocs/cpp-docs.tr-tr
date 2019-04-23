@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3096
 ms.assetid: 56353c9a-800c-474f-b428-3e5d2a7afc9a
 ms.openlocfilehash: 67de54eab963ec395a6fe08e22d06ae72aa06d94
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58774104"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59779368"
 ---
 # <a name="compiler-error-c3096"></a>Derleyici Hatası C3096
 

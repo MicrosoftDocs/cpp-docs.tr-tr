@@ -5,11 +5,11 @@ ms.technology: cpp-language
 author: mikeblome
 ms.author: mblome
 ms.openlocfilehash: e12504d4950c87042cbb030c6c683874f6ffc8b7
-ms.sourcegitcommit: b72a10a7b12e722fd91a17406b91b270026f763a
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/03/2019
-ms.locfileid: "58899248"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59779478"
 ---
 # <a name="c-conformance-improvements-in-visual-studio-2019"></a>Visual Studio 2019'deki C++ uyumluluk geliştirmeleri
 
@@ -333,4 +333,4 @@ int main()
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Visual Studio 2019’daki yenilikler](../what-s-new-for-visual-cpp-in-visual-studio.md)
+[Visual Studio 2019 yenilikler](../what-s-new-for-visual-cpp-in-visual-studio.md)

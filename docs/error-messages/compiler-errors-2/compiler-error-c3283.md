@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3283
 ms.assetid: c51d912c-cde3-4928-904e-26734c8954ce
 ms.openlocfilehash: 593b04b8593e261aa1980ada7693300b52a869c5
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
-ms.locfileid: "58779995"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59777412"
 ---
 # <a name="compiler-error-c3283"></a>Derleyici Hatası C3283
 

@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3391
 ms.assetid: c32532b9-7db4-4ccd-84b9-479e5a1a19d1
 ms.openlocfilehash: 32ba1ca63a3a6fafa3290946a976e6845385126f
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58772598"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59778295"
 ---
 # <a name="compiler-error-c3391"></a>Derleyici Hatası C3391
 

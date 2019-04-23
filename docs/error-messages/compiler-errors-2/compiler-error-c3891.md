@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3891
 ms.assetid: 6e1a9458-97f5-4580-bc0f-aa97a1bfd20d
 ms.openlocfilehash: 74b8802a165ab3265cc0f1c6a0b33b31d3db401d
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
-ms.locfileid: "58779917"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59779173"
 ---
 # <a name="compiler-error-c3891"></a>Derleyici Hatası C3891
 

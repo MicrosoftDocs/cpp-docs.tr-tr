@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3070
 ms.assetid: ac88584d-40a6-4176-90f3-2371c3c935f2
 ms.openlocfilehash: 3825e9e77564af9c40bc08aff560cdf533f2b5c0
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58769517"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59778429"
 ---
 # <a name="compiler-error-c3070"></a>Derleyici Hatası C3070
 

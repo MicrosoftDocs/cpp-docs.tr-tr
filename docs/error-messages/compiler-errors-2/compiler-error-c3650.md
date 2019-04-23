@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3650
 ms.assetid: ca4d8de4-b027-4d13-9b9f-03ca62905c33
 ms.openlocfilehash: 54543225144ed0187f6c1e68e7236d886c026860
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
-ms.locfileid: "58777122"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59779290"
 ---
 # <a name="compiler-error-c3650"></a>Derleyici Hatası C3650
 

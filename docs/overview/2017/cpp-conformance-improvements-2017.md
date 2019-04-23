@@ -6,11 +6,11 @@ ms.assetid: 8801dbdb-ca0b-491f-9e33-01618bff5ae9
 author: mikeblome
 ms.author: mblome
 ms.openlocfilehash: 6a0e296e4a5542c1aad848c55d35d3e40244478d
-ms.sourcegitcommit: b72a10a7b12e722fd91a17406b91b270026f763a
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/03/2019
-ms.locfileid: "58899266"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59779477"
 ---
 # <a name="c-conformance-improvements-in-visual-studio-2017-versions-150-153improvements153-155improvements155-156improvements156-157improvements157-158update158-159improvements159"></a>Visual Studio 2017 sürüm 15.0,'deki C++ uyumluluk geliştirmeleri [15.3](#improvements_153), [15.5](#improvements_155), [15.6](#improvements_156), [15.7](#improvements_157), [15,8](#update_158), [15.9](#improvements_159)
 
@@ -623,7 +623,7 @@ C++ standardına göre anonim bir ad alanı içinde bildirilmiş bir sınıfın 
 struct __declspec(dllexport) S1 { virtual void f() {} }; //C2201
 ```
 
-### <a name="default-initializers-for-value-class-members-ccli"></a>Varsayılan başlatıcılar değeri için sınıf üyeleri (C + +/ CLI)
+### <a name="default-initializers-for-value-class-members-ccli"></a>Varsayılan başlatıcılar değeri için sınıf üyeleri (C++/CLI)
 
 Visual Studio 2015 ve önceki sürümlerinde, derleyici izin verilir (ancak göz ardı) bir değer sınıfının üyesi için varsayılan üye başlatıcıya. Her zaman varsayılan bir değer sınıfının başlatma sıfır-üyeleri başlatır; Varsayılan bir oluşturucu izin verilmez. Visual Studio 2017'de, bu örnekte gösterildiği gibi varsayılan üye Başlatıcı bir derleyici hatası Yükselt:
 
@@ -635,7 +635,7 @@ value struct V
 };
 ```
 
-### <a name="default-indexers-ccli"></a>Varsayılan dizin oluşturucular (C + +/ CLI)
+### <a name="default-indexers-ccli"></a>Varsayılan dizin oluşturucular (C++/CLI)
 
 Visual Studio 2015 ve önceki sürümlerinde, bazı durumlarda, derleyici varsayılan bir özellik bir varsayılan dizin oluşturucu misidentified. Tanımlayıcısını kullanarak sorunu çözmek mümkün olan `default` özelliğine erişmek için. Çözüm sonra sorunlu hale geldi `default` C ++ 11'de bir anahtar olarak kullanıma sunulmuştur. Bu nedenle, Visual Studio 2017'de gerekli geçici hatalar düzeltilmiştir ve derleyici artık bir hata oluşturur, `default` bir sınıfının varsayılan özelliğine erişmek için kullanılır.
 
@@ -1766,7 +1766,7 @@ public:
 
 [offsetof](../../c-runtime-library/reference/offsetof-macro.md) gerektiren bir makro kullanarak geleneksel olarak uygulanmıştır bir [reinterpret_cast](../../cpp/reinterpret-cast-operator.md). Bu sabit ifade gerektiren bağlamlarda geçersiz, ancak Microsoft C++ derleyicisi, geleneksel olarak tanıdı. STL parçası doğru bir iç derleyici kullandığından, gönderildiğini offsetof makrosu (**__builtin_offsetof**), ancak çoğu kişi makrosu ux'in kendi tanımlamak için kullanılan **offsetof**.
 
-Visual Studio 2017 sürüm 15,8, derleyici bu reinterpret_casts kod için standart C++ davranış uymak yardımcı olmak için varsayılan modunda görünen alanları kısıtlar. Altında [/ permissive-](../../build/reference/permissive-standards-conformance.md), kısıtlamaları taşıyabilmek. Offsetof işleminin bir sonucu sabit ifadeler gerektiren farklı yerde kullanarak C4644 uyarı veren kodu neden olabilir *sabit ifadeler offsetof makrosu tabanlı desende kullanımını standart; kullanım offsetof C++ standardında tanımlanan Kitaplık yerine* veya C2975 *geçersiz şablon bağımsız değişkeni, beklenen derleme zamanı sabit ifadesi*.
+Visual Studio 2017 sürüm 15,8, derleyici bu reinterpret_casts standardına uygun kod yardımcı olmak için varsayılan modunda görüntülenen alanları kısıtlar C++ davranışı. Altında [/ permissive-](../../build/reference/permissive-standards-conformance.md), kısıtlamaları taşıyabilmek. Offsetof işleminin bir sonucu sabit ifadeler gerektiren farklı yerde kullanarak C4644 uyarı veren kodu neden olabilir *sabit ifadeler offsetof makrosu tabanlı desende kullanımını standart; kullanım offsetof C++ standardında tanımlanan Kitaplık yerine* veya C2975 *geçersiz şablon bağımsız değişkeni, beklenen derleme zamanı sabit ifadesi*.
 
 Aşağıdaki kod içinde C4644 başlatır **/varsayılan** ve **/Std: c ++ 17** modları ve içinde C2975 **/ permissive-** modu:
 
@@ -2039,4 +2039,4 @@ Visual Studio 2017 sürüm 15.9, bu hata kodu oluşturur: *hatası C3615: conste
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Visual C++ dil uyumluluğu](../visual-cpp-language-conformance.md)
+[Visual C++ Dil Uyumluluğu](../visual-cpp-language-conformance.md)

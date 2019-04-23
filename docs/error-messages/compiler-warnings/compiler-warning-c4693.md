@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C4693
 ms.assetid: 72d8db01-5e6f-4794-8731-76107e8f064a
 ms.openlocfilehash: cac5918eb4a1689fd215e07272958eeca48247ad
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
-ms.locfileid: "58781906"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59779446"
 ---
 # <a name="compiler-warning-c4693"></a>Derleyici Uyarısı C4693
 

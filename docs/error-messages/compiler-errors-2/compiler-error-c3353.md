@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3353
 ms.assetid: 5699c04b-d504-46ce-bf71-c200318fed71
 ms.openlocfilehash: c38642d7abd4f2fd50792c548c9a5521b2da10ad
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
-ms.locfileid: "58776147"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59777594"
 ---
 # <a name="compiler-error-c3353"></a>Derleyici Hatası C3353
 

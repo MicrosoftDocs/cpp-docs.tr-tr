@@ -6,16 +6,16 @@ f1_keywords:
 - math/isnormal
 helpviewer_keywords:
 - isnormal function
-ms.openlocfilehash: 93e3b8912ddf20bf8e190bb42e8413e6d909bbcc
-ms.sourcegitcommit: e98671a4f741b69d6277da02e6b4c9b1fd3c0ae5
+ms.openlocfilehash: e426fbce71efff1e810a03b8347e7c48aa0d91d2
+ms.sourcegitcommit: 14b292596bc9b9b883a9c58cd3e366b282a1f7b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/04/2019
-ms.locfileid: "55703376"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60124687"
 ---
 # <a name="isnormal"></a>isnormal
 
-Bir kayan nokta değeri bir sonsuzluk olup olmadığını belirler.
+Bir kayan nokta değeri normal bir değer olup olmadığını belirler.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -27,7 +27,7 @@ int isnormal(
 template <class FloatingType>
 inline bool isnormal(
    FloatingType x
-) throw(); /* C++-only template function */
+) throw(); /* C++-only function template */
 ```
 
 ### <a name="parameters"></a>Parametreler
@@ -37,11 +37,11 @@ Test etmek için kayan nokta değeri.
 
 ## <a name="return-value"></a>Dönüş değeri
 
-**isnormal** sıfır dışında bir değeri döndürür (**true** C++ kodunda), bağımsız değişken *x* sınırlı ve subnormal değil. **isnormal** 0 döndürür (**false** C++ kodunda) bağımsız değişken bir subnormal, sonsuzluk veya bir NAN ise.
+**isnormal** sıfır dışında bir değeri döndürür (**true** içinde C++ kodu), bağımsız değişken *x* ne sıfır, subnormal, sonsuz veya NaN bir değil. Aksi takdirde, **isnormal** 0 döndürür (**false** içinde C++ kod).
 
 ## <a name="remarks"></a>Açıklamalar
 
-**isnormal** C ve C++ derlendiğinde bir satır içi şablon işlevi olarak derlendiğinde bir makro.
+**isnormal** C ve olarak derlendiğinde bir satır içi işlev şablonu olarak derlendiğinde bir makro C++.
 
 ## <a name="requirements"></a>Gereksinimler
 

@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C4570
 ms.assetid: feec1225-e6ad-4995-8d96-c22e864a77bd
 ms.openlocfilehash: 386d7c210c77469d67a75d66f7d8ae35c105b3b0
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58767468"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59777919"
 ---
 # <a name="compiler-warning-level-3-c4570"></a>Derleyici Uyarısı (Düzey 3) C4570
 

@@ -1,6 +1,6 @@
 ---
-title: OpenMP işlevleri
-ms.date: 10/23/2018
+title: OpenMP İşlevleri
+ms.date: 03/20/2019
 f1_keywords:
 - OpenMP functions
 - omp_destroy_lock
@@ -50,43 +50,60 @@ helpviewer_keywords:
 - omp_unset_lock OpenMP function
 - omp_unset_nest_lock OpenMP function
 ms.assetid: a55a2e5c-a260-44ee-bbd6-de7e2351b384
-ms.openlocfilehash: 0435d75b69ea870db50739933245925d6860cbf9
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.openlocfilehash: 1bf0e08f3b28368d9aea5438b3036ac8a0283735
+ms.sourcegitcommit: 14b292596bc9b9b883a9c58cd3e366b282a1f7b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51333292"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60124986"
 ---
-# <a name="openmp-functions"></a>OpenMP işlevleri
+# <a name="openmp-functions"></a>OpenMP İşlevleri
 
 OpenMP API çağrısında kullanılan işlevlere bağlantılar sağlar.
 
-Standart OpenMP Visual C++ uygulaması, aşağıdaki işlevleri içerir.
+Görsel C++ OpenMP standart uygulaması aşağıdaki işlevleri ve veri türlerini içerir.
+
+Ortam yürütme için:
 
 |İşlev|Açıklama|
 |--------|-----------|
-|[omp_destroy_lock](#omp-destroy-lock)|Kilit başlamasını iptal eder.|
-|[omp_destroy_nest_lock](#omp-destroy-nest-lock)|Nestable kilit başlamasını iptal eder.|
-|[omp_get_dynamic](#omp-get-dynamic)|Çalışma zamanı tarafından ayarlanabilir yaklaşan paralel bölgelerinde kullanılabilir iş parçacığı sayısını gösteren bir değer döndürür.|
-|[omp_get_max_threads](#omp-get-max-threads)|Bir paralel bölgenin olmadan, kullanılabilir hale gelir, iş parçacığı sayısından büyük veya ona eşit bir tamsayı döndürür [num_threads](openmp-clauses.md#num-threads) o noktada kod tanımlanmadı.|
-|[omp_get_nested](#omp-get-nested)|İç içe geçmiş paralellik etkin olup olmadığını gösteren bir değer döndürür.|
-|[omp_get_num_procs](#omp-get-num-procs)|İşlev çağrıldığında, kullanılabilir işlemci sayısını döndürür.|
+|[omp_set_num_threads](#omp-set-num-threads)|İş parçacığı sayısını yaklaşan paralel bölgelerde tarafından geçersiz kılınmadığı sürece ayarlar bir [num_threads](openmp-clauses.md#num-threads) yan tümcesi.|
 |[omp_get_num_threads](#omp-get-num-threads)|Paralel bölgenin içinde iş parçacıklarının sayısını döndürür.|
+|[omp_get_max_threads](#omp-get-max-threads)|Bir paralel bölgenin olmadan, kullanılabilir hale gelir, iş parçacığı sayısından büyük veya ona eşit bir tamsayı döndürür [num_threads](openmp-clauses.md#num-threads) o noktada kod tanımlanmadı.|
 |[omp_get_thread_num](#omp-get-thread-num)|Kendi iş parçacığı takım içinde iş parçacığının iş parçacığı sayısını döndürür.|
-|[omp_get_wtick](#omp-get-wtick)|İşlemci saatin tik takları saniye sayısını döndürür.|
-|[omp_get_wtime](#omp-get-wtime)|Belirli bir noktada bir değer süresini saniye cinsinden geçen döndürür.|
+|[omp_get_num_procs](#omp-get-num-procs)|İşlev çağrıldığında, kullanılabilir işlemci sayısını döndürür.|
 |[omp_in_parallel](#omp-in-parallel)|Bir paralel bölgenin içinde çağrılırsa sıfır döndürür.|
+|[omp_set_dynamic](#omp-set-dynamic)|Çalışma zamanı tarafından düzenlenip düzenlenmediğini yaklaşan paralel bölgelerinde kullanılabilir iş parçacığı sayısını gösterir.|
+|[omp_get_dynamic](#omp-get-dynamic)|Çalışma zamanı tarafından ayarlanabilir yaklaşan paralel bölgelerinde kullanılabilir iş parçacığı sayısını gösteren bir değer döndürür.|
+|[omp_set_nested](#omp-set-nested)|İç içe geçmiş paralellik etkinleştirir.|
+|[omp_get_nested](#omp-get-nested)|İç içe geçmiş paralellik etkin olup olmadığını gösteren bir değer döndürür.|
+
+Kilit için:
+
+|İşlev|Açıklama|
+|--------|-----------|
 |[omp_init_lock](#omp-init-lock)|Basit bir kilit başlatır.|
 |[omp_init_nest_lock](#omp-init-nest-lock)|Kilit başlatır.|
-|[omp_set_dynamic](#omp-set-dynamic)|Çalışma zamanı tarafından düzenlenip düzenlenmediğini yaklaşan paralel bölgelerinde kullanılabilir iş parçacığı sayısını gösterir.|
+|[omp_destroy_lock](#omp-destroy-lock)|Kilit başlamasını iptal eder.|
+|[omp_destroy_nest_lock](#omp-destroy-nest-lock)|Nestable kilit başlamasını iptal eder.|
 |[omp_set_lock](#omp-set-lock)|Kilit kullanılabilir oluncaya kadar blokları yürütme iş parçacığı.|
 |[omp_set_nest_lock](#omp-set-nest-lock)|Kilit kullanılabilir oluncaya kadar blokları yürütme iş parçacığı.|
-|[omp_set_nested](#omp-set-nested)|İç içe geçmiş paralellik etkinleştirir.|
-|[omp_set_num_threads](#omp-set-num-threads)|İş parçacığı sayısını yaklaşan paralel bölgelerde tarafından geçersiz kılınmadığı sürece ayarlar bir [num_threads](openmp-clauses.md#num-threads) yan tümcesi.|
-|[omp_test_lock](#omp-test-lock)|Kilit ayarlamaya çalışır, ancak yürütme iş parçacığını engellemez.|
-|[omp_test_nest_lock](#omp-test-nest-lock)|Nestable kilit ayarlamaya çalışır, ancak yürütme iş parçacığını engellemez.|
 |[omp_unset_lock](#omp-unset-lock)|Bir kilidi serbest bırakır.|
 |[omp_unset_nest_lock](#omp-unset-nest-lock)|Nestable kilit serbest bırakır.|
+|[omp_test_lock](#omp-test-lock)|Kilit ayarlamaya çalışır, ancak yürütme iş parçacığını engellemez.|
+|[omp_test_nest_lock](#omp-test-nest-lock)|Nestable kilit ayarlamaya çalışır, ancak yürütme iş parçacığını engellemez.|
+
+|Veri türü|Açıklama|
+|---------|-----------|
+|`omp_lock_t`|Bir kilit, kilit olup veya bir iş parçacığının bir kilidi sahibi, durumu tutan bir türü.|
+|`omp_nest_lock_t`|Bir kilitleme hakkında bilgi aşağıdaki parçalarını birini tutan bir türü: kilit kullanılabilir ve iş parçacığı kimliğine sahip olan kilidi ve iç içe geçme sayı olup olmadığını.|
+
+Zamanlama rutinleri için:
+
+|İşlev|Açıklama|
+|--------|-----------|
+|[omp_get_wtime](#omp-get-wtime)|Belirli bir noktada bir değer süresini saniye cinsinden geçen döndürür.|
+|[omp_get_wtick](#omp-get-wtick)|İşlemci saatin tik takları saniye sayısını döndürür.|
 
 ## <a name="omp-destroy-lock"></a>omp_destroy_lock
 
@@ -101,7 +118,7 @@ void omp_destroy_lock(
 ### <a name="parameters"></a>Parametreler
 
 *lock*<br/>
-Türünde bir değişken [omp_lock_t](openmp-data-types.md#omp-lock-t) , başlatılan ile [omp_init_lock](#omp-init-lock).
+Türünde bir değişken `omp_lock_t` , başlatılan ile [omp_init_lock](#omp-init-lock).
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -124,7 +141,7 @@ void omp_destroy_nest_lock(
 ### <a name="parameters"></a>Parametreler
 
 *lock*<br/>
-Türünde bir değişken [omp_nest_lock_t](openmp-data-types.md#omp-nest-lock-t) , başlatılan ile [omp_init_nest_lock](#omp-init-nest-lock).
+Türünde bir değişken `omp_nest_lock_t` , başlatılan ile [omp_init_nest_lock](#omp-init-nest-lock).
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -170,7 +187,7 @@ Daha fazla bilgi için [3.1.3 omp_get_max_threads işlevi](../../../parallel/ope
 
 ### <a name="example"></a>Örnek
 
-```
+```cpp
 // omp_get_max_threads.cpp
 // compile with: /openmp
 #include <stdio.h>
@@ -242,7 +259,7 @@ Daha fazla bilgi için [3.1.5 omp_get_num_procs işlevi](../../../parallel/openm
 
 ### <a name="example"></a>Örnek
 
-```
+```cpp
 // omp_get_num_procs.cpp
 // compile with: /openmp
 #include <stdio.h>
@@ -279,7 +296,7 @@ Daha fazla bilgi için [3.1.2 omp_get_num_threads işlevi](../../../parallel/ope
 
 ### <a name="example"></a>Örnek
 
-```
+```cpp
 // omp_get_num_threads.cpp
 // compile with: /openmp
 #include <stdio.h>
@@ -367,7 +384,7 @@ Daha fazla bilgi için [3.3.1 omp_get_wtime işlevi](../../../parallel/openmp/3-
 
 ### <a name="example"></a>Örnek
 
-```
+```cpp
 // omp_get_wtime.cpp
 // compile with: /openmp
 #include "omp.h"
@@ -410,7 +427,7 @@ Daha fazla bilgi için [3.1.6 omp_in_parallel işlevi](../../../parallel/openmp/
 
 ### <a name="example"></a>Örnek
 
-```
+```cpp
 // omp_in_parallel.cpp
 // compile with: /openmp
 #include <stdio.h>
@@ -447,7 +464,7 @@ void omp_init_lock(
 ### <a name="parameters"></a>Parametreler
 
 *lock*<br/>
-Türünde bir değişken [omp_lock_t](openmp-data-types.md#omp-lock-t).
+Türünde bir değişken `omp_lock_t`.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -455,7 +472,7 @@ Daha fazla bilgi için [3.2.1 omp_init_lock ve omp_init_nest_lock işlevleri](..
 
 ### <a name="example"></a>Örnek
 
-```
+```cpp
 // omp_init_lock.cpp
 // compile with: /openmp
 #include <stdio.h>
@@ -539,7 +556,7 @@ void omp_init_nest_lock(
 ### <a name="parameters"></a>Parametreler
 
 *lock*<br/>
-Türünde bir değişken [omp_nest_lock_t](openmp-data-types.md#omp-nest-lock-t).
+Türünde bir değişken `omp_nest_lock_t`.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -549,7 +566,7 @@ Daha fazla bilgi için [3.2.1 omp_init_lock ve omp_init_nest_lock işlevleri](..
 
 ### <a name="example"></a>Örnek
 
-```
+```cpp
 // omp_init_nest_lock.cpp
 // compile with: /openmp
 #include <stdio.h>
@@ -624,7 +641,7 @@ void omp_set_dynamic(
 ### <a name="parameters"></a>Parametreler
 
 *VAL*<br/>
-Çalışma zamanı tarafından ayarlanabilir yaklaşan paralel bölgelerinde kullanılabilir iş parçacığı sayısını belirten bir değer.  Sıfır olmayan, çalışma zamanı iş parçacığı sayısı sıfır ise ayarlayabilirsiniz, çalışma zamanı iş parçacığı sayısını dinamik olarak ayarlamak olmaz.
+Çalışma zamanı tarafından ayarlanabilir yaklaşan paralel bölgelerinde kullanılabilir iş parçacığı sayısını belirten bir değer. Sıfır olmayan, çalışma zamanı iş parçacığı sayısı sıfır ise ayarlayabilirsiniz, çalışma zamanı iş parçacığı sayısını dinamik olarak ayarlamak olmaz.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -638,7 +655,7 @@ Daha fazla bilgi için [3.1.7 omp_set_dynamic işlevi](../../../parallel/openmp/
 
 ### <a name="example"></a>Örnek
 
-```
+```cpp
 // omp_set_dynamic.cpp
 // compile with: /openmp
 #include <stdio.h>
@@ -675,7 +692,7 @@ void omp_set_lock(
 ### <a name="parameters"></a>Parametreler
 
 *lock*<br/>
-Türünde bir değişken [omp_lock_t](openmp-data-types.md#omp-lock-t) , başlatılan ile [omp_init_lock](#omp-init-lock).
+Türünde bir değişken `omp_lock_t` , başlatılan ile [omp_init_lock](#omp-init-lock).
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -698,7 +715,7 @@ void omp_set_nest_lock(
 ### <a name="parameters"></a>Parametreler
 
 *lock*<br/>
-Türünde bir değişken [omp_nest_lock_t](openmp-data-types.md#omp-nest-lock-t) , başlatılan ile [omp_init_nest_lock](#omp-init-nest-lock).
+Türünde bir değişken `omp_nest_lock_t` , başlatılan ile [omp_init_nest_lock](#omp-init-nest-lock).
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -729,7 +746,7 @@ Sıfır dışında bir değeri sıfır iç içe geçmiş paralellik devre dış�
 
 Ayarı `omp_set_nested` ayarını geçersiz kılar `OMP_NESTED` ortam değişkeni.
 
-Ortam değişkenini etkinleştirme paralel bölgeleri iç içe olduğunda iş parçacığı sayısı katlanarak artar çünkü aksi işletimsel bir programı bozabilir.  Örneğin, 4'e ayarlayın OMP iş parçacığı sayısı ile altı kat recurses bir işlev 4.096 (6'ın gücünü 4) gerektiren iş parçacıkları. İşlemci değerinden daha fazla iş parçacığı varsa dışında miyim/O-bağlı uygulamalar ile uygulama performansını genellikle düşürür.
+Ortam değişkenini etkinleştirme paralel bölgeleri iç içe olduğunda iş parçacığı sayısı katlanarak artar çünkü aksi işletimsel bir programı bozabilir. Örneğin, 4'e ayarlayın OMP iş parçacığı sayısı ile altı kat recurses bir işlev 4.096 (6'ın gücünü 4) gerektiren iş parçacıkları. İşlemci değerinden daha fazla iş parçacığı varsa dışında miyim/O-bağlı uygulamalar ile uygulama performansını genellikle düşürür.
 
 Kullanım [omp_get_nested](#omp-get-nested) geçerli ayarını görüntülemek için `omp_set_nested`.
 
@@ -737,7 +754,7 @@ Daha fazla bilgi için [3.1.9 omp_set_nested işlevi](../../../parallel/openmp/3
 
 ### <a name="example"></a>Örnek
 
-```
+```cpp
 // omp_set_nested.cpp
 // compile with: /openmp
 #include <stdio.h>
@@ -797,7 +814,7 @@ int omp_test_lock(
 ### <a name="parameters"></a>Parametreler
 
 *lock*<br/>
-Türünde bir değişken [omp_lock_t](openmp-data-types.md#omp-lock-t) , başlatılan ile [omp_init_lock](#omp-init-lock).
+Türünde bir değişken `omp_lock_t` , başlatılan ile [omp_init_lock](#omp-init-lock).
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -805,7 +822,7 @@ Daha fazla bilgi için [3.2.5 omp_test_lock ve omp_test_nest_lock işlevleri](..
 
 ### <a name="example"></a>Örnek
 
-```
+```cpp
 // omp_test_lock.cpp
 // compile with: /openmp
 #include <stdio.h>
@@ -870,7 +887,7 @@ int omp_test_nest_lock(
 ### <a name="parameters"></a>Parametreler
 
 *lock*<br/>
-Türünde bir değişken [omp_nest_lock_t](openmp-data-types.md#omp-nest-lock-t) , başlatılan ile [omp_init_nest_lock](#omp-init-nest-lock).
+Türünde bir değişken `omp_nest_lock_t` , başlatılan ile [omp_init_nest_lock](#omp-init-nest-lock).
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -878,7 +895,7 @@ Daha fazla bilgi için [3.2.5 omp_test_lock ve omp_test_nest_lock işlevleri](..
 
 ### <a name="example"></a>Örnek
 
-```
+```cpp
 // omp_test_nest_lock.cpp
 // compile with: /openmp
 #include <stdio.h>
@@ -961,7 +978,7 @@ void omp_unset_lock(
 ### <a name="parameters"></a>Parametreler
 
 *lock*<br/>
-Türünde bir değişken [omp_lock_t](openmp-data-types.md#omp-lock-t) , başlatılan ile [omp_init_lock](#omp-init-lock), iş parçacığı tarafından sahip olunan ve işlev yürütme.
+Türünde bir değişken `omp_lock_t` , başlatılan ile [omp_init_lock](#omp-init-lock), iş parçacığı tarafından sahip olunan ve işlev yürütme.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -984,7 +1001,7 @@ void omp_unset_nest_lock(
 ### <a name="parameters"></a>Parametreler
 
 *lock*<br/>
-Türünde bir değişken [omp_nest_lock_t](openmp-data-types.md#omp-nest-lock-t) , başlatılan ile [omp_init_nest_lock](#omp-init-nest-lock), iş parçacığı tarafından sahip olunan ve işlev yürütme.
+Türünde bir değişken `omp_nest_lock_t` , başlatılan ile [omp_init_nest_lock](#omp-init-nest-lock), iş parçacığı tarafından sahip olunan ve işlev yürütme.
 
 ### <a name="remarks"></a>Açıklamalar
 

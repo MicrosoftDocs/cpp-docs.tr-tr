@@ -2,11 +2,11 @@
 title: C++ uyumluluk geliştirmeleri
 moniker-range: '>=vs-2015'
 ms.openlocfilehash: 0c9ac441c79032a33d938bdaae5287c69cc3353a
-ms.sourcegitcommit: b72a10a7b12e722fd91a17406b91b270026f763a
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/03/2019
-ms.locfileid: "58899227"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59779095"
 ---
 ::: moniker range=">=vs-2019"
 

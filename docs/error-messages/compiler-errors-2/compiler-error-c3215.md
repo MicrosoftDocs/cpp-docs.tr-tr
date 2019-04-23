@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3215
 ms.assetid: d0d16007-8885-42e0-b086-2d3a61f348c5
 ms.openlocfilehash: 24f17d2990c9258168a6d37fef101c21f62cb08d
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58768659"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59778728"
 ---
 # <a name="compiler-error-c3215"></a>Derleyici Hatası C3215
 

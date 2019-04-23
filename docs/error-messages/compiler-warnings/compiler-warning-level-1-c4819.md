@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C4819
 ms.assetid: c0316e85-249c-414d-9df0-622d077c6bc2
 ms.openlocfilehash: d43b49d473e7113d8cdfb89aaa6e93045e13d0f7
-ms.sourcegitcommit: 39debf8c525c3951af6913ee5e514617658f8859
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59424228"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59777850"
 ---
 # <a name="compiler-warning-level-1-c4819"></a>Derleyici Uyarısı (düzey 1) C4819
 

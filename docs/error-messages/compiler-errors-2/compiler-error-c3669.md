@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3669
 ms.assetid: be9c7ae4-e96f-47ab-922a-39a3537d5ca6
 ms.openlocfilehash: 3b0ad3aa7395f5f423c8c36f547d4a0e2ad792c1
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
-ms.locfileid: "58777109"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59779066"
 ---
 # <a name="compiler-error-c3669"></a>Derleyici Hatası C3669
 

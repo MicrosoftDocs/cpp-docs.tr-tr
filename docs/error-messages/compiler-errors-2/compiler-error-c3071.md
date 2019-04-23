@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3071
 ms.assetid: 69879e66-a60e-4058-9bbd-d5c5e2d8ee37
 ms.openlocfilehash: 1debe431711681a98b9472c85864d84373ec42d6
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58776004"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59778923"
 ---
 # <a name="compiler-error-c3071"></a>Derleyici Hatası C3071
 

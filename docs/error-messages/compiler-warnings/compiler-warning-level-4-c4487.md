@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C4487
 ms.assetid: 796144cf-cd3c-4edc-b6a4-96192b7eb4f0
 ms.openlocfilehash: 231482547856fc07d43ecfb859b31c2ece49fc5e
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
-ms.locfileid: "58776498"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59778010"
 ---
 # <a name="compiler-warning-level-4-c4487"></a>Derleyici Uyarısı (düzey 4) C4487
 

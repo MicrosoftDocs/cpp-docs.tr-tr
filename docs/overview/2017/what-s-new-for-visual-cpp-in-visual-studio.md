@@ -6,11 +6,11 @@ ms.assetid: 8801dbdb-ca0b-491f-9e33-01618bff5ae9
 author: mikeblome
 ms.author: mblome
 ms.openlocfilehash: e74f8270d241b9725a24ee257fb846a7cc4e079e
-ms.sourcegitcommit: b72a10a7b12e722fd91a17406b91b270026f763a
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/03/2019
-ms.locfileid: "58899269"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59779504"
 ---
 # <a name="whats-new-for-c-in-visual-studio-2017"></a>Visual Studio 2017'de C++ için Yenilikler
 
@@ -71,7 +71,7 @@ Microsoft C++ derleyicisi, Intel AVX-512 AVX-512 ile birlikte 128 ve 256 bit gen
 
 - Yeni derleyici anahtarı [/qspectre ](../../build/reference/qspectre.md) kurgusal yürütme yan kanal saldırıları önlemeye yardımcı olmak için. Bkz: [Spectre azaltmaları MSVC içinde](https://blogs.msdn.microsoft.com/vcblog/2018/01/15/spectre-mitigations-in-msvc/) daha fazla bilgi için.
 - Spectre risk azaltma için yeni tanılama uyarı. Bkz: [Spectre Visual Studio 2017 sürüm 15.7 Önizleme 4'te tanılama](https://blogs.msdn.microsoft.com/vcblog/2018/04/20/spectre-diagnostic-in-visual-studio-2017-version-15-7-preview-4/) daha fazla bilgi için.
-- /Zc için yeni bir değer **/ZC: __cplusplus**, etkinleştirir C++ Standart Destek Raporlama düzeltin. Örneğin, ne zaman geçiş ayarlanmışsa ve derleyici/Std: c ++ 17 modunda değeri genişletilir **201703 L**. Bkz: [MSVC artık __cplusplus doğru şekilde rapor](https://blogs.msdn.microsoft.com/vcblog/2018/04/09/msvc-now-correctly-reports-__cplusplus/) daha fazla bilgi için.
+- /Zc için yeni bir değer **/ZC: __cplusplus**, etkinleştirir düzeltin, Raporlama C++ standart destek. Örneğin, ne zaman geçiş ayarlanmışsa ve derleyici/Std: c ++ 17 modunda değeri genişletilir **201703 L**. Bkz: [MSVC artık __cplusplus doğru şekilde rapor](https://blogs.msdn.microsoft.com/vcblog/2018/04/09/msvc-now-correctly-reports-__cplusplus/) daha fazla bilgi için.
 
 ## <a name="c-standard-library-improvements"></a>C++ Standart Kitaplığı geliştirmeleri
 
@@ -392,9 +392,9 @@ C++, Evrensel Windows Uygulaması iş yükü için isteğe bağlı bir bileşen 
 
 **Visual Studio 2017 sürüm 15.5**: A **Windows uygulaması paketleme projesi** proje şablonu, büyük ölçüde basitleştirir, Masaüstü Köprüsü'nü kullanarak ile Masaüstü uygulamaları paketleme işi eklenir. Altında kullanılabilir **dosya | Yeni | Proje | Yüklü | Visual C++ | Evrensel Windows platformu**. Daha fazla bilgi için [Visual Studio (Masaüstü köprüsü) kullanarak bir uygulama paketini](/windows/uwp/porting/desktop-to-uwp-packaging-dot-net).
 
-Yeni kod yazarken artık C + kullanabilirsiniz +/ WinRT, standart bir C++ dil projeksiyonu yalnızca üstbilgi dosyalarında uygulanan Windows çalışma zamanı. Her iki Yazar sağlar ve Windows çalışma zamanı API'leri kullanarak standartlara uygun herhangi bir C++ derleyicisi. C + +/ WinRT, C++ geliştiricileri için modern Windows API ile birinci sınıf erişim sağlamak için tasarlanmıştır. Daha fazla bilgi için [C + +/ WinRT github'da kullanılabilir](https://moderncpp.com/).
+Yeni kod yazarken artık C + kullanabilirsiniz +/ WinRT, standart bir C++ dil projeksiyonu yalnızca üstbilgi dosyalarında uygulanan Windows çalışma zamanı. Her iki Yazar sağlar ve Windows çalışma zamanı API'leri kullanarak standartlara uygun herhangi bir C++ derleyicisi. C++/ WinRT sağlamak için tasarlanmıştır C++ birinci sınıf erişim modern Windows API ile geliştiriciler. Daha fazla bilgi için [ C++WinRT github'da kullanılabilir](https://moderncpp.com/).
 
-Sürümünden başlayarak Windows SDK'sı Insider Önizleme, C + 17025 derleme +/ WinRT Windows SDK içinde dahil edilmiştir. Daha fazla bilgi için [C + +/ WinRT, artık Windows SDK'da](https://blogs.msdn.microsoft.com/vcblog/2017/11/01/cppwinrt-is-now-included-the-windows-sdk/).
+Sürümünden başlayarak Windows SDK'sı Insider Önizleme, C + 17025 derleme +/ WinRT Windows SDK içinde dahil edilmiştir. Daha fazla bilgi için [ C++/WinRT, artık Windows SDK'da](https://blogs.msdn.microsoft.com/vcblog/2017/11/01/cppwinrt-is-now-included-the-windows-sdk/).
 
 ## <a name="clangc2-platform-toolset"></a>Clang/C2 platform araç takımı
 

@@ -12,12 +12,12 @@ helpviewer_keywords:
 - builds [C++], options
 - Visual C++, build options
 ms.assetid: fa6ed4ff-334a-4d99-b5e2-a1f83d2b3008
-ms.openlocfilehash: 6a4048d741cf291d8d6173c1444b6933523c6851
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.openlocfilehash: 73797f3817338c48e8ff11eaaadff71263374fd0
+ms.sourcegitcommit: 14b292596bc9b9b883a9c58cd3e366b282a1f7b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58775432"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60124765"
 ---
 # <a name="cc-projects-and-build-systems-in-visual-studio"></a>C/C++ projeleri ve Visual Studio'da derleme sistemleri
 
@@ -35,7 +35,7 @@ Temel C++ derleme üç ana adımdan oluşur:
 
 ## <a name="the-msvc-toolset"></a>MSVC araç takımı
 
-Microsoft C++ Derleyici, bağlayıcı, standart kitaplıkları ve ilgili hizmet programları (bir araç zincirinizi veya "derleme Araçları" olarak da bilinir) MSCV derleyici araç takımı oluşturur. Bu, Visual Studio'da dahil edilir. Ayrıca indirin ve araç takımı tek başına paket olarak ücretsiz kullanmak [Visual Studio 2017 için derleme araçları indirme konumu](https://visualstudio.microsoft.com/downloads/#build-tools-for-visual-studio-2017).
+Microsoft C++ derleyici, bağlayıcı, standart kitaplıkları ve ilgili yardımcı programlarını oluşturan (bir araç zincirinizi veya "derleme Araçları" olarak da bilinir) MSVC derleyici araç takımı. Bu, Visual Studio'da dahil edilir. Ayrıca indirin ve araç takımı tek başına paket olarak ücretsiz kullanmak [Visual Studio 2017 için derleme araçları indirme konumu](https://visualstudio.microsoft.com/downloads/#build-tools-for-visual-studio-2017).
 
 MSVC derleyicisi (cl.exe) doğrudan komut satırından çağırarak basit programlar oluşturabilirsiniz. Aşağıdaki komut, bir tek bir kaynak kodu dosyasını kabul eder ve adlı yürütülebilir bir dosya oluşturmak için cl.exe çağırır *hello.exe*: 
 

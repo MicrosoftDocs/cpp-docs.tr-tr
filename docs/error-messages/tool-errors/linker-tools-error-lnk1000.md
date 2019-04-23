@@ -7,11 +7,11 @@ helpviewer_keywords:
 - LNK1000
 ms.assetid: 86421b9a-460a-4285-8dce-9b8257d78122
 ms.openlocfilehash: b0e6eb3ba44216e9300506eb84adb61a6529903d
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
-ms.locfileid: "58781503"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59778325"
 ---
 # <a name="linker-tools-error-lnk1000"></a>Bağlayıcı Araçları Hatası LNK1000
 

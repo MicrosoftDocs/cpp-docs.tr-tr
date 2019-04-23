@@ -5,11 +5,11 @@ helpviewer_keywords:
 - partial specialization of class templates
 ms.assetid: f3c67c0b-3875-434a-b8d8-bb47e99cf4f0
 ms.openlocfilehash: 96f755b20e1de21eae47c4de0a181aa5d0738bf2
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
-ms.locfileid: "59038974"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59779092"
 ---
 # <a name="template-specialization-c"></a>Şablon uzmanlığı (C++)
 

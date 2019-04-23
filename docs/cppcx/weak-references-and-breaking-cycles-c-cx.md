@@ -1,15 +1,15 @@
 ---
-title: Zayıf başvurular ve döngüleri kesme (C + +/ CX)
+title: Zayıf başvurular ve döngüleri kesme (C++/CX)
 ms.date: 01/22/2017
 ms.assetid: 1acb6402-05f0-4951-af94-0e9dab41c53e
 ms.openlocfilehash: 19252b8684eade131394e98dc705f2f1d451f0cf
-ms.sourcegitcommit: 35c4b3478f8cc310ebbd932a18963ad8ab846ed9
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "59237113"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59778663"
 ---
-# <a name="weak-references-and-breaking-cycles-ccx"></a>Zayıf başvurular ve döngüleri kesme (C + +/ CX)
+# <a name="weak-references-and-breaking-cycles-ccx"></a>Zayıf başvurular ve döngüleri kesme (C++/CX)
 
 Başvuru türleri için başvuru sayımı alan hiçbir tür sistemindeki kurabilir *döngüleri*— diğer bir deyişle, bir nesne, ikinci bir nesneye başvurur, ikinci nesne bazı son nesnenin geri başvurduğu kadar üçüncü vb. nesnesini ifade eder. ilk nesne. Bir nesnenin başvuru sayısının sıfır olduğunda bir döngüsünde doğru nesneler silinemiyor. Bu sorun, C + gidermenize yardımcı olacak +/ CX sağlar [Platform::WeakReference sınıfı](../cppcx/platform-weakreference-class.md) sınıfı. A `WeakReference` nesnesi [çözmek](../cppcx/platform-weakreference-class.md#resolve) nesnesi artık yok veya oluşturur, null döndüren yöntemi bir [Platform::InvalidCastException](../cppcx/platform-invalidcastexception-class.md) nesne, Canlı ancak türündedeğil`T`.
 

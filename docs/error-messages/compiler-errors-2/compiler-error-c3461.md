@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3461
 ms.assetid: bd66833a-545d-445a-bdfe-dee771a450a4
 ms.openlocfilehash: a674ce7819c88dd4e26355c0129a6c181da5c276
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58781958"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59779027"
 ---
 # <a name="compiler-error-c3461"></a>Derleyici Hatası C3461
 
@@ -19,7 +19,7 @@ ms.locfileid: "58781958"
 
 Tür iletme yalnızca CLR türleri üzerinde oluşabilir.  Bkz: [sınıfları ve yapıları](../../extensions/classes-and-structs-cpp-component-extensions.md) daha fazla bilgi için.
 
-Daha fazla bilgi için [tür iletme (C + +/ CLI)](../../extensions/type-forwarding-cpp-cli.md).
+Daha fazla bilgi için [tür iletme (C++/CLI)](../../extensions/type-forwarding-cpp-cli.md).
 
 ## <a name="example"></a>Örnek
 

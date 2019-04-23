@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3654
 ms.assetid: 57d96e3f-6bbb-4eaa-934b-26c23b4ceb2e
 ms.openlocfilehash: e66f0071a3d086c84a51c8b69e52b06643344c4d
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
-ms.locfileid: "58779501"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59777646"
 ---
 # <a name="compiler-error-c3654"></a>Derleyici Hatası C3654
 

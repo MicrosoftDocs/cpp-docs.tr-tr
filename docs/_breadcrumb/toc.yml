@@ -1,133 +1,126 @@
-items:
 - name: Docs
   tocHref: /
   topicHref: /
   items:
-  - name: Visual C++
-    tocHref: /cpp/
-    topicHref: /cpp
-    items:
-    - name: Belgeler
+    - name: Visual C++
       tocHref: /cpp/
-      topicHref: /cpp/overview/visual-cpp-in-visual-studio
+      topicHref: /cpp
       items:
-      - name: C++ Dili
-        tocHref: /cpp/cpp/
-        topicHref: /cpp/cpp/cpp-language-reference
-      - name: C Dili
-        tocHref: /cpp/c-language/
-        topicHref: /cpp/c-language/c-language-reference
-      - name: C/C++ Ön İşlemcisi
-        tocHref: /cpp/preprocessor/
-        topicHref: /cpp/c-cpp-preprocessor-reference
-      - name: Derleyici İç Bilgileri ve Derleme Dili
-        tocHref: /cpp/intrinsics/
-        topicHref: /cpp/intrinsics/compiler-intrinsics-and-assembly-language
-        items:
-        - name: ARM
-          tocHref: /cpp/assembler/arm/
-          topicHref: /cpp/assembler/arm/arm-assembler-reference
-        - name: Satır içi assembler
-          tocHref: /cpp/assembler/inline/
-          topicHref: /cpp/assembler/inline-assembler
-        - name: MASM
-          tocHref: /cpp/assembler/masm/
-          topicHref: /cpp/assembler/masm/microsoft-macro-assembler-reference
-      - name: C Çalışma Zamanı Kitaplığı
-        tocHref: /cpp/c-runtime-library/
-        topicHref: /cpp/c-runtime-library/c-run-time-library-reference
-        items:
-        - name: Başvuru
-          tocHref: /cpp/c-runtime-library/reference/
-          topicHref: /cpp/c-runtime-library/reference/crt-alphabetical-function-reference
-      - name: C++ Standart Kitaplığı
-        tocHref: /cpp/standard-library/
-        topicHref: /cpp/standard-library/cpp-standard-library-reference
-      - name: Windows
-        tocHref: /cpp/windows/
-        topicHref: /cpp/windows/overview-of-windows-programming-in-cpp
-        items:
-        - name: ATL
-          tocHref: /cpp/atl/
-          topicHref: /cpp/atl/atl-com-desktop-components
+        - name: Belgeler
+          tocHref: /cpp/
+          topicHref: /cpp/overview/visual-cpp-in-visual-studio
           items:
-          - name: Başvuru
-            tocHref: /cpp/atl/reference/
-            topicHref: /cpp/atl/reference/atl-classes
-        - name: MFC
-          tocHref: /cpp/mfc/
-          topicHref: /cpp/mfc/mfc-desktop-applications
-          items:
-          - name: Başvuru
-            tocHref: /cpp/mfc/reference/
-            topicHref: /cpp/mfc/reference/mfc-classes
-        - name: ATL/MFC Paylaşılan Sınıfları
-          tocHref: /cpp/atl-mfc-shared/
-          topicHref: /cpp/atl-mfc-shared/atl-mfc-shared-classes
-          items:
-          - name: Başvuru
-            tocHref: /cpp/atl-mfc-shared/reference/
-            topicHref: /cpp/atl-mfc/shared/reference/classes-shared-by-mfc-and-atl
-        - name: C++/CX
-          tocHref: /cpp/cppcx/
-          topicHref: /cpp/cppcx/visual-c-language-reference-c-cx
-      - name: Linux
-        tocHref: /cpp/linux/
-        topicHref: /cpp/linux/download-install-and-setup-the-linux-development-workload
-      - name: .NET
-        tocHref: /cpp/dotnet/
-        topicHref: /cpp/dotnet/dotnet-programming-with-cpp-cli-visual-cpp
-      - name: Paralel Programlama
-        tocHref: /cpp/parallel/
-        topicHref: /cpp/parallel/parallel-programming-in-visual-cpp
-      - name: Veri Erişimi
-        tocHref: /cpp/data/
-        topicHref: /cpp/data/
-        items:
-        - name: OLEDB
-          tocHref: /cpp/data/oledb/
-          topicHref: /cpp/data/oledb/ole-db-programming
-        - name: ODBC
-          tocHref: /cpp/data/odbc/
-          topicHref: /cpp/data/odbc/open-database-connectivity-odbc
-      - name: Kodu düzenleme, yeniden düzenleme ve kodda gezinme
-        tocHref: /cpp/ide
-        topicHref: /cpp/overview-of-cpp-development
-        items:
-        - name: IDE
-          tocHref: /cpp/ide/
-          topicHref: /cpp/ide/using-the-visual-studio-ide-for-cpp-desktop-development
-      - name: C/C++ Projeleri Oluşturma
-        tocHref: /cpp/build/building-c-cpp-programs
-        items:
-        - name: Derleme Başvurusu
-          tocHref: /cpp/build/reference/
-          topicHref: /cpp/build/reference/c-cpp-building-reference
-          items:
-          - name: Derleyici Hataları
-            tocHref: /cpp/error-messages/compiler-errors-1/
-            topicHref: /cpp/compiler-errors-1/c-cpp-build-errors
-          - name: Derleyici Uyarıları
-            tocHref: /cpp/compiler-warnings/
-            topicHref: /cpp/compiler-warnings/compiler-warnings-c4000-through-C4199
-          - name: Diğer Araçlar
-            tocHref: /cpp/error-messages/tool-errors/
-            topicHref: /cpp/error-messages/tool-errors/vectorizer-and-parallelizer-messages
-      - name: Taşıma ve Yükseltme
-        tocHref: /cpp/porting/
-        topicHref: /cpp/porting/visual-cpp-porting-and-upgrading-guide
-      - name: Metin ve Dizeler
-        tocHref: /cpp/text/
-        topicHref: /cpp/text/text-and-strings-in-visual-cpp
-      - name: Güvenlik
-        tocHref: /cpp/security
-        topicHref: /cpp/security/security-best-practices-for-cpp
-      - name: Bulut ve Web
-        tocHref: /cpp/cloud
-        topicHref: /cpp/cloud/cloud-and-web-programming-in-visual-cpp
-ms.openlocfilehash: 24cac73c1777d61b15be9fa6f39358ef583445c1
-ms.sourcegitcommit: 5fc76f5b3c4c3ee49f38f05b37261a324591530b
-ms.translationtype: HT
-ms.contentlocale: tr-TR
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58870747"
+            - name: C++ Dili
+              tocHref: /cpp/cpp/
+              topicHref: /cpp/cpp/cpp-language-reference
+            - name: C Dili
+              tocHref: /cpp/c-language/
+              topicHref: /cpp/c-language/c-language-reference
+            - name: C/C++ Ön İşlemcisi
+              tocHref: /cpp/preprocessor/
+              topicHref: /cpp/c-cpp-preprocessor-reference
+            - name: Derleyici İç Bilgileri ve Derleme Dili
+              tocHref: /cpp/intrinsics/
+              topicHref: /cpp/intrinsics/compiler-intrinsics-and-assembly-language
+              items:
+                - name: ARM
+                  tocHref: /cpp/assembler/arm/
+                  topicHref: /cpp/assembler/arm/arm-assembler-reference
+                - name: Satır içi assembler
+                  tocHref: /cpp/assembler/inline/
+                  topicHref: /cpp/assembler/inline-assembler
+                - name: MASM
+                  tocHref: /cpp/assembler/masm/
+                  topicHref: /cpp/assembler/masm/microsoft-macro-assembler-reference
+            - name: C Çalışma Zamanı Kitaplığı
+              tocHref: /cpp/c-runtime-library/
+              topicHref: /cpp/c-runtime-library/c-run-time-library-reference
+              items:
+                - name: Başvuru
+                  tocHref: /cpp/c-runtime-library/reference/
+                  topicHref: /cpp/c-runtime-library/reference/crt-alphabetical-function-reference
+            - name: C++ Standart Kitaplığı
+              tocHref: /cpp/standard-library/
+              topicHref: /cpp/standard-library/cpp-standard-library-reference
+            - name: Windows
+              tocHref: /cpp/windows/
+              topicHref: /cpp/windows/overview-of-windows-programming-in-cpp
+              items:
+                - name: ATL
+                  tocHref: /cpp/atl/
+                  topicHref: /cpp/atl/atl-com-desktop-components
+                  items:
+                    - name: Başvuru
+                      tocHref: /cpp/atl/reference/
+                      topicHref: /cpp/atl/reference/atl-classes
+                - name: MFC
+                  tocHref: /cpp/mfc/
+                  topicHref: /cpp/mfc/mfc-desktop-applications
+                  items:
+                    - name: Başvuru
+                      tocHref: /cpp/mfc/reference/
+                      topicHref: /cpp/mfc/reference/mfc-classes
+                - name: ATL/MFC Paylaşılan Sınıfları
+                  tocHref: /cpp/atl-mfc-shared/
+                  topicHref: /cpp/atl-mfc-shared/atl-mfc-shared-classes
+                  items:
+                    - name: Başvuru
+                      tocHref: /cpp/atl-mfc-shared/reference/
+                      topicHref: /cpp/atl-mfc/shared/reference/classes-shared-by-mfc-and-atl
+                - name: C++/CX
+                  tocHref: /cpp/cppcx/
+                  topicHref: /cpp/cppcx/visual-c-language-reference-c-cx
+            - name: Linux
+              tocHref: /cpp/linux/
+              topicHref: /cpp/linux/download-install-and-setup-the-linux-development-workload
+            - name: .NET
+              tocHref: /cpp/dotnet/
+              topicHref: /cpp/dotnet/dotnet-programming-with-cpp-cli-visual-cpp
+            - name: Paralel Programlama
+              tocHref: /cpp/parallel/
+              topicHref: /cpp/parallel/parallel-programming-in-visual-cpp
+            - name: Veri Erişimi
+              tocHref: /cpp/data/
+              topicHref: /cpp/data/
+              items:
+                - name: OLEDB
+                  tocHref: /cpp/data/oledb/
+                  topicHref: /cpp/data/oledb/ole-db-programming
+                - name: ODBC
+                  tocHref: /cpp/data/odbc/
+                  topicHref: /cpp/data/odbc/open-database-connectivity-odbc
+            - name: 'Kodu düzenleme, yeniden düzenleme ve kodda gezinme'
+              tocHref: /cpp/ide
+              topicHref: /cpp/overview-of-cpp-development
+              items:
+                - name: IDE
+                  tocHref: /cpp/ide/
+                  topicHref: /cpp/ide/using-the-visual-studio-ide-for-cpp-desktop-development
+            - name: C/C++ Projeleri Oluşturma
+              tocHref: /cpp/build/building-c-cpp-programs
+              items:
+                - name: Derleme Başvurusu
+                  tocHref: /cpp/build/reference/
+                  topicHref: /cpp/build/reference/c-cpp-building-reference
+                  items:
+                    - name: Derleyici Hataları
+                      tocHref: /cpp/error-messages/compiler-errors-1/
+                      topicHref: /cpp/compiler-errors-1/c-cpp-build-errors
+                    - name: Derleyici Uyarıları
+                      tocHref: /cpp/compiler-warnings/
+                      topicHref: /cpp/compiler-warnings/compiler-warnings-c4000-through-C4199
+                    - name: Diğer Araçlar
+                      tocHref: /cpp/error-messages/tool-errors/
+                      topicHref: /cpp/error-messages/tool-errors/vectorizer-and-parallelizer-messages
+            - name: Taşıma ve Yükseltme
+              tocHref: /cpp/porting/
+              topicHref: /cpp/porting/visual-cpp-porting-and-upgrading-guide
+            - name: Metin ve Dizeler
+              tocHref: /cpp/text/
+              topicHref: /cpp/text/text-and-strings-in-visual-cpp
+            - name: Güvenlik
+              tocHref: /cpp/security
+              topicHref: /cpp/security/security-best-practices-for-cpp
+            - name: Bulut ve Web
+              tocHref: /cpp/cloud
+              topicHref: /cpp/cloud/cloud-and-web-programming-in-visual-cpp

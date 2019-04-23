@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2715
 ms.assetid: c81567a7-5b65-468f-aaf9-835f91e468e4
 ms.openlocfilehash: 0f0df136952e09d26fbf43104bbf13b001c87255
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58769446"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59777737"
 ---
 # <a name="compiler-error-c2715"></a>Derleyici Hatası C2715
 

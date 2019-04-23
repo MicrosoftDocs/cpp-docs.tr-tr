@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3297
 ms.assetid: 2a718b4c-6cdb-4418-92c0-fc3a259431c4
 ms.openlocfilehash: e4661119680dff34dfaa43fb9ce71bf97150a8bd
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58769543"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59777685"
 ---
 # <a name="compiler-error-c3297"></a>Derleyici Hatası C3297
 
@@ -19,7 +19,7 @@ ms.locfileid: "58769543"
 
 Değer sınıfları korumalıdır. Kısıtlama değer sınıfı, başka bir kısıtlama hiçbir zaman buradan türetebilirsiniz.
 
-Daha fazla bilgi için [genel tür parametrelerindeki kısıtlamalar (C + +/ CLI)](../../extensions/constraints-on-generic-type-parameters-cpp-cli.md).
+Daha fazla bilgi için [genel tür parametrelerindeki kısıtlamalar (C++/CLI)](../../extensions/constraints-on-generic-type-parameters-cpp-cli.md).
 
 ## <a name="example"></a>Örnek
 

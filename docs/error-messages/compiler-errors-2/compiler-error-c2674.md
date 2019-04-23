@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2674
 ms.assetid: 7cbd70d8-d992-44d7-a5cb-dd8cf9c759d2
 ms.openlocfilehash: f29371f2987eaae1aa7a56c9f4eb56c332fdf31c
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2019
-ms.locfileid: "58779644"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59779147"
 ---
 # <a name="compiler-error-c2674"></a>Derleyici Hatası C2674
 

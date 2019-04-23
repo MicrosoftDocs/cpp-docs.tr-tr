@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C4932
 ms.assetid: 0b8d88cc-21f6-45cb-a9f5-1795b7db0dfa
 ms.openlocfilehash: cd37ee67545918991b286d16d0fe27b47414b3c3
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58769829"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59779277"
 ---
 # <a name="compiler-warning-level-4-c4932"></a>Derleyici Uyarısı (düzey 4) C4932
 

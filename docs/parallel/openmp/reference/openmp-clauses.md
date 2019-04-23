@@ -1,6 +1,6 @@
 ---
-title: OpenMP yan tümceleri
-ms.date: 10/22/2018
+title: OpenMP Yan Tümceleri
+ms.date: 03/20/2019
 f1_keywords:
 - OpenMP clauses
 - copyin
@@ -33,34 +33,41 @@ helpviewer_keywords:
 - schedule OpenMP clause
 - shared OpenMP clause
 ms.assetid: 806e7d8f-b204-4e4c-a12c-273ab540a7ca
-ms.openlocfilehash: 7d65b8315ad42f4993e54c07d31d42fffa43c4db
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.openlocfilehash: 590cb7d619895a04dfc511b6b77dad4074dc3f42
+ms.sourcegitcommit: 14b292596bc9b9b883a9c58cd3e366b282a1f7b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51519142"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60124934"
 ---
-# <a name="openmp-clauses"></a>OpenMP yan tümceleri
+# <a name="openmp-clauses"></a>OpenMP Yan Tümceleri
 
 Yan tümceleri OpenMP API çağrısında kullanılan bağlantılar sağlar.
 
-Visual C++ aşağıdaki OpenMP yan tümceleri destekler:
+Görsel C++ aşağıdaki OpenMP yan tümceleri destekler.
+
+Genel öznitelikler için:
 
 |Yan Tümce|Açıklama|
 |------|-----------|
-|[copyin](#copyin)|Ana iş parçacığının değere erişmek iş parçacığı sağlayan bir [threadprivate](openmp-directives.md#threadprivate) değişkeni.|
-|[copyprivate](#copyprivate)|Bir veya daha fazla değişkenlerini tüm iş parçacıkları arasında paylaşılan olduğunu belirtir.|
-|[default](#default-openmp)|Bir paralel bölgenin içinde kapsamsız değişkenleri davranışını belirtir.|
-|[firstprivate](#firstprivate)|Paralel yapı önce mevcut olduğundan, her iş parçacığı bir değişkenin kendi örneği olmalıdır ve değişken değişkenin değerini ile başlatılmalıdır belirtir.|
 |[Eğer](#if-openmp)|Bir döngü paralel veya seri gerçekleştirilip gerçekleştirilmeyeceğini belirtir.|
-|[lastprivate](#lastprivate)|Değişkeni kapsayan bir bağlamın sürümü hangi iş parçacığının son yineleme (for-döngüsü yapısı) ya da son bölümdeki (#pragma bölümleri) yürüten özel sürümüne eşit ayarlandığını belirtir.|
-|[nowait](#nowait)|Bir yönergesinde örtük engel geçersiz kılar.|
 |[num_threads](#num-threads)|Bir iş parçacığı takıma iş parçacığı sayısını ayarlar.|
 |[Sıralı](#ordered-openmp-clauses)|Üzerinde paralel gerekli [için](openmp-directives.md#for-openmp) deyimi, bir [sıralı](openmp-directives.md#ordered-openmp-directives) yönergesiyse döngüde kullanılacak.|
-|[private](#private-openmp)|Her iş parçacığı bir değişkenin kendi örnek olması gerektiğini belirtir.|
-|[reduction](#reduction)|Her iş parçacığı için özel bir veya daha fazla değişken bir paralel bölgenin sonunda azaltma işlemi konusunu olduğunu belirtir.|
 |[schedule](#schedule)|Uygulandığı [için](openmp-directives.md#for-openmp) yönergesi.|
+|[nowait](#nowait)|Bir yönergesinde örtük engel geçersiz kılar.|
+
+Veri paylaşımı öznitelikleri:
+
+|Yan Tümce|Açıklama|
+|------|-----------|
+|[private](#private-openmp)|Her iş parçacığı bir değişkenin kendi örnek olması gerektiğini belirtir.|
+|[firstprivate](#firstprivate)|Paralel yapı önce mevcut olduğundan, her iş parçacığı bir değişkenin kendi örneği olmalıdır ve değişken değişkenin değerini ile başlatılmalıdır belirtir.|
+|[lastprivate](#lastprivate)|Değişkeni kapsayan bir bağlamın sürümü hangi iş parçacığının son yineleme (for-döngüsü yapısı) ya da son bölümdeki (#pragma bölümleri) yürüten özel sürümüne eşit ayarlandığını belirtir.|
 |[Paylaşılan](#shared-openmp)|Bir veya daha fazla değişkenlerini tüm iş parçacıkları arasında paylaşılan olduğunu belirtir.|
+|[default](#default-openmp)|Bir paralel bölgenin içinde kapsamsız değişkenleri davranışını belirtir.|
+|[reduction](#reduction)|Her iş parçacığı için özel bir veya daha fazla değişken bir paralel bölgenin sonunda azaltma işlemi konusunu olduğunu belirtir.|
+|[copyin](#copyin)|Ana iş parçacığının değere erişmek iş parçacığı sağlayan bir [threadprivate](openmp-directives.md#threadprivate) değişkeni.|
+|[copyprivate](#copyprivate)|Bir veya daha fazla değişkenlerini tüm iş parçacıkları arasında paylaşılan olduğunu belirtir.|
 
 ## <a name="copyin"></a>copyin
 
@@ -110,7 +117,7 @@ Daha fazla bilgi için [2.7.2.8 copyprivate](../../../parallel/openmp/2-7-2-8-co
 
 ### <a name="example"></a>Örnek
 
-```
+```cpp
 // omp_copyprivate.cpp
 // compile with: /openmp
 #include <stdio.h>
@@ -174,7 +181,7 @@ Value = 1.008000, thread = 0
 Value = 1.008000, thread = 1
 ```
 
-## <a name="default-openmp"></a>Varsayılan (OpenMP)
+## <a name="default-openmp"></a>Varsayılan
 
 Bir paralel bölgenin içinde kapsamsız değişkenleri davranışını belirtir.
 
@@ -251,7 +258,7 @@ Daha fazla bilgi için [2.3 parallel yapı](../../../parallel/openmp/2-3-paralle
 
 ### <a name="example"></a>Örnek
 
-```
+```cpp
 // omp_if.cpp
 // compile with: /openmp
 #include <stdio.h>
@@ -331,7 +338,7 @@ Daha fazla bilgi için [2.4.1 yapı için](../../../parallel/openmp/2-4-1-for-co
 
 ### <a name="example"></a>Örnek
 
-```
+```cpp
 // omp_nowait.cpp
 // compile with: /openmp /c
 #include <stdio.h>
@@ -405,7 +412,7 @@ Daha fazla bilgi için [2.3 parallel yapı](../../../parallel/openmp/2-3-paralle
 
 Bkz: [paralel](openmp-directives.md#parallel) kullanma örneği için `num_threads` yan tümcesi.
 
-## <a name="ordered-openmp-clauses"></a>Ordered (OpenMP yan tümceleri)
+## <a name="ordered-openmp-clauses"></a>Sıralı
 
 Üzerinde paralel gerekli [için](openmp-directives.md#for-openmp) deyimi, bir [sıralı](openmp-directives.md#ordered-openmp-directives) yönergesiyse döngüde kullanılacak.
 
@@ -423,7 +430,7 @@ Daha fazla bilgi için [2.4.1 yapı için](../../../parallel/openmp/2-4-1-for-co
 
 Bkz: [sıralı](openmp-directives.md#ordered-openmp-directives) kullanma örneği için `ordered` yan tümcesi.
 
-## <a name="private-openmp"></a>Özel (OpenMP)
+## <a name="private-openmp"></a>Özel
 
 Her iş parçacığı bir değişkenin kendi örnek olması gerektiğini belirtir.
 
@@ -449,7 +456,7 @@ Daha fazla bilgi için [2.7.2.1 özel](../../../parallel/openmp/2-7-2-1-private.
 
 ### <a name="example"></a>Örnek
 
-```C
+```c
 // openmp_private.c
 // compile with: /openmp
 #include <windows.h>
@@ -636,7 +643,7 @@ reduction(operation:var)
 ### <a name="parameters"></a>Parametreler
 
 *İşlemi*<br/>
-Değişkenlerde yapma işlemi için işleç (`var`) bir paralel bölgenin sonunda.
+Değişkenlerde yapma işlemi için işleç *var* paralel bölgenin sonunda.
 
 *var*<br/>
 Bir veya daha fazla değişken skalar azalma yapmak bağlanacağı. Birden fazla değişken belirtilirse, değişken adları virgül ile ayırın.
@@ -645,15 +652,15 @@ Bir veya daha fazla değişken skalar azalma yapmak bağlanacağı. Birden fazla
 
 `reduction` Aşağıdaki yönergeleri için geçerlidir:
 
-- [for](openmp-directives.md#for-openmp)
 - [parallel](openmp-directives.md#parallel)
+- [for](openmp-directives.md#for-openmp)
 - [Bölümleri](openmp-directives.md#sections-openmp)
 
 Daha fazla bilgi için [2.7.2.6 azaltma](../../../parallel/openmp/2-7-2-6-reduction.md).
 
 ### <a name="example"></a>Örnek
 
-```
+```cpp
 // omp_reduction.cpp
 // compile with: /openmp
 #include <stdio.h>
@@ -774,16 +781,11 @@ schedule(type[,size])
 
 ### <a name="parameters"></a>Parametreler
 
-*Türü*<br/>
-Zamanlama türü:
-
-- `dynamic`
-- `guided`
-- `runtime`
-- `static`
+*type*<br/>
+Zamanlama, ya da tür `dynamic`, `guided`, `runtime`, veya `static`.
 
 *Boyutu*<br/>
-(İsteğe bağlı) Yinelemeler boyutunu belirtir. `size` bir tamsayı olmalıdır. Geçersiz zaman `type` olduğu `runtime`.
+(İsteğe bağlı) Yinelemeler boyutunu belirtir. *boyutu* bir tamsayı olmalıdır. Geçersiz zaman *türü* olduğu `runtime`.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -903,7 +905,7 @@ int main( )
 ------------------------------------------------
 ```
 
-## <a name="shared-openmp"></a>Paylaşılan (OpenMP)
+## <a name="shared-openmp"></a>Paylaşılan
 
 Bir veya daha fazla değişkenlerini tüm iş parçacıkları arasında paylaşılan olduğunu belirtir.
 
@@ -922,8 +924,8 @@ Değişkenleri iş parçacıkları arasında paylaşmak için başka bir yöntem
 
 `shared` Aşağıdaki yönergeleri için geçerlidir:
 
-- [for](openmp-directives.md#for-openmp)
 - [parallel](openmp-directives.md#parallel)
+- [for](openmp-directives.md#for-openmp)
 - [Bölümleri](openmp-directives.md#sections-openmp)
 
 Daha fazla bilgi için [paylaşılan 2.7.2.4](../../../parallel/openmp/2-7-2-4-shared.md).
