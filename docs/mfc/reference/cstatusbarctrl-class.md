@@ -44,12 +44,12 @@ helpviewer_keywords:
 - CStatusBarCtrl [MFC], SetText
 - CStatusBarCtrl [MFC], SetTipText
 ms.assetid: 8504ad38-7b91-4746-aede-ac98886eb47b
-ms.openlocfilehash: 5a5adc5ae6b1981d7f8260d684a33d8bd7918e40
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 8db2be9b14f9d60f2103ce0b63b772962b079bbe
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57272847"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57426140"
 ---
 # <a name="cstatusbarctrl-class"></a>CStatusBarCtrl sınıfı
 
@@ -132,7 +132,7 @@ virtual BOOL Create(
 Durum çubuğu denetiminin stilini belirtir. Durum çubuğu denetim stilleri listelenen herhangi bir birleşimini uygulamak [ortak denetim stilleri](/windows/desktop/Controls/common-control-styles) Windows SDK. Bu parametre WS_CHILD stili içermelidir. Ws_vısıble stili de eklemeniz gerekir.
 
 *Rect*<br/>
-Durum çubuğu denetiminin boyutunu ve konumunu belirtir. Ya da olabilir bir [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesi veya bir [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) yapısı.
+Durum çubuğu denetiminin boyutunu ve konumunu belirtir. Ya da olabilir bir [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesi veya bir [RECT](/previous-versions/dd162897\(v=vs.85\)) yapısı.
 
 *pParentWnd*<br/>
 Durum çubuğu denetiminin üst penceresine, genellikle belirtir bir `CDialog`. NULL olmamalıdır.
@@ -178,7 +178,7 @@ Oluşturulan denetimin genişletilmiş stilini belirtir. Genişletilmiş Windows
 Durum çubuğu denetiminin stilini belirtir. Durum çubuğu denetim stilleri listelenen herhangi bir birleşimini uygulamak [ortak denetim stilleri](/windows/desktop/Controls/common-control-styles) Windows SDK. Bu parametre WS_CHILD stili içermelidir. Ws_vısıble stili de eklemeniz gerekir.
 
 *Rect*<br/>
-Bir başvuru bir [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) istemci koordinatları olarak oluşturulması için pencerenin konumunu ve boyutunu açıklayan yapısı *pParentWnd*.
+Bir başvuru bir [RECT](/previous-versions/dd162897\(v=vs.85\)) istemci koordinatları olarak oluşturulması için pencerenin konumunu ve boyutunu açıklayan yapısı *pParentWnd*.
 
 *pParentWnd*<br/>
 Denetimin ana penceresine bir işaretçi.
@@ -344,7 +344,7 @@ BOOL GetRect(
 Alınacak olan sınırlayıcı bir dikdörtgen olduğu bölümü sıfır tabanlı dizini.
 
 *lpRect*<br/>
-Adresi bir [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) dikdörtgen alan yapısı.
+Adresi bir [RECT](/previous-versions/dd162897\(v=vs.85\)) dikdörtgen alan yapısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 

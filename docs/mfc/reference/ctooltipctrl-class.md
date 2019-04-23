@@ -72,12 +72,12 @@ helpviewer_keywords:
 - CToolTipCtrl [MFC], Update
 - CToolTipCtrl [MFC], UpdateTipText
 ms.assetid: 8973f70c-b73a-46c7-908d-758f364b9a97
-ms.openlocfilehash: 7750b7335b99bbfaa02c1f310c70bb868ef56573
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 6055926e05f8a7f9fbecec113e859d08e6b6e636
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57300966"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57420849"
 ---
 # <a name="ctooltipctrl-class"></a>CToolTipCtrl sınıfı
 
@@ -210,7 +210,7 @@ Aracı'nı içeren bir pencere işaretçisi.
 Aracı için metni içeren dize kaynağının kimliği.
 
 *lpRectTool*<br/>
-İşaretçi bir [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) aracının koordinat içeren yapı çevreleyen dikdörtgen. Sol üst köşesinin tarafından tanımlanan pencerenin istemci alanının göreli koordinatları *pWnd*.
+İşaretçi bir [RECT](/previous-versions/dd162897\(v=vs.85\)) aracının koordinat içeren yapı çevreleyen dikdörtgen. Sol üst köşesinin tarafından tanımlanan pencerenin istemci alanının göreli koordinatları *pWnd*.
 
 *nIDTool*<br/>
 Aracı kimliği.
@@ -248,7 +248,7 @@ BOOL AdjustRect(
 ### <a name="parameters"></a>Parametreler
 
 *lprc*<br/>
-İşaretçi bir [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) bir araç ipucu penceresi dikdörtgen ya da metin görünen dikdörtgen tutan yapı.
+İşaretçi bir [RECT](/previous-versions/dd162897\(v=vs.85\)) bir araç ipucu penceresi dikdörtgen ya da metin görünen dikdörtgen tutan yapı.
 
 *bLarger*<br/>
 TRUE ise *lprc* bir metin görünen dikdörtgen belirtmek için kullanılır ve karşılık gelen Pencere dikdörtgeni alır. FALSE ise *lprc* bir pencere dikdörtgeni belirtmek için kullanılır ve ilgili metin görünen dikdörtgen alır.
@@ -453,7 +453,7 @@ void GetMargin(LPRECT lprc) const;
 ### <a name="parameters"></a>Parametreler
 
 *lprc*<br/>
-Adresi bir `RECT` kenar boşluğu bilgi alacak yapısı. Üyeleri [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) yapısı sınırlayıcı bir dikdörtgen tanımlamaz. Bu iletinin amacı doğrultusunda, Yapı üyeleri şu şekilde yorumlanır:
+Adresi bir `RECT` kenar boşluğu bilgi alacak yapısı. Üyeleri [RECT](/previous-versions/dd162897\(v=vs.85\)) yapısı sınırlayıcı bir dikdörtgen tanımlamaz. Bu iletinin amacı doğrultusunda, Yapı üyeleri şu şekilde yorumlanır:
 
 |Üye|Temsili|
 |------------|--------------------|
@@ -867,7 +867,7 @@ Aracı'nı içeren bir pencere işaretçisi.
 Aracı kimliği.
 
 *lpRect*<br/>
-İşaretçi bir [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) yapısı yeni dikdörtgen belirtme.
+İşaretçi bir [RECT](/previous-versions/dd162897\(v=vs.85\)) yapısı yeni dikdörtgen belirtme.
 
 ##  <a name="setwindowtheme"></a>  CToolTipCtrl::SetWindowTheme
 

@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - IDocHostUIHandlerDispatch interface
 ms.assetid: 6963a301-601a-4ac3-8bef-f7b252ea2fc6
-ms.openlocfilehash: 0652801d7ad80ba53716299e3919f5b432de855a
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 6ce3532e99dc1d0ff0151285766aa5d78c2b9e9d
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57293153"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57421888"
 ---
 # <a name="idochostuihandlerdispatch-interface"></a>Idochostuıhandlerdispatch arabirimi
 
@@ -36,21 +36,21 @@ interface IDocHostUIHandlerDispatch : IDispatch
 
 |||
 |-|-|
-|[EnableModeless](https://msdn.microsoft.com/library/aa753253.aspx)|MSHTML uygulamasından adlı [IOleInPlaceActiveObject::EnableModeless](/windows/desktop/api/oleidl/nf-oleidl-ioleinplaceactiveobject-enablemodeless). Kalıcı kullanıcı Arabirimi MSHTML görüntüler de çağrılır.|
-|[FilterDataObject](https://msdn.microsoft.com/library/aa753254.aspx)|Konak MSHTML'ın veri nesnesi değiştirmeye izin vermek için MSHTML konağıyla üzerinde çağrılır.|
-|[GetDropTarget](https://msdn.microsoft.com/library/aa753255.aspx)|Bir bırakma hedefi alternatif sağlamak konak izin vermek için kullanılan MSHTML tarafından çağırılır [ıdroptarget'ı](/windows/desktop/api/oleidl/nn-oleidl-idroptarget).|
-|[GetExternal](https://msdn.microsoft.com/library/aa753256.aspx)|Ana bilgisayarın IDispatch almak için MSHTML tarafından çağrılır.|
-|[GetHostInfo](https://msdn.microsoft.com/library/aa753257.aspx)|MSHTML konak kullanıcı Arabirimi özelliklerini alır.|
-|[GetOptionKeyPath](https://msdn.microsoft.com/library/aa753258.aspx)|Kullanıcı tercihleri depolayan MSHTML altında kayıt defteri anahtarını döndürür.|
-|[HideUI](https://msdn.microsoft.com/library/aa753259.aspx)|MSHTML, menüleri ve araç çubuklarını kaldırdığında çağrılır.|
-|[OnDocWindowActivate](https://msdn.microsoft.com/library/aa753261.aspx)|MSHTML uygulamasından adlı [IOleInPlaceActiveObject::OnDocWindowActivate](/windows/desktop/api/oleidl/nf-oleidl-ioleinplaceactiveobject-ondocwindowactivate).|
-|[OnFrameWindowActivate](https://msdn.microsoft.com/library/aa753262.aspx)|MSHTML uygulamasından adlı [IOleInPlaceActiveObject::OnFrameWindowActivate](/windows/desktop/api/oleidl/nf-oleidl-ioleinplaceactiveobject-onframewindowactivate).|
-|[ResizeBorder](https://msdn.microsoft.com/library/aa753263.aspx)|MSHTML uygulamasından adlı [IOleInPlaceActiveObject::ResizeBorder](/windows/desktop/api/oleidl/nf-oleidl-ioleinplaceactiveobject-resizeborder).|
-|[ShowContextMenu](https://msdn.microsoft.com/library/aa753264.aspx)|Bir bağlam menüsünü görüntülemek için MSHTML çağrılır.|
-|[ShowUI](https://msdn.microsoft.com/library/aa753265.aspx)|MSHTML menüleri ve araç çubuklarını değiştirmek konak sağlar.|
-|[TranslateAccelerator](https://msdn.microsoft.com/library/aa753266.aspx)|MSHTML tarafından çağrılır, [IOleInPlaceActiveObject::TranslateAccelerator](/windows/desktop/api/oleidl/nf-oleidl-ioleinplaceactiveobject-translateaccelerator) veya [IOleControlSite::TranslateAccelerator](/windows/desktop/api/ocidl/nf-ocidl-iolecontrolsite-translateaccelerator) çağrılır.|
-|[TranslateUrl](https://msdn.microsoft.com/library/aa753267.aspx)|Konak yüklenecek URL'sini değiştirmek için bir fırsat izin vermek için MSHTML tarafından çağrılır.|
-|[UpdateUI](https://msdn.microsoft.com/library/aa753268.aspx)|Konak, komut durumu değiştirildiğinde bildirir.|
+|[EnableModeless](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753253\(v=vs.85\))|MSHTML uygulamasından adlı [IOleInPlaceActiveObject::EnableModeless](/windows/desktop/api/oleidl/nf-oleidl-ioleinplaceactiveobject-enablemodeless). Kalıcı kullanıcı Arabirimi MSHTML görüntüler de çağrılır.|
+|[FilterDataObject](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753254\(v=vs.85\))|Konak MSHTML'ın veri nesnesi değiştirmeye izin vermek için MSHTML konağıyla üzerinde çağrılır.|
+|[GetDropTarget](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753255\(v=vs.85\))|Bir bırakma hedefi alternatif sağlamak konak izin vermek için kullanılan MSHTML tarafından çağırılır [ıdroptarget'ı](/windows/desktop/api/oleidl/nn-oleidl-idroptarget).|
+|[GetExternal](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753256\(v=vs.85\))|Ana bilgisayarın IDispatch almak için MSHTML tarafından çağrılır.|
+|[GetHostInfo](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753257\(v=vs.85\))|MSHTML konak kullanıcı Arabirimi özelliklerini alır.|
+|[GetOptionKeyPath](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753258\(v=vs.85\))|Kullanıcı tercihleri depolayan MSHTML altında kayıt defteri anahtarını döndürür.|
+|[HideUI](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753259\(v=vs.85\))|MSHTML, menüleri ve araç çubuklarını kaldırdığında çağrılır.|
+|[OnDocWindowActivate](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753261\(v=vs.85\))|MSHTML uygulamasından adlı [IOleInPlaceActiveObject::OnDocWindowActivate](/windows/desktop/api/oleidl/nf-oleidl-ioleinplaceactiveobject-ondocwindowactivate).|
+|[OnFrameWindowActivate](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753262\(v=vs.85\))|MSHTML uygulamasından adlı [IOleInPlaceActiveObject::OnFrameWindowActivate](/windows/desktop/api/oleidl/nf-oleidl-ioleinplaceactiveobject-onframewindowactivate).|
+|[ResizeBorder](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753263\(v=vs.85\))|MSHTML uygulamasından adlı [IOleInPlaceActiveObject::ResizeBorder](/windows/desktop/api/oleidl/nf-oleidl-ioleinplaceactiveobject-resizeborder).|
+|[ShowContextMenu](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753264\(v=vs.85\))|Bir bağlam menüsünü görüntülemek için MSHTML çağrılır.|
+|[ShowUI](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753265\(v=vs.85\))|MSHTML menüleri ve araç çubuklarını değiştirmek konak sağlar.|
+|[TranslateAccelerator](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753266\(v=vs.85\))|MSHTML tarafından çağrılır, [IOleInPlaceActiveObject::TranslateAccelerator](/windows/desktop/api/oleidl/nf-oleidl-ioleinplaceactiveobject-translateaccelerator) veya [IOleControlSite::TranslateAccelerator](/windows/desktop/api/ocidl/nf-ocidl-iolecontrolsite-translateaccelerator) çağrılır.|
+|[TranslateUrl](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753267\(v=vs.85\))|Konak yüklenecek URL'sini değiştirmek için bir fırsat izin vermek için MSHTML tarafından çağrılır.|
+|[UpdateUI](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753268\(v=vs.85\))|Konak, komut durumu değiştirildiğinde bildirir.|
 
 ## <a name="remarks"></a>Açıklamalar
 

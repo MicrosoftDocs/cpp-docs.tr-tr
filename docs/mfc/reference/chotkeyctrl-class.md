@@ -22,12 +22,12 @@ helpviewer_keywords:
 - CHotKeyCtrl [MFC], SetHotKey
 - CHotKeyCtrl [MFC], SetRules
 ms.assetid: 896f9766-0718-4f58-aab2-20325e118ca6
-ms.openlocfilehash: f7887b1c9ddaf9d51da584df371acbed6726643b
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 66edc7d4a1b4c78480da7d11cf30f7feeecefe2c
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57291307"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57417391"
 ---
 # <a name="chotkeyctrl-class"></a>CHotKeyCtrl sınıfı
 
@@ -151,7 +151,7 @@ Oluşturulan denetimin genişletilmiş stilini belirtir. Genişletilmiş Windows
 Sık erişimli anahtar denetiminin stilini belirtir. Denetim stilleri herhangi bir bileşimini uygulayın. Daha fazla bilgi için [ortak denetim stilleri](/windows/desktop/Controls/common-control-styles) Windows SDK.
 
 *Rect*<br/>
-Bir başvuru bir [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) istemci koordinatları olarak oluşturulması için pencerenin konumunu ve boyutunu açıklayan yapısı *pParentWnd*.
+Bir başvuru bir [RECT](/previous-versions/dd162897\(v=vs.85\)) istemci koordinatları olarak oluşturulması için pencerenin konumunu ve boyutunu açıklayan yapısı *pParentWnd*.
 
 *pParentWnd*<br/>
 Denetimin ana penceresine bir işaretçi.

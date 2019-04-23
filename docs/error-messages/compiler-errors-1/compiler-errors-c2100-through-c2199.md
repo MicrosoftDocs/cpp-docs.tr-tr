@@ -7,7 +7,6 @@ f1_keywords:
 - C2125
 - C2126
 - C2127
-- C2131
 - C2136
 - C2176
 - C2187
@@ -24,12 +23,12 @@ helpviewer_keywords:
 - C2187
 - C2189
 ms.assetid: 1ccab076-0954-4386-b959-d3112a6793ae
-ms.openlocfilehash: 98e804b7c53eddf239e752f120854439cc3a0b01
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 31974bb830364b2ef41a7da17cb0ad95d931f771
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50546573"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57423540"
 ---
 # <a name="compiler-errors-c2100-through-c2199"></a>C2100 ile C2199 arasındaki Derleyici Hataları
 
@@ -72,7 +71,7 @@ Belgelerin bu bölümdeki makaleleri bir alt kümesini derleyici tarafından olu
 |[Derleyici Hatası C2128](compiler-error-c2128.md)|'*işlevi*': alloc_text/same_seg yalnızca C bağlaması olan işlevler için geçerlidir|
 |[Derleyici Hatası C2129](compiler-error-c2129.md)|statik işlev '*tanımlayıcı*' bildirimi yapıldı ancak tanımlanmadı|
 |[Derleyici Hatası C2130](compiler-error-c2130.md)|#line bulunamadı dosya içeren bir dize bekliyordu '*belirteci*'|
-|Derleyici Hatası C2131|ifade bir sabite Değerlendirilmedi|
+|[Derleyici Hatası C2131](compiler-error-c2131.md)|ifade bir sabite Değerlendirilmedi|
 |[Derleyici Hatası C2132](compiler-error-c2132.md)|sözdizimi hatası: beklenmeyen tanımlayıcı|
 |[Derleyici Hatası C2133](compiler-error-c2133.md)|'*tanımlayıcı*': Bilinmeyen boyut|
 |[Derleyici Hatası C2134](compiler-error-c2134.md)|'*işlevi*': çağrı sabit ifadesiyle sonuçlanmıyor neden olmaz|

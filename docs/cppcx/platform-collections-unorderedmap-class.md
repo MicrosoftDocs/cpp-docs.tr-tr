@@ -5,12 +5,12 @@ ms.topic: reference
 f1_keywords:
 - collection/Platform::Collections::UnorderedMap
 ms.assetid: dc84f261-b13c-4c0a-9b57-30dcb9e3065e
-ms.openlocfilehash: d3e6069f4bf7b0c23d5db5844821524ee80589da
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 7790b363ef3f30b0ad0602568190ab443a2c1401
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50648337"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57423618"
 ---
 # <a name="platformcollectionsunorderedmap-class"></a>Platform::Collections::UnorderedMap Sınıfı
 
@@ -106,7 +106,7 @@ virtual void Clear();
 
 ## <a name="first"></a>  UnorderedMap::First yöntemi
 
-İlk belirten bir yineleyici döndüren [Windows::Foundation::Collections::IKeyValuePair\<K, V >](https://msdn.microsoft.com/library/windows/apps/br226031.aspx) sıralanmamış eşleme öğesi.
+İlk belirten bir yineleyici döndüren [Windows::Foundation::Collections::IKeyValuePair\<K, V >](/uwp/api/Windows.Foundation.Collections.IKeyValuePair_K_V_) sıralanmamış eşleme öğesi.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -152,7 +152,7 @@ bool HasKey(
 
 ### <a name="parameters"></a>Parametreler
 
-*Anahtarı*<br/>
+*anahtar*<br/>
 UnorderedMap öğeyi bulmak için kullanılan anahtar. Türünü *anahtarı* TypeName *K*.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -174,7 +174,7 @@ virtual bool Insert(
 
 ### <a name="parameters"></a>Parametreler
 
-*Anahtarı*<br/>
+*anahtar*<br/>
 Anahtar-değer çifti anahtar bölümü. Türünü *anahtarı* TypeName *K*.
 
 *value*<br/>
@@ -198,7 +198,7 @@ V Lookup(
 
 ### <a name="parameters"></a>Parametreler
 
-*Anahtarı*<br/>
+*anahtar*<br/>
 Bir öğe içinde UnorderedMap bulmak için kullanılan anahtar. Türünü *anahtarı* TypeName *K*.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -217,7 +217,7 @@ event Windows::Foundation::Collections::MapChangedEventHandler<K,V>^ MapChanged;
 
 ### <a name="property-valuereturn-value"></a>Özellik Değeri/Dönüş Değeri
 
-A [MapChangedEventHandler\<K, V >](/uwp/api/windows.foundation.collections.mapchangedeventhandler) olay ve gerçekleşen değişiklik türünü oluşturan nesneye hakkında bilgiler içerir. Ayrıca bkz: [IMapChangedEventArgs\<K >](https://msdn.microsoft.com/library/windows/apps/br226034.aspx) ve [CollectionChange numaralandırma](https://msdn.microsoft.com/library/windows/apps/windows.foundation.collections.collectionchange.aspx).
+A [MapChangedEventHandler\<K, V >](/uwp/api/windows.foundation.collections.mapchangedeventhandler) olay ve gerçekleşen değişiklik türünü oluşturan nesneye hakkında bilgiler içerir. Ayrıca bkz: [IMapChangedEventArgs\<K >](/uwp/api/Windows.Foundation.Collections.IMapChangedEventArgs_K_) ve [CollectionChange numaralandırma](/uwp/api/windows.foundation.collections.collectionchange).
 
 ## <a name="net-framework-equivalent"></a>.NET Framework Eşdeğeri
 
@@ -236,12 +236,12 @@ virtual void Remove(
 
 ### <a name="parameters"></a>Parametreler
 
-*Anahtarı*<br/>
+*anahtar*<br/>
 Anahtar-değer çifti anahtar bölümü. Türünü *anahtarı* TypeName *K*.
 
 ## <a name="size"></a>  UnorderedMap::Size yöntemi
 
-Sayısını döndürür [Windows::Foundation::Collections::IKeyValuePair\<K, V >](https://msdn.microsoft.com/library/windows/apps/br226031.aspx) UnorderedMap öğeleri.
+Sayısını döndürür [Windows::Foundation::Collections::IKeyValuePair\<K, V >](/uwp/api/Windows.Foundation.Collections.IKeyValuePair_K_V_) UnorderedMap öğeleri.
 
 ### <a name="syntax"></a>Sözdizimi
 

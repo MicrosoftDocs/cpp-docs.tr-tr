@@ -24,12 +24,12 @@ helpviewer_keywords:
 - CIPAddressCtrl [MFC], SetFieldFocus
 - CIPAddressCtrl [MFC], SetFieldRange
 ms.assetid: 9764d2f4-cb14-4ba8-b799-7f57a55a47c6
-ms.openlocfilehash: e569829c100a581e24b5ce05df2f90ac7088024b
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 5abcf838308d8965f3c55dc7d85dbac974825394
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57266301"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57426400"
 ---
 # <a name="cipaddressctrl-class"></a>Cıpaddressctrl sınıfı
 
@@ -122,7 +122,7 @@ virtual BOOL Create(
 IP adresi denetimin stili. Pencere stilleri bileşimini uygulayın. Denetimi alt pencere olması gerektiğinden WS_CHILD stili eklemeniz gerekir. Bkz: [CreateWindow](/windows/desktop/api/winuser/nf-winuser-createwindowa) Windows SDK'sındaki windows stilleri listesi.
 
 *Rect*<br/>
-IP adresi denetimin boyutunu ve konumunu başvuru. Ya da olabilir bir [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesi veya bir [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) yapısı.
+IP adresi denetimin boyutunu ve konumunu başvuru. Ya da olabilir bir [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesi veya bir [RECT](/previous-versions/dd162897\(v=vs.85\)) yapısı.
 
 *pParentWnd*<br/>
 IP adresi denetiminin üst penceresine bir işaretçi. NULL olmamalıdır.
@@ -166,7 +166,7 @@ Oluşturulan denetimin genişletilmiş stilini belirtir. Genişletilmiş Windows
 IP adresi denetimin stili. Pencere stilleri bileşimini uygulayın. Denetimi alt pencere olması gerektiğinden WS_CHILD stili eklemeniz gerekir. Bkz: [CreateWindow](/windows/desktop/api/winuser/nf-winuser-createwindowa) Windows SDK'sındaki windows stilleri listesi.
 
 *Rect*<br/>
-Bir başvuru bir [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) istemci koordinatları olarak oluşturulması için pencerenin konumunu ve boyutunu açıklayan yapısı *pParentWnd*.
+Bir başvuru bir [RECT](/previous-versions/dd162897\(v=vs.85\)) istemci koordinatları olarak oluşturulması için pencerenin konumunu ve boyutunu açıklayan yapısı *pParentWnd*.
 
 *pParentWnd*<br/>
 Denetimin ana penceresine bir işaretçi.

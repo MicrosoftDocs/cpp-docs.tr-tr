@@ -3,12 +3,12 @@ title: çağırma kuralı x64
 description: Varsayılan x64 ABI çağrı kuralı ayrıntıları.
 ms.date: 12/17/2018
 ms.assetid: 41ca3554-b2e3-4868-9a84-f1b46e6e21d9
-ms.openlocfilehash: f2a63df878d4eac727f9c697cc326bb1f2981d95
-ms.sourcegitcommit: ff3cbe4235b6c316edcc7677f79f70c3e784ad76
+ms.openlocfilehash: 02bf4719766366049b600b148ad88fc238f4e54e
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/19/2018
-ms.locfileid: "53636050"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57415792"
 ---
 # <a name="x64-calling-convention"></a>çağırma kuralı x64
 
@@ -162,11 +162,11 @@ Program yürütmesini x87 FPU denetim sözcük kaydı başlangıcında standart 
 
 | Kayıt\[BITS] | Ayar |
 |-|-|
-| OLAMAYAN FPCSR\[0:6] | Özel durum tüm 1 (maskelenmiş tüm özel durumlar) maskeleri |
-| OLAMAYAN FPCSR\[7] | Ayrılmış - 0 |
-| OLAMAYAN FPCSR\[8:9] | Duyarlık denetimi - 10B (çift duyarlık) |
-| OLAMAYAN FPCSR\[10:11] | Yuvarlama denetimi - 0 (YUVARLA en yakın) |
-| OLAMAYAN FPCSR\[12] | Sonsuzluk denetimi - 0 (kullanılmaz) |
+| FPCSR\[0:6] | Özel durum tüm 1 (maskelenmiş tüm özel durumlar) maskeleri |
+| FPCSR\[7] | Ayrılmış - 0 |
+| FPCSR\[8:9] | Duyarlık denetimi - 10B (çift duyarlık) |
+| FPCSR\[10:11] | Yuvarlama denetimi - 0 (YUVARLA en yakın) |
+| FPCSR\[12] | Sonsuzluk denetimi - 0 (kullanılmaz) |
 
 Herhangi bir alanı olamayan FPCSR içinde değiştiren bir çağrılan çağırana döndürülmeden önce bunları geri yüklemelisiniz. Ayrıca, bu alanların değiştirdiği bir çağıranın bunları standart değerlerine sözleşmesiyle çağrılan değiştirilen değerlerin bekliyor sürece çağrılan çağırmadan önce geri yüklemeniz gerekir.
 
@@ -205,6 +205,6 @@ Setjmpex.h veya setjmp.h eklediğinizde, tüm çağrılar [setjmp](../c-runtime-
 
 Bir çağrı `setjmp` geçerli yığın işaretçisi, geçici olmayan kayıtlar ve MxCsr kayıtları korur.  Çağrılar `longjmp` dönün en son `setjmp` site ve sıfırlar yığın işaretçisi, geçici olmayan kayıtlar ve MxCsr kaydeder, duruma göre en güncel korunduğu çağırmak `setjmp` çağırın.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [x64 yazılım kuralları](../build/x64-software-conventions.md)

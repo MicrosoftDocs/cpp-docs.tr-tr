@@ -5,12 +5,12 @@ helpviewer_keywords:
 - x64 coding conventions
 - Visual C++, x64 calling conventions
 ms.assetid: 750f3d97-1706-4840-b2fc-41a007329a08
-ms.openlocfilehash: 55be8f381b39ee566b389350ff70a9b0a3fe7694
-ms.sourcegitcommit: e98671a4f741b69d6277da02e6b4c9b1fd3c0ae5
+ms.openlocfilehash: 11d29b6c31ccecfe5b9c51c2f9311213bd4a6732
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/04/2019
-ms.locfileid: "55702074"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57420277"
 ---
 # <a name="x64-software-conventions"></a>x64 yazılım kuralları
 
@@ -238,6 +238,6 @@ Derleyici tarafından desteklenen yapı içlerini açıklanan [derleyici iç bil
 
 X64 yürütülebilir görüntü biçimi olan je typu PE32 +. Yürütülebilir görüntüler (dll ve exe) 2 gigabayt cinsinden maksimum boyutu için kısıtlı olduğundan statik resim verilerini adreslemek için göreli bir 32-bit öteleme ile adresleme kullanılabilir. Bu veriler, içeri aktarma adres tablosunda, dize sabitleri, statik bir genel veri vb. içerir.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Çağırma Kuralları](../cpp/calling-conventions.md)

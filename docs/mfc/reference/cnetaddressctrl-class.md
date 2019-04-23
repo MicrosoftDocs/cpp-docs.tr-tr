@@ -20,12 +20,12 @@ helpviewer_keywords:
 - CNetAddressCtrl [MFC], GetAllowType
 - CNetAddressCtrl [MFC], SetAllowType
 ms.assetid: cb4c6aca-3f49-4b52-b76c-65f57096155b
-ms.openlocfilehash: 51198b44346785369771f63b80164c1a131f6950
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: ec4d7aa6f2a1061e632b81a27a0233cf5fdd1c63
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57279698"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57423566"
 ---
 # <a name="cnetaddressctrl-class"></a>CNetAddressCtrl sınıfı
 
@@ -64,7 +64,7 @@ Ağ adresi denetimi, kullanıcının girdiği adresinin biçimi doğru olduğunu
 
 Aşağıdaki şekil, bir ağ adresi denetimi içeren bir iletişim kutusu gösterir. Metin kutusunu (1) ağ adresi denetimi için bir geçersiz ağ adresi içeriyor. Ağ adresi geçersiz (2) bilgi ipucu iletisi görüntülenir.
 
-![Bir ağ adresi denetimi ve Bilgi İpucu ile iletişim. ](../../mfc/reference/media/cnetaddctrl.png "İletişim bir ağ adresi denetimi ve bilgi ipucu.")
+![Bir ağ adresi denetimi ve Bilgi İpucu ile iletişim. ] (../../mfc/reference/media/cnetaddctrl.png "İletişim bir ağ adresi denetimi ve bilgi ipucu.")
 
 ## <a name="example"></a>Örnek
 
@@ -127,7 +127,7 @@ virtual BOOL Create(
 |Parametre|Açıklama|
 |---------------|-----------------|
 |*dwStyle*|[in] Denetime uygulanacak stilleri Bitsel bir birleşimi. Daha fazla bilgi için [düzenleme stilleri](../../mfc/reference/styles-used-by-mfc.md#edit-styles).|
-|*Rect*|[in] Bir başvuru bir [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) denetimin boyutunu ve konumunu içeren yapısı.|
+|*Rect*|[in] Bir başvuru bir [RECT](/previous-versions/dd162897\(v=vs.85\)) denetimin boyutunu ve konumunu içeren yapısı.|
 |*pParentWnd*|[in] Null olmayan bir işaretçiye bir [CWnd](../../mfc/reference/cwnd-class.md) denetiminin üst penceresine olan nesne.|
 |*nID*|[in] Denetimin kimliği.|
 
@@ -154,7 +154,7 @@ virtual BOOL CreateEx(
 |---------------|-----------------|
 |*dwExStyle*|[in] Bitsel bir birleşimi (veya) genişletilmiş stiller denetime uygulanacak. Daha fazla bilgi için *dwExStyle* parametresinin [CreateWindowEx](/windows/desktop/api/winuser/nf-winuser-createwindowexa) işlevi.|
 |*dwStyle*|[in] Bitsel bir birleşimi (veya) denetime uygulanacak stilleri. Daha fazla bilgi için [düzenleme stilleri](../../mfc/reference/styles-used-by-mfc.md#edit-styles).|
-|*Rect*|[in] Bir başvuru bir [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) denetimin boyutunu ve konumunu içeren yapısı.|
+|*Rect*|[in] Bir başvuru bir [RECT](/previous-versions/dd162897\(v=vs.85\)) denetimin boyutunu ve konumunu içeren yapısı.|
 |*pParentWnd*|[in] Null olmayan bir işaretçiye bir [CWnd](../../mfc/reference/cwnd-class.md) denetiminin üst penceresine olan nesne.|
 |*nID*|[in] Denetimin kimliği.|
 

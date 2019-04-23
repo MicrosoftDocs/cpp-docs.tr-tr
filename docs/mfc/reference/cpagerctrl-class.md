@@ -48,12 +48,12 @@ helpviewer_keywords:
 - CPagerCtrl [MFC], SetChild
 - CPagerCtrl [MFC], SetScrollPos
 ms.assetid: 65ac58dd-4f5e-4b7e-b15c-e0d435a7e884
-ms.openlocfilehash: c782d5761323129eccf7ee129d877128c400d93a
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 648bc17f0f130b831aa619b90ed13ba6be35b4d4
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57270728"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57417617"
 ---
 # <a name="cpagerctrl-class"></a>CPagerCtrl sınıfı
 
@@ -149,7 +149,7 @@ virtual BOOL Create(
 |Parametre|Açıklama|
 |---------------|-----------------|
 |*dwStyle*|[in] Bit düzeyinde birleşimi (veya) [pencere stilleri](../../mfc/reference/styles-used-by-mfc.md#window-styles) ve [çağrı cihazı denetimi stilleri](/windows/desktop/Controls/pager-control-styles) denetime uygulanacak.|
-|*Rect*|[in] Bir başvuru bir [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) istemci koordinatları denetiminin boyutunu ve konumunu içeren yapısı.|
+|*Rect*|[in] Bir başvuru bir [RECT](/previous-versions/dd162897\(v=vs.85\)) istemci koordinatları denetiminin boyutunu ve konumunu içeren yapısı.|
 |*pParentWnd*|[in] Bir işaretçi bir [CWnd](../../mfc/reference/cwnd-class.md) denetiminin üst penceresine olan nesne. Bu parametre NULL olamaz.|
 |*nID*|[in] Denetimin kimliği.|
 
@@ -186,7 +186,7 @@ virtual BOOL CreateEx(
 |---------------|-----------------|
 |*dwExStyle*|[in] Denetimlere uygulanması için genişletilmiş stiller Bitsel bir birleşimi. Daha fazla bilgi için *dwExStyle* parametresinin [CreateWindowEx](/windows/desktop/api/winuser/nf-winuser-createwindowexa) işlevi.|
 |*dwStyle*|[in] Bit düzeyinde birleşimi (veya) [pencere stilleri](../../mfc/reference/styles-used-by-mfc.md#window-styles) ve [çağrı cihazı denetimi stilleri](/windows/desktop/Controls/pager-control-styles) denetime uygulanacak.|
-|*Rect*|[in] Bir başvuru bir [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) istemci koordinatları denetiminin boyutunu ve konumunu içeren yapısı.|
+|*Rect*|[in] Bir başvuru bir [RECT](/previous-versions/dd162897\(v=vs.85\)) istemci koordinatları denetiminin boyutunu ve konumunu içeren yapısı.|
 |*pParentWnd*|[in] Bir işaretçi bir [CWnd](../../mfc/reference/cwnd-class.md) denetiminin üst penceresine olan nesne. Bu parametre NULL olamaz.|
 |*nID*|[in] Denetimin kimliği.|
 

@@ -5,12 +5,12 @@ helpviewer_keywords:
 - __FUnloadDelayLoadedDLL2
 - delayed loading of DLLs, unloading
 ms.assetid: 6463bc71-020e-4aff-a4ca-90360411c54e
-ms.openlocfilehash: ac23a82282215e70a6895e021d25437bc8890c6a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 284a9cb9268c8c794379c6a5468b0f2b9092b7d0
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50460651"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57413296"
 ---
 # <a name="unloading-a-delay-loaded-dll"></a>Gecikmeli Yüklenen DLL'i Kaldırma
 
@@ -59,6 +59,6 @@ ve değil:
 __FUnloadDelayLoadedDLL2("User32.DLL");.
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Yardımcı İşlevini Anlama](understanding-the-helper-function.md)

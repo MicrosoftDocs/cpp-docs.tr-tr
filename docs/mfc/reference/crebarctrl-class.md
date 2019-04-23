@@ -98,12 +98,12 @@ helpviewer_keywords:
 - CReBarCtrl [MFC], ShowBand
 - CReBarCtrl [MFC], SizeToRect
 ms.assetid: 154570d7-e48c-425d-8c7e-c64542bcb4cc
-ms.openlocfilehash: f1e9c6e4505c67b881d479817ec8b45e4ae5dc8b
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: db72dbab14db69f14d7c3d813562ec661df4b424
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57304565"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57417664"
 ---
 # <a name="crebarctrl-class"></a>CReBarCtrl sınıfı
 
@@ -255,7 +255,7 @@ virtual BOOL Create(
 Çubuk barınağı denetim stilleri denetime uygulanan bileşimini belirtir. Bkz: [Rebar denetim stilleri](/windows/desktop/Controls/rebar-control-styles) desteklenen stilleri bir listesi için Windows SDK.
 
 *Rect*<br/>
-Bir başvuru bir [CRect](../../atl-mfc-shared/reference/crect-class.md) nesne veya [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) çubuk barınağı denetiminin boyutunu ve konumunu olan yapısı.
+Bir başvuru bir [CRect](../../atl-mfc-shared/reference/crect-class.md) nesne veya [RECT](/previous-versions/dd162897\(v=vs.85\)) çubuk barınağı denetiminin boyutunu ve konumunu olan yapısı.
 
 *pParentWnd*<br/>
 Bir işaretçi bir [CWnd](../../mfc/reference/cwnd-class.md) çubuk barınağı denetiminin üst penceresine olan nesne. NULL olmamalıdır.
@@ -303,7 +303,7 @@ Oluşturulan denetimin genişletilmiş stilini belirtir. Genişletilmiş Windows
 Çubuk barınağı denetim stilleri denetime uygulanan bileşimini belirtir. Desteklenen stilleri bir listesi için bkz. [Rebar denetim stilleri](/windows/desktop/Controls/rebar-control-styles) Windows SDK.
 
 *Rect*<br/>
-Bir başvuru bir [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) istemci koordinatları olarak oluşturulması için pencerenin konumunu ve boyutunu açıklayan yapısı *pParentWnd*.
+Bir başvuru bir [RECT](/previous-versions/dd162897\(v=vs.85\)) istemci koordinatları olarak oluşturulması için pencerenin konumunu ve boyutunu açıklayan yapısı *pParentWnd*.
 
 *pParentWnd*<br/>
 Denetimin ana penceresine bir işaretçi.
@@ -389,7 +389,7 @@ void GetBandBorders(
 Kenarlıkları alınır bant sıfır tabanlı dizini.
 
 *ÇHC*<br/>
-Bir işaretçi bir [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) bant kenarlıklarını alacak yapısı. Çubuk barınağı şeritleri RBS_BANDBORDERS stili varsa, bu yapının her üyesini oluşturan kenarlığın piksel sayısı, bant, karşılık gelen tarafındaki alırsınız. Çubuk barınağı şeritleri RBS_BANDBORDERS stili yoksa, bu yapının yalnızca sol üyesi geçerli bilgilerini alır. Çubuk barınağı denetim stilleri açıklaması için bkz: [çubuk Barınağı denetim stilleri](/windows/desktop/Controls/rebar-control-styles) Windows SDK.
+Bir işaretçi bir [RECT](/previous-versions/dd162897\(v=vs.85\)) bant kenarlıklarını alacak yapısı. Çubuk barınağı şeritleri RBS_BANDBORDERS stili varsa, bu yapının her üyesini oluşturan kenarlığın piksel sayısı, bant, karşılık gelen tarafındaki alırsınız. Çubuk barınağı şeritleri RBS_BANDBORDERS stili yoksa, bu yapının yalnızca sol üyesi geçerli bilgilerini alır. Çubuk barınağı denetim stilleri açıklaması için bkz: [çubuk Barınağı denetim stilleri](/windows/desktop/Controls/rebar-control-styles) Windows SDK.
 
 ##  <a name="getbandcount"></a>  CReBarCtrl::GetBandCount
 
@@ -584,7 +584,7 @@ BOOL GetRect(
 Rebar denetiminde bir bant sıfır tabanlı dizini.
 
 *ÇHC*<br/>
-Bir işaretçi bir [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) çubuk barınağı bant sınırları alacak yapısı.
+Bir işaretçi bir [RECT](/previous-versions/dd162897\(v=vs.85\)) çubuk barınağı bant sınırları alacak yapısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 

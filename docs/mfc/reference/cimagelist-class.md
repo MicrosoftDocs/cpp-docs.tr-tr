@@ -74,12 +74,12 @@ helpviewer_keywords:
 - CImageList [MFC], Write
 - CImageList [MFC], m_hImageList
 ms.assetid: b6d1a704-1c82-4548-8a8f-77972adc98a5
-ms.openlocfilehash: 3e8c524a95730282d0e35e5f791ebf229725e282
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 2fc92858f84826e2b953fcbc9de020741e97b007
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57298927"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57416013"
 ---
 # <a name="cimagelist-class"></a>Cımagelist sınıfı
 
@@ -691,13 +691,13 @@ Hedef cihaz bağlamının bir işaretçi. Bu silmelisiniz [CDC](../../mfc/refere
 Çizilecek görüntü sıfır tabanlı dizini.
 
 *PT*<br/>
-A [noktası](https://msdn.microsoft.com/library/windows/desktop/dd162805) x ve y-burada görüntü çizilmiş koordinatları içeren yapısı.
+A [noktası](/previous-versions/dd162805\(v=vs.85\)) x ve y-burada görüntü çizilmiş koordinatları içeren yapısı.
 
 *sz*<br/>
 A [BOYUTU](/windows/desktop/api/windef/ns-windef-tagsize) çizilecek görüntü boyutunu belirten yapısı.
 
 *ptOrigin*<br/>
-A [noktası](https://msdn.microsoft.com/library/windows/desktop/dd162805) x ve y-belirtme görüntünün kendisi ile ilgili çizim işlemi sol üst köşesinin koordinatlarının içeren yapısı. Sol x koordinatını ve y koordinatını yukarıda olan piksel görüntünün çizilmiş değil.
+A [noktası](/previous-versions/dd162805\(v=vs.85\)) x ve y-belirtme görüntünün kendisi ile ilgili çizim işlemi sol üst köşesinin koordinatlarının içeren yapısı. Sol x koordinatını ve y koordinatını yukarıda olan piksel görüntünün çizilmiş değil.
 
 *fStyle*<br/>
 Çizim stili ve isteğe bağlı olarak katman görüntü belirten bayrak. Katmana resmi bilgi için Açıklamalar bölümüne bakın. MFC varsayılan uygulamayı ILD_NORMAL, görüntüyü arka plan rengi için resim listesi kullanarak çizer. Arka plan rengi CLR_NONE değeriyse, görüntünün saydam bir maskesi kullanılarak çizilir.
@@ -874,7 +874,7 @@ static CImageList* PASCAL GetDragImage(
 ### <a name="parameters"></a>Parametreler
 
 *Lppoınt*<br/>
-Adresi bir [noktası](https://msdn.microsoft.com/library/windows/desktop/dd162805) geçerli alan yapısı konuma sürükleyin.
+Adresi bir [noktası](/previous-versions/dd162805\(v=vs.85\)) geçerli alan yapısı konuma sürükleyin.
 
 *lpPointHotSpot*<br/>
 Adresi bir `POINT` görüntüyü Sürükle Sürükle konumuna göre uzaklığı alır yapısı.

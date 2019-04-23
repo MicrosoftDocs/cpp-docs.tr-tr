@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - IAxWinAmbientDispatchEx interface
 ms.assetid: 2c25e079-6128-4278-bc72-b2c6195ba7ef
-ms.openlocfilehash: ae91921ecd5f53f4551e46e1d03cf027ce3e1f3b
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 638152d8c49bd20742a586bc665efcdb662b6f3a
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57292414"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57413894"
 ---
 # <a name="iaxwinambientdispatchex-interface"></a>IAxWinAmbientDispatchEx Interface
 
@@ -42,7 +42,7 @@ Bu arabirimi statik olarak, ATL ve konak ActiveX denetimleri, özellikle ActiveX
 
 Bu arabirim, nesneler barındırma ATL'nin ActiveX denetimi tarafından kullanıma sunulur. Türetilmiş [Iaxwinambientdispatch](../../atl/reference/iaxwinambientdispatch-interface.md), `IAxWinAmbientDispatchEx` biriyle kendi ATL tarafından sağlanan ortam özelliği arabirimi desteklemek üzere izin veren bir yöntem ekler.
 
-[AXHost](https://msdn.microsoft.com/library/system.windows.forms.axhost.aspx) hakkında tür bilgisi yüklenmeye çalışılacak `IAxWinAmbientDispatch` ve `IAxWinAmbientDispatchEx` tür kitaplığından kodunu içerir.
+<xref:System.Windows.Forms.AxHost> tür bilgileri hakkında yüklenmeye çalışılacak `IAxWinAmbientDispatch` ve `IAxWinAmbientDispatchEx` tür kitaplığından kodunu içerir.
 
 ATL90.dll için bağlıyorsanız **AXHost** dll tür kitaplığındaki tür bilgilerini yükler.
 

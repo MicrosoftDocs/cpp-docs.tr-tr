@@ -1,25 +1,25 @@
 ---
-title: Veri arabelleklerine işaretçileri alma (C + +/ CX)
+title: Veri arabelleklerine işaretçileri alma (C++/CX)
 ms.date: 11/19/2018
 ms.assetid: db4f9370-dd95-4896-b5b8-4b202284f579
-ms.openlocfilehash: 2cd99019d75272f4362518de78b729cd7a2549f3
-ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
+ms.openlocfilehash: 46a81fa9e3d278645b654dca3c652653f6c21037
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52175112"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57426384"
 ---
-# <a name="obtaining-pointers-to-data-buffers-ccx"></a>Veri arabelleklerine işaretçileri alma (C + +/ CX)
+# <a name="obtaining-pointers-to-data-buffers-ccx"></a>Veri arabelleklerine işaretçileri alma (C++/CX)
 
-Windows çalışma zamanı [Windows::Storage::Streams::IBuffer](https://msdn.microsoft.com/library/windows/apps/windows.storage.streams.ibuffer.aspx) arabirimi veri arabelleklerinin erişmek için dilden bağımsız, akış tabanlı bir yol sağlar. C++'ta robuffer.h içinde tanımlanan bir Windows çalışma zamanı kitaplığı IBufferByteAccess arabirimini kullanarak bir ham işaretçi temel alınan bayt dizisine elde edebilirsiniz. Bu yaklaşım kullanarak verilerin gereksiz kopyalarını yapmadan bayt dizisi yerinde değiştirebilirsiniz.
+Windows çalışma zamanı [Windows::Storage::Streams::IBuffer](/uwp/api/windows.storage.streams.ibuffer) arabirimi veri arabelleklerinin erişmek için dilden bağımsız, akış tabanlı bir yol sağlar. C++'ta robuffer.h içinde tanımlanan bir Windows çalışma zamanı kitaplığı IBufferByteAccess arabirimini kullanarak bir ham işaretçi temel alınan bayt dizisine elde edebilirsiniz. Bu yaklaşım kullanarak verilerin gereksiz kopyalarını yapmadan bayt dizisi yerinde değiştirebilirsiniz.
 
-Aşağıdaki diyagramda, kaynağı bir XAML görüntü öğesi gösterir bir [Windows::UI::Xaml::Media::Imaging WriteableBitmap](https://msdn.microsoft.com/%20library/windows/apps/windows.ui.xaml.media.imaging.writeablebitmap.aspx). Herhangi bir dilde yazılmış bir istemci uygulaması için başvuru geçirebilirsiniz `WriteableBitmap` C++ için kod ve C++ başvurusu temel alınan arabelleğe almak için kullanabilirsiniz. C++ ile yazılmış bir evrensel Windows platformu uygulamasında paketleyerek bir Windows çalışma zamanı bileşeni olmadan aşağıdaki örnekte kaynak kodda doğrudan işlevi kullanabilirsiniz.
+Aşağıdaki diyagramda, kaynağı bir XAML görüntü öğesi gösterir bir [Windows::UI::Xaml::Media::Imaging WriteableBitmap](/uwp/api/Windows.UI.Xaml.Media.Imaging.WriteableBitmap). Herhangi bir dilde yazılmış bir istemci uygulaması için başvuru geçirebilirsiniz `WriteableBitmap` C++ için kod ve C++ başvurusu temel alınan arabelleğe almak için kullanabilirsiniz. C++ ile yazılmış bir evrensel Windows platformu uygulamasında paketleyerek bir Windows çalışma zamanı bileşeni olmadan aşağıdaki örnekte kaynak kodda doğrudan işlevi kullanabilirsiniz.
 
 ![C&#43; &#43; doğrudan piksel verilere erişen kodu](../cppcx/media/ibufferbyteaccessdiagram.png "C&#43; &#43; doğrudan piksel verilere erişen kodu")
 
 ## <a name="getpointertopixeldata"></a>GetPointerToPixelData
 
-Aşağıdaki yöntem kabul eden bir [Windows::Storage::Streams::IBuffer](https://msdn.microsoft.com/library/windows/apps/windows.storage.streams.ibuffer.aspx) ve temel alınan bayt dizisine bir ham işaretçiyi döndürür. İşlev çağrısı için geçirin bir [WriteableBitmap::PixelBuffer](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.media.imaging.writeablebitmap.pixelbuffer.aspx) özelliği.
+Aşağıdaki yöntem kabul eden bir [Windows::Storage::Streams::IBuffer](/uwp/api/windows.storage.streams.ibuffer) ve temel alınan bayt dizisine bir ham işaretçiyi döndürür. İşlev çağrısı için geçirin bir [WriteableBitmap::PixelBuffer](/uwp/api/windows.ui.xaml.media.imaging.writeablebitmap.pixelbuffer) özelliği.
 
 ```cpp
 #include <wrl.h>
@@ -70,7 +70,7 @@ Aşağıdaki adımlar gönderen bir C# Evrensel Windows platformu uygulaması ol
         </Grid>
         ```
 
-1. MainPage.xaml.cs dosyasında
+1. In MainPage.xaml.cs
 
    1. Bu ad alanı bildirimi ekleyin:
 

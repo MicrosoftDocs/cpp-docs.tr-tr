@@ -5,12 +5,12 @@ helpviewer_keywords:
 - HTML controls, ATL support
 - DHTML controls, ATL support
 ms.assetid: b627547a-3768-4346-9900-4b7a21fb8e27
-ms.openlocfilehash: 3cb250c68d5ba36dc3cf502b871f62eec8f1861c
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 32b1c00e3ad3ed15fa56f7718789fe1a2e3ecbab
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57283884"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57424385"
 ---
 # <a name="identifying-the-elements-of-the-dhtml-control-project"></a>DHTML denetim projesinin öğelerini tanımlama
 
@@ -22,7 +22,7 @@ DHTML denetimi herhangi bir ATL denetimi için benzer hariç:
 
 - Bir HTML kaynak UI denetimi oluşturur.
 
-- DHTML nesne modeli üye değişkeni aracılığıyla erişim sağlayan `m_spBrowser`, akıllı bir işaretçi türünde olduğu [Iwebbrowser2](https://msdn.microsoft.com/library/aa752127.aspx). DHTML nesne modeli, herhangi bir bölümünü erişmek için bu işaretçiyi kullanın.
+- DHTML nesne modeli üye değişkeni aracılığıyla erişim sağlayan `m_spBrowser`, akıllı bir işaretçi türünde olduğu [Iwebbrowser2](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa752127\(v=vs.85\)). DHTML nesne modeli, herhangi bir bölümünü erişmek için bu işaretçiyi kullanın.
 
 Aşağıdaki grafikte, DLL, DHTML denetimi, Web tarayıcısı ve HTML kaynak arasındaki ilişkiyi gösterir.
 

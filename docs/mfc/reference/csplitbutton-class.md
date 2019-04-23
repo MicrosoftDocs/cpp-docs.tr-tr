@@ -14,12 +14,12 @@ helpviewer_keywords:
 - CSplitButton [MFC], SetDropDownMenu
 - CSplitButton [MFC], OnDropDown
 ms.assetid: 6844d0a9-6408-4e44-9b5f-57628ed8bad6
-ms.openlocfilehash: b73e27097a64722afd6bad5b9bc2157655bd9aad
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 70bba379f33be2d4df05f6b96eac14bf248cf356
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57274511"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57414657"
 ---
 # <a name="csplitbutton-class"></a>CSplitButton sınıfı
 
@@ -58,7 +58,7 @@ class CSplitButton : public CButton
 
 Aşağıdaki şekil, çağrı cihazı denetimi ve (1) Bölünmüş düğme denetimini içeren bir iletişim kutusu gösterir. (2) açılan liste okunu zaten tıklanan ve (3) alt görüntülenir.
 
-![Splitbutton ve çağrı cihazı denetimi ile iletişim. ](../../mfc/reference/media/splitbutton_pager.png "Splitbutton ve çağrı cihazı denetimi ile iletişim.")
+![Splitbutton ve çağrı cihazı denetimi ile iletişim. ] (../../mfc/reference/media/splitbutton_pager.png "Splitbutton ve çağrı cihazı denetimi ile iletişim.")
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -97,7 +97,7 @@ virtual BOOL Create(
 |Parametre|Açıklama|
 |---------------|-----------------|
 |*dwStyle*|[in] Bitsel bir birleşimi (veya) denetime uygulanacak stilleri. Daha fazla bilgi için [düğme stilleri](../../mfc/reference/styles-used-by-mfc.md#button-styles).|
-|*Rect*|[in] Bir başvuru bir [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) denetimin boyutunu ve konumunu içeren yapısı.|
+|*Rect*|[in] Bir başvuru bir [RECT](/previous-versions/dd162897\(v=vs.85\)) denetimin boyutunu ve konumunu içeren yapısı.|
 |*pParentWnd*|[in] Null olmayan bir işaretçiye bir [CWnd](../../mfc/reference/cwnd-class.md) denetiminin üst penceresine olan nesne.|
 |*nID*|[in] Denetimin kimliği.|
 
@@ -188,7 +188,7 @@ void SetDropDownMenu(CMenu* pMenu);
 
 Aşağıdaki şekil, çağrı cihazı denetimi ve (1) Bölünmüş düğme denetimini içeren bir iletişim kutusu gösterir. (2) açılan liste okunu zaten tıklanan ve (3) alt görüntülenir.
 
-![Splitbutton ve çağrı cihazı denetimi ile iletişim. ](../../mfc/reference/media/splitbutton_pager.png "Splitbutton ve çağrı cihazı denetimi ile iletişim.")
+![Splitbutton ve çağrı cihazı denetimi ile iletişim. ] (../../mfc/reference/media/splitbutton_pager.png "Splitbutton ve çağrı cihazı denetimi ile iletişim.")
 
 ### <a name="example"></a>Örnek
 
