@@ -1,39 +1,32 @@
-items:
 - name: Visual Studio’da C++
   href: index.yml
   items:
-  - name: Genel Bakış
-    items:
-    - name: Kod düzenleyicisi hakkında
-      href: /visualstudio/get-started/tutorial-editor
-    - name: Projeler ve çözümler hakkında
-      href: /visualstudio/get-started/tutorial-projects-solutions
-    - name: Diğer Visual Studio özellikleri
-      href: /visualstudio/ide/advanced-feature-overview?toc=/cpp/get-started/toc.json&bc=/cpp/get-started/breadcrumb/toc.json
-  - name: Öğreticiler
-    items:
-    - name: İlk C++ uygulamanızı oluşturma
-      href: tutorial-console-cpp.md
-    - name: UWP uygulaması oluşturma
-      href: /windows/uwp/cpp-and-winrt-apis/get-started
-    - name: Windows Masaüstü uygulaması oluşturma
-      href: /windows/desktop/learnwin32/learn-to-program-for-windows
-    - name: DirectX oyunu oluşturma
-      href: /windows/uwp/gaming/tutorial--create-your-first-uwp-directx-game
-    expanded: true
-  - name: Visual Studio'yu öğrenin
-    items:
-    - name: Kodu yazma ve düzenleme
-      href: /visualstudio/get-started/tutorial-editor
-    - name: Derleme ve oluşturma
-      href: /visualstudio/ide/compiling-and-building-in-visual-studio
-    - name: Kodunuzda hata ayıklama
-      href: /visualstudio/debugger/getting-started-with-the-debugger-cpp
-    - name: Projenizi dağıtma
-      href: /visualstudio/deployment/index
-ms.openlocfilehash: fd03cd392d732b7dd5f68846362cfefadb7eb2f7
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
-ms.translationtype: HT
-ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57816249"
+    - name: Genel Bakış
+      items:
+        - name: Kod düzenleyicisi hakkında
+          href: /visualstudio/get-started/tutorial-editor
+        - name: Projeler ve çözümler hakkında
+          href: /visualstudio/get-started/tutorial-projects-solutions
+        - name: Diğer Visual Studio özellikleri
+          href: /visualstudio/ide/advanced-feature-overview?toc=/cpp/get-started/toc.json&bc=/cpp/get-started/breadcrumb/toc.json
+    - name: Öğreticiler
+      expanded: true
+      items:
+        - name: İlk C++ uygulamanızı oluşturma
+          href: tutorial-console-cpp.md
+        - name: UWP uygulaması oluşturma
+          href: /windows/uwp/cpp-and-winrt-apis/get-started
+        - name: Windows Masaüstü uygulaması oluşturma
+          href: /windows/desktop/learnwin32/learn-to-program-for-windows
+        - name: DirectX oyunu oluşturma
+          href: /windows/uwp/gaming/tutorial--create-your-first-uwp-directx-game
+    - name: Visual Studio'yu öğrenin
+      items:
+        - name: Kodu yazma ve düzenleme
+          href: /visualstudio/get-started/tutorial-editor
+        - name: Derleme ve oluşturma
+          href: /visualstudio/ide/compiling-and-building-in-visual-studio
+        - name: Kodunuzda hata ayıklama
+          href: /visualstudio/debugger/getting-started-with-the-debugger-cpp
+        - name: Projenizi dağıtma
+          href: /visualstudio/deployment/index
