@@ -9,11 +9,11 @@ helpviewer_keywords:
 - sealed keyword [C++]
 ms.assetid: 3d0d688a-41aa-45f5-a25a-65c44206521e
 ms.openlocfilehash: 493f6597d146480714848b37154cc8bacd37113a
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59030455"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62265405"
 ---
 # <a name="sealed--ccli-and-ccx"></a>korumalı (C++/CLI ve C++/CX)
 

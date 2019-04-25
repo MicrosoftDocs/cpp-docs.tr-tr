@@ -3,11 +3,11 @@ title: x64 giriş ve bitiş
 ms.date: 12/17/2018
 ms.assetid: 0453ed1a-3ff1-4bee-9cc2-d6d3d6384984
 ms.openlocfilehash: a225786853fcc2eb7b6a21de29f1ccf4901e4377
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57809996"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62295252"
 ---
 # <a name="x64-prolog-and-epilog"></a>x64 giriş ve bitiş
 

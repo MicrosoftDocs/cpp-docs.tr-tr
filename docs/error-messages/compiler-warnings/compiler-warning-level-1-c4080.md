@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C4080
 ms.assetid: 964fb3f4-b9fd-450b-aa23-35cece126172
 ms.openlocfilehash: a91963d524300c8768768a8a4615b1ab27e033e2
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50599803"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62256290"
 ---
 # <a name="compiler-warning-level-1-c4080"></a>Derleyici Uyarısı (düzey 1) C4080
 

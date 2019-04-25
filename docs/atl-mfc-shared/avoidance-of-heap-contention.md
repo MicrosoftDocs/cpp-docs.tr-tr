@@ -5,11 +5,11 @@ helpviewer_keywords:
 - heap contention
 ms.assetid: 797129d7-5f8c-4b0e-8974-bb93217e9ab5
 ms.openlocfilehash: 45510607a63759aad9444959716bef164eda1492
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57743272"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62210007"
 ---
 # <a name="avoidance-of-heap-contention"></a>Yığın çekişmesini engelleme
 

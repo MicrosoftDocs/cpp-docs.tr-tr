@@ -13,11 +13,11 @@ helpviewer_keywords:
 - Build system changes, $(NoInherit)
 ms.assetid: e564d95f-a6cc-4d97-b57e-1a71daf66f4a
 ms.openlocfilehash: 621e62379657da66d6eaec7a3ceff780fd610066
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57824171"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62205497"
 ---
 # <a name="build-system-changes"></a>Derleme Sistemi Değişiklikleri
 

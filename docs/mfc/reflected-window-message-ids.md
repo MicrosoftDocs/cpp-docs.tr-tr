@@ -47,11 +47,11 @@ helpviewer_keywords:
 - reflected messages
 ms.assetid: 3417ff51-ff9f-458c-bff4-17c200f00d96
 ms.openlocfilehash: 2f6aea30fbf86865b5d42ea8da364685010c95c0
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57302097"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62309063"
 ---
 # <a name="reflected-window-message-ids"></a>Yansımış Pencere İletisi Kimlikleri
 

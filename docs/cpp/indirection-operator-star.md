@@ -8,11 +8,11 @@ helpviewer_keywords:
 - indirection operator [C++], syntax
 ms.assetid: c50309e1-6c02-4184-9fcb-2e13c1f4ac03
 ms.openlocfilehash: a35d8cb28baaee37ad64a61cbcb9d4c76a5aad06
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50482748"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62183589"
 ---
 # <a name="indirection-operator-"></a>Yönlendirme İşleci: *
 

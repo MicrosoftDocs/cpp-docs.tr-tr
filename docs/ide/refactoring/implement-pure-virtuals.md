@@ -3,19 +3,19 @@ title: Saf sanalları Uygula
 ms.date: 11/16/2016
 ms.assetid: ea9b4719-34a3-474a-b4ec-05b1859f80f1
 ms.openlocfilehash: 59e4519f57a1d9bd9ba1cee1ed6ae41bea785a9f
-ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51692677"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62265104"
 ---
 # <a name="implement-pure-virtuals"></a>Saf sanalları Uygula
 
-**Ne:** hemen bir sınıfta tüm saf sanal yöntemleri uygulamak için gereken kodu oluşturmanıza olanak tanır.
+**Ne:** Hemen bir sınıfta tüm saf sanal yöntemleri uygulamak için gereken kodu oluşturmanıza olanak sağlar.
 
-**Ne zaman:** saf sanal işlevler içeren bir sınıfından devralmasına izin istiyor.
+**ne zaman:** Saf sanal işlevler içeren bir sınıftan devralınan istiyorsunuz.
 
-**Neden:** bu özellik otomatik olarak tüm yöntem imzaları oluşturur ancak tüm saf sanal işlevler birer birer el ile uygulayabilirsiniz.
+**Neden:** Bu özellik otomatik olarak tüm yöntem imzaları oluşturur ancak tüm saf sanal işlevler birer birer el ile uygulayabilirsiniz.
 
 **Nasıl:**
 

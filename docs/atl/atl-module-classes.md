@@ -7,11 +7,11 @@ helpviewer_keywords:
 - module classes
 ms.assetid: fd75382d-c955-46ba-a38e-37728b7fa00f
 ms.openlocfilehash: 2fe659b47893f821aab4cda31ab1a4e9a6788ec6
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57295467"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62252076"
 ---
 # <a name="atl-module-classes"></a>ATL Modül Sınıfları
 

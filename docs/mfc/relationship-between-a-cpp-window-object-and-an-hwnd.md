@@ -11,11 +11,11 @@ helpviewer_keywords:
 - HWND, window objects [MFC]
 ms.assetid: f2e76340-6691-4ee6-9424-0345634a9469
 ms.openlocfilehash: 8cf8856be7166768c507932184e257cf69b0eb35
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57305204"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62309331"
 ---
 # <a name="relationship-between-a-c-window-object-and-an-hwnd"></a>Bir C++ Pencere Nesnesi ile bir HWND Arasındaki İlişkiler
 

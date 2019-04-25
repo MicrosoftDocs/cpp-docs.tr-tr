@@ -20,11 +20,11 @@ helpviewer_keywords:
 - except_handler3 function
 ms.assetid: b0c64898-0ae5-48b7-9724-80135a0813e2
 ms.openlocfilehash: 0dfe007d7b444401accbf547674f96f7f7d54ac1
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57741309"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62289964"
 ---
 # <a name="excepthandler3"></a>_except_handler3
 

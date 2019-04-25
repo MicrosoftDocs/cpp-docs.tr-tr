@@ -8,11 +8,11 @@ helpviewer_keywords:
 - SHORT operator
 ms.assetid: 41e0982a-4f4e-4b48-ba58-e32d72053249
 ms.openlocfilehash: 26307b1838d3f6f185ffc6d71c3f24bd4b9945dd
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50491760"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62198739"
 ---
 # <a name="operator-short"></a>SHORT işleci
 

@@ -8,23 +8,23 @@ helpviewer_keywords:
 - __thiscall keyword [C++]
 ms.assetid: a6a22dd2-0101-4885-b33b-22f6057965df
 ms.openlocfilehash: fc5a32fedf52377889b61103856e2125733cd696
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50448847"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62266796"
 ---
 # <a name="thiscall"></a>__thiscall
 
 **Microsoft'a özgü**
 
-**__Thiscall** çağırma kuralı üye işlevlerde kullanılır ve değişken bağımsız değişkenler kullanmayan C++ üye işlevleri tarafından kullanılan varsayılan çağırma kuralı. Altında **__thiscall**, çağrılan mümkün değildir yığını temizler `vararg` işlevleri. Bağımsız değişkenler itilir yığında sağdan sola, ile **bu** işaretçi ECX kayıt aracılığıyla ve x86 değil yığında geçirilen mimarisi.
+**__Thiscall** üye işlevlerde kullanılır ve çağırma kuralı tarafından kullanılan varsayılan çağırma kuralını C++ üye işlevleri, değişken bağımsız değişkenler kullanmayın. Altında **__thiscall**, çağrılan mümkün değildir yığını temizler `vararg` işlevleri. Bağımsız değişkenler itilir yığında sağdan sola, ile **bu** işaretçi ECX kayıt aracılığıyla ve x86 değil yığında geçirilen mimarisi.
 
 Kullanmak için bir neden **__thiscall** sınıflar, üye işlevleri kullanımı olan `__clrcall` varsayılan olarak. Bu durumda, kullanabileceğiniz **__thiscall** üyesine çalıştığından yerel koddan çağrılabilir emin olmak için.
 
 İle derlerken [/CLR: pure](../build/reference/clr-common-language-runtime-compilation.md), tüm işlevleri ve işlev işaretçileri `__clrcall` aksi belirtilmediği sürece. **/CLR: pure** ve **/CLR: safe** derleyici seçenekleri Visual Studio 2015'te kullanım dışı ve Visual Studio 2017'de desteklenmiyor.
 
-Visual C++ 2005 önce sürümlerde **__thiscall** çağırma kuralı açıkça belirtilemedi bir programda çünkü **__thiscall** bir anahtar sözcük değildi.
+Visual önce sürümlerde C++ 2005 **__thiscall** çağırma kuralı açıkça belirtilemedi bir programda çünkü **__thiscall** bir anahtar sözcük değildi.
 
 `vararg` üye işlevleri kullanmak **__cdecl** çağırma kuralı. Tüm işlev bağımsız değişkenleri ile yığına itilir **bu** yerleştirilen işaretçi yığında son
 

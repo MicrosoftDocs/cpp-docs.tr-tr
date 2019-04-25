@@ -5,11 +5,11 @@ helpviewer_keywords:
 - sample applications [MFC], menus
 ms.assetid: 6d89c723-03d6-474e-8ca5-e98f93bd41cc
 ms.openlocfilehash: 1eab6947590375531df9027f853647ec6cb946f2
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58781828"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62219019"
 ---
 # <a name="menu-sample-list"></a>Menü Örnek Listesi
 

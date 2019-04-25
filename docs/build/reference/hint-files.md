@@ -12,11 +12,11 @@ helpviewer_keywords:
 - Class View, hint file
 ms.assetid: 17194f66-cf62-4523-abec-77db0675ab65
 ms.openlocfilehash: 3d8b3be76fea454ed3b3dd3fd2a44174f34c065c
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57823591"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62291915"
 ---
 # <a name="hint-files"></a>İpucu Dosyaları
 

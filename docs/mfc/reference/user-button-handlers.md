@@ -18,11 +18,11 @@ helpviewer_keywords:
 - ON_BN_CLICKED [MFC]
 ms.assetid: 410ea968-478f-4806-b7b8-5d7c8dc2bf42
 ms.openlocfilehash: 1b79c781243b0af02479d37865a86577311789da
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57263448"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62309739"
 ---
 # <a name="user-button-handlers"></a>Kullanıcı Düğmesi İşleyicileri
 

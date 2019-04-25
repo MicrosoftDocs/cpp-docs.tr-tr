@@ -8,11 +8,11 @@ helpviewer_keywords:
 - notifications [MFC], CSliderCtrl
 ms.assetid: b9121104-3889-4a10-92bf-f3723f1af9d0
 ms.openlocfilehash: bee2d602512ea1a6af39b0bb218ee7333b399c80
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57294245"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62307334"
 ---
 # <a name="slider-notification-messages"></a>Kaydırıcı Bildirim İletileri
 

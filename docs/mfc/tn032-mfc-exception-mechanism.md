@@ -9,11 +9,11 @@ helpviewer_keywords:
 - CException class [MFC], using
 ms.assetid: 0271f0aa-82cb-47a2-b7ea-e88126fc7e43
 ms.openlocfilehash: 210e47e117cd602ba77edd330205385f54199ce5
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57288759"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62305664"
 ---
 # <a name="tn032-mfc-exception-mechanism"></a>TN032: MFC özel durum mekanizması
 

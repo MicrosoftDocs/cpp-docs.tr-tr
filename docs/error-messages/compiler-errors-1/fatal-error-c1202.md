@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C1202
 ms.assetid: c859adb8-17a7-4fa1-a1f3-5820b7bf3849
 ms.openlocfilehash: c9aeccd0a7bf29edd5ecab91ee1de6c76fa2512e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50585243"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62228641"
 ---
 # <a name="fatal-error-c1202"></a>Önemli hata C1202
 

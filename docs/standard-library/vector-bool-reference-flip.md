@@ -7,11 +7,11 @@ helpviewer_keywords:
 - reference::flip method
 ms.assetid: ef940365-cbe4-4a87-a3e2-1f3cfa357e29
 ms.openlocfilehash: 68172de6e50a599d5b1822b83787be3a3a94e037
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51522551"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62205131"
 ---
 # <a name="vectorltboolgtreferenceflip"></a>vektör&lt;bool&gt;:: reference::flip
 

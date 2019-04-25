@@ -8,11 +8,11 @@ helpviewer_keywords:
 - DISASM dumpbin option
 - /DISASM dumpbin option
 ms.openlocfilehash: 10e8187e896b3922438a8cf2dafa0aec4c91f904
-ms.sourcegitcommit: faa42c8a051e746d99dcebe70fd4bbaf3b023ace
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57822541"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62272067"
 ---
 # <a name="disasm"></a>/DISASM
 

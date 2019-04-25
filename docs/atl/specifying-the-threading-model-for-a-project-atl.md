@@ -9,11 +9,11 @@ helpviewer_keywords:
 - _ATL_SINGLE_THREADED macro
 ms.assetid: 6b571078-521c-4f3e-9f08-482aa235a822
 ms.openlocfilehash: 69c1c80bba0b09ce69e0b9b9b27296ef2508e60b
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57326068"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62275223"
 ---
 # <a name="specifying-the-threading-model-for-a-project-atl"></a>Proje İçin İş Parçacıklı Model Belirtme (ATL)
 

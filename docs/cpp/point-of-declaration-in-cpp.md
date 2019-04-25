@@ -5,11 +5,11 @@ helpviewer_keywords:
 - point of declaration
 ms.assetid: 92ea8707-80cb-497c-b479-f907b8401859
 ms.openlocfilehash: d6cb4c3813d88c8b29fbcb2e0827805f406e6c81
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50560662"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62183407"
 ---
 # <a name="point-of-declaration-in-c"></a>C++ bildirim noktası
 

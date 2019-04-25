@@ -16,11 +16,11 @@ helpviewer_keywords:
 - binary access
 ms.assetid: 3196e321-8b87-4609-b302-cd6f3c516051
 ms.openlocfilehash: 2c875350aedadb55d8f96fb682d6215030be2198
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57738589"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62304546"
 ---
 # <a name="text-and-binary-mode-file-io"></a>Metin ve İkili Mod Dosyası G/Ç
 

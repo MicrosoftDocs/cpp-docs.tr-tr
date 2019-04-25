@@ -7,11 +7,11 @@ helpviewer_keywords:
 - override keyword [C++]
 ms.assetid: 34d19257-1686-4fcd-96f5-af07c70ba914
 ms.openlocfilehash: 8dc7a0a0e6cf759d956fd701d033bd773e572af3
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59025675"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62254480"
 ---
 # <a name="override--ccli-and-ccx"></a>geçersiz kılma (C++/CLI ve C++/CX)
 

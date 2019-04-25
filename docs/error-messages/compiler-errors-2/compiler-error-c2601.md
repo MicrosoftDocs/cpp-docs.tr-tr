@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2601
 ms.assetid: 88275582-5f37-45d7-807d-05f06ba00965
 ms.openlocfilehash: f18819e5f078cb85121160af1d4a3fc24a365a68
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50615198"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62215591"
 ---
 # <a name="compiler-error-c2601"></a>Derleyici Hatası C2601
 

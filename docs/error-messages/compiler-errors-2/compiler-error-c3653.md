@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3653
 ms.assetid: 316549d7-f7ef-4578-a2ba-57adc8aac527
 ms.openlocfilehash: 75e2c061190b24019491db7a625ecafb5ac82b6b
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59776450"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62227519"
 ---
 # <a name="compiler-error-c3653"></a>Derleyici Hatası C3653
 

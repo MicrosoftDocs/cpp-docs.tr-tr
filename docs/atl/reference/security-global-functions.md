@@ -17,11 +17,11 @@ helpviewer_keywords:
 - security IDs [C++]
 ms.assetid: 6a584bfe-16b7-47f4-8439-9c789c41567a
 ms.openlocfilehash: 2c9a6fd31850ed137167b6987ddf2f83f34c64a1
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57295883"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62197248"
 ---
 # <a name="security-global-functions"></a>Güvenlik genel işlevleri
 

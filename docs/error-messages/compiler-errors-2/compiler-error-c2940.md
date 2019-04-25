@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2940
 ms.assetid: af6bf2bf-8de6-4cfd-bbf0-4c6b32a30edf
 ms.openlocfilehash: c5445b7083d11f1439d3e171d35c3ca39411310d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50528797"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62301922"
 ---
 # <a name="compiler-error-c2940"></a>Derleyici Hatası C2940
 

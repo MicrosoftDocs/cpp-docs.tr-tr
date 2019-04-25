@@ -8,11 +8,11 @@ helpviewer_keywords:
 - properties [ATL]
 ms.assetid: 31616f98-69f8-48b2-8d58-b8e7d1c2b2d8
 ms.openlocfilehash: 05c3a67e278389bb2ab1b07e9d6cf63cbe347c63
-ms.sourcegitcommit: faa42c8a051e746d99dcebe70fd4bbaf3b023ace
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57807551"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62249632"
 ---
 # <a name="properties-and-property-pages-classes"></a>Özellikler ve özellik sayfası sınıfları
 

@@ -14,11 +14,11 @@ helpviewer_keywords:
 - Web application security [MFC], Internet security approaches
 ms.assetid: bf0da697-81bc-41f0-83fa-d7f82ed83df8
 ms.openlocfilehash: 184c8edf3e4a81be1f8b2a282a0db9758a75253f
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57259535"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62310909"
 ---
 # <a name="internet-security-c"></a>Internet Güvenliği (C++)
 

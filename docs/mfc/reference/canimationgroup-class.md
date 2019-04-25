@@ -47,11 +47,11 @@ helpviewer_keywords:
 - CAnimationGroup [MFC], m_pParentController
 ms.assetid: 8bc18ceb-33a2-41d0-9731-71811adacab7
 ms.openlocfilehash: 32b2adfee2a36139a11caa12fa98bd240b0732dd
-ms.sourcegitcommit: 309dc532f13242854b47759cef846de59bb807f1
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58565993"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62152084"
 ---
 # <a name="canimationgroup-class"></a>CAnimationGroup sınıfı
 

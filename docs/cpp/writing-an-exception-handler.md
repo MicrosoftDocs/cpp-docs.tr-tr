@@ -6,11 +6,11 @@ helpviewer_keywords:
 - exception handling [C++], exception handlers
 ms.assetid: 71473fee-f773-4a34-bf12-82a3af79579c
 ms.openlocfilehash: 6f1bcecf3aaed2bf2b7ebbe511f11cdb5ec1ca5e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50644788"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62209409"
 ---
 # <a name="writing-an-exception-handler"></a>Özel Durum İşleyicisi Yazma
 

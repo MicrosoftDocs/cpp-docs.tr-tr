@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C4394
 ms.assetid: 5de94de0-17e3-4e7c-92f4-5c3c1b825120
 ms.openlocfilehash: 00c9e139e920473590389c05f076a7cd91a4fb8d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50548859"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62311485"
 ---
 # <a name="compiler-warning-c4394"></a>Derleyici Uyarısı C4394
 

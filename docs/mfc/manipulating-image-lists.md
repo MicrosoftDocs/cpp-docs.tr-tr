@@ -7,11 +7,11 @@ helpviewer_keywords:
 - CImageList class [MFC], manipulating
 ms.assetid: 043418f8-077e-4dce-b8bb-2b7b0d7b5156
 ms.openlocfilehash: 1e86961980c91ade47a3d6510dec5c04ac36cffb
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57304853"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62262794"
 ---
 # <a name="manipulating-image-lists"></a>Resim Listelerini Düzenleme
 

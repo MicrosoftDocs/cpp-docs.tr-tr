@@ -13,11 +13,11 @@ helpviewer_keywords:
 - IExecutionContext structure
 ms.assetid: f3108089-ecda-4b07-86db-3efae60c31e0
 ms.openlocfilehash: 8c49df5a8c7f214b574b4f6118d182b63fec5dca
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57264969"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62262469"
 ---
 # <a name="iexecutioncontext-structure"></a>IExecutionContext Yapısı
 

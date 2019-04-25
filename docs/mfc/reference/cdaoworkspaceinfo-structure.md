@@ -8,11 +8,11 @@ helpviewer_keywords:
 - DAO (Data Access Objects), Workspaces collection
 ms.assetid: a1f4b25e-f9c6-4196-b075-d1df99c54124
 ms.openlocfilehash: afbc73c079a6deec3f3e1b7455f9f2dbface5025
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57271560"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62253641"
 ---
 # <a name="cdaoworkspaceinfo-structure"></a>CDaoWorkspaceInfo Yapısı
 

@@ -7,11 +7,11 @@ helpviewer_keywords:
 - composite controls classes
 ms.assetid: 9e8d65c4-d631-4500-a28b-6d42c35aba26
 ms.openlocfilehash: 017470814fb03378b4b7b0f90bc0ad83e3bc6ef4
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57815245"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62262313"
 ---
 # <a name="composite-controls-classes"></a>Bileşik Denetim sınıfları
 

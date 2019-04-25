@@ -9,11 +9,11 @@ helpviewer_keywords:
 - Varchar data type
 ms.assetid: cf572c35-5275-45b5-83df-5f0e36114f40
 ms.openlocfilehash: d356f094759775f709838de149769b1671fdf9ba
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57260120"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62305378"
 ---
 # <a name="tn045-mfcdatabase-support-for-long-varcharvarbinary"></a>TN045: Uzun Varchar/Varbinary için MFC/veritabanı desteği
 

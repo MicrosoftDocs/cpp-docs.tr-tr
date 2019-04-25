@@ -7,11 +7,11 @@ helpviewer_keywords:
 - dllexport attribute [C++], storage-class attribute
 ms.assetid: ab058610-0190-4354-8955-86db66add7c6
 ms.openlocfilehash: fa7a3c088b34d484a39e91f58e55c72d42ef3b43
-ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56152152"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62234159"
 ---
 # <a name="dll-import-and-export"></a>DLL İçeri ve Dışarı Aktarma
 

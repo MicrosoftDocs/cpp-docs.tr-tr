@@ -10,11 +10,11 @@ helpviewer_keywords:
 - functional header
 ms.assetid: 7dd463e8-a29f-49bc-aedd-8fa53b54bfbc
 ms.openlocfilehash: 317344db856a7a0568aca422ecfe8280b80db097
-ms.sourcegitcommit: 4299caac2dc9e806c74ac833d856a3838b0f52a1
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "57006675"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62159424"
 ---
 # <a name="ltfunctionalgt"></a>&lt;işlev&gt;
 

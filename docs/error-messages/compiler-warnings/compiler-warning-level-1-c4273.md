@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C4273
 ms.assetid: cc18611d-9454-40a4-ad73-69823d5888fb
 ms.openlocfilehash: 4d00ed0113f9954e7400da24f37b51b9fdd247bb
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50544332"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62207226"
 ---
 # <a name="compiler-warning-level-1-c4273"></a>Derleyici Uyarısı (düzey 1) C4273
 

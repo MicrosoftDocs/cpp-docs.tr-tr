@@ -8,11 +8,11 @@ helpviewer_keywords:
 - COM interfaces, COM map global functions
 ms.assetid: b9612d30-eb23-46ef-8093-d56f237d3cf1
 ms.openlocfilehash: 75d081674fa4b63e66f1296834d3de305665ab9a
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57271625"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62258422"
 ---
 # <a name="com-map-global-functions"></a>COM eşlemesi genel işlevleri
 

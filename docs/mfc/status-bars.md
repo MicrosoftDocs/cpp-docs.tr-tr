@@ -6,11 +6,11 @@ helpviewer_keywords:
 - control bars [MFC], status bar
 ms.assetid: fcbc5029-1aab-4e14-adf7-419038a4935e
 ms.openlocfilehash: 399beaf16eed2a3b488abfc14e255759e8dea779
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57300030"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62307139"
 ---
 # <a name="status-bars"></a>Durum Çubukları
 

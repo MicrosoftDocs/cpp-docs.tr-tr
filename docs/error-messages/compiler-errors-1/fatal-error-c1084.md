@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C1084
 ms.assetid: b2f273ef-3a14-4d5f-8ce0-7a11a0388fe6
 ms.openlocfilehash: 8c90616165a7b47d4251ace998fd49c613f244b5
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50548050"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62208821"
 ---
 # <a name="fatal-error-c1084"></a>Önemli hata C1084
 

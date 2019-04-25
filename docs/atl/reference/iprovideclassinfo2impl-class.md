@@ -14,11 +14,11 @@ helpviewer_keywords:
 - class information, ATL
 ms.assetid: d74956e8-9c69-4cba-b99d-ca1ac031bb9d
 ms.openlocfilehash: 41a0756250e749a07d48ad4f090c2f1c322aa558
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57289942"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62276048"
 ---
 # <a name="iprovideclassinfo2impl-class"></a>Iprovideclassınfo2ımpl sınıfı
 

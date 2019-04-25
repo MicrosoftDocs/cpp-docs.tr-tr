@@ -9,11 +9,11 @@ helpviewer_keywords:
 - bad_cast keyword [C++]
 ms.assetid: 31eae1e7-d8d5-40a0-9fef-64a6a4fc9021
 ms.openlocfilehash: 028fa8cc90b33aca6a37fb3b7f58b8c5fad81bd7
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50573359"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62284779"
 ---
 # <a name="badcast-exception"></a>bad_cast Özel Durumu
 

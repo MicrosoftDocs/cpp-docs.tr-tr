@@ -31,11 +31,11 @@ helpviewer_keywords:
 - registering to be called on exit
 ms.assetid: 45743298-0e2f-46cf-966d-1ca44babb443
 ms.openlocfilehash: c190f777032904802f771bab9fc323ba305ff32e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50609618"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62156051"
 ---
 # <a name="onexit-onexitm"></a>_onexit, _onexit_m
 

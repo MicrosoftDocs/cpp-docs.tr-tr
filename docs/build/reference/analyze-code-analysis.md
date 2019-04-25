@@ -12,11 +12,11 @@ helpviewer_keywords:
 - analyze compiler option [C++]
 ms.assetid: 81da536a-e030-4bd4-be18-383927597d08
 ms.openlocfilehash: 63cfd2bd206a361301c75110a684e1d2c642a1f2
-ms.sourcegitcommit: faa42c8a051e746d99dcebe70fd4bbaf3b023ace
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57819512"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62273163"
 ---
 # <a name="analyze-code-analysis"></a>/analyze (Kod Çözümleme)
 
@@ -95,5 +95,5 @@ Daha fazla bilgi için [C/C++ genel bakış için Kod Analizi](/visualstudio/cod
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [MSVC derleyici seçenekleri](compiler-options.md)
-- [MSVC derleyici komut satırı sözdizimi](compiler-command-line-syntax.md)
+- [MSVC Derleyicisi Seçenekleri](compiler-options.md)
+- [MSVC Derleyicisi Komut Satırı Söz Dizimi](compiler-command-line-syntax.md)

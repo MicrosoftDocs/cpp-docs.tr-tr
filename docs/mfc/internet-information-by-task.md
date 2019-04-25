@@ -5,11 +5,11 @@ helpviewer_keywords:
 - MFC, Internet applications
 ms.assetid: da078bf5-53c3-4167-b1ef-509b5a544ad9
 ms.openlocfilehash: 94bc17f59e0d0a7ed5627d0ed20d31e471c22fd9
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57294505"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62152810"
 ---
 # <a name="internet-information-by-task"></a>Göreve Göre Internet Bilgileri
 

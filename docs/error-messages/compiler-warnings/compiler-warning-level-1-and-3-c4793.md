@@ -16,11 +16,11 @@ helpviewer_keywords:
 - C4793
 ms.assetid: 819ada53-1d9c-49b8-a629-baf8c12314e6
 ms.openlocfilehash: e7ca3b10e09b0d6818fbc7f5607ebc9c95c7f15c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50623255"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62280548"
 ---
 # <a name="compiler-warning-level-1-and-3-c4793"></a>Derleyici Uyarısı (düzey 1 ve 3) C4793
 
@@ -38,7 +38,7 @@ Aşağıdaki tablo, tüm olası devamlılık iletileri listeler.
 |--------------------|-------------|
 |Yönetilen kodda hizalanmış veri türleri desteklenmiyor|CLR hangi verileri bildirimlerle gibi hizalanır varsa mümkün olmayabilir gerektiği gibi verileri ayırmak gereken [__m128](../../cpp/m128.md) veya [hizalama](../../cpp/align-cpp.md).|
 |'__ImageBase' kullanan işlevler yönetilen kodda desteklenmiyor|`__ImageBase` genellikle bir DLL'yi yalnızca alt düzey yerel kod tarafından kullanılan bir özel bağlayıcı semboldür.|
-|VarArgs tarafından desteklenmez ' / clr' derleyici seçeneği|Yerel işlevleri sahip yönetilen işlevlerin çağıramaz [değişken bağımsız değişken listeleri](../../cpp/functions-with-variable-argument-lists-cpp.md) (varargs) işlevleri farklı bir yığın düzeni gereksinimleri bulunduğundan. Ancak, belirtirseniz **/CLR: pure** derleyici seçeneği, değişken bağımsız değişken listeleri yalnızca işlevler yönetilen bütünleştirilmiş kod içerebileceğinden desteklenir. Daha fazla bilgi için [saf ve doğrulanabilen kod (C + +/ CLI)](../../dotnet/pure-and-verifiable-code-cpp-cli.md).|
+|VarArgs tarafından desteklenmez ' / clr' derleyici seçeneği|Yerel işlevleri sahip yönetilen işlevlerin çağıramaz [değişken bağımsız değişken listeleri](../../cpp/functions-with-variable-argument-lists-cpp.md) (varargs) işlevleri farklı bir yığın düzeni gereksinimleri bulunduğundan. Ancak, belirtirseniz **/CLR: pure** derleyici seçeneği, değişken bağımsız değişken listeleri yalnızca işlevler yönetilen bütünleştirilmiş kod içerebileceğinden desteklenir. Daha fazla bilgi için [saf ve doğrulanabilen kod (C++/CLI)](../../dotnet/pure-and-verifiable-code-cpp-cli.md).|
 |64 bit CLR veri __ptr32 değiştiriciyle bildirildi desteklemiyor|Bir işaretçi yerel işaretçiye geçerli platform aynı boyutta olması gerekir. Daha fazla bilgi için [__ptr32, \__ptr64](../../cpp/ptr32-ptr64.md).|
 |32 bitlik CLR veri __ptr64 değiştiriciyle bildirildi desteklemiyor|Bir işaretçi yerel işaretçiye geçerli platform aynı boyutta olması gerekir. Daha fazla bilgi için [__ptr32, \__ptr64](../../cpp/ptr32-ptr64.md).|
 |Bir veya daha fazla yapı içleri yönetilen kodda desteklenmiyor|İç adını ileti yayılan anda kullanılabilir değil. Ancak, bir iç öğe genellikle bu iletiyi neden olan bir alt düzey makine yönergesi temsil eder.|

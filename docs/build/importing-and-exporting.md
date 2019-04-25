@@ -9,11 +9,11 @@ helpviewer_keywords:
 - __declspec(dllimport) keyword [C++]
 ms.assetid: 7c44c2aa-2117-4cec-9615-a65bfd3f8f7b
 ms.openlocfilehash: 882010cd28c291e9f49ca0f7dd9d646c70130184
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57815833"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62188853"
 ---
 # <a name="importing-and-exporting"></a>İçeri ve Dışarı Aktarma
 
@@ -31,7 +31,7 @@ Bir modül-tanımlama (.def) dosyası, bir DLL'nin çeşitli özniteliklerini ta
 
 ## <a name="using-declspec"></a>__Declspec kullanma
 
-Visual C++ kullanan **__declspec(dllimport)** ve **__declspec(dllexport)** değiştirilecek **__export** daha önce Visual C++ 16-bit sürümlerinde kullanılan anahtar sözcüğü.
+Görsel C++ kullanan **__declspec(dllimport)** ve **__declspec(dllexport)** değiştirilecek **__export** daha önce görselin C++.
 
 Kullanmanız gerekmez **__declspec(dllimport)** doğru ancak bunun yapılması derlemek kodunuzu daha iyi kod oluşturmak derleyicinin sağlar. Bir işlevin bir DLL içinde veya değil, normal bir DLL sınırı aşıldığında bir işlev çağrısında mevcut olabilecek bir yöneltme düzeyi atlayan bir kod oluşturmak derleyicinin sağlayan mevcut olup olmadığını belirleyebilirsiniz çünkü daha iyi kod oluşturmak derleyicinin kuramıyor. Ancak, kullanmalısınız **__declspec(dllimport)** bir DLL içinde kullanılan değişkenler içeri aktarmak için.
 

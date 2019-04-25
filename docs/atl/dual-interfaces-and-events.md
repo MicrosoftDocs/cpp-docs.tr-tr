@@ -6,11 +6,11 @@ helpviewer_keywords:
 - dual interfaces, events
 ms.assetid: bb382f7c-e885-4274-bf07-83f3602615d2
 ms.openlocfilehash: 01233edb63145d69d335349bb9dff91e6a4aca5a
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57292564"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62198271"
 ---
 # <a name="dual-interfaces-and-events"></a>Çift arabirimler ve olaylar
 

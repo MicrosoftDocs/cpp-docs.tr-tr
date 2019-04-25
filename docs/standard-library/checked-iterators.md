@@ -11,11 +11,11 @@ helpviewer_keywords:
 - checked iterators
 ms.assetid: cfc87df8-e3d9-403b-ab78-e9483247d940
 ms.openlocfilehash: 163729b401fa917d7df0002c621998f5021757f6
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51521498"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62279170"
 ---
 # <a name="checked-iterators"></a>Denetlenmiş Yineleyiciler
 

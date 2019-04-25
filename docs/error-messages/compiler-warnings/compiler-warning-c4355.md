@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C4355
 ms.assetid: b819ecab-8a07-42d7-8fa4-1180d51626c0
 ms.openlocfilehash: 6b74c8dd5ce9860cb218d21790f12ba05e9be22f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50554186"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62151831"
 ---
 # <a name="compiler-warning-c4355"></a>Derleyici Uyarısı C4355
 

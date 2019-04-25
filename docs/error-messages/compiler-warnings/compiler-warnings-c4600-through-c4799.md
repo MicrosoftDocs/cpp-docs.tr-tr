@@ -1,6 +1,6 @@
 ---
-title: Derleyici uyarılarını C4600 ile c4799 arasındaki
-ms.date: 07/03/2018
+title: C4600 ile c4799 arasındaki derleyici uyarıları
+ms.date: 04/21/2019
 f1_keywords:
 - C4609
 - C4658
@@ -40,14 +40,14 @@ helpviewer_keywords:
 - C4767
 - C4770
 ms.assetid: 22bd4392-f3be-445c-9f23-6126aebac901
-ms.openlocfilehash: d1b1e06d3a2be71d6386554c704c547c6f2a4672
-ms.sourcegitcommit: c1f646c8b72f330fa8cf5ddb0f8f261ba10d16f0
+ms.openlocfilehash: 3df17b115797f4d68621854d072c41aca14a0fd8
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58328380"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62227037"
 ---
-# <a name="compiler-warnings-c4600-through-c4799"></a>Derleyici uyarılarını C4600 ile c4799 arasındaki
+# <a name="compiler-warnings-c4600-through-c4799"></a>C4600 ile c4799 arasındaki derleyici uyarıları
 
 Belgelerin bu bölümdeki makaleleri bir alt kümesini derleyici tarafından oluşturulan uyarı iletilerini açıklamaktadır.
 
@@ -63,7 +63,7 @@ Belgelerin bu bölümdeki makaleleri bir alt kümesini derleyici tarafından olu
 |Derleyici Uyarısı (düzey 1) C4604|'*türü*': yerel ve yönetilen sınırda değere göre bağımsız değişken geçirme, geçerli bir kopya Oluşturucusu gerektirir. Aksi takdirde çalışma zamanı davranışı tanımsızdır|
 |Derleyici Uyarısı (düzey 1) C4605|' /D*makrosu*' geçerli bir komut satırında belirtilen ancak ne zaman önceden derlenmiş üst bilgi oluşturulmuş belirtilmedi|
 |[Derleyici Uyarısı (düzey 1) C4606](../../error-messages/compiler-warnings/compiler-warning-level-1-c4606.md)|#pragma uyarısı: 'uyarı numarası yoksayıldı;' Kod çözümleme uyarıları, uyarı düzeyleriyle ilişkili değil.|
-|[Derleyici Uyarısı (düzey 3) C4608](../../error-messages/compiler-warnings/compiler-warning-level-3-c4608.md)|'union_member', 'union_member' Başlatıcı listesindeki başka bir birleşim üyesi tarafından zaten başlatıldı|
+|[Derleyici Uyarısı (Düzey 3) C4608](../../error-messages/compiler-warnings/compiler-warning-level-3-c4608.md)|'union_member', 'union_member' Başlatıcı listesindeki başka bir birleşim üyesi tarafından zaten başlatıldı|
 |Derleyici Uyarısı (Düzey 3, hata) C4609|'*type1*'varsayılan arabiriminden türetilen'*arabirimi*'type' on*type2*'. İçin varsayılan farklı bir arayüz kullanın '*type1*', veya taban/türetilmiş ilişkisini kesin.|
 |[Derleyici Uyarısı (düzey 4) C4610](../../error-messages/compiler-warnings/compiler-warning-level-4-c4610.md)|Nesne 'class' asla oluşturulamaz - kullanıcı tanımlı Oluşturucu gerekir|
 |[Derleyici Uyarısı (düzey 4) C4611](../../error-messages/compiler-warnings/compiler-warning-level-4-c4611.md)|'function' ile C++ nesne yok etme arasındaki etkileşim taşınabilir değildir.|
@@ -72,7 +72,7 @@ Belgelerin bu bölümdeki makaleleri bir alt kümesini derleyici tarafından olu
 |[Derleyici Uyarısı (düzey 1) C4615](../../error-messages/compiler-warnings/compiler-warning-level-1-c4615.md)|#pragma uyarısı: Bilinmeyen kullanıcı uyarısı türü|
 |[Derleyici Uyarısı (düzey 1) C4616](../../error-messages/compiler-warnings/compiler-warning-level-1-c4616.md)|#pragma uyarısı: uyarı numarası 'number' geçerli bir derleyici uyarısı|
 |[Derleyici Uyarısı (düzey 1) C4618](../../error-messages/compiler-warnings/compiler-warning-level-1-c4618.md)|pragma parametreleri boş bir dize içeriyordu; pragma yoksayıldı|
-|[Derleyici Uyarısı (düzey 3) C4619](../../error-messages/compiler-warnings/compiler-warning-level-3-c4619.md)|#pragma warning: 'number' numaralı bir uyarı yok|
+|[Derleyici Uyarısı (Düzey 3) C4619](../../error-messages/compiler-warnings/compiler-warning-level-3-c4619.md)|#pragma warning: 'number' numaralı bir uyarı yok|
 |[Derleyici Uyarısı (düzey 1) C4620](compiler-warning-level-1-c4620.md)|hiçbir sonek biçimi ' operator ++' 'type' önek biçimi kullanılıyor, türü için bulunamadı|
 |[Derleyici Uyarısı (düzey 1) C4621](../../error-messages/compiler-warnings/compiler-warning-level-1-c4621.md)|hiçbir 'operator--'type' önek biçimi kullanılıyor, türü için bulunamadı' sonek biçimi|
 |[Derleyici Uyarısı (Düzey 3) C4622](compiler-warning-level-3-c4622.md)|hata ayıklama bilgileri üzerine oluşturulmuş nesne dosyasındaki Ön derlenmiş üstbilginin oluşturulması sırasında: 'dosya'|
@@ -86,15 +86,15 @@ Belgelerin bu bölümdeki makaleleri bir alt kümesini derleyici tarafından olu
 |[Derleyici Uyarısı (düzey 1) C4630](../../error-messages/compiler-warnings/compiler-warning-level-1-c4630.md)|'symbol': 'extern' depolama sınıfı belirticisi üye tanımında geçersizdir|
 |Derleyici Uyarısı (Düzey 2) C4631|MSXML veya XPath kullanılamıyor, XML belgesi açıklamaları işlenmeyecek. Nedeni|
 |[Derleyici Uyarısı (düzey 1) C4632](../../error-messages/compiler-warnings/compiler-warning-level-1-c4632.md)|XML belgesi açıklaması: dosya - erişim reddedildi: nedeni|
-|[Derleyici Uyarısı (düzey 3) C4633](../../error-messages/compiler-warnings/compiler-warning-level-3-c4633.md)|XML belgesi yorum hedef: hata: nedeni|
+|[Derleyici Uyarısı (Düzey 3) C4633](../../error-messages/compiler-warnings/compiler-warning-level-3-c4633.md)|XML belgesi yorum hedef: hata: nedeni|
 |[Derleyici Uyarısı (düzey 4) C4634](compiler-warning-level-4-c4634.md)|XML belgesi yorum hedef: uygulanamaz: nedeni|
 |[Derleyici Uyarısı (Düzey 3) C4635](compiler-warning-level-3-c4635.md)|XML belgesi yorum hedef: hatalı oluşturulmuş XML: nedeni|
 |[Derleyici Uyarısı (Düzey 3) C4636](compiler-warning-level-3-c4636.md)|XML belgesi açıklaması oluşturmak için uygulanan: Etiket boş olmayan 'öznitelik' özniteliği gerektirir.|
 |[Derleyici Uyarısı (Düzey 3 ve düzey 4) C4637](compiler-warning-level-3-c4637.md)|XML belgesi yorum hedef: \<dahil > Etiket atıldı. Neden|
 |[Derleyici Uyarısı (Düzey 3) C4638](compiler-warning-level-3-c4638.md)|XML belgesi yorum hedef: Bilinmeyen Sembol 'symbol' başvurusu.|
 |[Derleyici Uyarısı (düzey 4) C4639](../../error-messages/compiler-warnings/compiler-warning-level-4-c4639.md)|MSXML hatası, XML belgesi açıklamaları işlenmeyecek. Neden|
-|[Derleyici Uyarısı (düzey 3) C4640](../../error-messages/compiler-warnings/compiler-warning-level-3-c4640.md)|'instance': yerel durağan nesnenin yapımı iş parçacığı güvenli değil|
-|[Derleyici Uyarısı (düzey 3) C4641](../../error-messages/compiler-warnings/compiler-warning-level-3-c4641.md)|XML belgesi açıklamasında belirsiz bir çapraz başvuru var:|
+|[Derleyici Uyarısı (Düzey 3) C4640](../../error-messages/compiler-warnings/compiler-warning-level-3-c4640.md)|'instance': yerel durağan nesnenin yapımı iş parçacığı güvenli değil|
+|[Derleyici Uyarısı (Düzey 3) C4641](../../error-messages/compiler-warnings/compiler-warning-level-3-c4641.md)|XML belgesi açıklamasında belirsiz bir çapraz başvuru var:|
 |[Derleyici Uyarısı (Düzey 3) C4645](compiler-warning-level-3-c4645.md)|__declspec(noreturn) ile bildirilen işlevde dönüş deyimi var|
 |[Derleyici Uyarısı (Düzey 3) C4646](compiler-warning-level-3-c4646.md)|__declspec(noreturn) ile bildirilen işlevde void olmayan dönüş türüne sahip.|
 |Derleyici Uyarısı (Düzey 3) C4647|davranış değişikliği: __is_pod (*türü*) önceki sürümlerde farklı değere sahip|
@@ -103,7 +103,7 @@ Belgelerin bu bölümdeki makaleleri bir alt kümesini derleyici tarafından olu
 |[Derleyici Uyarısı (düzey 1) C4650](../../error-messages/compiler-warnings/compiler-warning-level-1-c4650.md)|hata ayıklama bilgileri önceden derlenmiş üstbilgide değil; yalnızca üstbilgideki genel simgeler kullanılabilecek|
 |[Derleyici Uyarısı (düzey 1) C4651](../../error-messages/compiler-warnings/compiler-warning-level-1-c4651.md)|'Ön derlenmiş üstbilgi için geçerli derleme ancak belirtilen tanım'|
 |[Derleyici Uyarısı (düzey 1) C4652](../../error-messages/compiler-warnings/compiler-warning-level-1-c4652.md)|derleyici seçeneği 'seçeneği'; önceden derlenmiş üstbilgiyle tutarsız Geçerli komut satırı seçeneğiyle derlenmiş üstbilgide tanımlanan geçersiz kılar|
-|[Derleyici Uyarısı (düzey 2) C4653](../../error-messages/compiler-warnings/compiler-warning-level-2-c4653.md)|derleyici seçeneği 'seçeneği'; önceden derlenmiş üstbilgiyle tutarsız Geçerli komut satırı seçeneği yoksayıldı|
+|[Derleyici Uyarısı (Düzey 2) C4653](../../error-messages/compiler-warnings/compiler-warning-level-2-c4653.md)|derleyici seçeneği 'seçeneği'; önceden derlenmiş üstbilgiyle tutarsız Geçerli komut satırı seçeneği yoksayıldı|
 |Derleyici Uyarısı (düzey 4) C4654|Önce yerleştirilmiş kod içeren önceden derlenmiş üst bilgi satırı yok sayılacak. Kodu önceden derlenmiş üst bilgiye ekleyin.|
 |[Derleyici Uyarısı (düzey 1) C4655](compiler-warning-level-1-c4655.md)|'symbol': değişken türü son yapımdan beri yeni veya başka yerde farklı şekilde tanımlanmış|
 |[Derleyici Uyarısı (düzey 1) C4656](../../error-messages/compiler-warnings/compiler-warning-level-1-c4656.md)|'symbol': veri türü, yeni veya en son yapımdan beri değiştirildi veya başka yerde farklı şekilde tanımlanmış|
@@ -130,8 +130,8 @@ Belgelerin bu bölümdeki makaleleri bir alt kümesini derleyici tarafından olu
 |[Derleyici Uyarısı (düzey 1) C4683](../../error-messages/compiler-warnings/compiler-warning-level-1-c4683.md)|'function': olay kaynağı olan bir 'out'-parametre; birden çok olay işleyicisi yakalarken dikkatli olun|
 |[Derleyici Uyarısı (düzey 1) C4684](../../error-messages/compiler-warnings/compiler-warning-level-1-c4684.md)|'attribute': UYARI!! öznitelik geçersiz kod oluşturmaya neden olabilir: dikkatli kullanın|
 |[Derleyici Uyarısı (düzey 1) C4685](compiler-warning-level-1-c4685.md)|bekleniyor ' >> ' bulundu ' >> ' şablon parametreleri ayrıştırılırken|
-|[Derleyici Uyarısı (düzey 3) C4686](../../error-messages/compiler-warnings/compiler-warning-level-3-c4686.md)|'user-defined type': davranışta olası bir değişiklik var, UDT'de değişiklik çağırma kuralı döndürüyor|
-|[Derleyici Uyarısı (hata) C4687](../../error-messages/compiler-warnings/compiler-warning-c4687.md)|'class': kapalı bir soyut sınıf 'interface' bir arabirim uygulayamaz|
+|[Derleyici Uyarısı (Düzey 3) C4686](../../error-messages/compiler-warnings/compiler-warning-level-3-c4686.md)|'user-defined type': davranışta olası bir değişiklik var, UDT'de değişiklik çağırma kuralı döndürüyor|
+|[Derleyici Uyarısı C4687 (hata)](../../error-messages/compiler-warnings/compiler-warning-c4687.md)|'class': kapalı bir soyut sınıf 'interface' bir arabirim uygulayamaz|
 |[Derleyici Uyarısı (düzey 1) C4688](../../error-messages/compiler-warnings/compiler-warning-level-1-c4688.md)|'kısıtlaması': sınırlama listesi 'type' derleme özel türünü içeriyor|
 |Derleyici Uyarısı (düzey 1) C4689|'%c': #pragma detect_mismatch değerinde; karakter desteklenmiyor #pragma yoksayıldı|
 |[Derleyici Uyarısı (düzey 4) C4690](../../error-messages/compiler-warnings/compiler-warning-level-4-c4690.md)|\[ emitidl (pop)]: atma sayısından fazla|
@@ -158,22 +158,22 @@ Belgelerin bu bölümdeki makaleleri bir alt kümesini derleyici tarafından olu
 |Derleyici Uyarısı (Düzey 2) C4720|Satır içi Birleştirici raporları: 'message'|
 |Derleyici Uyarısı (düzey 1) C4721|'function': iç öğe olarak kullanılamıyor|
 |[Derleyici Uyarısı (düzey 1) C4722](compiler-warning-level-1-c4722.md)|'function': yok edici hiç dönmüyor, olası bellek sızıntısı|
-|[Derleyici Uyarısı (düzey 3) C4723](../../error-messages/compiler-warnings/compiler-warning-level-3-c4723.md)|olası 0 ile bölme|
+|[Derleyici Uyarısı (Düzey 3) C4723](../../error-messages/compiler-warnings/compiler-warning-level-3-c4723.md)|olası 0 ile bölme|
 |[Derleyici Uyarısı (Düzey 3) C4724](compiler-warning-level-3-c4724.md)|olası 0 ile mod|
 |Derleyici Uyarısı (Düzey 3) C4725|yönerge bazı Pentium'larda yanlış olabilir.|
 |[Derleyici Uyarısı (düzey 1) C4727](../../error-messages/compiler-warnings/compiler-warning-level-1-c4727.md)|PCH pch_file adlı obj_file_1 ve obj_file_2 bulunan aynı zaman damgasına sahip.  İlk PCH kullanılıyor.|
 |Derleyici Uyarısı (düzey 1) C4728|/ Yl-PCH başvurusu gerekli olduğu için seçeneği yoksayıldı|
 |Derleyici Uyarısı (düzey 4) C4729|Akış grafı için çok büyük işlevi, uyarı tabanlı|
 |[Derleyici Uyarısı (düzey 1) C4730](../../error-messages/compiler-warnings/compiler-warning-level-1-c4730.md)Derleyici Uyarısı (düzey 1) C4730|'main': mixing _m64 ve kayan nokta ifadeleri hatalı koda neden olabilir|
-|[Derleyici Uyarısı (Düzey 1) C4731](../../error-messages/compiler-warnings/compiler-warning-level-1-c4731.md)|'işaretçisi': çerçeve işaretçisi kaydı satır içi derleme kodu tarafından değiştirilen 'register'|
+|[Derleyici Uyarısı (düzey 1) C4731](../../error-messages/compiler-warnings/compiler-warning-level-1-c4731.md)|'işaretçisi': çerçeve işaretçisi kaydı satır içi derleme kodu tarafından değiştirilen 'register'|
 |Derleyici Uyarısı (düzey 1) C4732|İç '%s' Bu mimaride desteklenmiyor|
-|[Derleyici Uyarısı (Düzey 1) C4733](../../error-messages/compiler-warnings/compiler-warning-level-1-c4733.md)|Satır içi asm 'FS:0 için' atama: işleyici güvenli bir işleyici olarak kayıtlı değil|
+|[Derleyici Uyarısı (düzey 1) C4733](../../error-messages/compiler-warnings/compiler-warning-level-1-c4733.md)|Satır içi asm 'FS:0 için' atama: işleyici güvenli bir işleyici olarak kayıtlı değil|
 |[Derleyici Uyarısı (Düzey 3) C4738](../../error-messages/compiler-warnings/compiler-warning-level-3-c4738.md)|32 bit kayan sonuç bellekte depolanıyor, olası performans kaybı|
 |[Derleyici Uyarısı (düzey 1) C4739](compiler-warning-level-1-c4739.md)|'var' değişkeni başvuru depolama alanını aşıyor|
-|[Derleyici Uyarısı (Düzey 4) C4740](../../error-messages/compiler-warnings/compiler-warning-level-4-c4740.md)|veya satır içi asm kodunda dışarı akma, genel iyileştirmeyi bastırır|
-|[Derleyici Uyarısı (Düzey 1) C4742](../../error-messages/compiler-warnings/compiler-warning-level-1-c4742.md)|'var', 'dosya1' ve 'dosya2' farklı hizalamaya sahip: ve numarası|
-|[Derleyici Uyarısı (Düzey 1) C4743](../../error-messages/compiler-warnings/compiler-warning-level-1-c4743.md)|'type', 'dosya1' ve 'dosya2' başka bir boyutu vardır: sayı ve bayt sayısı|
-|[Derleyici Uyarısı (Düzey 1) C4744](../../error-messages/compiler-warnings/compiler-warning-level-1-c4744.md)|'var', 'dosya1' ve 'dosya2' farklı türe sahip: 'type1' ve 'type2'|
+|[Derleyici Uyarısı (düzey 4) C4740](../../error-messages/compiler-warnings/compiler-warning-level-4-c4740.md)|veya satır içi asm kodunda dışarı akma, genel iyileştirmeyi bastırır|
+|[Derleyici Uyarısı (düzey 1) C4742](../../error-messages/compiler-warnings/compiler-warning-level-1-c4742.md)|'var', 'dosya1' ve 'dosya2' farklı hizalamaya sahip: ve numarası|
+|[Derleyici Uyarısı (düzey 1) C4743](../../error-messages/compiler-warnings/compiler-warning-level-1-c4743.md)|'type', 'dosya1' ve 'dosya2' başka bir boyutu vardır: sayı ve bayt sayısı|
+|[Derleyici Uyarısı (düzey 1) C4744](../../error-messages/compiler-warnings/compiler-warning-level-1-c4744.md)|'var', 'dosya1' ve 'dosya2' farklı türe sahip: 'type1' ve 'type2'|
 |[Derleyici Uyarısı C4746](../../error-messages/compiler-warnings/compiler-warning-c4746.md)|Geçici Erişim '*ifade*' / volatile tabi olduğu:\<ISO&#124;ms > ayarı; iç işlevleri __iso_volatile_load depolama kullanmayı düşünün|
 |[Derleyici Uyarısı (düzey 1) C4747](../../error-messages/compiler-warnings/compiler-warning-level-1-c4747.md)|Yönetilen çağırma 'giriş noktası': Yönetilen kod DLL giriş noktası ve DLL giriş noktasından ulaşılan çağrılar dahil olmak üzere, yükleyici kilidi altında çalışmayabilir|
 |Derleyici Uyarısı (düzey 4) C4749|koşullu olarak desteklenir: olmayan Düzen standart türe uygulanan'offsetof '*türü*'|
@@ -182,7 +182,7 @@ Belgelerin bu bölümdeki makaleleri bir alt kümesini derleyici tarafından olu
 |Derleyici Uyarısı (düzey 4) C4752|Intel(r) Gelişmiş vektör uzantıları bulundu; / arch: kullanmayı düşünün|
 |[Derleyici Uyarısı (düzey 4) C4754](compiler-warning-level-4-c4754.md)|%S(%d) konumundaki karşılaştırma içindeki aritmetik işlemler için dönüştürme kuralları bir dalın yürütülemez anlamına gelir. '%S', '%s' (veya %d baytlık benzer bir tür) dönüştürün.|
 |Derleyici Uyarısı C4755|%S(%d) konumundaki karşılaştırma içindeki aritmetik işlemler için dönüştürme kuralları bir dalın satır içine alınmış bir işlevde yürütülemez anlamına gelir. '%S', '%s' (veya %d baytlık benzer bir tür) dönüştürün.|
-|[Derleyici Uyarısı (düzey 2) C4756](../../error-messages/compiler-warnings/compiler-warning-level-2-c4756.md)|Sabit aritmetikte taşma|
+|[Derleyici Uyarısı (Düzey 2) C4756](../../error-messages/compiler-warnings/compiler-warning-level-2-c4756.md)|Sabit aritmetikte taşma|
 |Derleyici Uyarısı (düzey 4) C4757|alt simge büyük bir imzalanmamış değer, negatif bir sabit mi istiyorsunuz?|
 |[Derleyici Uyarısı (düzey 4) C4764](compiler-warning-level-4-c4764.md)|Yakalama nesneleri 16 baytın hizalayabilirsiniz değil|
 |Derleyici Uyarısı (düzey 4) C4767|'%s' bölüm adı 8 karakterden daha uzun ve bağlayıcı tarafından kesilecek|
@@ -195,9 +195,14 @@ Belgelerin bu bölümdeki makaleleri bir alt kümesini derleyici tarafından olu
 |Derleyici Uyarısı (düzey 1) C4776|' %*karakter*'işlevinin Biçim dizesinde izin verilmez'*işlevi*'|
 |Derleyici Uyarısı (düzey 4) C4777|'*işlevi*': biçim dizesi '*dize*'türünde bir bağımsız değişken gerektirir'*type1*', ancak değişen sayıda bağımsız değişkeni *numarası* türüne sahip '*type2*'|
 |Derleyici Uyarısı (Düzey 3) C4778|'*işlevi*': Sonlandırılmamış biçim dizesi '*dize*'|
-|[Derleyici Uyarısı (Düzey 1) C4788](../../error-messages/compiler-warnings/compiler-warning-level-1-c4788.md)|'identifier': tanımlayıcı 'number' karakter olarak kesildi|
-|[Derleyici Uyarısı (Düzey 1) C4789](../../error-messages/compiler-warnings/compiler-warning-level-1-c4789.md)|Arabellek boyutu N bayt ' identifier' aşırı çalıştırılacak; M bayt L uzaklığında başlayarak yazılacak|
+|[Derleyici Uyarısı (düzey 1) C4788](../../error-messages/compiler-warnings/compiler-warning-level-1-c4788.md)|'identifier': tanımlayıcı 'number' karakter olarak kesildi|
+|[Derleyici Uyarısı (düzey 1) C4789](../../error-messages/compiler-warnings/compiler-warning-level-1-c4789.md)|Arabellek boyutu N bayt ' identifier' aşırı çalıştırılacak; M bayt L uzaklığında başlayarak yazılacak|
 |Derleyici Uyarısı (Düzey 2) C4792|'%s' işlevi sysimport kullanılarak bildirildi ve yerel koddan başvuruldu; bağlanmak için gerekli içeri aktarma kitaplığı|
 |[Derleyici Uyarısı (düzey 1 ve 3) C4793](../../error-messages/compiler-warnings/compiler-warning-level-1-and-3-c4793.md)|'function': işlev yerel: \n\t'reason derlenmiş '|
 |[Derleyici Uyarısı (düzey 1) C4794](compiler-warning-level-1-c4794.md)|Segment iş parçacığında yerel depolama değişken '% '%s' öğesinden '%s' s' değiştirildi|
 |[Derleyici Uyarısı (düzey 1) C4799](../../error-messages/compiler-warnings/compiler-warning-level-1-c4799.md)|' Function 'işlevini EMMS yönergesi yok|
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[C /C++ derleyicisi ve derleme araçları hataları ve Uyarıları](../compiler-errors-1/c-cpp-build-errors.md) \
+[Derleyici uyarılarını C4000 - C5999](compiler-warnings-c4000-c5999.md)

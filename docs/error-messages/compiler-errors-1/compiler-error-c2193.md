@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2193
 ms.assetid: 9813e853-d581-4f51-bb75-4e242298a844
 ms.openlocfilehash: 1eb1145b7927733ab82253632847da90542250fd
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50574206"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62302624"
 ---
 # <a name="compiler-error-c2193"></a>Derleyici Hatası C2193
 

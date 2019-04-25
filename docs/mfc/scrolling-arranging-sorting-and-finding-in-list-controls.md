@@ -12,11 +12,11 @@ helpviewer_keywords:
 - CListCtrl class [MFC], arranging the list
 ms.assetid: dcc51e4c-0ca8-4319-bec5-6994cc8ac9e5
 ms.openlocfilehash: 94ede322536f0ef57a87b4e6d4d448e4dff34814
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57277748"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62308517"
 ---
 # <a name="scrolling-arranging-sorting-and-finding-in-list-controls"></a>Liste Denetimlerinde Kaydırma, Düzenleme Sıralama ve Bulma
 

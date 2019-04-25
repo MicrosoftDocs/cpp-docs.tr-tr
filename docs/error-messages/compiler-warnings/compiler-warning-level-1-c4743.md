@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C4743
 ms.assetid: 2ee76ea3-77f3-4c2f-9a57-0751823c89fd
 ms.openlocfilehash: d17fd65f1108aab6e3ce97ec75c0ffb899c06cda
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50441853"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62152014"
 ---
 # <a name="compiler-warning-level-1-c4743"></a>Derleyici Uyarısı (düzey 1) C4743
 

@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3052
 ms.assetid: 87480c42-1ceb-4775-8d20-88c54a7bb6a6
 ms.openlocfilehash: ed9c27e1602f9372cb9137615ef66932a8df960c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50441840"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62265782"
 ---
 # <a name="compiler-error-c3052"></a>Derleyici Hatası C3052
 

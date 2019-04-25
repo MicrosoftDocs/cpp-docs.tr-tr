@@ -6,11 +6,11 @@ helpviewer_keywords:
 - examples [ATL]
 ms.assetid: a49721b7-f308-43de-8868-f662a94bc81a
 ms.openlocfilehash: 3113637a3f777a56bc0b0994203ce709fbc189d5
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57265073"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62223348"
 ---
 # <a name="atl-connection-point-example"></a>ATL bağlantı noktası örneği
 

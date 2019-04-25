@@ -1,17 +1,17 @@
 ---
-title: Atama (C + +/ CX)
+title: Atama (C++/CX)
 ms.date: 06/19/2018
 ms.assetid: 5247f6c7-6a0a-4021-97c9-21c868bd9455
 ms.openlocfilehash: 65d489d14c91b462e5a2bbe8bd60fce2657904a7
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50454827"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62258219"
 ---
-# <a name="casting-ccx"></a>Atama (C + +/ CX)
+# <a name="casting-ccx"></a>Atama (C++/CX)
 
-Dört farklı atama işleçleri, Windows çalışma zamanı türleri için geçerlidir: [static_cast işleci](../cpp/static-cast-operator.md), [dynamic_cast işleci](../cpp/dynamic-cast-operator.md), **safe_cast işleci**, ve [ reinterpret_cast işleci](../cpp/reinterpret-cast-operator.md). **safe_cast** ve **static_cast** dönüştürme gerçekleştirilemediğinde; bir özel durum [static_cast işleci](../cpp/static-cast-operator.md) de derleme zamanı tür denetimi gerçekleştirir. **dynamic_cast** döndürür **nullptr** türüne dönüştürme başarısız olursa. Ancak **reinterpret_cast** boş olmayan bir değer döndürür geçersiz olabilir. Bu nedenle, değil kullanmanızı öneririz **reinterpret_cast** atama başarılı olduğunu bilmiyorsanız. Ayrıca, C stili atamaları, C +'da kullanmamanızı öneririz +/ CX kod aynı olduklarından **reinterpret_cast**.
+Dört farklı atama işleçleri, Windows çalışma zamanı türleri için geçerlidir: [static_cast işleci](../cpp/static-cast-operator.md), [dynamic_cast işleci](../cpp/dynamic-cast-operator.md), **safe_cast işleci**, ve [ reinterpret_cast işleci](../cpp/reinterpret-cast-operator.md). **safe_cast** ve **static_cast** dönüştürme gerçekleştirilemediğinde; bir özel durum [static_cast işleci](../cpp/static-cast-operator.md) de derleme zamanı tür denetimi gerçekleştirir. **dynamic_cast** döndürür **nullptr** türüne dönüştürme başarısız olursa. Ancak **reinterpret_cast** boş olmayan bir değer döndürür geçersiz olabilir. Bu nedenle, değil kullanmanızı öneririz **reinterpret_cast** atama başarılı olduğunu bilmiyorsanız. Ayrıca, C stili yayınlar içinde kullanmamanızı öneririz, C++/CX kod aynı olduklarından **reinterpret_cast**.
 
 Derleyici ve çalışma zamanı ayrıca örtük atamalar gerçekleştirmek — Örneğin, bir yöntem parametresi bağımsız değişken olarak bir değer türü veya yerleşik tür geçirilir, işlemleri kutulama türüdür `Object^`. Teorik olarak bir örtük tür dönüştürme hiçbir zaman çalışma zamanında bir özel durum neden olmaz; Derleyici örtük bir dönüştürme gerçekleştirilemiyor, derleme sırasında bir hata oluşturur.
 
@@ -123,4 +123,4 @@ Aşağıdaki tabloda özetlenmiştir olduğu kullanmak üzere güvenli çalışm
 
 - [Tür Sistemi](../cppcx/type-system-c-cx.md)
 - [Visual C++ Dil Başvurusu](../cppcx/visual-c-language-reference-c-cx.md)
-- [Ad alanları başvurusu](../cppcx/namespaces-reference-c-cx.md)
+- [Ad Alanları Başvurusu](../cppcx/namespaces-reference-c-cx.md)

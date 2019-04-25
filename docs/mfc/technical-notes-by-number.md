@@ -5,11 +5,11 @@ f1_keywords:
 - vc.tables.mfc.technotes
 ms.assetid: aaa449be-9167-4510-a490-af872c4f60a2
 ms.openlocfilehash: c5a102f36c5556af48a1b3f79e39f256bc5797ab
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50634882"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62306411"
 ---
 # <a name="technical-notes-by-number"></a>Sayıya Göre Teknik Notlar
 
@@ -35,7 +35,7 @@ Aşağıdaki teknik notlar sayısal, önce en son yazılan Teknik Not ile birlik
 |54|[Doğrudan MFC DAO sınıflarını kullanırken DAO'yu çağırma](../mfc/tn054-calling-dao-directly-while-using-mfc-dao-classes.md)|
 |53|[DAO veritabanı sınıfları için özel DFX rutinleri yazma](../mfc/tn053-custom-dfx-routines-for-dao-database-classes.md)|
 |51|[Şimdi ve gelecekte ctl3d kullanımı](../mfc/tn051-using-ctl3d-now-and-in-the-future.md)|
-|50|[MFC/OLE ortak iletişim kutuları (Mfcuıx32)](../mfc/tn050-mfc-ole-common-dialogs-mfcuix32.md)|
+|50|[MFC/OLE Common Dialogs (MFCUIx32)](../mfc/tn050-mfc-ole-common-dialogs-mfcuix32.md)|
 |49|[MFC/OLE MBCS'den Unicode çeviri katmanına (MFCANS32)](../mfc/tn049-mfc-ole-mbcs-to-unicode-translation-layer-mfcans32.md)|
 |48|[MFC veritabanı uygulamaları için ODBC Kurulum ve yönetim programları yazma](../mfc/tn048-writing-odbc-setup-and-administration-programs.md)|
 |47|[Veritabanı işlem gereksinimlerini gevşetme](../mfc/tn047-relaxing-database-transaction-requirements.md)|

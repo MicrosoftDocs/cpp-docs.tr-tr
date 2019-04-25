@@ -13,11 +13,11 @@ helpviewer_keywords:
 - IPointerInactiveImpl class
 ms.assetid: e1fe9ea6-d38a-4527-9112-eb344771e0b7
 ms.openlocfilehash: d7d9f048fceb3a569b024d7fe2b87f30a828b68e
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57266841"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62274834"
 ---
 # <a name="ipointerinactiveimpl-class"></a>Ipointerınactiveımpl sınıfı
 

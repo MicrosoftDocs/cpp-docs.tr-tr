@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C4937
 ms.assetid: 2bb9f0e7-bbd6-4697-84de-95955e32ae29
 ms.openlocfilehash: 64565ad37c965aa0af3b912988586b37270be6a4
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50548762"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62280277"
 ---
 # <a name="compiler-warning-level-4-c4937"></a>Derleyici Uyarısı (düzey 4) C4937
 

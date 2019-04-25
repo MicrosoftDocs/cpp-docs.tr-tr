@@ -11,11 +11,11 @@ helpviewer_keywords:
 - operators [C++], logical
 ms.assetid: f9185d85-65d5-4f64-a6d6-679758d52217
 ms.openlocfilehash: 07af1b507cf256b84ac2f0f2db4061790a23555a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50659621"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62232020"
 ---
 # <a name="bitwise-exclusive-or-operator-"></a>Bit Düzeyinde Özel OR İşleci: ^
 

@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2776
 ms.assetid: 9d80addc-62c7-40fc-a2cc-60303abb87df
 ms.openlocfilehash: 200fbc5c42a6b735c072c093ec4cb4f081031824
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50652155"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62257107"
 ---
 # <a name="compiler-error-c2776"></a>Derleyici Hatası C2776
 

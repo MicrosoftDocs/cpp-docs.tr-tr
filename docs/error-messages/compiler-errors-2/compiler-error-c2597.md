@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2597
 ms.assetid: 2e48127d-e3ff-4a40-8156-2863e45b1a38
 ms.openlocfilehash: b7bdd10ebd70eb61746690958532854dd98c6429
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50641200"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62228596"
 ---
 # <a name="compiler-error-c2597"></a>Derleyici Hatası C2597
 

@@ -9,11 +9,11 @@ helpviewer_keywords:
 - declarators, functions
 ms.assetid: 33ba01d5-75b5-48d2-8eab-5483ac7d2274
 ms.openlocfilehash: aafd3be3b27fbe134b380a29083b4ca36177e702
-ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52176490"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62154140"
 ---
 # <a name="functions-c"></a>İşlevler [C++]
 
@@ -196,7 +196,7 @@ Bir işlevin başvuruya göre geçirilen bağımsız değişken değiştirdiğin
 void DoSomething(const std::string& input){...}
 ```
 
-**C++ 11:** rvalue başvurusu veya lvalue başvuru tarafından geçirilen bağımsız değişkenleri açıkça işlemek için evrensel bir başvuru belirtmek için parametresi bir çift ampersan kullanın:
+**C++11:**  Rvalue başvuru veya lvalue başvuru tarafından geçirilen bağımsız değişkenleri açıkça işlemek için bir evrensel başvuru göstermek için parametresinde bir ve işareti çift kullanın:
 
 ```cpp
 void DoSomething(const std::string&& input){...}
@@ -363,7 +363,7 @@ Bir işlevden birden fazla değer döndürmek için çeşitli yollar vardır:
     }
     ```
 
-1. **Visual Studio 2017 sürüm 15.3 ve üzeri** (bulunan [/Std: c ++ 17](../build/reference/std-specify-language-standard-version.md)): yapılandırılmış bağlamalar kullanın. Yapılandırılmış bağlamalar avantajı, bazı durumlarda önemli ölçüde daha verimli olabilir dönüş değerlerini depolayan değişkenleri bildirildikleri, aynı anda başlatılır ' dir. Bu bildirimde--`auto[x, y, z] = f();`--köşeli ayraçlar tanıtır ve tüm işlev bloğu için kapsamda olan adlar Başlat.
+1. **Visual Studio 2017 sürüm 15.3 ve üzeri** (bulunan [/Std: c ++ 17](../build/reference/std-specify-language-standard-version.md)): Yapılandırılmış bağlamalar kullanın. Yapılandırılmış bağlamalar avantajı, bazı durumlarda önemli ölçüde daha verimli olabilir dönüş değerlerini depolayan değişkenleri bildirildikleri, aynı anda başlatılır ' dir. Bu bildirimde--`auto[x, y, z] = f();`--köşeli ayraçlar tanıtır ve tüm işlev bloğu için kapsamda olan adlar Başlat.
 
     ```cpp
     #include <tuple>
@@ -409,7 +409,7 @@ Bir işlevden birden fazla değer döndürmek için çeşitli yollar vardır:
 
 C++, C dili olarak aynı şekilde işlev işaretçilerine destekler. Ancak daha fazla tür kullanımı uyumlu bir alternatif genellikle bir işlev nesnesi kullanmaktır.
 
-Önerilir **typedef** bir işlev işaretçisi türü döndüren bir işlev bildiriliyorsa, işlev işaretçisi türü için bir diğer ad bildirmek için kullanılır.  Örneğin
+Önerilir **typedef** bir işlev işaretçisi türü döndüren bir işlev bildiriliyorsa, işlev işaretçisi türü için bir diğer ad bildirmek için kullanılır.  Örneğin:
 
 ```cpp
 typedef int (*fp)(int);

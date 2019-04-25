@@ -8,11 +8,11 @@ helpviewer_keywords:
 - source programs
 ms.assetid: 18bb2826-17da-48e5-92a2-10e649f1bc9f
 ms.openlocfilehash: 4562f8397e9d2d3e044086b8da8d56ba25047ebd
-ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56152540"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62158144"
 ---
 # <a name="source-files-and-source-programs"></a>Kaynak Dosyalar ve Kaynak Programlar
 

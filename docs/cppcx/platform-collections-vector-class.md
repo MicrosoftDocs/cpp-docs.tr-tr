@@ -22,11 +22,11 @@ helpviewer_keywords:
 - Vector Class (C++/Cx)
 ms.assetid: aee8c076-9700-47c3-99b6-799fd3edb0ca
 ms.openlocfilehash: 5466f1d1c8987724aa0768cd8915e06b62b031ad
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57747131"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62161647"
 ---
 # <a name="platformcollectionsvector-class"></a>Platform::Collections:: Vector sınıfı
 
@@ -63,7 +63,7 @@ Türündeki değerlerle eşitlik testi için bir ikili koşula belirtir *T*. Var
 
 **Vektör** sınıfı, C++ somut uygulamasını [Windows::Foundation::Collections::IVector](/uwp/api/Windows.Foundation.Collections.IVector_T_) arabirimi.
 
-Kullanmayı denerseniz bir **vektör** türü ortak dönüş değeri veya parametre, derleyici hatası C3986 oluşturulur. Parametre değiştirerek hatayı düzeltin ya da dönüş değeri türüne [Windows::Foundation::Collections::IVector](/uwp/api/Windows.Foundation.Collections.IVector_T_). Daha fazla bilgi için [koleksiyonlar (C + +/ CX)](../cppcx/collections-c-cx.md).
+Kullanmayı denerseniz bir **vektör** türü ortak dönüş değeri veya parametre, derleyici hatası C3986 oluşturulur. Parametre değiştirerek hatayı düzeltin ya da dönüş değeri türüne [Windows::Foundation::Collections::IVector](/uwp/api/Windows.Foundation.Collections.IVector_T_). Daha fazla bilgi için [koleksiyonları (C++/CX)](../cppcx/collections-c-cx.md).
 
 ### <a name="members"></a>Üyeler
 

@@ -7,11 +7,11 @@ helpviewer_keywords:
 - __declspec keyword [C++], allocator
 - allocator __declspec keyword
 ms.openlocfilehash: f9c8de7c8686b89a2ab9570a2558e3f649e545b5
-ms.sourcegitcommit: 0064d37467f958dd6a5111f20d7660eaccd53ee9
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58417085"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62155244"
 ---
 # <a name="allocator"></a>allocator
 

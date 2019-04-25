@@ -21,11 +21,11 @@ helpviewer_keywords:
 - not function
 ms.assetid: d2ddbd5c-33c0-4aff-8961-feac155b4ba1
 ms.openlocfilehash: 3abe5a5ec6cd40dd6f4e689c7c3f8ebb9eb1550f
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51518261"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62156129"
 ---
 # <a name="not"></a>not
 

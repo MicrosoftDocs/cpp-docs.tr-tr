@@ -16,11 +16,11 @@ helpviewer_keywords:
 - operator delete
 ms.assetid: bcd0066a-0022-45f5-af4c-9007c64a6b89
 ms.openlocfilehash: 9e139992ad82bac44de5638201a5713109f0bcce
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57749717"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62289500"
 ---
 # <a name="operator-delete-crt"></a>delete işleci (CRT)
 

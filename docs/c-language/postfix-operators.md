@@ -6,11 +6,11 @@ helpviewer_keywords:
 - postfix operators
 ms.assetid: 76260011-1624-484e-8bef-72ae7ab556cc
 ms.openlocfilehash: a86ede25feeaee3a9fb1c6b146cf9667b85c0c2f
-ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56147912"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62232253"
 ---
 # <a name="postfix-operators"></a>Sonek İşleçleri
 

@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2758
 ms.assetid: 1d273034-194c-4926-9869-142d1b219cbe
 ms.openlocfilehash: c3a86b8b8c7f122929a52221d4f01a17c50395be
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50618042"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62257666"
 ---
 # <a name="compiler-error-c2758"></a>Derleyici Hatası C2758
 

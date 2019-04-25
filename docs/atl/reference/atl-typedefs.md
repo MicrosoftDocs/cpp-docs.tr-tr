@@ -24,11 +24,11 @@ helpviewer_keywords:
 - ATL, typedefs
 ms.assetid: 7dd05baa-3efb-4e3b-af23-793c610f4560
 ms.openlocfilehash: f3db32e85ea9cba1e946db6259c00c621650e969
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57290566"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62260863"
 ---
 # <a name="atl-typedefs"></a>ATL tür tanımları
 
@@ -170,7 +170,7 @@ Kullanarak `CComGlobalsThreadModel` belirli bir iş parçacığı model sınıf�
 
 Ek olarak `CComGlobalsThreadModel`, ATL sağlar **typedef** adı [CComObjectThreadModel](#ccomobjectthreadmodel). Her tarafından başvurulan sınıfın `typedef` iş parçacığı modeline kullanıldığında, aşağıdaki tabloda gösterildiği gibi bağlıdır:
 
-| typedef|Çoklu iş parçacığı oluşturma|Grup iş parçacığı oluşturma|Ücretsiz iş parçacığı oluşturma|
+|typedef|Çoklu iş parçacığı oluşturma|Grup iş parçacığı oluşturma|Ücretsiz iş parçacığı oluşturma|
 |-------------|----------------------|-------------------------|--------------------|
 |`CComObjectThreadModel`|S|S|M|
 |`CComGlobalsThreadModel`|S|M|M|
@@ -210,7 +210,7 @@ Kullanarak `CComObjectThreadModel` belirli bir iş parçacığı model sınıfı
 
 Ek olarak `CComObjectThreadModel`, ATL sağlar **typedef** adı [CComGlobalsThreadModel](#ccomglobalsthreadmodel). Her tarafından başvurulan sınıfın **typedef** iş parçacığı modeline kullanıldığında, aşağıdaki tabloda gösterildiği gibi bağlıdır:
 
-| typedef|Çoklu iş parçacığı oluşturma|Grup iş parçacığı oluşturma|Ücretsiz iş parçacığı oluşturma|
+|typedef|Çoklu iş parçacığı oluşturma|Grup iş parçacığı oluşturma|Ücretsiz iş parçacığı oluşturma|
 |-------------|----------------------|-------------------------|--------------------|
 |`CComObjectThreadModel`|S|S|M|
 |`CComGlobalsThreadModel`|S|M|M|

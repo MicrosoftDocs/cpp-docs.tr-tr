@@ -6,11 +6,11 @@ helpviewer_keywords:
 - header controls [MFC], creating
 ms.assetid: 7864d9d2-4a2c-4622-b58b-7b110a1e28d2
 ms.openlocfilehash: 669b13cf566f24bfcd5a29ae41af1cdb90513f73
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57326146"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62242321"
 ---
 # <a name="creating-the-header-control"></a>Üstbilgi Denetimi Oluşturma
 

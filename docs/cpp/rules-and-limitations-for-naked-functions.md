@@ -5,11 +5,11 @@ helpviewer_keywords:
 - naked functions [C++]
 ms.assetid: ff203858-2dd3-4a76-8a57-d0d06817adef
 ms.openlocfilehash: c813b97b85469165aae892b0a4cce888112e3dc5
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50605159"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62267385"
 ---
 # <a name="rules-and-limitations-for-naked-functions"></a>Naked İşlevleri için Kurallar ve Sınırlamalar
 
@@ -33,7 +33,7 @@ Naked işlevleri için aşağıdaki kurallar ve sınırlamalar uygulanır:
 
 - **Naked** ile derleme yaparken anahtar sözcüğünü sayılır [/CLR](../build/reference/clr-common-language-runtime-compilation.md).
 
-- İçin [__fastcall](../cpp/fastcall.md) çıplak İşlevler, C/C++ kodu yazmaç bağımsız değişkenlerden biri için bir başvuru olduğunda giriş kodu, bu değişken için yığın konumunu yazmacına değerlerini depolamanız gerekir. Örneğin:
+- İçin [__fastcall](../cpp/fastcall.md) çıplak İşlevler, C'de başvuru olduğunda /C++ kod yazmaç bağımsız değişkenlerden biri için giriş kodu, bu değişken için yığın konumunu yazmacına değerlerini depolamanız gerekir. Örneğin:
 
 ```cpp
 // nkdfastcl.cpp

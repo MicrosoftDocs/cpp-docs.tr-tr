@@ -15,11 +15,11 @@ helpviewer_keywords:
 - FD compiler option [C++]
 ms.assetid: 3977a9ed-f0ac-45df-bf06-01cedd2ba85a
 ms.openlocfilehash: c686de7dc9c9c20c404240db558d2ff66078ceb7
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57808995"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62292737"
 ---
 # <a name="fd-program-database-file-name"></a>/Fd (Program Veritabanı Dosya Adı)
 
@@ -66,6 +66,6 @@ CL /DDEBUG /Zi /FdPROG.PDB PROG.CPP
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Çıktı Dosyası (/F) Seçenekleri](output-file-f-options.md)<br/>
-[MSVC derleyici seçenekleri](compiler-options.md)<br/>
-[MSVC derleyici komut satırı sözdizimi](compiler-command-line-syntax.md)<br/>
+[MSVC Derleyicisi Seçenekleri](compiler-options.md)<br/>
+[MSVC Derleyicisi Komut Satırı Söz Dizimi](compiler-command-line-syntax.md)<br/>
 [Yol Adını Belirtme](specifying-the-pathname.md)

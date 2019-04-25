@@ -19,11 +19,11 @@ helpviewer_keywords:
 - __p__commode
 ms.assetid: 4380acb8-e3e4-409c-a60f-6205ac5189ce
 ms.openlocfilehash: 3a565a179077635438c03539cefa83823603bb00
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50482715"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62289422"
 ---
 # <a name="pcommode"></a>__p__commode
 

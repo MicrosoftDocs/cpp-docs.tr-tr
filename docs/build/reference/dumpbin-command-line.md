@@ -7,11 +7,11 @@ helpviewer_keywords:
 - DUMPBIN program, command line
 ms.assetid: e6ad17d3-965d-41aa-9dfd-75bb073718d4
 ms.openlocfilehash: 1f94b26ca3bdc2778c2f9ed41103b456f5194fe3
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57807396"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62271950"
 ---
 # <a name="dumpbin-command-line"></a>DUMPBIN Komut Satırı
 

@@ -8,11 +8,11 @@ helpviewer_keywords:
 - A2054
 ms.assetid: 878a2ced-0b88-49e5-bea5-0a014efb08b6
 ms.openlocfilehash: 85c83455bc9455b42ded1f63e9e6d1b036fecd2c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50552249"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62201903"
 ---
 # <a name="ml-nonfatal-error-a2054"></a>ML Önemli Olmayan Hatası A2054
 

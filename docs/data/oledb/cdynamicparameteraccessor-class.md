@@ -91,11 +91,11 @@ helpviewer_keywords:
 - SetParamString method
 ms.assetid: 5f22626e-e80d-491f-8b3b-cedc50331960
 ms.openlocfilehash: a655d95cf165ab2c5cba3a391b81d6f420f8322f
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57418522"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62230872"
 ---
 # <a name="cdynamicparameteraccessor-class"></a>CDynamicParameterAccessor Sınıfı
 

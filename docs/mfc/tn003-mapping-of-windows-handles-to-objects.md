@@ -10,11 +10,11 @@ helpviewer_keywords:
 - mappings [MFC], Windows handles to objects
 ms.assetid: fbea9f38-992c-4091-8dbc-f29e288617d6
 ms.openlocfilehash: e7844398ebaf5a8fdf8c56ab18b33d8c7717d1ad
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57326705"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62306386"
 ---
 # <a name="tn003-mapping-of-windows-handles-to-objects"></a>TN003: İşleyicilerini nesnelere eşleme Windows
 

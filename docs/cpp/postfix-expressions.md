@@ -7,11 +7,11 @@ helpviewer_keywords:
 - expressions [C++], postfix
 ms.assetid: 7ac62a57-06df-422f-b012-a75b37d7cb9b
 ms.openlocfilehash: eb6e6e8914cf260df09581232066caf3f873c04e
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58779267"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62245069"
 ---
 # <a name="postfix-expressions"></a>Sonek İfadeleri
 

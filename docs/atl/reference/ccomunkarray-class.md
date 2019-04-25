@@ -16,11 +16,11 @@ helpviewer_keywords:
 - CComUnkArray class
 ms.assetid: 5fd4b378-a7b5-4cc1-8866-8ab72a73639e
 ms.openlocfilehash: 7a73158e407279b529f76484e4c32f0a8a7a63c2
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57259379"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62259462"
 ---
 # <a name="ccomunkarray-class"></a>CComUnkArray sınıfı
 

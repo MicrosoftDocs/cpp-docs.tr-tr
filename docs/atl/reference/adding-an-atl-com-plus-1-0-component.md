@@ -8,11 +8,11 @@ helpviewer_keywords:
 - objects [C++], supporting ATL COM+ 1.0
 ms.assetid: c6c95e64-9ee4-4a6e-8804-5930202ce1b9
 ms.openlocfilehash: 6add7e9d77272960125615f0aac076fdd547094a
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57257182"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62249135"
 ---
 # <a name="adding-an-atl-com-10-component"></a>ATL COM + 1.0 bileşeni ekleme
 

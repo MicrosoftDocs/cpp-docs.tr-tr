@@ -9,11 +9,11 @@ helpviewer_keywords:
 - CLK_TCK constant
 ms.assetid: bc285106-383d-44cb-91bf-276ad7de57bf
 ms.openlocfilehash: eef065ac4fcedf13f3a5d54d4df0563fd04ef965
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57750682"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62289981"
 ---
 # <a name="clockspersec-clktck"></a>CLOCKS_PER_SEC, CLK_TCK
 

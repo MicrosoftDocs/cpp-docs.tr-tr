@@ -8,11 +8,11 @@ helpviewer_keywords:
 - controls [MFC], header
 ms.assetid: ac79ef1f-a671-4ab2-93e9-b1aa016a48bf
 ms.openlocfilehash: 31b6bcb134b62fc11df78a846b3c256a2ef69c14
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57264891"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62240003"
 ---
 # <a name="header-items-in-a-header-control"></a>Üstbilgi Denetimindeki Üstbilgi Öğeleri
 

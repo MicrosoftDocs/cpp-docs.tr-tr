@@ -36,11 +36,11 @@ helpviewer_keywords:
 - file sharing [C++]
 ms.assetid: 5e4502ab-48a9-4bee-a263-ebac8d638dec
 ms.openlocfilehash: 197a4f690a6626edbfec27ea4abef1999b6cedaf
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50677493"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62287713"
 ---
 # <a name="fsopen-wfsopen"></a>_fsopen, _wfsopen
 
@@ -91,7 +91,7 @@ Karakter dizesi *modu* aşağıdaki tabloda gösterildiği gibi dosya için iste
 |**"a"**|(Ekleme); dosyanın sonunda yazma için açar henüz yoksa, dosyayı ilk oluşturur.|
 |**"r +"**|Hem okuma ve yazma için açar. (Dosya var olmalıdır.)|
 |**"w +"**|Hem okuma ve yazma için boş bir dosya açar. Verilen dosya varsa içeriği yok edilir.|
-|**"a +"**|Okuma ve ekleme için açar; henüz yoksa, dosyayı ilk oluşturur.|
+|**"a+"**|Okuma ve ekleme için açar; henüz yoksa, dosyayı ilk oluşturur.|
 
 Kullanım **"w"** ve **"w +"** türleri dikkatli olarak var olan dosyaları yok edebilir.
 

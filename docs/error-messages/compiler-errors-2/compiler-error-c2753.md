@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2753
 ms.assetid: 92bfeeac-524a-4a8e-9a4f-fb8269055826
 ms.openlocfilehash: e13c45cec99e60d8aec7dcc3db8e5a4813ea7de9
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50509415"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62228789"
 ---
 # <a name="compiler-error-c2753"></a>Derleyici Hatası C2753
 

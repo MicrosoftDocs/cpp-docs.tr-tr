@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2752
 ms.assetid: ae42b3ec-84a9-4e9d-8d59-3d208132d0b2
 ms.openlocfilehash: cecc1433a80bdbdcc79eb9e5493486498a820e40
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50622904"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62229026"
 ---
 # <a name="compiler-error-c2752"></a>Derleyici Hatası C2752
 

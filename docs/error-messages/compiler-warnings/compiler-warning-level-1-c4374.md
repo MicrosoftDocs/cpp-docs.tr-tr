@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C4374
 ms.assetid: 4ac9aaec-d815-4b6e-825f-fa872092dd3b
 ms.openlocfilehash: 5cf18a3dcd94f59ce1ae8feb675f251bea5715a5
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50652289"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62302247"
 ---
 # <a name="compiler-warning-level-1-c4374"></a>Derleyici Uyarısı (düzey 1) C4374
 

@@ -5,11 +5,11 @@ helpviewer_keywords:
 - commands, makefiles
 ms.assetid: 8085517e-42f4-493b-b8f8-44311fc08c64
 ms.openlocfilehash: fcb8737070931cf95d7bfb3971a84e22c7ad70a4
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57823506"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62294401"
 ---
 # <a name="commands-in-a-makefile"></a>Derleme Görevleri Dosyası Komutları
 

@@ -6,11 +6,11 @@ helpviewer_keywords:
 - utility classes
 ms.assetid: 33d5da9d-89a5-49f9-a873-a26499299d17
 ms.openlocfilehash: 2de899d6c70bde4f9f9ec7241d3c923f77ff8248
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57813402"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62274847"
 ---
 # <a name="utility-classes"></a>Yardımcı program sınıfları
 

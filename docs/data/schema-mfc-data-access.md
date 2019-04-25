@@ -10,11 +10,11 @@ helpviewer_keywords:
 - structures [C++]
 ms.assetid: 7d17e35f-1ccf-4853-b915-5b8c7a45b9ee
 ms.openlocfilehash: cc333ee987ed0c6cba6cb11730d8f940e49d525d
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59039039"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62152702"
 ---
 # <a name="schema--mfc-data-access"></a>Şema (MFC veri erişimi)
 

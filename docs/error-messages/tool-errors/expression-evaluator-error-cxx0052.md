@@ -8,11 +8,11 @@ helpviewer_keywords:
 - CAN0052
 ms.assetid: 5060d479-d0a4-4682-b858-c8b9a4f324e6
 ms.openlocfilehash: 12b4aff2c07e81a77b1a822fa15beb972a7e1e05
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50487158"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62299588"
 ---
 # <a name="expression-evaluator-error-cxx0052"></a>İfade Değerlendirici Hatası CXX0052
 

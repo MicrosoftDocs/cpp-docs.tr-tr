@@ -8,11 +8,11 @@ helpviewer_keywords:
 - '! operator'
 ms.assetid: e94f737a-8251-4a3d-95ec-e95c35689b37
 ms.openlocfilehash: 4a10fa603449e72108977604697227bbb24c3bfc
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50597632"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62199945"
 ---
 # <a name="operator--masm-run-time"></a>işleci! (MASM çalışma zamanı)
 

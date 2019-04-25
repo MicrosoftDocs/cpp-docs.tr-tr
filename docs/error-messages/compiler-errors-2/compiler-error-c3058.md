@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3058
 ms.assetid: 669d08c8-0b58-4351-88aa-c6e6e1af481c
 ms.openlocfilehash: 5655fe8ebeb8f1b61d7acbba5313c2e3ab2a2b4c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50547244"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62265639"
 ---
 # <a name="compiler-error-c3058"></a>Derleyici Hatası C3058
 

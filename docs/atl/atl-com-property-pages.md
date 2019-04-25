@@ -10,11 +10,11 @@ helpviewer_keywords:
 - ATL property pages
 ms.assetid: 663c7caa-2e5e-4b5c-b8ea-fd434ceb1654
 ms.openlocfilehash: d374569c6c3e9bb63b6b026d2b0f86226d158f36
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58768419"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62252461"
 ---
 # <a name="atl-com-property-pages"></a>ATL COM Özellik Sayfaları
 

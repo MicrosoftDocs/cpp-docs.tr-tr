@@ -9,11 +9,11 @@ helpviewer_keywords:
 - dialog classes [MFC], creating
 ms.assetid: d5321741-da41-47a8-bb1c-6a0e8b28c4c1
 ms.openlocfilehash: bacedc49fcdabdd5dc7fb0f392a66afd3baadd06
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57326406"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62241771"
 ---
 # <a name="creating-your-dialog-class"></a>İletişim Sınıfınızı Oluşturma
 

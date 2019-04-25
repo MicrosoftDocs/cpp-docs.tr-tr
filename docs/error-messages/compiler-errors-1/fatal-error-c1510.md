@@ -7,15 +7,15 @@ helpviewer_keywords:
 - C1510
 ms.assetid: 150c827f-9514-41a9-8d7e-82f820749bcb
 ms.openlocfilehash: f05f79ea78958a7d7a64f24bdce2d1151b93cdfb
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50596241"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62208511"
 ---
 # <a name="fatal-error-c1510"></a>Önemli hata C1510
 
-Clui.dll dil kaynağı açılamıyor
+Cannot open language resource clui.dll
 
 Derleyici dil kaynağı DLL yüklenemiyor.
 

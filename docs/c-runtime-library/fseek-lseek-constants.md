@@ -11,11 +11,11 @@ helpviewer_keywords:
 - SEEK_CUR constant
 ms.assetid: 9deeb13e-5aa3-4c33-80d8-721c80a4de9d
 ms.openlocfilehash: 2e6cb2e0d781212f3b5e7758554507dfa438a716
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57743361"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62289708"
 ---
 # <a name="fseek-lseek-constants"></a>fseek, _lseek Sabitleri
 

@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3034
 ms.assetid: 49db8bac-2720-4622-94e3-7988f1603fa3
 ms.openlocfilehash: d0a5da87feeabc5d3d5b558ce0dd6bdfe3869d53
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50595110"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62165573"
 ---
 # <a name="compiler-error-c3034"></a>Derleyici Hatası C3034
 

@@ -11,11 +11,11 @@ helpviewer_keywords:
 - BSCMAKE
 ms.assetid: b97ad994-1355-4809-98db-6abc12c6fb13
 ms.openlocfilehash: 4303e48e3d02f0f69b177e8a888157a6f90aaa89
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57822359"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62294895"
 ---
 # <a name="bscmake-reference"></a>BSCMAKE Başvurusu
 

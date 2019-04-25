@@ -8,11 +8,11 @@ helpviewer_keywords:
 - applications [OLE]
 ms.assetid: 84b0f606-36c1-4253-9cea-44427f0074b9
 ms.openlocfilehash: b7fa989d1a3b799cf6b427e27142d4479be900bf
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57263578"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62308192"
 ---
 # <a name="sequence-of-operations-for-creating-ole-applications"></a>OLE Uygulamaları Oluşturmak için İşlem Dizisi
 

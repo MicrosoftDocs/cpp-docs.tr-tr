@@ -28,11 +28,11 @@ helpviewer_keywords:
 - _execle function
 ms.assetid: 75efa9c5-96b7-4e23-acab-06258901f63a
 ms.openlocfilehash: dbd84dd8d8e150a063dad4dc89a572c317bce544
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50530526"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62288168"
 ---
 # <a name="execle-wexecle"></a>_execle, _wexecle
 

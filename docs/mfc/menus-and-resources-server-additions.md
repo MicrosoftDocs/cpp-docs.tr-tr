@@ -18,11 +18,11 @@ helpviewer_keywords:
 - OLE initialization failure [MFC]
 ms.assetid: 56ce9e8d-8f41-4db8-8dee-e8b0702d057c
 ms.openlocfilehash: 85c7b6059a868e93c6c6a7ebbd7b08dac3233612
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58767209"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62225434"
 ---
 # <a name="menus-and-resources-server-additions"></a>Menüler ve kaynaklar: Sunucu ekleme
 

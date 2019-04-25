@@ -33,11 +33,11 @@ helpviewer_keywords:
 - _tunlink function
 ms.assetid: 5e4f5f1b-1e99-4391-9b18-9ac63c32fae8
 ms.openlocfilehash: ec59a02f1302fe4a2149889cf1b48090d061d6b2
-ms.sourcegitcommit: 22f7c4a9b4fc2158fb5283810f15275803cafe10
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/21/2019
-ms.locfileid: "54417622"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62268778"
 ---
 # <a name="unlink-wunlink"></a>_unlink, _wunlink
 

@@ -5,11 +5,11 @@ helpviewer_keywords:
 - XML documentation, processing XML file
 ms.assetid: e70fdeae-80ac-4872-ab24-771c5635cfbf
 ms.openlocfilehash: 1a0d231a066209307041681232cc3410210d4d02
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57823500"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62293569"
 ---
 # <a name="xml-file-processing"></a>.Xml Dosyası İşleme
 
@@ -27,7 +27,7 @@ Kimlik dizeleri oluşturduğunda, derleyici aşağıdaki kurallar gözlemler:
   |---------------|-----------------|
   | N | ad alanı<br /><br /> Belge açıklamaları için bir ad alanı ekleyemezsiniz, bir ad alanı başvurularını cref mümkündür. |
   | T | Tür: sınıf, arabirim, yapı, enum, temsilci |
-  | D |  typedef |
+  | D | typedef |
   | F | alan |
   | P | özellik (dizin oluşturucular veya diğer dizin oluşturulmuş özellikleri dahil) |
   | M | (tür özel yöntemler olarak Oluşturucular, işleçler ve diğerleri dahil) yöntemi |

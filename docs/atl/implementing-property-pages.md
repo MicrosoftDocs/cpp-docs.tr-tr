@@ -7,11 +7,11 @@ helpviewer_keywords:
 - property pages, implementing
 ms.assetid: 62f29440-33a7-40eb-a1ef-3634c95f640c
 ms.openlocfilehash: 8999f6469e420fa86cb1267675f10dc173d45ff0
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58776257"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62250443"
 ---
 # <a name="implementing-property-pages"></a>Özellik sayfaları uygulama
 

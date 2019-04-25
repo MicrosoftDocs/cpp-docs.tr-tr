@@ -6,11 +6,11 @@ helpviewer_keywords:
 - encoding, functions
 ms.assetid: 82d4fdf3-3c4a-4fe2-b297-8ffb4714406f
 ms.openlocfilehash: 8fe0506980c22ad9a64bf69f6877b041b957a1a4
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57295727"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62223314"
 ---
 # <a name="atl-encoding-reference"></a>ATL Kodlama Başvurusu
 

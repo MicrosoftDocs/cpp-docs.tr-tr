@@ -9,11 +9,11 @@ helpviewer_keywords:
 - EXIT_FAILURE constant
 ms.assetid: ff2c82cb-c0bb-4556-a812-59aa278bfac5
 ms.openlocfilehash: 562c97b62840285719344d124d8df9944bec25cb
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50519177"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62289864"
 ---
 # <a name="exitsuccess-exitfailure"></a>EXIT_SUCCESS, EXIT_FAILURE
 

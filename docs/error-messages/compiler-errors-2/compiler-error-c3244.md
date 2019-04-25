@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3244
 ms.assetid: dae6c49b-5212-4206-8f61-d4010c0b9969
 ms.openlocfilehash: fe17ac0f20c5644fd5bb81094242403b244bd1d5
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50521273"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62174932"
 ---
 # <a name="compiler-error-c3244"></a>Derleyici Hatası C3244
 

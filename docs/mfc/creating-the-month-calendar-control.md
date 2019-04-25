@@ -7,11 +7,11 @@ helpviewer_keywords:
 - month calendar controls [MFC]
 ms.assetid: 185cc642-85e9-4365-8a4c-d90b75b010f7
 ms.openlocfilehash: 809bc9fdf6b4477363d0a43d007a2884bb43a049
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57258755"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62242193"
 ---
 # <a name="creating-the-month-calendar-control"></a>Aylık Takvim Denetimi Oluşturma
 

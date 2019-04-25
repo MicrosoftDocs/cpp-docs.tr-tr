@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2709
 ms.assetid: e66fc7e6-0e91-4b99-a6e0-fdb069b09fbc
 ms.openlocfilehash: acfe0ccfb540422f58267682178f950349a88f36
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50605042"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62160971"
 ---
 # <a name="compiler-error-c2709"></a>Derleyici Hatası C2709
 

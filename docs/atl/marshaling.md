@@ -7,11 +7,11 @@ helpviewer_keywords:
 - COM interfaces, marshaling
 ms.assetid: 40644b0a-1106-4fc8-9dfb-9bee9915d825
 ms.openlocfilehash: 0661a4cdde0a3a875cf27221e884f6c65b9fea55
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57269688"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62262404"
 ---
 # <a name="marshaling"></a>Hazırlama
 

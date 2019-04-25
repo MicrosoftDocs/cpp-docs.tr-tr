@@ -1,6 +1,6 @@
 ---
-title: Derleyici uyarılarını C4800 C5999 ile
-ms.date: 03/14/2019
+title: Derleyici Uyarısı C4800 aracılığıyla C5999
+ms.date: 04/21/2019
 f1_keywords:
 - C4808
 - C4809
@@ -153,14 +153,14 @@ helpviewer_keywords:
 - C5105
 - C5106
 - C5107
-ms.openlocfilehash: 46bb439b490295b7f3279f06421d3fd6b8d6ba8b
-ms.sourcegitcommit: 42e65c171aaa17a15c20b155d22e3378e27b4642
+ms.openlocfilehash: 93ff809d640efab6852e855f85e7b6e0109d9c1d
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58356263"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62280327"
 ---
-# <a name="compiler-warnings-c4800-through-c5999"></a>Derleyici uyarılarını C4800 C5999 ile
+# <a name="compiler-warnings-c4800-through-c5999"></a>Derleyici Uyarısı C4800 aracılığıyla C5999
 
 Belgelerin bu bölümdeki makaleleri bir alt kümesini derleyici tarafından oluşturulan uyarı iletilerini açıklamaktadır.
 
@@ -188,7 +188,7 @@ Belgelerin bu bölümdeki makaleleri bir alt kümesini derleyici tarafından olu
 |[Derleyici Uyarısı (düzey 4) C4820](compiler-warning-level-4-c4820.md)|'*bayt*'bayt doldurma eklenen sonra yapı'*member_name*'|
 |[Derleyici Uyarısı (düzey 1) C4821](compiler-warning-level-1-c4821.md)|Unicode kodlama türü belirlenemiyor, Lütfen dosyayı (BOM) imzasıyla kaydedin|
 |[Derleyici Uyarısı (düzey 1) C4822](compiler-warning-level-1-c4822.md)|'üye işlev': yerel sınıf üyesi işlevinde bir gövde yok|
-|[Derleyici Uyarısı (düzey 3) C4823](compiler-warning-level-3-c4823.md)|'*işlevi*': kullanır ancak sabitleme işaretçileri geriye doğru izlenen semantik etkin değil. / Eha kullanmayı düşünün|
+|[Derleyici Uyarısı (Düzey 3) C4823](compiler-warning-level-3-c4823.md)|'*işlevi*': kullanır ancak sabitleme işaretçileri geriye doğru izlenen semantik etkin değil. / Eha kullanmayı düşünün|
 |Derleyici Uyarısı (Düzey 2) C4826|Dönüştürme işlemi '*type1*'to'*type2*' işaret genişletilmiş. Bu, beklenmeyen çalışma zamanı davranışına neden olabilir.|
 |Derleyici Uyarısı (Düzey 3) C4827|0 paramterleri bir genel 'ToString' yöntemi sanal olarak işaretlenmesi gerekir ve geçersiz kılma|
 |[Derleyici Uyarısı (düzey 1) C4829](compiler-warning-level-1-c4829.md)|Büyük olasılıkla yanlış parametreler ana işlev. Göz önünde bulundurun ' int main (Platform::Array\<Platform::String ^ > ^ argv)'|
@@ -206,7 +206,7 @@ Belgelerin bu bölümdeki makaleleri bir alt kümesini derleyici tarafından olu
 | Derleyici Uyarısı (düzey 4) C4847 | '\_\_declspec (Hayır\_init\_all)' yalnızca bir işlev, bir sınıf türü veya bir yerel değişkene uygulanabilir: yoksayıldı |
 | Derleyici Uyarısı (düzey 1) C4848 | Destek için standart öznitelik ' hiçbir\_benzersiz\_'C ++ 17 ve daha önce adresidir satıcı uzantısı |
 |[Derleyici Uyarısı (düzey 4) C4866](c4866.md)| Derleyici, soldan sağa Değerlendirme sırasını çağrısı değil zorlayabileceği *operator_name*|
-|[Derleyici Uyarısı (hata) C4867](compiler-warning-c4867.md)|'*işlevi*': işlev çağrısında bağımsız değişken listesi eksik; bu değer '*çağrı*' bir üyeye işaretçi oluşturmak için|
+|[Derleyici Uyarısı C4867 (hata)](compiler-warning-c4867.md)|'*işlevi*': işlev çağrısında bağımsız değişken listesi eksik; bu değer '*çağrı*' bir üyeye işaretçi oluşturmak için|
 |[Derleyici Uyarısı (düzey 4) C4868](compiler-warning-c4868.md)|'_dosya_(*line_number*)' derleyici küme ayracıyla belirtilen başlatma listesi soldan sağa Değerlendirme sırasını zorla|
 |Derleyici Uyarısı (Düzey 2) C4872|concurrency::parallel_for_each için çağrı grafı derlenirken desteklenemeyen sıfıra bölme noktasına kayan: '*konumu*'|
 |Derleyici Uyarısı (düzey 1) C4880|gelen atama ' const *type_1*'to'*type_2*': bir işaretçi veya başvuru sabitliği hemen atama amp sınırlı işlevde tanımlanmayan davranışta sonuçlanabilir|
@@ -241,7 +241,7 @@ Belgelerin bu bölümdeki makaleleri bir alt kümesini derleyici tarafından olu
 |[Derleyici Uyarısı (düzey 1) C4945](compiler-warning-level-1-c4945.md)|'*sembol*': değerinden simge alınamıyor '*assembly1*': farklı*sembol*'başka bir derleme zaten alınmış'*assembly2* '|
 |[Derleyici Uyarısı (düzey 1) C4946](compiler-warning-level-1-c4946.md)|reinterpret_cast ilgili sınıflar arasında kullanıldı: '*class1*'ve'*class2*'|
 |[Derleyici Uyarısı (düzey 1) C4947](compiler-warning-level-1-c4947.md)|'*type_or_member*': eski olarak işaretlendi|
-|[Derleyici Uyarısı (düzey 2) C4948](compiler-warning-level-2-c4948.md)|dönüş türü '*erişimci*' karşılık gelen ayarlayıcının son parametre türüyle eşleşmiyor|
+|[Derleyici Uyarısı (Düzey 2) C4948](compiler-warning-level-2-c4948.md)|dönüş türü '*erişimci*' karşılık gelen ayarlayıcının son parametre türüyle eşleşmiyor|
 |[Derleyici Uyarısı (düzey 1 ve düzey 4) C4949](compiler-warning-level-1-and-level-4-c4949.md)|'managed' ve 'unmanaged' pragmaları yalnızca ile derlendikleri zaman anlamlıdır ' / clr [: option]'|
 |[Derleyici Uyarısı (düzey 1, hata) C4950](compiler-warning-c4950.md)|'*type_or_member*': eski olarak işaretlendi|
 |[Derleyici Uyarısı (düzey 1) C4951](compiler-warning-level-1-c4951.md)|'*işlevi*' profili beri işlevi profil verileri, veri toplanmıştır düzenlenip düzenlenmediğini gösterir|
@@ -274,8 +274,8 @@ Belgelerin bu bölümdeki makaleleri bir alt kümesini derleyici tarafından olu
 |Derleyici Uyarısı (Düzey 3) C4990|Warbird: *iletisi*|
 |Derleyici Uyarısı (Düzey 3) C4991|Warbird: işlev '*işlevi*' alınanın koruma düzeyi üst büyük olduğundan __forceinline olarak satır içine alınmış işaretlenen|
 |Derleyici Uyarısı (Düzey 3) C4992|Warbird: işlev '*işlevi*' Korunamayan satır içi bütünleştirilmiş içerdiğinden __forceinline olarak satır içine alınmış işaretlenen|
-|[Derleyici Uyarısı (düzey 3) C4995](compiler-warning-level-3-c4995.md)|'*işlevi*': ad kullanım dışı #pragma olarak işaretlendi|
-|[Derleyici Uyarısı (düzey 3) C4996](compiler-warning-level-3-c4996.md)|'*açıklama*': *iletisi*|
+|[Derleyici Uyarısı (Düzey 3) C4995](compiler-warning-level-3-c4995.md)|'*işlevi*': ad kullanım dışı #pragma olarak işaretlendi|
+|[Derleyici Uyarısı (Düzey 3) C4996](compiler-warning-level-3-c4996.md)|'*açıklama*': *iletisi*|
 |[Derleyici Uyarısı (düzey 1) C4997](compiler-warning-level-1-c4997.md)|'*sınıfı*': coclass COM arabirimi veya sahte arabirim uygulamıyor|
 |Derleyici Uyarısı (düzey 1) C4998|BEKLENTİ başarısız oldu: *beklentisi*(*değer*)|
 |[Derleyici Uyarısı C4999](compiler-warning-level-1-c4999.md)|Bilinmeyen uyarısı Lütfen Visual C++ Yardım menüsünde teknik destek komutunu seçin veya daha fazla bilgi için teknik destek Yardım dosyasını açın|
@@ -316,3 +316,8 @@ Belgelerin bu bölümdeki makaleleri bir alt kümesini derleyici tarafından olu
 | Derleyici Uyarısı (düzey 1) C5105 | 'defined' üretme makro genişletme davranışı tanımlı değil |
 | Derleyici Uyarısı (düzey 1) C5106 | ile farklı parametre adları tanımlandı makrosu |
 | Derleyici Uyarısı (düzey 1) C5107 | sonlandırma eksik '*char*' karakteri |
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[C /C++ derleyicisi ve derleme araçları hataları ve Uyarıları](../compiler-errors-1/c-cpp-build-errors.md) \
+[Derleyici uyarılarını C4000 - C5999](compiler-warnings-c4000-c5999.md)

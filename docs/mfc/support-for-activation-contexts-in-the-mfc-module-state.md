@@ -6,11 +6,11 @@ helpviewer_keywords:
 - activation contexts [MFC], MFC support
 ms.assetid: 1e49eea9-3620-46dd-bc5f-d664749567c7
 ms.openlocfilehash: a2e5f56eeb323f1bd5f20c5920bbdbe4a658554d
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57267868"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62306671"
 ---
 # <a name="support-for-activation-contexts-in-the-mfc-module-state"></a>MFC Modül Durumunda Etkinleştirme Bağlamları Desteği
 

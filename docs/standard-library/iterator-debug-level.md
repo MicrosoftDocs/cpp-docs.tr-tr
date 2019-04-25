@@ -7,11 +7,11 @@ helpviewer_keywords:
 - _ITERATOR_DEBUG_LEVEL
 ms.assetid: 718549cd-a9a9-4ab3-867b-aac00b321e67
 ms.openlocfilehash: a584fe5a97e251205e750507b27e53e6e7b9a20e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50502823"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62224200"
 ---
 # <a name="iteratordebuglevel"></a>_ITERATOR_DEBUG_LEVEL
 
@@ -49,7 +49,7 @@ Denetlenen yineleyiciler hakkında uyarılar devre dışı bırakma hakkında da
 
 ### <a name="example"></a>Örnek
 
-_Iterator_debug_level makro için bir değer belirtmek için kullanın bir [/D](../build/reference/d-preprocessor-definitions.md) komut satırında tanımlayın veya kullanmak için derleyici seçeneği `#define` önce C++ Standart Kitaplığı üstbilgileri, kaynak dosyaları eklenir. Örneğin, komut satırında derlemek için *sample.cpp* hata ayıklama modunda ve hata ayıklama yineleyici desteği _ıterator_debug_level Makro tanımında belirtebilirsiniz:
+_Iterator_debug_level makro için bir değer belirtmek için kullanın bir [/D](../build/reference/d-preprocessor-definitions.md) komut satırında tanımlayın veya kullanmak için derleyici seçeneği `#define` önce C++ standart kitaplığı üst bilgiler, kaynak dosyalarınızda dahil edilir. Örneğin, komut satırında derlemek için *sample.cpp* hata ayıklama modunda ve hata ayıklama yineleyici desteği _ıterator_debug_level Makro tanımında belirtebilirsiniz:
 
 `cl /EHsc /Zi /MDd /D_ITERATOR_DEBUG_LEVEL=1 sample.cpp`
 
@@ -69,4 +69,4 @@ Bir kaynak dosyasında yineleyiciler tanımlayan standart kitaplığı üst bilg
 
 [Denetlenmiş Yineleyiciler](../standard-library/checked-iterators.md)<br/>
 [Hata Ayıklama Yineleyici Desteği](../standard-library/debug-iterator-support.md)<br/>
-[Güvenli Kitaplıklar: C++ Standart Kitaplık](../standard-library/safe-libraries-cpp-standard-library.md)<br/>
+[Güvenli Kitaplıklar: C++ Standart Kitaplığı](../standard-library/safe-libraries-cpp-standard-library.md)<br/>

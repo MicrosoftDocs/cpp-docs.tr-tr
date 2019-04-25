@@ -8,11 +8,11 @@ helpviewer_keywords:
 - ATL COM+ 1.0 Component Wizard
 ms.assetid: 11670681-8671-4122-96a4-2e52f8dadce0
 ms.openlocfilehash: df13c94eb0cc2aa7e2dea49aba6901f01fce0a15
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57326432"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62248836"
 ---
 # <a name="atl-com-10-component-wizard"></a>ATL COM + 1.0 bileşeni Sihirbazı
 

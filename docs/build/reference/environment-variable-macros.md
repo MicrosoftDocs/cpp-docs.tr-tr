@@ -7,11 +7,11 @@ helpviewer_keywords:
 - macros, environment-variable
 ms.assetid: f8e96635-0906-47b0-9f56-12a6fdf5e347
 ms.openlocfilehash: 7f7f8a05545658142001b75ac78975251185a033
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57823495"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62272617"
 ---
 # <a name="environment-variable-macros"></a>Ortam Değişkeni Makroları
 

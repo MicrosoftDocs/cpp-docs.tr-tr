@@ -8,11 +8,11 @@ helpviewer_keywords:
 - QueryInterface method
 ms.assetid: 62fce95e-aafa-4187-b50b-e6611b74c3b3
 ms.openlocfilehash: 28f3781706981b06d49829c0277014c09574ef6b
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57816067"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62250366"
 ---
 # <a name="queryinterface"></a>QueryInterface
 

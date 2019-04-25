@@ -7,11 +7,11 @@ helpviewer_keywords:
 - comma operator
 ms.assetid: 587514f4-c8e2-44e9-81a8-7a553ce1453a
 ms.openlocfilehash: 2cbffc51fb7113ae442dbfcd1db01bbf27a67746
-ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56149134"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62158527"
 ---
 # <a name="sequential-evaluation-operator"></a>Sıralı Değerlendirme İşleci
 
@@ -44,8 +44,7 @@ func_one( x, y + 2, z );
 func_two( (x--, y + 2), z );
 ```
 
-İşlev çağrısında `func_one`, virgülle ayrılmış üç bağımsız değişken geçirilir: `x`, `y + 2`, ve `z`. 
-  `func_two` işlev çağrısında, parantezler derleyiciyi, ilk virgülü sıralı değerlendirme işleci olarak yorumlamaya zorlar. Bu işlev çağrısı, `func_two` öğesine iki bağımsız değişken geçirir. İlk bağımsız değişken, `(x--, y + 2)` ifadesinin değerine ve türüne sahip olan `y + 2` sıralı değerlendirme işleminin sonucudur; ikinci bağımsız değişken ise `z`'dir.
+İşlev çağrısında `func_one`, virgülle ayrılmış üç bağımsız değişken geçirilir: `x`, `y + 2`, ve `z`. `func_two` işlev çağrısında, parantezler derleyiciyi, ilk virgülü sıralı değerlendirme işleci olarak yorumlamaya zorlar. Bu işlev çağrısı, `func_two` öğesine iki bağımsız değişken geçirir. İlk bağımsız değişken, `(x--, y + 2)` ifadesinin değerine ve türüne sahip olan `y + 2` sıralı değerlendirme işleminin sonucudur; ikinci bağımsız değişken ise `z`'dir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

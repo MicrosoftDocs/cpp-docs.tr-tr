@@ -7,11 +7,11 @@ helpviewer_keywords:
 - composite controls, adding controls
 ms.assetid: 59984518-748f-4b8b-875f-3e97d22d0b0f
 ms.openlocfilehash: 15a8f20f8618f77c8da3637e94c75adc772319cc
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57297547"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62250296"
 ---
 # <a name="modifying-the-atl-project"></a>ATL projesini değiştirme
 

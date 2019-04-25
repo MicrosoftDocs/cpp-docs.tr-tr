@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2957
 ms.assetid: 9cb4526f-4af8-47e9-b786-56192627ca72
 ms.openlocfilehash: 51745b60d89c28280c8c48cdbba3762d92529073
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50600510"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62300758"
 ---
 # <a name="compiler-error-c2957"></a>Derleyici Hatası C2957
 

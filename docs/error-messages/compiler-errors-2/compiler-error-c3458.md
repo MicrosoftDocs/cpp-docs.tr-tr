@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3458
 ms.assetid: 940202fd-8dcc-4042-9c96-3f9e9127d2f1
 ms.openlocfilehash: 07749677dbaa84de205adf38aadee6867a553852
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50676817"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62222390"
 ---
 # <a name="compiler-error-c3458"></a>Derleyici Hatası C3458
 

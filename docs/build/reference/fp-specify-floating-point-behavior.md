@@ -12,11 +12,11 @@ helpviewer_keywords:
 - /fp compiler option [C++]
 ms.assetid: 10469d6b-e68b-4268-8075-d073f4f5d57e
 ms.openlocfilehash: 25b228c16f534ca227d50bfdf632fdacb5703cd9
-ms.sourcegitcommit: 309dc532f13242854b47759cef846de59bb807f1
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58565444"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62292361"
 ---
 # <a name="fp-specify-floating-point-behavior"></a>/FP (kayan nokta davranışını belirt)
 

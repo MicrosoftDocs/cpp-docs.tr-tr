@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2574
 ms.assetid: 3e1c5c18-ee8b-4dbb-bfc0-d3b8991af71b
 ms.openlocfilehash: 764ff36441c563edd538c41be5c23c12f80e2537
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50604964"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62300814"
 ---
 # <a name="compiler-error-c2574"></a>Derleyici Hatası C2574
 

@@ -41,11 +41,11 @@ helpviewer_keywords:
 - ismbckata function
 ms.assetid: 2db388a2-be31-489b-81c8-f6bf3f0582d3
 ms.openlocfilehash: d2a5d0336e5ed4ad8bbb19f8a259128ab33d004e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50506596"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62286739"
 ---
 # <a name="ismbchira-ismbchiral-ismbckata-ismbckatal"></a>_ismbchira, _ismbchira_l, _ismbckata, _ismbckata_l
 
@@ -93,10 +93,10 @@ Sahip bu işlevlerin sürümleri **_l** sonekine yerel ayara bağlı davranışl
 
 |Yordam|Test koşulu (yalnızca kod sayfası 932)|
 |-------------|-------------------------------------------|
-|**_ismbchira**|Çift baytlık Hiragana: 0x829F < =*c*< 0x82F1 =.|
-|**_ismbchira_l**|Çift baytlık Hiragana: 0x829F < =*c*< 0x82F1 =.|
-|**_ismbckata**|Çift baytlık katakana: 0x8340 < =*c*< 0x8396 =.|
-|**_ismbckata_l**|Çift baytlık katakana: 0x8340 < =*c*< 0x8396 =.|
+|**_ismbchira**|Double-byte Hiragana: 0x829F < =*c*< 0x82F1 =.|
+|**_ismbchira_l**|Double-byte Hiragana: 0x829F < =*c*< 0x82F1 =.|
+|**_ismbckata**|Double-byte katakana: 0x8340 < =*c*< 0x8396 =.|
+|**_ismbckata_l**|Double-byte katakana: 0x8340 < =*c*< 0x8396 =.|
 
 **End kod sayfası 932 özel**
 

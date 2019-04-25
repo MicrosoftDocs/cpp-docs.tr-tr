@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2356
 ms.assetid: 84d5a816-9a61-4d45-9978-38e485bbf767
 ms.openlocfilehash: 0166cce6011017b8a18821666083f7c47f58b7a9
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50508120"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62302546"
 ---
 # <a name="compiler-error-c2356"></a>Derleyici Hatası C2356
 

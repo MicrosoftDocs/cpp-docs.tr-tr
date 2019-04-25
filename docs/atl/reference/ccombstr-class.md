@@ -30,11 +30,11 @@ helpviewer_keywords:
 - CComBSTR
 ms.assetid: 8fea1879-a05e-47a5-a803-8dec60eaa534
 ms.openlocfilehash: 48447b9e6a211927d8e729dd761d2e14ecd89615
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57282363"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62246569"
 ---
 # <a name="ccombstr-class"></a>CComBSTR sınıfı
 

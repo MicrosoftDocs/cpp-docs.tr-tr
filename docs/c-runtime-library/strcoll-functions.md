@@ -18,11 +18,11 @@ helpviewer_keywords:
 - strings [C++], comparing by code page
 ms.assetid: c09eeff3-8aba-4cfb-a524-752436d85573
 ms.openlocfilehash: 2acfaafbe15f065dbac924ce72a5ca3a5275537b
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57751394"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62267828"
 ---
 # <a name="strcoll-functions"></a>strcoll İşlevleri
 

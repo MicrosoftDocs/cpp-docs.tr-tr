@@ -14,11 +14,11 @@ helpviewer_keywords:
 - DLLs [C++], unloading
 ms.assetid: 4a48d290-3971-43e9-8e97-ba656cd0c8f8
 ms.openlocfilehash: 709e4fdbc24d6fbbac44944e686a6fecf8c9b8db
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57808150"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62274046"
 ---
 # <a name="freelibrary-and-afxfreelibrary"></a>FreeLibrary ve AfxFreeLibrary
 

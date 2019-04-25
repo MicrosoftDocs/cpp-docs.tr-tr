@@ -16,11 +16,11 @@ helpviewer_keywords:
 - programmer-defined IDs [MFC]
 ms.assetid: 88cf3ab4-79b3-4ac6-9365-8ac561036fbf
 ms.openlocfilehash: 987023322e38584d10901c1ab1fe20ac46926bd2
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57272093"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62307165"
 ---
 # <a name="standard-commands"></a>Standart Komutlar
 

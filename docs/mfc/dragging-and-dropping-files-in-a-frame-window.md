@@ -11,11 +11,11 @@ helpviewer_keywords:
 - drag and drop [MFC], Windows Explorer
 ms.assetid: 85560fe9-121b-4105-bd7b-216b966e19fa
 ms.openlocfilehash: 0129b939e0fe2afd5dd29623bb44418bfd16c20d
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57260421"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62240666"
 ---
 # <a name="dragging-and-dropping-files-in-a-frame-window"></a>Bir Çerçeve Penceresinde Dosyaları Sürükleme ve Bırakma
 

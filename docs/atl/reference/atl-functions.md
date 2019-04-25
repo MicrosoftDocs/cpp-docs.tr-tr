@@ -6,11 +6,11 @@ helpviewer_keywords:
 - ATL, global functions
 ms.assetid: 69db0cb2-de1d-445b-b692-020d6e8c2173
 ms.openlocfilehash: 9f0c6ccaa049290d3e183ae682c19ab7e497c2b8
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57261745"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62261560"
 ---
 # <a name="atl-functions"></a>ATL işlevleri
 

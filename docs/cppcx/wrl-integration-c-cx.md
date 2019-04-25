@@ -1,15 +1,15 @@
 ---
-title: WRL tümleştirme (C + +/ CX)
+title: WRL tümleştirme (C++/CX)
 ms.date: 01/22/2017
 ms.assetid: 3ad43894-c574-477c-ad3e-240301f381d4
 ms.openlocfilehash: a3c8b824d2cd932a7d284804f3f28781654045e0
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50612127"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62304156"
 ---
-# <a name="wrl-integration-ccx"></a>WRL tümleştirme (C + +/ CX)
+# <a name="wrl-integration-ccx"></a>WRL tümleştirme (C++/CX)
 
 Windows çalışma zamanı C++ Şablon kitaplığı (WRL) kod WRL koduyla serbestçe karıştırabilirsiniz. WRL tanıtıcı nesne ile bildirilen nesneler aynı çeviri biriminde kullanabilirsiniz (`^`) Akıllı işaretçi gösterimini ve WRL (`ComPtr<T>`) gösterimi. Ancak, el ile dönüş değerleri ve WRL HRESULT hata kodları ve WRL özel durumlarını işlemelidir.
 
@@ -112,4 +112,4 @@ IVector<String^>^ GetTypeMethods(Object^ instance)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Diğer dillerle birlikte çalışma](interoperating-with-other-languages-c-cx.md)
+[Diğer Dillerle Birlikte Çalışma](interoperating-with-other-languages-c-cx.md)

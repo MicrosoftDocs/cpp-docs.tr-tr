@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3298
 ms.assetid: 458c2680-95bb-4d5e-895f-ce4115844193
 ms.openlocfilehash: fe6913d402c6ce4df3551c159eb56a12590799cb
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59779134"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62222537"
 ---
 # <a name="compiler-error-c3298"></a>Derleyici Hatası C3298
 

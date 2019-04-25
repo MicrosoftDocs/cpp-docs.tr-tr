@@ -7,11 +7,11 @@ helpviewer_keywords:
 - LNK4092
 ms.assetid: d569ec47-a338-40e1-940b-8a8061459acb
 ms.openlocfilehash: 0b18002135d225a90f7e45adc2ff57a64c0a79f4
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50531043"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62279326"
 ---
 # <a name="linker-tools-warning-lnk4092"></a>Bağlayıcı Araçları Uyarısı LNK4092
 

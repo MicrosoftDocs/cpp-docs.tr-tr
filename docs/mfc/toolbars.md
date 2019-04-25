@@ -6,11 +6,11 @@ helpviewer_keywords:
 - command bars [MFC], MFC toolbars
 ms.assetid: c22ecc5b-a84c-4979-8d1a-8e3e71d5ce33
 ms.openlocfilehash: fe294b42f6c149a32d3e96ee9e0e2dc18103fc5c
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57260523"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62236789"
 ---
 # <a name="toolbars"></a>Araç Çubukları
 

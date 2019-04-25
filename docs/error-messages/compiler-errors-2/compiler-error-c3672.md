@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3672
 ms.assetid: da971041-1766-467a-aecf-1d8655c6cb7a
 ms.openlocfilehash: 36048f3e4b8cc1be3e766f11b5c131513a3365da
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50436783"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62215010"
 ---
 # <a name="compiler-error-c3672"></a>Derleyici Hatası C3672
 

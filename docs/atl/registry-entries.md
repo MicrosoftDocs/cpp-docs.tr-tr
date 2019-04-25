@@ -6,11 +6,11 @@ helpviewer_keywords:
 - registry, application IDs
 ms.assetid: 881989b7-61bb-459a-a13e-3bfcb33e184e
 ms.openlocfilehash: 7a89bc5d510d493f557b7ea74b8eabe5dfd87ac1
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57261950"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62196761"
 ---
 # <a name="registry-entries"></a>Kayıt defteri girdileri
 

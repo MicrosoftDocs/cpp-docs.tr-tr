@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C4103
 ms.assetid: 9021b514-375e-4d62-b261-ccb06f299e8e
 ms.openlocfilehash: 15d7403d461467e33b7e89957821a311179d33a7
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50577820"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62300296"
 ---
 # <a name="compiler-warning-level-1-c4103"></a>Derleyici Uyarısı (düzey 1) C4103
 

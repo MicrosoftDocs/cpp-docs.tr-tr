@@ -6,11 +6,11 @@ helpviewer_keywords:
 - CommandHandler function
 ms.assetid: 662bc7bf-4a10-42b3-986d-d8bae4f63551
 ms.openlocfilehash: 743be3e0bc9cc96fc6b22d0806d399ab5e160a3f
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57807617"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62235070"
 ---
 # <a name="commandhandler"></a>CommandHandler
 

@@ -7,11 +7,11 @@ helpviewer_keywords:
 - 32-bit Windows
 ms.assetid: ef1589db-84d7-4b24-8799-7c7a22cfe2bf
 ms.openlocfilehash: 4827f82df08273dfa369d6242b9fe2be84875128
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57746363"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62290579"
 ---
 # <a name="32-bit-windows-timedate-formats"></a>32 Bit Windows Saat/Tarih Biçimleri
 

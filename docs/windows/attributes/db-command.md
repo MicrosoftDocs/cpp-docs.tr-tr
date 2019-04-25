@@ -7,11 +7,11 @@ helpviewer_keywords:
 - db_command attribute
 ms.assetid: 714c3e15-85d7-408b-9a7c-88505c3e5d24
 ms.openlocfilehash: 136c82b2674f3c08f053de9676068c0fb4baac11
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50559477"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62148204"
 ---
 # <a name="dbcommand"></a>db_command
 
@@ -97,7 +97,7 @@ TCHAR m_state[3] = 'CA';
 
 İçin bir değer belirtirseniz *bağlamaları*, **db_command** ilişkili değer ayrıştırır ve değil ayrıştırmaz \[ *bindtype*] parametresi. Bu kullanım OLE DB sağlayıcısı sözdizimi kullanmanıza olanak tanır. Ayrıştırma, parametreleri, bağlama olmadan devre dışı bırakmak için belirtin `Bindings=""`.
 
-İçin bir değer belirtmezseniz *bağlamaları*, **db_command** aranırken bağlama parametresi blok ayrıştırmaz '**(**' çizgidir **\[** _bindtype_**]** tarafından izlenen bir veya daha fazla önceden tanımlanmış C++ üye değişkenlerine tarafından izlenen parantez içine '**)**'. Ayraçlar arasındaki tüm metni ortaya çıkan komuttan kaldırılır ve bu parametreler, bu komut için sütun ve parametre bağlamaları oluşturmak için kullanılacak.
+İçin bir değer belirtmezseniz *bağlamaları*, **db_command** aranırken bağlama parametresi blok ayrıştırmaz '**(**' çizgidir **\[** _bindtype_**]** köşeli ayraç tarafından izlenen bir veya daha önceden bildirilen C++ üye değişkenleri, arkasından '**)**'. Ayraçlar arasındaki tüm metni ortaya çıkan komuttan kaldırılır ve bu parametreler, bu komut için sütun ve parametre bağlamaları oluşturmak için kullanılacak.
 
 *bulk_fetch*<br/>
 (İsteğe bağlı) Getirilecek satır sayısını belirten bir tamsayı değeri.
@@ -122,7 +122,7 @@ Tüketici özniteliği sağlayıcısı bu öznitelik bir sınıfa uygulandığı
 
 Bu örnek, durum sütununu 'CA' eşleştiği bir tablodan ilk ve son adlarını seçen bir komutu tanımlar. **db_command** oluşturur ve üzerinde çağırabilirsiniz Sihirbazı tarafından oluşturulan işlevleri gibi bir satır okur [OpenAll ve CloseAll](../../data/oledb/consumer-wizard-generated-methods.md), yanı `CRowset` üye işlevleri gibi [MoveNext](../../data/oledb/crowset-movenext.md).
 
-Bu kod, pubs veritabanına bağlar kendi bağlantı dizesi sağlamanız gerektiğini unutmayın. Geliştirme ortamında nasıl yapılacağı hakkında daha fazla bilgi için bkz: [nasıl yapılır: bir veritabanı ve varolan nesnelere Gözat bağlanma](/sql/ssdt/how-to-connect-to-a-database-and-browse-existing-objects) ve [yeni bağlantı ekleme](/visualstudio/data-tools/add-new-connections).
+Bu kod, pubs veritabanına bağlar kendi bağlantı dizesi sağlamanız gerektiğini unutmayın. Geliştirme ortamında nasıl yapılacağı hakkında daha fazla bilgi için bkz: [nasıl yapılır: Bir veritabanı ve varolan nesnelere Gözat bağlanma](/sql/ssdt/how-to-connect-to-a-database-and-browse-existing-objects) ve [yeni bağlantı ekleme](/visualstudio/data-tools/add-new-connections).
 
 ```cpp
 // db_command.h

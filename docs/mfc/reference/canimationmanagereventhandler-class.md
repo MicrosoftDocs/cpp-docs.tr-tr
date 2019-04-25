@@ -15,11 +15,11 @@ helpviewer_keywords:
 - CAnimationManagerEventHandler [MFC], SetAnimationController
 ms.assetid: 6089ec07-e661-4805-b227-823b4652aade
 ms.openlocfilehash: 6661da55d1091394cff9db4589bc05c721b5ab7c
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57281076"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62151235"
 ---
 # <a name="canimationmanagereventhandler-class"></a>CAnimationManagerEventHandler Class
 

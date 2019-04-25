@@ -7,11 +7,11 @@ helpviewer_keywords:
 - LNK2028
 ms.assetid: e2b03293-6066-464d-a050-ce747bcf7f0e
 ms.openlocfilehash: ed2dc1a95d4dd7c447b360da21b5046e20f79083
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50643683"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62298990"
 ---
 # <a name="linker-tools-error-lnk2028"></a>Bağlayıcı Araçları Hatası LNK2028
 

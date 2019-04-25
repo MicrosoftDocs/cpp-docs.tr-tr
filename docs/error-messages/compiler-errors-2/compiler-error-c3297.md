@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3297
 ms.assetid: 2a718b4c-6cdb-4418-92c0-fc3a259431c4
 ms.openlocfilehash: e4661119680dff34dfaa43fb9ce71bf97150a8bd
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59777685"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62222498"
 ---
 # <a name="compiler-error-c3297"></a>Derleyici Hatası C3297
 

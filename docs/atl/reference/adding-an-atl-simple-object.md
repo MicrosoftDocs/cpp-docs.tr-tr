@@ -9,11 +9,11 @@ helpviewer_keywords:
 - ATL, simple objects
 ms.assetid: 9c57d2ef-0447-4c84-8982-3304b8e49847
 ms.openlocfilehash: 95a93268ca76516c1b3f736c106518ae6d94cc27
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57326822"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62261624"
 ---
 # <a name="adding-an-atl-simple-object"></a>ATL basit nesnesi ekleme
 

@@ -6,11 +6,11 @@ helpviewer_keywords:
 - C++ Standard Library, allocators
 ms.assetid: ac95023b-9e7d-49f5-861a-bf7a9a340746
 ms.openlocfilehash: 1f11d1b007a728b32d27afd733df271f361864e7
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50493879"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62252733"
 ---
 # <a name="allocators"></a>Ayırıcılar
 
@@ -45,7 +45,7 @@ Minimal ayırıcılar çok daha az ortak gerektirir ve odağı etkinleştirmeden
 C ++ 11 varsayılan `construct()` sizin için sağlanan üye kusursuz iletme ve taşıma semantiği sağlar; sürümünden daha eski çoğu durumda çok daha verimli olur.
 
 > [!WARNING]
-> Derleme zamanında, C++ Standart Kitaplığı allocator_traits sınıfı açıkça sağladığınız hangi üyelerin algılamak için kullanır ve mevcut olmayan herhangi bir üye için bir varsayılan uygulamasını sağlar. Bu mekanizma ile allocator_traits özelleştirmesi için ayırıcı sağlayarak müdahale etmez!
+> Derleme zamanında C++ standart kitaplığı allocator_traits sınıfı açıkça sağlanan hangi üyelerin algılamak için kullanır ve mevcut olmayan herhangi bir üye için bir varsayılan uygulamasını sağlar. Bu mekanizma ile allocator_traits özelleştirmesi için ayırıcı sağlayarak müdahale etmez!
 
 Aşağıdaki örnek, kullanan bir ayırıcı'nın en az bir uygulamasını gösterir. `malloc` ve `free`. Yeni özel durum türü kullanımına dikkat edin `std::bad_array_new_length` sıfırdan küçük veya izin verilen en yüksek boyuttan büyük dizi boyutu ise oluşturulur.
 

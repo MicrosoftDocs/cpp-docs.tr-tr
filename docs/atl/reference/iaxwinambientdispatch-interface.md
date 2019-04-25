@@ -36,11 +36,11 @@ helpviewer_keywords:
 - IAxWinAmbientDispatch interface
 ms.assetid: 55ba6f7b-7a3c-4792-ae47-c8a84b683ca9
 ms.openlocfilehash: 85a8f1d41c6c54f94b500807a1e4ca504206f56a
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57425659"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62276165"
 ---
 # <a name="iaxwinambientdispatch-interface"></a>Iaxwinambientdispatch arabirimi
 

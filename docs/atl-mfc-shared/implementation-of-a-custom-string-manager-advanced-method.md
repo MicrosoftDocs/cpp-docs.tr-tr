@@ -5,11 +5,11 @@ helpviewer_keywords:
 - IAtlStringMgr class, using
 ms.assetid: 64ab7da9-47c1-4c4a-9cd7-4cc37e7f3f57
 ms.openlocfilehash: 3854ffe205aa8e6cb9cfb800b9aa1473094fffaf
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57743391"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62235505"
 ---
 # <a name="implementation-of-a-custom-string-manager-advanced-method"></a>Uygulama özel dize Yöneticisi (Gelişmiş yöntem)
 

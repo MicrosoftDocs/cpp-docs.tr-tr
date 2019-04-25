@@ -10,11 +10,11 @@ helpviewer_keywords:
 - SIG_DFL constant
 ms.assetid: c3cb4f15-d39e-4d9d-84f9-0d33e3eb5993
 ms.openlocfilehash: 4ff79626d576a05744336d36f99caf95d9b9902d
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57743878"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62267995"
 ---
 # <a name="signal-action-constants"></a>sinyal Eylemi Sabitleri
 

@@ -8,11 +8,11 @@ helpviewer_keywords:
 - ATL Dialog Wizard
 ms.assetid: b0b9ace5-83c9-40d3-82c3-eb6293f10583
 ms.openlocfilehash: 043c170021ce1ceb072dba3e5a450375f556753a
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57287927"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62248856"
 ---
 # <a name="atl-dialog-wizard"></a>ATL iletişim kutusu Sihirbazı
 

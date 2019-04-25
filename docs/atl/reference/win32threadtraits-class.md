@@ -11,11 +11,11 @@ helpviewer_keywords:
 - Win32ThreadTraits class
 ms.assetid: 50279c38-eae1-4301-9ea6-97ccea580f3e
 ms.openlocfilehash: da4b8b3d5a41ab16dc2027fd632c56158afd3b97
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57288746"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62275944"
 ---
 # <a name="win32threadtraits-class"></a>Win32ThreadTraits sınıfı
 

@@ -5,11 +5,11 @@ helpviewer_keywords:
 - OLE, about OLE
 ms.assetid: 5f654eb5-66b1-40c9-9215-bb85356a67f8
 ms.openlocfilehash: 2501373c2ff5904343a6522e4fb18663f5de3843
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57294427"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62186595"
 ---
 # <a name="ole-background"></a>OLE Arka Planı
 

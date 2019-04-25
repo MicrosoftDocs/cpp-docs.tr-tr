@@ -1,5 +1,5 @@
 ---
-title: Derleme ve C++ konsol uygulama projesi çalıştırma
+title: C++ konsol uygulama projesi derleyip çalıştırma
 description: Visual c++'ta bir Hello World konsol uygulaması derleyebilir ve
 ms.custom: mvc
 ms.date: 12/12/2017
@@ -7,13 +7,13 @@ ms.topic: tutorial
 ms.devlang: cpp
 ms.assetid: 45138d71-719d-42dc-90d7-1d0ca31a2f55
 ms.openlocfilehash: 59813a553a9034503d8bf432400db31e6e3d9478
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57813556"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62314279"
 ---
-# <a name="build-and-run-a-c-console-app-project"></a>Derleme ve C++ konsol uygulama projesi çalıştırma
+# <a name="build-and-run-a-c-console-app-project"></a>C++ konsol uygulama projesi derleyip çalıştırma
 
 Bir C++ konsol uygulama projesi oluşturmuş ve kodunuzu girilen, yapı ve Visual Studio içinden çalıştırın ve sonra tek başına bir uygulama olarak komut satırından çalıştırabilirsiniz.
 

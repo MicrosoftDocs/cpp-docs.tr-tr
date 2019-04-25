@@ -15,11 +15,11 @@ helpviewer_keywords:
 - std::num_get [C++], get
 ms.assetid: 9933735d-3918-4b17-abad-5fca2adc62d7
 ms.openlocfilehash: c0984c15e2bf1682fc902264f47f340d0bd3c859
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50472767"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62223763"
 ---
 # <a name="numget-class"></a>num_get Sınıfı
 
@@ -580,11 +580,11 @@ Bellek yönetimi için nesne türünü belirtmek için kullanılan tamsayı değ
 
 Olası değerler için *_Refs* parametresi ve bunların önemi:
 
-- 0: nesne ömrü onu içeren yerel ayarlar tarafından yönetilir.
+- 0: Nesnenin ömrünü, onu içeren yerel ayarlar tarafından yönetilir.
 
-- 1: nesne ömrü el ile yönetilmesi gerekir.
+- 1: Nesnenin ömrünü el ile yönetilmesi gerekir.
 
-- \> 1: Bu değerler tanımlanmadı.
+- \> 1: Bu değerleri tanımlı değil.
 
 Yok edici korumalı olduğundan doğrudan örnek mümkündür.
 

@@ -21,11 +21,11 @@ helpviewer_keywords:
 - _CIatan intrinsic
 ms.assetid: 3baa0429-fe46-4bab-8b00-868e2186dc8c
 ms.openlocfilehash: 81448d976a38d45de821fc66ea87dcf431ebd228
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57749992"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62290163"
 ---
 # <a name="ciatan"></a>_CIatan
 

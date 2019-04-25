@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3862
 ms.assetid: ba547366-4189-4077-8c00-ab45e08a9533
 ms.openlocfilehash: 2ba130862b1debbe2991ca7cbcae50192f900cd8
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50446247"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62302320"
 ---
 # <a name="compiler-error-c3862"></a>Derleyici Hatası C3862
 

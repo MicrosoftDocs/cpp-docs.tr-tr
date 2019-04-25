@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2831
 ms.assetid: c8c04288-0889-4265-a077-17f94cbcdcc9
 ms.openlocfilehash: b0708a7c45f33e30280666cf9bc903723d6a9c26
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50628339"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62227837"
 ---
 # <a name="compiler-error-c2831"></a>Derleyici Hatası C2831
 

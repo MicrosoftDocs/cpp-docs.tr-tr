@@ -20,11 +20,11 @@ apilocation:
 apitype: DLLExport
 ms.assetid: 94d11b38-70b7-4d3a-94ac-523153c92b2e
 ms.openlocfilehash: d70d074b13b0f24f1f040ef0e861e073e303ac7b
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51520471"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62285945"
 ---
 # <a name="log2-log2f-log2l"></a>log2, log2f, log2l
 
@@ -68,7 +68,7 @@ Aksi halde aşağıdaki değerlerden birini döndürebilir:
 |Sorun|döndürülecek|
 |-----------|------------|
 |*x* < 0|NaN|
-|*x* ±0 =|-INFİNİTY|
+|*x* = ±0|-INFİNİTY|
 |*x* = 1|+0|
 |+ INFİNİTY|+ INFİNİTY|
 |NaN|NaN|

@@ -12,11 +12,11 @@ helpviewer_keywords:
 - MFC, database applications
 ms.assetid: d456cdd4-0513-4a51-80c0-9132b66115ce
 ms.openlocfilehash: 2904ceb626fd1bfad0b24026deb08f2c5dcbcd4a
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57283897"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62305339"
 ---
 # <a name="tn048-writing-odbc-setup-and-administration-programs-for-mfc-database-applications"></a>TN048: MFC veritabanı uygulamaları için ODBC Kurulum ve yönetim programları yazma
 

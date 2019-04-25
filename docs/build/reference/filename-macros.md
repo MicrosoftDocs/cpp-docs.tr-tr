@@ -7,11 +7,11 @@ helpviewer_keywords:
 - NMAKE program, filename macros
 ms.assetid: 20afd6b3-5b6c-4e33-9d01-309ce98ef9db
 ms.openlocfilehash: 54527c6f06bee396fdc7419647c607f8979c6a38
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57823683"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62271248"
 ---
 # <a name="filename-macros"></a>Dosya Adı Makroları
 

@@ -6,11 +6,11 @@ helpviewer_keywords:
 - completed tasks, selecting among [Concurrency Runtime]
 ms.assetid: c8ccc160-043f-4599-847b-32ed270bb257
 ms.openlocfilehash: 0d31f9bd16aaa70cc773e60e4f1193e66ec520f0
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57278034"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62205648"
 ---
 # <a name="how-to-select-among-completed-tasks"></a>Nasıl yapılır: Tamamlanan görevler arasında seçim
 

@@ -10,11 +10,11 @@ helpviewer_keywords:
 - function calls, variable number of arguments
 ms.assetid: 27c2f83a-21dd-44c6-913c-2834cb944703
 ms.openlocfilehash: 1f366af6f4058ffb8356017d59a7c176a978b860
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50637313"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62153859"
 ---
 # <a name="functions-with-variable-argument-lists--c"></a>Değişken bağımsız değişken işlevleri listeler (C++)
 

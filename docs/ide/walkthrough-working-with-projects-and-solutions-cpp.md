@@ -8,11 +8,11 @@ helpviewer_keywords:
 - solutions [C++], about solutions
 ms.assetid: 93a3f290-e294-46e3-876e-e3084d9ae833
 ms.openlocfilehash: 9408938b670d8130305f2e1c1258fc6fcb9875bb
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57820071"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62264601"
 ---
 # <a name="walkthrough-working-with-projects-and-solutions-c"></a>İzlenecek yol: Projeler ve çözümler (C++) ile çalışma
 
@@ -223,4 +223,4 @@ Tebrikler, bir uygulama projesi ve çözümü başarıyla derlediyseniz. İzlene
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [C++ Dil Başvurusu](../cpp/cpp-language-reference.md)<br/>
-[Projeler ve yapı sistemi](../build/projects-and-build-systems-cpp.md)<br/>
+[Projeler ve derleme sistemleri](../build/projects-and-build-systems-cpp.md)<br/>

@@ -7,11 +7,11 @@ helpviewer_keywords:
 - ECHO directive
 ms.assetid: 68b912cc-6bd3-4f22-88cb-00a1aa17ecaf
 ms.openlocfilehash: 46a7f77fae035b0fdc846c80f0415337d2bef07b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50450966"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62203287"
 ---
 # <a name="echo"></a>ECHO
 

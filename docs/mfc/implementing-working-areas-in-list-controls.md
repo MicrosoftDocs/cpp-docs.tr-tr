@@ -6,11 +6,11 @@ helpviewer_keywords:
 - working areas in list control [MFC]
 ms.assetid: fbbb356b-3359-4348-8603-f1cb114cadde
 ms.openlocfilehash: 01b166243c9032a113d46ff297b9f6e53429da21
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57281609"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62297222"
 ---
 # <a name="implementing-working-areas-in-list-controls"></a>Liste Denetimlerinde Çalışma Alanlarını Uygulama
 

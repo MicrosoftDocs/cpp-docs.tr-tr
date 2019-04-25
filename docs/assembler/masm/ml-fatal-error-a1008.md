@@ -8,11 +8,11 @@ helpviewer_keywords:
 - A1008
 ms.assetid: fe592f9d-c37b-4cd8-a51d-e3c15ddcab83
 ms.openlocfilehash: 93ae0dabf198369ed667dda3b00dda3ca2954f49
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50534153"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62202441"
 ---
 # <a name="ml-fatal-error-a1008"></a>ML Önemli Hatası A1008
 

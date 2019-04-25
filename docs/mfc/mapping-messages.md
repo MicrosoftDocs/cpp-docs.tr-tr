@@ -12,11 +12,11 @@ helpviewer_keywords:
 - messages [MFC], mapping
 ms.assetid: 996f0652-0698-4b8c-b893-cdaa836d9d0f
 ms.openlocfilehash: 82c55c82d6b7a3faa65906345137885555a57d08
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57287290"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62279236"
 ---
 # <a name="mapping-messages"></a>Eşleme İletileri
 

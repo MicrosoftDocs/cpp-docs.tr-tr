@@ -6,11 +6,11 @@ helpviewer_keywords:
 - OLE DB, object model
 ms.assetid: 1a274a25-c310-4430-a1ec-bd2bd8120eff
 ms.openlocfilehash: 303ad4166f0f1126182956fae9c19f513be7cfb3
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59039169"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62283865"
 ---
 # <a name="ole-db-object-model"></a>OLE DB Nesne Modeli
 

@@ -13,11 +13,11 @@ helpviewer_keywords:
 - open files, maximum
 ms.assetid: 39cf5196-250a-459d-ae90-ce3d99f79039
 ms.openlocfilehash: 8014cf19ebd1c61a077812e2938b3093ce040435
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57742738"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62289591"
 ---
 # <a name="fopenmax-sysopen"></a>FOPEN_MAX, _SYS_OPEN
 

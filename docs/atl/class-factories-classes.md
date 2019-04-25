@@ -7,11 +7,11 @@ helpviewer_keywords:
 - class factories, ATL classes
 ms.assetid: 1d8c2ae2-2c37-452c-a02d-1ecbdd309f84
 ms.openlocfilehash: dd39f8428669686910a1c83b3925727b2bd8edbe
-ms.sourcegitcommit: faa42c8a051e746d99dcebe70fd4bbaf3b023ace
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57817705"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62250657"
 ---
 # <a name="class-factories-classes"></a>Sınıf üreteci sınıfları
 

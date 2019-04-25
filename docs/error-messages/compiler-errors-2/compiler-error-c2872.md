@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2872
 ms.assetid: c619ef97-6e0e-41d7-867c-f8d28a07d553
 ms.openlocfilehash: 103998c7872b683c7405796ee28bd550246ae9bf
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50566224"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62257620"
 ---
 # <a name="compiler-error-c2872"></a>Derleyici Hatası C2872
 
@@ -21,7 +21,7 @@ Derleyici başvurduğunuz hangi sembol belirlenemiyor. Belirtilen ada sahip bird
 
 Bir üstbilgi dosyası içeriyorsa C2872 oluşabilir bir [using yönergesi](../../cpp/namespaces-cpp.md#using_directives), ve bir sonraki üstbilgi dosyasına dahildir ayrıca belirtilen ad uzayında bir tür içeren `using` yönergesi. Belirtin bir `using` yönergesi yalnızca tüm ile belirtilen üst bilgi dosyalarınız sonra `#include`.
 
-C2872 Visual Studio 2013'te arasında bir çakışma nedeniyle oluşabilir `Windows::Foundation::Metadata::Platform` enum türü ve C + +/ CX tanımlı `Platform` ad alanı. Bu sorunu çözmek için şu adımları izleyin:
+C2872 Visual Studio 2013'te arasında bir çakışma nedeniyle oluşabilir `Windows::Foundation::Metadata::Platform` sabit listesi türü ve C++/CX tanımlı `Platform` ad alanı. Bu sorunu çözmek için şu adımları izleyin:
 
 - "Ad alanı Windows::Foundation::Metadata kullanma" yan tümcesi konumundan proje dosyaları kaldırın.
 

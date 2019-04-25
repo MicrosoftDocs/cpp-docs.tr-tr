@@ -36,11 +36,11 @@ helpviewer_keywords:
 - _S_IFCHR constant
 ms.assetid: fd462004-7563-4766-8443-30b0a86174b6
 ms.openlocfilehash: ff2b6ac806b774ae3fe80f9b3cf4b3d2e82a2a9c
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57744696"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62267851"
 ---
 # <a name="stat-structure-stmode-field-constants"></a>_stat Yapı st_mode Alanı Sabitleri
 

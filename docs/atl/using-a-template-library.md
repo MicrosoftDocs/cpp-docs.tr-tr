@@ -5,11 +5,11 @@ helpviewer_keywords:
 - template libraries
 ms.assetid: 5e80ec6e-a61c-41ce-b34b-9a6252c46265
 ms.openlocfilehash: 7b1a6b0befcfd7ecf0a150653b5c32239b7f9543
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57282676"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62195137"
 ---
 # <a name="using-a-template-library"></a>Şablon kitaplığı kullanma
 

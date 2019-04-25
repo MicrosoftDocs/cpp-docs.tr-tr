@@ -7,11 +7,11 @@ helpviewer_keywords:
 - applications [C++], importing into
 ms.assetid: 9d646466-e12e-4710-8ad9-c819c0375fcc
 ms.openlocfilehash: 8fd15212a1ca5e31198c50ac2626755ac0171ae7
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57818472"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62188892"
 ---
 # <a name="importing-into-an-application"></a>Bir Uygulamaya Aktarma
 

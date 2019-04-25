@@ -8,11 +8,11 @@ helpviewer_keywords:
 - /INTEGRITYCHECK editbin options
 - INTEGRITYCHECK editbin options
 ms.openlocfilehash: 4174e22dcdadb3b3319998614285c13741fe3a88
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57814258"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62269771"
 ---
 # <a name="integritycheck"></a>/INTEGRITYCHECK
 

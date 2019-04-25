@@ -5,11 +5,11 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 19ecc5d4-297d-4c4e-b4f3-4fccab890b3d
 ms.openlocfilehash: 37ebcc646864774b15513c9e1891ba14e0705298
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59237204"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62183719"
 ---
 # <a name="how-to-design-for-exception-safety"></a>Nasıl yapılır: Özel durum güvenliği tasarımı
 

@@ -43,11 +43,11 @@ helpviewer_keywords:
 - llrintl function
 ms.assetid: 28ccd5b3-5e6f-434f-997d-a21d51b8ce7f
 ms.openlocfilehash: 01680a62e654112475a55bd8eac0cc14d254e2a2
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51523243"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62285778"
 ---
 # <a name="lrint-lrintf-lrintl-llrint-llrintf-llrintl"></a>lrint, lrintf, lrintl, llrint, llrintf, llrintl
 
@@ -108,7 +108,7 @@ Başarılı olursa, yuvarlak tamsayı değerini döndürür *x*.
 
 |Sorun|döndürülecek|
 |-----------|------------|
-|*x* dönüş türü aralığının dışında<br /><br /> *x* ±∞ =<br /><br /> *x* NaN =|Başlatır **FE_INVALID** ve sıfır (0) değerini döndürür.|
+|*x* dönüş türü aralığının dışında<br /><br /> *x* = ±∞<br /><br /> *x* NaN =|Başlatır **FE_INVALID** ve sıfır (0) değerini döndürür.|
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -116,7 +116,7 @@ C++ aşırı yüklemeye izin verdiğinden, aşırı yüklemesini çağırabilirs
 
 Varsa *x* bir tamsayı değeri, bu işlevler raise kayan nokta denk göstermiyor **FE_INEXACT**.
 
-**Microsoft'a özgü**: sonucu dönüş türünün aralığı dışında olduğunda veya parametre bir NaN veya sonsuz olduğunda, uygulama tanımlı dönüş değeridir. Microsoft derleyicisi, sıfır (0) değeri döndürür.
+**Microsoft'a özgü**: Sonucu dönüş türünün aralığı dışında olduğunda veya bir NaN veya sonsuz parametre olarak kullanıldığında, dönüş değeri tanımlı uygulamasıdır. Microsoft derleyicisi, sıfır (0) değeri döndürür.
 
 ## <a name="requirements"></a>Gereksinimler
 

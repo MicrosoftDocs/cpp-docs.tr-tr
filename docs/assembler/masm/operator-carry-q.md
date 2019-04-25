@@ -9,11 +9,11 @@ helpviewer_keywords:
 - CARRY? operator
 ms.assetid: 5b195de7-3f66-436a-b75a-4b8d7c3c83b7
 ms.openlocfilehash: a793ec50cc5fac08b35f810b2e161b5a253b49a5
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50654460"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62200917"
 ---
 # <a name="operator-carry"></a>CARRY? işleci
 

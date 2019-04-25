@@ -8,11 +8,11 @@ helpviewer_keywords:
 - function objects
 ms.assetid: 85f8a735-2c7b-4f10-9c4d-95c666ec4192
 ms.openlocfilehash: 310d846285612ad94ec9d66672fcb996557b07e2
-ms.sourcegitcommit: 9e85c2e029d06b4c1c69837437468718b4d54908
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58172965"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62159372"
 ---
 # <a name="function-objects-in-the-c-standard-library"></a>C++ Standart kitaplığındaki işlev nesneleri
 

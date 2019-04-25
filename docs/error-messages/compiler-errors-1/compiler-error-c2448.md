@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2448
 ms.assetid: e255df3c-f861-4b4d-a193-8768cef061a5
 ms.openlocfilehash: 915217ffbe848b2814e9960183854e09a80b9ee8
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50434859"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62230302"
 ---
 # <a name="compiler-error-c2448"></a>Derleyici Hatası C2448
 

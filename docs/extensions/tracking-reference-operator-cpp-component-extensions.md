@@ -9,11 +9,11 @@ helpviewer_keywords:
 - '% tracking reference [C++]'
 ms.assetid: 142a7269-ab69-4b54-a6d7-833bef06228f
 ms.openlocfilehash: c6fef4562545b03e212d0e4e58742a1209a6ab81
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58787755"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62265170"
 ---
 # <a name="tracking-reference-operator-ccli-and-ccx"></a>İzleme başvurusu işleci (C++/CLI ve C++/CX)
 

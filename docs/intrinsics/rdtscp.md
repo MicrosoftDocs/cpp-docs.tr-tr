@@ -9,11 +9,11 @@ helpviewer_keywords:
 - rdtscp instruction
 ms.assetid: f17d9a9c-88bb-44e0-b69d-d516bc1c93ee
 ms.openlocfilehash: b28052fbe0a1ab0e1a6f037ce61f43abea5cf771
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59028486"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62263067"
 ---
 # <a name="rdtscp"></a>__rdtscp
 

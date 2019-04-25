@@ -6,11 +6,11 @@ helpviewer_keywords:
 - CReBarCtrl class [MFC], creating
 ms.assetid: 0a012e08-772b-4f6a-af86-7cb651d11d3e
 ms.openlocfilehash: 0fb651aef599b64b787d96a668e2e1496c1dff8e
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57274469"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62153351"
 ---
 # <a name="creating-a-rebar-control"></a>Rebar Denetimi Oluşturma
 

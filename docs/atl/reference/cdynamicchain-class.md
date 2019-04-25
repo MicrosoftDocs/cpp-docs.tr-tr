@@ -14,11 +14,11 @@ helpviewer_keywords:
 - CDynamicChain class
 ms.assetid: f084b2be-0e77-4836-973d-ae278a1e9da8
 ms.openlocfilehash: 4b68198c17d7bd030b88bc78ad4de1367c914703
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57299160"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62259007"
 ---
 # <a name="cdynamicchain-class"></a>CDynamicChain sınıfı
 

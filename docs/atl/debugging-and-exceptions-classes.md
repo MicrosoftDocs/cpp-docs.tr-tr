@@ -6,11 +6,11 @@ helpviewer_keywords:
 - debugging and exceptions classes
 ms.assetid: d42d7649-9721-4a1a-8b38-d983a649fdb9
 ms.openlocfilehash: f6e242b883689152f55c93a9e29f4e93e9f88737
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57261693"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62234966"
 ---
 # <a name="debugging-and-exceptions-classes"></a>Hata ayıklama ve özel durum sınıfları
 

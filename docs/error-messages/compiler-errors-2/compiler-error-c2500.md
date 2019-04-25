@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2500
 ms.assetid: 6bff8161-dc9a-48ca-91f1-fd2eefdbbc93
 ms.openlocfilehash: a5753fc99efcdb1064a21981c62faaba84d44189
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50468373"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62165592"
 ---
 # <a name="compiler-error-c2500"></a>Derleyici Hatası C2500
 

@@ -5,11 +5,11 @@ helpviewer_keywords:
 - punctuators [C++]
 ms.assetid: 1521564c-a977-488a-9490-068079897592
 ms.openlocfilehash: cef34a17de99a189a590ac3f13c0db9563df643c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50478281"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62244239"
 ---
 # <a name="punctuators-c"></a>Noktalama işaretçileri (C++)
 

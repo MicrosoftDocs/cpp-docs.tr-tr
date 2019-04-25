@@ -16,11 +16,11 @@ helpviewer_keywords:
 - IPersistStorageImpl class
 ms.assetid: d652f02c-239c-47c7-9a50-3e9fc3014fff
 ms.openlocfilehash: 3239ed22e37ff694c9f399b05e765d63e97e99ee
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57282521"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62276152"
 ---
 # <a name="ipersiststorageimpl-class"></a>Ipersiststorageımpl sınıfı
 

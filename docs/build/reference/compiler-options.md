@@ -9,11 +9,11 @@ helpviewer_keywords:
 - x64 MSVC compiler
 ms.assetid: ed3376c8-bef4-4c9a-80e9-3b5da232644c
 ms.openlocfilehash: 831aade72cd728ec42aee5ef1f320deb7bdf173d
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57816522"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62294271"
 ---
 # <a name="compiler-options"></a>Derleyici Seçenekleri
 
@@ -40,7 +40,7 @@ Belirli bir derleyici seçeneği bulmak için aşağıdaki listelerden birine ba
 
 Her derleyici seçeneğinin konuda geliştirme ortamında nasıl ayarlanabilir açıklanır. Geliştirme ortamı dışında seçenekleri belirtme hakkında daha fazla bilgi için bkz:
 
-- [MSVC derleyici komut satırı sözdizimi](compiler-command-line-syntax.md)
+- [MSVC Derleyicisi Komut Satırı Söz Dizimi](compiler-command-line-syntax.md)
 
 - [CL Komut Dosyaları](cl-command-files.md)
 

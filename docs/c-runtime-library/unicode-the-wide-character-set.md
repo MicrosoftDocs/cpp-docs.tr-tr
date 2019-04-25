@@ -8,11 +8,11 @@ helpviewer_keywords:
 - wide characters [C++], Unicode
 ms.assetid: b6a05a21-59a5-4d30-8c85-2dbe185f7a74
 ms.openlocfilehash: dc9028be85870766af0274ede091d74a9b4d5130
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57745431"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62304208"
 ---
 # <a name="unicode-the-wide-character-set"></a>Unicode: Joker karakter kümesi
 

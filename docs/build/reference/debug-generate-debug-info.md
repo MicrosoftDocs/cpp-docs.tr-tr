@@ -17,11 +17,11 @@ helpviewer_keywords:
 - program databases [C++]
 ms.assetid: 1af389ae-3f8b-4d76-a087-1cdf861e9103
 ms.openlocfilehash: ca7ef5d1935ddea0441f49e387e35184c6fd1fc6
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57810204"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62294024"
 ---
 # <a name="debug-generate-debug-info"></a>/DEBUG (Hata Ayıklama Bilgileri Üret)
 
@@ -72,4 +72,4 @@ Bir .exe veya .dll hata ayıklama bilgilerini içeren oluşturmak mümkün deği
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [MSVC bağlayıcı başvurusu](linking.md)<br/>
-[MSVC bağlayıcı seçenekleri](linker-options.md)
+[MSVC Bağlayıcı Seçenekleri](linker-options.md)

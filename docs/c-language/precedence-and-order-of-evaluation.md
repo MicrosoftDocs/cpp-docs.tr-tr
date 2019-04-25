@@ -8,11 +8,11 @@ helpviewer_keywords:
 - operators [C++], precedence
 ms.assetid: 201f7864-0c51-4c55-9d6f-39c5d013bcb0
 ms.openlocfilehash: 88d0256e2ce948fbdfffb24037517690ef4b7cb7
-ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56152501"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62232214"
 ---
 # <a name="precedence-and-order-of-evaluation"></a>Öncelik ve Değerlendirme Sırası
 
@@ -67,8 +67,7 @@ Aşağıdaki listede, derleyicinin bazı örnek ifadeleri otomatik olarak nasıl
 
 İlk ifadede, bit düzeyinde- ve işleci (**&**) mantıksal OR işlecine daha yüksek bir önceliğe sahiptir (**||**), bu nedenle `a & b` ilk işleneni formlar Mantıksal OR işlemi.
 
-İkinci ifadede, mantıksal OR işleci (**||**) basit atama işleci daha yüksek bir önceliğe sahiptir (**=**), bu nedenle `b || c` olarak gruplandırılır sağ işlenen olarak. 
-  `a`'ya atanan değerin 0 veya 1 olduğuna dikkat edin.
+İkinci ifadede, mantıksal OR işleci (**||**) basit atama işleci daha yüksek bir önceliğe sahiptir (**=**), bu nedenle `b || c` olarak gruplandırılır sağ işlenen olarak. `a`'ya atanan değerin 0 veya 1 olduğuna dikkat edin.
 
 Üçüncü ifade, beklenmedik bir sonuç oluşturabilecek doğru bir şekilde biçimlendirilmiş bir ifadeyi gösterir. Mantıksal- ve işleci (**&&**) mantıksal OR işlecine daha yüksek bir önceliğe sahiptir (**||**), bu nedenle `q && r` bir işlenen olarak gruplandırılır. Mantıksal işleçler işlenenlerin soldan sağa doğru garanti olduğundan `q && r` önce değerlendirilir `s--`. Ancak, varsa `q && r` sıfır olmayan bir değer olarak değerlendirilirse `s--` değerlendirilmez ve `s` azaltılmaz. Azaltma değil, `s` bir sorun, programınızda neden `s--` ifade ilk işleneni görünmesi gereken veya `s` ayrı bir işlemde indirildiği olmalıdır.
 
@@ -78,8 +77,7 @@ Aşağıdaki ifade geçersizdir ve derleme zamanında bir tanılama iletisi olu�
 |------------------------|----------------------|
 |p == 0 ? p += 1: p += 2|( p == 0 ? p += 1 : p ) += 2|
 
-Bu ifadede, eşitlik işleci (**==**) en yüksek önceliğe serileştirilmesini `p == 0` bir işlenen olarak gruplandırılır. Koşullu ifade işleci (**?:**) sonraki en yüksek önceliğe sahiptir. İlk işleneni `p == 0`, ikinci işleneni ise `p += 1`'dir. Ancak, koşullu ifade işlecinin son işleneni `p` yerine `p += 2` olarak kabul edilir; çünkü bu `p` örneği koşullu ifade işlecine, bileşik atama işlecine göre daha yakından bağlanır. 
-  `+= 2` sol işlenene sahip olmadığı için bir sözdizimi hatası oluşur. Bu türden hataları önlemek ve daha okunabilir bir kod oluşturmak için parantez kullanmanız gerekir. Örneğin, yukarıdaki örneği düzeltmek ve netleştirmek için parantezleri aşağıda gösterildiği gibi kullanabilirsiniz:
+Bu ifadede, eşitlik işleci (**==**) en yüksek önceliğe serileştirilmesini `p == 0` bir işlenen olarak gruplandırılır. Koşullu ifade işleci (**?:**) sonraki en yüksek önceliğe sahiptir. İlk işleneni `p == 0`, ikinci işleneni ise `p += 1`'dir. Ancak, koşullu ifade işlecinin son işleneni `p` yerine `p += 2` olarak kabul edilir; çünkü bu `p` örneği koşullu ifade işlecine, bileşik atama işlecine göre daha yakından bağlanır. `+= 2` sol işlenene sahip olmadığı için bir sözdizimi hatası oluşur. Bu türden hataları önlemek ve daha okunabilir bir kod oluşturmak için parantez kullanmanız gerekir. Örneğin, yukarıdaki örneği düzeltmek ve netleştirmek için parantezleri aşağıda gösterildiği gibi kullanabilirsiniz:
 
 `( p == 0 ) ? ( p += 1 ) : ( p += 2 )`
 

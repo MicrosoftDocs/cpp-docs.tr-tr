@@ -6,11 +6,11 @@ helpviewer_keywords:
 - .ilk files
 ms.assetid: 7324c104-9e5d-423d-b268-b59f92607bf2
 ms.openlocfilehash: 252c1cd6e17346954fce7ebf16134246da76ba57
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57808475"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62293855"
 ---
 # <a name="ilk-files-as-linker-input"></a>Bağlayıcı Girişi olarak .Ilk Dosyaları
 
@@ -19,4 +19,4 @@ Artımlı bağlantılandırma, bağlantı ilk artımlı bağlantı sırasında o
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [LINK Giriş Dosyaları](link-input-files.md)<br/>
-[MSVC bağlayıcı seçenekleri](linker-options.md)
+[MSVC Bağlayıcı Seçenekleri](linker-options.md)

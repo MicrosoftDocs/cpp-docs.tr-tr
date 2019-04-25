@@ -14,11 +14,11 @@ helpviewer_keywords:
 - macros
 ms.assetid: add4e33f-0e62-4d27-be14-896cb8675d22
 ms.openlocfilehash: 27664d4e48c0c4e09439f9e970ded9f2a630d90d
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57268193"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62310285"
 ---
 # <a name="mfc-macros-and-globals"></a>MFC Makroları ve Genel Öğeleri
 

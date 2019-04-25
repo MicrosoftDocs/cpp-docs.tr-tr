@@ -7,11 +7,11 @@ helpviewer_keywords:
 - LNK1112
 ms.assetid: 425793d8-37e6-4072-9b6e-c3d4e9c12562
 ms.openlocfilehash: bc01d56fb8144d23b91c82a7f791a70a5dadb7ef
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50607096"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62255493"
 ---
 # <a name="linker-tools-error-lnk1112"></a>Bağlayıcı Araçları Hatası LNK1112
 

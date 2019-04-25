@@ -5,11 +5,11 @@ helpviewer_keywords:
 - operators [ATL]
 ms.assetid: 58ccd252-2869-45ee-8a5c-3ca40ee7f8a2
 ms.openlocfilehash: 6f1bd4f88b8d3a37f051a208a887c5264f61955a
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57293504"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62260915"
 ---
 # <a name="atl-operators"></a>ATL işleçleri
 

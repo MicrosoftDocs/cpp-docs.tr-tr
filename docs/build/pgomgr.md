@@ -6,11 +6,11 @@ helpviewer_keywords:
 - profile-guided optimizations, pgomgr
 ms.assetid: 74589126-df18-42c9-8739-26d60e148d6a
 ms.openlocfilehash: 4e3eb08c88db9d0ed4e47649014a600c3e0ccb78
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57823706"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62295259"
 ---
 # <a name="pgomgr"></a>pgomgr
 

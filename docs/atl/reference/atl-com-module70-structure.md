@@ -10,11 +10,11 @@ helpviewer_keywords:
 - ATL_COM_MODULE70 structure
 ms.assetid: 5b0b2fd0-bdeb-4c7e-8870-78fa69ace6e6
 ms.openlocfilehash: c6361fc5374ed732cd9ccbfbbd1d3d1c2fc8f1f0
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57261290"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62261045"
 ---
 # <a name="atlcommodule70-structure"></a>_ATL_COM_MODULE70 Structure
 

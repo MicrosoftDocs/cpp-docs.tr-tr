@@ -10,11 +10,11 @@ helpviewer_keywords:
 - command files
 ms.assetid: abdffeea-35c7-4f2d-8c17-7d0d80bac314
 ms.openlocfilehash: 6a55fd616a00aeb3ade229bf7cff8220f86085b7
-ms.sourcegitcommit: 06fc71a46e3c4f6202a1c0bc604aa40611f50d36
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "58508825"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62295051"
 ---
 # <a name="bscmake-command-file-response-file"></a>BSCMAKE Komut Dosyası (Yanıt Dosyası)
 

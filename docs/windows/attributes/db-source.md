@@ -7,11 +7,11 @@ helpviewer_keywords:
 - db_source attribute
 ms.assetid: 0ec8bbf7-ade2-4899-bf4c-8608b92779bc
 ms.openlocfilehash: 884cab78d64c20bef00958f0cc0319281fd69921
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59026337"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62148113"
 ---
 # <a name="dbsource"></a>db_source
 
@@ -74,7 +74,7 @@ class CMyCommand {};
 |-|-|
 |**İçin geçerlidir**|**sınıf**, **yapı**, üye, yöntem, yerel|
 |**Tekrarlanabilir**|Hayır|
-|**Gerekli öznitelikleri**|None|
+|**Gerekli öznitelikleri**|Yok.|
 |**Geçersiz öznitelikler**|Yok.|
 
 Öznitelik bağlamları hakkında daha fazla bilgi için bkz: [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).

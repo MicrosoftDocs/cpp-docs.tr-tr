@@ -6,11 +6,11 @@ helpviewer_keywords:
 - ANSI [C++], C standard
 ms.assetid: c3a188c8-42bc-41fb-a78d-637f3175ade0
 ms.openlocfilehash: 8eebf43877b7599cecd438b94d1d0e13ff956139
-ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56147704"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62313642"
 ---
 # <a name="ansi-conformance"></a>ANSI Uyumluluğu
 

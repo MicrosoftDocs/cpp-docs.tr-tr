@@ -1,6 +1,6 @@
 ---
-title: Derleyici hataları C3100 ile c3199 arasındaki
-ms.date: 11/17/2017
+title: C3100 ile c3199 arasındaki derleyici hataları
+ms.date: 04/21/2019
 f1_keywords:
 - C3102
 - C3105
@@ -66,14 +66,14 @@ helpviewer_keywords:
 - C3191
 - C3193
 ms.assetid: 7bc40c2f-6a8d-488a-b665-f39375afee77
-ms.openlocfilehash: 72228be503cee9b080ae667f36b042af88161894
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: efa3207a9fdfb81a52bf319a1cbc2da84084b6cd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50481880"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62281661"
 ---
-# <a name="compiler-errors-c3100-through-c3199"></a>Derleyici hataları C3100 ile c3199 arasındaki
+# <a name="compiler-errors-c3100-through-c3199"></a>C3100 ile c3199 arasındaki derleyici hataları
 
 Belgelerin bu bölümdeki makaleleri bir alt kümesini derleyici tarafından oluşturulan hata iletilerini açıklayın.
 
@@ -183,3 +183,8 @@ Belgelerin bu bölümdeki makaleleri bir alt kümesini derleyici tarafından olu
 |[Derleyici Hatası C3197](compiler-error-c3197.md)|'*anahtar sözcüğü*': yalnızca tanımlarda kullanılabilir|
 |[Derleyici Hatası C3198](compiler-error-c3198.md)|kayan noktalı pragmaların geçersiz kullanımı: fenv_access pragma yalnızca hassas modda çalışır|
 |[Derleyici Hatası C3199](compiler-error-c3199.md)|kayan noktalı pragmaların geçersiz kullanımı: özel durumlar hassas olmayan modda desteklenmez|
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[C /C++ derleyicisi ve derleme araçları hataları ve Uyarıları](../compiler-errors-1/c-cpp-build-errors.md) \
+[C3999 arasındaki derleyici hataları C2000-](../compiler-errors-1/compiler-errors-c2000-c3999.md)

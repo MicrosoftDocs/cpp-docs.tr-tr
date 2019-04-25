@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2683
 ms.assetid: db605e4f-601b-4d05-92a1-c43ca24de08d
 ms.openlocfilehash: 49e4897ad5db866aa1ca42589859bedff12718df
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50625162"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62266874"
 ---
 # <a name="compiler-error-c2683"></a>Derleyici Hatası C2683
 

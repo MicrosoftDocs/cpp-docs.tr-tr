@@ -19,11 +19,11 @@ helpviewer_keywords:
 - composite controls, global functions
 ms.assetid: 536884cd-e863-4c7a-ab0a-604dc60a0bbe
 ms.openlocfilehash: fb41134de21cc030ae4e96360cad67222026ce4d
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57283442"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62278416"
 ---
 # <a name="composite-control-global-functions"></a>Bileşik Denetim genel işlevleri
 

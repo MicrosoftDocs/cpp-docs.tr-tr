@@ -7,11 +7,11 @@ helpviewer_keywords:
 - RC1052
 ms.assetid: 59803673-492b-44fa-80fa-df93b8aaf9fb
 ms.openlocfilehash: 2ab9dd48420ca263abbf3da22da878a3e74a2151
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50488419"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62297300"
 ---
 # <a name="resource-compiler-fatal-error-rc1052"></a>Kaynak Derleyicisi Önemli Hatası RC1052
 

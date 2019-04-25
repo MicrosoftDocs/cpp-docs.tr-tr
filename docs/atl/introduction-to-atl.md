@@ -7,11 +7,11 @@ helpviewer_keywords:
 - ATL
 ms.assetid: 77f565e8-c4ec-4a80-af4b-7278fcfe5c98
 ms.openlocfilehash: 8c2dcab962cd9863acf0f8e7070727f3b18117d5
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57299263"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62261923"
 ---
 # <a name="introduction-to-atl"></a>ATL'ye giriş
 

@@ -3,11 +3,11 @@ title: Şablonlar ve Ad Çözümü
 ms.date: 11/04/2016
 ms.assetid: 519ba7b5-cd25-4549-865a-9a7b9dffdc28
 ms.openlocfilehash: e4a53df0a192c1d7b7f376e4401eb99fcbf7d481
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50611932"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62266757"
 ---
 # <a name="templates-and-name-resolution"></a>Şablonlar ve Ad Çözümü
 

@@ -9,11 +9,11 @@ helpviewer_keywords:
 - DEPENDENTS dumpbin option
 ms.assetid: 9b31da2a-75ac-4bbf-a3f1-adf8b0ecbbb4
 ms.openlocfilehash: 161e7a68888eac3adae26d1798e8bf097503c89b
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57807601"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62272106"
 ---
 # <a name="dependents"></a>/DEPENDENTS
 

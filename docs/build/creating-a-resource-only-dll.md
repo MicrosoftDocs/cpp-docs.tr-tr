@@ -6,11 +6,11 @@ helpviewer_keywords:
 - DLLs [C++], creating
 ms.assetid: e6b1d4da-7275-467f-a58c-a0a8a5835199
 ms.openlocfilehash: 7f0bad94cf3f126d27cc29567bd4f6c4a846bf1e
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57814390"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62274254"
 ---
 # <a name="creating-a-resource-only-dll"></a>Yalnızca Kaynak DLL Oluşturma
 

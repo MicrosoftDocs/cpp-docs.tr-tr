@@ -14,11 +14,11 @@ helpviewer_keywords:
 - symbolic browser information
 ms.assetid: 3fd8f88b-3924-4feb-9393-287036a28896
 ms.openlocfilehash: 73642baba77a62cac531ae7b2842ec9953b338ec
-ms.sourcegitcommit: 06fc71a46e3c4f6202a1c0bc604aa40611f50d36
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "58508708"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62292802"
 ---
 # <a name="fr-fr-create-sbr-file"></a>/FR, /Fr (.Sbr Dosyası Oluştur)
 

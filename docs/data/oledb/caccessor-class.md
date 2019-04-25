@@ -11,11 +11,11 @@ helpviewer_keywords:
 - CAccessor class
 ms.assetid: b2ba959f-a686-46f3-8837-176248aef748
 ms.openlocfilehash: cfc91f971fc975bcdd2c8ae37d798ff2f5a1cab0
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59039208"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62283978"
 ---
 # <a name="caccessor-class"></a>CAccessor Sınıfı
 

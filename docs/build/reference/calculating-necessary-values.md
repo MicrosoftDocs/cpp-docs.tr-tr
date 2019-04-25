@@ -5,11 +5,11 @@ helpviewer_keywords:
 - helper functions, calculating necessary values
 ms.assetid: 4f037d0f-881a-4a48-a9d2-9f8872dfccb7
 ms.openlocfilehash: 75952bbcdf823aa675b35702841c81e511105ca8
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57426435"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62272656"
 ---
 # <a name="calculating-necessary-values"></a>Gereken Değerleri Hesaplama
 

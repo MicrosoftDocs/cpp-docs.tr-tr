@@ -7,11 +7,11 @@ helpviewer_keywords:
 - names [C++], decorated
 ms.assetid: a4e9ae8e-b239-4454-b401-4102793cb344
 ms.openlocfilehash: 3fae232e6ca886195315002f4e65063d8a23ddc8
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57815430"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62293907"
 ---
 # <a name="decorated-names"></a>Düzenlenmiş Adlar
 

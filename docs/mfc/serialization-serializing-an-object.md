@@ -7,11 +7,11 @@ helpviewer_keywords:
 - objects [MFC], serializing
 ms.assetid: 1db772b1-ad55-4fcf-b133-126cca082510
 ms.openlocfilehash: 5c1106f180c587894283575a82a88e9e18b5c01a
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57290501"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62308049"
 ---
 # <a name="serialization-serializing-an-object"></a>Seri hale getirme: Bir nesneyi seri hale getirme
 

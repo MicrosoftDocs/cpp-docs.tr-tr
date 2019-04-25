@@ -8,11 +8,11 @@ helpviewer_keywords:
 - variable-length argument lists
 ms.assetid: 7046ae34-a0ec-44f0-815d-3209492a3e19
 ms.openlocfilehash: 8107cffa6a2da41c38b116b2e3fe36adf6ac945f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50470414"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62290423"
 ---
 # <a name="argument-access"></a>Bağımsız değişken erişimi
 

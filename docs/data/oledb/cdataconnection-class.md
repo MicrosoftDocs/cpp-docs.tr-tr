@@ -66,11 +66,11 @@ helpviewer_keywords:
 - CSession* operator
 ms.assetid: 77432d85-4e20-49ec-a0b0-142137828471
 ms.openlocfilehash: 94c7025185a24b07d5968157d49c856d4359b33a
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59021637"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62209305"
 ---
 # <a name="cdataconnection-class"></a>CDataConnection Sınıfı
 

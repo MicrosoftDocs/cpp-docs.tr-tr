@@ -15,11 +15,11 @@ helpviewer_keywords:
 - _setenvp function
 ms.assetid: aae01cbb-892b-48b8-8e1f-34f22421f263
 ms.openlocfilehash: da1b3bdd6392b144f9315add4c19de14c1d14d41
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50582695"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62154697"
 ---
 # <a name="customizing-c-command-line-processing"></a>C++ Komut Satırı İşlemini Özelleştirme
 

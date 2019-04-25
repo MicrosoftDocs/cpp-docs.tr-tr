@@ -8,11 +8,11 @@ f1_keywords:
 - VC.Project.VCManifestTool.ReplacementsFile
 ms.assetid: 457582b8-cfde-49c0-92e3-3a6b9e8c08eb
 ms.openlocfilehash: 2fda169ecf304373d27d699bf313bde124dc399f
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57824037"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62269719"
 ---
 # <a name="isolated-com-manifest-tool-configuration-properties-ltprojectnamegt-property-pages-dialog-box"></a>Yalıtılmış COM, bildirim aracı, yapılandırma özellikleri, &lt;Projectname&gt; özellik sayfaları iletişim kutusu
 
@@ -47,4 +47,4 @@ Bu özellik sayfası iletişim kutusu erişmek için projenizi veya, özellik sa
 [Yalıtılmış uygulamalar](/windows/desktop/SbsCs/isolated-applications)<br>
 [ClickOnce Uygulama Bildirimi](/visualstudio/deployment/clickonce-application-manifest)<br>
 [Bildirim Aracı özellik sayfaları](manifest-tool-property-pages.md)<br>
-[C++ derleyicisi ayarlayın ve derleme Visual Studio özellikleri](../working-with-project-properties.md)
+[Visual Studio’da C++ derleyicisi ve derleme özelliklerini ayarlama](../working-with-project-properties.md)

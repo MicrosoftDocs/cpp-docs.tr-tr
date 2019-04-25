@@ -6,11 +6,11 @@ helpviewer_keywords:
 - CMonthCalCtrl class [MFC], examples
 ms.assetid: 1af7fb59-d6fd-46e0-aaa5-b0394a0a3ed5
 ms.openlocfilehash: b798b5f9fd71b6d18b7fe52d6407ea7b89892c90
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58773521"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62238383"
 ---
 # <a name="month-calendar-control-examples"></a>Aylık Takvim Denetimine Örnekler
 

@@ -5,11 +5,11 @@ helpviewer_keywords:
 - applications [MFC], developing
 ms.assetid: 6973c714-fe20-48c6-926b-de88356b3a3d
 ms.openlocfilehash: e3c165a0bf495da4e6cda05c7e109b338b0a364f
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57278684"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62308452"
 ---
 # <a name="sequence-of-operations-for-building-mfc-applications"></a>MFC Uygulamaları Oluşturmak için İşlem Dizisi
 

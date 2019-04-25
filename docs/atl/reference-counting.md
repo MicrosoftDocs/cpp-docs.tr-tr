@@ -9,11 +9,11 @@ helpviewer_keywords:
 - references, counting
 ms.assetid: b1fd4514-6de6-429f-9e60-2777c0d07a3d
 ms.openlocfilehash: fa160cb40af632321e1b14fd3ca88a4dd578b972
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57293439"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62249658"
 ---
 # <a name="reference-counting"></a>Başvuru sayımı
 

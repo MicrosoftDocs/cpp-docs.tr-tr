@@ -22,11 +22,11 @@ helpviewer_keywords:
 - literal strings [C++], class CStringT
 ms.assetid: 3b33125b-1684-4542-a3a7-b00de7d0419e
 ms.openlocfilehash: f4d300bccb6387c510dc16d55eda17de20b4b134
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57742577"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62199030"
 ---
 # <a name="strings-atlmfc"></a>Strings (ATL/MFC)
 

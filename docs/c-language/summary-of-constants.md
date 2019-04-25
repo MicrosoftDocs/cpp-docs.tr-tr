@@ -5,11 +5,11 @@ helpviewer_keywords:
 - constants, C
 ms.assetid: 4158234c-e189-4e25-970f-52a04bc6380a
 ms.openlocfilehash: f927d977d818bed28c5fd7392f7933cd1a63ced3
-ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56150031"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62157753"
 ---
 # <a name="summary-of-constants"></a>Sabitlerin Özeti
 

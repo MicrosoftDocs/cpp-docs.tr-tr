@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C4129
 ms.assetid: a4190c64-4bfb-48fd-8e98-52720bc0d878
 ms.openlocfilehash: dc4f4c4c1feeba543ce0baa71e1ee5dfd81fdcae
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50428683"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62310962"
 ---
 # <a name="compiler-warning-level-1-c4129"></a>Derleyici Uyarısı (düzey 1) C4129
 

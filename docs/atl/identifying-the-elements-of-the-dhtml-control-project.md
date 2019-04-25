@@ -6,11 +6,11 @@ helpviewer_keywords:
 - DHTML controls, ATL support
 ms.assetid: b627547a-3768-4346-9900-4b7a21fb8e27
 ms.openlocfilehash: 32b1c00e3ad3ed15fa56f7718789fe1a2e3ecbab
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57424385"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62261975"
 ---
 # <a name="identifying-the-elements-of-the-dhtml-control-project"></a>DHTML denetim projesinin öğelerini tanımlama
 

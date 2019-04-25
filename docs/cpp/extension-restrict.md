@@ -9,11 +9,11 @@ helpviewer_keywords:
 - __restrict keyword [C++]
 ms.assetid: 2d151b4d-f930-49df-bd16-d8757ec7fa83
 ms.openlocfilehash: 76cdf9424e6eab33a3a92b3f98d9c2b0b04ff667
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50454555"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62183758"
 ---
 # <a name="restrict"></a>__restrict
 
@@ -21,7 +21,7 @@ Gibi **__declspec ( [kısıtlama](../cpp/restrict.md) )** değiştiricisi **__re
 
 - **__Restrict** anahtar sözcüğü yalnızca değişkenler üzerinde geçerlidir ve `__declspec ( restrict )` yalnızca işlev bildirimleri ve tanımları üzerinde geçerlidir.
 
-- **__restrict** benzer **kısıtlama** C99 belirtimi gelen ancak **__restrict** C ya da C++ programlarında kullanılabilir.
+- **__restrict** benzer **kısıtlama** C99 belirtimi gelen ancak **__restrict** kullanılabilir C++ veya C programları.
 
 - Zaman **__restrict** olan kullanıldığında, derleyici değişkenin diğer ad olmayan özelliğini yaymayacaktır. Diğer bir deyişle, atarsanız bir **__restrict** olmayan bir değişken **__restrict** değişken, derleyici hala sağlayacak __restrict olmayan değişkenine diğer adı olması. Bu davranışından farklıdır **kısıtlama** C99 belirtimindeki from anahtar sözcüğü.
 
@@ -29,7 +29,7 @@ Tüm işlevin davranışını etkilerseniz, genellikle bunu kullanmak en iyisidi
 
 Önceki sürümlerle uyumluluk için **_restrict** eşanlamlıdır **__restrict** sürece derleyici seçeneği [/Za \(dil uzantılarını devre dışı bırak)](../build/reference/za-ze-disable-language-extensions.md) olduğu Belirtilen.
 
-Visual Studio 2015 ve sonraki sürümlerinde, **__restrict** C++ başvuruları üzerinde kullanılabilir.
+Visual Studio 2015 ve sonraki sürümlerinde, **__restrict** kullanılabilir C++ başvuruları.
 
 > [!NOTE]
 >  Ayrıca bir değişken üzerinde kullanıldığında [geçici](../cpp/volatile-cpp.md) anahtar sözcüğü, **geçici** öncelikli olur.

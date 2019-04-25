@@ -5,11 +5,11 @@ helpviewer_keywords:
 - rbegin method
 ms.assetid: c1f0d60c-93aa-4313-81b9-04e3f9c796c2
 ms.openlocfilehash: baa718e3902aeae13d169e9ac2ad19c0b5607d79
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50592094"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62211023"
 ---
 # <a name="container-classrbegin"></a>Kapsayıcı Sınıfı::rbegin
 

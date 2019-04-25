@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2364
 ms.assetid: 4f550571-94b5-42ca-84cb-663fecbead44
 ms.openlocfilehash: 051468ea861190dd3f6a28dc272f1bab155145af
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50558905"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62230405"
 ---
 # <a name="compiler-error-c2364"></a>Derleyici Hatası C2364
 

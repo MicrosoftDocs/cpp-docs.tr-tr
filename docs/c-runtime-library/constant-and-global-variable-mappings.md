@@ -15,11 +15,11 @@ helpviewer_keywords:
 - _tfinddata_t function
 ms.assetid: 3af4fd3e-9ed5-4ed9-96fd-7031e5126fd1
 ms.openlocfilehash: 1bd96c7a305f588a24b0c6d31b2a0132d6546574
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57750209"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62289942"
 ---
 # <a name="constant-and-global-variable-mappings"></a>Sabit ve Global Değişken Eşlemeleri
 

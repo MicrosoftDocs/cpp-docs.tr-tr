@@ -18,11 +18,11 @@ helpviewer_keywords:
 - _abnormal_termination
 ms.assetid: 952970a4-9586-4c3d-807a-db729448c91c
 ms.openlocfilehash: 213938fa830f0a924fa954d4a36a39b544473dd4
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57741292"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62290878"
 ---
 # <a name="abnormaltermination"></a>_abnormal_termination
 

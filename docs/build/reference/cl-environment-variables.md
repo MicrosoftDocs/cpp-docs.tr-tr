@@ -10,11 +10,11 @@ helpviewer_keywords:
 - environment variables, CL compiler
 ms.assetid: 2606585b-a681-42ee-986e-1c9a2da32108
 ms.openlocfilehash: a15bedc0a5aa8215356a98c3635a2edd1f3cfc5f
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57807968"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62294479"
 ---
 # <a name="cl-environment-variables"></a>CL Ortam Değişkenleri
 
@@ -59,4 +59,4 @@ Bu, aşağıdaki komut satırı ile aynı etkiye sahiptir:
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Derleyici Seçeneklerini Ayarlama](compiler-command-line-syntax.md)<br/>
-[MSVC derleyici seçenekleri](compiler-options.md)
+[MSVC Derleyicisi Seçenekleri](compiler-options.md)

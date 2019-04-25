@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2768
 ms.assetid: a7f6047a-6a80-4737-ad5c-c12868639fb5
 ms.openlocfilehash: 9c0fb8fb0a98830aaf061ba980e7bdd7903f25e1
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50626180"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62257627"
 ---
 # <a name="compiler-error-c2768"></a>Derleyici Hatası C2768
 

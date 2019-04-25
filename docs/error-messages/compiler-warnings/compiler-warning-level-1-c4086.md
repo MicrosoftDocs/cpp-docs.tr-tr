@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C4086
 ms.assetid: 9248831b-22bf-47af-8684-bfadb17e94fc
 ms.openlocfilehash: 77a3675bed99333031131573201d4be38240f488
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50451539"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62256315"
 ---
 # <a name="compiler-warning-level-1-c4086"></a>Derleyici Uyarısı (düzey 1) C4086
 

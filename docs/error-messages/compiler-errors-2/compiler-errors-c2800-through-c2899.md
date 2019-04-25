@@ -1,6 +1,6 @@
 ---
-title: Derleyici hataları C2800 ile c2899 arasındaki
-ms.date: 11/17/2017
+title: C2800 ile c2899 arasındaki derleyici hataları
+ms.date: 04/21/2019
 f1_keywords:
 - C2816
 - C2820
@@ -42,14 +42,14 @@ helpviewer_keywords:
 - C2895
 - C2899
 ms.assetid: e5de1e92-746a-4315-a331-c5d9efb76dbb
-ms.openlocfilehash: 7c35cd91f836070ff45faa489e1c16c40909f922
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.openlocfilehash: a0367d1d465d4460202f4d6d29468e59f6a74657
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51332081"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62281774"
 ---
-# <a name="compiler-errors-c2800-through-c2899"></a>Derleyici hataları C2800 ile c2899 arasındaki
+# <a name="compiler-errors-c2800-through-c2899"></a>C2800 ile c2899 arasındaki derleyici hataları
 
 Belgelerin bu bölümdeki makaleleri bir alt kümesini derleyici tarafından oluşturulan hata iletilerini açıklayın.
 
@@ -110,7 +110,7 @@ Belgelerin bu bölümdeki makaleleri bir alt kümesini derleyici tarafından olu
 |Derleyici Hatası C2848|'*sınıfı*': bir yönetilen/WinRT türü bir birleşimin üyesi olamaz|
 |[Derleyici Hatası C2849](compiler-error-c2849.md)|'*arabirimi*': arabirimin yok Edicisi olamaz|
 |[Derleyici Hatası C2850](compiler-error-c2850.md)|'*oluşturmak*': yalnızca dosya kapsamında; izin verilen bir iç içe geçmiş yapısı içinde olmayabilir|
-|Derleyici Hatası C2851|'*enum*': ortak bir WinRT numaralandırma yalnızca 'int' veya 'unsigned int' temel tür olarak kullanabilirsiniz|
+|Derleyici Hatası C2851|'*enum*': Ortak bir WinRT numaralandırma yalnızca 'int' veya 'unsigned int' temel tür olarak kullanabilirsiniz|
 |Derleyici Hatası C2852|'*tanımlayıcı*': bir sınıf içinde yalnızca veri üyeleri başlatılabilir|
 |Derleyici Hatası C2853|'*tanımlayıcı*': statik olmayan veri üyesinde 'auto' içeren bir tür olamaz|
 |[Derleyici Hatası C2854](compiler-error-c2854.md)|#pragma hdrstop içinde sözdizimi hatası|
@@ -159,3 +159,8 @@ Belgelerin bu bölümdeki makaleleri bir alt kümesini derleyici tarafından olu
 |[Derleyici Hatası C2897](compiler-error-c2897.md)|bir yok edici/Sonlandırıcı bir işlev şablonu olamaz|
 |[Derleyici Hatası C2898](compiler-error-c2898.md)|'*bildirimi*': üye işlev şablonları sanal olamaz|
 |Derleyici Hatası c2899 arasındaki|Kullanımdan kalktı.|
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[C /C++ derleyicisi ve derleme araçları hataları ve Uyarıları](../compiler-errors-1/c-cpp-build-errors.md) \
+[C3999 arasındaki derleyici hataları C2000-](../compiler-errors-1/compiler-errors-c2000-c3999.md)

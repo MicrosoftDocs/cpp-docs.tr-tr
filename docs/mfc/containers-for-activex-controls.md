@@ -5,11 +5,11 @@ helpviewer_keywords:
 - ActiveX control containers [MFC], application support
 ms.assetid: 5ff0bf37-07f4-49aa-ad9c-c63d3756243a
 ms.openlocfilehash: 23cd9e41ee704327728322f869e67d1a2d0c6cd9
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57279828"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62302201"
 ---
 # <a name="containers-for-activex-controls"></a>ActiveX Denetimleri için Kapsayıcılar
 

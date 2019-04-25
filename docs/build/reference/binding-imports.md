@@ -6,11 +6,11 @@ helpviewer_keywords:
 - DELAY:NOBIND linker option
 ms.assetid: bb766038-deb1-41b1-bcbc-29a30e8c1e2a
 ms.openlocfilehash: 4058d738b87b69a73e8f18d977be8435a7d96a14
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57819860"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62272929"
 ---
 # <a name="binding-imports"></a>İçeri Aktarılanları Bağlama
 

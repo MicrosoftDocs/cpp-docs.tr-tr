@@ -10,11 +10,11 @@ helpviewer_keywords:
 - MFC, base class
 ms.assetid: 593706f3-e9e5-435f-815d-e7b5176b2a61
 ms.openlocfilehash: 664f6608c98a6edba85ddc666b42db802c8736f8
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57290497"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62308868"
 ---
 # <a name="root-class-cobject"></a>Kök sınıf: CObject
 

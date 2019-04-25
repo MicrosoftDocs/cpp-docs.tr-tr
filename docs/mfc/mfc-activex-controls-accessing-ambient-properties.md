@@ -6,11 +6,11 @@ helpviewer_keywords:
 - properties [MFC], accessing ambient
 ms.assetid: fdc9db29-e6b0-45d2-a879-8bd60e2058a7
 ms.openlocfilehash: 585ec8720a654bbcb728330d70ddb914f2543e41
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57305230"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62239745"
 ---
 # <a name="mfc-activex-controls-accessing-ambient-properties"></a>MFC ActiveX denetimleri: Ortam özelliklerine erişme
 

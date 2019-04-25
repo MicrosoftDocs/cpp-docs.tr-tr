@@ -31,11 +31,11 @@ helpviewer_keywords:
 - backspace escape sequence
 ms.assetid: 5aef377f-a76c-4d5c-aa04-8308758ad6a8
 ms.openlocfilehash: 9aeb8ca549cce8bddbf5d6ddadb6292c05f573d5
-ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56151422"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62233952"
 ---
 # <a name="escape-sequences"></a>Çıkış Sıraları
 

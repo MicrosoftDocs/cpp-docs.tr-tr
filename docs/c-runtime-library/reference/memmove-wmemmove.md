@@ -26,11 +26,11 @@ helpviewer_keywords:
 - memmove function
 ms.assetid: 3a906114-9cf3-40d7-bd99-ee452004f218
 ms.openlocfilehash: 988af1c2678e20ea40ce4dfe331a3b6c49db0547
-ms.sourcegitcommit: e06648107065f3dea35f40c1ae5999391087b80b
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57210100"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62156570"
 ---
 # <a name="memmove-wmemmove"></a>memmove, wmemmove
 

@@ -15,11 +15,11 @@ helpviewer_keywords:
 - CComContainedObject class
 ms.assetid: e8616b41-c200-47b8-bf2c-fb9f713ebdad
 ms.openlocfilehash: 15ea9be2a3576081901c9e744d89d33688fe838a
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57273588"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62259520"
 ---
 # <a name="ccomcontainedobject-class"></a>CComContainedObject sınıfı
 

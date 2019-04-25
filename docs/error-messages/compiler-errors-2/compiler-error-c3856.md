@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3856
 ms.assetid: 242d9322-c325-4f20-be58-b2be6da56d60
 ms.openlocfilehash: 1895f7db545813bd2fef209739b5f7ad144dbadc
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50461041"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62265431"
 ---
 # <a name="compiler-error-c3856"></a>Derleyici Hatası C3856
 

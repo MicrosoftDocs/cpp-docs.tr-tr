@@ -9,11 +9,11 @@ helpviewer_keywords:
 - view classes [MFC], Windows
 ms.assetid: b11683fb-9f43-4de3-9499-2b55775f9870
 ms.openlocfilehash: ad58fd6fa2548c2cf320baf75b8fc33a835ddd55
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57267101"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62296624"
 ---
 # <a name="view-classes-windows"></a>Görünüm Sınıfları (Windows)
 

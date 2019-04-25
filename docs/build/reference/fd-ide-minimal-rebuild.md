@@ -9,11 +9,11 @@ helpviewer_keywords:
 - FD compiler option [C++]
 ms.assetid: 7ef21b8c-a448-4bb4-9585-a2a870028e17
 ms.openlocfilehash: ac63b021dc0cb9ee5964af7fa2e168f710653979
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59424059"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62292881"
 ---
 # <a name="fd-ide-minimal-rebuild"></a>/FD (IDE En Az Yeniden Derleme)
 

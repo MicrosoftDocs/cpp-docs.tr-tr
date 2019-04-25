@@ -7,11 +7,11 @@ helpviewer_keywords:
 - LNK1181
 ms.assetid: 984b0db6-e331-4284-b2a7-a212fe96c486
 ms.openlocfilehash: 657e78ece2ce4039eb8dc8561abd455c60aaff75
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59035083"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62254926"
 ---
 # <a name="linker-tools-error-lnk1181"></a>Bağlayıcı Araçları Hatası LNK1181
 

@@ -9,11 +9,11 @@ helpviewer_keywords:
 - pointers, void
 ms.assetid: d203edba-38e6-4056-8b89-011437351057
 ms.openlocfilehash: cb4be000c3c41862d5b4df766d21ae1cddeb6838
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50594122"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62243997"
 ---
 # <a name="void-c"></a>void (C++)
 

@@ -10,11 +10,11 @@ helpviewer_keywords:
 - COFF files, editing
 ms.assetid: efdda03b-3dfc-4d31-90e6-caf5b3977914
 ms.openlocfilehash: 45c2967a55e85ae31bb77bb2e8d50415eafbea46
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57807926"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62293036"
 ---
 # <a name="editbin-reference"></a>EDITBIN Başvurusu
 

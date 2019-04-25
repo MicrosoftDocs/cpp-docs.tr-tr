@@ -3,11 +3,11 @@ title: chrono değişmez değerleri
 ms.date: 11/04/2016
 ms.assetid: 1a9e23b1-256f-4570-8226-5fa7364fb032
 ms.openlocfilehash: 838ae99f5a21660968e0215818aa959348f38305
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50494737"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62279144"
 ---
 # <a name="chrono-literals"></a>chrono değişmez değerleri
 

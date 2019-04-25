@@ -18,11 +18,11 @@ helpviewer_keywords:
 - __pctype_func
 ms.assetid: d52b8add-d07d-4516-a22f-e836cde0c57f
 ms.openlocfilehash: a152f3612373189c964aaca005fe3b989eec8694
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57742024"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62289175"
 ---
 # <a name="pctypefunc"></a>__pctype_func
 

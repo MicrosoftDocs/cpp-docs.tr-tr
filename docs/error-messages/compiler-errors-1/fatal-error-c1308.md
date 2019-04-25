@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C1308
 ms.assetid: 46177997-069e-433a-8e20-93c846d78ffd
 ms.openlocfilehash: 0128953b3b3fa0f29a6764c1d7dab0ece67dfae7
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50640628"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62266523"
 ---
 # <a name="fatal-error-c1308"></a>Önemli hata C1308
 

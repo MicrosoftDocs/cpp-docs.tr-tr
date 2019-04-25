@@ -5,11 +5,11 @@ helpviewer_keywords:
 - C4985
 ms.assetid: 832f001c-afe7-403d-a8b4-02334724c79e
 ms.openlocfilehash: 73abb166910cc421f042d22d67efc122e416bceb
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59024445"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62280197"
 ---
 # <a name="compiler-warning-level-4-c4985"></a>Derleyici Uyarısı (düzey 4) C4985
 

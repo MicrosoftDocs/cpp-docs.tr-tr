@@ -9,11 +9,11 @@ helpviewer_keywords:
 - code, optimizing
 - performance, compiler
 ms.openlocfilehash: ae60070959c683a6365992e7b6cc510fd4111b36
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
-ms.translationtype: MT
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57824158"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62295225"
 ---
 # <a name="optimizing-your-code"></a>Kodunuzu iyileştirme
 

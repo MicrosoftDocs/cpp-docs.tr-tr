@@ -18,11 +18,11 @@ helpviewer_keywords:
 - translation modes (file I/O)
 ms.assetid: a5993bf4-7e7a-47f9-83c3-e46332b85579
 ms.openlocfilehash: 18e0ad8615bbe89c265247041729027f661915fe
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57746701"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62304390"
 ---
 # <a name="translation-mode-constants"></a>Çeviri Modu Sabitleri
 

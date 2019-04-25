@@ -7,11 +7,11 @@ helpviewer_keywords:
 - NMAKE program, syntax
 ms.assetid: 48fe38e0-3f3b-40e6-894c-330ee775a656
 ms.openlocfilehash: d5e815dcb8a424d309362e004d1de4c039dc968b
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57824157"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62292660"
 ---
 # <a name="filename-parts-syntax"></a>Dosya Adı Parçaları Sözdizimi
 

@@ -6,11 +6,11 @@ helpviewer_keywords:
 - .NET applications, C++
 ms.assetid: 59ae9020-5f26-4ad0-bbdd-97c2e2023a20
 ms.openlocfilehash: 8c3e4b4187e507f7e52f8764b546f85258902879
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57824081"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62271049"
 ---
 # <a name="files-created-for-clr-projects"></a>CLR Projeleri için Oluşturulan Dosyalar
 

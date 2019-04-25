@@ -5,11 +5,11 @@ helpviewer_keywords:
 - window classes
 ms.assetid: 503efc2c-a269-495d-97cf-3fb300d52f3d
 ms.openlocfilehash: 0c3bc70b5edfb089a6276003625b876d8c553dcb
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57301655"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62250486"
 ---
 # <a name="introduction-to-atl-window-classes"></a>ATL pencere sınıflarına giriş
 

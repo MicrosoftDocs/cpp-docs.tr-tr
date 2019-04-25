@@ -7,11 +7,11 @@ f1_keywords:
 - atlbase/ATL::AtlUnmarshalPtr
 ms.assetid: 877100b5-6ad9-44c5-a2e0-09414f1720d0
 ms.openlocfilehash: cac6e316ad6b5d3f49c171c940d9129060744aee
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57271924"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62274700"
 ---
 # <a name="marshaling-global-functions"></a>Hazırlama genel işlevleri
 

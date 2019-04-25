@@ -5,11 +5,11 @@ helpviewer_keywords:
 - customizations, MFC Extensions
 ms.assetid: 3b1b7532-8cc9-48dc-9bbe-7fd4060530b5
 ms.openlocfilehash: 42f4b21fb257646d4d505427760a8fe1c7056e77
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57265855"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62241699"
 ---
 # <a name="customization-for-mfc"></a>MFC için Özelleştirme
 

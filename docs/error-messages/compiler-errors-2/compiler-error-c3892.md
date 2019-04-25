@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3892
 ms.assetid: 83fff42c-ea48-442f-bc2e-b33a6b99d890
 ms.openlocfilehash: 07f34efa4ecf1445665fccf60dba10ea12dbff3f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50468672"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62281592"
 ---
 # <a name="compiler-error-c3892"></a>Derleyici Hatası C3892
 

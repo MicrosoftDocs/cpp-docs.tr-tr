@@ -21,11 +21,11 @@ helpviewer_keywords:
 - _CIfmod intrinsic
 ms.assetid: 7c050653-7ec6-4810-b3a7-7a0057ea65ed
 ms.openlocfilehash: b3f667c24a4b02a23d045a5061b41ac4acc4095b
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57746844"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62290228"
 ---
 # <a name="cifmod"></a>_CIfmod
 

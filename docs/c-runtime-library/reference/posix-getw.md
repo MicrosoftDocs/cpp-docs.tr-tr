@@ -21,12 +21,12 @@ helpviewer_keywords:
 - getw function
 ms.assetid: d3c347a4-3ff1-403b-8d02-2dd3b429bb5f
 ms.openlocfilehash: 33d0d6eaf571901935ee17a29cb17a5d91c5957c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50490057"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62155699"
 ---
 # <a name="getw"></a>getw
 
-Bu POSIX işlevi kullanım dışı bırakılmıştır. ISO C++ uyumlu [_getw](getw.md) yerine.
+Bu POSIX işlevi kullanım dışı bırakılmıştır. ISO kullanın C++ uyumluluğunu [_getw](getw.md) yerine.

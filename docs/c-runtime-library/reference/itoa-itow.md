@@ -100,11 +100,11 @@ helpviewer_keywords:
 - _itoa function
 ms.assetid: 46592a00-77bb-4e73-98c0-bf629d96cea6
 ms.openlocfilehash: 016f3474345b623415be9fe33556bb9f466542ad
-ms.sourcegitcommit: e06648107065f3dea35f40c1ae5999391087b80b
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57210542"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62157376"
 ---
 # <a name="itoa-itoa-ltoa-ltoa-ultoa-ultoa-i64toa-ui64toa-itow-ltow-ultow-i64tow-ui64tow"></a>itoa, _itoa, ltoa, _ltoa, ultoa, _ultoa, _i64toa, _ui64toa, _itow, _ltow, _ultow, _i64tow, _ui64tow
 
@@ -199,7 +199,7 @@ Kullanımdan kaldırılma uyarısı olmadan bu işlevler için tanımladığın�
 
 C++'da, bu işlevlerin daha güvenli karşılıkları çağırma şablon aşırı yüklemeleri vardır. Daha fazla bilgi için [güvenli şablon aşırı yüklemeleri](../../c-runtime-library/secure-template-overloads.md).
 
-POSIX adları **itoa**, **ltoa**, ve **ultoa** için diğer ad olarak mevcut **_itoa**, **_ltoa**, ve **_ultoa** işlevleri. ISO c uygulamaya özel işlev adı kurallarını izlemeyin çünkü POSIX adları kullanım dışıdır Varsayılan olarak, bu işlevler, kullanımdan kaldırılma uyarısı neden [C4996](../../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md): **Bu öğe için POSIX ad kullanım dışı bırakılmıştır. Bunun yerine ISO C ve C++ uyumluluğunu adını kullanın:** *new_name*. Bu işlevlerin daha güvenli sürümleri kullanmak için kaynak kodunuzu değiştirmeniz önerilir **_itoa_s**, **_ltoa_s**, veya **_ultoa_s**. Daha fazla bilgi için [_itoa_s, _itow_s işlevleri](itoa-s-itow-s.md).
+POSIX adları **itoa**, **ltoa**, ve **ultoa** için diğer ad olarak mevcut **_itoa**, **_ltoa**, ve **_ultoa** işlevleri. ISO c uygulamaya özel işlev adı kurallarını izlemeyin çünkü POSIX adları kullanım dışıdır Varsayılan olarak, bu işlevler, kullanımdan kaldırılma uyarısı neden [C4996](../../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md): **Bu öğe için POSIX ad kullanım dışı bırakılmıştır. Bunun yerine ISO C kullanın ve C++ uyumluluğunu adı:** *new_name*. Bu işlevlerin daha güvenli sürümleri kullanmak için kaynak kodunuzu değiştirmeniz önerilir **_itoa_s**, **_ltoa_s**, veya **_ultoa_s**. Daha fazla bilgi için [_itoa_s, _itow_s işlevleri](itoa-s-itow-s.md).
 
 Kaynak kodu taşınabilirlik için kodunuzda POSIX adlarını korumak isteyebilirsiniz. Bu işlevler kullanımdan kaldırılma uyarısı olmadan kullanmak için her ikisi de tanımlamak **_CRT_NONSTDC_NO_WARNINGS** ve **_crt_secure_no_warnıngs** Önişlemci makroları CRT üst bilgileri de dahil olmak üzere önce. Komut satırında bir geliştirici komut istemi ekleyerek bunu yapabilirsiniz **/D_CRT_SECURE_NO_WARNINGS** ve **/D_CRT_NONSTDC_NO_WARNINGS** derleyici seçenekleri için **cl**komutu. Aksi takdirde, kaynak dosyalarınızda makroları tanımlar. Önceden derlenmiş üstbilgileri kullanmak, tanımlama dosyası, genellikle stdafx.h önceden derlenmiş üst bilgi üst kısmındaki makrolar şunlardır. Kaynak kodunuzu makroları tanımlamak için **#define** Bu örnekte olduğu gibi herhangi bir CRT başlığını dahil etmeden önce yönergeleri:
 

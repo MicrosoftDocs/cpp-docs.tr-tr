@@ -16,11 +16,11 @@ helpviewer_keywords:
 - post-build events
 ms.assetid: 788a6c18-2dbe-4a49-8cd6-86c1ad7a95cc
 ms.openlocfilehash: c8097e013f934c45b8e3860b8377bdb2bdb9d9a0
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57823982"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62315241"
 ---
 # <a name="specifying-build-events"></a>Derleme olayları belirtme
 
@@ -55,5 +55,5 @@ Derleme olayları hakkında genel bilgi için bkz. [anlama özel derleme adımla
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Özel Derleme Adımlarını ve Derleme Olaylarını Anlama](understanding-custom-build-steps-and-build-events.md)<br>
-[Genel derleme komutları ve Özellikler makroları](reference/common-macros-for-build-commands-and-properties.md)<br>
+[Derleme komutları ve özellikleri için genel makrolar](reference/common-macros-for-build-commands-and-properties.md)<br>
 [Derleme Özelleştirmeleri Sorunlarını Giderme](troubleshooting-build-customizations.md)

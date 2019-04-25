@@ -12,11 +12,11 @@ helpviewer_keywords:
 - CPoint class
 ms.assetid: a6d4db93-35cc-444d-9221-c3e160f6edaa
 ms.openlocfilehash: 85e469e1f52a22917580ce8616aaba5ff57d08ed
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58768035"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62252625"
 ---
 # <a name="cpoint-class"></a>CPoint sınıfı
 

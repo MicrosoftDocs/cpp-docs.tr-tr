@@ -8,11 +8,11 @@ helpviewer_keywords:
 - return keyword [C++]
 ms.assetid: a498903a-056a-4df0-a6cf-72f633a62210
 ms.openlocfilehash: 47bf9c50a2da039b0ffa074796a768290b732bb3
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50507204"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62268544"
 ---
 # <a name="return-statement-c"></a>return Deyimi (C++)
 

@@ -21,15 +21,15 @@ helpviewer_keywords:
 - execvp function
 ms.assetid: a0d0e898-9f06-4aa9-94ce-3ad317318c3a
 ms.openlocfilehash: a614eba0af528021061dd9c8f681f0b2fe5f44bc
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50508166"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62289011"
 ---
 # <a name="execvp"></a>execvp
 
-Bu POSIX işlevi kullanım dışı bırakılmıştır. ISO C++ uyumlu [_execvp](execvp-wexecvp.md) yerine.
+Bu POSIX işlevi kullanım dışı bırakılmıştır. ISO kullanın C++ uyumluluğunu [_execvp](execvp-wexecvp.md) yerine.
 
 > [!IMPORTANT]
 > Bu API, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için [Evrensel Windows platformu uygulamalarında desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).

@@ -10,11 +10,11 @@ helpviewer_keywords:
 - CStreamRowset class, retrieving XML data
 ms.assetid: 6b693d55-a554-4846-8118-e8773b79b572
 ms.openlocfilehash: b5704c10393026a14ac66b632559fc376f008f8b
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59041542"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62284524"
 ---
 # <a name="accessing-xml-data"></a>XML Verilerine Erişme
 

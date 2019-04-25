@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3623
 ms.assetid: a0341b45-062a-4f67-beb9-ba74201ed1ed
 ms.openlocfilehash: dd12e64e775807220b4ece1f4c26a2f52437c69e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50473469"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62221911"
 ---
 # <a name="compiler-error-c3623"></a>Derleyici Hatası C3623
 

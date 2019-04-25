@@ -14,11 +14,11 @@ f1_keywords:
 - amp/Concurrency::tile_static_memory_fence
 ms.assetid: 2bef0985-cb90-4ece-90b9-66529aec73c9
 ms.openlocfilehash: 7baae51480c273ca023856253af7963ac83d7c92
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57284846"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62180394"
 ---
 # <a name="concurrency-namespace-functions-amp"></a>Eşzamanlılık ad alanı işlevleri (AMP)
 
@@ -453,7 +453,7 @@ Kopyalanan öğelerin veri türü.
 
 ##  <a name="copy_async"></a>  copy_async
 
-C++ AMP nesnesi kopyalar ve döndüren bir [completion_future](completion-future-class.md) üzerinde beklenen nesne. Kod hızlandırıcıda çalışıyor olduğunda veri kopyalanamıyor.  Bu işlevin genel formu `copy(src, dest)`.
+Kopya bir C++ AMP nesnesi ve döndürür bir [completion_future](completion-future-class.md) üzerinde beklenen nesne. Kod hızlandırıcıda çalışıyor olduğunda veri kopyalanamıyor.  Bu işlevin genel formu `copy(src, dest)`.
 
 ```
 template <typename value_type, int _Rank>

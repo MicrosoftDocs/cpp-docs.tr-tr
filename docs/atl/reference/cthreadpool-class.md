@@ -21,11 +21,11 @@ helpviewer_keywords:
 - CThreadPool class
 ms.assetid: 06683718-01b9-413c-9481-2dc1734ec70f
 ms.openlocfilehash: 7d363de0d787ecc5015093005b39a379acd82e71
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57262707"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62277404"
 ---
 # <a name="cthreadpool-class"></a>CThreadPool sınıfı
 

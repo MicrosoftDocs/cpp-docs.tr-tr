@@ -8,11 +8,11 @@ helpviewer_keywords:
 - dependents, inferred
 ms.assetid: 9381e74a-53d9-445c-836d-0ff7ef6112d9
 ms.openlocfilehash: b9c3055db0cc173999e1737986166eb334dcf96c
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57823715"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62269914"
 ---
 # <a name="inferred-dependents-and-rules"></a>Çıkarsanan Bağımlılıklar ve Kurallar
 

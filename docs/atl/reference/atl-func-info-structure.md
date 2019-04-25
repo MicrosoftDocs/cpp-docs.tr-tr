@@ -10,11 +10,11 @@ helpviewer_keywords:
 - ATL_FUNC_INFO structure
 ms.assetid: 441ebe2c-f971-47de-9f52-a258e8d6f88e
 ms.openlocfilehash: f6cf32bab86d741f3b0750c150c7bbc647b27ddc
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57299549"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62248699"
 ---
 # <a name="atlfuncinfo-structure"></a>_Atl_func_ınfo yapısı
 

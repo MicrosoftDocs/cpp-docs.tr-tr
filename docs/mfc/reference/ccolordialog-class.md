@@ -21,11 +21,11 @@ helpviewer_keywords:
 - CColorDialog [MFC], m_cc
 ms.assetid: d013dc25-9290-4b5d-a97e-95ad7208e13b
 ms.openlocfilehash: bc9bc76b328359d4c8ec7796de7dfaa7d3a9cf2c
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58772845"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62207732"
 ---
 # <a name="ccolordialog-class"></a>CColorDialog sınıfı
 
