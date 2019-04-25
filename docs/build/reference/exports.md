@@ -7,11 +7,11 @@ helpviewer_keywords:
 - EXPORTS .def file statement
 ms.assetid: dbcd7579-b855-44c4-bd27-931e157657f7
 ms.openlocfilehash: 33b70c680bfc3db24f5326a2027fa9ec4740e3f2
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57814143"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62271352"
 ---
 # <a name="exports"></a>EXPORTS
 
@@ -51,7 +51,7 @@ EXPORTS
    func2=other_module.#42
 ```
 
-MSVC derleyicisi için C++ işlevlerini bir düzenlemeyi Adlandır kullandığından, ya da düzenlenmiş adı kullanmalıdır *internal_name* veya dışarı aktarılan işlevleri kullanarak tanımladığınız `extern "C"` kaynak kodunda. Derleyici kullanmak için C işlevlerini de düzenler [__stdcall](../../cpp/stdcall.md) çağırma kuralı ile bir alt çizgi (\_) önek ve sonek oluşan at işareti (\@) (ondalık) bayt sayısı, ardından bağımsız değişken listesi.
+MSVC derleyicisi için ad düzenlemesi kullandığından C++ İşlevler, ya da düzenlenmiş adı kullanmanız gerekir *internal_name* veya dışarı aktarılan işlevleri kullanarak tanımladığınız `extern "C"` kaynak kodunda. Derleyici kullanmak için C işlevlerini de düzenler [__stdcall](../../cpp/stdcall.md) çağırma kuralı ile bir alt çizgi (\_) önek ve sonek oluşan at işareti (\@) (ondalık) bayt sayısı, ardından bağımsız değişken listesi.
 
 Derleyici tarafından üretilen düzenlenmiş adların bulmak için kullanın [DUMPBIN](dumpbin-reference.md) aracını veya bağlayıcı [/MAP](map-generate-mapfile.md) seçeneği. Düzenlenmiş adlar derleyici özgüdür. Düzenlenmiş adları dışa aktarmak istemiyorsanız. DEF dosyası için DLL'e yürütülebilir dosyalar derleyici aynı sürümünü kullanarak da oluşturulmalıdır. Bu çağrıyı düzenlenmiş adları dışarı aktarılan adlarının eşleştiğini sağlar. DEF dosyası.
 

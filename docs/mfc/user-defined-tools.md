@@ -5,11 +5,11 @@ helpviewer_keywords:
 - user-defined tools (MFC Extensions)
 ms.assetid: cb887421-78ce-4652-bc67-96a53984ccaa
 ms.openlocfilehash: 785e37c63653dde91176bedd0321fc58ac122c7e
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57269714"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62180838"
 ---
 # <a name="user-defined-tools"></a>Kullanıcı Tanımlı Araçlar
 

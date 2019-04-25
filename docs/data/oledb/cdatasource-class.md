@@ -58,11 +58,11 @@ helpviewer_keywords:
 - OpenWithServiceComponents method
 ms.assetid: 99bf862c-9d5c-4117-9501-aa0e2672085c
 ms.openlocfilehash: 2564d4d9b0a2e5df1f575d6f2627ce80f48533c1
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59021923"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62176091"
 ---
 # <a name="cdatasource-class"></a>CDataSource Sınıfı
 

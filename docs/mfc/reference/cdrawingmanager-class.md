@@ -57,11 +57,11 @@ helpviewer_keywords:
 - CDrawingManager [MFC], SmartMixColors
 ms.assetid: 9e4775ca-101b-4aa9-a85a-4d047c701215
 ms.openlocfilehash: 506ab7a06653942ecff05043a7e7efabd535115f
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58781698"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62164130"
 ---
 # <a name="cdrawingmanager-class"></a>CDrawingManager sınıfı
 

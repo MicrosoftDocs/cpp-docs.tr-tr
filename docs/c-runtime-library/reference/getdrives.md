@@ -25,11 +25,11 @@ helpviewer_keywords:
 - disk drives
 ms.assetid: 869bb51f-4209-4328-846e-3aadebaceb9c
 ms.openlocfilehash: 444a54a316b1b1e4cfd26df95d172c7e9748fb88
-ms.sourcegitcommit: d441305fb19131afbd7fc259d8cda63ea26f2343
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51678320"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62157688"
 ---
 # <a name="getdrives"></a>_getdrives
 

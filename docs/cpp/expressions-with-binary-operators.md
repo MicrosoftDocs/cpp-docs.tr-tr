@@ -7,11 +7,11 @@ helpviewer_keywords:
 - expressions [C++], binary operators
 ms.assetid: 6dea3df4-a4bd-42c3-9807-4a27c120ac9a
 ms.openlocfilehash: d3a966a7922c1888defbebf970ac409872fe18ec
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50505137"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62154314"
 ---
 # <a name="expressions-with-binary-operators"></a>İkili İşleçli İfadeler
 

@@ -49,11 +49,11 @@ helpviewer_keywords:
 - strtok_s function
 ms.assetid: 7696c972-f83b-4617-8c82-95973e9fdb46
 ms.openlocfilehash: e2c237927aa133d33085be40b88789c1024d6b34
-ms.sourcegitcommit: 6e4dd21759caaed262a7255735cf8d6e8fb9f4d7
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "58476896"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62176206"
 ---
 # <a name="strtoks-strtoksl-wcstoks-wcstoksl-mbstoks-mbstoksl"></a>strtok_s, _strtok_s_l, wcstok_s, _wcstok_s_l, _mbstok_s, _mbstok_s_l
 

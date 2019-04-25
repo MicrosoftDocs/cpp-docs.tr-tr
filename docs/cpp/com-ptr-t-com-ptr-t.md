@@ -7,11 +7,11 @@ helpviewer_keywords:
 - _com_ptr_t method [C++]
 ms.assetid: 0c00620a-28d2-4f60-ae4a-1696be36137e
 ms.openlocfilehash: 779fd1008f6763f4b5ca95938018a5129e89aa1f
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51326699"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62154883"
 ---
 # <a name="comptrtcomptrt"></a>_com_ptr_t::_com_ptr_t
 

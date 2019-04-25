@@ -9,11 +9,11 @@ helpviewer_keywords:
 - type checking
 ms.assetid: 1ba7590b-d1c0-4636-b6a0-e231395abdad
 ms.openlocfilehash: bb5aecc2b47aa8e88666f42d8022395bf99fd85e
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57747689"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62304325"
 ---
 # <a name="type-checking-crt"></a>Tür Denetleme (CRT)
 

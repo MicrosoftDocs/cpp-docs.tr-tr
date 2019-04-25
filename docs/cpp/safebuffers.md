@@ -8,11 +8,11 @@ helpviewer_keywords:
 - safebuffers __declspec keyword
 ms.assetid: 0b0dce14-4523-44d2-8070-5dd0fdabc618
 ms.openlocfilehash: 473a838a48ed6523ce78d0bc8128dd83636c81d6
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50555781"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62267389"
 ---
 # <a name="safebuffers"></a>safebuffers
 
@@ -78,5 +78,5 @@ int wmain() {
 
 [__declspec](../cpp/declspec.md)<br/>
 [Anahtar Sözcükler](../cpp/keywords-cpp.md)<br/>
-[Satır içi, __inline, \__forceinline](inline-functions-cpp.md)<br/>
+[inline, __inline, \__forceinline](inline-functions-cpp.md)<br/>
 [strict_gs_check](../preprocessor/strict-gs-check.md)

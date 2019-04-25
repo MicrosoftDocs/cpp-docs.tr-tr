@@ -31,11 +31,11 @@ helpviewer_keywords:
 - _wgetenv function
 ms.assetid: 3b9cb9ab-a126-4e0e-a44f-6c5a7134daf4
 ms.openlocfilehash: 79c685fef8d6a4b966c53bb7d94b423d16971976
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50568184"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62157675"
 ---
 # <a name="getenv-wgetenv"></a>getenv, _wgetenv
 
@@ -88,7 +88,7 @@ Ortam (MBCS ve Unicode) iki kopyasını aynı anda bir programda varsa, çalış
 
 |TCHAR.H yordamı|_UNICODE & _MBCS tanımlanmamış|_MBCS tanımlanmış|_UNICODE tanımlanmış|
 |---------------------|------------------------------------|--------------------|-----------------------|
-|**_tgetenv**|**GETENV**|**GETENV**|**_wgetenv**|
+|**_tgetenv**|**getenv**|**getenv**|**_wgetenv**|
 
 Denetleyin ya da değerini değiştirmek için **TZ** ortam değişkenini kullanmak **getenv**, **_putenv** ve **_tzset** gerektiği şekilde. Hakkında daha fazla bilgi için **TZ**, bkz: [_tzset](tzset.md) ve [_daylight, saat diliminizi ve _tzname](../../c-runtime-library/daylight-dstbias-timezone-and-tzname.md).
 
@@ -96,7 +96,7 @@ Denetleyin ya da değerini değiştirmek için **TZ** ortam değişkenini kullan
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**GETENV**|\<stdlib.h >|
+|**getenv**|\<stdlib.h >|
 |**_wgetenv**|\<stdlib.h > veya \<wchar.h >|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).

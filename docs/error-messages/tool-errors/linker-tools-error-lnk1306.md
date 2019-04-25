@@ -7,11 +7,11 @@ helpviewer_keywords:
 - LNK1306
 ms.assetid: fad1df6a-0bd9-412f-b0d1-7c9bc749c584
 ms.openlocfilehash: ddaa8797e0cf8ff617408aedc770b21cc656cec4
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50659682"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62160464"
 ---
 # <a name="linker-tools-error-lnk1306"></a>Bağlayıcı Araçları Hatası LNK1306
 

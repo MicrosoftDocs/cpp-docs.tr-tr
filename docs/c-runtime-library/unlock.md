@@ -21,11 +21,11 @@ helpviewer_keywords:
 - _unlock function
 ms.assetid: 2eda2507-a134-4997-aa12-f2f8cb319e14
 ms.openlocfilehash: aceac01608a3d62fc4ac9c3aaf1f530584e1a3fa
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57740408"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62304182"
 ---
 # <a name="unlock"></a>_unlock
 

@@ -32,11 +32,11 @@ helpviewer_keywords:
 - modfl function
 ms.assetid: b1c7abf5-d476-43ca-a03c-02072a86e32d
 ms.openlocfilehash: 59d6e2b9b02ad182c5630d6dc9a989c035e8fa92
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50478071"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62156336"
 ---
 # <a name="modf-modff-modfl"></a>modf, modff, modfl
 

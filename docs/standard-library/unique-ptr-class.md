@@ -23,11 +23,11 @@ helpviewer_keywords:
 - std::unique_ptr [C++], swap
 ms.assetid: acdf046b-831e-4a4a-83aa-6d4ee467db9a
 ms.openlocfilehash: b0751d7716e2f8587ab410e57c2bea17c5dd3e21
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51520978"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62295467"
 ---
 # <a name="uniqueptr-class"></a>unique_ptr Sınıfı
 
@@ -154,7 +154,7 @@ Sahip olunan bir kaynakta depolanan işaretçide `stored_ptr` türünde `pointer
 |**bool işleci**|İşleç dönüştürülebilen bir türde bir değer döndürür **bool**. Dönüştürme sonucunu **bool** olduğu **true** olduğunda `get() != pointer()`, aksi takdirde **false**.|
 |`operator->`|Üye işlevinin döndürdüğü `stored_ptr`.|
 |`operator*`|Üye işlevinin döndürdüğü `*stored_ptr`.|
-|[unique_ptr işleç =](#unique_ptr_operator_eq)|Değerini atar bir `unique_ptr` (veya `pointer-type`) geçerli `unique_ptr`.|
+|[unique_ptr operator=](#unique_ptr_operator_eq)|Değerini atar bir `unique_ptr` (veya `pointer-type`) geçerli `unique_ptr`.|
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -243,7 +243,7 @@ typedef T1 pointer;
 
 Türü eşanlamlıdır `Del::pointer` tanımlanmış, aksi takdirde, `Type *`.
 
-## <a name="release"></a>  unique_ptr::Release
+## <a name="release"></a>  unique_ptr::release
 
 Çağırana döndürülen depolanmış işaretçiyi in sahipliğini bırakır ve depolanan işaretçi değerine ayarlar **nullptr**.
 

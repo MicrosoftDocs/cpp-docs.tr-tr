@@ -10,11 +10,11 @@ helpviewer_keywords:
 - printing views [MFC]
 ms.assetid: 8d4a3c8e-1fce-4edc-b608-94cb5f3e487e
 ms.openlocfilehash: 835ea44ef82e59543bab835cd4bf5029dde0b453
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57279321"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62308881"
 ---
 # <a name="role-of-the-view-in-printing"></a>Yazdırmada Görünümün Rolü
 

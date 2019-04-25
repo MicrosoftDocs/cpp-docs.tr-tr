@@ -7,11 +7,11 @@ helpviewer_keywords:
 - windows [MFC], dialog and control classes
 ms.assetid: b3610da6-9644-49b7-adbf-0e04f0d6d2b5
 ms.openlocfilehash: 3fc7d800cee7e3bf64f64028b2499935eb42a044
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57302565"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62167627"
 ---
 # <a name="window-dialog-and-control-classes"></a>Pencere, İletişim Kutusu ve Denetim Sınıfları
 

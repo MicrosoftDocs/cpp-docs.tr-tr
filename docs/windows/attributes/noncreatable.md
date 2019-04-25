@@ -7,11 +7,11 @@ helpviewer_keywords:
 - noncreatable attribute
 ms.assetid: 4d17937b-0bff-41af-ba57-53e18b7ab5a9
 ms.openlocfilehash: a10d93650c0ae564019a09b34c3a604d12327998
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59039997"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62305326"
 ---
 # <a name="noncreatable"></a>noncreatable
 

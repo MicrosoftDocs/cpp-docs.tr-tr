@@ -7,11 +7,11 @@ helpviewer_keywords:
 - LNK1332
 ms.assetid: b31d5ca0-c27f-4177-896b-2637dccbde24
 ms.openlocfilehash: 3c071ae8ac8c212b5bf3cd3eba8b082d790f7d58
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59041568"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62161075"
 ---
 # <a name="linker-tools-error-lnk1332"></a>Bağlayıcı Araçları Hatası LNK1332
 

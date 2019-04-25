@@ -34,11 +34,11 @@ helpviewer_keywords:
 - WM_ messages
 ms.assetid: f46962e5-8329-4f1f-9b4d-fdad2a5ce1f8
 ms.openlocfilehash: 283e7aa52008d76067249978d667ce641020a3bb
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57276916"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62309076"
 ---
 # <a name="wm-messages-p---r"></a>WM_ iletileri: P - R
 

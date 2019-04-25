@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3175
 ms.assetid: 3f19d513-a05a-4b6c-806f-276fe5c36b90
 ms.openlocfilehash: 368e5a9cb9bea04a7889c25c86a7245049677112
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50642708"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62175475"
 ---
 # <a name="compiler-error-c3175"></a>Derleyici Hatası C3175
 

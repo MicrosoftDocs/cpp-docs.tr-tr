@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2158
 ms.assetid: 39028899-e95c-4809-8e65-6111118641ee
 ms.openlocfilehash: a84c803d45184c19bab0f855ae1eb33744c4e02d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50597398"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62174880"
 ---
 # <a name="compiler-error-c2158"></a>Derleyici Hatası C2158
 

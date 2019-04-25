@@ -7,11 +7,11 @@ helpviewer_keywords:
 - PRJ0029
 ms.assetid: f02c09c6-09f3-4d44-8cd4-9a25336be1ea
 ms.openlocfilehash: 1daac3435bc8f1b4bd4ed8462caf3b8eaa397e22
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50578665"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62298042"
 ---
 # <a name="project-build-warning-prj0029"></a>Proje Derleme Uyarısı PRJ0029
 

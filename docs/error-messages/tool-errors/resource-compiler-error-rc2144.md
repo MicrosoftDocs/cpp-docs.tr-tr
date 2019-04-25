@@ -7,11 +7,11 @@ helpviewer_keywords:
 - RC2144
 ms.assetid: 1b3ff39a-92cd-4a04-b1a3-b1fa6a805813
 ms.openlocfilehash: deabd639e04d5b78b398cda9245e9726e2124740
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50642929"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62173476"
 ---
 # <a name="resource-compiler-error-rc2144"></a>Kaynak Derleyicisi Hatası RC2144
 

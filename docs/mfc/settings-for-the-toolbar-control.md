@@ -6,11 +6,11 @@ helpviewer_keywords:
 - CToolBarCtrl class [MFC], settings
 ms.assetid: 025ba920-b3ee-4d82-9367-e652cd7875b9
 ms.openlocfilehash: baccc2f486bb49a52f1297c01941a90e9ee01b7a
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57297092"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62307607"
 ---
 # <a name="settings-for-the-toolbar-control"></a>Araç Çubuğu Denetimi için Ayarlar
 

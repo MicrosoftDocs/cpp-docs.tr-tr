@@ -9,11 +9,11 @@ helpviewer_keywords:
 - rep insw instruction
 ms.assetid: 6de37939-017a-4740-9e3d-7de78a30daba
 ms.openlocfilehash: 52c36754e1eea56b84eeb494e82e37a5b043246e
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59030225"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62263457"
 ---
 # <a name="inwordstring"></a>__inwordstring
 

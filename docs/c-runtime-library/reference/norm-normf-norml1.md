@@ -31,11 +31,11 @@ helpviewer_keywords:
 - norml function
 ms.assetid: 9786ecfe-0019-4553-b378-0af6c691e15c
 ms.openlocfilehash: 3c1803a54f0dfc27975af5bb0eeb7e5c042b2579
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50628117"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62156142"
 ---
 # <a name="norm-normf-norml"></a>Norm, normf, norml
 
@@ -65,13 +65,13 @@ Kare büyüklüğünü *z*.
 
 ## <a name="remarks"></a>Açıklamalar
 
-C++ aşırı yüklemeye izin verdiğinden, aşırı yüklemesini çağırabilirsiniz **norm** Süren **_Fcomplex** veya **_Lcomplex** değerleri ve dönüş **float** veya **uzun çift** değerleri. C programında **norm** her zaman alan bir **_Dcomplex** döndürür ve değeri bir **çift** değeri.
+Çünkü C++ aşırı yüklemesi, sağlayan yüklerini çağırabilirsiniz **norm** Süren **_Fcomplex** veya **_Lcomplex** değerleri ve dönüş **float**veya **uzun çift** değerleri. C programında **norm** her zaman alan bir **_Dcomplex** döndürür ve değeri bir **çift** değeri.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|C üstbilgisi|C++ üst bilgisi|
 |-------------|--------------|------------------|
-|**Norm**, **normf**, **norml**|\<Complex.h >|\<Complex.h >|
+|**norm**, **normf**, **norml**|\<Complex.h >|\<Complex.h >|
 
 **_Fcomplex**, **_Dcomplex**, ve **_Lcomplex** türleridir Microsoft'a özgü eşdeğerleri uygulanmayan yerel C99 türlerinin **_Complex Kaydır** , **çift _Complex**, ve **uzun çift _Complex**sırasıyla.  Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

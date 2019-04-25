@@ -10,11 +10,11 @@ helpviewer_keywords:
 - window classes [MFC], derived
 ms.assetid: 6f7e437e-fbde-4a06-bfab-72d9dbf05292
 ms.openlocfilehash: e86ca139b8470dce614564f0c0134a611adeda2c
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57270331"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62153384"
 ---
 # <a name="derived-window-classes"></a>Türetilen Pencere Sınıfları
 

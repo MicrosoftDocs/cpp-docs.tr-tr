@@ -5,11 +5,11 @@ helpviewer_keywords:
 - record views, customizing default code
 ms.assetid: 91f2828f-0666-4273-ae28-e4703fd98521
 ms.openlocfilehash: 9d64fc26e1c78bad0431bc9b10dd5117c4866159
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59029362"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62152923"
 ---
 # <a name="using-a-record-view--mfc-data-access"></a>(MFC veri erişimi) kayıt görünümünü kullanma
 

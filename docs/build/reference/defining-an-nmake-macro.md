@@ -7,11 +7,11 @@ helpviewer_keywords:
 - NMAKE macros, defining
 ms.assetid: 45aae451-9d33-4a3d-8799-2e0cae17070d
 ms.openlocfilehash: b163c3dcbfb079a532bd1babca4ee881407bafc1
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57824153"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62272236"
 ---
 # <a name="defining-an-nmake-macro"></a>NMAKE Makrosu Tanımlama
 

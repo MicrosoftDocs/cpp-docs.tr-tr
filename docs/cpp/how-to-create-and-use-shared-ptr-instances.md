@@ -5,11 +5,11 @@ ms.date: 11/19/2018
 ms.topic: conceptual
 ms.assetid: 7d6ebb73-fa0d-4b0b-a528-bf05de96518e
 ms.openlocfilehash: 8363139efddb2fa64057fdb995ab7bd5dfbcfd9b
-ms.sourcegitcommit: a1fad0a266b20b313364a74b16c9ac45d089b1e9
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "54220601"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62153750"
 ---
 # <a name="how-to-create-and-use-sharedptr-instances"></a>Nasıl yapılır: Shared_ptr örnekleri oluşturma ve kullanma
 

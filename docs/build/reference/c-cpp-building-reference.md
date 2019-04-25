@@ -9,11 +9,11 @@ helpviewer_keywords:
 - builds [C++], additional information
 ms.assetid: 100b4ccf-572c-4d1f-970c-fa0bc0cc0d2d
 ms.openlocfilehash: 4c3f7aa598a9c43af04c148ed0d4b3f555566ec7
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57812492"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62294765"
 ---
 # <a name="cc-building-reference"></a>C/C++ Oluşturma Başvurusu
 
@@ -23,7 +23,7 @@ Visual C++, C/C++ programı oluşturma iki yolu sağlar. En kolay (ve yaygın) y
 
 [C++ projeleri için MSBuild başvurusu](msbuild-visual-cpp-overview.md)
 
-[MSVC derleyici başvurusu](compiling-a-c-cpp-program.md)<br/>
+[MSVC Derleyicisi Başvurusu](compiling-a-c-cpp-program.md)<br/>
 MSVC derleyicisi, makine kodu, bağlayıcı yönergeleri, bölümler, dış başvuruları ve işlev/veri adları içeren bir nesne dosyası oluşturur açıklar.
 
 [MSVC bağlayıcı başvurusu](linking.md)<br/>
@@ -48,16 +48,16 @@ Oluşturma işlemini özelleştirme açıklanır.
 [C/C++ programı oluşturma](../projects-and-build-systems-cpp.md)<br/>
 Programınızın komut satırından veya Visual Studio'nun tümleşik geliştirme ortamından oluşturmayı açıklayan konulara bağlantılar sağlar.
 
-[MSVC derleyici komut satırı sözdizimi](compiler-command-line-syntax.md)<br/>
+[MSVC Derleyicisi Komut Satırı Söz Dizimi](compiler-command-line-syntax.md)<br/>
 Geliştirme ortamında veya komut satırında derleyici seçeneklerini ayarlama açıklanır.
 
-[MSVC derleyici seçenekleri](compiler-options.md)<br/>
+[MSVC Derleyicisi Seçenekleri](compiler-options.md)<br/>
 Derleyici seçeneklerini kullanarak açıklayan konulara bağlantılar sağlar.
 
 [MSVC bağlayıcı başvurusu](linking.md)<br/>
 Bağlayıcı seçeneklerini ayarlama içinde veya tümleşik geliştirme ortamı dışında açıklar.
 
-[MSVC bağlayıcı seçenekleri](linker-options.md)<br/>
+[MSVC Bağlayıcı Seçenekleri](linker-options.md)<br/>
 Bağlayıcı seçeneklerinin kullanımını açıklayan konulara bağlantılar sağlar.
 
 [BSCMAKE Başvurusu](bscmake-reference.md)<br/>

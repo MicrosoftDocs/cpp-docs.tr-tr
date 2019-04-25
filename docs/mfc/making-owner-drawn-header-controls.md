@@ -9,11 +9,11 @@ helpviewer_keywords:
 - owner-drawn header controls [MFC]
 ms.assetid: 455c113b-e8d0-400c-8690-dbb92cba0d05
 ms.openlocfilehash: 145134a4c3a0518d5248d72c098927ed4ee5042a
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57262980"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62310857"
 ---
 # <a name="making-owner-drawn-header-controls"></a>Sahip Tarafından Çizilmiş Üstbilgi Denetimleri Yapma
 

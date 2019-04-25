@@ -104,11 +104,11 @@ helpviewer_keywords:
 - CAnimationController [MFC], m_pTransitionLibrary
 ms.assetid: ed294c98-695e-40a6-b940-33ef1d40aa6b
 ms.openlocfilehash: a3a533b876b9ca245c0553c4c24a815ef3cabca1
-ms.sourcegitcommit: 309dc532f13242854b47759cef846de59bb807f1
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58565967"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62151194"
 ---
 # <a name="canimationcontroller-class"></a>CAnimationController sınıfı
 

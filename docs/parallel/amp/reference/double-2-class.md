@@ -29,11 +29,11 @@ f1_keywords:
 - amp_short_vectors/Concurrency::graphics::double_2::set_y
 ms.assetid: c19c2d21-3cbf-4ce5-b460-3b8253688f82
 ms.openlocfilehash: 9482c2839c4963d533eb643fa0ef86a5c66636a4
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57289656"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62182338"
 ---
 # <a name="double2-class"></a>double_2 Sınıfı
 

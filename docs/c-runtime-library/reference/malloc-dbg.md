@@ -24,11 +24,11 @@ helpviewer_keywords:
 - _malloc_dbg function
 ms.assetid: c97eca51-140b-4461-8bd2-28965b49ecdb
 ms.openlocfilehash: 64fb40028d9130278077f3d05dd1e25914dba212
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50633616"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62156947"
 ---
 # <a name="mallocdbg"></a>_malloc_dbg
 

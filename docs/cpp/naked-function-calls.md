@@ -12,11 +12,11 @@ helpviewer_keywords:
 - naked keyword [C++], storage-class attribute
 ms.assetid: 2a66847a-a43f-4541-a7be-c9f5f29b5fdb
 ms.openlocfilehash: f9d8a8747d4a808d040b814005782ed8187bf274
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50528277"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62301584"
 ---
 # <a name="naked-function-calls"></a>Çıplak İşlev Çağrıları
 

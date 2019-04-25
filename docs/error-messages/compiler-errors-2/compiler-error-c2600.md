@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2600
 ms.assetid: cce11943-ea01-4bee-a7b0-b67d24ec6493
 ms.openlocfilehash: 4d9e94790c3f4b2fa0aaf36894f0b12c7134a9ed
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50500405"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62215672"
 ---
 # <a name="compiler-error-c2600"></a>Derleyici Hatası C2600
 

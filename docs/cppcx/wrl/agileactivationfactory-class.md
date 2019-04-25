@@ -6,11 +6,11 @@ f1_keywords:
 - module/Microsoft::WRL::AgileActivationFactory
 ms.assetid: fab98f32-bb93-4c0f-badb-49fbddb194b0
 ms.openlocfilehash: 854f998e31cfec577fb6ff0fb3d82dc1499f88bd
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59030653"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62303841"
 ---
 # <a name="agileactivationfactory-class"></a>AgileActivationFactory Sınıfı
 

@@ -9,11 +9,11 @@ helpviewer_keywords:
 - setlocale pragma
 ms.assetid: e60b43d9-fbdf-4c4e-ac85-805523a13b86
 ms.openlocfilehash: b2f28a14b4d4585575a39dd9a936a56a84eeddc4
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59022431"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62179626"
 ---
 # <a name="setlocale"></a>setlocale
 

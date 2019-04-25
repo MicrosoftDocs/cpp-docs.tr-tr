@@ -7,11 +7,11 @@ helpviewer_keywords:
 - LNK1313
 ms.assetid: 5df0b72e-bb3f-428c-8d84-6084238f9827
 ms.openlocfilehash: 380df2bff305acc47e423d69ea702d77c4eafdfd
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50604236"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62160438"
 ---
 # <a name="linker-tools-error-lnk1313"></a>Bağlayıcı Araçları Hatası LNK1313
 

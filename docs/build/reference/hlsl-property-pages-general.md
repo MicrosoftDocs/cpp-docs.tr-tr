@@ -11,11 +11,11 @@ f1_keywords:
 - VC.Project.FXCompilerTool.EntryPointName
 ms.assetid: 0e02f2a6-f123-43da-b04b-a0719a7c2b03
 ms.openlocfilehash: 0fce8a3b2a43cf05024a028a9e3325a929922abb
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57823535"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62291476"
 ---
 # <a name="hlsl-property-pages-general"></a>HLSL özellik sayfaları: Genel
 

@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2019
 ms.assetid: 4f37b1e1-9eca-418f-a4c3-141e8512d7b6
 ms.openlocfilehash: 6e9e5bbca5da13fdfd4727d3b19aa3656689ce96
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50531839"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62303716"
 ---
 # <a name="compiler-error-c2019"></a>Derleyici Hatası C2019
 

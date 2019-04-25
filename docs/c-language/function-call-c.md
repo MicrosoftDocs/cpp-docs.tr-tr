@@ -7,11 +7,11 @@ helpviewer_keywords:
 - function calls
 ms.assetid: 35c66719-3f15-4d3b-97da-4e19dc97b308
 ms.openlocfilehash: d22bdebc8fa832afb14a2cc09e6a441b7b9e8a5a
-ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56147418"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62233304"
 ---
 # <a name="function-call-c"></a>İşlev Çağrısı (C)
 

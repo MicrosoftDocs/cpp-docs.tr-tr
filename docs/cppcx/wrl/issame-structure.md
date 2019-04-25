@@ -10,11 +10,11 @@ helpviewer_keywords:
 - Microsoft::WRL::Details::IsSame::value constant
 ms.assetid: 1eddbc3f-3cc5-434f-8495-e4477e1f868e
 ms.openlocfilehash: b659f832756b79289181db34fa8d6fc0d974609d
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58787751"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62161283"
 ---
 # <a name="issame-structure"></a>IsSame Yapısı
 

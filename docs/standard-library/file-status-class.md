@@ -13,11 +13,11 @@ helpviewer_keywords:
 - std::experimental::filesystem::file_status::type
 - std::experimental::filesystem::file_status::permissions
 ms.openlocfilehash: 81ce4ecc1673087db8e985f94e297798dd712a6e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50630626"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62160023"
 ---
 # <a name="filestatus-class"></a>file_status Sınıfı
 
@@ -39,8 +39,8 @@ class file_status;
 
 |Üye işlevi|Açıklama|
 |-|-|
-|[Türü](#type)|Alır veya ayarlar `file_type`.|
-|[İzinleri](#permissions)|Alır veya dosya izinlerini ayarlar.|
+|[type](#type)|Alır veya ayarlar `file_type`.|
+|[izinleri](#permissions)|Alır veya dosya izinlerini ayarlar.|
 
 ### <a name="operators"></a>İşleçler
 
@@ -75,7 +75,7 @@ file_status(file_status&&) noexcept = default;
 *ftype*<br/>
 Belirtilen `file_type`, varsayılan olarak `file_type::none`.
 
-*Maskesi*<br/>
+*mask*<br/>
 Belirtilen dosya `perms`, varsayılan olarak `perms::unknown`.
 
 *file_status*<br/>
@@ -122,7 +122,7 @@ void permissions(perms mask) noexcept
 
 ### <a name="parameters"></a>Parametreler
 
-*Maskesi*<br/>
+*mask*<br/>
 Belirtilen `perms`.
 
 ## <a name="see-also"></a>Ayrıca bkz.

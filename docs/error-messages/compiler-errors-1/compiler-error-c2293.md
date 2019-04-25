@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2293
 ms.assetid: 17e7b4e2-368b-4dd7-a01b-d82be60f8e56
 ms.openlocfilehash: 8073e952e8248367c444415cfb182743247dc6fb
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50570644"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62182749"
 ---
 # <a name="compiler-error-c2293"></a>Derleyici Hatası C2293
 

@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2247
 ms.assetid: 72efa03e-615e-4ef9-aede-0a98654b20fd
 ms.openlocfilehash: ab1f83e2075128441cbffd2d939e3b99b45be4c3
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50596438"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62301376"
 ---
 # <a name="compiler-error-c2247"></a>Derleyici Hatası C2247
 

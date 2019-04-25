@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2506
 ms.assetid: cfed21cd-2404-46f2-985e-d0c2c3820830
 ms.openlocfilehash: 02f0a81204c4bc1c41111d32bae1c6946dee09ac
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50575558"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62164871"
 ---
 # <a name="compiler-error-c2506"></a>Derleyici Hatası C2506
 

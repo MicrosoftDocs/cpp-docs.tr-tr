@@ -1,23 +1,23 @@
 ---
-title: Temel türler (C + +/ CX)
+title: Temel türler (C++/CX)
 ms.date: 01/22/2017
 ms.assetid: c9f82907-25f2-440b-91d6-afb8dbd46ea6
 ms.openlocfilehash: 2bd5be01b868fd3086c2064edfd4ca343db425be
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57752369"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62301465"
 ---
-# <a name="fundamental-types-ccx"></a>Temel türler (C + +/ CX)
+# <a name="fundamental-types-ccx"></a>Temel türler (C++/CX)
 
-Ek standart C++ yerleşik türleri, C + +/ CX destekleyen standart C++ türlerini eşleştiren Windows çalışma zamanı temel türler için tür tanımları sağlayarak bir Windows çalışma zamanı mimari tarafından tanımlanan bir tür sistemi... C + +/ CX, Boolean, karakter ve sayısal temel türler uygular. Bu tür tanımlarından tanımlanan `default` ad alanı hiçbir zaman açıkça belirtilmesi gerekir. Ayrıca, C + +/ CX, sarmalayıcılar ve somut uygulamalarını belirli Windows çalışma zamanı türleri ve arabirimleri sağlar.
+Standart yanı sıra C++ yerleşik türler C++/CX destekleyen standart eşleştiren Windows çalışma zamanı temel türler için tür tanımları sağlayarak bir Windows çalışma zamanı mimari tarafından tanımlanan bir tür sistemi C++ türleri... C++/CX, Boolean, karakter ve sayısal temel türler uygular. Bu tür tanımlarından tanımlanan `default` ad alanı hiçbir zaman açıkça belirtilmesi gerekir. Ayrıca, C++/CX, sarmalayıcılar ve somut uygulamalarını belirli Windows çalışma zamanı türleri ve arabirimleri sağlar.
 
 ## <a name="boolean-and-character-types"></a>Boole ve karakter türleri
 
 Aşağıdaki tabloda, yerleşik Boolean ve karakter türleri ve standart C++ eşdeğerleri listelenmektedir.
 
-|Ad Alanı|C + +/ CX adı|Tanım|Standart C++ adı|Değer aralıkları|
+|Ad Alanı|C++/CX adı|Tanım|Standart C++ adı|Değer aralıkları|
 |---------------|-----------------------------------------------------------------------|----------------|-------------------------|---------------------|
 |Platform|Boole değeri|Bir 8 bit Boole değeri.|bool|**doğru** (sıfırdan farklı) ve **false** (sıfır)|
 |default|char16|Bir Unicode (UTF-16) kod noktasını temsil eden bir 16-bit sayısal olmayan değer.|wchar_t<br /><br /> -veya-<br /><br /> L'c'|(Unicode standardı tarafından belirtilen)|
@@ -26,7 +26,7 @@ Aşağıdaki tabloda, yerleşik Boolean ve karakter türleri ve standart C++ eş
 
 Aşağıdaki tabloda yerleşik sayısal türler listeler. Sayısal türlerin bildirilen `default` karşılık gelen C++ yerleşik türü için ad alanı ve bu tür tanımları. Windows çalışma zamanı'nda tüm C++ yerleşik türlerine (örneğin, uzun) desteklenir. Açıklık ve tutarlılık, C + kullanmanızı öneririz +/ CX adı.
 
-|C + +/ CX adı|Tanım|Standart C++ adı|Değer aralıkları|
+|C++/CX adı|Tanım|Standart C++ adı|Değer aralıkları|
 |-----------------------------------------------------------------------|----------------|-------------------------|---------------------|
 |Int8|Bir 8 bit işaretli sayısal değer.|İmzalı char|-128 ile 127|
 |uint8|Bir 8 bit işaretsiz sayısal değer.|unsigned char|0 ile 255|

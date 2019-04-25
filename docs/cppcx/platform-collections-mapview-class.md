@@ -13,11 +13,11 @@ helpviewer_keywords:
 - MapView Class
 ms.assetid: 9577dde7-f599-43c6-b1e4-7d653706fd62
 ms.openlocfilehash: 1e38865f1d43edac4fc895052f1ea1b5a54a34ab
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57749262"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62161720"
 ---
 # <a name="platformcollectionsmapview-class"></a>Platform::Collections:: mapview sınıfı
 
@@ -46,7 +46,7 @@ Anahtar-değer çiftindeki değer türü.
 
 ### <a name="remarks"></a>Açıklamalar
 
-MapView olan somut bir C++ uygulaması [Windows::Foundation::Collections::IMapView \<K, V >](/uwp/api/Windows.Foundation.Collections.IMapView_K_V_) uygulama ikili arabiriminde (ABI) geçirilen arabirimi. Daha fazla bilgi için [koleksiyonlar (C + +/ CX)](../cppcx/collections-c-cx.md).
+MapView olan somut bir C++ uygulaması [Windows::Foundation::Collections::IMapView \<K, V >](/uwp/api/Windows.Foundation.Collections.IMapView_K_V_) uygulama ikili arabiriminde (ABI) geçirilen arabirimi. Daha fazla bilgi için [koleksiyonları (C++/CX)](../cppcx/collections-c-cx.md).
 
 ### <a name="members"></a>Üyeler
 

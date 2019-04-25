@@ -8,11 +8,11 @@ helpviewer_keywords:
 - InputIterator Class
 ms.assetid: ef72eea4-32a9-42b9-8119-ce87dbdcd3be
 ms.openlocfilehash: 49b131b01fe3d9cad5f8366fd4cc0c110b5d060c
-ms.sourcegitcommit: 309dc532f13242854b47759cef846de59bb807f1
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58565145"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62161803"
 ---
 # <a name="platformcollectionsinputiterator-class"></a>Platform::Collections:: ınputıterator sınıfı
 

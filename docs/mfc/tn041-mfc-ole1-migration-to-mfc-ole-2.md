@@ -14,11 +14,11 @@ helpviewer_keywords:
 - TN041
 ms.assetid: 67f55552-4b04-4ddf-af0b-4d9eaf5da957
 ms.openlocfilehash: b398a1adbf2f47343eed076f32ade5bb2564cd52
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58767983"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62305456"
 ---
 # <a name="tn041-mfcole1-migration-to-mfcole-2"></a>TN041: MFC/OLE 2 MFC/OLE1 geçişi
 

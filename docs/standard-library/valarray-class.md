@@ -29,11 +29,11 @@ helpviewer_keywords:
 - std::valarray [C++], swap
 ms.assetid: 19b862f9-5d09-4003-8844-6ddd02c1a3a7
 ms.openlocfilehash: efb186753de0e04bd01f9cc6e81c487084b88ac2
-ms.sourcegitcommit: 309dc532f13242854b47759cef846de59bb807f1
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58565746"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62167523"
 ---
 # <a name="valarray-class"></a>valarray Sınıfı
 

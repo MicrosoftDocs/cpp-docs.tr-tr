@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3238
 ms.assetid: 19942497-b3c5-4df0-9144-142ced92468b
 ms.openlocfilehash: d70bb6dac7cb43701b57f3821872e02ab31426dc
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59778624"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62173320"
 ---
 # <a name="compiler-error-c3238"></a>Derleyici Hatası C3238
 

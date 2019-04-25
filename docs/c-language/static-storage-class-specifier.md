@@ -7,11 +7,11 @@ helpviewer_keywords:
 - static storage class specifiers
 ms.assetid: 9bce361e-919b-46b9-8148-40d7ab0eb024
 ms.openlocfilehash: ef85ee4d757cb9579431427fba7b46a0e5ac905f
-ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56148237"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62157948"
 ---
 # <a name="static-storage-class-specifier"></a>static Depolama Sınıfı Tanımlayıcısı
 

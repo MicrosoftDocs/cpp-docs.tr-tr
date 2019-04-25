@@ -7,11 +7,11 @@ helpviewer_keywords:
 - bindable attribute
 ms.assetid: a2360f92-927b-4af8-98cc-6eca7f4ec954
 ms.openlocfilehash: 07f446b946d6703c4a8b9ae59ae0edd8172c6879
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59037243"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62148399"
 ---
 # <a name="bindable"></a>bağlanabilir
 
@@ -66,8 +66,8 @@ __interface IPropDemo : IDispatch {
 |-|-|
 |**İçin geçerlidir**|Arabirim yöntemi|
 |**Tekrarlanabilir**|Hayır|
-|**Gerekli öznitelikleri**|None|
-|**Geçersiz öznitelikler**|Yok.|
+|**Gerekli öznitelikleri**|Yok.|
+|**Geçersiz öznitelikler**|None|
 
 Öznitelik bağlamları hakkında daha fazla bilgi için bkz: [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 

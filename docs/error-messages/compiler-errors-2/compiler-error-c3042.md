@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3042
 ms.assetid: bf73f61e-5bd2-40a8-9b06-6244e6a15a41
 ms.openlocfilehash: deb3b8d6251316bceb71ce03f2bda88520bbb9b3
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50626804"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62182593"
 ---
 # <a name="compiler-error-c3042"></a>Derleyici Hatası C3042
 

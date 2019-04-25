@@ -9,11 +9,11 @@ helpviewer_keywords:
 - Internet debugging and testing
 ms.assetid: ac4c74e3-d4ad-4e19-8f6c-e270de067f01
 ms.openlocfilehash: e582fd006a49e672fb21c86b054b8d35f489698f
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57290949"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62306476"
 ---
 # <a name="testing-internet-applications"></a>Internet Uygulamalarını Test Etme
 

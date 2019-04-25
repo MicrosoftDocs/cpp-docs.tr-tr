@@ -7,11 +7,11 @@ helpviewer_keywords:
 - intrinsics
 ms.assetid: 178f88a2-7e8e-43ac-b55e-ef3298bef895
 ms.openlocfilehash: 67206e63d163b489c5087e6bc6759cde30a3d6c4
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59026207"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62264321"
 ---
 # <a name="alphabetical-listing-of-intrinsic-functions"></a>İç işlevlerin alfabetik listesi
 

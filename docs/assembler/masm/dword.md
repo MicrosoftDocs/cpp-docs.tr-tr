@@ -7,11 +7,11 @@ helpviewer_keywords:
 - DWORD directive
 ms.assetid: 20efd7c6-1ee6-45a1-9feb-86ce7978142a
 ms.openlocfilehash: 0c1768197927cf5a87187a77b4ed6681422d869a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50467394"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62178130"
 ---
 # <a name="dword"></a>DWORD
 

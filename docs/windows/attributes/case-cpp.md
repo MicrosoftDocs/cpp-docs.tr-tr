@@ -7,11 +7,11 @@ helpviewer_keywords:
 - case attribute
 ms.assetid: 6fb883c3-0526-4932-a901-b4564dcaeb7d
 ms.openlocfilehash: b3058f2fe6f35e1b11d4790780cb0fcdcaada706
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59038206"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62148452"
 ---
 # <a name="case-c"></a>durum (C++)
 
@@ -71,8 +71,8 @@ struct SizedValue2 {
 |-|-|
 |**İçin geçerlidir**|Üye bir **sınıfı** veya **yapısı**|
 |**Tekrarlanabilir**|Hayır|
-|**Gerekli öznitelikleri**|Yok.|
-|**Geçersiz öznitelikler**|Yok.|
+|**Gerekli öznitelikleri**|None|
+|**Geçersiz öznitelikler**|None|
 
 Öznitelik bağlamları hakkında daha fazla bilgi için bkz: [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 

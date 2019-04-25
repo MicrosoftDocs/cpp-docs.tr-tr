@@ -20,11 +20,11 @@ helpviewer_keywords:
 - single_assignment class
 ms.assetid: ccc34728-8de9-4e07-b83d-a36a58d9d2b9
 ms.openlocfilehash: 436d0d4cc16ee18449178782b775a25bb1d8592a
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57268973"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62159918"
 ---
 # <a name="singleassignment-class"></a>single_assignment Sınıfı
 

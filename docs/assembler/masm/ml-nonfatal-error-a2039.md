@@ -8,11 +8,11 @@ helpviewer_keywords:
 - A2039
 ms.assetid: ad8cdaae-b20d-45f0-acb1-79880979c6b7
 ms.openlocfilehash: f383de4acb8f8cce236d5357aea7d333e0df9df5
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50525027"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62177610"
 ---
 # <a name="ml-nonfatal-error-a2039"></a>ML Önemli Olmayan Hatası A2039
 

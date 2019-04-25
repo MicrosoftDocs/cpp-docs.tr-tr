@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3748
 ms.assetid: 6fe71a0a-dd93-4ce6-9729-b9616360cf34
 ms.openlocfilehash: ef1c446f9feb3d40add62513a31fc81a382b98e1
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50628416"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62226849"
 ---
 # <a name="compiler-error-c3748"></a>Derleyici Hatası C3748
 

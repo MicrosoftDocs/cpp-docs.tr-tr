@@ -10,11 +10,11 @@ helpviewer_keywords:
 - /LINENUMBERS dumpbin option
 ms.assetid: 1681d582-2c2f-484e-9920-109959549055
 ms.openlocfilehash: ea4c3ac2ad582e0fe364f2da26511a66e9dc376c
-ms.sourcegitcommit: faa42c8a051e746d99dcebe70fd4bbaf3b023ace
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57811959"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62269247"
 ---
 # <a name="linenumbers"></a>/LINENUMBERS
 

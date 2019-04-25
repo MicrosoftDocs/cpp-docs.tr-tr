@@ -36,11 +36,11 @@ helpviewer_keywords:
 - ON_WM_CHANGECBCHAIN
 ms.assetid: 4e315896-d646-4b87-b0ab-41a4a753b045
 ms.openlocfilehash: 08221e7569a8b4c4f4e8decba410bd1fe40f04d7
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57266035"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62309401"
 ---
 # <a name="wm-message-handlers-a---c"></a>WM_ ileti işleyicileri: A - C
 

@@ -24,11 +24,11 @@ helpviewer_keywords:
 - getw function
 ms.assetid: ef75facc-b84e-470f-9f5f-8746c90822a0
 ms.openlocfilehash: 615d3ac9bdc73ad200368eaeabf7c84951bc91ae
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50487613"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62157636"
 ---
 # <a name="getw"></a>_getw
 

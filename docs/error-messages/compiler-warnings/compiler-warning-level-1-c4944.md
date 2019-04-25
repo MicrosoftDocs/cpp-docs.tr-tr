@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C4944
 ms.assetid: e2905eb1-2e3b-4fab-a48b-c0cae0fd997f
 ms.openlocfilehash: 0c58a438f4e2c1437e1038b6087d57f47db30775
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50585529"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62302000"
 ---
 # <a name="compiler-warning-level-1-c4944"></a>Derleyici Uyarısı (düzey 1) C4944
 

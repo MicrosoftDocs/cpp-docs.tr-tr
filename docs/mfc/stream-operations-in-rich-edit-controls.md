@@ -10,11 +10,11 @@ helpviewer_keywords:
 - stream storage and CRichEditCtrl
 ms.assetid: 110b4684-1e76-4ca6-9ef0-5bc8b2d93c78
 ms.openlocfilehash: 04cf0b06773937bf66defccbb0e5e880c06e8d88
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57267985"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62306687"
 ---
 # <a name="stream-operations-in-rich-edit-controls"></a>Zengin Düzenleme Denetimlerinde Akış İşlemleri
 

@@ -9,11 +9,11 @@ helpviewer_keywords:
 - low level errors
 ms.assetid: 06ac6f01-a8cf-4426-bb12-1688315ae1cd
 ms.openlocfilehash: 17775f3b2ee6dfa235c93d0bf0e3335b464aaa69
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50553536"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62153677"
 ---
 # <a name="hardware-exceptions"></a>Donanım Özel Durumları
 

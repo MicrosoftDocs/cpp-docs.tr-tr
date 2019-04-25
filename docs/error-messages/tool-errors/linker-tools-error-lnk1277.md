@@ -7,11 +7,11 @@ helpviewer_keywords:
 - LNK1277
 ms.assetid: afca3de0-50cc-4140-af7a-13493a170835
 ms.openlocfilehash: 137aa15dd9dad4b08d52af55da60a9cdf8b58055
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50662078"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62160555"
 ---
 # <a name="linker-tools-error-lnk1277"></a>Bağlayıcı Araçları Hatası LNK1277
 

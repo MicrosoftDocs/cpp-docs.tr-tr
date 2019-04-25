@@ -8,11 +8,11 @@ helpviewer_keywords:
 - derived message maps
 ms.assetid: 21829556-6e64-40c3-8279-fed85d99de77
 ms.openlocfilehash: fcdff67c57e932e414a2b61b28cd0498ab997c60
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57304242"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62173588"
 ---
 # <a name="derived-message-maps"></a>Türetilen İleti Eşlemeleri
 

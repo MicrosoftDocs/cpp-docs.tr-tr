@@ -27,12 +27,12 @@ helpviewer_keywords:
 - j0 function
 ms.assetid: ec8a9512-aacb-423c-a845-fc8927e6e21d
 ms.openlocfilehash: dad9d045468a0e9d8d63565fb1480da948ac2287
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50665471"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62157499"
 ---
 # <a name="j0-j1-jn"></a>j0, j1, jn
 
-Bu POSIX işlevler kullanım dışı bırakılmıştır. ISO C++ uyumlu [_j0, _j1, _jn](bessel-functions-j0-j1-jn-y0-y1-yn.md) yerine.
+Bu POSIX işlevler kullanım dışı bırakılmıştır. ISO kullanın C++ uyumluluğunu [_j0, _j1, _jn](bessel-functions-j0-j1-jn-y0-y1-yn.md) yerine.

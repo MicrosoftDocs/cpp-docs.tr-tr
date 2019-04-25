@@ -3,11 +3,11 @@ title: Genel Kurallar ve Sınırlamalar
 ms.date: 11/04/2016
 ms.assetid: 6c48902d-4259-4761-95d4-e421d69aa050
 ms.openlocfilehash: 931ae04ef47262f15d037a2b5eeb35bd01a8419d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50439240"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62153781"
 ---
 # <a name="general-rules-and-limitations"></a>Genel Kurallar ve Sınırlamalar
 

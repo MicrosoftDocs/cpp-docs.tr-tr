@@ -21,11 +21,11 @@ helpviewer_keywords:
 - std::future [C++], wait_for
 - std::future [C++], wait_until
 ms.openlocfilehash: 9ca18e62038d93a50b592868f71223962a22857d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50551885"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62159333"
 ---
 # <a name="future-class"></a>future Sınıfı
 

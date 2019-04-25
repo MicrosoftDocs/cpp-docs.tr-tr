@@ -10,11 +10,11 @@ helpviewer_keywords:
 - KEYFILE linker option
 ms.assetid: 9b71f8c0-541c-4fe5-a0c7-9364f42ecb06
 ms.openlocfilehash: d309390c1ac1a19d9d4a982908dbbbac0bd52714
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57813779"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62291567"
 ---
 # <a name="keyfile-specify-key-or-key-pair-to-sign-an-assembly"></a>/KEYFILE (Derlemeyi İmzalamak için Anahtar veya Anahtar Çiftini Belirt)
 
@@ -33,7 +33,7 @@ Bağlayıcı, ortak anahtarı derleme bildirimine ekler ve ardından son derleme
 
 Derleme yaparsanız [/LN](ln-create-msil-module.md), anahtar dosyasının adını modülde tutulur ve aracılığıyla modül açık bir başvuru içeren bir derleme derlediğinizde, oluşturulan bütünleştirilmiş dahil [#using](../../preprocessor/hash-using-directive-cpp.md), veya ile bağlarken [assemblymodule](assemblymodule-add-a-msil-module-to-the-assembly.md).
 
-İle bağlayıcıya şifreleme bilgilerinizi de geçirebilirsiniz [/keycontainer](keycontainer-specify-a-key-container-to-sign-an-assembly.md). Kullanım [/delaysign](delaysign-partially-sign-an-assembly.md) kısmen imzalı bir derleme istiyorsanız. Bkz: [tanımlayıcı ad derlemeleri (derleme imzalama) (C + +/ CLI)](../../dotnet/strong-name-assemblies-assembly-signing-cpp-cli.md) derleme imzalama hakkında daha fazla bilgi.
+İle bağlayıcıya şifreleme bilgilerinizi de geçirebilirsiniz [/keycontainer](keycontainer-specify-a-key-container-to-sign-an-assembly.md). Kullanım [/delaysign](delaysign-partially-sign-an-assembly.md) kısmen imzalı bir derleme istiyorsanız. Bkz: [tanımlayıcı ad derlemeleri (derleme imzalama) (C++/CLI)](../../dotnet/strong-name-assemblies-assembly-signing-cpp-cli.md) derleme imzalama hakkında daha fazla bilgi.
 
 İçinde her ikisi de case **/keyfile** ve **/keycontainer** belirtilen (komut satırı seçeneği veya özel öznitelik tarafından), bağlayıcı ilk anahtar kapsayıcısı deneyin. Bu başarılı olursa derleme anahtar kapsayıcısındaki bilgilerle imzalanır. Bağlayıcı anahtar kapsayıcısını bulamazsa, / keyfile ile belirtilen dosyayı deneyecektir. Bu başarılı olursa derleme anahtar dosyası içindeki bilgilerle imzalanır ve anahtar bilgileri anahtar kapsayıcısının içine yüklenir (sn benzer -i) ve böylece sonraki derlemede, anahtar kapsayıcısı geçerli olacaktır.
 
@@ -70,4 +70,4 @@ Bütünleştirilmiş kod oluşturmayı etkileyen diğer bağlayıcı seçenekler
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [MSVC bağlayıcı başvurusu](linking.md)<br/>
-[MSVC bağlayıcı seçenekleri](linker-options.md)
+[MSVC Bağlayıcı Seçenekleri](linker-options.md)

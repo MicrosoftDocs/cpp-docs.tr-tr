@@ -8,11 +8,11 @@ helpviewer_keywords:
 - networking classes [MFC]
 ms.assetid: 1acf793d-ebf2-4fac-97be-703d62e3897e
 ms.openlocfilehash: bf153c5b4602a0f9b151f225669efbb63f3583a2
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57281713"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62153053"
 ---
 # <a name="internet-and-networking-classes"></a>İnternet ve Ağ Sınıfları
 

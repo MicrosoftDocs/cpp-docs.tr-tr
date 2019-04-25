@@ -6,11 +6,11 @@ helpviewer_keywords:
 - text streams
 ms.assetid: 57035e4a-955d-4e04-a560-fcf67ce68b4e
 ms.openlocfilehash: 3754a62fa02bc532eb71eba6b0a8837791b179ea
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57747715"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62304431"
 ---
 # <a name="text-and-binary-streams"></a>Metin ve İkili Akışlar
 

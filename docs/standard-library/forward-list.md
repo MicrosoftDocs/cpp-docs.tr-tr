@@ -7,11 +7,11 @@ helpviewer_keywords:
 - <forward_list>
 ms.assetid: 8b4ab09e-1475-434a-b4e0-fdbc07a08b5b
 ms.openlocfilehash: cbde6268be0f501a220721cae498254dd0588eb4
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50597697"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62159385"
 ---
 # <a name="ltforwardlistgt"></a>&lt;forward_list&gt;
 

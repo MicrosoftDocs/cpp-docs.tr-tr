@@ -13,11 +13,11 @@ helpviewer_keywords:
 - std::gslice [C++], stride
 ms.assetid: f47cffd0-ea59-4b13-848b-7a5ce1d7e2a3
 ms.openlocfilehash: bee6fec3e09f7c5758112ba8b0c171a300797f9a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50592172"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62159476"
 ---
 # <a name="gslice-class"></a>gslice Sınıfı
 
@@ -50,7 +50,7 @@ Valarrays işlemleri yalnızca gslices tarafından tanımlanan kaynak ve hedef k
 |Üye işlevi|Açıklama|
 |-|-|
 |[Boyutu](#size)|Öğe sayıları genel bir dilim belirten dizi değerlerini bulur bir `valarray`.|
-|[Başlangıç](#start)|Genel bir dilimin başlangıç dizini bulur bir `valarray`.|
+|[start](#start)|Genel bir dilimin başlangıç dizini bulur bir `valarray`.|
 |[STRIDE](#stride)|Genel bir dilimin öğeler arasındaki uzaklık bulur bir `valarray`.|
 
 ## <a name="requirements"></a>Gereksinimler

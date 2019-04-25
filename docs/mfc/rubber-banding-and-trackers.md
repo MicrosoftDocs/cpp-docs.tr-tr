@@ -9,11 +9,11 @@ helpviewer_keywords:
 - WM_LBUTTONDOWN [MFC]
 ms.assetid: 0d0fa64c-6418-4baf-ab7f-2d16ca039230
 ms.openlocfilehash: a6a9c9848e21129d4e6a8ce300e8750b4a0c6126
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57281050"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62308855"
 ---
 # <a name="rubber-banding-and-trackers"></a>Rubber-Banding ve İzleyiciler
 

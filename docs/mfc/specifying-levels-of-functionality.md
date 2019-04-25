@@ -11,11 +11,11 @@ helpviewer_keywords:
 - levels [MFC]
 ms.assetid: 562669ba-c858-4f66-b5f1-b3beeea4f486
 ms.openlocfilehash: c3b4ecb38054748f36d75ca43e32d6447d3d2428
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57299925"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62307295"
 ---
 # <a name="specifying-levels-of-functionality"></a>İşlevsellik Düzeylerini Belirtme
 

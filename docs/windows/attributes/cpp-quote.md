@@ -7,11 +7,11 @@ helpviewer_keywords:
 - cpp_quote attribute
 ms.assetid: f75327ff-42bd-498b-9177-7ffa25427e1f
 ms.openlocfilehash: 378435ced5a541785b7b32bc9d2f408034d5a2d8
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59024692"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62148243"
 ---
 # <a name="cppquote"></a>cpp_quote
 

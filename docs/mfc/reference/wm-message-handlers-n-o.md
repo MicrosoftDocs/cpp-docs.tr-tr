@@ -38,11 +38,11 @@ helpviewer_keywords:
 - WM_ messages
 ms.assetid: 4efd1cda-b642-4e8b-89e8-73255fa70d77
 ms.openlocfilehash: 59fd895823ff13039e6f78b8164cd19f3eac2af9
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57285366"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62309130"
 ---
 # <a name="wm-message-handlers-n---o"></a>WM_ ileti işleyicileri: N - O
 

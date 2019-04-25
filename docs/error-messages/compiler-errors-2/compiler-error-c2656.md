@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2656
 ms.assetid: 1ec91186-0735-4904-859b-59da9af2d426
 ms.openlocfilehash: ce2ec1c82e20f9e6777987b6b95cd086724ae09f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50536012"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62152468"
 ---
 # <a name="compiler-error-c2656"></a>Derleyici Hatası C2656
 

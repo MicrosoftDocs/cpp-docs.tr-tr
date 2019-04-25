@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2218
 ms.assetid: b0f55da4-8edb-4b45-b298-1a091981bd7b
 ms.openlocfilehash: 5a9d897686fc915c9892fa2bcd51fa3ca3c8b05e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50468631"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62165683"
 ---
 # <a name="compiler-error-c2218"></a>Derleyici Hatası C2218
 

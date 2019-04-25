@@ -21,11 +21,11 @@ helpviewer_keywords:
 - or function
 ms.assetid: 6523b3ac-0a18-44ec-9e9a-b9bab8525ead
 ms.openlocfilehash: 9973533e0c871048c2bd586a4503dec3942fc14c
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51517611"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62155999"
 ---
 # <a name="or"></a>veya
 

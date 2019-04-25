@@ -9,11 +9,11 @@ helpviewer_keywords:
 - user-defined handlers [MFC]
 ms.assetid: 99478294-bef0-4ba7-a369-25a6abdcdb62
 ms.openlocfilehash: d7c735531e4e2bd4da37ef7ba89cc9c4f9222b47
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57262018"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62309596"
 ---
 # <a name="user-defined-handlers"></a>Kullanıcı Tanımlı İşleyiciler
 

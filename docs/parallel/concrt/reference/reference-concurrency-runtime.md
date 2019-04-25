@@ -454,18 +454,18 @@ helpviewer_keywords:
 - HRESULT typedef
 ms.assetid: a057c776-7caa-4605-8f33-9815cf6f9b27
 ms.openlocfilehash: fa1156aa6406f1c34712e845612147a42b753184
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50663339"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62180153"
 ---
 # <a name="reference-concurrency-runtime"></a>Başvuru (Eşzamanlılık Çalışma Zamanı)
 
 Bu bölümde, eşzamanlılık çalışma zamanı için başvuru bilgileri içerir.
 
 > [!Note]
-> C++ dil standardı, kütüphane gibi uygulamalar için bir alt çizgi (_) karakteriyle başlayan tanımlayıcı kullanımını ayırır. Kodunuzda bu adları kullanmayın. Öğe adları bu kurala uymayan garantili değildir ve gelecekte değişikliğe tabi olduğu kodun çalışma biçiminin serbest bırakır. Bu nedenlerden dolayı bu tür kod öğeleri eşzamanlılık çalışma zamanı belgelerinden çıkarılır.
+> C++ Dil standardı, kütüphane gibi uygulamalar için bir alt çizgi (_) karakteriyle başlayan tanımlayıcı kullanımını ayırır. Kodunuzda bu adları kullanmayın. Öğe adları bu kurala uymayan garantili değildir ve gelecekte değişikliğe tabi olduğu kodun çalışma biçiminin serbest bırakır. Bu nedenlerden dolayı bu tür kod öğeleri eşzamanlılık çalışma zamanı belgelerinden çıkarılır.
 
 ## <a name="in-this-section"></a>Bu Bölümde
 

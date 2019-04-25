@@ -6,11 +6,11 @@ helpviewer_keywords:
 - keyboard and mouse customizations (MFC Extensions)
 ms.assetid: 1f789f1b-5f2e-4b11-b974-e3e2a2e49d82
 ms.openlocfilehash: 55eaac9d800730f3a01dcdb2eef943eb48d147b1
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57289188"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62311169"
 ---
 # <a name="keyboard-and-mouse-customization"></a>Klavye ve Fare Özelleştirmesi
 

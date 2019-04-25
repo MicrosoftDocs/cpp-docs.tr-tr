@@ -12,11 +12,11 @@ helpviewer_keywords:
 - HEAP linker option
 ms.assetid: a3f71927-7f1d-492c-9fdb-dfccb1a043da
 ms.openlocfilehash: 715eaa358d052d4ae646f38f2e784f0235dffccb
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57813301"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62270360"
 ---
 # <a name="heap-set-heap-size"></a>/HEAP (Öbek Boyutunu Ayarla)
 
@@ -53,4 +53,4 @@ Bu işlevi modül tanım dosyası aracılığıyla da kullanılabilir [HEAPSIZE]
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [MSVC bağlayıcı başvurusu](linking.md)<br/>
-[MSVC bağlayıcı seçenekleri](linker-options.md)
+[MSVC Bağlayıcı Seçenekleri](linker-options.md)

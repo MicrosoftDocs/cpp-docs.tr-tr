@@ -7,11 +7,11 @@ helpviewer_keywords:
 - DHTML controls
 ms.assetid: 4ba98098-da5d-4362-96ad-8372f816c307
 ms.openlocfilehash: dd8ac616d127c3307c1c432c0b3c9bc2ef1d6181
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57265268"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62223298"
 ---
 # <a name="atl-support-for-dhtml-controls"></a>DHTML Denetimleri İçin ATL Desteği
 

@@ -8,11 +8,11 @@ helpviewer_keywords:
 - Platform::Boolean Struct
 ms.assetid: 8518a1db-7139-4187-9c7a-1ae3943373f2
 ms.openlocfilehash: c97ce0171fcf8f28254ce3f91b91f4d1711ad813
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57748417"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62161699"
 ---
 # <a name="platformboolean-value-class"></a>Platform::Boolean değer sınıfı
 

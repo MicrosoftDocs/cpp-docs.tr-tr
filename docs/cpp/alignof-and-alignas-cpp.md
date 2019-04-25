@@ -3,11 +3,11 @@ title: alignof ve alignas (C++)
 ms.date: 11/04/2016
 ms.assetid: 1d18aa8a-9621-4fb5-86e5-4cc86d5187f4
 ms.openlocfilehash: 825df25494497e13d29212f7f951be8247b6f136
-ms.sourcegitcommit: 185b8ee6dd4e10045df730c5b957b9729813da2d
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/14/2018
-ms.locfileid: "53411929"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62155257"
 ---
 # <a name="alignof-and-alignas-c"></a>alignof ve alignas (C++)
 

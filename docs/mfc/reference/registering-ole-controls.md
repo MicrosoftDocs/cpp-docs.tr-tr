@@ -8,11 +8,11 @@ helpviewer_keywords:
 - OLE controls [MFC], registering
 ms.assetid: 73c45b7f-7dbc-43f5-bd17-dd77c6acec72
 ms.openlocfilehash: 9c480696bdec3591f0509cbad04051a2b3af4070
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57262161"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62310142"
 ---
 # <a name="registering-ole-controls"></a>OLE Denetimlerini Kaydetme
 

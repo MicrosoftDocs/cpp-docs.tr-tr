@@ -10,11 +10,11 @@ helpviewer_keywords:
 - CComClassFactory class
 ms.assetid: e56dacf7-d5c4-4c42-aef4-a86d91981a1b
 ms.openlocfilehash: 85ef287a905abc7b3151628c0f5dc29b9050b187
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57326574"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62246728"
 ---
 # <a name="ccomclassfactory-class"></a>CComClassFactory Class
 

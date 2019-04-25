@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3340
 ms.assetid: 23b12298-b92a-4717-8380-f165c998cb8a
 ms.openlocfilehash: 1eff84ec133b55ddc3df98364c7d8542be398a69
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50644177"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62300693"
 ---
 # <a name="compiler-error-c3340"></a>Derleyici Hatası C3340
 

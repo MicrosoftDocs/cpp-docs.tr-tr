@@ -16,11 +16,11 @@ helpviewer_keywords:
 - sinks, connection points
 ms.assetid: bc9fd7c7-8df6-4752-ac8c-0b177442c88d
 ms.openlocfilehash: 6f934c4a5a24c5d54805a60e81cb0afdcdc2c14a
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57304749"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62153326"
 ---
 # <a name="connection-points"></a>Bağlantı Noktaları
 

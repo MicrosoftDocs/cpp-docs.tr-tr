@@ -7,11 +7,11 @@ helpviewer_keywords:
 - .SETFRAME directive
 ms.assetid: eaa9b5ed-4daa-4f1e-bdb6-100758007ab3
 ms.openlocfilehash: c2c35cdb2889350b27e9fb11c397b684506972c5
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50506892"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62178182"
 ---
 # <a name="setframe"></a>.SETFRAME
 

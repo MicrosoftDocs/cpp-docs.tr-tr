@@ -9,11 +9,11 @@ helpviewer_keywords:
 - inline assembly [C++]
 ms.assetid: 7e13f18f-3628-4306-8b81-4a6d09c043fe
 ms.openlocfilehash: f2be42cd5ab4d335d076a1eb4627c41f5b340350
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50529291"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62166951"
 ---
 # <a name="inline-assembler"></a>Satır İçi Derleyicisi
 

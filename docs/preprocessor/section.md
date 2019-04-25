@@ -9,11 +9,11 @@ helpviewer_keywords:
 - section pragma
 ms.assetid: c67215e9-2c4a-4b0f-b691-2414d2e2d96f
 ms.openlocfilehash: 41479d7d8767438d0e59fbe6beb7e435459dcb1b
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59023249"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62179639"
 ---
 # <a name="section"></a>section
 

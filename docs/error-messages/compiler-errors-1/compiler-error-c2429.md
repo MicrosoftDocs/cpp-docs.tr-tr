@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2429
 ms.assetid: 57ff6df9-5cf1-49f3-8bd8-4e550dfd65a0
 ms.openlocfilehash: 972ec6591132443ef4d1297598d6de7216f59663
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50586699"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62165690"
 ---
 # <a name="compiler-error-c2429"></a>Derleyici Hatası C2429
 

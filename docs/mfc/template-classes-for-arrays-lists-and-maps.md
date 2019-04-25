@@ -11,11 +11,11 @@ helpviewer_keywords:
 - template classes [MFC]
 ms.assetid: a8331c4b-068a-48f8-a629-b8449601e121
 ms.openlocfilehash: be5639802f6f4a11a29326efd71d9634797c9f5c
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57267010"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62306333"
 ---
 # <a name="template-classes-for-arrays-lists-and-maps"></a>Diziler, Listeler ve Eşlemeler için Şablon Sınıfları
 

@@ -7,11 +7,11 @@ helpviewer_keywords:
 - document templates [MFC], classes
 ms.assetid: 901749e9-8048-44a0-b5e2-361554650a73
 ms.openlocfilehash: 2589bc8f04e791f73529af91ffb148c2c717cd08
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57294583"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62164995"
 ---
 # <a name="document-template-classes"></a>Belge Şablonu Sınıfları
 

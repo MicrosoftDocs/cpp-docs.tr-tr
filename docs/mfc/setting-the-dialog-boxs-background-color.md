@@ -10,11 +10,11 @@ helpviewer_keywords:
 - MFC dialog boxes [MFC], colors
 ms.assetid: 05ee28a4-f3ae-4203-84ac-022f266ff2ab
 ms.openlocfilehash: 495ab827d6185826cc4d261a6a990f751e525d22
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57297443"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62307750"
 ---
 # <a name="setting-the-dialog-boxs-background-color"></a>İletişim Kutusunun Arka Plan Rengini Ayarlama
 

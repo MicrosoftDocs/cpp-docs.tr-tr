@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3230
 ms.assetid: 5ec53f25-59f6-4801-81e7-7b68bf04994d
 ms.openlocfilehash: a4d5edeb5898a57b99839b7e044f909cea1ec199
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50428255"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62173892"
 ---
 # <a name="compiler-error-c3230"></a>Derleyici Hatası C3230
 

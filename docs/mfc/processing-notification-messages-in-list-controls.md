@@ -6,11 +6,11 @@ helpviewer_keywords:
 - CListCtrl class [MFC], processing notifications
 ms.assetid: 1f0e296e-d2a3-48fc-ae38-51d7fb096f51
 ms.openlocfilehash: 2a7899c74bfcddcdc8d54f7d9eb894553115ad66
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57288083"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62160191"
 ---
 # <a name="processing-notification-messages-in-list-controls"></a>Liste Denetimlerinde Bildirim İletilerini İşleme
 

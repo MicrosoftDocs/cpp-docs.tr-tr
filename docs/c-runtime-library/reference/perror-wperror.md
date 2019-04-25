@@ -31,11 +31,11 @@ helpviewer_keywords:
 - perror function
 ms.assetid: 34fce792-16fd-4673-9849-cd88b54b6cd5
 ms.openlocfilehash: c9026a96ecc74640eb2bcd7004d5d1e0fc287e38
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50474483"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62156115"
 ---
 # <a name="perror-wperror"></a>perror, _wperror
 

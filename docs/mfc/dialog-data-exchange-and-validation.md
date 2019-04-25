@@ -16,11 +16,11 @@ helpviewer_keywords:
 - retrieving dialog box data
 ms.assetid: 7d373554-7330-43ae-abf1-4bb14e437b4a
 ms.openlocfilehash: a52af898c844cce05a138b8bc0e608681d13a491
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57297430"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62302104"
 ---
 # <a name="dialog-data-exchange-and-validation"></a>İletişim Kutusu Veri Değişimi ve Doğrulaması
 

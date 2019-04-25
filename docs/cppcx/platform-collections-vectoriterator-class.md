@@ -8,17 +8,17 @@ helpviewer_keywords:
 - VectorIterator Class
 ms.assetid: d531cb42-27e0-48a6-bf5e-c265891a18ff
 ms.openlocfilehash: 55f4e7f1d9367779d131796fdf29e6098eb6aa0f
-ms.sourcegitcommit: 309dc532f13242854b47759cef846de59bb807f1
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58565792"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62161633"
 ---
 # <a name="platformcollectionsvectoriterator-class"></a>Platform::Collections:: vectorıterator sınıfı
 
 Windows çalışma zamanı Ivector arabirimden türetilmiş nesneler için bir standart Şablon kitaplığı yineleyici sağlar.
 
-VectorIterator VectorProxy türünde öğeler depolayan bir ara sunucu yineleyici olduğunu\<T >. Ancak, proxy neredeyse hiç kullanıcı kodu tarafından nesnedir. Daha fazla bilgi için [koleksiyonlar (C + +/ CX)](../cppcx/collections-c-cx.md).
+VectorIterator VectorProxy türünde öğeler depolayan bir ara sunucu yineleyici olduğunu\<T >. Ancak, proxy neredeyse hiç kullanıcı kodu tarafından nesnedir. Daha fazla bilgi için [koleksiyonları (C++/CX)](../cppcx/collections-c-cx.md).
 
 ## <a name="syntax"></a>Sözdizimi
 

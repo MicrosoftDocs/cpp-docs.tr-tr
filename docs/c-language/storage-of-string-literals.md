@@ -5,11 +5,11 @@ helpviewer_keywords:
 - string literals, storage
 ms.assetid: ba5e4d2c-d456-44b3-a8ca-354af547ac50
 ms.openlocfilehash: 0d505479f0844122826a2f07b57eaa69f33932e8
-ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56148133"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62157870"
 ---
 # <a name="storage-of-string-literals"></a>Dize Değişmez Değerlerini Depolama
 

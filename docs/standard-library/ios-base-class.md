@@ -109,11 +109,11 @@ helpviewer_keywords:
 - std::ios_base [C++], xalloc
 ms.assetid: 0f9e0abc-f70f-49bc-aa1f-003859f56cfe
 ms.openlocfilehash: 8911c3763e6a0c861c162611e1b2617ec26f0cf9
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51333364"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62158597"
 ---
 # <a name="iosbase-class"></a>ios_base Sınıfı
 
@@ -175,7 +175,7 @@ Depolama sınıfı açıklar ve üye işlevleri, şablon parametrelerine bağlı
 |[eofbit](#iostate)|Kayıt-bir akıştan ayıklanıyor sırasında dosya sonu.|
 |[failbit](#iostate)|Geçerli bir alan bir akışından ayıklanacak bir hata kaydeder.|
 |[düzeltildi](#fmtflags)|Kayan nokta değerlerinin ekleme (ile üs alan yok) sabit noktalı biçim belirtir.|
-|[floatfield](#fmtflags)|Tanımlanan bir bit maskesi `fixed`&#124; `scientific`|
+|[floatfield](#fmtflags)|A bitmask defined as `fixed` &#124; `scientific`|
 |[goodbit](#iostate)|Tüm durum bitleri temizleyin.|
 |[onaltılık](#fmtflags)|Onaltılık biçimde ekleme veya çıkarma tamsayı değerleri belirtir.|
 |[in](#openmode)|Bir akıştan ayıklama belirtir.|
@@ -265,7 +265,7 @@ typedef void (__cdecl *event_callback)(
 *_E*<br/>
 [Olay](#event).
 
-*_Temel*<br/>
+*_Base*<br/>
 Akış olayı çağrıldı.
 
 *_I*<br/>
@@ -902,7 +902,7 @@ fmtflags setf(
 
 ### <a name="parameters"></a>Parametreler
 
-*_Maskesi*<br/>
+*_Mask*<br/>
 Açmak için bayrakları.
 
 *_Unset*<br/>
@@ -975,7 +975,7 @@ void unsetf(
 
 ### <a name="parameters"></a>Parametreler
 
-*_Maskesi*<br/>
+*_Mask*<br/>
 Kapatmak istediğiniz bayrakları.
 
 ### <a name="remarks"></a>Açıklamalar

@@ -8,11 +8,11 @@ helpviewer_keywords:
 - CXX0053
 ms.assetid: fe74ed9e-9241-4df1-881f-104348e296c6
 ms.openlocfilehash: 4ba55e7e8f684ed0b0332be4a8f3ae9d52e9150d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50624269"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62299580"
 ---
 # <a name="expression-evaluator-error-cxx0053"></a>İfade Değerlendirici Hatası CXX0053
 

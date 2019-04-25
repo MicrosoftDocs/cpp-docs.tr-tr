@@ -14,11 +14,11 @@ helpviewer_keywords:
 - pragma directives (#pragma)
 ms.assetid: 9867b438-ac64-4e10-973f-c3955209873f
 ms.openlocfilehash: b6c2ff579c6fafa78cbfd0a2879a71fca2bfaa01
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59027447"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62179964"
 ---
 # <a name="pragma-directives-and-the-pragma-keyword"></a>Pragma Yönergeleri ve __Pragma Anahtar Sözcüğü
 

@@ -3,17 +3,17 @@ title: Hizalama (C++ Bildirimleri)
 ms.date: 11/04/2016
 ms.assetid: a986d510-ccb8-41f8-b905-433df9183485
 ms.openlocfilehash: 0709ad414af3f167a64d9c89c342690015190287
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51522876"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62155400"
 ---
 # <a name="alignment-c-declarations"></a>Hizalama (C++ Bildirimleri)
 
 Alt düzey C++ özelliklerinin belirli donanım mimarisiyle en büyük avantajlarından yararlanmak için bellekte nesnelerin kesin hizalamayı belirtme olanağı biridir. Varsayılan olarak, derleyici sınıf ile yapı üyeleri kendi boyutu değeri hizalar: bool ve char hizalanır tek baytlık sınırlarda, iki bayt üzerinde kısa Int uzun uzun, çift ve üzerinde sekiz bayt uzun çift dört bayt. Çoğu senaryoda hiçbir zaman varsayılan hizalama zaten en iyi olduğundan ile aynı doğrultuda önceliğiniz olması gerekir. Bazı durumlarda ancak, önemli performans geliştirmeleri veya bellek tasarrufu, veri yapıları için özel bir hizalama belirterek elde edebilirsiniz. Visual Studio 2015 tarihinden önce varsayılandan daha büyük bir hizalama belirtmek için Microsoft'a özgü anahtar sözcükler __alignof ve declspec(alignas) kullanabilirsiniz. C ++ 11 standart anahtar sözcükleri Visual Studio 2015'te, başlangıç kullanması gereken [alignof ve alignas](../cpp/alignof-and-alignas-cpp.md) maksimum kod taşınabilir. Yeni anahtar sözcüklerle Microsoft'a özgü genişletmelerdir başlık altında aynı şekilde davranır ve bu uzantıları belgelerine de için yeni anahtar sözcüklerin uygular. Bkz: [__alignof işleci](../cpp/alignof-operator.md) ve [hizalama](../cpp/align-cpp.md) daha fazla bilgi için. C++ standart Microsoft #pragma kullanmak yine hedef platformu için derleyici varsayılandan daha küçük sınırlarındaki hizalama için paketleme davranışı belirtmiyor [paketi](../preprocessor/pack.md) durumda.
 
-C++ Standart Kitaplığı sağlar [aligned_storage sınıfı](../standard-library/aligned-storage-class.md) Özel hizalamaları ile veri yapıları için bellek ayırma için ve [aligned_union sınıfı](../standard-library/aligned-union-class.md) birleşimler ile hizalamayı belirtme Önemsiz olmayan oluşturuculara veya yıkıcıları.
+C++ Standart kitaplığı sağlar [aligned_storage sınıfı](../standard-library/aligned-storage-class.md) Özel hizalamaları ile veri yapıları için bellek ayırma için ve [aligned_union sınıfı](../standard-library/aligned-union-class.md) hizalamayı belirtme birleşimler Önemsiz olmayan oluşturuculara veya yıkıcıları ile.
 
 ## <a name="about-alignment"></a>Hizalama hakkında
 

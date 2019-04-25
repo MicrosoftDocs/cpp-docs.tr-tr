@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C4403
 ms.assetid: d95597c9-4762-4f33-86e4-1d98f0e80d52
 ms.openlocfilehash: 758084f2f900d5f8cb63fd3d6d82b80116fbcb87
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50445376"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62182398"
 ---
 # <a name="compiler-warning-level-1-c4403"></a>Derleyici Uyarısı (düzey 1) C4403
 

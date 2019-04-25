@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3160
 ms.assetid: a250c433-8adf-43b9-8dee-c3794e09b0a5
 ms.openlocfilehash: 96fd97aa5021b7e1bc5226162f9c54ff4d6211b1
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50649754"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62175233"
 ---
 # <a name="compiler-error-c3160"></a>Derleyici Hatası C3160
 

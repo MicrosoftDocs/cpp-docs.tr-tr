@@ -23,11 +23,11 @@ helpviewer_keywords:
 - simple list collection classes [MFC]
 ms.assetid: c69fc95b-c8f6-4a99-abed-517c9898ef0c
 ms.openlocfilehash: 40633c8b2b09d27e97443364ed3ce711ee217e18
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57284664"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62306398"
 ---
 # <a name="template-based-classes"></a>Şablona Dayalı Sınıflar
 

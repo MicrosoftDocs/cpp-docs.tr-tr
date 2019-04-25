@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3228
 ms.assetid: 9015adf9-17b0-4312-b4a7-c1f33e4126f4
 ms.openlocfilehash: 63e7afa16c21aa8c4e335d22693ca71d7ab8d6a8
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50512574"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62173989"
 ---
 # <a name="compiler-error-c3228"></a>Derleyici Hatası C3228
 

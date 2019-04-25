@@ -9,11 +9,11 @@ helpviewer_keywords:
 - CColumnAccessor class
 ms.assetid: 6ce1e67f-6a20-490d-9326-c168b43eee7e
 ms.openlocfilehash: 2d65fb047e758f449ed76c954bb4ac0c3623f6dd
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59032134"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62209314"
 ---
 # <a name="ccolumnaccessor-class"></a>CColumnAccessor Sınıfı
 

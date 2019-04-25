@@ -7,11 +7,11 @@ helpviewer_keywords:
 - LNK1561
 ms.assetid: cb0b709b-7c9c-4496-8a4e-9e1e4aefe447
 ms.openlocfilehash: ad216c7b7a09b8dd5d2ca2b86bc3a386fa18a552
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50552821"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62161036"
 ---
 # <a name="linker-tools-error-lnk1561"></a>Bağlayıcı Araçları Hatası LNK1561
 

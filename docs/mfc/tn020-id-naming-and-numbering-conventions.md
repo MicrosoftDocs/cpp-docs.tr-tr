@@ -9,11 +9,11 @@ helpviewer_keywords:
 - resource identifiers
 ms.assetid: aecbd2cf-68b3-47f6-ae21-b1f507917245
 ms.openlocfilehash: f1cd44ed448cc4c0fc60d490a613f0ad91071376
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57267400"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62306070"
 ---
 # <a name="tn020-id-naming-and-numbering-conventions"></a>TN020: Kimlik adlandırma ve numaralandırma kuralları
 

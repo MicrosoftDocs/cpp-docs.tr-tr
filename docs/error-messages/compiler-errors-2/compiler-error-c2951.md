@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2951
 ms.assetid: c6f95aa2-c894-425b-a51c-d40d70c8daa1
 ms.openlocfilehash: dbc7186edfce6cc12a38fb2fc1dda08ac4a181c7
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50638704"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62300732"
 ---
 # <a name="compiler-error-c2951"></a>Derleyici Hatası C2951
 

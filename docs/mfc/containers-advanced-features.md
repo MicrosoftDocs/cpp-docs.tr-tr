@@ -13,11 +13,11 @@ helpviewer_keywords:
 - containers [MFC], container applications
 ms.assetid: 221fd99c-b138-40fa-ad6a-974e3b3ad1f8
 ms.openlocfilehash: 350431975a4335fc06e436237b7e0d3388faab64
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58769569"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62152936"
 ---
 # <a name="containers-advanced-features"></a>Kapsayıcılar: Gelişmiş Özellikler
 

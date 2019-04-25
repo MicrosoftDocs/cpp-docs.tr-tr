@@ -7,11 +7,11 @@ helpviewer_keywords:
 - tree controls [MFC], drag and drop operations
 ms.assetid: 3cf78b4c-4579-4fe1-9bc9-c5ab876e4af1
 ms.openlocfilehash: c7febeec513d8004df2bd1cc42e4e97e027e9f17
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57286315"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62167705"
 ---
 # <a name="tree-control-drag-and-drop-operations"></a>Ağaç Denetimi Sürükle ve Bırak İşlemleri
 

@@ -5,11 +5,11 @@ f1_keywords:
 - future/std::future_error
 ms.assetid: 6071c545-ac2a-49ef-9967-07b0125da861
 ms.openlocfilehash: 2b3f754c0ceb7384d99c6a657de214d30aca24b3
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50430479"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62159762"
 ---
 # <a name="futureerror-class"></a>future_error Sınıfı
 

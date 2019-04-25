@@ -11,11 +11,11 @@ helpviewer_keywords:
 - menu items [MFC], examples
 ms.assetid: e8692549-acd7-478f-9c5e-ba310ce8cccd
 ms.openlocfilehash: 1e730125e47609f0bf87814b32962336cb752b04
-ms.sourcegitcommit: c1f646c8b72f330fa8cf5ddb0f8f261ba10d16f0
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58328278"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62173313"
 ---
 # <a name="example-displaying-a-dialog-box-via-a-menu-command"></a>Örnek: Bir iletişim kutusunu menü komutu ile görüntüleme
 

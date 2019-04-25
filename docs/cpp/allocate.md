@@ -8,11 +8,11 @@ helpviewer_keywords:
 - allocate __declspec keyword
 ms.assetid: 67828b31-de60-4c0e-b0a6-ef3aab22641d
 ms.openlocfilehash: a2284395b09c34b0d22c4499bf804cfcc3a74c4d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50452526"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62155283"
 ---
 # <a name="allocate"></a>allocate
 

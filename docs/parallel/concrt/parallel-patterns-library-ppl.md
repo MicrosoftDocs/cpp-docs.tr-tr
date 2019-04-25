@@ -5,11 +5,11 @@ helpviewer_keywords:
 - Parallel Patterns Library (PPL)
 ms.assetid: 40fd86b2-69fa-45e5-93d8-98a75636c242
 ms.openlocfilehash: 11440d56b9618d4763e1b7e47a21b365bbdc0c15
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57290722"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62301857"
 ---
 # <a name="parallel-patterns-library-ppl"></a>Paralel Desen Kitaplığı (PPL)
 
@@ -27,7 +27,7 @@ PPL, aşağıdaki özellikleri sağlar:
 
 PPL, C++ Standart Kitaplığı benzeyen bir programlama modeli sağlar. Aşağıdaki örnek PPL birçok özelliklerini gösterir. Seri olarak ve paralel birkaç Fibonacci sayı hesaplar. Her iki hesaplamalar üzerinde işlem bir [std::array](../../standard-library/array-class-stl.md) nesne. Örnek ayrıca, her iki hesaplamalar gerçekleştirmek için gerekli olduğu süre konsola yazdırır.
 
-C++ Standart Kitaplığı seri sürümü kullanan [std::for_each](../../standard-library/algorithm-functions.md#for_each) dizi geçirmek için algoritma ve sonuçlarda depolar bir [std::vector](../../standard-library/vector-class.md) nesne. Paralel sürüm aynı görevi gerçekleştirir, ancak PPL kullanan [concurrency::parallel_for_each](reference/concurrency-namespace-functions.md#parallel_for_each) algoritması ve sonuçlarda depolayan bir [concurrency::concurrent_vector](../../parallel/concrt/reference/concurrent-vector-class.md) nesne. `concurrent_vector` Eşzamanlı olarak kapsayıcıya yazma erişimi eşitleme gereksinimini olmadan öğeleri eklemek, her döngü tekrarında sınıfı sağlar.
+Seri sürümünü kullanır C++ standart Kitaplığı [std::for_each](../../standard-library/algorithm-functions.md#for_each) dizi geçirmek için algoritma ve sonuçlarda depolayan bir [std::vector](../../standard-library/vector-class.md) nesne. Paralel sürüm aynı görevi gerçekleştirir, ancak PPL kullanan [concurrency::parallel_for_each](reference/concurrency-namespace-functions.md#parallel_for_each) algoritması ve sonuçlarda depolayan bir [concurrency::concurrent_vector](../../parallel/concrt/reference/concurrent-vector-class.md) nesne. `concurrent_vector` Eşzamanlı olarak kapsayıcıya yazma erişimi eşitleme gereksinimini olmadan öğeleri eklemek, her döngü tekrarında sınıfı sağlar.
 
 Çünkü `parallel_for_each` paralel sürümü bu örnek, aynı anda sıralama gerekir davranır `concurrent_vector` seri sürümü aynı sonuçları üretmek için nesne.
 

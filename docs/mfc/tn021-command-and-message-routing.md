@@ -9,11 +9,11 @@ helpviewer_keywords:
 - Windows messages [MFC], routing
 ms.assetid: b5952c8b-123e-406c-a36d-a6ac7c6df307
 ms.openlocfilehash: ce8aa2013c8f2f351ca1028f0d6103135ba5ecd8
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57294401"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62306187"
 ---
 # <a name="tn021-command-and-message-routing"></a>TN021: Komut ve ileti yönlendirme
 
@@ -80,7 +80,7 @@ Her zaman bir programın tüm menü öğelerini etkin ve kullanıma durumunu kor
 
 `CFrameWnd` Ayrıca durum çubuğunda (ileti satırı olarak da bilinir) seçili öğe geçerli menü açıklamak için WM_ENTERIDLE ileti işler.
 
-Uygulama menüsü yapısı, Visual C++ tarafından düzenlenemez WM_INITMENUPOPUP zaman kullanılabilir olası komutları temsil etmek için kullanılır. On_update_command_uı işleyicileri, durum veya bir menü metnini değiştirme veya menü çizilmeden önce (dosya MRU Listesi veya OLE fiilleri açılan menü gibi) Gelişmiş kullanımları gerçekten menüsü yapısı değiştirin.
+Uygulama menüsü yapısı, görsel tarafından düzenlenen C++, WM_INITMENUPOPUP zaman kullanılabilir olası komutları temsil etmek için kullanılır. On_update_command_uı işleyicileri, durum veya bir menü metnini değiştirme veya menü çizilmeden önce (dosya MRU Listesi veya OLE fiilleri açılan menü gibi) Gelişmiş kullanımları gerçekten menüsü yapısı değiştirin.
 
 Araç çubukları (ve diğer denetim çubukları) on_update_command_uı işleme aynı sıralama yapılır, boşta döngü girdiğinde uygulama. Bkz: *sınıf kitaplığı başvurusu* ve [Teknik Not 31](../mfc/tn031-control-bars.md) denetim çubukları hakkında daha fazla bilgi için.
 

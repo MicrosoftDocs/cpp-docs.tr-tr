@@ -8,11 +8,11 @@ helpviewer_keywords:
 - A1017
 ms.assetid: bef0b312-5431-4e5a-b637-c19919acf01b
 ms.openlocfilehash: 22a16569364760d0cb1d01011405f7a11dd21cac
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50560829"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62177779"
 ---
 # <a name="ml-fatal-error-a1017"></a>ML Önemli Hatası A1017
 

@@ -28,11 +28,11 @@ helpviewer_keywords:
 - nanl function
 ms.assetid: 790e9158-80ab-43e0-8f5a-096198553fd9
 ms.openlocfilehash: df3985a28bc351bdf196c0a1561bd3e25b661c87
-ms.sourcegitcommit: e98671a4f741b69d6277da02e6b4c9b1fd3c0ae5
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/04/2019
-ms.locfileid: "55703002"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62156272"
 ---
 # <a name="nan-nanf-nanl"></a>nan, nanf, nanl
 

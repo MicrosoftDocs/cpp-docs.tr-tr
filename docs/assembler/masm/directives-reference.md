@@ -7,11 +7,11 @@ helpviewer_keywords:
 - MASM (Microsoft Macro Assembler), directives reference
 ms.assetid: da6efcd1-18f7-41de-81cd-a002a02f9a22
 ms.openlocfilehash: 655c177b8e5b859faf3b6d9c3250bc3ced31b430
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51327206"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62178944"
 ---
 # <a name="directives-reference"></a>Yönergeler Başvurusu
 

@@ -8,11 +8,11 @@ helpviewer_keywords:
 - Object Browser, navigating
 ms.assetid: 3bd9427d-c920-41fd-b27c-3063dd924e0c
 ms.openlocfilehash: 9b9dffb5738d85899b832694c534eb13f5a57339
-ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51693041"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62264848"
 ---
 # <a name="navigate-the-class-structure"></a>Sınıf yapısında gezinme
 

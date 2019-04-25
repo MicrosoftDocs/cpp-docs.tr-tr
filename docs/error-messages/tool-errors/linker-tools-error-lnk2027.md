@@ -7,11 +7,11 @@ helpviewer_keywords:
 - LNK2027
 ms.assetid: e2f857a8-8e8a-4697-bbff-12ccb84a35c1
 ms.openlocfilehash: e74912780bab3056ead36ae3705f0910805228e9
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50545905"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62299016"
 ---
 # <a name="linker-tools-error-lnk2027"></a>Bağlayıcı Araçları Hatası LNK2027
 

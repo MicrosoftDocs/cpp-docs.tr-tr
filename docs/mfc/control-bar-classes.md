@@ -7,11 +7,11 @@ helpviewer_keywords:
 - control bars [MFC], classes
 ms.assetid: 11009103-cad8-4309-85ce-3d2e858e1818
 ms.openlocfilehash: 3426d84eab888a6fe78b663945776fff2fe708dd
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57302253"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62301961"
 ---
 # <a name="control-bar-classes"></a>Denetim Çubuğu Sınıfları
 

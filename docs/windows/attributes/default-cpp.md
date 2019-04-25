@@ -9,11 +9,11 @@ helpviewer_keywords:
 - defaults, default attribute
 ms.assetid: 0cdca716-1ba8-46d7-9399-167e55492870
 ms.openlocfilehash: c6448b00fef50a7654816a2c39af2943db12d314
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59024588"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62148087"
 ---
 # <a name="default-c"></a>default (C++)
 
@@ -102,7 +102,7 @@ int main() {
 |**İçin geçerlidir**|**sınıf**, **yapı**, veri üyesi|
 |**Tekrarlanabilir**|Hayır|
 |**Gerekli öznitelikleri**|**coclass'ı** (uygulandığında **sınıfı** veya **yapı**)|
-|**Geçersiz öznitelikler**|None|
+|**Geçersiz öznitelikler**|Yok.|
 
 Daha fazla bilgi için [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 

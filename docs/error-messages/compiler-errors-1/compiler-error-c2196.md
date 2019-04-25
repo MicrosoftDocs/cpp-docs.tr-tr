@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2196
 ms.assetid: fd2f6a58-48ce-4e58-96f8-e37720feb8e7
 ms.openlocfilehash: f21652161cb654fa41562ff97b2a5b4741f51855
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50472975"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62174568"
 ---
 # <a name="compiler-error-c2196"></a>Derleyici Hatası C2196
 

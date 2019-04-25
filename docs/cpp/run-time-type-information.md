@@ -10,11 +10,11 @@ helpviewer_keywords:
 - run-time checks, type checking
 ms.assetid: becbd0e5-0439-4c61-854f-8a74f7160c54
 ms.openlocfilehash: 1d11ee3ea472f935120c59f0faefee905361ee97
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50656171"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62267408"
 ---
 # <a name="run-time-type-information"></a>Çalışma Zamanı Türü Bilgileri
 

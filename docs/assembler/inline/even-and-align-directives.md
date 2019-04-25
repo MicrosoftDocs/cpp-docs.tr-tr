@@ -12,11 +12,11 @@ helpviewer_keywords:
 - ALIGN directive
 ms.assetid: 7357ab2d-4a5c-43ca-accb-a5f21cdfcde5
 ms.openlocfilehash: 522d5689d680d0fc334743d2802abe21570dd6f3
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50604392"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62167325"
 ---
 # <a name="even-and-align-directives"></a>EVEN ve ALIGN Yönergeleri
 

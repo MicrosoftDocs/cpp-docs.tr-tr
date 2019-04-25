@@ -6,11 +6,11 @@ helpviewer_keywords:
 - stream I/O
 ms.assetid: 21a97566-91a7-42d6-b2f8-a4c16bc926f1
 ms.openlocfilehash: d426baacb52095ab2d933263fdac8e312fc29558
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50580254"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62159242"
 ---
 # <a name="inputoutput-streams"></a>Giriş/Çıkış Akışları
 

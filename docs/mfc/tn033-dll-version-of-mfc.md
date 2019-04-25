@@ -11,11 +11,11 @@ helpviewer_keywords:
 - TN033
 ms.assetid: b6f1080b-b66b-4b1e-8fb1-926c5816392c
 ms.openlocfilehash: 4bfc60e20a073dd34945b91dd48ba82cdf4ab9f3
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58767788"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62305547"
 ---
 # <a name="tn033-dll-version-of-mfc"></a>TN033: MFC'nin DLL sürümü
 

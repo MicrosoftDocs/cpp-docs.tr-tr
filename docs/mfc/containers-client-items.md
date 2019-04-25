@@ -6,11 +6,11 @@ helpviewer_keywords:
 - client items and OLE containers
 ms.assetid: 231528b5-0744-4f83-8897-083bf55ed087
 ms.openlocfilehash: 0c7f4a63cb9a31b52be2d3574ddad29313df6a4d
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57298288"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62153365"
 ---
 # <a name="containers-client-items"></a>Kapsayıcılar: İstemci öğeleri
 

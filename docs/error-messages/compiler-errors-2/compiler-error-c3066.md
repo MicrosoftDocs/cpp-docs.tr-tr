@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3066
 ms.assetid: 226f6de5-c4c5-41e2-b31a-2e30a37fbbeb
 ms.openlocfilehash: 126175b44bf0e6f4a58bc0e675cfd0cac1acc1ba
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50459228"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62182619"
 ---
 # <a name="compiler-error-c3066"></a>Derleyici Hatası C3066
 

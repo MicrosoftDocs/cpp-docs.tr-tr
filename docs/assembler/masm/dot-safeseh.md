@@ -9,11 +9,11 @@ helpviewer_keywords:
 - .SAFESEH directive
 ms.assetid: 6eaac8c4-c46f-47ae-8a66-f5cfeb267e43
 ms.openlocfilehash: 417aea13518621f775cafa176ff7d74f9704d511
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51328363"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62178299"
 ---
 # <a name="safeseh"></a>.SAFESEH
 

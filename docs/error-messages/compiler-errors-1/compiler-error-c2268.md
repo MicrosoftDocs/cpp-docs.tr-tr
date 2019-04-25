@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2268
 ms.assetid: 0ed055c9-3c6f-4df2-a5b6-85cf0e01a249
 ms.openlocfilehash: cfdb22be92e0d80cddbaca74b12b7af60b2e302d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50545736"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62152611"
 ---
 # <a name="compiler-error-c2268"></a>Derleyici Hatası C2268
 

@@ -13,11 +13,11 @@ helpviewer_keywords:
 - std::initializer_list::end
 - std::initializer_list::size
 ms.openlocfilehash: de925f73ac206113aafb8661a8d5b347503150c5
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50466917"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62159307"
 ---
 # <a name="initializerlist-class"></a>initializer_list sınıfı
 
@@ -34,7 +34,7 @@ class initializer_list
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|*Türü*|İçinde depolanacak öğe veri türü `initializer_list`.|
+|*Tür*|İçinde depolanacak öğe veri türü `initializer_list`.|
 
 ## <a name="remarks"></a>Açıklamalar
 

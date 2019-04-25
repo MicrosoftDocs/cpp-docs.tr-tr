@@ -24,11 +24,11 @@ helpviewer_keywords:
 - temporary files, creating
 ms.assetid: c4a4dc24-70da-438d-ae4e-98352d88e375
 ms.openlocfilehash: 98afcb7a3e04a96a1b08bc1b975634153e550839
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50530331"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62155569"
 ---
 # <a name="tmpfile"></a>tmpfile
 

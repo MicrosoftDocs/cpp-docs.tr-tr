@@ -7,11 +7,11 @@ helpviewer_keywords:
 - TZNAME_MAX constant
 ms.assetid: e2286cb8-751d-4557-9650-5c4b98a8f7be
 ms.openlocfilehash: 71e5becd39f49d86573483c5451a9a2415d84181
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57750942"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62304273"
 ---
 # <a name="tznamemax"></a>TZNAME_MAX
 

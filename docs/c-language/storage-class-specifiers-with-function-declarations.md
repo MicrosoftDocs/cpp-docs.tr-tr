@@ -10,11 +10,11 @@ helpviewer_keywords:
 - external linkage, storage-class specifiers
 ms.assetid: 801d7df2-efa9-4924-a725-274a5654cfd4
 ms.openlocfilehash: 69d6fa2b17523f2bb4068cd05a11265d91750021
-ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56152267"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62157889"
 ---
 # <a name="storage-class-specifiers-with-function-declarations"></a>İşlev Bildirimli Depolama Sınıfı Tanımlayıcıları
 

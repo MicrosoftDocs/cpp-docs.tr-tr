@@ -7,11 +7,11 @@ helpviewer_keywords:
 - TN046
 ms.assetid: 0d6ff3c9-4a5d-44df-b121-be4b0a649947
 ms.openlocfilehash: 34ad1357d16e58a99393a110990083fc6186288f
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57298248"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62305365"
 ---
 # <a name="tn046-commenting-conventions-for-the-mfc-classes"></a>TN046: MFC sınıfları için yorum oluşturma kuralları
 

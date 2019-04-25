@@ -8,11 +8,11 @@ helpviewer_keywords:
 - __declspec keyword [C++], align
 ms.assetid: 9cb63f58-658b-4425-ac47-af8eabfc5878
 ms.openlocfilehash: 1bfe6e7a4646be8cea622078b4d85f20f458e1c5
-ms.sourcegitcommit: ff3cbe4235b6c316edcc7677f79f70c3e784ad76
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/19/2018
-ms.locfileid: "53627338"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62258155"
 ---
 # <a name="align-c"></a>align (C++)
 
@@ -224,7 +224,7 @@ struct S {
 
 Aşağıdaki tabloda çeşitli her üyenin uzaklığını listeler `/Zp` (veya #pragma `pack`) nasıl etkileştiğini gösteren değer.
 
-|Değişken|/Zp1|/ Zp2|/Zp4|/Zp8|
+|Değişken|/Zp1|/Zp2|/Zp4|/Zp8|
 |--------------|-----------|-----------|-----------|-----------|
 |a|0|0|0|0|
 |b|1.|2|2|2|

@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C4733
 ms.assetid: 7ef4f577-772d-4b66-a7bf-8958a6b250bc
 ms.openlocfilehash: 0d0b0b912ef15294f9a4362a79dffd6d7eeabed8
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50474926"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62221121"
 ---
 # <a name="compiler-warning-level-1-c4733"></a>Derleyici Uyarısı (düzey 1) C4733
 

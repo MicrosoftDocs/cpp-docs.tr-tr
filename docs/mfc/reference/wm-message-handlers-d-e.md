@@ -32,11 +32,11 @@ helpviewer_keywords:
 - WM_ messages [MFC]
 ms.assetid: 56fb89c8-68a8-4adf-883e-a9f63bf677e9
 ms.openlocfilehash: 3ae9ff828f342bc4270c3701ced3e670988c7d54
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57277722"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62309297"
 ---
 # <a name="wm-message-handlers-d---e"></a>WM_ ileti işleyicileri: D - E
 

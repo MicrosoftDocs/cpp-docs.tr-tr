@@ -1,5 +1,5 @@
 ---
-title: ToAscii, __toascii
+title: toascii, __toascii
 ms.date: 11/04/2016
 apiname:
 - __toascii
@@ -28,13 +28,13 @@ helpviewer_keywords:
 - ASCII characters, converting to
 ms.assetid: a07c0608-b0e2-4da2-a20c-7b64d6a9b77c
 ms.openlocfilehash: 22f76bdbdb21eb5b3cc9a226c111e321ee2fd0ce
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50578977"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62155530"
 ---
-# <a name="toascii-toascii"></a>ToAscii, __toascii
+# <a name="toascii-toascii"></a>toascii, __toascii
 
 Karakterleri 7 bit ASCII için kesilmesi nedeniyle dönüştürür.
 
@@ -66,7 +66,7 @@ Dönüştürülecek karakter.
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**ToAscii**, **__toascii**|C: \<ctype.h ><br /><br /> C++: \<cctype > veya \<ctype.h >|
+|**toascii**, **__toascii**|C: \<ctype.h ><br /><br /> C++: \<cctype > veya \<ctype.h >|
 
 **Toascii** makrodur bir POSIX uzantısı ve **__toascii** POSIX uzantıyı Microsoft'a özgü uygulamasıdır. Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

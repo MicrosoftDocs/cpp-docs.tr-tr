@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2017
 ms.assetid: 1083eed9-9906-4a97-883c-54e52d7e82cd
 ms.openlocfilehash: f4a17557e5e4ca1eb3f69561c964c9bbe24bb70d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50440371"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62303789"
 ---
 # <a name="compiler-error-c2017"></a>Derleyici Hatası C2017
 

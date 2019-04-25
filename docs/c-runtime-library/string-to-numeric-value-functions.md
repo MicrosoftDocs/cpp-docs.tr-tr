@@ -17,11 +17,11 @@ helpviewer_keywords:
 - string conversion, to numeric values
 ms.assetid: 11cbd9ce-033b-4914-bf66-029070e7e385
 ms.openlocfilehash: 3f24b75c2fdb3aa0d84b16874d2d01f1cb96d4b9
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57743892"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62304559"
 ---
 # <a name="string-to-numeric-value-functions"></a>Sayısal Değer İşlevleri Dizesi
 

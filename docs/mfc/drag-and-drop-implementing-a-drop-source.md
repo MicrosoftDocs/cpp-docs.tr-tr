@@ -10,11 +10,11 @@ helpviewer_keywords:
 - drag and drop [MFC], drop source
 ms.assetid: 0ed2fda0-63fa-4b1e-b398-f1f142f40035
 ms.openlocfilehash: 2aa593fa953f7a9874036d48124ae7b92d88e0a6
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58768646"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62219762"
 ---
 # <a name="drag-and-drop-implementing-a-drop-source"></a>Sürükle ve bırak: Bir bırakma kaynağı uygulama
 

@@ -7,11 +7,11 @@ helpviewer_keywords:
 - rename_search_namespace attribute
 ms.assetid: 47c9d7fd-59dc-4c62-87a1-9011a0040167
 ms.openlocfilehash: ca5d24ca9cc12e9defaa395cf150bc3c04ee4439
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59022859"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62179782"
 ---
 # <a name="renamesearchnamespace"></a>rename_search_namespace
 

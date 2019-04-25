@@ -50,11 +50,11 @@ helpviewer_keywords:
 - Unprepare method
 ms.assetid: 0760bfc5-b9ee-4aee-8e54-31bd78714d3a
 ms.openlocfilehash: 406a78ff1958d565fcc74781f6a63d4784f48bfc
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59039734"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62176102"
 ---
 # <a name="ccommand-class"></a>CCommand Sınıfı
 

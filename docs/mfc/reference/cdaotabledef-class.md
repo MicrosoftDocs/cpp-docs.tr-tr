@@ -73,11 +73,11 @@ helpviewer_keywords:
 - CDaoTableDef [MFC], m_pDatabase
 ms.assetid: 7c5d2254-8475-43c4-8a6c-2d32ead194c9
 ms.openlocfilehash: 485fe3533916e5e59bc87084f58acfb37368ac32
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57270234"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62151227"
 ---
 # <a name="cdaotabledef-class"></a>CDaoTableDef sınıfı
 
@@ -876,7 +876,7 @@ Aşağıdaki tabloda, olası veritabanı türleri ve karşılık gelen veritaban
 |HTML içeri aktarma|"HTML alma;"|" `drive`:\\\ *yolu*\ *filename*"|
 |HTML dışarı aktarma|"HTML dışarı aktarma;"|" `drive`:\\\ *yolu*"|
 |Metin|"Metin"|"sürücü:\\\path"|
-|ODBC|"ODBC; Veritabanı = `database`; UID = *kullanıcı*; PWD = *parola*; DSN = *datasourcename;* LOGINTIMEOUT = *saniye;*" (Bu tüm sunucular için bir tam bağlantı dizesi olmayabilir; yalnızca örnek olarak verilmiştir. Parametreleri arasında boşluk olmayan çok önemlidir.)|Hiçbiri|
+|ODBC|"ODBC; Veritabanı = `database`; UID = *kullanıcı*; PWD = *parola*; DSN = *datasourcename;* LOGINTIMEOUT = *saniye;*" (Bu tüm sunucular için bir tam bağlantı dizesi olmayabilir; yalnızca örnek olarak verilmiştir. Parametreleri arasında boşluk olmayan çok önemlidir.)|Yok.|
 |Exchange|"Exchange;<br /><br /> MAPILEVEL = *folderpath*;<br /><br /> [TABLETYPE = {0 &AMP;#124; 1};]<br /><br /> [PROFİL = *profili*;]<br /><br /> [PWD = *parola*;]<br /><br /> [VERİTABANI = `database`;] "|*"sürücü*:\\\ *yolu*\\\ *filename*. MDB"|
 
 > [!NOTE]

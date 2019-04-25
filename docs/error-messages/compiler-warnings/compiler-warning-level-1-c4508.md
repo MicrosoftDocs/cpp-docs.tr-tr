@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C4508
 ms.assetid: c05f113b-b789-4df0-a4ef-78bce4767021
 ms.openlocfilehash: c96db3d4bd1124c96b22363531b7739d0757b613
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50624022"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62160815"
 ---
 # <a name="compiler-warning-level-1-c4508"></a>Derleyici Uyarısı (düzey 1) C4508
 

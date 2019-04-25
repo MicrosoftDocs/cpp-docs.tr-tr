@@ -7,11 +7,11 @@ helpviewer_keywords:
 - cl.exe compiler, setting options
 ms.assetid: f3eef5ab-d0be-4fb2-90f9-927e6ed58736
 ms.openlocfilehash: 2269ba69cea2702ff190c791eb6753acb3619f7d
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57810308"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62294154"
 ---
 # <a name="compiling-a-cc-project"></a>C/C++ projesi derleme
 
@@ -37,7 +37,7 @@ Derleyici seçenekleri "soldan sağa" işlenir ve bir çakışma ile karşılaş
 
 ## <a name="additional-compiler-topics"></a>Ek Derleyici Başlıkları
 
-- [MSVC derleyici seçenekleri](compiler-options.md)
+- [MSVC Derleyicisi Seçenekleri](compiler-options.md)
 
 - [Önceden Derlenmiş Üst Bilgi Dosyaları](../creating-precompiled-header-files.md)
 

@@ -5,11 +5,11 @@ helpviewer_keywords:
 - '%MODULE%'
 ms.assetid: 0b376994-84a6-4967-8d97-8c01dfc94efe
 ms.openlocfilehash: 1c772c0493b351d8452400a4fb1e3949ab6f28f2
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57814039"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62274150"
 ---
 # <a name="using-replaceable-parameters-the-registrar39s-preprocessor"></a>Değiştirilebilir parametreler kullanma (kayıt şirketi&#39;s önişlemci)
 

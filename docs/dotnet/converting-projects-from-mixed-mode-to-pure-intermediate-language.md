@@ -8,11 +8,11 @@ helpviewer_keywords:
 - projects [C++], converting to intermediate language
 ms.assetid: 855f9e3c-4f09-4bfe-8eab-a45f68292be9
 ms.openlocfilehash: 93eff646fb582e25ad70549afc714c5321e56079
-ms.sourcegitcommit: c1f646c8b72f330fa8cf5ddb0f8f261ba10d16f0
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58328590"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62209249"
 ---
 # <a name="converting-projects-from-mixed-mode-to-pure-intermediate-language"></a>Projeleri karışık moddan saf Ara dile dönüştürme
 
@@ -45,7 +45,7 @@ Destekleyen Visual C++ Derleyici Araç Takımı'nın önceki bir sürümünü ku
       // #include <tchar.h>
       ```
 
-       veya
+       -veya-
 
        Örneğin, Windows Forms uygulamalarında:
 

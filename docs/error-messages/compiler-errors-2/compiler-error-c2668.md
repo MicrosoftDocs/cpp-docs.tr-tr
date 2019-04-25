@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2668
 ms.assetid: 041e9627-1c76-420e-a653-cfc83f933bd3
 ms.openlocfilehash: 1920af8873578c63ab768dae4bcdf4d91fe7cd57
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50642231"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62164819"
 ---
 # <a name="compiler-error-c2668"></a>Derleyici Hatası C2668
 

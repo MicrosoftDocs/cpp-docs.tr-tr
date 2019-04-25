@@ -23,11 +23,11 @@ helpviewer_keywords:
 - longjmp function
 ms.assetid: 0e13670a-5130-45c1-ad69-6862505b7a2f
 ms.openlocfilehash: e5189ff7cb850acd9c9a1280f47fc9a1270f8b68
-ms.sourcegitcommit: e06648107065f3dea35f40c1ae5999391087b80b
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57211010"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62157415"
 ---
 # <a name="longjmp"></a>longjmp
 

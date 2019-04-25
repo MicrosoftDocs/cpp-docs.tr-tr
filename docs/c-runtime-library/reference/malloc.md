@@ -23,11 +23,11 @@ helpviewer_keywords:
 - memory allocation
 ms.assetid: 144fcee2-be34-4a03-bb7e-ed6d4b99eea0
 ms.openlocfilehash: e6a007fb6f089ebf1c9f5fc9ce59cbcbf0b13888
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50520373"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62157184"
 ---
 # <a name="malloc"></a>malloc
 
@@ -71,7 +71,7 @@ Başlangıç kodu kullanan **malloc** için ayrılacak **_environ**, *envp*, ve 
 |[fputs](fputs-fputws.md)|[_getdcwd](getcwd-wgetcwd.md)|[scanf](scanf-scanf-l-wscanf-wscanf-l.md)||
 |[fread](fread.md)|[Alır](../../c-runtime-library/gets-getws.md)|[_searchenv](searchenv-wsearchenv.md)||
 
-C++ [_set_new_mode](set-new-mode.md) işlevi için yeni işleyici modunu ayarlar **malloc**. Yeni işleyici modunu gösterir mi, hata durumunda, **malloc** tarafından belirlenen yeni işleyici rutinini çağırmaktır [_set_new_handler](set-new-handler.md). Varsayılan olarak, **malloc** bellek dağıtma hatasında yeni işleyici rutinini çağırmaz. Bu varsayılan davranışı geçersiz kılabilirsiniz böylece, **malloc** bellek ayırmak başarısız **malloc** aynı yeni işleyici rutinini çağırır biçimi **yeni** işleci yok aynı nedenden dolayı başarısız olduğunda. Varsayılan geçersiz kılmak için çağrı `_set_new_mode(1)` program veya NEWMODE bağlantıyla erken. OBJ (bkz [bağlantı seçenekleri](../../c-runtime-library/link-options.md)).
+C++ [_Set_new_mode](set-new-mode.md) işlevi için yeni işleyici modunu ayarlar **malloc**. Yeni işleyici modunu gösterir mi, hata durumunda, **malloc** tarafından belirlenen yeni işleyici rutinini çağırmaktır [_set_new_handler](set-new-handler.md). Varsayılan olarak, **malloc** bellek dağıtma hatasında yeni işleyici rutinini çağırmaz. Bu varsayılan davranışı geçersiz kılabilirsiniz böylece, **malloc** bellek ayırmak başarısız **malloc** aynı yeni işleyici rutinini çağırır biçimi **yeni** işleci yok aynı nedenden dolayı başarısız olduğunda. Varsayılan geçersiz kılmak için çağrı `_set_new_mode(1)` program veya NEWMODE bağlantıyla erken. OBJ (bkz [bağlantı seçenekleri](../../c-runtime-library/link-options.md)).
 
 Uygulamayı hata ayıklama sürümü C çalışma zamanı kitaplıkları ile ilişkilendirildiğinde **malloc** çözümler [_malloc_dbg](malloc-dbg.md). Yığının hata ayıklama işlemi sırasında nasıl yönetildiği hakkında daha fazla bilgi için bkz. [CRT hata ayıklama öbeği ayrıntıları](/visualstudio/debugger/crt-debug-heap-details).
 

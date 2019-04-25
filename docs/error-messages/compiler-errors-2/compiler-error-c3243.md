@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3243
 ms.assetid: 35d8ad1a-377d-47df-be9d-c55eea23340f
 ms.openlocfilehash: 1fd0cdf44cb820882cdcda3728b664321f730d5c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50460048"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62173528"
 ---
 # <a name="compiler-error-c3243"></a>Derleyici Hatası C3243
 

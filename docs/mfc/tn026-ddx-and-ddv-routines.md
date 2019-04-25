@@ -1,5 +1,5 @@
 ---
-title: 'TN026: DDX ve DDV Rutinleri'
+title: 'TN026: DDX ve DDV rutinleri'
 ms.date: 06/28/2018
 f1_keywords:
 - DDX
@@ -10,13 +10,13 @@ helpviewer_keywords:
 - DDV (dialog data validation), procedures
 ms.assetid: c2eba87a-4b47-4083-b28b-e2fa77dfb4c4
 ms.openlocfilehash: 89916e60d9677240f2d70e37e9a80e6ad7a76fc3
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50581915"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62305872"
 ---
-# <a name="tn026-ddx-and-ddv-routines"></a>TN026: DDX ve DDV Rutinleri
+# <a name="tn026-ddx-and-ddv-routines"></a>TN026: DDX ve DDV rutinleri
 
 > [!NOTE]
 > Aşağıdaki Teknik Not çevrimiçi belgelere ilk eklenmiştir beri güncelleştirilmemiş. Eski veya yanlış sonuç olarak, bazı yordamlar ve konular olabilir. En son bilgiler için bu konuyu çevrimiçi belge dizininde arama önerilir.
@@ -87,7 +87,7 @@ Var olan üç diğer ilginç `CDataExchange` üyeleri:
 
 - `m_pDlgWnd`: Denetimler içeren pencere (genellikle iletişim). 'This' geçirmek DDX_ ve DDV_ genel işlevleri arayanlar önlemek için her DDX/DDV yordamına budur.
 
-- `PrepareCtrl`, ve `PrepareEditCtrl`: bir iletişim denetimi için veri değişimi hazırlar. Odağı ayarlamak için bir doğrulama başarısız olursa, bu denetimin tanıtıcı depolar. `PrepareCtrl` Düzen olmayan denetimler için kullanılan ve `PrepareEditCtrl` düzenleme denetimleri için kullanılır.
+- `PrepareCtrl`, ve `PrepareEditCtrl`: Bir iletişim denetimi için veri değişimi hazırlar. Odağı ayarlamak için bir doğrulama başarısız olursa, bu denetimin tanıtıcı depolar. `PrepareCtrl` Düzen olmayan denetimler için kullanılan ve `PrepareEditCtrl` düzenleme denetimleri için kullanılır.
 
 - `Fail`: Giriş hatası kullanıcıya uyarı bir ileti kutusu getirme sonra çağrılır. Bu yordam için son denetim odağı geri yükler (son çağrı `PrepareCtrl` veya `PrepareEditCtrl`) ve bir özel durum. Bu üye işlevi DDX_ hem DDV_ rutinleri çağrılabilir.
 
@@ -143,15 +143,15 @@ else
 
 ClassWizard, kendi DDX_ ve DDV_ yordamlarını ClassWizard kullanıcı arabirimi ile tümleştirmenize olanak tanıyarak DDX/DDV özelleştirmeleri kümesini destekler. Bir proje veya pek çok proje belirli DDX ve DDV rutinleri yeniden kullanmayı planlıyorsanız Bunun yapılması yalnızca yararlı maliyetidir.
 
-Bunu yapmak için özel girişleri DDX içinde gerçekleştirilir. CLW (Visual C++'ın önceki sürümlerini depolanan bu bilgiler APSTUDIO. INI) veya projenizin. CLW dosyası. Özel girişleri olabilir ya da [genel bilgisi] bölümünde projenizin girildi. CLW dosya veya DDX [ExtraDDX] bölümünde. \Program Studio\Visual Visual C ++ \bin dizinine dosyasında CLW. DDX oluşturmanız gerekebilir. Zaten mevcut değilse CLW dosyası. Özel DDX_/DDV_ yordamları yalnızca bir belirli projesinde kullanmayı planlıyorsanız, girişler projenizin [genel bilgisi] bölümüne ekleyin. Bunun yerine CLW dosya. Birçok projelerde rutinleri kullanmayı planlıyorsanız, girişleri DDX [ExtraDDX] bölümünü ekleyin. CLW.
+Bunu yapmak için özel girişleri DDX içinde gerçekleştirilir. CLW (Visual C++'ın önceki sürümlerini depolanan bu bilgiler APSTUDIO. INI) veya projenizin. CLW dosyası. Özel girişleri olabilir ya da [genel bilgisi] bölümünde projenizin girildi. CLW dosya veya DDX [ExtraDDX] bölümünde. Görsel Studio\Visual \Program CLW dosyasında C++\bin dizinine. DDX oluşturmanız gerekebilir. Zaten mevcut değilse CLW dosyası. Özel DDX_/DDV_ yordamları yalnızca bir belirli projesinde kullanmayı planlıyorsanız, girişler projenizin [genel bilgisi] bölümüne ekleyin. Bunun yerine CLW dosya. Birçok projelerde rutinleri kullanmayı planlıyorsanız, girişleri DDX [ExtraDDX] bölümünü ekleyin. CLW.
 
 Bu özel girişleri genel biçimi şöyledir:
 
-> ExtraDDXCount =*n*
+> ExtraDDXCount=*n*
 
 Burada *n* ExtraDDX sayısı? biçiminin izleyebilecekleri satırları
 
-> ExtraDDX? =*anahtarları*; *vb-keys*; *istemi*; *türü*; *initValue*; *DDX_Proc* [; *DDV_Proc*; *prompt1*; *arg1* [; *prompt2*; *fmt2*]]
+> ExtraDDX?=*keys*; *vb-keys*; *prompt*; *type*; *initValue*; *DDX_Proc* [; *DDV_Proc*; *prompt1*; *arg1* [; *prompt2*; *fmt2*]]
 
 nerede? 1 - bir sayıdır *n* tanımlanıyorsa listesinde hangi DDX türünü belirten.
 
@@ -182,7 +182,7 @@ Her alanın bir ';' karakteriyle ayrılır. Alanlar ve bunların amacı, aşağ�
 
   Özellik birleşik giriş kutusu içinde (tırnak işareti gerekmez) yerleştirmek için dize
 
-- *Türü*
+- *type*
 
   Üstbilgi dosyasında yayacak tek tanımlayıcısı. Bizim örneğimizde DDX_Time ile bu CTime için ayarlanır.
 
@@ -196,7 +196,7 @@ Her alanın bir ';' karakteriyle ayrılır. Alanlar ve bunların amacı, aşağ�
 
 - *DDX_Proc*
 
-  DDX_ yordamı tek tanımlayıcısı. C++ işlev adı "İle DDX_" başlamalıdır, ancak "DDX_" dahil değildir \<DDX_Proc > tanımlayıcısı. Yukarıdaki örnekte \<DDX_Proc > tanımlayıcısı zaman olur. ClassWizard işlevi çağrısı v souboru implementace yazdığında {{AFX_DATA_MAP bölümünde, bu ekler bu ad için DDX_, bu nedenle DDX_Time ulaşan.
+  DDX_ yordamı tek tanımlayıcısı. C++ İşlev adı "İle DDX_" başlamalıdır, ancak "DDX_" dahil değildir \<DDX_Proc > tanımlayıcısı. Yukarıdaki örnekte \<DDX_Proc > tanımlayıcısı zaman olur. ClassWizard işlevi çağrısı v souboru implementace yazdığında {{AFX_DATA_MAP bölümünde, bu ekler bu ad için DDX_, bu nedenle DDX_Time ulaşan.
 
 - *Açıklama*
 
@@ -208,7 +208,7 @@ Her alanın bir ';' karakteriyle ayrılır. Alanlar ve bunların amacı, aşağ�
 
 - *bağımsız değişken*
 
-  DDV_ yordamı tek tanımlayıcısı. C++ işlev adı "DDV_" ile başlamalıdır, ancak "DDX_" eklemeyin \<DDX_Proc > tanımlayıcısı.
+  DDV_ yordamı tek tanımlayıcısı. C++ İşlev adı "DDV_" ile başlamalıdır, ancak "DDX_" eklemeyin \<DDX_Proc > tanımlayıcısı.
 
   *arg* 1 veya 2 DDV args tarafından izlenir:
 

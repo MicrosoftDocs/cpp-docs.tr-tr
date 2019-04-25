@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3218
 ms.assetid: 0eea19e0-503e-4e07-ae8b-2cb2e95922cd
 ms.openlocfilehash: 87084f9751b1593ec93a3062f23714bba403da9a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50578210"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62182528"
 ---
 # <a name="compiler-error-c3218"></a>Derleyici Hatası C3218
 

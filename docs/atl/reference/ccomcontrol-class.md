@@ -20,11 +20,11 @@ helpviewer_keywords:
 - controls [ATL], properties
 ms.assetid: 55368c27-bd16-45a7-b701-edb36157c8e8
 ms.openlocfilehash: ffbec7c1a83c0dd829878f4c73340528d32fb852
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58771558"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62246505"
 ---
 # <a name="ccomcontrol-class"></a>CComControl sınıfı
 

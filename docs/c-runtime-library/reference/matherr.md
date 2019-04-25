@@ -23,11 +23,11 @@ helpviewer_keywords:
 - matherr function
 ms.assetid: b600d66e-165a-4608-a856-8fb418d46760
 ms.openlocfilehash: b830dc940fa2abb131f70130033d27b057412137
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51329637"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62156921"
 ---
 # <a name="matherr"></a>_matherr
 
@@ -73,7 +73,7 @@ struct _exception
 
 |Makrosu|Açıklama|
 |-|-|
-| **_ETKİ ALANI** | Bağımsız değişken etki alanı hatası |
+| **_DOMAIN** | Bağımsız değişken etki alanı hatası |
 | **_SING** | Bağımsız değişken singularity |
 | **_OVERFLOW** | Taşma aralık hatası |
 | **_PLOSS** | Kısmi bir kayıp önemi |

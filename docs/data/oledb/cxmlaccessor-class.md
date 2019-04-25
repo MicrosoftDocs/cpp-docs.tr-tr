@@ -21,11 +21,11 @@ helpviewer_keywords:
 - GetXMLRowData method
 ms.assetid: c88c082c-ec2f-4351-8947-a330b15e448a
 ms.openlocfilehash: 85fddb9b77cfc089b2236f2ff82944fec6ef9632
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59036107"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62176076"
 ---
 # <a name="cxmlaccessor-class"></a>CXMLAccessor Sınıfı
 

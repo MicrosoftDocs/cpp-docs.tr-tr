@@ -8,11 +8,11 @@ helpviewer_keywords:
 - OLE initialization
 ms.assetid: aa8a54a7-24c3-4344-b2c6-dbcf6084fa31
 ms.openlocfilehash: 3d49b37ffc2561fa9a51463a893ec2ba4f4fb725
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57304034"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62310287"
 ---
 # <a name="ole-initialization"></a>OLE Başlatma
 

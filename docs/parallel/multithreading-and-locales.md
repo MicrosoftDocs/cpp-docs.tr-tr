@@ -8,11 +8,11 @@ helpviewer_keywords:
 - per-thread locale
 ms.assetid: d6fb159a-eaca-4130-a51a-f95d62f71485
 ms.openlocfilehash: c12a3fa1922db7a1ec0a7bcd43ddf09000d97961
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57293608"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62213257"
 ---
 # <a name="multithreading-and-locales"></a>Çoklu İş Parçacığı Kullanımı ve Yerel Ayarlar
 

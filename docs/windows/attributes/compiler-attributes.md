@@ -6,11 +6,11 @@ helpviewer_keywords:
 - attributes [C++/CLI], compiler
 ms.assetid: 53cd9bee-1521-48ec-b171-80feac2096cc
 ms.openlocfilehash: ea4d3119a640c0642664210384c297e011104411
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59030825"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62148308"
 ---
 # <a name="compiler-attributes"></a>Derleyici Öznitelikleri
 

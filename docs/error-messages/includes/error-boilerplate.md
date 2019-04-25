@@ -1,18 +1,19 @@
 ---
-ms.openlocfilehash: bcf2372f039ccec4b46bf51fb4da9f4175289f14
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.openlocfilehash: af8edc41f6c2036d231eb7e922a631628294645a
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59805334"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62209079"
 ---
-Visual Studio derleyicileri ve derleme araçları pek çok hata ve uyarı bildirebilirsiniz. Bir hata veya uyarı bulunduktan sonra derleme araçları kodun amacı hakkında varsayımlar ve böylece aynı anda daha fazla sorunlar bildirilebilir. devam etmek çalışır. Araçlar yanlış varsayım yapıyorsa, sonraki hatalar ya da uyarılar projenize geçerli olmayabilir. Projenizdeki sorunları düzelttiğinizde, her zaman ilk hata veya uyarı bildirilen ile başlayın ve sık sık yeniden derleyin. Bir düzeltme uzaklaşıyor birçok sonraki hatalar kalmasına neden olabilir.
+> [!IMPORTANT]
+> Visual Studio derleyicileri ve derleme araçları pek çok hata ve uyarı bildirebilirsiniz. Bir hata veya uyarı bulunduktan sonra derleme araçları kodun amacı hakkında varsayımlar ve böylece aynı anda daha fazla sorunlar bildirilebilir. devam etmek çalışır. Araçlar yanlış varsayım yapıyorsa, sonraki hatalar ya da uyarılar projenize geçerli olmayabilir. Projenizdeki sorunları düzelttiğinizde, her zaman ilk hata veya uyarı bildirilen ile başlayın ve sık sık yeniden derleyin. Bir düzeltme uzaklaşıyor birçok sonraki hatalar kalmasına neden olabilir.
 
-Visual Studio'da belirli bir tanılama iletisi hakkında Yardım almak için onu seçip **çıkış** penceresi ve ENTER tuşuna **F1** anahtarı varsa, bu hata için belgeler sayfası açın. Ayrıca, belirli hatalar veya uyarılar hakkında makaleler bulmak için yukarıdaki arama aracı kullanın veya hataları ve Uyarıları araç ve Gezinti bölmesinde türüne göre listesine göz atın.
+Visual Studio'da belirli bir tanılama iletisi hakkında Yardım almak için onu seçip **çıkış** penceresi ve ENTER tuşuna **F1** anahtarı. Visual Studio, varsa, bu hata için belgeler sayfası açılır. Yukarıdaki arama aracında, belirli hatalar veya uyarılar hakkında makaleler bulmak için de kullanabilirsiniz. Veya, hataları ve Uyarıları araç ve Gezinti bölmesinde bu sayfadaki türüne göre listesine göz atın.
 
 > [!NOTE]
-> Her Visual Studio hata veya uyarı belgelenmiştir. Çoğu durumda, tanı iletisi tüm kullanılabilir olan bilgileri sağlar. Kullanıldığında, bu sayfada geldiğimizi varsa **F1** ve düşündüğünüz hata veya uyarı iletisi gereken ek açıklama, bize bildirin. Bu sayfadaki geri bildirim formu kullanın, açıklamalar bölümünde, bir açıklama ekleyin veya [github'da bir sorun yükseltmek](https://github.com/MicrosoftDocs/cpp-docs/issues). Ayrıca, geri bildirim gönderin ve IDE'de hataları girin. Visual Studio'da menü çubuğuna gidin ve seçin **Yardım > geri bildirim gönder > sorun bildir**, veya bir öneri kullanarak gönderin **Yardım > geri bildirim gönder > bir öneri gönderin**.
+> Her Visual Studio hata veya uyarı belgelenmiştir. Çoğu durumda, tanı iletisi tüm kullanılabilir olan bilgileri sağlar. Kullanıldığında, bu sayfada geldiğimizi varsa **F1** ve düşündüğünüz hata veya uyarı iletisi gereken ek açıklama, bize bildirin. Belge sorunu üzerinde yükseltmek için bu sayfadaki geri bildirim düğmeleri kullanabilirsiniz [GitHub](https://github.com/MicrosoftDocs/cpp-docs/issues), veya bir ürün sorunu [Geliştirici topluluğu](https://developercommunity.visualstudio.com/spaces/8/index.html) site. Ayrıca, geri bildirim gönderin ve IDE içindeki hataların girin. Visual Studio'da menü çubuğuna gidin ve seçin **Yardım > geri bildirim gönder > sorun bildir**, veya bir öneri kullanarak gönderin **Yardım > geri bildirim gönder > bir öneri gönderin**.
 
-Microsoft'un ortak forumlarında hatalar ve Uyarılar için Ek Yardım bulabilirsiniz. Hata veya uyarı numarası üzerinde arayabilirsiniz [Geliştirici topluluğu](https://developercommunity.visualstudio.com/spaces/8/index.html) site. Ayrıca arama hataları ve uyarıları ve sorular [Stack Overflow](http://stackoverflow.com/) çözümler bulabilirsiniz.
+Microsoft'un ortak forumlarında hatalar ve Uyarılar için Ek Yardım bulabilirsiniz. Veya, hata veya uyarı numarası Visual Studio için arama C++ [Geliştirici topluluğu](https://developercommunity.visualstudio.com/spaces/8/index.html) site. Ayrıca hatalar ve Uyarılar için arama yapın ve sorular [Stack Overflow](http://stackoverflow.com/) çözümler bulabilirsiniz.
 
 Ek Yardım ve topluluk kaynakları, bağlantılar için bkz. [Visual C++ Yardım ve topluluk](../../overview/visual-cpp-help-and-community.md).

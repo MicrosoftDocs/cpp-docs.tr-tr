@@ -8,11 +8,11 @@ helpviewer_keywords:
 - DAO (Data Access Objects), TableDefs collection
 ms.assetid: c01ccebb-5615-434e-883c-4f60eac943dd
 ms.openlocfilehash: 5785ed19c6929e19c7d376efa012dd1c059611c7
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57273715"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62152104"
 ---
 # <a name="cdaotabledefinfo-structure"></a>CDaoTableDefInfo Yapısı
 

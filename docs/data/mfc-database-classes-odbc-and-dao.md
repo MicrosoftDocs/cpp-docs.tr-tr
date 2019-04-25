@@ -6,11 +6,11 @@ helpviewer_keywords:
 - MFC, database applications
 ms.assetid: 88aabe65-84e3-4122-b636-5d334a5fe570
 ms.openlocfilehash: bf0aa11a020a5d15cd23463c31f2713aba38a037
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59039385"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62182879"
 ---
 # <a name="mfc-database-classes"></a>MFC veritabanı sınıfları
 

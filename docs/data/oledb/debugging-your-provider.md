@@ -8,11 +8,11 @@ helpviewer_keywords:
 - Visual C++ debugger
 ms.assetid: 90d4e7db-06ea-4de0-a7f4-4f3751d50d93
 ms.openlocfilehash: 21d4cb455413c3f7cbcbed02cdd4c364a469426d
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59033886"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62176154"
 ---
 # <a name="debugging-your-provider"></a>Sağlayıcınızda Hata Ayıklama
 

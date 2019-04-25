@@ -6,11 +6,11 @@ helpviewer_keywords:
 - MFC Feature Pack, architecture
 ms.assetid: eead6827-9602-40a3-8038-8986e8207385
 ms.openlocfilehash: fa6dc78c95717f9201e18346f1cbe573fa3c48d2
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57262889"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62153581"
 ---
 # <a name="interface-elements"></a>Arabirim Öğeleri
 

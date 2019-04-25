@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2575
 ms.assetid: 9eb45706-37ef-4481-b373-6d193ba13634
 ms.openlocfilehash: 2737f9078e1c17358e3c975a5c3f8b6d211fd308
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50434366"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62165781"
 ---
 # <a name="compiler-error-c2575"></a>Derleyici Hatası C2575
 

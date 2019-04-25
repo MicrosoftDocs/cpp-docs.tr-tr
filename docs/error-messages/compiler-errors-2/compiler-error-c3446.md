@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3445
 ms.assetid: 33064548-24e4-46f1-beb1-476e3c3b3fbf
 ms.openlocfilehash: 8145e0cdd97022ebdcc1a7ce38c8860a005945b0
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50631126"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62182450"
 ---
 # <a name="compiler-error-c3446"></a>Derleyici Hatası C3446
 

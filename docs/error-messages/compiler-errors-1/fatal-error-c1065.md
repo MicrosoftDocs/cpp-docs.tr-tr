@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C1065
 ms.assetid: 80a27e13-696d-4199-a284-0d6b07446ff3
 ms.openlocfilehash: ad4617dca5740149b0fda288065b4843532441e1
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50504214"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62166600"
 ---
 # <a name="fatal-error-c1065"></a>Önemli hata C1065
 

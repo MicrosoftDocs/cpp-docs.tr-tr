@@ -15,11 +15,11 @@ helpviewer_keywords:
 - std::CACHE_SUBALLOC [C++]
 - std::SYNC_DEFAULT [C++]
 ms.openlocfilehash: 736e587a41fa1006801dcf6930b33ee434c9a5ea
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50492663"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62179217"
 ---
 # <a name="ltallocatorsgt-macros"></a>&lt;Ayırıcılar&gt; makroları
 

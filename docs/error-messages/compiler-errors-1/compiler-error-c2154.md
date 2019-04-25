@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2154
 ms.assetid: 98d6b044-5a3a-43ad-95fa-9b916b22468a
 ms.openlocfilehash: 74335a35b23f0e5c4f1ee22f01e4f9887c4a3c85
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59778975"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62175549"
 ---
 # <a name="compiler-error-c2154"></a>Derleyici Hatası C2154
 

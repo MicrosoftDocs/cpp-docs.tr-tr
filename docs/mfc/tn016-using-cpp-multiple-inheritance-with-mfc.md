@@ -1,5 +1,5 @@
 ---
-title: "TN016: MFC'de C++ Birden Çok Devralmayı Kullanma"
+title: "TN016: MFC'de C++ birden çok devralmayı kullanma"
 ms.date: 06/28/2018
 f1_keywords:
 - vc.inheritance
@@ -9,13 +9,13 @@ helpviewer_keywords:
 - multiple inheritance, MFC support for
 ms.assetid: 4ee27ae1-1410-43a5-b111-b6af9b84535d
 ms.openlocfilehash: 76dc2e856ca7db783ee542aa2dbb498fd4c1a769
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50668877"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62306135"
 ---
-# <a name="tn016-using-c-multiple-inheritance-with-mfc"></a>TN016: MFC'de C++ Birden Çok Devralmayı Kullanma
+# <a name="tn016-using-c-multiple-inheritance-with-mfc"></a>TN016: MFC'de C++ birden çok devralmayı kullanma
 
 Bu Not, birden çok devralma (mı) ile Microsoft Foundation sınıfları kullanmayı açıklar. MI kullanımı ile MFC gerekli değildir. Her MFC sınıf kullanılmaz ve bir sınıf kitaplığı yazmak için gerekli değildir.
 

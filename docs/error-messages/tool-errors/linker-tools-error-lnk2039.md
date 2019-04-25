@@ -7,11 +7,11 @@ helpviewer_keywords:
 - LNK2039
 ms.assetid: eaa296bd-4901-41f6-8410-6d03ee827144
 ms.openlocfilehash: 57d0c101358f84816c8d0cf96eb5137833df0b48
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59027580"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62298746"
 ---
 # <a name="linker-tools-error-lnk2039"></a>Bağlayıcı Araçları Hatası LNK2039
 

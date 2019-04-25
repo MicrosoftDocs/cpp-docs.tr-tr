@@ -8,11 +8,11 @@ helpviewer_keywords:
 - dynamic object creation [MFC]
 ms.assetid: 3e0f51cb-3e24-4231-817f-1c0ce9f2d5df
 ms.openlocfilehash: 3478e5481c177e0ebca1e6b5c2cd07509371c5ef
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57260133"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62173365"
 ---
 # <a name="dynamic-object-creation"></a>Dinamik Nesne Oluşturma
 

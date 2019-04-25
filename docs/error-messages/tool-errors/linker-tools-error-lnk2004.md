@@ -7,11 +7,11 @@ helpviewer_keywords:
 - LNK2004
 ms.assetid: 07645371-e67b-4a2c-b0e0-dde24c94ef7e
 ms.openlocfilehash: 8088494106aa702fda0497fa431e48267167a185
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51517560"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62160425"
 ---
 # <a name="linker-tools-error-lnk2004"></a>Bağlayıcı Araçları Hatası LNK2004
 

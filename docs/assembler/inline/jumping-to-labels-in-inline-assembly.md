@@ -10,11 +10,11 @@ helpviewer_keywords:
 - jumping to labels in inline assembly
 ms.assetid: 36c18b97-8981-4631-9dfd-af6c14a04297
 ms.openlocfilehash: 7653dc990e2f4b490bcbe333ed6f7586ac966d2e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50616238"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62166912"
 ---
 # <a name="jumping-to-labels-in-inline-assembly"></a>İç Derlemede Etiketlere Atlama
 

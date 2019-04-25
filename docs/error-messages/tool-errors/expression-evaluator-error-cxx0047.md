@@ -8,11 +8,11 @@ helpviewer_keywords:
 - CXX0047
 ms.assetid: db23d0db-fce2-4d86-b391-6e1d6ad13fd4
 ms.openlocfilehash: ecc2ca4061f01cfa3ef868ed2916ceaeb5513116
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50631328"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62160802"
 ---
 # <a name="expression-evaluator-error-cxx0047"></a>İfade Değerlendirici Hatası CXX0047
 

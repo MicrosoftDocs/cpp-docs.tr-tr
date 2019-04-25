@@ -12,11 +12,11 @@ helpviewer_keywords:
 - string arguments
 ms.assetid: a67bebff-edf1-4cf4-bbff-d1cc6a901099
 ms.openlocfilehash: 1729167786d71c107fe6a4369d5a0c7e7c8594f1
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57742200"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62236391"
 ---
 # <a name="cstring-argument-passing"></a>CString bağımsız değişken geçirme
 

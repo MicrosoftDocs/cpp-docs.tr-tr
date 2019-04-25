@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3174
 ms.assetid: fe6b3b5a-8196-485f-a45f-0b2e51df4086
 ms.openlocfilehash: 32f39eb1d808ccedd27ae3e4d343b87ddfde1862
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50666355"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62174126"
 ---
 # <a name="compiler-error-c3174"></a>Derleyici Hatası C3174
 

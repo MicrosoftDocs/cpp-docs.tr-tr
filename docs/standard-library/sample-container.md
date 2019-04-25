@@ -7,11 +7,11 @@ helpviewer_keywords:
 - container headers
 ms.assetid: 4ab3dcf9-49c3-4e49-b5d6-1ec573e2aee4
 ms.openlocfilehash: ca51fde38d88d8300837bbda07ee8c697f9b2be7
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57740330"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62295806"
 ---
 # <a name="ltsample-containergt"></a>&lt;Örnek kapsayıcı&gt;
 

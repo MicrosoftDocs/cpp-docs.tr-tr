@@ -9,11 +9,11 @@ helpviewer_keywords:
 - attributes [C++/CLI]
 ms.assetid: fb2216ef-9fbd-44f4-afed-732aa99450e2
 ms.openlocfilehash: 386afe5362f876cd1489a35839f4f8cfc2381e91
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59038219"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62148503"
 ---
 # <a name="attributes-alphabetical-reference"></a>Öznitelikler Alfabetik Başvurusu
 

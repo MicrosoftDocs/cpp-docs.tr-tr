@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C1905
 ms.assetid: fefc6769-477f-45a2-9878-6f0a5f42472c
 ms.openlocfilehash: 3fb4db30d91e0dd8c9dbeeebca46210122e5ff07
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50663164"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62166821"
 ---
 # <a name="fatal-error-c1905"></a>Önemli hata C1905
 

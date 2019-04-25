@@ -27,11 +27,11 @@ helpviewer_keywords:
 - CFontHolder [MFC], m_pFont
 ms.assetid: 728ab472-0c97-440d-889f-1324c6e1b6b8
 ms.openlocfilehash: 623ce5da46716e3f9a562862fc0375fb8704bb21
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57297885"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62182218"
 ---
 # <a name="cfontholder-class"></a>CFontHolder sınıfı
 

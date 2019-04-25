@@ -12,11 +12,11 @@ helpviewer_keywords:
 - OLE server applications [MFC], trackers
 ms.assetid: dcd09399-6637-4621-80e5-d12670429787
 ms.openlocfilehash: b71eb0e5d46a790b01ec12f12043af783bdfcf27
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58771454"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62181647"
 ---
 # <a name="trackers"></a>İzleyiciler
 

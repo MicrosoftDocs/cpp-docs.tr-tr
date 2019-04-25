@@ -7,11 +7,11 @@ helpviewer_keywords:
 - raw_method_prefix attribute
 ms.assetid: 71490313-af78-4bb2-b28a-eee67950d30b
 ms.openlocfilehash: 963e04752dcb797343550d9b89f778bfe0e8a593
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59021417"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62179873"
 ---
 # <a name="rawmethodprefix"></a>raw_method_prefix
 

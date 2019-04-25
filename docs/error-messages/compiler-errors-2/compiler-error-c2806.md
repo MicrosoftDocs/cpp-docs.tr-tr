@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2806
 ms.assetid: 7c9ff1f4-1590-4c47-991d-b1075a173b48
 ms.openlocfilehash: 1d37f5d1c6e253c01ae8a3b7640fb3ee4cf12534
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50490382"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62281973"
 ---
 # <a name="compiler-error-c2806"></a>Derleyici Hatası C2806
 

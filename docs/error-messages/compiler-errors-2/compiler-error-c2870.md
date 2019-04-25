@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2870
 ms.assetid: 80523ee9-1fd3-4dc4-8a77-5083deb99066
 ms.openlocfilehash: f61281da23e46236e7fce496a4d89086e5d6c0ea
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50546385"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62165053"
 ---
 # <a name="compiler-error-c2870"></a>Derleyici Hatası C2870
 

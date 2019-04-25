@@ -7,11 +7,11 @@ helpviewer_keywords:
 - attributes [C++/CLI], reference topics
 ms.assetid: 613a3611-b3eb-4347-aa38-99b654600e1c
 ms.openlocfilehash: f9d339860e9d2bdb8d66f6b7f8f49d3993b2d5cf
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57820747"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62148329"
 ---
 # <a name="c-attributes-for-com-and-net"></a>COM ve .NET için C++ öznitelikleri
 
@@ -60,7 +60,7 @@ Aşağıdaki şekil, derleyici ve öznitelik sağlayıcısı arasındaki ilişki
 > [!NOTE]
 > Öznitelik kullanımı, kaynak dosyasının içeriğini değiştirmez. Kodu oluşturulan özniteliği görünür olup yalnızca bir kez, hata ayıklama oturumları sırasında dir. Ayrıca, projedeki her kaynak dosyası için öznitelik değiştirme sonuçlarını görüntüleyen bir metin dosyası oluşturabilirsiniz. Bu yordamı hakkında daha fazla bilgi için bkz. [/Fx (eklenen kodu Birleştir)](../../build/reference/fx-merge-injected-code.md) ve [eklenen kodda hata ayıklama](/visualstudio/debugger/how-to-debug-injected-code).
 
-Çoğu C++ yapılarına uygun kullanımlarını tanımlayan bir dizi özellikleri özniteliklere sahiptir. Bu öznitelik bağlamı olarak adlandırılır ve öznitelik bağlamı tablosunda her öznitelik başvuru konusu ele. Örneğin, [coclass'ı](coclass.md) özniteliği yalnızca uygulanabilir bir varolan bir sınıf veya yapı, başlangıcı yerine sonundan [cpp_quote](cpp-quote.md) C++ kaynak dosyası içinde istenen yere eklenebileceğini özniteliği.
+Çoğu C++ yapılarına uygun kullanımlarını tanımlayan bir dizi özellikleri özniteliklere sahiptir. Bu öznitelik bağlamı olarak adlandırılır ve öznitelik bağlamı tablosunda her öznitelik başvuru konusu ele. Örneğin, [coclass'ı](coclass.md) özniteliği yalnızca uygulanabilir bir varolan bir sınıf veya yapı, başlangıcı yerine sonundan [cpp_quote](cpp-quote.md) içinde istenen yere eklenebileceğini özniteliği, bir C++ kaynak dosyası.
 
 ## <a name="building-an-attributed-program"></a>Öznitelikli Program Oluşturma
 

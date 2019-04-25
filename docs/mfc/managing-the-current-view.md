@@ -12,11 +12,11 @@ helpviewer_keywords:
 - current view in frame window [MFC]
 ms.assetid: 0a1cc22d-d646-4536-9ad2-3cb6d7092e4a
 ms.openlocfilehash: a926a9e31f7c43ab625220a4d759f6d536c2a77f
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57326237"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62173346"
 ---
 # <a name="managing-the-current-view"></a>Geçerli Görünümü Yönetme
 

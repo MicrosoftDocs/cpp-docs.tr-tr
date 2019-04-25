@@ -5,11 +5,11 @@ helpviewer_keywords:
 - event handling [C++], Visual C++
 ms.assetid: e4b9219a-15d8-42fb-83c8-6d2e4e087c8d
 ms.openlocfilehash: 93bfcc93c680618ea3a51eabd145548a4f47563a
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58772338"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62154470"
 ---
 # <a name="event-handling-in-native-c"></a>Yerel C++'da Olay İşleme
 

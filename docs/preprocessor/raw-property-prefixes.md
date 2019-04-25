@@ -7,11 +7,11 @@ helpviewer_keywords:
 - raw_property_prefixes attribute
 ms.assetid: 03a0f48c-c460-4175-a762-9f7f8d84b12f
 ms.openlocfilehash: 23250b524fdaa2181c8e28229ccec680ffdae715
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59033261"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62179808"
 ---
 # <a name="rawpropertyprefixes"></a>raw_property_prefixes
 

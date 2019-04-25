@@ -55,11 +55,11 @@ helpviewer_keywords:
 - /Ta MASM compiler option
 ms.assetid: 712623c6-f77e-47ea-a945-089e57c50b40
 ms.openlocfilehash: a452bab03e31436ee5dde476117bce8b73c7571f
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51331262"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62178117"
 ---
 # <a name="ml-and-ml64-command-line-reference"></a>ML ve ML64 Komut Satırı Başvurusu
 
@@ -71,7 +71,7 @@ Ml64.exe hakkında daha fazla bilgi için bkz. [x64 (ml64.exe) için MASM](../..
 
 > ML \[ *seçenekleri*] *filename* \[ \[ *seçenekleri*] *filename*]
 >
-> ML64 \[ *seçenekleri*] *filename* \[ \[ *seçenekleri*] *filename*]... \[/link *linkoptions*]
+> ML64 \[*options*] *filename* \[ \[*options*]  *filename*] ... \[/link *linkoptions*]
 
 ### <a name="parameters"></a>Parametreler
 
@@ -89,7 +89,7 @@ Aşağıdaki tabloda listelenen seçenekleri.
 |**/Cx**|Genel ve extern sembolleri durumda korur.|
 |**/D** *sembol*[[=*değer*]]|Belirtilen ada sahip bir metin makro tanımlar. Varsa *değer* olan eksik, boş olur. Boşluklarla ayırarak birden çok belirteç tırnak içine alınmalıdır.|
 |**/EP**|Önceden işlenmiş kaynak listesini (STDOUT'a gönderilen) oluşturur. Bkz: **/Sf**.|
-|**/ ERRORREPORT** [ **NONE** &AMP;#124; **İSTEMİ** &AMP;#124; **KUYRUK** &AMP;#124; **GÖNDER** ]|ML.exe veya ml64.exe çalışma zamanında başarısız olursa, kullanabileceğiniz **/errorreport** iç bu hataları hakkında Microsoft'a bilgi göndermek.<br /><br /> Hakkında daha fazla bilgi için **/errorreport**, bkz: [/errorreport (dahili derleme hatalarını raporla)](../../build/reference/errorreport-report-internal-compiler-errors.md).|
+|**/ERRORREPORT** [ **NONE** &#124; **PROMPT** &#124; **QUEUE** &#124; **SEND** ]|ML.exe veya ml64.exe çalışma zamanında başarısız olursa, kullanabileceğiniz **/errorreport** iç bu hataları hakkında Microsoft'a bilgi göndermek.<br /><br /> Hakkında daha fazla bilgi için **/errorreport**, bkz: [/errorreport (dahili derleme hatalarını raporla)](../../build/reference/errorreport-report-internal-compiler-errors.md).|
 |**/F** *hexnum*|Yığın boyutunu ayarlar *hexnum* bayt (aynı budur **/bağlantı/STACK**:*numarası*). Değeri, onaltılık gösterimde ifade edilmelidir. Arasına bir boşluk olması gerekir **/F** ve *hexnum*.|
 |**/FE** *dosya adı*|Yürütülebilir dosyanın adı.|
 |**/Fl**[[*filename*]]|Bir birleştirilmiş kod listesi oluşturur. Bkz: **/Sf**.|
@@ -138,7 +138,7 @@ Bağlantı seçenekleri.  Bkz: [bağlayıcı seçenekleri](../../build/reference
 
 ML ve ML64 komut satırı bazı seçenekler yerleştirme duyarlıdır. Örneğin, ML ve ML64 birkaç kabul edebilir çünkü **/c** seçenekleri varsa buna karşılık gelen **/Fo** seçenekleri belirtilen, önce **/c**. Aşağıdaki komut satırı örneği her derleme dosyası belirtimi için bir nesne dosyası belirtimi gösterilmektedir:
 
-**ML.exe /Fo a1.obj /c a.asm /Fo b1.obj /c b.asm**
+**ml.exe /Fo a1.obj /c a.asm /Fo b1.obj /c b.asm**
 
 ## <a name="environment-variables"></a>Ortam Değişkenleri
 

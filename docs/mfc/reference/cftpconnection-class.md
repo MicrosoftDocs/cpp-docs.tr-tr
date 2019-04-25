@@ -31,11 +31,11 @@ helpviewer_keywords:
 - CFtpConnection [MFC], SetCurrentDirectory
 ms.assetid: 5e3a0501-8893-49cf-a3d5-0628d8d6b936
 ms.openlocfilehash: 12ef4de16279c5c2033a95df5928a6dfb7a2a652
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57295129"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62181983"
 ---
 # <a name="cftpconnection-class"></a>CFtpConnection sınıfı
 

@@ -6,11 +6,11 @@ f1_keywords:
 - hash_set/std::swap (hash_multiset)
 ms.assetid: 557a0162-3728-4537-97dc-f9f6cc7ece94
 ms.openlocfilehash: 05a7ffd1e3bf02a88fe6a6cce841a440550c1057
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50551352"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62159138"
 ---
 # <a name="lthashsetgt-functions"></a>&lt;hash_set&gt; işlevleri
 

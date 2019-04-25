@@ -5,11 +5,11 @@ helpviewer_keywords:
 - for keyword [C++]
 ms.assetid: 6c7d01b3-c4c1-4c6a-aa58-e2d198f33d4a
 ms.openlocfilehash: a6b1823fe93c45abd8dabbd22116924e0a64f19a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50660336"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62154223"
 ---
 # <a name="for-statement-c"></a>for Deyimi (C++)
 

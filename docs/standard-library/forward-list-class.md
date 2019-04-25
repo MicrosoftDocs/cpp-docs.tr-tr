@@ -81,11 +81,11 @@ helpviewer_keywords:
 - std::forward_list::unique
 ms.assetid: 89a3b805-ab60-4858-b772-5855130c11b1
 ms.openlocfilehash: 5eaa8eba1904dc0a729fb66b280b8d3fa4bb78f1
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51524553"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62159788"
 ---
 # <a name="forwardlist-class"></a>forward_list Sınıfı
 
@@ -103,7 +103,7 @@ class forward_list
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|*Türü*|Forward_list içinde depolanacak öğe veri türü.|
+|*Tür*|Forward_list içinde depolanacak öğe veri türü.|
 |*Ayırıcı*|Forward_list ayırma ve bellek ayırmayı kaldırma hakkındaki ayrıntıları içeren saklı ayırıcı nesnesini. Bu parametre isteğe bağlıdır. Varsayılan değer ayırıcı: < `Type`>.|
 
 ## <a name="remarks"></a>Açıklamalar
@@ -218,8 +218,8 @@ void assign(InputIterator First, InputIterator Last);
 |*Son*|Değiştirme aralığın sonu.|
 |*Sayısı*|Atanacak öğe sayısı.|
 |*VAL*|Her öğe atanacak değer.|
-|*Türü*|Değer türü.|
-|* IList'|Kopyalanacağı initializer_list.|
+|*Tür*|Değer türü.|
+|* IList'| Kopyalanacağı initializer_list.|
 
 ### <a name="remarks"></a>Açıklamalar
 

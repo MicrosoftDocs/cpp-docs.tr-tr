@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2171
 ms.assetid: a80343b5-ab3f-4413-b6f1-3ce9d7e519e5
 ms.openlocfilehash: 9b51a3793f7ada131ef409ece05b866eb635b9b3
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51325776"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62174698"
 ---
 # <a name="compiler-error-c2171"></a>Derleyici Hatası C2171
 

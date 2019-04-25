@@ -1,5 +1,5 @@
 ---
-title: Uygulama Bilgileri ve Yönetimi
+title: Uygulama bilgileri ve Yönetimi
 ms.date: 11/04/2016
 f1_keywords:
 - vc.mfc.macros
@@ -7,13 +7,13 @@ helpviewer_keywords:
 - applications [MFC], managing
 ms.assetid: b72f4154-24db-4e75-bca3-6873e2459c15
 ms.openlocfilehash: 78b9ae467d3504f3922c540a3e4cd100322d8f4e
-ms.sourcegitcommit: faa42c8a051e746d99dcebe70fd4bbaf3b023ace
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57808397"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62151291"
 ---
-# <a name="application-information-and-management"></a>Uygulama Bilgileri ve Yönetimi
+# <a name="application-information-and-management"></a>Uygulama bilgileri ve Yönetimi
 
 Tek bir uygulama yazdığınızda, oluşturduğunuz [CWinApp](../../mfc/reference/cwinapp-class.md)-türetilmiş bir nesneye. Bazen bu nesneden dışında hakkında bilgi edinmek isteyebilirsiniz `CWinApp`-türetilmiş bir nesneye. Veya diğer genel "mananger'a" nesnelere erişimi gerekebilir.
 
@@ -682,7 +682,7 @@ Microsoft Foundation Class Kitaplığı çeşitli standart pencere sınıfları 
 
 Kayıtlı adı için bir sınıf tarafından `AfxRegisterWndClass` parametreleri yalnızca bağlıdır. Eğer `AfxRegisterWndClass` birden çok kez aynı parametrelerle, yalnızca ilk çağrıda bir sınıfı kaydeder. Yapılan sonraki çağrılar `AfxRegisterWndClass` ile aynı parametreleri yalnızca zaten kayıtlı classname döndürür.
 
-Eğer `AfxRegisterWndClass` her sınıf için ayrı bir pencerede sınıfı yerine aynı parametrelere sahip birden çok CWnd'den türetilen sınıflar için her sınıf aynı pencere sınıfı paylaşır. CS_CLASSDC sınıfı stili kullanılıyorsa, bu sorunlara neden olabilir. Birden çok CS_CLASSDC pencere sınıfları yerine, bir CS_CLASSDC pencere sınıfını ve aynı etki alanı denetleyicisi sınıfı paylaşan kullanan tüm C++ windows edersiniz. Bu sorunu önlemek için çağrı [AfxRegisterClass](#afxregisterclass) sınıfı kaydedilecek.
+Eğer `AfxRegisterWndClass` her sınıf için ayrı bir pencerede sınıfı yerine aynı parametrelere sahip birden çok CWnd'den türetilen sınıflar için her sınıf aynı pencere sınıfı paylaşır. CS_CLASSDC sınıfı stili kullanılıyorsa, bu sorunlara neden olabilir. Birden çok CS_CLASSDC pencere sınıfları yerine, bir CS_CLASSDC pencere sınıfı ve tüm ile biter C++ bu sınıfı kullanan windows aynı DC paylaşın. Bu sorunu önlemek için çağrı [AfxRegisterClass](#afxregisterclass) sınıfı kaydedilecek.
 
 Teknik Not başvuran [TN001: Pencere sınıfı kaydı](../../mfc/tn001-window-class-registration.md) pencere sınıfı kaydı hakkında daha fazla bilgi ve `AfxRegisterWndClass` işlevi.
 

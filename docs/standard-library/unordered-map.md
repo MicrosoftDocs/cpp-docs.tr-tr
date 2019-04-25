@@ -7,11 +7,11 @@ helpviewer_keywords:
 - unordered_map header
 ms.assetid: eb90ecb2-250a-4be1-83d2-f66b2917edde
 ms.openlocfilehash: 6ccb2c0c54f8094110d37e6dfd2c504fa8173641
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50627506"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62167601"
 ---
 # <a name="ltunorderedmapgt"></a>&lt;unordered_map&gt;
 

@@ -9,11 +9,11 @@ helpviewer_keywords:
 - sequence [MFC]
 ms.assetid: 7d868c53-a0af-4ef6-a89c-e1c03c583a53
 ms.openlocfilehash: 020c044cc0b3b96df102a5ab6625c945f1033f67
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58781347"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62308439"
 ---
 # <a name="sequence-of-operations-for-creating-activex-controls"></a>ActiveX Denetimleri Oluşturmak için İşlem Dizisi
 

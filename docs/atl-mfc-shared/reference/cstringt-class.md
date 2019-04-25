@@ -81,11 +81,11 @@ helpviewer_keywords:
 - CStringT class
 ms.assetid: 7cacc59c-425f-40f1-8f5b-6db921318ec9
 ms.openlocfilehash: 327ffc40a9b7e41004bc5aac7ecc320076de537f
-ms.sourcegitcommit: 309dc532f13242854b47759cef846de59bb807f1
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58565824"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62252582"
 ---
 # <a name="cstringt-class"></a>CStringT sınıfı
 

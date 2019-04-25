@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3231
 ms.assetid: fe5dc352-e634-45fa-9534-3da176294c98
 ms.openlocfilehash: 653f0b18737f937483f5d3e79cb99c9a55160c19
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50571970"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62173863"
 ---
 # <a name="compiler-error-c3231"></a>Derleyici Hatası C3231
 

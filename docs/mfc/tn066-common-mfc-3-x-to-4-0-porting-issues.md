@@ -9,11 +9,11 @@ helpviewer_keywords:
 - porting MFC
 ms.assetid: 88308897-8da8-496d-bdef-d34ab77cdd79
 ms.openlocfilehash: 9e1a55709381bdcb0e6513e017350e38ae44e3a0
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57273454"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62181866"
 ---
 # <a name="tn066-common-mfc-3x-to-40-porting-issues"></a>TN066: Genel MFC 3.x-4.0 bağlantı noktası oluşturma sorunları
 

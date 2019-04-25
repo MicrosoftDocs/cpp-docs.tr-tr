@@ -11,11 +11,11 @@ helpviewer_keywords:
 - MFC dialog boxes [MFC], type-safe access to controls
 ms.assetid: 67021025-dd93-4d6a-8bed-a1348fe50685
 ms.openlocfilehash: 9b8e5aef61d1a7c7277f2a6bd37b81bd156bb837
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57264163"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62181624"
 ---
 # <a name="type-safe-access-to-controls-in-a-dialog-box"></a>Bir İletişim Kutusundaki Denetimlere Tür Kullanımı Uyumlu Erişim
 

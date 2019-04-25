@@ -7,11 +7,11 @@ helpviewer_keywords:
 - const keyword [C++]
 ms.assetid: b21c0271-1ad0-40a0-b21c-5e812bba0318
 ms.openlocfilehash: 759ee503acb12f6c1a30fbbfaf87a8f66433e571
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50463251"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62154756"
 ---
 # <a name="const-c"></a>const (C++)
 

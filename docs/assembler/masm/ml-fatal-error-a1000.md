@@ -8,11 +8,11 @@ helpviewer_keywords:
 - A1000
 ms.assetid: 4fc77a83-8796-4dcf-9c37-6395d635b817
 ms.openlocfilehash: c1149bb4362995c1f63a268deab276b5887b5614
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50632055"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62178546"
 ---
 # <a name="ml-fatal-error-a1000"></a>ML Önemli Hatası A1000
 

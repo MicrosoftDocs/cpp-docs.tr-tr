@@ -9,11 +9,11 @@ helpviewer_keywords:
 - stream I/O
 ms.assetid: dc7874d3-a91b-456a-9015-4748bb358217
 ms.openlocfilehash: 8bf81d1969fcbcfd255f3d4f9878bd3aab421703
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57746259"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62304626"
 ---
 # <a name="stream-io"></a>Akış G/Ç
 

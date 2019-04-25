@@ -22,11 +22,11 @@ helpviewer_keywords:
 - GetWindowText method [MFC]
 ms.assetid: bdca2b61-6b53-4c2e-b426-8712c7a38ec0
 ms.openlocfilehash: b376edc3ee7d8abbca43da6d823e71abad99bc5d
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57279035"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62308907"
 ---
 # <a name="retrieving-data-from-the-dialog-object"></a>İletişim Nesnesinden Veriyi Geri Alma
 

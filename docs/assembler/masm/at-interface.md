@@ -7,11 +7,11 @@ helpviewer_keywords:
 - '@Interface symbol'
 ms.assetid: 266ecba9-9e96-4086-8ee4-a3d0161b6e29
 ms.openlocfilehash: 4c9ab7bc70315f725de410b7f47803cc22cb8acc
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50641760"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62179009"
 ---
 # <a name="interface"></a>@Interface
 

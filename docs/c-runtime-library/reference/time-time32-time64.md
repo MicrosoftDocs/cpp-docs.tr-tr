@@ -34,11 +34,11 @@ helpviewer_keywords:
 - time64 function
 ms.assetid: 280e00f2-2b93-4ece-94cd-e048484c6cc7
 ms.openlocfilehash: 693b70b3682876d7e6c3721f5d06aa13d31abb96
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51329156"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62155595"
 ---
 # <a name="time-time32-time64"></a>time, _time32, _time64
 

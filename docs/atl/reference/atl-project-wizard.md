@@ -8,11 +8,11 @@ helpviewer_keywords:
 - ATL Project Wizard
 ms.assetid: 564d2aaf-5b8e-4c2a-a925-ca40a283ea34
 ms.openlocfilehash: 4059961d70e6486f7417a5eff034b194d9860558
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57807799"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62261439"
 ---
 # <a name="atl-project-wizard"></a>ATL projesi Sihirbazı
 

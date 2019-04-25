@@ -13,11 +13,11 @@ helpviewer_keywords:
 - region pragma
 ms.assetid: c697f807-622f-4796-851b-68a42bbecd84
 ms.openlocfilehash: c73a90aa2be83d643b74dde4645081e89da3ff73
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59037940"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62179756"
 ---
 # <a name="region-endregion"></a>region, endregion
 

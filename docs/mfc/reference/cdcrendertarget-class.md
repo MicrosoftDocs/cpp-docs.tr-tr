@@ -21,11 +21,11 @@ helpviewer_keywords:
 - CDCRenderTarget [MFC], m_pDCRenderTarget
 ms.assetid: aa8059c9-08e6-49e4-9b8c-00fa54077a61
 ms.openlocfilehash: 70169d2b89d9ea657898f7a96dea27556023d4e2
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57268284"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62168179"
 ---
 # <a name="cdcrendertarget-class"></a>CDCRenderTarget sınıfı
 

@@ -6,11 +6,11 @@ helpviewer_keywords:
 - custom attributes, defining
 ms.assetid: af9998a5-aa12-4b94-9a43-97ce99026e29
 ms.openlocfilehash: fbb1c629f23c5d70a78d62db2a3634cbfc489967
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59034056"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62148217"
 ---
 # <a name="custom-attributes-c"></a>Özel Öznitelikler (C++)
 

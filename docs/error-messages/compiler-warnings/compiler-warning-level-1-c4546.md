@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C4546
 ms.assetid: 071e1709-3841-46c1-8e71-96109cd22041
 ms.openlocfilehash: 47dd30b3ce59254528f9500139310412393435d1
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50614385"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62151883"
 ---
 # <a name="compiler-warning-level-1-c4546"></a>Derleyici Uyarısı (düzey 1) C4546
 

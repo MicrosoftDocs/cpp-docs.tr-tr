@@ -7,11 +7,11 @@ helpviewer_keywords:
 - __readdr intrinsic
 ms.assetid: 061b05da-c85e-4052-b392-106f14bb84f1
 ms.openlocfilehash: 9d265fe75abaa7ad3cfd508613766cc3b600ee14
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59025672"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62263289"
 ---
 # <a name="readdr"></a>__readdr
 

@@ -11,11 +11,11 @@ helpviewer_keywords:
 - TN002
 ms.assetid: 553fe01d-c587-4c8d-a181-3244a15c2be9
 ms.openlocfilehash: 6d64799dc17b4b3ddc5c455333b10282e4748b09
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57282018"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62306200"
 ---
 # <a name="tn002-persistent-object-data-format"></a>TN002: Kalıcı nesne veri biçimi
 
