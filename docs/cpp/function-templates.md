@@ -7,11 +7,11 @@ helpviewer_keywords:
 - function templates, about function templates
 ms.assetid: 59b56a4b-0689-4161-9c07-25021562e2a7
 ms.openlocfilehash: 77f3d1ee704c8094fd3bd94597311976e54ba6a6
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50493528"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62154177"
 ---
 # <a name="function-templates"></a>İşlev Şablonları
 

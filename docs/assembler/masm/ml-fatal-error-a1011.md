@@ -8,11 +8,11 @@ helpviewer_keywords:
 - A1011
 ms.assetid: 7fbf092d-4189-4330-a884-dfa2268fc3dd
 ms.openlocfilehash: 591755a1d7066d8251f61d2a22b9601a9ccb9dcb
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50520204"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62178572"
 ---
 # <a name="ml-fatal-error-a1011"></a>ML Önemli Hatası A1011
 

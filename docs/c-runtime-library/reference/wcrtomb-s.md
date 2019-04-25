@@ -25,11 +25,11 @@ helpviewer_keywords:
 - characters, converting
 ms.assetid: 9a8a1bd0-1d60-463d-a3a2-d83525eaf656
 ms.openlocfilehash: 7fe7fba861eecec562928cf381973f62a4db60fb
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50522478"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62155478"
 ---
 # <a name="wcrtombs"></a>wcrtomb_s
 

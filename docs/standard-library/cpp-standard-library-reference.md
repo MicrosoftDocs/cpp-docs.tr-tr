@@ -8,11 +8,11 @@ helpviewer_keywords:
 - libraries, Standard C++
 ms.assetid: a37d3ba3-58af-47c7-9ee2-441ccd7b77ee
 ms.openlocfilehash: ea8bae08def17093a2e663bb21dfe617ae851651
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57752304"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62210755"
 ---
 # <a name="c-standard-library-reference"></a>C++ Standart Kitaplığı Başvurusu
 

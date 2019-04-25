@@ -15,11 +15,11 @@ helpviewer_keywords:
 - types [C++], alignment requirements
 ms.assetid: acb1eed7-6398-40bd-b0c5-684ceb64afbc
 ms.openlocfilehash: 96c85db83c133af6f1712baa8597ed3360277854
-ms.sourcegitcommit: ff3cbe4235b6c316edcc7677f79f70c3e784ad76
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/19/2018
-ms.locfileid: "53627469"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62258258"
 ---
 # <a name="alignof-operator"></a>__alignof İşleci
 

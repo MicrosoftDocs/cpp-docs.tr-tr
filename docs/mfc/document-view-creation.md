@@ -13,11 +13,11 @@ helpviewer_keywords:
 - tables [MFC], objects each MFC object creates
 ms.assetid: bda14f41-ed50-439d-af9e-591174e7dd64
 ms.openlocfilehash: b5f9b783e8e14744a816fd63b327ed95d9da8e8a
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57304957"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62240799"
 ---
 # <a name="documentview-creation"></a>Belge/Görünüm Oluşturma
 

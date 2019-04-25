@@ -31,11 +31,11 @@ helpviewer_keywords:
 - threading [C++], terminating threads
 ms.assetid: 18a91f2f-659e-40b4-b266-ec12dcf2abf5
 ms.openlocfilehash: 2f54ca9c4cd5e863ca960f1d9c3634b85e7896dd
-ms.sourcegitcommit: c85c8a1226d8fbbaa29f4691ed719f8e6cc6575c
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54893308"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62288829"
 ---
 # <a name="endthread-endthreadex"></a>_endthread, _endthreadex
 
@@ -67,7 +67,7 @@ void _endthreadex(
 Win32 gibi **ExitThread** API **_endthreadex** iş parçacığı işleyicisini kapatmaz. Bu nedenle, kullandığınız zaman **_beginthreadex** ve **_endthreadex**, iş parçacığı işleyicisini Win32 çağırarak kapatmalısınız **CloseHandle** API.
 
 > [!NOTE]
-> **_endthread** ve **_endthreadex** değil çağrılacak iş parçacığında C++ yıkıcıları bekleyen neden.
+> **_endthread** ve **_endthreadex** neden C++ bekleyen yok ediciler değil çağrılacak bir iş parçacığı.
 
 ## <a name="requirements"></a>Gereksinimler
 

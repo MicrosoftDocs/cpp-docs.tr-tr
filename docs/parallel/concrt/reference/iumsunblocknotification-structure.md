@@ -10,11 +10,11 @@ helpviewer_keywords:
 - IUMSUnblockNotification structure
 ms.assetid: eaca9529-c1cc-472b-8ec6-722a1ff0fa2a
 ms.openlocfilehash: bdf083e2ad418269e49e53dc164f2a60f693d5d6
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57261394"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62180225"
 ---
 # <a name="iumsunblocknotification-structure"></a>IUMSUnblockNotification Yapısı
 

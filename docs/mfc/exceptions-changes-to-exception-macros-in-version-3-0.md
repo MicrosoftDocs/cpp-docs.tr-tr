@@ -8,11 +8,11 @@ helpviewer_keywords:
 - THROW_LAST macro [MFC]
 ms.assetid: 3aa20d8c-229e-449c-995c-ab879eac84bc
 ms.openlocfilehash: fb51ad91e001f0ed153bf4fdb5aa598ab5ba5042
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57291229"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62173290"
 ---
 # <a name="exceptions-changes-to-exception-macros-in-version-30"></a>Özel durumlar: Sürüm 3.0 özel durum makrolarındaki değişiklikler
 

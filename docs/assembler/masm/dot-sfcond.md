@@ -7,11 +7,11 @@ helpviewer_keywords:
 - .SFCOND directive
 ms.assetid: 3a1ce2d0-cf18-4f08-b4cf-b72cded4d164
 ms.openlocfilehash: a18210c1ea45d57b7a2ee642533532ff737cae4f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50444960"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62178208"
 ---
 # <a name="sfcond"></a>.SFCOND
 

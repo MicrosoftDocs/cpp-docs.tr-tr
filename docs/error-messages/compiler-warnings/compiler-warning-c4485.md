@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C4485
 ms.assetid: a6f2b437-ca93-4dcd-b9cb-df415e10df86
 ms.openlocfilehash: b5afb829485e0e9533a14e818e6d6785f268a83b
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59776371"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62311334"
 ---
 # <a name="compiler-warning-c4485"></a>Derleyici Uyarısı C4485
 

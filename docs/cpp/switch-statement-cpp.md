@@ -11,11 +11,11 @@ helpviewer_keywords:
 - default keyword [C++]
 ms.assetid: 6c3f3ed3-5593-463c-8f4b-b33742b455c6
 ms.openlocfilehash: 67918b7df747d3bee923da500729e60b4fe04336
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51328857"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62267095"
 ---
 # <a name="switch-statement-c"></a>switch Deyimi (C++)
 
@@ -106,7 +106,7 @@ int main()
 }
 ```
 
-**Visual Studio 2017 sürüm 15.3 ve üzeri** (bulunan [/Std: c ++ 17](../build/reference/std-specify-language-standard-version.md)): switch ifadesi tanıtır ve kapsamı switch ifadesinin blokla sınırlı bir değişkeni:
+**Visual Studio 2017 sürüm 15.3 ve üzeri** (bulunan [/Std: c ++ 17](../build/reference/std-specify-language-standard-version.md)):  Switch deyimi tanıtır ve kapsamı switch ifadesinin blokla sınırlı bir değişken başlatın:
 
 ```cpp
     switch (Gadget gadget(args); auto s = gadget.get_status())

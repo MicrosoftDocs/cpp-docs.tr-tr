@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C4794
 ms.assetid: badc9c36-fa1a-4fec-929b-7bfda7a7b79f
 ms.openlocfilehash: d44e3af88de9457fdc5c2df905ccbae22d3562da
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50464083"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62280379"
 ---
 # <a name="compiler-warning-level-1-c4794"></a>Derleyici Uyarısı (düzey 1) C4794
 

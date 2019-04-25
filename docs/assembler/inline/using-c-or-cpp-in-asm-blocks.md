@@ -15,11 +15,11 @@ helpviewer_keywords:
 - __asm keyword [C++], C/C++ elements in
 ms.assetid: ae8b2b52-6b75-42e3-ac0c-ad02d922ed97
 ms.openlocfilehash: 0949eba769bed33da8fe39bb41500a2ba02af224
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50602156"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62166561"
 ---
 # <a name="using-c-or-c-in-asm-blocks"></a>__asm Bloklarında C veya C++ Kullanma
 
@@ -47,7 +47,7 @@ Bir `__asm` blok aşağıdaki dil öğelerini kullanabilirsiniz:
 
 - [__asm Bloklarında İşleçler Kullanma](../../assembler/inline/using-operators-in-asm-blocks.md)
 
-- [__Asm bloklarında C veya C++ Symbols_in kullanma](../../assembler/inline/using-c-or-cpp-symbols-in-asm-blocks.md)
+- [C kullanarak veya C++ Symbols_in __asm blokları](../../assembler/inline/using-c-or-cpp-symbols-in-asm-blocks.md)
 
 - [__asm Bloklarında C veya C++ Verilerine Erişme](../../assembler/inline/accessing-c-or-cpp-data-in-asm-blocks.md)
 

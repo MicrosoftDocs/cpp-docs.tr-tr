@@ -8,11 +8,11 @@ helpviewer_keywords:
 - NOT operator
 ms.assetid: d68d44fd-f92f-4b65-8d36-96de03e1b4e5
 ms.openlocfilehash: b864294fa5d01f5cb231e0d26ac8e49cd9340ae5
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50489953"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62176557"
 ---
 # <a name="operator-not"></a>NOT işleci
 

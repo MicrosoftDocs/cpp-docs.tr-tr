@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2817
 ms.assetid: bca2e55a-8d86-4ddf-ba2b-4568f3bb776e
 ms.openlocfilehash: 43cb38e579c335835ae391826ffd02d2c596a252
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50484532"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62175218"
 ---
 # <a name="compiler-error-c2817"></a>Derleyici Hatası C2817
 

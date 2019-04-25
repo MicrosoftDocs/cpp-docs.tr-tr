@@ -8,11 +8,11 @@ helpviewer_keywords:
 - images [MFC], drawing
 ms.assetid: 2f6063fb-1c28-45f8-a333-008c064db11c
 ms.openlocfilehash: e2058c727620c9aae4ccd9a3fbeaae02c78ce8c6
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57260536"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62262807"
 ---
 # <a name="drawing-images-from-an-image-list"></a>Resim Listesinden Resim Çizme
 

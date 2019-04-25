@@ -21,11 +21,11 @@ helpviewer_keywords:
 - CDragListBox [MFC], ItemFromPt
 ms.assetid: fee20b42-60ae-4aa9-83f9-5a3d9b96e33b
 ms.openlocfilehash: d8afc5b14f5f52ca7a4d28a3d3c3c5440b7c819f
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58781594"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62164052"
 ---
 # <a name="cdraglistbox-class"></a>CDragListBox sınıfı
 

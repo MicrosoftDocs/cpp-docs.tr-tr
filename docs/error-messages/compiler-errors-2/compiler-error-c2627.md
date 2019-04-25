@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2627
 ms.assetid: 7fc6c5ac-c7c9-4f0b-ad52-f52252526458
 ms.openlocfilehash: dc976a0c16d19d1fd2340676e43eb71903163aa5
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50659065"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62222864"
 ---
 # <a name="compiler-error-c2627"></a>Derleyici Hatası C2627
 

@@ -9,11 +9,11 @@ helpviewer_keywords:
 - /HEADERS dumpbin option
 ms.assetid: 24d9a770-d44e-48b6-b744-143e4fff7748
 ms.openlocfilehash: 9a80044b96a0e0d73e0e25435a292a786de81531
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57817939"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62292035"
 ---
 # <a name="headers"></a>/HEADERS
 

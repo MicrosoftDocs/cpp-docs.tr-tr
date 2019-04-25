@@ -7,11 +7,11 @@ helpviewer_keywords:
 - OLE DB consumer templates [C++], data sources
 ms.assetid: 6ee52216-e082-4869-a1d6-ce561cfb76e5
 ms.openlocfilehash: 2c11230d106b50e8120dfa9f4e283e97700d2739
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59040114"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62176006"
 ---
 # <a name="data-sources-and-sessions"></a>Veri Kaynakları ve Oturumlar
 

@@ -6,11 +6,11 @@ helpviewer_keywords:
 - aggregate objects [C++]
 ms.assetid: 7125bb8e-b269-4b50-9bba-295b467a54cc
 ms.openlocfilehash: 2eec7a801f9fe16bc48fc888d10ce413ec7e79db
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57265437"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62223512"
 ---
 # <a name="aggregation"></a>Toplama
 

@@ -8,11 +8,11 @@ helpviewer_keywords:
 - CProgressCtrl class [MFC], styles
 ms.assetid: 39eb8081-bc20-4552-91b9-e7cdd1b7d8ae
 ms.openlocfilehash: 3adbd32456b1375bd2dc8574220e083ca3d83ee9
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57296338"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62306827"
 ---
 # <a name="styles-for-the-progress-control"></a>İlerleme Denetimi için Stiller
 

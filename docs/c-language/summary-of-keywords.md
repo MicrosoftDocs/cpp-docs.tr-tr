@@ -3,11 +3,11 @@ title: Anahtar Sözcüklerin Özeti
 ms.date: 11/04/2016
 ms.assetid: 341d8297-03eb-4351-9ed0-138ec59b375c
 ms.openlocfilehash: 9dc32aa735b6eb6e3525e2fff64b06ced474b6af
-ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56149914"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62157701"
 ---
 # <a name="summary-of-keywords"></a>Anahtar Sözcüklerin Özeti
 

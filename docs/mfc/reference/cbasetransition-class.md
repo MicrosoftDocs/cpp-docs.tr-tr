@@ -45,11 +45,11 @@ helpviewer_keywords:
 - CBaseTransition [MFC], m_type
 ms.assetid: dfe84007-bbc5-43b7-b5b8-fae9145573bf
 ms.openlocfilehash: 37bf536403d0edfc16b098929a4758a6c6958cf1
-ms.sourcegitcommit: 309dc532f13242854b47759cef846de59bb807f1
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58565915"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62164156"
 ---
 # <a name="cbasetransition-class"></a>CBaseTransition sınıfı
 

@@ -7,11 +7,11 @@ helpviewer_keywords:
 - D9028
 ms.assetid: 03852b51-fa59-4114-ab1f-2af0509119af
 ms.openlocfilehash: 007c0a9e9a0f51740b1d6b668905fa20d7ef2964
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59776653"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62214057"
 ---
 # <a name="command-line-warning-d9028"></a>Komut Satırı Uyarısı D9028
 

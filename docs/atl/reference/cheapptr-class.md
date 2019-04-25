@@ -11,11 +11,11 @@ helpviewer_keywords:
 - CHeapPtr class
 ms.assetid: e5c5bfd4-9bf1-4164-8a83-8155fe253454
 ms.openlocfilehash: 8cb35139e707d81a53edb762a2b7fc2ab41ff247
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57296065"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62258682"
 ---
 # <a name="cheapptr-class"></a>CHeapPtr sınıfı
 

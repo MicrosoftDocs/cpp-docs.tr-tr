@@ -7,11 +7,11 @@ helpviewer_keywords:
 - Description method [C++]
 ms.assetid: 88191e24-4ee8-44a6-8c4c-3758e22e0548
 ms.openlocfilehash: a517c40e9adfbda2d790ce41a48ccf8658bcd3e0
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50544397"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62155117"
 ---
 # <a name="comerrordescription"></a>_com_error::Description
 

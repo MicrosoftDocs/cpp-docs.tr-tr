@@ -14,11 +14,11 @@ helpviewer_keywords:
 - EH constants
 ms.assetid: e1870f41-be9e-46a3-a2ea-830dfbaa18fb
 ms.openlocfilehash: 35676d43e5be0a688956dc6fcf1ad7d364e93cb1
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57739483"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62289851"
 ---
 # <a name="exception-handling-constants"></a>Özel Durum İşleme Sabitleri
 

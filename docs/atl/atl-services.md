@@ -8,11 +8,11 @@ helpviewer_keywords:
 - ATL services
 ms.assetid: 8c09d1a8-7548-4d2c-947c-9d795a81659b
 ms.openlocfilehash: 052169154a62cbd07a82f08087fc2c2db8ae46c5
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57819070"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62251921"
 ---
 # <a name="atl-services"></a>ATL Hizmetleri
 

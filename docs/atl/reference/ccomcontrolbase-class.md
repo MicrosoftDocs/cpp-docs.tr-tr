@@ -81,11 +81,11 @@ helpviewer_keywords:
 - CComControlBase class
 ms.assetid: 3d1bf022-acf2-4092-8283-ff8cee6332f3
 ms.openlocfilehash: 698912100244189bdec99fa3726a063eb2e907a7
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57298223"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62260116"
 ---
 # <a name="ccomcontrolbase-class"></a>CComControlBase Class
 

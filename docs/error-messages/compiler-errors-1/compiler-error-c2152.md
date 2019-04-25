@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2152
 ms.assetid: a9ea2b0c-d55d-41c7-ba9f-dd75592ffc8a
 ms.openlocfilehash: 072b5f13a639b1bd3d8e028fcd6c811012bfa2bd
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50479956"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62175244"
 ---
 # <a name="compiler-error-c2152"></a>Derleyici Hatası C2152
 

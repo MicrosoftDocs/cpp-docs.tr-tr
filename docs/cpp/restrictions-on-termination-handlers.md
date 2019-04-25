@@ -7,11 +7,11 @@ helpviewer_keywords:
 - try-catch keyword [C++], termination handlers
 ms.assetid: 8b1cb481-303f-4e79-b409-57a002a9fa9e
 ms.openlocfilehash: 7b092ee8682dfeef0c8151c56544e36427f40da0
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50628234"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62244495"
 ---
 # <a name="restrictions-on-termination-handlers"></a>Sonlandırma İşleyicileri Kısıtlamaları
 

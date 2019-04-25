@@ -7,11 +7,11 @@ helpviewer_keywords:
 - is_nothrow_destructible
 ms.assetid: 0bbd8a28-e312-4d72-bd28-aac027f974d3
 ms.openlocfilehash: 366b40af45c57d058d918c4c2f21d1b2ba486d35
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50656748"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62217332"
 ---
 # <a name="isnothrowdestructible-class"></a>is_nothrow_destructible sınıfı
 

@@ -8,11 +8,11 @@ helpviewer_keywords:
 - tool tips [MFC], enabling
 ms.assetid: 06b7c889-7722-4ce6-8b88-9efa50fe6369
 ms.openlocfilehash: 892ed76ef7e021544505600110cd2569d6078312
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57285951"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62174958"
 ---
 # <a name="enabling-tool-tips"></a>Araç İpuçlarını Etkinleştirme
 

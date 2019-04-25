@@ -10,11 +10,11 @@ helpviewer_keywords:
 - __identifer keyword [C++]
 ms.assetid: d7ca94a8-f785-41ce-9f73-d3c4fd508489
 ms.openlocfilehash: f87c2401bcc964229d3c0b3cf7119a09553cc2f2
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58774769"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62216530"
 ---
 # <a name="keywords-c"></a>Anahtar sözcükler (C++)
 

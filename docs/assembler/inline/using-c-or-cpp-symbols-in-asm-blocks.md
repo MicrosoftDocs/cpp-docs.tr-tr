@@ -9,11 +9,11 @@ helpviewer_keywords:
 - Visual C++, in __asm blocks
 ms.assetid: 0758ffdc-dfe9-41c8-a5e1-fd395bcac328
 ms.openlocfilehash: fc22af8ec04d616eb8f5566b118e19c405605401
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50552522"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62166548"
 ---
 # <a name="using-c-or-c-symbols-in-asm-blocks"></a>__asm Bloklarında C veya C++ Simgelerini Kullanma
 

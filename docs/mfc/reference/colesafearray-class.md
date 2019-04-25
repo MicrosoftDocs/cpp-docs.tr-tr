@@ -61,11 +61,11 @@ helpviewer_keywords:
 - COleSafeArray [MFC], Unlock
 ms.assetid: f45a5224-5f48-40ec-9ddd-287ef9740150
 ms.openlocfilehash: 0833dca9311689063c2ebeadd3942d9f5ce376e2
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57267166"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62224429"
 ---
 # <a name="colesafearray-class"></a>COleSafeArray sınıfı
 

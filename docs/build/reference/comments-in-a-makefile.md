@@ -5,11 +5,11 @@ helpviewer_keywords:
 - makefiles, comments
 ms.assetid: 76fd9e3d-5966-47f4-a091-c9e80b232b49
 ms.openlocfilehash: c66819210d2112f9a68243ed4d3b34f491caae9d
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57824040"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62294362"
 ---
 # <a name="comments-in-a-makefile"></a>Derleme Görevleri Dosyası Açıklamaları
 

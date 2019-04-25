@@ -9,11 +9,11 @@ helpviewer_keywords:
 - dialog bars [MFC], using with rebar bands
 ms.assetid: e528cea0-6b81-4bdf-9643-7c03b6176590
 ms.openlocfilehash: 33ca3d0a7bf2e60511ea0048ad91b1f0930a2894
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57287181"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62180524"
 ---
 # <a name="using-a-dialog-bar-with-a-rebar-control"></a>Rebar Denetimiyle Birlikte Bir İletişim Çubuğu Kullanma
 

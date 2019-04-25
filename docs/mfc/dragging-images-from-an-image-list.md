@@ -8,11 +8,11 @@ helpviewer_keywords:
 - images [MFC], dragging from image lists
 ms.assetid: af691db8-e4f0-4046-b7b9-9acc68d3713d
 ms.openlocfilehash: ba56a38cfc5ccf808c7d95f24666fff0313ecc43
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57294518"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62262625"
 ---
 # <a name="dragging-images-from-an-image-list"></a>Görüntü Listesinden Görüntü Sürükleme
 

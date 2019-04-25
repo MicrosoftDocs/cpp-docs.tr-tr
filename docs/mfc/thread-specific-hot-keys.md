@@ -8,11 +8,11 @@ helpviewer_keywords:
 - access keys [MFC], hot keys
 ms.assetid: b6021274-1498-483f-bcbf-ba5723547cc8
 ms.openlocfilehash: a54aa878b0160132157879127f8335c951e91785
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57290995"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62306391"
 ---
 # <a name="thread-specific-hot-keys"></a>İş Parçacığına Özgü Sık Kullanılan Tuşlar
 

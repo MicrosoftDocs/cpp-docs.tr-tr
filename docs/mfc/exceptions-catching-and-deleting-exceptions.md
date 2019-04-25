@@ -10,11 +10,11 @@ helpviewer_keywords:
 - execution [MFC], returns from within catch block
 ms.assetid: 7c233ff0-89de-4de0-a68a-9e9cdb164311
 ms.openlocfilehash: 511850c3c17a4eb70529202f4b0c2b36132fc8ff
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57287210"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62173302"
 ---
 # <a name="exceptions-catching-and-deleting-exceptions"></a>Özel durumlar: Yakalama ve özel durumları silme
 

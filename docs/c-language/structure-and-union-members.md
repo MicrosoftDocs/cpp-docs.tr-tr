@@ -12,11 +12,11 @@ helpviewer_keywords:
 - structure member selection
 ms.assetid: bb1fe304-af49-4f98-808d-afdc99b3e319
 ms.openlocfilehash: db47362096506cf1c00f1ac566565b894253d798
-ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56151370"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62157857"
 ---
 # <a name="structure-and-union-members"></a>Yapı ve Birleşim Üyeleri
 

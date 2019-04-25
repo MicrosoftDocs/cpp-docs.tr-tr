@@ -37,11 +37,11 @@ helpviewer_keywords:
 - erfc function
 ms.assetid: 144d90d3-e437-41c2-a659-cd57596023b5
 ms.openlocfilehash: 4270d8366686ea282a4dd37741d9f8e37991b88f
-ms.sourcegitcommit: e98671a4f741b69d6277da02e6b4c9b1fd3c0ae5
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/04/2019
-ms.locfileid: "55702667"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62289209"
 ---
 # <a name="erf-erff-erfl-erfc-erfcf-erfcl"></a>erf, erff, erfl, erfc, erfcf, erfcl
 

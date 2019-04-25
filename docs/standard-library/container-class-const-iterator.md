@@ -5,11 +5,11 @@ helpviewer_keywords:
 - const_iterator method
 ms.assetid: e68c9e30-fc4c-4c2e-8724-06d1fe8b8ccb
 ms.openlocfilehash: 9c229f496084b289aa006b61dde7c8030191a6c6
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50648623"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62211676"
 ---
 # <a name="container-classconstiterator"></a>Kapsayıcı Sınıfı::const_iterator
 

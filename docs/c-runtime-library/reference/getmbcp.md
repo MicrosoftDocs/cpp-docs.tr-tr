@@ -25,11 +25,11 @@ helpviewer_keywords:
 - getmbcp function
 ms.assetid: 2db202d4-5c3d-4871-a0b8-ceb0b79ee7bb
 ms.openlocfilehash: 4cea84fc771a1d847814d002294391256efae57b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50620460"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62157649"
 ---
 # <a name="getmbcp"></a>_getmbcp
 

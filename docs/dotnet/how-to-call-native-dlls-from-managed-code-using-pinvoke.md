@@ -9,11 +9,11 @@ helpviewer_keywords:
 - data marshaling [C++], calling native DLLs
 ms.assetid: 3273eb4b-38d1-4619-92a6-71bda542be72
 ms.openlocfilehash: e51e094cc013250fc254a09e279745f1f9c108ac
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57748547"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62222817"
 ---
 # <a name="how-to-call-native-dlls-from-managed-code-using-pinvoke"></a>Nasıl yapılır: Yönetilen Koddan PInvoke kullanarak yerel DLL'leri Çağırma
 

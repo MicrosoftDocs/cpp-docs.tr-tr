@@ -10,11 +10,11 @@ helpviewer_keywords:
 - standard controls
 ms.assetid: a6f84315-7007-4e0e-8576-78be81254802
 ms.openlocfilehash: 5abdcc87dba937938ffa3643d19ff69431f62af4
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57300382"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62206950"
 ---
 # <a name="deriving-controls-from-a-standard-control"></a>Standart Bir Denetimden Denetim Türetme
 

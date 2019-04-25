@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C4680
 ms.assetid: 6e043f4c-c601-4b77-8130-920cff1d912e
 ms.openlocfilehash: 9130fa2665452b85c5ec83eef0b3d1d618c995a3
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50466715"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62226875"
 ---
 # <a name="compiler-warning-level-4-c4680"></a>Derleyici Uyarısı (düzey 4) C4680
 

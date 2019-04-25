@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C4042
 ms.assetid: e4bd861b-1194-426b-bf79-68c5b021eb0a
 ms.openlocfilehash: 99f4f45aad82aa9898dad4cffb60b8e3311ddc9f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50576838"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62152149"
 ---
 # <a name="compiler-warning-level-1-c4042"></a>Derleyici Uyarısı (düzey 1) C4042
 

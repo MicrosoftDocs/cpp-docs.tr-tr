@@ -29,11 +29,11 @@ f1_keywords:
 - amp_short_vectors/Concurrency::graphics::float_2::g
 ms.assetid: b3ebd48e-f8c8-4f00-a640-357f702f0cae
 ms.openlocfilehash: 94a0936c1e5630ae53af9d9386d3c9248061ed71
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57299900"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62180279"
 ---
 # <a name="float2-class"></a>float_2 Sınıfı
 

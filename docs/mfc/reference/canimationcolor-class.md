@@ -31,11 +31,11 @@ helpviewer_keywords:
 - CAnimationColor [MFC], m_rValue
 ms.assetid: 88bfabd4-efeb-4652-87e8-304253d8e48c
 ms.openlocfilehash: ee6003a22db78c2a510579c3d717fec887f8a6ad
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57304346"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62151181"
 ---
 # <a name="canimationcolor-class"></a>CAnimationColor sınıfı
 

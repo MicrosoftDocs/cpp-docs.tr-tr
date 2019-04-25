@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C1309
 ms.assetid: a95363d6-a4f3-45fb-9690-aa7e552093b7
 ms.openlocfilehash: 9945a36f1bdd9413cb4d161bb7ee4c6af95a71f6
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57813506"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62266510"
 ---
 # <a name="fatal-error-c1309"></a>Önemli hata C1309
 

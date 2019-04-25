@@ -7,11 +7,11 @@ helpviewer_keywords:
 - NMAKE program, inference rules
 ms.assetid: caff320f-fb07-4eea-80c3-a6a2133a8492
 ms.openlocfilehash: 0c1db9150c3b2c36c35e6802bfcd639af45bdc82
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59035708"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62291281"
 ---
 # <a name="inference-rules"></a>Çıkarsama Kuralları
 

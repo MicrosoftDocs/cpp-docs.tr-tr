@@ -9,11 +9,11 @@ helpviewer_keywords:
 - interface struct keyword
 ms.assetid: 3ccea701-f50b-4da7-ad6b-f0ee1203e2b9
 ms.openlocfilehash: 60e8965e3ef2538554d8c664b35bd0849bd5e69e
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59035858"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62254566"
 ---
 # <a name="interface-class--ccli-and-ccx"></a>arabirim sınıfı (C++/CLI ve C++/CX)
 

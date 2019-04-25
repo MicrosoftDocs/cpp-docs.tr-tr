@@ -7,11 +7,11 @@ helpviewer_keywords:
 - GetActiveObject method [C++]
 ms.assetid: 2fa94853-0410-4620-91f2-136dae923f9f
 ms.openlocfilehash: 84e43de9c40baa3c596c68ed7739471c059cbac7
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50484506"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62154857"
 ---
 # <a name="comptrtgetactiveobject"></a>_com_ptr_t::GetActiveObject
 

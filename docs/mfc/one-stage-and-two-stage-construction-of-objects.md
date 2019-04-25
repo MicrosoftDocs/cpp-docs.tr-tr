@@ -8,11 +8,11 @@ helpviewer_keywords:
 - one-stage and two-stage construction of objects [MFC]
 ms.assetid: 5a1c410c-4a4b-4dd9-a2ec-ced831aa7f21
 ms.openlocfilehash: 871db7abd2682d557bf2e80e9cb97624f0dc53a6
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57263643"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62160165"
 ---
 # <a name="one-stage-and-two-stage-construction-of-objects"></a>Nesnelerin Tek Aşamalı ve İki Aşamalı Yapımı
 

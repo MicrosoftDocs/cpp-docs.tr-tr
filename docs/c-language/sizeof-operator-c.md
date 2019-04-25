@@ -7,16 +7,15 @@ helpviewer_keywords:
 - sizeof operator
 ms.assetid: 70826d03-3451-41e4-bebb-a820ae66d53f
 ms.openlocfilehash: 0bc0de5481cade10f89634d9e4ec78f4ec7b09f6
-ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56149563"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62158131"
 ---
 # <a name="sizeof-operator-c"></a>sizeof İşleci (C)
 
-
-  `sizeof` işleci, işlenen türünde bir nesneyi depolamak için gereken depolama miktarını bayt cinsinden verir. Bu işleç, programlarınızda makine bağımlı veri boyutları belirtmekten kaçının olanak tanır.
+`sizeof` işleci, işlenen türünde bir nesneyi depolamak için gereken depolama miktarını bayt cinsinden verir. Bu işleç, programlarınızda makine bağımlı veri boyutları belirtmekten kaçının olanak tanır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -29,11 +28,9 @@ sizeof ( type-name )
 
 İşlenen, ya da bir tanımlayıcıdır bir *tekli ifade*, ya da bir tür atama ifadesidir (parantez içine alınmış diğer bir deyişle, bir tür belirleyici). *Tekli ifade* bir bit alanı nesnesini, tamamlanmamış bir türü veya bir işlev göstergesini gösteremez. Sonuç, işaretsiz bir tamsayı sabitidir. Standart üstbilgi STDDEF. Bu türü olarak H tanımlar **size_t**.
 
+`sizeof` işlecini bir dizi tanımlayıcısına uyguladığınızda, sonuç dizi tanımlayıcısı tarafından temsil edilen işaretçinin boyutu değil, tüm dizinin boyutudur.
 
-  `sizeof` işlecini bir dizi tanımlayıcısına uyguladığınızda, sonuç dizi tanımlayıcısı tarafından temsil edilen işaretçinin boyutu değil, tüm dizinin boyutudur.
-
-
-  `sizeof` işlecini bir yapıya, birleşim türü adına veya bir yapı ya da birleşim türünün tanımlayıcısına uyguladığınızda; sonuç, iç ve sondaki doldurma dahil olmak üzere, yapı veya birleşimdeki bayt sayısıdır. Bu boyut, yapı veya bellek sınırları üzerindeki birleşim üyelerini hizalamak için kullanılan iç ve sondaki doldurmayı içerebilir. Bu şekilde, sonuç tek tek üyelerin depolama gereksinimlerini toplayarak hesaplanan boyuta karşılık gelmeyebilir.
+`sizeof` işlecini bir yapıya, birleşim türü adına veya bir yapı ya da birleşim türünün tanımlayıcısına uyguladığınızda; sonuç, iç ve sondaki doldurma dahil olmak üzere, yapı veya birleşimdeki bayt sayısıdır. Bu boyut, yapı veya bellek sınırları üzerindeki birleşim üyelerini hizalamak için kullanılan iç ve sondaki doldurmayı içerebilir. Bu şekilde, sonuç tek tek üyelerin depolama gereksinimlerini toplayarak hesaplanan boyuta karşılık gelmeyebilir.
 
 Boyutsuz bir dizi bir yapının son öğesi ise, `sizeof` işleci dizi olmadan yapının boyutunu döndürür.
 

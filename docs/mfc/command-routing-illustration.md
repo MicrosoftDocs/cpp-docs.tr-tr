@@ -7,11 +7,11 @@ helpviewer_keywords:
 - command routing [MFC], OnCmdMsg handler
 ms.assetid: 4b7b4741-565f-4878-b076-fd85c670f87f
 ms.openlocfilehash: 56d131151f2284f12a3b46a9acd3cfbd3c8b0f47
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57304645"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62164884"
 ---
 # <a name="command-routing-illustration"></a>Komut Yönlendirme Çizimi
 

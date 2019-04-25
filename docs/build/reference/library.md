@@ -7,11 +7,11 @@ helpviewer_keywords:
 - LIBRARY .def file statement
 ms.assetid: 1d7ccc92-e088-4ef7-9ef0-25c3862cc051
 ms.openlocfilehash: b43f269726e8925abeefd41aab0edfd57b071035
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57811790"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62291099"
 ---
 # <a name="library"></a>LIBRARY
 

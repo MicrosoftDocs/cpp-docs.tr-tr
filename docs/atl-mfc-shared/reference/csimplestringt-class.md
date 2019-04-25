@@ -37,11 +37,11 @@ helpviewer_keywords:
 - CSimpleStringT class
 ms.assetid: 15814fcb-5b8f-4425-a97e-3b61fc9b48d8
 ms.openlocfilehash: 1ec28ed5b2f5428cabcf7570c7ac53904e9a64f0
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57748235"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62252644"
 ---
 # <a name="csimplestringt-class"></a>CSimpleStringT sınıfı
 

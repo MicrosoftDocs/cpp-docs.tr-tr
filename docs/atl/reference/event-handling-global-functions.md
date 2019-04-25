@@ -8,11 +8,11 @@ helpviewer_keywords:
 - global functions, event handling
 ms.assetid: fd674470-3def-47c3-be1c-894fa85f13e8
 ms.openlocfilehash: bb109c63b497420ad6e797cd8e0b366ce4dc0475
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57292230"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62276349"
 ---
 # <a name="event-handling-global-functions"></a>Olay işleme genel işlevleri
 

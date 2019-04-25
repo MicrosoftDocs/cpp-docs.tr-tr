@@ -8,11 +8,11 @@ helpviewer_keywords:
 - double data type
 ms.assetid: 17c85b24-1475-4d41-a03c-ddf2d6561d34
 ms.openlocfilehash: 43e6cc444f4d6a973fc58b5ce550e468066aca1b
-ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56151865"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62290739"
 ---
 # <a name="type-double"></a>Tür double
 

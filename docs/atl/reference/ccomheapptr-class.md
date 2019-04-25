@@ -9,11 +9,11 @@ helpviewer_keywords:
 - CComHeapPtr class
 ms.assetid: bd08b53d-da2b-43ab-a79c-e7c8dbbc5994
 ms.openlocfilehash: ace8dbb174bd6585e61bd941a60dad28296af72a
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57273261"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62246385"
 ---
 # <a name="ccomheapptr-class"></a>CComHeapPtr sınıfı
 

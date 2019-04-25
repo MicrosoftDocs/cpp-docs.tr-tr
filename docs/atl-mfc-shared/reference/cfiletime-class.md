@@ -21,11 +21,11 @@ helpviewer_keywords:
 - shared classes, CFileTime
 ms.assetid: 1a358a65-1383-4124-b0d4-59b026e6860f
 ms.openlocfilehash: 07b888b031a38dc2f09404a14e729e26b3eaa019
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57746103"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62235139"
 ---
 # <a name="cfiletime-class"></a>CFileTime sınıfı
 

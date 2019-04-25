@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3869
 ms.assetid: 85b2ad72-95c1-4ed6-9761-6ef66c3802b7
 ms.openlocfilehash: 1a3d0d754557bbc811d1017ed1491181333e82dc
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59776476"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62242974"
 ---
 # <a name="compiler-error-c3869"></a>Derleyici Hatası C3869
 

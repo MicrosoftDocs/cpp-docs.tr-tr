@@ -9,11 +9,11 @@ helpviewer_keywords:
 - operator SECTIONREL
 ms.assetid: db033a9d-b029-48dd-a010-d19e3a9d1af2
 ms.openlocfilehash: 6908d8a0d21e601217b0dea34ae1f2f7f01dd1ce
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50473456"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62176349"
 ---
 # <a name="operator-sectionrel"></a>SECTIONREL işleci
 

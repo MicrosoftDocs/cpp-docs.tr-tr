@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3739
 ms.assetid: acffe894-08b8-4bf2-9249-9501e6e2bad3
 ms.openlocfilehash: 34f035c089b183670e87a23eb62f995b2af23c9b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50567498"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62208675"
 ---
 # <a name="compiler-error-c3739"></a>Derleyici Hatası C3739
 

@@ -9,11 +9,11 @@ helpviewer_keywords:
 - scheduler_not_attached class
 ms.assetid: 26001970-b400-463b-be3d-8623359c399a
 ms.openlocfilehash: be8a04c7cf6ef5aa4d6070e92df14e643395ef00
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57262271"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62160126"
 ---
 # <a name="schedulernotattached-class"></a>scheduler_not_attached Sınıfı
 

@@ -19,11 +19,11 @@ helpviewer_keywords:
 - __dllonexit
 ms.assetid: 708f2ceb-f95c-46b0-a58d-d68b3fa36f12
 ms.openlocfilehash: a6c077ac010c0b5d94ba21ba823441ea6ac932b9
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57739380"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62290319"
 ---
 # <a name="dllonexit"></a>__dllonexit
 

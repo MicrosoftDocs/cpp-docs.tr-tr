@@ -6,11 +6,11 @@ helpviewer_keywords:
 - collection classes
 ms.assetid: eff95de6-78ef-4212-9d7d-1dacbdd4cc58
 ms.openlocfilehash: 0a91b34dc28ace3a8fc0fe1ac1c59d86b19ece43
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57290076"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62235231"
 ---
 # <a name="collection-classes"></a>Koleksiyon Sınıfları
 

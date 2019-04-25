@@ -8,11 +8,11 @@ helpviewer_keywords:
 - protected keyword [C++]
 ms.assetid: 863d299f-fc0d-45d5-a1a7-bd24b7778a93
 ms.openlocfilehash: 1cbe88a80b83caa78972d1e2799c1e0d87d1cb0a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50471007"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62244534"
 ---
 # <a name="protected-c"></a>protected (C++)
 

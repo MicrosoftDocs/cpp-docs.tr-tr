@@ -17,11 +17,11 @@ helpviewer_keywords:
 - CMFCFontComboBox [MFC], m_bDrawUsingFont
 ms.assetid: 9a53fb0c-7b45-486d-8187-2a4c723d9fbb
 ms.openlocfilehash: ccc4e545b2274d6dbb9989cfb9c047de819b8d32
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58781308"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62237479"
 ---
 # <a name="cmfcfontcombobox-class"></a>CMFCFontComboBox sınıfı
 

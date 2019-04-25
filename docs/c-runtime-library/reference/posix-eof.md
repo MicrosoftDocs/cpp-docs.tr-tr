@@ -21,12 +21,12 @@ helpviewer_keywords:
 - eof function
 ms.assetid: 2e8fb55b-b736-46a6-be5e-15f8876a714f
 ms.openlocfilehash: d596949a2d8b251c6b4ceec552871ad29737eecf
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50600778"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62155900"
 ---
 # <a name="eof"></a>eof
 
-Bu POSIX işlevi kullanım dışı bırakılmıştır. ISO C++ uyumlu [_eof](eof.md) yerine.
+Bu POSIX işlevi kullanım dışı bırakılmıştır. ISO kullanın C++ uyumluluğunu [_eof](eof.md) yerine.

@@ -6,11 +6,11 @@ helpviewer_keywords:
 - Unicode, using CComBSTR [ATL]
 ms.assetid: d3bd0851-d132-4be9-9c4c-6ccba17acb2b
 ms.openlocfilehash: 806d23730a0657fc1e0c154e20dc9abd62f7e8af
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57259418"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62261819"
 ---
 # <a name="programming-with-ccombstr-atl"></a>CComBSTR (ATL) ile programlama
 

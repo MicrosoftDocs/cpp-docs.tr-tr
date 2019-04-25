@@ -5,11 +5,11 @@ f1_keywords:
 - <future>
 ms.assetid: 2f5830fc-455d-44f9-9e3d-94ea051596a2
 ms.openlocfilehash: 189a9f16b65ae74fc2a86bee62bf8bd548c486aa
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50555800"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62159866"
 ---
 # <a name="ltfuturegt"></a>&lt;Gelecekte&gt;
 
@@ -40,7 +40,7 @@ Zaman uyumsuz bir sağlayıcı ya hiçbir ilişkili zaman uyumsuz duruma sahip b
 
 Her bir şablon sınıfı `promise`, `future`, ve `shared_future` türü için bir uzmanlığı olan **void** ve depolamak ve başvuruya göre bir değer almak için kısmi özelleştirme. Bu uzmanlıklar birincil şablonunda yalnızca imzalar ve döndürülen değer depolanıp işlevleri semantikleri farklıdır.
 
-Şablon sınıfları `future` ve `shared_future` hiçbir zaman kendi yıkıcılarda dışında geriye dönük uyumluluk için korunur bir durumda engelle: diğer vadeli aksine için bir `future`— veya son `shared_future`— bir göreve ekli kullanmaya `std::async`, yok edici blokları görevi tamamlanmadıysa; bu iş parçacığı henüz arama diğer bir deyişle, bunu engeller `.get()` veya `.wait()` ve görev hala çalışıyor. Açıklaması için aşağıdaki kullanılabilirlik not eklenmiş olan `std::async` taslak standart: "[Not: yerel kapsamı dışında std::async ' elde edilen gelecek taşınırsa, gelecek kullanan diğer kod geleceğe ait yok Edicisi engelleyebilir bilmeniz gerekir Paylaşılan durum hazır olur — son Not] "diğer tüm durumlarda `future` ve `shared_future` yok ediciler gerekmez ve hiçbir zaman engellememe garanti edilir.
+Şablon sınıfları `future` ve `shared_future` hiçbir zaman kendi yıkıcılarda dışında geriye dönük uyumluluk için korunur bir durumda engelle: Diğer tüm gelecek aksine için bir `future`— veya son `shared_future`— kullanmaya bir göreve ekli `std::async`, yok edici blokları görevi tamamlanmadıysa; bu iş parçacığı henüz arama diğer bir deyişle, bunu engeller `.get()` veya `.wait()`ve görev hala çalışıyor. Aşağıdaki kullanılabilirlik notun açıklaması için eklenmiş olan `std::async` taslak standart: "[Not: Yerel kapsamı dışında Std::Async ' elde edilen gelecek taşınırsa, gelecek kullanan diğer kod geleceğe ait yok Edicisi paylaşılan durum hazır olmasını engelleyebilir bilmeniz gerekir; son Not] "diğer tüm durumlarda `future` ve `shared_future` yok ediciler gerekmez ve hiçbir zaman engellememe garanti edilir.
 
 ## <a name="members"></a>Üyeler
 

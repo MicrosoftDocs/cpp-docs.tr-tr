@@ -9,11 +9,11 @@ helpviewer_keywords:
 - command routing
 ms.assetid: 9393a956-bdd4-47c5-9013-dbd680433f93
 ms.openlocfilehash: ae9741a66e944b60dc38c1366353e43977e1ee7a
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57278410"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62165161"
 ---
 # <a name="command-routing"></a>Komut Yönlendirme
 

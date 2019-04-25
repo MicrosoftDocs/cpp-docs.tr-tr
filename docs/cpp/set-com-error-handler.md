@@ -5,11 +5,11 @@ helpviewer_keywords:
 - _set_com_error_handler function
 ms.assetid: 49fe4fca-5e37-4d83-abaf-15be5ce37f94
 ms.openlocfilehash: 864236e86b4aeb6ce7b3315df57af1b577693c26
-ms.sourcegitcommit: f127b08f114b8d6cab6b684febcb6f2ae0e055ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56954945"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62267238"
 ---
 # <a name="setcomerrorhandler"></a>_set_com_error_handler
 

@@ -30,11 +30,11 @@ helpviewer_keywords:
 - Ei BSCMAKE option
 ms.assetid: fa2f1e06-c684-41cf-80dd-6a554835ebd2
 ms.openlocfilehash: b1d62e8d122cb4f08feef60d6936359b3e246749
-ms.sourcegitcommit: 06fc71a46e3c4f6202a1c0bc604aa40611f50d36
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "58508795"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62272877"
 ---
 # <a name="bscmake-options"></a>BSCMAKE Seçenekleri
 

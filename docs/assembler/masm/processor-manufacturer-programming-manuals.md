@@ -3,11 +3,11 @@ title: İşlemci Üreticisi Programlama Kılavuzları
 ms.date: 08/30/2018
 ms.assetid: 61844163-de2f-419a-808e-04de39dfdddf
 ms.openlocfilehash: be650b0d19577b0a2191a6bf7d16063e720f3b0d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50545109"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62210583"
 ---
 # <a name="processor-manufacturer-programming-manuals"></a>İşlemci Üreticisi Programlama Kılavuzları
 

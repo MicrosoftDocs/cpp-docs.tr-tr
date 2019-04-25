@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2711
 ms.assetid: 9df9f808-7419-4e63-abdd-e6538ff0871f
 ms.openlocfilehash: 568128d6199d16380b6a540173eded25f5588d23
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50571853"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62160945"
 ---
 # <a name="compiler-error-c2711"></a>Derleyici Hatası C2711
 

@@ -10,11 +10,11 @@ helpviewer_keywords:
 - referencing objects, declarator syntax
 ms.assetid: 68156f7f-97a0-4b66-b26d-b25ade5e3bd8
 ms.openlocfilehash: aafc582299402eabab2736ac7d07b6c4c397413c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50616478"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62244227"
 ---
 # <a name="references-c"></a>Başvurular (C++)
 
@@ -22,7 +22,7 @@ Bir işaretçi gibi bir başvuru bellekte başka bir yerde bulunan bir nesnenin 
 
 Başvuruları aşağıdaki sözdizimi kullanılarak bildirilebilir:
 
-> \[*depolama sınıfı tanımlayıcıları*] \[ *cv niteleyicileri*] *tür tanımlayıcıları* \[ *ms-modifier*]  *bildirimci* \[ **=** *ifade*]**;**
+> \[*storage-class-specifiers*] \[*cv-qualifiers*] *type-specifiers* \[*ms-modifier*] *declarator* \[**=** *expression*]**;**
 
 Bir başvuru belirterek herhangi bir geçerli bildirimci kullanılabilir. Aşağıdaki Basitleştirilmiş söz dizimi, işlev veya dizi türü bir başvuru başvuru olmadığı sürece, geçerlidir:
 

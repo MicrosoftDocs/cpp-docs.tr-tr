@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2755
 ms.assetid: 8ee4eeb6-4757-4efe-9100-38ff4a96f1de
 ms.openlocfilehash: c2238058dc4b7df6bbe33e98d6ccde996f36b782
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50570696"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62227978"
 ---
 # <a name="compiler-error-c2755"></a>Derleyici Hatası C2755
 

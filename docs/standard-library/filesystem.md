@@ -10,11 +10,11 @@ f1_keywords:
 - <filesystem>
 ms.assetid: 5005753b-46fa-43e1-8d4e-1b38617d3cfd
 ms.openlocfilehash: 54817eeeba0b885cbf3de558c04fe2eb5d6e14fa
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50473391"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62159853"
 ---
 # <a name="ltfilesystemgt"></a>&lt;dosya sistemi&gt;
 
@@ -31,11 +31,11 @@ using namespace std::experimental::filesystem::v1;
 > [!IMPORTANT]
 > Visual Studio 2017 sürümü itibarıyla \<filesystem > Üstbilgi değildi henüz bir C++ standart. Visual C++ 2017 son taslak standardı uygular, bulunan [ISO/IEC JTC 1/SC 22/WG 21 N4100](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2014/n4100.pdf).
 
-Dosya sistemleri, konak işletim sistemlerinin iki geniş sınıflardan biri için bu üst bilginin destekler: Microsoft Windows ve POSIX.
+Bu üst konak işletim sistemlerinin iki geniş sınıflardan biri için dosya sistemleri destekler: Microsoft Windows ve POSIX.
 
 Çoğu işlevi her iki işletim sistemleri için yaygın olsa da, bu belgenin nereye farklar meydana tanımlar. Örneğin:
 
-- Windows c: gibi birden çok kök adlarını destekler veya \\\network_name. Bir dosya sistemi ağaçları, c:\ gibi kendi kök dizinine sahip her bir orman oluşur veya \\\network_name\\ve her bir göreli yol (bir mutlak bir yol adı değil) tamamlamak için kendi geçerli dizin.
+- Windows c: gibi birden çok kök adlarını destekler veya \\\network_name. Bir ormandaki her c:\ gibi kendi kök dizinine sahip ağaçları, bir dosya sistemi oluşur. veya \\\network_name\\ve her bir göreli yol (bir mutlak bir yol adı değil) tamamlamak için kendi geçerli dizin.
 
 - POSIX destekleyen tek kök dizinini hiçbir kök adı ile tek bir ağaç / ve tek bir geçerli dizin.
 

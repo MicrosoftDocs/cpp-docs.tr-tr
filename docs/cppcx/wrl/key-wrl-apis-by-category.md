@@ -4,11 +4,11 @@ ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 7367bacf-6b7c-4ecd-a0ce-a662db46fc66
 ms.openlocfilehash: f3065323c567c944dab12fc1ebbcbd6bb57127e9
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59039065"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62223156"
 ---
 # <a name="key-wrl-apis-by-category"></a>Kategoriye Göre Başlıca WRL API'leri
 

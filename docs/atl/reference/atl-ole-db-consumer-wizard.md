@@ -9,11 +9,11 @@ helpviewer_keywords:
 - ATL OLE DB Consumer Wizard
 ms.assetid: dcb68ed1-2224-422f-9f7b-108a74864204
 ms.openlocfilehash: 59ad635f62ab7a20a31de7255ec4522136e102ec
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51524137"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62261266"
 ---
 # <a name="atl-ole-db-consumer-wizard"></a>ATL OLE DB Tüketicisi Sihirbazı
 
@@ -40,9 +40,9 @@ Bu sihirbaz bir OLE DB Tüketici sınıfı veri bağlamaları ile belirtilen OLE
 
       SQL verileri için:
 
-      1. **Sunucu adını seçin veya girin:** tüm kayıtlı veri sunucuları ağ üzerinde görüntülemek için aşağı açılır menüsünü tıklatın ve seçin.
+      1. **Seçin veya bir sunucu adı girin:** Tüm kayıtlı veri sunucuları ağ üzerinde görüntülemek için aşağı açılır menüsünü tıklatın ve seçin.
 
-      1. **Sunucuda oturum açmak için bilgileri girin:** bir kullanıcı adı ve veri sunucuya oturum açmak için parola girin.
+      1. **Sunucuda oturum açmak için bilgileri girin:** Bir kullanıcı adı ve veri sunucuya oturum açmak için parola girin.
 
          > [!NOTE]
          > Veri Bağlantı Özellikleri iletişim kutusunun "Parola kaydetmeye izin ver" özelliği ile bir güvenlik sorunu var. "Sunucuya oturum açmak için Enter bilgileri," iki radyo düğmeleri vardır:
@@ -53,26 +53,26 @@ Bu sihirbaz bir OLE DB Tüketici sınıfı veri bağlamaları ile belirtilen OLE
          > Seçerseniz **belirli bir kullanıcı adı ve parolayı kullanın**, ("Parola kaydetmeye izin ver" için onay kutusunu kullanarak) parolayı kaydetme seçeneğiniz vardır; ancak, bu seçeneği güvenli değildir. Seçtiğiniz önerilir **kullanım Windows NT tümleşik güvenliği**; bu seçenek, parolayı şifreler için güvenlidir.
          > "Parola kaydetmeye izin ver"'i seçmek istediğiniz durumlar olabilir Örneğin, özel veritabanı çözümü bir kitaplıkla yayınlıyorsanız, veritabanına doğrudan erişim değil ancak orta katmanlı bir uygulama kullanıcının (seçtiğiniz hangi kimlik doğrulama düzeni) üzerinden doğrulayın ve ardından veri sıralama sınırlamak için kullanın kullanıcı için kullanılabilir.
 
-      1. **Sunucu üzerindeki veritabanı seçin:** veri sunucusunda kayıtlı tüm veritabanlarını görüntülemek için aşağı açılır menüsünü tıklatın ve seçin.
+      1. **Sunucu üzerindeki veritabanı seçin:** Veri sunucusunda kayıtlı tüm veritabanlarını görüntülemek için aşağı açılır menüsünü tıklatın ve seçin.
 
          \- veya -
 
-         **Bir veritabanı adı olarak veritabanı dosya Ekle:** veritabanı olarak kullanılacak bir dosya belirtin; açık yol adını girin.
+         **Bir veritabanı dosyası, bir veritabanı adı ekleyin:** Veritabanı olarak kullanılacak bir dosya belirtin açık bir yol girin.
 
       ODBC veri için:
 
-      1. **Veri kaynağını belirtin:** , bir veri kaynağı adı veya bağlantı dizesini kullanabilirsiniz.
+      1. **Veri kaynağını belirtin:** Bir veri kaynağı adı veya bağlantı dizesini kullanabilirsiniz.
 
-         **Veri kaynağı adı kullan:** makinenizde kayıtlı veri kaynaklarına bu açılan liste görüntüler. Veri kaynakları önceden ODBC Veri Kaynağı Yöneticisi'ni kullanarak ayarlayabilirsiniz.
+         **Veri kaynağı adı kullan:** Bu açılan liste makinenizde kayıtlı veri kaynaklarını görüntüler. Veri kaynakları önceden ODBC Veri Kaynağı Yöneticisi'ni kullanarak ayarlayabilirsiniz.
 
          \- veya -
 
-         **Bağlantı dizesini kullan:** önce almış olan veya tıklayın bir bağlantı dizesi girin **derleme** düğmesini; **veri kaynağı Seç** iletişim kutusu görüntülenir. Bir dosya veya makine veri kaynağını seçin ve tıklayın **Tamam**.
+         **Bağlantı dizesi kullanın:** Önce almış olan veya tıklayın bir bağlantı dizesi girin **derleme** düğmesini; **veri kaynağı Seç** iletişim kutusu görüntülenir. Bir dosya veya makine veri kaynağını seçin ve tıklayın **Tamam**.
 
          > [!NOTE]
          > Var olan bir bağlantı özelliklerini görüntüleyerek bir bağlantı dizesi edinebilirsiniz **Sunucu Gezgini**, ya da çift tıklayarak bir bağlantı oluşturabilirsiniz **Bağlantı Ekle** içinde **sunucusu Explorer**.
 
-      1. **Sunucuda oturum açmak için bilgileri girin:** bir kullanıcı adı ve veri sunucuya oturum açmak için parola girin.
+      1. **Sunucuda oturum açmak için bilgileri girin:** Bir kullanıcı adı ve veri sunucuya oturum açmak için parola girin.
 
       1. Kullanılacak Initial catalog girin.
 
@@ -80,9 +80,9 @@ Bu sihirbaz bir OLE DB Tüketici sınıfı veri bağlamaları ile belirtilen OLE
 
    - **Gelişmiş** sekmesi
 
-      **Ağ ayarları:** belirtin **kimliğe bürünme düzeyi** (sunucu, istemci kimliğine bürünme kullanmasına izin verilir; karşılık gelen RPC kimliğe bürünme düzeyi doğrudan kimliğe bürünme düzeyi) ve  **Koruma düzeyi** (veri koruma düzeyini istemci ve sunucu; arasında gönderilen doğrudan RPC koruma düzeyleri karşılık gelir).
+      **Ağ ayarları:** Belirtin **kimliğe bürünme düzeyi** (sunucu, istemci kimliğine bürünme kullanmasına izin verilir; karşılık gelen RPC kimliğe bürünme düzeyi doğrudan kimliğe bürünme düzeyi) ve **koruma düzeyi** () İstemci ve sunucu arasında gönderilen veri koruma düzeyi; RPC koruma düzeyleri doğrudan karşılık gelir).
 
-      **Diğer:** içinde **bağlantı zaman aşımı**, boşta kalma süresi bir zaman aşımı oluşmadan önce izin verilen saniye sayısını belirtin. İçinde **erişim izinlerini**, veri bağlantısına erişim izinlerini belirtin.
+      **Diğer:** İçinde **bağlantı zaman aşımı**, boşta kalma süresi bir zaman aşımı oluşmadan önce izin verilen saniye sayısını belirtin. İçinde **erişim izinlerini**, veri bağlantısına erişim izinlerini belirtin.
 
       Gelişmiş başlatma özellikleri hakkında daha fazla bilgi için her özel OLE DB sağlayıcısı ile sağlanan belgelere bakın.
 
@@ -90,7 +90,7 @@ Bu sihirbaz bir OLE DB Tüketici sınıfı veri bağlamaları ile belirtilen OLE
 
       Bu sekme, belirttiğiniz bağlantı ve veri kaynağı için başlatma özellikleri özetini görüntüler. Bu değerleri düzenleyebilirsiniz.
 
-      Tıklayın **Tamam** tamamlanması. **Veritabanı nesnesini Seç** iletişim kutusu görüntülenir. Bu iletişim kutusunda, tablo, görünüm veya tüketici kullanacağı bir saklı yordam seçin.
+      Ayarlamayı bitirmek için **Tamam**'a tıklayın. **Veritabanı nesnesini Seç** iletişim kutusu görüntülenir. Bu iletişim kutusunda, tablo, görünüm veya tüketici kullanacağı bir saklı yordam seçin.
 
 - **Sınıfı**
 
@@ -153,7 +153,7 @@ Bu sihirbaz bir OLE DB Tüketici sınıfı veri bağlamaları ile belirtilen OLE
 
       Bkz: [öznitelikleri temel mekanizması](../../windows/basic-mechanics-of-attributes.md) daha fazla bilgi için.
 
-- **Türü**
+- **Tür**
 
    Tüketici sınıfı öğesinden türetilmiş olup olmadığını belirtmek için bu radyo düğmeleri birini `CTable` veya `CCommand` (varsayılan).
 
@@ -184,5 +184,5 @@ Bu sihirbaz bir OLE DB Tüketici sınıfı veri bağlamaları ile belirtilen OLE
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [ATL OLE DB Tüketicisi](../../atl/reference/adding-an-atl-ole-db-consumer.md)<br/>
-[Kod sihirbazlarıyla işlevsellik ekleme](../../ide/adding-functionality-with-code-wizards-cpp.md)<br/>
+[Kod Sihirbazlarıyla İşlevsellik Ekleme](../../ide/adding-functionality-with-code-wizards-cpp.md)<br/>
 [Bağlantı dizelerini ve veri bağlantıları (OLE DB)](/previous-versions/windows/desktop/ms718376)

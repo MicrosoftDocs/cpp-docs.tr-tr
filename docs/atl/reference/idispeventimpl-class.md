@@ -14,11 +14,11 @@ helpviewer_keywords:
 - IDispEventImpl class
 ms.assetid: a64b5288-35cb-4638-aad6-2d15b1c7cf7b
 ms.openlocfilehash: 8de620cd6e2433375284f6493b5117c40a356603
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57283208"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62275327"
 ---
 # <a name="idispeventimpl-class"></a>Idispeventımpl sınıfı
 

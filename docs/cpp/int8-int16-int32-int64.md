@@ -23,11 +23,11 @@ helpviewer_keywords:
 - __int64 keyword [C++]
 ms.assetid: 8e384602-2578-4980-8cc8-da63842356b2
 ms.openlocfilehash: b765eabcac3f9643c0cae78fefb6ce8231669ffc
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50617314"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62183460"
 ---
 # <a name="int8-int16-int32-int64"></a>__int8, __int16, __int32, __int64
 

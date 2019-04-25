@@ -10,11 +10,11 @@ helpviewer_keywords:
 - OBJ files as linker input
 - .obj files as linker input
 ms.openlocfilehash: c55c3181c2ddfabddce882a473e56d952a7e5d81
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57816405"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62293283"
 ---
 # <a name="obj-files-as-linker-input"></a>Bağlayıcı Girişi olarak .Obj Dosyaları
 
@@ -33,7 +33,7 @@ Derleyicide ve bağlayıcıda hakkında daha fazla bilgi için bkz: [derleyicide
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [LINK Giriş Dosyaları](link-input-files.md)<br/>
-[MSVC bağlayıcı seçenekleri](linker-options.md)<br/>
+[MSVC Bağlayıcı Seçenekleri](linker-options.md)<br/>
 [Unicode Desteği](../../text/support-for-unicode.md)<br/>
 [Derleyicide ve Bağlayıcıda Unicode Desteği](unicode-support-in-the-compiler-and-linker.md)<br/>
 [Unicode standardı](http://www.unicode.org/)<br/>

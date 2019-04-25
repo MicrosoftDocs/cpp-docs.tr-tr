@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2086
 ms.assetid: 4329bf72-90c8-444c-8524-4ef75e6b2139
 ms.openlocfilehash: 094a794627b886abc7db5ba4d74c6fe97ff82461
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50649750"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62216132"
 ---
 # <a name="compiler-error-c2086"></a>Derleyici Hatası C2086
 

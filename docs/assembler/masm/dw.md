@@ -7,11 +7,11 @@ helpviewer_keywords:
 - DW directive
 ms.assetid: 451d0e24-b65b-4cbb-b81d-ea27680feaf3
 ms.openlocfilehash: 091404138e18cec96ffa47342b3e1c189ba614c3
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50617119"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62204011"
 ---
 # <a name="dw"></a>DW
 

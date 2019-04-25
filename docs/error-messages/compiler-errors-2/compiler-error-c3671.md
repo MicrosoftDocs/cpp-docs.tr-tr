@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3671
 ms.assetid: d684e4ae-87e2-4424-80bb-6f346652c831
 ms.openlocfilehash: c4534b11f3aedf638f69337fb6a7af778e086bb4
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59778039"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62215023"
 ---
 # <a name="compiler-error-c3671"></a>Derleyici Hatası C3671
 

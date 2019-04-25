@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3176
 ms.assetid: 6cc8d602-8e15-47a7-b1b5-e93e5d50e271
 ms.openlocfilehash: 8c92a49499a18c12807f97cb97b24cc3beaf700b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50474431"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62174113"
 ---
 # <a name="compiler-error-c3176"></a>Derleyici Hatası C3176
 

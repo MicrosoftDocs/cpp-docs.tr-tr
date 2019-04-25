@@ -11,11 +11,11 @@ helpviewer_keywords:
 - __emulu intrinsic
 ms.assetid: 79545236-cca2-40b8-a4e1-8abce9b26311
 ms.openlocfilehash: 8657c0fb034ac6bbcfbebb946e059ad08d9e7046
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59030056"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62264055"
 ---
 # <a name="emul-emulu"></a>__emul, __emulu
 

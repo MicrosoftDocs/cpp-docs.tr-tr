@@ -3,11 +3,11 @@ title: Dinamik Düzen
 ms.date: 11/19/2018
 ms.assetid: 8598cfb2-c8d4-4f5a-bf2b-59dc4653e042
 ms.openlocfilehash: 396aad5b33a00021ddb5c1143c1d15c130e97eaa
-ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52175697"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62175333"
 ---
 # <a name="dynamic-layout"></a>Dinamik Düzen
 
@@ -61,7 +61,7 @@ Dinamik düzen davranışı bir iletişim kutusu için kaynak düzenleyicisini k
     CMFCDynamicLayout* dynamicLayout = pDialog->GetDynamicLayout();
     ```
 
-1. Dinamik davranışı eklemek istediğiniz ilk denetim için statik yöntemler oluşturmak için dinamik düzen sınıfını kullanın [MoveSettings](../mfc/reference/cmfcdynamiclayout-class.md#movesettings_structure) denetim belirlenebilir şekilde kodlar yapısı. Uygun bir statik yöntemi seçerek bunu: [CMFCDynamicLayout::MoveHorizontal](../mfc/reference/cmfcdynamiclayout-class.md#movehorizontal), [CMFCDynamicLayout::MoveVertical](../mfc/reference/cmfcdynamiclayout-class.md#movevertical), [CMFCDynamicLayout::MoveNone](../mfc/reference/cmfcdynamiclayout-class.md#movenone), veya [CMFCDynamicLayout::MoveHorizontalAndVertical](../mfc/reference/cmfcdynamiclayout-class.md#movehorizontalandvertical). Taşıma/yatay veya dikey yönlerini yüzde olarak geçirdiğiniz. Tüm bu statik yöntemler, bir denetimin taşıma davranışını belirtmek için kullanabileceğiniz yeni oluşturulan bir MoveSettings nesnesi döndürür.
+1. Dinamik davranışı eklemek istediğiniz ilk denetim için statik yöntemler oluşturmak için dinamik düzen sınıfını kullanın [MoveSettings](../mfc/reference/cmfcdynamiclayout-class.md#movesettings_structure) denetim belirlenebilir şekilde kodlar yapısı. Bunun için uygun statik yöntemi seçerek: [CMFCDynamicLayout::MoveHorizontal](../mfc/reference/cmfcdynamiclayout-class.md#movehorizontal), [CMFCDynamicLayout::MoveVertical](../mfc/reference/cmfcdynamiclayout-class.md#movevertical), [CMFCDynamicLayout::MoveNone](../mfc/reference/cmfcdynamiclayout-class.md#movenone), veya [CMFCDynamicLayout:: MoveHorizontalAndVertical](../mfc/reference/cmfcdynamiclayout-class.md#movehorizontalandvertical). Taşıma/yatay veya dikey yönlerini yüzde olarak geçirdiğiniz. Tüm bu statik yöntemler, bir denetimin taşıma davranışını belirtmek için kullanabileceğiniz yeni oluşturulan bir MoveSettings nesnesi döndürür.
 
    Tam olarak iletişim yeni kenarlık sabit bir uzaklıkta kalmak bir denetimin edge neden olan boyutu, değişiklikler kadar 100 anlamına gelir taşıma aklınızda bulundurun.
 

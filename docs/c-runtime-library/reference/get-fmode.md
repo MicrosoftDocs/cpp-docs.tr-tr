@@ -25,11 +25,11 @@ helpviewer_keywords:
 - get_fmode function
 ms.assetid: 22ea70e2-b9b5-422d-b514-64f4beaea45c
 ms.openlocfilehash: dc4740b20ab7283dd8b9f73f458eaba34e582832
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51328051"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62287568"
 ---
 # <a name="getfmode"></a>_get_fmode
 

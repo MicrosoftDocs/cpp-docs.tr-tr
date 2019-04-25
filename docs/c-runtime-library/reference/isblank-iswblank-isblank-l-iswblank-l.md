@@ -28,11 +28,11 @@ f1_keywords:
 - iswblank
 ms.assetid: 33ce96c0-f387-411a-8283-c3d2a69e56bd
 ms.openlocfilehash: eb088c4056e2277e188d7f98a57dd36216d013ad
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50497324"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62287087"
 ---
 # <a name="isblank-iswblank-isblankl-iswblankl"></a>isblank, iswblank, _isblank_l, _iswblank_l
 
@@ -77,14 +77,14 @@ Davranışını **ısblank** ve **_isblank_l** tanımsızdır *c* EOF değilse v
 
 |TCHAR.H yordamı|_UNICODE & _MBCS tanımlanmamış|_MBCS tanımlanmış|_UNICODE tanımlanmış|
 |---------------------|------------------------------------|--------------------|-----------------------|
-|**_istblank**|**ısblank**|[_ismbcblank](ismbcgraph-functions.md)|**iswblank**|
+|**_istblank**|**isblank**|[_ismbcblank](ismbcgraph-functions.md)|**iswblank**|
 |**_istblank_l**|**_isblank_l**|[_ismbcblank_l](ismbcgraph-functions.md)|**_iswblank_l**|
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**ısblank**|\<CType.h >|
+|**isblank**|\<CType.h >|
 |**iswblank**|\<CType.h > veya \<wchar.h >|
 |**_isblank_l**|\<CType.h >|
 |**_iswblank_l**|\<CType.h > veya \<wchar.h >|

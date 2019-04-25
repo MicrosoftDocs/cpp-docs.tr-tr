@@ -8,11 +8,11 @@ helpviewer_keywords:
 - ATL Simple Object Wizard
 ms.assetid: f7f85741-9aad-4543-a917-a29b996364da
 ms.openlocfilehash: e18c1848c55208b02026aba7684db928e0d6fc0a
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57258521"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62260902"
 ---
 # <a name="atl-simple-object-wizard"></a>ATL Basit Nesne Sihirbazı
 

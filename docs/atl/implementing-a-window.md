@@ -7,11 +7,11 @@ helpviewer_keywords:
 - windows [C++], implementing in ATL
 ms.assetid: eb1ce8d6-72f9-4894-aae7-e60a61665628
 ms.openlocfilehash: 0572e3b65b2d249c569a119a7f260395d91373cd
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57285821"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62262027"
 ---
 # <a name="implementing-a-window"></a>Pencere uygulama
 

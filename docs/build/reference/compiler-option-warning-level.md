@@ -58,11 +58,11 @@ helpviewer_keywords:
 - /W2 compiler option [C++]
 - /Wv compiler option [C++]
 ms.openlocfilehash: 7b5c19c95cff3058bb3dcc6640f8ab07cf01edd6
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59040077"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62294245"
 ---
 # <a name="w-w0-w1-w2-w3-w4-w1-w2-w3-w4-wall-wd-we-wo-wv-wx-warning-level"></a>/w, /W0, / W1, / w2, / W3, / W4, / W1, / w2, / W3, / W4, /Wall, WD, / we Wo, wv, /WX (uyarı düzeyi)
 

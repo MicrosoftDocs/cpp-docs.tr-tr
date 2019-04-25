@@ -8,11 +8,11 @@ helpviewer_keywords:
 - COM objects, ATL
 ms.assetid: 0f9c9d98-cc28-45da-89ac-dc94cee422fe
 ms.openlocfilehash: cba26ede01b69e4a077f1e842982adc8c2127331
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57270052"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62198926"
 ---
 # <a name="fundamentals-of-atl-com-objects"></a>ATL COM nesnelerinin temelleri
 

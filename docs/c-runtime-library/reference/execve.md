@@ -21,15 +21,15 @@ helpviewer_keywords:
 - execve function
 ms.assetid: f28aabe4-fd76-422e-a0e4-80864736d245
 ms.openlocfilehash: 6ed2bc258dfb0b627b23391b90e94222e9803a6b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50546339"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62288341"
 ---
 # <a name="execve"></a>execve
 
-Bu POSIX işlevi kullanım dışı bırakılmıştır. ISO C++ uyumlu [_execve](execve-wexecve.md) yerine.
+Bu POSIX işlevi kullanım dışı bırakılmıştır. ISO kullanın C++ uyumluluğunu [_execve](execve-wexecve.md) yerine.
 
 > [!IMPORTANT]
 > Bu API, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için [Evrensel Windows platformu uygulamalarında desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).

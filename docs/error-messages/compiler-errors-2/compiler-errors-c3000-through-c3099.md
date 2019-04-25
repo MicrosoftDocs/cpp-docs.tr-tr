@@ -1,6 +1,6 @@
 ---
-title: Derleyici hataları C3000 ile c3099 arasındaki
-ms.date: 11/17/2017
+title: C3000 ile c3099 arasındaki derleyici hataları
+ms.date: 04/21/2019
 f1_keywords:
 - C3051
 - C3061
@@ -38,14 +38,14 @@ helpviewer_keywords:
 - C3093
 - C3098
 ms.assetid: 01b7b9cb-b351-4b5a-8cb0-1fcddb08d2ab
-ms.openlocfilehash: b7a01c35086fe503e39af2af60655c03301dc7c8
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 08c7b691d6390e6c1070fc71dff116604731ebab
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50475497"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62281672"
 ---
-# <a name="compiler-errors-c3000-through-c3099"></a>Derleyici hataları C3000 ile c3099 arasındaki
+# <a name="compiler-errors-c3000-through-c3099"></a>C3000 ile c3099 arasındaki derleyici hataları
 
 Belgelerin bu bölümdeki makaleleri bir alt kümesini derleyici tarafından oluşturulan hata iletilerini açıklayın.
 
@@ -155,3 +155,8 @@ Belgelerin bu bölümdeki makaleleri bir alt kümesini derleyici tarafından olu
 |[Derleyici Hatası C3097](compiler-error-c3097.md)|'*özniteliği*': özniteliğin kapsamı belirlenmelidir ' derleme:' veya ' modül:'|
 |Derleyici Hatası C3098|'*tanımlayıcı*': özniteliği, kullanıcı tanımlı oluşturucusu yok|
 |[Derleyici Hatası C3099](compiler-error-c3099.md)|'*anahtar sözcüğü*': kullanma [System::AttributeUsageAttribute] / [Windows::Foundation::Metadata::AttributeUsageAttribute] yönetilen WinRT öznitelikleri|
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[C /C++ derleyicisi ve derleme araçları hataları ve Uyarıları](../compiler-errors-1/c-cpp-build-errors.md) \
+[C3999 arasındaki derleyici hataları C2000-](../compiler-errors-1/compiler-errors-c2000-c3999.md)

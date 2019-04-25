@@ -7,11 +7,11 @@ helpviewer_keywords:
 - declaring functions [C++], overloading
 ms.assetid: 3c9884cb-1d5e-42e8-9a49-6f46141f929e
 ms.openlocfilehash: 6cc432e404a7a66de63cf87f0fe87f0ccdcb5d70
-ms.sourcegitcommit: 309dc532f13242854b47759cef846de59bb807f1
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58565980"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62154288"
 ---
 # <a name="function-overloading"></a>İşlev Aşırı Yüklemesi
 

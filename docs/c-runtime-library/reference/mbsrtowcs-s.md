@@ -22,11 +22,11 @@ helpviewer_keywords:
 - mbsrtowcs_s function
 ms.assetid: 4ee084ec-b15d-4e5a-921d-6584ec3b5a60
 ms.openlocfilehash: a935b5181078f3b08ba5f2f89c581ed8cce8ded5
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50588834"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62156674"
 ---
 # <a name="mbsrtowcss"></a>mbsrtowcs_s
 

@@ -8,11 +8,11 @@ helpviewer_keywords:
 - CComObject class, implementing
 ms.assetid: 5aabe938-104d-492e-9c41-9f7fb1c62098
 ms.openlocfilehash: e2413c8fb9f5722f0245883c947067387838e57f
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57808319"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62261793"
 ---
 # <a name="implementing-ccomobject-ccomaggobject-and-ccompolyobject"></a>CComObject, CComAggObject ve CComPolyObject uygulama
 

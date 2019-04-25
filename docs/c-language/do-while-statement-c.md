@@ -8,11 +8,11 @@ helpviewer_keywords:
 - do-while keyword [C]
 ms.assetid: f2ac20a6-10c7-4a08-b5e3-c3b3639dbeaf
 ms.openlocfilehash: 052b02beca49f5de19c6f68cc475edb5f5daf6e2
-ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56147509"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62234085"
 ---
 # <a name="do-while-statement-c"></a>do-while Deyimi (C)
 

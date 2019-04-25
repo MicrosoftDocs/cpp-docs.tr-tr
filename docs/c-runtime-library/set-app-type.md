@@ -11,11 +11,11 @@ f1_keywords:
 - corecrt_startup/_set_app_type
 ms.assetid: 1e7fe786-b587-4116-8c05-f7d762350100
 ms.openlocfilehash: 5a29fd94cca7fdbf6bbb24699b7f510bf1465f15
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57749197"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62268817"
 ---
 # <a name="setapptype"></a>_set_app_type
 

@@ -9,11 +9,11 @@ helpviewer_keywords:
 - PostNcDestroy method [MFC]
 ms.assetid: 5bf208a5-5683-439b-92a1-547c5ded26cd
 ms.openlocfilehash: 9e52112bed0f583a3f5652f9213bd5049d543a80
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57294117"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62306161"
 ---
 # <a name="tn017-destroying-window-objects"></a>TN017: Pencere Nesnelerini Yok Etme
 
@@ -91,7 +91,7 @@ Warning: calling DestroyWindow in CWnd::~CWnd
 
 Otomatik temizleme işlemleri yapma C++ Windows nesneleri söz konusu olduğunda, çağırmalısınız `DestroyWindow`. Kullanırsanız **Sil** işleci doğrudan MFC tanılama bellek ayırıcısı bildirim gönderilir, iki kez bellek boşaltma. İlk açık aramanız ve dolaylı çağrı iki oluşumlar: **bu silme** otomatik temizleme uygulamasında `PostNcDestroy`.
 
-Arama sonra `DestroyWindow` otomatik temizleme nesne üzerinde C++ nesne çevresinde, olmaya devam eder ancak *m_hWnd* NULL olacaktır. Arama sonra `DestroyWindow` otomatik temizleme nesnesinde bir C++ nesnesi otomatik temizleme uygulamalarında C++ delete işleci ile serbest, kaybolur `PostNcDestroy`.
+Arama sonra `DestroyWindow` otomatik temizleme nesnesinde C++ nesne çevresinde, hala olacaktır ancak *m_hWnd* NULL olacaktır. Arama sonra `DestroyWindow` otomatik temizleme nesnesinde bir C++ nesnesi otomatik temizleme uygulamalarında C++ delete işleci ile serbest, kaybolur `PostNcDestroy`.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

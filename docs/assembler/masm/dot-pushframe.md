@@ -7,11 +7,11 @@ helpviewer_keywords:
 - .PUSHFRAME directive
 ms.assetid: 17b123d0-4c6d-4fd2-85eb-798e8ad0a73c
 ms.openlocfilehash: 9ea506e25435c5d6f1b10eab8c4f25f72bf88791
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50468334"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62178442"
 ---
 # <a name="pushframe"></a>.PUSHFRAME
 

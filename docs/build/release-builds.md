@@ -7,11 +7,11 @@ helpviewer_keywords:
 - debug builds, converting to release build
 ms.assetid: fa9a78fa-f4b5-4722-baf4-aec655c4ff0f
 ms.openlocfilehash: cf11e63354502be000ba5f7259d9e36dfa774060
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59038171"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62315072"
 ---
 # <a name="release-builds"></a>Yayın Derlemeleri
 

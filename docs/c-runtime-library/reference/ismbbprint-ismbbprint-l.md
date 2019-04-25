@@ -29,11 +29,11 @@ helpviewer_keywords:
 - _ismbbprint_l function
 ms.assetid: d08a061c-18a8-48f2-a75d-bff4870aec9d
 ms.openlocfilehash: 2fc697dd3ee4fee487beedf5e6e3deb706cc5f75
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50660492"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62286675"
 ---
 # <a name="ismbbprint-ismbbprintl"></a>_ismbbprint, _ismbbprint_l
 

@@ -8,11 +8,11 @@ helpviewer_keywords:
 - OLE DB providers, templates
 ms.assetid: c90b7523-dbff-431c-be06-eed9055710d2
 ms.openlocfilehash: 79b225fb45c05a0b324f441654e63c6ea9f4918f
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59030913"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62165794"
 ---
 # <a name="working-with-ole-db-provider-templates"></a>OLE DB Sağlayıcı Şablonlarıyla Çalışma
 

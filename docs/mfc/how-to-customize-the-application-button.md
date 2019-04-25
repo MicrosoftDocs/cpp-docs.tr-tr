@@ -5,11 +5,11 @@ helpviewer_keywords:
 - application button [MFC], customizing
 ms.assetid: ebb11180-ab20-43df-a234-801feca9eb38
 ms.openlocfilehash: d45ceaf1cce21f77871e966e0e8f525f95cb4c37
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57269545"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62160368"
 ---
 # <a name="how-to-customize-the-application-button"></a>Nasıl yapılır: Uygulama düğmesini özelleştirme
 

@@ -7,11 +7,11 @@ helpviewer_keywords:
 - connection points [C++], about connection points
 ms.assetid: 17d76165-5f83-4f95-b36d-483821c247a1
 ms.openlocfilehash: 4d94396ef8839516d9bfee15a2611cce66baa6bd
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57297833"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62252313"
 ---
 # <a name="atl-connection-points"></a>ATL Bağlantı Noktaları
 

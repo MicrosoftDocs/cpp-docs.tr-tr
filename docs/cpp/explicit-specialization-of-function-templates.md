@@ -9,11 +9,11 @@ helpviewer_keywords:
 - specialization of function templates
 ms.assetid: eb0fcb73-eaed-42a1-9b83-14b055a34bf8
 ms.openlocfilehash: 3d91383f895f1a8be983efe42f685419ca988823
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50665185"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62184282"
 ---
 # <a name="explicit-specialization-of-function-templates"></a>İşlev Şablonlarının Açık Alt Uzmanlaşması
 

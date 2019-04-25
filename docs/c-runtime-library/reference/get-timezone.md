@@ -25,11 +25,11 @@ helpviewer_keywords:
 - _get_timezone function
 ms.assetid: 30ab0838-0ae9-4a2f-bfe6-a49ee443b21e
 ms.openlocfilehash: 26cf8114ab766bdb394d2db9ad5842622a447bd1
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50613921"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62287449"
 ---
 # <a name="gettimezone"></a>_get_timezone
 

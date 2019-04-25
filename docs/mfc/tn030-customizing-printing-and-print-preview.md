@@ -1,5 +1,5 @@
 ---
-title: 'TN030: Yazdırmayı ve Baskı Önizlemeyi Özelleştirme'
+title: 'TN030: Yazdırmayı ve Baskı Önizlemeyi özelleştirme'
 ms.date: 06/28/2018
 f1_keywords:
 - vc.print
@@ -11,13 +11,13 @@ helpviewer_keywords:
 - print preview [MFC], customizing
 ms.assetid: 32744697-c91c-41b6-9a12-b8ec01e0d438
 ms.openlocfilehash: 09938c5cec2812998d5e76e15154754ad3ac3e0b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50667915"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62305690"
 ---
-# <a name="tn030-customizing-printing-and-print-preview"></a>TN030: Yazdırmayı ve Baskı Önizlemeyi Özelleştirme
+# <a name="tn030-customizing-printing-and-print-preview"></a>TN030: Yazdırmayı ve Baskı Önizlemeyi özelleştirme
 
 > [!NOTE]
 > Aşağıdaki Teknik Not çevrimiçi belgelere ilk eklenmiştir beri güncelleştirilmemiş. Eski veya yanlış sonuç olarak, bazı yordamlar ve konular olabilir. En son bilgiler için bu konuyu çevrimiçi belge dizininde arama önerilir.
@@ -40,13 +40,13 @@ El ile bant için yeniden yazdırma döngü uygulamanız gereken şekilde `OnPri
 
 İkinci olarak, sık çağırmalısınız `QueryAbort` bant çizim sırasında. Aksi takdirde iptal yordamı yok adlı ve kullanıcı yazdırmayı iptal etmek mümkün olmayacaktır.
 
-## <a name="print-preview-electronic-paper-with-user-interface"></a>Baskı Önizleme: Elektronik kağıt kullanıcı arabirimi
+## <a name="print-preview-electronic-paper-with-user-interface"></a>Baskı Önizleme: Kullanıcı arabirimi ile elektronik İnceleme
 
 Baskı Önizleme, esas olarak, bir yazıcı öykünmesini ekranını açmak çalışır. Varsayılan olarak, ana pencerenin istemci alanının penceresi içinde tam olarak bir veya iki sayfa görüntülemek için kullanılır. Kullanıcı bir alanı daha ayrıntılı olarak görmek için sayfayı yakınlaştırır mümkün değil. Ek destek içeren kullanıcı bile önizleme modunda belgeyi düzenlemek için izin verilmiyor olabilir.
 
 ## <a name="customizing-print-preview"></a>Baskı Önizlemeyi özelleştirme
 
-Bu not yalnızca baskı önizlemeyi değiştirme yönlerinden biri ile ilgilenen: önizleme modu için UI ekleme. Diğer değişiklikler mümkündür, ancak bu tür değişiklikler bu tartışma kapsamı dışında.
+Bu not yalnızca baskı önizlemeyi değiştirme yönlerinden biri ile ilgilidir: Önizleme modu için kullanıcı Arabirimi ekleme. Diğer değişiklikler mümkündür, ancak bu tür değişiklikler bu tartışma kapsamı dışında.
 
 ## <a name="to-add-ui-to-the-preview-mode"></a>Önizleme modunu için kullanıcı Arabirimi eklemek için
 

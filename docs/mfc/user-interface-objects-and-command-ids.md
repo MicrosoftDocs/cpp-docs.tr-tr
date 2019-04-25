@@ -12,11 +12,11 @@ helpviewer_keywords:
 - command handling [MFC], user-interface objects
 ms.assetid: 4ea19e9b-ed1e-452e-bd33-7f509107a45b
 ms.openlocfilehash: 54372facc51062add122c1db2e01e3081127512e
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57278424"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62180628"
 ---
 # <a name="user-interface-objects-and-command-ids"></a>Kullanıcı Arabirimi Nesneleri ve Komut Kimlikleri
 

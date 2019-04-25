@@ -15,11 +15,11 @@ helpviewer_keywords:
 - IDispatch class support in ATL
 ms.assetid: 8108eb36-1228-4127-a203-3ab5ba488892
 ms.openlocfilehash: bf6b416337c58f5e9b8a62dda841615412573666
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57293218"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62275353"
 ---
 # <a name="idispatchimpl-class"></a>Idispatchımpl sınıfı
 

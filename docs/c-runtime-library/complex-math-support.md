@@ -8,11 +8,11 @@ helpviewer_keywords:
 - math routines
 - complex numbers
 ms.openlocfilehash: 12ba858993d3712cbf390288df60faedc602c90a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50452617"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62290020"
 ---
 # <a name="c-complex-math-support"></a>C karmaşık matematik desteği
 
@@ -86,7 +86,7 @@ Ayrı bir tür math.h üstbilgi tanımlar **yapı _complex**için kullanılan [_
 |[conj, conjf, conjl](../c-runtime-library/reference/conj-conjf-conjl.md)|Karmaşık bir sayının karmaşık çiftini işlem|
 |[cproj, cprojf, cprojl](../c-runtime-library/reference/cproj-cprojf-cprojl.md)|Bir projeksiyon Riemann küre üzerine karmaşık bir sayının işlem|
 |[creal, crealf, creall](../c-runtime-library/reference/creal-crealf-creall.md)|Karmaşık bir sayıyı gerçek parçası işlem|
-|[Norm, normf, norml](../c-runtime-library/reference/norm-normf-norml1.md)|Karmaşık bir sayının karesini büyüklük işlem|
+|[norm, normf, norml](../c-runtime-library/reference/norm-normf-norml1.md)|Karmaşık bir sayının karesini büyüklük işlem|
 
 ## <a name="operation-functions"></a>İşlem işlevleri
 

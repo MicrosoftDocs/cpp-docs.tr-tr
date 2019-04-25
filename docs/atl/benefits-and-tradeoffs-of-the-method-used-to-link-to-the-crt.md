@@ -5,11 +5,11 @@ helpviewer_keywords:
 - _ATL_MIN_CRT macro
 ms.assetid: 49b485f7-9487-49e4-b12a-0f710b620e2b
 ms.openlocfilehash: bc322c704374374d6e7c075dbf466fc2b038b0ba
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57283221"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62251843"
 ---
 # <a name="benefits-and-tradeoffs-of-the-method-used-to-link-to-the-crt"></a>Avantajlı ve Avantajsız yönleri CRT bağlantı için kullanılan yöntemi
 

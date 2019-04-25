@@ -27,11 +27,11 @@ helpviewer_keywords:
 - files [C++], permission settings for
 ms.assetid: 5e9a13ba-5321-4536-8721-6afb6f4c8483
 ms.openlocfilehash: 113bf97b0fe93204cd41de20bc36a8be080a88b6
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51327674"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62155426"
 ---
 # <a name="umask"></a>_umask
 
@@ -62,7 +62,7 @@ Tamsayı ifadesini *pmode* birini veya her ikisini SYS\STAT tanımlanan aşağı
 |-|-|
 | **_S_IWRITE** | Yazma izin verilir. |
 | **_S_IREAD** | Okuma izin verilir. |
-| **_S_IREAD** &AMP;#124; **_S_IWRITE** | Okuma ve yazma izin verilir. |
+| **_S_IREAD** &#124; **_S_IWRITE** | Okuma ve yazma izin verilir. |
 
 Her iki sabitleri verildiğinde, bit düzeyinde OR işleci ile birleştirilir ( **&#124;** ). Varsa *pmode* bağımsız değişkeni **_s_ıread**, okuma izin verilmiyor (dosyayı salt yazılır). Varsa *pmode* bağımsız değişkeni **_s_ıwrıte**, yazma izin verilmiyor (dosya salt okunur). Örneğin, yazma bit maskesi ayarlarsanız, tüm yeni dosyalar salt okunur olacaktır. MS-DOS ile Windows işletim sistemleri, tüm dosyaları okunabilir olduğunu unutmayın; Salt yazma izni vermek mümkün değildir. Bu nedenle, salt okunur bit ile ayarlama **_umask** dosyanın modları üzerinde hiçbir etkisi olmaz.
 

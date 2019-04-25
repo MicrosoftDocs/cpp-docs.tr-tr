@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C4537
 ms.assetid: 9454493c-d419-475e-8f35-9c00233c9329
 ms.openlocfilehash: 2f97be4e1aaa5143df685cb95935d350e6f02534
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50441329"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62161088"
 ---
 # <a name="compiler-warning-level-1-c4537"></a>Derleyici Uyarısı (düzey 1) C4537
 

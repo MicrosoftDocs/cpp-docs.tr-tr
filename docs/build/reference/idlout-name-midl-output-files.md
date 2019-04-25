@@ -14,11 +14,11 @@ helpviewer_keywords:
 - IDLOUT linker option
 ms.assetid: 10d00a6a-85b4-4de1-8732-e422c6931509
 ms.openlocfilehash: 3816bb85cb3c711075e3fefeec2d706c2f8cc2ff
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57821475"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62291582"
 ---
 # <a name="idlout-name-midl-output-files"></a>/IDLOUT (MIDL Çıktı Dosyalarını Adlandır)
 
@@ -71,7 +71,7 @@ MIDL derleyicisi olan projelerin bağlarken MSVC bağlayıcı tarafından çağr
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [MSVC bağlayıcı başvurusu](linking.md)<br/>
-[MSVC bağlayıcı seçenekleri](linker-options.md)<br/>
+[MSVC Bağlayıcı Seçenekleri](linker-options.md)<br/>
 [/IGNOREIDL (Öznitelikleri MIDL'ye İşleme)](ignoreidl-don-t-process-attributes-into-midl.md)<br/>
 [/MIDL (MIDL Komut Satırı Seçeneklerini Belirt)](midl-specify-midl-command-line-options.md)<br/>
 [Öznitelikli Program Derleme](../../windows/building-an-attributed-program.md)

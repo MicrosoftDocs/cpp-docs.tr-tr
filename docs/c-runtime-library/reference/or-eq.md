@@ -21,11 +21,11 @@ helpviewer_keywords:
 - or_eq function
 ms.assetid: 1eb92464-ed58-40d8-a30e-f0a6aa2f4318
 ms.openlocfilehash: 7800bb65969c13d65b8feabebc86ea4c406bade1
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51520965"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62156039"
 ---
 # <a name="oreq"></a>or_eq
 

@@ -8,11 +8,11 @@ helpviewer_keywords:
 - greater_equal function
 ms.assetid: a8ba911b-7af8-4653-b972-d8618f4df7d5
 ms.openlocfilehash: 91d8265fa699bbaafe946c44a55dd63c13f44b42
-ms.sourcegitcommit: 4299caac2dc9e806c74ac833d856a3838b0f52a1
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "57006506"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62159359"
 ---
 # <a name="greaterequal-struct"></a>greater_equal Yapısı
 

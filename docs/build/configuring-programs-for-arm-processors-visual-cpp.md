@@ -3,11 +3,11 @@ title: C++ projeleri ARM işlemcileri için yapılandırma
 ms.date: 07/11/2018
 ms.assetid: 3d95f221-656a-480d-9651-9ad263895747
 ms.openlocfilehash: 7e6e0c97245c0941abc49096d1693a8d152c1709
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57812479"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62273834"
 ---
 # <a name="configure-c-projects-for-arm-processors"></a>C++ projeleri ARM işlemcileri için yapılandırma
 
@@ -21,7 +21,7 @@ ARM üzerinde Windows tarafından çağırma kuralları ve özel durum işleme y
 [ARM64 ABI Kurallarına Genel Bakış](arm64-windows-abi-conventions.md)<br/>
 ARM64 üzerinde Windows tarafından kayıt kullanımı çağırma kuralları ve özel durum işleme için kullanılan uygulama ikili arabirimi açıklar.
 
-[Genel MSVC ARM geçiş sorunları](common-visual-cpp-arm-migration-issues.md)<br/>
+[Genel MSVC ARM Geçiş Sorunları](common-visual-cpp-arm-migration-issues.md)<br/>
 Genellikle mimariler arasında taşınabilir olarak kabul edilir, ancak hangi x86 ve x64 ARM için farklı sonuçlar üreten C++ kod öğelerini açıklar.
 
 [ARM Özel Durum İşleme](arm-exception-handling.md)<br/>

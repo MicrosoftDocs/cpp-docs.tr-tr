@@ -7,11 +7,11 @@ helpviewer_keywords:
 - LNK1301
 ms.assetid: 760da428-7182-4b25-b20a-de90d4b9a9cd
 ms.openlocfilehash: 6a82d7756f1460c56d87a3d7b1360c140de19827
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57812102"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62160613"
 ---
 # <a name="linker-tools-error-lnk1301"></a>Bağlayıcı Araçları Hatası LNK1301
 

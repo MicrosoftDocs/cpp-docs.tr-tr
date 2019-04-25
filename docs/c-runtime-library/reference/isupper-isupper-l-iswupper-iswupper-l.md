@@ -35,11 +35,11 @@ helpviewer_keywords:
 - isupper function
 ms.assetid: da2bcc9f-241c-48c0-9a0e-ad273827e16a
 ms.openlocfilehash: 4c7ae7016428f966e8191d9d40c1769152d679c6
-ms.sourcegitcommit: e06648107065f3dea35f40c1ae5999391087b80b
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57210776"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62286355"
 ---
 # <a name="isupper-isupperl-iswupper-iswupperl"></a>isupper, _isupper_l, iswupper, _iswupper_l
 

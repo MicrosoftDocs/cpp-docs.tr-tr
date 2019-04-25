@@ -1,6 +1,6 @@
 ---
-title: Derleyici hataları C2900 ile c2999 arasındaki
-ms.date: 11/17/2017
+title: C2900 ile c2999 arasındaki derleyici hataları
+ms.date: 04/21/2019
 f1_keywords:
 - C2900
 - C2901
@@ -72,14 +72,14 @@ helpviewer_keywords:
 - C2997
 - C2999
 ms.assetid: e3440738-e11b-4878-9ae3-6bc6c53ba461
-ms.openlocfilehash: 4d430d1d446147c662f7f6405185aee75d95bc0b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 5d443153582921775a72e5af647d65b102b80b0b
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50466904"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62281683"
 ---
-# <a name="compiler-errors-c2900-through-c2999"></a>Derleyici hataları C2900 ile c2999 arasındaki
+# <a name="compiler-errors-c2900-through-c2999"></a>C2900 ile c2999 arasındaki derleyici hataları
 
 Belgelerin bu bölümdeki makaleleri bir alt kümesini derleyici tarafından oluşturulan hata iletilerini açıklayın.
 
@@ -90,7 +90,7 @@ Belgelerin bu bölümdeki makaleleri bir alt kümesini derleyici tarafından olu
 |Hata|İleti|
 |-----------|-------------|
 |Derleyici Hatası C2900|'*bildirimci*': WinRT sınıflarındaki üye işlev Şablonları 'private', 'internal' veya 'protected private' olmalıdır|
-|Derleyici Hatası C2901|'*tanımlayıcı*': bir genel arabirim veya temsilci ortak olamaz|
+|Derleyici Hatası C2901|'*tanımlayıcı*': Bir genel arabirim veya temsilci ortak olamaz|
 |[Derleyici Hatası C2902](compiler-error-c2902.md)|'*belirteci*': beklenmeyen belirteç aşağıdaki 'şablon/genel', tanımlayıcı bekleniyor|
 |[Derleyici Hatası C2903](compiler-error-c2903.md)|'*tanımlayıcı*': simge ne bir sınıf şablonu/genel ne de bir işlev şablonu/genel olan|
 |[Derleyici Hatası C2904](compiler-error-c2904.md)|'*tanımlayıcı*': bir şablon geçerli kapsamda zaten kullanılan adı|
@@ -107,11 +107,11 @@ Belgelerin bu bölümdeki makaleleri bir alt kümesini derleyici tarafından olu
 |Derleyici Hatası C2915|'*tanımlayıcı*': '*türü*' bir WinRT türünün yayımlanmış yüzeyinde doğrudan kullanılamaz. Kullanım ' Platform::Object ^' bunun yerine bu türü geçirmek için|
 |Derleyici Hatası C2916|'*tanımlayıcı*': [FlagsAttribute] (yalnızca) girilmesi gerekir ortak bir numaralandırma üzerinde 'temel alınan türü bir'unsigned int'|
 |[Derleyici Hatası C2917](compiler-error-c2917.md)|'*tanımlayıcı*': Geçersiz şablon parametresi|
-|[Derleyici Hatası C2918](compiler-error-c2918.md)|'*tanımlayıcı*': dizini oluşturulmuş özellikler bir WinRT türünün yayımlanmış yüzeyinde kullanılamaz|
-|[Derleyici Hatası C2919](compiler-error-c2919.md)|'*türü*': işleçler bir WinRT türünün yayımlanmış yüzeyinde kullanılamaz|
+|[Derleyici Hatası C2918](compiler-error-c2918.md)|'*tanımlayıcı*': Dizinli Özellikler bir WinRT türünün yayımlanmış yüzeyinde kullanılamaz|
+|[Derleyici Hatası C2919](compiler-error-c2919.md)|'*türü*': İşleçler bir WinRT türünün yayımlanmış yüzeyinde kullanılamaz|
 |[Derleyici Hatası C2920](compiler-error-c2920.md)|yeniden tanımlama: '*türü*': sınıf şablonu/genel zaten bildirildi olarak*bildirimi*'|
 |[Derleyici Hatası C2921](compiler-error-c2921.md)|yeniden tanımlama: '*türü*': sınıf şablonu/genel yeniden tanımlanıyor olarak*bildirimi*'|
-|Derleyici Hatası C2922|'*arabirimi*': bir WinRT arabirimi statik üye içeremez|
+|Derleyici Hatası C2922|'*arabirimi*': Bir WinRT arabirimi statik üye içeremez.|
 |[Derleyici Hatası C2923](compiler-error-c2923.md)|'*türü*': '*tanımlayıcı*'parametresi için geçerli şablonu/genel tür bağımsız değişkeni değil'*parametre*'|
 |Derleyici Hatası C2924|__declspec(interrupt) yordam bağımsız değişkeni R2'de|
 |Derleyici Hatası C2925|__declspec(interrupt) yordamı kayan nokta kullanamaz|
@@ -127,7 +127,7 @@ Belgelerin bu bölümdeki makaleleri bir alt kümesini derleyici tarafından olu
 |[Derleyici Hatası C2935](compiler-error-c2935.md)|'*türü*': şablon kimliği/genel kimliği genel bir işlev yeniden tanımlandı|
 |[Derleyici Hatası C2936](compiler-error-c2936.md)|'*türü*': şablon kimliği/genel kimliği bir genel veri değişken olarak yeniden tanımlandı|
 |[Derleyici Hatası C2937](compiler-error-c2937.md)|'*türü*': şablon kimliği/genel kimliği bir genel tür tanımı yeniden tanımlandı|
-|Derleyici Hatası C2938|'*tanımlayıcı*': diğer ad şablonu Özelleştirilemedi|
+|Derleyici Hatası C2938|'*tanımlayıcı*': Diğer ad şablonu özelleştirilemedi|
 |[Derleyici Hatası C2939](compiler-error-c2939.md)|'*türü*': şablon kimliği/genel kimliği bir yerel veri değişken olarak yeniden tanımlandı|
 |[Derleyici Hatası C2940](compiler-error-c2940.md)|'*türü*': şablon kimliği/genel kimliği yerel bir tür tanımı yeniden tanımlandı|
 |[Derleyici Hatası C2941](compiler-error-c2941.md)|'*türü*': şablon kimliği/genel kimliği yerel yeniden tanımlandı '*öğesi*'|
@@ -189,3 +189,8 @@ Belgelerin bu bölümdeki makaleleri bir alt kümesini derleyici tarafından olu
 |Derleyici Hatası C2997|'*işlevi*': dizi varsayılan üye başlatıcıya atanan olamaz|
 |[Derleyici Hatası C2998](compiler-error-c2998.md)|'*bildirimci*': bir şablon tanımı olamaz|
 |Derleyici Hatası c2999 arasındaki|Bilinmeyen hata Lütfen Visual C++ Yardım menüsünde teknik destek komutunu seçin veya daha fazla bilgi için teknik destek Yardım dosyasını açın|
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[C /C++ derleyicisi ve derleme araçları hataları ve Uyarıları](../compiler-errors-1/c-cpp-build-errors.md) \
+[C3999 arasındaki derleyici hataları C2000-](../compiler-errors-1/compiler-errors-c2000-c3999.md)

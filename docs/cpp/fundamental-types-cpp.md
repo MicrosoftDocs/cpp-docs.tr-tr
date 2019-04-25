@@ -44,11 +44,11 @@ helpviewer_keywords:
 - data types [C++], void
 ms.assetid: 58b0106a-0406-4b74-a430-7cbd315c0f89
 ms.openlocfilehash: f4af392ed559349b0e49fd26f3ecb4406a70b74b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50601376"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62153807"
 ---
 # <a name="fundamental-types--c"></a>Temel Türler (C++)
 
@@ -77,7 +77,7 @@ Aşağıdaki tabloda tür boyutlarına kısıtlamaları açıklar. Bu kısıtlam
 ||**Long long**|Büyük bir imzalanmamış **uzun**.<br /><br /> Türündeki nesneler **uzun uzun** olarak bildirilebilir **imzalanmış long long** veya **işaretsiz long long**. **imzalanmış Long long** eşanlamlıdır **uzun uzun**.|
 ||**wchar_t**, **__wchar_t**|Türünde bir değişken **wchar_t** bir geniş karakter veya çok baytlı karakter türünü belirtir. Varsayılan olarak, **wchar_t** yerel bir tür olduğu halde kullanabileceğiniz [/Zc:wchar_t-](../build/reference/zc-wchar-t-wchar-t-is-native-type.md) yapmak **wchar_t** için bir typedef **işaretsiz**. **__Wchar_t** türüdür yerel Microsoft'a özgü eşanlamlısı **wchar_t** türü.<br /><br /> L önekini bir karakter veya dize sabit değeri önce geniş karakter türü belirtmek için kullanın.|
 |Kayan nokta|**float**|Tür **float** olan en küçük kayan nokta türüne.|
-||**double**|Tür **çift** değerinden daha büyük kayan nokta türünü veya türü için eşittir **float**, ancak daha kısa veya ona eşit **uzun çift**.<br /><br /> Microsoft'a özgü: gösterimini **uzun çift** ve **çift** aynıdır. Ancak, **uzun çift** ve **çift** farklı türlerdir.|
+||**double**|Tür **çift** değerinden daha büyük kayan nokta türünü veya türü için eşittir **float**, ancak daha kısa veya ona eşit **uzun çift**.<br /><br /> Microsoft'a özgü: Gösterimini **uzun çift** ve **çift** aynıdır. Ancak, **uzun çift** ve **çift** farklı türlerdir.|
 ||**uzun çift**|Tür **uzun çift** kayan bir değerinden daha büyük bir nokta türünü ya da türü için eşittir **çift**.|
 
 **Microsoft'a özgü**

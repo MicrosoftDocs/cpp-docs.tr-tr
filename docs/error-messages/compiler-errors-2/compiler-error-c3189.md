@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3189
 ms.assetid: b254de79-931e-4a59-a9f4-1c690d90ca5e
 ms.openlocfilehash: b2de290178657ae427b5ad7999c511ae7ff9f1eb
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59778611"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62300652"
 ---
 # <a name="compiler-error-c3189"></a>Derleyici Hatası C3189
 

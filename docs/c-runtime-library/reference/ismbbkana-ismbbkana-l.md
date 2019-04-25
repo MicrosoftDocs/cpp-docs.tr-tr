@@ -29,11 +29,11 @@ helpviewer_keywords:
 - ismbbkana_l function
 ms.assetid: 64d4eb4a-205a-40ef-be35-ff9d77fabbaf
 ms.openlocfilehash: 723b914f5df92f20e4982bf6f7f04d1b251606f7
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50440991"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62287023"
 ---
 # <a name="ismbbkana-ismbbkanal"></a>_ismbbkana, _ismbbkana_l
 

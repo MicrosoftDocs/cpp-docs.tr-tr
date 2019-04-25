@@ -6,11 +6,11 @@ helpviewer_keywords:
 - typeid keyword [C++]
 ms.assetid: e9706cae-e7c4-4d6d-b474-646d73df3e70
 ms.openlocfilehash: ec64388d5f71cff01207129e337cf20bb151db1a
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59031517"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62265133"
 ---
 # <a name="typeid--ccli-and-ccx"></a>typeid (C++/CLI ve C++/CX)
 

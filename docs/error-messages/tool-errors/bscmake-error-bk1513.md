@@ -7,11 +7,11 @@ helpviewer_keywords:
 - BK1513
 ms.assetid: 9ba87c09-8d82-4c80-b0cf-a8de63dcf9da
 ms.openlocfilehash: c02e9b47b3d32e4d21914188b96913d6dff03127
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50477226"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62279313"
 ---
 # <a name="bscmake-error-bk1513"></a>BSCMAKE Hatası BK1513
 

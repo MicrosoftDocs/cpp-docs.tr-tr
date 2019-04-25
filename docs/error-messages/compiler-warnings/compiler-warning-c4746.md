@@ -3,11 +3,11 @@ title: Derleyici Uyarısı C4746
 ms.date: 11/04/2016
 ms.assetid: 5e79ab46-6031-499a-a986-716c866b6c0e
 ms.openlocfilehash: 1b79eed2134b8c6310e508e56b3388c6f38fe4b7
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50625894"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62311117"
 ---
 # <a name="compiler-warning-c4746"></a>Derleyici Uyarısı C4746
 

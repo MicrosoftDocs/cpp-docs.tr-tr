@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2669
 ms.assetid: f9cb8111-bcdc-484b-a863-2c42e15a0496
 ms.openlocfilehash: 7944ced947ba1d7c8b10172560ce6237a554e236
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50649676"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62300797"
 ---
 # <a name="compiler-error-c2669"></a>Derleyici Hatası C2669
 

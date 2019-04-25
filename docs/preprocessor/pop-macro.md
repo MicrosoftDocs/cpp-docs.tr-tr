@@ -9,11 +9,11 @@ helpviewer_keywords:
 - pragmas, pop_macro
 ms.assetid: 3b5489d0-69ba-4c66-b572-2748af0f12bb
 ms.openlocfilehash: 0ea7d37332ce50fd1d21acba058da721a23f2097
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59030345"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62180140"
 ---
 # <a name="popmacro"></a>pop_macro
 Ayarlar *macro_name* değeri bu makroya yönelik yığının en üstündeki makro.

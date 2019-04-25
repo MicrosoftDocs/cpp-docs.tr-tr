@@ -11,11 +11,11 @@ helpviewer_keywords:
 - menus [MFC], OLE document applications
 ms.assetid: 80b6bb17-d830-4122-83f0-651fc112d4d1
 ms.openlocfilehash: e00464e59de5e20627fd2423c101c23629d7c4d2
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57300355"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62225545"
 ---
 # <a name="menus-and-resources-menu-merging"></a>Menüler ve kaynaklar: Menü birleştirme
 

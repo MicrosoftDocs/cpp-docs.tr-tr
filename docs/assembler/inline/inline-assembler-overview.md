@@ -8,11 +8,11 @@ helpviewer_keywords:
 - inline assembly, inline assembler
 ms.assetid: d990331a-0e33-4760-8d7a-b720b0288335
 ms.openlocfilehash: 21e0d9ca0e64922b83518eb79c19d2f2e67813bd
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50543214"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62167017"
 ---
 # <a name="inline-assembler-overview"></a>Satır İçi Derleyiciye Genel Bakış
 
@@ -22,7 +22,7 @@ Satır içi derleyici, derleme dili talimatlarını ek derleme ve bağlama adım
 
 Satır içi derleyici ayrı derleme ve bağlantı adımları gerektirmediğinden, ayrı bir derleyiciden daha kullanışlıdır. Satır içi derleme kodu, programınızın C ve C++ kodu ile tümleştirmek de kolaydır, böylece kapsam içinde olan tüm C veya C++ değişken veya işlev adı kullanabilirsiniz. Ve derleme kodu C ve C++ deyimleri ile karma olabilir çünkü hantal ya da C veya C++ tek başına olanaksız olan görevleri yapabilirsiniz.
 
-[__Asm](../../assembler/inline/asm.md) anahtar sözcüğü satır içi assembler çağırır ve her yerde bir C veya C++ deyiminin geçerli olduğu durumda görünebilir. Kendisi tarafından bulunamaz. Derleme yönergesinde, köşeli ayraçlar veya en azından içine yönergeler grubu tarafından gelmelidir bir çift boş tırnak işaretinin izlemesi. Terim "`__asm` blok" burada herhangi bir yönerge ya da küme ayraçları içinde olsun veya olmasın yönergeler grubu anlamına gelir.
+[__Asm](../../assembler/inline/asm.md) anahtar sözcüğü satır içi assembler çağırır ve bir C her yerde görünebilir veya C++ deyimi geçerli. Kendisi tarafından bulunamaz. Derleme yönergesinde, köşeli ayraçlar veya en azından içine yönergeler grubu tarafından gelmelidir bir çift boş tırnak işaretinin izlemesi. Terim "`__asm` blok" burada herhangi bir yönerge ya da küme ayraçları içinde olsun veya olmasın yönergeler grubu anlamına gelir.
 
 Aşağıdaki kod, basit bir `__asm` blok küme ayraçları içine alınmış. (Kod, bir özel işlev giriş sırasıdır.)
 

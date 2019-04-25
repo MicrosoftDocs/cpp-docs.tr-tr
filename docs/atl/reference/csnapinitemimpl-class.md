@@ -28,11 +28,11 @@ helpviewer_keywords:
 - snap-ins
 ms.assetid: 52caefbd-9eae-49b0-add2-d55524271aa7
 ms.openlocfilehash: 27f3e8a17a9538a72a6592177a88a9b415b1a27c
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57297820"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62277714"
 ---
 # <a name="csnapinitemimpl-class"></a>Csnapınıtemımpl sınıfı
 

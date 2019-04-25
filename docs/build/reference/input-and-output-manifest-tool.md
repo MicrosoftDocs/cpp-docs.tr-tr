@@ -11,11 +11,11 @@ f1_keywords:
 - VC.Project.VCManifestTool.GenerateCatalogFiles
 ms.assetid: a8bb20f6-7ace-45ca-bab0-b4f4a5caf170
 ms.openlocfilehash: 1731665ffa6117896490115028b4744e195beae2
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57824087"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62291062"
 ---
 # <a name="input-and-output-manifest-tool-configuration-properties-ltprojectnamegt-property-pages-dialog-box"></a>Girdi ve çıktı, bildirim aracı, yapılandırma özellikleri, &lt;Projectname&gt; özellik sayfaları iletişim kutusu
 
@@ -65,4 +65,4 @@ Uygulamanın DPI kullanan olup olmadığını belirtir. Varsayılan ayardır **E
 
 [ClickOnce Uygulama Bildirimi](/visualstudio/deployment/clickonce-application-manifest)<br/>
 [Bildirim Aracı özellik sayfaları](manifest-tool-property-pages.md)<br/>
-[C++ derleyicisi ayarlayın ve derleme Visual Studio özellikleri](../working-with-project-properties.md)<br/>
+[Visual Studio’da C++ derleyicisi ve derleme özelliklerini ayarlama](../working-with-project-properties.md)<br/>

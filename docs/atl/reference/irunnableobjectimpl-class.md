@@ -17,11 +17,11 @@ helpviewer_keywords:
 - controls [C++], container running in ATL
 ms.assetid: 305c7c3b-889e-49dd-aca1-34379c1b9931
 ms.openlocfilehash: 44b1e0ae1b72a40b45abe0650eb69a279b5a84d1
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57269668"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62200345"
 ---
 # <a name="irunnableobjectimpl-class"></a>Irunnableobjectımpl sınıfı
 

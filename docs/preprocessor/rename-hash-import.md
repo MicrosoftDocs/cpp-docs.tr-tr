@@ -7,11 +7,11 @@ helpviewer_keywords:
 - rename attribute
 ms.assetid: 5c5c6153-1087-4b7b-87fb-fc59b90b9975
 ms.openlocfilehash: 0fbed04f040a47b5b389f40eeb15254da4a7940b
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59037073"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62179736"
 ---
 # <a name="rename-import"></a>Yeniden Adlandır (\#içeri aktarma)
 

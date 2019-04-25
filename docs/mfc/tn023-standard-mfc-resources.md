@@ -9,11 +9,11 @@ helpviewer_keywords:
 - standard resources
 ms.assetid: 60af8415-c576-4c2f-a711-ca5da0b9a1f2
 ms.openlocfilehash: d29f0ab2254a52e01f2016f64a37ddfce47955bb
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58780320"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62306044"
 ---
 # <a name="tn023-standard-mfc-resources"></a>TN023: Standart MFC kaynakları
 

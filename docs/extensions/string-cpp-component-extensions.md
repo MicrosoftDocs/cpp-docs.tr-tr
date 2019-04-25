@@ -7,11 +7,11 @@ helpviewer_keywords:
 - /clr compiler option [C++], string support
 ms.assetid: c695f965-9be0-4e20-9661-373bfee6557e
 ms.openlocfilehash: 8440ddf510f99618c28a6b6d585c8628df85f9cb
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59038547"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62265272"
 ---
 # <a name="string--ccli-and-ccx"></a>Dize (C++/CLI ve C++/CX)
 

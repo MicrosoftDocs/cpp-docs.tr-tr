@@ -25,11 +25,11 @@ helpviewer_keywords:
 - checking character devices
 ms.assetid: 9f1b2e87-0cd7-4079-b187-f2b7ca15fcbe
 ms.openlocfilehash: ef0df5f859779c081df47ef4bfe938ec2601d524
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50545593"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62157480"
 ---
 # <a name="isatty"></a>_isatty
 

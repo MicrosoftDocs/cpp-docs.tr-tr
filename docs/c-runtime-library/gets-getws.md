@@ -29,11 +29,11 @@ helpviewer_keywords:
 - standard input, reading from
 ms.assetid: 1ec2dd4b-f801-48ea-97c2-892590f16024
 ms.openlocfilehash: bd5f4e885c0291be963320610942415fc7b61172
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57738535"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62289565"
 ---
 # <a name="gets-getws"></a>gets, _getws
 

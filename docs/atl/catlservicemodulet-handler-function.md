@@ -5,11 +5,11 @@ helpviewer_keywords:
 - Handler method
 ms.assetid: 14db5f2a-be87-4774-a296-445cb6fc7b2e
 ms.openlocfilehash: fffdeddce7f3fa27d798ea7abafe85c9a13d9d97
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57815547"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62223191"
 ---
 # <a name="catlservicemodulethandler-function"></a>CAtlServiceModuleT::Handler işlevi
 

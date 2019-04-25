@@ -9,11 +9,11 @@ helpviewer_keywords:
 - synchronization
 ms.assetid: 48c90da6-d6fb-4710-9c7c-2b9c9344bda1
 ms.openlocfilehash: 5776baa222cacd9ab4a2824261425fdc077c4fc6
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57739313"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62153391"
 ---
 # <a name="lock"></a>lock
 

@@ -10,11 +10,11 @@ helpviewer_keywords:
 - ATL projects, adding interfaces
 ms.assetid: 7d34b023-2c6b-4155-aca3-d47a40968063
 ms.openlocfilehash: 99f262d420cd503c6ca385ed29bcaa2647c5f556
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57810061"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62249199"
 ---
 # <a name="adding-a-new-interface-in-an-atl-project"></a>ATL projesine yeni arabirim ekleme
 

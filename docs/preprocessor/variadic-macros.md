@@ -6,11 +6,11 @@ helpviewer_keywords:
 - __VA_ARGS__ variadic macro specifier
 ms.assetid: 51e757dc-0134-4bb2-bb74-64ea5ad75134
 ms.openlocfilehash: da159ef979ccc38845064debebae55356bc9e9bd
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59022846"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62179575"
 ---
 # <a name="variadic-macros"></a>Variadic Makrolar
 

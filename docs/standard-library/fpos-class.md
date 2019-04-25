@@ -12,11 +12,11 @@ helpviewer_keywords:
 - std::fpos [C++], state
 ms.assetid: ffd0827c-fa34-47f4-b10e-5cb707fcde47
 ms.openlocfilehash: 78b136d72067fa5fff58e8a7acc044fb4e1a409e
-ms.sourcegitcommit: 309dc532f13242854b47759cef846de59bb807f1
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58565080"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62159463"
 ---
 # <a name="fpos-class"></a>fpos Sınıfı
 

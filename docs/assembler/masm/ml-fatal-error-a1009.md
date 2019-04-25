@@ -8,11 +8,11 @@ helpviewer_keywords:
 - A1009
 ms.assetid: f7a962a6-4280-485e-95cb-2ab8922c66c2
 ms.openlocfilehash: 7d186b4988f4795256a21c9f85d500c1e92b1e66
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50495205"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62177701"
 ---
 # <a name="ml-fatal-error-a1009"></a>ML Önemli Hatası A1009
 

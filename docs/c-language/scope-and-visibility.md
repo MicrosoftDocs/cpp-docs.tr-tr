@@ -7,11 +7,11 @@ helpviewer_keywords:
 - file scope [C++]
 ms.assetid: a019eb7c-66ed-46a7-bc9f-89a963930a56
 ms.openlocfilehash: 01b2bc8d75c3c65639a3ff0c57b1a368760eba53
-ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56151292"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62158351"
 ---
 # <a name="scope-and-visibility"></a>Kapsam ve Görünürlük
 

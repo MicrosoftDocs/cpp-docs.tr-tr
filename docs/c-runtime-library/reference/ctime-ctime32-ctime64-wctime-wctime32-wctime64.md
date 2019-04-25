@@ -51,11 +51,11 @@ helpviewer_keywords:
 - time, converting
 ms.assetid: 2423de37-a35c-4f0a-a378-3116bc120a9d
 ms.openlocfilehash: d1858a36c68a2ca5cedf70a1d74d5f250cbac8df
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50580832"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62288609"
 ---
 # <a name="ctime-ctime32-ctime64-wctime-wctime32-wctime64"></a>ctime, _ctime32, _ctime64, _wctime, _wctime32, _wctime64
 

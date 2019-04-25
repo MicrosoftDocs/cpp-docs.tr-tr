@@ -9,11 +9,11 @@ helpviewer_keywords:
 - functions [ATL], error reporting
 ms.assetid: 11339c02-98cd-428d-b3b9-7deeb155a6a3
 ms.openlocfilehash: f7483b7473383958089b0c88d0b3c2645ddc2a4f
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57287576"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62276672"
 ---
 # <a name="debugging-and-error-reporting-global-functions"></a>Hata ayıklama ve hata raporlama genel işlevleri
 

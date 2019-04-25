@@ -8,11 +8,11 @@ helpviewer_keywords:
 - allocator_unbounded class
 ms.assetid: facbaea1-b320-4d99-96da-039b2642f352
 ms.openlocfilehash: 4e5bf54b386a3c3fe4e2604a78437275707acbfd
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50586296"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62179191"
 ---
 # <a name="allocatorunbounded-class"></a>allocator_unbounded Sınıfı
 
@@ -29,7 +29,7 @@ class allocator_unbounded;
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|*Türü*|Ayırıcı tarafından ayrılan öğelerin türü.|
+|*Tür*|Ayırıcı tarafından ayrılan öğelerin türü.|
 
 ## <a name="remarks"></a>Açıklamalar
 

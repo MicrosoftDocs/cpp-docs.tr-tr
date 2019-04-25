@@ -6,11 +6,11 @@ helpviewer_keywords:
 - NMAKE program, dependents
 ms.assetid: d4e8db25-fdc0-4d73-81ec-1538f2e1b3e8
 ms.openlocfilehash: b89306b6e4d85e0e08729fb1d35fb041d69647e7
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57823979"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62272119"
 ---
 # <a name="dependency-side-effects"></a>Bağımlılık Yan Etkileri
 

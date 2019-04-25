@@ -1,6 +1,6 @@
 ---
-title: Derleyici uyarılarını C4000 ile c4199 arasındaki
-ms.date: 11/17/2017
+title: C4000 ile c4199 arasındaki derleyici uyarıları
+ms.date: 04/21/2019
 f1_keywords:
 - C4000
 - C4035
@@ -20,14 +20,14 @@ f1_keywords:
 - C4196
 - C4199
 ms.assetid: 426f495a-43af-4906-ad2b-6e5822c09965
-ms.openlocfilehash: 746bd86b9c5911ac8d4f7ae455b5a2184d302746
-ms.sourcegitcommit: 90817d9d78fbaed8ffacde63f3add334842e596f
+ms.openlocfilehash: 1af76f1bad4d8df06d527063bc6618d0f8ef8f70
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "58278492"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62226721"
 ---
-# <a name="compiler-warnings-c4000-through-c4199"></a>Derleyici uyarılarını C4000 ile c4199 arasındaki
+# <a name="compiler-warnings-c4000-through-c4199"></a>C4000 ile c4199 arasındaki derleyici uyarıları
 
 Belgelerin bu bölümdeki makaleleri bir alt kümesini derleyici tarafından oluşturulan uyarı iletilerini açıklamaktadır.
 
@@ -43,12 +43,12 @@ Belgelerin bu bölümdeki makaleleri bir alt kümesini derleyici tarafından olu
 |[Derleyici Uyarısı (düzey 1) C4003](../../error-messages/compiler-warnings/compiler-warning-level-1-c4003.md)|Makro 'identifier' yeterli sayıda gerçek parametre|
 |[Derleyici Uyarısı (düzey 1) C4005](../../error-messages/compiler-warnings/compiler-warning-level-1-c4005.md)|'identifier': makro yeniden tanımlama|
 |[Derleyici Uyarısı (düzey 1) C4006](compiler-warning-level-1-c4006.md)|#undef bir tanımlayıcı bekliyordu|
-|[Derleyici Uyarısı (düzey 2) C4007](../../error-messages/compiler-warnings/compiler-warning-level-2-c4007.md)|'function': 'özniteliği' olmalıdır|
+|[Derleyici Uyarısı (Düzey 2) C4007](../../error-messages/compiler-warnings/compiler-warning-level-2-c4007.md)|'function': 'özniteliği' olmalıdır|
 |[Derleyici Uyarısı (Düzey 3) C4008](compiler-warning-levels-2-and-3-c4008.md)|'function': 'öznitelik' özniteliği yoksayıldı|
 |[Derleyici Uyarısı (düzey 1) C4010](../../error-messages/compiler-warnings/compiler-warning-level-1-c4010.md)|tek satır açıklama satır devam ettirme karakteri içeriyor|
-|[Derleyici Uyarısı (düzey 3) C4013](../../error-messages/compiler-warnings/compiler-warning-level-3-c4013.md)|'function' tanımsız; int döndüren extern olduğu varsayılıyor|
+|[Derleyici Uyarısı (Düzey 3) C4013](../../error-messages/compiler-warnings/compiler-warning-level-3-c4013.md)|'function' tanımsız; int döndüren extern olduğu varsayılıyor|
 |[Derleyici Uyarısı (düzey 1) C4015](../../error-messages/compiler-warnings/compiler-warning-level-1-c4015.md)|'tanımlayıcı': bit alanının türü tamsayı olmalıdır|
-|[Derleyici Uyarısı (düzey 3) C4018](../../error-messages/compiler-warnings/compiler-warning-level-3-c4018.md)|'expression': imzalı/imzasız uyuşmazlığı|
+|[Derleyici Uyarısı (Düzey 3) C4018](../../error-messages/compiler-warnings/compiler-warning-level-3-c4018.md)|'expression': imzalı/imzasız uyuşmazlığı|
 |[Derleyici Uyarısı (düzey 4) C4019](compiler-warning-level-4-c4019.md)|Genel kapsamda boş deyim|
 |[Derleyici Uyarısı (düzey 1) C4020](../../error-messages/compiler-warnings/compiler-warning-level-1-c4020.md)|'function': Gerçek parametre sayısı fazla|
 |[Derleyici Uyarısı (düzey 1) C4022](../../error-messages/compiler-warnings/compiler-warning-level-1-c4022.md)|'function': %d gerçek parametresi 'parametre sayısı' için işaretçi uyuşmazlığı|
@@ -77,7 +77,7 @@ Belgelerin bu bölümdeki makaleleri bir alt kümesini derleyici tarafından olu
 |[Derleyici Uyarısı (düzey 4) C4052](compiler-warning-level-1-c4052.md)|işlev bildirimleri farklı; bir değişken bağımsız değişkenler içeriyor|
 |[Derleyici Uyarısı (düzey 4) C4053](compiler-warning-level-4-c4053.md)|için bir void işlenen '?:'|
 |[Derleyici uyarısı (düzey 1) C4055](compiler-warning-level-1-c4055.md)|'conversion':'veri işaretçisinden '*type1*'için işlev işaretçisi'*type2*'|
-|[Derleyici Uyarısı (düzey 2) C4056](../../error-messages/compiler-warnings/compiler-warning-level-2-c4056.md)|kayan noktalı sabit aritmetik işleminde taşma|
+|[Derleyici Uyarısı (Düzey 2) C4056](../../error-messages/compiler-warnings/compiler-warning-level-2-c4056.md)|kayan noktalı sabit aritmetik işleminde taşma|
 |[Derleyici Uyarısı (düzey 4) C4057](compiler-warning-level-4-c4057.md)|'operator': 'ıdentifier1' biraz farklı taban türlerden farklı yöneltme 'identifier2' farklıdır|
 |Derleyici Uyarısı C4060|switch deyimi hiçbir 'case' veya 'default' etiketi içeriyor|
 |[Derleyici Uyarısı (düzey 4) C4061](../../error-messages/compiler-warnings/compiler-warning-level-4-c4061.md)|'enumeration' numaralandırıcısının switch ' identifier' numaralandırıcısı case etiketi tarafından açıkça işlenmiyor|
@@ -89,7 +89,7 @@ Belgelerin bu bölümdeki makaleleri bir alt kümesini derleyici tarafından olu
 |[Derleyici Uyarısı (düzey 1) C4067](../../error-messages/compiler-warnings/compiler-warning-level-1-c4067.md)|Beklenmeyen belirteçler aşağıdaki önişlemci yönergesi - satır sonu bekleniyordu|
 |[Derleyici Uyarısı (düzey 1) C4068](compiler-warning-level-1-c4068.md)|Bilinmeyen pragma|
 |Derleyici Uyarısı C4069|uzun çift hassasiyet bakımından çift değer|
-|[Derleyici Uyarısı (düzey 3) C4073](../../error-messages/compiler-warnings/compiler-warning-level-3-c4073.md)|Kitaplığın başlatma alanına başlatıcılar yerleştirildi|
+|[Derleyici Uyarısı (Düzey 3) C4073](../../error-messages/compiler-warnings/compiler-warning-level-3-c4073.md)|Kitaplığın başlatma alanına başlatıcılar yerleştirildi|
 |[Derleyici Uyarısı (düzey 1) C4074](../../error-messages/compiler-warnings/compiler-warning-level-1-c4074.md)|Derleyici için ayrılmış başlatma alanına başlatıcılar yerleştirildi|
 |[Derleyici Uyarısı (düzey 1) C4075](compiler-warning-level-1-c4075.md)|Tanınmayan başlatma alanına başlatıcılar yerleştirildi|
 |[Derleyici Uyarısı (düzey 1) C4076](compiler-warning-level-1-c4076.md)|'type_modifier': 'typename' türüyle kullanılamaz|
@@ -106,13 +106,13 @@ Belgelerin bu bölümdeki makaleleri bir alt kümesini derleyici tarafından olu
 |[Derleyici Uyarısı (düzey 1) C4090](../../error-messages/compiler-warnings/compiler-warning-level-1-c4090.md)|'operation': farklı 'değiştiricisi' niteleyicileri|
 |[Derleyici Uyarısı (düzey 1) C4091](../../error-messages/compiler-warnings/compiler-warning-level-1-c4091.md)|anahtar sözcüğü ': hiçbir değişken bildirirken 'type' solunda yoksayılır|
 |[Derleyici Uyarısı (düzey 4) C4092](../../error-messages/compiler-warnings/compiler-warning-level-4-c4092.md)|sizeof 'işaretsiz uzun' döndürür|
-|[Derleyici Uyarısı (düzey 2) C4094](../../error-messages/compiler-warnings/compiler-warning-level-2-c4094.md)|Etiketlenmemiş 'belirteci' hiçbir simge bildirimi yapmadı|
+|[Derleyici Uyarısı (Düzey 2) C4094](../../error-messages/compiler-warnings/compiler-warning-level-2-c4094.md)|Etiketlenmemiş 'belirteci' hiçbir simge bildirimi yapmadı|
 |[Derleyici Uyarısı (düzey 1) C4096](../../error-messages/compiler-warnings/compiler-warning-level-1-c4096.md)|'identifier': arabirim bir COM arabirimi değil IDL için yayılan değil|
 |[Derleyici Uyarısı (düzey 1) C4097](compiler-warning-level-1-c4097.md)|pragma parametresinin 'restore' olması bekleniyor veya 'off'|
 |[Derleyici Uyarısı (düzey 1) C4098](../../error-messages/compiler-warnings/compiler-warning-level-1-c4098.md)|'function': 'void' işlev değer döndürüyor|
-|[Derleyici Uyarısı (düzey 2) C4099](../../error-messages/compiler-warnings/compiler-warning-level-2-c4099.md)|'identifier': tür adı 'kullanılarak 'object_type2' artık görülen object_type1' kullanarak ilk görülme|
+|[Derleyici Uyarısı (Düzey 2) C4099](../../error-messages/compiler-warnings/compiler-warning-level-2-c4099.md)|'identifier': tür adı 'kullanılarak 'object_type2' artık görülen object_type1' kullanarak ilk görülme|
 |[Derleyici Uyarısı (düzey 4) C4100](../../error-messages/compiler-warnings/compiler-warning-level-4-c4100.md)|'identifier': başvurulmayan biçimsel parametre|
-|[Derleyici Uyarısı (düzey 3) C4101](../../error-messages/compiler-warnings/compiler-warning-level-3-c4101.md)|'identifier': başvurulmayan yerel değişken|
+|[Derleyici Uyarısı (Düzey 3) C4101](../../error-messages/compiler-warnings/compiler-warning-level-3-c4101.md)|'identifier': başvurulmayan yerel değişken|
 |[Derleyici Uyarısı (Düzey 3) C4102](compiler-warning-level-3-c4102.md)|'etiketi': Etiket başvurusu kaldırıldı|
 |[Derleyici Uyarısı (düzey 1) C4103](../../error-messages/compiler-warnings/compiler-warning-level-1-c4103.md)|'filename': #pragma pack(pop) eksik olduğundan üst bilgi eklendikten sonra değiştirilen hizalama olabilir|
 |[Derleyici Uyarısı (düzey 1) C4109](compiler-warning-level-1-c4109.md)|Beklenmeyen tanımlayıcı 'identifier'|
@@ -134,7 +134,7 @@ Belgelerin bu bölümdeki makaleleri bir alt kümesini derleyici tarafından olu
 |[Derleyici Uyarısı (düzey 4) C4130](compiler-warning-level-4-c4130.md)|'operator': dize sabitinin adresi üzerinde mantıksal işlem|
 |[Derleyici Uyarısı (düzey 4) C4131](compiler-warning-level-4-c4131.md)|'function': eski stil bildirimci kullanıyor|
 |[Derleyici Uyarısı (düzey 4) C4132](compiler-warning-level-4-c4132.md)|'object': const nesnenin başlatılması gerekir|
-|[Derleyici Uyarısı (düzey 3) C4133](../../error-messages/compiler-warnings/compiler-warning-level-3-c4133.md)|'expression': uyumsuz türler - 'type2' öğesine 'type1' öğesinden|
+|[Derleyici Uyarısı (Düzey 3) C4133](../../error-messages/compiler-warnings/compiler-warning-level-3-c4133.md)|'expression': uyumsuz türler - 'type2' öğesine 'type1' öğesinden|
 |Derleyici Uyarısı C4137|'function': kayan noktalı işlevden dönüş değeri yok|
 |[Derleyici Uyarısı (düzey 1) C4138](compiler-warning-level-1-c4138.md)|' * /' açıklama dışında bulundu|
 |[Derleyici Uyarısı (düzey 1) C4141](compiler-warning-level-1-c4141.md)|'değiştiricisi': birden fazla kez kullanıldı|
@@ -142,16 +142,16 @@ Belgelerin bu bölümdeki makaleleri bir alt kümesini derleyici tarafından olu
 |[Derleyici Uyarısı (düzey 1) C4143](compiler-warning-level-1-c4143.md)|pragma 'same_seg' desteklenmiyor; __based ayırması kullanın|
 |[Derleyici Uyarısı (düzey 1) C4144](../../error-messages/compiler-warnings/compiler-warning-level-1-c4144.md)|'expression': switch ifadesi olarak ilişkisel ifade kullanıldı|
 |[Derleyici Uyarısı (düzey 1) C4145](compiler-warning-level-1-c4145.md)|'İfade1': switch ifadesi; olarak ilişkisel ifade kullanıldı 'expression2' ile karıştırılmış|
-|[Derleyici Uyarısı (düzey 2) C4146](../../error-messages/compiler-warnings/compiler-warning-level-2-c4146.md)|birli eksi işleci, sonuç hala işaretsiz işaretsiz türe uygulandı|
-|[Derleyici Uyarısı (düzey 2) C4150](../../error-messages/compiler-warnings/compiler-warning-level-2-c4150.md)|eksik türe 'type'; işaretçisinin silinmesi hiçbir yok edici çağrılmadı|
+|[Derleyici Uyarısı (Düzey 2) C4146](../../error-messages/compiler-warnings/compiler-warning-level-2-c4146.md)|birli eksi işleci, sonuç hala işaretsiz işaretsiz türe uygulandı|
+|[Derleyici Uyarısı (Düzey 2) C4150](../../error-messages/compiler-warnings/compiler-warning-level-2-c4150.md)|eksik türe 'type'; işaretçisinin silinmesi hiçbir yok edici çağrılmadı|
 |[Derleyici Uyarısı (düzey 4) C4152](compiler-warning-level-4-c4152.md)|Standart olmayan uzantı, işlev/veri işaretçisi dönüştürme|
 |[Derleyici Uyarısı (düzey 1) C4153](compiler-warning-level-1-c4153.md)|ifadede işlev/veri işaretçisi dönüştürme|
 |[Derleyici Uyarısı (düzey 1) C4154](../../error-messages/compiler-warnings/compiler-warning-level-1-c4154.md)|bir dizi ifadesinin silinmesi; işaretçiye dönüştürme sağlandı|
 |[Derleyici Uyarısı (düzey 1) C4155](compiler-warning-level-1-c4155.md)|'delete' dizi biçimi kullanılmadan bir dizi ifadesinin silinmesi|
-|[Derleyici Uyarısı (düzey 2) C4156](../../error-messages/compiler-warnings/compiler-warning-level-2-c4156.md)|'delete'; dizi biçimi kullanılmadan bir dizi ifadesinin silinmesi dizi biçimi kullanıldı|
+|[Derleyici Uyarısı (Düzey 2) C4156](../../error-messages/compiler-warnings/compiler-warning-level-2-c4156.md)|'delete'; dizi biçimi kullanılmadan bir dizi ifadesinin silinmesi dizi biçimi kullanıldı|
 |[Derleyici Uyarısı (düzey 1) C4157](../../error-messages/compiler-warnings/compiler-warning-level-1-c4157.md)|pragma C derleyicisi tarafından yoksayıldı|
 |[Derleyici Uyarısı (düzey 1) C4158](compiler-warning-level-1-c4158.md)|#pragma pointers_to_members (full_generality, 'inheritance_type') varsayılıyor|
-|[Derleyici Uyarısı (düzey 3) C4159](../../error-messages/compiler-warnings/compiler-warning-level-3-c4159.md)|#pragma ' pragma'(pop,...): daha önce tanımlayıcısı 'identifier' POP|
+|[Derleyici Uyarısı (Düzey 3) C4159](../../error-messages/compiler-warnings/compiler-warning-level-3-c4159.md)|#pragma ' pragma'(pop,...): daha önce tanımlayıcısı 'identifier' POP|
 |[Derleyici Uyarısı (düzey 1) C4160](compiler-warning-level-1-c4160.md)|#pragma ' pragma'(pop,...): daha önce 'identifier' bulunamadı|
 |[Derleyici Uyarısı (Düzey 3) C4161](compiler-warning-level-3-c4161.md)|#pragma ' pragma'(pop...): atma sayısından fazla|
 |[Derleyici Uyarısı (düzey 1) C4162](../../error-messages/compiler-warnings/compiler-warning-level-1-c4162.md)|'identifier': hiçbir işlev bulunamadı C bağlaması olan|
@@ -179,10 +179,15 @@ Belgelerin bu bölümdeki makaleleri bir alt kümesini derleyici tarafından olu
 |[Derleyici Uyarısı (düzey 4) C4189](compiler-warning-level-4-c4189.md)|'identifier': yerel değişken başlatıldı ancak başvurulmadı|
 |[Derleyici Uyarısı (düzey 1) C4190](../../error-messages/compiler-warnings/compiler-warning-level-1-c4190.md)|'ıdentifier1' sahip C bağlaması belirtildi, ancak UDT 'C ile uyumsuz olan identifier2' döndürür|
 |[Derleyici Uyarısı (Düzey 3) C4191](compiler-warning-level-3-c4191.md)|' operator/operation': 'type_required' \nCalling 'type_of_expression' güvenli olmayan dönüştürme işaretçi aracılığıyla bu işlev neden olabilir, programınızın başarısız|
-|[Derleyici Uyarısı (düzey 3) C4192](../../error-messages/compiler-warnings/compiler-warning-level-3-c4192.md)|'identifier ''ın 'library' tür kitaplığı alınırken otomatik olarak hariç|
+|[Derleyici Uyarısı (Düzey 3) C4192](../../error-messages/compiler-warnings/compiler-warning-level-3-c4192.md)|'identifier ''ın 'library' tür kitaplığı alınırken otomatik olarak hariç|
 |Derleyici Uyarısı (Düzey 3) C4193|#pragma warning(pop): no matching '#pragma warning(push)'|
 |Derleyici Uyarısı (düzey 1) C4194|#pragma start_map_region cannot be nested; ignored|
 |Derleyici Uyarısı (düzey 1) C4195|#pragma stop_map_region eşleşen #pragma start_map_region olmadan kullanıldı; yoksayıldı|
 |Derleyici Uyarısı (düzey 1) C4196|'%$L' veya '%$L'; bekleniyor '%$L' bulundu|
-|[Derleyici Uyarısı (düzey 3) C4197](../../error-messages/compiler-warnings/compiler-warning-level-3-c4197.md)|'type': tür Dönüştürmedeki en üst düzey volatile yoksayıldı|
+|[Derleyici Uyarısı (Düzey 3) C4197](../../error-messages/compiler-warnings/compiler-warning-level-3-c4197.md)|'type': tür Dönüştürmedeki en üst düzey volatile yoksayıldı|
 |Derleyici Uyarısı (düzey 1, 2. düzey, düzeyi 3 ve düzey 4) c4199 arasındaki|%s|
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[C /C++ derleyicisi ve derleme araçları hataları ve Uyarıları](../compiler-errors-1/c-cpp-build-errors.md) \
+[Derleyici uyarılarını C4000 - C5999](compiler-warnings-c4000-c5999.md)

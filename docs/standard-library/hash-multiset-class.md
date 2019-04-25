@@ -87,18 +87,18 @@ helpviewer_keywords:
 - stdext::hash_multiset::value_comp
 ms.assetid: 0580397a-a76e-40ad-aea2-5c6f3a9d0a21
 ms.openlocfilehash: 6b271adbaf3fe4d2d5c3b41e974bf3036e7b1947
-ms.sourcegitcommit: d441305fb19131afbd7fc259d8cda63ea26f2343
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51678523"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62159346"
 ---
 # <a name="hashmultiset-class"></a>hash_multiset Sınıfı
 
 > [!NOTE]
 > Bu, API artık kullanılmıyor. Alternatif [unordered_multiset sınıfı](../standard-library/unordered-multiset-class.md).
 
-Kapsayıcı sınıfı hash_multiset C++ Standart Kitaplığı bir uzantısıdır ve hızlı, içerdiği öğelerin değerlerinin anahtar değerler olarak hizmet veren ve benzersiz olması gerekmez, bir koleksiyondaki verileri alma ve depolama için kullanılır.
+Bir kapsayıcı sınıfı hash_multiset uzantısıdır C++ standart kitaplığı ve hızlı, içerdiği öğelerin değerlerinin anahtar değerler olarak hizmet veren ve benzersiz olması gerekmez, bir koleksiyondaki verileri alma ve depolama için kullanılır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -191,7 +191,7 @@ Hash_multiset sınıfı tarafından sağlanan yineleyici çift yönlüdür, olan
 |[silme](#erase)|Bir öğenin veya öğelerin aralığını kaldırır bir `hash_multiset` belirtilen konumları veya belirtilen bir anahtarla eşleşen öğeleri kaldırır.|
 |[Bul](#find)|İçindeki bir öğenin konumunu ele alan bir yineleyici döndüren bir `hash_multiset` belirtilen anahtara denk bir anahtara sahip.|
 |[get_allocator](#get_allocator)|Bir kopyasını döndürür `allocator` oluşturmak için kullanılan nesne `hash_multiset`.|
-|[Ekle](#insert)|Bir öğe veya bir dizi öğelerine ekler bir `hash_multiset`.|
+|[insert](#insert)|Bir öğe veya bir dizi öğelerine ekler bir `hash_multiset`.|
 |[key_comp](#key_compare)|İçindeki anahtarları sıralamak için kullanılan karşılaştırma nesnesinin bir kopyasını alır bir `hash_multiset`.|
 |[lower_bound](#lower_bound)|İçindeki ilk öğeye bir yineleyici döndüren bir `hash_multiset` belirtilen anahtardan daha büyük veya ona eşit bir anahtara sahip.|
 |[max_size](#max_size)|Öğesinin maksimum uzunluğunu döndürür `hash_multiset`.|
@@ -206,7 +206,7 @@ Hash_multiset sınıfı tarafından sağlanan yineleyici çift yönlüdür, olan
 
 |İşleç|Açıklama|
 |-|-|
-|[hash_multiset::operator =](#op_eq)|Hash_multiset öğelerini başka bir hash_multiset kopyasıyla değiştirir.|
+|[hash_multiset::operator=](#op_eq)|Hash_multiset öğelerini başka bir hash_multiset kopyasıyla değiştirir.|
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -544,7 +544,7 @@ size_type count(const Key& key) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*Anahtarı*<br/>
+*anahtar*<br/>
 Hash_multiset eşleştirilecek öğe anahtarı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -1011,7 +1011,7 @@ pair <iterator, iterator> equal_range (const Key& key);
 
 ### <a name="parameters"></a>Parametreler
 
-*Anahtarı*<br/>
+*anahtar*<br/>
 Aranan hash_multiset bir öğeyi sıralama anahtarı ile Karşılaştırılacak bağımsız değişken anahtarı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -1109,7 +1109,7 @@ Hash_multiset kaldırılan ilk öğenin konumu.
 *Son*<br/>
 Konum yalnızca son öğeden sonra hash_multiset kaldırıldı.
 
-*Anahtarı*<br/>
+*anahtar*<br/>
 Hash_multiset kaldırılacak öğe anahtarı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -1221,7 +1221,7 @@ const_iterator find(const Key& key) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*Anahtarı*<br/>
+*anahtar*<br/>
 Aranan hash_multiset bir öğeyi sıralama anahtarı olarak eşleşen bağımsız değişken anahtar.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -1656,7 +1656,7 @@ iterator lower_bound(const Key& key);
 
 ### <a name="parameters"></a>Parametreler
 
-*Anahtarı*<br/>
+*anahtar*<br/>
 Aranan hash_multiset bir öğeyi sıralama anahtarı ile Karşılaştırılacak bağımsız değişken anahtarı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -2215,7 +2215,7 @@ iterator upper_bound(const Key& key);
 
 ### <a name="parameters"></a>Parametreler
 
-*Anahtarı*<br/>
+*anahtar*<br/>
 Aranan hash_multiset bir öğeyi sıralama anahtarı ile Karşılaştırılacak bağımsız değişken anahtarı.
 
 ### <a name="return-value"></a>Dönüş Değeri

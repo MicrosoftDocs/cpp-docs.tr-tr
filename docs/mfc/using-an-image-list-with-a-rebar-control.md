@@ -6,11 +6,11 @@ helpviewer_keywords:
 - rebar controls [MFC], image lists
 ms.assetid: 1a5836ac-019a-46aa-8741-b35c3376b839
 ms.openlocfilehash: fa5307c201850fc42439c79a1c638a0707379913
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57285405"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62180508"
 ---
 # <a name="using-an-image-list-with-a-rebar-control"></a>Rebar Denetimiyle Birlikte Bir Görüntü Listesi Kullanma
 

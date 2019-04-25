@@ -25,11 +25,11 @@ helpviewer_keywords:
 - parameters [C++], validation
 ms.assetid: d9568b08-9514-49cd-b3dc-2454ded195a3
 ms.openlocfilehash: cf8bee39d6ec0f41049586d3861dcf450b7b2aaa
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57746949"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62268791"
 ---
 # <a name="security-features-in-the-crt"></a>CRT'deki Güvenlik Özellikleri
 

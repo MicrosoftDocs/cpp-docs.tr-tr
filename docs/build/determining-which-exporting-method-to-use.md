@@ -8,11 +8,11 @@ helpviewer_keywords:
 - .def files [C++], exporting from DLLs
 ms.assetid: 66d773ed-935c-45c2-ad03-1a060874b34d
 ms.openlocfilehash: 974c32cef87801599ba0d14fd146e84ad874467f
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57816301"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62273743"
 ---
 # <a name="determine-which-exporting-method-to-use"></a>Hangi dışarı aktarma metodunun kullanılacağını belirleme
 
@@ -48,13 +48,13 @@ Kullanarak `__declspec(dllexport)` koruma .def dosyası ve düzenlenmiş adlar d
 
 - [C veya C++ dili çalıştırılabilirlerinde kullanmak için C işlevlerini dışa aktarma](exporting-c-functions-for-use-in-c-or-cpp-language-executables.md)
 
-- [__Declspec(dllimport) kullanarak bir uygulamayı içeri aktarın](importing-into-an-application-using-declspec-dllimport.md)
+- [__declspec(dllimport) kullanarak bir uygulamaya aktarma](importing-into-an-application-using-declspec-dllimport.md)
 
 - [DLL'yi Başlat](run-time-library-behavior.md#initializing-a-dll)
 
 ### <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz?
 
-- [İçeri ve dışarı aktarma satır içi işlevler](importing-and-exporting-inline-functions.md)
+- [Satır içi işlevleri içeri ve dışarı aktarma](importing-and-exporting-inline-functions.md)
 
 - [Karşılıklı içeri aktarmalar](mutual-imports.md)
 

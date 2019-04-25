@@ -7,11 +7,11 @@ helpviewer_keywords:
 - type libraries [MFC], accessing
 ms.assetid: a03fa7f0-86c2-4119-bf81-202916fb74b3
 ms.openlocfilehash: d5aa92d520e2a806837ceb5208ca1262504ee02e
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57301980"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62309791"
 ---
 # <a name="type-library-access"></a>Tür Kitaplığı Erişimi
 

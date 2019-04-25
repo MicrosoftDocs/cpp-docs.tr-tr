@@ -21,11 +21,11 @@ helpviewer_keywords:
 - SH_COMPAT constant
 ms.assetid: 95fadc3a-55dc-473d-98b5-e8211900465d
 ms.openlocfilehash: dc27b3af0d430aedb8159b4591004f46d197ccd5
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57751550"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62268319"
 ---
 # <a name="sharing-constants"></a>Paylaşım Sabitleri
 

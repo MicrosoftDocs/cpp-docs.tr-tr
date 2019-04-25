@@ -5,11 +5,11 @@ f1_keywords:
 - typeindex/std::hash
 ms.assetid: e5a41202-ef3b-45d0-b3a7-4c2dbdc0487a
 ms.openlocfilehash: ba05d70692b2f85c1a14f319fb1e92dcadc0ccce
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50582266"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62158787"
 ---
 # <a name="hash-structure"></a>hash Yapısı
 

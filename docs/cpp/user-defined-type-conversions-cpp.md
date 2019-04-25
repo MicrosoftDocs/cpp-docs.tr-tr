@@ -23,11 +23,11 @@ helpviewer_keywords:
 - data type conversion [C++], explicit
 ms.assetid: d40e4310-a190-4e95-a34c-22c5c20aa0b9
 ms.openlocfilehash: 2af30ad3d1244146f32bf2402ed7eccdc4785c1b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50459897"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62244142"
 ---
 # <a name="user-defined-type-conversions-c"></a>Kullanıcı tanımlı tür Dönüşümleri (C++)
 

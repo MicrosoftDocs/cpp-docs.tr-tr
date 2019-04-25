@@ -32,11 +32,11 @@ helpviewer_keywords:
 - standard input, reading from
 ms.assetid: 5880c36f-122c-4061-a1a5-aeeced6fe58c
 ms.openlocfilehash: f71fafceaf1974bc5ff736ff175a67cf6c924ee6
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50482907"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62157662"
 ---
 # <a name="getss-getwss"></a>gets_s, _getws_s
 

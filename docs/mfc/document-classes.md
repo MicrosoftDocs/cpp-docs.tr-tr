@@ -7,11 +7,11 @@ helpviewer_keywords:
 - document classes [MFC]
 ms.assetid: 4bf19b02-0a4f-4319-b68e-cddcba2705cb
 ms.openlocfilehash: a7034a99bfefe8f4c11cdf8f99dc4b0c31fac10a
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57289721"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62219801"
 ---
 # <a name="document-classes"></a>Belge Sınıfları
 

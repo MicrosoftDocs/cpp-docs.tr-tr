@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2046
 ms.assetid: f0c8f9dd-dbd7-4c4a-8838-fde54208ec71
 ms.openlocfilehash: b502c70c62d87d6807f586e289aaa5c67be9f048
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50649559"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62182840"
 ---
 # <a name="compiler-error-c2046"></a>Derleyici Hatası C2046
 

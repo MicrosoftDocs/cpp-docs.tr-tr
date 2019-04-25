@@ -12,11 +12,11 @@ helpviewer_keywords:
 - frame windows [MFC], shell registration
 ms.assetid: 4db838d5-62cf-4123-915a-66e514155c0c
 ms.openlocfilehash: f6ca50b95e35ea4d7a6c29c6dd6919e02c9bdc7a
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57266490"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62308920"
 ---
 # <a name="responding-to-dynamic-data-exchange-dde"></a>Dinamik Veri Değişimine Yanıt Verme (DDE)
 

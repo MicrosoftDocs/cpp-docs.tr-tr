@@ -10,11 +10,11 @@ helpviewer_keywords:
 - ':: operator'
 ms.assetid: fd5de9d3-c716-4e12-bae9-03a16fd79a50
 ms.openlocfilehash: e601bed976009a72a43545d8d38a38d75e93a137
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50452279"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62267400"
 ---
 # <a name="scope-resolution-operator-"></a>Kapsam Çözümü İşleci: ::
 

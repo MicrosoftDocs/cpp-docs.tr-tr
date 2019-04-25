@@ -6,11 +6,11 @@ helpviewer_keywords:
 - expressions [C++]
 ms.assetid: aaa1f250-7185-4113-b682-3f5e995943d1
 ms.openlocfilehash: c2dc4f1654b7e76bf9506f82d6d613684258c174
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58771376"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62184022"
 ---
 # <a name="expressions-c"></a>İfadeler (C++)
 

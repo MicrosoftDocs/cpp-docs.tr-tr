@@ -5,18 +5,17 @@ helpviewer_keywords:
 - strerror function
 ms.assetid: 9fb9366e-d9a8-47d4-ad51-d98774a0617f
 ms.openlocfilehash: e2bcfef0ad7c2c432b84efdff76c88a87f6f84c9
-ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56147392"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62157844"
 ---
 # <a name="strerror-function"></a>strerror İşlevi
 
 **ANSI 4.11.6.2** içeriğini bir hata iletisi tarafından döndürülen dizeler `strerror` işlevi
 
-
-  `strerror` işlevi bu iletileri oluşturur:
+`strerror` işlevi bu iletileri oluşturur:
 
 ```
 0   Error 0

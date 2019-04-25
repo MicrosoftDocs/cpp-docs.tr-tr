@@ -11,11 +11,11 @@ helpviewer_keywords:
 - Windows API [MFC], and MFC
 ms.assetid: 334e8efc-f3cc-4018-bc2e-02908b2a39fe
 ms.openlocfilehash: fe83af2d05af8e3b9da8d0c62f6974b0a5410bfc
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57278957"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62308989"
 ---
 # <a name="relationship-to-the-c-language-api"></a>C Dili API'sına yönelik ilişki
 

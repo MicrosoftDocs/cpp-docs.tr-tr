@@ -9,11 +9,11 @@ helpviewer_keywords:
 - <include> C++ XML tag
 ms.assetid: 392a3e61-0371-4617-8362-446650876ce3
 ms.openlocfilehash: b7d1033aa5b6c95c0db8eb9debf74596dc214fb0
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57824015"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62291333"
 ---
 # <a name="ltincludegt"></a>&lt;include&gt;
 

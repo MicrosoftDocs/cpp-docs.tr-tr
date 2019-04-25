@@ -11,11 +11,11 @@ helpviewer_keywords:
 - ISpecifyPropertyPagesImpl class
 ms.assetid: 4e4b9795-b656-4d56-9b8c-85941e7731f9
 ms.openlocfilehash: 3f5db65d1c318677a630307f44533e51d63ec44d
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57272015"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62197425"
 ---
 # <a name="ispecifypropertypagesimpl-class"></a>Ispecifypropertypagesımpl sınıfı
 

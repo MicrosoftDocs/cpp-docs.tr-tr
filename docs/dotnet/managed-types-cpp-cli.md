@@ -18,11 +18,11 @@ helpviewer_keywords:
 - compatibility, between assemblies
 ms.assetid: 679b8ed3-d966-4a0c-b627-2a3f3ec96b74
 ms.openlocfilehash: b91918d526d83d4cf47436d02b7c67038576bafb
-ms.sourcegitcommit: 42e65c171aaa17a15c20b155d22e3378e27b4642
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58356185"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62152786"
 ---
 # <a name="managed-types-ccli"></a>Yönetilen Türler (C++/CLI)
 

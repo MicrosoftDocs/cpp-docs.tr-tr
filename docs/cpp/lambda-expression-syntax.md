@@ -5,11 +5,11 @@ helpviewer_keywords:
 - lambda expressions [C++], syntax
 ms.assetid: 5d6154a4-f34d-4a15-970d-7e7de45f54e9
 ms.openlocfilehash: 2df2c203024e1b50cffdcb15af834fe09effaae2
-ms.sourcegitcommit: 6e4dd21759caaed262a7255735cf8d6e8fb9f4d7
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "58476870"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62216517"
 ---
 # <a name="lambda-expression-syntax"></a>Lambda İfadesi Sözdizimi
 

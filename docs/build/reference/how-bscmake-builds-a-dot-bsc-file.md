@@ -5,11 +5,11 @@ helpviewer_keywords:
 - browse information files (.bsc), building
 ms.assetid: 8512b33e-c856-44a2-87bd-01ab10b52a95
 ms.openlocfilehash: 6f721641e021396f112bfe4c075ca0f524100d1f
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57821241"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62291164"
 ---
 # <a name="how-bscmake-builds-a-bsc-file"></a>BSCMAKE .Bsc Dosyasını Nasıl Derler
 

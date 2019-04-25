@@ -8,11 +8,11 @@ helpviewer_keywords:
 - characters, testing
 ms.assetid: 3b6c8f0b-9701-407a-b384-9086698773f5
 ms.openlocfilehash: 757eeac41ecd4e300b7aabef122a8dbdd7e79e11
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57739772"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62290449"
 ---
 # <a name="character-classification"></a>Karakter Sınıflaması
 

@@ -6,11 +6,11 @@ helpviewer_keywords:
 - COM modules classes
 ms.assetid: 0a8a82dd-a153-47cd-9bbe-1a1ad5d1a6ff
 ms.openlocfilehash: b4123fc6bc29b6bd657cf972575d52f2c1f10cd4
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57807838"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62261988"
 ---
 # <a name="com-modules-classes"></a>COM modülü sınıfları
 

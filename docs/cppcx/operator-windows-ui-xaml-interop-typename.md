@@ -3,11 +3,11 @@ title: işleç Windows::UI::Xaml::Interop::TypeName
 ms.date: 12/30/2016
 ms.assetid: a65a105e-7e3a-452f-932f-2cdaf00fbba5
 ms.openlocfilehash: 5acf17b7c87a71259dba6579d8ee69e0eea86fa5
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57738433"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62161595"
 ---
 # <a name="operator-windowsuixamlinteroptypename"></a>işleç Windows::UI::Xaml::Interop::TypeName
 

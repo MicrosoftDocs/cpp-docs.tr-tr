@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2971
 ms.assetid: fdb5467b-9a41-41ef-ac20-2e9428d5a4fc
 ms.openlocfilehash: 09f3578bff5806fc32a3b5599dcfa8caa3696974
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50437304"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62256329"
 ---
 # <a name="compiler-error-c2971"></a>Derleyici Hatası C2971
 

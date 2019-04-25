@@ -3,11 +3,11 @@ title: Sağa Kaydırmalar
 ms.date: 11/04/2016
 ms.assetid: c878e97d-ea3c-4c6b-90a8-b1b24b2d5b19
 ms.openlocfilehash: c34373f69a41ad65031753cd352098dce7e98ef4
-ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56149485"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62158366"
 ---
 # <a name="right-shifts"></a>Sağa Kaydırmalar
 

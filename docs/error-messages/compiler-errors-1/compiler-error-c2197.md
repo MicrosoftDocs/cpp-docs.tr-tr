@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2197
 ms.assetid: 6dd5a6ec-bc80-41b9-a4ac-46f80eaca42d
 ms.openlocfilehash: 8999edcf37277e2e05a92a6601d60d34a675719c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50527406"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62182853"
 ---
 # <a name="compiler-error-c2197"></a>Derleyici Hatası C2197
 

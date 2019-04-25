@@ -10,11 +10,11 @@ helpviewer_keywords:
 - '& operator'
 ms.assetid: f3c51a54-48ba-4b99-afed-5c45177bf694
 ms.openlocfilehash: f3e41c3ad2b086dcd2c20b97227b8f6cb40141ac
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50498136"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62176804"
 ---
 # <a name="operator-amp"></a>İşleci &amp;
 

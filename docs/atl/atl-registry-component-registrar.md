@@ -11,11 +11,11 @@ helpviewer_keywords:
 - registry, Registrar
 ms.assetid: 106752ae-4cfc-4030-8cb2-d36a1d635a2e
 ms.openlocfilehash: c64d47be6df515a0bd4a8d2cfef51f8d56311f4a
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57258976"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62252020"
 ---
 # <a name="atl-registry-component-registrar"></a>ATL Kayıt Defteri Bileşeni (Kaydedici)
 

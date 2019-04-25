@@ -49,11 +49,11 @@ helpviewer_keywords:
 - _ismbcl0 function
 ms.assetid: ee15ebd1-462c-4a43-95f3-6735836d626a
 ms.openlocfilehash: b4ea5a165e5fb06229c3fdf69c53cdf82c4f35f4
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50430894"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62286636"
 ---
 # <a name="ismbcl0-ismbcl0l-ismbcl1-ismbcl1l-ismbcl2-ismbcl2l"></a>_ismbcl0, _ismbcl0_l, _ismbcl1, _ismbcl1_l, _ismbcl2, _ismbcl2_l
 
@@ -108,12 +108,12 @@ Bu işlevlerin her biri, belirli bir koşul için belirli bir çok baytlı karak
 
 |Yordam|Test koşulu (yalnızca kod sayfası 932)|
 |-------------|-------------------------------------------|
-|**_ismbcl0**|JIS olmayan Kanji: 0x8140 < =*c*< 0x889E =.|
-|**_ismbcl0_l**|JIS olmayan Kanji: 0x8140 < =*c*< 0x889E =.|
+|**_ismbcl0**|JIS non-Kanji: 0x8140 < =*c*< 0x889E =.|
+|**_ismbcl0_l**|JIS non-Kanji: 0x8140 < =*c*< 0x889E =.|
 |**_ismbcl1**|Düzey JIS-1: 0x889F < =*c*< 0x9872 =.|
 |**_ismbcl1_l**|Düzey JIS-1: 0x889F < =*c*< 0x9872 =.|
-|**_ismbcl2**|JIS düzey 2: 0x989F < =*c*< 0xEAA4 =.|
-|**_ismbcl2_l**|JIS düzey 2: 0x989F < =*c*< 0xEAA4 =.|
+|**_ismbcl2**|2-JIS düzeyi: 0x989F < =*c*< 0xEAA4 =.|
+|**_ismbcl2_l**|2-JIS düzeyi: 0x989F < =*c*< 0xEAA4 =.|
 
 İşlevleri kontrol belirtilen değere *c* test koşulları yukarıda açıklanan ancak denetlemez eşleşme *c* geçersiz bir çok baytlı karakter. Düşük bayt 0x00-0x3F, 0x7F veya 0xFD - aralıklardaki 0xFF aralıklarındaysa, bu işlevler, karakterin sınama koşulunu karşıladığını belirterek sıfır dışında bir değeri döndürür. Kullanım [_ismbbtrail](ismbbtrail-ismbbtrail-l.md) çok baytlı karakterin tanımlanıp tanımlanmadığını sınamak için.
 

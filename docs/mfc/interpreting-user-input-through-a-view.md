@@ -9,11 +9,11 @@ helpviewer_keywords:
 - user input [MFC], interpreting through view class [MFC]
 ms.assetid: f0302a70-661f-4781-8fe7-78f082bef2a5
 ms.openlocfilehash: 3ef23ad74e1ff53d947453faa5682c5ecc1f4e43
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57304463"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62310922"
 ---
 # <a name="interpreting-user-input-through-a-view"></a>Bir Görünümü Kullanarak Kullanıcı Girişini Yorumlama
 

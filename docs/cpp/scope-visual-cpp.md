@@ -11,11 +11,11 @@ helpviewer_keywords:
 - scope, C++ names
 ms.assetid: 81fecbb0-338b-4325-8332-49f33e716352
 ms.openlocfilehash: 534bb9711ff54e21ca091b399aa3d13ec5a7359d
-ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52176763"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62267324"
 ---
 # <a name="scope-c"></a>Kapsam (C++)
 

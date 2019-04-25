@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3468
 ms.assetid: cfd320db-2f6e-4e0d-ba02-e79ece87e1e0
 ms.openlocfilehash: e3870fa21e2b4a932937edd49091980406a5ff0d
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59779329"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62173190"
 ---
 # <a name="compiler-error-c3468"></a>Derleyici Hatası C3468
 

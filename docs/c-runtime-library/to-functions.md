@@ -21,11 +21,11 @@ helpviewer_keywords:
 - characters, converting
 ms.assetid: f636a4c6-8c9f-4be2-baac-064f9dbae300
 ms.openlocfilehash: 17d80507462b3eb0fdfb5d9e41da6162947bd3de
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57742540"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62304403"
 ---
 # <a name="to-functions"></a>to İşlevleri
 
@@ -45,10 +45,10 @@ Her biri **için** işlevleri ve onun ilişkili makrosu varsa, tek bir karakteri
 |`__toascii`|`__toascii`|Dönüştürür `c` ASCII karakteri|
 |`tolower`|`tolower`|Dönüştürür `c` uygunsa küçük|
 |`_tolower`|`_tolower`|Dönüştürür `c` küçük|
-|`towlower`|Hiçbiri|Dönüştürür `c` için karşılık gelen geniş karakter küçük harf|
+|`towlower`|None|Dönüştürür `c` için karşılık gelen geniş karakter küçük harf|
 |`toupper`|`toupper`|Dönüştürür `c` uygun ise|
 |`_toupper`|`_toupper`|Dönüştürür `c` büyük harf|
-|`towupper`|Hiçbiri|C karşılık gelen geniş karakter büyük harfe dönüştürür.|
+|`towupper`|None|C karşılık gelen geniş karakter büyük harfe dönüştürür.|
 
 İşlev sürümleri kullanılacak **için** de makro olarak tanımlanan yordamları ile makro tanımları kaldırın `#undef` yönergeleri veya CTYPE içermez. H /Za derleyici seçeneğini kullanırsanız, derleyici işlev sürümü kullanan `toupper` veya `tolower`. Bildirimleri `toupper` ve `tolower` içinde STDLIB işlevlerdir. H
 

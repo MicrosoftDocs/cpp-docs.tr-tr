@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2512
 ms.assetid: 15206da9-1164-451a-b869-280e00711aad
 ms.openlocfilehash: 16a1da0e882cd178c9e01737480d74eb23c7c38c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50651366"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62164832"
 ---
 # <a name="compiler-error-c2512"></a>Derleyici Hatası C2512
 

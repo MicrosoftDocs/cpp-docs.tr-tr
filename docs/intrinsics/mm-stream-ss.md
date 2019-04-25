@@ -8,11 +8,11 @@ helpviewer_keywords:
 - _mm_stream_ss intrinsic
 ms.assetid: c53dffe9-0dfe-4063-85d3-e8987b870fce
 ms.openlocfilehash: 76c6c848351df773b9857b2f83726b64db982d9f
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59031204"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62263236"
 ---
 # <a name="mmstreamss"></a>_mm_stream_ss
 

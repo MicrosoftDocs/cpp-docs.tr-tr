@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2955
 ms.assetid: 77709fb6-d69b-46fd-a62f-e8564563d01b
 ms.openlocfilehash: c012e5189b9ca1d0b0e786cbddacedee7c6728d2
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51520003"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62300745"
 ---
 # <a name="compiler-error-c2955"></a>Derleyici Hatası C2955
 
@@ -70,7 +70,7 @@ int main() {
 
 ## <a name="example"></a>Örnek
 
-**Visual Studio 2017 ve üzeri:** şablonu (örneğin parçası varsayılan şablon bağımsız değişkeni veya bir tür olmayan şablon parametresi) bir şablon parametre listesinde göründüğünde derleyici doğru eksik şablon bağımsız değişken listeleri tanılar. Aşağıdaki kod, Visual Studio 2015'te derler ancak Visual Studio 2017'de bir hata oluşturur.
+**Visual Studio 2017 ve sonraki sürümleri:** Şablon (örneğin parçası varsayılan şablon bağımsız değişkeni veya bir tür olmayan şablon parametresi) bir şablon parametre listesinde göründüğünde derleyici eksik şablon bağımsız değişken listeleri doğru olarak tanılar. Aşağıdaki kod, Visual Studio 2015'te derler ancak Visual Studio 2017'de bir hata oluşturur.
 
 ```
 template <class T> class ListNode;

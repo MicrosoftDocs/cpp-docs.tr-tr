@@ -9,11 +9,11 @@ helpviewer_keywords:
 - scripts, creating
 ms.assetid: cbd5024b-8061-4a71-be65-7fee90374a35
 ms.openlocfilehash: e1a0b66e673fcefd0b75683ef75247a388217361
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57295519"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62250859"
 ---
 # <a name="creating-registrar-scripts"></a>Kaydedici betikleri oluşturma
 

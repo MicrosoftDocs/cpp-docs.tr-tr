@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2993
 ms.assetid: 4ffd2b78-654b-46aa-95a6-b62101cf91c8
 ms.openlocfilehash: 5be4836332f67f2064f60a3b058db159a18ca1e0
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50605034"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62160893"
 ---
 # <a name="compiler-error-c2993"></a>Derleyici Hatası C2993
 

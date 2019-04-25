@@ -34,11 +34,11 @@ helpviewer_keywords:
 - _wpopen function
 ms.assetid: eb718ff2-c87d-4bd4-bd2e-ba317c3d6973
 ms.openlocfilehash: 5284685f56a73c4c7e48fce981745220651399a1
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50498910"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62156167"
 ---
 # <a name="popen-wpopen"></a>_popen, _wpopen
 

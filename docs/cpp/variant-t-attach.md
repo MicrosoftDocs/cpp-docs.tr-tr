@@ -10,11 +10,11 @@ helpviewer_keywords:
 - VARIANT object
 ms.assetid: 2f02bd08-2306-4477-aa88-d2a5dee2b859
 ms.openlocfilehash: 510267c7ab00fe22a93dc01342def5fc262ddb04
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50435080"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62166224"
 ---
 # <a name="varianttattach"></a>_variant_t::Attach
 

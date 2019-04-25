@@ -13,11 +13,11 @@ helpviewer_keywords:
 - CHandle class
 ms.assetid: 883e9db5-40ec-4e29-9c74-4dd2ddd2e35d
 ms.openlocfilehash: 19e761ea8eb133db55b4d24600f2a1fd01ac3e34
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57292906"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62245640"
 ---
 # <a name="chandle-class"></a>CHandle sınıfı
 

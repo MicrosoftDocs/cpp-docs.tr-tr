@@ -6,11 +6,11 @@ helpviewer_keywords:
 - input streams, member functions
 ms.assetid: b4b9465d-0da9-4ccf-859d-72a68418982e
 ms.openlocfilehash: b046ea1995d5a8eaa39dced9feb7a5e4c422c253
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50663989"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62159294"
 ---
 # <a name="input-stream-member-functions"></a>Giriş Akışı Üye İşlevleri
 

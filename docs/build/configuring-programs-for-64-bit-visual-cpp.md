@@ -9,11 +9,11 @@ helpviewer_keywords:
 - Visual C++, 64-bit hardware
 ms.assetid: cb99f72b-8c74-48f4-846a-8921b37b97e9
 ms.openlocfilehash: c56cd34ecbc6615b0acebde6c40c658ca0c436a4
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57818121"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62274687"
 ---
 # <a name="configure-c-projects-for-64-bit-x64-targets"></a>C++ projeleri için 64 bit x64 yapılandırma hedefleri
 
@@ -47,4 +47,4 @@ Bu bölümdeki konular içerir 64-bit x64 hedefleme hakkında donanım Visual c+
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Projeler ve yapı sistemi](projects-and-build-systems-cpp.md)
+[Projeler ve derleme sistemleri](projects-and-build-systems-cpp.md)

@@ -9,11 +9,11 @@ helpviewer_keywords:
 - MFC dialog boxes [MFC], displaying
 ms.assetid: 1c5219ee-8b46-44bc-9708-83705d4f248b
 ms.openlocfilehash: e0b7ff31576b345ac2911e62a6e10469845eecba
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57302331"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62175036"
 ---
 # <a name="creating-and-displaying-dialog-boxes"></a>İletişim Kutuları Oluşturma ve Görüntüleme
 

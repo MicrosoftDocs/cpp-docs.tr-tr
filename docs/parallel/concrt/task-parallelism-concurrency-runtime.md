@@ -9,11 +9,11 @@ helpviewer_keywords:
 - tasks [Concurrency Runtime]
 ms.assetid: 42f05ac3-2098-494a-ba84-737fcdcad077
 ms.openlocfilehash: c9f18dfd1498538ce3700fd73a27ce6f6088ee42
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51331223"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62180049"
 ---
 # <a name="task-parallelism-concurrency-runtime"></a>Görev Parallelliği (Eşzamanlılık Çalışma Zamanı)
 
@@ -108,7 +108,7 @@ Kullanabileceğiniz `create_task` eşdeğer işlem oluşturmak için işlevi.
 
 Bir görev yürütülürken bir özel durum, çalışma zamanı sonraki çağrısında bu özel durum sürekliliğe devreder `task::get` veya `task::wait`, ya da görev tabanlı devamlılık. Görev özel durum işleme mekanizması hakkında daha fazla bilgi için bkz. [özel durum işleme](../../parallel/concrt/exception-handling-in-the-concurrency-runtime.md).
 
-Kullanan bir örnek için `task`, [concurrency::task_completion_event](../../parallel/concrt/reference/task-completion-event-class.md), iptal, bkz: [izlenecek yol: görevleri kullanarak bağlanma ve XML HTTP isteklerini](../../parallel/concrt/walkthrough-connecting-using-tasks-and-xml-http-requests.md). ( `task_completion_event` Sınıfı, bu belgenin sonraki bölümlerinde açıklanmıştır.)
+Kullanan bir örnek için `task`, [concurrency::task_completion_event](../../parallel/concrt/reference/task-completion-event-class.md), iptal, bkz: [izlenecek yol: Görevleri ve XML HTTP isteklerini kullanarak bağlanma](../../parallel/concrt/walkthrough-connecting-using-tasks-and-xml-http-requests.md). ( `task_completion_event` Sınıfı, bu belgenin sonraki bölümlerinde açıklanmıştır.)
 
 > [!TIP]
 >  UWP uygulamalarında görevlere özgü ayrıntıları öğrenmek için bkz [C++ zaman uyumsuz programlamada](/windows/uwp/threading-async/asynchronous-programming-in-cpp-universal-windows-platform-apps) ve [oluşturma zaman uyumsuz işlemler c++ UWP uygulamaları için](../../parallel/concrt/creating-asynchronous-operations-in-cpp-for-windows-store-apps.md).
@@ -244,7 +244,7 @@ Bunu gerçekleştirmenin iki yolu devamlılığı kullanmak veya bir görevi ba�
 
 [Concurrency::task_completion_event](../../parallel/concrt/reference/task-completion-event-class.md) sınıfı, bu tür bileşimlerini basitleştirmeye yardımcı olur. Gibi `task` sınıfının, tür parametresi `T` görev tarafından üretilen sonucun türüdür. Bu tür olabilir `void` görev bir değer döndürmezse. `T` kullanamazsınız `const` değiştiricisi. Genellikle, bir `task_completion_event` nesnesi, bir iş parçacığı veya bu değeri kullanılabilir olduğunda sinyal veren görev sağlanır. Aynı anda bir veya daha fazla görev bu olayın dinleyicileri ayarlanır. Olay ayarlandığında dinleyici görevleri tamamlayacak ve bunların devamlılığını çalışmak üzere zamanlanır.
 
-Kullanan bir örnek için `task_completion_event` bir gecikmeden sonra tamamlanan bir görev uygulamak için bkz. [nasıl yapılır: bir görev bu tamamlandıktan sonra bir gecikme oluşturma](../../parallel/concrt/how-to-create-a-task-that-completes-after-a-delay.md).
+Kullanan bir örnek için `task_completion_event` bir gecikmeden sonra tamamlanan bir görev uygulamak için bkz: [nasıl yapılır: Bir gecikmeden sonra tamamlanan bir görev oluşturma](../../parallel/concrt/how-to-create-a-task-that-completes-after-a-delay.md).
 
 ##  <a name="task-groups"></a> Görev grupları
 
@@ -299,7 +299,7 @@ Message from task: 42
 
 Çünkü `parallel_invoke` algoritması görevleri aynı anda çalıştırılır, çıktı iletilerinin sırası değişebilir.
 
-Nasıl kullanılacağını gösteren tam örnekler `parallel_invoke` algoritmasını bkz [nasıl yapılır: paralel sıralama rutini yazmak için parallel_invoke kullanma](../../parallel/concrt/how-to-use-parallel-invoke-to-write-a-parallel-sort-routine.md) ve [nasıl yapılır: paralel işlemleriyürütmekiçinparallel_invokekullanma](../../parallel/concrt/how-to-use-parallel-invoke-to-execute-parallel-operations.md). Kullanan tam bir örnek `task_group` zaman uyumsuz ileri tarihli işleri uygulamak için bkz: sınıf [izlenecek yol: vadeli işlemleri uygulama](../../parallel/concrt/walkthrough-implementing-futures.md).
+Nasıl kullanılacağını gösteren tam örnekler `parallel_invoke` algoritmasını bkz [nasıl yapılır: Paralel sıralama rutini yazmak için parallel_invoke kullanma](../../parallel/concrt/how-to-use-parallel-invoke-to-write-a-parallel-sort-routine.md) ve [nasıl yapılır: Paralel işlemleri yürütmek için parallel_invoke kullanma](../../parallel/concrt/how-to-use-parallel-invoke-to-execute-parallel-operations.md). Kullanan tam bir örnek `task_group` zaman uyumsuz ileri tarihli işleri uygulamak için bkz: sınıf [izlenecek yol: Vadeli işlemleri uygulama](../../parallel/concrt/walkthrough-implementing-futures.md).
 
 ##  <a name="robust"></a> Güçlü programlama
 
@@ -309,10 +309,10 @@ Nasıl kullanılacağını gösteren tam örnekler `parallel_invoke` algoritmas�
 
 |Başlık|Açıklama|
 |-----------|-----------------|
-|[Nasıl yapılır: Paralel Sıralama Rutini Yazmak için parallel_invoke Kullanma](../../parallel/concrt/how-to-use-parallel-invoke-to-write-a-parallel-sort-routine.md)|Nasıl kullanılacağını gösterir `parallel_invoke` bitonic sıralama algoritmasının performansını artırmak için algoritma.|
+|[Nasıl yapılır: Paralel Sıralama Yordamı Yazmak için parallel_invoke Kullanma](../../parallel/concrt/how-to-use-parallel-invoke-to-write-a-parallel-sort-routine.md)|Nasıl kullanılacağını gösterir `parallel_invoke` bitonic sıralama algoritmasının performansını artırmak için algoritma.|
 |[Nasıl yapılır: Paralel İşlemleri Yürütmek için parallel_invoke Kullanma](../../parallel/concrt/how-to-use-parallel-invoke-to-execute-parallel-operations.md)|Nasıl kullanılacağını gösterir `parallel_invoke` bir paylaşılan veri kaynağı üzerinde birden çok işlem gerçekleştiren bir programın performansını artırmak için kullanılan algoritma.|
-|[Nasıl yapılır: Bir Gecikmeden Sonra Tamamlanan bir Görev Oluşturma](../../parallel/concrt/how-to-create-a-task-that-completes-after-a-delay.md)|Nasıl kullanılacağını gösterir `task`, `cancellation_token_source`, `cancellation_token`, ve `task_completion_event` bir gecikmeden sonra tamamlanan bir görev oluşturmak için sınıf.|
-|[İzlenecek Yol: Vadeli İşlemleri Uygulama](../../parallel/concrt/walkthrough-implementing-futures.md)|Nasıl daha fazlasını yapan varolan işlevsellikte eşzamanlılık çalışma zamanı değerlerinizden birleştirileceğini gösterir.|
+|[Nasıl yapılır: Gecikmeden Sonra Tamamlanan Bir Görev Oluşturma](../../parallel/concrt/how-to-create-a-task-that-completes-after-a-delay.md)|Nasıl kullanılacağını gösterir `task`, `cancellation_token_source`, `cancellation_token`, ve `task_completion_event` bir gecikmeden sonra tamamlanan bir görev oluşturmak için sınıf.|
+|[İzlenecek yol: Vadeli İşlemleri Uygulama](../../parallel/concrt/walkthrough-implementing-futures.md)|Nasıl daha fazlasını yapan varolan işlevsellikte eşzamanlılık çalışma zamanı değerlerinizden birleştirileceğini gösterir.|
 |[Paralel Desen Kitaplığı (PPL)](../../parallel/concrt/parallel-patterns-library-ppl.md)|Eş zamanlı uygulamalar geliştirmeye yönelik zorunlu programlama modeli sağlar PPL açıklar.|
 
 ## <a name="reference"></a>Başvuru
@@ -325,7 +325,7 @@ Nasıl kullanılacağını gösteren tam örnekler `parallel_invoke` algoritmas�
 
 [when_any işlevi](reference/concurrency-namespace-functions.md#when_any)
 
-[task_group sınıfı](reference/task-group-class.md)
+[task_group Sınıfı](reference/task-group-class.md)
 
 [parallel_invoke işlevi](reference/concurrency-namespace-functions.md#parallel_invoke)
 

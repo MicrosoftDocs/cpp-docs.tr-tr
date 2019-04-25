@@ -7,11 +7,11 @@ helpviewer_keywords:
 - hash_compare class
 ms.assetid: d502bb59-de57-4585-beb9-00e3a998c0af
 ms.openlocfilehash: f535122b67f854b8b204664b829ce9da5fe3c6a6
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50575792"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62159827"
 ---
 # <a name="hashcompare-class"></a>hash_compare Sınıfı
 

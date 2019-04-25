@@ -13,11 +13,11 @@ helpviewer_keywords:
 - x64 [C++], command-line compiler
 ms.assetid: 4da93a19-e20d-4778-902a-5eee9a6a90b5
 ms.openlocfilehash: 8436254a3d8c5c1dae018c2309ceaad7bd5b2408
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58769283"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62188918"
 ---
 # <a name="how-to-enable-a-64-bit-x64-hosted-msvc-toolset-on-the-command-line"></a>Nasıl yapılır: 64 Bit etkinleştirmek için komut satırında MSVC araç takımı x64 barındırılan
 

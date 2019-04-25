@@ -7,11 +7,11 @@ helpviewer_keywords:
 - XMMWORD directive
 ms.assetid: 18026d32-5cab-403e-ad7e-382fb41aa9b8
 ms.openlocfilehash: 59d1ba71260ed08b761c332e887cf27517762303
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51326348"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62210111"
 ---
 # <a name="xmmword"></a>XMMWORD
 

@@ -11,11 +11,11 @@ helpviewer_keywords:
 - OLE items [MFC], types
 ms.assetid: 11107711-eb96-4099-8f5c-7910bb3ecb75
 ms.openlocfilehash: 02607df2a8fa086c5751f2b446e349a3efdbcd20
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57280972"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62186808"
 ---
 # <a name="ole-background-linking-and-embedding"></a>OLE arka planı: Bağlama ve katıştırma
 

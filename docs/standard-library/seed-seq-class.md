@@ -15,11 +15,11 @@ helpviewer_keywords:
 - std::seed_seq [C++], param
 ms.assetid: cba114f7-9ac6-4f2f-b773-9c84805401d6
 ms.openlocfilehash: 5309042e9f26875e0cf5c2024cc74910fef21148
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50592497"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62295727"
 ---
 # <a name="seedseq-class"></a>seed_seq Sınıfı
 

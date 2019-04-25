@@ -6,11 +6,11 @@ helpviewer_keywords:
 - preprocessor, directives
 ms.assetid: e0fc4564-b6cf-4a36-bf51-6ccd7abd0a94
 ms.openlocfilehash: 9481e977f2afb3de27a74278893a217fde48044b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50608032"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62179977"
 ---
 # <a name="preprocessor-directives"></a>Ön işlemci Yönergeleri
 

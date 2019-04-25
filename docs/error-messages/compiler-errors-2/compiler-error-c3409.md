@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3409
 ms.assetid: e372d9fa-230c-4b28-b6d3-6ad81ccf9dbb
 ms.openlocfilehash: 24f107e0c1f74f95afc521c8a4c888a26a35c13a
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59033767"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62173398"
 ---
 # <a name="compiler-error-c3409"></a>Derleyici Hatası C3409
 

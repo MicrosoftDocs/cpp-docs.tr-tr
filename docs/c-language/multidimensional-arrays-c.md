@@ -7,11 +7,11 @@ helpviewer_keywords:
 - subscript expressions
 ms.assetid: 4ba5c360-1f17-4575-b370-45f62e1f2bc2
 ms.openlocfilehash: 34f5c60ba9ba5da869426ae4971808a5d75fee2f
-ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56151019"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62233369"
 ---
 # <a name="multidimensional-arrays-c"></a>Çok Boyutlu Diziler (C)
 
@@ -34,8 +34,7 @@ int prop[3][4][6];
 int i, *ip, (*ipp)[6];
 ```
 
-
-  `prop` dizisine yapılan başvuru aşağıdaki gibi görünür:
+`prop` dizisine yapılan başvuru aşağıdaki gibi görünür:
 
 ```
 i = prop[0][0][1];

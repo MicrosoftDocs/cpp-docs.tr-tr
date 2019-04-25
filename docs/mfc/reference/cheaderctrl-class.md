@@ -65,11 +65,11 @@ helpviewer_keywords:
 - CHeaderCtrl [MFC], SetOrderArray
 ms.assetid: b847ac90-5fae-4a87-88e0-ca45f77b8b3b
 ms.openlocfilehash: 51cdfb481892ba5057d4ca26ff4d6e51665557e5
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57415623"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62160204"
 ---
 # <a name="cheaderctrl-class"></a>CHeaderCtrl sınıfı
 

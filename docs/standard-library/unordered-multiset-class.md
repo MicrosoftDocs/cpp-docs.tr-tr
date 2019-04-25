@@ -135,11 +135,11 @@ helpviewer_keywords:
 - std::unordered_multiset::swap
 ms.assetid: 70c8dfc5-492a-4af2-84f5-1aa9cb04b71c
 ms.openlocfilehash: 34fb3e16dc7369526895a011c7e192d2f51edf14
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51519795"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62278559"
 ---
 # <a name="unorderedmultiset-class"></a>unordered_multiset Sınıfı
 
@@ -203,7 +203,7 @@ class unordered_multiset;
 |[Bul](#find)|Belirtilen bir anahtarla eşleşen bir öğeyi bulur.|
 |[get_allocator](#get_allocator)|Depolanan ayırıcı nesnesini alır.|
 |[hash_function](#hash)|Depolanan karma işlevi nesnesini alır.|
-|[Ekle](#insert)|Öğeleri ekler.|
+|[insert](#insert)|Öğeleri ekler.|
 |[key_eq](#key_eq)|Depolanan karşılaştırma işlevi nesnesini alır.|
 |[load_factor](#load_factor)|Demet başına ortalama öğeyi sayar.|
 |[max_bucket_count](#max_bucket_count)|En yüksek demet sayısını alır.|

@@ -8,11 +8,11 @@ helpviewer_keywords:
 - window objects [MFC], removing
 ms.assetid: 3241fea0-c614-4a25-957d-20f21bd5fd0c
 ms.openlocfilehash: f50d198f9868a70d25370f6c1399b66efaa5490b
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57289851"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62297248"
 ---
 # <a name="destroying-window-objects"></a>Pencere Nesnelerini Yok Etme
 

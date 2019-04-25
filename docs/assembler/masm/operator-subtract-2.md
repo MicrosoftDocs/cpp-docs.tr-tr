@@ -10,11 +10,11 @@ helpviewer_keywords:
 - arithmetic operators [C++], subtraction
 ms.assetid: 474607cb-e48d-4c91-bef6-91ff0971d5cf
 ms.openlocfilehash: 4046123a43e8bf0fe6831a7d51820501830e8dc1
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51328272"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62176323"
 ---
 # <a name="operator--"></a>-işleci
 

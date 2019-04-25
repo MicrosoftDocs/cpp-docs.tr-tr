@@ -7,11 +7,11 @@ helpviewer_keywords:
 - dllexport attribute [C++]
 ms.assetid: 274b735f-ab9c-4b07-8d0e-fdb65d664634
 ms.openlocfilehash: cc83a43fd09299710585fa104dbd4dc847036c68
-ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56150564"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62158433"
 ---
 # <a name="rules-and-limitations-for-dllimportdllexport"></a>dllimport/dllexport için Kurallar ve Sınırlamalar
 

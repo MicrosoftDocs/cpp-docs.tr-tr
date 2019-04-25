@@ -4,11 +4,11 @@ ms.date: 03/05/2019
 helpviewer_keywords:
 - CMake build settings
 ms.openlocfilehash: 4864e094ab967a563b153fa79fd0bf5c375f40f7
-ms.sourcegitcommit: 14b292596bc9b9b883a9c58cd3e366b282a1f7b3
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60124895"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62274635"
 ---
 # <a name="customize-cmake-build-settings"></a>CMake derleme ayarlarını özelleştirme
 

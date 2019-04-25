@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2710
 ms.assetid: a2a6bb5b-86ad-4a6c-acd0-e2bef8464e0e
 ms.openlocfilehash: 54d501d43652bb8e54092d44042a9525ef6f708f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50618952"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62160919"
 ---
 # <a name="compiler-error-c2710"></a>Derleyici Hatası C2710
 

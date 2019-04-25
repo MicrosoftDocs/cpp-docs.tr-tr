@@ -9,11 +9,11 @@ helpviewer_keywords:
 - -ARCHIVEMEMBERS dumpbin option
 ms.assetid: 47056a7a-a1ba-42bc-9f2e-0599195ef79a
 ms.openlocfilehash: 880e36219b45367ff96e0d292b9728bf797c308a
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57818966"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62295127"
 ---
 # <a name="archivemembers"></a>/ARCHIVEMEMBERS
 

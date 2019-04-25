@@ -7,11 +7,11 @@ helpviewer_keywords:
 - ALIAS directive
 ms.assetid: d9725c49-58de-41da-ab01-b06a56cf5cf2
 ms.openlocfilehash: ab00092f410d34119e876db4562e6d0709743d79
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50483505"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62166496"
 ---
 # <a name="alias-masm"></a>ALIAS (MASM)
 

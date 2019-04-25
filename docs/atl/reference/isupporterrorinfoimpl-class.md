@@ -11,11 +11,11 @@ helpviewer_keywords:
 - error information, ATL
 ms.assetid: e33a4b11-a123-41cf-bcea-7b19743902af
 ms.openlocfilehash: f7e300e30ff0f14b56d2a1bae86b00e090674679
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57290065"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62274771"
 ---
 # <a name="isupporterrorinfoimpl-class"></a>Isupporterrorınfoımpl sınıfı
 

@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2847
 ms.assetid: 9ad9a0e0-8b16-49d9-a5be-f8eda2372aa9
 ms.openlocfilehash: 99c49be746cea6fb80c5e24667bcd97556a0ad04
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50481490"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62161049"
 ---
 # <a name="compiler-error-c2847"></a>Derleyici Hatası C2847
 

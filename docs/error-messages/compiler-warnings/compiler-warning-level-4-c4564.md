@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C4564
 ms.assetid: 555b301b-313e-4262-9f81-eb878674be60
 ms.openlocfilehash: 1948bdec5367fa7943f5a0de4338fd4ecd6c6581
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50526236"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62220513"
 ---
 # <a name="compiler-warning-level-4-c4564"></a>Derleyici Uyarısı (düzey 4) C4564
 

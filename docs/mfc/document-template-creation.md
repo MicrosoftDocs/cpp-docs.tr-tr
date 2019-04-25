@@ -9,11 +9,11 @@ helpviewer_keywords:
 - templates [MFC], document templates
 ms.assetid: c87f1821-7cbf-442e-9690-f126ae7fb783
 ms.openlocfilehash: 85ff6ad47b37d85c812608dbee918f0543730eae
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57271684"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62219814"
 ---
 # <a name="document-template-creation"></a>Belge Şablonu Oluşturma
 

@@ -8,11 +8,11 @@ helpviewer_keywords:
 - pointers, declarations
 ms.assetid: 8b3b7fc7-f44d-480d-b6f9-cebe4e5462a6
 ms.openlocfilehash: 0ee6e9e78f3793cd1912ece7f8627a4be68e929c
-ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56152007"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62232158"
 ---
 # <a name="pointer-declarations"></a>İşaretçi Bildirimleri
 

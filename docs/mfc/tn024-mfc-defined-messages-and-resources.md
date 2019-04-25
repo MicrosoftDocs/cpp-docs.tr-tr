@@ -10,11 +10,11 @@ helpviewer_keywords:
 - TN024
 ms.assetid: c65353ce-8096-454b-ad22-1a7a1dd9a788
 ms.openlocfilehash: 029177821d37d5d26abe0b39ea1581e8a5ad602b
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57278138"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62306031"
 ---
 # <a name="tn024-mfc-defined-messages-and-resources"></a>TN024: MFC tanımlı iletiler ve kaynaklar
 
@@ -172,7 +172,7 @@ AppWizard tarafından sağlanan varsayılan araç MFC 4. 0'da sunulan bir RT_TOO
 
 Bir MFC özel kaynak biçimi ek iletişim başlatma bilgileri depolamak için kullanılır. Bu, açılan kutuda depolanan ilk dizeleri içerir. Bu kaynak biçimi el ile düzenlenmesi için tasarlanmamıştır, ancak Visual C++ tarafından işlenir.
 
-Visual C++ ve bu RT_DLGINIT kaynak kaynak bilgileri kullanarak API alternatif olduğundan MFC ilgili özellikleri kullanmak için gerekli değildir. Visual C++ kullanarak yazma, koruma ve uzun vadede, uygulamanızın çevirmek kolaylaşır.
+Görsel C++ ve bu RT_DLGINIT kaynak kaynak bilgileri kullanarak API alternatif olduğundan MFC ilgili özelliklerini kullanmak için gerekli değildir. Visual C++ kullanarak yazma, koruma ve uzun vadede, uygulamanızın çevirmek kolaylaşır.
 
 RT_DLGINIT kaynak temel yapısı şöyledir:
 

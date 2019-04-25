@@ -8,11 +8,11 @@ f1_keywords:
 helpviewer_keywords:
 - task_group class
 ms.openlocfilehash: 545b368b3042da74a42db5a6ea30e97054d5fd03
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57294141"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62180186"
 ---
 # <a name="taskgroup-class"></a>task_group Sınıfı
 

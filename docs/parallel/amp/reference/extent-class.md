@@ -13,11 +13,11 @@ helpviewer_keywords:
 - extent structure
 ms.assetid: edb5de3d-3935-4dbb-8365-4cc6c4fb0269
 ms.openlocfilehash: 46af59708ef3f0d91883c52502bce4d09676ca77
-ms.sourcegitcommit: 309dc532f13242854b47759cef846de59bb807f1
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58565837"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62181950"
 ---
 # <a name="extent-class-c-amp"></a>extent Sınıfı (C++ AMP)
 

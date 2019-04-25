@@ -9,11 +9,11 @@ helpviewer_keywords:
 - Platform::ClassNotRegisteredException
 ms.assetid: 8f8871d8-51b9-46e8-902e-ae023c9f1de9
 ms.openlocfilehash: 9276561b4291ac25c1d623bc308b7fae40b9ab81
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57745036"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62161790"
 ---
 # <a name="platformclassnotregisteredexception-class"></a>Platform::ClassNotRegisteredException sınıfı
 

@@ -107,11 +107,11 @@ helpviewer_keywords:
 - CFrameWnd [MFC], rectDefault
 ms.assetid: e2220aba-5bf4-4002-b960-fbcafcad01f1
 ms.openlocfilehash: 7bdb681754a500ab86538f3397b4c07284b850d0
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57300898"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62182067"
 ---
 # <a name="cframewnd-class"></a>CFrameWnd sınıfı
 

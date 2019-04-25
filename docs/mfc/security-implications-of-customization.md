@@ -6,11 +6,11 @@ helpviewer_keywords:
 - MFC Feature Pack, security
 ms.assetid: 9be96b12-be38-43bd-a133-5d671265f7a1
 ms.openlocfilehash: 9164983a6634e069195f3498bea56b595a2a2381
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57267452"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62308479"
 ---
 # <a name="security-implications-of-customization"></a>Özelleştirmenin Güvenlikle İlgili Etkileri
 

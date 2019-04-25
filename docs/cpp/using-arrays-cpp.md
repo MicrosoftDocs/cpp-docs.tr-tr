@@ -5,11 +5,11 @@ helpviewer_keywords:
 - arrays [C++]
 ms.assetid: 7818a7fe-7e82-4881-a3d1-7d25162b7fc7
 ms.openlocfilehash: 7f7a987a2b4c18e59dd058ccfc4375c304188398
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50575519"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62152754"
 ---
 # <a name="using-arrays-c"></a>Dizileri Kullanma (C++)
 

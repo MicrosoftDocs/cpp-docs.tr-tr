@@ -8,11 +8,11 @@ helpviewer_keywords:
 - wide streams
 ms.assetid: 61ef0587-4cbc-4eb8-aae5-4c298dbbc6f9
 ms.openlocfilehash: 67de6b609b3e0546d539ef9c37f12db1067546ad
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57739359"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62290501"
 ---
 # <a name="byte-and-wide-streams"></a>Bayt ve Geniş Akışlar
 

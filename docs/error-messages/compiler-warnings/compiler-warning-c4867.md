@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C4867
 ms.assetid: 8a257d70-c3a7-462d-b285-e57c952a8bf7
 ms.openlocfilehash: 9fa9b382b42a2fb8ba72fd9744c612af5dd598d2
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50526830"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62311078"
 ---
 # <a name="compiler-warning-c4867"></a>Derleyici Uyarısı C4867
 

@@ -32,11 +32,11 @@ helpviewer_keywords:
 - <<= operator
 ms.assetid: b028cf35-2ff1-4f14-9027-fd53ebec8aa0
 ms.openlocfilehash: 758c82f02d2b113f6c750f7f0ede662c97b646b0
-ms.sourcegitcommit: 309dc532f13242854b47759cef846de59bb807f1
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58565486"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62184393"
 ---
 # <a name="assignment-operators"></a>Atama İşleçleri
 

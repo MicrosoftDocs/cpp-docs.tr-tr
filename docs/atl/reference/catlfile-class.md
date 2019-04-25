@@ -21,11 +21,11 @@ helpviewer_keywords:
 - CAtlFile class
 ms.assetid: 93ed160b-af2a-448c-9cbe-e5fa46c199bb
 ms.openlocfilehash: 0faae50afcd26948bdcb4d4333efb25d5cca33ea
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58772975"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62260233"
 ---
 # <a name="catlfile-class"></a>CAtlFile sınıfı
 

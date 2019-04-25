@@ -10,11 +10,11 @@ helpviewer_keywords:
 - declarations, nested classes
 ms.assetid: c02e471d-b7f9-41b8-8ef6-2323f006dbd5
 ms.openlocfilehash: 0ffe1077da76d7524ce99d825e97f68a031ca315
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50448159"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62301558"
 ---
 # <a name="nested-class-declarations"></a>İç İçe Geçmiş Sınıf Bildirimleri
 

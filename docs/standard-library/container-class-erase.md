@@ -5,11 +5,11 @@ helpviewer_keywords:
 - erase method
 ms.assetid: abc091c5-5a80-4bd8-93a8-a2d9bde2efec
 ms.openlocfilehash: 11e13fc74de779076b40ba338a21a6736eb04e06
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50553029"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62211062"
 ---
 # <a name="container-classerase"></a>Kapsayıcı Sınıfı::erase
 

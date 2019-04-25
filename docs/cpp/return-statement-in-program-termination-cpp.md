@@ -7,11 +7,11 @@ helpviewer_keywords:
 - return keyword [C++], syntax
 ms.assetid: 66d002ab-5625-4b68-8446-71e1b8fcdbd8
 ms.openlocfilehash: 9c7b6130ee1a0b49ab75a70d84764d3a1f8c5ef0
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50613051"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62267619"
 ---
 # <a name="return-statement-in-program-termination-c"></a>Program Sonlandırmada return Deyimi (C++)
 

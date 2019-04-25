@@ -7,11 +7,11 @@ helpviewer_keywords:
 - ALIGN directive
 ms.assetid: 1c386b23-439f-4ec3-a6de-74427b25e47f
 ms.openlocfilehash: eb42b1952b3fd59438f0dd4c29d48c91c4d8864d
-ms.sourcegitcommit: cce52b2232b94ce8fd8135155b86e2d38a4e4562
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/04/2019
-ms.locfileid: "54031232"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62166483"
 ---
 # <a name="align-masm"></a>ALIGN (MASM)
 

@@ -18,11 +18,11 @@ helpviewer_keywords:
 - __argc
 ms.assetid: 17001b0a-04ad-4762-b3a6-c54847f02d7c
 ms.openlocfilehash: f428d81215193361a409473a411eb5c4d91fa997
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57743304"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62290488"
 ---
 # <a name="argc-argv-wargv"></a>__argc, __argv, __wargv
 
@@ -59,5 +59,5 @@ Kullanmak için geçirilen bağımsız değişkenler tavsiye ederiz taşınabili
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Global Değişkenler](../c-runtime-library/global-variables.md)<br/>
-[Ana: Program başlatma](../cpp/main-program-startup.md)<br/>
+[main: Program Başlatma](../cpp/main-program-startup.md)<br/>
 [main Yerine wmain Kullanma](../cpp/using-wmain-instead-of-main.md)

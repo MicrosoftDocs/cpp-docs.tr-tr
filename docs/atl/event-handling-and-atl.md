@@ -5,11 +5,11 @@ helpviewer_keywords:
 - event handling, about event handling
 ms.assetid: e4812b0d-6fdd-4e8c-bdb8-378a25c7bde2
 ms.openlocfilehash: e939c693f3f474cce9d2ca118bc86d163d6146dc
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57277475"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62262144"
 ---
 # <a name="event-handling-and-atl"></a>Olay İşleme ve ATL
 

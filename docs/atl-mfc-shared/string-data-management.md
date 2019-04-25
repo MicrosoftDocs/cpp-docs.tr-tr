@@ -5,11 +5,11 @@ helpviewer_keywords:
 - Unicode, string objects
 ms.assetid: 0b53a542-eeb1-4108-9ada-6700645b6f8f
 ms.openlocfilehash: b247e97f5aa6b5e85a6a6b6f57a64224a9e0f435
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57747183"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62252668"
 ---
 # <a name="string-data-management"></a>Dize veri yönetimi
 

@@ -9,11 +9,11 @@ helpviewer_keywords:
 - document classes [MFC], functions often overridden
 ms.assetid: e6a198e0-9799-43c0-83c5-04174d8b532c
 ms.openlocfilehash: 5998d5707eb741be0e8ac270f6ac5ce77a9ff8d8
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57272067"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62153274"
 ---
 # <a name="deriving-a-document-class-from-cdocument"></a>CDocument'ten Belge Sınıfı Türetme
 

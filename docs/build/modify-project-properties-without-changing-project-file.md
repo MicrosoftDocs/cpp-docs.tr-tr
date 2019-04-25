@@ -4,11 +4,11 @@ ms.date: 11/28/2018
 helpviewer_keywords:
 - project properties [C++], modifying outside project file
 ms.openlocfilehash: ad527d8ee69a1786be7d325571f9c9ac4f9a8574
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57824128"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62273345"
 ---
 # <a name="how-to-modify-c-project-properties-and-targets-without-changing-the-project-file"></a>Nasıl yapılır: Proje dosyası değiştirmeden C++ proje özelliklerini ve hedefleri Değiştir
 

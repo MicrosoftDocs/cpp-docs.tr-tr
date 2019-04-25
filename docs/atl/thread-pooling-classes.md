@@ -8,11 +8,11 @@ helpviewer_keywords:
 - pooling worker threads
 ms.assetid: 01fa2c1c-12ae-4781-b772-0a74b6365a8c
 ms.openlocfilehash: d4ca779d45f927b033e2da9533aedcc6db8d8a48
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57812453"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62274241"
 ---
 # <a name="thread-pooling-classes"></a>İş parçacığı havuzu sınıfları
 

@@ -43,11 +43,11 @@ helpviewer_keywords:
 - tcsnicoll function
 ms.assetid: d139ed63-ccba-4458-baa2-61cbcef03e94
 ms.openlocfilehash: c18faa3c93969a683b3ee3ef58dd02e1c1ae61f4
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50665206"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62156726"
 ---
 # <a name="mbsnbcoll-mbsnbcolll-mbsnbicoll-mbsnbicolll"></a>_mbsnbcoll, _mbsnbcoll_l, _mbsnbicoll, _mbsnbicoll_l
 

@@ -12,11 +12,11 @@ helpviewer_keywords:
 - /DEF linker option
 ms.assetid: 6497fa68-65f0-48ca-8f66-b87166fc631a
 ms.openlocfilehash: c08412fb50835485e7941b2bb1db088943387b71
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57807448"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62272314"
 ---
 # <a name="def-specify-module-definition-file"></a>/DEF (Modül Tanım Dosyasını Belirt)
 
@@ -52,4 +52,4 @@ Geliştirme ortamında bir .def dosyası belirtmek için birlikte diğer dosyala
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [MSVC bağlayıcı başvurusu](linking.md)<br/>
-[MSVC bağlayıcı seçenekleri](linker-options.md)
+[MSVC Bağlayıcı Seçenekleri](linker-options.md)

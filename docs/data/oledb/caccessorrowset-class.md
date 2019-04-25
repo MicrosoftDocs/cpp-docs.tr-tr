@@ -31,11 +31,11 @@ helpviewer_keywords:
 - GetColumnInfo method
 ms.assetid: bd4f58ed-cebf-4d43-8985-1e5fcbf06953
 ms.openlocfilehash: af38695ccee79e539782dc3f695a567f72fa41c7
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59033910"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62283846"
 ---
 # <a name="caccessorrowset-class"></a>CAccessorRowset Sınıfı
 

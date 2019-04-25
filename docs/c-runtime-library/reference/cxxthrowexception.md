@@ -23,11 +23,11 @@ helpviewer_keywords:
 - CxxThrowException function
 ms.assetid: 0b90bef5-b7d2-46e0-88e2-59e531e01a4d
 ms.openlocfilehash: 925b72a120b31029b76fa38bee73eea003511cd2
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50550339"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62288579"
 ---
 # <a name="cxxthrowexception"></a>_CxxThrowException
 

@@ -13,11 +13,11 @@ helpviewer_keywords:
 - '# preprocessor operator'
 ms.assetid: 1175dd19-4538-43b3-ad97-a008ab80e7b1
 ms.openlocfilehash: 4f23eea017197ae1f984e097bb3967c1228fef09
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59035721"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62179652"
 ---
 # <a name="stringizing-operator-"></a>Dizeleyen İşleç (#)
 

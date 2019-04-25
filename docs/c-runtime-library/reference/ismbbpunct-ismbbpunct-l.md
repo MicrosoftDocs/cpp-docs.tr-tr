@@ -29,11 +29,11 @@ helpviewer_keywords:
 - _ismbbpunct_l function
 ms.assetid: 1976c9d3-7d1a-415f-ac52-2715c7bb56eb
 ms.openlocfilehash: acf23cf9da34ba50693aea7772cdbcfaeb146f2f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50563002"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62157171"
 ---
 # <a name="ismbbpunct-ismbbpunctl"></a>_ismbbpunct, _ismbbpunct_l
 

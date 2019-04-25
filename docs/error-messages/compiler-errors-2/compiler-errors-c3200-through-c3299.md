@@ -1,6 +1,6 @@
 ---
-title: Derleyici hataları C3200 ile c3299 arasındaki
-ms.date: 11/17/2017
+title: C3200 ile c3299 arasındaki derleyici hataları
+ms.date: 04/21/2019
 f1_keywords:
 - C3220
 - C3221
@@ -34,14 +34,14 @@ helpviewer_keywords:
 - C3281
 - C3294
 ms.assetid: 6b3104f6-63bc-4823-b6f3-b8a16be4b87f
-ms.openlocfilehash: e8a9c1db4cba837a5780e51f84035492cd0e9e76
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 6965fcde5f7cc93464593e83f787d0a5838398dd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50490612"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62281501"
 ---
-# <a name="compiler-errors-c3200-through-c3299"></a>Derleyici hataları C3200 ile c3299 arasındaki
+# <a name="compiler-errors-c3200-through-c3299"></a>C3200 ile c3299 arasındaki derleyici hataları
 
 Belgelerin bu bölümdeki makaleleri bir alt kümesini derleyici tarafından oluşturulan hata iletilerini açıklayın.
 
@@ -151,3 +151,8 @@ Belgelerin bu bölümdeki makaleleri bir alt kümesini derleyici tarafından olu
 |[Derleyici Hatası C3297](compiler-error-c3297.md)|' *constraint2*': kullanamazsınız ' *constraint1*' bir kısıtlama olarak çünkü ' *constraint1*' değer kısıtlamasına sahip|
 |[Derleyici Hatası C3298](compiler-error-c3298.md)|' *constraint1*': kullanamazsınız ' *constraint2*' bir kısıtlama olarak çünkü ' *constraint2*' başvuru kısıtlaması var ve ' *constraint1*' değer kısıtlamasına sahip|
 |[Derleyici Hatası C3299](compiler-error-c3299.md)|' *işlevi*': kısıtlamalar belirtilemez bunlar temel yöntemden devralınır|
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[C /C++ derleyicisi ve derleme araçları hataları ve Uyarıları](../compiler-errors-1/c-cpp-build-errors.md) \
+[C3999 arasındaki derleyici hataları C2000-](../compiler-errors-1/compiler-errors-c2000-c3999.md)

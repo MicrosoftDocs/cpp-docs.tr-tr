@@ -8,11 +8,11 @@ helpviewer_keywords:
 - RaiseException function
 ms.assetid: f9c74f6d-112a-4d2e-900f-622f795d5dbf
 ms.openlocfilehash: 08305c5d59d7e272aac87ad9aa183c8e82588632
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59029965"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62231359"
 ---
 # <a name="raiseexception-function"></a>RaiseException İşlevi
 

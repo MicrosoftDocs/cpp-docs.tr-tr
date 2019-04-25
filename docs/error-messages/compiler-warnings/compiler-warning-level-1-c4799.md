@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C4799
 ms.assetid: 8ecbd06f-c778-4371-a2fb-c690b6743ec8
 ms.openlocfilehash: 475451b47d461e7ea1428eb715a876fb023694d1
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50552262"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62152222"
 ---
 # <a name="compiler-warning-level-1-c4799"></a>Derleyici Uyarısı (düzey 1) C4799
 

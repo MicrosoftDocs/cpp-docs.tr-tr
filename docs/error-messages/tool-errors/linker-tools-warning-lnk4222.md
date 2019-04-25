@@ -7,11 +7,11 @@ helpviewer_keywords:
 - LNK4222
 ms.assetid: b7bb1794-41fb-4c83-b9b0-59c0d786a7da
 ms.openlocfilehash: 52a4fee532eb9997dcf013f95246b27fdffc4c20
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50563104"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62160412"
 ---
 # <a name="linker-tools-warning-lnk4222"></a>Bağlayıcı Araçları Uyarısı LNK4222
 

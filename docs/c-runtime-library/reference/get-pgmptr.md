@@ -26,11 +26,11 @@ helpviewer_keywords:
 - _pgmptr global variable
 ms.assetid: 29f16a9f-a685-4721-add3-7fad4f67eece
 ms.openlocfilehash: 2d3959a69d85fca38e4d099d3365553f88fd015f
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51332094"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62287508"
 ---
 # <a name="getpgmptr"></a>_get_pgmptr
 

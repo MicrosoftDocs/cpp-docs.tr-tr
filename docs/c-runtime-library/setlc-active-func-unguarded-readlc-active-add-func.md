@@ -21,11 +21,11 @@ helpviewer_keywords:
 - ___unguarded_readlc_active_add_func
 ms.assetid: 605ec4e3-81e5-4ece-935a-f434768cc702
 ms.openlocfilehash: 244bb5b0bd6a15dab2de1ad2d6b71c2ae2f850bb
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57743984"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62268830"
 ---
 # <a name="setlcactivefunc-unguardedreadlcactiveaddfunc"></a>___setlc_active_func, ___unguarded_readlc_active_add_func
 

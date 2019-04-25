@@ -3,11 +3,11 @@ title: 1. Giriş
 ms.date: 01/16/2019
 ms.assetid: c42e72bc-0e31-4b1c-b670-cd82673c0c5a
 ms.openlocfilehash: 8c735408bdf9f9a13693bd0ad25df185bb1db42a
-ms.sourcegitcommit: 382e247c0f1b4cb7c2dab837b8b6fdff24bff47a
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/28/2019
-ms.locfileid: "55087281"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62236456"
 ---
 # <a name="1-introduction"></a>1. Giriş
 
@@ -57,7 +57,7 @@ Bu belgede aşağıdaki terimler kullanılır:
 
   Özel bir değişken başvurusu yapılmalıdır iş parçacığı için benzersiz olan depolama bloğu adları. Bir değişkeni özel olduğunu belirtmek için birkaç yolu vardır: bir paralel bölgenin içinde tanımını bir `threadprivate` yönergesi, bir `private`, `firstprivate`, `lastprivate`, veya `reduction` yan tümcesi veya değişken olarak kullanıldığında bir `for`döngü denetim değişkeni olarak bir `for` hemen döngü bir `for` veya `parallel for` yönergesi.
 
-- bölge
+- region
 
   Dinamik bir uzantı.
 
@@ -133,5 +133,5 @@ Bu OpenMP API belirtimine C'ye başvuran olduğunda, uygulama tarafından destek
 
 - [Çalışma zamanı kitaplık işlevleri](3-run-time-library-functions.md)
 - [Ortam değişkenleri](4-environment-variables.md)
-- [OpenMP C/C++'daki uygulama tanımlı davranışlar](e-implementation-defined-behaviors-in-openmp-c-cpp.md)
+- [OpenMP C/C++’daki uygulama tanımlı davranışlar](e-implementation-defined-behaviors-in-openmp-c-cpp.md)
 - [Yeni özellikler OpenMP C/C++'daki sürüm 2.0](f-new-features-and-clarifications-in-version-2-0.md)

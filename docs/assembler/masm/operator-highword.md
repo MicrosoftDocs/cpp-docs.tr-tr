@@ -9,11 +9,11 @@ helpviewer_keywords:
 - HIGHWORD operator
 ms.assetid: 6a3e4d60-e7b6-4cab-b4d7-d4cb7fb307c9
 ms.openlocfilehash: 907bac76016e702591e1a28a00275c53867955be
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50552834"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62200752"
 ---
 # <a name="operator-highword"></a>HIGHWORD işleci
 

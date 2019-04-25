@@ -3,11 +3,11 @@ title: ARM Assembler Komut Satırı Başvurusu
 ms.date: 08/30/2018
 ms.assetid: f7b89478-1ab5-4995-8cde-a805f0462c45
 ms.openlocfilehash: f49b59a81fbe5f11c0f219d1e1fe83a4ee811c7a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50579250"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62162141"
 ---
 # <a name="arm-assembler-command-line-reference"></a>ARM Assembler Komut Satırı Başvurusu
 

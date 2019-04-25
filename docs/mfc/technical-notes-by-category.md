@@ -5,11 +5,11 @@ f1_keywords:
 - vc.tables.mfc.technotes
 ms.assetid: b9f1c953-233d-4d64-9e8e-ca69b79460b8
 ms.openlocfilehash: 7bd6ab2c035fe49a88bd12b62ca26e83e7d9072a
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57304164"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62306554"
 ---
 # <a name="technical-notes-by-category"></a>Kategoriye Göre Teknik Notlar
 

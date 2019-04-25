@@ -1,6 +1,6 @@
 ---
-title: Derleyici hataları C3300 ile c3399 arasındaki
-ms.date: 11/17/2017
+title: C3300 ile c3399 arasındaki derleyici hataları
+ms.date: 04/21/2019
 f1_keywords:
 - C3300
 - C3301
@@ -100,14 +100,14 @@ helpviewer_keywords:
 - C3377
 - C3378
 ms.assetid: 190b7d29-ffe6-4261-921d-140da1935d00
-ms.openlocfilehash: 22964c9482d87c466665949ad4b340d43b3a5622
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ca55e19534f722a7231a1d30c63e2dbb77d25ec7
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50652705"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62281462"
 ---
-# <a name="compiler-errors-c3300-through-c3399"></a>Derleyici hataları C3300 ile c3399 arasındaki
+# <a name="compiler-errors-c3300-through-c3399"></a>C3300 ile c3399 arasındaki derleyici hataları
 
 Belgelerin bu bölümdeki makaleleri bir alt kümesini derleyici tarafından oluşturulan hata iletilerini açıklayın.
 
@@ -152,10 +152,10 @@ Belgelerin bu bölümdeki makaleleri bir alt kümesini derleyici tarafından olu
 |Derleyici Hatası C3332|'*özelliği*': dilbilgisi tutarsız, özellik '*özelliği*' olan hem gerekli hem de varsayılan değeri var|
 |[Derleyici Hatası C3333](compiler-error-c3333.md)|'*Kitaplığı*': bozuk tür kitaplığı #import olamaz|
 |[Derleyici Hatası C3334](compiler-error-c3334.md)|#import bozuk tür kitaplığı|
-|Derleyici Hatası C3335|'*tanımlayıcı*': en fazla bir varsayılan arabirim olabilir bir coclass için*sınıfı*'|
+|Derleyici Hatası C3335|'*tanımlayıcı*': En fazla bir varsayılan arabirim olabilir bir coclass için*sınıfı*'|
 |Derleyici Hatası C3336|Bu işlemin sınıf kapsamında gerçekleştirilmesi gerekir|
 |Derleyici Hatası C3337|'*tanımlayıcı*': defaultvtable bir coclass için olay kaynağı olmalıdır*sınıfı*'|
-|Derleyici Hatası C3338|'*tanımlayıcı*': en fazla bir coclass için olay kaynağı olan bir varsayılan arabirim olabilir*sınıfı*'|
+|Derleyici Hatası C3338|'*tanımlayıcı*': En fazla bir coclass için olay kaynağı olan bir varsayılan arabirim olabilir*sınıfı*'|
 |Derleyici Hatası C3339|Şablon Şablon parametresi parametre listesinden sonra 'class' veya 'typename' gerektirir|
 |[Derleyici Hatası C3340](compiler-error-c3340.md)|'*tanımlayıcı*': arabirim hem 'restricted' hem de 'default' coclass'ı içinde olamaz*sınıfı*'|
 |Derleyici Hatası C3341|'*arabirimi*': defaultvtable arabirimi ya 'dual' ya da 'custom' olmalıdır|
@@ -217,3 +217,8 @@ Belgelerin bu bölümdeki makaleleri bir alt kümesini derleyici tarafından olu
 |[Derleyici Hatası C3397](compiler-error-c3397.md)|Toplama başlatma varsayılan bağımsız değişkenler izin verilmiyor|
 |[Derleyici Hatası C3398](compiler-error-c3398.md)|'*işleci*': dan dönüştürülemiyor '*türü*'to'*türü*'. Kaynak ifadesi bir işlev simgesi olmalıdır|
 |[Derleyici Hatası C3399](compiler-error-c3399.md)|'*türü*': bir genel parametrenin örneği oluşturulurken bağımsız değişken sağlanamaz|
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[C /C++ derleyicisi ve derleme araçları hataları ve Uyarıları](../compiler-errors-1/c-cpp-build-errors.md) \
+[C3999 arasındaki derleyici hataları C2000-](../compiler-errors-1/compiler-errors-c2000-c3999.md)

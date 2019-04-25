@@ -3,11 +3,11 @@ title: Tanımlayıcıların Özeti
 ms.date: 11/04/2016
 ms.assetid: 2fe74b88-79e4-4e09-9d87-c258905ec31a
 ms.openlocfilehash: b690e434705d20806573f61c48f528ced6dad82c
-ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56152865"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62157727"
 ---
 # <a name="summary-of-identifiers"></a>Tanımlayıcıların Özeti
 

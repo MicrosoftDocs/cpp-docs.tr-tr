@@ -21,11 +21,11 @@ helpviewer_keywords:
 - _CIexp intrinsic
 ms.assetid: f8a3e3b7-fa57-41a3-9983-6c81914cbb55
 ms.openlocfilehash: 5d51e8e542ffb14a77001d045903dccb1a091d53
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57751351"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62290345"
 ---
 # <a name="ciexp"></a>_CIexp
 

@@ -10,11 +10,11 @@ f1_keywords:
 - VC.Project.VCManifestTool.AssemblyIdentity
 ms.assetid: b99368a5-6819-482c-a06e-f2409290cfd1
 ms.openlocfilehash: 9acdb7f5c934a8cabdd1803074778ac9f01f4960
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57824091"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62271036"
 ---
 # <a name="general-manifest-tool-configuration-properties-ltprojectnamegt-property-pages-dialog-box"></a>Genel, bildirim aracı, yapılandırma özellikleri, &lt;Projectname&gt; özellik sayfaları iletişim kutusu
 
@@ -44,4 +44,4 @@ Bu özellik sayfası iletişim kutusu erişmek için projenizi veya, özellik sa
 
 [ClickOnce Uygulama Bildirimi](/visualstudio/deployment/clickonce-application-manifest)<br>
 [Bildirim Aracı özellik sayfaları](manifest-tool-property-pages.md)<br>
-[C++ derleyicisi ayarlayın ve derleme Visual Studio özellikleri](../working-with-project-properties.md)
+[Visual Studio’da C++ derleyicisi ve derleme özelliklerini ayarlama](../working-with-project-properties.md)

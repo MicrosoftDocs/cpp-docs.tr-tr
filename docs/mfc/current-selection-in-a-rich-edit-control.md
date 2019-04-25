@@ -8,11 +8,11 @@ helpviewer_keywords:
 - selection, current in CRichEditCtrl
 ms.assetid: f6b2a2b6-5481-4ad3-9720-6dd772ea6fc8
 ms.openlocfilehash: 4516c4506419169ac3ab284e6c59cae71595be59
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57286870"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62241812"
 ---
 # <a name="current-selection-in-a-rich-edit-control"></a>Bir Zengin Düzenleme Denetimindeki Geçerli Bölüm
 

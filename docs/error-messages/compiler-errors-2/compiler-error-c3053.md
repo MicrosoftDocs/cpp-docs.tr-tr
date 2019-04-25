@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3053
 ms.assetid: ab9a25f3-e341-4f6e-8e69-069b4a963a64
 ms.openlocfilehash: cb01207be15a628fb0c6206df3e6a673067f568a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50441375"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62265652"
 ---
 # <a name="compiler-error-c3053"></a>Derleyici Hatası C3053
 

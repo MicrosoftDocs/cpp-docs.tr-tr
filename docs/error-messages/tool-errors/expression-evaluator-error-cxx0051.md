@@ -8,11 +8,11 @@ helpviewer_keywords:
 - CXX0051
 ms.assetid: 031cd2ed-d9bb-4aa5-9858-71581bcca49c
 ms.openlocfilehash: 12d7d9ccb1fee096115e8c82c825eb8df336f63b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50536831"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62160633"
 ---
 # <a name="expression-evaluator-error-cxx0051"></a>İfade Değerlendirici Hatası CXX0051
 

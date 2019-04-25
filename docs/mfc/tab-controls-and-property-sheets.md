@@ -7,11 +7,11 @@ helpviewer_keywords:
 - CTabCtrl class [MFC], and property sheets
 ms.assetid: f3b87bea-9ad9-41e6-a7ff-a9285308267e
 ms.openlocfilehash: e765316880749ae5fb065e048b66b1203d7f222e
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58768828"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62306632"
 ---
 # <a name="tab-controls-and-property-sheets"></a>Sekme Denetimleri ve Özellik Sayfaları
 

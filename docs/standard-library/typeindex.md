@@ -5,11 +5,11 @@ f1_keywords:
 - <typeindex>
 ms.assetid: a9551137-f74b-4f02-af64-ff00214cea1f
 ms.openlocfilehash: e22ce63c01185112ed512217156470e6f2948cd5
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50566627"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62278923"
 ---
 # <a name="lttypeindexgt"></a>&lt;typeindex&gt;
 

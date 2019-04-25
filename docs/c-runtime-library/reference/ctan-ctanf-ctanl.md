@@ -31,11 +31,11 @@ helpviewer_keywords:
 - ctanl function
 ms.assetid: d3cbd25c-1e93-4a6d-8154-da42921f7223
 ms.openlocfilehash: 2d4da5a39658e46bc633ae3bd9c8f6f0a01555aa
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50661756"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62288760"
 ---
 # <a name="ctan-ctanf-ctanl"></a>ctan, ctanf, ctanl
 
@@ -72,18 +72,18 @@ Tanjantını *z*.
 
 |Giriş|SEH özel durumu|**_matherr** özel durumu|
 |-----------|-------------------|--------------------------|
-|± ∞, QNAN, ONRAKİNİ BUL|yok|_DOMAIN|
+|± ∞, QNAN, IND|yok|_DOMAIN|
 |± ∞ (**tan**, **tanf**)|GEÇERSİZ|_DOMAIN|
 
 ## <a name="remarks"></a>Açıklamalar
 
-C++ aşırı yüklemeye izin verdiğinden, aşırı yüklemesini çağırabilirsiniz **ctan** alan ve getiren **_Fcomplex** ve **_Lcomplex** değerleri. C programında **ctan** her zaman alan ve döndüren bir **_Dcomplex** değeri.
+Çünkü C++ aşırı yüklemesi, sağlayan yüklerini çağırabilirsiniz **ctan** alan ve getiren **_Fcomplex** ve **_Lcomplex** değerleri. C programında **ctan** her zaman alan ve döndüren bir **_Dcomplex** değeri.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|C üstbilgisi|C++ üst bilgisi|
 |-------------|--------------|------------------|
-|**ctan**, **ctanf**, **ctanl**|\<Complex.h >|\<ccomplex >|
+|**ctan**,               **ctanf**, **ctanl**|\<Complex.h >|\<ccomplex >|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

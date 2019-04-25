@@ -10,11 +10,11 @@ helpviewer_keywords:
 - CAutoVectorPtrElementTraits class
 ms.assetid: 16b81a56-55fb-46ca-b376-66a1884231a6
 ms.openlocfilehash: 168670709470d7b7fdd77edb3c29d5a9f4049ca3
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57280738"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62260090"
 ---
 # <a name="cautovectorptrelementtraits-class"></a>CAutoVectorPtrElementTraits sınıfı
 

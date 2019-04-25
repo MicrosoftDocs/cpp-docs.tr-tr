@@ -7,11 +7,11 @@ helpviewer_keywords:
 - lists [MFC], image
 ms.assetid: c2768515-deba-49e8-a6f3-5be6482afb19
 ms.openlocfilehash: 844bfe71f7b03f299f57b0fd4558b7e9eacf67c2
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57265788"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62242243"
 ---
 # <a name="creating-the-image-lists"></a>Görüntü Listelerini Oluşturma
 

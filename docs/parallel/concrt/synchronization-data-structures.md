@@ -5,11 +5,11 @@ helpviewer_keywords:
 - synchronization data structures
 ms.assetid: d612757d-e4b7-4019-a627-f853af085b8b
 ms.openlocfilehash: f9b949e7782c4b9ca302e9e623ce5f09061c39ef
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57301889"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62185964"
 ---
 # <a name="synchronization-data-structures"></a>Eşitleme Veri Yapıları
 

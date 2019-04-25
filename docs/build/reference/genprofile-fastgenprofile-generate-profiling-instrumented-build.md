@@ -11,11 +11,11 @@ helpviewer_keywords:
 - FASTGENPROFILE
 ms.assetid: deff5ce7-46f5-448a-b9cd-a7a83a6864c6
 ms.openlocfilehash: cf6327b175344f1e2914792eb47a4838e544ea24
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57813883"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62292217"
 ---
 # <a name="genprofile-fastgenprofile-generate-profiling-instrumented-build"></a>/ GENPROFILE, fastgenprofıle (profil oluşturma üret)
 
@@ -71,5 +71,5 @@ De belirtmeniz gerekir **/LTCG** belirttiğinizde **/genprofıle** veya **fastge
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [MSVC bağlayıcı başvurusu](linking.md)<br/>
-[MSVC bağlayıcı seçenekleri](linker-options.md)<br/>
+[MSVC Bağlayıcı Seçenekleri](linker-options.md)<br/>
 [/LTCG (Bağlama Zamanı Kodu Oluşturma)](ltcg-link-time-code-generation.md)<br/>

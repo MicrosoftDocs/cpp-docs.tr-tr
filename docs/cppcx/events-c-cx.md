@@ -1,15 +1,15 @@
 ---
-title: Olaylar (C + +/ CX)
+title: Olaylar (C++/CX)
 ms.date: 01/22/2017
 ms.assetid: 31c8e08a-00ad-40f9-8f7e-124864aaad58
 ms.openlocfilehash: 8e7e8616831e66a7f59ed849fc92ef2553aadb5b
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57745088"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62301545"
 ---
-# <a name="events-ccx"></a>Olaylar (C + +/ CX)
+# <a name="events-ccx"></a>Olaylar (C++/CX)
 
 Bir Windows türü bildirebilirsiniz (Yayımlama) çalışma zamanı olayları ve istemci kodu aynı bileşenin veya diğer bileşenleri abone olabilir, bu olaylarla adlı yöntemler ilişkilendirerek *olay işleyicileri* olaylı. Birden çok olay işleyicileri, tek bir olay ile ilişkili olabilir. Yayımlama nesne olayı oluşturan, tüm olay işleyicileri çağrılmasına neden olur. Bu şekilde, yayımcı olayını ne olursa olsun bir özel eylem uygundur abone sınıfı gerçekleştirebilirsiniz. Bir olay olaya abone için tüm olay işleyicilerine sahip olması imza belirten bir temsilci türü vardır.
 
@@ -34,7 +34,7 @@ Aşağıdaki örnek, bir abone sınıfını nasıl kullandığını gösterir. `
 [!code-cpp[cx_events#02](../cppcx/codesnippet/CPP/eventsupportinvs/eventclientclass.h#02)]
 
 > [!WARNING]
-> Genel olarak, döngüsel başvuru kaçınmak için dikkatli almadıkları sürece, bir lambda yerine adlandırılmış bir işlev için bir olay işleyicisi kullanmak en iyisidir. Bir lambda güçlü başvuruya göre yakalayan ve döngüsel bir başvuru oluşturur ancak bir adlandırılmış işlev "Bu" işaretçiyi zayıf başvuru tarafından yakalar. Daha fazla bilgi için [zayıf başvurular ve döngüleri kesme (C + +/ CX)](../cppcx/weak-references-and-breaking-cycles-c-cx.md).
+> Genel olarak, döngüsel başvuru kaçınmak için dikkatli almadıkları sürece, bir lambda yerine adlandırılmış bir işlev için bir olay işleyicisi kullanmak en iyisidir. Bir lambda güçlü başvuruya göre yakalayan ve döngüsel bir başvuru oluşturur ancak bir adlandırılmış işlev "Bu" işaretçiyi zayıf başvuru tarafından yakalar. Daha fazla bilgi için [zayıf başvurular ve döngüleri kesme (C++/CX)](../cppcx/weak-references-and-breaking-cycles-c-cx.md).
 
 ### <a name="custom-add-and-remove-methods"></a>Özel yöntemler ekleyip
 
@@ -63,4 +63,4 @@ Olay alıcıları olay işleyicileri, olay kaynağı çağırır sırasını gar
 [Tür Sistemi](../cppcx/type-system-c-cx.md)<br/>
 [Temsilciler](../cppcx/delegates-c-cx.md)<br/>
 [Visual C++ Dil Başvurusu](../cppcx/visual-c-language-reference-c-cx.md)<br/>
-[Ad alanları başvurusu](../cppcx/namespaces-reference-c-cx.md)
+[Ad Alanları Başvurusu](../cppcx/namespaces-reference-c-cx.md)

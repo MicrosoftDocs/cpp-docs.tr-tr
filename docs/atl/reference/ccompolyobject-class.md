@@ -18,11 +18,11 @@ helpviewer_keywords:
 - CComPolyObject class
 ms.assetid: eaf67c18-e855-48ca-9b15-f1df3106121b
 ms.openlocfilehash: a8dbbc06d35d2606cc76e89cc555ba7f8577daa9
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57277943"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62246264"
 ---
 # <a name="ccompolyobject-class"></a>CComPolyObject sınıfı
 

@@ -5,11 +5,11 @@ helpviewer_keywords:
 - functions [C++], without parentheses
 ms.assetid: edf4a177-a160-44aa-8436-e077b5b27809
 ms.openlocfilehash: 51be77dc8f4fe072ea6cc46dd51e38862649feda
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57824097"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62314604"
 ---
 # <a name="using-function-name-without--produces-no-code"></a>() Olmadan İşlev Adının Kullanılması Kod Üretmez
 

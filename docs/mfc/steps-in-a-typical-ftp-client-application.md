@@ -9,11 +9,11 @@ helpviewer_keywords:
 - Internet applications [MFC], FTP client applications
 ms.assetid: 70bed7b5-6040-40d1-bc77-702e63a698f2
 ms.openlocfilehash: d08edf704e748767f3b566252ad328baf40b55ea
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57285808"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62307024"
 ---
 # <a name="steps-in-a-typical-ftp-client-application"></a>Tipik Bir FTP İstemci Uygulamasındaki Adımlar
 

@@ -8,11 +8,11 @@ helpviewer_keywords:
 - /FUNCTIONPADMIN linker option
 ms.assetid: 25b02c13-1add-4fbd-add9-fcb30eb2cae7
 ms.openlocfilehash: 699da3cea9914b5a10bdf769015d41c33936a902
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57818628"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62292402"
 ---
 # <a name="functionpadmin-create-hotpatchable-image"></a>/FUNCTIONPADMIN (Düzeltme Eki Eklenebilen Görüntü Oluşturma)
 
@@ -48,4 +48,4 @@ Derleme ve görüntü cl.exe, tek bir çağrı ile bağlantı **/hotpatch** geli
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [MSVC bağlayıcı başvurusu](linking.md)<br/>
-[MSVC bağlayıcı seçenekleri](linker-options.md)
+[MSVC Bağlayıcı Seçenekleri](linker-options.md)

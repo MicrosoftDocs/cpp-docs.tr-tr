@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2974
 ms.assetid: 1b444260-f2bf-48d7-ab1e-35573d8c4a0e
 ms.openlocfilehash: 2fa0fae07435f3ab63398b7b3f02f9c662e7b436
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50501380"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62256576"
 ---
 # <a name="compiler-error-c2974"></a>Derleyici Hatası C2974
 

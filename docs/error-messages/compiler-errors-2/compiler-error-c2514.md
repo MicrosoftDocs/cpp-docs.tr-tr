@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2514
 ms.assetid: 4b7085e5-6714-4261-80b7-bc72e64ab3e8
 ms.openlocfilehash: aef9df0718d013378f88c1a34d08d1b1e05e214c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50667016"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62243777"
 ---
 # <a name="compiler-error-c2514"></a>Derleyici Hatası C2514
 

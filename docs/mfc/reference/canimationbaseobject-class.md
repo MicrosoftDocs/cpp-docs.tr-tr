@@ -51,11 +51,11 @@ helpviewer_keywords:
 - CAnimationBaseObject [MFC], m_pParentController
 ms.assetid: 76b25917-940e-4eba-940f-31d270702603
 ms.openlocfilehash: e9c5ed98d654eb37be7ab8523d44c9da6eecd9c7
-ms.sourcegitcommit: 309dc532f13242854b47759cef846de59bb807f1
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58565898"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62152638"
 ---
 # <a name="canimationbaseobject-class"></a>CAnimationBaseObject sınıfı
 

@@ -23,11 +23,11 @@ helpviewer_keywords:
 - IViewObjectExImpl class
 ms.assetid: ad6de760-1ee5-4883-b033-ae57beffc369
 ms.openlocfilehash: 4ed7a7e4a6070ba52c54c4dace687111cf7d33d8
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57301941"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62198219"
 ---
 # <a name="iviewobjecteximpl-class"></a>Iviewobjectexımpl sınıfı
 

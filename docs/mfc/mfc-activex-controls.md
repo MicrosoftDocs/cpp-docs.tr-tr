@@ -16,11 +16,11 @@ helpviewer_keywords:
 - MFC ActiveX controls [MFC]
 ms.assetid: c911fb74-3afc-4bf3-a0f5-7922b14d9a1b
 ms.openlocfilehash: d10aad92088a02a1cab0977ea174abdf919a05e9
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58769218"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62239715"
 ---
 # <a name="mfc-activex-controls"></a>MFC ActiveX Denetimleri
 

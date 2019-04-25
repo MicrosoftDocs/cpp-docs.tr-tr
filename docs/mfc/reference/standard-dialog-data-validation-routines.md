@@ -5,11 +5,11 @@ helpviewer_keywords:
 - standard dialog, data validation routines
 ms.assetid: 44dbc222-a897-4949-925e-7660e8964ccd
 ms.openlocfilehash: 77b08945c99b9e9e2652a40e5710d8c4e89846b7
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57269685"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62309999"
 ---
 # <a name="standard-dialog-data-validation-routines"></a>Standart İletişim Kutusu Veri Doğrulama Rutinleri
 

@@ -8,11 +8,11 @@ helpviewer_keywords:
 - tools [C++], build
 ms.assetid: 48d9daf4-6bbf-473a-8ce2-bf2923b69f80
 ms.openlocfilehash: e41a6dcb8de4a8608d065cce5bce2595cd96a84f
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57808072"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62272851"
 ---
 # <a name="additional-msvc-build-tools"></a>Ek MSVC derleme araçları
 
@@ -37,5 +37,5 @@ Visual C++, görüntüleme ya da yapı çıkış işleme için aşağıdaki komu
 
 [C/C++ Derleme Başvurusu](c-cpp-building-reference.md)<br/>
 [Düzenlenmiş Adlar](decorated-names.md)<br/>
-[MSVC derleyici seçenekleri](compiler-options.md)<br/>
-[MSVC bağlayıcı seçenekleri](linker-options.md)
+[MSVC Derleyicisi Seçenekleri](compiler-options.md)<br/>
+[MSVC Bağlayıcı Seçenekleri](linker-options.md)

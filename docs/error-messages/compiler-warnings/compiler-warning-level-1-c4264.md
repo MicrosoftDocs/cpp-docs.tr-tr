@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C4264
 ms.assetid: 315a13c1-ca54-4a90-9d2b-dd996463af5d
 ms.openlocfilehash: c28d9dc2e7cb218935bc76059cc0a24a75bafc5c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50657749"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62207357"
 ---
 # <a name="compiler-warning-level-1-c4264"></a>Derleyici Uyarısı (düzey 1) C4264
 

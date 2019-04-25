@@ -6,11 +6,11 @@ helpviewer_keywords:
 - CDateTimeCtrl class [MFC], creating
 ms.assetid: 764ec2fb-98cd-478b-a5f2-d63f0bb12279
 ms.openlocfilehash: b3dd04d917667ff04001a455263d2a2f4af9bf9c
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57282077"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62242399"
 ---
 # <a name="creating-the-date-and-time-picker-control"></a>Tarih ve Saat Seçici Denetimini Oluşturma
 

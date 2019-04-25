@@ -11,11 +11,11 @@ helpviewer_keywords:
 - Internet [MFC], asynchronous downloading
 ms.assetid: 418b0c64-0046-4dae-8118-c9c762b5822e
 ms.openlocfilehash: e7a7ea51bca134e965747db8aac7f8a62822c9eb
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57305035"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62165846"
 ---
 # <a name="asynchronous-monikers-on-the-internet"></a>Internet'teki Zaman Uyumsuz Adlar
 

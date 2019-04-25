@@ -9,11 +9,11 @@ helpviewer_keywords:
 - __unhook keyword [C++]
 ms.assetid: 953a14f3-5199-459d-81e5-fcf015a19878
 ms.openlocfilehash: e8f42c35024995c026ae10fc7f0ab3db77d1e5dc
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58769530"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62312160"
 ---
 # <a name="unhook"></a>__unhook
 

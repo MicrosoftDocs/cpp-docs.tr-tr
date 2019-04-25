@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C4912
 ms.assetid: ba1f1a66-8c20-4792-9ac8-43e49f729ae2
 ms.openlocfilehash: 7a6f7df79a98685a7eec1582ae248ea3f620c5fa
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50474310"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62207062"
 ---
 # <a name="compiler-warning-level-1-c4912"></a>Derleyici Uyarısı (düzey 1) C4912
 

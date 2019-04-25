@@ -7,11 +7,11 @@ helpviewer_keywords:
 - MFC ActiveX controls [MFC], Automation server
 ms.assetid: e0c24ed2-d61c-49ad-a4fa-4e1098d1d39b
 ms.openlocfilehash: 01f0162e124c5c49d45ce4a90f5243c88b09b5a0
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57303735"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62225261"
 ---
 # <a name="mfc-activex-controls-creating-an-automation-server"></a>MFC ActiveX denetimleri: Otomasyon sunucusu oluşturma
 

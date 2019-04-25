@@ -10,11 +10,11 @@ helpviewer_keywords:
 - control modules [MFC]
 ms.assetid: 0721724d-d4af-4eda-ad34-5a2b27810dd4
 ms.openlocfilehash: f6d486c7bacb897d70d85414ac3d0bd0d13e447b
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58780294"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62310402"
 ---
 # <a name="colecontrolmodule-class"></a>COleControlModule sınıfı
 

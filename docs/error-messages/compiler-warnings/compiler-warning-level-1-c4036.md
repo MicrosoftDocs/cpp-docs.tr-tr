@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C4036
 ms.assetid: f0b15359-4d62-48ec-8cb1-a7b36587a47f
 ms.openlocfilehash: 632e88bb64568c97e937e83e177598054a954f22
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50609579"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62151792"
 ---
 # <a name="compiler-warning-level-1-c4036"></a>Derleyici Uyarısı (düzey 1) C4036
 

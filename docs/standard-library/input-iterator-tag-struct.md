@@ -8,11 +8,11 @@ helpviewer_keywords:
 - input_iterator_tag struct
 ms.assetid: ad68a4c6-f315-4ce1-8b74-c1fc71bd1577
 ms.openlocfilehash: 5478a8f9fa6013202a1ea8dd838eedb80b9c367e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50493940"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62159257"
 ---
 # <a name="inputiteratortag-struct"></a>input_iterator_tag Yapısı
 

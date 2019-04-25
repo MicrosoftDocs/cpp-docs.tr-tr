@@ -6,11 +6,11 @@ f1_keywords:
 - VC.Project.FXCompilerTool.TreatWarningAsError
 ms.assetid: a4f05aed-2c0e-4e7d-b7a4-bc2f228112c5
 ms.openlocfilehash: 32e14bef5b8612c37d3d0de9f2e34a65d8331c44
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57824011"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62291411"
 ---
 # <a name="hlsl-property-pages-advanced"></a>HLSL özellik sayfaları: Gelişmiş
 

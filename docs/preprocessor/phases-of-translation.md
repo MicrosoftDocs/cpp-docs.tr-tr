@@ -10,11 +10,11 @@ helpviewer_keywords:
 - files [C++], translation
 ms.assetid: a7f7a8c9-e8ba-4321-9e50-ebfbbdcce9db
 ms.openlocfilehash: 11e36e06adc4fa95cb9aa607704e72f64c812429
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59036159"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62180023"
 ---
 # <a name="phases-of-translation"></a>Çeviri Aşamaları
 

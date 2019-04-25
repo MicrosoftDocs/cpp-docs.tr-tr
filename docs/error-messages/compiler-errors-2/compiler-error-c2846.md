@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2846
 ms.assetid: bc090ec2-5410-4112-9ec6-261325374375
 ms.openlocfilehash: 4e1e88e538008cff03349a35e193b7bcd471b950
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50427891"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62256756"
 ---
 # <a name="compiler-error-c2846"></a>Derleyici Hatası C2846
 

@@ -7,11 +7,11 @@ helpviewer_keywords:
 - interfaces, event and event sink
 ms.assetid: eb2a5b33-88dc-4ce3-bee0-c5c38ea050d7
 ms.openlocfilehash: d977b59907266a2e0141defa8c496b1e7bc66a6c
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57273419"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62262079"
 ---
 # <a name="implementing-the-event-handling-interface"></a>Olay işleme arabirimini uygulama
 

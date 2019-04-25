@@ -9,11 +9,11 @@ helpviewer_keywords:
 - initializing views [MFC]
 ms.assetid: 33cb8643-8a16-478c-bc26-eccc734e3661
 ms.openlocfilehash: 0cf9faecbb7e0d74c2199a1a829aa68241e1c019
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57264098"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62297118"
 ---
 # <a name="initializing-documents-and-views"></a>Belgeleri ve Görünümleri Başlatma
 

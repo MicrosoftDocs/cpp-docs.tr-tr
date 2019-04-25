@@ -13,11 +13,11 @@ helpviewer_keywords:
 - custom build step (general)
 ms.assetid: bd319741-0491-46c4-a428-7c61b4b46a02
 ms.openlocfilehash: 329923140cf5a8f05e5c032ddb9e25c0ea45ec2a
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57824089"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62273085"
 ---
 # <a name="custom-build-step-property-page-general"></a>Özel derleme adımı özellik sayfası: Genel
 

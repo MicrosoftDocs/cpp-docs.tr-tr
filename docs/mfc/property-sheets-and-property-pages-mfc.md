@@ -9,11 +9,11 @@ helpviewer_keywords:
 - property sheets, propert pages
 ms.assetid: de8fea12-6c35-4cef-8625-b8073a379446
 ms.openlocfilehash: 7ff2851cc4ed04a64f1a49d68b6e3143b5edccd8
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57278773"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62297029"
 ---
 # <a name="property-sheets-and-property-pages-mfc"></a>Özellik Bölümleri ve Özellik Sayfaları (MFC)
 

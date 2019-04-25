@@ -10,11 +10,11 @@ helpviewer_keywords:
 - symbols
 ms.assetid: bdb4b93c-a88a-441a-84fd-01087d03be25
 ms.openlocfilehash: 6a2e685d33b108ce542fdc6e3e0565cc37299c1c
-ms.sourcegitcommit: 06fc71a46e3c4f6202a1c0bc604aa40611f50d36
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "58508747"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62294076"
 ---
 # <a name="creating-an-sbr-file"></a>.Sbr Dosyası Oluşturma
 

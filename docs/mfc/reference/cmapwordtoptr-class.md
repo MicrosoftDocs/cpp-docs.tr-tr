@@ -35,11 +35,11 @@ helpviewer_keywords:
 - CMapStringToOb [MFC], SetAt
 ms.assetid: b204d87f-6427-43e1-93e3-a4b1bb41099f
 ms.openlocfilehash: ff869eff90584f2fc259261a35b577f80bab71c6
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57291372"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62164065"
 ---
 # <a name="cmapwordtoptr-class"></a>CMapWordToPtr sınıfı
 

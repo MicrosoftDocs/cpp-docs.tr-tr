@@ -17,11 +17,11 @@ helpviewer_keywords:
 - compiler options, macros
 ms.assetid: a869adc6-b3de-4299-b040-9ae20b45f82c
 ms.openlocfilehash: 79b1cabc0304e905012db5f6dd73ed71073c0c1e
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57258482"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62278429"
 ---
 # <a name="compiler-options-macros"></a>Derleyici Seçenekleri makroları
 
@@ -115,7 +115,7 @@ _T makrosu tüm Oluşturucu dize bağımsız değişkenleri kullanarak _ATL_CSTR
 
 ATL ve MFC kitaplıkları, Visual C++ derleyicisinin geliştirilmiş standart C++ uyumluluk eşleşecek şekilde değiştirildi. ANSI C++ standardına göre söz dizimi bir sınıf üyesi işlevi için bir işaretçi olmalıdır `&CMyClass::MyFunc`.
 
-Zaman [_ATL_ENABLE_PTM_WARNING](#_atl_enable_ptm_warning) tanımlanmamış böylece önceki sürümlerinde oluşturulan kod, önceki gibi oluşturmaya devam edebilirsiniz (varsayılan durumda) ATL/MFC C4867 hata makrosu Maps (özellikle ileti eşlemeleri) devre dışı bırakır. Tanımlarsanız **_ATL_ENABLE_PTM_WARNING**, kodunuzu C++ standardı ile uyumlu olmalıdır.
+Zaman [_ATL_ENABLE_PTM_WARNING](#_atl_enable_ptm_warning) tanımlanmamış böylece önceki sürümlerinde oluşturulan kod, önceki gibi oluşturmaya devam edebilirsiniz (varsayılan durumda) ATL/MFC C4867 hata makrosu Maps (özellikle ileti eşlemeleri) devre dışı bırakır. Tanımlarsanız **_ATL_ENABLE_PTM_WARNING**, kodunuz olmalıdır C++ standart uyumlu.
 
 C++ Standart uyumlu sözdizimi için mevcut kodu Taşı gerekmez ancak standart form, kullanım dışıdır. Örneğin, aşağıdaki:
 

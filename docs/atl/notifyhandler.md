@@ -6,11 +6,11 @@ helpviewer_keywords:
 - NotifyHandler function
 ms.assetid: 5ff953ec-de35-42bc-8b3c-d384d636c139
 ms.openlocfilehash: 292a1c6606585dc0694ee678ba8bc9b5fbc42681
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57808228"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62261452"
 ---
 # <a name="notifyhandler"></a>NotifyHandler
 

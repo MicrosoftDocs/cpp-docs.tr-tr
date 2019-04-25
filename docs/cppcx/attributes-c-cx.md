@@ -1,15 +1,15 @@
 ---
-title: Öznitelikler (C + +/ CX)
+title: Öznitelikler (C++/CX)
 ms.date: 12/30/2016
 ms.assetid: 4438e03c-4de3-433d-abcc-31aa863bc0e0
 ms.openlocfilehash: 5f74914ab65fdf2c1803b47665e16378991efa3c
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57743824"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62209461"
 ---
-# <a name="attributes-ccx"></a>Öznitelikler (C + +/ CX)
+# <a name="attributes-ccx"></a>Öznitelikler (C++/CX)
 
 Köşeli ayraç içinde meta verileri oluşturma belirli davranışları belirtmek için Windows çalışma zamanı türleri ve yöntemleri için $a başvuru sınıfının özel bir özniteliktir. Önceden tanımlanmış birkaç öznitelikleri — Örneğin, [Windows::Foundation::Metadata::WebHostHidden](/uwp/api/Windows.Foundation.Metadata.WebHostHiddenAttribute)— C +'da yaygın olarak kullanılan +/ CX kod. Bu örnek, öznitelik bir sınıfa nasıl uygulanacağını gösterir:
 
@@ -47,4 +47,4 @@ Sonraki örnek, özel bir öznitelik tanımlayın ve bunları kullandığınızd
 
 [Tür Sistemi (C++/CX)](../cppcx/type-system-c-cx.md)<br/>
 [Visual C++ Dil Başvurusu](../cppcx/visual-c-language-reference-c-cx.md)<br/>
-[Ad alanları başvurusu](../cppcx/namespaces-reference-c-cx.md)
+[Ad Alanları Başvurusu](../cppcx/namespaces-reference-c-cx.md)

@@ -7,11 +7,11 @@ helpviewer_keywords:
 - __mulh intrinsic
 ms.assetid: cd2ab093-9ef6-404d-ac34-0bee033882f3
 ms.openlocfilehash: 122d7ff28a01c0b95c16c6a0f4cd20e883744d2e
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59034163"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62263080"
 ---
 # <a name="mulh"></a>__mulh
 

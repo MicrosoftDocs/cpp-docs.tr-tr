@@ -1,18 +1,18 @@
 ---
-title: Bağlayıcı araçları hatası LNK1318
+title: Bağlayıcı Araçları Hatası LNK1318
 ms.date: 05/29/2018
 f1_keywords:
 - LNK1318
 helpviewer_keywords:
 - LNK1318
 ms.openlocfilehash: 8ed6489a27d4c0e117f7f18281ff188f40936e0a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50648740"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62160997"
 ---
-# <a name="linker-tools-error-lnk1318"></a>Bağlayıcı araçları hatası LNK1318
+# <a name="linker-tools-error-lnk1318"></a>Bağlayıcı Araçları Hatası LNK1318
 
 > Beklenmeyen PDB hatası; *neden* '*ayrıntıları*'
 

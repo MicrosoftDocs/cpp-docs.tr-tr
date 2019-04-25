@@ -7,11 +7,11 @@ helpviewer_keywords:
 - instantiation, function templates
 ms.assetid: f22a07c7-3ad1-465a-84f5-8737e274bd47
 ms.openlocfilehash: c4667f5ae625468cdab428706ddaff92a1c1af33
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50620941"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62154184"
 ---
 # <a name="function-template-instantiation"></a>İşlev Şablonu Örneklemesi
 

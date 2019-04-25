@@ -9,11 +9,11 @@ helpviewer_keywords:
 - CCommonDialog [MFC], CCommonDialog
 ms.assetid: 1f68d65f-a0fd-4778-be22-ebbe51a95f95
 ms.openlocfilehash: 4fa7aa51d1ce482e00f68365045cd35c3fb7939b
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57264878"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62182273"
 ---
 # <a name="ccommondialog-class"></a>CCommonDialog sınıfı
 

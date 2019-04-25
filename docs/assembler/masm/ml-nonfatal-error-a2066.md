@@ -8,11 +8,11 @@ helpviewer_keywords:
 - A2066
 ms.assetid: 58220fdf-fb8f-47fc-a36d-737867361185
 ms.openlocfilehash: 10285c65437bdaaed24fb818e6c1eb3996d0deec
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50587258"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62177350"
 ---
 # <a name="ml-nonfatal-error-a2066"></a>ML Önemli Olmayan Hatası A2066
 

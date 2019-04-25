@@ -8,11 +8,11 @@ helpviewer_keywords:
 - A2050
 ms.assetid: 16f3a58f-4bde-48f1-b0e3-2ed9612780a5
 ms.openlocfilehash: 59d08b9c2743a3b45633527bcc54b3e1c4d6a58c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50439721"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62177558"
 ---
 # <a name="ml-nonfatal-error-a2050"></a>ML Önemli Olmayan Hatası A2050
 

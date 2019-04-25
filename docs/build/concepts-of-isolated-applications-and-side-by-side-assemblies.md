@@ -6,11 +6,11 @@ helpviewer_keywords:
 - isolated assemblies [C++]
 ms.assetid: 945a885f-cb3e-4c8a-a0b9-2c2e3e02cc50
 ms.openlocfilehash: 448d2088a9e91de8fc34b4f23721ffec77f6c697
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58773508"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62196709"
 ---
 # <a name="concepts-of-isolated-applications-and-side-by-side-assemblies"></a>Yalıtılmış Uygulama ve Yan Yana Derleme Kavramları
 

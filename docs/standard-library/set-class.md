@@ -87,11 +87,11 @@ helpviewer_keywords:
 - std::set [C++], value_comp
 ms.assetid: 8991f9aa-5509-4440-adc1-371512d32018
 ms.openlocfilehash: 8f4ad77c28b4643a979d7c3fb22e44e4aebd43dd
-ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51694744"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62295493"
 ---
 # <a name="set-class"></a>set Sınıfı
 
@@ -188,7 +188,7 @@ Küme sınıfı tarafından sağlanan yineleyici çift yönlüdür, ancak sını
 |[silme](#erase)|Küme içindeki bir öğeyi veya öğelerin aralığını belirtilen konumlardan kaldırır veya belirtilen bir anahtarla eşleşen öğeleri kaldırır.|
 |[Bul](#find)|Belirtilen anahtara denk bir anahtara sahip bir küme içindeki öğenin konumunu ele alan bir yineleyici döndürür.|
 |[get_allocator](#get_allocator)|Bir kopyasını döndürür `allocator` küme oluşturmak için kullanılan nesne.|
-|[Ekle](#insert)|Bir küme içine bir öğe veya öğe aralığı ekler.|
+|[insert](#insert)|Bir küme içine bir öğe veya öğe aralığı ekler.|
 |[key_comp](#key_comp)|Bir küme içindeki anahtarları sıralamak için kullanılan karşılaştırma nesnesinin bir kopyasını alır.|
 |[lower_bound](#lower_bound)|Bir yineleyiciyi belirtilen anahtardan daha büyük veya ona eşit bir anahtarla küme içindeki ilk öğeye döndürür.|
 |[max_size](#max_size)|Küme öğesinin maksimum uzunluğunu döndürür.|
@@ -477,7 +477,7 @@ size_type count(const Key& key) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*Anahtarı*<br/>
+*anahtar*<br/>
 Kümeden eşleştirilecek öğe anahtarı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -920,7 +920,7 @@ pair <iterator, iterator> equal_range (const Key& key);
 
 ### <a name="parameters"></a>Parametreler
 
-*Anahtarı*<br/>
+*anahtar*<br/>
 Aranan kümesinden bir öğenin sıralama anahtarı ile Karşılaştırılacak bağımsız değişken anahtarı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -1115,7 +1115,7 @@ const_iterator find(const Key& key) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*Anahtarı*<br/>
+*anahtar*<br/>
 Aranan kümesinden bir öğenin sıralama anahtarı tarafından eşleştirilecek anahtar değeri.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -1572,7 +1572,7 @@ iterator lower_bound(const Key& key);
 
 ### <a name="parameters"></a>Parametreler
 
-*Anahtarı*<br/>
+*anahtar*<br/>
 Aranan kümesinden bir öğenin sıralama anahtarı ile Karşılaştırılacak bağımsız değişken anahtarı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -2259,7 +2259,7 @@ iterator upper_bound(const Key& key);
 
 ### <a name="parameters"></a>Parametreler
 
-*Anahtarı*<br/>
+*anahtar*<br/>
 Aranan kümesinden bir öğenin sıralama anahtarı ile Karşılaştırılacak bağımsız değişken anahtarı.
 
 ### <a name="return-value"></a>Dönüş Değeri

@@ -6,11 +6,11 @@ helpviewer_keywords:
 - property pages, specifying
 ms.assetid: ee8678cf-c708-49ab-b0ad-fc2db31f1ac3
 ms.openlocfilehash: 47ee0c7d6d2ed464318ab80385ac71cff426a002
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58770986"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62196567"
 ---
 # <a name="specifying-property-pages"></a>Özellik sayfaları belirtme
 

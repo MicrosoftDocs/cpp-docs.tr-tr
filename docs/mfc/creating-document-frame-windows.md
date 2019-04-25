@@ -11,11 +11,11 @@ helpviewer_keywords:
 - MFC, frame windows
 ms.assetid: 8671e239-b76f-4dea-afa8-7024e6e58ff5
 ms.openlocfilehash: 66a951994a75cbd99debeb2c6511739411cdd470
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57266004"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62174035"
 ---
 # <a name="creating-document-frame-windows"></a>Belge Çerçeve Pencereleri Oluşturma
 

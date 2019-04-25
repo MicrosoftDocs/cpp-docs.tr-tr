@@ -8,11 +8,11 @@ helpviewer_keywords:
 - CAtlAutoThreadModule class
 ms.assetid: 3be834aa-55ef-403e-94ae-41979691b15f
 ms.openlocfilehash: 1ec66bf77d8dd705cb2e1e93f70a885ab96420a6
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57280426"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62247304"
 ---
 # <a name="catlautothreadmodule-class"></a>CAtlAutoThreadModule sınıfı
 

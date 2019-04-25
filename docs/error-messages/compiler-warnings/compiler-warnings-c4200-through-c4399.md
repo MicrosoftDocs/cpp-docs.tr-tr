@@ -1,6 +1,6 @@
 ---
 title: C4200 ile c4399 arasındaki derleyici uyarıları
-ms.date: 11/17/2017
+ms.date: 04/21/2019
 f1_keywords:
 - C4203
 - C4277
@@ -28,12 +28,12 @@ f1_keywords:
 - C4387
 - C4388
 ms.assetid: 170248db-7bf2-4823-92d9-437b04c1290d
-ms.openlocfilehash: d79c9c12664f9920f03490b8cb53ec671d3d78a3
-ms.sourcegitcommit: c1f646c8b72f330fa8cf5ddb0f8f261ba10d16f0
+ms.openlocfilehash: 5a257fa5ac39a9b8f593062d6a670c8d1ce4187f
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58328271"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62280587"
 ---
 # <a name="compiler-warnings-c4200-through-c4399"></a>C4200 ile c4399 arasındaki derleyici uyarıları
 
@@ -45,7 +45,7 @@ Belgelerin bu bölümdeki makaleleri bir alt kümesini derleyici tarafından olu
 
 |Uyarı|İleti|
 |-------------|-------------|
-|[Derleyici Uyarısı (düzey 2 ve 4) C4200](../../error-messages/compiler-warnings/compiler-warning-levels-2-and-4-c4200.md)|Standart olmayan uzantı kullanıldı: yapıda/birleşimde sıfır boyutlu dizi|
+|[Derleyici Uyarısı (Düzey 2 ve 4) C4200](../../error-messages/compiler-warnings/compiler-warning-levels-2-and-4-c4200.md)|Standart olmayan uzantı kullanıldı: yapıda/birleşimde sıfır boyutlu dizi|
 |[Derleyici Uyarısı (düzey 4) C4201](../../error-messages/compiler-warnings/compiler-warning-level-4-c4201.md)|Standart olmayan uzantı kullanıldı: Adsız yapı/birleşim|
 |[Derleyici Uyarısı (düzey 4) C4202](../../error-messages/compiler-warnings/compiler-warning-level-4-c4202.md)|Standart olmayan uzantı kullanıldı: '...': prototip parametre adı listesi geçersiz|
 |Derleyici Uyarısı C4203|Standart olmayan uzantı kullanıldı: statik üye değişkeni olan birleşim|
@@ -78,13 +78,13 @@ Belgelerin bu bölümdeki makaleleri bir alt kümesini derleyici tarafından olu
 |[Derleyici Uyarısı (düzey 1) C4237](../../error-messages/compiler-warnings/compiler-warning-level-1-c4237.md)|'*anahtar sözcüğü*' anahtar sözcüğü henüz desteklenir, ancak gelecekte kullanılmak üzere ayrılmış|
 |[Derleyici Uyarısı (düzey 4) C4238](../../error-messages/compiler-warnings/compiler-warning-level-4-c4238.md)|Standart olmayan uzantı kullanıldı: sınıf rvalue değeri lvalue olarak kullanıldı|
 |[Derleyici Uyarısı (düzey 4) C4239](../../error-messages/compiler-warnings/compiler-warning-level-4-c4239.md)|Standart olmayan uzantı kullanıldı: '*belirteci*': dönüştürme '*type1*'to'*type2*'|
-|[Derleyici Uyarısı (düzey 3) C4240](../../error-messages/compiler-warnings/compiler-warning-level-3-c4240.md)|Standart olmayan uzantı kullanıldı: Erişim '*classname*'artık tanımlanmış'*access_specifier1*', daha önce olacak şekilde tanımlandı'*access_specifier2*'|
+|[Derleyici Uyarısı (Düzey 3) C4240](../../error-messages/compiler-warnings/compiler-warning-level-3-c4240.md)|Standart olmayan uzantı kullanıldı: Erişim '*classname*'artık tanımlanmış'*access_specifier1*', daha önce olacak şekilde tanımlandı'*access_specifier2*'|
 |[Derleyici Uyarısı (düzey 4) C4242](../../error-messages/compiler-warnings/compiler-warning-level-4-c4242.md)|'*tanımlayıcı*': dönüştürme '*type1*'to'*type2*', olası veri kaybı|
-|[Derleyici Uyarısı (düzey 3) C4243](../../error-messages/compiler-warnings/compiler-warning-level-3-c4243.md)|'*conversion_type*'dönüştürmesi'*type1*'to'*type2*' var, ancak erişilebilir değil|
-|[Derleyici Uyarısı (düzey 2) C4244](../../error-messages/compiler-warnings/compiler-warning-level-2-c4244.md)|'*conversion_type*': dönüştürme '*type1*'to'*type2*', olası veri kaybı|
-|[Derleyici Uyarısı (düzey 3 ve 4) C4244](../../error-messages/compiler-warnings/compiler-warning-levels-3-and-4-c4244.md)|'*conversion_type*': dönüştürme '*type1*'to'*type2*', olası veri kaybı|
+|[Derleyici Uyarısı (Düzey 3) C4243](../../error-messages/compiler-warnings/compiler-warning-level-3-c4243.md)|'*conversion_type*'dönüştürmesi'*type1*'to'*type2*' var, ancak erişilebilir değil|
+|[Derleyici Uyarısı (Düzey 2) C4244](../../error-messages/compiler-warnings/compiler-warning-level-2-c4244.md)|'*conversion_type*': dönüştürme '*type1*'to'*type2*', olası veri kaybı|
+|[Derleyici Uyarısı (Düzey 3 ve 4) C4244](../../error-messages/compiler-warnings/compiler-warning-levels-3-and-4-c4244.md)|'*conversion_type*': dönüştürme '*type1*'to'*type2*', olası veri kaybı|
 |[Derleyici Uyarısı (düzey 4) C4245](../../error-messages/compiler-warnings/compiler-warning-level-4-c4245.md)|'*conversion_type*': dönüştürme '*type1*'to'*type2*', imzalı/imzasız uyuşmazlığı|
-|[Derleyici Uyarısı (düzey 2) C4250](../../error-messages/compiler-warnings/compiler-warning-level-2-c4250.md)|'*classname*': devralınan '*base_classname*::*üye*' baskınlık yoluyla|
+|[Derleyici Uyarısı (Düzey 2) C4250](../../error-messages/compiler-warnings/compiler-warning-level-2-c4250.md)|'*classname*': devralınan '*base_classname*::*üye*' baskınlık yoluyla|
 |[Derleyici Uyarısı (düzey 1) C4251](../../error-messages/compiler-warnings/compiler-warning-level-1-c4251.md)|'*tanımlayıcı*': '*object_type1*' '*ıdentifier1*'istemcileri tarafından kullanılacak dll arabirimi olması gerekiyorsa'*Nesne_türü*' '*identfier2*'|
 |[Derleyici Uyarısı (düzey 4) C4254](../../error-messages/compiler-warnings/compiler-warning-level-4-c4254.md)|'*işleci*': dönüştürme '*type1*:*field_bits*'to'*type2*:*field_bits*', olası veri kaybı|
 |[Derleyici Uyarısı (düzey 4) C4255](../../error-messages/compiler-warnings/compiler-warning-level-4-c4255.md)|'*işlevi*': hiçbir işlev prototipi verilmedi: '(') '(void)' olarak dönüştürülüyor|
@@ -92,29 +92,29 @@ Belgelerin bu bölümdeki makaleleri bir alt kümesini derleyici tarafından olu
 |[Derleyici Uyarısı (düzey 1) C4258](../../error-messages/compiler-warnings/compiler-warning-level-1-c4258.md)|'*değişkeni*': tanımından döngü göz ardı edilir için; kapsayan kapsamdan gelen tanım kullanılır|
 |[Derleyici Uyarısı (düzey 4) C4263](../../error-messages/compiler-warnings/compiler-warning-level-4-c4263.md)|'*işlevi*': üye işlev hiçbir taban sınıfı sanal üye işlevini Geçersiz Kılmıyor|
 |[Derleyici Uyarısı (düzey 1) C4264](../../error-messages/compiler-warnings/compiler-warning-level-1-c4264.md)|'*virtual_function*': taban sanal üye işlev için kullanılabilecek geçersiz kılma yok '*classname*'; işlev gizlendi|
-|[Derleyici Uyarısı (düzey 3) C4265](../../error-messages/compiler-warnings/compiler-warning-level-3-c4265.md)|'*classname*': sınıfın sanal işlevleri var ancak yok edici değil virtual\n bu sınıfın örnekleri doğru şekilde edilmeyebilir|
+|[Derleyici Uyarısı (Düzey 3) C4265](../../error-messages/compiler-warnings/compiler-warning-level-3-c4265.md)|'*classname*': sınıfın sanal işlevleri var ancak yok edici değil virtual\n bu sınıfın örnekleri doğru şekilde edilmeyebilir|
 |[Derleyici Uyarısı (düzey 4) C4266](../../error-messages/compiler-warnings/compiler-warning-level-4-c4266.md)|'*virtual_function*': taban sanal üye işlev için kullanılabilecek geçersiz kılma yok '*classname*'; işlev gizlendi|
-|[Derleyici Uyarısı (düzey 3) C4267](../../error-messages/compiler-warnings/compiler-warning-level-3-c4267.md)|'*değişkeni*': 'size_t' dönüştürme '*türü*', olası veri kaybı|
+|[Derleyici Uyarısı (Düzey 3) C4267](../../error-messages/compiler-warnings/compiler-warning-level-3-c4267.md)|'*değişkeni*': 'size_t' dönüştürme '*türü*', olası veri kaybı|
 |[Derleyici Uyarısı (düzey 4) C4268](../../error-messages/compiler-warnings/compiler-warning-level-4-c4268.md)|'*tanımlayıcı*': derleyicinin ürettiği varsayılan oluşturucuyla başlatılan 'const' statik/genel verileri nesneyi sıfırlarla dolduruyor|
 |[Derleyici Uyarısı (düzey 1) C4269](../../error-messages/compiler-warnings/compiler-warning-level-1-c4269.md)|'*tanımlayıcı*': derleyicinin ürettiği varsayılan oluşturucuyla başlatılan 'const' otomatik verileri güvenilmez sonuçlar üretiyor|
 |[Derleyici Uyarısı (düzey 1) C4272](../../error-messages/compiler-warnings/compiler-warning-level-1-c4272.md)|'*işlevi*': __declspec(dllimport) olarak işaretlenmiş; bir işlev alırken yerel çağrı kuralı belirtmeniz gerekir.|
 |[Derleyici Uyarısı (düzey 1) C4273](../../error-messages/compiler-warnings/compiler-warning-level-1-c4273.md)|'*işlevi*': tutarsız dll bağlaması|
 |[Derleyici Uyarısı (düzey 1) C4274](compiler-warning-level-1-c4274.md)|#ident yoksayıldı; #pragma comment (exestr, 'string') için belgelere bakın|
-|[Derleyici Uyarısı (düzey 2) C4275](../../error-messages/compiler-warnings/compiler-warning-level-2-c4275.md)|dll arabirimi olmayan '*classkey*' '*ıdentifier1*'dll arabirimi için temel olarak kullanıldı'*classkey*' '*identifier2*'|
+|[Derleyici Uyarısı (Düzey 2) C4275](../../error-messages/compiler-warnings/compiler-warning-level-2-c4275.md)|dll arabirimi olmayan '*classkey*' '*ıdentifier1*'dll arabirimi için temel olarak kullanıldı'*classkey*' '*identifier2*'|
 |[Derleyici Uyarısı (düzey 1) C4276](../../error-messages/compiler-warnings/compiler-warning-level-1-c4276.md)|'*işlevi*': hiçbir prototip sağlanmadı; hiç parametre olmadığı varsayıldı|
 |Derleyici Uyarısı (düzey 1) C4277|içeri aktarılan öğe '*classname*::*üye*' hem veri üyesi hem de işlev üyesi; olarak mevcut veri üyesi yoksayıldı|
-|[Derleyici Uyarısı (düzey 3) C4278](../../error-messages/compiler-warnings/compiler-warning-level-3-c4278.md)|'*tanımlayıcı*': tür kitaplığındaki tanımlayıcı '*Kitaplığı*' zaten bir makro; 'rename' niteleyicisini kullanın|
+|[Derleyici Uyarısı (Düzey 3) C4278](../../error-messages/compiler-warnings/compiler-warning-level-3-c4278.md)|'*tanımlayıcı*': tür kitaplığındaki tanımlayıcı '*Kitaplığı*' zaten bir makro; 'rename' niteleyicisini kullanın|
 |Derleyici Uyarısı (Düzey 3 ve düzey 4) C4279|'*tanımlayıcı*': tür kitaplığındaki tanımlayıcı '*Kitaplığı*' bir anahtar sözcük; 'rename' niteleyicisini kullanın|
-|[Derleyici Uyarısı (düzey 3) C4280](../../error-messages/compiler-warnings/compiler-warning-level-3-c4280.md)|'operator ->' kendi kendine özniyeleniyordu türü aracılığıyla '*türü*'|
-|[Derleyici Uyarısı (düzey 3) C4281](../../error-messages/compiler-warnings/compiler-warning-level-3-c4281.md)|'operator ->' Özyinelemesi oluştu türü aracılığıyla '*type1*'|
-|[Derleyici Uyarısı (düzey 3) C4282](../../error-messages/compiler-warnings/compiler-warning-level-3-c4282.md)|ardından türü aracılığıyla '*type2*'|
-|[Derleyici Uyarısı (düzey 3) C4283](../../error-messages/compiler-warnings/compiler-warning-level-3-c4283.md)|ve türü aracılığıyla '*typeN*'|
-|[Derleyici Uyarısı (düzey 2) C4285](../../error-messages/compiler-warnings/compiler-warning-level-2-c4285.md)|dönüş türü için '*tanımlayıcı*:: operator -> ' içtakı gösterimi kullanılırsa özyinelemelidir|
+|[Derleyici Uyarısı (Düzey 3) C4280](../../error-messages/compiler-warnings/compiler-warning-level-3-c4280.md)|'operator ->' kendi kendine özniyeleniyordu türü aracılığıyla '*türü*'|
+|[Derleyici Uyarısı (Düzey 3) C4281](../../error-messages/compiler-warnings/compiler-warning-level-3-c4281.md)|'operator ->' Özyinelemesi oluştu türü aracılığıyla '*type1*'|
+|[Derleyici Uyarısı (Düzey 3) C4282](../../error-messages/compiler-warnings/compiler-warning-level-3-c4282.md)|ardından türü aracılığıyla '*type2*'|
+|[Derleyici Uyarısı (Düzey 3) C4283](../../error-messages/compiler-warnings/compiler-warning-level-3-c4283.md)|ve türü aracılığıyla '*typeN*'|
+|[Derleyici Uyarısı (Düzey 2) C4285](../../error-messages/compiler-warnings/compiler-warning-level-2-c4285.md)|dönüş türü için '*tanımlayıcı*:: operator -> ' içtakı gösterimi kullanılırsa özyinelemelidir|
 |[Derleyici Uyarısı (düzey 1) C4286](../../error-messages/compiler-warnings/compiler-warning-level-1-c4286.md)|'*derived_type*': taban sınıfı tarafından yakalandı ('*taban_türü*') satırındaki '*line_number*'|
-|[Derleyici Uyarısı (düzey 3) C4287](../../error-messages/compiler-warnings/compiler-warning-level-3-c4287.md)|'*işleci*': işaretsiz/negatif sabit uyuşmazlığı|
+|[Derleyici Uyarısı (Düzey 3) C4287](../../error-messages/compiler-warnings/compiler-warning-level-3-c4287.md)|'*işleci*': işaretsiz/negatif sabit uyuşmazlığı|
 |[Derleyici Uyarısı (düzey 1) C4288](../../error-messages/compiler-warnings/compiler-warning-level-1-c4288.md)|Standart olmayan uzantı kullanıldı: '*değişkeni*': for döngüsünde bildirimi yapılan döngü denetim değişkeni for döngüsü kapsamının dışında kullanılıyor; dış kapsamdaki bildirimiyle çakışıyor|
 |[Derleyici Uyarısı (düzey 4) C4289](../../error-messages/compiler-warnings/compiler-warning-level-4-c4289.md)|Standart olmayan uzantı kullanıldı: '*değişkeni*': for döngüsünde bildirimi yapılan döngü denetim değişkeni for döngüsü kapsamının dışında kullanılıyor|
-|[Derleyici Uyarısı (düzey 3) C4290](../../error-messages/compiler-warnings/compiler-warning-level-3-c4290.md)|C++ özel durum belirtimi bir işlevin dışında göz ardı __declspec(nothrow) olmadığını|
+|[Derleyici Uyarısı (Düzey 3) C4290](../../error-messages/compiler-warnings/compiler-warning-level-3-c4290.md)|C++bir işlevin dışında specifikace výjimky SE ignoruje __declspec(nothrow) olmadığını|
 |[Derleyici Uyarısı (düzey 1) C4291](../../error-messages/compiler-warnings/compiler-warning-level-1-c4291.md)|'*bildirimi*': eşleşen hiçbir delete işleci bulunamadı; başlatma bir özel durum oluşturursa bellek boşaltılmaz|
 |[Derleyici Uyarısı (düzey 1) C4293](../../error-messages/compiler-warnings/compiler-warning-level-1-c4293.md)|'*shift_operator*': kaydırma sayısı negatif veya çok büyük; tanımsız davranış|
 |[Derleyici Uyarısı (düzey 4) C4295](../../error-messages/compiler-warnings/compiler-warning-level-4-c4295.md)|'*dizi*': dizi Sonlandırıcı null karakterini içeremeyecek kadar küçük|
@@ -123,14 +123,14 @@ Belgelerin bu bölümdeki makaleleri bir alt kümesini derleyici tarafından olu
 |Derleyici Uyarısı (düzey 4) C4298|'*tanımlayıcı*': tür kitaplığındaki tanımlayıcı '*Kitaplığı*'zaten bir makrodur; yeniden adlandırma'*__tanımlayıcı*'|
 |Derleyici Uyarısı (düzey 4) C4299|'*tanımlayıcı*': tür kitaplığındaki tanımlayıcı '*Kitaplığı*'bir anahtar sözcük; yeniden adlandırma'*__tanımlayıcı*'|
 |Derleyici Uyarısı C4301|'*derived_class*::*işlevi*': geçersiz kılan sanal işlev'ı yalnızca farklıdır '*$base_class*::*işlevi*' const/volatile tarafından niteleyicisi|
-|[Derleyici Uyarısı (düzey 2) C4302](../../error-messages/compiler-warnings/compiler-warning-level-2-c4302.md)|'*dönüştürme*': kesildi '*type1*'to'*type2*'|
+|[Derleyici Uyarısı (Düzey 2) C4302](../../error-messages/compiler-warnings/compiler-warning-level-2-c4302.md)|'*dönüştürme*': kesildi '*type1*'to'*type2*'|
 |Derleyici Uyarısı C4303|C stili tür dönüştürme gelen '*type1*'to'*type2*' olan kullanımdan kaldırıldı, statik kullanın\_tür dönüştürme; \_ \_deneyin\_noktaya yayın veya dinamik\_atama|
 |[Derleyici Uyarısı (düzey 1) C4305](../../error-messages/compiler-warnings/compiler-warning-level-1-c4305.md)|'*dönüştürme*': kesildi '*type1*'to'*type2*'|
-|[Derleyici Uyarısı (düzey 3) C4306](../../error-messages/compiler-warnings/compiler-warning-level-3-c4306.md)|'*dönüştürme*': dönüştürme '*type1*'to'*type2*' daha büyük boyutlu|
-|[Derleyici Uyarısı (düzey 2) C4307](../../error-messages/compiler-warnings/compiler-warning-level-2-c4307.md)|'*işleci*': tamsayı sabiti taştı|
-|[Derleyici Uyarısı (düzey 2) C4308](../../error-messages/compiler-warnings/compiler-warning-level-2-c4308.md)|Negatif tamsayı sabiti işaretsiz türe dönüştürüldü|
-|[Derleyici Uyarısı (düzey 2) C4309](../../error-messages/compiler-warnings/compiler-warning-level-2-c4309.md)|'*dönüştürme*': sabit değer kesildi|
-|[Derleyici Uyarısı (düzey 3) C4310](../../error-messages/compiler-warnings/compiler-warning-level-3-c4310.md)|tür dönüştürme sabit değeri kesiyor|
+|[Derleyici Uyarısı (Düzey 3) C4306](../../error-messages/compiler-warnings/compiler-warning-level-3-c4306.md)|'*dönüştürme*': dönüştürme '*type1*'to'*type2*' daha büyük boyutlu|
+|[Derleyici Uyarısı (Düzey 2) C4307](../../error-messages/compiler-warnings/compiler-warning-level-2-c4307.md)|'*işleci*': tamsayı sabiti taştı|
+|[Derleyici Uyarısı (Düzey 2) C4308](../../error-messages/compiler-warnings/compiler-warning-level-2-c4308.md)|Negatif tamsayı sabiti işaretsiz türe dönüştürüldü|
+|[Derleyici Uyarısı (Düzey 2) C4309](../../error-messages/compiler-warnings/compiler-warning-level-2-c4309.md)|'*dönüştürme*': sabit değer kesildi|
+|[Derleyici Uyarısı (Düzey 3) C4310](../../error-messages/compiler-warnings/compiler-warning-level-3-c4310.md)|tür dönüştürme sabit değeri kesiyor|
 |[Derleyici Uyarısı (düzey 1) C4311](../../error-messages/compiler-warnings/compiler-warning-level-1-c4311.md)|'*değişkeni*': işaretçi kesilmesi'öğesinden '*type1*'to'*type2*'|
 |[Derleyici Uyarısı (düzey 1) C4312](../../error-messages/compiler-warnings/compiler-warning-level-1-c4312.md)|'*işlemi*': dönüştürme '*type1*'to'*type2*' daha büyük boyutlu|
 |[Derleyici Uyarısı (düzey 1) C4313](../../error-messages/compiler-warnings/compiler-warning-level-1-c4313.md)|'*işlevi*': '*format_specifier*'dize bağımsız değişkeni ile çakışıyor biçiminde'*argument_number*'türündeki'*türü*'|
@@ -151,7 +151,7 @@ Belgelerin bu bölümdeki makaleleri bir alt kümesini derleyici tarafından olu
 |[Derleyici Uyarısı (düzey 1) C4329](../../error-messages/compiler-warnings/compiler-warning-level-1-c4329.md)|__declspec(align()) numaralandırma üzerinde göz ardı edilir|
 |Derleyici Uyarısı (düzey 1) C4330|öznitelik '*özniteliği*'için bölüm'*bölüm*' yoksayıldı|
 |[Derleyici Uyarısı (düzey 1) C4333](../../error-messages/compiler-warnings/compiler-warning-level-1-c4333.md)|'*shift_operator*': veri kaybı olan çok fazla miktarda sağa kaydırma|
-|[Derleyici Uyarısı (düzey 3) C4334](../../error-messages/compiler-warnings/compiler-warning-level-3-c4334.md)|'*shift_operator*': 32-bit kaydırmanın sonucu örtük olarak 64 bite dönüştürüldü (64-bit kaydırmanın hedeflenen oldu mu?)|
+|[Derleyici Uyarısı (Düzey 3) C4334](../../error-messages/compiler-warnings/compiler-warning-level-3-c4334.md)|'*shift_operator*': 32-bit kaydırmanın sonucu örtük olarak 64 bite dönüştürüldü (64-bit kaydırmanın hedeflenen oldu mu?)|
 |[Derleyici Uyarısı C4335](../../error-messages/compiler-warnings/compiler-warning-c4335.md)|Mac dosya biçimi algılandı: Lütfen kaynak dosyayı DOS veya UNIX biçimine dönüştürün|
 |[Derleyici Uyarısı (düzey 4) C4336](../../error-messages/compiler-warnings/compiler-warning-level-4-c4336.md)|Çapraz başvurulan tür kitaplığı İçeri Aktar '*library1*'almadan'*library2*'|
 |[Derleyici Uyarısı (düzey 4) C4337](../../error-messages/compiler-warnings/compiler-warning-level-4-c4337.md)|Çapraz başvurulan tür kitaplığının '*library1*'in'*library2*' otomatik olarak içeri aktarılıyor|
@@ -167,16 +167,16 @@ Belgelerin bu bölümdeki makaleleri bir alt kümesini derleyici tarafından olu
 |Derleyici Uyarısı (düzey 1) C4352|'*tanımlayıcı*': iç işlev zaten tanımlandı|
 |[Derleyici Uyarısı (düzey 1) C4353](../../error-messages/compiler-warnings/compiler-warning-level-1-c4353.md)|Standart olmayan uzantı kullanıldı: işlev ifadesi olarak 0 sabiti.  Bunun yerine '__noop ' iç işlevini iç kullanın|
 |[Derleyici Uyarısı C4355](../../error-messages/compiler-warnings/compiler-warning-c4355.md)Derleyici Uyarısı (düzey 1 ve düzey 4) C4355|'this': taban üye Başlatıcı listesinde kullanıldı|
-|[Derleyici Uyarısı (düzey 2) C4356](../../error-messages/compiler-warnings/compiler-warning-level-2-c4356.md)|'*üye*': statik veri üyesi türetilmiş sınıf aracılığıyla başlatılamaz|
-|[Derleyici Uyarısı (düzey 3) C4357](../../error-messages/compiler-warnings/compiler-warning-level-3-c4357.md)|Temsilci biçimsel bağımsız değişken listesinde param dizisi bağımsız değişkeni bulundu '*temsilci*'üretilirken yoksayıldı'*işlevi*'|
+|[Derleyici Uyarısı (Düzey 2) C4356](../../error-messages/compiler-warnings/compiler-warning-level-2-c4356.md)|'*üye*': statik veri üyesi türetilmiş sınıf aracılığıyla başlatılamaz|
+|[Derleyici Uyarısı (Düzey 3) C4357](../../error-messages/compiler-warnings/compiler-warning-level-3-c4357.md)|Temsilci biçimsel bağımsız değişken listesinde param dizisi bağımsız değişkeni bulundu '*temsilci*'üretilirken yoksayıldı'*işlevi*'|
 |[Derleyici Uyarısı (düzey 1) C4358](../../error-messages/compiler-warnings/compiler-warning-level-1-c4358.md)|'*işleci*': birleştirilmiş temsilcilerin dönüş türü 'void' değil; döndürülen değer tanımsız|
-|[Derleyici Uyarısı (düzey 3) C4359](../../error-messages/compiler-warnings/compiler-warning-level-3-c4359.md)|'*türü*': Hizalama belirleyici asıl hizalamadan küçük olduğundan ('*hizalama*') ve yoksayılacak.|
+|[Derleyici Uyarısı (Düzey 3) C4359](../../error-messages/compiler-warnings/compiler-warning-level-3-c4359.md)|'*türü*': Hizalama belirleyici asıl hizalamadan küçük olduğundan ('*hizalama*') ve yoksayılacak.|
 |Derleyici Uyarısı (Düzey 2) C4362|'*türü*': 8 bayttan büyük hizalama CLR tarafından desteklenmiyor|
 |[Derleyici Uyarısı (düzey 1) C4364](../../error-messages/compiler-warnings/compiler-warning-level-1-c4364.md)|# derleme için using '*derleme*'daha önce görülme'*konumu*' ('*line_number*') olmadan olarak\_arkadaş özniteliği;\_arkadaş değil uygulandı|
 |[Derleyici Uyarısı (düzey 4) C4365](../../error-messages/compiler-warnings/compiler-warning-level-4-c4365.md)|'*ifade*': dönüştürme '*type1*'to'*type2*', imzalı/imzasız uyuşmazlığı|
 |[Derleyici Uyarısı (düzey 4) C4366](../../error-messages/compiler-warnings/compiler-warning-level-4-c4366.md)|Birli sonucu '*işleci*' işleci hizalanmamış olabilir|
 |Derleyici Uyarısı (Düzey 3) C4367|Dönüştürme işlemi '*type1*'to'*type2*' veri türü hizalanmama özel durumuna neden olabilir|
-|[Derleyici Uyarısı (hata) C4368](../../error-messages/compiler-warnings/compiler-warning-c4368.md)|nelze definovat '*üye*'üyesi yönetilen olarak'*türü*': karma türler desteklenmiyor|
+|[Derleyici Uyarısı C4368 (hata)](../../error-messages/compiler-warnings/compiler-warning-c4368.md)|nelze definovat '*üye*'üyesi yönetilen olarak'*türü*': karma türler desteklenmiyor|
 |[Derleyici Uyarısı (düzey 1) C4369](../../error-messages/compiler-warnings/compiler-warning-level-1-c4369.md)|'*Numaralandırıcı*': Numaralandırıcı değeri '*değer*'olarak gösterilemez'*türü*', değer'*yeni_değer*'|
 |Derleyici Uyarısı C4370|'*classname*': sınıfın düzeni önceki bir sürümünden daha iyi paketleme nedeniyle derleyici değişti|
 |[Derleyici Uyarısı (Düzey 3) C4371](../../error-messages/compiler-warnings/c4371.md)|'*classname*': sınıfın düzeni önceki bir üyesinin daha iyi paketleme nedeniyle derleyici sürümünden değişmiş olabilir '*üye*'|
@@ -195,7 +195,7 @@ Belgelerin bu bölümdeki makaleleri bir alt kümesini derleyici tarafından olu
 |Derleyici Uyarısı (Düzey 3) C4387|'*alternatif*': kabul|
 |Derleyici Uyarısı (düzey 4) C4388|'*ifade*': imzalı/imzasız uyuşmazlığı|
 |[Derleyici Uyarısı (düzey 4) C4389](../../error-messages/compiler-warnings/compiler-warning-level-4-c4389.md)|'*işleci*': imzalı/imzasız uyuşmazlığı|
-|[Derleyici Uyarısı (düzey 3) C4390](../../error-messages/compiler-warnings/compiler-warning-level-3-c4390.md)|';': boş denetlenen deyim bulundu; Bu amaç mi?|
+|[Derleyici Uyarısı (Düzey 3) C4390](../../error-messages/compiler-warnings/compiler-warning-level-3-c4390.md)|';': boş denetlenen deyim bulundu; Bu amaç mi?|
 |[Derleyici Uyarısı (düzey 1) C4391](../../error-messages/compiler-warnings/compiler-warning-level-1-c4391.md)|'*function_signature*': beklenen iç işlev için yanlış dönüş türü '*türü*'|
 |[Derleyici Uyarısı (düzey 1) C4392](../../error-messages/compiler-warnings/compiler-warning-level-1-c4392.md)|'*function_signature*': yanlış sayıda bağımsız değişken beklenen iç işlev için '*argument_count*' bağımsız değişkenleri|
 |[Derleyici Uyarısı (düzey 1) C4393](../../error-messages/compiler-warnings/compiler-warning-level-1-c4393.md)|'*değişkeni*': const hiçbir etkisi olmaz '*değişmez değer*' veri üyesi; yoksayıldı|
@@ -203,5 +203,10 @@ Belgelerin bu bölümdeki makaleleri bir alt kümesini derleyici tarafından olu
 |[Derleyici Uyarısı (düzey 1) C4395](../../error-messages/compiler-warnings/compiler-warning-level-1-c4395.md)|'*işlevi*': üye işlev, initonly veri üyesinin bir kopyası üzerinde çağrılacak '*üye*'|
 |[Derleyici Uyarısı (Düzey 2) C4396](compiler-warning-level-2-c4396.md)|'*işlevi*': işlev şablonunun bir özelleştirmesi için bir friend bildirimi başvurduğunda, satır içi belirtici kullanılamaz|
 |[Derleyici Uyarısı (düzey 1) C4397](../../error-messages/compiler-warnings/compiler-warning-level-1-c4397.md)|DefaultCharSetAttribute yoksayıldı|
-|[Derleyici Uyarısı (düzey 3) C4398](../../error-messages/compiler-warnings/compiler-warning-level-3-c4398.md)|'*değişkeni*': başına-process genel nesnesi birden fazla AppDomain ile doğru çalışmayabilir; __declspec(appdomain) kullanmayı düşünün|
+|[Derleyici Uyarısı (Düzey 3) C4398](../../error-messages/compiler-warnings/compiler-warning-level-3-c4398.md)|'*değişkeni*': başına-process genel nesnesi birden fazla AppDomain ile doğru çalışmayabilir; __declspec(appdomain) kullanmayı düşünün|
 |[Derleyici Uyarısı (düzey 1) C4399](../../error-messages/compiler-warnings/compiler-warning-level-1-c4399.md)|'*sembol*': işlem içi simge/CLR ile derlendiğinde __declspec('dllimport') ile işaretlenmemelidir: Saf|
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[C /C++ derleyicisi ve derleme araçları hataları ve Uyarıları](../compiler-errors-1/c-cpp-build-errors.md) \
+[Derleyici uyarılarını C4000 - C5999](compiler-warnings-c4000-c5999.md)

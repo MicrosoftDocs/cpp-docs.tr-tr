@@ -8,11 +8,11 @@ helpviewer_keywords:
 - ATL Active Server Page Component Wizard
 ms.assetid: 5a5cb904-dbbf-44ea-ad3d-2ddd14c1d3c5
 ms.openlocfilehash: f020ed9b58f631bfff09fe54c70e36146eb03368
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57288096"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62249025"
 ---
 # <a name="atl-active-server-page-component-wizard"></a>ATL Active Server Page bileşeni Sihirbazı
 

@@ -6,11 +6,11 @@ helpviewer_keywords:
 - strings [C++], concatenating
 ms.assetid: 51486b1f-4b1e-4061-9add-1aa38c6cdb3c
 ms.openlocfilehash: cdd9a7811635bf43cd76ecbc84d8ab364e7f9dab
-ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56152579"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62157801"
 ---
 # <a name="string-literal-concatenation"></a>Dize Değişmez Değeri Birleştirmesi
 

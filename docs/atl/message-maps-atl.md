@@ -7,11 +7,11 @@ helpviewer_keywords:
 - ATL, message handlers
 ms.assetid: 9e100400-65c7-4a85-8857-4e6cb6dd7340
 ms.openlocfilehash: 1b8b3fcb2f10f975ebdf68a285c7d5e364b9e1b4
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57292581"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62250138"
 ---
 # <a name="message-maps-atl"></a>İleti eşlemeleri (ATL)
 

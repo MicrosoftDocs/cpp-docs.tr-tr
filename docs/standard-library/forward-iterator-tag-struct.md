@@ -8,11 +8,11 @@ helpviewer_keywords:
 - forward_iterator_tag class
 ms.assetid: 68b633ac-b135-4e9e-837d-14248a262ec5
 ms.openlocfilehash: 04d526e7778dc219a8d9a49db40751b4418cc82d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50434261"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62159801"
 ---
 # <a name="forwarditeratortag-struct"></a>forward_iterator_tag Yapısı
 

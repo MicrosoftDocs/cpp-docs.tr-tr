@@ -75,11 +75,11 @@ helpviewer_keywords:
 - COleServerItem [MFC], m_sizeExtent
 ms.assetid: 80256df6-3888-4256-944b-787d4b2e6b0d
 ms.openlocfilehash: c4c026975e9884ac2a0e6aaef31e799c2b5b09bf
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58777382"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62224239"
 ---
 # <a name="coleserveritem-class"></a>Coleserverıtem sınıfı
 

@@ -7,11 +7,11 @@ helpviewer_keywords:
 - complex<double> function
 ms.assetid: 0d0b9d2a-9b9b-410b-82a0-86b6df127e47
 ms.openlocfilehash: 7cb516363df7267c2870d2188a14208f54f7ffe9
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50628884"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62148413"
 ---
 # <a name="complexltdoublegt"></a>karmaşık&lt;çift&gt;
 

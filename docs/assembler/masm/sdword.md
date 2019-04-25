@@ -7,11 +7,11 @@ helpviewer_keywords:
 - SDWORD directive
 ms.assetid: 12663144-2426-4b4e-aabd-dbe0b04321d0
 ms.openlocfilehash: cd4653078d54e9ab735a0472cedc4dc87b6fabee
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50589377"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62210355"
 ---
 # <a name="sdword"></a>SDWORD
 

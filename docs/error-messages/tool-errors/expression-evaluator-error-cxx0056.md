@@ -8,11 +8,11 @@ helpviewer_keywords:
 - CAN0056
 ms.assetid: a67c90e0-933c-43f2-a548-0ba272920331
 ms.openlocfilehash: 8c73061ad360aadd52dfad46d3febc8975099804
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50468243"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62299555"
 ---
 # <a name="expression-evaluator-error-cxx0056"></a>İfade Değerlendirici Hatası CXX0056
 

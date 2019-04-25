@@ -12,11 +12,11 @@ helpviewer_keywords:
 - question mark, wildcard
 ms.assetid: 1a543398-607b-4404-93d1-45d290bde638
 ms.openlocfilehash: 2d495f94f2e3fb7b88d235edc7b98f8e90775393
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50507443"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62209521"
 ---
 # <a name="wildcard-expansion"></a>Joker Karakter Genişletmesi
 

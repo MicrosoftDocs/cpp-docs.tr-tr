@@ -9,11 +9,11 @@ helpviewer_keywords:
 - RFX (record field exchange)
 ms.assetid: f552d0c1-2c83-4389-b472-42c9940aa713
 ms.openlocfilehash: 18820c7d17ddea355490ee32679d5d690ec3533e
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57294492"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62305404"
 ---
 # <a name="tn043-rfx-routines"></a>TN043: RFX rutinleri
 
@@ -150,7 +150,7 @@ Kendi özel RFX işlevi yazmak için mevcut bir RFX işlevi kopyalayıp kendi am
 
 `RFX_Text` ve `RFX_Binary`: Bu iki işlev dizesi/ikili bilgiyi tutmak için statik bir arabellek erişinceye ve kaydetme & değeri yerine bu arabellekleri ODBC SQLBindCol ile kaydetmeniz gerekir. Bu nedenle, bu iki işlev özel durum kodu bulunmaktadır.
 
-`RFX_Date`: ODBC kendi TIMESTAMP_STRUCT veri yapısında tarih ve saat bilgilerini döndürür. Bu işlev dinamik olarak bir TIMESTAMP_STRUCT bir "proxy" olarak göndermek ve tarih saat verilerini almak için ayırır. Çeşitli işlemler arasında C++ tarih ve saat bilgilerini aktarmalısınız `CTime` nesne ve TIMESTAMP_STRUCT proxy. Bu işlev bu oldukça karmaşık hale getirir, ancak bu veri aktarımı için bir ara sunucu kullanmak nasıl daha iyi bir örnektir.
+`RFX_Date`: ODBC kendi TIMESTAMP_STRUCT veri yapısında tarih ve saat bilgilerini döndürür. Bu işlev dinamik olarak bir TIMESTAMP_STRUCT bir "proxy" olarak göndermek ve tarih saat verilerini almak için ayırır. Çeşitli işlemler tarih ve saat bilgilerini arasında aktarmalısınız C++ `CTime` nesne ve TIMESTAMP_STRUCT proxy. Bu işlev bu oldukça karmaşık hale getirir, ancak bu veri aktarımı için bir ara sunucu kullanmak nasıl daha iyi bir örnektir.
 
 `RFX_LongBinary`: Yalnızca sınıf kitaplığı veri gönderip için sütun bağlama kullanmaz RFX işlev budur. Bu işlev BindFieldToColumn işlemi yok sayar ve bunun yerine, düzeltme işlemi sırasında gelen SQL_LONGVARCHAR veya SQL_LONGVARBINARY verileri tutmak için depolama alanı ayırır ve ardından ayrılan depolama alanına değerini almak için bir SQLGetData araması gerçekleştirir. Bu işlev, veri değerlerinin (örneğin, işlemi NameValue ve değer) veri kaynağına geri göndermek hazırlık yaparken, ODBC DATA_AT_EXEC işlevselliğini kullanır. Bkz: [Teknik Not 45](../mfc/tn045-mfc-database-support-for-long-varchar-varbinary.md) SQL_LONGVARBINARY ve SQL_LONGVARCHARs ile çalışma hakkında daha fazla bilgi.
 

@@ -8,11 +8,11 @@ helpviewer_keywords:
 - strict_gs_check pragma
 ms.assetid: decfec81-c916-42e0-a07f-8cc26df6a7ce
 ms.openlocfilehash: b62e1be466e65c0de6fb4eaa33ac6e99915529e6
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59037811"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62179951"
 ---
 # <a name="strictgscheck"></a>strict_gs_check
 

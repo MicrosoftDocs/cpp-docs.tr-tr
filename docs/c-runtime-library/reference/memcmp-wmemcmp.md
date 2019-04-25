@@ -26,11 +26,11 @@ helpviewer_keywords:
 - memcmp function
 ms.assetid: 0c21c3e3-8ee4-40e5-add1-eb26d225fd8d
 ms.openlocfilehash: 4feaa692ced7777d757b579c1b131b541dccea66
-ms.sourcegitcommit: e06648107065f3dea35f40c1ae5999391087b80b
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57210243"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62156635"
 ---
 # <a name="memcmp-wmemcmp"></a>memcmp, wmemcmp
 

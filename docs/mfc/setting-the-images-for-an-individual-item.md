@@ -6,11 +6,11 @@ helpviewer_keywords:
 - images [MFC], combo box items
 ms.assetid: bde83db8-23a7-4e35-837a-c86447d2c0af
 ms.openlocfilehash: 39aa4761dbc753c42f1aedbb18f1832eab471e50
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57294713"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62307737"
 ---
 # <a name="setting-the-images-for-an-individual-item"></a>Ayrı Bir Öğe için Resimleri Ayarlama
 

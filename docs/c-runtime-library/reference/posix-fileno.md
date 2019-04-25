@@ -21,12 +21,12 @@ helpviewer_keywords:
 - fileno function
 ms.assetid: 8f33e1e0-0dc8-4311-b690-ec6e577a64b5
 ms.openlocfilehash: 9fe0c1c3d43fa0c13746d4415ede2903c84c2c73
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50574999"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62155937"
 ---
 # <a name="fileno"></a>fileno
 
-Bu POSIX işlevi kullanım dışı bırakılmıştır. ISO C++ uyumlu [_fileno](fileno.md) yerine.
+Bu POSIX işlevi kullanım dışı bırakılmıştır. ISO kullanın C++ uyumluluğunu [_fileno](fileno.md) yerine.

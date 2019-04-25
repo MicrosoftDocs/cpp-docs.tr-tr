@@ -8,11 +8,11 @@ helpviewer_keywords:
 - valarray<bool> class
 ms.assetid: fc0e7121-4758-4ea5-86c3-f04448f04acf
 ms.openlocfilehash: c7cf76935bc1e4489a963f67cc9ffeece5e7dfb8
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50445818"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62167588"
 ---
 # <a name="valarrayltboolgt-class"></a>valarray&lt;bool&gt; sınıfı
 

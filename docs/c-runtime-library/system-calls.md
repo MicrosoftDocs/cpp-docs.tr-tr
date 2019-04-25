@@ -8,11 +8,11 @@ helpviewer_keywords:
 - system calls
 ms.assetid: 0255f2ec-a5a0-487e-8b09-9dad001d81ed
 ms.openlocfilehash: 2d86a35718ab6c1aab941149c9707004b1532d24
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57749210"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62304539"
 ---
 # <a name="system-calls"></a>Sistem Çağrıları
 

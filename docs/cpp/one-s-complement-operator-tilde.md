@@ -11,11 +11,11 @@ helpviewer_keywords:
 - ~ operator [C++], syntax
 ms.assetid: 4bf81967-34f7-4b4b-aade-fd03d5da0174
 ms.openlocfilehash: d8fb8ca56932669ff85646f2aa0c10691122013b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50469787"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62245042"
 ---
 # <a name="one39s-complement-operator-"></a>Bir&#39;s tamamlama işleci: ~
 

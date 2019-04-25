@@ -11,11 +11,11 @@ helpviewer_keywords:
 - cl.exe compiler [C++], controlling linker
 ms.assetid: eae47ef7-09eb-40c9-b318-7c714cd452fc
 ms.openlocfilehash: f8d8c5e1b0ca4d2a35a57683fea2e6de12747860
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57821495"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62294544"
 ---
 # <a name="cl-invokes-the-linker"></a>CL Bağlayıcı Çağırır
 
@@ -58,5 +58,5 @@ CL MYGRAPH.lib, adı ile birlikte .obj dosyaları adlarını bağlayıcıya ilet
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MSVC derleyici seçenekleri](compiler-options.md)<br/>
+[MSVC Derleyicisi Seçenekleri](compiler-options.md)<br/>
 [Derleyici Seçeneklerini Ayarlama](compiler-command-line-syntax.md)

@@ -11,11 +11,11 @@ helpviewer_keywords:
 - Linker property pages
 ms.assetid: 7e7671e5-a35a-4e67-9bdb-661d75c4d11e
 ms.openlocfilehash: 1412531ae0ca9c0f5270df6df7b79ddc9be425ad
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57823639"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62216651"
 ---
 # <a name="linker-property-pages"></a>Bağlayıcı Özellik Sayfaları
 

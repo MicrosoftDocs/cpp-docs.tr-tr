@@ -10,11 +10,11 @@ helpviewer_keywords:
 - MFC dialog boxes [MFC], dialog resource
 ms.assetid: 0b83bd33-14d3-4611-8129-fccdae18053e
 ms.openlocfilehash: d0df76c506d4e6f2267e3a7628825e7b47a56c8c
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57303046"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62242334"
 ---
 # <a name="creating-the-dialog-resource"></a>İletişim Kaynağını Oluşturma
 

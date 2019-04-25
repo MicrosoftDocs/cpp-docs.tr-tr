@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2433
 ms.assetid: 7079fedd-6059-4125-82ef-ebe275f1f9d1
 ms.openlocfilehash: 8a98fcf7570605694569b7ae466ae0a3c7cf14bb
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50512065"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62166743"
 ---
 # <a name="compiler-error-c2433"></a>Derleyici Hatası C2433
 

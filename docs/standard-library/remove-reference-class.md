@@ -8,11 +8,11 @@ helpviewer_keywords:
 - remove_reference
 ms.assetid: 294e1965-3ae3-46ee-bc42-4fdf60c24717
 ms.openlocfilehash: 76f700b488d78af77e39ec91c7328604d18931fc
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50473560"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62186042"
 ---
 # <a name="removereference-class"></a>remove_reference Sınıfı
 

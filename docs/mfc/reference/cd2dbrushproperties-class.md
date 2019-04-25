@@ -11,11 +11,11 @@ helpviewer_keywords:
 - CD2DBrushProperties [MFC], CommonInit
 ms.assetid: c77d717f-0a16-4d74-b2ce-0ae1766ed6f9
 ms.openlocfilehash: 5ca791af658ee719b2e6d6ea78f82e23a66edc98
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57270880"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62253738"
 ---
 # <a name="cd2dbrushproperties-class"></a>CD2DBrushProperties sınıfı
 

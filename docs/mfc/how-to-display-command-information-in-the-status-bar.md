@@ -8,11 +8,11 @@ helpviewer_keywords:
 - status bars [MFC], displaying command information
 ms.assetid: de895cbe-61ee-46bf-9787-76b247527d6d
 ms.openlocfilehash: c93787b3799306d6008299e7c1be6e429bc4c2d9
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57282324"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62160295"
 ---
 # <a name="how-to-display-command-information-in-the-status-bar"></a>Nasıl yapılır: Durum çubuğunda komut bilgilerini görüntüleme
 

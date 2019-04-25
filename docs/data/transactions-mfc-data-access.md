@@ -7,11 +7,11 @@ helpviewer_keywords:
 - databases [C++], transactions
 ms.assetid: f80afbfe-1517-4fec-8870-9ffc70a58b05
 ms.openlocfilehash: e3dc5b9319a8745ddb446ae7dbe895bfcd446c37
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59037613"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62152663"
 ---
 # <a name="transactions--mfc-data-access"></a>İşlemler (MFC veri erişimi)
 

@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C1854
 ms.assetid: 8c21a9cc-1737-475c-9e57-8725cd8937c1
 ms.openlocfilehash: 83eb5e01eac377b8f19a0e94dc1518e3ed557c3b
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57820032"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62165651"
 ---
 # <a name="fatal-error-c1854"></a>Önemli hata C1854
 

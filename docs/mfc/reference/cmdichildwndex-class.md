@@ -113,11 +113,11 @@ helpviewer_keywords:
 - CMDIChildWndEx [MFC], UpdateTaskbarTabIcon
 ms.assetid: d39fec06-0bd6-4271-917d-35aae3b24d8e
 ms.openlocfilehash: e12cf9f65e6fd6dd7f68edc4a94103baa5a8df62
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58781763"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62164026"
 ---
 # <a name="cmdichildwndex-class"></a>Cmdıchildwndex sınıfı
 

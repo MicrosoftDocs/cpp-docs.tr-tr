@@ -33,11 +33,11 @@ helpviewer_keywords:
 - _istlead function
 ms.assetid: 2abc6f75-ed5c-472e-bfd0-e905a1835ccf
 ms.openlocfilehash: 7bf8e8c88153e2f22cfa08bb35ff8d4ba01a8804
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50452552"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62157217"
 ---
 # <a name="ismbblead-ismbbleadl"></a>_ismbblead, _ismbblead_l
 

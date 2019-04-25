@@ -8,11 +8,11 @@ helpviewer_keywords:
 - decrement operators [C++], types of
 ms.assetid: 5423c6ce-3999-4a77-92f6-ad540add1b1d
 ms.openlocfilehash: 4413c2bba600d1118870faca9a15b20398ec4dd4
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50557289"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62183574"
 ---
 # <a name="increment-and-decrement-operator-overloading-c"></a>Artırma ve Azaltma İşleci Aşırı Yüklemesi (C++)
 
@@ -22,7 +22,7 @@ Artırma ve azaltma işleçleri, her birinin iki çeşidi olduğu için özel bi
 
 - Azaltma öncesi ve azaltma sonrası
 
-Aşırı yüklenmiş işleç işlevleri yazdığınızda, bu işleçlerin önek ve sonek sürümleri için ayrı sürümler uygulamak yararlı olabilir. İki tür arasında ayrım yapmak için aşağıdaki kural uygulanır: işlecin önek biçimi herhangi diğer birli işleç; tam olarak aynı şekilde bildirilir. sonek biçimi ek bağımsız değişken türü kabul eden **int**.
+Aşırı yüklenmiş işleç işlevleri yazdığınızda, bu işleçlerin önek ve sonek sürümleri için ayrı sürümler uygulamak yararlı olabilir. İki tür arasında ayrım yapmak için aşağıdaki kural uygulanır: İşlecin önek biçimi diğer tekli işleç tam olarak aynı şekilde bildirilir; sonek biçimi ek bağımsız değişken türü kabul eden **int**.
 
 > [!NOTE]
 >  Artırma veya azaltma işlecinin sonek biçimi için aşırı yüklenmiş bir işleç belirtilirken, ek bağımsız değişken türü olmalıdır **int**; herhangi bir tür belirtilmesi bir hata oluşturur.

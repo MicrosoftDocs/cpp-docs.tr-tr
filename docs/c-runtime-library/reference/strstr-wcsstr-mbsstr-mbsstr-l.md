@@ -45,11 +45,11 @@ helpviewer_keywords:
 - strstr function
 ms.assetid: 03d70c3f-2473-45cb-a5f8-b35beeb2748a
 ms.openlocfilehash: 42e02473e062c3af9524ed432aa163b7574342de
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50541069"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62223091"
 ---
 # <a name="strstr-wcsstr-mbsstr-mbsstrl"></a>strstr, wcsstr, _mbsstr, _mbsstr_l
 
@@ -136,7 +136,7 @@ Kullanılacak yerel ayar.
 > [!IMPORTANT]
 > Bu işlevler, arabellek taşması sorunu kaynaklanan bir tehdit tabi olabilirsiniz. Arabellek taşması sorunları, bir unwarranted ayrıcalık yükselmesine neden olabilir rastgele kod yürütülmesine izin verebilir çünkü bir sistem saldırmak için kullanılabilir. Daha fazla bilgi için [arabellek taşmalarını](/windows/desktop/SecBP/avoiding-buffer-overruns).
 
-C'de bu işlevler alır bir **const** ilk bağımsız değişken için bir işaretçi. C++'da, iki aşırı yüklemesi kullanılabilir. Bir işaretçi alan aşırı yüklemesini **const** bir işaretçi döndürür **const**; olmayan bir işaretçiye alan sürüm**const** olmayan bir işaretçi döndürür **const**. Her iki makro _CRT_CONST_CORRECT_OVERLOADS tanımlanan **const** ve olmayan-**const** bu işlevlerin sürümleri mevcuttur. Olmayan gerektiriyorsa**const** davranışı için her iki C++ aşırı _const_return sembolünü.
+C'de bu işlevler alır bir **const** ilk bağımsız değişken için bir işaretçi. C++'da, iki aşırı yüklemesi kullanılabilir. Bir işaretçi alan aşırı yüklemesini **const** bir işaretçi döndürür **const**; olmayan bir işaretçiye alan sürüm**const** olmayan bir işaretçi döndürür **const**. Her iki makro _CRT_CONST_CORRECT_OVERLOADS tanımlanan **const** ve olmayan-**const** bu işlevlerin sürümleri mevcuttur. Olmayan gerektiriyorsa**const** hem de davranışı C++ aşırı _const_return sembolünü.
 
 Çıkış değeri LC_CTYPE yerel ayar kategori ayarından etkilenir; Daha fazla bilgi için [setlocale, _wsetlocale](setlocale-wsetlocale.md). Sahip olmayan bu işlevlerin sürümleri **_l** soneki geçerli yerel ayarı kullanır bu yerel ayara bağlı davranışı için; sahip sürümler **_l** sonekine yerine kullandıkları dışında geçirilen yerel ayar parametresini. Daha fazla bilgi için [yerel](../../c-runtime-library/locale.md).
 

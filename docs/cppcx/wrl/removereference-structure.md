@@ -8,11 +8,11 @@ helpviewer_keywords:
 - RemoveReference structure
 ms.assetid: 43ff91bb-815a-440e-b9fb-7dcbb7c863af
 ms.openlocfilehash: 342980ac9a7cae8a98ffd0f367c666487e34e5de
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59021624"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62231316"
 ---
 # <a name="removereference-structure"></a>RemoveReference Yapısı
 

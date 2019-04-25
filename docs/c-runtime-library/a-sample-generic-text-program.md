@@ -9,11 +9,11 @@ helpviewer_keywords:
 - TCHAR.H data types, mapping
 ms.assetid: a03de0db-8118-4bd9-a03f-640e8dfc5ed3
 ms.openlocfilehash: bc339bb11d0910eea2ef115a8f9013fa5c0270a7
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57738111"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62290475"
 ---
 # <a name="a-sample-generic-text-program"></a>Örnek Genel Metin Programı
 

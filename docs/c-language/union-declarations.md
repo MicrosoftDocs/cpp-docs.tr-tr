@@ -7,11 +7,11 @@ helpviewer_keywords:
 - variant records
 ms.assetid: 978c6165-e0ae-4196-afa7-6d94e24f62f7
 ms.openlocfilehash: dbc85a467161457641dd86acf5f3720bf4e14247
-ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56149264"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62291047"
 ---
 # <a name="union-declarations"></a>Birleşim Bildirimleri
 

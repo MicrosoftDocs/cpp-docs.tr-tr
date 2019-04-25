@@ -17,11 +17,11 @@ helpviewer_keywords:
 - CComApartment class
 ms.assetid: dbc177d7-7ee4-45f2-b563-d578a467ca93
 ms.openlocfilehash: 92db42a45a0863f8b43f7c46da9624e424d1e488
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57290111"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62246784"
 ---
 # <a name="ccomapartment-class"></a>CComApartment sınıfı
 

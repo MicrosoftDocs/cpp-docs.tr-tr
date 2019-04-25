@@ -14,11 +14,11 @@ helpviewer_keywords:
 - CRBMultiMap class
 ms.assetid: 94d3ec0c-3e30-4ab7-a101-d8da4fb8add3
 ms.openlocfilehash: 03a9639e8b0b3d11a414e5db0ce874d7ca8f2d45
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57267491"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62278143"
 ---
 # <a name="crbmultimap-class"></a>CRBMultiMap sınıfı
 

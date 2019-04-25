@@ -7,11 +7,11 @@ helpviewer_keywords:
 - DQ directive
 ms.assetid: 15de9c41-db90-4bca-affc-426eeb38ebc0
 ms.openlocfilehash: 4aeddc9528c281596501a112cb64184a8feca51b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50622252"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62203410"
 ---
 # <a name="dq"></a>DQ
 
