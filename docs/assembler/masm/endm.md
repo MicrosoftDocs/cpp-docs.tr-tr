@@ -7,11 +7,11 @@ helpviewer_keywords:
 - ENDM directive
 ms.assetid: 697ea303-1e47-4ee9-9e67-77b83c3fe35a
 ms.openlocfilehash: 709892c5b60864eafcb4a351c0d775e81597333a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50517841"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62186198"
 ---
 # <a name="endm"></a>ENDM
 

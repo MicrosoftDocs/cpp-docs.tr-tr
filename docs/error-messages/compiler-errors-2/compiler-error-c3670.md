@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3670
 ms.assetid: d0fa9c6e-8f90-48c7-9066-31b4fa5942eb
 ms.openlocfilehash: a9fe72501152891d3f82567f09922dda9a9b711a
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59778949"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62214957"
 ---
 # <a name="compiler-error-c3670"></a>Derleyici Hatası C3670
 

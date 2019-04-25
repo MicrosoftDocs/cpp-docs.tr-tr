@@ -3,11 +3,11 @@ title: main Bağımsız Değişkenleri
 ms.date: 11/04/2016
 ms.assetid: 39824fef-05ad-461d-ae82-49447dda8060
 ms.openlocfilehash: 918be9d281f1cb12c27c6c2f5dd834e4af137179
-ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56150265"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62313564"
 ---
 # <a name="arguments-to-main"></a>main Bağımsız Değişkenleri
 

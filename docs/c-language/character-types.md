@@ -6,11 +6,11 @@ helpviewer_keywords:
 - types [C], character
 ms.assetid: d3ca8cda-c0d7-43af-9472-697e8ef015ce
 ms.openlocfilehash: f894114d4e980b11edf55c4d4b7c4e60af396fb1
-ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56151591"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62312641"
 ---
 # <a name="character-types"></a>Karakter Türleri
 

@@ -5,11 +5,11 @@ helpviewer_keywords:
 - rend method
 ms.assetid: 80f3dd04-dd2c-4b52-b0ed-d567ec5d186c
 ms.openlocfilehash: ecd784a5db7949301b23895d65ec70804fb75951
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50592003"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62210984"
 ---
 # <a name="container-classrend"></a>Kapsayıcı Sınıfı::rend
 

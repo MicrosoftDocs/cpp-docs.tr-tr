@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3855
 ms.assetid: ed90f8c0-4154-4243-b066-493913df5727
 ms.openlocfilehash: 12ee1c6aa5f414a9cf3084831c956514593102c4
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50478136"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62265470"
 ---
 # <a name="compiler-error-c3855"></a>Derleyici Hatası C3855
 

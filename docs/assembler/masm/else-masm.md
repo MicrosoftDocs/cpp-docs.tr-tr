@@ -7,11 +7,11 @@ helpviewer_keywords:
 - ELSE directive
 ms.assetid: c43af707-4567-4489-97ca-f14982d84e88
 ms.openlocfilehash: 47cda33eb415070a4eca2d0faadef683c905aaaf
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50617682"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62185193"
 ---
 # <a name="else-masm"></a>ELSE (MASM)
 

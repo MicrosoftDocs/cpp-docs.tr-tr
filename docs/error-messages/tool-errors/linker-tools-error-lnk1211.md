@@ -7,11 +7,11 @@ helpviewer_keywords:
 - LNK1211
 ms.assetid: 607400eb-4180-4892-817f-eedfa628af61
 ms.openlocfilehash: 7c918cacb87460c2aad30285b750d9b170425534
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50456153"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62242675"
 ---
 # <a name="linker-tools-error-lnk1211"></a>Bağlayıcı Araçları Hatası LNK1211
 

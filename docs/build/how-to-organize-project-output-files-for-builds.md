@@ -6,11 +6,11 @@ helpviewer_keywords:
 - output files, organizing
 ms.assetid: 521d95ea-2dcc-4da0-b5eb-ac3e57941446
 ms.openlocfilehash: a675b535577b8757e92246249c94cd9760534740
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57823734"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62188824"
 ---
 # <a name="how-to-organize-project-output-files-for-builds"></a>Nasıl yapılır: Derlemeler için proje çıktı dosyalarını düzenleme
 

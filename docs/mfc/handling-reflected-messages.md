@@ -6,11 +6,11 @@ helpviewer_keywords:
 - reflected messages, handling
 ms.assetid: 147a4e0c-51cc-4447-a8e1-c28b4cece578
 ms.openlocfilehash: 973e8cff24eca37b1806207d081636f0d1b38365
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57275382"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62240567"
 ---
 # <a name="handling-reflected-messages"></a>Yansımış İletileri İşleme
 

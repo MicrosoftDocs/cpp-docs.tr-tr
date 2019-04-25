@@ -5,11 +5,11 @@ helpviewer_keywords:
 - reference method
 ms.assetid: ab85a9fb-c628-4761-9a5f-a0231fad7690
 ms.openlocfilehash: 4204571dba320de6248dac2cfb10ae21dc31e72c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50676804"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62210945"
 ---
 # <a name="container-classreference"></a>Kapsayıcı Sınıfı::reference
 

@@ -15,11 +15,11 @@ helpviewer_keywords:
 - IAtlStringMgr class
 ms.assetid: 722f0346-a770-4aa7-8f94-177be8dba823
 ms.openlocfilehash: 978d33c719b9cb8c2708dc97fa78874534dfd748
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57749964"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62199833"
 ---
 # <a name="iatlstringmgr-class"></a>Iatlstringmgr sınıfı
 

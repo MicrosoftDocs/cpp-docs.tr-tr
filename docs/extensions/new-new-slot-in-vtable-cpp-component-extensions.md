@@ -6,11 +6,11 @@ helpviewer_keywords:
 - new keyword [C++]
 ms.assetid: 1a9a5704-f02f-46ae-ad65-f0f2b6dbabc3
 ms.openlocfilehash: c5446e5e84491ff7d736ce3b3af49dacd471c010
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59025792"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62254486"
 ---
 # <a name="new-new-slot-in-vtable--ccli-and-ccx"></a>Yeni (vtable'da yeni yuva) (C++/CLI ve C++/CX)
 

@@ -6,11 +6,11 @@ helpviewer_keywords:
 - Backus Nauer Form (BNF) syntax
 ms.assetid: 994bbef0-9077-4aa8-bdfe-b7e830af9acc
 ms.openlocfilehash: 0b48e0b4abc8601b5173c3c7d2748c726646fbc5
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57267114"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62196468"
 ---
 # <a name="understanding-backus-nauer-form-bnf-syntax"></a>Backus Nauer Form (BNF) söz dizimini anlama
 

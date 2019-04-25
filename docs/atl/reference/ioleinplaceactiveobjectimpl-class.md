@@ -17,11 +17,11 @@ helpviewer_keywords:
 - IOleInPlaceActiveObject, ATL implementation
 ms.assetid: 44e6cc6d-a2dc-4187-98e3-73cf0320dea9
 ms.openlocfilehash: fd0bcb7bb20967128ef3b3cc62722c3b68e728d8
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57285054"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62276685"
 ---
 # <a name="ioleinplaceactiveobjectimpl-class"></a>Ioleınplaceactiveobjectımpl sınıfı
 

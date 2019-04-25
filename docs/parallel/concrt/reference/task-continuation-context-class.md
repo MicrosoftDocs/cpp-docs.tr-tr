@@ -13,11 +13,11 @@ helpviewer_keywords:
 - task_continuation_context class
 ms.assetid: 1fb5a76a-3682-45c2-a615-8b6b527741f0
 ms.openlocfilehash: 5d7d92fcd1bb00513b9e05030afa56726e87183b
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57280298"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62212863"
 ---
 # <a name="taskcontinuationcontext-class"></a>task_continuation_context Sınıfı
 
@@ -73,7 +73,7 @@ Geçerli Windows çalışma zamanı iş parçacığı bağlamı. Bir Windows Run
 
 Tarafından döndürülen değer `get_current_winrt_context` öncül görevin bölmeye duyarlı olup bağımsız olarak devamlılığın yakalanan bağlam (STA vs MTA), Grup modelinde yürütüleceğini çalışma zamanına belirtmek için kullanılabilir. Bir bölmeye duyarlı görev, bir Windows çalışma zamanı sarmalanmış olmaktan çıkaran görev `IAsyncInfo` arabirimi veya böyle bir görevden gelen görevdir bir görev.
 
-Bu yöntem benzer `use_current` yöntemi, ancak kullanılabilir de yerel C++ kod olmadan C + +/ CX uzantısı desteği. Yazma C + Gelişmiş kullanıcıların kullanımına için tasarlanmıştır +/ CX geçişte sorun yaşamaz kitaplık kodunu hem yerel hem de Windows çalışma zamanı arayanlar. Bu işlev gerekmedikçe öneririz `use_current` yalnızca C + için kullanılabilir olan yöntemi +/ CX istemciler.
+Bu yöntem benzer `use_current` yöntemi, ancak kullanılabilir de için yerel C++ olmadan kod C++/CX uzantısı desteği. Yazma C + Gelişmiş kullanıcıların kullanımına için tasarlanmıştır +/ CX geçişte sorun yaşamaz kitaplık kodunu hem yerel hem de Windows çalışma zamanı arayanlar. Bu işlev gerekmedikçe öneririz `use_current` yalnızca C + için kullanılabilir olan yöntemi +/ CX istemciler.
 
 ##  <a name="use_arbitrary"></a> use_arbitrary
 

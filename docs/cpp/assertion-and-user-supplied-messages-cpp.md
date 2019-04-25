@@ -8,15 +8,15 @@ helpviewer_keywords:
 - user-supplied messages [C++], compile time
 ms.assetid: ebf7d885-61c8-4233-b0ae-1c9a38e0f385
 ms.openlocfilehash: 913aa199b4acd2ceb6daf7a24d8c50c28234b74a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50507750"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62184367"
 ---
 # <a name="assertion-and-user-supplied-messages-c"></a>Onaylama ve Kullanıcının Sağladığı İletiler (C++)
 
-Yardımcı olan C++ dil destekleyen üç hata işleme mekanizması, uygulamanızı hata ayıklama: [#error yönergesi](../preprocessor/hash-error-directive-c-cpp.md), [static_assert](../cpp/static-assert.md) anahtar sözcüğü ve [assert makrosu, _assert, _ wassert](../c-runtime-library/reference/assert-macro-assert-wassert.md) makrosu. Hata iletileri üç mekanizma vermek ve iki Ayrıca yazılım onaylar test edin. Yazılım onaylama programınızda belirli bir noktada doğru olması beklenen bir koşulu belirtir. Bir derleme zamanı onaylama işlemi başarısızsa, derleyici bir tanılama iletisi ve bir derleme hatası verir. Bir çalışma zamanı onaylama başarısız olursa, işletim sisteminin bir tanılama iletisi yayınlar ve uygulamanızı kapatır.
+C++ Yardımcı dili destekleyen üç hata işleme düzenekleri uygulamanızı hata ayıklama: [#error yönergesi](../preprocessor/hash-error-directive-c-cpp.md), [static_assert](../cpp/static-assert.md) anahtar sözcüğü ve [assert makrosu, _ Assert, _wassert](../c-runtime-library/reference/assert-macro-assert-wassert.md) makrosu. Hata iletileri üç mekanizma vermek ve iki Ayrıca yazılım onaylar test edin. Yazılım onaylama programınızda belirli bir noktada doğru olması beklenen bir koşulu belirtir. Bir derleme zamanı onaylama işlemi başarısızsa, derleyici bir tanılama iletisi ve bir derleme hatası verir. Bir çalışma zamanı onaylama başarısız olursa, işletim sisteminin bir tanılama iletisi yayınlar ve uygulamanızı kapatır.
 
 ## <a name="remarks"></a>Açıklamalar
 

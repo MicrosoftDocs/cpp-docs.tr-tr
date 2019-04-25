@@ -6,11 +6,11 @@ helpviewer_keywords:
 - templates, with CLR types
 ms.assetid: cf59d16b-5514-448b-9a95-e0b4fcb616a6
 ms.openlocfilehash: a8cc429763d042ba262d5543f4a2d85bbf8aa29a
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59029560"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62264893"
 ---
 # <a name="windows-runtime-and-managed-templates-ccli-and-ccx"></a>Windows çalışma zamanı ve yönetilen şablonlar (C++/CLI ve C++/CX)
 

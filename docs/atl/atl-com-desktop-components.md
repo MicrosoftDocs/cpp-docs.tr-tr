@@ -6,11 +6,11 @@ helpviewer_keywords:
 - ATL, about ATL
 ms.assetid: 291f38d1-d2de-4687-86a9-99b4fd35706c
 ms.openlocfilehash: e1ee9364cfcd382c8699014fd2ef4a807b63bb0f
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58780437"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62223404"
 ---
 # <a name="atl-com-desktop-components"></a>ATL COM Masaüstü bileşenleri
 

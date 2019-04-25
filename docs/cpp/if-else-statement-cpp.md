@@ -10,11 +10,11 @@ helpviewer_keywords:
 - if keyword [C++], if-else
 ms.assetid: f8c45cde-6bce-42ae-81db-426b3dbd4caa
 ms.openlocfilehash: 16aa65ab64d9fd855ae3306da88f8eb14eec759c
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51330839"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62183654"
 ---
 # <a name="if-else-statement-c"></a>if-else Deyimi (C++)
 
@@ -113,7 +113,7 @@ int main()
 
 ## <a name="if_with_init"></a> bir başlatıcı with deyimi
 
-**Visual Studio 2017 sürüm 15.3 ve üzeri** (bulunan [/Std: c ++ 17](../build/reference/std-specify-language-standard-version.md)): bir **varsa** ifadesi bildirir ve adlandırılmış bir değişken başlatır bir ifade içerebilir. If Bloğu kapsamında değişken yalnızca gerektiğinde bu tür bir IF deyimi kullanın.
+**Visual Studio 2017 sürüm 15.3 ve üzeri** (bulunan [/Std: c ++ 17](../build/reference/std-specify-language-standard-version.md)): Bir **varsa** ifadesi bildirir ve adlandırılmış bir değişken başlatır bir ifade içerebilir. If Bloğu kapsamında değişken yalnızca gerektiğinde bu tür bir IF deyimi kullanın.
 
 ## <a name="example"></a>Örnek
 
@@ -165,7 +165,7 @@ int main()
 
 ## <a name="a-nameifconstexpr-if-constexpr-statements"></a><a name="if_constexpr"> constexpr deyimleri
 
-**Visual Studio 2017 sürüm 15.3 ve üzeri** (bulunan [/Std: c ++ 17](../build/reference/std-specify-language-standard-version.md)): işlev şablonlarında kullanabilirsiniz bir **, constexpr** deyimi olmadan derleme zamanı dallanma kararları vermek için birden çok işlev aşırı yükleme başvurmadan zorunda. Örneğin, tek bir işlev, (hiçbir sıfır parametresi aşırı yüklemesi gerekli değildir) bu tanıtıcıları parametresi açmak yazabilirsiniz:
+**Visual Studio 2017 sürüm 15.3 ve üzeri** (bulunan [/Std: c ++ 17](../build/reference/std-specify-language-standard-version.md)): İşlev şablonları kullanabilirsiniz bir **, constexpr** derleme zamanı dallanma için birden çok işlev aşırı yüklemelerinin başvurmadan gerek kalmadan kararları vermek için deyimi. Örneğin, tek bir işlev, (hiçbir sıfır parametresi aşırı yüklemesi gerekli değildir) bu tanıtıcıları parametresi açmak yazabilirsiniz:
 
 ```cpp
 template <class T, class... Rest>

@@ -9,11 +9,11 @@ helpviewer_keywords:
 - memory allocation [MFC], MFC
 ms.assetid: 934ac81b-d630-4232-88e5-ea74f7187987
 ms.openlocfilehash: 1c7f901009d5e1e7f0af20d493bb748b46b18480
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57281297"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62219137"
 ---
 # <a name="memory-management"></a>Bellek Yönetimi
 

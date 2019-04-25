@@ -7,11 +7,11 @@ helpviewer_keywords:
 - .CODE directive
 ms.assetid: 2b8c882c-c0d2-4fa3-8335-e6b12717a4f4
 ms.openlocfilehash: 65d336d2829c97fdf21e6f4b0fcb3063cc7776ee
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50630817"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62204380"
 ---
 # <a name="code"></a>.CODE
 

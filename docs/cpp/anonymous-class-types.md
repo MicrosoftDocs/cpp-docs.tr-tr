@@ -6,11 +6,11 @@ helpviewer_keywords:
 - anonymous class types
 ms.assetid: 9ba667b2-8c2a-4c29-82a6-fa120b9233c8
 ms.openlocfilehash: 9cd27fb40522a07ce4591b654ee8a6dda53b4f28
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50456413"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62184481"
 ---
 # <a name="anonymous-class-types"></a>Anonim Sınıf Türleri
 

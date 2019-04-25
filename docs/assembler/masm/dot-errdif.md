@@ -7,11 +7,11 @@ helpviewer_keywords:
 - .ERRDIF[[I]] directive
 ms.assetid: af7cb441-0373-4c7e-af9c-06bcb9ed2b0a
 ms.openlocfilehash: 00d155c2ab600d78a5f1bdfbc6f56930298a6c9d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50606173"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62204246"
 ---
 # <a name="errdifi"></a>. ERRDIF [[I]]
 

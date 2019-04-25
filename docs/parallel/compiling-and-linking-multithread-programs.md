@@ -11,11 +11,11 @@ helpviewer_keywords:
 - linking [C++], multithread programs
 ms.assetid: 27589afc-daf2-4f26-b868-a99de5c9dfec
 ms.openlocfilehash: bc56c71c4c3c1367d35dd5995054b1d7371ae9de
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57283494"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62236949"
 ---
 # <a name="compiling-and-linking-multithread-programs"></a>Çoklu İş Parçacığı Kullanan Programları Derleme ve Bağlama
 

@@ -99,11 +99,11 @@ helpviewer_keywords:
 - value_type member [STL/CLR]
 ms.assetid: cd78687b-8a05-48e0-9d22-8b8194ae3b0b
 ms.openlocfilehash: 2e3cd31ada54d1569cb7e5344ab471108b625558
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50548765"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62222968"
 ---
 # <a name="hashmultimap-stlclr"></a>hash_multimap (STL/CLR)
 
@@ -576,7 +576,7 @@ size_type count(key_type key);
 
 #### <a name="parameters"></a>Parametreler
 
-*Anahtarı*<br/>
+*anahtar*<br/>
 Aranacak anahtar değeri.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -789,7 +789,7 @@ cliext::pair<iterator, iterator> equal_range(key_type key);
 
 #### <a name="parameters"></a>Parametreler
 
-*Anahtarı*<br/>
+*anahtar*<br/>
 Aranacak anahtar değeri.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -855,7 +855,7 @@ bool erase(key_type key)
 *ilk*<br/>
 Silme aralığını başlangıcı.
 
-*Anahtarı*<br/>
+*anahtar*<br/>
 Silinecek anahtar değer.
 
 *Son*<br/>
@@ -943,7 +943,7 @@ iterator find(key_type key);
 
 #### <a name="parameters"></a>Parametreler
 
-*Anahtarı*<br/>
+*anahtar*<br/>
 Aranacak anahtar değeri.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -1951,7 +1951,7 @@ iterator lower_bound(key_type key);
 
 #### <a name="parameters"></a>Parametreler
 
-*Anahtarı*<br/>
+*anahtar*<br/>
 Aranacak anahtar değeri.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -2010,7 +2010,7 @@ static value_type make_value(key_type key, mapped_type mapped);
 
 #### <a name="parameters"></a>Parametreler
 
-*Anahtarı*<br/>
+*anahtar*<br/>
 Kullanılacak anahtar değeri.
 
 *Eşlenen*<br/>
@@ -2724,7 +2724,7 @@ iterator upper_bound(key_type key);
 
 #### <a name="parameters"></a>Parametreler
 
-*Anahtarı*<br/>
+*anahtar*<br/>
 Aranacak anahtar değeri.
 
 ### <a name="remarks"></a>Açıklamalar

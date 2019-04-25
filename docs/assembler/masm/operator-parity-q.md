@@ -9,11 +9,11 @@ helpviewer_keywords:
 - operator PARITY?
 ms.assetid: f8c52def-c4b7-4b81-af96-2b0c2d943f6c
 ms.openlocfilehash: 12c9a8a4e2127274f915a60c83232c0266a17061
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50595783"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62199547"
 ---
 # <a name="operator-parity"></a>PARITY? işleci
 

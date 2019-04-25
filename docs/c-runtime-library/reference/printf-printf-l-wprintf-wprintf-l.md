@@ -39,11 +39,11 @@ helpviewer_keywords:
 - formatted text [C++]
 ms.assetid: 77a854ae-5b48-4865-89f4-f2dc5cf80f52
 ms.openlocfilehash: 1f3d439c12fa803bfe1af31a9a45d777b2e1caa2
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50666901"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62232499"
 ---
 # <a name="printf-printfl-wprintf-wprintfl"></a>printf, _printf_l, wprintf, _wprintf_l
 
@@ -132,7 +132,7 @@ Line one
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**Printf**, **_printf_l**|\<stdio.h >|
+|**printf**, **_printf_l**|\<stdio.h >|
 |**wprintf**, **_wprintf_l**|\<stdio.h > veya \<wchar.h >|
 
 Konsolu, Evrensel Windows Platformu (UWP) uygulamaları desteklenmez. Konsolları ile ilişkili standart akış işleyicileri **stdin**, **stdout**, ve **stderr**, C çalışma zamanı işlevleri bunları UWP uygulamalarında kullanmadan önce yeniden yönlendirilmesi gerekiyor . Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).

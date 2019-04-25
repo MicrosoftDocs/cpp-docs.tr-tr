@@ -1,5 +1,5 @@
 ---
-title: C çalışma zamanı hatası R6024
+title: C Çalışma Zamanı Hatası R6024
 ms.date: 11/04/2016
 f1_keywords:
 - R6024
@@ -7,13 +7,13 @@ helpviewer_keywords:
 - R6024
 ms.assetid: 0fb11c0f-9b81-4cab-81bd-4785742946a5
 ms.openlocfilehash: 89b99a93512603eaf2273a6ff3f434f1ad3b3bb8
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50497081"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62214144"
 ---
-# <a name="c-runtime-error-r6024"></a>C çalışma zamanı hatası R6024
+# <a name="c-runtime-error-r6024"></a>C Çalışma Zamanı Hatası R6024
 
 _onexit/atexit tablo için yeterli alan yok
 

@@ -7,11 +7,11 @@ helpviewer_keywords:
 - SUBTITLE directive
 ms.assetid: b882ae31-9998-46ed-bd88-6656263143e7
 ms.openlocfilehash: 8029e66b8a8c9c3b274c925c756ebca5a5ef0bf5
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50654161"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62210368"
 ---
 # <a name="subtitle"></a>SUBTITLE
 

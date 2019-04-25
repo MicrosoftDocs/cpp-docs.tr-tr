@@ -13,11 +13,11 @@ helpviewer_keywords:
 - CDBException [MFC], m_strStateNativeOrigin
 ms.assetid: eb9e1119-89f5-49a7-b9d4-b91cee1ccc82
 ms.openlocfilehash: 755b89635eedd7808f900dc63cd3039845db1dd3
-ms.sourcegitcommit: c1f646c8b72f330fa8cf5ddb0f8f261ba10d16f0
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58328538"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62253419"
 ---
 # <a name="cdbexception-class"></a>CDBException sınıfı
 

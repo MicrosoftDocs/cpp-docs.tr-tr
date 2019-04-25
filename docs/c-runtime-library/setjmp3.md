@@ -20,11 +20,11 @@ helpviewer_keywords:
 - setjmp3 function
 ms.assetid: 6129c2f3-8bac-4fdb-a827-44e1eebba500
 ms.openlocfilehash: e2c89acf1de88b831d70a0f438cdf14148a48632
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57741811"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62268804"
 ---
 # <a name="setjmp3"></a>_setjmp3
 

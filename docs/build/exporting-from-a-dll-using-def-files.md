@@ -7,11 +7,11 @@ helpviewer_keywords:
 - exporting DLLs [C++], DEF files
 ms.assetid: 9d31eda2-184e-47de-a2ee-a93ebd603f8e
 ms.openlocfilehash: 35f55ea525bd03c5b0b1b1750d25c1223bc608fc
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57817003"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62195487"
 ---
 # <a name="exporting-from-a-dll-using-def-files"></a>DEF Dosyaları Kullanarak DLL'den Dışarı Aktarma
 
@@ -66,7 +66,7 @@ MFC'nin MFCx0.DLL'den işlevleri ve sınıfları dışarı aktarmak için DEF do
 
 - [Hangi dışa aktarma yönteminin kullanılacağını belirleme](determining-which-exporting-method-to-use.md)
 
-- [__Declspec(dllimport) kullanarak bir uygulamayı içeri aktarın](importing-into-an-application-using-declspec-dllimport.md)
+- [__declspec(dllimport) kullanarak bir uygulamaya aktarma](importing-into-an-application-using-declspec-dllimport.md)
 
 - [DLL'yi Başlat](run-time-library-behavior.md#initializing-a-dll)
 
@@ -78,7 +78,7 @@ MFC'nin MFCx0.DLL'den işlevleri ve sınıfları dışarı aktarmak için DEF do
 
 - [Düzenlenmiş adlar](reference/decorated-names.md)
 
-- [İçeri ve dışarı aktarma satır içi işlevler](importing-and-exporting-inline-functions.md)
+- [Satır içi işlevleri içeri ve dışarı aktarma](importing-and-exporting-inline-functions.md)
 
 - [Karşılıklı içeri aktarmalar](mutual-imports.md)
 

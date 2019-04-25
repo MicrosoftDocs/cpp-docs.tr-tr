@@ -7,11 +7,11 @@ f1_keywords:
 - atlcom/ATL::OBJECT_ENTRY_NON_CREATEABLE_EX_AUTO
 ms.assetid: 680087f4-9894-41dd-a79c-6f337e1f13c1
 ms.openlocfilehash: 73dc924527bac8499adefab3d0d6b51afa500a5a
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57298613"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62197386"
 ---
 # <a name="object-map-macros"></a>Nesne işleme makroları
 
@@ -65,10 +65,10 @@ OBJECT_ENTRY_AUTO( clsid, class )
 ### <a name="parameters"></a>Parametreler
 
 *CLSID*<br/>
-[in] Adlı bir C++ sınıfı tarafından uygulanan bir COM sınıfı CLSID'si *sınıfı*.
+[in] Bir COM sınıfı tarafından uygulanan CLSID'si C++ adlı sınıfı *sınıfı*.
 
 *class*<br/>
-[in] COM sınıfı tarafından temsil edilen C++ sınıfı adı *CLSID*.
+[in] Adını C++ COM sınıfı tarafından temsil edilen sınıf *CLSID*.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -97,10 +97,10 @@ OBJECT_ENTRY_NON_CREATEABLE_EX_AUTO( clsid, class )
 ### <a name="parameters"></a>Parametreler
 
 *CLSID*<br/>
-[in] Adlı bir C++ sınıfı tarafından uygulanan bir COM sınıfı CLSID'si *sınıfı*.
+[in] Bir COM sınıfı tarafından uygulanan CLSID'si C++ adlı sınıfı *sınıfı*.
 
 *class*<br/>
-[in] COM sınıfı tarafından temsil edilen C++ sınıfı adı *CLSID*.
+[in] Adını C++ COM sınıfı tarafından temsil edilen sınıf *CLSID*.
 
 ### <a name="remarks"></a>Açıklamalar
 

@@ -9,11 +9,11 @@ helpviewer_keywords:
 - GetProcAddress method
 ms.assetid: 48d14ae0-47ea-4c5d-96b1-2c158f1a26af
 ms.openlocfilehash: 5ee985da29e38bfb262c72315a57c0b588b2e82e
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57810178"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62188983"
 ---
 # <a name="getprocaddress"></a>GetProcAddress
 

@@ -9,11 +9,11 @@ helpviewer_keywords:
 - map classes [MFC]
 ms.assetid: 3f0b1c05-2243-4d4d-98d4-429fc3310c9f
 ms.openlocfilehash: 6136557bd436fb9964498384f277d48e8525a027
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57262187"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62254000"
 ---
 # <a name="ready-to-use-map-classes"></a>Kullanıma Hazır Eşleme Sınıfları
 

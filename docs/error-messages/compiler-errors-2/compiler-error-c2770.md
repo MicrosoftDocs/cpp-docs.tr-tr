@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2770
 ms.assetid: 100001b5-80b0-4971-8ff6-9023f443c926
 ms.openlocfilehash: 9397b52838f61449f0475a31d5bb4077dad7f587
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50601584"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62257407"
 ---
 # <a name="compiler-error-c2770"></a>Derleyici Hatası C2770
 

@@ -9,11 +9,11 @@ helpviewer_keywords:
 - passing parameters [C++], reference-type arguments
 ms.assetid: 0a70e831-9e76-46c0-821d-aeba13d73cc0
 ms.openlocfilehash: 2a0bd21023bd1c6bc14b1f587c85960cf1e8b820
-ms.sourcegitcommit: 31a2a9845f5e1d35ab054906d8cdc6582a5220bd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51597722"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62244188"
 ---
 # <a name="reference-type-function-arguments"></a>Başvuru Türü İşlev Bağımsız Değişkenleri
 

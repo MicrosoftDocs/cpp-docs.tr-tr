@@ -6,11 +6,11 @@ helpviewer_keywords:
 - linking [C++], to ATL Registrar code
 ms.assetid: 835f5885-87a6-48fa-91e6-60988ee65538
 ms.openlocfilehash: b95bd17abca3237710956f3a1bf1b1d6fa9df51e
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57265333"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62196672"
 ---
 # <a name="setting-up-a-static-link-to-the-registrar-code-c-only"></a>(Yalnızca C++) Kaydedici koduna statik bağlantı ayarlama
 

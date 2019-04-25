@@ -16,11 +16,11 @@ helpviewer_keywords:
 - custom build tools (C++), specifying
 - builds (C++), custom build tools
 ms.openlocfilehash: dbce226b34503a9e8e70b6f19d9aa0c68ef487f3
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57824155"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62314760"
 ---
 # <a name="specify-custom-build-tools"></a>Özel derleme araçlarını belirtme
 
@@ -80,5 +80,5 @@ Projeyi derlerken, derleme sistemi parser.l parser.c ve zaman damgaları karşı
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Genel derleme komutları ve Özellikler makroları](reference/common-macros-for-build-commands-and-properties.md)<br>
+[Derleme komutları ve özellikleri için genel makrolar](reference/common-macros-for-build-commands-and-properties.md)<br>
 [Derleme Özelleştirmeleri Sorunlarını Giderme](troubleshooting-build-customizations.md)

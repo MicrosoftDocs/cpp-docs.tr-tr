@@ -6,11 +6,11 @@ f1_keywords:
 - client/Microsoft::WRL::operator==
 ms.assetid: 94f383a5-17a9-40c7-9d9c-778acdc54b27
 ms.openlocfilehash: b0dfb547904d409399ad1a0d7824f9d4fdeb5f15
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59039325"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62232145"
 ---
 # <a name="operator-operator-microsoftwrl"></a>operator== İşleç (Microsoft::WRL)
 

@@ -5,11 +5,11 @@ helpviewer_keywords:
 - IDispEventSimpleImpl class, using
 ms.assetid: 8640ad1a-4bd0-40a5-b5e4-7322685d7aab
 ms.openlocfilehash: 40edca3a99fb6e9d57d617e79d0bd37ebbfcd4ad
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58768570"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62196722"
 ---
 # <a name="using-idispeventsimpleimpl"></a>Using IDispEventSimpleImpl
 

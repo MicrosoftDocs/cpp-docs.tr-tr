@@ -10,11 +10,11 @@ helpviewer_keywords:
 - MFC, library versions
 - libraries [MFC], versions
 ms.openlocfilehash: c0dc724566063066175ea54e2b7734892e3c6e05
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50537663"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62238513"
 ---
 # <a name="mfc-library-versions"></a>MFC Kitaplık Sürümleri
 
@@ -85,7 +85,7 @@ MFC projeleri kullanmak önişlemci sembolü \_UNICODE UTF-16 geniş karakter Un
 
 Statik kitaplıklar için MFC aşağıdaki adlandırma kurallarını kullanın. Kitaplık adlarının biçimi şöyledir:
 
-> <em>u</em>AFX<em>cd</em>. LIB
+> <em>u</em>AFX<em>cd</em>.LIB
 
 italik olarak küçük gösterilen harf tanımlayıcıları, anlamları aşağıdaki tabloda gösterilen yer tutucular nerede:
 

@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2220
 ms.assetid: d610802c-64d7-40ad-a2a6-0ed0b6815a6c
 ms.openlocfilehash: 3ff730c6fea7d2c57c4ec3054fc627cdc6227e2d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50603417"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62311754"
 ---
 # <a name="compiler-error-c2220"></a>Derleyici Hatası C2220
 

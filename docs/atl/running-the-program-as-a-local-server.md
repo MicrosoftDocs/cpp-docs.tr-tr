@@ -6,11 +6,11 @@ helpviewer_keywords:
 - ATL services, running as local servers
 ms.assetid: eb9701e6-e2a8-4666-897f-0c893aec8ac7
 ms.openlocfilehash: a412814fc5f3900a248f779501e2720b72287e57
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57296832"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62196528"
 ---
 # <a name="running-the-program-as-a-local-server"></a>Programı yerel sunucu olarak çalıştırma
 

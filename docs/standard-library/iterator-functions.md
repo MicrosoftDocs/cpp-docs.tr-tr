@@ -33,11 +33,11 @@ helpviewer_keywords:
 - std::next [C++]
 - std::prev [C++]
 ms.openlocfilehash: f6ea1ac49dabbfc34af9c8ddd020543f606d37a4
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51523682"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62224148"
 ---
 # <a name="ltiteratorgt-functions"></a>&lt;Yineleyici&gt; işlevleri
 
@@ -317,7 +317,7 @@ Bir sabit `cont.begin()`.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev ve tüm C++ Standart Kitaplığı kapsayıcıları ile çalışır [initializer_list](../standard-library/initializer-list-class.md).
+Bu işlev tümüyle çalışır C++ standart kitaplığı kapsayıcıları ile [initializer_list](../standard-library/initializer-list-class.md).
 
 Bu üye işlevi yerine kullanabileceğiniz `begin()` dönüş değeri olacağını garanti etmek için şablon işlevi `const_iterator`. Genellikle birlikte kullanılır [otomatik](../cpp/auto-cpp.md) kesinti anahtar sözcüğü, aşağıdaki örnekte gösterildiği gibi yazın. Örnekte, göz önünde bulundurun `Container` değiştirilebilir (olmayan **const**) kapsayıcı veya `initializer_list` destekleyen herhangi bir türdeki `begin()` ve `cbegin()`.
 
@@ -350,7 +350,7 @@ Bir sabit `cont.end()`.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev ve tüm C++ Standart Kitaplığı kapsayıcıları ile çalışır [initializer_list](../standard-library/initializer-list-class.md).
+Bu işlev tümüyle çalışır C++ standart kitaplığı kapsayıcıları ile [initializer_list](../standard-library/initializer-list-class.md).
 
 Bu üye işlevi yerine kullanabileceğiniz [end()](../standard-library/iterator-functions.md#end) dönüş değeri olacağını garanti etmek için şablon işlevi `const_iterator`. Genellikle birlikte kullanılır [otomatik](../cpp/auto-cpp.md) kesinti anahtar sözcüğü, aşağıdaki örnekte gösterildiği gibi yazın. Örnekte, göz önünde bulundurun `Container` değiştirilebilir (olmayan **const**) kapsayıcı veya `initializer_list` destekleyen herhangi bir türdeki `end()` ve `cend()`.
 

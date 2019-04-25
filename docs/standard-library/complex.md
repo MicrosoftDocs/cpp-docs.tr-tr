@@ -8,11 +8,11 @@ helpviewer_keywords:
 - complex header
 ms.assetid: 5e728995-3059-496a-9ce9-61d1bfbe4f2b
 ms.openlocfilehash: afcdb1246d9c02f83dbc8708326d10e802ad2779
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50525873"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62212098"
 ---
 # <a name="ltcomplexgt"></a>&lt;karmaşık&gt;
 
@@ -40,11 +40,11 @@ Karmaşık toplama ve karmaşık çarpma işlemleri karmaşık sayılar kümesiy
 
 - Karmaşık bir sayıyı için eklenebilir ters (*bir*, *b*) olduğunu (-*bir*, -*b*) ve tüm karmaşık sayılar için multiplicative ters dışında (0, 0) olan
 
-   (*bir*/ (*bir*<sup>2</sup> + *b*<sup>2</sup>), -*b*/ (*bir*<sup>2</sup> + *b*<sup>2</sup>))
+   (*a*/(*a*<sup>2</sup> + *b*<sup>2</sup>), -*b*/(*a*<sup>2</sup> + *b*<sup>2</sup>))
 
 Karmaşık bir sayıyı temsil eden tarafından *z* = (*bir*, *b*) biçiminde *z* = *bir*  +  *BI*burada *miyim*<sup>2</sup> Cebir gerçek sayılar kümesinin karmaşık sayılar kümesini ve bileşenleri için uygulanabilir için -1, kuralları =. Örneğin:
 
-   (1 + 2*miyim*) \* (2 + 3*miyim*) = 1 \* (2 + 3*miyim*) + 2*miyim* \* (2 + 3*i*) = (2 + 3*miyim*) + (4*miyim* + 6*miyim*<sup>2</sup>) (2-6) + (3 ve 4) =*miyim* = -4 + 7*ediyorum*
+   (1 + 2*i*) \* (2 + 3*i*) = 1 \* (2 + 3*i*) + 2*i* \* (2 + 3*i*) = (2 + 3*i*) + (4*i* + 6*i*<sup>2</sup>) = (2 - 6) + (3 + 4)*i* = -4 + 7*i*
 
 Karmaşık sayılar alan sistemidir, ancak sıralı bir alan değil. Olduğundan gerçek sayıları ve onun alt kümeler, alan için gerçek sayıya oldukları gibi karmaşık sayılar inequalities uygulanamaz hiçbir karmaşık numaralarını sıralama yoktur.
 

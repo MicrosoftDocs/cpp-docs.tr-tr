@@ -3,11 +3,11 @@ title: 'İzlenecek yol: Matris çarpım'
 ms.date: 11/19/2018
 ms.assetid: 61172e8b-da71-4200-a462-ff3a908ab0cf
 ms.openlocfilehash: 597ba0f47c7b081f62c82bf8e1ca01c286d35140
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57300979"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62237300"
 ---
 # <a name="walkthrough-matrix-multiplication"></a>İzlenecek yol: Matris çarpım
 

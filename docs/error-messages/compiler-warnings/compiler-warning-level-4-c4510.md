@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C4510
 ms.assetid: fd28d1d4-ad27-4dad-94c0-9dba46c93180
 ms.openlocfilehash: 80183e9f7ef17cbc37592f36eb8db1df2be94827
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50539067"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62221096"
 ---
 # <a name="compiler-warning-level-4-c4510"></a>Derleyici Uyarısı (düzey 4) C4510
 

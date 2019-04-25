@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2788
 ms.assetid: 8688fc5c-e652-43b4-b407-9c488c76f2db
 ms.openlocfilehash: 0025aa5211c2736860bdd30cad4315f63fba9337
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50460911"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62256899"
 ---
 # <a name="compiler-error-c2788"></a>Derleyici Hatası C2788
 

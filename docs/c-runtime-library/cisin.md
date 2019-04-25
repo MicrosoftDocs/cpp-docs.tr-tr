@@ -21,11 +21,11 @@ helpviewer_keywords:
 - CIsin intrinsic
 ms.assetid: f215f39a-2341-4f1c-ba8e-cb522451ceb2
 ms.openlocfilehash: a76aa2b0e0438afa5728d26451c2a146ed262cab
-ms.sourcegitcommit: e98671a4f741b69d6277da02e6b4c9b1fd3c0ae5
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/04/2019
-ms.locfileid: "55702888"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62290241"
 ---
 # <a name="cisin"></a>_CIsin
 

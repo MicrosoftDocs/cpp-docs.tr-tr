@@ -15,11 +15,11 @@ helpviewer_keywords:
 - time [Visual Studio], Automation support
 ms.assetid: 6eee94c4-943d-4ffc-bf7c-bdda89337ab0
 ms.openlocfilehash: c26534189c7b6f904611e78c5d2d6d0b1d6d7382
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57750213"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62235920"
 ---
 # <a name="date-and-time-automation-support"></a>Tarih ve saat: Otomasyon desteği
 

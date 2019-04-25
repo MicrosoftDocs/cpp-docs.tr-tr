@@ -24,12 +24,12 @@ helpviewer_keywords:
 - wcsnset function
 ms.assetid: e7868ac9-dc34-4606-bd3c-0fb2e7c51631
 ms.openlocfilehash: 0e325237cdd8e1ff597bf0fbbe59be741bc9ef18
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50492322"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62209586"
 ---
 # <a name="strnset-wcsnset"></a>strnset, wcsnset
 
-Bu POSIX işlevler kullanım dışı bırakılmıştır. ISO C++ uyumlu [_strnset, _strnset_l, _wcsnset, _wcsnset_l, _mbsnset, _mbsnset_l](strnset-strnset-l-wcsnset-wcsnset-l-mbsnset-mbsnset-l.md) veya Gelişmiş güvenlikli [_strnset_s, _strnset_s_l, _wcsnset_s, _wcsnset_s_l, _mbsnset_s, _mbsnset_s_l](strnset-s-strnset-s-l-wcsnset-s-wcsnset-s-l-mbsnset-s-mbsnset-s-l.md)yerine.
+Bu POSIX işlevler kullanım dışı bırakılmıştır. ISO kullanın C++ uyumluluğunu [_strnset, _strnset_l, _wcsnset, _wcsnset_l, _mbsnset, _mbsnset_l](strnset-strnset-l-wcsnset-wcsnset-l-mbsnset-mbsnset-l.md) veya Gelişmiş güvenlikli [_strnset_s, _strnset_s_l, _wcsnset_s, _wcsnset_s_l, _mbsnset_s, _mbsnset_s_l](strnset-s-strnset-s-l-wcsnset-s-wcsnset-s-l-mbsnset-s-mbsnset-s-l.md) yerine.

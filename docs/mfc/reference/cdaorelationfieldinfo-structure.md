@@ -8,11 +8,11 @@ helpviewer_keywords:
 - CDaoRelationFieldInfo structure [MFC]
 ms.assetid: 47cb89ca-dc80-47ce-96fd-cc4b88512558
 ms.openlocfilehash: 85dd853a9aae41a87bbe7ef5c69e22846678cf8a
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57298431"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62206114"
 ---
 # <a name="cdaorelationfieldinfo-structure"></a>CDaoRelationFieldInfo Yapısı
 

@@ -3,15 +3,15 @@ title: Kayan nokta geçiş sorunları
 ms.date: 05/17/2017
 ms.assetid: 36a1b552-2f2b-4919-bc9d-c17f42434954
 ms.openlocfilehash: a259cf276c0347fda4954b46318cc79be88028ee
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51332354"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62205211"
 ---
 # <a name="floating-point-migration-issues"></a>Kayan nokta geçiş sorunları
 
-Bazen projelerinizi Visual Studio'nun daha yeni bir sürüme yükseltme yaptığınızda, belirli bir kayan nokta işlemlerinin sonuçlarını değiştiğini fark edebilirsiniz. Bu genellikle iki nedenlerden biri gerçekleşir: kod oluşturma, daha iyi faydalanan kullanılabilir işlemci değiştirir ve hata düzeltmeleri veya matematik işlevleri (CRT) C Çalışma Zamanı Kitaplığı'nda kullanılan algoritmalar değiştirir. Genel olarak, yeni sonuçlar dil standardı tarafından belirlenen sınırlar içinde doğru olur. İşlevlerinizi aynı sonuçları almak nasıl, ne değiştirilir ve önemli olup olmadığını öğrenmek okuma, önce alındı.
+Bazen projelerinizi Visual Studio'nun daha yeni bir sürüme yükseltme yaptığınızda, belirli bir kayan nokta işlemlerinin sonuçlarını değiştiğini fark edebilirsiniz. Bu genellikle iki nedenlerden biri gerçekleşir: Matematik işlevleri (CRT) C Çalışma Zamanı Kitaplığı'nda kullanılan algoritmalar için daha iyi kullanılabilir işlemci ve hata düzeltmeleri veya değişiklikleri yararlanmak kod nesil değişikliği. Genel olarak, yeni sonuçlar dil standardı tarafından belirlenen sınırlar içinde doğru olur. İşlevlerinizi aynı sonuçları almak nasıl, ne değiştirilir ve önemli olup olmadığını öğrenmek okuma, önce alındı.
 
 ## <a name="new-math-functions-and-universal-crt-changes"></a>Yeni matematik işlevleri ve evrensel CRT değişiklikleri
 

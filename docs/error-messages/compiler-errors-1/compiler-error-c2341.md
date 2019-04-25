@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2341
 ms.assetid: aa2a7da5-e1c8-4225-9939-5bdc50158f31
 ms.openlocfilehash: 4356182758398fa7ed1ec6a069affa4bb99ace1a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50631692"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62188226"
 ---
 # <a name="compiler-error-c2341"></a>Derleyici Hatası C2341
 

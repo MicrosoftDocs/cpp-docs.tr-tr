@@ -7,11 +7,11 @@ helpviewer_keywords:
 - PRJ0027
 ms.assetid: 85d73a78-4b9e-4553-9f5d-2d76c48a790a
 ms.openlocfilehash: bc87ec33e78b9d45625432bd379b4ec7aeeecb52
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50555905"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62265363"
 ---
 # <a name="project-build-error-prj0027"></a>Proje Derleme Hatası PRJ0027
 

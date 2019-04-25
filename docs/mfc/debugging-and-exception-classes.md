@@ -8,11 +8,11 @@ helpviewer_keywords:
 - debugging [MFC], classes for debugging
 ms.assetid: 0d158efd-2e62-452e-9d2a-d3c30dfee7f9
 ms.openlocfilehash: 328d7a38c544b56f83ea3e8b1136b1122c4dfa14
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57271417"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62241194"
 ---
 # <a name="debugging-and-exception-classes"></a>Hata Ayıklama ve Özel Durum Sınıfları
 

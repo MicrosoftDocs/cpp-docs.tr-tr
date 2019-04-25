@@ -8,11 +8,11 @@ helpviewer_keywords:
 - ATL ASP components
 ms.assetid: 7be2204c-6e58-4099-8892-001b848c8987
 ms.openlocfilehash: 2f7ad08cb514e33224c877bcbf1c5e8128e26185
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57269844"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62261318"
 ---
 # <a name="adding-an-atl-active-server-page-component"></a>Bir ATL Active Server Page bileşeni ekleme
 

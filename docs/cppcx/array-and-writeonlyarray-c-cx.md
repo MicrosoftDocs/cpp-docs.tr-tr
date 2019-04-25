@@ -1,17 +1,17 @@
 ---
-title: Dizi ve WriteOnlyArray (C + +/ CX)
+title: Dizi ve WriteOnlyArray (C++/CX)
 ms.date: 01/22/2017
 ms.assetid: ef7cc5f9-cae6-4636-8220-f789e5b6aea4
 ms.openlocfilehash: fd616487bd3c11544f12e84a7dc64f41e63d501a
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57739420"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62209422"
 ---
-# <a name="array-and-writeonlyarray-ccx"></a>Dizi ve WriteOnlyArray (C + +/ CX)
+# <a name="array-and-writeonlyarray-ccx"></a>Dizi ve WriteOnlyArray (C++/CX)
 
-Normal C stili diziler serbestçe kullanabilirsiniz veya [std::array](../standard-library/array-class-stl.md) C + +/ CX programı (ancak [std::vector](../standard-library/vector-class.md) genellikle daha iyi bir seçimdir), ancak meta verilerinde de yayımlanmaktadır herhangi API'SİNDE, bir C tarzı dizi dönüştürmeniz gerekir ya için vektör bir [Platform::Array](../cppcx/platform-array-class.md) veya [Platform::WriteOnlyArray](../cppcx/platform-writeonlyarray-class.md) nasıl kullanıldığını bağlı olarak tür. [Platform::Array](../cppcx/platform-array-class.md) türüdür kadar verimli ne kadar güçlü [std::vector](../standard-library/vector-class.md), genel bir kural olarak dizi işlemleri çok sayıda gerçekleştirir, iç kod kullanımını kaçınmalısınız. öğeleri.
+Normal C stili diziler serbestçe kullanabilirsiniz veya [std::array](../standard-library/array-class-stl.md) içinde bir C++/CX program (ancak [std::vector](../standard-library/vector-class.md) genellikle daha iyi bir seçimdir), ancak meta verilerinde de yayımlanmaktadır herhangi API'SİNDE dönüştürmeniz gerekir bir C tarzı dizi ya için vektör bir [Platform::Array](../cppcx/platform-array-class.md) veya [Platform::WriteOnlyArray](../cppcx/platform-writeonlyarray-class.md) nasıl kullanıldığını bağlı olarak tür. [Platform::Array](../cppcx/platform-array-class.md) türüdür kadar verimli ne kadar güçlü [std::vector](../standard-library/vector-class.md), genel bir kural olarak dizi işlemleri çok sayıda gerçekleştirir, iç kod kullanımını kaçınmalısınız. öğeleri.
 
 Aşağıdaki dizi türleri arasında ABI geçirilebilir:
 
@@ -29,11 +29,11 @@ PassArray çağıran bir dizi yönteme başarılı olduğunda kullanılır. C++ 
 
 FillArray doldurmak bir yöntem için bir dizi çağırana başarılı olduğunda kullanılır. C++ giriş parametre türü hatalı [Platform::WriteOnlyArray](../cppcx/platform-writeonlyarray-class.md)\<T >.
 
-ReceiveArray çağıran yöntem ayıran bir dizi aldığında kullanılır. C + +/ CX dönüş değeri olarak bir dizi içinde dizi dönebilirsiniz ^ veya, bunu bir out parametresi dizi türü olarak dönebilirsiniz ^ *.
+ReceiveArray çağıran yöntem ayıran bir dizi aldığında kullanılır. İçinde C++/CX dönüş değeri olarak bir dizi içinde dizi dönebilirsiniz ^ veya, bunu bir out parametresi dizi türü olarak dönebilirsiniz ^ *.
 
 ## <a name="passarray-pattern"></a>PassArray düzeni
 
-İstemci kodu bir dizi C++ yönteme geçirir ve yöntem değiştirmez, yöntem dizi bir dizi const kabul eder. ^. Windows çalışma zamanı uygulama ikili arabiriminde (ABI) düzeyinde, bu bir PassArray bilinir. Sonraki örnek, ondan okuyan bir C++ işlev JavaScript dilinde ayrılan dizi geçirilecek gösterilmektedir.
+Ne zaman istemci kodu başarılı bir diziye bir C++ yöntemi ile yöntem değiştirmez, yöntem dizi bir dizi sabit kabul eder. ^. Windows çalışma zamanı uygulama ikili arabiriminde (ABI) düzeyinde, bu bir PassArray bilinir. Sonraki örnek, ondan okuyan bir C++ işlev JavaScript dilinde ayrılan dizi geçirilecek gösterilmektedir.
 
 [!code-javascript[cx_arrays#101](../cppcx/codesnippet/JavaScript/array-and-writeonlyarray-c-_1.js)]
 
@@ -91,4 +91,4 @@ Genel olarak kullanıma sunma kaçınmalısınız bir `Platform::Array` türü b
 
 [Tür Sistemi](../cppcx/type-system-c-cx.md)<br/>
 [Visual C++ Dil Başvurusu](../cppcx/visual-c-language-reference-c-cx.md)<br/>
-[Ad alanları başvurusu](../cppcx/namespaces-reference-c-cx.md)
+[Ad Alanları Başvurusu](../cppcx/namespaces-reference-c-cx.md)

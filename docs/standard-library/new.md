@@ -7,11 +7,11 @@ helpviewer_keywords:
 - new header
 ms.assetid: 218e2a15-34e8-4ef3-9122-1e90eccf8559
 ms.openlocfilehash: b6f1cc45f9666fc0fbd2332ac7bb7e539ec77cd3
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51520653"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62223655"
 ---
 # <a name="ltnewgt"></a>&lt;new&gt;
 

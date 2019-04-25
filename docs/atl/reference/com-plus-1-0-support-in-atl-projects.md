@@ -7,11 +7,11 @@ helpviewer_keywords:
 - ATL projects, COM+ 1.0 support
 ms.assetid: 51fb08ac-d632-4657-a4e0-d3f989f0b6f8
 ms.openlocfilehash: 39a3597b8df833d89942e31b361f791b14ceb8c9
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57292620"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62278481"
 ---
 # <a name="com-10-support-in-atl-projects"></a>COM + 1.0 ATL projelerinde desteği
 

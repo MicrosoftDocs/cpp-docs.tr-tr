@@ -6,11 +6,11 @@ helpviewer_keywords:
 - control flow, transferring control
 ms.assetid: aa51e7f2-060f-4106-b0fe-331f04357423
 ms.openlocfilehash: 1fc487628f26dcac097109bc71fa960e501d0797
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50469647"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62266822"
 ---
 # <a name="transfers-of-control"></a>Denetim Taşıma
 

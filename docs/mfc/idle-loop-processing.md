@@ -17,11 +17,11 @@ helpviewer_keywords:
 - background processing [MFC]
 ms.assetid: 5c7c46c1-6107-4304-895f-480983bb1e44
 ms.openlocfilehash: 0d0e3fcba9ce447ec359958fc5ed59c6d596dd7a
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57287154"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62219496"
 ---
 # <a name="idle-loop-processing"></a>Boşta Çevrim İşleme
 

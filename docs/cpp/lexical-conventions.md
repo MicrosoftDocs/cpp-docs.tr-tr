@@ -7,11 +7,11 @@ helpviewer_keywords:
 - conventions, lexical
 ms.assetid: 03f9efff-bb95-45ef-9157-0a3fac809ccf
 ms.openlocfilehash: 92ab9319ece7ed995cf8a2e49983e0ab92ef83cb
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50498949"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62216401"
 ---
 # <a name="lexical-conventions"></a>Sözcük Kuralları
 

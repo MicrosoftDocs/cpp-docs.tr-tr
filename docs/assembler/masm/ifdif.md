@@ -7,11 +7,11 @@ helpviewer_keywords:
 - IFDIF[[I]] directive
 ms.assetid: b85a553c-9098-4a57-a24f-596456eefa1c
 ms.openlocfilehash: 6e5c8f05ecc2a7abbd0facdfba8e3ab8bcfe66b3
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50601805"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62202966"
 ---
 # <a name="ifdif"></a>IFDIF]
 

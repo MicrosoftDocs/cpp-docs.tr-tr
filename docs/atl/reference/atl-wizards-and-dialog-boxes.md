@@ -5,11 +5,11 @@ helpviewer_keywords:
 - ATL, class wizards
 ms.assetid: 51cf002a-83bc-41ba-aeb8-364ea2331375
 ms.openlocfilehash: 1eea4e86d453939f5ba1bdda47906768c8012ba6
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57275889"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62247763"
 ---
 # <a name="atl-wizards-and-dialog-boxes"></a>ATL sihirbazları ve iletişim kutuları
 

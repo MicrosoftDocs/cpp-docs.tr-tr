@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3084
 ms.assetid: 0362cb70-e24e-476f-a24d-8f5bb97c3afd
 ms.openlocfilehash: 01e229fe0ae5bf9e04c577bb653ff1ed7fdb33bf
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59778169"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62243290"
 ---
 # <a name="compiler-error-c3084"></a>Derleyici Hatası C3084
 

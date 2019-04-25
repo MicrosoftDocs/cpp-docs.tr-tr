@@ -13,11 +13,11 @@ helpviewer_keywords:
 - stock properties
 ms.assetid: 37bd4db7-efd3-4faa-87ad-64902ed16a36
 ms.openlocfilehash: 06940bb72f9113e0a8148e15418504b35fc95099
-ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51694263"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62226274"
 ---
 # <a name="add-a-property"></a>Özellik ekleme
 

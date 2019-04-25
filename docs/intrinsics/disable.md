@@ -10,11 +10,11 @@ helpviewer_keywords:
 - disable intrinsic
 ms.assetid: 52da3df9-815c-4524-9839-6d1742cff5c6
 ms.openlocfilehash: 93db063c6b53f0bec739ba134728b83379a21f53
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59024689"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62264172"
 ---
 # <a name="disable"></a>_disable
 

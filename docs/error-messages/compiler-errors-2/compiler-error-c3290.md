@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3290
 ms.assetid: 0baf684b-1143-4953-ac99-a2fa267d8017
 ms.openlocfilehash: f2a346354d8da7d78c5517b01b4438bfb8af50ad
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59776346"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62222713"
 ---
 # <a name="compiler-error-c3290"></a>Derleyici Hatası C3290
 

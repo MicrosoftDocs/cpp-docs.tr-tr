@@ -8,11 +8,11 @@ helpviewer_keywords:
 - MASM (Microsoft Macro Assembler), documentation overview
 ms.assetid: 1446d55f-e2e7-4fd1-a9b8-b15cf7d4e47c
 ms.openlocfilehash: 5b74eef1799dd5f9fae8f2a6aceeb79a115ce837
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58777876"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62202230"
 ---
 # <a name="microsoft-macro-assembler-reference"></a>Microsoft Macro Assembler Başvurusu
 

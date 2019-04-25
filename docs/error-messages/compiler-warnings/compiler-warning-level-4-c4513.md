@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C4513
 ms.assetid: 6877334a-f30a-4184-9483-dac3348737a4
 ms.openlocfilehash: cbde035a988e5f6ac64303b2ed159b885ece8684
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50520087"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62221069"
 ---
 # <a name="compiler-warning-level-4-c4513"></a>Derleyici Uyarısı (düzey 4) C4513
 

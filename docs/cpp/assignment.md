@@ -6,11 +6,11 @@ helpviewer_keywords:
 - assignment operators [C++], overloaded
 ms.assetid: d87e4f89-f8f5-42c1-9d3c-184bca9d0e15
 ms.openlocfilehash: 1e6d715011cfaab7e250e23a9a31bb3f0c83f36a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50603446"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62184345"
 ---
 # <a name="assignment"></a>Atama
 

@@ -12,11 +12,11 @@ helpviewer_keywords:
 - containers [MFC], OLE container applications
 ms.assetid: 1e27e1ab-4c22-41eb-8547-6915c72668ae
 ms.openlocfilehash: 87db824e5ab4daec15870b245ea8341be7442109
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57292568"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62186016"
 ---
 # <a name="ole-container-classes"></a>OLE Kapsayıcı Sınıfları
 

@@ -7,11 +7,11 @@ helpviewer_keywords:
 - external linkage
 ms.assetid: a6f8ea69-b405-4cdd-bf12-ad5462b73183
 ms.openlocfilehash: 35b0fda1f501755640123f5181454a5c36b7e986
-ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56148783"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62233747"
 ---
 # <a name="external-linkage"></a>Dış Bağlantı
 

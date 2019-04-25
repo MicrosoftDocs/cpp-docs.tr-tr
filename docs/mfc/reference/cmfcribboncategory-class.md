@@ -131,11 +131,11 @@ helpviewer_keywords:
 - CMFCRibbonCategory [MFC], SetTabColor
 ms.assetid: 99ba25b6-d060-4fdd-bfab-3c46c22981bb
 ms.openlocfilehash: 14ce057c141f22c14361bafd55fce3ccd345d4dd
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57279477"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62237410"
 ---
 # <a name="cmfcribboncategory-class"></a>CMFCRibbonCategory sınıfı
 

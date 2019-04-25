@@ -8,11 +8,11 @@ helpviewer_keywords:
 - operator ||
 ms.assetid: 50b15b63-649c-4bcf-a663-a10ee3cb3db6
 ms.openlocfilehash: def4356f8d4d9f46c25e73944edf1a689933a4e7
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50677714"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62199984"
 ---
 # <a name="operator-"></a>|| işleci
 

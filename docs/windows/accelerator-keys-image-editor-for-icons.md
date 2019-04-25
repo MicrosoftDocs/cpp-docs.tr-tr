@@ -9,11 +9,11 @@ helpviewer_keywords:
 - Image editor [C++], accelerator keys
 ms.assetid: add37861-3e17-4a6f-89e8-46df12e74a90
 ms.openlocfilehash: 45afdf4b3b557b560d7597b1bb4330c36a1fc84d
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59025091"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62204816"
 ---
 # <a name="accelerator-keys-c-image-editor-for-icons"></a>Hızlandırma tuşları (simgeler için görüntü Düzenleyicisi C++)
 

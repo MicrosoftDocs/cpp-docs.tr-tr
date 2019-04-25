@@ -7,11 +7,11 @@ helpviewer_keywords:
 - D9036
 ms.assetid: 68276e84-8d4e-4d4a-a9db-2874c81dfe66
 ms.openlocfilehash: 2dd6cd528f6a3799176c77435ebd62d103303806
-ms.sourcegitcommit: 6990f842fefc27b522b15cf352f3517b319d78da
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53248539"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62213802"
 ---
 # <a name="command-line-warning-d9036"></a>Komut Satırı Uyarısı D9036
 

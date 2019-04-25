@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3463
 ms.assetid: 153efcc0-085c-4615-84ea-d22942618bdf
 ms.openlocfilehash: a0c7772291085bcd872cbc1ca23b79d2fa829ad9
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50448678"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62222356"
 ---
 # <a name="compiler-error-c3463"></a>Derleyici Hatası C3463
 

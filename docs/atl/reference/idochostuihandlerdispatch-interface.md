@@ -8,11 +8,11 @@ helpviewer_keywords:
 - IDocHostUIHandlerDispatch interface
 ms.assetid: 6963a301-601a-4ac3-8bef-f7b252ea2fc6
 ms.openlocfilehash: 6ce3532e99dc1d0ff0151285766aa5d78c2b9e9d
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57421888"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62275314"
 ---
 # <a name="idochostuihandlerdispatch-interface"></a>Idochostuıhandlerdispatch arabirimi
 

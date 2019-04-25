@@ -12,11 +12,11 @@ helpviewer_keywords:
 - connection points [C++], notifying of events
 ms.assetid: eb7a563e-6bce-4cdf-8d20-8c6a5307781b
 ms.openlocfilehash: 493bc00708d031f1bf7a4eb74d56e927a9c3f1dd
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57277163"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62245497"
 ---
 # <a name="cfirepropnotifyevent-class"></a>CFirePropNotifyEvent Class
 

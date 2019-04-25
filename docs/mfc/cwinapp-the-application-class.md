@@ -15,11 +15,11 @@ helpviewer_keywords:
 - CWinApp class [MFC], WinMain
 ms.assetid: 935822bb-d463-481b-a5f6-9719d68ed1d5
 ms.openlocfilehash: d9f0d4f5ba6b6b070b23ce98ecda8c7accf44934
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57258716"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62241568"
 ---
 # <a name="cwinapp-the-application-class"></a>CWinApp: Uygulama sınıfı
 

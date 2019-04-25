@@ -14,11 +14,11 @@ helpviewer_keywords:
 - _IONBF constant
 ms.assetid: a6ec4dd5-1f24-498c-871a-e874cd28d33c
 ms.openlocfilehash: 28c9debf7e51d06cb9a625bb0a52d578ce3142c6
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57742646"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62268930"
 ---
 # <a name="setvbuf-constants"></a>setvbuf Sabitleri
 

@@ -9,11 +9,11 @@ helpviewer_keywords:
 - operator LOW32
 ms.assetid: e552641c-e5be-4ce6-91ea-1ebad912ecab
 ms.openlocfilehash: 6eef57769f273f6073324d939bda7db8ca7f66fe
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50487145"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62201126"
 ---
 # <a name="operator-low32"></a>işleç LOW32
 

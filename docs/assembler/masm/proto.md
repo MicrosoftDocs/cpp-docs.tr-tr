@@ -7,11 +7,11 @@ helpviewer_keywords:
 - PROTO directive
 ms.assetid: 0487ee16-9dc7-43d1-9445-cd1601f5a080
 ms.openlocfilehash: 616b6be2a5c191ebc67d61288cb5fa6c183091fa
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50536743"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62210527"
 ---
 # <a name="proto"></a>PROTO
 
@@ -34,7 +34,7 @@ Prototipli işlev adı.
 
 - 32-bit **DÜZ** modeli: **C**, **STDCALL**
 
-- 16-bit modelleri: **C**, **temel**, **FORTRAN**, **PASCAL**, **SYSCALL**, **STDCALL**
+- 16-bit modelleri: **C**, **BASIC**, **FORTRAN**, **PASCAL**, **SYSCALL**, **STDCALL**
 
 *Parametre*<br/>
 Bir işlev parametresi için isteğe bağlı adı.

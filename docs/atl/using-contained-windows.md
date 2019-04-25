@@ -7,11 +7,11 @@ helpviewer_keywords:
 - contained windows in ATL
 ms.assetid: 7b3d79e5-b569-413f-9b98-df4f14efbe2b
 ms.openlocfilehash: 2b9a36c6aac80a7c77cde102d6da93c51788e4e1
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57295155"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62198609"
 ---
 # <a name="using-contained-windows"></a>Kapsanan bir Windows kullanma
 

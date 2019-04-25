@@ -11,15 +11,15 @@ helpviewer_keywords:
 - exporting DLLs [C++], __declspec(dllexport) keyword
 ms.assetid: a35e25e8-7263-4a04-bad4-00b284458679
 ms.openlocfilehash: 3b6b9733776f30fc8dcbfeee709b7d24e0f0187b
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57810243"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62195322"
 ---
 # <a name="exporting-from-a-dll-using-declspecdllexport"></a>__declspec(dllexport) Kullanarak DLL'den Dışarı Aktarma
 
-Microsoft gelen **__export** derleyicinin, dışa aktarma adlarını otomatik olarak oluşturmak ve bunları .lib dosyasına yerleştirmek Visual C++ 16 bitlik derleyici sürümü. Bu .lib dosyası daha sonra yalnızca statik bir .lib gibi bir DLL ile bağlamak için kullanılabilir.
+Microsoft gelen **__export** Visual 16-bit derleyici sürümü C++ derleyicinin, dışa aktarma adlarını otomatik olarak oluşturmak ve bunları .lib dosyasına yerleştirin. Bu .lib dosyası daha sonra yalnızca statik bir .lib gibi bir DLL ile bağlamak için kullanılabilir.
 
 Yeni derleyici sürümlerinde, veri, İşlevler, sınıflar veya sınıf üyesi işlevleri kullanarak bir DLL'nin dışa aktarabilirsiniz **__declspec(dllexport)** anahtar sözcüğü. **__declspec(dllexport)** bir .def dosyası kullanmanıza gerek yoktur nesne dosyasına dışarı aktarma yönergesi ekler.
 
@@ -68,7 +68,7 @@ Bir başvuru, Win32 Winbase.h üstbilgi dosyasında arayın. Örnekler içeren *
 
 - [Hangi dışa aktarma yönteminin kullanılacağını belirleme](determining-which-exporting-method-to-use.md)
 
-- [__Declspec(dllimport) kullanarak bir uygulamayı içeri aktarın](importing-into-an-application-using-declspec-dllimport.md)
+- [__declspec(dllimport) kullanarak bir uygulamaya aktarma](importing-into-an-application-using-declspec-dllimport.md)
 
 - [DLL'yi Başlat](run-time-library-behavior.md#initializing-a-dll)
 
@@ -76,7 +76,7 @@ Bir başvuru, Win32 Winbase.h üstbilgi dosyasında arayın. Örnekler içeren *
 
 - [__Declspec anahtar sözcüğü](../cpp/declspec.md)
 
-- [İçeri ve dışarı aktarma satır içi işlevler](importing-and-exporting-inline-functions.md)
+- [Satır içi işlevleri içeri ve dışarı aktarma](importing-and-exporting-inline-functions.md)
 
 - [Karşılıklı içeri aktarmalar](mutual-imports.md)
 

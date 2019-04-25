@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C1197
 ms.assetid: 22b801b7-e792-41f6-a461-973c03c69f25
 ms.openlocfilehash: e1c00a001c807b0cc6a5946b61ca4e9d5dc0167a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50604158"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62229130"
 ---
 # <a name="fatal-error-c1197"></a>Önemli hata C1197
 

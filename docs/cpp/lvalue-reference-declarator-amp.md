@@ -8,11 +8,11 @@ helpviewer_keywords:
 - '& operator [C++], reference operator'
 ms.assetid: edf0513d-3dcc-4663-b276-1269795dda51
 ms.openlocfilehash: 7710b6f1efc2de770b26ad50923bde2ee5200f61
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50568176"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62209560"
 ---
 # <a name="lvalue-reference-declarator-amp"></a>Lvalue başvuru Bildirimcisi: &amp;
 

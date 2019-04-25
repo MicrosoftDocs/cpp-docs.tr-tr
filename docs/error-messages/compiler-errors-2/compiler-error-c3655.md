@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3655
 ms.assetid: 724919ab-2915-4b61-8794-44648e162d62
 ms.openlocfilehash: 7a13d4d7c08f6510e5ab71c07c31baa9359b47b7
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59779001"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62227128"
 ---
 # <a name="compiler-error-c3655"></a>Derleyici Hatası C3655
 

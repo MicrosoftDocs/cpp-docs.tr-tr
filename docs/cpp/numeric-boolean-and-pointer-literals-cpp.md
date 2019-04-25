@@ -7,11 +7,11 @@ helpviewer_keywords:
 - literals [C++]
 ms.assetid: 17c09fc3-3ad7-47e2-8b48-ba8ae994edc8
 ms.openlocfilehash: f263e9a2ed357cdc80ec29fc5d1b6d58c9e093e4
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50545801"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62245108"
 ---
 # <a name="numeric-boolean-and-pointer-literals--c"></a>Sayısal, Boole ve işaretçi değişmez değerleri (C++)
 
@@ -71,7 +71,7 @@ auto val_4 = 108LL;                           // signed long long
 auto val_4 = 0x8000000000000000ULL << 16;     // unsigned long long
 ```
 
-**Rakam ayırıcıları**: bunları insanlar okunmasını kolaylaştırmak için daha büyük sayılar değerlerde yer ayırmak için tek tırnak işareti karakteri (kesme işareti) kullanabilirsiniz. Ayırıcılar derleme üzerinde etkisi yoktur.
+**Rakam ayırıcıları**: Okunacak insanlar daha kolay hale getirmek için daha büyük sayılar değerlerde yer ayırmak için tek tırnak işareti karakteri (kesme işareti) kullanabilirsiniz. Ayırıcılar derleme üzerinde etkisi yoktur.
 
 ```cpp
 long long i = 24'847'458'121

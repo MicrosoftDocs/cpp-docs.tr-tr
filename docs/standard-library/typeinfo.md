@@ -7,11 +7,11 @@ helpviewer_keywords:
 - typeinfo header
 ms.assetid: 97ebc4d0-0e0e-41c3-9787-fdef2e38e56f
 ms.openlocfilehash: ee075240725e23c43939dc646c2201cedf379056
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51517521"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62278702"
 ---
 # <a name="lttypeinfogt"></a>&lt;typeinfo&gt;
 

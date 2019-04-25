@@ -28,11 +28,11 @@ helpviewer_keywords:
 - _memicmp_l function
 ms.assetid: 0a6eb945-4077-4f84-935d-1aaebe8db8cb
 ms.openlocfilehash: 8beb632c8bd2cfac486fc58fc930b94490bdecbc
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50636819"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62285280"
 ---
 # <a name="memicmp-memicmpl"></a>_memicmp, _memicmp_l
 

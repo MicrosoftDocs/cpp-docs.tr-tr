@@ -9,17 +9,17 @@ helpviewer_keywords:
 - __BOOL_DEFINED macro
 ms.assetid: 9abed3f2-d21c-4eb4-97c5-716342e613d8
 ms.openlocfilehash: e481cb9de7c80d147179efceab2fda9b160f3c21
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50638132"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62184292"
 ---
 # <a name="bool-c"></a>bool (C++)
 
 Bu anahtar sözcük yerleşik bir türdür. Bu türden bir değişkene değerler olabilir [true](../cpp/true-cpp.md) ve [false](../cpp/false-cpp.md). Koşullu ifadeler **bool** ve bu nedenle türünde değerlere sahiptir **bool**. Örneğin, `i!=0` TRUE veya FALSE değerini bağlı olarak sunuyor `i`.
 
-**Visual Studio 2017 sürüm 15.3 ve üzeri** (bulunan [/Std: c ++ 17](../build/reference/std-specify-language-standard-version.md)): işlenen işleci bir sonek veya önek artırma veya azaltma türü olmayabilir **bool**. Diğer bir deyişle, bir değişken verilen `b` türü **bool**, bu deyimler artık izin verilmiyor:
+**Visual Studio 2017 sürüm 15.3 ve üzeri** (bulunan [/Std: c ++ 17](../build/reference/std-specify-language-standard-version.md)): İşlenen bir sonek veya önek artırma veya azaltma işleci türü olmayabilir **bool**. Diğer bir deyişle, bir değişken verilen `b` türü **bool**, bu deyimler artık izin verilmiyor:
 
 ```cpp
     b++;

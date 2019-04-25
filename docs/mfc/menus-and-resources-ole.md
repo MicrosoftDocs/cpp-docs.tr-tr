@@ -19,11 +19,11 @@ helpviewer_keywords:
 - OLE menus and resources [MFC]
 ms.assetid: 52bfa086-7d3d-466f-94c7-c7061f3bdb3a
 ms.openlocfilehash: 4e8f8c7fa8e24349a741b99822f13d5473373e17
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57268531"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62225473"
 ---
 # <a name="menus-and-resources-ole"></a>Menüler ve Kaynaklar (OLE)
 

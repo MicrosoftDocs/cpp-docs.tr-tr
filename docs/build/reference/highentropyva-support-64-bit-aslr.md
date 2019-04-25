@@ -3,11 +3,11 @@ title: /HIGHENTROPYVA (64 Bit ASLR Destekle)
 ms.date: 06/12/2018
 ms.assetid: fe35f9f7-d28e-4694-9aeb-a79db06168e0
 ms.openlocfilehash: 5ecbbf8bbd8e74f80f2f5b2d7df0d2ef544112fc
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57822008"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62291606"
 ---
 # <a name="highentropyva-support-64-bit-aslr"></a>/HIGHENTROPYVA (64 Bit ASLR Destekle)
 
@@ -36,7 +36,7 @@ Varsayılan olarak, **/highentropyva** 64-bit yürütülebilir resimler için et
 ## <a name="see-also"></a>Ayrıca bkz.
 
 - [MSVC bağlayıcı başvurusu](linking.md)
-- [MSVC bağlayıcı seçenekleri](linker-options.md)
+- [MSVC Bağlayıcı Seçenekleri](linker-options.md)
 - [/DYNAMICBASE](dynamicbase-use-address-space-layout-randomization.md)
 - [/LARGEADDRESSAWARE](largeaddressaware-handle-large-addresses.md)
 - [ISV yazılım güvenlik Savunmaları Windows](https://msdn.microsoft.com/library/bb430720.aspx)

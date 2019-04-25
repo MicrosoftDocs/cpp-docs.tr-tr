@@ -24,11 +24,11 @@ helpviewer_keywords:
 - purecall function
 ms.assetid: 56135d9b-3403-4e22-822d-e714523801cc
 ms.openlocfilehash: a7a6db42dc4b8d9b2962a66c7866aae9db55eb3b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50541197"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62231981"
 ---
 # <a name="purecall"></a>_purecall
 
@@ -42,7 +42,7 @@ extern "C" int __cdecl _purecall();
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Purecall** işlev, Microsoft Visual C++ derleyicisi, Microsoft'a özgü bir uygulama ayrıntısı. Bu işlev kodunuz tarafından doğrudan çağrılması amaçlanmamıştır ve hiçbir ortak üstbilgi bildirimi sahiptir. C çalışma zamanı kitaplığı, ortak bir dışarı aktarma olduğundan burada belgelenmektedir.
+**_Purecall** işlev, Microsoft Visual Microsoft'a özgü uygulama ayrıntılarını C++ derleyici. Bu işlev kodunuz tarafından doğrudan çağrılması amaçlanmamıştır ve hiçbir ortak üstbilgi bildirimi sahiptir. C çalışma zamanı kitaplığı, ortak bir dışarı aktarma olduğundan burada belgelenmektedir.
 
 Uygulaması olduğundan saf sanal işlev çağrısı bir hata var. Derleyici çağırmak için kod oluşturur **_purecall** saf sanal işlevi çağrıldığında hata işleyicisi işlevi. Varsayılan olarak, **_purecall** programını sonlandırır. Sonlandırma önce **_purecall** işlevi çağıran bir **_purecall_handler** bir işlem için ayarlanmışsa işlev. Hata ayıklama veya raporlama amacıyla bunları yakalamak için saf sanal işlev çağrıları, kendi hata işleyici işlevi yükleyebilirsiniz. Kendi hata işleyicisi kullanacak şekilde sahip bir işlev oluşturma **_purecall_handler** imzası, ardından [_set_purecall_handler](get-purecall-handler-set-purecall-handler.md) geçerli işleyici yapma.
 

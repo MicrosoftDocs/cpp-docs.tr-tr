@@ -9,11 +9,11 @@ helpviewer_keywords:
 - memory header
 ms.assetid: ef8e38da-7c9d-4037-9ad1-20c99febf5dc
 ms.openlocfilehash: c63421995fdabc94a7e6495df8d9937049dbba9d
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51521941"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62217345"
 ---
 # <a name="ltmemorygt"></a>&lt;Bellek&gt;
 
@@ -72,7 +72,7 @@ Bir sınıfı, işleci ve nesneleri ayırmaya ve serbest bırakmaya yardımcı �
 
 |örneği|Açıklama|
 |-|-|
-|[Ayırıcı](../standard-library/allocator-class.md)|Şablon sınıfı türünde nesne dizileri için depolama ayırmayı ve boşaltmayı yöneten bir nesneyi tanımlayan **türü**.|
+|[allocator](../standard-library/allocator-class.md)|Şablon sınıfı türünde nesne dizileri için depolama ayırmayı ve boşaltmayı yöneten bir nesneyi tanımlayan **türü**.|
 |[allocator_traits](../standard-library/allocator-traits-class.md)|Ayırıcı tarafından etkinleştirilen kapsayıcı tarafından gerek duyulan bilgilerin tamamını belirleyen nesneyi tanımlar.|
 |[auto_ptr](../standard-library/auto-ptr-class.md)|Şablon sınıfı türünün ayrılmış bir nesneye yönelik bir işaretçi depolayan nesneyi tanımlar **türü** <strong>\*</strong> nesne için hangi BT silindiğinde işaret ettiği, kapsayan auto_ptr alır sağlar yok.|
 |[bad_weak_ptr](../standard-library/bad-weak-ptr-class.md)|Bozuk weak_ptr özel durumunu raporlar.|

@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2334
 ms.assetid: 36142855-e00b-4bbf-80f5-a301edeff46e
 ms.openlocfilehash: 4f068792193fd22ccddc39f9afc555e7c8672d8c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50512986"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62188375"
 ---
 # <a name="compiler-error-c2334"></a>Derleyici Hatası C2334
 

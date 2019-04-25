@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3508
 ms.assetid: 16d08f89-2f32-44eb-9421-68acecddf49b
 ms.openlocfilehash: 1d868a8f7ab8a69054844c5c8e101d661e295a37
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50538963"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62187371"
 ---
 # <a name="compiler-error-c3508"></a>Derleyici Hatası C3508
 

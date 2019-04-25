@@ -22,11 +22,11 @@ helpviewer_keywords:
 - /Gr compiler option [C++]
 ms.assetid: fd3110cb-2d77-49f2-99cf-a03f9ead00a3
 ms.openlocfilehash: 7c4f7e6edb020f5c8d2abf80f14df33e18a915c5
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57817471"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62270958"
 ---
 # <a name="gd-gr-gv-gz-calling-convention"></a>/Gd, /Gr, /Gv, /Gz (Çağırma Kuralı)
 
@@ -41,7 +41,7 @@ Bu seçenekler çağıran işlevin veya çağrılan işlevin çağrının sonund
 
 ## <a name="remarks"></a>Açıklamalar
 
-**/Gd**, varsayılan ayar belirtir [__cdecl](../../cpp/cdecl.md) C++ üye hariç tüm işlevler için işlev ve işaretli işlevler çağırma kuralı [__stdcall](../../cpp/stdcall.md), [__ Fastcall](../../cpp/fastcall.md), veya [__vectorcall](../../cpp/vectorcall.md).
+**/Gd**, varsayılan ayar belirtir [__cdecl](../../cpp/cdecl.md) hariç tüm işlevler çağırma kuralını C++ üye işlevleri ve işaretli işlevler [__stdcall](../../cpp/stdcall.md), [__fastcall](../../cpp/fastcall.md), veya [__vectorcall](../../cpp/vectorcall.md).
 
 **Gr** belirtir `__fastcall` C++ üye işlevleri hariç tüm işlevler için çağırma kuralı, İşlevler adlı `main`ve işaretli işlevler `__cdecl`, `__stdcall`, veya `__vectorcall`. Tüm `__fastcall` işlevleri prototiplere sahip olmalıdır. Bu çağırma kuralı yalnızca x86 hedefleyen derleyicilerde kullanılabilir ve diğer mimarileri hedefleyen derleyiciler tarafından göz ardı edilir.
 
@@ -54,7 +54,7 @@ Değişken sayıda bağımsız değişkenler almayan işlevleri işaretlenmelidi
 **/Gd**, **GR**, **GV** ve **/Gz** ile uyumlu [/CLR: safe](clr-common-language-runtime-compilation.md) veya   **/CLR: pure**. **/CLR: pure** ve **/CLR: safe** derleyici seçenekleri Visual Studio 2015'te kullanım dışı ve Visual Studio 2017'de desteklenmiyor.
 
 > [!NOTE]
-> X86 için varsayılan olarak C++ üye işlevleri işlemci kullanan [__thiscall](../../cpp/thiscall.md).
+> X86 için varsayılan olarak işlemciler C++ üye işlevleri kullanmak [__thiscall](../../cpp/thiscall.md).
 
 Tüm işlemciler için açıkça olarak işaretlenen bir üye işlev `__cdecl`, `__fastcall`, `__vectorcall`, veya `__stdcall` o mimaride yok sayılmıyorsa belirli çağrı kuralını kullanır. Değişken sayıda bağımsız değişken kullanan her zaman alan bir üye işlev `__cdecl` çağırma kuralı.
 
@@ -111,5 +111,5 @@ C'de, `__vectorcall` adlandırma kuralı iki et işareti işlevi adından kullan
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [MSVC derleyici seçenekleri](compiler-options.md)
-- [MSVC derleyici komut satırı sözdizimi](compiler-command-line-syntax.md)
+- [MSVC Derleyicisi Seçenekleri](compiler-options.md)
+- [MSVC Derleyicisi Komut Satırı Söz Dizimi](compiler-command-line-syntax.md)

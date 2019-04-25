@@ -17,11 +17,11 @@ helpviewer_keywords:
 - Windows handle maps [C++]
 ms.assetid: ad14cc70-c91c-4c24-942f-13a75e58bf8a
 ms.openlocfilehash: e89d0d534638f7216f142bc3f86633a59b8b0ff7
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57290812"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62212437"
 ---
 # <a name="multithreading-mfc-programming-tips"></a>Çoklu iş parçacığı kullanımı: MFC programlama ipuçları
 

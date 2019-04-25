@@ -15,11 +15,11 @@ helpviewer_keywords:
 - concurrent_unordered_map class
 ms.assetid: b2d879dd-87ef-4af9-a266-a5443fd538b8
 ms.openlocfilehash: 43ad777b0dfb1285a82d662f37329c079410c78d
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57284352"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62262573"
 ---
 # <a name="concurrentunorderedmap-class"></a>concurrent_unordered_map Sınıfı
 

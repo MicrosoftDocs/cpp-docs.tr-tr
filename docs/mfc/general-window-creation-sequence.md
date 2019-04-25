@@ -8,11 +8,11 @@ helpviewer_keywords:
 - sequence [MFC]
 ms.assetid: 9cd8c7ea-5e24-429e-b6d9-d7b6041d8ba6
 ms.openlocfilehash: 949cf72910654b502ca4b57be72bedc2db63c315
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57269233"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62219575"
 ---
 # <a name="general-window-creation-sequence"></a>Genel Pencere Oluşturma Dizisi
 
@@ -20,7 +20,7 @@ Bir pencerenin kendi gibi bir alt pencere oluşturduğunuzda, framework kadar ay
 
 MFC kullanan tarafından sağlanan tüm pencere sınıflarının [iki aşamalı yapımı](../mfc/one-stage-and-two-stage-construction-of-objects.md). Diğer bir deyişle, C++'ın bir çağrı sırasında **yeni** işleci, oluşturucu ayırır ve bir C++ nesnesi başlatır ancak karşılık gelen bir Windows penceresi oluşturmaz. Bu yapılır sonradan çağırarak [Oluştur](../mfc/reference/cwnd-class.md#create) pencere nesnesi üye işlevi.
 
-`Create` Windows penceresi üye işlevini sağlar ve depolar, `HWND` C++ nesnesinin genel veri üyesi içinde [m_hWnd](../mfc/reference/cwnd-class.md#m_hwnd). `Create` size esneklik oluşturma parametreleri tamamlayın. Çağırmadan önce `Create`, pencere sınıfı ile genel işlev kaydetmek isteyebilirsiniz [AfxRegisterWndClass](../mfc/reference/application-information-and-management.md#afxregisterwndclass) çerçevesi için simge ve sınıf stilleri ayarlamak için.
+`Create` Windows penceresi üye işlevini sağlar ve depolar, `HWND` içinde C++ nesnenin ortak veri üyesi [m_hWnd](../mfc/reference/cwnd-class.md#m_hwnd). `Create` size esneklik oluşturma parametreleri tamamlayın. Çağırmadan önce `Create`, pencere sınıfı ile genel işlev kaydetmek isteyebilirsiniz [AfxRegisterWndClass](../mfc/reference/application-information-and-management.md#afxregisterwndclass) çerçevesi için simge ve sınıf stilleri ayarlamak için.
 
 Çerçeve pencereleri için kullanabileceğiniz [LoadFrame](../mfc/reference/cframewnd-class.md#loadframe) üye işlevi yerine `Create`. `LoadFrame` daha az parametre kullanılarak Windows penceresi sağlar. Çerçevenin başlık, simgesi, Hızlandırıcı tablosu ve menü gibi kaynaklardan birçok varsayılan değerleri alır.
 

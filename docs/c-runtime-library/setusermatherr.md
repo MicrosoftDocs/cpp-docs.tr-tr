@@ -19,11 +19,11 @@ helpviewer_keywords:
 - __setusermatherr
 ms.assetid: f306818d-381a-4d68-8739-71b92bacb5ea
 ms.openlocfilehash: 116abd203cc289c63535a8e41a005a6fd248b08b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50640472"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62268687"
 ---
 # <a name="setusermatherr"></a>__setusermatherr
 

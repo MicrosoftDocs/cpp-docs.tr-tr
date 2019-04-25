@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2105
 ms.assetid: 19b7f7bc-a9da-4d23-8193-005b6d09274f
 ms.openlocfilehash: d47ee2815a3ba5609fcdc6b7312ac8c6187ec861
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50631770"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62266614"
 ---
 # <a name="compiler-error-c2105"></a>Derleyici Hatası C2105
 

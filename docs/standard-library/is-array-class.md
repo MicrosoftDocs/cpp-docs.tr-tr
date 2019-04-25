@@ -8,11 +8,11 @@ helpviewer_keywords:
 - is_array
 ms.assetid: 61fb2201-8de3-4746-9721-617f02df170f
 ms.openlocfilehash: daaa4faa82dba7f98a6636cc06b2637534cfc99b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50544852"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62252720"
 ---
 # <a name="isarray-class"></a>is_array Sınıfı
 

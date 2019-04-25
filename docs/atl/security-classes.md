@@ -6,11 +6,11 @@ helpviewer_keywords:
 - security classes [C++]
 ms.assetid: 0477f1a4-c1af-4c4f-bbca-08f7b844e028
 ms.openlocfilehash: 80c688baa1741e03a9f32a8ee1725c0091bbf8ab
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57275331"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62197658"
 ---
 # <a name="security-classes"></a>Güvenlik sınıfları
 

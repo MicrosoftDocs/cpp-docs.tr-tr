@@ -14,11 +14,11 @@ helpviewer_keywords:
 - stderr function
 ms.assetid: badd4735-596d-4498-857c-ec8b7e670e4c
 ms.openlocfilehash: 5de1ff01282f30ad133f909cb87f5d7c8d521ae5
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57741954"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62267760"
 ---
 # <a name="stdin-stdout-stderr"></a>stdin, stdout, stderr
 

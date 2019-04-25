@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2001
 ms.assetid: 0c3a7821-d8e5-4398-ab5a-4116d46e8dda
 ms.openlocfilehash: 03b54fe2373063c8c0f9905da93822928392998d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50596371"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62209029"
 ---
 # <a name="compiler-error-c2001"></a>Derleyici Hatası C2001
 

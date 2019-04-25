@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C4227
 ms.assetid: 78f98374-c00b-4000-aefa-1b1c67b4666b
 ms.openlocfilehash: a93b7f225149f9b557ad6238376ffd1bafec82d3
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50550312"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62207544"
 ---
 # <a name="compiler-warning-level-1-c4227"></a>Derleyici Uyarısı (düzey 1) C4227
 

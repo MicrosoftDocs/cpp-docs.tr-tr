@@ -6,11 +6,11 @@ helpviewer_keywords:
 - composite controls, containers for
 ms.assetid: 5c1541f8-f6cb-4c22-bd22-c66bcfbaa077
 ms.openlocfilehash: 28d976aba48521df1429b27bb20b8277b72166ba
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57295441"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62223176"
 ---
 # <a name="building-and-testing-the-atl-project"></a>Oluşturma ve ATL projesinde test etme
 

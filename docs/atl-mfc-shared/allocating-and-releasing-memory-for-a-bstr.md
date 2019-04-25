@@ -12,11 +12,11 @@ helpviewer_keywords:
 - strings [C++], releasing
 ms.assetid: 98041e29-3442-4a02-b425-7a4a13e9cc84
 ms.openlocfilehash: adc3e1efd032bb3e3e45381da24c5a5b59852375
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57747144"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62216975"
 ---
 # <a name="allocating-and-releasing-memory-for-a-bstr"></a>Ayırma ve serbest bırakma BSTR için bellek serbest bırakma
 

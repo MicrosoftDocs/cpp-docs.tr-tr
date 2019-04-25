@@ -59,11 +59,11 @@ helpviewer_keywords:
 - tcsncat function
 ms.assetid: de67363b-68c6-4ca5-91e3-478610ad8159
 ms.openlocfilehash: 477d80ec170463a2315e2e891998ed32d84c75dd
-ms.sourcegitcommit: e06648107065f3dea35f40c1ae5999391087b80b
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57210269"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62209870"
 ---
 # <a name="strncat-strncatl-wcsncat-wcsncatl-mbsncat-mbsncatl"></a>strncat, _strncat_l, wcsncat, _wcsncat_l, _mbsncat, _mbsncat_l
 

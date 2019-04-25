@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2466
 ms.assetid: 75b251d1-7d0b-4a86-afca-26adedf74486
 ms.openlocfilehash: 516f9b024947e0100a753e4e010a5b51b1fb24a1
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50526373"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62230535"
 ---
 # <a name="compiler-error-c2466"></a>Derleyici Hatası C2466
 

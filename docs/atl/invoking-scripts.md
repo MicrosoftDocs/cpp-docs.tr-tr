@@ -6,11 +6,11 @@ helpviewer_keywords:
 - scripts, invoking registry in ATL
 ms.assetid: eabd41ee-586b-4266-9e92-5aaad04b73a4
 ms.openlocfilehash: 6ca744ced53677550e7b77f44d4f6550da744372
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57820566"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62250473"
 ---
 # <a name="invoking-scripts"></a>Betikleri çağırma
 

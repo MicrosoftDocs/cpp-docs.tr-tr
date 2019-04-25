@@ -7,11 +7,11 @@ helpviewer_keywords:
 - SEGMENT directive
 ms.assetid: e6f68367-6714-4f06-a79c-edfa88014430
 ms.openlocfilehash: f37be47b92a71e20821cd1e40f8cf1350dfedaff
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50615429"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62210381"
 ---
 # <a name="segment"></a>SEGMENT
 
@@ -35,7 +35,7 @@ Kesimin başlangıç adresi seçilebilir bellek adresleri aralığı. Hizalama t
 |**DWORD**|Sonraki kullanılabilir çift sözcük adresi (çift sözcük başına 4 bayt).|
 |**PARA**|Sonraki kullanılabilir paragraf adresi (paragraf başına 16 bayt).|
 |**PAGE**|Sonraki kullanılabilir sayfa (sayfa başına 256 bayt) adresi.|
-|**Hizalama**(*n*)|Sonraki kullanılabilir *n*th bayt adresi. Daha fazla bilgi için Açıklamalar bölümüne bakın.|
+|**ALIGN**(*n*)|Sonraki kullanılabilir *n*th bayt adresi. Daha fazla bilgi için Açıklamalar bölümüne bakın.|
 
 Bu parametre belirtilmezse, **PARA** varsayılan olarak kullanılır.
 

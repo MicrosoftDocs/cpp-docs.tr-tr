@@ -7,11 +7,11 @@ helpviewer_keywords:
 - integer limits
 ms.assetid: 0c23cbd6-29fb-4d9c-b689-5984e19748de
 ms.openlocfilehash: 057da1ac8e4549a05d10a01cc3aead678045d9c5
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50548297"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62312433"
 ---
 # <a name="c-integer-limits"></a>C++ Tamsayı Sınırları
 

@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3838
 ms.assetid: d6f470c2-131a-4a8c-843a-254acd43da83
 ms.openlocfilehash: c8664c9df837d44ab6e356d54ff9e35c3776778a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50635233"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62208089"
 ---
 # <a name="compiler-error-c3838"></a>Derleyici Hatası C3838
 

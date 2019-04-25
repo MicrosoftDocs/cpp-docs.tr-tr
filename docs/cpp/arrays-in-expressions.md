@@ -6,11 +6,11 @@ helpviewer_keywords:
 - arrays [C++], in expressions
 ms.assetid: 6e5a795b-d6bd-4e39-b313-6a20d47c4d4b
 ms.openlocfilehash: 0f2ef43c2a5bc4f8a44378c21d6d53b14f07ea07
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50478175"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62184386"
 ---
 # <a name="arrays-in-expressions"></a>İfadelerdeki Diziler
 

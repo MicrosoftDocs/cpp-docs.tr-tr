@@ -8,11 +8,11 @@ helpviewer_keywords:
 - _ReadWriteBarrier intrinsic
 ms.assetid: dd9f58b5-8bb6-494e-bb0f-9fe184f3908d
 ms.openlocfilehash: 9da26b685be90bd349d6bfe56c4ad980541d09c0
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59026759"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62263262"
 ---
 # <a name="readwritebarrier"></a>_ReadWriteBarrier
 

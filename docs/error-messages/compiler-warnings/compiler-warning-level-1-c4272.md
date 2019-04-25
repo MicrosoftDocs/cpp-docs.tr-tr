@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C4272
 ms.assetid: 0d6c1de4-2eef-42c4-b861-c221f8b495ef
 ms.openlocfilehash: 26e136aa395729d520f4a71a06b6dc212cf21f8b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50479998"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62208317"
 ---
 # <a name="compiler-warning-level-1-c4272"></a>Derleyici Uyarısı (düzey 1) C4272
 

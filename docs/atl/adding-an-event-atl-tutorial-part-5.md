@@ -4,11 +4,11 @@ ms.custom: get-started-article
 ms.date: 09/27/2018
 ms.assetid: 2de12022-3148-4ce3-8606-8a9d4274f0e9
 ms.openlocfilehash: 57fc2adaadcca52cfc25736b5f9010fcb65a2ff0
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57278645"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62252569"
 ---
 # <a name="adding-an-event-atl-tutorial-part-5"></a>Olay Ekleme (ATL Eğitmeni, Bölüm 5)
 

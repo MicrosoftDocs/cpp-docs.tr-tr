@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C4549
 ms.assetid: 81a07676-625b-4f58-9b0c-3ee22830b04a
 ms.openlocfilehash: 5732b2f963be52512d5d80f2552af4a80acb3372
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50657242"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62226579"
 ---
 # <a name="compiler-warning-level-1-c4549"></a>Derleyici Uyarısı (düzey 1) C4549
 

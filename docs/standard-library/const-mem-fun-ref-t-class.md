@@ -7,11 +7,11 @@ helpviewer_keywords:
 - const_mem_fun_ref_t class
 ms.assetid: 316ddbaa-9f46-4931-8eba-ea4ca66360ef
 ms.openlocfilehash: 16025764cdcf28900c30ef53dced871998f8bd07
-ms.sourcegitcommit: 4299caac2dc9e806c74ac833d856a3838b0f52a1
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "57006584"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62212059"
 ---
 # <a name="constmemfunreft-class"></a>const_mem_fun_ref_t Sınıfı
 

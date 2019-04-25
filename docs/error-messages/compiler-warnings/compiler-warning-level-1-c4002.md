@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C4002
 ms.assetid: 6bda1dfe-e2e4-4771-9794-5a404c466dd5
 ms.openlocfilehash: f2d2166a1370c02cfbc2346a63a424239ccb2b92
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50463069"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62187267"
 ---
 # <a name="compiler-warning-level-1-c4002"></a>Derleyici Uyarısı (düzey 1) C4002
 

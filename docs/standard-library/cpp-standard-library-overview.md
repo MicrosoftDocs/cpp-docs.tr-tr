@@ -8,15 +8,15 @@ helpviewer_keywords:
 - C++ Standard Library, headers
 ms.assetid: 7acb83a4-da73-4ad3-bc30-a71289db7f60
 ms.openlocfilehash: 57abafbcbd899d3eca7369205afba4ca262ad2c4
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50444999"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62210807"
 ---
 # <a name="c-standard-library-overview"></a>C++ Standart Kitaplığına Genel Bakış
 
-Tüm C++ Kitaplık varlıklar bildirildi veya bir veya daha fazla standart üst bilgi tanımlandı. Bu uygulama iki ek üst bilgilere içerir \<hash_map > ve \<hash_set >, C++ standardı tarafından gerekmez. Bu uygulama destekleyen üstbilgileri tam bir listesi için bkz. [üstbilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md).
+Tüm C++ Kitaplık varlıklar bildirildi veya bir veya daha fazla standart üst bilgi tanımlandı. Bu uygulama iki ek üst bilgilere içerir \<hash_map > ve \<hash_set >, gerekli değildir tarafından C++ standart. Bu uygulama destekleyen üstbilgileri tam bir listesi için bkz. [üstbilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md).
 
 C++ Kitaplığı bağlantısız bir uygulaması, yalnızca bir alt bu üst bilgi sağlar:
 
@@ -42,7 +42,7 @@ Bu bölümde, aşağıdaki bölümleri içerir:
 
 - [C++ Program Başlatma ve Sonlandırma](../standard-library/cpp-program-startup-and-termination.md)
 
-- [Güvenli Kitaplıklar: C++ Standart Kitaplık](../standard-library/safe-libraries-cpp-standard-library.md)
+- [Güvenli Kitaplıklar: C++ Standart Kitaplığı](../standard-library/safe-libraries-cpp-standard-library.md)
 
 - [Denetlenmiş Yineleyiciler](../standard-library/checked-iterators.md)
 

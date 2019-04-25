@@ -16,11 +16,11 @@ helpviewer_keywords:
 - MFC ActiveX controls [MFC], property pages
 ms.assetid: 22638d86-ff3e-4124-933e-54b7c2a25968
 ms.openlocfilehash: b73a027422cfe9cbf03afece400c1b513cace151
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57304710"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62239341"
 ---
 # <a name="mfc-activex-controls-using-stock-property-pages"></a>MFC ActiveX denetimleri: Stok özellik sayfalarını kullanma
 

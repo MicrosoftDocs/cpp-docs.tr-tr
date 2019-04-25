@@ -7,11 +7,11 @@ helpviewer_keywords:
 - HDS_ styles
 ms.assetid: b1e1e326-ec7d-4dbd-a46f-96a3e2055618
 ms.openlocfilehash: 081260bd5c1cf6335d398a4fd773c9590dbc8030
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57268843"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62241595"
 ---
 # <a name="customizing-the-header-item39s-appearance"></a>Üstbilgi öğesi özelleştirme&#39;görünümünü
 

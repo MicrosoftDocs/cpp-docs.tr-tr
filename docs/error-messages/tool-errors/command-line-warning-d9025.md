@@ -7,11 +7,11 @@ helpviewer_keywords:
 - D9025
 ms.assetid: 6edff72c-1508-46c2-99f4-0e4b3c5e60c9
 ms.openlocfilehash: e7090dda72868ad7ee4d5f8e4f1ba6a0ad121c98
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57822476"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62214128"
 ---
 # <a name="command-line-warning-d9025"></a>Komut Satırı Uyarısı D9025
 

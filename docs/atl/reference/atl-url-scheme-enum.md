@@ -5,11 +5,11 @@ helpviewer_keywords:
 - ATLUTIL/ATL::ATL_URL_SCHEME
 ms.assetid: f4131046-8ba0-4ec1-8209-84203f05d20e
 ms.openlocfilehash: a63e58349d4339389870de46d5b961fd96db535f
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57264189"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62247716"
 ---
 # <a name="atlurlscheme"></a>ATL_URL_SCHEME
 

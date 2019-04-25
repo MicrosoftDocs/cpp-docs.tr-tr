@@ -1,5 +1,5 @@
 ---
-title: içi
+title: " içi"
 ms.date: 04/11/2018
 f1_keywords:
 - intrinsic_CPP
@@ -9,13 +9,13 @@ helpviewer_keywords:
 - pragmas, intrinsic
 ms.assetid: 25c86ac7-ef40-47b7-a2c0-fada9c5dc3c5
 ms.openlocfilehash: 393a73fcf31c7c00b2057862792ff0536cc98ad8
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50677467"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62212385"
 ---
-# <a name="intrinsic"></a>içi
+# <a name="intrinsic"></a> içi
 
 Pragmanın bağımsız değişken listesinde belirtilen işlevlere yapılan çağrıların iç olduğunu belirtir.
 

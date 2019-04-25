@@ -6,11 +6,11 @@ helpviewer_keywords:
 - exception handling, cleanup code
 ms.assetid: 28b9ce70-be63-4a0d-92a8-44bbfbc95e83
 ms.openlocfilehash: d131ce8ebe5158d7f3a567580064068742b63707
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57746233"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62236634"
 ---
 # <a name="cstring-exception-cleanup"></a>CString özel durum temizleme
 

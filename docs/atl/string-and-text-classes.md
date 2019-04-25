@@ -7,11 +7,11 @@ helpviewer_keywords:
 - string classes [ATL]
 ms.assetid: aa0cdc41-c953-4b17-82b6-59b908545571
 ms.openlocfilehash: 6f694cbf9dc806cbb6ef3e5e649e91c9ad5bfa75
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57295272"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62197451"
 ---
 # <a name="string-and-text-classes"></a>Dize ve metin sınıfları
 

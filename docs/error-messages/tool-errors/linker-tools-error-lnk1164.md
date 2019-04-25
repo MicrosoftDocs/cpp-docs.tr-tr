@@ -7,11 +7,11 @@ helpviewer_keywords:
 - LNK1164
 ms.assetid: da89765c-affa-4f88-b170-6d6b19a577cf
 ms.openlocfilehash: 8685a9e0eb356719eaab129af9df9a1cc0ebb085
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50585503"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62254967"
 ---
 # <a name="linker-tools-error-lnk1164"></a>Bağlayıcı Araçları Hatası LNK1164
 

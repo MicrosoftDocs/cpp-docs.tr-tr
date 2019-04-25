@@ -93,11 +93,11 @@ helpviewer_keywords:
 - CMFCToolBarMenuButton [MFC], m_bAlwaysCallOwnerDraw
 ms.assetid: cfa50176-7e4b-4527-9904-86a1b48fc1bc
 ms.openlocfilehash: 7733969a0218dacf481ac82c764911c61ecabbbf
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58769158"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62218031"
 ---
 # <a name="cmfctoolbarmenubutton-class"></a>CMFCToolBarMenuButton sınıfı
 

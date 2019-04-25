@@ -7,11 +7,11 @@ helpviewer_keywords:
 - POPCONTEXT directive
 ms.assetid: 19f59290-a54d-477d-88d8-97d3f63ed417
 ms.openlocfilehash: b9319a74dc43a202691de132430de85c4d80a79b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50608093"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62210596"
 ---
 # <a name="popcontext"></a>POPCONTEXT
 

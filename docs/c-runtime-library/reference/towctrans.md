@@ -22,11 +22,11 @@ helpviewer_keywords:
 - towctrans function
 ms.assetid: 1ed1e70d-7b31-490f-a7d9-42564b5924ca
 ms.openlocfilehash: b814c65d2f5d0bb18b19d97a539d79dd6df8a1c6
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50561414"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62269169"
 ---
 # <a name="towctrans"></a>towctrans
 

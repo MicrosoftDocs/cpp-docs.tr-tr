@@ -8,11 +8,11 @@ helpviewer_keywords:
 - CDefaultElementTraits class
 ms.assetid: ac5ee610-7957-4b7c-92b6-38ff72e4118e
 ms.openlocfilehash: 0ee076af5fc4a1c2145162ac510b3a4460e251e0
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57298860"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62245940"
 ---
 # <a name="cdefaultelementtraits-class"></a>CDefaultElementTraits sınıfı
 

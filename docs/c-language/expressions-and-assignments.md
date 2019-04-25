@@ -12,11 +12,11 @@ helpviewer_keywords:
 - Visual C, assignments
 ms.assetid: 9c72919f-0768-4b47-85ca-afdfec6847f4
 ms.openlocfilehash: 30c076bcaf80a0d51a7f8aefc9c1b1806a12e42f
-ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56147223"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62233728"
 ---
 # <a name="expressions-and-assignments"></a>İfadeler ve Atamalar
 

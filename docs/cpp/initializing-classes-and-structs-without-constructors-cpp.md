@@ -3,11 +3,11 @@ title: Sınıfları ve yapıları oluşturucular olmadan başlatma (C++)
 ms.date: 10/17/2018
 ms.assetid: 3e55c3d6-1c6b-4084-b9e5-221b151402f4
 ms.openlocfilehash: 4f696f4fc8862b953e40a03c96b88d1a0b7f720b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50547335"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62183420"
 ---
 # <a name="initializing-classes-and-structs-without-constructors-c"></a>Sınıfları ve yapıları oluşturucular olmadan başlatma (C++)
 

@@ -7,11 +7,11 @@ helpviewer_keywords:
 - declaring variables, declaration statements
 ms.assetid: 5fd67a6a-3a6a-4ec9-b257-3f7390a48d40
 ms.openlocfilehash: 928de4b1724577a9fdb282f5109b4b5d0b31c4e6
-ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56147496"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62234536"
 ---
 # <a name="declarators-and-variable-declarations"></a>Bildirimler ve Değişken Bildirimleri
 

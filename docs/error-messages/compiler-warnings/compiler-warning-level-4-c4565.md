@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C4565
 ms.assetid: a71f1341-a4a1-4060-ad1e-9322531883ed
 ms.openlocfilehash: b655dcfb456d32e45833e89e5a48926ad70d1d9e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50588688"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62220487"
 ---
 # <a name="compiler-warning-level-4-c4565"></a>Derleyici Uyarısı (düzey 4) C4565
 

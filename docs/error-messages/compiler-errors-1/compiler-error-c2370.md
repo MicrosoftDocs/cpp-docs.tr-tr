@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2370
 ms.assetid: 03403e8f-f393-47c4-bd25-5c1c7ea7d5cd
 ms.openlocfilehash: 28c337a5cadfaeced39ee6ed73601338941029fc
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50471753"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62188045"
 ---
 # <a name="compiler-error-c2370"></a>Derleyici Hatası C2370
 

@@ -6,11 +6,11 @@ helpviewer_keywords:
 - ATL, classes
 ms.assetid: 7da42e2d-ac84-4506-92bd-502a86d68bdc
 ms.openlocfilehash: 561d6cb41ca066f5a2435b4eb1e8710ccaa99ea1
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57265580"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62248946"
 ---
 # <a name="atl-classes-and-structs"></a>ATL sınıfları ve yapıları
 

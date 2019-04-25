@@ -7,11 +7,11 @@ helpviewer_keywords:
 - debugging [ATL], using Task Manager
 ms.assetid: 773fccd5-308d-42c2-a17f-60ae94989062
 ms.openlocfilehash: cba3abb98136c78530150a66e91004dcc9614d5a
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57297235"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62195253"
 ---
 # <a name="using-task-manager"></a>Görev Yöneticisi'ni kullanma
 

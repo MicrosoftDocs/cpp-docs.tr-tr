@@ -25,11 +25,11 @@ helpviewer_keywords:
 - vsscanf function
 ms.assetid: e96180f2-df46-423d-b4eb-0a49ab819bde
 ms.openlocfilehash: 5bbe80cd2463c5c5b9b4ea55b8d6574675e42054
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50478591"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62188866"
 ---
 # <a name="vsscanf-vswscanf"></a>vsscanf, vswscanf
 

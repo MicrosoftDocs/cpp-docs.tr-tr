@@ -10,11 +10,11 @@ helpviewer_keywords:
 - character sets [C++], single byte
 ms.assetid: 2cbc78ea-33c0-4cfb-b0df-7ce2458431ce
 ms.openlocfilehash: 1e2d3f26891257101b4a9511f4e0b10f03113309
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57745333"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62267877"
 ---
 # <a name="single-byte-and-multibyte-character-sets"></a>Tek Baytlı ve Çok Baytlı Karakter Kümeleri
 

@@ -3,11 +3,11 @@ title: Range-based for Deyimi (C++)
 ms.date: 11/04/2016
 ms.assetid: 5750ba1d-ba48-4236-a923-e32de8345c2d
 ms.openlocfilehash: 1cbdb4e1636f471c26f6742b9e8686a332ed845f
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51330937"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62244150"
 ---
 # <a name="range-based-for-statement-c"></a>Range-based for Deyimi (C++)
 
@@ -24,7 +24,7 @@ for ( for-range-declaration : expression )
 
 Aralık tabanlı kullanın **için** "yinelemek herhangi bir şey olarak tanımlanan bir aralığı" ile yürütülmesi gereken döngüler oluşturmak için — örneğin, `std::vector`, tüm diğer C++ Standart Kitaplığı dizisi aralığı veya tarafından tanımlanan bir `begin()` ve `end()`. Bölümünde bildirilen ad `for-range-declaration` için yereldir **için** deyimi ve içinde yeniden bildirilemez `expression` veya `statement`. Unutmayın [otomatik](../cpp/auto-cpp.md) anahtar sözcüğünün tercih `for-range-declaration` deyiminin bölümü.
 
-**Visual Studio 2017'te yeni eklendi:** aralık tabanlı const_iterator ve end() aynı türe ait nesneleri iade döngüler artık gereksinim için. Bu gibi aralıkları V3 teklife tanımlanan aralıkları tarafından kullanılan bir sentinel nesneyi döndürmek end() sağlar. Daha fazla bilgi için bkz [Genelleştiriliyor aralık tabanlı For döngüsü](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0184r0.html) ve [aralığı v3 kitaplığı github'da](https://github.com/ericniebler/range-v3).
+**Yeni Visual Studio 2017'de:**  Aralık tabanlı const_iterator ve end() aynı türe ait nesneleri iade döngüler artık gereksinim için. Bu gibi aralıkları V3 teklife tanımlanan aralıkları tarafından kullanılan bir sentinel nesneyi döndürmek end() sağlar. Daha fazla bilgi için bkz [Genelleştiriliyor aralık tabanlı For döngüsü](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0184r0.html) ve [aralığı v3 kitaplığı github'da](https://github.com/ericniebler/range-v3).
 
 Bu kod aralık tabanlı nasıl kullanılacağını gösterir. **için** bir dizi ve vektör aracılığıyla yineleme yapmak için:
 

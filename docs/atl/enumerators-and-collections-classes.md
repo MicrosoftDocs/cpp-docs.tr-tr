@@ -6,11 +6,11 @@ helpviewer_keywords:
 - enumerators, ATL classes
 ms.assetid: fcd093b2-98bf-444d-94ab-9a55520a5051
 ms.openlocfilehash: 6de81a7b0ddd77471669b19c4be1145c776d2902
-ms.sourcegitcommit: faa42c8a051e746d99dcebe70fd4bbaf3b023ace
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57809814"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62198128"
 ---
 # <a name="enumerators-and-collections-classes"></a>Numaralandırıcı ve koleksiyon sınıfları
 

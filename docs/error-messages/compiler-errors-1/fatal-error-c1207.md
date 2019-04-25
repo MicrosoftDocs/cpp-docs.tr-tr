@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C1207
 ms.assetid: cd31b410-9523-47db-883c-e69a9351ffa2
 ms.openlocfilehash: 5a477bcf2ad50bf02b2a7caf7488d21c4ebb75e6
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50442269"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62228776"
 ---
 # <a name="fatal-error-c1207"></a>Önemli hata C1207
 

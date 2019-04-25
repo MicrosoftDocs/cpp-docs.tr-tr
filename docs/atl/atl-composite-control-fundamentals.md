@@ -5,11 +5,11 @@ helpviewer_keywords:
 - composite controls, about composite controls
 ms.assetid: 2ac78cdd-1ec4-4d78-871c-1bcc23b5253e
 ms.openlocfilehash: 96a7b84b40dd74f42944e61cfd219638907502c7
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57272236"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62223391"
 ---
 # <a name="atl-composite-control-fundamentals"></a>ATL Bileşik Denetim Temelleri
 

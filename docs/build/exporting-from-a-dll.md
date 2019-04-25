@@ -11,11 +11,11 @@ helpviewer_keywords:
 - exports table [C++]
 ms.assetid: a08f86c4-5996-460b-ae54-da2b764045f0
 ms.openlocfilehash: 6bdf5b86724ae07aa073a9feb1cc4d5723bc6e6b
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57819126"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62196748"
 ---
 # <a name="exporting-from-a-dll"></a>DLL'den Dışarı Aktarma
 
@@ -53,7 +53,7 @@ Bir DLL dosyası önemli bir fark dışında bir .exe dosyası çok benzer bir d
 
 - [Bir uygulamaya aktarma](importing-into-an-application.md)
 
-- [İçeri ve dışarı aktarma satır içi işlevler](importing-and-exporting-inline-functions.md)
+- [Satır içi işlevleri içeri ve dışarı aktarma](importing-and-exporting-inline-functions.md)
 
 - [Karşılıklı içeri aktarmalar](mutual-imports.md)
 

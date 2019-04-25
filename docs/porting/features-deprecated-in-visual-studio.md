@@ -4,11 +4,11 @@ ms.date: 10/10/2018
 helpviewer_keywords:
 - Features deprecated in Visual Studio 2019
 ms.openlocfilehash: 7d3818a8352cbf3785703740590e0c70c14f8a7f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50623078"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62205260"
 ---
 # <a name="visual-c-features-deprecated-in-visual-studio-2019-preview"></a>Visual Studio 2019 Önizleme'de kullanım dışı visual C++ özellikleri
 

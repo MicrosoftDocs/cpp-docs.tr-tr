@@ -7,11 +7,11 @@ helpviewer_keywords:
 - D8037
 ms.assetid: acddaaa0-bd84-426f-a37b-8f680b379c9d
 ms.openlocfilehash: f9f099d1abb8529620c1b3a0bc14705463ca5cd0
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59021488"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62214148"
 ---
 # <a name="command-line-error-d8037"></a>Komut Satırı Hatası D8037
 

@@ -6,11 +6,11 @@ helpviewer_keywords:
 - property sheets, Apply button
 ms.assetid: 7e977015-59b8-406f-b545-aad0bfd8d55b
 ms.openlocfilehash: 30ee549a334a684deeb4a845f2fc49ee8bbe11db
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58770843"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62240593"
 ---
 # <a name="handling-the-apply-button"></a>Uygula Düğmesini İşleme
 

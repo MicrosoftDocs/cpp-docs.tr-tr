@@ -10,11 +10,11 @@ helpviewer_keywords:
 - lock C# keyword [C++]
 ms.assetid: a5902cf8-a14d-4559-aefb-c178615d45bb
 ms.openlocfilehash: ffdf9a8b11912bde38e15408228670c8cff9a503
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57741734"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62188328"
 ---
 # <a name="interoperability-with-other-net-languages-ccli"></a>Diğer .NET Dilleri ile Birlikte Çalışabilirlik (C++/CLI)
 

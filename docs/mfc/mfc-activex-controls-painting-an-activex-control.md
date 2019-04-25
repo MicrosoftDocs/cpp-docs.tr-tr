@@ -6,11 +6,11 @@ helpviewer_keywords:
 - MFC ActiveX controls [MFC], optimizing
 ms.assetid: 25fff9c0-4dab-4704-aaae-8dfb1065dee3
 ms.openlocfilehash: b90aa331c289caf827785af2eeba037e70f686ab
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57281936"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62186885"
 ---
 # <a name="mfc-activex-controls-painting-an-activex-control"></a>MFC ActiveX denetimleri: ActiveX denetimini boyama
 

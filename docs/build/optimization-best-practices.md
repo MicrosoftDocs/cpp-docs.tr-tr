@@ -6,11 +6,11 @@ helpviewer_keywords:
 - optimization, best practices
 ms.assetid: f3433148-7255-4ca6-8a4f-7c31aac88508
 ms.openlocfilehash: edb036292b87593a3f8bb9b3f5ec5f7beb84c3a5
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57824092"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62274176"
 ---
 # <a name="optimization-best-practices"></a>En iyi uygulamaları iyileştirme
 
@@ -93,7 +93,7 @@ Derinliğini sınırlamak için başka bir kullanışlı pragma yapılmış olan
 
 ## <a name="restrict-and-assume"></a>__restrict ve \__assume
 
-Birkaç performans yardımcı olabilecek Visual c++ anahtar sözcükleri: [__restrict](../cpp/extension-restrict.md) ve [__assume](../intrinsics/assume.md).
+Birkaç görselde anahtar sözcüklerin C++ performans yardımcı olabilir: [__restrict](../cpp/extension-restrict.md) ve [__assume](../intrinsics/assume.md).
 
 İlk olarak, unutulmamalıdır, `__restrict` ve `__declspec(restrict)` iki farklı şey vardır. Biraz ilgili olsa da, semantiği farklıdır. `__restrict` gibi bir tür niteleyicisi olan `const` veya `volatile`, ancak yalnızca işaretçi türleri için.
 

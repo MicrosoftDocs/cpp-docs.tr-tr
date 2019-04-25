@@ -8,19 +8,17 @@ helpviewer_keywords:
 - epilog code
 ms.assetid: 2543c8af-00d4-4a2a-8a87-e746da1f9929
 ms.openlocfilehash: b752dd6fa378bc1275e8a7da90420aa2b8247e4e
-ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56152202"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62232823"
 ---
 # <a name="naked-functions"></a>Naked İşlevleri
 
 **Microsoft'a özgü**
 
-
-  `naked` depolama sınıfı özniteliği, C diline yönelik Microsoft'a özgü bir uzantıdır. 
-  `naked` depolama sınıfı özniteliğiyle bildirilen işlevler için derleyici giriş ve sonuç kodu olmadan kod oluşturur. Satır içi derleyici kodunu kullanarak kendi giriş/sonuç kodu dizilerinizi yazmak için bu özelliği kullanabilirsiniz. Çıplak işlevler, özellikle sanal cihaz sürücülerinin yazılmasında yararlıdır.
+`naked` depolama sınıfı özniteliği, C diline yönelik Microsoft'a özgü bir uzantıdır. `naked` depolama sınıfı özniteliğiyle bildirilen işlevler için derleyici giriş ve sonuç kodu olmadan kod oluşturur. Satır içi derleyici kodunu kullanarak kendi giriş/sonuç kodu dizilerinizi yazmak için bu özelliği kullanabilirsiniz. Çıplak işlevler, özellikle sanal cihaz sürücülerinin yazılmasında yararlıdır.
 
 Çünkü `naked` özniteliği yalnızca bir işlev tanımı için geçerlidir ve bir tür değiştiricisi değil, naked işlevlerini kullanmak açıklanan genişletilmiş öznitelik söz dizimi [genişletilmiş depolama sınıfı öznitelikleri](../c-language/c-extended-storage-class-attributes.md).
 
@@ -44,16 +42,14 @@ Naked int func( formal_parameters )
 }
 ```
 
-
-  `naked` özniteliği, yalnızca işlevin giriş ve sonuç dizileri için derleyicinin kod oluşturma yapısını etkiler. Bu tür işlevleri çağırmak için oluşturulan kodu etkilemez. Bu nedenle, `naked` özniteliği işlev türünün bir parçası olarak kabul edilmez ve işlev işaretçileri `naked` özniteliğine sahip olamaz. Ayrıca, `naked` özniteliği veri tanımına uygulanamaz. Örneğin, aşağıdaki kod hatalar oluşturur:
+`naked` özniteliği, yalnızca işlevin giriş ve sonuç dizileri için derleyicinin kod oluşturma yapısını etkiler. Bu tür işlevleri çağırmak için oluşturulan kodu etkilemez. Bu nedenle, `naked` özniteliği işlev türünün bir parçası olarak kabul edilmez ve işlev işaretçileri `naked` özniteliğine sahip olamaz. Ayrıca, `naked` özniteliği veri tanımına uygulanamaz. Örneğin, aşağıdaki kod hatalar oluşturur:
 
 ```
 __declspec( naked ) int i;  /* Error--naked attribute not */
                             /* permitted on data declarations. */
 ```
 
-
-  `naked` özniteliği, yalnızca işlevin tanımıyla ilgilidir ve işlevin prototipinde belirtilemez. Aşağıdaki bildirim, bir derleyici hatası oluşturur:
+`naked` özniteliği, yalnızca işlevin tanımıyla ilgilidir ve işlevin prototipinde belirtilemez. Aşağıdaki bildirim, bir derleyici hatası oluşturur:
 
 ```
 __declspec( naked ) int func();   /* Error--naked attribute not */

@@ -7,11 +7,11 @@ helpviewer_keywords:
 - windows [C++], ATL
 ms.assetid: 750b14d5-d787-4d2b-9728-ac199ccad489
 ms.openlocfilehash: 5880fd970d885da84edd94f9f2c7a47ec326ebe1
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57814182"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62195494"
 ---
 # <a name="windows-support-classes"></a>Windows desteği sınıfları
 

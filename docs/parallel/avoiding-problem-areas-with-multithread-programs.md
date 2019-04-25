@@ -8,11 +8,11 @@ helpviewer_keywords:
 - troubleshooting [C++], multithreading
 ms.assetid: 06cc231d-bb5a-409d-8bd3-676c9e2a8c5b
 ms.openlocfilehash: 3ceae832599243ffa0aad2b6fa67148e7ea30510
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57288196"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62237070"
 ---
 # <a name="avoiding-problem-areas-with-multithread-programs"></a>Çoklu İş Parçacığı Kullanan Programlarda Sorun Alanlarından Kaçınma
 

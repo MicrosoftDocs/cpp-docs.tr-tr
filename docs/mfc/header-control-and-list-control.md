@@ -1,5 +1,5 @@
 ---
-title: Üstbilgi Denetimi ve Liste Denetimi
+title: Üstbilgi denetimi ve liste denetimi
 ms.date: 11/04/2016
 helpviewer_keywords:
 - CListCtrl class [MFC], with CHeaderCtrl
@@ -10,13 +10,13 @@ helpviewer_keywords:
 - header controls [MFC], list controls used with
 ms.assetid: b20194b1-1a6b-4e2f-b890-1b3cca6650bc
 ms.openlocfilehash: 934b54de3266138225087d5519af2be51972cf9d
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57266776"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62240081"
 ---
-# <a name="header-control-and-list-control"></a>Üstbilgi Denetimi ve Liste Denetimi
+# <a name="header-control-and-list-control"></a>Üstbilgi denetimi ve liste denetimi
 
 Çoğu durumda, katıştırılmış üstbilgi denetimi kullanacağınız bir [CListCtrl](../mfc/reference/clistctrl-class.md) veya [CListView](../mfc/reference/clistview-class.md) nesne. Ancak, ayrı üstbilgi denetim nesnesi olduğu istenen sütun veya satır içinde düzenlenmiş bir veri düzenleme gibi durumlar vardır bir [CView](../mfc/reference/cview-class.md)-türetilmiş bir nesneye. Bu durumlarda, katıştırılmış üst denetimin varsayılan davranışını ve görünümünü üzerinde daha fazla denetime ihtiyacınız var.
 

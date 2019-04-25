@@ -7,11 +7,11 @@ helpviewer_keywords:
 - ENDS directive
 ms.assetid: 30f68c58-de1f-4bdd-ac83-4658bdbaad65
 ms.openlocfilehash: a92b307e0d426afb4c74113de5738c15be064040
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50517669"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62185167"
 ---
 # <a name="ends-masm"></a>ENDS (MASM)
 

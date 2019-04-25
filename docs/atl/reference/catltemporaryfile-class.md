@@ -23,11 +23,11 @@ helpviewer_keywords:
 - CAtlTemporaryFile class
 ms.assetid: 05f0f2a5-94f6-4594-8dae-b114292ff5f9
 ms.openlocfilehash: c1da5037deb0143c6d05009baccc8c1553616028
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57288200"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62246908"
 ---
 # <a name="catltemporaryfile-class"></a>CAtlTemporaryFile sınıfı
 

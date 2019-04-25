@@ -10,11 +10,11 @@ helpviewer_keywords:
 - pragmas, check_stack usage table
 ms.assetid: f18e20cc-9abb-48b7-ad62-8d384875b996
 ms.openlocfilehash: 49477a3b39db17047f349e341bd05c04954c964c
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59023387"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62212405"
 ---
 # <a name="checkstack"></a>check_stack
 Gerekirse yığın yoklamalarını devre dışı bırakmak için derleyiciye `off` (veya `-`) belirtilirse, yığın yoklamalarını üzerinde etkinleştirin veya `on` (veya `+`) belirtilir.

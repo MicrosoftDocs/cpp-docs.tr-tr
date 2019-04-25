@@ -6,11 +6,11 @@ helpviewer_keywords:
 - expressions [C++], evaluating
 ms.assetid: 9493f8cc-64a2-4284-9aaf-26eec11c4f40
 ms.openlocfilehash: 37affedc0bcf3fb1423898ecf2c570794d9625c0
-ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56151097"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62233853"
 ---
 # <a name="expression-evaluation-c"></a>İfade Değerlendirme (C)
 

@@ -10,11 +10,11 @@ helpviewer_keywords:
 - documents [MFC], handling messages in
 ms.assetid: c7375584-27af-4275-b2fd-afea476785d0
 ms.openlocfilehash: f3cce539d52bd04e97a6b5f84cbd833b05afb5bb
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57280439"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62240580"
 ---
 # <a name="handling-commands-in-the-document"></a>Belgedeki Komutları İşleme
 

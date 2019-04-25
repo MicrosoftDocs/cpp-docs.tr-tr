@@ -13,11 +13,11 @@ helpviewer_keywords:
 - constructed types, closed [C++]
 ms.assetid: 21f10637-0fce-4916-b925-6c86a126d3aa
 ms.openlocfilehash: 38d33faec3610495e8cc5e97db2e81bd74be8b8b
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59034705"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62254317"
 ---
 # <a name="overview-of-generics-in-ccli"></a>' De genel türlere genel bakış C++/CLI
 

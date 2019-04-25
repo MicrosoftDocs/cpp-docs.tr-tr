@@ -19,11 +19,11 @@ helpviewer_keywords:
 - CComDynamicUnkArray class
 ms.assetid: 202470d7-9a1b-498f-b96d-659d681acd65
 ms.openlocfilehash: 39f137f199db1d7519801c19375baea6cd08db93
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57274169"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62259488"
 ---
 # <a name="ccomdynamicunkarray-class"></a>CComDynamicUnkArray Class
 

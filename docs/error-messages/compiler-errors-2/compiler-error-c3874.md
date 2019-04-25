@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3874
 ms.assetid: fd55fc05-69a7-4237-b3b7-dca1d5400b4f
 ms.openlocfilehash: 73476d50b6cfe098ee9d8084837c2090e198a6cd
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50445051"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62242909"
 ---
 # <a name="compiler-error-c3874"></a>Derleyici Hatası C3874
 

@@ -6,11 +6,11 @@ helpviewer_keywords:
 - memory, managing
 ms.assetid: be564a5e-577e-40a7-bfe3-25ad21e57270
 ms.openlocfilehash: d7e0085d79237b153150297f2a2d00998a93a514
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57274407"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62262326"
 ---
 # <a name="memory-management-classes"></a>Bellek yönetimi sınıfları
 

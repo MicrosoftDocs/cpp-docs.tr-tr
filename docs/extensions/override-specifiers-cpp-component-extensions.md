@@ -7,11 +7,11 @@ helpviewer_keywords:
 - override specifiers
 ms.assetid: 155bbf6f-4722-4654-afb1-9cb52af799fb
 ms.openlocfilehash: c1e8e7db2879b0226eaff562f5b5b826bce14caf
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59029933"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62254451"
 ---
 # <a name="override-specifiers--ccli-and-ccx"></a>Geçersiz kılma tanımlayıcıları (C++/CLI ve C++/CX)
 

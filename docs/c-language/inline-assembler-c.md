@@ -6,11 +6,11 @@ helpviewer_keywords:
 - inline assembler [C]
 ms.assetid: 821acc77-60b1-434c-ba54-2ba930a25ab4
 ms.openlocfilehash: 8fb2a1dd3e87ef452083935e23048d80b4cdc8c3
-ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56152033"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62233183"
 ---
 # <a name="inline-assembler-c"></a>Satır İçi Derleyicisi (C)
 
@@ -20,8 +20,7 @@ Satır içi derleyici, fazladan derleme ve bağlantı adımları olmaksızın, d
 
 Satır içi derleyici ayrı derleme ve bağlantı adımları gerektirmediğinden, ayrı bir derleyiciden daha kullanışlıdır. Satır içi derleme kodu, kapsam içinde olan herhangi bir C değişkeni veya işlev adını kullanabilir; bu şekilde programınızın C kodu ile tümleştirmek de kolaydır. Ve derleme kodu C ifadeleri ile birleştirilebildiğinden, tek başına C'de zor ya da olanaksız olan görevleri yapabilir.
 
-
-  `__asm` anahtar sözcüğü satır içi derleyiciyi çağırır ve bir C deyiminin geçerli olduğu her durumda görünebilir. Kendisi tarafından bulunamaz. Derleme yönergesinde, köşeli ayraçlar veya en azından içine yönergeler grubu tarafından gelmelidir bir çift boş tırnak işaretinin izlemesi. Terim "`__asm` blok" burada herhangi bir yönerge ya da küme ayraçları içinde olsun veya olmasın yönergeler grubu anlamına gelir.
+`__asm` anahtar sözcüğü satır içi derleyiciyi çağırır ve bir C deyiminin geçerli olduğu her durumda görünebilir. Kendisi tarafından bulunamaz. Derleme yönergesinde, köşeli ayraçlar veya en azından içine yönergeler grubu tarafından gelmelidir bir çift boş tırnak işaretinin izlemesi. Terim "`__asm` blok" burada herhangi bir yönerge ya da küme ayraçları içinde olsun veya olmasın yönergeler grubu anlamına gelir.
 
 Aşağıdaki kod ayraç içine alınmış basit bir `__asm` bloğudur. (Kod, bir özel işlev giriş sırasıdır.)
 
@@ -42,8 +41,7 @@ __asm mov  ebp, esp
 __asm sub  esp, __LOCAL_SIZE
 ```
 
-
-  `__asm` anahtar sözcüğü bir deyim ayırıcısı olduğundan, aynı satıra derleme yönergeleri de koyabilirsiniz:
+`__asm` anahtar sözcüğü bir deyim ayırıcısı olduğundan, aynı satıra derleme yönergeleri de koyabilirsiniz:
 
 ```
 __asm push ebp   __asm mov  ebp, esp   __asm sub  esp, __LOCAL_SIZE

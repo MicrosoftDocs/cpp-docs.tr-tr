@@ -9,11 +9,11 @@ helpviewer_keywords:
 - operator MASK
 ms.assetid: bf997f99-17c8-4230-ab69-7a9774a75d93
 ms.openlocfilehash: 6acd6596613e32186385568cc68b3eb498176b6b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50495127"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62199971"
 ---
 # <a name="operator-mask"></a>MASK işleci
 

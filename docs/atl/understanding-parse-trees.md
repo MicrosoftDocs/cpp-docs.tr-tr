@@ -5,11 +5,11 @@ helpviewer_keywords:
 - parse trees
 ms.assetid: 668ce2dd-a1c3-4ca0-8135-b25267cb6a85
 ms.openlocfilehash: e1aea573e78e6f6a9a86bc4e3987ee448815f329
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57273328"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62196174"
 ---
 # <a name="understanding-parse-trees"></a>Ayrıştırma ağaçlarını anlama
 

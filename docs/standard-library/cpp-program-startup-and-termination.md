@@ -10,11 +10,11 @@ helpviewer_keywords:
 - main function, program startup
 ms.assetid: f72c8f76-f507-4ddd-a270-7b60f4fed625
 ms.openlocfilehash: 2246e50c81da9eb505fd30cfa31f9f24e3fe4703
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50459195"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62210768"
 ---
 # <a name="c-program-startup-and-termination"></a>C++ Program Başlatma ve Sonlandırma
 

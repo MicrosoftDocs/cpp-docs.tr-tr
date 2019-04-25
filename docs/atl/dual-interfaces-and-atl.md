@@ -7,11 +7,11 @@ helpviewer_keywords:
 - dual interfaces, about dual interfaces
 ms.assetid: 5a390e89-d2c4-41f0-8538-cab2c5e5d4c8
 ms.openlocfilehash: efa523099aaca77fba06efdaeabd1c7562a372a5
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57263474"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62234845"
 ---
 # <a name="dual-interfaces-and-atl"></a>Çift arabirimler ve ATL
 

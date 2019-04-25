@@ -11,11 +11,11 @@ helpviewer_keywords:
 - subscript expressions
 ms.assetid: e28536e5-3b77-46b5-97fd-9b938c771816
 ms.openlocfilehash: bd3b495483a460f01fe1951ee4c8b5ac3b447701
-ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56147653"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62232352"
 ---
 # <a name="one-dimensional-arrays"></a>Bir Boyutlu Diziler
 

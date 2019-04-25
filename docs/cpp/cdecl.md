@@ -10,17 +10,17 @@ helpviewer_keywords:
 - __cdecl keyword [C++]
 ms.assetid: 1ff1d03e-fb4e-4562-8be1-74f1ad6427f1
 ms.openlocfilehash: 298485d310ee4039b13781a8b5cd88a489af3b8b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50550221"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62232408"
 ---
 # <a name="cdecl"></a>__cdecl
 
 **Microsoft'a özgü**
 
-**__cdecl** çağırma kuralı C ve C++ programları için varsayılan değerdir. Yığın arayan tarafından temizlendiği için bunu yapabilirsiniz `vararg` işlevleri. **__Cdecl** çağırma kuralı, daha büyük yürütülebilir dosyalar oluşturur [__stdcall](../cpp/stdcall.md), çünkü her işlev çağrısının yığın temizleme kodunu içermesini gerektirir. Aşağıdaki liste bu çağırma kuralının uygulamasını gösterir.
+**__cdecl** C çağırma kuralı varsayılan ve C++ programlar. Yığın arayan tarafından temizlendiği için bunu yapabilirsiniz `vararg` işlevleri. **__Cdecl** çağırma kuralı, daha büyük yürütülebilir dosyalar oluşturur [__stdcall](../cpp/stdcall.md), çünkü her işlev çağrısının yığın temizleme kodunu içermesini gerektirir. Aşağıdaki liste bu çağırma kuralının uygulamasını gösterir.
 
 |Öğe|Uygulama|
 |-------------|--------------------|

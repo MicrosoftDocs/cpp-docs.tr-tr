@@ -7,11 +7,11 @@ helpviewer_keywords:
 - assignment statements, assigning CString objects
 ms.assetid: d4023480-526f-499a-85f6-324b4de5b85f
 ms.openlocfilehash: b5398f8a0f17ffcc93c7f5f6158ecc56606e9279
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57750187"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62236267"
 ---
 # <a name="cstring-semantics"></a>CString semantiği
 

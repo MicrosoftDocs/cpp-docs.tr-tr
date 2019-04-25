@@ -5,11 +5,11 @@ ms.date: 03/05/2019
 helpviewer_keywords:
 - CMake redefined configurations
 ms.openlocfilehash: cecadaec2e409dfba3b1929e406c36df3e498307
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59031458"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62195197"
 ---
 # <a name="cmake-predefined-build-configurations"></a>Önceden tanımlanmış CMake derleme yapılandırmaları
 

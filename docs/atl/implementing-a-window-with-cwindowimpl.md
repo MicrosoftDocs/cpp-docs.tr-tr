@@ -10,11 +10,11 @@ helpviewer_keywords:
 - superclassing, ATL
 ms.assetid: 3fc40550-f1d6-4702-8b7c-4cf682b6a855
 ms.openlocfilehash: 265c3145d8ceacae540286f72939dc046e7c8b35
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57818082"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62197851"
 ---
 # <a name="implementing-a-window-with-cwindowimpl"></a>Cwindowımpl ile pencere uygulama
 

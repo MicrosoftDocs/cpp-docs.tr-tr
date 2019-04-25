@@ -6,11 +6,11 @@ helpviewer_keywords:
 - _Hash_seq in an upgraded Visual C++ project
 ms.assetid: 493e0452-6ecb-4edc-ae20-b6fce2d7d3c5
 ms.openlocfilehash: 7f1db0019894474b0770d293b293a663b1ee5a0f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50662702"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62205161"
 ---
 # <a name="fix-your-dependencies-on-library-internals"></a>Kitaplık içeriklerindeki bağımlılıklarınızı düzeltme
 

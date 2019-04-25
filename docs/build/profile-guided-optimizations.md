@@ -6,11 +6,11 @@ helpviewer_keywords:
 - optimization, profile-guided [C++]
 ms.assetid: 2225c307-d3ae-42c1-8345-a5a959d132dc
 ms.openlocfilehash: f4e9af0b2e08dfa4082ebe71caf788ed1188ab7b
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
-ms.translationtype: MT
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57823714"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62274111"
 ---
 # <a name="profile-guided-optimizations"></a>Profil Temelli İyileştirmeler
 

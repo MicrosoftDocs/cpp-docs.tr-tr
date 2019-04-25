@@ -10,11 +10,11 @@ helpviewer_keywords:
 - _ATL_BASE_MODULE70 structure
 ms.assetid: 4539282f-15b8-4d7c-aafa-a85dc56f4980
 ms.openlocfilehash: 4fddd4b3af6155d0663b9c01edfab4fcf4a60426
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57261468"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62260993"
 ---
 # <a name="atlbasemodule70-structure"></a>_ATL_BASE_MODULE70 Structure
 

@@ -25,11 +25,11 @@ helpviewer_keywords:
 - initializing views [MFC]
 ms.assetid: 88aa1f5f-2078-4603-b16b-a2b4c7b4a2a3
 ms.openlocfilehash: 3d4ca55a9bff6ec42643db745896a2cea96dcefb
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57297817"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62242628"
 ---
 # <a name="creating-new-documents-windows-and-views"></a>Yeni Belgeler, Pencereler ve Görünümler Oluşturma
 

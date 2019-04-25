@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C1046
 ms.assetid: 822ec5f5-b0b0-4711-99e1-fc237b619af6
 ms.openlocfilehash: e8ce3bda246c990c4b58c6270e26a88835903886
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50466046"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62243687"
 ---
 # <a name="fatal-error-c1046"></a>Önemli hata C1046
 

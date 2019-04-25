@@ -5,15 +5,15 @@ f1_keywords:
 - noexcept_cpp
 ms.assetid: df24edb9-c6a6-4e37-9914-fd5c0c3716a8
 ms.openlocfilehash: c314b554abb6c10e62b143f554777af50267e4e0
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50620538"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62245367"
 ---
 # <a name="noexcept-c"></a>noexcept (C++)
 
-**C ++ 11:** bir işlev özel durum oluşturma olasılığı olup olmadığını belirtir.
+**C ++ 11:** Bir işlev özel durum oluşturma olasılığı olup olmadığını belirtir.
 
 ## <a name="syntax"></a>Sözdizimi
 

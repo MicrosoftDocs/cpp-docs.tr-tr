@@ -5,11 +5,11 @@ helpviewer_keywords:
 - message passing functions
 ms.assetid: 42477c9e-a8a6-4dc4-a98e-93c6dc8c4dd0
 ms.openlocfilehash: 1a1790a08403bcc1d016a39e27c7a121c288af4d
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57303956"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62186005"
 ---
 # <a name="message-passing-functions"></a>İleti Geçirme İşlevleri
 

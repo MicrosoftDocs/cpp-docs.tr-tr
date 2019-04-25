@@ -9,11 +9,11 @@ helpviewer_keywords:
 - type conversion [C++], signed and unsigned integers
 ms.assetid: 5eea32f8-8b14-413d-acac-c063b3d118d7
 ms.openlocfilehash: 4d2f0ab43adf3cbad3d1ffa244551c67883c6606
-ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56152787"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62312459"
 ---
 # <a name="conversions-from-signed-integral-types"></a>İmzalı Tam Sayı Türlerinden Dönüştürmeler
 

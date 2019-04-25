@@ -27,11 +27,11 @@ helpviewer_keywords:
 - COleDateTimeSpan class
 ms.assetid: 7441526d-a30a-4019-8fb3-3fee6f897cbe
 ms.openlocfilehash: b68a984488f37326f3b0c1249a5f17a3eb76548b
-ms.sourcegitcommit: 309dc532f13242854b47759cef846de59bb807f1
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58565655"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62198206"
 ---
 # <a name="coledatetimespan-class"></a>COleDateTimeSpan Class
 

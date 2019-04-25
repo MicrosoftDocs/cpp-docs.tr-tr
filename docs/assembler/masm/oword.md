@@ -7,11 +7,11 @@ helpviewer_keywords:
 - OWORD directive
 ms.assetid: 83262c07-6c67-4296-a07d-65502ba5d09c
 ms.openlocfilehash: 6ed24ab7997f0386e4201d9c31d75326c539777a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50451200"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62210729"
 ---
 # <a name="oword"></a>OWORD
 

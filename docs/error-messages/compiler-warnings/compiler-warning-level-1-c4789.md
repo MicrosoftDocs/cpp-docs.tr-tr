@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C4789
 ms.assetid: 5800c301-5afb-4af0-85c1-ceb54d775234
 ms.openlocfilehash: 36a5032098c5caabb1b050833e487fd58679a782
-ms.sourcegitcommit: 6e4dd21759caaed262a7255735cf8d6e8fb9f4d7
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "58476861"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62187237"
 ---
 # <a name="compiler-warning-level-1-c4789"></a>Derleyici Uyarısı (düzey 1) C4789
 
@@ -42,7 +42,7 @@ Visual C++, hiçbir zaman yürüten bir kod yolu için bu uyarı oluşturabilir.
 #pragma warning( pop )
 ```
 
-Bu deyim, bu belirli kod bloğu için uyarı oluşturmasını Visual C++ tutar. `#pragma warning(push)` Önce mevcut durumu korur `#pragma warning(disable: 4789)` değiştirir. `#pragma warning(pop)` Gönderilen durumunu geri yükler ve etkilerini kaldırır `#pragma warning(disable:4789)`. C++ önişlemci yönergesi hakkında daha fazla bilgi için `#pragma`, bkz: [uyarı](../../preprocessor/warning.md) ve [Pragma yönergeleri ve __Pragma anahtar sözcüğü](../../preprocessor/pragma-directives-and-the-pragma-keyword.md).
+Bu deyim, bu belirli kod bloğu için uyarı oluşturmasını Visual C++ tutar. `#pragma warning(push)` Önce mevcut durumu korur `#pragma warning(disable: 4789)` değiştirir. `#pragma warning(pop)` Gönderilen durumunu geri yükler ve etkilerini kaldırır `#pragma warning(disable:4789)`. Hakkında daha fazla bilgi için C++ önişlemci yönergesi `#pragma`, bkz: [uyarı](../../preprocessor/warning.md) ve [Pragma yönergeleri ve __Pragma anahtar sözcüğü](../../preprocessor/pragma-directives-and-the-pragma-keyword.md).
 
 ## <a name="example"></a>Örnek
 

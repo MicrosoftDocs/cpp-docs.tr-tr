@@ -11,11 +11,11 @@ helpviewer_keywords:
 - data transfer classes [MFC]
 ms.assetid: c8ab2825-ed69-4b88-8ae6-f368b94726b8
 ms.openlocfilehash: e30a358da55b29f9519bc1ab8ee5c93ada308d98
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57284430"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62186068"
 ---
 # <a name="ole-drag-and-drop-and-data-transfer-classes"></a>OLE Sürükle/Bırak ve Veri Aktarımı Sınıfları
 

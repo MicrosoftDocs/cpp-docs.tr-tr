@@ -7,11 +7,11 @@ helpviewer_keywords:
 - functions [C++], calling in specific application domains
 ms.assetid: e1f59b39-8ffe-4a03-8e40-99593ce18d57
 ms.openlocfilehash: 329b3ad217a93028b506059dfa6eda1c9a579e38
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57745570"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62209262"
 ---
 # <a name="calling-functions-in-a-specific-application-domain"></a>Belirli Bir Uygulama Etki Alanında İşlevleri Çağırma
 

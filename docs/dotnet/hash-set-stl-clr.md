@@ -96,11 +96,11 @@ helpviewer_keywords:
 - value_type member [STL/CLR]
 ms.assetid: d110e356-ba3e-4e52-9e2d-d997bf975c96
 ms.openlocfilehash: 3cfd4e97af8b5abf163ce88eb81b438ef4737ed5
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50636169"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62222903"
 ---
 # <a name="hashset-stlclr"></a>hash_set (STL/CLR)
 
@@ -236,7 +236,7 @@ Silme veya bir öğenin kaldırılması için depolanan değerine yıkıcı ça�
 
 ## <a name="members"></a>Üyeler
 
-## <a name="begin"></a> hash_set::Begin (STL/CLR)
+## <a name="begin"></a> hash_set::begin (STL/CLR)
 
 Denetlenen dizinin başlangıcını belirtir.
 
@@ -551,7 +551,7 @@ size_type count(key_type key);
 
 #### <a name="parameters"></a>Parametreler
 
-*Anahtarı*<br/>
+*anahtar*<br/>
 Aranacak anahtar değeri.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -760,7 +760,7 @@ cliext::pair<iterator, iterator> equal_range(key_type key);
 
 #### <a name="parameters"></a>Parametreler
 
-*Anahtarı*<br/>
+*anahtar*<br/>
 Aranacak anahtar değeri.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -825,7 +825,7 @@ bool erase(key_type key)
 *ilk*<br/>
 Silme aralığını başlangıcı.
 
-*Anahtarı*<br/>
+*anahtar*<br/>
 Silinecek anahtar değer.
 
 *Son*<br/>
@@ -892,7 +892,7 @@ erase(begin(), end()-1) = e
 size() = 1
 ```
 
-## <a name="find"></a> hash_set::Find (STL/CLR)
+## <a name="find"></a> hash_set::find (STL/CLR)
 
 Belirtilen bir anahtarla eşleşen bir öğeyi bulur.
 
@@ -904,7 +904,7 @@ iterator find(key_type key);
 
 #### <a name="parameters"></a>Parametreler
 
-*Anahtarı*<br/>
+*anahtar*<br/>
 Aranacak anahtar değeri.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -1962,7 +1962,7 @@ iterator lower_bound(key_type key);
 
 #### <a name="parameters"></a>Parametreler
 
-*Anahtarı*<br/>
+*anahtar*<br/>
 Aranacak anahtar değeri.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -2019,7 +2019,7 @@ static value_type make_value(key_type key);
 
 #### <a name="parameters"></a>Parametreler
 
-*Anahtarı*<br/>
+*anahtar*<br/>
 Kullanılacak anahtar değeri.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -2665,7 +2665,7 @@ iterator upper_bound(key_type key);
 
 #### <a name="parameters"></a>Parametreler
 
-*Anahtarı*<br/>
+*anahtar*<br/>
 Aranacak anahtar değeri.
 
 ### <a name="remarks"></a>Açıklamalar

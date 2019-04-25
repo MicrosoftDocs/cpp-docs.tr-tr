@@ -9,11 +9,11 @@ helpviewer_keywords:
 - operator SIGN?
 ms.assetid: bdc431db-4623-4c7f-9eb6-31aab62dcd79
 ms.openlocfilehash: 6b7547c846e0420e92086e7c1c8786c9433ef9a3
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50662882"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62200739"
 ---
 # <a name="operator-sign"></a>SIGN? işleci
 

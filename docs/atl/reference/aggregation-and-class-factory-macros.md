@@ -18,11 +18,11 @@ helpviewer_keywords:
 - aggregation [C++], ATL macros
 ms.assetid: d99d379a-0eec-481f-8daa-252dac18f163
 ms.openlocfilehash: 889ed4bbfc21209a64cfd9e4fee4b2335ce62010
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57274901"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62249079"
 ---
 # <a name="aggregation-and-class-factory-macros"></a>Toplama ve sınıf üreticisi makroları
 

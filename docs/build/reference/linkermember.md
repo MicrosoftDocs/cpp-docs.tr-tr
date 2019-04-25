@@ -9,11 +9,11 @@ helpviewer_keywords:
 - -LINKERMEMBER dumpbin option
 ms.assetid: c96868c1-d70e-4651-ae36-c55b58b16406
 ms.openlocfilehash: a0456fd9ed1729b4a6cfa200a54ba211a64e94ea
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57813285"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62216591"
 ---
 # <a name="linkermember"></a>/LINKERMEMBER
 

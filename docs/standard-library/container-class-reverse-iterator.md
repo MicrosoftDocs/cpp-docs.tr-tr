@@ -5,11 +5,11 @@ helpviewer_keywords:
 - reverse_iterator method
 ms.assetid: 1d190c41-56b1-462e-b564-793b2a883c26
 ms.openlocfilehash: 529c31ca960c2c7aee70c901bc1c1e0bd5d6e466
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50537182"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62210997"
 ---
 # <a name="container-classreverseiterator"></a>Kapsayıcı Sınıfı::reverse_iterator
 

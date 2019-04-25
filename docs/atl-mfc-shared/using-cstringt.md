@@ -5,11 +5,11 @@ helpviewer_keywords:
 - CStringT class, using
 ms.assetid: 3a9fffb1-6f90-482a-ab69-4003e6084cb5
 ms.openlocfilehash: 49b21d8a267eb2e8cf8c806ef21b4dd8ab36a1ff
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57740855"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62252532"
 ---
 # <a name="using-cstringt"></a>CStringT kullanma
 

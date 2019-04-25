@@ -10,11 +10,11 @@ helpviewer_keywords:
 - common dialog classes [MFC]
 ms.assetid: 706526ae-f94f-4909-a0f8-6b5fe954fd97
 ms.openlocfilehash: d34c141fc9a2b53eab6a4c0b0ce1799ff5243d84
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57263552"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62186398"
 ---
 # <a name="ole-common-dialog-classes"></a>OLE Ortak İletişim Kutusu Sınıfları
 

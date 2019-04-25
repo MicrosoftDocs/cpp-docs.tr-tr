@@ -9,11 +9,11 @@ helpviewer_keywords:
 - MFC DLLs [C++], Active Technology
 ms.assetid: 3ed27f8d-164a-4562-ad61-9f2333404cc7
 ms.openlocfilehash: 9633d60520a2a634ffe78d0fb9d48f6dd2ca7333
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57817461"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62195560"
 ---
 # <a name="active-technology-and-dlls"></a>Etkin Teknoloji ve DLL'ler
 

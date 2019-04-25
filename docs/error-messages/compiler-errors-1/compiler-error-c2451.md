@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2451
 ms.assetid: a64c93a5-ab8d-4d39-ae57-9ee7ef803036
 ms.openlocfilehash: bd69861b42e14ae30b4d57658719e7a2ce3617ac
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50487197"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62208791"
 ---
 # <a name="compiler-error-c2451"></a>Derleyici Hatası C2451
 

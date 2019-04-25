@@ -9,11 +9,11 @@ helpviewer_keywords:
 - time, getting current
 ms.assetid: c39e6775-6a92-4b27-95a7-5c86ed371d8a
 ms.openlocfilehash: e883a47243feb7ad1555748ffdda9b8ae9594644
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50539262"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62236220"
 ---
 # <a name="current-time-general-purpose-classes"></a>Geçerli zaman: Genel amaçlı sınıflar
 

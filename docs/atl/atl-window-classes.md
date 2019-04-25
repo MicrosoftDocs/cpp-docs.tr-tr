@@ -11,11 +11,11 @@ helpviewer_keywords:
 - superclassing, ATL
 ms.assetid: 1d12b708-de3e-49d5-9e41-42fe4769fa62
 ms.openlocfilehash: 15c59f964e6b6794f64ed8da64cba6f569879fac
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57274498"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62223335"
 ---
 # <a name="atl-window-classes"></a>ATL Pencere Sınıfları
 

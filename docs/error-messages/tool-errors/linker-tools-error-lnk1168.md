@@ -7,11 +7,11 @@ helpviewer_keywords:
 - LNK1168
 ms.assetid: 97ead151-fd99-46fe-9a1d-7e84dc0b8cc8
 ms.openlocfilehash: d18aacd23a7ce9ed49f12a62f8358bb6d668c778
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50622124"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62254942"
 ---
 # <a name="linker-tools-error-lnk1168"></a>Bağlayıcı Araçları Hatası LNK1168
 

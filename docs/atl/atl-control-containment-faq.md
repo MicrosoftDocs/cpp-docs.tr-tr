@@ -9,11 +9,11 @@ helpviewer_keywords:
 - controls [ATL]
 ms.assetid: d4bdfbe0-82ca-4f2f-bb95-cb89bdcc9b53
 ms.openlocfilehash: 42f9b41b99e13fcfe2fb003acb348c9464e0fd05
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57296572"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62223328"
 ---
 # <a name="atl-control-containment-faq"></a>ATL Denetim Kapsamı SSS
 

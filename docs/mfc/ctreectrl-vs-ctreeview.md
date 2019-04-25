@@ -11,11 +11,11 @@ helpviewer_keywords:
 - tree controls [MFC], and tree view
 ms.assetid: bba5af25-103f-4b53-84d3-071bc9bd6494
 ms.openlocfilehash: 29349e169e5ad8475001235d9b355da52156d683
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57271638"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62241975"
 ---
 # <a name="ctreectrl-vs-ctreeview"></a>CTreeCtrl ile CTreeView
 

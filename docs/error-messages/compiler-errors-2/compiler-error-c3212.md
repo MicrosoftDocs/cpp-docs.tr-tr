@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3212
 ms.assetid: 9e271bb6-a51f-4b96-b26b-9f4ca28fca0a
 ms.openlocfilehash: ac3e632894d269bb37860492c2bc63881fabe665
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50462354"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62243069"
 ---
 # <a name="compiler-error-c3212"></a>Derleyici Hatası C3212
 

@@ -10,11 +10,11 @@ helpviewer_keywords:
 - shared classes, CFixedStringT
 ms.assetid: 6d4171ba-3104-493a-a6cc-d515f4ba9a4b
 ms.openlocfilehash: 6c7649b7131e3b1620112acf89867d0731d7265d
-ms.sourcegitcommit: 309dc532f13242854b47759cef846de59bb807f1
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58564872"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62235171"
 ---
 # <a name="cfixedstringt-class"></a>CFixedStringT sınıfı
 

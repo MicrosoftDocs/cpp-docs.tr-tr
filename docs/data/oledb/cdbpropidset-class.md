@@ -34,11 +34,11 @@ helpviewer_keywords:
 - SetGUID method
 ms.assetid: 52bb806c-9581-494d-9af7-50d8a4834805
 ms.openlocfilehash: 9e878af3acf4c4d3a6ca785454c4bb072f17cf09
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59022417"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62209327"
 ---
 # <a name="cdbpropidset-class"></a>CDBPropIDSet Sınıfı
 

@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C4077
 ms.assetid: c2d28805-b33f-41ad-afba-33b3f788c649
 ms.openlocfilehash: 5171ee79c3afd32e847483568fbbf90222747509
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50442218"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62208356"
 ---
 # <a name="compiler-warning-level-1-c4077"></a>Derleyici Uyarısı (düzey 1) C4077
 

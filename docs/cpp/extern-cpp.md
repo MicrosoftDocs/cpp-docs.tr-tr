@@ -10,11 +10,11 @@ helpviewer_keywords:
 - external linkage, extern modifier
 ms.assetid: 1e2f0ae3-ae98-4410-85b5-222d6abc865a
 ms.openlocfilehash: 4a3a4e158794e06f28c638e87e014ddc3fb99837
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50648727"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62183745"
 ---
 # <a name="extern-c"></a>extern (C++)
 

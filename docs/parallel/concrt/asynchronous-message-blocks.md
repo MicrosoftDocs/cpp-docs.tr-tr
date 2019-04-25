@@ -7,11 +7,11 @@ helpviewer_keywords:
 - greedy join [Concurrency Runtime]
 ms.assetid: 79c456c0-1692-480c-bb67-98f2434c1252
 ms.openlocfilehash: de6a433ab733207d5c56b46e693837056a0cd8b1
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57274173"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62237083"
 ---
 # <a name="asynchronous-message-blocks"></a>Zaman Uyumsuz İleti Blokları
 
@@ -117,7 +117,7 @@ Aşağıdaki tabloda, bu özellikleri için çeşitli ileti bloğu türleri nas�
 |`choice`|Her ikisi de|Sıralı|10|1.|
 |`join`|Her ikisi de|Sıralı|sınırsız|1.|
 |`multitype_join`|Her ikisi de|Sıralı|10|1.|
-|`timer`|Kaynak|Uygulanamaz|Uygulanamaz|1.|
+|`timer`|Source|Uygulanamaz|Uygulanamaz|1.|
 
 Aşağıdaki bölümlerde daha ayrıntılı ileti bloğu türleri açıklanmaktadır.
 
@@ -125,8 +125,7 @@ Aşağıdaki bölümlerde daha ayrıntılı ileti bloğu türleri açıklanmakta
 
 ##  <a name="unbounded_buffer"></a> unbounded_buffer sınıfı
 
-[Concurrency::unbounded_buffer](reference/unbounded-buffer-class.md) sınıfı, genel amaçlı bir zaman uyumsuz ileti yapısını temsil eder. Bu sınıf, iletilerin birden çok kaynak tarafından yazılabilen veya birden çok hedef tarafından okunabilen bir ilk giren ilk çıkar (FIFO) sırasını tutar. Bir hedefe bir ileti aldığında bir `unbounded_buffer` nesnesi, bu iletiyi, ileti sırasından kaldırılır. Bu nedenle, ancak bir `unbounded_buffer` nesne birden çok hedefe sahip olabilir, her ileti yalnızca bir hedef alır. 
-  `unbounded_buffer` sınıfı, başka bir bileşene birden çok ileti geçirmek istediğinizde ve bu bileşenin her iletiyi alması gerektiğinde kullanışlıdır.
+[Concurrency::unbounded_buffer](reference/unbounded-buffer-class.md) sınıfı, genel amaçlı bir zaman uyumsuz ileti yapısını temsil eder. Bu sınıf, iletilerin birden çok kaynak tarafından yazılabilen veya birden çok hedef tarafından okunabilen bir ilk giren ilk çıkar (FIFO) sırasını tutar. Bir hedefe bir ileti aldığında bir `unbounded_buffer` nesnesi, bu iletiyi, ileti sırasından kaldırılır. Bu nedenle, ancak bir `unbounded_buffer` nesne birden çok hedefe sahip olabilir, her ileti yalnızca bir hedef alır. `unbounded_buffer` sınıfı, başka bir bileşene birden çok ileti geçirmek istediğinizde ve bu bileşenin her iletiyi alması gerektiğinde kullanışlıdır.
 
 ### <a name="example"></a>Örnek
 
@@ -168,8 +167,7 @@ Nasıl kullanılacağını gösteren tam bir örnek `overwrite_buffer` sınıfı
 
 ##  <a name="single_assignment"></a> single_assignment sınıfı
 
-[Concurrency::single_assignment](../../parallel/concrt/reference/single-assignment-class.md) sınıfına benzer `overwrite_buffer` ancak bir `single_assignment` nesne yalnızca bir kez yazılabilir. 
-  `overwrite_buffer` sınıfı gibi, hedef de bir `single_assignment` nesnesinden ileti aldığında, o ileti nesneden kaldırılmaz. Bu nedenle, birden çok hedef iletinin bir kopyasını alır. `single_assignment` Sınıfı, bir iletiyi birden çok bileşene yayınlamak istediğinizde yararlıdır.
+[Concurrency::single_assignment](../../parallel/concrt/reference/single-assignment-class.md) sınıfına benzer `overwrite_buffer` ancak bir `single_assignment` nesne yalnızca bir kez yazılabilir. `overwrite_buffer` sınıfı gibi, hedef de bir `single_assignment` nesnesinden ileti aldığında, o ileti nesneden kaldırılmaz. Bu nedenle, birden çok hedef iletinin bir kopyasını alır. `single_assignment` Sınıfı, bir iletiyi birden çok bileşene yayınlamak istediğinizde yararlıdır.
 
 ### <a name="example"></a>Örnek
 

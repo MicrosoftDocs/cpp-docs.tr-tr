@@ -10,11 +10,11 @@ helpviewer_keywords:
 - styles [MFC], windows
 ms.assetid: fc5058c1-eec8-48d8-9f76-3fc01cfa53f7
 ms.openlocfilehash: cade8e7e50779437feb73a94058dc62118c03c10
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57274654"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62219749"
 ---
 # <a name="frame-window-styles-c"></a>Çerçeve Pencere Stilleri (C++)
 

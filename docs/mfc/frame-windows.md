@@ -16,11 +16,11 @@ helpviewer_keywords:
 - splitter windows [MFC], and frame windows
 ms.assetid: 40677339-8135-4f5e-aba6-3fced3078077
 ms.openlocfilehash: 939230753f25db38e6ba2f26340f40ddf74d23bf
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57271144"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62219835"
 ---
 # <a name="frame-windows"></a>Çerçeve Pencereleri
 

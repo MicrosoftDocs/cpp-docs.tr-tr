@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2762
 ms.assetid: 8b81a801-fd48-40a1-8bee-0748795b12e4
 ms.openlocfilehash: 0cb05d0e111319ff135bdb48d51af6eb4a2f2353
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50574076"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62257549"
 ---
 # <a name="compiler-error-c2762"></a>Derleyici Hatası C2762
 

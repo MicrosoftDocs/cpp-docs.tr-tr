@@ -7,11 +7,11 @@ helpviewer_keywords:
 - 'msbuild (c++), howto: add custom build tools'
 ms.assetid: de03899a-371d-4396-9bf9-34f45a65e909
 ms.openlocfilehash: 05f160e650c0dd717d7ce0f29259f866d751fdba
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57815274"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62188905"
 ---
 # <a name="how-to-add-custom-build-tools-to-msbuild-projects"></a>Nasıl yapılır: MSBuild projelerine özel derleme araçları ekleme
 

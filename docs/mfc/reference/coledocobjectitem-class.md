@@ -25,11 +25,11 @@ helpviewer_keywords:
 - COleDocObjectItem [MFC], Release
 ms.assetid: d150d306-8fd3-4831-b06d-afbe71d8fc9b
 ms.openlocfilehash: 382960b4dc4dcfa61c836a87044dd14585756174
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58769653"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62225522"
 ---
 # <a name="coledocobjectitem-class"></a>Coledocobjectıtem sınıfı
 

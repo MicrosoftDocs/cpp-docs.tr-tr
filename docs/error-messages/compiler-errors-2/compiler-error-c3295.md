@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3295
 ms.assetid: 83f0aa4d-0e0a-4905-9f66-fcf9991fc07a
 ms.openlocfilehash: 63739989d737527e3f136bb3aac2269eda6231c1
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50601701"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62222563"
 ---
 # <a name="compiler-error-c3295"></a>Derleyici Hatası C3295
 

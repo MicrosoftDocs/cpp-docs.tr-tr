@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C4288
 ms.assetid: 6aaeb139-90cd-457a-9d37-65687042736f
 ms.openlocfilehash: d8769f5663ca0bde9048e52d4579012dfccab0a1
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50532034"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62207101"
 ---
 # <a name="compiler-warning-level-1-c4288"></a>Derleyici Uyarısı (düzey 1) C4288
 

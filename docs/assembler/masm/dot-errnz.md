@@ -7,11 +7,11 @@ helpviewer_keywords:
 - .ERRNZ directive
 ms.assetid: 373a9222-140f-4505-8dec-ef370a069ebf
 ms.openlocfilehash: 8998f4609b2b8d8e15a31455ac342e7bd5c0a025
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50677207"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62185206"
 ---
 # <a name="errnz"></a>.ERRNZ
 

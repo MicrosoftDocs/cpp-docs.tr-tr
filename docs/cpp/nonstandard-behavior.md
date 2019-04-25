@@ -7,11 +7,11 @@ helpviewer_keywords:
 - nonstandard behavior, compliance and compatibility
 ms.assetid: a57dea27-dc79-4f64-8a83-017e84841773
 ms.openlocfilehash: b7546914f4cd417f127af56fb7342903989d8330
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50638210"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62245381"
 ---
 # <a name="nonstandard-behavior"></a>Standart Dışı Davranış
 
@@ -75,7 +75,7 @@ void g() throw();    // parsed and used
 
 ## <a name="chartraitseof"></a>char_traits::eof()
 
-C++ standartı [char_traits::eof](../standard-library/char-traits-struct.md#eof) geçerli bir karşılık gelmelidir değil `char_type` değeri. Visual C++ derleyicisi türü için bu kısıtlamayı zorlar **char**, ancak türü **wchar_t**. Bu, C++ ISO belirtiminin 12.1.1 bölümündeki Tablo 62'deki gereksinimlerle uyumlu değildir. Aşağıdaki örnek bunu gösterir.
+C++ Standart durumları [char_traits::eof](../standard-library/char-traits-struct.md#eof) geçerli bir karşılık gelmelidir değil `char_type` değeri. Görsel C++ derleyici türü için bu kısıtlamayı zorlar **char**, ancak türü **wchar_t**. Bu, C++ ISO belirtiminin 12.1.1 bölümündeki Tablo 62'deki gereksinimlerle uyumlu değildir. Aşağıdaki örnek bunu gösterir.
 
 ```cpp
 #include <iostream>

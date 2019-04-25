@@ -10,11 +10,11 @@ helpviewer_keywords:
 - logical negation
 ms.assetid: 650add9f-a7bc-426c-b01d-5fc6a81c8b62
 ms.openlocfilehash: 7b37e5108ca01d782c13508c0cd7a96b096cd745
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50493739"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62216414"
 ---
 # <a name="logical-negation-operator-"></a>Mantıksal Değilleme İşleci: !
 

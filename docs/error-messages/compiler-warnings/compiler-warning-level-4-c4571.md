@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C4571
 ms.assetid: 07aa17bd-b15c-4266-824c-57cc445e8edd
 ms.openlocfilehash: 92164bf297a44871897b6c6150eb54f8c5ccf3cc
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50431063"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62220461"
 ---
 # <a name="compiler-warning-level-4-c4571"></a>Derleyici Uyarısı (düzey 4) C4571
 
@@ -29,7 +29,7 @@ Aşağıdaki yollardan biriyle C4571 çözümleyebilir,
 
 - Yapılandırılmış özel durumları yakalamak için gt;catch(...) blokları istemiyorsanız, ancak yine de gt;catch(...) blokları kullanmak istediğiniz C4571 etkinleştirmeyin.  Yine de yapılandırılmış özel durum işleme anahtar sözcükleri kullanarak yapılandırılmış özel durumları yakalayabilir (**__try**, **__except**, ve **__finally**).  Ancak, derlendiğinde unutmayın **EHS** yok ediciler, yalnızca değil bir SEH özel durumu oluştuğunda C++ özel durum oluştuğunda çağrılır.
 
-- Catch blokları için belirli C++ özel durumlarını gt;catch(...) blok değiştirin ve isteğe bağlı olarak, yapılandırılmış özel durum işlemeyi C++ özel durum işlemeyi geçici olarak ekleyin (**__try**, **__except**, ve **_ _finally**).  Bkz: [yapılandırılmış özel durum işleme (C/C++)](../../cpp/structured-exception-handling-c-cpp.md) daha fazla bilgi için.
+- Catch blokları belirli gt;catch(...) blok yerine C++ özel durumlar ve isteğe bağlı olarak, yapılandırılmış özel durum geçici olarak işleme ekleme C++ özel durum işleme (**__try**, **__except**, ve **__finally**).  Bkz: [yapılandırılmış özel durum işleme (C/C++)](../../cpp/structured-exception-handling-c-cpp.md) daha fazla bilgi için.
 
 Bkz: [/EH (özel durum işleme modeli)](../../build/reference/eh-exception-handling-model.md) daha fazla bilgi için.
 

@@ -7,11 +7,11 @@ helpviewer_keywords:
 - D8027
 ms.assetid: f228220f-0c7f-49a6-a6e0-1f7bd4745aa6
 ms.openlocfilehash: d3a7908ec9e7e37d83fd7b928cad2ef256313c40
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50526827"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62214187"
 ---
 # <a name="command-line-error-d8027"></a>Komut Satırı Hatası D8027
 

@@ -5,11 +5,11 @@ helpviewer_keywords:
 - MASM (Microsoft Macro Assembler), symbols reference
 ms.assetid: 96ed59cc-dafa-4299-bb2e-9c7c3f496491
 ms.openlocfilehash: e57583ce2b4184120569be3a44d87ffc3f51586c
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51326621"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62210222"
 ---
 # <a name="symbols-reference"></a>Semboller Başvurusu
 

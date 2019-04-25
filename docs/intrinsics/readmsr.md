@@ -9,11 +9,11 @@ helpviewer_keywords:
 - __readmsr intrinsic
 ms.assetid: 7ab1f8e8-72cb-4ce4-817d-3e728a3c9716
 ms.openlocfilehash: 2c866213c452f3b8791bf0fe031a43bb024e91fb
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59027643"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62262781"
 ---
 # <a name="readmsr"></a>__readmsr
 

@@ -20,11 +20,11 @@ helpviewer_keywords:
 - shared classes, CStringData
 ms.assetid: 4e31b5ca-3dbe-4fd5-b692-8211fbfb2593
 ms.openlocfilehash: 5977d26cade89f2e70453d5184323958e99e54c4
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57748521"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62198143"
 ---
 # <a name="cstringdata-class"></a>CStringData sınıfı
 

@@ -5,11 +5,11 @@ helpviewer_keywords:
 - COM components, registration-free
 ms.assetid: 7e585d6a-0314-45b2-8f1b-cae9ac4df037
 ms.openlocfilehash: 783677c97835acc98751fc4a19f9405af752b71a
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57809606"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62188944"
 ---
 # <a name="how-to-build-registration-free-com-components"></a>Nasıl yapılır: Kayıt gerektirmeyen COM bileşenlerini derleme
 

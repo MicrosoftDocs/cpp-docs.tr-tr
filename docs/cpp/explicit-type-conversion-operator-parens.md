@@ -9,11 +9,11 @@ helpviewer_keywords:
 - type conversion [C++], explicit conversions
 ms.assetid: 54272006-5ffb-45ed-8283-27152ab97529
 ms.openlocfilehash: 9dc9440db9ea1ff7285ff9b682f6be9900c2a1ff
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50527705"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62184319"
 ---
 # <a name="explicit-type-conversion-operator-"></a>Açık Tür Dönüştürme İşleci: ()
 
@@ -123,7 +123,7 @@ Point pt = Point( 3, 10 );
 
 [Atama](../cpp/cast-operator-parens.md) gösterimi sahip olmadığınız türlere dönüştürmeler için kullanılması gereken bir *basit tür adı* (işaretçi veya başvuru türleri gibi). İle ifade edilebilen türlere dönüşüm için bir *basit tür adı* iki biçimden biriyle yazılabilir.
 
-Atamalar içinde tür tanımı olamaz.
+Atamalar içinde tür tanımı geçersiz.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -4,11 +4,11 @@ ms.date: 1/09/2018
 f1_keywords:
 - Concepts
 ms.openlocfilehash: 8d021350125acda52bb4ecf3919282cb7bbe52b1
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58766514"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62239031"
 ---
 # <a name="mfc-concepts"></a>MFC Kavramları
 

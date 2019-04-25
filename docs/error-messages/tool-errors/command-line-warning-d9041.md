@@ -7,11 +7,11 @@ helpviewer_keywords:
 - D9041
 ms.assetid: ada8815f-4246-4e25-b57d-a7f16fa107cc
 ms.openlocfilehash: d9a32fbf961e980633635f277a76955a706a4b0e
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59021462"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62213789"
 ---
 # <a name="command-line-warning-d9041"></a>Komut Satırı Uyarısı D9041
 

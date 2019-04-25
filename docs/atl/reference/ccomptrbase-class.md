@@ -18,11 +18,11 @@ helpviewer_keywords:
 - CComPtrBase class
 ms.assetid: 6dbe9543-dee8-4a97-b02f-dd3a25f4a1a0
 ms.openlocfilehash: 5bb599b88671447e219421efacac7a2d8a5f7b06
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57261706"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62246237"
 ---
 # <a name="ccomptrbase-class"></a>CComPtrBase Class
 
@@ -69,8 +69,7 @@ Akıllı işaretçi tarafından başvurulabilmesi için nesne türü.
 |[CComPtrBase::operator T *](#operator_t_star)|Atama işleci.|
 |[CComPtrBase::operator!](#operator_not)|NOT işleci.|
 |[CComPtrBase::operator &](#operator_amp)|& İşleci.|
-|[CComPtrBase::operator *](#operator_star)|
-  \* işleci.|
+|[CComPtrBase::operator *](#operator_star)|\* işleci.|
 |[CComPtrBase::operator <](#ccomptrbase__operator lt)|Daha az-işleci.|
 |[CComPtrBase::operator ==](#operator_eq_eq)|Eşitlik işleci.|
 |[CComPtrBase::operator ->](#operator_ptr)|İşaretçi-üye işleci.|
@@ -270,8 +269,7 @@ Tarafından işaret edilen nesnenin adresini döndürür `CComPtrBase` nesne.
 
 ##  <a name="operator_star"></a>  CComPtrBase::operator \*
 
-
-  \* işleci.
+\* işleci.
 
 ```
 T& operator*() const throw();

@@ -12,11 +12,11 @@ helpviewer_keywords:
 - try-catch keyword [C++], termination handlers
 ms.assetid: 52aa1f8f-f8dd-44b8-be94-5e2fc88d44fb
 ms.openlocfilehash: f0b994075a8d59ce5d0955f10bf8c61d357d2db9
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50573400"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62209474"
 ---
 # <a name="writing-a-termination-handler"></a>Sonlandırma İşleyicisi Yazma
 

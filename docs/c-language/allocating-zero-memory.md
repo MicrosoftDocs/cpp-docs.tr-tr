@@ -6,11 +6,11 @@ helpviewer_keywords:
 - zero memory
 ms.assetid: 768f2ab9-83a1-4887-8eb5-c094c18489a8
 ms.openlocfilehash: 40f21c0fa9a2a4068cb2592c49ccefed82176a35
-ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56147470"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62313499"
 ---
 # <a name="allocating-zero-memory"></a>Sıfır Bellek Ayırma
 

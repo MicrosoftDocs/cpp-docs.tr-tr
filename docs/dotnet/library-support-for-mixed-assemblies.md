@@ -8,11 +8,11 @@ helpviewer_keywords:
 - libraries [C++], mixed assemblies
 ms.assetid: 1229595c-9e9d-414d-b018-b4e4c727576d
 ms.openlocfilehash: 42116c09d5b31cf669eb6d5d1e75eae60b2610a7
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50474768"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62312014"
 ---
 # <a name="library-support-for-mixed-assemblies"></a>Karışık Derlemeler için Kitaplık Desteği
 

@@ -10,11 +10,11 @@ helpviewer_keywords:
 - foreground colors [MFC]
 ms.assetid: 8b98c8c5-5b69-4366-87bf-0e61e6668ecb
 ms.openlocfilehash: 940f61c9ce6ccb57843333582455e61c1f7ac73b
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57289695"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62225349"
 ---
 # <a name="mfc-activex-controls-adding-stock-properties"></a>MFC ActiveX denetimleri: Stok Özellikler ekleme
 

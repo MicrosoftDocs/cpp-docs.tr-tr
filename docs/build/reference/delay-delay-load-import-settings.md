@@ -13,11 +13,11 @@ helpviewer_keywords:
 - -DELAY linker option
 ms.assetid: 9334b332-cc58-4dae-b10f-a4c75972d50c
 ms.openlocfilehash: d3c32ba04cbad509ff2819020a35102698d6ceb3
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57821345"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62272132"
 ---
 # <a name="delay-delay-load-import-settings"></a>/DELAY (Gecikme Yükü İçe Aktarma Ayarları)
 
@@ -57,4 +57,4 @@ Gecikme yükü DLL'lerini belirtmek için kullanın [/delayload](delayload-delay
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [MSVC bağlayıcı başvurusu](linking.md)<br/>
-[MSVC bağlayıcı seçenekleri](linker-options.md)
+[MSVC Bağlayıcı Seçenekleri](linker-options.md)

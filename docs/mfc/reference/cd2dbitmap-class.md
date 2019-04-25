@@ -52,11 +52,11 @@ helpviewer_keywords:
 - CD2DBitmap [MFC], m_uiResID
 ms.assetid: 2b3686f1-812c-462b-b449-9f0cb6949bf6
 ms.openlocfilehash: 288ba5e1503a4e3eefe83624cf9a489274a10823
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57264722"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62253948"
 ---
 # <a name="cd2dbitmap-class"></a>CD2DBitmap sınıfı
 

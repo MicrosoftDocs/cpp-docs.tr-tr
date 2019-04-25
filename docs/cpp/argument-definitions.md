@@ -9,11 +9,11 @@ helpviewer_keywords:
 - argc argument
 ms.assetid: 6148cbf3-ebe8-44f2-b277-de4b723991c7
 ms.openlocfilehash: 92e213b5accbf8fd5f48ac2111a169e585d82a1d
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51328129"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62184455"
 ---
 # <a name="argument-definitions"></a>Bağımsız Değişken Tanımları
 

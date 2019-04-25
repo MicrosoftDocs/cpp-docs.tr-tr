@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2774
 ms.assetid: 10f428c6-7f49-489a-92ba-6ef978b7caaf
 ms.openlocfilehash: 6197e3da81a9f059c90d15608a939ad4887e526d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50586894"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62257146"
 ---
 # <a name="compiler-error-c2774"></a>Derleyici Hatası C2774
 

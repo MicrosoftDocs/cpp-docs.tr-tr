@@ -10,11 +10,11 @@ helpviewer_keywords:
 - _endthreadex function
 ms.assetid: 39d0529c-c392-4c6f-94f5-105d1e8054e4
 ms.openlocfilehash: 392fc8e842d86a17013502ffc68c89eb65ba23db
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57299991"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62236679"
 ---
 # <a name="c-run-time-library-functions-for-thread-control"></a>İş Parçacığı Denetimi için C Çalışma Süresi Kitaplık İşlevleri
 

@@ -12,11 +12,11 @@ helpviewer_keywords:
 - hour values representation
 ms.assetid: 695853ed-b614-4575-b793-b8c287372038
 ms.openlocfilehash: bd63b400cad6efc3b3899c17a3bf835596b4008c
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57750396"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62235628"
 ---
 # <a name="date-type"></a>Tarih türü
 

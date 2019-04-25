@@ -8,11 +8,11 @@ helpviewer_keywords:
 - conditional
 ms.assetid: ece9f539-fb28-4e26-a79f-3264bc984493
 ms.openlocfilehash: be81a1bc32f2f86f1d79970868933bddb8dc3620
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50523025"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62212111"
 ---
 # <a name="conditional-class"></a>conditional Sınıfı
 

@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2452
 ms.assetid: a4ec7642-6660-4c7a-9866-853d1cc67daf
 ms.openlocfilehash: 3e2d583efa2b634cf49d8588fa398bd81f24c607
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59778574"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62208765"
 ---
 # <a name="compiler-error-c2452"></a>Derleyici Hatası C2452
 

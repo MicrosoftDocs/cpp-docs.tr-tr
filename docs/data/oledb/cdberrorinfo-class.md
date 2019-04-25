@@ -45,11 +45,11 @@ helpviewer_keywords:
 - GetErrorRecords method
 ms.assetid: 9a5c18a2-ee3e-40f5-ab4c-581288d7f737
 ms.openlocfilehash: bc13137a4222ba51cf3745f9706353d48068a072
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59021546"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62209340"
 ---
 # <a name="cdberrorinfo-class"></a>CDBErrorInfo Sınıfı
 

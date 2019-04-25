@@ -13,11 +13,11 @@ helpviewer_keywords:
 - reusable component classes [MFC]
 ms.assetid: 96495ec3-319e-4163-b839-1af0428ed9dd
 ms.openlocfilehash: 86470c3e3e66d6aee2ce532570cea096641d2c1d
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57304567"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62186094"
 ---
 # <a name="ole-control-classes"></a>OLE Denetim Sınıfları
 

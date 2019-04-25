@@ -7,11 +7,11 @@ helpviewer_keywords:
 - pinning pointers
 ms.assetid: 57c5ec8a-f85a-48c4-ba8b-a81268bcede0
 ms.openlocfilehash: 901980c76aac5dd364f2fa2fae0e007f5d25f3d8
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59035724"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62254871"
 ---
 # <a name="how-to-declare-pinning-pointers-and-value-types"></a>Nasıl yapılır: Sabitleme işaretçileri ve değer türleri
 

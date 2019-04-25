@@ -9,11 +9,11 @@ helpviewer_keywords:
 - identifiers [C++]
 ms.assetid: 03a0dfb1-4530-4cdf-8295-5ea4dca4c1b8
 ms.openlocfilehash: 6f87486d0bb2614a3b2542cf050172a47f152c4c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50653667"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62184607"
 ---
 # <a name="identifiers-c"></a>Tanımlayıcılar (C++)
 
@@ -87,7 +87,7 @@ int main() {
 }
 ```
 
-Bir tanımlayıcı izin verilen karakter aralığı daha az kısıtlayıcı olduğunda C + derleniyor +/ CLI kodu. / CLR ile derlenmiş kodda tanımlayıcıları izlemelidir [ECMA-335 standart: ortak dil altyapısı (CLI)](http://www.ecma-international.org/publications/standards/Ecma-335.htm).
+Bir tanımlayıcı izin verilen karakter aralığı daha az kısıtlayıcı olduğunda C + derleniyor +/ CLI kodu. / CLR ile derlenmiş kodda tanımlayıcıları izlemelidir [standart ECMA-335: Ortak dil altyapısı (CLI)](http://www.ecma-international.org/publications/standards/Ecma-335.htm).
 
 **END Microsoft özgü**
 
@@ -95,7 +95,7 @@ Bir tanımlayıcının ilk karakteri alfabetik bir karakter, büyük veya küç�
 
 Tanımlayıcılar tam olarak aynı yazım ve çalışması olarak anahtar sözcükler olamaz. Anahtar sözcük içeren tanımlayıcılar kullanılabilir. Örneğin, `Pint` içerse yasal bir tanımlayıcısı olan **int**, bir anahtar sözcük olduğu.
 
-İki ardışık alt çizgi karakterleri kullanımını ( **__** ) bir tanımlayıcı veya büyük harf ve ardından tek bir öncesinde alt çizgi, tüm kapsamlarda C++ uygulamaları için ayrılmıştır. Bir alt çizgi bir küçük harf dosya kapsamına sahip adlar için geçerli veya gelecek ayrılmış tanımlayıcılarla olası çakışmaları ardından kullanarak kaçınmanız gerekir.
+İki ardışık alt çizgi karakterleri kullanımını ( **__** ) için ayrılmış olduğundan, tanımlayıcı veya büyük harf ve ardından tek bir öncesinde alt çizgi, C++ tüm kapsamlar uygulamalarında. Bir alt çizgi bir küçük harf dosya kapsamına sahip adlar için geçerli veya gelecek ayrılmış tanımlayıcılarla olası çakışmaları ardından kullanarak kaçınmanız gerekir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

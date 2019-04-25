@@ -7,11 +7,11 @@ helpviewer_keywords:
 - connection points classes
 ms.assetid: 076365fa-299a-4dce-84c3-a5dff0e0da1f
 ms.openlocfilehash: 8e1ee67f75af1fa38693f7ddb487580ab733cc58
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57819005"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62250820"
 ---
 # <a name="connection-points-classes"></a>Bağlantı noktası sınıfları
 

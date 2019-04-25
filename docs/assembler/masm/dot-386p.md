@@ -7,11 +7,11 @@ helpviewer_keywords:
 - .386P directive
 ms.assetid: 15199091-3bb7-4270-bb9b-878c1c2f2146
 ms.openlocfilehash: 98b0b5d40f9c9ae47995698a53d3f16c14850071
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50555018"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62185672"
 ---
 # <a name="386p"></a>.386P
 

@@ -6,11 +6,11 @@ f1_keywords:
 - client/Microsoft::WRL::Details::RemoveIUnknown
 ms.assetid: 998e711a-7d1a-44c6-a016-e6167aa40863
 ms.openlocfilehash: 3b54f6a3072d82d40db4ac698503f0939e745472
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59036779"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62231437"
 ---
 # <a name="removeiunknown-class"></a>RemoveIUnknown Sınıfı
 

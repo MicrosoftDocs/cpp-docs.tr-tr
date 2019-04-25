@@ -9,11 +9,11 @@ helpviewer_keywords:
 - /APPCONTAINER editbin option
 ms.assetid: 0ca4f1ec-c8de-4a37-b3e2-deda7af0bb88
 ms.openlocfilehash: eb922a29b00fee63effae302505f25c98b04523e
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57820812"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62274033"
 ---
 # <a name="appcontainer"></a>/APPCONTAINER
 

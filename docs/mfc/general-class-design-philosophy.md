@@ -11,11 +11,11 @@ helpviewer_keywords:
 - Windows API [MFC], and MFC
 ms.assetid: e6861ae0-1581-4d9c-9ddf-63f9afcdb913
 ms.openlocfilehash: 4dfa11c73703f5f2d3d17f8278610d32178af679
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57295089"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62219625"
 ---
 # <a name="general-class-design-philosophy"></a>Genel Sınıf Tasarımı Felsefesi
 

@@ -6,11 +6,11 @@ helpviewer_keywords:
 - CComObjectRootEx class
 ms.assetid: 79630c44-f2df-4e9e-b730-400a0ebfbd2b
 ms.openlocfilehash: 80ce9936546b936770d8dedd0ba55f8c05617d37
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57809762"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62197477"
 ---
 # <a name="implementing-ccomobjectrootex"></a>CComObjectRootEx uygulama
 

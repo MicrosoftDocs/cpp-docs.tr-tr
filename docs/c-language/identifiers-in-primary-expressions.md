@@ -5,11 +5,11 @@ helpviewer_keywords:
 - identifiers, designating objects
 ms.assetid: d4602fe6-e7e6-40cc-9823-3b1ebf5d3d38
 ms.openlocfilehash: 053720bcdf635a7e09363712259b558d93a2972c
-ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56151461"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62233092"
 ---
 # <a name="identifiers-in-primary-expressions"></a>Birincil İfadelerdeki Tanımlayıcılar
 

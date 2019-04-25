@@ -9,11 +9,11 @@ helpviewer_keywords:
 - Internet applications [MFC], MFC
 ms.assetid: 67d34117-9839-4f4b-8bb8-0e4a9471c606
 ms.openlocfilehash: 9201859c6a5d9fe2b31c3fc4348a42ff9566fc8c
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57326289"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62239229"
 ---
 # <a name="mfc-classes-for-creating-internet-client-applications"></a>Internet İstemci Uygulamaları Oluşturmak için MFC Sınıfları
 

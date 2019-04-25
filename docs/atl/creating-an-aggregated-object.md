@@ -6,11 +6,11 @@ helpviewer_keywords:
 - aggregate objects [C++], creating
 ms.assetid: fc29d7aa-fd53-4276-9c2f-37379f71b179
 ms.openlocfilehash: 4be8d0e852da91b58125dc01d44eed4560b2b8d9
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57277527"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62250764"
 ---
 # <a name="creating-an-aggregated-object"></a>Toplanan nesne oluşturma
 

@@ -8,11 +8,11 @@ helpviewer_keywords:
 - global hot keys [MFC]
 ms.assetid: e0b95d14-c571-4c9a-9cd1-e7fc1f0e278d
 ms.openlocfilehash: eedeb0547320c8b421fa72647f51b02f834af300
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57273636"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62219612"
 ---
 # <a name="global-hot-keys"></a>Genel Sık Kullanılan Tuşlar
 

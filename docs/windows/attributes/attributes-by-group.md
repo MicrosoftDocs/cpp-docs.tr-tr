@@ -7,11 +7,11 @@ helpviewer_keywords:
 - attributes [C++/CLI]
 ms.assetid: 9f4dd43f-9909-43d6-91d2-05734643876e
 ms.openlocfilehash: bab7013f2c5fd48ef1a22b990499d79c9c217ca9
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59038232"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62217319"
 ---
 # <a name="attributes-by-group"></a>Gruplara Göre Öznitelikler
 

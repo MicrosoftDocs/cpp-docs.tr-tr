@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C4369
 ms.assetid: ade87e84-36be-4e00-be99-2930af848feb
 ms.openlocfilehash: b374b67fa3319be35490358d7664bcb45bc640db
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50623964"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62207036"
 ---
 # <a name="compiler-warning-level-1-c4369"></a>Derleyici Uyarısı (düzey 1) C4369
 

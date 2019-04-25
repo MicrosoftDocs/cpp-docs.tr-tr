@@ -12,11 +12,11 @@ helpviewer_keywords:
 - exporting DLLs [C++], AFX_EXT_CLASS macro
 ms.assetid: 6b72cb2b-e92e-4ecd-bcab-c335e1d1cfde
 ms.openlocfilehash: bcfdc94e8db80daec227d77c20ecec6b14d5af11
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57821228"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62195335"
 ---
 # <a name="exporting-and-importing-using-afxextclass"></a>AFX_EXT_CLASS Kullanarak İçeri ve Dışarı Aktarma
 
@@ -114,7 +114,7 @@ MFC her zaman kullandığından `AFX_DATA` sembol tüm senaryolar için bu tekni
 
 - [Hangi dışa aktarma yönteminin kullanılacağını belirleme](determining-which-exporting-method-to-use.md)
 
-- [__Declspec(dllimport) kullanarak bir uygulamayı içeri aktarın](importing-into-an-application-using-declspec-dllimport.md)
+- [__declspec(dllimport) kullanarak bir uygulamaya aktarma](importing-into-an-application-using-declspec-dllimport.md)
 
 - [DLL'yi Başlat](run-time-library-behavior.md#initializing-a-dll)
 
@@ -122,7 +122,7 @@ MFC her zaman kullandığından `AFX_DATA` sembol tüm senaryolar için bu tekni
 
 - [Düzenlenmiş adlar](reference/decorated-names.md)
 
-- [İçeri ve dışarı aktarma satır içi işlevler](importing-and-exporting-inline-functions.md)
+- [Satır içi işlevleri içeri ve dışarı aktarma](importing-and-exporting-inline-functions.md)
 
 - [Karşılıklı içeri aktarmalar](mutual-imports.md)
 

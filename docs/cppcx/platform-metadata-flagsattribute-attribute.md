@@ -8,11 +8,11 @@ helpviewer_keywords:
 - Platform::Metadata::FlagsAttribute Attribute
 ms.assetid: 56f4a191-cc81-4742-aff8-bd2219c0735c
 ms.openlocfilehash: 3a09aa89cbe73469e994271179192ef7713e3a0e
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57745109"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62183290"
 ---
 # <a name="platformmetadataflagsattribute-attribute"></a>Platform::metadata:: FlagsAttribute özniteliği
 

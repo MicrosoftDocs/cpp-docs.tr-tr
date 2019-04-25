@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C4003
 ms.assetid: 0ed1c285-4428-4c90-8131-86897e31f115
 ms.openlocfilehash: 7b1b87c643111f2b12124e348be8fb823e113937
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50653160"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62187319"
 ---
 # <a name="compiler-warning-level-1-c4003"></a>Derleyici Uyarısı (düzey 1) C4003
 

@@ -13,11 +13,11 @@ helpviewer_keywords:
 - COleLinksDialog [MFC], m_el
 ms.assetid: fb2eb638-2809-46db-ac74-392a732affc7
 ms.openlocfilehash: c5069bc63d61016e6f3c2f983de23901b9f35814
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57301421"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62224442"
 ---
 # <a name="colelinksdialog-class"></a>COleLinksDialog sınıfı
 

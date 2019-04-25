@@ -9,11 +9,11 @@ helpviewer_keywords:
 - jitintrinsic __declspec modifier
 ms.assetid: 23dbe416-7ef6-442b-b16d-9a81aab04fa6
 ms.openlocfilehash: 9e726413f0bbfbd9d6affa348777c995c51283a5
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50519307"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62245524"
 ---
 # <a name="jitintrinsic"></a>jitintrinsic
 

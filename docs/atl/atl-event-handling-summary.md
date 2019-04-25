@@ -5,11 +5,11 @@ helpviewer_keywords:
 - event handling, implementing
 ms.assetid: e8b47ef0-0bdc-47ff-9dd6-34df11dde9a2
 ms.openlocfilehash: 0e3a47719e3160170ed1bfa64b315415ddc7a1c8
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57265359"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62252154"
 ---
 # <a name="atl-event-handling-summary"></a>ATL olay işleme özeti
 

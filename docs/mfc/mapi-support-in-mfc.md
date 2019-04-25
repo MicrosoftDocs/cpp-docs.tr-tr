@@ -10,11 +10,11 @@ helpviewer_keywords:
 - OnFileSendMail method [MFC]
 ms.assetid: cafbecb1-0427-4077-b4b8-159bae5b49b8
 ms.openlocfilehash: 9b873ca1b3384adab6487fb3af9dc1401aaad12c
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57281648"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62225534"
 ---
 # <a name="mapi-support-in-mfc"></a>MFC'de MAPI Desteği
 
@@ -32,7 +32,7 @@ MAPI eki göndermek için dosyayı okumak gerekir. Uygulama, veri dosyası açı
 
 #### <a name="to-implement-a-send-mail-command-with-mfc"></a>MFC ile bir posta Gönder komutu uygulamak için
 
-1. ID_FILE_SEND_MAIL komut Kimliğine sahip bir menü öğesi eklemek için Visual C++ menü düzenleyicisini kullanın.
+1. Görseli kullanmak C++ ID_FILE_SEND_MAIL komut Kimliğine sahip bir menü öğesi eklemek için Menü Düzenleyici.
 
    Bu komut kimliği AFXRES framework tarafından sağlanır. H Komut için herhangi bir menüsü eklenebilir, ancak genellikle eklenir **dosya** menüsü.
 

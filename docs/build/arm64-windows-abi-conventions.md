@@ -2,11 +2,11 @@
 title: ARM64 ABI kurallarına genel bakış
 ms.date: 03/27/2019
 ms.openlocfilehash: 4c0f89f97529d4cd70e1449c90b131d25d30f9ee
-ms.sourcegitcommit: ac5c04b347e817eeece6e2c98e60236fc0e307a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58639452"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62195515"
 ---
 # <a name="overview-of-arm64-abi-conventions"></a>ARM64 ABI kurallarına genel bakış
 
@@ -231,7 +231,7 @@ Dinamik olarak oluşturulan kodu açıklanan dinamik işlevi tablolarla `RtlAddF
 
 ## <a name="cycle-counter"></a>Döngü sayacı
 
-Tüm ARMv8 CPU'ların bir döngü sayacı desteklemek için gerekli olan kullanıcı modu da dahil olmak üzere, hiçbir özel durum düzeyinde okunabilir olması için Windows için yapılandıran bir 64-bit kayıt kaydedin. Özel PMCCNTR_EL0 erişilebilen kaydetme, derleme kodunda MSR opcode kullanarak veya `_ReadStatusReg` C/C++ kodundaki iç.
+Tüm ARMv8 CPU'ların bir döngü sayacı desteklemek için gerekli olan kullanıcı modu da dahil olmak üzere, hiçbir özel durum düzeyinde okunabilir olması için Windows için yapılandıran bir 64-bit kayıt kaydedin. Özel PMCCNTR_EL0 erişilebilen kaydetme, derleme kodunda MSR opcode kullanarak veya `_ReadStatusReg` C'de iç /C++ kod.
 
 Döngü burada duvar saati bir doğru döngü sayacı sayacıdır. Sayım sıklığı işlemci sıklığı değişir. Döngü sayacı sıklığı bilmelisiniz düşünüyorsanız, döngü sayacını kullanarak olmamalıdır. Bunun yerine, kendisi için kullanmanız gerektiğini duvar saati süresi ölçmek istediğiniz `QueryPerformanceCounter`.
 

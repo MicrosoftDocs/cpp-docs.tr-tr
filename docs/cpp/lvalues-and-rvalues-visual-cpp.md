@@ -1,16 +1,16 @@
 ---
-title: 'Değer kategoriler: Lvalues ve Rvalues (Visual C++)'
+title: 'Değer kategorileri: Lvalues ve Rvalues (Visual C++)'
 ms.date: 04/06/2018
 helpviewer_keywords:
 - R-values [C++]
 - L-values [C++]
 ms.assetid: a8843344-cccc-40be-b701-b71f7b5cdcaf
 ms.openlocfilehash: 74bfac5f5bb56549eee41a5479babf8e71b00aa6
-ms.sourcegitcommit: e9568560cdb95e83a8fba1e9bca21ece910d20b7
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "52453891"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62245569"
 ---
 # <a name="lvalues-and-rvalues-visual-c"></a>Lvalues ve Rvalues (Visual C++)
 
@@ -20,7 +20,7 @@ C ++ 17 standardına ifade değeri kategorileri gibi tanımlar:
 
 - A *glvalue* bir ifadedir, değerlendirme, bir nesne, bit alanı veya işlev kimliğini belirler.
 - A *prvalue* ifade, değerlendirme nesneyi ya da bir bit alanına başlatır veya görünür durumda bağlam tarafından belirtildiği gibi bir işlecinin işleneni değerini hesaplar.
-- Bir *xvalue* bir nesne veya bit alanı (genellikle yaşam sonuna yakın olduğundan) kaynaklarını yeniden kullanılabilir gösteren bir glvalue olduğu. Örnek: X değerleri, dönüş türü bir rvalue başvurusu olan bir işlev çağrısı veya rvalue başvuru türüne atamak gibi belirli türde bir rvalue başvuruları (8.3.2) içeren ifadeler yield.
+- Bir *xvalue* bir nesne veya bit alanı (genellikle yaşam sonuna yakın olduğundan) kaynaklarını yeniden kullanılabilir gösteren bir glvalue olduğu. Örnek: Rvalue başvuruları (8.3.2) içeren ifadeler belirli türde bir dönüş türü bir rvalue başvurusu olan bir işleve çağrı veya rvalue başvuru türüne atamak gibi x değerleri yield.
 - Bir *lvalue* bir xvalue değil bir glvalue olduğu.
 - Bir *rvalue* bir prvalue veya bir xvalue.
 

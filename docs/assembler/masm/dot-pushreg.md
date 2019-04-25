@@ -7,11 +7,11 @@ helpviewer_keywords:
 - .PUSHREG directive
 ms.assetid: e0c83758-dfed-40ea-afe6-cb833c8d2d30
 ms.openlocfilehash: 19e36f1c0b073c5b174ea9acb0f1eaac7d771c46
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50501770"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62203986"
 ---
 # <a name="pushreg"></a>.PUSHREG
 

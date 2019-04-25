@@ -5,11 +5,11 @@ helpviewer_keywords:
 - max_size method
 ms.assetid: 56754753-9911-48fd-b463-ac06b2fa1aab
 ms.openlocfilehash: 3b0347ae160286ca97d16063ac893943e0d63da8
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50455789"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62211036"
 ---
 # <a name="container-classmaxsize"></a>Kapsayıcı Sınıfı::max_size
 

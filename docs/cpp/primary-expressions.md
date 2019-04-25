@@ -9,11 +9,11 @@ helpviewer_keywords:
 - expressions [C++], qualified names
 ms.assetid: 8ef9a814-6058-4b93-9b6e-e8eb8350b1ca
 ms.openlocfilehash: e7dcb8290c0130fa9376e48f065e82163a1ca5b7
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50677584"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62312316"
 ---
 # <a name="primary-expressions"></a>Birincil İfadeler
 

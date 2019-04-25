@@ -7,11 +7,11 @@ helpviewer_keywords:
 - code_seg __declspec keyword
 ms.assetid: ad3c1105-15d3-4e08-b7b9-e4bd9d7b6aa0
 ms.openlocfilehash: a0b9c6dcd7ee19af59ac39a71498fe41bfc107ea
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50506905"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62216560"
 ---
 # <a name="codeseg-declspec"></a>code_seg (__declspec)
 
