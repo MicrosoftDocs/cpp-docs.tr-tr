@@ -10,11 +10,11 @@ helpviewer_keywords:
 - CComUnkArray class, connection point classes
 ms.assetid: 9582ba71-7ace-4df4-9c9b-1b0636953efc
 ms.openlocfilehash: f3794b5c9e4f6297cca6611929c75d0b0133557e
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57265242"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62252236"
 ---
 # <a name="atl-connection-point-classes"></a>ATL bağlantı noktası sınıfları
 

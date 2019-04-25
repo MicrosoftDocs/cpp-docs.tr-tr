@@ -17,11 +17,11 @@ helpviewer_keywords:
 - CCubicTransition [MFC], m_duration
 ms.assetid: 4fc30e9c-160c-45e1-bdbe-51adf8fee9c5
 ms.openlocfilehash: f4d5898172c0544064fad82856e404f4fb12b561
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57294466"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62164013"
 ---
 # <a name="ccubictransition-class"></a>CCubicTransition sınıfı
 

@@ -8,11 +8,11 @@ helpviewer_keywords:
 - COM interfaces, COM map macros
 ms.assetid: 0f33656d-321f-4996-90cc-9a7f21ab73c3
 ms.openlocfilehash: 3159a53b5a500aa61b85cf2bc5a97d321ed6ebb5
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58772377"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62245627"
 ---
 # <a name="com-map-macros"></a>COM eşleme makroları
 

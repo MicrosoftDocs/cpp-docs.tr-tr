@@ -9,11 +9,11 @@ helpviewer_keywords:
 - Platform::ChangedStateException
 ms.assetid: f894beac-9e80-4fac-ac25-89f1dbc0a6a4
 ms.openlocfilehash: 79181702c95f8c666b06bdb26319ccb06e55db0a
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57749301"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62161725"
 ---
 # <a name="platformchangedstateexception-class"></a>Platform::ChangedStateException sınıfı
 

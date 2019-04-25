@@ -7,11 +7,11 @@ helpviewer_keywords:
 - conversions, standard
 ms.assetid: ce7ac8d3-5c99-4674-8229-0672de05528d
 ms.openlocfilehash: aee100bdc7e8ba6dd7d06c6bca9ed39c09cf2d97
-ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52176985"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62267285"
 ---
 # <a name="standard-conversions"></a>Standart Dönüşümler
 
@@ -147,7 +147,7 @@ Kayan türde bir nesne bir integral türe dönüştürüldüğünde, kesirli kı
 
 ### <a name="conditions-for-type-conversion"></a>Tür Dönüştürme için Koşullar
 
-|Sağlanan Koşullar|Dönüştürme|
+|Sağlanan koşullar|Dönüştürme|
 |--------------------|----------------|
 |İki işlenenden türünde **uzun çift**.|Diğer işlenen türüne dönüştürülür **uzun çift**.|
 |Önceki koşul karşılanmamıştır ve işlenenlerden türüdür **çift**.|Diğer işlenen türüne dönüştürülür **çift**.|

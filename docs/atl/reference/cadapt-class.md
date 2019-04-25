@@ -13,11 +13,11 @@ helpviewer_keywords:
 - CAdapt class
 ms.assetid: 0bb695a5-72fe-43d1-8f39-7e4da6e34765
 ms.openlocfilehash: 39184e952475fa0f05a6fc25c433191ea22b5c16
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57269831"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62260746"
 ---
 # <a name="cadapt-class"></a>CAdapt sınıfı
 

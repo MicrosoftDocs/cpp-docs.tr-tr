@@ -8,11 +8,11 @@ helpviewer_keywords:
 - MFC object relationships
 ms.assetid: 6e8f3b51-e80f-4d88-94c8-4c1e4ee163ad
 ms.openlocfilehash: bb8d1fcd9737b33d52038746a26f4e1bd1043e95
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57276982"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62309050"
 ---
 # <a name="relationships-among-mfc-objects"></a>MFC Nesneleri Arasındaki İlişki
 

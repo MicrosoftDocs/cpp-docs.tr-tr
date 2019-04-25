@@ -6,11 +6,11 @@ helpviewer_keywords:
 - slider controls [MFC], member functions
 ms.assetid: dbde49ee-7306-4d14-a6ce-d09aa198178f
 ms.openlocfilehash: a88dd1a49eb928261393a4473ee7eb53628c607a
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57296910"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62307437"
 ---
 # <a name="slider-control-member-functions"></a>Kaydırıcı Denetimi Üye İşlevleri
 

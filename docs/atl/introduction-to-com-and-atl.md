@@ -8,11 +8,11 @@ helpviewer_keywords:
 - COM objects, ATL
 ms.assetid: 35d6ae9c-abbb-42f0-9344-33f3c19ac3ce
 ms.openlocfilehash: bdfee1969781af5efdfbcdadfbbbce3f64d2dda0
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57258417"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62250979"
 ---
 # <a name="introduction-to-com-and-atl"></a>COM ve ATL'ye giriş
 

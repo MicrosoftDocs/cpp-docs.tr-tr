@@ -10,11 +10,11 @@ helpviewer_keywords:
 - time functions
 ms.assetid: 93599220-c011-45d5-978f-12182abfdd2f
 ms.openlocfilehash: b763361d2cdd732025e492a25ac63fc01f06c2b8
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57739736"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62304444"
 ---
 # <a name="time-management"></a>Zaman Yönetimi
 
@@ -47,7 +47,7 @@ Geçerli saati Al ve Dönüştür, ayarlamak ve gerektiği şekilde depolamak i�
 > 1 Ocak 1970 gece yarısından beri geçen saniye sayısı saat olarak, Microsoft C/C++ Microsoft C/C++ version 7.0 dışında tüm sürümlerinde ve tüm sürümlerinde Visual C++ zaman işlev geçerli saati döndürür. Microsoft C/C++ version 7.0, **zaman** 31 Aralık 1899 gece yarısından beri geçen saniye sayısı saat olarak geçerli saati döndürdü.
 
 > [!NOTE]
-> Visual C++ ve Visual C++ 2005 önce Microsoft C/C++ sürümlerinde **time_t** olduğu bir **uzun** **int** (32 bit) ve bu nedenle tarihlerini kullanılamadı 3:14:07 19 Ocak 2038 geçmiş , UTC. **time_t** artık değerine eşdeğer olan **__time64_t** varsayılan, ancak tanımlama **_use_32bıt_tıme_t** değişiklikleri **time_t** için **__time32_t** alan 32-bit sürümleri çağırmak için birçok saat işlevleri zorlar **time_t**. Daha fazla bilgi için [standart türler](../c-runtime-library/standard-types.md) ve bireysel saat işlevleri belgelerindeki açıklamalar.
+> Visual sürümlerinde C++ ve Microsoft C /C++ Visual önce C++ 2005 **time_t** olduğu bir **uzun** **int** (32 bit) ve bu nedenle tarihlerini kullanılamadı Son 3:14:07 Ocak 19, 2038, UTC. **time_t** artık değerine eşdeğer olan **__time64_t** varsayılan, ancak tanımlama **_use_32bıt_tıme_t** değişiklikleri **time_t** için **__time32_t** alan 32-bit sürümleri çağırmak için birçok saat işlevleri zorlar **time_t**. Daha fazla bilgi için [standart türler](../c-runtime-library/standard-types.md) ve bireysel saat işlevleri belgelerindeki açıklamalar.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

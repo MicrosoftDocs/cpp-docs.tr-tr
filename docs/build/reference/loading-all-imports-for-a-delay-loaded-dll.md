@@ -5,11 +5,11 @@ helpviewer_keywords:
 - __HrLoadAllImportsForDll linker option
 ms.assetid: 975fcd97-1a56-4a16-9698-e1a249d2d592
 ms.openlocfilehash: e855b648dc7a9ee0670c3704a11aa1897a238403
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57811920"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62301675"
 ---
 # <a name="loading-all-imports-for-a-delay-loaded-dll"></a>Gecikmeli Yüklenen DLL için Tüm İçe Aktarmaları Yükleme
 

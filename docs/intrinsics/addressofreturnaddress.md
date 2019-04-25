@@ -9,11 +9,11 @@ helpviewer_keywords:
 - AddressOfReturnAddress intrinsic
 ms.assetid: c7e10b8c-445e-4236-a602-e2d90200f70a
 ms.openlocfilehash: 79d1e4645c60fb4231a53aaefdcf1fe0f3c876c4
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59024783"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62264809"
 ---
 # <a name="addressofreturnaddress"></a>_AddressOfReturnAddress
 

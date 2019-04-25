@@ -9,11 +9,11 @@ helpviewer_keywords:
 - instruction set [C++]
 ms.assetid: a45b5b22-9b5f-4545-81ec-70eb8ea2ef9b
 ms.openlocfilehash: 5d73b70603c3a3f51944a95fe54af11ecb50a9c2
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50579055"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62166938"
 ---
 # <a name="instruction-set-for-inline-assembly"></a>Satır İçi Derleme için Yönerge Kümesi
 

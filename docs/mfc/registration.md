@@ -12,11 +12,11 @@ helpviewer_keywords:
 - OLE server applications [MFC], registering servers
 ms.assetid: 991d5684-72c1-4f9e-a09a-9184ed12bbb9
 ms.openlocfilehash: 0bc606acfba26d27d0ab36045e4772593e760e98
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57272180"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62309104"
 ---
 # <a name="registration"></a>Kayıt
 

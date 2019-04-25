@@ -33,11 +33,11 @@ helpviewer_keywords:
 - trigonometric functions
 ms.assetid: 36cc0ce8-9c80-4653-b354-ddb3b378b6bd
 ms.openlocfilehash: 79a374142a914e8c2c7cf5c094d443b16e4bce88
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50564035"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62258633"
 ---
 # <a name="tan-tanf-tanl"></a>Tan, tanf, tanl
 

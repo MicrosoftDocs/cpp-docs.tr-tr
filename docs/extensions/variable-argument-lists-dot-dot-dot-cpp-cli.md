@@ -7,11 +7,11 @@ helpviewer_keywords:
 - parameter arrays
 ms.assetid: db1a27f4-02a8-4318-8690-1f2893f52b38
 ms.openlocfilehash: ec1e2cefa33bc9d749d0f05e170c2f2db9b25f02
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59031614"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62264851"
 ---
 # <a name="variable-argument-lists--ccli"></a>Değişken Bağımsız Değişken Listeleri (...) (C++/CLI)
 

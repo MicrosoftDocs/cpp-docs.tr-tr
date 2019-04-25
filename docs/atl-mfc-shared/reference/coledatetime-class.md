@@ -35,11 +35,11 @@ helpviewer_keywords:
 - time, handling in MFC
 ms.assetid: e718f294-16ec-4649-88b6-a4dbae5178fb
 ms.openlocfilehash: 46b5f15a2f6048745a12b8c3a8c8a63404f71aa2
-ms.sourcegitcommit: 309dc532f13242854b47759cef846de59bb807f1
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58565941"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62252707"
 ---
 # <a name="coledatetime-class"></a>COleDateTime sınıfı
 

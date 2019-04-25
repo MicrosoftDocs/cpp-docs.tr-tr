@@ -10,11 +10,11 @@ helpviewer_keywords:
 - objects [C++], volatile
 ms.assetid: 81db4a85-ed5a-4a2c-9a53-5d07a771d2de
 ms.openlocfilehash: 73243841b2ad02bcc165b2910ac54283028e6cf3
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50664028"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62243964"
 ---
 # <a name="volatile-c"></a>volatile (C++)
 

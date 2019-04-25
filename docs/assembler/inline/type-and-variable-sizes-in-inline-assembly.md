@@ -17,11 +17,11 @@ helpviewer_keywords:
 - variables, size
 ms.assetid: b62c2f2b-a7ad-4145-bae4-d890db86d348
 ms.openlocfilehash: 36c97ee866ca449e9bbcf514e464a13f24f12cd9
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50539106"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62166899"
 ---
 # <a name="type-and-variable-sizes-in-inline-assembly"></a>Satır İçi Derlemede Tür ve Değişken Boyutları
 

@@ -31,11 +31,11 @@ helpviewer_keywords:
 - registration [MFC], shell
 ms.assetid: 0480cd01-f629-4249-b221-93432d95b431
 ms.openlocfilehash: 910660253c9d306b13294a710021a6bbd36c1952
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57258092"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62307321"
 ---
 # <a name="special-cwinapp-services"></a>Özel CWinApp Hizmetleri
 

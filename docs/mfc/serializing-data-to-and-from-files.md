@@ -13,11 +13,11 @@ helpviewer_keywords:
 - document data [MFC]
 ms.assetid: b42a0c68-4bc4-4012-9938-5433a26d2c24
 ms.openlocfilehash: af3cde9445ae4b128e7e54a5f154db01b2eecd3b
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57279269"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62308080"
 ---
 # <a name="serializing-data-to-and-from-files"></a>Dosyalarda Verileri Seri Hale Getirme
 

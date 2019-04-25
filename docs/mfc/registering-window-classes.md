@@ -15,11 +15,11 @@ helpviewer_keywords:
 - registering window classes [MFC]
 ms.assetid: 30994bc4-a362-43da-bcc5-1bf67a3fc929
 ms.openlocfilehash: 7c459b909a60fff2b7aeded9ea8d79a39ced24e4
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57258430"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62309089"
 ---
 # <a name="registering-window-classes"></a>Pencere Sınıflarını Kaydetme
 

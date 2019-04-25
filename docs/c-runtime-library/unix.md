@@ -10,11 +10,11 @@ helpviewer_keywords:
 - UNIX, compatibility
 ms.assetid: 40792414-7a5b-415d-bfa8-2bfb1ebb3731
 ms.openlocfilehash: edabb639d8f45680415473ad7b017d426b931ab5
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57745242"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62304195"
 ---
 # <a name="unix"></a>UNIX
 

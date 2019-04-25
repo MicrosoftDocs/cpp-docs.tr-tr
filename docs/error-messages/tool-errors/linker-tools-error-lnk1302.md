@@ -7,11 +7,11 @@ helpviewer_keywords:
 - LNK1302
 ms.assetid: aea3c753-c2c4-4249-bbc3-f2d4f0164b5e
 ms.openlocfilehash: c3b1117b31db4759b385943323a581da7a58f0c4
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50491084"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62160451"
 ---
 # <a name="linker-tools-error-lnk1302"></a>Bağlayıcı Araçları Hatası LNK1302
 

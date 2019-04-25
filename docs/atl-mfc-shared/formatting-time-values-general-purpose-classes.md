@@ -8,11 +8,11 @@ helpviewer_keywords:
 - formatting [C++], time
 ms.assetid: 7fcfee24-f874-4a4d-95b3-adc19a0f2df0
 ms.openlocfilehash: bab93638d81e8e4e5d6f7ce71bf6a3180fa7f7e5
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57739176"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62236406"
 ---
 # <a name="formatting-time-values-general-purpose-classes"></a>Biçimlendirme zamanı değerleri: Genel amaçlı sınıflar
 

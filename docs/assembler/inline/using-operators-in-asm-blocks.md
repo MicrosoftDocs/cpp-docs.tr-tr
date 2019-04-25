@@ -10,11 +10,11 @@ helpviewer_keywords:
 - square brackets [ ]
 ms.assetid: a26ccfd4-40ae-4a61-952f-c417982aa8dd
 ms.openlocfilehash: a871c19942252bf6a1a4901f8854b7b759700cd9
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50432805"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62166509"
 ---
 # <a name="using-operators-in-asm-blocks"></a>__asm Bloklarında İşleçler Kullanma
 
