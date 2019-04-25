@@ -15,11 +15,11 @@ helpviewer_keywords:
 - optimizing performance, ActiveX controls
 ms.assetid: 8b11f26a-190d-469b-b594-5336094a0109
 ms.openlocfilehash: 08cbb5ab0ff9b8c165e549bc2b250daebc1ce177
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57288648"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62186898"
 ---
 # <a name="mfc-activex-controls-optimization"></a>MFC ActiveX denetimleri: İyileştirme
 

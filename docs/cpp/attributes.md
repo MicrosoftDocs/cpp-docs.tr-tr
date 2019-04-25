@@ -3,11 +3,11 @@ title: C++ öznitelikleri
 ms.date: 06/01/2018
 ms.assetid: 748340d9-8abf-4940-b0a0-91b6156a3ff8
 ms.openlocfilehash: 81de2816c208d5ddc879f04d70912c3dddcd7832
-ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51694120"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62284753"
 ---
 # <a name="attributes-in-c"></a>C++ öznitelikleri
 
@@ -15,7 +15,7 @@ C++ standardı bir öznitelik kümesini tanımlar ve ayrıca kendi öznitelikler
 
 Bazı durumlarda standart öznitelikleri derleyici özgü declspec parametrelerle çakışıyor. Visual c++'ta kullanabileceğiniz `[[deprecated]]` kullanmak yerine özniteliği `declspec(deprecated)` ve öznitelik herhangi uyumlu derleyici tarafından tanınır. Tüm diğer declspec parametreleri için dllimport ve dllexport gibi olarak henüz özniteliği eşdeğeri yoktur declspec sözdizimini kullanmaya devam etmelisiniz. Öznitelikler tür sistemine etkilemez ve bir program anlamını değişmiyor. Derleyiciler, bunlar tanımıyoruz öznitelik değerleri yok sayın.
 
-**Visual Studio 2017 sürüm 15.3 ve üzeri** (bulunan [/Std: c ++ 17](../build/reference/std-specify-language-standard-version.md)): bir öznitelik listesi kapsamında tüm adlar için ad alanı tek bir belirtebilirsiniz **kullanarak** introducer:
+**Visual Studio 2017 sürüm 15.3 ve üzeri** (bulunan [/Std: c ++ 17](../build/reference/std-specify-language-standard-version.md)): Bir öznitelik listesi kapsamında tüm adlar için ad alanı tek bir belirtebilirsiniz **kullanarak** introducer:
 
 ```cpp
 void g() {
@@ -33,13 +33,13 @@ C ++ 11'de, öznitelikler (ancak bunlarla sınırlı olmamak sınıfları, İşl
 void Foo(int);
 ```
 
-Öznitelikleri temsil eden satıcıya özgü uzantılar #pragma yönergeleri __declspec() (Visual C++) gibi standart bir alternatif veya &#95; &#95;özniteliği&#95; &#95; (GNU). Ancak, yine de satıcıya özel yapılar birçok amaç için kullanmanız gerekecektir. Standart şu anda uyumlu derleyici tanımalıdır aşağıdaki öznitelikleri belirtir:
+Öznitelikleri temsil eden standart bir satıcıya özgü uzantılar #pragma yönergeleri gibi alternatif __declspec() (görsel C++), veya &#95; &#95;özniteliği&#95; &#95; (GNU). Ancak, yine de satıcıya özel yapılar birçok amaç için kullanmanız gerekecektir. Standart şu anda uyumlu derleyici tanımalıdır aşağıdaki öznitelikleri belirtir:
 
 - `[[noreturn]]` Bir işlev hiçbir zaman döndürür belirtir. diğer bir deyişle, her zaman bir özel durum oluşturur. Derleyici, derleme kuralları ayarlayabilirsiniz `[[noreturn]]` varlıklar.
 
 - `[[carries_dependency]]` İşlevi iş parçacığı eşitleme göre sıralama veri bağımlılığı yayar belirtir. Öznitelik, geçilen bağımsız değişken işlev gövdesine bağımlılık izleme belirtmek için bir veya daha fazla parametrelere uygulanabilir. Özniteliği işlevin dönüş değeri işlevin dışında bir bağımlılık gerçekleştirecek belirtmeniz kendisi için uygulanabilir. Derleyici, daha verimli kod oluşturmak için bu bilgileri kullanabilirsiniz.
 
-- `[[deprecated]]` **Visual Studio 2015 ve sonraki sürümler:** bir işlev kullanılmak üzere tasarlanmamıştır belirtir ve bir kitaplık arabirimi sürümleri gelecek mevcut olmayabilir. Derleyici bir işlevi çağırmak istemci kodu girişiminde bulunduğunda bir bilgi iletisidir oluşturmak için bunu kullanabilirsiniz. Bir sınıf, typedef adı, bir değişkenin, statik olmayan veri üyesi, bir işlev, bir ad alanı, bir numaralandırma, bir numaralandırıcı veya şablon uzmanlığı bildirimine uygulanabilir.
+- `[[deprecated]]` **Visual Studio 2015 ve sonraki sürümler:** Bir işlev kullanılmak üzere tasarlanmamıştır belirtir ve bir kitaplık arabirimi sürümleri gelecek mevcut olmayabilir. Derleyici bir işlevi çağırmak istemci kodu girişiminde bulunduğunda bir bilgi iletisidir oluşturmak için bunu kullanabilirsiniz. Bir sınıf, typedef adı, bir değişkenin, statik olmayan veri üyesi, bir işlev, bir ad alanı, bir numaralandırma, bir numaralandırıcı veya şablon uzmanlığı bildirimine uygulanabilir.
 
 - `[[fallthrough]]` **Visual Studio 2017 ve üzeri:** (bulunan [/Std: c ++ 17](../build/reference/std-specify-language-standard-version.md)) `[[fallthrough]]` özniteliği bağlamında kullanılabilir [geçiş](switch-statement-cpp.md) derleyici (veya herkesin okuma ipucu olarak deyimleri kodu), fallthrough davranıştır. Bu öznitelik hiçbir etkisi derleyici davranışı Bu nedenle Visual C++ derleyicisi fallthrough davranışı, şu anda uyarmaz.
 
@@ -77,10 +77,10 @@ void Foo(int);
 
   Örneğin, bu uyarıları oluşturur:
 
-  - 26494 (tür kural 5: bir nesneyi her zaman başlatın.)
+  - 26494 (Kural 5 yazın: Her zaman bir nesneyi başlatın.)
 
-  - 26485 (sınırları kural 3: diziden işaretçiye bozunma gerçekleştirmeyin.)
+  - 26485 (sınırları kural 3: Diziden işaretçiye bozunma gerçekleştirmeyin.)
 
-  - 26481 (sınırları kural 1: işaretçi aritmetiği kullanmayın. Yayılma kullanın.)
+  - 26481 (sınırları kural 1: İşaretçi aritmetiği kullanmayın. Yayılma kullanın.)
 
   Bu kod yüklenmeli ve etkinleştirilmelidir CppCoreCheck kod analizi aracı ile derleme yaparken, ilk iki uyarıları kov. Ancak öznitelik nedeniyle üçüncü uyarı etkinleşmez. [[Gsl::suppress(bounds)]] yazarak bir özel kural numarası dahil olmak üzere tüm sınırların profil gösterilmemesini sağlayabilirsiniz. C++ temel yönergeleri, daha iyi ve daha güvenli kod yazmanıza yardımcı olmak için tasarlanmıştır. Bastır öznitelik değil istediğiniz zaman uyarılarını kapatmak kolaylaştırır.

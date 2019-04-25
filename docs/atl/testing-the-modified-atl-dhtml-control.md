@@ -7,11 +7,11 @@ helpviewer_keywords:
 - DHTML controls, testing
 ms.assetid: 42316118-9433-410f-9d8a-0efcc1eff824
 ms.openlocfilehash: 55cdaba64ccb95ee5695c082a5e146b1e7dc2cf3
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57277244"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62196580"
 ---
 # <a name="testing-the-modified-atl-dhtml-control"></a>Değiştirilen ATL DHTML denetimini test etme
 
