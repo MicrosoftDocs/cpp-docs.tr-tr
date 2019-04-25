@@ -52,7 +52,7 @@
 ### [ISO646 İşleçleri](iso646-operators.md)
 ### [Tek Baytlı ve Çok Baytlı Karakter Kümeleri](single-byte-and-multibyte-character-sets.md)
 ### [SBCS ve MBCS Veri Türleri](sbcs-and-mbcs-data-types.md)
-### [Unicode: Joker Karakter Kümesi](unicode-the-wide-character-set.md)
+### [Unicode: Geniş Karakter Kümesi](unicode-the-wide-character-set.md)
 ### [Genel Metin Eşlemelerini Kullanma](using-generic-text-mappings.md)
 ### [Örnek Genel Metin Programı](a-sample-generic-text-program.md)
 ### [MBCS ile TCHAR.H Veri Türlerini Kullanma](using-tchar-h-data-types-with-mbcs.md)

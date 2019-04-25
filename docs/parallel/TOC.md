@@ -15,9 +15,9 @@
 ### [Çoklu İş Parçacığı Kullanan Programlarda Sorun Alanlarından Kaçınma](avoiding-problem-areas-with-multithread-programs.md)
 ### [İş Parçacığında Yerel Depolama (TLS)](thread-local-storage-tls.md)
 ## [C++ ve MCF ile Çoklu İş Parçacığı Kullanımı](multithreading-with-cpp-and-mfc.md)
-### [Çoklu İş Parçacığı Kullanımı: Kullanıcı Arabirimi İş Parçacıkları Oluşturma](multithreading-creating-user-interface-threads.md)
-### [Çoklu İş Parçacığı Kullanımı: Çalışan İş Parçacıkları Oluşturma](multithreading-creating-worker-threads.md)
-### [Çoklu İş Parçacığı Kullanımı: Eşitleme Sınıfları Ne Zaman Kullanılır?](multithreading-when-to-use-the-synchronization-classes.md)
+### [Çoklu İş Parçacığı Kullanımı: ](multithreading-creating-user-interface-threads.md)Kullanıcı Arabirimi İş Parçacıkları Oluşturma
+### [Çoklu İş Parçacığı Kullanımı: Arka Plan İş Parçacıkları Oluşturma](multithreading-creating-worker-threads.md)
+### [Çoklu İş Parçacığı Kullanımı: Eşitleme Sınıflarının Kullanılma Zamanı](multithreading-when-to-use-the-synchronization-classes.md)
 ### [Çoklu İş Parçacığı Kullanımı: Eşitleme Sınıflarını Kullanma](multithreading-how-to-use-the-synchronization-classes.md)
 ### [Çoklu İş Parçacığı Kullanımı: İş Parçacıklarını Sonlandırma](multithreading-terminating-threads.md)
 ### [Çoklu İş Parçacığı Kullanımı: Programlama İpuçları](multithreading-programming-tips.md)
