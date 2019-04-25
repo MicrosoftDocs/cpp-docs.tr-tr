@@ -23,11 +23,11 @@ helpviewer_keywords:
 - free function
 ms.assetid: 74ded9cf-1863-432e-9306-327a42080bb8
 ms.openlocfilehash: f56212874f05ea5d4ab7bd826a7a4c145551dfc0
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50621240"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62287765"
 ---
 # <a name="free"></a>serbest
 

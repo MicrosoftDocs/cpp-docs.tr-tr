@@ -7,11 +7,11 @@ helpviewer_keywords:
 - makefiles, preprocessing
 ms.assetid: 37f0f413-97e0-452c-a83f-3c9002c44c92
 ms.openlocfilehash: 3d668492441eb2fc09be378dbebfe2b18c1b5753
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57824101"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62271313"
 ---
 # <a name="expressions-in-makefile-preprocessing"></a>Derleme Görevleri Dosyası Önişlemlerindeki İfadeler
 

@@ -7,11 +7,11 @@ helpviewer_keywords:
 - batch-mode inference rules in NMAKE
 ms.assetid: 0650b547-ef19-4455-9bba-fa567dcf88f2
 ms.openlocfilehash: f01866e347b2734b5adfd111e3ae9de4f9edcf9f
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57823493"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62295025"
 ---
 # <a name="batch-mode-rules"></a>Toplu İş Modu Kuralları
 

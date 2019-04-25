@@ -1,6 +1,6 @@
 ---
 title: Derleyici hataları C3500 ile c3999 arasındaki
-ms.date: 11/17/2017
+ms.date: 04/21/2019
 f1_keywords:
 - C3502
 - C3503
@@ -246,12 +246,12 @@ f1_keywords:
 - C3998
 - C3999
 ms.assetid: bd6f23ad-b300-4e07-8e35-9661cab1585f
-ms.openlocfilehash: 02686b8c12643480dc18ad665eb7f17e2b8d1170
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c5cb482804dac90a278036d594dc92e7be33e2bf
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50575012"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62281341"
 ---
 # <a name="compiler-errors-c3500-through-c3999"></a>Derleyici hataları C3500 ile c3999 arasındaki
 
@@ -647,8 +647,8 @@ Belgelerin bu bölümdeki makaleleri bir alt kümesini derleyici tarafından olu
 |Derleyici Hatası C3881|yalnızca Oluşturucu doğrudan tabandan alınabilir|
 |Derleyici Hatası C3882|'*sınıfı*': Oluşturucu zaten öğesinden devralınan '*sınıfı*'|
 |Derleyici Hatası C3883|'*üye*': initonly statik veri üyesi başlatılmalıdır|
-|Derleyici Hatası C3884|'*türü*': boyutu bilinmeyen bir dizi, değer tarafından başlatılamaz|
-|Derleyici Hatası C3885|'*türü*': boyutu bilinmeyen bir dizi bir boş bir başlatıcı listesiyle başlatılamaz|
+|Derleyici Hatası C3884|'*türü*': Boyutu bilinmeyen bir dizi, değer tarafından başlatılamaz|
+|Derleyici Hatası C3885|'*türü*': Boyutu bilinmeyen bir dizi bir boş bir başlatıcı listesiyle başlatılamaz|
 |[Derleyici Hatası C3886](compiler-error-c3886.md)|'*üye*': sabit değerli veri üyesi başlatılmalıdır|
 |[Derleyici Hatası C3887](compiler-error-c3887.md)|'*üye*': sabit değerli veri üyesi başlatıcısı sabit ifade olmalıdır|
 |[Derleyici Hatası C3888](compiler-error-c3888.md)|'*üye*': Bu sabit değerli veri üyesiyle ilişkili const ifadesi C + tarafından desteklenmiyor +/ CLI|
@@ -717,9 +717,9 @@ Belgelerin bu bölümdeki makaleleri bir alt kümesini derleyici tarafından olu
 |Derleyici Hatası C3951|İşaretçi-üye öngörülen WinRT türü kullanamazsınız '*türü*'. Bunun yerine temsilci kullanın.|
 |Derleyici Hatası C3952|'*türü*': WinRT ' in/out' dizilerini desteklemez. Kullanım ' const Array<T>^' için 'ın' ve ' WriteOnlyArray<T>' veya ' dizi<T>^ *' ortak API'lerde 'out' için|
 |Derleyici Hatası C3953|Yönetilen sınıf kullanamazsınız*türü*' WinRT modülü içinde.|
-|Derleyici Hatası C3954|'*türü*': bir WinRT türü üzerinde bir yayımlanmış yöntemden döndürülen dizi biçimini kullanmalıdır ' dizi<T>^'|
-|Derleyici Hatası C3955|'*türü*': genel bir Oluşturucu 'out' parametresi içeremez veya ' WriteOnlyArray<T>'|
-|Derleyici Hatası C3956|'*türü*': türü özel için işaretlenmiş '*türü*'ve'nın temel olarak kullanılan'*derived_type*'|
+|Derleyici Hatası C3954|'*türü*': Bir WinRT türü üzerinde bir yayımlanmış yöntemden döndürülen dizi biçimini kullanmalıdır ' dizi<T>^'|
+|Derleyici Hatası C3955|'*türü*': Genel bir Oluşturucu 'out' parametresi içeremez veya ' WriteOnlyArray<T>'|
+|Derleyici Hatası C3956|'*türü*': Türü özel için işaretlenmiş '*türü*'ve'nın temel olarak kullanılan'*derived_type*'|
 |Derleyici Hatası C3957|'*türü*': kullanamazsınız 'new' bir WinRT üzerinde yazın; bunun yerine 'ref new' kullanın|
 |Derleyici Hatası C3958|'*türü*': 'gcnew' bir WinRT üzerinde kullanamazsınız türü; bunun yerine 'ref new' kullanın|
 |Derleyici Hatası C3959|'ref new' yalnızca WinRT türündeki bir nesne oluşturmak için kullanılabilir|
@@ -762,3 +762,8 @@ Belgelerin bu bölümdeki makaleleri bir alt kümesini derleyici tarafından olu
 |Derleyici Hatası C3996|Kullanımdan kalktı.|
 |Derleyici Hatası C3998|' c ++*sürüm*': Desteklenmeyen C++ sürümü; varsayarak ' c ++*sürüm*'|
 |Derleyici Hatası c3999 arasındaki|Bilinmeyen hata Lütfen Visual C++ Yardım menüsünde teknik destek komutunu seçin veya daha fazla bilgi için teknik destek Yardım dosyasını açın|
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[C /C++ derleyicisi ve derleme araçları hataları ve Uyarıları](../compiler-errors-1/c-cpp-build-errors.md) \
+[C3999 arasındaki derleyici hataları C2000-](../compiler-errors-1/compiler-errors-c2000-c3999.md)

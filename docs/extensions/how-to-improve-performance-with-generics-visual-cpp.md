@@ -9,11 +9,11 @@ helpviewer_keywords:
 - generics [C++], performance
 ms.assetid: f14a175b-301f-46cc-86e4-c82d35f9aa3e
 ms.openlocfilehash: 958da08716022bedaa8d0fe217814fa2bd86c065
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59038783"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62254582"
 ---
 # <a name="how-to-improve-performance-with-generics-ccli"></a>Nasıl yapılır: Türlerle performansı artırma (C++/CLI)
 

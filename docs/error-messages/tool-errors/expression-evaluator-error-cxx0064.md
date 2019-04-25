@@ -8,11 +8,11 @@ helpviewer_keywords:
 - CXX0064
 ms.assetid: aa509e71-0616-41ca-a94e-6c376b041e57
 ms.openlocfilehash: 71e4e3e87b33849e6b487b79268ebc9574c2e5a6
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50511871"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62299484"
 ---
 # <a name="expression-evaluator-error-cxx0064"></a>İfade Değerlendirici Hatası CXX0064
 

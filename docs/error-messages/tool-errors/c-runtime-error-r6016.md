@@ -1,5 +1,5 @@
 ---
-title: C çalışma zamanı hatası R6016
+title: C Çalışma Zamanı Hatası R6016
 ms.date: 11/04/2016
 f1_keywords:
 - R6016
@@ -7,13 +7,13 @@ helpviewer_keywords:
 - R6016
 ms.assetid: 7bd3f274-d9c4-4bc4-8252-80bf168c4c3a
 ms.openlocfilehash: b617e3cf6d48a24b01479ef7ef3fb6ac425b3996
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50556955"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62279299"
 ---
-# <a name="c-runtime-error-r6016"></a>C çalışma zamanı hatası R6016
+# <a name="c-runtime-error-r6016"></a>C Çalışma Zamanı Hatası R6016
 
 iş parçacığının verileri için yeterli alan yok
 

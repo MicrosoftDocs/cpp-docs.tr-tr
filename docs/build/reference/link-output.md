@@ -18,11 +18,11 @@ helpviewer_keywords:
 - LINK tool [C++], mapfile
 ms.assetid: a98b557c-1947-447a-be1f-616fb45a9580
 ms.openlocfilehash: 183f83501d930188032ec4209623ef7cf1a30efa
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57807630"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62269182"
 ---
 # <a name="link-output"></a>LINK Çıktısı
 
@@ -53,4 +53,4 @@ BAĞLANTI sorunları hata ve uyarı iletileri LNK biçiminde*nnnn*. Bu hata öne
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [MSVC bağlayıcı başvurusu](linking.md)<br/>
-[MSVC bağlayıcı seçenekleri](linker-options.md)
+[MSVC Bağlayıcı Seçenekleri](linker-options.md)

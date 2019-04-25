@@ -6,11 +6,11 @@ helpviewer_keywords:
 - cl.exe compiler, command-line syntax
 ms.assetid: acba2c1c-0803-4a3a-af25-63e849b930a2
 ms.openlocfilehash: 5cee76d5c053dbcfef33a191dc38a958338e4a82
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57821501"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62294349"
 ---
 # <a name="compiler-command-line-syntax"></a>Derleyici Komut Satırı Sözdizimi
 
@@ -39,4 +39,4 @@ Cl.exe dönüş değeri hakkında daha fazla bilgi için bkz. [cl.exe dönüş d
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MSVC derleyici seçenekleri](compiler-options.md)
+[MSVC Derleyicisi Seçenekleri](compiler-options.md)

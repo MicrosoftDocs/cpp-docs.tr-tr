@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C4739
 ms.assetid: 600873b3-7c85-4cd4-944e-cd8e01bfcbb0
 ms.openlocfilehash: 4c48ad9349361324c18ec790c51d1095cce104e2
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50622098"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62280444"
 ---
 # <a name="compiler-warning-level-1-c4739"></a>Derleyici Uyarısı (düzey 1) C4739
 

@@ -4,11 +4,11 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: f86b484e-5a27-4c3b-a92a-dfaa5dd6d93a
 ms.openlocfilehash: 5705fc1996343141b13e37d1267b2e8c981c1eba
-ms.sourcegitcommit: a1fad0a266b20b313364a74b16c9ac45d089b1e9
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "54220432"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62245095"
 ---
 # <a name="objects-own-resources-raii"></a>Nesnelerin Kaynakları (RAII)
 

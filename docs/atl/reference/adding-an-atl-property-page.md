@@ -7,11 +7,11 @@ helpviewer_keywords:
 - controls [ATL], property pages
 ms.assetid: ddf92b49-42a2-46d2-b6b8-d37baedebeca
 ms.openlocfilehash: c61f666865d3e1db4cdcf2dc6d3e07c2113a79c7
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57290029"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62249105"
 ---
 # <a name="adding-an-atl-property-page"></a>ATL özellik sayfası ekleme
 

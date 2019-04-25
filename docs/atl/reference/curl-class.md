@@ -36,11 +36,11 @@ helpviewer_keywords:
 - CUrl class
 ms.assetid: b3894d34-47b9-4961-9719-4197153793da
 ms.openlocfilehash: 913365e2b20015b22480dfd364d75b2be3c6355b
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57295662"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62277259"
 ---
 # <a name="curl-class"></a>CUrl sınıfı
 
@@ -189,7 +189,7 @@ BOOL CrackUrl(LPCTSTR lpszUrl, DWORD dwFlags = 0) throw();
 URL.
 
 *CertOpenStore*<br/>
-Tüm çıkış karakterlerinin tanınmasından dönüştürülecek ATL_URL_DECODE veya ATL_URL_ESCAPE belirtin *lpszUrl* gerçek değerlerine ayrıştırma sonra. (Visual C++ 2005'den önce ATL_URL_DECODE tüm kaçış karakterleri ayrıştırma önce dönüştürülür.)
+Tüm çıkış karakterlerinin tanınmasından dönüştürülecek ATL_URL_DECODE veya ATL_URL_ESCAPE belirtin *lpszUrl* gerçek değerlerine ayrıştırma sonra. (Visual önce C++ 2005 ATL_URL_DECODE ayrıştırma önce tüm kaçış karakterleri dönüştürülür.)
 
 ### <a name="return-value"></a>Dönüş Değeri
 

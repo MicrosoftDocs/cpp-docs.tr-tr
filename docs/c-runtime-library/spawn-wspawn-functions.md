@@ -46,11 +46,11 @@ helpviewer_keywords:
 - _tspawnle function
 ms.assetid: bb47c703-5216-4e09-8023-8cf25bbf2cf9
 ms.openlocfilehash: 044aaee376be02d0d3734ea8982a8c4db47f7d39
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57748053"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62267864"
 ---
 # <a name="spawn-wspawn-functions"></a>_spawn, _wspawn İşlevleri
 

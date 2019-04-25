@@ -7,11 +7,11 @@ helpviewer_keywords:
 - makefiles, updating to embed manifest
 ms.assetid: ec0bac69-2fdc-466c-ab0d-710a22974e5d
 ms.openlocfilehash: 332d6d75080be3fdde6b8238ab79b8e5b1d1121e
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57809788"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62274388"
 ---
 # <a name="how-to-embed-a-manifest-inside-a-cc-application"></a>Nasıl yapılır: C/C++ uygulamasına bildirim katıştırma
 

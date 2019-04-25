@@ -35,11 +35,11 @@ helpviewer_keywords:
 - _get_purecall_handler function
 ms.assetid: 2759b878-8afa-4129-86e7-72afc2153d9c
 ms.openlocfilehash: 0009b4bc1c7bf70bd84b9a82ecdc8643789e8164
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50646374"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62287406"
 ---
 # <a name="getpurecallhandler-setpurecallhandler"></a>_get_purecall_handler, _set_purecall_handler
 
@@ -66,7 +66,7 @@ Saf sanal işlev çağrıldığında çağrılacak işlev. A **_purecall_handler
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Get_purecall_handler** ve **_set_purecall_handler** işlevleri Microsoft'a özgü olan ve yalnızca C++ kodu için geçerlidir.
+**_Get_purecall_handler** ve **_set_purecall_handler** işlevleri Microsoft'a özgü olan ve yalnızca uygulama C++ kod.
 
 Uygulaması olduğundan saf sanal işlev çağrısı bir hata var. Varsayılan olarak, derleyici program sona erer saf sanal işlevi çağrıldığında bir hata işleyicisi işlevini çağırmak için kod oluşturur. Hata ayıklama veya raporlama amacıyla bunları yakalamak için saf sanal işlev çağrıları, kendi hata işleyici işlevi yükleyebilirsiniz. Kendi hata işleyicisi kullanacak şekilde sahip bir işlev oluşturma **_purecall_handler** imzası, ardından **_set_purecall_handler** geçerli işleyici yapma.
 

@@ -21,12 +21,12 @@ helpviewer_keywords:
 - mktemp function
 ms.assetid: b58cba60-034f-4e63-b312-ccbcd489d0a7
 ms.openlocfilehash: 1d3d74f5c505281ca76b4d711624be6b7e11d65b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50593602"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62285520"
 ---
 # <a name="mktemp"></a>mktemp
 
-Bu POSIX işlevi kullanım dışı bırakılmıştır. ISO C++ uyumlu [_mktemp](mktemp-wmktemp.md) veya Gelişmiş güvenlikli [_mktemp_s](mktemp-s-wmktemp-s.md) yerine.
+Bu POSIX işlevi kullanım dışı bırakılmıştır. ISO kullanın C++ uyumluluğunu [_mktemp](mktemp-wmktemp.md) veya Gelişmiş güvenlikli [_mktemp_s](mktemp-s-wmktemp-s.md) yerine.

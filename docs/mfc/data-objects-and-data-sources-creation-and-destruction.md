@@ -16,11 +16,11 @@ helpviewer_keywords:
 - data sources [MFC], creating
 ms.assetid: ac216d54-3ca5-4ce7-850d-cd1f6a90d4f1
 ms.openlocfilehash: 68ee5fbfec554df8865ca50c265ca2fa2f226a29
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58775250"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62241166"
 ---
 # <a name="data-objects-and-data-sources-creation-and-destruction"></a>Veri nesneleri ve veri kaynakları: Oluşturma ve yok etme
 

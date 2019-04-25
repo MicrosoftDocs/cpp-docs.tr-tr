@@ -9,11 +9,11 @@ helpviewer_keywords:
 - command files, CL compiler
 ms.assetid: ec3cea06-2af0-4fe9-a94c-119c9d31b3a9
 ms.openlocfilehash: 9810f7b4308eab2b47a068072039335e59e19f5f
-ms.sourcegitcommit: faa42c8a051e746d99dcebe70fd4bbaf3b023ace
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57816080"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62272591"
 ---
 # <a name="cl-command-files"></a>CL Komut Dosyaları
 
@@ -47,5 +47,5 @@ Komut satırını ve komut dosyalı komutlar etkili bir şekilde birleştirilir 
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MSVC derleyici komut satırı sözdizimi](compiler-command-line-syntax.md)<br/>
-[MSVC derleyici seçenekleri](compiler-options.md)
+[MSVC Derleyicisi Komut Satırı Söz Dizimi](compiler-command-line-syntax.md)<br/>
+[MSVC Derleyicisi Seçenekleri](compiler-options.md)

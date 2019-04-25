@@ -9,11 +9,11 @@ helpviewer_keywords:
 - technical notes [MFC]
 ms.assetid: 8aa01d66-0b07-4d0a-a080-4bb00c7baaac
 ms.openlocfilehash: 82e107e82596b1063b507851c5943797bffbc0c5
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57262733"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62238427"
 ---
 # <a name="mfc-technical-notes"></a>MFC Teknik Notları
 

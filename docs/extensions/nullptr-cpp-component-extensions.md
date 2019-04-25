@@ -7,11 +7,11 @@ helpviewer_keywords:
 - nullptr keyword [C++]
 ms.assetid: 594cfbf7-06cb-4366-9ede-c0b703e1d095
 ms.openlocfilehash: 05aaaa8a0d0056e0f5318f5e9329d90824760728
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59040828"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62254448"
 ---
 # <a name="nullptr--ccli-and-ccx"></a>nullptr (C++/CLI ve C++/CX)
 

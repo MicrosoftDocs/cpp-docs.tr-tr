@@ -8,11 +8,11 @@ helpviewer_keywords:
 - browse information files (.bsc), creating
 ms.assetid: b5c12832-51f6-4953-8044-4264dd0fb242
 ms.openlocfilehash: 4f12bd25ca3ab718a845dbb04aba3169cc6d4b19
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57820638"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62272890"
 ---
 # <a name="building-browse-information-files-overview"></a>Gözatma bilgileri dosyası derleme: Genel Bakış
 

@@ -11,11 +11,11 @@ helpviewer_keywords:
 - response files, C/C++ linker
 ms.assetid: 5530014f-17d0-4f6b-a6b0-a6ba34f34cfd
 ms.openlocfilehash: 9e595857a6089c59aa6638ed51acacae3a0eb5e9
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57816509"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62295005"
 ---
 # <a name="-specify-a-linker-response-file"></a>@ (Bağlayıcı Yanıt Dosyasını Belirt)
 
@@ -45,4 +45,4 @@ Bkz: [@ (derleyici yanıt dosyasını belirt)](at-specify-a-compiler-response-fi
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [MSVC bağlayıcı başvurusu](linking.md)<br/>
-[MSVC bağlayıcı seçenekleri](linker-options.md)
+[MSVC Bağlayıcı Seçenekleri](linker-options.md)

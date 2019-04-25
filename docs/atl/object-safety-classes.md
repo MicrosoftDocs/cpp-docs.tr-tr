@@ -7,11 +7,11 @@ helpviewer_keywords:
 - object safety classes
 ms.assetid: 00060b28-49e2-4ec1-9a22-f501e07821d6
 ms.openlocfilehash: 0cffa578a136619245713fea94bf909e3dd6b119
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57807559"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62249971"
 ---
 # <a name="object-safety-classes"></a>Nesne güvenliği sınıfları
 

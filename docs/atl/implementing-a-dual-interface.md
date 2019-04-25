@@ -6,11 +6,11 @@ helpviewer_keywords:
 - dual interfaces, implementing
 ms.assetid: d1da3633-b445-4dcd-8a0a-3efdafada3ea
 ms.openlocfilehash: ecd6a0cc90ca4175c4ae898f2e9aa8bf00508a3e
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57287342"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62262235"
 ---
 # <a name="implementing-a-dual-interface"></a>Çift arabirim uygulama
 

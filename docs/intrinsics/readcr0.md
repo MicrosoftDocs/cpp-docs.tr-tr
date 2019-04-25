@@ -7,11 +7,11 @@ helpviewer_keywords:
 - __readcr0 intrinsic
 ms.assetid: 25bdb093-d83c-48d7-9c0f-224de8e2c61c
 ms.openlocfilehash: 09d44e438b4aa99f9be63927a4cf116f12c6e634
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59027798"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62263899"
 ---
 # <a name="readcr0"></a>__readcr0
 

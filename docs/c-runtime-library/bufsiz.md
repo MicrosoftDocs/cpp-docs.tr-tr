@@ -7,11 +7,11 @@ helpviewer_keywords:
 - BUFSIZ constant
 ms.assetid: 94ac04a3-d154-476b-bd89-eefbc7b949ae
 ms.openlocfilehash: 820e9bb0a8b21c2bacb54c9d0df3fe4a20d36241
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57752460"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62290332"
 ---
 # <a name="bufsiz"></a>BUFSIZ
 

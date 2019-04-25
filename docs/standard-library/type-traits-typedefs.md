@@ -8,11 +8,11 @@ f1_keywords:
 - xtr1common/std::true_type
 ms.assetid: 8ac040ca-ed2d-4570-adc9-cb5626530053
 ms.openlocfilehash: 579d276b7e9f2a7b44b41681b85fffd318ecddbb
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50582084"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62279001"
 ---
 # <a name="lttypetraitsgt-typedefs"></a>&lt;type_traits&gt; tür tanımları
 

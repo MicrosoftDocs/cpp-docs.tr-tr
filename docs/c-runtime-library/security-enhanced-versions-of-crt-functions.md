@@ -7,11 +7,11 @@ helpviewer_keywords:
 - CRT, security enhancements
 ms.assetid: f87e5a01-4cb2-4379-9e8f-d4693828c55a
 ms.openlocfilehash: c5d804b93e491799e65de6338611612eed21e163
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57745973"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62268766"
 ---
 # <a name="security-enhanced-versions-of-crt-functions"></a>CRT İşlevlerinin Gelişmiş Güvenlik Sürümleri
 

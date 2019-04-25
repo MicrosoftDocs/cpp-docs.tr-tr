@@ -5,11 +5,11 @@ helpviewer_keywords:
 - Start method
 ms.assetid: b5193a23-41bc-42d2-8d55-3eb43dc62238
 ms.openlocfilehash: 204d02a1122ee78b38850bedae5f98b1f338ab1d
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57816288"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62250751"
 ---
 # <a name="catlservicemoduletstart-function"></a>CAtlServiceModuleT::Start işlevi
 

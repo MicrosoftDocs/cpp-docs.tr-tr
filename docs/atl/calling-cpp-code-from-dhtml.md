@@ -5,11 +5,11 @@ helpviewer_keywords:
 - DHTML, calling C++ code from
 ms.assetid: 37329acd-4c22-40ca-a85a-b7480748f75f
 ms.openlocfilehash: fb63f8671770f57972a4c789d983bdf9658d5ecb
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57270182"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62251742"
 ---
 # <a name="calling-c-code-from-dhtml"></a>DHTML'den C++ kodu çağırma
 

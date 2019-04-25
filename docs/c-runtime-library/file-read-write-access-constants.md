@@ -11,11 +11,11 @@ helpviewer_keywords:
 - file read/write access constants
 ms.assetid: 56cd1d22-39a5-4fcf-bea2-7046d249e8ee
 ms.openlocfilehash: 0dfbc925c5252724cbb1caad58470849915242a9
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57746077"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62289903"
 ---
 # <a name="file-readwrite-access-constants"></a>Dosya Okuma/Yazma Erişimi Sabitleri
 

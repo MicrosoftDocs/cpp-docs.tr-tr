@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2400
 ms.assetid: 1ba441ee-73f9-42a5-bfe9-fbeab93808eb
 ms.openlocfilehash: 3ede43ec5ddb61b85c48094193d01d18bacae2bc
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50667187"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62282809"
 ---
 # <a name="compiler-error-c2400"></a>Derleyici Hatası C2400
 

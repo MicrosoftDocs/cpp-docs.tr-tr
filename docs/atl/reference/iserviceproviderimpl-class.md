@@ -10,11 +10,11 @@ helpviewer_keywords:
 - IServiceProvider interface, ATL implementation
 ms.assetid: 251254d3-c4ce-40d7-aee0-3d676d1d72f2
 ms.openlocfilehash: e52c28d528e187713d2d0925fed23bd8cd4493d5
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57298678"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62276010"
 ---
 # <a name="iserviceproviderimpl-class"></a>Iserviceproviderımpl sınıfı
 

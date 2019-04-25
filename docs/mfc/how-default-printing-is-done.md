@@ -7,11 +7,11 @@ helpviewer_keywords:
 - defaults, printing
 ms.assetid: 0f698459-0fc9-4d43-97da-29cf0f65daa2
 ms.openlocfilehash: 5f7971b48c9050e315b2fd57d2f3449517afa07e
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57295311"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62254328"
 ---
 # <a name="how-default-printing-is-done"></a>Varsayılan Yazdırmayı Yapma
 

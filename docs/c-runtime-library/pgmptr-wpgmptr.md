@@ -13,11 +13,11 @@ helpviewer_keywords:
 - pgmptr function
 ms.assetid: 4d44b515-0eff-4136-8bc4-684195f218f5
 ms.openlocfilehash: 6991dfe90e58352b26d7c914e1601a68674b8a5b
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57749873"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62289084"
 ---
 # <a name="pgmptr-wpgmptr"></a>_pgmptr, _wpgmptr
 

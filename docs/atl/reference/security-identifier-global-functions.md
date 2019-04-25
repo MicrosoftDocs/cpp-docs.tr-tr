@@ -38,11 +38,11 @@ helpviewer_keywords:
 - SIDs [C++], returning SID objects
 ms.assetid: 85404dcb-c59b-4535-ab3d-66cfa37e87de
 ms.openlocfilehash: ab5d743c7c6abf7ee3a849a28916ebd32788ef40
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57269415"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62274951"
 ---
 # <a name="security-identifier-global-functions"></a>Güvenlik tanımlayıcısı genel işlevleri
 
@@ -64,7 +64,7 @@ Bu işlevler, nesneler ortak iyi bilinen SID döndürür.
 |[Sids::CreatorOwner](#creatorowner)|SECURITY_CREATOR_OWNER_RID SID döndürür.|
 |[Sids::CreatorOwnerServer](#creatorownerserver)|SECURITY_CREATOR_OWNER_SERVER_RID SID döndürür.|
 |[Sids::dialup](#dialup)|SECURITY_DIALUP_RID SID döndürür.|
-|[Sids::Guests](#guests)|DOMAIN_ALIAS_RID_GUESTS SID döndürür.|
+|[Sids::Guests](#guests)|Domaın_alıas_rıd_guests SID döndürür.|
 |[Sids::Interactive](#interactive)|SECURITY_INTERACTIVE_RID SID döndürür.|
 |[Sids::Local](#local)|SECURITY_LOCAL_RID SID döndürür.|
 |[Sids::Network](#network)|SECURITY_NETWORK_RID SID döndürür.|
@@ -180,7 +180,7 @@ CSid Dialup() throw(...);
 
 ##  <a name="guests"></a>  Sids::Guests
 
-DOMAIN_ALIAS_RID_GUESTS SID döndürür.
+Domaın_alıas_rıd_guests SID döndürür.
 
 ```
 CSid Guests() throw(...);

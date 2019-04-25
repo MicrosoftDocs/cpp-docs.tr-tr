@@ -65,11 +65,11 @@ helpviewer_keywords:
 - stock properties, ATL controls
 ms.assetid: 45f11d7d-6580-4a0e-872d-3bc8b836cfda
 ms.openlocfilehash: 148c9571bb37e2b9063ca9290f51caa1fabb2d21
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57270793"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62277493"
 ---
 # <a name="cstockpropimpl-class"></a>Cstockpropımpl sınıfı
 

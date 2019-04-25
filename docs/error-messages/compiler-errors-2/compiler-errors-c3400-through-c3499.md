@@ -1,6 +1,6 @@
 ---
-title: Derleyici hataları C3400 ile c3499 arasındaki
-ms.date: 11/17/2017
+title: C3400 ile c3499 arasındaki derleyici hataları
+ms.date: 04/21/2019
 f1_keywords:
 - C3401
 - C3402
@@ -98,14 +98,14 @@ helpviewer_keywords:
 - C3494
 - C3497
 ms.assetid: a5651dfb-c402-4e01-b3ae-28f371e51d6a
-ms.openlocfilehash: 24915a52bffb6826599e4d64d60a3ece6bee7675
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 587b28cedb0ab8b11c244be4278c7dc17d1f4247
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50576728"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62281393"
 ---
-# <a name="compiler-errors-c3400-through-c3499"></a>Derleyici hataları C3400 ile c3499 arasındaki
+# <a name="compiler-errors-c3400-through-c3499"></a>C3400 ile c3499 arasındaki derleyici hataları
 
 Belgelerin bu bölümdeki makaleleri bir alt kümesini derleyici tarafından oluşturulan hata iletilerini açıklayın.
 
@@ -216,3 +216,7 @@ Belgelerin bu bölümdeki makaleleri bir alt kümesini derleyici tarafından olu
 |[Derleyici Hatası C3498](compiler-error-c3498.md)|'*tanımlayıcı*': bir yönetilen/WinRT türüne sahip bir değişkeni yakalayamazsınız|
 |[Derleyici Hatası C3499](compiler-error-c3499.md)|dönüş türü void olacak şekilde belirtilen lambdanın bir dönüş değeri olamaz|
 
+## <a name="see-also"></a>Ayrıca bkz.
+
+[C /C++ derleyicisi ve derleme araçları hataları ve Uyarıları](../compiler-errors-1/c-cpp-build-errors.md) \
+[C3999 arasındaki derleyici hataları C2000-](../compiler-errors-1/compiler-errors-c2000-c3999.md)

@@ -7,11 +7,11 @@ helpviewer_keywords:
 - persistence, classes
 ms.assetid: a6a2b6b2-52bc-471c-b78a-de58363128bb
 ms.openlocfilehash: 37747604b7c03c9cd8abb993c8d0e232ec80aaaa
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57811972"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62261832"
 ---
 # <a name="persistence-classes"></a>Kalıcılık sınıfları
 

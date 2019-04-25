@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3367
 ms.assetid: e675d42b-f5b0-4d43-aab1-1f5024233102
 ms.openlocfilehash: f53312fa9225270ef79d50d2ad351adce790d6fa
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50456296"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62300543"
 ---
 # <a name="compiler-error-c3367"></a>Derleyici Hatası C3367
 
@@ -19,7 +19,7 @@ ms.locfileid: "50456296"
 
 Bağlanmamış bir temsilci çağırdığınızda, bir nesnenin örneğine geçirmeniz gerekir. Sınıf adı aracılığıyla bir statik üye işlevi çağrılan olduğundan, yalnızca bir örnek üyesi işlevi ile bağlanmamış bir temsilci örneğini oluşturabilir.
 
-İlişkisiz temsilciler hakkında daha fazla bilgi için bkz: [nasıl yapılır: tanımlayın ve kullanım temsilciler (C + +/ CLI)](../../dotnet/how-to-define-and-use-delegates-cpp-cli.md).
+İlişkisiz temsilciler hakkında daha fazla bilgi için bkz: [nasıl yapılır: Temsilcileri tanımlama ve kullanma (C++/CLI)](../../dotnet/how-to-define-and-use-delegates-cpp-cli.md).
 
 ## <a name="example"></a>Örnek
 

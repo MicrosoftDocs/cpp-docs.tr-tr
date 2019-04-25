@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3400
 ms.assetid: d44169a8-73b6-4766-b406-b3a6c93f2a4d
 ms.openlocfilehash: c4b4cb64da83115ab5b6a5234cda2ea3c7ba3a53
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59778858"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62300381"
 ---
 # <a name="compiler-error-c3400"></a>Derleyici Hatası C3400
 

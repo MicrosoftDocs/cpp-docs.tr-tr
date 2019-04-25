@@ -31,11 +31,11 @@ helpviewer_keywords:
 - csinl function
 ms.assetid: 3ed475e8-9aae-42ba-a25c-7ae656a0fd4d
 ms.openlocfilehash: 66483c9121750c3333850d6244704b89b8893cad
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50633499"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62288855"
 ---
 # <a name="csin-csinf-csinl"></a>csin, csinf, csinl
 
@@ -72,13 +72,13 @@ Sinüsünü *z*, radyan cinsinden açı.
 
 ## <a name="remarks"></a>Açıklamalar
 
-C++ aşırı yüklemeye izin verdiğinden, aşırı yüklemesini çağırabilirsiniz **csin** alan ve getiren **_Fcomplex** ve **_Lcomplex** değerleri. C programında **csin** her zaman alan ve döndüren bir **_Dcomplex** değeri.
+Çünkü C++ aşırı yüklemesi, sağlayan yüklerini çağırabilirsiniz **csin** alan ve getiren **_Fcomplex** ve **_Lcomplex** değerleri. C programında **csin** her zaman alan ve döndüren bir **_Dcomplex** değeri.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|C üstbilgisi|C++ üst bilgisi|
 |-------------|--------------|------------------|
-|**csin**, **csinf**, **csinl**|\<Complex.h >|\<ccomplex >|
+|**csin**,               **csinf**, **csinl**|\<Complex.h >|\<ccomplex >|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

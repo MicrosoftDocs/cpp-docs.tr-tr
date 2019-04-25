@@ -7,11 +7,11 @@ helpviewer_keywords:
 - /CETCOMPAT linker option
 - /CETCOMPAT
 ms.openlocfilehash: 0ed5d9d4f9f4f4dc5cd4fc19df4179e86e430187
-ms.sourcegitcommit: 42e65c171aaa17a15c20b155d22e3378e27b4642
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58356021"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62273254"
 ---
 # <a name="cetcompat-cet-shadow-stack-compatible"></a>/ CETCOMPAT (CET gölge yığın ile uyumlu)
 

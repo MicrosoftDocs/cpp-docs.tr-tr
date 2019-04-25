@@ -5,11 +5,11 @@ helpviewer_keywords:
 - file types [C++], HTML Help files
 ms.assetid: d30a1b1b-318f-4a78-8b60-93da53a224a8
 ms.openlocfilehash: cde4809fa270e66081088d68d806e637f64e5344
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57823475"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62270219"
 ---
 # <a name="help-files-html-help"></a>Yardım Dosyaları (HTML Yardım)
 

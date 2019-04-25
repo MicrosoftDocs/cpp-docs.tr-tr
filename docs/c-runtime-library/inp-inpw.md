@@ -21,15 +21,15 @@ helpviewer_keywords:
 - inpw function
 ms.assetid: c7e1eeac-77cd-47ff-b843-4095b4c31d3b
 ms.openlocfilehash: caa79ad98c0790fc8a22374e018ac4ad8d5a0b13
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50617238"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62289461"
 ---
 # <a name="inp-inpw"></a>inp, inpw
 
-Bu POSIX işlevler kullanım dışı bırakılmıştır. ISO C++ uyumlu [_inp, _inpw, _inpd](../c-runtime-library/inp-inpw-inpd.md) yerine.
+Bu POSIX işlevler kullanım dışı bırakılmıştır. ISO kullanın C++ uyumluluğunu [_inp, _inpw, _inpd](../c-runtime-library/inp-inpw-inpd.md) yerine.
 
 > [!IMPORTANT]
 >  Bu işlevler kullanım dışıdır. Visual Studio 2015'te başlayarak, CRT içinde kullanılamaz.

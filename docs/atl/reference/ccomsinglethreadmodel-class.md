@@ -15,11 +15,11 @@ helpviewer_keywords:
 - single-threaded applications, ATL
 ms.assetid: e5dc30c7-405a-4ba4-8ae9-51937243fce8
 ms.openlocfilehash: 57219ca79dfa46437a8b13d889bb5f0c5a5d6f37
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57262057"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62258994"
 ---
 # <a name="ccomsinglethreadmodel-class"></a>CComSingleThreadModel sınıfı
 
@@ -54,7 +54,7 @@ class CComSingleThreadModel
 
 Genellikle, kullandığınız `CComSingleThreadModel` iki biri aracılığıyla **typedef** adları, ya da [CComObjectThreadModel](atl-typedefs.md#ccomobjectthreadmodel) veya [CComGlobalsThreadModel](atl-typedefs.md#ccomglobalsthreadmodel). Her tarafından başvurulan sınıfın **typedef** iş parçacığı modeline kullanıldığında, aşağıdaki tabloda gösterildiği gibi bağlıdır:
 
-| typedef|Çoklu iş parçacığı modeli|Grup iş parçacığı modeli|Ücretsiz iş parçacığı modeli|
+|typedef|Çoklu iş parçacığı modeli|Grup iş parçacığı modeli|Ücretsiz iş parçacığı modeli|
 |-------------|----------------------------|-------------------------------|--------------------------|
 |`CComObjectThreadModel`|S|S|M|
 |`CComGlobalsThreadModel`|S|M|M|

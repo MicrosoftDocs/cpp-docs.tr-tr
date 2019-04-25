@@ -30,11 +30,11 @@ helpviewer_keywords:
 - CBindStatusCallback class
 ms.assetid: 0f5da276-6031-4418-b2a9-a4750ef29e77
 ms.openlocfilehash: 6e5e55a23ee678bbedf76f608bc4fdf562cc1822
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58773131"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62259722"
 ---
 # <a name="cbindstatuscallback-class"></a>CBindStatusCallback sınıfı
 

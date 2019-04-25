@@ -14,11 +14,11 @@ helpviewer_keywords:
 - '! operator, unary arithmetic operators'
 ms.assetid: 78c91415-d469-499e-9dfe-4435350fd333
 ms.openlocfilehash: f64bc5107cf0df55fd445d04d557e952702deaee
-ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56150837"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62290670"
 ---
 # <a name="unary-arithmetic-operators"></a>Birli Aritmetik İşleçler
 
@@ -55,9 +55,7 @@ Bu örnekte, `y` öğesine atanan yeni değer, 0xAAAA veya 0x5555 değerine ili�
 if( !(x < y) )
 ```
 
-
-  `x`, `y` öğesine eşit veya ondan büyükse, ifadenin sonucu 1'dir (doğru). 
-  `x`, `y` öğesinden küçükse, sonuç 0'dır (yanlış).
+`x`, `y` öğesine eşit veya ondan büyükse, ifadenin sonucu 1'dir (doğru). `x`, `y` öğesinden küçükse, sonuç 0'dır (yanlış).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

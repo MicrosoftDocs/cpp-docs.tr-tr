@@ -18,11 +18,11 @@ helpviewer_keywords:
 - CDialogImpl class
 ms.assetid: d430bc7b-8a28-4ad3-9507-277bdd2c2c2e
 ms.openlocfilehash: 1124630d8ee15dd284893516bef8057f852b4632
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57420667"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62245761"
 ---
 # <a name="cdialogimpl-class"></a>Cdialogımpl sınıfı
 

@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2569
 ms.assetid: 092bed1e-f631-436c-9586-7750629f6fac
 ms.openlocfilehash: 1344bd8bde532d2e813ca03e173b995e935c76b2
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50661324"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62243769"
 ---
 # <a name="compiler-error-c2569"></a>Derleyici Hatası C2569
 

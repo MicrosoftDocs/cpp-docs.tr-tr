@@ -1,27 +1,27 @@
 ---
-title: Özel durumlar (C + +/ CX)
+title: Özel durumlar (C++/CX)
 ms.date: 01/18/2018
 ms.assetid: 6cbdc1f1-e4d7-4707-a670-86365146432f
 ms.openlocfilehash: 7134cbb9e90f0355a3b2a912330027cf73876443
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50471707"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62301532"
 ---
-# <a name="exceptions-ccx"></a>Özel durumlar (C + +/ CX)
+# <a name="exceptions-ccx"></a>Özel durumlar (C++/CX)
 
-Hata işleme C + +/ CX özel durumlarını temel alır. En temel düzeyde, Windows çalışma zamanı bileşenleri HRESULT değerleri olarak hataları bildirin. C + +/ CX, bu değerleri HRESULT değerini ve program aracılığıyla erişebileceğiniz bir dize açıklamasını içeren türü kesin belirlenmiş özel durumlar dönüştürülür.  Özel durumlar olarak gerçekleştirilen bir `ref class` türetilen `Platform::Exception`.  `Platform` Ad alanını tanımlayan farklı bir özel durum sınıfları en yaygın HRESULT değerleri için; aracılığıyla bildirilen diğer tüm değerler `Platform::COMException` sınıfı. Tüm özel durum sınıfları sahip bir [Exception::HResult](platform-exception-class.md#hresult) özgün HRESULT almak için kullanabileceğiniz bir alan. Ayrıca, kullanıcı kodu C++ dışında bir dilde yazılmış kod kaynağı olsa bile, özel durumun, özgün kaynak pinpoint yardımcı olmak üzere hata ayıklayıcı için çağrı yığını bilgileri inceleyebilirsiniz.
+Hata işleme C++/CX özel durumlarını temel alır. En temel düzeyde, Windows çalışma zamanı bileşenleri HRESULT değerleri olarak hataları bildirin. İçinde C++/CX, bu değerleri HRESULT değerini ve program aracılığıyla erişebileceğiniz bir dize açıklamasını içeren türü kesin belirlenmiş özel durumlar dönüştürülür.  Özel durumlar olarak gerçekleştirilen bir `ref class` türetilen `Platform::Exception`.  `Platform` Ad alanını tanımlayan farklı bir özel durum sınıfları en yaygın HRESULT değerleri için; aracılığıyla bildirilen diğer tüm değerler `Platform::COMException` sınıfı. Tüm özel durum sınıfları sahip bir [Exception::HResult](platform-exception-class.md#hresult) özgün HRESULT almak için kullanabileceğiniz bir alan. Ayrıca, kullanıcı kodu C++ dışında bir dilde yazılmış kod kaynağı olsa bile, özel durumun, özgün kaynak pinpoint yardımcı olmak üzere hata ayıklayıcı için çağrı yığını bilgileri inceleyebilirsiniz.
 
 ## <a name="exceptions"></a>Özel Durumlar
 
-C++ programınızda, throw ve catch bir Windows çalışma zamanı işleminden gelen bir özel durum, türetilen bir özel durum `std::exception`, veya kullanıcı tanımlı bir tür. JavaScript'te kendi özel durumu yakalar kodu yazıldığında yalnızca, uygulama ikili arabiriminde (ABI) sınırı, örneğin, geçtiğinde bir Windows çalışma zamanı özel durum oluşturması gerekir. Bir Windows çalışma zamanı C++ özel durum ABI sınıra ulaştığında, özel durum veri dönüştürülür bir `Platform::FailureException` özel durum E_FAIL HRESULT temsil eder. ABI hakkında daha fazla bilgi için bkz: [C++'ta Windows çalışma zamanı bileşenleri oluşturma](/windows/uwp/winrt-components/creating-windows-runtime-components-in-cpp).
+C++ programınızda, throw ve catch bir Windows çalışma zamanı işleminden gelen bir özel durum, türetilen bir özel durum `std::exception`, veya kullanıcı tanımlı bir tür. JavaScript'te kendi özel durumu yakalar kodu yazıldığında yalnızca, uygulama ikili arabiriminde (ABI) sınırı, örneğin, geçtiğinde bir Windows çalışma zamanı özel durum oluşturması gerekir. Bir olmayan - Windows çalışma zamanı zaman C++ özel durum ABI sınırına ulaştığında, özel durum çevrilir bir `Platform::FailureException` özel durum E_FAIL HRESULT temsil eder. ABI hakkında daha fazla bilgi için bkz: [C++'ta Windows çalışma zamanı bileşenleri oluşturma](/windows/uwp/winrt-components/creating-windows-runtime-components-in-cpp).
 
 Bildirebilirsiniz bir [Platform::Exception](platform-exception-class.md) HRESULT parametresine veya bir HRESULT parametresine iki Oluşturucu birini kullanarak ve bir [Platform::String](platform-string-class.md)^ arasında geçirilen parametre ABI, işleme herhangi bir Windows çalışma zamanı uygulamaya. Ya da iki birini kullanarak bir özel durum bildirebilirsiniz [Exception::CreateException yöntemi](platform-exception-class.md#createexception) HRESULT parametresine veya bir HRESULT parametresi alan aşırı yüklemeler ve `Platform::String^` parametresi.
 
 ## <a name="standard-exceptions"></a>Standart özel durumlar
 
-C + +/ CX tipik HRESULT hataları temsil eden standart özel durum kümesini destekler. Her standart özel durum türetildiği [Platform::COMException](platform-comexception-class.md), hangi sırayla türetilir `Platform::Exception`. ABI sınırının ötesinde bir özel durum olduğunda, standart özel durumlardan birini throw gerekir.
+C++/CX tipik HRESULT hataları temsil eden standart özel durumlar, bir kümesini destekler. Her standart özel durum türetildiği [Platform::COMException](platform-comexception-class.md), hangi sırayla türetilir `Platform::Exception`. ABI sınırının ötesinde bir özel durum olduğunda, standart özel durumlardan birini throw gerekir.
 
 Kendi özel durum türünden türetilemez `Platform::Exception`. Özel bir durum için oluşturmak için kullanıcı tanımlı bir HRESULT kullanan bir `COMException` nesne.
 
@@ -38,7 +38,7 @@ Aşağıdaki tablo standart özel durumlar listelenir.
 |InvalidArgumentException|E\_INVALIDARG|Bir yöntem için sağlanan bağımsız değişkenlerden biri geçerli olmadığında oluşturulur.|
 |InvalidCastException|E\_NOINTERFACE|Bir tür başka bir türe dönüştüremezsiniz zaman oluşturulur.|
 |NotImplementedException|E\_NOTIMPL|Bir arabirim yöntemi, bir sınıf üzerinde uygulanmadı durum.|
-|NullReferenceException|E\_İŞARETÇİ|Bir null Nesne başvurusu XML'deki başvuru girişimi olduğunda oluşturulur.|
+|NullReferenceException|E\_POINTER|Bir null Nesne başvurusu XML'deki başvuru girişimi olduğunda oluşturulur.|
 |ObjectDisposedException|RO\_E\_KAPALI|Silinen bir nesne üzerinde bir işlem gerçekleştirildiğinde oluşturulur.|
 |OperationCanceledException|E\_DURDUR|Bir işlem iptal edildiğinde oluşturulur.|
 |OutOfBoundsException|E\_SINIRLARI|Bir işlem, geçerli aralığın dışında veri erişim girişiminde bulunduğunda oluşturulur.|
@@ -99,9 +99,9 @@ void App::OnUnhandledException(Platform::Object^ sender, Windows::ApplicationMod
 
 ### <a name="remarks"></a>Açıklamalar
 
-C + +/ CX kullanmaz `finally` yan tümcesi.
+C++/CX kullanmayan `finally` yan tümcesi.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Visual C++ Dil Başvurusu](visual-c-language-reference-c-cx.md)<br/>
-[Ad alanları başvurusu](namespaces-reference-c-cx.md)
+[Ad Alanları Başvurusu](namespaces-reference-c-cx.md)

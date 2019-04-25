@@ -35,11 +35,11 @@ helpviewer_keywords:
 - iswascii function
 ms.assetid: ba4325ad-7cb3-4fb9-b096-58906d67971a
 ms.openlocfilehash: d150e7bb335dc77ed86f445128eebf97b8be5ac3
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50433665"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62287475"
 ---
 # <a name="isascii-isascii-iswascii"></a>isascii, __isascii, iswascii
 

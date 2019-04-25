@@ -8,11 +8,11 @@ helpviewer_keywords:
 - registry, Registrar
 ms.assetid: b6df80e1-e08b-40ee-9243-9b381b172460
 ms.openlocfilehash: dffdd111d33d6fbd845e1534cdef1d5c8e1749d2
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57262941"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62275418"
 ---
 # <a name="registry-scripting-examples"></a>Kayıt defteri betik oluşturma örnekleri
 

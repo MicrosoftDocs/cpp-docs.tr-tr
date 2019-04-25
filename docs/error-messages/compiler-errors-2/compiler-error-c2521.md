@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2521
 ms.assetid: 6042821b-e345-4a54-a7e9-a2c9019ea016
 ms.openlocfilehash: 27d822a3daf2c20aa57ebd8b45a7a6c7afa3d3cc
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50490434"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62282280"
 ---
 # <a name="compiler-error-c2521"></a>Derleyici Hatası C2521
 

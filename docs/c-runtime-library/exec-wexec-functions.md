@@ -54,11 +54,11 @@ helpviewer_keywords:
 - _texecvpe function
 ms.assetid: a261df93-206a-4fdc-b8ac-66aa7db83bc6
 ms.openlocfilehash: 72300f754015e54daf14863ca2ae677bde8f7d1a
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57746207"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62289695"
 ---
 # <a name="exec-wexec-functions"></a>_exec, _wexec İşlevleri
 

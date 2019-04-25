@@ -3,11 +3,11 @@ title: ARM ABI kurallarına genel bakış
 ms.date: 07/11/2018
 ms.assetid: 23f4ae8c-3148-4657-8c47-e933a9f387de
 ms.openlocfilehash: 17f2598912879d0eb54fd189e1fae541ba2f874f
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57810464"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62295251"
 ---
 # <a name="overview-of-arm32-abi-conventions"></a>ARM32 ABI kurallarına genel bakış
 
