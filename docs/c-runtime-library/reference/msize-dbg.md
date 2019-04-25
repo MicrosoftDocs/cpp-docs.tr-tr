@@ -24,11 +24,11 @@ helpviewer_keywords:
 - msize_dbg function
 ms.assetid: a333f4b6-f8a2-4e61-bb69-cb34063b8cef
 ms.openlocfilehash: 3b6d08d44162d8263ca88147fe86166924d7d162
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50629131"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62156310"
 ---
 # <a name="msizedbg"></a>_msize_dbg
 
@@ -57,7 +57,7 @@ Başarıyla tamamlandığında, **_msize_dbg** ; belirtilen bellek blok boyutu (
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_msize_dbg** _ hata ayıklama sürümü[msize](msize.md) işlevi. Zaman [_DEBUG](../../c-runtime-library/debug.md) tanımlı değil, her çağrı **_msize_dbg** çağrısı azaltılır **_msize**. Her ikisi de **_msize** ve **_msize_dbg** taban yığının bellek bloğunda boyutunu hesaplamak ancak **_msize_dbg** iki hata ayıklama özellikleri ekler: iki tarafındaki arabelleklerin içerir kullanıcıyı döndürülen boyutu ve bellek bloğu bölümünü belirli blok türleri için boyut hesaplamalarını sağlar.
+**_msize_dbg** _ hata ayıklama sürümü[msize](msize.md) işlevi. Zaman [_DEBUG](../../c-runtime-library/debug.md) tanımlı değil, her çağrı **_msize_dbg** çağrısı azaltılır **_msize**. Her ikisi de **_msize** ve **_msize_dbg** taban yığının bellek bloğunda boyutunu hesaplamak ancak **_msize_dbg** iki hata ayıklama özellikleri ekler: Döndürülen boyutunda bellek bloğu kullanıcı bölümünü her iki tarafındaki arabelleklerin içerir ve belirli bir blok türleri için boyut hesaplamalarını sağlar.
 
 Nasıl bellek blokları ayrılan, başlatılır ve taban yığının hata ayıklama sürümünde yönetilen hakkında daha fazla bilgi için bkz: [CRT hata ayıklama öbeği ayrıntıları](/visualstudio/debugger/crt-debug-heap-details). Ayırma blok türleri ve bunların nasıl kullanıldığı hakkında daha fazla bilgi için bkz. [hata ayıklama öbek üzerindeki blokları türleri](/visualstudio/debugger/crt-debug-heap-details). Standart yığın işlevi ve hata ayıklama sürümü, bir uygulamanın hata ayıklama derlemesinde çağırma arasındaki farklar hakkında daha fazla bilgi için bkz. [hata ayıklama sürümleri, yığın ayırma işlevleri](/visualstudio/debugger/debug-versions-of-heap-allocation-functions).
 

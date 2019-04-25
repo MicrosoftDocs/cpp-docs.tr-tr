@@ -60,11 +60,11 @@ helpviewer_keywords:
 - ID_INDICATOR_NUM command
 ms.assetid: a7883b46-23f7-4870-ac3a-804aed9258b5
 ms.openlocfilehash: 8d568760cc75a4c1f2ddb6dd88108cc830783194
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58775837"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62306057"
 ---
 # <a name="tn022-standard-commands-implementation"></a>TN022: Standart komutları uygulama
 

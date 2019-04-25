@@ -11,11 +11,11 @@ helpviewer_keywords:
 - message handling [MFC], message types
 ms.assetid: 68e1db75-9da6-4a4d-b2c2-dc4d59f8d87b
 ms.openlocfilehash: 07d9e706e8ed01a81ee580e7c4e11fa1f1a7a8df
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57326251"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62206886"
 ---
 # <a name="message-categories"></a>İleti Kategorileri
 

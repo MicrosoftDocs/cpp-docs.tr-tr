@@ -3,11 +3,11 @@ title: Programlar ve bağlantı (C++)
 ms.date: 04/09/2018
 ms.assetid: a6493ba0-24e2-4c89-956e-9da1dea660cb
 ms.openlocfilehash: 4f509979a293f194333e610fbdae7be9d32ec121
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50559867"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62301519"
 ---
 # <a name="program-and-linkage-c"></a>Program ve Bağlantı (C++)
 

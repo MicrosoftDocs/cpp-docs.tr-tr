@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C1191
 ms.assetid: 2888c6c4-b4e6-449e-8ee0-7917f31086df
 ms.openlocfilehash: 89af73699120ee4d8af3cda746727d758ef6d22c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50609670"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62228890"
 ---
 # <a name="fatal-error-c1191"></a>Önemli hata C1191
 

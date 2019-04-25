@@ -8,11 +8,11 @@ helpviewer_keywords:
 - __asm keyword [C++], in functions
 ms.assetid: b5df8a04-fdc7-4622-8c9e-e4b618927497
 ms.openlocfilehash: 7848a8f071f50f8d809a999a96a9c0f8193c480e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50445194"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62166860"
 ---
 # <a name="writing-functions-with-inline-assembly"></a>Satır İçi Derlemeyle İşlevler Yazma
 

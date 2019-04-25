@@ -8,11 +8,11 @@ helpviewer_keywords:
 - modal dialog boxes [MFC]
 ms.assetid: e83df336-5994-4b8f-8233-7942f997315b
 ms.openlocfilehash: c3a5263736324d7fe25066e8879d13b3a41768de
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57268674"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62238425"
 ---
 # <a name="modal-and-modeless-dialog-boxes"></a>Kalıcı ve Kalıcı Olmayan İletişim Kutuları
 

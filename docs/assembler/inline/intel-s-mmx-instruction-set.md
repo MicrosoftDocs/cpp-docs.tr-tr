@@ -6,11 +6,11 @@ helpviewer_keywords:
 - MMX instruction set
 ms.assetid: 705deb2d-c3fd-4696-9e22-8bcf25866daf
 ms.openlocfilehash: 3b2de7896c4a688c3428cddc13144a838f906557
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50603872"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62166977"
 ---
 # <a name="intel39s-mmx-instruction-set"></a>Intel&#39;s MMX yönerge kümesi
 

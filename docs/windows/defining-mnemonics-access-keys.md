@@ -23,11 +23,11 @@ helpviewer_keywords:
 - combo boxes [C++], testing values
 ms.assetid: 60a85435-aa30-4c5c-98b6-42fb045b9eb2
 ms.openlocfilehash: c49913597f51ef231073b89d60ad9718b1113f44
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59041490"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62223538"
 ---
 # <a name="how-to-define-control-access-and-values-c"></a>Nasıl yapılır: Erişimi denetlemek ve değerleri (C++) tanımlayın
 

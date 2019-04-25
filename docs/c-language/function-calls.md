@@ -8,11 +8,11 @@ helpviewer_keywords:
 - function calls
 ms.assetid: 2cfa897d-3874-4820-933c-e624f75d1712
 ms.openlocfilehash: 2402f3fef77b19c0420f0c4a52407a730b53b1d5
-ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56148211"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62233235"
 ---
 # <a name="function-calls"></a>işlev Çağrıları
 

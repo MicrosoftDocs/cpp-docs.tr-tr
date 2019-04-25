@@ -7,11 +7,11 @@ helpviewer_keywords:
 - nothrow_t class
 ms.assetid: dc7d5d42-ed5a-4919-88fe-bbad519b7a1d
 ms.openlocfilehash: 2313c436a1fd25149fa7ea72f122a6f323b40028
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50575805"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62223629"
 ---
 # <a name="nothrowt-structure"></a>nothrow_t Yapısı
 

@@ -26,11 +26,11 @@ helpviewer_keywords:
 - _locking function
 ms.assetid: 099aaac1-d4ca-4827-aed6-24dff9844150
 ms.openlocfilehash: 90327ed3388d4f18e0f64f92c33112c9ddd800f5
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51327050"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62157469"
 ---
 # <a name="locking"></a>_locking
 

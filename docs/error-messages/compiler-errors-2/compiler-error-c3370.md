@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3370
 ms.assetid: ee6d4c85-78fc-42b2-836e-5cc491a3b2ba
 ms.openlocfilehash: 0dbc95fcb26354b0f963d1844ddd6a43783c532a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50466176"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62300615"
 ---
 # <a name="compiler-error-c3370"></a>Derleyici Hatası C3370
 

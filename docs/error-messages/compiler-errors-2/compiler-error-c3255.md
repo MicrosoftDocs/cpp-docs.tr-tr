@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3255
 ms.assetid: 877ffca2-fd92-44b6-9060-6091b928b1c1
 ms.openlocfilehash: 129d2698a782d2b98267877e8d575a6ee641b94b
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59778221"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62173291"
 ---
 # <a name="compiler-error-c3255"></a>Derleyici Hatası C3255
 

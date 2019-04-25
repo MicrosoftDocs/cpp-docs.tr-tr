@@ -9,11 +9,11 @@ helpviewer_keywords:
 - simple data type classes [MFC]
 ms.assetid: 0d591d68-0a33-49e9-8a6d-90c90de5c16a
 ms.openlocfilehash: 4e415805301d7d12bd418a3b55509a7732851492
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57298484"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62307424"
 ---
 # <a name="simple-data-type-classes"></a>Basit Veri Türü Sınıfları
 

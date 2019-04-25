@@ -30,11 +30,11 @@ helpviewer_keywords:
 - ON_WM_KEYDOWN [MFC]
 ms.assetid: 0e7de191-1499-499f-859c-62742797808e
 ms.openlocfilehash: fcb343994498f65fb58be3a499ac3e0fdc2166aa
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57282090"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62309284"
 ---
 # <a name="wm-message-handlers-f---k"></a>WM_ ileti işleyicileri: F - K
 

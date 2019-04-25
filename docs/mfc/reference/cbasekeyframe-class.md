@@ -23,11 +23,11 @@ helpviewer_keywords:
 - CBaseKeyFrame [MFC], m_keyframe
 ms.assetid: 285a2eff-e7c4-43be-b5aa-737727e6866d
 ms.openlocfilehash: d36c924d30bd728fcd54b6cdf6805ade25e20b5c
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57296611"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62218413"
 ---
 # <a name="cbasekeyframe-class"></a>CBaseKeyFrame sınıfı
 

@@ -1,5 +1,5 @@
 ---
-title: C çalışma zamanı hatası R6009
+title: C Çalışma Zamanı Hatası R6009
 ms.date: 11/04/2016
 f1_keywords:
 - R6009
@@ -7,13 +7,13 @@ helpviewer_keywords:
 - R6009
 ms.assetid: edfb1f8b-3807-48f4-a994-318923b747ae
 ms.openlocfilehash: 5e1914d5d2f665609cfc24c2db3dc8a123d7e83f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50591314"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62299757"
 ---
-# <a name="c-runtime-error-r6009"></a>C çalışma zamanı hatası R6009
+# <a name="c-runtime-error-r6009"></a>C Çalışma Zamanı Hatası R6009
 
 ortam için yeterli alan yok
 

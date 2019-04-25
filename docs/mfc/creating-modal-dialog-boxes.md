@@ -7,11 +7,11 @@ helpviewer_keywords:
 - MFC dialog boxes [MFC], modal
 ms.assetid: 26c7a68c-79f6-4862-a5a8-6024984644d2
 ms.openlocfilehash: 5de6eeb616f32c7b8829d827988a972e41658530
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57304970"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62174100"
 ---
 # <a name="creating-modal-dialog-boxes"></a>Kalıcı İletişim Kutuları Oluşturma
 

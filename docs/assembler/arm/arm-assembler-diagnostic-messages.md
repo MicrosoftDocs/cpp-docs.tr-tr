@@ -21,11 +21,11 @@ helpviewer_keywords:
 - A4509
 ms.assetid: 52b38267-6023-4bdc-a0ef-863362f48eec
 ms.openlocfilehash: 867ef50065c6ed63a4da6d37523bd5a1f3cbadba
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50601688"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62167849"
 ---
 # <a name="arm-assembler-diagnostic-messages"></a>ARM Assembler tanılama iletileri
 
@@ -60,7 +60,7 @@ Bir 32-bit dal encodable olsa bile derleyici 16 bit bir dalda kodlama ve bu hata
 label
 ```
 
-> A2202: PARMAK bölgede izin verilmiyor Pre-UAL yönerge söz dizimi
+> A2202: Pre-UAL yönerge söz dizimi THUMB bölgede izin verilmiyor
 
 Thumb kodu Unified Çevirici dili (UAL) sözdizimini kullanmanız gerekir.  Eski sözdizimi artık kabul edilir
 
@@ -104,7 +104,7 @@ AREA |.myarea2|,ALIGN=3
 ALIGN 8           ; OK
 ```
 
-> A4508: Bu döndürülmüş sabiti kullanımı kullanım dışı
+> A4508: Döndürülen bu sabitin kullanım dışı
 
 ARM modunda sabitleri belirtmek için alternatif bir sözdizimi yoktur.  Yazma yerine `#<const>`, yazabileceğiniz `#<byte>,#<rot>`, değeri döndürerek alınan sabit değeri temsil eden `<byte>` sağ tarafından `<rot>`.  Bazı bağlamlarda ARM Bu döndürülmüş sabiti kullanımı kullanım dışı. Bu durumda, temel kullanın `#<const>` söz dizimi yerine.
 
@@ -113,7 +113,7 @@ ARM modunda sabitleri belirtmek için alternatif bir sözdizimi yoktur.  Yazma y
     ANDS r0, r0, #4, #2            ; A4508: Use of this rotated constant is deprecated
 ```
 
-> A4509: Bu formu koşullu yönerge kullanım dışı
+> A4509: Bu formu koşullu yönerge kullanım dışıdır
 
 Bu formu koşullu yönerge ARM ARMv8 mimarisinde tarafından onaylanmaz. Koşullu dalları kullanmak için kodu değiştirmenizi öneririz. Hangi koşullu yönergeleri hala desteklenmektedir görmek için başvurun [ARM mimarisi Reference Manual](http://go.microsoft.com/fwlink/p/?linkid=246464).
 

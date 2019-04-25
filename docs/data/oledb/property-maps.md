@@ -7,11 +7,11 @@ helpviewer_keywords:
 - property maps
 ms.assetid: 44abde56-90ad-4612-854e-d2fa5426fa80
 ms.openlocfilehash: 9df98dc85c9242693319542cea0730341d87a052
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59035380"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62284039"
 ---
 # <a name="property-maps"></a>Özellik Eşlemeleri
 

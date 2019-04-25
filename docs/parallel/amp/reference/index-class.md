@@ -1,6 +1,6 @@
 ---
 title: index Sınıfı
-ms.date: 11/04/2016
+ms.date: 03/27/2019
 f1_keywords:
 - AMP/index
 - AMP/Concurrency::index::index
@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - index structure
 ms.assetid: cbe79b08-0ba7-474c-9828-f1a71da39eb3
-ms.openlocfilehash: 054db83e4d8e140af37dcff9a7664ffdf7902325
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 5226440e49aab5766fc7992e0651e2b5ee5d4981
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57284651"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62180244"
 ---
 # <a name="index-class"></a>index Sınıfı
 
@@ -37,14 +37,14 @@ Boyut veya boyut sayısı.
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[Dizin Oluşturucu](#ctor)|Yeni bir örneğini başlatır `index` sınıfı.|
+|[Dizin Oluşturucu](#index_ctor)|Yeni bir örneğini başlatır `index` sınıfı.|
 
 ### <a name="public-operators"></a>Ortak İşleçler
 
 |Ad|Açıklama|
 |----------|-----------------|
 |[--işleci](#operator--)|Azaltır her öğeye `index` nesne.|
-|[operator(mod) =](#operator_mod_eq)|Her bir öğenin modunu (kalanını) hesaplar `index` o öğe bir sayıya bölündüğünde nesne.|
+|[operator%=](#operator_mod_eq)|Her bir öğenin modunu (kalanını) hesaplar `index` o öğe bir sayıya bölündüğünde nesne.|
 |[operator*=](#operator_star_eq)|Her öğeyi çarpar `index` nesne bir sayı.|
 |[/ = işleci](#operator_div_eq)|Her öğeye böler `index` nesne bir sayı.|
 |[index::operator\[\]](#operator_at)|Belirtilen dizindeki öğeyi döndürür.|
@@ -139,7 +139,7 @@ index operator--(
 
 Önek işleci için dizin nesnesi (* Bu). Sonek operatörü için yeni bir dizin nesnesi.
 
-## <a name="operator_mod_eq"></a>  operator(mod) =
+## <a name="operator_mod_eq"></a>  operator % =
 
 Bu öğe tarafından belirtilen sayı bölündüğünde dizin nesnesi içindeki her öğenin modunu (kalanını) hesaplar.
 

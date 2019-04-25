@@ -11,11 +11,11 @@ helpviewer_keywords:
 - pointers_to_members pragma
 ms.assetid: 8325428c-c90a-4aed-9e82-cb1dda23f4ca
 ms.openlocfilehash: 5ee45a77a7094fb1ef9ba536bae391aaad00e812
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59032069"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62180010"
 ---
 # <a name="pointerstomembers"></a>pointers_to_members
 

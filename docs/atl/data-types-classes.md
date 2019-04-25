@@ -7,11 +7,11 @@ helpviewer_keywords:
 - data types [C++], classes
 ms.assetid: 29882bab-9174-4dfa-8227-ccfeba80b865
 ms.openlocfilehash: f2cc3949e019532a35674b67446a831944ac668e
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57818524"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62235044"
 ---
 # <a name="data-types-classes"></a>Veri türü sınıfları
 

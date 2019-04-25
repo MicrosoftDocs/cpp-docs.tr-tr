@@ -31,11 +31,11 @@ helpviewer_keywords:
 - csqrtl function
 ms.assetid: b65f086b-0f55-4622-a7a3-4e79d9c9c05c
 ms.openlocfilehash: 00fe12d4f9c136278e56ceaf3fa62443092d0ec4
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50449887"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62288842"
 ---
 # <a name="csqrt-csqrtf-csqrtl"></a>csqrt, csqrtf, csqrtl
 
@@ -77,7 +77,7 @@ Kare kökünü *z*. Doğru yarı-düzlemde sonucudur.
 
 ## <a name="remarks"></a>Açıklamalar
 
-C++ aşırı yüklemeye izin verdiğinden, aşırı yüklemesini çağırabilirsiniz **csqrt** alan ve getiren **_Fcomplex** ve **_Lcomplex** değerleri. C programında **csqrt** her zaman alan ve döndüren bir **_Dcomplex** değeri.
+Çünkü C++ aşırı yüklemesi, sağlayan yüklerini çağırabilirsiniz **csqrt** alan ve getiren **_Fcomplex** ve **_Lcomplex** değerleri. C programında **csqrt** her zaman alan ve döndüren bir **_Dcomplex** değeri.
 
 ## <a name="requirements"></a>Gereksinimler
 

@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C4364
 ms.assetid: 1477634c-d60f-4570-ad16-1aaeae24ac7f
 ms.openlocfilehash: db2774b6a73a989b4e9250719f99122826b486fe
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50643605"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62207114"
 ---
 # <a name="compiler-warning-level-1-c4364"></a>Derleyici Uyarısı (düzey 1) C4364
 

@@ -24,12 +24,12 @@ helpviewer_keywords:
 - strset function
 ms.assetid: 20e132d8-4b6c-4341-b1eb-8e19b46047e2
 ms.openlocfilehash: 352e2f0591c74b98ade309759b5d286c597fb624
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50658932"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62223202"
 ---
 # <a name="strset-wcsset"></a>strset, wcsset
 
-Bu işlevler kullanım dışı bırakılmıştır. ISO C++ uyumlu [_strset, _strset_l, _wcsset, _wcsset_l, _mbsset, _mbsset_l](strset-strset-l-wcsset-wcsset-l-mbsset-mbsset-l.md) veya Gelişmiş güvenlikli [_strset_s, _strset_s_l, _wcsset_s, _wcsset_s_l, _mbsset_s, _mbsset_s_l](strset-s-strset-s-l-wcsset-s-wcsset-s-l-mbsset-s-mbsset-s-l.md) yerine.
+Bu işlevler kullanım dışı bırakılmıştır. ISO kullanın C++ uyumluluğunu [_strset, _strset_l, _wcsset, _wcsset_l, _mbsset, _mbsset_l](strset-strset-l-wcsset-wcsset-l-mbsset-mbsset-l.md) veya Gelişmiş güvenlikli [_strset_s, _strset_s_l, _wcsset_s, _wcsset_s_l, _mbsset_s, _mbsset_s_l](strset-s-strset-s-l-wcsset-s-wcsset-s-l-mbsset-s-mbsset-s-l.md) Bunun yerine.

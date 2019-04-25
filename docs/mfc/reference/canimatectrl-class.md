@@ -25,11 +25,11 @@ helpviewer_keywords:
 - CAnimateCtrl [MFC], Stop
 ms.assetid: 5e8eb1bd-96b7-47b8-8de2-6bcbb3cc299b
 ms.openlocfilehash: 867bec619dc633b7b1fbf9785e14132ba8c493ba
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57417196"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62151298"
 ---
 # <a name="canimatectrl-class"></a>CAnimateCtrl sınıfı
 

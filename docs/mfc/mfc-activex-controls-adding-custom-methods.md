@@ -6,11 +6,11 @@ helpviewer_keywords:
 - PtInCircle custom method [MFC]
 ms.assetid: 8f8dc344-44a0-4021-8db5-4cdd3d700e18
 ms.openlocfilehash: 4f5a7dc844d80ae94df8af7c0b2eea141376f9e9
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57278853"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62160152"
 ---
 # <a name="mfc-activex-controls-adding-custom-methods"></a>MFC ActiveX denetimleri: Özel yöntemler ekleme
 

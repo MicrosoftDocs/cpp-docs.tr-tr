@@ -34,11 +34,11 @@ helpviewer_keywords:
 - _outp function
 ms.assetid: c200fe22-41f6-46fd-b0be-ebb805b35181
 ms.openlocfilehash: 1a507f4115a48372706590eb61f9e3e77a0e3548
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57752070"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62289370"
 ---
 # <a name="outp-outpw-outpd"></a>_outp, _outpw, _outpd
 

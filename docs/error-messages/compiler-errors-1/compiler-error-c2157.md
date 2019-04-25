@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2157
 ms.assetid: babbca24-16dc-4b69-be14-a675029249c1
 ms.openlocfilehash: 1338a0f0ceb1a42ed84fe74e4ed9a2d774979075
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50450953"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62174867"
 ---
 # <a name="compiler-error-c2157"></a>Derleyici Hatası C2157
 

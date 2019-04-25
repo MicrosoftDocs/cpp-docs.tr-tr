@@ -8,11 +8,11 @@ helpviewer_keywords:
 - Error method [C++]
 ms.assetid: b53a15fd-198e-4276-afcd-13439c4807f7
 ms.openlocfilehash: 606f553060e71ece18b3d48159ec40133be28965
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50465474"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62155104"
 ---
 # <a name="comerrorerror"></a>_com_error::Error
 

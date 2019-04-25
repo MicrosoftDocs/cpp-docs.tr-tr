@@ -5,11 +5,11 @@ helpviewer_keywords:
 - streams, states
 ms.assetid: 5f28c968-f132-403f-968c-8417ff315e52
 ms.openlocfilehash: f725fa16e8d669975dbc02c6eefd727085bbeb7c
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57743356"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62304723"
 ---
 # <a name="stream-states"></a>Akış Durumları
 

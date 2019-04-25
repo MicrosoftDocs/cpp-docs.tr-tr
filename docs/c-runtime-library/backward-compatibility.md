@@ -10,11 +10,11 @@ helpviewer_keywords:
 - backward compatibility
 ms.assetid: cc3175cf-97fd-492f-b329-5791aea63090
 ms.openlocfilehash: f672f0601a9d20a726f90963265d08ec212dedce
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57744475"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62290371"
 ---
 # <a name="backward-compatibility"></a>Geriye Dönük Uyumluluk
 

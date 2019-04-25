@@ -7,17 +7,17 @@ helpviewer_keywords:
 - C4395
 ms.assetid: 8051469a-3a39-4677-80f7-1300fbffe8ea
 ms.openlocfilehash: 27503b94a18b949637293201203e18793f5e7788
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50676362"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62182411"
 ---
 # <a name="compiler-warning-level-1-c4395"></a>Derleyici Uyarısı (düzey 1) C4395
 
 'function': üye işlev 'member' initonly veri üyesinin bir kopyası üzerinde çağrılacak
 
-Bir üye işlev çağrıldı bir [initonly (C + +/ CLI)](../../dotnet/initonly-cpp-cli.md) veri üyesi.  C4395 uyarır **initonly** veri üyesi işlev tarafından değiştirilemez.
+Bir üye işlev çağrıldı bir [initonly (C++/CLI)](../../dotnet/initonly-cpp-cli.md) veri üyesi.  C4395 uyarır **initonly** veri üyesi işlev tarafından değiştirilemez.
 
 Aşağıdaki örnek, C4395 oluşturur:
 

@@ -9,11 +9,11 @@ helpviewer_keywords:
 - resource identifiers, context-sensitive Help
 ms.assetid: 884f1c55-fa27-4d4c-984f-30907d477484
 ms.openlocfilehash: 5689e314c2ba94068619a066e5f458e06819b2b7
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58773482"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62305989"
 ---
 # <a name="tn028-context-sensitive-help-support"></a>TN028: Bağlama duyarlı Yardım desteği
 

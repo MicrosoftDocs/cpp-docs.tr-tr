@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2467
 ms.assetid: f9ead270-5d0b-41cc-bdcd-586a647c67a7
 ms.openlocfilehash: aa45cbb19519dea7bd5c8fb96abd2c76ea30a786
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50598036"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62302091"
 ---
 # <a name="compiler-error-c2467"></a>Derleyici Hatası C2467
 

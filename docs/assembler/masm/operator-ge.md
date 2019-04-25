@@ -9,11 +9,11 @@ helpviewer_keywords:
 - operator GE
 ms.assetid: 28804311-174d-42d0-9ce1-2187b81bc844
 ms.openlocfilehash: 63b8486a6d3f7d8b61dc5befaaf43296f71f9ec0
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50647475"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62176778"
 ---
 # <a name="operator-ge"></a>GE işleci
 

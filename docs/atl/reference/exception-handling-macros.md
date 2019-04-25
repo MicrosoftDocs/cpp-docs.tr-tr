@@ -10,11 +10,11 @@ helpviewer_keywords:
 - C++ exception handling, macros
 ms.assetid: a8385d34-3fb0-4006-a42a-de045cacf0f4
 ms.openlocfilehash: 8afb2019e38f7548467e85d9a2c1c12c538cf744
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57258612"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62276269"
 ---
 # <a name="exception-handling-macros"></a>Özel durum işleme makroları
 

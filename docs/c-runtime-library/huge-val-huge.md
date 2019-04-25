@@ -15,11 +15,11 @@ helpviewer_keywords:
 - double value
 ms.assetid: 3f044b45-02cd-46b2-b1de-87fd0441dd6a
 ms.openlocfilehash: e6e3ec4c59ad22510233289d901fd3a89cb0d257
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57743175"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62289825"
 ---
 # <a name="hugeval-huge"></a>HUGE_VAL, _HUGE
 

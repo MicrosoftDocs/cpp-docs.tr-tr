@@ -6,11 +6,11 @@ helpviewer_keywords:
 - preprocessing directives
 ms.assetid: b27d7444-8f84-4c31-b2fa-03335412d5e6
 ms.openlocfilehash: 10231e27f44fc6a3dc2546c711c185056dea3df5
-ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56146596"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62232101"
 ---
 # <a name="preprocessing-directives"></a>Ön işleme Yönergeleri
 

@@ -9,11 +9,11 @@ helpviewer_keywords:
 - event handling, dual event interfaces
 ms.assetid: d17ca7cb-54f2-4658-ab8b-b721ac56801d
 ms.openlocfilehash: b882a1d356a431f75be1feb6e7bd997abed41c33
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57301486"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62234777"
 ---
 # <a name="event-handling-principles"></a>Olay işleme ilkeleri
 

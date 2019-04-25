@@ -9,11 +9,11 @@ helpviewer_keywords:
 - ATL, message handlers
 ms.assetid: cdea38a1-0d9b-4f8d-bbd5-b4f063fb3eeb
 ms.openlocfilehash: cc7631ac9e02891cee725b47133a273e756759d6
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57302461"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62223473"
 ---
 # <a name="adding-an-atl-message-handler"></a>ATL ileti işleyicisi ekleme
 

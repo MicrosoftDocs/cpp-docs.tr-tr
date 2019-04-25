@@ -7,11 +7,11 @@ helpviewer_keywords:
 - LNK4099
 ms.assetid: 358170a4-07cd-43fe-918f-82c32757ffc5
 ms.openlocfilehash: dcf4d44c3a0b5b10035af763040c2912afc8c6f7
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50442183"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62310896"
 ---
 # <a name="linker-tools-warning-lnk4099"></a>Bağlayıcı Araçları Uyarısı LNK4099
 
