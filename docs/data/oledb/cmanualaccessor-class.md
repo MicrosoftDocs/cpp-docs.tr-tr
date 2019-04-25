@@ -33,11 +33,11 @@ helpviewer_keywords:
 - CreateParameterAccessor method
 ms.assetid: a0088074-7135-465c-b228-69097a50b8cc
 ms.openlocfilehash: 526415f14172911b26462fab97d9e0a7513b8cad
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59027616"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62231070"
 ---
 # <a name="cmanualaccessor-class"></a>CManualAccessor Sınıfı
 

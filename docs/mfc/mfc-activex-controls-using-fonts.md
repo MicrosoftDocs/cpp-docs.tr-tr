@@ -20,11 +20,11 @@ helpviewer_keywords:
 - fonts [MFC], ActiveX controls
 ms.assetid: 7c51d602-3f5a-481d-84d1-a5d8a3a71761
 ms.openlocfilehash: ce1e913bb3bd1c3b74db43dc02d9d360b9cfd00c
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57271313"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62239506"
 ---
 # <a name="mfc-activex-controls-using-fonts"></a>MFC ActiveX denetimleri: Yazı tiplerini kullanma
 
