@@ -8,11 +8,11 @@ helpviewer_keywords:
 - stack, stack frame layout
 ms.assetid: 3b8addec-e809-48e4-b1d0-5bad133bd4b8
 ms.openlocfilehash: 52403fc45bbb68d693ef154bf39c5dd366dd10c5
-ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56146488"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62312531"
 ---
 # <a name="considerations-when-writing-prologepilog-code"></a>Giriş ve Bitiş Kodu Yazarken Dikkat Edilmesi Gerekenler
 
@@ -31,8 +31,7 @@ sub      esp, localbytes     ; Allocate space for locals
 push     <registers>         ; Save registers
 ```
 
-
-  `localbytes` değişkeni yerel değişkenler için yığında gereken bayt sayısını gösterir, `registers` değişkeni ise yığında kaydedilecek yazmaçların listesini gösteren bir yer tutucudur. Yazmaçları gönderdikten sonra, yığın üzerine başka bir uygun veri yerleştirebilirsiniz. Aşağıda ilgili sonuç kodu bulunmaktadır:
+`localbytes` değişkeni yerel değişkenler için yığında gereken bayt sayısını gösterir, `registers` değişkeni ise yığında kaydedilecek yazmaçların listesini gösteren bir yer tutucudur. Yazmaçları gönderdikten sonra, yığın üzerine başka bir uygun veri yerleştirebilirsiniz. Aşağıda ilgili sonuç kodu bulunmaktadır:
 
 ```
 pop      <registers>         ; Restore registers
