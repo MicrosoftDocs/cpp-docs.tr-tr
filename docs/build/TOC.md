@@ -46,7 +46,6 @@
 #### [pgomgr](pgomgr.md)
 #### [pgosweep](pgosweep.md)
 #### [Nasıl yapılır: Birden Çok PGO Profilini Tek Profilde Birleştirme](how-to-merge-multiple-pgo-profiles-into-a-single-profile.md)
-#### [Performans ve Tanılama Hub’ında Visual Studio 2013 PGO Eklentisi](profile-guided-optimization-in-the-performance-and-diagnostics-hub.md)
 # [Komut satırından MSVC araç takımını kullanma](building-on-the-command-line.md)
 ## [İzlenecek yol: Komut Satırında Yerel C++ Programı Derleme](walkthrough-compiling-a-native-cpp-program-on-the-command-line.md)
 ## [İzlenecek yol: Komut satırında C programı derleme](walkthrough-compile-a-c-program-on-the-command-line.md)
