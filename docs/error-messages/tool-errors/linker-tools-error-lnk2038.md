@@ -6,11 +6,11 @@ f1_keywords:
 helpviewer_keywords:
 - LNK2038
 ms.openlocfilehash: a22b31f1ac3226271ed7ff03b5be7dad7fff6b93
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50594317"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62298873"
 ---
 # <a name="linker-tools-error-lnk2038"></a>Bağlayıcı Araçları Hatası LNK2038
 
@@ -26,13 +26,13 @@ Visual Studio, çalışma zamanı hataları veya diğer beklenmeyen davranışla
 
 - `_MSC_VER` Bir uygulama veya kitaplık oluşturmak için kullanılan Visual C++ derleyicisi birincil ve ikincil sürüm numaralarını belirtir. Visual C++ derleyicisinin bir sürümünü kullanarak derlenmiş kod, farklı büyük ve küçük sürüm numaralarına sahip bir sürüm kullanarak derlenmiş kod ile uyumlu değil. Daha fazla bilgi için `_MSC_VER` içinde [önceden tanımlanmış makrolar](../../preprocessor/predefined-macros.md).
 
-   Kullanmakta olduğunuz ve alamıyor veya kitaplığın uyumlu bir sürümünü oluşturmak Visual C++ Derleyici sürümü ile uyumlu olmayan bir kitaplığa bağlıyorsanız, projenizi yapılandırmak için derleyicinin önceki bir sürümünü kullanabilirsiniz: değiştirme<C1/>Platform araç takımını** önceki araç takımı proje özelliği. Daha fazla bilgi için [nasıl yapılır: hedef Framework ve Platform araç kümesini değiştirme](../../build/how-to-modify-the-target-framework-and-platform-toolset.md).
+   Kullanmakta olduğunuz ve alamıyor veya kitaplığın uyumlu bir sürümünü oluşturmak Visual C++ Derleyici sürümü ile uyumlu olmayan bir kitaplığa bağlıyorsanız, projenizi yapılandırmak için derleyicinin önceki bir sürümünü kullanabilirsiniz: değiştirme **Platform araç takımını** önceki araç takımı proje özelliği. Daha fazla bilgi için [nasıl yapılır: Hedef Framework ve Platform araç kümesini değiştirme](../../build/how-to-modify-the-target-framework-and-platform-toolset.md).
 
 - `_ITERATOR_DEBUG_LEVEL` Güvenlik ve C++ Standart kitaplığında etkin özelliklerin hata ayıklama düzeyini gösterir. Bu özellikler belirli C++ Standart Kitaplığı nesnelerinin gösterimini değiştirebilir ve böylece onları uyumsuz bu kullanım farklı güvenlik ve hata ayıklama özellikleri yapın. Daha fazla bilgi için [_ıterator_debug_level](../../standard-library/iterator-debug-level.md).
 
 - `RuntimeLibrary` Bir uygulama veya kitaplık tarafından kullanılan C++ Standart Kitaplığı ve C çalışma zamanı sürümünü gösterir. C++ Standart kitaplığı veya C çalışma zamanının bir sürümünü kullanan kodu farklı bir sürüm kullanan kod ile uyumlu değil. Daha fazla bilgi için [/MD, / MT, /LD (çalışma zamanı kitaplığını kullan)](../../build/reference/md-mt-ld-use-run-time-library.md).
 
-- `_PPLTASKS_WITH_WINRT` Kullanan kodu gösteren [paralel desenler kitaplığı (PPL)](../../parallel/concrt/parallel-patterns-library-ppl.md) için farklı bir ayar kullanılarak derlenmiş nesneleri bağlandığı [/ZW](../../build/reference/zw-windows-runtime-compilation.md) derleyici seçeneği. (**/ZW** destekler: C + +/ CX.) PPL üzerinde bağlıdır veya kullanan kodu aynı kullanarak derlenmelidir **/ZW** uygulama geri kalanında kullanılan ayar.
+- `_PPLTASKS_WITH_WINRT` Kullanan kodu gösteren [paralel desenler kitaplığı (PPL)](../../parallel/concrt/parallel-patterns-library-ppl.md) için farklı bir ayar kullanılarak derlenmiş nesneleri bağlandığı [/ZW](../../build/reference/zw-windows-runtime-compilation.md) derleyici seçeneği. (**/ZW** destekler C++/CX.) PPL üzerinde bağlıdır veya kullanan kodu aynı kullanarak derlenmelidir **/ZW** uygulama geri kalanında kullanılan ayar.
 
 Bu simge değerlerinin projelerle tutarlı olduğundan emin olun, Visual Studio çözümünüzün ve aynı zamanda uygulamanızın bağlı kod ve kitaplıklarla tutarlı oldukları.
 
