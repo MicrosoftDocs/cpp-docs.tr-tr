@@ -7,11 +7,11 @@ helpviewer_keywords:
 - BK1514
 ms.assetid: 7c7e2504-a490-44ab-bb1f-47385ee2f4b0
 ms.openlocfilehash: 410c24b67e76bb2d412e1594abbb4a668c79aa1e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50428372"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62324486"
 ---
 # <a name="bscmake-error-bk1514"></a>BSCMAKE Hatası BK1514
 

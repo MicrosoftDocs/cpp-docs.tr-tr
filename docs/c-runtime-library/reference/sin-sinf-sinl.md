@@ -32,11 +32,11 @@ helpviewer_keywords:
 - sinf function
 ms.assetid: 737de73e-3590-45f9-8257-dc1c0c489dfc
 ms.openlocfilehash: 7006d7246837e5dc69733a007b3f7dab1c55280e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50430368"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62356258"
 ---
 # <a name="sin-sinf-sinl"></a>Sin, sinf, sinl
 
@@ -66,7 +66,7 @@ Radyan cinsinden açı.
 
 |Giriş|SEH özel durumu|Matherr özel durumu|
 |-----------|-------------------|-----------------------|
-|± QNAN, ONRAKİNİ BUL|Yok.|_DOMAIN|
+|± QNAN, ONRAKİNİ BUL|None|_DOMAIN|
 |± ∞ (sinüs, sinf, sinl)|GEÇERSİZ|_DOMAIN|
 
 Dönüş kodları hakkında daha fazla bilgi için bkz. [errno _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).

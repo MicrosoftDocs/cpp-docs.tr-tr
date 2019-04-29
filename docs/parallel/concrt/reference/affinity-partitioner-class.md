@@ -9,11 +9,11 @@ helpviewer_keywords:
 - affinity_partitioner class
 ms.assetid: 31bf7bb1-bd01-491c-9760-d9d60edfccad
 ms.openlocfilehash: dac25755c388e5297ce671da09b7938f09f1ef03
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57262798"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62337667"
 ---
 # <a name="affinitypartitioner-class"></a>affinity_partitioner Sınıfı
 

@@ -16,11 +16,11 @@ helpviewer_keywords:
 - vector new
 ms.assetid: 79682f85-6889-40f6-b8f7-9eed5176ea35
 ms.openlocfilehash: afbec5397ab0c9e488a2d624404b3fc9092556ff
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50441099"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62342334"
 ---
 # <a name="operator-newcrt"></a>işleç new(CRT)
 

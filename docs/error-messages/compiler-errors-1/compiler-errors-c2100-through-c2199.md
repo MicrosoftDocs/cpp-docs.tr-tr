@@ -1,6 +1,6 @@
 ---
-title: C2100 ile C2199 arasındaki Derleyici Hataları
-ms.date: 11/17/2017
+title: C2100 ile C2199 arasındaki derleyici hataları
+ms.date: 04/21/2019
 f1_keywords:
 - C2119
 - C2123
@@ -23,14 +23,14 @@ helpviewer_keywords:
 - C2187
 - C2189
 ms.assetid: 1ccab076-0954-4386-b959-d3112a6793ae
-ms.openlocfilehash: 31974bb830364b2ef41a7da17cb0ad95d931f771
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
-ms.translationtype: MT
+ms.openlocfilehash: 3a5a5368700eb1c4c585826021fefc21c25ecedf
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57423540"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62360547"
 ---
-# <a name="compiler-errors-c2100-through-c2199"></a>C2100 ile C2199 arasındaki Derleyici Hataları
+# <a name="compiler-errors-c2100-through-c2199"></a>C2100 ile C2199 arasındaki derleyici hataları
 
 Belgelerin bu bölümdeki makaleleri bir alt kümesini derleyici tarafından oluşturulan hata iletilerini açıklayın.
 
@@ -139,4 +139,9 @@ Belgelerin bu bölümdeki makaleleri bir alt kümesini derleyici tarafından olu
 |[Derleyici Hatası C2196](compiler-error-c2196.md)|Case değeri '*değer*' önceden kullanıldı|
 |[Derleyici Hatası C2197](compiler-error-c2197.md)|'*işlevi*': çok fazla bağımsız değişken çağrısı için|
 |[Derleyici Hatası C2198](compiler-error-c2198.md)|'*işlevi*': çok az sayıda bağımsız değişken çağrısı için|
-|[Derleyici Hatası C2199](compiler-error-c2199.md)|sözdizimi hatası: bulundu '*tanımlayıcı* (' genel kapsamda (yönelik bir bildirim oldu mu?)|
+|[Derleyici Hatası c2199 arasındaki](compiler-error-c2199.md)|sözdizimi hatası: bulundu '*tanımlayıcı* (' genel kapsamda (yönelik bir bildirim oldu mu?)|
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[C /C++ derleyicisi ve derleme araçları hataları ve Uyarıları](../compiler-errors-1/c-cpp-build-errors.md) \
+[C3999 arasındaki derleyici hataları C2000-](../compiler-errors-1/compiler-errors-c2000-c3999.md)

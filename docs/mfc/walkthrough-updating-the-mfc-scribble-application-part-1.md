@@ -10,11 +10,11 @@ helpviewer_keywords:
 - walkthroughs [MFC], update existing application
 ms.assetid: aa6330d3-6cfc-4c79-8fcb-0282263025f7
 ms.openlocfilehash: 213bc8087b58eac232cc8fcfccc88e13785a807e
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
-ms.translationtype: MT
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57258768"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62358300"
 ---
 # <a name="walkthrough-updating-the-mfc-scribble-application-part-1"></a>İzlenecek yol: (Kısım 1) MFC karalama uygulamasını güncelleştirme
 
@@ -269,4 +269,4 @@ Kullanılacak Klasik 1.0 MFC karalama örneğinin değiştirdiğiniz **Şerit Ta
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [İzlenecek Yollar](../mfc/walkthroughs-mfc.md)<br/>
-[İzlenecek yol: (2. bölüm) MFC karalama uygulamasını güncelleştirme](../mfc/walkthrough-updating-the-mfc-scribble-application-part-2.md)
+[İzlenecek yol: MFC Karalama Uygulamasını Güncelleştirme (2. Bölüm)](../mfc/walkthrough-updating-the-mfc-scribble-application-part-2.md)

@@ -3,11 +3,11 @@ title: Belirteçlerin Özeti
 ms.date: 11/04/2016
 ms.assetid: 2978cbf6-e66e-46fc-9938-caa052f2ccf7
 ms.openlocfilehash: 4fdc1cf4c4e5a89cc9ecf029e64b6eb5422cd6a3
-ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56149121"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62345142"
 ---
 # <a name="summary-of-tokens"></a>Belirteçlerin Özeti
 

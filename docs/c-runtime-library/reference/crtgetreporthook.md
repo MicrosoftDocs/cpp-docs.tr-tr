@@ -23,11 +23,11 @@ helpviewer_keywords:
 - _CrtGetReportHook function
 ms.assetid: 922758ed-7edd-4359-9c92-0535192dc11a
 ms.openlocfilehash: 0b8b666093807c95312d4328ca9b3043ad1e09df
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50536766"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62339422"
 ---
 # <a name="crtgetreporthook"></a>_CrtGetReportHook
 

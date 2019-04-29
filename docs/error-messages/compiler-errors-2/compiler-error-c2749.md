@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2749
 ms.assetid: a81aef36-cdca-4d78-89d5-b72eff2500b2
 ms.openlocfilehash: 80ac01eaba8e5291ee5558d226ebea2c3d8ff47e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50601077"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62360222"
 ---
 # <a name="compiler-error-c2749"></a>Derleyici Hatası C2749
 

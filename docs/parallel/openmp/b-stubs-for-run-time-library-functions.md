@@ -3,11 +3,11 @@ title: B. Çalışma zamanı kitaplık işlevleri için saplamalar
 ms.date: 01/22/2019
 ms.assetid: fdfdabe0-f678-4551-80d5-827b62354427
 ms.openlocfilehash: 1e8d439eefad005c673cfb6c4ea12399b8236fb5
-ms.sourcegitcommit: 382e247c0f1b4cb7c2dab837b8b6fdff24bff47a
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/28/2019
-ms.locfileid: "55087268"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62362991"
 ---
 # <a name="b-stubs-for-run-time-library-functions"></a>B. Çalışma zamanı kitaplık işlevleri için saplamalar
 

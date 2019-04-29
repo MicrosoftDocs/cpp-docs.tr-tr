@@ -26,11 +26,11 @@ helpviewer_keywords:
 - set_fmode function
 ms.assetid: f80eb9c7-733b-4652-a9bc-6b3790a35f12
 ms.openlocfilehash: af83f22ebfaf274b73ca9e891563d3775e28925f
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51329910"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62356584"
 ---
 # <a name="setfmode"></a>_set_fmode
 
@@ -63,7 +63,7 @@ errno_t _set_fmode(
 
 |Yordam|Gerekli başlık|İsteğe bağlı başlık|
 |-------------|---------------------|---------------------|
-|**_set_fmode**|\<stdlib.h >|\<fcntl.h >, \<errno.h >|
+|**_set_fmode**|\<stdlib.h >|\<fcntl.h>, \<errno.h>|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

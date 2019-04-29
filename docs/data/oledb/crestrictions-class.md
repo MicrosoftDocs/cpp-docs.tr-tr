@@ -14,11 +14,11 @@ helpviewer_keywords:
 - Open method
 ms.assetid: 0aaa2364-641c-4318-b110-7446aada4b4f
 ms.openlocfilehash: 309bb7e707d649cf78528f3d0df6cf8e43201823
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59040625"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62361886"
 ---
 # <a name="crestrictions-class"></a>CRestrictions Sınıfı
 

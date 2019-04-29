@@ -1,18 +1,18 @@
 ---
-title: 'İzlenecek Yol: MFC Projesine Animasyon Ekleme'
+title: 'İzlenecek yol: Bir MFC projesine animasyon ekleme'
 ms.date: 09/20/2018
 helpviewer_keywords:
 - animation [MFC]
 - MFC, animation
 ms.assetid: 004f832c-9fd5-4f88-9ca9-ae65dececdc2
 ms.openlocfilehash: 25e29654f1e192e03a078e4a963f27abeea6056d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
-ms.translationtype: MT
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50522245"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62358610"
 ---
-# <a name="walkthrough-adding-animation-to-an-mfc-project"></a>İzlenecek Yol: MFC Projesine Animasyon Ekleme
+# <a name="walkthrough-adding-animation-to-an-mfc-project"></a>İzlenecek yol: Bir MFC projesine animasyon ekleme
 
 Bu izlenecek yol, temel bir animasyonlu nesne bir Visual C++ için Microsoft Foundation Class Kitaplığı'nı (MFC) projesi eklemek öğretir.
 

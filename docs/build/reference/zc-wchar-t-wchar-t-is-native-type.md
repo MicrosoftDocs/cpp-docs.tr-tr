@@ -13,11 +13,11 @@ helpviewer_keywords:
 - Zc compiler options [C++]
 ms.assetid: b0de5a84-da72-4e5a-9a4e-541099f939e0
 ms.openlocfilehash: b2563ba0ae2a07bc9f9d81128745ed4b9651fb6c
-ms.sourcegitcommit: faa42c8a051e746d99dcebe70fd4bbaf3b023ace
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57815183"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62315644"
 ---
 # <a name="zcwchart-wchart-is-native-type"></a>/Zc:wchar_t (wchar_t Yerel Tür)
 
@@ -29,11 +29,11 @@ Ayrıştırma `wchar_t` C++ standardına göre yerleşik bir tür olarak.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Varsa **/ZC: wchar_t** açıktır, `wchar_t` C++ derlenmiş kod içinde yerleşik bir tamsayı türü için bir anahtar sözcüktür. Varsa **/Zc:wchar_t-** (eksi işaretiyle) C belirtilen, veya kod derlenir `wchar_t` yerleşik bir tür değil. Bunun yerine, `wchar_t` olarak tanımlanan bir `typedef` için `unsigned short` kurallı üstbilgi stddef.h içinde. (Microsoft uygulaması, diğer standart üstbilgi stddef.h tarafından bulunan başka bir üst bilgi de tanımlar.)
+Varsa **/ZC: wchar_t** açıktır, `wchar_t` olarak derlenmiş kod içinde yerleşik bir tamsayı türü için bir anahtar sözcüktür C++. Varsa **/Zc:wchar_t-** (eksi işaretiyle) C belirtilen, veya kod derlenir `wchar_t` yerleşik bir tür değil. Bunun yerine, `wchar_t` olarak tanımlanan bir `typedef` için `unsigned short` kurallı üstbilgi stddef.h içinde. (Microsoft uygulaması, diğer standart üstbilgi stddef.h tarafından bulunan başka bir üst bilgi de tanımlar.)
 
-Önermeyiz **/Zc:wchar_t-** C++ Standart gerektirdiğinden `wchar_t` yerleşik bir tür olabilir. Kullanarak `typedef` sürümü, taşınabilirlik sorunlarına neden olabilir. Visual C++'ın önceki sürümlerinden yükseltin ve derleyici hatayla karşılaşan [C2664](../../error-messages/compiler-errors-2/compiler-error-c2664.md) kod örtük dönüştürmeye çalıştığı için bir `wchar_t` için `unsigned short`, bunun yerine hatayı gidermek için kodu değiştirmenizi öneririz ayarının **/Zc:wchar_t-**.
+Önermeyiz **/Zc:wchar_t-** çünkü C++ standart gerektirir `wchar_t` yerleşik bir tür olabilir. Kullanarak `typedef` sürümü, taşınabilirlik sorunlarına neden olabilir. Görsel'ın önceki sürümlerinden yükseltiyorsanız C++ ve derleyici hatayla karşılaşan [C2664](../../error-messages/compiler-errors-2/compiler-error-c2664.md) kod örtük dönüştürmeye çalıştığı için bir `wchar_t` için `unsigned short`, hatayı düzeltmek için kodu değiştirmenizi öneririz ayar yerine **/Zc:wchar_t-**.
 
-**/ZC: wchar_t** seçeneği C++ derlemelerde varsayılan olarak açıktır ve C derlemelerde göz ardı edilir. [/ Permissive-](permissive-standards-conformance.md) seçeneği etkilemez **/ZC: wchar_t**.
+**/ZC: wchar_t** seçenektir üzerinde varsayılan olarak C++ derlemeleri ve C derlemelerde göz ardı edilir. [/ Permissive-](permissive-standards-conformance.md) seçeneği etkilemez **/ZC: wchar_t**.
 
 Microsoft uygulayan `wchar_t` bir iki baytlık imzalanmamış değer olarak. Microsoft'a özgü yerel türü eşleyen `__wchar_t`. Hakkında daha fazla bilgi için `wchar_t`, bkz: [veri türü aralıkları](../../cpp/data-type-ranges.md) ve [temel türler](../../cpp/fundamental-types-cpp.md).
 

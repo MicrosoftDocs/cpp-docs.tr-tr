@@ -22,11 +22,11 @@ helpviewer_keywords:
 - atexit function
 ms.assetid: 92c156d2-8052-4e58-96dc-00128baac6f9
 ms.openlocfilehash: 48f0fbfa1f3350f73899fcdbb3bf7922f1c6174d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50556655"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62341593"
 ---
 # <a name="atexit"></a>atexit
 

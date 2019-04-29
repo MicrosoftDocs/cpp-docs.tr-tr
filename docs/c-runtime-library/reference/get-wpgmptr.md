@@ -26,11 +26,11 @@ helpviewer_keywords:
 - _get_wpgmptr function
 ms.assetid: a77cdd13-2303-4b7c-9a60-8debdbef2011
 ms.openlocfilehash: 87738c8564b70df37a9f2fbdcc5e5ab80165af32
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51329091"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62331889"
 ---
 # <a name="getwpgmptr"></a>_get_wpgmptr
 

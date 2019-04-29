@@ -11,11 +11,11 @@ helpviewer_keywords:
 - language strings
 ms.assetid: a0e5a0c5-5602-4da0-b65f-de3d6c8530a2
 ms.openlocfilehash: f6df36aafde9a61a1fd590a7f60b3c17131aadbb
-ms.sourcegitcommit: 6990f842fefc27b522b15cf352f3517b319d78da
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53248552"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62342750"
 ---
 # <a name="ucrt-locale-names-languages-and-countryregion-strings"></a>UCRT yerel ayar adları, diller ve ülke/bölge dizeleri
 

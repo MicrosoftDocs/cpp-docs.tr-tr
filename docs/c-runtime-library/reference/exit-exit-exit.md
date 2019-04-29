@@ -31,11 +31,11 @@ helpviewer_keywords:
 - function calls, terminating
 - process termination, calling
 ms.openlocfilehash: 7b2a22649d779f382bb4055b1e44c14312627ccd
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50451759"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62339357"
 ---
 # <a name="exit-exit-exit"></a>Çıkış, _Exit, _exit
 
@@ -67,7 +67,7 @@ Durum kodu çıkın.
 
 **Çıkmak**, **_Exit** ve **_exit** işlevleri çağırma işlemi sonlandırın. **Çıkmak** işlevi yok ediciler çağırır için iş parçacığı-yerel nesneleri, sonra çağıran — son-giren ilk çıkar (LIFO) sırayla — tarafından kaydedilen işlevleri **atexit** ve **_onexit**ve işlem sonlandırılmadan önce tüm dosya arabelleklerini ardından alır. **_Exit** ve **_exit** işlevleri sonlandırma işlemi iş parçacığı-yerel nesneleri yok etme veya işleme **atexit** veya **_onexit**işlevler ve akış arabellekleri temizleme olmadan.
 
-Ancak **çıkmak**, **_Exit** ve **_exit** çağrıları, bir değer, değer döndürmeyen *durumu* konak ortamı için kullanılabilir hale getirileceğini veya süreç bittikten sonra varsa, çağırma işlemi bekleniyor. Genellikle, arayanın kümeleri *durumu* değer normal bir çıkış göstermek için 0 ya da bir hatayı göstermek için başka bir değer. *Durumu* değeri işletim sistemi batch komutuna kullanılabilir **ERRORLEVEL** ve iki sabitlerinden birini tarafından temsil edilir: **exıt_success**, bir değeri temsil eder 0 veya **exıt_faılure**, 1 değerini temsil eder.
+Ancak **çıkmak**, **_Exit** ve **_exit** çağrıları, bir değer, değer döndürmeyen *durumu* konak ortamı için kullanılabilir hale getirileceğini veya süreç bittikten sonra varsa, çağırma işlemi bekleniyor. Genellikle, arayanın kümeleri *durumu* değer normal bir çıkış göstermek için 0 ya da bir hatayı göstermek için başka bir değer. *Durumu* değeri işletim sistemi batch komutuna kullanılabilir **ERRORLEVEL** ve iki sabitlerinden birini tarafından temsil edilir: **Exıt_success**, 0 değerini temsil eden veya **exıt_faılure**, 1 değerini temsil eder.
 
 **Çıkmak**, **_Exit**, **_exit**, **quick_exit**, **_cexit**, ve **_c_exit** işlevler gibi davranır.
 
@@ -97,7 +97,7 @@ Kullanmayın **DLL_PROCESS_ATTACH** çağrılacak **çıkmak** gelen **DllMain**
 
 |İşlev|Gerekli başlık|
 |--------------|---------------------|
-|**Çıkış**, **_Exit**, **_exit**|\<Process.h > veya \<stdlib.h >|
+|**exit**, **_Exit**, **_exit**|\<Process.h > veya \<stdlib.h >|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

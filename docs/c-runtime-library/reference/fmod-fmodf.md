@@ -30,11 +30,11 @@ helpviewer_keywords:
 - floating-point numbers, calculating remainders
 ms.assetid: 6962d369-d11f-40b1-a6d7-6f67239f8a23
 ms.openlocfilehash: 78677be1a0c9921c35e54d43a00b8956a9d858b6
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50605353"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62333358"
 ---
 # <a name="fmod-fmodf-fmodl"></a>fmodf, fmodl fmod
 

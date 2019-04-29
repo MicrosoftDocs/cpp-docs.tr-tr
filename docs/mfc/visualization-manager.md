@@ -5,11 +5,11 @@ helpviewer_keywords:
 - Visualization Manager
 ms.assetid: c9dd1365-27ac-42e5-8caa-1004525b4129
 ms.openlocfilehash: 9c9dc19266d80d56f696953c5f5896eb9d99cc8b
-ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52175580"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62358595"
 ---
 # <a name="visualization-manager"></a>Seri Hale Getirme Yöneticisi
 

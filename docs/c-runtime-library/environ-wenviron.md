@@ -14,11 +14,11 @@ helpviewer_keywords:
 - wenviron function
 ms.assetid: 7e639962-6536-47cd-8095-0cbe44a56e03
 ms.openlocfilehash: 56f6f1d06d834ccab68daf859fac065cf215582c
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57748929"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62344336"
 ---
 # <a name="environ-wenviron"></a>_environ, _wenviron
 

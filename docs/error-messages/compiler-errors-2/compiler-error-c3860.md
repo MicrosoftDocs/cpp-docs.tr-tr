@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3860
 ms.assetid: 1fb5110d-594e-4f1c-8773-888233af1313
 ms.openlocfilehash: 89b43c03cb26fa48d347f6066a18ae36c54234db
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50562961"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62352981"
 ---
 # <a name="compiler-error-c3860"></a>Derleyici Hatası C3860
 

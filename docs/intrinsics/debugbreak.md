@@ -9,11 +9,11 @@ helpviewer_keywords:
 - __debugbreak intrinsic
 ms.assetid: 1d1e1c0c-891a-4613-ae4b-d790094ba830
 ms.openlocfilehash: b52c34014402a235e03c45f82dcd1e5c542e4919
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59023106"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62349049"
 ---
 # <a name="debugbreak"></a>__debugbreak
 

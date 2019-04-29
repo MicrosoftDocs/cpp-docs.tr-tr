@@ -24,11 +24,11 @@ helpviewer_keywords:
 - RTC_NumErrors function
 ms.assetid: 7e82adae-38e2-4f8b-bc0b-37bda8109fd1
 ms.openlocfilehash: c5e79f388164670e0fa48438d68a9b35d29f812d
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51524969"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62357297"
 ---
 # <a name="rtcnumerrors"></a>_RTC_NumErrors
 

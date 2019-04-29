@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C1057
 ms.assetid: 1e67e727-963d-42c5-8c32-c0e370d32735
 ms.openlocfilehash: 5000cdd0d91b35fab48655d99b14f17993161292
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50492246"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62364005"
 ---
 # <a name="fatal-error-c1057"></a>Önemli hata C1057
 

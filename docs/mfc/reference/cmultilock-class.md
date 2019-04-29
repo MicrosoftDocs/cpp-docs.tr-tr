@@ -15,11 +15,11 @@ helpviewer_keywords:
 - CMultiLock [MFC], Unlock
 ms.assetid: c5b7c78b-1f81-4387-b7dd-2c813c5b6b61
 ms.openlocfilehash: 107ed227c5515cbf2fcb08e957a64a4a17d8287a
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57288675"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62366816"
 ---
 # <a name="cmultilock-class"></a>CMultiLock sınıfı
 

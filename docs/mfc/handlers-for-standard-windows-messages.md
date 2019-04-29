@@ -11,11 +11,11 @@ helpviewer_keywords:
 - messages [MFC], Windows
 ms.assetid: 19412a8b-2c38-4502-81da-13c823c7e36c
 ms.openlocfilehash: d60ae52225ddd993c1768d0b5ce1989ab0192e45
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57275395"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62358253"
 ---
 # <a name="handlers-for-standard-windows-messages"></a>Standart Windows İletileri İşleyicileri
 
@@ -23,7 +23,7 @@ Varsayılan standart Windows iletileri işleyicileri (**WM_**) sınıfta tanıml
 
 `afx_msg void OnPaint();`
 
-**Afx_msg** anahtar sözcüğü C++ etkisini önerir **sanal** işleyicileri diğerinden ayırt etme tarafından anahtar sözcüğü `CWnd` üye işlevleri. Ancak, bu işlevler gerçekte sanal olmadığına dikkat edin; Bunlar, bunun yerine ileti eşlemeleri uygulanır. İleti eşlemeleri yalnızca C++ dili için herhangi bir uzantısı değil, standart Önişlemci makroları bağlıdır. **Afx_msg** anahtar sözcüğü, ön işleme sonra boşluk olarak çözer.
+**Afx_msg** anahtar sözcüğü önerir etkisini C++ **sanal** işleyicileri diğerinden ayırt etme tarafından anahtar sözcüğü `CWnd` üye işlevleri. Ancak, bu işlevler gerçekte sanal olmadığına dikkat edin; Bunlar, bunun yerine ileti eşlemeleri uygulanır. İleti eşlemeleri yalnızca C++ dili için herhangi bir uzantısı değil, standart Önişlemci makroları bağlıdır. **Afx_msg** anahtar sözcüğü, ön işleme sonra boşluk olarak çözer.
 
 Bir temel sınıfta tanımlanan bir işleyici geçersiz kılmak için yalnızca aynı prototipe sahip bir işlev, türetilmiş sınıf içinde ve bir ileti eşleme girdisi işleyicisini oluşturmak için tanımlar. İşleyicinizi ", sınıfın temel sınıflarında birinde aynı ada sahip herhangi bir işleyici geçersiz kılar".
 

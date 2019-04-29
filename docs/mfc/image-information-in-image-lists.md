@@ -6,11 +6,11 @@ helpviewer_keywords:
 - image lists [MFC], image information in
 ms.assetid: 73c41543-fa91-405d-b15b-0feffa6a72c1
 ms.openlocfilehash: 7b83b7e5f7de6f8ccca95d732f71a5d73a97e943
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57263071"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62363524"
 ---
 # <a name="image-information-in-image-lists"></a>Görüntü Listelerindeki Görüntü Bilgileri
 

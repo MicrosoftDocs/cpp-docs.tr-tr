@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3408
 ms.assetid: 1f5ea979-fb1e-4214-b310-6fd6ca8249b1
 ms.openlocfilehash: c374ea60129b315caf4b72dbf2917a9f4c4ba2ea
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50428217"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62353014"
 ---
 # <a name="compiler-error-c3408"></a>Derleyici Hatası C3408
 

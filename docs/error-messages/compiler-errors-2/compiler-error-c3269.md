@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3269
 ms.assetid: c575f067-244d-4dd5-bf58-9e7630ea58b7
 ms.openlocfilehash: 406b388460b3d449471c884dd6461f2ce59a10f6
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50622956"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62365721"
 ---
 # <a name="compiler-error-c3269"></a>Derleyici Hatası C3269
 

@@ -39,11 +39,11 @@ helpviewer_keywords:
 - control87_2 function
 ms.assetid: 0d09729d-d9a0-43d6-864c-43ff25e7e0c5
 ms.openlocfilehash: e2ebfdc80a451ebf02563f78a62dd08618f92bcd
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50505878"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62340423"
 ---
 # <a name="control87-controlfp-control872"></a>_control87, _controlfp, __control87_2
 
@@ -73,7 +73,7 @@ int __control87_2(
 *new*<br/>
 Yeni Denetim sözcüğü bit değerleri.
 
-*Maskesi*<br/>
+*mask*<br/>
 Ayarlanacak yeni denetim sözcüğü bitleri için maske.
 
 *x86_cw*<br/>
@@ -90,7 +90,7 @@ SSE kayan nokta birimi için Denetim sözcüğü. 0 geçirin (**NULL**) yalnızc
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Control87** işlevi alır ve kayan nokta denetim sözcüğünü ayarlar. Kayan nokta denetim sözcüğü programın duyarlılık, yuvarlama ve sonsuzluk modlarını platforma bağlı olarak kayan nokta matematik paketindeki değiştirmesini sağlar. Ayrıca **_control87** maskelemek veya kayan nokta özel durum maskesini kaldırmak için. Varsa değerini *maskesi* 0'a eşit olan **_control87** kayan nokta denetim sözcüğünü alır. Varsa *maskesi* olan sıfır değilse, Denetim sözcüğü için yeni bir değer ayarlanır: açık olan bitler (yani 1'e eşit olan) içinde *maskesi*, karşılık gelen bit *yeni* denetim güncelleştirmek için kullanılır Word. Diğer bir deyişle, **fpcntrl** = ((**fpcntrl** & ~*maskesi*) &#124; (*yeni* & *maskesi*)) Burada **fpcntrl** kayan nokta denetim sözcüğüdür.
+**_Control87** işlevi alır ve kayan nokta denetim sözcüğünü ayarlar. Kayan nokta denetim sözcüğü programın duyarlılık, yuvarlama ve sonsuzluk modlarını platforma bağlı olarak kayan nokta matematik paketindeki değiştirmesini sağlar. Ayrıca **_control87** maskelemek veya kayan nokta özel durum maskesini kaldırmak için. Varsa değerini *maskesi* 0'a eşit olan **_control87** kayan nokta denetim sözcüğünü alır. Varsa *maskesi* olan sıfır değilse, Denetim sözcüğü için yeni bir değer ayarlanır: Tüm bit için açıktır (yani 1'e eşit olan) içinde *maskesi*, karşılık gelen bit *yeni* denetim sözcüğünü güncellemek için kullanılır. Diğer bir deyişle, **fpcntrl** = ((**fpcntrl** & ~*maskesi*) &#124; (*yeni* & *maskesi*)) Burada **fpcntrl** kayan nokta denetim sözcüğüdür.
 
 > [!NOTE]
 > Varsayılan olarak, çalışma zamanı kitaplıkları tüm kayan nokta özel durumları maskeleyebilir.

@@ -31,11 +31,11 @@ helpviewer_keywords:
 - spawnlp function
 ms.assetid: 74fc6e7a-4f24-4103-9387-7177875875e6
 ms.openlocfilehash: 44137aefcec8f6658a90117288a47696f4d31903
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51328740"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62355243"
 ---
 # <a name="spawnlp-wspawnlp"></a>_spawnlp, _wspawnlp
 
@@ -73,7 +73,7 @@ intptr_t _wspawnlp(
 *■ CmdName*<br/>
 Yürütülecek dosyanın yolu.
 
-*arg0*, *arg1*,... *argn*<br/>
+*arg0*, *arg1*, ... *argn*<br/>
 Bağımsız değişkenlere işaretçi listesi. *Arg0* bağımsız değişken ise genellikle bir işaretçiye *■ cmdname*. Bağımsız değişkenler *arg1* aracılığıyla *argn* yeni bağımsız değişken listesini oluşturan karakter dizelerine. Aşağıdaki *argn*, olmalıdır bir **NULL** bağımsız değişken listesinin sonunu işaretlemek için işaretçi.
 
 ## <a name="return-value"></a>Dönüş Değeri

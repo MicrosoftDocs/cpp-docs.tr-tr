@@ -28,11 +28,11 @@ helpviewer_keywords:
 - wexeclp function
 ms.assetid: 7b179163-4bcd-4d6a-8baf-68f886791928
 ms.openlocfilehash: db13263ca4574d59821d5783b9ae83f278fef14d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50506645"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62339695"
 ---
 # <a name="execlp-wexeclp"></a>_execlp, _wexeclp
 

@@ -11,11 +11,11 @@ helpviewer_keywords:
 - keyboard shortcuts [C++], menu association
 ms.assetid: f234c5f2-4ec3-4c9e-834a-b5dd297625b9
 ms.openlocfilehash: bb407538f254df5f187ff91b85a8eaa753a52287
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59027525"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62362393"
 ---
 # <a name="accelerator-keys-c"></a>Hızlandırma tuşları (C++)
 

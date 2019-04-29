@@ -13,11 +13,11 @@ helpviewer_keywords:
 - setjmp function, C++ programs
 ms.assetid: 96be8816-f6f4-4567-9a9c-0c3c720e37c5
 ms.openlocfilehash: 4ead12f79701899b3977993c9de3c3803023150f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50525725"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62364525"
 ---
 # <a name="using-setjmp-and-longjmp"></a>Setjmp ve longjmp kullanma
 
@@ -32,7 +32,7 @@ Kullanmaya karar verirseniz `setjmp` ve `longjmp` bir C++ programında de \<setj
 
 Kullanıyorsanız bir [/EH](../build/reference/eh-exception-handling-model.md) C++ kodu derlemek için seçeneğinde, yerel nesneleri yok ediciler yığın bırakma sırasında çağrılır. Ancak, kullanırsanız **EHS** veya **/ehsc** derleme ve işlevlerinizi kullanan bir [noexcept](../cpp/noexcept-cpp.md) çağrıları `longjmp`, yok edici bırakma sonra bu işlev için , iyileştirici durumuna bağlı olarak gerçekleşmeyebilir.
 
-Taşınabilir kodda olduğunda bir `longjmp` çağrı yürütüldüğünde, doğru çerçeve tabanlı nesnelerin yok edilmesini standardına göre garanti açıkça ve diğer derleyiciler tarafından desteklenmiyor olabilir. Bildiren, 4, uyarı düzeyinde bir çağrı `setjmp` uyarı C4611 neden: '_setjmp' ile C++ nesne yok etme arasındaki etkileşim taşınabilir.
+Taşınabilir kodda olduğunda bir `longjmp` çağrı yürütüldüğünde, doğru çerçeve tabanlı nesnelerin yok edilmesini standardına göre garanti açıkça ve diğer derleyiciler tarafından desteklenmiyor olabilir. Bildiren, 4, uyarı düzeyinde bir çağrı `setjmp` uyarı C4611 neden: '_setjmp' arasındaki etkileşimi ve C++ nesne yok etme taşınabilir.
 
 **END Microsoft özgü**
 

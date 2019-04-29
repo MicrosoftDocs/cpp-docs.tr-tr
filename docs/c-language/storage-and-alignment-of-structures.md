@@ -8,11 +8,11 @@ helpviewer_keywords:
 - packing structures
 ms.assetid: 60ff292f-2595-4f37-ae00-4c4b4f047196
 ms.openlocfilehash: 8e15f39b5a7a78da117c3b8a551ebfba5e07c194
-ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56150343"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62336178"
 ---
 # <a name="storage-and-alignment-of-structures"></a>Yapıların Depolanması ve Hizalanması
 

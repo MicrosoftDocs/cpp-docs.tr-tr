@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2653
 ms.assetid: 3f49e731-affd-43a0-a8d0-181db7650bc3
 ms.openlocfilehash: d4a3a8a74483317b87e16458f44016f0aeca1379
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50471155"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62350786"
 ---
 # <a name="compiler-error-c2653"></a>Derleyici Hatası C2653
 

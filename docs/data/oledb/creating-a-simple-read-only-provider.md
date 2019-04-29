@@ -6,11 +6,11 @@ helpviewer_keywords:
 - OLE DB provider templates, creating providers
 ms.assetid: ade8ccdd-9ea4-4e46-a964-18460c2a2401
 ms.openlocfilehash: a80678f6bc512c45c0df2ea5cbfc4708f1252ac0
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59035367"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62362006"
 ---
 # <a name="creating-a-simple-read-only-provider"></a>Basit bir Salt Okunur Sağlayıcı Oluşturma
 

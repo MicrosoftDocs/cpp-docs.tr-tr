@@ -7,11 +7,11 @@ helpviewer_keywords:
 - initializing arrays, strings
 ms.assetid: 0ab8079d-d0d3-48f9-afd1-36a7bb439b29
 ms.openlocfilehash: c9dbad72314e9ce01d022d26209e2132c29c106a
-ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56147938"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62326007"
 ---
 # <a name="initializing-strings"></a>Başlatma Dizeleri
 
@@ -29,8 +29,7 @@ Tanımlayıcı listesi, yalnızca başlatılacak tanımlayıcıların sayısı k
 char code[3] = "abcd";
 ```
 
-Başlatıcının yalnızca ilk üç karakteri `code` öğesine atanır. 
-  `d` karakteri ve dizeyi sonlandıran null karakteri atılır. Bunun, sonlandırılmayan bir dize (yani sonunu gösteren bir 0 değeri olmayan bir dize) ve bu durumu gösteren bir tanılama iletisi oluşturduğunu unutmayın.
+Başlatıcının yalnızca ilk üç karakteri `code` öğesine atanır. `d` karakteri ve dizeyi sonlandıran null karakteri atılır. Bunun, sonlandırılmayan bir dize (yani sonunu gösteren bir 0 değeri olmayan bir dize) ve bu durumu gösteren bir tanılama iletisi oluşturduğunu unutmayın.
 
 Bildirim
 

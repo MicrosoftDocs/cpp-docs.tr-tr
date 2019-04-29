@@ -13,11 +13,11 @@ helpviewer_keywords:
 - module state restored [MFC]
 ms.assetid: 81889c11-0101-4a66-ab3c-f81cf199e1bb
 ms.openlocfilehash: 0cdb368dc70b73ba70b3721fecdaf47de36686d5
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57293803"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62338382"
 ---
 # <a name="managing-the-state-data-of-mfc-modules"></a>MFC Modüllerinin Durum Verisini Yönetme
 

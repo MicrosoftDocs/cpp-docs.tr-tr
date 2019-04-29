@@ -14,11 +14,11 @@ helpviewer_keywords:
 - U compiler option [C++]
 ms.assetid: 7bc0474f-6d1f-419b-807d-0d8816763b2a
 ms.openlocfilehash: bfc03ebd5c900bf8bf81b4a50eed02111baf85ee
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57822499"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62317009"
 ---
 # <a name="u-u-undefine-symbols"></a>/U, /u (Simge Tanımlarını Kaldır)
 
@@ -71,8 +71,8 @@ Varsayılan olarak, derleyici aşağıdaki Microsoft'a özgü simgeleri tanımla
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MSVC derleyici seçenekleri](compiler-options.md)<br/>
-[MSVC derleyici komut satırı sözdizimi](compiler-command-line-syntax.md)<br/>
+[MSVC Derleyicisi Seçenekleri](compiler-options.md)<br/>
+[MSVC Derleyicisi Komut Satırı Söz Dizimi](compiler-command-line-syntax.md)<br/>
 [/J (Varsayılan Karakter Türü İmzasız)](j-default-char-type-is-unsigned.md)<br/>
 [/GR (Çalışma Zamanı Türü Bilgileri Etkinleştir)](gr-enable-run-time-type-information.md)<br/>
 [/EH (Özel Durum İşleme Modeli)](eh-exception-handling-model.md)<br/>

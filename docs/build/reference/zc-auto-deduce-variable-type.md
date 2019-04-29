@@ -10,11 +10,11 @@ helpviewer_keywords:
 - Zc compiler options (C++)
 ms.assetid: 5f5bc102-44c3-4688-bbe1-080594dcee5c
 ms.openlocfilehash: ea977020286d720ed3a6b1b13bf8ff8f5c85e5b2
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57822567"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62315969"
 ---
 # <a name="zcauto-deduce-variable-type"></a>/Zc:auto (Değişken Türünü Türet)
 

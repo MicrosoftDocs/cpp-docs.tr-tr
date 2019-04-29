@@ -25,11 +25,11 @@ helpviewer_keywords:
 - _query_new_mode function
 ms.assetid: e185c5f9-b73b-4257-8eff-b47648374768
 ms.openlocfilehash: 327f22c847793316bd126721b4a66846d7da84dd
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50620031"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62358079"
 ---
 # <a name="querynewmode"></a>_query_new_mode
 
@@ -49,7 +49,7 @@ int _query_new_mode(
 
 ## <a name="remarks"></a>Açıklamalar
 
-C++ **_query_new_mode** işlevi C++ tarafından ayarlanmış olan yeni işleyici modu belirten bir tamsayı döndürür [_set_new_mode](set-new-mode.md) için işlev [malloc](malloc.md). Yeni işleyici modu belirtir olup olmadığına göre bellek ayırma hatası **malloc** tarafından belirlenen yeni işleyici rutinini çağırmaktır [_set_new_handler](set-new-handler.md). Varsayılan olarak, **malloc** hatasında yeni işleyici rutinini çağırmaz. Kullanabileceğiniz **_set_new_mode** bu nedenle bu davranışı geçersiz kılmak için hata durumunda **malloc** aynı yeni işleyici rutinini çağırır biçimi **yeni** işlecinin yaptığı için başarısız olduğunda bellek ayrılamadı. Daha fazla bilgi için bkz [yeni ve delete işleçleri](../../cpp/new-and-delete-operators.md) C++ dil başvurusu.
+C++ **_Query_new_mode** işlevi tarafından ayarlanan yeni işleyici modu belirten bir tamsayı döndürür C++ [_set_new_mode](set-new-mode.md) için işlev [malloc](malloc.md). Yeni işleyici modu belirtir olup olmadığına göre bellek ayırma hatası **malloc** tarafından belirlenen yeni işleyici rutinini çağırmaktır [_set_new_handler](set-new-handler.md). Varsayılan olarak, **malloc** hatasında yeni işleyici rutinini çağırmaz. Kullanabileceğiniz **_set_new_mode** bu nedenle bu davranışı geçersiz kılmak için hata durumunda **malloc** aynı yeni işleyici rutinini çağırır biçimi **yeni** işlecinin yaptığı için başarısız olduğunda bellek ayrılamadı. Daha fazla bilgi için bkz [yeni ve delete işleçleri](../../cpp/new-and-delete-operators.md) C++ dil başvurusu.
 
 ## <a name="requirements"></a>Gereksinimler
 

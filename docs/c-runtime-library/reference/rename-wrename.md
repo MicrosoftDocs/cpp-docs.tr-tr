@@ -35,11 +35,11 @@ helpviewer_keywords:
 - renaming files
 ms.assetid: 9f0a6103-26a2-4dda-b14b-79a48946266a
 ms.openlocfilehash: 3536bfb6c38c99a8d6d943102fb9303dd4d85b7b
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51326146"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62357509"
 ---
 # <a name="rename-wrename"></a>yeniden adlandır, _wrename
 

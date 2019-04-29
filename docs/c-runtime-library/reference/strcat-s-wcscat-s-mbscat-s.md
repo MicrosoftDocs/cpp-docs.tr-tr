@@ -36,11 +36,11 @@ helpviewer_keywords:
 - appending strings
 ms.assetid: 0f2f9901-c5c5-480b-98bc-f8f690792fc0
 ms.openlocfilehash: bd7894ba77e7fa67fa3844587394bd3e2e821391
-ms.sourcegitcommit: e06648107065f3dea35f40c1ae5999391087b80b
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57210399"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62354385"
 ---
 # <a name="strcats-wcscats-mbscats-mbscatsl"></a>strcat_s, wcscat_s, _mbscat_s, _mbscat_s_l
 

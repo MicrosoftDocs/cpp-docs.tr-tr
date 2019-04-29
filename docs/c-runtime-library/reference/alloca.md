@@ -24,11 +24,11 @@ helpviewer_keywords:
 - _alloca function
 ms.assetid: 74488eb1-b71f-4515-88e1-cdd03b6f8225
 ms.openlocfilehash: 7c083e791301d3224709a5fc6c711ceaa6397d38
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50668084"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62341606"
 ---
 # <a name="alloca"></a>_alloca
 
@@ -57,7 +57,7 @@ Alanı ayırdığınızda, bir yığın taşması özel durumu oluşturulur. Yı
 
 **_alloca** ayırır *boyutu* program yığınına gelen baytlar. (Ayırma yalnızca kapsam dışına değil geçtiğinde) çağıran işlevin çıktığında ayrılan alanı otomatik olarak serbest bırakılır. Bu nedenle, tarafından döndürülen işaretçi değer geçmeyin **_alloca** bağımsız değişkeni olarak [ücretsiz](free.md).
 
-Açıkça çağırmak için kısıtlamalar **_alloca** bir özel durum işleyicisi (EH). X86 sınıfı işlemciler üzerinde çalışan EH düzenleri kendi bellek çerçevede çalışmak: yığın işaretçisi kapsayan işlevin geçerli konumuna bağlı olmayan bellek alanında gerçekleştirdikleri görevleri. En yaygın olarak görülen uygulamalar, Windows NT yapılandırılmış özel durum işleme (SEH) ve C++ catch yan tümcesi ifadeleri içerir. Bu nedenle, açıkça çağırma **_alloca** herhangi birinde çağıran EH yordam için dönüş sırasında program hata aşağıdaki senaryolarda sonuçları:
+Açıkça çağırmak için kısıtlamalar **_alloca** bir özel durum işleyicisi (EH). Kendi bellek çerçevede x86 sınıfı işlemciler üzerinde çalışan EH düzenleri çalışır: Kapsayan işlevin yığın işaretçisi geçerli konumuna bağlı olmayan bellek alanı bunlar görevlerini gerçekleştirin. En yaygın olarak görülen uygulamalar, Windows NT yapılandırılmış özel durum işleme (SEH) ve C++ catch yan tümcesi ifadeleri içerir. Bu nedenle, açıkça çağırma **_alloca** herhangi birinde çağıran EH yordam için dönüş sırasında program hata aşağıdaki senaryolarda sonuçları:
 
 - Windows NT SEH özel durum filtre ifadesi: `__except ( _alloca() )`
 

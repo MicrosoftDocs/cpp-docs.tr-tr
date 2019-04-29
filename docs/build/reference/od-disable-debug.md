@@ -13,11 +13,11 @@ helpviewer_keywords:
 - disable (debug) compiler option [C++]
 ms.assetid: b1ac31b7-e086-4eeb-be5e-488f7513f5f5
 ms.openlocfilehash: 83ece0865eb74a4e9e292b78733df9d24602fe1d
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57806772"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62320689"
 ---
 # <a name="od-disable-debug"></a>/Od (Devre Dışı Bırak (Hata Ayıkla))
 
@@ -50,6 +50,6 @@ Bu seçenek varsayılandır. Çünkü **/Od** kod taşıma bastırır hata ayık
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [/O Seçenekler (Kodu İyileştir)](o-options-optimize-code.md)<br/>
-[MSVC derleyici seçenekleri](compiler-options.md)<br/>
-[MSVC derleyici komut satırı sözdizimi](compiler-command-line-syntax.md)<br/>
+[MSVC Derleyicisi Seçenekleri](compiler-options.md)<br/>
+[MSVC Derleyicisi Komut Satırı Söz Dizimi](compiler-command-line-syntax.md)<br/>
 [/Z7, /Zi, /ZI (Hata Ayıklama Bilgileri Biçimi)](z7-zi-zi-debug-information-format.md)

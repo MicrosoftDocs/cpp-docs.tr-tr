@@ -10,11 +10,11 @@ helpviewer_keywords:
 - arithmetic operators [C++], type conversions
 ms.assetid: bfa49803-0efd-45d0-b987-111412a140d7
 ms.openlocfilehash: 729e173c695db3b4970490e84bedfd441e6ff6d3
-ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56150278"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62344843"
 ---
 # <a name="usual-arithmetic-conversions"></a>Olağan Aritmetik Dönüştürmeler
 

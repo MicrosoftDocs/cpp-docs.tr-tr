@@ -10,11 +10,11 @@ helpviewer_keywords:
 - Thread Local Storage [C++]
 ms.assetid: 80801907-d792-45ca-b776-df0cf2e9f197
 ms.openlocfilehash: f5a75f7964b0291a980b22d36e7ce6a0a87d3dc3
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57293465"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62362731"
 ---
 # <a name="thread-local-storage-tls"></a>İş Parçacığı Yerel Depolaması (TLS)
 

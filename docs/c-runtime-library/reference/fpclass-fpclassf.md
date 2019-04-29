@@ -31,11 +31,11 @@ helpviewer_keywords:
 - _fpclassf function
 ms.assetid: 2774872d-3543-446f-bc72-db85f8b95a6b
 ms.openlocfilehash: 987c87cc7a03f4a24e47654ae52e8a2416a15184
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50590976"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62333228"
 ---
 # <a name="fpclass-fpclassf"></a>_fpclass, _fpclassf
 

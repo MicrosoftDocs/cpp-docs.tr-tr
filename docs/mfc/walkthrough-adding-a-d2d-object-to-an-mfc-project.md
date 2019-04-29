@@ -1,18 +1,18 @@
 ---
-title: 'İzlenecek Yol: Bir MFC Projesine D2D Nesnesi Ekleme'
+title: 'İzlenecek yol: Bir MFC projesine D2D nesnesi ekleme'
 ms.date: 09/20/2018
 helpviewer_keywords:
 - MFC, D2D
 - D2D [MFC]
 ms.assetid: dda36c33-c231-4da6-a62f-72d69a12b6dd
 ms.openlocfilehash: 0793511f09be9dcb37732c4c16bfd2b3038a6cf4
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
-ms.translationtype: MT
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50567264"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62358623"
 ---
-# <a name="walkthrough-adding-a-d2d-object-to-an-mfc-project"></a>İzlenecek Yol: Bir MFC Projesine D2D Nesnesi Ekleme
+# <a name="walkthrough-adding-a-d2d-object-to-an-mfc-project"></a>İzlenecek yol: Bir MFC projesine D2D nesnesi ekleme
 
 Bu izlenecek yol, temel bir Direct2D eklemek öğretir (D2D) nesne bir Visual C++ için Microsoft Foundation Class Kitaplığı'nı (MFC) projesi ve ardından Proje yazdıran bir uygulamaya "Hello, world" gradyan arka plan üzerinde.
 
@@ -38,7 +38,7 @@ Bu izlenecek yolu tamamlamak için Visual Studio ile yüklü olmalıdır. **C++ 
 
 1. Üzerinde **dosya** menüsünde **yeni** seçip **proje**.
 
-1. İçinde **yeni proje** iletişim kutusunda, sol bölmede altında **yüklü şablonlar**, genişletme **Visual C++** seçip **MFC**. Orta bölmede seçin **MFC uygulaması**. İçinde **adı** kutusuna *MFCD2DWalkthrough*. Seçin **Tamam**.
+1. İçinde **yeni proje** iletişim kutusunda, sol bölmede altında **yüklü şablonlar**, genişletme **Visual C++** seçip **MFC**. Orta bölmede seçin **MFC uygulaması**. İçinde **adı** kutusuna *MFCD2DWalkthrough*. **Tamam**’ı seçin.
 
 1. İçinde **MFC Uygulama Sihirbazı**, seçin **son** herhangi bir ayarı değiştirmeden.
 

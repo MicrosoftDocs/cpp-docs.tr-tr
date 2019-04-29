@@ -1,19 +1,19 @@
 ---
-title: Koleksiyonlar (C + +/ CX)
+title: Koleksiyonlar (C++/CX)
 ms.date: 11/19/2018
 ms.assetid: 914da30b-aac5-4cd7-9da3-a5ac08cdd72c
 ms.openlocfilehash: 850ac0f4801a13a5407f8fe008740bbfa21cc02c
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57745424"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62347356"
 ---
-# <a name="collections-ccx"></a>Koleksiyonlar (C + +/ CX)
+# <a name="collections-ccx"></a>Koleksiyonlar (C++/CX)
 
-C + +/ CX programı, standart Şablon kitaplığı (STL) kapsayıcıları veya herhangi bir kullanıcı tanımlı toplama türü ücretsiz kullanımını yapabilirsiniz. Ancak, gönderdiğinizde koleksiyonları ve geriye Windows çalışma zamanı uygulama ikili arabiriminde (ABI) — Örneğin, bir XAML denetimi veya JavaScript istemci — Windows çalışma zamanı koleksiyon türleri kullanmanız gerekir.
+İçinde bir C++/CX programı, standart Şablon kitaplığı (STL) kapsayıcıları veya herhangi bir kullanıcı tanımlı toplama türü ücretsiz kullanımını yapabilirsiniz. Ancak, gönderdiğinizde koleksiyonları ve geriye Windows çalışma zamanı uygulama ikili arabiriminde (ABI) — Örneğin, bir XAML denetimi veya JavaScript istemci — Windows çalışma zamanı koleksiyon türleri kullanmanız gerekir.
 
-Windows çalışma zamanı tanımlar arabirimleri koleksiyonları ve ilgili türleri ve C + +/ CX collection.h üstbilgi dosyasında somut C++ uygulamalarını sağlar. Bu çizimde, koleksiyon türleri arasındaki ilişkiler gösterilmektedir:
+Windows çalışma zamanı arabirimler koleksiyonları ve ilgili türleri için tanımlar ve C++/CX sağlar somut C++ uygulamalarında collection.h üst bilgi dosyası. Bu çizimde, koleksiyon türleri arasındaki ilişkiler gösterilmektedir:
 
 ![C&#43;&#43;&#47;CX koleksiyon türleri için devralma ağacı](../cppcx/media/cppcxcollectionsinheritancetree.png "C&#43;&#43;&#47;CX koleksiyon türleri için devralma ağacı")
 
@@ -28,7 +28,7 @@ Windows çalışma zamanı tanımlar arabirimleri koleksiyonları ve ilgili tür
    > [!IMPORTANT]
    > Proxy yineleyiciler `VectorIterator` ve `VectorViewIterator` proxy nesneleri kullanan `VectoryProxy<T>` ve `ArrowProxy<T>` STL kapsayıcıları ile kullanımını etkinleştirmek için. Daha fazla bilgi için bu makalenin sonraki bölümlerinde yer alan "VectorProxy öğeler" bkz.
 
-- C + +/ CX koleksiyon türleri desteği aynı iş parçacığı güvenliği garanti eder, STL kapsayıcıları destekler.
+- C++/CX koleksiyon türleri desteği aynı iş parçacığı güvenliği garanti eder, STL kapsayıcıları destekler.
 
 - [Windows::Foundation::Collections::IObservableVector](/uwp/api/Windows.Foundation.Collections.IObservableVector_T_) ve [Windows::Foundation::Collections::IObservableMap](/uwp/api/Windows.Foundation.Collections.IObservableMap_K_V_) çeşitli şekillerde koleksiyonu değiştiğinde tetikleyen olayları tanımlayın. Bu arabirimler uygulayarak [Platform::Collections:: Map](../cppcx/platform-collections-map-class.md) ve [Platform::Collections:: Vector](../cppcx/platform-collections-vector-class.md) XAML koleksiyonları ile veri bağlama desteği. Örneğin, bir `Vector` , veri bağlama için bir `Grid`olduğunda, bir koleksiyona bir öğe eklemek, bu değişiklik kılavuz kullanıcı Arabiriminde yansıtılır.
 
@@ -96,7 +96,7 @@ Genel olarak, iç eşleme işlevselliği için tercih ettiğiniz `std::map` Perf
 
 ## <a name="collection-types"></a>Koleksiyon türleri
 
-Koleksiyonlar, dört kategoriye ayrılır: salt okunur sürümleri sıra koleksiyonlar ve ilişkili koleksiyonlar ve değiştirilebilir. Ayrıca, C + +/ CX koleksiyonları erişme basitleştiren üç yineleyici sınıflar sağlayarak koleksiyonları geliştirir.
+Koleksiyonlar, dört kategoriye ayrılır: salt okunur sürümleri sıra koleksiyonlar ve ilişkili koleksiyonlar ve değiştirilebilir. Ayrıca, C++/CX koleksiyonları erişme basitleştiren üç yineleyici sınıflar sağlayarak koleksiyonları geliştirir.
 
 Değiştirilebilir bir koleksiyonun öğeleri değiştirilebilir, ancak olarak bilinen bir salt okunur koleksiyon öğelerini bir *görünümü*, salt okunur. Öğeleri bir [Platform::Collections:: Vector](../cppcx/platform-collections-vector-class.md) veya[Platform::Collections:: vectorview](../cppcx/platform-collections-vectorview-class.md) koleksiyonu, bir yineleyici veya koleksiyonun kullanarak erişilebilir [Vector::GetAt](../cppcx/platform-collections-vector-class.md#getat) ve dizin. İlişkili bir koleksiyon öğelerini koleksiyonun kullanarak erişilebilir [Map::Lookup](../cppcx/platform-collections-map-class.md#lookup) ve bir anahtar.
 
@@ -125,7 +125,7 @@ Bir STL gereksinimlerini karşılayan bir STL yineleyici `const` rasgele erişim
 
 ### <a name="begin-and-end-functions"></a>const_iterator ve end() işlevleri
 
-İşlenecek STL kullanımını basitleştirmek için `Vector`, `VectorView`, `Map`, `MapView`ve rastgele `Windows::Foundation::Collections` nesneleri, C + +/ CX aşırı yüklemeleri destekler [begin işlevi](../cppcx/begin-function.md) ve [bitiş İşlev](../cppcx/end-function.md) üye harici işlevleri.
+İşlenecek STL kullanımını basitleştirmek için `Vector`, `VectorView`, `Map`, `MapView`ve rastgele `Windows::Foundation::Collections` nesneleri C++/CX aşırı yüklemeleri destekler [begin işlevi](../cppcx/begin-function.md) ve [end işlevi](../cppcx/end-function.md) üye harici işlevleri.
 
 Aşağıdaki tabloda kullanılabilir yineleyiciler ve işlevleri listeler.
 
@@ -147,4 +147,4 @@ Aşağıdaki tabloda kullanılabilir yineleyiciler ve işlevleri listeler.
 
 [Tür Sistemi](../cppcx/type-system-c-cx.md)<br/>
 [Visual C++ Dil Başvurusu](../cppcx/visual-c-language-reference-c-cx.md)<br/>
-[Ad alanları başvurusu](../cppcx/namespaces-reference-c-cx.md)
+[Ad Alanları Başvurusu](../cppcx/namespaces-reference-c-cx.md)

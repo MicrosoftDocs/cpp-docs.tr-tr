@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2360
 ms.assetid: 51bfd2ee-8108-4777-aa93-148b9cebfa83
 ms.openlocfilehash: 6e956ccb021dc3bce4d107e4aa6e0bbe4356283b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50498182"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62364733"
 ---
 # <a name="compiler-error-c2360"></a>Derleyici Hatası C2360
 

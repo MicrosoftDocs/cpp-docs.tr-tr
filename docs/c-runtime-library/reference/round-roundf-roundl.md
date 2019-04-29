@@ -28,11 +28,11 @@ helpviewer_keywords:
 - roundf function
 ms.assetid: 6be90877-193c-4b80-a32b-c3eca33f9c6f
 ms.openlocfilehash: 126c6bace2b79123094a7f8bcc8f3d3378391d96
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50591784"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62357453"
 ---
 # <a name="round-roundf-roundl"></a>round, roundf, roundl
 
@@ -69,7 +69,7 @@ Yuvarlanacak kayan nokta değeri.
 
 |Giriş|SEH özel durumu|Matherr özel durumu|
 |-----------|-------------------|-----------------------|
-|± **QNAN**, **ONRAKİNİ BUL**|yok|**_ETKİ ALANI**|
+|± **QNAN**, **ONRAKİNİ BUL**|yok|**_DOMAIN**|
 
 ## <a name="remarks"></a>Açıklamalar
 

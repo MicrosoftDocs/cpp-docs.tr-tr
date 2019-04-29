@@ -7,11 +7,11 @@ helpviewer_keywords:
 - templates, C++
 ms.assetid: 63adec79-b1dc-4a1a-a21d-b8a72a8fce31
 ms.openlocfilehash: 74cfd791e8400b788d38f272eed3d421ca4230e3
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59021504"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62349526"
 ---
 # <a name="generics-and-templates-ccli"></a>Genel türler ve temsilciler (C++/CLI)
 

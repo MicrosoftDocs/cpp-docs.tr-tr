@@ -10,11 +10,11 @@ helpviewer_keywords:
 - std::value_compare
 ms.assetid: ea97c1d0-04b2-4d42-8d96-23522c04cc41
 ms.openlocfilehash: 69b484944c9ce30dc28fceacfb082051da31c053
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50472143"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62365022"
 ---
 # <a name="valuecompare-class-ltmapgt"></a>value_compare sınıfı (&lt;harita&gt;)
 
