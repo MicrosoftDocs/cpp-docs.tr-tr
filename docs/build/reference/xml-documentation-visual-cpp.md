@@ -8,11 +8,11 @@ helpviewer_keywords:
 - /// delimiter for C++ documentation
 ms.assetid: a1aec1c5-b2d1-4c74-83ae-1dbbbb76b506
 ms.openlocfilehash: c46cb77dd2efe41a41c7108115d6d22808782f01
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58773534"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62316346"
 ---
 # <a name="xml-documentation-visual-c"></a>XML Belgeleri (Visual C++)
 

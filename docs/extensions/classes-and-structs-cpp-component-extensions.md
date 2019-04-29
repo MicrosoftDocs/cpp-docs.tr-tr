@@ -9,11 +9,11 @@ helpviewer_keywords:
 - ref struct keyword [C++]
 ms.assetid: 5c360764-b229-49c6-9357-66213afbc372
 ms.openlocfilehash: fcc50109ce521e005e32a8c19b13aabe2230989b
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59029735"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62347424"
 ---
 # <a name="ref-class-and-ref-struct--ccli-and-ccx"></a>başvuru sınıfı ve ref struct (C++/CLI ve C++/CX)
 

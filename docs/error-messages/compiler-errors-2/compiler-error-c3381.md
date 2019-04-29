@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3381
 ms.assetid: d276c89f-8377-4cb6-a8d4-7770885f06c4
 ms.openlocfilehash: ae416d68831d1964c89d938dfcddd364e521195c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50440280"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62328870"
 ---
 # <a name="compiler-error-c3381"></a>Derleyici Hatası C3381
 

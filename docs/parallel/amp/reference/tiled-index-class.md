@@ -20,11 +20,11 @@ helpviewer_keywords:
 - tiled_index class
 ms.assetid: 0ce2ae26-f1bb-4436-b473-a9e1b619bb38
 ms.openlocfilehash: dd8b6d7a0e174c88ad229da2d08a9ec8a11fb0aa
-ms.sourcegitcommit: 309dc532f13242854b47759cef846de59bb807f1
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58565223"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62352196"
 ---
 # <a name="tiledindex-class"></a>tiled_index Sınıfı
 

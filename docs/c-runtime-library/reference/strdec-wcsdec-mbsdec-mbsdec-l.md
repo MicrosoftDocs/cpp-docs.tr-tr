@@ -41,11 +41,11 @@ helpviewer_keywords:
 - _mbsdec function
 ms.assetid: ae37c223-800f-48a9-ae8e-38c8d20af2dd
 ms.openlocfilehash: 7e88bcf5bf7ffc5eba6feecd545cda8f7950829c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50591717"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62353903"
 ---
 # <a name="strdec-wcsdec-mbsdec-mbsdecl"></a>_strdec, _wcsdec, _mbsdec, _mbsdec_l
 
@@ -78,7 +78,7 @@ unsigned char *_mbsdec_l(
 
 ### <a name="parameters"></a>Parametreler
 
-*Başlangıç*<br/>
+*start*<br/>
 Herhangi bir karaktere bir işaretçi (veya **_mbsdec** ve **mbsdec_l**, herhangi bir karakterin ilk baytı); kaynak dizede *Başlat* gelmelidir *geçerli* kaynak dizedeki.
 
 *Geçerli*<br/>

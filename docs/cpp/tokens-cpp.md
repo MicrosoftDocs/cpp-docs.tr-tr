@@ -1,5 +1,5 @@
 ---
-title: Belirteçler (C++)
+title: Tokens (C++)
 ms.date: 11/04/2016
 helpviewer_keywords:
 - tokens [C++]
@@ -8,13 +8,13 @@ helpviewer_keywords:
 - white space, in C++ tokens
 ms.assetid: aa812fd0-6d47-4f3f-aee0-db002ee4d8b9
 ms.openlocfilehash: 1606df56191ec00ffea543dedd3fd4eda98d01c2
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50597307"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62330446"
 ---
-# <a name="tokens-c"></a>Belirteçler (C++)
+# <a name="tokens-c"></a>Tokens (C++)
 
 Bir belirteç C++ programının derleyicisi için anlamlı olan en küçük öğesidir. C++ ayrıştırıcısı şu tür belirteçleri tanır: Tanımlayıcılar, anahtar sözcükler, sabitler, işleçler, noktalayıcılar ve diğer ayıraçlar. Bu belirteçlerin akışı bir çeviri birimi oluşturur.
 

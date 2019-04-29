@@ -18,11 +18,11 @@ helpviewer_keywords:
 - __CxxFrameHandler
 ms.assetid: b79ac97f-425a-42ae-9b91-8beaef935333
 ms.openlocfilehash: d059df597826c68f4f51eb85f592b7eb44ac7d1f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50432130"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62344622"
 ---
 # <a name="cxxframehandler"></a>__CxxFrameHandler
 
@@ -44,7 +44,7 @@ EXCEPTION_DISPOSITION __CxxFrameHandler(
 *pExcept*<br/>
 Olası için geçirilen özel durum kaydını `catch` deyimleri.
 
-*PRN*<br/>
+*pRN*<br/>
 Özel durumu işlemek için kullanılan yığın çerçevesi hakkında dinamik bilgi sağlar. Daha fazla bilgi için ehdata.h bakın.
 
 *pContext*<br/>

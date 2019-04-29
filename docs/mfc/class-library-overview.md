@@ -11,11 +11,11 @@ helpviewer_keywords:
 - class libraries
 ms.assetid: 9b0e3152-ac39-4f52-91b4-f20aa3a674aa
 ms.openlocfilehash: aec295ea93868ff1fe6e0d3d1d2370a344e47c73
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57278775"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62327320"
 ---
 # <a name="class-library-overview"></a>Sınıf Kitaplığına Genel Bakış
 
@@ -23,7 +23,7 @@ Bu genel bakışta, kategorilere ayırır ve sınıflar, Microsoft Foundation Cl
 
 Burada Kitaplık sınıfları aşağıdaki kategorilerde sunulan:
 
-- [Kök sınıf: CObject](../mfc/root-class-cobject.md)
+- [Kök Sınıflar: CObject](../mfc/root-class-cobject.md)
 
 - [MFC Uygulama Mimarisi Sınıfları](../mfc/mfc-application-architecture-classes.md)
 

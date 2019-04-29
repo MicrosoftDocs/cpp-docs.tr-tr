@@ -7,11 +7,11 @@ helpviewer_keywords:
 - projects [C++], creating
 ms.assetid: 076a75de-1d4b-486a-bcf8-9c0f6b049fa2
 ms.openlocfilehash: dc085b1f663369033947ed2a5577f334dd79c0aa
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59030744"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62362015"
 ---
 # <a name="creating-a-project-for-the-provider"></a>Sağlayıcı için Proje Oluşturma
 

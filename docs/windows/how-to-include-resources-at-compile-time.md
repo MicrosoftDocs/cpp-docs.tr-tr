@@ -24,11 +24,11 @@ helpviewer_keywords:
 - resources [C++], searching for symbols
 ms.assetid: 357e93c2-0a29-42f9-806f-882f688b8924
 ms.openlocfilehash: ca24a10f905e61feb2b090ba3966c752db3d4444
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59041515"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62350929"
 ---
 # <a name="how-to-include-resources-at-compile-time-c"></a>Nasıl yapılır: (C++) derleme sırasında kaynak ekleme
 

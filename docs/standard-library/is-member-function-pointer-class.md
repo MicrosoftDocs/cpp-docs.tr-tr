@@ -8,11 +8,11 @@ helpviewer_keywords:
 - is_member_function_pointer
 ms.assetid: 02e372c4-2714-40f2-b376-2e10ca91c8ed
 ms.openlocfilehash: 0eb758977abf889a7d5ec8cdec9213980493ba2e
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51521732"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62351936"
 ---
 # <a name="ismemberfunctionpointer-class"></a>is_member_function_pointer Sınıfı
 

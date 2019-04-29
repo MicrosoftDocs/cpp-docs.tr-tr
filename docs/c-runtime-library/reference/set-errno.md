@@ -25,11 +25,11 @@ helpviewer_keywords:
 - _set_errno function
 ms.assetid: d338914a-1894-4cf3-ae45-f2c4eb26590b
 ms.openlocfilehash: f8dace04a5328c423af21327eb540abc8b062e86
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51327596"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62356595"
 ---
 # <a name="seterrno"></a>_set_errno
 

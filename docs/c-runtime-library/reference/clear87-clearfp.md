@@ -30,11 +30,11 @@ helpviewer_keywords:
 - clear87 function
 ms.assetid: 72d24a70-7688-4793-ae09-c96d33fcca52
 ms.openlocfilehash: 4148f85d82a4210033686455c73046081832e3c4
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50477265"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62340559"
 ---
 # <a name="clear87-clearfp"></a>_clear87, _clearfp
 

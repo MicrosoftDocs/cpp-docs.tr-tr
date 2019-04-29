@@ -11,11 +11,11 @@ helpviewer_keywords:
 - OLE Automation [MFC]
 ms.assetid: 96e5372b-ff8a-4da1-933b-4d9bbf4dceb3
 ms.openlocfilehash: 08e33e1fce3f792e76e2eec4ecb59601c99d9822
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57326302"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62348724"
 ---
 # <a name="ole-automation-classes"></a>OLE Otomasyon Sınıfları
 

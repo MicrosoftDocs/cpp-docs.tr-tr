@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3185
 ms.assetid: 5bf96279-043c-4981-9d02-b4550071b192
 ms.openlocfilehash: 45afe70b454f72dd8c9b8ce9771ce1f5aef6a10e
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59777789"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62366088"
 ---
 # <a name="compiler-error-c3185"></a>Derleyici Hatası C3185
 

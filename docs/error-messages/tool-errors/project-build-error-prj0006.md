@@ -7,11 +7,11 @@ helpviewer_keywords:
 - PRJ0006
 ms.assetid: ce092be4-1652-414f-8cb5-b97ef5841f89
 ms.openlocfilehash: d62c774411fda80a3e94044b3272567177328ff5
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50451565"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62359663"
 ---
 # <a name="project-build-error-prj0006"></a>Proje Derleme Hatası PRJ0006
 
@@ -27,7 +27,7 @@ Visual C++ derleme işlemi sırasında geçici dosya oluşturulamadı. Buna ili�
 
 - $(Intdir) ya da klasördür salt okunur veya salt okunur geçici dosyalar içeriyor.
 
-Bu hata ayrıca şu hatayı PRJ0007 meydana gelir: çıkış dizini 'dizin' oluşturulamadı. Hatası PRJ0007 $(ıntdir) dizini oluşturulamadı, geçici olarak dosyalarının oluşturulmasını olduğunu belirtmek de başarısız olur anlamına gelir.
+Bu hata ayrıca şu hatayı PRJ0007 meydana gelir: Çıkış dizini 'dizin' oluşturulamadı. Hatası PRJ0007 $(ıntdir) dizini oluşturulamadı, geçici olarak dosyalarının oluşturulmasını olduğunu belirtmek de başarısız olur anlamına gelir.
 
 Belirttiğiniz her geçici dosyalar oluşturulur:
 

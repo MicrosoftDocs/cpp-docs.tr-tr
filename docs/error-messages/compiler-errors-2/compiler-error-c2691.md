@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2691
 ms.assetid: 6925f8f3-ea60-4909-91e6-b781492c645d
 ms.openlocfilehash: 34287b785532394d33e94e37e7a6a9955d935f14
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50502004"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62360202"
 ---
 # <a name="compiler-error-c2691"></a>Derleyici Hatası C2691
 

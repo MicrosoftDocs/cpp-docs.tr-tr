@@ -8,11 +8,11 @@ helpviewer_keywords:
 author: mikeblome
 ms.author: mblome
 ms.openlocfilehash: d8826c92077ac374b67a7294fe040d6fe8dea927
-ms.sourcegitcommit: 14b292596bc9b9b883a9c58cd3e366b282a1f7b3
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60124752"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62351975"
 ---
 # <a name="c-in-visual-studio"></a>Visual Studio’da C++
 

@@ -8,11 +8,11 @@ helpviewer_keywords:
 - random_access_iterator_tag struct
 ms.assetid: 59f5b741-c5b4-459c-ad0a-3b67cddeea23
 ms.openlocfilehash: 81e958750ab13c12e92b61e6971c40f3362ba22d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50562805"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62369884"
 ---
 # <a name="randomaccessiteratortag-struct"></a>random_access_iterator_tag Yapısı
 

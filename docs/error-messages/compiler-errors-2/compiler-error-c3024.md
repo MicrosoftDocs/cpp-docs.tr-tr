@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3024
 ms.assetid: 1c031c28-ce37-4de3-aead-cfe76b261856
 ms.openlocfilehash: 46a7385f530742c19c9c586be7a932d0e054b7d4
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50434729"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62360092"
 ---
 # <a name="compiler-error-c3024"></a>Derleyici Hatası C3024
 

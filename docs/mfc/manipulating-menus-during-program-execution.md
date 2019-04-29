@@ -9,11 +9,11 @@ helpviewer_keywords:
 - menus during execution
 ms.assetid: 722c7c00-4be2-4967-877d-f96aaa604396
 ms.openlocfilehash: 00d045932a4b196e23a2853e87fe42f7722cfadd
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57259743"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62365240"
 ---
 # <a name="manipulating-menus-during-program-execution"></a>Program Yürütülmesi Sırasında Menüleri Düzenleme
 

@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C4115
 ms.assetid: f3f94e72-fc49-4d09-b3e7-23d68e61152f
 ms.openlocfilehash: 20e44eba3b6f6079e6f37b7cf33fa530a996e829
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50462965"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62360027"
 ---
 # <a name="compiler-warning-levels-1-and-4-c4115"></a>Derleyici Uyarısı (düzey 1 ve 4) C4115
 

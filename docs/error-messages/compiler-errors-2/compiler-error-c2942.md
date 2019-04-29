@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2942
 ms.assetid: 13abf744-8fa1-450d-886d-e5717c04956e
 ms.openlocfilehash: 8a594b9d1d8374caa972f6bfdafe5d691e634a9a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50632576"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62366647"
 ---
 # <a name="compiler-error-c2942"></a>Derleyici Hatası C2942
 

@@ -24,11 +24,11 @@ helpviewer_keywords:
 - RTC_GetErrDesc function
 ms.assetid: 7994ec2b-5488-4fd4-806d-a166c9a9f927
 ms.openlocfilehash: d164626ea89bbe10f5b2ffe4224bf6381e40bab0
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50590313"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62357388"
 ---
 # <a name="rtcgeterrdesc"></a>_RTC_GetErrDesc
 

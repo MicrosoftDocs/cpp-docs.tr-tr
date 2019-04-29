@@ -3,11 +3,11 @@ title: OpenMP C ve C++ Uygulaması Program Arabirimi
 ms.date: 03/20/2019
 ms.assetid: efec8865-a755-452f-838f-ddbfecab44d4
 ms.openlocfilehash: dc3ab50059f16abc2cc6148395ef6982e5f85449
-ms.sourcegitcommit: 14b292596bc9b9b883a9c58cd3e366b282a1f7b3
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60124843"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62362705"
 ---
 # <a name="openmp-c-and-c-application-program-interface"></a>OpenMP C ve C++ Uygulaması Program Arabirimi
 
@@ -37,11 +37,11 @@ B. [Çalışma zamanı kitaplık işlevleri için saplamalar](b-stubs-for-run-ti
 
 C. [OpenMP C ve C++ dil bilgisi](c-openmp-c-and-cpp-grammar.md)
 
-D. [Zamanlama yan tümcesi](d-using-the-schedule-clause.md)
+D. [schedule yan tümcesi](d-using-the-schedule-clause.md)
 
-E. [OpenMP C/C++'daki uygulama tanımlı davranışlar](e-implementation-defined-behaviors-in-openmp-c-cpp.md)
+E. [OpenMP C/C++’daki uygulama tanımlı davranışlar](e-implementation-defined-behaviors-in-openmp-c-cpp.md)
 
-F. [Yeni özellikler ve açıklamalar sürüm 2.0](f-new-features-and-clarifications-in-version-2-0.md)
+F. [2.0 sürümündeki yeni özellikler ve açıklamalar](f-new-features-and-clarifications-in-version-2-0.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

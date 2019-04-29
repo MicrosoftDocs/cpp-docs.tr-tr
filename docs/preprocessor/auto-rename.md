@@ -7,11 +7,11 @@ helpviewer_keywords:
 - auto_rename attribute
 ms.assetid: 1075f3ab-f6fc-4e04-8e22-ebe02695a567
 ms.openlocfilehash: ba07b8532ba64c99f835e59d7c71aac8e3f2b03d
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59035127"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62336692"
 ---
 # <a name="autorename"></a>auto_rename
 

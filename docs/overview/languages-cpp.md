@@ -7,11 +7,11 @@ helpviewer_keywords:
 - Assembly Language
 - Compiler Intrinsics
 ms.openlocfilehash: aa16d86d3a2588e8e073d40088b61a0a2aa7c74e
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58787854"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62351556"
 ---
 # <a name="languages"></a>Diller
 

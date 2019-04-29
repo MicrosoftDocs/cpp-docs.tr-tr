@@ -21,11 +21,11 @@ helpviewer_keywords:
 - and macro
 ms.assetid: 2644ab57-8e1b-48f0-9021-cafe3e26bdc4
 ms.openlocfilehash: 17acab4402955ad2a7f18eaac3db1f99cdfe6287
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51520068"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62335575"
 ---
 # <a name="and"></a>and
 

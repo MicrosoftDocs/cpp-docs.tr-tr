@@ -9,11 +9,11 @@ helpviewer_keywords:
 - __inbyte intrinsic
 ms.assetid: 03b61799-2a08-474d-adc4-2cbf7c81a4d5
 ms.openlocfilehash: 20c583b874c2bdb56affc6a90c8464b82c4824f0
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59040841"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62348984"
 ---
 # <a name="inbyte"></a>__inbyte
 

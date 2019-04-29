@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2082
 ms.assetid: 87a6d442-157c-46e8-9bff-8388f8338ae0
 ms.openlocfilehash: 8bfb54dc91ef9132e3930e2c0799070f80f5cd0f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50577261"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62338629"
 ---
 # <a name="compiler-error-c2082"></a>Derleyici Hatası C2082
 

@@ -7,11 +7,11 @@ helpviewer_keywords:
 - is_move_assignable
 ms.assetid: f33137f2-0639-4912-8745-bc0f9fd18d28
 ms.openlocfilehash: da4734507bac14ecf0278117deb7668518305be0
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50610372"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62351072"
 ---
 # <a name="ismoveassignable-class"></a>is_move_assignable sınıfı
 

@@ -6,11 +6,11 @@ helpviewer_keywords:
 - visibility, identifiers
 ms.assetid: ea05a253-7658-482c-9a6b-abd71169c42d
 ms.openlocfilehash: 438dd855fbbfec01a31a8d4a1a53078e3c44658c
-ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56151786"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62345285"
 ---
 # <a name="summary-of-lifetime-and-visibility"></a>Ömür ve Görünürlük Özeti
 

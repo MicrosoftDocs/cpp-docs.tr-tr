@@ -7,15 +7,15 @@ helpviewer_keywords:
 - country/region strings
 ms.assetid: 5baf0ccf-0d9b-40dc-83bd-323705287930
 ms.openlocfilehash: 3a3bbe9d1278cf733bafbeb23efcb0a1ad577228
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50463472"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62344700"
 ---
 # <a name="countryregion-strings"></a>Ülke/Bölge Dizeleri
 
-Ülke ve bölge dizeleri için bir yerel ayar belirtimi oluşturmak için bir dil dizesi ile birleştirilebilir `setlocale`, `_wsetlocale`, `_create_locale`, ve `_wcreate_locale` işlevleri. Çeşitli Windows işletim sistemi sürümleri tarafından desteklenen ülke ve bölge adlarının bir listesi için bkz. **dil**, **konumu**, ve **dil etiketi** sütunları tablosundaki [ek A: Ürün davranışı](https://msdn.microsoft.com/library/cc233982.aspx) [MS-LCID] de: Windows dil kodu tanımlayıcı (LCID) başvuru. Kullanılabilen yerel veri adları ve ilgili değerleri numaralandırır kod örneği için bkz: [NLS: ad tabanlı API'ler örnek](/windows/desktop/intl/nls--name-based-apis-sample).
+Ülke ve bölge dizeleri için bir yerel ayar belirtimi oluşturmak için bir dil dizesi ile birleştirilebilir `setlocale`, `_wsetlocale`, `_create_locale`, ve `_wcreate_locale` işlevleri. Çeşitli Windows işletim sistemi sürümleri tarafından desteklenen ülke ve bölge adlarının bir listesi için bkz. **dil**, **konumu**, ve **dil etiketi** sütunları tablosundaki [ek A: Ürün davranışı](https://msdn.microsoft.com/library/cc233982.aspx) [MS-LCID] içinde: Windows dil kodu tanımlayıcı (LCID) başvuru. Kullanılabilen yerel veri adları ve ilgili değerleri numaralandırır kod örneği için bkz: [NLS: Ad tabanlı API'ler örnek](/windows/desktop/intl/nls--name-based-apis-sample).
 
 ## <a name="additional-supported-country-and-region-strings"></a>Ek desteklenen ülke ve bölge dizeleri
 
@@ -23,7 +23,7 @@ Microsoft C çalışma zamanı kitaplığı uygulaması da aşağıdaki ek ülke
 
 |Ülke/bölge dizesi|Kısaltması|Eşdeğer yerel ayar adı|
 |----------------------------|------------------|----------------------------|
-|Amerika|USA|en-US|
+|Amerika|ABD|en-US|
 |Britanya|GBR|en-GB|
 |Çin|CHN|zh-CN|
 |Çekçe|CZE|cs-CZ|
@@ -32,7 +32,7 @@ Microsoft C çalışma zamanı kitaplığı uygulaması da aşağıdaki ek ülke
 |Hollanda|NLD|NL-NL|
 |Hong kong|HKG|zh-HK|
 |Yeni Zelanda|NZL|tr NZ|
-|Nz|NZL|tr NZ|
+|nz|NZL|tr NZ|
 |çekme isteği Çin|CHN|zh-CN|
 |Çin Halk|CHN|zh-CN|
 |Porto Riko|PRI|ES-çekme isteği|
@@ -44,8 +44,8 @@ Microsoft C çalışma zamanı kitaplığı uygulaması da aşağıdaki ek ülke
 |Trinidad ve tobago|EŞİTLEMESİNİ|tr TT|
 |Birleşik Krallık|GBR|en-GB|
 |Birleşik Krallık|GBR|en-GB|
-|Birleşik Devletler|USA|en-US|
-|ABD|USA|en-US|
+|Birleşik Devletler|ABD|en-US|
+|ABD|ABD|en-US|
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

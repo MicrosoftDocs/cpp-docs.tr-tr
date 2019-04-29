@@ -9,11 +9,11 @@ helpviewer_keywords:
 - MFC, object model
 ms.assetid: 19d70341-e391-4a72-94c6-35755ce975d4
 ms.openlocfilehash: 4b991c9dab2d3549ac64b5ba0b8689c6fe63f113
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57275311"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62352374"
 ---
 # <a name="hierarchy-chart"></a>Hiyerarşi Grafiği
 

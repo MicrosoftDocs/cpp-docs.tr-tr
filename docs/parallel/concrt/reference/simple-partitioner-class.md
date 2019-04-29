@@ -9,11 +9,11 @@ helpviewer_keywords:
 - simple_partitioner class
 ms.assetid: d7e997af-54d1-43f5-abe0-def72df6edb3
 ms.openlocfilehash: 372773926903da32f1690904b34cd143a04940dd
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57301278"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62337251"
 ---
 # <a name="simplepartitioner-class"></a>simple_partitioner Sınıfı
 

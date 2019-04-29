@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3457
 ms.assetid: 5c1e366a-fa75-4cca-b9a3-86d4ebe4090e
 ms.openlocfilehash: 813b1c085cb0464880cb400b6200f9574220bd71
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50566120"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62363732"
 ---
 # <a name="compiler-error-c3457"></a>Derleyici Hatası C3457
 

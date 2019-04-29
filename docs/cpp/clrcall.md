@@ -7,11 +7,11 @@ helpviewer_keywords:
 - __clrcall keyword [C++]
 ms.assetid: 92096695-683a-40ed-bf65-0c8443572152
 ms.openlocfilehash: bc44feb97223de47f45734f75777ee040d0ebdd8
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50534582"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62364577"
 ---
 # <a name="clrcall"></a>__clrcall
 
@@ -29,7 +29,7 @@ Zaman `/clr` (değil `/clr:pure` veya `/clr:safe`) kullanılır ve **__clrcall**
 
 [/ CLR (ortak dil çalışma zamanı derlemesi)](../build/reference/clr-common-language-runtime-compilation.md) tüm işlevleri ve işlev işaretçileri olduğunu ima **__clrcall** ve derleyici dışındaherşeyişaretlenecekderlenecekbirişlevdeizinverilmiyor **__clrcall**. Zaman **/CLR: pure** kullanılan **__clrcall** yalnızca işlev işaretçileri ve dış bildirimler belirtilebilir.
 
-Doğrudan Çağırabilir miyim **__clrcall** kullanılarak derlenmiş mevcut C++ kodunu işlevlerden **/CLR** bu işlevin MSIL uygulamaya sahip olduğu sürece. **__clrcall** işlevleri bile bu işlevleri ile derlenmiş doğrudan satır içi asm ve CPU özgü intrinisics gibi arama işlevleri çağrılamaz `/clr`.
+Doğrudan Çağırabilir miyim **__clrcall** mevcut işlevleri C++ kullanarak derlenen kod **/CLR** bu işlevin MSIL uygulamaya sahip olduğu sürece. **__clrcall** işlevleri bile bu işlevleri ile derlenmiş doğrudan satır içi asm ve CPU özgü intrinisics gibi arama işlevleri çağrılamaz `/clr`.
 
 **__clrcall** işlev işaretçileri yalnızca içinde oluşturuldukları uygulama etki alanında kullanılmak üzere geliyordu.  Yerine geçme **__clrcall** kullanmak, uygulama etki alanları arasında işlev işaretçileri <xref:System.CrossAppDomainDelegate>. Daha fazla bilgi için [uygulama etki alanları ve Visual C++](../dotnet/application-domains-and-visual-cpp.md).
 

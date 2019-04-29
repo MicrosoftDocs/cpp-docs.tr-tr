@@ -24,11 +24,11 @@ helpviewer_keywords:
 - math error constants
 ms.assetid: 4be933a6-674e-45a5-8ac9-090023542f5b
 ms.openlocfilehash: 3267a5053cb2cd18cfcb07473bbcc4d6f8295f5d
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57751862"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62342698"
 ---
 # <a name="math-error-constants"></a>Matematik Hatası Sabitleri
 

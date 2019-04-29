@@ -9,11 +9,11 @@ helpviewer_keywords:
 - ostream header
 ms.assetid: 90c3b6fb-57cd-4ae7-99b8-8512f24a67d2
 ms.openlocfilehash: eb73c77f0e2658cf750cf17ca85549a09d1cbe51
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51523773"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62370937"
 ---
 # <a name="ltostreamgt"></a>&lt;ostream&gt;
 

@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2137
 ms.assetid: 984687ee-7766-4f6b-ae15-0c9a010e2366
 ms.openlocfilehash: 7051fbe788790f1e91a3f54720f72d8370d1e9a8
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50464343"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62350627"
 ---
 # <a name="compiler-error-c2137"></a>Derleyici Hatası C2137
 

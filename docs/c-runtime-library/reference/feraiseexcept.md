@@ -22,11 +22,11 @@ helpviewer_keywords:
 - feraiseexcept function
 ms.assetid: 87e89151-83c2-4563-9a9a-45666245d437
 ms.openlocfilehash: 581dd4026a20ce7221945c5815af3ae102f132fa
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50532255"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62334365"
 ---
 # <a name="feraiseexcept"></a>feraiseexcept
 
@@ -66,7 +66,7 @@ Belirtilen tüm özel durumlar başarıyla oluşturuldu, 0 döndürür.
 
 Bu işlevi kullanmak için erişim kullanarak engelleyebilir kayan nokta iyileştirmelerinin kapatmanız gerekir `#pragma fenv_access(on)` çağrıdan önceki yönerge. Daha fazla bilgi için [fenv_access](../../preprocessor/fenv-access.md).
 
-**Microsoft Specific:** belirtilen özel durumları *excepts* FE_INVALID, sırayla gerçekleştirilen FE_DIVBYZERO, FE_OVERFLOW, FE_UNDERFLOW, FE_INEXACT. FE_OVERFLOW veya FE_UNDERFLOW ortaya çıktığında, Bununla birlikte, FE_INEXACT içinde belirtilmemiş olsa bile yükseltilebilir *excepts*. **End Microsoft özgü**
+**Microsoft'a özgü:** Belirtilen özel durumları *excepts* FE_INVALID, sırayla gerçekleştirilen FE_DIVBYZERO, FE_OVERFLOW, FE_UNDERFLOW, FE_INEXACT. FE_OVERFLOW veya FE_UNDERFLOW ortaya çıktığında, Bununla birlikte, FE_INEXACT içinde belirtilmemiş olsa bile yükseltilebilir *excepts*. **End Microsoft özgü**
 
 ## <a name="requirements"></a>Gereksinimler
 

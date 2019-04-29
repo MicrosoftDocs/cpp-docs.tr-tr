@@ -9,11 +9,11 @@ helpviewer_keywords:
 - type casts, when performed
 ms.assetid: d130ee7c-03c3-48f4-af7b-1fdba0d3b086
 ms.openlocfilehash: 281234b857a97acbb57ebbfca7b678a637d00764
-ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56147405"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62346294"
 ---
 # <a name="type-conversions-c"></a>Tür Dönüştürmeleri (C)
 

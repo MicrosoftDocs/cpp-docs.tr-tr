@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2857
 ms.assetid: b57302bd-58ec-45ae-992a-1e282d5eeccc
 ms.openlocfilehash: 10c0ea3b54ded29bf80f83713cea33428dca6ca0
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50432157"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62350445"
 ---
 # <a name="compiler-error-c2857"></a>Derleyici Hatası C2857
 

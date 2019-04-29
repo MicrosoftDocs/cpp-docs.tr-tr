@@ -8,19 +8,17 @@ helpviewer_keywords:
 - signed integers
 ms.assetid: 0067ce9a-281e-491a-ae63-632952981e13
 ms.openlocfilehash: 848c9799e7ab5cfdfd2b25cc84e55de02c673f3e
-ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56150018"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62345233"
 ---
 # <a name="type-int"></a>Tür int
 
-İşaretli veya işaretsiz bir `int` öğesinin boyutu, belirli bir makinedeki bir tamsayının standart boyutudur. Örneğin, 16 bit işletim sistemlerinde `int` türü genellikle 16 bit veya 2 bayttır. 32 bit işletim sistemlerinde, `int` türü genellikle 32 bit veya 4 bayttır. Bu nedenle, `int` türüdür ya da eşdeğer `short int` veya **long int** türü ve `unsigned int` türüdür ya da eşdeğer **işaretsiz** veya `unsigned long` hedef ortama bağlı olarak türü. 
-  `int` türlerinin hepsi aksi belirtilmediği sürece işaretli değerleri temsil eder.
+İşaretli veya işaretsiz bir `int` öğesinin boyutu, belirli bir makinedeki bir tamsayının standart boyutudur. Örneğin, 16 bit işletim sistemlerinde `int` türü genellikle 16 bit veya 2 bayttır. 32 bit işletim sistemlerinde, `int` türü genellikle 32 bit veya 4 bayttır. Bu nedenle, `int` türüdür ya da eşdeğer `short int` veya **long int** türü ve `unsigned int` türüdür ya da eşdeğer **işaretsiz** veya `unsigned long` hedef ortama bağlı olarak türü. `int` türlerinin hepsi aksi belirtilmediği sürece işaretli değerleri temsil eder.
 
-
-  `int` ve `unsigned int` tür tanımlayıcıları (veya `unsigned`) C dilinin belirli özelliklerini tanımlar (örneğin, `enum` türü). Bu durumlarda, belirli bir uygulama için `int` ve unsigned int tanımları gerçek depolamayı belirler.
+`int` ve `unsigned int` tür tanımlayıcıları (veya `unsigned`) C dilinin belirli özelliklerini tanımlar (örneğin, `enum` türü). Bu durumlarda, belirli bir uygulama için `int` ve unsigned int tanımları gerçek depolamayı belirler.
 
 **Microsoft'a özgü**
 

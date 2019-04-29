@@ -101,11 +101,11 @@ helpviewer_keywords:
 - SET_PARAM_TYPE macro
 ms.assetid: 8765eb7b-32dd-407c-bacf-8890ef959837
 ms.openlocfilehash: d4ed6b86d99cdfc272b5df10ede6af6bd05ed366
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57426296"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62361353"
 ---
 # <a name="macros-and-global-functions-for-ole-db-consumer-templates"></a>OLE DB Tüketici Şablonları için Makrolar ve Genel İşlevler
 

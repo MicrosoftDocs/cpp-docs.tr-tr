@@ -12,11 +12,11 @@ helpviewer_keywords:
 - file translation [C++]
 ms.assetid: 49b13bf3-442e-4d19-878b-bd1029fa666a
 ms.openlocfilehash: ef9b986753de05c45b3071e55f9b163fa5a6a7da
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57743325"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62343678"
 ---
 # <a name="file-translation-constants"></a>Dosya Çeviri Sabitleri
 

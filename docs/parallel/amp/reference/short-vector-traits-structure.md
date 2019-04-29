@@ -8,11 +8,11 @@ f1_keywords:
 - AMP_SHORT_VECTORS/Concurrency::graphics::short_vector_traits::size Constant
 ms.assetid: cd9492da-9e02-4a6e-9d50-b61252cdb460
 ms.openlocfilehash: c407c42e5c6a7035e911218ecb41c2da62967787
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57289617"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62351150"
 ---
 # <a name="shortvectortraits-structure"></a>short_vector_traits Yapısı
 

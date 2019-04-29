@@ -8,11 +8,11 @@ helpviewer_keywords:
 - CAN0021
 ms.assetid: d6c0c35a-16c2-42c0-a7d2-e910350a47f0
 ms.openlocfilehash: 373829e7200a556b3f832b1da127b4e33aa75749
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50447807"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62359884"
 ---
 # <a name="expression-evaluator-error-cxx0021"></a>İfade Değerlendirici Hatası CXX0021
 

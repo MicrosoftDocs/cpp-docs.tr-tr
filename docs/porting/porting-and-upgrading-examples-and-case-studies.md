@@ -3,11 +3,11 @@ title: 'Taşıma ve yükseltme: Örnekler ve örnek olay incelemeleri'
 ms.date: 11/04/2016
 ms.assetid: d48bbff9-1ea7-467f-8c8b-758601f01573
 ms.openlocfilehash: 50e22c9eac39927c4456eeff1ed05c46a239bd30
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57747196"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62337134"
 ---
 # <a name="porting-and-upgrading-examples-and-case-studies"></a>Taşıma ve yükseltme: Örnekler ve örnek olay incelemeleri
 

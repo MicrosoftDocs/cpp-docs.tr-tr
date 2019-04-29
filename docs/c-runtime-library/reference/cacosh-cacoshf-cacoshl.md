@@ -31,11 +31,11 @@ helpviewer_keywords:
 - cacoshl function
 ms.assetid: 83fd05eb-3587-4741-9be6-589a830a1703
 ms.openlocfilehash: aa31dfa1b29eda18d34528fc8aa9544e58a5a082
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50668201"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62340735"
 ---
 # <a name="cacosh-cacoshf-cacoshl"></a>cacosh, cacoshf, cacoshl
 
@@ -72,13 +72,13 @@ Ters hiperbolik kosinüsünü *z*, radyan cinsinden açı. Sınırsız ve negati
 
 ## <a name="remarks"></a>Açıklamalar
 
-C++ aşırı yüklemeye izin verdiğinden, aşırı yüklemesini çağırabilirsiniz **cacosh** alan ve getiren **_Fcomplex** ve **_Lcomplex** değerleri. C programında **cacosh** her zaman alan ve döndüren bir **_Dcomplex** değeri.
+Çünkü C++ aşırı yüklemesi, sağlayan yüklerini çağırabilirsiniz **cacosh** alan ve getiren **_Fcomplex** ve **_Lcomplex** değerleri. C programında **cacosh** her zaman alan ve döndüren bir **_Dcomplex** değeri.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|C üstbilgisi|C++ üst bilgisi|
 |-------------|--------------|------------------|
-|**cacosh**, **cacoshf**, **cacoshl**|\<Complex.h >|\<ccomplex >|
+|**cacosh**,               **cacoshf**, **cacoshl**|\<Complex.h >|\<ccomplex >|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

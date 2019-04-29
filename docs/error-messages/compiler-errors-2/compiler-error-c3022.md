@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3022
 ms.assetid: 9f1d444c-6c6e-48d9-9346-69128390aa33
 ms.openlocfilehash: 187db5a7150ee0956258e83596966e269e5e50c7
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50651600"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62360105"
 ---
 # <a name="compiler-error-c3022"></a>Derleyici Hatası C3022
 

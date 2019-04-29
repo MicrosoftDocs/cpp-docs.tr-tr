@@ -8,11 +8,11 @@ helpviewer_keywords:
 - subscript expressions
 ms.assetid: b790303e-ec6f-4d0d-bc55-df42da267172
 ms.openlocfilehash: bd5f702588a11b7841f77de539d113206833cde9
-ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56150226"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62325526"
 ---
 # <a name="l-value-and-r-value-expressions"></a>L-Değeri ve R-Değeri İfadeleri
 

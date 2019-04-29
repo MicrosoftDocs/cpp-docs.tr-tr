@@ -9,11 +9,11 @@ helpviewer_keywords:
 - transferring data
 ms.assetid: a71b2824-1f14-4914-8816-54578d73ad4e
 ms.openlocfilehash: 4fcf53f1d861a85d830d0fb4244e8af9c11af163
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57293296"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62326912"
 ---
 # <a name="clipboard"></a>Pano
 

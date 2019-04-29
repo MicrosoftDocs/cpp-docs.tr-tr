@@ -10,11 +10,11 @@ helpviewer_keywords:
 - CRTDBG_MAP_ALLOC macro
 ms.assetid: 435242b8-caea-4063-b765-4a608200312b
 ms.openlocfilehash: 8bcb0f5ea26218b74034eb0a41199a1104ba944d
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57739783"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62344778"
 ---
 # <a name="crtdbgmapalloc"></a>_CRTDBG_MAP_ALLOC
 

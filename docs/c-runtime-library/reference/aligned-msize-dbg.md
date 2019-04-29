@@ -21,11 +21,11 @@ helpviewer_keywords:
 - _aligned_msize_dbg
 ms.assetid: f1c44af0-3f66-4033-81d1-d71d3afecba0
 ms.openlocfilehash: 054f7b88f93eef37a9a88fbb7895452f7c158716
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50451304"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62342041"
 ---
 # <a name="alignedmsizedbg"></a>_aligned_msize_dbg
 
@@ -60,7 +60,7 @@ Boyut (bayt cinsinden), işaretsiz bir tamsayı olarak döndürür.
 
 *Hizalama* ve *uzaklığı* değerleri blok ayrılan işleve geçirilen değerlerin aynı olması gerekir.
 
-**_aligned_msize_dbg** bir hata ayıklama sürümü [_aligned_msize](aligned-msize.md) işlevi. Zaman [_DEBUG](../../c-runtime-library/debug.md) tanımlı değil, her çağrı **_aligned_msize_dbg** çağrısı azaltılır **_aligned_msize**. Her ikisi de **_aligned_msize** ve **_aligned_msize_dbg** taban yığının bellek bloğunda boyutunu hesaplamak ancak **_aligned_msize_dbg** hata ayıklama özelliğini ekler: içerir Kullanıcı bölümü belleğin her iki tarafındaki arabelleklerin döndürülen boyutu engelleyin.
+**_aligned_msize_dbg** bir hata ayıklama sürümü [_aligned_msize](aligned-msize.md) işlevi. Zaman [_DEBUG](../../c-runtime-library/debug.md) tanımlı değil, her çağrı **_aligned_msize_dbg** çağrısı azaltılır **_aligned_msize**. Her ikisi de **_aligned_msize** ve **_aligned_msize_dbg** taban yığının bellek bloğunda boyutunu hesaplamak ancak **_aligned_msize_dbg** hata ayıklama özelliğini ekler: Bu, döndürülen boyutunda bellek bloğu kullanıcı bölümünü her iki tarafındaki arabelleklerin içerir.
 
 Bu işlev, parametresini doğrular. Varsa *memblock* null bir işaretçiyse veya *hizalama* 2 ' nin kuvveti değil **_msize** açıklandığı gibi geçersiz parametre işleyicisini çağırır [parametre doğrulama ](../../c-runtime-library/parameter-validation.md). Hatanın işlenip, işlev ayarlar **errno** için **EINVAL** ve -1 döndürür.
 

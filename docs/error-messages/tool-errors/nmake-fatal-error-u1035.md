@@ -7,11 +7,11 @@ helpviewer_keywords:
 - U1035
 ms.assetid: 68f0cc59-007e-4109-ac30-7ac4ac447e6d
 ms.openlocfilehash: 9c4055bb99243f7d20c1da90aef7b916c46c2749
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50589497"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62324343"
 ---
 # <a name="nmake-fatal-error-u1035"></a>NMAKE Önemli Hatası U1035
 

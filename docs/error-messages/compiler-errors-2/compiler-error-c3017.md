@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3017
 ms.assetid: 12ab2c2a-d0d2-4900-9cbf-39be0af590dd
 ms.openlocfilehash: 7172d870c509e79bf0900604302c38bc6ca9cd77
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50506723"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62360365"
 ---
 # <a name="compiler-error-c3017"></a>Derleyici Hatası C3017
 

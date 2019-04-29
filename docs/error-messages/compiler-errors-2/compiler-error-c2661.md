@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2661
 ms.assetid: 60021467-71cd-451b-9877-23840c69309f
 ms.openlocfilehash: 14052fa3676396fe2ffc6ca86196025e7adab7d6
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50650781"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62360356"
 ---
 # <a name="compiler-error-c2661"></a>Derleyici Hatası C2661
 

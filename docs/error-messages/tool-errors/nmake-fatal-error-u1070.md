@@ -7,11 +7,11 @@ helpviewer_keywords:
 - U1070
 ms.assetid: 8639fc39-b4b1-48f5-ac91-0e9fb61680fd
 ms.openlocfilehash: 35bea47f6626dfe283a537d3d96340921c37f3f6
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50484220"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62367245"
 ---
 # <a name="nmake-fatal-error-u1070"></a>NMAKE Önemli Hatası U1070
 

@@ -31,11 +31,11 @@ helpviewer_keywords:
 - cgetws_s function
 ms.assetid: 38b74897-afe6-4dd9-a43f-36a3c0d72c5c
 ms.openlocfilehash: 8341b775df3b9cbaececdfaa1f17e075d7c7416c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50588546"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62340591"
 ---
 # <a name="cgetss-cgetwss"></a>_cgets_s, _cgetws_s
 

@@ -23,11 +23,11 @@ helpviewer_keywords:
 - aligned_realloc_dbg function
 ms.assetid: 8aede920-991e-44cd-867f-83dc2165db47
 ms.openlocfilehash: 136edf6b5c95149302920af0c8a8dc9c07458e3b
-ms.sourcegitcommit: beeb77b2976e997debc55b1af35024cc62e62799
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/06/2018
-ms.locfileid: "52977777"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62348022"
 ---
 # <a name="alignedreallocdbg"></a>_aligned_realloc_dbg
 

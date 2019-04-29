@@ -12,11 +12,11 @@ helpviewer_keywords:
 - SchedulerPolicy class
 ms.assetid: bcebf51a-65f8-45a3-809b-d1ff93527dc4
 ms.openlocfilehash: 2eff40b11e4e9a5981ad85c37c8345abefb13fed
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57265541"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62337335"
 ---
 # <a name="schedulerpolicy-class"></a>SchedulerPolicy Sınıfı
 

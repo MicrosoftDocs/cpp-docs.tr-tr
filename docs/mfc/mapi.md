@@ -11,11 +11,11 @@ helpviewer_keywords:
 - enabling applications for mail [MFC]
 ms.assetid: 193449f7-b131-4ab0-9301-8d4f6cd1e7c4
 ms.openlocfilehash: a5f60e1ba8c2b68ddca312859694f532e38da965
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57279113"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62365169"
 ---
 # <a name="mapi"></a>MAPI
 

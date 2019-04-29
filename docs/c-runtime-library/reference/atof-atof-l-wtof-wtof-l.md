@@ -47,11 +47,11 @@ helpviewer_keywords:
 - string conversion, to floating point values
 ms.assetid: eb513241-c9a9-4f5c-b7e7-a49b14abfb75
 ms.openlocfilehash: 6c2ec158ac0b75a861b5b226d33de113d76988cb
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50471181"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62341359"
 ---
 # <a name="atof-atofl-wtof-wtofl"></a>atof, _atof_l, _wtof, _wtof_l
 
@@ -98,7 +98,7 @@ Giriş dizesi belirtilen türde bir sayısal değer olarak yorumlanabilecek bir 
 
 *Str* bağımsız değişkeni **atof** ve **_wtof** aşağıdaki biçime sahiptir:
 
-[*boşluk*] [*oturum*] [*basamak*] [__.__ *basamak*] [{**e** &#124; **E** } [*oturum*]*basamak*]
+[*whitespace*] [*sign*] [*digits*] [__.__*digits*] [ {**e** &#124; **E** }[*sign*]*digits*]
 
 A *boşluk* yoksayılan boşluk veya sekme karakterlerinden oluşur *oturum* ya da artı (+) veya eksidir (–); ve *basamak* bir veya daha fazla ondalık basamaktır. Herhangi bir basamak ondalık ayırıcıdan önce görünüyorsa, en az bir ondalık ayırıcıdan sonra yer almalıdır. Ondalık basamak bir tanıtıcı harften oluşan bir üs gelebilir (**e**, veya **E**) ve isteğe bağlı olarak imzalanmış ondalık tamsayı.
 

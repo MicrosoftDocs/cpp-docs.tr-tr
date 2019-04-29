@@ -10,11 +10,11 @@ helpviewer_keywords:
 - international applications, run-time routines for
 ms.assetid: ee536a04-3558-4729-8e10-6dabcde055fd
 ms.openlocfilehash: 0066fe2b17425695cefc648acc7479172067e885
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57737991"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62342971"
 ---
 # <a name="internationalization"></a>Uluslararası duruma getirme
 

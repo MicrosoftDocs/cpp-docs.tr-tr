@@ -5,11 +5,11 @@ f1_keywords:
 - VC.Project.VCCLCompilerTool.EnableParallelCodeGeneration
 ms.assetid: 33ecf49d-c0d5-4f34-bce3-84ff03f38918
 ms.openlocfilehash: c1ddea73c5aa8d3e7e70b45834cb04154bf3b4bb
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57809567"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62319232"
 ---
 # <a name="qpar-auto-parallelizer"></a>/Qpar (Otomatik Paralel Hale Getirici)
 
@@ -45,7 +45,7 @@ Derleyicinin otomatik olarak kod Döngülerde parallelizes, hesaplama arasında 
 
 [/Q Seçenekler (Düşük Düzey İşlemler)](q-options-low-level-operations.md)<br/>
 [/Qpar-report (Otomatik Paralel Hale Getirici Raporlama Düzeyi)](qpar-report-auto-parallelizer-reporting-level.md)<br/>
-[MSVC derleyici seçenekleri](compiler-options.md)<br/>
-[MSVC derleyici komut satırı sözdizimi](compiler-command-line-syntax.md)<br/>
+[MSVC Derleyicisi Seçenekleri](compiler-options.md)<br/>
+[MSVC Derleyicisi Komut Satırı Söz Dizimi](compiler-command-line-syntax.md)<br/>
 [#pragma loop()](../../preprocessor/loop.md)<br/>
 [Yerel kodda paralel programlama](https://blogs.msdn.microsoft.com/nativeconcurrency/2012/04/12/auto-vectorizer-in-visual-studio-2012-overview/)

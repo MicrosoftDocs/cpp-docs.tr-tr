@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3388
 ms.assetid: 34336545-ed13-4d81-ab5f-f869799fe4c2
 ms.openlocfilehash: 3b56aae115b1a1721f3f8a8688e36b25edc7f33f
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59776736"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62328737"
 ---
 # <a name="compiler-error-c3388"></a>Derleyici Hatası C3388
 

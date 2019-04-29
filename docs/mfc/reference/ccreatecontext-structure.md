@@ -7,11 +7,11 @@ helpviewer_keywords:
 - CCreateContext structure [MFC]
 ms.assetid: 337a0e44-d910-49a8-afc0-c7207666a9dc
 ms.openlocfilehash: 795b20cba41eeca8cc1a32e312edf065b718f364
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58768492"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62347148"
 ---
 # <a name="ccreatecontext-structure"></a>CCreateContext yapısı
 

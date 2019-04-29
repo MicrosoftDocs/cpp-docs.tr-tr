@@ -15,11 +15,11 @@ helpviewer_keywords:
 - IScheduler structure
 ms.assetid: 471de85a-2b1a-4b6d-ab81-2eff2737161e
 ms.openlocfilehash: 54db5d664a48f95a952eb1b409839d8ac3421e30
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57274082"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62337511"
 ---
 # <a name="ischeduler-structure"></a>IScheduler Yapısı
 

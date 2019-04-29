@@ -8,11 +8,11 @@ helpviewer_keywords:
 - converting data
 ms.assetid: b15b5268-7467-49f1-bf95-5299b598f94c
 ms.openlocfilehash: 37c969ea327325ea84ce22c8d993a9332f6ddc9d
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57416715"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62344570"
 ---
 # <a name="data-conversion"></a>Veri Dönüştürme
 

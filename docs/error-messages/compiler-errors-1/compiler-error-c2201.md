@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2201
 ms.assetid: ed927659-6e9c-447d-9963-19969ae1e957
 ms.openlocfilehash: b490bc32a9da0a35a726371e3b17480fcd8b0df2
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59037204"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62368610"
 ---
 # <a name="compiler-error-c2201"></a>Derleyici Hatası C2201
 

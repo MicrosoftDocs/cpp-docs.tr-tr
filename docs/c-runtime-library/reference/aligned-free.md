@@ -24,11 +24,11 @@ helpviewer_keywords:
 - aligned_free function
 ms.assetid: ed1ce952-cdfc-4682-85cc-f75d4101603d
 ms.openlocfilehash: e2d1dc1172d1cd0d31f8daa8125bd052252393c0
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50432170"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62341658"
 ---
 # <a name="alignedfree"></a>_aligned_free
 

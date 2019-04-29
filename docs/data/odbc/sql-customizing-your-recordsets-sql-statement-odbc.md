@@ -11,11 +11,11 @@ helpviewer_keywords:
 - SQL, opening recordsets
 ms.assetid: 72293a08-cef2-4be2-aa1c-30565fcfbaf9
 ms.openlocfilehash: eabaab019ee94b0c5617573c534d920ec710e9b2
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59036201"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62329939"
 ---
 # <a name="sql-customizing-your-recordsets-sql-statement-odbc"></a>SQL: Kayıt Kümenizin SQL deyimini özelleştirme (ODBC)
 
@@ -162,5 +162,5 @@ Her şeyi belirtin: sütun listesi (RFX çağrılarında göre `DoFieldExchange`
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[SQL: SQL ve C++ veri türleri (ODBC)](../../data/odbc/sql-sql-and-cpp-data-types-odbc.md)<br/>
-[SQL: Doğrudan SQL çağrıları yapma (ODBC)](../../data/odbc/sql-making-direct-sql-calls-odbc.md)
+[SQL: SQL ve C++ Veri Türleri (ODBC)](../../data/odbc/sql-sql-and-cpp-data-types-odbc.md)<br/>
+[SQL: Doğrudan SQL Çağrıları Yapma (ODBC)](../../data/odbc/sql-making-direct-sql-calls-odbc.md)

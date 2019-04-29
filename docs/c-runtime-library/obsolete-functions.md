@@ -51,11 +51,11 @@ helpviewer_keywords:
 - _seterrormode function
 ms.assetid: 8e14c2d4-1481-4240-8586-47eb43db02b0
 ms.openlocfilehash: edac8fde530752c911058acdaccccea6d0318b8c
-ms.sourcegitcommit: e98671a4f741b69d6277da02e6b4c9b1fd3c0ae5
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/04/2019
-ms.locfileid: "55702680"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62342256"
 ---
 # <a name="obsolete-functions"></a>Kullanılmayan işlevler
 
@@ -81,14 +81,14 @@ Belirli bir kitaplığı işlevleri artık kullanılmayan ve daha yeni eşdeğer
 |-----------------------|-----------------|
 |[_cgets, _cgetws](../c-runtime-library/cgets-cgetws.md)|[_cgets_s, _cgetws_s](../c-runtime-library/reference/cgets-s-cgetws-s.md)|
 |[gets, _getws](../c-runtime-library/gets-getws.md)|[gets_s, _getws_s](../c-runtime-library/reference/gets-s-getws-s.md)|
-|[_get_output_format](../c-runtime-library/get-output-format.md)|Hiçbiri|
-|[_heapadd](../c-runtime-library/heapadd.md)|Hiçbiri|
-|[_heapset](../c-runtime-library/heapset.md)|Hiçbiri|
-|[inp, inpw](../c-runtime-library/inp-inpw.md)|Hiçbiri|
-|[_inp, _inpw, _inpd](../c-runtime-library/inp-inpw-inpd.md)|Hiçbiri|
-|[outp, outpw](../c-runtime-library/outp-outpw.md)|Hiçbiri|
-|[_outp, _outpw, _outpd](../c-runtime-library/outp-outpw-outpd.md)|Hiçbiri|
-|[_set_output_format](../c-runtime-library/set-output-format.md)|Hiçbiri|
+|[_get_output_format](../c-runtime-library/get-output-format.md)|Yok.|
+|[_heapadd](../c-runtime-library/heapadd.md)|Yok.|
+|[_heapset](../c-runtime-library/heapset.md)|None|
+|[inp, inpw](../c-runtime-library/inp-inpw.md)|Yok.|
+|[_inp, _inpw, _inpd](../c-runtime-library/inp-inpw-inpd.md)|Yok.|
+|[outp, outpw](../c-runtime-library/outp-outpw.md)|None|
+|[_outp, _outpw, _outpd](../c-runtime-library/outp-outpw-outpd.md)|Yok.|
+|[_set_output_format](../c-runtime-library/set-output-format.md)|Yok.|
 
 ## <a name="removed-from-the-crt-in-earlier-versions-of-visual-studio"></a>Visual Studio'nun önceki sürümlerinde CRT kaldırıldı
 

@@ -31,11 +31,11 @@ helpviewer_keywords:
 - acoshl function
 ms.assetid: 6985c4d7-9e2a-44ce-9a9b-5a43015f15f7
 ms.openlocfilehash: e61b9ed4222898e3f2340a5e54f6983fb0411c72
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50649182"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62341697"
 ---
 # <a name="acosh-acoshf-acoshl"></a>acosh, acoshf, acoshl
 
@@ -76,7 +76,7 @@ C++ kullandığınızda, aşırı yüklemesini çağırabilirsiniz **acosh** ala
 
 |İşlev|C üstbilgisi|C++ üst bilgisi|
 |--------------|--------------|------------------|
-|**ACOSH**, **acoshf**, **acoshl**|\<Math.h >|\<cmath >|
+|**acosh**, **acoshf**, **acoshl**|\<Math.h >|\<cmath >|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

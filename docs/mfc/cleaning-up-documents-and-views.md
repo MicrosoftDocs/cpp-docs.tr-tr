@@ -7,11 +7,11 @@ helpviewer_keywords:
 - documents [MFC], closing
 ms.assetid: 0c454db2-3644-434d-9e53-8108a7aedfe1
 ms.openlocfilehash: 940c768823d26950d9710fb1d1a52e6a1955fead
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57258820"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62327164"
 ---
 # <a name="cleaning-up-documents-and-views"></a>Belgeleri ve Görünümleri Temizleme
 

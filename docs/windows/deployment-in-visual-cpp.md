@@ -6,11 +6,11 @@ helpviewer_keywords:
 - application deployment [C++]
 ms.assetid: d4b4ffc0-d2bd-4e4a-84a6-62f1c26f6a09
 ms.openlocfilehash: 8dccf581cff88dc2e8c4a889bed8b47fc140eb7c
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58787681"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62345376"
 ---
 # <a name="deployment-in-visual-c"></a>Visual C++ üzerinde Dağıtım
 

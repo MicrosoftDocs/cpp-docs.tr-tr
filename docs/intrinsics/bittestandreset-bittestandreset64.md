@@ -12,11 +12,11 @@ helpviewer_keywords:
 - _bittestandreset64 intrinsic
 ms.assetid: 8dad63bb-a051-4cd7-a793-3357537dfeaf
 ms.openlocfilehash: 53a9921b856a3bc489d1d8e1cd78a4cfa7493320
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59040403"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62349153"
 ---
 # <a name="bittestandreset-bittestandreset64"></a>_bittestandreset, _bittestandreset64
 

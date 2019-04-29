@@ -14,11 +14,11 @@ f1_keywords:
 - AMP/Concurrency::tiled_extent::tile_extent
 ms.assetid: 671ecaf8-c7b0-4ac8-bbdc-e30bd92da7c0
 ms.openlocfilehash: 51e7696b8103e81d42beec0987a49f26fe041643
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57264341"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62352287"
 ---
 # <a name="tiledextent-class"></a>tiled_extent Sınıfı
 

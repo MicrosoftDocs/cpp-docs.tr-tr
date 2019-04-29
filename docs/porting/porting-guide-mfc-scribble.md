@@ -3,11 +3,11 @@ title: 'Taşıma Kılavuzu: MFC Scribble'
 ms.date: 11/19/2018
 ms.assetid: 8ddb517d-89ba-41a1-ab0d-4d2c6d9047e8
 ms.openlocfilehash: 436dd27d8c2669e21ddc8a9e453f369cdd14f70c
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57741301"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62337472"
 ---
 # <a name="porting-guide-mfc-scribble"></a>Taşıma Kılavuzu: MFC Scribble
 
@@ -51,7 +51,7 @@ Bu durumda, tüm uyarıları sorunları olan ve Visual Studio Proje dosyasında 
 
 Proje sistemi kullanarak hangi derleme sürümünün biliyoruz şekilde yapılandırmadan önce biz platform araç takımını denetleyin. Proje Özellikleri iletişim kutusunda, altında **yapılandırma özellikleri**, **genel** kategori göz **Platform araç takımını** özelliği. Bu sürümü Visual Studio ve bu durumda v141 araçları Visual Studio 2017 sürümü için platform Aracı sürüm numarasını içerir. Visual C++ 2010 ile derlenmiş bir proje dönüştürdüğünüzde, 2012, 2013 veya 2015 araç takımı otomatik olarak Visual Studio 2017 araç takımını güncelleştirilmez.
 
-Unicode'a geçiş yapmak için projenin özelliklerini açmak **yapılandırma özellikleri**, seçin **genel** bölümünde ve bulun **karakter kümesi** özelliği. Bu değişiklik **çok baytlı karakter kümesi kullanan** için **Unicode karakter kümesini Kullandırır**. Bu değişikliğin etkilerini o artık _UNICODE ve UNICODE makroları tanımlanır ve _MBCS değil, Özellikler iletişim kutusunda altında doğrulayabilirsiniz **C/C++** kategori **komut satırı** özelliği.
+Unicode'a geçiş yapmak için projenin özelliklerini açmak **yapılandırma özellikleri**, seçin **genel** bölümünde ve bulun **karakter kümesi** özelliği. Bu değişiklik **çok baytlı karakter kümesi kullanan** için **Unicode karakter kümesini Kullandırır**. Bu değişikliğin etkilerini o artık _UNICODE ve UNICODE makroları tanımlanır ve _MBCS değil, Özellikler iletişim kutusunda altında doğrulayabilirsiniz **C /C++**  kategori **komut satırı** özellik.
 
 ```Output
 /GS /analyze- /W4 /Zc:wchar_t /Zi /Gm- /Od /Fd".\Debug\vc141.pdb" /Zc:inline /fp:precise /D "_AFXDLL" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_UNICODE" /D "UNICODE" /errorReport:prompt /WX /Zc:forScope /Gd /Oy- /MDd /Fa".\Debug\" /EHsc /nologo /Fo".\Debug\" /Fp".\Debug\Scribble.pch" /diagnostics:classic
@@ -87,5 +87,5 @@ Karalama küçük ve basit Windows masaüstü uygulaması olduğundan ve dönü�
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Taşıma ve yükseltme: Örnekler ve örnek olay incelemeleri](../porting/porting-and-upgrading-examples-and-case-studies.md)<br/>
+[Taşıma ve Yükseltme: Örnekler ve Örnek Olay İncelemeleri](../porting/porting-and-upgrading-examples-and-case-studies.md)<br/>
 [Sonraki örnekte: COM Spy](../porting/porting-guide-com-spy.md)

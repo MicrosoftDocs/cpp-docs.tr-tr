@@ -9,11 +9,11 @@ helpviewer_keywords:
 - Properties window, overriding virtual functions in
 ms.assetid: 2d8c76f2-7a6b-4c9c-8de5-4282ce7755b6
 ms.openlocfilehash: 9bb3fd34bbfa14cce1595ed586c4e1b66518e7b7
-ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51694029"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62350562"
 ---
 # <a name="override-a-virtual-function"></a>Bir sanal işlevi geçersiz kılma
 

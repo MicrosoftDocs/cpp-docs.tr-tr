@@ -5,11 +5,11 @@ helpviewer_keywords:
 - OLE DB consumers, creating
 ms.assetid: ae32d657-72ea-4db8-9839-75cb5cff68ae
 ms.openlocfilehash: 060a39a8436ff73900ebfaea7d1c882b9862ee7e
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59025143"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62362031"
 ---
 # <a name="creating-a-simple-consumer"></a>Basit Tüketici Oluşturma
 

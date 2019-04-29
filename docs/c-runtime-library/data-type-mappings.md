@@ -30,11 +30,11 @@ helpviewer_keywords:
 - _T type
 ms.assetid: 4e573c05-8800-468b-ae5f-76ff7409835e
 ms.openlocfilehash: 60dc4329ae4c908b9bd168584c71c42c12634bb2
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57749106"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62344375"
 ---
 # <a name="data-type-mappings"></a>Veri Türü Eşlemeleri
 

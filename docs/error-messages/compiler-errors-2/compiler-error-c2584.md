@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2584
 ms.assetid: 836e2c0a-86c0-4742-b432-beb0191ad20e
 ms.openlocfilehash: b61ad65555b5d5232468206f6170223c5f160a34
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50556695"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62360482"
 ---
 # <a name="compiler-error-c2584"></a>Derleyici Hatası C2584
 

@@ -7,11 +7,11 @@ helpviewer_keywords:
 - assignment operators, compound
 ms.assetid: db7b5893-cd56-4f1c-9981-5a024200ab63
 ms.openlocfilehash: 39a9391e2a62a59c5e7fd7937c1f3d12509b76ad
-ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56148770"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62327905"
 ---
 # <a name="c-compound-assignment"></a>C Bileşik Atama
 

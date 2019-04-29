@@ -7,11 +7,11 @@ helpviewer_keywords:
 - interfaces, generic [C++}
 ms.assetid: f3da788a-ba83-4db7-9dcf-9b95a8fb9d1a
 ms.openlocfilehash: 035636f2723cd949f5a1852b3d5500a20f5fb493
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59021507"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62350630"
 ---
 # <a name="generic-interfaces-ccli"></a>Genel arabirimler (C++/CLI)
 

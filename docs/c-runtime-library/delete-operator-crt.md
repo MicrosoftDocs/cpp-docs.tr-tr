@@ -16,11 +16,11 @@ helpviewer_keywords:
 - vector delete
 ms.assetid: e91bd0df-3815-40ca-950a-67b470518aed
 ms.openlocfilehash: 81fc30d91d487c0077df5b8f964c685cb7453aeb
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50579627"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62344154"
 ---
 # <a name="operator-deletecrt"></a>işleç delete(CRT)
 

@@ -6,11 +6,11 @@ helpviewer_keywords:
 - bit fields
 ms.assetid: 9faf74c4-7fd5-4b44-ad18-04485193d06e
 ms.openlocfilehash: 62c982fa078182cb1902b6770f0a3713ca4ff7a8
-ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56150239"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62326501"
 ---
 # <a name="c-bit-fields"></a>C Bit Alanları
 

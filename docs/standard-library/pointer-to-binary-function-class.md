@@ -8,11 +8,11 @@ helpviewer_keywords:
 - pointer_to_binary_function class
 ms.assetid: fb50599f-bcb3-4076-a669-6dcc3eb189a5
 ms.openlocfilehash: 88d38be258c6ceb1054e0d31cc52e4d8d25186ec
-ms.sourcegitcommit: 4299caac2dc9e806c74ac833d856a3838b0f52a1
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "57006805"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62370326"
 ---
 # <a name="pointertobinaryfunction-class"></a>pointer_to_binary_function Sınıfı
 

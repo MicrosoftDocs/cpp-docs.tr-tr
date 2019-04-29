@@ -13,11 +13,11 @@ helpviewer_keywords:
 - stack, setting size
 ms.assetid: 73283660-e4bd-47cc-b5ca-04c5d739034c
 ms.openlocfilehash: 27de554e1933b2753f641be358461c8d7ff4fffa
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57813805"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62317932"
 ---
 # <a name="stack-stack-allocations"></a>/STACK (Yığın Ayırmaları)
 
@@ -58,4 +58,4 @@ Yığın boyutunu ayarlamak için başka bir yöntem, [STACKSIZE](stacksize.md) 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [MSVC bağlayıcı başvurusu](linking.md)<br/>
-[MSVC bağlayıcı seçenekleri](linker-options.md)
+[MSVC Bağlayıcı Seçenekleri](linker-options.md)

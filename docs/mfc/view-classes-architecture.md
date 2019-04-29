@@ -10,11 +10,11 @@ helpviewer_keywords:
 - view classes [MFC], architecture
 ms.assetid: 8894579a-1436-441e-b985-83711061e495
 ms.openlocfilehash: 15b120f0354c483480351b8d3abf995334779411
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57299419"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62352677"
 ---
 # <a name="view-classes-architecture"></a>Görünüm Sınıfları (Mimari)
 

@@ -16,11 +16,11 @@ helpviewer_keywords:
 - ON_LBN_DBLCLK
 ms.assetid: e4e54412-2167-436a-883b-5dcad01820b8
 ms.openlocfilehash: a104e6a8b3ed40c65b704738461c083a745464b7
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57292617"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62322416"
 ---
 # <a name="list-box-handlers"></a>Liste Kutusu İşleyicileri
 

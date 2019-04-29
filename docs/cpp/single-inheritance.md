@@ -11,11 +11,11 @@ helpviewer_keywords:
 - inheritance, single
 ms.assetid: 1cb946ed-8b1b-4cf1-bde0-d9cecbfdc622
 ms.openlocfilehash: 96af0c42a32f14280fd8c208a3e4eaec38a8ca3a
-ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52175632"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62331135"
 ---
 # <a name="single-inheritance"></a>Tek Devralma
 

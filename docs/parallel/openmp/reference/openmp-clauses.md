@@ -34,11 +34,11 @@ helpviewer_keywords:
 - shared OpenMP clause
 ms.assetid: 806e7d8f-b204-4e4c-a12c-273ab540a7ca
 ms.openlocfilehash: 590cb7d619895a04dfc511b6b77dad4074dc3f42
-ms.sourcegitcommit: 14b292596bc9b9b883a9c58cd3e366b282a1f7b3
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60124934"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62362666"
 ---
 # <a name="openmp-clauses"></a>OpenMP Yan Tümceleri
 

@@ -17,11 +17,11 @@ helpviewer_keywords:
 - Links menu item [MFC]
 ms.assetid: 425448be-8ca0-412e-909a-a3a9ce845288
 ms.openlocfilehash: b1a74fef743592d3d052226dac926fc7ddc58578
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58770349"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62363472"
 ---
 # <a name="menus-and-resources-container-additions"></a>Menüler ve kaynaklar: Kapsayıcı ekleme
 
@@ -86,4 +86,4 @@ Dize tabloları kapsayıcı uygulamaları için yapılan çoğu karşılık gele
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Menüler ve Kaynaklar (OLE)](../mfc/menus-and-resources-ole.md)<br/>
-[Menüler ve kaynaklar: Sunucu ekleme](../mfc/menus-and-resources-server-additions.md)
+[Menüler ve Kaynaklar: Sunucu Ekleme](../mfc/menus-and-resources-server-additions.md)

@@ -28,11 +28,11 @@ helpviewer_keywords:
 - temporary files [C++], removing
 ms.assetid: 7419501e-2587-4f2a-b469-0dca07f84736
 ms.openlocfilehash: bf4f2cff48e8660682fc8a00d10d9a1fe960a6a7
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50508894"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62357429"
 ---
 # <a name="rmtmp"></a>_rmtmp
 

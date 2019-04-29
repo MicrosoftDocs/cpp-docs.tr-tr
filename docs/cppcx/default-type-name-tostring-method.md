@@ -5,11 +5,11 @@ f1_keywords:
 - VCCORLIB/Platform::Object::ToString
 ms.assetid: 2541955f-d844-4bd8-944d-185198c86579
 ms.openlocfilehash: 22ced2fc13f550a4a1f1c809c4854670450ad288
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57739823"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62347278"
 ---
 # <a name="defaulttypenametostring-method"></a>Varsayılan:: (type_name):: ToString yöntemi
 

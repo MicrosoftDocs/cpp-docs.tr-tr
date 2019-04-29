@@ -3,11 +3,11 @@ title: D. Zamanlama yan tümcesi
 ms.date: 01/22/2019
 ms.assetid: bf3d8f51-ea05-4803-bf55-657c12e91efe
 ms.openlocfilehash: 89e011784c5cccedc4a75f38d553458ea2e5d7e0
-ms.sourcegitcommit: 382e247c0f1b4cb7c2dab837b8b6fdff24bff47a
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/28/2019
-ms.locfileid: "55087294"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62362887"
 ---
 # <a name="d-the-schedule-clause"></a>D. Zamanlama yan tümcesi
 

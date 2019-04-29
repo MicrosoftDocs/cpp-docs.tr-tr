@@ -6,11 +6,11 @@ ms.assetid: 475da6e9-0d78-4b4e-bd23-f41c406c4efe
 author: corob-msft
 ms.author: corob
 ms.openlocfilehash: 69591186550a915edb49889617740e454817f154
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58898810"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62351962"
 ---
 # <a name="visual-c-language-conformance"></a>Visual C++ dil uyumluluğu
 
@@ -315,7 +315,7 @@ Aşağıdaki algoritmaları paralelleştirildi:
 
 [C++ Dil Başvurusu](../cpp/cpp-language-reference.md)<br/>
 [C++ Standart Kitaplığı](../standard-library/cpp-standard-library-reference.md)<br/>
-[Visual Studio'da C++ uyumluluk geliştirmeleri](cpp-conformance-improvements.md)<br/>
+[Visual Studio’deki C++ uyumluluk geliştirmeleri](cpp-conformance-improvements.md)<br/>
 [Visual Studio'da Visual C++ yenilikleri](what-s-new-for-visual-cpp-in-visual-studio.md)<br/>
 [Visual C++ değişiklik geçmişi 2003-2015](../porting/visual-cpp-change-history-2003-2015.md)<br/>
 [Visual C++ 2003 ile 2015 Arasındaki Farklar](../porting/visual-cpp-what-s-new-2003-through-2015.md)<br/>

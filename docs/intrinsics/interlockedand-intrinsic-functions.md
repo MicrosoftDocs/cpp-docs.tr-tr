@@ -57,11 +57,11 @@ helpviewer_keywords:
 - _InterlockedAnd_HLEAcquire intrinsic
 ms.assetid: ad271dc3-42cd-47d0-9f65-30d5cfeb66fc
 ms.openlocfilehash: b38a181102247ab203c86ccb6310a72135dccc8b
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59033326"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62349468"
 ---
 # <a name="interlockedand-intrinsic-functions"></a>_Interlockedand iç işlevleri
 

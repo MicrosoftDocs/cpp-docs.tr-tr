@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2792
 ms.assetid: 392cf748-4f5e-4e62-a364-3118d5658408
 ms.openlocfilehash: 40047cb557fba49f94e5c4e42f172cbcd999c65a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50492778"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62360183"
 ---
 # <a name="compiler-error-c2792"></a>Derleyici Hatası C2792
 

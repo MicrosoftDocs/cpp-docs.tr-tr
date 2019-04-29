@@ -34,11 +34,11 @@ helpviewer_keywords:
 - streams, associating with files
 ms.assetid: 262757ff-1e09-4472-a5b6-4325fc28f971
 ms.openlocfilehash: 0cde110bf1dd12c23a6b0b658809502743d9edd3
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51327167"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62334781"
 ---
 # <a name="fdopen-wfdopen"></a>_fdopen, _wfdopen
 
@@ -92,7 +92,7 @@ Dosya tanımlayıcıları yöntemlere geçirilen **_fdopen** ait olan tarafında
 | **"a"** | (Ekleme) dosyanın sonunda yazma için açar. Henüz yoksa dosyayı oluşturur. |
 | **"r +"** | Hem okuma ve yazma için açar. Dosyanın mevcut olması gerekir. |
 | **"w +"** | Hem okuma ve yazma için boş bir dosya açar. Dosya varsa içeriği yok edilir. |
-| **"a +"** | Okuma ve ekleme için açar. Henüz yoksa dosyayı oluşturur. |
+| **"a+"** | Okuma ve ekleme için açar. Henüz yoksa dosyayı oluşturur. |
 
 Ne zaman bir dosya açıldığında ile **"a"** veya **"a +"** erişim türü, tüm yazma işlemleri dosyanın sonunda gerçekleşir. Dosya işaretçisini kullanarak konumlandırılabilir [fseek](fseek-fseeki64.md) veya [rewind](rewind.md), ancak herhangi bir işlemi yazma önce her zaman geri dosyanın sonuna kadar taşınır. Bu nedenle, var olan verilerin üzerine yazılamaz. Zaman **"r +"**, **"w +"**, veya **"a +"** erişim türü belirtildiğinde, hem okumaya hem yazmaya izin verilir (dosyanın "güncelleştirme" açık olarak kabul edilir). Ancak, yazma ve okuma arasında geçiş yaptığınızda, olmalıdır bir araya giren [fflush](fflush.md), [fsetpos](fsetpos.md), [fseek](fseek-fseeki64.md), veya [rewind](rewind.md) işlem. Geçerli konumu için belirttiğiniz [fsetpos](fsetpos.md) veya [fseek](fseek-fseeki64.md) isterseniz işlemi.
 
@@ -114,15 +114,15 @@ Geçerli karakterler için *modu* kullanılan dize **fopen** ve **_fdopen** kar�
 |Öğesindeki karakterler *modu* dize|Eşdeğer *oflag* değerini **_aç** ve **_sopen**|
 |---------------------------------|---------------------------------------------------|
 |**a**|**\_O\_WRONLY &#124; \_O\_ekleme** (genellikle  **\_O\_WRONLY &#124; \_O\_CREAT &#124; \_O \_Ekleme**)|
-|**bir +**|**\_O\_RDWR &#124; \_O\_ekleme** (genellikle  **\_O\_RDWR &#124; \_O\_ekleme &#124; \_O\_ CREAT** )|
+|**a+**|**\_O\_RDWR &#124; \_O\_ekleme** (genellikle  **\_O\_RDWR &#124; \_O\_ekleme &#124; \_O\_ CREAT** )|
 |**r**|**\_O\_RDONLY**|
 |**r +**|**\_O\_RDWR**|
 |**w**|**\_O\_WRONLY** (genellikle  **\_O\_WRONLY &#124; \_O\_CREAT &#124; \_O\_TRUNC**)|
-|**w +**|**\_O\_RDWR** (genellikle  **\_O\_RDWR &#124; \_O\_CREAT &#124; \_O\_TRUNC**)|
+|**w +**|**\_O\_RDWR** (usually **\_O\_RDWR &#124; \_O\_CREAT &#124; \_O\_TRUNC**)|
 |**b**|**\_O\_İKİLİ**|
 |**T**|**\_O\_METİN**|
 |**c**|Yok.|
-|**n**|Yok.|
+|**n**|None|
 
 ## <a name="requirements"></a>Gereksinimler
 

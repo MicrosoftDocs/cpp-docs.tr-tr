@@ -31,11 +31,11 @@ helpviewer_keywords:
 - exp2l function
 ms.assetid: 526e3e10-201a-4610-a886-533f44ece344
 ms.openlocfilehash: 70a3b7eb610556d4a26de7cf0aad55affcdbdc94
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50562766"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62338837"
 ---
 # <a name="exp2-exp2f-exp2l"></a>exp2, exp2f, exp2l
 
@@ -76,9 +76,9 @@ Başarılı olursa, 2 tabanında üssünü döndürür *x*, diğer bir deyişle,
 
 |Sorun|döndürülecek|
 |-----------|------------|
-|*x* ±0 =|1.|
+|*x* = ±0|1.|
 |*x* = - INFİNİTY|+0|
-|*x* = + INFİNİTY|+ INFİNİTY|
+|*x* = +INFINITY|+ INFİNİTY|
 |*x* NaN =|NaN|
 |Taşma aralık hatası|+ HUGE_VAL + HUGE_VALF, veya + HUGE_VALL|
 |Yetersiz aralık hatası|Sonra yuvarlama doğru sonucu|

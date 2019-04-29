@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3834
 ms.assetid: 059e0dc4-300b-4e74-b6c2-41a57831fe2a
 ms.openlocfilehash: 9f2bb96beaac8ede75863084c8ebf8345c940f53
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50564170"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62327515"
 ---
 # <a name="compiler-error-c3834"></a>Derleyici Hatası C3834
 

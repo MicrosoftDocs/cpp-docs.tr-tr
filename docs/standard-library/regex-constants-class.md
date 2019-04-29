@@ -83,11 +83,11 @@ helpviewer_keywords:
 - std::regex_constants [C++], collate
 ms.assetid: 4a69c0ba-c46d-46e4-bd29-6f4efb805f26
 ms.openlocfilehash: f3e733bced407f96414783612165984c71b63775
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50454542"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62369573"
 ---
 # <a name="regexconstants-namespace"></a>regex_constants ad alanı
 

@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3026
 ms.assetid: 3297060e-cc5b-4600-a2db-09bfc4ffa21f
 ms.openlocfilehash: da3c42433448dccea9f33e34b771da85d7e5b747
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50574376"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62360066"
 ---
 # <a name="compiler-error-c3026"></a>Derleyici Hatası C3026
 

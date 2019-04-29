@@ -8,11 +8,11 @@ helpviewer_keywords:
 - Platform::Exception Class
 ms.assetid: fa73d1ab-86e4-4d26-a7d9-81938c1c7e77
 ms.openlocfilehash: 9e167efc54352d125e849956a2da8d8e8cad4ed6
-ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51693275"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62330329"
 ---
 # <a name="platformrecreateexception-method"></a>Platform::ReCreateException yöntemi
 

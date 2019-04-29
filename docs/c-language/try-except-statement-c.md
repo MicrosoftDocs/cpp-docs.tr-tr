@@ -11,11 +11,11 @@ helpviewer_keywords:
 - try-catch keyword [C], try-except keyword [C]
 ms.assetid: f76db9d1-fc78-417f-b71f-18e545fc01c3
 ms.openlocfilehash: 9940fdf983f6141c0de207509bb800533b0f1eb8
-ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56152332"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62345818"
 ---
 # <a name="try-except-statement-c"></a>try-except Deyimi (C)
 
@@ -31,8 +31,7 @@ ms.locfileid: "56152332"
 
 **__except (** *ifade* **)** *bileşik deyim* 
 
-Sonra gelen bileşik deyim `__try` yan tümcesi ise korunan bölümün. 
-  `__except` yan tümcesinden sonra gelen bileşik deyim, özel durum işleyicisidir. İşleyici, bir dizi korunan bölümün yürütülmesi sırasında bir özel durum oluşturulursa gerçekleştirilecek eylemi belirtir. Yürütme aşağıdaki gibi çalışır:
+Sonra gelen bileşik deyim `__try` yan tümcesi ise korunan bölümün. `__except` yan tümcesinden sonra gelen bileşik deyim, özel durum işleyicisidir. İşleyici, bir dizi korunan bölümün yürütülmesi sırasında bir özel durum oluşturulursa gerçekleştirilecek eylemi belirtir. Yürütme aşağıdaki gibi çalışır:
 
 1. Korunan bölüm yürütülür.
 

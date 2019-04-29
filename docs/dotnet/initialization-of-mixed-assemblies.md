@@ -11,11 +11,11 @@ helpviewer_keywords:
 - mixed assemblies [C++], initilizing
 ms.assetid: bfab7d9e-f323-4404-bcb8-712b15f831eb
 ms.openlocfilehash: 1f4ea7f5cfc6e99390c93ba9c2beadc46fce8584
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50665016"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62339045"
 ---
 # <a name="initialization-of-mixed-assemblies"></a>Karışık Derlemeleri Başlatma
 
@@ -150,9 +150,9 @@ Geliştiriciler, yükleyici kilidi altında çağrıldı belirli bir MSIL işlev
 
 1. Mscoree.dll ve kullanımda olan mscorwks.dll'ye kullanılabilir olduğundan emin olun.
 
-   Bu iki yolla yapılabilir. İlk olarak, pdb mscoree.dll ve kullanımda olan mscorwks.dll'ye için Sembol arama yolu eklenebilir. Bunu yapmak için Sembol arama yolu Seçenekler iletişim kutusunu açın. (Gelen **Araçları** menüsünde seçin **seçenekleri**. Sol bölmesinde **seçenekleri** açık iletişim kutusunu **hata ayıklama** düğüm ve **sembolleri**.) Yolun mscoree.dll ve kullanımda olan mscorwks.dll'ye PDB dosyaları arama listesine ekleyin. Bu pdb % VSINSTALLDIR%\SDK\v2.0\symbols yüklenir. Seçin **Tamam**.
+   Bu iki yolla yapılabilir. İlk olarak, pdb mscoree.dll ve kullanımda olan mscorwks.dll'ye için Sembol arama yolu eklenebilir. Bunu yapmak için Sembol arama yolu Seçenekler iletişim kutusunu açın. (Gelen **Araçları** menüsünde seçin **seçenekleri**. Sol bölmesinde **seçenekleri** açık iletişim kutusunu **hata ayıklama** düğüm ve **sembolleri**.) Yolun mscoree.dll ve kullanımda olan mscorwks.dll'ye PDB dosyaları arama listesine ekleyin. Bu pdb % VSINSTALLDIR%\SDK\v2.0\symbols yüklenir. **Tamam**’ı seçin.
 
-   İkinci olarak, pdb mscoree.dll ve kullanımda olan mscorwks.dll'ye Microsoft sembol sunucusundan indirilebilir. Sembol sunucusu yapılandırmak için Sembol arama yolu Seçenekler iletişim kutusunu açın. (Gelen **Araçları** menüsünde seçin **seçenekleri**. Sol bölmesinde **seçenekleri** açık iletişim kutusunu **hata ayıklama** düğüm ve **sembolleri**.) Arama listesini şu arama yolu Ekle: http://msdl.microsoft.com/download/symbols. Sembol önbellek dizini sembol sunucusu önbellek metin kutusuna ekleyin. Seçin **Tamam**.
+   İkinci olarak, pdb mscoree.dll ve kullanımda olan mscorwks.dll'ye Microsoft sembol sunucusundan indirilebilir. Sembol sunucusu yapılandırmak için Sembol arama yolu Seçenekler iletişim kutusunu açın. (Gelen **Araçları** menüsünde seçin **seçenekleri**. Sol bölmesinde **seçenekleri** açık iletişim kutusunu **hata ayıklama** düğüm ve **sembolleri**.) Arama listesini şu arama yolu Ekle: http://msdl.microsoft.com/download/symbols. Sembol önbellek dizini sembol sunucusu önbellek metin kutusuna ekleyin. **Tamam**’ı seçin.
 
 1. Hata ayıklayıcı modu yalnızca yerel moda ayarlayın.
 

@@ -5,11 +5,11 @@ helpviewer_keywords:
 - property page XML files
 ms.assetid: dd9d9734-4387-4098-8ba6-85b93507731d
 ms.openlocfilehash: 17b89f00b2e51c960ed7d3219427b56d92851b81
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57823525"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62319474"
 ---
 # <a name="property-page-xml-rule-files"></a>Özellik sayfası XML kuralı dosyaları
 

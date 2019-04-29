@@ -5,11 +5,11 @@ helpviewer_keywords:
 - delayed loading of DLLs, notification hooks
 ms.assetid: e9c291ed-2f2d-4319-a171-09800625256f
 ms.openlocfilehash: 884d8e8479b7cad28d99e19adfac4d05dbeec5f5
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57818316"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62320480"
 ---
 # <a name="notification-hooks"></a>Bildirim Kancaları
 

@@ -6,11 +6,11 @@ helpviewer_keywords:
 - NMAKE macros, using
 ms.assetid: 95c87fbc-76e6-48c0-8536-9bfe179f328e
 ms.openlocfilehash: fb3b154ba8b30bbfc9a6c7c6b37720e5c60d6327
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57824022"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62317256"
 ---
 # <a name="using-an-nmake-macro"></a>NMAKE Makrosu Kullanma
 

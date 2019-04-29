@@ -11,11 +11,11 @@ helpviewer_keywords:
 - union keyword [C]
 ms.assetid: b4bda1d1-cb5e-4f60-ac2b-29af93d8a9a2
 ms.openlocfilehash: 76ad9b797a4f192e8f22f8c040f5a308371a461b
-ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56148419"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62325773"
 ---
 # <a name="name-spaces"></a>Ad Alanları
 

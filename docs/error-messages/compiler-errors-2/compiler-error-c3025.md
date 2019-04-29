@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3025
 ms.assetid: 4442f5a3-d9ea-4873-b1fb-e7e5bd3cbe5e
 ms.openlocfilehash: bb3337cb563125ce0329146f64c4da3f33e28ce7
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50490733"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62360079"
 ---
 # <a name="compiler-error-c3025"></a>Derleyici Hatası C3025
 

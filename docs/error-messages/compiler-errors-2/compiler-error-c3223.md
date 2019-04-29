@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3223
 ms.assetid: 1f4380b4-0413-40db-a868-62f97babaf78
 ms.openlocfilehash: 5771de24cd07978903a3e598f1ff5658cb61eafa
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59778557"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62363855"
 ---
 # <a name="compiler-error-c3223"></a>Derleyici Hatası C3223
 

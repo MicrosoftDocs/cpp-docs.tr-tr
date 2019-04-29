@@ -12,11 +12,11 @@ helpviewer_keywords:
 - I/O routines, console and port I/O
 ms.assetid: 0eee1c92-9b3d-41e0-a43a-257e546eeec8
 ms.openlocfilehash: 55f97a70f2ce12f6363d234e9bbc9384d7ee9fe1
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57752395"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62344674"
 ---
 # <a name="console-and-port-io"></a>Konsol ve Bağlantı Noktası G/Ç
 

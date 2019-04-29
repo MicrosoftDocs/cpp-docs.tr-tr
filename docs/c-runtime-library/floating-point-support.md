@@ -9,11 +9,11 @@ helpviewer_keywords:
 - floating-point numbers
 ms.assetid: e4fcaf69-5c8e-4854-a9bb-1f412042131e
 ms.openlocfilehash: 1d03333dee12989af5897c34ba96484930a39673
-ms.sourcegitcommit: e98671a4f741b69d6277da02e6b4c9b1fd3c0ae5
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/04/2019
-ms.locfileid: "55703135"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62343985"
 ---
 # <a name="math-and-floating-point-support"></a>Matematik ve kayan nokta desteği
 
@@ -138,4 +138,4 @@ Microsoft C/C++ ve desteklenen Microsoft Visual C++ önceki 16-bit sürümleri *
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Kategoriye göre Evrensel C çalışma zamanı yordamları](../c-runtime-library/run-time-routines-by-category.md)<br/>
-[Kayan nokta temelleri](../c-runtime-library/reference/floating-point-primitives.md)<br/>
+[Kayan nokta temel elemanları](../c-runtime-library/reference/floating-point-primitives.md)<br/>

@@ -9,11 +9,11 @@ helpviewer_keywords:
 - CAnimateCtrl class [MFC], about CAnimateCtrl class [MFC]
 ms.assetid: 696c0805-bef0-4e2e-a9e7-b37b9215b7f0
 ms.openlocfilehash: b967cc6dde6b4f639ef081b3821f6a7e5a2fe295
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57287446"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62351647"
 ---
 # <a name="using-canimatectrl"></a>CAnimateCtrl Kullanma
 

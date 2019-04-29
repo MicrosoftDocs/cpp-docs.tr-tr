@@ -7,15 +7,15 @@ helpviewer_keywords:
 - -Zc:__cplusplus compiler option (C++)
 - __cplusplus macro (C++)
 ms.openlocfilehash: 89545f541f32374a47dce7f87958e61873c1b47c
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57810100"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62315722"
 ---
 # <a name="zccplusplus-enable-updated-cplusplus-macro"></a>/ ZC: __cplusplus (güncelleştirilmiş __cplusplus makrosu etkinleştir)
 
-**/ZC: __cplusplus** derleyici seçeneğini etkinleştirir  **\_ \_cplusplus** son C++ dil standartları desteği için güncelleştirilmiş bir değeri bildirmek için önişlemci makrosu. Varsayılan olarak, Visual Studio her zaman değeri "199711 L" için döndürür  **\_ \_cplusplus** önişlemci makrosu.
+**/ZC: __cplusplus** derleyici seçeneğini etkinleştirir  **\_ \_cplusplus** için güncelleştirilmiş bir değeri bildirmek için önişlemci makrosu son C++ dil standartları destekler. Varsayılan olarak, Visual Studio her zaman değeri "199711 L" için döndürür  **\_ \_cplusplus** önişlemci makrosu.
 
 ## <a name="syntax"></a>Sözdizimi
 

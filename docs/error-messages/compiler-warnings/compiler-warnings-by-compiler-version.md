@@ -1,19 +1,19 @@
 ---
 title: Derleyici sürümüne göre derleyici uyarıları
-ms.date: 10/24/2018
+ms.date: 04/22/2019
 helpviewer_keywords:
 - warnings, by compiler version
 - cl.exe compiler, setting warning options
-ms.openlocfilehash: 79cf78de865f480530df89c778e9fe432b0bbf33
-ms.sourcegitcommit: a901c4acbfc80ca10663d37c09921f04c5b6dd17
-ms.translationtype: MT
+ms.openlocfilehash: a84c3f14b8e6a6c877a13c3c9b1b851b0fc5ad05
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58142531"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62359910"
 ---
 # <a name="compiler-warnings-by-compiler-version"></a>Derleyici sürümüne göre derleyici uyarıları
 
-Derleyici bir sürümünü kullanarak belirttiğiniz sonra sunulan uyarıları gözardı edebileceğini [/Wv](../../build/reference/compiler-option-warning-level.md) derleyici seçeneği. Bu seçenek, yeni bir araç takımının sürüm tanıtır ve geçici olarak yeni uyarıları bastırmak istediğiniz yapı işleminizin yönetimi için avantajlıdır. Bu seçenek, yeni hata iletileri engellemez. Tüm yeni uyarıları bastır önermiyoruz kalıcı olarak! En yüksek normal uyarı düzeyinde, her zaman derle öneririz __/W4__, kaldırıp __/Wv__ olabildiğince çabuk derleme seçeneği.
+Derleyici bir sürümünü kullanarak belirttiğiniz sonra sunulan uyarıları gözardı edebileceğini [/Wv](../../build/reference/compiler-option-warning-level.md) derleyici seçeneği. Bu seçenek, yeni bir araç takımının sürüm tanıtır ve geçici olarak yeni uyarıları bastırmak istediğiniz yapı işleminizin yönetimi için avantajlıdır. Bu seçenek yalnızca hata iletileri değil yeni uyarılar bastırır. Tüm yeni uyarıları bastırma yoksa kalıcı olarak! En yüksek normal uyarı düzeyinde, her zaman derle öneririz `/W4`, kaldırıp `/Wv` pratik sürede derleme seçeneği.
 
 Derleyicisinin bu sürümü, yeni uyarılar eklendi:
 
@@ -39,19 +39,19 @@ Derleyicisinin bu sürümü, yeni uyarılar eklendi:
 | Visual C++ 2017 sürüm 15.9 | 19.16.26926.0 |
 | Visual C++ 2019 RTM | 19.20.27004.0 |
 
-Yalnızca birincil numara, büyük ve küçük sayılar veya ana, alt, belirtin ve yapı numaralarına __/Wv__ seçeneği. Derleyici, belirtilen sayı ile başlayan sürümleri eşleşen tüm uyarıları raporlar ve belirtilen sayıdan büyük sürümlerine yönelik tüm uyarıları bastırır. Örneğin, __/Wv:17__ içinde veya herhangi bir Visual Studio 2012 sürümünü tüm uyarıları raporları ve Visual Studio 2013 (sürüm 18) veya üzeri tüm derleyici tarafından kullanıma sunulan tüm uyarıları bastırır. Bastırmak için Visual Studio 2015'te xx.yy.zzzz güncelleştirme 2 ve daha sonra kullanabileceğiniz __/Wv:19.00.23506__. Kullanım __/Wv:19.11__ tüm uyarıları herhangi bir sürümü Visual Studio'yu daha önce Visual Studio 2017 sürüm 15.5 sürümünde, ancak Visual Studio 2017 sürüm 15.5 ve üzeri uyarıları bastırır bildirmek için.
+Yalnızca birincil numara, büyük ve küçük sayılar veya ana, alt, belirtin ve yapı numaralarına `/Wv` seçeneği. Derleyici, belirtilen sayı ile başlayan sürümleri eşleşen tüm uyarıları raporlar ve belirtilen sayıdan büyük sürümlerine yönelik tüm uyarıları bastırır. Örneğin, `/Wv:17` raporları, veya önce herhangi bir Visual Studio 2012 sürümü xx.yy.zzzz ve Visual Studio 2013 (sürüm 18) veya üzeri tüm derleyici tarafından uyarıları bastırır. Bastırmak için Visual Studio 2015'te xx.yy.zzzz güncelleştirme 2 ve daha sonra kullanabileceğiniz `/Wv:19.00.23506`. Kullanım `/Wv:19.11` herhangi bir Visual Studio 2017 sürüm 15.5 önce Visual Studio sürümünde xx.yy.zzzz bildirir, ancak Visual Studio 2017 sürüm 15.5 ve üzeri uyarıları bastırmak için.
 
-Aşağıdaki bölümlerde her kullanarak bastırma Visual C++ sürümü xx.yy.zzzz listesinde __/Wv__ derleyici seçeneği. __/Wv__ seçeneği, belirtilen derleyici sürümleri geçerler listelenmez, uyarıları bastır olamaz.
+Aşağıdaki bölümlerde görselin her sürüm tarafından xx.yy.zzzz listesinde C++ , kullanarak bastırma `/Wv` derleyici seçeneği. `/Wv` Seçeneği, belirtilen derleyici sürümleri geçerler listelenmemiş, uyarıları bastır olamaz.
 
 ::: moniker range=">= vs-2019"
 
-## <a name="warnings-introduced-in-visual-c-2019-rc-compiler-version-1920270040"></a>Visual C++ 2019 RC (Derleyici sürümü 19.20.27004.0) uyarıları
+## <a name="warnings-introduced-in-visual-c-2019-rtw-compiler-version-1920270040"></a>Görselde xx.yy.zzzz C++ 2019 RTW (Derleyici sürümü 19.20.27004.0)
 
-Derleyici seçeneğini kullanarak bu uyarıları ve üzeri sürümlerde tüm uyarıları bastırılan __/Wv:19.15__.
+Derleyici seçeneğini kullanarak bu uyarıları ve üzeri sürümlerde tüm uyarıları bastırılan `/Wv:19.15`.
 
 |||
 |-|-|
-C4848 | Destek için standart öznitelik ' hiçbir\_benzersiz\_'C ++ 17 ve daha önce adresidir satıcı uzantısı
+| C4848 | `support for standard attribute 'no_unique_address' in C++17 and earlier is a vendor extension` |
 
 ::: moniker-end
 ::: moniker range=">= vs-2017"
@@ -59,620 +59,622 @@ C4848 | Destek için standart öznitelik ' hiçbir\_benzersiz\_'C ++ 17 ve daha 
 
 ## <a name="warnings-introduced-in-visual-c-2017-version-158-compiler-version-1915267260"></a>Visual C++ 2017 sürüm 15,8 (Derleyici sürümü 19.15.26726.0) uyarıları
 
-Derleyici seçeneğini kullanarak bu uyarıları ve üzeri sürümlerde tüm uyarıları bastırılan __/Wv:19.14__.
+Derleyici seçeneğini kullanarak bu uyarıları ve üzeri sürümlerde tüm uyarıları bastırılan `/Wv:19.14`.
 
 |||
 |-|-|
-C4643 | İleri bildirme '*tanımlayıcı*' ad alanında std C++ standardına göre izin verilmez.
-C4644 | offsetof makrosu tabanlı düzeni sabit ifadelerde kullanımını standart değildir; Bunun yerine C++ Standart Kitaplığı'nda tanımlanan offsetof kullanın
-C4845 | \_\_declspec (Hayır\_init\_all)' yoksayılır ' / d1initall\[0\|1\|2\|3]' komut satırında belirtilmemiş
-C4846 | '*değer*' için geçerli bir bağımsız değişken değil ' / d1initall': komut satırı bayrağı yoksayıldı
-C4847 | '\_\_declspec (Hayır\_init\_all)' yalnızca bir işlev, bir sınıf türü veya bir yerel değişkene uygulanabilir: yoksayıldı
-C4866 | Derleyici, soldan sağa Değerlendirme sırasını çağrısı değil zorlayabileceği '*işlevi*'
-C5046 | '*işlevi*': İlgili türü iç bağlantı ile tanımlanmamış sembol
-C5047 | Standart olmayan, kullanın \_ \_varsa\_modülleriyle var desteklenmiyor
-C5048 | Makro kullanımını '*makroadı*' belirleyici bir sonuca neden olabilir
-C5049 | '*dize*': Tam yol ekleme makine bağımlı bir sonuca neden olabilir
-C5050 | Modülün içeri aktarılması sırasında olası uyumlu ortam '*module_name*': *sorunu*
-C5100 | \_\_VA\_ARGS\_ \_ variadic makrolar kullanım için ayrılmıştır
-C5101 | Tanımsız davranış önişlemci yönergesi işleve benzer bir makro bağımsız değişken listesinde kullanılır
-C5102 | Geçersiz komut satırı Makro tanımında yoksayılıyor '*değer*'
-C5103 | yapıştırma '*token1*'ve'*token2*' geçerli bir ön işleme belirteci sonuç vermez
-C5104 | bulundu '*Dize1*#*dize2*'Makro değişikliği listesinde kastettiniz'*Dize1*"" #*dize2*'?
-C5105 | 'defined' üretme makro genişletme davranışı tanımlı değil
-C5106 | ile farklı parametre adları tanımlandı makrosu
-C5107 | sonlandırma eksik '*char*' karakteri
+| C4643 | `Forward declaring 'identifier' in namespace std is not permitted by the C++ Standard.` |
+| C4644 | `usage of the macro-based offsetof pattern in constant expressions is non-standard; use offsetof defined in the C++ standard library instead` |
+| C4845 | `'__declspec(no_init_all)' is ignored if '/d1initall[0|1|2|3]' was not specified on the command line` |
+| C4846 | `'value' is not a valid argument for '/d1initall': command-line flag ignored` |
+| C4847 | `'__declspec(no_init_all)' can only be applied to a function, a class type, or a local variable: ignored` |
+| C4866 | `compiler may not enforce left-to-right evaluation order for call to 'function'` |
+| C5046 | `'function': Symbol involving type with internal linkage not defined` |
+| C5047 | `use of nonstandard __if_exists with modules is not supported` |
+| C5048 | `Use of macro 'macroname' may result in non-deterministic output` |
+| C5049 | `'string': Embedding a full path may result in machine-dependent output` |
+| C5050 | `Possible incompatible environment while importing module 'module_name': issue` |
+| C5100 | `__VA_ARGS__ is reserved for use in variadic macros` |
+| C5101 | `use of preprocessor directive in function-like macro argument list is undefined behavior` |
+| C5102 | `ignoring invalid command-line macro definition 'value'` |
+| C5103 | `pasting 'token1' and 'token2' does not result in a valid preprocessing token` |
+| C5104 | `found 'string1#string2' in macro replacement list, did you mean 'string1""#string2'?` |
+| C5105 | `macro expansion producing 'defined' has undefined behavior` |
+| C5106 | `macro redefined with different parameter names` |
+| C5107 | `missing terminating 'char' character` |
 
 ## <a name="warnings-introduced-in-visual-c-2017-version-157-compiler-version-1914264280"></a>Visual C++ 2017 sürüm 15.7 (Derleyici sürümü 19.14.26428.0) uyarıları
 
-Derleyici seçeneğini kullanarak bu uyarıları ve üzeri sürümlerde tüm uyarıları bastırılan __/Wv:19.13__.
+Derleyici seçeneğini kullanarak bu uyarıları ve üzeri sürümlerde tüm uyarıları bastırılan `/Wv:19.13`.
 
 |||
 |-|-|
-C4642|'*sorunu*': genel parametresi için kısıtlamalar içeri aktarılamadı '*parametre*'
-C5045|Derleyici/qspectre anahtarı Bellek Yükü belirtilen için Spectre risk azaltma ekler
+| C4642 | `'issue': could not import the constraints for generic parameter 'parameter'` |
+| C5045 | `Compiler will insert Spectre mitigation for memory load if /Qspectre switch specified` |
 
 ## <a name="warnings-introduced-in-visual-c-2017-version-156-compiler-version-1913261280"></a>Visual C++ 2017 sürüm 15.6 (Derleyici sürümü 19.13.26128.0) uyarıları
 
-Derleyici seçeneğini kullanarak bu uyarıları ve üzeri sürümlerde tüm uyarıları bastırılan __/Wv:19.12__.
+Derleyici seçeneğini kullanarak bu uyarıları ve üzeri sürümlerde tüm uyarıları bastırılan `/Wv:19.12`.
 
 |||
 |-|-|
-C5044|Komut satırı seçeneği bir bağımsız değişken *seçeneği* yolunu işaret '*yolu*' mevcut olmayan
+| C5044 | `An argument to command-line option option points to a path 'path' that does not exist` |
 
 ## <a name="warnings-introduced-in-visual-c-2017-version-155-compiler-version-1912258300"></a>Visual C++ 2017 sürüm 15.5 (Derleyici sürümü 19.12.25830.0) uyarıları
 
-Derleyici seçeneğini kullanarak bu uyarıları ve üzeri sürümlerde tüm uyarıları bastırılan __/Wv:19.11__.
+Derleyici seçeneğini kullanarak bu uyarıları ve üzeri sürümlerde tüm uyarıları bastırılan `/Wv:19.11`.
 
 |||
 |-|-|
-C4843|'*type1*': Dizi veya işlev türüne yapılan başvurunun özel durum işleyicisi erişilemiyor, kullanın '*type2*' yerine
-C4844|' export module *module_name*;' artık bir modül arabirimi bildirmek için tercih edilen sözdizimi şöyledir
-C5039|'*işlevi*': - EHc altında extern C işlevine işaretçi veya başvuru için büyük olasılıkla işlev özel durum atma geçirildi. Bu işlev bir özel durum oluşturursa tanımsız davranış ortaya çıkabilir.
-C5040|dinamik özel durum belirtimleri yalnızca C ++ 14 ve daha önceki sürümlerde geçerlidir; noexcept(FALSE) değerlendirme
-C5041|'*tanımı*': constexpr statik veri üyesi için satır dışı tanımı gerekli değildir ve C ++ 17'de kullanım dışıdır
-C5042|'*bildirimi*': blok kapsamındaki işlev bildirimleri, standart C++'da belirtilen 'inline' olamaz; 'inline' tanımlayıcısını kaldırın
-C5043|'*belirtimi*': özel durum belirtimi, önceki bildirimle eşleşmiyor
+| C4843 | `'type1': An exception handler of reference to array or function type is unreachable, use 'type2' instead` |
+| C4844 | `'export module module_name;' is now the preferred syntax for declaring a module interface` |
+| C5039 | `'function': pointer or reference to potentially throwing function passed to extern C function under -EHc. Undefined behavior may occur if this function throws an exception.` |
+| C5040 | `dynamic exception specifications are valid only in C++14 and earlier; treating as noexcept(false)` |
+| C5041 | `'definition': out-of-line definition for constexpr static data member is not needed and is deprecated in C++17` |
+| C5042 | `'declaration': function declarations at block scope cannot be specified 'inline' in standard C++; remove 'inline' specifier` |
+| C5043 | `'specification': exception specification does not match previous declaration` |
 
 ## <a name="warnings-introduced-in-visual-c-2017-version-153-compiler-version-1911255060"></a>Visual C++ 2017 sürüm 15.3 (Derleyici sürümü 19.11.25506.0) uyarıları
 
-Derleyici seçeneğini kullanarak bu uyarıları ve üzeri sürümlerde tüm uyarıları bastırılan __/Wv:19.10__.
+Derleyici seçeneğini kullanarak bu uyarıları ve üzeri sürümlerde tüm uyarıları bastırılan `/Wv:19.10`.
 
 |||
 |-|-|
-C4597|Tanımsız davranış: *açıklaması*
-C4604|'*türü*': yerel ve yönetilen sınırda değere göre bağımsız değişken geçirme, geçerli bir kopya Oluşturucusu gerektirir. Aksi takdirde çalışma zamanı davranışı tanımsızdır
-C4749|koşullu olarak desteklenir: *açıklaması*
-C4768|bağlantı belirtiminden önceki __declspec öznitelikleri yoksayılır
-C4834|'nodiscard' özniteliği ile işlevin dönüş değeri atılıyor
-C4841|Standart olmayan uzantı kullanıldı: *uzantısı*
-C4842|birden fazla devralma kullanılarak bir türe uygulanan'offsetof ' sonucunun derleyici yayınları arasında tutarlı olması garanti edilmez
-C4869|'nodiscard' yalnızca sınıflar, numaralandırmalar ve işlevleri ile void olmayan dönüş türü için uygulanabilir
-C5033|'*depolama sınıfı*' artık desteklenen bir depolama sınıfı değil
-C5034|İç Kullan '*iç*' neden işlevi *işlevi* Konuk kodu olarak derlenmesine neden
-C5035|özelliğini '*özellik*' neden işlevi *işlevi* Konuk kodu olarak derlenmesine neden
-C5036|VarArgs işlev işaretçisi dönüştürme x86arm64 ile derleme yapılırken '*type1*'to'*type2*'
-C5037|'*üye işlevi*': bir sınıf şablonunun üyesi bir satır dışı tanımı varsayılan bağımsız değişkenlere sahip olamaz
-C5038|veri üyesi '*Üye1*'veri üyesi sonra başlatılacak'*üye2*'
+| C4597 | `undefined behavior: description` |
+| C4604 | `'type': passing argument by value across native and managed boundary requires valid copy constructor. Otherwise the runtime behavior is undefined` |
+| C4749 | `conditionally supported: description` |
+| C4768 | `__declspec attributes before linkage specification are ignored` |
+| C4834 | `discarding return value of function with 'nodiscard' attribute` |
+| C4841 | `non-standard extension used: extension` |
+| C4842 | `the result of 'offsetof' applied to a type using multiple inheritance is not guaranteed to be consistent between compiler releases` |
+| C4869 | `'nodiscard' may only be applied to classes, enumerations, and functions with non-void return type` |
+| C5033 | `'*storage-class*' is no longer a supported storage class` |
+| C5034 | `use of intrinsic 'intrinsic' causes function function to be compiled as guest code` |
+| C5035 | `use of feature 'feature' causes function function to be compiled as guest code` |
+| C5036 | `varargs function pointer conversion when compiling with /hybrid:x86arm64 'type1' to 'type2'` |
+| C5037 | `'*member-function*': an out-of-line definition of a member of a class template cannot have default arguments` |
+| C5038 | `data member 'member1' will be initialized after data member 'member2'` |
 
 ## <a name="warnings-introduced-in-visual-c-2017-rtm-compiler-version-1910250170"></a>Visual C++ 2017 RTM'de (Derleyici sürümü 19.10.25017.0) uyarıları
 
-Derleyici seçeneğini kullanarak bu uyarıları ve üzeri sürümlerde tüm uyarıları bastırılan __/Wv:19.00__.
+Derleyici seçeneğini kullanarak bu uyarıları ve üzeri sürümlerde tüm uyarıları bastırılan `/Wv:19.00`.
 
 |||
 |-|-|
-C4468|'fallthrough': özniteliği bir case etiketi veya varsayılan etiket gelmelidir
-C4698|'*özellik*' yalnızca değerlendirme amaçlıdır ve değişikliğe tabidir veya gelecekte kaldırılması güncelleştirir.
-C4839|sınıfının standart dışı kullanımı*sınıfı*' bir bağımsız değişken içeren işlev bağımsız değişkeni olarak
-C4840|sınıfının taşınabilir olmayan kullanımı*sınıfı*' bir bağımsız değişken içeren işlev bağımsız değişkeni olarak
+| C4468 | `'fallthrough': attribute must be followed by a case label or a default label` |
+| C4698 | `'feature' is for evaluation purposes only and is subject to change or removal in future updates.` |
+| C4839 | `non-standard use of class 'class' as an argument to a variadic function` |
+| C4840 | `non-portable use of class 'class' as an argument to a variadic function` |
 
 ::: moniker-end
 
 ## <a name="warnings-introduced-in-visual-c-2015-update-3-compiler-version-1900242151"></a>Visual C++ 2015 güncelleştirme 3'te (Derleyici sürümü 19.00.24215.1) uyarıları
 
-Derleyici seçeneğini kullanarak bu uyarıları ve üzeri sürümlerde tüm uyarıları bastırılan __/Wv:19.00.23918__.
+Derleyici seçeneğini kullanarak bu uyarıları ve üzeri sürümlerde tüm uyarıları bastırılan `/Wv:19.00.23918`.
 
 |||
 |-|-|
-C4467|ATL öznitelikleri kullanım dışı bırakılmıştır
-C4596|'*adı*': üye bildiriminde geçersiz nitelenmiş ad
-C4598|' #include \< *üstbilgi*\>': üst bilgisi numarası *numarası* içinde *kaynak* eşleşmiyor *kaynak* hiç konumu
-C4599|'*bağımsız değişken*': *kaynak* bağımsız değişken numarası *numarası* eşleşmiyor *kaynak*
+| C4467 | `usage of ATL attributes is deprecated` |
+| C4596 | `'name': illegal qualified name in member declaration` |
+| C4598 | `'#include <header>': header number number in the source does not match source at that position` |
+| C4599 | `'argument': source argument number number does not match source` |
 
 ## <a name="warnings-introduced-in-visual-c-2015-update-2-compiler-version-1900239180"></a>Visual C++ 2015 güncelleştirme 2'de (Derleyici sürümü 19.00.23918.0) uyarıları
 
-Derleyici seçeneğini kullanarak bu uyarıları ve üzeri sürümlerde tüm uyarıları bastırılan __/Wv:19.00.23506__.
+Derleyici seçeneğini kullanarak bu uyarıları ve üzeri sürümlerde tüm uyarıları bastırılan `/Wv:19.00.23506`.
 
 |||
 |-|-|
-C4466|Eş yordam yığın eleme gerçekleştirilemedi
-C4595|'*sınıfı*': üye olmayan operator new veya delete işlevleri bildirilemez satır içi
-C4828|Dosyayı 0 uzaklıkta başlayan belirli bir karakter içeren x*değer* geçerli kaynak karakter kümesinde geçersiz olan (kod sayfası *numarası*).
-C4868|Küme ayracıyla belirtilen Başlatıcı listesinde soldan sağa Değerlendirme sırasını derleyici zorla
+| C4466 | `Could not perform coroutine heap elision` |
+| C4595 | `'class': non-member operator new or delete functions may not be declared inline` |
+| C4828 | `The file contains a character starting at offset 0xvalue that is illegal in the current source character set (codepage number).` |
+| C4868 | `compiler may not enforce left-to-right evaluation order in braced initializer list` |
 
 ## <a name="warnings-introduced-in-visual-c-2015-update-1-compiler-version-1900235060"></a>Visual C++ 2015 güncelleştirme 1 ' (Derleyici sürümü 19.00.23506.0) uyarıları
 
-Derleyici seçeneğini kullanarak bu uyarıları ve üzeri sürümlerde tüm uyarıları bastırılan __/Wv:19.00.23026__.
+Derleyici seçeneğini kullanarak bu uyarıları ve üzeri sürümlerde tüm uyarıları bastırılan `/Wv:19.00.23026`.
 
 |||
 |-|-|
-C4426|iyileştirme bayrakları üst bilgi eklendikten sonra değişti, nedeni #pragma optimize() olabilir
-C4654|Önce yerleştirilmiş kod içeren önceden derlenmiş üst bilgi satırı yok sayılacak. Kodu önceden derlenmiş üst bilgiye ekleyin.
-C5031|#pragma warning(pop): olası uyuşmazlık, farklı bir dosyada atılan uyarı durumu geri çağrılıyor
-C5032|hiçbir karşılık gelen #pragma warning(pop) olmayan #pragma algılandı
+| C4426 | `optimization flags changed after including header, may be due to #pragma optimize()` |
+| C4654 | `Code placed before include of precompiled header line will be ignored. Add code to precompiled header.` |
+| C5031 | `#pragma warning(pop): likely mismatch, popping warning state pushed in different file` |
+| C5032 | `detected #pragma warning(push) with no corresponding #pragma warning(pop)` |
 
 ## <a name="warnings-introduced-in-visual-c-2015-rtm-compiler-version-1900230260"></a>Visual C++ 2015 RTM'de (Derleyici sürümü 19.00.23026.0) uyarıları
 
-Derleyici seçeneğini kullanarak bu uyarıları ve üzeri sürümlerde tüm uyarıları bastırılan __/Wv:18__.
+Derleyici seçeneğini kullanarak bu uyarıları ve üzeri sürümlerde tüm uyarıları bastırılan `/Wv:18`.
 
 |||
 |-|-|
-C4427|'*hata*': sabit bölümde, tanımsız davranış taşma
-C4438|'*türü*': güvenli olarak çağrılamaz / await: clrcompat modunda. Varsa '*türü*' CLR çağrılar, CLR kafa Bozulması neden olabilir
-C4455|' operator *adı*': bir alt çizgiyle başlamayan sabit değerli ek tanımlayıcıları ayrıldı
-C4456|bildirimi '*adı*' önceki yerel bildirimi gizliyor
-C4457|bildirimi '*adı*' işlev parametresini gizliyor
-C4458|bildirimi '*adı*' sınıf üyesini gizliyor
-C4459|bildirimi '*adı*' genel bildirimi gizliyor
-C4462|'*türü*': türün GUID'i belirlenemiyor. Program çalışma zamanında başarısız olabilir.
-C4463|taşma; atama *değer* değerlerinden yalnızca içerebileceği bit alanına *değer* için *değeri*
-C4473|'*işlevi*': biçim dizesi için yeterli bağımsız değişken geçirildi
-C4474|'*işlevi*': biçim dizesi için çok fazla bağımsız değişken geçirildi
-C4475|'*işlevi*': uzunluk değiştiricisi '*değiştiricisi*'tür alanı karakteri ile kullanılamaz'*karakter*' biçim tanımlayıcıda
-C4476|'*işlevi*': bilinmeyen tür alanı karakteri '*karakter*' biçim tanımlayıcıda
-C4477|'*işlevi*': biçim dizesi '*dize*'türünde bir bağımsız değişken gerektirir'*türü*', ancak değişen sayıda bağımsız değişkeni *numarası* türüne sahip '*türü*'
-C4478|'*işlevi*': konumsal ve konumsal olmayan yer tutucular aynı Biçim dizesinde karıştırılamaz
-C4494|'*türü*': İşlev türü döndürdüğünden __declspec(allocator) yoksayarak bir işaretçi veya başvuru değil
-C4495|Standart olmayan uzantı '__super' kullanıldı: açık taban sınıfı adıyla değiştirin
-C4496|kullanılan standart olmayan uzantı 'for each' kullanıldı: ranged-for deyimiyle değiştirin
-C4497|Standart olmayan uzantı 'sealed' kullanıldı: 'final' ile değiştirin
-C4498|Standart olmayan uzantı kullanıldı: '*uzantısı*'
-C4499|'*özelleştirmesi*': bir açık özelleştirmenin (yoksayılan) depolama sınıfı olamaz
-C4576|bir başlatıcı listesi tarafından izlenen parantez içine alınmış türü bir standart olmayan açık tür dönüştürme söz dizimidir
-C4577|'noexcept' hiçbir özel durum işleme modu belirtilmeden kullanılan; özel durum sonlandırma garanti edilmez. / Ehsc belirtin
-C4578|'abs': dönüştürme '*türü*'to'*türü*', olası veri kaybı (çağrı yapmak mı istediniz '*adı*' veya #include \<cmath >?)
-C4582|'*türü*': Oluşturucu örtük olarak çağırılmamış
-C4583|'*türü*': yıkıcı örtük olarak çağırılmamış
-C4587|'*türü*': davranış değişikliği: Oluşturucu artık örtük olarak çağırılamaz
-C4588|'*türü*': davranış değişikliği: yıkıcı artık örtük olarak çağırılamaz
-C4589|Soyut sınıfı oluşturucusu*türü*'yoksayar sanal temel sınıf için Başlatıcı'*türü*'
-C4591|'constexpr' çağrı derinliği sınırı *numarası* aşıldı (/ Depth\<NUMBER >)
-C4592|'*türü*': sembol dinamik olarak olacaktır (uygulama sınırlandırma) başlatıldı
-C4593|'*türü*': 'constexpr' çağrı değerlendirmesi adım sınırı *değer* aştı; Steps kullanın\<numarası > için belirlenen sınırı yükseltmek için
-C4647|davranış değişikliği: __is_pod (*türü*) önceki sürümlerde farklı değere sahip
-C4648|'carries_dependency' standart özniteliği yoksayılıyor
-C4649|öznitelikler bu bağlamda göz ardı edilir
-C4753|İşaretçinin sınırları bulunamıyor; MPX iç işlevi yoksayıldı
-C4771|Sınırlar basit bir işaretçi kullanılarak oluşturulmalıdır; MPX iç işlevi yoksayıldı
-C4774|'*açıklama*': biçim dizesi bağımsız değişkeninde beklenen *numarası* bir dize sabit değeri değil
-C4775|Biçim dizesinde kullanılan standart olmayan uzantı '*dize*'işlevinin'*işlevi*'
-C4776|' %*karakter*'işlevinin Biçim dizesinde izin verilmez'*işlevi*'
-C4777|'*açıklama*': biçim dizesi '*dize*'türünde bir bağımsız değişken gerektirir'*türü*', ancak değişen sayıda bağımsız değişkeni *numarası* türüne sahip '*türü*'
-C4778|'*açıklama*': Sonlandırılmamış biçim dizesi '*dize*'
-C4838|dönüştürme işlemi '*türü*'to'*türü*' bir daraltma dönüşümü gerektirir
-C5022|'*türü*': belirtilen birden fazla taşıma oluşturucuları
-C5023|'*türü*': belirtilen birden fazla taşıma atama işleçleri
-C5024|'*bildirimi*': taşıma Oluşturucusu örtük bir şekilde silindi olarak tanımlandı
-C5025|'*bildirimi*': taşıma atama işleci örtük bir şekilde silindi olarak tanımlandı
-C5026|'*türü*': taşıma Oluşturucusu örtük bir şekilde silindi olarak tanımlandı
-C5027|'*türü*': taşıma atama işleci örtük bir şekilde silindi olarak tanımlandı
-C5028|'*adı*': Önceki bildirimde belirtilen hizalama (*numarası*) belirtilmemiş
-C5029|Standart olmayan uzantı kullanıldı: C++ hizalama öznitelikleri değişkenlere, veri üyelerine ve etiket türlerine uygulanır
-C5030|öznitelik '*özniteliği*' tanınmıyor
+| C4427 | `'error': overflow in constant division, undefined behavior` |
+| C4438 | `'type': cannot be called safely in /await:clrcompat mode. If 'type' calls into the CLR it may result in CLR head corruption` |
+| C4455 | `'operator name': literal suffix identifiers that do not start with an underscore are reserved` |
+| C4456 | `declaration of 'name' hides previous local declaration` |
+| C4457 | `declaration of 'name' hides function parameter` |
+| C4458 | `declaration of 'name' hides class member` |
+| C4459 | `declaration of 'name' hides global declaration` |
+| C4462 | `'type' : cannot determine the GUID of the type. Program may fail at runtime.` |
+| C4463 | `overflow; assigning value to bit-field that can only hold values from value to value` |
+| C4473 | `'function' : not enough arguments passed for format string` |
+| C4474 | `'function' : too many arguments passed for format string` |
+| C4475 | `'function' : length modifier 'modifier' cannot be used with type field character 'character' in format specifier` |
+| C4476 | `'function' : unknown type field character 'character' in format specifier` |
+| C4477 | `'function' : format string 'string' requires an argument of type 'type', but variadic argument number has type 'type'` |
+| C4478 | `'function' : positional and non-positional placeholders cannot be mixed in the same format string` |
+| C4494 | `'type' : Ignoring __declspec(allocator) because the function return type is not a pointer or reference` |
+| C4495 | `nonstandard extension '__super' used: replace with explicit base class name` |
+| C4496 | `nonstandard extension 'for each' used: replace with ranged-for statement` |
+| C4497 | `nonstandard extension 'sealed' used: replace with 'final'` |
+| C4498 | `nonstandard extension used: 'extension'` |
+| C4499 | `'specialization': an explicit specialization cannot have a storage class (ignored)` |
+| C4576 | `a parenthesized type followed by an initializer list is a non-standard explicit type conversion syntax` |
+| C4577 | `'noexcept' used with no exception handling mode specified; termination on exception is not guaranteed. Specify /EHsc` |
+| C4578 | `'abs': conversion from 'type' to 'type', possible loss of data (Did you mean to call 'name' or to #include <cmath>?)` |
+| C4582 | `'type': constructor is not implicitly called` |
+| C4583 | `'type': destructor is not implicitly called` |
+| C4587 | `'type': behavior change: constructor is no longer implicitly called` |
+| C4588 | `'type': behavior change: destructor is no longer implicitly called` |
+| C4589 | `Constructor of abstract class 'type' ignores initializer for virtual base class 'type'` |
+| C4591 | `'constexpr' call-depth limit of number exceeded (/constexpr:depth<NUMBER>)` |
+| C4592 | `'type': symbol will be dynamically initialized (implementation limitation)` |
+| C4593 | `'type': 'constexpr' call evaluation step limit of value exceeded; use /constexpr:steps<NUMBER> to increase the limit` |
+| C4647 | `behavior change: __is_pod(type) has different value in previous versions` |
+| C4648 | `standard attribute 'carries_dependency' is ignored` |
+| C4649 | `attributes are ignored in this context` |
+| C4753 | `Cannot find bounds for pointer; MPX intrinsic function ignored` |
+| C4771 | `Bounds must be created using a simple pointer; MPX intrinsic function ignored` |
+| C4774 | `'description' : format string expected in argument number is not a string literal` |
+| C4775 | `nonstandard extension used in format string 'string' of function 'function'` |
+| C4776 | `'%character' is not allowed in the format string of function 'function'` |
+| C4777 | `'description' : format string 'string' requires an argument of type 'type', but variadic argument number has type 'type'` |
+| C4778 | `'description' : unterminated format string 'string'` |
+| C4838 | `conversion from 'type' to 'type' requires a narrowing conversion` |
+| C5022 | `'type': multiple move constructors specified` |
+| C5023 | `'type': multiple move assignment operators specified` |
+| C5024 | `'declaration': move constructor was implicitly defined as deleted` |
+| C5025 | `'declaration': move assignment operator was implicitly defined as deleted` |
+| C5026 | `'type': move constructor was implicitly defined as deleted` |
+| C5027 | `'type': move assignment operator was implicitly defined as deleted` |
+| C5028 | `'name': Alignment specified in prior declaration (number) not specified in definition` |
+| C5029 | `nonstandard extension used: alignment attributes in C++ apply to variables, data members and tag types only` |
+| C5030 | `attribute 'attribute' is not recognized` |
 
 ## <a name="warnings-introduced-in-visual-c-2013-compiler-version-1800210051"></a>Visual C++ 2013 (Derleyici sürümü 18.00.21005.1) uyarıları
 
-Derleyici seçeneğini kullanarak bu uyarıları ve üzeri sürümlerde tüm uyarıları bastırılan __/Wv:17__.
+Derleyici seçeneğini kullanarak bu uyarıları ve üzeri sürümlerde tüm uyarıları bastırılan `/Wv:17`.
 
 |||
 |-|-|
-C4301|'*türü*': geçersiz kılan sanal işlev'ı yalnızca farklıdır '*bildirimi*' const/volatile niteleyicisi tarafından
-C4316|'*türü*': yığın üzerinde ayrılan nesne değil hizalanmayacak *numarası*
-C4380|'*türü*': Varsayılan Oluşturucu kullanım dışı olamaz
-C4388|'*belirteci*': imzalı/imzasız uyuşmazlığı
-C4423|'std::bad_alloc': sınıf tarafından yakalandı ('*türü*') satırındaki *numarası*
-C4424|için catch '*türü*'öncesinde'*türü*' satırındaki *numarası*; beklenmeyen davranış 'std::bad_alloc' oluşursa neden olabilir
-C4425|SAL ek açıklaması uygulanamaz '...' için
-C4464|göreli ekleme yolu içeren '..'
-C4575|'__vectorcall' ile uyumsuz ' / clr' seçeneği: '__stdcall' için dönüştürme
-C4609|'*türü*'varsayılan arabiriminden türetilen'*türü*'type' on*türü*'. İçin varsayılan farklı bir arayüz kullanın '*türü*', veya taban/türetilmiş ilişkisini kesin.
-C4754|Konumundaki karşılaştırma içindeki aritmetik işlemler için dönüştürme kuralları *açıklama*(*numarası*), bir dalın yürütülemeyeceği anlamına gelir. Cast '*türü*'to'*türü*' (veya benzer bir tür *numarası* bayt).
-C4755|Konumundaki karşılaştırma içindeki aritmetik işlemler için dönüştürme kuralları *açıklama*(*numarası*), bir dalın satır içine alınmış bir işlevde yürütülemeyeceği anlamına gelir. Cast '*türü*'to'*türü*' (veya benzer bir tür *numarası* bayt).
-C4767|Bölüm adı '*adı*' 8 karakterden daha uzun ve bağlayıcı tarafından kesilecek
-C4770|enum'kısmen doğrulanmış '*adı*' dizin olarak kullanılıyor
-C4827|0 paramterleri bir genel 'ToString' yöntemi sanal olarak işaretlenmesi gerekir ve geçersiz kılma
-C4882|non-const çağrı işleçleri olan functorları concurrency::parallel_for_each içine geçirmek kullanım dışıdır
-C4973|'*türü*': kullanım dışı olarak işaretlendi
-C4974|'*türü*': kullanım dışı olarak işaretlendi
-C4981|Warbird: işlev '*bildirimi*' __forceinline olarak değil, özel durum anlamsalları içerdiği için satır içine alınmış işaretlenmiş.
-C4990|Warbird: *iletisi*
-C4991|Warbird: işlev '*bildirimi*' alınanın koruma düzeyi üst büyük olduğundan __forceinline olarak satır içine alınmış işaretlenen
-C4992|Warbird: işlev '*bildirimi*' Korunamayan satır içi bütünleştirilmiş içerdiğinden __forceinline olarak satır içine alınmış işaretlenen
+| C4301 | `'type': overriding virtual function only differs from 'declaration' by const/volatile qualifier` |
+| C4316 | `'type': object allocated on the heap may not be aligned number` |
+| C4380 | `'type': A default constructor cannot be deprecated` |
+| C4388 | `'token': signed/unsigned mismatch` |
+| C4423 | `'std::bad_alloc': will be caught by class ('type') on line number` |
+| C4424 | `catch for 'type' preceded by 'type' on line number; unpredictable behavior may result if 'std::bad_alloc' is thrown` |
+| C4425 | `A SAL annotation cannot be applied to '...'` |
+| C4464 | `relative include path contains '..'` |
+| C4575 | `'__vectorcall' incompatible with the '/clr' option: converting to '__stdcall'` |
+| C4609 | `'type' derives from default interface 'type' on type 'type'. Use a different default interface for 'type', or break the base/derived relationship.` |
+| C4754 | `Conversion rules for arithmetic operations in the comparison at description(number) mean that one branch cannot be executed. Cast 'type' to 'type' (or similar type of number bytes).` |
+| C4755 | `Conversion rules for arithmetic operations in the comparison at description(number) mean that one branch cannot be executed in an inlined function. Cast 'type' to 'type' (or similar type of number bytes).` |
+| C4767 | `section name 'name' is longer than 8 characters and will be truncated by the linker` |
+| C4770 | `partially validated enum 'name' used as index` |
+| C4827 | `A public 'ToString' method with 0 parameters should be marked as virtual and override` |
+| C4882 | `passing functors with non-const call operators to concurrency::parallel_for_each is deprecated` |
+| C4973 | `'type': marked as deprecated` |
+| C4974 | `'type': marked as deprecated` |
+| C4981 | `Warbird: function 'declaration' marked as __forceinline not inlined because it contains exception semantics` |
+| C4990 | `Warbird: message` |
+| C4991 | `Warbird: function 'declaration' marked as __forceinline not inlined because protection level of inlinee is greater than the parent` |
+| C4992 | `Warbird: function 'declaration' marked as __forceinline not inlined because it contains inline assembly which cannot be protected` |
 
 ## <a name="warnings-introduced-in-visual-c-2012-compiler-version-1700511061"></a>Visual C++ 2012 (Derleyici sürümü 17.00.51106.1) uyarıları
 
-Derleyici seçeneğini kullanarak bu uyarıları ve üzeri sürümlerde tüm uyarıları bastırılan __/Wv:16__.
+Derleyici seçeneğini kullanarak bu uyarıları ve üzeri sürümlerde tüm uyarıları bastırılan `/Wv:16`.
 
 |||
 |-|-|
-C4330|öznitelik '*özniteliği*'için bölüm'*bölüm*' yoksayıldı
-C4415|Yinelenen __declspec (code_seg ('*adı*'))
-C4416|__declspec(code_seg(...)) boş dize içeriyor: yoksayıldı
-C4417|bir açık şablon örneği oluşturma işlevinde __declspec(code_seg(...)) bulunamaz: yoksayıldı
-C4418|bir üzerindeki __declspec(code_seg(...)) yoksayıldı
-C4419|'*adı*'özel başvuru sınıfına uygulandığında etkisizdir'*türü*'.
-C4435|'*türü*': / Vd2 altındaki Nesne düzeni sanal tabanı nedeniyle değişecek '*türü*'
-C4436|dynamic_cast'sanal tabanından '*türü*'to'*türü*' oluşturucu veya yıkıcı içinde oluşturulmuş bir nesne ile başarısız olabilir
-C4437|dynamic_cast'sanal tabanından '*türü*'to'*türü*' bazı bağlamlarda başarısız olabilirdi
-C4443|Beklenen pragma parametresinin '0', '1' veya '2'
-C4446|'*türü*': üye eşlenemez '*adı*' içinde bu tür, tür adı çakışması nedeniyle. Yöntem adlandırıldı '*adı*'
-C4447|bulunan iş parçacığı modeli olmadan 'main' imzası. Kullanmayı ' int main (Platform::Array\<Platform::String ^ > ^ args)'.
-C4448|'*türü*' meta verilerinde belirtilmiş bir varsayılan arabirim yok. Gerçekleştiriliyor: '*türü*', hangi çalışma zamanında başarısız olabilir.
-C4449|'*türü*' bir tür '[WebHostHidden]' olarak işaretlenmelidir
-C4450|'*türü*'öğesinden türetildiği için '[WebHostHidden]' olarak işaretlenmelidir'*türü*'
-C4451|'*türü*': Başvuru sınıfı kullanımını*türü*' Bu bağlamda geçersiz nesne bağlamlarında hazırlama açabilir iç
-C4452|'*türü*': Ortak tür genel kapsamda olamaz. Bu, çıkış .winmd dosyasının adının bir alt ad alanında olmalıdır.
-C4453|'*türü*': '[WebHostHidden]' türü olmayan genel bir türün yayımlanmış yüzeyinde kullanılmamalıdır '[WebHostHidden]'
-C4454|'*türü*' [DefaultOverload] belirtilen zorunda kalmadan aşırı giriş parametrelerinin sayısından fazla. Çekme '*bildirimi*' olarak varsayılan aşırı yükleme
-C4471|'*adı*': kapsamsız bir numaralandırmanın İleri dönük bildiriminin bir temel türü (int varsayıldı) olmalıdır
-C4472|'*adı*' yerel bir numaralandırma: bir yönetilen/WinRT numaralandırma bildirmek için bir erişim belirticisi (private/public) Ekle
-C4492|'*türü*': taban başvuru sınıfı yöntemiyle eşleşiyor '*türü*', ancak 'override' işaretli değil
-C4493|Delete ifadenin etkisi yok edicisinde '*türü*' 'public' erişilebilirlik yok
-C4585|'*türü*': Bir WinRT 'public ref class' korumalı olmalı veya varolan bir korumasız sınıftan türetilen
-C4586|'*türü*': Genel bir türü 'Windows' adlı bir üst düzey ad alanında bildirilemez
-C4695|#pragma execution_character_set: '*bağımsız değişken*' desteklenen bir bağımsız değişken değil: şu anda yalnızca 'UTF-8' destekleniyor
-C4703|başlatılmayabilecek yerel işaretleyici değişken '*adı*' kullanılır
-C4728|/ Yl-PCH başvurusu gerekli olduğu için seçeneği yoksayıldı
-C4745|Geçici Erişim '*adı*' boyutu nedeniyle kabul edilemez
-C4746|Geçici Erişim '*adı*' / volatile tabi olduğu:\<ISO\|ms > ayarı; iç işlevleri __iso_volatile_load depolama kullanmayı düşünün
-C4872|concurrency::parallel_for_each için çağrı grafı derlenirken desteklenemeyen sıfıra bölme noktasına kayan: '*açıklama*'
-C4880|gelen atama '*türü*'to'*türü*': bir işaretçi veya başvuru sabitliği hemen atama amp sınırlı işlevde tanımlanmayan davranışta sonuçlanabilir
-C4881|Oluşturucu ve/veya yok edici tile_static değişkeni için çağrılmayacak '*türü*'
-C4966|'*açıklama*' açıklama yoksayıldı, desteklenmeyen segment adı olan __code_seg ek açıklaması var
-C4988|'*türü*': değişken sınıf/işlev kapsamının dışında bildirildi
-C4989|'*açıklama*': türde çakışan tanımlar.
+| C4330 | `attribute 'attribute' for section 'section' ignored` |
+| C4415 | `duplicate __declspec(code_seg('name'))` |
+| C4416 | `__declspec(code_seg(...)) contains empty string: ignored` |
+| C4417 | `an explicit template instantiation cannot have __declspec(code_seg(...)): ignored` |
+| C4418 | `__declspec(code_seg(...)) ignored on an enum` |
+| C4419 | `'name' has no effect when applied to private ref class 'type'.` |
+| C4435 | `'type': Object layout under /vd2 will change due to virtual base 'type'` |
+| C4436 | `dynamic_cast from virtual base 'type' to 'type' in constructor or destructor could fail with partially-constructed object` |
+| C4437 | `dynamic_cast from virtual base 'type' to 'type' could fail in some contexts` |
+| C4443 | `expected pragma parameter to be '0', '1', or '2'` |
+| C4446 | `'type': cannot map member 'name' into this type, due to conflict with the type name. The method was renamed to 'name'` |
+| C4447 | `'main' signature found without threading model. Consider using 'int main(Platform::Array<Platform::String^>^ args)'.` |
+| C4448 | `'type' does not have a default interface specified in metadata. Picking: 'type', which may fail at runtime.` |
+| C4449 | `'type' an unsealed type should be marked as '[WebHostHidden]'` |
+| C4450 | `'type' should be marked as '[WebHostHidden]' because it derives from 'type'` |
+| C4451 | `'type': Usage of ref class 'type' inside this context can lead to invalid marshaling of object across contexts` |
+| C4452 | `'type': public type cannot be at global scope. It must be in a namespace that is a child of the name of the output .winmd file.` |
+| C4453 | `'type': A '[WebHostHidden]' type should not be used on the published surface of a public type that is not '[WebHostHidden]'` |
+| C4454 | `'type' is overloaded by more than the number of input parameters without having [DefaultOverload] specified. Picking 'declaration' as the default overload` |
+| C4471 | `'name': a forward declaration of an unscoped enumeration must have an underlying type (int assumed)` |
+| C4472 | `'name' is a native enum: add an access specifier (private/public) to declare a managed/WinRT enum` |
+| C4492 | `'type': matches base ref class method 'type', but is not marked 'override'` |
+| C4493 | `delete expression has no effect as the destructor of 'type' does not have 'public' accessibility` |
+| C4585 | `'type': A WinRT 'public ref class' must either be sealed or derive from an existing unsealed class` |
+| C4586 | `'type': A public type cannot be declared in a top-level namespace called 'Windows'` |
+| C4695 | `#pragma execution_character_set: 'argument' is not a supported argument: currently only 'UTF-8' is supported` |
+| C4703 | `potentially uninitialized local pointer variable 'name' used` |
+| C4728 | `/Yl- option ignored because PCH reference is required` |
+| C4745 | `volatile access of 'name' cannot be honored due to its size` |
+| C4746|'name' volatile erişimi olan tabi/volatile: < ISO | MS > ayarı; iç işlevler __iso_volatile_load depolama kullanmayı düşünün |
+| C4872 | `floating point division by zero detected when compiling the call graph for the concurrency::parallel_for_each at: 'description'` |
+| C4880 | `casting from 'type' to 'type': casting away constness from a pointer or reference may result in undefined behavior in an amp restricted function` |
+| C4881 | `the constructor and/or the destructor will not be invoked for tile_static variable 'type'` |
+| C4966 | `'description' has __code_seg annotation with unsupported segment name, annotation ignored` |
+| C4988 | `'type': variable declared outside class/function scope` |
+| C4989 | `'description': type has conflicting definitions.` |
 
 ## <a name="warnings-introduced-in-visual-c-2010-compiler-version-16004021901"></a>Visual C++ 2010 (Derleyici sürümü 16.00.40219.01) uyarıları
 
-Derleyici seçeneğini kullanarak bu uyarıları ve üzeri sürümlerde tüm uyarıları bastırılan __/Wv:15__.
+Derleyici seçeneğini kullanarak bu uyarıları ve üzeri sürümlerde tüm uyarıları bastırılan `/Wv:15`.
 
 |||
 |-|-|
-C4352|'*adı*': iç işlev zaten tanımlandı
-C4573|kullanımı '*türü*' gerektirir derleyicinin 'this' ancak yakalamak için geçerli varsayılan yakalama modu izin vermediğinden
-C4574|'*adı*'' 0'olacak şekilde tanımlanır': kullanmayı mı amaçlamıştınız ' #if *adı*'?
-C4689|'*karakter*': #pragma detect_mismatch değerinde desteklenmeyen karakter; #pragma yoksayıldı
-C4751|/ arch: AVX bayrağı satır içi ASM'de olan Intel(r) Streaming SIMD Extensions için geçerli değildir
-C4752|Intel(r) Gelişmiş vektör uzantıları bulundu; uygun/arch: AVX bayrağını kullanmayı düşünün
-C4837|Üçlü harf algılandı: '?? *karakter*'yerine'*karakter*'
-C4986|'*bildirimi*': özel durum belirtimi, önceki bildirimle eşleşmiyor
-C4987|standart olmayan uzantı kullanıldı: 'throw (...)'
+| C4352 | `'name': intrinsic function already defined` |
+| C4573 | `the usage of 'type' requires the compiler to capture 'this' but the current default capture mode does not allow it` |
+| C4574 | `'name' is defined to be '0': did you mean to use '#if name'?` |
+| C4689 | `'character': unsupported character in #pragma detect_mismatch; #pragma ignored` |
+| C4751 | `/arch AVX flag does not apply to Intel(R) Streaming SIMD Extensions that are within inline ASM` |
+| C4752 | `found Intel(R) Advanced Vector Extensions; consider using the appropriate /arch AVX flag` |
+| C4837 | `trigraph detected: '??character' replaced by 'character'` |
+| C4986 | `'declaration': exception specification does not match previous declaration` |
+| C4987 | `nonstandard extension used: 'throw (...)'` |
 
 ## <a name="warnings-introduced-in-visual-c-2008-compiler-version-15002102208"></a>Visual C++ 2008 (Derleyici sürümü 15.00.21022.08) uyarıları
 
-Derleyici seçeneğini kullanarak bu uyarıları ve üzeri sürümlerde tüm uyarıları bastırılan __/Wv:14__.
+Derleyici seçeneğini kullanarak bu uyarıları ve üzeri sürümlerde tüm uyarıları bastırılan `/Wv:14`.
 
 |||
 |-|-|
-C4396|'*türü*': işlev şablonunun bir özelleştirmesi için bir friend bildirimi başvurduğunda, satır içi belirtici kullanılamaz
-C4413|'*bildirimi*': başvuru üyesi Oluşturucu çıktıktan sonra sürmeyen bir geçici başlatılır
-C4491|'*açıklama*': geçersiz bir IDL sürümü biçimine sahip
-C4603|'*adı*': Makro tanımlı değil veya tanımı, önceden derlenmiş üstbilgi kullanımından farklıdır
-C4627|'*açıklama*': Ön derlenmiş üstbilgi kullanımı aranırken atlandı
-C4750|'*açıklama*': işlev bir döngünün satır içine _alloca() değerine sahip
-C4910|'*türü*': '__declspec(dllexport)' ve 'extern' açık bir örnek oluşturmada uyumsuz
-C4985|'*bildirimi*': öznitelikler önceki bildirimde yok.
+| C4396 | `'type': the inline specifier cannot be used when a friend declaration refers to a specialization of a function template` |
+| C4413 | `'declaration': reference member is initialized to a temporary that doesn't persist after the constructor exits` |
+| C4491 | `'description': has an illegal IDL version format` |
+| C4603 | `'name': macro is not defined or definition is different after precompiled header use` |
+| C4627 | `'description': skipped when looking for precompiled header use` |
+| C4750 | `'description': function with _alloca() inlined into a loop` |
+| C4910 | `'type': '__declspec(dllexport)' and 'extern' are incompatible on an explicit instantiation` |
+| C4985 | `'declaration': attributes not present on previous declaration.` |
 
 ## <a name="warnings-introduced-in-visual-c-2005-compiler-version-140050727762"></a>Visual C++ 2005'te (Derleyici sürümü 14.00.50727.762) uyarıları
 
-Derleyici seçeneğini kullanarak bu uyarıları ve üzeri sürümlerde tüm uyarıları bastırılan __/Wv:13__.
+Derleyici seçeneğini kullanarak bu uyarıları ve üzeri sürümlerde tüm uyarıları bastırılan `/Wv:13`.
 
 |||
 |-|-|
-C4000|Bilinmeyen uyarısı Lütfen Visual C++ Yardım menüsünde teknik destek komutunu seçin veya daha fazla bilgi için teknik destek Yardım dosyasını açın
-C4272|'*türü*': __declspec(dllimport) olarak işaretlenmiş; bir işlev alırken yerel çağrı kuralı belirtmeniz gerekir.
-C4333|'*ifade*': veri kaybı olan çok fazla miktarda sağa kaydırma
-C4334|'*ifade*': 32-bit kaydırmanın sonucu örtük olarak 64 bite dönüştürüldü (64-bit kaydırmanın hedeflenen oldu mu?)
-C4335|Mac dosya biçimi algılandı: Lütfen kaynak dosyayı DOS veya UNIX biçimine dönüştürün
-C4342|davranış değişikliği: '*türü*' çağrıldı, ancak önceki sürümlerde bir üye işleç çağrılıyordu
-C4350|davranış değişikliği: '*bildirimi*'yerine adlandırılan'*bildirimi*'
-C4357|Temsilci biçimsel bağımsız değişken listesinde param dizisi bağımsız değişkeni bulundu '*bildirimi*'üretilirken yoksayıldı'*türü*'
-C4358|'*ifade*': birleştirilmiş temsilcilerin dönüş türü 'void' değil; döndürülen değer tanımsız
-C4359|'*türü*': Hizalama belirleyici asıl hizalamadan küçük olduğundan (*numarası*) ve yoksayılacak.
-C4362|'*türü*': 8 bayttan büyük hizalama CLR tarafından desteklenmiyor
-C4364|# derleme için using '*adı*' daha önce görülme *açıklama*(*numarası*) as_friend özniteliği; as_friend uygulanmadı
-C4365|'*ifade*': dönüştürme '*türü*'to'*türü*', imzalı/imzasız uyuşmazlığı
-C4366|Birli sonucu '*işleci*' işleci hizalanmamış olabilir
-C4367|Dönüştürme işlemi '*türü*'to'*türü*' veri türü hizalanmama özel durumuna neden olabilir
-C4368|nelze definovat '*adı*'üyesi yönetilen olarak'*türü*': karma türler desteklenmiyor
-C4369|'*türü*': Numaralandırıcı değeri '*numarası*'olarak gösterilemez'*türü*', değer'*sayı*'
-C4374|'*bildirimi*': arabirim yöntemi sanal olmayan yöntemi tarafından uygulanmayacak '*bildirimi*'
-C4375|Genel olmayan yöntemin '*bildirimi*'geçersiz '*bildirimi*'
-C4376|erişim belirticisi '*belirticisi*:' artık desteklenmiyor: Lütfen kullanın '*belirticisi*:' yerine
-C4377|Yerel türler varsayılan olarak özeldir; -d1PrivateNativeTypes kullanım dışıdır
-C4378|Başlatıcıları çalıştırmak için işlev işaretçilerinin edinmeniz gerekir; :: resolvemethodhandle kullanmayı düşünün
-C4379|Sürüm *sürüm* ortak dil çalışma zamanı Bu derleyici tarafından desteklenmiyor. Bu sürümün kullanılması beklenmeyen sonuçlara neden
-C4381|'*bildirimi*': arabirim yöntemi ortak olmayan yöntemi tarafından uygulanmayacak '*bildirimi*'
-C4382|özel durum atma '*türü*': __clrcall yok Edicisi veya kopya Oluşturucusu olan bir tür yalnızca/CLR yakalanabilir: pure modülünde
-C4383|'*türü*': başvurusunu değiştirmenin anlamı kullanıcı tanımlı olduğunda değişebilir, '*işleci*' işleci var; işleci, işlenenin hakkında açık olmaya statik işlev olarak yazma
-C4384|#pragma '*yönergesi*' yalnızca genel kapsamda kullanılmalıdır
-C4393|'*türü*': const hiçbir etkisi olmaz *açıklama* veri üyesi; yoksayıldı
-C4394|'*türü*': per-appdomain simgesi __declspec ile işaretlenmemelidir (*değer*)
-C4395|'*türü*': üye işlev, initonly veri üyesinin bir kopyası üzerinde çağrılacak '*türü*'
-C4397|DefaultCharSetAttribute yoksayıldı
-C4398|'*türü*': başına-process genel nesnesi birden fazla AppDomain ile doğru çalışmayabilir; __declspec(appdomain) kullanmayı düşünün
-C4399|'*türü*': işlem içi sembol __declspec ile işaretlenmemelidir (*değer*) / CLR ile derlendiğinde: Saf
-C4400|'*türü*': Bu tür üzerindeki const/volatile niteleyicileri desteklenmiyor
-C4412|'*bildirimi*': işlev imzası içeren tür '*türü*'; C++ nesnelerinin saf kod arasında geçirilmesi güvenli değildir ve karma veya yerel.
-C4429|Olası eksik veya yanlış biçimlendirilmiş evrensel karakter adı
-C4430|tür belirticisi eksik - int varsayıldı. Not: C++ varsayılan int desteklemez
-C4431|tür belirticisi eksik - int varsayıldı. Not: C artık varsayılan int desteği içermiyor
-C4434|bir statik oluşturucunun özel erişilebilirliği olmalıdır; özel erişim olarak değiştiriliyor
-C4439|'*türü*': imzasında yönetilen bir tür olan işlev tanımında bir __clrcall çağrı kuralı olması gerekir
-C4441|çağırma kuralı, '*kuralı*' yoksayıldı; '*kuralı*' yerine kullanılan
-C4445|'*bildirimi*': bir yönetilen/WinRT türü sanal yöntem özel olamaz
-C4460|CLR/WinRT işleci '*türü*', parametre geçirilen başvuruya göre sahip. CLR/WinRT işleci '*işleci*'C++ işleci farklı semantiğe sahip'*işleci*', değere göre geçirilecek kullanmak mı istiyordunuz?
-C4461|'*türü*': Bu sınıfında bir Sonlandırıcı '! *tür*' ancak hiçbir yok edici ' ~*türü*'
-C4470|kayan noktalı denetim pragma'ları / CLR altında yoksayılır
-C4480|Standart olmayan uzantı kullanıldı: numaralandırma için temeldeki türü belirtme '*türü*'
-C4481|Standart olmayan uzantı kullanıldı: geçersiz kılma belirticisi '*belirticisi*'
-C4482|Standart olmayan uzantı kullanıldı: numaralandırma '*türü*' tam adında kullanılan
-C4483|sözdizimi hatası: C++ anahtar sözcüğü bekleniyor
-C4484|'*türü*': taban başvuru sınıfı yöntemiyle eşleşiyor '*türü*', ancak 'virtual', 'new' veya 'override'; işaretli değil 'new' (ve 'virtual' değil) varsayıldı
-C4485|'*türü*': taban başvuru sınıfı yöntemiyle eşleşiyor '*türü*', ancak işaretlenen 'new' veya 'override'; 'new' (ve 'virtual') varsayıldı
-C4486|'*türü*': bir başvuru sınıfının veya değer sınıfının özel bir sanal yöntemi 'sealed' olarak işaretlenmelidir
-C4487|'*türü*': devralınan sanal olmayan yöntemiyle eşleşiyor '*türü*' ancak açıkça 'new' işaretli değil
-C4488|'*türü*': gerektiren '*anahtar sözcüğü*'arabirim yöntemini uygulamak için anahtar sözcüğü'*türü*'
-C4489|'*anahtar sözcüğü*': arabirim yöntemi üzerinde kullanılamaz '*adı*'; geçersiz kılma belirticileri yalnızca başvuru sınıfı ve değer sınıfı yöntemleri üzerinde izin verilir
-C4490|'*anahtar sözcüğü*': geçersiz kılma belirticisi; yanlış kullanımı '*türü*' taban başvuru sınıfı yöntemiyle eşleşmiyor
-C4538|'*türü*': Bu tür üzerindeki const/volatile niteleyicileri desteklenmiyor
-C4559|'*türü*': yeniden tanımlama; işlev kazançlar __declspec (*değer*)
-C4565|'*türü*': yeniden tanımlama; simge daha önce __declspec ile bildirildi (*değer*)
-C4566|evrensel karakter-adı tarafından temsil edilen karakter '*karakter*' geçerli kod sayfasında temsil edilemeyen (*numarası*)
-C4568|'*türü*': hiçbir üye açık geçersiz kılma imzayla eşleşmiyor
-C4569|'*türü*': hiçbir üye açık geçersiz kılma imzayla eşleşmiyor
-C4570|'*türü*': soyut ancak soyut işlevler içeriyor olarak açıkça bildirilmedi
-C4571|Bilgi amaçlı: Visual C++ 7.1 sürümünden sonra değişti catch(...) semantiği; yapılandırılmış özel durumlar (SEH) artık yakalanmıyor
-C4572|[ParamArray] özniteliği/CLR altında kullanım dışı bırakılmıştır '...' Bunun yerine
-C4580|[attribute] Kullanımdan kalktı; Bunun yerine belirtin *belirtilen*bir temel sınıf olarak özniteliği
-C4581|kullanımdan kalkan davranış: ' "*adı*"' yerine '*adı*' özniteliği işlemek için
-C4606|#pragma uyarısı: '*sayı*' yoksayıldı; Kod çözümleme uyarıları, uyarı düzeyleriyle ilişkili değil.
-C4631|MSXML veya XPath kullanılamıyor, XML belgesi açıklamaları işlenmeyecek. *Açıklaması*
-C4632|XML belgesi açıklaması: *açıklama* -erişim reddedildi: *açıklaması*
-C4633|XML belgesi açıklaması *açıklama*: hata: *açıklaması*
-C4634|XML belgesi açıklaması *açıklama*: uygulanamaz: *açıklaması*
-C4635|XML belgesi açıklaması *açıklama*: hatalı oluşturulmuş XML: *açıklaması*
-C4636|XML belgesi açıklaması *açıklama*: etiketi boş gerekli '*açıklama*' özniteliği.
-C4637|XML belgesi açıklaması *açıklama*: \<dahil > Etiket atıldı. *Açıklaması*
-C4638|XML belgesi açıklaması *açıklama*: Bilinmeyen sembole başvuru '*açıklama*'.
-C4639|MSXML hatası, XML belgesi açıklamaları işlenmeyecek. *Açıklaması*
-C4641|XML belgesi açıklamasında belirsiz bir çapraz başvuru var:
-C4678|temel sınıfı*bildirimi*'den daha az erişilebilir olan'*adı*'
-C4679|'*açıklama*': üye alınamadı
-C4687|'*türü*': kapalı bir soyut sınıf, arabirim uygulayamaz '*türü*'
-C4688|'*adı*': sınırlama listesi derleme özel türünü içeriyor '*bildirimi*'
-C4690|\[ emitidl (pop)]: atma sayısından fazla
-C4691|'*türü*': başvurulan tür bekleniyordu başvurulmayan *Modülü* '*açıklama*', bunun yerine geçerli çeviri biriminde tanımlanan tür
-C4692|'*adı*': özel üyenin olmayan imzası derleme özel yerel türünü içeriyor '*bildirimi*'
-C4693|'*türü*': kapalı bir soyut sınıf tüm örnek üyeleri olamaz*adı*'
-C4694|'*türü*': kapalı bir soyut sınıf temel sınıf olamaz*türü*'
-C4720|Satır içi Birleştirici raporları: '*açıklama*'
-C4721|'*açıklama*': iç öğe olarak kullanılamıyor
-C4722|'*açıklama*': yok edici hiç dönmüyor, olası bellek sızıntısı
-C4726|ARM arch4/4T yalnızca destekleyen '\<cpsr_f > veya \<spsr_f >' değerini
-C4727|Adlı PCH *adı* bulunan aynı zaman damgasına sahip *adı* ve *adı*.  İlk PCH kullanılıyor.
-C4729|Akış grafı için çok büyük işlevi, uyarı tabanlı
-C4730|'*açıklama*': mixing _m64 ve kayan nokta ifadeleri hatalı koda neden olabilir
-C4731|'*açıklama*': çerçeve işaretçisi kaydı '*kaydetme*' satır içi derleme kodu tarafından değiştirildi
-C4732|İç '*iç*' Bu mimaride desteklenmiyor
-C4733|Satır içi asm 'FS:0 için' atama: işleyici güvenli bir işleyici olarak kayıtlı değil
-C4734|64 binden fazla satır numaralarını bir COFF bilgisi bölümünde hata ayıklama; Modülü için COFF hata ayıklama satır numaraları vermeyi durdurun '*Modülü*'
-C4738|32 bit kayan sonuç bellekte depolanıyor, olası performans kaybı
-C4739|değişkenine başvuru '*değişkeni*' depolama alanını aşıyor
-C4740|veya satır içi asm kodunda dışarı akma, genel iyileştirmeyi bastırır
-C4742|'*değişkeni*'farklı hizalamaya sahip'*konumu*'ve'*konumu*': *numarası* ve *numarası*
-C4743|'*adı*'başka bir boyutu vardır'*konumu*'ve'*konumu*': *numarası* ve *numarası* bayt
-C4744|'*adı*'farklı türüne sahip '*konumu*'ve'*konumu*': '*türü*'ve'*türü*'
-C4747|Yönetilen çağırma '*türü*': Yönetilen kod DLL giriş noktası ve DLL giriş noktasından ulaşılan çağrılar dahil olmak üzere, yükleyici kilidi altında çalışmayabilir
-C4761|bağımsız değişkende integral boyutu uyuşmazlığı; dönüştürme sağlandı
-C4764|Yakalama nesneleri 16 baytın üzerinde hizalanamaz
-C4788|'*tanımlayıcı*': tanımlayıcı kesildi '*sayı*' karakter
-C4789|Arabellek '*adı*' boyutunun *numarası* bayt taşması; *numarası* bayt uzaklığında başlayarak yazılacak *numarası*
-C4801|Başvuru ile dönüş doğrulanabilir değil: *açıklaması*
-C4819|Dosya geçerli kod sayfasında temsil edilemeyen bir karakter içeriyor (*numarası*). Dosyayı veri kaybını önlemek için Unicode biçiminde kaydedin
-C4826|Dönüştürme işlemi '*türü*'to'*türü*' işaret genişletilmiş. Bu, beklenmeyen çalışma zamanı davranışına neden olabilir.
-C4829|Büyük olasılıkla yanlış parametreler ana işlev. Göz önünde bulundurun ' int main (Platform::Array\<Platform::String ^ > ^ argv)'
-C4835|'*türü*': dışarı aktarılan veriler için Başlatıcı, önce yönetilen kod ana bilgisayar derlemesinde yürütülene kadar çalıştırılmayacak
-C4867|'*türü*': standart olmayan söz dizimi; Kullan '&' bir üyeye işaretçi oluşturmak için
-C4936|Bu __declspec yalnızca/CLR veya/CLR ile derlendiğinde desteklenir: Saf
-C4937|'*adı*'ve'*adı*'için bağımsız değişkenler olarak ayırt edilemiyor'*seçeneği*'
-C4938|'*türü*': Kayan nokta azaltma değişkeni, / FP altında tutarsız sonuçlara neden olabilir: strict veya #pragma fenv_access
-C4939|#pragma vtordisp kullanım dışı ve Visual C++'ın gelecek sürümde kaldırılacak.
-C4947|'*türü*': eski olarak işaretlendi
-C4949|'managed' ve 'unmanaged' pragmaları yalnızca ile derlendikleri zaman anlamlıdır ' / clr [: option]'
-C4950|'*türü*': eski olarak işaretlendi
-C4955|'*açıklama*': alma yoksayıldı; zaten içeri aktarılan '*kaynak*'
-C4956|'*türü*': Bu tür doğrulanabilir değil
-C4957|'*ifade*': açık tür dönüştürme gelen '*türü*'to'*türü*' doğrulanabilir değil
-C4958|'*ifade*': işaretçi aritmetik doğrulanabilir değil
-C4959|Yönetilmeyen tanımlanamaz *sınıfı* '*türü*' / CLR: safe, üyelerine erişilmesi doğrulanamayan bir koda neden olduğu
-C4960|'*açıklama*' profili çok büyük
-C4961|Hiç profil verisi içine birleştirildiği '*konumu*', profil temelli iyileştirmeler devre dışı bırakıldı
-C4962|'*açıklama*': Profil temelli iyileştirmeler iyileştirmeler profil verilerinin tutarsız olmasına yol açtığı için devre dışı bırakıldı
-C4963|'*açıklama*': Profil verileri bulunamadı; işaretlenmiş yapımda farklı derleyici seçenekleri kullanılmış
-C4964|İyileştirme seçeneği belirtilmedi; profil bilgileri toplanmayacak değil
-C4965|örtük 0 tamsayı kutusunu; nullptr veya açık tür dönüştürme kullanın
-C4970|temsilci oluşturucusu: hedef nesne yoksayıldı beri '*bildirimi*' statik
-C4971|Bağımsız değişken sırası: \<hedef nesne >, \<hedef işlev > temsilci Oluşturucu kullanım dışı bırakılmıştır, kullanın \<hedef işlev >, \<hedef nesne >
-C4972|Doğrudan değiştirme ya da açma işleminin sonucu lvalue olarak değerlendirmek doğrulanamaz
+| C4000 | `UNKNOWN WARNING    Please choose the Technical Support command on the Visual C++     Help menu, or open the Technical Support help file for more information` |
+| C4272 | `'type': is marked __declspec(dllimport); must specify native calling convention when importing a function.` |
+| C4333 | `'expression': right shift by too large amount, data loss` |
+| C4334 | `'expression': result of 32-bit shift implicitly converted to 64 bits (was 64-bit shift intended?)` |
+| C4335 | `Mac file format detected: please convert the source file to either DOS or UNIX format` |
+| C4342 | `behavior change: 'type' called, but a member operator was called in previous versions` |
+| C4350 | `behavior change: 'declaration' called instead of 'declaration'` |
+| C4357 | `param array argument found in formal argument list for delegate 'declaration' ignored when generating 'type'` |
+| C4358 | `'expression': return type of combined delegates is not 'void'; returned value is undefined` |
+| C4359 | `'type': Alignment specifier is less than actual alignment (number), and will be ignored.` |
+| C4362 | `'type': alignment greater than 8 bytes is not supported by CLR` |
+| C4364 | `#using for assembly 'name' previously seen at description(number) without as_friend attribute; as_friend not applied` |
+| C4365 | `'expression': conversion from 'type' to 'type', signed/unsigned mismatch` |
+| C4366 | `The result of the unary 'operator' operator may be unaligned` |
+| C4367 | `Conversion from 'type' to 'type' may cause datatype misalignment exception` |
+| C4368 | `cannot define 'name' as a member of managed 'type': mixed types are not supported` |
+| C4369 | `'type':  enumerator value 'number' cannot be represented as 'type', value is 'number'` |
+| C4374 | `'declaration': interface method will not be implemented by non-virtual method 'declaration'` |
+| C4375 | `non-public method 'declaration' does not override 'declaration'` |
+| C4376 | `access specifier 'specifier:' is no longer supported: please use 'specifier:' instead` |
+| C4377 | `native types are private by default; -d1PrivateNativeTypes is deprecated` |
+| C4378 | `Must obtain function pointers to run initializers; consider System::ModuleHandle::ResolveMethodHandle` |
+| C4379 | `Version version of the common language runtime is not supported by this compiler. Using this version may cause unexpected results` |
+| C4381 | `'declaration': interface method will not be implemented by non-public method 'declaration'` |
+| C4382 | `throwing 'type': a type with __clrcall destructor or copy constructor can only be caught in /clr:pure module` |
+| C4383 | `'type': the meaning of dereferencing a handle can change, when a user-defined 'operator' operator exists; write the operator as a static function to be explicit about the operand` |
+| C4384 | `#pragma 'directive' should only be used at global scope` |
+| C4393 | `'type': const has no effect on description data member; ignored` |
+| C4394 | `'type': per-appdomain symbol should not be marked with __declspec(value)` |
+| C4395 | `'type': member function will be invoked on a copy of the initonly data member 'type'` |
+| C4397 | `DefaultCharSetAttribute is ignored` |
+| C4398 | `'type': per-process global object might not work correctly with multiple appdomains; consider using __declspec(appdomain)` |
+| C4399 | `'type': per-process symbol should not be marked with __declspec(value) when compiled with /clr:pure` |
+| C4400 | `'type': const/volatile qualifiers on this type are not supported` |
+| C4412 | `'declaration': function signature contains type 'type'; C++ objects are unsafe to pass between pure code and mixed or native.` |
+| C4429 | `possible incomplete or improperly formed universal-character-name` |
+| C4430 | `missing type specifier - int assumed. Note: C++ does not support default-int` |
+| C4431 | `missing type specifier - int assumed. Note: C no longer supports default-int` |
+| C4434 | `a static constructor must have private accessibility; changing to private access` |
+| C4439 | `'type': function definition with a managed type in the signature must have a __clrcall calling convention` |
+| C4441 | `calling convention of 'convention' ignored; 'convention' used instead` |
+| C4445 | `'declaration': in a managed/WinRT type a virtual method cannot be private` |
+| C4460 | `CLR/WinRT operator 'type', has parameter passed by reference. CLR/WinRT operator 'operator' has different semantics from C++ operator 'operator', did you intend to pass by value?` |
+| C4461 | `'type': this class has a finalizer '!type' but no destructor '~type'` |
+| C4470 | `floating-point control pragmas ignored under /clr` |
+| C4480 | `nonstandard extension used: specifying underlying type for enum 'type'` |
+| C4481 | `nonstandard extension used: override specifier 'specifier'` |
+| C4482 | `nonstandard extension used: enum 'type' used in qualified name` |
+| C4483 | `syntax error: expected C++ keyword` |
+| C4484 | `'type': matches base ref class method 'type', but is not marked 'virtual', 'new' or 'override'; 'new' (and not 'virtual') is assumed` |
+| C4485 | `'type': matches base ref class method 'type', but is not marked 'new' or 'override'; 'new' (and 'virtual') is assumed` |
+| C4486 | `'type': a private virtual method of a ref class or value class should be marked 'sealed'` |
+| C4487 | `'type': matches inherited non-virtual method 'type' but is not explicitly marked 'new'` |
+| C4488 | `'type': requires 'keyword' keyword to implement the interface method 'type'` |
+| C4489 | `'keyword': not allowed on interface method 'name'; override specifiers are only allowed on ref class and value class methods` |
+| C4490 | `'keyword': incorrect use of override specifier; 'type' does not match a base ref class method` |
+| C4538 | `'type': const/volatile qualifiers on this type are not supported` |
+| C4559 | `'type': redefinition; the function gains __declspec(value)` |
+| C4565 | `'type': redefinition; the symbol was previously declared with __declspec(value)` |
+| C4566 | `character represented by universal-character-name 'character' cannot be represented in the current code page (number)` |
+| C4568 | `'type': no members match the signature of the explicit override` |
+| C4569 | `'type': no members match the signature of the explicit override` |
+| C4570 | `'type': is not explicitly declared as abstract but has abstract functions` |
+| C4571 | `Informational: catch(...) semantics changed since Visual C++ 7.1; structured exceptions (SEH) are no longer caught` |
+| C4572 | `[ParamArray] attribute is deprecated under /clr, use '...' instead` |
+| C4580 | `[attribute] is deprecated; instead specify specifiedAttribute as a base class` |
+| C4581 | `deprecated behavior: '"name"' replaced with 'name' to process attribute` |
+| C4606 | `#pragma warning: 'number' ignored; Code Analysis warnings are not associated with warning levels` |
+| C4631 | `MSXML or XPath unavailable, XML document comments will not be processed. description` |
+| C4632 | `XML document comment: description - access denied: description` |
+| C4633 | `XML document comment description: error: description` |
+| C4634 | `XML document comment description: cannot be applied: description` |
+| C4635 | `XML document comment description: badly-formed XML: description` |
+| C4636 | `XML document comment description: tag requires non-empty 'description' attribute.` |
+| C4637 | `XML document comment description: <include> tag discarded. description` |
+| C4638 | `XML document comment description: reference to unknown symbol 'description'.` |
+| C4639 | `MSXML error, XML document comments will not be processed. description` |
+| C4641 | `XML document comment has an ambiguous cross reference:` |
+| C4678 | `base class 'declaration' is less accessible than 'name'` |
+| C4679 | `'description': could not import member` |
+| C4687 | `'type': a sealed abstract class cannot implement an interface 'type'` |
+| C4688 | `'name': constraint list contains assembly private type 'declaration'` |
+| C4690 | `[ emitidl( pop ) ]: more pops than pushes` |
+| C4691 | `'type': type referenced was expected in unreferenced module 'description', type defined in current translation unit used instead` |
+| C4692 | `'name': signature of non-private member contains assembly private native type 'declaration'` |
+| C4693 | `'type': a sealed abstract class cannot have any instance members 'name'` |
+| C4694 | `'type': a sealed abstract class cannot have a base-class 'type'` |
+| C4720 | `in-line assembler reports: 'description'` |
+| C4721 | `'description': not available as an intrinsic` |
+| C4722 | `'description': destructor never returns, potential memory leak` |
+| C4726 | `ARM arch4/4T supports only '<cpsr_f> or <spsr_f>' with immediate value` |
+| C4727 | `PCH named name with same timestamp found in name and name.  Using first PCH.` |
+| C4729 | `function too big for flow graph based warnings` |
+| C4730 | `'description': mixing _m64 and floating point expressions may result in incorrect code` |
+| C4731 | `'description': frame pointer register 'register' modified by inline assembly code` |
+| C4732 | `intrinsic 'intrinsic' is not supported in this architecture` |
+| C4733 | `Inline asm assigning to 'FS:0': handler not registered as safe handler` |
+| C4734 | `More than 64k line numbers in a COFF debug info section; stop emitting COFF debug line numbers for module 'module'` |
+| C4738 | `storing 32-bit float result in memory, possible loss of performance` |
+| C4739 | `reference to variable 'variable' exceeds its storage space` |
+| C4740 | `flow in or out of inline asm code suppresses global optimization` |
+| C4742 | `'variable' has different alignment in 'location' and 'location': number and number` |
+| C4743 | `'name' has different size in 'location' and 'location': number and number bytes` |
+| C4744 | `'name' has different type in 'location' and 'location': 'type' and 'type'` |
+| C4747 | `Calling managed 'type': Managed code may not be run under loader lock, including the DLL entrypoint and calls reached from the DLL entrypoint` |
+| C4761 | `integral size mismatch in argument; conversion supplied` |
+| C4764 | `Cannot align catch objects to greater than 16 bytes` |
+| C4788 | `'identifier': identifier was truncated to 'number' characters` |
+| C4789 | `buffer 'name' of size number bytes will be overrun; number bytes will be written starting at offset number` |
+| C4801 | `Return by reference is not verifiable: description` |
+| C4819 | `The file contains a character that cannot be represented in the current code page (number). Save the file in Unicode format to prevent data loss` |
+| C4826 | `Conversion from 'type' to 'type' is sign-extended. This may cause unexpected runtime behavior.` |
+| C4829 | `Possibly incorrect parameters to function main. Consider 'int main(Platform::Array<Platform::String^>^ argv)'` |
+| C4835 | `'type': the initializer for exported data will not be run until managed code is first executed in the host assembly` |
+| C4867 | `'type': non-standard syntax; use '&' to create a pointer to member` |
+| C4936 | `this __declspec is supported only when compiled with /clr or /clr:pure` |
+| C4937 | `'name' and 'name' are indistinguishable as arguments to 'option'` |
+| C4938 | `'type': Floating point reduction variable may cause inconsistent results under /fp:strict or #pragma fenv_access` |
+| C4939 | `#pragma vtordisp is deprecated and will be removed in a future release of Visual C++` |
+| C4947 | `'type': marked as obsolete` |
+| C4949 | `pragmas 'managed' and 'unmanaged' are meaningful only when compiled with '/clr[:option]'` |
+| C4950 | `'type': marked as obsolete` |
+| C4955 | `'description': import ignored; already imported from 'source'` |
+| C4956 | `'type': this type is not verifiable` |
+| C4957 | `'expression': explicit cast from 'type' to 'type' is not verifiable` |
+| C4958 | `'expression': pointer arithmetic is not verifiable` |
+| C4959 | `cannot define unmanaged class 'type' in /clr:safe because accessing its members yields unverifiable code` |
+| C4960 | `'description' is too big to be profiled` |
+| C4961 | `No profile data was merged into 'location', profile-guided optimizations disabled` |
+| C4962 | `'description': Profile-guided optimizations disabled because optimizations caused profile data to become inconsistent` |
+| C4963 | `'description': no profile data found; different compiler options were used in instrumented build` |
+| C4964 | `No optimization options were specified; profile info will not be collected` |
+| C4965 | `implicit box of integer 0; use nullptr or explicit cast` |
+| C4970 | `delegate constructor: target object ignored since 'declaration' is static` |
+| C4971 | `Argument order: <target object>, <target function> for delegate constructor is deprecated, use <target function>, <target object>` |
+| C4972 | `Directly modifying or treating the result of an unbox operation as an lvalue is unverifiable` |
 
 ## <a name="warnings-introduced-in-visual-c-2003-compiler-version-13103077"></a>Visual C++ 2003'te (Derleyici sürümü 13.10.3077) uyarıları
 
-Derleyici seçeneğini kullanarak bu uyarıları ve üzeri sürümlerde tüm uyarıları bastırılan __/Wv:13.00.9466__.
+Derleyici seçeneğini kullanarak bu uyarıları ve üzeri sürümlerde tüm uyarıları bastırılan `/Wv:13.00.9466`.
 
 |||
 |-|-|
-C4343|#pragma en iyi duruma getirme (*açıklama*, kapalı) /Og seçeneğini geçersiz kılar
-C4344|davranış değişikliği: açık şablon bağımsız değişkenleri çağrısıyla sonuçlandı kullanımını '*bildirimi*'
-C4346|'*türü*': bağımlı öğe adı bir tür değil
-C4348|'*bildirimi*': Varsayılan parametrenin yeniden tanımlanması: parametre *numarası*
-C4356|'*türü*': statik veri üyesi türetilmiş sınıf aracılığıyla başlatılamaz
-C4408|Anonim *yapı* herhangi bir veri üyesi bildirmiyor
-C4544|'*bildirimi*': varsayılan şablon bağımsız değişkeni bu şablon bildiriminde yok sayıldı
-C4545|virgülden önceki ifade bir bağımsız değişken listesi olmayan bir işlev olarak değerleniyor
-C4546|virgülden önceki işlev çağrısında bağımsız değişken listesi eksik
-C4547|'*ifade*': virgülden önceki etkisi yok; işleci yan etkisi olan beklenen işleci
-C4548|virgülden önceki ifadenin etkisi yok; yan etkisi olan ifade bekleniyordu
-C4549|'*ifade*': virgülden önceki işlecin etkisi yok; kullanmak mı istiyordunuz '*ifade*'?
-C4628|-Ze ile digraf kullanılması desteklenmez. Karakter dizisi '*dizisi*'için alternatif bir belirteç olarak yorumlanmadı'*belirteci*'
-C4629|Digraph kullanıldığında, karakter dizisi '*dizisi*'belirteci olarak yorumlanan'*belirteci*' (Bu değilse ise iki karakter arasına bir boşluk ekleyin)
-C4671|'*açıklama*': kopya oluşturucusuna erişilemez
-C4676|'*açıklama*': yok ediciye erişilemez
-C4677|'*adı*': özel üyenin olmayan imzası derleme özel türünü içeriyor '*bildirimi*'
-C4686|'*türü*': davranışta olası bir değişiklik, udt'de değişiklik iade çağırma kuralı
-C4812|eski bildirim stili: Lütfen '*türü*::*adı*' yerine
-C4813|'*türü*': bir arkadaş işlev yerel bir sınıfın önceden bildirilmiş olmalıdır
-C4821|Unicode kodlama türü belirlenemiyor, Lütfen dosyayı (BOM) imzasıyla kaydedin
-C4822|'*türü*': yerel sınıf üyesi işlevinde bir gövde yok
-C4823|'*türü*': kullanır ancak sabitleme işaretçileri geriye doğru izlenen semantik etkin değil. / Eha kullanmayı düşünün
-C4913|Kullanıcı tanımlı ikili işleç ',' var ancak hiçbir aşırı yüklemesi dönüştüremedi tüm işlenenler, varsayılan yerleşik ikili operatör ',' kullanılan
-C4948|dönüş türü '*bildirimi*' karşılık gelen ayarlayıcının son parametre türüyle eşleşmiyor
-C4951|'*açıklama*' profili beri işlevi profil verileri, veri toplanmıştır düzenlenip düzenlenmediğini gösterir
-C4952|'*açıklama*': program veritabanında profil verileri bulunamadı '*açıklama*'
-C4953|Alınanın '*açıklama*' profili bu yana profil verileri, veri toplanmıştır düzenlenip düzenlenmediğini gösterir
-C4954|'*açıklama*': oluşturulmamış (__int64 geçiş ifadesi içeriyor)
+| C4343 | `#pragma optimize(description,off) overrides /Og option` |
+| C4344 | `behavior change: use of explicit template arguments results in call to 'declaration'` |
+| C4346 | `'type': dependent name is not a type` |
+| C4348 | `'declaration': redefinition of default parameter: parameter number` |
+| C4356 | `'type': static data member cannot be initialized via derived class` |
+| C4408 | `anonymous struct did not declare any data members` |
+| C4544 | `'declaration': default template argument ignored on this template declaration` |
+| C4545 | `expression before comma evaluates to a function which is missing an argument list` |
+| C4546 | `function call before comma missing argument list` |
+| C4547 | `'expression': operator before comma has no effect; expected operator with side-effect` |
+| C4548 | `expression before comma has no effect; expected expression with side-effect` |
+| C4549 | `'expression': operator before comma has no effect; did you intend 'expression'?` |
+| C4628 | `digraphs not supported with -Ze. Character sequence 'sequence' not interpreted as alternate token for 'token'` |
+| C4629 | `digraph used, character sequence 'sequence' interpreted as token 'token' (insert a space between the two characters if this is not what you intended)` |
+| C4671 | `'description': the copy constructor is inaccessible` |
+| C4676 | `'description': the destructor is inaccessible` |
+| C4677 | `'name': signature of non-private member contains assembly private type 'declaration'` |
+| C4686 | `'type': possible change in behavior, change in UDT return calling convention` |
+| C4812 | `obsolete declaration style: please use 'type::name' instead` |
+| C4813 | `'type': a friend function of a local class must have been previously declared` |
+| C4821 | `Unable to determine Unicode encoding type, please save the file with signature (BOM)` |
+| C4822 | `'type': local class member function does not have a body` |
+| C4823 | `'type': uses pinning pointers but unwind semantics are not enabled. Consider using /EHa` |
+| C4913 | `user defined binary operator ',' exists but no overload could convert all operands, default built-in binary operator ',' used` |
+| C4948 | `return type of 'declaration' does not match the last parameter type of the corresponding setter` |
+| C4951 | `'description' has been edited since profile data was collected, function profile data not used` |
+| C4952 | `'description': no profile data found in program database 'description'` |
+| C4953 | `Inlinee 'description' has been edited since profile data was collected, profile data not used` |
+| C4954 | `'description': not profiled (contains __int64 switch expression)` |
 
 ## <a name="warnings-introduced-in-visual-c-2002-compiler-version-13009466"></a>Visual C++ 2002 (Derleyici sürümü 13.00.9466) uyarıları
 
-Derleyici seçeneğini kullanarak bu uyarıları ve üzeri sürümlerde tüm uyarıları bastırılan __/Wv:12__.
+Derleyici seçeneğini kullanarak bu uyarıları ve üzeri sürümlerde tüm uyarıları bastırılan `/Wv:12`.
 
 |||
 |-|-|
-C4096|'*türü*': arabirim bir COM arabirimi değil; ıdl'ye değil
-C4097|pragma parametresinin 'restore' olması bekleniyor veya 'off'
-C4165|'HRESULT' 'bool'; dönüştürülüyor budur başlatmak için istediğinize emin misiniz?
-C4183|'*adı*': dönüş türü eksik; 'int' döndüren bir üye işlev olduğu varsayıldı
-C4199|*Açıklaması*
-C4255|'*adı*': hiçbir işlev prototipi verilmedi: '(') '(void)' olarak dönüştürülüyor
-C4256|'*bildirimi*': sanal tabanları olan sınıfın oluşturucusunda '...' var; çağrılar eski Visual C++ sürümleriyle uyumlu olmayabilir
-C4258|'*adı*': tanımından döngü göz ardı edilir için; kapsayan kapsamdan gelen tanım kullanılır
-C4263|'*bildirimi*': üye işlev hiçbir taban sınıfı sanal üye işlevini Geçersiz Kılmıyor
-C4264|'*bildirimi*': taban sanal üye işlev için kullanılabilecek geçersiz kılma yok '*sınıfı*'; işlev gizlendi
-C4265|'*türü*': sınıfın sanal işlevleri var ancak yok edici sanal değil, bu sınıfın örnekleri doğru şekilde edilmeyebilir
-C4266|'*bildirimi*': taban sanal üye işlev için kullanılabilecek geçersiz kılma yok '*sınıfı*'; işlev gizlendi
-C4267|'*ifade*': 'size_t' dönüştürme '*türü*', olası veri kaybı
-C4274|#ident yoksayıldı; #pragma comment (exestr, 'string') için belgelere bakın
-C4277|içeri aktarılan öğe '*türü*::*adı*' hem veri üyesi hem de işlev üyesi; olarak mevcut veri üyesi yoksayıldı
-C4278|'*adı*': tür kitaplığındaki tanımlayıcı '*açıklama*' zaten bir makro; 'rename' niteleyicisini kullanın
-C4279|'*adı*': tür kitaplığındaki tanımlayıcı '*açıklama*' bir anahtar sözcük; 'rename' niteleyicisini kullanın
-C4287|'*ifade*': işaretsiz/negatif sabit uyuşmazlığı
-C4288|Standart olmayan uzantı kullanıldı: '*adı*': for döngüsünde bildirimi yapılan döngü denetim değişkeni for döngüsü kapsamının dışında kullanılıyor; dış kapsamdaki bildirimiyle çakışıyor
-C4289|Standart olmayan uzantı kullanıldı: '*adı*': for döngüsünde bildirimi yapılan döngü denetim değişkeni for döngüsü kapsamının dışında kullanılıyor
-C4293|'*ifade*': kaydırma sayısı negatif veya çok büyük; tanımsız davranış
-C4295|'*türü*': dizi Sonlandırıcı null karakterini içeremeyecek kadar küçük
-C4296|'*ifade*': ifade her zaman olduğu *değeri*
-C4297|'*türü*': işlev kabul ancak bir özel durum oluşturması beklenmiyor
-C4298|'*adı*': tür kitaplığındaki tanımlayıcı '*açıklama*' zaten bir makrodur; yeniden adlandırma ' __*adı*'
-C4299|'*adı*': tür kitaplığındaki tanımlayıcı '*açıklama*' bir anahtar sözcük; yeniden adlandırma ' __*adı*'
-C4302|'*ifade*': kesildi '*türü*'to'*türü*'
-C4303|*Dönüştürme* gelen '*türü*'to'*türü*' olan kullanımdan kaldırıldı, static_cast, __try_cast veya dynamic_cast kullanın
-C4314|Beklenen pragma parametresinin '32' veya '64' olması
-C4315|'*türü*': üye 'this' işaretçisi '*türü*' hizalı değil *numarası* Oluşturucu tarafından beklendiği gibi
-C4318|memset'e uzunluk olarak sıfır sabiti geçirme
-C4319|'*ifade*': sıfır genişletme '*türü*'to'*türü*' daha büyük boyutlu
-C4321|arabirimi için IID otomatik olarak oluşturma '*türü*'
-C4322|otomatik olarak sınıfının bir CLSID üretiliyor*türü*'
-C4323|sınıf için kaydedilen CLSID yeniden kullanma*türü*'
-C4324|'*türü*': hizalama tanımlayıcısı nedeniyle yapının sonu dolduruldu
-C4325|Standart bölümün öznitelikleri '*açıklama*' yoksayıldı
-C4326|dönüş türü '*adı*'olmalıdır'*türü*'veya'*türü*'
-C4327|'*ifade*': yöneltme hizalaması (*numarası*) sol büyük (*numarası*)
-C4328|'*açıklama*': biçimsel parametresinin yöneltme hizalaması *numarası* (*numarası*) gerçek bağımsız değişken hizalama büyük (*numarası*)
-C4329|numaralandırma üzerinde hizalama tanımlayıcısı yoksayılır
-C4336|Çapraz başvurulan tür kitaplığı İçeri Aktar '*Kitaplığı*'almadan'*açıklama*'
-C4337|Çapraz başvurulan tür kitaplığının '*Kitaplığı*'in'*açıklama*' otomatik olarak içeri aktarılıyor
-C4338|#pragma *açıklama*: standart bölüm '*bölüm*' kullanılır
-C4339|'*türü*': Tanımsız Tür algılandı CLR/WinRT meta verilerinde - bu türün kullanılması çalışma zamanı özel durumuna neden
-C4353|Standart olmayan uzantı kullanıldı: işlev ifadesi olarak 0 sabiti.  Bunun yerine '__noop ' iç işlevini iç kullanın
-C4370|'*bildirimi*': sınıfın düzeni önceki bir sürümünden daha iyi paketleme nedeniyle derleyici değişti
-C4371|'*bildirimi*': sınıfın düzeni önceki bir üyesinin daha iyi paketleme nedeniyle derleyici sürümünden değişmiş olabilir '*üye*'
-C4373|'*türü*': sanal işlev geçersiz*bildirimi*', önceki derleyici sürümleri Parametreler yalnızca const/volatile niteleyicileri farklıydı olduğunda kılmadı
-C4387|'*açıklama*': kabul
-C4389|'*ifade*': imzalı/imzasız uyuşmazlığı
-C4391|'*bildirimi*': beklenen iç işlev için yanlış dönüş türü '*türü*'
-C4392|'*bildirimi*': yanlış sayıda bağımsız değişken beklenen iç işlev için '*sayı*' bağımsız değişkenleri
-C4407|farklı işaretçiden üyeye gösterimleri arasında tür dönüştürme; derleyici yanlış kod üretebilir
-C4420|'*adı*': işleç kullanılamıyor, kullanarak '*adı*' kullanılıyor; çalışma zamanı denetimi zarar görmüş
-C4440|çağırma kuralı yeniden tanımlanması '*açıklama*'to'*açıklama*' yoksayıldı
-C4442|__annotation bağımsız değişkeninde null Sonlandırıcı eklenmiş.  Değer kesilecek.
-C4444|'*adı*': en üst düzey '__unaligned' Bu bağlamda uygulanmadı
-C4526|'*türü*': statik üye işlevini sanal işlevini geçersiz kılamaz '*bildirimi*' geçersiz kılma yoksayıldı, sanal işlev gizlenecek
-C4531|C++ özel durum işleme Windows CE üzerinde kullanılamaz. Yapılandırılmış özel durum işleme kullanın
-C4532|'*açıklama*': / atlama *son* blok sonlandırma işleme sırasında davranışı tanımsız
-C4533|öğesinin başlatılması '*bildirimi*' tarafından atlandığını ' goto *bildirimi*'
-C4534|'*bildirimi*' için varsayılan oluşturucu olmayacaktır *sınıfı* '*türü*' nedeniyle varsayılan bağımsız değişken
-C4535|calling _set_se_translator() requires /EHa
-C4536|'*açıklama*': tür adı, meta veri sınırını aşıyor '*sayı*' karakter
-C4537|'*bildirimi*': '.'UDT olmayan türe uygulandı
-C4542|Nesil birleştirilen eklenmiş dosyanın üretilmesi atlanıyor yazamıyor *türü* dosya: '*filename*': *hata*
-C4543|Eklenen metin özniteliği tarafından gizlenen ' hiçbir\_injected_text'
-C4555|ifadenin etkisi yok; yan etkisi olan ifade bekleniyordu
-C4557|'__assume' etkisi içeriyor '*etkisi*'
-C4558|işlenenin değerini '*numarası*' je mimo rozsah'*numarası* - *sayı*'
-C4561|'__fastcall' ile uyumsuz ' / clr' seçeneği: '__stdcall' için dönüştürme
-C4562|tam prototipi oluşturulmuş işlevler gereklidir ' / clr' seçeneği: '(') '(void)' olarak dönüştürülüyor
-C4564|yöntemi '*adı*' ın *sınıfı* '*türü*'desteklenmeyen varsayılan parametre tanımlar'*parametre*'
-C4584|'*türü*': taban sınıfı*bildirimi*'temel sınıfının zaten'*bildirimi*'
-C4608|Birleşimin birden fazla üyesi başlatılıyor: '*türü*'ve'*türü*'
-C4619|#pragma uyarısı: uyarı numarası'yok '*sayı*'
-C4623|'*türü*': varsayılan oluşturucu örtük bir şekilde silindi olarak tanımlandı
-C4624|'*türü*': yıkıcı örtük bir şekilde silindi olarak tanımlandı
-C4625|'*türü*': kopya Oluşturucusu örtük bir şekilde silindi olarak tanımlandı
-C4626|'*türü*': atama işleci örtük bir şekilde silindi olarak tanımlandı
-C4645|'noreturn' ile bildirilen işlevde dönüş deyimi var
-C4646|'noreturn' ile bildirilen işlevde void olmayan dönüş türüne sahip.
-C4659|#pragma '*açıklama*': ayrılmış segmentinin kullanımında '*adı*' kullanımı #pragma açıklamasını (Bağlayıcı,...) davranışı tanımsız
-C4667|'*bildirimi*': zorlanan örnek oluşturmayla eşleşen işlev şablonu tanımlanmadı
-C4668|'*adı*'için '0' ile değiştirerek önişlemci makrosu olarak tanımlanmamış '*değer*'
-C4669|'*ifade*': Güvenli olmayan dönüştürme: '*türü*' yönetilen WinRT türü nesnesi
-C4674|'*adı*' 'static' olarak bildirilmeli ve tam olarak bir parametreye sahip
-C4680|'*türü*': coclass varsayılan bir arabirim belirtmiyor
-C4681|'*türü*': coclass olay kaynağı olan varsayılan bir arabirim belirtmiyor
-C4682|'*türü*': [in] varsayarak, hiçbir parametre özniteliği belirtilmedi
-C4683|'*bildirimi*': olay kaynağı olan bir 'out'-parametre; birden çok olay işleyicisi yakalarken dikkatli olun
-C4684|'*açıklama*': UYARI!! öznitelik geçersiz kod oluşturmaya neden olabilir: dikkatli kullanın
-C4685|bekleniyor ' >> ' bulundu ' >> ' şablon parametreleri ayrıştırılırken
-C4700|başlatılmamış yerel değişken '*adı*' kullanılır
-C4701|başlatılmayabilecek yerel değişken '*adı*' kullanılır
-C4702|erişilemeyen kodları
-C4711|İşlev '*adı*' otomatik satır içi genişletme için seçilen
-C4714|İşlev '*bildirimi*' __forceinline olarak satır içine alınmış işaretlenen
-C4715|'*işlevi*': tüm denetim yolları değer döndürmez
-C4716|'*işlevi*': bir değer döndürmelidir
-C4717|'*işlevi*': özyinelemeli tüm denetim yollarında işlevi neden çalışma zamanı yığın taşması
-C4718|'*işlevi*': özyinelemeli çağrının silme hiçbir yan etkisi vardır
-C4719|Qfast belirtildiğinde - Kullan 'f' tek duyarlılık belirtmek için bir sonek olarak bulunan çift sabiti
-C4723|olası 0 ile bölme
-C4724|olası 0 ile mod
-C4725|yönerge bazı Pentium'larda yanlış olabilir.
-C4757|alt simge büyük bir imzalanmamış değer, negatif bir sabit mi istiyorsunuz?
-C4772|#import eksik tür kitaplığından bir tür başvurulan; '*açıklama*' yer tutucu olarak kullanılan
-C4792|İşlev '*işlevi*' sysimport kullanılarak bildirilen ve başvurulan yerel koddan; içeri aktarma kitaplığı gerekli bağlamak için
-C4794|iş parçacığı yerel depolama değişkeninin segmenti '*adı*'değeri'*segment*'to'*segment*'
-C4798|p-code işlevi için oluşturulan yerel kod '*adı*' özel durum işleyicisi veya semantikle
-C4799|İşlev '*adı*' EMMS yönergesi yok
-C4803|'*bildirimi*': yükseltme yönteminde olayın bir farklı depolama sınıfı olan '*bildirimi*'
-C4810|pragma paketi(show) değeri == *numarası*
-C4811|pragma değerini uyumluluk (forscope, show) == *değeri*
-C4820|'*türü*': '*numarası*' bayt doldurma eklenen sonra *türü* '*türü*'
-C4905|geniş dize sabit değeri için cast '*türü*'
-C4906|dize sabit değeri için cast '*türü*'
-C4912|'*özniteliği*': özniteliği bir iç içe geçmiş UDT'de davranışı tanımlı değil
-C4916|dispid değerine sahip olmak için '*türü*': arabirim tarafından sunulan gerekir
-C4917|'*türü*': bir GUID yalnızca bir sınıf, arabirim veya ad alanı ile ilişkilendirilebilir.
-C4918|'*karakter*': pragram iyileştirme listesinde geçersiz karakter
-C4920|Enum *adı* üye *adı*=*numarası* numaralandırmasında zaten görüldü *adı* olarak *adı* = *numarası*
-C4921|'*adı*': öznitelik değeri '*değer*' birden çok kez belirtilmesi
-C4925|'*bildirimi*': dispinterface yöntemi betikten çağrılamaz
-C4926|'*bildirimi*': simge zaten tanımlandı: öznitelikler yoksayıldı
-C4927|hatalı dönüştürme; birden fazla kullanıcı tanımlı dönüştürme örtük olarak uygulandı
-C4928|hatalı kopya başlatma; birden çok kullanıcı tanımlı dönüştürme örtük olarak uygulandı
-C4929|'*açıklama*': tür kitaplığı bir birleşim içeriyor; 'embedded_idl' niteleyicisi yoksayılıyor
-C4930|'*bildirimi*': prototipli işlev çağrılmadı (değişken bir tanım hedeflenen oldu mu?)
-C4931|tür kitaplığını oluşturulduğu varsayıyoruz *numarası*-bit işaretçiler
-C4932|__tanımlayıcı (*açıklama*) ve __tanımlayıcı (*açıklama*) ayırt edilemiyor
-C4934|'__delegate(multicast)' kullanım dışı, bunun yerine ' __delegate' kullanın
-C4935|derleme erişim belirticisi değiştiren gelen '*açıklama*'
-C4944|'*adı*': değerinden simge alınamıyor '*kaynak*': farklı*bildirimi*' geçerli kapsamda zaten var.
-C4945|'*adı*': değerinden simge alınamıyor '*kaynak*': farklı*bildirimi*'başka bir derleme zaten alınmış'*kaynak*'
-C4946|reinterpret_cast ilgili sınıflar arasında kullanıldı: '*bildirimi*'ve'*bildirimi*'
-C4995|'*adı*': ad kullanım dışı #pragma olarak işaretlendi
-C4996|'*sorunu*': *açıklaması*
-C4997|'*türü*': coclass COM arabirimi veya sahte arabirim uygulamıyor
-C4998|BEKLENTİ başarısız oldu: *açıklama*(*numarası*)
+| C4096 | `'type': interface is not a COM interface; will not be emitted to IDL` |
+| C4097 | `expected pragma parameter to be 'restore' or 'off'` |
+| C4165 | `'HRESULT' is being converted to 'bool'; are you sure this is what you want?` |
+| C4183 | `'name': missing return type; assumed to be a member function returning 'int'` |
+| C4199 | `description` |
+| C4255 | `'name': no function prototype given: converting '()' to '(void)'` |
+| C4256 | `'declaration': constructor for class with virtual bases has '...'; calls may not be compatible with older versions of Visual C++` |
+| C4258 | `'name': definition from the for loop is ignored; the definition from the enclosing scope is used` |
+| C4263 | `'declaration': member function does not override any base class virtual member function` |
+| C4264 | `'declaration': no override available for virtual member function from base 'class'; function is hidden` |
+| C4265 | `'type': class has virtual functions, but destructor is not virtual instances of this class may not be destructed correctly` |
+| C4266 | `'declaration': no override available for virtual member function from base 'class'; function is hidden` |
+| C4267 | `'expression': conversion from 'size_t' to 'type', possible loss of data` |
+| C4274 | `#ident ignored; see documentation for #pragma comment(exestr, 'string')` |
+| C4277 | `imported item 'type::name' exists as both data member and function member; data member ignored` |
+| C4278 | `'name': identifier in type library 'description' is already a macro; use the 'rename' qualifier` |
+| C4279 | `'name': identifier in type library 'description' is a keyword; use the 'rename' qualifier` |
+| C4287 | `'expression': unsigned/negative constant mismatch` |
+| C4288 | `nonstandard extension used: 'name': loop control variable declared in the for-loop is used outside the for-loop scope; it conflicts with the declaration in the outer scope` |
+| C4289 | `nonstandard extension used: 'name': loop control variable declared in the for-loop is used outside the for-loop scope` |
+| C4293 | `'expression': shift count negative or too big, undefined behavior` |
+| C4295 | `'type': array is too small to include a terminating null character` |
+| C4296 | `'expression': expression is always value` |
+| C4297 | `'type': function assumed not to throw an exception but does` |
+| C4298 | `'name': identifier in type library 'description' is already a macro; renaming to '__name'` |
+| C4299 | `'name': identifier in type library 'description' is a keyword; renaming to '__name'` |
+| C4302 | `'expression': truncation from 'type' to 'type'` |
+| C4303 | `conversion from 'type' to 'type' is deprecated, use static_cast, __try_cast or dynamic_cast` |
+| C4314 | `expected pragma parameter to be '32' or '64'` |
+| C4315 | `'type': 'this' pointer for member 'type' may not be aligned number as expected by the constructor` |
+| C4318 | `passing constant zero as the length to memset` |
+| C4319 | `'expression': zero extending 'type' to 'type' of greater size` |
+| C4321 | `automatically generating an IID for interface 'type'` |
+| C4322 | `automatically generating a CLSID for class 'type'` |
+| C4323 | `re-using registered CLSID for class 'type'` |
+| C4324 | `'type': structure was padded due to alignment specifier` |
+| C4325 | `attributes for standard section 'description' ignored` |
+| C4326 | `return type of 'name' should be 'type' instead of 'type'` |
+| C4327 | `'expression': indirection alignment of LHS (number) is greater than RHS (number)` |
+| C4328 | `'description': indirection alignment of formal parameter number (number) is greater than the actual argument alignment (number)` |
+| C4329 | `alignment specifier is ignored on enum` |
+| C4336 | `import cross-referenced type library 'library' before importing 'description'` |
+| C4337 | `cross-referenced type library 'library' in 'description' is being automatically imported` |
+| C4338 | `#pragma description: standard section 'section' is used` |
+| C4339 | `'type': use of undefined type detected in CLR/WinRT meta-data - use of this type may lead to a runtime exception` |
+| C4353 | `nonstandard extension used: constant 0 as function expression.  Use '__noop' function intrinsic instead` |
+| C4370 | `'declaration': layout of class has changed from a previous version of the compiler due to better packing` |
+| C4371 | `'declaration': layout of class may have changed from a previous version of the compiler due to better packing of member 'member'` |
+| C4373 | `'type': virtual function overrides 'declaration', previous versions of the compiler did not override when parameters only differed by const/volatile qualifiers` |
+| C4387 | `'description': was considered` |
+| C4389 | `'expression': signed/unsigned mismatch` |
+| C4391 | `'declaration': incorrect return type for intrinsic function, expected 'type'` |
+| C4392 | `'declaration': incorrect number of arguments for intrinsic function, expected 'number' arguments` |
+| C4407 | `cast between different pointer to member representations, compiler may generate incorrect code` |
+| C4420 | `'name': operator not available, using 'name' instead; run-time checking may be compromised` |
+| C4440 | `calling convention redefinition from 'description' to 'description' ignored` |
+| C4442 | `embedded null terminator in __annotation argument.  Value will be truncated.` |
+| C4444 | `'name': top level '__unaligned' is not implemented in this context` |
+| C4526 | `'type': static member function cannot override virtual function 'declaration' override ignored, virtual function will be hidden` |
+| C4531 | `C++ exception handling not available on Windows CE. Use Structured Exception Handling` |
+| C4532 | `'description': jump out of finally block has undefined behavior during termination handling` |
+| C4533 | `initialization of 'declaration' is skipped by 'goto declaration'` |
+| C4534 | `'declaration' will not be a default constructor for class 'type' due to the default argument` |
+| C4535 | `calling _set_se_translator() requires /EHa` |
+| C4536 | `'description': type-name exceeds meta-data limit of 'number' characters` |
+| C4537 | `'declaration': '.' applied to non-UDT type` |
+| C4542 | `Skipping generation of merged injected text file, cannot write type file: 'filename': error` |
+| C4543 | `Injected text suppressed by attribute 'no_injected_text'` |
+| C4555 | `expression has no effect; expected expression with side-effect` |
+| C4557 | `'__assume' contains effect 'effect'` |
+| C4558 | `value of operand 'number' is out of range 'number - number'` |
+| C4561 | `'__fastcall' incompatible with the '/clr' option: converting to '__stdcall'` |
+| C4562 | `fully prototyped functions are required with the '/clr' option: converting '()' to '(void)'` |
+| C4564 | `method 'name' of class 'type' defines unsupported default parameter 'parameter'` |
+| C4584 | `'type': base-class 'declaration' is already a base-class of 'declaration'` |
+| C4608 | `Initializing multiple members of union: 'type' and 'type'` |
+| C4619 | `#pragma warning: there is no warning number 'number'` |
+| C4623 | `'type': default constructor was implicitly defined as deleted` |
+| C4624 | `'type': destructor was implicitly defined as deleted` |
+| C4625 | `'type': copy constructor was implicitly defined as deleted` |
+| C4626 | `'type': assignment operator was implicitly defined as deleted` |
+| C4645 | `function declared with 'noreturn' has a return statement` |
+| C4646 | `function declared with 'noreturn' has non-void return type` |
+| C4659 | `#pragma 'description': use of reserved segment 'name' has undefined behavior, use #pragma comment(linker, ...)` |
+| C4667 | `'declaration': no function template defined that matches forced instantiation` |
+| C4668 | `'name' is not defined as a preprocessor macro, replacing with '0' for 'value'` |
+| C4669 | `'expression': unsafe conversion: 'type' is a managed/WinRT type object` |
+| C4674 | `'name' should be declared 'static' and have exactly one parameter` |
+| C4680 | `'type': coclass does not specify a default interface` |
+| C4681 | `'type': coclass does not specify a default interface that is an event source` |
+| C4682 | `'type': no directional parameter attribute specified, defaulting to [in]` |
+| C4683 | `'declaration': event source has an 'out'-parameter; exercise caution when hooking multiple event handlers` |
+| C4684 | `'description': WARNING!! attribute may cause invalid code generation: use with caution` |
+| C4685 | `expecting '> >' found '>>' when parsing template parameters` |
+| C4700 | `uninitialized local variable 'name' used` |
+| C4701 | `potentially uninitialized local variable 'name' used` |
+| C4702 | `unreachable code` |
+| C4711 | `function 'name' selected for automatic inline expansion` |
+| C4714 | `function 'declaration' marked as __forceinline not inlined` |
+| C4715 | `'function': not all control paths return a value` |
+| C4716 | `'function': must return a value` |
+| C4717 | `'function': recursive on all control paths, function will cause runtime stack overflow` |
+| C4718 | `'function': recursive call has no side effects, deleting` |
+| C4719 | `Double constant found when Qfast specified - use 'f' as a suffix to indicate single precision` |
+| C4723 | `potential divide by 0` |
+| C4724 | `potential mod by 0` |
+| C4725 | `instruction may be inaccurate on some Pentiums` |
+| C4757 | `subscript is a large unsigned value, did you intend a negative constant?` |
+| C4772 | `#import referenced a type from a missing type library; 'description' used as a placeholder` |
+| C4792 | `function 'function' declared using sysimport and referenced from native code; import library required to link` |
+| C4794 | `segment of thread local storage variable 'name' changed from 'segment' to 'segment'` |
+| C4798 | `native code generated for p-code function 'name' with exception handler or unwind semantics` |
+| C4799 | `function 'name' has no EMMS instruction` |
+| C4803 | `'declaration': the raise method has a different storage class from that of the event, 'declaration'` |
+| C4810 | `value of pragma pack(show) == number` |
+| C4811 | `value of pragma conform(forScope, show) == value` |
+| C4820 | `'type': 'number' bytes padding added after type 'type'` |
+| C4905 | `wide string literal cast to 'type'` |
+| C4906 | `string literal cast to 'type'` |
+| C4912 | `'attribute': attribute has undefined behavior on a nested UDT` |
+| C4916 | `in order to have a dispid, 'type': must be introduced by an interface` |
+| C4917 | `'type': a GUID can only be associated with a class, interface or namespace` |
+| C4918 | `'character': invalid character in pragma optimization list` |
+| C4920 | `enum name member name=number already seen in enum name as name=number` |
+| C4921 | `'name': attribute value 'value' should not be multiply specified` |
+| C4925 | `'declaration': dispinterface method cannot be called from script` |
+| C4926 | `'declaration': symbol is already defined: attributes ignored` |
+| C4927 | `illegal conversion; more than one user-defined conversion has been implicitly applied` |
+| C4928 | `illegal copy-initialization; more than one user-defined conversion has been implicitly applied` |
+| C4929 | `'description': typelibrary contains a union; ignoring the 'embedded_idl' qualifier` |
+| C4930 | `'declaration': prototyped function not called (was a variable definition intended?)` |
+| C4931 | `we are assuming the type library was built for number-bit pointers` |
+| C4932 | `__identifier(description) and __identifier(description) are indistinguishable` |
+| C4934 | `'__delegate(multicast)' is deprecated, use '__delegate' instead` |
+| C4935 | `assembly access specifier modified from 'description'` |
+| C4944 | `'name': cannot import symbol from 'source': as 'declaration' already exists in the current scope` |
+| C4945 | `'name': cannot import symbol from 'source': as 'declaration' has already been imported from another assembly 'source'` |
+| C4946 | `reinterpret_cast used between related classes: 'declaration' and 'declaration'` |
+| C4995 | `'name': name was marked as #pragma deprecated` |
+| C4996 | `'issue': description` |
+| C4997 | `'type': coclass does not implement a COM interface or pseudo-interface` |
+| C4998 | `EXPECTATION FAILED: description(number)` |
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [/Wv derleyici seçeneği](../../build/reference/compiler-option-warning-level.md)
-- [Varsayılan olarak kapalı olan derleyici uyarıları](../../preprocessor/compiler-warnings-that-are-off-by-default.md)
-- [warning](../../preprocessor/warning.md)
+[C /C++ derleyicisi ve derleme araçları hataları ve Uyarıları](../compiler-errors-1/c-cpp-build-errors.md) \
+[Derleyici uyarılarını C4000 - C5999](compiler-warnings-c4000-c5999.md) \
+[/Wv derleyici seçeneği](../../build/reference/compiler-option-warning-level.md) \
+[Varsayılan olarak kapalı olan derleyici uyarıları](../../preprocessor/compiler-warnings-that-are-off-by-default.md) \
+[warning](../../preprocessor/warning.md)

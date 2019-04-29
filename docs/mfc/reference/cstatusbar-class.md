@@ -37,11 +37,11 @@ helpviewer_keywords:
 - CStatusBar [MFC], SetPaneText
 ms.assetid: a3bde3db-e71c-4881-a3ca-1d5481c345ba
 ms.openlocfilehash: d714159aa9fd52df682b1e5f3dbf3957bbef1b91
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58777343"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62323849"
 ---
 # <a name="cstatusbar-class"></a>CStatusBar sınıfı
 

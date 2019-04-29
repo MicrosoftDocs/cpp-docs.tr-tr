@@ -24,11 +24,11 @@ helpviewer_keywords:
 - exception handling, termination
 ms.assetid: 3ff1456a-7898-44bc-9266-a328a80b6006
 ms.openlocfilehash: 7be81dec7fba80a273d635cbd30b96b09928bc66
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50493918"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62356452"
 ---
 # <a name="setterminate-crt"></a>set_terminate (CRT)
 
@@ -51,7 +51,7 @@ Tarafından kaydedilen önceki işlevine bir işaretçi döndürür **set_termin
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Set_terminate** işlev yükler *termFunction* çağrılan işlev olarak **sonlandırmak**. **set_terminate** C++ özel durum işleme ile kullanılır ve özel durum önce programınızda herhangi bir noktada çağrılabilir. **sonlandırma** çağrıları [iptal](abort.md) varsayılan olarak. Kendi sonlandırma işlevi yazma ve arama bu varsayılanı değiştirebileceğiniz **set_terminate** bağımsız değişken olarak işlevinizi adı. **sonlandırma** bağımsız değişkeni olarak verilen son işlevi çağırır **set_terminate**. Temizleme görevleri gerçekleştirme herhangi istenen sonra *termFunction* programdan çıkmak. (Arayanına dönerse), mevcut değil ise, [iptal](abort.md) çağrılır.
+**Set_terminate** işlev yükler *termFunction* çağrılan işlev olarak **sonlandırmak**. **set_terminate** ile kullanılan C++ özel durum işleme ve özel durum önce programınızda herhangi bir noktada çağrılabilir. **sonlandırma** çağrıları [iptal](abort.md) varsayılan olarak. Kendi sonlandırma işlevi yazma ve arama bu varsayılanı değiştirebileceğiniz **set_terminate** bağımsız değişken olarak işlevinizi adı. **sonlandırma** bağımsız değişkeni olarak verilen son işlevi çağırır **set_terminate**. Temizleme görevleri gerçekleştirme herhangi istenen sonra *termFunction* programdan çıkmak. (Arayanına dönerse), mevcut değil ise, [iptal](abort.md) çağrılır.
 
 Çok iş parçacıklı bir ortamda, sonlandırma işlevleri her bir iş parçacığı için ayrı olarak korunur. Her yeni bir iş parçacığı kendi sonlandırma işlevi yüklemeniz gerekir. Bu nedenle, her iş parçacığının kendi sonlandırma işlemeyi sorumlu olduğu.
 

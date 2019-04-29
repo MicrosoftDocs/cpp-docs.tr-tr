@@ -7,11 +7,11 @@ helpviewer_keywords:
 - common controls [MFC], about common controls
 ms.assetid: a252acad-3cc0-440e-bbc6-43eaaf8cb7bb
 ms.openlocfilehash: 6a31c783e19603eadb90fd0e6be99ff55f4eaeb7
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57293517"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62352183"
 ---
 # <a name="making-and-using-controls"></a>Denetimleri Yapma ve Kullanma
 

@@ -31,11 +31,11 @@ helpviewer_keywords:
 - _wsetlocale function
 ms.assetid: 3ffb684e-5990-4202-9553-b5339af9520d
 ms.openlocfilehash: 618b3e58a52e89561439fe76bf1b30e3cbbce001
-ms.sourcegitcommit: 42e65c171aaa17a15c20b155d22e3378e27b4642
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58356211"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62356361"
 ---
 # <a name="setlocale-wsetlocale"></a>setlocale, _wsetlocale
 

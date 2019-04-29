@@ -13,11 +13,11 @@ helpviewer_keywords:
 - _S_IREAD constant
 ms.assetid: 593cad33-31d1-44d2-8941-8af7d210c88c
 ms.openlocfilehash: 0e042cddce6edf079aa54f114130f9750412e327
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57742710"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62343855"
 ---
 # <a name="file-permission-constants"></a>Dosya İzin Sabitleri
 

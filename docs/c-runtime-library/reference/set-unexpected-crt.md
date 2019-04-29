@@ -23,11 +23,11 @@ helpviewer_keywords:
 - exception handling, termination
 ms.assetid: ebcef032-4771-48e5-88aa-2a1ab8750aa6
 ms.openlocfilehash: 6c38421e447ca7b3f263148f51f0ade5c59e2804
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50484233"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62356413"
 ---
 # <a name="setunexpected-crt"></a>set_unexpected (CRT)
 

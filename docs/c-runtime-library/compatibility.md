@@ -9,11 +9,11 @@ helpviewer_keywords:
 - compatibility
 ms.assetid: 346709cb-edda-4909-9a19-3d253eddb6b7
 ms.openlocfilehash: f562a6a214cd1fb3feba2caf26831797d4b182fb
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50465290"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62344687"
 ---
 # <a name="compatibility"></a>Uyumluluk
 

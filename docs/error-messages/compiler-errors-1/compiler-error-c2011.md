@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2011
 ms.assetid: 992c9d51-e850-4d53-b86b-02e73b38249c
 ms.openlocfilehash: 14969c9cdf4b00844d2001bf4817ea7ffc9bfba6
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50662946"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62361561"
 ---
 # <a name="compiler-error-c2011"></a>Derleyici Hatası C2011
 

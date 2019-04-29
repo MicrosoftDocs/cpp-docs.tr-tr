@@ -62,11 +62,11 @@ helpviewer_keywords:
 - __has_trivial_constructor keyword [C++]
 ms.assetid: cd440630-0394-48c0-a16b-1580b6ef5844
 ms.openlocfilehash: d068917a02fef0f1d4b7fd46fd6978da2d358872
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59026892"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62346765"
 ---
 # <a name="compiler-support-for-type-traits-ccli-and-ccx"></a>Tür özellikleri için derleyici desteği (C++/CLI ve C++/CX)
 

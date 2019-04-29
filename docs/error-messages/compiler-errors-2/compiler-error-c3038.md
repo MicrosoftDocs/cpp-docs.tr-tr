@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3038
 ms.assetid: 140ada3e-5636-43ef-a4ee-22a9f66a771f
 ms.openlocfilehash: 0baceeec9911181d9b21c53edf55b73686801316
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50642751"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62350159"
 ---
 # <a name="compiler-error-c3038"></a>Derleyici Hatası C3038
 

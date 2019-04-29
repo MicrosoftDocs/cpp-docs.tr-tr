@@ -23,11 +23,11 @@ helpviewer_keywords:
 - std::queue [C++], size
 ms.assetid: 28c20ab0-3a72-4185-9e0f-5a44eea0e204
 ms.openlocfilehash: 2b82e4237a525b09758323ae2483d8818fc938af
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50429737"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62369949"
 ---
 # <a name="queue-class"></a>queue Sınıfı
 
@@ -42,7 +42,7 @@ class queue
 
 ### <a name="parameters"></a>Parametreler
 
-*Türü*<br/>
+*Tür*<br/>
 Kuyrukta depolanacak öğe veri türü
 
 *Kapsayıcı*<br/>
@@ -56,7 +56,7 @@ Sıra için uygun alt kapsayıcı sınıflarını içerir [deque](../standard-li
 
 Sıranın nesnelerini: eşitlik için karşılaştırılabilir ise ve yalnızca sınıfın öğelerine `Type` eşitlik benzerdir ve küçük-karşılaştırılabilir ve yalnızca daha sınıfına ait öğelerin `Type` küçüktür-daha karşılaştırılabilir.
 
-Kapsayıcı bağdaştırıcıları C++ Standart Kitaplığı tarafından tanımlanan üç tür vardır: priority_queue yığın ve kuyruk. Her bir standart veri yapısı için kesin bir şekilde denetlenen bir arabirim sağlamak üzere temel alınan bazı kapsayıcı sınıfı işlevselliğini kısıtlar.
+Kapsayıcı bağdaştırıcıları tarafından tanımlanan üç tür vardır C++ standart kitaplığı: priority_queue yığın ve kuyruk. Her bir standart veri yapısı için kesin bir şekilde denetlenen bir arabirim sağlamak üzere temel alınan bazı kapsayıcı sınıfı işlevselliğini kısıtlar.
 
 - [Yığın sınıfı](../standard-library/stack-class.md) son giren ilk çıkar (LIFO) veri yapısı destekler. Akılda tutulması için iyi bir analog kalıplarını yığınını olacaktır. Öğeleri (kalıplarını) eklendiğinde, inceledi veya yalnızca en son öğe temel kapsayıcı sonunda yığın kaldırılır. Yalnızca üst öğesi erişme kısıtlamasını stack sınıfı kullanarak nedenidir.
 

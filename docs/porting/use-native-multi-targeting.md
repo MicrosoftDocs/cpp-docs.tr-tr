@@ -6,11 +6,11 @@ helpviewer_keywords:
 - upgrading Visual C++ applications, retargeting
 ms.assetid: b115aabe-a9dc-4525-90d3-367d97ea20c9
 ms.openlocfilehash: 57e9556ccb7313c137c173e0f2143dc6e563d4c3
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58898823"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62337160"
 ---
 # <a name="use-native-multi-targeting-in-visual-studio-to-build-old-projects"></a>Yerel çoklu sürüm desteğinin Visual Studio'da eski projeleri oluşturmak için kullanın
 
@@ -67,4 +67,4 @@ Bu ürünler yüklü olduğunda **Platform araç takımını** özellik açılan
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Önceki Visual C++ Sürümü Projelerini Yükseltme](upgrading-projects-from-earlier-versions-of-visual-cpp.md)<br/>
-[Visual Studio'da C++ uyumluluk geliştirmeleri](../overview/cpp-conformance-improvements.md)
+[Visual Studio’deki C++ uyumluluk geliştirmeleri](../overview/cpp-conformance-improvements.md)

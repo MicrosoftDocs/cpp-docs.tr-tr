@@ -3,11 +3,11 @@ title: E. OpenMP C/C++'daki uygulama tanımlı davranışlar
 ms.date: 01/22/2019
 ms.assetid: b8d660ca-9bb3-4b6b-87af-45c67d43a731
 ms.openlocfilehash: 3d8e9493cad1fce02e5d482cd5e612afb44bb37b
-ms.sourcegitcommit: 382e247c0f1b4cb7c2dab837b8b6fdff24bff47a
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/28/2019
-ms.locfileid: "55087229"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62362763"
 ---
 # <a name="e-implementation-defined-behaviors-in-openmp-cc"></a>E. OpenMP C/C++'daki uygulama tanımlı davranışlar
 

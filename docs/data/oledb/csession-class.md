@@ -41,11 +41,11 @@ helpviewer_keywords:
 - StartTransaction method
 ms.assetid: 83cd798f-b45d-4f11-a23c-29183390450c
 ms.openlocfilehash: b34a6300473db94621360f1d04fd73ddd7e8bd69
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59041464"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62366465"
 ---
 # <a name="csession-class"></a>CSession Sınıfı
 

@@ -10,11 +10,11 @@ helpviewer_keywords:
 - _fmode function
 ms.assetid: ac6df9eb-e5cc-4c54-aff3-373c21983118
 ms.openlocfilehash: a41d665eab50203fc3bb176f8bb1bbc30737e844
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57741940"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62343894"
 ---
 # <a name="fmode"></a>_fmode
 

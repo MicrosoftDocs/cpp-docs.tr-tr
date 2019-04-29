@@ -31,11 +31,11 @@ helpviewer_keywords:
 - time, converting
 ms.assetid: 974f1727-10ff-4ed4-8cac-2eb2d681f576
 ms.openlocfilehash: bc2d7a50442d9000eaaebf7a06bf336b3317e4df
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50577919"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62341814"
 ---
 # <a name="asctime-wasctime"></a>asctime, _wasctime
 

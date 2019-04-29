@@ -23,11 +23,11 @@ helpviewer_keywords:
 - CrtSetReportMode function
 ms.assetid: 3ecc6a12-afdd-4242-b046-8187ff6d4b36
 ms.openlocfilehash: 2096d39a8ba316fc76c97517a16e34231940e7f4
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50595539"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62335301"
 ---
 # <a name="crtsetreportmode"></a>_CrtSetReportMode
 
@@ -83,7 +83,7 @@ Aşağıdaki tabloda, Crtdbg.h tanımlanan rapor türlerini listeler.
 |**_CRTDBG_MODE_DEBUG**|Hata Ayıklayıcı'nın çıkış penceresine ileti yazar.|
 |**_CRTDBG_MODE_FILE**|Bir kullanıcı tarafından sağlanan dosya işleci ileti yazar. [_CrtSetReportFile](crtsetreportfile.md) belirli dosya ya da hedef olarak kullanılmak üzere akış tanımlamak için çağrılmalıdır.|
 |**_CRTDBG_MODE_WNDW**|Beraber iletiyi görüntülemek için bir ileti kutusu oluşturur [iptal](abort.md), **yeniden**, ve **Yoksay** düğmeleri.|
-|**_CRTDBG_REPORT_MODE**|Döndürür *reportMode* için belirtilen *reportType*:<br /><br /> 1 **_CRTDBG_MODE_FILE**<br /><br /> 2 **_CRTDBG_MODE_DEBUG**<br /><br /> 4 **_CRTDBG_MODE_WNDW**|
+|**_CRTDBG_REPORT_MODE**|Döndürür *reportMode* için belirtilen *reportType*:<br /><br /> 1   **_CRTDBG_MODE_FILE**<br /><br /> 2   **_CRTDBG_MODE_DEBUG**<br /><br /> 4   **_CRTDBG_MODE_WNDW**|
 
 Her rapor türü, hiç bir, iki veya üç modları veya yok modu kullanılarak bildirilebilir. Bu nedenle, bir tek bir rapor türü için tanımlanan birden fazla hedef olması mümkündür. Örneğin, aşağıdaki kod parçası ve için hem bir hata ayıklama ileti penceresine gönderilecek onaylama işlemi hataları neden **stderr**:
 
@@ -102,7 +102,7 @@ Ayrıca, raporlama modu veya modları her rapor türü için ayrı olarak denetl
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
-**Kitaplıklar:** hata ayıklama sürümleri [CRT kitaplık özellikleri](../../c-runtime-library/crt-library-features.md) yalnızca.
+**Kitaplıklar:** Hata ayıklama sürümleri [CRT kitaplık özellikleri](../../c-runtime-library/crt-library-features.md) yalnızca.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

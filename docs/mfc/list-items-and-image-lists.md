@@ -8,11 +8,11 @@ helpviewer_keywords:
 - list items [MFC], image lists
 ms.assetid: 317d095f-f978-47da-acb6-7bfe7dd3bc69
 ms.openlocfilehash: 1679b5c59c6dd55ca47c70ea7c880493304ebf4e
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57304320"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62365279"
 ---
 # <a name="list-items-and-image-lists"></a>Liste Öğeleri ve Görüntü Listeleri
 

@@ -24,11 +24,11 @@ helpviewer_keywords:
 - recalloc function
 ms.assetid: 1db8305a-3f03-418c-8844-bf9149f63046
 ms.openlocfilehash: 3bcc238dcb950a8e30af16efc557e99d933efe92
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50436523"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62357729"
 ---
 # <a name="recalloc"></a>_recalloc
 
@@ -73,7 +73,7 @@ Yeni bir blok içinde yeni bir bellek konumuna olabileceğinden, işaretçi tara
 
 **_recalloc** ayarlar **errno** için **ENOMEM** bellek ayırma başarısız olursa veya bellek miktarını aşıyor istenirse **_HEAP_MAXREQ**. Bu ve diğer hata kodları hakkında daha fazla bilgi için bkz: [errno _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
-**recalloc** çağrıları **realloc** C++ kullanmak için [_set_new_mode](set-new-mode.md) yeni işleyici modu ayarlamak için işlevi. Yeni işleyici modunu gösterir mi, hata durumunda, **realloc** tarafından belirlenen yeni işleyici rutinini çağırmaktır [_set_new_handler](set-new-handler.md). Varsayılan olarak, **realloc** bellek dağıtma hatasında yeni işleyici rutinini çağırmaz. Bu varsayılan davranışı geçersiz kılabilirsiniz böylece, **_recalloc** bellek ayırmak başarısız **realloc** aynı yeni işleyici rutinini çağırır biçimi **yeni** işleci aynı nedenden dolayı başarısız olduğunda yapar. Varsayılan geçersiz kılmak için çağırın
+**recalloc** çağrıları **realloc** kullanmak için C++ [_set_new_mode](set-new-mode.md) yeni işleyici modu ayarlamak için işlevi. Yeni işleyici modunu gösterir mi, hata durumunda, **realloc** tarafından belirlenen yeni işleyici rutinini çağırmaktır [_set_new_handler](set-new-handler.md). Varsayılan olarak, **realloc** bellek dağıtma hatasında yeni işleyici rutinini çağırmaz. Bu varsayılan davranışı geçersiz kılabilirsiniz böylece, **_recalloc** bellek ayırmak başarısız **realloc** aynı yeni işleyici rutinini çağırır biçimi **yeni** işleci aynı nedenden dolayı başarısız olduğunda yapar. Varsayılan geçersiz kılmak için çağırın
 
 ```C
 _set_new_mode(1);

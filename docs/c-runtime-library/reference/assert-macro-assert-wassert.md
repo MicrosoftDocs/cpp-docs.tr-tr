@@ -29,11 +29,11 @@ helpviewer_keywords:
 - assert macro
 ms.assetid: a9ca031a-648b-47a6-bdf1-65fc7399dd40
 ms.openlocfilehash: 7ac299213ba3de878f7cf2dc99b44c45273bc3b2
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50590963"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62341372"
 ---
 # <a name="assert-macro-assert-wassert"></a>Assert makrosu, _assert, _wassert
 
@@ -81,7 +81,7 @@ Tanılama iletisi geniş karakter yazdırılır. Bu nedenle, ifade Unicode karak
 
 Tanılama iletisi hedefinin yordamı çağıran uygulama türüne bağlıdır. Konsol uygulamaları her zaman aracılığıyla iletisini alırsınız **stderr**. Windows tabanlı bir uygulama içinde **assert** Windows çağırır [MessageBox](/windows/desktop/api/winuser/nf-winuser-messagebox) beraber iletiyi görüntülemek için bir ileti kutusu oluşturmak için işlevi bir **Tamam** düğmesi. Kullanıcı tıkladığında **Tamam**, program hemen durdurur.
 
-Uygulama çalışma zamanı kitaplıklarının hata ayıklama sürümü ile ilişkilendirildiğinde **assert** üç düğme bir ileti kutusu oluşturur: **iptal**, **yeniden**ve **Yoksay**. Kullanıcı tıklarsa **iptal**, program hemen durdurur. Kullanıcı tıklarsa **yeniden**, hata ayıklayıcı adı verilir ve tam zamanında (JIT) hata ayıklama etkinleştirilirse kullanıcı programı hata ayıklaması yapabilirsiniz. Kullanıcı tıklarsa **Yoksay**, **assert** normal yürütülmeye devam eder: ileti kutusuyla oluşturma **Tamam** düğmesi. Sonuçlandığını unutmayın **Yoksay** bir hata koşulu olduğunda mevcut tanımsız davranışlara neden olabilir.
+Uygulama çalışma zamanı kitaplıklarının hata ayıklama sürümü ile ilişkilendirildiğinde **assert** bir ileti kutusu üç düğmesi oluşturur: **Abort**, **yeniden**, ve **Yoksay**. Kullanıcı tıklarsa **iptal**, program hemen durdurur. Kullanıcı tıklarsa **yeniden**, hata ayıklayıcı adı verilir ve tam zamanında (JIT) hata ayıklama etkinleştirilirse kullanıcı programı hata ayıklaması yapabilirsiniz. Kullanıcı tıklarsa **Yoksay**, **assert** normal yürütülmeye devam eder: ileti kutusuyla oluşturma **Tamam** düğmesi. Sonuçlandığını unutmayın **Yoksay** bir hata koşulu olduğunda mevcut tanımsız davranışlara neden olabilir.
 
 CRT hata ayıklama hakkında daha fazla bilgi için bkz. [CRT hata ayıklama teknikleri](/visualstudio/debugger/crt-debugging-techniques).
 
@@ -93,7 +93,7 @@ CRT hata ayıklama hakkında daha fazla bilgi için bkz. [CRT hata ayıklama tek
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**Assert**, **_wassert**|\<Assert.h >|
+|**assert**, **_wassert**|\<Assert.h >|
 
 İmzası **_assert** işlevi kullanılabilir değil bir üstbilgi dosyasında. İmzası **_wassert** işlevi, yalnızca kullanılabilir olduğunda **NDEBUG** Makro tanımlı değil.
 

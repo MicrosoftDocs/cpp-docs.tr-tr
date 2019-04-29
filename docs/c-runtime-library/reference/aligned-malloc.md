@@ -24,11 +24,11 @@ helpviewer_keywords:
 - _aligned_malloc function
 ms.assetid: fb788d40-ee94-4039-aa4d-97d73dab1ca0
 ms.openlocfilehash: c89dff7d2159855037fee565f2148a8edb89f07d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50514396"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62341827"
 ---
 # <a name="alignedmalloc"></a>_aligned_malloc
 

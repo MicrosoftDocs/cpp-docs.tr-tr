@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2107
 ms.assetid: 2866a121-884e-4bb5-8613-36de5817000e
 ms.openlocfilehash: 2b388495c6ce31452bd3f8e8bfc6c26a6bfbdbe8
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50643033"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62364798"
 ---
 # <a name="compiler-error-c2107"></a>Derleyici Hatası C2107
 

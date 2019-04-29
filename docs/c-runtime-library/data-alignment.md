@@ -7,11 +7,11 @@ helpviewer_keywords:
 - data alignment [C++]
 ms.assetid: 35ac3d2d-a4b3-421b-954f-b7372b1f18e1
 ms.openlocfilehash: 92b8df81751e01e655e348d5f090705e5194312b
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57738817"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62344531"
 ---
 # <a name="data-alignment"></a>Veri Hizalama
 

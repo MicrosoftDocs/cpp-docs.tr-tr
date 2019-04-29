@@ -43,11 +43,11 @@ helpviewer_keywords:
 - CObArray [MFC], SetSize
 ms.assetid: d71f3d8f-ef9f-4e48-9b69-7782c0e2ddf7
 ms.openlocfilehash: 39d5fd4707f1c03de78cf9fd078655389c93ba17
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57298756"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62323550"
 ---
 # <a name="cuintarray-class"></a>Cuıntarray sınıfı
 

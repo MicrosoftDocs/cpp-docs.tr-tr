@@ -5,11 +5,11 @@ helpviewer_keywords:
 - breaking changes [C++]
 ms.assetid: b38385a9-a483-4de9-99a6-797488bc5110
 ms.openlocfilehash: b381a2b7cc9a4ad4749f382838bdec5872a3decf
-ms.sourcegitcommit: 88631cecbe3e3fa752eae3ad05b7f9d9f9437b4d
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/15/2019
-ms.locfileid: "58898888"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62337017"
 ---
 # <a name="visual-c-change-history-2003---2015"></a>Visual C++ değişiklik geçmişi 2003-2015
 
@@ -98,7 +98,7 @@ Ayrıca, derleyici uyumluluğu yapılan sürekli geliştirmeler bazen nasıl der
 
 - **_beginthread ve _beginthreadex**
 
-   The [_beginthread](../c-runtime-library/reference/beginthread-beginthreadex.md) and [_beginthreadex](../c-runtime-library/reference/beginthread-beginthreadex.md) functions now hold a reference to the module in which the thread procedure is defined for the duration of the thread. Bu, bir iş parçacığı çalıştırılıp tamamlandıktan kadar modülleri yüklenmemiş olmamasını yardımcı olur.
+   [_Beginthread](../c-runtime-library/reference/beginthread-beginthreadex.md) ve [_beginthreadex](../c-runtime-library/reference/beginthread-beginthreadex.md) işlevleri artık süresi boyunca, iş parçacığının iş parçacığı yordamı tanımlanır modülüne bir başvuru tutun. Bu, bir iş parçacığı çalıştırılıp tamamlandıktan kadar modülleri yüklenmemiş olmamasını yardımcı olur.
 
 #### <a name="stdargh"></a>\<stdarg.h >
 

@@ -49,11 +49,11 @@ helpviewer_keywords:
 - formatted text [C++]
 ms.assetid: 5976c9c8-876e-4ac9-a515-39f3f7fd0925
 ms.openlocfilehash: 202f2f12de3955a2c9b0f785c3e89280d91a4a95
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50653691"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62355725"
 ---
 # <a name="snprintf-snprintf-snprintfl-snwprintf-snwprintfl"></a>snprintf _snprintf, _snprintf_l _snwprintf, _snwprintf_l
 
@@ -187,7 +187,7 @@ C++ dilinde, daha yeni ve daha güvenli karşıtları başlatan şablon aşırı
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**snprintf**, **_snprintf**, **_snprintf_l**|\<stdio.h >|
+|**snprintf**, **_snprintf**,  **_snprintf_l**|\<stdio.h >|
 |**_snwprintf**, **_snwprintf_l**|\<stdio.h > veya \<wchar.h >|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).

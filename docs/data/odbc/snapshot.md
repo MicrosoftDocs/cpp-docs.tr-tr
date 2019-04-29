@@ -12,11 +12,11 @@ helpviewer_keywords:
 - snapshots
 ms.assetid: b5293a52-0657-43e9-bd71-fe3785b21c7e
 ms.openlocfilehash: 5999f89156d895ff0c87c892be892c6a614a0132
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59037652"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62330043"
 ---
 # <a name="snapshot"></a>Anlık Görüntü
 

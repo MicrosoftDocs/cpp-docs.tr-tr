@@ -11,11 +11,11 @@ helpviewer_keywords:
 - apartment model threading [MFC]
 ms.assetid: b2ab4c88-6954-48e2-9a74-01d4a60df073
 ms.openlocfilehash: d6f02b2106693226f6380e935a54e04e10d5b4f8
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57261173"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62351832"
 ---
 # <a name="tn064-apartment-model-threading-in-activex-controls"></a>TN064: Apartman modeli iş parçacığı ActiveX denetimlerinde
 

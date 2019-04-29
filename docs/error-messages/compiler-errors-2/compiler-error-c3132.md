@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3132
 ms.assetid: d54a3d12-336a-4ed0-ad4e-43cddac33b5e
 ms.openlocfilehash: 1a97e04747cb92909380e66d1f4ea8ca62183054
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57424177"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62349886"
 ---
 # <a name="compiler-error-c3132"></a>Derleyici Hatası C3132
 

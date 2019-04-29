@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2100
 ms.assetid: 9ed5ea11-9d55-4ddf-8b1a-162c74f3c390
 ms.openlocfilehash: 89273d5ef9c3b011a7b08a160431dcbc17fc065e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50677545"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62350695"
 ---
 # <a name="compiler-error-c2100"></a>Derleyici Hatası C2100
 

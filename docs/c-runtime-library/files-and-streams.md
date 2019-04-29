@@ -6,11 +6,11 @@ helpviewer_keywords:
 - streams
 ms.assetid: f61e712b-eac9-4c28-bb18-97c3786ef387
 ms.openlocfilehash: ea11ea76ade8a68c2d8a92e08d3652035c996d3d
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57750799"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62343751"
 ---
 # <a name="files-and-streams"></a>Dosyalar ve Akışlar
 

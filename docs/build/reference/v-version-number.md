@@ -11,11 +11,11 @@ helpviewer_keywords:
 - -V compiler option [C++]
 ms.assetid: 3e93fb7a-5dfd-49a6-bd49-3dca8052e0f3
 ms.openlocfilehash: 7bebd3ab9677bb340203bbf857e4ee9f287e36e6
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57817614"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62317321"
 ---
 # <a name="v-version-number"></a>/V (Sürüm Numarası)
 
@@ -56,5 +56,5 @@ Ayrıca [yorum (C/C++)](../../preprocessor/comment-c-cpp.md) .obj dosyasında de
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MSVC derleyici seçenekleri](compiler-options.md)<br/>
-[MSVC derleyici komut satırı sözdizimi](compiler-command-line-syntax.md)
+[MSVC Derleyicisi Seçenekleri](compiler-options.md)<br/>
+[MSVC Derleyicisi Komut Satırı Söz Dizimi](compiler-command-line-syntax.md)

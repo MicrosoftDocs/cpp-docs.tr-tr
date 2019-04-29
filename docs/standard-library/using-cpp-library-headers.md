@@ -11,11 +11,11 @@ helpviewer_keywords:
 - C++ Standard Library, headers
 ms.assetid: a36e889e-1af2-4cd9-a211-bfc7a3fd8e85
 ms.openlocfilehash: b9841d1045a6d2d1126414f1ce4cfc93f9667eef
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50603963"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62362376"
 ---
 # <a name="using-c-library-headers"></a>C++ Kitaplığı Üstbilgilerini Kullanma
 

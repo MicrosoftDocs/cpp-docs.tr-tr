@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3222
 ms.assetid: 5624bde8-2fd0-4b8b-92ce-5dfbaf91cf93
 ms.openlocfilehash: 9f2c245e98609c8da8f5f89902d5c51bbf9d2b4f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50638678"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62364018"
 ---
 # <a name="compiler-error-c3222"></a>Derleyici Hatası C3222
 

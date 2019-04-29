@@ -4,11 +4,11 @@ ms.date: 03/14/2018
 f1_keywords:
 - POGOSAFEMODE
 ms.openlocfilehash: bbb328bf67d7823305a43f1d61252747cf5ea29e
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57821293"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62319726"
 ---
 # <a name="pogosafemode-run-pgo-in-thread-safe-mode"></a>/ POGOSAFEMODE (iş parçacığı güvenli modda PGO çalıştırın)
 

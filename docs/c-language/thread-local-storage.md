@@ -9,11 +9,11 @@ helpviewer_keywords:
 - storage, thread local storage
 ms.assetid: a0f1b109-c953-4079-aa10-e47f5483173d
 ms.openlocfilehash: 4b1aa32b384f3a5db5203883c1cc03bd61de7b19
-ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56152137"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62344999"
 ---
 # <a name="thread-local-storage"></a>İş Parçacığında Yerel Depolama
 

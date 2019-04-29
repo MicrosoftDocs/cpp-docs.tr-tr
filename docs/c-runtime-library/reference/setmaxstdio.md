@@ -26,11 +26,11 @@ helpviewer_keywords:
 - open files, maximum
 ms.assetid: 9e966875-9ff5-47c4-9b5f-e79e83b70249
 ms.openlocfilehash: 58cffedf673e23a69c2d8040071b2e3353ff4502
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50445090"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62356348"
 ---
 # <a name="setmaxstdio"></a>_setmaxstdio
 

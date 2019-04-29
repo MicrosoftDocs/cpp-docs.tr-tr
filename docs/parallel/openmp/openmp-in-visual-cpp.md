@@ -7,11 +7,11 @@ helpviewer_keywords:
 - explicit parallelization, OpenMP in Visual C++
 ms.assetid: 54d8d0da-1f47-4312-9f25-5875c7dc08ed
 ms.openlocfilehash: 0aff645ce9b0edd3976abf8dd77fff8a79d3c545
-ms.sourcegitcommit: 14b292596bc9b9b883a9c58cd3e366b282a1f7b3
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60124856"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62362653"
 ---
 # <a name="openmp-in-visual-c"></a>Visual C++'da OpenMP
 

@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2664
 ms.assetid: 3595d66e-cf87-4fda-a896-c0cd81f95db4
 ms.openlocfilehash: cffd178e1736358333ee27d4572d3531de23f527
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59777438"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62360326"
 ---
 # <a name="compiler-error-c2664"></a>Derleyici Hatası C2664
 

@@ -1,17 +1,17 @@
 ---
 title: 'İzlenecek yol: Bir projenin (C++)'
-ms.date: 09/14/2018
+ms.date: 04/25/2019
 helpviewer_keywords:
 - projects [C++], debugging
 - project debugging [C++]
 - debugging projects
 ms.assetid: a5cade77-ba51-4b03-a7a0-6897e3cd6a59
 ms.openlocfilehash: 0a1ceddca3234ead7d10cc839d41a6d644ec1866
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
-ms.translationtype: MT
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57812037"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62349925"
 ---
 # <a name="walkthrough-debugging-a-project-c"></a>İzlenecek yol: Bir projenin (C++)
 
@@ -59,4 +59,4 @@ Bu izlenecek yolda, proje sınandığında bulunan sorunu gidermek için program
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [C++ Dil Başvurusu](../cpp/cpp-language-reference.md)<br/>
-[Projeler ve yapı sistemi](../build/projects-and-build-systems-cpp.md)<br/>
+[Projeler ve derleme sistemleri](../build/projects-and-build-systems-cpp.md)<br/>

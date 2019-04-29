@@ -9,11 +9,11 @@ helpviewer_keywords:
 - C++ Accelerated Massive Parallelism
 ms.assetid: 9e593b06-6e3c-43e9-8bae-6d89efdd39fc
 ms.openlocfilehash: 258266768d3f456fb761a9d5a403a92c502dbe32
-ms.sourcegitcommit: 42e65c171aaa17a15c20b155d22e3378e27b4642
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58356250"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62349907"
 ---
 # <a name="c-amp-overview"></a>C++ AMP'ye Genel Bakış
 
@@ -102,7 +102,7 @@ void CppAmpMethod() {
 
 Aynı temel öğeler vardır, ancak C++ AMP yapıları kullanılır:
 
-- Veri: C++ dizilerini üç C++ AMP oluşturmak için kullandığınız [array_view](../../parallel/amp/reference/array-view-class.md) nesneleri. Oluşturmak için 4 değer sağlarsınız bir `array_view` nesne: veri değerleri, boyut, öğe türü ve uzunluğunu `array_view` her boyutundaki nesne. Boyut sayısı ve türü, tür parametreleri geçirilir. Veri ve uzunluk Oluşturucu parametreler olarak geçirilir. Bu örnekte, oluşturucuya iletilen C++ dizisi tek boyutlu. Boyut sayısı ve uzunluğu dikdörtgen şeklindeki verileri oluşturmak için kullanılan `array_view` nesnesi ve veri değerleri diziyi doldurmak için kullanılır. Ayrıca çalışma zamanı kitaplığı içeren [array sınıfı](../../parallel/amp/reference/array-class.md), benzer bir arabirim olduğu `array_view` sınıfı ve bu makalenin sonraki bölümlerinde ele alınmıştır.
+- Veri: Kullandığınız C++ üç oluşturmak için dizi C++ AMP [array_view](../../parallel/amp/reference/array-view-class.md) nesneleri. Oluşturmak için 4 değer sağlarsınız bir `array_view` nesne: veri değerleri, boyut, öğe türü ve uzunluğunu `array_view` her boyutundaki nesne. Boyut sayısı ve türü, tür parametreleri geçirilir. Veri ve uzunluk Oluşturucu parametreler olarak geçirilir. Bu örnekte, oluşturucuya iletilen C++ dizisi tek boyutlu. Boyut sayısı ve uzunluğu dikdörtgen şeklindeki verileri oluşturmak için kullanılan `array_view` nesnesi ve veri değerleri diziyi doldurmak için kullanılır. Ayrıca çalışma zamanı kitaplığı içeren [array sınıfı](../../parallel/amp/reference/array-class.md), benzer bir arabirim olduğu `array_view` sınıfı ve bu makalenin sonraki bölümlerinde ele alınmıştır.
 
 - Yineleme: [Parallel_for_each işlevi (C++ AMP)](reference/concurrency-namespace-functions-amp.md#parallel_for_each) veri öğeleri boyunca yineleme için bir mekanizma sağlar veya *hesaplama alanı*. Bu örnekte, hesaplama alanı tarafından belirtilen `sum.extent`. Yürütmek istediğiniz kod bir lambda ifadesinde bulunan veya *çekirdek işlevi*. `restrict(amp)` Yalnızca C++ AMP'nin hızlandırabileceği C++ dilinin alt kullanıldığını gösterir.
 

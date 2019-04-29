@@ -7,11 +7,11 @@ helpviewer_keywords:
 - RC4005
 ms.assetid: 71f03b4a-c9a9-415d-920f-bf2e58507f93
 ms.openlocfilehash: 571c4ac285e9477b017dbc21cf9ff733539759d2
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50613609"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62346190"
 ---
 # <a name="resource-compiler-warning-rc4005"></a>Kaynak Derleyicisi Uyarısı RC4005
 

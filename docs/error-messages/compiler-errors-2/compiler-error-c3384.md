@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3384
 ms.assetid: c9f92c6a-62a9-4333-b2b1-bc55c7f288b6
 ms.openlocfilehash: d1b7e1a69035df358cf84ad791f611928dab8b5a
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59779160"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62328769"
 ---
 # <a name="compiler-error-c3384"></a>Derleyici Hatası C3384
 

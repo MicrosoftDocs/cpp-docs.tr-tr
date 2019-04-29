@@ -1,17 +1,17 @@
 ---
-title: Hızlı Başvuru (C + +/ CX)
+title: Hızlı Başvuru (C++/CX)
 ms.date: 12/30/2016
 ms.assetid: ba457195-26e5-43aa-b99d-24a871e550f4
 ms.openlocfilehash: 0526c9083d177688146926598b79e66ca2f9723c
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57742070"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62362341"
 ---
-# <a name="quick-reference-ccx"></a>Hızlı Başvuru (C + +/ CX)
+# <a name="quick-reference-ccx"></a>Hızlı Başvuru (C++/CX)
 
-Windows çalışma zamanı, yalnızca güvenilir işletim sistemi ortamında yürütme, yetkili İşlevler, veri türleri ve cihazlar kullanır ve Microsoft Store dağıtılan Evrensel Windows Platformu (UWP) uygulamaları destekler. C + +/ CX uygulamaların yazılmasını Windows çalışma zamanı için basitleştirin. Bu makalede hızlı bir referanstır; daha eksiksiz belgeler için bkz: [tür sistemi](../cppcx/type-system-c-cx.md).
+Windows çalışma zamanı, yalnızca güvenilir işletim sistemi ortamında yürütme, yetkili İşlevler, veri türleri ve cihazlar kullanır ve Microsoft Store dağıtılan Evrensel Windows Platformu (UWP) uygulamaları destekler. C++/CX uygulamaların yazılmasını Windows çalışma zamanı için basitleştirin. Bu makalede hızlı bir referanstır; daha eksiksiz belgeler için bkz: [tür sistemi](../cppcx/type-system-c-cx.md).
 
 Komut satırında oluşturduğunuzda, kullanmak **/ZW** bir UWP uygulaması veya Windows çalışma zamanı bileşeni oluşturmak için derleyici seçeneği. Windows çalışma zamanı meta veri (.winmd) dosyalarında tanımlanan, Windows çalışma zamanı bildirimleri erişmeye belirtin `#using` yönergesi veya **/FU** derleyici seçeneği. Bir UWP uygulaması için bir proje oluşturduğunuzda, varsayılan olarak Visual Studio bu seçenekler ayarlar ve tüm Windows çalışma zamanı kitaplıklarına başvurular ekler.
 
@@ -19,7 +19,7 @@ Komut satırında oluşturduğunuzda, kullanmak **/ZW** bir UWP uygulaması veya
 
 |Kavram|Standart C++|C++/CX|Açıklamalar|
 |-------------|--------------------|------------------------------------------------------------------|-------------|
-|Temel türler|C++ temel türler.|C + +/ CX Windows çalışma zamanı'nda tanımlanan temel türleri uygulayan temel türler.|`default` Ad alanı içeren C + +/ CX yerleşik, temel türleri. Derleyici örtük olarak C + eşler +/ CX temel türler için standart C++ türler.<br /><br /> `Platform` Ailesi ad alanları temel Windows çalışma zamanı türleri uygulayan türler içerir.|
+|Temel türler|C++ temel türler.|C++Windows çalışma zamanı'nda tanımlanan temel türleri uygulayan /CX temel türler.|`default` Ad alanı içerir C++/CX yerleşik, temel türleri. Derleyici örtük olarak C + eşler +/ CX temel türler için standart C++ türler.<br /><br /> `Platform` Ailesi ad alanları temel Windows çalışma zamanı türleri uygulayan türler içerir.|
 ||`bool`|`bool`|Bir 8 bit Boole değeri.|
 ||`__wchar_t`|`char16`|Bir Unicode (UTF-16) kod noktasını temsil eden bir 16-bit sayısal değer.|
 ||`short`<br /><br /> `unsigned short`|`int16`<br /><br /> `uint16`|Bir 16 bitlik işaretli tamsayı.<br /><br /> Bir 16 bitlik işaretsiz tamsayı.|

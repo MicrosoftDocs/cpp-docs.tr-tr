@@ -26,11 +26,11 @@ helpviewer_keywords:
 - fpieee_flt function
 ms.assetid: 2bc4801e-0eed-4e73-b518-215da8cc9740
 ms.openlocfilehash: 9a49ec403b1cb95407b0a366accf1d9374d9cb22
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50458623"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62333254"
 ---
 # <a name="fpieeeflt"></a>_fpieee_flt
 
@@ -70,7 +70,7 @@ Dönüş değeri **_fpieee_flt** tarafından döndürülen değer *işleyici*. I
 |_Fpıeee_record alan|Açıklama|
 |----------------------------|-----------------|
 |**RoundingMode**<br/>**Duyarlık**|Bunlar **işaretsiz** **int** alanları oluşan özel durum zaman kayan nokta ortamı hakkında bilgi içerir.|
-|**İşlemi**|Bu **işaretsiz** **int** alan yakalama nedeniyle işlem türünü belirtir. Türü bir karşılaştırma ise (**_FpCodeCompare**), özel sağlayabilirsiniz **_FPIEEE_COMPARE_RESULT** değerleri (Fpieee.h içinde tanımlandığı şekilde) **Result.Value** alan. Dönüştürme türü (**_FpCodeConvert**) yakalama bir kayan nokta dönüştürme işlemi sırasında oluştuğunu gösterir. Bakabilirsiniz **işlenen1** ve **sonucu** denenen bir dönüştürme türünü belirlemek için türleri.|
+|**İşlem**|Bu **işaretsiz** **int** alan yakalama nedeniyle işlem türünü belirtir. Türü bir karşılaştırma ise (**_FpCodeCompare**), özel sağlayabilirsiniz **_FPIEEE_COMPARE_RESULT** değerleri (Fpieee.h içinde tanımlandığı şekilde) **Result.Value** alan. Dönüştürme türü (**_FpCodeConvert**) yakalama bir kayan nokta dönüştürme işlemi sırasında oluştuğunu gösterir. Bakabilirsiniz **işlenen1** ve **sonucu** denenen bir dönüştürme türünü belirlemek için türleri.|
 |**İşlenen1**<br/>**İşlenen2**<br/>**Sonuç**|Bunlar **_FPIEEE_VALUE** türlerini ve değerlerini önerilen sonucu işlenenler ve yapıları gösterir. Her yapı, bu alanları içerir:<br /><br /> **OperandValid** - yanıt veren değerinin geçerli olup olmadığını belirten bayrak.<br />**Biçim** -ilgili değerin veri türü. Buna karşılık gelen değer, geçerli olmasa bile biçim türü döndürdü.<br />**Değer** -sonuç ya da işlenen veri değeri.|
 |**Nedeni**<br/>**Enable**<br/>**Status**|**_FPIEEE_EXCEPTION_FLAGS** kayan nokta özel durum türüne göre bir bit alanı içerir. Bu alanlar ve sağlanan özel durumlarını maskelemek için kullanılan bağımsız değişkenler arasındaki ilişkiyi yoktur [_controlfp](control87-controlfp-control87-2.md). Her bitin tam anlamı bağlam üzerinde bağlıdır:<br /><br /> **Neden** -her set bit gerçekleşmesine neden olan belirli özel durum belirtir.<br />**Etkinleştirme** -her set bit belirli özel durum şu anda maskelenmemiş belirtir.<br />**Durum** -her set bit belirli özel durum şu anda beklemede olduğunu gösterir. Bu tarafından maskelenen çünkü gündeme gelmiş değil özel durumları içerir **_controlfp**.|
 

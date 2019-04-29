@@ -10,11 +10,11 @@ helpviewer_keywords:
 - Zc compiler options (C++)
 ms.assetid: e3d6058f-400d-4966-a3aa-800cfdf69cbf
 ms.openlocfilehash: 7a20123603030dfe719cd8990018f795df137981
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57814273"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62316008"
 ---
 # <a name="zctrigraphs-trigraphs-substitution"></a>/Zc:trigraphs (Trigrafları Değiştirme)
 

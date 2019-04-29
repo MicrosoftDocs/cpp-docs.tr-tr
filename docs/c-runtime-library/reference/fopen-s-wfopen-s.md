@@ -34,11 +34,11 @@ helpviewer_keywords:
 - Unicode [C++], files
 ms.assetid: c534857e-39ee-4a3f-bd26-dfe551ac96c3
 ms.openlocfilehash: 1309f991b8251bde7d614aa274d8d2e9da7a8ed3
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51333357"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62333332"
 ---
 # <a name="fopens-wfopens"></a>fopen_s, _wfopen_s
 
@@ -98,7 +98,7 @@ Her zaman dosyanın başka bir işlem gerçekleştirmeden önce işlevi başarı
 
 **fopen_s** Unicode dosya akışlarını destekler. Yeni veya mevcut bir Unicode dosyasını açmak için başarılı bir *ccs* istenen kodlamayı belirten bayrak **fopen_s**:
 
-**fopen_s (& fp, "newfile.txt", "rw ccs =**_kodlama_**");**
+**fopen_s(&fp, "newfile.txt", "rw, ccs=**_encoding_**");**
 
 İzin verilen değerler *kodlama* olan **UNICODE**, **UTF-8**, ve **UTF-16LE**. Var. için hiçbir değer belirtilmemişse *kodlama*, **fopen_s** ANSI kodlaması kullanır.
 
@@ -136,7 +136,7 @@ Karakter dizesi *modu* dosya için şu şekilde istenen erişim türünü belirt
 | **"a"** | (Ekleme dosyaya yeni veri yazılmadan önce dosya sonu (EOF) işaretçisini kaldırmadan) dosyanın sonunda yazma için açar. Henüz yoksa dosyayı oluşturur. |
 | **"r +"** | Hem okuma ve yazma için açar. Dosyanın mevcut olması gerekir. |
 | **"w +"** | Hem okuma ve yazma için boş bir dosya açar. Dosya varsa içeriği yok edilir. |
-| **"a +"** | Okuma ve ekleme için açar. Ekleme işlemi, dosyaya yeni veri yazılmadan önce EOF işaretinin kaldırılmasını içerir. Yazma tamamlandıktan sonra EOF işaretçisi geri yüklenmez. Henüz yoksa dosyayı oluşturur. |
+| **"a+"** | Okuma ve ekleme için açar. Ekleme işlemi, dosyaya yeni veri yazılmadan önce EOF işaretinin kaldırılmasını içerir. Yazma tamamlandıktan sonra EOF işaretçisi geri yüklenmez. Henüz yoksa dosyayı oluşturur. |
 
 Ne zaman bir dosya açıldığında kullanarak **"a"** veya **"a +"** erişim türü, tüm yazma işlemleri dosyanın sonunda gerçekleşir. Dosya işaretçisini kullanarak konumlandırılabilir [fseek](fseek-fseeki64.md) veya [rewind](rewind.md), ancak herhangi bir işlemi gerçekleştirilir böylece var olan verilerin üzerine yazma önce her zaman geri dosyanın sonuna kadar taşınır.
 
@@ -175,22 +175,22 @@ Geçerli karakterler için *modu* kullanılan dize **fopen_s** ve [_fdopen](fdop
 |Öğesindeki karakterler *modu* dize|Eşdeğer *oflag* _aç/_sopen değeri|
 |-------------------------------|----------------------------------------------------|
 |**a**|**_O_WRONLY** &#124; **_O_APPEND** (genellikle **_O_WRONLY** &#124; **_O_CREAT** &#124;** _O_APPEND **)|
-|**bir +**|**_O_RDWR** &#124; **_O_APPEND** (genellikle **_O_RDWR** &#124; **_O_APPEND** &#124; **_O_CREAT** )|
+|**a+**|**_O_RDWR** &#124; **_O_APPEND** (usually **_O_RDWR** &#124; **_O_APPEND** &#124; **_O_CREAT** )|
 |**r**|**_O_RDONLY**|
 |**r +**|**_O_RDWR**|
-|**w**|**_O_WRONLY** (genellikle **_O_WRONLY** &#124; **_O_CREAT** &#124;** _O_TRUNC **)|
-|**w +**|**_O_RDWR** (genellikle **_O_RDWR** &#124; **_O_CREAT** &#124; **_O_TRUNC**)|
+|**w**|**_O_WRONLY** (usually **_O_WRONLY** &#124; **_O_CREAT** &#124;** _O_TRUNC**)|
+|**w +**|**_O_RDWR** (usually **_O_RDWR** &#124; **_O_CREAT** &#124; **_O_TRUNC**)|
 |**b**|**_O_BINARY**|
 |**T**|**_O_TEXT**|
 |**c**|Yok.|
-|**n**|Yok.|
+|**n**|None|
 |**S**|**_O_SEQUENTIAL**|
 |**R**|**_O_RANDOM**|
 |**T**|**_O_SHORTLIVED**|
 |**D**|**_O_TEMPORARY**|
 |**ccs UNICODE =**|**_O_WTEXT**|
-|**ccs = UTF-8**|**_O_UTF8**|
-|**ccs UTF-16LE =**|**_O_UTF16**|
+|**ccs=UTF-8**|**_O_UTF8**|
+|**ccs=UTF-16LE**|**_O_UTF16**|
 
 Kullanıyorsanız **rb** modu, kodunuzu ve çok sayıda dosyayı okumayı bekleyen gerekmez ve/veya ağ performansı hakkında düşünmeniz gerekmez, bellekle eşlenen Win32 dosyalar da bir seçenek olabilir.
 

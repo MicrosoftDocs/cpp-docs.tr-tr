@@ -8,11 +8,11 @@ helpviewer_keywords:
 - CAN0022
 ms.assetid: f6b299ac-a4ee-492c-bd9f-6fff005bc537
 ms.openlocfilehash: ac726c60d30a13d6458636d31dda6a8fb2cbd02d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50623294"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62359871"
 ---
 # <a name="expression-evaluator-error-cxx0022"></a>İfade Değerlendirici Hatası CXX0022
 

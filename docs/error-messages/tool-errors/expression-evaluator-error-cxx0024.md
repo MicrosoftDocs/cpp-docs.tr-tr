@@ -8,11 +8,11 @@ helpviewer_keywords:
 - CAN0024
 ms.assetid: eca6adbd-8ff2-4f51-a1cc-a2e9d5d0a47d
 ms.openlocfilehash: 93f8389ed3959d5747e46c1234fd8d2eae0f1ae5
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50659699"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62359845"
 ---
 # <a name="expression-evaluator-error-cxx0024"></a>İfade Değerlendirici Hatası CXX0024
 

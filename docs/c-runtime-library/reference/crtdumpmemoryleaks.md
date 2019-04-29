@@ -31,11 +31,11 @@ helpviewer_keywords:
 - _CRTDBG_CHECK_CRT_DF macro
 ms.assetid: 71b2eab4-7f55-44e8-a55a-bfea4f32d34c
 ms.openlocfilehash: baf4f8d8234ba744acda20541d37bbc3ed076678
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50531990"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62339461"
 ---
 # <a name="crtdumpmemoryleaks"></a>_CrtDumpMemoryLeaks
 

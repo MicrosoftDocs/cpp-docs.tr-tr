@@ -12,11 +12,11 @@ helpviewer_keywords:
 - -Zp compiler option [C++]
 ms.assetid: 5242f656-ed9b-48a3-bc73-cfcf3ed2520f
 ms.openlocfilehash: d76cd93c7af4228bff8f73fa3bcbf40fa149b0be
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59237170"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62315917"
 ---
 # <a name="zp-struct-member-alignment"></a>/Zp (Yapı Üyesi Hizalama)
 

@@ -29,11 +29,11 @@ helpviewer_keywords:
 - CVSListBox [MFC], GetListHwnd
 ms.assetid: c79be7b4-46ed-4af8-a41e-68962782d8ef
 ms.openlocfilehash: 618f4f386db477dd301ada862ebd2094a6c6651f
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57301526"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62324442"
 ---
 # <a name="cvslistbox-class"></a>CVSListBox sınıfı
 

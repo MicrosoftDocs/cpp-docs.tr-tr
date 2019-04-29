@@ -10,11 +10,11 @@ helpviewer_keywords:
 - components [C++], redistributing
 ms.assetid: 17b065b4-a307-4b89-99ac-d05831cfab87
 ms.openlocfilehash: 1a6ec6f5fdd3c32080d357ca58d31ccea271b7a4
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59040101"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62330082"
 ---
 # <a name="redistributing-odbc-components-to-your-customers"></a>ODBC Bileşenlerini Müşterilerinize Yeniden Dağıtma
 
@@ -26,11 +26,11 @@ Ayrıca, çoğu durumda başka bir dosya eklemek gerekir. ODBC imleç kitaplığ
 
 Aşağıdaki konular, ODBC ile veritabanı sınıflarını kullanma hakkında daha fazla bilgi sağlar:
 
-- [ODBC: ODBC imleç kitaplığı](../../data/odbc/odbc-the-odbc-cursor-library.md)
+- [ODBC: ODBC İmleç Kitaplığı](../../data/odbc/odbc-the-odbc-cursor-library.md)
 
-- [ODBC: ODBC veri kaynağını yapılandırma](../../data/odbc/odbc-configuring-an-odbc-data-source.md)
+- [ODBC: ODBC Veri Kaynağını Yapılandırma](../../data/odbc/odbc-configuring-an-odbc-data-source.md)
 
-- [ODBC: ODBC API işlevlerini doğrudan çağırma](../../data/odbc/odbc-calling-odbc-api-functions-directly.md)
+- [ODBC: ODBC API İşlevlerini Doğrudan Çağırma](../../data/odbc/odbc-calling-odbc-api-functions-directly.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

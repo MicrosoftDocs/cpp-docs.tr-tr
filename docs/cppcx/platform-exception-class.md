@@ -11,11 +11,11 @@ helpviewer_keywords:
 - Platform::Exception Class
 ms.assetid: ca1d5a67-3a5a-48fe-8099-f9c38a2d2dce
 ms.openlocfilehash: d37d55c56e3c23d8d9129c985cb4272d2e3ee47a
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57743425"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62368740"
 ---
 # <a name="platformexception-class"></a>Platform::Exception sınıfı
 
@@ -131,7 +131,7 @@ HRESULT değerini.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çoğu özel durumlar HRESULT değerleri döndüren COM hata olarak başlar. C + +/ CX içinde Platform::Exception bu değerleri dönüştürür ^ nesneleri ve bu özellik, özgün hata kodu değerini depolar.
+Çoğu özel durumlar HRESULT değerleri döndüren COM hata olarak başlar. C++/CX Platform::Exception bu değerleri dönüştürür ^ nesneleri ve bu özellik, özgün hata kodu değerini depolar.
 
 ## <a name="message"></a> Exception::Message özelliği
 
@@ -149,7 +149,7 @@ Windows çalışma zamanı'nda kaynaklanan özel durumları, sistem tarafından 
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu sürüm Windows çalışma zamanı özel durumları HRESULTS olarak yalnızca ABI üzerinden taşınan çünkü Windows 8'de, bu özellik salt okunur. Windows 8.1, daha zengin özel durum bilgilerini ABI arasında taşınır ve diğer bileşenleri programlı olarak erişmek için özel bir ileti sağlayabilir. Daha fazla bilgi için [özel durumlar (C + +/ CX)](../cppcx/exceptions-c-cx.md).
+Bu sürüm Windows çalışma zamanı özel durumları HRESULTS olarak yalnızca ABI üzerinden taşınan çünkü Windows 8'de, bu özellik salt okunur. Windows 8.1, daha zengin özel durum bilgilerini ABI arasında taşınır ve diğer bileşenleri programlı olarak erişmek için özel bir ileti sağlayabilir. Daha fazla bilgi için [özel durumlar (C++/CX)](../cppcx/exceptions-c-cx.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -26,11 +26,11 @@ helpviewer_keywords:
 - transferring control to error handler
 ms.assetid: 1d1781b6-5cf8-486a-b430-f365e0bb023f
 ms.openlocfilehash: bc7718503f59c69868a75cac9383286a548fc307
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50640316"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62356506"
 ---
 # <a name="setnewhandler"></a>_set_new_handler
 
@@ -53,7 +53,7 @@ Uygulama tarafından sağlanan belleği işleme işlevinin işaretçisi. Bir ba�
 
 ## <a name="remarks"></a>Açıklamalar
 
-C++ **_set_new_handler** işlevi belirtir, Denetim kazançları bir özel durum işleme işlevi **yeni** işleci başarısız bellek ayrılamadı. Varsa **yeni** başarısız çalışma zamanı sistemi otomatik olarak bir bağımsız değişken olarak geçirilen özel durum işleme işlevi çağırır **_set_new_handler**. **_PNH**, New.h içinde tanımlanan, bir tür döndüren bir işlev işaretçisidir **int** ve türünde bir bağımsız değişken **size_t**. Kullanım **size_t** ayrılacak alanı miktarını belirtmek için.
+C++ **_Set_new_handler** işlevi belirtir, Denetim kazançları bir özel durum işleme işlevi **yeni** işleci başarısız bellek ayrılamadı. Varsa **yeni** başarısız çalışma zamanı sistemi otomatik olarak bir bağımsız değişken olarak geçirilen özel durum işleme işlevi çağırır **_set_new_handler**. **_PNH**, New.h içinde tanımlanan, bir tür döndüren bir işlev işaretçisidir **int** ve türünde bir bağımsız değişken **size_t**. Kullanım **size_t** ayrılacak alanı miktarını belirtmek için.
 
 Hiçbir varsayılan işleyici yok.
 
@@ -88,7 +88,7 @@ Son geçirilen işlev adresi kaydedebilirsiniz **_set_new_handler** çalışır 
    // . . .
 ```
 
-C++ [_set_new_mode](set-new-mode.md) işlevi için yeni işleyici modunu ayarlar [malloc](malloc.md). Yeni işleyici modunu gösterir mi, hata durumunda, **malloc** tarafından belirlenen yeni işleyici rutinini çağırmaktır **_set_new_handler**. Varsayılan olarak, **malloc** bellek dağıtma hatasında yeni işleyici rutinini çağırmaz. Bu varsayılan davranışı geçersiz kılabilirsiniz böylece, **malloc** bellek ayırmak başarısız **malloc** aynı yeni işleyici rutinini çağırır biçimi **yeni** işleci yok aynı nedenden dolayı başarısız olduğunda. Varsayılan geçersiz kılmak için çağırın:
+C++ [_Set_new_mode](set-new-mode.md) işlevi için yeni işleyici modunu ayarlar [malloc](malloc.md). Yeni işleyici modunu gösterir mi, hata durumunda, **malloc** tarafından belirlenen yeni işleyici rutinini çağırmaktır **_set_new_handler**. Varsayılan olarak, **malloc** bellek dağıtma hatasında yeni işleyici rutinini çağırmaz. Bu varsayılan davranışı geçersiz kılabilirsiniz böylece, **malloc** bellek ayırmak başarısız **malloc** aynı yeni işleyici rutinini çağırır biçimi **yeni** işleci yok aynı nedenden dolayı başarısız olduğunda. Varsayılan geçersiz kılmak için çağırın:
 
 ```cpp
 _set_new_mode(1);

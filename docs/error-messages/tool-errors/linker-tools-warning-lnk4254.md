@@ -7,11 +7,11 @@ helpviewer_keywords:
 - LNK4254
 ms.assetid: 6f41dfb3-ca21-40d3-bac7-b637e578efa4
 ms.openlocfilehash: 2c68e49d58b0fd6b28607eb0ba78c092441f6f4b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50467021"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62352495"
 ---
 # <a name="linker-tools-warning-lnk4254"></a>Bağlayıcı Araçları Uyarısı LNK4254
 

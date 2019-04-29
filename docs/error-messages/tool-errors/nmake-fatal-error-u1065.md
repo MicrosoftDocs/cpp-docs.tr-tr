@@ -7,11 +7,11 @@ helpviewer_keywords:
 - U1065
 ms.assetid: bc890f20-ff46-4073-ab3b-4a5db879f9bd
 ms.openlocfilehash: 5f905c084bbc2cc5c5a5c5172306208212eb6def
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50546445"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62367401"
 ---
 # <a name="nmake-fatal-error-u1065"></a>NMAKE Önemli Hatası U1065
 

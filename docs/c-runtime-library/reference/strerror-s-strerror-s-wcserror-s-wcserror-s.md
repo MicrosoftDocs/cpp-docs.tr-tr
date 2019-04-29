@@ -40,11 +40,11 @@ helpviewer_keywords:
 - error messages, getting
 ms.assetid: 9e5b15a0-efe1-4586-b7e3-e1d7c31a03d6
 ms.openlocfilehash: 00ff9d0df1a78d07eaa509201fb998b30396cc4c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50429646"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62353828"
 ---
 # <a name="strerrors-strerrors-wcserrors-wcserrors"></a>strerror_s, _strerror_s, _wcserror_s, __wcserror_s
 
@@ -122,7 +122,7 @@ Başarılıysa sıfır, bir hata kodu.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Strerror_s** işlevini eşlemeleri *errnum* bir hata mesajı dizesine eşliyor, dize döndüren *arabellek*. **_strerror_s** hata numarasını almaz geçerli değerini kullanan **errno** uygun iletiyi belirlemek için. Ne **strerror_s** ya da **_strerror_s** aslında iletiyi yazdırmaz: bunun için gibi bir çıktı işlevi çağırmanız gerekir [fprintf](fprintf-fprintf-l-fwprintf-fwprintf-l.md):
+**Strerror_s** işlevini eşlemeleri *errnum* bir hata mesajı dizesine eşliyor, dize döndüren *arabellek*. **_strerror_s** hata numarasını almaz geçerli değerini kullanan **errno** uygun iletiyi belirlemek için. Ne **strerror_s** ya da **_strerror_s** aslında iletiyi yazdırmaz: Bunun için gibi bir çıktı işlevi çağırmanız gerekir [fprintf](fprintf-fprintf-l-fwprintf-fwprintf-l.md):
 
 ```C
 if (( _access( "datafile",2 )) == -1 )

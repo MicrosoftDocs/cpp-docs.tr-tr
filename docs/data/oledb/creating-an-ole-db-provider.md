@@ -6,11 +6,11 @@ helpviewer_keywords:
 - OLE DB provider templates, creating providers
 ms.assetid: f73017c3-c89f-41a6-a306-ea992cf6092c
 ms.openlocfilehash: 3e46e87b0d5d538a0f9fd7e231debfef3fa95210
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59036120"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62361899"
 ---
 # <a name="creating-an-ole-db-provider"></a>OLE DB Sağlayıcısı Oluşturma
 

@@ -1,6 +1,6 @@
 ---
-title: C2300 ile C2399 Arasındaki Derleyici Hataları
-ms.date: 11/17/2017
+title: C2300 ile C2399 arasındaki derleyici hataları
+ms.date: 04/21/2019
 f1_keywords:
 - C2303
 - C2304
@@ -56,14 +56,14 @@ helpviewer_keywords:
 - C2398
 - C2399
 ms.assetid: 07ca45b5-b2f0-4049-837b-40a7a3caed88
-ms.openlocfilehash: 6f95ec90a08b842259a383d7bfc6af2cba119e14
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
-ms.translationtype: MT
+ms.openlocfilehash: 28ab73857b46fed29e2ba8d7bc051ffb81b54bb3
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50580641"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62360456"
 ---
-# <a name="compiler-errors-c2300-through-c2399"></a>C2300 ile C2399 Arasındaki Derleyici Hataları
+# <a name="compiler-errors-c2300-through-c2399"></a>C2300 ile C2399 arasındaki derleyici hataları
 
 Belgelerin bu bölümdeki makaleleri bir alt kümesini derleyici tarafından oluşturulan hata iletilerini açıklayın.
 
@@ -167,9 +167,14 @@ Belgelerin bu bölümdeki makaleleri bir alt kümesini derleyici tarafından olu
 |[Derleyici Hatası C2391](compiler-error-c2391.md)|'*tanımlayıcı*': 'friend' tür tanımı sırasında kullanılamaz|
 |[Derleyici Hatası C2392](compiler-error-c2392.md)|'*Üye1*': değişken türler yönetilen WinRT türlerinde, aksi takdirde desteklenmiyor döndürür '*üye2*' üzerine yazılırdı|
 |[Derleyici Hatası C2393](compiler-error-c2393.md)|'*sembol*': per-appdomain simgesi kesiminde ayrılamaz '*segment*'|
-|[Derleyici Hatası C2394](compiler-error-c2394.md)|'*türü*:: işleci *işleci*': CLR/WinRT işleci geçerli değil. En az bir parametre aşağıdaki türlerde olmalıdır: 'T ^', 'T ^ %', 'T ^ &', burada T = '*türü*'|
+|[Derleyici Hatası C2394](compiler-error-c2394.md)|'*türü*:: işleci *işleci*': CLR/WinRT işleci geçerli değil. En az bir parametre aşağıdaki türlerde olmalıdır:  'T ^', 'T ^ %', 'T ^ &', burada T = '*türü*'|
 |[Derleyici Hatası C2395](compiler-error-c2395.md)|'*türü*:: işleci *işleci*': CLR/WinRT işleci geçerli değil. En az bir parametre aşağıdaki türlerde olmalıdır: 'T', 'T %', 'T &', 'T ^', 'T ^ %', 'T ^ &', burada T = '*türü*'|
 |[Derleyici Hatası C2396](compiler-error-c2396.md)|'*type1*:: işleci *type2*': CLR/WinRT kullanıcı tanımlı dönüştürme işlevi geçerli değil. Dönüştürmek veya Dönüştür: 'T ^', 'T ^ %', 'T ^ &', burada T = '*type1*'|
 |[Derleyici Hatası C2397](compiler-error-c2397.md)|dönüştürme işlemi '*type1*'to'*type2*' bir daraltma dönüşümü gerektirir|
 |Derleyici Hatası c2398 arasındaki|Öğe '*numarası*': dönüştürme '*type1*'to'*type2*' bir daraltma dönüşümü gerektirir|
 |Derleyici Hatası c2399 arasındaki|Kullanımdan kalktı.|
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[C /C++ derleyicisi ve derleme araçları hataları ve Uyarıları](../compiler-errors-1/c-cpp-build-errors.md) \
+[C3999 arasındaki derleyici hataları C2000-](../compiler-errors-1/compiler-errors-c2000-c3999.md)

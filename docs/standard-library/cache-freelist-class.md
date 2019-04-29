@@ -11,11 +11,11 @@ helpviewer_keywords:
 - stdext::cache_freelist [C++], deallocate
 ms.assetid: 840694de-36ba-470f-8dae-2b723d5a8cd9
 ms.openlocfilehash: 56fdfb191f9208a5ffa692e1d599545ddeaeb36c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50620096"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62352118"
 ---
 # <a name="cachefreelist-class"></a>cache_freelist Sınıfı
 
@@ -32,7 +32,7 @@ class cache_freelist
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|*SZ*|Ayrılacak dizideki öğelerin sayısı.|
+|*Sz*|Ayrılacak dizideki öğelerin sayısı.|
 |*en fazla*|Boş listenin en büyük boyutunu temsil eden en fazla sınıf. Bu, [max_fixed_size](../standard-library/max-fixed-size-class.md), [max_none](../standard-library/max-none-class.md), [max_unbounded](../standard-library/max-unbounded-class.md), veya [max_variable_size](../standard-library/max-variable-size-class.md).|
 
 ## <a name="remarks"></a>Açıklamalar

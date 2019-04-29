@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3016
 ms.assetid: 3423467e-e8bb-4f35-b4db-7925cafa74c1
 ms.openlocfilehash: edb83c210ca7e3f6c648522b893e9ed90cea1874
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50479658"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62350289"
 ---
 # <a name="compiler-error-c3016"></a>Derleyici Hatası C3016
 

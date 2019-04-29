@@ -14,11 +14,11 @@ helpviewer_keywords:
 - memory, tracking on the debug heap
 ms.assetid: 9e7adb47-8ab9-4e19-81d5-e2f237979973
 ms.openlocfilehash: a967b436d53acab6d76fa36fdf9b13c7c24d49c3
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57746988"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62344557"
 ---
 # <a name="crtdbgflag"></a>_crtDbgFlag
 

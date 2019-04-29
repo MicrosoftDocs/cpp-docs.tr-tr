@@ -9,11 +9,11 @@ helpviewer_keywords:
 - '&& operator'
 ms.assetid: 50cfa664-a8c4-4b31-9bab-2f80d7cd2d1f
 ms.openlocfilehash: 0843ba95467c3ae0d735476de48a8195a59788f0
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50660557"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62368662"
 ---
 # <a name="logical-and-operator-ampamp"></a>Mantıksal AND işleci: &amp;&amp;
 

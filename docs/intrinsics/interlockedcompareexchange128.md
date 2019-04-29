@@ -9,11 +9,11 @@ helpviewer_keywords:
 - _InterlockedCompareExchange128 intrinsic
 ms.assetid: f05918fc-716a-4f6d-b746-1456d6b96c56
 ms.openlocfilehash: 9330b1405ca247364cd04d3ab399f66e4f332273
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59037876"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62348776"
 ---
 # <a name="interlockedcompareexchange128"></a>_InterlockedCompareExchange128
 

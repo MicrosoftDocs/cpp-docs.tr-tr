@@ -10,11 +10,11 @@ helpviewer_keywords:
 - searching [C++]
 ms.assetid: 15e984f0-e155-46f5-8542-51c458792f54
 ms.openlocfilehash: a58526f65be4951b57804c08359c349e78d622fc
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57741764"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62364933"
 ---
 # <a name="searching-and-sorting"></a>Arama ve Sıralama
 

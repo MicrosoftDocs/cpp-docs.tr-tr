@@ -7,11 +7,11 @@ helpviewer_keywords:
 - editions [C++]
 ms.assetid: 3d88607b-9cc4-490a-8d4c-31ee7610a26f
 ms.openlocfilehash: 3e5b173741700ed6cccf95b479eb5693a62ed02e
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58787799"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62351728"
 ---
 # <a name="visual-c-tools-and-features-in-visual-studio-editions"></a>Visual Studio Sürümlerinde Visual C++ Araçları ve Özellikleri
 

@@ -8,11 +8,11 @@ helpviewer_keywords:
 - expression evaluation, about expression evaluation
 ms.assetid: 4a792154-533b-48b9-8709-31bfc170f0a7
 ms.openlocfilehash: d2ce510478bcf1574429c85f704552e6b73100ea
-ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52175798"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62331226"
 ---
 # <a name="semantics-of-expressions"></a>İfade Semantikleri
 
@@ -52,7 +52,7 @@ Yukarıdaki şekilde gösterilen ifadenin değerlendirilme sırası, işleçleri
 
 1. Toplama (+), sıradaki en yüksek önceliğe sahiptir, dolayısıyla `a` ve `b` ürününe `c` eklenir.
 
-1. Sola kaydırma (<<), ifadedeki en düşük önceliğe sahiptir, ancak iki kez vardır. Sola kaydırma işleci soldan sağa doğru gruplama yaptığından, ilk önce sol alt ifade, ardından sağdaki değerlendirilir.
+1. Sola kaydırma (<<) ifadedeki en düşük önceliğe sahiptir, ancak iki kez vardır. Sola kaydırma işleci soldan sağa doğru gruplama yaptığından, ilk önce sol alt ifade, ardından sağdaki değerlendirilir.
 
 Alt ifadeleri gruplamak için parantez kullanıldığında, aşağıdaki şekilde gösterildiği gibi önceliği ve ayrıca ifadenin değerlendirilme sırasını değiştirir.
 
@@ -69,10 +69,10 @@ C++ dili belirli uyumluluğunu işlenenler belirtirken belirtir. Aşağıdaki ta
 
 |Tür bekleniyor|İzin verilen türleri|
 |-------------------|-------------------|
-|*Türü*|`const` *Türü*<br /> `volatile` *Türü*<br /> *Türü*&<br /> `const` *Türü*&<br /> `volatile` *Türü*&<br /> `volatile const` *Türü*<br /> `volatile const` *Türü*&|
+|*type*|`const` *Türü*<br /> `volatile` *Türü*<br /> *Türü*&<br /> `const` *Türü*&<br /> `volatile` *Türü*&<br /> `volatile const` *Türü*<br /> `volatile const` *Türü*&|
 |*Türü* \*|*Türü* \*<br /> `const` *Türü* \*<br /> `volatile` *Türü* \*<br /> `volatile const` *Türü* \*|
-|`const` *Türü*|*Türü*<br /> `const` *Türü*<br />`const` *Türü*&|
-|`volatile` *Türü*|*Türü*<br /> `volatile` *Türü*<br /> `volatile` *Türü*&|
+|`const` *Türü*|*type*<br /> `const` *Türü*<br />`const` *Türü*&|
+|`volatile` *Türü*|*type*<br /> `volatile` *Türü*<br /> `volatile` *Türü*&|
 
 Yukarıdaki kuralları her zaman birlikte kullanılabildiğinden bir const işaretçisi geçici bir nesneye bir işaretçi beklenirken sağlanabilir.
 
@@ -94,7 +94,7 @@ Bir ifade, bir nesnenin değerini ardışık "dizi noktaları" arasında yalnız
 
 C++ dili tanımı şu anda dizi noktaları belirtmemektedir. Microsoft C++, C işleçleri içeren ve aşırı yüklenmiş işleçler içermeyen tüm ifadeler için ANSI C ile aynı dizi noktalarını kullanır. İşleçler aşırı yüklendiğinde, semantikler işleç sıralamasından işlev çağrısı sıralamasına dönüşür. Microsoft C++ aşağıdaki dizi noktalarını kullanır:
 
-- Mantıksal AND işlecinin sol işleneni (&&). Mantıksal AND işlecinin sol işleneni, tamamen değerlendirilir ve devam edilmeden önce tüm yan etkiler tamamlanır. Mantıksal AND işlecinin sağ işleneninin değerlendirileceği kesin değildir.
+- Mantıksal AND işlecinin işleneni sol (& &). Mantıksal AND işlecinin sol işleneni, tamamen değerlendirilir ve devam edilmeden önce tüm yan etkiler tamamlanır. Mantıksal AND işlecinin sağ işleneninin değerlendirileceği kesin değildir.
 
 - Mantıksal OR işlecinin işleneni sol (&#124;&#124;). Mantıksal OR işlecinin sol işleneni, tamamen değerlendirilir ve devam edilmeden önce tüm yan etkiler tamamlanır. Mantıksal OR işlecinin sağ işleneninin değerlendirileceği kesin değildir.
 

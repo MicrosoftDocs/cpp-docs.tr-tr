@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2748
 ms.assetid: b63ac78b-a200-499c-afea-15af1a1e819e
 ms.openlocfilehash: 251492b736ba3325ed263a9a8754fc8fa480c664
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59779316"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62360235"
 ---
 # <a name="compiler-error-c2748"></a>Derleyici Hatası C2748
 

@@ -21,12 +21,12 @@ helpviewer_keywords:
 - sopen function
 ms.assetid: 1ce0b707-0c9e-4942-8467-ce7f6cd68acc
 ms.openlocfilehash: 160e30e22c1adbf6d3c7cd311e1c20723017f0bf
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50510918"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62355334"
 ---
 # <a name="sopen"></a>sopen
 
-Bu POSIX işlevi kullanım dışı bırakılmıştır. ISO C++ uyumlu [_sopen](sopen-wsopen.md) veya Gelişmiş güvenlikli [_sopen_s](sopen-s-wsopen-s.md) yerine.
+Bu POSIX işlevi kullanım dışı bırakılmıştır. ISO kullanın C++ uyumluluğunu [_sopen](sopen-wsopen.md) veya Gelişmiş güvenlikli [_sopen_s](sopen-s-wsopen-s.md) yerine.

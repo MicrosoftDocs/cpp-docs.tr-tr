@@ -6,11 +6,11 @@ ms.assetid: 76798022-5886-48e7-a7f2-f99352b15cbf
 author: mikeblome
 ms.author: mblome
 ms.openlocfilehash: d91fa77c9a76fb7c1f9f8281a9fdbbc463cc0fea
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58787601"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62351878"
 ---
 # <a name="visual-c-samples"></a>Visual C++ Örnekleri
 

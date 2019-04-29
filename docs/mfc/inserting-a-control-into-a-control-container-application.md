@@ -6,11 +6,11 @@ helpviewer_keywords:
 - ActiveX controls [MFC], adding to projects
 ms.assetid: bbb617ff-872f-43d8-b4d6-c49adb16b148
 ms.openlocfilehash: 5f2b964d337ee882bff8acd904ad2fcf64879f88
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57283637"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62338239"
 ---
 # <a name="activex-control-containers-inserting-a-control-into-a-control-container-application"></a>ActiveX denetim kapsayıcıları: Bir denetim kapsayıcısı uygulamasına denetim ekleme
 

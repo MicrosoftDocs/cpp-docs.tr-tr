@@ -5,11 +5,11 @@ f1_keywords:
 - filesystem/std::experimental::filesystem::path
 ms.assetid: 8a1227ca-aeb2-4e0e-84aa-86e34e4f4fe8
 ms.openlocfilehash: 486245df3433f552c289786a0b20deb33c8fb6c0
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50618224"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62370456"
 ---
 # <a name="path-class"></a>path Sınıfı
 
@@ -556,7 +556,7 @@ Döndürür `myname`.
 operator string_type() const;
 ```
 
-## <a name="parent_path"></a> PATH::parent_path
+## <a name="parent_path"></a> path::parent_path
 
 Üst'ın yol bileşenini döndürür `myname`.
 
@@ -626,7 +626,7 @@ Tüm oluşturmak oluşturucular `myname` çeşitli şekillerde:
 
 İçin `template<class InIt> path(InIt first, InIt last, const locale& loc)` olduğu `myname(first, last)`, gerekli gelen codecvt modelleri herhangi alma `loc`.
 
-## <a name="preferred_separator"></a> PATH::preferred_separator
+## <a name="preferred_separator"></a> path::preferred_separator
 
 Sabit nesne yolu bileşenleri, konak işletim sistemine bağlı olarak ayırmak için tercih edilen karakter sağlar.
 

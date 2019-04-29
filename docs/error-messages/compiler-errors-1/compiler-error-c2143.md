@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2143
 ms.assetid: 1d8d1456-e031-4965-9240-09a6e33ba81c
 ms.openlocfilehash: ed4bc7eea85e5263d59817082caed99bde3d75d5
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51520120"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62353488"
 ---
 # <a name="compiler-error-c2143"></a>Derleyici Hatası C2143
 
@@ -70,7 +70,7 @@ int main() {
 }
 ```
 
-İzleyen ilk boşluk olmayan karakter bir `if` deyimi bir sol ayraç olması gerekir. Derleyici, başka bir şey çeviremez:
+İzleyen ilk boşluk olmayan karakter bir `if` deyimi bir sol ayraç olması gerekir. The compiler cannot translate anything else:
 
 ```cpp
 // C2143c.cpp

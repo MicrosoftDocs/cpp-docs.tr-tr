@@ -31,11 +31,11 @@ helpviewer_keywords:
 - clog10l function
 ms.assetid: 2ddae00d-ef93-4441-add3-f4d58358401b
 ms.openlocfilehash: 195f4be80f0320e83cc9455a598185ce281bbf59
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50506918"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62335463"
 ---
 # <a name="clog10-clog10f-clog10l"></a>clog10, clog10f, clog10l
 
@@ -73,7 +73,7 @@ Olası dönüş değerleri şunlardır:
 
 ## <a name="remarks"></a>Açıklamalar
 
-C++ aşırı yüklemeye izin verdiğinden, aşırı yüklemesini çağırabilirsiniz **clog10** alan ve getiren **_Fcomplex** ve **_Lcomplex** değerleri. C programında **clog10** her zaman alan ve döndüren bir **_Dcomplex** değeri.
+Çünkü C++ aşırı yüklemesi, sağlayan yüklerini çağırabilirsiniz **clog10** alan ve getiren **_Fcomplex** ve **_Lcomplex** değerleri. C programında **clog10** her zaman alan ve döndüren bir **_Dcomplex** değeri.
 
 ## <a name="requirements"></a>Gereksinimler
 

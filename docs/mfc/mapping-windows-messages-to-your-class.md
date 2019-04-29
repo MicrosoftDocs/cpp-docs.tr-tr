@@ -11,11 +11,11 @@ helpviewer_keywords:
 - messages to dialog class [MFC], mapping
 ms.assetid: a4c6fd1f-1d33-47c9-baa0-001755746d6d
 ms.openlocfilehash: 7e15f52e41d4ac91a839629342258128db86e2d5
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57326679"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62363862"
 ---
 # <a name="mapping-windows-messages-to-your-class"></a>Windows İletilerini Sınıfınıza Eşleme
 

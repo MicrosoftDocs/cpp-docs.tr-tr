@@ -5,11 +5,11 @@ f1_keywords:
 - future/std::is_error_code_enum
 ms.assetid: 84ae4b99-66d2-41ba-9b50-645fcbe14630
 ms.openlocfilehash: 54def287aa6b4bbb06d88006615b5df45b482051
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50676427"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62336589"
 ---
 # <a name="iserrorcodeenum-structure"></a>is_error_code_enum Yapısı
 

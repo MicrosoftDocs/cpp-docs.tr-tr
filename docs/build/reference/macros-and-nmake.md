@@ -6,11 +6,11 @@ helpviewer_keywords:
 - macros, NMAKE
 ms.assetid: d424fd47-63eb-4982-9410-6f412730c265
 ms.openlocfilehash: b9cd96cc18a0d6ec43f7ad535aeb90cd802a6604
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57824090"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62321741"
 ---
 # <a name="macros-and-nmake"></a>Makrolar ve NMAKE
 

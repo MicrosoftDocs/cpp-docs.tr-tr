@@ -11,11 +11,11 @@ helpviewer_keywords:
 - file handles [C++], I/O functions
 ms.assetid: 53e11bdd-6720-481c-8b2b-3a3a569ed534
 ms.openlocfilehash: 7812656bdcb3f58866f91009b6ad3de9fd67cebe
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57740147"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62343062"
 ---
 # <a name="low-level-io"></a>Düşük Düzey G/Ç
 

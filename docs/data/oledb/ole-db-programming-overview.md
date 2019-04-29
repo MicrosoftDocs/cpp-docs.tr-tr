@@ -6,11 +6,11 @@ helpviewer_keywords:
 - OLE DB, about OLE DB
 ms.assetid: a5a69730-2793-4277-a67d-6f3c8edab6df
 ms.openlocfilehash: 68ada06514defe0f7f5332288ad8e91a7d8d9351
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59035536"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62361925"
 ---
 # <a name="ole-db-programming-overview"></a>OLE DB Programlamaya Genel Bakış
 

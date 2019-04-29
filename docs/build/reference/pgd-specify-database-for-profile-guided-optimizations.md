@@ -8,11 +8,11 @@ helpviewer_keywords:
 - /PGD linker option
 ms.assetid: 9f312498-493b-461f-886f-92652257e443
 ms.openlocfilehash: e1d7c9fcb94a9351ce94b66e04b4bfc523248f4e
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57812206"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62319804"
 ---
 # <a name="pgd-specify-database-for-profile-guided-optimizations"></a>/PGD (Profil Temelli İyileştirmeler için Veritabanını Belirt)
 
@@ -50,4 +50,4 @@ Daha fazla bilgi için [permutasyonları iyileştirmeleri](../profile-guided-opt
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [MSVC bağlayıcı başvurusu](linking.md)<br/>
-[MSVC bağlayıcı seçenekleri](linker-options.md)<br/>
+[MSVC Bağlayıcı Seçenekleri](linker-options.md)<br/>

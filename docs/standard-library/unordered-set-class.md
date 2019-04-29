@@ -135,11 +135,11 @@ helpviewer_keywords:
 - std::unordered_set::swap
 ms.assetid: ac08084e-05a7-48c0-9ae4-d40c529922dd
 ms.openlocfilehash: 01c8b79f596c2fda8cef0a74a7b5dcdc70786dbf
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50534998"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62362744"
 ---
 # <a name="unorderedset-class"></a>unordered_set Sınıfı
 
@@ -204,7 +204,7 @@ class unordered_set;
 |[Bul](#find)|Belirtilen bir anahtarla eşleşen bir öğeyi bulur.|
 |[get_allocator](#get_allocator)|Depolanan ayırıcı nesnesini alır.|
 |[hash_function](#hash)|Depolanan karma işlevi nesnesini alır.|
-|[Ekle](#insert)|Öğeleri ekler.|
+|[insert](#insert)|Öğeleri ekler.|
 |[key_eq](#key_eq)|Depolanan karşılaştırma işlevi nesnesini alır.|
 |[load_factor](#load_factor)|Demet başına ortalama öğeyi sayar.|
 |[max_bucket_count](#max_bucket_count)|En yüksek demet sayısını alır.|
@@ -273,7 +273,7 @@ int main()
 al == std::allocator() is true
 ```
 
-## <a name="begin"></a>  unordered_set::Begin
+## <a name="begin"></a>  unordered_set::begin
 
 Denetlenen dizi veya bir demet başına belirler.
 
@@ -602,7 +602,7 @@ auto i2 = Container.cend();
 
 Tarafından döndürülen değer `cend` kaldırılmamalıdır.
 
-## <a name="clear"></a>  unordered_set::Clear
+## <a name="clear"></a>  unordered_set::clear
 
 Tüm öğeleri kaldırır.
 
@@ -845,7 +845,7 @@ int main()
 [c] [b] [a]
 ```
 
-## <a name="count"></a>  unordered_set::Count
+## <a name="count"></a>  unordered_set::count
 
 Belirtilen bir anahtar ile eşleşen öğe sayısını bulur.
 
@@ -1082,7 +1082,7 @@ size == 2
 empty() == false
 ```
 
-## <a name="end"></a>  unordered_set::End
+## <a name="end"></a>  unordered_set::end
 
 Denetlenen dizinin bitişini belirtir.
 
@@ -1219,7 +1219,7 @@ equal_range('x'):
 equal_range('b'): [b]
 ```
 
-## <a name="erase"></a>  unordered_set::ERASE
+## <a name="erase"></a>  unordered_set::erase
 
 Bir öğenin veya öğelerin aralığını belirtilen konumlardan bir unordered_set kaldırır veya belirtilen bir anahtarla eşleşen öğeleri kaldırır.
 
@@ -1255,7 +1255,7 @@ Kaldırılacak öğe anahtar değeri.
 
 Kod örneği için bkz:[set::erase](../standard-library/set-class.md#erase).
 
-## <a name="find"></a>  unordered_set::Find
+## <a name="find"></a>  unordered_set::find
 
 Belirtilen bir anahtarla eşleşen bir öğeyi bulur.
 
@@ -2306,7 +2306,7 @@ int main()
 size == 0
 ```
 
-## <a name="swap"></a>  unordered_set::Swap
+## <a name="swap"></a>  unordered_set::swap
 
 İki kapsayıcının içeriğinin yerini değiştirir.
 

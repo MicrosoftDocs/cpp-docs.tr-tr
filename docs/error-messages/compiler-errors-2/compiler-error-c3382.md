@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3382
 ms.assetid: a7603abd-ac4e-4ae6-a02b-3bdc6d1908a6
 ms.openlocfilehash: c262ea963ae739fbb76211aae2622e98d5a9b6f7
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50462757"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62328789"
 ---
 # <a name="compiler-error-c3382"></a>Derleyici Hatası C3382
 

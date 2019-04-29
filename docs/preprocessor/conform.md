@@ -10,11 +10,11 @@ helpviewer_keywords:
 - pragmas, conform
 ms.assetid: 71b3e174-c53c-4bfc-adf3-af39b1554191
 ms.openlocfilehash: 35c3b06106779a9056f682ff76c6ed4b4ab1ab41
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59026584"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62366765"
 ---
 # <a name="conform"></a>conform
 **C++ özgü**

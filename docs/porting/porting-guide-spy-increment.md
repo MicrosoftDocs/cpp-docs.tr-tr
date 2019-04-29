@@ -3,11 +3,11 @@ title: 'Taşıma Kılavuzu: Spy++'
 ms.date: 11/19/2018
 ms.assetid: e558f759-3017-48a7-95a9-b5b779d5e51d
 ms.openlocfilehash: b28de2396ba94578a8d06038a1191be42dce49ea
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57751380"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62337428"
 ---
 # <a name="porting-guide-spy"></a>Taşıma Kılavuzu: Spy++
 
@@ -673,5 +673,5 @@ Spy ++ son derleyicinin özgün Visual C++ 6.0 kod taşıma zamanı çalıştıy
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Taşıma ve yükseltme: Örnekler ve örnek olay incelemeleri](../porting/porting-and-upgrading-examples-and-case-studies.md)<br/>
+[Taşıma ve Yükseltme: Örnekler ve Örnek Olay İncelemeleri](../porting/porting-and-upgrading-examples-and-case-studies.md)<br/>
 [Önceki örnek olay incelemesi: COM Spy](../porting/porting-guide-com-spy.md)

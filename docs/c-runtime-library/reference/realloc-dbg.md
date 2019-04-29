@@ -26,11 +26,11 @@ helpviewer_keywords:
 - _realloc_dbg function
 ms.assetid: 7c3cb780-51ed-4d9c-9929-cdde606d846a
 ms.openlocfilehash: 9b30dfd6fbae9a4831ff53e7896aeb995657da03
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50640290"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62357752"
 ---
 # <a name="reallocdbg"></a>_realloc_dbg
 

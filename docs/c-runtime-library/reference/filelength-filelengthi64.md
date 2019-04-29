@@ -30,11 +30,11 @@ helpviewer_keywords:
 - _filelengthi64 function
 ms.assetid: 3ab83d5a-543c-4079-b9d9-0abfc7da0275
 ms.openlocfilehash: 5434a6ea2155b75f1c034202477a67db36da8b3d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50430492"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62333800"
 ---
 # <a name="filelength-filelengthi64"></a>_filelength, _filelengthi64
 

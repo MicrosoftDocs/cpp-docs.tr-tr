@@ -7,11 +7,11 @@ helpviewer_keywords:
 - '&& rvalue reference declarator'
 ms.assetid: eab0ce3a-c5a3-4992-aa70-6a8ab1f7491d
 ms.openlocfilehash: 185c2de5dc21dd305a2792d4ee8e6baf69c35b28
-ms.sourcegitcommit: c1f646c8b72f330fa8cf5ddb0f8f261ba10d16f0
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58328915"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62331096"
 ---
 # <a name="rvalue-reference-declarator-ampamp"></a>Rvalue başvuru Bildirimcisi: &amp;&amp;
 

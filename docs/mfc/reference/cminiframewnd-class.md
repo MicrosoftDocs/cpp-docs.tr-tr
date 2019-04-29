@@ -13,11 +13,11 @@ helpviewer_keywords:
 - CMiniFrameWnd [MFC], CreateEx
 ms.assetid: b8f534ed-0532-4d8e-9657-5595cf677749
 ms.openlocfilehash: 70f090e2d9830ccfdd98640b54ff07440064d542
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57293270"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62337823"
 ---
 # <a name="cminiframewnd-class"></a>CMiniFrameWnd sınıfı
 

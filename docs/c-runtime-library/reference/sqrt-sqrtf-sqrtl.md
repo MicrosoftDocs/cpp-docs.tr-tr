@@ -32,11 +32,11 @@ helpviewer_keywords:
 - square roots, calculating
 ms.assetid: 2ba9467b-f172-41dc-8f10-b86f68fa813c
 ms.openlocfilehash: 7c17c973b98638195e2e2d2a5f793578437d11ae
-ms.sourcegitcommit: e06648107065f3dea35f40c1ae5999391087b80b
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57210230"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62354905"
 ---
 # <a name="sqrt-sqrtf-sqrtl"></a>Sqrt, sqrtf, sqrtl
 

@@ -27,11 +27,11 @@ helpviewer_keywords:
 - std::uniform_real_distribution [C++], param_type
 ms.assetid: 5cf906fd-0319-4984-b21b-98425cd7532d
 ms.openlocfilehash: 389d7c96867ee0ca597330c1bee61b71e9777802
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51523851"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62348945"
 ---
 # <a name="uniformrealdistribution-class"></a>uniform_real_distribution Sınıfı
 

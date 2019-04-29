@@ -10,11 +10,11 @@ helpviewer_keywords:
 - generic functions
 ms.assetid: 8e409364-58f9-4360-b486-e7d555e0c218
 ms.openlocfilehash: a4a1702c8b9902f5265a8a5f92316d7c82751609
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59038702"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62349571"
 ---
 # <a name="generic-functions-ccli"></a>Genel İşlevler (C++/CLI)
 

@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C1094
 ms.assetid: 9e1193b2-cb95-44f9-bf6f-019e0d41dd97
 ms.openlocfilehash: 23891a783a018f6d84ea820af98992f61632984c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50469660"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62366504"
 ---
 # <a name="fatal-error-c1094"></a>Önemli hata C1094
 

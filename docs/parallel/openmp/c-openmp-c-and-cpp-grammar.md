@@ -3,11 +3,11 @@ title: C. OpenMP C ve C++ dil bilgisi
 ms.date: 01/16/2019
 ms.assetid: 97a878ce-1533-47f7-a134-66fcbff48524
 ms.openlocfilehash: 85e18161079b49e83cc9fedb3184ee220c889e75
-ms.sourcegitcommit: 2ebbf8093fadb9a1b78a4381439bcd5c01a89267
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "54397361"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62362952"
 ---
 # <a name="c-openmp-c-and-c-grammar"></a>C. OpenMP C ve C++ dil bilgisi
 
@@ -106,7 +106,7 @@ Gösterimi, standart C 6.1 bölümünde açıklanmıştır. Bu dil bilgisi ek Op
 *for yan benzersiz*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;  `ordered`<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;  `schedule (` *zamanlama türü*   `)`<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;  `schedule (` *zamanlama türü* `,` *ifadesi*    `)`
+&nbsp;&nbsp;&nbsp;&nbsp;  `schedule (` *zamanlama türü* `,` *ifadesi*   `)`
 
 *zamanlama türü*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;  `static`<br/>
@@ -207,7 +207,7 @@ Gösterimi, standart C 6.1 bölümünde açıklanmıştır. Bu dil bilgisi ek Op
 &nbsp;&nbsp;&nbsp;&nbsp;*threadprivate yönergesi*
 
 *threadprivate yönergesi*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;  `# pragma omp threadprivate (` *değişken listesi* `)` *yeni satır* 
+&nbsp;&nbsp;&nbsp;&nbsp;  `# pragma omp threadprivate (` *değişken listesi* `)` *yeni satır*
 
 *Veri yan*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;  `private (` *değişken listesi*   `)`<br/>
@@ -217,7 +217,7 @@ Gösterimi, standart C 6.1 bölümünde açıklanmıştır. Bu dil bilgisi ek Op
 &nbsp;&nbsp;&nbsp;&nbsp;  `shared (` *değişken listesi*   `)`<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;  `default ( shared )`<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;  `default ( none )`<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;  `reduction (`  *Azaltma işleci*`:`*değişken listesi*     `)`<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;  `reduction (`  *Azaltma işleci*`:`*değişken listesi*    `)`<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;  `copyin (`  *değişken listesi*    `)`
 
 *Azaltma işleci*:<br/>
@@ -227,10 +227,10 @@ Gösterimi, standart C 6.1 bölümünde açıklanmıştır. Bu dil bilgisi ek Op
 
 *değişken listesi*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*tanımlayıcı*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*değişken listesi* `,` *tanımlayıcısı* 
+&nbsp;&nbsp;&nbsp;&nbsp;*değişken listesi* `,` *tanımlayıcısı*
 
 **/\* c++'ta \*/**
 
 *değişken listesi*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*deyim kimliği*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*değişken listesi* `,` *kimliği ifadesi* 
+&nbsp;&nbsp;&nbsp;&nbsp;*değişken listesi* `,` *kimliği ifadesi*

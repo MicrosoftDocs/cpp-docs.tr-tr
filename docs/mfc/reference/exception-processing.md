@@ -14,11 +14,11 @@ helpviewer_keywords:
 - exceptions [MFC], MFC throwing functions
 ms.assetid: 26d4457c-8350-48f5-916e-78f919787c30
 ms.openlocfilehash: 3db919f40caf4e5dbf42b4e10c549b165c0a9fe4
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57293751"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62322221"
 ---
 # <a name="exception-processing"></a>Özel Durum İşleme
 
@@ -161,7 +161,7 @@ Makro tarafından oluşturulan bir özel durum nesnesi işaretçisi için bir ad
 Özel durum işleme kodu özel durum nesnesi uygunsa, özel durumun belirli nedeni hakkında daha fazla bilgi almak sorgulayın. Çağırma `THROW_LAST` sonraki çerçeveye dıştaki özel durum işleme kaydırılacak makrosu. Kullanırsanız **CATCH_ALL**, son **deneyin** END_CATCH_ALL makrosu blok.
 
 > [!NOTE]
->  **CATCH_ALL** blok ayraçları makaleyle C++ kapsam olarak tanımlanır. Bu kapsam içinde değişkenlere bildirirseniz, sadece ilgili kapsam içinde erişilebilir.
+>  **CATCH_ALL** blok olarak tanımlanmış olan bir C++ ayraçları makaleyle kapsam. Bu kapsam içinde değişkenlere bildirirseniz, sadece ilgili kapsam içinde erişilebilir.
 
 Özel durumları hakkında daha fazla bilgi için bkz [özel durumları](../../mfc/exception-handling-in-mfc.md).
 
@@ -196,7 +196,7 @@ Bir özel durum türü yakalamak için CATCH makrosu sonra sonraki her tür yaka
 Özel durum işleme kodu özel durum nesnesi uygunsa, özel durumun belirli nedeni hakkında daha fazla bilgi almak sorgulayın. THROW_LAST makrosu içinde çağrı **AND_CATCH** sonraki çerçeveye dıştaki özel durum işleme shift engelleyin. **AND_CATCH** önceki sonunu işaretler **CATCH** veya **AND_CATCH** blok.
 
 > [!NOTE]
->  **AND_CATCH** blok (küme ayraçları işaretleriyle) C++ kapsam olarak tanımlanır. Bu kapsam içinde değişkenlere bildirirseniz, sadece ilgili kapsam içinde erişilebilir olduklarını unutmayın. Bu durum için de geçerlidir *exception_object_pointer_name* değişkeni.
+>  **AND_CATCH** blok olarak tanımlanmış olan bir C++ kapsamı (küme ayraçları işaretleriyle). Bu kapsam içinde değişkenlere bildirirseniz, sadece ilgili kapsam içinde erişilebilir olduklarını unutmayın. Bu durum için de geçerlidir *exception_object_pointer_name* değişkeni.
 
 ### <a name="example"></a>Örnek
 
@@ -225,7 +225,7 @@ Kullanım **CATCH** bir özel durum türü yakalamak için makro ve diğer tüm 
 Özel durum işleme kodu özel durum nesnesi uygunsa, özel durumun belirli nedeni hakkında daha fazla bilgi almak sorgulayın. THROW_LAST makrosu içinde çağrı **AND_CATCH_ALL** sonraki çerçeveye dıştaki özel durum işleme shift engelleyin. **AND_CATCH_ALL** önceki sonunu işaretler **CATCH** veya **AND_CATCH_ALL** blok.
 
 > [!NOTE]
->  **AND_CATCH_ALL** blok (ayraçları işaretleriyle) C++ kapsam olarak tanımlanır. Bu kapsam içinde değişkenlere bildirirseniz, sadece ilgili kapsam içinde erişilebilir olduklarını unutmayın.
+>  **AND_CATCH_ALL** blok olarak tanımlanmış olan bir C++ kapsamı (ayraçları işaretleriyle). Bu kapsam içinde değişkenlere bildirirseniz, sadece ilgili kapsam içinde erişilebilir olduklarını unutmayın.
 
 ### <a name="requirements"></a>Gereksinimler
 

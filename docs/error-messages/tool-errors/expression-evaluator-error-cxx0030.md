@@ -8,11 +8,11 @@ helpviewer_keywords:
 - CXX0030
 ms.assetid: ada8b48c-09c8-49bf-ae23-313ed663c4fe
 ms.openlocfilehash: 1e52b238905fba5c310a89377b81548a1c6b5784
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50500353"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62359806"
 ---
 # <a name="expression-evaluator-error-cxx0030"></a>İfade Değerlendirici Hatası CXX0030
 

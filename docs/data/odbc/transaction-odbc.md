@@ -11,11 +11,11 @@ helpviewer_keywords:
 - ODBC recordsets [C++], transactions
 ms.assetid: a2ec0995-2029-45f2-8092-6efd6f2a77f4
 ms.openlocfilehash: a151ec5ca2b4bdc19bfa7dc626aebda0740a2c9e
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59023676"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62329926"
 ---
 # <a name="transaction-odbc"></a>İşlem (ODBC)
 
@@ -43,9 +43,9 @@ Veritabanı sınıfları gerçekleştirdiğiniz işlemleri aracılığıyla `CDa
 
 Aşağıdaki konular, işlemlerin nasıl gerçekleştirileceği hakkında daha fazla bilgi sağlar:
 
-- [İşlem: (ODBC) kayıt kümesinde işlem gerçekleştirme](../../data/odbc/transaction-performing-a-transaction-in-a-recordset-odbc.md)
+- [İşlem: Kayıt Kümesinde İşlem Gerçekleştirme (ODBC)](../../data/odbc/transaction-performing-a-transaction-in-a-recordset-odbc.md)
 
-- [İşlem: İşlemler (ODBC) güncelleştirmeleri nasıl etkiler](../../data/odbc/transaction-how-transactions-affect-updates-odbc.md)
+- [İşlem: İşlemlerin Güncelleştirmeleri Etkileme Biçimi (ODBC)](../../data/odbc/transaction-how-transactions-affect-updates-odbc.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C4725
 ms.assetid: effa0335-71c3-4b3b-8618-da4b9b46a95d
 ms.openlocfilehash: 9da830133bbca2abcd5fa77339e698b35dae32f6
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50455646"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62325435"
 ---
 # <a name="compiler-warning-level-4-c4725"></a>Derleyici Uyarısı (düzey 4) C4725
 

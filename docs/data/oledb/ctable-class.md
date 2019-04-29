@@ -14,11 +14,11 @@ helpviewer_keywords:
 - Open method
 ms.assetid: f13fdaa3-e198-4557-977d-54b0bbc3454d
 ms.openlocfilehash: fab1ba2e496f4945eb56c0a67b833f6bf063404e
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59038780"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62368441"
 ---
 # <a name="ctable-class"></a>CTable Sınıfı
 

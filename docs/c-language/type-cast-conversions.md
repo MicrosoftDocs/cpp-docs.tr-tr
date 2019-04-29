@@ -10,11 +10,11 @@ helpviewer_keywords:
 - type-cast conversions [C++]
 ms.assetid: 57ab5902-f12f-4326-a2f6-6282f1d4025a
 ms.openlocfilehash: d54e4c15f84ccecad629d48341e5d3ae26d8cecf
-ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56151678"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62344947"
 ---
 # <a name="type-cast-conversions"></a>Tür Atama Dönüştürmeleri
 
@@ -39,7 +39,7 @@ Tür atamaları türleri açıkça dönüştürmek için kullanabilirsiniz.
 |Kayan nokta|Herhangi bir aritmetik tür|
 |Bir nesneye bir işaretçi veya (**void** <strong>\*</strong>)|Herhangi bir tamsayı türü (**void** <strong>\*</strong>), bir nesneye bir işaretçi ya da işlev işaretçisi|
 |İşlev işaretçisi|Herhangi bir tamsayı türü, bir nesne işaretçisi veya işlev işaretçisi|
-|Bir yapı, birlik veya dizi|Hiçbiri|
+|Bir yapı, birlik veya dizi|Yok.|
 |Void türü|Herhangi bir türü|
 
 Herhangi bir tanımlayıcı atanabilecek `void` türü. Türü belirtilen ancak, bir tür atama ifadesidir değilse `void`, sonra da tanımlayıcısı olan tür olamaz başvurusuna bir `void` ifade. Herhangi bir ifade atanabilecek `void`, ancak türdeki bir ifade `void` başka bir türüne yayınlanamıyor. Örneğin, bir işlev ile `void` dönüş türünü dönüş başka bir türe sahip olamaz.

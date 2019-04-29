@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2457
 ms.assetid: 347e169d-23ad-434f-8836-5b09b53980ff
 ms.openlocfilehash: a08ac9f9cfbc332b90ad16c663349ee227427278
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50446646"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62347109"
 ---
 # <a name="compiler-error-c2457"></a>Derleyici Hatası C2457
 
