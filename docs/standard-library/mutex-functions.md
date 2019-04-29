@@ -15,11 +15,11 @@ helpviewer_keywords:
 - std::lock [C++]
 - std::try_to_lock [C++]
 ms.openlocfilehash: b375aec0bee4183563b8cd55e4e8a27f79e7cd3e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50446282"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62326332"
 ---
 # <a name="ltmutexgt-functions-and-variables"></a>&lt;Mutex&gt; işlevler ve değişkenler
 
@@ -48,7 +48,7 @@ void call_once(once_flag& Flag,
 
 ### <a name="parameters"></a>Parametreler
 
-*Bayrağı*<br/>
+*Bayrak*<br/>
 A [once_flag](../standard-library/once-flag-structure.md) çağrılabilir nesnenin yalnızca bir kez çağrılır sağlayan nesne.
 
 *F*<br/>

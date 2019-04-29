@@ -8,11 +8,11 @@ helpviewer_keywords:
 - -RANGE dumpbin option
 ms.assetid: 7eeba266-32be-49cc-a350-96bdf541f98a
 ms.openlocfilehash: c631057e47e1a52a58d2b1304133dfdfc008ae14
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57810971"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62319713"
 ---
 # <a name="range"></a>/RANGE
 

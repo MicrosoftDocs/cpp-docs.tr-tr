@@ -21,11 +21,11 @@ helpviewer_keywords:
 - _lock function
 ms.assetid: 29f77c37-30de-4b3d-91b6-030216e645a6
 ms.openlocfilehash: d29488c6dec15fb58eef24f50c1bfafefb8e85c6
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57741149"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62343244"
 ---
 # <a name="lock"></a>_lock
 

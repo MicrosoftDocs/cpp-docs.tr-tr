@@ -8,11 +8,11 @@ f1_keywords:
 - char32_t_cpp
 ms.assetid: 6b33e9f5-455b-4e49-8f12-a150cbfe2e5b
 ms.openlocfilehash: 542751cdbd5bb21bb70467163c823e2669373e24
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50663248"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62331174"
 ---
 # <a name="char-wchart-char16t-char32t"></a>char, wchar_t, char16_t, char32_t
 

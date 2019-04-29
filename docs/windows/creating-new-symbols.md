@@ -20,11 +20,11 @@ helpviewer_keywords:
 - resource editors [C++], resource symbols
 ms.assetid: 35168d31-3af6-4ecd-9362-3707d47b53f3
 ms.openlocfilehash: 8bb73c1a9e8d253492a7068c444dd7ddea8417da
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59026363"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62350955"
 ---
 # <a name="how-to-create-symbols-c"></a>Nasıl yapılır: Simgeler (C++) oluştur
 

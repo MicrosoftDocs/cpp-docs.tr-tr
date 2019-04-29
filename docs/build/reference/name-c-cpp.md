@@ -7,11 +7,11 @@ helpviewer_keywords:
 - NAME .def file statement
 ms.assetid: 5c9b6bd8-9275-46a5-afba-f17a5936dc26
 ms.openlocfilehash: d0813befc622db72e095c449794405fc5d58465b
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57812193"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62320584"
 ---
 # <a name="name-cc"></a>NAME (C/C++)
 

@@ -9,11 +9,11 @@ helpviewer_keywords:
 - NULL, null pointer value
 ms.assetid: f9aac2a0-4f79-423f-8738-a76dccc0b1c3
 ms.openlocfilehash: 76e19e3e57405b66dfe1d7a24a289f864db35d5b
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57746871"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62342399"
 ---
 # <a name="null-crt"></a>NULL (CRT)
 

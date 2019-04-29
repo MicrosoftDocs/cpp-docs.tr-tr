@@ -25,11 +25,11 @@ helpviewer_keywords:
 - _get_unexpected function
 ms.assetid: a5f7a7a0-18e0-485e-953d-db291068a1e8
 ms.openlocfilehash: 225158ecab60a5997ebedbad107eb43d82189234
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50519411"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62331903"
 ---
 # <a name="getunexpected"></a>_get_unexpected
 

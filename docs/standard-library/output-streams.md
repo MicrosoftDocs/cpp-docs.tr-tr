@@ -5,11 +5,11 @@ helpviewer_keywords:
 - output streams
 ms.assetid: b49410e3-5caa-4153-9d0d-c4266408dc83
 ms.openlocfilehash: c64c46acca405f948e8314fb23944682adf09c43
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50511117"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62370794"
 ---
 # <a name="output-streams"></a>Çıkış Akışları
 

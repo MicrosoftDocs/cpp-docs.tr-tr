@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2141
 ms.assetid: 10cf770f-0500-4220-ac90-a863b7ea5fe6
 ms.openlocfilehash: 89395fa3419d79fa4dec3fecf9acfc681590d825
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50593992"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62353572"
 ---
 # <a name="compiler-error-c2141"></a>Derleyici Hatası C2141
 

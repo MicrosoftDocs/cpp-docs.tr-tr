@@ -10,11 +10,11 @@ helpviewer_keywords:
 - preprocessing translation phase
 ms.assetid: 5036c7b7-ccff-4e2c-b052-a9ea6c71af87
 ms.openlocfilehash: cb8a8fea2411e4eb7de78545f70021f3617b0f52
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50442867"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62325149"
 ---
 # <a name="overview-of-file-translation"></a>Dosya Çevirisine Genel Bakış
 

@@ -13,11 +13,11 @@ helpviewer_keywords:
 - arrays [C++]
 ms.assetid: 49445812-d775-4db1-a231-869598dbb955
 ms.openlocfilehash: e4173c16e13c08a54b36e42183e6e18b6ed4fdc2
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59035341"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62346067"
 ---
 # <a name="arrays-ccli-and-ccx"></a>Diziler (C++/CLI ve C++/CX)
 

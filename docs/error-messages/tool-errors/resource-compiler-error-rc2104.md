@@ -7,11 +7,11 @@ helpviewer_keywords:
 - RC2104
 ms.assetid: 792a3bd8-cb4c-4817-b288-4ce37082b582
 ms.openlocfilehash: 6ac1786e795c0c8ed57af2d341f43b8ba39229c4
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50517825"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62346567"
 ---
 # <a name="resource-compiler-error-rc2104"></a>Kaynak Derleyicisi Hatası RC2104
 

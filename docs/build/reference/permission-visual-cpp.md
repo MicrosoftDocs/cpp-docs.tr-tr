@@ -9,11 +9,11 @@ helpviewer_keywords:
 - permission C++ XML tag
 ms.assetid: 537ee2bc-95bd-48e4-9ce6-3420c3da87f4
 ms.openlocfilehash: 764048f7bc579afa6862bdff40968588955dc307
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57823695"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62319947"
 ---
 # <a name="ltpermissiongt"></a>&lt;İzni&gt;
 

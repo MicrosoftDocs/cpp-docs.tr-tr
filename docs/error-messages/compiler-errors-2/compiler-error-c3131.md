@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3131
 ms.assetid: 38f20fac-83c9-4cd9-b7b5-74ca8f650ea6
 ms.openlocfilehash: 082839c01a2da4b0d149962367b9719932d2b272
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50530893"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62349938"
 ---
 # <a name="compiler-error-c3131"></a>Derleyici Hatası C3131
 

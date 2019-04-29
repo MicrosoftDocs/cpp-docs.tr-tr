@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3714
 ms.assetid: 17718f75-5a37-4e42-912b-487e91008a95
 ms.openlocfilehash: 9bfdf8b26ab599ef1a28483af7ebc28f0dbc1912
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50441879"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62328347"
 ---
 # <a name="compiler-error-c3714"></a>Derleyici Hatası C3714
 

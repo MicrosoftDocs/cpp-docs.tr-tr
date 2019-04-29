@@ -11,11 +11,11 @@ helpviewer_keywords:
 - custom build steps [C++], troubleshooting
 ms.assetid: e4ceb177-fbee-4ed3-a7d7-80f0d78c1d07
 ms.openlocfilehash: 7a45b449dc9c3c4c81add37bbac0813c81133203
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57824127"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62315254"
 ---
 # <a name="troubleshooting-build-customizations"></a>Derleme Özelleştirmeleri Sorunlarını Giderme
 

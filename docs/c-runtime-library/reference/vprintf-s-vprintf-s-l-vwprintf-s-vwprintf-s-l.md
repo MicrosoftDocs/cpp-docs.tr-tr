@@ -36,11 +36,11 @@ helpviewer_keywords:
 - vprintf_s function
 ms.assetid: cf864996-a530-4b40-9c30-54c4cef439c8
 ms.openlocfilehash: 7fc49cbac375bdf1ecb3a6b977dfcc3e2b5ce170
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50561622"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62364824"
 ---
 # <a name="vprintfs-vprintfsl-vwprintfs-vwprintfsl"></a>vprintf_s, _vprintf_s_l, vwprintf_s, _vwprintf_s_l
 

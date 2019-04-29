@@ -11,11 +11,11 @@ helpviewer_keywords:
 - permissive compiler options [C++]
 ms.assetid: db1cc175-6e93-4a2e-9396-c3725d2d8f71
 ms.openlocfilehash: 05089ef4f0a516f932d82f13be979da572701ae2
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59424137"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62320051"
 ---
 # <a name="permissive--standards-conformance"></a>/ permissive-(standartlara uyumluluk)
 

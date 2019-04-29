@@ -33,11 +33,11 @@ helpviewer_keywords:
 - fopen function
 ms.assetid: e868993f-738c-4920-b5e4-d8f2f41f933d
 ms.openlocfilehash: 9c7a7fed8eabc38f1a0a67587d495e75ba8fa3d8
-ms.sourcegitcommit: e98671a4f741b69d6277da02e6b4c9b1fd3c0ae5
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/04/2019
-ms.locfileid: "55702914"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62333345"
 ---
 # <a name="fopen-wfopen"></a>fopen, _wfopen
 
@@ -170,8 +170,8 @@ Geçerli karakterler için *modu* kullanılan dize **fopen** ve **_fdopen** kar�
 |**w +**|**\_O\_RDWR** (usually **\_O\_RDWR** &#124; **\_O\_CREAT** &#124; **\_O\_TRUNC**)|
 |**b**|**\_O\_İKİLİ**|
 |**T**|**\_O\_METİN**|
-|**c**|Hiçbiri|
-|**n**|Hiçbiri|
+|**c**|None|
+|**n**|Yok.|
 |**S**|**\_O\_SIRALI**|
 |**R**|**\_O\_RASGELE**|
 |**T**|**\_O\_SHORTLIVED**|

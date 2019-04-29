@@ -19,11 +19,11 @@ helpviewer_keywords:
 - linking [C++], libraries
 ms.assetid: a889fd39-807d-48f2-807f-81492612463f
 ms.openlocfilehash: b9a2691d492a277ffe0018b6e86b00cd245840ed
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58767697"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62344661"
 ---
 # <a name="crt-library-features"></a>CRT Kitaplık Özellikleri
 
@@ -50,8 +50,8 @@ Bu tabloda vcruntime kitaplığı uygulayan kitaplıkları listeler.
 
 |Kitaplığı|İlişkili DLL|Özellikler|Seçenek|Ön işlemci yönergeleri|
 |-------------|--------------------|---------------------|------------|-----------------------------|
-|libvcruntime.lib|None|Kodunuza statik olarak bağlı.|**/MT**|_MT|
-|libvcruntimed.lib|None|Statik bağlama sürüm hata ayıklayın. Değil yeniden dağıtılabilir.|**/MTd**|_MT, _DEBUG|
+|libvcruntime.lib|Yok.|Kodunuza statik olarak bağlı.|**/MT**|_MT|
+|libvcruntimed.lib|Yok.|Statik bağlama sürüm hata ayıklayın. Değil yeniden dağıtılabilir.|**/MTd**|_MT, _DEBUG|
 |vcruntime.lib|vcruntime\<sürüm > .dll|DLL içeri aktarma kitaplığını vcruntime için.|**/MD**|_MT, _DLL|
 |vcruntimed.lib|vcruntime\<sürüm > d.dll|DLL içeri aktarma kitaplığı hata ayıklama vcruntime için. Değil yeniden dağıtılabilir.|**/MDd**|_DEBUG, _MT, _DLL|
 

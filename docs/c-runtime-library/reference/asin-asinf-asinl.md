@@ -30,11 +30,11 @@ helpviewer_keywords:
 - arcsine function
 ms.assetid: ca05f9ea-b711-49f6-9f32-2f4019abfd69
 ms.openlocfilehash: 20a2ffc37ea666207b9558cb5c282c414cfd4838
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50476056"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62347970"
 ---
 # <a name="asin-asinf-asinl"></a>asin, asinf, asinl
 
@@ -66,9 +66,9 @@ Varsayılan olarak, *x* -1'den küçük veya 1 ' den büyük olan **asin** bir s
 
 |Giriş|SEH özel durumu|Matherr özel durumu|
 |-----------|-------------------|-----------------------|
-|± ∞|**GEÇERSİZ**|**_ETKİ ALANI**|
-|± **QNAN**, **ONRAKİNİ BUL**|yok|**_ETKİ ALANI**|
-|&#124;x&#124;>1|**GEÇERSİZ**|**_ETKİ ALANI**|
+|± ∞|**GEÇERSİZ**|**_DOMAIN**|
+|± **QNAN**, **ONRAKİNİ BUL**|yok|**_DOMAIN**|
+|&#124;x&#124;>1|**GEÇERSİZ**|**_DOMAIN**|
 
 ## <a name="remarks"></a>Açıklamalar
 

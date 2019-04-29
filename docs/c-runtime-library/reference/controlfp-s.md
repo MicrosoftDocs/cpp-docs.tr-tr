@@ -27,11 +27,11 @@ helpviewer_keywords:
 - _controlfp_s function
 ms.assetid: a51fc3f6-ab13-41f0-b227-6bf02d98e987
 ms.openlocfilehash: 0624cbfb4870ca87efebac01a8de682b588a4ca3
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50506684"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62335396"
 ---
 # <a name="controlfps"></a>_controlfp_s
 
@@ -55,7 +55,7 @@ Geçerli denetim sözcüğü bit değeri.
 *newControl*<br/>
 Yeni Denetim sözcüğü bit değerleri.
 
-*Maskesi*<br/>
+*mask*<br/>
 Ayarlanacak yeni denetim sözcüğü bitleri için maske.
 
 ## <a name="return-value"></a>Dönüş Değeri
@@ -68,7 +68,7 @@ Başarılıysa sıfır ya da bir **errno** değer hata kodu.
 
 Varsa değerini *maskesi* 0'a eşit olan **_controlfp_s** kayan nokta denetim sözcüğünü alır ve alınan değeri depolar *currentControl*.
 
-Varsa *maskesi* olan sıfır değilse, Denetim sözcüğü için yeni bir değer ayarlanır: ayarlanmış olan bitler (yani 1'e eşit olan) içinde *maskesi*, karşılık gelen bit *yeni* denetim güncelleştirmek için kullanılır Word. Diğer bir deyişle, *fpcntrl* = ((*fpcntrl* & ~*maskesi*) &#124; (*newControl* & *maskesi* )) burada *fpcntrl* kayan nokta denetim sözcüğüdür. Bu senaryoda, *currentControl* sonraki değere ayarlanmıştır değişikliğini tamamladıktan; eski denetim sözcüğü bit değeri değil.
+Varsa *maskesi* olan sıfır değilse, Denetim sözcüğü için yeni bir değer ayarlanır: Tüm bit için ayarlanır (yani 1'e eşit olan) içinde *maskesi*, karşılık gelen bit *yeni* denetim sözcüğünü güncellemek için kullanılır. Diğer bir deyişle, *fpcntrl* = ((*fpcntrl* & ~*maskesi*) &#124; (*newControl* & *maskesi* )) burada *fpcntrl* kayan nokta denetim sözcüğüdür. Bu senaryoda, *currentControl* sonraki değere ayarlanmıştır değişikliğini tamamladıktan; eski denetim sözcüğü bit değeri değil.
 
 > [!NOTE]
 > Varsayılan olarak, çalışma zamanı kitaplıkları tüm kayan nokta özel durumları maskeleyebilir.

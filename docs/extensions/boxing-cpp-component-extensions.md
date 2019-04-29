@@ -6,11 +6,11 @@ helpviewer_keywords:
 - boxing, C++
 ms.assetid: b5fd2c98-c578-4f83-8257-6dd663478665
 ms.openlocfilehash: 0b41cacba8c279447e1e944cc3214ca1ba607665
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59038699"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62346070"
 ---
 # <a name="boxing--ccli-and-ccx"></a>Kutulama (C++/CLI ve C++/CX)
 

@@ -4,11 +4,11 @@ ms.date: 10/12/2018
 ms.topic: reference
 ms.assetid: 81e3fd32-6c8f-490b-9190-a6dc291545c8
 ms.openlocfilehash: 1113f50696cd9c4de31bc796973cccf7a9ee6fb3
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59028434"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62349613"
 ---
 # <a name="extensions-that-are-specific-to-ccli"></a>C++/CLI'ya Özgü Uzantılar
 

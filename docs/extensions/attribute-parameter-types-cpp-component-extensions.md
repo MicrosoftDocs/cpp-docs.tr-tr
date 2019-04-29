@@ -6,11 +6,11 @@ helpviewer_keywords:
 - custom attributes, parameter types
 ms.assetid: d9f127a3-7f08-456f-acc6-256805632712
 ms.openlocfilehash: fbb2bd68f589630608e341b944b4201c12d67211
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59041318"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62346073"
 ---
 # <a name="attribute-parameter-types--ccli-and-ccx"></a>Öznitelik parametre türleri (C++/CLI ve C++/CX)
 

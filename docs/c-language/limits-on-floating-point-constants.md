@@ -10,11 +10,11 @@ helpviewer_keywords:
 - floating-point numbers, floating limits
 ms.assetid: 2d975868-2af6-45d7-a8af-db79f2c6b67b
 ms.openlocfilehash: df39ee719a4474f6dfd55d31a2848169a1168390
-ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56148757"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62325591"
 ---
 # <a name="limits-on-floating-point-constants"></a>Kayan Nokta Sabitleri Sınırlamaları
 

@@ -9,11 +9,11 @@ helpviewer_keywords:
 - files [C++], manipulating
 ms.assetid: 48119e2e-e94f-4602-b08b-b72440f731d8
 ms.openlocfilehash: 9bbd64b27a760969635d70ae7689d09afed2d729
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57740423"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62343829"
 ---
 # <a name="file-handling"></a>Dosya İşleme
 

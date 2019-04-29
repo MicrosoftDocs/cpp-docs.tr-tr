@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3037
 ms.assetid: 9ba8a890-d3c7-4cce-93c5-d358e2bfad28
 ms.openlocfilehash: a022cfe6057f9ea518664090b5842faf4e822cb5
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50559971"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62350211"
 ---
 # <a name="compiler-error-c3037"></a>Derleyici Hatası C3037
 

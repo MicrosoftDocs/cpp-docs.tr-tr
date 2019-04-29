@@ -9,11 +9,11 @@ helpviewer_keywords:
 - memory, allocation
 ms.assetid: b4470556-a128-4782-9943-2ccf7a7d9979
 ms.openlocfilehash: bcc9865b149c2289f99f6ee13f31179ae58a15e1
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57742798"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62342516"
 ---
 # <a name="memory-allocation"></a>Bellek Ayırma
 

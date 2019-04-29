@@ -51,11 +51,11 @@ helpviewer_keywords:
 - _CRTDBG_CHECK_CRT_DF macro
 ms.assetid: b5657ffb-6178-4cbf-9886-1af904ede94c
 ms.openlocfilehash: dcb8e37090e4c15ba849e76ca1cb1cc646a7bcc0
-ms.sourcegitcommit: c40469825b6101baac87d43e5f4aed6df6b078f5
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/12/2018
-ms.locfileid: "51556809"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62348191"
 ---
 # <a name="crtsetdbgflag"></a>_CrtSetDbgFlag
 
@@ -86,11 +86,11 @@ Bit alanları aşağıdaki tabloda **_crtDbgFlag** ve davranışları açıklanm
 
 |Bit alanı|Varsayılan|Açıklama|
 |---------------|-------------|-----------------|
-|**_CRTDBG_ALLOC_MEM_DF**|AÇIK|Açık: hata ayıklama yığın ayırma ve kullanımı, bellek bloğu türü tanıtıcıları, gibi etkinleştirme **_clıent_block**. Kapalı: öbeğinin bağlantılı listesinde yeni ayırmaları eklemek, ancak ayarlanmış engelleme türü **_ıgnore_block**.<br /><br /> Ayrıca herhangi bir yığın sıklığı onay makroları ile birleştirilebilir.|
-|**_CRTDBG_CHECK_ALWAYS_DF**|KAPALI|Açık: Çağrı [_CrtCheckMemory](crtcheckmemory.md) her ayırmayı ve ayırmayı kaldırma isteği. Kapalı: **_CrtCheckMemory** özel olarak çağrılması gerekir.<br /><br /> Bu bayrak ayarlandığında yığın sıklığı onay makroları bir etkisi yoktur.|
-|**_CRTDBG_CHECK_CRT_DF**|KAPALI|Açık: Dahil **_CRT_BLOCK** sızıntı algılama ve bellek durumu türlerinde fark operations. Kapalı: çalışma zamanı kitaplığı tarafından dahili olarak kullanılan bellek bu işlemleri tarafından göz ardı edilir.<br /><br /> Ayrıca herhangi bir yığın sıklığı onay makroları ile birleştirilebilir.|
-|**_CRTDBG_DELAY_FREE_MEM_DF**|KAPALI|Açık: Keep yığın bloklarında bağlantılı liste bellek serbest, bunları atayabilir **_FREE_BLOCK** yazın ve bunları 0xDD bir bayt değeriyle doldurun. Kapalı: bırakılmış blokları yığının bağlantılı listesinde tutma.<br /><br /> Ayrıca herhangi bir yığın sıklığı onay makroları ile birleştirilebilir.|
-|**_CRTDBG_LEAK_CHECK_DF**|KAPALI|Açık: otomatik sızıntı bir çağrı aracılığıyla program çıkışında denetimi gerçekleştirmek [_CrtDumpMemoryLeaks](crtdumpmemoryleaks.md) ve uygulama, ayırdığı tüm belleği boşaltmak başarısız olduysa bir hata raporu oluşturun. Kapalı: otomatik olarak denetleme program çıkışında sızıntı gerçekleştirmeyin.<br /><br /> Ayrıca herhangi bir yığın sıklığı onay makroları ile birleştirilebilir.|
+|**_CRTDBG_ALLOC_MEM_DF**|AÇIK|AÇIK: Hata ayıklama yığın ayırma ve bellek bloğu türü tanımlayıcılar, kullanımı aşağıdaki gibi etkinleştirin **_clıent_block**. KAPALI: Yeni ayırmaları öbeğinin bağlantılı listesinde ekleyin, ama ayarlamak blok türü için **_ıgnore_block**.<br /><br /> Ayrıca herhangi bir yığın sıklığı onay makroları ile birleştirilebilir.|
+|**_CRTDBG_CHECK_ALWAYS_DF**|KAPALI|AÇIK: Çağrı [_CrtCheckMemory](crtcheckmemory.md) her ayırmayı ve ayırmayı kaldırma isteği. Kapalı: **_CrtCheckMemory** özel olarak çağrılması gerekir.<br /><br /> Bu bayrak ayarlandığında yığın sıklığı onay makroları bir etkisi yoktur.|
+|**_CRTDBG_CHECK_CRT_DF**|KAPALI|AÇIK: Dahil **_CRT_BLOCK** sızıntı algılama ve bellek durumu türlerinde fark operations. KAPALI: Çalışma Zamanı Kitaplığı tarafından dahili olarak kullanılan bellek, bu işlemleri tarafından göz ardı edilir.<br /><br /> Ayrıca herhangi bir yığın sıklığı onay makroları ile birleştirilebilir.|
+|**_CRTDBG_DELAY_FREE_MEM_DF**|KAPALI|AÇIK: Bırakılmış bellek blokları yığının bağlantılı listesinde tutmak, bunları atayabilir **_FREE_BLOCK** yazın ve bunları 0xDD bir bayt değeriyle doldurun. KAPALI: Bırakılmış blokları yığının bağlantılı listesinde tutma.<br /><br /> Ayrıca herhangi bir yığın sıklığı onay makroları ile birleştirilebilir.|
+|**_CRTDBG_LEAK_CHECK_DF**|KAPALI|AÇIK: Otomatik sızıntı bir çağrı aracılığıyla program çıkışında denetimi gerçekleştirmek [_CrtDumpMemoryLeaks](crtdumpmemoryleaks.md) ve uygulama, ayırdığı tüm belleği boşaltmak başarısız olduysa bir hata raporu oluşturun. KAPALI: Otomatik olarak denetleme program çıkışında sızıntı gerçekleştirmeyin.<br /><br /> Ayrıca herhangi bir yığın sıklığı onay makroları ile birleştirilebilir.|
 
 **Yığın denetim sıklığı makroları**
 

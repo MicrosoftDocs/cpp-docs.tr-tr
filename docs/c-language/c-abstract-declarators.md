@@ -6,11 +6,11 @@ helpviewer_keywords:
 - abstract declarations
 ms.assetid: 6a556ad7-0555-421a-aa02-294d77cda8b5
 ms.openlocfilehash: f2ca0f4a367abf939ed4307611517a883d8b82e0
-ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56152670"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62327034"
 ---
 # <a name="c-abstract-declarators"></a>C Soyut Bildirimciler
 

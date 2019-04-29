@@ -8,11 +8,11 @@ helpviewer_keywords:
 - is_compound
 ms.assetid: bdad1167-cf3f-4f37-8321-62a5df159ead
 ms.openlocfilehash: f270a1a58bb8023d91d84b0d1ca3395d36298c95
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51523071"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62337108"
 ---
 # <a name="iscompound-class"></a>is_compound Sınıfı
 

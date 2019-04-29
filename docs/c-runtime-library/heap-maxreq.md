@@ -10,11 +10,11 @@ helpviewer_keywords:
 - heap constants
 ms.assetid: c2dbc2ea-35ad-45d8-b459-d76ba0089ff7
 ms.openlocfilehash: 1a1651ab7526db51ee199758c3134022ef1f8fb5
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57746753"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62343361"
 ---
 # <a name="heapmaxreq"></a>_HEAP_MAXREQ
 

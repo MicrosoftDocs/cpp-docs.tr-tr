@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3451
 ms.assetid: a4897a69-e3e7-40bb-bb1c-598644904012
 ms.openlocfilehash: 5ef4352101541391a7cda88471fbaa6aeae4ffb4
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59776385"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62328724"
 ---
 # <a name="compiler-error-c3451"></a>Derleyici Hatası C3451
 

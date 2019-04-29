@@ -7,11 +7,11 @@ helpviewer_keywords:
 - windows [MFC], message maps
 ms.assetid: 2e863d23-9e58-45ba-b5e4-a8ceefccd0c8
 ms.openlocfilehash: 9467dce943da8c5fb447dcd3c83d044218fa183d
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57326107"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62322182"
 ---
 # <a name="how-to-use-the-message-map-cross-reference"></a>Nasıl yapılır: İleti eşleme çapraz başvurusunu kullanma
 

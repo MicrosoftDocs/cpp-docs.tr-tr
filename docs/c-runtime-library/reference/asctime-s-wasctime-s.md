@@ -31,11 +31,11 @@ helpviewer_keywords:
 - asctime_s function
 ms.assetid: 17ad9b2b-a459-465d-976a-42822897688a
 ms.openlocfilehash: 350d8c7b1dcf61272a3cfee884dff8a63b455f1c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50471961"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62349481"
 ---
 # <a name="asctimes-wasctimes"></a>asctime_s, _wasctime_s
 

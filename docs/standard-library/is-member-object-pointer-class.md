@@ -8,11 +8,11 @@ helpviewer_keywords:
 - is_member_object_pointer
 ms.assetid: 64f9cdf3-4621-4310-a076-a7bc986926b9
 ms.openlocfilehash: 401beed2a45be0492ba1a5cbd57cc92153dbaa91
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51521134"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62351085"
 ---
 # <a name="ismemberobjectpointer-class"></a>is_member_object_pointer Sınıfı
 

@@ -20,11 +20,11 @@ helpviewer_keywords:
 - LK_LOCK constant
 ms.assetid: c3dc92c8-60e3-4d29-9f50-5d217627c8ad
 ms.openlocfilehash: d559a68e8fede6e0b6dd40505a041b14da703681
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57738495"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62343088"
 ---
 # <a name="locking-constants"></a>_locking Sabitleri
 

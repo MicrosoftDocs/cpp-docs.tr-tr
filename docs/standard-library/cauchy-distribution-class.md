@@ -27,11 +27,11 @@ helpviewer_keywords:
 - std::cauchy_distribution [C++], param_type
 ms.assetid: 21522351-f2f1-46d9-97f0-d358c932356c
 ms.openlocfilehash: 2aeb45054a06446c1fae092d4c07f297580684ad
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50666966"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62351241"
 ---
 # <a name="cauchydistribution-class"></a>cauchy_distribution Sınıfı
 

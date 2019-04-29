@@ -8,11 +8,11 @@ helpviewer_keywords:
 - virtual list controls
 ms.assetid: 319f841f-e426-423a-8276-d93f965b0b45
 ms.openlocfilehash: 7372aca9e24a554e01f7a61f43d6170e99fe34c5
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57288720"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62358272"
 ---
 # <a name="virtual-list-controls"></a>Sanal Liste Denetimleri
 

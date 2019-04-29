@@ -34,11 +34,11 @@ helpviewer_keywords:
 - copying dates
 ms.assetid: de8e4097-58f8-42ba-9dcd-cb4d9a9f1696
 ms.openlocfilehash: 4dc2ea7f25e644c9bf7a4ddca4a625991f37d912
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50639617"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62353969"
 ---
 # <a name="strdate-wstrdate"></a>_strdate, _wstrdate
 

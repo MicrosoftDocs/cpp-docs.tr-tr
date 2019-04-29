@@ -10,11 +10,11 @@ helpviewer_keywords:
 - double data type, floating-point constants
 ms.assetid: e1bd9b44-d6ab-470c-93e5-07142c7a2062
 ms.openlocfilehash: 5e17490926ee328c3a4ca03b1de9cb6e752959a0
-ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56148705"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62325687"
 ---
 # <a name="c-floating-point-constants"></a>C Kayan Nokta Sabitleri
 

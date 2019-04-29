@@ -13,11 +13,11 @@ helpviewer_keywords:
 - '& operator, bitwise operators'
 ms.assetid: e22127b1-9a2d-4876-b01d-c8f72cec3317
 ms.openlocfilehash: 2133aaa5faa0f4bef7391fb5c0e7e0eb51fd4e69
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50543379"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62325799"
 ---
 # <a name="c-bitwise-operators"></a>C Bit Düzeyinde İşleçler
 
@@ -27,7 +27,7 @@ Bit düzeyinde işleçler bit düzeyinde gerçekleştirmek- ve (**&**), bit düz
 
 *VE ifade*: &nbsp; &nbsp; *eşitlik ifade* &nbsp; &nbsp; *ve ifade* **&** *eşitlik ifadesi*
 
-*dışlamalı OR ifadesi*: &nbsp; &nbsp; *ve ifade* &nbsp; &nbsp; *dışlamalı OR ifadesi* **^** *Ve ifade*
+*dışlamalı OR ifadesi*: &nbsp;&nbsp;*VE ifade* &nbsp; &nbsp; *dışlamalı OR ifadesi* **^** *ve ifade*
 
 *OR ifadesi kapsamlı*: &nbsp; &nbsp; *dışlamalı OR ifadesi* &nbsp; &nbsp; *OR ifadesi kapsamlı* &#124; *dışlamalı OR ifadesi*
 

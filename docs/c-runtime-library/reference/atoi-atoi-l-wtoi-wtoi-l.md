@@ -42,11 +42,11 @@ helpviewer_keywords:
 - wtoi function
 ms.assetid: ad7fda30-28ab-421f-aaad-ef0b8868663a
 ms.openlocfilehash: b6a1f52e6c83f53230c736db3a506aed4b52e434
-ms.sourcegitcommit: e06648107065f3dea35f40c1ae5999391087b80b
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57210698"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62347853"
 ---
 # <a name="atoi-atoil-wtoi-wtoil"></a>atoi, _atoi_l, _wtoi, _wtoi_l
 

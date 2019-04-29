@@ -5,11 +5,11 @@ f1_keywords:
 - VC.Project.VCLinkerTool.WINMDKEYCONTAINER
 ms.assetid: c2fc44dc-7cb5-42b9-897f-1b124928f2f7
 ms.openlocfilehash: 0b6cb42fc391d94634ae90e5a4cc17e69a14ff09
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57813077"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62316521"
 ---
 # <a name="winmdkeycontainer-specify-key-container"></a>/WINMDKEYCONTAINER (Tanımlayıcı Ad Anahtar Kapsayıcısı Belirtin)
 
@@ -36,4 +36,4 @@ Benzer [/keycontainer](keycontainer-specify-a-key-container-to-sign-an-assembly.
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [MSVC bağlayıcı başvurusu](linking.md)<br/>
-[MSVC bağlayıcı seçenekleri](linker-options.md)
+[MSVC Bağlayıcı Seçenekleri](linker-options.md)

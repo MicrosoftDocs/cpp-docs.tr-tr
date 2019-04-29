@@ -45,11 +45,11 @@ helpviewer_keywords:
 - CAnimationVariable [MFC], m_variable
 ms.assetid: 506e697e-31a8-4033-a27e-292f4d7b42d9
 ms.openlocfilehash: 42fd3ddc504e85ba3f69588bee54c6540b628129
-ms.sourcegitcommit: 309dc532f13242854b47759cef846de59bb807f1
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58565783"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62338278"
 ---
 # <a name="canimationvariable-class"></a>CAnimationVariable sınıfı
 

@@ -7,11 +7,11 @@ helpviewer_keywords:
 - NMAKE program, inline files
 ms.assetid: 6d381dcf-0ed8-45d1-8df3-b4598d860b99
 ms.openlocfilehash: 71f17ff6717e717693facb21b4a4341a040b14c1
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57824025"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62320597"
 ---
 # <a name="multiple-inline-files"></a>Birden Çok Satır İçi Dosya
 

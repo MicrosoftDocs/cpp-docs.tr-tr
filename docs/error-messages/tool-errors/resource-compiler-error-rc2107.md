@@ -7,11 +7,11 @@ helpviewer_keywords:
 - RC2107
 ms.assetid: f1786128-aa86-4cdb-a095-05a0b66b5608
 ms.openlocfilehash: 7a075f1fb9abbfbaf55c346fcf55b1246034028d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50627519"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62346515"
 ---
 # <a name="resource-compiler-error-rc2107"></a>Kaynak Derleyicisi Hatası RC2107
 

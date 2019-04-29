@@ -9,11 +9,11 @@ helpviewer_keywords:
 - TSAWARE editbin option
 ms.assetid: 84715050-c907-4118-8cff-2973411ae931
 ms.openlocfilehash: 0800b05cd4619c8ac380c878a5c81bf55be3ede5
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57808449"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62317529"
 ---
 # <a name="tsaware"></a>/TSAWARE
 

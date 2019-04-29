@@ -1,23 +1,23 @@
 ---
-title: Başvuru sınıfları ve yapıları (C + +/ CX)
+title: Başvuru sınıfları ve yapıları (C++/CX)
 ms.date: 01/22/2017
 ms.assetid: 3d736b82-0bf0-48cf-bac1-cc9d110b70d1
 ms.openlocfilehash: e9ac14762dba580967fbecd245a81a4ff4356b64
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57741836"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62368597"
 ---
-# <a name="ref-classes-and-structs-ccx"></a>Başvuru sınıfları ve yapıları (C + +/ CX)
+# <a name="ref-classes-and-structs-ccx"></a>Başvuru sınıfları ve yapıları (C++/CX)
 
-C + +/ CX destekler kullanıcı tanımlı *başvuru sınıfları* ve *başvuru yapı birimleri*ve kullanıcı tanımlı *değer sınıfları* ve *yapılar değer*. Bu veri yapıları tarafından hangi C + birincil kapsayıcılardır +/ CX Windows çalışma zamanı tür sistemi destekler. İçeriklerini meta verilerine belirli belirli kurallara göre gönderilir ve bu bunları Windows çalışma zamanı bileşenleri ve evrensel Windows platformu uygulamaları, C++ veya diğer dillerde yazılmış arasında geçirilmesini sağlar.
+C++Kullanıcı tanımlı /CX destekler *başvuru sınıfları* ve *başvuru yapı birimleri*ve kullanıcı tanımlı *değer sınıfları* ve *yapılar değer*. Bu veri yapıları tarafından hangi C + birincil kapsayıcılardır +/ CX Windows çalışma zamanı tür sistemi destekler. İçeriklerini meta verilerine belirli belirli kurallara göre gönderilir ve bu bunları Windows çalışma zamanı bileşenleri ve evrensel Windows platformu uygulamaları, C++ veya diğer dillerde yazılmış arasında geçirilmesini sağlar.
 
 Başvuru sınıfı veya ref struct önemli özelliklere sahiptir:
 
 - Ad alanı kapsamında bir ad alanı içinde bildirilmelidir ve o ad alanında erişilebilirlik genel veya özel olabilir. Yalnızca genel türleri için meta veriler gönderilir. İç içe geçmiş genel sınıf tanımları izin verilmez, iç içe geçmiş genel dahil olmak üzere [enum](../cppcx/enums-c-cx.md) sınıfları. Daha fazla bilgi için [ad alanları ve tür görünürlüğü](../cppcx/namespaces-and-type-visibility-c-cx.md).
 
-- İçerdiği üyeler C + +/ CX başvuru sınıfları, değer sınıfları, başvuru yapı birimleri, değer yapılar veya boş değer atanabilen değer yapılar dahil. Ayrıca, float64, bool vb. gibi skaler türler de içerebilir. Ayrıca standart C++ türler gibi içerebilir `std::vector` veya özel bir sınıf genel olmadıkları sürece. C + +/ CX yapıları olabilir `public`, `protected`, `internal`, `private`, veya `protected private` erişilebilirlik. Tüm `public` veya `protected` üyeleri için meta verileri yayılır. Standart C++ türlerinin olmalıdır `private`, `internal`, veya `protected private` meta verileri yayılan engelleyen ve erişilebilirlik.
+- Üye olarak içerebilir C++/CX başvuru sınıfları, değer sınıfları, başvuru yapı birimleri, değer yapılar veya boş değer atanabilen değer yapılar dahil. Ayrıca, float64, bool vb. gibi skaler türler de içerebilir. Ayrıca standart C++ türler gibi içerebilir `std::vector` veya özel bir sınıf genel olmadıkları sürece. C++/CX yapıları olabilir `public`, `protected`, `internal`, `private`, veya `protected private` erişilebilirlik. Tüm `public` veya `protected` üyeleri için meta verileri yayılır. Standart C++ türlerinin olmalıdır `private`, `internal`, veya `protected private` meta verileri yayılan engelleyen ve erişilebilirlik.
 
 - Bir veya daha fazla uygulayabilir *arabirim sınıfları* veya *yapı birimleri arabirim*.
 
@@ -55,13 +55,13 @@ Kullanarak bir başvuru sınıfı dinamik bellek ayırma `ref new` anahtar sözc
 
 [!code-cpp[cx_classes#01](../cppcx/codesnippet/CPP/classesstructs/class1.h#01)]
 
-Tanıtıcı nesnesi işleci ^ "hat" bilinir ve temelde C++ akıllı işaretçisi. Son hat kapsamın dışına çıkıncaya veya açıkça işaret için bellek otomatik olarak edildiğinde `nullptr`.
+Tanıtıcı nesnesi işleci ^ "hat" bilinir ve temelde olduğu bir C++ akıllı işaretçi. Son hat kapsamın dışına çıkıncaya veya açıkça işaret için bellek otomatik olarak edildiğinde `nullptr`.
 
 Tanımı gereği, başvuru sınıfı başvuru semantiği vardır. Başvuru sınıfı atadığınızda nesnenin kendisini kopyalamıştır tanıtıcı olduğu değişken. Sonraki örnekte, atama sonra hem `myClass` ve `myClass2` aynı bellek konumuna gelin.
 
 [!code-cpp[cx_classes#02](../cppcx/codesnippet/CPP/classesstructs/class1.h#02)]
 
-C + olduğunda +/ CX başvuru sınıfı örneği, kendi bellek sıfır-kendi Oluşturucusu çağırılmadan önce; başlatılır Bu nedenle sıfır-özellikler dahil olmak üzere, tek tek üyeleri başlatma gerekli değildir. C + +/ CX sınıfı türetilen Windows çalışma zamanı C++ Kitaplığı (WRL) öğesinden bir sınıf, yalnızca C + +/ CX türetilmiş sınıf bölümüdür sıfır olarak başlatılır.
+C + olduğunda +/ CX başvuru sınıfı örneği, kendi bellek sıfır-kendi Oluşturucusu çağırılmadan önce; başlatılır Bu nedenle sıfır-özellikler dahil olmak üzere, tek tek üyeleri başlatma gerekli değildir. Varsa C++/CX sınıfı türetilen bir Windows çalışma zamanını şuradan C++ kitaplığı (WRL) sınıfı, yalnızca C++/CX türetilmiş sınıf bölümüdür sıfır olarak başlatılır.
 
 ### <a name="members"></a>Üyeler
 
@@ -81,7 +81,7 @@ Tür parametrelerine sahip genel başvuru sınıfları izin verilmez. Kullanıc�
 
 ## <a name="destructors"></a>Yıkıcılar
 
-C + +/ CX, çağırma `delete` üzerinde ortak bir yok edici yok edici nesnenin başvuru sayısının bağımsız olarak çağırır. Bu davranışı özel temizleme RAII olmayan kaynakların belirlenimci bir şekilde gerçekleştiren bir yıkıcı tanımlamanızı sağlar. Ancak, bu durumda bile, Nesne bellekten silinir. Başvuru sayısı sıfır ulaştığında yalnızca nesne için bellek serbest bırakılır.
+İçinde C++/CX, çağırma `delete` üzerinde ortak bir yok edici yok edici nesnenin başvuru sayısının bağımsız olarak çağırır. Bu davranışı özel temizleme RAII olmayan kaynakların belirlenimci bir şekilde gerçekleştiren bir yıkıcı tanımlamanızı sağlar. Ancak, bu durumda bile, Nesne bellekten silinir. Başvuru sayısı sıfır ulaştığında yalnızca nesne için bellek serbest bırakılır.
 
 Bir sınıfın yok Edicisi genel olmadığından, başvuru sayısı sıfır ulaştığında ardından onu yalnızca çağrılır. Çağırırsanız `delete` özel bir yok Edicisi olan bir nesne üzerinde derleyici uyarı gerektirdiğinizde C4493 başlatır "silme ifadenin etkisi yok edicisinde \<türü adı > 'public' erişilebilirlik sahip değil."
 
@@ -97,11 +97,11 @@ Erişilebilirlik, virtualness ve sealedness bir birleşimini izin verilir.  Bir 
 
 Çalıştırma yok edici zaten oluşmuş bir sınıfın üyeleri erişmeye çalışırsanız tanımsız bir davranıştır; büyük olasılıkla programın çökmesine neden olur. Çağırma `delete t` hiçbir ortak yıkıcısı olan bir türü üzerinde hiçbir etkisi olmaz. Çağırma `delete this` bilinen bir sahip yazın ya da temel sınıfta `private` veya `protected private` yıkıcıdan kendi tür hiyerarşisi içinde de etkisi yoktur.
 
-Ortak yıkıcısı bildirdiğinizde, başvuru sınıfının uygular, böylece derleyici kodu oluşturur `Platform::IDisposable` ve yok edici uygular `Dispose` yöntemi. `Platform::IDisposable` olan C + +/ CX izdüşümü `Windows::Foundation::IClosable`. Bu arabirimler asla açıkça uygulayın.
+Ortak yıkıcısı bildirdiğinizde, başvuru sınıfının uygular, böylece derleyici kodu oluşturur `Platform::IDisposable` ve yok edici uygular `Dispose` yöntemi. `Platform::IDisposable` olan C++/CX izdüşümü `Windows::Foundation::IClosable`. Bu arabirimler asla açıkça uygulayın.
 
 ## <a name="inheritance"></a>Devralma
 
-Platform::Object tüm başvuru sınıfları için evrensel temel sınıftır. Tüm başvuru sınıfları için Platform::Object örtük olarak dönüştürülebilir ve geçersiz kılabilirsiniz [Object::ToString](../cppcx/platform-object-class.md#tostring). Ancak, Windows çalışma zamanı devralma modeli genel devralma modeli tasarlanmamıştır; C + +/ CX, yani bir kullanıcı tarafından tanımlanan ortak başvuru sınıfının bir temel sınıf olarak hizmet veremez.
+Platform::Object tüm başvuru sınıfları için evrensel temel sınıftır. Tüm başvuru sınıfları için Platform::Object örtük olarak dönüştürülebilir ve geçersiz kılabilirsiniz [Object::ToString](../cppcx/platform-object-class.md#tostring). Ancak, Windows çalışma zamanı devralma modeli genel devralma modeli tasarlanmamıştır; içinde C++/CX yani bir kullanıcı tarafından tanımlanan ortak başvuru sınıfının bir temel sınıf olarak hizmet veremez.
 
 XAML kullanıcı denetimi, oluşturduğunuz ve bağımlılık özelliği sistemde nesnenin katıldığı durumunda kullanabileceğiniz `Windows::UI::Xaml::DependencyObject` bir temel sınıf olarak.
 
@@ -109,7 +109,7 @@ Korumasız bir sınıf tanımladıktan sonra `MyBase` öğesinden devralan `Depe
 
 Özel taban başvuru sınıfı, varolan bir korumasız sınıftan türetilen gerekli değildir. Bir nesne hiyerarşisine kendi program yapısı model veya kod yeniden kullanımını etkinleştirmek için gerekiyorsa, özel veya iç başvuru sınıfları kullanın veya henüz, standart C++ sınıfları daha iyi. Genel korumalı ref class sarmalayıcı aracılığıyla özel nesne hiyerarşisi işlevselliğini kullanıma sunabilirsiniz.
 
-Başvuru sınıfı içeren bir ortak veya korumalı Oluşturucu C + +/ CX bildirilmelidir olarak korumalı. Bu kısıtlama, C# veya Visual Basic, C +'da yazılmış bir Windows çalışma zamanı bileşeni olarak bildirdiğiniz türleri devralınacak gibi diğer dillerde yazılmış sınıflar için bir yolu yoktur anlamına gelir. +/ CX.
+Ortak veya korumalı bir oluşturucuya sahip bir başvuru sınıfının C++/CX bildirilmelidir olarak korumalı. Bu kısıtlama, C# veya Visual Basic, C +'da yazılmış bir Windows çalışma zamanı bileşeni olarak bildirdiğiniz türleri devralınacak gibi diğer dillerde yazılmış sınıflar için bir yolu yoktur anlamına gelir. +/ CX.
 
 C + devralma için temel kurallar şunlardır +/ CX:
 
@@ -132,4 +132,4 @@ Aşağıdaki örnek, bir devralma hiyerarşisindeki diğer başvuru sınıfları
 [Tür Sistemi](../cppcx/type-system-c-cx.md)<br/>
 [Değer sınıfları ve yapıları](../cppcx/value-classes-and-structs-c-cx.md)<br/>
 [Visual C++ Dil Başvurusu](../cppcx/visual-c-language-reference-c-cx.md)<br/>
-[Ad alanları başvurusu](../cppcx/namespaces-reference-c-cx.md)
+[Ad Alanları Başvurusu](../cppcx/namespaces-reference-c-cx.md)

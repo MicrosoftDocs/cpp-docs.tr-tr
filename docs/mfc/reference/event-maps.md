@@ -7,11 +7,11 @@ helpviewer_keywords:
 - event maps [MFC]
 ms.assetid: 1ed53aee-bc53-43cd-834a-6fb935c0d29b
 ms.openlocfilehash: 512170d7eaa891b3616ca1ea56c29a8bb5cccda9
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50492251"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62322247"
 ---
 # <a name="event-maps"></a>Olay Eşlemeleri
 
@@ -21,7 +21,7 @@ Microsoft Foundation Class Kitaplığı olayları tetikleme için en iyi duruma 
 
 [!code-cpp[NVC_MFCAxCtl#16](../../mfc/reference/codesnippet/cpp/event-maps_1.cpp)]
 
-`EVENT_STOCK_CLICK` Makrosu gösteren denetimi hisse senedi tıklatın, bir fare algıladığı her zaman olay ateşlenir. Stok diğer olaylar daha ayrıntılı bir listesi için bkz [ActiveX denetimleri: olaylar](../../mfc/mfc-activex-controls-events.md). Makrolar özel olayları göstermek de kullanılabilir.
+`EVENT_STOCK_CLICK` Makrosu gösteren denetimi hisse senedi tıklatın, bir fare algıladığı her zaman olay ateşlenir. Stok diğer olaylar daha ayrıntılı bir listesi için bkz [ActiveX denetimleri: Olayları](../../mfc/mfc-activex-controls-events.md). Makrolar özel olayları göstermek de kullanılabilir.
 
 Olay eşleme makroları önemli olsa da, genellikle bunları doğrudan eklediğiniz değil. Özellikler penceresinde olay eşleme girişleri olay tetikleyicisinin tetikleme işlevleri olaylarla ilişkilendirmek için kullandığınızda, kaynak dosyaları otomatik olarak oluşturur. olmasıdır. Düzenlemek veya bir olay eşlemesi giriş eklemek için istediğiniz zaman, Özellikler penceresini kullanabilirsiniz.
 
@@ -63,7 +63,7 @@ DECLARE_EVENT_MAP()
 
 DECLARE_EVENT_MAP makrosu, sınıf bildiriminin sonuna kullanın. Ardından, sınıfın üye işlevleri tanımlar .cpp dosyası begın_event_map makrosu, makro girişleri her biri denetim olaylarını ve END_EVENT_MAP makrosu için olay listesinin sonuna bildirmek için kullanın.
 
-Olay eşlemeleri hakkında daha fazla bilgi için bkz [ActiveX denetimleri: olaylar](../../mfc/mfc-activex-controls-events.md).
+Olay eşlemeleri hakkında daha fazla bilgi için bkz [ActiveX denetimleri: Olayları](../../mfc/mfc-activex-controls-events.md).
 
 ### <a name="requirements"></a>Gereksinimler
 
@@ -89,7 +89,7 @@ Taban sınıfının adını belirtir *sınıfın*.
 
 Sınıfınız için üye işlevleri tanımlayan uygulama dosyasında (.cpp), olay eşlemesi begın_event_map makrosu ile Başlat sonra her olaylarınızı makrosu girişler ekleyin ve olay eşlemesi END_EVENT_MAP makrosu ile tamamlayın.
 
-Olay eşlemeleri ve begın_event_map makrosu hakkında daha fazla bilgi için bkz [ActiveX denetimleri: olaylar](../../mfc/mfc-activex-controls-events.md).
+Olay eşlemeleri ve begın_event_map makrosu hakkında daha fazla bilgi için bkz [ActiveX denetimleri: Olayları](../../mfc/mfc-activex-controls-events.md).
 
 ### <a name="requirements"></a>Gereksinimler
 
@@ -144,7 +144,7 @@ bir RGB temsil eden bir 32 bit tamsayı içeren bir liste işaretçisi ardından
 |VTS_R8|**double**|
 |VTS_COLOR|OLE_COLOR|
 |VTS_CY|PARA BİRİMİ|
-|VTS_DATE|TARİH|
+|VTS_DATE|DATE|
 |VTS_BSTR|**const** __char\*__|
 |VTS_DISPATCH|LPDISPATCH|
 |VTS_FONT|`IFontDispatch*`|

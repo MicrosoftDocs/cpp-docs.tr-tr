@@ -23,11 +23,11 @@ helpviewer_keywords:
 - CrtGetAllocHook function
 ms.assetid: 036acf7c-547a-4b3f-a636-80451070d7ed
 ms.openlocfilehash: b49c4cfc820a925187d0ea4d1562965295bea817
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50514965"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62339916"
 ---
 # <a name="crtgetallochook"></a>_CrtGetAllocHook
 

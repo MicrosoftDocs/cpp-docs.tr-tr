@@ -1,5 +1,5 @@
 ---
-title: 'TN062: Windows Denetimleri için İleti Yansıması'
+title: 'TN062: Windows denetimleri için ileti yansıması'
 ms.date: 06/28/2018
 f1_keywords:
 - vc.controls.messages
@@ -28,20 +28,20 @@ helpviewer_keywords:
 - ON_CONTROL_REFLECT macro
 ms.assetid: 53efb0ba-fcda-4fa0-a3c7-14e0b78fb494
 ms.openlocfilehash: aa189eec430d72bef753fef7ebbe9ad929d76c87
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50677506"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62351856"
 ---
-# <a name="tn062-message-reflection-for-windows-controls"></a>TN062: Windows Denetimleri için İleti Yansıması
+# <a name="tn062-message-reflection-for-windows-controls"></a>TN062: Windows denetimleri için ileti yansıması
 
 > [!NOTE]
 > Aşağıdaki Teknik Not çevrimiçi belgelere ilk eklenmiştir beri güncelleştirilmemiş. Eski veya yanlış sonuç olarak, bazı yordamlar ve konular olabilir. En son bilgiler için bu konuyu çevrimiçi belge dizininde arama önerilir.
 
 Bu teknik Not ileti yansıması, yeni bir özellik MFC 4.0 açıklar. Ayrıca, ileti yansıması kullanan basit bir yeniden kullanılabilir denetimi oluşturma için yönergeler içerir.
 
-Bu teknik Not (eski adı OLE denetimleri de denir) ActiveX denetimleri için geçerli olduğundan ileti yansıması ele almaz. Lütfen bkz [ActiveX denetimleri: bir Windows denetimini alt sınıf yapma](../mfc/mfc-activex-controls-subclassing-a-windows-control.md).
+Bu teknik Not (eski adı OLE denetimleri de denir) ActiveX denetimleri için geçerli olduğundan ileti yansıması ele almaz. Lütfen bkz [ActiveX denetimleri: Bir Windows denetimini alt sınıf yapma](../mfc/mfc-activex-controls-subclassing-a-windows-control.md).
 
 **İleti yansıması nedir**
 
@@ -63,7 +63,7 @@ Wm_notıfy iletisi gönderildiğinde, denetimin işlenmesi için ilk fırsat sun
 
 İleti eşleme makrosu yansımış iletiler için düzenli bildirimler için biraz farklıdır: sahip *_REFLECT* normal adının. Örneğin, üst bir wm_notıfy iletisini işlemek için ileti eşlemesi üst öğenin içinde on_notıfy makrosu kullanın. Alt denetiminde yansıtılan iletisini işlemek için alt denetimin ileti eşlemede on_notıfy_reflect makroyu kullanın. Bazı durumlarda, parametreleri de farklı olabilir. ClassWizard genellikle sizin için ileti eşlemesi girişleri ekleyebilir ve doğru parametrelere sahip iskelet işlev uygulamaları sağlamak olduğunu unutmayın.
 
-Bkz: [TN061: on_notıfy ve wm_notıfy iletileri](../mfc/tn061-on-notify-and-wm-notify-messages.md) yeni wm_notıfy iletisi hakkında bilgi için.
+Bkz: [TN061: On_notıfy ve wm_notıfy iletileri](../mfc/tn061-on-notify-and-wm-notify-messages.md) yeni wm_notıfy iletisi hakkında bilgi için.
 
 **İleti eşlemesi girişleri ve yansımış iletiler için işleyici işlev prototipleri**
 
@@ -87,9 +87,9 @@ Anlamlara parametrelerinin ve dönüş değerleri işlevlerin işlev adı veya i
 
 |Eşleme girişi|İşlev prototipi|
 |---------------|------------------------|
-|**ON_CONTROL_REFLECT (** `wNotifyCode` **,** `memberFxn` **)**|**afx_msg void** `memberFxn` **();**|
+|**ON_CONTROL_REFLECT(** `wNotifyCode` **,** `memberFxn` **)**|**afx_msg void** `memberFxn` **( );**|
 |**ON_NOTIFY_REFLECT (** `wNotifyCode` **,** `memberFxn` **)**|**afx_msg void** `memberFxn` **(NMHDR** <strong>\*</strong> `pNotifyStruct` **, LRESULT** <strong>\*</strong> *sonucu* **);**|
-|**ON_UPDATE_COMMAND_UI_REFLECT (** `memberFxn` **)**|**afx_msg void** `memberFxn` **(Ccmduı** <strong>\*</strong> `pCmdUI` **);**|
+|**ON_UPDATE_COMMAND_UI_REFLECT(** `memberFxn` **)**|**afx_msg void** `memberFxn` **(Ccmduı** <strong>\*</strong> `pCmdUI` **);**|
 |**ON_WM_CTLCOLOR_REFLECT)**|**HBRUSH CtlColor afx_msg (CDC** <strong>\*</strong> `pDC` **, UINT** `nCtlColor` **);**|
 |**ON_WM_DRAWITEM_REFLECT)**|**DrawItem afx_msg void (LPDRAWITEMSTRUCT** `lpDrawItemStruct` **);**|
 |**ON_WM_MEASUREITEM_REFLECT)**|**MeasureItem afx_msg void (LPMEASUREITEMSTRUCT** `lpMeasureItemStruct` **);**|
@@ -105,10 +105,10 @@ On_notıfy_reflect ve ON_CONTROL_REFLECT makroları (örneğin, Denetim ve kendi
 
 |Eşleme girişi|İşlev prototipi|
 |---------------|------------------------|
-|**ON_NOTIFY_REFLECT_EX (** `wNotifyCode` **,** `memberFxn` **)**|**BOOL afx_msg** `memberFxn` **(NMHDR** <strong>\*</strong> `pNotifyStruct` **, LRESULT** <strong>\*</strong> *sonucu* **);**|
-|**ON_CONTROL_REFLECT_EX (** `wNotifyCode` **,** `memberFxn` **)**|**BOOL afx_msg** `memberFxn` **();**|
+|**ON_NOTIFY_REFLECT_EX(** `wNotifyCode` **,** `memberFxn` **)**|**BOOL afx_msg** `memberFxn` **(NMHDR** <strong>\*</strong> `pNotifyStruct` **, LRESULT** <strong>\*</strong> *sonucu* **);**|
+|**ON_CONTROL_REFLECT_EX(** `wNotifyCode` **,** `memberFxn` **)**|**BOOL afx_msg** `memberFxn` **();**|
 
-## <a name="handling-reflected-messages-an-example-of-a-reusable-control"></a>İşleme Reflected iletileri: Yeniden kullanılabilir bir denetim örneği
+## <a name="handling-reflected-messages-an-example-of-a-reusable-control"></a>Yansımış iletileri işleme: Yeniden kullanılabilir bir denetim örneği
 
 Bu basit örnek olarak adlandırılan yeniden kullanılabilir bir denetim oluşturur `CYellowEdit`. Bir sarı arka planı siyah metin görüntüler denetimi aynı normal düzenleme denetimi olarak çalışır. İzin üye işlevleri eklemek kolay olurdu `CYellowEdit` farklı renkler görüntülenecek denetimi.
 

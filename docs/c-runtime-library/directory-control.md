@@ -8,11 +8,11 @@ helpviewer_keywords:
 - directory control routines
 ms.assetid: a72dcf6f-f366-4d20-8850-0e19cc53ca18
 ms.openlocfilehash: 327647ee2eee7e149ec0e9ebfc71883a8a3643d5
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57748586"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62343920"
 ---
 # <a name="directory-control"></a>Dizin Denetimi
 

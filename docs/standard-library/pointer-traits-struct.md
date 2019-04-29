@@ -15,11 +15,11 @@ f1_keywords:
 - memory/std::pointer_traits::pointer_to
 ms.assetid: 545aecf1-3561-4859-8b34-603c079fe1b3
 ms.openlocfilehash: b661d4b36ce48a08faba6638c5114f3f4e6981a6
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50434794"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62370391"
 ---
 # <a name="pointertraits-struct"></a>pointer_traits Yapısı
 

@@ -27,11 +27,11 @@ helpviewer_keywords:
 - thread locale
 ms.assetid: 10e4050e-b587-4f30-80bc-6c76b35fc770
 ms.openlocfilehash: 99e10a0330ba4880ea181e9fe3d56f3fb6bd6493
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51326049"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62340267"
 ---
 # <a name="configthreadlocale"></a>_configthreadlocale
 

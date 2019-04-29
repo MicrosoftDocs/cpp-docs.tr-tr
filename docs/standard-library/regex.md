@@ -1,5 +1,5 @@
 ---
-title: '&lt;Normal ifade&gt;'
+title: '&lt;regex&gt;'
 ms.date: 11/04/2016
 f1_keywords:
 - <regex>
@@ -7,13 +7,13 @@ helpviewer_keywords:
 - regex header
 ms.assetid: 5dd4ef74-6063-4dbc-b692-1960bb736f0b
 ms.openlocfilehash: 0a4728008130119ed9a01334efb2fea2a4ac0639
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50627350"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62368987"
 ---
-# <a name="ltregexgt"></a>&lt;Normal ifade&gt;
+# <a name="ltregexgt"></a>&lt;regex&gt;
 
 Ayrıştırmak için bir şablon sınıfı tanımlar [normal ifadeler (C++)](../standard-library/regular-expressions-cpp.md), birkaç şablon sınıf ve eşleşen bir normal ifade nesnesi için metin aranacak işlev.
 
@@ -50,7 +50,7 @@ Normal ifade dilbilgisi ayrıntılarını değiştirmek için normal ifade nitel
 |[regex_token_iterator](../standard-library/regex-token-iterator-class.md)|Alt eşleşmeleri yinelenir.|
 |[sub_match](../standard-library/sub-match-class.md)|Bir alt eşleşme açıklar.|
 
-### <a name="type-definitions"></a>Tür tanımları
+### <a name="type-definitions"></a>Tür Tanımları
 
 |||
 |-|-|
@@ -58,7 +58,7 @@ Normal ifade dilbilgisi ayrıntılarını değiştirmek için normal ifade nitel
 |[cregex_iterator](../standard-library/regex-typedefs.md#cregex_iterator)|Tür tanımına için **char** `regex_iterator`.|
 |[cregex_token_iterator](../standard-library/regex-typedefs.md#cregex_token_iterator)|Tür tanımına için **char** `regex_token_iterator`.|
 |[csub_match](../standard-library/regex-typedefs.md#csub_match)|Tür tanımına için **char** `sub_match`.|
-|[Normal ifade](../standard-library/regex-typedefs.md#regex)|Tür tanımına için **char** `basic_regex`.|
+|[regex](../standard-library/regex-typedefs.md#regex)|Tür tanımına için **char** `basic_regex`.|
 |[smatch](../standard-library/regex-typedefs.md#smatch)|Tür tanımına için `string` `match_results`.|
 |[sregex_iterator](../standard-library/regex-typedefs.md#sregex_iterator)|Tür tanımına için `string` `regex_iterator`.|
 |[sregex_token_iterator](../standard-library/regex-typedefs.md#sregex_token_iterator)|Tür tanımına için `string` `regex_token_iterator`.|

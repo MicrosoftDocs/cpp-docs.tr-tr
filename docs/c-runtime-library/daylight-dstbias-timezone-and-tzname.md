@@ -22,11 +22,11 @@ helpviewer_keywords:
 - time-zone variables
 ms.assetid: d06c7292-6b99-4aba-b284-16a96570c856
 ms.openlocfilehash: 3f9f78d0798140399960cade7ead408f958450ba
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57748261"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62344648"
 ---
 # <a name="daylight-dstbias-timezone-and-tzname"></a>_daylight, _dstbias, _timezone ve _tzname
 

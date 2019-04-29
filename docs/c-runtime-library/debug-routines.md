@@ -11,11 +11,11 @@ helpviewer_keywords:
 - debugging [CRT], runtime routines
 ms.assetid: cb4d2664-10f3-42f7-a516-595558075471
 ms.openlocfilehash: e1281b578435086dc7de04c7962145c2b265277a
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51329476"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62344453"
 ---
 # <a name="debug-routines"></a>Hata ayıklama yordamları
 

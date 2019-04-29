@@ -28,11 +28,11 @@ helpviewer_keywords:
 - asinhf function
 ms.assetid: 4488babe-1a7e-44ca-8b7b-c2db0a70084f
 ms.openlocfilehash: f6100268b77178487b7a7aa1cc3f10ac3ea7e9dc
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50662963"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62341788"
 ---
 # <a name="asinh-asinhf-asinhl"></a>asinh, asinhf, asinhl
 
@@ -72,7 +72,7 @@ C++ kullandığınızda, aşırı yüklemesini çağırabilirsiniz **asinh** ala
 
 |İşlev|Gerekli C üstbilgisi|Gerekli C++ üst bilgisi|
 |--------------|--------------|------------------|
-|**ASİNH**, **asinhf**, **asinhl**|\<Math.h >|\<cmath > veya \<math.h <|
+|**asinh**, **asinhf**, **asinhl**|\<Math.h >|\<cmath > veya \<math.h <|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

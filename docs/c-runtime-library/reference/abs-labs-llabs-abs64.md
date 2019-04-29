@@ -37,11 +37,11 @@ helpviewer_keywords:
 - calculating absolute values
 ms.assetid: 60f789d1-4a1e-49f5-9e4e-0bdb277ea26a
 ms.openlocfilehash: 61aa0a48757a35708ffb85d2c0525bb4eac82d56
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50506242"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62341996"
 ---
 # <a name="abs-labs-llabs-abs64"></a>Abs, laboratuvarlar, llabs, _abs64
 
@@ -77,7 +77,7 @@ Sayısal değer.
 
 C++ aşırı yüklemeye izin verdiğinden, aşırı yüklemesini çağırabilirsiniz **abs** alan ve getiren **uzun**, **uzun** **uzun**,  **float**, **çift**, ve **uzun** **çift** değerleri. Bu aşırı yüklemeler tanımlanan \<cmath > Üstbilgi. C programında **abs** her zaman alan ve döndüren bir **int**.
 
-**Microsoft Specific**: herhangi bir tamsayı türü kullanarak temsil edilebilen negatif tamsayılar aralığı, bu türü kullanarak temsil edilebilen pozitif tamsayılar aralığından daha büyük olduğundan, bunlar bir değişken sağlamak mümkündür Bu işlevler dönüştürülemez. Bağımsız değişkenin mutlak değeri dönüş türü tarafından temsil edilemiyorsa **abs** işlevleri bağımsız değişken değerini değiştirmeden döndürür. Özellikle, `abs(INT_MIN)` döndürür `INT_MIN`, `labs(LONG_MIN)` döndürür `LONG_MIN`, `llabs(LLONG_MIN)` döndürür `LLONG_MIN`, ve `_abs64(_I64_MIN)` döndürür `_I64_MIN`. Diğer bir deyişle **abs** işlevleri pozitif bir değer sağlamak için kullanılamaz.
+**Microsoft'a özgü**: Herhangi bir tamsayı türü kullanarak temsil edilebilen negatif tamsayılar aralığı, bu türü kullanarak temsil edilebilen pozitif tamsayılar aralığından daha büyük olduğundan, dönüştürülemeyen bu işlevler bir değişken sağlamak mümkündür. Bağımsız değişkenin mutlak değeri dönüş türü tarafından temsil edilemiyorsa **abs** işlevleri bağımsız değişken değerini değiştirmeden döndürür. Özellikle, `abs(INT_MIN)` döndürür `INT_MIN`, `labs(LONG_MIN)` döndürür `LONG_MIN`, `llabs(LLONG_MIN)` döndürür `LLONG_MIN`, ve `_abs64(_I64_MIN)` döndürür `_I64_MIN`. Diğer bir deyişle **abs** işlevleri pozitif bir değer sağlamak için kullanılamaz.
 
 ## <a name="requirements"></a>Gereksinimler
 

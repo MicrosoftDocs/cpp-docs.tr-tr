@@ -21,12 +21,12 @@ helpviewer_keywords:
 - access function
 ms.assetid: 65197793-bd0a-41c3-9c29-18de2d95d9a6
 ms.openlocfilehash: a12acb91852d97596c956834c2b2dc0a2412194e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50471389"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62335743"
 ---
 # <a name="access-crt"></a>erişim (CRT)
 
-Bu POSIX işlevi kullanım dışı bırakılmıştır. ISO C++ uyumlu [_erişim](access-waccess.md) veya Gelişmiş güvenlikli [_access_s](access-s-waccess-s.md) yerine.
+Bu POSIX işlevi kullanım dışı bırakılmıştır. ISO kullanın C++ uyumluluğunu [_erişim](access-waccess.md) veya Gelişmiş güvenlikli [_access_s](access-s-waccess-s.md) yerine.

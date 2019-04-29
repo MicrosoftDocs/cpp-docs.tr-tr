@@ -27,11 +27,11 @@ helpviewer_keywords:
 - std::uniform_int_distribution [C++], param_type
 ms.assetid: a1867dcd-3bd9-4787-afe3-4b62692c1d04
 ms.openlocfilehash: 5e37f21e19be730d3437507e83f2417fa2dc020a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50676609"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62348178"
 ---
 # <a name="uniformintdistribution-class"></a>uniform_int_distribution Sınıfı
 

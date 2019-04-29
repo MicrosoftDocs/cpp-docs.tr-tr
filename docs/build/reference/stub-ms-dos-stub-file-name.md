@@ -13,11 +13,11 @@ helpviewer_keywords:
 - -STUB linker option
 ms.assetid: 65221ffe-4f9a-4a14-ac69-3cfb79b40b5f
 ms.openlocfilehash: 7150d4ff8f35b00d96caa21fd5ea3754fec76030
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57822411"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62317880"
 ---
 # <a name="stub-ms-dos-stub-file-name"></a>/STUB (MS-DOS Saplama Dosyası Adı)
 
@@ -63,4 +63,4 @@ Bir sanal cihaz sürücüsü oluştururken *filename* (WINNT içinde tanımlanan
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [MSVC bağlayıcı başvurusu](linking.md)<br/>
-[MSVC bağlayıcı seçenekleri](linker-options.md)
+[MSVC Bağlayıcı Seçenekleri](linker-options.md)

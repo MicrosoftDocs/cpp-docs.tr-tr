@@ -33,11 +33,11 @@ helpviewer_keywords:
 - _tcreat function
 ms.assetid: 3b3b795d-1620-40ec-bd2b-a4bbb0d20fe5
 ms.openlocfilehash: 901a95a6a9361f95f38749dacf1a5001d97b3761
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50494997"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62335314"
 ---
 # <a name="creat-wcreat"></a>_creat, _wcreat
 
@@ -94,7 +94,7 @@ Dosya belirtilen *filename* yok, yeni bir dosya ile verilen izin ayarının olu�
 |-----------|----------------|
 |**_S_IWRITE**|Yazma izin verilir.|
 |**_S_IREAD**|Okuma izin verilir.|
-|**_S_IREAD** &AMP;#124; **_S_IWRITE**|Okuma ve yazma izin verilir.|
+|**_S_IREAD** &#124; **_S_IWRITE**|Okuma ve yazma izin verilir.|
 
 Yazma izni verilmemişse, dosyanın salt okunur. Tüm dosyaları her zaman okunabilir; Salt yazma izni vermek mümkün değildir. Modları **_s_ıwrıte** ve **_s_ıread** | **_s_ıwrıte** ardından eşdeğerdir. Kullanarak açılan dosyaları **_creat** her zaman uyumluluk modunda açılan (bkz [_sopen](sopen-wsopen.md)) ile **_SH_DENYNO**.
 

@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2540
 ms.assetid: 92c805a3-2dd9-46ca-a63d-3845c18ecc95
 ms.openlocfilehash: 813733e1ed5079e7b8d1afab1b27b898b0d4a17e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50576455"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62347723"
 ---
 # <a name="compiler-error-c2540"></a>Derleyici Hatası C2540
 

@@ -10,11 +10,11 @@ helpviewer_keywords:
 - /RAWDATA dumpbin option
 ms.assetid: 41cba845-5e1f-415e-9fe4-604a52235983
 ms.openlocfilehash: 02af8df04d80c20c5d7629b51abab6295a21f5e5
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57816470"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62319519"
 ---
 # <a name="rawdata"></a>/RAWDATA
 

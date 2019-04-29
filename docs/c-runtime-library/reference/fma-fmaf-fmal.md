@@ -31,11 +31,11 @@ helpviewer_keywords:
 - fmal function
 ms.assetid: 584a6037-da1e-4e86-9f0c-97aae86de0c0
 ms.openlocfilehash: f96592e245e443bae2f3334da51cae5572753708
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51517806"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62333501"
 ---
 # <a name="fma-fmaf-fmal"></a>fma, fmaf, fmal
 
@@ -94,7 +94,7 @@ Aksi halde aşağıdaki değerlerden birini döndürebilir:
 
 |Sorun|döndürülecek|
 |-----------|------------|
-|*x* SONSUZ, = *y* = 0 veya<br /><br /> *x* = 0, *y* SONSUZ =|NaN|
+|*x* SONSUZ, = *y* = 0 veya<br /><br /> *x* = 0, *y* = INFINITY|NaN|
 |*x* veya *y* = tam ± SONSUZ, *z* SONSUZ ters işaretli =|NaN|
 |*x* veya *y* NaN =|NaN|
 |yok (*x* = 0, *y*belirsiz =) ve *z* NaN =<br /><br /> yok (*x*belirsiz = *y*= 0) ve *z* NaN =|NaN|
@@ -113,7 +113,7 @@ Bu işlev, sonsuz duyarlık için alınan ve daha sonra Nihai sonuç yuvarlanır
 
 |İşlev|C üstbilgisi|C++ üst bilgisi|
 |--------------|--------------|------------------|
-|**FMA**, **fmaf**, **fmal**|\<Math.h >|\<cmath >|
+|**fma**, **fmaf**, **fmal**|\<Math.h >|\<cmath >|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

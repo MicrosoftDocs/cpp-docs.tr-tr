@@ -7,11 +7,11 @@ helpviewer_keywords:
 - regular expressions
 ms.assetid: aafe202a-1d96-4b36-a270-d676dfd3c51c
 ms.openlocfilehash: dafbe7c7ba10db2b0f34fdc6065c1475d63be284
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50443476"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62369039"
 ---
 # <a name="regular-expressions-c"></a>Normal İfadeler (C++)
 
@@ -21,7 +21,7 @@ C++ Standart Kitaplığı birden çok normal ifade dilbilgisinde destekler. Bu k
 
 Normal ifade dilbilgisi kullanmak için aşağıdakilerden birini kullanarak belirtilir `std::regex_constants::syntax_option_type` sabit listesi değerleri. Bu normal ifade dilbilgisi içinde std::regex_constants tanımlanır:
 
-- `ECMAScript`: Bu, JavaScript ve .NET dilleri tarafından kullanılan dilbilgisi en yakın olur.
+- `ECMAScript`: JavaScript ve .NET dilleri tarafından kullanılan dilbilgisi en yakın budur.
 - `basic`: POSIX temel normal ifadeler veya BRE.
 - `extended`: Normal ifadeler veya ERE POSIX genişletilmiş.
 - `awk`: Bu `extended`, ancak ek çıkışları yazdırılamayan karakterler içeriyor.
@@ -31,7 +31,7 @@ Normal ifade dilbilgisi kullanmak için aşağıdakilerden birini kullanarak bel
 Hiçbir dil bilgisi belirtilmemişse, varsayılan olarak `ECMAScript` varsayılır. Yalnızca bir dil bilgisi belirtilebilir.
 
 Dilbilgisi yanı sıra birkaç bayrakları uygulanabilir:
-- `icase`: Eşleştirirken çalışması yoksayar.
+- `icase`: Servis talebi eşleştirirken yoksayın.
 - `nosubs`: İşaretli eşleşir (diğer bir deyişle, parantezlerdeki ifadeler); yoksay hiçbir değişimler depolanır.
 - `optimize`: Daha hızlı, büyük oluşturma zaman olası gider eşleşen olun.
 - `collate`: Yerel ayar duyarlı olmayan harmanlama dizilerini (örneğin, "[a-z]" biçiminin aralıkları) kullanın.
@@ -334,7 +334,7 @@ Bir kimlik çıkışında izin verilen karakterlerin kümesi, aşağıdaki tablo
 |-------------|----------------------------------------|
 |`basic`, `grep`|{ '(', ')', '{', '}', '.', '[', '\\', '\*', '^', '$' }|
 |`extended`, `egrep`|{ '(', ')', '{', '.', '[', '\\', '\*', '^', '$', '+', '?', '&#124;' }|
-|`awk`|`extended` artı {' "', '/'}|
+|`awk`|`extended` plus { '"', '/' }|
 |`ECMAScript`|Bir tanımlayıcının parçası olabilenler dışındaki tüm karakterler. Genellikle bu içerir harf, rakam, '$', '\_' ve unicode kaçış dizileri. Daha fazla bilgi için bkz. ECMAScript Dil Belirtimi.|
 
 ### <a name="individual-character"></a>Tekil Karakter
@@ -393,7 +393,7 @@ Normal bir karakter geçerli dilbilgisi içinde özel bir anlamı olmayan herhan
 
 İçinde `ECMAScript`, aşağıdaki karakterlerin özel anlamları vardır:
 
-- ^  $  \  .  \*  +  ?  (  )  \[  ]  {  }&#124;
+- ^  $  \  .  \*  +  ?  (  )  \[  ]  {  }  &#124;
 
 İçinde `basic` ve `grep`, aşağıdaki karakterlerin özel anlamları vardır:
 
@@ -480,7 +480,7 @@ Normal ifadenin sonuna ulaşılmamış olsa da, eşleşme başarısız olmadan h
 |"$&"|"&"|Normal ifadenin eşleşen karakter dizisi (`[match[0].first, match[0].second)`)|
 |"$$"||"$"|
 ||"\\&"|"&"|
-|"$\`" (arka ardından tırnak gelen dolar tarafından)||Normal ifadeyle eşleşen alt diziyi önündeki karakter dizisi (`[match.prefix().first, match.prefix().second)`)|
+|"$\`" (arka ardından tırnak gelen dolar tarafından) || Normal ifadeyle eşleşen alt diziyi önündeki karakter dizisi (`[match.prefix().first, match.prefix().second)`)|
 |"$`" (ardından ileri tırnak gelen dolar işareti)||Normal ifadeyle eşleşen alt diziyi takip eden karakter dizisi (`[match.suffix().first, match.suffix().second)`)|
 |"$n"|"\n"|Konumundaki yakalama grubuyla eşleşen karakter dizisi `n`burada `n` 0 ile 9 arasında bir sayı (`[match[n].first, match[n].second)`)|
 ||"\\\n"|"\n"|

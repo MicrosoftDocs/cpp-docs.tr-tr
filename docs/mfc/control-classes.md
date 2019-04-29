@@ -15,11 +15,11 @@ helpviewer_keywords:
 - user input [MFC], MFC control classes
 ms.assetid: f9876606-9f5b-44cb-9135-213298d1df8f
 ms.openlocfilehash: 79a71a4660cd49f85726d730c9fad0b2f10f83bb
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57300433"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62338174"
 ---
 # <a name="control-classes"></a>Denetim Sınıfları
 

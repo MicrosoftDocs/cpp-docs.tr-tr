@@ -72,12 +72,12 @@ helpviewer_keywords:
 - CTabCtrl [MFC], SetPadding
 - CTabCtrl [MFC], SetToolTips
 ms.assetid: 42e4aff6-46ae-4b2c-beaa-d1dce8d82138
-ms.openlocfilehash: 62d42995a3d1b4a61dbd3ff38c48d9b300177798
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: ccf35c7a036a69487d5138baf8c017f9c5995bef
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57259548"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62323719"
 ---
 # <a name="ctabctrl-class"></a>CTabCtrl sınıfı
 
@@ -170,7 +170,7 @@ void AdjustRect(BOOL bLarger,   LPRECT lpRect);
 Hangi işleminin gerçekleştiğini gösterir. Bu parametre TRUE ise *lpRect* görünen dikdörtgen belirtir ve karşılık gelen Pencere dikdörtgeni alır. Bu parametre FALSE ise *lpRect* Pencere dikdörtgeni belirtir ve karşılık gelen görüntü dikdörtgeni alır.
 
 *lpRect*<br/>
-İşaretçi bir [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) belirtilen dikdörtgen belirtir ve hesaplanan dikdörtgen alan yapısı.
+İşaretçi bir [RECT](/previous-versions/dd162897\(v=vs.85\)) belirtilen dikdörtgen belirtir ve hesaplanan dikdörtgen alan yapısı.
 
 ### <a name="example"></a>Örnek
 
@@ -194,7 +194,7 @@ virtual BOOL Create(
 Sekme denetiminin stilini belirtir. Herhangi bir birleşimini uygulamak [sekme denetim stilleri](/windows/desktop/Controls/tab-control-styles)Windows SDK içinde açıklandığı gibi. Bkz: **açıklamalar** denetimlere de uygulayabilirsiniz pencere stilleri listesi.
 
 *Rect*<br/>
-Sekme denetiminin boyutunu ve konumunu belirtir. Ya da olabilir bir [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesi veya bir [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) yapısı.
+Sekme denetiminin boyutunu ve konumunu belirtir. Ya da olabilir bir [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesi veya bir [RECT](/previous-versions/dd162897\(v=vs.85\)) yapısı.
 
 *pParentWnd*<br/>
 Sekme denetiminin üst penceresine, genellikle belirtir bir `CDialog`. NULL olmamalıdır.
@@ -250,7 +250,7 @@ Oluşturulan denetimin genişletilmiş stilini belirtir. Genişletilmiş Windows
 Sekme denetiminin stilini belirtir. Herhangi bir birleşimini uygulamak [sekme denetim stilleri](/windows/desktop/Controls/tab-control-styles)Windows SDK içinde açıklandığı gibi. Bkz: **açıklamalar** içinde [Oluştur](#create) denetimlere de uygulayabilirsiniz pencere stilleri listesi.
 
 *Rect*<br/>
-Bir başvuru bir [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) istemci koordinatları olarak oluşturulması için pencerenin konumunu ve boyutunu açıklayan yapısı *pParentWnd*.
+Bir başvuru bir [RECT](/previous-versions/dd162897\(v=vs.85\)) istemci koordinatları olarak oluşturulması için pencerenin konumunu ve boyutunu açıklayan yapısı *pParentWnd*.
 
 *pParentWnd*<br/>
 Denetimin ana penceresine bir işaretçi.
@@ -485,7 +485,7 @@ BOOL GetItemRect(int nItem,   LPRECT lpRect) const;
 Sekme öğesi sıfır tabanlı dizini.
 
 *lpRect*<br/>
-İşaretçi bir [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) sekmesinin dikdörtgen alan yapısı. Bu koordinatları görünüm penceresinin'ın geçerli eşleme modunu kullan.
+İşaretçi bir [RECT](/previous-versions/dd162897\(v=vs.85\)) sekmesinin dikdörtgen alan yapısı. Bu koordinatları görünüm penceresinin'ın geçerli eşleme modunu kullan.
 
 ### <a name="return-value"></a>Dönüş Değeri
 

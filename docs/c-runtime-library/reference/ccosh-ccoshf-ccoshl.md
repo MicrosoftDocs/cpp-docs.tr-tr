@@ -31,11 +31,11 @@ helpviewer_keywords:
 - ccoshl function
 ms.assetid: 79667449-4edf-4948-bf6b-720adf2b3f3b
 ms.openlocfilehash: c25441d4f25f9e77a0cb71d942e132f34c4c1f5a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50676843"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62335561"
 ---
 # <a name="ccosh-ccoshf-ccoshl"></a>ccosh, ccoshf, ccoshl
 
@@ -72,13 +72,13 @@ Hiperbolik kosinüsünü *z*, radyan cinsinden açı.
 
 ## <a name="remarks"></a>Açıklamalar
 
-C++ aşırı yüklemeye izin verdiğinden, aşırı yüklemesini çağırabilirsiniz **ccosh** alan ve getiren **_Fcomplex** ve **_Lcomplex** değerleri. C programında **ccosh** her zaman alan ve döndüren bir **_Dcomplex** değeri.
+Çünkü C++ aşırı yüklemesi, sağlayan yüklerini çağırabilirsiniz **ccosh** alan ve getiren **_Fcomplex** ve **_Lcomplex** değerleri. C programında **ccosh** her zaman alan ve döndüren bir **_Dcomplex** değeri.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|C üstbilgisi|C++ üst bilgisi|
 |-------------|--------------|------------------|
-|**ccosh**, **ccoshf**, **ccoshl**|\<Complex.h >|\<ccomplex >|
+|**ccosh**,               **ccoshf**, **ccoshl**|\<Complex.h >|\<ccomplex >|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

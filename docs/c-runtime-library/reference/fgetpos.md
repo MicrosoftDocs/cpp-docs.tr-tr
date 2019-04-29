@@ -23,11 +23,11 @@ helpviewer_keywords:
 - streams, file position indicator
 ms.assetid: bfa05c38-1135-418c-bda1-d41be51acb62
 ms.openlocfilehash: e213c9830ffe6edf04b12a80828f14cc48f77524
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50658425"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62333936"
 ---
 # <a name="fgetpos"></a>fgetpos
 
@@ -52,7 +52,7 @@ Depolama konumu göstergesi.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa, **fgetpos** 0 döndürür. İsteğe bağlı olarak hata durumunda, sıfır olmayan bir değer döndürür ve ayarlar **errno** aşağıdakilerden birini bildirim Sabitleri (STDIO içinde tanımlanır. H): **EBADF**, belirtilen akış başka bir deyişle, geçerli dosya işaretçisi değil veya erişilebilir değil veya **EINVAL**, yani *stream* veya değeri*pos* olduğu ya da bir null işaretçi ise gibi geçersiz. Varsa *stream* veya *pos* olduğu bir **NULL** işaretçisi işlevi çağıran geçersiz parametre işleyicisi açıklandığı [Parameter Validation](../../c-runtime-library/parameter-validation.md).
+Başarılı olursa, **fgetpos** 0 döndürür. İsteğe bağlı olarak hata durumunda, sıfır olmayan bir değer döndürür ve ayarlar **errno** aşağıdakilerden birini bildirim Sabitleri (STDIO içinde tanımlanır. H): **EBADF**, belirtilen akış başka bir deyişle, geçerli dosya işaretçisi değil veya erişilebilir değil veya **EINVAL**, anlamına *stream* değeri ya da değerini *pos*olduğu ya da bir null işaretçi ise gibi geçersiz. Varsa *stream* veya *pos* olduğu bir **NULL** işaretçisi işlevi çağıran geçersiz parametre işleyicisi açıklandığı [Parameter Validation](../../c-runtime-library/parameter-validation.md).
 
 ## <a name="remarks"></a>Açıklamalar
 

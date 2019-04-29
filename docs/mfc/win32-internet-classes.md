@@ -10,11 +10,11 @@ helpviewer_keywords:
 - Windows API [MFC], Internet classes
 ms.assetid: b49601d5-3025-4068-9408-316b54ee4375
 ms.openlocfilehash: c067d0c0067ee13b0e6ce6d84fd97135274c88b5
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57260562"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62326735"
 ---
 # <a name="win32-internet-classes"></a>Win32 Internet Sınıfları
 

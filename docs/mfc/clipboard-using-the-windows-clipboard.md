@@ -12,11 +12,11 @@ helpviewer_keywords:
 - Clipboard [MFC], Windows Clipboard API
 ms.assetid: 24415b42-9301-4a70-b69a-44c97918319f
 ms.openlocfilehash: 49111e4efd2a12264d61030fe038d80b974514c1
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57264800"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62326995"
 ---
 # <a name="clipboard-using-the-windows-clipboard"></a>Pano: Windows panosunu kullanma
 

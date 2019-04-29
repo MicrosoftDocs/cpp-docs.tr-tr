@@ -10,11 +10,11 @@ helpviewer_keywords:
 - COM [C++], marshaling strings
 ms.assetid: 06590759-bf99-4e34-a3a9-4527ea592cc2
 ms.openlocfilehash: e86cf0b3e57eda9a0f4fa5fe2337d0c42de5669f
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58780879"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62325487"
 ---
 # <a name="how-to-marshal-com-strings-using-c-interop"></a>Nasıl yapılır: C++ birlikte çalışması kullanarak COM dizelerini sıralama
 

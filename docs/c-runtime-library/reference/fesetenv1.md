@@ -23,11 +23,11 @@ helpviewer_keywords:
 - fesetenv function
 ms.assetid: ffc64fff-8ea7-4d59-9e04-ff96ef8cd012
 ms.openlocfilehash: 8c91bfbb89df964fed0a632d5fb5ebac47ebe948
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50436168"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62334202"
 ---
 # <a name="fesetenv"></a>fesetenv
 

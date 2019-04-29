@@ -8,11 +8,11 @@ helpviewer_keywords:
 - module definition files
 ms.assetid: f65cd3a7-65d7-4d06-939f-a8b1ecd50f2d
 ms.openlocfilehash: f6269ad2d5bf3952e485f2ca5e5d1f411c5f1e0c
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57821280"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62318517"
 ---
 # <a name="rules-for-module-definition-statements"></a>Modül Tanımlama Deyimleri Kuralları
 

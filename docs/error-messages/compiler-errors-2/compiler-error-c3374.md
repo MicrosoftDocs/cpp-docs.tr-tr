@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3374
 ms.assetid: 41431299-bd20-47d4-a0c8-1334dd79018b
 ms.openlocfilehash: 4b00b1cea8ac462c82c11d9f5b207706af74959c
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59022638"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62328977"
 ---
 # <a name="compiler-error-c3374"></a>Derleyici Hatası C3374
 

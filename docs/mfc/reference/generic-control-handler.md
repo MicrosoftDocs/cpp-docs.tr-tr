@@ -10,11 +10,11 @@ helpviewer_keywords:
 - ON_CONTROL macro [MFC]
 ms.assetid: 1e25e583-5d5a-4363-8904-839991a8570d
 ms.openlocfilehash: 26d1bcda73670687b73f0c6cda864f8b6bcae784
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57302824"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62322403"
 ---
 # <a name="generic-control-handler"></a>Genel Denetim İşleyicisi
 

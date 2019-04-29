@@ -7,11 +7,11 @@ helpviewer_keywords:
 - export files
 ms.assetid: 2634256a-8aa5-4495-8c9e-6cde10e4ed76
 ms.openlocfilehash: 030b792d4bbebecef9d9303238657a564a142ecf
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57810958"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62317789"
 ---
 # <a name="using-an-import-library-and-export-file"></a>İçeri Aktarma Kitaplığını ve Dışarı Aktarma Dosyasını Kullanma
 

@@ -6,11 +6,11 @@ helpviewer_keywords:
 - files [MFC], closing
 ms.assetid: 8415a3a8-3c75-45b0-ac2a-d5385f49bdb3
 ms.openlocfilehash: 69a0960c1edabab00cb71702acda526ee9ebd798
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57267062"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62326930"
 ---
 # <a name="closing-files"></a>Dosyaları Kapatma
 

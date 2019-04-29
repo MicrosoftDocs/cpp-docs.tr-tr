@@ -30,11 +30,11 @@ helpviewer_keywords:
 - c_exit function
 ms.assetid: f3072045-9924-4b1a-9fef-b0dcd6d12663
 ms.openlocfilehash: a075e8a8e965a195765b86ffa21fed0915dbf5ab
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50495140"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62335496"
 ---
 # <a name="cexit-cexit"></a>_cexit, _c_exit
 

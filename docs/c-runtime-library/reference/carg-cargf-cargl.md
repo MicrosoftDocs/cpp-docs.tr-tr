@@ -31,11 +31,11 @@ helpviewer_keywords:
 - cargl function
 ms.assetid: 610d6a93-b929-46ab-a966-b77db0b804be
 ms.openlocfilehash: 584732594cd9ca9579907986e3dc3b5f3dbf52c0
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50665601"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62340722"
 ---
 # <a name="carg-cargf-cargl"></a>carg, cargf, cargl
 
@@ -72,7 +72,7 @@ Bağımsız değişkeni (aşama olarak da bilinir) *z*. Bu aralıkta sonucu oldu
 
 ## <a name="remarks"></a>Açıklamalar
 
-C++ aşırı yüklemeye izin verdiğinden, aşırı yüklemesini çağırabilirsiniz **carg** Süren **_Fcomplex** veya **_Lcomplex** değerleri ve dönüş **float** veya **uzun** **çift** değerleri. C programında **carg** her zaman alan bir **_Dcomplex** döndürür ve değeri bir **çift** değeri.
+Çünkü C++ aşırı yüklemesi, sağlayan yüklerini çağırabilirsiniz **carg** Süren **_Fcomplex** veya **_Lcomplex** değerleri ve dönüş **float**veya **uzun** **çift** değerleri. C programında **carg** her zaman alan bir **_Dcomplex** döndürür ve değeri bir **çift** değeri.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -85,7 +85,7 @@ Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/comp
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Alfabetik İşlev Başvurusu](crt-alphabetical-function-reference.md)<br/>
-[Norm, normf, norml](norm-normf-norml1.md)<br/>
+[norm, normf, norml](norm-normf-norml1.md)<br/>
 [creal, crealf, creall](creal-crealf-creall.md)<br/>
 [cproj, cprojf, cprojl](cproj-cprojf-cprojl.md)<br/>
 [conj, conjf, conjl](conj-conjf-conjl.md)<br/>

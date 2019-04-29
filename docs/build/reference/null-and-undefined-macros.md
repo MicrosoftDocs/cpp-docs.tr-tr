@@ -9,11 +9,11 @@ helpviewer_keywords:
 - NMAKE program, null macros
 ms.assetid: 1db4611a-1755-4328-b00f-d35365af8b6c
 ms.openlocfilehash: 0f4905473dd6914547ad6ac129d34e438992c2af
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57824122"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62320506"
 ---
 # <a name="null-and-undefined-macros"></a>Boş ve Tanımlanmamış Makrolar
 

@@ -5,11 +5,11 @@ helpviewer_keywords:
 - NMAKE program, options
 ms.assetid: 00ba1aec-ef27-44cf-8d82-c5c095e45bae
 ms.openlocfilehash: c60b6d821d8e16e87f86e3b79825aa1dee7867c8
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57823499"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62320545"
 ---
 # <a name="nmake-options"></a>NMAKE Seçenekleri
 

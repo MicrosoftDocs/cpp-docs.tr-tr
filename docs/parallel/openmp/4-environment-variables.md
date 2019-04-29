@@ -3,11 +3,11 @@ title: 4. Ortam değişkenleri
 ms.date: 01/16/2019
 ms.assetid: 4ec7ed81-e9ca-46a1-84f8-8f9ce4587346
 ms.openlocfilehash: b41829fd9cf2f90312f669ef991f56dda02947f7
-ms.sourcegitcommit: 966e4466f10c93fc12faf33d28e03b39489423fc
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "55987062"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62363199"
 ---
 # <a name="4-environment-variables"></a>4. Ortam değişkenleri
 

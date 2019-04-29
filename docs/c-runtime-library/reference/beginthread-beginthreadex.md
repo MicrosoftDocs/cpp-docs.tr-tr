@@ -30,11 +30,11 @@ helpviewer_keywords:
 - beginthread function
 ms.assetid: 0df64740-a978-4358-a88f-fb0702720091
 ms.openlocfilehash: d70d2fb0ecb647d4854a6277d6c69cd9886e072f
-ms.sourcegitcommit: c85c8a1226d8fbbaa29f4691ed719f8e6cc6575c
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54894217"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62349270"
 ---
 # <a name="beginthread-beginthreadex"></a>_beginthread, _beginthreadex
 

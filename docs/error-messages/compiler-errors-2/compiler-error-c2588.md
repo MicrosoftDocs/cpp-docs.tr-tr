@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2588
 ms.assetid: 19a0cabd-ca13-44a5-9be3-ee676abf9bc4
 ms.openlocfilehash: 15f9ba62751d9b3cb17ab56659310292dab41adf
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50596787"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62350458"
 ---
 # <a name="compiler-error-c2588"></a>Derleyici Hatası C2588
 

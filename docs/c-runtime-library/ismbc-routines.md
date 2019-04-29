@@ -17,11 +17,11 @@ helpviewer_keywords:
 - _ismbc routines
 ms.assetid: b8995391-7857-4ac3-9a1e-de946eb4464d
 ms.openlocfilehash: dd187be93b5df0160686fe765f65c25e14800b75
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57748690"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62343127"
 ---
 # <a name="ismbc-routines"></a>_ismbc Rutinleri
 

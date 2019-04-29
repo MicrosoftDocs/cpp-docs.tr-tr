@@ -15,11 +15,11 @@ helpviewer_keywords:
 - std::recursive_mutex [C++], try_lock
 - std::recursive_mutex [C++], unlock
 ms.openlocfilehash: 8be17c8ab361272678c25326464261e153da6a49
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50534413"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62369650"
 ---
 # <a name="recursivemutex-class"></a>recursive_mutex Sınıfı
 

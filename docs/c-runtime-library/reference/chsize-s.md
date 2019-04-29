@@ -25,11 +25,11 @@ helpviewer_keywords:
 - _chsize_s function
 ms.assetid: d88d2e94-6e3b-42a5-8631-16ac4d82fa38
 ms.openlocfilehash: a56efe826d43c80dc2cdee295e58872e7dd3c9ea
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50597606"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62348516"
 ---
 # <a name="chsizes"></a>_chsize_s
 

@@ -31,11 +31,11 @@ helpviewer_keywords:
 - cacosl function
 ms.assetid: 78118c00-0a07-49c1-8a13-4bf19ce3aea8
 ms.openlocfilehash: 18757ecd30f399ca3d1fdb77e8bff8213a265e74
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50543201"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62348581"
 ---
 # <a name="cacos-cacosf-cacosl"></a>cacos, cacosf, cacosl
 
@@ -65,13 +65,13 @@ Arkkosinüsünü *z*, radyan cinsinden açı. Sonuç ve sanal ekseni sınırsız
 
 ## <a name="remarks"></a>Açıklamalar
 
-C++ aşırı yüklemeye izin verdiğinden, aşırı yüklemesini çağırabilirsiniz **cacos** alan ve getiren **_Fcomplex** ve **_Lcomplex** değerleri. C programında **cacos** her zaman alan ve döndüren bir **_Dcomplex** değeri.
+Çünkü C++ aşırı yüklemesi, sağlayan yüklerini çağırabilirsiniz **cacos** alan ve getiren **_Fcomplex** ve **_Lcomplex** değerleri. C programında **cacos** her zaman alan ve döndüren bir **_Dcomplex** değeri.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|C üstbilgisi|C++ üst bilgisi|
 |-------------|--------------|------------------|
-|**cacos**, **cacosf**, **cacosl**|\<Complex.h >|\<ccomplex >|
+|**cacos**,               **cacosf**, **cacosl**|\<Complex.h >|\<ccomplex >|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

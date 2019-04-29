@@ -7,11 +7,11 @@ f1_keywords:
 helpviewer_keywords:
 - signbit function
 ms.openlocfilehash: ce2f632f11296bf71036011a57f242365951d7f2
-ms.sourcegitcommit: e98671a4f741b69d6277da02e6b4c9b1fd3c0ae5
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/04/2019
-ms.locfileid: "55703374"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62356335"
 ---
 # <a name="signbit"></a>signbit
 

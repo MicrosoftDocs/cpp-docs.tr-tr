@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C4326
 ms.assetid: d44d2c4e-9456-42d3-b35b-4ba4b2d42ec7
 ms.openlocfilehash: d14a1902db4dcf2224ce6a58db120a81ebb5620f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50601168"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62327359"
 ---
 # <a name="compiler-warning-level-1-c4326"></a>Derleyici Uyarısı (düzey 1) C4326
 

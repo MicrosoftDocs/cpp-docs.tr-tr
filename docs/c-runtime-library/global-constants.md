@@ -7,11 +7,11 @@ helpviewer_keywords:
 - global constants
 ms.assetid: 778d86fd-3ca6-4d2b-b4c5-aee6dc1efe6b
 ms.openlocfilehash: 6f5d4093cccdc3a7ddf11fc48503b01161b04c5c
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57748599"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62343446"
 ---
 # <a name="global-constants"></a>Global Sabitler
 

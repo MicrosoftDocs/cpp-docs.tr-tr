@@ -13,11 +13,11 @@ helpviewer_keywords:
 - MIDL, property pages
 ms.assetid: b850b21b-ed38-46dd-a712-807e8eabd9aa
 ms.openlocfilehash: 44397eb0c5d14e63a5d971d86356225d63faa431
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57823467"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62321182"
 ---
 # <a name="midl-property-pages-output"></a>MIDL özellik sayfaları: Çıkış
 

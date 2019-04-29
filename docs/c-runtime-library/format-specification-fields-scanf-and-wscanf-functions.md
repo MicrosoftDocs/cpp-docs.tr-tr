@@ -22,11 +22,11 @@ helpviewer_keywords:
 - type fields
 ms.assetid: 7e95de1b-0b71-4de3-9f81-c9560c78e039
 ms.openlocfilehash: 5b45de9af3642825f1fddf3a1560b2fc1dbc4ffc
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57748469"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62343738"
 ---
 # <a name="format-specification-fields-scanf-and-wscanf-functions"></a>Biçim Belirtimi Alanları: scanf ve wscanf İşlevleri
 

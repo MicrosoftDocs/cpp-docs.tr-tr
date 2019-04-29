@@ -21,11 +21,11 @@ helpviewer_keywords:
 - __getmainargs
 ms.assetid: f72f54eb-9509-4bdf-8752-40fc49055439
 ms.openlocfilehash: 6e2bf21f2ac50d3486af56f9581ff6c8d0e0c309
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51523344"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62343453"
 ---
 # <a name="getmainargs-wgetmainargs"></a>__getmainargs, __wgetmainargs
 

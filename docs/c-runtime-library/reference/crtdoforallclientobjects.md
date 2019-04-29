@@ -24,11 +24,11 @@ helpviewer_keywords:
 - CrtDoForAllClientObjects function
 ms.assetid: d0fdb835-3cdc-45f1-9a21-54208e8df248
 ms.openlocfilehash: 86268bd9ac49c8ea27f715404236bcb9291f5d8b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50521197"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62339725"
 ---
 # <a name="crtdoforallclientobjects"></a>_CrtDoForAllClientObjects
 
@@ -69,7 +69,7 @@ Varsa *pfn* olduğu **NULL**, açıklanan şekilde geçersiz parametre işleyici
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
-**Kitaplıklar:** sürümleri, Evrensel C çalışma zamanı kitaplıklarının yalnızca hata ayıklama.
+**Kitaplıklar:** Sürümleri, Evrensel C çalışma zamanı kitaplıklarının yalnızca hata ayıklama.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

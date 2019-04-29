@@ -7,11 +7,11 @@ helpviewer_keywords:
 - LIB [C++], modes
 ms.assetid: e997d423-f574-434f-8b56-25585d137ee0
 ms.openlocfilehash: 97d7b8892574fbe485a8d6c5e344e4a77aaf8519
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57820227"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62320285"
 ---
 # <a name="overview-of-lib"></a>LIB'e Genel Bakış
 

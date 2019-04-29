@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C4154
 ms.assetid: 4511afeb-e893-4cc6-83b6-4c7a0477f76b
 ms.openlocfilehash: 5d2d6316838e8f3ef4acdf60494a0450a5efbdbe
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50563558"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62324564"
 ---
 # <a name="compiler-warning-level-1-c4154"></a>Derleyici Uyarısı (düzey 1) C4154
 

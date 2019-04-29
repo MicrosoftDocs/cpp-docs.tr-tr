@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C4313
 ms.assetid: bcf64191-e2cf-452e-97b4-423fcec2d07c
 ms.openlocfilehash: 774af2d5d29112d56adf97e22d1bdd758a816ef1
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50555716"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62352942"
 ---
 # <a name="compiler-warning-level-1-c4313"></a>Derleyici Uyarısı (düzey 1) C4313
 

@@ -8,11 +8,11 @@ helpviewer_keywords:
 - DAO (Data Access Objects), initialization
 ms.assetid: a7edf31c-e7c2-4f3e-aada-63c3e48781da
 ms.openlocfilehash: 8ad0c1df2f5b6a7b1b48d2db119b04e4b3234f10
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57297647"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62323222"
 ---
 # <a name="dao-database-engine-initialization-and-termination"></a>DAO Veritabanı Motoru Başlatma ve Sonlandırma
 

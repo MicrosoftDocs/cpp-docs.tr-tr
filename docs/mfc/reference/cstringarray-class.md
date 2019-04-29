@@ -43,11 +43,11 @@ helpviewer_keywords:
 - CObArray [MFC], SetSize
 ms.assetid: 6c637e06-bba8-4c08-b0fc-cf8cb067ce34
 ms.openlocfilehash: 85422e5abd313aad4f87052748610e099363c1c6
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57276068"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62323784"
 ---
 # <a name="cstringarray-class"></a>CStringArray sınıfı
 

@@ -30,11 +30,11 @@ helpviewer_keywords:
 - pnoarg.obj
 ms.assetid: 05b5a77b-9dd1-494b-ae46-314598c770bb
 ms.openlocfilehash: 8cd5513acd2617e784b2ec9fa203614b752e6076
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50661831"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62342932"
 ---
 # <a name="link-options"></a>Bağlantı Seçenekleri
 

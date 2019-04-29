@@ -8,11 +8,11 @@ helpviewer_keywords:
 - is_const
 ms.assetid: 55b8e887-9c3f-4a1d-823a-4a257337b205
 ms.openlocfilehash: 25f10d8a8aed8bad6c11663687ace56a0b65afee
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51523981"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62336875"
 ---
 # <a name="isconst-class"></a>is_const Sınıfı
 

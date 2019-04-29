@@ -8,11 +8,11 @@ helpviewer_keywords:
 - is_empty
 ms.assetid: 44a6fc92-7e55-4fbe-9a24-2a0ce2dccba0
 ms.openlocfilehash: f5ab0798e0074547d62a4bcff4db412445346189
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51522917"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62336603"
 ---
 # <a name="isempty-class"></a>is_empty Sınıfı
 

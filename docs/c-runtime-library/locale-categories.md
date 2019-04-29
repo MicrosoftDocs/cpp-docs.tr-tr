@@ -22,11 +22,11 @@ helpviewer_keywords:
 - LC_COLLATE constant
 ms.assetid: 868f1493-fe5d-4722-acab-bfcd374a063a
 ms.openlocfilehash: 434500dab0c68aa9475f54e930b91da0b1cd2fc9
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57749808"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62342919"
 ---
 # <a name="locale-categories"></a>Yerel Ayar Kategorileri
 

@@ -12,11 +12,11 @@ helpviewer_keywords:
 - -MAPINFO linker option
 ms.assetid: 533d2bce-f9b7-4fea-ae1c-0b4864c9d10b
 ms.openlocfilehash: 491df211856a9d7ceb02b6a401270f15b9da3b96
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57812375"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62321442"
 ---
 # <a name="mapinfo-include-information-in-mapfile"></a>/MAPINFO (Bilgileri Eşlem Dosyasına Dahil Et)
 
@@ -45,4 +45,4 @@ Mapınfo seçeneği belirtirseniz oluşturulduğu mapfile içinde belirtilen bil
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [MSVC bağlayıcı başvurusu](linking.md)<br/>
-[MSVC bağlayıcı seçenekleri](linker-options.md)
+[MSVC Bağlayıcı Seçenekleri](linker-options.md)

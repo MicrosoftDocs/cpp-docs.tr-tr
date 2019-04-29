@@ -25,11 +25,11 @@ helpviewer_keywords:
 - _fpreset function
 ms.assetid: f31c6a04-b464-4f07-a7c4-42133360e328
 ms.openlocfilehash: 0b3ea4289cd0ff031fd2828e3c4183911459297c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50592626"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62333241"
 ---
 # <a name="fpreset"></a>_fpreset
 

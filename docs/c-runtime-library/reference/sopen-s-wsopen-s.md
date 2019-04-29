@@ -32,11 +32,11 @@ helpviewer_keywords:
 - files [C++], sharing
 ms.assetid: 059a0084-d08c-4973-9174-55e391b72aa2
 ms.openlocfilehash: 1d5f35615aee058b51c0b14ff9ccd38894427b20
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51327089"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62355640"
 ---
 # <a name="sopens-wsopens"></a>_sopen_s, _wsopen_s
 
@@ -113,9 +113,9 @@ Tamsayı ifadesini *oflag* içinde tanımlanan bir veya daha fazla bildirim sabi
 | **_O_APPEND** | Dosya işaretçisini dosyanın her yazma işleminden önce sonuna taşır. |
 | **_O_BINARY** | Dosya ikili (çevrilmemiş) modda açılır. (Bkz [fopen](fopen-wfopen.md) ikili modu açıklaması.) |
 | **_O_CREAT** | Bir dosya oluşturur ve yazma için açar. Dosya belirtilen hiçbir etkisi *filename* bulunmaktadır. *Pmode* bağımsız değişkeni gereklidir **_O_CREAT** belirtilir. |
-| **_O_CREAT** &AMP;#124; **_O_SHORT_LIVED** | Geçici olarak bir dosya oluşturur ve mümkünse diske temizleme değil. *Pmode* bağımsız değişkeni gereklidir **_O_CREAT** belirtilir. |
-| **_O_CREAT** &AMP;#124; **_O_TEMPORARY** | Geçici olarak bir dosya oluşturur. son dosya tanımlayıcısı kapatıldığında dosya silinir. *Pmode* bağımsız değişkeni gereklidir **_O_CREAT** belirtilir. |
-| **_O_CREAT**&AMP;#124; ` _O_EXCL` | Bir hata değeri tarafından belirtilen dosya döndürür *filename* bulunmaktadır. Yalnızca ile kullanıldığında geçerlidir **_O_CREAT**. |
+| **_O_CREAT** &#124; **_O_SHORT_LIVED** | Geçici olarak bir dosya oluşturur ve mümkünse diske temizleme değil. *Pmode* bağımsız değişkeni gereklidir **_O_CREAT** belirtilir. |
+| **_O_CREAT** &#124; **_O_TEMPORARY** | Geçici olarak bir dosya oluşturur. son dosya tanımlayıcısı kapatıldığında dosya silinir. *Pmode* bağımsız değişkeni gereklidir **_O_CREAT** belirtilir. |
+| **_O_CREAT** &#124; ` _O_EXCL` | Bir hata değeri tarafından belirtilen dosya döndürür *filename* bulunmaktadır. Yalnızca ile kullanıldığında geçerlidir **_O_CREAT**. |
 | **_O_NOINHERIT** | Paylaşılan dosya tanımlayıcısı oluşturulmasını engeller. |
 | **_O_RANDOM** | Önbelleğe alma iyileştirildiğini, ancak rastgele erişim için diskten sınırlı olduğunu belirtir. |
 | **_O_RDONLY** | Yalnızca okumak için bir dosya açar. İle belirtilemez **_O_RDWR** veya **_O_WRONLY**. |
@@ -149,7 +149,7 @@ Bağımsız değişken *shflag* Şunda tanımlı olan aşağıdaki bildirim sabi
 |-|-|
 | **_S_IREAD** | Yalnızca okuma izin verilir. |
 | **_S_IWRITE** | Yazma izin verilir. (Aslında, okuma ve yazma verir.) |
-| **_S_IREAD** &AMP;#124; **_S_IWRITE** | Okuma ve yazma izin verilir. |
+| **_S_IREAD** &#124; **_S_IWRITE** | Okuma ve yazma izin verilir. |
 
 Yazma izni verilmemişse, dosyanın salt okunur. Windows işletim sisteminde, tüm dosyaları okunabilir; Salt yazma izni vermek mümkün değildir. Bu nedenle, modları **_s_ıwrıte** ve **_s_ıread** | **_s_ıwrıte** eşdeğerdir.
 
@@ -159,7 +159,7 @@ Yazma izni verilmemişse, dosyanın salt okunur. Windows işletim sisteminde, t�
 
 |Yordam|Gerekli başlık|İsteğe bağlı başlık|
 |-------------|---------------------|---------------------|
-|**_sopen_s**|\<io.h >|\<fcntl.h >, \<sys\types.h >, \<sys\stat.h >, \<share.h >|
+|**_sopen_s**|\<io.h >|\<fcntl.h>, \<sys\types.h>, \<sys\stat.h>, \<share.h>|
 |**_wsopen_s**|\<io.h > veya \<wchar.h >|\<fcntl.h >, \<sys/types.h >, \<sys/stat.h >, \<share.h >|
 
 **_sopen_s** ve **_wsopen_s** Microsoft uzantılarıdır. Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).

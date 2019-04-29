@@ -19,12 +19,12 @@ f1_keywords:
 helpviewer_keywords:
 - Platform::String
 ms.assetid: 72dd04a4-a694-40d3-b899-eaa0b503eab8
-ms.openlocfilehash: ac9ee843f5f11d4a42377b16ec77b266238fc461
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.openlocfilehash: 0b8a29efc5b18432eabfeddc75af12737538281c
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57746194"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62330212"
 ---
 # <a name="platformstring-class"></a>Platform::String sınıfı
 
@@ -85,11 +85,11 @@ Dize sınıfı, aşağıdaki işleçleri sahiptir.
 
 |Üye|Açıklama|
 |------------|-----------------|
-|[String::operator == işleci](#operator-equality)|İki belirtilen dize nesnesinin aynı değere sahip olup olmadığını gösterir.|
+|[String::operator == işleci](#operator-equality)|Belirtilen iki dize nesnesi aynı değere sahip olup olmadığını gösterir.|
 |[operator + işleci](#operator-plus)|İki dize nesnesi yeni bir dize nesnesi art arda ekler.|
 |[String::operator > işleci](#operator-greater-than)|Değer bir dize nesnesinin ikinci bir değerden büyük olup olmadığını belirtir dize nesnesi.|
 |[String::operator > = işleci](#operator-greater-than-or-equals)|Bir dize nesnesi değerini saniyenin değerine eşit veya daha büyük olup olmadığını belirten dize nesnesi.|
-|[String::operator! = işleci](#operator-inequality)|Belirtilen dize nesnelerinin iki farklı değerlere sahip olup olmadığını gösterir.|
+|[String::operator! = işleci](#operator-inequality)|Belirtilen iki dize nesnesi farklı değerlere sahip olup olmadığını gösterir.|
 |[String::operator < işleci](#operator-less-than)|Bir dize nesnesi değerini saniyenin değerinden daha küçük olup olmadığını belirten dize nesnesi.|
 
 ### <a name="requirements"></a>Gereksinimler
@@ -411,7 +411,7 @@ bool String::operator>=( String^ str1, String^ str2);
 
 ## <a name="operator-inequality"></a> String::operator! =
 
-Gösteren iki olup belirtilen `String` nesneleri farklı değerlere sahip.
+Belirtir olup olmadığını belirtilen iki `String` nesneleri farklı değerlere sahip.
 
 ### <a name="syntax"></a>Sözdizimi
 

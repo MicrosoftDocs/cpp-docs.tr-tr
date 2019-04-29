@@ -8,11 +8,11 @@ helpviewer_keywords:
 - rank
 ms.assetid: bc9f1b8f-800f-46ca-b6f4-d8579ed5406a
 ms.openlocfilehash: a0658d7278ef31d01d371eff11aec09c19c8011e
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51518898"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62369754"
 ---
 # <a name="rank-class"></a>rank Sınıfı
 

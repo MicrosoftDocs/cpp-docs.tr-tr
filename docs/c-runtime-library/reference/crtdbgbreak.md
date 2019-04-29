@@ -23,11 +23,11 @@ helpviewer_keywords:
 - _CrtDbgBreak function
 ms.assetid: 01f8b4a2-a2c7-4e1f-9f39-e573b4a7871f
 ms.openlocfilehash: 4cf64daaea3193f7cf6b3aaa0b1aab031f104704
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50478310"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62340176"
 ---
 # <a name="crtdbgbreak"></a>_CrtDbgBreak
 

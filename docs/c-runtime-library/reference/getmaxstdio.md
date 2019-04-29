@@ -26,11 +26,11 @@ helpviewer_keywords:
 - open files, getting number
 ms.assetid: 700ca8ce-4a8c-4e00-9467-dfa9d6b831a0
 ms.openlocfilehash: ea8e516b4c0806230376ea52e399c9fa1f9a858a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50618350"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62331733"
 ---
 # <a name="getmaxstdio"></a>_getmaxstdio
 

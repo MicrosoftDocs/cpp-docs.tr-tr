@@ -7,11 +7,11 @@ helpviewer_keywords:
 - overflow_error class
 ms.assetid: bae7128d-e36b-4a45-84f1-2f89da441d20
 ms.openlocfilehash: 33819d9f57c9ee29b82c24d7919f68a97e50d98e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50583540"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62370781"
 ---
 # <a name="overflowerror-class"></a>overflow_error Sınıfı
 

@@ -9,11 +9,11 @@ helpviewer_keywords:
 - debug heap, control flags
 ms.assetid: 8dbd24a5-0633-42d1-9771-776db338465f
 ms.openlocfilehash: 7ac5f239ea4d242618fb23ba617a3a6539492053
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57750120"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62344765"
 ---
 # <a name="control-flags"></a>Denetim Bayrakları
 

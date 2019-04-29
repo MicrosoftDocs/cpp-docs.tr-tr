@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2587
 ms.assetid: 7637a2c7-35d4-4b5a-a8f2-515a7bda98fd
 ms.openlocfilehash: 08a576d5672f0df1cbec7269f83a3f182ce0e1c3
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50500509"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62350512"
 ---
 # <a name="compiler-error-c2587"></a>Derleyici Hatası C2587
 

@@ -87,11 +87,11 @@ helpviewer_keywords:
 - std::multimap [C++], value_comp
 ms.assetid: 8796ae05-37c4-475a-9e61-75fde9d4a463
 ms.openlocfilehash: caffa84052f774803b92730f7906bf53cb3c824a
-ms.sourcegitcommit: d441305fb19131afbd7fc259d8cda63ea26f2343
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51678528"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62348373"
 ---
 # <a name="multimap-class"></a>multimap Sınıfı
 
@@ -112,7 +112,7 @@ class multimap;
 *Key*<br/>
 Çoklu eşlemde depolanacak anahtar veri türü.
 
-*Türü*<br/>
+*Tür*<br/>
 Çoklu eşlemde depolanacak öğe veri türü.
 
 *Nitelikler*<br/>
@@ -196,7 +196,7 @@ C ++ 14'te belirterek heterojen arama etkinleştirebilirsiniz `std::less<>` veya
 |[silme](#erase)|Bir öğenin veya öğelerin aralığını kaldırır bir `multimap` belirtilen konumları veya belirtilen bir anahtarla eşleşen öğeleri kaldırır.|
 |[Bul](#find)|İçindeki bir öğenin birinci konumunu ele alan bir yineleyici döndüren bir `multimap` belirtilen anahtara denk bir anahtara sahip.|
 |[get_allocator](#get_allocator)|Bir kopyasını döndürür `allocator` oluşturmak için kullanılan nesne `multimap`.|
-|[Ekle](#insert)|Bir öğe veya bir dizi öğelerine ekler bir `multimap`.|
+|[insert](#insert)|Bir öğe veya bir dizi öğelerine ekler bir `multimap`.|
 |[key_comp](#key_comp)|İçindeki anahtarları sıralamak için kullanılan karşılaştırma nesnesinin bir kopyasını alır bir `multimap`.|
 |[lower_bound](#lower_bound)|İçindeki ilk öğeye bir yineleyici döndüren bir `multimap` belirtilen anahtardan daha büyük veya ona eşit bir anahtarla.|
 |[max_size](#max_size)|Öğesinin maksimum uzunluğunu döndürür `multimap`.|
@@ -504,7 +504,7 @@ size_type count(const Key& key) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*Anahtarı*<br/>
+*anahtar*<br/>
 Multimap eşleştirilecek öğe anahtarı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -903,7 +903,7 @@ pair <iterator, iterator> equal_range (const Key& key);
 
 ### <a name="parameters"></a>Parametreler
 
-*Anahtarı*<br/>
+*anahtar*<br/>
 Aranan multimap bir öğeyi sıralama anahtarı ile Karşılaştırılacak bağımsız değişken anahtarı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -1024,7 +1024,7 @@ const_iterator find(const Key& key) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*Anahtarı*<br/>
+*anahtar*<br/>
 Aranan multimap bir öğeyi sıralama anahtarı tarafından eşleştirilecek anahtar değeri.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -1472,7 +1472,7 @@ const_iterator lower_bound(const Key& key) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*Anahtarı*<br/>
+*anahtar*<br/>
 Aranan multimap bir öğeyi sıralama anahtarı ile Karşılaştırılacak bağımsız değişken anahtarı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -2237,7 +2237,7 @@ const_iterator upper_bound(const Key& key) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*Anahtarı*<br/>
+*anahtar*<br/>
 Aranan multimap bir öğeyi sıralama anahtarı ile Karşılaştırılacak bağımsız değişken anahtarı.
 
 ### <a name="return-value"></a>Dönüş Değeri

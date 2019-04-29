@@ -23,11 +23,11 @@ helpviewer_keywords:
 - CrtIsValidHeapPointer function
 ms.assetid: caf597ce-1b05-4764-9f37-0197a982bec5
 ms.openlocfilehash: cdfb02c622cddc4c86a99f614e469abc527d8845
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50662013"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62339396"
 ---
 # <a name="crtisvalidheappointer"></a>_CrtIsValidHeapPointer
 

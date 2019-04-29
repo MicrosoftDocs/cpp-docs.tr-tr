@@ -9,11 +9,11 @@ helpviewer_keywords:
 - arithmetic operators [C++], additive operators
 ms.assetid: bb8ac205-b061-41fc-8dd4-dab87c8b900c
 ms.openlocfilehash: 29bea87e56aa90a8deab7ad7280b3fbdfb45c82b
-ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56151201"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62326917"
 ---
 # <a name="c-additive-operators"></a>C Ek İşleçleri
 

@@ -21,11 +21,11 @@ helpviewer_keywords:
 - bitor function
 ms.assetid: 3c0a3711-9c74-41f2-b400-2f7797da30d1
 ms.openlocfilehash: e8bb78e73b8beca4cbffd975f41c3432cf9fdefe
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51521914"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62340995"
 ---
 # <a name="bitor"></a>bitor
 

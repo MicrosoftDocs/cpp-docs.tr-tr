@@ -21,11 +21,11 @@ helpviewer_keywords:
 - std::priority_queue [C++], top
 ms.assetid: 69fca9cc-a449-4be4-97b7-02ca5db9cbb2
 ms.openlocfilehash: d8f2b4ab788c82e531d1121f04dd0d422efb17cd
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51333221"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62370023"
 ---
 # <a name="priorityqueue-class"></a>priority_queue Sınıfı
 
@@ -40,7 +40,7 @@ class priority_queue
 
 ### <a name="parameters"></a>Parametreler
 
-*Türü*<br/>
+*Tür*<br/>
 Priority_queue içinde depolanacak öğe veri türü.
 
 *Kapsayıcı*<br/>
@@ -59,7 +59,7 @@ Priority_queue için uygun alt kapsayıcı sınıflarını içerir [deque sını
 
 Öğeleri eklemek ve öğeleri kaldırma bir `priority_queue` Logaritmik karmaşıklığı her ikisi de sahiptir. Öğeleri erişen bir `priority_queue` sabit karmaşası vardır.
 
-Kapsayıcı bağdaştırıcıları C++ Standart Kitaplığı tarafından tanımlanan üç tür vardır: priority_queue yığın ve kuyruk. Her bir standart veri yapısı için kesin bir şekilde denetlenen bir arabirim sağlamak üzere temel alınan bazı kapsayıcı sınıfı işlevselliğini kısıtlar.
+Kapsayıcı bağdaştırıcıları tarafından tanımlanan üç tür vardır C++ standart kitaplığı: priority_queue yığın ve kuyruk. Her bir standart veri yapısı için kesin bir şekilde denetlenen bir arabirim sağlamak üzere temel alınan bazı kapsayıcı sınıfı işlevselliğini kısıtlar.
 
 - [Stack sınıfı](../standard-library/stack-class.md) son giren ilk çıkar (LIFO) veri yapısı destekler. Akılda tutulması için iyi bir analog kalıplarını yığınını olacaktır. Öğeleri (kalıplarını) eklendiğinde, inceledi veya yalnızca en son öğe temel kapsayıcı sonunda yığın kaldırılır. Yalnızca üst öğesi erişme kısıtlamasını stack sınıfı kullanarak nedenidir.
 
@@ -107,7 +107,7 @@ typedef Container container_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon parametresi için bir eşanlamlı türüdür `Container`. C++ Standart Kitaplığı dizisi kapsayıcı sınıfı `deque` ve varsayılan sınıf `vector` gereksinimlerini priority_queue nesnesi için temel bir kapsayıcı olarak kullanılacak. Kullanıcı tanımlı türler gereksinimlerini karşılamadığınızı de kullanılabilir.
+Şablon parametresi için bir eşanlamlı türüdür `Container`. C++ Standart kitaplığı dizisi kapsayıcı sınıfı `deque` ve varsayılan sınıf `vector` gereksinimlerini priority_queue nesnesi için temel bir kapsayıcı olarak kullanılacak. Kullanıcı tanımlı türler gereksinimlerini karşılamadığınızı de kullanılabilir.
 
 Daha fazla bilgi için `Container`, Açıklamalar bölümüne bakın [priority_queue sınıfı](../standard-library/priority-queue-class.md) konu.
 

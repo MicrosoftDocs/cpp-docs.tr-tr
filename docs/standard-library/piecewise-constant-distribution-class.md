@@ -27,11 +27,11 @@ helpviewer_keywords:
 - std::piecewise_constant_distribution [C++], param_type
 ms.assetid: 2c9a21fa-623e-4d63-b827-3f1556b6dedb
 ms.openlocfilehash: 0c990953f0cda81366ff2645d3cdf1065850abbd
-ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51694107"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62370404"
 ---
 # <a name="piecewiseconstantdistribution-class"></a>piecewise_constant_distribution Sınıfı
 

@@ -25,11 +25,11 @@ helpviewer_keywords:
 - _flushall function
 ms.assetid: 2cd73562-6d00-4ca2-b13c-80d0ae7870b5
 ms.openlocfilehash: de8caf30568816f41441f5d9487293c346d2bff1
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50466250"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62333540"
 ---
 # <a name="flushall"></a>_flushall
 

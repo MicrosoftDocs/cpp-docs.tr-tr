@@ -22,11 +22,11 @@ helpviewer_keywords:
 - edit controls [MFC], edit control handlers
 ms.assetid: 55b88b5e-12b5-4422-b03e-c8c2f27d095c
 ms.openlocfilehash: 53586de574fca6ab88b93444c9d571c62354cef2
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57302032"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62322390"
 ---
 # <a name="edit-control-handlers"></a>Denetim İşleyicilerini Düzenleme
 

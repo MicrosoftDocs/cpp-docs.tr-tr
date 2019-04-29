@@ -14,11 +14,11 @@ helpviewer_keywords:
 - printf_p function, positional parameters
 ms.assetid: beb4fd85-a7aa-4665-9085-2c907a5b9ab0
 ms.openlocfilehash: f6ee84a68b2f40e535ed1dc76e4617a21bb29a6e
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57751472"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62348049"
 ---
 # <a name="printfp-positional-parameters"></a>printf_p Konumsal Parametreler
 

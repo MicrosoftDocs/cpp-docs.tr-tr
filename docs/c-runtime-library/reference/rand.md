@@ -27,15 +27,15 @@ helpviewer_keywords:
 - pseudorandom numbers
 - numbers, generating pseudorandom
 ms.openlocfilehash: 868c6239ac1b86dfc9ac72cc8cc83d1ba3002b4a
-ms.sourcegitcommit: e06648107065f3dea35f40c1ae5999391087b80b
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57210425"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62357778"
 ---
 # <a name="rand"></a>rand
 
-İyi bilinen ve tam olarak yeniden üretilebilen algoritmasını kullanarak rastgele bir sayı oluşturur. Bu işlevin daha programlı olarak güvenli bir sürümü kullanılabilir; bkz: [rand_s](rand-s.md). Oluşturulmuş sayılara **rand** şifreleme bakımından güvenli değildir. Daha fazla şifreleme yoluyla güvenli rasgele sayı üretimi için kullanmak [rand_s](rand-s.md) veya C++ Standart Kitaplığı'nda bildirilen işlevlerin [ \<rastgele >](../../standard-library/random.md).
+İyi bilinen ve tam olarak yeniden üretilebilen algoritmasını kullanarak rastgele bir sayı oluşturur. Bu işlevin daha programlı olarak güvenli bir sürümü kullanılabilir; bkz: [rand_s](rand-s.md). Oluşturulmuş sayılara **rand** şifreleme bakımından güvenli değildir. Daha fazla şifreleme yoluyla güvenli rasgele sayı üretimi için kullanmak [rand_s](rand-s.md) veya içinde bildirilen işlevlerin C++ standart kitaplıkta [ \<rastgele >](../../standard-library/random.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -51,7 +51,7 @@ int rand( void );
 
 **Rand** işlevi için 0 aralığındaki bir sözde rastgele tamsayı döndürür **RAND_MAX** (32767). Kullanım [srand](srand.md) işlevini çağırmadan önce sözde rastgele sayı üretici temel **rand**.
 
-**Rand** işlevi iyi bilinen bir sıra üretir ve bir şifreleme işlevi olarak kullanılmaya uygun değil. Daha fazla şifreleme yoluyla güvenli rasgele sayı üretimi için kullanmak [rand_s](rand-s.md) veya C++ Standart Kitaplığı'nda bildirilen işlevlerin [ \<rastgele >](../../standard-library/random.md). Sorun nedir hakkında bilgi için **rand** ve nasıl \<rastgele > Bu videoyu başlıklı bkz bu eksiklikleri adresleri [rand kabul zararlı](https://channel9.msdn.com/Events/GoingNative/2013/rand-Considered-Harmful).
+**Rand** işlevi iyi bilinen bir sıra üretir ve bir şifreleme işlevi olarak kullanılmaya uygun değil. Daha fazla şifreleme yoluyla güvenli rasgele sayı üretimi için kullanmak [rand_s](rand-s.md) veya içinde bildirilen işlevlerin C++ standart kitaplıkta [ \<rastgele >](../../standard-library/random.md). Sorun nedir hakkında bilgi için **rand** ve nasıl \<rastgele > Bu videoyu başlıklı bkz bu eksiklikleri adresleri [rand kabul zararlı](https://channel9.msdn.com/Events/GoingNative/2013/rand-Considered-Harmful).
 
 ## <a name="requirements"></a>Gereksinimler
 

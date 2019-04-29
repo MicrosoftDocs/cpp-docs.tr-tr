@@ -9,11 +9,11 @@ helpviewer_keywords:
 - summary C++ XML tag
 ms.assetid: cdeeefbb-1339-45d6-9002-10042a9a2726
 ms.openlocfilehash: 68bb8b7c269b3406438e5cf21dde7179f7e67646
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57823543"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62318192"
 ---
 # <a name="ltsummarygt"></a>&lt;Özeti&gt;
 

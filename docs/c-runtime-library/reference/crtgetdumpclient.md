@@ -23,11 +23,11 @@ helpviewer_keywords:
 - CrtGetDumpClient function
 ms.assetid: 9051867f-341b-493b-b53d-45d2b454a3ad
 ms.openlocfilehash: e4700bd936bec97014508c4a971f6e6c278c6a11
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50550741"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62339929"
 ---
 # <a name="crtgetdumpclient"></a>_CrtGetDumpClient
 

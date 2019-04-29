@@ -23,11 +23,11 @@ helpviewer_keywords:
 - _aligned_malloc_dbg function
 ms.assetid: fb0429c3-685d-4826-9075-2515c5bdc5c6
 ms.openlocfilehash: eb58313c892ffe13e9f8e34e98b7940022899d14
-ms.sourcegitcommit: beeb77b2976e997debc55b1af35024cc62e62799
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/06/2018
-ms.locfileid: "52977816"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62341645"
 ---
 # <a name="alignedmallocdbg"></a>_aligned_malloc_dbg
 

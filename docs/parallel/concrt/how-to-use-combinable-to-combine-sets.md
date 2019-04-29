@@ -6,11 +6,11 @@ helpviewer_keywords:
 - combining sets with combinable [Concurrency Runtime]
 ms.assetid: 66ffe8e3-6bbb-4e9f-b790-b612922a68a7
 ms.openlocfilehash: bf8a5bee65ea0ba1718c1d4d436b6af3e0b95961
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57296104"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62345584"
 ---
 # <a name="how-to-use-combinable-to-combine-sets"></a>Nasıl yapılır: Kümeleri birleştirmek için combinable kullanma
 

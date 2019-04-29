@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2217
 ms.assetid: 1ce1e3f5-4171-4376-804d-967f7e612935
 ms.openlocfilehash: f178f969afa189910c9d23d70226ecc6c15876a4
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50507555"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62353546"
 ---
 # <a name="compiler-error-c2217"></a>Derleyici Hatası C2217
 

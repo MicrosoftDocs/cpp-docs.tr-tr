@@ -8,17 +8,17 @@ helpviewer_keywords:
 - storage class specifiers, C storage classes
 ms.assetid: 2580735c-f5bf-46ab-9468-0696893d82be
 ms.openlocfilehash: 9b0c8b60dab3229d5d5c162f7bafc959fa2558f0
-ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56146963"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62325890"
 ---
 # <a name="c-extended-storage-class-attributes"></a>C Genişletilmiş Depolama Sınıfı Öznitelikler
 
 **Microsoft'a özgü**
 
-Bu konu hakkında daha fazla güncel bilgi altında bulunabilir [__declspec (C++ Başvurusu)](../cpp/declspec.md).
+Bu konu hakkında daha fazla güncel bilgi altında bulunabilir [__declspec (C++ başvuru)](../cpp/declspec.md).
 
 Genişletilmiş öznitelik sözdizimi, C diline yönelik Microsoft'a özel uzantıları basitleştirir ve standartlaştırır. Genişletilmiş öznitelik sözdizimini kullanın depolama sınıfı öznitelikler, iş parçacığı, çıplak, dllimport ve dllexport'u içerir.
 

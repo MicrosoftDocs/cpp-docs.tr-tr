@@ -8,11 +8,11 @@ helpviewer_keywords:
 - templates [C++]
 ms.assetid: 90fcc14a-2092-47af-9d2e-dba26d25b872
 ms.openlocfilehash: f1532b5aa4ea712feab08b49b7c035187ca0d042
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50547971"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62330498"
 ---
 # <a name="templates-c"></a>Şablonlar (C++)
 

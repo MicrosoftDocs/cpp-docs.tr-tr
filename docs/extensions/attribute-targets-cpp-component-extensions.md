@@ -6,11 +6,11 @@ helpviewer_keywords:
 - custom attributes, targets
 ms.assetid: b4e6e224-da77-4520-b6e6-b96846e0ebc1
 ms.openlocfilehash: 502f5ba2e5bbb5bd5a5fcceca16acaa3987db4bc
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59026684"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62346064"
 ---
 # <a name="attribute-targets-ccli-and-ccx"></a>Öznitelik hedefleri (C++/CLI ve C++/CX)
 

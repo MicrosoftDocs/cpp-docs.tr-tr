@@ -7,11 +7,11 @@ helpviewer_keywords:
 - random header
 ms.assetid: 60afc25c-b162-4811-97c1-1b65398d4c57
 ms.openlocfilehash: 5b246be02c860ede6691db1c4d21af7e6b4da26a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50511858"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62369819"
 ---
 # <a name="ltrandomgt"></a>&lt;rastgele&gt;
 
@@ -212,11 +212,11 @@ Bu kod, iki farklı randomizations gösterir; bir tamsayı vektörü rastgele ya
 
 URNGs genellikle açısından bu özellikleri açıklanmaktadır:
 
-1. **Dönem uzunluğunu**: alan oluşturulan sayıların dizisi Yinele için kaç adet yineleme. Uzun daha iyi.
+1. **Dönem uzunluğunu**: Kaç adet yineleme oluşturulan sayıların dizisi Yinele için alır. Uzun daha iyi.
 
-2. **Performans**: sayı ne kadar hızlı oluşturulabilir ve ne kadar bellek sürer. Daha küçük daha iyi.
+2. **Performans**: Sayı ne kadar hızlı oluşturulabilir ve ne kadar bellek sürer. Daha küçük daha iyi.
 
-3. **Kalite**: oluşturulan sırası true rastgele sayılar yakın nasıl. Buna genellikle denir "*doğrulukla*".
+3. **Kalite**: Oluşturulan sıralı olan doğru rastgele sayılar yakın nasıl. Buna genellikle denir "*doğrulukla*".
 
 Aşağıdaki bölümlerde sağlanan Tekdüzen rastgele sayı üreteçlerinin (URNGs) listesinde \<rastgele > Üstbilgi.
 

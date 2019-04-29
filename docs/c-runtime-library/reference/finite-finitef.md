@@ -33,11 +33,11 @@ helpviewer_keywords:
 - _finitef function
 ms.assetid: 5a7d7ca7-befb-4e1f-831d-28713c6eb805
 ms.openlocfilehash: d727839521978be66c3dc9ee173ee2ba0a567445
-ms.sourcegitcommit: e06648107065f3dea35f40c1ae5999391087b80b
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57210386"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62333722"
 ---
 # <a name="isfinite-finite-finitef"></a>isfinite, _finite, _finitef
 

@@ -8,11 +8,11 @@ helpviewer_keywords:
 - message maps [MFC], mapping messages to functions
 ms.assetid: a7727a62-f638-4b20-b7f5-131f47200d6a
 ms.openlocfilehash: 7ed2b66ffe382cc8683b811362fb014597168037
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57297690"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62321981"
 ---
 # <a name="mapping-messages-to-functions"></a>İletileri İşlevlere Eşleme
 
@@ -45,7 +45,7 @@ Bir ileti işleyicisi kaldırmak için sağ sütunda işleyici çift tıklatın 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [MFC ileti işleyicisi](../../mfc/reference/adding-an-mfc-message-handler.md)<br/>
-[Kod sihirbazlarıyla işlevsellik ekleme](../../ide/adding-functionality-with-code-wizards-cpp.md)<br/>
+[Kod Sihirbazlarıyla İşlevsellik Ekleme](../../ide/adding-functionality-with-code-wizards-cpp.md)<br/>
 [Sınıf ekleme](../../ide/adding-a-class-visual-cpp.md)<br/>
 [Üye işlevi ekleme](../../ide/adding-a-member-function-visual-cpp.md)<br/>
 [Üye değişkeni ekleme](../../ide/adding-a-member-variable-visual-cpp.md)<br/>

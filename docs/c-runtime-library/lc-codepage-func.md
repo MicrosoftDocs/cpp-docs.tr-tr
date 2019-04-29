@@ -19,11 +19,11 @@ helpviewer_keywords:
 - ___lc_codepage_func
 ms.assetid: 6a663bd0-5a63-4a2f-9507-872ec1582aae
 ms.openlocfilehash: aebd978839cc59c94c01e9c24432b69add72c4dc
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57751355"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62343512"
 ---
 # <a name="lccodepagefunc"></a>___lc_codepage_func
 

@@ -11,11 +11,11 @@ helpviewer_keywords:
 - DHTML events [MFC]
 ms.assetid: 9a2c8ae7-7216-4a5e-bc60-6b98695be0c6
 ms.openlocfilehash: 5ae37acd3e0b0c2636e6a3e985490a2feab8fa34
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57300550"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62322819"
 ---
 # <a name="dhtml-event-maps"></a>DHTML Olay Eşlemeleri
 

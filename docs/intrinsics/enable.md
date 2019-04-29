@@ -10,11 +10,11 @@ helpviewer_keywords:
 - ssm instruction
 ms.assetid: 8bee669b-6bd8-4e25-9383-bb7d57295b4d
 ms.openlocfilehash: e1ece6d6f4040b81b55d8400407d46f165b56b53
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59024523"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62349036"
 ---
 # <a name="enable"></a>_enable
 

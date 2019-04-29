@@ -9,11 +9,11 @@ helpviewer_keywords:
 - <paramref> C++ XML tag
 ms.assetid: c5730dc2-7159-421f-b2d5-bb971e307122
 ms.openlocfilehash: cee35ddb5fd5cd811e45f0aa49e94dd9c4b8b180
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57823602"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62319999"
 ---
 # <a name="ltparamrefgt"></a>&lt;paramref&gt;
 

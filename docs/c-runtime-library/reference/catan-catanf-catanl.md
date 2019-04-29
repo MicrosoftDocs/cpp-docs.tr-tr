@@ -31,11 +31,11 @@ helpviewer_keywords:
 - catanl function
 ms.assetid: 8415ed9c-7909-4d08-b532-4630bafdc7e8
 ms.openlocfilehash: 99acdccca1b83be2fa667b5e5ef6e5181dc1ba81
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50455230"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62335522"
 ---
 # <a name="catan-catanf-catanl"></a>catan, catanf, catanl
 
@@ -65,13 +65,13 @@ Ark tanjantını *z*, radyan cinsinden açı. Sanal ekseni ve aralık içinde s�
 
 ## <a name="remarks"></a>Açıklamalar
 
-C++ aşırı yüklemeye izin verdiğinden, aşırı yüklemesini çağırabilirsiniz **catan** alan ve getiren **_Fcomplex** ve **_Lcomplex** değerleri. C programında **catan** her zaman alan ve döndüren bir **_Dcomplex** değeri.
+Çünkü C++ aşırı yüklemesi, sağlayan yüklerini çağırabilirsiniz **catan** alan ve getiren **_Fcomplex** ve **_Lcomplex** değerleri. C programında **catan** her zaman alan ve döndüren bir **_Dcomplex** değeri.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|C üstbilgisi|C++ üst bilgisi|
 |-------------|--------------|------------------|
-|**catan**, **catanf**, **catanl**|\<Complex.h >|\<ccomplex >|
+|**catan**,               **catanf**, **catanl**|\<Complex.h >|\<ccomplex >|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

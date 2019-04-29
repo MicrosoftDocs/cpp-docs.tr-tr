@@ -3,11 +3,11 @@ title: Belge açıklamaları (C++ belgeleri açıklamaları) için önerilen eti
 ms.date: 11/04/2016
 ms.assetid: 6548e798-5235-4a38-9482-bdc7b88f40a9
 ms.openlocfilehash: 2a6a2c3983c10579a6cd96b69be81aa7df8b8ee7
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59027902"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62319154"
 ---
 # <a name="recommended-tags-for-documentation-comments"></a>Belge Açıklamaları için Önerilen Etiketler
 

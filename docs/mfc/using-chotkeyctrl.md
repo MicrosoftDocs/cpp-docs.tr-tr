@@ -9,11 +9,11 @@ helpviewer_keywords:
 - hot key controls
 ms.assetid: 9b207117-d848-4224-8888-c3d197bb0c95
 ms.openlocfilehash: f52d676f68718cdd4d16cf93bf0d7e3fd6b03822
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57275759"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62349860"
 ---
 # <a name="using-chotkeyctrl"></a>CHotKeyCtrl Kullanma
 

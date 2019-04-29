@@ -8,11 +8,11 @@ helpviewer_keywords:
 - Platform::Details::Heap Class
 ms.assetid: d6dcf9c0-8036-433f-9eb8-c53ec49b0993
 ms.openlocfilehash: 26d576bfb2c079c383f7951a362c69f1cef0f6f1
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57743162"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62330433"
 ---
 # <a name="platformdetailsheap-class"></a>Platform::details:: heap sınıfı
 

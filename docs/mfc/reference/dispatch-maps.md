@@ -9,11 +9,11 @@ helpviewer_keywords:
 - dispatch map macros [MFC]
 ms.assetid: bef9d08b-ad35-4c3a-99d8-04150c7c04e2
 ms.openlocfilehash: 5ebedaa02a03bcc7802110977b96659dae45f174
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50585087"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62322520"
 ---
 # <a name="dispatch-maps"></a>Eşlemeleri Dağıtma
 
@@ -138,12 +138,12 @@ Sınıfın adı.
 |VT_R4|**float**|
 |VT_R8|**double**|
 |VT_CY|CY|
-|VT_DATE|TARİH|
+|VT_DATE|DATE|
 |VT_BSTR|BSTR|
-|GT; VT_DISPATCH &AMP;|LPDISPATCH|
+|VT_DISPATCH|LPDISPATCH|
 |VT_ERROR|SCODE|
 |VT_BOOL|BOOL|
-|VT_VARIANT BEKLENİYORDU|VARIANT|
+|VT_VARIANT|VARIANT|
 |VT_UNKNOWN|LPUNKNOWN|
 
 *VtsParams* bağımsız değişken değerlerini boşlukla ayrılmış bir listesi verilmiştir `VTS_*` sabitler. Bir veya daha fazla boşluk (virgül değil) ile ayırarak bu değerleri işlevin parametre listesi belirtir. Örneğin,
@@ -161,7 +161,7 @@ kısa bir tamsayı olarak bir işaretçi tarafından izlenen bir kısa tamsayı 
 |VTS_R4|**float**|
 |VTS_R8|**double**|
 |VTS_CY|`const CY` veya `CY*`|
-|VTS_DATE|TARİH|
+|VTS_DATE|DATE|
 |VTS_BSTR|LPCSTR|
 |VTS_DISPATCH|LPDISPATCH|
 |VTS_SCODE|SCODE|
@@ -223,12 +223,12 @@ Sınıfın adı.
 |VT_R4|**float**|
 |VT_R8|**double**|
 |VT_CY|CY|
-|VT_DATE|TARİH|
+|VT_DATE|DATE|
 |VT_BSTR|`CString`|
-|GT; VT_DISPATCH &AMP;|LPDISPATCH|
+|VT_DISPATCH|LPDISPATCH|
 |VT_ERROR|SCODE|
 |VT_BOOL|BOOL|
-|VT_VARIANT BEKLENİYORDU|VARIANT|
+|VT_VARIANT|VARIANT|
 |VT_UNKNOWN|LPUNKNOWN|
 
 Özelliği tarafından belirtilen üye değişkeninin değeri değiştiğinde bir dış istemci *memberName* değiştirir; değişikliği bildirim yoktur.
@@ -320,12 +320,12 @@ Dısp_property ile tanımlanan özelliklerin aksine, dısp_property_notıfy ile 
 |VT_R4|**float**|
 |VT_R8|**double**|
 |VT_CY|CY|
-|VT_DATE|TARİH|
+|VT_DATE|DATE|
 |VT_BSTR|`CString`|
-|GT; VT_DISPATCH &AMP;|LPDISPATCH|
+|VT_DISPATCH|LPDISPATCH|
 |VT_ERROR|SCODE|
 |VT_BOOL|BOOL|
-|VT_VARIANT BEKLENİYORDU|VARIANT|
+|VT_VARIANT|VARIANT|
 |VT_UNKNOWN|LPUNKNOWN|
 
 ### <a name="requirements"></a>Gereksinimler

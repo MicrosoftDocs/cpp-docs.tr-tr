@@ -6,11 +6,11 @@ helpviewer_keywords:
 - ODBC recordsets
 ms.assetid: ebde4180-e3de-474a-a5ab-6135e41763a7
 ms.openlocfilehash: 9d6a2b49f518fd9eaacf589e893bc240d1409a4b
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59023899"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62329783"
 ---
 # <a name="use-mfc-odbc-recordsets"></a>MFC ODBC Kayıt Kümelerini Kullanma
 

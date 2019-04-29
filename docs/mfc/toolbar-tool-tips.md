@@ -14,11 +14,11 @@ helpviewer_keywords:
 - flyby status bar updates
 ms.assetid: d1696305-b604-4fad-9f09-638878371412
 ms.openlocfilehash: 4582b03844e1be3d4cf70bcc3fff1c3b66119ae3
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57258365"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62351780"
 ---
 # <a name="toolbar-tool-tips"></a>Araç Çubuğu Araç İpuçları
 

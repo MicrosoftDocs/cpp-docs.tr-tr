@@ -13,11 +13,11 @@ helpviewer_keywords:
 - showIncludes compiler option [C++]
 ms.assetid: 0b74b052-f594-45a6-a7c7-09e1a319547d
 ms.openlocfilehash: d454054c132976a899fcc4a56a63be427e79beec
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57819249"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62318166"
 ---
 # <a name="showincludes-list-include-files"></a>/showIncludes (Liste Dosyaları İçerir)
 
@@ -64,5 +64,5 @@ Bu durumda, `2.h` gelen içinde gelen `1.h`, bu nedenle girinti.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MSVC derleyici seçenekleri](compiler-options.md)<br/>
-[MSVC derleyici komut satırı sözdizimi](compiler-command-line-syntax.md)
+[MSVC Derleyicisi Seçenekleri](compiler-options.md)<br/>
+[MSVC Derleyicisi Komut Satırı Söz Dizimi](compiler-command-line-syntax.md)

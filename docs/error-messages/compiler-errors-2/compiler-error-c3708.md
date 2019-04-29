@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3708
 ms.assetid: 45e71564-9c7f-437f-98d8-a735ce162ed0
 ms.openlocfilehash: 7ee9d59f12cc9e748b08b3e4a704420ea5c58be6
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50661896"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62328516"
 ---
 # <a name="compiler-error-c3708"></a>Derleyici Hatası C3708
 

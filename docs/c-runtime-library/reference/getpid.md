@@ -24,11 +24,11 @@ helpviewer_keywords:
 - process identification numbers
 ms.assetid: d3e13bae-9a0c-4f33-86d3-ec9df9519285
 ms.openlocfilehash: c110fb7b6d64be281fb3779c7e03f2c4145f4ce8
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50621084"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62331707"
 ---
 # <a name="getpid"></a>_getpid
 

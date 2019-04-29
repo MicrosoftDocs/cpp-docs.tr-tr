@@ -26,11 +26,11 @@ helpviewer_keywords:
 - _fcloseall function
 ms.assetid: c3c6ea72-92c6-450a-a33e-3e568d2784a4
 ms.openlocfilehash: 4713ffb7ecdf8da73e5f949bbef7be124dfaf28a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50536519"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62334885"
 ---
 # <a name="fclose-fcloseall"></a>fclose, _fcloseall
 
@@ -62,7 +62,7 @@ Bkz: [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno
 
 **_Fcloseall** işlevi hariç tüm açık akışları kapatır **stdin**, **stdout**, **stderr** (ve MS-DOS **_stdaux**  ve **_stdprn**). Ayrıca kapatır ve siler tarafından oluşturulan geçici dosyalar **tmpfile**. Her iki işlev stream ile ilişkili tüm arabellekler kapatmadan önce temizlenir. Akış kapalıyken, sistem tarafından ayrılan arabellekler serbest bırakılır. Arabellek ile kullanıcı tarafından atanan **setbuf** ve **setvbuf** değil otomatik olarak yayımlanır.
 
-**Not:** bu işlevler, bir akış kapatmak için kullanıldığında, temel alınan dosya tanımlayıcısı ve işletim sistemi dosya tanıtıcısı (veya yuva), yanı sıra stream kapatılır. Bu nedenle, dosyanın ilk açıldığı bir dosya olarak işlemek veya dosya tanımlayıcısı ve ile kapalı **fclose**, çağrı değil de yapmanız **_close** için dosya tanımlayıcıyı kapatın; Win32 işlevini çağırmayın  **CloseHandle** dosya tanıtıcısı kapatın.
+**Not:** Bu işlevler, bir akış kapatmak için kullanıldığında, temel alınan dosya tanımlayıcısı ve işletim sistemi dosya tanıtıcısı (veya yuva), yanı sıra stream kapatılır. Bu nedenle, dosyanın ilk açıldığı bir dosya olarak işlemek veya dosya tanımlayıcısı ve ile kapalı **fclose**, çağrı değil de yapmanız **_close** için dosya tanımlayıcıyı kapatın; Win32 işlevini çağırmayın  **CloseHandle** dosya tanıtıcısı kapatın.
 
 **fclose** ve **_fcloseall** diğer iş parçacıklarından kesintiye karşı korumak için kod içerir. Kilitleme yapılmayan bir sürüm için bir **fclose**, bkz: **_fclose_nolock**.
 

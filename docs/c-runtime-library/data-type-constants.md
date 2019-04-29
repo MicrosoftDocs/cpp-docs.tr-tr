@@ -140,11 +140,11 @@ helpviewer_keywords:
 - RSIZE_MAX constant
 ms.assetid: c0f1c405-0465-41d5-b5ff-e81cdb6f1622
 ms.openlocfilehash: c4ffbf294083131f29ffe957fd0434182fbb8f99
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50636936"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62344401"
 ---
 # <a name="data-type-constants"></a>Veri Türü Sabitleri
 
@@ -194,7 +194,7 @@ Bu sabitler tam sayı veri türleri için aralıklar verin. Bu sabitler kullanma
 |**_I64_MIN**|(-9223372036854775807 - 1)|En az 64-bit değeri işaretli|
 |**_I64_MAX**|9223372036854775807|En fazla 64-bit değeri işaretli|
 |**_UI64_MAX**|0xffffffffffffffffui64|En fazla işaretsiz 64-bit değeri|
-|**_I128_MIN**|(- 170141183460469231731687303715884105727i128 - 1)|En az 128-bit değeri işaretli|
+|**_I128_MIN**|(-170141183460469231731687303715884105727i128 - 1)|En az 128-bit değeri işaretli|
 |**_I128_MAX**|170141183460469231731687303715884105727i128|En fazla 128-bit değeri işaretli|
 |**_UI128_MAX**|0xffffffffffffffffffffffffffffffffui128|İmzasız en fazla 128-bit değeri|
 |**SIZE_MAX**|aynı **_UI64_MAX** varsa **_wın64** tanımlanır veya **uınt_max**|En fazla yerel tamsayı boyutu|

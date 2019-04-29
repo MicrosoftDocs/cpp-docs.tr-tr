@@ -7,11 +7,11 @@ helpviewer_keywords:
 - PRJ0044
 ms.assetid: 5d78c45a-f9e9-4d2b-a3b6-5a5d1421ab84
 ms.openlocfilehash: 3d9fd25dc5b39de69735c7d3d5cf0a6bb64c0482
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59026200"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62346794"
 ---
 # <a name="project-build-error-prj0044"></a>Proje Derleme Hatası PRJ0044
 

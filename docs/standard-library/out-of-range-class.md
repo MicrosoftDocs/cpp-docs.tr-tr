@@ -7,11 +7,11 @@ helpviewer_keywords:
 - out_of_range class
 ms.assetid: d0e14dc0-065e-4666-9ac9-51e52223c503
 ms.openlocfilehash: 59d1a0dc987ddb0dc538fb02bfe28e0b073d3a7e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50449094"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62370822"
 ---
 # <a name="outofrange-class"></a>out_of_range Sınıfı
 

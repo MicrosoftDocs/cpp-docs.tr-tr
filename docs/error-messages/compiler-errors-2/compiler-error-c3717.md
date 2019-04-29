@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3717
 ms.assetid: ae4fceb1-2583-4577-b2f1-40971a017055
 ms.openlocfilehash: f7e60b4f1b6a1337ef93088e4f36ce2a1b34dc47
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50599318"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62328282"
 ---
 # <a name="compiler-error-c3717"></a>Derleyici Hatası C3717
 

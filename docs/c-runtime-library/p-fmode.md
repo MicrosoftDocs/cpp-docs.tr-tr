@@ -19,11 +19,11 @@ helpviewer_keywords:
 - __p__fmode
 ms.assetid: 1daa1394-81eb-43aa-a71b-4cc6acf3207b
 ms.openlocfilehash: bdb390ef5ae7254c463a3abd66860559cebeeeb9
-ms.sourcegitcommit: e98671a4f741b69d6277da02e6b4c9b1fd3c0ae5
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/04/2019
-ms.locfileid: "55703057"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62342295"
 ---
 # <a name="pfmode"></a>__p__fmode
 

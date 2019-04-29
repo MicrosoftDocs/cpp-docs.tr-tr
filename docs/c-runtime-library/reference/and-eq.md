@@ -21,11 +21,11 @@ helpviewer_keywords:
 - and_eq macro
 ms.assetid: 11091772-e359-4c2b-95c6-00841ac04354
 ms.openlocfilehash: 4dbce5115c656137f845e31b4793f43b5531afc2
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51327882"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62341983"
 ---
 # <a name="andeq"></a>and_eq
 

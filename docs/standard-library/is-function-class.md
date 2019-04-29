@@ -8,11 +8,11 @@ helpviewer_keywords:
 - is_function
 ms.assetid: e5c0dbcd-829b-415f-853f-8c5be47c5040
 ms.openlocfilehash: ea1f2ae025823a700ca4e91f3f6b3c05ed79e1cc
-ms.sourcegitcommit: 4299caac2dc9e806c74ac833d856a3838b0f52a1
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "57006480"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62336575"
 ---
 # <a name="isfunction-class"></a>is_function Sınıfı
 

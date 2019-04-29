@@ -3,11 +3,11 @@ title: 'Taşıma Kılavuzu: COM Spy'
 ms.date: 11/04/2016
 ms.assetid: 24aa0d52-4014-4acb-8052-f4e2e4bbc3bb
 ms.openlocfilehash: ca81b240a102195109c0ad6ef05bfaed10306704
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57751693"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62337225"
 ---
 # <a name="porting-guide-com-spy"></a>Taşıma Kılavuzu: COM Spy
 
@@ -166,6 +166,6 @@ Bu sorunları olmadan ve COM Spy çalışmaya çalıştı ve izlemek için yapı
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Taşıma ve yükseltme: Örnekler ve örnek olay incelemeleri](../porting/porting-and-upgrading-examples-and-case-studies.md)<br/>
+[Taşıma ve Yükseltme: Örnekler ve Örnek Olay İncelemeleri](../porting/porting-and-upgrading-examples-and-case-studies.md)<br/>
 [Sonraki örnekte: Spy++](../porting/porting-guide-spy-increment.md)<br/>
 [Önceki örnekte: MFC Scribble](../porting/porting-guide-mfc-scribble.md)

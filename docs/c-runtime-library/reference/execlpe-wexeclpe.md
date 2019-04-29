@@ -29,11 +29,11 @@ helpviewer_keywords:
 - execlpe function
 ms.assetid: 07b861da-3e7e-4f1d-bb80-ad69b55e5162
 ms.openlocfilehash: e3aa4189d2a384a0092c742909e97c5efc52b5ff
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50506866"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62339370"
 ---
 # <a name="execlpe-wexeclpe"></a>_execlpe, _wexeclpe
 

@@ -31,11 +31,11 @@ helpviewer_keywords:
 - remove function
 ms.assetid: b6345ec3-3289-4645-93a4-28b9e478cc19
 ms.openlocfilehash: 05f1c5b6760520e5a982777faa903b3c5116ad05
-ms.sourcegitcommit: 22f7c4a9b4fc2158fb5283810f15275803cafe10
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/21/2019
-ms.locfileid: "54417609"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62357702"
 ---
 # <a name="remove-wremove"></a>kaldır, _wremove
 

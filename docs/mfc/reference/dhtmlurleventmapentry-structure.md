@@ -7,11 +7,11 @@ helpviewer_keywords:
 - DHtmlUrlEventMapEntry structure [MFC]
 ms.assetid: 43117c1f-1a51-406c-aa2f-fea647080049
 ms.openlocfilehash: c9b58067a9c8b6a71cd22b654a2f82ba0f8bfe36
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57292659"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62322741"
 ---
 # <a name="dhtmlurleventmapentry-structure"></a>DHtmlUrlEventMapEntry Yapısı
 

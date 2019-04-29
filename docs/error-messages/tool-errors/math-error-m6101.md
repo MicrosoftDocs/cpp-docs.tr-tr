@@ -7,11 +7,11 @@ helpviewer_keywords:
 - M6101
 ms.assetid: 8c8d5097-d725-4a2c-92e9-fcf28c871d74
 ms.openlocfilehash: a32378b12586141b844dc5d631f0f83ba6e8faf2
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50624984"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62352404"
 ---
 # <a name="math-error-m6101"></a>Matematik Hatası M6101
 

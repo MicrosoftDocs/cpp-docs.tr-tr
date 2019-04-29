@@ -29,11 +29,11 @@ helpviewer_keywords:
 - trigonometric functions
 - hyperbolic functions
 ms.openlocfilehash: 0f55e084e760cb6d04dbe7ec4fefb5e2ac1d79fd
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50609540"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62347450"
 ---
 # <a name="cosh-coshf-coshl"></a>COSH, coshf, coshl
 
@@ -65,7 +65,7 @@ Varsayılan olarak sonuç çok büyükse bir **cosh**, **coshf**, veya **coshl**
 
 |Giriş|SEH özel durumu|Matherr özel durumu|
 |-----------|-------------------|-----------------------|
-|± **QNAN**, **ONRAKİNİ BUL**|yok|**_ETKİ ALANI**|
+|± **QNAN**, **ONRAKİNİ BUL**|yok|**_DOMAIN**|
 |*x* ≥ 7.104760e + 002|**FİLTRESİNİN**+**TAŞMASI**|**TAŞMA**|
 
 ## <a name="remarks"></a>Açıklamalar

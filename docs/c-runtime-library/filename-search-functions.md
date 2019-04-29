@@ -18,11 +18,11 @@ helpviewer_keywords:
 - _wfind function
 ms.assetid: 2bc2f8ef-44e4-4271-b3e8-666d36fde828
 ms.openlocfilehash: aebdf2e5aaf6d59e5ee39af05540604206ec6c23
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57740543"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62343790"
 ---
 # <a name="filename-search-functions"></a>Filename işlevleri Ara
 

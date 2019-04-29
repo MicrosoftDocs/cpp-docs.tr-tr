@@ -8,11 +8,11 @@ helpviewer_keywords:
 - epilog code
 ms.assetid: 23b1209b-93ba-46ad-a60f-2327c1933eaf
 ms.openlocfilehash: 519d7bceb700e9862f0d0025b755cf28fb0fbc0c
-ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56149784"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62325786"
 ---
 # <a name="naked-c"></a>Naked (C)
 
