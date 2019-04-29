@@ -23,11 +23,11 @@ helpviewer_keywords:
 - stream buffering
 ms.assetid: 13beda22-7b56-455d-8a6c-f2eb636885b9
 ms.openlocfilehash: 89f8a4d8eb853c774f4f7299ceaa9b9eb6177b42
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59424176"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62356407"
 ---
 # <a name="setbuf"></a>setbuf
 

@@ -10,11 +10,11 @@ helpviewer_keywords:
 - /SECTION editbin option
 ms.assetid: 4680ab4e-c984-4251-8241-93440cad7615
 ms.openlocfilehash: 8bcc925b34118630c872a0147b93291626b7c19b
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57822437"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62318608"
 ---
 # <a name="section-editbin"></a>/SECTION (EDITBIN)
 

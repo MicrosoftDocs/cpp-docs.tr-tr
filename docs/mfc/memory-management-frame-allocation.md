@@ -19,11 +19,11 @@ helpviewer_keywords:
 - frame variables [MFC]
 ms.assetid: 945a211a-6f4f-4679-bb6a-b0f2a0d4a6c1
 ms.openlocfilehash: 1acf2ce89e18dd64c166103b59b5eb7007214efd
-ms.sourcegitcommit: c1f646c8b72f330fa8cf5ddb0f8f261ba10d16f0
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58328460"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62352135"
 ---
 # <a name="memory-management-frame-allocation"></a>Bellek Yönetimi: Çerçeve ayırma
 

@@ -8,11 +8,11 @@ helpviewer_keywords:
 - CAN0026
 ms.assetid: b5bc15f2-f179-4b87-ae88-a57e08e43bfa
 ms.openlocfilehash: 4bc3f4977a6b3ab383c61ce410ade33a4b14a360
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50643657"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62359949"
 ---
 # <a name="expression-evaluator-error-cxx0026"></a>İfade Değerlendirici Hatası CXX0026
 

@@ -1,6 +1,6 @@
 ---
-title: Derleyici hataları C2000 ile c2099 arasındaki
-ms.date: 11/17/2017
+title: C2000 ile C2099 arasındaki derleyici hataları
+ms.date: 04/21/2019
 f1_keywords:
 - C2000
 - C2016
@@ -36,14 +36,14 @@ helpviewer_keywords:
 - C2096
 - C2098
 ms.assetid: d99a19eb-eeeb-4181-9b33-9cbe4459767b
-ms.openlocfilehash: aff0faff5d8e58b46aa6280eb8f259dbd64acee9
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
-ms.translationtype: MT
+ms.openlocfilehash: cf1d2f647c13b589463624749e29dc277f6f1d3e
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50548154"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62360495"
 ---
-# <a name="compiler-errors-c2000-through-c2099"></a>Derleyici hataları C2000 ile c2099 arasındaki
+# <a name="compiler-errors-c2000-through-c2099"></a>C2000 ile C2099 arasındaki derleyici hataları
 
 Belgelerin bu bölümdeki makaleleri bir alt kümesini derleyici tarafından oluşturulan hata iletilerini açıklayın.
 
@@ -76,7 +76,7 @@ Belgelerin bu bölümdeki makaleleri bir alt kümesini derleyici tarafından olu
 |[Derleyici Hatası C2020](compiler-error-c2020.md)|'*üye*': '*sınıfı*' üyesi yeniden tanımı|
 |[Derleyici Hatası C2021](compiler-error-c2021.md)|üs değeri beklenmiyor '*karakter*'|
 |[Derleyici Hatası C2022](compiler-error-c2022.md)|'*sayı*': karakter için çok büyük|
-|Derleyici Hatası C2023|'*tanımlayıcı*': hizalama (*Sayı1*) önceki bildirime farklı (*sayı2*)|
+|Derleyici Hatası C2023|'*tanımlayıcı*': Hizalama (*Sayı1*) önceki bildirime farklı (*sayı2*)|
 |Derleyici Hatası C2024|'alignas' özniteliği değişkenlere, veri üyelerine ve etiket türlerine uygulanır|
 |Derleyici Hatası C2025|geçersiz veya bozuk ikili modül arabirim dosyası: '*filename*'|
 |[Derleyici Hatası C2026](compiler-error-c2026.md)|dize çok büyük, sondaki karakterler kesildi|
@@ -149,7 +149,12 @@ Belgelerin bu bölümdeki makaleleri bir alt kümesini derleyici tarafından olu
 |[Derleyici Hatası C2093](compiler-error-c2093.md)|'*ıdentifier1*': otomatik değişkeninin adresi kullanılarak başlatılamıyor '*identifier2*'|
 |[Derleyici Hatası C2094](compiler-error-c2094.md)|Etiket '*tanımlayıcı*' tanımlanmadı|
 |[Derleyici Hatası C2095](compiler-error-c2095.md)|'*işlevi*': Gerçek parametrenin türü 'void': parametre *numarası*|
-|Derleyici Hatası C2096|'*tanımlayıcı*': bir veri üyesi, parantez içine alınmış Başlatıcı ile başlatılamaz|
+|Derleyici Hatası C2096|'*tanımlayıcı*': Bir veri üyesi, parantez içine alınmış Başlatıcı ile başlatılamaz|
 |[Derleyici Hatası C2097](compiler-error-c2097.md)|Geçersiz başlatma|
 |Derleyici Hatası C2098|Veri üyesinden sonra beklenmeyen belirteç '*tanımlayıcı*'|
 |[Derleyici Hatası C2099](compiler-error-c2099.md)|Başlatıcı bir sabit değil|
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[C /C++ derleyicisi ve derleme araçları hataları ve Uyarıları](../compiler-errors-1/c-cpp-build-errors.md) \
+[C3999 arasındaki derleyici hataları C2000-](../compiler-errors-1/compiler-errors-c2000-c3999.md)

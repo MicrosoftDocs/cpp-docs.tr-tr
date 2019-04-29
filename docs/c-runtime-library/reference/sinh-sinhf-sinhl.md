@@ -32,11 +32,11 @@ helpviewer_keywords:
 - sinhl function
 - hyperbolic functions
 ms.openlocfilehash: 7327809a20569c520aa799690203458d54e30fb5
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50569812"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62356283"
 ---
 # <a name="sinh-sinhf-sinhl"></a>SİNH, sinhf, sinhl
 
@@ -66,7 +66,7 @@ Radyan cinsinden açı.
 
 |Giriş|SEH özel durumu|Matherr özel durumu|
 |-----------|-------------------|-----------------------|
-|± QNAN, ONRAKİNİ BUL|Yok.|_DOMAIN|
+|± QNAN, ONRAKİNİ BUL|None|_DOMAIN|
 |&#124;x&#124; ≥ 7.104760e + 002|OVERFLOW + FİLTRESİNİN|TAŞMA|
 
 Dönüş kodları hakkında daha fazla bilgi için bkz. [errno _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
@@ -79,7 +79,7 @@ C++ aşırı yüklemeye izin verdiğinden, aşırı yüklemesini çağırabilirs
 
 |Yordam|Gerekli başlık (C)|Gerekli başlık (C++)|
 |-|-|-|
-|**SİNH**, **sinhf**, **sinhl**|\<Math.h >|\<cmath > veya \<math.h >|
+|**sinh**, **sinhf**, **sinhl**|\<Math.h >|\<cmath > veya \<math.h >|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

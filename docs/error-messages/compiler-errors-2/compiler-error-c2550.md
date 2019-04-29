@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2550
 ms.assetid: 3293f53e-ee66-4035-920d-34e115c3a24c
 ms.openlocfilehash: 2df6ae70be31bc519e6cfd826646073becf1ad61
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50462679"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62353358"
 ---
 # <a name="compiler-error-c2550"></a>Derleyici Hatası C2550
 

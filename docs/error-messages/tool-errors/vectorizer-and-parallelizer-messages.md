@@ -1,6 +1,6 @@
 ---
-title: Vektör Yapıcı ve Paralel Hale Getirici İletileri
-ms.date: 11/04/2016
+title: Vektör haline getirici ve paralel hale getirici iletileri
+ms.date: 04/17/2019
 f1_keywords:
 - C5011
 - C5002
@@ -8,34 +8,18 @@ f1_keywords:
 - C5001
 - C5012
 ms.assetid: d8f4844a-f414-42ab-b9a5-925a5da9d365
-ms.openlocfilehash: 6f80bc9d2a2438a6003c93ce7e60de50fd639a16
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
-ms.translationtype: MT
+ms.openlocfilehash: c38bfca4c1b93d373c86bbc710ccb30c43dafd4f
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59023912"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62346876"
 ---
-# <a name="vectorizer-and-parallelizer-messages"></a>Vektör Yapıcı ve Paralel Hale Getirici İletileri
+# <a name="vectorizer-and-parallelizer-messages"></a>Vektör haline getirici ve paralel hale getirici iletileri
 
-Visual C++ derleyici seçeneklerini kullanabilirsiniz [/Qpar-report](../../build/reference/qpar-report-auto-parallelizer-reporting-level.md) ve [/Qvec-report](../../build/reference/qvec-report-auto-vectorizer-reporting-level.md) ayarlanacak [otomatik Paralelleştirme ve otomatik Vektörleştirme](../../parallel/auto-parallelization-and-auto-vectorization.md) çıkış neden kodları için ve kendi etkinliğiyle ilgili bilgi iletileri. Bu makalede, neden kodları ve iletiler açıklanmaktadır.
+Microsoft kullanabileceğiniz C++ derleyici seçenekleri [/Qpar-report](../../build/reference/qpar-report-auto-parallelizer-reporting-level.md) ve [/Qvec-report](../../build/reference/qvec-report-auto-vectorizer-reporting-level.md) ayarlanacak [otomatik paralelleştirme ve otomatik vektörleştirme](../../parallel/auto-parallelization-and-auto-vectorization.md) çıkış nedeni kodları ve kendi etkinliğiyle ilgili bilgi iletileri. Bu makalede, neden kodları ve iletiler açıklanmaktadır.
 
-- [Bilgilendirme iletileri](#BKMK_InformationalMessages)
-
-- [5XX](#BKMK_ReasonCode50x)
-
-- [10xx](#BKMK_ReasonCode100x)
-
-- [11xx](#BKMK_ReasonCode110x)
-
-- [12xx](#BKMK_ReasonCode120x)
-
-- [13xx](#BKMK_ReasonCode130x)
-
-- [14xx](#BKMK_ReasonCode140x)
-
-- [15xx](#BKMK_ReasonCode150x)
-
-##  <a name="BKMK_InformationalMessages"></a> Bilgilendirme iletileri
+## <a name="BKMK_InformationalMessages"></a> Bilgilendirme iletileri
 
 Belirttiğiniz raporlama düzeyine bağlı olarak, aşağıdaki bilgi iletilerinin biri her döngü için görünür.
 
@@ -43,27 +27,25 @@ Neden kodları hakkında daha fazla bilgi için bu makalenin sonraki bölümüne
 
 |Bilgi İletisi|Açıklama|
 |---------------------------|-----------------|
-|5001|Döngü vektörleştirildi.|
-|5002|Döngü 'açıklaması' nedeniyle vektörleştirilmedi.|
-|5011|Döngü paralelleştirildi.|
-|5012|Döngü 'açıklaması' nedeniyle paralelleştirilmedi.|
-|5021|Döngü pragma ile ilişkilendirilemedi.|
+|5001|`Loop vectorized.`|
+|5002|`Loop not vectorized due to reason '*description*'.`|
+|5011|`Loop parallelized.`|
+|5012|`Loop not parallelized due to reason '*description*'.`|
+|5021|`Unable to associate loop with pragma.`|
 
-## <a name="reason-codes"></a>Neden Kodları
+Aşağıdaki bölümlerde, vektör yapıcı ve paralel hale getirici için olası neden kodları listelenmiştir.
 
-Aşağıdaki bölümlerde, otomatik paralel hale getirici ve otomatik vektör hale getirici için olası neden kodları listelenmiştir.
+## <a name="BKMK_ReasonCode50x"></a> 5XX neden kodları
 
-###  <a name="BKMK_ReasonCode50x"></a> 5XX
-
-5*xx* neden kodları otomatik paralel hale getirici ve otomatik vektör hale getirici için geçerlidir.
+5*xx* neden kodları, hem paralel hale getirici hem de vektör hale getirici için geçerlidir.
 
 |Neden Kodu|Açıklama|
 |-----------------|-----------------|
-|500|Bu bazı durumları kapsayan genel bir iletidir (örneğin, döngü birden fazla çıkış içeriyor ya da döngü üstbilgisi endüksiyon değişkeninin artışıyla bitmiyor).|
-|501|Endüksiyon değişkeni yerel değildir veya bir üst sınır döngü değişmez bir değer değil.|
-|502|Endüksiyon değişkenine basit + 1 dışındaki bir şekilde girilmiştir.|
-|503|Döngü, özel durum işleme veya anahtar ifadeleri içerir.|
-|504|Döngünün gövdesi C++ nesnesinin yok edilmesini gerektiren bir özel durum oluşturabilir.|
+|500|Bu bazı durumları kapsayan genel bir ileti — Örneğin, döngü birden fazla çıkış içeriyor ya da döngü üstbilgisi endüksiyon değişkeninin artışıyla bitmiyor.|
+|501|`Induction variable is not local; or upper bound is not loop-invariant.`|
+|502|`Induction variable is stepped in some manner other than a simple +1.`|
+|503|`Loop includes exception-handling or switch statements.`|
+|504|`Loop body may throw an exception that requires destruction of a C++ object.`|
 
 ```cpp
 void code_500(int *A)
@@ -216,23 +198,23 @@ void code_504(int *A) {
 }
 ```
 
-###  <a name="BKMK_ReasonCode100x"></a> 10xx
+## <a name="BKMK_ReasonCode100x"></a> 10xx neden kodları
 
-10*xx* neden kodları otomatik paralel hale getirici için geçerlidir.
+10*xx* neden kodları paralel hale getirici için geçerlidir.
 
 |Neden Kodu|Açıklama|
 |-----------------|-----------------|
-|1000|Derleyici, döngü gövdesinde veri bağımlılığı algıladı.|
-|1001|Derleyici döngü gövdesinde skalar bir değişken için depo algıladı ve bu skalar döngü ötesinde bir kullanıma sahip.|
-|1002|Derleyici, daha önce paralel hale getirilmiş bir iç döngüye sahip bir döngüyü paralel hale getirmeyi denedi.|
-|1003|Döngü gövdesi, belleğe okunabilen ya da yazılabilen bir iç çağrı içeriyor.|
-|1004|Döngü gövdesinde skalar bir azalma var. Döngü vektörleştirildiğinde skalar azalma meydana gelebilir.|
-|1005|**No_parallel** pragma belirtildi.|
-|1006|Bu işlevi içeren **openmp**. Bu herhangi kaldırarak bunu çözebilirsiniz **openmp** Bu işlevde.|
-|1007|Döngü endüksiyon değişkeni veya döngü sınırları imzalanmış 32 bitlik sayılar değil (`int` veya `long`). Endüksiyon değişkeninin türünü değiştirerek sorunu çözebilirsiniz.|
-|1008|Derleyici, bu döngünün otomatik paralel hale getirmeyi garanti altına almak için yeterli ölçüde çalışmadığını algıladı.|
-|1009|Derleyici, "do-while" döngüsünü paralel hale getirme denemesi algıladı. Otomatik paralel hale getirici hedefler `for` döngüleri.|
-|1010|Derleyici, döngü "eşit değil" kullandığını algıladı. (! =), koşul için.|
+|1000|`The compiler detected a data dependency in the loop body.`|
+|1001|`The compiler detected a store to a scalar variable in the loop body, and that scalar has a use beyond the loop.`|
+|1002|`The compiler tried to parallelize a loop that has an inner loop that was already parallelized.`|
+|1003|`The loop body contains an intrinsic call that may read or write to memory.`|
+|1004|`There is a scalar reduction in the loop body. Scalar reduction can occur if the loop has been vectorized.`|
+|1005|`The no_parallel pragma was specified.`|
+|1006|`This function contains openmp. Resolve this by removing any openmp in this function.`|
+|1007|`The loop induction variable or the loop bounds are not signed 32-bit numbers (int or long). Resolve this by changing the type of the induction variable.`|
+|1008|`The compiler detected that this loop does not perform enough work to warrant auto-parallelization.`|
+|1009|`The compiler detected an attempt to parallelize a "do-while" loop. The auto-parallelizer only targets "for" loops.`|
+|1010|`The compiler detected that the loop is using "not-equals" (!=) for its condition.`|
 
 ```cpp
 int A[1000];
@@ -425,19 +407,19 @@ void code_1010()
 }
 ```
 
-###  <a name="BKMK_ReasonCode110x"></a> 11xx
+## <a name="BKMK_ReasonCode110x"></a> 11xx neden kodları
 
-11*xx* neden kodları otomatik vektör hale getirici için geçerlidir.
+11*xx* neden kodları vektör hale getirici için geçerlidir.
 
 |Neden Kodu|Açıklama|
 |-----------------|-----------------|
-|1100|Döngü denetim akışı içeriyor (ör. "eğer" veya "?").|
-|1101|Döngü, vektörleştirilemeyen veri türü dönüştürmesi (belki örtülü) içeriyor.|
-|1102|Döngü aritmetik olmayan veya diğer vektörleştirilemeyen işlemler içeriyor.|
-|1103|Döngü gövdesi, boyutu döngü içinde değişebilen kaydırma işleçleri içeriyor.|
-|1104|Döngünün gövdesi skalar değişkenler içerir.|
-|1105|Döngü tanınmayan azaltma işlemi içeriyor.|
-|1106|Dış döngü vektörleştirilmedi.|
+|1100|`Loop contains control flow—for example, "if" or "?".`|
+|1101|`Loop contains datatype conversion—perhaps implicit—that cannot be vectorized.`|
+|1102|`Loop contains non-arithmetic or other non-vectorizable operations.`|
+|1103|`Loop body includes shift operations whose size might vary within the loop.`|
+|1104|`Loop body includes scalar variables.`|
+|1105|`Loop includes a unrecognized reduction operation.`|
+|1106|`Outer loop not vectorized.`|
 
 ```cpp
 void code_1100(int *A, int x)
@@ -573,16 +555,16 @@ void code_1106(int *A)
 }
 ```
 
-###  <a name="BKMK_ReasonCode120x"></a> 12xx
+## <a name="BKMK_ReasonCode120x"></a> 12xx neden kodları
 
-12*xx* neden kodları otomatik vektör hale getirici için geçerlidir.
+12*xx* neden kodları vektör hale getirici için geçerlidir.
 
 |Neden Kodu|Açıklama|
 |-----------------|-----------------|
-|1200|Döngü, vektörleşmeyi önleyen, döngüyle taşınan veri bağımlılıkları içeriyor. Döngünün farklı yinelemeleri birbiriyle etkileşiyor ve bu nedenle de döngünün vektörleştirilmesi hatalı yanıtlara yol açabilir ve otomatik vektör hale getirici kendine bu tür veri bağımlılıklarının olmadığını kanıtlayamıyor.|
-|1201|Dizi temeli döngü sırasında değişiyor.|
-|1202|Bir yapı birimindeki alan 32 veya 64 bit uzunluğunda değil.|
-|1203|Döngü gövdesi, bir diziye bitişik olmayan erişimler içeriyor.|
+|1200|`Loop contains loop-carried data dependences that prevent vectorization. Different iterations of the loop interfere with each other such that vectorizing the loop would produce wrong answers, and the auto-vectorizer cannot prove to itself that there are no such data dependences.`|
+|1201|`Array base changes during the loop.`|
+|1202|`Field in a struct is not 32 or 64 bits wide.`|
+|1203|`Loop body includes non-contiguous accesses into an array.`|
 
 ```cpp
 void fn();
@@ -648,18 +630,18 @@ void code_1203(int *A)
 }
 ```
 
-###  <a name="BKMK_ReasonCode130x"></a> 13xx
+## <a name="BKMK_ReasonCode130x"></a> 13xx neden kodları
 
-13*xx* neden kodları otomatik vektör hale getirici için geçerlidir.
+13*xx* neden kodları vektör hale getirici için geçerlidir.
 
 |Neden Kodu|Açıklama|
 |-----------------|-----------------|
-|1300|Döngü gövdesinde hesaplama yok ya da çok az.|
-|1301|Döngü adımı + 1 değil.|
-|1302|Döngü bir "-sırasında".|
-|1303|Vektörleştirmenin değer sağlaması için yeterli sayıda döngü yinelemesi yok.|
-|1304|Döngü farklı boyutlarda atamalar içeriyor.|
-|1305|Yeterli tür bilgisi yok.|
+|1300|`Loop body contains no—or very little—computation.`|
+|1301|`Loop stride is not +1.`|
+|1302|`Loop is a "do-while".`|
+|1303|`Too few loop iterations for vectorization to provide value.`|
+|1304|`Loop includes assignments that are of different sizes.`|
+|1305|`Not enough type information.`|
 
 ```cpp
 void code_1300(int *A, int *B)
@@ -780,18 +762,18 @@ void code_1305( S_1305 *s, S_1305 x)
 }
 ```
 
-###  <a name="BKMK_ReasonCode140x"></a> 14xx
+## <a name="BKMK_ReasonCode140x"></a> 14xx neden kodları
 
-14*xx* neden kodları otomatik vektörleştirme ile uyumlu olmayan bazı seçeneği belirtildiğinde oluşur.
+14*xx* neden kodları vektörleştirme ile uyumlu olmayan bazı seçeneği belirtildiğinde oluşur.
 
 |Neden Kodu|Açıklama|
 |-----------------|-----------------|
-|1400|**#pragma loop(no_vector)** belirtilir.|
-|1401|**/ Kernel** x86 veya ARM hedeflenirken anahtarı belirtiliyor.|
-|1402|**/ arch: SSE2** veya üstü anahtar x86 hedeflenirken belirtilmedi.|
-|1403|**çiftlerde** anahtarı belirtiliyor ve döngü işlemler içeriyor.|
-|1404|**/ O1** veya **/Os** anahtarı belirtiliyor.|
-|1405|Vektörleştirme; dinamik oluşturucudan statik oluşturucuya iyileştirmeye yardımcı olmak üzere devre dışı bırakılır.|
+|1400|`#pragma loop(no_vector) is specified.`|
+|1401|`/kernel switch is specified when targeting x86 or ARM.`|
+|1402|`/arch:SSE2 or higher switch is not specified when targeting x86.`|
+|1403|`/arch:ATOM switch is specified and the loop includes operations on doubles.`|
+|1404|`/O1 or /Os switch is specified.`|
+|1405|`Vectorization is disabled to aid in dynamic-initializer-to-static-initializer optimization.`|
 
 ```cpp
 void code_1400(int *A)
@@ -852,18 +834,18 @@ void code_1404(int *A)
 }
 ```
 
-###  <a name="BKMK_ReasonCode150x"></a> 15xx
+## <a name="BKMK_ReasonCode150x"></a> 15xx neden kodları
 
-15 bloğunu*xx* neden kodları yumuşatma için geçerlidir. Bellekte bir konuma iki farklı ad tarafından erişilebildiğinde yumuşatma meydana gelir.
+15*xx* neden kodları yumuşatma için geçerlidir. Bellekte bir konuma iki farklı ad tarafından erişilebildiğinde yumuşatma meydana gelir.
 
 |Neden Kodu|Açıklama|
 |-----------------|-----------------|
-|1500|Çok boyutlu diziler üzerinde olası yumuşatma.|
-|1501|Yapı birimlerinin dizilerinde olası yumuşatma.|
-|1502|Olası yumuşatma ve dizi dizini n + K öğesinden farklı.|
-|1503|Olası yumuşatma ve dizi dizini birden fazla ofset içeriyor.|
-|1504|Olası yumuşatma; çok fazla çalışma zamanı denetimi gerektirir.|
-|1505|Olası yumuşatma, ancak çalışma zamanı denetimleri çok karmaşık.|
+|1500|`Possible aliasing on multi-dimensional arrays.`|
+|1501|`Possible aliasing on arrays-of-structs.`|
+|1502|`Possible aliasing and array index is other than n + K.`|
+|1503|`Possible aliasing and array index has multiple offsets.`|
+|1504|`Possible aliasing; would require too many runtime checks.`|
+|1505|`Possible aliasing, but runtime checks are too complex.`|
 
 ```cpp
 void code_1500(int A[100][100], int B[100][100])
@@ -982,9 +964,10 @@ void code_1505(int *A, int *B)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Otomatik Paralelleştirme ve Otomatik Vektörleştirme](../../parallel/auto-parallelization-and-auto-vectorization.md)<br/>
-[Yerel kodda paralel programlama](http://go.microsoft.com/fwlink/p/?linkid=263662)<br/>
-[#pragma loop()](../../preprocessor/loop.md)<br/>
-[/Q Seçenekler (Düşük Düzey İşlemler)](../../build/reference/q-options-low-level-operations.md)<br/>
-[/Qpar-report (Otomatik Paralel Hale Getirici Raporlama Düzeyi)](../../build/reference/qpar-report-auto-parallelizer-reporting-level.md)<br/>
+[C /C++ derleyicisi ve derleme araçları hataları ve Uyarıları](../compiler-errors-1/c-cpp-build-errors.md)
+[otomatik paralelleştirme ve otomatik vektörleştirme](../../parallel/auto-parallelization-and-auto-vectorization.md) \
+[Otomatik vektör hale getirici Visual Studio 2012 – genel bakış](https://blogs.msdn.microsoft.com/nativeconcurrency/2012/04/12/auto-vectorizer-in-visual-studio-2012-overview/) \
+[#pragma loop()](../../preprocessor/loop.md) \
+[/Q Seçenekler (düşük düzey işlemler)](../../build/reference/q-options-low-level-operations.md) \
+[/ Qpar-(otomatik paralel hale getirici report raporlama düzeyi)](../../build/reference/qpar-report-auto-parallelizer-reporting-level.md) \
 [/Qvec-report (Otomatik Vektör Hale Getirici Raporlama Düzeyi)](../../build/reference/qvec-report-auto-vectorizer-reporting-level.md)

@@ -6,11 +6,11 @@ helpviewer_keywords:
 - calling multiple functions in parallel [Concurrency Runtime]
 ms.assetid: a6aea69b-d647-4b7e-bf3b-e6a6a9880072
 ms.openlocfilehash: d618b5f202c6aaf454a60f4f37211d9000600562
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57293531"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62345688"
 ---
 # <a name="how-to-use-parallelinvoke-to-execute-parallel-operations"></a>Nasıl yapılır: Paralel işlemleri yürütmek için parallel_invoke kullanma
 

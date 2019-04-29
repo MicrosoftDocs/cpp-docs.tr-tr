@@ -88,11 +88,11 @@ helpviewer_keywords:
 - images [C++], converting formats
 ms.assetid: 66db3fb2-cfc1-48a2-9bdd-53f61eb7ee30
 ms.openlocfilehash: d10593ffbae7aef55adc3334057402b6952d8ba7
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59027603"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62345532"
 ---
 # <a name="how-to-create-an-icon-or-other-image"></a>Nasıl yapılır: Simge veya başka görüntü oluşturma
 
@@ -315,7 +315,7 @@ GIF veya JPEG resimleri açabileceğiniz **Resim Düzenleyicisi** ve bit eşleml
 
 ## <a name="requirements"></a>Gereksinimler
 
-None
+Yok.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

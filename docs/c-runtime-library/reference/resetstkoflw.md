@@ -25,11 +25,11 @@ helpviewer_keywords:
 - _resetstkoflw function
 ms.assetid: 319529cd-4306-4d22-810b-2063f3ad9e14
 ms.openlocfilehash: ad8c9b470c33a4c84f46ac7758d368917e7938e0
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50480554"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62357544"
 ---
 # <a name="resetstkoflw"></a>_resetstkoflw
 
@@ -88,9 +88,9 @@ Bu noktada, yığında artık koruma sayfası olmadığını unutmayın. Program
 
 Bu noktalarda yığın henüz yeterince çözülmüş değildir.
 
-Yığın taşması özel durumları oluşturulur yapılandırılmış özel durumları değil C++ özel durumlarını, bu nedenle **_resetstkoflw** yakalayamayacağından değil **catch** bloğunda bir yığın taşması özel durumu yakalamaz. Ancak, varsa [_set_se_translator](set-se-translator.md) (ikinci örnekteki gibi), C++ özel durumlarını oluşturan bir yapılandırılmış özel durum Çeviricisi uygulamak için kullanılan bir C++ tarafından işlenebilen bir C++ özel durum yığın taşması özel durumu sonuçlarda yakalayın Blok.
+Yığın taşması özel durumları oluşturulur yapılandırılmış özel durumları değil C++ özel durumlar, bu nedenle **_resetstkoflw** yakalayamayacağından değil **catch** bloğunda bir yığın taşması yakalayamaz özel durum. Ancak, varsa [_set_se_translator](set-se-translator.md) oluşturan bir yapılandırılmış özel durum Çeviricisi uygulamak için kullanılan C++ özel durumlar (ikinci örnekteki gibi), bir yığın taşması özel durumuna neden olabilir bir C++ tarafından işlenen özel durum bir C++ catch bloğu.
 
-Çağırmak güvenli değil **_resetstkoflw** yapılandırılmış özel durum Çevirici işleviyle atılan bir özel durumdan ulaşıldığında bir C++ catch bloğu içinde. Bu durumda, yığın alanı ve yığın işaretçisi catch bloğu dışında olsa bile Yıkıcılar yakalama bloğunun önündeki yıkıcı nesneler için çağrılmış kadar sıfırlanmaz. Bu işlev yığın alanı boşaltılana ve yığın işaretçisi sıfırlanana kadar çağrılmamalıdır. Bu nedenle, yalnızca catch bloğundan çıkıldıktan sonra çağrılmalıdır. Kendisi bir önceki yığın taşmasından kurtarma denemesi catch bloğu içinde oluşan bir yığın taşması program taşma yanıt vermeyi durdurmasına neden olabilir ve kurtarılabilir olmadığından, catch bloğunda olabildiğince küçük yığın alanı kullanılmalıdır catch bloğu Tetikleyicileri catch bloğu bir özel durum kendisi tarafından aynı işlenir.
+Çağırmak güvenli değil **_resetstkoflw** içinde bir C++ yapılandırılmış özel durum Çevirici işleviyle atılan bir özel durumdan ulaşıldığında yakalama bloğu. Bu durumda, yığın alanı ve yığın işaretçisi catch bloğu dışında olsa bile Yıkıcılar yakalama bloğunun önündeki yıkıcı nesneler için çağrılmış kadar sıfırlanmaz. Bu işlev yığın alanı boşaltılana ve yığın işaretçisi sıfırlanana kadar çağrılmamalıdır. Bu nedenle, yalnızca catch bloğundan çıkıldıktan sonra çağrılmalıdır. Kendisi bir önceki yığın taşmasından kurtarma denemesi catch bloğu içinde oluşan bir yığın taşması program taşma yanıt vermeyi durdurmasına neden olabilir ve kurtarılabilir olmadığından, catch bloğunda olabildiğince küçük yığın alanı kullanılmalıdır catch bloğu Tetikleyicileri catch bloğu bir özel durum kendisi tarafından aynı işlenir.
 
 Bazı durumlarda burada **_resetstkoflw** içinde olduğu gibi bir doğru konumda kullanılsa bile başarısız olabilir bir **__except** blok. Yığın bırakıldıktan sonra bile, yok, hala yürütmek için yeterli yığın alanı **_resetstkoflw** yığının son sayfasına yazmadan **_resetstkoflw** son sayfasında sıfırlayamaz. yığın, 0 döndürür ve koruma sayfası olarak. Bu nedenle, bu işlevin güvenli kullanımı, yığının güvenli olduğunu varsayarak, dönüş değeri yerine denetlenmesini içermelidir.
 
@@ -104,7 +104,7 @@ Yapılandırılmış özel durum işleme yakalamaz bir **STATUS_STACK_OVERFLOW**
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
-**Kitaplıklar:** tüm sürümlerini [CRT kitaplık özellikleri](../../c-runtime-library/crt-library-features.md).
+**Kitaplıklar:** Tüm sürümleri [CRT kitaplık özellikleri](../../c-runtime-library/crt-library-features.md).
 
 ## <a name="example"></a>Örnek
 
@@ -212,7 +212,7 @@ resetting stack overflow
 
 ### <a name="description"></a>Açıklama
 
-Aşağıdaki örnek, önerilen kullanımını göstermektedir **_resetstkoflw** yapılandırılmış özel durumları C++ özel durumlarına dönüştürülen olduğu bir programda.
+Aşağıdaki örnek, önerilen kullanımını göstermektedir **_resetstkoflw** burada yapılandırılmış özel durumları dönüştürülür programında C++ özel durumlar.
 
 ### <a name="code"></a>Kod
 

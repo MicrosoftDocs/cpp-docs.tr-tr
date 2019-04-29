@@ -32,11 +32,11 @@ helpviewer_keywords:
 - _seh_filter_exe function
 ms.assetid: 747e5963-3a12-4bf5-b5c4-d4c1b6068e15
 ms.openlocfilehash: 51d6a21b3867eb830a7d9f9b4b9b0ac844cd5aa1
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50573043"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62356738"
 ---
 # <a name="sehfilterdll-sehfilterexe"></a>_seh_filter_dll, _seh_filter_exe
 

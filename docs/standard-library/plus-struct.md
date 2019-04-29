@@ -8,11 +8,11 @@ helpviewer_keywords:
 - plus struct
 ms.assetid: 4594abd5-b2f2-4fac-9b6b-fc9a2723f8cf
 ms.openlocfilehash: 94ccd071d23479064f007079835134055ed79aa3
-ms.sourcegitcommit: 4299caac2dc9e806c74ac833d856a3838b0f52a1
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "57006818"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62370339"
 ---
 # <a name="plus-struct"></a>plus Yapısı
 

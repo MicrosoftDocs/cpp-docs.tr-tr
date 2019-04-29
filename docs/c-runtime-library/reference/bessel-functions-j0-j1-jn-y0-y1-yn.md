@@ -39,11 +39,11 @@ helpviewer_keywords:
 - _yn function
 ms.assetid: a21a8bf1-df9d-4ba0-a8c2-e7ef71921d96
 ms.openlocfilehash: 682eaa99d0be1b959152ff94cc10a86aa68d988d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50531869"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62341129"
 ---
 # <a name="bessel-functions-j0-j1-jn-y0-y1-yn"></a>Bessel işlevleri: _j0, _j1, _jn, _y0, _y1, _yn
 
@@ -92,15 +92,15 @@ Bu yordamların her biri Bessel işlevi döndürür *x*. Varsa *x* negatif **_y0
 
 |Giriş|SEH özel durumu|Matherr özel durumu|
 |-----------|-------------------|-----------------------|
-|± **QNAN**, **ONRAKİNİ BUL**|**GEÇERSİZ**|**_ETKİ ALANI**|
+|± **QNAN**, **ONRAKİNİ BUL**|**GEÇERSİZ**|**_DOMAIN**|
 
 **_Y0**, **_y1**, ve **_yn** yordamları Bessel işlevleri ikinci tür dönmek: 0, 1 ile n, sırasıyla sıralar.
 
 |Giriş|SEH özel durumu|Matherr özel durumu|
 |-----------|-------------------|-----------------------|
-|± **QNAN**, **ONRAKİNİ BUL**|**GEÇERSİZ**|**_ETKİ ALANI**|
+|± **QNAN**, **ONRAKİNİ BUL**|**GEÇERSİZ**|**_DOMAIN**|
 |± 0|**ZERODIVIDE**|**_SING**|
-|&#124;x&#124; < 0,0|**GEÇERSİZ**|**_ETKİ ALANI**|
+|&#124;x&#124; < 0,0|**GEÇERSİZ**|**_DOMAIN**|
 
 ## <a name="requirements"></a>Gereksinimler
 

@@ -3,11 +3,11 @@ title: Visual C++ taşıma ve yükseltme Kılavuzu
 ms.date: 09/18/2018
 ms.assetid: f5fbcc3d-aa72-41a6-ad9a-a706af2166fb
 ms.openlocfilehash: 8798d8b3da5a91adfc6f77912d4f34bf62549f54
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58898797"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62336926"
 ---
 # <a name="visual-c-porting-and-upgrading-guide"></a>Visual C++ taşıma ve yükseltme Kılavuzu
 
@@ -77,7 +77,7 @@ Alternatif olarak, artık belki de yeni gereksinimler ortaya veya Windows Masaü
 |-----------|-----------------|
 |[Önceki Visual C++ Sürümü Projelerini Yükseltme](upgrading-projects-from-earlier-versions-of-visual-cpp.md)|Visual C++'ın önceki sürümlerinde oluşturulmuş projeleri kullanmayı açıklar.|
 |[Visual Studio'da C++ derleyicisi için yeni nedir](../overview/what-s-new-for-visual-cpp-in-visual-studio.md)|IDE ve Araçlar, Visual Studio'nun geçerli sürümüne değişiklikleri|
-|[Visual Studio'da C++ uyumluluk geliştirmeleri](../overview/cpp-conformance-improvements.md)|Visual Studio 2015 için Visual Studio standartlara uyumluluk geliştirmeleri|
+|[Visual Studio’deki C++ uyumluluk geliştirmeleri](../overview/cpp-conformance-improvements.md)|Visual Studio 2015 için Visual Studio standartlara uyumluluk geliştirmeleri|
 |[Visual C++ değişiklik geçmişi 2003 - 2015](visual-cpp-change-history-2003-2015.md)|Visual C++ kitaplıkları ve kodunuzda değişiklikler gerektirebilir bir 2015 derleme araçları Visual Studio 2003'ten tüm değişikliklerin listesi.|
 |[Visual C++ 2003 ile 2015 Arasındaki Farklar](visual-cpp-what-s-new-2003-through-2015.md)|Tüm "yenilikler" bilgileri için Visual Studio 2003 Visual Studio 2015 Visual C++.|
 |[Üçüncü Taraf Kitaplıklarını Taşıma](porting-third-party-libraries.md)|Nasıl kullanılacağını **vcpkg** bağlantı noktası eski açık kaynak kitaplıkları daha yeni Visual C++ araç takımları ile derlenmiş sürümleri için komut satırı aracı.|

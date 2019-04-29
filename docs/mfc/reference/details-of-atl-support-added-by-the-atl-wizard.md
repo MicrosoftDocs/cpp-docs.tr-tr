@@ -8,11 +8,11 @@ helpviewer_keywords:
 - ATL, MFC projects
 ms.assetid: aa66bad0-008f-4886-94c1-2a0a0d04bce4
 ms.openlocfilehash: 0b849ffb585ef99512cc68e1c734dc5b3a87d507
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57304931"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62323326"
 ---
 # <a name="details-of-atl-support-added-by-the-atl-wizard"></a>ATL Sihirbazı Tarafından Eklenen ATL Desteğinin Ayrıntıları
 
@@ -31,7 +31,7 @@ MFC DLL projesi için ATL desteği eklediğinizde, bazı farklılıklar görürs
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Bir MFC projesinde ATL desteği](../../mfc/reference/adding-atl-support-to-your-mfc-project.md)<br/>
-[Kod sihirbazlarıyla işlevsellik ekleme](../../ide/adding-functionality-with-code-wizards-cpp.md)<br/>
+[Kod Sihirbazlarıyla İşlevsellik Ekleme](../../ide/adding-functionality-with-code-wizards-cpp.md)<br/>
 [Sınıf ekleme](../../ide/adding-a-class-visual-cpp.md)<br/>
 [Üye işlevi ekleme](../../ide/adding-a-member-function-visual-cpp.md)<br/>
 [Üye değişkeni ekleme](../../ide/adding-a-member-variable-visual-cpp.md)<br/>

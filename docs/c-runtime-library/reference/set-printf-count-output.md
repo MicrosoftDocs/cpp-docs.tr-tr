@@ -25,11 +25,11 @@ helpviewer_keywords:
 - _set_printf_count_output function
 ms.assetid: d8259ec5-764e-42d0-9169-72172e95163b
 ms.openlocfilehash: 0d4847d850b39c7c03ea92a98499715b1e6a4913
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50595617"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62356530"
 ---
 # <a name="setprintfcountoutput"></a>_set_printf_count_output
 

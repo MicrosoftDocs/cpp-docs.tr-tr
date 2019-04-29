@@ -32,11 +32,11 @@ helpviewer_keywords:
 - process creation
 ms.assetid: e171ebfa-70e7-4c44-8331-2a291fc17bd6
 ms.openlocfilehash: fa390c039a3d663cb79cb311667e568a6a053131
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51327986"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62355165"
 ---
 # <a name="spawnlpe-wspawnlpe"></a>_spawnlpe, _wspawnlpe
 
@@ -76,7 +76,7 @@ intptr_t _wspawnlpe(
 *■ CmdName*<br/>
 Yürütülecek dosyanın yolu.
 
-*arg0*, *arg1*,... *argn*<br/>
+*arg0*, *arg1*, ... *argn*<br/>
 Bağımsız değişkenlere işaretçi listesi. *Arg0* bağımsız değişkeni, genellikle bir işaretçiye *■ cmdname*. Bağımsız değişkenler *arg1* aracılığıyla *argn* yeni bağımsız değişken listesini oluşturan karakter dizelerine. Aşağıdaki *argn*, olmalıdır bir **NULL** bağımsız değişken listesinin sonunu işaretlemek için işaretçi.
 
 *envp*<br/>

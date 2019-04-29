@@ -7,11 +7,11 @@ helpviewer_keywords:
 author: corob-msft
 ms.author: corob
 ms.openlocfilehash: 207d99419499187715cf9088652d64b79b7ba34d
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58787883"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62352721"
 ---
 # <a name="overview-of-c-development-in-visual-studio"></a>Visual Studio’da C++ geliştirmeye genel bakış
 

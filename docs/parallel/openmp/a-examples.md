@@ -3,11 +3,11 @@ title: A. Örnekler
 ms.date: 01/18/2019
 ms.assetid: c0f6192f-a205-449b-b84c-cb30dbcc8b8f
 ms.openlocfilehash: 061490d34829175bfbdcd84d6208aa396bb19671
-ms.sourcegitcommit: 382e247c0f1b4cb7c2dab837b8b6fdff24bff47a
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/28/2019
-ms.locfileid: "55087307"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62362978"
 ---
 # <a name="a-examples"></a>A. Örnekler
 
@@ -917,7 +917,7 @@ int i, a;
 
 ## <a name="a31-thread-safe-lock-functions"></a>A.31 iş parçacığı güvenli kilit işlevleri
 
-Aşağıdaki örnek C++ kullanarak bir dizi bir paralel bölgenin içinde kilit başlatmak gösterilmiştir [omp_init_lock](3-run-time-library-functions.md#321-omp_init_lock-and-omp_init_nest_lock-functions).
+Aşağıdaki C++ örnek gösterir kullanarak bir dizi bir paralel bölgenin içinde kilit başlatmak nasıl [omp_init_lock](3-run-time-library-functions.md#321-omp_init_lock-and-omp_init_nest_lock-functions).
 
 ```cpp
 // A_13_omp_init_lock.cpp

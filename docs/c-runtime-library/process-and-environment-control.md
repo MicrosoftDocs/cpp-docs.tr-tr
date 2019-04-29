@@ -12,11 +12,11 @@ helpviewer_keywords:
 - process control routines
 ms.assetid: 7fde74c3-c2a6-4d15-84b8-092160d60c3e
 ms.openlocfilehash: c837739d4954c65d45a590bd5c7f904e2375102e
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57742100"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62342048"
 ---
 # <a name="process-and-environment-control"></a>Süreç ve Ortam Denetimi
 

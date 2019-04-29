@@ -17,11 +17,11 @@ helpviewer_keywords:
 - wide characters, strings
 ms.assetid: 61de8f6f-2714-4e7b-86b6-a3f885d3b9df
 ms.openlocfilehash: d3721f3624a64a24de0a5458d88de4836b07a9c1
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51329845"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62330849"
 ---
 # <a name="string-and-character-literals--c"></a>Dize ve karakter değişmez değerleri (C++)
 
@@ -88,7 +88,7 @@ A *karakter sabit değeri* sabit karakterden oluşur. Tek tırnak işareti için
 
 Ters eğik çizgi ayrılmış karakterler dışında herhangi bir karakter, bir karakter sabiti için kullanılan karakter olabilir ('\\'), tek tırnak işareti (') veya yeni satır. Ayrılmış karakterler bir çıkış sırası kullanılarak belirtilebilir. Tür karakter tutabilecek kadar büyük olduğu sürece karakter evrensel karakter adları kullanılarak belirtilebilir.
 
-### <a name="encoding"></a>Kodlama
+### <a name="encoding"></a>Encoding
 
 Karakter değişmez değerleri farklı kodlanır kendi ön ekine.
 
@@ -254,7 +254,7 @@ auto s4 = U"hello"; // const char32_t*
 
 ### <a name="raw-string-literals-c11"></a>Ham dize değişmez değerleri (C ++ 11)
 
-Ham dize sabit değeri bir null ile sonlandırılmış bir dizidir — herhangi bir karakter türü — çift tırnak işareti ("), ters eğik çizgi de dahil olmak üzere tüm grafik karakterlerini içeren (\\), veya yeni satır karakteri. Ham dize değişmez değerleri, karakter sınıfları kullanan normal ifadelerde ve HTML dizelerinde ve XML dizelerinde sık sık kullanılır. Örnekler için aşağıdaki makaleye bakın: [C ++ 11 Bjarne Stroustrup'un SSS'leri](http://www.stroustrup.com/C++11FAQ.html).
+Ham dize sabit değeri bir null ile sonlandırılmış bir dizidir — herhangi bir karakter türü — çift tırnak işareti ("), ters eğik çizgi de dahil olmak üzere tüm grafik karakterlerini içeren (\\), veya yeni satır karakteri. Ham dize değişmez değerleri, karakter sınıfları kullanan normal ifadelerde ve HTML dizelerinde ve XML dizelerinde sık sık kullanılır. Örnekler için şu makaleye bakın: [C ++ 11 Bjarne Stroustrup'un SSS'leri](http://www.stroustrup.com/C++11FAQ.html).
 
 ```cpp
 // represents the string: An unescaped \ character
@@ -328,7 +328,7 @@ Dize değişmez değerleri (std:string değişmez değerler dahil değil) için 
 
 **Microsoft'a özgü**
 
-Visual c++'ta const olmayan bir işaretçi başlatmak için bir dize sabit değeri kullanabilirsiniz **char** veya **wchar_t**. Bu C99 kodunda izin verilir, ancak C ++ 98'de kullanım dışı ve C ++ 11'de kaldırılmıştır. Dize değiştirme girişimi şu örnekte olduğu gibi erişim ihlaline neden olur:
+Görselde C++ const olmayan bir işaretçi başlatmak için bir dize sabit değeri kullanabilirsiniz **char** veya **wchar_t**. Bu C99 kodunda izin verilir, ancak C ++ 98'de kullanım dışı ve C ++ 11'de kaldırılmıştır. Dize değiştirme girişimi şu örnekte olduğu gibi erişim ihlaline neden olur:
 
 ```cpp
 wchar_t* str = L"hello";

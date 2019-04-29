@@ -11,11 +11,11 @@ helpviewer_keywords:
 - std::raw_storage_iterator [C++], iter_type
 ms.assetid: 6f033f15-f48e-452a-a326-647ea2cf346f
 ms.openlocfilehash: 8e13d03e577df4c64e85704993cfc0ff81af5f8f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50503018"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62369769"
 ---
 # <a name="rawstorageiterator-class"></a>raw_storage_iterator Sınıfı
 
@@ -33,7 +33,7 @@ class raw_storage_iterator
 *Outputıterator*<br/>
 Çıkış yineleyici depolanmakta olan nesne için belirtir.
 
-*Türü*<br/>
+*Tür*<br/>
 Kendisi için ayrılan depolama nesnenin türü.
 
 ## <a name="remarks"></a>Açıklamalar

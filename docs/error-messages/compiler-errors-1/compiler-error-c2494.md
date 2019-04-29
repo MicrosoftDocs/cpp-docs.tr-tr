@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2494
 ms.assetid: 5dfd07ab-351d-49c9-b54e-f0a104776ab8
 ms.openlocfilehash: 0a8be1dd5ce8d906bc4d0b1ce72295a57f68b6cf
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50507711"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62361652"
 ---
 # <a name="compiler-error-c2494"></a>Derleyici Hatası C2494
 

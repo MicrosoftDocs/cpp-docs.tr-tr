@@ -17,11 +17,11 @@ helpviewer_keywords:
 - isw routines
 ms.assetid: 1e171a57-2cde-41f6-a75f-a080fa3c12e5
 ms.openlocfilehash: 961ad52070928ba755625747546c8dc7b1c215ba
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57750826"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62342945"
 ---
 # <a name="is-isw-routines"></a>is, isw Rutinleri
 

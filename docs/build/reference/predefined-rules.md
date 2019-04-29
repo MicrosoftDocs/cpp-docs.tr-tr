@@ -7,11 +7,11 @@ helpviewer_keywords:
 - predefined rules in NMAKE
 ms.assetid: 638cdc3f-4aba-4b4f-96e3-ad65b0364f12
 ms.openlocfilehash: 7a922a239306f10121791caa8f9f088cea88c019
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57824004"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62319453"
 ---
 # <a name="predefined-rules"></a>Önceden Tanımlanmış Kurallar
 

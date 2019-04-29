@@ -8,11 +8,11 @@ helpviewer_keywords:
 - statements, compound
 ms.assetid: be231a92-c712-464e-ae25-a4becb20f7f5
 ms.openlocfilehash: 4f308864e6e85f74e40d9c9df200a0254fea366a
-ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56152631"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62325916"
 ---
 # <a name="blocks"></a>Bloklar
 

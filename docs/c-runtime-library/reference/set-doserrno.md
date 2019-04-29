@@ -26,11 +26,11 @@ helpviewer_keywords:
 - _doserrno global variable
 ms.assetid: 8686c159-3797-4705-a53e-7457869ca6f3
 ms.openlocfilehash: 98b43c908a7ee48a89158c987fe64420f6639a79
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51327791"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62356653"
 ---
 # <a name="setdoserrno"></a>_set_doserrno
 

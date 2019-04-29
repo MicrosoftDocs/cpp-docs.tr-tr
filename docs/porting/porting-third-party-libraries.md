@@ -6,11 +6,11 @@ helpviewer_keywords:
 - vspkg
 ms.assetid: b055ed20-8a9e-45b2-ac2a-e3d94271c009
 ms.openlocfilehash: e1aefc82eb23a8479035dd3372fa9ec24ab8feb1
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58774210"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62337238"
 ---
 # <a name="porting-third-party-libraries"></a>Üçüncü taraf kitaplıklarını taşıma
 

@@ -24,11 +24,11 @@ helpviewer_keywords:
 - cl.exe compiler, debugging options
 - -Z7 compiler option [C++]
 ms.openlocfilehash: e809c7af7465cde98db11eac8628b76d04f7e8b5
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59424085"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62316294"
 ---
 # <a name="z7-zi-zi-debug-information-format"></a>/Z7, /Zi, /ZI (Hata Ayıklama Bilgileri Biçimi)
 
@@ -42,7 +42,7 @@ Programınız ve bu bilgileri nesne dosyalarında veya program veritabanı (PDB)
 
 Derleyici, kod derlenir ve hata ayıklama modunda yerleşik işlevleri ve değişkenler, tür bilgilerini ve satır numarası konumları hata ayıklayıcı tarafından kullanılmak için Sembol adlarını üretir. Bu sembolik hata ayıklama bilgileri, derleyici tarafından üretilen nesne dosyalarında (.obj dosyaları) veya yürütülebilir dosya için ayrı bir PDB dosyası (.pdb dosyası) eklenebilir.  Hata ayıklama bilgi biçimi seçenekleri aşağıdaki bölümlerde açıklanmıştır.
 
-### <a name="none"></a>Yok.
+### <a name="none"></a>None
 
 Hata ayıklama bilgi biçimi seçeneği belirtilmezse, varsayılan olarak, derleyici derleme daha hızlı, bu nedenle, hata ayıklama bilgisi üretir.
 

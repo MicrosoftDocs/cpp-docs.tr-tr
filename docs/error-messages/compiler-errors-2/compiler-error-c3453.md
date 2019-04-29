@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3453
 ms.assetid: dbefdbcf-f697-4239-b7a5-1d99b85e9e7f
 ms.openlocfilehash: 2b3288d02c611bf6785ca1ea7757e2283d889050
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50472728"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62328644"
 ---
 # <a name="compiler-error-c3453"></a>Derleyici Hatası C3453
 

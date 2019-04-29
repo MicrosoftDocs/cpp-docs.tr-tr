@@ -6,11 +6,11 @@ helpviewer_keywords:
 - dialog boxes [MFC], closing
 ms.assetid: 946f5675-c482-46a4-a5dd-34fe138ffae5
 ms.openlocfilehash: 07e4159eccde1fab89d4a5ffadee4e6d11fc20f0
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57302591"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62326852"
 ---
 # <a name="closing-the-dialog-box"></a>İletişim Kutusunu Kapatma
 

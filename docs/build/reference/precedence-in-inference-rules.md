@@ -7,11 +7,11 @@ helpviewer_keywords:
 - precedence, inference rule
 ms.assetid: 69e3dc02-0815-4c3a-b02b-1cb85fceaf24
 ms.openlocfilehash: ca24134fd1829ad3d97ca67b8c30aae3af4109ee
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57823655"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62319687"
 ---
 # <a name="precedence-in-inference-rules"></a>Çıkarsama Kurallarında Öncelik
 

@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3373
 ms.assetid: 6e7586c3-1a15-4773-ad20-f90090a400dc
 ms.openlocfilehash: 2f279d602d5023c2981f49ff088fec49a1c14c76
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50571905"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62329003"
 ---
 # <a name="compiler-error-c3373"></a>Derleyici Hatası C3373
 

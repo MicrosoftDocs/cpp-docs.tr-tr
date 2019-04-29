@@ -14,11 +14,11 @@ helpviewer_keywords:
 - Og compiler option [C++]
 ms.assetid: d10630cc-b9cf-4e97-bde3-8d7ee79e9435
 ms.openlocfilehash: 5e45273b6b609f1bf78504a519c1fb98e2147f76
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57818537"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62320298"
 ---
 # <a name="og-global-optimizations"></a>/Og (Global İyileştirmeler)
 
@@ -94,4 +94,4 @@ Aşağıdaki en iyi duruma getirme altında kullanılabilir **/Og**:
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MSVC derleyici komut satırı sözdizimi](compiler-command-line-syntax.md)
+[MSVC Derleyicisi Komut Satırı Söz Dizimi](compiler-command-line-syntax.md)

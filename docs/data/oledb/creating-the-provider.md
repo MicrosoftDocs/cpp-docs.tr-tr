@@ -5,11 +5,11 @@ helpviewer_keywords:
 - OLE DB providers, creating
 ms.assetid: 2506ba8f-010d-4231-aac1-387432f7b6b9
 ms.openlocfilehash: 6258b5247e4d9d027e0f03bc133dff1a059665bd
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59032356"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62361872"
 ---
 # <a name="creating-the-provider"></a>Sağlayıcı Oluşturma
 

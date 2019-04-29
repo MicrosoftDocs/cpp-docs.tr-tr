@@ -23,11 +23,11 @@ helpviewer_keywords:
 - recalloc_dbg function
 ms.assetid: 43c3e9b2-be6d-4508-9b0f-3220c8a47ca3
 ms.openlocfilehash: e2782492d3338b5b548db0153b6123fb82ff5e72
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50653277"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62357694"
 ---
 # <a name="recallocdbg"></a>_recalloc_dbg
 

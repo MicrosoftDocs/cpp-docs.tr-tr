@@ -7,11 +7,11 @@ helpviewer_keywords:
 - PRJ0023
 ms.assetid: ed55a320-e7c8-489f-886e-825feee0d576
 ms.openlocfilehash: 73ac5e7d4675dd9ec724a8f4c7118fe6abd663a1
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57817562"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62359247"
 ---
 # <a name="project-build-error-prj0023"></a>Proje Derleme Hatası PRJ0023
 

@@ -32,11 +32,11 @@ helpviewer_keywords:
 - cosines, calculating
 ms.assetid: ae90435e-6b68-4a47-a81f-be87d5c08f16
 ms.openlocfilehash: b050fd98a35028b121def8b665fce62ad58ec437
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50519911"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62335366"
 ---
 # <a name="cos-cosf-cosl"></a>cos, cosf, cosl
 
@@ -66,8 +66,8 @@ Kosinüsünü *x*. Varsa *x* büyüktür veya 263'e eşit veya daha az veya buna
 
 |Giriş|SEH özel durumu|Matherr özel durumu|
 |-----------|-------------------|-----------------------|
-|± QNAN, ONRAKİNİ BUL|yok|**_ETKİ ALANI**|
-|INF ±|**GEÇERSİZ**|**_ETKİ ALANI**|
+|± QNAN, ONRAKİNİ BUL|yok|**_DOMAIN**|
+|INF ±|**GEÇERSİZ**|**_DOMAIN**|
 
 ## <a name="remarks"></a>Açıklamalar
 

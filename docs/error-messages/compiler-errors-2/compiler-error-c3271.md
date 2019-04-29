@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3271
 ms.assetid: 16d8bd1d-2e30-4c6a-a07f-0c4f3342fab5
 ms.openlocfilehash: f94ef54408584e40dc406935e36053352ecf38e8
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50651873"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62365656"
 ---
 # <a name="compiler-error-c3271"></a>Derleyici Hatası C3271
 

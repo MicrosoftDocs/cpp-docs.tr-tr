@@ -6,11 +6,11 @@ helpviewer_keywords:
 - record views, ODBC
 ms.assetid: 6a2ce346-8104-4ccd-b06e-ca0859a132fe
 ms.openlocfilehash: d2267c732a2f879fc507f6793ac0a7bd9cda8128
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59030069"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62329809"
 ---
 # <a name="use-database-forms-record-views-with-odbc"></a>ODBC ile Veritabanı Formları (Kayıt Görünümleri) Kullanma
 

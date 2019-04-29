@@ -21,11 +21,11 @@ helpviewer_keywords:
 - MAX_EXT constant
 ms.assetid: 2b5d0e43-1347-45b4-8397-24a8a45c444e
 ms.openlocfilehash: 89609de3fc5584a960480bff83566f5e38c8be1f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50477538"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62342490"
 ---
 # <a name="path-field-limits"></a>Yol Alanı Sınırları
 

@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C4250
 ms.assetid: d47f7249-6b5a-414b-b2d4-56e5d246a782
 ms.openlocfilehash: 8baf3c03c87dc70a80b785d7f81cbee4e1d828f0
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50454866"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62349717"
 ---
 # <a name="compiler-warning-level-2-c4250"></a>Derleyici Uyarısı (Düzey 2) C4250
 

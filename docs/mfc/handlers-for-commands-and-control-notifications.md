@@ -11,11 +11,11 @@ helpviewer_keywords:
 - handlers [MFC], command
 ms.assetid: 20f57f4a-f577-4c09-80a2-43faf32a1c2e
 ms.openlocfilehash: 6c92660c67fa91c27bb094111cebfef57904cdc7
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57296702"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62359000"
 ---
 # <a name="handlers-for-commands-and-control-notifications"></a>Komutlar ve Denetim Bildirimleri için İşleyiciler
 

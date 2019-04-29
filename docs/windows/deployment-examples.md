@@ -7,11 +7,11 @@ helpviewer_keywords:
 - examples [C++], deployment
 ms.assetid: a2904fea-2703-48dc-881b-5bfc1f11b67f
 ms.openlocfilehash: d4beaf4f090a989bb0cf09a5828693498a9a5a42
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58787611"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62345389"
 ---
 # <a name="deployment-examples"></a>Dağıtım Örnekleri
 

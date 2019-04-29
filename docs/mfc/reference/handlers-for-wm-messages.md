@@ -7,11 +7,11 @@ helpviewer_keywords:
 - WM_ messages [MFC]
 ms.assetid: cad81690-90bf-4f77-943f-a435e7563bdd
 ms.openlocfilehash: 2913bd775981eb197fec848aebca227822b45423
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57267153"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62322169"
 ---
 # <a name="handlers-for-wm-messages"></a>WM_ İletileri için İşleyiciler
 

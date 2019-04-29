@@ -3,19 +3,19 @@ title: Ham dize sabit değerine Dönüştür
 ms.date: 11/16/2016
 ms.assetid: fffbfee4-66ee-42ba-aeb9-df07fb702c51
 ms.openlocfilehash: bf492e6796b9d2342b5952abb093bddd5ede114b
-ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51692608"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62349439"
 ---
 # <a name="convert-to-raw-string-literal"></a>Ham dize sabit değerine Dönüştür
 
-**Ne:** herhangi bir dize bir C++ ham dize sabit değeri kapatmanızı sağlar.
+**Ne:** Herhangi bir dize özelliğini sağlar bir C++ ham dize sabit değeri.
 
-**Ne zaman:** atlatmalı karakterler olarak işlenen olmamalıdır atlatmalı karakterler içeren bir dize olması.
+**ne zaman:** Kaçan karakter olarak işlenen olmamalıdır atlatmalı karakterler içeren bir dize var.
 
-**Neden:** çift kaçış karakterleri, ancak bu genellikle karmaşık ve okunamaz dizelere müşteri adayları yüklenemedi.  Ham dize değişmez değerleri kullanarak dizeler okumak çok daha kolay hale getirir.
+**Neden:** Bu genellikle karmaşık ve okunamaz dizeleri müşteri adaylarını haricinde çift kaçış karakterleri yapabilirsiniz.  Ham dize değişmez değerleri kullanarak dizeler okumak çok daha kolay hale getirir.
 
 **Nasıl:**
 

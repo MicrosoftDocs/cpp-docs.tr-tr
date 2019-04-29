@@ -7,11 +7,11 @@ helpviewer_keywords:
 - MB_CUR_MAX constant
 ms.assetid: fab22609-c14d-4c19-991c-bd09ff30e604
 ms.openlocfilehash: 8f89d06f11d5da14389c849814e06b56586b3c69
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57746454"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62342464"
 ---
 # <a name="mbcurmax"></a>MB_CUR_MAX
 

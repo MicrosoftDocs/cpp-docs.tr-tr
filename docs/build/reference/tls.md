@@ -8,11 +8,11 @@ helpviewer_keywords:
 - -TLS dumpbin option
 ms.assetid: 2b3f48f9-cac4-4351-b15c-2833b43bc709
 ms.openlocfilehash: 751c212398f3d309b1d31d204291fe3a0503cf06
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57811868"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62317269"
 ---
 # <a name="tls"></a>/TLS
 

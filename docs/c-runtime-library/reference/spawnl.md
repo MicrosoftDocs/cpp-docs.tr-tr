@@ -21,15 +21,15 @@ helpviewer_keywords:
 - spawnl function
 ms.assetid: ae762de9-e761-4fb7-bb63-b7904ed09a98
 ms.openlocfilehash: ac855c455974679656d9393e37961ccdb30ff8c3
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50434946"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62355308"
 ---
 # <a name="spawnl"></a>spawnl
 
-Bu POSIX işlevi kullanım dışı bırakılmıştır. ISO C++ uyumlu [_spawnl](spawnl-wspawnl.md) yerine.
+Bu POSIX işlevi kullanım dışı bırakılmıştır. ISO kullanın C++ uyumluluğunu [_spawnl](spawnl-wspawnl.md) yerine.
 
 > [!IMPORTANT]
 > Bu API, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için [Evrensel Windows platformu uygulamalarında desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).

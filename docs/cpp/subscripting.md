@@ -10,11 +10,11 @@ helpviewer_keywords:
 - subscript operator
 ms.assetid: eb151281-6733-401d-9787-39ab6754c62c
 ms.openlocfilehash: 376cacc3f70995c271a29b741ad266049da45785
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50527328"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62330558"
 ---
 # <a name="subscripting"></a>Alt Simge Oluşturma
 

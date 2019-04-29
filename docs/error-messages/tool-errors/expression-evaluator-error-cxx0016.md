@@ -8,11 +8,11 @@ helpviewer_keywords:
 - CXX0016
 ms.assetid: af94a2ae-e835-4da6-8d2f-5c879f72eda2
 ms.openlocfilehash: 8e8e8ed3e8b374786414a59bb65e22701b816f65
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50493775"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62359923"
 ---
 # <a name="expression-evaluator-error-cxx0016"></a>İfade Değerlendirici Hatası CXX0016
 
