@@ -10,11 +10,11 @@ helpviewer_keywords:
 - makefiles, preprocessing operators
 ms.assetid: a46e4d39-afdb-43c1-ac3b-025d33e6ebdb
 ms.openlocfilehash: 4101c2fe30bcba44e9b69ed4d6d022845e6e8904
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57823698"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62321585"
 ---
 # <a name="makefile-preprocessing-operators"></a>Derleme Görevleri Dosyası Önişleme İşleçleri
 

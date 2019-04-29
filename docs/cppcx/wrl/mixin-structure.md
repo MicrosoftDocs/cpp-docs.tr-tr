@@ -8,11 +8,11 @@ helpviewer_keywords:
 - MixIn structure
 ms.assetid: 47e2df9b-3a2e-4ae8-8ba3-b1fd3aa73566
 ms.openlocfilehash: 16fd6b46d616df7163a304afa7f32ac3c095d398
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59031082"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62325364"
 ---
 # <a name="mixin-structure"></a>MixIn Yapısı
 

@@ -9,11 +9,11 @@ helpviewer_keywords:
 - classes [MFC], declaring variables based on
 ms.assetid: 5722dc38-c0eb-40bd-93da-67a808140d03
 ms.openlocfilehash: b3b1a168619c1c111db3e71e1a9562d441cc710d
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57302084"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62323014"
 ---
 # <a name="declaring-a-variable-based-on-your-new-control-class"></a>Yeni Denetim Sınıfınıza Dayalı Değişken Bildirme
 
@@ -46,7 +46,7 @@ MFC denetim sınıfı oluşturduktan sonra bunu temel alan bir değişken bildir
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [İletileri İşlevlere Eşleme](../../mfc/reference/mapping-messages-to-functions.md)<br/>
-[Kod sihirbazlarıyla işlevsellik ekleme](../../ide/adding-functionality-with-code-wizards-cpp.md)<br/>
+[Kod Sihirbazlarıyla İşlevsellik Ekleme](../../ide/adding-functionality-with-code-wizards-cpp.md)<br/>
 [Sınıf ekleme](../../ide/adding-a-class-visual-cpp.md)<br/>
 [Üye işlevi ekleme](../../ide/adding-a-member-function-visual-cpp.md)<br/>
 [Üye değişkeni ekleme](../../ide/adding-a-member-variable-visual-cpp.md)<br/>

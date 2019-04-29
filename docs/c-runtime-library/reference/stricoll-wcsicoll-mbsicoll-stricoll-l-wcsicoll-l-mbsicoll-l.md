@@ -52,11 +52,11 @@ helpviewer_keywords:
 - ftcsicoll function
 ms.assetid: 8ec93016-5a49-49d2-930f-721566661d82
 ms.openlocfilehash: bd2406751fd2855afd02743c98938e530398e7d1
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50579679"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62353670"
 ---
 # <a name="stricoll-wcsicoll-mbsicoll-stricolll-wcsicolll-mbsicolll"></a>_stricoll, _wcsicoll, _mbsicoll, _stricoll_l, _wcsicoll_l, _mbsicoll_l
 

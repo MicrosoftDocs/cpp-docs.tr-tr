@@ -6,11 +6,11 @@ helpviewer_keywords:
 - using message-block filters [Concurrency Runtime]
 ms.assetid: db6b99fb-288d-4477-96dc-b9751772ebb2
 ms.openlocfilehash: 1bfa11953d27dc7e013e715b3f58111f124caeaf
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57284300"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62321948"
 ---
 # <a name="how-to-use-a-message-block-filter"></a>Nasıl yapılır: Bir ileti bloğu filtresini kullanma
 

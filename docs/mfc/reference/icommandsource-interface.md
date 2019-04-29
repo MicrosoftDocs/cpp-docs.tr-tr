@@ -18,11 +18,11 @@ helpviewer_keywords:
 - ICommandSource interface [MFC]
 ms.assetid: a4b1f698-c09f-4ba8-9b13-0e74a0a4967e
 ms.openlocfilehash: eed7abbbb40c532ad596f683b6ed2c98a0cadf9b
-ms.sourcegitcommit: 309dc532f13242854b47759cef846de59bb807f1
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58565616"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62322088"
 ---
 # <a name="icommandsource-interface"></a>ICommandSource arabirimi
 

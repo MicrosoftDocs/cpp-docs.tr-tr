@@ -20,11 +20,11 @@ helpviewer_keywords:
 - local_unwind2 function
 ms.assetid: 44f1fa82-e01e-490f-a6e6-18fc6811c28c
 ms.openlocfilehash: c62763ecbdd2c05e8cd7b6733ec1df4254362527
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57744003"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62342841"
 ---
 # <a name="localunwind2"></a>_local_unwind2
 

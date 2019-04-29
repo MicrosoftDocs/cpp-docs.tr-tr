@@ -19,11 +19,11 @@ helpviewer_keywords:
 - std::reference_wrapper [C++], get
 ms.assetid: 90b8ed62-e6f1-44ed-acc7-9619bd58865a
 ms.openlocfilehash: baf38dd637e31f6fabdf869a242f8f18e2812717
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51525242"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62369596"
 ---
 # <a name="referencewrapper-class"></a>reference_wrapper Sınıfı
 
@@ -70,7 +70,7 @@ Yardımcı işlevleri [std::ref](functional-functions.md#ref) ve [std::cref](fun
 |Tür adı|Açıklama|
 |-|-|
 |[result_type](#result_type)|Sarmalanan başvuru zayıf sonuç türü.|
-|[Türü](#type)|Sarmalanan bir başvuru türü.|
+|[type](#type)|Sarmalanan bir başvuru türü.|
 
 ### <a name="member-functions"></a>Üye işlevleri
 

@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2660
 ms.assetid: 2e01a1db-4f00-4df6-a04d-cb6f70a6922b
 ms.openlocfilehash: 3f236f18faa92df660ed677df293373fe9f0800c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50626700"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62360378"
 ---
 # <a name="compiler-error-c2660"></a>Derleyici Hatası C2660
 

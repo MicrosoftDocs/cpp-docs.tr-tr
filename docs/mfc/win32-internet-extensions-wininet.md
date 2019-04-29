@@ -8,11 +8,11 @@ helpviewer_keywords:
 - WinInet classes [MFC], about WinInet classes
 ms.assetid: f8c80f0b-ce14-4f0d-a3cf-4f7d8c5cca59
 ms.openlocfilehash: 64e699753a3cf266f1162df848afab6ab0b3904f
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57285899"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62326579"
 ---
 # <a name="win32-internet-extensions-wininet"></a>Win32 Internet Uzantıları (WinInet)
 

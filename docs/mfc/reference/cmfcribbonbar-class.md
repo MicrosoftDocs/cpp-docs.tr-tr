@@ -189,11 +189,11 @@ helpviewer_keywords:
 - CMFCRibbonBar [MFC], TranslateChar
 ms.assetid: a65d06fa-1a28-4cc0-8971-bc9d7c9198fe
 ms.openlocfilehash: 3656b6a135757a4658f2ef08b80a54efffe89012
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57288421"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62351988"
 ---
 # <a name="cmfcribbonbar-class"></a>CMFCRibbonBar sınıfı
 

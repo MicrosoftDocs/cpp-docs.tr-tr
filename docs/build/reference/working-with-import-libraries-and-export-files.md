@@ -9,11 +9,11 @@ helpviewer_keywords:
 - import libraries, creating
 ms.assetid: d8175596-9773-4c2f-959d-b05b065a5161
 ms.openlocfilehash: 6f6f2d5c48c63ba6d8a8a7f67a98b949b32a8afa
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57810120"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62316528"
 ---
 # <a name="working-with-import-libraries-and-export-files"></a>İçeri Aktarma Kitaplıkları ve Dışarı Aktarma Dosyalarıyla Çalışma
 

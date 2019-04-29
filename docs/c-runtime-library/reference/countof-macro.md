@@ -21,11 +21,11 @@ helpviewer_keywords:
 - _countof macro
 ms.assetid: 86198767-f7e5-4beb-898d-3cbbf60350a3
 ms.openlocfilehash: 60b4350d6cf14a545de67de0bdaee70ee2099006
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50536142"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62335353"
 ---
 # <a name="countof-macro"></a>_countof Makrosu
 
@@ -50,7 +50,7 @@ Bir dizinin adı.
 
 **_countof** işlev benzeri önişlemci makrosu uygulanır. C++ statik olarak bildirilen bir dizi yerine bir işaretçi geçirilirse, derleme zamanında algılamak için ek şablon makineler vardır.
 
-Emin *dizi* aslında bir dizi, bir işaretçi. C'de, **_countof** , hatalı sonuçlar üreten *dizi* gösteren bir işaretçidir. C++ ' ta **_countof** derlemeniz başarısız *dizi* gösteren bir işaretçidir.  Bir dizi bir işleve parametre olarak geçen *decays işaretçi*, yani, işlev içinde kullanamazsınız **_countof** dizi kapsamını belirlemek için.
+Emin *dizi* aslında bir dizi, bir işaretçi. C'de, **_countof** , hatalı sonuçlar üreten *dizi* gösteren bir işaretçidir. İçinde C++, **_countof** derlemeniz başarısız *dizi* gösteren bir işaretçidir.  Bir dizi bir işleve parametre olarak geçen *decays işaretçi*, yani, işlev içinde kullanamazsınız **_countof** dizi kapsamını belirlemek için.
 
 ## <a name="requirements"></a>Gereksinimler
 

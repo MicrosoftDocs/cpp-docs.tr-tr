@@ -10,11 +10,11 @@ helpviewer_keywords:
 - -Zo compiler option [C++]
 ms.assetid: eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f
 ms.openlocfilehash: 2fb64b0cc39d5b7ff0c96d3eae47197c455526f5
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57809944"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62315358"
 ---
 # <a name="zo-enhance-optimized-debugging"></a>/Zo (En İyi Duruma Getirilmiş Hata Ayıklamayı İyileştirme)
 

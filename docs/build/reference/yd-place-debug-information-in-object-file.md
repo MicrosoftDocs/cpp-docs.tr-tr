@@ -10,11 +10,11 @@ helpviewer_keywords:
 - Yd compiler option [C++]
 ms.assetid: c5a699fe-65ce-461e-964c-7f5eb2a8320a
 ms.openlocfilehash: e6719226d28088d10da6c4f0e6caf3bdb78bea27
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57820162"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62316177"
 ---
 # <a name="yd-place-debug-information-in-object-file"></a>/Yd (Hata Ayıklama Bilgilerini Nesne Dosyasına Yerleştir)
 
@@ -83,5 +83,5 @@ Varsa, önceden derlenmiş üst bilgi ile derlenmemiş **/z7**, onu kullanarak s
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MSVC derleyici seçenekleri](compiler-options.md)<br/>
-[MSVC derleyici komut satırı sözdizimi](compiler-command-line-syntax.md)
+[MSVC Derleyicisi Seçenekleri](compiler-options.md)<br/>
+[MSVC Derleyicisi Komut Satırı Söz Dizimi](compiler-command-line-syntax.md)

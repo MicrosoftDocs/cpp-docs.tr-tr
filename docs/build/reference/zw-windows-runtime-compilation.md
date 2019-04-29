@@ -12,11 +12,11 @@ helpviewer_keywords:
 - Windows Runtime compiler option
 ms.assetid: 0fe362b0-9526-498b-96e0-00d7a965a248
 ms.openlocfilehash: 73295866004fd506fd5f06ff25c048d14b821016
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59424046"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62315319"
 ---
 # <a name="zw-windows-runtime-compilation"></a>/ZW (Windows Çalışma Zamanı Derlemesi)
 

@@ -9,11 +9,11 @@ helpviewer_keywords:
 - remarks C++ XML tag
 ms.assetid: c820083b-3192-40ab-9ec8-1472c55b4247
 ms.openlocfilehash: 0d0c63d55de80f498498a6873dacb5e83fc956b7
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57823973"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62319167"
 ---
 # <a name="ltremarksgt"></a>&lt;Açıklamalar&gt;
 

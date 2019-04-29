@@ -26,11 +26,11 @@ helpviewer_keywords:
 - _get_daylight function
 ms.assetid: f85a6ba3-e187-4ca7-aed7-ffc694c8ac4c
 ms.openlocfilehash: 03c3386e59379f460d3c07dc310153d990c02b05
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50444648"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62332320"
 ---
 # <a name="getdaylight"></a>_get_daylight
 

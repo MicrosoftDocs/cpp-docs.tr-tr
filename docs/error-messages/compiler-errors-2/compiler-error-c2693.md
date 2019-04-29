@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2693
 ms.assetid: b7364ca8-b6be-48c0-97d6-6029787fb171
 ms.openlocfilehash: 42a7a944e76f549cf718a54c0def0112c5dba624
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50603440"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62367635"
 ---
 # <a name="compiler-error-c2693"></a>Derleyici Hatası C2693
 

@@ -10,11 +10,11 @@ helpviewer_keywords:
 - NMake property page
 ms.assetid: bd20cb52-9f1d-4240-b4fc-4f43205ac94b
 ms.openlocfilehash: c0dbe537635fe6698f814f3d8456f0caa9c8c796
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57823599"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62320610"
 ---
 # <a name="nmake-property-page"></a>NMake Özellik Sayfaları
 

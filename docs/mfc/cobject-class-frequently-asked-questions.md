@@ -7,11 +7,11 @@ helpviewer_keywords:
 - CObject class [MFC], FAQ
 ms.assetid: 809a8b99-a2f8-4e16-8b4b-023c94f4125c
 ms.openlocfilehash: 6c8d6e46346599d832a921345ef208d76b1d4c14
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57276929"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62326787"
 ---
 # <a name="cobject-class-frequently-asked-questions"></a>CObject sınıfı: Sıkça Sorulan Sorular
 

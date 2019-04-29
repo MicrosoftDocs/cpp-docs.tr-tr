@@ -7,11 +7,11 @@ helpviewer_keywords:
 - pair class
 ms.assetid: 539d3d67-80a2-4170-b347-783495d42109
 ms.openlocfilehash: 2b7f2b736d24961376db4317d6d53e06153283c2
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50443244"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62370651"
 ---
 # <a name="pair-structure"></a>pair Yapısı
 

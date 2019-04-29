@@ -7,11 +7,11 @@ helpviewer_keywords:
 - rules, inference
 ms.assetid: 38feded6-536d-425d-bf40-fff3173a5506
 ms.openlocfilehash: eab6e9d32940aaf5729ce82c4e8258a3a3132208
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57824088"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62318868"
 ---
 # <a name="search-paths-in-rules"></a>Yolları Kurallarda Ara
 

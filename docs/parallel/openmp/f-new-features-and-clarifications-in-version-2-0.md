@@ -3,11 +3,11 @@ title: F. Yeni özellikler ve açıklamalar sürüm 2.0
 ms.date: 01/22/2019
 ms.assetid: 0d4beb66-f2d5-468c-8cd3-4b00dcbab061
 ms.openlocfilehash: 2e186bbc82f4f43e831dd05cdded2a9e946d1dd2
-ms.sourcegitcommit: 382e247c0f1b4cb7c2dab837b8b6fdff24bff47a
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/28/2019
-ms.locfileid: "55087216"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62362720"
 ---
 # <a name="f-new-features-and-clarifications-in-version-20"></a>F. Yeni özellikler ve açıklamalar sürüm 2.0
 

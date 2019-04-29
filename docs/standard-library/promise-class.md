@@ -21,11 +21,11 @@ helpviewer_keywords:
 - std::promise [C++], set_value_at_thread_exit
 - std::promise [C++], swap
 ms.openlocfilehash: 101c9939f1636d87780aa15aea9459ebb927684d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50592578"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62369962"
 ---
 # <a name="promise-class"></a>promise Sınıfı
 

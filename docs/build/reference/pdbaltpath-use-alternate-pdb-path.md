@@ -11,11 +11,11 @@ helpviewer_keywords:
 - PDB files, path
 ms.assetid: 72e200aa-e2c3-4ad8-b687-25528da1aaaf
 ms.openlocfilehash: 660e39a97b9fed0c5a9228fe011e7c0fa2566e68
-ms.sourcegitcommit: faa42c8a051e746d99dcebe70fd4bbaf3b023ace
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57820721"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62320038"
 ---
 # <a name="pdbaltpath-use-alternate-pdb-path"></a>/PDBALTPATH (Diğer PDB Yolunu Kullan)
 

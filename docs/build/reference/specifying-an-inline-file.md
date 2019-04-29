@@ -7,11 +7,11 @@ helpviewer_keywords:
 - files [C++], inline
 ms.assetid: 393eccfb-3fc9-4bac-a30c-8ac8d221cca3
 ms.openlocfilehash: 7eb123ef3f2115df5c65d266630bded8cb54baae
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57824151"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62318543"
 ---
 # <a name="specifying-an-inline-file"></a>Satır İçi Dosya Belirtme
 

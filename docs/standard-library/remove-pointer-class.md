@@ -8,11 +8,11 @@ helpviewer_keywords:
 - remove_pointer
 ms.assetid: 2cd4e417-32fb-4f53-bd16-4e8a98240832
 ms.openlocfilehash: 6bc735af1c1af292b32b56aae599eef019836254
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50450657"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62368870"
 ---
 # <a name="removepointer-class"></a>remove_pointer Sınıfı
 

@@ -8,11 +8,11 @@ helpviewer_keywords:
 - /validate-charset compiler option
 ms.assetid: 50360fd0-4d32-4a4f-95d0-53d38c12ad4c
 ms.openlocfilehash: 30c818bcb64c2f2ee57c05a4870e7d30afe98cfe
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57810074"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62317087"
 ---
 # <a name="validate-charset-validate-for-compatible-characters"></a>/ Validate-Charset (uyumlu karakterler için Doğrula)
 
@@ -44,8 +44,8 @@ Visual Studio, UTF-8 iç karakter kaynak karakter kümesi ve yürütme karakter 
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MSVC derleyici seçenekleri](compiler-options.md)<br/>
-[MSVC derleyici komut satırı sözdizimi](compiler-command-line-syntax.md)<br/>
+[MSVC Derleyicisi Seçenekleri](compiler-options.md)<br/>
+[MSVC Derleyicisi Komut Satırı Söz Dizimi](compiler-command-line-syntax.md)<br/>
 [/ Execution-Charset (yürütme karakter kümesini Ayarla)](execution-charset-set-execution-character-set.md)<br/>
 [/source-charset (Kaynak Karakter Kümesini Ayarla)](source-charset-set-source-character-set.md)<br/>
 [/utf-8 (Kaynak ve Yürütülebilir karakter kümelerini UTF-8 olarak ayarla)](utf-8-set-source-and-executable-character-sets-to-utf-8.md)

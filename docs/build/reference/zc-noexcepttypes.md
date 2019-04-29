@@ -9,11 +9,11 @@ helpviewer_keywords:
 - -Zc:noexceptTypes
 ms.assetid: 1cbf7e3c-0f82-4f91-84dd-612bcf26d2c6
 ms.openlocfilehash: 28e06f54049d36262134b6be7eadb0e6e5349a45
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57812115"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62315943"
 ---
 # <a name="zcnoexcepttypes-c17-noexcept-rules"></a>/ ZC: noexcepttypes (c ++ 17 noexcept kuralları)
 

@@ -8,11 +8,11 @@ helpviewer_keywords:
 - macros, special characters
 ms.assetid: 92c34ab5-ca6b-4fc0-bcf4-3172eaeda9f0
 ms.openlocfilehash: d915b182d72b4251f416433642cd8b1832b80e08
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57823491"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62318582"
 ---
 # <a name="special-characters-in-a-makefile"></a>Derleme Görevleri Dosyasındaki Özel Karakterler
 

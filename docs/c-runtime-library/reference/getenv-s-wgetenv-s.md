@@ -30,11 +30,11 @@ helpviewer_keywords:
 - tgetenv_s function
 ms.assetid: c3ae1ffe-d4cd-4bae-bcb1-3afa754c613a
 ms.openlocfilehash: eac3c036e2f4f271c7bc2d77c8ae82bec28d3617
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50546536"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62331746"
 ---
 # <a name="getenvs-wgetenvs"></a>getenv_s, _wgetenv_s
 

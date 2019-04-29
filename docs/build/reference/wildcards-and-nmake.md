@@ -6,11 +6,11 @@ helpviewer_keywords:
 - wildcards, expanding
 ms.assetid: 8f5d4b2a-8fa7-46a9-92ac-c8185c99239b
 ms.openlocfilehash: 22d0ac35f51c96dde257e0777c962f5d9d9eff27
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57823464"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62316619"
 ---
 # <a name="wildcards-and-nmake"></a>Joker Karakterler ve NMAKE
 

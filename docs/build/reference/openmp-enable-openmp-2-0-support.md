@@ -9,11 +9,11 @@ helpviewer_keywords:
 - -openmp compiler option [C++]
 ms.assetid: 9082b175-18d3-4378-86a7-c0eb95664e13
 ms.openlocfilehash: caa06d89c590abd2b3a74a5a6b118d6ba4acd910
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59674272"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62320220"
 ---
 # <a name="openmp-enable-openmp-support"></a>/ OpenMP (OpenMP desteğini etkinleştir)
 

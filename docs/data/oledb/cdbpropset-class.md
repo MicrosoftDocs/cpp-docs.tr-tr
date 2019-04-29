@@ -34,11 +34,11 @@ helpviewer_keywords:
 - AddProperty method
 ms.assetid: 54190149-c277-4679-b81a-ef484d4d1c00
 ms.openlocfilehash: b58c0262d361ede37bc3db68784177ec4c29f3a4
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59034254"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62325032"
 ---
 # <a name="cdbpropset-class"></a>CDBPropSet Sınıfı
 

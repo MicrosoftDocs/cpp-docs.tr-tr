@@ -13,11 +13,11 @@ helpviewer_keywords:
 - CSharedFile [MFC], SetHandle
 ms.assetid: 5d000422-9ede-4318-a8c9-f7412b674f39
 ms.openlocfilehash: e86e64c1de232aba0c17a0fdfb3600e480567a57
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57273081"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62324135"
 ---
 # <a name="csharedfile-class"></a>CSharedFile sınıfı
 

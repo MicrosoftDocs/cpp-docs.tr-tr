@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C1060
 ms.assetid: feaf305c-c84c-4160-b974-50e283412849
 ms.openlocfilehash: 876ae7a368d2d1a1ee94a04fc9ecf50d0f4b8d78
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50607073"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62364239"
 ---
 # <a name="fatal-error-c1060"></a>Önemli hata C1060
 
@@ -25,7 +25,7 @@ Derleyicinin yığın alanı yetersiz olduğu
 
    Varsa [/Zm](../../build/reference/zm-specify-precompiled-header-memory-allocation-limit.md) seçeneği zaten ayarlanmışsa, bu kaldırmayı deneyin. Seçeneğinde belirtilen bellek ayırma sınırını çok yüksek olduğu için yığın alanı tüketilebilir. Kaldırırsanız derleyici varsayılan bir sınırı kullanır [/Zm](../../build/reference/zm-specify-precompiled-header-memory-allocation-limit.md) seçeneği.
 
-1. 64-bit bir platform üzerinde derleme yapıyorsanız, 64 bit derleyici araç setini kullanın. Bilgi için [nasıl yapılır: bir 64 Bit Visual C++ araç takımını komut satırında etkinleştirme](../../build/how-to-enable-a-64-bit-visual-cpp-toolset-on-the-command-line.md).
+1. 64-bit bir platform üzerinde derleme yapıyorsanız, 64 bit derleyici araç setini kullanın. Bilgi için [nasıl yapılır: Bir 64 Bit Visual C++ araç takımını komut satırında etkinleştirme](../../build/how-to-enable-a-64-bit-visual-cpp-toolset-on-the-command-line.md).
 
 1. 32 bit Windows üzerinde kullanmayı deneyin [3 GB](https://support.microsoft.com/help/833721/available-switch-options-for-the-windows-xp-and-the-windows-server-200) boot.ini anahtarı.
 

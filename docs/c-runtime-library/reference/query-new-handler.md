@@ -26,11 +26,11 @@ helpviewer_keywords:
 - _query_new_handler function
 ms.assetid: 9a84b5c3-fe33-4c01-83a0-be87dc3ec518
 ms.openlocfilehash: febefbe46d95b7e5c8de026806a20d7eff74e7cc
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50516005"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62357886"
 ---
 # <a name="querynewhandler"></a>_query_new_handler
 
@@ -50,7 +50,7 @@ Tarafından belirlenen geçerli yeni işleyici rutinini adresini döndürür **_
 
 ## <a name="remarks"></a>Açıklamalar
 
-C++ **_query_new_handler** işlev kümesi tarafından C++ geçerli özel durum işleme işlevin adresini döndürür [_set_new_handler](set-new-handler.md) işlevi. **_set_new_handler** denetimi elde etmek için bir özel durum işleme işlevi belirtmek için kullanılan **yeni** işleci başarısız bellek ayrılamadı. Daha fazla bilgi için bkz [yeni ve delete işleçleri](../../cpp/new-and-delete-operators.md) C++ dil başvurusu.
+C++ **_Query_new_handler** işlevi belirlediği geçerli özel durum işleme işlevin adresini döndürür C++ [_set_new_handler](set-new-handler.md) işlevi. **_set_new_handler** denetimi elde etmek için bir özel durum işleme işlevi belirtmek için kullanılan **yeni** işleci başarısız bellek ayrılamadı. Daha fazla bilgi için bkz [yeni ve delete işleçleri](../../cpp/new-and-delete-operators.md) C++ dil başvurusu.
 
 ## <a name="requirements"></a>Gereksinimler
 

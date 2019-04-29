@@ -6,11 +6,11 @@ helpviewer_keywords:
 - dependents, NMAKE
 ms.assetid: bf998e47-da74-48b5-891d-d3d8ce57264b
 ms.openlocfilehash: bc2c430c43f408065234c9df50977003eafd3cb1
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57823574"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62318309"
 ---
 # <a name="search-paths-for-dependents"></a>Bağımlılıklar için Yollar Ara
 

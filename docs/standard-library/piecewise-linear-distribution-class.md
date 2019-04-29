@@ -27,11 +27,11 @@ helpviewer_keywords:
 - std::piecewise_linear_distribution [C++], param_type
 ms.assetid: cd141152-7163-4754-8f98-c6d6500005e0
 ms.openlocfilehash: 327da9c6793e4e74f099bdc313ce34720561bbd0
-ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51693470"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62370379"
 ---
 # <a name="piecewiselineardistribution-class"></a>piecewise_linear_distribution Sınıfı
 

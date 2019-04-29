@@ -11,11 +11,11 @@ helpviewer_keywords:
 - command files, NMAKE
 ms.assetid: 0421104d-8b7b-4bf3-86c1-928d9b7c1a8c
 ms.openlocfilehash: dac5e9c1676278d150dd9802697a8ae8959a40e5
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57824034"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62318531"
 ---
 # <a name="running-nmake"></a>NMAKE Çalıştırma
 

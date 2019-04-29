@@ -12,11 +12,11 @@ helpviewer_keywords:
 - multiplication operator [C++], multiplicative operators
 ms.assetid: 495471c9-319b-4eb4-bd97-039a025fd3a9
 ms.openlocfilehash: fdf208ffba3e3d63d8672b84af8cf6168b34dc3f
-ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56147758"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62326423"
 ---
 # <a name="c-multiplicative-operators"></a>C Çarpma İşleçleri
 

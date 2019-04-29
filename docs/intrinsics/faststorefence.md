@@ -9,11 +9,11 @@ helpviewer_keywords:
 - sfence instruction
 ms.assetid: 6c6eb973-3cf0-4306-b3af-cfde9b0210a5
 ms.openlocfilehash: a0c8027f443a475b03521920e2e036e7ed4eaafb
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59036701"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62349010"
 ---
 # <a name="faststorefence"></a>__faststorefence
 

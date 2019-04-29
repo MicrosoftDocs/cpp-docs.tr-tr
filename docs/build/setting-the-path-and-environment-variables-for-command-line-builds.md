@@ -19,11 +19,11 @@ helpviewer_keywords:
 - environment variables [C++], CL compiler
 ms.assetid: 99389528-deb5-43b9-b99a-03c8773ebaf4
 ms.openlocfilehash: fed3360294bec724af09b87e5abd7c6bb22fa285
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57811075"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62315397"
 ---
 # <a name="set-the-path-and-environment-variables-for-command-line-builds"></a>Komut satırı derlemeleri için yolu ve ortam değişkenlerini ayarlama
 
@@ -38,8 +38,8 @@ Bir geliştirici komut istemi kısayolunun tarafından ayarlanan hangi ortam de�
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Komut satırından MSVC araç takımı kullanın](building-on-the-command-line.md)<br/>
+[Komut satırından MSVC araç takımını kullanma](building-on-the-command-line.md)<br/>
 [MSVC bağlayıcı başvurusu](reference/linking.md)<br/>
-[MSVC bağlayıcı seçenekleri](reference/linker-options.md)<br/>
-[MSVC derleyici başvurusu](reference/compiling-a-c-cpp-program.md)<br/>
-[MSVC derleyici seçenekleri](reference/compiler-options.md)
+[MSVC Bağlayıcı Seçenekleri](reference/linker-options.md)<br/>
+[MSVC Derleyicisi Başvurusu](reference/compiling-a-c-cpp-program.md)<br/>
+[MSVC Derleyicisi Seçenekleri](reference/compiler-options.md)

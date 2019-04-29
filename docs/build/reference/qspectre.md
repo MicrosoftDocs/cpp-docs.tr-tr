@@ -6,11 +6,11 @@ f1_keywords:
 helpviewer_keywords:
 - /Qspectre
 ms.openlocfilehash: 42adff6564dc1c2ef47abffe9f9e6e630279ea7d
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57812466"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62319193"
 ---
 # <a name="qspectre"></a>/ Qspectre
 
@@ -55,8 +55,8 @@ Performans etkisini **/qspectre** birkaç çok büyük kod tabanlarında göz ar
 **/Qspectre** derleyici seçeneği Spectre risk azaltma işlemleri sağlamak için oluşturulan çalışma zamanı kitaplıklarının sürümlerini örtük olarak bağlanan kod oluşturur. Bu kitaplıklar, Visual Studio Yükleyicisi'ni kullanarak yüklü olması gereken isteğe bağlı bileşenleri şunlardır:
 
 - VC ++ 2017 sürüm *version_numbers* Spectre için kitaplıklar \[(x86 ve x64) | (ARM) | (ARM64)]
-- İçin Visual C++ ATL \[(x86/x64) | ARM | ARM64] Spectre azaltmaları ile
-- İçin Visual C++ MFC \[x86/x64 | ARM | ARM64] Spectre azaltmaları ile
+- Görsel C++ için ATL \[(x86/x64) | ARM | ARM64] Spectre azaltmaları ile
+- Görsel C++ için MFC \[x86/x64 | ARM | ARM64] Spectre azaltmaları ile
 
 Kodunuzu kullanarak derleme yaparsanız **/qspectre** ve bu kitaplıklar yüklüyse, yapı sistemi raporları **MSB8038 Uyarı: Spectre riskini azaltma etkinleştirildi, ancak Spectre azaltılabilir kitaplıklar bulunamadı**. MFC veya ATL kodunuzu derlemek başarısız olur ve bağlayıcı gibi bir hata bildiriyor **LNK1104 önemli hatası: 'oldnames.lib' dosyası açılamıyor**, bu eksik kitaplıklar neden olabilir.
 
@@ -79,5 +79,5 @@ Daha fazla ayrıntı için lütfen resmi bakın [kurgusal yürütme yan kanal g�
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [/Q Seçenekler (Düşük Düzey İşlemler)](q-options-low-level-operations.md)<br/>
-[MSVC derleyici seçenekleri](compiler-options.md)<br/>
-[MSVC derleyici komut satırı sözdizimi](compiler-command-line-syntax.md)
+[MSVC Derleyicisi Seçenekleri](compiler-options.md)<br/>
+[MSVC Derleyicisi Komut Satırı Söz Dizimi](compiler-command-line-syntax.md)

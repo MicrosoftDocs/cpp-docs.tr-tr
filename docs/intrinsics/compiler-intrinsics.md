@@ -8,11 +8,11 @@ helpviewer_keywords:
 - cl.exe compiler, intrinsics
 ms.assetid: 48bb9929-7d78-4fd8-a092-ae3c9f971858
 ms.openlocfilehash: 9a014e870d731d7e7d443c3bfefd66884aa50d5d
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59029284"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62349114"
 ---
 # <a name="compiler-intrinsics"></a>Derleyici İç Bilgileri
 

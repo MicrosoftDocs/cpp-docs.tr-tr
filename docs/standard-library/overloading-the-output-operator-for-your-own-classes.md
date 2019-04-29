@@ -6,11 +6,11 @@ helpviewer_keywords:
 - operator <<, overloading for your own classes
 ms.assetid: ad1d2c49-d84e-48a8-9c09-121f28b10bf0
 ms.openlocfilehash: 290491f7afb22873d60abb6662b470d8e7abefc1
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50486937"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62370690"
 ---
 # <a name="overloading-the-ltlt-operator-for-your-own-classes"></a>Aşırı yükleme &lt; &lt; kendi işleci
 

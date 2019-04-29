@@ -11,11 +11,11 @@ helpviewer_keywords:
 - CWindowDC [MFC], m_hWnd
 ms.assetid: 876a3641-4cde-471c-b0d1-fe58b32af79c
 ms.openlocfilehash: 55a9ccfc496c95c9e7410cbd5645135ee555ff26
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57289357"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62323391"
 ---
 # <a name="cwindowdc-class"></a>CWindowDC sınıfı
 

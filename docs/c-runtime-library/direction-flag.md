@@ -7,11 +7,11 @@ helpviewer_keywords:
 - direction flag
 ms.assetid: 0836b4af-dbbb-4ab8-a4b2-156f2e2099e2
 ms.openlocfilehash: ead32fa7f09e9dd98130855ecd87ba3b3d454ef5
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57740161"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62344427"
 ---
 # <a name="direction-flag"></a>Yön Bayrağı
 

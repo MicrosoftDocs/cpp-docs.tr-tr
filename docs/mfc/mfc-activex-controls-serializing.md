@@ -16,11 +16,11 @@ helpviewer_keywords:
 - wVerMajor global constant
 ms.assetid: 9d57c290-dd8c-4853-b552-6f17f15ebedd
 ms.openlocfilehash: 0c1c845640be2dfaa6aeda2defb478afb650b83b
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57303358"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62324746"
 ---
 # <a name="mfc-activex-controls-serializing"></a>MFC ActiveX denetimleri: Seri hale getirme
 

@@ -9,11 +9,11 @@ helpviewer_keywords:
 - <seealso> C++ XML tag
 ms.assetid: cb33d100-9c50-4485-8d0c-573429eff155
 ms.openlocfilehash: ea399e98723a265ef3c17f2282b7c81299b4abc5
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57823691"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62318842"
 ---
 # <a name="ltseealsogt"></a>&lt;SeeAlso&gt;
 

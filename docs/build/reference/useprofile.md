@@ -4,11 +4,11 @@ ms.date: 03/14/2018
 f1_keywords:
 - USEPROFILE
 ms.openlocfilehash: 7bc0033ae5ef512cbd2e2063c5cb9bd9b061c180
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57816535"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62317139"
 ---
 # <a name="useprofile-run-pgo-in-thread-safe-mode"></a>/ USEPROFILE (iş parçacığı güvenli modda PGO çalıştırın)
 

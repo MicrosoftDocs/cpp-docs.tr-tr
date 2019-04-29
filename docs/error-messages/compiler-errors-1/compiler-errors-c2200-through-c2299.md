@@ -1,6 +1,6 @@
 ---
-title: Derleyici hataları C2200 ile c2299 arasındaki
-ms.date: 11/17/2017
+title: C2200 ile C2299 arasındaki derleyici hataları
+ms.date: 04/21/2019
 f1_keywords:
 - C2202
 - C2209
@@ -52,14 +52,14 @@ helpviewer_keywords:
 - C2291
 - C2294
 ms.assetid: 9b36d11b-9510-4390-96f1-0c9235124d14
-ms.openlocfilehash: b41887e941796e7f8f2f919ed76fbaaa624227ab
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
-ms.translationtype: MT
+ms.openlocfilehash: 5af97ab46a97d3019abcc937cc0a74c5f865a9ff
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50432532"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62360521"
 ---
-# <a name="compiler-errors-c2200-through-c2299"></a>Derleyici hataları C2200 ile c2299 arasındaki
+# <a name="compiler-errors-c2200-through-c2299"></a>C2200 ile C2299 arasındaki derleyici hataları
 
 Belgelerin bu bölümdeki makaleleri bir alt kümesini derleyici tarafından oluşturulan hata iletilerini açıklayın.
 
@@ -169,3 +169,8 @@ Belgelerin bu bölümdeki makaleleri bir alt kümesini derleyici tarafından olu
 |[Derleyici Hatası C2297](compiler-error-c2297.md)|'*işleci*': geçersiz, sağ işlenen türü var. '*türü*'|
 |[Derleyici Hatası C2298](compiler-error-c2298.md)|üye işlevi işaretçisi bağlı çağrısı eksik|
 |[Derleyici Hatası C2299](compiler-error-c2299.md)|'*işlevi*': davranış değişikliği: bir açık özelleştirme bir kopya Oluşturucusu veya kopya atama işleci olamaz|
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[C /C++ derleyicisi ve derleme araçları hataları ve Uyarıları](../compiler-errors-1/c-cpp-build-errors.md) \
+[C3999 arasındaki derleyici hataları C2000-](../compiler-errors-1/compiler-errors-c2000-c3999.md)

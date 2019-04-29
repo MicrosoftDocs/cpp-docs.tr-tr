@@ -9,11 +9,11 @@ helpviewer_keywords:
 - omp pragma
 ms.assetid: 652414c5-78ed-4b7f-8283-1a9fe4c5e78d
 ms.openlocfilehash: 8dda3b8df18772a328e56fb7347a746325c4cdec
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59032030"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62326397"
 ---
 # <a name="omp"></a>omp
 Bir veya daha fazla OpenMP yönergelerini, isteğe bağlı bir yönerge yan tümceleri ile birlikte alır.

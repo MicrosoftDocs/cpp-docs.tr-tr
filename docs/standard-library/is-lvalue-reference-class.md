@@ -8,11 +8,11 @@ helpviewer_keywords:
 - is_lvalue_reference
 ms.assetid: 7f11896b-935c-4de1-9c87-9d0127f904e2
 ms.openlocfilehash: e032522e790b7027886ba1a6199ed7fdf86c0936
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50460183"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62351949"
 ---
 # <a name="islvaluereference-class"></a>is_lvalue_reference Sınıfı
 
@@ -43,4 +43,4 @@ Bu tür koşulu örneği true tutan türü *Ty* başvurudur bir nesneye veya yan
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [<type_traits>](../standard-library/type-traits.md)<br/>
-[Lvalues ve Rvalues](../cpp/lvalues-and-rvalues-visual-cpp.md)<br/>
+[Lvalue ve Rvalue’lar](../cpp/lvalues-and-rvalues-visual-cpp.md)<br/>

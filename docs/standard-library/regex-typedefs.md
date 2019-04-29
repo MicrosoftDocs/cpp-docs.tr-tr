@@ -22,18 +22,18 @@ f1_keywords:
 - regex/std::wssub_match
 ms.assetid: e6a69067-106c-4a24-9e08-7c867a3a2260
 ms.openlocfilehash: 33217388ff7e0826efcee413b39adaeba569399a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50578197"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62369143"
 ---
 # <a name="ltregexgt-typedefs"></a>&lt;Regex&gt; tür tanımları
 
 ||||
 |-|-|-|
 |[cmatch](#cmatch)|[cregex_iterator](#cregex_iterator)|[cregex_token_iterator](#cregex_token_iterator)|
-|[csub_match](#csub_match)|[Normal ifade](#regex)|[smatch](#smatch)|
+|[csub_match](#csub_match)|[regex](#regex)|[smatch](#smatch)|
 |[sregex_iterator](#sregex_iterator)|[sregex_token_iterator](#sregex_token_iterator)|[ssub_match](#ssub_match)|
 |[wcmatch](#wcmatch)|[wcregex_iterator](#wcregex_iterator)|[wcregex_token_iterator](#wcregex_token_iterator)|
 |[wcsub_match](#wcsub_match)|[wchar_t](#wregex)|[wsmatch](#wsmatch)|

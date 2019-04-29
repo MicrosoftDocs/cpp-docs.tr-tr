@@ -40,11 +40,11 @@ helpviewer_keywords:
 - _isdigit_l function
 ms.assetid: 350b0093-843a-47b0-954e-c1776e8a3853
 ms.openlocfilehash: 7e85028d43858543f8c9b9d4c5cf1b17664f8331
-ms.sourcegitcommit: e06648107065f3dea35f40c1ae5999391087b80b
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57209736"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62331629"
 ---
 # <a name="isdigit-iswdigit-isdigitl-iswdigitl"></a>isdigit, iswdigit, _isdigit_l, _iswdigit_l
 

@@ -30,17 +30,17 @@ helpviewer_keywords:
 - compl method
 ms.assetid: e811a74a-45ba-4c00-b206-2f2321b8689a
 ms.openlocfilehash: dab8ac23be8b66ca84c57514c6c04e94dddebaae
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57813896"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62321195"
 ---
 # <a name="microsoft-extensions-to-c-and-c"></a>C ve C++ için Microsoft uzantıları
 
 Visual C++, ANSI C ve ANSI C++ standartları şu şekilde genişletir.
 
-## <a name="keywords"></a>Anahtar Sözcükler
+## <a name="keywords"></a>anahtar sözcükler
 
 Bazı anahtar sözcükler eklenir. Listede [anahtar sözcükleri](../../cpp/keywords-cpp.md), iki önde gelen altçizgilere sahip anahtar sözcükleri Visual C++ uzantılarıdır.
 
@@ -301,5 +301,5 @@ int main()
 ## <a name="see-also"></a>Ayrıca bkz.
 
 - [/Za, /Ze (Dil Uzantılarını Devre Dışı Bırak)](za-ze-disable-language-extensions.md)
-- [MSVC derleyici seçenekleri](compiler-options.md)
-- [MSVC derleyici komut satırı sözdizimi](compiler-command-line-syntax.md)
+- [MSVC Derleyicisi Seçenekleri](compiler-options.md)
+- [MSVC Derleyicisi Komut Satırı Söz Dizimi](compiler-command-line-syntax.md)

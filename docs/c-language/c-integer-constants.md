@@ -5,11 +5,11 @@ helpviewer_keywords:
 - integer constants
 ms.assetid: fcf6b83c-2038-49ec-91ca-3d5ca1f83037
 ms.openlocfilehash: 4a3d6b945f3611b8e51029c0a5ec5dc77b2cbaa0
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50620226"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62326895"
 ---
 # <a name="c-integer-constants"></a>C Tamsayı Sabitleri
 
@@ -44,7 +44,7 @@ Bir *tamsayı sabiti* (10 tabanında) ondalık, sekizlik (Temel 8) ya da temsil 
 &nbsp;&nbsp;&nbsp;&nbsp;**0 1 2 3 4 5 6 7**<br/>
 
 *onaltılık basamak*: biri<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**0 1, 2, 3, 4, 5, 6, 7, 8, 9**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**0 1 2 3 4 5 6 7 8 9**<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**b c d e f**<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**B C D E F**<br/>
 

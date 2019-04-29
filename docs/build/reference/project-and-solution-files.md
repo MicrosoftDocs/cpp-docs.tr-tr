@@ -12,11 +12,11 @@ helpviewer_keywords:
 - file types [C++], project files
 ms.assetid: 5823b954-36cf-42d3-8fd5-25bab3ef63d9
 ms.openlocfilehash: b4b82aa3837558b2c325fb6cba6819422c0db7ff
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57824082"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62319583"
 ---
 # <a name="project-and-solution-files"></a>Proje ve Çözüm Dosyaları
 
@@ -31,7 +31,7 @@ Visual Studio'da bir proje oluşturduğunuzda aşağıdaki dosyalar oluşturulur
 |*PROJNAME*.sdf|*PROJNAME*|Çözüm Gezgini'nde görüntülenmez.|*Gözatma veritabanı* dosya. Göz atma ve gezinti özellikleri gibi destekleyen **Goto tanımı**, **tüm başvuruları Bul**, ve **sınıf görünümü**. Üst bilgi dosyaları ayrıştırma tarafından oluşturulur.|
 |*PROJNAME*. vcxproj.filters|*PROJNAME*|Çözüm Gezgini'nde görüntülenmez.|*Filtreleri* dosya. Bu, çözüme bir dosyasının nereye yerleştirileceğini belirtir. Örneğin, bir .h dosyası yerleştirin **üst bilgi dosyaları** düğümü.|
 |*PROJNAME*. vcxproj.user|*PROJNAME*|Çözüm Gezgini'nde görüntülenmez.|*Geçiş kullanıcı* dosya. Bir projeyi Visual Studio 2008'den geçirildikten sonra bu dosya tüm .vsprops dosyasından dönüştürülen bilgileri içerir.|
-|*PROJNAME*.idl|*PROJNAME*|Kaynak|(Projeye özgü) Bir denetimi tür kitaplığına arabirimi tanım dili (IDL) kaynak kodunu içerir. Bu dosya, bir tür kitaplığı oluşturmak için Visual C++ tarafından kullanılır. Oluşturulan kitaplığı diğer Otomasyon istemcileri için Denetim arabirimini kullanıma sunar. Daha fazla bilgi için [arabirim tanımı (IDL) dosya](/windows/desktop/Rpc/the-interface-definition-language-idl-file) Windows SDK.|
+|*PROJNAME*.idl|*PROJNAME*|Source|(Projeye özgü) Bir denetimi tür kitaplığına arabirimi tanım dili (IDL) kaynak kodunu içerir. Bu dosya, bir tür kitaplığı oluşturmak için Visual C++ tarafından kullanılır. Oluşturulan kitaplığı diğer Otomasyon istemcileri için Denetim arabirimini kullanıma sunar. Daha fazla bilgi için [arabirim tanımı (IDL) dosya](/windows/desktop/Rpc/the-interface-definition-language-idl-file) Windows SDK.|
 |Readme.txt|*PROJNAME*|Project|*Beni oku* dosya. Uygulama Sihirbazı tarafından oluşturulan ve bir proje dosyalarında açıklanır.|
 
 ## <a name="see-also"></a>Ayrıca bkz.

@@ -7,11 +7,11 @@ helpviewer_keywords:
 - multiple description blocks
 ms.assetid: 8618dcd9-c11d-4562-91a7-0c904ed438a8
 ms.openlocfilehash: 03a6e1d0be44e12bb76767b7334ab647a6054b6e
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57824018"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62317386"
 ---
 # <a name="targets-in-multiple-description-blocks"></a>Birden Çok Açıklama Bloğundaki Hedefler
 

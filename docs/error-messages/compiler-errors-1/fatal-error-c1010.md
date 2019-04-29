@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C1010
 ms.assetid: dfd035f1-a7a2-40bc-bc92-dc4d7f456767
 ms.openlocfilehash: 6974f0d82653203973be50b5ea709bd9487a215f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50575818"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62363979"
 ---
 # <a name="fatal-error-c1010"></a>Önemli hata C1010
 

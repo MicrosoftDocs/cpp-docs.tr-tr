@@ -4,12 +4,12 @@ ms.date: 05/11/2018
 helpviewer_keywords:
 - deploying the CRT [C++]
 - application CRT deployment [C++]
-ms.openlocfilehash: 90f859eb0e9134c997e7eecad118cfb8ec00b782
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
-ms.translationtype: MT
+ms.openlocfilehash: 7952d2ec6e8f502b0edf776811a492c67f495cce
+ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58787744"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "64344181"
 ---
 # <a name="universal-crt-deployment"></a>Evrensel CRT dağıtım
 
@@ -23,7 +23,9 @@ Evrensel CRT merkezi olarak yüklemek için tercih edilen yöntem, Microsoft Win
 
 Tüm Microsoft Windows bilgisayarlarda Windows Update kullanarak düzenli olarak güncelleştirmeleri yüklemek ve bazıları tüm önerilen güncelleştirmeleri yüklenmez. Visual Studio 2015 ve sonraki C++ araç takımları, bu makinelerde kullanılarak oluşturulan uygulamaların kullanımını desteklemek için evrensel CRT yeniden dağıtılabilir paketlerini çevrimdışı dağıtım için kullanılabilen vardır. Bu yeniden dağıtılabilir dosyaları, yukarıdaki KB bağlantılardan birini yüklenebilir. Evrensel CRT yeniden dağıtılabilir dosyaları, makine için geçerli hizmet paketi güncelleştirildi gerektiğini lütfen unutmayın. Bu nedenle, örneğin, Windows 7 için yeniden dağıtılabilir yalnızca Windows 7 SP1 değil Windows 7 RTM yüklenir.
 
-Evrensel CRT temel bir bağımlılık olan C++ kitaplıklarının olduğundan, Visual C++ yeniden dağıtılabilir (VCRedist) bir sürüm zaten yüklü, C++ Kitaplık karşılamak yeterli olmayan makinelere Evrensel CRT temel sürümünü yükler. bağımlılıkları. Uygulamanızı daha yeni bir evrensel CRT sürümüne bağlı ise, açıkça daha yeni bir sürümü yüklemeniz gerekir. Önce yüklenmesi gereken olası çok önlemek için VCRedist yeniden yüklemek en iyisidir.
+Evrensel CRT temel bir bağımlılığı olduğundan C++ kitaplıkları, görsel C++ yeniden dağıtılabilir (VCRedist) ilk Evrensel CRT (sürüm 10.0.10240) sürümü zaten yüklü bir sürüme sahip değilseniz makinelerde yükler. Bu sürüm karşılamak üzere yeterli C++ kitaplık bağımlılıkları. Uygulamanızı Evrensel CRT daha yeni bir sürümüne bağlıdır, makinenizi tam olarak güncel duruma getirmek için Windows Update'i kullanın veya bu sürümünü açıkça yüklemeniz gerekir. Birden çok gerekli yeniden başlatma Evrensel C olasılığını önlemek için VCRedist yüklemeden önce Windows Update aracılığıyla veya MSU aracılığıyla yüklü çalışma zamanı idealdir.
+
+Tüm işletim sistemleri, Windows Update aracılığıyla en son Evrensel C çalışma zamanı için uygundur. Windows 10'da merkezi olarak dağıtılan sürümü işletim sistemi sürümü ile eşleşir. Ayrıca, Evrensel C çalışma zamanı güncelleştirmek için işletim sistemini güncelleştirmeniz gerekir. Windows 8.1 ile Windows Vista için en son kullanılabilir Evrensel C çalışma zamanı şu anda diğer düzeltmeler (sürüm 10.0.14393) ile Windows 10 Yıldönümü Güncelleştirmesi'nde bulunan sürüm dayanır.
 
 ## <a name="local-deployment"></a>Yerel dağıtım
 

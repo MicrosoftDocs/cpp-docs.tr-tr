@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2843
 ms.assetid: 9d3f2ac4-eea5-4fed-abeb-e752f442bfcc
 ms.openlocfilehash: 9c45e0d95565d0aec1753c6e7b10659e9a8b5714
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50643553"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62329575"
 ---
 # <a name="compiler-error-c2843"></a>Derleyici Hatası C2843
 

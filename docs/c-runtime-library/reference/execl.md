@@ -21,15 +21,15 @@ helpviewer_keywords:
 - execl function
 ms.assetid: 10f24c52-7ff5-4a61-abcb-fce6d9553f23
 ms.openlocfilehash: d5196c0fc80e04f0085e9b1abbd8b4a8c4474bc1
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50463043"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62339111"
 ---
 # <a name="execl"></a>execl
 
-Bu POSIX işlevi kullanım dışı bırakılmıştır. ISO C++ uyumlu [_execl](execl-wexecl.md) yerine.
+Bu POSIX işlevi kullanım dışı bırakılmıştır. ISO kullanın C++ uyumluluğunu [_execl](execl-wexecl.md) yerine.
 
 > [!IMPORTANT]
 > Bu API, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için [Evrensel Windows platformu uygulamalarında desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).

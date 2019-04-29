@@ -24,11 +24,11 @@ helpviewer_keywords:
 - _set_se_translator function
 ms.assetid: 280842bc-d72a-468b-a565-2d3db893ae0f
 ms.openlocfilehash: 18ee500d7b884d1934c29dc91d9bcb03d507680d
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57808384"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62356556"
 ---
 # <a name="setsetranslator"></a>_set_se_translator
 
@@ -53,7 +53,7 @@ Bir C işaretçisine yazdığınız özel durum Çevirici işlevi yapılandırı
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Set_se_translator** işlevi C++ Win32 özel durumlar (C yapısal özel durumlarını) işlemek için bir yol sağlar belirlenmiş özel durumlar. Bir C++ tarafından işlenmek üzere her C özel durumuna izin **catch** işleyicisi önce kullanılan veya bir C özel durumu için belirli bir sınıf türü nitelemek için türetilmiş bir C özel durum sarmalayıcı sınıfı tanımlayın. Bu sınıf kullanmak için iç özel durum işleme mekanizmasını C özel durum harekete geçirilen her zaman çağrılan özel bir C özel durum Çevirici işlevi yükleyin. Translator işlevinizi içinde eşleşen bir C++ tarafından yakalanabilir yazılan tüm özel durum oluşturabilecek **catch** işleyici.
+**_Set_se_translator** işlevi olarak Win32 özel durumlar (C yapısal özel durumlarını) işlemek için bir yol sağlar C++ belirlenmiş özel durumlar. Bir C++ tarafından işlenmek üzere her C özel durumuna izin **catch** işleyicisi önce kullanılan veya bir C özel durumu için belirli bir sınıf türü nitelemek için türetilmiş bir C özel durum sarmalayıcı sınıfı tanımlayın. Bu sınıf kullanmak için iç özel durum işleme mekanizmasını C özel durum harekete geçirilen her zaman çağrılan özel bir C özel durum Çevirici işlevi yükleyin. Translator işlevinizi içinde eşleşen bir C++ tarafından yakalanabilir yazılan tüm özel durum oluşturabilecek **catch** işleyici.
 
 Kullanmalısınız [/eha](../../build/reference/eh-exception-handling-model.md) kullanırken **_set_se_translator**.
 

@@ -22,11 +22,11 @@ helpviewer_keywords:
 - feupdateenv function
 ms.assetid: 3d170042-dfd5-4e4f-a55f-038cf2296cc9
 ms.openlocfilehash: 6d553d6899f55f5bdfb3ff313e88abfcb56ab4ec
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50605123"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62334080"
 ---
 # <a name="feupdateenv"></a>feupdateenv
 

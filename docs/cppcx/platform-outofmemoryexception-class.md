@@ -9,11 +9,11 @@ helpviewer_keywords:
 - Platform::OutOfMemoryException
 ms.assetid: 49c19f6b-f66c-4448-b861-91dcbf32de2c
 ms.openlocfilehash: ae2a097bad5986805d6c796ebbcbaa8d9020241c
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57747001"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62330360"
 ---
 # <a name="platformoutofmemoryexception-class"></a>Platform::OutOfMemoryException sınıfı
 

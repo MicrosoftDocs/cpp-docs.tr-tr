@@ -5,11 +5,11 @@ helpviewer_keywords:
 - cl.exe compiler, return value
 ms.assetid: 7c2d7f33-ee0d-4199-8ef4-75fe2b007670
 ms.openlocfilehash: 1617208a8d99e3c5643330f75faf9beed9ce5f1b
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57813987"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62319024"
 ---
 # <a name="return-value-of-clexe"></a>cl.exe Dönüş Değeri
 
@@ -51,4 +51,4 @@ cl /W4 t.cpp
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MSVC derleyici komut satırı sözdizimi](compiler-command-line-syntax.md)
+[MSVC Derleyicisi Komut Satırı Söz Dizimi](compiler-command-line-syntax.md)

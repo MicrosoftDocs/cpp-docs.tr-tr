@@ -9,11 +9,11 @@ helpviewer_keywords:
 - aggregates [C++], initializing
 ms.assetid: a8f8ed75-39db-4592-93b9-d3920d915810
 ms.openlocfilehash: f6816a6f63de262b927a3c5aeed8774ba29c2eaa
-ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56151500"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62326085"
 ---
 # <a name="initializing-aggregate-types"></a>Toplama Türlerini Başlatma
 

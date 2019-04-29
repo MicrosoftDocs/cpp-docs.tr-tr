@@ -9,11 +9,11 @@ helpviewer_keywords:
 - XML Data Generator Tool property page
 ms.assetid: b2ef1c12-3419-429d-bb9d-bd7d9ffe1ffb
 ms.openlocfilehash: 51042e3eab0c789d2e923f40de2d0ee82d06a5ab
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57824020"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62316450"
 ---
 # <a name="xml-data-generator-tool-property-page"></a>XML Verileri Oluşturma Aracı Özellik Sayfası
 

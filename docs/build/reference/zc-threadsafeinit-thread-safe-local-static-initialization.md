@@ -12,11 +12,11 @@ helpviewer_keywords:
 - Zc compiler options (C++)
 ms.assetid: a0fc4b34-2cf0-45a7-a642-b8afc4ca19f2
 ms.openlocfilehash: 92a1bfa5ec3bab2814397d51e35e617b7666c706
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57808345"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62315709"
 ---
 # <a name="zcthreadsafeinit-thread-safe-local-static-initialization"></a>/ ZC: threadsafeınit (iş parçacığı güvenli yerel statik başlatma)
 
@@ -50,6 +50,6 @@ Visual C++'ta uyumluluk sorunları hakkında daha fazla bilgi için bkz: [standa
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MSVC derleyici seçenekleri](compiler-options.md)<br/>
-[MSVC derleyici komut satırı sözdizimi](compiler-command-line-syntax.md)<br/>
+[MSVC Derleyicisi Seçenekleri](compiler-options.md)<br/>
+[MSVC Derleyicisi Komut Satırı Söz Dizimi](compiler-command-line-syntax.md)<br/>
 [/Zc (Uyumluluk)](zc-conformance.md)<br/>

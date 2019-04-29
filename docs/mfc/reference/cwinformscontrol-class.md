@@ -15,11 +15,11 @@ helpviewer_keywords:
 - CWinFormsControl [MFC], GetControlHandle
 ms.assetid: 6406dd7b-fb89-4a18-ac3a-c010d6b6289a
 ms.openlocfilehash: 91691203f88f07f597aaad6a5db32b03e7ad11c4
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57289318"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62323307"
 ---
 # <a name="cwinformscontrol-class"></a>CWinFormsControl sınıfı
 

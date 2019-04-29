@@ -8,11 +8,11 @@ helpviewer_keywords:
 - modules, Visual C++
 ms.assetid: a4bcbe8a-4255-451d-853b-f88cfd82f4e1
 ms.openlocfilehash: fcba363cff567c69ac0fbd0a541953dfe2c8e910
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57818108"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62320675"
 ---
 # <a name="netmodule-files-as-linker-input"></a>Bağlayıcı Girişi olarak .netmodule Dosyaları
 
@@ -99,4 +99,4 @@ caught non System exception in C++ source code file
 ## <a name="see-also"></a>Ayrıca bkz.
 
 - [LINK Giriş Dosyaları](link-input-files.md)
-- [MSVC bağlayıcı seçenekleri](linker-options.md)
+- [MSVC Bağlayıcı Seçenekleri](linker-options.md)

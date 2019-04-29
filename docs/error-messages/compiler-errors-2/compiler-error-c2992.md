@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2992
 ms.assetid: 01b16447-43fe-4e91-9a5a-af884a166a31
 ms.openlocfilehash: c30a1d2e1c2bae92b426fdd8fa4be628c009fa02
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50581928"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62366036"
 ---
 # <a name="compiler-error-c2992"></a>Derleyici Hatası C2992
 

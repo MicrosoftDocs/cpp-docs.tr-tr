@@ -7,11 +7,11 @@ helpviewer_keywords:
 - SECTIONS .def file statement
 ms.assetid: 7b974366-9ef5-4e57-bbcc-73a1df6f8857
 ms.openlocfilehash: 5125b09675969c784aafe375faf1fdbc36d8c5d9
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57815118"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62318634"
 ---
 # <a name="sections-cc"></a>SECTIONS (C/C++)
 

@@ -8,11 +8,11 @@ helpviewer_keywords:
 - extern constexpr variables (C++)
 ms.assetid: 4da5e33a-2e4d-4ed2-8616-bd8f43265c27
 ms.openlocfilehash: 3c18a5310646ea39c0599f709e9fddc3990b7a2b
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57813064"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62315761"
 ---
 # <a name="zcexternconstexpr-enable-extern-constexpr-variables"></a>/ ZC: externconstexpr (extern constexpr değişkenlerini etkinleştir)
 

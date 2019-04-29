@@ -30,11 +30,11 @@ helpviewer_keywords:
 - freopen_s function
 ms.assetid: ad25a4da-6ad4-476b-a86d-660b221ca84d
 ms.openlocfilehash: 2cdc16f21882c32933868000c6fd1d66accc74b8
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51326518"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62333007"
 ---
 # <a name="freopens-wfreopens"></a>freopen_s, _wfreopen_s
 
@@ -96,7 +96,7 @@ Varsa *pFile*, *yolu*, *modu*, veya *stream* olan **NULL**, veya *yolu* boş bir
 | **"a"** | (Ekleme dosyaya yeni veri yazılmadan önce dosya sonu (EOF) işaretçisini kaldırmadan) dosyanın sonunda yazma için açar. Henüz yoksa dosyayı oluşturur. |
 | **"r +"** | Hem okuma ve yazma için açar. Dosyanın mevcut olması gerekir. |
 | **"w +"** | Hem okuma ve yazma için boş bir dosya açar. Dosya varsa içeriği yok edilir. |
-| **"a +"** | Okuma ve ekleme için açar. Ekleme işlemi, dosyaya yeni veri yazılmadan önce EOF işaretinin kaldırılmasını içerir. Yazma tamamlandıktan sonra EOF işaretçisi geri yüklenmez. Henüz yoksa dosyayı oluşturur. |
+| **"a+"** | Okuma ve ekleme için açar. Ekleme işlemi, dosyaya yeni veri yazılmadan önce EOF işaretinin kaldırılmasını içerir. Yazma tamamlandıktan sonra EOF işaretçisi geri yüklenmez. Henüz yoksa dosyayı oluşturur. |
 
 Kullanım **"w"** ve **"w +"** türleri dikkatli olarak var olan dosyaları yok edebilir.
 

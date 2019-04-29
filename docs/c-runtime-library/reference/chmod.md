@@ -21,12 +21,12 @@ helpviewer_keywords:
 - chmod function
 ms.assetid: c3294722-2194-4ff4-ac87-d69f155e279b
 ms.openlocfilehash: a9a86ec70ef1518ccb287b6cda2054edd2ecaf46
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50615405"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62340670"
 ---
 # <a name="chmod"></a>chmod
 
-Bu POSIX işlevi kullanım dışı bırakılmıştır. ISO C++ uyumlu [_chmod](chmod-wchmod.md) yerine.
+Bu POSIX işlevi kullanım dışı bırakılmıştır. ISO kullanın C++ uyumluluğunu [_chmod](chmod-wchmod.md) yerine.

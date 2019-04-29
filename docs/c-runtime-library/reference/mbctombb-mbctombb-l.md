@@ -29,11 +29,11 @@ helpviewer_keywords:
 - _mbctombb_l function
 ms.assetid: d90970b8-71ff-4586-b6a2-f9ceb811f776
 ms.openlocfilehash: 7395d94a6ec18f989d4a7153425b7af406a0bf45
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50519840"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62331603"
 ---
 # <a name="mbctombb-mbctombbl"></a>_mbctombb, _mbctombb_l
 

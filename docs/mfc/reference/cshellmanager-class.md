@@ -29,11 +29,11 @@ helpviewer_keywords:
 - CShellManager [MFC], ItemFromPath
 ms.assetid: f15c4c1a-6fae-487d-9913-9b7369b33da0
 ms.openlocfilehash: ec2abf243e7f3865609f81fa4f3bf81e1b4c3d92
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58769996"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62325097"
 ---
 # <a name="cshellmanager-class"></a>CShellManager sınıfı
 

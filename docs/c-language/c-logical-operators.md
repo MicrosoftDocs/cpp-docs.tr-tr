@@ -12,11 +12,11 @@ helpviewer_keywords:
 - logical OR operator
 ms.assetid: c0a4e766-ad56-4300-bf76-b28dc0e19b43
 ms.openlocfilehash: 5df0c0f16bdf298c47a6a0699ec10c7392ab84ca
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50651275"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62326592"
 ---
 # <a name="c-logical-operators"></a>C mantıksal işleçleri
 
@@ -26,11 +26,11 @@ Mantıksal işleçler mantıksal gerçekleştirmek- ve (**&&**) ve mantıksal OR
 
 *mantıksal-ve-expression*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*OR ifadesi dahil*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*mantıksal-ve-expression***&&***OR ifadesi dahil* 
+&nbsp;&nbsp;&nbsp;&nbsp;*mantıksal-ve-expression***&&***OR ifadesi dahil*
 
 *mantıksal-veya-expression*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*mantıksal-ve-ifadesi*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*mantıksal-veya-expression***&#124;&#124;***mantıksal-ve-ifadesi* 
+&nbsp;&nbsp;&nbsp;&nbsp;*logical-OR-expression*  **&#124;&#124;**  *logical-AND-expression*
 
 ## <a name="remarks"></a>Açıklamalar
 

@@ -23,11 +23,11 @@ helpviewer_keywords:
 - message ranges [MFC], mapping
 ms.assetid: a271478b-5e1c-46f5-9f29-e5be44b27d08
 ms.openlocfilehash: d2bc961486d9bc686e1ca0d5feb0fe01d65f9512
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58774002"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62358649"
 ---
 # <a name="handlers-for-message-map-ranges"></a>İleti Eşleme Aralıkları için İşleyiciler
 

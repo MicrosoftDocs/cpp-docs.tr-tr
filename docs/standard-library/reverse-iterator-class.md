@@ -19,11 +19,11 @@ helpviewer_keywords:
 - std::reverse_iterator [C++], operator_star
 ms.assetid: c0b34d04-ae9a-4999-9aff-28b313897ffa
 ms.openlocfilehash: ae4a3da8f15f838900cb5a4324fbaeda01d918a2
-ms.sourcegitcommit: 309dc532f13242854b47759cef846de59bb807f1
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58565642"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62368800"
 ---
 # <a name="reverseiterator-class"></a>reverse_iterator Sınıfı
 
