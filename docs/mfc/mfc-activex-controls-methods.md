@@ -5,11 +5,11 @@ helpviewer_keywords:
 - MFC ActiveX controls [MFC], methods
 ms.assetid: e20271de-6ffa-4ba0-848b-bafe6c9e510c
 ms.openlocfilehash: 71c4cdd5ea07b3468b7878a221129a0de5eb4974
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57268414"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62386375"
 ---
 # <a name="mfc-activex-controls-methods"></a>MFC ActiveX denetimleri: Yöntemler
 
@@ -34,11 +34,11 @@ Kullandıysanız [MFC ActiveX Denetim Sihirbazı](../mfc/reference/mfc-activex-c
 
 Aşağıdaki makaleler ayrıntılı yöntemler açıklanmaktadır:
 
-- [MFC ActiveX denetimleri: Stok yöntemler ekleme](../mfc/mfc-activex-controls-adding-stock-methods.md)
+- [MFC ActiveX Denetimleri: Stok Yöntemleri Ekleme](../mfc/mfc-activex-controls-adding-stock-methods.md)
 
-- [MFC ActiveX denetimleri: Özel yöntemler ekleme](../mfc/mfc-activex-controls-adding-custom-methods.md)
+- [MFC ActiveX Denetimleri: Özel Yöntemler Ekleme](../mfc/mfc-activex-controls-adding-custom-methods.md)
 
-- [MFC ActiveX denetimleri: Bir Metottan hata kodları döndürme](../mfc/mfc-activex-controls-returning-error-codes-from-a-method.md)
+- [MFC ActiveX Denetimleri: Yöntemden Hata Kodları Döndürme](../mfc/mfc-activex-controls-returning-error-codes-from-a-method.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

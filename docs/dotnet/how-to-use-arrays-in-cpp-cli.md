@@ -5,11 +5,11 @@ helpviewer_keywords:
 - arrays [C++], single-dimension
 ms.assetid: 301cfb3e-199f-42c8-8151-629dce9e87f3
 ms.openlocfilehash: 65d384cbac7691d000ae6e895c9cf63e71726689
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58780931"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62387194"
 ---
 # <a name="how-to-use-arrays-in-ccli"></a>Nasıl yapılır: İçindeki diziler kullanın C++/CLI
 

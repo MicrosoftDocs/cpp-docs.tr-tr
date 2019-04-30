@@ -41,11 +41,11 @@ helpviewer_keywords:
 - Properties window, image editor
 ms.assetid: 8b6ce4ad-eba1-4ece-86ba-cea92c3edff2
 ms.openlocfilehash: 849da0d14987a057d39d5f9531e97545b3d4b8cf
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59033300"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62387956"
 ---
 # <a name="how-to-edit-an-image"></a>Nasıl yapılır: Görüntü Düzenle
 

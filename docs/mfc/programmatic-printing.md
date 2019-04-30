@@ -9,11 +9,11 @@ helpviewer_keywords:
 - printing [MFC]
 ms.assetid: 3db0945b-5e13-4be4-86a0-6aecdae565bd
 ms.openlocfilehash: eb8804610832f91f4b24487fddfe9c24a3799117
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57264007"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "64342088"
 ---
 # <a name="programmatic-printing"></a>Program Aracılığıyla Yazdırma
 

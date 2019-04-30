@@ -7,11 +7,11 @@ helpviewer_keywords:
 - operands
 ms.assetid: 8453b095-a017-4c70-9a64-e3b2bd1e35e5
 ms.openlocfilehash: d7e389279c943d6343b28184e6933b62535daae0
-ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
+ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56150720"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "64343234"
 ---
 # <a name="operands-and-expressions"></a>İşlenenler ve İfadeler
 

@@ -15,11 +15,11 @@ helpviewer_keywords:
 - .odl files
 ms.assetid: d405bc47-118d-4786-b371-920d035b2047
 ms.openlocfilehash: 32179f3913b52ca46f9ea7314b9957f4f4970713
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57282948"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62374200"
 ---
 # <a name="automation-clients-using-type-libraries"></a>Otomasyon istemcileri: Tür kitaplıklarını kullanma
 
@@ -37,7 +37,7 @@ Projeyi oluşturduğunuzda Otomasyon eklemeyi seçtiyseniz visual C++, sizin iç
 
 1. Sınıf Görünümü veya Çözüm Gezgini'nde, projeye sağ tıklayıp **Ekle** ve ardından **sınıfı Ekle** kısayol menüsünde.
 
-1. İçinde **sınıfı Ekle** iletişim kutusunda **Visual c + +/ MFC** sol bölmedeki klasör. Seçin **gelen MFC sınıfı TypeLib** simgesine tıklayın ve sağ bölmede **açık**.
+1. İçinde **sınıfı Ekle** iletişim kutusunda **Visual C++/MFC** sol bölmedeki klasör. Seçin **gelen MFC sınıfı TypeLib** simgesine tıklayın ve sağ bölmede **açık**.
 
 1. İçinde **Typelib sihirbazın sınıfı Ekle** iletişim kutusunda, bir tür kitaplığından seçin **kullanılabilir tür kitaplıklarını** aşağı açılan listesi. **Arabirimleri** seçilen tür kitaplığının kullanılabilir arabirimleri kutusu görüntüler.
 

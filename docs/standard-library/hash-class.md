@@ -24,11 +24,11 @@ helpviewer_keywords:
 - std::hash [C++]
 ms.assetid: e1b500c6-a5c8-4f6f-ad33-7ec52eb8e2e4
 ms.openlocfilehash: 2f7206e3764df384004b78e6df2127833a784f70
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51521043"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62405098"
 ---
 # <a name="hash-class"></a>hash Sınıfı
 
@@ -45,7 +45,7 @@ struct hash {
 
 ## <a name="remarks"></a>Açıklamalar
 
-İşlev nesnesi türü için uygun bir karma işlevi tanımlar *Ty* dizin değerlerinin dağıtımına. Üye `operator()` bir karma kodu döndürür *val*, şablon sınıfları ile kullanım için uygun `unordered_map`, `unordered_multimap`, `unordered_set`, ve `unordered_multiset`. Standart kitaplık temel türleri için uzmanlıklar sağlar: *Ty* işaretçi türleri ve Numaralandırma türleri dahil olmak üzere herhangi bir skalar türü olabilir. Ayrıca, kitaplık türleri için uzmanlıklar vardır `string`, `wstring`, `u16string`, `u32string`, `string_view`, `wstring_view`, `u16string_view`, `u32string_view`, `bitset`, `error_code`, `error_condition`, `optional`, `shared_ptr`, `thread`, `type_index`, `unique_ptr`, `variant`, ve `vector<bool>`.
+İşlev nesnesi türü için uygun bir karma işlevi tanımlar *Ty* dizin değerlerinin dağıtımına. Üye `operator()` bir karma kodu döndürür *val*, şablon sınıfları ile kullanım için uygun `unordered_map`, `unordered_multimap`, `unordered_set`, ve `unordered_multiset`. Standart kitaplık, temel türleri için uzmanlıklar sağlar: *Ty* işaretçi türleri ve Numaralandırma türleri dahil olmak üzere herhangi bir skalar türü olabilir. Ayrıca, kitaplık türleri için uzmanlıklar vardır `string`, `wstring`, `u16string`, `u32string`, `string_view`, `wstring_view`, `u16string_view`, `u32string_view`, `bitset`, `error_code`, `error_condition`, `optional`, `shared_ptr`, `thread`, `type_index`, `unique_ptr`, `variant`, ve `vector<bool>`.
 
 ## <a name="example"></a>Örnek
 

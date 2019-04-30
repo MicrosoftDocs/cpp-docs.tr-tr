@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C4256
 ms.assetid: a755a32e-895a-4837-a2b5-4ea06b736798
 ms.openlocfilehash: b1f7534098a04c7c65a380d302999260c960f284
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50627584"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62400967"
 ---
 # <a name="compiler-warning-level-4-c4256"></a>Derleyici Uyarısı (düzey 4) C4256
 

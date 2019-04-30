@@ -9,11 +9,11 @@ helpviewer_keywords:
 - '? : operator'
 ms.assetid: 88643ee8-7100-4f86-880a-705ec22b6271
 ms.openlocfilehash: 8744ca8546d48e9283cc0dfa9d80babf5076f8b3
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50444141"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62399154"
 ---
 # <a name="conditional-operator--"></a>Koşullu işleç:? :
 

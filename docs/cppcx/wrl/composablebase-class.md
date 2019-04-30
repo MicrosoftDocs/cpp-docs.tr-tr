@@ -6,11 +6,11 @@ f1_keywords:
 - implements/Microsoft::WRL::ComposableBase
 ms.assetid: 5e967ef9-15c8-483b-b0d0-2e28cc91c715
 ms.openlocfilehash: 7cdccf20961f65de69fd7a835db5047471abc037
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59029453"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62398699"
 ---
 # <a name="composablebase-class"></a>ComposableBase Sınıfı
 

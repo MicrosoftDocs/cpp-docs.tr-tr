@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2272
 ms.assetid: 1517706a-9c27-452e-9b10-3424b3d232bc
 ms.openlocfilehash: 1a5a1e47a721cb6edd795012cc45943e63708936
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50537430"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62388897"
 ---
 # <a name="compiler-error-c2272"></a>Derleyici Hatası C2272
 

@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3754
 ms.assetid: 14b877bc-9277-40ec-af1c-196a58b45f10
 ms.openlocfilehash: e03ac39213429fbbb9f289be3514718985c04b4b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50582123"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62386648"
 ---
 # <a name="compiler-error-c3754"></a>Derleyici Hatası C3754
 

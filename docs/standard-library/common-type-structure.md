@@ -5,11 +5,11 @@ f1_keywords:
 - chrono/std::common_type
 ms.assetid: 2b42722c-c3dc-4d62-8613-0271e52b6f00
 ms.openlocfilehash: 4d2f1fe6ebf5b8f35f65fb9b551e6e7d473615a4
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50435340"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62389196"
 ---
 # <a name="commontype-structure"></a>common_type Yapısı
 

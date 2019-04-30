@@ -3,19 +3,19 @@ title: Oluşturma bildirimi / tanımı
 ms.date: 10/19/2018
 ms.assetid: 6b1cdcb2-765e-4b93-8cef-92b861f64eba
 ms.openlocfilehash: 59ae3ebc23303554a35eea17c7e28850a4a1499a
-ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
+ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51693132"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "64344240"
 ---
 # <a name="create-declaration--definition"></a>Oluşturma bildirimi / tanımı
 
-**Ne:** anında bildirim veya bir işlev tanımı oluşturmanıza olanak tanır.
+**Ne:** Anında bildirim veya bir işlev tanımı oluşturmanıza olanak sağlar.
 
-**Ne zaman:** bir bildirim ya da tam tersi gerektiren bir işleviniz oldu.
+**ne zaman:** Size bir bildirim ya da tam tersi gerektiren bir işleviniz oldu.
 
-**Neden:** bildirimi/tanımı el ile oluşturabilirsiniz, ancak bu, otomatik olarak gerekirse başlık/kod dosyası oluşturma oluşturur.
+**Neden:** Bildirimi/tanımı el ile oluşturabilirsiniz, ancak bu, otomatik olarak gerekirse başlık/kod dosyası oluşturma oluşturur.
 
 **Nasıl:**
 

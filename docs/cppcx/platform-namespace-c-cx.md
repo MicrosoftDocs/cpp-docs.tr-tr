@@ -1,5 +1,5 @@
 ---
-title: Platform ad alanı (C + +/ CX)
+title: Platform ad alanı (C++/CX)
 ms.date: 12/30/2016
 ms.topic: reference
 f1_keywords:
@@ -8,13 +8,13 @@ helpviewer_keywords:
 - Platform Namespace (C++/CX)
 ms.assetid: b160e822-d424-43d2-ba60-57b0e81f259c
 ms.openlocfilehash: ffbfdde1a9c610f6bcb2356a26acb2b85ed9624a
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57740367"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "64345771"
 ---
-# <a name="platform-namespace-ccx"></a>Platform ad alanı (C + +/ CX)
+# <a name="platform-namespace-ccx"></a>Platform ad alanı (C++/CX)
 
 Windows çalışma zamanı ile uyumlu olan yerleşik türler içerir.
 

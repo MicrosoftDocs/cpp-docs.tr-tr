@@ -10,11 +10,11 @@ helpviewer_keywords:
 - interfaces, list of
 ms.assetid: d2ce99ce-6f7a-4ff9-bc6e-acda3633d5c8
 ms.openlocfilehash: 0caecc797a3175d5769f98e181e1d99ef6b1ad16
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59034040"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62389105"
 ---
 # <a name="transaction-object-interfaces"></a>İşlem Nesnesi Arabirimleri
 

@@ -8,11 +8,11 @@ helpviewer_keywords:
 - run-time errors, checking
 ms.assetid: c965dd01-57ad-4a3c-b1d6-5aa04f920501
 ms.openlocfilehash: ec07b9b0c6aa52187c3c24bff4cc51712dbf9fc8
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57746467"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62389482"
 ---
 # <a name="run-time-error-checking"></a>Çalışma Zamanı Hata Denetimi
 

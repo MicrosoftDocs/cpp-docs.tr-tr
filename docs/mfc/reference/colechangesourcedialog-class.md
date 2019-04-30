@@ -25,11 +25,11 @@ helpviewer_keywords:
 - COleChangeSourceDialog [MFC], m_cs
 ms.assetid: d0e08be7-21ef-45e1-97af-fe27d99e3bac
 ms.openlocfilehash: 1d118b132fc110402967e9c7f2b1d74a2164d7c8
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57304619"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62399726"
 ---
 # <a name="colechangesourcedialog-class"></a>COleChangeSourceDialog sınıfı
 

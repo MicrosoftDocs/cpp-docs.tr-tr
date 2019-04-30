@@ -8,11 +8,11 @@ helpviewer_keywords:
 - OLE DB providers, bookmark support
 ms.assetid: 7fa1d1a8-5063-4aa9-93ee-815bb9c98fae
 ms.openlocfilehash: 579e67151858904e877a34bf30467e3cb97fe2c4
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59028499"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62388962"
 ---
 # <a name="using-bookmarks"></a>Yer İşaretlerini Kullanma
 

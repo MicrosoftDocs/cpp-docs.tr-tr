@@ -15,11 +15,11 @@ helpviewer_keywords:
 - CMFCLinkCtrl [MFC], OnDrawFocusRect
 ms.assetid: 80f3874d-7cc8-410e-9ff1-62a225f5034b
 ms.openlocfilehash: 839448694cee17f5bc1a1e47f7c113026a1a4006
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58776433"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "64346204"
 ---
 # <a name="cmfclinkctrl-class"></a>CMFCLinkCtrl sınıfı
 

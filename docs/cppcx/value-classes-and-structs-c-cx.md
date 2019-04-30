@@ -1,18 +1,18 @@
 ---
-title: Değer sınıfları ve yapıları (C + +/ CX)
+title: Değer sınıfları ve yapıları (C++/CX)
 ms.date: 12/30/2016
 helpviewer_keywords:
 - value struct
 - value class
 ms.assetid: 262a0992-9721-4c02-8297-efc07d90e5a4
 ms.openlocfilehash: 5b9b50ba7200439e9ce648c53d52ce37226f61d3
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57747442"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62384991"
 ---
-# <a name="value-classes-and-structs-ccx"></a>Değer sınıfları ve yapıları (C + +/ CX)
+# <a name="value-classes-and-structs-ccx"></a>Değer sınıfları ve yapıları (C++/CX)
 
 A *değeri yapı* veya *değer sınıfının* olduğu bir Windows çalışma zamanı ile uyumlu POD ("düz eski veri yapısı"). Sabit bir boyutu vardır ve yalnızca alanlardan oluşur; başvuru sınıfı, bu özelliğe sahip değil.
 
@@ -64,7 +64,7 @@ Aşağıdaki kod parçası bildirir `Coordinates` ve `City` türleri olarak değ
 
 ## <a name="parameter-passing-for-value-types"></a>Parametre için değer türleri geçirme
 
-Tür bir işlev veya yöntem parametresi bir değer varsa, normalde değere göre geçirilir. Büyük nesneler için bu performans sorunu neden olabilir. Görsel Studio2013 ve önceki sürümlerinde, değer türleri C + +/ CX değer tarafından her zaman geçirildi. Visual Studio 2015 ve sonraki sürümlerinde, değer türleri, başvuru veya değer geçirebilirsiniz.
+Tür bir işlev veya yöntem parametresi bir değer varsa, normalde değere göre geçirilir. Büyük nesneler için bu performans sorunu neden olabilir. Görsel Studio2013 ve önceki sürümlerinde, değer türleri içinde C++/CX her zaman değeri geçirildi. Visual Studio 2015 ve sonraki sürümlerinde, değer türleri, başvuru veya değer geçirebilirsiniz.
 
 Bir değer türü değere göre geçen bir parametre bildirmek için aşağıdaki gibi bir kod kullanın:
 
@@ -151,5 +151,5 @@ public:
 
 [Tür Sistemi (C++/CX)](../cppcx/type-system-c-cx.md)<br/>
 [Visual C++ Dil Başvurusu](../cppcx/visual-c-language-reference-c-cx.md)<br/>
-[Ad alanları başvurusu](../cppcx/namespaces-reference-c-cx.md)<br/>
+[Ad Alanları Başvurusu](../cppcx/namespaces-reference-c-cx.md)<br/>
 [Başvuru Sınıfları ve Yapıları (C++/CX)](../cppcx/ref-classes-and-structs-c-cx.md)

@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3923
 ms.assetid: db8838e9-6344-4cd6-83e0-a8abeb12c4c0
 ms.openlocfilehash: 82bdfef997248dea11784c00fc04d1ac3b4189d2
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50460157"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62386570"
 ---
 # <a name="compiler-error-c3923"></a>Derleyici Hatası C3923
 

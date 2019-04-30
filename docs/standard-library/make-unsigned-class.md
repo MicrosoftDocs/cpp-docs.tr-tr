@@ -8,11 +8,11 @@ helpviewer_keywords:
 - make_unsigned
 ms.assetid: 7a6a3c4f-1a4c-47e8-9ee2-ac1f7b669353
 ms.openlocfilehash: 42c722c5250a4989b930d8f1e6fe52f2eccc614a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50439656"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62413053"
 ---
 # <a name="makeunsigned-class"></a>make_unsigned Sınıfı
 

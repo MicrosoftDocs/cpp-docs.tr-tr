@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2443
 ms.assetid: 315330d5-24bc-4193-a531-0642095be58f
 ms.openlocfilehash: 41ae2c430362f96f5863819e2bf49124bdfb0a4d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50598478"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62383249"
 ---
 # <a name="compiler-error-c2443"></a>Derleyici Hatası C2443
 

@@ -16,11 +16,11 @@ helpviewer_keywords:
 - PostNcDestroy method [MFC]
 ms.assetid: 5affca77-1999-4507-a2b2-9aa226611b4b
 ms.openlocfilehash: b64298bd2b0f14c30c824d78947a17628adec8b5
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57258209"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62394643"
 ---
 # <a name="destroying-frame-windows"></a>Çerçeve Pencerelerini Yok Etme
 

@@ -63,11 +63,11 @@ helpviewer_keywords:
 - colors [C++], inverting
 ms.assetid: d34ff96f-241d-494f-abdd-13811ada8cd3
 ms.openlocfilehash: c424d2e613c51f901def13c4bf42a066797cc65c
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59034150"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62387779"
 ---
 # <a name="how-to-work-with-color"></a>Nasıl yapılır: Renklerle Çalışma
 
@@ -223,7 +223,7 @@ Geçerli seçimdeki renkleri ters çevir için menüsüne gidin **görüntü** >
 
 ## <a name="requirements"></a>Gereksinimler
 
-None
+Yok.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

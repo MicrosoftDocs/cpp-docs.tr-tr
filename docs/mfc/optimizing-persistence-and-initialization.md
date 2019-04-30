@@ -8,11 +8,11 @@ helpviewer_keywords:
 - optimizing performance, ActiveX controls
 ms.assetid: e821e19e-b9eb-49ab-b719-0743420ba80b
 ms.openlocfilehash: 294d9c43f5f767329c04932c574485d7dca704e9
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57261955"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "64342130"
 ---
 # <a name="optimizing-persistence-and-initialization"></a>Kalıcılığı ve Başlatmayı İyileştirme
 
@@ -46,4 +46,4 @@ Ancak `Serialize` ve `OnResetState` geçersiz kılınmış, `DoPropExchange` iş
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MFC ActiveX denetimleri: En iyi duruma getirme](../mfc/mfc-activex-controls-optimization.md)
+[MFC ActiveX Denetimleri: İyileştirme](../mfc/mfc-activex-controls-optimization.md)

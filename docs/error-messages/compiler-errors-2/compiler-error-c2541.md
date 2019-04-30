@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2541
 ms.assetid: ed95180f-00df-4e62-a8e9-1b6dab8281bf
 ms.openlocfilehash: d8b2366bc2899b7a2ac76b0fae133351cd88a541
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50564560"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62386960"
 ---
 # <a name="compiler-error-c2541"></a>Derleyici Hatası C2541
 

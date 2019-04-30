@@ -9,11 +9,11 @@ helpviewer_keywords:
 - Platform::DisconnectedException
 ms.assetid: c25e0d64-5bff-4c21-88e5-c4ec2776fa7f
 ms.openlocfilehash: 56276a7d09cc82e05886c2c67a4784993083adb5
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57752018"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62387623"
 ---
 # <a name="platformdisconnectedexception-class"></a>Platform::DisconnectedException sınıfı
 

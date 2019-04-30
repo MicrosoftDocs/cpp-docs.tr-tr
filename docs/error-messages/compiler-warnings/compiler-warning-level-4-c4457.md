@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C4457
 ms.assetid: 02fd149a-917d-4f67-97a6-eb714572271f
 ms.openlocfilehash: 11307ddc3b13a9cd9b36f1ee927082104792b07f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50648363"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62391445"
 ---
 # <a name="compiler-warning-level-4-c4457"></a>Derleyici Uyarısı (düzey 4) C4457
 

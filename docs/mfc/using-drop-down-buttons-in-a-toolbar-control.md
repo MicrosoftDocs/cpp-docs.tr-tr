@@ -1,5 +1,5 @@
 ---
-title: Bir Araç Çubuğu Denetiminde Açılır Düğmeler Kullanma
+title: Bir araç çubuğu denetiminde açılır düğmeler kullanma
 ms.date: 11/04/2016
 f1_keywords:
 - TBN_DROPDOWN
@@ -12,13 +12,13 @@ helpviewer_keywords:
 - TBN_DROPDOWN notification [MFC]
 ms.assetid: b859f758-d2f6-40d9-9c26-0ff61993b9b2
 ms.openlocfilehash: 8d1a13b1921f111d97bb515e7932a0116277f9ed
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57261049"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62411610"
 ---
-# <a name="using-drop-down-buttons-in-a-toolbar-control"></a>Bir Araç Çubuğu Denetiminde Açılır Düğmeler Kullanma
+# <a name="using-drop-down-buttons-in-a-toolbar-control"></a>Bir araç çubuğu denetiminde açılır düğmeler kullanma
 
 Standart düğmeler yanı sıra bir araç çubuğu aşağı açılır düğmeler da olabilir. Bir açılan düğmeye genellikle eklenen aşağı ok varlığını tarafından gösterilir.
 

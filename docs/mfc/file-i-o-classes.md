@@ -16,11 +16,11 @@ helpviewer_keywords:
 - memory file classes [MFC]
 ms.assetid: 92821c3f-d9e1-47f6-98c9-3b632d86e811
 ms.openlocfilehash: 914325ec56f0cae30c7293305496d65f358f2731
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57281661"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62405813"
 ---
 # <a name="file-io-classes"></a>Dosya G/Ç Sınıfları
 

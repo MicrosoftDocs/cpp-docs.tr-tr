@@ -11,11 +11,11 @@ helpviewer_keywords:
 - gcnew keyword [C++]
 ms.assetid: 388a62da-c2df-4a94-a9a2-205b53e577da
 ms.openlocfilehash: f3dd0b73e300b44cb4f35e42683725813453d7de
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59039433"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62385387"
 ---
 # <a name="ref-new-gcnew--ccli-and-ccx"></a>Yeni başvuru, gcnew (C++/CLI ve C++/CX)
 

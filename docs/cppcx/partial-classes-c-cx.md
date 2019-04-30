@@ -1,15 +1,15 @@
 ---
-title: Kısmi sınıflar (C + +/ CX)
+title: Kısmi sınıflar (C++/CX)
 ms.date: 12/30/2016
 ms.assetid: 69d93575-636c-4564-8cca-6dfba0c7e328
 ms.openlocfilehash: 71df19e98192a7704d4528fe730ce79977383a9b
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57740433"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62385004"
 ---
-# <a name="partial-classes-ccx"></a>Kısmi sınıflar (C + +/ CX)
+# <a name="partial-classes-ccx"></a>Kısmi sınıflar (C++/CX)
 
 Kısmi bir sınıf içinde değiştirmekte bir sınıf tanımı ve otomatik kod oluşturma yazılım parçası senaryoları destekleyen bir yapıdır — Örneğin, XAML Tasarımcısı — aynı sınıftaki kod da değiştiriyor. Kısmi bir sınıf kullanarak kodunuzu silmelerini Tasarımcı engelleyebilirsiniz. Visual Studio projesinde `partial` değiştiricisi için oluşturulan dosya otomatik olarak uygulanır.
 
@@ -99,4 +99,4 @@ Aşağıdaki örnek tanımlar `Address` iki kod dosyaları arasında sınıfı. 
 
 [Tür Sistemi](../cppcx/type-system-c-cx.md)<br/>
 [Visual C++ Dil Başvurusu](../cppcx/visual-c-language-reference-c-cx.md)<br/>
-[Ad alanları başvurusu](../cppcx/namespaces-reference-c-cx.md)
+[Ad Alanları Başvurusu](../cppcx/namespaces-reference-c-cx.md)

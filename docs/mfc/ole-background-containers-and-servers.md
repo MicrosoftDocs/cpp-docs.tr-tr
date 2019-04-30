@@ -15,11 +15,11 @@ helpviewer_keywords:
 - server applications [MFC]
 ms.assetid: dafbb31d-096c-4654-b774-12900d832919
 ms.openlocfilehash: c154562e58cf8f37d77df61556fe25b19ca54c70
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57304827"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "64346105"
 ---
 # <a name="ole-background-containers-and-servers"></a>OLE arka planı: Kapsayıcılar ve sunucular
 
@@ -36,8 +36,8 @@ Bunun anlamı iletişimi kullanarak, bir kapsayıcı sunucu uygulamasının uygu
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [OLE Arka Planı](../mfc/ole-background.md)<br/>
-[OLE arka planı: MFC uygulaması](../mfc/ole-background-mfc-implementation.md)<br/>
+[OLE Arka Planı: MFC Uygulama](../mfc/ole-background-mfc-implementation.md)<br/>
 [Kapsayıcılar](../mfc/containers.md)<br/>
 [Sunucular](../mfc/servers.md)<br/>
-[Kapsayıcılar: İstemci öğeleri](../mfc/containers-client-items.md)<br/>
-[Sunucular: Sunucu öğeleri](../mfc/servers-server-items.md)
+[Kapsayıcılar: İstemci Öğeleri](../mfc/containers-client-items.md)<br/>
+[Sunucular: Sunucu Öğeleri](../mfc/servers-server-items.md)

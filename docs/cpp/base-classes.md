@@ -10,11 +10,11 @@ helpviewer_keywords:
 - base classes [C++]
 ms.assetid: 6e6d54d0-6f21-4a16-9103-22935d98f596
 ms.openlocfilehash: 59c474f54ea439acf83cf6923eba6e167901dd37
-ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52175622"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62392415"
 ---
 # <a name="base-classes"></a>Temel Sınıflar
 

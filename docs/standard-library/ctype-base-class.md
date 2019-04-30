@@ -7,11 +7,11 @@ helpviewer_keywords:
 - ctype_base class
 ms.assetid: ccffe891-d7ab-4d22-baf8-8eb6d438a96d
 ms.openlocfilehash: 83ef35f9fac438cfa217decf222abd365ff84269
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50531137"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62394188"
 ---
 # <a name="ctypebase-class"></a>ctype_base Sınıfı
 

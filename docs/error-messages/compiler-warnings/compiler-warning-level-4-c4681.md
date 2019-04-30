@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C4681
 ms.assetid: a4e6d85f-3e21-4b45-a551-c23d3c554d3f
 ms.openlocfilehash: b2f89948ddf77dda88e8ef94231ac9ba1e9ee85c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50585685"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "64345373"
 ---
 # <a name="compiler-warning-level-4-c4681"></a>Derleyici Uyarısı (düzey 4) C4681
 

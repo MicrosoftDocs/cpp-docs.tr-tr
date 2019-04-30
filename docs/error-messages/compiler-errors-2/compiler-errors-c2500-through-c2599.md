@@ -1,6 +1,6 @@
 ---
-title: Derleyici hataları C2500 ile c2599 arasındaki
-ms.date: 11/17/2017
+title: C2500 ile C2599 arasındaki derleyici hataları
+ms.date: 04/21/2019
 f1_keywords:
 - C2501
 - C2508
@@ -52,14 +52,14 @@ helpviewer_keywords:
 - C2595
 - C2596
 ms.assetid: a869aaed-e9f6-49e3-b273-00ea7f45bed7
-ms.openlocfilehash: 836bab2fe3f38c7caf5249af2e7373a307db58e0
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
-ms.translationtype: MT
+ms.openlocfilehash: 87728c2d7055715b7e7d986d5ab8792ceba5c450
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50600986"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62386596"
 ---
-# <a name="compiler-errors-c2500-through-c2599"></a>Derleyici hataları C2500 ile c2599 arasındaki
+# <a name="compiler-errors-c2500-through-c2599"></a>C2500 ile C2599 arasındaki derleyici hataları
 
 Belgelerin bu bölümdeki makaleleri bir alt kümesini derleyici tarafından oluşturulan hata iletilerini açıklayın.
 
@@ -91,12 +91,12 @@ Belgelerin bu bölümdeki makaleleri bir alt kümesini derleyici tarafından olu
 |Derleyici Hatası C2519|'*tanımlayıcı*': WinRT öznitelikleri yalnızca ortak alanlar içerebilir|
 |Derleyici Hatası C2520|'*sınıfı*': hiçbir açık olmayan Oluşturucu örtük dönüştürmelerine yok|
 |[Derleyici Hatası C2521](compiler-error-C2521.md)|bir yok edici/Sonlandırıcı herhangi bir bağımsız değişken almaz|
-|Derleyici Hatası C2522|'*tanımlayıcı*': aşırı yükleme tanımlayıcısı kullanılamaz '*ıdentifier1*', zaten şirket olarak belirtildiğinden'*identifier2*'|
+|Derleyici Hatası C2522|'*tanımlayıcı*': Aşırı yükleme tanımlayıcısı kullanılamaz '*ıdentifier1*', zaten şirket olarak belirtildiğinden'*identifier2*'|
 |[Derleyici Hatası C2523](compiler-error-C2523.md)|'*sınıfı*:: ~*tanımlayıcı*': yıkıcı/Sonlandırıcı etiketi uyuşmazlığı|
 |[Derleyici Hatası C2524](compiler-error-C2524.md)|'*tanımlayıcı*': bir yok edici/Sonlandırıcı bir 'void' parametre listesine sahip olmalıdır|
-|Derleyici Hatası C2525|'*tanımlayıcı*': parametre '*ıdentifier1*'adlı'*identifier2*' taban işlev ve yayımlanmış bir uygulamayla eşleşmesi gerekiyor|
-|[Derleyici Hatası C2526](compiler-error-C2526.md)|'*ıdentifier1*': C bağlama işlevi, C++ sınıfını döndüremez*identifier2*'|
-|Derleyici Hatası C2527|'*tanımlayıcı*': hem de DefaultOverload belirtilemez '*işlev1*'ve'*function2*'. Bir belirtimini kaldırın veya işlev uygulaması sırasında yeniden adlandırma|
+|Derleyici Hatası C2525|'*tanımlayıcı*': Parametre '*ıdentifier1*'adlı'*identifier2*' taban işlev ve yayımlanmış bir uygulamayla eşleşmesi gerekiyor|
+|[Derleyici Hatası C2526](compiler-error-C2526.md)|'*ıdentifier1*': C bağlama işlevi döndüremiyor C++ sınıfının*identifier2*'|
+|Derleyici Hatası C2527|'*tanımlayıcı*': Hem de defaultOverload belirtilemez '*işlev1*'ve'*function2*'. Bir belirtimini kaldırın veya işlev uygulaması sırasında yeniden adlandırma|
 |[Derleyici Hatası C2528](compiler-error-C2528.md)|'*tanımlayıcı*': başvuruya yönelik işaretçi geçersizdir|
 |[Derleyici Hatası C2529](compiler-error-C2529.md)|'*tanımlayıcı*': başvuruya başvuru geçersizdir|
 |[Derleyici Hatası C2530](compiler-error-C2530.md)|'*tanımlayıcı*': başvuruların başlatılması gerekir|
@@ -116,7 +116,7 @@ Belgelerin bu bölümdeki makaleleri bir alt kümesini derleyici tarafından olu
 |[Derleyici Hatası C2544](compiler-error-C2544.md)|Beklenen ')' işleci '()' için|
 |[Derleyici Hatası C2545](compiler-error-C2545.md)|'*işleci*': Aşırı yüklenen işleç bulunamadı oluşturulamıyor|
 |Derleyici Hatası C2546|'*tanımlayıcı*': ne zaman bir tür tanımlı hem PIA hem de PIA ilk başvurulmalıdır no-PIA|
-|Derleyici Hatası C2547|'*tanımlayıcı*': yayımlanmış bir yöntemin tüm parametreleri bildirimde açık olarak adlandırılmalıdır|
+|Derleyici Hatası C2547|'*tanımlayıcı*': Yayımlanmış bir yöntemin tüm parametreleri bildirimde açık olarak adlandırılmalıdır|
 |[Derleyici Hatası C2548](compiler-error-C2548.md)|'*işlevi*': parametresinin varsayılan parametresi eksik *parametresi*|
 |[Derleyici Hatası C2549](compiler-error-C2549.md)|Kullanıcı tanımlı dönüştürme bir dönüş türü belirtemez|
 |[Derleyici Hatası C2550](compiler-error-C2550.md)|'*tanımlayıcı*': oluşturucu başlatıcı listelerine yalnızca Oluşturucu tanımlarında izin verilir|
@@ -168,3 +168,8 @@ Belgelerin bu bölümdeki makaleleri bir alt kümesini derleyici tarafından olu
 |[Derleyici Hatası C2597](compiler-error-C2597.md)|Statik olmayan üyeye geçersiz başvuru '*tanımlayıcı*'|
 |[Derleyici Hatası C2598](compiler-error-C2598.md)|bağlama belirtimi genel kapsamda olmalıdır|
 |[Derleyici Hatası C2599](compiler-error-C2599.md)|'*tanımlayıcı*': bir yönetilen/WinRT Enum İleri dönük bildirimi izin verilmez|
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[C /C++ derleyicisi ve derleme araçları hataları ve Uyarıları](../compiler-errors-1/c-cpp-build-errors.md) \
+[C3999 arasındaki derleyici hataları C2000-](../compiler-errors-1/compiler-errors-c2000-c3999.md)

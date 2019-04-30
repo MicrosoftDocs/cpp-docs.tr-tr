@@ -6,11 +6,11 @@ helpviewer_keywords:
 - document/view architecture [MFC], advantages of
 ms.assetid: 0bc27071-e120-4889-939c-ce1e61fb9cb3
 ms.openlocfilehash: e250630bf3c9714fc01ff66b66fba3ac0d5b1cc1
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57265463"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62394734"
 ---
 # <a name="advantages-of-the-documentview-architecture"></a>Belge/Görünüm Mimarisinin Avantajları
 

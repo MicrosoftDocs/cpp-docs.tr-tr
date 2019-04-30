@@ -6,11 +6,11 @@ helpviewer_keywords:
 - MFC ribbon, converting to a ribbon resource
 ms.assetid: 324b7ff6-58f9-4691-96a9-9836a79d0fb6
 ms.openlocfilehash: b4265a7bf3ebe2c4926f21572d802b75bd525990
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57295495"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62389495"
 ---
 # <a name="how-to-convert-an-existing-mfc-ribbon-to-a-ribbon-resource"></a>Nasıl yapılır: Varolan bir MFC şeridini Şerit kaynağına dönüştürme
 

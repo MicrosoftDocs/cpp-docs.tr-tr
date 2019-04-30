@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C4928
 ms.assetid: 77235d7f-9360-45cb-8348-d148c605c4a3
 ms.openlocfilehash: 9357e5775e6cfc9a44c43104c4ffd3fd34084e51
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50526486"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62393447"
 ---
 # <a name="compiler-warning-level-1-c4928"></a>Derleyici Uyarısı (düzey 1) C4928
 

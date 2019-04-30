@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3360
 ms.assetid: 6acf983a-dbb6-422b-b045-a34bb4ba6761
 ms.openlocfilehash: 1d08c53aad50d2cbc10c8c0e398fe3a18de3849d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50606498"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "64345499"
 ---
 # <a name="compiler-error-c3360"></a>Derleyici Hatası C3360
 

@@ -9,11 +9,11 @@ helpviewer_keywords:
 - _bstr_t class
 ms.assetid: 116d994e-5a72-4351-afbe-866c80b4c165
 ms.openlocfilehash: 44a301b8b2a1c53636c27be6f59f61aa0dcd46b1
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51330677"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62385017"
 ---
 # <a name="bstrtbstrt"></a>_bstr_t::_bstr_t
 
@@ -45,10 +45,10 @@ _bstr_t(
 
 #### <a name="parameters"></a>Parametreler
 
-*S1*<br/>
+*s1*<br/>
 A `_bstr_t` kopyalanacak nesne.
 
-*S2*<br/>
+*s2*<br/>
 Çok baytlı bir dize.
 
 *S3*<br/>

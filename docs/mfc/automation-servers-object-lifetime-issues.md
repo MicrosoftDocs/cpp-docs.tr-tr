@@ -8,11 +8,11 @@ helpviewer_keywords:
 - servers, lifetime of Automation
 ms.assetid: 342baacf-4015-4a0e-be2f-321424f1cb43
 ms.openlocfilehash: f9dbc6e4f321ba10fdffa013c158d53b84331e30
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57293587"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62392901"
 ---
 # <a name="automation-servers-object-lifetime-issues"></a>Otomasyon sunucuları: Nesne ömrü sorunları
 

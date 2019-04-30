@@ -11,11 +11,11 @@ helpviewer_keywords:
 - child windows [MFC], messages
 ms.assetid: fddfdd08-8ecf-4f84-8b45-5a84616aaa8d
 ms.openlocfilehash: 06b13a7af2e73d6dc2758a342dae5beeca828ae4
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57298418"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62391152"
 ---
 # <a name="child-window-notification-message-handlers"></a>Alt Pencere Bildirim İletisi İşleyicileri
 

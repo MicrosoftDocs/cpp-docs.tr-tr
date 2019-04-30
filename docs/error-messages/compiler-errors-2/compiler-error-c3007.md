@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3007
 ms.assetid: e415ef42-bdc9-4f32-8198-5e25b289a089
 ms.openlocfilehash: 551fb458ee02e29ae54aeb3382b2016da731808a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50630467"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "64345586"
 ---
 # <a name="compiler-error-c3007"></a>Derleyici Hatası C3007
 

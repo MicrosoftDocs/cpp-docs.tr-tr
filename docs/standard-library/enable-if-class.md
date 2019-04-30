@@ -8,11 +8,11 @@ helpviewer_keywords:
 - enable_if
 ms.assetid: c6b8d41c-a18f-4e30-a39e-b3aa0e8fd926
 ms.openlocfilehash: b6990dba20643b35dde36a492d40c3e3e76ae0b4
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50591886"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62413768"
 ---
 # <a name="enableif-class"></a>enable_if Sınıfı
 
@@ -50,7 +50,7 @@ C++'da, şablon parametre değiştirme hatası kendi içinde bir hata değildir 
 
 Dört örnek senaryolar şunlardır:
 
-- 1. Senaryo: bir işlevin dönüş türünü kaydırma:
+- Senaryo 1: Bir işlevin dönüş türünü kaydırma:
 
 ```cpp
     template <your_stuff>
@@ -64,7 +64,7 @@ yourfunction(args) {// ...
 }
 ```
 
-- Senaryo 2: varsayılan bir bağımsız değişkene sahip bir işlev parametresi ekleme:
+- Senaryo 2: Varsayılan bir bağımsız değişkene sahip bir işlev parametresi ekleme:
 
 ```cpp
     template <your_stuff>
@@ -73,14 +73,14 @@ your_return_type_if_present
 }
 ```
 
-- Senaryo 3: varsayılan bir bağımsız değişkene sahip bir şablon parametresi ekleme:
+- Senaryo 3: Varsayılan bir bağımsız değişkene sahip bir şablon parametresi ekleme:
 
 ```cpp
     template <your_stuff, typename Dummy = enable_if_t<your_condition>>
 rest_of_function_declaration_goes_here
 ```
 
-- Senaryo 4: işlevinizi şablonlu olmayan bir bağımsız değişken varsa, onun türü kayabilir:
+- Senaryo 4: İşlevinizi şablonlu olmayan bir bağımsız değişken varsa, onun türü kayabilir:
 
 ```cpp
     template <typename T>
@@ -117,7 +117,7 @@ Senaryo 4 dönüş türlerine sahip olmayan oluşturucular çalışır ve böyle
 
 ## <a name="example"></a>Örnek
 
-Bu örnekte açıklar nasıl şablon işlevi C++ Standart Kitaplığı [std::make_pair()](../standard-library/utility-functions.md#make_pair) sağladığı avantajlardan yararlanarak `enable_if`.
+Bu örnekte açıklar nasıl C++ standart kitaplığı şablon işlevi [std::make_pair()](../standard-library/utility-functions.md#make_pair) sağladığı avantajlardan yararlanarak `enable_if`.
 
 ```cpp
 void func(const pair<int, int>&);

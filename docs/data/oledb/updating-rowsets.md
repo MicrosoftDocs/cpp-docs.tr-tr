@@ -8,11 +8,11 @@ helpviewer_keywords:
 - rowsets
 ms.assetid: 39588758-5c72-4254-a10d-cc2b1f473357
 ms.openlocfilehash: 7151d897469993b2f9be3575eb11a08844af3c69
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59028366"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62389066"
 ---
 # <a name="updating-rowsets"></a>Satır Kümelerini Güncelleştirme
 

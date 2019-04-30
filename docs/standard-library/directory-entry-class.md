@@ -35,11 +35,11 @@ helpviewer_keywords:
 - std::experimental::filesystem::directory_entry::operator&gt;
 - std::experimental::filesystem::directory_entry::operator&gt;=
 ms.openlocfilehash: c1b68aefd44d8f0ac60c36307dee93333d801bb9
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50533828"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "64342982"
 ---
 # <a name="directoryentry-class"></a>directory_entry Sınıfı
 
@@ -287,7 +287,7 @@ Durum hata kodu.
 
 ## <a name="symlink_status"></a> symlink_status
 
-Her iki üye işlev dönüş `mysymstat` büyük olasılıkla ilk şu şekilde değiştirilmiş: varsa `status_known(mysymstat)` hiçbir şey yapma. Aksi takdirde, `mysymstat = symlink_status(mypval)`.
+Her iki üye işlev dönüş `mysymstat` büyük olasılıkla ilk gibi değiştirilemez: Varsa `status_known(mysymstat)` hiçbir şey yapma. Aksi takdirde, `mysymstat = symlink_status(mypval)`.
 
 ```cpp
 file_status symlink_status() const;

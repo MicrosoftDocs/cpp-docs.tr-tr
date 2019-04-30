@@ -6,11 +6,11 @@ helpviewer_keywords:
 - () cast operator
 ms.assetid: 4c99eb92-1b19-4a5d-9840-5d8c29b8453e
 ms.openlocfilehash: 54345637665736085d812b88f5822a94014eaa74
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50516967"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "64345088"
 ---
 # <a name="cast-operator-"></a>Atama İşleci: ()
 

@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C4047
 ms.assetid: b75ad6fb-5c93-4434-a85f-c4083051a5de
 ms.openlocfilehash: 87c9e39e5dac40341adc63af45cc0e460806c736
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50666511"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62388832"
 ---
 # <a name="compiler-warning-level-1-c4047"></a>Derleyici Uyarısı (düzey 1) C4047
 

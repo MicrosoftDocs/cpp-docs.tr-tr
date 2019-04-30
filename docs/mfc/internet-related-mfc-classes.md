@@ -5,11 +5,11 @@ helpviewer_keywords:
 - MFC, Internet classes
 ms.assetid: e50c6b39-4b65-4b8a-8101-8934d0780723
 ms.openlocfilehash: dd8e85d236f451c2d6e5e03ed3495cf02f5f3ba7
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57293556"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62389430"
 ---
 # <a name="internet-related-mfc-classes"></a>Internet ile İlgili MFC Sınıfları
 

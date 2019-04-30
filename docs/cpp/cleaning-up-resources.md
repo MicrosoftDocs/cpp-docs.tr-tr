@@ -10,11 +10,11 @@ helpviewer_keywords:
 - try-catch keyword [C++], termination handlers
 ms.assetid: 65753efe-6a27-4750-b90c-50635775c1b6
 ms.openlocfilehash: 0db21b20b94dc1a3f347bd848c999a961398759b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50575701"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62386128"
 ---
 # <a name="cleaning-up-resources"></a>Kaynakları Temizleme
 

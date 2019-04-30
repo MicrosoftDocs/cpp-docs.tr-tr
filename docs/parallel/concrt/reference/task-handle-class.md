@@ -9,11 +9,11 @@ helpviewer_keywords:
 - task_handle class
 ms.assetid: 74a34b15-708b-4231-a509-947874292b13
 ms.openlocfilehash: 8528bc212603484be9325ed967e9475e4faa1348
-ms.sourcegitcommit: 309dc532f13242854b47759cef846de59bb807f1
+ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58565106"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "64346150"
 ---
 # <a name="taskhandle-class"></a>task_handle Sınıfı
 

@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C4357
 ms.assetid: 9259c633-3c02-4900-b94a-2d8d366d61cd
 ms.openlocfilehash: a7923fdcda2a781c9680f8b3753fd101c73be19c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50469699"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62402027"
 ---
 # <a name="compiler-warning-level-3-c4357"></a>Derleyici Uyarısı (Düzey 3) C4357
 

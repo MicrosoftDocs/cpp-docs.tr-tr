@@ -10,11 +10,11 @@ helpviewer_keywords:
 - add member function wizard [C++]
 ms.assetid: 55b25ddb-541d-44ed-957c-974ef91cfc85
 ms.openlocfilehash: 1cd7abbbc43ae56861b3b83451b41933b8b0b4f0
-ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
+ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51693418"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "64345994"
 ---
 # <a name="add-a-member-function"></a>Üye işlevi Ekle
 

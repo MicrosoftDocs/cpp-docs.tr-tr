@@ -7,11 +7,11 @@ helpviewer_keywords:
 - optimization, keywords and pragmas
 ms.assetid: 66a94842-ef10-490a-88b3-51d1a568ead5
 ms.openlocfilehash: db9af687c7de560b0012ceea50a7cbfcc7d5de9c
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59035510"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "64341199"
 ---
 # <a name="optimization-pragmas-and-keywords"></a>Pragmaları ve Anahtar Sözcükleri İyileştirme
 

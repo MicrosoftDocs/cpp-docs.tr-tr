@@ -1,5 +1,5 @@
 ---
-title: 'TN061: ON_NOTIFY ve WM_NOTIFY İletileri'
+title: 'TN061: On_notıfy ve wm_notıfy iletileri'
 ms.date: 06/28/2018
 f1_keywords:
 - ON_NOTIFY
@@ -14,13 +14,13 @@ helpviewer_keywords:
 - WM_NOTIFY message
 ms.assetid: 04a96dde-7049-41df-9954-ad7bb5587caf
 ms.openlocfilehash: 74eb39a855da3ff3e6da7f14a76bf0804919826d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50658854"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62399583"
 ---
-# <a name="tn061-onnotify-and-wmnotify-messages"></a>TN061: ON_NOTIFY ve WM_NOTIFY İletileri
+# <a name="tn061-onnotify-and-wmnotify-messages"></a>TN061: On_notıfy ve wm_notıfy iletileri
 
 > [!NOTE]
 > Aşağıdaki Teknik Not çevrimiçi belgelere ilk eklenmiştir beri güncelleştirilmemiş. Eski veya yanlış sonuç olarak, bazı yordamlar ve konular olabilir. En son bilgiler için bu konuyu çevrimiçi belge dizininde arama önerilir.
@@ -31,7 +31,7 @@ Bu teknik Not Yeni wm_notıfy iletisi üzerinde arka plan bilgileri sağlar ve w
 
 Windows içinde 3.x denetimleri fare tıklama gibi olayların ebeveynleri bildirim değişiklikleri içeriği ve seçim ve denetim arka plan boyama üst bir ileti göndererek. Basit bildirimler (örneğin, BN_CLICKED) bildirim kodla özel WM_COMMAND iletileri olarak gönderilir ve halinde paketlenmiş kimliği kontrol *wParam* ve denetimin tanıtıcıda *lParam*. Bu yana unutmayın *wParam* ve *lParam* olan herhangi bir ek veriyi geçirmek için bir yolu yoktur, tam — bu iletileri yalnızca basit bildirim olabilir. Örneğin, BN_CLICKED bildiriminde düğmesine tıklandığında, fare imlecini konumu hakkında bilgi göndermesine izin hiçbir yolu yoktur.
 
-3.x gerek Windows denetimlerinde ek verileri içeren bir bildirim iletisi gönderirken, özel amaçlı iletileri WM_CTLCOLOR, WM_VSCROLL, WM_HSCROLL, WM_DRAWITEM, WM_MEASUREITEM, WM_COMPAREITEM, WM_DELETEITEM, WM_ dahil olmak üzere, çeşitli kullanırlar. CHARTOITEM, wm_vkeytoıtem ve benzeri. Bu iletiler geri onlara gönderdiğiniz denetimine yansıtılır. Daha fazla bilgi için [TN062: Windows denetimleri için ileti yansıması](../mfc/tn062-message-reflection-for-windows-controls.md).
+3.x gerek Windows denetimlerinde ek verileri içeren bir bildirim iletisi gönderirken, özel amaçlı iletileri WM_CTLCOLOR, WM_VSCROLL, WM_HSCROLL, WM_DRAWITEM, WM_MEASUREITEM, WM_COMPAREITEM, WM_DELETEITEM, WM_ dahil olmak üzere, çeşitli kullanırlar. CHARTOITEM, wm_vkeytoıtem ve benzeri. Bu iletiler geri onlara gönderdiğiniz denetimine yansıtılır. Daha fazla bilgi için [TN062: Yansıma Windows denetimleri için ileti](../mfc/tn062-message-reflection-for-windows-controls.md).
 
 **Win32'de bildirim iletileri**
 
@@ -80,7 +80,7 @@ Bazı bildirimler tüm yeni Windows denetimleri için ortaktır. Bu bildirimleri
 |NM_KILLFOCUS|Denetim, giriş odağını kaybetmiş|
 |NM_OUTOFMEMORY|Denetim bir işlem tamamlanamadı, çünkü kullanılabilir yeterli bellek yoktu|
 
-##  <a name="_mfcnotes_on_notify.3a_.handling_wm_notify_messages_in_mfc_applications"></a> On_notıfy: MFC uygulamaları wm_notıfy iletileri işleme
+##  <a name="_mfcnotes_on_notify.3a_.handling_wm_notify_messages_in_mfc_applications"></a> ON_NOTIFY: MFC uygulamalarında wm_notıfy iletileri işleme
 
 İşlev `CWnd::OnNotify` bildirim iletilerini işleme. Varsayılan uygulaması çağırmak bildirim işleyicileri için mesaj haritasını denetler. Genel olarak, size geçersiz `OnNotify`. Bunun yerine, bir işleyici işlevi sağlar ve sahibi pencerenin sınıfı için ileti eşlemesi, işleyici için bir ileti eşleme girişi ekleyin.
 

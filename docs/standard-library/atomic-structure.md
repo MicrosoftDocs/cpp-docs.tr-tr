@@ -5,11 +5,11 @@ f1_keywords:
 - atomic/std::atomic
 ms.assetid: 261628ed-7049-41ac-99b9-cfe49f696b44
 ms.openlocfilehash: 258812f033d34f040d96847581d6f51692a933b6
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50590066"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62376675"
 ---
 # <a name="atomic-structure"></a>atomic Yapısı
 
@@ -30,14 +30,14 @@ struct atomic;
 |[atomic](#atomic)|Atomik bir nesne oluşturur.|
 |**İşleçler**||
 |[atomic::operator Ty](#op_ty)|Okur ve depolanan değeri döndürür. ([atomic::load](#load))|
-|[atomic::operator =](#op_eq)|Belirtilen bir değeri depolanan değeri değiştirmek için kullanır. ([atomic::store](#store))|
+|[atomic::operator=](#op_eq)|Belirtilen bir değeri depolanan değeri değiştirmek için kullanır. ([atomic::store](#store))|
 |[atomic::operator ++](#op_inc)|Depolanan değeri artırır. Yalnızca integral ve işaretçi uzmanlıklarıyla kullanılır.|
-|[atomic::operator +=](#op_add_eq)|Depolanan değere belirtilen bir değer ekler. Yalnızca integral ve işaretçi uzmanlıklarıyla kullanılır.|
+|[atomic::operator+=](#op_add_eq)|Depolanan değere belirtilen bir değer ekler. Yalnızca integral ve işaretçi uzmanlıklarıyla kullanılır.|
 |[atomic::operator--](#op_dec)|Azaltır depolanan değeri. Yalnızca integral ve işaretçi uzmanlıklarıyla kullanılır.|
 |[atomic::operator-=](#op_sub_eq)|Belirtilen bir değeri depolanan değerden çıkarır. Yalnızca integral ve işaretçi uzmanlıklarıyla kullanılır.|
 |[atomic::operator & =](#op_and_eq)|Bit düzeyinde gerçekleştirir ve belirtilen değer ve depolanan değeri. Yalnızca integral uzmanlıklarıyla kullanılır.|
 |[atomic::operator&#124;=](#op_or_eq)|Bit düzeyinde gerçekleştirir veya belirtilen değer ve depolanan değeri. Yalnızca integral uzmanlıklarıyla kullanılır.|
-|[atomic::operator ^ =](#op_xor_eq)|Bit düzeyinde özel gerçekleştirir veya belirtilen değer ve depolanan değeri. Yalnızca integral uzmanlıklarıyla kullanılır.|
+|[atomic::operator^=](#op_xor_eq)|Bit düzeyinde özel gerçekleştirir veya belirtilen değer ve depolanan değeri. Yalnızca integral uzmanlıklarıyla kullanılır.|
 |**İşlevler**||
 |[compare_exchange_strong](#compare_exchange_strong)|Gerçekleştiren bir *atomic_compare_and_exchange* işlemi **bu** ve sonucu döndürür.|
 |[compare_exchange_weak](#compare_exchange_weak)|Gerçekleştiren bir *weak_atomic_compare_and_exchange* işlemi **bu** ve sonucu döndürür.|

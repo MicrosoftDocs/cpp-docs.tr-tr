@@ -6,11 +6,11 @@ helpviewer_keywords:
 - messages [MFC]
 ms.assetid: b1476310-a135-42ca-817c-444fb3675491
 ms.openlocfilehash: 8e1bfd1baa8ffef76ba31912fc619c4217696683
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57300082"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62384133"
 ---
 # <a name="messages"></a>İletiler
 

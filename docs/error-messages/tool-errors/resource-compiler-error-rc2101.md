@@ -7,11 +7,11 @@ helpviewer_keywords:
 - RC2101
 ms.assetid: 580f9d74-162f-41e9-9438-ddbe3457c359
 ms.openlocfilehash: 595e87b73d79a01993e0e9b3aaa814332b21413f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50448029"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "64345283"
 ---
 # <a name="resource-compiler-error-rc2101"></a>Kaynak Derleyicisi Hatası RC2101
 

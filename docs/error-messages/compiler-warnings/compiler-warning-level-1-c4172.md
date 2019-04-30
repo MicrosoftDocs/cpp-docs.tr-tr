@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C4172
 ms.assetid: a8d2bf65-d8b1-4fe3-8340-a223d7e7fde6
 ms.openlocfilehash: caa71da9182c1da1d17d87d901084d0ee9badf73
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50536632"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62391796"
 ---
 # <a name="compiler-warning-level-1-c4172"></a>Derleyici Uyarısı (düzey 1) C4172
 

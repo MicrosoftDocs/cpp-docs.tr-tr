@@ -10,11 +10,11 @@ helpviewer_keywords:
 - Managed Extensions for C++, replacement syntax
 ms.assetid: 1e400ee6-3ac9-4910-a608-9d3d5993e423
 ms.openlocfilehash: cf123e54c633539c8e5bf8204344c842a21183ef
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59034043"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "64345260"
 ---
 # <a name="component-extensions-for-net-and-uwp"></a>.NET ve UWP için bileşen uzantıları
 

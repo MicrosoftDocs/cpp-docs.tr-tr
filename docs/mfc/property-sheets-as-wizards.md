@@ -5,11 +5,11 @@ helpviewer_keywords:
 - property sheets, as wizards
 ms.assetid: 1ea66ecb-23b0-484a-838d-58671a2999b5
 ms.openlocfilehash: c60148c099b34993bef0c9808e6561e37c26cc7f
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57301681"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62391367"
 ---
 # <a name="property-sheets-as-wizards"></a>Sihirbaz Olarak Özellik Sayfaları
 

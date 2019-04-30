@@ -8,11 +8,11 @@ helpviewer_keywords:
 - activation [MFC], windowless
 ms.assetid: 094903b5-c344-42fa-96ff-ce01e16891c5
 ms.openlocfilehash: 9d60c309d5644c106e6c85a0c7b3988916be7193
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57284716"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62386778"
 ---
 # <a name="providing-windowless-activation"></a>Penceresiz Etkinleştirme Sağlama
 
@@ -56,4 +56,4 @@ OLE sürükle ve bırak işleminin hedefi penceresiz denetime isteyebilirsiniz. 
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MFC ActiveX denetimleri: En iyi duruma getirme](../mfc/mfc-activex-controls-optimization.md)
+[MFC ActiveX Denetimleri: İyileştirme](../mfc/mfc-activex-controls-optimization.md)

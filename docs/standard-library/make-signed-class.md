@@ -8,11 +8,11 @@ helpviewer_keywords:
 - make_signed
 ms.assetid: 686247c0-247c-496b-9b1b-ba9dcd633621
 ms.openlocfilehash: c9fe9d54d503f1aa1dfb3debfaeb7649f2e5c18d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50631653"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62413066"
 ---
 # <a name="makesigned-class"></a>make_signed Sınıfı
 

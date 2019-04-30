@@ -51,11 +51,11 @@ helpviewer_keywords:
 - CObList [MFC], SetAt
 ms.assetid: 310a7edb-263c-4bd2-ac43-0bfbfddc5a33
 ms.openlocfilehash: 08e481f010be688fb0b9c219caa1954c9960846f
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58767281"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "64346258"
 ---
 # <a name="cstringlist-class"></a>CStringList sınıfı
 

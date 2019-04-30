@@ -7,11 +7,11 @@ helpviewer_keywords:
 - MFC ActiveX controls [MFC], properties
 ms.assetid: ec2e6759-5a8e-41d8-a275-99af8ff6f32e
 ms.openlocfilehash: 438c95c56961cc587b64e494678ade191f18ab6b
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57266971"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62392810"
 ---
 # <a name="mfc-activex-controls-advanced-property-implementation"></a>MFC ActiveX denetimleri: Gelişmiş özellik uygulama
 
@@ -74,6 +74,6 @@ Diğer alanlarda özel durumları kodun Raporlama ile ilgili daha fazla bilgi i�
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [MFC ActiveX Denetimleri](../mfc/mfc-activex-controls.md)<br/>
-[MFC ActiveX denetimleri: Özellikleri](../mfc/mfc-activex-controls-properties.md)<br/>
-[MFC ActiveX denetimleri: Yöntemleri](../mfc/mfc-activex-controls-methods.md)<br/>
+[MFC ActiveX Denetimleri: Özellikler](../mfc/mfc-activex-controls-properties.md)<br/>
+[MFC ActiveX Denetimleri: Yöntemler](../mfc/mfc-activex-controls-methods.md)<br/>
 [COleControl Sınıfı](../mfc/reference/colecontrol-class.md)

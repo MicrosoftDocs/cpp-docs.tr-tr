@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3813
 ms.assetid: ffdbc489-71bf-4cd6-988c-f824c9ab3ceb
 ms.openlocfilehash: 302b21d709424cda50abd0247f7b82048511cd73
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50470596"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62384315"
 ---
 # <a name="compiler-error-c3813"></a>Derleyici Hatası C3813
 

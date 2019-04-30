@@ -12,11 +12,11 @@ helpviewer_keywords:
 - Visual C++, namespaces
 ms.assetid: d1a5a9ab-1cad-47e6-a82d-385bb77f4188
 ms.openlocfilehash: 532fdcb5de179bd2fdeb25091ace7210d55a2658
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50508858"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "64345909"
 ---
 # <a name="namespaces-c"></a>Ad Alanları (C++)
 

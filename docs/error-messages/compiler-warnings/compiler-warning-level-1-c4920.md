@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C4920
 ms.assetid: 1e501f2e-93c1-4d27-a4fa-54fc86271ae7
 ms.openlocfilehash: cd501cf0e3b434523623276027056c93c77fc278
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50580701"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62393486"
 ---
 # <a name="compiler-warning-level-1-c4920"></a>Derleyici Uyarısı (düzey 1) C4920
 

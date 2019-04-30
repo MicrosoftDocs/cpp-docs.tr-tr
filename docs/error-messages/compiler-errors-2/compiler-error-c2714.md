@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2714
 ms.assetid: 401a5a42-660c-4bad-9d63-1a2d092bc489
 ms.openlocfilehash: feba363a7cd15d92bf850e8cba457ff310d15490
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50556370"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62386804"
 ---
 # <a name="compiler-error-c2714"></a>Derleyici Hatası C2714
 

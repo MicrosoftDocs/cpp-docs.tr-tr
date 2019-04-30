@@ -91,11 +91,11 @@ helpviewer_keywords:
 - CDockingPanesRow [MFC], UpdateVisibleState
 ms.assetid: e7a17832-0ebb-4bce-b799-cec9b60f76fe
 ms.openlocfilehash: e5720fa2ff8e85092b246002b7961ce3830ee7e3
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57277995"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62391198"
 ---
 # <a name="cdockingpanesrow-class"></a>CDockingPanesRow sınıfı
 

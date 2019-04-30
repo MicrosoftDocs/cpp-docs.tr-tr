@@ -7,11 +7,11 @@ helpviewer_keywords:
 - _writecr8 intrinsic
 ms.assetid: 6f8bd632-dddb-4335-971e-1acee24aa2b9
 ms.openlocfilehash: 44b009e68f3dd7825bc064e5f9f4ee8d03d7fb4a
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59024770"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62389911"
 ---
 # <a name="writecr8"></a>__writecr8
 

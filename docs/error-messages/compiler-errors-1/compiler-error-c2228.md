@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2228
 ms.assetid: 901cadb1-ce90-4ae0-a360-547a9ba2ca18
 ms.openlocfilehash: 20e295d09e39a12ed8163ec980fa304cd4167218
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50628403"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62404344"
 ---
 # <a name="compiler-error-c2228"></a>Derleyici Hatası C2228
 

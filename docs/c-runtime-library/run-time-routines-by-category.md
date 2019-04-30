@@ -10,11 +10,11 @@ helpviewer_keywords:
 - functions [CRT]
 ms.assetid: de6f5ac4-2226-4dad-be9f-deeb31138c9d
 ms.openlocfilehash: 0f81ad76a535cc4e4f5aa740e1501d3ffd323e2f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50499589"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62390899"
 ---
 # <a name="universal-c-runtime-routines-by-category"></a>Kategoriye göre Evrensel C çalışma zamanı yordamları
 

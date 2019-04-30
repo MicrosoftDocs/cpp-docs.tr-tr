@@ -10,11 +10,11 @@ helpviewer_keywords:
 - types [C++], declaring handles in
 ms.assetid: b8c0eead-17e5-4003-b21f-b673f997d79f
 ms.openlocfilehash: f5d6d31be9f3c10e1a56639ccf20663ce59d7941
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57746016"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62387415"
 ---
 # <a name="how-to-declare-handles-in-native-types"></a>Nasıl yapılır: Yerel türlerde işleyicileri bildirme
 

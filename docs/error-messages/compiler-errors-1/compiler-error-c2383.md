@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2383
 ms.assetid: 6696221d-879c-477a-a0f3-a6edc15fd3d7
 ms.openlocfilehash: 06d4c19208bd242169e1cd07a71e8a568f46f7b1
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50466098"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "64344805"
 ---
 # <a name="compiler-error-c2383"></a>Derleyici Hatası C2383
 

@@ -18,11 +18,11 @@ helpviewer_keywords:
 - partial_sum function [STL/CLR]
 ms.assetid: 1dc4d9a3-e734-459c-9678-5d9be0ef4c79
 ms.openlocfilehash: 0311b36ec1190631e053eeade443939703e69103
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51328909"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62384809"
 ---
 # <a name="numeric-stlclr"></a>sayısal (STL/CLR)
 

@@ -6,11 +6,11 @@ helpviewer_keywords:
 - writing a search algorithm [Concurrency Runtime]
 ms.assetid: 16d7278c-2d10-4014-9f58-f1899e719ff9
 ms.openlocfilehash: 19d732d98f24172471d96cd5e2962b2a99ab0203
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57262317"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62409999"
 ---
 # <a name="how-to-use-exception-handling-to-break-from-a-parallel-loop"></a>Nasıl yapılır: Özel durum paralel bir döngüden kurtulmak için işlemeyi kullanma
 

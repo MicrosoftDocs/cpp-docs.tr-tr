@@ -5,11 +5,11 @@ helpviewer_keywords:
 - unboxing
 ms.assetid: 75794696-9275-47bf-9a7d-5abe6585ab91
 ms.openlocfilehash: 640d2488d0fa1111262af371d88aea8f61511fa8
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58780905"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62387232"
 ---
 # <a name="how-to-unbox"></a>Nasıl yapılır: unbox
 

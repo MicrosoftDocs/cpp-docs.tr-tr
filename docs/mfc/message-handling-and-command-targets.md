@@ -10,11 +10,11 @@ helpviewer_keywords:
 - command routing [MFC], command targets
 ms.assetid: e45ce14c-e6b6-4262-8f3b-4e891e0ec2a3
 ms.openlocfilehash: 702cb96da13d6109c17a28e58c08a30af3f77fd4
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57302747"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62383808"
 ---
 # <a name="message-handling-and-command-targets"></a>İleti İşleme ve Komut Hedefleri
 

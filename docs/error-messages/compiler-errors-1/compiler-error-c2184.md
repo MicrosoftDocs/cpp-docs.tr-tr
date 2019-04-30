@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2184
 ms.assetid: 80fc8bff-7d76-4bde-94d2-01d84bb6824a
 ms.openlocfilehash: 146035134cc159b9e4271ce10c94f196098581b8
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50639978"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62385842"
 ---
 # <a name="compiler-error-c2184"></a>Derleyici Hatası C2184
 

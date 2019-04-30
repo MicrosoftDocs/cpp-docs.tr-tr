@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C4925
 ms.assetid: a4b206c0-016a-4f28-873a-bb8bb41bad50
 ms.openlocfilehash: cb7b416fe15380dc914bd57152e8a0ce3618ee85
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50614571"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62393512"
 ---
 # <a name="compiler-warning-level-1-c4925"></a>Derleyici Uyarısı (düzey 1) C4925
 

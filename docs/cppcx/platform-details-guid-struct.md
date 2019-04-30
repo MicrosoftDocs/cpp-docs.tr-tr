@@ -8,11 +8,11 @@ helpviewer_keywords:
 - Platform::Details::__GUID Struct
 ms.assetid: 507cc577-b34d-4952-b1a9-ff4ae98bb6dd
 ms.openlocfilehash: 39b661dcc658ffb01b636f659a5e77fbaa2bd2b9
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57738469"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62396073"
 ---
 # <a name="platformdetailsguid-struct"></a>Platform::details:: __guıd yapısı
 

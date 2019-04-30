@@ -99,11 +99,11 @@ helpviewer_keywords:
 - std::list [C++], unique
 ms.assetid: d3707f4a-10fd-444f-b856-f9ca2077c1cd
 ms.openlocfilehash: d990efb7d4c363b8d8e38f42f9edac7eea0a3882
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51522538"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62413222"
 ---
 # <a name="list-class"></a>list Sınıfı
 
@@ -118,7 +118,7 @@ class list
 
 ### <a name="parameters"></a>Parametreler
 
-*Türü*<br/>
+*Tür*<br/>
 Listede depolanacak öğe veri türü.
 
 *Ayırıcı*<br/>
@@ -177,7 +177,7 @@ C++ Standart Kitaplığı standart üstbilgisini \<listesi > tanımlamak için [
 |[silme](#erase)|Bir öğenin veya öğelerin aralığını belirtilen konumlardan listesindeki kaldırır.|
 |[Ön](#front)|Bir listedeki ilk öğeye bir başvuru döndürür.|
 |[get_allocator](#get_allocator)|Bir kopyasını döndürür `allocator` listesini oluşturmak için kullanılan nesne.|
-|[Ekle](#insert)|Bir öğenin veya öğelerin bir sayı veya öğe aralığını belirtilen konumda bir liste ekler.|
+|[insert](#insert)|Bir öğenin veya öğelerin bir sayı veya öğe aralığını belirtilen konumda bir liste ekler.|
 |[max_size](#max_size)|Bir listenin maksimum uzunluğunu döndürür.|
 |[Birleştirme](#merge)|Bağımsız değişken listeden öğeleri kaldırır, bunları hedef listesine ekler ve yeni birleşik öğeleri artan sırada veya başka bir belirtilen sırayla kümesini sıralar.|
 |[pop_back](#pop_back)|Bir liste sonundaki öğeyi silin.|

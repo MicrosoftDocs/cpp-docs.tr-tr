@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C4639
 ms.assetid: f94f7392-cdbb-4bf4-8a00-20dc90d3efe9
 ms.openlocfilehash: 4419493c673cb5916be751cc95af19a779086a5b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50465344"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62408088"
 ---
 # <a name="compiler-warning-level-4-c4639"></a>Derleyici Uyarısı (düzey 4) C4639
 

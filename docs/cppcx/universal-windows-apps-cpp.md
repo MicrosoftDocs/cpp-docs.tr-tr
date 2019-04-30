@@ -3,11 +3,11 @@ title: Evrensel Windows Uygulamaları (C++)
 ms.date: 03/30/2018
 ms.assetid: 357121cc-d390-4bae-b34a-39614861a9f4
 ms.openlocfilehash: fbd5366ee52dfe32baef9458a82c16914666699e
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58787075"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62392069"
 ---
 # <a name="universal-windows-apps-c"></a>Evrensel Windows Uygulamaları (C++)
 
@@ -35,5 +35,5 @@ Windows çalışma zamanı C++ Şablon kitaplığı, Windows çalışma zamanı 
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Visual Studio'da C++](../overview/visual-cpp-in-visual-studio.md)<br/>
+[Visual Studio’da C++](../overview/visual-cpp-in-visual-studio.md)<br/>
 [C++'ta Windows Programlamasına Genel Bakış](../windows/overview-of-windows-programming-in-cpp.md)<br/>

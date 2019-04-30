@@ -13,11 +13,11 @@ helpviewer_keywords:
 - COleDBRecordView [MFC], OnMove
 ms.assetid: 98612427-c4c9-4760-b7e1-85b17448add9
 ms.openlocfilehash: 1b09599479010f87e396e6f576c9524651923f9f
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57280383"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "64341712"
 ---
 # <a name="coledbrecordview-class"></a>COleDBRecordView sınıfı
 

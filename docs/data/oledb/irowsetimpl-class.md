@@ -92,11 +92,11 @@ helpviewer_keywords:
 - m_rgRowHandles
 ms.assetid: 6a9189af-7556-45b1-adcb-9d62bb36704c
 ms.openlocfilehash: 47b03a542933c6223e098bc9d8fa8d45bf5e047b
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59024458"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62390756"
 ---
 # <a name="irowsetimpl-class"></a>IRowsetImpl Sınıfı
 

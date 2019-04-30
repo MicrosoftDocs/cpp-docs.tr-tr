@@ -7,11 +7,11 @@ f1_keywords:
 - PPLINTERFACE/concurrency::scheduler_interface::scheduler_interface::schedule
 ms.assetid: 4de61c78-a2c6-4698-bd47-964baf7fa287
 ms.openlocfilehash: 99a3ea8b6ad1f23b4f3d54b7f2f406a3d115b374
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57283377"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62392446"
 ---
 # <a name="schedulerinterface-structure"></a>scheduler_interface Yapısı
 

@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2316
 ms.assetid: 9ad08eb5-060b-4eb0-8d66-0dc134f7bf67
 ms.openlocfilehash: 53e7743ec0d84451feb1dc1cd8849439aa142336
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50641187"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "64345718"
 ---
 # <a name="compiler-error-c2316"></a>Derleyici Hatası C2316
 

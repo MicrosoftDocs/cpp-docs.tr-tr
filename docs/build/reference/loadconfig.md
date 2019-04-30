@@ -9,11 +9,11 @@ helpviewer_keywords:
 - /LOADCONFIG dumpbin option
 ms.assetid: 24667afe-9bee-4f6e-ae72-f534c0050428
 ms.openlocfilehash: 689fd64e3d13cd609f709a3e4d3e9035ca711274
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57813857"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "64342512"
 ---
 # <a name="loadconfig"></a>/LOADCONFIG
 

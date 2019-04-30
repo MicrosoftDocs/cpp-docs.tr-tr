@@ -23,11 +23,11 @@ helpviewer_keywords:
 - _CrtSetBreakAlloc function
 ms.assetid: 33bfc6af-a9ea-405b-a29f-1c2d4d9880a1
 ms.openlocfilehash: bbc4b0de553533dde95f37675b3c9234569e3505
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50487834"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "64342949"
 ---
 # <a name="crtsetbreakalloc"></a>_CrtSetBreakAlloc
 

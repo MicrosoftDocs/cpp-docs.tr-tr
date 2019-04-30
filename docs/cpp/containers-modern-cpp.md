@@ -3,11 +3,11 @@ title: Kapsayıcılar (Modern C++)
 ms.date: 1/18/2018
 ms.topic: conceptual
 ms.openlocfilehash: 2da57bfca8b04f50a223dddfb886835c69f746a4
-ms.sourcegitcommit: a1fad0a266b20b313364a74b16c9ac45d089b1e9
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "54220146"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62392342"
 ---
 # <a name="containers-modern-c"></a>Kapsayıcılar (Modern C++)
 

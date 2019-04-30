@@ -8,11 +8,11 @@ helpviewer_keywords:
 - CHeaderCtrl class [MFC]
 ms.assetid: fb3e512b-9539-43c4-a7e7-3fafd6d0706e
 ms.openlocfilehash: bf99aad508aee52bc8d345ca084ef96ef40f803b
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57288646"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62386414"
 ---
 # <a name="using-cheaderctrl"></a>CHeaderCtrl Kullanma
 

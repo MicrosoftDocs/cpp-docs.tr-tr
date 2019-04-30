@@ -7,11 +7,11 @@ helpviewer_keywords:
 - out parameters
 ms.assetid: 02862448-603c-4e9d-a5c5-b45fe38446e3
 ms.openlocfilehash: 901257b92aaa5e13e6e79d612ca590b734e15881
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57747491"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62387233"
 ---
 # <a name="how-to-specify-an-out-parameter"></a>Nasıl yapılır: Belirttiğiniz bir parametre
 

@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2227
 ms.assetid: d470e8b8-7e15-468b-84fa-37d1a0132271
 ms.openlocfilehash: 8f9fc435682eb400574eea61a6f90392fa679233
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50452747"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62404331"
 ---
 # <a name="compiler-error-c2227"></a>Derleyici Hatası C2227
 

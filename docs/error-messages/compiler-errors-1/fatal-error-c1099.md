@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C1099
 ms.assetid: c050b074-a06a-4026-9e10-569029cc0739
 ms.openlocfilehash: 673a54f705a8ff46ad94167a4458ab538df69c88
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50611035"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62387012"
 ---
 # <a name="fatal-error-c1099"></a>Önemli hata C1099
 

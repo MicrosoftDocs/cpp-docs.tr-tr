@@ -8,11 +8,11 @@ helpviewer_keywords:
 - process __declspec keyword
 ms.assetid: 60eecc2f-4eef-4567-b9db-aaed34733023
 ms.openlocfilehash: 049360dddff2b9ca2ea460b96e027e86899f1ecb
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50591743"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "64344989"
 ---
 # <a name="process"></a>process
 

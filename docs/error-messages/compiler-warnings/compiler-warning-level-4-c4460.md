@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C4460
 ms.assetid: c97ac1c9-598d-479e-bfff-c993690c4f3d
 ms.openlocfilehash: a42562a2c35bb56de4ce7147e199f4db2dddb684
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50532203"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62400818"
 ---
 # <a name="compiler-warning-level-4-c4460"></a>Derleyici Uyarısı (düzey 4) C4460
 

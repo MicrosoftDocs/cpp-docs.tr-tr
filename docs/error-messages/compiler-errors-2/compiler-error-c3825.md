@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3825
 ms.assetid: 18e204a1-f26e-42c6-8d74-2b49cc95f940
 ms.openlocfilehash: ddb665dab303b3133d4018910c2142a20a889bb0
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50528641"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62390587"
 ---
 # <a name="compiler-error-c3825"></a>Derleyici Hatası C3825
 

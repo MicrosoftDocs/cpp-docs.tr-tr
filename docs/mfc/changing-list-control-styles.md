@@ -7,11 +7,11 @@ helpviewer_keywords:
 - CListCtrl class [MFC], changing styles
 ms.assetid: be74a005-0795-417c-9056-f6342aa74b26
 ms.openlocfilehash: 2ba9ae81f7b1693be0df3565256a65e4e3561fd3
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57266880"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "64344461"
 ---
 # <a name="changing-list-control-styles"></a>Liste Denetim Stillerini Değiştirme
 

@@ -9,11 +9,11 @@ helpviewer_keywords:
 - '& operator [C++], address-of operator'
 ms.assetid: 2828221a-15f6-4acc-87fe-25e34feebb88
 ms.openlocfilehash: a03a6100c372e059bd9ef2ddde0558da307923dc
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50519125"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62385030"
 ---
 # <a name="address-of-operator-amp"></a>Address-of işleci: &amp;
 

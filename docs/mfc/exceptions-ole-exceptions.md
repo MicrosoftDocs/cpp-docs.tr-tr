@@ -9,11 +9,11 @@ helpviewer_keywords:
 - OLE exceptions [MFC], classes for handling
 ms.assetid: 2f8e0161-b94f-48bb-a5a2-6f644b192527
 ms.openlocfilehash: e404005a88398ec909e3043cfa55c7e8fbe2f594
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57297911"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62405970"
 ---
 # <a name="exceptions-ole-exceptions"></a>Özel durumlar: OLE özel durumları
 

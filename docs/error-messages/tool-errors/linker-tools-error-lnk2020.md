@@ -7,11 +7,11 @@ helpviewer_keywords:
 - LNK2020
 ms.assetid: 4dd017d0-5e83-471b-ac8a-538ac1ed6870
 ms.openlocfilehash: 7290a90dfd92d84c4632e7f9dd38d36eccd4ac27
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50499864"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62386336"
 ---
 # <a name="linker-tools-error-lnk2020"></a>Bağlayıcı Araçları Hatası LNK2020
 

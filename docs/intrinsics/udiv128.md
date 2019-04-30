@@ -6,11 +6,11 @@ f1_keywords:
 helpviewer_keywords:
 - _udiv128 intrinsic
 ms.openlocfilehash: 0e66bbe978199f47134aa288bdd2bac4eb3e332a
-ms.sourcegitcommit: 2ce88de75e7681220ae09a0ab13056f22f357a46
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "59983112"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62390171"
 ---
 # <a name="udiv128"></a>_udiv128
 

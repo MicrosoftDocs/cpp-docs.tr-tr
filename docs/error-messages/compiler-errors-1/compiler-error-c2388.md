@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2388
 ms.assetid: 764ad2d7-cb04-425f-ba30-70989488c4a4
 ms.openlocfilehash: 62afcb1fafc19d3d61a86f2fbc10cb99e095afc5
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50459767"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62393668"
 ---
 # <a name="compiler-error-c2388"></a>Derleyici Hatası C2388
 

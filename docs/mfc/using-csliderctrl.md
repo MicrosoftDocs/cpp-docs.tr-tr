@@ -8,11 +8,11 @@ helpviewer_keywords:
 - slider controls [MFC], using
 ms.assetid: 242c7bcd-126e-4b9b-8f76-8082ad06fe73
 ms.openlocfilehash: f133d25ddab76f42b4bf7b133bb988def9f0f01a
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57257689"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62411779"
 ---
 # <a name="using-csliderctrl"></a>CSliderCtrl Kullanma
 

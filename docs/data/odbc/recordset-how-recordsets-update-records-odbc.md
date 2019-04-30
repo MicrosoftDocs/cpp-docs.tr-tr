@@ -9,11 +9,11 @@ helpviewer_keywords:
 - recordsets, updating
 ms.assetid: 5ceecc06-7a86-43b1-93db-a54fb1e717c7
 ms.openlocfilehash: bf71f562714e2dacfe75540e1e532219b3eb307f
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59034488"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62397815"
 ---
 # <a name="recordset-how-recordsets-update-records-odbc"></a>Kayıt kümesi: Kümelerinin kayıtları Güncelleştirmesi (ODBC) kayıtları
 
@@ -73,4 +73,4 @@ Topluca alındığında, bir kayıt kümesi alan veri üyeleri bir kayıt içere
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Kayıt Kümesi (ODBC)](../../data/odbc/recordset-odbc.md)<br/>
-[Kayıt kümesi: Nasıl AddNew, düzenleme ve silme çalışma (ODBC)](../../data/odbc/recordset-how-addnew-edit-and-delete-work-odbc.md)
+[Kayıt kümesi: AddNew, Düzenleme ve Silmenin Çalışma Biçimi (ODBC)](../../data/odbc/recordset-how-addnew-edit-and-delete-work-odbc.md)

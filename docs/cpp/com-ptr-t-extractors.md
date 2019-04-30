@@ -21,11 +21,11 @@ helpviewer_keywords:
 - extractors [C++]
 ms.assetid: 194b9e0e-123c-49ff-a187-0a7fcd68145a
 ms.openlocfilehash: bac1f9a139d2fb0092ef0869587ae8b54342fe82
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51330326"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62399336"
 ---
 # <a name="comptrt-extractors"></a>_com_ptr_t Ayıklayıcıları
 

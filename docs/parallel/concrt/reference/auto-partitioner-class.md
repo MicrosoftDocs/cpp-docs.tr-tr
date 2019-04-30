@@ -9,11 +9,11 @@ helpviewer_keywords:
 - auto_partitioner class
 ms.assetid: 7cc08e5d-20b4-47a4-b4b5-c214a78f5a9e
 ms.openlocfilehash: 2d8bbb8e8af17dd19953487c47e5fd40343fe349
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57264826"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62391094"
 ---
 # <a name="autopartitioner-class"></a>auto_partitioner Sınıfı
 

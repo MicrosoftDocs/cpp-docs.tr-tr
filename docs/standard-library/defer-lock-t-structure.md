@@ -5,11 +5,11 @@ f1_keywords:
 - mutex/std::defer_lock_t
 ms.assetid: 4c4588eb-ca51-4949-b5d1-8539cc4577ad
 ms.openlocfilehash: ec48b7d7ab7325276682357c78037697cc475857
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50553614"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62394045"
 ---
 # <a name="deferlockt-structure"></a>defer_lock_t Yapısı
 

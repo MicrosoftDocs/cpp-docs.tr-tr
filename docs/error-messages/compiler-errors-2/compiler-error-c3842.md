@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3842
 ms.assetid: 41a1a44a-c618-40a2-8d26-7da27d14095d
 ms.openlocfilehash: a61a69aca53f7f8996d0261a57b749930ecc01cc
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50638353"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62385517"
 ---
 # <a name="compiler-error-c3842"></a>Derleyici Hatası C3842
 

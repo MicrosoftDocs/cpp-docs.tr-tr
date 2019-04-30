@@ -8,11 +8,11 @@ helpviewer_keywords:
 - strings [C++], converting
 ms.assetid: 1fde79a0-9d0b-44e5-981b-e8f2676c199d
 ms.openlocfilehash: e1fca0e8cb614c111af80324793cf8027be333a0
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57749986"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62387519"
 ---
 # <a name="how-to-convert-standard-string-to-systemstring"></a>Nasıl yapılır: Standart dizeyi System::String olarak dönüştürme
 

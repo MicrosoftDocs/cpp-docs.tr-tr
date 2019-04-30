@@ -1,18 +1,34 @@
 ---
-title: Matematik Hataları M6101 - M6205
-ms.date: 11/17/2017
+title: Matematik hataları
+ms.date: 04/16/2019
 ms.assetid: bdf3dc2a-d993-4f53-b0f2-9604e4914127
-ms.openlocfilehash: 323864dcae5b60b96e193487afd53fe004d38c7e
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
-ms.translationtype: MT
+ms.openlocfilehash: 7d89a7b9f89342b973307f592e59d05cfe44f84f
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59777243"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62393226"
 ---
-# <a name="math-errors-m6101-through-m6205"></a>Matematik Hataları M6101 - M6205
+# <a name="math-errors-mxxxx"></a>Matematik hataları (Mxxxx)
 
-Bu bölümde çalışma zamanı kayan nokta matematik kitaplığı tarafından oluşturulan hatalara bir başvurudur.
+Bu bölümde çalışma zamanı kayan nokta matematik kitaplığı tarafından oluşturulan hatalara bir başvurudur. Matematik çalışma zamanı hataları ve Uyarıları olan M form*xxxx*burada *xxxx* bir dört basamaklı sayıdır.
 
-Microsoft'un ortak forumlarında hatalar ve Uyarılar için Ek Yardım bulabilirsiniz. Hata veya uyarı numarası üzerinde arayabilirsiniz [Geliştirici topluluğu](https://developercommunity.visualstudio.com) site. [Visual C++ genel](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=vcgeneral) Forumu, diğer forumlarda ele alınmamaktadır Visual C++ hakkında sorular içindir. Ayrıca arama hataları ve uyarıları ve sorular [Stack Overflow](http://stackoverflow.com/) çözümler bulabilirsiniz.
+[!INCLUDE[error-boilerplate](../../error-messages/includes/error-boilerplate.md)]
 
-Ek Yardım ve topluluk kaynakları, bağlantılar için bkz. [Visual C++ Yardım ve topluluk](../../overview/visual-cpp-help-and-community.md).
+## <a name="math-errors"></a>Matematik hataları
+
+[Matematik hatası M6101](math-error-m6101.md) \
+[Matematik hatası M6102](math-error-m6102.md) \
+[Matematik hatası M6107](math-error-m6107.md) \
+[Matematik hatası M6108](math-error-m6108.md) \
+[Matematik hatası M6110](math-error-m6110.md) \
+[Matematik hatası M6111](math-error-m6111.md) \
+[Matematik hatası M6201](math-error-m6201.md) \
+[Matematik hatası M6202](math-error-m6202.md) \
+[Matematik hatası M6203](math-error-m6203.md) \
+[Matematik hatası M6205](math-error-m6205.md)
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[C /C++ derleyicisi ve derleme araçları hataları ve Uyarıları](../compiler-errors-1/c-cpp-build-errors.md) \
+[Matematik ve kayan nokta desteği](../../c-runtime-library/floating-point-support.md)

@@ -9,11 +9,11 @@ helpviewer_keywords:
 - data types [C], MBCS and SBCS
 ms.assetid: 4c3ef9da-e397-48d4-800e-49dba36db171
 ms.openlocfilehash: 2d73155e36909efb1a7261f9fe45c2431525437a
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57742912"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62390925"
 ---
 # <a name="sbcs-and-mbcs-data-types"></a>SBCS ve MBCS Veri Türleri
 

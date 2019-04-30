@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3352
 ms.assetid: f233bed7-474e-425f-aad2-7801578169d4
 ms.openlocfilehash: 6641f05c8daa5ad505c0bcb8d29a369ad5fd9a9a
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59778338"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62402638"
 ---
 # <a name="compiler-error-c3352"></a>Derleyici Hatası C3352
 

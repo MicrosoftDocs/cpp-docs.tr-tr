@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2243
 ms.assetid: b90065bb-d251-4ba9-8b4c-280ee13fa9c0
 ms.openlocfilehash: ded5a3d459e4b5d1412998aadbaa385864f505a6
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50445558"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62388883"
 ---
 # <a name="compiler-error-c2243"></a>Derleyici Hatası C2243
 

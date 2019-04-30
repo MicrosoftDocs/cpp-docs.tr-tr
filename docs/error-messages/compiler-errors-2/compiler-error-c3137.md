@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3137
 ms.assetid: 70bb1313-2e87-43ed-a0d8-33fa6ff475e4
 ms.openlocfilehash: c29aecb798b13233f10ad2808d1be530b25d4b54
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50438030"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "64344613"
 ---
 # <a name="compiler-error-c3137"></a>Derleyici Hatası C3137
 

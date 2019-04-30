@@ -7,11 +7,11 @@ helpviewer_keywords:
 - Debug class
 ms.assetid: 076bd528-1b6f-4e8a-a372-eb5849cf969a
 ms.openlocfilehash: 3a262a0d2ef429cb94f4648eb7c7180e7b130279
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57743614"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62393785"
 ---
 # <a name="debug-class-ccli"></a>Hata Ayıklama Sınıfı (C++/CLI)
 

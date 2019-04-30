@@ -7,11 +7,11 @@ helpviewer_keywords:
 - PRJ0035
 ms.assetid: 0667116d-338c-40a4-972c-da875f778cb5
 ms.openlocfilehash: e221fd85f1260ed04d49b43dea3d13407f504847
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50472351"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "64345290"
 ---
 # <a name="project-build-error-prj0035"></a>Proje Derleme Hatası PRJ0035
 

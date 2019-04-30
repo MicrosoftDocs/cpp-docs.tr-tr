@@ -11,11 +11,11 @@ helpviewer_keywords:
 - OnCmdMessage method [MFC]
 ms.assetid: 8df07024-506f-47e7-bba9-1c3bc5ad8ab6
 ms.openlocfilehash: 6ed2e4c09e2fe413d29ad9953dbb8a03c106e86c
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57274602"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62385303"
 ---
 # <a name="oncmdmsg-handler"></a>OnCmdMsg İşleyicisi
 

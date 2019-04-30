@@ -14,11 +14,11 @@ helpviewer_keywords:
 - formats [C++], exception codes
 ms.assetid: be1376c3-c46a-4f52-ad1d-c2362840746a
 ms.openlocfilehash: 49ee800bafff017c29b73c5f6fd64318009a140a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50562051"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62403470"
 ---
 # <a name="raising-software-exceptions"></a>Yazılım Özel Durumlarını Oluşturma
 
@@ -38,7 +38,7 @@ Yapılandırılmış özel durum işleme hatalarla kullanmak için:
 
 |Bits|Önerilen ikili ayarı|Açıklama|
 |----------|--------------------------------|-----------------|
-|31-30|11|Bu iki bit kod temel durumunu açıklayan: 11 hatası, 00 = = başarılı, 01 = bilgilendirici, 10 = uyarı.|
+|31-30|11|Bu iki bit kod temel durumunu açıklar:  11 hatası, 00 = = başarılı, 01 = bilgilendirici, 10 = uyarı.|
 |29|1.|İstemci bit. Kullanıcı tanımlı kodları için 1 olarak ayarlayın.|
 |28|0|Ayrılmış bit. (0 olarak ayarlanmış olarak bırakın.)|
 

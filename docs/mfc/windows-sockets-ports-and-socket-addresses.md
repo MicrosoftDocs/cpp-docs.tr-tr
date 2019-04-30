@@ -11,11 +11,11 @@ helpviewer_keywords:
 - sockets [MFC], ports
 ms.assetid: e050261a-9285-4f31-a1c5-6c8033af5b4a
 ms.openlocfilehash: c33ec1376c1898272cf80e8d77c5cc273e16f9de
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57277787"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62389378"
 ---
 # <a name="windows-sockets-ports-and-socket-addresses"></a>Windows Yuvaları: Bağlantı noktaları ve yuva adresleri
 
@@ -40,15 +40,15 @@ Yuva oluşturma arama yaparken, genellikle kendi adresinizi belirtin gerekmez.
 
 Daha fazla bilgi için bkz.:
 
-- [Windows Yuvaları: Sınıf Casyncsocket'ini kullanma](../mfc/windows-sockets-using-class-casyncsocket.md)
+- [Windows Yuvaları: CAsyncSocket Sınıfını Kullanma](../mfc/windows-sockets-using-class-casyncsocket.md)
 
-- [Windows Yuvaları: Yuvaları Arşivlerle kullanma](../mfc/windows-sockets-using-sockets-with-archives.md)
+- [Windows Yuvaları: Yuvaları Arşivlerle Kullanma](../mfc/windows-sockets-using-sockets-with-archives.md)
 
-- [Windows Yuvaları: Yuvaların arşivlerle çalışması](../mfc/windows-sockets-how-sockets-with-archives-work.md)
+- [Windows Yuvaları: Yuvaları Arşivlerle Kullanma](../mfc/windows-sockets-how-sockets-with-archives-work.md)
 
-- [Windows Yuvaları: Stream yuva](../mfc/windows-sockets-stream-sockets.md)
+- [Windows Yuvaları: Akış Yuvaları](../mfc/windows-sockets-stream-sockets.md)
 
-- [Windows Yuvaları: Veri birimi yuvaları](../mfc/windows-sockets-datagram-sockets.md)
+- [Windows Yuvaları: Veri Birimi Yuvaları](../mfc/windows-sockets-datagram-sockets.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -7,11 +7,11 @@ helpviewer_keywords:
 - binary data, binary output files
 ms.assetid: 180954af-8cd6-444b-9a76-2f630a3389d8
 ms.openlocfilehash: 99445275a8f92622f451e8a88082dc2b28fb60b6
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50615652"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62414067"
 ---
 # <a name="binary-output-files"></a>İkili Çıktı Dosyaları
 

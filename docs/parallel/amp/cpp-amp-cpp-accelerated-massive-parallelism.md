@@ -6,11 +6,11 @@ helpviewer_keywords:
 - C++ Accelerated Massive Parallelism, getting started
 ms.assetid: e27824cb-3167-409b-8c3f-a0e476d8f349
 ms.openlocfilehash: f8ac71023f66868a66fb8c54a5e86678225378a1
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50613180"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62400701"
 ---
 # <a name="c-amp-c-accelerated-massive-parallelism"></a>C++ AMP (C++ Accelerated Massive Parallelism)
 
@@ -26,7 +26,7 @@ C++ AMP (C++ Accelerated Massive Parallelism) ayrı ekran kartı üzerindeki gra
 |[Hızlandırıcı ve accelerator_view Nesnelerini Kullanma](../../parallel/amp/using-accelerator-and-accelerator-view-objects.md)|Kodunuzun GPU üzerinde yürütülmesini özelleştirmek için Hızlandırıcıları kullanmayı açıklar.|
 |[UWP Uygulamalarında C++ AMP Kullanma](../../parallel/amp/using-cpp-amp-in-windows-store-apps.md)|Windows çalışma zamanı türlerini kullanan Evrensel Windows Platformu (UWP) uygulamaları C++ AMP kullanmayı açıklar.|
 |[Grafikler (C++ AMP)](../../parallel/amp/graphics-cpp-amp.md)|C++ AMP grafik kitaplığının nasıl kullanılacağını açıklar.|
-|[İzlenecek yol: Matris Çarpım](../../parallel/amp/walkthrough-matrix-multiplication.md)|C++ AMP kodu kullanarak ve döşemek matris çarpım göstermektedir.|
+|[İzlenecek yol: Matris Çarpımı](../../parallel/amp/walkthrough-matrix-multiplication.md)|C++ AMP kodu kullanarak ve döşemek matris çarpım göstermektedir.|
 |[İzlenecek yol: C++ AMP Uygulamasında Hata Ayıklama](../../parallel/amp/walkthrough-debugging-a-cpp-amp-application.md)|Oluşturun ve büyük bir tamsayı dizisi toplamak için paralel azaltma kullanan bir uygulamanın hatalarını ayıklama işlemleri açıklanmaktadır.|
 
 ## <a name="reference"></a>Başvuru

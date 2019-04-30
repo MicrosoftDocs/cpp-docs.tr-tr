@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C4462
 ms.assetid: 4e20aca4-293e-4c75-a83d-961c27ab7840
 ms.openlocfilehash: bd4d5c1fd7dd8d7419fc901149ceab7e769e7076
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51331873"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62404058"
 ---
 # <a name="compiler-warning-level-1-c4462"></a>Derleyici Uyarısı (düzey 1) C4462
 

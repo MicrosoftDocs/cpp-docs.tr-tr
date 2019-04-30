@@ -5,11 +5,11 @@ helpviewer_keywords:
 - CLR types, passing by reference
 ms.assetid: d91e471c-34ff-4786-9e0d-c6db0494b946
 ms.openlocfilehash: 8be575bd39bc3b2e6512ba1bcb40d9206731f83a
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58777057"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62387142"
 ---
 # <a name="how-to-use-tracking-references-in-ccli"></a>Nasıl yapılır: İzleme başvurularını kullanma C++/CLI
 

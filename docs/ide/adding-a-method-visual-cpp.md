@@ -11,11 +11,11 @@ helpviewer_keywords:
 - IDL attributes, add method wizard
 ms.assetid: 4ba4e45f-fa38-4d5e-af44-cbec0a7ab558
 ms.openlocfilehash: 23fb05e633713016b1f6289f73a916502736af10
-ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
+ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51692722"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "64346008"
 ---
 # <a name="add-a-method"></a>Bir yöntem ekleyin
 
@@ -69,7 +69,7 @@ Bir yöntem bir arabirim eklemek için bu sihirbazı kullanın. Proje türü vey
   |--------------------|-----------------|
   |ATL çift arabirim, özel arabirim ve yerel özel arabirimi|Kendi yöntem adını belirtin.|
   |MFC dispinterface|Kendi yöntemi adı belirtin veya listeden bir önerilen yöntem adı seçin. Listeden bir ad seçerseniz, uygun değere görünür **dönüş türü** kutusu ve değiştirilemez.|
-  |MFC ActiveX denetimi dispinterface|Stok yöntemlerden birini seçin veya kendi sağlamak [DoClick](../mfc/reference/colecontrol-class.md#doclick) ve [Yenile](../mfc/reference/colecontrol-class.md#refresh). Daha fazla bilgi için [MFC ActiveX denetimleri: stok yöntemler ekleme](../mfc/mfc-activex-controls-adding-stock-methods.md).|
+  |MFC ActiveX denetimi dispinterface|Stok yöntemlerden birini seçin veya kendi sağlamak [DoClick](../mfc/reference/colecontrol-class.md#doclick) ve [Yenile](../mfc/reference/colecontrol-class.md#refresh). Daha fazla bilgi için [MFC ActiveX denetimleri: Stok yöntemler ekleme](../mfc/mfc-activex-controls-adding-stock-methods.md).|
 
 - **Yöntem türü**
 

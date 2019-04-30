@@ -6,11 +6,11 @@ f1_keywords:
 - vc-pragma.loop
 ms.assetid: 6d5bb428-cead-47e7-941d-7513bbb162c7
 ms.openlocfilehash: a1640881d98073381a941478f4b78177a95698d7
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59023172"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62411337"
 ---
 # <a name="loop"></a>loop
 

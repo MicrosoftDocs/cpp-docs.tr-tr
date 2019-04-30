@@ -8,11 +8,11 @@ helpviewer_keywords:
 - member functions [C++], definition in class declaration
 ms.assetid: 9f77a438-500e-40bb-a6c6-544678f3f4c8
 ms.openlocfilehash: faa7d016c8f48e9a5ee57c8efa4ce3dfd3f3eb01
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50652472"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "64345849"
 ---
 # <a name="overview-of-member-functions"></a>Üye İşlevlerine Genel Bakış
 

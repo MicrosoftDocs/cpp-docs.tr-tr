@@ -3,11 +3,11 @@ title: Temsil Edilmeyen Karakter Sabitleri
 ms.date: 11/04/2016
 ms.assetid: 5a710a1c-dba1-49b4-a183-ed94a00a5358
 ms.openlocfilehash: 41275c226f80faffefd773ff8bb45cd8f2d390d3
-ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
+ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56151409"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "64343064"
 ---
 # <a name="unrepresented-character-constants"></a>Temsil Edilmeyen Karakter Sabitleri
 

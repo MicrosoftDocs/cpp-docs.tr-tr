@@ -33,11 +33,11 @@ helpviewer_keywords:
 - painting and device context
 ms.assetid: d0cd51f1-f778-4c7e-bf50-d738d10433c7
 ms.openlocfilehash: 7893b446c224dd84514ab63dc97cae467792750c
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57280010"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62405982"
 ---
 # <a name="device-contexts"></a>Cihaz Bağlamları
 

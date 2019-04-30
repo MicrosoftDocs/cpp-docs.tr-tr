@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2533
 ms.assetid: 5b335652-076c-4824-87c8-a741f64a3ce0
 ms.openlocfilehash: 00cb13d1999b00dfcaa5a2bc7bfb3b8eb16af5f2
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50661883"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62386986"
 ---
 # <a name="compiler-error-c2533"></a>Derleyici Hatası C2533
 

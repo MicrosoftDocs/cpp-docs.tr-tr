@@ -9,11 +9,11 @@ helpviewer_keywords:
 - MFC, exceptions
 ms.assetid: 1a2caf12-b3e9-4189-86d2-bf7a595bf025
 ms.openlocfilehash: 99a2764dcad15267b1aab8a60951f99f21352726
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57286328"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62392875"
 ---
 # <a name="exception-classes"></a>Özel Durum Sınıfları
 

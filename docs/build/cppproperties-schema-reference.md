@@ -4,11 +4,11 @@ ms.date: 03/21/2019
 helpviewer_keywords:
 - CMake in Visual C++
 ms.openlocfilehash: 43ffa0e92649fe233c6a743d4b64a2749cb28f5a
-ms.sourcegitcommit: 42e65c171aaa17a15c20b155d22e3378e27b4642
+ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58356107"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "64341635"
 ---
 # <a name="cpppropertiesjson-schema-reference"></a>CppProperties.json schema reference
 

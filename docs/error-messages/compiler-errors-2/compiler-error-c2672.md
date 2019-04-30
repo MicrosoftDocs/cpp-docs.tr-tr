@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2672
 ms.assetid: 7e86338a-2d4b-40fe-9dd2-ac6886f3f31a
 ms.openlocfilehash: df0f656c9db23739ec62629088b9cc5f7950a92d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50570449"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62386869"
 ---
 # <a name="compiler-error-c2672"></a>Derleyici Hatası C2672
 

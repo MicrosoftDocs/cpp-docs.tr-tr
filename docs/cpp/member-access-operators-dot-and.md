@@ -15,11 +15,11 @@ helpviewer_keywords:
 - member access
 ms.assetid: f8fc3df9-d728-40c5-b384-276927f5f1b3
 ms.openlocfilehash: 0f370aa04af2e78efd5edfb7836fb71a4c4516a7
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50468750"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "64345980"
 ---
 # <a name="member-access-operators--and--gt"></a>Üye erişim işleçleri:. ve -&gt;
 

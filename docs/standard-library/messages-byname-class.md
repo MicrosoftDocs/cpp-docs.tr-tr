@@ -7,11 +7,11 @@ helpviewer_keywords:
 - messages_byname class
 ms.assetid: c6c64841-3e80-43c8-b54c-fed41833ad6b
 ms.openlocfilehash: 7b341f3e1dbf76021911c70560b83932b5302191
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50605350"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62404799"
 ---
 # <a name="messagesbyname-class"></a>messages_byname Sınıfı
 

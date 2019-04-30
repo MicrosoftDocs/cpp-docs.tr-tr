@@ -33,11 +33,11 @@ helpviewer_keywords:
 - FlushData method
 ms.assetid: 1e9fee15-ed9e-4387-af8f-215569beca6c
 ms.openlocfilehash: 8b2a92fdefd965d4b87e0a9ed411cc1b5c89b8f9
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59036805"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62390769"
 ---
 # <a name="irowsetchangeimpl-class"></a>IRowsetChangeImpl Sınıfı
 

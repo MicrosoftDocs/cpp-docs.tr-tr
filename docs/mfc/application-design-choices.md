@@ -12,11 +12,11 @@ helpviewer_keywords:
 - client applications [MFC], vs. server applications on Internet
 ms.assetid: 9b96172c-b4d4-4c69-bfb2-226ce0de6d08
 ms.openlocfilehash: cdb294e4ab808a7e4cbcec457f6e744eff9f12cb
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57302825"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62394669"
 ---
 # <a name="application-design-choices"></a>Uygulama Tasarımı Seçimleri
 

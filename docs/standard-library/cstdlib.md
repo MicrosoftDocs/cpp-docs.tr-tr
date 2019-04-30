@@ -7,11 +7,11 @@ helpviewer_keywords:
 - cstdlib header
 ms.assetid: 0a6aaebf-84e9-4b60-ae90-17e11981cf54
 ms.openlocfilehash: 7732a20733a5a979bd6c0f0154f87ee78d2827ae
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51521628"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62394227"
 ---
 # <a name="ltcstdlibgt"></a>&lt;cstdlib&gt;
 

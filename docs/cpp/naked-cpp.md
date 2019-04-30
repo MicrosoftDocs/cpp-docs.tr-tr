@@ -8,11 +8,11 @@ helpviewer_keywords:
 - naked __declspec keyword
 ms.assetid: 69723241-05e1-439b-868e-20a83a16ab6d
 ms.openlocfilehash: 951760d7f9566c084bbe3d5a574d006020576c61
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50478383"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "64345004"
 ---
 # <a name="naked-c"></a>naked (C++)
 

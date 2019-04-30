@@ -7,11 +7,11 @@ helpviewer_keywords:
 - instantiation, explicit
 ms.assetid: 8b0d4e32-45a6-49d5-8041-1ebdd674410e
 ms.openlocfilehash: 45661653b4b8f1a4f94ece1c53aa86f4a431700b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50575987"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62392212"
 ---
 # <a name="explicit-instantiation"></a>Açık Örnekleme
 

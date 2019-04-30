@@ -9,11 +9,11 @@ helpviewer_keywords:
 - common language runtime, /clr compiler option
 ms.assetid: 5a854822-6172-4b22-b236-320165412568
 ms.openlocfilehash: 541581e0f172c8ce2601e2e476ccd03a49757f80
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57747235"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62387350"
 ---
 # <a name="how-to-determine-if-an-image-is-native-or-clr"></a>Nasıl yapılır: Görüntüyü yerel veya CLR olup olmadığını belirler
 

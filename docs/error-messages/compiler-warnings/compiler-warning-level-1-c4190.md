@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C4190
 ms.assetid: a4d0ad93-a19a-4063-addd-36d605831567
 ms.openlocfilehash: 05984594a57878aad8037861a15ac9284ff65192
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50521238"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62386505"
 ---
 # <a name="compiler-warning-level-1-c4190"></a>Derleyici Uyarısı (düzey 1) C4190
 

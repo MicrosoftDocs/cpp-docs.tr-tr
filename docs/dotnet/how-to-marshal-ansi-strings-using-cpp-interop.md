@@ -10,11 +10,11 @@ helpviewer_keywords:
 - data marshaling [C++], strings
 ms.assetid: 5eda2eb6-5140-40f0-82cf-7ce171fffb45
 ms.openlocfilehash: b73d8ed403ab0bbad7703f66f0d8d4ac23bb7766
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57748040"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "64345745"
 ---
 # <a name="how-to-marshal-ansi-strings-using-c-interop"></a>Nasıl yapılır: C++ birlikte çalışması kullanarak ANSI dizelerini sıralama
 

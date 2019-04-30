@@ -98,11 +98,11 @@ helpviewer_keywords:
 - operator>= member [STL/CLR]
 ms.assetid: 3dfe329d-a078-462a-b050-7999ce6110ad
 ms.openlocfilehash: 9cc7dd32f222e68abb45fe8c518d9f378453b372
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50641538"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62384841"
 ---
 # <a name="multimap-stlclr"></a>çoklu eşleme (STL/CLR)
 
@@ -495,7 +495,7 @@ size_type count(key_type key);
 
 #### <a name="parameters"></a>Parametreler
 
-*Anahtarı*<br/>
+*anahtar*<br/>
 Aranacak anahtar değeri.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -774,7 +774,7 @@ bool erase(key_type key)
 *ilk*<br/>
 Silme aralığını başlangıcı.
 
-*Anahtarı*<br/>
+*anahtar*<br/>
 Silinecek anahtar değer.
 
 *Son*<br/>
@@ -862,7 +862,7 @@ iterator find(key_type key);
 
 #### <a name="parameters"></a>Parametreler
 
-*Anahtarı*<br/>
+*anahtar*<br/>
 Aranacak anahtar değeri.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -1476,7 +1476,7 @@ iterator lower_bound(key_type key);
 
 #### <a name="parameters"></a>Parametreler
 
-*Anahtarı*<br/>
+*anahtar*<br/>
 Aranacak anahtar değeri.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -1535,7 +1535,7 @@ static value_type make_value(key_type key, mapped_type mapped);
 
 #### <a name="parameters"></a>Parametreler
 
-*Anahtarı*<br/>
+*anahtar*<br/>
 Kullanılacak anahtar değeri.
 
 *Eşlenen*<br/>
@@ -2266,7 +2266,7 @@ iterator upper_bound(key_type key);
 
 #### <a name="parameters"></a>Parametreler
 
-*Anahtarı*<br/>
+*anahtar*<br/>
 Aranacak anahtar değeri.
 
 ### <a name="remarks"></a>Açıklamalar

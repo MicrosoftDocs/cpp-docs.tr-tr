@@ -7,11 +7,11 @@ helpviewer_keywords:
 - Windows Forms [C++], MFC support
 ms.assetid: b2957370-cf1f-4779-94ac-228cd393686c
 ms.openlocfilehash: 558c763fd18cd1569ff23435bf6156b3117f117d
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57740955"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62387324"
 ---
 # <a name="how-to-do-ddxddv-data-binding-with-windows-forms"></a>Nasıl yapılır: DDX/DDV veri ile Windows Forms bağlama yapın
 

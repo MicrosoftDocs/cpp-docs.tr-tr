@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C4162
 ms.assetid: 21ae3c92-501d-4689-ad7d-13753cb65eff
 ms.openlocfilehash: 6c6b675fd47cb6e98255515c7cd77c6dd48ea02b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50578275"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62391822"
 ---
 # <a name="compiler-warning-level-1-c4162"></a>Derleyici Uyarısı (düzey 1) C4162
 

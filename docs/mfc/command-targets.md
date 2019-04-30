@@ -8,11 +8,11 @@ helpviewer_keywords:
 - command routing [MFC], command targets
 ms.assetid: b0f784e5-c6dc-4391-9e71-aa7b7dcbe9f0
 ms.openlocfilehash: ed3d6a68967dc7f4244f887ae34760fdb99fa7f5
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57274464"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62388520"
 ---
 # <a name="command-targets"></a>Komut Hedefleri
 

@@ -14,11 +14,11 @@ helpviewer_keywords:
 - decrement operators [C++]
 ms.assetid: 45ea7fc7-f279-4be9-a216-1d9a0ef9eb7b
 ms.openlocfilehash: deb8acc6c6a68c9a97f2f0efbdc4084b4937df46
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50606030"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62392108"
 ---
 # <a name="prefix-increment-and-decrement-operators--and---"></a>Önek Arttırma ve Azaltma İşleçleri: ++ ve --
 
@@ -35,7 +35,7 @@ ms.locfileid: "50606030"
 
 Önek azaltma işleci (**--**) önek artırma işleci için işlenen bir azaltılır ve sonuç indirildiği bu değer dışında benzerdir.
 
-**Visual Studio 2017 sürüm 15.3 ve üzeri** (bulunan [/Std: c ++ 17](../build/reference/std-specify-language-standard-version.md)): bir artırma veya azaltma işlecinin işleneni türü olmayabilir **bool**.
+**Visual Studio 2017 sürüm 15.3 ve üzeri** (bulunan [/Std: c ++ 17](../build/reference/std-specify-language-standard-version.md)): Bir artırma veya azaltma işlecinin işleneni türü olmayabilir **bool**.
 
 Önek ve sonek artırma ve azaltma işleçleri işlenenleri etkiler. Aralarındaki temel fark, artırma veya azaltma ifade değerlendirme işlemi gerçekleştirilir sırasıdır. (Daha fazla bilgi için [sonek arttırma ve azaltma işleçleri](../cpp/postfix-increment-and-decrement-operators-increment-and-decrement.md).) İfadenin değerine işlenenin değerinden farklı olacak şekilde değeri ifade değerlendirmesinde kullanılmadan önce ön eki biçiminde artırma veya azaltma yerini alır. İfadenin değerine işlenenin değerini aynı olacak şekilde değeri ifade değerlendirmesinde kullanıldıktan sonra sonek formda artırma veya azaltma gerçekleşir. Örneğin, aşağıdaki yazdırır program "`++i = 6`":
 

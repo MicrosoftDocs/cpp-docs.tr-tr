@@ -6,11 +6,11 @@ helpviewer_keywords:
 - COM, compiler support
 ms.assetid: 74449d26-50a2-47c7-b175-7cf2cf83533e
 ms.openlocfilehash: ac74270cd020aa66ccc14ff314a00b388a038086
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50504441"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62399193"
 ---
 # <a name="compiler-com-global-functions"></a>Derleyici Global COM İşlevleri
 

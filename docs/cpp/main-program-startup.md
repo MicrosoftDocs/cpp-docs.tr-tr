@@ -13,11 +13,11 @@ helpviewer_keywords:
 - main function, program startup
 ms.assetid: f9581cd6-93f7-4bcd-99ec-d07c3c107dd4
 ms.openlocfilehash: 358ae8ec88281bab741393b1196ee2a1e615e896
-ms.sourcegitcommit: c85c8a1226d8fbbaa29f4691ed719f8e6cc6575c
+ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54894308"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "64345047"
 ---
 # <a name="main-program-startup"></a>Ana: Program başlatma
 

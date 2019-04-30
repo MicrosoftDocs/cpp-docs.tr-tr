@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3358
 ms.assetid: 180b93df-e78f-441a-91fb-1594c681f7f0
 ms.openlocfilehash: 8d57bf7447ba0c05585d3c18cfaaf960ddc0f968
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50514731"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62402625"
 ---
 # <a name="compiler-error-c3358"></a>Derleyici Hatası C3358
 

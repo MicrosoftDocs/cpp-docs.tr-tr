@@ -15,11 +15,11 @@ helpviewer_keywords:
 - COleDropSource [MFC], QueryContinueDrag
 ms.assetid: d3eecc5f-a70b-4a01-b705-7d2c098ebe17
 ms.openlocfilehash: a2773333ea1dd89f73e7bdf3c5dc2f36945e0810
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58778513"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62391107"
 ---
 # <a name="coledropsource-class"></a>COleDropSource sınıfı
 

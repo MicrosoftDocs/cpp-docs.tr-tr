@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2665
 ms.assetid: a7f99b61-2eae-4f2b-ba75-ea68fd1e8312
 ms.openlocfilehash: 63817c4181edb942f43f41c24fb10278d14f397e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50474744"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62386895"
 ---
 # <a name="compiler-error-c2665"></a>Derleyici Hatası C2665
 

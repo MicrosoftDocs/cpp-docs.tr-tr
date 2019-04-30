@@ -44,11 +44,11 @@ helpviewer_keywords:
 - rich edit controls [C++], RichEdit 1.0
 ms.assetid: 73cef03f-5c8c-456a-87d1-1458dff185cf
 ms.openlocfilehash: 2e3e671cd92313ad120d2cd6aae3f7e815e09e65
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59025370"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62390990"
 ---
 # <a name="how-to-add-edit-or-delete-controls-c"></a>Nasıl yapılır: Ekleme, düzenleme veya silme denetimleri (C++)
 

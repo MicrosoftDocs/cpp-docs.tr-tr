@@ -89,11 +89,11 @@ helpviewer_keywords:
 - std::deque [C++], swap
 ms.assetid: 64842ee5-057a-4063-8c16-4267a0332584
 ms.openlocfilehash: 8a50d04751ac5b4abaf94d0d9fd16f57c6200f66
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51525398"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62394019"
 ---
 # <a name="deque-class"></a>deque Sınıfı
 
@@ -108,7 +108,7 @@ class deque
 
 ### <a name="parameters"></a>Parametreler
 
-*Türü*<br/>
+*Tür*<br/>
 Deque içinde depolanacak öğe veri türü.
 
 *Ayırıcı*<br/>
@@ -176,7 +176,7 @@ Aksi takdirde, ekleme veya bir öğeyi silme tüm yineleyiciler ve başvuruları
 |[silme](#erase)|Bir öğenin veya öğelerin aralığını kaldırır bir `deque` belirtilen konumlardan.|
 |[Ön](#front)|İçindeki ilk öğeye bir başvuru döndürür bir `deque`.|
 |[get_allocator](#get_allocator)|Bir kopyasını döndürür `allocator` oluşturmak için kullanılan nesne `deque`.|
-|[Ekle](#insert)|Bir öğe, birkaç öğe veya bir dizi öğelerine ekler `deque` belirtilen konumda.|
+|[insert](#insert)|Bir öğe, birkaç öğe veya bir dizi öğelerine ekler `deque` belirtilen konumda.|
 |[max_size](#max_size)|Olası en büyük uzunluğunu döndürür `deque`.|
 |[pop_back](#pop_back)|Sonundaki öğeyi siler `deque`.|
 |[pop_front](#pop_front)|Başındaki öğeyi siler `deque`.|
@@ -409,7 +409,7 @@ The last integer of c1 is 11
 The next-to-last integer of c1 is 10
 ```
 
-## <a name="begin"></a>  deque::Begin
+## <a name="begin"></a>  deque::begin
 
 Deque içindeki ilk öğeyi ele alan bir yineleyici döndürür.
 
@@ -777,7 +777,7 @@ deque(initializer_list<value_type> IList, const Allocator& Al);
 |*sağ*|Deque oluşturulmuş deque kopyası olacak olduğu.|
 |*ilk*|Kopyalanacak öğe aralığındaki ilk öğenin konumu.|
 |*Son*|Kopyalanacak öğe aralığının dışındaki ilk öğenin konumu.|
-|* IList'|Kopyalanacağı initializer_list.|
+|* IList'| Kopyalanacağı initializer_list.|
 
 ### <a name="remarks"></a>Açıklamalar
 

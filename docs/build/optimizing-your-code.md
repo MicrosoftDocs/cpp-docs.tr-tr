@@ -1,6 +1,6 @@
 ---
 title: Kodunuzu İyileştirme
-ms.date: 12/10/2018
+ms.date: 04/23/2019
 helpviewer_keywords:
 - performance, optimizing code
 - optimization
@@ -8,12 +8,12 @@ helpviewer_keywords:
 - optimization, C++ code
 - code, optimizing
 - performance, compiler
-ms.openlocfilehash: ae60070959c683a6365992e7b6cc510fd4111b36
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 430ac9ef1b2946e511d04f7ce18bb0f20d727d75
+ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62295225"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "64341109"
 ---
 # <a name="optimizing-your-code"></a>Kodunuzu iyileştirme
 
@@ -23,13 +23,13 @@ Yürütülebilir hale getirerek, Hızlı yürütme hızını ve küçük kod boy
 
 Aşağıdaki konularda C/C++ dilinde iyileştirme özelliklerinden bazıları açıklanmaktadır.
 
-[Pragmaları ve Anahtar Sözcükleri İyileştirme](optimization-pragmas-and-keywords.md)<br/>
+[En iyi duruma getirme pragmaları ve anahtar sözcükleri](optimization-pragmas-and-keywords.md) \
 Anahtar sözcükler ve pragmalar performansını artırmak için kodunuzda kullanabileceğiniz listesi.
 
-[Kategorilere Göre Listelenen Derleyici Seçenekleri](reference/compiler-options-listed-by-category.md)<br/>
+[Kategorilere göre listelenen derleyici seçenekleri](reference/compiler-options-listed-by-category.md) \
 Listesini **/O** derleyici seçenekleri, özellikle yürütme hızını veya kod boyutunu etkiler.
 
-[Rvalue Başvuru Bildirimcisi: &&](../cpp/rvalue-reference-declarator-amp-amp.md)<br/>
+[Rvalue başvuru Bildirimcisi: & &](../cpp/rvalue-reference-declarator-amp-amp.md) \
 Rvalue başvuruları uygulamasını destekler *taşıma semantiği*. Taşıma semantiği Şablon Kütüphanesi, bu şablonları kullanan uygulamaların performansını uygulamak için kullanılan önemli ölçüde artırabilir.
 
 ### <a name="the-optimize-pragma"></a>Optimize pragması
@@ -52,10 +52,10 @@ Paradoxically, bir program hızını en iyi duruma getirme, kodun daha yavaş ç
 
 Aşağıdaki konular, iyi bir programlama uygulamalarını tartışın.
 
-[Zamana Bağlı Kodu Geliştirme İpuçları](tips-for-improving-time-critical-code.md)<br/>
+[Zamana bağlı kodu geliştirme ipuçları](tips-for-improving-time-critical-code.md) \
 Teknikleri daha iyi kodlama daha iyi performans sağlayabilir. Bu konuda, zaman açısından kritik kod bölümlerini tatmin edici bir şekilde gerçekleştirdiğinizden emin olun yardımcı olabilecek teknikleri kodlama önerir.
 
-[En İyi Uygulamaları İyileştirme](optimization-best-practices.md)<br/>
+[En iyi uygulamaları iyileştirme](optimization-best-practices.md) \
 Uygulamanızı en iyi duruma getirmek en iyi nasıl hakkında genel yönergeler sağlar.
 
 ## <a name="debugging-optimized-code"></a>En iyi duruma getirilmiş kodda hata ayıklama
@@ -86,20 +86,19 @@ Aşağıdaki konular, derleme, yükleme ve kodunuzun yürütme en iyi duruma get
 
 ## <a name="in-this-section"></a>Bu bölümde
 
-[Pragmaları ve Anahtar Sözcükleri İyileştirme](optimization-pragmas-and-keywords.md)<br/>
-[Derleyici Üretimini Geliştirme](improving-compiler-throughput.md)<br/>
-[Kayan Noktalı Sayıların Neden Duyarlık Kaybedebileceği](why-floating-point-numbers-may-lose-precision.md)<br/>
-[IEEE Kayan Noktası Temsili](ieee-floating-point-representation.md)<br/>
-[Zamana Bağlı Kodu Geliştirme İpuçları](tips-for-improving-time-critical-code.md)<br/>
-[() Olmadan İşlev Adının Kullanılması Kod Üretmez](using-function-name-without-parens-produces-no-code.md)<br/>
-[En İyi Uygulamaları İyileştirme](optimization-best-practices.md)<br/>
-[Profil Temelli İyileştirmeler](profile-guided-optimizations.md)<br/>
-[Profil Temelli İyileştirmeler için Ortam Değişkenleri](environment-variables-for-profile-guided-optimizations.md)<br/>
-[PgoAutoSweep](pgoautosweep.md)<br/>
-[pgomgr](pgomgr.md)<br/>
-[pgosweep](pgosweep.md)<br/>
-[Nasıl yapılır: Birden Çok PGO Profilini Tek Profilde Birleştirme](how-to-merge-multiple-pgo-profiles-into-a-single-profile.md)<br/>
-[Performans ve Tanılama Hub’ında Visual Studio 2013 PGO Eklentisi](profile-guided-optimization-in-the-performance-and-diagnostics-hub.md)<br/>
+[En iyi duruma getirme pragmaları ve anahtar sözcükleri](optimization-pragmas-and-keywords.md) \
+[Derleyici üretimini geliştirme](improving-compiler-throughput.md) \
+[Kayan noktalı sayıların neden duyarlık kaybedebileceği](why-floating-point-numbers-may-lose-precision.md) \
+[IEEE kayan Noktası temsili](ieee-floating-point-representation.md) \
+[Zamana bağlı kodu geliştirme ipuçları](tips-for-improving-time-critical-code.md) \
+[() Olmadan işlev adının kullanılması kod üretmez](using-function-name-without-parens-produces-no-code.md) \
+[En iyi uygulamaları iyileştirme](optimization-best-practices.md) \
+[Profil temelli iyileştirmeler](profile-guided-optimizations.md) \
+[Profil temelli iyileştirmeler için ortam değişkenleri](environment-variables-for-profile-guided-optimizations.md) \
+[PgoAutoSweep](pgoautosweep.md) \
+[pgomgr](pgomgr.md) \
+[pgosweep](pgosweep.md) \
+[Nasıl yapılır: Birden Çok PGO Profilini Tek Profilde Birleştirme](how-to-merge-multiple-pgo-profiles-into-a-single-profile.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

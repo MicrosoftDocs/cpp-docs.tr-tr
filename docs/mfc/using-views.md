@@ -14,11 +14,11 @@ helpviewer_keywords:
 - view classes [MFC], role in displaying application data
 ms.assetid: dc3de6ad-5c64-4317-8f10-8bdcc38cdbd5
 ms.openlocfilehash: 81668f7409f2b1a4480bde958dc06ce1156e03fe
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57291177"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62411428"
 ---
 # <a name="using-views"></a>Görünümleri Kullanma
 

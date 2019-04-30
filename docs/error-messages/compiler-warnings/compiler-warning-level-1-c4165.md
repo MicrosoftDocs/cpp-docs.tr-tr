@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C4165
 ms.assetid: f5bed515-2290-4f88-8dab-b45d95fe26ef
 ms.openlocfilehash: 4d6377730e262efafb38f5e714989e9075a77a04
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50534387"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62391744"
 ---
 # <a name="compiler-warning-level-1-c4165"></a>Derleyici Uyarısı (düzey 1) C4165
 

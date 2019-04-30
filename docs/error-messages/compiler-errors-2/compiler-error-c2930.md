@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2930
 ms.assetid: f07eecd1-e5d1-4518-bd89-b1fd2a003a17
 ms.openlocfilehash: 20fa3e81e66bb30bd63e579a863b6071de4ef871
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50434833"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62385764"
 ---
 # <a name="compiler-error-c2930"></a>Derleyici Hatası C2930
 

@@ -8,11 +8,11 @@ helpviewer_keywords:
 - extent
 ms.assetid: 6d16263d-90b2-4330-9ec7-b59ed898792d
 ms.openlocfilehash: 7463b424d15ee86f851b7d81953abf3fe1c98fee
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51519090"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62393980"
 ---
 # <a name="extent-class"></a>extent Sınıfı
 

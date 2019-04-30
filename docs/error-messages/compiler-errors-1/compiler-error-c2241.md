@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2241
 ms.assetid: 2f4e2c2c-b95c-4afe-bbe0-4214cd39d140
 ms.openlocfilehash: 88f25931d84fe3884ebecbc97b9ddd73390bacc2
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50618898"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62388975"
 ---
 # <a name="compiler-error-c2241"></a>Derleyici Hatası C2241
 

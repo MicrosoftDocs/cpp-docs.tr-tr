@@ -9,11 +9,11 @@ helpviewer_keywords:
 - CMemoryException [MFC], CMemoryException
 ms.assetid: 9af0ed57-d12a-45ca-82b5-c910a60f7edf
 ms.openlocfilehash: 11be0eba080085c507ed718ea23219ca1c93aeba
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57294752"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "64341176"
 ---
 # <a name="cmemoryexception-class"></a>CMemoryException sınıfı
 

@@ -7,11 +7,11 @@ helpviewer_keywords:
 - is_trivially_copy_assignable
 ms.assetid: 7410133e-f367-493f-92a7-e34e3ec5e879
 ms.openlocfilehash: 831e7c5afdd39980876a8e8284a68fec2084a4e5
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50630990"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62413469"
 ---
 # <a name="istriviallycopyassignable-class"></a>is_trivially_copy_assignable sınıfı
 

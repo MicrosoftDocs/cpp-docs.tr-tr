@@ -7,11 +7,11 @@ helpviewer_keywords:
 - cstddef header
 ms.assetid: be8d1e39-5974-41ee-b41d-eafa6c82ffce
 ms.openlocfilehash: 089c4fc9a9bc33809f20ad6c13048a8740c95fe0
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51518560"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62394266"
 ---
 # <a name="ltcstddefgt"></a>&lt;cstddef&gt;
 

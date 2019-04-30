@@ -1,5 +1,5 @@
 ---
-title: Sahip Tarafından Çizilmiş Sekmeler Yapma
+title: Sahip tarafından çizilmiş sekmeler yapma
 ms.date: 11/04/2016
 helpviewer_keywords:
 - owner-drawn tabs [MFC]
@@ -8,13 +8,13 @@ helpviewer_keywords:
 - drawing [MFC], tabs
 ms.assetid: 11af2926-41d7-47e3-9eec-c595283f6371
 ms.openlocfilehash: 8c52bb325764f0edfff315edf21128f117c1a67b
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57289136"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62391406"
 ---
-# <a name="making-owner-drawn-tabs"></a>Sahip Tarafından Çizilmiş Sekmeler Yapma
+# <a name="making-owner-drawn-tabs"></a>Sahip tarafından çizilmiş sekmeler yapma
 
 Sekme denetimine ayrı ayrı öğeleri tanımlayabilirsiniz ([CTabCtrl](../mfc/reference/ctabctrl-class.md)) sahip tarafından çizilmiş öğeleri olacak. Daha fazla bilgi için [Owner-Drawn sekmeleri](/windows/desktop/Controls/tab-controls) Windows SDK.
 

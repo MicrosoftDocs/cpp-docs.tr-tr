@@ -6,11 +6,11 @@ helpviewer_keywords:
 - properties [C++], simple
 ms.assetid: f5d82547-e214-4f05-9e1b-ddb6d0dc5e4c
 ms.openlocfilehash: cd0748993b6ac92bbf9f66fa868ac6e814e21bb5
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58781633"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62387155"
 ---
 # <a name="how-to-use-properties-in-ccli"></a>Nasıl yapılır: İçindeki özellikleri kullanın C++/CLI
 

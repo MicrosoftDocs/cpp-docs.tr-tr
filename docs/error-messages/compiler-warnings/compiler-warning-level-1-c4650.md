@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C4650
 ms.assetid: 3190b3e3-dcd6-4846-939b-f900ab652b2a
 ms.openlocfilehash: ea3f1b6e792239692960e74c8360c6c3a1323815
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50536112"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62393538"
 ---
 # <a name="compiler-warning-level-1-c4650"></a>Derleyici Uyarısı (düzey 1) C4650
 

@@ -64,11 +64,11 @@ helpviewer_keywords:
 - unary_negate function [STL/CLR]
 ms.assetid: 88738b8c-5d37-4375-970e-a4442bf5efde
 ms.openlocfilehash: f4a99ea972c6d2ea9b9721664cc75dec257fd7b3
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50472910"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62393759"
 ---
 # <a name="functional-stlclr"></a>işlevsel (STL/CLR)
 
@@ -322,7 +322,7 @@ Saklı functor türü.
 |İşleç|Açıklama|
 |--------------|-----------------|
 |operator()|İstenen işlev hesaplar.|
-|işleç delegate_type^()|Bir temsilci functor çevirir.|
+|operator delegate_type^()|Bir temsilci functor çevirir.|
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -597,7 +597,7 @@ Saklı functor türü.
 |İşleç|Açıklama|
 |--------------|-----------------|
 |operator()|İstenen işlev hesaplar.|
-|işleç delegate_type^()|Bir temsilci functor çevirir.|
+|operator delegate_type^()|Bir temsilci functor çevirir.|
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -702,7 +702,7 @@ Saklı functor türü.
 |İşleç|Açıklama|
 |--------------|-----------------|
 |operator()|İstenen işlev hesaplar.|
-|işleç delegate_type^()|Bir temsilci functor çevirir.|
+|operator delegate_type^()|Bir temsilci functor çevirir.|
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -806,7 +806,7 @@ Bağımsız değişkenler ve dönüş değeri türü.
 |İşleç|Açıklama|
 |--------------|-----------------|
 |operator()|İstenen işlev hesaplar.|
-|işleç delegate_type^()|Bir temsilci functor çevirir.|
+|operator delegate_type^()|Bir temsilci functor çevirir.|
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -907,7 +907,7 @@ Bağımsız değişken türü.
 |İşleç|Açıklama|
 |--------------|-----------------|
 |operator()|İstenen işlev hesaplar.|
-|işleç delegate_type^()|Bir temsilci functor çevirir.|
+|operator delegate_type^()|Bir temsilci functor çevirir.|
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -1008,7 +1008,7 @@ Bağımsız değişken türü.
 |İşleç|Açıklama|
 |--------------|-----------------|
 |operator()|İstenen işlev hesaplar.|
-|işleç delegate_type ^|Bir temsilci functor çevirir.|
+|operator delegate_type^|Bir temsilci functor çevirir.|
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -1109,7 +1109,7 @@ Bağımsız değişken türü.
 |İşleç|Açıklama|
 |--------------|-----------------|
 |operator()|İstenen işlev hesaplar.|
-|işleç delegate_type ^|Bir temsilci functor çevirir.|
+|operator delegate_type^|Bir temsilci functor çevirir.|
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -1210,7 +1210,7 @@ Bağımsız değişken türü.
 |İşleç|Açıklama|
 |--------------|-----------------|
 |operator()|İstenen işlev hesaplar.|
-|işleç delegate_type ^|Bir temsilci functor çevirir.|
+|operator delegate_type^|Bir temsilci functor çevirir.|
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -1311,7 +1311,7 @@ Bağımsız değişken türü.
 |İşleç|Açıklama|
 |--------------|-----------------|
 |operator()|İstenen işlev hesaplar.|
-|işleç delegate_type ^|Bir temsilci functor çevirir.|
+|operator delegate_type^|Bir temsilci functor çevirir.|
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -1412,7 +1412,7 @@ Bağımsız değişken türü.
 |İşleç|Açıklama|
 |--------------|-----------------|
 |operator()|İstenen işlev hesaplar.|
-|işleç delegate_type ^|Bir temsilci functor çevirir.|
+|operator delegate_type^|Bir temsilci functor çevirir.|
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -1510,7 +1510,7 @@ Bağımsız değişken türü.
 |İşleç|Açıklama|
 |--------------|-----------------|
 |operator()|İstenen işlev hesaplar.|
-|işleç delegate_type ^|Bir temsilci functor çevirir.|
+|operator delegate_type^|Bir temsilci functor çevirir.|
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -1603,7 +1603,7 @@ Bağımsız değişken türü.
 |İşleç|Açıklama|
 |--------------|-----------------|
 |operator()|İstenen işlev hesaplar.|
-|işleç delegate_type ^|Bir temsilci functor çevirir.|
+|operator delegate_type^|Bir temsilci functor çevirir.|
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -1704,7 +1704,7 @@ Bağımsız değişkenler ve dönüş değeri türü.
 |İşleç|Açıklama|
 |--------------|-----------------|
 |operator()|İstenen işlev hesaplar.|
-|işleç delegate_type ^|Bir temsilci functor çevirir.|
+|operator delegate_type^|Bir temsilci functor çevirir.|
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -1805,7 +1805,7 @@ Bağımsız değişkenler ve dönüş değeri türü.
 |İşleç|Açıklama|
 |--------------|-----------------|
 |operator()|İstenen işlev hesaplar.|
-|işleç delegate_type ^|Bir temsilci functor çevirir.|
+|operator delegate_type^|Bir temsilci functor çevirir.|
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -1906,7 +1906,7 @@ Bağımsız değişkenler ve dönüş değeri türü.
 |İşleç|Açıklama|
 |--------------|-----------------|
 |operator()|İstenen işlev hesaplar.|
-|işleç delegate_type ^|Bir temsilci functor çevirir.|
+|operator delegate_type^|Bir temsilci functor çevirir.|
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -2004,7 +2004,7 @@ Bağımsız değişken türü.
 |İşleç|Açıklama|
 |--------------|-----------------|
 |operator()|İstenen işlev hesaplar.|
-|işleç delegate_type ^|Bir temsilci functor çevirir.|
+|operator delegate_type^|Bir temsilci functor çevirir.|
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -2097,7 +2097,7 @@ Bağımsız değişken türü.
 |İşleç|Açıklama|
 |--------------|-----------------|
 |operator()|İstenen işlev hesaplar.|
-|işleç delegate_type ^|Bir temsilci functor çevirir.|
+|operator delegate_type^|Bir temsilci functor çevirir.|
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -2351,7 +2351,7 @@ Bağımsız değişkenler ve dönüş değeri türü.
 |İşleç|Açıklama|
 |--------------|-----------------|
 |operator()|İstenen işlev hesaplar.|
-|işleç delegate_type ^|Bir temsilci functor çevirir.|
+|operator delegate_type^|Bir temsilci functor çevirir.|
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -2579,7 +2579,7 @@ Saklı functor türü.
 |İşleç|Açıklama|
 |--------------|-----------------|
 |operator()|İstenen işlev hesaplar.|
-|delegate_type ^|Bir temsilci functor çevirir.|
+|delegate_type^|Bir temsilci functor çevirir.|
 
 ### <a name="remarks"></a>Açıklamalar
 

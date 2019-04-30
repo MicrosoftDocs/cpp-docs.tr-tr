@@ -11,11 +11,11 @@ helpviewer_keywords:
 - collection classes [MFC], lists
 ms.assetid: 81a13a7f-0c2c-4efd-b6bb-b4e624a0743d
 ms.openlocfilehash: b89b99abb79fe689274f9e0b89a85bb33643d324
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57274381"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62394630"
 ---
 # <a name="array-list-and-map-classes"></a>Dizi, Liste ve Eşleme Sınıfları
 

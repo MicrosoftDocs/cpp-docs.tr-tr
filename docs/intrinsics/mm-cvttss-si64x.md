@@ -8,11 +8,11 @@ helpviewer_keywords:
 - cvttss2si instruction
 ms.assetid: f9a3fd07-5bd8-4758-8744-6315c082cf87
 ms.openlocfilehash: cfdea6ded622cbcbe42bd555edb3029fabad7823
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59023717"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62396658"
 ---
 # <a name="mmcvttsssi64x"></a>_mm_cvttss_si64x
 

@@ -8,11 +8,11 @@ helpviewer_keywords:
 - VMWRITE instruction
 ms.assetid: 88139792-fd3f-4210-97ca-9d84f43a0252
 ms.openlocfilehash: e52b1f181f00ce013a111d1a5a62abeff544e20a
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59037516"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62389989"
 ---
 # <a name="vmxvmwrite"></a>__vmx_vmwrite
 

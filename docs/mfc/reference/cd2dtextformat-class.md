@@ -25,11 +25,11 @@ helpviewer_keywords:
 - CD2DTextFormat [MFC], m_pTextFormat
 ms.assetid: db194cec-9dae-4644-ab84-7c43b7164117
 ms.openlocfilehash: fa2f3b663cb5258c64ec0405abacf2e4eedeb987
-ms.sourcegitcommit: 309dc532f13242854b47759cef846de59bb807f1
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58565327"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62396216"
 ---
 # <a name="cd2dtextformat-class"></a>CD2DTextFormat sınıfı
 

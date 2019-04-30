@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C1055
 ms.assetid: a9fb9190-d7eb-4d5f-b1a2-a41e584a28c1
 ms.openlocfilehash: e6df4870d7af49c369be7e513791955599c48326
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50636521"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62390652"
 ---
 # <a name="fatal-error-c1055"></a>Önemli hata C1055
 

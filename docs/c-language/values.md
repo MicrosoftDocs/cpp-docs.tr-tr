@@ -3,11 +3,11 @@ title: Değerler
 ms.date: 11/04/2016
 ms.assetid: 24003f89-220f-4f93-be7a-b650c26157d7
 ms.openlocfilehash: a745b9cc45ed3e58cab4ec7355707d93a0557c04
-ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
+ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56150044"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "64343158"
 ---
 # <a name="values"></a>Değerler
 

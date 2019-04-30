@@ -5,11 +5,11 @@ helpviewer_keywords:
 - deployment for Visual C++
 ms.assetid: 66735cda-8fe3-4211-a19a-2cf717a12a3f
 ms.openlocfilehash: e2d83d45f1369e250b24708edd17f4004e030a17
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
-ms.translationtype: MT
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58787562"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62387818"
 ---
 # <a name="walkthrough-deploying-a-visual-c-application-by-using-a-setup-project"></a>İzlenecek yol: Bir kurulum projesi kullanarak Visual C++ uygulamasını dağıtma
 

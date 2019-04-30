@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C4187
 ms.assetid: 2443d948-ab7b-472c-af43-5d81e09af677
 ms.openlocfilehash: 1f0f513c21be344a02c26afbaf06fcd9eda19222
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50661285"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62391601"
 ---
 # <a name="compiler-warning-level-1-c4187"></a>Derleyici Uyarısı (düzey 1) C4187
 

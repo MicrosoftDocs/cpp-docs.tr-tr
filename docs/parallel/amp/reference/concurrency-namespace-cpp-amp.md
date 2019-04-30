@@ -7,11 +7,11 @@ helpviewer_keywords:
 - Concurrency namespace
 ms.assetid: b5aab265-3bac-42c5-8ead-f92ce05ef267
 ms.openlocfilehash: e0870eb046f1cec091a72d49c94a2fea41484340
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57278697"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "64346033"
 ---
 # <a name="concurrency-namespace-c-amp"></a>Eşzamanlılık Ad Alanı (C++ AMP)
 
@@ -92,7 +92,7 @@ namespace Concurrency;
 |[atomic_fetch_sub](concurrency-namespace-functions-amp.md#atomic_fetch_sub)|Fazla Yüklendi. Farkı bu değeri ve belirtilen değeri atomik işlem olarak belirtilen konumda depolanan değeri ayarlar.|
 |[atomic_fetch_xor](concurrency-namespace-functions-amp.md#atomic_fetch_xor)|Fazla Yüklendi. Bit düzeyinde için belirtilen konumda depolanan değeri ayarlar `xor` değeri ve atomik işlem olarak belirtilen değeri.|
 |[kopyalama](concurrency-namespace-functions-amp.md#copy)|C++ AMP nesnesi kopyalar. Tüm zaman uyumlu veri aktarımı gereksinimleri karşılanır. Kodu kod hızlandırıcıda çalışıyor olduğunda veriler kopyalanamaz. Bu işlevin genel formu `copy(src, dest)`.|
-|[copy_async](concurrency-namespace-functions-amp.md#copy_async)|C++ AMP nesnesi kopyalar ve döndürür [completion_future](completion-future-class.md) , beklenen. Kod hızlandırıcıda çalışıyor olduğunda veriler kopyalanamaz. Bu işlevin genel formu `copy(src, dest)`.|
+|[copy_async](concurrency-namespace-functions-amp.md#copy_async)|Kopya bir C++ AMP nesnesi ve döndürür [completion_future](completion-future-class.md) , beklenen. Kod hızlandırıcıda çalışıyor olduğunda veriler kopyalanamaz. Bu işlevin genel formu `copy(src, dest)`.|
 |[direct3d_abort](concurrency-namespace-functions-amp.md#direct3d_abort)|Sahip bir işlevin yürütülmesini durdurur `restrict(amp)` kısıtlama yan tümcesi.|
 |[direct3d_errorf](concurrency-namespace-functions-amp.md#direct3d_errorf)|Visual Studio biçimlendirilmiş bir dize yazdırır **çıkış** penceresine bir [runtime_exception](runtime-exception-class.md) aynı biçime sahip bir özel durum dize.|
 |[direct3d_printf](concurrency-namespace-functions-amp.md#direct3d_printf)|Visual Studio biçimlendirilmiş bir dize yazdırır **çıkış** penceresi. Var olan bir işlevden çağrılır `restrict(amp)` kısıtlama yan tümcesi.|

@@ -7,11 +7,11 @@ ms.assetid: cd3a81c5-a19e-448f-952a-c34c717f21a9
 helpviewer_keywords:
 - std::memory_order
 ms.openlocfilehash: 03247f6abd01b00fbbed3b33016cd4a12d8a13f8
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50543761"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62377295"
 ---
 # <a name="ltatomicgt-enums"></a>&lt;atomik&gt; sabit listeleri
 

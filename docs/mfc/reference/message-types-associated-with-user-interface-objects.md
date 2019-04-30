@@ -7,11 +7,11 @@ helpviewer_keywords:
 - message types and user interface objects [MFC]
 ms.assetid: 681ee1a7-f6e6-4ea0-9fc6-1fb53a35516e
 ms.openlocfilehash: 1676edf487d536d75ccd7901c5bdfa827cc143fe
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57326328"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62412774"
 ---
 # <a name="message-types-associated-with-user-interface-objects"></a>Kullanıcı Arabirimi Nesneleri ile İlişkili İleti Türleri
 
@@ -28,7 +28,7 @@ Aşağıdaki tabloda, birlikte çalıştığınız nesne türlerini ve bunlarla 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [İletileri İşlevlere Eşleme](../../mfc/reference/mapping-messages-to-functions.md)<br/>
-[Kod sihirbazlarıyla işlevsellik ekleme](../../ide/adding-functionality-with-code-wizards-cpp.md)<br/>
+[Kod Sihirbazlarıyla İşlevsellik Ekleme](../../ide/adding-functionality-with-code-wizards-cpp.md)<br/>
 [Sınıf ekleme](../../ide/adding-a-class-visual-cpp.md)<br/>
 [Üye işlevi ekleme](../../ide/adding-a-member-function-visual-cpp.md)<br/>
 [Üye değişkeni ekleme](../../ide/adding-a-member-variable-visual-cpp.md)<br/>

@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C4750
 ms.assetid: b0b2c938-7d2a-4c36-8270-7daee15ffee3
 ms.openlocfilehash: 2a6d83074f180a455e9c305fb4ca8ea270d0a593
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59037736"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62385406"
 ---
 # <a name="compiler-warning-level-1-c4750"></a>Derleyici Uyarısı (düzey 1) C4750
 

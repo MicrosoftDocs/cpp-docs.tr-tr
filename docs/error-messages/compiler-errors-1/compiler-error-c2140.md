@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2140
 ms.assetid: d44a0500-002c-4632-9e5e-c71c3a473ec4
 ms.openlocfilehash: 35b6e38290acddb41bdf53d9663a058259300ee8
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59779254"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "64345689"
 ---
 # <a name="compiler-error-c2140"></a>Derleyici Hatası C2140
 

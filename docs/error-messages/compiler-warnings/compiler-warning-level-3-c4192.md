@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C4192
 ms.assetid: ea5f91fa-8c96-4f3f-ac42-0c8a86d4e5df
 ms.openlocfilehash: 56b27596296b87edcc6de406e7b6621d5723815d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50519723"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62402235"
 ---
 # <a name="compiler-warning-level-3-c4192"></a>Derleyici Uyarısı (Düzey 3) C4192
 

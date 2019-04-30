@@ -17,11 +17,11 @@ helpviewer_keywords:
 - CMFCRibbonMainPanel [MFC], GetCommandsFrame
 ms.assetid: 1af78798-5e75-4365-9c81-a54aa5679602
 ms.openlocfilehash: e4bd1ab8cffc87d5079518cf9a1d6e430ca40fd9
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57294462"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62403600"
 ---
 # <a name="cmfcribbonmainpanel-class"></a>CMFCRibbonMainPanel sınıfı
 

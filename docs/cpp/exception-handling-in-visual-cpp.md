@@ -5,11 +5,11 @@ helpviewer_keywords:
 - try-catch keyword [C++], exception handling
 ms.assetid: a6aa08de-669d-4ce8-9ec3-ec20d1354fcf
 ms.openlocfilehash: 506ead1b6e96f59717a92b6b0c48db0270b1822f
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58779527"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62398882"
 ---
 # <a name="exception-handling-in-visual-c"></a>Visual C++'da Özel Durum İşleme
 

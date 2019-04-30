@@ -17,11 +17,11 @@ helpviewer_keywords:
 - CDocObjectServerItem [MFC], OnShow
 ms.assetid: 530f7156-50c8-4806-9328-602c9133f622
 ms.openlocfilehash: 66ff2326cd3d08b3f6c8399d7e948d6aab5074c3
-ms.sourcegitcommit: 309dc532f13242854b47759cef846de59bb807f1
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58565629"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62391159"
 ---
 # <a name="cdocobjectserveritem-class"></a>Cdocobjectserverıtem sınıfı
 

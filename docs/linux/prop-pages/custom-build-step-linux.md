@@ -3,11 +3,11 @@ title: Özel derleme adımı özellikleri (Linux C++)
 ms.date: 10/17/2017
 ms.assetid: 77a9c1fb-7c41-4a9b-9418-18ac17ce4e74
 ms.openlocfilehash: 5e6580263e63547e3564eaee260158a312e5fa6a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50644710"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62393122"
 ---
 # <a name="custom-build-step-properties-linux-c"></a>Özel derleme adımı özellikleri (Linux C++)
 

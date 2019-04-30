@@ -7,11 +7,11 @@ helpviewer_keywords:
 - CreateInstance method [C++]
 ms.assetid: ab89b0e1-9da3-4784-a079-58b17340f111
 ms.openlocfilehash: c4f6cd54b90ab5fab69f91df67a8bf60b0b658f8
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50637469"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62399375"
 ---
 # <a name="comptrtcreateinstance"></a>_com_ptr_t::CreateInstance
 

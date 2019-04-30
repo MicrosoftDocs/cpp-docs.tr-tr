@@ -1,5 +1,5 @@
 ---
-title: İş parçacığı oluşturma ve sıralama (C + +/ CX)
+title: İş parçacığı oluşturma ve hazırlama (C++/CX)
 ms.date: 12/30/2016
 f1_keywords:
 - C4451
@@ -9,13 +9,13 @@ helpviewer_keywords:
 - C++/CX, threading issues
 ms.assetid: 83e9ca1d-5107-4194-ae6f-e01bd928c614
 ms.openlocfilehash: c5bce60e564bef490bcfafd6f8559dffe5fd4f1d
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57751706"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62404643"
 ---
-# <a name="threading-and-marshaling-ccx"></a>İş parçacığı oluşturma ve sıralama (C + +/ CX)
+# <a name="threading-and-marshaling-ccx"></a>İş parçacığı oluşturma ve hazırlama (C++/CX)
 
 Çalışmaları büyük çoğunluğu, standart C++ nesneleri gibi Windows çalışma zamanı sınıfların örneklerini herhangi bir iş parçacığından erişilebilir. Bu tür sınıflar için "Çevik" adlandırılır. Ancak, Windows ile birlikte Windows çalışma zamanı sınıflar az sayıda Çevik olmayan ve standart C++ nesnelerden COM nesneleri gibi daha kullanılması gerekir. Çevik olmayan sınıflarını kullanmak için bir COM uzman olmanız gerekmez, ancak bu sınıfın iş parçacığı modeli ve sıralama davranışını dikkate almak gerekir. Bu makalede, arka plan ve Çevik olmayan bir sınıf örneği kullanmak gereken bu nadir senaryoları için yönergeler sağlar.
 
@@ -97,7 +97,7 @@ Visual c++'da "None", sıralama davranışını bir işlemde Windows çalışma 
 
 ## <a name="authoring-agile-windows-runtime-components"></a>Çevik Geliştirme Windows çalışma zamanı bileşenleri
 
-Tanımladığınızda bir başvuru sınıfı C + +/ CX, onu varsayılan olarak Çevik — diğer bir deyişle, sahip `ThreadingModel`hem = ve `MarshallingType`Çevik =.  Windows çalışma zamanı C++ Şablon kitaplığı kullanıyorsanız, kendi sınıfınızı Çevik türeterek yapabileceğiniz `FtmBase`, kullanan `FreeThreadedMarshaller`.  Bir sınıf yazarsanız `ThreadingModel`hem = veya `ThreadingModel`MTA, = sınıf iş parçacığı açısından güvenli olduğundan emin olun.
+İçinde bir başvuru sınıfı tanımladığınızda C++/CX, onu varsayılan olarak Çevik — diğer bir deyişle, sahip `ThreadingModel`hem = ve `MarshallingType`Çevik =.  Windows çalışma zamanı C++ Şablon kitaplığı kullanıyorsanız, kendi sınıfınızı Çevik türeterek yapabileceğiniz `FtmBase`, kullanan `FreeThreadedMarshaller`.  Bir sınıf yazarsanız `ThreadingModel`hem = veya `ThreadingModel`MTA, = sınıf iş parçacığı açısından güvenli olduğundan emin olun.
 
 İş parçacığı modeli ve bir başvuru sınıfının hazırlama davranışı değiştirebilirsiniz. Ancak, Çevik olmayan sınıf işleme değişiklikler yaparsanız, bu değişikliklerle ilişkili etkilerini anlamanız gerekir.
 

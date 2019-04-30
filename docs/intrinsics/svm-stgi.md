@@ -8,11 +8,11 @@ helpviewer_keywords:
 - STGI instruction
 ms.assetid: 96488da4-5587-4e99-8674-627a9e51be84
 ms.openlocfilehash: ea138f17a24af21afa937991f77bd1e2a689c3f7
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59024796"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62390223"
 ---
 # <a name="svmstgi"></a>__svm_stgi
 

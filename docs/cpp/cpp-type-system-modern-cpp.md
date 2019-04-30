@@ -4,11 +4,11 @@ ms.date: 11/19/2018
 ms.topic: conceptual
 ms.assetid: 553c0ed6-77c4-43e9-87b1-c903eec53e80
 ms.openlocfilehash: 4dfbf408654ccc92c92d6855c15238cb07c01b58
-ms.sourcegitcommit: 6e4dd21759caaed262a7255735cf8d6e8fb9f4d7
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "58476909"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62392285"
 ---
 # <a name="c-type-system-modern-c"></a>C++ Tür Sistemi (Modern C++)
 
@@ -90,11 +90,11 @@ PI = .75 //Error. Cannot modify const variable.
 
 **Const** niteleyicisi işlevde ve değişken bildirimlerinde yaygın olarak kullanılır ve "const correctness" C++'da önemli bir kavramdır; temel olarak kullanmanın ne demek **const** , derleme zamanında güvence altına almak için değerleri olmadığına istemsiz. Daha fazla bilgi için [const](../cpp/const-cpp.md).
 
-A **const** türüdür, sabit olmayan sürümünden farklıdır; Örneğin, **const int** ayrı türünden **int**. C++ kullanabilirsiniz **const_cast** gerekir kaldırdığınızda bu nadir durumlarda işlecinin *const-ness* öğesini bir değişkenden. Daha fazla bilgi için [tür dönüştürmeleri ve tür güvenliği](../cpp/type-conversions-and-type-safety-modern-cpp.md).
+A **const** türüdür, sabit olmayan sürümünden farklıdır; Örneğin, **const int** ayrı türünden **int**. Kullanabileceğiniz C++ **const_cast** gerekir kaldırdığınızda bu nadir durumlarda işlecinin *const-ness* öğesini bir değişkenden. Daha fazla bilgi için [tür dönüştürmeleri ve tür güvenliği](../cpp/type-conversions-and-type-safety-modern-cpp.md).
 
 ## <a name="string-types"></a>Dize türleri
 
-NET olarak söylemek gerekirse, C++ dili yerleşik dize türü yok; **char** ve **wchar_t** tek karakterleri depolar - bu tür bir dize yaklaşık olarak belirlemenizi sağlayan bir dizi Sonlandırıcı null değer ekleme bildirmeniz gerekir (örneğin, ASCII `'\0'`) için dizi öğesinde son geçerli karakterden Geçmiş (olarak da adlandırılan bir *C stili dize*). C stili dizeler çok daha fazla kodun yazılmasını veya harici dize yardımcı program kitaplığı işlevlerini gerektirmekteydi. Ancak modern C++ programlamada standart kitaplık türleri sahibiz `std::string` (8-bit **char**-türü karakter dizeleri) veya `std::wstring` (16-bit **wchar_t**-türü karakter dizeleri). Uyumlu bir C++ yapı ortamına dahil olan standart kitaplıkların parçasıdır çünkü bu C++ Standart Kitaplığı kapsayıcıları, yerel dize türleri olarak düşünülebilir. Sadece kullanın `#include <string>` yapmayı yönergesi türleri programınızdaki kullanılabilir. (MFC veya ATL kullanıyorsanız, CString sınıfı da ayrıca kullanılabilir ancak C++ standardının bir parçası değildir.) Boş sonlandırılmış karakter dizilerinin kullanımı (daha önce bahsedilen C stili dizeler) modern C++ içinde önerilmez.
+NET olarak söylemek gerekirse, C++ diline sahip yerleşik dize türü hiçbir; **char** ve **wchar_t** tek karakterleri depolar - bu tür bir dize yaklaşık olarak belirlemenizi sağlayan bir dizi Sonlandırıcı null değer ekleme bildirmeniz gerekir (örneğin, ASCII `'\0'`) dizi öğesinin bir önceki son geçerli karakterden (olarak da adlandırılan bir *C stili dize*). C stili dizeler çok daha fazla kodun yazılmasını veya harici dize yardımcı program kitaplığı işlevlerini gerektirmekteydi. Ancak modern C++, standart kitaplık türleri `std::string` (8-bit **char**-türü karakter dizeleri) veya `std::wstring` (16-bit **wchar_t**-türü karakter dizeleri). Uyumlu bir C++ yapı ortamına dahil olan standart kitaplıkların parçasıdır çünkü bu C++ Standart Kitaplığı kapsayıcıları, yerel dize türleri olarak düşünülebilir. Sadece kullanın `#include <string>` yapmayı yönergesi türleri programınızdaki kullanılabilir. (MFC veya ATL kullanıyorsanız, CString sınıfı da ayrıca kullanılabilir ancak C++ standardının bir parçası değildir.) Boş sonlandırılmış karakter dizilerinin kullanımı (daha önce bahsedilen C stili dizeler) modern C++ içinde önerilmez.
 
 ## <a name="user-defined-types"></a>Kullanıcı tanımlı türler
 

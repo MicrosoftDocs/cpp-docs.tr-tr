@@ -4,11 +4,11 @@ ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 1a9fa011-0cee-4abf-bf83-49adf53ff906
 ms.openlocfilehash: 3f622a79aed6a1e42feccb92e1a01b3bc1277151
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59035750"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62398309"
 ---
 # <a name="how-to-instantiate-wrl-components-directly"></a>Nasıl yapılır: Doğrudan WRL bileşenlerinin örneğini oluşturma
 

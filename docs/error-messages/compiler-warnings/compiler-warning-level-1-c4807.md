@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C4807
 ms.assetid: 089c9f87-fd81-402e-9826-66a8ef1ef1fe
 ms.openlocfilehash: a68596136e61aa33176365a4eff818124463b77e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50601038"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62390470"
 ---
 # <a name="compiler-warning-level-1-c4807"></a>Derleyici Uyarısı (düzey 1) C4807
 

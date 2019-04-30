@@ -7,11 +7,11 @@ helpviewer_keywords:
 - concurrent containers
 ms.assetid: 90ab715c-29cd-48eb-8e76-528619aab466
 ms.openlocfilehash: bcf3ead9fe945ecb2246fdb28b7f67cd51b1238b
-ms.sourcegitcommit: 309dc532f13242854b47759cef846de59bb807f1
+ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58565954"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "64346324"
 ---
 # <a name="parallel-containers-and-objects"></a>Paralel Kapsayıcılar ve Nesneler
 

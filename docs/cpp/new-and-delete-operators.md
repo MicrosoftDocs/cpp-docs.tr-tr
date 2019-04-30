@@ -10,17 +10,17 @@ helpviewer_keywords:
 - delete keyword [C++], syntax
 ms.assetid: fa721b9e-0374-4f04-bb87-032ea775bcc8
 ms.openlocfilehash: 1ac6282ecbf45f22e7dd66b94f8bccdbc4e505ce
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50441307"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "64345891"
 ---
 # <a name="new-and-delete-operators"></a>new ve delete İşleçleri
 
 C++ dinamik ayırmayı ve ayırmayı kaldırma kullanarak nesneleri destekler [yeni](../cpp/new-operator-cpp.md) ve [Sil](../cpp/delete-operator-cpp.md) işleçleri. Bu işleçler, kullanılabilir depolama alanı olarak adlandırılan bir havuzdan nesneler için bellek ayrılamadı. **Yeni** işlecini çağıran özel işlev [new işleci](../cpp/new-operator-cpp.md)ve **Sil** işlecini çağıran özel işlev [delete işleci](../cpp/delete-operator-cpp.md).
 
-**Yeni** C++ Standart Kitaplığı işlevinde, bellek ayırma başarısız olursa bir std::bad_alloc özel durum oluşturmak için C++ standardında belirtilen davranışı destekler. Hala oluşturmayan sürümü istiyorsanız **yeni**, programınızı nothrownew.obj ile bağlayın. Bununla birlikte, varsayılan nothrownew.obj ile bağladığınızda **new işleci** C++ Standart Kitaplığı'nda artık çalışmaz.
+**Yeni** işlevi C++ standart kitaplık içinde belirtilen davranışı destekler C++ bellek ayırma başarısız olursa bir std::bad_alloc özel durum için olan standart. Hala oluşturmayan sürümü istiyorsanız **yeni**, programınızı nothrownew.obj ile bağlayın. Bununla birlikte, varsayılan nothrownew.obj ile bağladığınızda **new işleci** C++ Standart Kitaplığı'nda artık çalışmaz.
 
 C çalışma zamanı kitaplığı ve C++ Standart Kitaplığı oluşturan kitaplığı dosyaların bir listesi için bkz. [CRT kitaplık özellikleri](../c-runtime-library/crt-library-features.md).
 

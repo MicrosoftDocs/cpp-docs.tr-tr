@@ -6,11 +6,11 @@ helpviewer_keywords:
 - type qualifiers
 ms.assetid: fcd2364c-c2a5-4fbf-9027-19dac4144cb5
 ms.openlocfilehash: 439bc878bbcd1c9778fb74738cb3b32b908a5943
-ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
+ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56148354"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "64343198"
 ---
 # <a name="overview-of-declarations"></a>Bildirimlere Genel Bakış
 

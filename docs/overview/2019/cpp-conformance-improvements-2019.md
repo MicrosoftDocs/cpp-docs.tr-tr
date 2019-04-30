@@ -5,11 +5,11 @@ ms.technology: cpp-language
 author: mikeblome
 ms.author: mblome
 ms.openlocfilehash: e12504d4950c87042cbb030c6c683874f6ffc8b7
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59779478"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62410126"
 ---
 # <a name="c-conformance-improvements-in-visual-studio-2019"></a>Visual Studio 2019'deki C++ uyumluluk geliştirmeleri
 

@@ -10,11 +10,11 @@ helpviewer_keywords:
 - OLE drag and drop [MFC]
 ms.assetid: a4595350-ca06-4400-88a1-f0175c76b77b
 ms.openlocfilehash: 98bd58745e56a62bf5700e9b5fe4963a7b584953
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58766813"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62405930"
 ---
 # <a name="drag-and-drop-ole"></a>Sürükleme ve Bırakma (OLE)
 
@@ -32,11 +32,11 @@ Değil okumadıysanız [veri nesneleri ve veri kaynakları (OLE)](../mfc/data-ob
 
 Sürükleme ve bırakma hakkında daha fazla bilgi için bkz:
 
-- [Sürükle ve bırak: Bir bırakma kaynağı uygulama](../mfc/drag-and-drop-implementing-a-drop-source.md)
+- [Sürükleme ve Bırakma: Bırakma Kaynağı Uygulama](../mfc/drag-and-drop-implementing-a-drop-source.md)
 
-- [Sürükle ve bırak: Bir bırakma hedefi uygulama](../mfc/drag-and-drop-implementing-a-drop-target.md)
+- [Sürükleme ve Bırakma: Bırakma Hedefi Uygulama](../mfc/drag-and-drop-implementing-a-drop-target.md)
 
-- [Sürükle ve bırak: Özelleştirme](../mfc/drag-and-drop-customizing.md)
+- [Sürükleme ve Bırakma: Özelleştirme](../mfc/drag-and-drop-customizing.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

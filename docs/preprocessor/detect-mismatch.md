@@ -9,11 +9,11 @@ helpviewer_keywords:
 - detect_mismatch pragma
 ms.assetid: ddb13ac9-0e2f-40ce-be69-7e44c04f5a12
 ms.openlocfilehash: 42a3ba61cefe3b2db01aef24b802e3a51fed55d9
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59026726"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62389339"
 ---
 # <a name="detectmismatch"></a>detect_mismatch
 Bir nesneyi bir kayıt yerleştirir. Bağlayıcı, bu kayıtları olası uyuşmazlıkları denetler.

@@ -30,11 +30,11 @@ helpviewer_keywords:
 - operator > [C++], bstr
 ms.assetid: e153da72-37c3-4d8a-b8eb-730d65da64dd
 ms.openlocfilehash: f454c8bcfeb28ada8c07564e9bb562e18a537e45
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51330963"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "64345167"
 ---
 # <a name="bstrt-relational-operators"></a>_bstr_t İlişkisel İşleçleri
 

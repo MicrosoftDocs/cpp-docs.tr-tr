@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C4701
 ms.assetid: d7c76c66-1f3f-4d3c-abe4-5d94c84a5a1f
 ms.openlocfilehash: cbe70de39d2306edd50bb936ac5bbb4ad14af0e5
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59037269"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62395293"
 ---
 # <a name="compiler-warning-level-4-c4701"></a>Derleyici Uyarısı (düzey 4) C4701
 

@@ -24,11 +24,11 @@ helpviewer_keywords:
 - std::chi_squared_distribution [C++], param_type
 ms.assetid: 9b603fbe-cafd-4a92-b8c5-a434d60b8122
 ms.openlocfilehash: 9b37212d97644c42b9048a5c74cf15ee745564b9
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50531934"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62386297"
 ---
 # <a name="chisquareddistribution-class"></a>chi_squared_distribution Sınıfı
 

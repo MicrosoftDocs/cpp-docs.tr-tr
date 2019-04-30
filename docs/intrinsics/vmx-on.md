@@ -8,11 +8,11 @@ helpviewer_keywords:
 - __vmx_on intrinsic
 ms.assetid: 16804991-6a75-4adf-8ec2-bc95acfa4801
 ms.openlocfilehash: de903eeeb29e3c194a36ccb4cb038ba89b8ea82f
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59028110"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62390145"
 ---
 # <a name="vmxon"></a>__vmx_on
 

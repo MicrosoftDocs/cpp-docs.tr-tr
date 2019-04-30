@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C4459
 ms.assetid: ee9f6287-9c70-4b10-82a0-add82a13997f
 ms.openlocfilehash: 0cbab7c7cca1fc88bb99210262be45c56b6be7a8
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50585074"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62391432"
 ---
 # <a name="compiler-warning-level-4-c4459"></a>Derleyici Uyarısı (düzey 4) C4459
 

@@ -5,11 +5,11 @@ helpviewer_keywords:
 - rowsets, column updates
 ms.assetid: abb5db69-055d-431f-b12d-ad2940a661ba
 ms.openlocfilehash: 46de5f54a3ec6525f779a6b55a700429a2a84fef
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59039221"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62389079"
 ---
 # <a name="updating-a-column-when-another-table-contains-a-reference-to-the-row"></a>Başka Bir Tablo Satır için Başvuru İçerirken Sütunu Güncelleştirme
 

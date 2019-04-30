@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3898
 ms.assetid: d9a90df6-87e4-4fe7-ab01-c226ee86bf10
 ms.openlocfilehash: 503f295d62c598e3138b1a001d6b350c0d90ea84
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50549742"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62385452"
 ---
 # <a name="compiler-error-c3898"></a>Derleyici Hatası C3898
 

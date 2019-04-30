@@ -7,11 +7,11 @@ helpviewer_keywords:
 - clocale header
 ms.assetid: 5bde3e01-cf67-4f1f-a383-447ec814d00e
 ms.openlocfilehash: 5ca899282891f26221ca5b786debfcaee114d0b2
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51522057"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62386219"
 ---
 # <a name="ltclocalegt"></a>&lt;clocale&gt;
 

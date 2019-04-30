@@ -9,11 +9,11 @@ helpviewer_keywords:
 - Win32 Project Wizard
 ms.assetid: 5d7b3a5e-8461-479a-969a-67b7883725b9
 ms.openlocfilehash: 43a47366475b227ccfc5918b07760cc582326e82
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59041477"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62387735"
 ---
 # <a name="windows-desktop-wizard"></a>Windows Masaüstü Sihirbazı
 

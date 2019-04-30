@@ -22,11 +22,11 @@ helpviewer_keywords:
 - std::student_t_distribution [C++], param_type
 ms.assetid: 87b48127-9311-4d07-95df-833ed46bf0b1
 ms.openlocfilehash: 4c63f37c07a56144fdd18531af5e8f9fbdac656a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50647817"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62412260"
 ---
 # <a name="studenttdistribution-class"></a>student_t_distribution Sınıfı
 

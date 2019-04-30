@@ -7,11 +7,11 @@ helpviewer_keywords:
 - frame window classes [MFC], document/view architecture
 ms.assetid: 5da01fb4-f531-46cc-914f-e422e4f07f5d
 ms.openlocfilehash: affa217f481cc6d9e125d526f1b97be9120e0990
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57298015"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62392849"
 ---
 # <a name="frame-window-classes-architecture"></a>Çerçeve Penceresi Sınıfları (Mimari)
 

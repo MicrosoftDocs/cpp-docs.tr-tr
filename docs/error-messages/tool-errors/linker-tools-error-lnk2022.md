@@ -7,11 +7,11 @@ helpviewer_keywords:
 - LNK2022
 ms.assetid: d2128c73-dde3-4b8e-a9b2-0a153acefb3b
 ms.openlocfilehash: e55202274c5ec3982f784ad6cdf074a5a99e922f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50491396"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "64345329"
 ---
 # <a name="linker-tools-error-lnk2022"></a>Bağlayıcı Araçları Hatası LNK2022
 

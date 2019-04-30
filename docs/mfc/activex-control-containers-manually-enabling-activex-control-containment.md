@@ -7,11 +7,11 @@ helpviewer_keywords:
 - ActiveX controls [MFC], enabling containers
 ms.assetid: 833bcde9-c9ad-4709-ad12-2fc2150fb6a5
 ms.openlocfilehash: 80ca25192f3dbda711b0398917cfa68571cd2c55
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57302734"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62394942"
 ---
 # <a name="activex-control-containers-manually-enabling-activex-control-containment"></a>ActiveX denetim kapsayıcıları: ActiveX denetimi kapsamasını el ile etkinleştirme
 

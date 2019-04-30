@@ -6,11 +6,11 @@ helpviewer_keywords:
 - C++, application crash support
 ms.assetid: 7f3f5867-d4bc-4ba8-b3c9-dc1e7be93642
 ms.openlocfilehash: 23f860c43c63e3153f4b87f8eaf05d61709af82f
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57279790"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62389534"
 ---
 # <a name="how-to-add-restart-manager-support"></a>Nasıl yapılır: Yeniden başlatma Yöneticisi desteği ekleme
 

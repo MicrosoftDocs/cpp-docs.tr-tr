@@ -8,11 +8,11 @@ helpviewer_keywords:
 - ctime header
 ms.assetid: c1f7d4a4-4bfe-4e35-92cb-f63dbd3c39a8
 ms.openlocfilehash: ab48007f1dd41d4d28dd199a43121f08219a0221
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51519405"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62394214"
 ---
 # <a name="ltctimegt"></a>&lt;CTime&gt;
 

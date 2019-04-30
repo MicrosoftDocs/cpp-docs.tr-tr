@@ -8,11 +8,11 @@ helpviewer_keywords:
 - _variant_t method [C++]
 ms.assetid: a50e5b33-d4c6-4a26-8e7e-a0a25fd9895b
 ms.openlocfilehash: b3575226199c15c4a9796fb439f65efb5a539225
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50544111"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62403288"
 ---
 # <a name="varianttvariantt"></a>_variant_t::_variant_t
 
@@ -166,7 +166,7 @@ A **bool** yeni içine kopyalanacak değeri `_variant_t` nesne.
 *pIUknownSrc*<br/>
 COM arabirimi işaretçisini yeni saklanmasını VT_UNKNOWN nesnesine `_variant_t` nesne.
 
-*pdispsrc &*<br/>
+*pDispSrc*<br/>
 COM arabirimi işaretçisini yeni saklanmasını gt; vt_dıspatch & nesnesine `_variant_t` nesne.
 
 *decSrc*<br/>

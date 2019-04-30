@@ -7,11 +7,11 @@ helpviewer_keywords:
 - Detach method [C++]
 ms.assetid: cc8284bd-f68b-4fff-b2e6-ce8354dabf8b
 ms.openlocfilehash: 51561c6f7cf5ba49c86f818d925db548438b2981
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50492198"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62386180"
 ---
 # <a name="bstrtdetach"></a>_bstr_t::Detach
 

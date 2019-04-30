@@ -1,31 +1,31 @@
 ---
-title: Tür sistemi (C + +/ CX)
+title: Tür sistemi (C++/CX)
 ms.date: 02/03/2017
 ms.assetid: b67bee8a-b526-4872-969e-ef22724e88fe
 ms.openlocfilehash: fbc7a178621624e396c80509703ce1b5b4c19162
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57745960"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62392095"
 ---
-# <a name="type-system-ccx"></a>Tür sistemi (C + +/ CX)
+# <a name="type-system-ccx"></a>Tür sistemi (C++/CX)
 
 Windows çalışma zamanı mimarisi kullanarak, C + kullanabileceğiniz +/ CX, Visual Basic, Visual C# ve JavaScript uygulamaları ve bileşenleri, doğrudan Windows API'sine erişmeniz ve diğer Windows çalışma zamanı uygulamaları ve bileşenleri ile birlikte çalışmak yazılacak. CPU doğrudan yürüten yerel kod için C++ programında yazılan Evrensel Windows platformu uygulamaları derleyin. C# veya Visual Basic'te yazılmış Evrensel Windows platformu uygulamaları, Microsoft Ara dili (MSIL) derleyin ve ortak dil çalışma zamanında (CLR) yürütme. JavaScript'te yazılmış Evrensel Windows platformu uygulamaları bir çalışma zamanı ortamında yürütme. Windows çalışma zamanı işletim sistemi bileşenleri kendilerini C++ programında yazılan ve yerel kod çalıştırın. Tüm bu bileşenleri ve evrensel Windows platformu uygulamaları doğrudan Windows çalışma zamanı uygulama ikili arabirimi (ABI) iletişim kurar.
 
-Windows çalışma zamanı'nda bir modern C++ deyim desteğini etkinleştirmek için Microsoft C + oluşturulan +/ CX. C + +/ CX yerleşik taban türleri ve uygulamalarının C++ uygulamaları ve bileşenleri ABI'si ile diğer dillerde yazılmış uygulamalar arasında iletişim kurmak için temel Windows çalışma zamanı türleri sağlar. Herhangi bir Windows çalışma zamanı türü tüketen veya sınıflar, yapılar, arabirimler ve diğer evrensel Windows platformu uygulamaları ve bileşenleri tarafından kullanılan diğer kullanıcı tanımlı türler oluşturun. bir evrensel Windows platformu uygulaması yazılır C + +/ CX de kullanabilir normal bir C++ sınıfları ve yapıları ortak erişilebilirlik yok mu sürece.
+Windows çalışma zamanı'nda bir modern C++ deyim desteğini etkinleştirmek için Microsoft C + oluşturulan +/ CX. C++/CX sağlayan yerleşik taban türleri ve uygulamalarının temel Windows çalışma zamanı türleri bu etkinleştir C++ uygulamaları ve bileşenleri ABI'si ile diğer dillerde yazılmış uygulamalar arasında iletişim kurmak için. Herhangi bir Windows çalışma zamanı türü tüketen veya sınıflar, yapılar, arabirimler ve diğer evrensel Windows platformu uygulamaları ve bileşenleri tarafından kullanılan diğer kullanıcı tanımlı türler oluşturun. yazılmış olduğu bir evrensel Windows platformu uygulaması C++/CX normal kullanabileceğiniz C++ sınıfları ve yapıları ortak erişilebilirlik yok mu sürece.
 
-Ayrıntılı bir irdelemesi ve C + +/ CX dil öngörü ve, perde şekli şu blog postalarına bakın:
+İlgili ayrıntılı bir tartışma için C++/CX dil öngörü ve, perde şekli şu blog postalarına bakın:
 
-1. [C + +/ CX parçası 0 \[n\]: Giriş](https://blogs.msdn.microsoft.com/vcblog/2012/08/29/ccx-part-0-of-n-an-introduction)
+1. [C++/CX parçası 0 \[n\]: Giriş](https://blogs.msdn.microsoft.com/vcblog/2012/08/29/ccx-part-0-of-n-an-introduction)
 
-1. [C + +/ CX bölüm 1 / \[n\]: Basit bir sınıfı](https://blogs.msdn.microsoft.com/vcblog/2012/09/05/ccx-part-1-of-n-a-simple-class)
+1. [C++/CX bölüm 1 / \[n\]: Basit bir sınıfı](https://blogs.msdn.microsoft.com/vcblog/2012/09/05/ccx-part-1-of-n-a-simple-class)
 
-1. [C + +/ CX parçası 2 \[n\]: Wear Hats türleri](https://blogs.msdn.microsoft.com/vcblog/2012/09/17/ccx-part-2-of-n-types-that-wear-hats)
+1. [C++/CX parçası 2 \[n\]: Wear Hats türleri](https://blogs.msdn.microsoft.com/vcblog/2012/09/17/ccx-part-2-of-n-types-that-wear-hats)
 
-1. [C + +/ CX parçası 3 \[n\]: Yapım aşamasında](https://blogs.msdn.microsoft.com/vcblog/2012/10/05/ccx-part-3-of-n-under-construction/)
+1. [C++/CX parçası 3 \[n\]: Yapım aşamasında](https://blogs.msdn.microsoft.com/vcblog/2012/10/05/ccx-part-3-of-n-under-construction/)
 
-1. [C + +/ CX parçası 4 \[n\]: Statik üye işlevleri](https://blogs.msdn.microsoft.com/vcblog/2012/10/19/ccx-part-4-of-n-static-member-functions)
+1. [C++/CX parçası 4 \[n\]: Statik üye işlevleri](https://blogs.msdn.microsoft.com/vcblog/2012/10/19/ccx-part-4-of-n-static-member-functions)
 
 ## <a name="windows-metadata-winmd-files"></a>Windows meta veri (.winmd) dosyaları
 
@@ -40,14 +40,14 @@ Bir türün veya yöntemin meta verilerinde görünür olup, kendisine uygulanan
 |**Meta verilerde yayımlandı**|**Meta verilerde yayımlanmayan**|
 |public|private|
 |protected|internal|
-|Genel korumalı|Özel korumalı|
+|Genel korumalı|private protected|
 
 Kullanabileceğiniz **Nesne Tarayıcısı** .winmd dosyalarını içeriğini görüntülemek için. Windows ile birlikte Windows çalışma zamanı Windows.winmd'i dosyasında bileşenlerdir. C +'da kullanılan temel türler default.winmd dosyayı içeren +/ CX ve platform.winmd Platform ad alanı ek türleri içerir. Varsayılan olarak, bu üç .winmd dosyaları her C++ projesi Evrensel Windows platformu uygulamaları için dahil edilir.
 
 > [!TIP]
 > Türlerinde [Platform::Collections Namespace](../cppcx/platform-collections-namespace.md) genel olmadıklarından .winmd dosyasında görünmez. Bunlar özel C++ diline özgü tanımlanan arabirimlerin uygulamalarıdır `Windows::Foundation::Collections`. JavaScript veya C# ile yazılmış bir Windows çalışma zamanı uygulama tanıdığınız değil bir [Platform::Collections:: Vector sınıfı](../cppcx/platform-collections-vector-class.md) olduğunu, ancak bunu tüketebileceği bir `Windows::Foundation::Collections::IVector`. `Platform::Collections` Türleri collection.h içinde tanımlanır.
 
-## <a name="windows-runtime-type-system-in-ccx"></a>Windows çalışma zamanı tür sistemi C + +/ CX
+## <a name="windows-runtime-type-system-in-ccx"></a>Windows çalışma zamanı tür sisteminde C++/CX
 
 Aşağıdaki bölümlerde Windows çalışma zamanı tür sistemi ve nasıl bunlar C +'da desteklenen ana özelliklerini +/ CX.
 
@@ -61,9 +61,9 @@ Daha fazla bilgi için [ad alanları ve tür görünürlüğü](../cppcx/namespa
 
 ### <a name="fundamental-types"></a>Temel türler
 
-Windows çalışma zamanı, aşağıdaki temel türler, UInt8, Int16, Uınt16, Int32, Uınt32, Int64, UInt64, tek, Double, Char16, Boolean ve dize tanımlar. C + +/ CX UInt16, UInt32, UInt64, Int16, Int32, Int64, float32, float64 ve char16 bu temel sayısal türler, varsayılan ad alanında destekler. Ayrıca Boolean ve dize Platform ad alanında tanımlanır.
+Windows çalışma zamanı, aşağıdaki temel türler, UInt8, Int16, Uınt16, Int32, Uınt32, Int64, UInt64, tek, Double, Char16, Boolean ve dize tanımlar. C++/CX temel sayısal türler, varsayılan ad alanı UInt16, UInt32, UInt64, Int16, Int32, Int64, float32, float64 ve char16 olarak destekler. Ayrıca Boolean ve dize Platform ad alanında tanımlanır.
 
-C + +/ CX da uint8, eşdeğer tanımlar `unsigned char`, Windows çalışma zamanı'nda desteklenmiyor ve genel API'ler kullanılamaz.
+C++/CX da uint8, eşdeğer tanımlar `unsigned char`, Windows çalışma zamanı'nda desteklenmiyor ve genel API'ler kullanılamaz.
 
 Temel tür sarmalama tarafından null yapılabilir bir [Platform::ıbox arabirimi](../cppcx/platform-ibox-interface.md) arabirimi. Daha fazla bilgi için [değer sınıfları ve yapıları](../cppcx/value-classes-and-structs-c-cx.md).
 
@@ -77,13 +77,13 @@ Daha fazla bilgi için [dizeleri](../cppcx/strings-c-cx.md).
 
 ### <a name="arrays"></a>Diziler
 
-Windows çalışma zamanı, herhangi bir türde 1 boyutlu dizilerini destekler. Diziler diziler desteklenmez.  C + +/ CX, Windows çalışma zamanı diziler olarak yansıtılır [Platform::Array sınıfı](../cppcx/platform-array-class.md).
+Windows çalışma zamanı, herhangi bir türde 1 boyutlu dizilerini destekler. Diziler diziler desteklenmez.  İçinde C++/CX, Windows çalışma zamanı diziler olarak yansıtılır [Platform::Array sınıfı](../cppcx/platform-array-class.md).
 
 Daha fazla bilgi için [dizi ve WriteOnlyArray](../cppcx/array-and-writeonlyarray-c-cx.md)
 
 ### <a name="ref-classes-and-structs"></a>Başvuru sınıfları ve yapıları
 
-Bir Windows çalışma zamanı sınıf gsyih C + +/ CX olarak bir başvuru sınıfının veya ref struct, çünkü bunlar başvuruya göre kopyalanır. Bellek yönetimi başvuru sınıfları ve başvuru yapı birimleri için başvuru sayımı yoluyla şeffaf bir şekilde ele alınır. Son bir nesneye başvuru kapsam dışına çıktığında, nesne yok edilir. Başvuru sınıfı veya ref struct yapabilirsiniz:
+Bir Windows çalışma zamanı sınıf içinde öngörülen C++/CX olarak bir başvuru sınıfının veya ref struct, çünkü bunlar başvuruya göre kopyalanır. Bellek yönetimi başvuru sınıfları ve başvuru yapı birimleri için başvuru sayımı yoluyla şeffaf bir şekilde ele alınır. Son bir nesneye başvuru kapsam dışına çıktığında, nesne yok edilir. Başvuru sınıfı veya ref struct yapabilirsiniz:
 
 - Üyeleri Oluşturucular, yöntemler, özellikler ve olaylar içerir. Bu üye genel, özel, korumalı veya iç erişilebilirlik sahip olabilir.
 
@@ -115,9 +115,9 @@ Bir özellik, herhangi bir Windows çalışma zamanı türü genel veri üyesi o
 
 Daha fazla bilgi için [özellikleri](../cppcx/properties-c-cx.md).
 
-### <a name="windows-runtime-collections-in-ccx"></a>Windows çalışma zamanı koleksiyonları C + +/ CX
+### <a name="windows-runtime-collections-in-ccx"></a>Windows çalışma zamanı koleksiyonlarında C++/CX
 
-Windows çalışma zamanı, arabirimler için her bir dilin kendi şekilde uygulayan koleksiyon türleri kümesi tanımlar. C + +/ CX sağlar uygulamalarında [Platform::Collections:: Vector sınıfı](../cppcx/platform-collections-vector-class.md), [Platform::Collections:: Map sınıfı](../cppcx/platform-collections-map-class.md)ve ile uyumlu diğer ilgili somut koleksiyon türleri, Standart Şablon kitaplığı (STL) ortaklarınıza.
+Windows çalışma zamanı, arabirimler için her bir dilin kendi şekilde uygulayan koleksiyon türleri kümesi tanımlar. C++/CX sağlar uygulamalarında [Platform::Collections:: Vector sınıfı](../cppcx/platform-collections-vector-class.md), [Platform::Collections:: Map sınıfı](../cppcx/platform-collections-map-class.md)ve ile uyumlu diğer ilgili somut koleksiyon türleri, Standart Şablon kitaplığı (STL) ortaklarınıza.
 
 Daha fazla bilgi için [koleksiyonları](../cppcx/collections-c-cx.md).
 
@@ -147,7 +147,7 @@ Daha fazla bilgi için [Temsilciler](../cppcx/delegates-c-cx.md).
 
 ### <a name="exceptions"></a>Özel Durumlar
 
-C + +/ CX, özel durum türleri yakalayabilir [std::exception](../standard-library/exception-class.md) türleri ve [Platform::Exception](../cppcx/platform-exception-class.md) türleri.
+İçinde C++/CX, özel durum türleri yakalayabilir [std::exception](../standard-library/exception-class.md) türleri ve [Platform::Exception](../cppcx/platform-exception-class.md) türleri.
 
 Daha fazla bilgi için [özel durumları](../cppcx/exceptions-c-cx.md).
 
@@ -159,7 +159,7 @@ Daha fazla bilgi için [olayları](../cppcx/events-c-cx.md).
 
 ### <a name="casting"></a>Atama
 
-C + +/ CX standart dönüştürme C++ işleçleri destekler [static_cast](../cpp/static-cast-operator.md), [dynamic_cast](../cpp/dynamic-cast-operator.md), ve [reinterpret_cast](../cpp/reinterpret-cast-operator.md)hem de **safe_cast**C + özgü işleci +/ CX.
+C++/CX destekleyen standart C++ cast işleçleri [static_cast](../cpp/static-cast-operator.md), [dynamic_cast](../cpp/dynamic-cast-operator.md), ve [reinterpret_cast](../cpp/reinterpret-cast-operator.md)hem de **safe_cast** özgü işleci C++/CX.
 
 Daha fazla bilgi için [atama](../cppcx/casting-c-cx.md).
 

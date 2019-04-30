@@ -8,11 +8,11 @@ helpviewer_keywords:
 - VMRESUME instruction
 ms.assetid: 233fe1b6-c727-493a-a484-1b2363732281
 ms.openlocfilehash: d2bfe9a8f98b8a03a82768177217d70674708c39
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59040599"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62390015"
 ---
 # <a name="vmxvmresume"></a>__vmx_vmresume
 

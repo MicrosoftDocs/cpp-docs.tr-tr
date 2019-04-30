@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C1018
 ms.assetid: 2ceb8a99-30b2-4b80-bf42-e9f3305b3c52
 ms.openlocfilehash: 327bc0d5200fc348611da107257f2086063648fa
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50532677"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62383223"
 ---
 # <a name="fatal-error-c1018"></a>Önemli hata C1018
 

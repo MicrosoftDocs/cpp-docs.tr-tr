@@ -9,11 +9,11 @@ helpviewer_keywords:
 - classes [MFC], array
 ms.assetid: fdeabf95-2fe7-43a8-8f88-d954133caf52
 ms.openlocfilehash: 309567f897bf5ca941852b433cdee0e8e0d44b3c
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57284677"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62392641"
 ---
 # <a name="ready-to-use-array-classes"></a>Kullanıma Hazır Dizi Sınıfları
 

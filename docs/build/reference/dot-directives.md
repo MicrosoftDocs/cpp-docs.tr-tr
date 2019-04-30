@@ -6,11 +6,11 @@ helpviewer_keywords:
 - dot directives in NMAKE
 ms.assetid: ab35da65-30b6-48b7-87d6-61503d7faf9f
 ms.openlocfilehash: 2c21e8a18c76331f86a4e8966b4f67c9c9bc9b7d
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57823980"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "64342818"
 ---
 # <a name="dot-directives"></a>Nokta Yönergeleri
 

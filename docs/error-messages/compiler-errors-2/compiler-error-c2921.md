@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2921
 ms.assetid: 323642a0-bfc4-4942-9f41-c3adf5c54296
 ms.openlocfilehash: 47f348f6c30d96e8c4ae40e0c26a8ebade14c8ab
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50611256"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62385881"
 ---
 # <a name="compiler-error-c2921"></a>Derleyici Hatası C2921
 

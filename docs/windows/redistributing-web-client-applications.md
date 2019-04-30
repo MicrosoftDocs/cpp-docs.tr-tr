@@ -8,11 +8,11 @@ helpviewer_keywords:
 - application deployment [C++], Web applications
 ms.assetid: fe05988b-dee8-4a46-b381-016b5103a6bf
 ms.openlocfilehash: f821541efd8705e61b3292cc63713d280fd17a68
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58787853"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62388135"
 ---
 # <a name="redistributing-web-client-applications"></a>Web İstemcisi Uygulamalarını Yeniden Dağıtma
 

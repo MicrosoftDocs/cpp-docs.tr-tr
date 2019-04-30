@@ -7,11 +7,11 @@ helpviewer_keywords:
 - LNK4197
 ms.assetid: 8a976fd7-a74b-4c83-ab66-a9e7d7073c4a
 ms.openlocfilehash: 0abad1b98ff4782f077312752603ec17fd611c12
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50527341"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62390366"
 ---
 # <a name="linker-tools-warning-lnk4197"></a>Bağlayıcı Araçları Uyarısı LNK4197
 

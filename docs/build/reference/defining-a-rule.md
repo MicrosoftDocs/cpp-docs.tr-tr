@@ -6,11 +6,11 @@ helpviewer_keywords:
 - defining inference rules
 ms.assetid: 071cd092-3f2e-4065-b0fb-36a9d393cfa8
 ms.openlocfilehash: cd82dc5b0693e563fd3d75a0215265089ff57913
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57823974"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "64342886"
 ---
 # <a name="defining-a-rule"></a>Kural Tanımlama
 

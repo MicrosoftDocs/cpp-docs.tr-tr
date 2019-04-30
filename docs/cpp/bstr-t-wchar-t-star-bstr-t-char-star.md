@@ -9,11 +9,11 @@ helpviewer_keywords:
 - operator char* [C++]
 ms.assetid: acd9f4a7-b427-42c2-aaae-acae21cab317
 ms.openlocfilehash: bfc149b0f0688bed567bf202fddb4ab2c3102630
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51325815"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "64345148"
 ---
 # <a name="bstrtwchart-bstrtchar"></a>_bstr_t::wchar_t\*, _bstr_t::char\*
 

@@ -7,11 +7,11 @@ helpviewer_keywords:
 - include() attribute
 ms.assetid: 86c9dcb2-d9e0-4fd5-97d7-0bb3e23d6ecc
 ms.openlocfilehash: 1208f14a9f6b3724dd5353df57213baa3910d07f
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59040933"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62383743"
 ---
 # <a name="include"></a>include()
 

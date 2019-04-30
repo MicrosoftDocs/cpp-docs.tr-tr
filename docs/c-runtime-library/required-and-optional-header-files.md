@@ -8,11 +8,11 @@ helpviewer_keywords:
 - header files, required in run time
 ms.assetid: f64d0bf5-e2c3-4b42-97d0-443b3d901d9f
 ms.openlocfilehash: 06f7ced45f8def05219d8869708f555a78f73cd3
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57744528"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62387792"
 ---
 # <a name="required-and-optional-header-files"></a>Gerekli ve İsteğe Bağlı Başlık Dosyaları
 

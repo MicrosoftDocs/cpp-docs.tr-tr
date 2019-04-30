@@ -6,11 +6,11 @@ helpviewer_keywords:
 - CListCtrl class [MFC], destroying controls
 ms.assetid: 513ec820-3a02-49d2-b073-a6a7a3fc91b3
 ms.openlocfilehash: 963da9e6db2f0fe063dee1ca19ab23f545ed5e76
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57326718"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62392896"
 ---
 # <a name="destroying-the-list-control"></a>Listesi Denetimini Yok Etme
 

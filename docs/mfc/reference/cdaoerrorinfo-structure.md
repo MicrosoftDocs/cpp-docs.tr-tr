@@ -8,11 +8,11 @@ helpviewer_keywords:
 - DAO (Data Access Objects), Errors collection
 ms.assetid: cd37ef71-b0b3-401d-bc2b-540c9147f532
 ms.openlocfilehash: dd9610fce88c18ac42de81ed712492766ee705de
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57266017"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62399856"
 ---
 # <a name="cdaoerrorinfo-structure"></a>CDaoErrorInfo Yapısı
 

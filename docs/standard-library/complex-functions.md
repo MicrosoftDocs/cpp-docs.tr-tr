@@ -43,11 +43,11 @@ helpviewer_keywords:
 - std::tan [C++]
 - std::tanh [C++]
 ms.openlocfilehash: a67955da21c1229c3492d5b52dd6e14c9caa33fd
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50474288"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62389209"
 ---
 # <a name="ltcomplexgt-functions"></a>&lt;karmaşık&gt; işlevleri
 
@@ -934,7 +934,7 @@ complex<Type> pow(const Type& _Base, const complex<Type>& _Power);
 
 ### <a name="parameters"></a>Parametreler
 
-*_Temel*<br/>
+*_Base*<br/>
 Karmaşık bir sayıyı veya bir üye işlevi tarafından üssü için temel karmaşık numarası için parametre türü olan sayı.
 
 *_Power*<br/>

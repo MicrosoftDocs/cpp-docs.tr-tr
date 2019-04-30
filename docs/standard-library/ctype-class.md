@@ -37,11 +37,11 @@ helpviewer_keywords:
 - std::ctype [C++], widen
 ms.assetid: 3627154c-49d9-47b5-b28f-5bbedee38e3b
 ms.openlocfilehash: e7c474e9112acadc11af889471b1e126dfeeb23f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50438963"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62394149"
 ---
 # <a name="ctype-class"></a>ctype Sınıfı
 
@@ -147,11 +147,11 @@ Bellek yönetimi için nesne türünü belirtmek için kullanılan tamsayı değ
 
 Olası değerler için *_Refs* parametresi ve bunların önemi:
 
-- 0: nesne ömrü onu içeren yerel ayarlar tarafından yönetilir.
+- 0: Nesnenin ömrünü, onu içeren yerel ayarlar tarafından yönetilir.
 
-- 1: nesne ömrü el ile yönetilmesi gerekir.
+- 1: Nesnenin ömrünü el ile yönetilmesi gerekir.
 
-- \> 1: Bu değerler tanımlanmadı.
+- \> 1: Bu değerleri tanımlı değil.
 
 Yok edici korumalı olduğundan doğrudan örnek mümkündür.
 

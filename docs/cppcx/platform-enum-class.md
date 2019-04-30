@@ -8,11 +8,11 @@ helpviewer_keywords:
 - Platform::Enum Struct
 ms.assetid: cf82f0eb-7a37-4e4e-bbe7-e4aebbc9ec0a
 ms.openlocfilehash: 67870a0fcc685c420c7d24510e90c6f4ef9b72a9
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58780281"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62387597"
 ---
 # <a name="platformenum-class"></a>Platform::Enum sınıfı
 

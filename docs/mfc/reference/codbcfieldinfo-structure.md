@@ -8,11 +8,11 @@ helpviewer_keywords:
 - CODBCFieldInfo structure [MFC]
 ms.assetid: 92598b4f-facc-4108-b282-63a179ff79ab
 ms.openlocfilehash: bc2ad0c8319a60b773211dbd6b52b57bb2dbcafb
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57272769"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62388201"
 ---
 # <a name="codbcfieldinfo-structure"></a>CODBCFieldInfo Yapısı
 

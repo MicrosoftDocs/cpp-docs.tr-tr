@@ -9,11 +9,11 @@ helpviewer_keywords:
 - forms [MFC], adding to applications
 ms.assetid: efbe73c1-4ca4-4613-aac2-30d916e92c0e
 ms.openlocfilehash: f93f65e949c18ddb1ad5dba859ba8c4832abac8f
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57289279"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62392836"
 ---
 # <a name="form-views-mfc"></a>Form Görünümleri (MFC)
 

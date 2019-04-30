@@ -8,11 +8,11 @@ helpviewer_keywords:
 - lsl instruction
 ms.assetid: d0bc3630-90cb-4185-8667-686fd41e23d4
 ms.openlocfilehash: 650a847be3270782dc441d0e68c2c80d910e9d1e
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59036714"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62390392"
 ---
 # <a name="segmentlimit"></a>__segmentlimit
 

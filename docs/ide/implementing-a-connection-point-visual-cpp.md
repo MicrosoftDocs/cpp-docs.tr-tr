@@ -8,11 +8,11 @@ helpviewer_keywords:
 - implement connection point wizard [C++]
 ms.assetid: 5b37e4f9-73c9-4bef-b26d-365bc0662260
 ms.openlocfilehash: 7afa61246c5251936967e281f7237dc37e5be045
-ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
+ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51693288"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "64344258"
 ---
 # <a name="implement-a-connection-point"></a>Uygulama bağlantı noktası
 

@@ -8,11 +8,11 @@ helpviewer_keywords:
 - wbinvd instruction
 ms.assetid: 628d0981-39e5-49e1-bd43-706d123af121
 ms.openlocfilehash: 99c7a452e063dea328e4aa1362aae8783929deb0
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59039273"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62390028"
 ---
 # <a name="wbinvd"></a>__wbinvd
 

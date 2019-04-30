@@ -8,11 +8,11 @@ helpviewer_keywords:
 - position, CTreeCtrl items
 ms.assetid: cd264344-2cf9-4d90-9ea8-c6900b6f60e7
 ms.openlocfilehash: 238cb40319d28a53592a594a72947f400720f935
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57278385"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62392485"
 ---
 # <a name="tree-control-item-position"></a>Ağaç Denetim Öğesi Konumu
 

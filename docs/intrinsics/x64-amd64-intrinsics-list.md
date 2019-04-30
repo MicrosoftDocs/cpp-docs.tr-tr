@@ -6,11 +6,11 @@ helpviewer_keywords:
 - intrinsics, x64
 - intrinsics, amd64
 ms.openlocfilehash: 141ffa24a87d7794815c10f407ee23718071dacf
-ms.sourcegitcommit: 2ce88de75e7681220ae09a0ab13056f22f357a46
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "59982414"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62389664"
 ---
 # <a name="x64-amd64-intrinsics-list"></a>x64 (amd64) iç bilgi listesi
 

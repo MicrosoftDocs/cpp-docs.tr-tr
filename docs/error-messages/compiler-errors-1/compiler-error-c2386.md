@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2386
 ms.assetid: aaaa1284-34a0-4da2-8547-9fcbb559dae0
 ms.openlocfilehash: a75ccd9824106f2b954cd090a0e00ab11786d243
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50667668"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62393694"
 ---
 # <a name="compiler-error-c2386"></a>Derleyici Hatası C2386
 

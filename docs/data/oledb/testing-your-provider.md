@@ -7,11 +7,11 @@ helpviewer_keywords:
 - OLE DB providers, testing
 ms.assetid: bf824fe4-81af-4ffb-beb3-4fa2928dc450
 ms.openlocfilehash: d7a3adad546834e2bdc80a695f4c3bf2259dc0ba
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59038323"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62389131"
 ---
 # <a name="testing-your-provider"></a>Sağlayıcınızı Test Etme
 

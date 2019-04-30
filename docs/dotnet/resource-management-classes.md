@@ -10,11 +10,11 @@ helpviewer_keywords:
 - resources [C++], management
 ms.assetid: 1040e813-f1cd-4b13-83b6-d329f8e75d2e
 ms.openlocfilehash: 0113412fb86f7e0b326f4fa48462f8073f7754cc
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57739469"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62384848"
 ---
 # <a name="resource-management-classes"></a>Kaynak Yönetimi Sınıfları
 

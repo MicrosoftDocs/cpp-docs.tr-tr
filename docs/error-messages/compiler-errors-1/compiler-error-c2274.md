@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2274
 ms.assetid: 8e874903-f499-45ef-8291-f821eee4cc1c
 ms.openlocfilehash: f2fcb75098f18ad113ba68959035b37d9cddd6e9
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50667031"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62388884"
 ---
 # <a name="compiler-error-c2274"></a>Derleyici Hatası C2274
 

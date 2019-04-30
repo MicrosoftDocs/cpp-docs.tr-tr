@@ -13,11 +13,11 @@ helpviewer_keywords:
 - header controls [MFC], ordering items
 ms.assetid: 5aaef872-75b5-49c5-8fed-6f9a81fca812
 ms.openlocfilehash: bae351d921c25993d6b7029f9052e1938179673b
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57282031"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62392659"
 ---
 # <a name="ordering-items-in-the-header-control"></a>Üstbilgi Denetimindeki Öğeleri Sıralama
 

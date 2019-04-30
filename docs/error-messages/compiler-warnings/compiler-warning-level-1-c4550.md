@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C4550
 ms.assetid: f902b4ed-5f17-48ea-b693-92f4fb8c8054
 ms.openlocfilehash: eff3548ef43075a86f52086caf9b79158ad70cb9
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50640771"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62410388"
 ---
 # <a name="compiler-warning-level-1-c4550"></a>Derleyici Uyarısı (düzey 1) C4550
 

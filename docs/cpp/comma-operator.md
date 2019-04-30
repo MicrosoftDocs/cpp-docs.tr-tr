@@ -7,11 +7,11 @@ helpviewer_keywords:
 - comma operator
 ms.assetid: 38e0238e-19da-42ba-ae62-277bfdab6090
 ms.openlocfilehash: 8c6757f402cc7422824f1b701d3d1e4ae2566074
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50609930"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62399219"
 ---
 # <a name="comma-operator-"></a>Virgül İşleci: ,
 

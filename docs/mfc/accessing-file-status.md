@@ -9,11 +9,11 @@ helpviewer_keywords:
 - status of files [MFC]
 ms.assetid: 1b8891d6-eb0f-4037-a837-4928fe595222
 ms.openlocfilehash: 26c263b2d7e4e0243444925cb9416cb337dcd79d
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57298899"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62392966"
 ---
 # <a name="accessing-file-status"></a>Dosya Durumuna Erişme
 

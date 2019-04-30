@@ -9,11 +9,11 @@ helpviewer_keywords:
 - stosb instruction
 ms.assetid: 634589ed-2da3-439b-a381-a214d89bf10c
 ms.openlocfilehash: 679f1a892a6ee5b458a05d1577ecf766bed385dd
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59035010"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62390288"
 ---
 # <a name="stosb"></a>__stosb
 

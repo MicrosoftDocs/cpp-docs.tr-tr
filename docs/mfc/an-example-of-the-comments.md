@@ -8,11 +8,11 @@ helpviewer_keywords:
 - examples [MFC], code comments
 ms.assetid: eb8ddea2-74de-4d5c-93d6-596f7c5e58a7
 ms.openlocfilehash: 2bcfa2f3e90981ba0bba6946cc6d5a7278288596
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57301577"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62394695"
 ---
 # <a name="an-example-of-the-comments"></a>Açıklamalara Bir Örnek
 

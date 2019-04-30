@@ -17,11 +17,11 @@ helpviewer_keywords:
 - RUNTIME_CLASS macro, using
 ms.assetid: 3445a9af-0bd6-4496-95c3-aa59b964570b
 ms.openlocfilehash: 2e4f8685033fc7a8a2f49dafa7ef4e4e019d8989
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57298834"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62392953"
 ---
 # <a name="accessing-run-time-class-information"></a>Çalışma Süresi Sınıf Bilgilerine Erişme
 

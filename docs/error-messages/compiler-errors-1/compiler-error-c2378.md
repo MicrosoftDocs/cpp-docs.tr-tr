@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2378
 ms.assetid: 507a91c6-ca72-48df-b3a4-2cf931c86806
 ms.openlocfilehash: fb6d228826cf1b21904863505c0963069e89d32d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50436588"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "64344873"
 ---
 # <a name="compiler-error-c2378"></a>Derleyici Hatası C2378
 

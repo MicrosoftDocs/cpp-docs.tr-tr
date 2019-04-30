@@ -17,11 +17,11 @@ helpviewer_keywords:
 - CAnimationTimerEventHandler [MFC], SetAnimationController
 ms.assetid: 188dea3b-4b5e-4f6b-8df9-09d993a21619
 ms.openlocfilehash: e5e6b0a22d438f9c26318129e2d04df96d386cda
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57264436"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62391341"
 ---
 # <a name="canimationtimereventhandler-class"></a>CAnimationTimerEventHandler Class
 

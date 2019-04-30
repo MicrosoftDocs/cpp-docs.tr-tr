@@ -5,11 +5,11 @@ helpviewer_keywords:
 - safe_cast keyword [C++], upcasting
 ms.assetid: 0fbc87d8-ecdf-4cd5-81f4-0d8cc18e2aff
 ms.openlocfilehash: 66faadba9530bc7f3c12513277582e405e1b1b34
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58781841"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62389092"
 ---
 # <a name="how-to-use-safecast-in-ccli"></a>Nasıl yapılır: İçinde üzerinde safe_cast kullanma C++/CLI
 

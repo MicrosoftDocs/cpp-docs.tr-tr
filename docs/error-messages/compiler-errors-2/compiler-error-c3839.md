@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3839
 ms.assetid: 0957faff-1e9f-439b-876b-85bd8d2c578d
 ms.openlocfilehash: b8382213fbe7cc953dafd9610bfb993ba7837947
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50613024"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62400077"
 ---
 # <a name="compiler-error-c3839"></a>Derleyici Hatası C3839
 

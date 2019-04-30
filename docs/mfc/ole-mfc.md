@@ -8,11 +8,11 @@ helpviewer_keywords:
 - applications [OLE], user interface
 ms.assetid: 61cb5d3e-1108-4e9b-b301-a8d8fcc586cb
 ms.openlocfilehash: b37b1439462e36787baee6a77413de3d56f2cca5
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57296183"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62403980"
 ---
 # <a name="ole-mfc"></a>OLE (MFC)
 

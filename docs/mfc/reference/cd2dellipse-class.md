@@ -9,11 +9,11 @@ helpviewer_keywords:
 - CD2DEllipse [MFC], CD2DEllipse
 ms.assetid: e9f02f54-acf2-427e-b349-db50cd9a77df
 ms.openlocfilehash: 3abf0736884840be7bdcfcd55cb18a0bc8e69195
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57270845"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62391276"
 ---
 # <a name="cd2dellipse-class"></a>CD2DEllipse sınıfı
 

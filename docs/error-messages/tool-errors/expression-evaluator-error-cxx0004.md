@@ -8,11 +8,11 @@ helpviewer_keywords:
 - CXX0004
 ms.assetid: a4063eda-0335-4ae7-9595-29cf10669376
 ms.openlocfilehash: 0913fd814c980362c696ecadcfd1c230f0edbb1c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50655084"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62406125"
 ---
 # <a name="expression-evaluator-error-cxx0004"></a>İfade Değerlendirici Hatası CXX0004
 

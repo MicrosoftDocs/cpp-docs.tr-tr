@@ -3,11 +3,11 @@ title: Genel Özellikler (Linux C++ derleme görevleri dosyası projesi) | Micro
 ms.date: 9/26/2017
 ms.assetid: 3dec6853-43f6-412b-9806-9bfad333a204
 ms.openlocfilehash: fb742d552d0b70ba5f5c406dd43bdf4cf8d1914b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50524598"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62393031"
 ---
 # <a name="makefile-project-properties-linux-c"></a>Derleme görevleri dosyası özellikleri (Linux C++)
 
@@ -85,7 +85,7 @@ Zorlanmış içerir | Dahil edilen zorlanarak eklenmiş dosyaları belirtir.
 Ön İşlemci tanımlarını Kaldır | Bir veya daha çok önişlemci tanımsızı belirtir.     (/U[makro]))
 Ek Seçenekler | C++ dosyaları ayrıştırılırken IntelliSense tarafından kullanılacak ek derleyici anahtarlarını belirtir.
 
-### <a name="build"></a>Derleme
+### <a name="build"></a>Yapı
 
 Özellik | Açıklama
 --- | ---

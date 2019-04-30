@@ -10,11 +10,11 @@ helpviewer_keywords:
 - CComboBox class [MFC], extended
 ms.assetid: c23cbfe8-75d2-4f98-a753-c942416eda52
 ms.openlocfilehash: e119b41bbca42a1cbc0dbb5e721947c5bd7f1bc8
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57288499"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62394475"
 ---
 # <a name="using-ccomboboxex"></a>CComboBoxEx Kullanma
 

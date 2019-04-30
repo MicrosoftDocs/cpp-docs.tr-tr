@@ -11,11 +11,11 @@ helpviewer_keywords:
 - common controls [MFC], adding
 ms.assetid: bc843e59-0c51-4b5b-8bf2-343f716469d2
 ms.openlocfilehash: c70539b49fcf2aa87f0bee375a87b38277b6ed42
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57270767"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62394812"
 ---
 # <a name="adding-controls-by-hand"></a>El İle Denetim Ekleme
 

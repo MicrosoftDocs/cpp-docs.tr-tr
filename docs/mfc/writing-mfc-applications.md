@@ -8,11 +8,11 @@ helpviewer_keywords:
 - MFC, application development
 ms.assetid: 6a8d8a03-abfa-4976-86c2-c5773a4b7179
 ms.openlocfilehash: 63636e8c5738eb3823de0befa6237f7ae5b3491d
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57288174"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62399466"
 ---
 # <a name="writing-mfc-applications"></a>MFC Uygulamaları Yazma
 

@@ -7,11 +7,11 @@ helpviewer_keywords:
 - dispinterface attribute
 ms.assetid: 61c5a4a1-ae92-47e9-8ee4-f847be90172b
 ms.openlocfilehash: 6fd5010dc20d03c518206d81919e3beafbcaa9a9
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59038466"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "64346298"
 ---
 # <a name="dispinterface"></a>dispinterface
 
@@ -50,7 +50,7 @@ için geçerli değil **dispinterface** özniteliği.
 |-|-|
 |**İçin geçerlidir**|**interface**|
 |**Tekrarlanabilir**|Hayır|
-|**Gerekli öznitelikleri**|None|
+|**Gerekli öznitelikleri**|Yok.|
 |**Geçersiz öznitelikler**|`dual`, `object`, `oleautomation`, `local`, `ms_union`|
 
 Daha fazla bilgi için [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).

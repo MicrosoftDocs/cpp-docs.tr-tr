@@ -5,11 +5,11 @@ helpviewer_keywords:
 - Internet applications [MFC], Active technology
 ms.assetid: 6f782aa1-5c2f-47a2-9e63-ddd0829d5a08
 ms.openlocfilehash: e9f09715f53247cc8a3abf0fbc63517e76d810c3
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57296325"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62394929"
 ---
 # <a name="active-technology-on-the-internet"></a>Internet'te Etkin Teknoloji
 

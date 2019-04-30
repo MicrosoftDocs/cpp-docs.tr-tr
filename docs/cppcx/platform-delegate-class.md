@@ -8,11 +8,11 @@ helpviewer_keywords:
 - Platform::Delegate Class
 ms.assetid: 82b21271-768f-4193-9ca2-be68ddfd546e
 ms.openlocfilehash: 4116de3240c3ef334db51095997f946731372708
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58769244"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62396099"
 ---
 # <a name="platformdelegate-class"></a>Platform::delegate sınıfı
 

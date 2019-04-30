@@ -15,11 +15,11 @@ helpviewer_keywords:
 - CSplitButton [MFC], OnDropDown
 ms.assetid: 6844d0a9-6408-4e44-9b5f-57628ed8bad6
 ms.openlocfilehash: 70bba379f33be2d4df05f6b96eac14bf248cf356
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57414657"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "64346270"
 ---
 # <a name="csplitbutton-class"></a>CSplitButton sınıfı
 
@@ -58,7 +58,7 @@ class CSplitButton : public CButton
 
 Aşağıdaki şekil, çağrı cihazı denetimi ve (1) Bölünmüş düğme denetimini içeren bir iletişim kutusu gösterir. (2) açılan liste okunu zaten tıklanan ve (3) alt görüntülenir.
 
-![Splitbutton ve çağrı cihazı denetimi ile iletişim. ] (../../mfc/reference/media/splitbutton_pager.png "Splitbutton ve çağrı cihazı denetimi ile iletişim.")
+![Splitbutton ve çağrı cihazı denetimi ile iletişim. ](../../mfc/reference/media/splitbutton_pager.png "Splitbutton ve çağrı cihazı denetimi ile iletişim.")
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -188,7 +188,7 @@ void SetDropDownMenu(CMenu* pMenu);
 
 Aşağıdaki şekil, çağrı cihazı denetimi ve (1) Bölünmüş düğme denetimini içeren bir iletişim kutusu gösterir. (2) açılan liste okunu zaten tıklanan ve (3) alt görüntülenir.
 
-![Splitbutton ve çağrı cihazı denetimi ile iletişim. ] (../../mfc/reference/media/splitbutton_pager.png "Splitbutton ve çağrı cihazı denetimi ile iletişim.")
+![Splitbutton ve çağrı cihazı denetimi ile iletişim. ](../../mfc/reference/media/splitbutton_pager.png "Splitbutton ve çağrı cihazı denetimi ile iletişim.")
 
 ### <a name="example"></a>Örnek
 

@@ -29,11 +29,11 @@ helpviewer_keywords:
 - == operator [C++], with specific Visual C++ objects
 ms.assetid: 5ae4028c-33ee-485d-bbda-88d2604d6d4b
 ms.openlocfilehash: d3b1d6d1579c9f9bf5eca4f8a3f6733f27584674
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51326751"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62399245"
 ---
 # <a name="comptrt-relational-operators"></a>_com_ptr_t İlişkisel İşleçleri
 

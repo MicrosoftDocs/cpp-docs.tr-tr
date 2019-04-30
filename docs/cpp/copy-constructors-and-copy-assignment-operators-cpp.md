@@ -11,11 +11,11 @@ helpviewer_keywords:
 - assigning values to copy objects
 ms.assetid: a94fe1f9-0289-4fb9-8633-77c654002c0d
 ms.openlocfilehash: 59f463d103e233a1d9b25da3243a16f67263c815
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50535050"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62392303"
 ---
 # <a name="copy-constructors-and-copy-assignment-operators-c"></a>Kopya Oluşturucuları ve Kopya Atama İşleçleri (C++)
 
@@ -24,7 +24,7 @@ ms.locfileid: "50535050"
 >
 > Hem atama işlemi hem de başlatma işlemi kopyalanacak nesneleri neden.
 
-- **Atama**: bir nesnenin değerini başka bir nesneye atandığında, ikinci nesne ilk nesnenin kopyalanır. Bu nedenle,
+- **Atama**: Bir nesnenin değerini başka bir nesneye atandığında, ilk nesnenin ikinci nesneyi kopyalanır. Bu nedenle,
 
     ```cpp
     Point a, b;
@@ -34,7 +34,7 @@ ms.locfileid: "50535050"
 
    değerini neden `b` kopyalanacağı `a`.
 
-- **Başlatma**: yeni bir nesne bildirildiğinde bağımsız değişkenleri değere göre işleve geçirildiğinde ya da değerler işlevlerden değer tarafından döndürülür başlatma gerçekleşir.
+- **Başlatma**: Yeni bir nesne bildirildiğinde bağımsız değişkenleri değere göre işleve geçirildiğinde ya da değerler işlevlerden değer tarafından döndürülür başlatma gerçekleşir.
 
 Sınıf türü nesneler için "Kopyala" semantiği tanımlayabilirsiniz. Örneğin, aşağıdaki kodu düşünün:
 
@@ -76,13 +76,13 @@ int main()
 
 Kullanıcı tanımlı kopya oluşturucuları gibi derleyici tarafından üretilen kopya oluşturucuları sahip tek bir bağımsız değişken türü "başvurusu *sınıf adı*." Tüm temel sınıflar ve üye sınıfların türünde tek bir bağımsız değişken alacağı bildirilen kopya oluşturucuları olması durumudur bir istisnası **const** <em>sınıf adı</em><strong>&</strong>. Böyle bir durumda, derleyici tarafından üretilen kopya Oluşturucunun bağımsız değişkeni de olan **const**.
 
-Kopya oluşturucusunun bağımsız değişken türü olmadığında **const**, kopyalayarak yapılan başlatma bir **const** hata nesnesi oluşturur. Tersi doğru değildir: bağımsız değişken ise **const**, olmayan bir nesneyi kopyalayarak başlatabilirsiniz **const**.
+Kopya oluşturucusunun bağımsız değişken türü olmadığında **const**, kopyalayarak yapılan başlatma bir **const** hata nesnesi oluşturur. Tersi doğru değildir: Bağımsız değişken ise **const**, olmayan bir nesneyi kopyalayarak başlatabilirsiniz **const**.
 
 Derleyici tarafından üretilen atama işleçleri ile aynı deseni takip **const.** Tek bir bağımsız değişken türü aldıkları <em>sınıf adı</em> <strong>&</strong> tüm temel ve üye sınıflardaki atama işleçleri türünde bağımsız değişken almadıkları sürece **const** <em>sınıf adı</em><strong>&</strong>. Atama işleci alır bu durumda, sınıfın üretilmiş bir **const** bağımsız değişken.
 
 > [!NOTE]
 > Sanal temel sınıflar, derleyici tarafından oluşturulan veya kullanıcı tanımlı kopya oluşturucular tarafından başlatıldığında, yalnızca bir kez başlatılırlar: Oluşturuldukları noktada.
 
-Etkileri, kopya oluşturucusununkine benzer. Bağımsız değişken türü olmadığında **const**, atamadan bir **const** hata nesnesi oluşturur. Tersi doğru değildir: varsa bir **const** değeri olmayan bir değer atanır **const**, ataması başarılı olur.
+Etkileri, kopya oluşturucusununkine benzer. Bağımsız değişken türü olmadığında **const**, atamadan bir **const** hata nesnesi oluşturur. Tersi doğru değildir: Varsa bir **const** değeri olmayan bir değer atanır **const**, ataması başarılı olur.
 
 Aşırı yüklenmiş atama işleçleri hakkında daha fazla bilgi için bkz: [atama](../cpp/assignment.md).

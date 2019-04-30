@@ -5,11 +5,11 @@ helpviewer_keywords:
 - IDispEventImpl class, using
 ms.assetid: 82d53b61-9d0d-45c5-aff9-2fafa468a9ca
 ms.openlocfilehash: c532164788d359c7834759de01407d49c19463ca
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58769335"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "64341477"
 ---
 # <a name="using-idispeventimpl"></a>Using IDispEventImpl
 

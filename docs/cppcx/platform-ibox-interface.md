@@ -7,11 +7,11 @@ f1_keywords:
 - VCCORLIB/Namespace not found::Platform::Value
 ms.assetid: 774df45d-f8a7-45a3-ae24-eecc3c681040
 ms.openlocfilehash: 24e70ad646e2673869b135e8cc7657910b9b499c
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57747066"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62383301"
 ---
 # <a name="platformibox-interface"></a>Platform::ıbox arabirimi
 
@@ -31,7 +31,7 @@ Paketlenmiş değer türü.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`IBox<T>` Arabirimi öncelikle dahili olarak kullanılan boş değer atanabilen değer türleri temsil etmek için açıklandığı [değer sınıfları ve yapıları (C + +/ CX)](../cppcx/value-classes-and-structs-c-cx.md). Parametre türü C++ yöntemlere iletilen kutusu değer türleri için de arabirimi kullanılır `Object^`. Giriş parametresi olarak açıkça bildirebilirsiniz `IBox<SomeValueType>`. Bir örnek için bkz. [kutulama](../cppcx/boxing-c-cx.md).
+`IBox<T>` Arabirimi öncelikle dahili olarak kullanılan boş değer atanabilen değer türleri temsil etmek için açıklandığı [değer sınıfları ve yapıları (C++/CX)](../cppcx/value-classes-and-structs-c-cx.md). Parametre türü C++ yöntemlere iletilen kutusu değer türleri için de arabirimi kullanılır `Object^`. Giriş parametresi olarak açıkça bildirebilirsiniz `IBox<SomeValueType>`. Bir örnek için bkz. [kutulama](../cppcx/boxing-c-cx.md).
 
 ### <a name="requirements"></a>Gereksinimler
 

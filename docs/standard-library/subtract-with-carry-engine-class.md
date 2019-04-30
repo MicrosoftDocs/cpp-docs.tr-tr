@@ -17,11 +17,11 @@ helpviewer_keywords:
 - std::subtract_with_carry_engine [C++], seed
 ms.assetid: 94a055f2-a620-4a22-ac34-c156924bab31
 ms.openlocfilehash: 76981df1f4a642cca1a57a9619f20aa4cebd63bb
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50501409"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62412197"
 ---
 # <a name="subtractwithcarryengine-class"></a>subtract_with_carry_engine Sınıfı
 
@@ -68,10 +68,10 @@ Yinelenme ilişkisini kullanarak bir kullanıcı tarafından belirtilen işarets
 
 Doğrudan bu altyapısından bir oluşturucuyu oluşturmak olsa da, önceden tanımlanmış bu tür tanımlarından birini de kullanabilirsiniz:
 
-`ranlux24_base`: Bir temeli olarak kullanılan `ranlux24`.
+`ranlux24_base`: İçin bir temel olarak kullanılan `ranlux24`.
 `typedef subtract_with_carry_engine<unsigned int, 24, 10, 24> ranlux24_base;`
 
-`ranlux48_base`: Bir temeli olarak kullanılan `ranlux48`.
+`ranlux48_base`: İçin bir temel olarak kullanılan `ranlux48`.
 `typedef subtract_with_carry_engine<unsigned long long, 48, 5, 12> ranlux48_base;`
 
 Wikipedia makalesinin carry altyapısı algoritmayla subract hakkında ayrıntılı bilgi için bkz. [Geciktirmiştir Fibonacci Oluşturucu](https://en.wikipedia.org/wiki/Lagged_Fibonacci_generator).

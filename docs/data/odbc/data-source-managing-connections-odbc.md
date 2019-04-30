@@ -19,11 +19,11 @@ helpviewer_keywords:
 - database connections [C++], MFC ODBC classes
 ms.assetid: c0adbcdd-c000-40c6-b199-09ffdc7b6ef2
 ms.openlocfilehash: 5b646ca0eb86d3addabaad59ca23f56cfe914114
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59041170"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62395956"
 ---
 # <a name="data-source-managing-connections-odbc"></a>Veri kaynağı: Bağlantıları yönetme (ODBC)
 
@@ -139,5 +139,5 @@ Yeniden kullanabileceğiniz bir `CDatabase` aynı veri kaynağına yeniden bağl
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Veri Kaynağı (ODBC)](../../data/odbc/data-source-odbc.md)<br/>
-[Veri kaynağı: (ODBC) veri kaynağının şemasını belirleme](../../data/odbc/data-source-determining-the-schema-of-the-data-source-odbc.md)<br/>
+[Veri Kaynağı: Veri Kaynağının Şemasını Belirleme (ODBC)](../../data/odbc/data-source-determining-the-schema-of-the-data-source-odbc.md)<br/>
 [CRecordset Sınıfı](../../mfc/reference/crecordset-class.md)
