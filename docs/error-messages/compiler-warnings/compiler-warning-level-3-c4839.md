@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C4839
 ms.assetid: f4f99066-9258-4330-81a8-f4a75a1d95ee
 ms.openlocfilehash: 09b6e5b8dc984b35df7de96f5cf8610f2b0f16af
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50536652"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62401533"
 ---
 # <a name="compiler-warning-level-3-c4839"></a>Derleyici Uyarısı (Düzey 3) C4839
 

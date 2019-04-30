@@ -7,11 +7,11 @@ helpviewer_keywords:
 - CMonthCalCtrl class [MFC], about CMonthCalCtrl class
 ms.assetid: 2be0e8c2-ed03-4853-aea1-4461eba18611
 ms.openlocfilehash: f97941bfd8d0a27f640757343cd360a1bec3050c
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57280819"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62411831"
 ---
 # <a name="using-cmonthcalctrl"></a>CMonthCalCtrl Kullanma
 

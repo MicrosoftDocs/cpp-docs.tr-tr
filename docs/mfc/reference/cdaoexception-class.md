@@ -19,11 +19,11 @@ helpviewer_keywords:
 - CDaoException [MFC], m_scode
 ms.assetid: b2b01fa9-7ce2-42a1-842e-40f13dc50da4
 ms.openlocfilehash: 8d49291c51f66ee837f9b31a2ade390cec48c51a
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57289006"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62399810"
 ---
 # <a name="cdaoexception-class"></a>CDaoException sınıfı
 
@@ -153,7 +153,7 @@ Aşağıdaki türde özel durum hakkında bilgi edinmek için bu üye işlevini 
 
 - Hata kodu
 
-- Kaynak
+- Source
 
 - Açıklama
 
@@ -194,7 +194,7 @@ Bu nesne, aşağıdaki bilgileri içerir:
 |Cdaoerrorınfo üyesi|Bilgiler|Açıklama|
 |--------------------------|-----------------|-------------|
 |`m_lErrorCode`|Hata Kodu|DAO hata kodu|
-|`m_strSource`|Kaynak|Nesne veya ilk olarak hatayı oluşturan uygulama adı|
+|`m_strSource`|Source|Nesne veya ilk olarak hatayı oluşturan uygulama adı|
 |`m_strDescription`|Açıklama|Hatayla ilişkili açıklayıcı bir dize|
 |`m_strHelpFile`|Yardım dosyası|Bir kullanıcıyı sorun hakkında bilgi alabilirsiniz Windows Yardım dosyasının yolu|
 |`m_lHelpContext`|Yardım içeriği|DAO Yardım dosyasındaki bir konuyu içerik kimliği|

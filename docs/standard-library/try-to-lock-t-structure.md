@@ -5,11 +5,11 @@ f1_keywords:
 - mutex/std::try_to_lock_t
 ms.assetid: 3e48d632-0387-4871-8257-34efef5d6b83
 ms.openlocfilehash: 18558ad7b1b08fa216c9d0540e47513705ac90b7
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50472897"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62411922"
 ---
 # <a name="trytolockt-structure"></a>try_to_lock_t Yapı
 

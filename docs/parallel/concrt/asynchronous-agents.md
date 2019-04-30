@@ -6,11 +6,11 @@ helpviewer_keywords:
 - agents [Concurrency Runtime]
 ms.assetid: 6cf6ccc6-87f1-4e14-af15-ea8ba58fef1a
 ms.openlocfilehash: ff6fa851519066c3c399a28557fd8f103d0e94be
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57268947"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62412814"
 ---
 # <a name="asynchronous-agents"></a>Zaman Uyumsuz Aracılar
 

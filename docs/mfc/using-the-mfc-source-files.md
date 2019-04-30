@@ -12,11 +12,11 @@ helpviewer_keywords:
 - source files, MFC
 ms.assetid: 3230e8fb-3b69-4ddf-9538-365ac7ea5e72
 ms.openlocfilehash: ac8d8ea64de9fd93487b3108857669931e31d0be
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57267036"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62411467"
 ---
 # <a name="using-the-mfc-source-files"></a>MFC Kaynak Dosyalarını Kullanma
 

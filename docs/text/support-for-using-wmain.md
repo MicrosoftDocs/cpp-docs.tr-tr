@@ -9,11 +9,11 @@ helpviewer_keywords:
 - wmain function
 ms.assetid: 41213c41-668c-40a4-8a1e-77d9eded720d
 ms.openlocfilehash: f4705e65551b57e3e52c0c8f060032a93280f67d
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57745137"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62410544"
 ---
 # <a name="support-for-using-wmain"></a>wmain Kullanma Desteği
 

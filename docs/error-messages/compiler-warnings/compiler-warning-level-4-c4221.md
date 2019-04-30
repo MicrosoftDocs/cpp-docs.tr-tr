@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C4221
 ms.assetid: 8532bd68-54dc-4526-8597-f61dcb0a0129
 ms.openlocfilehash: f552a5d76d1a778cdf72cbe079138f609350ffb1
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50511247"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62401104"
 ---
 # <a name="compiler-warning-level-4-c4221"></a>Derleyici Uyarısı (düzey 4) C4221
 

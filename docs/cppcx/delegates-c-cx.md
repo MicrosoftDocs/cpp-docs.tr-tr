@@ -1,15 +1,15 @@
 ---
-title: Temsilciler (C + +/ CX)
+title: Temsilciler (C++/CX)
 ms.date: 01/22/2017
 ms.assetid: 3175bf1c-86d8-4eda-8d8f-c5b6753d8e38
 ms.openlocfilehash: e2158adad288045c9a98889dbe97e834dc93ea71
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57745592"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62406931"
 ---
-# <a name="delegates-ccx"></a>Temsilciler (C + +/ CX)
+# <a name="delegates-ccx"></a>Temsilciler (C++/CX)
 
 `delegate` Anahtar sözcüğü, bir işlev nesnesi standart C++'ta Windows çalışma zamanı eşdeğerdir bir başvuru türü bildirmek için kullanılır. Temsilci bildirimi için işlev imzasına benzer; Bu, sarmalanmış işlev olmalıdır parametre türleri ve dönüş türü belirtir. Bu kullanıcı tarafından tanımlanan temsilci bildirimi şu şekildedir:
 
@@ -110,7 +110,7 @@ Aşağıdaki örnek, bu nesnelerin her biri bir temsilciyi oluşturmak gösteril
 
 ### <a name="generic-delegates"></a>Genel temsilciler
 
-Genel temsilciler C + +/ CX genel sınıf bildirimleri için benzer kısıtlamalar vardır. Bunlar genel olarak bildirilemez. Özel bir bildirebilirsiniz iç genel temsilci ve C++, ancak .NET kullanma veya .winmd meta verilere yayılır değil çünkü JavaScript istemciler bunu kullanamıyor. Bu örnek yalnızca C++ tarafından tüketilebilecek bir genel temsilci bildirir:
+Genel temsilcilerinin içinde C++/CX genel sınıf bildirimleri için benzer kısıtlamalar vardır. Bunlar genel olarak bildirilemez. Özel bir bildirebilirsiniz iç genel temsilci ve C++, ancak .NET kullanma veya .winmd meta verilere yayılır değil çünkü JavaScript istemciler bunu kullanamıyor. Bu örnek yalnızca C++ tarafından tüketilebilecek bir genel temsilci bildirir:
 
 [!code-cpp[Cx_delegates#116](../cppcx/codesnippet/CPP/delegatesevents/class1.h#116)]
 
@@ -134,4 +134,4 @@ Oluşturulan temsilciniz oluşturulmuş olan aynı iş parçacığında aranmak 
 
 [Tür Sistemi](../cppcx/type-system-c-cx.md)<br/>
 [Visual C++ Dil Başvurusu](../cppcx/visual-c-language-reference-c-cx.md)<br/>
-[Ad alanları başvurusu](../cppcx/namespaces-reference-c-cx.md)
+[Ad Alanları Başvurusu](../cppcx/namespaces-reference-c-cx.md)

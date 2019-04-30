@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3033
 ms.assetid: 8628b6bb-a650-4ed2-af13-57acd2f7ddbb
 ms.openlocfilehash: 57c2cc120a5c155d02e0e601dc2ff8924badbe67
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50460907"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62400376"
 ---
 # <a name="compiler-error-c3033"></a>Derleyici Hatası C3033
 

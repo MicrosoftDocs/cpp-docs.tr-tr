@@ -10,11 +10,11 @@ helpviewer_keywords:
 - throwing exceptions [MFC], exception contents
 ms.assetid: dfda4782-b969-4f60-b867-cc204ea7f33a
 ms.openlocfilehash: f6f9bca6f6b7ca9d104cb492c760ab89f7163afd
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57259392"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62406008"
 ---
 # <a name="exceptions-examining-exception-contents"></a>Özel durumlar: Özel durum içeriklerini İnceleme
 

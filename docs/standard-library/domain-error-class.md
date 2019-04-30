@@ -7,11 +7,11 @@ helpviewer_keywords:
 - domain_error class
 ms.assetid: a1d8245d-61c2-4d1e-973f-073bd5dd5fa3
 ms.openlocfilehash: a6aef1ab644be702bee60bd12f2d30f1730bbcc6
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50505462"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62413833"
 ---
 # <a name="domainerror-class"></a>domain_error Sınıfı
 

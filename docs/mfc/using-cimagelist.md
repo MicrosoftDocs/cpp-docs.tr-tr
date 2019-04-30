@@ -8,11 +8,11 @@ helpviewer_keywords:
 - CImageList class [MFC], using
 ms.assetid: 3d2a909e-d641-46b7-aada-81cab1a29b41
 ms.openlocfilehash: c3e4cec75ce23beb2a617d672170f86c608ca0a2
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57294596"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62411844"
 ---
 # <a name="using-cimagelist"></a>CImageList Kullanma
 

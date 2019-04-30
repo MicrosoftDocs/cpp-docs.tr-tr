@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C4091
 ms.assetid: 3a404967-ab42-49b0-b324-fd7ba1859d78
 ms.openlocfilehash: 87432a74dfe7c09a52f436d4e91b3f70eb66856b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50491747"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62410453"
 ---
 # <a name="compiler-warning-level-1-c4091"></a>Derleyici Uyarısı (düzey 1) C4091
 

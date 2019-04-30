@@ -12,11 +12,11 @@ helpviewer_keywords:
 - device contexts, screen drawings
 ms.assetid: e3761db6-0f19-4482-a4cd-ac38ef7c4d3a
 ms.openlocfilehash: bc461347b56379976cdf62014507e3a15529f081
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58772572"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62408034"
 ---
 # <a name="drawing-in-a-view"></a>Bir Görünümde Çizim Yapma
 

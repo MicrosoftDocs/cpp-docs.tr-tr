@@ -7,11 +7,11 @@ helpviewer_keywords:
 - linear_congruential_engine class
 ms.assetid: 30e00ca6-1933-4701-9561-54f3e810a5a1
 ms.openlocfilehash: 83306e47995f652014682d6bcc94966aab75c062
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50568183"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62413261"
 ---
 # <a name="linearcongruentialengine-class"></a>linear_congruential_engine Sınıfı
 
@@ -49,13 +49,13 @@ class linear_congruential_engine{
 İşeritsiz tamsayı sonuç türü. Olası türleri için bkz: [ \<rastgele >](../standard-library/random.md).
 
 *A*<br/>
-**Çarpan**. **Önkoşul**: bkz. Açıklamalar bölümü.
+**Çarpan**. **Önkoşul**: Açıklamalar bölümüne bakın.
 
 *C*<br/>
-**Artırma**. **Önkoşul**: bkz. Açıklamalar bölümü.
+**Artırma**. **Önkoşul**: Açıklamalar bölümüne bakın.
 
 *M*<br/>
-**Modulus**. **Önkoşul**: açıklamalara bakın.
+**Modulus**. **Önkoşul**: Açıklamalara bakın.
 
 ## <a name="members"></a>Üyeler
 

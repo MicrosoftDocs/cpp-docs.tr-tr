@@ -3,15 +3,15 @@ title: Hızlandırıcı ve accelerator_view Nesnelerini Kullanma
 ms.date: 11/04/2016
 ms.assetid: 18f0dc66-8236-4420-9f46-1a14f2c3fba1
 ms.openlocfilehash: 05ca53d075867fefa43f7471bb795040d075274e
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57272912"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62405397"
 ---
 # <a name="using-accelerator-and-acceleratorview-objects"></a>Hızlandırıcı ve accelerator_view Nesnelerini Kullanma
 
-Kullanabileceğiniz [hızlandırıcı](../../parallel/amp/reference/accelerator-class.md) ve [accelerator_view](../../parallel/amp/reference/accelerator-view-class.md) cihazda veya öykünücüde C++ AMP kodunuzu çalıştırmak için belirtmek için sınıflar. Bir sistem, birkaç cihaz ya da bellek, paylaşılan bellek desteği, hata ayıklama desteği veya çifte duyarlılık desteği miktarına göre farklılık gösteren öykünücüleri olabilir. C++ Accelerated Massive Parallelism (C++ AMP) uygun Hızlandırıcıları incelemek, birini varsayılan olarak ayarlamak, çoklu çağrı görünümlerinin belirtin ve özel hata ayıklama görevlerini gerçekleştirmek için kullanabileceğiniz API'ler sağlar.
+Kullanabileceğiniz [hızlandırıcı](../../parallel/amp/reference/accelerator-class.md) ve [accelerator_view](../../parallel/amp/reference/accelerator-view-class.md) cihazda veya öykünücüde çalıştırılacak belirtmek için sınıflar, C++ AMP kodu. Bir sistem, birkaç cihaz ya da bellek, paylaşılan bellek desteği, hata ayıklama desteği veya çifte duyarlılık desteği miktarına göre farklılık gösteren öykünücüleri olabilir. C++Accelerated Massive Parallelism (C++ AMP) birini varsayılan olarak ayarlamak, çoklu çağrı görünümlerinin belirtin ve özel hata ayıklama görevleri uygun Hızlandırıcıları incelemek için kullanabileceğiniz API'ler sağlar.
 
 ## <a name="using-the-default-accelerator"></a>Varsayılan hızlandırıcıyı kullanma
 

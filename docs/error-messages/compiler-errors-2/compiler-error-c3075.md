@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3075
 ms.assetid: f431daa9-e0fa-48f0-a5c3-f99be96b55e3
 ms.openlocfilehash: 0494961b47e99ce1f3e559302aff56278098a912
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50591639"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62406723"
 ---
 # <a name="compiler-error-c3075"></a>Derleyici Hatası C3075
 

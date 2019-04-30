@@ -7,11 +7,11 @@ helpviewer_keywords:
 - unary_function class
 ms.assetid: 04c2fbdc-c1f6-48ed-b6cc-292a6d484627
 ms.openlocfilehash: aaca8d48171ebb4043e9c8f0ea66316feb73d39c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50462809"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62399401"
 ---
 # <a name="unaryfunction-struct"></a>unary_function Yapısı
 

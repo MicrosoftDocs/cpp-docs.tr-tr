@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C4161
 ms.assetid: 03d3be61-83f1-4009-8310-8758ab67055f
 ms.openlocfilehash: e1bbc949c298a7cfb6c3a3a061616db3dc4730f4
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50555846"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62402274"
 ---
 # <a name="compiler-warning-level-3-c4161"></a>Derleyici Uyarısı (Düzey 3) C4161
 

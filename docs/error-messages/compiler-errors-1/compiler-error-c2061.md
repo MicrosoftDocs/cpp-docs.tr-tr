@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2061
 ms.assetid: b0e61c0c-a205-4820-b9aa-301d6c6fe6eb
 ms.openlocfilehash: 85357d94c7bc2d709e852daa60caf269949ad1b8
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59777126"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62408699"
 ---
 # <a name="compiler-error-c2061"></a>Derleyici Hatası C2061
 

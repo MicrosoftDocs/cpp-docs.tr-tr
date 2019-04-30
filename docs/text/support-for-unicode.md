@@ -1,5 +1,5 @@
 ---
-title: Unicode Desteği
+title: Unicode desteği
 ms.date: 1/09/2018
 helpviewer_keywords:
 - globalization [C++], character sets
@@ -10,13 +10,13 @@ helpviewer_keywords:
 - localization [C++], character sets
 - Unicode [C++], installing support
 ms.openlocfilehash: fea49bff2a4563b8617e19636e27afbae1c55811
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50501692"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62410557"
 ---
-# <a name="support-for-unicode"></a>Unicode Desteği
+# <a name="support-for-unicode"></a>Unicode desteği
 
 Unicode temsil edilemeyen yalnızca bir bayt (diğer bir deyişle, bunların çoğu) dahil olmak üzere, tüm karakter kümeleri destekleyen bir özelliğidir. Uluslararası pazar için programlama yapıyorsanız ya da Unicode kullanmanızı öneririz veya [çok baytlı karakter kümesi](../text/support-for-multibyte-character-sets-mbcss.md) (MBCS) veya şekilde değiştirerek bir anahtar ya da derleme programınızı kodlayın.
 

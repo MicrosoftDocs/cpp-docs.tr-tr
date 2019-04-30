@@ -5,11 +5,11 @@ f1_keywords:
 - thread/std::hash
 ms.assetid: 4a8bf5bc-4334-4070-936b-98585f8a073b
 ms.openlocfilehash: bb230d401d5061f4951f8007f93c3a28ce3dab03
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50579877"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62405020"
 ---
 # <a name="hash-structure-c-standard-library"></a>hash yapısı (Standart C++ Kitaplığı)
 

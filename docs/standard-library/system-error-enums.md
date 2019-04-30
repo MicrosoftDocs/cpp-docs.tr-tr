@@ -6,11 +6,11 @@ f1_keywords:
 - system_error/std::io_errc
 ms.assetid: b21321b7-404a-40de-8777-a85b77c6fa58
 ms.openlocfilehash: 4e9d63854e937160d8e3cc617a61b0b9c1c75c48
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50620057"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62412143"
 ---
 # <a name="ltsystemerrorgt-enums"></a>&lt;system_error&gt; sabit listeleri
 

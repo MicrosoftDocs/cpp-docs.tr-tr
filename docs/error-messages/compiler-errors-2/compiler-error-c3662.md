@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3662
 ms.assetid: 61bd3e41-a86b-42c0-be89-d992d3906ff1
 ms.openlocfilehash: 28d8df02d63fc1b16a392a2df83524cd616d5ab3
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59777314"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62400311"
 ---
 # <a name="compiler-error-c3662"></a>Derleyici Hatası C3662
 

@@ -27,11 +27,11 @@ helpviewer_keywords:
 - std::extreme_value_distribution [C++], param_type
 ms.assetid: a0cd8370-0a54-4e26-9388-8b9678fb57da
 ms.openlocfilehash: 7eb75fb7b76399fd4bf1d3bea94dcec4b52230f9
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50625039"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62405150"
 ---
 # <a name="extremevaluedistribution-class"></a>extreme_value_distribution Sınıfı
 

@@ -10,11 +10,11 @@ helpviewer_keywords:
 - AMPRT/Concurrency::accelerator_view_removed::accelerator_view_removed Class
 ms.assetid: 262446de-311c-454e-a5ed-e2aaced0d88a
 ms.openlocfilehash: 09f534a90f3191025c3ce99d07a462908387c676
-ms.sourcegitcommit: 309dc532f13242854b47759cef846de59bb807f1
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58564959"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62405657"
 ---
 # <a name="acceleratorviewremoved-class"></a>accelerator_view_removed Sınıfı
 

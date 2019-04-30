@@ -7,11 +7,11 @@ helpviewer_keywords:
 - __readcr8 intrinsic
 ms.assetid: fce16953-87ff-4fbe-8081-7962b97ae46c
 ms.openlocfilehash: d4c0b22d38d725566062d2da98839579c22d571c
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59036870"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62396463"
 ---
 # <a name="readcr8"></a>__readcr8
 

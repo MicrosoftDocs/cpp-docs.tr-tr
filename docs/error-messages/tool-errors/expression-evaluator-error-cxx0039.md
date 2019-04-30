@@ -8,11 +8,11 @@ helpviewer_keywords:
 - CAN0039
 ms.assetid: 8bf698d2-e015-4595-944f-72b81aa43d22
 ms.openlocfilehash: 053e57a21f0cb75cbd96732edb6812b3557bcd50
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50463277"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62396983"
 ---
 # <a name="expression-evaluator-error-cxx0039"></a>İfade Değerlendirici Hatası CXX0039
 

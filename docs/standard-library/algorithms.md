@@ -9,11 +9,11 @@ helpviewer_keywords:
 - conventions [C++], C++ algorithm
 ms.assetid: dec9b373-7d5c-46cc-b7d2-21a938ecd0a6
 ms.openlocfilehash: a0a1165d731e44568d530e3ed919d73e2a3e8e5e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50648038"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62411129"
 ---
 # <a name="algorithms"></a>Algoritmalar
 

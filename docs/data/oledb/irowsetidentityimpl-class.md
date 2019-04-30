@@ -15,11 +15,11 @@ helpviewer_keywords:
 - IsSameRow method
 ms.assetid: 56821edf-e045-40c8-96bd-231552cd5799
 ms.openlocfilehash: 51f8d7e832476619ccec277c9d73791041d146a6
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59023185"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62390847"
 ---
 # <a name="irowsetidentityimpl-class"></a>IRowsetIdentityImpl Sınıfı
 

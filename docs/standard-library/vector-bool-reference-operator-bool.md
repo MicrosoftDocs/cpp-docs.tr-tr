@@ -11,11 +11,11 @@ helpviewer_keywords:
 - reference::operator bool
 ms.assetid: b0e57869-18cc-4296-9061-da502f30120d
 ms.openlocfilehash: 7fa95b3037538ccbbf27fa5b9749dc21f72670cd
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50492708"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62410921"
 ---
 # <a name="vectorltboolgtreferenceoperator-bool"></a>vektör&lt;bool&gt;:: reference::operator bool
 

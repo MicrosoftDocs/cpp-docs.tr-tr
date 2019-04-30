@@ -1,6 +1,6 @@
 ---
 title: '&lt;ayarlama&gt; işleçleri'
-ms.date: 11/04/2016
+ms.date: 03/27/2019
 f1_keywords:
 - set/std::operator!=
 - set/std::operator&gt;
@@ -16,19 +16,19 @@ helpviewer_keywords:
 - std::operator&lt; (set)
 - std::operator&lt;= (set)
 - std::operator== (set)
-ms.openlocfilehash: f6354da2a7b4cf6419be4aae1a8d5f20356a4012
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 16308623a845fdbf804f4e72f2159bc2a2dbc76b
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50441827"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62412598"
 ---
 # <a name="ltsetgt-operators"></a>&lt;ayarlama&gt; işleçleri
 
 ||||
 |-|-|-|
-|[işleç! = (set)](#op_neq)|[İşleç&gt; (set)](#op_gt)|[İşleç&gt;= (set)](#eq)|
-|[İşleç&lt; (set)](#op_lt)|[İşleç&lt;= (set)](#eq)|[işleç == (set)](#op_eq_eq)|
+|[işleç! = (set)](#op_neq)|[İşleç&gt; (set)](#op_gt)|[İşleç&gt;= (set)](#op_gt_eq)|
+|[İşleç&lt; (set)](#op_lt)|[İşleç&lt;= (set)](#op_lt_eq)|[işleç == (set)](#op_eq_eq)|
 |[işleç! = (multiset)](#op_neq_multiset)|[İşleç&gt; (multiset)](#op_gt_multiset)|[İşleç&gt;= (multiset)](#op_gt_eq_multiset)|
 |[İşleç&lt; (multiset)](#op_lt_multiset)|[İşleç&lt;= (multiset)](#op_lt_eq_multiset)|[işleç == (multiset)](#op_eq_eq_multiset)|
 

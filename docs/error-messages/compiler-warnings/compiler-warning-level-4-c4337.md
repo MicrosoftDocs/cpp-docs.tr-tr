@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C4337
 ms.assetid: 70bc72d9-aac5-45cd-abd3-ebe42a05897b
 ms.openlocfilehash: 2bfa5f9b30fa0325df1c3655ded53ab0525449c3
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50479566"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62400844"
 ---
 # <a name="compiler-warning-level-4-c4337"></a>Derleyici Uyarısı (düzey 4) C4337
 

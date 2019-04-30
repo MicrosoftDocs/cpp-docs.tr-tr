@@ -7,11 +7,11 @@ helpviewer_keywords:
 - DDX (dialog data exchange) [MFC], property sheets
 ms.assetid: 689f02d0-51a9-455b-8ffb-5b44f0aefa28
 ms.openlocfilehash: de82a337f19b7b2ac6039fd3f3c16ab67aa1dc99
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57265931"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62405852"
 ---
 # <a name="exchanging-data"></a>Veri Değişimi
 

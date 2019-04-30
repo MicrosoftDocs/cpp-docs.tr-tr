@@ -25,11 +25,11 @@ helpviewer_keywords:
 - MBCS [C++], international programming
 ms.assetid: a1bb27ac-abe5-4c6b-867d-f761d4b93205
 ms.openlocfilehash: c6083fcf9db8236df15d1cb5e7de4cc15fe5916e
-ms.sourcegitcommit: ff3cbe4235b6c316edcc7677f79f70c3e784ad76
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/19/2018
-ms.locfileid: "53626727"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62411805"
 ---
 # <a name="text-and-strings-in-visual-c"></a>Visual C++'da Metin ve Dizeler
 
@@ -46,10 +46,10 @@ Unicode olarak temsil edilemeyen bir karakter kümesi tek bir bayt dahil olmak �
 [Çok baytlı karakter kümesi (MBCS) için destek](../text/support-for-multibyte-character-sets-mbcss.md)<br/>
 MBCS, Unicode karakter kümesi, Japonca ve Çince tek bir bayt ile gösterilemez gibi destekleyici alternatif açıklanır.
 
-[Tchar.h'de genel metin eşlemeleri](../text/generic-text-mappings-in-tchar-h.md)<br/>
+[Tchar.h'de Genel Metin Eşlemeleri](../text/generic-text-mappings-in-tchar-h.md)<br/>
 Microsoft'a özgü genel metin eşlemeleri birçok veri türleri, yordamlar ve diğer nesneleri sağlar.
 
-[Nasıl yapılır: Çeşitli dize türleri arasında dönüştürme](../text/how-to-convert-between-various-string-types.md)<br/>
+[Nasıl yapılır: Çeşitli Dize Türleri Arasında Dönüştürme](../text/how-to-convert-between-various-string-types.md)<br/>
 Çeşitli Visual C++ dize türlerinin diğer dizelere dönüştürülebileceği gösterilmektedir.
 
 ## <a name="related-sections"></a>İlgili Bölümler

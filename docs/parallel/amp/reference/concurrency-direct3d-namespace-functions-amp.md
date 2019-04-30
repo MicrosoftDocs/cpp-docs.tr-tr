@@ -22,11 +22,11 @@ f1_keywords:
 - amp/Concurrency::direct3d::umin
 ms.assetid: 28943b62-52c9-42dc-baf1-ca7b095c1a19
 ms.openlocfilehash: 0a2977faf094aafb6290063e39e062ffaeaaec81
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57281345"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62405592"
 ---
 # <a name="concurrencydirect3d-namespace-functions-amp"></a>CONCURRENCY::Direct3D ad alanı işlevleri (AMP)
 
@@ -156,7 +156,7 @@ C++ AMP çalışma zamanı kullanırsanız, D3D hata ayıklama katmanını kulla
 
 ##  <a name="d3d_access_lock"></a>  d3d_access_lock
 
-Güvenli şekilde D3D Hızlandırıcı görünümü ile paylaşılan kaynaklarda işlemleri gerçekleştirmek amacıyla accelerator_view üzerinde kilidi. Accelerator_view ve bu accelerator_view ile dahili olarak ilişkili tüm C++ AMP kaynaklar, işlemleri gerçekleştirirken bu kilit etkinleştirilir ve başka bir iş parçacığı D3D erişim kilidini tutan sırada engeller. Bu kilit yinelemesizdir: Bu işlev çağrısı zaten Kilit tutan bir iş parçacığından tanımlı bir davranıştır. Accelerator_view veya accelerator_view D3D erişim kilit tuttuğunda iş parçacığından ilişkili herhangi bir veri kapsayıcısına işlemleri tanımsız bir davranıştır. Ayrıca bkz: scoped_d3d_access_lock, kapsam tabanlı D3D erişim kilidi için bir RAII stil sınıf.
+Güvenli şekilde D3D Hızlandırıcı görünümü ile paylaşılan kaynaklarda işlemleri gerçekleştirmek amacıyla accelerator_view üzerinde kilidi. Accelerator_view ve tüm C++ bu accelerator_view ile dahili olarak ilişkili AMP kaynaklar, işlemleri gerçekleştirirken bu kilit alın ve başka bir iş parçacığı D3D erişim kilidini tutan sırada engeller. Bu kilit yinelemesizdir: Bu işlev çağrısı zaten Kilit tutan bir iş parçacığından tanımlı bir davranıştır. Accelerator_view veya accelerator_view D3D erişim kilit tuttuğunda iş parçacığından ilişkili herhangi bir veri kapsayıcısına işlemleri tanımsız bir davranıştır. Ayrıca bkz: scoped_d3d_access_lock, kapsam tabanlı D3D erişim kilidi için bir RAII stil sınıf.
 
 ```
 void __cdecl d3d_access_lock(accelerator_view& _Av);

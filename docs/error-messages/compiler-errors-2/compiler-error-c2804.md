@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2804
 ms.assetid: b066e563-cca4-450c-8ba7-3b0d7a89f3ea
 ms.openlocfilehash: 1ebcfdc2f2555fa694ab8dfeabe77e5140ddace2
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50481269"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62408426"
 ---
 # <a name="compiler-error-c2804"></a>Derleyici Hatası C2804
 

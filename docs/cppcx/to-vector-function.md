@@ -7,11 +7,11 @@ helpviewer_keywords:
 - to_vector Function
 ms.assetid: 9cdd5123-7243-4def-a1d3-162e0bf6219e
 ms.openlocfilehash: 4fa4e9c620519cc6bb2f96d346ded88b6cc826ae
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57752109"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62404630"
 ---
 # <a name="tovector-function"></a>to_vector işlevi
 
@@ -45,4 +45,4 @@ Temel alınan bir vektör veya VectorView nesneye erişim sağlayan bir Ivector 
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Windows::Foundation:: Collections Namespace](../cppcx/windows-foundation-collections-namespace-c-cx.md)
+[Windows::Foundation::Collections Ad Alanı](../cppcx/windows-foundation-collections-namespace-c-cx.md)

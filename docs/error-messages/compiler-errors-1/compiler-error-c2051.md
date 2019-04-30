@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2051
 ms.assetid: 81c0469a-78e2-49fa-bd76-97cdb135e3ea
 ms.openlocfilehash: e6b0d95628a1b4e7f9707202d57d29b906b1b96d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50532715"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62408764"
 ---
 # <a name="compiler-error-c2051"></a>Derleyici Hatası C2051
 

@@ -3,15 +3,15 @@ title: Dosya Sistemi Gezintisi
 ms.date: 11/04/2016
 ms.assetid: f7cc5f5e-a541-4e00-87c7-a3769ef6096d
 ms.openlocfilehash: cfdc789daab5b476566f2072109d23fb9310094f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50509623"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62405202"
 ---
 # <a name="file-system-navigation"></a>Dosya Sistemi Gezintisi
 
-\<Filesystem > Üstbilgi C++ dosya sistemi teknik belirtimi ISO/IEC TS 18822:2015 uygular (son taslak: [ISO/IEC JTC 1/SC 22/WG 21 N4100](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2014/n4100.pdf)) ve türleri ve yazmanıza olanak sağlayan İşlevler dosya sisteminde gezinmek için platformdan bağımsız kod. Platformlar arası olduğundan, Windows sistemleri için ilgili olmayan API'leri içerir. Örneğin, yani `is_fifo(const path&)` her zaman döndürür **false** Windows üzerinde.
+\<Filesystem > Üstbilgi uygular C++ dosya sistemi teknik belirtimi ISO/IEC TS 18822:2015 (son taslak: [ISO/IEC JTC 1/SC 22/WG 21 N4100](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2014/n4100.pdf)) ve türleri ve dosya sisteminde gezinmek için platformdan bağımsız kod yazmanıza olanak sağlayan işlevler içerir. Platformlar arası olduğundan, Windows sistemleri için ilgili olmayan API'leri içerir. Örneğin, yani `is_fifo(const path&)` her zaman döndürür **false** Windows üzerinde.
 
 ## <a name="overview"></a>Genel Bakış
 

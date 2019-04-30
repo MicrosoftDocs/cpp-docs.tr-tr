@@ -18,11 +18,11 @@ helpviewer_keywords:
 - records [C++], editing
 ms.assetid: cab43d43-235a-4bed-ac05-67d10e94f34e
 ms.openlocfilehash: e5fc6ad2a1fe00367cd8a0b1c53ac914b95018ab
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59033216"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62397841"
 ---
 # <a name="recordset-how-addnew-edit-and-delete-work-odbc"></a>Kayıt kümesi: Nasıl AddNew, düzenleme ve silme çalışma (ODBC)
 
@@ -160,5 +160,5 @@ Güncelleştirme işlemlerinde kullanılan SQL deyimleri hakkında daha fazla bi
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Kayıt Kümesi (ODBC)](../../data/odbc/recordset-odbc.md)<br/>
-[Kayıt kümesi: Güncelleştirmeler hakkında daha fazla (ODBC)](../../data/odbc/recordset-more-about-updates-odbc.md)<br/>
+[Kayıt kümesi: Güncelleştirmeler Hakkında Daha Fazla Bilgi (ODBC)](../../data/odbc/recordset-more-about-updates-odbc.md)<br/>
 [Kayıt Alanı Değişimi (RFX)](../../data/odbc/record-field-exchange-rfx.md)

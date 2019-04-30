@@ -27,11 +27,11 @@ helpviewer_keywords:
 - CD2DSolidColorBrush [MFC], m_pSolidColorBrush
 ms.assetid: d4506637-acce-4f74-8a9b-f0a45571a735
 ms.openlocfilehash: f225198193443c11d0294010a5fb71858514c81e
-ms.sourcegitcommit: 309dc532f13242854b47759cef846de59bb807f1
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58565418"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62396229"
 ---
 # <a name="cd2dsolidcolorbrush-class"></a>CD2DSolidColorBrush Class
 

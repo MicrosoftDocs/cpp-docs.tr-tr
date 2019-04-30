@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C4458
 ms.assetid: 7bdaa1b1-0caf-4d68-98c4-6bdd441c23fb
 ms.openlocfilehash: 9e5eb8dc44968332abc097bfbd16b48e3240695c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50500990"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62391458"
 ---
 # <a name="compiler-warning-level-4-c4458"></a>Derleyici Uyarısı (düzey 4) C4458
 

@@ -7,11 +7,11 @@ helpviewer_keywords:
 - active document servers [MFC]
 ms.assetid: 131fec1e-02a0-4305-a7ab-903b911232a7
 ms.openlocfilehash: 7050b810bb5e1f0c240222cd9b8c4922ced4238a
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57270780"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62394981"
 ---
 # <a name="active-document-servers"></a>Etkin Belge Sunucuları
 

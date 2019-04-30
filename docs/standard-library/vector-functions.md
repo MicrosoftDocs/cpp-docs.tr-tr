@@ -7,11 +7,11 @@ ms.assetid: 6cdcf043-eef6-4330-83f0-4596fb9f968a
 helpviewer_keywords:
 - std::swap [vector]
 ms.openlocfilehash: e883653338a35d39b14b03dfd75ccf2ac2a8d873
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50483375"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62410884"
 ---
 # <a name="ltvectorgt-functions"></a>&lt;vektör&gt; işlevleri
 

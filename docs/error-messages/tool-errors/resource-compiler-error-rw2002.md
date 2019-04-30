@@ -7,11 +7,11 @@ helpviewer_keywords:
 - RW2002
 ms.assetid: b1d1a49b-b50b-4b0b-9f09-c7762e2dbe8f
 ms.openlocfilehash: 4cd922fff691b524ec9d278ac5948992fc096e09
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51523513"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62396801"
 ---
 # <a name="resource-compiler-error-rw2002"></a>Kaynak Derleyicisi Hatası RW2002
 
@@ -141,7 +141,7 @@ Ayrıştırma hatası
 
 1. **Geçersiz denetim türü**
 
-   Her denetim deyiminde bir **iletişim** deyimi aşağıdakilerden biri olmalıdır: onay kutusunu, COMBOBOX, denetimi, CTEXT, DEFPUSHBUTTON, EDITTEXT, GROUPBOX, SİMGE, liste kutusu, LTEXT, basma düğmesi, RADIOBUTTON, RTEXT, kaydırma çubuğu. Bu denetim ifadeleri doğru yazıldığından emin olun.
+   Her denetim deyiminde bir **iletişim** deyimi aşağıdakilerden biri olmalıdır: CHECKBOX, COMBOBOX, CONTROL, CTEXT, DEFPUSHBUTTON, EDITTEXT, GROUPBOX, ICON, LISTBOX, LTEXT, PUSHBUTTON, RADIOBUTTON, RTEXT, SCROLLBAR. Bu denetim ifadeleri doğru yazıldığından emin olun.
 
 1. **Geçersiz tür**
 

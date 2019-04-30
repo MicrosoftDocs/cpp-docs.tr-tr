@@ -10,11 +10,11 @@ helpviewer_keywords:
 - Microsoft::WRL::SimpleClassFactory::CreateInstance method
 ms.assetid: 6edda1b2-4e44-4e14-9364-72f519249962
 ms.openlocfilehash: 9a4c169944d56b693efa681bf7089636477012ea
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58787578"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62403097"
 ---
 # <a name="simpleclassfactory-class"></a>SimpleClassFactory Sınıfı
 

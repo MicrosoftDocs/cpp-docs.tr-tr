@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C4581
 ms.assetid: 598bcd87-257d-4eb3-94e4-15bb31aadc99
 ms.openlocfilehash: 9e370bcff0c30fb508ebc22aaff1f6a56dd420a1
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50625127"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62397282"
 ---
 # <a name="compiler-warning-level-1-c4581"></a>Derleyici Uyarısı (düzey 1) C4581
 

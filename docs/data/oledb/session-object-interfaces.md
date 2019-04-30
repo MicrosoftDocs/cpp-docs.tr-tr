@@ -9,11 +9,11 @@ helpviewer_keywords:
 - interfaces, list of
 ms.assetid: ac01a958-6dde-4bd7-8b63-94459e488335
 ms.openlocfilehash: 2fb91365fec0709e1bb2a26afa519e6565862681
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59031462"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62404586"
 ---
 # <a name="session-object-interfaces"></a>Oturum Nesnesi Arabirimleri
 

@@ -8,11 +8,11 @@ helpviewer_keywords:
 - overriding, standard command routing
 ms.assetid: 872b698a-7432-40c4-9008-68721e8effa5
 ms.openlocfilehash: 5383c1053894d44e23baf51b19ac3df4e60158e5
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57277956"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62410167"
 ---
 # <a name="overriding-the-standard-command-routing"></a>Standart Komut Yönlendirmeyi Geçersiz Kılma
 

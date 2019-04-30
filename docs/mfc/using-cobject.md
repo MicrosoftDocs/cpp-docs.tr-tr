@@ -11,11 +11,11 @@ helpviewer_keywords:
 - CObject class [MFC]
 ms.assetid: d0cd19bb-2856-4b41-abbc-620fd64cb223
 ms.openlocfilehash: 6c4355f43df33f37838cfc9be4453e42271ae9f3
-ms.sourcegitcommit: c1f646c8b72f330fa8cf5ddb0f8f261ba10d16f0
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58328486"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62411768"
 ---
 # <a name="using-cobject"></a>CObject Kullanma
 

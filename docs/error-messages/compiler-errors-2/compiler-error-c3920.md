@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3920
 ms.assetid: 66e91f28-ed82-4ce2-bf22-c0c74905b1ed
 ms.openlocfilehash: d7163cf07a440a0afd1216b3e5cf665326ffb963
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51522109"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62386609"
 ---
 # <a name="compiler-error-c3920"></a>Derleyici Hatası C3920
 

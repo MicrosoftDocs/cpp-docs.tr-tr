@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3097
 ms.assetid: b24bd8f8-e04f-4fbb-be57-4feb9165572e
 ms.openlocfilehash: c1d5603ceb31313add075d334a7d27cbe878906d
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59776203"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62404240"
 ---
 # <a name="compiler-error-c3097"></a>Derleyici Hatası C3097
 

@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C4297
 ms.assetid: ba92fcdc-9f70-4f60-abe6-281f9582ca59
 ms.openlocfilehash: 07dd6c65498ddd0d377ec3e0fbc7b44e52bec96b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50540263"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62408634"
 ---
 # <a name="compiler-warning-level-1-c4297"></a>Derleyici Uyarısı (düzey 1) C4297
 
@@ -23,7 +23,7 @@ Varsayılan olarak, derleyici örtük oluşturur `noexcept(true)` kullanıcı ta
 
 Özel durum belirtimleri hakkında daha fazla bilgi için bkz. [özel durum belirtimleri (throw)](../../cpp/exception-specifications-throw-cpp.md). Ayrıca bkz [/EH (özel durum işleme modeli)](../../build/reference/eh-exception-handling-model.md) özel durum işleme derleme zamanında değişiklik yapma hakkında bilgi için.
 
-Bu uyarı için __declspec da oluşturulur ([dllexport](../../cpp/dllexport-dllimport.md)) işlevleri C++ işlevlerini olsalar bile extern "C" olarak işaretlenmiş.
+Bu uyarı için __declspec da oluşturulur ([dllexport](../../cpp/dllexport-dllimport.md)) işlevleri olsalar bile extern "C" olarak işaretlenmiş C++ işlevleri.
 
 Aşağıdaki örnek, C4297 oluşturur:
 

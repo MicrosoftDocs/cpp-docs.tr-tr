@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C4390
 ms.assetid: c95c2f1b-9bce-4b1f-a80c-565d4cde0b1e
 ms.openlocfilehash: 4ca00f892adc8fe3ac1bffb59a27ea1744249dea
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50479527"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62401988"
 ---
 # <a name="compiler-warning-level-3-c4390"></a>Derleyici Uyarısı (Düzey 3) C4390
 

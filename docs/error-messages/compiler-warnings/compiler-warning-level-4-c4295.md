@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C4295
 ms.assetid: 20dbff85-9f62-4ca3-8fe9-079d4512006d
 ms.openlocfilehash: ed31ea19f9c36a9c6fab7452a4bfc3843a151059
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50472196"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62400883"
 ---
 # <a name="compiler-warning-level-4-c4295"></a>Derleyici Uyarısı (düzey 4) C4295
 

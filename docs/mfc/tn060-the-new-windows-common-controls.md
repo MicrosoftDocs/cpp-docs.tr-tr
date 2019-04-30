@@ -7,11 +7,11 @@ helpviewer_keywords:
 - TN060
 ms.assetid: 1a8eea6c-283a-4043-a7dc-a036e37e508e
 ms.openlocfilehash: 55490630c11a6669164f6459de9d92c3789fe765
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57262122"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62399606"
 ---
 # <a name="tn060-the-new-windows-common-controls"></a>TN060: Yeni Windows ortak denetimleri
 

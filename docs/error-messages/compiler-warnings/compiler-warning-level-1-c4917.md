@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C4917
 ms.assetid: c05e2610-4a5d-4f4b-a99b-c15fd7f1d5f1
 ms.openlocfilehash: 97f6f0a08c8ef292d81471cb5d0d94e359466933
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50466800"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62393499"
 ---
 # <a name="compiler-warning-level-1-c4917"></a>Derleyici Uyarısı (düzey 1) C4917
 

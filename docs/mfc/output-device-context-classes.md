@@ -12,11 +12,11 @@ helpviewer_keywords:
 - output classes [MFC]
 ms.assetid: 35fd6435-a38e-42c6-a3fa-cd6f39370fc3
 ms.openlocfilehash: 1d76570e7bfd4ce587b3803235394ec5406d30b2
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57266659"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62410206"
 ---
 # <a name="output-device-context-classes"></a>Çıktı (Cihaz Bağlamı) Sınıfları
 

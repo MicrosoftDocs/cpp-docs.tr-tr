@@ -23,11 +23,11 @@ helpviewer_keywords:
 - CrtSetDumpClient function
 ms.assetid: f3dd06d0-c331-4a12-b68d-25378d112033
 ms.openlocfilehash: 09f319f6298dbec6b229b2923bd86fc9b50314de
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50470754"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "64342990"
 ---
 # <a name="crtsetdumpclient"></a>_CrtSetDumpClient
 

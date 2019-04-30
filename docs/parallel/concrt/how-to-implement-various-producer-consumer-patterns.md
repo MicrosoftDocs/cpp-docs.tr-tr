@@ -6,11 +6,11 @@ helpviewer_keywords:
 - implementing producer-consumer patterns [Concurrency Runtime]
 ms.assetid: 75f2c7cc-5399-49ea-98eb-847fe6747169
 ms.openlocfilehash: 113518e97b6715384b5e7b84b0d0eab63dfcfcc7
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57296286"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62411363"
 ---
 # <a name="how-to-implement-various-producer-consumer-patterns"></a>Nasıl yapılır: Çeşitli üretici-tüketici desenlerini uygulama
 

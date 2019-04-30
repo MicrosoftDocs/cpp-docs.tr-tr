@@ -3,11 +3,11 @@ title: Grafikler (C++ AMP)
 ms.date: 11/04/2016
 ms.assetid: 190a98a4-5f7d-442e-866b-b374ca74c16f
 ms.openlocfilehash: 4a40575d84c9a0efedcb3c7c9717fc310870b530
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57260887"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62405670"
 ---
 # <a name="graphics-c-amp"></a>Grafikler (C++ AMP)
 
@@ -263,7 +263,7 @@ Ayrıca bir dokudan diğerine kullanarak kopyalayabilirsiniz [texture::copy_to](
 
 ## <a name="texture-view-classes"></a>Doku görüntüleme sınıfları
 
-C++ AMP tanıtır [texture_view sınıfı](../../parallel/amp/reference/texture-view-class.md) Visual Studio 2013'te. Doku görünümleri desteklemek için aynı doku hücresi türlerini ve derecelerini olarak [texture sınıfı](../../parallel/amp/reference/texture-class.md), ancak dokulardan farklı doku örnekleme ve Mipmap gibi ek donanım özelliklerine erişim sağlar. Doku görünümleri alttaki doku verilerine salt okunur, salt yazılır ve okunur-yazılır erişimi destekler.
+C++AMP tanıtır [texture_view sınıfı](../../parallel/amp/reference/texture-view-class.md) Visual Studio 2013'te. Doku görünümleri desteklemek için aynı doku hücresi türlerini ve derecelerini olarak [texture sınıfı](../../parallel/amp/reference/texture-class.md), ancak dokulardan farklı doku örnekleme ve Mipmap gibi ek donanım özelliklerine erişim sağlar. Doku görünümleri alttaki doku verilerine salt okunur, salt yazılır ve okunur-yazılır erişimi destekler.
 
 - Salt okunur erişim sağlayan `texture_view<const T, N>` 1, 2 ya da 4 bileşenleri olan öğeler destekler, şablon uzmanlığı, doku örneklemesini ve dinamik erişim görünümün örneği oluşturulduğunda, belirlenen bir mipmap düzeylerinin bir dizi.
 
@@ -275,7 +275,7 @@ Doku görünümleri dizi görünümlerine benzer, ancak otomatik veri yönetimi 
 
 ### <a name="writeonlytextureview-deprecated"></a>writeonly_texture_view kullanım dışı
 
-Visual Studio 2013 için C++ AMP gibi örnekleme ve Mipmap, hangi tarafından desteklenemeyen donanımsal doku özellikleri için daha iyi destek sunar. [writeonly_texture_view sınıfı](../../parallel/amp/reference/writeonly-texture-view-class.md). Yeni çıkan `texture_view` işlevselliğin bir üst sınıf destekler `writeonly_texture_view`; sonuç olarak, `writeonly_texture_view` kullanım dışı bırakılmıştır.
+Visual Studio 2013 için C++ AMP gibi örnekleme ve Mipmap, hangi tarafından desteklenemeyen donanımsal doku özellikleri için daha iyi destek tanıtır [writeonly_texture_view sınıfı](../../parallel/amp/reference/writeonly-texture-view-class.md). Yeni çıkan `texture_view` işlevselliğin bir üst sınıf destekler `writeonly_texture_view`; sonuç olarak, `writeonly_texture_view` kullanım dışı bırakılmıştır.
 
 Öneririz — en azından yeni kodda — kullandığınız `texture_view` önceden tarafından sağlanan erişim işlevselliği için `writeonly_texture_view`. İki bileşeni (int_2) olan bir doku nesnesine yazan aşağıdaki iki kod örnekleri karşılaştırın. Her iki durumda da, görünümü dikkat `wo_tv4`, lambda ifadesindeki değer tarafından yakalanması gerekir. İşte yeni kullanan örnek `texture_view` sınıfı:
 

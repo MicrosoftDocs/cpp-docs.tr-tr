@@ -1,15 +1,15 @@
 ---
-title: Statik kitaplıklar (C + +/ CX)
+title: Statik kitaplıklar (C++/CX)
 ms.date: 02/03/2017
 ms.assetid: 7faf53c8-fa21-42cc-8246-d32533ef9dfa
 ms.openlocfilehash: 242ba10b29a8efe0c3e9580f1d0d0c3be529a7d2
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
-ms.translationtype: MT
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57738939"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62398868"
 ---
-# <a name="static-libraries-ccx"></a>Statik kitaplıklar (C + +/ CX)
+# <a name="static-libraries-ccx"></a>Statik kitaplıklar (C++/CX)
 
 Evrensel Windows Platformu (UWP) bir uygulamada kullanılan bir statik kitaplığı STL türleri ve Windows çalışma zamanı uygulama platformdan hariç Win32 API çağrıları dahil olmak üzere, ISO standardı C++ kod içerebilir. Statik kitaplık, Windows çalışma zamanı bileşenlerini kullanır ve Windows çalışma zamanı bileşenleri ile ilgili bazı kısıtlamalar oluşturabilirsiniz.
 
@@ -33,4 +33,4 @@ Yalnızca statik kitaplık kitaplık dışında kullanılan Windows çalışma z
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[İş parçacığı oluşturma ve hazırlama](../cppcx/threading-and-marshaling-c-cx.md)
+[İş Parçacığı Oluşturma ve Hazırlama](../cppcx/threading-and-marshaling-c-cx.md)

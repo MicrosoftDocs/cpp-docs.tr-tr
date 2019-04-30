@@ -6,11 +6,11 @@ helpviewer_keywords:
 - scheduler policies, specifying [Concurrency Runtime]
 ms.assetid: 9c5149f9-ac34-4ff3-9e79-0bad103e4e6b
 ms.openlocfilehash: 3c03ef6661ebefe0bfe9fab62938ce9987a4bca1
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57277865"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62410038"
 ---
 # <a name="how-to-specify-specific-scheduler-policies"></a>Nasıl yapılır: Belirli Zamanlayıcı ilkeleri belirtme
 

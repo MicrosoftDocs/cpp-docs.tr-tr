@@ -10,11 +10,11 @@ helpviewer_keywords:
 - marshal_as template [C++]
 ms.assetid: 2ed717da-2b11-41e5-981d-47d251771989
 ms.openlocfilehash: 2294d8fe94a32f281332c963b21a542366ae3207
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57751518"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62386089"
 ---
 # <a name="marshalas"></a>marshal_as
 

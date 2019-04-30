@@ -3,11 +3,11 @@ title: Genel Özellikler (Linux C++ projesi) | Microsoft Docs
 ms.date: 9/26/2017
 ms.assetid: 56c800a9-3df9-4196-87b2-81adb00e4767
 ms.openlocfilehash: bc4eb39d2d735f8f7f782d2827bf2b938c5c2457
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50461340"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62393057"
 ---
 # <a name="general-properties-linux-c"></a>Genel Özellikler (Linux C++)
 

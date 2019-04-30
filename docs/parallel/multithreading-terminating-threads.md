@@ -14,11 +14,11 @@ helpviewer_keywords:
 - AfxEndThread method
 ms.assetid: 4c0a8c6d-c02f-456d-bd02-0a8c8d006ecb
 ms.openlocfilehash: dd11f5db646e172d7ea2c2cc646841249d95ef31
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57303637"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62407737"
 ---
 # <a name="multithreading-terminating-threads-in-mfc"></a>Çoklu iş parçacığı kullanımı: MFC içinde iş parçacıklarını sonlandırma
 

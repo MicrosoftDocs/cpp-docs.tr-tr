@@ -9,11 +9,11 @@ helpviewer_keywords:
 - complex<long double> function
 ms.assetid: 37591991-b385-46e9-b727-d534dbc10432
 ms.openlocfilehash: 19d4569523879911209bf0c05e762eba2c9852a1
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50456582"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62389183"
 ---
 # <a name="complexltlong-doublegt"></a>karmaşık&lt;uzun çift&gt;
 
@@ -57,7 +57,7 @@ Türü karmaşık bir sayıyı **uzun çift**.
 
 Şablon sınıfı hakkında daha fazla bilgi için `complex` ve onun üyeleri [complex sınıfı](../standard-library/complex-class.md).
 
-**Microsoft'a özgü**: **uzun çift** ve **çift** türleri aynı gösterimi vardır, ancak farklı türleri. Daha fazla bilgi için [temel türler](../cpp/fundamental-types-cpp.md).
+**Microsoft'a özgü**: **Uzun çift** ve **çift** türleri aynı gösterimi vardır, ancak farklı türleri. Daha fazla bilgi için [temel türler](../cpp/fundamental-types-cpp.md).
 
 ## <a name="example"></a>Örnek
 

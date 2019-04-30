@@ -1,6 +1,6 @@
 ---
-title: Derleyici hataları C2600 ile c2699 arasındaki
-ms.date: 11/17/2017
+title: C2600 ile C2699 arasındaki derleyici hataları
+ms.date: 04/21/2019
 f1_keywords:
 - C2604
 - C2606
@@ -52,14 +52,14 @@ helpviewer_keywords:
 - C2686
 - C2697
 ms.assetid: 73c6319f-cbea-4a2f-913b-90dc1af61f64
-ms.openlocfilehash: af173a04f9ae1e8a3ec4c9b3c869a4e51867cf1b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
-ms.translationtype: MT
+ms.openlocfilehash: 9ac5f5724490574aecf0e5b542f6fdd42b0ae5bb
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50518657"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62406515"
 ---
-# <a name="compiler-errors-c2600-through-c2699"></a>Derleyici hataları C2600 ile c2699 arasındaki
+# <a name="compiler-errors-c2600-through-c2699"></a>C2600 ile C2699 arasındaki derleyici hataları
 
 Belgelerin bu bölümdeki makaleleri bir alt kümesini derleyici tarafından oluşturulan hata iletilerini açıklayın.
 
@@ -72,8 +72,8 @@ Belgelerin bu bölümdeki makaleleri bir alt kümesini derleyici tarafından olu
 |[Derleyici Hatası C2600](compiler-error-c2600.md)|'*işlevi*': (bildirilmiş sınıfta ilk) derleyicinin ürettiği özel üye işlevi tanımlanamıyor|
 |[Derleyici Hatası C2601](compiler-error-c2601.md)|'*işlevi*': yerel işlev tanımları geçersiz|
 |[Derleyici Hatası C2602](compiler-error-c2602.md)|'*sınıfı*::*tanımlayıcı*'temel sınıfının üyesi değil'*sınıfı*'|
-|[Derleyici Hatası C2603](compiler-error-c2603.md)|'*işlevi*': işlevde oluşturucusu/yok Edicisi olan çok fazla sayıda blok kapsamı statik nesnesi|
-|Derleyici Hatası C2604|'*tanımlayıcı*': birden fazla arabirim yöntemi uygulanamaz|
+|[Derleyici Hatası C2603](compiler-error-c2603.md)|'*işlevi*': İşlevde oluşturucusu/yok Edicisi olan çok fazla sayıda blok kapsamı statik nesnesi|
+|Derleyici Hatası C2604|'*tanımlayıcı*': Birden fazla arabirim yöntemi uygulanamaz|
 |[Derleyici Hatası C2605](compiler-error-c2605.md)|'*tanımlayıcı*': Bu yöntem bir yönetilen/WinRT sınıfı içinde ayrılmış|
 |Derleyici Hatası C2606|'*class1*': yeniden uygulanamaz '*üye*', bir çalışma zamanını şuradan temel devralınır gibi'*class2*'|
 |Derleyici Hatası C2607|statik onaylama işlemi başarısız|
@@ -168,3 +168,8 @@ Belgelerin bu bölümdeki makaleleri bir alt kümesini derleyici tarafından olu
 |[Derleyici Hatası C2696](compiler-error-c2696.md)|Geçici nesnenin yönetilen WinRT türü oluşturulamıyor '*türü*'|
 |Derleyici Hatası C2697|Kullanımdan kalktı.|
 |[Derleyici Hatası C2698](compiler-error-c2698.md)|using bildirimi için '*declaration1*'var olan kullanma bildirimi ile birlikte var olamaz'*declaration2*'|
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[C /C++ derleyicisi ve derleme araçları hataları ve Uyarıları](../compiler-errors-1/c-cpp-build-errors.md) \
+[C3999 arasındaki derleyici hataları C2000-](../compiler-errors-1/compiler-errors-c2000-c3999.md)

@@ -6,11 +6,11 @@ helpviewer_keywords:
 - input stream objects
 ms.assetid: 0addcacb-7b7b-4d70-9775-a59abc400fb3
 ms.openlocfilehash: 17f18aa127b84538229b3cf4e4246dfefb6c1f98
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50517969"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62404916"
 ---
 # <a name="input-stream-manipulators"></a>Giriş Akış Manipülatörleri
 

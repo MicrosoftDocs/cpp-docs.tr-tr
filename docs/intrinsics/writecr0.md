@@ -7,11 +7,11 @@ helpviewer_keywords:
 - _writecr0 intrinsic
 ms.assetid: a143d08d-0333-4e1b-91b4-4acb2ae91b5a
 ms.openlocfilehash: 24d9ffe0e07269fedf19f90a7c66a07e3c5e7d3e
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59039390"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62389950"
 ---
 # <a name="writecr0"></a>__writecr0
 

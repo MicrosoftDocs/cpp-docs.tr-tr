@@ -8,11 +8,11 @@ helpviewer_keywords:
 - CRichEditCtrl class [MFC], using
 ms.assetid: e400c6ed-563e-4d4c-ab3b-a3f0aa20273b
 ms.openlocfilehash: d935cb5282af16a189d091ee6f40d128a906d392
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57270582"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62411740"
 ---
 # <a name="using-cricheditctrl"></a>CRichEditCtrl Kullanma
 

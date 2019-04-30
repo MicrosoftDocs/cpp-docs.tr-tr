@@ -6,11 +6,11 @@ f1_keywords:
 - iosfwd/std::wstreambuf
 ms.assetid: 2678e18f-f0f0-4995-bc53-f1bc7dfc4ec6
 ms.openlocfilehash: 505739861771a05dd39741f432579a6e9b2d0c26
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50664067"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62412390"
 ---
 # <a name="ltstreambufgt-typedefs"></a>&lt;streambuf&gt; tür tanımları
 

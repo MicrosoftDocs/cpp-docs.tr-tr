@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C4285
 ms.assetid: fa14de1f-fc19-4eec-8bea-81003636e12f
 ms.openlocfilehash: 96e1077ce3c9e60823a11aa41719738265ee703b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50535986"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "64345386"
 ---
 # <a name="compiler-warning-level-2-c4285"></a>Derleyici Uyarısı (Düzey 2) C4285
 

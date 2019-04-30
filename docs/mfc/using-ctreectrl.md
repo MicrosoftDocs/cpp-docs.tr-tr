@@ -8,11 +8,11 @@ helpviewer_keywords:
 - tree controls [MFC], using
 ms.assetid: 6a262f2c-3540-43e5-b03f-e4b6f9cb0325
 ms.openlocfilehash: ab73ea66af27e6c1de43ff09074a9539f7518700
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57266958"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62411662"
 ---
 # <a name="using-ctreectrl"></a>CTreeCtrl Kullanma
 

@@ -12,11 +12,11 @@ helpviewer_keywords:
 - exception handling [MFC], destroying objects
 ms.assetid: 3b14b4ee-e789-4ed2-b8e3-984950441d97
 ms.openlocfilehash: 23fe85018d1bc2c41371afec2ad6931755e4e682
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57298143"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62406073"
 ---
 # <a name="exceptions-freeing-objects-in-exceptions"></a>Özel durumlar: Özel durumlarda nesneleri serbest bırakma
 

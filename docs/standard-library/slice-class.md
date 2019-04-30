@@ -13,11 +13,11 @@ helpviewer_keywords:
 - std::slice [C++], stride
 ms.assetid: 00f0b03d-d657-4b81-ba53-5a9034bb2bf2
 ms.openlocfilehash: f2c054626b36083d67f9dbc4c87cf6283c12f001
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50495426"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62412533"
 ---
 # <a name="slice-class"></a>slice Sınıfı
 
@@ -48,7 +48,7 @@ Valarrays işlemleri yalnızca dilimleri tarafından tanımlanan kaynak ve hedef
 |Üye işlevi|Açıklama|
 |-|-|
 |[Boyutu](#size)|Dilimin öğelerin sayısını bulur bir `valarray`.|
-|[Başlangıç](#start)|Dilimin başlangıç dizini bulur bir `valarray`.|
+|[start](#start)|Dilimin başlangıç dizini bulur bir `valarray`.|
 |[STRIDE](#stride)|Dilimin öğeler arasındaki uzaklık bulur bir `valarray`.|
 
 ## <a name="requirements"></a>Gereksinimler

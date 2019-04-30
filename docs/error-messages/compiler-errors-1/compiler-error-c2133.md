@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2133
 ms.assetid: 8942f9e8-9818-468f-97db-09dbd124fcae
 ms.openlocfilehash: 68672ae76024d3d09d738d997c485a3205c7dd2a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50588073"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62397581"
 ---
 # <a name="compiler-error-c2133"></a>Derleyici Hatası C2133
 

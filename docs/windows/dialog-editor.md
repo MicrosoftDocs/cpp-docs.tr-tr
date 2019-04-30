@@ -24,11 +24,11 @@ helpviewer_keywords:
 - Dialog Editor [C++], shortcut keys
 ms.assetid: d94884ef-2cca-49d8-9b58-775f34848134
 ms.openlocfilehash: dc5a823951e07af96efceec52d2aa23552c2d002
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59029492"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62414392"
 ---
 # <a name="dialog-editor-c"></a>İletişim kutusu Düzenleyicisi (C++)
 

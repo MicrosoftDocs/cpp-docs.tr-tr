@@ -7,11 +7,11 @@ helpviewer_keywords:
 - ctype_byname class
 ms.assetid: a5cec021-a1f8-425f-8757-08e6f064b604
 ms.openlocfilehash: d998747045ece765269ddb013b525b8c06fcdf8b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50517747"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62394175"
 ---
 # <a name="ctypebyname-class"></a>ctype_byname Sınıfı
 

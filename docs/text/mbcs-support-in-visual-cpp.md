@@ -21,11 +21,11 @@ helpviewer_keywords:
 - MBCS [C++], enabling
 ms.assetid: 6179f6b7-bc61-4a48-9267-fb7951223e38
 ms.openlocfilehash: 3f57e9feac7f129b3fb8653c7b1a2eacb021bf29
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57818251"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62410609"
 ---
 # <a name="mbcs-support-in-visual-c"></a>Visual C++'ta MBCS Desteği
 

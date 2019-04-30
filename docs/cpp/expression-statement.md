@@ -6,11 +6,11 @@ helpviewer_keywords:
 - expression statements
 ms.assetid: 547d7f7a-58be-4ffc-a4b3-d64c7ae7538c
 ms.openlocfilehash: 2973c3e0a1cd59edfc7ef1e771454b780da23cf9
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50562454"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62400610"
 ---
 # <a name="expression-statement"></a>İfade Deyimi
 

@@ -7,11 +7,11 @@ helpviewer_keywords:
 - slider controls [MFC], using
 ms.assetid: 2b1a8ac8-2b17-41e1-aa24-83c1fd737049
 ms.openlocfilehash: b358b4e92c7d9f214291b047a080f71b48183519
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57284144"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62411519"
 ---
 # <a name="using-slider-controls"></a>Kaydırıcı Denetimlerini Kullanma
 

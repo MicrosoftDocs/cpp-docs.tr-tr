@@ -7,11 +7,11 @@ helpviewer_keywords:
 - CVT4001
 ms.assetid: 39c13bc2-92fa-4d79-8171-039b27329dcc
 ms.openlocfilehash: 7faf2fa7762e04aa9dc94574c82b514a5ba9bdf4
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50455451"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62406190"
 ---
 # <a name="cvtres-warning-cvt4001"></a>CVTRES Uyarısı CVT4001
 

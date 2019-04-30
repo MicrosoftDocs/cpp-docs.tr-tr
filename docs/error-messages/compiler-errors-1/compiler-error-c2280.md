@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2280
 ms.assetid: e6c5b1fb-2b9b-4554-8ff9-775eeb37161b
 ms.openlocfilehash: e1ec032878fefdc1992605df5ee1aa13c673d4cf
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50572815"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62388910"
 ---
 # <a name="compiler-error-c2280"></a>Derleyici Hatası C2280
 
@@ -19,7 +19,7 @@ ms.locfileid: "50572815"
 
 Derleyicinin başvuru girişimi algıladı bir `deleted` işlevi. Bu hata, açıkça olarak işaretlenen bir üye işlevine bir çağrı tarafından kaynaklanabilir `= deleted` kaynak kodunda. Bu hata, yapı ya da otomatik olarak bildirildi ve olarak işaretlenmiş bir sınıf, bir örtük özel üye işlevine bir çağrı tarafından da kaynaklanabilir `deleted` derleyici tarafından. Ne zaman derleyici otomatik olarak oluşturduğu hakkında daha fazla bilgi için `default` veya `deleted` özel üye işlevleri [özel üye işlevleri](../../cpp/special-member-functions.md).
 
-## <a name="example-explicitly-deleted-functions"></a>Örnek: Açıkça işlevleri silindi
+## <a name="example-explicitly-deleted-functions"></a>Örnek: Açıkça silinen İşlevler
 
 Bir çağrı bir açıkça `deleted` işlevi bu hataya neden olur. Bir açıkça `deleted` üye işlevi gelir sınıfın veya yapının kasıtlı olarak bu nedenle bu sorunu gidermek için kullanımını önlemek üzere tasarlanmış, bunu önlemek için kodunuzu değiştirmeniz gerekir.
 
@@ -79,7 +79,7 @@ void f() {
 }
 ```
 
-## <a name="example-movable-deletes-implicit-copy"></a>Örnek: Taşınabilir örtülü kopya siler.
+## <a name="example-movable-deletes-implicit-copy"></a>Örnek: Taşınabilir örtülü kopya siler
 
 Bir sınıf, bir taşıma Oluşturucusu veya taşıma atama işleci bildirir ancak açıkça bir kopya Oluşturucu bildirmiyor derleyici örtük olarak bir kopya Oluşturucusu bildirir ve olarak tanımladığı `deleted`. Benzer şekilde, bir sınıf için bir taşıma Oluşturucusu veya taşıma atama işleci bildirir, ancak bu kopya atama işleci açıkça bildirmiyor derleyici örtük olarak bir kopya atama işleci bildirir ve tanımlar olarak `deleted`. Bu sorunu gidermek için bu üyeleri açıkça bildirmeniz gerekir.
 
@@ -137,7 +137,7 @@ int main() {
 }
 ```
 
-## <a name="example-indirect-base-members-deleted"></a>Örnek: silinen dolaylı temel üyeleri
+## <a name="example-indirect-base-members-deleted"></a>Örnek: Silinen dolaylı temel üyeleri
 
 Visual Studio 2015 güncelleştirme 2 önce derleyici sürümleri DSCP ve türetilmiş bir sınıf özel üye işlevlerini dolaylı olarak türetilmiş çağırmak izin verilen `private virtual` temel sınıflar. Böyle bir çağrı yapıldığında derleyici artık derleyici hatası C2280 verir.
 

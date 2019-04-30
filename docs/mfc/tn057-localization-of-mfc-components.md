@@ -1,5 +1,5 @@
 ---
-title: 'TN057: MFC Bileşenlerini Yerelleştirme'
+title: 'TN057: MFC bileşenlerini yerelleştirme'
 ms.date: 06/28/2018
 f1_keywords:
 - vc.mfc.components
@@ -14,13 +14,13 @@ helpviewer_keywords:
 - localization [MFC], resources
 ms.assetid: 5376d329-bd45-41bd-97f5-3d895a9a0af5
 ms.openlocfilehash: 812c2d29c42b523d7b88b03741dc20f08ee70f44
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50428645"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62399635"
 ---
-# <a name="tn057-localization-of-mfc-components"></a>TN057: MFC Bileşenlerini Yerelleştirme
+# <a name="tn057-localization-of-mfc-components"></a>TN057: MFC bileşenlerini yerelleştirme
 
 > [!NOTE]
 > Aşağıdaki Teknik Not çevrimiçi belgelere ilk eklenmiştir beri güncelleştirilmemiş. Eski veya yanlış sonuç olarak, bazı yordamlar ve konular olabilir. En son bilgiler için bu konuyu çevrimiçi belge dizininde arama önerilir.

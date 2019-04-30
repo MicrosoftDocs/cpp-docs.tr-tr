@@ -6,11 +6,11 @@ helpviewer_keywords:
 - overriding, override [C++]
 ms.assetid: 4ec3eaf5-163b-4df8-8f16-7a2ec04c3d0f
 ms.openlocfilehash: 7d36793e4467f9454aca1eb207f3c3dfbd483bff
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59021423"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62403967"
 ---
 # <a name="explicit-overrides--ccli-and-ccx"></a>Açık geçersiz kılmalar (C++/CLI ve C++/CX)
 

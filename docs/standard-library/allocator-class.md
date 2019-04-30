@@ -35,11 +35,11 @@ helpviewer_keywords:
 - std::allocator [C++], rebind
 ms.assetid: 3fd58076-56cc-43bb-ad58-b4b7c9c6b410
 ms.openlocfilehash: 40e99901d4d4105902010a9e5b71ed3edf7d00db
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51518872"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62411051"
 ---
 # <a name="allocator-class"></a>allocator Sınıfı
 
@@ -54,7 +54,7 @@ class allocator
 
 ### <a name="parameters"></a>Parametreler
 
-*Türü*<br/>
+*Tür*<br/>
 Depolama kapatılıyor nesne türünü ayrılmış veya serbest bırakıldı.
 
 ## <a name="remarks"></a>Açıklamalar
@@ -77,7 +77,7 @@ Bu nedenle, bir ayırıcı aşağıdaki türleri tanımlar:
 
 Bunlar `Type`s işaretçileri ve başvuruları ayrılan öğeler için gerçekleştirmeniz gereken form belirtin. ( [allocator::pointer](#pointer) mutlaka aynı değil `Type*` tüm ayırıcı nesneleri için olsa bile, bu belirgin tanıma sahip sınıf için `allocator`.)
 
-**C ++ 11 ve sonraki:** taşıma işlemlerinde, ayırıcı etkinleştirmek için minimal ayırıcılar arabiriminin kullanın ve kopya Oluşturucu uygulamak, == ve! = işleçleri, ayırma ve serbest bırakın. Daha fazla bilgi ve örnek için bkz. [ayırıcılar](../standard-library/allocators.md)
+**C ++ 11 ve sonraki sürümleri:**  Taşıma işlemlerini, ayırıcı olarak etkinleştirmek için minimal ayırıcılar arabiriminin kullanın ve kopya Oluşturucu uygulamak, == ve! = işleçleri, ayırma ve serbest bırakın. Daha fazla bilgi ve örnek için bkz. [ayırıcılar](../standard-library/allocators.md)
 
 ## <a name="members"></a>Üyeler
 
@@ -85,7 +85,7 @@ Bunlar `Type`s işaretçileri ve başvuruları ayrılan öğeler için gerçekle
 
 |Oluşturucu|Açıklama|
 |-|-|
-|[Ayırıcı](#allocator)|Oluşturmak için kullanılan Oluşturucu `allocator` nesneleri.|
+|[allocator](#allocator)|Oluşturmak için kullanılan Oluşturucu `allocator` nesneleri.|
 
 ### <a name="typedefs"></a>Tür tanımları
 

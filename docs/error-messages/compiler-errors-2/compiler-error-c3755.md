@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3755
 ms.assetid: 9317b55e-a52e-4b87-b915-5a208d6eda38
 ms.openlocfilehash: 5d1260138bfdbc318817c336077eef326b62f8b8
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59776814"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62386635"
 ---
 # <a name="compiler-error-c3755"></a>Derleyici Hatası C3755
 

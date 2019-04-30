@@ -9,11 +9,11 @@ helpviewer_keywords:
 - platform invoke [C++], strings
 ms.assetid: bcc75733-7337-4d9b-b1e9-b95a98256088
 ms.openlocfilehash: f316e33f1711ea0053fb68c0af7e89f90b793e05
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57739251"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62404409"
 ---
 # <a name="how-to-marshal-strings-using-pinvoke"></a>Nasıl yapılır: PInvoke kullanarak dizeleri sıralama hazırlama
 

@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3001
 ms.assetid: d0e03478-1b44-47e5-8f5b-70415fa1f8bc
 ms.openlocfilehash: 1eaf34b0830722b5eae61ec24b54a9edf6cea24c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50526610"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62393590"
 ---
 # <a name="compiler-error-c3001"></a>Derleyici Hatası C3001
 

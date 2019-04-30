@@ -4,11 +4,11 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 629b361a-2ce1-4700-8b5d-ab4f57b245d5
 ms.openlocfilehash: 79285e4870b73ff01ed3b230a0162f87c0400aa8
-ms.sourcegitcommit: a1fad0a266b20b313364a74b16c9ac45d089b1e9
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "54220653"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62404695"
 ---
 # <a name="type-conversions-and-type-safety-modern-c"></a>Tür Dönüştürmeleri ve Tür Güvenliği (Modern C++)
 
@@ -20,7 +20,7 @@ Derleyici, güvenli olmayan bir dönüştürme algıladığında, bir hata veya 
 
 ## <a name="implicit-type-conversions"></a>Örtük tür dönüştürmelerini
 
-Bir ifade işlenenleri farklı yerleşik türleri içeriyor ve açık cast mevcut olduğunda yerleşik derleyici kullanır *standart dönüştürmeler* türleri aynı şekilde işlenenlerden dönüştürmek için. Derleyici, biri başarılı olana kadar iyi tanımlanmış bir dizi Dönüşümlerde çalışır. Seçili dönüştürme promosyon ise, derleyici bir uyarı kesmez. Dönüştürme bir daraltma ise, derleyici, olası veri kaybı ile ilgili bir uyarı verir. Olup gerçek veri kaybı oluştuğunda ilgili gerçek değerlerine bağlıdır, ancak bu uyarıyı hata olarak gör öneririz. Kullanıcı tanımlı bir tür söz konusu ise, derleyici, sınıf tanımında belirttiğiniz dönüştürmeler kullanmaya çalışır. Kabul edilebilir bir dönüştürme bulamazsanız, derleyici bir hata verir ve program derlenmiyor. Standart dönüştürmeler yöneten kurallar hakkında daha fazla bilgi için bkz: [standart dönüştürmeler](../cpp/standard-conversions.md). Kullanıcı tanımlı dönüştürmeler hakkında daha fazla bilgi için bkz. [kullanıcı tanımlı Dönüşümler (C + +/ CLI)](../dotnet/user-defined-conversions-cpp-cli.md).
+Bir ifade işlenenleri farklı yerleşik türleri içeriyor ve açık cast mevcut olduğunda yerleşik derleyici kullanır *standart dönüştürmeler* türleri aynı şekilde işlenenlerden dönüştürmek için. Derleyici, biri başarılı olana kadar iyi tanımlanmış bir dizi Dönüşümlerde çalışır. Seçili dönüştürme promosyon ise, derleyici bir uyarı kesmez. Dönüştürme bir daraltma ise, derleyici, olası veri kaybı ile ilgili bir uyarı verir. Olup gerçek veri kaybı oluştuğunda ilgili gerçek değerlerine bağlıdır, ancak bu uyarıyı hata olarak gör öneririz. Kullanıcı tanımlı bir tür söz konusu ise, derleyici, sınıf tanımında belirttiğiniz dönüştürmeler kullanmaya çalışır. Kabul edilebilir bir dönüştürme bulamazsanız, derleyici bir hata verir ve program derlenmiyor. Standart dönüştürmeler yöneten kurallar hakkında daha fazla bilgi için bkz: [standart dönüştürmeler](../cpp/standard-conversions.md). Kullanıcı tanımlı dönüştürmeler hakkında daha fazla bilgi için bkz. [kullanıcı tanımlı Dönüşümler (C++/CLI)](../dotnet/user-defined-conversions-cpp-cli.md).
 
 ### <a name="widening-conversions-promotion"></a>Genişletme dönüştürmeleri (yükseltme)
 

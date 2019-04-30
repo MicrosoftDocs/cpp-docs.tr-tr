@@ -5,11 +5,11 @@ helpviewer_keywords:
 - schema rowsets, defined
 ms.assetid: 0716a065-230c-4c20-bb53-98870e79ea29
 ms.openlocfilehash: c0ec284b4bb366b72eae86f684346f70bfb44239
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59028240"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62404539"
 ---
 # <a name="schema-rowsets"></a>Şema Satır Kümeleri
 

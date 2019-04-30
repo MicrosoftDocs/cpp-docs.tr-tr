@@ -15,11 +15,11 @@ helpviewer_keywords:
 - decrement operators [C++]
 ms.assetid: 0204d5c8-51b0-4108-b8a1-074c5754d89c
 ms.openlocfilehash: e1a87fe4815a75b97616d7b11a4b9aa4ae65eb9f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50438837"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62392147"
 ---
 # <a name="postfix-increment-and-decrement-operators--and---"></a>Sonek Arttırma ve Azaltma İşleçleri: ++ ve --
 
@@ -48,7 +48,7 @@ Sonek artırma işlecini bir dizi türünde nesne işaretçisi uygulama **uzun**
 
 Sonek artırma ve sonek azaltma işleçleri için işlenenler değiştirilebilir (değil **const**) aritmetik veya işaretçi türünde l değerleri. Sonuç türü olan aynıdır *sonek ifadesi*, ancak artık bir l değeri değildir.
 
-**Visual Studio 2017 sürüm 15.3 ve üzeri** (bulunan [/Std: c ++ 17](../build/reference/std-specify-language-standard-version.md)): işlenen işleci bir sonek artırma veya azaltma türü olmayabilir **bool**.
+**Visual Studio 2017 sürüm 15.3 ve üzeri** (bulunan [/Std: c ++ 17](../build/reference/std-specify-language-standard-version.md)): İşlenen bir sonek artırma veya azaltma işleci türü olmayabilir **bool**.
 
 Aşağıdaki kod sonek artırma işlecini gösterir:
 

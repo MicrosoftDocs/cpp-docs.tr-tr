@@ -3,11 +3,11 @@ title: Döşemeleri Kullanma
 ms.date: 11/19/2018
 ms.assetid: acb86a86-2b7f-43f1-8fcf-bcc79b21d9a8
 ms.openlocfilehash: ede62c80a83b5f5fc1d691bf52dde67140e68246
-ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52176100"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62405379"
 ---
 # <a name="using-tiles"></a>Döşemeleri Kullanma
 
@@ -291,13 +291,13 @@ Eşitlenmesi gereken bellek erişimlerinin iki çeşit vardır — genel bellek 
 
 A *bellek sınırı* bu bellek erişimlerinin iş parçacığı döşemesindeki diğer iş parçacıkları kullanımına sunulur ve bu bellek erişimlerinin program sırasına göre yürütülmesini sağlar. Bunu sağlamak için derleyiciler ve işlemciler okuma ve yazmaları yeniden sıralamaz değil. C++ AMP'ta bir bellek sınırı aşağıdaki yöntemlerden birini yapılan bir çağrıyla oluşturulur:
 
-- [tile_barrier::wait yöntemi](reference/tile-barrier-class.md#wait): her ikisi de etrafında bir sınır genel oluşturur ve `tile_static` bellek.
+- [tile_barrier::wait yöntemi](reference/tile-barrier-class.md#wait): Her ikisi de etrafında bir sınır genel oluşturur ve `tile_static` bellek.
 
-- [tile_barrier::wait_with_all_memory_fence yöntemi](reference/tile-barrier-class.md#wait_with_all_memory_fence): her ikisi de etrafında bir sınır genel oluşturur ve `tile_static` bellek.
+- [tile_barrier::wait_with_all_memory_fence yöntemi](reference/tile-barrier-class.md#wait_with_all_memory_fence): Her ikisi de etrafında bir sınır genel oluşturur ve `tile_static` bellek.
 
-- [tile_barrier::wait_with_global_memory_fence yöntemi](reference/tile-barrier-class.md#wait_with_global_memory_fence): yalnızca genel bellek etrafında bir sınır oluşturur.
+- [tile_barrier::wait_with_global_memory_fence yöntemi](reference/tile-barrier-class.md#wait_with_global_memory_fence): Yalnızca genel bellek etrafında bir sınır oluşturur.
 
-- [tile_barrier::wait_with_tile_static_memory_fence yöntemi](reference/tile-barrier-class.md#wait_with_tile_static_memory_fence): yalnızca etrafında bir sınır oluşturur `tile_static` bellek.
+- [tile_barrier::wait_with_tile_static_memory_fence yöntemi](reference/tile-barrier-class.md#wait_with_tile_static_memory_fence): Yalnızca etrafında bir sınır oluşturur `tile_static` bellek.
 
 Uygulamanızın performansını artırmak ihtiyacınız olan belirli sınırı çağırmak. Engel türü derleyicinin ve donanımın deyimleri nasıl yeniden etkiler. Örneğin, bir genel bellek sınırı kullanırsanız, yalnızca genel bellek erişimine uygulanır ve bu nedenle, derleyici ve donanım yeniden sıralayabilir okuyan ve yazan `tile_static` sınır iki tarafındaki değişkenleri.
 

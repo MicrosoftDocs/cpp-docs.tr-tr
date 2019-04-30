@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C4638
 ms.assetid: 2c07923a-e103-4e40-bd11-fdfed428a5ec
 ms.openlocfilehash: 1bdd7541e16f5c02756678ae78a777094b5fe588
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50651535"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62401664"
 ---
 # <a name="compiler-warning-level-3-c4638"></a>Derleyici Uyarısı (Düzey 3) C4638
 

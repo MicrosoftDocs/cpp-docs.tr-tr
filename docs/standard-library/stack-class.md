@@ -21,11 +21,11 @@ helpviewer_keywords:
 - std::stack [C++], top
 ms.assetid: 02151c1e-eab0-41b8-be94-a839ead78ecf
 ms.openlocfilehash: cc18a62db3f39bc85c0a3bb7e84e6a27011c2b5a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50437394"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62412442"
 ---
 # <a name="stack-class"></a>stack Sınıfı
 
@@ -40,7 +40,7 @@ class stack
 
 ### <a name="parameters"></a>Parametreler
 
-*Türü*<br/>
+*Tür*<br/>
 Yığın içinde depolanacak öğe veri türü.
 
 *Kapsayıcı*<br/>

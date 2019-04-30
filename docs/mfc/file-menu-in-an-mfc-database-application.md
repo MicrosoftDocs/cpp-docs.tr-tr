@@ -6,11 +6,11 @@ helpviewer_keywords:
 - database applications [MFC], File menu commands
 ms.assetid: 92dafb75-c1b3-4860-80a0-87a83bfc36f2
 ms.openlocfilehash: 6c9a195a81423417809b65b5edce32027071ad2e
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57279126"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62405787"
 ---
 # <a name="file-menu-in-an-mfc-database-application"></a>MFC Veritabanı Uygulamasında Dosya Menüsü
 
@@ -34,4 +34,4 @@ MFC Uygulama Sihirbazı, hiçbir belge ilgili dosya menü komutları ile bir uyg
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Seri hale getirme: Serileştirme vs. Veritabanı giriş/çıkışı](../mfc/serialization-serialization-vs-database-input-output.md)
+[Serileştirme: Serileştirme Veritabanı giriş/çıkışı](../mfc/serialization-serialization-vs-database-input-output.md)

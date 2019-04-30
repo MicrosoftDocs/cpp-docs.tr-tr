@@ -7,11 +7,11 @@ helpviewer_keywords:
 - exception header
 ms.assetid: 28900768-5dd7-4834-b907-5e37ab3407db
 ms.openlocfilehash: e599a725feb46eaa90023fdb9c999f5b2d159637
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51522050"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62412637"
 ---
 # <a name="ltexceptiongt"></a>&lt;özel durum&gt;
 

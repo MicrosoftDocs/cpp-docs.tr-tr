@@ -39,11 +39,11 @@ helpviewer_keywords:
 - stdext::allocator_base [C++], max_size
 ms.assetid: f920b45f-2a88-4bb0-8ead-b6126b426ed4
 ms.openlocfilehash: 59d5834b941791a659815ff0a03f1c68c8ce68bd
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50591652"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62411077"
 ---
 # <a name="allocatorbase-class"></a>allocator_base Sınıfı
 
@@ -60,7 +60,7 @@ class allocator_base
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|*Türü*|Ayırıcı tarafından ayrılan öğelerin türü.|
+|*Tür*|Ayırıcı tarafından ayrılan öğelerin türü.|
 |*Eşitleme*|Eşitleme ilkesi olan ayırıcı için [sync_none sınıfı](../standard-library/sync-none-class.md), [sync_per_kapsayıcı sınıfı](../standard-library/sync-per-container-class.md), [sync_per_thread sınıfı](../standard-library/sync-per-thread-class.md), veya [sync_shared Sınıf](../standard-library/sync-shared-class.md).|
 
 ### <a name="constructors"></a>Oluşturucular

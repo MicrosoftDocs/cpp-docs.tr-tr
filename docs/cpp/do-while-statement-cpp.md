@@ -10,11 +10,11 @@ helpviewer_keywords:
 - while keyword [C++], do-while
 ms.assetid: e01e6f7c-7da1-4591-87f9-c26ff848e7b0
 ms.openlocfilehash: d930c1884975288ff11f4d4e5cf2728e717e17d5
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51326673"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62392264"
 ---
 # <a name="do-while-statement-c"></a>do-while Deyimi (C++)
 

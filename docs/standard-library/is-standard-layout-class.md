@@ -8,11 +8,11 @@ helpviewer_keywords:
 - is_standard_layout
 ms.assetid: 15ccf111-f537-45ef-b552-59152a7ba312
 ms.openlocfilehash: 75691c1b09b71580474cc22cdc8382bff55a5e29
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50500288"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62413508"
 ---
 # <a name="isstandardlayout-class"></a>is_standard_layout Sınıfı
 

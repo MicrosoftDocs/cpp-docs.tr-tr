@@ -7,11 +7,11 @@ helpviewer_keywords:
 - U1045
 ms.assetid: dc70d162-14b9-4107-9237-7514044d72e3
 ms.openlocfilehash: 0937e83303fefdf1f2aaaa5eea6f43c27159fd57
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57808241"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "64344385"
 ---
 # <a name="nmake-fatal-error-u1045"></a>NMAKE Önemli Hatası U1045
 

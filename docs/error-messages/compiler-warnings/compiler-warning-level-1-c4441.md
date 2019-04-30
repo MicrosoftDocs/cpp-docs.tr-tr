@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C4441
 ms.assetid: 7fc540a5-e41f-47cf-aa37-b2b699c2685e
 ms.openlocfilehash: 45d7a6af09677c1e63dab5ffcc55c35d8203b40b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50539704"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62408244"
 ---
 # <a name="compiler-warning-level-1-c4441"></a>Derleyici Uyarısı (düzey 1) C4441
 

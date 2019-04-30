@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3351
 ms.assetid: c021bbbe-1067-4f51-af4f-940d2b792eb5
 ms.openlocfilehash: 3935acc645403efcd579a80340ebb9794bc1052a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50511689"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62402664"
 ---
 # <a name="compiler-error-c3351"></a>Derleyici Hatası C3351
 

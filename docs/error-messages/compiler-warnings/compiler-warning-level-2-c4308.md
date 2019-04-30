@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C4308
 ms.assetid: d4e5c53c-71b2-4bbc-8a7c-3a2a3180d9d9
 ms.openlocfilehash: f97d66f9e3445d022adc3362532774b15ea09961
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50443543"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62402495"
 ---
 # <a name="compiler-warning-level-2-c4308"></a>Derleyici Uyarısı (Düzey 2) C4308
 

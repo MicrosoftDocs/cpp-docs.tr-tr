@@ -11,11 +11,11 @@ helpviewer_keywords:
 - std::bool_constant [C++]
 ms.assetid: 11c002c6-4d31-4042-9341-f2543f43e108
 ms.openlocfilehash: f7b9217560bc94c536a7c819276266fd16fa4b07
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51520341"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62404877"
 ---
 # <a name="integralconstant-class-boolconstant-class"></a>integral_constant sınıfı, bool_constant sınıfı
 

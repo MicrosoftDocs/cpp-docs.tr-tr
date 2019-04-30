@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2528
 ms.assetid: 2ea9d583-67a8-4b16-b35f-a50eeffc03c4
 ms.openlocfilehash: 890dae7aa34103bde0168f1933bb42343d84100b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50601753"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62408595"
 ---
 # <a name="compiler-error-c2528"></a>Derleyici Hatası C2528
 

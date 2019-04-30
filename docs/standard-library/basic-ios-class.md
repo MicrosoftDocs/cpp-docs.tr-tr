@@ -56,11 +56,11 @@ helpviewer_keywords:
 - std::basic_ios [C++], widen
 ms.assetid: 4fdcd8e1-62d2-4611-8a70-1e4f58434007
 ms.openlocfilehash: c22e048d01665deed83a9474525f414dfd874fe0
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51524918"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62400662"
 ---
 # <a name="basicios-class"></a>basic_ios Sınıfı
 
@@ -232,7 +232,7 @@ Bayraklar `goodbit`, `failbit`, `eofbit`, ve `badbit`. Test ile bu bayrakları i
 
 Üye işlevi, depolanan stream durum bilgileri ile değiştirir:
 
-`state` &#124;`(` [rdbuf](#rdbuf) ! = 0 **goodbit** : **badbit**)
+`state` &#124; `(`[rdbuf](#rdbuf) != 0 **goodbit** : **badbit**)
 
 Varsa `state` **&** [özel durumları](#exceptions) olan sıfır olmayan, ardından sınıfın bir nesnesi atar [hatası](../standard-library/ios-base-class.md#failure).
 
@@ -283,7 +283,7 @@ int main( )
 }
 ```
 
-## <a name="eof"></a>  basic_ios::EOF
+## <a name="eof"></a>  basic_ios::eof
 
 Bir akışın sonuna ulaşılıp ulaşılmadığını gösterir.
 

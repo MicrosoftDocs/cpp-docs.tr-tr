@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2833
 ms.assetid: b9418ce1-e2ee-4599-8959-6fde89c27569
 ms.openlocfilehash: dad6a64f145c3d49d3b43044ea76a11d35827943
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50460547"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62408374"
 ---
 # <a name="compiler-error-c2833"></a>Derleyici Hatası C2833
 

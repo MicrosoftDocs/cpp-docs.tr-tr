@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C4233
 ms.assetid: 9aa51fc6-8ef3-43b5-bafb-c9333cf60de3
 ms.openlocfilehash: 361e00b7361aab51ea077d7e248503f3654e5e58
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50516525"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62401065"
 ---
 # <a name="compiler-warning-level-4-c4233"></a>Derleyici Uyarısı (düzey 4) C4233
 

@@ -6,11 +6,11 @@ helpviewer_keywords:
 - MBCS [C++], last character in string
 ms.assetid: 0a180376-4e55-41e8-9c64-539c7b6d8047
 ms.openlocfilehash: 4c99628cd12738fabb877a94cfd04a4033ee45aa
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57740290"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62410680"
 ---
 # <a name="last-character-in-a-string"></a>Dizedeki Son Karakter
 

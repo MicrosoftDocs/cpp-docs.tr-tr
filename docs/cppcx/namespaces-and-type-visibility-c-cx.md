@@ -1,15 +1,15 @@
 ---
-title: Ad alanları ve tür görünürlüğü (C + +/ CX)
+title: Ad alanları ve tür görünürlüğü (C++/CX)
 ms.date: 12/30/2016
 ms.assetid: cbc01a3a-3b69-4ded-9c42-ecbf0fd0a00e
 ms.openlocfilehash: 54bac3492991d0bd849f7476cc87a1336108bd52
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57739300"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62392134"
 ---
-# <a name="namespaces-and-type-visibility-ccx-"></a>Ad alanları ve tür görünürlüğü (C + +/ CX)
+# <a name="namespaces-and-type-visibility-ccx-"></a>Ad alanları ve tür görünürlüğü (C++/CX)
 
 Standart bir C++ yapı ilgili işlevleri türlerini gruplama ve kitaplıklarında ad çakışmalarını önleme için bir ad alanıdır. Windows çalışma zamanı tür sistemi, kendi kodunuzu de dahil olmak üzere, tüm ortak Windows çalışma zamanı türleri ad alanı kapsamında bir ad alanı içinde bildirilmelidir gerektirir. Genel kapsamda bildirilen veya başka bir sınıf içinde iç içe geçmiş genel türler, bir derleme zamanı hatasına neden olur.
 
@@ -42,9 +42,9 @@ Hem meta veriler görünürlük ve kaynak kod erişilebilirlik denetlemek için 
 
 Windows API Windows içinde bildirilen türleri oluşur::\* ad alanları. Bu ad alanlarında, Windows için ayrılmıştır ve türleri kendisine eklenemez. İçinde **Nesne Tarayıcısı**, bu ad alanları Windows.winmd'i dosyasında görüntüleyebilirsiniz. Bu ad alanları hakkında daha fazla bilgi için bkz [Windows API](/uwp/api/).
 
-## <a name="ccx-namespaces"></a>C + +/ CX ad alanları
+## <a name="ccx-namespaces"></a>C++/CX ad alanları
 
-C + +/ CX Windows çalışma zamanı tür sistemi projeksiyon bir parçası olarak bu ad alanlarında belirli türlerini tanımlayın.
+C++/CX projeksiyonu Windows çalışma zamanı tür sistemi bir parçası olarak bu ad alanlarında belirli türlerini tanımlayın.
 
 |||
 |-|-|

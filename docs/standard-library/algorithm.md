@@ -9,11 +9,11 @@ helpviewer_keywords:
 - <algorithm> header
 ms.assetid: 19f97711-7a67-4a65-8fd1-9a2bd3ca327d
 ms.openlocfilehash: 042523cddf640e7cf6fd7f9a1dac9f3adbc360b6
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50484077"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62411155"
 ---
 # <a name="ltalgorithmgt"></a>&lt;Algoritması&gt;
 

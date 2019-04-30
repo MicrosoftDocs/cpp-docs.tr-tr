@@ -11,11 +11,11 @@ helpviewer_keywords:
 - event handler wizard [C++]
 ms.assetid: 050bebf0-a9e0-474b-905c-796fe5ac8fc3
 ms.openlocfilehash: 96e5b8777bb8b0c976277a06e8ad49b3334921fb
-ms.sourcegitcommit: c1f646c8b72f330fa8cf5ddb0f8f261ba10d16f0
+ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58328577"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "64345258"
 ---
 # <a name="add-an-event-handler"></a>Bir olay işleyicisi ekleme
 

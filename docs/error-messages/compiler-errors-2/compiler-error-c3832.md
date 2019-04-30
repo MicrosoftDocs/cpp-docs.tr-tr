@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3832
 ms.assetid: 9a41df82-42e1-4908-958c-76cff9235de0
 ms.openlocfilehash: c21c495f70b9e6f5619b6b46fe1a6ce826de9d95
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50542096"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62390574"
 ---
 # <a name="compiler-error-c3832"></a>Derleyici Hatası C3832
 

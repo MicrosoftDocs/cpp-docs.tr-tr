@@ -5,11 +5,11 @@ helpviewer_keywords:
 - memory management functions [Concurrency Runtime]
 ms.assetid: d303dd2a-dfa4-4d90-a508-f6aa290bb9ea
 ms.openlocfilehash: 9a7810267c3eaa11ad7592774440365620e7e8f4
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57276942"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62413872"
 ---
 # <a name="memory-management-functions"></a>Bellek Yönetimi İşlevleri
 

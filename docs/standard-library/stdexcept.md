@@ -7,11 +7,11 @@ helpviewer_keywords:
 - stdexcept header
 ms.assetid: 495c10b1-1e60-4514-9f8f-7fda11a2f522
 ms.openlocfilehash: 8a8c99f2651d10d4fc2aff413a06256127f32d7d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50582799"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62412507"
 ---
 # <a name="ltstdexceptgt"></a>&lt;stdexcept&gt;
 

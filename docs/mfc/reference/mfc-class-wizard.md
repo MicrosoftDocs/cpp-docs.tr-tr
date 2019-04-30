@@ -8,11 +8,11 @@ helpviewer_keywords:
 - MFC Class Wizard
 ms.assetid: 8b0dd867-5d07-4214-99be-2a1c1995e6d9
 ms.openlocfilehash: 59f0b39afe467267d61d7b851e654cc8bddc7b36
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57265971"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62412734"
 ---
 # <a name="mfc-class-wizard"></a>MFC Sınıf Sihirbazı
 

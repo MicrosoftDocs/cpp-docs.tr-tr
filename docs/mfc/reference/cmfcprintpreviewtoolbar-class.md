@@ -6,11 +6,11 @@ helpviewer_keywords:
 - CMFCPrintPreviewToolBar class [MFC], destructor
 ms.assetid: 7b9f641b-d402-4339-8815-e5247237e7e5
 ms.openlocfilehash: ac1fba453a539c6c311e672c1b26e34a3bf81ffd
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57285327"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62403626"
 ---
 # <a name="cmfcprintpreviewtoolbar-class"></a>CMFCPrintPreviewToolBar sınıfı
 

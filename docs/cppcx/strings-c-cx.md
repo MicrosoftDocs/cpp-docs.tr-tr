@@ -3,15 +3,15 @@ title: Strings (C++/CX)
 ms.date: 01/22/2017
 ms.assetid: 5b34e1df-7c2b-4269-aba8-b767d36c49d9
 ms.openlocfilehash: 8f7cbdd02cb1d38231c476ba939009a95533a046
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57744319"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62403249"
 ---
 # <a name="strings-ccx"></a>Strings (C++/CX)
 
-Windows çalışma zamanı içinde metin temsil C + +/ CX tarafından [Platform::String sınıfı](../cppcx/platform-string-class.md). Kullanım `Platform::String Class` dizeleri ve geriye Windows çalışma zamanı sınıflar yöntemlere geçirdiğinizde veya uygulama ikili arabiriminde (ABI) sınırında diğer Windows çalışma zamanı bileşenleri ile etkileşim kurarken. `Platform::String Class` Dize tam özellikli bir sınıf olması için tasarlanmamış birkaç yaygın dize işlemleri ancak onun için yöntemler sağlar. C++ modülünüzde standart C++ dize türleri gibi kullanın [wstring](../standard-library/basic-string-class.md) tüm önemli metin işleme ve son sonucu için sonra dönüştürme [Platform::String ^](../cppcx/platform-string-class.md) için veya genel geçirmeden önce arabirim. Kolay ve verimli arasında dönüştürmek için `wstring` veya `wchar_t*` ve `Platform::String`.
+Windows çalışma zamanı içinde metin temsil edilmiştir C++tarafından /CX [Platform::String sınıfı](../cppcx/platform-string-class.md). Kullanım `Platform::String Class` dizeleri ve geriye Windows çalışma zamanı sınıflar yöntemlere geçirdiğinizde veya uygulama ikili arabiriminde (ABI) sınırında diğer Windows çalışma zamanı bileşenleri ile etkileşim kurarken. `Platform::String Class` Dize tam özellikli bir sınıf olması için tasarlanmamış birkaç yaygın dize işlemleri ancak onun için yöntemler sağlar. İçinde C++ modülü, kullanım standart C++ dize türleri gibi [wstring](../standard-library/basic-string-class.md) tüm önemli metin işleme ve son sonucu için sonra dönüştürme [Platform::String ^](../cppcx/platform-string-class.md) gelen veya giden geçirmeden önce bir Ortak arabirim. Kolay ve verimli arasında dönüştürmek için `wstring` veya `wchar_t*` ve `Platform::String`.
 
 **Hızlı geçiş**
 

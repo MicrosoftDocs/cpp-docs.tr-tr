@@ -15,11 +15,11 @@ helpviewer_keywords:
 - WM_NOTIFY message
 ms.assetid: 50194592-d60d-44d0-8ab3-338a2a2c63e7
 ms.openlocfilehash: fb923374866aa8348f9b895c9b97915817564883
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57287433"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62399869"
 ---
 # <a name="receiving-notification-from-common-controls"></a>Ortak Denetimlerden Bildirim Alma
 

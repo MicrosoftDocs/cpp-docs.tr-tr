@@ -201,11 +201,11 @@ helpviewer_keywords:
 - std::partition_copy [C++]
 - std::swap [C++]
 ms.openlocfilehash: 260b2ee780956550678fcb01b3a018a60fb58deb
-ms.sourcegitcommit: 360b55e89e5954f494e52b1cf989fbaceda06f1c
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54334683"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62411194"
 ---
 # <a name="ltalgorithmgt-functions"></a>&lt;algoritma&gt; işlevleri
 
@@ -662,7 +662,7 @@ Kaynak aralığının geçerli olması gerekir ve hedefte, kopyalanmakta olan t�
 
 `copy_backward` Algoritması daha katı gereksinimler uygular kopyalama algoritması. Hem giriş hem de çıkış yineleyicileri çift yönlü olmalıdır.
 
-`copy_backward` Ve [move_backward](../standard-library/algorithm-functions.md#move_backward) algoritmaları, çıktı aralığını hedef aralığın sonuna işaret eden bir yineleyici ile belirleme yalnızca C++ Standart Kitaplığı algoritmalar şunlardır.
+`copy_backward` Ve [move_backward](../standard-library/algorithm-functions.md#move_backward) algoritmalar olan tek C++ standart kitaplığı algoritmaları, çıktı aralığını hedef aralığın sonuna işaret eden bir yineleyici ile belirleme.
 
 Algoritma son öğe ile başlayan sıraya öre kaynak öğeleri kopyaladığı için hedef aralığı kaynak aralığı ile örtüşebilir *ilk* kaynak aralığı konumunu yer almıyor hedefte Aralık. `copy_backward` Kaynak ve hedef aralıklar arasında örtüşme olmadıkça, öğeleri sola değil ancak sağa kaydırmak için kullanılabilir. Konumlar herhangi bir sayıda sola kaydırmak için [kopyalama](../standard-library/algorithm-functions.md#copy) algoritması.
 
@@ -2793,7 +2793,7 @@ Değiştirilecek değeri olan ileriye doğru Yineleyicilerin saniye.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`swap` preference için kullanılması gereken miyim **ter_swap**, geriye dönük uyumluluk için C++ standardında dahil. Varsa `Fit1` ve `Fit2` ileriye doğru Yineleyicilerin ardından olan `iter_swap` ( `Fit1`, `Fit2` ), eşdeğerdir `swap` ( \* `Fit1`, \* `Fit2` ).
+`swap` preference için kullanılması gereken miyim **ter_swap**, de dahil C++ geriye dönük uyumluluk için standart. Varsa `Fit1` ve `Fit2` ileriye doğru Yineleyicilerin ardından olan `iter_swap` ( `Fit1`, `Fit2` ), eşdeğerdir `swap` ( \* `Fit1`, \* `Fit2` ).
 
 Giriş ileriye doğru Yineleyicilerin değer türlerinin aynı değere sahip olmalıdır.
 
@@ -3252,7 +3252,7 @@ Yığınlar iki özelliğe sahiptir:
 
 - Öğeleri eklenebilir veya Logaritmik süre kaldırıldı.
 
-Yığınlar öncelikli kuyruklardaki uygulamak için ideal bir yöntem olduğunu ve C++ Standart Kitaplığı kapsayıcı bağdaştırıcısı uygulamasında kullanılan [priority_queue sınıfı](../standard-library/priority-queue-class.md).
+Yığınlar öncelikli kuyruklardaki uygulamak için ideal bir yol ve bunlar uygulamasında kullanılır C++ standart kitaplığı kapsayıcı bağdaştırıcısı [priority_queue sınıfı](../standard-library/priority-queue-class.md).
 
 Karmaşıklığı 3 gerektiren doğrusal \* (* Soyadı - *) karşılaştırmalar.
 
@@ -5207,7 +5207,7 @@ Yığınlar iki özelliğe sahiptir:
 
 - Öğeleri eklenebilir veya Logaritmik süre kaldırıldı.
 
-Yığınlar öncelikli kuyruklardaki uygulamak için ideal bir yöntem olduğunu ve C++ Standart Kitaplığı kapsayıcı bağdaştırıcısı uygulamasında kullanılan [priority_queue sınıfı](../standard-library/priority-queue-class.md).
+Yığınlar öncelikli kuyruklardaki uygulamak için ideal bir yol ve bunlar uygulamasında kullanılır C++ standart kitaplığı kapsayıcı bağdaştırıcısı [priority_queue sınıfı](../standard-library/priority-queue-class.md).
 
 Başvurulan aralık geçerli olmalı; Tüm İşaretçiler tekrar başvurulabilir olmalı ve dizi içinde son konuma ilk konumdan erişilebilmelidir.
 
@@ -5484,7 +5484,7 @@ Yığınlar iki özelliğe sahiptir:
 
 - Öğeleri eklenebilir veya Logaritmik süre kaldırıldı.
 
-Yığınlar öncelikli kuyruklardaki uygulamak için ideal bir yöntem olduğunu ve C++ Standart Kitaplığı kapsayıcı bağdaştırıcısı uygulamasında kullanılan [priority_queue sınıfı](../standard-library/priority-queue-class.md).
+Yığınlar öncelikli kuyruklardaki uygulamak için ideal bir yol ve bunlar uygulamasında kullanılır C++ standart kitaplığı kapsayıcı bağdaştırıcısı [priority_queue sınıfı](../standard-library/priority-queue-class.md).
 
 Başvurulan aralık geçerli olmalı; Tüm İşaretçiler tekrar başvurulabilir olmalı ve dizi içinde son konuma ilk konumdan erişilebilmelidir.
 
@@ -7771,7 +7771,7 @@ Bu algoritma, aralığın uygulandığı, sonra uygulamanın bir yığın artık
 
 Eşdeğer öğelerin göreli sırasını değil gerekmeyen korunduğu için bu tutarlı bir sıralama değildir.
 
-Yığınlar öncelikli kuyruklardaki uygulamak için ideal bir yöntem olduğunu ve C++ Standart Kitaplığı kapsayıcı bağdaştırıcısı uygulamasında kullanılan [priority_queue sınıfı](../standard-library/priority-queue-class.md).
+Yığınlar öncelikli kuyruklardaki uygulamak için ideal bir yol ve bunlar uygulamasında kullanılır C++ standart kitaplığı kapsayıcı bağdaştırıcısı [priority_queue sınıfı](../standard-library/priority-queue-class.md).
 
 Başvurulan aralık geçerli olmalı; Tüm İşaretçiler tekrar başvurulabilir olmalı ve dizi içinde son konuma ilk konumdan erişilebilmelidir.
 

@@ -13,11 +13,11 @@ helpviewer_keywords:
 - document objects [MFC], document/view architecture
 ms.assetid: 6127768a-553f-462a-b01b-a5ee6068c81e
 ms.openlocfilehash: d1b1f80f44fdc66a3174ea75c15e139f98a4520b
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58775549"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62389685"
 ---
 # <a name="documentview-architecture"></a>Belge/Görünüm Mimarisi
 

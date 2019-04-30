@@ -8,11 +8,11 @@ helpviewer_keywords:
 - bidirectional_iterator_tag struct
 ms.assetid: 9ac06066-b8ae-44b6-bee4-b05855f6a31a
 ms.openlocfilehash: c8296ddf30c0e2a3d34e69cbf079c0477e0e8b7a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50661519"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62414089"
 ---
 # <a name="bidirectionaliteratortag-struct"></a>bidirectional_iterator_tag Yapısı
 

@@ -9,11 +9,11 @@ helpviewer_keywords:
 - ODBC [C++], RFX
 ms.assetid: f5ddfbf0-2901-48d7-9848-4fb84de3c7ee
 ms.openlocfilehash: 8630fab11728b0c0cd16eee5035df028a8382706
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59032225"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62395722"
 ---
 # <a name="record-field-exchange-rfx"></a>Kayıt Alanı Değişimi (RFX)
 
@@ -40,9 +40,9 @@ Aşağıdaki konularda, kayıt kümesi nesnelerini kullanarak ayrıntılarını 
 
 - [Kayıt Alanı Değişimi: RFX kullanma](../../data/odbc/record-field-exchange-using-rfx.md)
 
-- [Kayıt Alanı Değişimi: RFX işlevlerini kullanma](../../data/odbc/record-field-exchange-using-the-rfx-functions.md)
+- [Kayıt Alanı Değişimi: RFX İşlevlerini kullanma](../../data/odbc/record-field-exchange-using-the-rfx-functions.md)
 
-- [Kayıt Alanı Değişimi: RFX'in çalışması](../../data/odbc/record-field-exchange-how-rfx-works.md)
+- [Kayıt Alanı Değişimi: RFX’in çalışma biçimi](../../data/odbc/record-field-exchange-how-rfx-works.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

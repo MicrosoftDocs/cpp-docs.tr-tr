@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3202
 ms.assetid: 23528a0c-5493-4804-9789-cd3c38e49fb9
 ms.openlocfilehash: 5a81da1ee67d897b7a38d9968f7715be7b5af3d9
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50484935"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62402755"
 ---
 # <a name="compiler-error-c3202"></a>Derleyici Hatası C3202
 

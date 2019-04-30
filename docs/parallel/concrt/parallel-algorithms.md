@@ -5,11 +5,11 @@ helpviewer_keywords:
 - parallel algorithms [Concurrency Runtime]
 ms.assetid: 045dca7b-4d73-4558-a44c-383b88a28473
 ms.openlocfilehash: 75491130e8e5fc426116685332490efd2c5fe60b
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57262876"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "64346334"
 ---
 # <a name="parallel-algorithms"></a>Paralel Algoritmalar
 
@@ -84,9 +84,9 @@ Kullanan tam bir örnek `parallel_for` algoritmasını bkz [nasıl yapılır: Pa
 
 ##  <a name="parallel_for_each"></a> Parallel_for_each algoritması
 
-[Concurrency::parallel_for_each](reference/concurrency-namespace-functions.md#parallel_for_each) algoritmasını paralel C++ Standart Kitaplığı tarafından sağlananlar gibi yinelemeli bir kapsayıcısı üzerinde görevleri gerçekleştirir. Bölümleme aynı mantığı kullanır, `parallel_for` algoritması kullanır.
+[Concurrency::parallel_for_each](reference/concurrency-namespace-functions.md#parallel_for_each) algoritması tarafından sağlananlar gibi yinelemeli bir kapsayıcısı üzerinde görevleri gerçekleştirir C++ paralel standart kitaplığı. Bölümleme aynı mantığı kullanır, `parallel_for` algoritması kullanır.
 
-`parallel_for_each` Algoritması, C++ Standart Kitaplığı benzer [std::for_each](../../standard-library/algorithm-functions.md#for_each) hariç algoritmasını `parallel_for_each` algoritması görevleri aynı anda yürütür. Diğer paralel algoritmalar gibi `parallel_for_each` görevleri belirli bir sırayla yürütmez.
+`parallel_for_each` Algoritması benzer C++ standart Kitaplığı [std::for_each](../../standard-library/algorithm-functions.md#for_each) hariç algoritmasını `parallel_for_each` algoritması görevleri aynı anda yürütür. Diğer paralel algoritmalar gibi `parallel_for_each` görevleri belirli bir sırayla yürütmez.
 
 Ancak `parallel_for_each` algoritması, hem ileriye doğru Yineleyicilerin hem de rasgele erişim yineleyicileri çalışır, rasgele erişim yineleyicileri ile daha iyi gerçekleştirir.
 
@@ -134,7 +134,7 @@ Kullanan tam örnekler için `parallel_invoke` algoritmasını bkz [nasıl yapı
 
 ##  <a name="parallel_transform_reduce"></a> Parallel_transform ve parallel_reduce algoritmaları
 
-[Concurrency::parallel_transform](reference/concurrency-namespace-functions.md#parallel_transform) ve [concurrency::parallel_reduce](reference/concurrency-namespace-functions.md#parallel_reduce) algoritmalar standart C++ Kitaplığı algoritmaları paralel sürümleridir [std::transform](../../standard-library/algorithm-functions.md#transform)ve [std::accumulate](../../standard-library/numeric-functions.md#accumulate)sırasıyla. Eşzamanlılık Çalışma zamanı sürümleri, bunların paralel olarak yürütmek için işlem sırası belirlenmez dışında C++ Standart Kitaplığı sürümleri gibi davranır. Paralel olarak işlenir, performans ve ölçeklenebilirlik avantajlarını almak için büyük bir küme ile çalışırken, bu algoritmalar kullanın.
+[Concurrency::parallel_transform](reference/concurrency-namespace-functions.md#parallel_transform) ve [concurrency::parallel_reduce](reference/concurrency-namespace-functions.md#parallel_reduce) algoritmalar olan paralel sürümlerini C++ standart kitaplığı algoritmalarıdır [std::transform](../../standard-library/algorithm-functions.md#transform) ve [std::accumulate](../../standard-library/numeric-functions.md#accumulate)sırasıyla. Eşzamanlılık Çalışma zamanı sürümleri, bunların paralel olarak yürütmek için işlem sırası belirlenmez dışında C++ Standart Kitaplığı sürümleri gibi davranır. Paralel olarak işlenir, performans ve ölçeklenebilirlik avantajlarını almak için büyük bir küme ile çalışırken, bu algoritmalar kullanın.
 
 > [!IMPORTANT]
 >  `parallel_transform` Ve `parallel_reduce` bu Yineleyicilerde kararlı bellek adresleri oluşturmadığından yalnızca rastgele erişim, iki yönlü ve İleri yineleyiciler algoritmaları desteklenir. Ayrıca, bu Yineleyicilerde olmayan üretmelidir`const` l-değeri.
@@ -241,7 +241,7 @@ Aşağıdaki tabloda, üç paralel sıralama algoritmaları önemli özellikleri
 
 |Algoritması|Açıklama|Sıralama mekanizması|Sıralama kararlılık|Bellek gereksinimleri|Zaman karmaşıklığı|Yineleyici erişimi|
 |---------------|-----------------|-----------------------|--------------------|-------------------------|---------------------|---------------------|
-|`parallel_sort`|Genel amaçlı karşılaştırma tabanlı Sırala.|(Artan karşılaştırma tabanlı)|Kararsız|Hiçbiri|O((N/P)log(N/P) + 2N((P-1)/P))|rastgele|
+|`parallel_sort`|Genel amaçlı karşılaştırma tabanlı Sırala.|(Artan karşılaştırma tabanlı)|Kararsız|None|O((N/P)log(N/P) + 2N((P-1)/P))|rastgele|
 |`parallel_buffered_sort`|O(N) alanı gerektiren daha hızlı genel amaçlı karşılaştırma tabanlı Sırala.|(Artan karşılaştırma tabanlı)|Kararsız|Ek O(N) alanı gereklidir|O((N/P)log(N))|rastgele|
 |`parallel_radixsort`|O(N) alanı gerektiren tamsayı anahtar tabanlı Sırala.|Karma tabanlı|Dengeli|Ek O(N) alanı gereklidir|O(N/P)|rastgele|
 

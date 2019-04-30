@@ -8,11 +8,11 @@ helpviewer_keywords:
 - TN050
 ms.assetid: 397c92f7-e7c8-49fb-97bc-f5602ec744b8
 ms.openlocfilehash: f407a764ebfc0f8d1a12a4cf933f55d403380716
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57282259"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62399713"
 ---
 # <a name="tn050-mfcole-common-dialogs-mfcuix32"></a>TN050: MFC/OLE Common Dialogs (MFCUIx32)
 

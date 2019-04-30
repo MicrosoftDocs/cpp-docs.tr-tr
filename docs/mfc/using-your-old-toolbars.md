@@ -8,11 +8,11 @@ helpviewer_keywords:
 - COldToolBar class [MFC]
 ms.assetid: 3543257c-8547-43f0-a66a-ee641dc1cf89
 ms.openlocfilehash: bcfa11b2d7d7cd7426d0c75df71a4b0eb2d96ed6
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57266828"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62411389"
 ---
 # <a name="using-your-old-toolbars"></a>Eski Araç Çubuklarınızı Kullanma
 

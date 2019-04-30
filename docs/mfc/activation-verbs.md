@@ -11,11 +11,11 @@ helpviewer_keywords:
 - OLE activation {MFC]
 ms.assetid: eb56ff23-1de8-43ad-abeb-dc7346ba7b70
 ms.openlocfilehash: baf8e0ac3527407b2e5ba77dfdf3921419217fd7
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57267920"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62392914"
 ---
 # <a name="activation-verbs"></a>Etkinleştirme: Verbs
 

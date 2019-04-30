@@ -17,11 +17,11 @@ helpviewer_keywords:
 - std::basic_ofstream [C++], swap
 ms.assetid: 3bcc9c51-6dfc-4844-8fcc-22ef57c9dff1
 ms.openlocfilehash: 9a8255a02c46a4ade33bd95635516e5d36fe8e64
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50551430"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62409804"
 ---
 # <a name="basicofstream-class"></a>basic_ofstream Sınıfı
 
@@ -137,7 +137,7 @@ Rvalue başvuru `basic_ofstream` bu başlatmak için kullanılan nesne `basic_of
 
 İlk Oluşturucu çağırarak temel sınıfı başlatır [basic_ostream](../standard-library/basic-ostream-class.md)(`sb`), burada `sb` depolanan nesne sınıfının [basic_filebuf](../standard-library/basic-filebuf-class.md) <  `Elem`, `Tr`>. Ayrıca başlatır `sb` çağırarak `basic_filebuf` <  `Elem`, `Tr`>.
 
-İkinci ve üçüncü oluşturucular çağırarak temel sınıfı başlatır `basic_ostream`( **sb**). Ayrıca başlatır `sb` çağırarak `basic_filebuf` <  `Elem`, `Tr`> ardından `sb`. [Açık](../standard-library/basic-filebuf-class.md#open)( `_Filename`, `_Mode` &#124; `ios_base::out`). İkinci işlev bir null işaretçiyi döndürürse, oluşturucuyu çağırır [setstate](../standard-library/basic-ios-class.md#setstate)(`failbit`).
+İkinci ve üçüncü oluşturucular çağırarak temel sınıfı başlatır `basic_ostream`( **sb**). Ayrıca başlatır `sb` çağırarak `basic_filebuf` <  `Elem`, `Tr`> ardından `sb`. [open](../standard-library/basic-filebuf-class.md#open)( `_Filename`, `_Mode` &#124; `ios_base::out`). İkinci işlev bir null işaretçiyi döndürürse, oluşturucuyu çağırır [setstate](../standard-library/basic-ios-class.md#setstate)(`failbit`).
 
 Dördüncü Oluşturucu bir kopya işlevidir. İçeriğini nesnesiyle başlatır *doğru*, bir rvalue başvurusu olarak kabul edilir.
 

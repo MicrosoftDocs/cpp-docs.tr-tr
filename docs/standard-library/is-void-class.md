@@ -8,11 +8,11 @@ helpviewer_keywords:
 - is_void
 ms.assetid: 99b0de3b-1b38-4949-b053-080e5363174e
 ms.openlocfilehash: 7ceecfd4751d3c86e26f9a6911776de92c9471f9
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51522496"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62413352"
 ---
 # <a name="isvoid-class"></a>is_void Sınıfı
 

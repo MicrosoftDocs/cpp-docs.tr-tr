@@ -87,18 +87,18 @@ helpviewer_keywords:
 - stdext::hash_multimap::value_comp
 ms.assetid: f41a6db9-67aa-43a3-a3c5-dbfe9ec3ae7d
 ms.openlocfilehash: 8510bbc89a22fe3eb8df6bbf8ce77db44c7a65a0
-ms.sourcegitcommit: d441305fb19131afbd7fc259d8cda63ea26f2343
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51678541"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62405085"
 ---
 # <a name="hashmultimap-class"></a>hash_multimap Sınıfı
 
 > [!NOTE]
 > Bu, API artık kullanılmıyor. Alternatif [unordered_multimap sınıfı](../standard-library/unordered-multimap-class.md).
 
-Kapsayıcı sınıfı hash_multimap C++ Standart Kitaplığı bir uzantısıdır ve her bir öğenin değerini benzersiz olması gerekmez sıralama anahtarına sahip olduğu bir çift olan bir koleksiyonu ve ilişkili veriler bir değer verileri hızlı alma ve depolama için kullanılır.
+Bir kapsayıcı sınıfı hash_multimap uzantısıdır C++ standart kitaplığı ve her bir öğenin değeri olması gerekmez benzersiz sıralama anahtarına sahip olduğu bir çift olan bir koleksiyonu ve ilişkili veriler bir değer verileri hızlı alma ve depolama için kullanılır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -115,7 +115,7 @@ class hash_multimap
 *Key*<br/>
 Hash_multimap içinde depolanacak anahtar veri türü.
 
-*Türü*<br/>
+*Tür*<br/>
 Hash_multimap içinde depolanacak öğe veri türü.
 
 *Nitelikler*<br/>
@@ -199,7 +199,7 @@ Hash_multimap sınıfı tarafından sağlanan yineleyici çift yönlüdür, anca
 |[silme](#erase)|Bir öğenin veya öğelerin aralığını kaldırır bir `hash_multimap` belirtilen konumlardan|
 |[Bul](#find)|İçindeki bir öğenin konumunu ele alan bir yineleyici döndüren bir `hash_multimap` belirtilen anahtara denk bir anahtara sahip.|
 |[get_allocator](#get_allocator)|Bir kopyasını döndürür `allocator` oluşturmak için kullanılan nesne `hash_multimap`.|
-|[Ekle](#insert)|Bir öğe veya bir dizi öğelerine ekler `hash_multimap` belirtilen konumda.|
+|[insert](#insert)|Bir öğe veya bir dizi öğelerine ekler `hash_multimap` belirtilen konumda.|
 |[key_comp](#key_comp)|İçindeki anahtarları sıralamak için kullanılan karşılaştırma nesnesinin bir kopyasını alır bir `hash_multimap`.|
 |[lower_bound](#lower_bound)|İçindeki ilk öğeye bir yineleyici döndüren bir `hash_multimap` belirtilen anahtardan daha büyük ya da eşit bir anahtarla değer.|
 |[max_size](#max_size)|Öğesinin maksimum uzunluğunu döndürür `hash_multimap`.|
@@ -214,7 +214,7 @@ Hash_multimap sınıfı tarafından sağlanan yineleyici çift yönlüdür, anca
 
 |İşleç|Açıklama|
 |-|-|
-|[hash_multimap::operator =](#op_eq)|Öğelerinin yerini alan bir `hash_multimap` başka bir kopyasına sahip olan `hash_multimap`.|
+|[hash_multimap::operator=](#op_eq)|Öğelerinin yerini alan bir `hash_multimap` başka bir kopyasına sahip olan `hash_multimap`.|
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -589,7 +589,7 @@ size_type count(const Key& key) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*Anahtarı*<br/>
+*anahtar*<br/>
 Hash_multimap eşleştirilecek öğe anahtarı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -1085,7 +1085,7 @@ pair <iterator, iterator> equal_range (const Key& key);
 
 ### <a name="parameters"></a>Parametreler
 
-*Anahtarı*<br/>
+*anahtar*<br/>
 Aranan hash_multimap bir öğeyi sıralama anahtarı ile Karşılaştırılacak bağımsız değişken anahtarı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -1185,7 +1185,7 @@ Hash_multimap kaldırılan ilk öğenin konumu.
 *Son*<br/>
 Konum yalnızca son öğeden sonra hash_multimap kaldırıldı.
 
-*Anahtarı*<br/>
+*anahtar*<br/>
 Hash_multimap kaldırılacak öğe anahtarı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -1300,7 +1300,7 @@ const_iterator find(const Key& key) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*Anahtarı*<br/>
+*anahtar*<br/>
 Aranan hash_multimap bir öğeyi sıralama anahtarı tarafından eşleştirilecek anahtarı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -1750,7 +1750,7 @@ const_iterator lower_bound(const Key& key) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*Anahtarı*<br/>
+*anahtar*<br/>
 Aranan hash_multimap bir öğeyi sıralama anahtarı ile Karşılaştırılacak bağımsız değişken anahtarı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -2378,7 +2378,7 @@ const_iterator upper_bound(const Key& key) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*Anahtarı*<br/>
+*anahtar*<br/>
 Aranan hash_multimap bir öğeyi sıralama anahtarı ile Karşılaştırılacak bağımsız değişken anahtarı.
 
 ### <a name="return-value"></a>Dönüş Değeri

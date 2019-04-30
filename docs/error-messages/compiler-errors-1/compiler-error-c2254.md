@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2254
 ms.assetid: 49bb3d7e-3bdf-4af6-937c-fa627be412a9
 ms.openlocfilehash: da89741811bbb9055f3f6793d115a357d80ab79a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50629157"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62397542"
 ---
 # <a name="compiler-error-c2254"></a>Derleyici Hatası C2254
 

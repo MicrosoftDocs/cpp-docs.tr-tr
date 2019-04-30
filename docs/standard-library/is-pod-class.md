@@ -8,11 +8,11 @@ helpviewer_keywords:
 - is_pod
 ms.assetid: d73ebdee-746b-4082-9fa4-2db71432eb0e
 ms.openlocfilehash: 3dff4650cf0337a5ff54065d3b1644e11008ecfe
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50492254"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62413625"
 ---
 # <a name="ispod-class"></a>is_pod Sınıfı
 

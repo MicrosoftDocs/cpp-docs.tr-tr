@@ -6,11 +6,11 @@ helpviewer_keywords:
 - header controls
 ms.assetid: af3afb5c-bf97-451b-8fee-3adcb8257210
 ms.openlocfilehash: db8f9d40bad116d7873bfd8ea9682c711d44e91f
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57269324"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62399531"
 ---
 # <a name="working-with-a-header-control"></a>Üstbilgi Denetimiyle Çalışma
 

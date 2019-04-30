@@ -9,11 +9,11 @@ helpviewer_keywords:
 - output classes [MFC]
 ms.assetid: e907bd89-38b5-47c9-b76a-95e0bf3bb41d
 ms.openlocfilehash: 96bda696a310fdd59a124abea2d29bc5001c3ab1
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57303221"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62407984"
 ---
 # <a name="drawing-tool-classes"></a>Çizim Aracı Sınıfları
 

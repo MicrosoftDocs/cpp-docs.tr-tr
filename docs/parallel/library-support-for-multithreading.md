@@ -6,11 +6,11 @@ helpviewer_keywords:
 - threading [C++], library support
 ms.assetid: 54cf10d5-b800-481b-a149-b0ee373f41a1
 ms.openlocfilehash: d304a9e0ec3268e34932d6f666975622d956d75d
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57269376"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62407763"
 ---
 # <a name="library-support-for-multithreading"></a>Çoklu İş Parçacığı Kullanımı için Kitaplık Desteği
 

@@ -7,11 +7,11 @@ helpviewer_keywords:
 - /clr compiler option [C++], using native types
 ms.assetid: 3a505c90-4adb-4942-9cf9-7d1fdcbc01e7
 ms.openlocfilehash: 9979113ac4ffc062ddfe8654279af03036984f38
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57746038"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62387207"
 ---
 # <a name="how-to-use-a-native-type-in-a-clr-compilation"></a>Nasıl yapılır: Bir/CLR derlemesinde yerel tür kullanma
 

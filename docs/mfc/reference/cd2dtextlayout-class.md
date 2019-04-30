@@ -29,11 +29,11 @@ helpviewer_keywords:
 - CD2DTextLayout [MFC], m_pTextLayout
 ms.assetid: 724bd13c-f2ef-4e55-a775-8cb04b7b7908
 ms.openlocfilehash: ca89d12c6aeed33be740aa9f999e7c11d6c32056
-ms.sourcegitcommit: 309dc532f13242854b47759cef846de59bb807f1
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58565275"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62396190"
 ---
 # <a name="cd2dtextlayout-class"></a>CD2DTextLayout sınıfı
 

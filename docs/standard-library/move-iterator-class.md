@@ -21,11 +21,11 @@ helpviewer_keywords:
 - std::move_iterator [C++], base
 ms.assetid: a5e5cdd8-a264-4c6b-9f9c-68b0e8edaab7
 ms.openlocfilehash: 3e2e62946325c082e761b6997ae584419175f8fe
-ms.sourcegitcommit: 309dc532f13242854b47759cef846de59bb807f1
+ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58565074"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "64346189"
 ---
 # <a name="moveiterator-class"></a>move_iterator Sınıfı
 

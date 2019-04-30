@@ -6,11 +6,11 @@ helpviewer_keywords:
 - multithreading [C++], about threads
 ms.assetid: 02443596-f7e1-48d0-b3a4-39ee0e54e444
 ms.openlocfilehash: fd10893ecd33d39b531b9451dec708ea31c121d4
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57267322"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62407828"
 ---
 # <a name="multithread-programs"></a>Çoklu İş Parçacığı Kullanan Programlar
 

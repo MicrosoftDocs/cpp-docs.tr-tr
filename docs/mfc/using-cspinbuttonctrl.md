@@ -10,11 +10,11 @@ helpviewer_keywords:
 - CSpinButtonCtrl class [MFC], using
 ms.assetid: a91db36b-e11e-42ef-8e89-51915cc486d2
 ms.openlocfilehash: 6bb663b6ff9b9b039bd774f6e607c7acdb1c4b11
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57261381"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62411727"
 ---
 # <a name="using-cspinbuttonctrl"></a>CSpinButtonCtrl Kullanma
 

@@ -8,11 +8,11 @@ helpviewer_keywords:
 - message handling [MFC], noncommand messages
 ms.assetid: e7df8aef-9fae-41f4-9c11-881d8465f602
 ms.openlocfilehash: 4b9fb0a72b330380f0207db9968199a7e4c3d9b3
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57295064"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62407945"
 ---
 # <a name="how-noncommand-messages-reach-their-handlers"></a>Komut Dışı İletilerin İşleyicilerine Erişmesi
 

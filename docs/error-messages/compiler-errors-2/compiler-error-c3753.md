@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3753
 ms.assetid: a5b99e28-796c-4107-a673-97c2ae3bb2b9
 ms.openlocfilehash: 7c9c078e72babc85dc7092b8d6414625e9c0db7b
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59778832"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62410480"
 ---
 # <a name="compiler-error-c3753"></a>Derleyici Hatası C3753
 

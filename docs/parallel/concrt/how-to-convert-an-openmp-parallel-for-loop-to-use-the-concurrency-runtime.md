@@ -8,11 +8,11 @@ helpviewer_keywords:
 - parallel loops, converting from OpenMP to the Concurrency Runtime
 ms.assetid: d8a7b656-f86c-456e-9c5d-a7d52f94646e
 ms.openlocfilehash: bc408465f34f0558e9f426ae35b83d4610898414
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57296143"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62413898"
 ---
 # <a name="how-to-convert-an-openmp-parallel-for-loop-to-use-the-concurrency-runtime"></a>Nasıl yapılır: Eşzamanlılık Çalışma zamanı kullanmak üzere döngü için bir OpenMP paralelini dönüştürme
 
@@ -41,7 +41,7 @@ Hakkında daha fazla bilgi için `parallel_for` ve diğer paralel algoritmalar i
 
 ## <a name="example"></a>Örnek
 
-Bu örnek Öncekine gerçekleştirileceği değiştirir bir [std::array](../../standard-library/array-class-stl.md) yerel bir dizi nesnesi yerine. Tamsayı dizini türleri yalnızca imzalı OpenMP sürümleri 2.0 ve 2.5 olanak tanımak için bir `parallel_for` yapısı, paralel bir C++ Standart Kitaplığı kapsayıcının öğelerine erişmek için yineleyiciler kullanamazsınız. Paralel Desen kitaplığı (PPL) sağlayan [concurrency::parallel_for_each](reference/concurrency-namespace-functions.md#parallel_for_each) algoritmasını paralel, yinelemeli bir kapsayıcıda C++ Standart Kitaplığı tarafından sağlanan gibi görevleri gerçekleştirir. Bölümleme aynı mantığı kullanır, `parallel_for` algoritması kullanır. `parallel_for_each` Algoritması, C++ Standart Kitaplığı benzer [std::for_each](../../standard-library/algorithm-functions.md#for_each) hariç algoritmasını `parallel_for_each` algoritması görevleri aynı anda yürütür.
+Bu örnek Öncekine gerçekleştirileceği değiştirir bir [std::array](../../standard-library/array-class-stl.md) yerel bir dizi nesnesi yerine. Tamsayı dizini türleri yalnızca imzalı OpenMP sürümleri 2.0 ve 2.5 olanak tanımak için bir `parallel_for` yapısı, paralel bir C++ Standart Kitaplığı kapsayıcının öğelerine erişmek için yineleyiciler kullanamazsınız. Paralel Desen kitaplığı (PPL) sağlayan [concurrency::parallel_for_each](reference/concurrency-namespace-functions.md#parallel_for_each) yinelemeli bir kapsayıcı tarafından sağlananlar gibi üzerinde paralel görevler gerçekleştiren algoritması C++ standart kitaplığı. Bölümleme aynı mantığı kullanır, `parallel_for` algoritması kullanır. `parallel_for_each` Algoritması benzer C++ standart Kitaplığı [std::for_each](../../standard-library/algorithm-functions.md#for_each) hariç algoritmasını `parallel_for_each` algoritması görevleri aynı anda yürütür.
 
 [!code-cpp[concrt-openmp#10](../../parallel/concrt/codesnippet/cpp/how-to-convert-an-openmp-parallel-for-loop-to-use-the-concurrency-runtime_2.cpp)]
 

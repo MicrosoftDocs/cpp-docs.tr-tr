@@ -19,11 +19,11 @@ helpviewer_keywords:
 - std::shared_future [C++], wait_for
 - std::shared_future [C++], wait_until
 ms.openlocfilehash: 2280c17c4ce58fe06365c107ad26d646c7ae2d72
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50575636"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62412611"
 ---
 # <a name="sharedfuture-class"></a>shared_future Sınıfı
 
@@ -64,7 +64,7 @@ Herhangi bir yöntemin dışındaki çağırmayın `valid`, `operator=`ve yok ed
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[shared_future::operator =](#op_eq)|Yeni bir ilişkili zaman uyumsuz durumu atar.|
+|[shared_future::operator=](#op_eq)|Yeni bir ilişkili zaman uyumsuz durumu atar.|
 
 ## <a name="requirements"></a>Gereksinimler
 

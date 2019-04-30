@@ -89,11 +89,11 @@ helpviewer_keywords:
 - std::map [C++], value_comp
 ms.assetid: 7876f4c9-ebb4-4878-af1e-09364c43af0a
 ms.openlocfilehash: 52a24bb2372cc7f22797ae7122b6659724c47b55
-ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51694874"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62413014"
 ---
 # <a name="map-class"></a>map Sınıfı
 
@@ -116,7 +116,7 @@ class map;
 *Key*<br/>
 Eşlemde depolanacak anahtar veri türü.
 
-*Türü*<br/>
+*Tür*<br/>
 Eşlemde depolanacak öğe veri türü.
 
 *Nitelikler*<br/>
@@ -204,7 +204,7 @@ Eşleme türü bir depolanmış bir işlev nesnesi çağırarak denetlediği ö�
 |[silme](#erase)|Bir eşlemdeki bir öğe veya öğe aralığını belirtilen konumdan kaldırır.|
 |[Bul](#find)|Belirtilen anahtara eşit bir anahtara sahip bir eşlem içindeki bir öğenin konumunu gösteren bir yineleyici döndürür.|
 |[get_allocator](#get_allocator)|Bir kopyasını döndürür `allocator` harita oluşturmak için kullanılan nesne.|
-|[Ekle](#insert)|Bir eşlemdeki bir öğeyi veya öğe aralığını belirtilen konumda ekler.|
+|[insert](#insert)|Bir eşlemdeki bir öğeyi veya öğe aralığını belirtilen konumda ekler.|
 |[key_comp](#key_comp)|Bir eşlem içindeki anahtarları sıralamak için kullanılan karşılaştırma nesnesinin bir kopyasını döndürür.|
 |[lower_bound](#lower_bound)|Bir yineleyiciyi belirtilen anahtardan daha büyük veya ona eşit bir anahtar değere sahip bir eşlem içindeki ilk öğeye döndürür.|
 |[max_size](#max_size)|Eşlem öğesinin maksimum uzunluğunu döndürür.|
@@ -255,7 +255,7 @@ const Type& at(const Key& key) const;
 |Parametre|Açıklama|
 |-|-|
 |Parametre|Açıklama|
-|*Anahtarı*|Bulunacak anahtar değer.|
+|*anahtar*|Bulunacak anahtar değer.|
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -566,7 +566,7 @@ size_type count(const Key& key) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*Anahtarı*<br/>
+*anahtar*<br/>
 Öğeleri eşlemden eşleştirilmesi için anahtar değeri.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -1027,7 +1027,7 @@ pair <iterator, iterator> equal_range (const Key& key);
 
 ### <a name="parameters"></a>Parametreler
 
-*Anahtarı*<br/>
+*anahtar*<br/>
 Bir öğenin Aranan eşlemesinden sıralama anahtarı ile Karşılaştırılacak bağımsız değişken anahtar değeri.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -1222,7 +1222,7 @@ const_iterator find(const Key& key) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*Anahtarı*<br/>
+*anahtar*<br/>
 Bir öğenin Aranan eşlemesinden sıralama anahtarı tarafından eşleştirilecek anahtar değeri.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -1677,7 +1677,7 @@ const_iterator lower_bound(const Key& key) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*Anahtarı*<br/>
+*anahtar*<br/>
 Bir öğenin Aranan eşlemesinden sıralama anahtarı ile Karşılaştırılacak bağımsız değişken anahtar değeri.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -1999,7 +1999,7 @@ Type& operator[](Key&& key);
 |Parametre|Açıklama|
 |-|-|
 |Parametre|Açıklama|
-|*Anahtarı*|Eklenecek öğenin anahtar değeri.|
+|*anahtar*|Eklenecek öğenin anahtar değeri.|
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -2537,7 +2537,7 @@ const_iterator upper_bound(const Key& key) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*Anahtarı*<br/>
+*anahtar*<br/>
 Bir öğenin Aranan eşlemesinden sıralama anahtar değeri ile Karşılaştırılacak bağımsız değişken anahtar değeri.
 
 ### <a name="return-value"></a>Dönüş Değeri

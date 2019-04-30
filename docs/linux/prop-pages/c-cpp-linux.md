@@ -4,11 +4,11 @@ ms.date: 9/26/2017
 ms.assetid: 4bb8894b-c874-4a68-935e-b127d54e484f
 f1_keywords: []
 ms.openlocfilehash: 4719f02b1050472f35375b921fd1a6bd670c11c0
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50498143"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62393109"
 ---
 # <a name="cc-properties-linux-c"></a>C/C++ özellikleri (Linux C++)
 
@@ -29,11 +29,11 @@ C++ Derleyicisi | C++ kaynak dosyaları veya uzak sistemdeki C++ derleyicisinin 
 Derleme zaman aşımı | Uzaktan derleme, milisaniye cinsinden zaman aşımı.
 Nesne dosyalarını Kopyala | Derlenen Nesne dosyalarının Uzak sistemden yerel makineye kopyalanıp kopyalanmayacağını belirtir.
 
-## <a name="optimization"></a>En iyi duruma getirme
+## <a name="optimization"></a>İyileştirme
 
 Özellik | Açıklama | Seçenekleri
 --- | ---| ---
-En iyi duruma getirme | Uygulama için iyileştirme düzeyini belirtir. | **Özel** -özel iyileştirme.<br/>**Devre dışı bırakılmış** -iyileştirme devre dışı bırakın.<br/>**Boyutu en aza indir** -boyutu için İyileştir.<br/>**Hızı en** -hız için İyileştir.<br/>**Tam iyileştirme** -pahalı iyileştirmeler.<br/>
+İyileştirme | Uygulama için iyileştirme düzeyini belirtir. | **Özel** -özel iyileştirme.<br/>**Devre dışı bırakılmış** -iyileştirme devre dışı bırakın.<br/>**Boyutu en aza indir** -boyutu için İyileştir.<br/>**Hızı en** -hız için İyileştir.<br/>**Tam iyileştirme** -pahalı iyileştirmeler.<br/>
 Katı örtüşme | En katı örtüşme kurallarını varsayın.  Bir türde bir nesne hiçbir zaman farklı türde bir nesne olarak aynı adreste bulunan olduğu kabul edilir.
 Döngüleri Aç | Daha büyük kod boyutu malitetiyle yürütülen dal sayısını azaltarak uygulamayı daha hızlı hale getirmek için döngüleri açın.
 Bağlantı süresi iyileştirmesi | İyileştirici uygulamanızdaki nesne dosyaları arasında görünmesini izin vererek arası yordam povoluje optimalizace.

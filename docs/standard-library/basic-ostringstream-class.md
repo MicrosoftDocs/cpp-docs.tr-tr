@@ -13,11 +13,11 @@ helpviewer_keywords:
 - std::basic_ostringstream [C++], str
 ms.assetid: aea699f7-350f-432a-acca-adbae7b483fb
 ms.openlocfilehash: 45a7eb1384c70b488e057fb9df8ad4c496272316
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50582790"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62414145"
 ---
 # <a name="basicostringstream-class"></a>basic_ostringstream Sınıfı
 
@@ -122,7 +122,7 @@ Saklı akış arabelleğini türündeki adresi `pointer` basic_stringbuf için <
 
 Bkz: [basic_filebuf::close](../standard-library/basic-filebuf-class.md#close) kullanan bir örnek için `rdbuf`.
 
-## <a name="str"></a>  basic_ostringstream::Str
+## <a name="str"></a>  basic_ostringstream::str
 
 Yazma konumunu değiştirmeden dize arabellekteki metni alır veya ayarlar.
 

@@ -6,11 +6,11 @@ f1_keywords:
 - map/std::swap (multimap)
 ms.assetid: 7cb3d1a5-7add-4726-a73f-61927eafd466
 ms.openlocfilehash: 6c3480e9ffbbab46a42ae790d8b70afbcd823457
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50517305"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62413040"
 ---
 # <a name="ltmapgt-functions"></a>&lt;Harita&gt; işlevleri
 

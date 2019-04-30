@@ -6,11 +6,11 @@ helpviewer_keywords:
 - interface attributes
 ms.assetid: 27fcdfee-abce-4585-8b53-ee31635356e8
 ms.openlocfilehash: 8218ccb66c6be9edef5d7de751a73bf4753d069f
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59027211"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62409323"
 ---
 # <a name="interface-attributes"></a>Arabirim Öznitelikleri
 

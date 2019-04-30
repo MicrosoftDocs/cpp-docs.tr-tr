@@ -9,11 +9,11 @@ helpviewer_keywords:
 - auto_inline pragma
 ms.assetid: f7624cd1-be76-429a-881c-65c9040acf43
 ms.openlocfilehash: c59dcc8ec7749a91565d5af043b1bd9e9eaa16ea
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59033170"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62403570"
 ---
 # <a name="autoinline"></a>auto_inline
 Aralık içinde tanımlanan tüm işlevleri hariç burada **kapalı** otomatik satır içi genişletme için aday olarak kabul belirtilir.

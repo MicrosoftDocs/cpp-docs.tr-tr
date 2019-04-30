@@ -6,11 +6,11 @@ helpviewer_keywords:
 - properties [C++], OLE DB provider
 ms.assetid: 26a8b493-7ec4-4686-96d0-9ad5d2bca5ac
 ms.openlocfilehash: 2cbb334ab15912fdcf6980461016976d869f5a84
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59029466"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62404513"
 ---
 # <a name="setting-properties-in-your-provider"></a>Sağlayıcınızdaki Özellikleri Ayarlama
 

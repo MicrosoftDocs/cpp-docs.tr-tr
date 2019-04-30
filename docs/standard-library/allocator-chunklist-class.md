@@ -9,11 +9,11 @@ helpviewer_keywords:
 - stdext::allocators [C++], allocator_chunklist
 ms.assetid: ea72ed0a-dfdb-4c8b-8096-e4baf567b80f
 ms.openlocfilehash: d52eeb1f34938958c9716692ed6bbd7d830c93b5
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50630496"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62411064"
 ---
 # <a name="allocatorchunklist-class"></a>allocator_chunklist Sınıfı
 
@@ -30,7 +30,7 @@ class allocator_chunklist;
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|*Türü*|Ayırıcı tarafından ayrılan öğelerin türü.|
+|*Tür*|Ayırıcı tarafından ayrılan öğelerin türü.|
 
 ## <a name="remarks"></a>Açıklamalar
 

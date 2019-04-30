@@ -7,11 +7,11 @@ helpviewer_keywords:
 - cmath header
 ms.assetid: 80df1dba-60ca-4918-9c2e-fbf446eaa7d6
 ms.openlocfilehash: 238f0f2ebdb4c833764d477fd2b4b89ed265214e
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51521212"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62405345"
 ---
 # <a name="ltcmathgt"></a>&lt;cmath&gt;
 

@@ -7,11 +7,11 @@ helpviewer_keywords:
 - MFC [C++], ANSI support
 ms.assetid: f98440ad-90fc-42f5-bf74-975cd793c49c
 ms.openlocfilehash: e32d35b814fb0114835261002221ad952fd14b03
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57740837"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62410583"
 ---
 # <a name="support-for-ansi"></a>ANSI Desteği
 

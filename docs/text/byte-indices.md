@@ -6,11 +6,11 @@ helpviewer_keywords:
 - byte indices [C++]
 ms.assetid: f6e7774a-86c6-41c2-89e3-74fd46432e47
 ms.openlocfilehash: 5305a977c23d7a978a89c84809cc6fab8c5731eb
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57751602"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62410730"
 ---
 # <a name="byte-indices"></a>Bayt Endeksleri
 

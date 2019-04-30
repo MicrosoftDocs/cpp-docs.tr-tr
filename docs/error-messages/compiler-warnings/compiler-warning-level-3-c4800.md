@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C4800
 ms.assetid: 4f409799-a250-45ed-bb5f-657691b0d9f7
 ms.openlocfilehash: 46418063625e16385497740a4f7e3d837e923156
-ms.sourcegitcommit: a901c4acbfc80ca10663d37c09921f04c5b6dd17
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58142574"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62401559"
 ---
 # <a name="compiler-warning-level-4-c4800"></a>Derleyici Uyarısı (düzey 4) C4800
 

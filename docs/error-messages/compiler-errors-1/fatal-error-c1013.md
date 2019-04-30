@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C1013
 ms.assetid: 5514a679-efe7-4055-bdd3-5693ca0c332f
 ms.openlocfilehash: 4ee0b8ce97ba5d49e2784f7cd3c74c3b930c6a21
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50431687"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "64344789"
 ---
 # <a name="fatal-error-c1013"></a>Önemli hata C1013
 

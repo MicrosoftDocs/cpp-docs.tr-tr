@@ -7,11 +7,11 @@ helpviewer_keywords:
 - is_nothrow_move_constructible
 ms.assetid: d186d97b-7b89-470a-8d30-993046a83379
 ms.openlocfilehash: f1f98a6172e37bd72182ccc043ca4612b71675d9
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50447196"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62413662"
 ---
 # <a name="isnothrowmoveconstructible-class"></a>is_nothrow_move_constructible Sınıfı
 

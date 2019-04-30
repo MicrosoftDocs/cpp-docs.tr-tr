@@ -8,11 +8,11 @@ helpviewer_keywords:
 - is_reference
 ms.assetid: 3d9e631f-3092-430c-843e-e914ab58c257
 ms.openlocfilehash: 793a84f03dba762ff686627004ffe3830a5d98d8
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51517754"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62413573"
 ---
 # <a name="isreference-class"></a>is_reference Sınıfı
 

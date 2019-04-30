@@ -87,18 +87,18 @@ helpviewer_keywords:
 - stdext::hash_set::value_comp
 ms.assetid: c765c06e-cbb6-48c2-93ca-d15468eb28d7
 ms.openlocfilehash: c7d5df87dc6c8529d18b9f5fb960148c7362129a
-ms.sourcegitcommit: d441305fb19131afbd7fc259d8cda63ea26f2343
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51678580"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62405046"
 ---
 # <a name="hashset-class"></a>hash_set Sınıfı
 
 > [!NOTE]
 > Bu, API artık kullanılmıyor. Alternatif [unordered_set sınıfı](../standard-library/unordered-set-class.md).
 
-Kapsayıcı sınıfı hash_set C++ Standart Kitaplığı bir uzantısıdır ve hızlı, içerdiği öğelerin değerlerinin benzersiz olduğu ve anahtar değerler olarak hizmet verdikleri bir koleksiyondan verilerin alınmasını ve depolama için kullanılır.
+Bir kapsayıcı sınıfı hash_set uzantısıdır C++ standart kitaplığı ve hızlı, içerdiği öğelerin değerlerinin benzersiz olduğu ve anahtar değerler olarak hizmet verdikleri bir koleksiyondan verilerin alınmasını ve depolama için kullanılır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -193,7 +193,7 @@ Hash_set sınıfı tarafından sağlanan yineleyici çift yönlüdür, ancak sı
 |[silme](#erase)|Bir öğenin veya öğelerin aralığını kaldırır bir `hash_set` belirtilen konumları veya belirtilen bir anahtarla eşleşen öğeleri kaldırır.|
 |[Bul](#find)|İçindeki bir öğenin konumunu ele alan bir yineleyici döndüren bir `hash_set` belirtilen anahtara denk bir anahtara sahip.|
 |[get_allocator](#get_allocator)|Bir kopyasını döndürür `allocator` oluşturmak için kullanılan nesne `hash_set`.|
-|[Ekle](#insert)|Bir öğe veya bir dizi öğelerine ekler bir `hash_set`.|
+|[insert](#insert)|Bir öğe veya bir dizi öğelerine ekler bir `hash_set`.|
 |[key_comp](#key_comp)|İçindeki anahtarları sıralamak için kullanılan karşılaştırma nesnesinin bir kopyasını alır bir `hash_set`.|
 |[lower_bound](#lower_bound)|İçindeki ilk öğeye bir yineleyici döndüren bir `hash_set` belirtilen anahtardan daha büyük veya ona eşit bir anahtara sahip.|
 |[max_size](#max_size)|Öğesinin maksimum uzunluğunu döndürür `hash_set`.|
@@ -552,7 +552,7 @@ size_type count(const Key& key) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*Anahtarı*<br/>
+*anahtar*<br/>
 Hash_set eşleştirilecek öğe anahtarı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -1019,7 +1019,7 @@ pair <iterator, iterator> equal_range (const Key& key);
 
 ### <a name="parameters"></a>Parametreler
 
-*Anahtarı*<br/>
+*anahtar*<br/>
 Aranan hash_set bir öğeyi sıralama anahtarı ile Karşılaştırılacak bağımsız değişken anahtarı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -1115,7 +1115,7 @@ Hash_set kaldırılan ilk öğenin konumu.
 *Son*<br/>
 Konum yalnızca son öğeden sonra hash_set kaldırıldı.
 
-*Anahtarı*<br/>
+*anahtar*<br/>
 Hash_set kaldırılacak öğe anahtarı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -1209,7 +1209,7 @@ After another element (unique for hash_set) with a key
 equal to that of the 2nd element is deleted, the hash_set hs3 is: 0 3.
 ```
 
-## <a name="find"></a>  hash_set::Find
+## <a name="find"></a>  hash_set::find
 
 > [!NOTE]
 > Bu, API artık kullanılmıyor. Alternatif [unordered_set sınıfı](../standard-library/unordered-set-class.md).
@@ -1224,7 +1224,7 @@ const_iterator find(const Key& key) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*Anahtarı*<br/>
+*anahtar*<br/>
 Aranan hash_set bir öğeyi sıralama anahtarı olarak eşleşen bağımsız değişken anahtar.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -1650,7 +1650,7 @@ iterator lower_bound(const Key& key);
 
 ### <a name="parameters"></a>Parametreler
 
-*Anahtarı*<br/>
+*anahtar*<br/>
 Aranan hash_set bir öğeyi sıralama anahtarı ile Karşılaştırılacak bağımsız değişken anahtarı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -2216,7 +2216,7 @@ iterator upper_bound(const Key& key);
 
 ### <a name="parameters"></a>Parametreler
 
-*Anahtarı*<br/>
+*anahtar*<br/>
 Aranan hash_set bir öğeyi sıralama anahtarı ile Karşılaştırılacak bağımsız değişken anahtarı.
 
 ### <a name="return-value"></a>Dönüş Değeri

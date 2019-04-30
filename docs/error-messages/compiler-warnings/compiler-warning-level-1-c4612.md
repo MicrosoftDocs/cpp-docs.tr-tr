@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C4612
 ms.assetid: 21ac02b2-51cd-4aff-9b70-d543511d5962
 ms.openlocfilehash: ed5458fc52c1c9c9f12187095e4658204613d1a1
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50574271"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62406372"
 ---
 # <a name="compiler-warning-level-1-c4612"></a>Derleyici Uyarısı (düzey 1) C4612
 

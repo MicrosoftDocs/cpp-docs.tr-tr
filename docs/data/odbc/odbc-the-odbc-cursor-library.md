@@ -17,11 +17,11 @@ helpviewer_keywords:
 - positioning cursors
 ms.assetid: 6608db92-82b1-4164-bb08-78153c227be3
 ms.openlocfilehash: 862303a0dc66fbd49bfcba83336ab29dfc7145c0
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59032238"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62395735"
 ---
 # <a name="odbc-the-odbc-cursor-library"></a>ODBC: ODBC imleç kitaplığı
 

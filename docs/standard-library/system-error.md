@@ -8,11 +8,11 @@ helpviewer_keywords:
 - system_error header
 ms.assetid: 5e046c6e-48d9-4740-8c8a-05f3727c1215
 ms.openlocfilehash: 9bba893f63ca935e0feeb891faa4e141e1958306
-ms.sourcegitcommit: 9e85c2e029d06b4c1c69837437468718b4d54908
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58172991"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62412104"
 ---
 # <a name="ltsystemerrorgt"></a>&lt;system_error&gt;
 

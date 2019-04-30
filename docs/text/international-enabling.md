@@ -9,11 +9,11 @@ helpviewer_keywords:
 - Unicode [C++], enabling
 ms.assetid: b077f4ca-5865-40ef-a46e-d9e4d686ef21
 ms.openlocfilehash: 22f2dba49e894e93cb6791d76a65730f3269199e
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57748014"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62410622"
 ---
 # <a name="international-enabling"></a>Uluslararası Etkinleştirme
 

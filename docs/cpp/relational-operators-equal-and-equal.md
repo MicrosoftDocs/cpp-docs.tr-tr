@@ -16,11 +16,11 @@ helpviewer_keywords:
 - <= operator
 ms.assetid: d346b53d-f14d-4962-984f-89d39a17ca0f
 ms.openlocfilehash: 52a3c10e6da42f6c181d3f93de13168e22141bec
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50458961"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62404760"
 ---
 # <a name="relational-operators-lt-gt-lt-and-gt"></a>İlişkisel işleçler: &lt;, &gt;, &lt;=, ve &gt;=
 

@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C4682
 ms.assetid: 858ea157-1244-4a61-85df-97b3de43d418
 ms.openlocfilehash: 6566c27999f218b7a214e32dde96bd1cf96fbb12
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50653069"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62395280"
 ---
 # <a name="compiler-warning-level-4-c4682"></a>Derleyici Uyarısı (düzey 4) C4682
 

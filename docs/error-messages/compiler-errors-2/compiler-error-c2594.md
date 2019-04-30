@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2594
 ms.assetid: 68cd708f-266e-44b0-a211-3e3ab63b11bf
 ms.openlocfilehash: 75e3b438dd69f8879fdc2273a8f0357229941340
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50428291"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62386908"
 ---
 # <a name="compiler-error-c2594"></a>Derleyici Hatası C2594
 

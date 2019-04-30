@@ -10,11 +10,11 @@ helpviewer_keywords:
 - CWnd objects [MFC], when to initialize
 ms.assetid: 4d31bcb1-73db-4f2f-b71c-89b087569a10
 ms.openlocfilehash: aa396ade2e8ab4e1245e161423de7bd5bfafaaf8
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57291357"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62405722"
 ---
 # <a name="when-to-initialize-cwnd-objects"></a>CWnd Nesneleri Ne Zaman Başlatılır?
 

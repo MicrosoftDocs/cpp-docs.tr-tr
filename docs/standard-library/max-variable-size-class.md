@@ -17,11 +17,11 @@ helpviewer_keywords:
 - stdext::max_variable_size [C++], saved
 ms.assetid: 9f2e9df0-4148-4b37-bc30-f8eca0ef86ae
 ms.openlocfilehash: a7fde40352a878575ddce8b48b4c97093ae7a960
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50482881"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62412936"
 ---
 # <a name="maxvariablesize-class"></a>max_variable_size Sınıfı
 
@@ -119,7 +119,7 @@ max_variable_size();
 
 Oluşturucu depolanmış değerleri başlatır `_Nblocks` ve `_Nallocs` sıfır.
 
-## <a name="released"></a>  max_variable_size::RELEASED
+## <a name="released"></a>  max_variable_size::released
 
 Boş liste bellek sayısı engeller azaltır.
 

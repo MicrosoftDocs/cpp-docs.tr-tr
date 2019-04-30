@@ -8,11 +8,11 @@ helpviewer_keywords:
 - is_union
 ms.assetid: 80eda256-40b8-4db5-9ac1-d58bb8032a3e
 ms.openlocfilehash: 511dfba92629cfbf71c805a9ea50b8e27f775c54
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51520832"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62413378"
 ---
 # <a name="isunion-class"></a>is_union Sınıfı
 

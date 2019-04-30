@@ -7,11 +7,11 @@ helpviewer_keywords:
 - thread safety, C++ Standard Library
 ms.assetid: 9351c8fb-4539-4728-b0e9-226e2ac4284b
 ms.openlocfilehash: 27ac930e567521b12dfc35e2f8c4c389c35ae47d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50607642"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62412091"
 ---
 # <a name="thread-safety-in-the-c-standard-library"></a>C++ Standart Kitaplığında İş Parçacığı Güvenliği
 

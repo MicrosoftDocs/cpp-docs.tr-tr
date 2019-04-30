@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C4302
 ms.assetid: f5e1c939-e134-4cca-ba1e-9b15a81549ae
 ms.openlocfilehash: b2fc3b5db3c052c7a7b0019eae39dcc4541f64f8
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50588220"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62402573"
 ---
 # <a name="compiler-warning-level-2-c4302"></a>Derleyici Uyarısı (Düzey 2) C4302
 

@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3911
 ms.assetid: b786da59-0e99-479d-bc0d-551126e940f2
 ms.openlocfilehash: 25bf8def4e0a8085e20dc6ba9a04dc7f27cee651
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59776281"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62406589"
 ---
 # <a name="compiler-error-c3911"></a>Derleyici Hatası C3911
 

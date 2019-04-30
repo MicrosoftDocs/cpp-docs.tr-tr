@@ -89,11 +89,11 @@ helpviewer_keywords:
 - stdext::hash_map::value_comp
 ms.assetid: 40879dfc-51ba-4a59-9f9e-26208de568a8
 ms.openlocfilehash: da046a467333fba9aa106b97e21cf583c8cef75d
-ms.sourcegitcommit: d441305fb19131afbd7fc259d8cda63ea26f2343
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51678567"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62405072"
 ---
 # <a name="hashmap-class"></a>hash_map Sınıfı
 
@@ -117,7 +117,7 @@ class hash_map
 *Key*<br/>
 Hash_map içinde depolanacak anahtar veri türü.
 
-*Türü*<br/>
+*Tür*<br/>
 Hash_map içinde depolanacak öğe veri türü.
 
 *Nitelikler*<br/>
@@ -202,7 +202,7 @@ Hash_map sınıfı tarafından sağlanan yineleyici çift yönlüdür, ancak sı
 |[silme](#erase)|Bir öğenin veya öğelerin aralığını kaldırır bir `hash_map` belirtilen konumlardan|
 |[Bul](#find)|İçindeki bir öğenin konumunu ele alan bir yineleyici döndüren bir `hash_map` belirtilen anahtara denk bir anahtara sahip.|
 |[get_allocator](#get_allocator)|Bir kopyasını döndürür `allocator` oluşturmak için kullanılan nesne `hash_map`.|
-|[Ekle](#insert)|Bir öğe veya bir dizi öğelerine ekler bir `hash_map`.|
+|[insert](#insert)|Bir öğe veya bir dizi öğelerine ekler bir `hash_map`.|
 |[key_comp](#key_comp)|İçindeki ilk öğeye bir yineleyici döndüren bir `hash_map` belirtilen anahtardan daha büyük veya ona eşit bir anahtar değere sahip.|
 |[lower_bound](#lower_bound)|İçindeki ilk öğeye bir yineleyici döndüren bir `hash_map` belirtilen anahtardan daha büyük veya ona eşit bir anahtar değere sahip.|
 |[max_size](#max_size)|Öğesinin maksimum uzunluğunu döndürür `hash_map`.|
@@ -258,7 +258,7 @@ const Type& at(const Key& key) const;
 
 |Parametre|Açıklama|
 |-|-|
-|*Anahtarı*|Bulunacak öğenin anahtar değeri.|
+|*anahtar*|Bulunacak öğenin anahtar değeri.|
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -295,7 +295,7 @@ int main( )
 }
 ```
 
-## <a name="begin"></a>  hash_map::Begin
+## <a name="begin"></a>  hash_map::begin
 
 > [!NOTE]
 > Bu, API artık kullanılmıyor. Alternatif [unordered_map sınıfı](../standard-library/unordered-map-class.md).
@@ -637,7 +637,7 @@ size_type count(const Key& key) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*Anahtarı*<br/>
+*anahtar*<br/>
 Hash_map eşleştirilecek öğelerin anahtar değeri.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -1043,7 +1043,7 @@ The hash_map hm1 is not empty.
 The hash_map hm2 is empty.
 ```
 
-## <a name="end"></a>  hash_map::End
+## <a name="end"></a>  hash_map::end
 
 > [!NOTE]
 > Bu, API artık kullanılmıyor. Alternatif [unordered_map sınıfı](../standard-library/unordered-map-class.md).
@@ -1129,7 +1129,7 @@ pair <iterator, iterator> equal_range (const Key& key);
 
 ### <a name="parameters"></a>Parametreler
 
-*Anahtarı*<br/>
+*anahtar*<br/>
 Aranan hash_map bir öğeyi sıralama anahtarı ile Karşılaştırılacak bağımsız değişken anahtar değeri.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -1227,7 +1227,7 @@ Hash_map kaldırılan ilk öğenin konumu.
 *Son*<br/>
 Konum yalnızca son öğeden sonra hash_map kaldırıldı.
 
-*Anahtarı*<br/>
+*anahtar*<br/>
 Öğeleri hash_map kaldırılması için anahtar değeri.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -1325,7 +1325,7 @@ After another element with a key equal to that
 of the 2nd element is deleted, the hash_map hm3 is: 0 3.
 ```
 
-## <a name="find"></a>  hash_map::Find
+## <a name="find"></a>  hash_map::find
 
 > [!NOTE]
 > Bu, API artık kullanılmıyor. Alternatif [unordered_map sınıfı](../standard-library/unordered-map-class.md).
@@ -1340,7 +1340,7 @@ const_iterator find(const Key& key) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*Anahtarı*<br/>
+*anahtar*<br/>
 Aranan hash_map bir öğeyi sıralama anahtarı tarafından eşleştirilecek anahtar değeri.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -1882,7 +1882,7 @@ const_iterator lower_bound(const Key& key) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*Anahtarı*<br/>
+*anahtar*<br/>
 Aranan hash_map bir öğeyi sıralama anahtarı ile Karşılaştırılacak bağımsız değişken anahtar değeri.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -2021,7 +2021,7 @@ Type& operator[](Key&& key);
 
 |Parametre|Açıklama|
 |-|-|
-|*Anahtarı*|Eklenecek öğenin anahtar değeri.|
+|*anahtar*|Eklenecek öğenin anahtar değeri.|
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -2508,7 +2508,7 @@ typedef list<typename _Traits::value_type, typename _Traits::allocator_type>::si
 
 Örneğin bakın [boyutu](#size) bildirme ve kullanma örneği `size_type`
 
-## <a name="swap"></a>  hash_map::Swap
+## <a name="swap"></a>  hash_map::swap
 
 > [!NOTE]
 > Bu, API artık kullanılmıyor. Alternatif [unordered_map sınıfı](../standard-library/unordered-map-class.md).
@@ -2597,7 +2597,7 @@ const_iterator upper_bound(const Key& key) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*Anahtarı*<br/>
+*anahtar*<br/>
 Aranan hash_map öğeden sıralama anahtar değeri ile Karşılaştırılacak bağımsız değişken anahtar değeri.
 
 ### <a name="return-value"></a>Dönüş Değeri

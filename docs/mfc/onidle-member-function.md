@@ -11,11 +11,11 @@ helpviewer_keywords:
 - message handling [MFC], OnIdle method [MFC]
 ms.assetid: 51adc874-0075-4f76-be1c-79283f46c10b
 ms.openlocfilehash: c7cdd5cd2327be1b90e7fdb3694353acf8adcafe
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57304459"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62394560"
 ---
 # <a name="onidle-member-function"></a>OnIdle Üye İşlevi
 
@@ -30,4 +30,4 @@ Boşta döngü içinde neler yapabileceğiniz hakkında daha fazla bilgi için b
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[CWinApp: Uygulama sınıfı](../mfc/cwinapp-the-application-class.md)
+[CWinApp: Uygulama Sınıfı](../mfc/cwinapp-the-application-class.md)

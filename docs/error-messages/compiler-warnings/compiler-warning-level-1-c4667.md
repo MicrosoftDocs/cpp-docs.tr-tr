@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C4667
 ms.assetid: 5d2b7fe0-4f0e-4cd6-b432-ca02c3d194ab
 ms.openlocfilehash: 685cdc2577e1207360c793c82808919c39753f49
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50496557"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "64344474"
 ---
 # <a name="compiler-warning-level-1-c4667"></a>Derleyici Uyarısı (düzey 1) C4667
 

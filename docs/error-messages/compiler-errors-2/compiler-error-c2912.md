@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2912
 ms.assetid: bd55cecd-ab1a-4636-ab8a-a00393fe7b3d
 ms.openlocfilehash: b7f87ae2df5350fcfb2b7a662f517d8d7bd51ef8
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50540081"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62408400"
 ---
 # <a name="compiler-error-c2912"></a>Derleyici Hatası C2912
 

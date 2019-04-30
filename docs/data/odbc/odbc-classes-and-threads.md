@@ -7,11 +7,11 @@ helpviewer_keywords:
 - threading [MFC], ODBC support
 ms.assetid: 16543926-7331-41a6-ba50-72288f2a61b7
 ms.openlocfilehash: 2d11cdab632e916f548011462f9738bc267fc730
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59023536"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62395826"
 ---
 # <a name="odbc-classes-and-threads"></a>ODBC Sınıfları ve İş Parçacıkları
 

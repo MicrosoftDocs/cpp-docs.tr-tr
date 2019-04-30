@@ -1,5 +1,5 @@
 ---
-title: 'Özel Durumlar: MFC Özel Durum Makrolarından Dönüştürme'
+title: 'Özel durumlar: MFC özel durum makrolarından dönüştürme'
 ms.date: 08/27/2018
 helpviewer_keywords:
 - converting exceptions [MFC]
@@ -15,13 +15,13 @@ helpviewer_keywords:
 - exception handling [MFC], converting exceptions
 ms.assetid: bd3ac3b3-f3ce-4fdd-a168-a2cff13ed796
 ms.openlocfilehash: 59b83438d5341fd6a139af64a2f365a739438741
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50525901"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62394513"
 ---
-# <a name="exceptions-converting-from-mfc-exception-macros"></a>Özel Durumlar: MFC Özel Durum Makrolarından Dönüştürme
+# <a name="exceptions-converting-from-mfc-exception-macros"></a>Özel durumlar: MFC özel durum makrolarından dönüştürme
 
 Bu gelişmiş bir konudur.
 
@@ -33,15 +33,15 @@ Bu makalede, Microsoft Foundation Class makroları ile yazılan mevcut kod dön�
 
 ##  <a name="_core_advantages_of_converting"></a> Dönüştürme avantajları
 
-MFC sürüm 3.0 makrosu uygulamalarında önceki sürümlerde uygulamaları arasındaki farkların farkında olmanız olsa da, büyük olasılıkla mevcut kodu dönüştürmek gerekmez. Bu farklılıklar ve sonraki kod davranışında değişiklik ele alınmıştır [özel durumlar: sürüm 3.0 özel durum makrolarındaki değişiklikler](../mfc/exceptions-changes-to-exception-macros-in-version-3-0.md).
+MFC sürüm 3.0 makrosu uygulamalarında önceki sürümlerde uygulamaları arasındaki farkların farkında olmanız olsa da, büyük olasılıkla mevcut kodu dönüştürmek gerekmez. Bu farklılıklar ve sonraki kod davranışında değişiklik ele alınmıştır [özel durumlar: Sürüm 3. 0'da özel durum makrolarındaki değişiklikler](../mfc/exceptions-changes-to-exception-macros-in-version-3-0.md).
 
 Dönüştürme asıl avantajları şunlardır:
 
 - C++ özel durum işleme anahtar sözcükleri kullanan kod biraz daha küçük derler. EXE veya. DLL.
 
-- C++ özel durum işleme anahtar sözcükleri daha kullanışlıdır: Bunlar kopyalanabilir herhangi bir veri türü özel durumları işleyebilir (**int**, **float**, **char**, vb.) bilgileriyse Makrolar özel durumları işleme yalnızca sınıfın `CException` ve ondan türetilmiş sınıflar.
+- C++ Daha ayrıntılı özel durum işleme anahtar sözcükler: Bunlar kopyalanabilir herhangi bir veri türü özel durumları işleyebilir (**int**, **float**, **char**, vb.) makroları yalnızca sınıfın özel durumları işlemek bilgileriyse `CException` ve ondan türetilen sınıflar.
 
-Makrolar ve anahtar sözcükler arasındaki en önemli fark, özel durum kapsam dışına çıktığında "Otomatik" makroları kullanarak kod özel durum yakalandı siler ' dir. Özel durum yakalandı açıkça silmeniz gerekir böylece anahtar sözcükleri yok, kod kullanarak. Daha fazla bilgi için bkz [özel durumlar: çalýþýrçalýþma yakalama ve silme özel durumları](../mfc/exceptions-catching-and-deleting-exceptions.md).
+Makrolar ve anahtar sözcükler arasındaki en önemli fark, özel durum kapsam dışına çıktığında "Otomatik" makroları kullanarak kod özel durum yakalandı siler ' dir. Özel durum yakalandı açıkça silmeniz gerekir böylece anahtar sözcükleri yok, kod kullanarak. Daha fazla bilgi için bkz [özel durumlar: Yakalama ve özel durumları silme](../mfc/exceptions-catching-and-deleting-exceptions.md).
 
 Söz dizimi başka bir farktır. Makrolar ve anahtar sözcükler için söz dizimi üç yönden farklıdır:
 
@@ -99,7 +99,7 @@ Söz dizimi başka bir farktır. Makrolar ve anahtar sözcükler için söz dizi
 
    [!code-cpp[NVC_MFCExceptions#7](../mfc/codesnippet/cpp/exceptions-converting-from-mfc-exception-macros_2.cpp)]
 
-4. Catch blokları kodda özel durum nesneleri gerekirse siler şekilde değiştirin. Daha fazla bilgi için bkz [özel durumlar: çalýþýrçalýþma yakalama ve silme özel durumları](../mfc/exceptions-catching-and-deleting-exceptions.md).
+4. Catch blokları kodda özel durum nesneleri gerekirse siler şekilde değiştirin. Daha fazla bilgi için bkz [özel durumlar: Yakalama ve özel durumları silme](../mfc/exceptions-catching-and-deleting-exceptions.md).
 
 MFC özel durum makroları kullanarak özel durum işleme kod örneği aşağıda verilmiştir. Aşağıdaki örnek kodda özel durum makroları kullandığından unutmayın `e` otomatik olarak silinir:
 
@@ -109,7 +109,7 @@ Sonraki örnek kodda özel durum açıkça silinmelidir C++ özel durum anahtar 
 
 [!code-cpp[NVC_MFCExceptions#9](../mfc/codesnippet/cpp/exceptions-converting-from-mfc-exception-macros_4.cpp)]
 
-Daha fazla bilgi için [özel durumlar: MFC makrolarını ve C++ özel durumlarını](../mfc/exceptions-using-mfc-macros-and-cpp-exceptions.md).
+Daha fazla bilgi için [özel durumlar: MFC makroları ve C++ özel durumlarını kullanma](../mfc/exceptions-using-mfc-macros-and-cpp-exceptions.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

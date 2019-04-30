@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C4691
 ms.assetid: 722133d9-87f6-46c1-9e86-9825453d6999
 ms.openlocfilehash: c194e19c8766b67eb7deef32e7228564cda5f1e6
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50519698"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62406385"
 ---
 # <a name="compiler-warning-level-1-c4691"></a>Derleyici Uyarısı (düzey 1) C4691
 

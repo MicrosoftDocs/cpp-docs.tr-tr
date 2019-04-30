@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C4634
 ms.assetid: 3e3496ce-2ac7-43d0-a48a-f514c950e81d
 ms.openlocfilehash: 7d0e2af13128a201d96aa905d85621e14441a673
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57818264"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62408218"
 ---
 # <a name="compiler-warning-level-4-c4634"></a>Derleyici Uyarısı (düzey 4) C4634
 

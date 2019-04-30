@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C4629
 ms.assetid: 158cde12-bae5-4d43-b575-b52b35aaa0b9
 ms.openlocfilehash: db3f4201dbf5ff925449b0924d08a43ee4283b3e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50651795"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62408049"
 ---
 # <a name="compiler-warning-level-4-c4629"></a>Derleyici Uyarısı (düzey 4) C4629
 

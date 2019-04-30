@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2054
 ms.assetid: 37f7c612-0d7d-4728-9e67-ac4160555f48
 ms.openlocfilehash: 7366995f8930b4733ccff73aef38ebcf65a0c120
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50575662"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62408777"
 ---
 # <a name="compiler-error-c2054"></a>Derleyici Hatası C2054
 

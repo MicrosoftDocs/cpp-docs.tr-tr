@@ -9,11 +9,11 @@ helpviewer_keywords:
 - databases [C++], catalog information database
 ms.assetid: c184e80f-ff17-409f-9df8-05275080bb8d
 ms.openlocfilehash: 5958c530d57672a9574ddd90df8ae6ac0b0b04f6
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59027330"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62398044"
 ---
 # <a name="catalog-information--mfc-data-access"></a>Katalog bilgileri (MFC veri erişimi)
 

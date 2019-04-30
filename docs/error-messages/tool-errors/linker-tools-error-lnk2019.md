@@ -8,11 +8,11 @@ helpviewer_keywords:
 - LNK2019
 - _check_commonlanguageruntime_version
 ms.openlocfilehash: af40a48e36d316842ec9a744ad95d6c3b3af3731
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50555603"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62386349"
 ---
 # <a name="linker-tools-error-lnk2019"></a>Bağlayıcı Araçları Hatası LNK2019
 
@@ -86,7 +86,7 @@ Otomatik (işlev kapsamı) değişkenleri yalnızca bu işlevin kapsamında kull
 
 ### <a name="you-mix-code-that-uses-native-wchart-with-code-that-doesnt"></a>Yerel wchar kullanan kodu karıştırmak\_olmayan kod ile t
 
-Yapılan Visual C++ 2005'te yapıldığı C++ dil uyumluluğu iş `wchar_t` varsayılan olarak yerel bir tür. Kullanmalısınız [/Zc:wchar_t-](../../build/reference/zc-wchar-t-wchar-t-is-native-type.md) Visual C++'ın önceki sürümleri kullanılarak derlenmiş kitaplığı ve nesne dosyaları ile uyumlu bir kod oluşturmak için derleyici seçeneği. Tüm dosyalar aynı kullanarak derlenen varsa **/Zc:wchar\_t** ayarları, türü başvuruları uyumlu türlerine değil çözebilir. Doğrulayın `wchar_t` tarafından kullanılan türleri güncelleştiriliyor veya tutarlı kullanarak tüm kitaplığı ve nesne dosyalarında türleri uyumlu **/ZC: wchar_t** derlediğinizde ayarları.
+Yapılan Visual C++ 2005'te yapıldığı C++ dil uyumluluğu iş `wchar_t` varsayılan olarak yerel bir tür. Kullanmalısınız [/Zc:wchar_t-](../../build/reference/zc-wchar-t-wchar-t-is-native-type.md) Visual önceki sürümleri kullanılarak derlenmiş kitaplığı ve nesne dosyaları ile uyumlu bir kod oluşturmak için derleyici seçeneği C++. Tüm dosyalar aynı kullanarak derlenen varsa **/Zc:wchar\_t** ayarları, türü başvuruları uyumlu türlerine değil çözebilir. Doğrulayın `wchar_t` tarafından kullanılan türleri güncelleştiriliyor veya tutarlı kullanarak tüm kitaplığı ve nesne dosyalarında türleri uyumlu **/ZC: wchar_t** derlediğinizde ayarları.
 
 ## <a name="third-party-library-issues-and-vcpkg"></a>Üçüncü taraf kitaplığı sorunları ve Vcpkg
 

@@ -7,11 +7,11 @@ helpviewer_keywords:
 - is_placeholder class
 ms.assetid: 2b21a792-96d1-4bb8-b911-0db796510835
 ms.openlocfilehash: 2c7848c88194a9b541867b26ffe27764ad862503
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50613739"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62413638"
 ---
 # <a name="isplaceholder-class"></a>is_placeholder Sınıfı
 

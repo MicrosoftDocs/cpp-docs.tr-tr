@@ -7,11 +7,11 @@ helpviewer_keywords:
 - LNK4219
 ms.assetid: 363fedf4-b10c-4985-811a-55a9fba688d6
 ms.openlocfilehash: 7407537b55525bf622fc11cdbdb8e00244e51c18
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50598256"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62410258"
 ---
 # <a name="linker-tools-warning-lnk4219"></a>Bağlayıcı Araçları Uyarısı LNK4219
 

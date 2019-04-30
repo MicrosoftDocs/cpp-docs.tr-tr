@@ -8,11 +8,11 @@ helpviewer_keywords:
 - tab controls [MFC], using
 ms.assetid: 6bda6798-0085-4c09-a5ea-fe0e97af5c95
 ms.openlocfilehash: 97844fea667edab5a4d1f1a49c3908454a203d1f
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57272080"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62411688"
 ---
 # <a name="using-ctabctrl"></a>CTabCtrl Kullanma
 

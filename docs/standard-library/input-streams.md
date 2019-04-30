@@ -8,11 +8,11 @@ helpviewer_keywords:
 - input stream objects
 ms.assetid: f14d8954-8f8c-4c3c-8b99-14ddb3683f94
 ms.openlocfilehash: 0f56f5ffc8e61c0881eddbbd65e1c431b9219674
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50504773"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62404929"
 ---
 # <a name="input-streams"></a>Giriş Akışları
 

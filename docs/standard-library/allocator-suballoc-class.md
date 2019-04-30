@@ -8,11 +8,11 @@ helpviewer_keywords:
 - allocator_suballoc class
 ms.assetid: 50c6a5c0-d00d-4276-9285-d908fd4f6483
 ms.openlocfilehash: 9136a2ce744e19754b3a660e7bc9c15f05babbbf
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50610659"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62411012"
 ---
 # <a name="allocatorsuballoc-class"></a>allocator_suballoc Sınıfı
 
@@ -29,7 +29,7 @@ class allocator_suballoc;
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|*Türü*|Ayırıcı tarafından ayrılan öğelerin türü.|
+|*Tür*|Ayırıcı tarafından ayrılan öğelerin türü.|
 
 ## <a name="remarks"></a>Açıklamalar
 

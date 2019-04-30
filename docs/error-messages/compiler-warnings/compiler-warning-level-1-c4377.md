@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C4377
 ms.assetid: a1c797b8-cd5e-4a56-b430-d07932e811cf
 ms.openlocfilehash: d8c89967e0dc900e098ca03d22932451f26a6a0a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50531038"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62410431"
 ---
 # <a name="compiler-warning-level-1-c4377"></a>Derleyici Uyarısı (düzey 1) C4377
 

@@ -12,11 +12,11 @@ helpviewer_keywords:
 - runtime [C++], language portability
 ms.assetid: 677baec6-71b4-4579-94df-64f18bc117c4
 ms.openlocfilehash: e884dcfaa22bf720e9579bf2d5d866d595501887
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57820786"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62410531"
 ---
 # <a name="unicode-and-mbcs"></a>Unicode ve MBCS
 

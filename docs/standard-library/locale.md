@@ -9,11 +9,11 @@ helpviewer_keywords:
 - locale header
 ms.assetid: ca56f9d2-7128-44da-8df1-f4c78c17fbf2
 ms.openlocfilehash: 16248a93b557a92d89e35aac8eba912a8294af76
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51524267"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62413157"
 ---
 # <a name="ltlocalegt"></a>&lt;Yerel ayar&gt;
 

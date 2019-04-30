@@ -8,11 +8,11 @@ helpviewer_keywords:
 - tables [C++], creating programmatically
 ms.assetid: 9ca68fb5-c3df-424a-a75c-e3fb01cc1b18
 ms.openlocfilehash: 61d3f3e39362db27d1e3abc00fa3cb9ea82b86e2
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59028405"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62395943"
 ---
 # <a name="data-source-programmatically-creating-a-table-in-an-odbc-data-source"></a>Veri kaynağı: Program aracılığıyla ODBC veri kaynağında tablo oluşturma
 

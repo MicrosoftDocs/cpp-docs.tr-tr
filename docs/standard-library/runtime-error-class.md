@@ -7,11 +7,11 @@ helpviewer_keywords:
 - runtime_error class
 ms.assetid: 4d0227bf-847b-45a2-a320-2351ebf98368
 ms.openlocfilehash: 8c5453ef7ced55535806570f458c5e08c0a64962
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50583904"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62409726"
 ---
 # <a name="runtimeerror-class"></a>runtime_error Sınıfı
 

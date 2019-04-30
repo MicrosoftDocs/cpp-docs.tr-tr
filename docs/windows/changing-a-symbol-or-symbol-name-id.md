@@ -36,11 +36,11 @@ helpviewer_keywords:
 - shared symbols
 ms.assetid: 26541832-8dba-4177-b642-e08f94502ea7
 ms.openlocfilehash: ebf10ade734d321c5a83644110d3511e4b6c827a
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59034001"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62406983"
 ---
 # <a name="how-to-manage-symbols"></a>Nasıl yapılır: Semboller yönetme
 

@@ -8,11 +8,11 @@ helpviewer_keywords:
 - CToolTipCtrl class
 ms.assetid: 8fc58a04-4792-4223-a092-d349d11344da
 ms.openlocfilehash: 06f296fc21a6ad4480755289d30b5ff4ac27ca8e
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57273965"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62411634"
 ---
 # <a name="using-ctooltipctrl"></a>CToolTipCtrl Kullanma
 

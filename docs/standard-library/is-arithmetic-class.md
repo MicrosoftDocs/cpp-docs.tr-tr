@@ -8,11 +8,11 @@ helpviewer_keywords:
 - is_arithmetic
 ms.assetid: ea427b7e-0141-4a04-848f-561054c53001
 ms.openlocfilehash: 7aff4b051786c3d77dacb65ddbdbd29fa695ca48
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50520659"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62404812"
 ---
 # <a name="isarithmetic-class"></a>is_arithmetic Sınıfı
 

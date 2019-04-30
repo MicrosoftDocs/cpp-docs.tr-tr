@@ -87,11 +87,11 @@ helpviewer_keywords:
 - std::vector [C++], swap
 ms.assetid: a3e0a8f8-7565-4fe0-93e4-e4d74ae1b70d
 ms.openlocfilehash: 80416e3af18774a7a8bf64264dca2906995ae202
-ms.sourcegitcommit: 185b8ee6dd4e10045df730c5b957b9729813da2d
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/14/2018
-ms.locfileid: "53411968"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62410908"
 ---
 # <a name="vector-class"></a>vector Sınıfı
 
@@ -169,7 +169,7 @@ Bir üye işlevi, geçerli depolama kapasitesinin vektör nesnesi içindeki sır
 |[silme](#erase)|Bir öğenin veya öğelerin aralığını belirtilen konumlardan vektördeki kaldırır.|
 |[Ön](#front)|Bir vektör ilk öğeye bir başvuru döndürür.|
 |[get_allocator](#get_allocator)|Bir nesneye döndürür `allocator` vektör tarafından kullanılan sınıf.|
-|[Ekle](#insert)|Bir öğenin veya öğelerin sayısı vektör belirtilen konumda ekler.|
+|[insert](#insert)|Bir öğenin veya öğelerin sayısı vektör belirtilen konumda ekler.|
 |[max_size](#max_size)|Vektör öğesinin maksimum uzunluğunu döndürür.|
 |[pop_back](#pop_back)|Vektör sonundaki öğeyi silin.|
 |[push_back](#push_back)|Vektör sonuna bir öğe ekleyin.|

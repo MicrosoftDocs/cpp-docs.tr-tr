@@ -8,11 +8,11 @@ helpviewer_keywords:
 - toolbar controls [MFC], creating
 ms.assetid: 13cf3753-135b-4a3e-a850-ed30177fcf9d
 ms.openlocfilehash: 70bb563b7dd4558ab1943ad87ee3db5b877951e6
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57297053"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62411675"
 ---
 # <a name="using-ctoolbarctrl"></a>CToolBarCtrl Kullanma
 

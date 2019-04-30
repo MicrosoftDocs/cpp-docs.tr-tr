@@ -9,11 +9,11 @@ helpviewer_keywords:
 - tab controls [MFC], processing notifications
 ms.assetid: 758ccb7a-9e73-48f8-9073-23f7cb09918c
 ms.openlocfilehash: 4be9074f3e7d7ce4321402d27fc26283a52436e9
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57267309"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62391393"
 ---
 # <a name="processing-tab-control-notification-messages"></a>Sekme Denetimi Bildirim İletilerini İşleme
 

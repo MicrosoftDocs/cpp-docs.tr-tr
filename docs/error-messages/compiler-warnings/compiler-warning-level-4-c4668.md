@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C4668
 ms.assetid: c6585460-bc4a-4a15-9242-4cbfce53c961
 ms.openlocfilehash: 11d96941a1efddde87068af8829e24259f2fa312
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50529980"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62408166"
 ---
 # <a name="compiler-warning-level-4-c4668"></a>Derleyici Uyarısı (düzey 4) C4668
 

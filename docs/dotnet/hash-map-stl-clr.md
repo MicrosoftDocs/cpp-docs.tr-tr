@@ -100,11 +100,11 @@ helpviewer_keywords:
 - value_type member [STL/CLR]
 ms.assetid: c3cfc69b-04c6-42ae-a30e-0eda953fe883
 ms.openlocfilehash: fb7db25785d041786f5dfc0d2c3986a76d776d5d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50658516"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62404422"
 ---
 # <a name="hashmap-stlclr"></a>hash_map (STL/CLR)
 
@@ -256,7 +256,7 @@ Silme veya bir öğenin kaldırılması için depolanan değerine yıkıcı ça�
 
 ## <a name="members"></a>Üyeler
 
-## <a name="begin"></a> hash_map::Begin (STL/CLR)
+## <a name="begin"></a> hash_map::begin (STL/CLR)
 
 Denetlenen dizinin başlangıcını belirtir.
 
@@ -580,7 +580,7 @@ size_type count(key_type key);
 
 #### <a name="parameters"></a>Parametreler
 
-*Anahtarı*<br/>
+*anahtar*<br/>
 Aranacak anahtar değeri.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -793,7 +793,7 @@ cliext::pair<iterator, iterator> equal_range(key_type key);
 
 #### <a name="parameters"></a>Parametreler
 
-*Anahtarı*<br/>
+*anahtar*<br/>
 Aranacak anahtar değeri.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -859,7 +859,7 @@ bool erase(key_type key)
 *ilk*<br/>
 Silme aralığını başlangıcı.
 
-*Anahtarı*<br/>
+*anahtar*<br/>
 Silinecek anahtar değer.
 
 *Son*<br/>
@@ -947,7 +947,7 @@ iterator find(key_type key);
 
 #### <a name="parameters"></a>Parametreler
 
-*Anahtarı*<br/>
+*anahtar*<br/>
 Aranacak anahtar değeri.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -1957,7 +1957,7 @@ iterator lower_bound(key_type key);
 
 #### <a name="parameters"></a>Parametreler
 
-*Anahtarı*<br/>
+*anahtar*<br/>
 Aranacak anahtar değeri.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -2016,7 +2016,7 @@ static value_type make_value(key_type key, mapped_type mapped);
 
 #### <a name="parameters"></a>Parametreler
 
-*Anahtarı*<br/>
+*anahtar*<br/>
 Kullanılacak anahtar değeri.
 
 *Eşlenen*<br/>
@@ -2180,7 +2180,7 @@ load_factor() = 0.0234375
 max_load_factor() = 0.25
 ```
 
-## <a name="op_as"></a> hash_map::operator (STL/CLR) =
+## <a name="op_as"></a> hash_map::operator= (STL/CLR)
 
 Denetlenen dizi değiştirir.
 
@@ -2247,7 +2247,7 @@ mapped_type operator[](key_type key);
 
 #### <a name="parameters"></a>Parametreler
 
-*Anahtarı*<br/>
+*anahtar*<br/>
 Aranacak anahtar değeri.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -2667,7 +2667,7 @@ int main()
 end()-begin() = 3
 ```
 
-## <a name="swap"></a> hash_map::Swap (STL/CLR)
+## <a name="swap"></a> hash_map::swap (STL/CLR)
 
 İki kapsayıcının içeriğinin yerini değiştirir.
 
@@ -2797,7 +2797,7 @@ iterator upper_bound(key_type key);
 
 #### <a name="parameters"></a>Parametreler
 
-*Anahtarı*<br/>
+*anahtar*<br/>
 Aranacak anahtar değeri.
 
 ### <a name="remarks"></a>Açıklamalar

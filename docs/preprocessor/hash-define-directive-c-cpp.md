@@ -11,11 +11,11 @@ helpviewer_keywords:
 - '#define directive'
 ms.assetid: 33cf25c6-b24e-40bf-ab30-9008f0391710
 ms.openlocfilehash: 8a0cc7e7836a0c82c72055fe8d9e7497995485d0
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59039518"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62409908"
 ---
 # <a name="define-directive-cc"></a>#define Yönergesi (C/C++)
 

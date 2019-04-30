@@ -9,11 +9,11 @@ helpviewer_keywords:
 - rebar controls
 ms.assetid: 2c0aeec2-ffc3-44b8-97b5-0f56e116a338
 ms.openlocfilehash: 5e0a2e9d9eedd99bb2fca39f328c49d27fe7b6ce
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57289175"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62411904"
 ---
 # <a name="using-crebarctrl"></a>CReBarCtrl Kullanma
 

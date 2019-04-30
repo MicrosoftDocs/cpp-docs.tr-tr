@@ -7,11 +7,11 @@ helpviewer_keywords:
 - CTreeCtrl class [MFC], image lists
 ms.assetid: f560c4f2-20d2-4d28-ac33-4017e65fb0a6
 ms.openlocfilehash: f4dc4f0d7b2cfb78b07b23802054f119da9cbbc3
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57290683"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62389404"
 ---
 # <a name="tree-control-image-lists"></a>Ağaç Denetim Görüntü Listeleri
 

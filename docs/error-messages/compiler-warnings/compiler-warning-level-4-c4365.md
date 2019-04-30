@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C4365
 ms.assetid: af4b4191-bdfd-4dbb-8229-3ba4405df257
 ms.openlocfilehash: 3f9f6df9f72608f0c1197e0602c3f54548f8efcb
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50600752"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62404006"
 ---
 # <a name="compiler-warning-level-4-c4365"></a>Derleyici Uyarısı (düzey 4) C4365
 

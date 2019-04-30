@@ -7,11 +7,11 @@ helpviewer_keywords:
 - is_trivial
 ms.assetid: 6beb11d4-2f38-4c7e-9959-ca5d26250df7
 ms.openlocfilehash: 609fdd9c3d0d00eea607db4aefd31163234a9a00
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50526860"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62413521"
 ---
 # <a name="istrivial-class"></a>is_trivial sınıfı
 

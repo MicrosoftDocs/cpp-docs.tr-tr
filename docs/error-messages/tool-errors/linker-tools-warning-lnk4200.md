@@ -7,11 +7,11 @@ helpviewer_keywords:
 - LNK4200
 ms.assetid: 0d335e69-8766-455b-beb5-a3ba6247274e
 ms.openlocfilehash: e5811f22b5659e22491a00360ce1dafa70c1ba80
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50629252"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62395098"
 ---
 # <a name="linker-tools-warning-lnk4200"></a>Bağlayıcı Araçları Uyarısı LNK4200
 

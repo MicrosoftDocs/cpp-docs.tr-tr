@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C4001
 ms.assetid: 414a47fe-d597-425e-9374-6a569231dc0a
 ms.openlocfilehash: dd18dc27ee13eab05ea0253c8ebcc990105c15c9
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50562285"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62401494"
 ---
 # <a name="compiler-warning-level-4-c4001"></a>Derleyici Uyarısı (düzey 4) C4001
 

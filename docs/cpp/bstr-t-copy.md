@@ -8,11 +8,11 @@ helpviewer_keywords:
 - BSTR object [C++], copy
 ms.assetid: 00ba7311-e82e-4a79-8106-5329fa2f869a
 ms.openlocfilehash: 13ddf57e0bdbdbcc0c5b487e879e14b000de3ad0
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50506855"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62393941"
 ---
 # <a name="bstrtcopy"></a>_bstr_t::copy
 

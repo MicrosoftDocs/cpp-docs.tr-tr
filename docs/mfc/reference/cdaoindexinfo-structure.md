@@ -8,11 +8,11 @@ helpviewer_keywords:
 - CDaoIndexInfo structure [MFC]
 ms.assetid: 251d8285-78ce-4716-a0b3-ccc3395fc437
 ms.openlocfilehash: 55f64fcebc308bd0e63643cfb5447608c4e2e37c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50677909"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62399778"
 ---
 # <a name="cdaoindexinfo-structure"></a>CDaoIndexInfo Yapısı
 
@@ -61,7 +61,7 @@ Bir tablonun birincil anahtar ayarladığınızda, birincil anahtar tablosu içi
 *m_bUnique*<br/>
 Bir dizin nesnesi bir tablo için benzersiz bir dizin temsil edip etmediğini belirtir. Bu özellik TRUE ise dizin nesnesi, benzersiz bir dizin temsil eder. Benzersiz, önceden tanımlanmış bir sırada bir tablodaki tüm kayıtları mantıksal olarak düzenlemek bir veya daha fazla alan benzersiz bir dizin oluşur. Dizin bir alanda oluşuyorsa, bu alandaki değerlerin tüm tablo için benzersiz olmalıdır. Dizin birden fazla alanı oluşuyorsa, her alan, yinelenen değerler içerebilir, ancak her dizini oluşturulmuş tüm alanların değerlerinden bileşimi benzersiz olması gerekir.
 
-Bir dizin nesnenin benzersiz ve birincil özelliklerini TRUE olarak ayarlarsanız, benzersiz ve birincil dizinidir: önceden tanımlanmış, mantıksal bir sırada tablosundaki tüm kayıtlar benzersiz olarak tanımlar. Birincil özelliği FALSE olarak ayarlarsanız, dizin ikincil bir dizindir. İkincil dizinler (anahtar ve anahtarı olmayan) bir tablodaki kayıtları tanımlayıcısı olarak hizmet veren olmadan kayıtları önceden tanımlanmış bir düzende mantıksal olarak düzenleyin.
+Bir dizin nesnenin benzersiz ve birincil özelliklerini TRUE olarak ayarlarsanız, benzersiz ve birincil dizini: Bu, önceden tanımlanmış, mantıksal bir sırada tablosundaki tüm kayıtlar benzersiz şekilde tanımlar. Birincil özelliği FALSE olarak ayarlarsanız, dizin ikincil bir dizindir. İkincil dizinler (anahtar ve anahtarı olmayan) bir tablodaki kayıtları tanımlayıcısı olarak hizmet veren olmadan kayıtları önceden tanımlanmış bir düzende mantıksal olarak düzenleyin.
 
 Daha fazla bilgi için "birincil" ve "Benzersiz özelliğini" DAO Yardımı'ndaki konulara bakın.
 

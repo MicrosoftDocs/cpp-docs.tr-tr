@@ -12,11 +12,11 @@ helpviewer_keywords:
 - OLE DB consumer templates, command support
 ms.assetid: 4bd3787b-6d26-40a9-be0c-083080537c12
 ms.openlocfilehash: b2cdf7a2b439af3a564f5801e015f6064fb141dc
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59041422"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62409097"
 ---
 # <a name="commands-and-tables"></a>Komutlar ve Tablolar
 

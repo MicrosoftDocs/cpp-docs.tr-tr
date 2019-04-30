@@ -11,11 +11,11 @@ helpviewer_keywords:
 - resource editors [C++], resource symbols
 ms.assetid: 8fccc09a-0237-4a65-b9c4-57d60c59e324
 ms.openlocfilehash: 0b19ff0d1c709616868d47c172ff4cf8c6931b82
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59036055"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62387883"
 ---
 # <a name="resource-identifiers-symbols-c"></a>Kaynak Tanımlayıcıları (simge) (C++)
 

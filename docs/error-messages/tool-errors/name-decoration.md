@@ -1,40 +1,38 @@
 ---
 title: Düzenlemeyi Adlandır
-ms.date: 09/05/2018
+ms.date: 04/22/2019
 helpviewer_keywords:
 - name decoration [C++]
 - names [C++], decorated
 - decorated names, calling conventions
 ms.assetid: 8327a27b-bb4f-49f2-8218-b851b9d2a463
-ms.openlocfilehash: b916a73e0b8f86755384914fa85ef8a901e4a64c
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
-ms.translationtype: MT
+ms.openlocfilehash: d1557f53a07a544ff4f9e5a63f905e6854fb74ce
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59041529"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62393161"
 ---
 # <a name="name-decoration"></a>Düzenlemeyi Adlandır
 
-Düzenlemeyi Adlandır genellikle C++ adlandırma kurallarına başvuruyor, ancak C çalışmalarını bir dizi için geçerli olabilir. Varsayılan olarak, C++ işlevi için bir bağlayıcı adı oluşturmak için bu işlev adı, parametreleri ve dönüş türü kullanır. Aşağıdaki işlev göz önünde bulundurun:
+Düzenlemeyi Adlandır genellikle C++ adlandırma kurallarına başvuruyor, ancak C çalışmalarını bir dizi için geçerli olabilir. Varsayılan olarak, C++ işlevi için bir bağlayıcı adı oluşturmak için bu işlev adı, parametreleri ve dönüş türü kullanır. Aşağıdaki işlev bildirimi göz önünde bulundurun:
 
-```
-void CALLTYPE test(void)
-```
+`void CALLTYPE test(void);`
 
 Aşağıdaki tabloda, çeşitli çağırma kuralları bağlayıcı adını gösterir.
 
-|Çağırma kuralı|extern "C" ya da .c dosyası|.cpp veya .cxx /TP|
+|Çağırma kuralı|`extern "C"` veya `.c` dosyası|`.cpp`, `.cxx` veya `/TP`|
 |------------------------|---------------------------|------------------------|
 |C adlandırma kuralı (`__cdecl`)|`_test`|`?test@@ZAXXZ`|
-|Fastcall adlandırma kuralı (`__fastcall`)|`@test@0`|`?test@@YIXXZ`|
-|Standart çağrı adlandırma kuralı (`__stdcall`)|`_test@0`|`?test@@YGXXZ`|
-|Vectorcall adlandırma kuralı (`__vectorcall`)|`test@@0`|`?test@@YQXXZ`|
+|Hızlı arama adlandırma kuralı (`__fastcall`)|`@test@0`|`?test@@YIXXZ`|
+|Standart çağırma adlandırma kuralı (`__stdcall`)|`_test@0`|`?test@@YGXXZ`|
+|Vektör çağrı adlandırma kuralı (`__vectorcall`)|`test@@0`|`?test@@YQXXZ`|
 
-Extern "C" C++'tan bir C işlevini çağırmak için kullanın. Extern "C" sınıf olmayan C++ işlevlerini C adlandırma kuralı kullanılmasını zorlar. Derleyici anahtarları unutmayın **/Tc** veya **/Tp**, dosya adı uzantısı yoksaymak ve sırasıyla C veya C++ olarak dosyasını derlemek için derleyicinin söyleyin. Bu seçenekler beklemediğiniz adları neden olabilir.
+Kullanım `extern "C"` bir C işlevini çağırmak için C++. `extern "C"` sınıf olmayan C adlandırma kuralı kullanılmasını zorlar C++ işlevleri. Derleyici anahtarları unutmayın **/Tc** veya **/Tp**, dosya adı uzantısı yoksaymak ve sırasıyla C veya C++ olarak dosyasını derlemek için derleyicinin söyleyin. Bu seçenekler, beklemiyoruz bağlayıcı adları neden olabilir.
 
 Eşleşmeyen parametrelerine sahip işlev prototipleri sahip bu hataya neden olabilir. Düzenlemeyi Adlandır son düzenlenmiş işlevi adı bir işlev parametrelerini içerir. Bu işlev bildiriminde eşleşmeyen parametre türleri ile bir işlev çağırmanın LNK2001 neden olabilir.
 
-Şu anda hiçbir C++ Derleyici satıcılar veya bir derleyicinin farklı sürümleri arasında bile adlandırma standardı. Bu nedenle diğer derleyicilerle derlenmiş nesne dosyaları bağlama aynı adlandırma şeması vermeyebilir ve bu nedenle çözümlenmemiş dışlar neden olur.
+Şu anda hiçbir standartları vardır C++ adlandırma derleyici satıcıları arasında veya hatta bir derleyicinin farklı sürümleri arasında. Diğer derleyiciler tarafından derlenmiş nesne dosyaları bağlantılandırma aynı adlandırma şeması vermeyebilir ve Çözülmemiş dış öğeleri neden olabilir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -8,11 +8,11 @@ helpviewer_keywords:
 - multibyte characters [C++]
 ms.assetid: d8ad36b8-917f-474e-8adb-69462adecd17
 ms.openlocfilehash: 420e376d3a66c8f8115732692089f4254847bc0d
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57808261"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62410599"
 ---
 # <a name="mbcs-programming-tips"></a>MBCS Programlama İpuçları
 

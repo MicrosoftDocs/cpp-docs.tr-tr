@@ -26,11 +26,11 @@ helpviewer_keywords:
 - std::experimental::filesystem::directory_iterator::operator-&gt;
 - std::experimental::filesystem::directory_iterator::operator++
 ms.openlocfilehash: 6763f2a96b771fadbec311cf8740352fff53e29a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50610203"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62413852"
 ---
 # <a name="directoryiterator-class"></a>directory_iterator Sınıfı
 
@@ -115,7 +115,7 @@ Depolanan nesne.
 directory_iterator& increment(error_code& ec) noexcept;
 ```
 
-## <a name="op_neq"></a> directory_iterator::operator! =
+## <a name="op_neq"></a> directory_iterator::operator!=
 
 Üye işleci döndürür `!(*this == right)`.
 
@@ -128,7 +128,7 @@ bool operator!=(const directory_iterator& right) const;
 *sağ*<br/>
 [Directory_iterator](../standard-library/directory-iterator-class.md) karşılaştırılan `directory_iterator`.
 
-## <a name="op_as"></a> directory_iterator::operator =
+## <a name="op_as"></a> directory_iterator::operator=
 
 Varsayılan haline getirilen üye atama işleçleri, beklendiği gibi davranır.
 
@@ -142,7 +142,7 @@ directory_iterator& operator=(directory_iterator&&) noexcept = default;
 *sağ*<br/>
 [Directory_iterator](../standard-library/directory-iterator-class.md) içine kopyalanan `directory_iterator`.
 
-## <a name="op_eq"></a> directory_iterator::operator ==
+## <a name="op_eq"></a> directory_iterator::operator==
 
 Üye işleci döndürür **true** yalnızca her iki `*this` ve *doğru* dizisi son yineleyiciler veya her ikisi de değil son-ın-dizisi-yineleyiciler şunlardır.
 
@@ -155,7 +155,7 @@ bool operator==(const directory_iterator& right) const;
 *sağ*<br/>
 [Directory_iterator](../standard-library/directory-iterator-class.md) karşılaştırılan `directory_iterator`.
 
-## <a name="op_star"></a> directory_iterator::operator *
+## <a name="op_star"></a> directory_iterator::operator*
 
 Üye işleci döndürür `myentry`.
 
@@ -163,7 +163,7 @@ bool operator==(const directory_iterator& right) const;
 const directory_entry& operator*() const;
 ```
 
-## <a name="op_cast"></a> directory_iterator::operator ->
+## <a name="op_cast"></a> directory_iterator::operator->
 
 Üye işlevinin döndürdüğü `&**this`.
 
@@ -171,7 +171,7 @@ const directory_entry& operator*() const;
 const directory_entry * operator->() const;
 ```
 
-## <a name="op_increment"></a> directory_iterator::operator ++
+## <a name="op_increment"></a> directory_iterator::operator++
 
 İlk üye işlev çağrıları `increment()`, ardından döndürür `*this`. İkinci üye işlevi çağrıları nesnesinin bir kopyasını getirir `increment()`, daha sonra kopyayı döndürür.
 

@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C4552
 ms.assetid: ebbbb5ee-1c19-45bd-b386-41a19630fc76
 ms.openlocfilehash: 1fb2dc7fd4bc685e457898b47c513c21009146ce
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50585555"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62410362"
 ---
 # <a name="compiler-warning-level-1-c4552"></a>Derleyici Uyarısı (düzey 1) C4552
 

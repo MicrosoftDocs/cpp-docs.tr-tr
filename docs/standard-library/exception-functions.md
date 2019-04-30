@@ -25,11 +25,11 @@ helpviewer_keywords:
 - std::uncaught_exception [C++]
 - std::unexpected [C++]
 ms.openlocfilehash: 22c5b34f1c87d10b48a797229bc987305fca8f9d
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51523669"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62412663"
 ---
 # <a name="ltexceptiongt-functions"></a>&lt;özel durum&gt; işlevleri
 
@@ -82,7 +82,7 @@ Bir [exception_ptr](../standard-library/exception-typedefs.md#exception_ptr) nes
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çağırma `make_exception_ptr` işlev, bir C++ özel durum, bir catch bloğunda yakalamaya ve sonra çağırma eşdeğer [current_exception](../standard-library/exception-functions.md#current_exception) işlevini bir `exception_ptr` özel duruma başvuran bir nesne. Microsoft uyarlamasını `make_exception_ptr` işlevi oluşturmak ve ardından bir özel durum yakalamak daha verimlidir.
+Çağırma `make_exception_ptr` işlevi oluşturmaya eşdeğerdir bir C++ özel durum, bir catch bloğunda yakalamaya ve sonra çağırma [current_exception](../standard-library/exception-functions.md#current_exception) işlevini bir `exception_ptr` özel duruma başvuran bir nesne. Microsoft uyarlamasını `make_exception_ptr` işlevi oluşturmak ve ardından bir özel durum yakalamak daha verimlidir.
 
 Bir uygulama genellikle gerektirmez `make_exception_ptr` işlevi ve kullanımı önerilmez.
 

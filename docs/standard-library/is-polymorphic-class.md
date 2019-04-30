@@ -8,11 +8,11 @@ helpviewer_keywords:
 - is_polymorphic
 ms.assetid: 4e1704db-d6f9-4154-a100-0ba02a373f20
 ms.openlocfilehash: 8d9846f03db60cdad88fccc04ba520eeb935dc33
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51521641"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62413586"
 ---
 # <a name="ispolymorphic-class"></a>is_polymorphic Sınıfı
 
