@@ -9,11 +9,11 @@ helpviewer_keywords:
 - marshaling [C++], callbacks and delegates
 ms.assetid: dcf396fd-a91d-49c0-ab0b-1ea160668a89
 ms.openlocfilehash: 031bda0f93d6a95aa3c774553aefca0647d0518c
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57742874"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62400571"
 ---
 # <a name="how-to-marshal-function-pointers-using-pinvoke"></a>Nasıl yapılır: PInvoke kullanarak işlev işaretçilerini sıralama hazırlama
 

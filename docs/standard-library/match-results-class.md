@@ -7,11 +7,11 @@ helpviewer_keywords:
 - match_results class
 ms.assetid: b504fdca-e5dd-429d-9960-6e27c9167fa6
 ms.openlocfilehash: 32a5f9d20999740d4368f7901c797d87acce0be9
-ms.sourcegitcommit: 53f75afaf3c0b3ed481c5503357ed2b7b87aac6d
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53657467"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62412975"
 ---
 # <a name="matchresults-class"></a>match_results Sınıfı
 
@@ -200,7 +200,7 @@ typedef Alloc allocator_type;
 
 Typedef şablon bağımsız değişkeni eşanlamlıdır *ayırma*.
 
-## <a name="begin"></a>  match_results::Begin
+## <a name="begin"></a>  match_results::begin
 
 Alt eşleşme dizisi başlangıcını belirtir.
 
@@ -272,7 +272,7 @@ bool empty() const;
 
 Üye işlevi, yalnızca normal ifade araması başarısız olduysa true değerini döndürür.
 
-## <a name="end"></a>  match_results::End
+## <a name="end"></a>  match_results::end
 
 Alt eşleşme dizinin sonuna belirler.
 
@@ -284,7 +284,7 @@ const_iterator end() const;
 
 Üye işlevi, dizinin sonuna hemen ötesine işaret eden bir yineleyici döndürür.
 
-## <a name="format"></a>  match_results::Format
+## <a name="format"></a>  match_results::format
 
 Alt eşleşmeleri biçimlendirir.
 
@@ -408,7 +408,7 @@ Kopyalanacak match_results nesne.
 
 Üye işleci tarafından denetlenen dizinin değiştirir `*this` tarafından denetlenen dizinin bir kopyasını *doğru*.
 
-## <a name="op_at"></a>  match_results::operator]
+## <a name="op_at"></a>  match_results::operator[]
 
 Bir alt nesneye erişim.
 
@@ -425,7 +425,7 @@ Alt eşleşme dizini.
 
 Üye işlevi öğeye bir başvuru döndürür *n* denetlenen dizi ya da boş bir başvuru `sub_match` , nesne `size() <= n` veya yakalama grubu *n* eşleşmenin bir parçası değildi.
 
-## <a name="position"></a>  match_results::Position
+## <a name="position"></a>  match_results::position
 
 Başlangıç uzaklığı bir alt alın.
 
@@ -454,7 +454,7 @@ const_reference prefix() const;
 
 Üye işlevi bir başvuru türü bir nesne döndürür `sub_match<BidIt>` işaret eden hedef dizideki başlangıcında başlar ve biter karakter dizisi `(*this)[0].first`, diğer bir deyişle, eşleşen alt diziyi önündeki metne işaret eder.
 
-## <a name="reference"></a>  match_results::Reference
+## <a name="reference"></a>  match_results::reference
 
 Bir öğe başvurusu türü.
 
@@ -490,7 +490,7 @@ typedef typename Alloc::size_type size_type;
 
 Türe ilişkin bir eşanlam türüdür `Alloc::size_type`.
 
-## <a name="str"></a>  match_results::Str
+## <a name="str"></a>  match_results::str
 
 Bir alt eşleşme döndürür.
 
@@ -531,7 +531,7 @@ const_reference suffix() const;
 
 Üye işlevi bir başvuru türü bir nesne döndürür `sub_match<BidIt>` işaret eden başlangıcı karakter dizisi `(*this)[size() - 1].second` ve diğer bir deyişle, hedef dizinin sonuna uçta eşleşen alt diziyi takip metne işaret.
 
-## <a name="swap"></a>  match_results::Swap
+## <a name="swap"></a>  match_results::swap
 
 İki match_results nesneleri değiştirir.
 

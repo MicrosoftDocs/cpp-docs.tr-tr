@@ -15,11 +15,11 @@ helpviewer_keywords:
 - binary access [MFC]
 ms.assetid: ae25e2c5-2859-4679-ab97-438824e93ce1
 ms.openlocfilehash: cf53c498e61bdf0a233d7638649b30e498e27cc5
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57297937"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62392862"
 ---
 # <a name="files-in-mfc"></a>MFC'deki Dosyalar
 

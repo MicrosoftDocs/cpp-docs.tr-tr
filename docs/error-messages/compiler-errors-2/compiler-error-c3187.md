@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3187
 ms.assetid: 9d2ebf55-1a6a-4087-bf5b-5274baae6351
 ms.openlocfilehash: 619c88ebd170871aedd6eb10789ae8e2c9365255
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50516473"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62402820"
 ---
 # <a name="compiler-error-c3187"></a>Derleyici Hatası C3187
 

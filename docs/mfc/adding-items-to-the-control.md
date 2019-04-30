@@ -5,11 +5,11 @@ helpviewer_keywords:
 - CListCtrl class [MFC], adding items
 ms.assetid: 715994bd-340d-4ad2-9882-411654137830
 ms.openlocfilehash: 88e008f06fb669db1c13872b1a58555eeb357d86
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57304606"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62394786"
 ---
 # <a name="adding-items-to-the-control"></a>Denetime Öğe Ekleme
 

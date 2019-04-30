@@ -8,11 +8,11 @@ helpviewer_keywords:
 - logical_not struct
 ms.assetid: 892db678-31da-4540-974b-17b05efc0849
 ms.openlocfilehash: 7fd554a28775a6b625332ac250a46171dd369f50
-ms.sourcegitcommit: 4299caac2dc9e806c74ac833d856a3838b0f52a1
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "57006571"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62413105"
 ---
 # <a name="logicalnot-struct"></a>logical_not Yapısı
 

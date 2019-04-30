@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3798
 ms.assetid: b2f8b1d8-8812-49b8-a346-28e48f02ba5c
 ms.openlocfilehash: a11c88f536e3282e887e32ef437077e61f4424cc
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58773274"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62400155"
 ---
 # <a name="compiler-error-c3798"></a>Derleyici Hatası C3798
 

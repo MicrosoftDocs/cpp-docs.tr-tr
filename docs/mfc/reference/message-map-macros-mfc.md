@@ -29,11 +29,11 @@ helpviewer_keywords:
 - message map ranges
 ms.assetid: 531b15ce-32b5-4ca0-a849-bb519616c731
 ms.openlocfilehash: b1cc721ed994ae1c6704011199ac635ee462ded8
-ms.sourcegitcommit: 309dc532f13242854b47759cef846de59bb807f1
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58565549"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62412832"
 ---
 # <a name="message-map-macros-mfc"></a>İleti Eşleme Makroları (MFC)
 
@@ -721,7 +721,7 @@ Bir dizi Denetim kimliklerinin işleyici işlevlerini uygulama ile ilgili daha f
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [ON_COMMAND](message-map-macros-mfc.md#on_command)<br/>
-[TN006: İleti eşlemeleri](../tn006-message-maps.md)<br/>
+[TN006: İleti Eşlemeleri](../tn006-message-maps.md)<br/>
 [COleCmdUI Sınıfı](colecmdui-class.md)<br/>
 [COleServerDoc::OnExecOleCmd](coleserverdoc-class.md#onexecolecmd)<br/>
 [RegisterWindowMessage](/windows/desktop/api/winuser/nf-winuser-registerwindowmessagea)<br/>

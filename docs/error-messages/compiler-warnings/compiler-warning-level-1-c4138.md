@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C4138
 ms.assetid: 65ebf929-bba0-4237-923b-c1b66adfe17d
 ms.openlocfilehash: 96f8915b9bec166496ca4305d796ce8ef514ca15
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50481685"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62402534"
 ---
 # <a name="compiler-warning-level-1-c4138"></a>Derleyici Uyarısı (düzey 1) C4138
 

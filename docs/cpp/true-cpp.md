@@ -7,11 +7,11 @@ helpviewer_keywords:
 - true keyword [C++]
 ms.assetid: 96be2a70-51c3-4250-9752-874d25a5a11e
 ms.openlocfilehash: 5cfc99f446499201a0f54c8e5b1dcc2d7152445c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50488599"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62404708"
 ---
 # <a name="true-c"></a>true (C++)
 

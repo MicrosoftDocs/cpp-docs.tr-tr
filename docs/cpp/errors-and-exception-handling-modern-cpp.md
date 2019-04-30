@@ -4,11 +4,11 @@ ms.date: 09/17/2018
 ms.topic: conceptual
 ms.assetid: a6c111d0-24f9-4bbb-997d-3db4569761b7
 ms.openlocfilehash: c3def77d8b7a22be05259784e3b80562c8728c15
-ms.sourcegitcommit: a1fad0a266b20b313364a74b16c9ac45d089b1e9
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "54220575"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62398920"
 ---
 # <a name="errors-and-exception-handling-modern-c"></a>Hatalar ve Özel Durum İşleme (Modern C++)
 
@@ -90,7 +90,7 @@ Herhangi bir programlama dilinde güçlü hata işleme zordur. Özel durumlar ha
 
 ## <a name="c-exceptions-versus-windows-seh-exceptions"></a>C++ özel durumlarına karşı Windows SEH özel durumları
 
-Hem C ve C++ programları, yapılandırılmış özel durum işleme (SEH) mekanizmasını Windows işletim sisteminde kullanabilirsiniz. SEH kullanması hariç, SEH içindeki kavramlar C++ özel durumlarını, de benzer **__try**, **__except**, ve **__finally** yerine yapıları **deneyin** ve **catch**. Visual C++'da, C++ özel durumları SEH için uygulanır. Bununla birlikte, C++ kodu yazarken C++ özel durum söz dizimini kullanın.
+Hem C ve C++ programları, yapılandırılmış özel durum işleme (SEH) mekanizmasını Windows işletim sisteminde kullanabilirsiniz. SEH içindeki kavramlar de benzer C++ kullanır, SEH özel durumları, **__try**, **__except**, ve **__finally** yerine yapıları **deneyin**  ve **catch**. Visual C++'da, C++ özel durumları SEH için uygulanır. Bununla birlikte, C++ kodu yazarken C++ özel durum söz dizimini kullanın.
 
 SEH hakkında daha fazla bilgi için bkz: [yapılandırılmış özel durum işleme (C/C++)](../cpp/structured-exception-handling-c-cpp.md).
 
@@ -100,7 +100,7 @@ SEH hakkında daha fazla bilgi için bkz: [yapılandırılmış özel durum işl
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Nasıl yapılır: Olağanüstü ve özel durumlu olmayan kod arasında arabirim](../cpp/how-to-interface-between-exceptional-and-non-exceptional-code.md)<br/>
+[Nasıl yapılır: Özel Durumlu Kod ve Özel Durumlu Olmayan Kod Arasındaki Arabirim](../cpp/how-to-interface-between-exceptional-and-non-exceptional-code.md)<br/>
 [C++'a (Modern C++) Tekrar Hoş Geldiniz](../cpp/welcome-back-to-cpp-modern-cpp.md)<br/>
 [C++ Dil Başvurusu](../cpp/cpp-language-reference.md)<br/>
 [C++ Standart Kitaplığı](../standard-library/cpp-standard-library-reference.md)

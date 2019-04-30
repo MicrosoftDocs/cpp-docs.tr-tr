@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3194
 ms.assetid: 49d3ffc6-eff6-4b46-865b-18811692a8bb
 ms.openlocfilehash: 181a18dde45c3363f1f77bc0cbbd5b0ffca3e898
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50608946"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62397464"
 ---
 # <a name="compiler-error-c3194"></a>Derleyici Hatası C3194
 

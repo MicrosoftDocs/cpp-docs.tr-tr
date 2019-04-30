@@ -5,11 +5,11 @@ helpviewer_keywords:
 - enum class, specifying underlying types
 ms.assetid: df8f2b91-b9d2-4fab-9be4-b1d58b8bc570
 ms.openlocfilehash: 9787b7b96f83b2926c65209254c88eb56fe1a8ab
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58774743"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62387389"
 ---
 # <a name="how-to-define-and-consume-enums-in-ccli"></a>Nasıl yapılır: İçinde numaralandırmaları tanımlama ve kullanma C++/CLI
 

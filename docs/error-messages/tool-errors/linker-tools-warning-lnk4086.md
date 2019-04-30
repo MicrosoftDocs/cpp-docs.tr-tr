@@ -7,11 +7,11 @@ helpviewer_keywords:
 - LNK4086
 ms.assetid: ea1eecbb-ba2c-41bb-9a4f-fa0808a4b92d
 ms.openlocfilehash: c6a5a0714e070e6cf3aee8efcdfbdfa07fa9ee69
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50427865"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62399944"
 ---
 # <a name="linker-tools-warning-lnk4086"></a>Bağlayıcı Araçları Uyarısı LNK4086
 

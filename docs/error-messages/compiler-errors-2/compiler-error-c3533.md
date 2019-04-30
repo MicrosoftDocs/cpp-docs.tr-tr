@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3533
 ms.assetid: a68b1ba5-466e-4190-a1a4-505ccfe548b7
 ms.openlocfilehash: 7a567e4396999f98d9e9740db0acf951c443d525
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59026311"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62397386"
 ---
 # <a name="compiler-error-c3533"></a>Derleyici Hatası C3533
 

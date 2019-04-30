@@ -6,11 +6,11 @@ helpviewer_keywords:
 - improving parallel performance with combinable [Concurrency Runtime]
 ms.assetid: fa730580-1c94-4b2d-8aec-57c91dc0497e
 ms.openlocfilehash: c8f4c40be84b2204e5b5632fe6d3d5a5d22b8719
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57258131"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62410012"
 ---
 # <a name="how-to-use-combinable-to-improve-performance"></a>Nasıl yapılır: Performansı arttırmak için combinable kullanma
 

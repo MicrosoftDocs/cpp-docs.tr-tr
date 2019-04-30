@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C4239
 ms.assetid: a23dc16a-649e-4870-9a24-275de1584fcd
 ms.openlocfilehash: 067d1aef41280f4d14fe799e4f4ee26a9f1b9f5a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50451524"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62401026"
 ---
 # <a name="compiler-warning-level-4-c4239"></a>Derleyici Uyarısı (düzey 4) C4239
 

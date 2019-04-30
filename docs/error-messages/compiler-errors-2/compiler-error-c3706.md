@@ -7,17 +7,17 @@ helpviewer_keywords:
 - C3706
 ms.assetid: d20a33eb-d625-46c5-ac87-32075a590d07
 ms.openlocfilehash: 2d474db5a4d50aed7b59e6f48fb5a3e8165f10c6
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50468632"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62400298"
 ---
 # <a name="compiler-error-c3706"></a>Derleyici Hatası C3706
 
 'function': COM olaylarını başlatmak için bir COM arabirimi olması gerekir
 
-COM olaylarını başlatmak için kullandığınız olay arabirim bir COM arabirimi olması gerekir. Bu durumda, arabirim ya da Visual C++ özniteliği kullanılarak tanımlanmalıdır veya kullanılarak içe [#import](../../preprocessor/hash-import-directive-cpp.md) gelen bir tür kitaplığı #import's embedded_idl özniteliğine sahip.
+COM olaylarını başlatmak için kullandığınız olay arabirim bir COM arabirimi olması gerekir. Bu durumda, arabirim ya da bir görsel kullanılarak tanımlanması gerekir C++ özniteliği veya içeri aktarılan kullanarak [#import](../../preprocessor/hash-import-directive-cpp.md) gelen bir tür kitaplığı #import's embedded_idl özniteliğine sahip.
 
 Unutmayın `#include` aşağıdaki örnekte gösterilen ATL üstbilgi dosyalarını satırlarını COM olayları kullanmak için gereklidir. Bu hatayı düzeltmek için olun `IEvents` (olay arabirimi) aşağıdakilerden birini uygulayarak bir COM arabirimi öznitelikleri için arabirim tanımı: [nesne](../../windows/object-cpp.md), [çift](../../windows/dual.md), veya [ dispinterface](../../windows/dispinterface.md).
 

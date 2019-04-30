@@ -7,11 +7,11 @@ helpviewer_keywords:
 - parallel_reduce function, example
 ms.assetid: 9d19fac0-4ab6-4380-a375-3b18eeb87720
 ms.openlocfilehash: ba3ffb5cdae7dcc6f108f005fab33f9a1fee6a6f
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57258664"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62412715"
 ---
 # <a name="how-to-perform-map-and-reduce-operations-in-parallel"></a>Nasıl yapılır: Eşleme gerçekleştirme ve işlemleri paralel olarak azaltma
 

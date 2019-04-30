@@ -35,11 +35,11 @@ helpviewer_keywords:
 - _InterlockedXor intrinsic
 ms.assetid: faef1796-cb5a-4430-b1e2-9d5eaf9b4a91
 ms.openlocfilehash: c86a743df84df37ffe3234d82d79abd987a4dcda
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59023146"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62396697"
 ---
 # <a name="interlockedxor-intrinsic-functions"></a>_Interlockedxor iç işlevleri
 

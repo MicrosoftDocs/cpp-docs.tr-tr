@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2678
 ms.assetid: 1f0a4e26-b429-44f5-9f94-cb66441220c8
 ms.openlocfilehash: 9055210401e14eeb9fdb88266870ac8fe5cbd496
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50580992"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62395397"
 ---
 # <a name="compiler-error-c2678"></a>Derleyici Hatası C2678
 

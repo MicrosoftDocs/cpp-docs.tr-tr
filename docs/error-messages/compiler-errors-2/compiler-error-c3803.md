@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3803
 ms.assetid: bad5fb9a-ed9a-4c15-96e7-cf06e200a50d
 ms.openlocfilehash: f6c255ec18d6dcf94f3ec022f09b173c2c66a1dd
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50565093"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62400103"
 ---
 # <a name="compiler-error-c3803"></a>Derleyici Hatası C3803
 

@@ -11,11 +11,11 @@ helpviewer_keywords:
 - recordsets, updating
 ms.assetid: 0353a742-d226-4fe2-8881-a7daeffe86cd
 ms.openlocfilehash: c29ff110fc507c4e449b2f3d082d98c159a35107
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59040774"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62397776"
 ---
 # <a name="recordset-more-about-updates-odbc"></a>Kayıt kümesi: Güncelleştirmeler hakkında daha fazla (ODBC)
 
@@ -105,7 +105,7 @@ Bu özel durumlar oluşturulduğunda, kalan `AddNew` veya `Edit` olduğunuz olar
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Kayıt Kümesi (ODBC)](../../data/odbc/recordset-odbc.md)<br/>
-[Kayıt kümesi: Kayıtları seçme biçimi (ODBC) nasıl kaydeder](../../data/odbc/recordset-how-recordsets-select-records-odbc.md)<br/>
+[Kayıt kümesi: Kayıt Kümelerinin Kayıtları Seçme Biçimi (ODBC)](../../data/odbc/recordset-how-recordsets-select-records-odbc.md)<br/>
 [Kayıt Alanı Değişimi (RFX)](../../data/odbc/record-field-exchange-rfx.md)<br/>
 [SQL](../../data/odbc/sql.md)<br/>
-[Özel durumlar: Veritabanı özel durumları](../../mfc/exceptions-database-exceptions.md)
+[Özel Durumlar: Veritabanı Özel Durumları](../../mfc/exceptions-database-exceptions.md)

@@ -10,11 +10,11 @@ helpviewer_keywords:
 - graphics [MFC], graphical output classes
 ms.assetid: 2781c599-a038-462a-98ca-634b07ee22b0
 ms.openlocfilehash: 70645d5bb4ab3d1a168e164b2bd721f2d2479742
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57291164"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62408231"
 ---
 # <a name="drawing-and-printing-classes"></a>Sınıf Çizme ve Boyama
 

@@ -7,11 +7,11 @@ helpviewer_keywords:
 - cwctype header
 ms.assetid: 46476f95-b8c3-4ab2-a172-9a1be91124b7
 ms.openlocfilehash: 8478b839bb2fbe7f9780025b44c4bf14f7c357f4
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51518131"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62394084"
 ---
 # <a name="ltcwctypegt"></a>&lt;cwctype&gt;
 

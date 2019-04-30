@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2390
 ms.assetid: 06b749ee-d072-4db1-b229-715f2c0728b5
 ms.openlocfilehash: 89f6ebb02326413e8dca67d333e555321da4e645
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50595879"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62393642"
 ---
 # <a name="compiler-error-c2390"></a>Derleyici Hatası C2390
 

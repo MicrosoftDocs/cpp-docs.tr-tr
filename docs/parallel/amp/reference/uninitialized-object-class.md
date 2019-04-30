@@ -9,11 +9,11 @@ helpviewer_keywords:
 - uninitialized_object class
 ms.assetid: 6ae3c4e8-64a6-4511-a158-03be197b63af
 ms.openlocfilehash: 05c24672531d50fa9bc31587e6c6733fdff21f29
-ms.sourcegitcommit: 309dc532f13242854b47759cef846de59bb807f1
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58565551"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62405462"
 ---
 # <a name="uninitializedobject-class"></a>uninitialized_object Sınıfı
 

@@ -8,11 +8,11 @@ helpviewer_keywords:
 - add_volatile
 ms.assetid: cde57277-d764-402d-841e-97611ebaab14
 ms.openlocfilehash: ff48b1848e2d7631d789621a5ef845d04d8e8821
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50495946"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62411142"
 ---
 # <a name="addvolatile-class"></a>add_volatile Sınıfı
 

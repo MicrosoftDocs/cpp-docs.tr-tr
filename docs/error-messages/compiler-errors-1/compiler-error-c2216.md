@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2216
 ms.assetid: 250f6bdc-a5e1-495f-a1e8-6e8e7021ad9d
 ms.openlocfilehash: 66c29c0e296a0eb13ef36ddb543b26af504b3230
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50476810"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62400415"
 ---
 # <a name="compiler-error-c2216"></a>Derleyici Hatası C2216
 

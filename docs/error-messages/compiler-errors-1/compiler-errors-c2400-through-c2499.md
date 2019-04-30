@@ -1,6 +1,6 @@
 ---
-title: Derleyici hataları C2400 ile c2499 arasındaki
-ms.date: 11/17/2017
+title: C2400 ile C2499 arasındaki derleyici hataları
+ms.date: 04/21/2019
 f1_keywords:
 - C2416
 - C2442
@@ -26,14 +26,14 @@ helpviewer_keywords:
 - C2481
 - C2497
 ms.assetid: f1f05572-af0b-497b-bde4-4c81ec01af3b
-ms.openlocfilehash: 2ba9a55610c6f2e5e38733125414c6076e2c2f67
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
-ms.translationtype: MT
+ms.openlocfilehash: 569780a0716d26406c1703fa91fe5216d92ce653
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50476199"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62404357"
 ---
-# <a name="compiler-errors-c2400-through-c2499"></a>Derleyici hataları C2400 ile c2499 arasındaki
+# <a name="compiler-errors-c2400-through-c2499"></a>C2400 ile C2499 arasındaki derleyici hataları
 
 Belgelerin bu bölümdeki makaleleri bir alt kümesini derleyici tarafından oluşturulan hata iletilerini açıklayın.
 
@@ -139,3 +139,8 @@ Belgelerin bu bölümdeki makaleleri bir alt kümesini derleyici tarafından olu
 |Derleyici Hatası C2497|'*tanımlayıcı*': 'implementation_key' yalnızca işlev bildirimlerine uygulanabilir|
 |[Derleyici Hatası C2498](compiler-error-c2498.md)|'*işlevi*': 'novtable' yalnızca sınıf bildirimlerine veya tanımlarına uygulanabilir|
 |[Derleyici Hatası C2499](compiler-error-c2499.md)|'*sınıfı*': bir sınıf kendisinin taban sınıfı olamaz|
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[C /C++ derleyicisi ve derleme araçları hataları ve Uyarıları](../compiler-errors-1/c-cpp-build-errors.md) \
+[C3999 arasındaki derleyici hataları C2000-](../compiler-errors-1/compiler-errors-c2000-c3999.md)

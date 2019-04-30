@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2052
 ms.assetid: 922ca43b-b64b-4ef7-9611-c7313be3fd79
 ms.openlocfilehash: 2f7d77dbfcf8eb13b1c4b1a5f50750f954fd9281
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50451447"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62408816"
 ---
 # <a name="compiler-error-c2052"></a>Derleyici Hatası C2052
 

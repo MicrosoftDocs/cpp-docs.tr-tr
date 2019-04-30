@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2034
 ms.assetid: 953d70fa-bde9-4ce6-a55d-741e7bc63ff4
 ms.openlocfilehash: 4b4fe769f78e5f826ba08d4819019210f21f860f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50479683"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62400482"
 ---
 # <a name="compiler-error-c2034"></a>Derleyici Hatası C2034
 

@@ -25,11 +25,11 @@ helpviewer_keywords:
 - resource editing
 ms.assetid: 4d2b6fcc-07cf-4289-be87-83a60f69533c
 ms.openlocfilehash: 45db6d0139cfa3aa8a2eaa8fe6d18158cb6646ce
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59029405"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62387922"
 ---
 # <a name="resource-files-c"></a>Kaynak Dosyalar (C++)
 

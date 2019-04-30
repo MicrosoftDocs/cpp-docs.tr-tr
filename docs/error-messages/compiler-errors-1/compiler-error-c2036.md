@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2036
 ms.assetid: 895821a9-65d1-44b5-bde1-dae827f3e486
 ms.openlocfilehash: 47e691a045b3d1bd79226bdda8d96d24e2a80d80
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50450075"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62400506"
 ---
 # <a name="compiler-error-c2036"></a>Derleyici Hatası C2036
 

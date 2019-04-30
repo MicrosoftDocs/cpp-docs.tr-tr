@@ -1,5 +1,5 @@
 ---
-title: 'TN058: MFC Modül Durumu Uygulaması'
+title: 'TN058: MFC modül durumu uygulaması'
 ms.date: 06/28/2018
 f1_keywords:
 - vc.mfc.implementation
@@ -13,13 +13,13 @@ helpviewer_keywords:
 - process state [MFC]
 ms.assetid: 72f5b36f-b3da-4009-a144-24258dcd2b2f
 ms.openlocfilehash: db34f528e70a7dcc437836684656b3ce8a4078fd
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50626059"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62399609"
 ---
-# <a name="tn058-mfc-module-state-implementation"></a>TN058: MFC Modül Durumu Uygulaması
+# <a name="tn058-mfc-module-state-implementation"></a>TN058: MFC modül durumu uygulaması
 
 > [!NOTE]
 > Aşağıdaki Teknik Not çevrimiçi belgelere ilk eklenmiştir beri güncelleştirilmemiş. Eski veya yanlış sonuç olarak, bazı yordamlar ve konular olabilir. En son bilgiler için bu konuyu çevrimiçi belge dizininde arama önerilir.

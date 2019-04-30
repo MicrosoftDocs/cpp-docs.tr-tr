@@ -45,11 +45,11 @@ helpviewer_keywords:
 - InterlockedDecrement_rel intrinsic
 ms.assetid: 5268fce3-86b5-4b2b-b96c-2e531a3fb9b5
 ms.openlocfilehash: 525c40f4260d59f370f0580d2cb7d9e8f184ee4c
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59035098"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62396762"
 ---
 # <a name="interlockeddecrement-intrinsic-functions"></a>_Interlockeddecrement iç işlevleri
 

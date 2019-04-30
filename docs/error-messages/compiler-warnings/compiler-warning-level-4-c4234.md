@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C4234
 ms.assetid: f7fecd5c-8248-4fde-8446-502aedc357ca
 ms.openlocfilehash: 314ee068fb2be6148304360b0aaa3bd8029c283b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50441021"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62401078"
 ---
 # <a name="compiler-warning-level-4-c4234"></a>Derleyici Uyarısı (düzey 4) C4234
 

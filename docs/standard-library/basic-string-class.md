@@ -117,15 +117,15 @@ helpviewer_keywords:
 - std::basic_string [C++], swap
 ms.assetid: a9c3e0a2-39bf-4c8a-b093-9abe30839591
 ms.openlocfilehash: ab93f8b225e27c0cf4d294d176c566bd6f2b5d02
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50518582"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62409791"
 ---
 # <a name="basicstring-class"></a>basic_string Sınıfı
 
-Şablon sınıfın bir nesnesi tarafından denetlenen sıralar `basic_string` standart C++ dize sınıfıdır ve bu genellikle için dize olarak adlandırılır, ancak bunlar standart C++ kitaplığında kullanılan boş sonlandırılmış C stili dizeler ile karıştırılmamalıdır. Standart C++ dize karşılaştırma ve birleştirme işlemleri, yineleyiciler, C++ Standart Kitaplığı algoritmaları ve kopyalama gibi normal türler olarak dizeler kullanmayı sağlayan bir kapsayıcıdır ve sınıf ayırıcısı atama yönetilen bellek. Standart C++ dize null ile sonlandırılmış C stili bir dizeye dönüştürmek ihtiyacınız varsa [basic_string::c_str](#c_str) üyesi.
+Şablon sınıfın bir nesnesi tarafından denetlenen sıralar `basic_string` standart C++ dize sınıfıdır ve bu genellikle için dize olarak adlandırılır, ancak bunlar standart C++ kitaplığında kullanılan boş sonlandırılmış C stili dizeler ile karıştırılmamalıdır. Standart C++ dize karşılaştırma ve birleştirme işlemleri, yineleyiciler, C++ Standart Kitaplığı algoritmaları ve kopyalama gibi normal türler olarak dizeler kullanmayı sağlayan bir kapsayıcıdır ve sınıf ayırıcısı atama yönetilen bellek. Standart bir dönüştürme gerekiyorsa C++ kullanın, dize null ile sonlandırılmış C stili bir dizeye [basic_string::c_str](#c_str) üyesi.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -137,7 +137,7 @@ class basic_string;
 ### <a name="parameters"></a>Parametreler
 
 *CharType*<br/>
-Dizede depolanacak tek karakterli veri türü. C++ Standart Kitaplığı tür tanımları içeren bu şablon sınıfının uzmanlıklar sağlar [dize](../standard-library/string-typedefs.md#string) türü öğeler için **char**, [wstring](../standard-library/string-typedefs.md#wstring), için**wchar_t**, [u16string](../standard-library/string-typedefs.md#u16string) için `char16_t`, ve [u32string](../standard-library/string-typedefs.md#u32string) için `char32_t`.
+Dizede depolanacak tek karakterli veri türü. C++ Standart kitaplığı tür tanımları içeren bu şablon sınıfının uzmanlıklar sağlar [dize](../standard-library/string-typedefs.md#string) türü öğeler için **char**, [wstring](../standard-library/string-typedefs.md#wstring), için**wchar_t**, [u16string](../standard-library/string-typedefs.md#u16string) için `char16_t`, ve [u32string](../standard-library/string-typedefs.md#u32string) için `char32_t`.
 
 *Nitelikler*<br/>
 Çeşitli önemli özelliklerini `CharType` öğeleri uzmanlığındaki sınıfı tarafından açıklanan `Traits`. Varsayılan değer `char_traits` <  `CharType`>.
@@ -200,7 +200,7 @@ Dizenin ayırma ve bellek ayırmayı kaldırma hakkındaki ayrıntıları içere
 |[find_last_of](#find_last_of)|Bir öğe belirtilen bir dizenin son karakter için bir dizeyi arar.|
 |[Ön](#front)|Bir dizedeki ilk öğeye bir başvuru döndürür.|
 |[get_allocator](#get_allocator)|Bir kopyasını döndürür `allocator` dizeyi oluşturmak için kullanılan nesne.|
-|[Ekle](#insert)|Bir öğenin veya öğelerin bir sayı veya öğe aralığını belirtilen konumda bir dize ekler.|
+|[insert](#insert)|Bir öğenin veya öğelerin bir sayı veya öğe aralığını belirtilen konumda bir dize ekler.|
 |[Uzunluğu](#length)|Bir dizedeki geçerli öğe sayısını döndürür.|
 |[max_size](#max_size)|En fazla bir dizenin içerebileceği karakter sayısını döndürür.|
 |[pop_back](#pop_back)|Dizenin son öğesini siler.|
@@ -894,7 +894,7 @@ C stili sürüm çağrılıyor dize işaretçisi.  Basic_string sınıfı nesne 
 
 ### <a name="remarks"></a>Açıklamalar
 
-Nesneler için C++ Şablon sınıfı basic_string ait dize türündeki\<char > mutlaka null olan sonlandırıldı. Null karakteri '\0' olarak bir özel karakter C dizesi, dizenin sonunu işaretlemek için kullanılır, ancak dize türünde bir nesne içinde özel bir anlamı yoktur ve gibi başka bir karakter dizesini bir parçası olabilir. Otomatik bir dönüştürme yoktur **const char** <strong>\*</strong> sınıfı C stili dizeler otomatik dönüştürmelerinde türündekinesneleriçinsağlamazdizeleri,ancakdize**basic_string\<char >**.
+Ait dize türündeki nesneler C++ Şablon sınıfı basic_string\<char > mutlaka null olan sonlandırıldı. Null karakteri '\0' olarak bir özel karakter C dizesi, dizenin sonunu işaretlemek için kullanılır, ancak dize türünde bir nesne içinde özel bir anlamı yoktur ve gibi başka bir karakter dizesini bir parçası olabilir. Otomatik bir dönüştürme yoktur **const char** <strong>\*</strong> sınıfı C stili dizeler otomatik dönüştürmelerinde türündekinesneleriçinsağlamazdizeleri,ancakdize**basic_string\<char >**.
 
 Bu dize işaretçisine geçersiz veya dize sınırlı bir ömre sahiptir ve sınıf dizesi tarafından sahip olunan silindi olarak döndürülen C stili dize değiştirilmemelidir.
 
@@ -1670,7 +1670,7 @@ const value_type *data() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Nesneler için C++ Şablon sınıfı basic_string ait dize türündeki \<char > mutlaka null olan sonlandırıldı. İçin dönüş türü `data` hiçbir null karakteri eklenmemiş çünkü geçerli C-dizesi değil. Null karakteri '\0' olarak bir özel karakter C dizesi, dizenin sonunu işaretlemek için kullanılır, ancak dize türünde bir nesne içinde özel bir anlamı yoktur ve dize nesnesi başka bir karakter olduğu gibi bir parçası olabilir.
+Ait dize türündeki nesneler C++ Şablon sınıfı basic_string \<char > mutlaka null olan sonlandırıldı. İçin dönüş türü `data` hiçbir null karakteri eklenmemiş çünkü geçerli C-dizesi değil. Null karakteri '\0' olarak bir özel karakter C dizesi, dizenin sonunu işaretlemek için kullanılır, ancak dize türünde bir nesne içinde özel bir anlamı yoktur ve dize nesnesi başka bir karakter olduğu gibi bir parçası olabilir.
 
 Otomatik bir dönüştürme yoktur **const char** <strong>\*</strong> sınıfı C stili dizeler otomatik dönüştürmelerinde türündekinesneleriçinsağlamazdizeleri,ancakdize**basic_string \<char >**.
 

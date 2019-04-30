@@ -8,11 +8,11 @@ helpviewer_keywords:
 - aligned_storage
 ms.assetid: f255e345-1f05-4d07-81e4-017f420839fb
 ms.openlocfilehash: 6a3145cb1837a3ea95c48022db391ddbccf55199
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51517169"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62411103"
 ---
 # <a name="alignedstorage-class"></a>aligned_storage Sınıfı
 

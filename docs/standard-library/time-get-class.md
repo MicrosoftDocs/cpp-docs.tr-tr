@@ -39,11 +39,11 @@ helpviewer_keywords:
 - std::time_get [C++], get_year
 ms.assetid: 869d5f5b-dbab-4628-8333-bdea7e272023
 ms.openlocfilehash: df5a6da3995b1485585a3105ac027f19a27dc8eb
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50505189"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62412039"
 ---
 # <a name="timeget-class"></a>time_get Sınıfı
 
@@ -590,7 +590,7 @@ Saat yapı atamak için kullanılan verileri sonra ilk karakter için bir yinele
 
 İkinci üye işlev çağrıları `do_get` tarafından ayrılmış biçiminin denetiminde `[fmt_first, fmt_last)`. Her biri sıfır dönüşümü belirler bir dizi alanları biçimi işler veya daha fazla giriş tarafından sınırlanan öğelerin `[first, last)`. Dönüştürülmeyen ilk öğeyi gösteren bir yineleyici döndürür. Alanların üç türü vardır:
 
-Bir yüzde (%) biçiminde isteğe bağlı bir değiştirici tarafından izlenen *mod* kümesinde [EOQ #], bir dönüştürme tanımlayıcı tarafından izlenen *fmt*, yerini alan *ilk* tarafından döndürülen değeri ile `do_get(first, last, iosbase, state, ptm, fmt, mod)`. Dönüştürme hatası ayarlar `ios_base::failbit` içinde *durumu* ve döndürür.
+Yüzde (%) biçiminde isteğe bağlı bir değiştirici tarafından izlenen *mod* kümesinde [EOQ #], bir dönüştürme tanımlayıcı tarafından izlenen *fmt*, yerini alan *ilk* tarafındandöndürülendeğerile`do_get(first, last, iosbase, state, ptm, fmt, mod)`. Dönüştürme hatası ayarlar `ios_base::failbit` içinde *durumu* ve döndürür.
 
 Bir boşluk öğesi biçimde sıfır atlar veya daha fazla boşluk öğeleri giriş.
 
@@ -1047,11 +1047,11 @@ Bellek yönetimi için nesne türünü belirtmek için kullanılan tamsayı değ
 
 Olası değerler için *refs* parametresi ve bunların önemi:
 
-- 0: nesne ömrü onu içeren yerel ayarlar tarafından yönetilir.
+- 0: Nesnenin ömrünü, onu içeren yerel ayarlar tarafından yönetilir.
 
-- 1: nesne ömrü el ile yönetilmesi gerekir.
+- 1: Nesnenin ömrünü el ile yönetilmesi gerekir.
 
-- \> 1: Bu değerler tanımlanmadı.
+- \> 1: Bu değerleri tanımlı değil.
 
 Yok edici korumalı olduğundan doğrudan örnek mümkündür.
 

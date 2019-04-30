@@ -23,11 +23,11 @@ helpviewer_keywords:
 - std::wstring_convert [C++], state
 ms.assetid: e34f5b65-d572-4bdc-ac69-20778712e376
 ms.openlocfilehash: df3b003289dcd86e8033521d8cb0cacdbb7dfbd8
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50636962"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62410804"
 ---
 # <a name="wstringconvert-class"></a>wstring_convert Sınıfı
 
@@ -165,7 +165,7 @@ typedef typename wide_string::traits_type::int_type int_type;
 
 Türü eşanlamlıdır `wide_string::traits_type::int_type`.
 
-## <a name="state"></a>  wstring_convert::State
+## <a name="state"></a>  wstring_convert::state
 
 Dönüştürme durumunu temsil eden bir nesne döndürür.
 

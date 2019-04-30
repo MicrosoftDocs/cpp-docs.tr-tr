@@ -7,11 +7,11 @@ helpviewer_keywords:
 - _ReadBarrier intrinsic
 ms.assetid: f9e54a92-61bc-4f55-8195-b8932065a796
 ms.openlocfilehash: f31293b2bef0304bcdc58f0a8dbfce0436df9843
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59025492"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62396567"
 ---
 # <a name="readbarrier"></a>_ReadBarrier
 

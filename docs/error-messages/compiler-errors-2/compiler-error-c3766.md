@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3766
 ms.assetid: b5af2089-2e1e-4e45-a41d-495b6c55656e
 ms.openlocfilehash: 2d871e331987cb2731aad8b4fbc6ec2f094bd218
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50518332"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62400233"
 ---
 # <a name="compiler-error-c3766"></a>Derleyici Hatası C3766
 

@@ -7,11 +7,11 @@ helpviewer_keywords:
 - vector header
 ms.assetid: c1431ad8-c0b6-4dbb-89c4-5f651e432d7f
 ms.openlocfilehash: 348b5c53ecd3fb7900d03fed7c1209a2c94eeb4c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50498299"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62410867"
 ---
 # <a name="ltvectorgt"></a>&lt;vektör&gt;
 
@@ -74,7 +74,7 @@ void swap (
 
 ### <a name="parameters"></a>Parametreler
 
-*Türü*<br/>
+*Tür*<br/>
 Şablon parametresi için vektör içinde depolanan verinin türü.
 
 *Ayırıcı*<br/>

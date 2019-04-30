@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C4210
 ms.assetid: f8600adf-dfe2-4022-a37a-3d4997641dfd
 ms.openlocfilehash: 3435e18f60568cad390dcb0ef7900658a21ea959
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50638730"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62401195"
 ---
 # <a name="compiler-warning-level-4-c4210"></a>Derleyici Uyarısı (düzey 4) C4210
 

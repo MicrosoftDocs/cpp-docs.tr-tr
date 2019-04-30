@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2979
 ms.assetid: 98bd9043-ec44-451e-a482-3a8e35fc7464
 ms.openlocfilehash: e9b0af0d17ef57f19e051165b16632e3180159cd
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59776627"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62395319"
 ---
 # <a name="compiler-error-c2979"></a>Derleyici Hatası C2979
 

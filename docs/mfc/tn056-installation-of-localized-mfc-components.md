@@ -17,11 +17,11 @@ helpviewer_keywords:
 - installing MFC components
 ms.assetid: 0b582615-3bb1-4fc0-b569-d127d6deccd3
 ms.openlocfilehash: f66eca0c406b5ce82fc1235a4d43ecce0074a426
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57304411"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62399648"
 ---
 # <a name="tn056-installation-of-localized-mfc-components"></a>TN056: Yerelleştirilmiş MFC bileşenlerini yükleme
 

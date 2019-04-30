@@ -5,11 +5,11 @@ helpviewer_keywords:
 - extraction errors
 ms.assetid: 6a681028-adba-4557-8f7b-f137932905f8
 ms.openlocfilehash: 62d9c94f366ec666acf2179803c62e4a3ccd7e6a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50629235"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62412065"
 ---
 # <a name="testing-for-extraction-errors"></a>Ayıklama Hataları İçin Test Yapma
 

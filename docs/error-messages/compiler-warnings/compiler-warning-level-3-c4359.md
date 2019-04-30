@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C4359
 ms.assetid: d8fe993c-ef82-45a0-a43d-c29f9d1bacdb
 ms.openlocfilehash: 3856c50aabce497f28a179b30346b30371986e51
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50432818"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62402014"
 ---
 # <a name="compiler-warning-level-3-c4359"></a>Derleyici Uyarısı (Düzey 3) C4359
 

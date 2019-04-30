@@ -9,11 +9,11 @@ helpviewer_keywords:
 - filters [C++], recordset object
 ms.assetid: 5c075f37-c837-464d-90c1-d028a9d1c175
 ms.openlocfilehash: 050524df840be28d661da89d04b685a44238f88c
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59041221"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62397867"
 ---
 # <a name="recordset-filtering-records-odbc"></a>Kayıt kümesi: Kayıtları filtreleme (ODBC)
 
@@ -90,7 +90,7 @@ ODBC belirtimine uygun yukarıda gösterilen Alıntısı, ancak bazı DBMS diğe
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Kayıt Kümesi (ODBC)](../../data/odbc/recordset-odbc.md)<br/>
-[Kayıt kümesi: Kayıtları sıralama (ODBC)](../../data/odbc/recordset-sorting-records-odbc.md)<br/>
-[Kayıt kümesi: Kayıtları seçme biçimi (ODBC) nasıl kaydeder](../../data/odbc/recordset-how-recordsets-select-records-odbc.md)<br/>
-[Kayıt kümesi: Kümelerinin kayıtları Güncelleştirmesi (ODBC) kayıtları](../../data/odbc/recordset-how-recordsets-update-records-odbc.md)<br/>
-[Kayıt kümesi: Kayıtları Kilitleme (ODBC)](../../data/odbc/recordset-locking-records-odbc.md)
+[Kayıt kümesi: Kayıtları Sıralama (OBDC)](../../data/odbc/recordset-sorting-records-odbc.md)<br/>
+[Kayıt kümesi: Kayıt Kümelerinin Kayıtları Seçme Biçimi (ODBC)](../../data/odbc/recordset-how-recordsets-select-records-odbc.md)<br/>
+[Kayıt kümesi: Kayıt Kümelerinin Kayıtları Güncelleştirme Biçimi (ODBC)](../../data/odbc/recordset-how-recordsets-update-records-odbc.md)<br/>
+[Kayıt kümesi: Kayıtları Kilitleme (OBDC)](../../data/odbc/recordset-locking-records-odbc.md)

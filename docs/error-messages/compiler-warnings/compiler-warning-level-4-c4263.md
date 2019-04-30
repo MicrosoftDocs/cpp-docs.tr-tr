@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C4263
 ms.assetid: daabb05d-ab56-460f-ab6c-c74d222ef649
 ms.openlocfilehash: a035646aab2589523adb9eb0b201e2d4d781632c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50555291"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62400935"
 ---
 # <a name="compiler-warning-level-4-c4263"></a>Derleyici Uyarısı (düzey 4) C4263
 

@@ -9,11 +9,11 @@ helpviewer_keywords:
 - operation_timed_out class
 ms.assetid: 963efe1d-a6e0-477c-9a70-d93d8412c897
 ms.openlocfilehash: 2511be4669bc4abf75d5188e3aeabd7863f42dd7
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57276110"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62394409"
 ---
 # <a name="operationtimedout-class"></a>operation_timed_out Sınıfı
 

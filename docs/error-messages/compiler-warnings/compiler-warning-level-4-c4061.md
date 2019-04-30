@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C4061
 ms.assetid: a99cf88e-7941-4519-8b1b-f6889d914b2f
 ms.openlocfilehash: 073e3e9cb1cb5bb6b0f66157c986072227960212
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59237126"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62401429"
 ---
 # <a name="compiler-warning-level-4-c4061"></a>Derleyici Uyarısı (düzey 4) C4061
 

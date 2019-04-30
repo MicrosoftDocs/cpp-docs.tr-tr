@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C4996
 ms.assetid: 926c7cc2-921d-43ed-ae75-634f560dd317
 ms.openlocfilehash: ef1bc46b64ccbe1374fd795a9b5d56e091b47f48
-ms.sourcegitcommit: faa42c8a051e746d99dcebe70fd4bbaf3b023ace
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57816431"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62401507"
 ---
 # <a name="compiler-warning-level-3-c4996"></a>Derleyici Uyarısı (Düzey 3) C4996
 
@@ -19,7 +19,7 @@ Derleyici, kullanım dışı bir bildirimi ile karşılaşıldı. **Bu her zaman
 
 C çalışma zamanı kitaplığı ve standart kitaplık, ancak kapsamlı bir liste tarafından oluşturulan bazı yaygın C4996 iletileri şunlardır. Bağlantıları izleyin veya bu sorunu düzeltmek için veya uyarıyı devre dışı bırakmak için için okumaya devam edin.
 
-- [Bu öğe için POSIX ad kullanım dışı bırakılmıştır. Bunun yerine ISO C ve C++ uyumluluğunu adını kullanın: *new_name*. Ayrıntılar için çevrimiçi yardıma bakın.](#posix-function-names)
+- [Bu öğe için POSIX ad kullanım dışı bırakılmıştır. Bunun yerine ISO C kullanın ve C++ uyumluluğunu adı: *new_name*. Ayrıntılar için çevrimiçi yardıma bakın.](#posix-function-names)
 
 - [Bu işlev veya değişken güvenli olmayabilir. Kullanmayı *safe_version* yerine. Kullanımdan kaldırma devre dışı bırakmak için \_CRT\_güvenli\_Hayır\_uyarıları.  Ayrıntılar için çevrimiçi yardıma bakın.](#unsafe-crt-library-functions)
 
@@ -65,7 +65,7 @@ Bazı ortak kaynakları C4996 uyarıları ve hataları aşağıda verilmiştir.
 
 ### <a name="posix-function-names"></a>POSIX işlev adları
 
-**Bu öğe için POSIX ad kullanım dışı bırakılmıştır. Bunun yerine ISO C ve C++ uyumluluğunu adını kullanın:** *new_name*. **Ayrıntılar için çevrimiçi yardıma bakın.**
+**Bu öğe için POSIX ad kullanım dışı bırakılmıştır. Bunun yerine ISO C kullanın ve C++ uyumluluğunu adı:** *new_name*. **Ayrıntılar için çevrimiçi yardıma bakın.**
 
 Microsoft, bazı POSIX işlevler C99 ve C ++ 03 kuralları uygulama tanımlı genel işlev adları için uygun olması için CRT olarak yeniden adlandırıldı. Yalnızca özgün POSIX adları kullanım dışı bırakılmıştır, İşlevler kendilerini. Çoğu durumda, bir standart uyumluluğunu adı oluşturmak için POSIX işlevi adı bir alt çizgi eklendi. Derleyici, kullanımdan kaldırılma uyarısı orijinal işlev adı için sorunları ve tercih edilen adından da anlaşılacağı.
 
@@ -279,7 +279,7 @@ int main() {
 }
 ```
 
-## <a name="example-user-defined-deprecated-function"></a>Örnek:  Kullanıcı tanımlı kullanım dışı işlev
+## <a name="example-user-defined-deprecated-function"></a>Örnek: Kullanıcı tanımlı kullanım dışı işlev
 
 Artık belirli işlevlerin kullanılmasını önerdiğiniz çağıranlar uyar için kendi kodunuzda kullanım dışı özniteliği kullanabilirsiniz. Bu örnekte, C4996 şirket kullanım dışı işlev bildirildiği satır ve işlevin üzerinde kullanıldığı satır için oluşturulur.
 

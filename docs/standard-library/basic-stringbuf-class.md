@@ -31,11 +31,11 @@ helpviewer_keywords:
 - std::basic_stringbuf [C++], underflow
 ms.assetid: 40c85f9e-42a5-4a65-af5c-23c8e3bf8113
 ms.openlocfilehash: 1ed9deee46f7c99750ee3260a6b2a8de1f0f3397
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51329650"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62409765"
 ---
 # <a name="basicstringbuf-class"></a>basic_stringbuf Sınıfı
 
@@ -290,7 +290,7 @@ Basic_stringbuf sınıfı bir nesne için < **Elem**, **Tr**, `Alloc`>, bir akı
 
 Varsa **modu & ios_base::in** olan sıfır değilse, işlev giriş arabelleğinde okumak için bir sonraki konuma değiştirir. Varsa **modu & ios_base::out** olan sıfır değilse, işlev çıkış arabelleğinin yazmak için bir sonraki konuma değiştirir. Bir akış etkilenecek kendi arabellek mevcut olması gerekir. Başarılı olması yerleştirme işlemi için akış konumu, denetlenen bir dizi içinde yer almalıdır. Aksi takdirde (veya hiçbiri konumu etkilenir), yerleştirme işlemi başarısız olur.
 
-## <a name="str"></a>  basic_stringbuf::Str
+## <a name="str"></a>  basic_stringbuf::str
 
 Yazma konumunu değiştirmeden dize arabellekteki metni alır veya ayarlar.
 

@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C4254
 ms.assetid: c7dcef24-d535-4c98-bb41-fc3d2b88fd11
 ms.openlocfilehash: 925428cffae37ea26144e5b550cbc7988b33ef01
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50606413"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62400987"
 ---
 # <a name="compiler-warning-level-4-c4254"></a>Derleyici Uyarısı (düzey 4) C4254
 

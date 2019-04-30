@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C4686
 ms.assetid: 767c83c2-9e4b-4f9e-88c8-02128ba563f4
 ms.openlocfilehash: 5e23e6aa69fe8a59e3dfd22af7e33780c223cdd3
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50584528"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62401611"
 ---
 # <a name="compiler-warning-level-3-c4686"></a>Derleyici Uyarısı (Düzey 3) C4686
 

@@ -8,11 +8,11 @@ helpviewer_keywords:
 - DAO (Data Access Objects), Index Fields collection
 ms.assetid: 097ee8a6-83b1-4db7-8f05-d62a2deefe19
 ms.openlocfilehash: d03a6f6eadd4cf6ccb5279edf18675605d0b1485
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57304281"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62399765"
 ---
 # <a name="cdaoindexfieldinfo-structure"></a>CDaoIndexFieldInfo Yapısı
 

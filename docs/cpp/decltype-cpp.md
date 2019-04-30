@@ -10,11 +10,11 @@ helpviewer_keywords:
 - operators [C++], deduce expression type
 ms.assetid: 6dcf8888-8196-4f13-af50-51e3797255d4
 ms.openlocfilehash: 6c1c91aec7d974836b1ec031a1e8b38e8abb65ce
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50527952"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62399089"
 ---
 # <a name="decltype--c"></a>decltype (C++)
 
@@ -179,7 +179,7 @@ x3.Dump() = 42
 
 ## <a name="example"></a>Örnek
 
-**Visual Studio 2017 ve üzeri:** şablonları bildirilen örneği yerine olduğunda derleyici decltype bağımsız değişkenleri ayrıştırır. Sonuç olarak, bağımlı olmayan özelleştirmesi decltype değişkeninde bulunursa, örnekleme zamanı ertelenmiş değil ve hemen işlenir ve ortaya çıkan hataları o anda koydu.
+**Visual Studio 2017 ve sonraki sürümleri:** Şablonları bildirilen örneği yerine olduğunda derleyici decltype bağımsız değişkenleri ayrıştırır. Sonuç olarak, bağımlı olmayan özelleştirmesi decltype değişkeninde bulunursa, örnekleme zamanı ertelenmiş değil ve hemen işlenir ve ortaya çıkan hataları o anda koydu.
 
 Aşağıdaki örnek, bildirildiği tetiklenir böyle bir derleyici hatası gösterir:
 

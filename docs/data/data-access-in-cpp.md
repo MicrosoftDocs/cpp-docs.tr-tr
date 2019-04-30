@@ -9,11 +9,11 @@ helpviewer_keywords:
 - data access [C++], class libraries for databases
 ms.assetid: 95da6237-bbe2-480a-ae50-3a520051ceff
 ms.openlocfilehash: 142d067b6fbc9e2357ff8fc23fd931a1194477e9
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59041260"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62398075"
 ---
 # <a name="data-access-in-visual-c"></a>Visual C++'da Veri Erişimi
 

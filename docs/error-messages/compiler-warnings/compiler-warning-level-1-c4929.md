@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C4929
 ms.assetid: 95f8ab4f-4468-4caa-acd5-8f4592f03b3c
 ms.openlocfilehash: 07081f2b8e305e20eb1725d3d76a6d77638caa7e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50651717"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62393434"
 ---
 # <a name="compiler-warning-level-1-c4929"></a>Derleyici Uyarısı (düzey 1) C4929
 

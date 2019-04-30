@@ -7,11 +7,11 @@ helpviewer_keywords:
 - exceptions [MFC], throwing
 ms.assetid: 492976e8-8804-4234-8e8f-30dffd0501be
 ms.openlocfilehash: 030bf3db9ff305f35cbfb0b518c8704114ce083d
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57297950"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62405865"
 ---
 # <a name="exceptions-throwing-exceptions-from-your-own-functions"></a>Özel durumlar: Kendi İşlevlerinizden özel durumları atma
 

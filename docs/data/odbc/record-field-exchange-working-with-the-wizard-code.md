@@ -16,11 +16,11 @@ helpviewer_keywords:
 - m_nFields data member, initializing
 ms.assetid: f00d882a-ff1b-4a75-9717-98d8762bb237
 ms.openlocfilehash: 82f0d946cac3429150250e2df5d1bfd674ec30ee
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59041299"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62395689"
 ---
 # <a name="record-field-exchange-working-with-the-wizard-code"></a>Kayıt Alanı Değişimi: Sihirbaz kodu ile çalışma
 

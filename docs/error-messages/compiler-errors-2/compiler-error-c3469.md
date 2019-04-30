@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3469
 ms.assetid: e23b0e5c-c704-4e67-a868-bf02c2055d85
 ms.openlocfilehash: 1e935fb90c93d6f301226f3e9029c04929f179ac
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59779079"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62397438"
 ---
 # <a name="compiler-error-c3469"></a>Derleyici Hatası C3469
 

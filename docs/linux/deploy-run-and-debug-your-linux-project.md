@@ -3,16 +3,16 @@ title: Dağıtma, çalıştırma ve C++ Linux projenizi Visual Studio'da hata ay
 description: Derleme, yürütün ve hata ayıklama kodu Visual Studio'da Linux C++ projesi içinde uzak hedefte açıklar.
 ms.date: 09/12/2018
 ms.assetid: f7084cdb-17b1-4960-b522-f84981bea879
-ms.openlocfilehash: 413f0b089b3b1398093073bcd6f49358143121c8
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.openlocfilehash: cdafb064f8a6269c5ccae938e280b5f47bff3b00
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51328402"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62393391"
 ---
 # <a name="deploy-run-and-debug-your-linux-project"></a>Dağıtma, çalıştırma ve Linux projenizin hatalarını ayıklama
 
-Visual Studio'da Linux C++ projesi oluşturduktan sonra proje kullanarak bağlantı kurduğunuz [Linux Bağlantı Yöneticisi](../linux/connect-to-your-remote-linux-computer.md), çalıştırın ve proje hata ayıklama. Derleme, yürütün ve uzak hedef kodunda hata ayıklayın.
+Visual Studio'da Linux C++ projesi oluşturduktan sonra proje kullanarak bağlantı kurduğunuz [Linux Bağlantı Yöneticisi](connect-to-your-remote-linux-computer.md), çalıştırın ve proje hata ayıklama. Derleme, yürütün ve uzak hedef kodunda hata ayıklayın.
 
 Linux projenizin hatalarını ayıklama ve etkileşim için birkaç yol vardır.
 
@@ -24,16 +24,16 @@ Linux projenizin hatalarını ayıklama ve etkileşim için birkaç yol vardır.
 
 1. Select hata ayıklama modunda **hata ayıklama** özellik sayfası.
 
-   GDB, Linux üzerinde çalışan uygulamalarda hata ayıklama için kullanılır.  Ancak, bu öğesinden seçilebilir iki farklı modda çalıştırabilirsiniz **mod hata ayıklaması** seçeneği projenin **hata ayıklama** özellik sayfası:
+   GDB, Linux üzerinde çalışan uygulamalarda hata ayıklama için kullanılır. GDB öğesinden seçilebilir iki farklı modda çalışabilir **mod hata ayıklaması** seçeneği projenin **hata ayıklama** özellik sayfası:
 
    ![GDB seçenekleri](media/settings_debugger.png)
 
-   - İçinde **gdbserver** modunda, GDB çalıştığı yerel olarak, uzak sistemde çalışan gdbserver'a bağlanır.  Bunu destekleyen Linux konsol penceresi yalnızca modu olduğunu unutmayın.
+   - İçinde **gdbserver** modunda, GDB çalıştırın yerel olarak uzak sistemdeki gdbserver bağlanır.  Bu Linux konsol penceresinde destekleyen tek mod olduğunu unutmayın.
 
-   - İçinde **gdb** modu, Visual Studio hata ayıklayıcısını sürücüleri GDB daha uyumlu GDB yerel sürümünü hedef bilgisayarda yüklü sürümüyle uyumlu değilse uzak sistemde. |
+   - İçinde **gdb** modu, Visual Studio hata ayıklayıcı, uzak sistemde GDB sürücüler. Bu, GDB yerel sürümünü hedef bilgisayarda yüklü sürümüyle uyumlu değilse, daha iyi bir seçenektir. |
 
    > [!NOTE]
-   > İsabet kesme noktaları hata ayıklama gdbserver modunda, gdb modunda deneyin. GDB ilk olmalıdır [yüklü](../linux/download-install-and-setup-the-linux-development-workload.md) uzak hedef.
+   > İsabet kesme noktaları hata ayıklama gdbserver modunda, gdb modunda deneyin. GDB ilk olmalıdır [yüklü](download-install-and-setup-the-linux-development-workload.md) uzak hedef.
 
 1. Standart kullanarak uzak hedef seçin **hata ayıklama** Visual Studio'da araç çubuğu.
 
@@ -41,7 +41,7 @@ Linux projenizin hatalarını ayıklama ve etkileşim için birkaç yol vardır.
 
    ![Uzak hedef](media/remote_target.png)
 
-   Uzak hedef henüz bağlanmadıysanız, kullanılacak bir yönerge göreceğiniz [Linux Bağlantı Yöneticisi](../linux/connect-to-your-remote-linux-computer.md) uzak hedef bağlanmak için.
+   Uzak hedef henüz bağlanmadıysanız, kullanılacak bir yönerge göreceğiniz [Linux Bağlantı Yöneticisi](connect-to-your-remote-linux-computer.md) uzak hedef bağlanmak için.
 
    ![Uzak mimarisi](media/architecture.png)
 
@@ -57,7 +57,7 @@ Linux projenizin hatalarını ayıklama ve etkileşim için birkaç yol vardır.
 
    ![Bir kesme noktası isabet](media/hit_breakpoint.png)
 
-   Şimdi, uygulama ile etkileşim kurabilir, geçerli durumu görünümü değişkenleri ve kodu adımlayın gibi komut tuşlarına basarak kullanımda **F10** veya **F11**.
+   Artık, uygulamanın kendi geçerli durumunda, değişkenleri görüntüle ve kodu adımlayın gibi komut tuşlarına basarak etkileşim kurabileceğiniz **F10** veya **F11**.
 
 1. Uygulamanızı, select etkileşim kurmak için Linux konsolu kullanmak istiyorsanız **hata ayıklama > Linux Konsolu**.
 
@@ -79,10 +79,10 @@ Linux projenizin hatalarını ayıklama ve etkileşim için birkaç yol vardır.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-- ARM cihazları, Linux üzerinde hata ayıklamak için bu blog gönderisini inceleyin: [katıştırılmış bir ARM cihazı Visual Studio'da hata ayıklama](https://blogs.msdn.microsoft.com/vcblog/2018/01/10/debugging-an-embedded-arm-device-in-visual-studio/).
+- ARM cihazları, Linux üzerinde hata ayıklamak için bu blog gönderisini inceleyin: [Katıştırılmış bir ARM cihazı Visual Studio'da hata ayıklama](https://blogs.msdn.microsoft.com/vcblog/2018/01/10/debugging-an-embedded-arm-device-in-visual-studio/).
 
-- Kullanarak hata ayıklama **iliştirme** komutu, bu blog gönderisini inceleyin: [proje sistemi, Linux konsol penceresi, rsync ve işleme İliştir Linux C++ iş yükünde geliştirmeler](https://blogs.msdn.microsoft.com/vcblog/2018/03/13/linux-c-workload-improvements-to-the-project-system-linux-console-window-rsync-and-attach-to-process/).
+- Kullanarak hata ayıklama **iliştirme** komutu, bu blog gönderisini inceleyin: [Linux C++ proje sistemi, Linux konsol penceresi, rsync ve işleme İliştir iş yükünde geliştirmeler](https://blogs.msdn.microsoft.com/vcblog/2018/03/13/linux-c-workload-improvements-to-the-project-system-linux-console-window-rsync-and-attach-to-process/).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C++ hata ayıklama özellikleri (Linux C++)](../linux/prop-pages/debugging-linux.md)
+[C++ hata ayıklama özellikleri (Linux C++)](prop-pages/debugging-linux.md)

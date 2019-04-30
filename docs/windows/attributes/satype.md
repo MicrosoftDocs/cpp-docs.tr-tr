@@ -7,11 +7,11 @@ helpviewer_keywords:
 - satype attribute
 ms.assetid: 1716590b-6bcb-4aba-b1bc-82f7335f02c3
 ms.openlocfilehash: 7588e8d855d648309c46d981898cfbbf7888f4c9
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59025730"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62407308"
 ---
 # <a name="satype"></a>satype
 
@@ -37,7 +37,7 @@ Veri türü için `SAFEARRAY` arabirim yöntemi için parametre olarak geçirile
 |**İçin geçerlidir**|Arabirimi parametresi, arabirim yöntemi|
 |**Tekrarlanabilir**|Hayır|
 |**Gerekli öznitelikleri**|None|
-|**Geçersiz öznitelikler**|None|
+|**Geçersiz öznitelikler**|Yok.|
 
 ## <a name="remarks"></a>Açıklamalar
 

@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C4703
 ms.assetid: 5dad454e-69e3-4931-9168-050a861c05f8
 ms.openlocfilehash: 6115db7611de521d66df3b1f555349891d72cc03
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59025803"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62395241"
 ---
 # <a name="compiler-warning-level-4-c4703"></a>Derleyici Uyarısı (düzey 4) C4703
 

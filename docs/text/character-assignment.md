@@ -6,11 +6,11 @@ helpviewer_keywords:
 - MBCS [C++], character assignments
 ms.assetid: dcc329cd-92df-4e20-817d-364be62ff28f
 ms.openlocfilehash: 88c42435d336ba78e87c9acfe3ada5fddbd18fb8
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57750708"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62410752"
 ---
 # <a name="character-assignment"></a>Karakter Atama
 

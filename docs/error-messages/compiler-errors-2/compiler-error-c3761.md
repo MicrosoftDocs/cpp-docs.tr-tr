@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3761
 ms.assetid: 0c16f093-7a78-4838-b90b-0c67ef6e9270
 ms.openlocfilehash: c78709acfafabbc6d6bc24979432a93e899c3208
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50530919"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62400285"
 ---
 # <a name="compiler-error-c3761"></a>Derleyici Hatası C3761
 

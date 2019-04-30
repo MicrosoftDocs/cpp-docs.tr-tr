@@ -1,6 +1,6 @@
 ---
 title: 'İzlenecek yol: Kilitlenmeyi Önlemek için birleştirme kullanma'
-ms.date: 11/19/2018
+ms.date: 04/25/2019
 helpviewer_keywords:
 - preventing deadlock with joins [Concurrency Runtime]
 - deadlock, preventing [Concurrency Runtime]
@@ -8,11 +8,11 @@ helpviewer_keywords:
 - join class, example
 ms.assetid: d791f697-bb93-463e-84bd-5df1651b7446
 ms.openlocfilehash: 2f9e0f50866ed0635fbaa4b700dbf522f09458d9
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
-ms.translationtype: MT
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57303059"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62407901"
 ---
 # <a name="walkthrough-using-join-to-prevent-deadlock"></a>İzlenecek yol: Kilitlenmeyi Önlemek için birleştirme kullanma
 

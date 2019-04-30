@@ -6,11 +6,11 @@ helpviewer_keywords:
 - parallel_for function, example
 ms.assetid: adb4d64e-5514-4b70-8dcb-b9210e6b5a1c
 ms.openlocfilehash: d6ac30a5de0ff45adad1064aeab708e6a84f5e9f
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57283598"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "64346366"
 ---
 # <a name="how-to-write-a-parallelfor-loop"></a>Nasıl yapılır: Parallel_for döngüsü yazma
 

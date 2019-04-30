@@ -6,11 +6,11 @@ helpviewer_keywords:
 - creating agents that use specific policies [Concurrency Runtime]
 ms.assetid: 46a3e265-0777-4ec3-a142-967bafc49d67
 ms.openlocfilehash: 5aac86801015549b5552b51c06a30f8398346a06
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57257377"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62411376"
 ---
 # <a name="how-to-create-agents-that-use-specific-scheduler-policies"></a>Nasıl yapılır: Belirli Zamanlayıcı ilkelerini kullanan aracılar oluşturma
 

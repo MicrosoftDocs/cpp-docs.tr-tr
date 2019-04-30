@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2382
 ms.assetid: 4d4436f9-d0d6-4bd0-b8ec-767b89adfb2f
 ms.openlocfilehash: 4115a01f9e4dcab31a05bb3994109e97694121e6
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50593082"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "64344868"
 ---
 # <a name="compiler-error-c2382"></a>Derleyici Hatası C2382
 

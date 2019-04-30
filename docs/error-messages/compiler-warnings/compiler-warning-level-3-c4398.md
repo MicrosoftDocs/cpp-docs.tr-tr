@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C4398
 ms.assetid: b6221432-9fed-4272-a547-a73f587904e6
 ms.openlocfilehash: 4126a1267b41cdf9c0161c7e85a9057b2a301d77
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50578470"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62401975"
 ---
 # <a name="compiler-warning-level-3-c4398"></a>Derleyici Uyarısı (Düzey 3) C4398
 

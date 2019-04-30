@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3531
 ms.assetid: 2bdb9fdc-9ddf-403e-8b92-02763d434487
 ms.openlocfilehash: 6961d99d1a0d7d0ea063aee5544a1009af2547c7
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59031267"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62397412"
 ---
 # <a name="compiler-error-c3531"></a>Derleyici Hatası C3531
 

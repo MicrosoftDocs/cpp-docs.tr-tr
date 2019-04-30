@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C4407
 ms.assetid: 32bc2c21-363a-4bb8-b486-725faeaededc
 ms.openlocfilehash: 5142e3800f3ad716166a27e3b0407a40999b5746
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50436835"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62408413"
 ---
 # <a name="compiler-warning-level-1-c4407"></a>Derleyici Uyarısı (düzey 1) C4407
 

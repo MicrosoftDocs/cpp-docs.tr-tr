@@ -7,11 +7,11 @@ helpviewer_keywords:
 - unary_negate class
 ms.assetid: e3b86eec-3205-49b9-ab83-f55225af4e0c
 ms.openlocfilehash: 96d70a24b87a84275f17813e76473a82fbff90da
-ms.sourcegitcommit: 4299caac2dc9e806c74ac833d856a3838b0f52a1
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "57006714"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62399388"
 ---
 # <a name="unarynegate-class"></a>unary_negate Sınıfı
 

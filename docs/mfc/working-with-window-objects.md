@@ -6,11 +6,11 @@ helpviewer_keywords:
 - window objects [MFC], working with
 ms.assetid: f73aa254-90e3-46a9-8e9b-d78b7054a331
 ms.openlocfilehash: c696d880ffa69b0a0399c5282621546c5783ebe4
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57265645"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62399492"
 ---
 # <a name="working-with-window-objects"></a>Pencere Nesneleriyle Çalışma
 

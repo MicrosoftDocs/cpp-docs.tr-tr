@@ -3,12 +3,12 @@ title: Visual Studio'da uzak Linux bilgisayarınıza bağlanma
 description: Visual Studio C++ projesi içinde uzak Linux makineden bağlanma.
 ms.date: 07/20/2018
 ms.assetid: 5eeaa683-4e63-4c46-99ef-2d5f294040d4
-ms.openlocfilehash: ce6a3c02846586dbc46b0c9bc0db0d579878c814
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e20714308448349ee5dac8951a7b5d7bfd2f29ef
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50575249"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62389764"
 ---
 # <a name="connect-to-your-remote-linux-computer"></a>Uzak Linux bilgisayarınıza bağlanma
 

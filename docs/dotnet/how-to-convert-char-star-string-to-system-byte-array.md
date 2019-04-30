@@ -9,11 +9,11 @@ helpviewer_keywords:
 - examples [C++], arrays
 ms.assetid: de9bc4eb-773c-4796-a496-9b90ca986503
 ms.openlocfilehash: 9ef84e31ee3db703857e3b28ef70dda8d5d01229
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57741716"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62387669"
 ---
 # <a name="how-to-convert-char--string-to-systembyte-array"></a>Nasıl yapılır: Karakter dönüştürme \* dizesini System::Byte dizisine
 

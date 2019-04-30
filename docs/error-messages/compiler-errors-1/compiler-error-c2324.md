@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2324
 ms.assetid: 215f0544-85b0-452d-825f-17a388b6a61c
 ms.openlocfilehash: 694d1b2c9df4830e721af51517044e9734fcf415
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50449835"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62400389"
 ---
 # <a name="compiler-error-c2324"></a>Derleyici Hatası C2324
 

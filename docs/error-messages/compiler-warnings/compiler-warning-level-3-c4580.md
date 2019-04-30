@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C4580
 ms.assetid: fef6e8e0-0d6a-44fa-b22a-2fe7ba2ef379
 ms.openlocfilehash: bd2ecff5adc6538f75c61772b785acbfc89092ae
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59776866"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62401806"
 ---
 # <a name="compiler-warning-level-3-c4580"></a>Derleyici Uyarısı (Düzey 3) C4580
 

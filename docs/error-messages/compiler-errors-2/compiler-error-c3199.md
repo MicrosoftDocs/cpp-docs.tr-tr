@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3199
 ms.assetid: e7a478d3-115a-40a3-991b-c7454fd2e28e
 ms.openlocfilehash: 934e980149ad893e6799b0ab119a148fc5652fdc
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50578966"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62402794"
 ---
 # <a name="compiler-error-c3199"></a>Derleyici Hatası C3199
 

@@ -13,11 +13,11 @@ helpviewer_keywords:
 - inline functions [C++], class members
 ms.assetid: 355f120c-2847-4608-ac04-8dda18ffe10c
 ms.openlocfilehash: 55cf598877c2447e0f80e783b53b290699042b8b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50607824"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62400597"
 ---
 # <a name="inline-functions-c"></a>Satır İçi İşlevler (C++)
 
@@ -25,7 +25,7 @@ Sınıf bildirimi gövdesinde tanımlanan bir işlev, satır içi işlevdir.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki sınıf bildiriminde, `Account` oluşturucusu bir satır içi işlevdir. Üye işlevleri `GetBalance`, `Deposit`, ve `Withdraw` olarak belirtilmeyen **satır içi** ancak satır içi işlevleri uygulanabilir.
+Aşağıdaki sınıf bildiriminde `Account` satır içi işlev bir oluşturucudur. Üye işlevleri `GetBalance`, `Deposit`, ve `Withdraw` olarak belirtilmeyen **satır içi** ancak satır içi işlevleri uygulanabilir.
 
 ```cpp
 // Inline_Member_Functions.cpp
@@ -78,7 +78,7 @@ Satır içi işlevleri kullanmak, işlev çağrıları ile ilgili ek yükü orta
 
 Derleyici, satır içi genişleme seçeneklerine ve anahtar sözcüklerine öneri olarak davranır. İşlevlerin satır içi olacağına dair bir garanti yoktur. Belirli bir işlevi satır içi derleyiciye bile zorlayamaz **__forceinline** anahtar sözcüğü. İle derlerken **/CLR**, derleyici işleve uygulanmış güvenlik öznitelikleri varsa bu satır bir işlev olur.
 
-**Satır içi** anahtar sözcüğü yalnızca C++'da kullanılabilir. **__İnline** ve **__forceinline** anahtar sözcükleri hem C'de hem de C++'ta kullanılabilir. Önceki sürümlerle uyumluluk için **eşanlamlıdır** ve **_forceinline** için eş anlamlı sözcükler olan **__inline**, ve **__forceinline** sürece derleyici seçeneği [/Za \(dil uzantılarını devre dışı bırak)](../build/reference/za-ze-disable-language-extensions.md) belirtilir.
+**Satır içi** anahtar sözcüğü yalnızca C++'da kullanılabilir. **__İnline** ve **__forceinline** anahtar sözcükleri hem C'de kullanılabilir ve C++. Önceki sürümlerle uyumluluk için **eşanlamlıdır** ve **_forceinline** için eş anlamlı sözcükler olan **__inline**, ve **__forceinline** sürece derleyici seçeneği [/Za \(dil uzantılarını devre dışı bırak)](../build/reference/za-ze-disable-language-extensions.md) belirtilir.
 
 **Satır içi** anahtar sözcüğü derleyiciye satır içi genişletmelerin tercih edildiğini bildirir. Ancak, derleyici işlevin ayrı bir örneğini oluşturabilir (örneklediğinizde) ve satır içi kod eklemek yerine standart arama bağlantıları oluşturur. Buna izin veren iki durum vardır:
 

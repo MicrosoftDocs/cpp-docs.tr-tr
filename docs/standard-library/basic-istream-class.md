@@ -35,11 +35,11 @@ helpviewer_keywords:
 - std::basic_istream [C++], unget
 ms.assetid: c7c27111-de6d-42b4-95a3-a7e65259bf17
 ms.openlocfilehash: 5e7f6ae0728a7d28af1992cf4186d533f1a97330
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51522512"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62414171"
 ---
 # <a name="basicistream-class"></a>basic_istream Sınıfı
 
@@ -505,7 +505,7 @@ basic_istream& operator>>(
 basic_istream& operator>>(bool& val);
 ```
 
-bir alana ayıklar ve onu çağırarak bir Boolean değerine dönüştürür [use_facet](../standard-library/basic-filebuf-class.md#open)  <  `num_get` \< **Elem**, **InIt**> ( [getloc](../standard-library/ios-base-class.md#getloc)). [Alma](../standard-library/ios-base-class.md#getloc)( **InIt**( [rdbuf](../standard-library/basic-ios-class.md#rdbuf)), `Init`(0)  **\*bu**, `getloc`, `val`). Burada, **InIt** olarak tanımlanan [istreambuf_iterator](../standard-library/istreambuf-iterator-class.md) \< **Elem**, **Tr**>. İşlev döndürür  **\*bu**.
+bir alana ayıklar ve onu çağırarak bir Boolean değerine dönüştürür [use_facet](../standard-library/basic-filebuf-class.md#open)  <  `num_get` \< **Elem**, **InIt**> ( [getloc](../standard-library/ios-base-class.md#getloc)). [get](../standard-library/ios-base-class.md#getloc)( **InIt**( [rdbuf](../standard-library/basic-ios-class.md#rdbuf)), `Init`(0), **\*this**, `getloc`, `val`). Burada, **InIt** olarak tanımlanan [istreambuf_iterator](../standard-library/istreambuf-iterator-class.md) \< **Elem**, **Tr**>. İşlev döndürür  **\*bu**.
 
 İşlevler:
 
@@ -521,7 +521,7 @@ basic_istream& operator>>(unsigned long long& val);
 basic_istream& operator>>(void *& val);
 ```
 
-Her bir alanı ayıklayın ve çağırarak bir sayısal değere Dönüştür `use_facet` <  `num_get` \< **Elem**, **InIt**> ( `getloc`). [Alma](#get)( **InIt**( `rdbuf`), `Init`(0)  **\*bu**, `getloc`, `val`). Burada, **InIt** olarak tanımlanan `istreambuf_iterator` \< **Elem**, **Tr**>, ve `val` türünde **uzun**, **işaretsiz uzun**, veya **void** <strong>\*</strong> gerektiğinde.
+Her bir alanı ayıklayın ve çağırarak bir sayısal değere Dönüştür `use_facet` <  `num_get` \< **Elem**, **InIt**> ( `getloc`). [get](#get)( **InIt**( `rdbuf`), `Init`(0), **\*this**, `getloc`, `val`). Burada, **InIt** olarak tanımlanan `istreambuf_iterator` \< **Elem**, **Tr**>, ve `val` türünde **uzun**, **işaretsiz uzun**, veya **void** <strong>\*</strong> gerektiğinde.
 
 Dönüştürülen değer türü olarak temsil edilemez `val`, işlev çağrıları [setstate](../standard-library/basic-ios-class.md#setstate)(`failbit`). Herhangi bir durumda, işlev döndürür  **\*bu**.
 
@@ -533,7 +533,7 @@ basic_istream& operator>>(double& val);
 basic_istream& operator>>(long double& val);
 ```
 
-Her bir alanı ayıklayın ve çağırarak bir sayısal değere Dönüştür `use_facet` <  `num_get` \< **Elem**, **InIt**> ( `getloc`). **Alma**( **InIt**( `rdbuf`), `Init`(0)  **\*bu**, `getloc`, `val`). Burada, `InIt` olarak tanımlanan `istreambuf_iterator` \< **Elem**, **Tr**>, ve `val` türünde **çift** veya **uzun çift** gerektiğinde.
+Her bir alanı ayıklayın ve çağırarak bir sayısal değere Dönüştür `use_facet` <  `num_get` \< **Elem**, **InIt**> ( `getloc`). **get**( **InIt**( `rdbuf`), `Init`(0), **\*this**, `getloc`, `val`). Burada, `InIt` olarak tanımlanan `istreambuf_iterator` \< **Elem**, **Tr**>, ve `val` türünde **çift** veya **uzun çift** gerektiğinde.
 
 Dönüştürülen değer türü olarak temsil edilemez `val`, işlev çağrıları `setstate`( **failbit**). Her durumda döndürür  **\*bu**.
 

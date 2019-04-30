@@ -7,11 +7,11 @@ helpviewer_keywords:
 - MFC, hierarchy
 ms.assetid: 1f109428-4b84-4f7c-90a9-e71fe071311e
 ms.openlocfilehash: 8f6ee44011535dc6051b03d1edc35633ed11bbe2
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57268596"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62396523"
 ---
 # <a name="hierarchy-chart-categories"></a>Hiyerarşi Grafiği Kategorileri
 

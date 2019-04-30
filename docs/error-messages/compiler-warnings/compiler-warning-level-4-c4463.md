@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C4463
 ms.assetid: a07ae70c-db4e-472b-8b58-9137d9997323
 ms.openlocfilehash: e125a532f87533958ec43ed5580665ad4108856b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50474834"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62400805"
 ---
 # <a name="compiler-warning-level-4-c4463"></a>Derleyici Uyarısı (düzey 4) C4463
 

@@ -7,11 +7,11 @@ helpviewer_keywords:
 - reinterpret_cast keyword [C++]
 ms.assetid: eb3283c7-7f88-467e-affd-407d37b46d6c
 ms.openlocfilehash: 421a1fdce6834f800cd33a55d75c9dc4f88ffc93
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50463105"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62403431"
 ---
 # <a name="reinterpretcast-operator"></a>reinterpret_cast İşleci
 
