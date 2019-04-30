@@ -49,11 +49,11 @@ f1_keywords:
 - atomic/std::atomic_uint_least64_t
 ms.assetid: e79a6b9f-52ff-48da-9554-654c4e1999f6
 ms.openlocfilehash: e2146c7424d4903523372ad54b0cd2eece525cbe
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50600492"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62376607"
 ---
 # <a name="ltatomicgt"></a>&lt;atomic&gt;
 
@@ -78,7 +78,7 @@ Atomik işlem iki içeren yardımcı olan anahtar özelliklerini mutex kilitleri
 
 Bazı platformlarda, bunu kullanmadan bazı türleri atomik işlemlerin verimli bir şekilde uygulanması mümkün olmayabilir `mutex` kilitler. Atomik tür *kilitsizdir* hiçbir bu türdeki atomik işlemler kilit kullanmıyorsa.
 
-**C ++ 11**: sinyal işleyiciler içinde bir nesne üzerinde yapılan atomik işlemlerin gerçekleştirebileceğiniz `obj` varsa `obj.is_lock_free()` veya `atomic_is_lock_free(x)` doğrudur.
+**C ++ 11**: Sinyal işleyiciler içinde bir nesne üzerinde yapılan atomik işlemlerin gerçekleştirebileceğiniz `obj` varsa `obj.is_lock_free()` veya `atomic_is_lock_free(x)` doğrudur.
 
 Sınıf [atomic_flag](../standard-library/atomic-flag-structure.md) tutar en az bir atomik türü sağlayan bir **bool** bayrağı. Kendi işlemlerdir her zaman kilitsizdir.
 
@@ -161,7 +161,7 @@ TypeDef adları mevcut atomik şablon uzmanlıkları için bazı üst bilgisinde
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[memory_order sabit listesi](../standard-library/atomic-enums.md#memory_order_enum)|Bellek konumlarında eşitleme işlemleri için simgesel adlar sağlar. Bu işlemlerin nasıl atamaları bir iş parçacığındaki başka bir atamada görülür hale etkiler.|
+|[memory_order Enum](../standard-library/atomic-enums.md#memory_order_enum)|Bellek konumlarında eşitleme işlemleri için simgesel adlar sağlar. Bu işlemlerin nasıl atamaları bir iş parçacığındaki başka bir atamada görülür hale etkiler.|
 
 ## <a name="functions"></a>İşlevler
 

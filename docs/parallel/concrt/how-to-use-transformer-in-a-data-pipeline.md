@@ -7,11 +7,11 @@ helpviewer_keywords:
 - using transformer in data pipelines [Concurrency Runtime]
 ms.assetid: ca49cb3f-4dab-4b09-a9c9-d3a109ae4c29
 ms.openlocfilehash: 59c4854eea985b3c91fad6e7dc6c47ca9b07d333
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57291477"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62375593"
 ---
 # <a name="how-to-use-transformer-in-a-data-pipeline"></a>Nasıl yapılır: Veri ardışık düzeninde transformer kullanma
 

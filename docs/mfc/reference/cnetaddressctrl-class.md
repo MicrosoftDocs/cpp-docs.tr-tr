@@ -21,11 +21,11 @@ helpviewer_keywords:
 - CNetAddressCtrl [MFC], SetAllowType
 ms.assetid: cb4c6aca-3f49-4b52-b76c-65f57096155b
 ms.openlocfilehash: ec4d7aa6f2a1061e632b81a27a0233cf5fdd1c63
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57423566"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62373818"
 ---
 # <a name="cnetaddressctrl-class"></a>CNetAddressCtrl sınıfı
 
@@ -64,7 +64,7 @@ Ağ adresi denetimi, kullanıcının girdiği adresinin biçimi doğru olduğunu
 
 Aşağıdaki şekil, bir ağ adresi denetimi içeren bir iletişim kutusu gösterir. Metin kutusunu (1) ağ adresi denetimi için bir geçersiz ağ adresi içeriyor. Ağ adresi geçersiz (2) bilgi ipucu iletisi görüntülenir.
 
-![Bir ağ adresi denetimi ve Bilgi İpucu ile iletişim. ] (../../mfc/reference/media/cnetaddctrl.png "İletişim bir ağ adresi denetimi ve bilgi ipucu.")
+![Bir ağ adresi denetimi ve Bilgi İpucu ile iletişim. ](../../mfc/reference/media/cnetaddctrl.png "İletişim bir ağ adresi denetimi ve bilgi ipucu.")
 
 ## <a name="example"></a>Örnek
 

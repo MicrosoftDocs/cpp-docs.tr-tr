@@ -49,11 +49,11 @@ helpviewer_keywords:
 - CPagerCtrl [MFC], SetScrollPos
 ms.assetid: 65ac58dd-4f5e-4b7e-b15c-e0d435a7e884
 ms.openlocfilehash: 648bc17f0f130b831aa619b90ed13ba6be35b4d4
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57417617"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62373251"
 ---
 # <a name="cpagerctrl-class"></a>CPagerCtrl sınıfı
 

@@ -9,11 +9,11 @@ helpviewer_keywords:
 - generic lists
 ms.assetid: 4139a09c-4338-4f42-9eea-51336120b43c
 ms.openlocfilehash: 5b88b0950b3b46f9738bd26080883c00d46f8555
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57266243"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62372445"
 ---
 # <a name="cptrlist-class"></a>CPtrList sınıfı
 

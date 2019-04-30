@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2881
 ms.assetid: b49c63c2-b064-4d4b-a75e-ddd2af947522
 ms.openlocfilehash: 82a4fbe94bc7250244d57f549e52037d6a54c784
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50610528"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62378922"
 ---
 # <a name="compiler-error-c2881"></a>Derleyici Hatası C2881
 

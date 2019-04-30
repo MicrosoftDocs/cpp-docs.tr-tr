@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3492
 ms.assetid: b1dc6342-9133-4b1f-a9c3-e8c65d20d121
 ms.openlocfilehash: facd8c78e775945924d77b09f9dc754bdc301ddd
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59038825"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62381130"
 ---
 # <a name="compiler-error-c3492"></a>Derleyici Hatası C3492
 

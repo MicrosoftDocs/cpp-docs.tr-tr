@@ -131,11 +131,11 @@ helpviewer_keywords:
 - CRecordset [MFC], m_strSort
 ms.assetid: dd89a21d-ef39-4aab-891b-1e373d67c855
 ms.openlocfilehash: efb833a8d4cc0b801f75951bc648d6b83df5bae8
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57305191"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62372211"
 ---
 # <a name="crecordset-class"></a>CRecordset sınıfı
 
@@ -219,9 +219,9 @@ class CRecordset : public CObject
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[CRecordset::m_hstmt](#m_hstmt)|Kayıt kümesi için ODBC deyim tanıtıcı içerir. Türü `HSTMT`|
-|[CRecordset::m_nFields](#m_nfields)|Alan veri üyeleri kümesinde sayısını içerir. Türü `UINT`|
-|[CRecordset::m_nParams](#m_nparams)|Kayıt kümesi parametre veri üyeleri sayısını içerir. Türü `UINT`|
+|[CRecordset::m_hstmt](#m_hstmt)|Kayıt kümesi için ODBC deyim tanıtıcı içerir. `HSTMT`yazın.|
+|[CRecordset::m_nFields](#m_nfields)|Alan veri üyeleri kümesinde sayısını içerir. `UINT`yazın.|
+|[CRecordset::m_nParams](#m_nparams)|Kayıt kümesi parametre veri üyeleri sayısını içerir. `UINT`yazın.|
 |[CRecordset::m_pDatabase](#m_pdatabase)|Bir işaretçi içeren `CDatabase` üzerinden kayıt bir veri kaynağına bağlıysa nesne.|
 |[CRecordset::m_strFilter](#m_strfilter)|İçeren bir `CString` yapılandırılmış sorgu dili (SQL) belirten `WHERE` yan tümcesi. Belirli ölçütleri karşılayan kayıtları seçmek için filtre olarak kullanılır.|
 |[CRecordset::m_strSort](#m_strsort)|İçeren bir `CString` SQL belirten `ORDER BY` yan tümcesi. Kayıtları nasıl sıralanacağını denetlemek için kullanılır.|

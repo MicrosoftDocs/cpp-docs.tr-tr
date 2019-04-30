@@ -1,15 +1,15 @@
 ---
-title: Arabirimler (C + +/ CX)
+title: Arabirimler (C++/CX)
 ms.date: 01/22/2017
 ms.assetid: 11034314-d54a-426d-923b-5ab7a6b9f8ce
 ms.openlocfilehash: 04aaf25817cade47e89f0a06c423b68538d947b4
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57740745"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62375788"
 ---
-# <a name="interfaces-ccx"></a>Arabirimler (C + +/ CX)
+# <a name="interfaces-ccx"></a>Arabirimler (C++/CX)
 
 Başvuru sınıfı en fazla bir somut taban sınıfından devralabilir olsa da, herhangi bir sayıda arabirim sınıflarından aşımınızı uygulayabilirsiniz. Arabirim sınıfı (veya arabirimi struct) kendisi devralır (gerektiren birden çok veya) arabirim sınıfları, üye işlevleri aşırı yüklenebilir ve Tür parametrelerine sahip olabilir.
 
@@ -63,7 +63,7 @@ Bir başvuru sınıfının birden çok arabirimi uygulayan ve o arabirimlerin ad
 
 ## <a name="generic-interfaces"></a>Genel arabirimler
 
-C + +/ CX, `generic` anahtar sözcüğü, bir Windows parametreli çalışma zamanı türü göstermek için kullanılır. Bir parametreli tür meta verilerinde yayılır ve tür parametreleri destekleyen herhangi bir dilde yazılmış kod tarafından tüketilebilir. Windows çalışma zamanı bazı genel arabirimler tanımlar — Örneğin, [Windows::Foundation::Collections::IVector\<T >](Windows::Foundation::Collections::IVector)— ancak bunu kullanıcı tanımlı genel genel arabirimler oluşturma C + desteklemiyor +/ CX. Ancak, özel genel arabirimleri oluşturabilirsiniz.
+İçinde C++/CX, `generic` anahtar sözcüğü, bir Windows parametreli çalışma zamanı türü göstermek için kullanılır. Bir parametreli tür meta verilerinde yayılır ve tür parametreleri destekleyen herhangi bir dilde yazılmış kod tarafından tüketilebilir. Windows çalışma zamanı bazı genel arabirimler tanımlar — Örneğin, [Windows::Foundation::Collections::IVector\<T >](Windows::Foundation::Collections::IVector)— ancak bunu kullanıcı tanımlı genel genel arabirimler oluşturma C + desteklemiyor +/ CX. Ancak, özel genel arabirimleri oluşturabilirsiniz.
 
 Windows çalışma zamanı türleri bir genel arabirim yazmak için nasıl kullanılabileceğini aşağıda verilmiştir:
 
@@ -99,4 +99,4 @@ Windows çalışma zamanı türleri bir genel arabirim yazmak için nasıl kulla
 
 [Tür Sistemi](../cppcx/type-system-c-cx.md)<br/>
 [Visual C++ Dil Başvurusu](../cppcx/visual-c-language-reference-c-cx.md)<br/>
-[Ad alanları başvurusu](../cppcx/namespaces-reference-c-cx.md)
+[Ad Alanları Başvurusu](../cppcx/namespaces-reference-c-cx.md)

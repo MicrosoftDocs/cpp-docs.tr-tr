@@ -6,11 +6,11 @@ helpviewer_keywords:
 - agent class, example
 ms.assetid: 730f42ce-6d58-4753-b948-fd9c9ef2ce6c
 ms.openlocfilehash: 1d55c9879a3dd90bb4a40b61a3bf958dbe960bc3
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
-ms.translationtype: MT
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57290098"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62378069"
 ---
 # <a name="walkthrough-creating-an-agent-based-application"></a>İzlenecek yol: Aracı tabanlı uygulama oluşturma
 

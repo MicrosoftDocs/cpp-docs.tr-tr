@@ -9,11 +9,11 @@ helpviewer_keywords:
 - pragmas, hdrstop
 ms.assetid: 5ea8370a-10d1-4538-ade6-4c841185da0e
 ms.openlocfilehash: 1590b5916a8d9c00b6e988bacc7cd857c29d6775
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59035221"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62384094"
 ---
 # <a name="hdrstop"></a>hdrstop
 Ön derleme dosya adları ve derleme durumunun kaydedildiği konum üzerinde ek denetim olanağı verir.

@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3644
 ms.assetid: 2e3f6c41-3ec5-4a01-82bc-f11b61ebe68e
 ms.openlocfilehash: 6d147d6a5955208bbca1ccf9a2f2bcfe3f485b4f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50428034"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62385634"
 ---
 # <a name="compiler-error-c3644"></a>Derleyici Hatası C3644
 

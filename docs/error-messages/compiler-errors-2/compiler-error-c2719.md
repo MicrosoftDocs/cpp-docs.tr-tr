@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2719
 ms.assetid: ea6236d3-8286-45cc-9478-c84ad3dd3c8e
 ms.openlocfilehash: d635601fbf8b36218fb47c09444f3f5d023c823e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50653121"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62383093"
 ---
 # <a name="compiler-error-c2719"></a>Derleyici Hatası C2719
 

@@ -7,11 +7,11 @@ helpviewer_keywords:
 - windows [C++], ATL
 ms.assetid: b3b9cc8e-4287-486b-b080-38852bc2943a
 ms.openlocfilehash: 3a1843bfedc30e7d3b47c2916af08c8b53aaa965
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57268878"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "64342077"
 ---
 # <a name="using-a-window"></a>Pencere kullanma
 

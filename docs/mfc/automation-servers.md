@@ -8,11 +8,11 @@ helpviewer_keywords:
 - servers, Automation
 ms.assetid: 523fd155-51ce-4f91-b986-b74bdbdd7d92
 ms.openlocfilehash: 39e870db2f5476a630a8ed3bc68944dbb164d469
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57305139"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62374174"
 ---
 # <a name="automation-servers"></a>Otomasyon Sunucuları
 

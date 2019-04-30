@@ -14,11 +14,11 @@ helpviewer_keywords:
 - stdext::checked_array_iterator [C++], base
 ms.assetid: 7f07185e-d588-4ae3-9c4f-84ec4aa25a28
 ms.openlocfilehash: 688b93902da5b4492812b4715a248db9561ec258
-ms.sourcegitcommit: 309dc532f13242854b47759cef846de59bb807f1
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58565720"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62379200"
 ---
 # <a name="checkedarrayiterator-class"></a>checked_array_iterator Sınıfı
 

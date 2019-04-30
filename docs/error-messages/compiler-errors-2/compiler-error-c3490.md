@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3490
 ms.assetid: 7638559a-fd06-4527-a9c1-0c8ae68b3123
 ms.openlocfilehash: 1e6c3c502290e88feec89877de7ad791084401cf
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59023262"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62381078"
 ---
 # <a name="compiler-error-c3490"></a>Derleyici Hatası C3490
 

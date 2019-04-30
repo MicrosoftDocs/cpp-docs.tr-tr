@@ -7,11 +7,11 @@ helpviewer_keywords:
 - PG1039
 ms.assetid: a67dfd66-b610-4d78-9658-2bcf7a506b9f
 ms.openlocfilehash: 5b23d3fe48b80ad63aee1ea31c5d767b90dc85ff
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57810152"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "64344370"
 ---
 # <a name="profile-guided-optimization-warning-pg1039"></a>Profil Temelli İyileştirme Uyarısı PG1039
 

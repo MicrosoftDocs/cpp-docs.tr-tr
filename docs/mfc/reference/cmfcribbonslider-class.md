@@ -31,11 +31,11 @@ helpviewer_keywords:
 - CMFCRibbonSlider [MFC], SetZoomIncrement
 ms.assetid: 9351ac34-f234-4e42-91e2-763f1989c8ff
 ms.openlocfilehash: 85c646e2fa524268e4559b587f90c5e06971b765
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57300335"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62374083"
 ---
 # <a name="cmfcribbonslider-class"></a>CMFCRibbonSlider sınıfı
 

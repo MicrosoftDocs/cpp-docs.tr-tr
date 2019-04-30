@@ -1,15 +1,15 @@
 ---
-title: Özellikler (C + +/ CX)
+title: Özellikler (C++/CX)
 ms.date: 01/22/2017
 ms.assetid: 64c7bc56-3191-4cd5-bdf4-476d07d285d5
 ms.openlocfilehash: 8303952beefbbac13db14e148c6441c29a46b3d0
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57742808"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62375229"
 ---
-# <a name="properties-ccx"></a>Özellikler (C + +/ CX)
+# <a name="properties-ccx"></a>Özellikler (C++/CX)
 
 Windows çalışma zamanı türleri genel veriler özellik olarak kullanıma sunar. İstemci kodu özellik genel datamember gibi erişir. Dahili olarak, özellik get erişimcisi yöntemi, bir set erişeni yöntemi veya her ikisini de içeren bir blok olarak uygulanır. Erişimci yöntemlerini kullanarak önce ek eylemler gerçekleştirebilirsiniz veya değer aldıktan sonra Örneğin, bir olay harekete veya doğrulama denetimleri gerçekleştirin.
 
@@ -39,4 +39,4 @@ Aşağıdaki kod örneği, bildirme ve bir özelliğe erişmek gösterilmektedir
 
 [Tür Sistemi](../cppcx/type-system-c-cx.md)<br/>
 [Visual C++ Dil Başvurusu](../cppcx/visual-c-language-reference-c-cx.md)<br/>
-[Ad alanları başvurusu](../cppcx/namespaces-reference-c-cx.md)
+[Ad Alanları Başvurusu](../cppcx/namespaces-reference-c-cx.md)

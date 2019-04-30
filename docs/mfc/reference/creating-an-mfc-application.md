@@ -7,11 +7,11 @@ helpviewer_keywords:
 - MFC applications
 ms.assetid: b8b8aa08-9c49-404c-8078-b42079ac18f0
 ms.openlocfilehash: 251275fd866ce7c9d697787c35c6207ef77862db
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57818602"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62372315"
 ---
 # <a name="creating-an-mfc-application"></a>MFC Uygulaması Oluşturma
 
@@ -51,6 +51,6 @@ Projeniz oluşturulduktan sonra oluşturulan dosyalar görüntüleyebileceğiniz
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Kod sihirbazlarıyla işlevsellik ekleme](../../ide/adding-functionality-with-code-wizards-cpp.md)<br/>
+[Kod Sihirbazlarıyla İşlevsellik Ekleme](../../ide/adding-functionality-with-code-wizards-cpp.md)<br/>
 [Özellik Sayfaları](../../build/reference/property-pages-visual-cpp.md)
 

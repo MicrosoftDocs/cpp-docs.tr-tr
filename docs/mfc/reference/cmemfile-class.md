@@ -23,11 +23,11 @@ helpviewer_keywords:
 - CMemFile [MFC], Realloc
 ms.assetid: 20e86515-e465-4f73-b2ea-e49789d63165
 ms.openlocfilehash: a57f4e245ca1e93ec0edd454a7f407aeda5beca4
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57304953"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "64341683"
 ---
 # <a name="cmemfile-class"></a>CMemFile sınıfı
 

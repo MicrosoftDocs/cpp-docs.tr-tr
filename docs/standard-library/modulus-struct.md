@@ -8,11 +8,11 @@ helpviewer_keywords:
 - modulus struct
 ms.assetid: 86d342f7-b7b1-46a4-b0bb-6b7ae827369b
 ms.openlocfilehash: 5b0488fbd6d943281de9eafdd33accf0375be17d
-ms.sourcegitcommit: 4299caac2dc9e806c74ac833d856a3838b0f52a1
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "57006337"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62371639"
 ---
 # <a name="modulus-struct"></a>modulus Yapısı
 

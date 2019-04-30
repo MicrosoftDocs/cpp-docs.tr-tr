@@ -10,11 +10,11 @@ helpviewer_keywords:
 - context-sensitive Help [MFC]
 ms.assetid: 5f34eea8-2bf8-4479-95c7-45e8f443db8f
 ms.openlocfilehash: 4b767ac8899217761cfcca8e24da841a694ead1c
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57299207"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62378171"
 ---
 # <a name="orchestrating-other-window-actions"></a>Diğer Pencere İşlemlerini Yönetme
 

@@ -7,11 +7,11 @@ helpviewer_keywords:
 - allocators header
 ms.assetid: 4393a607-4df8-4278-bbb2-c8ec52e60b83
 ms.openlocfilehash: 064afd4467a2aedebe3a9892fc80b14597c8552f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50544085"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62375411"
 ---
 # <a name="ltallocatorsgt"></a>&lt;Ayırıcılar&gt;
 
@@ -31,7 +31,7 @@ Allocator şablonlar, özelleştirilmiş veya ek bellek yönetimi stratejileri s
 
 C++ Standart Kitaplığı (std::list, std::set, std::multiset, std::map ve std::multimap) düğüm tabanlı kapsayıcılarda öğeleri tek tek düğümler depolayın. Belirli bir kapsayıcı türü için tüm düğümlerin aynı boyutta olduğundan, genel amaçlı bellek yöneticisi esnekliğini gerekli değildir. Her bellek bloğu boyutu, derleme zamanında bilinen çünkü çok daha kolay ve hızlı bellek yöneticisi olabilir.
 
-Düğüm tabanlı (C++ Standart Kitaplığı kapsayıcıları std::vector std::deque ve std::basic_string gibi) değil kapsayıcılarla kullanıldığında alllocator şablonları düzgün çalışacaktır ancak üzerinde herhangi bir performans geliştirmesi sağlayın olasılığı değildir Varsayılan ayırıcı.
+Düğüm tabanlı olmayan kapsayıcılar ile kullanıldığında (gibi C++ standart kitaplığı kapsayıcıları std::vector std::deque ve std::basic_string), alllocator şablonları düzgün çalışır, ancak üzerinden herhangi bir performans geliştirmesi sağlayın olasılığı değildir Varsayılan ayırıcı.
 
 Bir ayırıcıyı depolama ayırmayı ve nesneleri ve belirlenen türünde nesne dizileri için boşaltmayı yöneten bir nesneyi tanımlayan bir şablon sınıfıdır. Ayırıcı nesneleri, C++ Standart Kitaplığı'nda birkaç kapsayıcı Şablon sınıfı tarafından kullanılır.
 

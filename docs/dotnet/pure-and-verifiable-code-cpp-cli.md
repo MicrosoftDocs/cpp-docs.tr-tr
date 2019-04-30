@@ -18,13 +18,13 @@ helpviewer_keywords:
 - assemblies [C++], pure code
 ms.assetid: 9050e110-fa11-4356-b56c-665187ff871c
 ms.openlocfilehash: 66f3b5a33791d20297cde6e6223ba65189a99682
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57743835"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62384720"
 ---
-# <a name="pure-and-verifiable-code-ccli"></a>Saf ve doğrulanabilen kod (C + +/ CLI)
+# <a name="pure-and-verifiable-code-ccli"></a>Saf ve doğrulanabilen kod (C++/CLI)
 
 .NET programlama için Visual C++ Visual Studio 2017'de karışık derlemeler oluşturma kullanarak destekler [/CLR (ortak dil çalışma zamanı derlemesi)](../build/reference/clr-common-language-runtime-compilation.md) derleyici seçeneği. **/CLR: pure** ve **CLR: safe** seçenekleri Visual Studio 2015'te kullanım dışı ve Visual Studio 2017'de desteklenmiyor. Kodunuzu güvenli veya doğrulanabilir olması gerekir ve ardından ona bağlantı öneririz, C#.
 

@@ -8,11 +8,11 @@ helpviewer_keywords:
 - __declspec keyword [C++], noinline
 ms.assetid: f259d55b-dec7-4bde-8cf9-14521e4fdc42
 ms.openlocfilehash: e155726ad1f2f3f6f0501d3aebf7fa14e620d6bd
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57742482"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62377408"
 ---
 # <a name="noinline"></a>noinline
 

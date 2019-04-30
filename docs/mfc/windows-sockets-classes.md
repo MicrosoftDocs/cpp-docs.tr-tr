@@ -8,11 +8,11 @@ helpviewer_keywords:
 - Windows Sockets [MFC], classes
 ms.assetid: 58b9ab8d-9e44-4db3-8265-e04e713d2e9a
 ms.openlocfilehash: 4abdd8f8fbfc115b5014ffd0b3a37df357852b16
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57303826"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62371808"
 ---
 # <a name="windows-sockets-classes"></a>Windows Yuvaları: Sınıflar
 

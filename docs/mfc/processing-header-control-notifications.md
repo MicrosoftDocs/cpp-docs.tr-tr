@@ -9,11 +9,11 @@ helpviewer_keywords:
 - header control notifications
 ms.assetid: e6c6af7c-d458-4d33-85aa-48014ccde5f6
 ms.openlocfilehash: 3c5d147741123f97a53b18a854db9204738d0a2f
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57287693"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "64339612"
 ---
 # <a name="processing-header-control-notifications"></a>Üstbilgi Denetimi Bildirimlerini İşleme
 

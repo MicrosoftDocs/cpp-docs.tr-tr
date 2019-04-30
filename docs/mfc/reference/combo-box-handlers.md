@@ -28,11 +28,11 @@ helpviewer_keywords:
 - ON_CBN_SELCHANGE
 ms.assetid: 7f092412-01b7-4242-95ec-41ba506b9d71
 ms.openlocfilehash: ed83bcf565ec420d159c73ddfd82827aac88693f
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57259444"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62373264"
 ---
 # <a name="combo-box-handlers"></a>Birleşik Giriş Kutusu İşleyicileri
 

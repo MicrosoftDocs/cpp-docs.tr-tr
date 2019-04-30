@@ -14,11 +14,11 @@ helpviewer_keywords:
 - == operator, with specific standard C++ objects
 ms.assetid: d3d8754e-5157-4b8b-bf9c-da41856f5eed
 ms.openlocfilehash: c49c58bdc168385d421cf942735b7473de70925f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50613505"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62371535"
 ---
 # <a name="operator-ltsample-containergt"></a>işleç == (&lt;örnek kapsayıcı&gt;)
 

@@ -7,11 +7,11 @@ helpviewer_keywords:
 - tool tips [MFC], creating
 ms.assetid: b015e9f4-ddfb-49a4-a5a6-fa2d45e4d328
 ms.openlocfilehash: 2ba935f52f24f62dded3b89df1563454cf7e0335
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57276721"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62383923"
 ---
 # <a name="methods-of-creating-tool-tips"></a>Araç İpuçları Oluşturma Yöntemleri
 

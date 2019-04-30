@@ -9,11 +9,11 @@ helpviewer_keywords:
 - C++/CX, partial
 ms.assetid: 43adf1f5-10c5-44aa-a66f-7507e2bdabf8
 ms.openlocfilehash: eb9b3907008147cb21f04aec5f42e4896fa35b3c
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59029952"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62374228"
 ---
 # <a name="partial--ccli-and-ccx"></a>Kısmi (C++/CLI ve C++/CX)
 

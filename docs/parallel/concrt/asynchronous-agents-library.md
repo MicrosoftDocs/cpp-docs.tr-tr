@@ -6,11 +6,11 @@ helpviewer_keywords:
 - Asynchronous Agents Library
 ms.assetid: d2a72a31-8ba6-4220-ad7a-e403a6acaa42
 ms.openlocfilehash: 39ae785b602b3928f0c32f9fc599527dab5558f5
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57268050"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62371907"
 ---
 # <a name="asynchronous-agents-library"></a>Zaman Uyumsuz Aracılar Kitaplığı
 

@@ -10,11 +10,11 @@ helpviewer_keywords:
 - serialization [C++], about serialization
 ms.assetid: 869010ca-74e1-4989-b409-4643cdb94084
 ms.openlocfilehash: 794a71ae9a146b691ba6a4377a7fdf2c3ddd3501
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57741396"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62384679"
 ---
 # <a name="serialization-ccli"></a>Seri Hale Getirme (C++/CLI)
 

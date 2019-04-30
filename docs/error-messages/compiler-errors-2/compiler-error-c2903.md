@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2903
 ms.assetid: bf6b223f-4921-48c7-82b9-ff318b42c801
 ms.openlocfilehash: 7002e45770c994d5cd10e1cd632561be57246086
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50442828"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62378537"
 ---
 # <a name="compiler-error-c2903"></a>Derleyici Hatası C2903
 

@@ -11,11 +11,11 @@ helpviewer_keywords:
 - command line [C++], compilers
 ms.assetid: 7ca9daed-a003-4162-842d-908f79058365
 ms.openlocfilehash: 21d1c9063a1d6dd154de8d2caca913ea3fd0ce37
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
-ms.translationtype: MT
+ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57812128"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "64342163"
 ---
 # <a name="use-the-msvc-toolset-from-the-command-line"></a>Komut satırından MSVC araç takımı kullanın
 
@@ -162,10 +162,10 @@ Oluşturma ve basit bir C++ programını komut satırında derleme gösteren bir
 C programlama dilinde yazılmış bir program derleyin açıklar.
 
 [İzlenecek yol: Komut Satırında C++/CLI Programı Derleme](walkthrough-compiling-a-cpp-cli-program-on-the-command-line.md)<br/>
-Açıklar oluşturma ve derleme C + +/ CLI programını, .NET Framework'ü kullanır.
+Oluşturma ve derleme işlemlerini açıklayan bir C++/CLI program, .NET Framework'ü kullanır.
 
 [İzlenecek yol: Komut Satırında C++/CX Programı Derleme](walkthrough-compiling-a-cpp-cx-program-on-the-command-line.md)<br/>
-Açıklar oluşturma ve derleme C + +/ CX programı, Windows çalışma zamanı kullanır.
+Oluşturma ve derleme işlemlerini açıklayan bir C++Windows çalışma zamanı kullanan /CX programı.
 
 [Komut Satırı Derlemeleri için Yolu ve Ortam Değişkenlerini Ayarlama](setting-the-path-and-environment-variables-for-command-line-builds.md)<br/>
 Gerekli ortam değişkenlerini hedefleyen x86, x64, komut satırı derlemeleri için ayarlayabilir ve platformları 32 bit veya 64-bit araç setini kullanarak ARM sahip bir komut istemi penceresi başlangıç açıklar.
@@ -184,7 +184,7 @@ Bu derleyici seçeneklerinin bir hata ayıklama veya sürüm çalışma zamanı 
 [C/C++ Derleyici Seçenekleri](reference/compiler-options.md)<br/>
 C ve C++ derleyici seçenekleri ve CL.exe açıklayan makalelerin bağlantıları sağlar.
 
-[MSVC bağlayıcı seçenekleri](reference/linker-options.md)<br/>
+[MSVC Bağlayıcı Seçenekleri](reference/linker-options.md)<br/>
 Bağlayıcı seçenekleri ve LINK.exe açıklayan makalelerin bağlantıları sağlar.
 
 [Ek MSVC derleme araçları](reference/c-cpp-build-tools.md)<br/>
@@ -192,4 +192,4 @@ C/C++ bağlantılar derleme Visual Studio'ya dahil olan araçları sağlar.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Projeler ve yapı sistemi](projects-and-build-systems-cpp.md)
+[Projeler ve derleme sistemleri](projects-and-build-systems-cpp.md)

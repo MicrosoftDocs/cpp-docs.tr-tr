@@ -7,17 +7,17 @@ helpviewer_keywords:
 - C3899
 ms.assetid: 14e07e4a-f7a7-4309-baaa-649d69e12e23
 ms.openlocfilehash: 26860ba0e8fd92f491ee389147605ba82cecf25c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50598399"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62376035"
 ---
 # <a name="compiler-error-c3899"></a>Derleyici Hatası C3899
 
 'var': initonly veri üyesinin lvalue kullanımına doğrudan 'class' sınıfındaki bir paralel bölgenin içinde izin verilmez
 
-Bir [initonly (C + +/ CLI)](../../dotnet/initonly-cpp-cli.md) veri üyesi içinde bir parçası olan bir oluşturucu başlatılamıyor bir [paralel](../../parallel/openmp/reference/parallel.md) bölge.  Derleyici bu kod, dahili bir yeniden konumlandırma gerçekleştirdiğinden etkili bir şekilde artık Oluşturucusu bir parçası olduğu gibi budur.
+Bir [initonly (C++/CLI)](../../dotnet/initonly-cpp-cli.md) veri üyesi içinde bir parçası olan bir oluşturucu başlatılamıyor bir [paralel](../../parallel/openmp/reference/parallel.md) bölge.  Derleyici bu kod, dahili bir yeniden konumlandırma gerçekleştirdiğinden etkili bir şekilde artık Oluşturucusu bir parçası olduğu gibi budur.
 
 Çözümlenecek, initonly veri üyesi Oluşturucu, ancak bir paralel bölgenin dışında başlatın.
 

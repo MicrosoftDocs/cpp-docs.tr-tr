@@ -31,11 +31,11 @@ helpviewer_keywords:
 - std::numpunct [C++], truename
 ms.assetid: 73fb93cc-ac11-4c98-987c-bfa6267df596
 ms.openlocfilehash: 6084392c5cae151f6c7111fbe9fe7a45e103b74d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50495584"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62371483"
 ---
 # <a name="numpunct-class"></a>numpunct Sınıfı
 
@@ -352,11 +352,11 @@ Bellek yönetimi için nesne türünü belirtmek için kullanılan tamsayı değ
 
 Olası değerler için *_Refs* parametresi ve bunların önemi:
 
-- 0: nesne ömrü onu içeren yerel ayarlar tarafından yönetilir.
+- 0: Nesnenin ömrünü, onu içeren yerel ayarlar tarafından yönetilir.
 
-- 1: nesne ömrü el ile yönetilmesi gerekir.
+- 1: Nesnenin ömrünü el ile yönetilmesi gerekir.
 
-- \> 1: Bu değerler tanımlanmadı.
+- \> 1: Bu değerleri tanımlı değil.
 
 Yok edici korumalı olduğundan doğrudan örnek mümkündür.
 

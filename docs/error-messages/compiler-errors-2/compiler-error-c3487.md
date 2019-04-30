@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3487
 ms.assetid: 39bda474-4418-4a79-98bf-2b22fa92eaaa
 ms.openlocfilehash: 01f8a1bd74ed2b7a3150afae5b46128c6f5b0ca2
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59028418"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62381156"
 ---
 # <a name="compiler-error-c3487"></a>Derleyici Hatası C3487
 

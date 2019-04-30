@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3701
 ms.assetid: a7faaa87-d2f5-4d6a-9a2f-5cab2d24a648
 ms.openlocfilehash: 2efbf3c48b7c366d262facac9cebb4f72d9f1513
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50580610"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "64344553"
 ---
 # <a name="compiler-error-c3701"></a>Derleyici Hatası C3701
 

@@ -11,11 +11,11 @@ helpviewer_keywords:
 - System::Exception class in managed applications
 ms.assetid: ccb11fe8-6938-41ac-b477-a183e85865b9
 ms.openlocfilehash: b477f7355ee1f4f70a0ad3df8b85c4276c07d397
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59037178"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62380456"
 ---
 # <a name="exception-handling--ccli-and-ccx"></a>Özel durum işleme (C++/CLI ve C++/CX)
 

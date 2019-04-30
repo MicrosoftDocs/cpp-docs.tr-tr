@@ -5,11 +5,11 @@ helpviewer_keywords:
 - MFC ActiveX controls [MFC], optimizing
 ms.assetid: 29ff985d-9bf5-4678-b62d-aad12def75fb
 ms.openlocfilehash: 4d0037ebdfe56690be2f18a2790b2b13967e337c
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57274186"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62378322"
 ---
 # <a name="optimizing-control-drawing"></a>Denetim Çizimini İyileştirme
 
@@ -44,9 +44,9 @@ Son olarak, gereksiz ortadan kaldırmak için `SelectObject` çağrıları deği
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MFC ActiveX denetimleri: En iyi duruma getirme](../mfc/mfc-activex-controls-optimization.md)<br/>
+[MFC ActiveX Denetimleri: İyileştirme](../mfc/mfc-activex-controls-optimization.md)<br/>
 [COleControl Sınıfı](../mfc/reference/colecontrol-class.md)<br/>
 [MFC ActiveX Denetimleri](../mfc/mfc-activex-controls.md)<br/>
 [MFC ActiveX Denetimleri](../mfc/mfc-activex-controls.md)<br/>
 [MFC ActiveX Denetim Sihirbazı](../mfc/reference/mfc-activex-control-wizard.md)<br/>
-[MFC ActiveX denetimleri: ActiveX denetimini boyama](../mfc/mfc-activex-controls-painting-an-activex-control.md)
+[MFC ActiveX Denetimleri: ActiveX Denetimi Boyama](../mfc/mfc-activex-controls-painting-an-activex-control.md)

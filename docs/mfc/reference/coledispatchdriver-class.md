@@ -27,11 +27,11 @@ helpviewer_keywords:
 - COleDispatchDriver [MFC], m_lpDispatch
 ms.assetid: 3ed98daf-cdc7-4374-8a0c-cf695a8d3657
 ms.openlocfilehash: c0c1fd14105bae3b5413f92b547339ccabf3bb91
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58774782"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "64341610"
 ---
 # <a name="coledispatchdriver-class"></a>COleDispatchDriver sınıfı
 
@@ -274,7 +274,7 @@ Belirtilen tür parametrelerinin değişken listesi *pbParamInfo*.
 
 ### <a name="remarks"></a>Açıklamalar
 
-*PbParamInfo* parametresi yöntemi veya özelliği için geçirilen parametre türlerini belirtir. Bağımsız değişken listesi tarafından temsil edilen **...**  söz dizimi bildirimi.
+*PbParamInfo* parametresi yöntemi veya özelliği için geçirilen parametre türlerini belirtir. Bağımsız değişken listesi tarafından temsil edilen **...** söz dizimi bildirimi.
 
 Olası değerler için *vtRet* bağımsız değişken VARENUM sabit listesinden alınmış alınır. Olası değerler aşağıdaki gibidir:
 

@@ -8,11 +8,11 @@ helpviewer_keywords:
 - message-driven programming [MFC]
 ms.assetid: d799ed8c-6a9f-4f05-be5d-29cb5bc6d185
 ms.openlocfilehash: 4ddfd0a5ff506e17efeb63624b7cb8c6a8b1eda4
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57262200"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62383795"
 ---
 # <a name="messages-and-commands-in-the-framework"></a>Framework'teki İletiler ve Komutlar
 

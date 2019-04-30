@@ -29,11 +29,11 @@ helpviewer_keywords:
 - regular expressions [C++], validating data formatting
 ms.assetid: 838bab49-0dbc-4089-a604-ef146269ef5a
 ms.openlocfilehash: 24a278e4d5b208c5d8e3b95b9f5a0bd0306dbab3
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57741900"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62384668"
 ---
 # <a name="regular-expressions-ccli"></a>Normal İfadeler (C++/CLI)
 

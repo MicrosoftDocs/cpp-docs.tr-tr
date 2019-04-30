@@ -115,11 +115,11 @@ helpviewer_keywords:
 - CRenderTarget [MFC], m_pTextFormatDefault
 ms.assetid: 30d1607d-68d3-4d14-ac36-fdbd0ef903a1
 ms.openlocfilehash: a14a1fba25c8c38c4bcf441dda566f14dc790f76
-ms.sourcegitcommit: 309dc532f13242854b47759cef846de59bb807f1
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58565780"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62372159"
 ---
 # <a name="crendertarget-class"></a>CRenderTarget sınıfı
 

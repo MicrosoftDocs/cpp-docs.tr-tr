@@ -7,11 +7,11 @@ helpviewer_keywords:
 - interface static constructor
 ms.assetid: 1f031cb2-e94f-43dc-819b-44cf2faaaa49
 ms.openlocfilehash: 326b315e1e6c4defbef3ab6e487c78635e0aa50f
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58772650"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62378988"
 ---
 # <a name="how-to-define-an-interface-static-constructor-ccli"></a>Nasıl yapılır: Arabirim statik oluşturucusunu tanımlama (C++/CLI)
 

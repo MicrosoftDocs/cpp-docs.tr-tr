@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3652
 ms.assetid: 15d68737-177e-41f1-80e0-7c3e2afdf0fc
 ms.openlocfilehash: 350edcf409cf2a890a8f83147ce0ae13e9992694
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59777622"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62385569"
 ---
 # <a name="compiler-error-c3652"></a>Derleyici Hatası C3652
 

@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C4652
 ms.assetid: 2cf2c666-8cdd-4dd9-bda0-662921498b03
 ms.openlocfilehash: 0675a58d818ef12b53b7d741b894d6e2ecf7f1cd
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50622475"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62375710"
 ---
 # <a name="compiler-warning-level-1-c4652"></a>Derleyici Uyarısı (düzey 1) C4652
 

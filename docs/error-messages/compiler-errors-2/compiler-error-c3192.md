@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3192
 ms.assetid: 8b0083d4-706f-46f6-858a-e1d9af464cf8
 ms.openlocfilehash: 685657857b2ed41c29c704633b07dc677fc32fc3
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50481113"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62382313"
 ---
 # <a name="compiler-error-c3192"></a>Derleyici Hatası C3192
 

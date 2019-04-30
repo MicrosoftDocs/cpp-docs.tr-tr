@@ -21,12 +21,12 @@ helpviewer_keywords:
 - tempnam function
 ms.assetid: 42446733-f131-470f-b4d0-96918becab11
 ms.openlocfilehash: b006fe2f34f5c4ab0f5c7116d925a510c1b6f570
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50507932"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62383496"
 ---
 # <a name="tempnam"></a>tempnam
 
-Bu POSIX işlevi kullanım dışı bırakılmıştır. ISO C++ uyumlu [_tempnam](tempnam-wtempnam-tmpnam-wtmpnam.md) yerine.
+Bu POSIX işlevi kullanım dışı bırakılmıştır. ISO kullanın C++ uyumluluğunu [_tempnam](tempnam-wtempnam-tmpnam-wtmpnam.md) yerine.

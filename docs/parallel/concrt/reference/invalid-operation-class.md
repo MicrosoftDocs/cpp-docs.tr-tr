@@ -9,11 +9,11 @@ helpviewer_keywords:
 - invalid_operation class
 ms.assetid: 26ba07dc-fcdf-44cb-b748-a31d35205b52
 ms.openlocfilehash: 8b971a12ff83753546cfea7b90288d1bc43400c0
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57279697"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "64341033"
 ---
 # <a name="invalidoperation-class"></a>invalid_operation Sınıfı
 

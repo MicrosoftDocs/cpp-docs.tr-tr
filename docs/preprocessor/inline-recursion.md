@@ -9,11 +9,11 @@ helpviewer_keywords:
 - inline_recursion pragma
 ms.assetid: cfef5791-63b7-45ac-9574-623747b9b9c9
 ms.openlocfilehash: 80ffabc6ac7c95fd7d9fb4e62bea38c2a04b04f0
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59026918"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62383704"
 ---
 # <a name="inlinerecursion"></a>inline_recursion
 Doğrudan veya karşılıklı özyinelemeli işlev çağrıları satır içi genişlemeyi denetler.

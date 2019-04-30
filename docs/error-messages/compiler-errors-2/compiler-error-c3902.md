@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3902
 ms.assetid: feb3bb29-f836-4d77-ba71-3876f7f4f216
 ms.openlocfilehash: d90bf299c566ce72e3d1cbfeb545def0a43d6cbf
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59776996"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62375996"
 ---
 # <a name="compiler-error-c3902"></a>Derleyici Hatası C3902
 

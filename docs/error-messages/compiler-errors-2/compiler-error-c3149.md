@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3149
 ms.assetid: cf6e2616-2f06-46da-8a8a-d449cb481c51
 ms.openlocfilehash: 8238dcec821256dad8101cd7ad59b2d85882c218
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50622878"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "64345521"
 ---
 # <a name="compiler-error-c3149"></a>Derleyici Hatası C3149
 

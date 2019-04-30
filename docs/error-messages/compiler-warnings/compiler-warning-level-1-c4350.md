@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C4350
 ms.assetid: 4cc8ed67-64c4-4da5-a7a5-a639232baa23
 ms.openlocfilehash: 8f23751151d8d83c68608d926ef422d56dde41a6
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50571957"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62384211"
 ---
 # <a name="compiler-warning-level-1-c4350"></a>Derleyici Uyarısı (düzey 1) C4350
 

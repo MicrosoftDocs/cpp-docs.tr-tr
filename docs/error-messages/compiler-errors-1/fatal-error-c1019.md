@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C1019
 ms.assetid: c4f8968b-bc62-4200-b3ca-69d06c163236
 ms.openlocfilehash: 2d8e63510b762b0de0cda50ab7a03b773dfb949a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50574089"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62383132"
 ---
 # <a name="fatal-error-c1019"></a>Önemli hata C1019
 

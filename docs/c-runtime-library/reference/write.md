@@ -24,11 +24,11 @@ helpviewer_keywords:
 - files [C++], writing to
 ms.assetid: 7b868c33-766f-4e1a-95a7-e8d25f0604c4
 ms.openlocfilehash: b3fa53b21d4ea23c5f8e59de673f4074deedb505
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50519255"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62383418"
 ---
 # <a name="write"></a>_write
 
@@ -57,7 +57,7 @@ Bayt sayısı.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa, **_write** gerçekte yazılan bayt sayısını döndürür. Diskte kalan gerçek alan işlev diske yazmak için çalışıyor arabellek boyutu altındaysa **_write** başarısız olur ve herhangi bir arabellek içeriği diske temizleme değil. -1 dönüş değeri bir hata olduğunu gösterir. Geçersiz parametreler, bu işlev geçersiz parametre işleyicisi açıklandığı gibi çağırır [Parameter Validation](../../c-runtime-library/parameter-validation.md). Yürütme devam etmesine izin verilirse işlev -1 döndürür ve **errno** üç değerlerden birine ayarlanır: **EBADF**, yani dosya tanımlayıcısı geçersiz veya dosya; yazma için açılmadı **ENOSPC**, operation;'için cihazda yeterli alan yok anlamına gelen sol veya **EINVAL**, anlamına *arabellek* null bir işaretçi ya da, bir tek *sayısı* bayt Unicode modunda bir dosyaya yazılacak geçirildi.
+Başarılı olursa, **_write** gerçekte yazılan bayt sayısını döndürür. Diskte kalan gerçek alan işlev diske yazmak için çalışıyor arabellek boyutu altındaysa **_write** başarısız olur ve herhangi bir arabellek içeriği diske temizleme değil. -1 dönüş değeri bir hata olduğunu gösterir. Geçersiz parametreler, bu işlev geçersiz parametre işleyicisi açıklandığı gibi çağırır [Parameter Validation](../../c-runtime-library/parameter-validation.md). Yürütme devam etmesine izin verilirse işlev -1 döndürür ve **errno** üç değerlerden birine ayarlayın: **EBADF**, yani dosya tanımlayıcısı geçersiz veya dosya; yazma için açılmadı **ENOSPC**, operation;'için cihazda yeterli alan yok anlamına gelen sol veya **EINVAL**, anlamına *arabellek* null bir işaretçi ya da, bir tek *sayısı* bayt Unicode modunda bir dosyaya yazılacak geçirildi.
 
 Bunlar ve diğer dönüş kodları hakkında daha fazla bilgi için bkz: [errno _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 

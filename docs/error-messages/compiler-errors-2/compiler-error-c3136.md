@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3136
 ms.assetid: c77103cd-00f7-408e-b74b-4f8562039d31
 ms.openlocfilehash: e32ffca067c3b25120301527e7a708d53001d541
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50501102"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62376256"
 ---
 # <a name="compiler-error-c3136"></a>Derleyici Hatası C3136
 

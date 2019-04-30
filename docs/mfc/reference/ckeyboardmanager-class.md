@@ -31,11 +31,11 @@ helpviewer_keywords:
 - CKeyboardManager [MFC], UpdateAccelTable
 ms.assetid: 4809ece6-89df-4479-8b53-9bf476ee107b
 ms.openlocfilehash: 3360a28d50f64546837cc5ef35dcfc761b4fb0f5
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58779813"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "64341499"
 ---
 # <a name="ckeyboardmanager-class"></a>CKeyboardManager sınıfı
 

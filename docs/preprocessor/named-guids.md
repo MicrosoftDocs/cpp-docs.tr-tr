@@ -7,11 +7,11 @@ helpviewer_keywords:
 - named_guids attribute
 ms.assetid: b905e5e5-07fe-4874-8993-e05b9d639045
 ms.openlocfilehash: 4304e9533467bd33cf61a88ac918fe6d16285d6e
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59024432"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62371756"
 ---
 # <a name="namedguids"></a>named_guids
 **C++ özgü**

@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3633
 ms.assetid: 7d65babf-2191-4d67-a69f-f5c4c2ddf946
 ms.openlocfilehash: 2d96a0e4f5f0b34c76f41058316c7f158f1a939d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50624102"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62385712"
 ---
 # <a name="compiler-error-c3633"></a>Derleyici Hatası C3633
 

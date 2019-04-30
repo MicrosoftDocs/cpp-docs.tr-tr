@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C1004
 ms.assetid: dbe034b0-6eb0-41b4-a50c-2fccf9e78ad4
 ms.openlocfilehash: 13fb8963b33569facf62ccedfe9ce8b7bbbbfdc3
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50428125"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62383212"
 ---
 # <a name="fatal-error-c1004"></a>Önemli hata C1004
 

@@ -7,11 +7,11 @@ helpviewer_keywords:
 - Windows Forms [C++], MFC support
 ms.assetid: 03a53032-2f03-4fa2-b567-031615a26011
 ms.openlocfilehash: bdf7e2f4961a16e6538c7bbcc690ef44ba87fcaf
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57751498"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62378985"
 ---
 # <a name="how-to-create-the-user-control-and-host-in-a-dialog-box"></a>Nasıl yapılır: Bir iletişim kutusunda kullanıcı denetimi ve konak oluşturma
 

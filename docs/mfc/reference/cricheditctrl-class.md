@@ -153,11 +153,11 @@ helpviewer_keywords:
 - CRichEditCtrl [MFC], Undo
 ms.assetid: 2be52788-822c-4c27-aafd-2471231e74eb
 ms.openlocfilehash: 5517efca66744c43eeccd3fb91b97a6fedc8180e
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58779280"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62372107"
 ---
 # <a name="cricheditctrl-class"></a>CRichEditCtrl Class
 

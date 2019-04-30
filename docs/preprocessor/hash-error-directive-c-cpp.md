@@ -9,11 +9,11 @@ helpviewer_keywords:
 - error directive (#error directive)
 ms.assetid: d550a802-ff19-4347-9597-688935d23b2b
 ms.openlocfilehash: dc229a8eae6938cba32787ecbec6a5aa6a17ab47
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59037850"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62383993"
 ---
 # <a name="error-directive-cc"></a>#error Yönergesi (C/C++)
 **#Error** yönergesi, bir kullanıcı tarafından belirtilen hata iletisini derleme zamanında yayar ve derlemeyi sona erdirir.

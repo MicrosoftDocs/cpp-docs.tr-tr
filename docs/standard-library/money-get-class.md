@@ -17,11 +17,11 @@ helpviewer_keywords:
 - std::money_get [C++], get
 ms.assetid: 692d3374-3fe7-4b46-8aeb-f8d91ed66b2e
 ms.openlocfilehash: 40ce364d768e682c9e85506d2af9e46a01c76e65
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50537793"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62383535"
 ---
 # <a name="moneyget-class"></a>money_get Sınıfı
 
@@ -159,7 +159,7 @@ Varsa **iosbase**. [bayrakları](../standard-library/ios-base-class.md#flags) & 
 
 Örneği, **fac**. `thousands_sep` parasal giriş alanını değer kısmı oluşur (burada eşit öğesi **money_base::value** biçim deseni görünür), hiçbir gruplandırma kısıtlama sınırlamasıdır. Aksi takdirde, gruplandırma kısıtlamalardan uygulanan tarafından **fac**. **Gruplandırma** zorlanır. Sonuçta elde edilen basamak dizisi düşük sıralı bir tamsayı temsil ettiğini Not **fac**. `frac_digits` Ondalık ayırıcının sağında, ondalık basamak olarak kabul edilir.
 
-Rastgele boşluk eşleşir yeri eşit öğesi **money_base::space** biçim deseni sonunda göründüğü dışındaki biçim deseni görüntülenir. Aksi takdirde, hiçbir iç boşluk eşleştirilir. Bir öğe *ch* boşluk kabul edildiği [use_facet](../standard-library/locale-functions.md#use_facet) < [ctype](../standard-library/ctype-class.md) \< **CharType**>> () **iosbase**. [getloc](../standard-library/ios-base-class.md#getloc)). [olan](../standard-library/ctype-class.md#is)( **ctype_base::space**, *ch*) olan **true**.
+Rastgele boşluk eşleşir yeri eşit öğesi **money_base::space** biçim deseni sonunda göründüğü dışındaki biçim deseni görüntülenir. Aksi takdirde, hiçbir iç boşluk eşleştirilir. Bir öğe *ch* boşluk kabul edildiği [use_facet](../standard-library/locale-functions.md#use_facet) < [ctype](../standard-library/ctype-class.md) \< **CharType**>> () **iosbase**. [getloc](../standard-library/ios-base-class.md#getloc)). [is](../standard-library/ctype-class.md#is)( **ctype_base::space**, *ch*) is **true**.
 
 ### <a name="example"></a>Örnek
 
@@ -291,11 +291,11 @@ Bellek yönetimi için nesne türünü belirtmek için kullanılan tamsayı değ
 
 Olası değerler için *_Refs* parametresi ve bunların önemi:
 
-- 0: nesne ömrü onu içeren yerel ayarlar tarafından yönetilir.
+- 0: Nesnenin ömrünü, onu içeren yerel ayarlar tarafından yönetilir.
 
-- 1: nesne ömrü el ile yönetilmesi gerekir.
+- 1: Nesnenin ömrünü el ile yönetilmesi gerekir.
 
-- \> 1: Bu değerler tanımlanmadı.
+- \> 1: Bu değerleri tanımlı değil.
 
 Yok edici korumalı olduğundan doğrudan örnek mümkündür.
 

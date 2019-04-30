@@ -7,11 +7,11 @@ helpviewer_keywords:
 - forms, adding to projects
 ms.assetid: f3bd2998-3ce2-496d-ac5c-57ca70eec7cb
 ms.openlocfilehash: 2fa344f2d84b39be4ee36fd845edb82c14b6c519
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57286536"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62383878"
 ---
 # <a name="inserting-a-form-into-a-project"></a>Bir Projeye Form Ekleme
 

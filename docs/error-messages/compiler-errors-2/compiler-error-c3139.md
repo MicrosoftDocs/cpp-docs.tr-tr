@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3139
 ms.assetid: 95c92263-10ac-4ff3-b385-6312dd92adbc
 ms.openlocfilehash: f224be74a94e0e769e7c26bc99b4790d69f6b65b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50521209"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62375528"
 ---
 # <a name="compiler-error-c3139"></a>Derleyici Hatası C3139
 

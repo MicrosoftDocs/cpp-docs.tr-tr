@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C4965
 ms.assetid: 47f3f6dc-459b-4a25-9947-f394c8966cb5
 ms.openlocfilehash: 2e93fdeba7f9b5b10340ccd1920807a3fcb345a0
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59778156"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62383870"
 ---
 # <a name="compiler-warning-level-1-c4965"></a>Derleyici Uyarısı (düzey 1) C4965
 

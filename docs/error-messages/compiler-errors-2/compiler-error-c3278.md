@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3278
 ms.assetid: 56f818f5-85a6-4792-843b-54fe16327658
 ms.openlocfilehash: 7618336c08dd111e495d7e4102b8e61c6e927c39
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50579757"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62382095"
 ---
 # <a name="compiler-error-c3278"></a>Derleyici Hatası C3278
 

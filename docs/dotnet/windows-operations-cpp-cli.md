@@ -44,11 +44,11 @@ helpviewer_keywords:
 - Visual C++, writing to Windows Registry
 ms.assetid: b9a75cb4-0589-4d5b-92cb-5e8be42b4ac0
 ms.openlocfilehash: 413ccc3b66d76f8779861d4d65eb262ee8640725
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57750903"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62384382"
 ---
 # <a name="windows-operations-ccli"></a>Windows İşlemleri (C++/CLI)
 
@@ -144,7 +144,7 @@ int main( )
 
 <xref:Microsoft.Win32.Registry> Sınıfı, yalnızca statik örnekleri için bir kapsayıcı <xref:Microsoft.Win32.RegistryKey>. Her örnek, bir kök kayıt defteri düğümü temsil eder. Örnekleri <xref:Microsoft.Win32.Registry.ClassesRoot>, <xref:Microsoft.Win32.Registry.CurrentConfig>, <xref:Microsoft.Win32.Registry.CurrentUser>, <xref:Microsoft.Win32.Registry.LocalMachine>, ve <xref:Microsoft.Win32.Registry.Users>.
 
-Olmanın yanı sıra statik içindeki nesneleri <xref:Microsoft.Win32.Registry> sınıfı salt okunurdur. Ayrıca, örnekler, <xref:Microsoft.Win32.RegistryKey> kayıt içeriğine erişmek için oluşturulan sınıf nesneleri salt okunurdur de. Bu davranışı geçersiz kılmak nasıl bir örnek için bkz [nasıl yapılır: Windows kayıt defterine veri yazma (C + +/ CLI)](../dotnet/how-to-write-data-to-the-windows-registry-cpp-cli.md).
+Olmanın yanı sıra statik içindeki nesneleri <xref:Microsoft.Win32.Registry> sınıfı salt okunurdur. Ayrıca, örnekler, <xref:Microsoft.Win32.RegistryKey> kayıt içeriğine erişmek için oluşturulan sınıf nesneleri salt okunurdur de. Bu davranışı geçersiz kılmak nasıl bir örnek için bkz [nasıl yapılır: Windows kayıt defterine veri yazma (C++/CLI)](../dotnet/how-to-write-data-to-the-windows-registry-cpp-cli.md).
 
 İki ek nesnesi vardır <xref:Microsoft.Win32.Registry> sınıfı: <xref:Microsoft.Win32.Registry.DynData> ve <xref:Microsoft.Win32.Registry.PerformanceData>. Her ikisi de örnekleridir <xref:Microsoft.Win32.RegistryKey> sınıfı. <xref:Microsoft.Win32.Registry.DynData> Nesnesi yalnızca Windows 98 ve Windows Me desteklenmeyen dinamik kayıt defteri bilgileri içerir <xref:Microsoft.Win32.Registry.PerformanceData> Nesnesini Windows performans izleme sistemi kullanan uygulamalar için performans sayacı bilgileri erişmek için kullanılabilir. <xref:Microsoft.Win32.Registry.PerformanceData> Düğümü gerçekten kayıt defterinde depolanır ve bu nedenle Regedit.exe kullanarak görüntülenemiyor bilgileri temsil eder.
 

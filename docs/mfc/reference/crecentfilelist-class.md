@@ -23,11 +23,11 @@ helpviewer_keywords:
 - CRecentFileList [MFC], WriteList
 ms.assetid: a77f0524-7584-4582-849a-7e97b76d186e
 ms.openlocfilehash: 30536d91d057de4e551b5a28200dd903e12713b3
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57304840"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62372185"
 ---
 # <a name="crecentfilelist-class"></a>CRecentFileList sınıfı
 

@@ -7,11 +7,11 @@ helpviewer_keywords:
 - PRJ0024
 ms.assetid: 8bde6368-6c1b-4e04-bc5e-3c6d0b8fa1d7
 ms.openlocfilehash: 645b898bdffcc6d7b397c25eb3c41cea25cb361f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50589650"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62384110"
 ---
 # <a name="project-build-error-prj0024"></a>Proje Derleme Hatası PRJ0024
 

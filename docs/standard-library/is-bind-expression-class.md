@@ -7,11 +7,11 @@ helpviewer_keywords:
 - is_bind_expression class
 ms.assetid: 0715f9e9-2239-4778-a1cf-2c21f49dfd47
 ms.openlocfilehash: f547b6f74a86612174cb0f510870171158678f7a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50519424"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62383665"
 ---
 # <a name="isbindexpression-class"></a>is_bind_expression Sınıfı
 

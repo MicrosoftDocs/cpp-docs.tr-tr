@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3273
 ms.assetid: 1d2ce9d9-222b-4cab-94e2-d2c1a9f5ebe0
 ms.openlocfilehash: 466a9d6687dd5bfdab80ce1dfc9096ef7540ebaa
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50511676"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62382339"
 ---
 # <a name="compiler-error-c3273"></a>Derleyici Hatası C3273
 

@@ -18,11 +18,11 @@ helpviewer_keywords:
 - CRecordView [MFC], OnMove
 ms.assetid: 9b4b0897-bd50-4d48-a0b4-f3323f5ccc55
 ms.openlocfilehash: a91a9e320b4221b04bbcf996ffa60f1de4b35ec5
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57262473"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62372224"
 ---
 # <a name="crecordview-class"></a>CRecordView sınıfı
 

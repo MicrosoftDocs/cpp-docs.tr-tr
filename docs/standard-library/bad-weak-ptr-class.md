@@ -8,11 +8,11 @@ helpviewer_keywords:
 - bad_weak_ptr class
 ms.assetid: a09336d5-7237-4480-ab6b-3787e0e6025e
 ms.openlocfilehash: 78438ef3378e5002396eecb32b9b7a76d5b50325
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50492918"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62377497"
 ---
 # <a name="badweakptr-class"></a>bad_weak_ptr Sınıfı
 

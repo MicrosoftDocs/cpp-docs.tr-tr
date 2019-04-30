@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3552
 ms.assetid: 83401524-1bf1-44c0-8aca-a6eb35c4224c
 ms.openlocfilehash: 27c4707097f43266a3be57ad6dc9591ab6f34e97
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50441814"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62375944"
 ---
 # <a name="compiler-error-c3552"></a>Derleyici Hatası C3552
 

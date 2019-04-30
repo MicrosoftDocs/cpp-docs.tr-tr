@@ -28,11 +28,11 @@ helpviewer_keywords:
 - char_traits class
 ms.assetid: 568e59f0-4521-4207-9223-9dcf6a16d620
 ms.openlocfilehash: 2975c839e07093a22d910f295be730fdd68839cf
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50640381"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62379447"
 ---
 # <a name="chartraits-struct"></a>char_traits Yapısı
 
@@ -384,7 +384,7 @@ EOF karakteri.
 
 Dosya sonu (EOF veya gibi WEOF) temsil eden bir değer.
 
-Bu değer geçerli bir karşılık gelmelidir değil C++ Standart durumları `char_type` değeri. Visual C++ derleyicisi türü için bu kısıtlamayı zorlar **char**, ancak türü **wchar_t**. Aşağıdaki örnek bunu gösterir.
+Bu değer geçerli bir karşılık gelmelidir değil C++ Standart durumları `char_type` değeri. Görsel C++ derleyici türü için bu kısıtlamayı zorlar **char**, ancak türü **wchar_t**. Aşağıdaki örnek bunu gösterir.
 
 ### <a name="example"></a>Örnek
 

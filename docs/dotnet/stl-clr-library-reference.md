@@ -8,11 +8,11 @@ helpviewer_keywords:
 - cliext directory
 ms.assetid: a9d9ca00-7bf2-48c1-b205-3ae6f8c25f82
 ms.openlocfilehash: b3c25a40fdb5bade02e112b13d16420b248a177f
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57750955"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62384640"
 ---
 # <a name="stlclr-library-reference"></a>STL/CLR Kitaplık Başvurusu
 

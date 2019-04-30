@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C4293
 ms.assetid: babecd96-eb51-41a5-9835-462c7a46dbad
 ms.openlocfilehash: 03520e2018efd611985c0eeca8bb2cac259ff3cf
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50598529"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62384224"
 ---
 # <a name="compiler-warning-level-1-c4293"></a>Derleyici Uyarısı (düzey 1) C4293
 

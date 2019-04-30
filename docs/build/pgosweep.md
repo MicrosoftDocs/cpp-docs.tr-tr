@@ -6,11 +6,11 @@ helpviewer_keywords:
 - profile-guided optimizations, pgosweep
 ms.assetid: f39dd3b7-1cd9-4c3b-8e8b-fb794744b757
 ms.openlocfilehash: 3ba31671fc3794e1cc959d86d914ba1eef2e01e4
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57824023"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "64341193"
 ---
 # <a name="pgosweep"></a>pgosweep
 

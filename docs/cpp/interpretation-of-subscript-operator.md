@@ -8,11 +8,11 @@ helpviewer_keywords:
 - operators [C++], interpretation of subscript
 ms.assetid: 8852ca18-9d5b-43f7-b8bd-abc89364fbf2
 ms.openlocfilehash: 1c3d5bca66cb294503805fd5b7691331ac380ae5
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50446611"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62375320"
 ---
 # <a name="interpretation-of-subscript-operator"></a>Alt Simge İşleci Yorumu
 

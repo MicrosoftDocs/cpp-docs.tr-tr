@@ -1,5 +1,5 @@
 ---
-title: C çalışma zamanı hatası R6002
+title: C Çalışma Zamanı Hatası R6002
 ms.date: 11/04/2016
 f1_keywords:
 - R6002
@@ -7,13 +7,13 @@ helpviewer_keywords:
 - R6002
 ms.assetid: 8fbbe65a-9c43-459e-8342-e1f6d1cef7d0
 ms.openlocfilehash: f8b5fe69c9fd688f4d0a181176cda247cde9ac11
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50648649"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62380545"
 ---
-# <a name="c-runtime-error-r6002"></a>C çalışma zamanı hatası R6002
+# <a name="c-runtime-error-r6002"></a>C Çalışma Zamanı Hatası R6002
 
 kayan nokta desteği yüklenmedi
 

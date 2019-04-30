@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C4905
 ms.assetid: 40240bf4-b14e-4c22-aeb2-52f2851532f6
 ms.openlocfilehash: c1d201eb7d3eee322a1aa1e598eeb24928e361a3
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50584541"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62380662"
 ---
 # <a name="compiler-warning-level-1-c4905"></a>Derleyici Uyarısı (düzey 1) C4905
 

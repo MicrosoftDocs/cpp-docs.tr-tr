@@ -17,11 +17,11 @@ helpviewer_keywords:
 - CMFCImagePaintArea [MFC], SetMode
 ms.assetid: c59eec22-f15a-4e58-8c4d-4a18a41f4452
 ms.openlocfilehash: 37d975ace4d144cc6274b49a3406382f0fb300ee
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57290760"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62374187"
 ---
 # <a name="cmfcimagepaintarea-class"></a>Cmfcımagepaintarea sınıfı
 

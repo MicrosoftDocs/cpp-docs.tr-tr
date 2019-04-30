@@ -11,11 +11,11 @@ helpviewer_keywords:
 - classes [C++], polymorphism
 ms.assetid: 3dbeb06e-2f4b-4693-832d-624bc8ec95de
 ms.openlocfilehash: 02ade663ee92d3a301fda95bb385c3ffa48ead12
-ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
+ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52175554"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "64345066"
 ---
 # <a name="casting"></a>Atama
 

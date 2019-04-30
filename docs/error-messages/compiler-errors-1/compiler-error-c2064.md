@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2064
 ms.assetid: 6cda05da-f437-4f50-9813-ae69538713a3
 ms.openlocfilehash: 8af20c5172cddd0194ed018c13960bbed7859674
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51520445"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62386037"
 ---
 # <a name="compiler-error-c2064"></a>Derleyici Hatası C2064
 

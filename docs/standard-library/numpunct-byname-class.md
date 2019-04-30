@@ -7,11 +7,11 @@ helpviewer_keywords:
 - numpunct_byname class
 ms.assetid: 18412924-e085-4771-b5e9-7a200cbdd7c0
 ms.openlocfilehash: 64e8918b052b05088ff48aefb0f0f9ab8c6df586
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50432879"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62371498"
 ---
 # <a name="numpunctbyname-class"></a>numpunct_byname Sınıfı
 

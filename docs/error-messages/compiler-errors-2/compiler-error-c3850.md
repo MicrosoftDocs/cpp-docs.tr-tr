@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3850
 ms.assetid: 028f3a37-f3ad-4ebc-9168-3cdea47524d4
 ms.openlocfilehash: 9cd0428726f92c7347b162f74b46035f99cc2d3c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50572672"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62380961"
 ---
 # <a name="compiler-error-c3850"></a>Derleyici Hatası C3850
 

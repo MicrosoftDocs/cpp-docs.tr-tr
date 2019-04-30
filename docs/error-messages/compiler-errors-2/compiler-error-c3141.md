@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3141
 ms.assetid: b4fd65c3-50cc-46cd-8de0-6a6d24cb9cda
 ms.openlocfilehash: e19de95b5b2c967d71a4b06aca431df8ffe9dc14
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50552180"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62374943"
 ---
 # <a name="compiler-error-c3141"></a>Derleyici Hatası C3141
 

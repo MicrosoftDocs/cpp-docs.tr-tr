@@ -10,11 +10,11 @@ helpviewer_keywords:
 - MFC, record views
 ms.assetid: 1cd3e595-ce08-43d8-a0a9-d03b5d3e24ce
 ms.openlocfilehash: 83f4d64252ab5c2b80d62419ea448c1ffd0cdd69
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59025879"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62375190"
 ---
 # <a name="using-ole-db-record-views"></a>OLE DB Kayıt Görünümlerini Kullanma
 

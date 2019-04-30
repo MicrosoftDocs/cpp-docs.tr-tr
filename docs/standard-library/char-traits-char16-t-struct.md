@@ -8,11 +8,11 @@ helpviewer_keywords:
 - char_traits<char16_t> class
 ms.assetid: 5daf3b62-dd6e-451f-b189-0350a04ff966
 ms.openlocfilehash: def0023b259a7b4816bdda29684c1dd9853d5f5b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50619108"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62379538"
 ---
 # <a name="chartraitsltchar16tgt-struct"></a>char_traits&lt;char16_t&gt; yapısı
 

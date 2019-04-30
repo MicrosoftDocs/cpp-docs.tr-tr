@@ -38,11 +38,11 @@ helpviewer_keywords:
 - strtol function
 ms.assetid: 1787c96a-f283-4a83-9325-33cfc1c7e240
 ms.openlocfilehash: 73df5dd3ffcd4a9b2fca8b6b713b645ef94addb5
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51326725"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62379161"
 ---
 # <a name="strtol-wcstol-strtoll-wcstoll"></a>strtol, wcstol, _strtol_l, _wcstol_l
 

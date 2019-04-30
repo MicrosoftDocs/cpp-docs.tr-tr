@@ -28,11 +28,11 @@ helpviewer_keywords:
 - _T type
 ms.assetid: 2848121c-e51f-4b9b-a2e6-833ece4b0cb3
 ms.openlocfilehash: aa6827607430bf8f0db37997bac0223833fcd171
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57747936"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62376061"
 ---
 # <a name="using-generic-text-mappings"></a>Genel Metin Eşlemelerini Kullanma
 

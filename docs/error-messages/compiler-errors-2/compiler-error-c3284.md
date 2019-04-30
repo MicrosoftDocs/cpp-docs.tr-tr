@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3284
 ms.assetid: e582f316-e9db-4d27-9c70-fdfa737a9d5f
 ms.openlocfilehash: acefcac849b9ce36bcf24d45f3ce85ba220b3698
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57807786"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62381377"
 ---
 # <a name="compiler-error-c3284"></a>Derleyici Hatası C3284
 

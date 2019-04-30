@@ -8,11 +8,11 @@ helpviewer_keywords:
 - Platform::Metadata::Attribute Attribute
 ms.assetid: 0e69727f-429b-4f7d-85c6-eea614f14dd7
 ms.openlocfilehash: 1020982ef79c77bacf920f94dd4bf43fee21424e
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57745200"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62376178"
 ---
 # <a name="platformmetadataattribute-attribute"></a>Platform::metadata:: attribute özniteliği
 

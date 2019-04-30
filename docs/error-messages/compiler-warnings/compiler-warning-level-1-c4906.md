@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C4906
 ms.assetid: 05318e74-799b-412a-9dce-f02b8161d762
 ms.openlocfilehash: a62b10ca96dc9c27e57eafdcc87cf0d5e0605b4c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50444752"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62380558"
 ---
 # <a name="compiler-warning-level-1-c4906"></a>Derleyici Uyarısı (düzey 1) C4906
 

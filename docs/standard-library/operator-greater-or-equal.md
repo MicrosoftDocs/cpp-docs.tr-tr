@@ -14,11 +14,11 @@ helpviewer_keywords:
 - operator>=
 ms.assetid: 14fbebf5-8b75-4afa-a51b-3112d31c07cf
 ms.openlocfilehash: 0f7ed1fcf0c4e3290d110d9aa12b66289cb331f1
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50459039"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62371470"
 ---
 # <a name="operatorgt"></a>İşleci&gt;=
 

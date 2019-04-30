@@ -7,11 +7,11 @@ helpviewer_keywords:
 - BK1517
 ms.assetid: 24391f42-0a3e-40a9-9991-c8b9a6a7b1c7
 ms.openlocfilehash: 455e028a72cce132c49e0d0d778628ee21bf3a0f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50476095"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62380532"
 ---
 # <a name="bscmake-error-bk1517"></a>BSCMAKE Hatası BK1517
 

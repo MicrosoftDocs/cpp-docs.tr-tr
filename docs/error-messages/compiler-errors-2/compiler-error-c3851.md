@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3851
 ms.assetid: da30c21c-33aa-4439-8fb3-2f5021ea4985
 ms.openlocfilehash: 52c4f3a393ffaf2b61a65c8e2e0dcc8efac08288
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50503005"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62380948"
 ---
 # <a name="compiler-error-c3851"></a>Derleyici Hatası C3851
 

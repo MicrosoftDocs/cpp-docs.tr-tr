@@ -10,11 +10,11 @@ helpviewer_keywords:
 - messages [MFC], sending
 ms.assetid: 9ce189cb-b259-4c3b-b6f2-9cfbed18b98b
 ms.openlocfilehash: bda261f4141a7ceb4e678535d9012650818fabce
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57274914"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62384055"
 ---
 # <a name="message-sending-and-receiving"></a>İleti Gönderme ve Alma
 

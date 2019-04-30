@@ -8,11 +8,11 @@ helpviewer_keywords:
 - native resources
 ms.assetid: cdada6cd-6d42-437a-a90f-44a0b18d6a93
 ms.openlocfilehash: 641bdf4429bca35800e3fbbbb7622f2651bb3fee
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57751576"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "64344964"
 ---
 # <a name="how-to-load-unmanaged-resources-into-a-byte-array"></a>Nasıl yapılır: Yönetilmeyen kaynakları Bayt dizisine yükleme
 

@@ -8,11 +8,11 @@ helpviewer_keywords:
 - forms-based applications [MFC]
 ms.assetid: 048d2f7d-b60d-4386-ad8e-71d49af9c05e
 ms.openlocfilehash: 6810a6c7fce91865a92d048129da29305e22abc1
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57291255"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62372341"
 ---
 # <a name="creating-a-forms-based-mfc-application"></a>Form Tabanlı MFC Uygulaması Oluşturma
 

@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3540
 ms.assetid: 3c0c959c-e3b7-40eb-b922-ccac44bd9d85
 ms.openlocfilehash: 57e4145557272f76a890a356c79982346cd74d7e
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59037175"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "64345478"
 ---
 # <a name="compiler-error-c3540"></a>Derleyici Hatası C3540
 

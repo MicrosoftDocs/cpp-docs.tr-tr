@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2723
 ms.assetid: 86925601-2297-4cfd-94e2-2caf27c474c4
 ms.openlocfilehash: bc07a99f12ed0e447427990969e54f7f3d3d3b7f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50635401"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62383028"
 ---
 # <a name="compiler-error-c2723"></a>Derleyici Hatası C2723
 

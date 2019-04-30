@@ -11,11 +11,11 @@ helpviewer_keywords:
 - properties [C++], adding to COM interfaces
 ms.assetid: 1be84d3c-6886-4d1e-8493-56c4d38a96d4
 ms.openlocfilehash: dfc4b09f4fa42b179bdef91877e0a004caa69187
-ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
+ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51693707"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "64345224"
 ---
 # <a name="create-a-com-interface"></a>Bir COM arabirimi oluşturma
 

@@ -14,11 +14,11 @@ helpviewer_keywords:
 - extension DLLs [C++], /clr compiler option
 ms.assetid: 12464bec-33a4-482c-880a-c078de7f6ea5
 ms.openlocfilehash: 9a24e82787eb0fce8ff668843e73de9f2d05e1ad
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57751615"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62379057"
 ---
 # <a name="how-to-compile-mfc-and-atl-code-by-using-clr"></a>Nasıl yapılır: MFC ve ATL kodu kullanarak/CLR ile derleyin
 

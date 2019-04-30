@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C1017
 ms.assetid: 5542e604-599d-4e36-8f83-1d454c5753c9
 ms.openlocfilehash: e2309b93be65b049c35abf96572e144a0a518007
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50614285"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62383184"
 ---
 # <a name="fatal-error-c1017"></a>Önemli hata C1017
 

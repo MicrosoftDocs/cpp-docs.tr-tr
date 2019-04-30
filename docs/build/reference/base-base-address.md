@@ -21,11 +21,11 @@ helpviewer_keywords:
 - at sign symbol for base address
 ms.assetid: 00b9f6fe-0bd2-4772-a69c-7365eb199069
 ms.openlocfilehash: dc6380903af0be2e6696ca3589813c249f71dd05
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57812284"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "64341019"
 ---
 # <a name="base-base-address"></a>/BASE (Temel Adres)
 
@@ -79,4 +79,4 @@ Temel adresi ayarlamak için başka bir yolu kullanmaktır *temel* bağımsız d
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [MSVC bağlayıcı başvurusu](linking.md)<br/>
-[MSVC bağlayıcı seçenekleri](linker-options.md)
+[MSVC Bağlayıcı Seçenekleri](linker-options.md)

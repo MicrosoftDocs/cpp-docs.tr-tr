@@ -8,11 +8,11 @@ helpviewer_keywords:
 - printing [MFC]
 ms.assetid: be465e8d-b0c9-4fc5-9fa8-d10486064f76
 ms.openlocfilehash: e0cd2d6d85cb9820b23495a003068994b13f9c85
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57278086"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "64339581"
 ---
 # <a name="printing"></a>Yazdırma
 

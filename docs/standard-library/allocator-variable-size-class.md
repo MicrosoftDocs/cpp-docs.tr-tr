@@ -10,11 +10,11 @@ helpviewer_keywords:
 - stdext::allocators [C++], allocator_variable_size
 ms.assetid: c3aa4105-ae45-4385-bbbe-9f23060478cb
 ms.openlocfilehash: a2c4681ec5252166754a45b026ea119651f18a38
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50558932"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62371678"
 ---
 # <a name="allocatorvariablesize-class"></a>allocator_variable_size Sınıfı
 
@@ -31,7 +31,7 @@ class allocator_variable_size;
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|*Türü*|Ayırıcı tarafından ayrılan öğelerin türü.|
+|*Tür*|Ayırıcı tarafından ayrılan öğelerin türü.|
 
 ## <a name="remarks"></a>Açıklamalar
 

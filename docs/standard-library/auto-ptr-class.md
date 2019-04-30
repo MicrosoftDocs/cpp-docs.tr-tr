@@ -15,11 +15,11 @@ helpviewer_keywords:
 - std::auto_ptr [C++], reset
 ms.assetid: 7f9108b6-9eb3-4634-b615-cf7aa814f23b
 ms.openlocfilehash: f0c8e0c1f4dc2e1082d5df230c74efafcae24f29
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51327128"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62377990"
 ---
 # <a name="autoptr-class"></a>auto_ptr Sınıfı
 
@@ -196,7 +196,7 @@ Constructing 00311AF8
 Destructing 00311AF8
 ```
 
-## <a name="element_type"></a>  auto_ptr::ELEMENT_TYPE
+## <a name="element_type"></a>  auto_ptr::element_type
 
 Şablon parametresi için bir eşanlamlı türüdür `Type`.
 
@@ -362,7 +362,7 @@ int main()
 }
 ```
 
-## <a name="op_auto_ptr_ref_lt_other_gt"></a>  auto_ptr::operator auto_ptr_ref&lt;diğer&gt;
+## <a name="op_auto_ptr_ref_lt_other_gt"></a>  auto_ptr::operator auto_ptr_ref&lt;Other&gt;
 
 Gelen bıraktığı bir `auto_ptr` için bir `auto_ptr_ref`.
 
@@ -423,7 +423,7 @@ main exiting
 ~C:  1
 ```
 
-## <a name="release"></a>  auto_ptr::Release
+## <a name="release"></a>  auto_ptr::release
 
 Üye depolanan işaretçinin yerini `myptr` null bir işaretçi ve daha önce depolanan işaretçi döndürür.
 

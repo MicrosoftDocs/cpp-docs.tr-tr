@@ -13,11 +13,11 @@ helpviewer_keywords:
 - std::ostream_iterator [C++], traits_type
 ms.assetid: 24d842d3-9f45-4bf6-a697-62f5968f5a03
 ms.openlocfilehash: 6a065a100faf5ea40be161e980de2913add917fe
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50449237"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62371003"
 ---
 # <a name="ostreamiterator-class"></a>ostream_iterator Sınıfı
 
@@ -32,7 +32,7 @@ class ostream_iterator
 
 ### <a name="parameters"></a>Parametreler
 
-*Türü*<br/>
+*Tür*<br/>
 Çıkış akımına eklenecek nesnenin türü.
 
 *CharType*<br/>

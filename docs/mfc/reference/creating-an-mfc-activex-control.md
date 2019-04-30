@@ -8,11 +8,11 @@ helpviewer_keywords:
 - ActiveX controls [MFC], creating
 ms.assetid: 8bd5a93c-d04d-414e-bb28-163fdc1c0dd5
 ms.openlocfilehash: b2dc48e2568e180820f8bca008c66878af4b575e
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57818550"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62372302"
 ---
 # <a name="creating-an-mfc-activex-control"></a>MFC ActiveX Denetimi Oluşturma
 
@@ -42,6 +42,6 @@ Projenizi oluşturduktan sonra kod sihirbazları eklemek için kullanabileceğin
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Kod sihirbazlarıyla işlevsellik ekleme](../../ide/adding-functionality-with-code-wizards-cpp.md)<br/>
+[Kod Sihirbazlarıyla İşlevsellik Ekleme](../../ide/adding-functionality-with-code-wizards-cpp.md)<br/>
 [Özellik Sayfaları](../../build/reference/property-pages-visual-cpp.md)
 

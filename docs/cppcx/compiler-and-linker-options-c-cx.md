@@ -1,17 +1,17 @@
 ---
-title: Derleyici ve bağlayıcı seçenekleri (C + +/ CX)
+title: Derleyici ve bağlayıcı seçenekleri (C++/CX)
 ms.date: 01/22/2017
 ms.assetid: ecfadce8-3a3f-40cc-bb01-b4731f8d2fcb
 ms.openlocfilehash: cc1964c57d6700995bb283c245e4c63c8e9e313b
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57750916"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62383366"
 ---
-# <a name="compiler-and-linker-options-ccx"></a>Derleyici ve bağlayıcı seçenekleri (C + +/ CX)
+# <a name="compiler-and-linker-options-ccx"></a>Derleyici ve bağlayıcı seçenekleri (C++/CX)
 
-Bir ortam değişkeni, C + +/ CX derleyici seçenekleri ve bağlayıcı seçenekleri için Windows çalışma zamanı uygulamaları oluşturmayı destekler.
+Bir ortam değişkeni C++/CX derleyici seçenekleri ve bağlayıcı seçenekleri için Windows çalışma zamanı uygulamaları oluşturmayı destekler.
 
 ## <a name="library-path"></a>Kitaplık yolu
 
@@ -43,4 +43,4 @@ Kullanırken **/ZW**, derleyici, DLL sürümü C çalışma zamanı'nın (CRT) o
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Uygulamaları oluşturma ve kitaplıkları](../cppcx/building-apps-and-libraries-c-cx.md)
+[Uygulama ve kitaplık oluşturma](../cppcx/building-apps-and-libraries-c-cx.md)

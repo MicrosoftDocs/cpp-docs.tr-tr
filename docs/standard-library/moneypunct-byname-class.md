@@ -7,11 +7,11 @@ helpviewer_keywords:
 - moneypunct_byname class
 ms.assetid: e8a544d2-6aee-420d-b513-deb385c9b416
 ms.openlocfilehash: 003ba2136e779c444c7edad9b1759a861a8b0803
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50574443"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62383561"
 ---
 # <a name="moneypunctbyname-class"></a>moneypunct_byname Sınıfı
 

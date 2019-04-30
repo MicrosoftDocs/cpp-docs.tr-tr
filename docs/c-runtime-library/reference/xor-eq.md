@@ -21,11 +21,11 @@ helpviewer_keywords:
 - xor_eq function
 ms.assetid: eca4b6b4-b77a-4d44-a09a-5a7e69fdb56c
 ms.openlocfilehash: 4ba3025df471a0433d4e3c4a1a8ddb75400c9523
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51521394"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62383405"
 ---
 # <a name="xoreq"></a>xor_eq
 

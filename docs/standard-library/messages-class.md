@@ -23,11 +23,11 @@ helpviewer_keywords:
 - std::messages [C++], open
 ms.assetid: c4c71f40-4f24-48ab-9f7c-daccd8d5bd83
 ms.openlocfilehash: 7a024a8cad8c536b25127d033468874de5ebd8af
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50568538"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62383587"
 ---
 # <a name="messages-class"></a>messages Sınıfı
 
@@ -264,11 +264,11 @@ Yerel ayar adı.
 
 Olası değerler için *_Refs* parametresi ve bunların önemi:
 
-- 0: nesne ömrü onu içeren yerel ayarlar tarafından yönetilir.
+- 0: Nesnenin ömrünü, onu içeren yerel ayarlar tarafından yönetilir.
 
-- 1: nesne ömrü el ile yönetilmesi gerekir.
+- 1: Nesnenin ömrünü el ile yönetilmesi gerekir.
 
-- \> 1: Bu değerler tanımlanmadı.
+- \> 1: Bu değerleri tanımlı değil.
 
 Yok edici korumalı olduğundan doğrudan örnek mümkündür.
 

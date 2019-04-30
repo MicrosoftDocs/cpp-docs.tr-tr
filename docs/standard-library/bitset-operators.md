@@ -13,11 +13,11 @@ helpviewer_keywords:
 - std::operator&gt;&gt; (bitset)
 - std::operator&lt;&lt; (bitset)
 ms.openlocfilehash: 1c4c1b6f6c023514a1d3ae46f6670247e4bf99d4
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51331743"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62380201"
 ---
 # <a name="ltbitsetgt-operators"></a>&lt;bitset&gt; işleçleri
 

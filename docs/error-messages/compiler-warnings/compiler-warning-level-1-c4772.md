@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C4772
 ms.assetid: dafe6fd8-9faf-41f5-9d66-a55838742c14
 ms.openlocfilehash: 95243ab66d5d0296e1c316ff8dde7add75a030cd
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50540029"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62385465"
 ---
 # <a name="compiler-warning-level-1-c4772"></a>Derleyici Uyarısı (düzey 1) C4772
 

@@ -24,11 +24,11 @@ helpviewer_keywords:
 - std::exponential_distribution [C++], param_type
 ms.assetid: d54f3126-a09b-45f9-a30b-0d94d03bcdc9
 ms.openlocfilehash: b419869785e9b6c2086ec6614363af3a3e12cb50
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51518157"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62371575"
 ---
 # <a name="exponentialdistribution-class"></a>exponential_distribution Sınıfı
 

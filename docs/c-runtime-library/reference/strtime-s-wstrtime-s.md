@@ -31,11 +31,11 @@ helpviewer_keywords:
 - _strtime_s function
 ms.assetid: 42acf013-c334-485d-b610-84c0af8a46ec
 ms.openlocfilehash: 579c4a99b52c66bd14cea947eaa1f301cc1127e1
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50642370"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62375333"
 ---
 # <a name="strtimes-wstrtimes"></a>_strtime_s, _wstrtime_s
 

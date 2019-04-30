@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2879
 ms.assetid: ac92b645-2394-49de-8632-43d44e0553ed
 ms.openlocfilehash: 9ac8f5e5edb1a6ed7314c5b5d125fcc9bfbe67de
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50677961"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62378927"
 ---
 # <a name="compiler-error-c2879"></a>Derleyici Hatası C2879
 

@@ -64,11 +64,11 @@ helpviewer_keywords:
 - value_type member [STL/CLR]
 ms.assetid: 9ea7dec3-ea98-48ff-87d0-a5afc924aaf2
 ms.openlocfilehash: 2cf0467c2b4799c2009f866b7aa22be5e421f762
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50569623"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62384731"
 ---
 # <a name="queue-stlclr"></a>sıraya al (STL/CLR)
 
@@ -98,7 +98,7 @@ Temel alınan kapsayıcı türü.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** \<cliext/kuyruk >
+**Header:** \<cliext/queue>
 
 **Namespace:** cliext
 

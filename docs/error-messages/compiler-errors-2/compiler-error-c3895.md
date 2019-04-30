@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3895
 ms.assetid: 771b9fe5-d6d4-4297-bf57-e2f857722155
 ms.openlocfilehash: c4b1cad9ef48f1f16b411aab46e1bb9285d69ff3
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59779306"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62385543"
 ---
 # <a name="compiler-error-c3895"></a>Derleyici Hatası C3895
 

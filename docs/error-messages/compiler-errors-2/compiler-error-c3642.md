@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3642
 ms.assetid: 429790c2-9614-4d85-b31c-687c8d8f83ff
 ms.openlocfilehash: d524c49075c400caa345dd26ed681734ea0cfb94
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50582659"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62385627"
 ---
 # <a name="compiler-error-c3642"></a>Derleyici Hatası C3642
 
@@ -21,7 +21,7 @@ ms.locfileid: "50582659"
 
 *Döndür_tür/args* işlevin adını ya da türünü `__clrcall` çağırmaya çalıştığınız işlevi.  İşlev işaretçisi çağrılırken bir türü kullanılır.
 
-Yerel bir bağlamdan yönetilen bir işlevi çağırmak için çağıran bir "sarmalayıcı" işlev ekleyebilirsiniz `__clrcall` işlevi. Veya CLR sıralama mekanizması kullanabilirsiniz. bkz: [nasıl yapılır: hazırlama işlev işaretçileri PInvoke kullanarak](../../dotnet/how-to-marshal-function-pointers-using-pinvoke.md) daha fazla bilgi için.
+Yerel bir bağlamdan yönetilen bir işlevi çağırmak için çağıran bir "sarmalayıcı" işlev ekleyebilirsiniz `__clrcall` işlevi. Veya CLR sıralama mekanizması kullanabilirsiniz. bkz: [nasıl yapılır: İşlev işaretçileri PInvoke kullanarak sıralama](../../dotnet/how-to-marshal-function-pointers-using-pinvoke.md) daha fazla bilgi için.
 
 Aşağıdaki örnek, C3642 oluşturur:
 

@@ -40,11 +40,11 @@ helpviewer_keywords:
 - menus [C++], deleting
 ms.assetid: 421fb215-6e12-4ec9-a3af-82d77f87bfa6
 ms.openlocfilehash: b5d809fa4e0f608d4c0e6cbdaf8697688c6d3f9c
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59037282"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62376792"
 ---
 # <a name="menu-editor-c"></a>Menü Düzenleyicisi (C++)
 

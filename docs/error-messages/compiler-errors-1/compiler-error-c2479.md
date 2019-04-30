@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2479
 ms.assetid: c74c7869-e65b-4ca1-b6fa-eb39fed4458a
 ms.openlocfilehash: 8b3b226ccbe42ec88ed92c64b97256d80a983254
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50611438"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62383268"
 ---
 # <a name="compiler-error-c2479"></a>Derleyici Hatası C2479
 

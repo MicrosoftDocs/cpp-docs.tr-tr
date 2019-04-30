@@ -6,11 +6,11 @@ helpviewer_keywords:
 - parallel_for_each function, example
 ms.assetid: fa9c0ba6-ace0-4f88-8681-c7c1f52aff20
 ms.openlocfilehash: 19af9be8ef6d9c38a0942e7c85caa0a8bc4e6813
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57272223"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62375567"
 ---
 # <a name="how-to-write-a-parallelforeach-loop"></a>Nasıl yapılır: Parallel_for_each döngüsü yazma
 

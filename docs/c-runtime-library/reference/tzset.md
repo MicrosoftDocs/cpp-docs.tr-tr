@@ -24,11 +24,11 @@ helpviewer_keywords:
 - environment variables, setting time
 ms.assetid: 3f6ed537-b414-444d-b272-5dd377481930
 ms.openlocfilehash: 6312297e6daa9b4790674bd26d21812d5bee34c6
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51330261"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62385199"
 ---
 # <a name="tzset"></a>_tzset
 
@@ -47,7 +47,7 @@ void _tzset( void );
 
 **_Tzset** işlevi, ortam değişkeninin geçerli ayarını kullanan **TZ** üç genel değişkenlerine değer atamak için: **_daylight**, **_timezone** , ve **_tzname**. Bu değişkenler tarafından kullanılan [_ftime](ftime-ftime32-ftime64.md) ve [localtime](localtime-localtime32-localtime64.md) Eşgüdümlü Evrensel Saat (UTC), yerel saat ve tarafından düzeltmeler yapmak için işlevleri [zaman](time-time32-time64.md) işlevi UTC sistem saatinden hesaplamak. Ayarlamak için aşağıdaki sözdizimini kullanın **TZ** ortam değişkeni:
 
-> **TZ ayarlamak =**_tzn_ \[ **+** &#124; **-**]*hh* \[ **:**_mm_\[**:**_ss_]] [*dzn*]
+> **set TZ=**_tzn_ \[**+**&#124;**-**]*hh*\[**:**_mm_\[**:**_ss_] ][*dzn*]
 
 |Parametre|Açıklama|
 |-|-|
@@ -55,7 +55,7 @@ void _tzset( void );
 | *hh* | UTC ve yerel saat arasındaki saat farkı. İşaretini (+) pozitif değerler için isteğe bağlıdır. |
 | *aa* | Dakika. Ayrılmıştır *hh* bir virgülle (**:**). |
 | *ss* | Saniye sayısı. Ayrılmıştır *mm* bir virgülle (**:**). |
-| *Dzn* | Üç harfli Yaz Saati dilimi, PDT gibi. Gün ışığından yararlanma hiçbir zaman yürürlükte yerleşim içinde değilse, **TZ** için bir değer olmadan *dzn*. C çalışma zamanı kitaplığı, gün ışığından yararlanma saatinin (DST) hesaplanmasını uygulamak için ABD kurallarını varsayar. |
+| *dzn* | Üç harfli Yaz Saati dilimi, PDT gibi. Gün ışığından yararlanma hiçbir zaman yürürlükte yerleşim içinde değilse, **TZ** için bir değer olmadan *dzn*. C çalışma zamanı kitaplığı, gün ışığından yararlanma saatinin (DST) hesaplanmasını uygulamak için ABD kurallarını varsayar. |
 
 > [!NOTE]
 > Al, saat farkının işaretini hesaplarken dikkatli olun. Zaman farkı yerel saat uzaklığı için UTC (tersi yerine) olduğundan, işareti beklediğinizin zıttı tersi olabilir. Utc'den saat dilimleri için saat farkı negatiftir; Bu gerisindekiler için fark pozitiftir.

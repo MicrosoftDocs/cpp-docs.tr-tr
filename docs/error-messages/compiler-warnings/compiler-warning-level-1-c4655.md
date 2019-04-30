@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C4655
 ms.assetid: 540f2c7a-e4a1-49af-84b4-03eeea1bbf41
 ms.openlocfilehash: aff78dbed217a6d9c5bc2a315ef12a33fe6caf0d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50514861"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62374670"
 ---
 # <a name="compiler-warning-level-1-c4655"></a>Derleyici Uyarısı (düzey 1) C4655
 

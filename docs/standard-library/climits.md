@@ -7,11 +7,11 @@ helpviewer_keywords:
 - climits header
 ms.assetid: 7ca8a539-aa45-4ac3-86e8-74513be3f07e
 ms.openlocfilehash: 09989f5181e45867b5c74bb96f7d8a4891fc537c
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51520952"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62386232"
 ---
 # <a name="ltclimitsgt"></a>&lt;climits&gt;
 

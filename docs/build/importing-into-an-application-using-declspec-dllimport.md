@@ -9,11 +9,11 @@ helpviewer_keywords:
 - importing DLLs [C++], __declspec(dllimport)
 ms.assetid: edb4da4e-f83a-44cf-a668-9239d49dbe42
 ms.openlocfilehash: 30e0f6517f2d749962c5cf49dddb1662c9ccf129
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57810230"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "64341652"
 ---
 # <a name="import-into-an-application-using-declspecdllimport"></a>__Declspec(dllimport) kullanarak bir uygulamayı içeri aktarın
 
@@ -49,7 +49,7 @@ class CLASS_DECLSPEC CExampleA : public CObject
 
 ## <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz?
 
-- [İçeri ve dışarı aktarma satır içi işlevler](importing-and-exporting-inline-functions.md)
+- [Satır içi işlevleri içeri ve dışarı aktarma](importing-and-exporting-inline-functions.md)
 
 - [Karşılıklı içeri aktarmalar](mutual-imports.md)
 

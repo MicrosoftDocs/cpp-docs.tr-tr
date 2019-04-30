@@ -7,11 +7,11 @@ helpviewer_keywords:
 - PRJ0031
 ms.assetid: b42435c6-e570-4f8e-9ad5-12a7ea69ccb2
 ms.openlocfilehash: e5edae0c1b7464e4a3a5e9523332ce956d0dcf92
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50648597"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "64345305"
 ---
 # <a name="project-build-error-prj0031"></a>Proje Derleme Hatası PRJ0031
 

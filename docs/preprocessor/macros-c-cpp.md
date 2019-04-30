@@ -7,11 +7,11 @@ helpviewer_keywords:
 - Visual C++, preprocessor macros
 ms.assetid: a7bfc5d4-2537-4fe0-bef0-70cec0b43388
 ms.openlocfilehash: 281aaf686c07894b5cb1fab187ba903179c51de8
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59032186"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62371784"
 ---
 # <a name="macros-cc"></a>Makrolar (C/C++)
 Ön işleme, önişlemci yönergeleri olmayan tüm satırları makrolarındaki genişletir (sahip olmayan satırlar bir **#** ilk boşluk olmayan karakter olarak) ve bir parçası olarak atlandı değildir yönergelerden bazıları bölümlerini bir Koşullu derleme. Hangi metin blokları belirlemek için tanımlayıcı geçirilir derleyicisi ve hangi metin blokları sırasında kaynak dosyasından kaldırılır ya da sabit bir ifade test ederek bir kaynak dosyasının bölümlerini derleme gizlemek "Koşullu derleme" yönergeleri sağlar ön işleme.

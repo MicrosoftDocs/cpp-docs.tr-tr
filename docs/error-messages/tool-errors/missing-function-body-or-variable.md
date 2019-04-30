@@ -5,12 +5,12 @@ helpviewer_keywords:
 - function body
 - variables, missing
 ms.assetid: 1a88d809-b14f-46a4-97c4-3e48beb418f2
-ms.openlocfilehash: c287d804df3222475d7cf32c6eb025f642dfb913
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
-ms.translationtype: MT
+ms.openlocfilehash: 5e3436054d69da7fb67c240c1d684585734635c3
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59031867"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62378447"
 ---
 # <a name="missing-function-body-or-variable"></a>Eksik İşlev Gövdesi veya Değişken
 
@@ -20,7 +20,7 @@ Yalnızca bir işlev prototipi ile derleyici hatasız devam edebilirsiniz, ancak
 
 Exists işlevi düşünmek derleyici prototip izin verdiğinden ana işlev çağrısında LNK2019 neden olur.  Bağlayıcı değil olduğunu bulur.
 
-```
+```cpp
 // LNK2019_MFBV.cpp
 // LNK2019 expected
 void DoSomething(void);
@@ -33,7 +33,7 @@ int main() {
 
 C++'da, bir sınıf ve yalnızca bir prototip için belirli bir işlev uygulaması'nı sınıf tanımında eklediğinizden emin olun. Üstbilgi dosyasının dışında sınıfı tanımlıyorsanız, sınıf adı işlevinden önce eklediğinizden emin olun (`Classname::memberfunction`).
 
-```
+```cpp
 // LNK2019_MFBV_2.cpp
 // LNK2019 expected
 struct A {

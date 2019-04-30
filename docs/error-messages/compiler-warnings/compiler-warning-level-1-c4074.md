@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C4074
 ms.assetid: cd510e66-c338-4a86-a4d7-bfa1df9b16c3
 ms.openlocfilehash: d9b0259e95198396d8c34ca43781045248e22ad9
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50665575"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62374748"
 ---
 # <a name="compiler-warning-level-1-c4074"></a>Derleyici Uyarısı (düzey 1) C4074
 

@@ -13,11 +13,11 @@ helpviewer_keywords:
 - native code [C++], .NET interoperatibility
 ms.assetid: 4299dfce-392f-4933-8bf0-5da2f0d1c282
 ms.openlocfilehash: 78e95177282804369bac2065582a06b8acbc975b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50428693"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62384861"
 ---
 # <a name="mixed-native-and-managed-assemblies"></a>Karışık (yerel ve yönetilen) derlemeler
 
@@ -27,14 +27,14 @@ Karışık derlemeler yönetilmeyen makine yönergelerine hem MSIL yönergeleri 
 
 Visual C++ yalnızca kullanarak karışık Yönetilen derlemeler oluşturulmasını destekler **/CLR** derleyici seçeneği. **/CLR: pure** ve **/CLR: safe** derleyici seçenekleri Visual Studio 2015'te kullanım dışı ve Visual Studio 2017'de desteklenmiyor. Saf veya doğrulanabilir Yönetilen derlemeler gerekiyorsa, bunları C# kullanarak oluşturmanız önerilir.
 
-Visual C++ Derleyici Araç Takımı'nın önceki sürümlerinde desteklenen yönetilen derlemeleri birbirinden farklı üç nesil: karışık, saf ve doğrulanabilen. İkinci iki ele alınmıştır [saf ve doğrulanabilen kod (C + +/ CLI)](../dotnet/pure-and-verifiable-code-cpp-cli.md).
+Visual C++ Derleyici Araç Takımı'nın önceki sürümlerinde desteklenen yönetilen derlemeleri birbirinden farklı üç nesil: karışık, saf ve doğrulanabilen. İkinci iki ele alınmıştır [saf ve doğrulanabilen kod (C++/CLI)](../dotnet/pure-and-verifiable-code-cpp-cli.md).
 
 ## <a name="in-this-section"></a>Bu bölümde
 
 [Nasıl yapılır: / CLR'ye geçiş](../dotnet/how-to-migrate-to-clr.md)<br/>
 Karşınızda veya uygulamanız .NET işlevselliği yükseltme için önerilen adımlar açıklanır.
 
-[Nasıl yapılır: derleme MFC ve ATL kodu kullanarak/CLR](../dotnet/how-to-compile-mfc-and-atl-code-by-using-clr.md)<br/>
+[Nasıl yapılır: MFC ve ATL kodu kullanarak/CLR ile derleyin](../dotnet/how-to-compile-mfc-and-atl-code-by-using-clr.md)<br/>
 Ortak dil çalışma zamanını hedeflemek için mevcut MFC ve ATL programlarının nasıl yapılandırılabileceğini açıklar.
 
 [Karışık Derlemeleri Başlatma](../dotnet/initialization-of-mixed-assemblies.md)<br/>
@@ -55,7 +55,7 @@ Yönetilen bir işlev için bir yerel giriş noktasının performans etkileri an
 [/ CLR ile CLR kapatma sırasında oluşturulan COM nesnelerini tüketirken özel durumları önleme](../dotnet/avoiding-exceptions-on-clr-shutdown-when-consuming-com-objects-built-with-clr.md)<br/>
 Bir COM nesnesi ile derlenmiş tüketen yönetilen bir uygulamanın düzgün kapatma emin olmak nasıl ele alınmaktadır **/CLR**.
 
-[Nasıl yapılır: CRT Kitaplık DLL'inden Bağımlılık Kaldırarak Kısmen Güvenilir Uygulama Oluşturma](../dotnet/create-a-partially-trusted-application.md)<br/>
+[Nasıl yapılır: CRT Kitaplık DLL'sinden Bağımlılığı Kaldırarak Kısmen Güvenilir Uygulama Oluşturma](../dotnet/create-a-partially-trusted-application.md)<br/>
 Visual C++ msvcm90.dll bağımlılık kaldırarak kullanarak kısmen güvenilir bir ortak dil çalışma zamanı uygulamasının nasıl oluşturulacağını açıklar.
 
 Karışık derlemeler için kodlama yönergeleri hakkında daha fazla bilgi için bkz MSDN makalesine [bir genel bakış, yönetilen/yönetilmeyen kod birlikte çalışabilirliği](https://msdn.microsoft.com/library/ms973872.aspx).
