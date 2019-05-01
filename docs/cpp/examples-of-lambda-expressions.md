@@ -5,11 +5,11 @@ helpviewer_keywords:
 - lambda expressions [C++], examples
 ms.assetid: 52506b15-0771-4190-a966-2f302049ca86
 ms.openlocfilehash: 6854c5710d8a27093078c0f2013d691ac22c5870
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50663963"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62392199"
 ---
 # <a name="examples-of-lambda-expressions"></a>Lambda İfadeleri Örnekleri
 
@@ -271,7 +271,7 @@ int main()
 ### <a name="example"></a>Örnek
 
 Bir işlevin gövdesinde lambda ifadeleri kullanabilirsiniz. Lambda ifadesi, kapsayan işlevin erişip herhangi bir işlev veya veri üyesi erişebilir. Açıkça veya dolaylı olarak yakalayabilirsiniz **bu** işlevleri ve verileri kapsayan sınıfın üyelerine erişim sağlamak için işaretçi.
-**Visual Studio 2017 sürüm 15.3 ve üzeri** (bulunan [/Std: c ++ 17](../build/reference/std-specify-language-standard-version.md)): Yakalama **bu** değeriyle (`[*this]`) ne zaman lambda kullanılacak paralel veya zaman uyumsuz işlemleri sonra kod yürütebilir burada özgün nesne kapsam dışına gider.
+**Visual Studio 2017 sürüm 15.3 ve üzeri** (bulunan [/Std: c ++ 17](../build/reference/std-specify-language-standard-version.md)): Yakalama **bu** değeriyle (`[*this]`) ne zaman lambda kullanılacak paralel veya zaman uyumsuz işlemleri özgün nesne kapsam dışına geçtikten sonra kod burada paralellikle çalışabilir.
 
 Kullanabileceğiniz **bu** burada gösterildiği gibi açıkça bir işlevde işaretçi:
 
@@ -479,7 +479,7 @@ Caught 'invalid vector<T> subscript'.
 
 [[Bu makaledeki](#top)]
 
-##  <a name="managedLambdaExpressions"></a> Yönetilen türler ile lambda ifadeleri kullanma (C + +/ CLI)
+##  <a name="managedLambdaExpressions"></a> Yönetilen türler ile lambda ifadeleri kullanma (C++/CLI)
 
 ### <a name="example"></a>Örnek
 
