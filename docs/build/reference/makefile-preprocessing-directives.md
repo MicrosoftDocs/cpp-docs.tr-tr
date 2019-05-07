@@ -56,11 +56,11 @@ ms.locfileid: "62321572"
 
    Yalnızca /D / ı /N ve /S bir derleme görevleri dosyasında kullanılabilir. Tools.ini tüm seçenekleri izin dışında /F, / Help, / nologo, /, X ve /? Bir açıklama bloğu içinde belirtilen değişiklikler sonraki açıklama bloğu kadar etkili olmaz. Bu yönerge güncelleştirmeleri **MAKEFLAGS**; değişiklikleri, özyineleme sırasında devralınan **MAKEFLAGS** belirtilir.
 
-- **! HATA***metin*
+- **! HATA** *metin*
 
    Görüntüler *metin* hatası U1050 sonra durur NMAKE, olsa bile, /K, / ı, **. Yoksay**, **! CMDSWITCHES**, veya tire (-) komut değiştiricisi kullanılır. Boşluk veya sekme önce *metin* göz ardı edilir.
 
-- **! İleti***metin*
+- **! İleti** *metin*
 
    Görüntüler *metin* standart çıktıya. Boşluk veya sekme önce *metin* göz ardı edilir.
 
@@ -72,11 +72,11 @@ ms.locfileid: "62321572"
 
    İşler arasındaki **! Eğer** ve sonraki **! BAŞKA** veya **! ENDIF** varsa *constant_expression* sıfır dışında bir değeri değerlendirir.
 
-- **! IFDEF***makroadı*
+- **! IFDEF** *makroadı*
 
    İşler arasındaki **! IFDEF** ve sonraki **! BAŞKA** veya **! ENDIF** varsa *makroadı* tanımlanır. Null makro tanımlanmış kabul edilir.
 
-- **! IFNDEF***makroadı*
+- **! IFNDEF** *makroadı*
 
    İşler arasındaki **! IFNDEF** ve sonraki **! BAŞKA** veya **! ENDIF** varsa *makroadı* tanımlı değil.
 
@@ -100,7 +100,7 @@ ms.locfileid: "62321572"
 
    Sonunu işaretleyen bir **! Eğer**, **! IFDEF**, veya **! IFNDEF** blok. Sonra herhangi bir metin **! ENDIF** aynı satırdaki göz ardı edilir.
 
-- **! UNDEF***makroadı*
+- **! UNDEF** *makroadı*
 
    Tanımsızı *makroadı*.
 
