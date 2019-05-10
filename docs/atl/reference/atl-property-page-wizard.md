@@ -1,25 +1,30 @@
 ---
 title: ATL Özellik Sayfası Sihirbazı
-ms.date: 10/03/2018
+ms.date: 05/09/2019
 f1_keywords:
 - vc.codewiz.class.atl.ppg.overview
 helpviewer_keywords:
 - ATL projects, adding property pages
 - ATL Property Page Wizard
 ms.assetid: 6113e325-facd-4f68-b491-144d75209922
-ms.openlocfilehash: 791901ab3181ad2c8ac862a970980250693d20f7
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 47fee2291d201fca04674b07926ed88aaed0a95c
+ms.sourcegitcommit: 00e26915924869cd7eb3c971a7d0604388abd316
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62248239"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65524528"
 ---
 # <a name="atl-property-page-wizard"></a>ATL Özellik Sayfası Sihirbazı
 
-Bu sihirbaz [bir ATL projesine bir özellik sayfası ekler](../../atl/reference/adding-an-atl-property-page.md) veya MFC projesinde ATL desteği. ATL özellik sayfası özelliklerini ayarlamak için bir kullanıcı arabirimi sağlar (veya çağırma yöntemleri) bir veya daha fazla COM nesneleri.
+::: moniker range="vs-2019"
 
-> [!WARNING]
-> Visual Studio 2017 sürüm 15.9 bu kod Sihirbazı kullanım dışıdır ve Visual Studio'nun gelecekteki bir sürümde kaldırılacak. Bu sihirbaz nadiren kullanılır. ATL ve MFC genel desteği, bu sihirbazın kaldırma işlemi etkilenmez. Bu kullanımdan kaldırma hakkındaki görüşlerinizi paylaşmak istiyorsanız, Lütfen tamamlayın [bu anketi](https://www.surveymonkey.com/r/QDWKKCN). Geri bildiriminiz bizim için önemlidir.
+Bu sihirbaz, Visual Studio 2019 bulunan ve daha yeni değil.
+
+::: moniker-end
+
+::: moniker range="vs-2017"
+
+Bu sihirbaz [bir ATL projesine bir özellik sayfası ekler](../../atl/reference/adding-an-atl-property-page.md) veya MFC projesinde ATL desteği. ATL özellik sayfası özelliklerini ayarlamak için bir kullanıcı arabirimi sağlar (veya çağırma yöntemleri) bir veya daha fazla COM nesneleri.
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -64,8 +69,10 @@ Nesne için COM işlevleri hakkında bilgi sağlar.
 
    Kapsayıcı nesnesinin CLSID yerine kullanabileceği adını ayarlar.
 
+::: moniker-end
+
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [ATL Özellik Sayfası Sihirbazı Seçenekleri](../../atl/reference/options-atl-property-page-wizard.md)<br/>
 [Dizeleri, ATL Özellik Sayfası Sihirbazı](../../atl/reference/strings-atl-property-page-wizard.md)<br/>
-[Örnek: Özellik sayfası uygulama](../../atl/example-implementing-a-property-page.md)
+[Örnek: Özellik Sayfası Uygulama](../../atl/example-implementing-a-property-page.md)
