@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3867
 ms.assetid: bc5de03f-e01a-4407-88c3-2c63f0016a1e
-ms.openlocfilehash: 9308e238c86c7b8a957720228a823688fac289d3
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 9a5094b6c3d914c2f66ee8ed94bcdcce5827f130
+ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62242885"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "65447191"
 ---
 # <a name="compiler-error-c3867"></a>Derleyici Hatası C3867
 
@@ -19,7 +19,7 @@ ms.locfileid: "62242885"
 
 Üye işlevi, sınıf adını ve address-of işlecini nitelemeden bir üye işlevin adresini almak çalıştı.
 
-Bu hata için Visual C++ 2005 yapıldığı derleyici uyumluluğu iş sonucu olarak da oluşturulabilir: Gelişmiş işaretçi-üye uyumluluğu. Visual C++ 2005'ten önce derlenmiş kod artık C3867 oluşturur.
+Bu hata için Visual Studio 2005 yapıldığı derleyici uyumluluğu iş sonucu olarak da oluşturulabilir: Gelişmiş işaretçi-üye uyumluluğu. Visual Studio 2005'ten önce derlenmiş kod artık C3867 oluşturur.
 
 ## <a name="example"></a>Örnek
 

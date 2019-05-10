@@ -13,12 +13,12 @@ helpviewer_keywords:
 - shift operators [C++]
 - operators [C++], shift
 ms.assetid: 25fa0cbb-5fdd-4657-8745-b35f7d8f1606
-ms.openlocfilehash: 2f118c11aab9fb2bbdd6cfa4f23425077b382b23
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: fd048bedc45b14bdc7b83120ad039296b54aa850
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62216427"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65222054"
 ---
 # <a name="left-shift-and-right-shift-operators-gtgt-and-ltlt"></a>Sol kaydırma ve sağ kaydırma işleçleri (&gt; &gt; ve &lt; &lt;)
 
@@ -61,7 +61,7 @@ int main() {
 }
 ```
 
-İşaretli bir sayıyı sola kaydırırsanız, imza biti etkilenir ve sonuç tanımsız olur. Aşağıdaki örnek, bir 1 bit imza biti konumuna sola kaydırıldığında, Visual C++'ta ne olduğunu gösterir.
+İşaretli bir sayıyı sola kaydırırsanız, imza biti etkilenir ve sonuç tanımsız olur. Aşağıdaki örnek, bir 1 bit imza konumuna sola kaydırılacak olduğunda ne olacağını gösterir.
 
 ```cpp
 #include <iostream>
@@ -89,7 +89,7 @@ int main() {
 Sağa kaydırma işleci bit deseninde neden *shift-expression* sağ tarafından belirtilen konum sayısına göre kaydırılmasına *additive-expression*. İşaretsiz sayılar için, kaydırma işleci tarafından boşaltılmış bit konumları sıfır dolguludur. İşaretli sayılar için, imza biti boşaltılmış bit konumlarını doldurmak için kullanılır. Başka bir deyişle, sayı pozitif ise 0 kullanılır ve sayı negatif ise 1 kullanılır.
 
 > [!IMPORTANT]
-> İmzalı bir negatif sayının sağ kaydırmasının sonucu uygulama bağımlıdır. Visual C++ bitleri boşaltılmış konumları dolduracak şekilde kullansa da, başka bir uygulamanın da bunu yapacağının garantisi yoktur.
+> İmzalı bir negatif sayının sağ kaydırmasının sonucu uygulama bağımlıdır. Ancak Microsoft C++ derleyicinin kullandığı imza biti boşaltılmış bit konumlarını doldurmak için diğer uygulamalar da bunu bir garanti yoktur.
 
 Bu örnek, işaretsiz sayıların kullanıldığı sağa kaydırma işleçlerini gösterir:
 

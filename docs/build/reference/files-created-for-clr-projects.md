@@ -2,15 +2,15 @@
 title: CLR Projeleri için Oluşturulan Dosyalar
 ms.date: 11/04/2016
 helpviewer_keywords:
-- Visual C++ projects, CLR programming
+- Visual Studio C++ projects, CLR programming
 - .NET applications, C++
 ms.assetid: 59ae9020-5f26-4ad0-bbdd-97c2e2023a20
-ms.openlocfilehash: 8c3e4b4187e507f7e52f8764b546f85258902879
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e41544adb040175fc8e53ab0e6bc4f8275891580
+ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62271049"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "65446321"
 ---
 # <a name="files-created-for-clr-projects"></a>CLR Projeleri için Oluşturulan Dosyalar
 

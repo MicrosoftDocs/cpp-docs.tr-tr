@@ -6,12 +6,12 @@ ms.topic: conceptual
 helpviewer_keywords:
 - attributes [C++/CLI], reference topics
 ms.assetid: 613a3611-b3eb-4347-aa38-99b654600e1c
-ms.openlocfilehash: f9d339860e9d2bdb8d66f6b7f8f49d3993b2d5cf
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 9b985799849a268010dff63f9f7bc25e474b365e
+ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62148329"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "65448520"
 ---
 # <a name="c-attributes-for-com-and-net"></a>COM ve .NET için C++ öznitelikleri
 
@@ -34,7 +34,7 @@ Microsoft, COM programlama ve .NET Framework ortak dil çalışma zamanı geliş
 
 - IDL kod gerekli birkaç kısa özniteliklere sahip bir COM bileşeni tarafından büyük miktarda değiştirir.
 
-Örneğin, bir basit olay havuzu için genel bir ATL sınıf uygulamak için uygulayabilirsiniz [event_receiver](event-receiver.md) gibi belirli bir sınıfa öznitelik `CMyReceiver`. `event_receiver` Özniteliği uygun kod nesnesi dosyasına ekler için Visual C++ derleyicisi tarafından derlenen sonra.
+Örneğin, bir basit olay havuzu için genel bir ATL sınıf uygulamak için uygulayabilirsiniz [event_receiver](event-receiver.md) gibi belirli bir sınıfa öznitelik `CMyReceiver`. `event_receiver` Özniteliği sonra Microsoft tarafından derlenmiş C++ derleyicisi, uygun kod nesnesi dosyasına ekler.
 
 ```cpp
 [event_receiver(com)]
@@ -49,7 +49,7 @@ Ardından ayarlayabilirsiniz `CMyReceiver` yöntemleri `handler1` ve `handler2` 
 
 ## <a name="basic-mechanics-of-attributes"></a>Özniteliklerin Temel Mekanikleri
 
-Öznitelikleri projenize eklemek için üç yolu vardır. İlk olarak, bunları el ile kaynak kodunuza ekleyebilirsiniz. İkinci olarak, projenizde bir nesnenin özellik kılavuzu kullanarak bunları ekleyebilirsiniz. Son olarak, bunları çeşitli sihirbazlar kullanarak ekleyebilirsiniz. Kullanma hakkında daha fazla bilgi için **özellikleri** penceresi ve çeşitli sihirbazlar [oluşturma ve yönetme, Visual C++ projeleri](../../build/creating-and-managing-visual-cpp-projects.md).
+Öznitelikleri projenize eklemek için üç yolu vardır. İlk olarak, bunları el ile kaynak kodunuza ekleyebilirsiniz. İkinci olarak, projenizde bir nesnenin özellik kılavuzu kullanarak bunları ekleyebilirsiniz. Son olarak, bunları çeşitli sihirbazlar kullanarak ekleyebilirsiniz. Kullanma hakkında daha fazla bilgi için **özellikleri** penceresi ve çeşitli sihirbazlar [Visual Studio projeleri - C++ ](../../build/creating-and-managing-visual-cpp-projects.md).
 
 Proje derlenirken olarak önce derleyici bir nesne dosyası üretmek her C++ kaynak dosyası ayrıştırır. Ancak, derleyici bir öznitelik karşılaştığında, ayrıştırılır ve sözdizimsel olarak doğrulandı. Derleyici daha sonra kod ekleyin veya derleme zamanında başka değişiklikler yapmak için bir öznitelik sağlayıcısı dinamik olarak çağırır. Sağlayıcının uygulama özniteliği türüne bağlı olarak farklılık gösterir. Örneğin, ATL ilgili öznitelikleri Atlprov.dll tarafından uygulanır.
 
@@ -64,7 +64,7 @@ Aşağıdaki şekil, derleyici ve öznitelik sağlayıcısı arasındaki ilişki
 
 ## <a name="building-an-attributed-program"></a>Öznitelikli Program Oluşturma
 
-Kaynak kodunuza Visual C++ öznitelikleri geçirdikten sonra sizin için bir tür kitaplığı ve .idl dosyası oluşturmak için Visual C++ derleyicisi isteyebilirsiniz. Aşağıdaki bağlayıcı Yardım .tlb ve .idl dosyalarını derleme seçenekleri:
+Visual yerleştirdiğiniz sonra C++ öznitelikleri Microsoft isteyebileceğiniz Kaynak kodunuza C++ sizin için bir tür kitaplığı ve .idl dosyası üretmek için derleyici. Aşağıdaki bağlayıcı Yardım .tlb ve .idl dosyalarını derleme seçenekleri:
 
 - [/ IDLOUT](../../build/reference/idlout-name-midl-output-files.md)
 

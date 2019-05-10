@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2885
 ms.assetid: 7743e5f3-a034-44b4-9ee8-5a6254c27f8c
-ms.openlocfilehash: 8174faed09bdffbdc6974390cceb7c17661eab4b
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: ff5e770052301e95f694d3712f95b82732c2faba
+ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62388780"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "65447691"
 ---
 # <a name="compiler-error-c2885"></a>Derleyici Hatası C2885
 
@@ -21,7 +21,7 @@ Kullanılan bir [kullanarak](../../cpp/using-declaration.md) bildirimi yanlış.
 
 ## <a name="example"></a>Örnek
 
-Bu hata için Visual C++ 2005 yapıldığı derleyici uyumluluğu iş sonucu olarak oluşturulan: artık sahip için geçerli olan bir `using` ; iç içe geçmiş bir tür bildirimine türü bir ad put iç içe türü, yaptığınız her başvurunun açıkça nitelemeniz gerekir boşluk veya bir tür tanımı oluşturun.
+Bu hata için Visual Studio 2005 yapıldığı derleyici uyumluluğu iş sonucu olarak oluşturulan: artık sahip için geçerli olan bir `using` ; iç içe geçmiş bir tür bildirimine türü bir n put iç içe türü, yaptığınız her başvurunun açıkça nitelemeniz gerekir amespace, veya bir tür tanımı oluşturun.
 
 Aşağıdaki örnek, C2885 oluşturur.
 

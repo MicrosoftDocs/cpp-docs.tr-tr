@@ -5,12 +5,12 @@ helpviewer_keywords:
 - C++ native multi-targeting
 - upgrading Visual C++ applications, retargeting
 ms.assetid: b115aabe-a9dc-4525-90d3-367d97ea20c9
-ms.openlocfilehash: 57e9556ccb7313c137c173e0f2143dc6e563d4c3
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 35f6ac980a451b375d5005c20853fdd29c78d96d
+ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62337160"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "65448948"
 ---
 # <a name="use-native-multi-targeting-in-visual-studio-to-build-old-projects"></a>Yerel çoklu sürüm desteğinin Visual Studio'da eski projeleri oluşturmak için kullanın
 
@@ -44,7 +44,7 @@ Yükseltme seçerseniz Visual Studio çözüm veya proje dosyalarınıza değiş
 
 ## <a name="instructions-for-visual-studio-2008"></a>Visual Studio 2008 için yönergeler
 
-Visual Studio 2008 adlı C++ için kendi özel yapı sistemine sahip **VCBuild**. Visual Studio 2010'da başlıyor, Visual C++ projeleri kullanmak üzere değiştirilmiştir **MSBuild**. Başka bir deyişle, Visual Studio 2008 projelerinizi Visual Studio'nun en son sürümünü derlemek için bir güncelleştirme adım aracılığıyla gitmeniz gerekir. Güncelleştirilmiş projeniz Visual Studio 2008 IDE kullanılarak oluşturulan ikili dosyalarla tam olarak uyumlu ikili dosyaları yine de oluşturur.
+Visual Studio 2008 adlı C++ için kendi özel yapı sistemine sahip **VCBuild**. Visual Studio 2010'da, Visual Studio Başlangıç C++ projeleri kullanılacak değiştirildi **MSBuild**. Başka bir deyişle, Visual Studio 2008 projelerinizi Visual Studio'nun en son sürümünü derlemek için bir güncelleştirme adım aracılığıyla gitmeniz gerekir. Güncelleştirilmiş projeniz Visual Studio 2008 IDE kullanılarak oluşturulan ikili dosyalarla tam olarak uyumlu ikili dosyaları yine de oluşturur.
 
 İlk olarak, Visual Studio geçerli sürümüne ek olarak, Visual Studio 2008 ile aynı bilgisayarda Visual Studio 2010 yüklemelisiniz. Visual Studio 2010 yükler **MSBuild** hedef Visual Studio 2008 projeleri için gereken betikler.
 
@@ -58,7 +58,7 @@ Bu değişiklikten sonra Visual Studio 2008 derleyici ve kitaplıkları, Visual 
 
 ## <a name="install-an-older-visual-studio-toolset"></a>Eski bir Visual Studio araç takımı'nı yükleme
 
-Olamaz ya da yükseltmek istemediğiniz eski bir Visual C++ projesi, ancak projenizi eşleşen olmayan platform araç kümesi sürümünü olabilir. Bu durumda, araç takımı almak için ücretsiz Visual Studio Community'yi veya ihtiyacınız olan sürümü Express sürümü yükleyebilirsiniz. Visual Studio 2008'den Visual Studio'nun her sürümü, derleyici, araçları ve kitaplıklarını geçerli Visual Studio, sürümünü hedefleyecek şekilde ihtiyacınız yükleyebilmek için. Bul ve Visual Studio'nun belirli bir sürümü indirmek için Microsoft Download Center arayın. Kurulum sırasında C++ yükleme seçenekleri seçtiğinizden emin olun. Kurulum tamamlandıktan sonra tüm güncelleştirmeleri yüklemek için Visual Studio'nun bu sürümü çalıştırın. Ayrıca Windows Update değişiklikleri için gerekli olabilecek denetleyin. Bu güncelleştirme onay işlemi her güncelleştirmeyi almak için birden fazla kez yinelenen gerekebilir.
+Eski bir Visual Studio olabilir C++ olamaz ya da yükseltmek istemediğiniz proje, ancak projenizi eşleşen platform araç takımı sürümünü değil. Bu durumda, araç takımı almak için ücretsiz Visual Studio Community'yi veya ihtiyacınız olan sürümü Express sürümü yükleyebilirsiniz. Visual Studio 2008'den Visual Studio'nun her sürümü, derleyici, araçları ve kitaplıklarını geçerli Visual Studio, sürümünü hedefleyecek şekilde ihtiyacınız yükleyebilmek için. Bul ve Visual Studio'nun belirli bir sürümü indirmek için Microsoft Download Center arayın. Kurulum sırasında C++ yükleme seçenekleri seçtiğinizden emin olun. Kurulum tamamlandıktan sonra tüm güncelleştirmeleri yüklemek için Visual Studio'nun bu sürümü çalıştırın. Ayrıca Windows Update değişiklikleri için gerekli olabilecek denetleyin. Bu güncelleştirme onay işlemi her güncelleştirmeyi almak için birden fazla kez yinelenen gerekebilir.
 
 Şu anda kullanılabilir yüklemeler için bkz: [eski Visual Studio yazılımını indirme](https://visualstudio.microsoft.com/vs/older-downloads/).
 

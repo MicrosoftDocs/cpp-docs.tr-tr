@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4459
 ms.assetid: ee9f6287-9c70-4b10-82a0-add82a13997f
-ms.openlocfilehash: 0cbab7c7cca1fc88bb99210262be45c56b6be7a8
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 441d01eca7c8266b6d7948508eeb561341e64c57
+ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62391432"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "65447762"
 ---
 # <a name="compiler-warning-level-4-c4459"></a>Derleyici Uyarısı (düzey 4) C4459
 
@@ -19,7 +19,7 @@ ms.locfileid: "62391432"
 
 Bildirimi *tanımlayıcı* yerel kapsamda aynı adlı bildirimi gizler *tanımlayıcı* genel kapsamda. Bu uyarı, başvuruları size sağlar *tanımlayıcı* bu kapsamda amacınızla olmayabilir veya genel sürümünü değil, yerel olarak bildirilen sürümüne çözün. Genel olarak, iyi bir mühendislik uygulama olarak genel değişkenler kullanımını en aza öneririz. Genel ad alanı kirliliği en aza indirmek için genel değişkenler adlandırılmış bir ad alanı kullanılmasını öneririz.
 
-Bu uyarı, Visual c++ derleyici sürümü 18.00 Visual Studio 2015'te yeni eklendi. Bu sürüm derleyicinin veya kodunuzu geçirme sırasında daha sonra uyarıları bastırmak için kullanmak [/Wv:18](../../build/reference/compiler-option-warning-level.md) derleyici seçeneği.
+Bu uyarıyı Microsoft Visual Studio 2015'te yeni C++ 18.00 derleyici sürümü. Bu sürüm derleyicinin veya kodunuzu geçirme sırasında daha sonra uyarıları bastırmak için kullanmak [/Wv:18](../../build/reference/compiler-option-warning-level.md) derleyici seçeneği.
 
 ## <a name="example"></a>Örnek
 

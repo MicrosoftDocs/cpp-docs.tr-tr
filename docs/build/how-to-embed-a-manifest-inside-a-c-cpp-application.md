@@ -1,21 +1,21 @@
 ---
 title: 'Nasıl yapılır: C/C++ uygulamasına bildirim katıştırma'
-ms.date: 11/04/2016
+ms.date: 05/06/2019
 helpviewer_keywords:
 - manifests [C++]
 - embedding manifests
 - makefiles, updating to embed manifest
 ms.assetid: ec0bac69-2fdc-466c-ab0d-710a22974e5d
-ms.openlocfilehash: 332d6d75080be3fdde6b8238ab79b8e5b1d1121e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: ee60620f2815bb20e2d0f3ecec768d99533437a9
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62274388"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65220707"
 ---
 # <a name="how-to-embed-a-manifest-inside-a-cc-application"></a>Nasıl yapılır: C/C++ uygulamasına bildirim katıştırma
 
-C/C++ uygulamasına (veya kitaplık) sahip olduğundan bu doğru çalışma zamanı davranışı Çoğu senaryoda garanti eder içinde son ikili dosyada gömülü bildirimi önerilir. Varsayılan olarak, Visual Studio kaynak dosyalarından bir proje oluştururken bildirimi katıştırmak çalışır; bkz: [Visual Studio'da bildirim oluşturma](manifest-generation-in-visual-studio.md) daha fazla bilgi için. Nmake kullanarak bir uygulama oluşturulursa, ancak bazı değişiklikler mevcut derleme görevleri dosyası gereklidir. Bu bölüm, nasıl otomatik olarak son ikili bildirim katıştırma için mevcut derleme görevleri dosyalarını değiştirileceğini gösterir.
+Bu doğru çalışma zamanı davranışı Çoğu senaryoda gönderilmesini sağladığından uygulamanızın veya kitaplık içinde son ikili bildirimi ekleme önerilir. Varsayılan olarak, Visual Studio bir proje oluştururken bildirimi katıştırmak çalışır. Daha fazla bilgi için [Visual Studio'da bildirim oluşturma](manifest-generation-in-visual-studio.md). Ancak, nmake kullanarak uygulama derleme, derleme görevleri için bazı değişiklikler yapmanız gerekir. Bu bölümde, derleme görevleri dosyalarını değiştirir, böylece otomatik olarak bildirim son ikili katıştırır işlemi gösterilmektedir.
 
 ## <a name="two-approaches"></a>İki yaklaşım
 
@@ -23,15 +23,19 @@ Bir uygulama veya kitaplık bildirim katıştırma iki yolu vardır.
 
 - Artımlı derleme uygulamıyorsanız doğrudan oluşturma sonrası adımı aşağıdakine benzer bir komut satırı kullanarak bildirimi ekleyebilirsiniz:
 
-   **MT.exe-MyApp.exe.manifest bildirim-outputresource:MyApp.exe;1**
+   ```cmd
+   mt.exe -manifest MyApp.exe.manifest -outputresource:MyApp.exe;1
+   ```
 
    veya
 
-   **mt.exe -manifest MyLibrary.dll.manifest -outputresource:MyLibrary.dll;2**
+   ```cmd
+   mt.exe -manifest MyLibrary.dll.manifest -outputresource:MyLibrary.dll;2
+   ```
 
-   (1 için bir EXE, DLL için 2.)
+   1 bir DLL için bir EXE ve 2 için kullanın.
 
-- Artımlı derleme yapıyorsanız, doğrudan kaynak burada gösterildiği şekilde düzenleyerek artımlı oluşturmayı devre dışı bırakmak ve tam yeniden derleme neden; Bu nedenle, farklı bir yaklaşım gerçekleştirilmelidir:
+- Artımlı derleme yapıyorsanız, aşağıdaki adımları kullanın:
 
    - MyApp.exe.manifest dosyası oluşturmak için ikili bağlayın.
 
@@ -63,7 +67,7 @@ clean :
     del MyApp.obj MyApp.exe
 ```
 
-Bu betik, Visual C++ ile değişmeden çalıştırılırsa başarıyla MyApp.exe oluşturur. Ayrıca, çalışma zamanında bağımlı derlemeleri yüklemek için işletim sistemi tarafından kullanılacak dış bildirim dosyası MyApp.exe.manifest, oluşturur.
+Bu betik ile Visual Studio değiştirilmeden çalışırsa, MyApp.exe başarıyla oluşturur. Ayrıca, çalışma zamanında bağımlı derlemeleri yüklemek için işletim sistemi tarafından kullanılacak dış bildirim dosyası MyApp.exe.manifest, oluşturur.
 
 Nmake betik MyLibrary.dll için çok benzer görünür:
 
@@ -226,7 +230,7 @@ _VC_MANIFEST_CLEAN=
 ####################################################
 ```
 
-Artık makefile.targ.inc oluşturun ve içine aşağıdaki kopyalayın:
+Şimdi oluşturmak **makefile.targ.inc** ve içine aşağıdaki kopyalayın:
 
 ```
 # makefile.targ.inc - include this at the very bottom of the existing makefile
