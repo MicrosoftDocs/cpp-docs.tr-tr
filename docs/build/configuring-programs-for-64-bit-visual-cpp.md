@@ -6,14 +6,13 @@ helpviewer_keywords:
 - 64-bit compiler [C++]
 - 64-bit programming [C++], about 64-bit programming
 - programming [C++], 64-bit
-- Visual C++, 64-bit hardware
 ms.assetid: cb99f72b-8c74-48f4-846a-8921b37b97e9
-ms.openlocfilehash: c56cd34ecbc6615b0acebde6c40c658ca0c436a4
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c95a117205c7c0c1b44c7c7cf00fdc1a90fa3390
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62274687"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65220952"
 ---
 # <a name="configure-c-projects-for-64-bit-x64-targets"></a>C++ projeleri için 64 bit x64 yapılandırma hedefleri
 

@@ -6,18 +6,18 @@ f1_keywords:
 helpviewer_keywords:
 - C1010
 ms.assetid: dfd035f1-a7a2-40bc-bc92-dc4d7f456767
-ms.openlocfilehash: 6974f0d82653203973be50b5ea709bd9487a215f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 204c7ef94d82513338f6635ec9eb22f26fc090a7
+ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62363979"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "65448026"
 ---
 # <a name="fatal-error-c1010"></a>Önemli hata C1010
 
 Beklenmeyen için önceden derlenmiş üst bilgi arayan sırasında dosya sonu. Eklemeyi mi unuttunuz ' #include ' kaynağınız için?
 
-Belirtilen bir dahil etme dosyasından [/Yu](../../build/reference/yu-use-precompiled-header-file.md) kaynak dosyasında listelenmeyen.  Bu seçenek çoğu Visual C++ proje türleri varsayılan olarak etkindir ve "stdafx.h" varsayılan, bu seçeneği tarafından belirtilen dosya dahil edilir.
+Belirtilen bir dahil etme dosyasından [/Yu](../../build/reference/yu-use-precompiled-header-file.md) kaynak dosyasında listelenmeyen.  Bu seçenek çoğu Visual Studio varsayılan olarak etkin C++ proje türleri ve "stdafx.h" olan bu seçeneği tarafından belirtilen dosya varsayılan içerir.
 
 Visual Studio ortamında, bu hatayı gidermek için aşağıdaki yöntemlerden birini kullanın:
 

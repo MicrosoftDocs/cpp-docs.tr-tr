@@ -10,12 +10,12 @@ helpviewer_keywords:
 - MFC ActiveX Control Wizard
 - OLE controls [MFC]
 ms.assetid: f19d698c-bdc3-4c74-af97-3d6ccb441b75
-ms.openlocfilehash: cec4c3aa6aedfa7a1f8234c6cc2355970d453f56
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 3341f840c46584c4e45afe3607c83433976e6c37
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62412780"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65217650"
 ---
 # <a name="mfc-activex-control-wizard"></a>MFC ActiveX Denetim Sihirbazı
 
@@ -64,6 +64,6 @@ Bu sihirbaz sayfası oluşturduğunuz MFC ActiveX denetimi projesi için geçerl
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Visual C++ proje oluşturma ve yönetme](../../build/creating-and-managing-visual-cpp-projects.md)<br/>
-[Visual C++ Proje Türleri](../../build/reference/visual-cpp-project-types.md)<br/>
+[Visual Studio Projeleri - C++](../../build/creating-and-managing-visual-cpp-projects.md)<br/>
+[C++Visual Studio Proje türleri](../../build/reference/visual-cpp-project-types.md)<br/>
 [Kavramları](../../atl/active-template-library-atl-concepts.md)

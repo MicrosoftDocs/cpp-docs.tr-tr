@@ -1,22 +1,19 @@
 ---
 title: Visual Studio projeleri - C++
 ms.date: 12/12/2018
-f1_keywords:
-- vcprojects
-- creatingmanagingVC
 helpviewer_keywords:
 - ATL projects, creating
-- Visual C++ projects, creating
+- Visual Studio C++ projects, creating
 - projects [C++], creating
-- Visual C++ projects
+- Visual Studio C++ projects
 - ATL projects
 ms.assetid: 11003cd8-9046-4630-a189-a32bf3b88047
-ms.openlocfilehash: b4772b9bd625a542a18039386fefe42840ab65b1
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 15adae6cb9908f74d62709622ca3302fd35faa46
+ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62195727"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "65446354"
 ---
 # <a name="visual-studio-projects---c"></a>Visual Studio projeleri - C++
 

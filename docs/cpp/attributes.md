@@ -1,13 +1,13 @@
 ---
 title: C++ öznitelikleri
-ms.date: 06/01/2018
+ms.date: 05/06/2019
 ms.assetid: 748340d9-8abf-4940-b0a0-91b6156a3ff8
-ms.openlocfilehash: 81de2816c208d5ddc879f04d70912c3dddcd7832
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: bc92e5f3e279edc6fbea7f99d52c469f9fdf04f8
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62284753"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65222299"
 ---
 # <a name="attributes-in-c"></a>C++ öznitelikleri
 
@@ -41,7 +41,7 @@ void Foo(int);
 
 - `[[deprecated]]` **Visual Studio 2015 ve sonraki sürümler:** Bir işlev kullanılmak üzere tasarlanmamıştır belirtir ve bir kitaplık arabirimi sürümleri gelecek mevcut olmayabilir. Derleyici bir işlevi çağırmak istemci kodu girişiminde bulunduğunda bir bilgi iletisidir oluşturmak için bunu kullanabilirsiniz. Bir sınıf, typedef adı, bir değişkenin, statik olmayan veri üyesi, bir işlev, bir ad alanı, bir numaralandırma, bir numaralandırıcı veya şablon uzmanlığı bildirimine uygulanabilir.
 
-- `[[fallthrough]]` **Visual Studio 2017 ve üzeri:** (bulunan [/Std: c ++ 17](../build/reference/std-specify-language-standard-version.md)) `[[fallthrough]]` özniteliği bağlamında kullanılabilir [geçiş](switch-statement-cpp.md) derleyici (veya herkesin okuma ipucu olarak deyimleri kodu), fallthrough davranıştır. Bu öznitelik hiçbir etkisi derleyici davranışı Bu nedenle Visual C++ derleyicisi fallthrough davranışı, şu anda uyarmaz.
+- `[[fallthrough]]` **Visual Studio 2017 ve üzeri:** (bulunan [/Std: c ++ 17](../build/reference/std-specify-language-standard-version.md)) `[[fallthrough]]` özniteliği bağlamında kullanılabilir [geçiş](switch-statement-cpp.md) derleyici (veya herkesin okuma ipucu olarak deyimleri kodu), fallthrough davranıştır. Microsoft C++ derleyici şu anda değil uyar fallthrough davranışı üzerinde hiçbir etkisi derleyici davranışı Bu özniteliğe sahiptir.
 
 - `[[nodiscard]]` **Visual Studio 2017 sürüm 15.3 ve üzeri:** (bulunan [/Std: c ++ 17](../build/reference/std-specify-language-standard-version.md)) bir işlevin dönüş değerini atılmak üzere tasarlanmamıştır belirtir. Bu örnekte gösterildiği gibi C4834 uyarı oluşturur:
 

@@ -1,20 +1,18 @@
 ---
 title: DLL'den İşlevleri Ad Yerine Sıraya Göre Dışarı Aktarma
 ms.date: 11/04/2016
-f1_keywords:
-- NONAME
 helpviewer_keywords:
 - exporting functions [C++], ordinal values
 - ordinal exports [C++]
 - exporting DLLs [C++], ordinal values
 - NONAME attribute
 ms.assetid: 679719fd-d965-4df3-9f7a-7d86ad831702
-ms.openlocfilehash: 26b9a51a440e4e05c39908cb437d82e2e08e30c9
-ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
+ms.openlocfilehash: d91b516253fc160686e2f1f6ae1ca1704f707f75
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "64342199"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65221433"
 ---
 # <a name="exporting-functions-from-a-dll-by-ordinal-rather-than-by-name"></a>DLL'den İşlevleri Ad Yerine Sıraya Göre Dışarı Aktarma
 

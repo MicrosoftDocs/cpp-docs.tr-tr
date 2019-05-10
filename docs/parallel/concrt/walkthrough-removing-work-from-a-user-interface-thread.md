@@ -1,16 +1,16 @@
 ---
 title: 'İzlenecek yol: Bir kullanıcı arabirimi iş parçacığından işi kaldırma'
-ms.date: 11/19/2018
+ms.date: 04/25/2019
 helpviewer_keywords:
 - user-interface threads, removing work from [Concurrency Runtime]
 - removing work from user-interface threads [Concurrency Runtime]
 ms.assetid: a4a65cc2-b3bc-4216-8fa8-90529491de02
-ms.openlocfilehash: 1838ad0d6adb146adacb8b3a395f44f76e2a8d3f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
-ms.translationtype: HT
+ms.openlocfilehash: 3bd41b1815737730067929c4728b32181cb2fc03
+ms.sourcegitcommit: 283cb64fd7958a6b7fbf0cd8534de99ac8d408eb
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62407810"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "64856998"
 ---
 # <a name="walkthrough-removing-work-from-a-user-interface-thread"></a>İzlenecek yol: Bir kullanıcı arabirimi iş parçacığından işi kaldırma
 
@@ -54,9 +54,9 @@ Bu bölümde, temel MFC uygulaması oluşturma işlemini açıklar.
 
 ### <a name="to-create-a-visual-c-mfc-application"></a>Bir Visual C++ MFC uygulaması oluşturmak için
 
-1. Üzerinde **dosya** menüsünde tıklatın **yeni**ve ardından **proje**.
+1. Kullanım **MFC Uygulama Sihirbazı** tüm varsayılan ayarlarla bir MFC uygulaması oluşturmak için. Bkz: [izlenecek yol: Yeni MFC Kabuk denetimlerini kullanma](../../mfc/walkthrough-using-the-new-mfc-shell-controls.md) Visual Studio sürümünüz için Sihirbazı'nı açmak yönergeler.
 
-1. İçinde **yeni proje** iletişim kutusundaki **yüklü şablonlar** bölmesinde **Visual C++** ve ardından **şablonları** bölmesinde seçin **MFC uygulaması**. Proje için bir ad yazın örneğin, `Mandelbrot`ve ardından **Tamam** görüntülenecek **MFC Uygulama Sihirbazı**.
+1. Proje için bir ad yazın örneğin, `Mandelbrot`ve ardından **Tamam** görüntülenecek **MFC Uygulama Sihirbazı**.
 
 1. İçinde **uygulama türü** bölmesinde **tek belge**. Emin **belge/görünüm mimarisi desteği** onay kutusu işaretli değilse.
 

@@ -1,23 +1,20 @@
 ---
 title: C++ Dil Başvurusu
 ms.custom: index-page
-ms.date: 11/04/2016
+ms.date: 05/06/2019
 helpviewer_keywords:
-- language reference
 - C++, language reference
-- language reference, Visual C++
-- Visual C++, language reference
 ms.assetid: 4be9cacb-c862-4391-894a-3a118c9c93ce
-ms.openlocfilehash: 8da5a4f7113bbb4256e45e7ec3c91a9c6677643c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 1790f5d7ecf834c97a9242e8f42d1fb402604ac6
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62154665"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65222485"
 ---
 # <a name="c-language-reference"></a>C++ Dil Başvurusu
 
-Bu başvuru, C++ programlama dilini Microsoft Visual C++ içinde uygulandığı şekliyle açıklar. Kuruluş [ *Annotated C++ Reference Manual* ](http://www.stroustrup.com/arm.html) Margaret Ellis ve Bjarne Stroustrup tarafından ve ANSI/ISO C++ International Standard (ISO/IEC FDIS 14882). Microsoft'a özgü C++ dili uygulama özellikleri dahildir.
+Bu başvuru açıklar C++ programlama dilini Microsoft uygulandığı şekilde C++ derleyici. Kuruluş [ *Annotated C++ Reference Manual* ](http://www.stroustrup.com/arm.html) Margaret Ellis ve Bjarne Stroustrup tarafından ve ANSI/ISO C++ International Standard (ISO/IEC FDIS 14882). Microsoft'a özgü C++ dili uygulama özellikleri dahildir.
 
 Modern C++ programlama uygulamalarını genel bakış için bkz. [Hoş Geldiniz geri c++](welcome-back-to-cpp-modern-cpp.md).
 
@@ -90,7 +87,7 @@ COM türlerini destekleyen Microsoft'a özgü sınıflar ve genel işlevler içi
 C++ için Microsoft uzantıları.
 
 [Standart Olmayan Davranış](../cpp/nonstandard-behavior.md)<br/>
-Visual C++ derleyicisi standart dışı davranış hakkında bilgiler.
+Microsoft Standart dışı davranış hakkında bilgi C++ derleyici.
 
 [C++ tekrar Hoş Geldiniz](welcome-back-to-cpp-modern-cpp.md)<br/>
 Modern C++ programlama hakkında genel bakış, güvenli, doğru ve verimli programları yazmak için yöntemleri.
@@ -98,7 +95,7 @@ Modern C++ programlama hakkında genel bakış, güvenli, doğru ve verimli prog
 ## <a name="related-sections"></a>İlgili Bölümler
 
 [Çalışma Zamanı Platformları için Bileşen Uzantıları](../extensions/component-extensions-for-runtime-platforms.md)<br/>
-Hedef .NET için Visual C++ kullanarak başvuru malzemeleridir.
+Başvuru Microsoft kullanarak şirket malzeme C++ hedeflenecek .NET derleyici.
 
 [C/C++ Derleme Başvurusu](../build/reference/c-cpp-building-reference.md)<br/>
 Derleyici seçenekleri, bağlayıcı seçenekleri ve diğer yapı araçları.
@@ -107,7 +104,7 @@ Derleyici seçenekleri, bağlayıcı seçenekleri ve diğer yapı araçları.
 Pragmalarla, önişlemci yönergeleriyle, önceden tanımlanmış makrolarla ve önişlemcilerle ilgili başvuru malzemeleridir.
 
 [Visual C++ kitaplıkları](../standard-library/cpp-standard-library-reference.md)<br/>
-Çeşitli Visual C++ kitaplıklarının başlangıç sayfaları başvurusuna yönelik bağlantıların bir listesidir.
+Çeşitli Microsoft başlangıç sayfaları başvurusuna bağlantıların listesini C++ kitaplıkları.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

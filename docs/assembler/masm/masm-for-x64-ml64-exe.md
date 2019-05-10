@@ -6,28 +6,28 @@ helpviewer_keywords:
 - ml64.exe
 - masm for x64
 ms.assetid: 89059103-f372-4968-80ea-0c7f90bb9c91
-ms.openlocfilehash: 0404bff54a08988a72fcb0a0c075a4446bf90f48
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 1a92d2a22e8aa9df29c18fa36ff4508eb8eec57f
+ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62178247"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "65445859"
 ---
 # <a name="masm-for-x64-ml64exe"></a>x64 (ml64.exe) için (MASM)
 
-Visual Studio hem 32-bit hem de 64-bit barındırılan sürümlerine Microsoft Assembler (MASM) hedef x64 kodu içerir. Ml64.exe olarak adlandırılan bu x64 kabul eden assembler, Çevirici dili. MASM komut satırı araçları, Visual Studio yüklemesi sırasında bir C++ iş yükünü seçtiğinizde yüklenir. MASM araçları, ayrı bir indirme olarak kullanılamaz. Visual Studio'nun bir kopyasını yükleyip konusunda yönergeler için bkz. [Visual Studio'yu yükleyin](/visualstudio/install/install-visual-studio). Tam Visual Studio IDE yüklemek istediğiniz değil ancak yalnızca komut satırı araçlarını istiyorsanız indirme [Visual Studio 2017 için derleme Araçları](https://go.microsoft.com/fwlink/p/?linkid=875721).
+Visual Studio hem 32-bit hem de 64-bit barındırılan sürümlerine Microsoft Assembler (MASM) hedef x64 kodu içerir. Ml64.exe olarak adlandırılan bu x64 kabul eden assembler, Çevirici dili. MASM komut satırı araçları, Visual Studio yüklemesi sırasında bir C++ iş yükünü seçtiğinizde yüklenir. MASM araçları, ayrı bir indirme olarak kullanılamaz. Visual Studio'nun bir kopyasını yükleyip konusunda yönergeler için bkz. [Visual Studio'yu yükleyin](/visualstudio/install/install-visual-studio). Tam Visual Studio IDE yüklemek istediğiniz değil ancak yalnızca komut satırı araçlarını istiyorsanız indirme [Visual Studio derleme Araçları](https://visualstudio.microsoft.com/downloads/).
 
 Yapı için MASM kullanılacak x64 kodunu komut satırında hedefler, x64 için geliştirici komut istemi kullanın gerekli yolu ve diğer ortam değişkenlerini ayarlar hedefler. Bir geliştirici komut istemi başlatmak üzere hakkında daha fazla bilgi için bkz. [komut satırında C/C++ derleme kodu](../../build/building-on-the-command-line.md).
 
 Ml64.exe komut satırı seçenekleri hakkında daha fazla bilgi için bkz: [ML ve ML64 komut satırı başvurusu](../../assembler/masm/ml-and-ml64-command-line-reference.md).
 
-Satır içi Birleştirici veya ASM anahtar x64 veya ARM hedefleri için desteklenmiyor. Bağlantı noktası, x86 bu kullanan satır içi derleyici kodu x64 veya ARM için C++ için kod dönüştürmek, derleyici iç bilgileri veya kullanabilirsiniz Çevirici dil kaynak dosyaları oluşturma. Visual C++ derleyici iç bilgileri ayrıcalıklı, örneğin, tarama ve test, birbirine kenetlenmiş vb., içinde olarak bir platformlar arası şekilde mümkün olduğunca yakın bit işlevi özel yönergeler kullanmanıza olanak tanımak için destekler. Kullanılabilir yapı içleri hakkında daha fazla bilgi için bkz: [derleyici iç bilgileri](../../intrinsics/compiler-intrinsics.md).
+Satır içi Birleştirici veya ASM anahtar x64 veya ARM hedefleri için desteklenmiyor. Bağlantı noktası, x86 bu kullanan satır içi derleyici kodu x64 veya ARM için C++ için kod dönüştürmek, derleyici iç bilgileri veya kullanabilirsiniz Çevirici dil kaynak dosyaları oluşturma. Microsoft C++ derleyici iç bilgileri ayrıcalıklı, örneğin, tarama ve test, birbirine kenetlenmiş vb., içinde olarak bir platformlar arası şekilde mümkün olduğunca yakın bit işlevi özel yönergeler kullanmanıza olanak tanımak için destekler. Kullanılabilir yapı içleri hakkında daha fazla bilgi için bkz: [derleyici iç bilgileri](../../intrinsics/compiler-intrinsics.md).
 
-## <a name="add-an-assembler-language-file-to-a-visual-c-project"></a>Bir Visual C++ projesine bir çevirici dili dosyası ekleme
+## <a name="add-an-assembler-language-file-to-a-visual-studio-c-project"></a>Bir Visual Studio için bir dil derleyicisi dosyası ekleme C++ proje
 
 Visual Studio Proje sistemi, C++ projelerinizde MASM kullanılarak oluşturulan Çevirici dil dosyalarını destekler. Çevirici dili kaynak dosyaları ve tam olarak x64 destekleyen MASM kullanarak nesne dosyalarına yapı x64 oluşturabilirsiniz. Bu nesne dosyaları için x64 yerleşik C++ kodunuzu ardından bağlanabilirsiniz hedefler. X x64 eksikliği çözmenin bir yolu budur satır içi derleyici.
 
-### <a name="to-add-an-assembler-language-file-to-an-existing-visual-c-project"></a>Varolan bir Visual C++ projesine bir çevirici dili dosyası eklemek için
+### <a name="to-add-an-assembler-language-file-to-an-existing-visual-studio-c-project"></a>Varolan bir Visual Studio bir çevirici dili dosyası eklemek için C++ proje
 
 1. Projede seçin **Çözüm Gezgini**. Menü çubuğunda, **proje**, **yapı özelleştirmeleri**.
 

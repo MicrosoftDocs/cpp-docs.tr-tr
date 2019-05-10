@@ -1,17 +1,15 @@
 ---
 title: 'Nasıl yapılır: MSBuild projelerinde derleme olaylarını kullanma'
 ms.date: 11/04/2016
-f1_keywords:
-- msbuild.cpp.howto.usebuildevents
 helpviewer_keywords:
 - 'msbuild (c++), howto: use build events in projects'
 ms.assetid: 2a58dc9d-3d50-4e49-97c1-86c5a05ce218
-ms.openlocfilehash: 7678b975558b245fb730bff35fb156bf21d7f895
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 8f4ccea66f7346512df88fc4c6078752c624aaa9
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62273488"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65221459"
 ---
 # <a name="how-to-use-build-events-in-msbuild-projects"></a>Nasıl yapılır: MSBuild projelerinde derleme olaylarını kullanma
 
@@ -39,7 +37,7 @@ Aşağıdaki tabloda her listeler *yapı içinde kullanımı* öğesi:
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, oluşturduğunuz myproject.vcxproj dosyanın proje öğesi içinde eklenebilir [izlenecek yol: Visual C++ projesi oluşturmak için MSBuild kullanma](walkthrough-using-msbuild-to-create-a-visual-cpp-project.md). A *derleme öncesi* olay yaptığı bir kopyasını Main.cpp olarak; bir *bağlama öncesi* bir kopyasını main.obj; ve bir olay yapar *derleme sonrası* olay myproject.exe bir kopyasını getirir. Proje yayın yapılandırma kullanılarak oluşturulmuşsa, derleme olayları yürütülür. Proje hata ayıklama Yapılandırması kullanılarak oluşturulmuşsa, derleme olayları yürütülmedi.
+Aşağıdaki örnek, oluşturduğunuz myproject.vcxproj dosyanın proje öğesi içinde eklenebilir [izlenecek yol: Oluşturmak için MSBuild'ı kullanarak bir C++ proje](walkthrough-using-msbuild-to-create-a-visual-cpp-project.md). A *derleme öncesi* olay yaptığı bir kopyasını Main.cpp olarak; bir *bağlama öncesi* bir kopyasını main.obj; ve bir olay yapar *derleme sonrası* olay myproject.exe bir kopyasını getirir. Proje yayın yapılandırma kullanılarak oluşturulmuşsa, derleme olayları yürütülür. Proje hata ayıklama Yapılandırması kullanılarak oluşturulmuşsa, derleme olayları yürütülmedi.
 
 ```
 <ItemDefinitionGroup>
@@ -73,4 +71,4 @@ Aşağıdaki örnek, oluşturduğunuz myproject.vcxproj dosyanın proje öğesi 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [MSBuild komut satırında - C++](msbuild-visual-cpp.md)<br/>
-[İzlenecek yol: Visual C++ Projesi Oluşturmak için MSBuild Kullanma](walkthrough-using-msbuild-to-create-a-visual-cpp-project.md)
+[İzlenecek yol: C++ Projesi Oluşturmak için MSBuild Kullanma](walkthrough-using-msbuild-to-create-a-visual-cpp-project.md)

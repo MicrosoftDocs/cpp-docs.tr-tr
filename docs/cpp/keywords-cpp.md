@@ -3,18 +3,14 @@ title: Anahtar sözcükler (C++)
 ms.custom: index-page
 ms.date: 10/10/2018
 helpviewer_keywords:
-- Visual C++, keywords
 - keywords [C++]
-- __identifer keyword [C++], naming
-- Microsoft-specific keywords
-- __identifer keyword [C++]
 ms.assetid: d7ca94a8-f785-41ce-9f73-d3c4fd508489
-ms.openlocfilehash: f87c2401bcc964229d3c0b3cf7119a09553cc2f2
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 4dca4d034a4d755898e0f6160b231fc5f3734cb4
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62216530"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65222414"
 ---
 # <a name="keywords-c"></a>Anahtar sözcükler (C++)
 

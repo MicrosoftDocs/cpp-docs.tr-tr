@@ -1,15 +1,15 @@
 ---
-title: BSCMAKE hataları ve Uyarıları
+title: BSCMAKE hataları ve uyarıları
 ms.date: 04/16/2019
 ms.assetid: 3767baa6-e639-472e-99fd-7543fd945cd3
 ms.openlocfilehash: e6abc334d9ecf5df54d200ab242c91a7035ab226
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.sourcegitcommit: 283cb64fd7958a6b7fbf0cd8534de99ac8d408eb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62299848"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "64856362"
 ---
-# <a name="bscmake-errors-and-warnings-bkxxxx"></a>BSCMAKE hataları ve Uyarıları (BKxxxx)
+# <a name="bscmake-errors-and-warnings-bkxxxx"></a>BSCMAKE hataları ve uyarıları (BKxxxx)
 
 Bu bölüm hatalara bir başvurudur ve aracı BSCMAKE tarafından oluşturulan uyarılar oluşturun. BSCMAKE hataları ve Uyarıları olan form SİY*xxxx*burada *xxxx* bir dört basamaklı sayıdır.
 

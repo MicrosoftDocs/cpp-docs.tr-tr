@@ -1,6 +1,6 @@
 ---
 title: Derleyici Seçenekleri makroları
-ms.date: 11/04/2016
+ms.date: 05/06/2019
 f1_keywords:
 - _ATL_ALL_WARNINGS
 - _ATL_APARTMENT_THREADED
@@ -16,12 +16,12 @@ f1_keywords:
 helpviewer_keywords:
 - compiler options, macros
 ms.assetid: a869adc6-b3de-4299-b040-9ae20b45f82c
-ms.openlocfilehash: 79b1cabc0304e905012db5f6dd73ed71073c0c1e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e1d0f6e068989179dd9498e399ca5304a2b378b8
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62278429"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65221121"
 ---
 # <a name="compiler-options-macros"></a>Derleyici Seçenekleri makroları
 
@@ -32,7 +32,7 @@ Bu makrolar özgü derleyici özelliklerini denetleyin.
 |[_ATL_ALL_WARNINGS](#_atl_all_warnings)|ATL önceki sürümlerinden dönüştürülmüş projelerinde hatalar sağlayan bir simge|
 |[_ATL_APARTMENT_THREADED](#_atl_apartment_threaded)|Bir veya daha fazla nesnelerinizi iş parçacığı grubu kullanıyorsanız tanımlayın.|
 |[_ATL_CSTRING_EXPLICIT_CONSTRUCTORS](#_atl_cstring_explicit_constructors)|Bilmesini sağlar `CString` oluşturucuları açık, yanlışlıkla dönüştürmenin engelliyor.|
-|[_ATL_ENABLE_PTM_WARNING](#_atl_enable_ptm_warning)|Bir üye işlevine bir işaretçi başlatmak için standart olmayan bir sözdizimi kullanıldığında C4867 derleyici hatası oluşturur C++ Standart uyumlu sözdizimi kullanmak için bu makroyu tanımlar.|
+|[_ATL_ENABLE_PTM_WARNING](#_atl_enable_ptm_warning)|Kullanmak için bu makroyu tanımla C++ C4867 derleyici hatası oluşturur bir üye işlevine bir işaretçi başlatmak için standart olmayan bir sözdizimi kullanıldığında, standart uyumlu sözdizimi.|
 |[_ATL_FREE_THREADED](#_atl_free_threaded)|Bir veya daha fazla nesnelerinizi ücretsiz veya nötr iş parçacığı kullanırsanız tanımlayın.|
 |[_ATL_MULTI_THREADED](#_atl_multi_threaded)|Projeyi gösteren bir simge Both, boş veya nötr olarak işaretlenen nesneleri olacaktır. Makro [_ATL_FREE_THREADED](#_atl_free_threaded) bunun yerine kullanılmalıdır.|
 |[_ATL_NO_AUTOMATIC_NAMESPACE](#_atl_no_automatic_namespace)|ATL olarak ad alanı varsayılan kullanımını engelleyen bir sembol|
@@ -113,7 +113,7 @@ _T makrosu tüm Oluşturucu dize bağımsız değişkenleri kullanarak _ATL_CSTR
 
 ### <a name="remarks"></a>Açıklamalar
 
-ATL ve MFC kitaplıkları, Visual C++ derleyicisinin geliştirilmiş standart C++ uyumluluk eşleşecek şekilde değiştirildi. ANSI C++ standardına göre söz dizimi bir sınıf üyesi işlevi için bir işaretçi olmalıdır `&CMyClass::MyFunc`.
+ATL ve MFC kitaplıkları, Microsoft eşleşecek şekilde değiştirilmiş C++ derleyicinin geliştirilmiş standart C++ uyumluluk. ANSI C++ standardına göre söz dizimi bir sınıf üyesi işlevi için bir işaretçi olmalıdır `&CMyClass::MyFunc`.
 
 Zaman [_ATL_ENABLE_PTM_WARNING](#_atl_enable_ptm_warning) tanımlanmamış böylece önceki sürümlerinde oluşturulan kod, önceki gibi oluşturmaya devam edebilirsiniz (varsayılan durumda) ATL/MFC C4867 hata makrosu Maps (özellikle ileti eşlemeleri) devre dışı bırakır. Tanımlarsanız **_ATL_ENABLE_PTM_WARNING**, kodunuz olmalıdır C++ standart uyumlu.
 

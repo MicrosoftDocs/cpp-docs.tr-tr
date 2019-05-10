@@ -2,12 +2,12 @@
 title: Bağımlı Türleri Ad Çözme
 ms.date: 11/04/2016
 ms.assetid: 34066bb4-0c79-4fd8-bda7-539a60a277ab
-ms.openlocfilehash: 04db4b0efc5e58dbd3de6fc9979c3a3cdd44d84e
-ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
+ms.openlocfilehash: 798cc7067967e8992c32d7c0ced9f647e4877110
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "64345932"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65222409"
 ---
 # <a name="name-resolution-for-dependent-types"></a>Bağımlı Türleri Ad Çözme
 
@@ -90,7 +90,7 @@ Int MyNamespace::myFunction
 
 ### <a name="template-disambiguation"></a>Şablon Kesinleştirme
 
-Visual Studio 2012, C ++ 98/03/11 standart kurallarını "Şablon" anahtar sözcüğü ile Kesinleştirme için zorlar. Aşağıdaki örnekte, Visual C++ 2010 hem uyumsuz satırları hem de uyumlu satırları kabul eder.  Visual Studio 2012, yalnızca uyumlu satırları kabul eder.
+Visual Studio 2012, C ++ 98/03/11 standart kurallarını "Şablon" anahtar sözcüğü ile Kesinleştirme için zorlar. Aşağıdaki örnekte, Visual Studio 2010 hem uyumsuz satırları hem de uyumlu satırları kabul eder.  Visual Studio 2012, yalnızca uyumlu satırları kabul eder.
 
 ```cpp
 #include <iostream>

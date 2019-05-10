@@ -4,18 +4,18 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - side-by-side applications [C++]
 ms.assetid: 7fa20b16-3737-4f76-a0b5-1dacea19a1e8
-ms.openlocfilehash: 037fde58366ea4548ce3c7ff56c38cfc1a58aa17
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: d5d7652b6424177191275f8f80d7b1f6cf02b261
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62195150"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65221135"
 ---
 # <a name="building-cc-side-by-side-assemblies"></a>C/C++ Yan Yana Derlemeleri Oluşturma
 
 A [yan yana derleme](/windows/desktop/SbsCs/about-side-by-side-assemblies-) bir kaynaklar koleksiyonudur — bir grup dll, windows sınıfları, COM sunucuları, tür kitaplıkları veya arabirimler — çalışma zamanında kullanmak bir uygulama için kullanılabilir. Derlemelerde DLL'leri yeniden paketleme birincil avantajı, derlemeleri birden çok sürümünü aynı anda uygulamalar tarafından kullanılabilir ve şu anda yüklü hizmet derlemelere güncelleştirme yayın olması durumunda mümkündür olmasıdır.
 
-Visual C++ uygulaması, bir veya birden çok uygulamanın farklı kısımlarını DLL'lerde kullanabilir. Çalışma zamanında, DLL'leri ana işlem içine yüklenmiş ve gerekli kod yürütülür. Uygulamanın işletim sistemi, istenen DLL'leri bulun, bağımlı diğer DLL'leri yüklenmesi ve sonra bunları istenen DLL ile birlikte yüklemek sahip anlamak için kullanır. Windows işletim sistemi sürümlerinde bağımlı DLL'lerin uygulamanın yerel klasörü veya sistem yolunda belirtilen başka bir klasöre Windows XP, Windows Server 2003 ve Windows Vista'den önceki işletim sistemi yükleyicisi arar. Windows XP, Windows Server 2003 ve Windows Vista üzerinde işletim sistemi yükleyicisi kullanarak bağımlı dll dosyaları için de arayabilirsiniz bir [bildirim](/windows/desktop/sbscs/manifests) dosya ve bu DLL'leri içeren yan yana derlemeler arayın.
+A C++ uygulama bir veya birden çok uygulamanın farklı kısımlarını DLL'lerde kullanabilir. Çalışma zamanında, DLL'leri ana işlem içine yüklenmiş ve gerekli kod yürütülür. Uygulamanın işletim sistemi, istenen DLL'leri bulun, bağımlı diğer DLL'leri yüklenmesi ve sonra bunları istenen DLL ile birlikte yüklemek sahip anlamak için kullanır. Windows işletim sistemi sürümlerinde bağımlı DLL'lerin uygulamanın yerel klasörü veya sistem yolunda belirtilen başka bir klasöre Windows XP, Windows Server 2003 ve Windows Vista'den önceki işletim sistemi yükleyicisi arar. Windows XP, Windows Server 2003 ve Windows Vista üzerinde işletim sistemi yükleyicisi kullanarak bağımlı dll dosyaları için de arayabilirsiniz bir [bildirim](/windows/desktop/sbscs/manifests) dosya ve bu DLL'leri içeren yan yana derlemeler arayın.
 
 Varsayılan olarak, Visual Studio ile bir DLL derlenirken, sahip bir [uygulama bildirimini](/windows/desktop/SbsCs/application-manifests) kimliği 2'ye eşit olan bir rt_manıfest kaynak olarak gömülü. Yalnızca bir yürütülebilir dosya olduğu gibi bu bildirim diğer derlemeleri bu DLL bağımlılıkları açıklar. Bu DLL, yan yana derlemenin parçası değildir ve bu DLL bağımlı uygulamaları yükler, ancak bunun yerine sistem yolunda bu DLL bulmak için işletim sistemi yükleyicisi kullanan bir uygulama bildirimi kullanmanız yapmayacağınız varsayar.
 

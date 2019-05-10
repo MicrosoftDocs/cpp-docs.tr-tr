@@ -6,12 +6,12 @@ helpviewer_keywords:
 - Visual C++, development tools
 author: corob-msft
 ms.author: corob
-ms.openlocfilehash: 207d99419499187715cf9088652d64b79b7ba34d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 18d13fa74554e2cb37c02bc0e5a00443e7813798
+ms.sourcegitcommit: 18d3b1e9cdb4fc3a76f7a650c31994bdbd2bde64
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62352721"
+ms.lasthandoff: 04/29/2019
+ms.locfileid: "64876884"
 ---
 # <a name="overview-of-c-development-in-visual-studio"></a>Visual Studio’da C++ geliştirmeye genel bakış
 
@@ -23,11 +23,21 @@ Visual Studio IDE'de paylaşılan araçlara ek olarak, MSVC yerel kod geliştirm
 
 A *proje* temel bir kaynak kodu dosyaları ve yürütülebilir bir dosyada yerleşik görüntüleri veya veri dosyaları gibi kaynakları kümesidir.
 
-Visual Studio 2017, herhangi bir derleme sistemi veya tam IntelliSense, göz atma ve hata ayıklama desteği ile kullanmak istediğiniz özel derleme araçları için destek sağlar:
+Visual Studio, herhangi bir derleme sistemi veya tam IntelliSense, göz atma ve hata ayıklama desteği ile kullanmak istediğiniz özel derleme araçları için destek sağlar:
 
 - **MSBuild** yerel yapı sistemi için Visual Studio. Seçtiğinizde, **dosya** > **yeni** > **proje** birçok farklı MSBuild'in gördüğünüz ana menüden *proje şablonları*  hızlıca farklı türde C++ uygulamalar geliştirmeye başlamanıza edinin.
 
+::: moniker range="vs-2019"
+
+   ![Yeni proje şablonları](../build/media/mathclient-project-name-2019.png "Visual Studio 2019 yeni proje iletişim kutusu")
+
+::: moniker-end
+
+::: moniker range="<=vs-2017"
+
    ![Proje şablonları](media/vs2017-new-project.png "Visual Studio 2017 yeni proje iletişim kutusu")
+
+::: moniker-end
 
    Genel olarak, CMake veya başka bir proje sistemi kullanmak için belirli bir neden olmadığı sürece, bu şablonlardan yeni projeler için kullanmanız gerekir. Bazı projeler sahip bir *Sihirbazı* , size yeni bir proje oluşturma işleminde size adım adım. Daha fazla bilgi için [oluşturma ve yönetme MSBuild tabanlı projeler](../build/creating-and-managing-visual-cpp-projects.md).
 
@@ -38,7 +48,17 @@ Visual Studio 2017, herhangi bir derleme sistemi veya tam IntelliSense, göz atm
 
 Kaynak denetimi işi birden fazla Geliştirici arasında devam eden üretim kodundan yalıtmak ve kaynak kodunuzu yedekleme sağlar. Visual Studio, Git destekler ve [Team Foundation sürüm denetimi \(TFVC\) ](/azure/devops/repos/tfvc/) aracılığıyla kendi **Takım Gezgini** penceresi.
 
+::: moniker range="vs-2019"
+
+![Takım Gezgini](media/vs2019-team-explorer.png "Visual Studio 2017 Takım Gezgini")
+
+::: moniker-end
+
+::: moniker range="<=vs-2017"
+
 ![Takım Gezgini](media/vs2017-team-explorer.png "Visual Studio 2017 Takım Gezgini")
+
+::: moniker-end
 
 Azure'da depolarla Git tümleştirmesi hakkında daha fazla bilgi için bkz: [Azure depoları Git ile Visual Studio 2017 ile kodunuzu paylaşmaya](/azure/devops/repos/git/share-your-code-in-git-vs-2017). GitHub ile Git tümleştirmesi hakkında daha fazla bilgi için bkz. [Visual Studio için GitHub uzantısı](https://visualstudio.github.com/).
 
@@ -72,7 +92,9 @@ Ekleme ve kaynakları yerel Masaüstü C++ projelerinde düzenleme hakkında dah
 
 Seçin **derleme** > **Çözümü Derle** menüsünde çubuk veya derlemek ve bir proje bağlamak için Ctrl + Shift + B tuş bileşimi girin. Derleme hataları ve uyarıları hata olarak raporlanır (Ctrl +\\, E). **Çıkış** penceresi (Alt + 2), yapı işlemi hakkında bilgi gösterir.
 
-![Çıkış penceresi ve hata listesi](media/vs2017-output-error-list.png "Visual Studio 2017 çıktı penceresi ve hata listesi") MSBuild yapılandırmaları hakkında daha fazla bilgi için bkz. [Working with Project Properties](../build/working-with-project-properties.md) ve [Projeler ve yapı sistemi](../build/projects-and-build-systems-cpp.md).
+![Çıkış penceresi ve hata listesi](media/vs2017-output-error-list.png "Visual Studio 2017 çıktı penceresi ve hata listesi")
+
+MSBuild yapılandırmaları hakkında daha fazla bilgi için bkz. [Working with Project Properties](../build/working-with-project-properties.md) ve [projeler ve yapı sistemi](../build/projects-and-build-systems-cpp.md).
 
 Ayrıca, derleyici (cl.exe) ve diğer birçok derlemeyle ilgili tek başına Araçlar NMAKE ve LIB gibi komut satırından doğrudan da kullanabilirsiniz. Daha fazla bilgi için [komut satırında C/C++ derleme kodu](../build/building-on-the-command-line.md) ve [C/C++ oluşturma başvurusu](../build/reference/c-cpp-building-reference.md).
 

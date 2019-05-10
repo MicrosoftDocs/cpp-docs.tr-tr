@@ -1,15 +1,15 @@
 ---
 title: 'İzlenecek yol: Yeni MFC Kabuk denetimlerini kullanma'
-ms.date: 09/20/2018
+ms.date: 04/25/2019
 helpviewer_keywords:
 - shell controls (MFC)
 ms.assetid: f0015caa-199d-4aaf-9501-5a239fce9095
-ms.openlocfilehash: ef0e4856a844503f8d13b7b6ed37318b76b6af69
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
-ms.translationtype: HT
+ms.openlocfilehash: b75568c0207dc004bbdb919427e4f3f6860c4a81
+ms.sourcegitcommit: 283cb64fd7958a6b7fbf0cd8534de99ac8d408eb
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62358183"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "64558141"
 ---
 # <a name="walkthrough-using-the-new-mfc-shell-controls"></a>İzlenecek yol: Yeni MFC Kabuk denetimlerini kullanma
 
@@ -17,31 +17,71 @@ Bu kılavuzda, dosya Gezgini'ne benzeyen bir uygulama oluşturacaksınız. İki 
 
 ## <a name="prerequisites"></a>Önkoşullar
 
-Bu izlenecek yol, Visual Studio'yu kullanmak için ayarladığınız varsayılmaktadır **genel geliştirme ayarları**. Farklı geliştirme ayarı kullanıyorsanız, bu kılavuzda kullandığımız bazı Visual Studio windows varsayılan olarak görüntülenmeyebilir.
+- Visual Studio 2017 ve sonraki sürümlerinde, MFC desteği isteğe bağlı bir bileşendir. Yüklemek için Windows Başlat menüsünde Visual Studio Yükleyicisi'ni açın. Kullanıyorsanız ve seçin Visual Studio sürümünü bulun **Değiştir** düğmesi. Emin **ile masaüstü geliştirme C++**  kutucuk denetlenir. Altında **isteğe bağlı bileşenler**, kontrol **MFC desteği** düğmesi.
 
-### <a name="to-create-a-new-mfc-application-by-using-the-mfc-application-wizard"></a>MFC Uygulama Sihirbazı'nı kullanarak yeni bir MFC uygulaması oluşturmak için
+- Bu izlenecek yol, Visual Studio'yu kullanmak için ayarladığınız varsayılmaktadır **genel geliştirme ayarları**. Farklı geliştirme ayarı kullanıyorsanız, bu kılavuzda kullandığımız bazı Visual Studio windows varsayılan olarak görüntülenmeyebilir.
+
+## <a name="to-create-a-new-mfc-application-by-using-the-mfc-application-wizard"></a>MFC Uygulama Sihirbazı'nı kullanarak yeni bir MFC uygulaması oluşturmak için
+
+Bu adımlar, kullandığınız Visual Studio'nun hangi sürümünün bağlı olarak farklılık gösterir. Bu sayfanın sol üst sürüm seçicisinde doğru ayarlandığından emin olun.
+
+::: moniker range="vs-2019"
+
+### <a name="to-create-an-mfc-project-in-visual-studio-2019"></a>Visual Studio 2019 içinde bir MFC projesi oluşturmak için
+
+1. Ana menüden **dosya** > **yeni** > **proje** açmak için **yeni bir proje oluşturma** iletişim bir kutu.
+
+1. Üstteki arama kutusuna yazın **MFC** seçip **MFC uygulaması** sonuçlar listesinden. 
+
+1. **İleri**'ye tıklayın. Sonraki sayfada, proje için bir ad girin ve istenen proje konumu belirtin.
+
+1. Seçin **Oluştur** projeyi oluşturmak için.
+
+   Sonra **MFC Uygulama Sihirbazı** görüntüler, aşağıdaki seçenekleri kullanın:
+ 
+   1. Seçin **uygulama türü** soldaki. Ardından **tek belge** seçip **belge/görünüm mimarisi desteği**. Altında **proje stili**seçin **Visual Studio**, gelen ve giden **görsel stil ve renkler** listesi seçin, açılan **Office 2007 (mavi tema)**.
+
+   1. Üzerinde **bileşik belge desteği** bölmesinde **hiçbiri**.
+
+   1. Herhangi bir değişiklik yapmayın **belge şablonu özellikleri** bölmesi.
+
+   1. Üzerinde **kullanıcı arabirimi özellikleri** bölmesinde emin olun **menü çubuğu ve araç çubuğu kullan** seçeneği belirlenir. Diğer tüm seçenekler olduğu gibi bırakın.
+
+   1. Üzerinde **Gelişmiş Özellikler** bölmesinde **ActiveX denetimlerini**, **ortak denetim bildirimi**, ve **Gezinti bölmesinde** seçeneği. Diğer her şey, olduğu gibi bırakın. **Gezinti bölmesinde** seçeneği ile penceresinin sol bölmesinde oluşturmak için Sihirbazı neden olacak bir `CMFCShellTreeCtrl` zaten eklenmiş.
+
+   1. Değişiklik kullanacağız olmayan **oluşturulan sınıflar** bölmesinde, bunu **son** yeni MFC projenizi oluşturmak için.
+
+::: moniker-end
+
+::: moniker range="<=vs-2017"
+
+### <a name="to-create-an-mfc-project-in-visual-studio-2017-or-earlier"></a>Visual Studio 2017 veya önceki bir MFC projesi oluşturmak için
 
 1. Kullanım **MFC Uygulama Sihirbazı** yeni bir MFC uygulaması oluşturmak için. Sihirbazı çalıştırmak **dosya** menüsünü seçin **yeni**ve ardından **proje**. **Yeni proje** iletişim kutusu görüntülenir.
 
-1. İçinde **yeni proje** iletişim kutusunda **Visual C++** düğümünde **proje türleri** bölmesi ve select **MFC**. Ardından **şablonları** bölmesinde **MFC uygulaması**. Proje için bir ad yazın `MFCShellControls` tıklatıp **Tamam**. Sonra **MFC Uygulama Sihirbazı** görüntüler, aşağıdaki seçenekleri kullanın:
+1. İçinde **yeni proje** iletişim kutusunda **Visual C++** düğümünde **proje türleri** bölmesi ve select **MFC**. Ardından **şablonları** bölmesinde **MFC uygulaması**. Proje için bir ad yazın `MFCShellControls` tıklatıp **Tamam**. 
 
-    1. Üzerinde **uygulama türü** bölmesi altında **uygulama türü**temizleyin **belgeleri sekmeli** seçeneği. Ardından, **tek belge** seçip **belge/görünüm mimarisi desteği**. Altında **proje stili**seçin **Visual Studio**, gelen ve giden **görsel stil ve renkler** listesi seçin, açılan **Office 2007 (mavi tema)**.
+   Sonra **MFC Uygulama Sihirbazı** görüntüler, aşağıdaki seçenekleri kullanın:
 
-    1. Üzerinde **bileşik belge desteği** bölmesinde **hiçbiri**.
+   1. Üzerinde **uygulama türü** bölmesi altında **uygulama türü**temizleyin **belgeleri sekmeli** seçeneği. Ardından, **tek belge** seçip **belge/görünüm mimarisi desteği**. Altında **proje stili**seçin **Visual Studio**, gelen ve giden **görsel stil ve renkler** listesi seçin, açılan **Office 2007 (mavi tema)**.
 
-    1. Herhangi bir değişiklik yapmayın **belge şablonu dizeleri** bölmesi.
+   1. Üzerinde **bileşik belge desteği** bölmesinde **hiçbiri**.
 
-    1. Üzerinde **veritabanı desteği** bölmesinde (Visual Studio 2015 veya daha eski), seçin **hiçbiri** uygulama bir veritabanı kullanmadığı.
+   1. Herhangi bir değişiklik yapmayın **belge şablonu dizeleri** bölmesi.
 
-    1. Üzerinde **kullanıcı arabirimi özellikleri** bölmesinde emin olun **menü çubuğu ve araç çubuğu kullan** seçeneği belirlenir. Diğer tüm seçenekler olduğu gibi bırakın.
+   1. Üzerinde **veritabanı desteği** bölmesinde (Visual Studio 2015 veya daha eski), seçin **hiçbiri** uygulama bir veritabanı kullanmadığı.
 
-    1. Üzerinde **Gelişmiş Özellikler** bölmesi altında **Gelişmiş Özellikler**, yalnızca belirli **ActiveX denetimlerini** ve **ortak denetim bildirimi**. Altında **gelişmiş çerçeve bölmeleri**, yalnızca belirli **Gezinti bölmesinde** seçeneği. Penceresinin sol bölmesinde oluşturmak için Sihirbazı neden olacak bir `CMFCShellTreeCtrl` zaten eklenmiş.
+   1. Üzerinde **kullanıcı arabirimi özellikleri** bölmesinde emin olun **menü çubuğu ve araç çubuğu kullan** seçeneği belirlenir. Diğer tüm seçenekler olduğu gibi bırakın.
 
-    1. Değişiklik kullanacağız olmayan **oluşturulan sınıflar** bölmesinde, bunu **son** yeni MFC projenizi oluşturmak için.
+   1. Üzerinde **Gelişmiş Özellikler** bölmesi altında **Gelişmiş Özellikler**, yalnızca belirli **ActiveX denetimlerini** ve **ortak denetim bildirimi**. Altında **gelişmiş çerçeve bölmeleri**, yalnızca belirli **Gezinti bölmesinde** seçeneği. Penceresinin sol bölmesinde oluşturmak için Sihirbazı neden olacak bir `CMFCShellTreeCtrl` zaten eklenmiş.
 
-1. Oluşturma ve çalışan uygulamanın başarıyla oluşturulduğunu doğrulayın. Öğesinden, uygulamayı oluşturmak için **derleme** menüsünü seçin **Çözümü Derle**. Uygulama başarıyla derlenirse seçerek uygulamayı çalıştırmak **hata ayıklamayı Başlat** gelen **hata ayıklama** menüsü.
+   1. Değişiklik kullanacağız olmayan **oluşturulan sınıflar** bölmesinde, bunu **son** yeni MFC projenizi oluşturmak için.
 
-   Sihirbaz ile penceresinin sol tarafında için bir standart menü çubuğu, standart araç çubuğu, standart durum çubuğu ve bir Outlook çubuğu olan bir uygulama otomatik olarak oluşturur. bir **klasörleri** görünümü ve bir **Takvim** görüntüle .
+::: moniker-end
+
+Oluşturma ve çalışan uygulamanın başarıyla oluşturulduğunu doğrulayın. Öğesinden, uygulamayı oluşturmak için **derleme** menüsünü seçin **Çözümü Derle**. Uygulama başarıyla derlenirse seçerek uygulamayı çalıştırmak **hata ayıklamayı Başlat** gelen **hata ayıklama** menüsü.
+
+Sihirbaz ile penceresinin sol tarafında için bir standart menü çubuğu, standart araç çubuğu, standart durum çubuğu ve bir Outlook çubuğu olan bir uygulama otomatik olarak oluşturur. bir **klasörleri** görünümü ve bir **Takvim** görüntüle .
 
 ### <a name="to-add-the-shell-list-control-to-the-document-view"></a>Belge Görünümü Kabuk liste denetimi eklemek için
 
@@ -90,7 +130,7 @@ Bu izlenecek yol, Visual Studio'yu kullanmak için ayarladığınız varsayılma
 
 1. Güncelleştiriyoruz artık `CMFCShellControlsView` işlemek için sınıfın `WM_CREATE` windows iletisi. Açık **sınıf görünümü** penceresi ve select `CMFCShellControlsView` sınıfı. Sağ tıklayıp **özellikleri**.
 
-    Ardından **özellikleri** penceresinde tıklayın **iletileri** simgesi. Bulana kadar aşağıya kaydırın `WM_CREATE` ileti. Açılan listeden listesinde yanındaki `WM_CREATE`seçin  **\<Ekle > OnCreate**. Komut için bize bir ileti işleyicisi oluşturur ve MFC ileti eşlemesi otomatik olarak güncelleştirir.
+   Ardından **özellikleri** penceresinde tıklayın **iletileri** simgesi. Bulana kadar aşağıya kaydırın `WM_CREATE` ileti. Açılan listeden listesinde yanındaki `WM_CREATE`seçin  **\<Ekle > OnCreate**. Komut için bize bir ileti işleyicisi oluşturur ve MFC ileti eşlemesi otomatik olarak güncelleştirir.
 
    İçinde `OnCreate` yöntemi, artık oluşturacağımız bizim `CMFCShellListCtrl` nesne. Bulma `OnCreate` MFCShellControlsView.cpp yöntem tanımında, kaynak dosyası ve uygulanması şu kodla değiştirin:
 
@@ -162,7 +202,7 @@ Bu izlenecek yol, Visual Studio'yu kullanmak için ayarladığınız varsayılma
 
    Ağaç denetimi veya liste denetimi herhangi bir öğeyi sağ tıklayın. Gerçek kullanıyormuş gibi aynı bağlam menüsü alma **dosya Gezgini**.
 
-## <a name="next-steps"></a>Sonraki Adımlar
+## <a name="next-steps"></a>Sonraki adımlar
 
 - Sihirbaz oluşturulan bir Outlook çubuğu olan bir **klasörleri** bölmesi ve **Takvim** bölmesi. Bu büyük olasılıkla için anlam ifade etmez bir **Takvim** bölmesinde bir **Gezgini** penceresinde, bu nedenle bu bölme artık kaldırın.
 

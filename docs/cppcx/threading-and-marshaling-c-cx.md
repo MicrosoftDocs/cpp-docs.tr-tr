@@ -8,12 +8,12 @@ helpviewer_keywords:
 - agility, C++/CX
 - C++/CX, threading issues
 ms.assetid: 83e9ca1d-5107-4194-ae6f-e01bd928c614
-ms.openlocfilehash: c5bce60e564bef490bcfafd6f8559dffe5fd4f1d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 4206dd9c675325d3141a56b0e57f6cf67dc5693d
+ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62404643"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "65448155"
 ---
 # <a name="threading-and-marshaling-ccx"></a>İş parçacığı oluşturma ve hazırlama (C++/CX)
 
@@ -35,7 +35,7 @@ Bir evrensel Windows platformu uygulaması oluşturduğunuzda, Çevik ve Çevik 
 
 ### <a name="compiler-warning-c4451-when-consuming-non-agile-classes"></a>Çevik olmayan sınıflar tüketildiğinde C4451 uyarı derleyici
 
-Çeşitli nedenlerden dolayı bazı sınıflar Çevik olamaz. Çevik olmayan sınıfların örneklerini hem kullanıcı arabirimi iş parçacığı hem de arka plan iş parçacığı erişen ve ardından ek almak, çalışma zamanında doğru davranışı sağlamak dikkat edin. Genel kapsamda uygulamanızda Çevik olmayan bir çalışma zamanı sınıf örneği ya da bir sınıf üyesine başvuru sınıfı, kendisi de Çevik işaretlenir Çevik olmayan türünü bildirmesine Visual C++ Derleyici uyarı verir.
+Çeşitli nedenlerden dolayı bazı sınıflar Çevik olamaz. Çevik olmayan sınıfların örneklerini hem kullanıcı arabirimi iş parçacığı hem de arka plan iş parçacığı erişen ve ardından ek almak, çalışma zamanında doğru davranışı sağlamak dikkat edin. Microsoft C++ derleyici genel kapsamda uygulamanızda Çevik olmayan bir çalışma zamanı sınıf örneği ya da bir sınıf üyesine başvuru sınıfı, kendisi de Çevik işaretlenir Çevik olmayan türünü bildirmesine uyarı verir.
 
 Çevik olmayan sınıflarını, kolay uğraşmanız sahip olan `ThreadingModel`hem = ve `MarshallingType`standart =.  Bu sınıfların Çevik yalnızca kullanarak yapabileceğiniz `Agile<T>` yardımcı sınıfı.   Aşağıdaki örnek, Çevik olmayan bir nesne türünün bildirimi gösterir `Windows::Security::Credentials::UI::CredentialPickerOptions^`ve sonuç olarak verilen bir derleyici uyarısı.
 

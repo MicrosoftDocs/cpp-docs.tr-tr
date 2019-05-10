@@ -9,12 +9,12 @@ helpviewer_keywords:
 - containers [MFC], creating
 - OLE controls [MFC], containers
 ms.assetid: ec70e137-7c14-4940-bd0e-fd4edcc63ea5
-ms.openlocfilehash: 759f118b6796dbf53ceaa898902a50d87466abeb
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 7591b3ed84c1703a201e4e62f699df877de36058
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62372340"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65220194"
 ---
 # <a name="creating-an-mfc-activex-control-container"></a>MFC ActiveX Denetimi Kapsayıcısı Oluşturma
 
@@ -39,5 +39,5 @@ Bir MFC kapsayıcı programını kullanarak oluşturma [MFC Uygulama Sihirbazı]
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Visual C++ Proje Türleri](../../build/reference/visual-cpp-project-types.md)
+[C++Visual Studio Proje türleri](../../build/reference/visual-cpp-project-types.md)
 

@@ -1,14 +1,14 @@
 ---
 title: Alfabetik Listelenmiş Derleyici Seçenekleri
-ms.date: 04/08/2019
+ms.date: 05/06/2019
 helpviewer_keywords:
 - compiler options, C++
-ms.openlocfilehash: d8ab1cbac7ad8eb44f16c7829ccac20a6d3e73ff
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: ba4357f4c14e5cca9363ad2029374ede93529a2a
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62272340"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65221769"
 ---
 # <a name="compiler-options-listed-alphabetically"></a>Alfabetik Listelenmiş Derleyici Seçenekleri
 
@@ -34,7 +34,7 @@ Derleyici Seçenekleri kapsamlı bir alfabetik listesi verilmiştir. Kategorisel
 |[/E](e-preprocess-to-stdout.md)|Önişlemci çıktısını standart çıktıya kopyalar.|
 |[/EH](eh-exception-handling-model.md)|Özel durum işleme modelini belirtir.|
 |[/EP](ep-preprocess-to-stdout-without-hash-line-directives.md)|Önişlemci çıktısını standart çıktıya kopyalar.|
-|[/ errorreport](errorreport-report-internal-compiler-errors.md)|Derleyici iç hatası (ICE) bilgisini doğrudan Visual C++ ekibine göndermenizi sağlar.|
+|[/ errorreport](errorreport-report-internal-compiler-errors.md)|Derleyici iç hatası (ICE) bilgilerini doğrudan Microsoft'a göndermenizi sağlar C++ takım.|
 |[/ Execution-Charset](execution-charset-set-execution-character-set.md)|Yürütme karakter kümesini Ayarla.|
 |[/F](f-set-stack-size.md)|Yığın boyutunu ayarlar.|
 |[/ favor](favor-optimize-for-architecture-specifics.md)|Belirli bir x64 için en iyi duruma getirilmiş kodu üretir mimarisi ya da hem AMD64 hem de Extended Memory 64 Technology (EM64T) mimarileri mikro mimariler.|
@@ -153,7 +153,7 @@ Derleyici Seçenekleri kapsamlı bir alfabetik listesi verilmiştir. Kategorisel
 |[/Zc](zc-conformance.md)|Uyarınca standart davranışı belirtir [/Ze](za-ze-disable-language-extensions.md).[ / Za, /Ze (dil uzantılarını devre dışı bırak)](za-ze-disable-language-extensions.md)|
 |[/Ze](za-ze-disable-language-extensions.md)|Kullanım dışı. Dil uzantılarını etkinleştirir.|
 |[/ZF](zf.md)|PDB oluşturma zamanında paralel yapılar artırır.|
-|[/Zg](zg-generate-function-prototypes.md)|Visual C++ 2015'te kaldırıldı. İşlev prototipleri üretir.|
+|[/Zg](zg-generate-function-prototypes.md)|Visual Studio 2015'te kaldırıldı. İşlev prototipleri üretir.|
 |[/ZI](z7-zi-zi-debug-information-format.md)|Düzenle ve devam et ile uyumlu bir program veritabanı'nda hata ayıklama bilgilerini içerir.|
 |[/Zi](z7-zi-zi-debug-information-format.md)|Tam hata ayıklama bilgisi üretir.|
 |[/Zl](zl-omit-default-library-name.md)|Varsayılan kitaplık adını .obj dosyasından (yalnızca x86) kaldırır.|

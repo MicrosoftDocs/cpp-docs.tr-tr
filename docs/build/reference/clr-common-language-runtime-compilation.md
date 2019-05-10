@@ -13,12 +13,12 @@ helpviewer_keywords:
 - Managed Extensions for C++, compiling
 - common language runtime, /clr compiler option
 ms.assetid: fec5a8c0-40ec-484c-a213-8dec918c1d6c
-ms.openlocfilehash: 1946fdabe66934e64cf95d3c3f12e16bc98ba664
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: ea4a878afea4453796277486da88b85e7f74883c
+ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62272552"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "65446530"
 ---
 # <a name="clr-common-language-runtime-compilation"></a>/clr (Ortak Dil Çalışma Zamanı Derlemesi)
 
@@ -53,7 +53,7 @@ Bir veya daha fazla aşağıdaki anahtarları, virgülle ayrılmış.
 
    Derleme meta verileri bildiriminde yok yönetilen bir program olarak bilinen bir *Modülü*. **NoAssembly** seçeneği, yalnızca bir modül üretmek için kullanılabilir. Kullanarak derleme yaparsanız [/c](c-compile-without-linking.md) ve **/clr:noAssembly**, ardından belirtin [noassembly](noassembly-create-a-msil-module.md) bir modül oluşturma seçeneği bağlayıcıya aşamasındadır.
 
-   Visual C++ 2005 önce **/clr:noAssembly** gerekli **/LD**. **/LD** belirttiğinizde artık örtük **/clr:noAssembly**.
+   Visual Studio 2005 önce **/clr:noAssembly** gerekli **/LD**. **/LD** belirttiğinizde artık örtük **/clr:noAssembly**.
 
 - **initialAppDomain**
 

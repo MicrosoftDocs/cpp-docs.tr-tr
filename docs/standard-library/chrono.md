@@ -1,6 +1,6 @@
 ---
 title: '&lt;chrono&gt;'
-ms.date: 11/04/2016
+ms.date: 05/07/2019
 f1_keywords:
 - chrono/std::chrono::nanoseconds
 - chrono/std::chrono::minutes
@@ -10,18 +10,18 @@ f1_keywords:
 - chrono/std::chrono::milliseconds
 - chrono/std::chrono::microseconds
 ms.assetid: 844de749-f306-482e-89bc-6f53c99c8324
-ms.openlocfilehash: 1fcf87d84b2c99b89217b7f2e0fc7fecd55fff02
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 44620b6ea6c970027a8e9a023c0972c6dec43ee0
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62279105"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65220250"
 ---
 # <a name="ltchronogt"></a>&lt;chrono&gt;
 
 Standart üst bilgiyi dahil \<chrono > sınıfları ve işlevleri temsil eder ve süre ve zaman instants tanımlamak için.
 
-Visual Studio 2015'te uygulamasının başlangıç `steady_clock` steadiness ve monotonicity C++ Standart gereksinimlerini karşılayacak şekilde değişti. `steady_clock` artık üzerinde QueryPerformanceCounter() temel ve `high_resolution_clock` için bir typedef sunulmuştur `steady_clock`. Sonuç olarak, Visual C++'ta `steady_clock::time_point` için bir typedef sunulmuştur `chrono::time_point<steady_clock>`; ancak bu zorunlu diğer uygulamaları için geçerli değildir.
+Visual Studio 2015'te uygulamasının başlangıç `steady_clock` steadiness ve monotonicity C++ Standart gereksinimlerini karşılayacak şekilde değişti. `steady_clock` artık üzerinde QueryPerformanceCounter() temel ve `high_resolution_clock` için bir typedef sunulmuştur `steady_clock`. Sonuç olarak, Microsoft içinde C++ derleyici `steady_clock::time_point` için bir typedef sunulmuştur `chrono::time_point<steady_clock>`; ancak bu zorunlu diğer uygulamaları için geçerli değildir.
 
 ## <a name="syntax"></a>Sözdizimi
 

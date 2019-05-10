@@ -12,12 +12,12 @@ helpviewer_keywords:
 - Conformance compiler options
 - Zc compiler options [C++]
 ms.assetid: b0de5a84-da72-4e5a-9a4e-541099f939e0
-ms.openlocfilehash: b2563ba0ae2a07bc9f9d81128745ed4b9651fb6c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 962bb2aaa2f05ad0dc4c9c86cd5cc9694cfad98b
+ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62315644"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "65446167"
 ---
 # <a name="zcwchart-wchart-is-native-type"></a>/Zc:wchar_t (wchar_t Yerel Tür)
 
@@ -31,7 +31,7 @@ Ayrıştırma `wchar_t` C++ standardına göre yerleşik bir tür olarak.
 
 Varsa **/ZC: wchar_t** açıktır, `wchar_t` olarak derlenmiş kod içinde yerleşik bir tamsayı türü için bir anahtar sözcüktür C++. Varsa **/Zc:wchar_t-** (eksi işaretiyle) C belirtilen, veya kod derlenir `wchar_t` yerleşik bir tür değil. Bunun yerine, `wchar_t` olarak tanımlanan bir `typedef` için `unsigned short` kurallı üstbilgi stddef.h içinde. (Microsoft uygulaması, diğer standart üstbilgi stddef.h tarafından bulunan başka bir üst bilgi de tanımlar.)
 
-Önermeyiz **/Zc:wchar_t-** çünkü C++ standart gerektirir `wchar_t` yerleşik bir tür olabilir. Kullanarak `typedef` sürümü, taşınabilirlik sorunlarına neden olabilir. Görsel'ın önceki sürümlerinden yükseltiyorsanız C++ ve derleyici hatayla karşılaşan [C2664](../../error-messages/compiler-errors-2/compiler-error-c2664.md) kod örtük dönüştürmeye çalıştığı için bir `wchar_t` için `unsigned short`, hatayı düzeltmek için kodu değiştirmenizi öneririz ayar yerine **/Zc:wchar_t-**.
+Önermeyiz **/Zc:wchar_t-** çünkü C++ standart gerektirir `wchar_t` yerleşik bir tür olabilir. Kullanarak `typedef` sürümü, taşınabilirlik sorunlarına neden olabilir. Visual Studio'nun önceki sürümlerinden yükseltin ve derleyici hatayla karşılaşan [C2664](../../error-messages/compiler-errors-2/compiler-error-c2664.md) kod örtük dönüştürmeye çalıştığı için bir `wchar_t` için `unsigned short`, hatayı düzeltmek için kodu değiştirmenizi öneririz ayar yerine **/Zc:wchar_t-**.
 
 **/ZC: wchar_t** seçenektir üzerinde varsayılan olarak C++ derlemeleri ve C derlemelerde göz ardı edilir. [/ Permissive-](permissive-standards-conformance.md) seçeneği etkilemez **/ZC: wchar_t**.
 

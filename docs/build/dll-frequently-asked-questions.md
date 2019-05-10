@@ -1,17 +1,17 @@
 ---
 title: MFC DLL sık sorulan sorular
-ms.date: 11/04/2016
+ms.date: 05/06/2019
 helpviewer_keywords:
 - troubleshooting [C++], DLLs
 - DLLs [C++], frequently asked questions
 - FAQs [C++], DLLs
 ms.assetid: 09dd068e-fc33-414e-82f7-289c70680256
-ms.openlocfilehash: 33a0c9dd1abbfb9375ce1aef53fd152a521ac97d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 9108aaf3fcface847b0391455a2aecd4d45658c4
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62274124"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65220939"
 ---
 # <a name="dll-frequently-asked-questions"></a>Sıkça Sorulan DLL Soruları
 
@@ -41,11 +41,7 @@ Başlatma sırasında yeni bir MFC iş parçacığı oluşturan bir MFC DLL, bir
 
 ## <a name="mfc_multithreaded_2"></a> Çok iş parçacıklı uygulamada farklı iş parçacıkları MFC DLL'ine erişebilir mi?
 
-Çok iş parçacıklı uygulamalar farklı iş parçacıklarından dinamik olarak MFC'ye bağlanan normal MFC DLL'leri ve MFC uzantısı DLL'leri erişebilirsiniz. Ve Visual C++ 4.2 sürümü itibarıyla uygulamada oluşturulmuş birden çok iş parçacığından MFC DLL'lerine Normal MFC DLL'leri uygulamaya erişebilir.
-
-4.2 sürümü önce statik olarak MFC'ye bağlı normal MFC DLL'SİNİN için yalnızca bir dış iş parçacığı paylaşılmasıdır.
-
-USRDLL terimi artık Visual C++ belgelerinde kullanılan unutmayın. Statik olarak MFC'ye bağlı normal MFC DLL'SİNİN önceki USRDLL ile aynı özelliklere sahiptir.
+Çok iş parçacıklı uygulamalar farklı iş parçacıklarından dinamik olarak MFC'ye bağlanan normal MFC DLL'leri ve MFC uzantısı DLL'leri erişebilirsiniz. Uygulamanın, uygulama içinde oluşturulan birden çok iş parçacığından MFC DLL'lerine Normal MFC DLL'leri erişebilirsiniz.
 
 ## <a name="mfc_prohibited_classes"></a> MFC sınıfları veya bir MFC DLL'inde kullanılamayan işlevleri var mıdır?
 
@@ -69,4 +65,4 @@ Olası bir nedeni de bellek sızıntısı MFC ileti işleyicisi işlevler içind
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Visual C++'ta DLL'ler](dlls-in-visual-cpp.md)
+[Visual Studio'da C/C++ DLL'leri oluşturma](dlls-in-visual-cpp.md)

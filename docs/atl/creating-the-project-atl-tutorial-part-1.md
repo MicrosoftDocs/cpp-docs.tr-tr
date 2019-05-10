@@ -1,14 +1,14 @@
 ---
 title: Proje Oluşturma (ATL Eğitmeni, Bölüm 1)
 ms.custom: get-started-article
-ms.date: 09/26/2018
+ms.date: 05/06/2019
 ms.assetid: f6b727d1-390a-4b27-b82f-daadcd9fc059
-ms.openlocfilehash: 4a608fb3a096dee2420ef652ba213c534d8fb426
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 292faf1769baa2e1c3fc6e52ba6df065cf08766e
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62262092"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65221411"
 ---
 # <a name="creating-the-project-atl-tutorial-part-1"></a>Proje Oluşturma (ATL Eğitmeni, Bölüm 1)
 
@@ -36,9 +36,9 @@ Bu öğreticide, bir Çokgen görüntüleyen bir ActiveX nesnesini oluşturan bi
 
 ### <a name="to-create-the-initial-atl-project-using-the-atl-project-wizard"></a>ATL projesi Sihirbazı'nı kullanarak ilk ATL projesi oluşturmak için
 
-1. Visual Studio geliştirme ortamında tıklayın **yeni** üzerinde **dosya** menüsüne ve ardından **proje**.
+1. Visual Studio 2017 ve öncesinde: **Dosya** > **yeni** > **proje**. Açık **Visual C++**  sekmenize **MFC/ATL**. Seçin **ATL projesi**.
 
-1. Açık **Visual C++** sekmenize **MFC/ATL**. Seçin **ATL projesi**.
+   Visual Studio 2019 içinde: Seçin **dosya** > **yeni** > **proje**, arama kutusuna "atl" ve seçme **ATL projesi**.
 
 1. Tür *Çokgen* proje adı.
 

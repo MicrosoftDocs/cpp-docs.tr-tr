@@ -8,25 +8,25 @@ helpviewer_keywords:
 - projects [C++], types
 - templates [C++], projects
 - applications [C++], projects
-- Visual C++ projects, types
+- C++ projects, types
 ms.assetid: 7337987e-1e7b-4120-9a4b-94f0401f15e7
-ms.openlocfilehash: cac194ed2c830541711161dc139a42ed0529340f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: dce96a221804e5538929d63fa3c125a27e7fc36d
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62316762"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65217780"
 ---
 # <a name="c-project-templates"></a>C++ proje şablonları
 
-Kaynak kodu dosyaları, derleyici seçenekleri, menüler, araç çubukları, simgeler, başvurular, Visual Studio Proje şablonları oluşturmak ve `#include` oluşturmak istediğiniz proje türü için uygun olan deyimleri. Visual Studio çeşitli Visual C++ proje şablonları içerir ve oluştururken projelerinizi özelleştirebilmeniz için sihirbazları kaç tanesinin sağlar. Hemen bir proje oluşturduğunuzda, derleyin ve uygulamayı çalıştırın; Uygulamanızı geliştirirken, aralıklı olarak oluşturmak için iyi bir uygulamadır.
+Kaynak kodu dosyaları, derleyici seçenekleri, menüler, araç çubukları, simgeler, başvurular, Visual Studio Proje şablonları oluşturmak ve `#include` oluşturmak istediğiniz proje türü için uygun olan deyimleri. Visual Studio, birçok tür içerir, C++ proje şablonları ve sihirbazları kaç tanesinin oluştururken projelerinizi özelleştirebilmeniz için sağlar. Hemen bir proje oluşturduğunuzda, derleyin ve uygulamayı çalıştırın; Uygulamanızı geliştirirken, aralıklı olarak oluşturmak için iyi bir uygulamadır.
 
 > [!NOTE]
 > C++ proje şablonlarını kullanarak bir C dili projesi oluşturabilirsiniz. Oluşturulan proje bir .cpp olarak değiştirin ve dosya adı uzantısına sahip dosyaları bulun. c. Ardından **proje özellikleri** sayfasında projenin (için çözüm) **yapılandırma özellikleri**, **C/C++** seçip **Gelişmiş**. Değişiklik **derleme olarak** ayarını **C kodu olarak derle (/ TC)**.
 
 ## <a name="project-templates"></a>Proje şablonları
 
-Visual Studio'daki proje şablonları, ürün sürümü ve yüklediğiniz iş yükleri bağlıdır. Masaüstü uygulama geliştirme ile C++ iş yükünü yüklediyseniz, Visual Studio'nun bu Visual C++ proje şablonları vardır.
+Visual Studio'daki proje şablonları, ürün sürümü ve yüklediğiniz iş yükleri bağlıdır. İle masaüstü geliştirme yüklediyseniz C++ iş yükü, Visual Studio sahip bu C++ proje şablonları.
 
 ### <a name="windows-desktop"></a>Windows Masaüstü
 

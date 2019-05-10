@@ -1,20 +1,18 @@
 ---
 title: Önceden Derlenmiş Başlık Dosyaları
-ms.date: 12/10/2018
-f1_keywords:
-- pch
+ms.date: 05/06/2019
 helpviewer_keywords:
 - precompiled header files, creating
 - PCH files, creating
 - cl.exe compiler, precompiling code
 - .pch files, creating
 ms.assetid: e2cdb404-a517-4189-9771-c869c660cb1b
-ms.openlocfilehash: 5afda50c43f93baa2d73e6afb68f436560c3243e
-ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
+ms.openlocfilehash: 1dc6ff9de94f98a4eef3d3827bec177f22672674
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "64341757"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65220824"
 ---
 # <a name="precompiled-header-files"></a>Önceden Derlenmiş Başlık Dosyaları
 
@@ -43,7 +41,7 @@ Hem C ve C++ programları ön derleme. Programlama C++'da, sınıf arabirimi bil
 
 ## <a name="two-choices-for-precompiling-code"></a>Kodu Önceden Derlemek için İki Seçenek
 
-Visual C++ ile herhangi bir C veya C++ kodu önceden derlemek; yalnızca üst bilgi dosyaları önceden derlemek için sınırlı değildir.
+Tüm C ön derleme veya C++ kod; yalnızca üst bilgi dosyaları önceden derlemek için sınırlı değildir.
 
 Önceden derleme planlama gerektirir, ancak basit bir üst bilgi dosyaları dışındaki kaynak kodu önceden derlemek, önemli ölçüde daha hızlı derlemeler sağlar.
 
@@ -133,7 +131,7 @@ Bu tablo, bir önceden derlenmiş üst bilgi kullanırken bir tutarsızlık uyar
 
 Önceki bölümlerde, önceden derlenmiş üst bilgiler genel bir bakış sunar: /Yc ve /Yu/FP seçeneği ve [hdrstop](../preprocessor/hdrstop.md) pragması. Bu bölümde, bir projede el ile önceden derlenmiş üst bilgi Seçenekleri'ni kullanarak bir yöntem anlatılmaktadır; bir örnek derleme görevleri dosyası ve yönettiği kod ile sona erer.
 
-Bir projede el ile önceden derlenmiş üst bilgi Seçenekleri'ni kullanarak başka bir yaklaşım için bir Visual C++ varsayılan kurulum sırasında oluşturulur MFC\SRC dizininde bulunan derleme görevleri dosyalarını inceleyin. Bu derleme görevleri dosyalarını bu bölümde sunulan bir benzer bir yaklaşım yararlanın ancak Microsoft Program Bakımı yardımcı programı (NMAKE) makroları büyük kullanılmasını sağlamak ve yapı işleminin daha fazla denetim sağlar.
+Bir projede el ile önceden derlenmiş üst bilgi Seçenekleri'ni kullanarak başka bir yaklaşım için bir Visual Studio varsayılan kurulum sırasında oluşturulur MFC\SRC dizininde bulunan derleme görevleri dosyalarını inceleyin. Bu derleme görevleri dosyalarını bu bölümde sunulan bir benzer bir yaklaşım yararlanın ancak Microsoft Program Bakımı yardımcı programı (NMAKE) makroları büyük kullanılmasını sağlamak ve yapı işleminin daha fazla denetim sağlar.
 
 ## <a name="pch-files-in-the-build-process"></a>Derleme Sürecindeki PCH Dosyaları
 

@@ -1,5 +1,5 @@
 ---
-title: C2900 ile c2999 arasındaki derleyici hataları
+title: C2900 ile C2999 arasındaki derleyici hataları
 ms.date: 04/21/2019
 f1_keywords:
 - C2900
@@ -73,13 +73,13 @@ helpviewer_keywords:
 - C2999
 ms.assetid: e3440738-e11b-4878-9ae3-6bc6c53ba461
 ms.openlocfilehash: 5d443153582921775a72e5af647d65b102b80b0b
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.sourcegitcommit: 283cb64fd7958a6b7fbf0cd8534de99ac8d408eb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62281683"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "64857217"
 ---
-# <a name="compiler-errors-c2900-through-c2999"></a>C2900 ile c2999 arasındaki derleyici hataları
+# <a name="compiler-errors-c2900-through-c2999"></a>C2900 ile C2999 arasındaki derleyici hataları
 
 Belgelerin bu bölümdeki makaleleri bir alt kümesini derleyici tarafından oluşturulan hata iletilerini açıklayın.
 
@@ -87,7 +87,7 @@ Belgelerin bu bölümdeki makaleleri bir alt kümesini derleyici tarafından olu
 
 ## <a name="error-messages"></a>Hata iletileri
 
-|Hata|İleti|
+|Hata|`Message`|
 |-----------|-------------|
 |Derleyici Hatası C2900|'*bildirimci*': WinRT sınıflarındaki üye işlev Şablonları 'private', 'internal' veya 'protected private' olmalıdır|
 |Derleyici Hatası C2901|'*tanımlayıcı*': Bir genel arabirim veya temsilci ortak olamaz|

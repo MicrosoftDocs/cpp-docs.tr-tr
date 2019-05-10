@@ -1,6 +1,6 @@
 ---
 title: Tanımlayıcılar (C++)
-ms.date: 09/12/2018
+ms.date: 05/07/2019
 helpviewer_keywords:
 - decorated names
 - decorated names, about decorated names
@@ -8,12 +8,12 @@ helpviewer_keywords:
 - white space, in C++ identifiers
 - identifiers [C++]
 ms.assetid: 03a0dfb1-4530-4cdf-8295-5ea4dca4c1b8
-ms.openlocfilehash: 6f87486d0bb2614a3b2542cf050172a47f152c4c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 61ca021a8f41074dcef6bf9df2e5683ede98deee
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62184607"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65222436"
 ---
 # <a name="identifiers-c"></a>Tanımlayıcılar (C++)
 
@@ -70,7 +70,7 @@ Microsoft C++ tanıtıcılarının yalnızca ilk 2048 karakteri önemlidir. Kull
 
 - Bir işlev için bağımsız değişken sayısı.
 
-Dolar işareti `$` Visual C++'ta geçerli tanımlayıcı karakterdir. Visual C++ tarafından izin verilen evrensel karakter adları tanımlayıcıları aralıklarını temsil karakterlerini kullanmanızı sağlar. Bu karakterler kullanmak için bunları içeren kod sayfası kodlama bir dosyasını kullanarak dosyayı kaydetmeniz gerekir.  Bu örnek, hem de genişletilmiş karakterler nasıl gösterir ve evrensel karakter adları kodunuzda birbirlerinin yerine kullanılabilir.
+Dolar işareti `$` Microsoft geçerli tanımlayıcı karakterse C++ derleyici (MSVC). MSVC tanımlayıcıları evrensel karakter adları izin verilen aralıklarını tarafından temsil edilen karakterlerini kullanmanızı sağlar. Bu karakterler kullanmak için bunları içeren kod sayfası kodlama bir dosyasını kullanarak dosyayı kaydetmeniz gerekir.  Bu örnek, hem de genişletilmiş karakterler nasıl gösterir ve evrensel karakter adları kodunuzda birbirlerinin yerine kullanılabilir.
 
 ```cpp
 // extended_identifier.cpp

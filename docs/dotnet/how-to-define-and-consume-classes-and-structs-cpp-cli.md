@@ -5,12 +5,12 @@ helpviewer_keywords:
 - structs [C++]
 - classes [C++], instantiating
 ms.assetid: 1c03cb0d-1459-4b5e-af65-97d6b3094fd7
-ms.openlocfilehash: 090259a4ad6b46eccf66dca6c99b4eb532b7ae5c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 5fe7d6876b094c84fe3d4cdbba417106edcca528
+ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62387493"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "65447265"
 ---
 # <a name="how-to-define-and-consume-classes-and-structs-ccli"></a>Nasıl yapılır: Sınıfları ve yapıları tanımlama ve kullanma (C++/CLI)
 
@@ -127,7 +127,7 @@ Bir derlemeye başvurulduğundan, bütünleştirilmiş kodundaki türler görün
 
 `public` bir türü içeren dilediğiniz kaynak dosyaya görünür olduğunu belirten bir `#using` türü içeren derleme için yönerge.  `private` bir türü içeren kaynak dosyalarını görünür olmadığını belirten bir `#using` türü içeren derleme için yönerge. Ancak, özel türleri aynı derleme içinde görünür. Varsayılan olarak, bir sınıf için görünürlük olan `private`.
 
-Visual C++ 2005 önce varsayılan olarak, yerel türlerde ortak erişilebilirlik derleme dışından vardı. Etkinleştirme [Derleyici Uyarısı (düzey 1) C4692](../error-messages/compiler-warnings/compiler-warning-level-1-c4692.md) özel yerel türler yanlış kullanıldığı görmenize yardımcı olmak için. Kullanım [make_public](../preprocessor/make-public.md) değiştiremediğiniz bir kaynak kod dosyasında yerel bir tür için ortak erişilebilirlik verilecek pragması.
+Visual Studio 2005 öncesindeki varsayılan olarak, yerel türlerde ortak erişilebilirlik derleme dışından vardı. Etkinleştirme [Derleyici Uyarısı (düzey 1) C4692](../error-messages/compiler-warnings/compiler-warning-level-1-c4692.md) özel yerel türler yanlış kullanıldığı görmenize yardımcı olmak için. Kullanım [make_public](../preprocessor/make-public.md) değiştiremediğiniz bir kaynak kod dosyasında yerel bir tür için ortak erişilebilirlik verilecek pragması.
 
 Daha fazla bilgi için [#using yönergesi](../preprocessor/hash-using-directive-cpp.md).
 
@@ -588,7 +588,7 @@ int main() {
 Base::Test
 ```
 
-Sonraki örnek, Visual C++ Derleyici en çok türetilen sınıfta bir işlev çağırır gösterir; bir veya daha fazla parametre eşleştirmek için bir dönüştürme gerekli olsa bile — ve daha iyi bir eşleşme işlev çağrısı için bir temel sınıfı bir işlevi çağırmayı değil.
+Sonraki örnek, Microsoft gösterir C++ derleyici en çok türetilen sınıfta bir işlevi çağırır; bir veya daha fazla parametre eşleştirmek için bir dönüştürme gerekli olsa bile — ve daha iyi bir eşleşme işlev çağrısı için bir temel sınıfı bir işlevi çağırmayı değil.
 
 ```cpp
 // compile with: /clr
@@ -736,7 +736,7 @@ CLR çöp toplayıcısı kullanılmayan yönetilen nesneleri siler ve artık ger
 
 Visual C++ sonlandırıcıda aynı değil <xref:System.Object.Finalize%2A> yöntemi. (CLR belgeleri Sonlandırıcı kullanır ve <xref:System.Object.Finalize%2A> yöntemi maliyetle aynı anlamda). <xref:System.Object.Finalize%2A> Yöntemi çağıran bir sınıf devralma zincirinde her Sonlandırıcı çöp toplayıcı tarafından çağrılır. Visual C++ yıkıcıları, tüm temel sınıflar, sonlandırıcı çağırmak derleyicinin bir türetilen sınıf Sonlandırıcı çağrı neden olmaz.
 
-Visual C++ derleyicisi, kaynakların belirli şekilde serbest desteklediğinden, uygulamak çalışmayın <xref:System.IDisposable.Dispose%2A> veya <xref:System.Object.Finalize%2A> yöntemleri. Ancak, bu yöntemlerle ilgili bilgi sahibi değilseniz, işte için Visual C++ sonlandırıcıda ve sonlandırıcı çağıran bir yıkıcı nasıl eşleştiği <xref:System.IDisposable.Dispose%2A> Desen:
+Çünkü Microsoft C++ derleyici kaynakların belirli şekilde serbest destekler, uygulama çalışmayın <xref:System.IDisposable.Dispose%2A> veya <xref:System.Object.Finalize%2A> yöntemleri. Ancak, bu yöntemlerle ilgili bilgi sahibi değilseniz, işte için Visual C++ sonlandırıcıda ve sonlandırıcı çağıran bir yıkıcı nasıl eşleştiği <xref:System.IDisposable.Dispose%2A> Desen:
 
 ```cpp
 // Visual C++ code
@@ -757,7 +757,7 @@ void Dispose(bool disposing) {
 
 Yönetilen bir tür belirleyici sürüm ve nesne artık gerekli değil sonra belirli bir noktada belirleyici olmayan şekilde serbest bırakmak için çöp toplayıcı bırakmamaya tercih yönetilen kaynaklar olarak da kullanabilirsiniz. Kaynakların belirli şekilde serbest bırakılmasını performansını önemli ölçüde artırabilir.
 
-Visual C++ derleyicisi, belirleyici nesneleri temizlemek için bir yok edici tanımını sağlar. Yok edici belirleyici serbest bırakmak istediğiniz tüm kaynakları serbest bırakmak için kullanın.  Bir sonlandırıcı varsa, kod yinelemesinden kaçınmak için yok edici çağırın.
+Microsoft C++ derleyici belirleyici nesneleri temizlemek için bir yok edici tanımını sağlar. Yok edici belirleyici serbest bırakmak istediğiniz tüm kaynakları serbest bırakmak için kullanın.  Bir sonlandırıcı varsa, kod yinelemesinden kaçınmak için yok edici çağırın.
 
 ```cpp
 // compile with: /clr /c

@@ -7,12 +7,12 @@ helpviewer_keywords:
 - ATL projects, creating
 - ATL Project Wizard
 ms.assetid: 564d2aaf-5b8e-4c2a-a925-ca40a283ea34
-ms.openlocfilehash: 4059961d70e6486f7417a5eff034b194d9860558
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 384847738f5410d750d53d3125c18f6a5256cccf
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62261439"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65221251"
 ---
 # <a name="atl-project-wizard"></a>ATL projesi Sihirbazı
 
@@ -48,8 +48,8 @@ Proje özellikleri belirtebilirsiniz (örneğin, [CRT için kitaplıklarla stati
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Visual C++ proje oluşturma ve yönetme](../../build/creating-and-managing-visual-cpp-projects.md)<br/>
-[Visual C++ Proje Türleri](../../build/reference/visual-cpp-project-types.md)<br/>
+[Visual Studio Projeleri - C++](../../build/creating-and-managing-visual-cpp-projects.md)<br/>
+[C++Visual Studio Proje türleri](../../build/reference/visual-cpp-project-types.md)<br/>
 [ATL COM Nesnelerinin Temelleri](../../atl/fundamentals-of-atl-com-objects.md)<br/>
 [ATL ve C Çalışma Zamanı Koduyla Programlama](../../atl/programming-with-atl-and-c-run-time-code.md)<br/>
 [Öğretici](../../atl/active-template-library-atl-tutorial.md)

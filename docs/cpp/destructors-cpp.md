@@ -1,20 +1,16 @@
 ---
 title: Yıkıcılar (C++)
-ms.date: 11/19/2018
+ms.date: 05/06/2019
 helpviewer_keywords:
 - objects [C++], destroying
-- Visual C++, destructors
-- destroying objects, destructors
-- ~ operator [C++], specifying destructors
-- destructors, about destructors
 - destructors, C++
 ms.assetid: afa859b0-f3bc-4c4d-b250-c68b335b6004
-ms.openlocfilehash: f26f797da75f0d7d7aa6f6849c9484cea35fb125
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 7bcfbd1ca95d98421fd2d58b595dd3309cdf8011
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62398993"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65222447"
 ---
 # <a name="destructors-c"></a>Yıkıcılar (C++)
 
@@ -26,7 +22,7 @@ Bir yok edici tanımlamazsanız, derleyici varsayılan bir tane sağlar; birçok
 
 ```cpp
 // spec1_destructors.cpp
-#include <string.h>
+#include <string>
 
 class String {
 public:
@@ -53,8 +49,7 @@ String::String( char *ch ) {
 String::~String() {
    // Deallocate the memory that was previously reserved
    //  for this string.
-   if (_text)
-      delete[] _text;
+   delete[] _text;
 }
 
 int main() {
@@ -114,7 +109,7 @@ Bir nesne kapsam dışına gider veya silinirse, kendi tam yok etme olayları di
 
 ```cpp
 // order_of_destruction.cpp
-#include <stdio.h>
+#include <cstdio>
 
 struct A1      { virtual ~A1() { printf("A1 dtor\n"); } };
 struct A2 : A1 { virtual ~A2() { printf("A2 dtor\n"); } };

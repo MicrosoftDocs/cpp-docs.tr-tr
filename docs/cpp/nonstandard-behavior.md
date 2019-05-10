@@ -1,21 +1,21 @@
 ---
 title: Standart Dışı Davranış
-ms.date: 11/04/2016
+ms.date: 05/06/2019
 helpviewer_keywords:
 - compatibility and compliance, nonstandard behavior
 - Microsoft-specific, compiler behavior
 - nonstandard behavior, compliance and compatibility
 ms.assetid: a57dea27-dc79-4f64-8a83-017e84841773
-ms.openlocfilehash: b7546914f4cd417f127af56fb7342903989d8330
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 82c5faae68f9da747017119d76578cc88163d8bb
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62245381"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65222034"
 ---
 # <a name="nonstandard-behavior"></a>Standart Dışı Davranış
 
-Aşağıdaki bölümlerde, C++'nın Visual C++ uygulamasının C++ standartıyla uyumlu olmadığı yerlerin bazıları listelenmiştir. Aşağıda verilen bölüm numaraları C++ 11 standartındaki (ISO/IEC 14882:2011(E)) bölüm numaralarına başvurur.
+Aşağıdaki bölümlerde yerlerden bazıları listelenmiştir burada Microsoft uyarlamasını C++ ile uyumlu değil C++ standart. Aşağıda verilen bölüm numaraları C++ 11 standartındaki (ISO/IEC 14882:2011(E)) bölüm numaralarına başvurur.
 
 C++ standartında farklı derleyici sınırlarının listesi verilir [derleyici sınırları](../cpp/compiler-limits.md).
 
@@ -38,7 +38,7 @@ class B : virtual A
 
 ## <a name="binding-nondependent-names-in-templates"></a>Şablonlarda Bağımlı Olmayan Adları Bağlama
 
-İlk olarak bir şablon ayrıştırıldığında, Visual C++ derleyici bağımlı olmayan adların bağlanmasını şu anda desteklemez. Bu, C++ ISO belirtiminin 14.6.3 bölümü ile uyumlu değildir. Bu, şablonun görülmesinden sonra (ancak şablon örneği oluşturulmadan önce) aşırı yüklerin bildirilmesine neden olabilir.
+Microsoft C++ derleyici desteklememektedir şablonlarda bağımlı olmayan adları bağlama başlangıçta şablon ayrıştırılırken. Bu, C++ ISO belirtiminin 14.6.3 bölümü ile uyumlu değildir. Bu, şablonun görülmesinden sonra (ancak şablon örneği oluşturulmadan önce) aşırı yüklerin bildirilmesine neden olabilir.
 
 ```cpp
 #include <iostream>
@@ -75,7 +75,7 @@ void g() throw();    // parsed and used
 
 ## <a name="chartraitseof"></a>char_traits::eof()
 
-C++ Standart durumları [char_traits::eof](../standard-library/char-traits-struct.md#eof) geçerli bir karşılık gelmelidir değil `char_type` değeri. Görsel C++ derleyici türü için bu kısıtlamayı zorlar **char**, ancak türü **wchar_t**. Bu, C++ ISO belirtiminin 12.1.1 bölümündeki Tablo 62'deki gereksinimlerle uyumlu değildir. Aşağıdaki örnek bunu gösterir.
+C++ Standart durumları [char_traits::eof](../standard-library/char-traits-struct.md#eof) geçerli bir karşılık gelmelidir değil `char_type` değeri. Microsoft C++ derleyici türü için bu kısıtlamayı zorlar **char**, ancak türü **wchar_t**. Bu, C++ ISO belirtiminin 12.1.1 bölümündeki Tablo 62'deki gereksinimlerle uyumlu değildir. Aşağıdaki örnek bunu gösterir.
 
 ```cpp
 #include <iostream>
@@ -94,4 +94,4 @@ int main()
 
 ## <a name="storage-location-of-objects"></a>Nesnelerin Depolama Konumu
 
-C++ standardı (bölüm 1.8 paragraph 6) tam C++ nesnelerinin benzersiz konumlara sahip olmasını gerektirir. Ancak Visual C++ ile, veri üyeleri olmayan türlerin bir depolama konumunu nesnenin yaşam süresince diğer türlerle paylaşacağı durumlar vardır.
+C++ standardı (bölüm 1.8 paragraph 6) tam C++ nesnelerinin benzersiz konumlara sahip olmasını gerektirir. Ancak Microsoft ile C++, veri üyeleri olmayan türlerin paylaşacağı bir depolama konumu diğer türlerle nesne ömrü boyunca durumlar vardır.

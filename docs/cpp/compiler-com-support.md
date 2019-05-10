@@ -1,22 +1,22 @@
 ---
 title: Derleyici COM Desteği
-ms.date: 11/04/2016
+ms.date: 05/06/2019
 helpviewer_keywords:
 - cl.exe compiler, COM support
 - COM, compiler support
 ms.assetid: 76a78442-f2a4-4985-9967-67e20773f847
-ms.openlocfilehash: f0b1d6280dc27641287de8fe539cd3a148048245
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e13874bad44610821bed9c588af6bd9124162116
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62154844"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65222214"
 ---
 # <a name="compiler-com-support"></a>Derleyici COM Desteği
 
 ## <a name="microsoft-specific"></a>Microsoft'a Özgü
 
-Visual C++ derleyicisi, doğrudan Bileşen Nesne Modeli (COM) tür kitaplıkları'nı okuyun ve derlemeye dahil C++ kaynak koda içeriği çevirir. Dil uzantıları, istemci tarafında programlama COM kolaylaştırmak kullanılabilir.
+Microsoft C++ derleyici, doğrudan Bileşen Nesne Modeli (COM) tür kitaplıkları'nı okuyun ve içeriği çevirme C++ kaynak derlemeye dahil kodu. Dil uzantıları, istemci tarafında programlama COM kolaylaştırmak kullanılabilir.
 
 Kullanarak [#import önişlemci yönergesi](../preprocessor/hash-import-directive-cpp.md), derleyici bir tür kitaplığı okuyabilir ve COM tanımlayan bir C++ üstbilgi dosyası içine arabirimleri olarak dönüştürme sınıfları. Bir dizi `#import` öznitelikleri, kullanıcı denetimi elde edilen tür kitaplığı üstbilgi dosyaları içeriğin kullanılabilir.
 

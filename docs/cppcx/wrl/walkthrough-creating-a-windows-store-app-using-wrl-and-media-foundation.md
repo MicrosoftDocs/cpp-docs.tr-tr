@@ -1,18 +1,21 @@
 ---
 title: 'İzlenecek yol: WRL ve medya altyapısı kullanarak UWP uygulaması oluşturma'
-ms.date: 09/17/2018
+ms.date: 04/23/2019
 ms.topic: reference
 ms.assetid: 0336c550-fbeb-4dc4-aa9b-660f9fc45382
-ms.openlocfilehash: e0254be8c6fa185f75c46898d4da51742195550a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
-ms.translationtype: HT
+ms.openlocfilehash: 28e8d4b2871dbd3bef0f30bae5480d346af50706
+ms.sourcegitcommit: 283cb64fd7958a6b7fbf0cd8534de99ac8d408eb
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62409214"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "64558261"
 ---
 # <a name="walkthrough-creating-a-uwp-app-using-wrl-and-media-foundation"></a>İzlenecek yol: WRL ve medya altyapısı kullanarak UWP uygulaması oluşturma
 
-Windows çalışma zamanı C++ Şablon kitaplığı (WRL) kullanan bir evrensel Windows Platformu (UWP) uygulaması oluşturmak için kullanmayı öğrenin [Microsoft Media Foundation](/windows/desktop/medfound/microsoft-media-foundation-sdk).
+> [!NOTE]
+> Yeni UWP uygulamaları ve bileşenleri için kullanmanızı öneririz [ C++/WinRT](/windows/uwp/cpp-and-winrt-apis/), yeni standart C ++ 17 dil projeksiyon Windows Runtime API'ları için. C++/ WinRT Windows 10 SDK sürüm 1803 ileriye doğru kullanıma sunulmuştur. C++/ WinRT tamamen üstbilgi dosyalarında uygulanır ve modern Windows API ile birinci sınıf erişim sağlamak için tasarlanmıştır.
+
+Bu öğreticide, Windows çalışma zamanı kullanmak hakkında bilgi edineceksiniz C++ Şablon kitaplığı (kullanan bir evrensel Windows Platformu (UWP) uygulaması oluşturmak için WRL) [Microsoft Media Foundation](/windows/desktop/medfound/microsoft-media-foundation-sdk).
 
 Bu örnek, bir Web kamerası yakalanır görüntü gri tonlamalı etkisi uygulanacağı özel Media Foundation dönüşüm oluşturur. Uygulama, C++ özel dönüştürme ve yakalanan görüntülerin dönüştürmek için bileşeni kullanmak için C# tanımlamak için kullanır.
 
@@ -25,6 +28,8 @@ Bu örnek, bir Web kamerası yakalanır görüntü gri tonlamalı etkisi uygulan
 > Bu kod örneği uzun olmasına rağmen kullanışlı Media Foundation dönüşüm oluşturmak için gereken en düşük gösterir. Bunu kendi özel dönüştürme için bir başlangıç noktası olarak kullanabilirsiniz. Bu örnekte gelen uyarlanmış, [medya uzantılar örneği](http://code.msdn.microsoft.com/windowsapps/Media-extensions-sample-7b466096)uygulamak için hangi kullanan media uzantıları video efektleri video kod çözme ve medya akışlarının üreten düzeni işleyicileri oluşturun.
 
 ## <a name="prerequisites"></a>Önkoşullar
+
+- Visual Studio 2017 ve sonraki sürümlerinde, UWP destek isteğe bağlı bir bileşendir. Yüklemek için Windows Başlat Menüsü'nden Visual Studio Yükleyicisi'ni açın ve Visual Studio sürümünüze bulun. Seçin **Değiştir** ve emin olun **Evrensel Windows platformu geliştirme** kutucuk denetlenir. Altında **isteğe bağlı bileşenler** denetleyin  **C++ UWP (v141) için Araçlar** Visual Studio 2017 için veya  **C++ UWP (v142) için Araçlar** Visual Studio 2019 için. Ardından, kullanmak istediğiniz Windows SDK sürümünü denetleyin. 
 
 - Deneyimini [Windows çalışma zamanı](https://msdn.microsoft.com/library/windows/apps/br211377.aspx).
 

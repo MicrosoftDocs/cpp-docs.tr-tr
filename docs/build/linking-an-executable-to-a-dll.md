@@ -11,12 +11,12 @@ helpviewer_keywords:
 - executable files [C++], linking to DLLs
 - loading DLLs [C++]
 ms.assetid: 7592e276-dd6e-4a74-90c8-e1ee35598ea3
-ms.openlocfilehash: fc7a676059af17e7a42189c7c15ca157a081e08a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b0a3a0acd9fe0270416745696079e382c35ec32d
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62188771"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65220649"
 ---
 # <a name="link-an-executable-to-a-dll"></a>Bir DLL'ye bağlandığı bir yürütülebilir dosya
 
@@ -145,4 +145,4 @@ Farklı olarak bu örnekte, çoğu durumda çağırmalısınız `LoadLibrary` ve
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Visual C++'ta DLL'ler](dlls-in-visual-cpp.md)
+[Visual Studio'da C/C++ DLL'leri oluşturma](dlls-in-visual-cpp.md)

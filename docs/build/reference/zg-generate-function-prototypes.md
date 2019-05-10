@@ -10,12 +10,12 @@ helpviewer_keywords:
 - -Zg compiler option [C++]
 - generate function prototypes compiler option
 ms.assetid: c8df1b46-24ff-46f2-8356-e0a144b21dd2
-ms.openlocfilehash: 684174cf46e644c22e072e3fa60f75f9434c7e54
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 591460b78a461aa2e33f873b79d6dcec0277f99f
+ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62315904"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "65446203"
 ---
 # <a name="zg-generate-function-prototypes"></a>/Zg (İşlev Prototipleri Üret)
 
@@ -29,7 +29,7 @@ Kaldırıldı. Kaynak dosyada tanımlanan her işlev için bir işlev prototipi 
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu derleyici seçeneği artık kullanılabilir. Bu, Visual C++ 2015'te kaldırıldı. Bu sayfa için Visual C++'ın eski sürümlerini kullanıcılarına kalır.
+Bu derleyici seçeneği artık kullanılabilir. Bu, Visual Studio 2015'te kaldırıldı. Bu sayfa için Visual Studio'nun eski sürümlerini kullanıcılarına kalır.
 
 İşlev prototipi işlev dönüş türü ve bağımsız değişken türü listesi içerir. Bağımsız değişken türü listesi işlevin biçimsel parametreler türlerinden oluşturulur. Kaynak dosyada zaten mevcut herhangi bir işlev prototipleri göz ardı edilir.
 

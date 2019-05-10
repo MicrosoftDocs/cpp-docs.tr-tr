@@ -1,6 +1,6 @@
 ---
 title: CComSafeArray sınıfı
-ms.date: 11/04/2016
+ms.date: 05/06/2019
 f1_keywords:
 - CComSafeArray
 - ATLSAFE/ATL::CComSafeArray
@@ -28,12 +28,12 @@ f1_keywords:
 helpviewer_keywords:
 - CComSafeArray class
 ms.assetid: ee349aef-33db-4c85-bd08-5d86a3c9d53a
-ms.openlocfilehash: 0262764c950b01acdb610873a995a9a6fd912997
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: dec6bbad0aa4a8409b9f3d24476dcc94b8eaefe3
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62259449"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65221162"
 ---
 # <a name="ccomsafearray-class"></a>CComSafeArray sınıfı
 
@@ -318,7 +318,7 @@ Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-A `CComSafeArray` varolan bir nesne oluşturulabilir `SAFEARRAYBOUND` yapısı ve boyut ya da dizi ve alt sınırı içinde öğe sayısını belirterek sayı. Visual C++'tan erişilecek dizi ise, alt sınırı 0 olmalıdır. Diğer diller için alt sınırı (örneğin, -10-10 gibi bir aralıktaki öğeleri Visual temel destekler Diziler) diğer değerler izin verebilir.
+A `CComSafeArray` varolan bir nesne oluşturulabilir `SAFEARRAYBOUND` yapısı ve boyut ya da dizi ve alt sınırı içinde öğe sayısını belirterek sayı. Dizi öğesinden erişilecek ise C++, alt sınırı 0 olmalıdır. Diğer diller için alt sınırı (örneğin, -10-10 gibi bir aralıktaki öğeleri Visual temel destekler Diziler) diğer değerler izin verebilir.
 
 ##  <a name="destroy"></a>  CComSafeArray::Destroy
 

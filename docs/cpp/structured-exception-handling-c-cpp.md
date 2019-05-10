@@ -9,16 +9,16 @@ helpviewer_keywords:
 - try-catch keyword [C++], termination handlers
 - C++ exception handling, exception handlers
 ms.assetid: dd3b647d-c269-43a8-aab9-ad1458712976
-ms.openlocfilehash: b77a218340399578e3c9428100476787e2e60b25
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e948d941afa1459623619e385aa67b1c60490245
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62330576"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65221951"
 ---
 # <a name="structured-exception-handling-cc"></a>Yapılandırılmış Özel Durum İşleme (C/C++)
 
-Yapılandırılmış özel durum işleme (SEH) C donanım hataları gibi bazı olağanüstü durum kodunu durumlarda düzgün bir şekilde işlemek için bir Microsoft uzantısıdır. Windows ve Visual C++ SEH uygulamasını desteklese de, olduğundan, kodunuzun daha taşınabilir ve esnek yapan ISO standardı C++ özel durum işleme kullanmanızı öneririz. Bununla birlikte, mevcut kodu sağlamak ya da belirli program türleri için yine de SEH kullanmanız gerekebilir.
+Yapılandırılmış özel durum işleme (SEH) C donanım hataları gibi bazı olağanüstü durum kodunu durumlarda düzgün bir şekilde işlemek için bir Microsoft uzantısıdır. Ancak Windows ve Microsoft C++ SEH, destek ISO standardındaki kullanmanızı öneririz C++ , kodunuzun daha taşınabilir ve esnek kılar çünkü özel durum işleme. Bununla birlikte, mevcut kodu sağlamak ya da belirli program türleri için yine de SEH kullanmanız gerekebilir.
 
 **Microsoft'a özgü:**
 
@@ -34,7 +34,7 @@ Yapılandırılmış özel durum işleme (SEH) C donanım hataları gibi bazı o
 
 SEH ile yürütme beklenmedik şekilde sonlandırılırsa bellek blokları ve dosyaları gibi kaynakları doğru şekilde serbest bırakıldığından emin olabilirsiniz. Belirli sorunları da işleyebilirsiniz — Örneğin, yetersiz bellek — üzerinde kullanmayan kısa yapılandırılmış kodu kullanarak **goto** deyimleri ya da dönüş kodlarını ayrıntılı test etme.
 
-Try-except ve try-finally deyimleri başvurulan bu makalede Microsoft C diline yönelik uzantılarıdır. Bunlar, aksi takdirde yürütme sonlanırdı olayları sonra bir program denetlemek amacıyla uygulamaları etkinleştirerek SEH destekler. SEH ile C++ kaynak dosyaları çalışır, ancak C++ için özel olarak tasarlanmıştır. Bir C++ programında kullanarak derleme SEH kullanıyorsanız [/eha veya/ehsc](../build/reference/eh-exception-handling-model.md) seçeneğini yok ediciler yerel nesneleri çağrılır ancak başka bir yürütme davranışı beklediğiniz olmayabilir. Çizim için bu makalenin ilerleyen kısımlarındaki örneğe bakın. Çoğu durumda, SEH yerine, ISO standardı kullanmanızı öneririz [C++ özel durum işleme](../cpp/try-throw-and-catch-statements-cpp.md), Visual C++ da destekler. C++ özel durum işlemeyi kullanarak kodunuzun daha taşınabilir olduğundan ve her türden özel durumları işleyebilir emin olabilirsiniz.
+Try-except ve try-finally deyimleri başvurulan bu makalede Microsoft C diline yönelik uzantılarıdır. Bunlar, aksi takdirde yürütme sonlanırdı olayları sonra bir program denetlemek amacıyla uygulamaları etkinleştirerek SEH destekler. SEH ile C++ kaynak dosyaları çalışır, ancak C++ için özel olarak tasarlanmıştır. Bir C++ programında kullanarak derleme SEH kullanıyorsanız [/eha veya/ehsc](../build/reference/eh-exception-handling-model.md) seçeneğini yok ediciler yerel nesneleri çağrılır ancak başka bir yürütme davranışı beklediğiniz olmayabilir. Çizim için bu makalenin ilerleyen kısımlarındaki örneğe bakın. Çoğu durumda, SEH yerine, ISO standardı kullanmanızı öneririz [ C++ özel durum işleme](../cpp/try-throw-and-catch-statements-cpp.md), hangi Microsoft C++ derleyici da destekler. C++ özel durum işlemeyi kullanarak kodunuzun daha taşınabilir olduğundan ve her türden özel durumları işleyebilir emin olabilirsiniz.
 
 SEH kullanan C kodu varsa, C++ özel durum işleme kullanan C++ kodu ile karıştırabilirsiniz. Bilgi için [yapılandırılmış özel durumları C++'ta işlemek](../cpp/exception-handling-differences.md).
 

@@ -7,11 +7,11 @@ helpviewer_keywords:
 - decorated names, calling conventions
 ms.assetid: 8327a27b-bb4f-49f2-8218-b851b9d2a463
 ms.openlocfilehash: d1557f53a07a544ff4f9e5a63f905e6854fb74ce
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
-ms.translationtype: HT
+ms.sourcegitcommit: 283cb64fd7958a6b7fbf0cd8534de99ac8d408eb
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62393161"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "64857164"
 ---
 # <a name="name-decoration"></a>Düzenlemeyi Adlandır
 

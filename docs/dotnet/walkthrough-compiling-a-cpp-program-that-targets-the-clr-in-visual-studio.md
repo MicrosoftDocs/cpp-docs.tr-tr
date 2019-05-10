@@ -1,43 +1,76 @@
 ---
 title: Derleme bir C++CLR'yi hedefleyen /CLI programı
-ms.date: 09/17/2018
+description: Microsoft kullanım C++ programlar ve bağlanabilir kitaplıkları yerel oluşturmak için C++ kod ve .NET programlarının.
+ms.date: 04/23/2019
 helpviewer_keywords:
 - command-line applications [C++], managed code
 - compiling programs [C++]
 - Visual C++, managed code
 - managed code [C++]
 ms.assetid: 339f89df-a5d2-4040-831a-ddbe25b5dce4
-ms.openlocfilehash: fcac0079185b6ceef981b9acfeb555ef29d464e0
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
-ms.translationtype: HT
+ms.openlocfilehash: 8462b2b031bdcdebf65d58974c521d80e57d856d
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62384406"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65221813"
 ---
 # <a name="walkthrough-compile-a-ccli-program-that-targets-the-clr-in-visual-studio"></a>İzlenecek yol: Derleme bir C++Visual Studio'da CLR'yi hedefleyen /CLI programı
 
-Kullanarak C++/CLI dil uzantıları oluşturabilirsiniz C++ .NET sınıflarını kullanın ve bunları Visual Studio geliştirme ortamını kullanarak derlemek programları.
+Kullanarak C++/CLI oluşturabilirsiniz C++ yerel yanı sıra .NET sınıfları kullanan programlar C++ türleri. C++/ CLI konsol uygulamaları ve yerel kaydırma DLL'leri kullanılmak için tasarlanmıştır C++ kod ve .NET programlarının erişilebilir hale getirebilirsiniz. .NET tabanlı bir Windows kullanıcı arabirimi oluşturmak için kullanın C# veya Visual Basic. 
 
 Bu yordam için kendi C++ programınızı yazabilir veya örnek programlardan birini kullanın. Bu yordamda kullandığımız örnek program, textfile.txt adlı bir metin dosyası oluşturur ve proje dizinine kaydeder.
 
 ## <a name="prerequisites"></a>Önkoşullar
 
-Bu konular, C++ dili temellerini anladığınızı varsayar.
+- Bir C++ dilinin temellerini anlama.
+- Visual Studio 2017 ve sonraki sürümlerinde, C++/CLI desteği isteğe bağlı bir bileşenidir. Yüklemek için açık **Visual Studio yükleyicisi** Windows Başlat menüsünde. Emin olun **ile masaüstü geliştirme C++**  kutucuk denetlenir ve **isteğe bağlı** bileşenleri bölüm, ayrıca onay  **C++CLI desteği**.
 
-### <a name="to-create-a-new-project-in-visual-studio-and-add-a-new-source-file"></a>Visual Studio'da yeni bir proje oluşturun ve yeni bir kaynak dosyası eklemek için
+## <a name="create-a-new-project"></a>Yeni bir proje oluşturma
+
+Aşağıdaki adımlar, kullandığınız Visual Studio'nun hangi sürümünün bağlı olarak farklılık gösterir. Bu sayfanın sol üst sürüm seçicisinde doğru ayarlandığından emin olun.
+
+::: moniker range="vs-2019"
+
+### <a name="to-create-a-ccli-project-in-visual-studio-2019"></a>Oluşturmak için bir C++Visual Studio 2019 /CLI projesinde
+
+1. İçinde **Çözüm Gezgini**, açmak için ekranın üst sağ **yeni bir proje oluşturma** iletişim kutusu.
+
+1. İletişim kutusunun üstüne yazın **CLR** arama kutusuna ve ardından **CLR boş proje** sonuçları listesinde. 
+
+1. Seçin **Oluştur** projeyi oluşturmak için.
+
+::: moniker-end
+
+::: moniker range="vs-2017"
+
+### <a name="to-create-a-ccli-project-in-visual-studio-2017"></a>Oluşturmak için bir C++/CLI proje Visual Studio 2017
 
 1. Yeni bir proje oluşturun. Üzerinde **dosya** menüsünde **yeni**ve ardından **proje**.
 
 1. Visual C++ proje türlerinden tıklayın **CLR**ve ardından **CLR boş proje**.
 
-   > [!NOTE]
-   > Varsa **CLR boş proje** türü (Visual Studio 2017 yalnızca) eksik, seçin **açık Visual Studio yükleyicisi** sol bölmesinde **yeni proje** iletişim kutusu. Yükle seçeneği altında bulunan **ile masaüstü geliştirme C++**  içinde **isteğe bağlı** adlı bileşenleri bölümünde  **C++CLI desteği**.<br/>
+1. Bir proje adı yazın. Varsayılan olarak, projeyi içeren çözüm yeni proje ile aynı ada sahiptir ancak farklı bir ad girebilirsiniz. İsterseniz, proje için farklı bir konum girebilirsiniz.
 
-1. Bir proje adı yazın.
+1. Tıklayın **Tamam** yeni projeyi oluşturmak için.
 
-   Varsayılan olarak, projeyi içeren çözüm yeni proje ile aynı ada sahiptir ancak farklı bir ad girebilirsiniz. İsterseniz, proje için farklı bir konum girebilirsiniz.
+::: moniker-end
 
-   Tıklayın **Tamam** yeni projeyi oluşturmak için.
+::: moniker range="vs-2015"
+
+### <a name="to-create-a-ccli-project-in-visual-studio-2015"></a>Oluşturmak için bir C++/CLI proje Visual Studio 2015'te
+
+1. Yeni bir proje oluşturun. Üzerinde **dosya** menüsünde **yeni**ve ardından **proje**.
+
+1. Visual C++ proje türlerinden tıklayın **CLR**ve ardından **CLR boş proje**.
+
+1. Bir proje adı yazın. Varsayılan olarak, projeyi içeren çözüm yeni proje ile aynı ada sahiptir ancak farklı bir ad girebilirsiniz. İsterseniz, proje için farklı bir konum girebilirsiniz.
+
+1. Tıklayın **Tamam** yeni projeyi oluşturmak için.
+
+::: moniker-end
+
+## <a name="add-a-source-file"></a>Bir kaynak dosyası ekleme
 
 1. Varsa **Çözüm Gezgini** görünmeyen, tıklayın **Çözüm Gezgini** üzerinde **görünümü** menüsü.
 
@@ -57,7 +90,7 @@ Bu konular, C++ dili temellerini anladığınızı varsayar.
 
    `StreamWriter^ sw = gcnew StreamWriter(fileName);`
 
-   Yeni Visual C++ sözdizimi hakkında daha fazla bilgi için bkz. [çalışma zamanı platformları için bileşen uzantıları](../extensions/component-extensions-for-runtime-platforms.md).
+   Daha fazla bilgi için C++/CLI sözdizimine bakın [çalışma zamanı platformları için bileşen uzantıları](../extensions/component-extensions-for-runtime-platforms.md).
 
 1. Üzerinde **derleme** menüsünde tıklatın **Çözümü Derle**.
 

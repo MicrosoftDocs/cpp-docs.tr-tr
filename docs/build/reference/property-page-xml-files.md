@@ -1,15 +1,15 @@
 ---
 title: Özellik sayfası XML kuralı dosyaları
-ms.date: 04/27/2017
+ms.date: 05/06/2019
 helpviewer_keywords:
 - property page XML files
 ms.assetid: dd9d9734-4387-4098-8ba6-85b93507731d
-ms.openlocfilehash: 17b89f00b2e51c960ed7d3219427b56d92851b81
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 610dc7341a35845b35d8ed80f52b421d1c2fb5d1
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62319474"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65217726"
 ---
 # <a name="property-page-xml-rule-files"></a>Özellik sayfası XML kuralı dosyaları
 
@@ -19,7 +19,7 @@ IDE'de proje özelliği sayfalarından VCTargets klasöründe bulunan XML dosyal
 
 İlk olarak, bir proje özellik sayfalarını açalım ('nde proje düğümüne sağ tıklayın **Çözüm Gezgini** ve Özellikler'i seçin):
 
-![Visual C++ proje özellikleri](../media/cpp-property-page-2017.png)
+![Visual Studio C++ proje özellikleri](../media/cpp-property-page-2017.png)
 
 Her bir düğümünde **yapılandırma özellikleri** bir kuralı olarak adlandırılır. Bir kural, bazen derleyicinin gibi tek bir araçla temsil eder, ancak genel terimi, yürütür ve, bazı çıktı üretebilir özelliklere sahip bir ifade eder. Her kural VCTargets klasöründeki bir xml dosyasından doldurulur. Örneğin, yukarıda gösterilen C/C++ Kuralı 'cl.xml' tarafından doldurulur.
 

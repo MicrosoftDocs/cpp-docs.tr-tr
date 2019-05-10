@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - idl_quote attribute
 ms.assetid: a370e1b7-948b-4e67-9a25-58facf24e4c9
-ms.openlocfilehash: fd7455298c9a1b69926d85766b6cd7f96bd374cc
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 3fbec210d973926a312d3e750e806dd9ef13f5f9
+ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62409492"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "65448539"
 ---
 # <a name="idlquote"></a>idl_quote
 
@@ -25,8 +25,8 @@ Visual C++'ın geçerli sürümünde desteklenmeyen IDL yapıları kullanmanıza
 
 ### <a name="parameters"></a>Parametreler
 
-*Metin*<br/>
-Visual C++ derleyicisi aracılığıyla oluşturulan .idl dosyasına bir derleyici hatası dönmeden iletmek için istediğinize öznitelik adı.
+*text*<br/>
+Microsoft düşündüğünüz öznitelik adı C++ aracılığıyla oluşturulan .idl dosyasına bir derleyici hatası dönmeden iletmek için derleyici.
 
 ## <a name="remarks"></a>Açıklamalar
 

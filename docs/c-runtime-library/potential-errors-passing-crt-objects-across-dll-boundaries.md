@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - DLL conflicts [C++]
 ms.assetid: c217ffd2-5d9a-4678-a1df-62a637a96460
-ms.openlocfilehash: 31f9d9aceba167b516c9d37724e240f1bc4586e1
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 10fbb128698b6422779d09a15fe3c1d25e8de5b5
+ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62342529"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "65446661"
 ---
 # <a name="potential-errors-passing-crt-objects-across-dll-boundaries"></a>CRT Nesnelerini DLL Sınırlarından Geçirirken Olası Hatalar
 
@@ -23,7 +23,7 @@ YIĞIN []: Geçersiz adres için RtlValidateHeap(#,#) belirtildi
 
 ## <a name="causes"></a>Nedenler
 
-CRT kitaplığının her kopyası uygulamanıza veya DLL tarafından iş parçacığı yerel depolama alanında tutulur ayrı ve farklı bir durum vardır. Bu nedenle, ortam değişkenleri, dosya tanıtıcıları gibi CRT nesnelerini ve yerel ayarlar yalnızca uygulamadaki CRT veya bu nesneler burada ayrılan veya ayarlayın DLL kopyası için geçerli olur. Bir DLL ve uygulama istemcileri farklı kopyalarını CRT kitaplığı kullandığınızda, bu CRT nesnelerini DLL sınırında geçirmek ve bunları diğer tarafta doğru işlenmek üzere beklediğiniz olamaz. Bu, özellikle CRT sürümlerinden önce Evrensel CRT Visual Studio 2015 ve sonraki sürümlerde geçerlidir. Visual C++ 2013 veya daha önce oluşturulan Visual Studio'nun her sürümü için sürüme özgü bir CRT kitaplığı vardı. Örneğin, kendi veri yapıları ve adlandırma kuralları, CRT iç uygulama ayrıntıları her sürümde farklı. CRT CRT dll'nin farklı bir sürüme bir sürümü için derlenmiş kod dinamik olarak bağlama hiçbir zaman desteklenen, ancak zaman zaman, daha fazla Şanslar tasarıma göre çalışır.
+CRT kitaplığının her kopyası uygulamanıza veya DLL tarafından iş parçacığı yerel depolama alanında tutulur ayrı ve farklı bir durum vardır. Bu nedenle, ortam değişkenleri, dosya tanıtıcıları gibi CRT nesnelerini ve yerel ayarlar yalnızca uygulamadaki CRT veya bu nesneler burada ayrılan veya ayarlayın DLL kopyası için geçerli olur. Bir DLL ve uygulama istemcileri farklı kopyalarını CRT kitaplığı kullandığınızda, bu CRT nesnelerini DLL sınırında geçirmek ve bunları diğer tarafta doğru işlenmek üzere beklediğiniz olamaz. Bu, özellikle CRT sürümlerinden önce Evrensel CRT Visual Studio 2015 ve sonraki sürümlerde geçerlidir. Visual Studio 2013 veya daha önce oluşturulan Visual Studio'nun her sürümü için sürüme özgü bir CRT kitaplığı vardı. Örneğin, kendi veri yapıları ve adlandırma kuralları, CRT iç uygulama ayrıntıları her sürümde farklı. CRT CRT dll'nin farklı bir sürüme bir sürümü için derlenmiş kod dinamik olarak bağlama hiçbir zaman desteklenen, ancak zaman zaman, daha fazla Şanslar tasarıma göre çalışır.
 
 Ayrıca, kendi yığını Yöneticisi CRT kitaplığının her kopyası olduğundan, bir CRT Kitaplığı'nda Bellek ayırma ve farklı bir kopyasını CRT kitaplığı tarafından serbest bırakılacak bir DLL sınırı arasında işaretçi işleve yığın bozulma olası bir nedeni vardır. CRT nesnelerini sınırında geçirir veya bellek ayırırken ve DLL dışında serbest bırakılacak bekler, DLL dosyanızı tasarlarken, uygulama istemcilerinin aynı kopyasını CRT kitaplığının DLL olarak kullanmak için dll kısıtlayın. Normalde yalnızca her ikisi de aynı sürüme CRT DLL yükleme zamanında bağlıysa DLL ve istemcileri CRT kitaplığı aynı kopyasını kullanın. Visual Studio 2015 ve daha sonra Windows 10 tarafından kullanılan Evrensel CRT kitaplığının DLL sürümü artık merkezi olarak dağıtılan bir Windows bileşeni olduğundan, ucrtbase.dll olduğu aynı Visual Studio 2015 ve sonraki sürümleri ile oluşturulan uygulamalar için. Ancak, hatta CRT kodu aynı olduğunda, farklı bir yığın kullanan bileşen için bir yığında ayrılan bellek kapalı el olamaz.
 

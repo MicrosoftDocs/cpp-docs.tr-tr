@@ -6,18 +6,21 @@ helpviewer_keywords:
 - name decoration [C++]
 - names [C++], decorated
 ms.assetid: a4e9ae8e-b239-4454-b401-4102793cb344
-ms.openlocfilehash: 3fae232e6ca886195315002f4e65063d8a23ddc8
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e3950f79c4c88d031e04d0d145e0a03c9ebc0a37
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62293907"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65221797"
 ---
 # <a name="decorated-names"></a>Düzenlenmiş Adlar
 
 İşlevleri, verileri ve nesneleri C ve C++ programları, dahili olarak düzenlenmiş adlarıyla gösterilir. A *ile düzenlenmiş adın* bir nesne, veri veya işlev tanımı bir derleme sırasında derleyici tarafından oluşturulan kodlanmış bir dize. Bu, çağırma kuralları, türleri, işlev parametrelerini ve diğer bilgileri adı ile birlikte kaydeder. Olarak da bilinen bu ad düzenlemesi *ad değiştirmeyi*nesneleri bir yürütülebilir dosya bağlanırken ve doğru işlevlerin bulunacağı bağlayıcı yardımcı olur.
 
-Düzenlenmiş adlandırma kuralları çeşitli Visual C++ sürümlerinde değişmiş ve farklı bir hedef mimarilerde farklı da olabilir. Visual C++, C ve C++ DLL'leri ve kitaplıkları kullanılarak oluşturulan kaynak dosyaları ile doğru şekilde bağlamak için aynı derleyici araç takımı, bayraklar ve hedef mimari kullanarak derlenmelidir.
+Düzenlenmiş adlandırma kuralları çeşitli Visual Studio sürümlerinde değişmiş ve farklı bir hedef mimarilerde farklı da olabilir. Visual Studio, C kullanarak oluşturulan kaynak dosyaları ile doğru şekilde bağlamak ve C++ DLL'ler ve kitaplıkları aynı derleyici araç takımı, bayraklar ve hedef mimari kullanarak derlenmelidir. 
+
+> [!NOTE]
+> Visual Studio 2015 ile oluşturulan kitaplıkları Visual Studio 2017 veya Visual Studio 2019 ile oluşturulmuş uygulamalar tarafından kullanılır.
 
 ##  <a name="Using"></a> Düzenlenmiş adları kullanma
 
@@ -25,7 +28,7 @@ Normalde, derleme kod yazmak için düzenlenmiş adı ve bağlantı başarıyla 
 
 İşlev adı, sınıf, çağırma kuralı, dönüş türü veya herhangi bir parametre değiştirirseniz düzenlenmiş adı da değişir. Bu durumda, yeni düzenlenmiş adı almak ve her yerde düzenlenmiş adı belirtilen kullanmanız gerekir.
 
-Ad düzenlemesi, ayrıca diğer programlama veya diğer derleyiciler kullanarak içinde yazılan koda bağlarken önemlidir. Farklı derleyiciler farklı ad düzenlemesi kuralları kullanın. Yürütülebilir dosyanın başka bir dilde yazılan koda bağlantılar, dışarı aktarılan ve içeri aktarılan ad ve çağırma kuralları eşleştirmek için özel dikkatli olunması gerekir. Assembly dili kod Visual C++ kullanılarak yazılmış kaynak koda bağlamak için Visual C++ ile düzenlenmiş adları ve çağırma kurallarını kullanmanız gerekir.
+Ad düzenlemesi, ayrıca diğer programlama veya diğer derleyiciler kullanarak içinde yazılan koda bağlarken önemlidir. Farklı derleyiciler farklı ad düzenlemesi kuralları kullanın. Yürütülebilir dosyanın başka bir dilde yazılan koda bağlantılar, dışarı aktarılan ve içeri aktarılan ad ve çağırma kuralları eşleştirmek için özel dikkatli olunması gerekir. Assembly dili kod MSVC kullanılarak yazılmış kaynak koda bağlamak için MSVC düzenlenmiş adları ve çağırma kurallarını kullanmanız gerekir.
 
 ##  <a name="Format"></a> İle düzenlenmiş adın biçimi bir C++
 

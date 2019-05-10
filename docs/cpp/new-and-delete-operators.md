@@ -1,20 +1,19 @@
 ---
 title: new ve delete İşleçleri
-ms.date: 11/04/2016
+ms.date: 05/07/2019
 f1_keywords:
 - delete_cpp
 - new
 helpviewer_keywords:
-- new keyword [C++], dynamic allocation of objects
-- nothrownew.obj
-- delete keyword [C++], syntax
+- new keyword [C++]
+- delete keyword [C++]
 ms.assetid: fa721b9e-0374-4f04-bb87-032ea775bcc8
-ms.openlocfilehash: 1ac6282ecbf45f22e7dd66b94f8bccdbc4e505ce
-ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
+ms.openlocfilehash: 8dd5e6a555872c443e32e9ea464ea49d4ae18f99
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "64345891"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65222370"
 ---
 # <a name="new-and-delete-operators"></a>new ve delete İşleçleri
 
@@ -85,9 +84,7 @@ Parantez içinde sağlanan bağımsız değişken **yeni** geçirilir `Blanks::o
 Blanks *SomeBlanks = new Blanks;
 ```
 
-Visual C++ 5.0 ve önceki sürümlerde olmayan türler ve tüm diziler (olup olmadıklarına bakılmaksızın **sınıfı** türü) kullanılarak ayrılmış **yeni** işleci her zaman kullanılan genel **new işleci** işlevi.
-
-Visual C++ 5.0 ile başlayan, derleyici üye dizisi destekler **yeni** ve **Sil** bir sınıf bildiriminde işleçleri. Örneğin:
+Üye dizisi derleyici destekler **yeni** ve **Sil** bir sınıf bildiriminde işleçleri. Örneğin:
 
 ```cpp
 // spec1_the_operator_new_function2.cpp
@@ -203,7 +200,7 @@ int main( int argc, char *argv[] ) {
 
 Yukarıdaki kod, "bellek sızıntısı" algılamak için kullanılabilir — diğer bir deyişle, ücretsiz mağaza ayrılmış ancak hiçbir zaman serbest bellek. Bu algılama, genel gerçekleştirmek için **yeni** ve **Sil** sayısı ayırma ve bellek ayırmayı kaldırma işleçleri yeniden tanımlandı.
 
-Visual C++ 5.0 ile başlayan, derleyici üye dizisi destekler **yeni** ve **Sil** bir sınıf bildiriminde işleçleri. Örneğin:
+Üye dizisi derleyici destekler **yeni** ve **Sil** bir sınıf bildiriminde işleçleri. Örneğin:
 
 ```cpp
 // spec1_the_operator_delete_function2.cpp

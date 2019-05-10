@@ -8,12 +8,12 @@ helpviewer_keywords:
 - data [C++], data access technologies
 - data access [C++], class libraries for databases
 ms.assetid: 95da6237-bbe2-480a-ae50-3a520051ceff
-ms.openlocfilehash: 142d067b6fbc9e2357ff8fc23fd931a1194477e9
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: a68c4a9df3b439ae641c5e4cbe6f3fbc8b8e6355
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62398075"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65222539"
 ---
 # <a name="data-access-in-visual-c"></a>Visual C++'da Veri Erişimi
 
@@ -40,11 +40,11 @@ C veya C++ uygulamalarından Azure SQL veritabanı'na bağlanın.
 [C++ için Microsoft Azure depolama istemci kitaplığı](https://github.com/Azure/azure-storage-cpp)<br/>
 [Azure depolama](/azure/storage/storage-introduction) dayanıklılık, kullanılabilirlik ve ölçeklenebilirlik müşterilerinin ihtiyaçlarını karşılamak üzere dayanan modern uygulamalar için bulut depolama çözümüdür. Azure depolama için C++'tan C++ için Azure depolama istemci kitaplığı kullanarak bağlanın.
 
-[Yayımlanan ODBC sürücüsü 13.1 SQL Server - Windows](https://blogs.msdn.microsoft.com/sqlnativeclient/2016/08/01/announcing-the-odbc-driver-13-1-for-sql-server)<br/>
-En son ODBC sürücüsü, C/C++ tabanlı uygulamalar için Microsoft SQL Server 2016 Microsoft Azure SQL veritabanı için güçlü veri erişim sağlar. Her zaman şifreli gibi özellikleri için destek, Azure Active Directory ve AlwaysOn Kullanılabilirlik grupları sağlar. Ayrıca, MacOS ve Linux için de kullanılabilir.
+[SQL Server için ODBC sürücüsü](/sql/connect/odbc/microsoft-odbc-driver-for-sql-server)<br/>
+En son ODBC sürücüsü güçlü veri erişimi için Microsoft SQL Server ve Microsoft Azure SQL veritabanı için C sağlar /C++ tabanlı uygulamalar. Her zaman şifreli gibi özellikleri için destek, Azure Active Directory ve AlwaysOn Kullanılabilirlik grupları sağlar. Ayrıca, MacOS ve Linux için de kullanılabilir.
 
-[SQL Server yerel istemcisi](/sql/relational-databases/native-client/sql-server-native-client-programming)<br/>
-OLE DB hem de SQL Server 2005, SQL Server 2014'e destekleyen ODBC için kullanılan tek başına veri erişim uygulama programlama arabirimi (API), SQL Server Native Client ' dir. Yeni uygulamalar için SQL Server ODBC sürücüsü 13.1 kullanmanız gerekir.
+[SQL Server için OLE DB sürücüsü](/sql/connect/oledb/oledb-driver-for-sql-server)<br/>
+En son OLE DB, Microsoft SQL Server ve Microsoft Azure SQL veritabanı'nı destekleyen bir tek başına veri erişimi uygulama programlama arabirimi (API) değil.
 
 [Microsoft Azure C ve C++ Geliştirici Merkezi](https://azure.microsoft.com/develop/cpp/)<br/>
 Azure ile daha fazla esneklik, ölçeklenebilirlik ve güvenilirlik sevdiğiniz araçları kullanarak C++ uygulamaları oluşturmayı kolaylaştırır.

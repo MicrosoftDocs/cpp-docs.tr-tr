@@ -402,12 +402,12 @@ helpviewer_keywords:
 - CDC [MFC], m_hAttribDC
 - CDC [MFC], m_hDC
 ms.assetid: 715b3334-cb2b-4c9c-8067-02eb7c66c8b2
-ms.openlocfilehash: fc5d41221ab0f9679e7d38a399464efc1a38dd52
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 2ff6cd6e0817f74c7688fc573d4b98f70704f96c
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62173562"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65222581"
 ---
 # <a name="cdc-class"></a>CDC sınıfı
 
@@ -3424,7 +3424,7 @@ CSize GetOutputTabbedTextExtent(
 Karşılaştırılacak bir karakter dizesine işaret eder. De geçirebilirsiniz bir [CString](../../atl-mfc-shared/reference/cstringt-class.md) Bu parametre için bir nesne.
 
 *nCount*<br/>
-Dizedeki karakter sayısını belirtir. Varsa *nCount* -1, uzunluk hesaplanır.
+Belirtir [dize uzunluğu](/windows/desktop/gdi/specifying-length-of-text-output-string) işaret ettiği *lpszString*.
 
 *nTabPositions*<br/>
 İşaret ettiği dizideki konumlar sekme durağı sayısını belirten *lpnTabStopPositions*.
@@ -3467,7 +3467,7 @@ CSize GetOutputTextExtent(const CString& str) const;
 Bir karakter dizesi işaret eder. De geçirebilirsiniz bir [CString](../../atl-mfc-shared/reference/cstringt-class.md) Bu parametre için bir nesne.
 
 *nCount*<br/>
-Dizedeki karakter sayısını belirtir. Varsa *nCount* -1, uzunluk hesaplanır.
+Belirtir [dize uzunluğu](/windows/desktop/gdi/specifying-length-of-text-output-string) işaret ettiği *lpszString*.
 
 *str*<br/>
 A `CString` ölçülecek belirtilen karakterleri içeren nesne.
@@ -3669,7 +3669,7 @@ CSize GetTabbedTextExtent(
 Bir karakter dizesine işaret eder. De geçirebilirsiniz bir [CString](../../atl-mfc-shared/reference/cstringt-class.md) Bu parametre için bir nesne.
 
 *nCount*<br/>
-Dizedeki karakter sayısını belirtir. Varsa *nCount* -1, uzunluk hesaplanır.
+Belirtir [dize uzunluğu](/windows/desktop/gdi/specifying-length-of-text-output-string) işaret ettiği *lpszString*.
 
 *nTabPositions*<br/>
 İşaret ettiği dizideki konumlar sekme durağı sayısını belirten *lpnTabStopPositions*.
@@ -4087,7 +4087,7 @@ Dize çizer uygulama tarafından sağlanan geri çağırma işlevinin yordam ör
 Çıkış işlevine geçirilen verileri uzak işaretçi belirtir. Varsa *lpfnOutput* NULL ise *lpData* çıkış dize uzun bir işaretçi olması gerekir.
 
 *nCount*<br/>
-Çıktı olacak karakter sayısını belirtir. Bu parametre 0 ' ise `GrayString` dizenin uzunluğunu hesaplar (varsayarak *lpData* dizeye bir işaretçi). Varsa *nCount* -1 ve işaret ettiği işlevi *lpfnOutput* 0, görüntüyü döndürür gösterilen ancak soluk değil.
+Çıktı olacak karakter sayısını belirtir. Bu parametre 0 ' ise `GrayString` dizenin uzunluğunu hesaplar (varsayarak *lpData* dizeye bir işaretçi). Varsa *nCount* 1 ve işaret ettiği işlevi *lpfnOutput* 0, görüntüyü döndürür gösterilen ancak soluk değil.
 
 *x*<br/>
 Mantıksal x koordinatını dize kapsayan dikdörtgenin başlangıç konumunu belirtir.
@@ -6891,7 +6891,7 @@ Dizenin başlangıç noktasının mantıksal y koordinatını belirtir.
 Çizilecek karakter dizesine işaret eder. Bir karakter dizisi olarak ya da bir işaretçi geçirebilirsiniz veya [CString](../../atl-mfc-shared/reference/cstringt-class.md) Bu parametre için bir nesne.
 
 *nCount*<br/>
-Dizedeki karakter sayısını belirtir. Varsa *nCount* -1, uzunluk hesaplanır.
+Belirtir [dize uzunluğu](/windows/desktop/gdi/specifying-length-of-text-output-string) işaret ettiği *lpszString*.
 
 *nTabPositions*<br/>
 Sekme durağı konumları dizideki değerlerin sayısını belirtir.
