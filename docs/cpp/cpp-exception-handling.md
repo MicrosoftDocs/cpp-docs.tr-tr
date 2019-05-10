@@ -3,14 +3,13 @@ title: C++ Özel Durum İşleme
 ms.date: 11/04/2016
 helpviewer_keywords:
 - C++ exception handling
-- Visual C++, exception handling
 ms.assetid: 65f80b44-9d0f-4d17-b910-07205a5c5c40
-ms.openlocfilehash: b4eaab7d5bb352cccc612dd950572464b82b67e8
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: bbdec38bf722ebb1e188af408bf3a413f6d6b8b7
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62392316"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65222165"
 ---
 # <a name="c-exception-handling"></a>C++ Özel Durum İşleme
 

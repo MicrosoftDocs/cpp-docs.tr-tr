@@ -53,11 +53,11 @@ helpviewer_keywords:
 - C2697
 ms.assetid: 73c6319f-cbea-4a2f-913b-90dc1af61f64
 ms.openlocfilehash: 9ac5f5724490574aecf0e5b542f6fdd42b0ae5bb
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
-ms.translationtype: HT
+ms.sourcegitcommit: 283cb64fd7958a6b7fbf0cd8534de99ac8d408eb
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62406515"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "64857049"
 ---
 # <a name="compiler-errors-c2600-through-c2699"></a>C2600 ile C2699 arasındaki derleyici hataları
 
@@ -67,7 +67,7 @@ Belgelerin bu bölümdeki makaleleri bir alt kümesini derleyici tarafından olu
 
 ## <a name="error-messages"></a>Hata iletileri
 
-|Hata|İleti|
+|Hata|`Message`|
 |-----------|-------------|
 |[Derleyici Hatası C2600](compiler-error-c2600.md)|'*işlevi*': (bildirilmiş sınıfta ilk) derleyicinin ürettiği özel üye işlevi tanımlanamıyor|
 |[Derleyici Hatası C2601](compiler-error-c2601.md)|'*işlevi*': yerel işlev tanımları geçersiz|

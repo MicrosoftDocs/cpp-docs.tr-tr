@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4867
 ms.assetid: 8a257d70-c3a7-462d-b285-e57c952a8bf7
-ms.openlocfilehash: 9fa9b382b42a2fb8ba72fd9744c612af5dd598d2
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 0fd5de46f713aed08508f8755c9e54c3ff46366b
+ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62311078"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "65447199"
 ---
 # <a name="compiler-warning-c4867"></a>Derleyici Uyarısı C4867
 
@@ -19,7 +19,7 @@ ms.locfileid: "62311078"
 
 Üye işlevi işaretçisi hatalı olarak başlatıldı.
 
-Bu uyarı için Visual C++ 2005 yapıldığı derleyici uyumluluğu iş sonucu olarak oluşturulan: Gelişmiş işaretçi-üye uyumluluğu.  Visual C++ 2005'ten önce derlenmiş kod artık C4867 oluşturur.
+Bu uyarı için Visual Studio 2005 yapıldığı derleyici uyumluluğu iş sonucu olarak oluşturulan: Gelişmiş işaretçi-üye uyumluluğu.  Visual Studio 2005'ten önce derlenmiş kod artık C4867 oluşturur.
 
 Bu uyarı, her zaman hata olarak görüntülenir. Kullanım [uyarı](../../preprocessor/warning.md) pragması, bu uyarıyı devre dışı bırakmak için. C4867 ve MFC/ATL hakkında daha fazla bilgi için bkz. [_ATL_ENABLE_PTM_WARNING](../../atl/reference/compiler-options-macros.md#_atl_enable_ptm_warning).
 

@@ -1,16 +1,16 @@
 ---
 title: 'İzlenecek yol: Bir MFC projesine animasyon ekleme'
-ms.date: 09/20/2018
+ms.date: 04/25/2019
 helpviewer_keywords:
 - animation [MFC]
 - MFC, animation
 ms.assetid: 004f832c-9fd5-4f88-9ca9-ae65dececdc2
-ms.openlocfilehash: 25e29654f1e192e03a078e4a963f27abeea6056d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
-ms.translationtype: HT
+ms.openlocfilehash: 07b0c5f712cd645246ecfb4e8c93543377a340a3
+ms.sourcegitcommit: 283cb64fd7958a6b7fbf0cd8534de99ac8d408eb
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62358610"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "64558192"
 ---
 # <a name="walkthrough-adding-animation-to-an-mfc-project"></a>İzlenecek yol: Bir MFC projesine animasyon ekleme
 
@@ -38,9 +38,9 @@ Bu izlenecek yolu tamamlamak için Visual Studio olması gerekir.
 
 ### <a name="to-create-an-mfc-application"></a>Bir MFC uygulaması oluşturmak için
 
-1. Üzerinde **dosya** menüsünde **yeni** ve ardından **proje**.
+1. Kullanım **MFC Uygulama Sihirbazı** bir MFC uygulaması oluşturmak için. Bkz: [izlenecek yol: Yeni MFC Kabuk denetimlerini kullanma](walkthrough-using-the-new-mfc-shell-controls.md) Visual Studio sürümünüz için Sihirbazı'nı açmak yönergeler.
 
-1. İçinde **yeni proje** iletişim kutusunda, sol bölmede altında **yüklü şablonlar**, genişletme **Visual C++** seçip **MFC**. Orta bölmede seçin **MFC uygulaması**. İçinde **adı** kutusuna *MFCAnimationWalkthrough*. **Tamam**'ı tıklatın.
+1. İçinde **adı** kutusuna *MFCAnimationWalkthrough*. **Tamam**'ı tıklatın.
 
 1. İçinde **MFC Uygulama Sihirbazı** iletişim kutusunda, doğrulayın **uygulama türü** olduğu **birden çok belge**, **proje stili** olduğu **Visual Studio**ve **belge/görünüm mimarisi desteği** seçeneği belirlenir. **Son**'a tıklayın.
 

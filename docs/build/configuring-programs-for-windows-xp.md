@@ -2,12 +2,12 @@
 title: Programları Windows XP için yapılandırma
 ms.date: 02/02/2018
 ms.assetid: 1e4487b3-d815-4123-878b-5718b22f0fd5
-ms.openlocfilehash: 989a4e2c7e91c05498902bf1c5cb9d838ee47c3b
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f27921e062fd8abb7bc9b63bfbb9b050f25ee54b
+ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62273808"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "65446367"
 ---
 # <a name="configuring-programs-for-windows-xp"></a>Programları Windows XP için yapılandırma
 
@@ -25,7 +25,7 @@ Visual Studio'ya dahil Windows XP platform araç takımını, Windows 7 SDK sür
 
 1. İçinde **Çözüm Gezgini**, projeniz için kısayol menüsünü açın ve ardından **özellikleri**.
 
-1. İçinde **özellik sayfaları** iletişim kutusuna proje için altında **yapılandırma özellikleri** > **genel**ayarlayın **Platform araç takımını** özelliğini istenen Windows XP araç. Örneğin, **Visual Studio 2017 - Windows XP (v141_xp)** Microsoft Visual kullanarak Windows XP ve Windows Server 2003 için kod oluşturmak için C++ 2017 derleyici.
+1. İçinde **özellik sayfaları** iletişim kutusuna proje için altında **yapılandırma özellikleri** > **genel**ayarlayın **Platform araç takımını** özelliğini istenen Windows XP araç. Örneğin, **Visual Studio 2017 - Windows XP (v141_xp)** kullanarak Microsoft Windows XP ve Windows Server 2003 için kod oluşturmak için C++ Visual Studio 2017'de derleyici.
 
 ### <a name="c-runtime-support"></a>C++ çalışma zamanı desteği
 

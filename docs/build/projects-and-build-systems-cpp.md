@@ -1,23 +1,20 @@
 ---
 title: C/C++ projeleri ve Visual Studio'da derleme sistemleri
 ms.description: Use Visual Studio to compile and build C++ projects for Windows, ARM or Linux based on any project system.
-ms.date: 12/08/2018
-f1_keywords:
-- vcbuilding
-- buildingaprogramVC
+ms.date: 05/06/2019
 helpviewer_keywords:
 - builds [C++]
-- Visual C++ projects, building
+- C++ projects, building
 - projects [C++], building
 - builds [C++], options
-- Visual C++, build options
+- C++, build options
 ms.assetid: fa6ed4ff-334a-4d99-b5e2-a1f83d2b3008
-ms.openlocfilehash: 73797f3817338c48e8ff11eaaadff71263374fd0
-ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
+ms.openlocfilehash: b345517bb1202030c9d512d16e80484feb4ba737
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "64341164"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65220366"
 ---
 # <a name="cc-projects-and-build-systems-in-visual-studio"></a>C/C++ projeleri ve Visual Studio'da derleme sistemleri
 

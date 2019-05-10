@@ -1,14 +1,14 @@
 ---
 title: Denetimi Web Sayfasına Koyma (ATL Eğitmeni, Bölüm 7)
 ms.custom: get-started-article
-ms.date: 09/27/2018
+ms.date: 05/06/2019
 ms.assetid: 50dc4c95-c95b-4006-b88a-9826f7bdb222
-ms.openlocfilehash: baf0ca56ae7512ac76f64b29e3060e0749c083c1
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: aab9557fd73e870c0362f876642e828616b538bd
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62261546"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65221239"
 ---
 # <a name="putting-the-control-on-a-web-page-atl-tutorial-part-7"></a>Denetimi Web Sayfasına Koyma (ATL Eğitmeni, Bölüm 7)
 
@@ -74,7 +74,7 @@ Denetimden kenar özelliğini alır ve denetimin içini tıkladığınızda bir 
 
 ## <a name="indicating-that-the-control-is-safe-for-scripting"></a>Denetim komut dosyası için güvenli olduğunu gösterme
 
-Denetimi içeren Web sayfasını Internet Explorer'da görüntüleyebilir veya daha fazla rahatı, Visual C++ ile oluşturulan Web tarayıcı görünümü kullanın. Denetiminizi Web tarayıcısı görünümünde görmek için polyctl.htm dosyasını sağ tıklayın ve **tarayıcıda görüntüle**.
+Denetimi içeren Web sayfasını Internet Explorer'da yalnızca görüntüleyebilir. Diğer tarayıcılarda ActiveX denetimleri nedeniyle güvenlik zayıf artık desteklemiyor. 
 
 > [!NOTE]
 > Denetim görünür durumda değilse bazı tarayıcılar ayarları düzeltmeleri ActiveX denetimlerini çalıştırmak için gerekli olduğunu bilirsiniz. ActiveX denetimleri etkinleştirme hakkında tarayıcının belgelere bakın.

@@ -1,19 +1,19 @@
 ---
-title: 'Nasıl yapılır: 64-Bit, hedeflemek için Visual C++ projeleri x64 yapılandırma platformları'
+title: "Nasıl yapılır: Visual Studio'yu yapılandırma C++ platformları hedef 64-Bit için x64 projeleri"
 ms.date: 11/04/2016
 helpviewer_keywords:
 - platforms [C++], 64-bit
 - 64-bit programming [C++], configuring projects
 - project configurations [C++]
 ms.assetid: 2b9ae001-df36-4750-83b2-982145d632ad
-ms.openlocfilehash: 21c812efd101c64e250a545d2a40df6adc31c414
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: a063c2f333a755ab86a4f91c9d14d0c65a6d1414
+ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62274479"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "65446402"
 ---
-# <a name="how-to-configure-visual-c-projects-to-target-64-bit-x64-platforms"></a>Nasıl yapılır: 64-Bit, hedeflemek için Visual C++ projeleri x64 yapılandırma platformları
+# <a name="how-to-configure-visual-studio-c-projects-to-target-64-bit-x64-platforms"></a>Nasıl yapılır: Visual Studio'yu yapılandırma C++ platformları hedef 64-Bit için x64 projeleri
 
 Visual Studio IDE'de proje yapılandırmalarını, 64-bit, hedeflemek için C++ uygulamaları x64 platformları ayarlamak için kullanabilirsiniz. Ayrıca, bir 64-bit proje yapılandırması Win32 Proje ayarlarını geçirebilirsiniz.
 

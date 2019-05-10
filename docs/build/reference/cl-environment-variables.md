@@ -1,6 +1,6 @@
 ---
 title: CL Ortam Değişkenleri
-ms.date: 11/04/2016
+ms.date: 05/06/2019
 f1_keywords:
 - cl
 helpviewer_keywords:
@@ -9,12 +9,12 @@ helpviewer_keywords:
 - LIBPATH environment variable
 - environment variables, CL compiler
 ms.assetid: 2606585b-a681-42ee-986e-1c9a2da32108
-ms.openlocfilehash: a15bedc0a5aa8215356a98c3635a2edd1f3cfc5f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 620ec386e06b1a0eed91c94e9b2b891d9955fd00
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62294479"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65217627"
 ---
 # <a name="cl-environment-variables"></a>CL Ortam Değişkenleri
 
@@ -22,7 +22,7 @@ CL Aracı'nı aşağıdaki ortam değişkenleri kullanır:
 
 - CL ve \_CL\_, tanımlı değilse. CL araç seçenekleri ve komut satırı bağımsız değişkenleri için CL ortam değişkeninde tanımlanan değişkenleri ekler ve seçenekleri ekler ve bağımsız değişkenler tanımlanan \_CL\_, işlemeden önce.
 
-- , Visual C++ yüklemenizin \include alt dizinine işaret etmelidir içerir.
+- , Visual Studio yüklemenizin \include alt dizinine işaret etmelidir içerir.
 
 - İle başvurulan meta veri dosyaları için aranacak dizinleri belirtir, LIBPATH [#using](../../preprocessor/hash-using-directive-cpp.md). Bkz: `#using` LIBPATH hakkında daha fazla bilgi için.
 

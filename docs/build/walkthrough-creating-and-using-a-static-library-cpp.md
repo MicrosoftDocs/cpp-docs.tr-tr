@@ -1,18 +1,19 @@
 ---
 title: 'İzlenecek yol: Bir statik kitaplık (C++) oluşturma ve kullanma'
+description: Kullanım C++ Visual Studio'da bir statik kitaplık (.lib) oluşturmak için.
 ms.custom: get-started-article
-ms.date: 09/18/2018
+ms.date: 04/25/2019
 helpviewer_keywords:
 - libraries [C++], static
 - static libraries [C++]
 ms.assetid: 3cc36411-7d66-4240-851e-dacb9a8fd6ac
 ms.author: corob
-ms.openlocfilehash: 0d527681abb077a01b3d902c092a21de7a052867
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: afb12cc38dbaf0af88e93a9b329a59f3b54c8557
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62313625"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65217568"
 ---
 # <a name="walkthrough-creating-and-using-a-static-library-c"></a>İzlenecek yol: Bir statik kitaplık (C++) oluşturma ve kullanma
 
@@ -36,30 +37,55 @@ Bir C++ dilinin temellerini anlama.
 
 ##  <a name="CreateLibProject"></a> Statik kitaplık projesi oluşturma
 
-### <a name="to-create-a-static-library-project"></a>Statik kitaplık projesi oluşturmak için
+Projeyi oluşturmak için yönergeleri, Visual Studio 2019 veya önceki bir sürümünü kullanmanıza bağlı olarak değişir. Bu sayfanın üst sol ayarlayın doğru sürümü kullandığınızdan emin olun.
+
+::: moniker range="vs-2019"
+
+### <a name="to-create-a-static-library-project-in-visual-studio-2019"></a>Visual Studio 2019 içinde bir statik kitaplık projesi oluşturmak için
+
+1. Menü çubuğunda, **dosya** > **yeni** > **proje** açmak için **yeni bir proje oluşturma** iletişim kutusu.
+
+1. İletişim kutusunun üstündeki ayarlamak **dil** için **C++** ayarlayın **Platform** için **Windows**, ayarlayıp **proje türü** için **Kitaplığı**. 
+
+1. Filtrelenmiş proje türleri listesinden seçim **statik kitaplık** ardından **sonraki**. Sonraki sayfaya girin *MathFuncsLib* içinde **adı** kutusuna proje için bir ad belirtmek için ve istenen proje konumu belirtin.
+
+1. Seçin **Oluştur** istemci projesi oluşturmak için.
+
+::: moniker-end
+
+::: moniker range="vs-2017"
+
+### <a name="to-create-a-static-library-project-in-visual-studio-2017"></a>Visual Studio 2017'de bir statik kitaplık projesi oluşturmak için
 
 1. Menü çubuğunda, **dosya** > **yeni** > **proje**.
 
 1. Sol bölmesinde **yeni proje** iletişim kutusunda **yüklü** > **Visual C++** ve ardından **Windows Masaüstü**. Orta bölmede seçin **Windows Masaüstü Sihirbazı'nı**.
 
-   > [!NOTE]
-   > Visual Studio 2017'den daha eski sürümleri için de **yeni proje** iletişim kutusunda **yüklü** > **şablonları**  >  **Visual C++** ve ardından **Win32**. Orta bölmede seçin **Win32 konsol uygulaması**.
+1. Proje için bir ad belirleyin — Örneğin, *MathFuncsLib*— içinde **adı** kutusu. Çözüm için bir ad belirleyin — Örneğin, *StaticLibrary*— içinde **çözüm adı** kutusu. Seçin **Tamam** düğmesi.
+
+1. Altında **uygulama türü**seçin **statik kitaplık (.lib)**.
+
+1. Altında **ek seçenekler**, işaretini kaldırın **önceden derlenmiş üst bilgi** onay kutusu.
+
+1. Seçin **Tamam** projeyi oluşturmak için.
+
+::: moniker-end
+
+::: moniker range="vs-2015"
+
+### <a name="to-create-a-static-library-project-in-visual-studio-2015"></a>Visual Studio 2015'te bir statik kitaplık projesi oluşturmak için
+
+1. Menü çubuğunda, **dosya** > **yeni** > **proje**.
+
+1. İçinde **yeni proje** iletişim kutusunda **yüklü** > **şablonları** > **Visual C++** , ve ardından **Win32**. Orta bölmede seçin **Win32 konsol uygulaması**.
 
 1. Proje için bir ad belirleyin — Örneğin, *MathFuncsLib*— içinde **adı** kutusu. Çözüm için bir ad belirleyin — Örneğin, *StaticLibrary*— içinde **çözüm adı** kutusu. Seçin **Tamam** düğmesi.
 
-    - Visual Studio 2017 için
+1. **İleri**'ye tıklayın.
 
-        1. Altında **uygulama türü**seçin **statik kitaplık (.lib)**.
+1. Altında **uygulama türü**seçin **statik kitaplık**. Ardından işaretini kaldırın **önceden derlenmiş üst bilgi** seçin ve kutusunda **son**.
 
-        1. Altında **ek seçenekler**, işaretini kaldırın **önceden derlenmiş üst bilgi** onay kutusu.
-
-        1. Seçin **Tamam** projeyi oluşturmak için.
-
-    - Visual Studio 2017'den daha eski sürümleri
-
-        1. **İleri**'ye tıklayın.
-
-        1. Altında **uygulama türü**seçin **statik kitaplık**. Ardından işaretini kaldırın **önceden derlenmiş üst bilgi** seçin ve kutusunda **son**.
+::: moniker-end
 
 ##  <a name="AddClassToLib"></a> Statik kitaplığa bir sınıf ekleme
 
@@ -84,30 +110,53 @@ Bir C++ dilinin temellerini anlama.
 
 ##  <a name="CreateAppToRefTheLib"></a> Statik kitaplık başvurusu bir C++ konsol uygulaması oluşturma
 
-### <a name="to-create-a-c-console-app-that-references-the-static-library"></a>Statik kitaplık başvurusu bir C++ konsol uygulaması oluşturmak için
+::: moniker range="vs-2019"
+
+### <a name="to-create-a-c-console-app-that-references-the-static-library-in-visual-studio-2019"></a>Oluşturmak için bir C++ Visual Studio 2019 statik kitaplıkta başvuran bir konsol uygulaması
+
+1. İçinde **Çözüm Gezgini**, çözüm için üst düğümünü sağ tıklatın ve seçin **Ekle** > **yeni proje** açmak için **yeni bir proje ekleyin**  iletişim kutusu.
+
+1. İletişim kutusunun üstündeki ayarlamak **dil** için **C++** ayarlayın **Platform** için **Windows**, ayarlayıp **proje türü** için **konsol**. 
+
+1. Filtrelenmiş proje türleri listesinden seçim **konsol uygulaması** ardından **sonraki**. Sonraki sayfaya girin *MyExecRefsLib* içinde **adı** kutusuna proje için bir ad belirtmek için ve istenen proje konumu belirtin.
+
+1. Seçin **Oluştur** istemci projesi oluşturmak için.
+
+::: moniker-end
+
+::: moniker range="vs-2017"
+
+### <a name="to-create-a-c-console-app-that-references-the-static-library-in-visual-studio-2017"></a>Oluşturmak için bir C++ Visual Studio 2017'de statik kitaplık başvurusu konsol uygulaması
 
 1. Menü çubuğunda, **dosya** > **yeni** > **proje**.
 
 1. Sol bölmesinde **yeni proje** iletişim kutusunda **yüklü** > **Visual C++** ve ardından **Windows Masaüstü**. Orta bölmede seçin **Windows Masaüstü Sihirbazı'nı**.
 
-   > [!NOTE]
-   > Visual Studio 2017'den daha eski sürümleri için de **yeni proje** iletişim kutusunda **yüklü** > **şablonları**  >  **Visual C++** ve ardından **Win32**. Orta bölmede seçin **Win32 konsol uygulaması**.
+1. Proje için bir ad belirleyin — Örneğin, *MyExecRefsLib*— içinde **adı** kutusu. Açılan liste yanındaki **çözüm**seçin **eklemek için çözüm**. Komut, statik kitaplık içeren çözüme yeni proje ekler. Seçin **Tamam** düğmesi.
+
+1. Altında **uygulama türü**seçin **konsol uygulaması (.exe)**.
+
+1. Altında **ek seçenekler**, işaretini kaldırın **önceden derlenmiş üst bilgi** onay kutusu.
+
+1. Seçin **Tamam** projeyi oluşturmak için.
+
+::: moniker-end
+
+::: moniker range="vs-2015"
+
+### <a name="to-create-a-c-console-app-that-references-the-static-library-in-visual-studio-2015"></a>Oluşturmak için bir C++ Visual Studio 2015'te statik kitaplık başvurusu konsol uygulaması
+
+1. Menü çubuğunda, **dosya** > **yeni** > **proje**.
+
+1. İçinde **yeni proje** iletişim kutusunda **yüklü** > **şablonları** > **Visual C++** , ve ardından **Win32**. Orta bölmede seçin **Win32 konsol uygulaması**.
 
 1. Proje için bir ad belirleyin — Örneğin, *MyExecRefsLib*— içinde **adı** kutusu. Açılan liste yanındaki **çözüm**seçin **eklemek için çözüm**. Komut, statik kitaplık içeren çözüme yeni proje ekler. Seçin **Tamam** düğmesi.
 
-    - Visual Studio 2017 için
+1. **İleri**'ye tıklayın.
 
-        1. Altında **uygulama türü**seçin **konsol uygulaması (.exe)**.
+1. Emin **konsol uygulaması** seçilir. Denetleyin ardından **boş proje** kutusuna ve seçin **son**.
 
-        1. Altında **ek seçenekler**, işaretini kaldırın **önceden derlenmiş üst bilgi** onay kutusu.
-
-        1. Seçin **Tamam** projeyi oluşturmak için.
-
-    - Visual Studio 2017'den daha eski sürümleri
-
-        1. **İleri**'ye tıklayın.
-
-        1. Emin **konsol uygulaması** seçilir. Denetleyin ardından **boş proje** kutusuna ve seçin **son**.
+::: moniker-end
 
 ##  <a name="UseLibInApp"></a> Uygulama içindeki statik kitaplıkta işlevselliği kullanarak
 

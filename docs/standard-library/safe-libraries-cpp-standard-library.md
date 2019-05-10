@@ -8,16 +8,16 @@ helpviewer_keywords:
 - Safe Libraries, C++ Standard Library
 - Safe C++ Standard Library
 ms.assetid: 3993340f-1f29-4d81-b3f5-52a52bc8e148
-ms.openlocfilehash: 340d300efb442fedb18b738c275bc0a79f874991
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 0c8f2de77255015254eabe018399f913b4582b7c
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62409739"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65220461"
 ---
 # <a name="safe-libraries-c-standard-library"></a>Güvenli kitaplıklar: C++ Standart Kitaplığı
 
-Visual C++ Standart daha güvenli hale getirmek için kitaplığı dahil olmak üzere C++ ile birlikte sevk kitaplıkları için çeşitli iyileştirmeler yapılmıştır.
+Microsoft tarafından sevk kitaplıkları çeşitli iyileştirmeler yapılmıştır C++de dahil olmak üzere C++ standart daha güvenli hale getirmek için kitaplığı.
 
 Arabellek Taşması veya diğer kod hatası için neden olabileceği C++ Standart Kitaplığı çeşitli yöntemlerin güvensiz belirlenmiştir. Bu yöntemlerin kullanım önerilmez ve bunları değiştirmek için yeni ve daha güvenli yöntemleri oluşturulmuş. Tüm son bu yeni yöntemler `_s`.
 

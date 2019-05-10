@@ -1,5 +1,5 @@
 ---
-title: C2700 aracılığıyla C2799 derleyici hataları
+title: C2700 ile C2799 arasındaki derleyici hataları
 ms.date: 04/21/2019
 f1_keywords:
 - C2716
@@ -41,13 +41,13 @@ helpviewer_keywords:
 - C2799
 ms.assetid: 6ee257bb-94bc-42b9-af2c-3c73926afba4
 ms.openlocfilehash: a6f4391008bf9b0a066ba65f27a41697c6097c2e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.sourcegitcommit: 283cb64fd7958a6b7fbf0cd8534de99ac8d408eb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62153217"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "64857641"
 ---
-# <a name="compiler-errors-c2700-through-c2799"></a>C2700 aracılığıyla C2799 derleyici hataları
+# <a name="compiler-errors-c2700-through-c2799"></a>C2700 ile C2799 arasındaki derleyici hataları
 
 Belgelerin bu bölümdeki makaleleri bir alt kümesini derleyici tarafından oluşturulan hata iletilerini açıklayın.
 
@@ -55,7 +55,7 @@ Belgelerin bu bölümdeki makaleleri bir alt kümesini derleyici tarafından olu
 
 ## <a name="error-messages"></a>Hata iletileri
 
-|Hata|İleti|
+|Hata|`Message`|
 |-----------|-------------|
 |[Derleyici Hatası C2700](compiler-error-c2700.md)|'*türü*': (/ W4 kullanın daha fazla bilgi için) oluşturulur|
 |[Derleyici Hatası C2701](compiler-error-c2701.md)|'*işlevi*': yerel sınıfın arkadaş işlev şablonu/genel olamaz|

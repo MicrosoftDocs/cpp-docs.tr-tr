@@ -1,18 +1,18 @@
 ---
 title: 'İzlenecek yol: C++ AMP uygulamasında hata ayıklama'
-ms.date: 11/19/2018
+ms.date: 04/23/2019
 helpviewer_keywords:
 - debugging, C++ Accelerated Massive Parallelism
 - C++ AMP, debugging
 - C++ Accelerated Massive Parallelism, debugging
 - debugging, C++ AMP
 ms.assetid: 40e92ecc-f6ba-411c-960c-b3047b854fb5
-ms.openlocfilehash: 5312ba7354c28286cafb092711d66d56a920581a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 3f358f66d1e8a64c5042b60d7385de26a559642e
+ms.sourcegitcommit: 18d3b1e9cdb4fc3a76f7a650c31994bdbd2bde64
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62238047"
+ms.lasthandoff: 04/29/2019
+ms.locfileid: "64877541"
 ---
 # <a name="walkthrough-debugging-a-c-amp-application"></a>İzlenecek yol: C++ AMP uygulamasında hata ayıklama
 
@@ -38,11 +38,33 @@ Bu kılavuza başlamadan önce:
 
 - Bu satırı emin olun. sayılar, Metin Düzenleyicisi'nde görüntülenir. Daha fazla bilgi için [nasıl yapılır: Düzenleyicide satır numaralarını görüntüleme](/visualstudio/ide/reference/how-to-display-line-numbers-in-the-editor).
 
-- Windows 8 veya Windows Server 2012 yazılım benzetmesi üzerinde hata ayıklamayı desteklemek için çalışmadığından emin olun.
+- En az çalıştırdığınızdan emin olun Windows 8 veya Windows Server 2012 yazılım benzetmesi üzerinde hata ayıklamayı desteklemek için. 
 
 [!INCLUDE[note_settings_general](../../mfc/includes/note_settings_general_md.md)]
 
 ### <a name="to-create-the-sample-project"></a>Örnek proje oluşturmak için
+
+Bir proje oluşturmak için yönergeler, kullandığınız Visual Studio'nun hangi sürümünün bağlı olarak değişir. Bu sayfanın üst sol seçili doğru sürüm olduğundan emin olun.
+
+::: moniker range="vs-2019"
+
+### <a name="to-create-the-sample-project-in-visual-studio-2019"></a>Örnek Proje içinde Visual Studio 2019 oluşturmak için
+
+1. Menü çubuğunda, **dosya** > **yeni** > **proje** açmak için **yeni bir proje oluşturma** iletişim kutusu.
+
+1. İletişim kutusunun üstündeki ayarlamak **dil** için **C++** ayarlayın **Platform** için **Windows**, ayarlayıp **proje türü** için **konsol**. 
+
+1. Filtrelenmiş proje türleri listesinden seçim **konsol uygulaması** ardından **sonraki**. Sonraki sayfaya girin `AMPMapReduce` içinde **adı** kutusuna proje için bir ad belirtmek için ve istenen proje konumu belirtin.
+
+   ![Projeyi adlandırın](../../build/media/mathclient-project-name-2019.png "projesini adlandırın")
+
+1. Seçin **Oluştur** istemci projesi oluşturmak için.
+
+::: moniker-end
+
+::: moniker range="<=vs-2017"
+
+### <a name="to-create-the-sample-project-in-visual-studio-2017-or-visual-studio-2015"></a>Visual Studio 2017 veya Visual Studio 2015'te örnek proje oluşturmak için
 
 1. Visual Studio’yu çalıştırın.
 
@@ -57,6 +79,9 @@ Bu kılavuza başlamadan önce:
 6. NET **önceden derlenmiş üst bilgi** onay kutusunu işaretleyin ve ardından **son** düğmesi.
 
 7. İçinde **Çözüm Gezgini**, stdafx.h targetver.h ve stdafx.cpp projeden Sil.
+
+::: moniker-end
+
 
 8. AMPMapReduce.cpp açın ve içeriğini aşağıdaki kodla değiştirin.
 

@@ -1,5 +1,5 @@
 ---
-title: C3400 ile c3499 arasındaki derleyici hataları
+title: C3400 ile C3499 arasındaki derleyici hataları
 ms.date: 04/21/2019
 f1_keywords:
 - C3401
@@ -99,13 +99,13 @@ helpviewer_keywords:
 - C3497
 ms.assetid: a5651dfb-c402-4e01-b3ae-28f371e51d6a
 ms.openlocfilehash: 587b28cedb0ab8b11c244be4278c7dc17d1f4247
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.sourcegitcommit: 283cb64fd7958a6b7fbf0cd8534de99ac8d408eb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62281393"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "64857373"
 ---
-# <a name="compiler-errors-c3400-through-c3499"></a>C3400 ile c3499 arasındaki derleyici hataları
+# <a name="compiler-errors-c3400-through-c3499"></a>C3400 ile C3499 arasındaki derleyici hataları
 
 Belgelerin bu bölümdeki makaleleri bir alt kümesini derleyici tarafından oluşturulan hata iletilerini açıklayın.
 
@@ -113,7 +113,7 @@ Belgelerin bu bölümdeki makaleleri bir alt kümesini derleyici tarafından olu
 
 ## <a name="error-messages"></a>Hata iletileri
 
-|Hata|İleti|
+|Hata|`Message`|
 |-----------|-------------|
 |[Derleyici Hatası C3400](compiler-error-c3400.md)|Döngüsel kısıtlama bağımlılığı içeren '*constraint1*'ve'*constraint2*'|
 |Derleyici Hatası C3401|'*belirticisi*': Geçersiz derleme erişim belirticisi - yalnızca 'private' sınıf şablonlarında izin verilir|

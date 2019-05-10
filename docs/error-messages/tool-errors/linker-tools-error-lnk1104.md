@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - LNK1104
 ms.assetid: 9ca6f929-0efc-4055-8354-3cf5b4e636dc
-ms.openlocfilehash: eadeeb7ac19e3975a37a1364502b33400018cb05
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: bc6305ab2e96496aa212004e186150d4a51cf3fc
+ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62255519"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "65446975"
 ---
 # <a name="linker-tools-error-lnk1104"></a>Bağlayıcı Araçları Hatası LNK1104
 
@@ -59,7 +59,7 @@ Derleme yapılandırmaları için gereksinim duyduğunuz kitaplığının her s�
 
 ### <a name="cannot-open-a-file-built-by-your-project"></a>Projeniz tarafından oluşturulmuş bir dosya açılamıyor
 
-Bu hatayı görebilirsiniz dosya *filename* çözümünüz tarafından oluşturulmuş, ancak bağlayıcı bunu erişmeyi denediğinde henüz mevcut değil. Başka bir projeye bir proje bağlıdır, ancak projelerin doğru sırada yerleşik olarak bulunmaz, bu durum ortaya çıkabilir. Bu sorunu gidermek için projenizin başvurularına geçmesi gereken, eksik dosyayı oluşturulmuştur, dosyayı kullanan projede ayarlandığından emin olun. Daha fazla bilgi için [Visual C++ projelerine başvuru ekleme](../../build/adding-references-in-visual-cpp-projects.md) ve [bir projedeki başvuruları yönetme](/visualstudio/ide/managing-references-in-a-project).
+Bu hatayı görebilirsiniz dosya *filename* çözümünüz tarafından oluşturulmuş, ancak bağlayıcı bunu erişmeyi denediğinde henüz mevcut değil. Başka bir projeye bir proje bağlıdır, ancak projelerin doğru sırada yerleşik olarak bulunmaz, bu durum ortaya çıkabilir. Bu sorunu gidermek için projenizin başvurularına geçmesi gereken, eksik dosyayı oluşturulmuştur, dosyayı kullanan projede ayarlandığından emin olun. Daha fazla bilgi için [Visual Studio'daki başvurularının eklenmesi C++ projeleri](../../build/adding-references-in-visual-cpp-projects.md) ve [bir projedeki başvuruları yönetme](/visualstudio/ide/managing-references-in-a-project).
 
 ### <a name="cannot-open-file-cprogramobj"></a>Dosya açılamıyor ' C:\\Program.obj'
 

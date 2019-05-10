@@ -8,12 +8,12 @@ helpviewer_keywords:
 - mixed assemblies [C++], performance considerations
 - interoperability [C++], performance considerations
 ms.assetid: bb9a282e-c3f8-40eb-a2fa-45d80d578932
-ms.openlocfilehash: c6b4456d9c75061c9a8c93f37f98b58f92adc899
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 29dbfa6465f6bcbcf4d0618b1820e59a8edbd3a3
+ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62384757"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "65447255"
 ---
 # <a name="performance-considerations-for-interop-c"></a>Birlikte Çalışabilirlik için Başarım Düşünceleri (C++)
 
@@ -21,7 +21,7 @@ Bu konu, yönetilen veya yönetilmeyen birlikte çalışma geçişleri çalışm
 
 Visual C++, Visual Basic ve C# (P/Invoke) gibi diğer .NET dilleri olarak birlikte çalışabilirlik mekanizmalarının aynısını destekler, ancak Visual C++ (C++ birlikte çalışması) özgü birlikte çalışabilirlik desteği de sağlar. Performans açısından kritik uygulamalar için birlikte çalışma her tekniğin performans etkilerini anlamak önemlidir.
 
-Kullanılan birlikte çalışabilirlik teknik bağımsız olarak, dönüştürücüler denen özel geçiş dizileri, yönetilmeyen bir işlev veya tersine yönetilen bir işlev çağırır her zaman gereklidir. Bu dönüştürücüleri Visual C++ Derleyici tarafından otomatik olarak eklenir, ancak üst üste, bu geçiş performans açısından pahalı olabileceğini göz önünde tutmak önemlidir.
+Kullanılan birlikte çalışabilirlik teknik bağımsız olarak, dönüştürücüler denen özel geçiş dizileri, yönetilmeyen bir işlev veya tersine yönetilen bir işlev çağırır her zaman gereklidir. Bu dönüştürücüleri Microsoft tarafından otomatik olarak eklenen C++ derleyici, ancak üst üste, bu geçiş performans açısından pahalı olabileceğini göz önünde bulundurun.
 
 ## <a name="reducing-transitions"></a>Geçişleri azaltma
 

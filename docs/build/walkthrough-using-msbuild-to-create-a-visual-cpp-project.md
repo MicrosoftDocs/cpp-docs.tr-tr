@@ -1,21 +1,19 @@
 ---
 title: 'İzlenecek yol: Visual C++ projesi oluşturmak için MSBuild kullanma'
-ms.date: 09/24/2018
-f1_keywords:
-- msbuild.cpp.walkthrough.createproject
+ms.date: 05/06/2019
 helpviewer_keywords:
 - 'msbuild (c++), walkthrough: create a project'
 ms.assetid: 52350d1c-c373-4868-923c-5e8be6f67adb
-ms.openlocfilehash: c7b038ede8c03f7016c5e9f81a9db785c49da448
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 8fb985cbf4e471589946e730e8bb09b43f0a5d84
+ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62313603"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "65446217"
 ---
 # <a name="walkthrough-using-msbuild-to-create-a-visual-c-project"></a>İzlenecek yol: Visual C++ projesi oluşturmak için MSBuild kullanma
 
-Bu izlenecek yol MSBuild komut isteminde Visual C++ projesi oluşturmak için nasıl kullanılacağını gösterir. C++ kaynak dosyaları ve bir Visual C++ konsol uygulaması için bir XML tabanlı proje dosyasını nasıl oluşturulacağını öğreneceksiniz. Projeyi oluşturduktan sonra yapı işleminin nasıl özelleştirileceğini öğreneceksiniz.
+Bu izlenecek yol MSBuild Visual Studio derleme için nasıl kullanılacağını gösterir C++ proje bir komut isteminde. C++ kaynak dosyaları ve bir Visual C++ konsol uygulaması için bir XML tabanlı proje dosyasını nasıl oluşturulacağını öğreneceksiniz. Projeyi oluşturduktan sonra yapı işleminin nasıl özelleştirileceğini öğreneceksiniz.
 
 Bu izlenecek yol aşağıdaki görevleri gösterir:
 
@@ -39,7 +37,7 @@ Bu izlenecek yolu tamamlamak için aşağıdakiler gerekir:
 > Visual Studio IDE kullanarak daha sonra projeyi dosyasını düzenlemek istiyorsanız, bu yaklaşım kullanmayın. .Vcxproj dosyasını el ile oluşturursanız, özellikle projeyi joker karakterler proje öğelerinde kullanıyorsa, Visual Studio IDE düzenlemek veya, yüklemek mümkün olmayabilir.
 
 > [!NOTE]
-> Alt düzey derleme yönergeleri çoğu içerdiği **.targets** ve **.props** için özellik içinde saklanan VCTargets dizinde tanımlanan dosyaları `$(VCTargetsPath)`. Visual Studio 2017 Enterprise sürümünde bu dosyalar için varsayılan yolu şöyledir\\Program dosyaları (x86)\\Microsoft Visual Studio\\2017\\Kurumsal\\Common7\\IDE\\ VC\\VCTargets\\.
+> Alt düzey derleme yönergeleri çoğu içerdiği **.targets** ve **.props** için özellik içinde saklanan VCTargets dizinde tanımlanan dosyaları `$(VCTargetsPath)`. C:\Program Files (x86) \Microsoft Visual Studio\2019\Enterprise\MSBuild\Microsoft\VC\v160\Microsoft.Cpp.Common.props bu dosyalar Visual Studio 2019 Enterprise Edition için varsayılan yoldur.
 
 ## <a name="creating-the-c-source-files"></a>C++ kaynak dosyaları oluşturma
 
@@ -81,10 +79,10 @@ Bir MSBuild proje dosyası proje kök öğesi içeren bir XML dosyasıdır (`<Pr
 
 ### <a name="to-create-the-msbuild-project-file"></a>MSBuild proje dosyası oluşturmak için
 
-1. Adlı bir proje dosyası oluşturmak için bir metin düzenleyicisi kullanın `myproject.vcxproj`ve ardından aşağıdaki kök ekleyin `<Project>` öğesi. Aşağıdaki yordam adımlarının kök öğeleri eklemek `<Project>` etiketler:
+1. Adlı bir proje dosyası oluşturmak için bir metin düzenleyicisi kullanın `myproject.vcxproj`ve ardından aşağıdaki kök ekleyin `<Project>` öğesi. Aşağıdaki yordam adımlarının kök öğeleri eklemek `<Project>` etiketler. (ToolsVersion kullanın, Visual Studio 2017 kullanıyorsanız "15.0" =.)
 
     ```xml
-    <Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
     </Project>
     ```
 
@@ -109,12 +107,12 @@ Bir MSBuild proje dosyası proje kök öğesi içeren bir XML dosyasıdır (`<Pr
     <Import Project="$(VCTargetsPath)\Microsoft.Cpp.default.props" />
     ```
 
-1. Aşağıdaki özellik grubu öğesini ekleyin (`<PropertyGroup>`) iki proje özellikleri belirtir:
+1. Aşağıdaki özellik grubu öğesini ekleyin (`<PropertyGroup>`) iki proje özelliklerini belirtir. (Visual Studio 2017 kullanıyorsanız v141 kullanın.)
 
     ```xml
     <PropertyGroup>
       <ConfigurationType>Application</ConfigurationType>
-      <PlatformToolset>v141</PlatformToolset>
+      <PlatformToolset>v142</PlatformToolset>
     </PropertyGroup>
     ```
 
@@ -151,10 +149,10 @@ Bir MSBuild proje dosyası proje kök öğesi içeren bir XML dosyasıdır (`<Pr
 
 ### <a name="complete-project-file"></a>Tam proje dosyası
 
-Aşağıdaki kod, önceki yordamda oluşturduğunuz proje dosyasının gösterir.
+Aşağıdaki kod, önceki yordamda oluşturduğunuz proje dosyasının gösterir. (ToolsVersion kullanmak için Visual Studio 2017 "15.0" =.)
 
 ```xml
-<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <ProjectConfiguration Include="Debug|Win32">
       <Configuration>Debug</Configuration>
@@ -168,7 +166,7 @@ Aşağıdaki kod, önceki yordamda oluşturduğunuz proje dosyasının gösterir
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.default.props" />
   <PropertyGroup>
     <ConfigurationType>Application</ConfigurationType>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ItemGroup>
@@ -235,7 +233,7 @@ Komut isteminde sürüm yapılandırması oluşturmak için aşağıdaki komutu 
 
 ### <a name="using-msbuild-with-the-64-bit-compiler-and-tools"></a>64 bit derleyici ve araçlarla MSBuild kullanma
 
-Varsayılan olarak Visual C++ 64 bit Windows üzerinde yüklü değilse, 64-bit x64 yerel ve çapraz Araçlar yüklenir. MSBuild ayarlayarak uygulamanızı oluşturmak üzere 64 bit derleyici ve Araçları'nı kullanmak için yapılandırabilirsiniz `PreferredToolArchitecture` özelliği. Bu özellik, proje yapılandırmasını veya platform özelliklerini etkilemez. Varsayılan olarak araçların 32 bit sürümü kullanılır. Derleyici ve araçların 64-bit sürümünü belirtmek için aşağıdaki özellik grubu öğesini sonra Myproject.vcxproj proje dosyasına eklemek `Microsoft.Cpp.default.props` \<İçeri Aktar / > öğesi:
+Varsayılan olarak Visual Studio 64-bit Windows üzerinde yüklü değilse, 64-bit x64 yerel ve çapraz Araçlar yüklenir. MSBuild ayarlayarak uygulamanızı oluşturmak üzere 64 bit derleyici ve Araçları'nı kullanmak için yapılandırabilirsiniz `PreferredToolArchitecture` özelliği. Bu özellik, proje yapılandırmasını veya platform özelliklerini etkilemez. Varsayılan olarak araçların 32 bit sürümü kullanılır. Derleyici ve araçların 64-bit sürümünü belirtmek için aşağıdaki özellik grubu öğesini sonra Myproject.vcxproj proje dosyasına eklemek `Microsoft.Cpp.default.props` \<İçeri Aktar / > öğesi:
 
 ```xml
 <PropertyGroup>

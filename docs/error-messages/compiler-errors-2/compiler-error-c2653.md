@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2653
 ms.assetid: 3f49e731-affd-43a0-a8d0-181db7650bc3
-ms.openlocfilehash: d4a3a8a74483317b87e16458f44016f0aeca1379
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 2882764e1c0a84634c500d920f327fbebc4b19a9
+ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62350786"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "65447947"
 ---
 # <a name="compiler-error-c2653"></a>Derleyici Hatası C2653
 
@@ -21,7 +21,7 @@ Dil sözdiziminin sınıf, yapı, birleşim veya ad alanı adı gerektirir.
 
 Sınıfı, yapı, birleşim veya ad alanı kapsamı işleci önünde olarak bildirilmedi bir ad kullandığınızda bu hata oluşabilir. Bu sorunu gidermek için ad bildirmek veya adı kullanılmadan önce bildiren üst bilgisi ekleyin.
 
-C2653 tanımlamak çalışırsanız olası ayrıca bir *bileşik ad alanı*, bir veya daha fazla kapsam iç içe geçmiş ad alanı adlarını içeren bir ad alanı. Bileşik. ad alanı tanımları c++'ta C ++ 17 önce izin verilmez. Bileşik ad alanları, belirttiğiniz zaman, Visual Studio 2015 güncelleştirme 3'te başlayarak desteklenir [/Std: c ++ Son](../../build/reference/std-specify-language-standard-version.md) derleyici seçeneği. Visual C++ 2017 15.5 sürümünden itibaren derleyici bileşik ad alanı tanımlarını destekler, [/Std: c ++ 17](../../build/reference/std-specify-language-standard-version.md) seçeneği belirtildi.
+C2653 tanımlamak çalışırsanız olası ayrıca bir *bileşik ad alanı*, bir veya daha fazla kapsam iç içe geçmiş ad alanı adlarını içeren bir ad alanı. Bileşik. ad alanı tanımları c++'ta C ++ 17 önce izin verilmez. Bileşik ad alanları, belirttiğiniz zaman, Visual Studio 2015 güncelleştirme 3'te başlayarak desteklenir [/Std: c ++ Son](../../build/reference/std-specify-language-standard-version.md) derleyici seçeneği. Visual Studio 2017 15.5 sürümünden itibaren derleyici bileşik ad alanı tanımlarını destekler, [/Std: c ++ 17](../../build/reference/std-specify-language-standard-version.md) seçeneği belirtildi.
 
 ## <a name="examples"></a>Örnekler
 
@@ -42,7 +42,7 @@ C ++ 17 veya üzeri standartları için derlenmedi kodda, iç içe geçmiş her 
 
 ```cpp
 // C2653b.cpp
-namespace a::b {int i;}   // C2653 prior to Visual C++ 2015 Update 3,
+namespace a::b {int i;}   // C2653 prior to Visual Studio 2015 Update 3,
                           // C2429 thereafter. Use /std:c++17 or /std:c++latest to fix.
 
 namespace a {             // Use this form for compliant code under /std:c++14 (the default)

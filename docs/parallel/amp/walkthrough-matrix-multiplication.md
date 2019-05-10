@@ -1,13 +1,13 @@
 ---
 title: 'İzlenecek yol: Matris çarpım'
-ms.date: 11/19/2018
+ms.date: 04/23/2019
 ms.assetid: 61172e8b-da71-4200-a462-ff3a908ab0cf
-ms.openlocfilehash: 597ba0f47c7b081f62c82bf8e1ca01c286d35140
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: afa9dba8938f9d701b8f21ca3575eb06eb688ac0
+ms.sourcegitcommit: 18d3b1e9cdb4fc3a76f7a650c31994bdbd2bde64
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62237300"
+ms.lasthandoff: 04/29/2019
+ms.locfileid: "64877476"
 ---
 # <a name="walkthrough-matrix-multiplication"></a>İzlenecek yol: Matris çarpım
 
@@ -21,9 +21,35 @@ Başlamadan önce:
 
 - Okuma [döşemeleri kullanma](../../parallel/amp/using-tiles.md).
 
-- Windows 7, Windows 8, Windows Server 2008 R2 veya Windows Server 2012, bilgisayarınızda yüklü olduğundan emin olun.
+- Size en az çalıştırdığından emin olun Windows 7 veya Windows Server 2008 R2.
 
 ### <a name="to-create-the-project"></a>Proje oluşturmak için
+
+Yeni bir proje oluşturmak için yönergeler, yüklediğiniz Visual Studio'nun hangi sürümünün bağlı olarak değişir. Sola doğru sürüme ayarlayın üst sürüm Seçici olduğundan emin olun.
+
+::: moniker range="vs-2019"
+
+### <a name="to-create-the-project-in-visual-studio-2019"></a>Visual Studio 2019 projeyi oluşturmak için
+
+1. Menü çubuğunda, **dosya** > **yeni** > **proje** açmak için **yeni bir proje oluşturma** iletişim kutusu.
+
+1. İletişim kutusunun üstündeki ayarlamak **dil** için **C++** ayarlayın **Platform** için **Windows**, ayarlayıp **proje türü** için **konsol**. 
+
+1. Filtrelenmiş proje türleri listesinden seçim **boş proje** ardından **sonraki**. Sonraki sayfaya girin *MatrixMultiply* içinde **adı** kutusuna proje için bir ad belirtmek için ve istenen proje konumu belirtin.
+
+   ![Yeni konsol uygulaması](../../build/media/mathclient-project-name-2019.png "yeni konsol uygulaması")
+
+1. Seçin **Oluştur** istemci projesi oluşturmak için.
+
+1. İçinde **Çözüm Gezgini**, kısayol menüsünü açın **kaynak dosyaları**ve ardından **Ekle** > **yeni öğe**.
+
+1. İçinde **Yeni Öğe Ekle** iletişim kutusunda **C++ dosyası (.cpp)**, girin *MatrixMultiply.cpp* içinde **adı** kutusuna ve ardından  **Ekleme** düğmesi.
+
+::: moniker-end
+
+::: moniker range="<=vs-2017"
+
+### <a name="to-create-a-project-in-visual-studio-2017-or-2015"></a>Visual Studio 2017 veya 2015'te bir proje oluşturmak için
 
 1. Visual Studio menü çubuğunda seçin **dosya** > **yeni** > **proje**.
 
@@ -36,6 +62,8 @@ Başlamadan önce:
 1. İçinde **Çözüm Gezgini**, kısayol menüsünü açın **kaynak dosyaları**ve ardından **Ekle** > **yeni öğe**.
 
 1. İçinde **Yeni Öğe Ekle** iletişim kutusunda **C++ dosyası (.cpp)**, girin *MatrixMultiply.cpp* içinde **adı** kutusuna ve ardından  **Ekleme** düğmesi.
+
+::: moniker-end
 
 ## <a name="multiplication-without-tiling"></a>Çarpma döşeme olmadan
 
@@ -53,31 +81,31 @@ Bir 3-tarafından-2 matris ve B ise 2 x 3 matris. 3-x-3 matris çarpılması A B
 
 1. MatrixMultiply.cpp açın ve varolan kodu değiştirmek için aşağıdaki kodu kullanın.
 
-```cpp
-#include <iostream>
+   ```cpp
+   #include <iostream>
 
-void MultiplyWithOutAMP() {
-    int aMatrix[3][2] = {{1, 4}, {2, 5}, {3, 6}};
-    int bMatrix[2][3] = {{7, 8, 9}, {10, 11, 12}};
-    int product[3][3] = {{0, 0, 0}, {0, 0, 0}, {0, 0, 0}};
+   void MultiplyWithOutAMP() {
+       int aMatrix[3][2] = {{1, 4}, {2, 5}, {3, 6}};
+       int bMatrix[2][3] = {{7, 8, 9}, {10, 11, 12}};
+       int product[3][3] = {{0, 0, 0}, {0, 0, 0}, {0, 0, 0}};
 
-    for (int row = 0; row < 3; row++) {
-        for (int col = 0; col < 3; col++) {
-            // Multiply the row of A by the column of B to get the row, column of product.
-            for (int inner = 0; inner < 2; inner++) {
-                product[row][col] += aMatrix[row][inner] * bMatrix[inner][col];
-            }
-            std::cout << product[row][col] << "  ";
-        }
-        std::cout << "\n";
-    }
-}
+       for (int row = 0; row < 3; row++) {
+           for (int col = 0; col < 3; col++) {
+               // Multiply the row of A by the column of B to get the row, column of product.
+               for (int inner = 0; inner < 2; inner++) {
+                   product[row][col] += aMatrix[row][inner] * bMatrix[inner][col];
+               }
+               std::cout << product[row][col] << "  ";
+           }
+           std::cout << "\n";
+       }
+   }
 
-void main() {
-    MultiplyWithOutAMP();
-    getchar();
-}
-```
+   void main() {
+       MultiplyWithOutAMP();
+       getchar();
+   }
+   ```
 
    Algoritma, matris çarpım tanımını basit bir uygulamadır. Bunu tüm paralel veya iş parçacıklı algoritmaları hesaplama süreyi azaltmak üzere kullanmaz.
 
@@ -91,61 +119,61 @@ void main() {
 
 1. MatrixMultiply.cpp önce aşağıdaki kodu ekleyin `main` yöntemi.
 
-```cpp
-void MultiplyWithAMP() {
-    int aMatrix[] = { 1, 4, 2, 5, 3, 6 };
-    int bMatrix[] = { 7, 8, 9, 10, 11, 12 };
-    int productMatrix[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+   ```cpp
+   void MultiplyWithAMP() {
+   int aMatrix[] = { 1, 4, 2, 5, 3, 6 };
+   int bMatrix[] = { 7, 8, 9, 10, 11, 12 };
+   int productMatrix[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0 };
 
-    array_view<int, 2> a(3, 2, aMatrix);
+   array_view<int, 2> a(3, 2, aMatrix);
 
-    array_view<int, 2> b(2, 3, bMatrix);
+   array_view<int, 2> b(2, 3, bMatrix);
 
-    array_view<int, 2> product(3, 3, productMatrix);
+   array_view<int, 2> product(3, 3, productMatrix);
 
-    parallel_for_each(product.extent,
-        [=] (index<2> idx) restrict(amp) {
-            int row = idx[0];
-            int col = idx[1];
-            for (int inner = 0; inner <2; inner++) {
-                product[idx] += a(row, inner)* b(inner, col);
-            }
-        });
+   parallel_for_each(product.extent,
+      [=] (index<2> idx) restrict(amp) {
+          int row = idx[0];
+          int col = idx[1];
+          for (int inner = 0; inner <2; inner++) {
+              product[idx] += a(row, inner)* b(inner, col);
+          }
+      });
 
-    product.synchronize();
+   product.synchronize();
 
-    for (int row = 0; row <3; row++) {
-        for (int col = 0; col <3; col++) {
-            //std::cout << productMatrix[row*3 + col] << "  ";
-            std::cout << product(row, col) << "  ";
-        }
-        std::cout << "\n";
-    }
-}
-```
+   for (int row = 0; row <3; row++) {
+      for (int col = 0; col <3; col++) {
+          //std::cout << productMatrix[row*3 + col] << "  ";
+          std::cout << product(row, col) << "  ";
+      }
+      std::cout << "\n";
+     }
+   }
+   ```
 
    AMP kodu, AMP olmayan koda benzer. Çağrı `parallel_for_each` her öğe için bir iş parçacığı başlattığını `product.extent`ve değiştirir `for` satır ve sütun for döngüleri. Hücre, satır ve sütun değeri kullanılabilir `idx`. Öğelerine erişebilirsiniz bir `array_view` kullanın ya da nesne `[]` işleci ve bir dizin değişkeni veya `()` işleci ve satır ve sütun değişkenleri. Örnek, her iki yöntem de gösterir. `array_view::synchronize` Yöntemi kopyalar değerlerini `product` geri değişken `productMatrix` değişkeni.
 
 1. Aşağıdaki `include` ve `using` MatrixMultiply.cpp üst kısmındaki deyimleri.
 
-```cpp
-#include <amp.h>
-using namespace concurrency;
-```
+   ```cpp
+   #include <amp.h>
+   using namespace concurrency;
+   ```
 
 1. Değiştirme `main` çağrılacak yöntem `MultiplyWithAMP` yöntemi.
 
-```cpp
-void main() {
-    MultiplyWithOutAMP();
-    MultiplyWithAMP();
-    getchar();
-}
-```
+   ```cpp
+   void main() {
+       MultiplyWithOutAMP();
+       MultiplyWithAMP();
+       getchar();
+   }
+   ```
 
-1. Seçin **Ctrl**+**F5** klavye kısayolu hata ayıklamayı başlatmak ve çıkış doğru olduğundan emin olun.
+1. Tuşuna **Ctrl**+**F5** klavye kısayolu hata ayıklamayı başlatmak ve çıkış doğru olduğundan emin olun.
 
-1. Seçin **boşluk** uygulamadan çıkmak için.
+1. Tuşuna **boşluk** uygulamadan çıkmak için.
 
 ## <a name="multiplication-with-tiling"></a>Çarpma ile döşeme
 
@@ -191,109 +219,108 @@ Bu algoritma, kodu uygulamak için:
 
 1. MatrixMultiply.cpp önce aşağıdaki kodu ekleyin `main` yöntemi.
 
-```cpp
-void MultiplyWithTiling() {
-    // The tile size is 2.
-    static const int TS = 2;
+   ```cpp
+   void MultiplyWithTiling() {
+       // The tile size is 2.
+       static const int TS = 2;
 
-    // The raw data.
-    int aMatrix[] = { 1, 2, 3, 4, 5, 6, 7, 8, 1, 2, 3, 4, 5, 6, 7, 8 };
-    int bMatrix[] = { 1, 2, 3, 4, 5, 6, 7, 8, 1, 2, 3, 4, 5, 6, 7, 8 };
-    int productMatrix[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+       // The raw data.
+       int aMatrix[] = { 1, 2, 3, 4, 5, 6, 7, 8, 1, 2, 3, 4, 5, 6, 7, 8 };
+       int bMatrix[] = { 1, 2, 3, 4, 5, 6, 7, 8, 1, 2, 3, 4, 5, 6, 7, 8 };
+       int productMatrix[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
 
-    // Create the array_view objects.
-    array_view<int, 2> a(4, 4, aMatrix);
-    array_view<int, 2> b(4, 4, bMatrix);
-    array_view<int, 2> product(4, 4, productMatrix);
+       // Create the array_view objects.
+       array_view<int, 2> a(4, 4, aMatrix);
+       array_view<int, 2> b(4, 4, bMatrix);
+       array_view<int, 2> product(4, 4, productMatrix);
 
-    // Call parallel_for_each by using 2x2 tiles.
-    parallel_for_each(product.extent.tile<TS, TS>(),
-        [=] (tiled_index<TS, TS> t_idx) restrict(amp)
-        {
-            // Get the location of the thread relative to the tile (row, col)
-            // and the entire array_view (rowGlobal, colGlobal).
-            int row = t_idx.local[0];
-            int col = t_idx.local[1];
-            int rowGlobal = t_idx.global[0];
-            int colGlobal = t_idx.global[1];
-            int sum = 0;
+       // Call parallel_for_each by using 2x2 tiles.
+       parallel_for_each(product.extent.tile<TS, TS>(),
+           [=] (tiled_index<TS, TS> t_idx) restrict(amp)
+           {
+               // Get the location of the thread relative to the tile (row, col)
+               // and the entire array_view (rowGlobal, colGlobal).
+               int row = t_idx.local[0];
+               int col = t_idx.local[1];
+               int rowGlobal = t_idx.global[0];
+               int colGlobal = t_idx.global[1];
+               int sum = 0;
 
-            // Given a 4x4 matrix and a 2x2 tile size, this loop executes twice for each thread.
-            // For the first tile and the first loop, it copies a into locA and e into locB.
-            // For the first tile and the second loop, it copies b into locA and g into locB.
-            for (int i = 0; i < 4; i += TS) {
-                tile_static int locA[TS][TS];
-                tile_static int locB[TS][TS];
-                locA[row][col] = a(rowGlobal, col + i);
-                locB[row][col] = b(row + i, colGlobal);
-                // The threads in the tile all wait here until locA and locB are filled.
-                t_idx.barrier.wait();
+               // Given a 4x4 matrix and a 2x2 tile size, this loop executes twice for each thread.
+               // For the first tile and the first loop, it copies a into locA and e into locB.
+               // For the first tile and the second loop, it copies b into locA and g into locB.
+               for (int i = 0; i < 4; i += TS) {
+                   tile_static int locA[TS][TS];
+                   tile_static int locB[TS][TS];
+                   locA[row][col] = a(rowGlobal, col + i);
+                   locB[row][col] = b(row + i, colGlobal);
+                   // The threads in the tile all wait here until locA and locB are filled.
+                   t_idx.barrier.wait();
 
-                // Return the product for the thread. The sum is retained across
-                // both iterations of the loop, in effect adding the two products
-                // together, for example, a*e.
-                for (int k = 0; k < TS; k++) {
-                    sum += locA[row][k] * locB[k][col];
-                }
+                   // Return the product for the thread. The sum is retained across
+                   // both iterations of the loop, in effect adding the two products
+                   // together, for example, a*e.
+                   for (int k = 0; k < TS; k++) {
+                       sum += locA[row][k] * locB[k][col];
+                   }
 
-                // All threads must wait until the sums are calculated. If any threads
-                // moved ahead, the values in locA and locB would change.
-                t_idx.barrier.wait();
-                // Now go on to the next iteration of the loop.
-            }
+                   // All threads must wait until the sums are calculated. If any threads
+                   // moved ahead, the values in locA and locB would change.
+                   t_idx.barrier.wait();
+                   // Now go on to the next iteration of the loop.
+               }
 
-            // After both iterations of the loop, copy the sum to the product variable by using the global location.
-            product[t_idx.global] = sum;
-        });
+               // After both iterations of the loop, copy the sum to the product variable by using the global location.
+               product[t_idx.global] = sum;
+           });
 
-    // Copy the contents of product back to the productMatrix variable.
-    product.synchronize();
+       // Copy the contents of product back to the productMatrix variable.
+       product.synchronize();
 
-    for (int row = 0; row <4; row++) {
-        for (int col = 0; col <4; col++) {
-            // The results are available from both the product and productMatrix variables.
-            //std::cout << productMatrix[row*3 + col] << "  ";
-            std::cout << product(row, col) << "  ";
-        }
-        std::cout << "\n";
-    }
-}
-```
+       for (int row = 0; row <4; row++) {
+           for (int col = 0; col <4; col++) {
+               // The results are available from both the product and productMatrix variables.
+               //std::cout << productMatrix[row*3 + col] << "  ";
+               std::cout << product(row, col) << "  ";
+           }
+           std::cout << "\n";
+       }
+   }
+   ```
 
-    This example is significantly different than the example without tiling. The code uses these conceptual steps:
+   Bu örnekte, örnek döşeme olmadan önemli ölçüde farklıdır. Kod kavramsal adımları kullanır:
+   1. [0,0] parçasına öğeleri Kopyala `a` içine `locA`. [0,0] parçasına öğeleri Kopyala `b` içine `locB`. Dikkat `product` döşenmiş değil `a` ve `b`. Bu nedenle, genel dizinlerini erişmek için kullandığınız `a, b`, ve `product`. Çağrı `tile_barrier::wait` gereklidir. Erene kadar tüm döşemedeki iş parçacıkları durmadan `locA` ve `locB` doldurulur.
 
-    1. [0,0] parçasına öğeleri Kopyala `a` içine `locA`. [0,0] parçasına öğeleri Kopyala `b` içine `locB`. Dikkat `product` döşenmiş değil `a` ve `b`. Bu nedenle, genel dizinlerini erişmek için kullandığınız `a, b`, ve `product`. Çağrı `tile_barrier::wait` gereklidir. Erene kadar tüm döşemedeki iş parçacıkları durmadan `locA` ve `locB` doldurulur.
+   1. Çarp `locA` ve `locB` ve sonuçları koymak `product`.
 
-    2. Çarp `locA` ve `locB` ve sonuçları koymak `product`.
+   1. [0,1] parçasına öğeleri Kopyala `a` içine `locA`. [1,0] parçasına öğeleri Kopyala `b` içine `locB`.
 
-    3. [0,1] parçasına öğeleri Kopyala `a` içine `locA`. [1,0] parçasına öğeleri Kopyala `b` içine `locB`.
+   1. Çarp `locA` ve `locB` ve önceden yer sonuçları eklemesini `product`.
 
-    4. Çarp `locA` ve `locB` ve önceden yer sonuçları eklemesini `product`.
+   1. Kutucuğun [0,0] çarpma işlemi tamamlanmış olur.
 
-    5. Kutucuğun [0,0] çarpma işlemi tamamlanmış olur.
+   1. Diğer dört kutucuklar için yineleyin. Dizin oluşturma için özel kutucuklar yoktur ve iş parçacığı herhangi bir sırayla çalıştırabilirsiniz. Her iş parçacığı yürütme sırasında `tile_static` değişkenleri oluşturulan her bölme için uygun şekilde ve çağrısı `tile_barrier::wait` program akışını denetler.
 
-    6. Diğer dört kutucuklar için yineleyin. Dizin oluşturma için özel kutucuklar yoktur ve iş parçacığı herhangi bir sırayla çalıştırabilirsiniz. Her iş parçacığı yürütme sırasında `tile_static` değişkenleri oluşturulan her bölme için uygun şekilde ve çağrısı `tile_barrier::wait` program akışını denetler.
+   1. Algoritma yakından incelemek gibi her submatrix yüklendiği fark bir `tile_static` iki kez bellek. Bu veri aktarımı uzun mu sürer. Ancak, veriler sonra `tile_static` bellek, verilere erişim çok daha hızlı. Ürünleri hesaplama submatrices değerleri yinelenen erişim gerektirdiğinden, genel bir performans kazancı yoktur. Her bir algoritmanın deneme en iyi algoritmayı bulup döşeme boyutu gereklidir.
 
-    7. Algoritma yakından incelemek gibi her submatrix yüklendiği fark bir `tile_static` iki kez bellek. Bu veri aktarımı uzun mu sürer. Ancak, veriler sonra `tile_static` bellek, verilere erişim çok daha hızlı. Ürünleri hesaplama submatrices değerleri yinelenen erişim gerektirdiğinden, genel bir performans kazancı yoktur. Her bir algoritmanın deneme en iyi algoritmayı bulup döşeme boyutu gereklidir.
+   AMP olmayan ve döşeme olmayan örneklerde, her öğe a ve B ürün hesaplamak için genel bellekten dört kez erişilebilir. Kutucuk örnekte, her öğe genel bellekten iki kez ve dört kez erişilen `tile_static` bellek. Bu önemli bir performans kazancı değil. Ancak, A ve B 1024 x 1024, matrislerde ve döşeme boyutu 16 olan, önemli bir performans kazancı olacaktır. Bu durumda, her öğe içine kopyalanacak `tile_static` bellek yalnızca 16 erişilen ve kat `tile_static` bellek 1024 kez.
 
-         AMP olmayan ve döşeme olmayan örneklerde, her öğe a ve B ürün hesaplamak için genel bellekten dört kez erişilebilir. Kutucuk örnekte, her öğe genel bellekten iki kez ve dört kez erişilen `tile_static` bellek. Bu önemli bir performans kazancı değil. Ancak, A ve B 1024 x 1024, matrislerde ve döşeme boyutu 16 olan, önemli bir performans kazancı olacaktır. Bu durumda, her öğe içine kopyalanacak `tile_static` bellek yalnızca 16 erişilen ve kat `tile_static` bellek 1024 kez.
+1. Main yöntemini çağırmak için değiştirme `MultiplyWithTiling` gösterildiği yöntemi.
 
-2. Main yöntemini çağırmak için değiştirme `MultiplyWithTiling` gösterildiği yöntemi.
+   ```cpp
+   void main() {
+       MultiplyWithOutAMP();
+       MultiplyWithAMP();
+       MultiplyWithTiling();
+       getchar();
+   }
+   ```
 
-```cpp
-void main() {
-    MultiplyWithOutAMP();
-    MultiplyWithAMP();
-    MultiplyWithTiling();
-    getchar();
-}
-```
+1. Tuşuna **Ctrl**+**F5** klavye kısayolu hata ayıklamayı başlatmak ve çıkış doğru olduğundan emin olun.
 
-3. Seçin **Ctrl**+**F5** klavye kısayolu hata ayıklamayı başlatmak ve çıkış doğru olduğundan emin olun.
-
-4. Seçin **alanı** çubuğundaki uygulamadan çıkın.
+1. Tuşuna **alanı** çubuğundaki uygulamadan çıkın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [C++ AMP (C++ Accelerated Massive Parallelism)](../../parallel/amp/cpp-amp-cpp-accelerated-massive-parallelism.md)<br/>
-[İzlenecek yol: C++ AMP uygulamasında hata ayıklama](../../parallel/amp/walkthrough-debugging-a-cpp-amp-application.md)
+[İzlenecek yol: C++ AMP Uygulamasında Hata Ayıklama](../../parallel/amp/walkthrough-debugging-a-cpp-amp-application.md)

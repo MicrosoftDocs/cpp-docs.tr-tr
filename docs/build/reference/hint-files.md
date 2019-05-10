@@ -11,16 +11,16 @@ helpviewer_keywords:
 - cpp.stop
 - Class View, hint file
 ms.assetid: 17194f66-cf62-4523-abec-77db0675ab65
-ms.openlocfilehash: 3d8b3be76fea454ed3b3dd3fd2a44174f34c065c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 919cbedd0c0d7c610273d597328979d1fb449f8f
+ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62291915"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "65446302"
 ---
 # <a name="hint-files"></a>İpucu Dosyaları
 
-A *ipucu dosyası* Aksi takdirde C++ gözatma veritabanı ayrıştırıcı tarafından Atlanan bölgeleri neden makrolar içerir. Visual C++ projesi açtığınızda, ayrıştırıcının her proje kaynak dosyada kod analiz eder ve her bir tanımlayıcı hakkında bilgi içeren bir veritabanı oluşturur. IDE, kod gözatma desteği veren bilgiler gibi özellikleri kullanır **sınıf görünümü** tarayıcı ve **gezinti çubuğu**.
+A *ipucu dosyası* Aksi takdirde C++ gözatma veritabanı ayrıştırıcı tarafından Atlanan bölgeleri neden makrolar içerir. Visual Studio açtığınızda C++ proje, ayrıştırıcının projedeki her kaynak dosyasındaki kodu inceler ve her bir tanımlayıcı hakkında bilgi içeren bir veritabanı oluşturur. IDE, kod gözatma desteği veren bilgiler gibi özellikleri kullanır **sınıf görünümü** tarayıcı ve **gezinti çubuğu**.
 
 C++ gözatma veritabanı ayrıştırıcı büyük miktarda kod kısa bir sürede ayrıştırabilen belirsiz bir ayrıştırıcısıdır. Hızlı nedenlerinden biri, içerik bloklarının atlar olmasıdır. Örneği için yalnızca bir işlevin parametreleri ve konumunu kaydeder ve içeriğini yok sayar. Belirli makrolar, başlangıç ve bitiş bloğunun belirlemek için kullanılan buluşsal yöntemler için sorunlara neden olabilir. Bu sorunlar, yanlış kaydedilecek bölgeleri neden.
 
@@ -118,7 +118,7 @@ Ayrıştırma sistem ipucu dosyaları için dizinleri şu sırayla arar.
 
 - Visual C++ için yükleme paketini içeren dizine (**vcpackages**). Bu dizin gibi sık kullanılan sistem dosyaları, simgeler tanımlayan bir yerleşik ipucu dosyası içeren **windows.h**. Sonuç olarak, projeniz otomatik olarak en çok ihtiyaç duyduğu ipuçları devralır.
 
-- Kaynak dosyayı içeren dizine kök dizininde bir kaynak dosyasının yolu. Normal bir Visual C++ projesinin kök dizinine çözüm veya proje dosyasını içerir.
+- Kaynak dosyayı içeren dizine kök dizininde bir kaynak dosyasının yolu. Tipik bir Visual Studio C++ proje kök dizinini çözüm veya proje dosyasını içerir.
 
    Bu kuralın istisnası, bir *durdurma dosya* içinde kaynak dosyasının yolu. Adlı bir dosyaya bir Durma dosyasıdır **cpp.stop**. Durdurma dosya arama sırası üzerinde ek denetim sağlar. Kök dizininden başlayarak yerine, kaynak dosyasını içeren dizine durdurma dosyasını içeren dizinden ayrıştırma sistem arar. Tipik bir projede bir Durma dosyası gerekmez.
 
@@ -162,7 +162,7 @@ Yalnızca olağan dışı bir söz dizimi öğeleri `@<`, `@=`, ve `@>` değişt
 
 Bu örnek nasıl ipuçları ipucu dosyalarından biriktirilir gösterir. Bu örnekte durdurma dosyaları kullanılmaz.
 
-Çizim, bazı fiziksel dizinlerin bir Visual C++ projesinde gösterir. İpucu dosyaları vardır `vcpackages`, `Debug`, `A1`, ve `A2` dizinleri.
+Bazı fiziksel dizinlerin Visual Studio'da gösterimde C++ proje. İpucu dosyaları vardır `vcpackages`, `Debug`, `A1`, ve `A2` dizinleri.
 
 ### <a name="hint-file-directories"></a>İpucu dosyası dizinleri
 
@@ -244,7 +244,7 @@ Bu Notlar Yukarıdaki listeye geçerlidir:
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Visual C++ Projeleri için Oluşturulan Dosya Türleri](file-types-created-for-visual-cpp-projects.md)<br>
+[Oluşturulan türleri görsel için dosya C++ projeleri](file-types-created-for-visual-cpp-projects.md)<br>
 [#define Yönergesi (C/C++)](../../preprocessor/hash-define-directive-c-cpp.md)<br>
 [#undef Yönergesi (C/C++)](../../preprocessor/hash-undef-directive-c-cpp.md)<br>
 [SAL Ek Açıklamaları](../../c-runtime-library/sal-annotations.md)<br>

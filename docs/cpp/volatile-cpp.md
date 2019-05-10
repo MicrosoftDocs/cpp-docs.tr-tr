@@ -1,6 +1,6 @@
 ---
 title: volatile (C++)
-ms.date: 11/04/2016
+ms.date: 05/07/2019
 f1_keywords:
 - volatile_cpp
 helpviewer_keywords:
@@ -9,12 +9,12 @@ helpviewer_keywords:
 - volatile objects
 - objects [C++], volatile
 ms.assetid: 81db4a85-ed5a-4a2c-9a53-5d07a771d2de
-ms.openlocfilehash: 73243841b2ad02bcc165b2910ac54283028e6cf3
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 2396b5afaed09a28fd83f22fccde0be04e3d7790
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62243964"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65221869"
 ---
 # <a name="volatile-c"></a>volatile (C++)
 
@@ -50,7 +50,7 @@ Olarak bildirilen nesneler **geçici** değerlerini dilediğiniz zaman değişti
 
 ## <a name="iso-compliant"></a>ISO Uyumlu
 
-C# volatile anahtar sözcüğü ile tanıdık veya davranışını aşina olduğunuz **geçici** önceki Visual C++ sürümlerinde dikkat edin, C ++ 11 ISO standart **geçici** anahtar sözcüğü farklı ise Visual Studio'da desteklendiğine olduğunda [/volatile:iso](../build/reference/volatile-volatile-keyword-interpretation.md) derleyici seçeneği belirtildi. (ARM için bu varsayılan olarak belirtilir). **Geçici** C ++ 11 ISO standart kod sözcüktür yalnızca donanım erişimi için; kullanılacak iş parçacıkları arası iletişim için kullanmayın. İş parçacıkları arası iletişim için gibi mekanizmaları kullanın [std::atomic\<T >](../standard-library/atomic.md) gelen [C++ Standart Kitaplığı](../standard-library/cpp-standard-library-reference.md).
+Alışkın olduğunuz C# volatile anahtar sözcüğü veya davranışını bilmiyorsanız **geçici** önceki sürümlerinde Microsoft C++ derleyici (MSVC) kullanan, C ++ 11 ISO standart **geçici** anahtar sözcüğü farklıdır ve MSVC içinde desteklenen zaman [/volatile:iso](../build/reference/volatile-volatile-keyword-interpretation.md) derleyici seçeneği belirtildi. (ARM için bu varsayılan olarak belirtilir). **Geçici** C ++ 11 ISO standart kod sözcüktür yalnızca donanım erişimi için; kullanılacak iş parçacıkları arası iletişim için kullanmayın. İş parçacıkları arası iletişim için gibi mekanizmaları kullanın [std::atomic\<T >](../standard-library/atomic.md) gelen [C++ Standart Kitaplığı](../standard-library/cpp-standard-library-reference.md).
 
 ## <a name="end-of-iso-compliant"></a>ISO Uyumluluğunun Sonu
 

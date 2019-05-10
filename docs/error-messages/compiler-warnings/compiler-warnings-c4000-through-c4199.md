@@ -1,5 +1,5 @@
 ---
-title: C4000 ile c4199 arasındaki derleyici uyarıları
+title: C4000 ile C4199 arasındaki derleyici uyarıları
 ms.date: 04/21/2019
 f1_keywords:
 - C4000
@@ -21,13 +21,13 @@ f1_keywords:
 - C4199
 ms.assetid: 426f495a-43af-4906-ad2b-6e5822c09965
 ms.openlocfilehash: 1af76f1bad4d8df06d527063bc6618d0f8ef8f70
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.sourcegitcommit: 283cb64fd7958a6b7fbf0cd8534de99ac8d408eb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62226721"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "64857199"
 ---
-# <a name="compiler-warnings-c4000-through-c4199"></a>C4000 ile c4199 arasındaki derleyici uyarıları
+# <a name="compiler-warnings-c4000-through-c4199"></a>C4000 ile C4199 arasındaki derleyici uyarıları
 
 Belgelerin bu bölümdeki makaleleri bir alt kümesini derleyici tarafından oluşturulan uyarı iletilerini açıklamaktadır.
 
@@ -35,7 +35,7 @@ Belgelerin bu bölümdeki makaleleri bir alt kümesini derleyici tarafından olu
 
 ## <a name="warning-messages"></a>Uyarı iletileri
 
-|Uyarı|İleti|
+|Uyarı|`Message`|
 |-------------|-------------|
 |C4000 uyarı derleyici|BİLİNMEYEN UYARI<br /><br /> Lütfen Visual C++ teknik destek komutunu seçin<br /><br /> Yardım menüsü ya da daha fazla bilgi için teknik destek Yardım dosyasını açın|
 |[Derleyici Uyarısı (düzey 4) C4001](../../error-messages/compiler-warnings/compiler-warning-level-4-c4001.md)|Standart olmayan uzantı 'tek satır Açıklama' kullanıldı|

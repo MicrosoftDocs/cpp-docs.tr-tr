@@ -1931,24 +1931,24 @@ helpviewer_keywords:
 - cl.exe compiler, intrinsics
 - intrinsics, ARM
 ms.assetid: d3d7dadd-7bd5-4508-8bff-371a66913e20
-ms.openlocfilehash: 47fd2f449568494bafde993e035d3ec37c44f6fe
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 8590f6ac056bf561960f9c02ff4a4cc6a4d3bfa0
+ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62264302"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "65447728"
 ---
 # <a name="arm-intrinsics"></a>ARM İç Bilgileri
 
-Visual C++ derleyici aşağıdaki yapı içlerini ARM mimarisine kullanılabilir hale getirir. ARM hakkında daha fazla bilgi için bkz: [ARM mimarisi başvuru kılavuzlarına](http://go.microsoft.com/fwlink/p/?LinkId=522049) ve [ARM Assembler araçları Kılavuzu](http://go.microsoft.com/fwlink/p/?LinkId=246102) ARM Bilgi Merkezi Web sitesinde.
+Microsoft C++ derleyici (MSVC) aşağıdaki yapı içlerini kullanıma sunar ARM mimarisine. ARM hakkında daha fazla bilgi için bkz: [ARM mimarisi başvuru kılavuzlarına](http://go.microsoft.com/fwlink/p/?LinkId=522049) ve [ARM Assembler araçları Kılavuzu](http://go.microsoft.com/fwlink/p/?LinkId=246102) ARM Bilgi Merkezi Web sitesinde.
 
 ##  <a name="top"></a> NEON
 
 ARM NEON vektör yönerge kümesi uzantıları x86 ve x64 mimari işlemcileri için ortak olan MMX ve SSE vektör yönerge kümesi de benzer tek yönerge birden çok veri (SIMD) özellikleri sağlar.
 
-NEON yapı içleri desteklenir, üstbilgi dosyasında koşuluyla `arm_neon.h`. NEON yapı içleri Visual C++ Derleyici desteği, ek G belgelenen ARM derleyicisi, benzer [ARM derleyici araç zinciri, sürüm 4.1 derleyici başvurusu](http://go.microsoft.com/fwlink/p/?LinkId=251083) ARM Bilgi Merkezi Web sitesinde.
+NEON yapı içleri desteklenir, üstbilgi dosyasında koşuluyla `arm_neon.h`. NEON yapı içleri MSVC desteği, ek G belgelenen ARM derleyicisi, benzer [ARM derleyici araç zinciri, sürüm 4.1 derleyici başvurusu](http://go.microsoft.com/fwlink/p/?LinkId=251083) ARM Bilgi Merkezi Web sitesinde.
 
-Visual C++ derleyicisi ile ARM derleyici arasındaki birincil fark, Visual C++ derleyicinin eklediği olan `_ex` türevleri `vldX` ve `vstX` vektör yük ve yönergeleri depolayın. `_ex` Çeşitleri ele işaretçi bağımsız değişkeni ancak kendi olmayan aksi özdeş olan hizalamasını belirten ek bir parametre`_ex` ortaklarınıza.
+MSVC eklediği MSVC ve ARM derleyicisi arasındaki birincil fark olduğu `_ex` türevleri `vldX` ve `vstX` vektör yük ve yönergeleri depolayın. `_ex` Çeşitleri ele işaretçi bağımsız değişkeni ancak kendi olmayan aksi özdeş olan hizalamasını belirten ek bir parametre`_ex` ortaklarınıza.
 
 ##  <a name="A"></a> ARM özel iç bilgi listesi
 
@@ -2398,13 +2398,13 @@ Aşağıdaki tabloda, olmayan-birbirine geçmiş bittest ön tanımlı ARM deste
 
 ||8|16|32|64|P|
 |-|-------|--------|--------|--------|-------|
-|Ekle|None|Yok.|Tam|Tam|None|
+|Ekle|None|Yok.|Tam|Tam|Yok.|
 |And|Tam|Tam|Tam|Tam|Yok.|
 |CompareExchange|Tam|Tam|Tam|Tam|Tam|
-|Azaltma|Yok.|Tam|Tam|Tam|Yok.|
+|Azaltma|Yok.|Tam|Tam|Tam|None|
 |Exchange|Kısmi|Kısmi|Kısmi|Kısmi|Kısmi|
-|ExchangeAdd|Tam|Tam|Tam|Tam|None|
-|Artırma|Yok.|Tam|Tam|Tam|None|
+|ExchangeAdd|Tam|Tam|Tam|Tam|Yok.|
+|Artırma|Yok.|Tam|Tam|Tam|Yok.|
 |Or|Tam|Tam|Tam|Tam|Yok.|
 |Xor|Tam|Tam|Tam|Tam|Yok.|
 

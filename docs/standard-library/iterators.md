@@ -5,12 +5,12 @@ helpviewer_keywords:
 - iterator conventions
 - C++ Standard Library, iterator conventions
 ms.assetid: 2f746be7-b37d-4bfc-bf05-be4336ca982f
-ms.openlocfilehash: 3b6713a80244d7063baac2c75ffead76fe93facc
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: ae4193b8e6edf94ab0f8d839ac36fc1addfd8d04
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62396151"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65220321"
 ---
 # <a name="iterators"></a>Yineleyiciler
 
@@ -86,7 +86,7 @@ Gösterir ve her bir yineleyici kategori sınırlamaları yineleyiciler kapsayı
 > [!NOTE]
 > Yineleyicilerin aralığı kullanarak kullanarak açıkça kaçınabilirsiniz-döngüler için. Daha fazla bilgi için [Range-based for deyimi](../cpp/range-based-for-statement-cpp.md).
 
-Visual C++ artık işaretli yineleyiciler ve hata ayıklama yineleyiciler, kapsayıcınızın sınırlarının üzerine değil emin olmak için de sunar. Daha fazla bilgi için [Checked Iterators](../standard-library/checked-iterators.md) ve [Debug Iterator Support](../standard-library/debug-iterator-support.md).
+Microsoft C++ artık teklifler işaretli yineleyiciler ve hata ayıklama yineleyiciler, kapsayıcınızın sınırlarının üzerine değil emin olmak için. Daha fazla bilgi için [Checked Iterators](../standard-library/checked-iterators.md) ve [Debug Iterator Support](../standard-library/debug-iterator-support.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

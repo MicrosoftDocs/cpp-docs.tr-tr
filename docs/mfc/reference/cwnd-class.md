@@ -818,12 +818,12 @@ helpviewer_keywords:
 - CWnd [MFC], WindowProc
 - CWnd [MFC], m_hWnd
 ms.assetid: 49a832ee-bc34-4126-88b3-bc1d9974f6c4
-ms.openlocfilehash: 493fe04f34f615d9113196e3db8bc744f420d4a2
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e88c375560c617e970c70adda245125ac8242ae4
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62323508"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65220347"
 ---
 # <a name="cwnd-class"></a>CWnd sınıfı
 
@@ -8262,7 +8262,7 @@ X ve y-koordinatlarını imleç içerir. Bu koordinatlarını ekran koordinatlar
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Fare isabet sınaması biri, aşağıda listelenen değerler numaralandırılır.
+Fare isabet sınaması birini numaralandırılmış değerlerinin. Bkz: [wm_nchıttest](/windows/desktop/inputdev/wm-nchittest) değerleri listesi.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -8282,7 +8282,7 @@ afx_msg void OnNcLButtonDblClk(
 ### <a name="parameters"></a>Parametreler
 
 *nHitTest*<br/>
-Belirtir [isabet testi kodu](#onnchittest). İsabet sınaması imleç konumunu belirleyen bir testtir.
+Belirtir [isabet testi kodu](#onnchittest). İsabet sınaması imleç konumunu belirleyen bir testtir. Bkz: [wm_nchıttest](/windows/desktop/inputdev/wm-nchittest) değerleri listesi.
 
 *Noktası*<br/>
 Belirtir bir `CPoint` x ve y içeren nesne ekran koordinatları imleç konumu. Bu her zaman ekranın sol üst köşesinde göreli koordinatları.
@@ -8307,7 +8307,7 @@ afx_msg void OnNcLButtonDown(
 ### <a name="parameters"></a>Parametreler
 
 *nHitTest*<br/>
-Belirtir [isabet testi kodu](#onnchittest). İsabet sınaması imleç konumunu belirleyen bir testtir.
+Belirtir [isabet testi kodu](#onnchittest). İsabet sınaması imleç konumunu belirleyen bir testtir. Bkz: [wm_nchıttest](/windows/desktop/inputdev/wm-nchittest) değerleri listesi.
 
 *Noktası*<br/>
 Belirtir bir `CPoint` x ve y içeren nesne ekran koordinatları imleç konumu. Bu her zaman ekranın sol üst köşesinde göreli koordinatları.
@@ -8332,7 +8332,7 @@ afx_msg void OnNcLButtonUp(
 ### <a name="parameters"></a>Parametreler
 
 *nHitTest*<br/>
-Belirtir [isabet testi kodu](#onnchittest). İsabet sınaması imleç konumunu belirleyen bir testtir.
+Belirtir [isabet testi kodu](#onnchittest). İsabet sınaması imleç konumunu belirleyen bir testtir. Bkz: [wm_nchıttest](/windows/desktop/inputdev/wm-nchittest) değerleri listesi.
 
 *Noktası*<br/>
 Belirtir bir `CPoint` x ve y içeren nesne ekran koordinatları imleç konumu. Bu her zaman ekranın sol üst köşesinde göreli koordinatları.

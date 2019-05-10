@@ -1,26 +1,26 @@
 ---
 title: En iyi uygulamaları iyileştirme
-ms.date: 11/04/2016
+ms.date: 05/06/2019
 helpviewer_keywords:
-- Visual C++, optimization
+- C++, optimization
 - optimization, best practices
 ms.assetid: f3433148-7255-4ca6-8a4f-7c31aac88508
-ms.openlocfilehash: edb036292b87593a3f8bb9b3f5ec5f7beb84c3a5
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 42178f8326def78f37bfcc905b96f37c7fc3affc
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62274176"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65220276"
 ---
 # <a name="optimization-best-practices"></a>En iyi uygulamaları iyileştirme
 
-Bu belgede, Visual C++'ta iyileştirme için bazı en iyi uygulamalar açıklanmaktadır.
+Bu belgede en iyi duruma getirmek için bazı en iyi uygulamalar açıklanmaktadır C++ Visual Studio'daki programlar.
 
 ## <a name="compiler-and-linker-options"></a>Derleyici ve bağlayıcı seçenekleri
 
 ### <a name="profile-guided-optimization"></a>Profil temelli iyileştirme
 
-Visual C++ destekler *profil temelli iyileştirme* (PGO). Bu iyileştirme uygulamasının daha sonraki iyileştirme sürücü için profil verileri eğitim yürütmeleri uygulamanın belgelenmiş bir sürümünü kullanır. PGO kullanılarak zaman alıcı olabilir, böylece her geliştiricinin kullanan bir şey olmayabilir, ancak bir ürün için son sürüm yapılandırması PGO kullanmanızı öneririz. Daha fazla bilgi için [permutasyonları iyileştirmeleri](profile-guided-optimizations.md).
+Visual Studio destekler *profil temelli iyileştirme* (PGO). Bu iyileştirme uygulamasının daha sonraki iyileştirme sürücü için profil verileri eğitim yürütmeleri uygulamanın belgelenmiş bir sürümünü kullanır. PGO kullanılarak zaman alıcı olabilir, böylece her geliştiricinin kullanan bir şey olmayabilir, ancak bir ürün için son sürüm yapılandırması PGO kullanmanızı öneririz. Daha fazla bilgi için [permutasyonları iyileştirmeleri](profile-guided-optimizations.md).
 
 Ayrıca, *tüm Program iyileştirmesi* (bağlama zamanı kod oluşturmayı de bildiği) ve **/O1** ve **/O2** iyileştirmeleri geliştirildi. Genel olarak, aşağıdaki seçeneklerden birini ile derlenen bir uygulamayı aynı uygulamanın daha önceki bir derleyici ile derlenmiş kıyasla daha hızlı olacaktır.
 
@@ -93,13 +93,13 @@ Derinliğini sınırlamak için başka bir kullanışlı pragma yapılmış olan
 
 ## <a name="restrict-and-assume"></a>__restrict ve \__assume
 
-Birkaç görselde anahtar sözcüklerin C++ performans yardımcı olabilir: [__restrict](../cpp/extension-restrict.md) ve [__assume](../intrinsics/assume.md).
+Anahtar sözcükleri Visual Studio'da performans yardımcı olabilecek birkaç vardır: [__restrict](../cpp/extension-restrict.md) ve [__assume](../intrinsics/assume.md).
 
 İlk olarak, unutulmamalıdır, `__restrict` ve `__declspec(restrict)` iki farklı şey vardır. Biraz ilgili olsa da, semantiği farklıdır. `__restrict` gibi bir tür niteleyicisi olan `const` veya `volatile`, ancak yalnızca işaretçi türleri için.
 
 Değiştirilen bir işaretçi `__restrict` şeklinde adlandırılan bir *işaretçi __restrict*. __Restrict işaretçisi aracılığıyla yalnızca erişilebilir bir işaretçidir \__restrict işaretçi. Diğer bir deyişle, başka bir işaretçi tarafından işaret verilere erişmek için kullanılamaz \__restrict işaretçi.
 
-`__restrict` Visual C++ iyileştirici yönelik güçlü bir araç olması, ancak çok dikkatli kullanın. İyileştirici, düzensiz kullandıysanız, uygulamanızın çalışmamasına neden bir iyileştirme gerçekleştirebilir.
+`__restrict` güçlü bir aracı Microsoft olabilir C++ iyileştirici, ancak çok dikkatli kullanın. İyileştirici, düzensiz kullandıysanız, uygulamanızın çalışmamasına neden bir iyileştirme gerçekleştirebilir.
 
 `__restrict` Anahtar sözcüğü değiştirir **/Oa** önceki sürümlerden geçiş yapın.
 

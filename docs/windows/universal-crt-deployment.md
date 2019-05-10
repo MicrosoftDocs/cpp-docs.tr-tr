@@ -5,11 +5,11 @@ helpviewer_keywords:
 - deploying the CRT [C++]
 - application CRT deployment [C++]
 ms.openlocfilehash: 7952d2ec6e8f502b0edf776811a492c67f495cce
-ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
-ms.translationtype: HT
+ms.sourcegitcommit: 283cb64fd7958a6b7fbf0cd8534de99ac8d408eb
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "64344181"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "64857239"
 ---
 # <a name="universal-crt-deployment"></a>Evrensel CRT dağıtım
 

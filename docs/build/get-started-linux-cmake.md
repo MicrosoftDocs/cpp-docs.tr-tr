@@ -4,12 +4,12 @@ description: Bu öğreticide, ayarlama, derleme ve hata ayıklama hem Linux hem 
 author: mikeblome
 ms.topic: tutorial
 ms.date: 03/05/2019
-ms.openlocfilehash: deb2c91d6d09d8945e5eb57a7ac742c5b1705e83
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f184cc2ce3eaf3adcc936bd723019956b5b23dc9
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62196438"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65220864"
 ---
 # <a name="tutorial-create-c-cross-platform-projects-in-visual-studio"></a>Öğretici: Visual Studio'da C++ platformlar arası projeler oluşturma 
 

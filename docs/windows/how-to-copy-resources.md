@@ -30,12 +30,12 @@ helpviewer_keywords:
 - cursors [C++], importing and exporting
 - images [C++], exporting
 ms.assetid: 65f523e8-017f-4fc6-82d1-083c56d9131f
-ms.openlocfilehash: 6b9499fbd806c04774d12750c70816d0312a4e3f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 28678b560387fa6b111d60a7487ed44f9244a821
+ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62345272"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "65449064"
 ---
 # <a name="how-to-manage-resources-c"></a>Nasıl yapılır: Kaynaklar (C++) yönetme
 
@@ -100,7 +100,7 @@ Yönetilen kaynak (.resx) dosyaları XML dosyalarıdır. Yönetilen kaynak dosya
 
 ## <a name="import-and-export-resources"></a>İçeri ve dışarı aktarma kaynakları
 
-Grafik kaynakları (bit eşlemler, simgeler, işaretçiler ve araç çubukları), HTML dosyaları ve Visual C++'ta kullanmak için özel kaynaklar içeri aktarabilirsiniz. Geliştirme ortamının dışında kullanılan dosyaları ayırmak için bir Visual C++ projesi aynı dosya türlerini dışarı aktarabilirsiniz.
+Grafik kaynakları (bit eşlemler, simgeler, işaretçiler ve araç çubukları), HTML dosyaları ve Visual C++'ta kullanmak için özel kaynaklar içeri aktarabilirsiniz. Visual Studio'dan aynı dosya türlerini dışarı aktarabilirsiniz C++ geliştirme ortamının dışında kullanılan dosyaları ayırmak için proje.
 
 > [!NOTE]
 > Dize tabloları hızlandırıcıları ve iletişim kutuları gibi kaynak türleri içeri aktarılabilir veya değil tek başına dosya türleri olduğundan dışarı.

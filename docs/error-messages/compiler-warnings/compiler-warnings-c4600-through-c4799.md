@@ -1,5 +1,5 @@
 ---
-title: C4600 ile c4799 arasındaki derleyici uyarıları
+title: C4600 ile C4799 arasındaki derleyici uyarıları
 ms.date: 04/21/2019
 f1_keywords:
 - C4609
@@ -41,13 +41,13 @@ helpviewer_keywords:
 - C4770
 ms.assetid: 22bd4392-f3be-445c-9f23-6126aebac901
 ms.openlocfilehash: 3df17b115797f4d68621854d072c41aca14a0fd8
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.sourcegitcommit: 283cb64fd7958a6b7fbf0cd8534de99ac8d408eb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62227037"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "64857558"
 ---
-# <a name="compiler-warnings-c4600-through-c4799"></a>C4600 ile c4799 arasındaki derleyici uyarıları
+# <a name="compiler-warnings-c4600-through-c4799"></a>C4600 ile C4799 arasındaki derleyici uyarıları
 
 Belgelerin bu bölümdeki makaleleri bir alt kümesini derleyici tarafından oluşturulan uyarı iletilerini açıklamaktadır.
 
@@ -55,7 +55,7 @@ Belgelerin bu bölümdeki makaleleri bir alt kümesini derleyici tarafından olu
 
 ## <a name="warning-messages"></a>Uyarı iletileri
 
-|Uyarı|İleti|
+|Uyarı|`Message`|
 |-------------|-------------|
 |[Derleyici Uyarısı (düzey 1) C4600](../../error-messages/compiler-warnings/compiler-warning-level-1-c4600.md)|#pragma 'makro adı': geçerli bir boş olmayan dize bekleniyor|
 |[Derleyici Uyarısı (düzey 1) C4602](compiler-warning-level-1-c4602.md)|#pragma pop_macro: 'makro adı' önceki hiçbir #pragma push_macro bu tanımlayıcısı|

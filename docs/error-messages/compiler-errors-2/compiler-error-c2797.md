@@ -6,18 +6,18 @@ f1_keywords:
 helpviewer_keywords:
 - C2797
 ms.assetid: 9fb26d35-eb5c-46fc-9ff5-756fba5bdaff
-ms.openlocfilehash: 04a7b2b1d33ab7efa77563406ab3c12831cf80fc
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: ccd007bf193bd6529748004a96745fafcb9f3226
+ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62360131"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "65447829"
 ---
 # <a name="compiler-error-c2797"></a>Derleyici Hatası C2797
 
 (Eski) Liste başlatması üye başlatıcı listesi veya statik olmayan veri üyesi başlatıcısı uygulanmadı.
 
-Bu uyarı, Visual Studio 2015'te kullanılmıyor. Visual Studio 2013 veya önceki sürümlerinde, Visual C++ derleyicisi liste başlatması veya bir üye başlatıcı listesi, hem de statik olmayan veri üyesi başlatıcısı uygulamıyor. Visual Studio 2013 güncelleştirme 3 önce bu sessiz hatalı kod oluşturma için yol açabilecek bir işlev çağrısı için dönüştürüldü. Visual Studio 2013 güncelleştirme 3'ü bu hata olarak bildirir.
+Bu uyarı, Visual Studio 2015'te kullanılmıyor. Visual Studio 2013 ve önceki sürümlerinde, Microsoft C++ derleyici liste başlatması veya bir üye başlatıcı listesi, hem de statik olmayan veri üyesi başlatıcısı uygulamıyor. Visual Studio 2013 güncelleştirme 3 önce bu sessiz hatalı kod oluşturma için yol açabilecek bir işlev çağrısı için dönüştürüldü. Visual Studio 2013 güncelleştirme 3'ü bu hata olarak bildirir.
 
 Bu örnek C2797 oluşturur:
 

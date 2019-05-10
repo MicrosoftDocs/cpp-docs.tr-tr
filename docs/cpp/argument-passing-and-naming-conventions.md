@@ -13,18 +13,18 @@ helpviewer_keywords:
 - passing arguments [C++], conventions
 - conventions [C++], argument names
 ms.assetid: de468979-eab8-4158-90c5-c198932f93b9
-ms.openlocfilehash: ca09d31d3d8d50ca94543c5e02262edd7b2deefc
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 1928f8e479b0533c5a8b2e60de7af9eff93f7eed
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62184406"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65222259"
 ---
 # <a name="argument-passing-and-naming-conventions"></a>Bağımsız Değişkeni Geçirme ve Adlandırma Kuralları
 
 **Microsoft'a özgü**
 
-Visual C++ Derleyicileri, bağımsız değişkenleri geçirme için kuralları belirtin ve işlevler ile çağrı yapanlar arasında dönüş değerleri olanak tanır. Kuralların tüm desteklenen platformlarda kullanılabilir ve bazı kurallar platforma özel uygulamalar kullanır. Çoğu durumda, anahtar sözcükler veya belirli bir platformda desteklenmeyen bir kuralı belirten derleyici anahtarları dikkate alınmaz ve platform varsayılan kuralı kullanılır.
+Microsoft C++ derleyicileri, bağımsız değişkenleri geçirme için kuralları belirtin ve işlevler ile çağrı yapanlar arasında değerleri döndürmek izin verin. Kuralların tüm desteklenen platformlarda kullanılabilir ve bazı kurallar platforma özel uygulamalar kullanır. Çoğu durumda, anahtar sözcükler veya belirli bir platformda desteklenmeyen bir kuralı belirten derleyici anahtarları dikkate alınmaz ve platform varsayılan kuralı kullanılır.
 
 X86 bunlar geçirildiğinde, platformlarında, tüm bağımsız değişkenler 32 bit'e genişletilmiş. Dönüş değerleri de 32 bit olarak genişletilmiş ve dışında edx: eax kayıt çiftine döndürülen 8 baytlık yapılar, EAX kaydına döndürülür. Daha büyük yapılar döndürülür EAX kaydına işaretçileri olarak gizli dönüş yapılarına. Parametreler sağdan sola yığın üstüne itilir. Pod olmayan yapılar yazmaçlarda döndürülmez.
 
@@ -41,7 +41,7 @@ Aşağıdaki çağrı kuralları Visual C/C++ Derleyici tarafından desteklenir.
 
 |Anahtar sözcüğü|Yığın temizleme|Parametre geçirme|
 |-------------|-------------------|-----------------------|
-|[__cdecl](../cpp/cdecl.md)|Çağıran|Parametreleri, ters sırada (sağdan sola) yığına|
+|[__cdecl](../cpp/cdecl.md)|Caller|Parametreleri, ters sırada (sağdan sola) yığına|
 |[__clrcall](../cpp/clrcall.md)|yok|Parametreleri CLR ifade yığınına (soldan sağa) sırada yükleyin.|
 |[__stdcall](../cpp/stdcall.md)|Çağrılan|Parametreleri, ters sırada (sağdan sola) yığına|
 |[__fastcall](../cpp/fastcall.md)|Çağrılan|Kayıtlar, sonra yığına itildi depolanır|

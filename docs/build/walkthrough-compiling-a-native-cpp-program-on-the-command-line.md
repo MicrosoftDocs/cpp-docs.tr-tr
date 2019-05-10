@@ -1,23 +1,24 @@
 ---
 title: 'İzlenecek yol: Komut satırında yerel C++ programı derleme'
+description: Microsoft kullanım C++ derleyici bir komut isteminden.
 ms.custom: conceptual
-ms.date: 09/24/2018
+ms.date: 04/23/2019
 helpviewer_keywords:
 - native code [C++]
 - Visual C++, native code
 - compiling programs [C++]
 - command-line applications [C++], native
 ms.assetid: b200cfd1-0440-498f-90ee-7ecf92492dc0
-ms.openlocfilehash: d7b5bc88966f7edbb7179c36398b1dd95afb971f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 64300c8683dd5d1c40638ba7d50acfca6abc40c0
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62313889"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65217704"
 ---
 # <a name="walkthrough-compiling-a-native-c-program-on-the-command-line"></a>İzlenecek yol: Komut satırında yerel C++ programı derleme
 
-Visual C++ Evrensel Windows platformu uygulamaları için temel bir konsol uygulamaları, Masaüstü uygulamaları, cihaz sürücüleri ve .NET bileşenleri her şeyi oluşturmak için kullanabileceğiniz komut satırı bir C++ derleyicisi içerir.
+Visual Studio komut satırı içerir C++ her şeyi Evrensel Windows platformu uygulamaları, Masaüstü uygulamaları, cihaz sürücüleri ve .NET bileşenleri için temel bir konsol uygulamaları oluşturmak için kullanabileceğiniz derleyici.
 
 Bu kılavuzda, temel, "Hello, World" Oluştur-C++ programı bir metin kullanarak Düzenleyicisi stil ve sonra komut satırında derleyin. İsterseniz bkz yerine komut satırını kullanarak Visual Studio IDE deneyin [izlenecek yol: Projeler ve çözümler (C++) ile çalışma](../ide/walkthrough-working-with-projects-and-solutions-cpp.md) veya [C++ Masaüstü geliştirmesi için Visual Studio IDE'yi kullanarak](../ide/using-the-visual-studio-ide-for-cpp-desktop-development.md).
 
@@ -29,7 +30,7 @@ Bu izlenecek yolu tamamlamak için Visual Studio ve isteğe bağlı yüklediğin
 
 Visual Studio tam özellikli bir düzenleyici, kaynak yöneticileri, hata ayıklayıcıları ve derleyiciler birçok diller ve platformlar için destekleyen bir güçlü tümleşik geliştirme ortamı (IDE) ' dir. Ücretsiz Visual Studio Community sürümü dahil olmak üzere Visual Studio karşıdan yüklenip kurulacak ve C/C++ geliştirme desteği dahil etmek hakkında daha fazla bilgi için bkz. [Visual Studio'da C++ yükleme desteği](vscpp-step-0-installation.md).
 
-Visual Studio derleme araçları, yalnızca komut satırı derleyicileri, araçları ve kitaplıklarını C ve C++ programları oluşturmak için ihtiyacınız yükler. Derleme laboratuvarlarının için mükemmeldir veya sınıf sınayan ve oldukça hızlı bir şekilde yükler. Yalnızca komut satırı araçlarını yüklemek için Yükle [Visual Studio 2017 için derleme Araçları](https://go.microsoft.com/fwlink/p/?linkid=875721).
+Visual Studio derleme araçları, yalnızca komut satırı derleyicileri, araçları ve kitaplıklarını C ve C++ programları oluşturmak için ihtiyacınız yükler. Derleme laboratuvarlarının için mükemmeldir veya sınıf sınayan ve oldukça hızlı bir şekilde yükler. Yalnızca komut satırı araçlarını yüklemek için derleme araçları için Visual Studio için Ara [Visual Studio indirmeleri](https://visualstudio.microsoft.com/downloads/) sayfası.
 
 Komut satırında C veya C++ programı oluşturmadan önce araçların yüklendiğini ve bunları komut satırından erişebildiğinizi doğrulamanız gerekir. Visual C++ için Araçlar, üstbilgiler ve kitaplıkları kullanır bulmak komut satırı ortamını karmaşık gereksinimleri vardır. **Visual C++ bir düz bir komut istemi penceresinde kullanamazsınız** bazı hazırlık yapmadan olmadan. Neyse ki, Visual C++ komut satırı derlemeleri için ayarlanan ortam sahip bir geliştirici komut istemi başlatmak, kısayol yükler. Ne yazık ki, geliştirici komut istemi kısayolları ve bulundukları neredeyse her sürümünde, Visual C++ ve Windows farklı sürümlerini farklı adlarıdır. İlk kılavuz göreviniz kullanmak için doğru olanı buluyor.
 
@@ -38,11 +39,11 @@ Komut satırında C veya C++ programı oluşturmadan önce araçların yüklendi
 
 ### <a name="open-a-developer-command-prompt"></a>Bir geliştirici komut istemi açın
 
-1. Windows 10'da Visual Studio 2017 yüklediyseniz, Başlat menüsünü açın ve seçin **tüm uygulamalar**. Aşağı kaydırın ve açık **Visual Studio 2017** klasörü (Visual Studio 2017 uygulama değil). Seçin **VS 2017 için geliştirici komut istemi** komut istemi penceresi açın.
+1. Visual Studio 2017'yi veya daha sonra Windows 10 yüklü değilse, Başlat menüsünü açın ve seçin **tüm uygulamalar**. Aşağı kaydırın ve açık **Visual Studio** klasörü (Visual Studio uygulaması değil). Seçin **VS için geliştirici komut istemi** komut istemi penceresi açın.
 
    Windows 10'da Microsoft Visual C++ derleme araçları 2015 yüklü değilse, açmak **Başlat** menüsünü seçip **tüm uygulamalar**. Aşağı kaydırın ve açık **Visual C++ derleme Araçları** klasör. Seçin **Visual C++ 2015 x86 yerel Araçlar komut istemi** komut istemi penceresi açın.
 
-   Visual Studio'nun farklı bir sürümünü kullanıyorsanız veya farklı bir Windows sürümü çalıştıran arayın, Başlat menüsünde veya başlangıç sayfası için geliştirici komut istemi kısayolunun içeren bir Visual Studio Araçları klasörü. Windows arama işlevi, yüklü Visual Studio sürümünüzle eşleşen birini seçin ve "Geliştirici komut istemi için" arama için de kullanabilirsiniz. Komut İstemi penceresini açmak için kısayolu kullanın.
+   Windows arama işlevi, yüklü Visual Studio sürümünüzle eşleşen birini seçin ve "Geliştirici komut istemi için" arama için de kullanabilirsiniz. Komut İstemi penceresini açmak için kısayolu kullanın.
 
 1. Ardından, Visual C++ Geliştirici komut istemi doğru şekilde ayarlandığını doğrulayın. Komut İstemi penceresinde girin `cl` ve çıkış şuna benzediğini doğrulayın:
 
@@ -87,7 +88,7 @@ Komut satırında C veya C++ programı oluşturmadan önce araçların yüklendi
 
 1. Çalışmanızı kaydetmek! Not Defteri'nde, üzerinde **dosya** menüsünde seçin **Kaydet**.
 
-   Tebrikler, bir Visual C++ kaynak dosyasını derlemek hazır olan hello.cpp oluşturdunuz.
+   Tebrikler, oluşturduğunuz bir C++ kaynak dosyasını, derlemek hazır olan hello.cpp.
 
 1. Geliştirici komut istemi penceresine geçin. Girin `dir` c:\hello dizininin içeriğini listelemek için komut isteminde. Kaynak dosya hello.cpp şuna benzer şekilde görünür dizin listesinde görmeniz gerekir:
 

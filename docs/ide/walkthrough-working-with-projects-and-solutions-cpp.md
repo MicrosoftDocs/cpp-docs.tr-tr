@@ -1,18 +1,18 @@
 ---
 title: 'İzlenecek yol: Projeler ve çözümler (C++) ile çalışma'
-ms.date: 09/14/2018
+ms.date: 04/25/2019
 helpviewer_keywords:
 - solutions [C++]
 - projects [C++], about projects
 - projects [C++]
 - solutions [C++], about solutions
 ms.assetid: 93a3f290-e294-46e3-876e-e3084d9ae833
-ms.openlocfilehash: 9408938b670d8130305f2e1c1258fc6fcb9875bb
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 978899e6e73d78623e37222e3248dc299ec29c69
+ms.sourcegitcommit: 18d3b1e9cdb4fc3a76f7a650c31994bdbd2bde64
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62264601"
+ms.lasthandoff: 04/29/2019
+ms.locfileid: "64877298"
 ---
 # <a name="walkthrough-working-with-projects-and-solutions-c"></a>İzlenecek yol: Projeler ve çözümler (C++) ile çalışma
 
@@ -22,24 +22,43 @@ Visual Studio'da iş, projeler ve çözümler halinde düzenlenmiştir. Bir çö
 
 ## <a name="before-you-start"></a>Başlamadan önce
 
-Bu izlenecek yolu tamamlamak için Visual Studio 2017 sürüm 15.3 veya üzeri gerekir. Bir kopyası gerekirse, kısa bir kılavuz aşağıda verilmiştir: [Visual Studio'da C++ desteği yükleme](../build/vscpp-step-0-installation.md). Bunu henüz yapmadıysanız sonraki adımları aracılığıyla Visual C++'ın doğru şekilde yüklendiğinden emin olmak için "Hello, World" öğretici ve yüklemeden sonra tüm works izleyin.
+Bu izlenecek yolu tamamlamak için Visual Studio 2017 veya üstü gerekir. Bir kopyası gerekirse, kısa bir kılavuz aşağıda verilmiştir: [Visual Studio'da C++ desteği yükleme](../build/vscpp-step-0-installation.md). Bunu henüz yapmadıysanız sonraki adımları aracılığıyla Visual C++'ın doğru şekilde yüklendiğinden emin olmak için "Hello, World" öğretici ve yüklemeden sonra tüm works izleyin.
 
 C++ dilinin temellerini anlamanız ve bildiğiniz ne derleyici, bağlayıcı ve hata ayıklayıcı için kullanılan yardımcı olur. Öğreticide ayrıca Windows ve menüler, iletişim kutuları kullanma ile ilgili bilgi sahibi olduğunuz varsayılır,
 
 ## <a name="create-a-project"></a>Proje oluşturma
 
-Proje oluşturmak için önce bir proje türü şablonu seçin. Her proje türü için Visual Studio derleyici ayarlarını belirler ve — türüne bağlı olarak — daha sonra değiştirebileceğiniz Başlatıcı kodu üretir.
+Proje oluşturmak için önce bir proje türü şablonu seçin. Her proje türü için Visual Studio derleyici ayarlarını belirler ve — türüne bağlı olarak — daha sonra değiştirebileceğiniz Başlatıcı kodu üretir. Aşağıdaki adımlar, kullandığınız Visual Studio'nun hangi sürümünün bağlı olarak farklılık gösterir. Sol üst sürüm seçicisinde doğru sürüme bu sayfanın ayarlandığından emin olun.
 
-### <a name="to-create-a-project"></a>Bir proje oluşturmak için
+::: moniker range="vs-2019"
+
+### <a name="to-create-a-project-in-visual-studio-2019"></a>Visual Studio 2019 içinde bir proje oluşturmak için
+
+1. Ana menüden **dosya** > **yeni** > **proje** açmak için **yeni bir proje oluşturma** iletişim bir kutu.
+
+1. İletişim kutusunun üstündeki ayarlamak **dil** için **C++** ayarlayın **Platform** için **Windows**, ayarlayıp **proje türü** için **konsol**. 
+
+1. Filtrelenmiş proje türleri listesinden seçim **konsol uygulaması** ardından **sonraki**. Sonraki sayfaya girin *Game* projenin adı.
+
+   Varsayılan konumu kabul edebilir **konumu** açılır listede farklı bir konum girin veya seçin **Gözat** , projeyi kaydetmek istediğiniz dizine gitmek için düğme.
+
+   Bir proje oluşturduğunuzda, Visual Studio projeyi bir çözümün içine koyar. Varsayılan olarak çözüm proje ile aynı ada sahiptir. Adı değiştirebilirsiniz **çözüm adı** kutusu, ancak bu örnekte, varsayılan adı bırakın.
+
+1. Seçin **Oluştur** projeyi oluşturmak için.
+
+   Visual Studio, yeni çözüm ve proje dosyalarını oluşturur ve onu oluşturulmuş Game.cpp kaynak kodu dosyası düzenleyicisi açılır.
+
+::: moniker-end
+
+::: moniker range="vs-2017"
+
+### <a name="to-create-a-project-in-visual-studio-2017"></a>Visual Studio 2017'de bir proje oluşturmak için
 
 1. Menü çubuğunda, **dosya** > **yeni** > **proje**.
 
 1. Sol bölmesinde **yeni proje** iletişim kutusunda **yüklü** seçip **Visual C++**, zaten açık değilse.
 
 1. Orta bölmedeki yüklü şablonlar listesinde seçin **Windows konsol uygulaması**.
-
-   > [!NOTE]
-   > Visual Studio'nun önceki sürümleri yüklü şablonun adlı **Win32 konsol uygulaması**.
 
 1. Proje için bir ad girin **adı** kutusu. Bu örnekte, girin *Game*.
 
@@ -50,6 +69,30 @@ Proje oluşturmak için önce bir proje türü şablonu seçin. Her proje türü
 1. Seçin **Tamam** projeyi oluşturmak için.
 
    Visual Studio, yeni çözüm ve proje dosyalarını oluşturur ve onu oluşturulmuş Game.cpp kaynak kodu dosyası düzenleyicisi açılır.
+
+::: moniker-end
+
+::: moniker range="vs-2015"
+
+### <a name="to-create-a-project-in-visual-studio-2015"></a>Visual Studio 2015'te bir proje oluşturmak için
+
+1. Menü çubuğunda, **dosya** > **yeni** > **proje**.
+
+1. Sol bölmesinde **yeni proje** iletişim kutusunda **yüklü** seçip **Visual C++**, zaten açık değilse.
+
+1. Orta bölmedeki yüklü şablonlar listesinde seçin **Win32 konsol uygulaması**.
+
+1. Proje için bir ad girin **adı** kutusu. Bu örnekte, girin *Game*.
+
+   Varsayılan konumu kabul edebilir **konumu** açılır listede farklı bir konum girin veya seçin **Gözat** , projeyi kaydetmek istediğiniz dizine gitmek için düğme.
+
+   Bir proje oluşturduğunuzda, Visual Studio projeyi bir çözümün içine koyar. Varsayılan olarak çözüm proje ile aynı ada sahiptir. Adı değiştirebilirsiniz **çözüm adı** kutusu, ancak bu örnekte, varsayılan adı bırakın.
+
+1. Seçin **Tamam** projeyi oluşturmak için.
+
+   Visual Studio, yeni çözüm ve proje dosyalarını oluşturur ve onu oluşturulmuş Game.cpp kaynak kodu dosyası düzenleyicisi açılır.
+
+::: moniker-end
 
 ## <a name="organize-projects-and-files"></a>Projeleri ve dosyaları düzenleme
 
@@ -117,7 +160,7 @@ Kılavuzun bu bölümü, projeye bir sınıf eklemek gösterilmektedir. Sınıf�
    <!--[!code-cpp[NVC_Walkthrough_Working_With_Projects#111](../ide/codesnippet/CPP/walkthrough-working-with-projects-and-solutions-cpp_5.cpp)]-->
 
     ```cpp
-    #include "pch.h"
+    #include "pch.h" // remove this line in Visual Studio 2019
     #include "Cardgame.h"
     #include <iostream>
 
@@ -155,7 +198,7 @@ Yeni işlevleri test uygulamanıza kod ekleyin.
     // Game.cpp : Defines the entry point for the console application.
     //
 
-    #include "pch.h"
+    #include "pch.h" // remove this line in Visual Studio 2019
     #include "Cardgame.h"
     #include <iostream>
 

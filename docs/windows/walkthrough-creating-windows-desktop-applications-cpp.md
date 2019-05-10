@@ -1,17 +1,17 @@
 ---
 title: 'İzlenecek yol: Geleneksel Windows masaüstü uygulaması (C++) oluştur'
 ms.custom: get-started-article
-ms.date: 09/18/2018
+ms.date: 04/23/2019
 helpviewer_keywords:
 - Windows applications [C++], Win32
 - Windows Desktop applications [C++]
 - Windows API [C++]
-ms.openlocfilehash: cb6d09acc00f2e38ee41180c81c1877bc53027c2
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
-ms.translationtype: HT
+ms.openlocfilehash: 0bc9ef82863fde361964234cca54f12aac1e2abe
+ms.sourcegitcommit: 18d3b1e9cdb4fc3a76f7a650c31994bdbd2bde64
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62388116"
+ms.lasthandoff: 04/29/2019
+ms.locfileid: "64877385"
 ---
 # <a name="walkthrough-create-a-traditional-windows-desktop-application-c"></a>İzlenecek yol: Geleneksel Windows masaüstü uygulaması (C++) oluştur
 
@@ -26,7 +26,7 @@ Windows API (olarak da bilinen Win32 API, Windows Masaüstü API ve Windows Klas
 
 - Microsoft Windows 7 veya sonraki sürümleri çalıştıran bir bilgisayar. Windows 10 için en iyi geliştirme deneyimi öneririz.
 
-- Visual Studio 2017 bir kopyası. Visual Studio yükleyip hakkında daha fazla bilgi için bkz. [Visual Studio'yu yükleyin](/visualstudio/install/install-visual-studio). Yükleyici çalıştırdığınızda emin **C++ ile masaüstü geliştirme** iş yükü denetlenir. Visual Studio yüklediğinizde bu iş yükü yüklenmediyse, endişelenmeyin. Yükleyiciyi yeniden çalıştırın ve şimdi yükleyin.
+- Visual Studio kopyası. Visual Studio yükleyip hakkında daha fazla bilgi için bkz. [Visual Studio'yu yükleyin](/visualstudio/install/install-visual-studio). Yükleyici çalıştırdığınızda emin **C++ ile masaüstü geliştirme** iş yükü denetlenir. Visual Studio yüklediğinizde bu iş yükü yüklenmediyse, endişelenmeyin. Yükleyiciyi yeniden çalıştırın ve şimdi yükleyin.
 
    ![C++ ile masaüstü geliştirme](../build/media/desktop-development-with-cpp.png "C++ ile masaüstü geliştirme")
 
@@ -36,9 +36,37 @@ Windows API (olarak da bilinen Win32 API, Windows Masaüstü API ve Windows Klas
 
 ## <a name="create-a-windows-desktop-project"></a>Windows Masaüstü projesi oluşturma
 
-Windows masaüstü uygulaması için bir çalışma kodu girin ve ilk Windows Masaüstü projenizi oluşturmak için aşağıdaki adımları izleyin. Visual Studio'nun Visual Studio 2017 sürüm 15.3 eski bir sürümü kullanıyorsanız, atlayın [Visual Studio 2017 RTM'de, bir Windows Masaüstü projesi oluşturmak için](#create-in-vs2017-rtm).
+Windows masaüstü uygulaması için bir çalışma kodu girin ve ilk Windows Masaüstü projenizi oluşturmak için aşağıdaki adımları izleyin. Bu sayfanın sol üst sürüm Seçici, kullandığınız Visual Studio'nun doğru sürümüne ayarlandığından emin olun.
 
-### <a name="to-create-a-windows-desktop-project-in-visual-studio-2017-update-153-and-later"></a>Visual Studio 2017 güncelleştirme 15.3 ve daha sonra Windows Masaüstü proje oluşturmak için
+::: moniker range="vs-2019"
+
+### <a name="to-create-a-windows-desktop-project-in-visual-studio-2019"></a>Visual Studio 2019 içinde bir Windows Masaüstü projesi oluşturmak için
+
+1. Ana menüden **dosya** > **yeni** > **proje** açmak için **yeni bir proje oluşturma** iletişim bir kutu.
+
+1. İletişim kutusunun üstündeki ayarlamak **dil** için **C++** ayarlayın **Platform** için **Windows**, ayarlayıp **proje türü** için **Masaüstü**. 
+
+1. Filtrelenmiş proje türleri listesinden seçim **Windows Masaüstü Sihirbazı'nı** ardından **sonraki**. Sonraki sayfada, proje için bir ad girin ve istenen proje konumu belirtin.
+
+1. Seçin **Oluştur** projeyi oluşturmak için.
+
+1. **Windows Masaüstü projesi** iletişim kutusu görünür. Altında **uygulama türü**seçin **Windows uygulaması (.exe)**. Altında **ek seçenekler**seçin **boş proje**. Seçin **Tamam** projeyi oluşturmak için.
+
+1. İçinde **Çözüm Gezgini**, sağ **DesktopApp** projesinin **Ekle**ve ardından **yeni öğe**.
+
+   ![DesktopApp projesine yeni öğe Ekle](../build/media/desktop-app-project-add-new-item-153.gif "DesktopApp projesine yeni öğe Ekle")
+
+1. İçinde **Yeni Öğe Ekle** iletişim kutusunda **C++ dosyası (.cpp)**. İçinde **adı** kutusuna, dosya için bir ad yazın örneğin, *HelloWindowsDesktop.cpp*. Seçin **ekleme**.
+
+   ![DesktopApp projesine Ekle .cpp dosyası](../build/media/desktop-app-add-cpp-file-153.png "DesktopApp projesine Ekle .cpp dosyası")
+
+Projeniz oluşturuldu ve kaynak dosyanızı Düzenleyicisi'nde açılır. Devam etmek için İleri atlayabilirsiniz [kod oluşturma](#create-the-code).
+
+::: moniker-end
+
+::: moniker range="vs-2017"
+
+### <a name="to-create-a-windows-desktop-project-in-visual-studio-2017"></a>Visual Studio 2017'de bir Windows Masaüstü projesi oluşturmak için
 
 1. Üzerinde **dosya** menüsünde seçin **yeni** seçip **proje**.
 
@@ -62,7 +90,11 @@ Windows masaüstü uygulaması için bir çalışma kodu girin ve ilk Windows Ma
 
 Projeniz oluşturuldu ve kaynak dosyanızı Düzenleyicisi'nde açılır. Devam etmek için İleri atlayabilirsiniz [kod oluşturma](#create-the-code).
 
-### <a id="create-in-vs2017-rtm"></a> Visual Studio 2017 RTM'de, bir Windows Masaüstü projesi oluşturmak için
+::: moniker-end
+
+::: moniker range="vs-2015"
+
+### <a name="to-create-a-windows-desktop-project-in-visual-studio-2015"></a>Visual Studio 2015'te bir Windows Masaüstü projesi oluşturmak için
 
 1. Üzerinde **dosya** menüsünde seçin **yeni** seçip **proje**.
 
@@ -89,6 +121,8 @@ Projeniz oluşturuldu ve kaynak dosyanızı Düzenleyicisi'nde açılır. Devam 
    ![DesktopApp projesine Ekle .cpp dosyası](../build/media/desktop-app-add-cpp-file-150.png "DesktopApp projesine Ekle .cpp dosyası")
 
 Projeniz oluşturuldu ve kaynak dosyanızı Düzenleyicisi'nde açılır.
+
+::: moniker-end
 
 ## <a name="create-the-code"></a>Kod oluşturma
 

@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2084
 ms.assetid: 990b107f-3721-4851-ae8b-4b69a8c149ed
-ms.openlocfilehash: 9aaf3a88e63234dfb842e4b48afd6e55595e96ca
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 0f7e049bc3f96e0a8e2b0a8cd306afeff52f7a5f
+ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62391926"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "65447333"
 ---
 # <a name="compiler-error-c2084"></a>Derleyici Hatası C2084
 
@@ -19,7 +19,7 @@ ms.locfileid: "62391926"
 
 İşlev zaten tanımlandı.
 
-Visual Studio 2002 önce Visual C++ sürümlerinde
+Visual Studio 2002 önce
 
 - Derleyici, ek tanımları hiçbir zaman kullanılabilir olacak olsa da aynı gerçek türüne çözümlenen birden fazla şablon uzmanlıkları kabul eder. Derleyici artık bu birden çok tanımları algılar.
 

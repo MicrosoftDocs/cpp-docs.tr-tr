@@ -1,6 +1,6 @@
 ---
 title: IEEE Kayan Noktası Temsili
-ms.date: 11/04/2016
+ms.date: 05/06/2019
 helpviewer_keywords:
 - float keyword
 - real*8 value
@@ -11,16 +11,16 @@ helpviewer_keywords:
 - long double
 - real*4 value
 ms.assetid: 537833e8-fe05-49fc-8169-55fd0314b195
-ms.openlocfilehash: 69686e7e1c8994b799607eebf7e50387ed688272
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 130a79ae6846df27ffabfd6cb6649e0a0de03e4b
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62188840"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65220628"
 ---
 # <a name="ieee-floating-point-representation"></a>IEEE Kayan Noktası Temsili
 
-Microsoft Visual C++ IEEE sayısal standartları ile uyumludur. Standart IEEE 754 kayan nokta biçimleri, donanım gerçek sayıları temsil etmek için bir yol açıklar. MSVC derleyici tarafından hedeflenen donanımda gösterilebilir bir kayan noktalı sayılar için en az beş iç biçimleri vardır, ancak derleyicinin yalnızca iki tanesi kullanır. *Tek duyarlıklı* (4-bayt) ve *çift duyarlıklı* biçimleri (8 bayt), Visual C++'da kullanılır. Tek duyarlıklı anahtar sözcüğü kullanılarak bildirilen **float**. Çift duyarlıklı anahtar sözcüğü kullanılarak bildirilen **çift**. IEEE standardı ayrıca belirtir *yarı çift duyarlıklı* (2 baytlık) ve *dört duyarlıklı* (16 baytlık) biçimleri yanı sıra bir *çift genişletilmiş duyarlık* (10 bayt) Bazı C ve C++ Derleyicileri olarak uygulayan bir biçim **uzun çift** veri türü. MSVC derleyicisi, **uzun çift** veri türü farklı bir tür kabul edilir, ancak depolama türü eşleyen **çift**. Yoktur, ancak, iç ve derleme dili desteği genişletilmiş-duyarlıklı (10 bayt) biçimi de dahil olmak üzere diğer biçimlerini kullanarak hesaplamalar için donanım tarafından desteklenen burada.
+Microsoft C++ (MSVC) IEEE sayısal standartları ile tutarlıdır. Standart IEEE 754 kayan nokta biçimleri, donanım gerçek sayıları temsil etmek için bir yol açıklar. MSVC derleyici tarafından hedeflenen donanımda gösterilebilir bir kayan noktalı sayılar için en az beş iç biçimleri vardır, ancak derleyicinin yalnızca iki tanesi kullanır. *Tek duyarlıklı* (4-bayt) ve *çift duyarlıklı* (8 bayt) biçimleri MSVC içinde kullanılır. Tek duyarlıklı anahtar sözcüğü kullanılarak bildirilen **float**. Çift duyarlıklı anahtar sözcüğü kullanılarak bildirilen **çift**. IEEE standardı ayrıca belirtir *yarı çift duyarlıklı* (2 baytlık) ve *dört duyarlıklı* (16 baytlık) biçimleri yanı sıra bir *çift genişletilmiş duyarlık* (10 bayt) Bazı C ve C++ Derleyicileri olarak uygulayan bir biçim **uzun çift** veri türü. MSVC derleyicisi, **uzun çift** veri türü farklı bir tür kabul edilir, ancak depolama türü eşleyen **çift**. Yoktur, ancak, iç ve derleme dili desteği genişletilmiş-duyarlıklı (10 bayt) biçimi de dahil olmak üzere diğer biçimlerini kullanarak hesaplamalar için donanım tarafından desteklenen burada.
 
 Değerleri şu şekilde depolanır:
 

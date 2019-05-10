@@ -5,12 +5,12 @@ f1_keywords:
 - LNK2038
 helpviewer_keywords:
 - LNK2038
-ms.openlocfilehash: a22b31f1ac3226271ed7ff03b5be7dad7fff6b93
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f2839494232e7b57325b6f7abb960a258ba13078
+ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62298873"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "65446960"
 ---
 # <a name="linker-tools-error-lnk2038"></a>Bağlayıcı Araçları Hatası LNK2038
 
@@ -24,9 +24,9 @@ Bu hata, projenizde bir nesne dosyası güncel olmadığında oluşabilir. Bu ha
 
 Visual Studio, çalışma zamanı hataları veya diğer beklenmeyen davranışlara neden olabilir. uyumsuz kod bağlanmasını önlemek için aşağıdaki simgeleri tanımlar.
 
-- `_MSC_VER` Bir uygulama veya kitaplık oluşturmak için kullanılan Visual C++ derleyicisi birincil ve ikincil sürüm numaralarını belirtir. Visual C++ derleyicisinin bir sürümünü kullanarak derlenmiş kod, farklı büyük ve küçük sürüm numaralarına sahip bir sürüm kullanarak derlenmiş kod ile uyumlu değil. Daha fazla bilgi için `_MSC_VER` içinde [önceden tanımlanmış makrolar](../../preprocessor/predefined-macros.md).
+- `_MSC_VER` Microsoft birincil ve ikincil sürüm numaralarını belirtir C++ (MSVC) derleyici bir uygulama veya kitaplık oluşturmak için kullanılır. MSVC bir sürümünü kullanarak derlenmiş kod, farklı büyük ve küçük sürüm numaralarına sahip bir sürüm kullanarak derlenmiş kod ile uyumlu değil. Daha fazla bilgi için `_MSC_VER` içinde [önceden tanımlanmış makrolar](../../preprocessor/predefined-macros.md).
 
-   Kullanmakta olduğunuz ve alamıyor veya kitaplığın uyumlu bir sürümünü oluşturmak Visual C++ Derleyici sürümü ile uyumlu olmayan bir kitaplığa bağlıyorsanız, projenizi yapılandırmak için derleyicinin önceki bir sürümünü kullanabilirsiniz: değiştirme **Platform araç takımını** önceki araç takımı proje özelliği. Daha fazla bilgi için [nasıl yapılır: Hedef Framework ve Platform araç kümesini değiştirme](../../build/how-to-modify-the-target-framework-and-platform-toolset.md).
+   Kullanmakta olduğunuz ve alamıyor veya kitaplığın uyumlu bir sürümünü oluşturmak MSVC sürümü ile uyumlu olmayan bir kitaplığa bağlıyorsanız, projenizi yapılandırmak için derleyicinin önceki bir sürümünü kullanabilirsiniz: değiştirmek  **Platform araç takımını** önceki araç takımı proje özelliği. Daha fazla bilgi için [nasıl yapılır: Hedef Framework ve Platform araç kümesini değiştirme](../../build/how-to-modify-the-target-framework-and-platform-toolset.md).
 
 - `_ITERATOR_DEBUG_LEVEL` Güvenlik ve C++ Standart kitaplığında etkin özelliklerin hata ayıklama düzeyini gösterir. Bu özellikler belirli C++ Standart Kitaplığı nesnelerinin gösterimini değiştirebilir ve böylece onları uyumsuz bu kullanım farklı güvenlik ve hata ayıklama özellikleri yapın. Daha fazla bilgi için [_ıterator_debug_level](../../standard-library/iterator-debug-level.md).
 

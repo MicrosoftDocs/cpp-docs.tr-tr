@@ -1,14 +1,14 @@
 ---
 title: Tür Dönüştürmeleri ve Tür Güvenliği (Modern C++)
-ms.date: 11/04/2016
+ms.date: 05/07/2019
 ms.topic: conceptual
 ms.assetid: 629b361a-2ce1-4700-8b5d-ab4f57b245d5
-ms.openlocfilehash: 79285e4870b73ff01ed3b230a0162f87c0400aa8
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e06ea3f9c3ea427f205764c35988ea3316c3794a
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62404695"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65221857"
 ---
 # <a name="type-conversions-and-type-safety-modern-c"></a>Tür Dönüştürmeleri ve Tür Güvenliği (Modern C++)
 
@@ -84,7 +84,7 @@ Derleyici, işaretli ve işaretsiz integral türleri arasında örtük dönüşt
 
 ### <a name="pointer-conversions"></a>İşaretçi dönüşümleri
 
-Birçok ifadelerde dizideki ilk öğe işaretçisi için bir C tarzı dizi örtük olarak dönüştürülür ve sabit dönüştürmeler sessizce oluşabilir. Bu kullanışlı olsa da büyük olasılıkla hata yapmaya açık. Örneğin, aşağıdaki kötü tasarlanmış bir kod örneği nonsensical gibi görünüyor ve henüz Visual c++'ta derlenir ve 'p' bir sonuç üretir. "Yardım" dize sabit hazır değer için ilk olarak, dönüştürülen bir `char*` dizisinin ilk öğesine işaret eder; böylece onu artık son öğesi 'p' işaret işaretçiyle ardından üç öğe tarafından artırılır.
+Birçok ifadelerde dizideki ilk öğe işaretçisi için bir C tarzı dizi örtük olarak dönüştürülür ve sabit dönüştürmeler sessizce oluşabilir. Bu kullanışlı olsa da büyük olasılıkla hata yapmaya açık. Örneğin, aşağıdaki kötü tasarlanmış bir kod örneği nonsensical gibi görünüyor ve henüz derlenir ve 'p' bir sonuç üretir. "Yardım" dize sabit hazır değer için ilk olarak, dönüştürülen bir `char*` dizisinin ilk öğesine işaret eder; böylece onu artık son öğesi 'p' işaret işaretçiyle ardından üç öğe tarafından artırılır.
 
 ```cpp
 char* s = "Help" + 3;

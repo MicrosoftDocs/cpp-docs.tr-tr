@@ -2,7 +2,7 @@
 title: Komut satırından - Visual Studio MSVC araç takımı kullanın
 description: Visual Studio IDE dışında komut satırından Microsoft C++ Derleyici araç zincirini (MSVC) kullanın.
 ms.custom: conceptual
-ms.date: 12/10/2018
+ms.date: 04/25/2019
 helpviewer_keywords:
 - command-line builds [C++]
 - compiling source code [C++], command line
@@ -10,16 +10,16 @@ helpviewer_keywords:
 - command line [C++], building from
 - command line [C++], compilers
 ms.assetid: 7ca9daed-a003-4162-842d-908f79058365
-ms.openlocfilehash: 21d1c9063a1d6dd154de8d2caca913ea3fd0ce37
-ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
-ms.translationtype: HT
+ms.openlocfilehash: 5f9ac1e4753fdba412af26bcc45022dee354cacf
+ms.sourcegitcommit: 18d3b1e9cdb4fc3a76f7a650c31994bdbd2bde64
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "64342163"
+ms.lasthandoff: 04/29/2019
+ms.locfileid: "64877146"
 ---
 # <a name="use-the-msvc-toolset-from-the-command-line"></a>Komut satırından MSVC araç takımı kullanın
 
-Visual Studio'da bulunan araçları kullanarak, komut satırında C ve C++ uygulamaları oluşturabilirsiniz. Tek başına paket olarak derleyici araç takımı indirebilirsiniz [Visual Studio 2017 için derleme Araçları](https://go.microsoft.com/fwlink/p/?linkid=875721).
+Visual Studio'da bulunan araçları kullanarak, komut satırında C ve C++ uygulamaları oluşturabilirsiniz. Tek başına paket olarak derleyici araç takımı indirebilirsiniz [Visual Studio indirmeleri](https://visualstudio.microsoft.com/downloads/) sayfası. Parçası olan **Visual Studio derleme Araçları** paketini; yalnızca için ihtiyacınız olan araçları indirin seçtiğiniz C++ geliştirme.
 
 ## <a name="how-to-use-the-command-line-tools"></a>Komut satırı araçlarını kullanma
 
@@ -43,13 +43,11 @@ Komut istemi kısayolları, Başlat menüsü bir sürüme özgü Visual Studio k
 - **x86_x64 çapraz Araçları Komut İstemi** -64-bit, x64 yerel kod oluşturmak için 32-bit, yerel x86 araçları kullanacak şekilde ortamı ayarlar.
 - **x64_x86 çapraz Araçları Komut İstemi** -32-bit, x86 yerel kod oluşturmak için 64-bit, yerel x64 araçları kullanacak şekilde ortamı ayarlar.
 
-Ayarladıysanız gerçek başlangıç menüsünde klasörü ve kısayol adları, yüklediğiniz Visual Studio sürümü ve yükleme takma adı bağlı olarak farklılık gösterir. Örneğin, Visual Studio 2017 varsa ve sizin için göre bir yükleme Takmaad *Önizleme*, geliştirici komut istemi kısayolunun adlı **(Önizleme)VS2017içingeliştiricikomutistemi**, adlı bir klasörde **Visual Studio 2017**.
-
-Uygulamasını yüklediyseniz [Visual Studio 2017 için derleme Araçları](https://go.microsoft.com/fwlink/p/?linkid=875721) (da içeren Visual Studio 2015 güncelleştirme 3'ü derleyici araç takımı), yalnızca mimariye özgü yerel ve çapraz Araçlar seçenekleri yüklü Geliştirici komut istemi ve genel **Geliştirici komut istemi** kısayol.
+Ayarladıysanız gerçek başlangıç menüsünde klasörü ve kısayol adları, yüklediğiniz Visual Studio sürümü ve yükleme takma adı bağlı olarak farklılık gösterir. Örneğin, Visual Studio 2017 varsa ve sizin için göre bir yükleme Takmaad *Önizleme*, geliştirici komut istemi kısayolunun adlı **VS 2019 için geliştirici komut istemi**, bir adlı bir klasör **Visual Studio 2019**.
 
 ## <a name="developer_command_prompt"></a> Bir geliştirici komut istemi penceresi açmak için
 
-1. Windows masaüstünde, açık **Başlat** menü ve örneğin, Visual Studio sürümünüz için klasörü açın, sonra kaydırma **Visual Studio 2017**. Visual Studio bazı eski sürümlerinde adlı alt klasörde kısayollarıdır **Visual Studio Araçları**.
+1. Windows masaüstünde, açık **Başlat** menü ve örneğin, Visual Studio sürümünüz için klasörü açın, sonra kaydırma **Visual Studio 2019**. Visual Studio bazı eski sürümlerinde adlı alt klasörde kısayollarıdır **Visual Studio Araçları**.
 
 1. Klasörde seçin **Geliştirici komut istemi** Visual Studio sürümünüz için. Bu kısayol, 32-bit, x86 yerel kod oluşturmak için 32-bit, x86 yerel Araçlar Varsayılan yapı mimarisi kullanan bir geliştirici komut istemi penceresi başlatılır. Varsayılan olmayan derleme mimarisi tercih ederseniz, yerel birini seçin veya çapraz Araçları komut istemleri, konak ve hedef mimari belirtmek için.
 
@@ -57,11 +55,11 @@ Bir geliştirici komut istemi penceresi açmak için daha hızlı bir şekilde g
 
 ## <a name="developer_command_file_locations"></a> Geliştirici komut dosyası konumları
 
-Var olan bir komut istemi penceresinde yapı mimarisi ortamı ayarlamak isterseniz, bu komut dosyalarından birine (toplu iş dosyaları) yükleyici tarafından oluşturulan gerekli ortam ayarlamak için kullanabilirsiniz. Yalnızca önerilir bunun yeni bir komut istemi penceresinde ve, daha sonra anahtar ortamları aynı komut penceresinde önermiyoruz. Bu dosyaların konumunu, yüklediğiniz Visual Studio sürümünü ve konumunu ve yükleme sırasında yapılan adlandırma seçenekleri bağlıdır. Visual Studio 2017 için normal yükleme bir 64 bit bilgisayarda \Program dosyaları (x86) \Microsoft Visual Studio\2017 içinde konumdur\\*edition*burada *edition* topluluk olabilir Professional, Enterprise, BuildTools veya belirttiğiniz başka bir ad. Visual Studio 2015 için \Program dosyaları (x86) \Microsoft Visual Studio 14.0 Normal Yükleme konumdur.
+Var olan bir komut istemi penceresinde yapı mimarisi ortamı ayarlamak isterseniz, bu komut dosyalarından birine (toplu iş dosyaları) yükleyici tarafından oluşturulan gerekli ortam ayarlamak için kullanabilirsiniz. Yalnızca önerilir bunun yeni bir komut istemi penceresinde ve, daha sonra anahtar ortamları aynı komut penceresinde önermiyoruz. Bu dosyaların konumunu, yüklediğiniz Visual Studio sürümünü ve konumunu ve yükleme sırasında yapılan adlandırma seçenekleri bağlıdır. Visual Studio 2019 için normal yükleme bir 64 bit bilgisayarda \Program dosyaları (x86) \Microsoft Visual Studio\2019 içinde konumdur\\*edition*burada *edition* topluluk olabilir Professional, Enterprise, BuildTools veya belirttiğiniz başka bir ad. Visual Studio 2017 konumu benzerdir. Visual Studio 2015 için \Program dosyaları (x86) \Microsoft Visual Studio 14.0 Normal Yükleme konumdur.
 
 Birincil geliştirici komut istemi komut dosyası VsDevCmd.bat, Common7\Tools alt yükleme dizininde bulunur. Parametre belirtilmezse, bu ortam ayarlar ve 32-bit x86 oluşturmak için 32-bit x86 yerel araçlarını kullanmayı mimarisi konak ve hedef derleme kodu.
 
-İşlemci mimariniz ve Visual Studio iş yükleri, yüklemiş olduğunuz seçeneklerle bağlı olarak belirli bir derleme mimarileri ayarlamak ek komut dosyaları bulunmaktadır. Visual Studio 2017'de, bu Visual Studio yükleme dizini VC\Auxiliary\Build alt dizininde yer alır. Visual Studio 2015'te bu VC, VC\bin veya VC\bin bulunan\\*mimarileri* yükleme dizininin alt dizinleri burada *mimarileri* yerel biri veya çapraz derleyici seçenekleri. Bu komut dosyaları varsayılan parametreleri ayarlama ve belirtilen yapı mimarisi ortamı ayarlamak için VsDevCmd.bat çağırın. Tipik bir yükleme, bu komut dosyaları şunları içerebilir:
+İşlemci mimariniz ve Visual Studio iş yükleri, yüklemiş olduğunuz seçeneklerle bağlı olarak belirli bir derleme mimarileri ayarlamak ek komut dosyaları bulunmaktadır. Visual Studio 2017 ve Visual Studio 2019'de, bu Visual Studio yükleme dizini VC\Auxiliary\Build alt dizininde yer alır. Visual Studio 2015'te bu VC, VC\bin veya VC\bin bulunan\\*mimarileri* yükleme dizininin alt dizinleri burada *mimarileri* yerel biri veya çapraz derleyici seçenekleri. Bu komut dosyaları varsayılan parametreleri ayarlama ve belirtilen yapı mimarisi ortamı ayarlamak için VsDevCmd.bat çağırın. Tipik bir yükleme, bu komut dosyaları şunları içerebilir:
 
 |Komut dosyası|Konak ve hedef mimariler|
 |---|---|
@@ -107,28 +105,28 @@ Bu isteğe bağlı bağımsız değişkeni belirtmenize olanak tanır **depolama
 İsteğe bağlı olarak kullanmak için Windows SDK'sı sürümünü belirtir. Varsayılan olarak, en son yüklenen Windows SDK'sı kullanılır. Windows SDK sürümünü belirtmek için tam bir Windows 10 SDK'sı sayı gibi kullanabilirsiniz **10.0.10240.0**, veya belirtin **8.1** Windows 8.1 SDK'sını kullanma.
 
 *vcversion*<br/>
-İsteğe bağlı olarak kullanmak için Visual Studio derleyici araç setini belirtir. Varsayılan olarak, ortam, geçerli Visual Studio 2017 derleyici Araç Takımı'nı kullanmak için ayarlanır. Kullanım **-vcvars_ver 14.0 =** Visual Studio 2015 derleyici araç setini belirtmek için.
+İsteğe bağlı olarak kullanmak için Visual Studio derleyici araç setini belirtir. Varsayılan olarak, ortam, geçerli Visual Studio derleyici Araç Takımı'nı kullanmak için ayarlanır. Kullanım **-vcvars_ver 14.0 =** Visual Studio 2015 derleyici araç setini belirtmek için veya **-vcvars_ver 15.0 =** Visual Studio 2017 derleyici araç setini belirtmek için.
 
 <a name="vcvarsall"></a>
 #### <a name="to-set-up-the-build-environment-in-an-existing-command-prompt-window"></a>Var olan bir komut istemi penceresinde yapı ortamı ayarlamak için
 
-1. Komut isteminde için Visual Studio yükleme dizini değiştirmek için CD komutunu kullanın. Ardından, CD, özel yapılandırma komut dosyaları içeren alt dizinine değiştirmek için yeniden kullanın. Visual Studio 2017 için VC\Auxiliary\Build alt budur. Visual Studio 2015 için VC alt kullanın.
+1. Komut isteminde için Visual Studio yükleme dizini değiştirmek için CD komutunu kullanın. Ardından, CD, özel yapılandırma komut dosyaları içeren alt dizinine değiştirmek için yeniden kullanın. Visual Studio 2017 ve 2019 için VC\Auxiliary\Build alt budur. Visual Studio 2015 için VC alt kullanın.
 
-1. Tercih edilen geliştirme ortamınız için komutu girin. Örneğin, bir 64-bit platformda UWP için en son Windows SDK'sını ve Visual Studio 2017 RTM derleyici araç setini kullanarak ARM kodu oluşturmak için bu komut satırını kullanın:
+1. Tercih edilen geliştirme ortamınız için komutu girin. Örneğin, bir 64-bit platformda UWP için en son Windows SDK'sını ve Visual Studio 2019 derleyici araç setini kullanarak ARM kodu oluşturmak için bu komut satırını kullanın:
 
-   `vcvarsall.bat amd64_arm uwp -vcvars_ver=14.10`
+   `vcvarsall.bat amd64_arm uwp`
 
 ## <a name="create-your-own-command-prompt-shortcut"></a>Kendi komut istemi kısayolunun oluşturma
 
-Var olan Geliştirici komut istemi kısayolları biri için Özellikler iletişim kutusunu açın, kullanılan komut hedefi görebilirsiniz. Örneğin, hedef **x64 VS 2017 için yerel Araçlar komut istemi** kısayoldur aşağıdakine benzer:
+Var olan Geliştirici komut istemi kısayolları biri için Özellikler iletişim kutusunu açın, kullanılan komut hedefi görebilirsiniz. Örneğin, hedef **x64 yerel Araçlar komut istemi için VS 2019** kısayoldur aşağıdakine benzer:
 
-`%comspec% /k "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Auxiliary\Build\vcvars64.bat"`
+`%comspec% /k "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Auxiliary\Build\vcvars64.bat"`
 
-Mimariye özgü toplu iş dosyaları kümesi *mimarisi* parametresi ve çağrı vcvarsall.bat. Bu toplu iş dosyaları için aynı ek seçenekler için vcvarsall.bat geçecekse veya yalnızca vcvarsall.bat doğrudan çağırabilir geçirebilirsiniz. Kendi komut kısayol parametrelerini belirtmek için çift tırnak içinde komut sonuna ekleyin. Örneğin, bir 64-bit platformda UWP için en son Windows SDK'sını ve Visual Studio 2017 RTM derleyici araç setini kullanarak ARM Kodu derlemek için bir kısayol ayarlamak için bu komut hedefi gibi içinde kısayolu kullanın:
+Mimariye özgü toplu iş dosyaları kümesi *mimarisi* parametresi ve çağrı vcvarsall.bat. Bu toplu iş dosyaları için aynı ek seçenekler için vcvarsall.bat geçecekse veya yalnızca vcvarsall.bat doğrudan çağırabilir geçirebilirsiniz. Kendi komut kısayol parametrelerini belirtmek için çift tırnak içinde komut sonuna ekleyin. Örneğin, bir 64-bit platformda UWP için en son Windows SDK'sı ve geçerli sürümden daha eski bir derleyici araç setini kullanarak ARM Kodu derlemek için bir kısayol ayarlamak için sürüm numarasını belirtmeniz gerekir. Bu komut hedefi gibi kısayolu kullanın:
 
-`%comspec% /k "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Auxiliary\Build\vcvarsall.bat amd64_arm uwp -vcvars_ver=14.10"`
+`%comspec% /k "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Auxiliary\Build\vcvarsall.bat amd64_arm uwp -vcvars_ver=15.0"`
 
-Yol, Visual Studio yükleme dizini yansıtacak şekilde ayarlamanız gerekir.
+Yol, Visual Studio yükleme dizini yansıtacak şekilde ayarlamanız gerekir. Vcvarsall.bat dosyası belirli sürüm numaraları ilgili ek bilgiler bulunur.
 
 ## <a name="command-line-tools"></a>Komut satırı araçları
 

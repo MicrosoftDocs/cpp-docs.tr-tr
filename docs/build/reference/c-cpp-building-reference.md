@@ -1,23 +1,23 @@
 ---
 title: C/C++ oluşturma başvurusu - Visual Studio
 description: Visual Studio'da C/C++ proje sistemi ve derleme araçları için başvuru içeriği.
-ms.date: 12/10/2018
+ms.date: 05/06/2019
 helpviewer_keywords:
 - compiling source code [C++], additional information
 - cl.exe compiler [C++], building programs
 - linker [C++], building reference
 - builds [C++], additional information
 ms.assetid: 100b4ccf-572c-4d1f-970c-fa0bc0cc0d2d
-ms.openlocfilehash: 4c3f7aa598a9c43af04c148ed0d4b3f555566ec7
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: abe946ce516e915cd597a0f863c5949fed212bfa
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62294765"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65221447"
 ---
 # <a name="cc-building-reference"></a>C/C++ Oluşturma Başvurusu
 
-Visual C++, C/C++ programı oluşturma iki yolu sağlar. En kolay (ve yaygın) yolu [Visual Studio IDE içinden derleme](../creating-and-managing-visual-cpp-projects.md). Diğer yol ise [derleme komut satırı araçlarını kullanarak bir komut isteminden](../building-on-the-command-line.md). Her iki durumda da oluşturabilir ve kaynak dosyalarınızı Visual Studio veya seçtiğiniz üçüncü taraf bir düzenleyiciyi kullanarak düzenleyin.
+Visual Studio C oluşturmanın iki yolu sağlar /C++ program. En kolay (ve yaygın) yolu [Visual Studio IDE içinden derleme](../creating-and-managing-visual-cpp-projects.md). Diğer yol ise [derleme komut satırı araçlarını kullanarak bir komut isteminden](../building-on-the-command-line.md). Her iki durumda da oluşturabilir ve kaynak dosyalarınızı Visual Studio veya seçtiğiniz üçüncü taraf bir düzenleyiciyi kullanarak düzenleyin.
 
 ## <a name="in-this-section"></a>Bu Bölümde
 

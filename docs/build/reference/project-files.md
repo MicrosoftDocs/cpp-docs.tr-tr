@@ -5,16 +5,16 @@ helpviewer_keywords:
 - .vcxproj files
 - C++ projects, project file format
 ms.assetid: 5261cf45-3136-40a6-899e-dc1339551401
-ms.openlocfilehash: cfe40d6520187212ab77607273c555f12012fd02
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 306b6a7b39db758c3712b1d57460268fc6414726
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62319830"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65217736"
 ---
 # <a name="project-files"></a>Proje Dosyaları
 
-Visual C++ proje dosyası .vcxproj dosya adı uzantısına sahiptir ve Visual C++ projesi oluşturmak için gereken bilgileri içeren bir XML tabanlı bir dosyadır. Proje dosyasının uzantısına sahip çeşitli proje dosyalarını içeri aktarır Not *.props* veya *.targets*. Bu dosyalar ek yapı bilgisi içerir ve kendilerini diğer başvurabilir *.props* veya *.targets* dosyaları. Dosya yolu içindeki makrolar (örneğin `$(VCTargetsPath)`) Visual Studio yüklemenizin bağımlıdır. Bu makrolar hakkında daha fazla bilgi ve *.props* ve *.targets* dosyaları görmek [VC ++ Directories Property Page](vcpp-directories-property-page.md), [ayarlamak C++ derleyicisi ve derleme Visual Studio özelliklerinde](../working-with-project-properties.md) ve [derleme komutları ve özellikler için ortak makroları](common-macros-for-build-commands-and-properties.md).
+A C++ Visual Studio'da proje dosyası .vcxproj dosya adı uzantısına sahiptir ve oluşturmak için gereken bilgileri içeren bir XML tabanlı bir dosya olan bir C++ proje. Proje dosyasının uzantısına sahip çeşitli proje dosyalarını içeri aktarır Not *.props* veya *.targets*. Bu dosyalar ek yapı bilgisi içerir ve kendilerini diğer başvurabilir *.props* veya *.targets* dosyaları. Dosya yolu içindeki makrolar (örneğin `$(VCTargetsPath)`) Visual Studio yüklemenizin bağımlıdır. Bu makrolar hakkında daha fazla bilgi ve *.props* ve *.targets* dosyaları görmek [VC ++ Directories Property Page](vcpp-directories-property-page.md), [ayarlamak C++ derleyicisi ve derleme Visual Studio özelliklerinde](../working-with-project-properties.md) ve [derleme komutları ve özellikler için ortak makroları](common-macros-for-build-commands-and-properties.md).
 
 ## <a name="example"></a>Örnek
 

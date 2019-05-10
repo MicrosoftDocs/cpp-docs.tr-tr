@@ -25,12 +25,12 @@ helpviewer_keywords:
 - Clean Build option
 - output files, setting directory
 - Unicode, creating C++ build configuration
-ms.openlocfilehash: c9b0eae9c0a1e074fb4f3f12ac38a737ef14c644
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e6d418c1668a0757349c7e5c3bb38f7cda801223
+ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62270906"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "65446569"
 ---
 # <a name="general-property-page-project"></a>Genel Özellik Sayfası (Proje)
 
@@ -98,7 +98,7 @@ Genel bölümündeki özellikler yapı işlemi sırasında oluşturulan ve hangi
 
 - **Platform araç takımı**
 
-   Visual C++ kitaplıklarının ve derleyicinin farklı bir sürümü hedeflemek projeye izin verir. Visual C++ projelerini Visual Studio veya Windowx XP'de çalışabilen yürütülebilir dosyalar oluşturan araç takımları dahil olmak üzere Visual Studio birkaç önceki sürümü yüklüdür araç takımları biri tarafından yüklenen varsayılan araç hedefleyebilirsiniz. Platform araç kümesini değiştirme hakkında daha fazla bilgi için bkz: [nasıl yapılır: Hedef Framework ve Platform araç kümesini değiştirme](../how-to-modify-the-target-framework-and-platform-toolset.md).
+   Visual C++ kitaplıklarının ve derleyicinin farklı bir sürümü hedeflemek projeye izin verir. Visual Studio C++ projeleri, Visual Studio veya Windowx XP'de çalışabilen yürütülebilir dosyalar oluşturan araç takımları dahil olmak üzere Visual Studio birkaç önceki sürümü yüklüdür araç takımları biri tarafından yüklenen varsayılan araç hedefleyebilir. Platform araç kümesini değiştirme hakkında daha fazla bilgi için bkz: [nasıl yapılır: Hedef Framework ve Platform araç kümesini değiştirme](../how-to-modify-the-target-framework-and-platform-toolset.md).
 
 - **Yönetilen Artımlı derlemeyi etkinleştir**
 

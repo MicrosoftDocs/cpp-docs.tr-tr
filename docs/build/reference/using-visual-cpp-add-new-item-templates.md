@@ -1,24 +1,24 @@
 ---
 title: Visual C++ Yeni Öğe Ekle Şablonlarını Kullanma
-ms.date: 11/04/2016
+ms.date: 05/06/2019
 helpviewer_keywords:
 - Add New Item
 - Add New Item templates
 - Add New Item command
 - templates, Add New Item
 ms.assetid: 286d1be6-0473-407f-9a51-437dff1bfab7
-ms.openlocfilehash: afa6f7e3a1e3a6ac293a23fc18ecd0834d70555f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e6ef78d1a43bc649a31b715afd4ce1d44f25a8c6
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62317152"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65217767"
 ---
 # <a name="using-visual-c-add-new-item-templates"></a>Visual C++ Yeni Öğe Ekle Şablonlarını Kullanma
 
-Kullanarak Visual C++ projeleri için ortak olan öğeleri kolayca ekleyebileceğiniz **Yeni Öğe Ekle** komutu. Kullanırken **Yeni Öğe Ekle** komutu `Add New Item` , uygun dosyaları projenize ekleyin ve öğe şablonları listesi ile iletişim kutusu görüntülenir.
+Kullanarak Visual Studio projeleri için ortak olan öğeleri kolayca ekleyebileceğiniz **Yeni Öğe Ekle** komutu. Kullanırken **Yeni Öğe Ekle** komutu `Add New Item` , uygun dosyaları projenize ekleyin ve öğe şablonları listesi ile iletişim kutusu görüntülenir.
 
-Aşağıdaki tabloda, Visual C++ Yeni Öğe Ekle şablonları, alfabetik bir listesidir.
+Aşağıdaki tabloda, Visual Studio yeni öğe Ekle şablonları, alfabetik bir listesidir.
 
 |Şablon|Açıklama|
 |--------------|-----------------|
@@ -38,7 +38,7 @@ Aşağıdaki tabloda, Visual C++ Yeni Öğe Ekle şablonları, alfabetik bir lis
 |Yükleyici sınıfı|Öğesinden devralınan bir sınıf ekler <xref:System.Configuration.Install.Installer> CLR özelliklerini kullanma.|
 |MIDL dosyası (.idl)|Bir arabirim tanımlama dili dosyası oluşturur.|
 |Modül tanım dosyasını (.def)|DLL dışarı aktarma tanım dosyası oluşturur.|
-|Özellik sayfası (.props)|Visual C++ özellik sayfası dosyası oluşturur.|
+|Özellik sayfası (.props)|Bir özellik sayfası dosyası oluşturur.|
 |Kayıt betiği (.rgs)|Bir ATL kayıt betik dosyası oluşturur.|
 |Rapor (.rdlc)|Bir rapor dosyası oluşturur.|
 |Kaynak dosyası (.rc)|Bir Win32 kaynak dosyası oluşturur.|

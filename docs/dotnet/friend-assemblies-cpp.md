@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - friend assemblies, Visual C++
 ms.assetid: 8d55fee0-b7c2-4fbe-a23b-dfe424dc71cd
-ms.openlocfilehash: e469556a773ffcdbf50e53d94022c0b6b7abf869
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 05b9d8bcf5d7364e1dcd31940bc0db64a5e605f1
+ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62404435"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "65447310"
 ---
 # <a name="friend-assemblies-c"></a>Arkadaş Derlemeler (C++)
 
@@ -47,7 +47,7 @@ Ad alanı kapsamında ve genel kapsam türleri için bir istemci bütünleştiri
 
 Derlemedeki tüm türleri erişimi açıkça verilmesi gerekir.  Örneğin, derleme C erişimi tüm türleri için bir derlemede derleme B derleme C başvuruyor ve B derleme A'ya derlemede tüm türleri erişimi yok
 
-Oturum açma hakkında bilgi için — diğer bir deyişle, güçlü bir ad vermek nasıl — görsel kullanılarak oluşturulmuş bir derleme C++ derleyicisi bkz [tanımlayıcı ad derlemeleri (derleme imzalama) (C++/CLI)](../dotnet/strong-name-assemblies-assembly-signing-cpp-cli.md).
+Oturum açma hakkında bilgi — diğer bir deyişle, güçlü bir ad vermek nasıl — Microsoft kullanılarak oluşturulmuş bir derleme C++ derleyici, bakın [tanımlayıcı ad derlemeleri (derleme imzalama) (C++/CLI)](../dotnet/strong-name-assemblies-assembly-signing-cpp-cli.md).
 
 Arkadaş derlemeleri özelliğini kullanarak alternatif olarak, kullandığınız <xref:System.Security.Permissions.StrongNameIdentityPermission> tek tek türleri için erişimi kısıtlamak için.
 

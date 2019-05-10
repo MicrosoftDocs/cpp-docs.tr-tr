@@ -6,12 +6,12 @@ helpviewer_keywords:
 - testing projects
 - projects [C++], testing
 ms.assetid: 88cdd377-c5c8-4201-889d-32f5653ebead
-ms.openlocfilehash: aa1af9cd355265214827527b986b8602a25e93f3
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
-ms.translationtype: HT
+ms.openlocfilehash: 5ced3c4267f2c33869e18373c11ebf5e237d9485
+ms.sourcegitcommit: 283cb64fd7958a6b7fbf0cd8534de99ac8d408eb
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62349208"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "64857663"
 ---
 # <a name="walkthrough-testing-a-project-c"></a>İzlenecek yol: (C++) projeyi test etme
 

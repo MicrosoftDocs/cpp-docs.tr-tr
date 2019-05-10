@@ -9,12 +9,12 @@ helpviewer_keywords:
 - operators [C++], type of an expression
 - operators [C++], deduce expression type
 ms.assetid: 6dcf8888-8196-4f13-af50-51e3797255d4
-ms.openlocfilehash: 6c1c91aec7d974836b1ec031a1e8b38e8abb65ce
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 0a4e9eb015df056dfe2a35da18cfa50875ced432
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62399089"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65222462"
 ---
 # <a name="decltype--c"></a>decltype (C++)
 
@@ -38,7 +38,7 @@ Türünü *ifade* parametresi.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Decltype** türü belirticisi, Visual C++ 2010 veya sonraki sürümlerinde desteklenir ve yerel veya yönetilen kod ile kullanılabilir. `decltype(auto)` (c ++ 14) Visual Studio 2015 ve sonraki sürümlerde desteklenir.
+**Decltype** türü belirticisi, Visual Studio 2010 veya sonraki sürümlerinde desteklenir ve yerel veya yönetilen kod ile kullanılabilir. `decltype(auto)` (c ++ 14) Visual Studio 2015 ve sonraki sürümlerde desteklenir.
 
 Derleyici, türünü belirlemek için aşağıdaki kuralları kullanır. *ifade* parametresi.
 
@@ -204,6 +204,6 @@ static_assert(test2, "PASS2");
 
 ## <a name="requirements"></a>Gereksinimler
 
-Visual C++ 2010 veya sonraki sürümleri.
+Visual Studio 2010 veya sonraki sürümler.
 
 `decltype(auto)` Visual Studio 2015 veya sonraki bir sürümü gerektirir.

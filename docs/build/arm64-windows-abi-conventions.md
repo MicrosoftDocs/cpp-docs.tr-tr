@@ -1,12 +1,12 @@
 ---
 title: ARM64 ABI kurallarına genel bakış
 ms.date: 03/27/2019
-ms.openlocfilehash: 4c0f89f97529d4cd70e1449c90b131d25d30f9ee
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: bfb1b5b6be6a7a368c2ed7cab255da90ae7a22df
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62195515"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65220993"
 ---
 # <a name="overview-of-arm64-abi-conventions"></a>ARM64 ABI kurallarına genel bakış
 
@@ -50,6 +50,24 @@ Olarak ARM32 ile ARM64 Windows üzerinde Windows sürümünü endian modunda yü
 ARM64'te çalışan Windows yanlış hizalanmış erişimleri şeffaf bir şekilde işlemek CPU donanım sağlar. AArch32 gelen bir gelişme Bu destek şimdi de (birden çok sözcük erişim dahil) tüm tamsayı erişir ve kayan nokta erişimler için çalışır.
 
 Ancak, önbelleğe alınmamış (cihaz) bellek erişimlerinin yine de her zaman hizalanması gerekir. Kod büyük olasılıkla okuma veya önbelleğe alınmamış bellekten yanlış hizalanmış veri yazma, bu verilere sağlanan tüm erişimlerde hizalamak emin olmanız gerekir.
+
+Yerel öğeler için varsayılan düzen hizalama:
+
+| Bayt cinsinden boyutu | Bayt hizalama |
+| - | - |
+| 1. | 1. |
+| 2 | 2 |
+| 3, 4 | 4 |
+| > 4 | 8 |
+
+Globals ve statikler için varsayılan düzen hizalama:
+
+| Bayt cinsinden boyutu | Bayt hizalama |
+| - | - |
+| 1. | 1. |
+| 2 - 7 | 4 |
+| 8 - 63 | 8 |
+| >= 64 | 16 |
 
 ## <a name="integer-registers"></a>Tamsayı kaydeder
 
@@ -185,7 +203,9 @@ Etkili bir şekilde, aşağıdaki kurallar sanal yığın burada ilk 64 bayt yı
 
 Tamsayı değerleri x0 döndürülür.
 
-Kayan nokta değerleri d0/s0/v0 uygun olarak döndürülür.
+Kayan nokta değerleri s0, d0 veya v0, uygun olarak döndürülür.
+
+S0-s3, d0 d3 veya uygun şekilde v0-v3 HFA ve HVA değerleri döndürülür.
 
 Değeri tarafından döndürülen türleri belirli özellikleri olup olmamasına bağlı olarak farklı şekilde ele alınır. Tüm bu özelliklerin türleri
 

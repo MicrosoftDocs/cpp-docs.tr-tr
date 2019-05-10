@@ -1,17 +1,20 @@
 ---
 title: 'İzlenecek yol: Derleme bir C++komut satırında /CX programı'
-ms.date: 09/24/2018
+ms.date: 04/23/2019
 ms.assetid: 626f5544-69ed-4736-83a9-f11389b371b2
-ms.openlocfilehash: 099bef402d22abc12a31f105f63e5405c65a1d82
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: cbf5a48de3c029e36fc6daabe2b3f0db55dc173c
+ms.sourcegitcommit: 18d3b1e9cdb4fc3a76f7a650c31994bdbd2bde64
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62314032"
+ms.lasthandoff: 04/29/2019
+ms.locfileid: "64877174"
 ---
 # <a name="walkthrough-compiling-a-ccx-program-on-the-command-line"></a>İzlenecek yol: Derleme bir C++komut satırında /CX programı
 
-Windows çalışma zamanını hedefleyen ve onları komut satırında derleme Visual C++ programlar oluşturabilirsiniz. Görsel C++ Visual destekler C++ bileşen uzantıları (C++/CX), Windows çalışma zamanı programlama modeli hedeflemek için ek türleri ve işleçler sahip. Kullanabileceğiniz C++/CX Evrensel Windows Platformu (UWP), Windows Phone 8.1 ve Windows Masaüstü için uygulamalar oluşturun. Daha fazla bilgi için [ilişkin bir tura C++/CX](https://msdn.microsoft.com/magazine/dn166929.aspx) ve [çalışma zamanı platformları için bileşen uzantıları](../extensions/component-extensions-for-runtime-platforms.md).
+> [!NOTE] 
+> Yeni UWP uygulamaları ve bileşenleri için kullanmanızı öneririz [ C++/WinRT](/windows/uwp/cpp-and-winrt-apis/), standart C ++ 17 dil projeksiyon Windows Runtime API'ları için. C++/ WinRT Windows 10 SDK sürüm 1803 ileriye doğru kullanıma sunulmuştur. C++/ WinRT tamamen üstbilgi dosyalarında uygulanır ve modern Windows API ile birinci sınıf erişim sağlamak için tasarlanmıştır.
+
+Microsoft C++ derleyici (MSVC) destekleyen C++ bileşen uzantıları (C++/CX), Windows çalışma zamanı programlama modeli hedeflemek için ek türleri ve işleçler sahip. Kullanabileceğiniz C++/CX Evrensel Windows Platformu (UWP) ve Windows Masaüstü uygulamaları oluşturmak için. Daha fazla bilgi için [ilişkin bir tura C++/CX](https://msdn.microsoft.com/magazine/dn166929.aspx) ve [çalışma zamanı platformları için bileşen uzantıları](../extensions/component-extensions-for-runtime-platforms.md).
 
 Bu kılavuzda, temel C + oluşturmak için bir metin düzenleyicisi kullanın +/ CX programı ve sonra komut satırında derleyin. (Kendi kullanabilirsiniz C++gösterilen bir yazmak yerine /CX program veya kullanabileceğiniz bir C++/CX kod örneğini başka bir Yardım makalesi. Bu teknik oluşturmak ve UI öğesi içermeyen olan küçük modülleri test etmek için kullanışlıdır.)
 
@@ -49,7 +52,7 @@ Derleme için etkinleştirmek için C++/CX, kullanmalıdır [/ZW](reference/zw-w
 
 1. Menü çubuğunda, **dosya** > **Kaydet**.
 
-   Windows çalışma zamanı kullanan bir Visual C++ kaynak dosyasını, oluşturduğunuz [Platform ad alanı](../cppcx/platform-namespace-c-cx.md) ad alanı.
+   Oluşturduğunuz bir C++ Windows çalışma zamanı kullanan bir kaynak dosyayı [Platform ad alanı](../cppcx/platform-namespace-c-cx.md) ad alanı.
 
 1. Komut isteminde girin **cl/ehsc /ZW basiccx.cpp/Link/Subsystem: Console**. Cl.exe derleyicisi, kaynak kodunu bir .obj dosyasına derler ve basiccx.exe adlı yürütülebilir bir program oluşturmak için bağlayıcı çalıştırır. ( [/Ehsc](reference/eh-exception-handling-model.md) derleyici seçeneği C++ özel durum işleme modelini belirtir ve [/link](reference/link-pass-options-to-linker.md) bayrağı, bir konsol uygulaması belirtir.)
 

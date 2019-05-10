@@ -1,5 +1,5 @@
 ---
-title: Bağlayıcı araçları hataları ve Uyarıları
+title: Bağlayıcı araçları hataları ve uyarıları
 ms.date: 04/17/2019
 f1_keywords:
 - LNK1100
@@ -240,13 +240,13 @@ helpviewer_keywords:
 - errors [C++], linker
 ms.assetid: d4b12c0f-4dae-48b2-9b9e-fedf94c94cb0
 ms.openlocfilehash: 064f469dc7dd133c6f17f38da1bb9c2eb1907918
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.sourcegitcommit: 283cb64fd7958a6b7fbf0cd8534de99ac8d408eb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62298808"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "64857477"
 ---
-# <a name="linker-tools-errors-and-warnings-lnkxxxx"></a>Bağlayıcı araçları hataları ve Uyarıları (LNKxxxx)
+# <a name="linker-tools-errors-and-warnings-lnkxxxx"></a>Bağlayıcı araçları hataları ve uyarıları (LNKxxxx)
 
 Bağlayıcı araçları bağlantısı, LIB, DUMPBIN ve EDITBIN bu hataları ve Uyarıları oluşturan ortak bir yürütülebilir dosyayı paylaşın. Araçlar LNK formun uyarıları oluşturur*xxxx*burada *xxxx* bir dört basamaklı sayıdır.
 

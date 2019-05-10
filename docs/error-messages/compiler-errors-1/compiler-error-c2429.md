@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2429
 ms.assetid: 57ff6df9-5cf1-49f3-8bd8-4e550dfd65a0
-ms.openlocfilehash: 972ec6591132443ef4d1297598d6de7216f59663
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: a5d1e98e91c541729a93f731eede9b047589c63a
+ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62165690"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "65447977"
 ---
 # <a name="compiler-error-c2429"></a>Derleyici Hatası C2429
 
@@ -23,7 +23,7 @@ Hata **C2429: dil özelliği 'iç içe-namespace-definition' derleyici bayrağı
 
 ```cpp
 // C2429a.cpp
-namespace a::b { int i; } // C2429 starting in Visual C++ 2015 Update 3.
+namespace a::b { int i; } // C2429 starting in Visual Studio 2015 Update 3.
                           // Use /std:c++17 to fix, or do this:
 // namespace a { namespace b { int i; }}
 

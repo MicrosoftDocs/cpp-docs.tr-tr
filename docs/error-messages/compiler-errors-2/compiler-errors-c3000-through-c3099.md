@@ -1,5 +1,5 @@
 ---
-title: C3000 ile c3099 arasındaki derleyici hataları
+title: C3000 ile C3099 arasındaki derleyici hataları
 ms.date: 04/21/2019
 f1_keywords:
 - C3051
@@ -39,13 +39,13 @@ helpviewer_keywords:
 - C3098
 ms.assetid: 01b7b9cb-b351-4b5a-8cb0-1fcddb08d2ab
 ms.openlocfilehash: 08c7b691d6390e6c1070fc71dff116604731ebab
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.sourcegitcommit: 283cb64fd7958a6b7fbf0cd8534de99ac8d408eb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62281672"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "64856919"
 ---
-# <a name="compiler-errors-c3000-through-c3099"></a>C3000 ile c3099 arasındaki derleyici hataları
+# <a name="compiler-errors-c3000-through-c3099"></a>C3000 ile C3099 arasındaki derleyici hataları
 
 Belgelerin bu bölümdeki makaleleri bir alt kümesini derleyici tarafından oluşturulan hata iletilerini açıklayın.
 
@@ -53,7 +53,7 @@ Belgelerin bu bölümdeki makaleleri bir alt kümesini derleyici tarafından olu
 
 ## <a name="error-messages"></a>Hata iletileri
 
-|Hata|İleti|
+|Hata|`Message`|
 |-----------|-------------|
 |Derleyici Hatası C3000|Kullanımdan kalktı.|
 |[Derleyici Hatası C3001](compiler-error-c3001.md)|'*ileti*': OpenMP yönergesi adı bekleniyor|

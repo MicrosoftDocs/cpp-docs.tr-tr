@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - delayed loading of DLLs, linker support
 ms.assetid: b2d7e449-2809-42b1-9c90-2c0ca5e31a14
-ms.openlocfilehash: b6e514a6b13aced4fcd765df091810504f948588
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 384ea563853906a76e2c9993cbcedb3b15c354f2
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62176258"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65217595"
 ---
 # <a name="linker-support-for-delay-loaded-dlls"></a>Gecikmeli Yüklenen DLL'ler için Bağlayıcı Desteği
 
@@ -51,5 +51,5 @@ Aşağıdaki konular, DLL'leri yüklemede gecikme açıklar:
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Visual C++'ta DLL'ler](../dlls-in-visual-cpp.md)<br/>
+[Visual Studio'da C/C++ DLL'leri oluşturma](../dlls-in-visual-cpp.md)<br/>
 [MSVC bağlayıcı başvurusu](linking.md)

@@ -8,12 +8,12 @@ helpviewer_keywords:
 - throw keyword [C++]
 - noexcept keyword [C++]
 ms.assetid: 4d3276df-6f31-4c7f-8cab-b9d2d003a629
-ms.openlocfilehash: 9280f3d96088d988a9d5cfe0f3d56444b865167e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: a3d4c0446cd8dde83febb1b4269811b5dec3c477
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62154340"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65222109"
 ---
 # <a name="exception-specifications-throw-noexcept-c"></a>Özel durum belirtimleri (throw, noexcept) (C++)
 
@@ -29,7 +29,7 @@ derleyiciye işlevin özel durum oluşturmadığını söyler. Bununla birlikte,
 ```cpp
 void MyFunction(int i) noexcept;
 ```
-Özel durum belirtimleri Microsoft Visual C++ uygulaması aşağıdaki tabloda özetlenmiştir:
+Microsoft aşağıdaki tabloda özetlenmiştir C++ , özel durum belirtimlerinin:
 
 |Özel durum belirtimi|Açıklama|
 |-----------------------------|-------------|

@@ -1,15 +1,15 @@
 ---
 title: Lambda İfadeleri Örnekleri
-ms.date: 11/04/2016
+ms.date: 05/07/2019
 helpviewer_keywords:
 - lambda expressions [C++], examples
 ms.assetid: 52506b15-0771-4190-a966-2f302049ca86
-ms.openlocfilehash: 6854c5710d8a27093078c0f2013d691ac22c5870
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f9f2c3e014e44c9f6a9ce10dd8388a1578ba3987
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62392199"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65222097"
 ---
 # <a name="examples-of-lambda-expressions"></a>Lambda İfadeleri Örnekleri
 
@@ -61,7 +61,7 @@ Lambda ifadeleri bir işlev gövdesinde çoğunlukla bildirilse bunları herhang
 
 ### <a name="example-2"></a>Örnek 2
 
-Visual C++ derleyicisi, ifade çağrıldığında değil de bildirildiğinde yakalanan değişkenlerine bir lambda ifadesi bağlar. Aşağıdaki örnek, yerel değişken yakalayan bir lambda ifadesi gösterir `i` değere göre ve yerel değişken `j` başvuruya göre. Lambda ifadesi `i` değeriyle yeniden atanması `i` programda daha sonra ifadenin sonucunu etkilemez. Ancak, lambda ifadesi `j` başvuruyla yeniden atanması `j` ifadenin sonucunu etkilemez.
+Microsoft C++ derleyici ifade çağrıldığında ifadesi yerine bildirildiğinde bu bir lambda ifadesi yakalanan değişkenlerine bağlar. Aşağıdaki örnek, yerel değişken yakalayan bir lambda ifadesi gösterir `i` değere göre ve yerel değişken `j` başvuruya göre. Lambda ifadesi `i` değeriyle yeniden atanması `i` programda daha sonra ifadenin sonucunu etkilemez. Ancak, lambda ifadesi `j` başvuruyla yeniden atanması `j` ifadenin sonucunu etkilemez.
 
 ### <a name="code"></a>Kod
 

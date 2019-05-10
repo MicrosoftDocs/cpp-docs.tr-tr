@@ -9,12 +9,12 @@ f1_keywords:
 - filesystem/std::experimental::filesystem::directory_iterator
 - <filesystem>
 ms.assetid: 5005753b-46fa-43e1-8d4e-1b38617d3cfd
-ms.openlocfilehash: 54817eeeba0b885cbf3de558c04fe2eb5d6e14fa
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 0f397d8b0c39769fde20b6aa50412c979237f70a
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62159853"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65220380"
 ---
 # <a name="ltfilesystemgt"></a>&lt;dosya sistemi&gt;
 
@@ -29,7 +29,7 @@ using namespace std::experimental::filesystem::v1;
 ```
 
 > [!IMPORTANT]
-> Visual Studio 2017 sürümü itibarıyla \<filesystem > Üstbilgi değildi henüz bir C++ standart. Visual C++ 2017 son taslak standardı uygular, bulunan [ISO/IEC JTC 1/SC 22/WG 21 N4100](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2014/n4100.pdf).
+> Visual Studio 2017 sürümü itibarıyla \<filesystem > Üstbilgi değildi henüz bir C++ standart. C++Visual Studio 2017 (MSVC v141) uygular en son taslak standardı bulunan [ISO/IEC JTC 1/SC 22/WG 21 N4100](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2014/n4100.pdf).
 
 Bu üst konak işletim sistemlerinin iki geniş sınıflardan biri için dosya sistemleri destekler: Microsoft Windows ve POSIX.
 

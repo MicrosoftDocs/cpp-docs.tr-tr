@@ -93,12 +93,12 @@ helpviewer_keywords:
 - $(PlatformShortName) macro
 - SolutionPath macro $(SolutionPath)
 ms.assetid: 239bd708-2ea9-4687-b264-043f1febf98b
-ms.openlocfilehash: 46fdd5e356ded96388a154ff459ef4cc3c02267f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: abb42db6a44f1c48d120eff1f117e06c970b6b44
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62294448"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65221785"
 ---
 # <a name="common-macros-for-msbuild-commands-and-properties"></a>Yaygın MSBuild komutları ve Özellikler makroları
 
@@ -121,7 +121,7 @@ Bu tablo, uygun makroları yaygın olarak kullanılan bir alt kümesi açıklar;
 |**$(FrameworkDir)**|.NET Framework yüklendiği dizin.|
 |**$(FrameworkSDKDir)**|.NET Framework yüklü dizin. .NET Framework, Visual Studio'nun veya ayrı ayrı bir parçası olarak yüklenmiş.|
 |**$(FrameworkVersion)**|Visual Studio tarafından kullanılan .NET Framework sürümü. Birlikte **$(FrameworkDir)**, .NET Framework kullanarak Visual Studio sürümünü tam yolu.|
-|**$(FxCopDir)**|Fxcop.cmd dosyanın yolu. Tüm Visual C++ sürümleriyle fxcop.cmd dosyası yüklü değil.|
+|**$(FxCopDir)**|Fxcop.cmd dosyanın yolu. Tüm Visual Studio sürümleriyle fxcop.cmd dosyası yüklü değil.|
 |**$(Intdir)**|Ara dosyaları için belirtilen dizin yolu. Bu göreli bir yol ise, Ara dosyaları proje dizinine eklenen bu yoluna gidin. Bu yolu bir eğik çizgiyle olması gerekir. Bu değeri çözümler **Ara dizin** özelliği. Kullanmayın **$(OutDir)** bu özelliği tanımlamak için.|
 |**$(OutDir)**|Çıkış dosyası dizinine yolu. Bu göreli bir yol ise, çıktı dosyalarının proje dizinine eklenir bu yoluna gidin. Bu yolu bir eğik çizgiyle olması gerekir. Bu değeri çözümler **çıkış dizinine** özelliği. Kullanmayın **$(ıntdir)** bu özelliği tanımlamak için.|
 |**$(Platform)**|Geçerli proje platformu, örneğin, "Win32" adı.|
@@ -143,7 +143,7 @@ Bu tablo, uygun makroları yaygın olarak kullanılan bir alt kümesi açıklar;
 |**$(TargetFileName)**|(Temel adı + dosya uzantısı tanımlanan) yapı için birincil çıkış dosyasının dosya adı.|
 |**$(TargetName)**|Derleme için birincil çıkış dosyasının temel adı.|
 |**$(TargetPath)**|Mutlak yol (sürücü yolu + temel adı + dosya uzantısı tanımlanır) yapı için birincil çıkış dosyasının adı.|
-|**$(Vcınstalldir)**|Visual Studio yüklemenizin C++ içeriği içeren dizin. Bu özellik farklı olabilir hedeflenen Visual C++ araç takımı sürümünü içerir, Visual Studio ana bilgisayar. Örneğin, ile derleme yaparken `$(PlatformToolset) = v140`, **$(vcınstalldir)** Visual C++ 2015 yükleme yolunu içerir.|
+|**$(Vcınstalldir)**|Visual Studio yüklemenizin C++ içeriği içeren dizin. Bu özellik hedeflenen Microsoft sürümünü içeren C++ farklı olabilir (MSVC) araç takımı, Visual Studio ana bilgisayar. Örneğin, ile derleme yaparken `$(PlatformToolset) = v140`, **$(vcınstalldir)** Visual Studio 2015 yüklemesini yolunu içerir.|
 |**$(Vsınstalldir)**|Visual Studio yüklü dizin. Bu özellik farklı olabilir hedeflenen Visual Studio araç takımı sürümünü içerir, Visual Studio ana bilgisayar. Örneğin, ile derleme yaparken `$(PlatformToolset) = v110`, **$(vsınstalldir)** Visual Studio 2012 yükleme yolunu içerir.|
 |**$(WebDeployPath)**|Burada proje çıkışı için web dağıtım kök klasöründen göreli yolu ait. Aynı değeri döndürür <xref:Microsoft.VisualStudio.VCProjectEngine.VCWebDeploymentTool.RelativePath%2A>.|
 |**$(WebDeployRoot)**|Konumunu mutlak yolu  **\<localhost >**. Örneğin, c:\inetpub\wwwroot.|

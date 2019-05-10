@@ -1,5 +1,5 @@
 ---
-title: C3200 ile c3299 arasındaki derleyici hataları
+title: C3200 ile C3299 arasındaki derleyici hataları
 ms.date: 04/21/2019
 f1_keywords:
 - C3220
@@ -35,13 +35,13 @@ helpviewer_keywords:
 - C3294
 ms.assetid: 6b3104f6-63bc-4823-b6f3-b8a16be4b87f
 ms.openlocfilehash: 6965fcde5f7cc93464593e83f787d0a5838398dd
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.sourcegitcommit: 283cb64fd7958a6b7fbf0cd8534de99ac8d408eb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62281501"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "64856963"
 ---
-# <a name="compiler-errors-c3200-through-c3299"></a>C3200 ile c3299 arasındaki derleyici hataları
+# <a name="compiler-errors-c3200-through-c3299"></a>C3200 ile C3299 arasındaki derleyici hataları
 
 Belgelerin bu bölümdeki makaleleri bir alt kümesini derleyici tarafından oluşturulan hata iletilerini açıklayın.
 
@@ -49,7 +49,7 @@ Belgelerin bu bölümdeki makaleleri bir alt kümesini derleyici tarafından olu
 
 ## <a name="error-messages"></a>Hata iletileri
 
-|Hata|İleti|
+|Hata|`Message`|
 |-----------|-------------|
 |[Derleyici Hatası C3200](compiler-error-c3200.md)|'*türü*': şablon parametresi için geçersiz şablon bağımsız değişkeni '*parametre*', bir sınıf şablonu bekleniyor|
 |[Derleyici Hatası C3201](compiler-error-c3201.md)|sınıf şablonunun şablon parametre listesi '*şablon*'şablon parametresinin şablon parametre listesiyle eşleşmiyor'*parametre*'|

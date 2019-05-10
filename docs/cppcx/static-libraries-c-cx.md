@@ -2,12 +2,12 @@
 title: Statik kitaplıklar (C++/CX)
 ms.date: 02/03/2017
 ms.assetid: 7faf53c8-fa21-42cc-8246-d32533ef9dfa
-ms.openlocfilehash: 242ba10b29a8efe0c3e9580f1d0d0c3be529a7d2
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
-ms.translationtype: HT
+ms.openlocfilehash: 188ba06518bf6cdd154b7d6bd61216ed1e4ffad3
+ms.sourcegitcommit: 18d3b1e9cdb4fc3a76f7a650c31994bdbd2bde64
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62398868"
+ms.lasthandoff: 04/29/2019
+ms.locfileid: "64877250"
 ---
 # <a name="static-libraries-ccx"></a>Statik kitaplıklar (C++/CX)
 
@@ -15,11 +15,32 @@ Evrensel Windows Platformu (UWP) bir uygulamada kullanılan bir statik kitaplı�
 
 ## <a name="creating-static-libraries"></a>Statik kitaplıklar oluşturma
 
-#### <a name="to-create-a-static-library-for-use-in-a-uwp-app"></a>Bir UWP uygulamasında kullanmak için bir statik kitaplık oluşturmak için
+
+Yeni bir proje oluşturmak için yönergeler, yüklediğiniz Visual Studio'nun hangi sürümünün bağlı olarak değişir. Sola doğru sürüme ayarlayın üst sürüm Seçici olduğundan emin olun.
+
+::: moniker range="vs-2019"
+
+### <a name="to-create-a-uwp-static-library-in-visual-studio-2019"></a>İçinde Visual Studio 2019 UWP statik kitaplık oluşturmak için
+
+1. Menü çubuğunda, **dosya** > **yeni** > **proje** açmak için **yeni bir proje oluşturma** iletişim kutusu.
+
+1. İletişim kutusunun üstündeki ayarlamak **dil** için **C++** ayarlayın **Platform** için **Windows**, ayarlayıp **proje türü** için **UWP**. 
+
+1. Filtrelenmiş proje türleri listesinden seçim **statik kitaplık (Evrensel Windows - C++/CX)** ardından **sonraki**. Sonraki sayfada, projeye bir ad verin ve istenen proje konumu belirtin.
+
+1. Seçin **Oluştur** projeyi oluşturmak için.
+
+::: moniker-end
+
+::: moniker range="<=vs-2017"
+
+### <a name="to-create-a-uwp-static-library-in-visual-studio-2017-or-visual-studio-2015"></a>Visual Studio 2017 veya Visual Studio 2015'te UWP statik kitaplık oluşturmak için
 
 1. Menü çubuğunda, **dosya** > **yeni** > **proje**. Altında **Visual C++** > **Windows Evrensel** seçin **statik kitaplık (Evrensel Windows)**.
 
 1. İçinde **Çözüm Gezgini**, proje için kısayol menüsünü açın ve ardından **özellikleri**. İçinde **özellikleri** iletişim kutusundaki **yapılandırma özellikleri** > **C/C++** sayfasında **Windows çalışma zamanı uzantısınıkullanma** için **(/ZW) Evet**.
+
+::: moniker-end
 
 Yeni bir statik kitaplık için UWP uygulamaları hariç tutulan bir Win32 API çağrısı yapıyorsa derlediğinizde, derleyici hatası C3861, "tanımlayıcısı bulunamadı." oluşturacak Windows çalışma zamanı için desteklenen alternatif bir yöntem aramak için bkz: [UWP uygulamalarında Windows API'lere alternatifler](/uwp/win32-and-com/alternatives-to-windows-apis-uwp).
 

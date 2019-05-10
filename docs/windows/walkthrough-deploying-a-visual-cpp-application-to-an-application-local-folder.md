@@ -4,12 +4,12 @@ ms.date: 04/23/2019
 helpviewer_keywords:
 - deploying Visual C++ applications
 ms.assetid: 47a81c47-9dbe-47c6-96cc-fbb2fda5e6ad
-ms.openlocfilehash: 33edf4bb736fad62928e11dd0550af6640d411ac
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
-ms.translationtype: HT
+ms.openlocfilehash: b05dcc47aa7c0b75943f0db69797b7bf6fb55df7
+ms.sourcegitcommit: 18d3b1e9cdb4fc3a76f7a650c31994bdbd2bde64
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62387701"
+ms.lasthandoff: 04/29/2019
+ms.locfileid: "64877335"
 ---
 # <a name="walkthrough-deploying-a-visual-c-application-to-an-application-local-folder"></a>İzlenecek yol: Bir Visual C++ uygulamasını yerel uygulama klasörüne dağıtma
 

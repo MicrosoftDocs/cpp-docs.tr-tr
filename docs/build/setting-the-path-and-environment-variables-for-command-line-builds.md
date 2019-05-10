@@ -1,11 +1,7 @@
 ---
 title: Komut satırı derlemeleri için yolu ve ortam değişkenlerini ayarlama
 ms.custom: conceptual
-ms.date: 11/04/2016
-f1_keywords:
-- include
-- Lib
-- Path
+ms.date: 05/06/2019
 helpviewer_keywords:
 - environment variables [C++]
 - VCVARS32.bat file
@@ -18,18 +14,18 @@ helpviewer_keywords:
 - compiling source code [C++], from command line
 - environment variables [C++], CL compiler
 ms.assetid: 99389528-deb5-43b9-b99a-03c8773ebaf4
-ms.openlocfilehash: fed3360294bec724af09b87e5abd7c6bb22fa285
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 30dadf365186ae74144a3225889c08eedfb89b47
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62315397"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65217610"
 ---
 # <a name="set-the-path-and-environment-variables-for-command-line-builds"></a>Komut satırı derlemeleri için yolu ve ortam değişkenlerini ayarlama
 
-Visual C++ komut satırı derleme araçları özelleştirilmiş çeşitli ortam değişkenleri için yükleme ve yapı yapılandırmanızı gerektirir. Bir C++ iş yükünü Visual Studio yükleyicisi tarafından yüklendiğinde, özel komut dosyaları veya gerekli ortam değişkenlerini ayarlamak, toplu iş dosyaları oluşturur. Yükleyici, bu komut dosyaları sonra bir geliştirici komut istemi penceresi açmak Windows Başlat menüsü kısayolları oluşturmak için kullanır. Bu kısayollar, belirli bir ortam değişkenlerini ayarlama yapılandırması oluşturun. Komut satırı araçlarını kullanmak istediğinizde, bu kısayolları birini çalıştırabilir veya bir düz bir komut istemi penceresi açın ve ardından yapı yapılandırma ortamı kendiniz ayarlamak için özel komut dosyaları çalıştırın. Daha fazla bilgi için [komut satırından MSVC araç takımı kullanın](building-on-the-command-line.md).
+Microsoft C++ (MSVC) komut satırı derleme araçları yükleme ve yapı yapılandırma için özelleştirilmiş çeşitli ortam değişkenlerini gerektirir. Bir C++ iş yükünü Visual Studio yükleyicisi tarafından yüklendiğinde, özel komut dosyaları veya gerekli ortam değişkenlerini ayarlamak, toplu iş dosyaları oluşturur. Yükleyici, bu komut dosyaları sonra bir geliştirici komut istemi penceresi açmak Windows Başlat menüsü kısayolları oluşturmak için kullanır. Bu kısayollar, belirli bir ortam değişkenlerini ayarlama yapılandırması oluşturun. Komut satırı araçlarını kullanmak istediğinizde, bu kısayolları birini çalıştırabilir veya bir düz bir komut istemi penceresi açın ve ardından yapı yapılandırma ortamı kendiniz ayarlamak için özel komut dosyaları çalıştırın. Daha fazla bilgi için [komut satırından MSVC araç takımı kullanın](building-on-the-command-line.md).
 
-Visual C++ komut satırı araçları yolu, TMP, INCLUDE, LIB ve LIBPATH ortam değişkenlerini kullanma ve ayrıca diğer yüklü araçları, platformları ve SDK'ları belirli ortam değişkenlerini kullanın. Basit bir Visual Studio yükleme bile yirmi veya daha fazla ortam değişkenlerini ayarlayabilirsiniz. Bu ortam değişkenlerinin değerlerini yüklemenizi ve kendi seçtiğiniz derleme yapılandırması için özeldir ve ürün güncelleştirmeleri veya yükseltmeleri tarafından değiştirilebilir olduğundan, bir geliştirici komut istemi kısayolunun veya birini kullanmanızı öneririz bunları Windows ortamında kendiniz ayarlamak yerine bunları ayarlamak için özelleştirilmiş komut dosyaları'nı tıklatın.
+MSVC komut satırı araçları yolu, TMP, INCLUDE, LIB ve LIBPATH ortam değişkenlerini kullanma ve ayrıca diğer yüklü araçları, platformları ve SDK'ları belirli ortam değişkenlerini kullanın. Basit bir Visual Studio yükleme bile yirmi veya daha fazla ortam değişkenlerini ayarlayabilirsiniz. Bu ortam değişkenlerinin değerlerini yüklemenizi ve kendi seçtiğiniz derleme yapılandırması için özeldir ve ürün güncelleştirmeleri veya yükseltmeleri tarafından değiştirilebilir olduğundan, bir geliştirici komut istemi kısayolunun veya birini kullanmanızı öneririz bunları Windows ortamında kendiniz ayarlamak yerine bunları ayarlamak için özelleştirilmiş komut dosyaları'nı tıklatın.
 
 Bir geliştirici komut istemi kısayolunun tarafından ayarlanan hangi ortam değişkenleri görmek için SET komutu kullanabilirsiniz. Bir düz bir komut istemi penceresi açın ve bir taban çizgisi için Ayarla komutunun çıkışı yakalayın. Bir geliştirici komut istemi penceresi açın ve karşılaştırma Ayarla komutunun çıkışı yakalayın. Visual Studio IDE yerleşik olanlar gibi bir fark aracının ortam değişkenlerini karşılaştırın ve geliştirici komut istemi tarafından ayarlanan görmek yararlı olabilir. Derleyici ve bağlayıcı tarafından kullanılan özel ortam değişkenleri hakkında daha fazla bilgi için bkz. [CL ortam değişkenleri](reference/cl-environment-variables.md).
 

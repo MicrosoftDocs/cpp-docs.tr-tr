@@ -11,12 +11,12 @@ helpviewer_keywords:
 - MFC DLLs [MFC]
 - DLLs [MFC], creating
 ms.assetid: 4e936031-7e39-4f40-a295-42a09c5ff264
-ms.openlocfilehash: c0c8edfd26fc6abdcef1cbb2cfa93d88f9a37cde
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e607a27cbb06efd86d3a50aae5e62edf5ba3d400
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62310298"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65217585"
 ---
 # <a name="mfc-dll-wizard"></a>MFC DLL Sihirbazı
 
@@ -40,7 +40,7 @@ Aşağıdaki görevleri ve temel bir MFC DLL projesi geliştirmeler türlerini g
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Visual C++ proje oluşturma ve yönetme](../../build/creating-and-managing-visual-cpp-projects.md)<br/>
+[Visual Studio Projeleri - C++](../../build/creating-and-managing-visual-cpp-projects.md)<br/>
 [Özellik Sayfaları](../../build/reference/property-pages-visual-cpp.md)<br/>
 [Derleyici ayarlayın ve derleme özellikleri](../../build/working-with-project-properties.md)<br/>
 [MFC sınıfı](../../mfc/reference/adding-an-mfc-class.md)<br/>

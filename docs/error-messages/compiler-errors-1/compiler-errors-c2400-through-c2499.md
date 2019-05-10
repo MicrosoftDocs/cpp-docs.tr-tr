@@ -27,11 +27,11 @@ helpviewer_keywords:
 - C2497
 ms.assetid: f1f05572-af0b-497b-bde4-4c81ec01af3b
 ms.openlocfilehash: 569780a0716d26406c1703fa91fe5216d92ce653
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
-ms.translationtype: HT
+ms.sourcegitcommit: 283cb64fd7958a6b7fbf0cd8534de99ac8d408eb
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62404357"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "64857618"
 ---
 # <a name="compiler-errors-c2400-through-c2499"></a>C2400 ile C2499 arasındaki derleyici hataları
 
@@ -41,7 +41,7 @@ Belgelerin bu bölümdeki makaleleri bir alt kümesini derleyici tarafından olu
 
 ## <a name="error-messages"></a>Hata iletileri
 
-|Hata|İleti|
+|Hata|`Message`|
 |-----------|-------------|
 |[Derleyici Hatası C2400](compiler-error-c2400.md)|Satır içi assembler sözdizimi hatası '*bağlam*'; bulunan'*belirteci*'|
 |[Derleyici Hatası C2401](compiler-error-c2401.md)|'*tanımlayıcı*': yazmaç içinde taban olmalıdır '*bağlam*'|

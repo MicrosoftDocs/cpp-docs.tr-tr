@@ -1,26 +1,26 @@
 ---
 title: Karakter Kümeleri
-ms.date: 04/12/2018
+ms.date: 05/06/2019
 helpviewer_keywords:
 - Character sets
 - basic source character set (C++)
 - universal character names
 - basic execution character set (C++)
 ms.assetid: 379a2af6-6422-425f-8352-ef0bca6c0d74
-ms.openlocfilehash: 5282d5b227e71c0ba6f822a9534a8a31cbd86db9
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 92d60e3383abd7e3b3fa2d689958cf02a9b91e75
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62331239"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65222527"
 ---
 # <a name="character-sets"></a>Karakter Kümeleri
 
-Bir C++ programının metnin belirli karakter kodlaması kullanan kaynak dosyalarında depolanır. C++ standartı, kaynak dosyaları için bir temel kaynak karakter kümesi ve derlenmiş dosyalar için bir temel yürütme karakter kümesini belirtir. Visual C++, ek kaynak dosyalarında kullanılacak yerel ayara özgü karakter kümesi sağlar ve derlenmiş dosyalar.
+Bir C++ programının metnin belirli karakter kodlaması kullanan kaynak dosyalarında depolanır. C++ standartı, kaynak dosyaları için bir temel kaynak karakter kümesi ve derlenmiş dosyalar için bir temel yürütme karakter kümesini belirtir. Microsoft C++ derleyici (MSVC) derlenmiş dosyalar ve ek kaynak dosyalarında kullanılacak yerel ayara özgü karakter kümesi sağlar.
 
 ## <a name="character-sets"></a>Karakter kümesi
 
-C++ standardı belirtir bir *temel kaynak karakter kümesi* kaynak dosyalarında kullanılabilir. Bu küme dışındaki karakterleri temsil etmek için ek karakterler kullanarak belirtilebilir bir *evrensel karakter adı*. Derlendiğinde *temel yürütme karakter kümesi* ve *temel yürütme joker karakter kümesi* karakter ve bir programda görünebilir dizeleri temsil eder. Visual C++ uygulama kaynak kodu ve derlenmiş kod içinde ek karaktere izin verilir.
+C++ standardı belirtir bir *temel kaynak karakter kümesi* kaynak dosyalarında kullanılabilir. Bu küme dışındaki karakterleri temsil etmek için ek karakterler kullanarak belirtilebilir bir *evrensel karakter adı*. Derlendiğinde *temel yürütme karakter kümesi* ve *temel yürütme joker karakter kümesi* karakter ve bir programda görünebilir dizeleri temsil eder. MSVC uygulama kaynak kodu ve derlenmiş kod içinde ek karaktere izin verilir.
 
 ### <a name="basic-source-character-set"></a>Temel kaynak karakter kümesi
 
@@ -36,7 +36,7 @@ C++ standardı belirtir bir *temel kaynak karakter kümesi* kaynak dosyalarında
 
 **Microsoft'a özgü**
 
-Visual C++ içerir `$` temel kaynak karakter kümesi üyesi olarak karakter. Visual C++, ek bir dosya kodlamasına göre kaynak dosyalarında kullanılacak karakter kümesi de sağlar. Varsayılan olarak, Visual Studio varsayılan kod sayfasını kullanarak kaynak dosyalarını depolar. Kaynak dosyaları, yerel ayara özgü bir kod ya da bir Unicode kod kullanarak kaydedildiğinde Visual C++ kod sayfasını karakterlerden herhangi birini kaynak kodunuzu kullanmanıza olanak tanır temel kaynak karakter açıkça izin verilen denetim kodları dışında ayarlayın. Örneğin, Japonca bir kod kullanarak dosyayı kaydederseniz, yorumlar, tanımlayıcı veya dize değişmez değerleri Japonca karakterler koyabilirsiniz. Visual C++ geçerli çok baytlı karakter veya Unicode kod noktaları çevrilemez karakter sıraları izin vermez. Derleyici seçeneklerine bağlı olarak, tüm izin verilmeyen karakterler tanımlayıcıları görünebilir. Daha fazla bilgi için [tanımlayıcıları](../cpp/identifiers-cpp.md).
+MSVC içerir `$` temel kaynak karakter kümesi üyesi olarak karakter. MSVC ek bir dosya kodlamasına göre kaynak dosyalarında kullanılacak karakter kümesi de sağlar. Varsayılan olarak, Visual Studio varsayılan kod sayfasını kullanarak kaynak dosyalarını depolar. Kaynak dosyaları, yerel ayara özgü bir kod ya da bir Unicode kod kullanarak kaydedildiğinde MSVC Bu kod sayfası karakterlerden herhangi birini kaynak kodunuzu kullanmanıza olanak tanır temel kaynak karakter açıkça izin verilen denetim kodları dışında ayarlayın. Örneğin, Japonca bir kod kullanarak dosyayı kaydederseniz, yorumlar, tanımlayıcı veya dize değişmez değerleri Japonca karakterler koyabilirsiniz. MSVC geçerli çok baytlı karakter veya Unicode kod noktaları çevrilemez karakter sıraları izin vermez. Derleyici seçeneklerine bağlı olarak, tüm izin verilmeyen karakterler tanımlayıcıları görünebilir. Daha fazla bilgi için [tanımlayıcıları](../cpp/identifiers-cpp.md).
 
 **END Microsoft özgü**
 
@@ -48,7 +48,7 @@ Evrensel karakter adları, dize ve karakter değişmez değerleri ve tanımlayı
 
 **Microsoft'a özgü**
 
-Visual C++ derleyicisi evrensel karakter adı ve değişmez değer formunda bir karakteri terimleri değerlendirir. Örneğin, evrensel karakter adı biçimi kullanarak bir tanımlayıcı bildirmek ve değişmez değer biçiminde kullanın:
+Microsoft C++ derleyici evrensel karakter adı ve değişmez değer formunda bir karakter birbirinin yerine değerlendirir. Örneğin, evrensel karakter adı biçimi kullanarak bir tanımlayıcı bildirmek ve değişmez değer biçiminde kullanın:
 
 ```cpp
 auto \u30AD = 42; // \u30AD is 'キ'

@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3104
 ms.assetid: b5648d47-e5d3-4b45-a3c0-f46e04eae731
-ms.openlocfilehash: 3b2737bd67798fd467649be175d581ca551e1331
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: fee023809246634f2f3da266a718e45861eae76e
+ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62404175"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "65447840"
 ---
 # <a name="compiler-error-c3104"></a>Derleyici Hatası C3104
 
@@ -21,7 +21,7 @@ Bir öznitelik için geçersiz bir bağımsız değişken belirtildi.
 
 Bkz: [öznitelik parametre türleri](../../extensions/attribute-parameter-types-cpp-component-extensions.md) daha fazla bilgi için.
 
-Bu hata için Visual C++ 2005 yapıldığı derleyici uyumluluğu iş sonucu olarak oluşturulan: yönetilen diziler için özel öznitelikler geçirirken, dizi türü artık toplama başlatma listeden çıkarılır. Derleyici artık başlatıcı listesi yanı sıra, dizi türü belirtmenizi gerektirir.
+Bu hata için Visual Studio 2005 yapıldığı derleyici uyumluluğu iş sonucu olarak oluşturulan: yönetilen diziler için özel öznitelikler geçirirken, dizi türü artık toplama başlatma listeden çıkarılır. Derleyici artık başlatıcı listesi yanı sıra, dizi türü belirtmenizi gerektirir.
 
 ## <a name="example"></a>Örnek
 

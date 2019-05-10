@@ -1,6 +1,6 @@
 ---
 title: thread
-ms.date: 11/04/2016
+ms.date: 05/07/2019
 f1_keywords:
 - thread_cpp
 helpviewer_keywords:
@@ -9,12 +9,12 @@ helpviewer_keywords:
 - TLS (thread local storage), compiler implementation
 - __declspec keyword [C++], thread
 ms.assetid: 667f2a77-6d1f-4b41-bee8-05e67324fab8
-ms.openlocfilehash: 089f339e5d203fe44789a7df1607f73ab13b8a24
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 59a1af8a7eb73207f84ddf2194d5fe9e77d7d46a
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62330524"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65221968"
 ---
 # <a name="thread"></a>thread
 
@@ -40,7 +40,7 @@ Thread-local değişkenleri dinamik olarak yüklenen kitaplıkları kullanırken
 
 1. (Oluşturucular dahil) bir işlev çağrısıyla değişkeni başlatılır, bu işlevi yalnızca ikili/DLL yüklendikten sonra başlatılan bu iş parçacıkları ve işleme yüklemek ikili/DLL neden iş parçacığı için çağrılır. Başlatma işlevleri DLL yüklendiğinde, çalışmakta herhangi başka bir iş parçacığı için oluşumlarından çağrılmaz. Dinamik olarak başlatılması DllMain DllMain çağrısı ancak DLL hiçbir zaman iş parçacığı başlatıldığında DLL işlemde değilse, ileti alır oluşur.
 
-1. Sabit değerler ile statik olarak başlatılır, thread-local değişkenleri genellikle tüm iş parçacıkları üzerinde düzgün bir şekilde başlatılır. Ancak, aralık 2017'den itibaren var. bilinen uyumluluk sorunu Microsoft Visual C++ derleyicinin yapabildiği constexpr değişkenlerini almak dinamik yerine statik başlatma
+1. Sabit değerler ile statik olarak başlatılır, thread-local değişkenleri genellikle tüm iş parçacıkları üzerinde düzgün bir şekilde başlatılır. Ancak, aralık 2017'den itibaren yoktur bilinen uyumluluk sorunu Microsoft C++ yapabildiği constexpr değişkenlerini almak dinamik yerine statik başlatma derleyici.
 
    Not: Bu sorunların hem de gelecekte güncelleştirmeleri derleyicinin düzeltilmesi beklenir.
 

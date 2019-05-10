@@ -57,11 +57,11 @@ helpviewer_keywords:
 - C2399
 ms.assetid: 07ca45b5-b2f0-4049-837b-40a7a3caed88
 ms.openlocfilehash: 28ab73857b46fed29e2ba8d7bc051ffb81b54bb3
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
-ms.translationtype: HT
+ms.sourcegitcommit: 283cb64fd7958a6b7fbf0cd8534de99ac8d408eb
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62360456"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "64857362"
 ---
 # <a name="compiler-errors-c2300-through-c2399"></a>C2300 ile C2399 arasındaki derleyici hataları
 
@@ -71,7 +71,7 @@ Belgelerin bu bölümdeki makaleleri bir alt kümesini derleyici tarafından olu
 
 ## <a name="error-messages"></a>Hata iletileri
 
-|Hata|İleti|
+|Hata|`Message`|
 |-----------|-------------|
 |[Derleyici Hatası C2300](compiler-error-c2300.md)|'*sınıfı*': sınıf adında bir yok edici yok ' ~*sınıfı*'|
 |[Derleyici Hatası C2301](compiler-error-c2301.md)|Sol ' -> ~*tanımlayıcı*' sınıfını/yapıya/birleşime işaret etmelidir|

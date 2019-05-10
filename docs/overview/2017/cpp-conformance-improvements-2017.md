@@ -5,16 +5,16 @@ ms.technology: cpp-language
 ms.assetid: 8801dbdb-ca0b-491f-9e33-01618bff5ae9
 author: mikeblome
 ms.author: mblome
-ms.openlocfilehash: 6a0e296e4a5542c1aad848c55d35d3e40244478d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f168da7440c52d1a2d5bc68a6e973d47122b7212
+ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62410128"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "65468433"
 ---
 # <a name="c-conformance-improvements-in-visual-studio-2017-versions-150-153improvements153-155improvements155-156improvements156-157improvements157-158update158-159improvements159"></a>Visual Studio 2017 sürüm 15.0,'deki C++ uyumluluk geliştirmeleri [15.3](#improvements_153), [15.5](#improvements_155), [15.6](#improvements_156), [15.7](#improvements_157), [15,8](#update_158), [15.9](#improvements_159)
 
-İçin genelleştirilmiş constexpr ve NSDMI ile Microsoft Visual C++ Derleyici C ++ 14 standardına eklenen özelliklerin tamamlanmıştır. Yine de derleyicide C++11 ve C++98 Standartlarındaki bazı özellikler eksiktir. Bkz: [Visual C++ dil uyumluluğu](../visual-cpp-language-conformance.md) derleyici geçerli durumunu gösteren bir tablo için.
+Genelleştirilmiş constexpr ve NSDMI için toplamalar, Microsoft desteği ile C++ derleyici C ++ 14 standardına eklenen özelliklerin tam sunuldu. Yine de derleyicide C++11 ve C++98 Standartlarındaki bazı özellikler eksiktir. Bkz: [Visual C++ dil uyumluluğu](../visual-cpp-language-conformance.md) derleyici geçerli durumunu gösteren bir tablo için.
 
 ## <a name="c11"></a>C++11
 
@@ -955,7 +955,7 @@ Uyarı altında hariç tutulan **/Wv:18** ve uyarı düzeyi W2 altında varsayı
 
 ### <a name="stdisconvertible-for-array-types"></a>dizi türleri için Std::is_convertible
 
-Önceki derleyici sürümleri için hatalı sonuçlar verdi [std::is_convertible](../../standard-library/is-convertible-class.md) dizi türleri için. Bu kitaplık yazıcılar özel durum için Microsoft Visual C++ Derleyici kullanırken gerekli `std::is_convertible<...>` türü niteliğine. Aşağıdaki örnekte, Visual Studio'nun önceki sürümlerini geçişte statik onaylar ancak Visual Studio 2017 sürüm 15.3 başarısız:
+Önceki derleyici sürümleri için hatalı sonuçlar verdi [std::is_convertible](../../standard-library/is-convertible-class.md) dizi türleri için. Bu, özel durum Microsoft kitaplığı yazıcılarının gerekli C++ kullanırken derleyici `std::is_convertible<...>` türü niteliğine. Aşağıdaki örnekte, Visual Studio'nun önceki sürümlerini geçişte statik onaylar ancak Visual Studio 2017 sürüm 15.3 başarısız:
 
 ```cpp
 #include <type_traits>

@@ -4,12 +4,12 @@ ms.date: 09/01/2017
 helpviewer_keywords:
 - UNIX [C++]
 ms.assetid: 36108b31-e7fa-49a8-a1f7-7077fcbec873
-ms.openlocfilehash: 2b0736bca9cc0b67f9ea8ac83dc18fadaeefdb3c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 17f8082ac0442f65b9195b37da18b04f795d3d66
+ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62205248"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "65448967"
 ---
 # <a name="introduction-to-visual-c-for-unix-users"></a>UNIX Kullanıcıları için Visual C++'a Giriş
 
@@ -49,7 +49,7 @@ Bir proje oluşturduğunuzda, projeyi adlandırın gerekir. Varsayılan olarak d
 
 ## <a name="microsoft-specific-modifiers"></a>Microsoft'a Özgü Değiştiriciler
 
-Microsoft Visual C++ derleyicisi, Windows işletim sistemleri için programlamayı desteklemek için programlama dili standart C++ birkaç uzantı uygular. Bu uzantılar, çağırma kuralları işlev depolama sınıfı öznitelikleri belirtmek için kullanılır ve tabanlı adresleme, diğerlerinin yanında. Desteklenen tüm C++ uzantıları tam bir listesi için bkz. [Microsoft'a özel değiştiriciler](../cpp/microsoft-specific-modifiers.md).
+Microsoft C++ derleyici uygulayan birkaç uzantılarını standart C++ programlama dili, Windows işletim sistemleri için programlamayı desteklemek için. Bu uzantılar, çağırma kuralları işlev depolama sınıfı öznitelikleri belirtmek için kullanılır ve tabanlı adresleme, diğerlerinin yanında. Desteklenen tüm C++ uzantıları tam bir listesi için bkz. [Microsoft'a özel değiştiriciler](../cpp/microsoft-specific-modifiers.md).
 
 Kullanarak tüm Microsoft özel C++ uzantılarını devre dışı bırakabilirsiniz `/Za` derleyici seçeneği. Birden çok platformda çalışacak kod yazmak istiyorsanız, bu seçenek önerilir. Daha fazla bilgi için `/Za` derleyici seçeneği bkz [/Za, /Ze (dil uzantılarını devre dışı bırak)](../build/reference/za-ze-disable-language-extensions.md). C++ Derleyici uyumluluğu hakkında daha fazla bilgi için bkz. [Visual C++ dil uyumluluğu](../overview/visual-cpp-language-conformance.md) ve [standart dışı davranış](../cpp/nonstandard-behavior.md).
 

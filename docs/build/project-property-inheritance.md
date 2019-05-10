@@ -2,13 +2,13 @@
 title: Visual Studio projelerindeki - C++ özellik devralma
 ms.date: 12/10/2018
 helpviewer_keywords:
-- Visual C++ projects, property inheritance
-ms.openlocfilehash: edd6d3bf82f7a13cf6687abeba3758dcceca5e84
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+- C++ projects, property inheritance
+ms.openlocfilehash: 7e6e2ec4e4f1999639a1b0a0d7ce35873736e5e3
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62295449"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65220446"
 ---
 # <a name="property-inheritance-in-visual-studio-projects"></a>Visual Studio projelerinde özellik devralma
 

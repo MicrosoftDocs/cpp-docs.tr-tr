@@ -6,18 +6,18 @@ f1_keywords:
 helpviewer_keywords:
 - C2299
 ms.assetid: d001c2bc-f6fd-47aa-8e42-0eb824d6441d
-ms.openlocfilehash: 4776ddede31dbcebe56a5919fd111f4df7248215
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 39659baebf7dc1859a69021f60ed452964ae61af
+ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62182697"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "65447951"
 ---
 # <a name="compiler-error-c2299"></a>Derleyici Hatası C2299
 
 'function': davranış değişikliği: bir açık özelleştirme bir kopya Oluşturucusu veya kopya atama işleci olamaz
 
-Bu hata için Visual C++ 2005 yapıldığı derleyici uyumluluğu iş sonucu olarak da oluşturulabilir: Visual C++'ın önceki sürümlerinde izin verilen açık uzmanlık bir kopya Oluşturucusu veya kopya atama işleci.
+Bu hata için Visual Studio 2005 yapıldığı derleyici uyumluluğu iş sonucu olarak da oluşturulabilir: önceki sürümleri Visual C++ açık uzmanlık bir kopya Oluşturucusu veya kopya atama işlecine izin.
 
 C2299 gidermek için kopya oluşturucu veya atama işleci bir şablon işlevi, ancak bunun yerine bir sınıf türü alan bir şablon olmayan işlev yapmayın. Şablon bağımsız değişkenlerini kaldırmak şablon bağımsız değişkenleri açıkça belirterek kopya oluşturucu veya atama işlecini çağıran herhangi bir kod gerekir.
 

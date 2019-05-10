@@ -1,15 +1,15 @@
 ---
 title: Lambda İfadesi Sözdizimi
-ms.date: 03/25/2019
+ms.date: 05/07/2019
 helpviewer_keywords:
 - lambda expressions [C++], syntax
 ms.assetid: 5d6154a4-f34d-4a15-970d-7e7de45f54e9
-ms.openlocfilehash: 2df2c203024e1b50cffdcb15af834fe09effaae2
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 37e4a512678bf276b5244fd54945f49a37ff8d01
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62216517"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65222394"
 ---
 # <a name="lambda-expression-syntax"></a>Lambda İfadesi Sözdizimi
 
@@ -83,7 +83,7 @@ There are 4 even numbers in the vector.
 
 ## <a name="example-2-using-a-function-object"></a>Örnek 2: Bir işlev nesnesi kullanma
 
-Bazen bir lambda önceki örnekten daha fazla genişletmek için çok kullanışsız olur. Sonraki örnek ile birlikte bir işlev nesnesi bir lambda yerine kullanır **for_each** örnek 1'dekiyle aynı sonucu elde etmek. Örneklerin her ikisi de çift sayıların sayısını depolar bir `vector` nesne. İşlemin durumunu korumak üzere `FunctorClass` sınıfı depoları `m_evenCount` bir üye değişkeni başvurusuna göre. İşlemi gerçekleştirmek için `FunctorClass` işlev çağrısı işlecini uygular **operator()**. Visual C++ derleyicisi, Örnek 1'deki lambda koduyla boyut ve performans açısından karşılaştırılabilir kodu oluşturur. Bu makaledeki gibi temel bir sorun için, daha basit bir lambda tasarımı işlev nesnesi tasarımından genellikle daha iyi bir tasarımdır. Ancak ilerde işlevsellik için önemli bir genişletme gerekeceğini düşünüyorsanız, kodu korumayı kolaylaştıracak işlev nesnesi tasarımını kullanabilirsiniz.
+Bazen bir lambda önceki örnekten daha fazla genişletmek için çok kullanışsız olur. Sonraki örnek ile birlikte bir işlev nesnesi bir lambda yerine kullanır **for_each** örnek 1'dekiyle aynı sonucu elde etmek. Örneklerin her ikisi de çift sayıların sayısını depolar bir `vector` nesne. İşlemin durumunu korumak üzere `FunctorClass` sınıfı depoları `m_evenCount` bir üye değişkeni başvurusuna göre. İşlemi gerçekleştirmek için `FunctorClass` işlev çağrısı işlecini uygular **operator()**. Microsoft C++ derleyici, boyut ve performans örnek 1'deki lambda koduyla karşılaştırılabilir kodu oluşturur. Bu makaledeki gibi temel bir sorun için, daha basit bir lambda tasarımı işlev nesnesi tasarımından genellikle daha iyi bir tasarımdır. Ancak ilerde işlevsellik için önemli bir genişletme gerekeceğini düşünüyorsanız, kodu korumayı kolaylaştıracak işlev nesnesi tasarımını kullanabilirsiniz.
 
 Hakkında daha fazla bilgi için **operator()**, bkz: [işlevi çağrısı](../cpp/function-call-cpp.md). Hakkında daha fazla bilgi için **for_each** çalışması için bkz: [for_each](../standard-library/algorithm-functions.md#for_each).
 

@@ -1,17 +1,17 @@
 ---
 title: C++'deki Lambda İfadeleri
-ms.date: 11/19/2018
+ms.date: 05/07/2019
 helpviewer_keywords:
 - lambda expressions [C++]
 - lambda expressions [C++], overview
 - lambda expressions [C++], vs. function objects
 ms.assetid: 713c7638-92be-4ade-ab22-fa33417073bf
-ms.openlocfilehash: 9ebe4fec06996e908c619b6ac14af098b1c07a01
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c7543b3558da88b41102fa7b790bb9d9f3f18463
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62216499"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65222375"
 ---
 # <a name="lambda-expressions-in-c"></a>C++'deki Lambda İfadeleri
 
@@ -157,7 +157,7 @@ Genellikle, sabit değerli bir lambdanın işlev çağrısı işleci, ancak kull
 
 ### <a name="exception-specification"></a>Özel Durum Belirtimi
 
-Kullanabileceğiniz `noexcept` lambda ifadesi bir özel durum oluşturmadığını belirtmek için özel durum belirtimi. Normal işlevlerde olduğu Visual C++ derleyicisi uyarısını üretir [C4297](../error-messages/compiler-warnings/compiler-warning-level-1-c4297.md) bir lambda ifadesi bildirir, `noexcept` özel durum belirtimi ve lambda gövdesi burada gösterildiği gibi bir özel durum oluşturur:
+Kullanabileceğiniz `noexcept` lambda ifadesi bir özel durum oluşturmadığını belirtmek için özel durum belirtimi. Normal İşlevler, Microsoft ile C++ derleyici uyarısı oluşturur [C4297](../error-messages/compiler-warnings/compiler-warning-level-1-c4297.md) bir lambda ifadesi bildirir, `noexcept` özel durum belirtimi ve lambda gövdesi burada gösterildiği gibi bir özel durum oluşturur:
 
 ```cpp
 // throw_lambda_expression.cpp

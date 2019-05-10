@@ -1,6 +1,6 @@
 ---
 title: Cstockpropımpl sınıfı
-ms.date: 11/06/2018
+ms.date: 05/06/2019
 f1_keywords:
 - CStockPropImpl
 - ATLCTL/ATL::CStockPropImpl
@@ -64,12 +64,12 @@ helpviewer_keywords:
 - controls [ATL], stock properties
 - stock properties, ATL controls
 ms.assetid: 45f11d7d-6580-4a0e-872d-3bc8b836cfda
-ms.openlocfilehash: 148c9571bb37e2b9063ca9290f51caa1fabb2d21
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 246e2a26db6adde0fec06523c1b8db09c5f552f3
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62277493"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65221067"
 ---
 # <a name="cstockpropimpl-class"></a>Cstockpropımpl sınıfı
 
@@ -182,7 +182,7 @@ Tür kitaplığının bir alt sürümü. Varsayılan değer 0’dır.
 
 `CStockPropImpl` sağlar **put** ve **alma** stok her özellik için yöntemleri. Bu yöntemler veya her bir özellik ile ilişkili veri üyesi alma ve bildirim ve herhangi bir özellik değiştiğinde, kapsayıcı ile eşitlemek için gerekli kodu sağlayın.
 
-Visual C++, kendi sihirbazları üzerinden stok özellikleri için destek sağlar. Bir denetime stok Özellikler ekleme hakkında daha fazla bilgi için bkz. [ATL öğretici](../../atl/active-template-library-atl-tutorial.md).
+Visual Studio, kendi sihirbazları üzerinden stok özellikleri için destek sağlar. Bir denetime stok Özellikler ekleme hakkında daha fazla bilgi için bkz. [ATL öğretici](../../atl/active-template-library-atl-tutorial.md).
 
 Geriye dönük uyumluluk için `CStockPropImpl` de sunan `get_Window` ve `put_Window` yalnızca çağıran yöntemleri `get_HWND` ve `put_HWND`sırasıyla. Varsayılan uygulaması `put_HWND` HWND salt okunur bir özellik olması gerektiğinden E_FAIL döndürür.
 

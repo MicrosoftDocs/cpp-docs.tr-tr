@@ -8,12 +8,12 @@ helpviewer_keywords:
 - IDL files [C++], attributes
 - .idl files [C++]
 ms.assetid: 04c596f4-c97b-4952-8053-316678b1d0b6
-ms.openlocfilehash: a699e327eec056bbb36747840990bb9c7ccc259b
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 29761d814505d2c2dd435d3416fe2367e1c16073
+ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62409557"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "65448413"
 ---
 # <a name="idl-attributes"></a>IDL Öznitelikleri
 
@@ -27,7 +27,7 @@ Artık, Visual C++ IDL öznitelikleri kullanarak bir kaynak kodu dosyası içind
 
 İle kullanılmadığı zaman [COM öznitelikleri](com-attributes.md), IDL öznitelikleri, arabirimleri tanımlamanıza olanak tanır. Kaynak kodu derlendiğinde, öznitelikler, oluşturulan .idl dosyasının tanımlamak için kullanılır. ATL projesinde COM öznitelikleri ile kullanıldığında, bazı IDL, gibi öznitelikleri `coclass`, kod projesine hatalara neden olur.
 
-Unutmayın [idl_quote](idl-quote.md) sağlar, kullandığınız Visual geçerli sürümünde desteklenmeyen MIDL yapıları C++. Bu ve diğer özniteliklerini gibi [importlib](importlib.md) ve [ıncludelıb](includelib-cpp.md) geçerli Visual C++ projesinde varolan bir .idl dosyaları kullanmak için yardımcı.
+Unutmayın [idl_quote](idl-quote.md) sağlar, kullandığınız Visual geçerli sürümünde desteklenmeyen MIDL yapıları C++. Bu ve diğer özniteliklerini gibi [importlib](importlib.md) ve [ıncludelıb](includelib-cpp.md) mevcut .idl dosyalarını geçerli Visual Studio içinde kullanmak için yardımcı C++ proje.
 
 |Öznitelik|Açıklama|
 |---------------|-----------------|

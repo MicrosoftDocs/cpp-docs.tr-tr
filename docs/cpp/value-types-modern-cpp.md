@@ -1,14 +1,14 @@
 ---
 title: Değer Türleri (Modern C++)
-ms.date: 11/04/2016
+ms.date: 05/07/2019
 ms.topic: conceptual
 ms.assetid: f63bb62c-60da-40d5-ac14-4366608fe260
-ms.openlocfilehash: 32cdb29ec1c59081ad7e0493888f290f21561d2b
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 204ea9f86377eb8a5796f01cb81a9161163d9649
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62390912"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65221890"
 ---
 # <a name="value-types-modern-c"></a>Değer Türleri (Modern C++)
 
@@ -49,7 +49,7 @@ test.cpp(15) : error C2248: 'MyRefType::operator =' : cannot access private memb
 
 ## <a name="value-types-and-move-efficiency"></a>Değer türleri ve verimliliği Taşı
 
-Yeni kopya iyileştirmeleri nedeniyle kopyalama ayırma yükü önlenmiş olur. Örneğin, dizelerden oluşan bir vektörü ortasında bir dize eklediğinizde, olacaktır kopyalama yeniden ayırma zahmetine, yalnızca bir move - bile vektör bir Büyüt sonuçlanır. Bu örneği için bir ekleme işlemi iki çok büyük nesneler üzerinde gerçekleştirmek, diğer işlemler için de geçerlidir. Bu değer işlemi iyileştirmeleri nasıl etkinleştirebilirim? Çok kopya oluşturucuları otomatik olarak derleyici tarafından oluşturulabilir gibi bazı C++ Derleyicileri, derleyici bu sizin için örtük olarak etkinleştirir. Ancak, Visual C++'da, kendi sınıfınızı "atama ve Oluşturucular, sınıf tanımında bildirerek taşımak için katılım" gerekir. Bu çift ve işareti kullanılarak elde edilir (& &) uygun üyesini rvalue başvurusu işlev bildirimleri ve tanımlayan bir taşıma oluşturucusuna ve taşıma ataması yöntemlerinde.  Ayrıca "dışında kaynak nesnesi guts çalmak için" doğru kod eklemeniz gerekir.
+Yeni kopya iyileştirmeleri nedeniyle kopyalama ayırma yükü önlenmiş olur. Örneğin, dizelerden oluşan bir vektörü ortasında bir dize eklediğinizde, olacaktır kopyalama yeniden ayırma zahmetine, yalnızca bir move - bile vektör bir Büyüt sonuçlanır. Bu örneği için bir ekleme işlemi iki çok büyük nesneler üzerinde gerçekleştirmek, diğer işlemler için de geçerlidir. Bu değer işlemi iyileştirmeleri nasıl etkinleştirebilirim? Çok kopya oluşturucuları otomatik olarak derleyici tarafından oluşturulabilir gibi bazı C++ Derleyicileri, derleyici bu sizin için örtük olarak etkinleştirir. Bununla birlikte, C++, kendi sınıfınızı "atama ve Oluşturucular, sınıf tanımında bildirerek taşımak için katılımı" gerekir. Bu çift ve işareti kullanılarak elde edilir (& &) uygun üyesini rvalue başvurusu işlev bildirimleri ve tanımlayan bir taşıma oluşturucusuna ve taşıma ataması yöntemlerinde.  Ayrıca "dışında kaynak nesnesi guts çalmak için" doğru kod eklemeniz gerekir.
 
 Etkin taşıma varsa nasıl karar verebilirim? Zaten etkin yapı kopyalamanız biliyorsanız, muhtemelen derin kopya ucuz olabilir, etkin taşımak istersiniz. Destek taşıma olduğunu biliyorsanız, ancak bunu mutlaka etkin kopyalama istediğiniz anlamına gelmez. Bu ikinci durumda, bir "yalnızca taşıma türü" adlı. Standart Kitaplığı'nda zaten bir örnek `unique_ptr`. Yan Not, eski olarak `auto_ptr` kullanım dışıdır ve tarafından değiştirildi `unique_ptr` tam C++'ın önceki sürümünü taşıma semantiği desteği eksikliği nedeniyle.
 

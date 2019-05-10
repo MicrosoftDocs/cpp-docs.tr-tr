@@ -5,18 +5,14 @@ f1_keywords:
 - namespace_CPP
 - using_CPP
 helpviewer_keywords:
-- namespaces [C++], C++
 - namespaces [C++]
-- namespaces [C++], global
-- global namespace
-- Visual C++, namespaces
 ms.assetid: d1a5a9ab-1cad-47e6-a82d-385bb77f4188
-ms.openlocfilehash: 532fdcb5de179bd2fdeb25091ace7210d55a2658
-ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
+ms.openlocfilehash: 15717c6f2f34836de9b546af203a45dc8099d4d4
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "64345909"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65222358"
 ---
 # <a name="namespaces-c"></a>Ad Alanları (C++)
 

@@ -1,17 +1,17 @@
 ---
 title: DEF Dosyaları Kullanarak DLL'den Dışarı Aktarma
-ms.date: 01/09/2018
+ms.date: 05/06/2019
 helpviewer_keywords:
 - def files [C++], exporting from DLLs
 - .def files [C++], exporting from DLLs
 - exporting DLLs [C++], DEF files
 ms.assetid: 9d31eda2-184e-47de-a2ee-a93ebd603f8e
-ms.openlocfilehash: 35f55ea525bd03c5b0b1b1750d25c1223bc608fc
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 92a140c6491e9e3f0d356509862dee39ebe3fae6
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62195487"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65220777"
 ---
 # <a name="exporting-from-a-dll-using-def-files"></a>DEF Dosyaları Kullanarak DLL'den Dışarı Aktarma
 
@@ -36,7 +36,10 @@ EXPORTS
 
 Kullanırsanız [MFC DLL Sihirbazı](../mfc/reference/mfc-dll-wizard.md) MFC DLL'yi oluşturmak için sihirbaz sizin için iskelet bir DEF dosyası oluşturur ve projenize otomatik olarak ekler. Bu dosyaya dışa aktarılacak işlevlerin adlarını ekleyin. İçin MFC olmayan DLL'leri, DEF dosyasını kendiniz oluşturmalı ve projenize ekleyin. Ardından **proje** > **özellikleri** > **bağlayıcı** > **giriş**  >  **Modül tanım dosyası** ve DEF dosyası adını girin. Her yapılandırma ve platform için bu adımı yineleyin veya bunu tek seferde seçerek **yapılandırma tüm yapılandırmaları =**, ve **Platform tüm platformlar =**.
 
-C++ dosyasındaki işlevleri dışa aktarıyorsanız, düzenlenmiş adları DEF dosyasında yerleştirin veya extern "C"'ı kullanarak dışa aktarılan işlevlerinizi standart C bağlantısıyla tanımlamanız gerekir. Düzenlenmiş adlar DEF dosyasına koymanız gerekiyorsa, bunları kullanarak elde edebilirsiniz [DUMPBIN](../build/reference/dumpbin-reference.md) aracını veya bağlayıcı [/MAP](../build/reference/map-generate-mapfile.md) seçeneği. Derleyici tarafından üretilen düzenlenmiş adların derleyiciye özel olduğunu unutmayın. DEF dosyasına Visual C++ Derleyici tarafından üretilen düzenlenmiş adların yerleştirirseniz, bağlanan uygulamalar da böylece uygulamadaki düzenlenmiş adlar DLL'nin DEF f dışa aktarılan adlarla eşleşen aynı Visual C++ sürümü kullanılarak oluşturulmalıdır ile.
+C++ dosyasındaki işlevleri dışa aktarıyorsanız, düzenlenmiş adları DEF dosyasında yerleştirin veya extern "C"'ı kullanarak dışa aktarılan işlevlerinizi standart C bağlantısıyla tanımlamanız gerekir. Düzenlenmiş adlar DEF dosyasına koymanız gerekiyorsa, bunları kullanarak elde edebilirsiniz [DUMPBIN](../build/reference/dumpbin-reference.md) aracını veya bağlayıcı [/MAP](../build/reference/map-generate-mapfile.md) seçeneği. Derleyici tarafından üretilen düzenlenmiş adların derleyiciye özel olduğunu unutmayın. Microsoft tarafından üretilen düzenlenmiş adların yerleştirdiğiniz C++ derleyici (MSVC) DEF dosyasına bağlanan uygulamalar gerekir ayrıca oluşturulur MSVC aynı sürümünü kullanarak uygulamadaki düzenlenmiş adlar, dışa aktarılan adlarla eşleşmesi DLL'nin DEF dosyası. 
+
+> [!NOTE]
+> Visual Studio 2015 ile oluşturulan bir DLL Visual Studio 2017 veya Visual Studio 2019 ile oluşturulmuş uygulamalar tarafından kullanılır.
 
 Oluşturuyorsanız bir [uzantı DLL'si](../build/extension-dlls-overview.md), ve bir DEF dosyası kullanarak dışa aktarıyorsanız aşağıdaki kodu dışa aktarılan sınıfları içeren üstbilgi dosyalarınızın başında ve sonunda:
 

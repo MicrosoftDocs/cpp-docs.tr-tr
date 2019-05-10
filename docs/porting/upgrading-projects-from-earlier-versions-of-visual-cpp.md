@@ -1,16 +1,17 @@
 ---
 title: Önceki Visual C++ Sürümü Projelerini Yükseltme
-ms.date: 11/04/2016
+description: Microsoft yükseltme C++ projeleri Visual Studio'nun daha eski sürümlerinden.
+ms.date: 05/03/2019
 helpviewer_keywords:
 - 32-bit code porting
 - upgrading Visual C++ applications, 32-bit code
 ms.assetid: 18cdacaa-4742-43db-9e4c-2d9e73d8cc84
-ms.openlocfilehash: 41cac1b23d5ab16825891ef654341016958ab826
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: fca4a87310f7ba0c21a6a7512dd93dce0f915f6b
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62337121"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65220390"
 ---
 # <a name="upgrading-projects-from-earlier-versions-of-visual-c"></a>Önceki Visual C++ Sürümü Projelerini Yükseltme
 
@@ -45,6 +46,6 @@ Hedeflenen Windows sürümlerine yönelik güncelleştirme hakkında daha fazla 
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Visual Studio 2017'deki Visual C++ Yenilikleri](../overview/what-s-new-for-visual-cpp-in-visual-studio.md)<br/>
+[Visual Studio'da Visual C++ yenilikleri](../overview/what-s-new-for-visual-cpp-in-visual-studio.md)<br/>
 [Visual C++ değişiklik geçmişi 2003 - 2015](../porting/visual-cpp-change-history-2003-2015.md)<br/>
 [Standart Olmayan Davranış](../cpp/nonstandard-behavior.md)

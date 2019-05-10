@@ -1,6 +1,6 @@
 ---
 title: switch Deyimi (C++)
-ms.date: 11/04/2016
+ms.date: 05/06/2019
 f1_keywords:
 - default_cpp
 - switch_cpp
@@ -10,12 +10,12 @@ helpviewer_keywords:
 - case keyword [C++], in switch statements
 - default keyword [C++]
 ms.assetid: 6c3f3ed3-5593-463c-8f4b-b33742b455c6
-ms.openlocfilehash: 67918b7df747d3bee923da500729e60b4fe04336
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 8136b03d9e54b4d49bcb1417238066bd86bc6b89
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62267095"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65221944"
 ---
 # <a name="switch-statement-c"></a>switch Deyimi (C++)
 
@@ -78,7 +78,7 @@ int main() {
 
 Yukarıdaki örnekte, `capa` artırılır `c` bir büyük harf olan `A`. **Sonu** deyiminden sonra `capa++` yürütülmesini sonlandırır **geçiş** deyim gövdesi ve denetim geçtiği **sırada** döngü. Olmadan **sonu** deyimi, yürütme "geçiş" sonraki etiketli deyime, böylece `lettera` ve `nota` de artırılır. Benzer bir amaç tarafından sunulan **sonu** bildirimi `case 'a'`. Varsa `c` küçük harfliyse `a`, `lettera` artırılır ve **sonu** açıklamayı sonlandıran **geçiş** deyim gövdesi. Varsa `c` değil bir `a` veya `A`, **varsayılan** deyimi yürütülür.
 
-**Visual Studio 2017 ve üzeri:** (bulunan [/Std: c ++ 17](../build/reference/std-specify-language-standard-version.md)) `[[fallthrough]]` özniteliği C ++ 17 standardına belirtildi. İçinde kullanılabilir bir **geçiş** deyimi bu başarısızlığı davranışı ipucu derleyici (veya kodu okuyan herkese) olarak hazırlanmıştır. Bu öznitelik derleyici davranışı üzerinde hiçbir etkisi için Visual C++ derleyicisi fallthrough davranışı, şu anda uyarmaz. Etiketli deyim içinde boş bir deyimi öznitelik uygulandığı dikkat edin. diğer bir deyişle noktalı virgül gereklidir.
+**Visual Studio 2017 ve üzeri:** (bulunan [/Std: c ++ 17](../build/reference/std-specify-language-standard-version.md)) `[[fallthrough]]` özniteliği C ++ 17 standardına belirtildi. İçinde kullanılabilir bir **geçiş** deyimi bu başarısızlığı davranışı ipucu derleyici (veya kodu okuyan herkese) olarak hazırlanmıştır. Microsoft C++ derleyici şu anda değil uyar fallthrough davranışlarına, böylece bu öznitelik derleyici davranışı üzerinde hiçbir etkisi olmaz. Etiketli deyim içinde boş bir deyimi öznitelik uygulandığı dikkat edin. diğer bir deyişle noktalı virgül gereklidir.
 
 ```cpp
 int main()

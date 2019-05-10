@@ -4,12 +4,12 @@ ms.date: 10/26/2017
 f1_keywords:
 - C4868
 ms.assetid: fc6aa7e5-34dd-4ec2-88bd-16e430361dc7
-ms.openlocfilehash: d0bc8716e53e71c52f6a31036a95d0b4cefedd79
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 72700091fcd22271e6913228a1206b3d5efcbdef
+ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62388715"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "65447172"
 ---
 # <a name="compiler-warning-level-4-c4868"></a>Derleyici Uyarısı (düzey 4) C4868
 
@@ -17,7 +17,7 @@ ms.locfileid: "62388715"
 
 Bir küme ayracıyla belirtilen Başlatıcı listesinde soldan sağa sırada değerlendirilecek öğeleridir. Derleyici olduğu bu düzeni olmasını garanti etmek mümkün iki durum vardır: ilk değere göre; geçirilen nesneleri öğelerin bazıları ise ile derlerken, ikincisi ise `/clr` ve bazı öğeleri alanlar nesne veya dizi öğeleri. Derleyici, soldan sağa değerlendirmesi garanti edemez zaman uyarısı C4868 yayar.
 
-Bu uyarı, Visual C++ 2015 güncelleştirme 2 için yapılmış derleyici uyumluluğu iş sonucu olarak oluşturulabilir. Visual C++ 2015 güncelleştirme 2 önce derlenmiş kod, şimdi C4868 oluşturabilirsiniz.
+Bu uyarı, Visual Studio 2015 güncelleştirme 2 için yapılmış derleyici uyumluluğu iş sonucu olarak oluşturulabilir. Visual Studio 2015 güncelleştirme 2 önce derlenmiş kod, şimdi C4868 oluşturabilirsiniz.
 
 Varsayılan olarak bu uyarıyı kapalıdır. Kullanım `/Wall` bu uyarıyı etkinleştirmek için.
 

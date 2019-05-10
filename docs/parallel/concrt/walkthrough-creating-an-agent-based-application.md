@@ -1,16 +1,16 @@
 ---
 title: 'İzlenecek yol: Aracı tabanlı uygulama oluşturma'
-ms.date: 11/04/2016
+ms.date: 04/25/2019
 helpviewer_keywords:
 - asynchronous agents, creating
 - agent class, example
 ms.assetid: 730f42ce-6d58-4753-b948-fd9c9ef2ce6c
-ms.openlocfilehash: 1d55c9879a3dd90bb4a40b61a3bf958dbe960bc3
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
-ms.translationtype: HT
+ms.openlocfilehash: c249bc8138a3617cce3eae836751575b2626f4aa
+ms.sourcegitcommit: 283cb64fd7958a6b7fbf0cd8534de99ac8d408eb
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62378069"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "64857306"
 ---
 # <a name="walkthrough-creating-an-agent-based-application"></a>İzlenecek yol: Aracı tabanlı uygulama oluşturma
 
@@ -40,9 +40,27 @@ Bu izlenecek yol aşağıdaki görevlerin nasıl gerçekleştirileceğini göste
 
 ##  <a name="createapplication"></a> Konsol uygulaması oluşturma
 
-Bu bölümde, programın kullanacağı üstbilgi dosyalarına başvuran bir Visual C++ konsol uygulaması oluşturma işlemi gösterilmektedir.
+Bu bölüm nasıl oluşturulacağını gösterir. bir C++ konsol programı kullanacağı üstbilgi dosyalarına başvuran uygulaması. İlk adımlar, kullandığınız Visual Studio'nun hangi sürümünün bağlı olarak farklılık gösterir. Sürüm Seçici, bu sayfanın üst sola doğru ayarlandığından emin olun.
 
-#### <a name="to-create-a-visual-c-application-by-using-the-win32-console-application-wizard"></a>Win32 Konsol Uygulama Sihirbazı'nı kullanarak bir Visual C++ uygulaması oluşturmak için
+::: moniker range="vs-2019"
+
+### <a name="to-create-a-c-console-application-in-visual-studio-2019"></a>Oluşturmak için bir C++ konsol uygulaması, Visual Studio 2019
+
+1. Ana menüden **dosya** > **yeni** > **proje** açmak için **yeni bir proje oluşturma** iletişim bir kutu.
+
+1. İletişim kutusunun üstündeki ayarlamak **dil** için **C++** ayarlayın **Platform** için **Windows**, ayarlayıp **proje türü** için **konsol**. 
+
+1. Filtrelenmiş proje türleri listesinden seçim **konsol uygulaması** ardından **sonraki**. Sonraki sayfaya girin `BasicAgent` proje adı olarak ve istenen proje konumu belirtin.
+
+1. Seçin **Oluştur** projeyi oluşturmak için.
+
+1. ' Nde proje düğümüne sağ **Çözüm Gezgini**ve **özellikleri**. Altında **yapılandırma özellikleri** > **C /C++** > **önceden derlenmiş üst bilgiler** > **önceden derlenmiş üst bilgi** seçin **Oluştur**.
+
+::: moniker-end
+
+::: moniker range="<=vs-2017"
+
+### <a name="to-create-a-c-console-application-in-visual-studio-2017-and-earlier"></a>Oluşturmak için bir C++ konsol uygulaması Visual Studio 2017 ve önceki sürümleri
 
 1. Üzerinde **dosya** menüsünde tıklatın **yeni**ve ardından **proje** görüntülenecek **yeni proje** iletişim kutusu.
 
@@ -50,7 +68,9 @@ Bu bölümde, programın kullanacağı üstbilgi dosyalarına başvuran bir Visu
 
 1. İçinde **Win32 Konsol Uygulama Sihirbazı** iletişim kutusu, tıklayın **son**.
 
-1. Stdafx.h öğesinde aşağıdaki kodu ekleyin.
+::: moniker-end
+
+1. Stdafx.h (veya pch.h Visual Studio sürümünüze bağlı olarak), aşağıdaki kodu ekleyin.
 
 [!code-cpp[concrt-basic-agent#1](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-an-agent-based-application_1.h)]
 

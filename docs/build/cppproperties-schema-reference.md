@@ -2,13 +2,13 @@
 title: CppProperties.json schema reference
 ms.date: 03/21/2019
 helpviewer_keywords:
-- CMake in Visual C++
-ms.openlocfilehash: 43ffa0e92649fe233c6a743d4b64a2749cb28f5a
-ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
+- CMake in Visual Studio
+ms.openlocfilehash: 05bb92b0fe791ad8b0037665c2db32a08fa52d7c
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "64341635"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65220846"
 ---
 # <a name="cpppropertiesjson-schema-reference"></a>CppProperties.json schema reference
 

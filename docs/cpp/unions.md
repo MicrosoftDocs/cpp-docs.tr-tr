@@ -1,18 +1,18 @@
 ---
 title: Birleşimler
-ms.date: 11/19/2018
+ms.date: 05/06/2019
 f1_keywords:
 - union_cpp
 helpviewer_keywords:
 - class types [C++], unions as
 - union keyword [C++]
 ms.assetid: 25c4e219-fcbb-4b7b-9b64-83f3252a92ca
-ms.openlocfilehash: f14f1197c4c835e9dfb753b1396e12e2d2f12772
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 58f4940d209b783b00c7167265ff1a2a733c947c
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62312181"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65222336"
 ---
 # <a name="unions"></a>Birleşimler
 
@@ -28,7 +28,7 @@ union [name]  { member-list };
 
 ### <a name="parameters"></a>Parametreler
 
-*Adı*<br/>
+*name*<br/>
 Birleşime verilen tür adı.
 
 *üye listesi*<br/>
@@ -64,7 +64,6 @@ int main()
 Önceki örnekte, birleşim erişen herhangi bir kod üye verileri tutan bilmesi gerekir. En yaygın bu sorunun çözümü şu anda birleşimde depolanmakta olan verilerin türünü belirten ek sabit listesi üyesi ile birlikte bir yapı içinde birleşim içine sağlamaktır. Bu adlı bir *ayırt edici birleşim* ve aşağıdaki örnek, temel düzeni gösterir.
 
 ```cpp
-#include "stdafx.h"
 #include <queue>
 
 using namespace std;

@@ -1,6 +1,6 @@
 ---
 title: __declspec(dllexport) Kullanarak DLL'den Dışarı Aktarma
-ms.date: 11/04/2016
+ms.date: 05/06/2019
 f1_keywords:
 - dllexport
 - __declspec
@@ -10,18 +10,16 @@ helpviewer_keywords:
 - export directives [C++]
 - exporting DLLs [C++], __declspec(dllexport) keyword
 ms.assetid: a35e25e8-7263-4a04-bad4-00b284458679
-ms.openlocfilehash: 3b6b9733776f30fc8dcbfeee709b7d24e0f0187b
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 167060d0270004b8648d32af206865bfe66c3b4b
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62195322"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65220796"
 ---
 # <a name="exporting-from-a-dll-using-declspecdllexport"></a>__declspec(dllexport) Kullanarak DLL'den Dışarı Aktarma
 
-Microsoft gelen **__export** Visual 16-bit derleyici sürümü C++ derleyicinin, dışa aktarma adlarını otomatik olarak oluşturmak ve bunları .lib dosyasına yerleştirin. Bu .lib dosyası daha sonra yalnızca statik bir .lib gibi bir DLL ile bağlamak için kullanılabilir.
-
-Yeni derleyici sürümlerinde, veri, İşlevler, sınıflar veya sınıf üyesi işlevleri kullanarak bir DLL'nin dışa aktarabilirsiniz **__declspec(dllexport)** anahtar sözcüğü. **__declspec(dllexport)** bir .def dosyası kullanmanıza gerek yoktur nesne dosyasına dışarı aktarma yönergesi ekler.
+Veri, İşlevler, sınıflar veya sınıf üyesi işlevleri kullanarak bir DLL'nin dışa aktarabilirsiniz **__declspec(dllexport)** anahtar sözcüğü. **__declspec(dllexport)** bir .def dosyası kullanmanıza gerek yoktur nesne dosyasına dışarı aktarma yönergesi ekler.
 
 Bu kolaylık, tasarlanan C++ işlev adlarını dışarı aktarılmaya çalışılırken zaman belirgin. Ad düzenlemesi için standart bir belirtim olmadığından dışa aktarılan bir işlevin adı derleyici sürümlerine göre değişebilir. Kullanırsanız **__declspec(dllexport)**, DLL ve .exe dosyalarını yeniden derlenmesi için adlandırma kuralı değişikliklerinin yalnızca hesabına gerekli.
 
@@ -50,11 +48,6 @@ DLL'nizi oluştururken genellikle işlev prototiplerini ve/veya veriyorsunuz ve 
 ```
 
 **__declspec(dllexport)** işlev adlarını DLL'nin dışa aktarma tablosunda depolar. Tablonun boyutunu en iyi duruma getirmek istiyorsanız, bkz. [yerine sıra adına göre bir DLL işlevlerini dışa aktarma](exporting-functions-from-a-dll-by-ordinal-rather-than-by-name.md).
-
-> [!NOTE]
->  Win32 DLL kaynak kodunu Win16 taşırken her örneğini değiştirin **__export** ile **__declspec(dllexport)**.
-
-Bir başvuru, Win32 Winbase.h üstbilgi dosyasında arayın. Örnekler içeren **__declspec(dllimport)** kullanım.
 
 ## <a name="what-do-you-want-to-do"></a>Ne yapmak istiyorsunuz?
 

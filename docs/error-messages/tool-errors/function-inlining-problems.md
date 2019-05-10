@@ -10,11 +10,11 @@ helpviewer_keywords:
 - function inlining problems
 ms.assetid: 65d59943-4b3c-4a43-aeb6-dccbf7686740
 ms.openlocfilehash: f088b0f3ec94ad59c9c5576e6090a895bb88c3ad
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.sourcegitcommit: 283cb64fd7958a6b7fbf0cd8534de99ac8d408eb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62255506"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "64856881"
 ---
 # <a name="function-inlining-problems"></a>İşlev Satır İçi Kullanım Sorunları
 

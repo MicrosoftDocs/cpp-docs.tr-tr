@@ -4,12 +4,12 @@ ms.date: 08/30/2017
 helpviewer_keywords:
 - breaking changes [C++]
 ms.assetid: b38385a9-a483-4de9-99a6-797488bc5110
-ms.openlocfilehash: b381a2b7cc9a4ad4749f382838bdec5872a3decf
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: a0a13748894880c076f8d32c9c74afde1752504c
+ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62337017"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "65448978"
 ---
 # <a name="visual-c-change-history-2003---2015"></a>Visual C++ değişiklik geçmişi 2003-2015
 
@@ -36,7 +36,7 @@ Ayrıca, derleyici uyumluluğu yapılan sürekli geliştirmeler bazen nasıl der
 
 - [Eşzamanlılık Çalışma zamanı bozucu değişiklikler](#BK_ConcRT)
 
-## <a name="VC_2015"></a> Visual C++ 2015 uyumluluk değişiklikleri
+## <a name="VC_2015"></a> Visual Studio 2015 uyumluluk değişiklikleri
 
 ###  <a name="BK_CRT"></a> C çalışma zamanı kitaplığı (CRT)
 
@@ -2756,7 +2756,7 @@ Bu farklılıklar, kaynak kodu veya diğer derleme yapıtlarının etkileyebilir
         }
     ```
 
-- C++ standardı bir sınıfta açık özelleştirme izin vermez. Microsoft Visual C++ derleyicisi, bazı durumlarda, aşağıdaki örnekte gibi durumlarda izin verir, ancak derleyici ikinci işlevi birincinin bir özelleştirmesi olarak kabul etmediği için bir hata oluşturulur.
+- C++ standardı bir sınıfta açık özelleştirme izin vermez. Ancak Microsoft C++ derleyici aşağıdaki örnekte gibi durumlarda, bazı durumlarda, sağlar, derleyici ikinci işlevi birincinin bir özelleştirmesi olarak kabul etmediği için bir hata oluşturulur.
 
     ```cpp
     template < int N>
@@ -2994,7 +2994,7 @@ C++ Derleyici Visual Studio 2013, Visual Studio 2010'da uygulanmıştır, _ıter
 
 - ATL DLL ile birlikte ATL/MFC izleme aracı kaldırılır ve izleme mekanizması basitleşti. `CTraceCategory` Oluşturucusu şimdi bir parametre (kategori adı) ve izleme makroları CRT hata ayıklama raporlama işlevlerini çağırın.
 
-## <a name="visual-c-2012-breaking-changes"></a>Visual C++ 2012 bozucu değişiklikler
+## <a name="visual-studio-2012-breaking-changes"></a>Visual Studio 2012 bozucu değişiklikler
 
 ### <a name="compiler"></a>Derleyici
 
@@ -3042,19 +3042,19 @@ C++ Derleyici Visual Studio 2013, Visual Studio 2010'da uygulanmıştır, _ıter
 
 - C ++ 98/03 ve C ++ 11 standartları arasında bozucu değişiklik çağırmak için açık şablon bağımsız değişkenleri kullanarak `make_pair()` — olarak `make_pair<int, int>(x, y)` — genellikle Visual Studio 2012'de Visual c++ derleme değil. Çözümü her zaman çağırmaktır `make_pair() `açık şablon bağımsız değişkenler olmadan — olarak `make_pair(x, y)`. Açık şablon bağımsız değişkenleri defeats işlevin amacı sağlama. Sonuçta elde edilen tür üzerinde kesin denetim gerektiren kullanırsanız `pair` yerine `make_pair` — olarak `pair<short, short>(int1, int2)`.
 
-- Başka bir değişiklik C ++ 98/03 ve C ++ 11 standartları arasında: A B ve B için örtük olarak dönüştürülebilir olduğunda C için örtük olarak dönüştürülebilir, ancak bir C, C ++ 98/03 ve Visual C++ 2010 izin örtük olarak dönüştürülebilir değil `pair<A, X>` (örtük veya açık) için dönüştürülecek `pair<C, X>`. (Başka bir tür X, burada ilgi değildir ve ilk çift türüne özgü değildir.) Visual Studio 2012'de C++ derleyicisi, bir C için örtük olarak dönüştürülebilir değil ve aşırı yükleme çözünürlüğü çifti dönüştürme kaldırır algılar. Bu değişiklik, birçok senaryo için pozitiftir. Örneğin, aşırı yükleme `func(const pair<int, int>&)` ve `func(const pair<string, string>&)`ve çağırma `func()` ile `pair<const char *, const char *>` bu değişiklik ile derlenir. Ancak, bu değişiklik agresif çifti dönüştürmeleri yararlandı kod keser. Bu tür kod genellikle açıkça bir parçasını dönüştürme gerçekleştirerek düzeltilebilir — geçirerek gibi `make_pair(static_cast<B>(a), x)` bekleyen bir işleve `pair<C, X>`.
+- Başka bir değişiklik C ++ 98/03 ve C ++ 11 standartları arasında: A B ve B için örtük olarak dönüştürülebilir olduğunda C için örtük olarak dönüştürülebilir, ancak bir C, C ++ 98/03 ve izin verilen Visual Studio 2010 için örtük olarak dönüştürülebilir değil `pair<A, X>` (örtük veya açık) için dönüştürülecek `pair<C, X>`. (Başka bir tür X, burada ilgi değildir ve ilk çift türüne özgü değildir.) Visual Studio 2012'de C++ derleyicisi, bir C için örtük olarak dönüştürülebilir değil ve aşırı yükleme çözünürlüğü çifti dönüştürme kaldırır algılar. Bu değişiklik, birçok senaryo için pozitiftir. Örneğin, aşırı yükleme `func(const pair<int, int>&)` ve `func(const pair<string, string>&)`ve çağırma `func()` ile `pair<const char *, const char *>` bu değişiklik ile derlenir. Ancak, bu değişiklik agresif çifti dönüştürmeleri yararlandı kod keser. Bu tür kod genellikle açıkça bir parçasını dönüştürme gerçekleştirerek düzeltilebilir — geçirerek gibi `make_pair(static_cast<B>(a), x)` bekleyen bir işleve `pair<C, X>`.
 
-- Visual C++ 2010 benzetimli variadic şablonları — Örneğin, `make_shared<T>(arg1, arg2, argN)`— bağımsız değişkenleri, aşırı yüklemeler ve uzmanlıkları out ile önişlemci makineler damgası tarafından 10, bir sınıra kadar. Visual Studio 2012'de, derleme sürelerini ve kullanıcıların çoğu için derleyicinin bellek tüketimini geliştirmek için beş bağımsız değişkenler için bu sınır azaltılır. Ancak, _varıadıc_max açıkça proje genelinde 10 tanımlayarak önceki sınırı ayarlayabilirsiniz.
+- Visual Studio 2010 benzetimli variadic şablonları — Örneğin, `make_shared<T>(arg1, arg2, argN)`— bağımsız değişkenleri, aşırı yüklemeler ve uzmanlıkları out ile önişlemci makineler damgası tarafından 10, bir sınıra kadar. Visual Studio 2012'de, derleme sürelerini ve kullanıcıların çoğu için derleyicinin bellek tüketimini geliştirmek için beş bağımsız değişkenler için bu sınır azaltılır. Ancak, _varıadıc_max açıkça proje genelinde 10 tanımlayarak önceki sınırı ayarlayabilirsiniz.
 
 - C ++ 11 17.6.4.3.1 [macro.names]/2 engelliyor anahtar sözcüklerin Makro değişikliği olduğunda C++ standart kitaplığı üst bilgiler dahil edilir. Bunlar anahtar sözcükleri makrosu yerini tespit ederse üstbilgileri derleyici hataları artık gösterin. (Bu kodu derlemek _ALLOW_KEYWORD_MACROS tanımlama verir, ancak biz kesinlikle bu kullanımı önerilmemektedir.) Özel durum, makro biçiminde olarak `new` üstbilgileri aygıtlarınızı kendilerini kullanarak savunmak varsayılan olarak, izin `#pragma push_macro("new")` / `#undef new` / `#pragma pop_macro("new")`. Tam olarak bu ne adından da anlaşılacağı _ENFORCE_BAN_OF_MACRO_NEW tanımlama yapar.
 
-- Çeşitli iyileştirmeler ve hata ayıklama denetimlerini uygulamak için C++ Standart Kitaplığı uygulaması kasıtlı olarak Visual Studio sürümleri arasında ikili uyumluluğu keser (2005, 2008, 2010, 2012). C++ Standart Kitaplığı kullanıldığında, nesne dosyaları ve statik kitaplıklar bir ikili olarak (EXE veya DLL) farklı sürümler kullanılarak derlenmiş ve C++ Standart Kitaplığı nesneleri geçirme tarafından derlenmiş ikili dosyaları arasında engelliyor karıştırma engelliyor farklı sürümleri kullanılarak. Nesne dosyaları ve statik kitaplıklar karıştırma (kullanarak C++ Visual kullanılarak derlenmiş standart Kitaplığı C++ 2010 kullanılarak derlenmiş bulunanlarla C++ Visual Studio 2012'de derleyici _MSC_VER uyuşmazlığı ilgili bağlayıcı hataları yayar _MSC_VER, derleyicinin ana sürümünü içeren makrodur olduğu (görsel için 1700 C++ Visual Studio 2012'de). Bu denetim DLL karmasını algılayamaz ve Visual C++ 2008 veya önceki bir sürümü içeren karmasını algılayamaz.
+- Çeşitli iyileştirmeler ve hata ayıklama denetimlerini uygulamak için C++ Standart Kitaplığı uygulaması kasıtlı olarak Visual Studio sürümleri arasında ikili uyumluluğu keser (2005, 2008, 2010, 2012). C++ Standart Kitaplığı kullanıldığında, nesne dosyaları ve statik kitaplıklar bir ikili olarak (EXE veya DLL) farklı sürümler kullanılarak derlenmiş ve C++ Standart Kitaplığı nesneleri geçirme tarafından derlenmiş ikili dosyaları arasında engelliyor karıştırma engelliyor farklı sürümleri kullanılarak. Nesne dosyaları ve statik kitaplıklar karıştırma (kullanarak C++ kullanılarak derlenmiş bulunanlarla Visual Studio 2010 kullanılarak derlenmiş standart Kitaplığı C++ Visual Studio 2012'de derleyici _MSC_VER uyuşmazlığı ilgili bağlayıcı hataları verir burada _MSC_VER, derleyicinin ana sürümünü içeren makrodur olduğu (görsel için 1700 C++ Visual Studio 2012'de). Bu denetim DLL karmasını algılayamaz ve Visual Studio 2008 veya önceki bir sürümü içeren karmasını algılayamaz.
 
-- _Iterator_debug_level uyuşmazlıkları algılamak ek olarak, hangi uygulanan görselde C++ 2010 C++ derleyici Visual Studio 2012'de çalışma zamanı kitaplığı uyuşmazlıkları algılar. Bu uyuşmazlıkları oluşur, derleyici seçeneklerinin `/MT` (statik sürüm), `/MTd` (statik hata ayıklama), `/MD` (dinamik sürüm) ve `/MDd` (dinamik hata ayıklama) karıştırılır.
+- _Iterator_debug_level uyuşmazlıkları algılamak ek olarak, hangi uygulanan Visual Studio 2010'da C++ derleyici Visual Studio 2012'de çalışma zamanı kitaplığı uyuşmazlıkları algılar. Bu uyuşmazlıkları oluşur, derleyici seçeneklerinin `/MT` (statik sürüm), `/MTd` (statik hata ayıklama), `/MD` (dinamik sürüm) ve `/MDd` (dinamik hata ayıklama) karıştırılır.
 
 - `operator<()`, `operator>()`, `operator<=()`, ve `operator>=()` için daha önce sağlanan `std::unordered_map` ve `stdext::hash_map` aileleri kapsayıcıların, ancak kendi uygulamalarını kullanışlı değildir. Bu standart işleçler, Visual Studio 2012'de Visual C++'da kaldırılmıştır. Ayrıca, uygulanması `operator==()` ve `operator!=()` için `std::unordered_map` ailesi karşılamak için genişletilmişse `stdext::hash_map` ailesi. (Kullanımını kaçınmanızı öneririz `stdext::hash_map` yeni kod ailesi.)
 
-- C ++ 11 22.4.1.4 [locale.codecvt] belirtir `codecvt::length()` ve `codecvt::do_length()` değiştirilebilir zamanınızı `stateT&` parametreleri, ancak Visual C++ 2010 sürdü `const stateT&`. Visual Studio 2012'de C++ derleyici alan `stateT&` standart tarafından zorunlu olarak. Bu sanal işlevi geçersiz kılma girişiminde herkes için önemli bir fark `do_length()`.
+- C ++ 11 22.4.1.4 [locale.codecvt] belirtir `codecvt::length()` ve `codecvt::do_length()` değiştirilebilir zamanınızı `stateT&` parametreleri, ancak Visual Studio 2010 sürdü `const stateT&`. Visual Studio 2012'de C++ derleyici alan `stateT&` standart tarafından zorunlu olarak. Bu sanal işlevi geçersiz kılma girişiminde herkes için önemli bir fark `do_length()`.
 
 ### <a name="crt"></a>CRT
 
@@ -3228,7 +3228,7 @@ C++ Derleyici Visual Studio 2013, Visual Studio 2010'da uygulanmıştır, _ıter
 
 - Yeniden adlandırılan `CPane::GetDockSiteRow(CDockingPanesRow *)` için `CPane::SetDockSiteRow`.
 
-## <a name="visual-c-2010-breaking-changes"></a>Visual C++ 2010 bozucu değişiklikler
+## <a name="visual-studio-2010-breaking-changes"></a>Visual Studio 2010 bozucu değişiklikler
 
 ### <a name="compiler"></a>Derleyici
 
@@ -3244,23 +3244,23 @@ C++ Derleyici Visual Studio 2013, Visual Studio 2010'da uygulanmıştır, _ıter
 
 - Her ikisi de derlerseniz `/GL` (bütün Program iyileştirmesi) ve `/clr` (ortak dil çalışma zamanı derlemesi) derleyici seçenekleri, `/GL` seçeneği yoksayılır. Derleyici Seçenekleri birleşimini az avantaj sağlamadığı bu değişiklik yapılmıştır. Bu değişikliğe bağlı olarak, derleme performansı geliştirildi.
 
-- Varsayılan olarak, trigrafları devre dışı için Visual C++ 2010'da destekler. Kullanım `/Zc:trigraphs` trigrafları desteğini etkinleştirmek için derleyici seçeneği. Bir trigraf oluşur birbirini izleyen iki soru işareti ("??") üçüncü bir benzersiz karakter. Derleyici bir trigraf karşılık gelen bir noktalama karakteri ile değiştirir. Örneğin, derleyici değiştirir `??=` trigraf '#' karakteri ile. Trigrafları, C kaynak dosyalarında bazı noktalama karakterleri için uygun grafik sunumlar içermeyen bir karakter kümesini kullandırır kullanın.
+- Varsayılan olarak, trigrafları devre dışı için Visual Studio 2010'da destekler. Kullanım `/Zc:trigraphs` trigrafları desteğini etkinleştirmek için derleyici seçeneği. Bir trigraf oluşur birbirini izleyen iki soru işareti ("??") üçüncü bir benzersiz karakter. Derleyici bir trigraf karşılık gelen bir noktalama karakteri ile değiştirir. Örneğin, derleyici değiştirir `??=` trigraf '#' karakteri ile. Trigrafları, C kaynak dosyalarında bazı noktalama karakterleri için uygun grafik sunumlar içermeyen bir karakter kümesini kullandırır kullanın.
 
 - Bağlayıcı artık Windows 98 için en iyi duruma getirme destekler. `/OPT` (İyileştirmeler) seçeneğini belirtirseniz bir derleme zamanı hatası oluşturur `/OPT:WIN98` veya `/OPT:NOWIN98`.
 
 - DebugInformationFormat ve RuntimeLibrary belirtilen varsayılan derleyici seçenekleri özellikleri değiştirildi sistem oluşturun. Varsayılan olarak, bu derleme özellikleri Visual C++ tarafından oluşturulan projeleri belirtilen 7.0 10.0 ile serbest bırakır. Visual C++ 6.0 tarafından oluşturulan bir projeyi geçirirseniz, yoksa bu özellikler için bir değer belirtmek göz önünde bulundurun.
 
-- Visual C++ 2010 RuntimeLibrary = çok iş parçacıklı (`/MD`) ve DebugInformationFormat ProgramDatabase = (`/Zi`). Visual c++ 9.0, RuntimeLibrary = çok iş parçacıklı (`/MT`) ve DebugInformationFormat = devre dışı.
+- Visual Studio 2010, RuntimeLibrary = çok iş parçacıklı (`/MD`) ve DebugInformationFormat ProgramDatabase = (`/Zi`). Visual c++ 9.0, RuntimeLibrary = çok iş parçacıklı (`/MT`) ve DebugInformationFormat = devre dışı.
 
 ### <a name="clr"></a>CLR
 
 - Microsoft C# ve Visual Basic derleyicileri artık hiç birincil birlikte çalışma derlemesi (PIA Hayır) oluşturabilir. Hayır-PIA derleme COM türleri ilgili birincil birlikte çalışma derlemesi (PIA) dağıtımını olmadan kullanabilirsiniz. Kitaplığı kullanan herhangi bir no-PIA derleme başvurusu önce Visual C# veya Visual Basic tarafından üretilen Hayır PIA derlemeleri kullanılırken, derleme komut PIA derlemesine başvuru vermelisiniz.
 
-### <a name="visual-c-projects-and-msbuild"></a>Visual C++ projeleri ve MSBuild
+### <a name="visual-studio-c-projects-and-msbuild"></a>Visual Studio C++ projeler ve MSBuild
 
-- Visual C++ projeleri artık MSBuild araç temel alır. Sonuç olarak, proje dosyaları yeni bir XML dosya biçimi ve .vcxproj dosyası sonekini kullanın. Visual C++ 2010 otomatik olarak proje dosyaları, Visual Studio'nun önceki sürümlerinden yeni bir dosya biçimine dönüştürür. Mevcut bir projeyi önceki derleme aracını, VCBUILD.exe veya proje dosya soneki .vcproj üzerinde bağlıysa etkilenir.
+- Visual Studio C++ projeleri artık MSBuild araç temel. Sonuç olarak, proje dosyaları yeni bir XML dosya biçimi ve .vcxproj dosyası sonekini kullanın. Visual Studio 2010 otomatik olarak proje dosyaları, Visual Studio'nun önceki sürümlerinden yeni bir dosya biçimine dönüştürür. Mevcut bir projeyi önceki derleme aracını, VCBUILD.exe veya proje dosya soneki .vcproj üzerinde bağlıysa etkilenir.
 
-- Önceki sürümlerde, Visual C++ özellik sayfaları geç değerlendirme desteklenmiyor. Örneğin, bir alt özellik sayfası bir üst özellik sayfası içeri aktarmak ve üst alt öğe içinde tanımlanan bir değişkeni diğer değişkenleri tanımlamak için kullanabilirsiniz. Geç değerlendirme üst, alt özellik sayfası bile alınmadan önce alt değişkenini kullanmak etkin. MSBuild yalnızca erken değerlendirme desteklediğinden tanımlanmadan önce Visual C++ 2010'da bir proje sayfası değişken kullanılamaz.
+- Önceki sürümlerde, Visual C++ özellik sayfaları geç değerlendirme desteklenmiyor. Örneğin, bir alt özellik sayfası bir üst özellik sayfası içeri aktarmak ve üst alt öğe içinde tanımlanan bir değişkeni diğer değişkenleri tanımlamak için kullanabilirsiniz. Geç değerlendirme üst, alt özellik sayfası bile alınmadan önce alt değişkenini kullanmak etkin. MSBuild yalnızca erken değerlendirme desteklediğinden tanımlanmadan önce Visual Studio 2010'da bir proje sayfası değişken kullanılamaz.
 
 ### <a name="ide"></a>IDE
 
@@ -3274,7 +3274,7 @@ C++ Derleyici Visual Studio 2013, Visual Studio 2010'da uygulanmıştır, _ıter
 
 - Kitaplıkları dağıtım modeli, bildirimler artık belirli bir dinamik bağlantı kitaplığı sürümü bulmak için kullanır. Bunun yerine, sürüm numarasının her dinamik bağlantı kitaplığının adı içerir ve kitaplığını bulmak için bu adı kullanın.
 
-- Visual Studio'nun önceki sürümlerinde, çalışma zamanı kitaplıkları yeniden oluşturulamadı. Visual C++ 2010 artık kendi kopyalarını çalıştırma zamanı kitaplık dosyaları C oluşturmayı da destekler.
+- Visual Studio'nun önceki sürümlerinde, çalışma zamanı kitaplıkları yeniden oluşturulamadı. Visual Studio 2010 artık kendi kopyalarını çalıştırma zamanı kitaplık dosyaları C oluşturmayı da destekler.
 
 ### <a name="standard-library"></a>Standart Kitaplık
 
@@ -3306,7 +3306,7 @@ C++ Derleyici Visual Studio 2013, Visual Studio 2010'da uygulanmıştır, _ıter
 
 - Birkaç yönergeleri Microsoft Macro Assembler başvurusu derleyicisinden kaldırıldı. Kaldırılan yönergeleridir `.186`, `.286`, `.286P`, `.287`, `.8086`, `.8087`, ve `.NO87`.
 
-## <a name="visual-c-2008-breaking-changes"></a>Visual C++ 2008 bozucu değişiklikler
+## <a name="visual-studio-2008-breaking-changes"></a>Visual Studio 2008 bozucu değişiklikler
 
 ### <a name="compiler"></a>Derleyici
 
@@ -3330,7 +3330,7 @@ C++ Derleyici Visual Studio 2013, Visual Studio 2010'da uygulanmıştır, _ıter
 
    - tag_name
 
-### <a name="visual-c-projects"></a>Visual C++ projeleri
+### <a name="visual-studio-c-projects"></a>Visual Studio C++ projeleri
 
 - Projeleri Visual Studio'nun önceki sürümlerinden yükseltme yaparken, büyüktür veya eşittir 0x0500 olmalı ve böylelikle WINVER ve _WIN32_WINNT'de makroları değiştirmek gerekebilir.
 
@@ -3386,7 +3386,7 @@ C++ Derleyici Visual Studio 2013, Visual Studio 2010'da uygulanmıştır, _ıter
 
 ### <a name="atl"></a>ATL
 
-- ATL CRT üzerinde bir bağımlılık oluşturulamıyor. Visual Studio'nun önceki sürümlerinde kullanabileceğinizi #define atl_mın_crt ATL projesinde CRT üzerinde en düşük düzeyde bağımlı hale getirmek için. Görselde C++ 2008 ' in tüm ATL projeleri atl_mın_crt tanımlanan bağımsız olarak CRT üzerinde en düşük düzeyde bağımlı olan.
+- ATL CRT üzerinde bir bağımlılık oluşturulamıyor. Visual Studio'nun önceki sürümlerinde kullanabileceğinizi #define atl_mın_crt ATL projesinde CRT üzerinde en düşük düzeyde bağımlı hale getirmek için. Visual Studio 2008'de tüm ATL projeleri atl_mın_crt tanımlanan bağımsız olarak CRT üzerinde en düşük düzeyde bağımlıdır.
 
 - ATL Sunucu codebase Codeplex'te bir paylaşılan kaynak proje olarak yayımlanmıştır ve Visual Studio'nun bir parçası yüklü değildir. Kodlama ve sınıflardan atlenc.h ve yardımcı işlevleri ve sınıfları atlutil.h ve atlpath.h kod çözme veri tutulmuştur ve artık ATL Kitaplığı'nın bir parçasıdır. ATL Sunucu ile ilişkilendirilen çeşitli dosyalar artık, Visual Studio'nun bir parçası değildir.
 
@@ -3396,7 +3396,7 @@ C++ Derleyici Visual Studio 2013, Visual Studio 2010'da uygulanmıştır, _ıter
 
 ### <a name="atlmfc-shared-classes"></a>ATL/MFC Paylaşılan Sınıfları
 
-- ATL CRT üzerinde bir bağımlılık oluşturulamıyor. Visual Studio'nun önceki sürümlerinde kullanabileceğinizi `#define ATL_MIN_CRT` ATL projesinde CRT üzerinde en düşük düzeyde bağımlı hale getirmek için. Görselde C++ 2008 ' in tüm ATL projeleri atl_mın_crt tanımlanan bağımsız olarak CRT üzerinde en düşük düzeyde bağımlı olan.
+- ATL CRT üzerinde bir bağımlılık oluşturulamıyor. Visual Studio'nun önceki sürümlerinde kullanabileceğinizi `#define ATL_MIN_CRT` ATL projesinde CRT üzerinde en düşük düzeyde bağımlı hale getirmek için. Visual Studio 2008'de tüm ATL projeleri atl_mın_crt tanımlanan bağımsız olarak CRT üzerinde en düşük düzeyde bağımlıdır.
 
 - ATL Sunucu codebase Codeplex'te bir paylaşılan kaynak proje olarak yayımlanmıştır ve Visual Studio'nun bir parçası yüklü değildir. Kodlama ve sınıflardan atlenc.h ve yardımcı işlevleri ve sınıfları atlutil.h ve atlpath.h kod çözme veri tutulmuştur ve artık ATL Kitaplığı'nın bir parçasıdır. ATL Sunucu ile ilişkilendirilen çeşitli dosyalar artık, Visual Studio'nun bir parçası değildir.
 
@@ -3420,7 +3420,7 @@ C++ Derleyici Visual Studio 2013, Visual Studio 2010'da uygulanmıştır, _ıter
 
 - Kullanım dışı ANSI API'ları: Çeşitli MFC yöntemler ANSI sürümleri kullanım dışı bırakılmıştır. Gelecekteki uygulamalarınızın bu yöntemleri Unicode sürümlerini kullanın. Daha fazla bilgi için **yapı gereksinimleri için Windows Vista ortak denetimleri**.
 
-## <a name="visual-c-2005-breaking-changes"></a>Visual C++ 2005 bozucu değişiklikler
+## <a name="visual-studio-2005-breaking-changes"></a>Visual Studio 2005 bozucu değişiklikler
 
 ### <a name="crt"></a>CRT
 

@@ -1,16 +1,16 @@
 ---
 title: 'Nasıl yapılır: Derlemeler için proje çıktı dosyalarını düzenleme'
-ms.date: 11/04/2016
+ms.date: 05/06/2019
 helpviewer_keywords:
-- Visual C++, output files
+- C++, output files
 - output files, organizing
 ms.assetid: 521d95ea-2dcc-4da0-b5eb-ac3e57941446
-ms.openlocfilehash: a675b535577b8757e92246249c94cd9760534740
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 202b2cbf135a5d8371354aac0fb8dd26367896c2
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62188824"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65220668"
 ---
 # <a name="how-to-organize-project-output-files-for-builds"></a>Nasıl yapılır: Derlemeler için proje çıktı dosyalarını düzenleme
 
@@ -70,4 +70,4 @@ Bir üretim ortamına dağıtma yaparken, çıktı dosyalarının konumu önemli
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Visual C++ Proje Türleri](reference/visual-cpp-project-types.md)
+[C++Visual Studio Proje türleri](reference/visual-cpp-project-types.md)

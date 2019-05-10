@@ -1,6 +1,6 @@
 ---
 title: İçeri ve Dışarı Aktarma
-ms.date: 11/04/2016
+ms.date: 05/06/2019
 helpviewer_keywords:
 - DLLs [C++], importing
 - exporting DLLs [C++]
@@ -8,12 +8,12 @@ helpviewer_keywords:
 - DLLs [C++], exporting from
 - __declspec(dllimport) keyword [C++]
 ms.assetid: 7c44c2aa-2117-4cec-9615-a65bfd3f8f7b
-ms.openlocfilehash: 882010cd28c291e9f49ca0f7dd9d646c70130184
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 03931f7f128ab0666890bb8e76677db67dda8fc7
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62188853"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65220633"
 ---
 # <a name="importing-and-exporting"></a>İçeri ve Dışarı Aktarma
 
@@ -31,8 +31,6 @@ Bir modül-tanımlama (.def) dosyası, bir DLL'nin çeşitli özniteliklerini ta
 
 ## <a name="using-declspec"></a>__Declspec kullanma
 
-Görsel C++ kullanan **__declspec(dllimport)** ve **__declspec(dllexport)** değiştirilecek **__export** daha önce görselin C++.
-
 Kullanmanız gerekmez **__declspec(dllimport)** doğru ancak bunun yapılması derlemek kodunuzu daha iyi kod oluşturmak derleyicinin sağlar. Bir işlevin bir DLL içinde veya değil, normal bir DLL sınırı aşıldığında bir işlev çağrısında mevcut olabilecek bir yöneltme düzeyi atlayan bir kod oluşturmak derleyicinin sağlayan mevcut olup olmadığını belirleyebilirsiniz çünkü daha iyi kod oluşturmak derleyicinin kuramıyor. Ancak, kullanmalısınız **__declspec(dllimport)** bir DLL içinde kullanılan değişkenler içeri aktarmak için.
 
 Uygun .def dosyası dışarı AKTARMALARI bölümüyle **__declspec(dllexport)** gerekli değildir. **__declspec(dllexport)** işlevler .def dosyası kullanmadan bir .exe veya .dll dosyasından dışarı aktarmak için kolay bir yol sağlamak üzere eklendi.
@@ -47,4 +45,4 @@ Win32 taşınabilir yürütülebilir dosya biçimi, içeri aktarmalar düzeltmek
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Visual C++'ta DLL'ler](dlls-in-visual-cpp.md)
+[Visual Studio'da C/C++ DLL'leri oluşturma](dlls-in-visual-cpp.md)

@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - '&& rvalue reference declarator'
 ms.assetid: eab0ce3a-c5a3-4992-aa70-6a8ab1f7491d
-ms.openlocfilehash: 185c2de5dc21dd305a2792d4ee8e6baf69c35b28
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 663b639dbfecf9253547e1dd3b4e40480c27b470
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62331096"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65222037"
 ---
 # <a name="rvalue-reference-declarator-ampamp"></a>Rvalue başvuru Bildirimcisi: &amp;&amp;
 
@@ -35,7 +35,7 @@ Rvalue başvuruları uygulamasını destekler *taşıma semantiği*, önemli öl
 
 Taşıma semantiği uygulamak için genellikle sınıfınıza bir *taşıma Oluşturucu,* ve isteğe bağlı olarak bir taşıma ataması işleci (**işleç =**), sınıfınıza. Taşıma semantiği, kaynakları rvalues değerleridir sonra otomatik olarak yararlanmak kopyalama ve atama işlemleri. Varsayılan kopya oluşturucusundan farklı olarak, derleyici varsayılan bir taşıma Oluşturucusu sağlamaz. Taşıma Oluşturucusu yazma ve uygulamanızda kullanma hakkında daha fazla bilgi için bkz. [taşıma oluşturucuları ve taşıma atama işleçleri (C++)](../cpp/move-constructors-and-move-assignment-operators-cpp.md).
 
-Normal işlevleri de Aşırı yüklenme olabilir ve taşıma semantiği yararlanmak için işleçleri. Visual C++ 2010 C++ Standart kitaplığına taşıma semantiklerini tanıtır. Örneğin, `string` sınıfı semantik taşınmasını gerçekleştiren işlemleri uygular. Birkaç dizeyi birleştirmeye ve sonucu yazdırmaya aşağıdaki örneği göz önünde bulundurun:
+Normal işlevleri de Aşırı yüklenme olabilir ve taşıma semantiği yararlanmak için işleçleri. Visual Studio 2010 içinde taşıma semantiklerini tanıtır C++ standart kitaplığı. Örneğin, `string` sınıfı semantik taşınmasını gerçekleştiren işlemleri uygular. Birkaç dizeyi birleştirmeye ve sonucu yazdırmaya aşağıdaki örneği göz önünde bulundurun:
 
 ```cpp
 // string_concatenation.cpp
@@ -51,15 +51,15 @@ int main()
 }
 ```
 
-Visual C++ 2010'dan önce her çağrısı **operator +** ayırır ve yeni bir geçici döndürür `string` nesnesini (rvalue). **operator +** kaynak dizelerin lvalues veya rvalues olduğunu bilmediği için bir dizeyi diğerine ekleyemez. Kaynak dizeleri her iki lvalues ise, programda başka bir yerde başvurulabilir ve bu nedenle değiştirilmemelidir. Rvalue başvuruları kullanılarak **operator +** programda başka bir yerde başvurulamaz rvalues değeri alması için değiştirilebilir. Bu nedenle, **operator +** şimdi bir dizeyi başka birine ekleyebilir. Bu dinamik bellek ayırma sayısını önemli ölçüde azaltabilir, `string` sınıfı gerçekleştirmeniz gerekir. Hakkında daha fazla bilgi için `string` sınıfı [basic_string sınıfı](../standard-library/basic-string-class.md).
+Visual Studio 2010'dan önce her çağrısı **operator +** ayırır ve yeni bir geçici döndürür `string` nesnesini (rvalue). **operator +** kaynak dizelerin lvalues veya rvalues olduğunu bilmediği için bir dizeyi diğerine ekleyemez. Kaynak dizeleri her iki lvalues ise, programda başka bir yerde başvurulabilir ve bu nedenle değiştirilmemelidir. Rvalue başvuruları kullanılarak **operator +** programda başka bir yerde başvurulamaz rvalues değeri alması için değiştirilebilir. Bu nedenle, **operator +** şimdi bir dizeyi başka birine ekleyebilir. Bu dinamik bellek ayırma sayısını önemli ölçüde azaltabilir, `string` sınıfı gerçekleştirmeniz gerekir. Hakkında daha fazla bilgi için `string` sınıfı [basic_string sınıfı](../standard-library/basic-string-class.md).
 
-Derleyici dönüş değeri iyileştirme (RVO) veya adlı dönüş değeri iyileştirme (NRVO) kullanamadığı zaman, taşıma semantiği de yardımcı olur. Bu gibi durumlarda, tür tanımlıyorsa derleyici taşıma yapıcısını çağırır. Adlı dönüş değeri iyileştirme hakkında daha fazla bilgi için bkz: [adlı dönüş değeri iyileştirme Visual C++ 2005'te](https://msdn.microsoft.com/library/ms364057.aspx).
+Derleyici dönüş değeri iyileştirme (RVO) veya adlı dönüş değeri iyileştirme (NRVO) kullanamadığı zaman, taşıma semantiği de yardımcı olur. Bu gibi durumlarda, tür tanımlıyorsa derleyici taşıma yapıcısını çağırır. Adlı dönüş değeri iyileştirme hakkında daha fazla bilgi için bkz: [adlı dönüş değeri iyileştirme Visual Studio 2005](https://msdn.microsoft.com/library/ms364057.aspx).
 
 Taşıma semantiğini daha iyi anlamak için bir öğe ekleme örneği göz önünde bulundurun. bir `vector` nesne. Varsa kapasitesini `vector` nesne aşıldı, `vector` nesnesinin kendi öğeleri için bellek tahsis ve ardından her öğe eklenen öğeye yer açmak için başka bir bellek konumuna kopyalayın. Bir ekleme işlemi bir öğe kopyalarken, yeni bir öğe oluşturur, verileri yeni bir öğe için önceki öğeyi kopyalamak için Kopyala oluşturucusunu çağırır ve ardından önceki öğeyi yok eder. Taşıma semantiği, pahalı bellek ayırması gerçekleştirmek ve kopyalama işlemlerini yapmak zorunda kalmadan nesneleri taşımanıza olanak sağlar.
 
 Örneğinde taşıma semantiklerinden yararlanmak için `vector` örnek, verileri bir nesneden diğerine taşımak amacıyla taşıma yapıcısı yazabilirsiniz.
 
-Taşıma semantiği Visual C++ 2010 C++ Standart kitaplığına giriş hakkında daha fazla bilgi için bkz: [C++ Standart Kitaplığı](../standard-library/cpp-standard-library-reference.md).
+Giriş semantik taşımayı dahil etme hakkında daha fazla bilgi için C++ Visual Studio 2010, standart kitaplığında bkz [ C++ standart Kitaplığı](../standard-library/cpp-standard-library-reference.md).
 
 ## <a name="perfect-forwarding"></a>Kusursuz iletme
 

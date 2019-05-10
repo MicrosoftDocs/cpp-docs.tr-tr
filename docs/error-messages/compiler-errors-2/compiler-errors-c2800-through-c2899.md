@@ -1,5 +1,5 @@
 ---
-title: C2800 ile c2899 arasındaki derleyici hataları
+title: C2800 ile C2899 arasındaki derleyici hataları
 ms.date: 04/21/2019
 f1_keywords:
 - C2816
@@ -43,13 +43,13 @@ helpviewer_keywords:
 - C2899
 ms.assetid: e5de1e92-746a-4315-a331-c5d9efb76dbb
 ms.openlocfilehash: a0367d1d465d4460202f4d6d29468e59f6a74657
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.sourcegitcommit: 283cb64fd7958a6b7fbf0cd8534de99ac8d408eb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62281774"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "64856721"
 ---
-# <a name="compiler-errors-c2800-through-c2899"></a>C2800 ile c2899 arasındaki derleyici hataları
+# <a name="compiler-errors-c2800-through-c2899"></a>C2800 ile C2899 arasındaki derleyici hataları
 
 Belgelerin bu bölümdeki makaleleri bir alt kümesini derleyici tarafından oluşturulan hata iletilerini açıklayın.
 
@@ -57,7 +57,7 @@ Belgelerin bu bölümdeki makaleleri bir alt kümesini derleyici tarafından olu
 
 ## <a name="error-messages"></a>Hata iletileri
 
-|Hata|İleti|
+|Hata|`Message`|
 |-----------|-------------|
 |[Derleyici Hatası C2800](compiler-error-c2800.md)|' operator *işleci*' aşırı yüklenemez|
 |[Derleyici Hatası C2801](compiler-error-c2801.md)|'*üye*' statik olmayan üye olmanız gerekir|

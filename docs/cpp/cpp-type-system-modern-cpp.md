@@ -3,12 +3,12 @@ title: C++ Tür Sistemi (Modern C++)
 ms.date: 11/19/2018
 ms.topic: conceptual
 ms.assetid: 553c0ed6-77c4-43e9-87b1-c903eec53e80
-ms.openlocfilehash: 4dfbf408654ccc92c92d6855c15238cb07c01b58
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 3fa13d2f0b274361c2ad34b0eb64421d2d1d037e
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62392285"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65222135"
 ---
 # <a name="c-type-system-modern-c"></a>C++ Tür Sistemi (Modern C++)
 
@@ -53,7 +53,7 @@ int maxValue;                // Not recommended! maxValue contains
 
 ## <a name="fundamental-built-in-types"></a>Temel (yerleşik) türler
 
-Diğer dillerden farklı olarak, C++, diğer tüm türlerin türetildiği bir evrensel temel türe sahip değildir. Çok dil Visual C++ uygulamasını içeren *temel türler*olarak da bilinen *yerleşik türler*. Bu gibi sayısal türler içerir **int**, **çift**, **uzun**, **bool**, artı **char** ve **wchar_t** ASCII ve UNICODE karakterleri için sırayla türleri. En temel türlerin (dışında **bool**, **çift**, **wchar_t** ve ilgili türler) tüm imzalanmamış değişkenin saklayabildiği değer aralığını değiştiren sürümlere sahiptir. Örneğin, bir **int**, 32-bit işaretli tamsayı depolayan bir değeri temsil edebilir -2.147.483.648 ila 2.147.483.647 arasında. Bir **işaretsiz int**, 32-bit olarak da depolandığı 0'dan 4.294.967.295'e kadar bir değeri saklayabilir. Her durumda olası değerlerin toplam sayısı aynıdır; yalnızca aralık farklıdır.
+Diğer dillerden farklı olarak, C++, diğer tüm türlerin türetildiği bir evrensel temel türe sahip değildir. Çok dil içeren *temel türler*olarak da bilinen *yerleşik türler*. Bu gibi sayısal türler içerir **int**, **çift**, **uzun**, **bool**, artı **char** ve **wchar_t** ASCII ve UNICODE karakterleri için sırayla türleri. En temel türlerin (dışında **bool**, **çift**, **wchar_t** ve ilgili türler) tüm imzalanmamış değişkenin saklayabildiği değer aralığını değiştiren sürümlere sahiptir. Örneğin, bir **int**, 32-bit işaretli tamsayı depolayan bir değeri temsil edebilir -2.147.483.648 ila 2.147.483.647 arasında. Bir **işaretsiz int**, 32-bit olarak da depolandığı 0'dan 4.294.967.295'e kadar bir değeri saklayabilir. Her durumda olası değerlerin toplam sayısı aynıdır; yalnızca aralık farklıdır.
 
 Temel türler, üzerlerinde gerçekleştirebileceğiniz işlemleri ve bunların diğer temel türlere nasıl dönüştürülebileceğini yöneten yerleşik kurallara sahip derleyici tarafından tanınır. Yerleşik türler ve boyutları ile sayısal sınırlarının eksiksiz listesi için bkz [temel türler](../cpp/fundamental-types-cpp.md).
 

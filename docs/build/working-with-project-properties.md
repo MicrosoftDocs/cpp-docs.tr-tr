@@ -8,12 +8,12 @@ helpviewer_keywords:
 - Visual C++ projects, properties
 - projects [C++], properties
 ms.assetid: 9b0d6f8b-7d4e-4e61-aa75-7d14944816cd
-ms.openlocfilehash: ab5456bfc8a1b8305813f4ee4a4399091de15aee
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: a8c15de43a3843b8ff12cb4ad3d951d76b90c039
+ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62314122"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "65446189"
 ---
 # <a name="set-compiler-and-build-properties"></a>Derleyici ayarlayın ve derleme özellikleri
 
@@ -61,7 +61,7 @@ C++ Derleyici ve bağlayıcı seçenekleri altında bulunur **C/C++** ve **bağl
 
 MSBuild derleme zamanı sabitleri belirli dize değerini dizinleri ve yolları dahil etmek için "makroları" adlı kullanımını destekler. Bu özellik sayfalarındaki başvurun ve bunları kullanarak değiştirme Burada sunulan [Özellik Düzenleyici](#property_editor). 
 
-Bir Visual C++ projesinin özellik sayfaları aşağıdaki resimde gösterilmektedir. Sol bölmede, **VC ++ dizinleri** *kural* seçildiğinde ve sağ bölmede, bu kuralla ilişkili özellikleri listeler. `$(...)` Değerleri çağrılır *makroları*. A *makrosu* Visual Studio ya da MSBuild sistemi tarafından tanımlanan bir değer ya da kullanıcı tanımlı bir değer başvurabilirsiniz bir derleme zamanı sabit değeri. Dizin yolları gibi sabit kodlu değerler yerine makroları kullanarak, makineler arasında ve Visual Studio sürümleri arasında özellik ayarlarını daha kolay paylaşabilir ve proje ayarlarınızın doğru içinde rol daha iyi oynamasını sağlayabilirsiniz [ özellik devralma](project-property-inheritance.md). 
+Bir Visual Studio için özellik sayfaları aşağıdaki resimde gösterilmektedir C++ proje. Sol bölmede, **VC ++ dizinleri** *kural* seçildiğinde ve sağ bölmede, bu kuralla ilişkili özellikleri listeler. `$(...)` Değerleri çağrılır *makroları*. A *makrosu* Visual Studio ya da MSBuild sistemi tarafından tanımlanan bir değer ya da kullanıcı tanımlı bir değer başvurabilirsiniz bir derleme zamanı sabit değeri. Dizin yolları gibi sabit kodlu değerler yerine makroları kullanarak, makineler arasında ve Visual Studio sürümleri arasında özellik ayarlarını daha kolay paylaşabilir ve proje ayarlarınızın doğru içinde rol daha iyi oynamasını sağlayabilirsiniz [ özellik devralma](project-property-inheritance.md). 
 
 ![Proje özellik sayfaları](media/project_property_pages_vc.png "Project_Property_Pages_VC")
 

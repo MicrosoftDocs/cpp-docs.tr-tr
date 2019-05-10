@@ -1,5 +1,5 @@
 ---
-title: C4200 ile c4399 arasındaki derleyici uyarıları
+title: C4200 ile C4399 arasındaki derleyici uyarıları
 ms.date: 04/21/2019
 f1_keywords:
 - C4203
@@ -29,13 +29,13 @@ f1_keywords:
 - C4388
 ms.assetid: 170248db-7bf2-4823-92d9-437b04c1290d
 ms.openlocfilehash: 5a257fa5ac39a9b8f593062d6a670c8d1ce4187f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.sourcegitcommit: 283cb64fd7958a6b7fbf0cd8534de99ac8d408eb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62280587"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "64857544"
 ---
-# <a name="compiler-warnings-c4200-through-c4399"></a>C4200 ile c4399 arasındaki derleyici uyarıları
+# <a name="compiler-warnings-c4200-through-c4399"></a>C4200 ile C4399 arasındaki derleyici uyarıları
 
 Belgelerin bu bölümdeki makaleleri bir alt kümesini derleyici tarafından oluşturulan uyarı iletilerini açıklamaktadır.
 
@@ -43,7 +43,7 @@ Belgelerin bu bölümdeki makaleleri bir alt kümesini derleyici tarafından olu
 
 ## <a name="warning-messages"></a>Uyarı iletileri
 
-|Uyarı|İleti|
+|Uyarı|`Message`|
 |-------------|-------------|
 |[Derleyici Uyarısı (Düzey 2 ve 4) C4200](../../error-messages/compiler-warnings/compiler-warning-levels-2-and-4-c4200.md)|Standart olmayan uzantı kullanıldı: yapıda/birleşimde sıfır boyutlu dizi|
 |[Derleyici Uyarısı (düzey 4) C4201](../../error-messages/compiler-warnings/compiler-warning-level-4-c4201.md)|Standart olmayan uzantı kullanıldı: Adsız yapı/birleşim|

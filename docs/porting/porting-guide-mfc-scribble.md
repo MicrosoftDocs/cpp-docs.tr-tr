@@ -2,16 +2,16 @@
 title: 'Taşıma Kılavuzu: MFC Scribble'
 ms.date: 11/19/2018
 ms.assetid: 8ddb517d-89ba-41a1-ab0d-4d2c6d9047e8
-ms.openlocfilehash: 436dd27d8c2669e21ddc8a9e453f369cdd14f70c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 0424b5e8c87c0103b4ebee65765244b40e8fa553
+ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62337472"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "65448966"
 ---
 # <a name="porting-guide-mfc-scribble"></a>Taşıma Kılavuzu: MFC Scribble
 
-Bu konu Visual Studio 2017 için Visual Studio'nun eski sürümlerinde oluşturulmuş Visual C++ projeleri için yükseltme yordamını dağıtır çeşitli konular, davranıştır. Bu konular yükseltme işlemi çok basit bir proje ile başlayan ve biraz daha karmaşık ayarlara taşıma örnek tarafından tanıtmaktadır. Bu konu başlığında, yükseltme işlemi için belirli bir proje, MFC karalama üzerinden çalışıyoruz. C++ projeleri için yükseltme işlemi için temel bir giriş olarak uygun.
+Bu konu Visual Studio için yükseltme yordamını tanıtan çeşitli konular davranıştır C++ Visual Studio 2017 için Visual Studio'nun eski sürümlerinde oluşturulmuş projeleri. Bu konular yükseltme işlemi çok basit bir proje ile başlayan ve biraz daha karmaşık ayarlara taşıma örnek tarafından tanıtmaktadır. Bu konu başlığında, yükseltme işlemi için belirli bir proje, MFC karalama üzerinden çalışıyoruz. C++ projeleri için yükseltme işlemi için temel bir giriş olarak uygun.
 
 Visual Studio'nun her sürümü Visual Studio'nun daha eski bir sürümden daha yeni bir tane taşıma kodu karmaşıklaştırabilir olası uyumsuzluklar tanıtır. Bazen gerekli kodunuzda derleyin ve kodunuzu güncelleştirmeniz gerekir ve bazen proje dosyaları için gerekli değişiklikleri olan değişikliklerdir. Visual Studio'nun önceki bir sürümüyle oluşturulmuş bir projeyi açtığınızda Visual Studio otomatik olarak bir proje veya çözüm en son sürüme güncelleştirilip güncelleştirilmeyeceğini ister. Bu araçlar, genellikle yalnızca proje dosyalarını yükseltme; Kaynak kodunuzu değiştirmeyin.
 
@@ -49,7 +49,7 @@ Bu durumda, tüm uyarıları sorunları olan ve Visual Studio Proje dosyasında 
 
 ### <a name="step-2-getting-it-to-build"></a>Adım 2. Derleme için alma
 
-Proje sistemi kullanarak hangi derleme sürümünün biliyoruz şekilde yapılandırmadan önce biz platform araç takımını denetleyin. Proje Özellikleri iletişim kutusunda, altında **yapılandırma özellikleri**, **genel** kategori göz **Platform araç takımını** özelliği. Bu sürümü Visual Studio ve bu durumda v141 araçları Visual Studio 2017 sürümü için platform Aracı sürüm numarasını içerir. Visual C++ 2010 ile derlenmiş bir proje dönüştürdüğünüzde, 2012, 2013 veya 2015 araç takımı otomatik olarak Visual Studio 2017 araç takımını güncelleştirilmez.
+Proje sistemi kullanarak hangi derleme sürümünün biliyoruz şekilde yapılandırmadan önce biz platform araç takımını denetleyin. Proje Özellikleri iletişim kutusunda, altında **yapılandırma özellikleri**, **genel** kategori göz **Platform araç takımını** özelliği. Bu sürümü Visual Studio ve bu durumda v141 araçları Visual Studio 2017 sürümü için platform Aracı sürüm numarasını içerir. Visual Studio 2010 ile derlenmiş bir proje dönüştürdüğünüzde, 2012, 2013 veya 2015 araç takımı otomatik olarak Visual Studio 2017 araç takımını güncelleştirilmez.
 
 Unicode'a geçiş yapmak için projenin özelliklerini açmak **yapılandırma özellikleri**, seçin **genel** bölümünde ve bulun **karakter kümesi** özelliği. Bu değişiklik **çok baytlı karakter kümesi kullanan** için **Unicode karakter kümesini Kullandırır**. Bu değişikliğin etkilerini o artık _UNICODE ve UNICODE makroları tanımlanır ve _MBCS değil, Özellikler iletişim kutusunda altında doğrulayabilirsiniz **C /C++**  kategori **komut satırı** özellik.
 
@@ -65,7 +65,7 @@ Artık çözümü oluşturun. Çıktı penceresinde, bize bu _WINNT32_WINNT tan�
 _WIN32_WINNT not defined. Defaulting to _WIN32_WINNT_MAXVER (see WinSDKVer.h)
 ```
 
-Bu uyarı, bir hata ve Visual C++ proje yükseltme sırasında yaygın olarak görülür. Uygulamamızı üzerinde çalışacak Windows en düşük sürümünü tanımlayan makro budur. Şu uyarıyı yoksay, biz geçerli Windows sürümü anlamına _WIN32_WINNT_MAXVER varsayılan değeri kabul edin. Olası değerler tablo için bkz: [Windows üst bilgileri kullanma](/windows/desktop/WinProg/using-the-windows-headers). Örneğin, size tüm sürümlerde Vista ve sonraki sürümlerde çalıştırmak için ayarlayabilirsiniz.
+Bu uyarı, bir hata ve Visual Studio yükseltirken çok sık olarak C++ proje. Uygulamamızı üzerinde çalışacak Windows en düşük sürümünü tanımlayan makro budur. Şu uyarıyı yoksay, biz geçerli Windows sürümü anlamına _WIN32_WINNT_MAXVER varsayılan değeri kabul edin. Olası değerler tablo için bkz: [Windows üst bilgileri kullanma](/windows/desktop/WinProg/using-the-windows-headers). Örneğin, size tüm sürümlerde Vista ve sonraki sürümlerde çalıştırmak için ayarlayabilirsiniz.
 
 ```cpp
 #define _WIN32_WINNT _WIN32_WINNT_VISTA

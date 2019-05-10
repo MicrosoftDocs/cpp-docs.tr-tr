@@ -2,16 +2,14 @@
 title: Normal İfadeler (C++)
 ms.date: 11/04/2016
 helpviewer_keywords:
-- Visual C++, regular expressions
-- regular expressions, Visual C++
-- regular expressions
+- regular expressions [C++]
 ms.assetid: aafe202a-1d96-4b36-a270-d676dfd3c51c
-ms.openlocfilehash: dafbe7c7ba10db2b0f34fdc6065c1475d63be284
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 291b25959f790db328080aa74a6320775a33e981
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62369039"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65220306"
 ---
 # <a name="regular-expressions-c"></a>Normal İfadeler (C++)
 

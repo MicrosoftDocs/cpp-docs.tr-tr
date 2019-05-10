@@ -7,12 +7,12 @@ helpviewer_keywords:
 - Visual C++, home page
 author: mikeblome
 ms.author: mblome
-ms.openlocfilehash: d8826c92077ac374b67a7294fe040d6fe8dea927
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: a01c6448174a35da900b7b50a1df5916a2983201
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62351975"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65222606"
 ---
 # <a name="c-in-visual-studio"></a>Visual Studio’da C++
 
@@ -103,7 +103,7 @@ C# veya Visual Basic gibi dillerde yazılan yerel C++ ve .NET programlar arasın
 [Linux programlama](../linux/index.md)<br/>
 Kodu Visual Studio IDE kullanın ve GCC ile derleme için bir uzak Linux makinesine dağıtın.
 
-[Visual C++'ta DLL'ler](../build/dlls-in-visual-cpp.md)<br/>
+[Visual Studio'da C/C++ DLL'leri oluşturma](../build/dlls-in-visual-cpp.md)<br/>
 Windows masaüstü DLL'leri oluşturmak için Win32, ATL ve MFC'nin nasıl kullanılacağını öğretir ve DLL dosyanızı nasıl derleyeceğiniz ve kaydedeceğiniz hakkında bilgiler sağlar.
 
 [Paralel Programlama](../parallel/parallel-programming-in-visual-cpp.md)<br/>

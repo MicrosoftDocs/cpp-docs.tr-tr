@@ -1,24 +1,28 @@
 ---
 title: 'Gözatma bilgileri dosyası derleme: Genel Bakış'
-ms.date: 11/04/2016
+ms.date: 05/06/2019
 helpviewer_keywords:
 - .bsc files, about .bsc files
 - bsc files, about bsc files
 - browse information files (.bsc)
 - browse information files (.bsc), creating
 ms.assetid: b5c12832-51f6-4953-8044-4264dd0fb242
-ms.openlocfilehash: 4f12bd25ca3ab718a845dbb04aba3169cc6d4b19
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 5d33460ba63e50d31e44384be382e98cfbea4c91
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62272890"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65220539"
 ---
 # <a name="building-browse-information-files-overview"></a>Gözatma bilgileri dosyası derleme: Genel Bakış
 
+
+> [!WARNING]
+> BSCMAKE hala Visual Studio ile yüklenir ancak artık IDE tarafından kullanılır. Visual Studio 2008'den itibaren göz atma ve sembol bilgilerini otomatik olarak bir SQL Server .sdf dosyası çözüm klasöründe depolanır.
+
 Sembol tarama için gözatma bilgisi oluşturmak için derleyicinin .sbr dosyası her kaynak dosyası için projenizde ardından BSCMAKE oluşturur. EXE .bsc dosyasına .sbr dosyaları art arda ekler.
 
-Varsayılan olarak Visual C++ bu işlevler devre dışı bırakır, böylece .sbr ve .bsc dosyaları oluşturmak zaman alır. Geçerli bilgilerine göz atmak istiyorsanız, göz atma Seçenekleri'ni açın ve projenizi yeniden derleyin.
+Visual Studio bu işlevler varsayılan olarak kapattığı için .sbr ve .bsc dosyaları oluşturmak zaman alır. Geçerli bilgilerine göz atmak istiyorsanız, göz atma Seçenekleri'ni açın ve projenizi yeniden derleyin.
 
 Kullanım [/FR](fr-fr-create-dot-sbr-file.md) veya [/Fr](fr-fr-create-dot-sbr-file.md) .sbr dosyaları oluşturmak için derleyicinin söylemek için. .BSC dosyaları oluşturmak için çağırabilirsiniz [BSCMAKE](bscmake-command-line.md) komut satırından. BSCMAKE komut satırından kullanarak gözatma bilgisi dosyalarının işlenmesini üzerinde daha kesin denetim verir. Bkz: [BSCMAKE başvurusu](bscmake-reference.md) daha fazla bilgi için.
 

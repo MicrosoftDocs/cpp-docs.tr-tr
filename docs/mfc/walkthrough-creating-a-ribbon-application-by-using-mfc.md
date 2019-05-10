@@ -1,16 +1,16 @@
 ---
 title: 'İzlenecek yol: MFC kullanarak Şerit uygulaması oluşturma'
-ms.date: 11/04/2016
+ms.date: 04/25/2019
 helpviewer_keywords:
 - ribbon application, creating (MFC)
 - creating a ribbon aplication (MFC)
 ms.assetid: e61393e2-1d6b-4594-a7ce-157d3d1b0d9f
-ms.openlocfilehash: 29991a389a09e1fe3dc0074b80fd9a255458f673
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
-ms.translationtype: HT
+ms.openlocfilehash: a45df5258a16885b50e11d4cca8ba99eb4b3d458
+ms.sourcegitcommit: 283cb64fd7958a6b7fbf0cd8534de99ac8d408eb
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62358313"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "64558232"
 ---
 # <a name="walkthrough-creating-a-ribbon-application-by-using-mfc"></a>İzlenecek yol: MFC kullanarak Şerit uygulaması oluşturma
 
@@ -22,9 +22,7 @@ Bu izlenecek yol, Visual Studio'yu kullanın belirlediğinizi varsayar **genel g
 
 ### <a name="to-create-an-mfc-application-that-has-a-ribbon"></a>Şeridi olan bir MFC uygulaması oluşturmak için
 
-1. Kullanım **MFC Uygulama Sihirbazı** şeridi olan bir MFC uygulaması oluşturmak için. Sihirbazı çalıştırmak için **dosya** menüsünde **yeni**ve ardından **proje**.
-
-1. İçinde **yeni proje** iletişim kutusunda **Visual C++** düğümünde **yüklü şablonlar**seçin **MFC**ve ardından seçin **MFC uygulaması**. Proje için bir ad yazın örneğin, *MFCRibbonApp*ve ardından **Tamam**.
+1. Kullanım **MFC Uygulama Sihirbazı** şeridi olan bir MFC uygulaması oluşturmak için. Bkz: [izlenecek yol: Yeni MFC Kabuk denetimlerini kullanma](walkthrough-using-the-new-mfc-shell-controls.md) Visual Studio sürümünüz için Sihirbazı'nı açmak yönergeler.
 
 1. Aşağıdaki seçenekler kümesinde **MFC Uygulama Sihirbazı**:
 
@@ -34,7 +32,7 @@ Bu izlenecek yol, Visual Studio'yu kullanın belirlediğinizi varsayar **genel g
 
     1. İçinde **belge şablonu özellikleri** bölümünde **dosya uzantısı** bu uygulamayı oluşturur, örneğin, belgeler için bir dosya adı uzantısı yazın *mfcrbnapp*.
 
-    1. İçinde **veritabanı desteği** bölümünde, emin **hiçbiri** seçilir.
+    1. İçinde **veritabanı desteği** bölümü (Visual Studio 2015 yalnızca) emin olun **hiçbiri** seçilir.
 
     1. İçinde **kullanıcı arabirimi özellikleri** bölümünde, emin **bir Şerit** seçilir.
 

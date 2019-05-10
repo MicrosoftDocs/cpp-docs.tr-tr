@@ -8,12 +8,12 @@ helpviewer_keywords:
 - ordinal exports [C++]
 - GetProcAddress method
 ms.assetid: 48d14ae0-47ea-4c5d-96b1-2c158f1a26af
-ms.openlocfilehash: 5ee985da29e38bfb262c72315a57c0b588b2e82e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 7b480314d195f50e4867f646208f2d9c70ce9b14
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62188983"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65220813"
 ---
 # <a name="getprocaddress"></a>GetProcAddress
 
@@ -69,4 +69,4 @@ Bağlandığınız DLL modül tanımı (.def) dosyasıyla oluşturulursa ve sır
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Visual C++'ta DLL'ler](dlls-in-visual-cpp.md)
+[Visual Studio'da C/C++ DLL'leri oluşturma](dlls-in-visual-cpp.md)

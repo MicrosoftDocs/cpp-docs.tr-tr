@@ -1,17 +1,17 @@
 ---
 title: 'İzlenecek yol: Proje derleme (C++)'
-ms.date: 09/14/2018
+ms.date: 04/25/2019
 helpviewer_keywords:
 - building projects [C++]
 - projects [C++], building
 - project building [C++]
 ms.assetid: d459bc03-88ef-48d0-9f9a-82d17f0b6a4d
-ms.openlocfilehash: 8aadb6983cc096ff75785c6bab7ace6bd5f0c632
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 16f1f0bc66b9d1f1a6ece4856d213bb13b2b7dbf
+ms.sourcegitcommit: 283cb64fd7958a6b7fbf0cd8534de99ac8d408eb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62264789"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "64855947"
 ---
 # <a name="walkthrough-building-a-project-c"></a>İzlenecek yol: Proje derleme (C++)
 

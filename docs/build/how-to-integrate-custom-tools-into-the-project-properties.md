@@ -1,17 +1,15 @@
 ---
 title: 'Nasıl yapılır: Özel araçlarla proje özelliklerini tümleştirme'
 ms.date: 04/27/2016
-f1_keywords:
-- msbuild.cpp.howto.integratecustomtools
 helpviewer_keywords:
 - 'msbuild (c++), howto: integrate custom tools'
 ms.assetid: f32d91a4-44e9-4de3-aa9a-1c7f709ad2ee
-ms.openlocfilehash: a959eddb36a2de90ebd5b5b1b9eb5e2f4e67c03a
-ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
+ms.openlocfilehash: e9f0758bbb2ab796bd60516ca5d57c605e36fb56
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "64342152"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65220693"
 ---
 # <a name="how-to-integrate-custom-tools-into-the-project-properties"></a>Nasıl yapılır: Özel araçlarla proje özelliklerini tümleştirme
 

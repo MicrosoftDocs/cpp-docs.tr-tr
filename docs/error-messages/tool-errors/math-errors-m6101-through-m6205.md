@@ -3,11 +3,11 @@ title: Matematik hataları
 ms.date: 04/16/2019
 ms.assetid: bdf3dc2a-d993-4f53-b0f2-9604e4914127
 ms.openlocfilehash: 7d89a7b9f89342b973307f592e59d05cfe44f84f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
-ms.translationtype: HT
+ms.sourcegitcommit: 283cb64fd7958a6b7fbf0cd8534de99ac8d408eb
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62393226"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "64856697"
 ---
 # <a name="math-errors-mxxxx"></a>Matematik hataları (Mxxxx)
 

@@ -9,12 +9,12 @@ f1_keywords:
 helpviewer_keywords:
 - storage classes [C++], basic concepts
 ms.assetid: f10e1c56-6249-4eb6-b08f-09ab1eef1992
-ms.openlocfilehash: e50e5da5ea24d59131f123bb0c772897f9a30218
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 92435b2bab670dd366f26c981443e98e4a4e3c29
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62266939"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65221990"
 ---
 # <a name="storage-classes-c"></a>Depolama sınıfları (C++)
 
@@ -24,7 +24,7 @@ A *depolama sınıfı* C++ bağlamında değişken bildirimleri olan nesnelerin 
 
 1. [Değişebilir](../cpp/mutable-data-members-cpp.md) anahtar sözcüğü bir depolama sınıfı tanımlayıcısı olarak değerlendirilebilir. Ancak, sadece bir sınıf tanımının üye listesinde kullanılabilir.
 
-1. **Visual C++ 2010 ve sonraki sürümleri:** **Otomatik** anahtar sözcüğü, artık bir C++ depolama sınıfı tanımlayıcısı ve **kaydetme** anahtar sözcüğü kullanım dışı bırakılmıştır. **Visual Studio 2017 sürüm 15.7 ve üzeri:** (bulunan [/Std: c ++ 17](../build/reference/std-specify-language-standard-version.md)): **Kaydetme** anahtar sözcüğü C++ dili kaldırılır.
+1. **Visual Studio 2010 ve sonraki sürümleri:** **Otomatik** anahtar sözcüğü, artık bir C++ depolama sınıfı tanımlayıcısı ve **kaydetme** anahtar sözcüğü kullanım dışı bırakılmıştır. **Visual Studio 2017 sürüm 15.7 ve üzeri:** (bulunan [/Std: c ++ 17](../build/reference/std-specify-language-standard-version.md)): **Kaydetme** anahtar sözcüğü C++ dili kaldırılır.
 
 ```cpp
    register int val; // warning C5033: 'register' is no longer a supported storage class

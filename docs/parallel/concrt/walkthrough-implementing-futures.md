@@ -5,12 +5,12 @@ helpviewer_keywords:
 - implementing futures [Concurrency Runtime]
 - futures, implementing [Concurrency Runtime]
 ms.assetid: 82ea75cc-aaec-4452-b10d-8abce0a87e5b
-ms.openlocfilehash: 7164919d649751ac11fefa5be3cb2e5b7798ee4f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
-ms.translationtype: HT
+ms.openlocfilehash: 00ad8bbe6f950ad531bad751686393dce66643bb
+ms.sourcegitcommit: 283cb64fd7958a6b7fbf0cd8534de99ac8d408eb
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62407854"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "64857061"
 ---
 # <a name="walkthrough-implementing-futures"></a>İzlenecek yol: Vadeli işlemleri uygulama
 

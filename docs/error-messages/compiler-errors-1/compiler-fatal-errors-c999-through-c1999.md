@@ -53,11 +53,11 @@ helpviewer_keywords:
 - C1901
 ms.assetid: 6c8df109-7594-48ed-987a-97d9fe2b04af
 ms.openlocfilehash: 5ffa1a2633877c8a16eb424f1ddc100bfd6142b8
-ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
-ms.translationtype: HT
+ms.sourcegitcommit: 283cb64fd7958a6b7fbf0cd8534de99ac8d408eb
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "64344833"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "64857389"
 ---
 # <a name="compiler-fatal-errors-c999-through-c1999"></a>C999 ile C1999 arasındaki önemli derleyici hataları
 
@@ -67,7 +67,7 @@ Belgelerin bu bölümdeki makaleleri bir alt kümesini Microsoft C tarafından o
 
 ## <a name="error-messages"></a>Hata iletileri
 
-|Hata|İleti|
+|Hata|`Message`|
 |-----------|-------------|
 |[Önemli hata C999](../../error-messages/compiler-errors-1/fatal-error-c999.md)|Bilinmeyen ileti Lütfen Visual C++ Yardım menüsünde teknik destek komutunu seçin veya daha fazla bilgi için teknik destek Yardım dosyasını açın|
 |[Önemli hata C1001](../../error-messages/compiler-errors-1/fatal-error-c1001.md)|Derleyicide bir iç hata oluştu.<br /> (derleyici dosyası '*dosya*', satır *numarası*)<br /> Basitleştirmeyi veya yukarıda listelenen konumların yakınındaki programı değiştirmeyi deneyin. Bu sorunu geçici olarak çözmek için. Lütfen Visual C++ Yardım menüsünde teknik destek komutunu seçin veya daha fazla bilgi için teknik destek Yardım dosyasını açın|

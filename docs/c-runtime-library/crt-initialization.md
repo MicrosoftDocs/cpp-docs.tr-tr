@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - CRT initialization [C++]
 ms.assetid: e7979813-1856-4848-9639-f29c86b74ad7
-ms.openlocfilehash: 980d94b29d31d8eea910fbdb171a0ae8df1dccca
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 03126b8fdf1c3824b114d822c269655c22e5ee9f
+ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62344615"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "65446677"
 ---
 # <a name="crt-initialization"></a>CRT Başlatma
 
@@ -41,7 +41,7 @@ Bu, bir kesme noktası ayarlamak için belirlemek için tek yönlü `func()`, uy
 
 Yığını üzerindeki işlevlerin göz attığınızda, CRT işlev işaretçileri bir listesi üzerinden döngü ve bunları gibi her birini çağırma bulabilirsiniz. Bu işlevler ötekisi benzer `func()` veya sınıf örnekleri için oluşturucu.
 
-CRT Visual C++ Derleyici işlev işaretçileri listesini alır. Derleyici, genel bir başlatıcı gördüğünde, dinamik bir başlatıcısında oluşturur. `.CRT$XCU` bölümü (burada `CRT` bölüm adı olduğu ve `XCU` grup adı). Komutu çalıştırın. Bu dinamik başlatıcılar listesi elde etmek için **dumpbin/all main.obj**ve ardından arama `.CRT$XCU` bölümünde (Main.cpp olarak C++ dosyası, C dosyası derlendiğinde). Aşağıdakine benzer olacaktır:
+CRT Microsoft'tan işlev işaretçileri listesini alır C++ derleyici. Derleyici, genel bir başlatıcı gördüğünde, dinamik bir başlatıcısında oluşturur. `.CRT$XCU` bölümü (burada `CRT` bölüm adı olduğu ve `XCU` grup adı). Komutu çalıştırın. Bu dinamik başlatıcılar listesi elde etmek için **dumpbin/all main.obj**ve ardından arama `.CRT$XCU` bölümünde (Main.cpp olarak C++ dosyası, C dosyası derlendiğinde). Aşağıdakine benzer olacaktır:
 
 ```
 SECTION HEADER #6
@@ -77,7 +77,7 @@ CRT iki işaretçi tanımlar:
 
 Her ikisinde dışında tanımlanan sembolleri olmayan `__xc_a` ve `__xc_z`.
 
-Şimdi ne zaman bağlayıcı okur çeşitli `.CRT` grupları, bunları bir bölümü birleştirir ve alfabetik olarak sıralar. Buna kullanıcı tanımlı genel başlatıcıları (Visual C++ derleyicisi getirecek `.CRT$XCU`) her zaman sonra gelecektir `.CRT$XCA` ve önce `.CRT$XCZ`.
+Şimdi ne zaman bağlayıcı okur çeşitli `.CRT` grupları, bunları bir bölümü birleştirir ve alfabetik olarak sıralar. Bu kullanıcı tarafından tanımlanan genel başlatıcıların anlamına gelir (hangi Microsoft C++ derleyici koyar `.CRT$XCU`) her zaman sonra gelecektir `.CRT$XCA` ve önce `.CRT$XCZ`.
 
 Bölüm şuna benzer:
 

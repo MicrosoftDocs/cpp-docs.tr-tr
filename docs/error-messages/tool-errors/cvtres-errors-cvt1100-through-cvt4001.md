@@ -12,11 +12,11 @@ f1_keywords:
 - CVT1110
 ms.assetid: ac94d0fb-0da3-4327-b3d9-ceaeb3fc2e4d
 ms.openlocfilehash: 81dbac6b0408a7cf1cc319c1eed90bad5f742890
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
-ms.translationtype: HT
+ms.sourcegitcommit: 283cb64fd7958a6b7fbf0cd8534de99ac8d408eb
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62406346"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "64855939"
 ---
 # <a name="cvtres-errors-and-warnings-cvtxxxx"></a>CVTRES hataları ve uyarıları (CVTxxxx)
 

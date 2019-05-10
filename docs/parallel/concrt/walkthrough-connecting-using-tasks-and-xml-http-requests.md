@@ -1,17 +1,17 @@
 ---
 title: 'İzlenecek yol: Görevleri ve XML HTTP isteklerini kullanarak bağlanma'
-ms.date: 11/19/2018
+ms.date: 04/25/2019
 helpviewer_keywords:
 - connecting to web services, UWP apps [C++]
 - IXMLHTTPRequest2 and tasks, example
 - IXHR2 and tasks, example
 ms.assetid: e8e12d46-604c-42a7-abfd-b1d1bb2ed6b3
-ms.openlocfilehash: f78adda7625d3a3def60de968c5e7be97f282a7f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
-ms.translationtype: HT
+ms.openlocfilehash: 449f99f37f0d328b7c874730b814335f8b69e807
+ms.sourcegitcommit: 283cb64fd7958a6b7fbf0cd8534de99ac8d408eb
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62411410"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "64856288"
 ---
 # <a name="walkthrough-connecting-using-tasks-and-xml-http-requests"></a>İzlenecek yol: Görevleri ve XML HTTP isteklerini kullanarak bağlanma
 
@@ -31,6 +31,8 @@ Kullanan bir örnek için `IXMLHTTPRequest2` ancak olmayan görevleri kullanın,
 
 ## <a name="prerequisites"></a>Önkoşullar
 
+UWP destek, isteğe bağlı olarak Visual Studio 2017 ve sonrasında mevcuttur. Yüklemek için Windows Başlat Menüsü'nden Visual Studio Yükleyicisi'ni açın ve kullanmakta olduğunuz Visual Studio sürümünü seçin. Tıklayın **Değiştir** emin olun ve düğme **UWP geliştirme** kutucuk denetlenir. Altında **isteğe bağlı bileşenler** emin  **C++ UWP Araçları** denetlenir. Visual Studio 2017 veya Visual Studio 2019 için v142 v141 kullanın.
+
 ## <a name="defining-the-httprequest-httprequestbufferscallback-and-httprequeststringcallback-classes"></a>HttpRequest, HttpRequestBuffersCallback ve HttpRequestStringCallback Sınıflarını Tanımlama
 
 Kullanırken `IXMLHTTPRequest2` HTTP üzerinden web istekleri oluşturmak için arabirim, uygulamanız `IXMLHTTPRequest2Callback` sunucu yanıtını almak ve diğer olaylarına tepki vermek için arabirim. Bu örnek tanımlar `HttpRequest` web istekleri oluşturmak için sınıf ve `HttpRequestBuffersCallback` ve `HttpRequestStringCallback` yanıtları işlemek için sınıflar. `HttpRequestBuffersCallback` Ve `HttpRequestStringCallback` destek sınıfları `HttpRequest` sınıfı; yalnızca çalışmanıza `HttpRequest` uygulama kodundan sınıfı.
@@ -43,7 +45,9 @@ Kullanırken `IXMLHTTPRequest2` HTTP üzerinden web istekleri oluşturmak için 
 
 #### <a name="to-define-the-httprequest-class"></a>HttpRequest Sınıfını tanımlamak için
 
-1. Visual c++'ta kullanmak **boş uygulama (XAML)** boş bir XAML uygulaması projesi oluşturmak için şablon. Bu örnek proje adları `UsingIXMLHTTPRequest2`.
+1. Ana menüden **dosya** > **yeni** > **proje**. 
+
+1. Kullanım C++ **boş uygulama (Evrensel Windows)** boş bir XAML uygulaması projesi oluşturmak için şablon. Bu örnek proje adları `UsingIXMLHTTPRequest2`.
 
 1. Projeye HttpRequest.h adlı bir üstbilgi dosyası ve HttpRequest.cpp adlı bir kaynak dosyası ekleyin.
 
