@@ -5,18 +5,18 @@ helpviewer_keywords:
 - Concurrency Runtime, migrating from OpenMP
 - OpenMP, migrating to the Concurrency Runtime
 ms.assetid: 9bab7bb1-e45d-44b2-8509-3b226be2c93b
-ms.openlocfilehash: 16b0f175867e18e127997749098cce998674b3d2
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: ba2b413d40da601029f5c4e1d861576212c10494
+ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62412676"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "65448430"
 ---
 # <a name="migrating-from-openmp-to-the-concurrency-runtime"></a>OpenMP döngüsünden Eşzamanlılık Çalışma Zamanına geçiş
 
 Eşzamanlılık Çalışma zamanı, çeşitli programlama modelleri sağlar. Bu modeller çakışmamalıdır veya diğer kitaplıkları modelleri tamamlar. Belgelerin bu bölümü karşılaştırma [OpenMP](../../parallel/concrt/comparing-the-concurrency-runtime-to-other-concurrency-models.md#openmp) eşzamanlılık çalışma zamanı ve Eşzamanlılık Çalışma zamanı kullanmak için mevcut OpenMP kod geçirme hakkında örnekler sunar.
 
-OpenMP programlama modeli, açık bir standart tarafından tanımlanır ve Fortran ve C/C++ programlama dilleri için iyi tanımlanmış bağlamaları vardır. OpenMP sürümleri 2.0 ve Visual C++ derleyicisi tarafından desteklenen, 2.5, yinelemeli paralel algoritmalar için çok uygundur; diğer bir deyişle, bunlar paralel yineleme bir veri dizisi üzerinde gerçekleştirin. OpenMP 3.0 yinelemeli görevleri yanı sıra yinelemeli olmayan görevlerini destekler.
+OpenMP programlama modeli, açık bir standart tarafından tanımlanır ve Fortran ve C/C++ programlama dilleri için iyi tanımlanmış bağlamaları vardır. OpenMP sürümleri 2.0 ve Microsoft tarafından desteklenen 2.5 C++ derleyici, yinelemeli; paralel algoritmalar için oldukça uygun olan diğer bir deyişle, bunlar paralel yineleme bir veri dizisi üzerinde gerçekleştirin. OpenMP 3.0 yinelemeli görevleri yanı sıra yinelemeli olmayan görevlerini destekler.
 
 Paralellik derecesini önceden belirlenir ve sistemin kullanılabilir kaynaklara eşleşen OpenMP en etkili yoldur. OpenMP için yüksek performanslı bilgi işlem, özellikle de iyi bir eşleşme büyük işlem sorunları bir bilgisayarın işlem kaynakları arasında dağıtıldığı modelidir. Bu senaryoda, donanım ortamı genellikle sabittir ve geliştirici algoritma yürütüldüğünde, tüm bilgi işlem kaynaklarına özel erişim sağlamak makul bekleyebilirsiniz.
 

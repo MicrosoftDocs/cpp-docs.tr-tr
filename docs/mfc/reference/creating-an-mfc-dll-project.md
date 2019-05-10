@@ -9,12 +9,12 @@ helpviewer_keywords:
 - projects [MFC], creating
 - DLLs [MFC], creating
 ms.assetid: 05540b93-4781-4a90-aadf-55158313f5b2
-ms.openlocfilehash: 6ddc32ac3a2de5993e6755df0cd9fc7d3546094e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 44671985b2ab22e866a63b284a4b22d87b614667
+ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62372289"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "65446744"
 ---
 # <a name="creating-an-mfc-dll-project"></a>MFC DLL Projesi Oluşturma
 
@@ -36,11 +36,11 @@ MFC DLL aynı anda birden çok uygulama tarafından kullanılabilecek işlevleri
 
 1. Tıklayın **son** sihirbazı kapatın ve yeni projenizi açın **Çözüm Gezgini**.
 
-Projeniz oluşturulduktan sonra oluşturulan dosyalar görüntüleyebileceğiniz **Çözüm Gezgini**. Projeniz için sihirbaz dosyaları hakkında daha fazla bilgi için proje tarafından oluşturulan ReadMe.txt dosyasına bakın. Dosya türleri hakkında daha fazla bilgi için bkz. [Visual C++ projeleri için oluşturulan dosya türleri](../../build/reference/file-types-created-for-visual-cpp-projects.md).
+Projeniz oluşturulduktan sonra oluşturulan dosyalar görüntüleyebileceğiniz **Çözüm Gezgini**. Projeniz için sihirbaz dosyaları hakkında daha fazla bilgi için proje tarafından oluşturulan ReadMe.txt dosyasına bakın. Dosya türleri hakkında daha fazla bilgi için bkz. [görsel için oluşturulan dosya türleri C++ projeleri](../../build/reference/file-types-created-for-visual-cpp-projects.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Visual C++ Proje Türleri](/visualstudio/debugger/debugging-preparation-visual-cpp-project-types)<br/>
+[C++Visual Studio Proje türleri](/visualstudio/debugger/debugging-preparation-visual-cpp-project-types)<br/>
 [Kod Sihirbazlarıyla İşlevsellik Ekleme](../../ide/adding-functionality-with-code-wizards-cpp.md)<br/>
 [Özellik Sayfaları](../../build/reference/property-pages-visual-cpp.md)
 

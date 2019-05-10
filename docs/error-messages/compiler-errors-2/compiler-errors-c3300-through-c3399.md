@@ -1,5 +1,5 @@
 ---
-title: C3300 ile c3399 arasındaki derleyici hataları
+title: C3300 ile C3399 arasındaki derleyici hataları
 ms.date: 04/21/2019
 f1_keywords:
 - C3300
@@ -101,13 +101,13 @@ helpviewer_keywords:
 - C3378
 ms.assetid: 190b7d29-ffe6-4261-921d-140da1935d00
 ms.openlocfilehash: ca55e19534f722a7231a1d30c63e2dbb77d25ec7
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.sourcegitcommit: 283cb64fd7958a6b7fbf0cd8534de99ac8d408eb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62281462"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "64857732"
 ---
-# <a name="compiler-errors-c3300-through-c3399"></a>C3300 ile c3399 arasındaki derleyici hataları
+# <a name="compiler-errors-c3300-through-c3399"></a>C3300 ile C3399 arasındaki derleyici hataları
 
 Belgelerin bu bölümdeki makaleleri bir alt kümesini derleyici tarafından oluşturulan hata iletilerini açıklayın.
 
@@ -115,7 +115,7 @@ Belgelerin bu bölümdeki makaleleri bir alt kümesini derleyici tarafından olu
 
 ## <a name="error-messages"></a>Hata iletileri
 
-|Hata|İleti|
+|Hata|`Message`|
 |-----------|-------------|
 |Derleyici Hatası C3300|'*sembol*': IDL için hatalı Biçim '*değer*'|
 |Derleyici Hatası C3301|'*coclass'ı*': coclass olamaz bir '*sembol*' arabirimi|

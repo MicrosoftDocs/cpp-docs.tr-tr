@@ -1,14 +1,14 @@
 ---
 title: Hatalar ve Özel Durum İşleme (Modern C++)
-ms.date: 09/17/2018
+ms.date: 05/07/2019
 ms.topic: conceptual
 ms.assetid: a6c111d0-24f9-4bbb-997d-3db4569761b7
-ms.openlocfilehash: c3def77d8b7a22be05259784e3b80562c8728c15
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: bb27a92347b327e22afc4f6bb2fb248c12290cae
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62398920"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65222149"
 ---
 # <a name="errors-and-exception-handling-modern-c"></a>Hatalar ve Özel Durum İşleme (Modern C++)
 
@@ -90,13 +90,13 @@ Herhangi bir programlama dilinde güçlü hata işleme zordur. Özel durumlar ha
 
 ## <a name="c-exceptions-versus-windows-seh-exceptions"></a>C++ özel durumlarına karşı Windows SEH özel durumları
 
-Hem C ve C++ programları, yapılandırılmış özel durum işleme (SEH) mekanizmasını Windows işletim sisteminde kullanabilirsiniz. SEH içindeki kavramlar de benzer C++ kullanır, SEH özel durumları, **__try**, **__except**, ve **__finally** yerine yapıları **deneyin**  ve **catch**. Visual C++'da, C++ özel durumları SEH için uygulanır. Bununla birlikte, C++ kodu yazarken C++ özel durum söz dizimini kullanın.
+Hem C ve C++ programları, yapılandırılmış özel durum işleme (SEH) mekanizmasını Windows işletim sisteminde kullanabilirsiniz. SEH içindeki kavramlar de benzer C++ kullanır, SEH özel durumları, **__try**, **__except**, ve **__finally** yerine yapıları **deneyin**  ve **catch**. Microsoft C++ derleyici (MSVC) C++ özel durumları SEH için uygulanır. Bununla birlikte, C++ kodu yazarken C++ özel durum söz dizimini kullanın.
 
 SEH hakkında daha fazla bilgi için bkz: [yapılandırılmış özel durum işleme (C/C++)](../cpp/structured-exception-handling-c-cpp.md).
 
 ## <a name="exception-specifications-and-noexcept"></a>Özel durum belirtimleri ve noexcept
 
-Özel durum belirtimleri bir işlevin oluşturulabileceği özel durumları belirtme yöntemi olarak C++ ile sunulur. Ancak, özel durum belirtimleri uygulamada sorun kanıtlandı ve C ++ 11 taslak standardı kullanım dışı bırakılmıştır. Özel durum belirtimleri dışında kullanmamanızı öneririz `throw()`, işlev kaçış özel durum yok izin verdiğini gösterir. Türündeki özel durum belirtimlerini kullanmanız gerekirse `throw(` *türü*`)`, Visual C++ standardı belirli yollarla departs unutmayın. Daha fazla bilgi için [özel durum belirtimleri (throw)](../cpp/exception-specifications-throw-cpp.md). `noexcept` Tanımlayıcısı için tercih edilen alternatif olarak C ++ 11'de sunulmuştur `throw()`.
+Özel durum belirtimleri bir işlevin oluşturulabileceği özel durumları belirtme yöntemi olarak C++ ile sunulur. Ancak, özel durum belirtimleri uygulamada sorun kanıtlandı ve C ++ 11 taslak standardı kullanım dışı bırakılmıştır. Özel durum belirtimleri dışında kullanmamanızı öneririz `throw()`, işlev kaçış özel durum yok izin verdiğini gösterir. Türündeki özel durum belirtimlerini kullanmanız gerekirse `throw(` *türü*`)`, belirli yollarla standardı departs MSVC unutmayın. Daha fazla bilgi için [özel durum belirtimleri (throw)](../cpp/exception-specifications-throw-cpp.md). `noexcept` Tanımlayıcısı için tercih edilen alternatif olarak C ++ 11'de sunulmuştur `throw()`.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

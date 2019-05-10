@@ -2,12 +2,12 @@
 title: Visual C++ taşıma ve yükseltme Kılavuzu
 ms.date: 09/18/2018
 ms.assetid: f5fbcc3d-aa72-41a6-ad9a-a706af2166fb
-ms.openlocfilehash: 8798d8b3da5a91adfc6f77912d4f34bf62549f54
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 52ba023b38c16fa276c3dabffe481aaae96215f1
+ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62336926"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "65448858"
 ---
 # <a name="visual-c-porting-and-upgrading-guide"></a>Visual C++ taşıma ve yükseltme Kılavuzu
 
@@ -75,7 +75,7 @@ Alternatif olarak, artık belki de yeni gereksinimler ortaya veya Windows Masaü
 
 |Başlık|Açıklama|
 |-----------|-----------------|
-|[Önceki Visual C++ Sürümü Projelerini Yükseltme](upgrading-projects-from-earlier-versions-of-visual-cpp.md)|Visual C++'ın önceki sürümlerinde oluşturulmuş projeleri kullanmayı açıklar.|
+|[Önceki Visual C++ Sürümü Projelerini Yükseltme](upgrading-projects-from-earlier-versions-of-visual-cpp.md)|Visual Studio'nun önceki sürümlerinde oluşturulmuş projeleri kullanmayı açıklar.|
 |[Visual Studio'da C++ derleyicisi için yeni nedir](../overview/what-s-new-for-visual-cpp-in-visual-studio.md)|IDE ve Araçlar, Visual Studio'nun geçerli sürümüne değişiklikleri|
 |[Visual Studio’deki C++ uyumluluk geliştirmeleri](../overview/cpp-conformance-improvements.md)|Visual Studio 2015 için Visual Studio standartlara uyumluluk geliştirmeleri|
 |[Visual C++ değişiklik geçmişi 2003 - 2015](visual-cpp-change-history-2003-2015.md)|Visual C++ kitaplıkları ve kodunuzda değişiklikler gerektirebilir bir 2015 derleme araçları Visual Studio 2003'ten tüm değişikliklerin listesi.|

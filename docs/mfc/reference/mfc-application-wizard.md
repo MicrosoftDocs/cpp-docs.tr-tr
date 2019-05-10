@@ -7,19 +7,19 @@ helpviewer_keywords:
 - MFC Application Wizard
 - executable files, creating
 ms.assetid: 227ac090-921d-4b2f-be0a-66a5f4cab0d4
-ms.openlocfilehash: 808e8364764dd826ee82e445627ba21b06946ed6
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f69f0a19cdcd3526d8afac2e1492da806c2dffd3
+ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62412754"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "65448482"
 ---
 # <a name="mfc-application-wizard"></a>MFC Uygulama Sihirbazı
 
 MFC Uygulama Sihirbazı bir uygulama oluşturur, bir Windows yürütülebilir (.exe) uygulamasının temel özelliklerini derlendiğinde uygular. MFC başlangıç uygulaması C++ kaynak (.cpp) dosyaları, kaynak (.rc) dosyaları, üstbilgi (.h) dosyaları ve proje (.vcxproj) dosyasını içerir. Bu Başlatıcı dosyalarında oluşturulan kodu MFC'ye dayalı.
 
 > [!NOTE]
->  Seçtiğiniz seçeneklere bağlı olarak, sihirbaz projenize ek dosyaları oluşturur. Örneğin, **bağlama duyarlı Yardım** üzerinde [Gelişmiş Özellikler](../../mfc/reference/advanced-features-mfc-application-wizard.md) sayfasında, Sihirbazı, projenin Yardım dosyalarını derlemek için gerekli olan dosyaları oluşturur. Sihirbazın oluşturduğu dosyaları hakkında daha fazla bilgi için bkz. [Visual C++ projeleri için oluşturulan dosya türleri](../../build/reference/file-types-created-for-visual-cpp-projects.md)ve proje Readme.txt dosyasına bakın.
+>  Seçtiğiniz seçeneklere bağlı olarak, sihirbaz projenize ek dosyaları oluşturur. Örneğin, **bağlama duyarlı Yardım** üzerinde [Gelişmiş Özellikler](../../mfc/reference/advanced-features-mfc-application-wizard.md) sayfasında, Sihirbazı, projenin Yardım dosyalarını derlemek için gerekli olan dosyaları oluşturur. Sihirbazın oluşturduğu dosyaları hakkında daha fazla bilgi için bkz. [görsel için oluşturulan dosya türleri C++ projeleri](../../build/reference/file-types-created-for-visual-cpp-projects.md)ve proje Readme.txt dosyasına bakın.
 
 ## <a name="overview"></a>Genel Bakış
 
@@ -35,7 +35,7 @@ Bu sihirbaz sayfası oluşturduğunuz MFC uygulamasını geçerli uygulama ayarl
 
    - Proje, Visual Studio Proje stili kullanılarak oluşturulur ve görsel stilini değiştirme sağlar.
 
-   - Proje MFC paylaşılan DLL olarak kullanır. Daha fazla bilgi için [Visual C++'ta DLL'ler](../../build/dlls-in-visual-cpp.md).
+   - Proje MFC paylaşılan DLL olarak kullanır. Daha fazla bilgi için [C Oluştur /C++ DLL'leri Visual Studio'da](../../build/dlls-in-visual-cpp.md).
 
 - [Birleşik Belge Desteği, MFC Uygulama Sihirbazı](../../mfc/reference/compound-document-support-mfc-application-wizard.md)
 

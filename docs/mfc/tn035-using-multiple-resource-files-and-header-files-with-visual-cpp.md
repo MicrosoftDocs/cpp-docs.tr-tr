@@ -7,12 +7,12 @@ helpviewer_keywords:
 - resource files, multiple
 - TN035
 ms.assetid: 1f08ce5e-a912-44cc-ac56-7dd93ad73fb6
-ms.openlocfilehash: 0493dd45caf5eb78da435987a4590442a908a5a3
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 8ce38c2f3f4effa993dfa32221d82bece65096dd
+ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62305521"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "65448542"
 ---
 # <a name="tn035-using-multiple-resource-files-and-header-files-with-visual-c"></a>TN035: Visual C++ birden çok kaynak dosya ve üstbilgi dosyası kullanma
 
@@ -204,7 +204,7 @@ RESOURCE.H     AFXRES.H
     AFXPRINT.RC
 ```
 
-Derleme zamanı yönergeleri'ni kullanarak Visual C++'de düzenlenebilir ve düzenlenemez kaynaklarınızı birden çok düzenleyebilirsiniz. RC dosyaları burada "ana" MYAPP. RC hiçbir şey yapmaz ancak # diğer include. RC dosyaları. Visual C++ projesi kullanıyorsanız. MAK dosyasını ve ardından "ana" içermelidir. RC dosyası projede bu nedenle, tüm # #include ile eklenen kaynakları uygulamanızla derlenir.
+Derleme zamanı yönergeleri'ni kullanarak Visual C++'de düzenlenebilir ve düzenlenemez kaynaklarınızı birden çok düzenleyebilirsiniz. RC dosyaları burada "ana" MYAPP. RC hiçbir şey yapmaz ancak # diğer include. RC dosyaları. Visual Studio kullanıyorsanız C++ proje. MAK dosyasını ve ardından "ana" içermelidir. RC dosyası projede bu nedenle, tüm # #include ile eklenen kaynakları uygulamanızla derlenir.
 
 **Düzenlenemez Visual C++ dosyalarının zorlama**
 

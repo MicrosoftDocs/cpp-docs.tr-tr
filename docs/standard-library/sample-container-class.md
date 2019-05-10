@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - container classes [C++]
 ms.assetid: 5b1451f2-c708-45da-bbf0-9e42fd687a1a
-ms.openlocfilehash: dbfa076756b9e4829898d38e0277ad90106ba579
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c797a893549c8ec708cfb60e6f002b35c27cd35c
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62410999"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65220237"
 ---
 # <a name="sample-container-class"></a>Örnek Kapsayıcı Sınıfı
 
 > [!NOTE]
-> Bu konuda C++ Standart Kitaplığı'nda kullanılan kapsayıcıları işlevsiz bir örnek olarak Visual C++ belgelerinin bulunduğu. Daha fazla bilgi için [C++ Standart Kitaplığı kapsayıcıları](../standard-library/stl-containers.md).
+> Bu konu Microsoft olan C++ kullanılan kapsayıcıları işlevsiz bir örnek olarak belgeleri C++ standart kitaplığı. Daha fazla bilgi için [C++ Standart Kitaplığı kapsayıcıları](../standard-library/stl-containers.md).
 
 Öğeler, genellikle türündeki değişen uzunluktaki dizisini denetleyen bir nesneyi tanımlayan `Ty`. Sıralı kapsayıcı bağlı olarak farklı şekillerde depolanır.
 

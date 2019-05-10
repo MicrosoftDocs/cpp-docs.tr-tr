@@ -8,12 +8,12 @@ helpviewer_keywords:
 - deploying applications [C++], about deploying applications
 - libraries [C++], application deployment issues
 ms.assetid: ebd7f246-ab54-40e8-87fa-dac02c0047b3
-ms.openlocfilehash: ec472e506e78a57b65186bf6a5b801419fb141fb
-ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
+ms.openlocfilehash: ac3565b4ec465ec60672d2238fbe81b71613a6c1
+ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "64346415"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "65449029"
 ---
 # <a name="deployment-concepts"></a>Dağıtım Kavramları
 
@@ -21,7 +21,7 @@ Bu bölüm, C++ uygulamaları dağıtmak için ana hususlar anlatılmaktadır.
 
 ## <a name="windows-installer-deployment-in-c"></a>C++'ta Windows Installer dağıtımı
 
-Visual C++ projeleri, dağıtım için genellikle geleneksel Windows Installer Kurulumu'nu kullanın. Bir Windows Installer dağıtımı hazırlama için setup.exe dosyasını uygulamanızda paketini ve bir yükleyici paketi (.msi) ile birlikte bu dosyayı dağıtma. Kullanıcılar daha sonra uygulamanızı yüklemek için Setup.exe'yi çalıştırın.
+Visual Studio C++ projeleri dağıtımı için genellikle geleneksel Windows Installer Kurulumu'nu kullanın. Bir Windows Installer dağıtımı hazırlama için setup.exe dosyasını uygulamanızda paketini ve bir yükleyici paketi (.msi) ile birlikte bu dosyayı dağıtma. Kullanıcılar daha sonra uygulamanızı yüklemek için Setup.exe'yi çalıştırın.
 
 Çözümünüze bir kurulum projesi ekleyerek, uygulamanızı paketlemek; yapılandırıldığında, Kurulum ve yükleyici, kullanıcılara dağıttığınız paket dosyaları oluşturur. Daha fazla bilgi için [dağıtım yöntemi seçme](choosing-a-deployment-method.md).
 

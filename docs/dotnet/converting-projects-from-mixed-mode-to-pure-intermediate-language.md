@@ -7,12 +7,12 @@ helpviewer_keywords:
 - mixed-mode applications, intermediate language
 - projects [C++], converting to intermediate language
 ms.assetid: 855f9e3c-4f09-4bfe-8eab-a45f68292be9
-ms.openlocfilehash: 93eff646fb582e25ad70549afc714c5321e56079
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 2f63b6860157e315d44f7c050812a7f0b97f2726
+ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62209249"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "65448047"
 ---
 # <a name="converting-projects-from-mixed-mode-to-pure-intermediate-language"></a>Projeleri karışık moddan saf Ara dile dönüştürme
 
@@ -21,7 +21,7 @@ Tüm Visual C++ CLR projeleri için C çalışma zamanı kitaplıkları, varsay�
 > [!IMPORTANT]
 > Visual Studio 2015 kullanım dışı ve Visual Studio 2017 artık oluşturulmasını destekler **/CLR: pure** veya **/CLR: safe** CLR uygulamaları için kod. Saf veya güvenli derlemeleri ihtiyacınız varsa, uygulamanız için C# Çevir öneririz.
 
-Destekleyen Visual C++ Derleyici Araç Takımı'nın önceki bir sürümünü kullanıyorsanız **/CLR: pure** veya **/CLR: safe**, kodunuzu saf MSIL olarak dönüştürmek için bu yordamı kullanın:
+Microsoft önceki bir sürümünü kullanıyorsanız, C++ destekleyen derleyici araç takımı **/CLR: pure** veya **/CLR: safe**, kodunuzu saf MSIL olarak dönüştürmek için bu yordamı kullanın:
 
 ### <a name="to-convert-your-mixed-mode-application-into-pure-intermediate-language"></a>Karma mod uygulamanızı saf Ara dile dönüştürme
 

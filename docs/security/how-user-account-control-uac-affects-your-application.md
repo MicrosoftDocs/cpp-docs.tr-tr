@@ -7,12 +7,12 @@ helpviewer_keywords:
 - user accounts [C++]
 - User Account Control [C++]
 ms.assetid: 0d001870-253e-4989-b689-f78035953799
-ms.openlocfilehash: 3702462ec892025cfb4f24d9c91e6db705b1b9a5
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 3818b0ff7d4e4c551c41726dd44935beb5d32842
+ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62179251"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "65448480"
 ---
 # <a name="how-user-account-control-uac-affects-your-application"></a>Kullanıcı Hesabı Denetimi (UAC) Uygulamanızı Nasıl Etkiler
 
@@ -22,7 +22,7 @@ Kullanıcı Hesabı Denetimi (UAC), Windows Vista'nın, kullanıcı hesapların�
 
 ## <a name="building-projects-after-enabling-uac"></a>UAC etkinleştirdikten sonra proje oluşturma
 
-Windows Vista'da UAC devre dışıyken Visual C++ projesi oluşturun ve daha sonra UAC'yi etkinleştirmek, temizleme ve bunun düzgün çalışması projeyi yeniden derleyin.
+Visual Studio yapı C++ proje Windows Vista'da UAC devre dışı bırakıldı ve daha sonra UAC'yi etkinleştirmek, temizlemek ve bunun düzgün çalışması projeyi yeniden derleyin.
 
 ## <a name="applications-that-require-administrative-privileges"></a>Yönetici ayrıcalıkları gerektiren uygulamalar
 

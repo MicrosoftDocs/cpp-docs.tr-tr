@@ -12,16 +12,16 @@ helpviewer_keywords:
 - Build system changes, $(Inherit)
 - Build system changes, $(NoInherit)
 ms.assetid: e564d95f-a6cc-4d97-b57e-1a71daf66f4a
-ms.openlocfilehash: 621e62379657da66d6eaec7a3ceff780fd610066
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c3e51aa7e5a4346137e94191b551b0d53452e460
+ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62205497"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "65449014"
 ---
 # <a name="build-system-changes"></a>Derleme Sistemi Değişiklikleri
 
-Visual C++ projeleri derlemek için MSBuild sistemi kullanılır. Ancak, Visual Studio 2008 ve önceki sürümlerde, VCBuild sistemi kullanıldı. Belirli dosya türleri ve üzerinde VCBuild bağımlı kavramları yok veya geçerli sistemde farklı şekilde temsil edilir. Bu belgede, geçerli derleme sistemi farklılıkları açıklar.
+Visual Studio derleme için kullanılan MSBuild sistemi C++ projeleri. Ancak, Visual Studio 2008 ve önceki sürümlerde, VCBuild sistemi kullanıldı. Belirli dosya türleri ve üzerinde VCBuild bağımlı kavramları yok veya geçerli sistemde farklı şekilde temsil edilir. Bu belgede, geçerli derleme sistemi farklılıkları açıklar.
 
 ## <a name="vcproj-is-now-vcxproj"></a>.vcproj .vcxproj sunulmuştur
 
@@ -37,7 +37,7 @@ Geçerli sürümde .props dosya adı uzantısı için bir proje özellik sayfas�
 
 ## <a name="custom-build-rules-and-rules-files"></a>Özel derleme kuralları ve .rules dosyaları
 
-Önceki sürümlerde bir *kural dosyası* .rules dosya adı uzantısına sahip bir XML tabanlı bir dosya. Bir kural dosyası, özel derleme kuralları tanımlayın ve bunları birleştirmenizi Visual C++ projesi derleme işlemine olanak tanır. Daha fazla çıkış dosyalarını veya ilişkili bir veya daha fazla dosya adı uzantılarına sahip olabilir, bir özel derleme kuralının giriş dosyaları birini oluşturan bir araca geçirmek sağlar.
+Önceki sürümlerde bir *kural dosyası* .rules dosya adı uzantısına sahip bir XML tabanlı bir dosya. Bir kural dosyası özel derleme kuralları tanımlayın ve bunları Visual Studio derleme işlemine birleştirmenizi sağlar C++ proje. Daha fazla çıkış dosyalarını veya ilişkili bir veya daha fazla dosya adı uzantılarına sahip olabilir, bir özel derleme kuralının giriş dosyaları birini oluşturan bir araca geçirmek sağlar.
 
 Bu sürümde, özel derleme kuralları üç dosya türleri, .xml, .props ve .targets, .rules dosyası tarafından temsil edilir. Visual C++'ın önceki bir sürümü kullanılarak oluşturulmuş bir .rules dosyası geçerli sürüme geçiş yaptığında eşdeğer .xml, .props ve .targets dosyaları oluşturulur ve özgün .rules dosyası ile birlikte, projenizdeki depolanır.
 

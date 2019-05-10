@@ -5,18 +5,18 @@ ms.topic: reference
 helpviewer_keywords:
 - MMX instruction set
 ms.assetid: 705deb2d-c3fd-4696-9e22-8bcf25866daf
-ms.openlocfilehash: 3b2de7896c4a688c3428cddc13144a838f906557
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b8b2697fa106506dadfdaa96149fd6b0b093c844
+ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62166977"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "65445880"
 ---
 # <a name="intel39s-mmx-instruction-set"></a>Intel&#39;s MMX yönerge kümesi
 
 **Microsoft'a özgü**
 
-Visual C++ derleyicisi Intel'in MMX (multimedya uzantısı) yönerge kümesi içinde satır içi assembler kullanmanıza olanak tanır. MMX yönergeleri, hata ayıklayıcı ayrıştırılmış kodu tarafından da desteklenir. İşlev MMX yönergeleri içerir, ancak bir EMMS yönergesi multimedya durumu boşaltmak için içermiyor, derleyici bir uyarı iletisi oluşturur. Daha fazla bilgi için Intel Web sitesine bakın.
+Microsoft C++ derleyici Intel'in MMX (multimedya uzantısı) yönerge kümesi içinde satır içi assembler kullanmanızı sağlar. MMX yönergeleri, hata ayıklayıcı ayrıştırılmış kodu tarafından da desteklenir. İşlev MMX yönergeleri içerir, ancak bir EMMS yönergesi multimedya durumu boşaltmak için içermiyor, derleyici bir uyarı iletisi oluşturur. Daha fazla bilgi için Intel Web sitesine bakın.
 
 **END Microsoft özgü**
 

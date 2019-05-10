@@ -9,12 +9,12 @@ helpviewer_keywords:
 - /Zc compiler options (C++)
 - Zc compiler options (C++)
 ms.assetid: 5f5bc102-44c3-4688-bbe1-080594dcee5c
-ms.openlocfilehash: ea977020286d720ed3a6b1b13bf8ff8f5c85e5b2
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 9609bc484310fbc9999182add384eb4e438378bf
+ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62315969"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "65446235"
 ---
 # <a name="zcauto-deduce-variable-type"></a>/Zc:auto (Değişken Türünü Türet)
 
@@ -26,7 +26,7 @@ ms.locfileid: "62315969"
 
 ## <a name="remarks"></a>Açıklamalar
 
-C++ standardı bir özgün ve düzeltilmiş bir anlamı tanımlar `auto` anahtar sözcüğü. Visual C++ 2010'dan önce anahtar sözcüğü bir değişkende otomatik depolama sınıfı bildirir; diğer bir deyişle, bir değişken, yerel kullanım ömrüne sahiptir. Visual C++ 2010 ile başlayarak, anahtar sözcüğü bir değişken bildirimin başlatma ifadesinden türünü çıkarır. Kullanma **/Zc:auto [-]** derleyici seçeneği, derleyicinin özgün ve düzeltilmiş anlamını kullanmasını söylemeniz `auto` anahtar sözcüğü. **/Zc:auto** seçeneği varsayılan olarak açıktır. [/ Permissive-](permissive-standards-conformance.md) seçeneği, varsayılan ayarı değişmez **/Zc:auto**.
+C++ standardı bir özgün ve düzeltilmiş bir anlamı tanımlar `auto` anahtar sözcüğü. Visual Studio 2010'dan önce anahtar sözcüğü bir değişkende otomatik depolama sınıfı bildirir; diğer bir deyişle, bir değişken, yerel kullanım ömrüne sahiptir. Visual Studio 2010 ile başlayarak, anahtar sözcüğü bir değişken bildirimin başlatma ifadesinden türünü çıkarır. Kullanma **/Zc:auto [-]** derleyici seçeneği, derleyicinin özgün ve düzeltilmiş anlamını kullanmasını söylemeniz `auto` anahtar sözcüğü. **/Zc:auto** seçeneği varsayılan olarak açıktır. [/ Permissive-](permissive-standards-conformance.md) seçeneği, varsayılan ayarı değişmez **/Zc:auto**.
 
 Derleyici, uygun bir tanılama iletisi sorunları kullanımınız `auto` anahtar sözcüğü geçerli çelişir **/Zc:auto** derleyici seçeneği. Daha fazla bilgi için [auto anahtar sözcüğü](../../cpp/auto-keyword.md). Visual C++ ile uyumluluk sorunları hakkında daha fazla bilgi için bkz. [standart dışı davranış](../../cpp/nonstandard-behavior.md).
 

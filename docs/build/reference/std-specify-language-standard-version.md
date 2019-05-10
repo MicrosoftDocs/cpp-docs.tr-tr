@@ -6,12 +6,12 @@ f1_keywords:
 - -std
 - VC.Project.VCCLCompilerTool.CppLanguageStandard
 ms.assetid: 0acb74ba-1aa8-4c05-b96c-682988dc19bd
-ms.openlocfilehash: 32c63240f578b6170ae351cdf0cd1628167464b6
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: de3389a52781f541143268e3ede79eae375ff1d3
+ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62317893"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "65446233"
 ---
 # <a name="std-specify-language-standard-version"></a>/ Std (dil standart sürümünü belirt)
 
@@ -48,10 +48,10 @@ Ek bilgi için hangi C ++ 14 ve C ++ 17 özellikleri üzerinde ne zaman etkin **
 
 **/Std** seçeneği geçerli bir C++ derleme sırasında kullanarak algılanamıyor [ \_MSVC\_LANG](../../preprocessor/predefined-macros.md) önişlemci makrosu. Daha fazla bilgi için [Önişlemci makroları](../../preprocessor/predefined-macros.md).
 
-**/Std: c ++ 14** ve **/Std: c ++ Son** seçeneklerdir Visual C++ 2015 güncelleştirme 3'te sonraki sürümlerinde kullanılabilir. **/Std: c ++ 17** seçeneği olan Visual C++ 2017 sürüm 15.3 sonraki sürümlerinde kullanılabilir. Bazı C ++ 17 yukarıdaki standart belirtildiği gibi davranışı etkinleştirilir **/Std: c ++ 14** seçeneği yanı sıra, diğer tüm C ++ 17 özellikleri etkindir **/Std: c ++ 17**.
+**/Std: c ++ 14** ve **/Std: c ++ Son** seçeneklerdir Visual Studio 2015 güncelleştirme 3'te sonraki sürümlerinde kullanılabilir. **/Std: c ++ 17** seçeneği olan Visual Studio 2017 sürüm 15.3 sonraki sürümlerinde kullanılabilir. Bazı C ++ 17 yukarıdaki standart belirtildiği gibi davranışı etkinleştirilir **/Std: c ++ 14** seçeneği yanı sıra, diğer tüm C ++ 17 özellikleri etkindir **/Std: c ++ 17**.
 
 > [!NOTE]
-> MSVC derleyici sürümü veya güncelleştirme düzeyine bağlı olarak bazı C ++ 14 veya C ++ 17 özellikleri değil tam olarak uygulanabilir veya tam olarak belirttiğiniz zaman uyumlu **/Std: c ++ 14** veya **/Std: c ++ 17** seçenekleri. Örneğin, Visual C++ 2017 RTM Derleyici tam C ++ 14-uyumlu desteklemez `constexpr`, Aşama 2 adı arama veya ifade SFINAE. C++ dil uyumluluğu Visual C++ sürümü tarafından genel bakış için bkz. [Visual C++ dil uyumluluğu](../../overview/visual-cpp-language-conformance.md).
+> MSVC derleyici sürümü veya güncelleştirme düzeyine bağlı olarak bazı C ++ 14 veya C ++ 17 özellikleri değil tam olarak uygulanabilir veya tam olarak belirttiğiniz zaman uyumlu **/Std: c ++ 14** veya **/Std: c ++ 17** seçenekleri. Örneğin, Visual Studio 2017 RTM Derleyici tam C ++ 14-uyumlu desteklemez `constexpr`, Aşama 2 adı arama veya ifade SFINAE. C++ dil uyumluluğu Visual C++ sürümü tarafından genel bakış için bkz. [Visual C++ dil uyumluluğu](../../overview/visual-cpp-language-conformance.md).
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
 

@@ -1,22 +1,20 @@
 ---
 title: 'Nasıl yapılır: Hedef Framework ve Platform araç kümesini değiştirme'
 ms.custom: conceptual
-ms.date: 11/04/2016
-f1_keywords:
-- msbuild.cpp.howto.modifytargetframeworkandplatformtoolset
+ms.date: 05/06/2019
 helpviewer_keywords:
 - 'msbuild (c++), howto: modify target framework and platform toolset'
 ms.assetid: 031b1d54-e6e1-4da7-9868-3e75a87d9ffe
-ms.openlocfilehash: cf2078432f629a353e0c325b407db59681ffd9d3
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c3d6b50a57cab9cc63657949fceccebf4ea6b8c9
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62273501"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65220680"
 ---
 # <a name="how-to-modify-the-target-framework-and-platform-toolset"></a>Nasıl yapılır: Hedef Framework ve Platform araç kümesini değiştirme
 
-Visual C++ proje ayarları .NET Framework'ün farklı sürümlerini hedeflemek için ve farklı platform araç takımları kullanacak şekilde değiştirebilirsiniz. Varsayılan olarak, proje sistemi .NET Framework sürümünü ve projeyi oluşturmak için kullandığınız Visual Studio sürümüne karşılık gelen araç kümesi sürümünü kullanır. Proje özelliklerini değiştirerek hedef platform araç takımını değiştirebilirsiniz. Proje (.vcxproj) dosyasını değiştirerek hedef Framework'ü değiştirebilirsiniz. Ayrı bir kod tabanı her derleme hedefi korumak zorunda değildir.
+Visual Studio değiştirebilirsiniz C++ proje .NET Framework'ün farklı sürümlerini hedefleyen ve farklı platform araç takımları kullanacak şekilde ayarlar. Varsayılan olarak, proje sistemi .NET Framework sürümünü ve projeyi oluşturmak için kullandığınız Visual Studio sürümüne karşılık gelen araç kümesi sürümünü kullanır. Proje özelliklerini değiştirerek hedef platform araç takımını değiştirebilirsiniz. Proje (.vcxproj) dosyasını değiştirerek hedef Framework'ü değiştirebilirsiniz. Ayrı bir kod tabanı her derleme hedefi korumak zorunda değildir.
 
 > [!IMPORTANT]
 >  Bazı sürümler değiştirilmiş hedef Framework'leri veya platform araç takımlarını desteklemiyor olabilir. Uyumluluk bilgileri için bkz. [bağlantı noktası, geçirme ve yükseltme Visual Studio projeleri](/visualstudio/porting/port-migrate-and-upgrade-visual-studio-projects).

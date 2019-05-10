@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - uuid attribute
 ms.assetid: 90562a94-5e28-451b-a4b0-cadda7f66efe
-ms.openlocfilehash: 8d9d55fc2a340165480cab4036ad1e5323e6b625
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: eae79f9a4d0af6375834c0792c4004f52a16e07e
+ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62407204"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "65448934"
 ---
 # <a name="uuid-c-attributes"></a>uuid (C++ Öznitelikleri)
 
@@ -32,7 +32,7 @@ Bir sınıf veya arabirim için benzersiz Kimliğini belirtir.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bir arabirim veya sınıf tanımını belirtme **UUID** C++ özniteliği ve ardından Visual C++ derleyicisi sağlar; biri. Belirttiğinizde bir **UUID**, tırnak işaretleri eklemeniz gerekir.
+Bir arabirim veya sınıf tanımını belirtme **UUID** C++ özniteliği, ardından Microsoft C++ derleyici bir sağlayacaktır. Belirttiğinizde bir **UUID**, tırnak işaretleri eklemeniz gerekir.
 
 Siz belirtmezseniz **UUID**, derleyici bir makinede farklı öznitelik projelerinde arabirimler veya aynı ada sahip sınıflar için aynı GUID oluşturur.
 

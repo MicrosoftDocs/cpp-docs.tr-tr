@@ -10,12 +10,12 @@ helpviewer_keywords:
 - migration [C++], /clr compiler option
 - /clr compiler option [C++], porting to
 ms.assetid: c9290b8b-436a-4510-8b56-eae51f4a9afc
-ms.openlocfilehash: 6ac470b85a14bfe32c7f3fe47168180687669ec6
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 9abc85227d6091005d7e097d3305150f4ca347a1
+ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62387259"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "65448091"
 ---
 # <a name="how-to-migrate-to-clr"></a>Nasıl yapılır: / CLR'ye geçiş
 
@@ -41,13 +41,13 @@ Kullanmadan önce **/CLR** , projenizdeki herhangi bir modülü üzerinde derley
 
 Sırayla aşağıdaki adımlar, kolay yolunu belirtin. bir **/CLR** derleme. Derlemek ve bu adımların her biri sonra projenizi çalıştırmak önemlidir.
 
-### <a name="versions-prior-to-visual-c-2003"></a>Visual C++ 2003 önceki sürümler
+### <a name="versions-prior-to-visual-studio-2003"></a>Visual Studio 2003 önceki sürümler
 
-Visual Studio 2010 Visual C++ 2003'ten önceki bir sürümden yükseltiyorsanız, Gelişmiş C++ Standart uyumluluk Visual C++ 2003'te ilgili derleyici hataları görebilirsiniz.
+Visual Studio 2010 için Visual Studio 2003'ten önceki bir sürümden yükseltiyorsanız, Gelişmiş ilgili derleyici hataları görebilirsiniz C++ Visual Studio 2003 standard uyumluluğu
 
-### <a name="upgrading-from-visual-c-2003"></a>Visual C++ 2003'ten yükseltme
+### <a name="upgrading-from-visual-studio-2003"></a>Visual Studio 2003'ten yükseltme
 
-Önceki Visual C++ 2003 ile oluşturulan projeleri de ilk derlenmelidir olmadan **/CLR** gibi Visual Studio artık ANSI/ISO uyumluluk ve bazı önemli değişiklikler arttı. Büyük olasılıkla en dikkat etmeniz gereken değişiklik [CRT'deki güvenlik özellikleri](../c-runtime-library/security-features-in-the-crt.md). CRT kullanan kodu kullanımdan kaldırma uyarıları üretmek neredeyse kesindir. Bu uyarı bastırılabilir, ancak yeni geçirme [CRT işlevleri, Security-Enhanced sürümleri](../c-runtime-library/security-enhanced-versions-of-crt-functions.md) daha iyi güvenlik sağlar ve güvenlik sorunlarını kodunuzda gösterebilir tercih edilen, aynıdır.
+Önceki Visual Studio 2003 ile oluşturulan projeleri de ilk derlenmelidir olmadan **/CLR** gibi Visual Studio artık ANSI/ISO uyumluluk ve bazı önemli değişiklikler arttı. Büyük olasılıkla en dikkat etmeniz gereken değişiklik [CRT'deki güvenlik özellikleri](../c-runtime-library/security-features-in-the-crt.md). CRT kullanan kodu kullanımdan kaldırma uyarıları üretmek neredeyse kesindir. Bu uyarı bastırılabilir, ancak yeni geçirme [CRT işlevleri, Security-Enhanced sürümleri](../c-runtime-library/security-enhanced-versions-of-crt-functions.md) daha iyi güvenlik sağlar ve güvenlik sorunlarını kodunuzda gösterebilir tercih edilen, aynıdır.
 
 ### <a name="upgrading-from-managed-extensions-for-c"></a>C++ için Yönetilen Uzantılar'dan yükseltme
 
@@ -98,7 +98,7 @@ Bu adım, derleme görevleri dosyalarını kullanan projeler için farklı etkil
 **/ CLR** yönergelerini takip ederek geliştirme ortamında seçilebilir [/CLR (ortak dil çalışma zamanı derlemesi)](../build/reference/clr-common-language-runtime-compilation.md). Daha önce belirtildiği gibi bu adımı çakışan proje ayarları devre dışı bırakır.
 
 > [!NOTE]
->  Yönetilen kitaplık veya web hizmeti projesi Visual C++ 2003'ten yükseltme yaparken **/Zl** eklenen derleyici seçeneği olacak **komut satırı** özellik sayfası. Bu, LNK2001 neden olur. Kaldırma **/Zl** gelen **komut satırı** çözmek için özellik sayfası. Bkz: [/Zl (varsayılan kitaplık adını atla)](../build/reference/zl-omit-default-library-name.md) ve [derleyici ayarlayın ve derleme özellikleri](../build/working-with-project-properties.md) daha fazla bilgi için. Veya, msvcrt.lib ve msvcmrt.lib bağlayıcıya ait ekleme **ek bağımlılıklar** özelliği.
+>  Yönetilen kitaplık veya web hizmeti projesi Visual Studio 2003'ten yükseltme yaparken **/Zl** eklenen derleyici seçeneği olacak **komut satırı** özellik sayfası. Bu, LNK2001 neden olur. Kaldırma **/Zl** gelen **komut satırı** çözmek için özellik sayfası. Bkz: [/Zl (varsayılan kitaplık adını atla)](../build/reference/zl-omit-default-library-name.md) ve [derleyici ayarlayın ve derleme özellikleri](../build/working-with-project-properties.md) daha fazla bilgi için. Veya, msvcrt.lib ve msvcmrt.lib bağlayıcıya ait ekleme **ek bağımlılıklar** özelliği.
 
 Derleme görevleri dosyası ile oluşturulan projeleri için uyumlu derleyici seçenekleri el ile bir kez devre dışı bırakılmalıdır **/CLR** eklenir. Bkz: /[/CLR kısıtlamalar](../build/reference/clr-restrictions.md) ile uyumlu derleyici seçenekleri hakkında bilgi için **/CLR**.
 

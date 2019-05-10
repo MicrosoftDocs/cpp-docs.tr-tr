@@ -1,13 +1,13 @@
 ---
 title: C++'da Windows Programlamasına Genel Bakış
-ms.date: 03/28/2019
+ms.date: 05/06/2019
 ms.assetid: efc691d7-21f3-47ae-ae56-cab999ccf59d
-ms.openlocfilehash: 48c7f419b6c69955ab25db528c8d3d86a7249391
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 40028794a6df30db619965181f2e31d7c9a2745c
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62362354"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65221330"
 ---
 # <a name="overview-of-windows-programming-in-c"></a>C++'da Windows Programlamasına Genel Bakış
 
@@ -21,7 +21,7 @@ C++ konsol uygulamaları, konsol penceresinde komut satırından çalıştırın
 
 Terim *yerel masaüstü istemcisi uygulama* özgün yerel kullanan bir C veya C++ pencereli uygulamasına başvuruyor [Windows C API'leri ve/veya COM API'leri](/windows/desktop/apiindex/windows-api-list) işletim sistemine erişebilir. Bu API'leri kendilerini çoğunlukla c dilinde yazılmış olan Bu tür bir uygulama oluştururken, işletim sistemi olayları işleyen doğrudan bir C tarzı ileti döngüsü karşı programlama veya kullanma seçeneğiniz *Microsoft Foundation sınıfları* (MFC) Win32 sarmalayan bir C++ Kitaplığı biraz nesne yönelimli bir biçimde. Her iki yaklaşım "modern" Evrensel Windows Platformu (aşağıya bakın) kıyasla, ancak her ikisi de yine de tamamen desteklenen ve dünyanın hemen çalıştırma kod satırlarını milyonlarca sahip olarak kabul edilir. Bir pencere içinde çalışan bir Win32 uygulaması, Windows iletileri Windows yordamı işlevi içinde açıkça çalışmak Geliştirici gerektirir. Adını rağmen bir Win32 uygulaması bir 32-bit (x86) veya 64-bit (x64) ikili olarak derlenebilir. Visual Studio IDE'de x86 hüküm ve Win32 eşanlamlıdır.
 
-Geleneksel Windows programlama C++ ile çalışmaya başlamak için bkz. [Win32 ve C++ ile çalışmaya başlama](/windows/desktop/LearnWin32/learn-to-program-for-windows). Win32'in bazı anlamak sonra hakkında bilgi edinmek daha kolay olacak [MFC Masaüstü uygulamaları](/mfc/mfc-desktop-applications). Gelişmiş grafik kullanan geleneksel C++ masaüstü uygulaması örneği için bkz: [Hilo: Windows için C++ uygulamaları geliştirme](https://msdn.microsoft.com/library/windows/desktop/ff708696.aspx).
+Geleneksel Windows programlama C++ ile çalışmaya başlamak için bkz. [Win32 ve C++ ile çalışmaya başlama](/windows/desktop/LearnWin32/learn-to-program-for-windows). Win32'in bazı anlamak sonra hakkında bilgi edinmek daha kolay olacak [MFC Masaüstü uygulamaları](../mfc/mfc-desktop-applications.md). Gelişmiş grafik kullanan geleneksel C++ masaüstü uygulaması örneği için bkz: [Hilo: Windows için C++ uygulamaları geliştirme](https://msdn.microsoft.com/library/windows/desktop/ff708696.aspx).
 
 ### <a name="c-or-net"></a>C++ veya .NET? 
 

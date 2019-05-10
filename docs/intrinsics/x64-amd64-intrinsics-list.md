@@ -5,16 +5,16 @@ helpviewer_keywords:
 - cl-exe compiler, intrinsics
 - intrinsics, x64
 - intrinsics, amd64
-ms.openlocfilehash: 141ffa24a87d7794815c10f407ee23718071dacf
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 7b1a0b664d0b67925cd6a2ed01e128741e641b48
+ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62389664"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "65448581"
 ---
 # <a name="x64-amd64-intrinsics-list"></a>x64 (amd64) iç bilgi listesi
 
-Bu belge, x 64 (amd64 da bilinir) hedefleniyorsa, Visual C++ derleyicisi destekleyen ön tanımlı listeler.
+Bu belge, yapı içlerini listeler, Microsoft C++ derleyici x64 (amd64 da bilinir) hedefleniyorsa destekler.
 
 Tek tek yapı içleri hakkında daha fazla bilgi için, hedeflediğiniz işlemciye uygun şekilde şu kaynaklara bakabilirsiniz:
 

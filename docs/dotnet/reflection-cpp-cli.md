@@ -18,12 +18,12 @@ helpviewer_keywords:
 - data types [C++], enumerating
 - public members [C++]
 ms.assetid: 46b6ff4a-e441-4022-8892-78e69422f230
-ms.openlocfilehash: a17910e0288b81723aa837ba9204bb40713d5d49
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 5f18a7faa4e77571a87cc0d76a43240aaf1fd52c
+ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62384692"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "65447232"
 ---
 # <a name="reflection-ccli"></a>Yansıma (C++/CLI)
 
@@ -34,7 +34,7 @@ Sağlanan derleme adı için tanımlayıcı adı olduğunu unutmayın (bkz [bkz]
 Yansıma özelliklerine erişmek için en yaygın yollarından biri sayesinde <xref:System.Object.GetType%2A> yöntemi. Bu yöntem tarafından sağlanan <xref:System.Object?displayProperty=nameWithType>, hangi atık olarak toplanmış tüm sınıflar türetilen öğesinden.
 
 > [!NOTE]
-> Visual C++ derleyicisi ile .exe yansıma .exe ile oluşturulursa yalnızca izin **/CLR: pure** veya **/CLR: safe** derleyici seçenekleri. **/CLR: pure** ve **/CLR: safe** derleyici seçenekleri, Visual Studio 2015'te kullanım dışı ve Visual Studio 2017'de kullanılamaz. Bkz: [/CLR (ortak dil çalışma zamanı derlemesi)](../build/reference/clr-common-language-runtime-compilation.md) daha fazla bilgi için.
+> Microsoft ile .exe yansıma C++ derleyici .exe ile oluşturulursa yalnızca izin **/CLR: pure** veya **/CLR: safe** derleyici seçenekleri. **/CLR: pure** ve **/CLR: safe** derleyici seçenekleri, Visual Studio 2015'te kullanım dışı ve Visual Studio 2017'de kullanılamaz. Bkz: [/CLR (ortak dil çalışma zamanı derlemesi)](../build/reference/clr-common-language-runtime-compilation.md) daha fazla bilgi için.
 
 Daha fazla bilgi için bkz. <xref:System.Reflection>
 
@@ -181,7 +181,7 @@ Yukarıdaki kod vcpp_reflection_6.dll adlı bir DLL içine derlenir, bu derlemen
 
 Yansıma sistem derleme, bir dizi başarıyla yüklendikten sonra **türü** nesneleri ile alınır <xref:System.Reflection.Assembly.GetTypes%2A?displayProperty=nameWithType> işlevi. Bu durumda, yalnızca bir sınıf tanımlanır ancak her dizi öğesi farklı bir türle ilgili bilgi içerir. Bir döngü kullanarak her **türü** kullanarak tür üyeleri hakkında bu dizinin içinde sorgulanır **Type::GetMembers** işlevi. Bu işlev bir dizi döndürür **MethodInfo** nesneleri, üye işlevi, veri üyesi veya özellik türü hakkında bilgi içeren her bir nesne.
 
-Yöntemlerin listesi işlevleri açıkça içeren Not tanımlanan **TestClass** ve işlev örtük olarak devralındığı **System::Object** sınıfı. .NET yerine Visual C++ sözdizimi tanımlanmakta bir parçası olarak, Özellikler get/set işlevleri tarafından erişilen temel alınan veri üyesi olarak görünür. Get/set işlevleri, normal yöntemler olarak bu listede görünür. Yansıma, ortak dil çalışma zamanı değil Visual C++ Derleyici tarafından desteklenir.
+Yöntemlerin listesi işlevleri açıkça içeren Not tanımlanan **TestClass** ve işlev örtük olarak devralındığı **System::Object** sınıfı. .NET yerine Visual C++ sözdizimi tanımlanmakta bir parçası olarak, Özellikler get/set işlevleri tarafından erişilen temel alınan veri üyesi olarak görünür. Get/set işlevleri, normal yöntemler olarak bu listede görünür. Yansıma değil Microsoft tarafından ortak dil çalışma zamanı ile desteklenen C++ derleyici.
 
 Bu kod, tanımladığınız bir derlemeyi incelemek için kullanılan olsa da, .NET derlemeleri incelemek için bu kod da kullanabilirsiniz. Örneğin, mscorlib için TestAssembly değiştirirseniz, her tür ve yöntem mscorlib.dll içinde tanımlanan bir listesini görürsünüz.
 

@@ -1,16 +1,16 @@
 ---
 title: Yalıtılmış Uygulama ve Yan Yana Derleme Kavramları
-ms.date: 11/04/2016
+ms.date: 05/06/2019
 helpviewer_keywords:
 - side-by-side assemblies [C++]
 - isolated assemblies [C++]
 ms.assetid: 945a885f-cb3e-4c8a-a0b9-2c2e3e02cc50
-ms.openlocfilehash: 448d2088a9e91de8fc34b4f23721ffec77f6c697
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f569381b9efe9a8ca7704dc87bcb8e8102e0cde2
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62196709"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65220915"
 ---
 # <a name="concepts-of-isolated-applications-and-side-by-side-assemblies"></a>Yalıtılmış Uygulama ve Yan Yana Derleme Kavramları
 
@@ -32,7 +32,7 @@ Yan yana derleme bağımlılıklarını değiştirerek bir uygulama dağıtıld�
 
 ## <a name="visual-c-libraries"></a>Visual C++ kitaplıkları
 
-Visual Studio 2005 ve Visual Studio 2008'de; ATL, MFC, CRT, Standart C++, OpenMP ve MSDIA gibi yeniden dağıtılabilir kitaplıklar, yerel derleme önbelleğine paylaşılan yan yana derlemeler olarak dağıtılmıştır. Geçerli sürümde, yeniden dağıtılabilir kitaplıklar merkezi dağıtım kullanmaktadır. Varsayılan olarak, Visual C++ kullanılarak oluşturulan tüm uygulamalar, son ikili dosyada gömülü bildirimle oluşturulur ve bildirim Visual C++ kitaplıklarındaki iki dosyanın bağımlılıklarını açıklar. Visual C++ uygulamaları için bildirim üretme anlamak için bkz: [C/C++ programları bildirim üretimini anlama](understanding-manifest-generation-for-c-cpp-programs.md). Bildirim; kullandıkları ya da yerel dağıtım kullanan kitaplıklara statik olarak bağlı uygulamalar için gerekli değildir. Dağıtım hakkında daha fazla bilgi için bkz: [Visual C++ üzerinde dağıtım](../windows/deployment-in-visual-cpp.md).
+Visual Studio 2005 ve Visual Studio 2008'de; ATL, MFC, CRT, Standart C++, OpenMP ve MSDIA gibi yeniden dağıtılabilir kitaplıklar, yerel derleme önbelleğine paylaşılan yan yana derlemeler olarak dağıtılmıştır. Geçerli sürümde, yeniden dağıtılabilir kitaplıklar merkezi dağıtım kullanmaktadır. Varsayılan olarak, Visual Studio kullanılarak oluşturulan tüm uygulamalar son ikili dosyada gömülü bildirimle oluşturulur ve bildirim görselde ikili dosya bağımlılıklarını açıklar C++ kitaplıkları. Bildirim üretimini anlama için C++ uygulamaları, [Understanding Manifest Generation for C /C++ programlar](understanding-manifest-generation-for-c-cpp-programs.md). Bildirim; kullandıkları ya da yerel dağıtım kullanan kitaplıklara statik olarak bağlı uygulamalar için gerekli değildir. Dağıtım hakkında daha fazla bilgi için bkz: [Visual C++ üzerinde dağıtım](../windows/deployment-in-visual-cpp.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

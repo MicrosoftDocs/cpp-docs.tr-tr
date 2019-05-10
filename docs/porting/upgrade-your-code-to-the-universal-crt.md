@@ -2,12 +2,12 @@
 title: Kodunuzu Evrensel CRT'ye yükseltme
 ms.date: 03/31/2017
 ms.assetid: eaf34c1b-da98-4058-a059-a10db693a5ce
-ms.openlocfilehash: bdf1615d47361654e9690977520d01c332098438
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 68edcd57ee03ac861a6d2105456f4dbf699c1210
+ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62337173"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "65449002"
 ---
 # <a name="upgrade-your-code-to-the-universal-crt"></a>Kodunuzu Evrensel CRT'ye yükseltme
 
@@ -19,7 +19,7 @@ Bu yeniden düzenleme ile adlar veya konumlar birçok CRT üst bilgi dosyaları,
 
 ## <a name="where-to-find-the-universal-crt-files"></a>Evrensel CRT dosyaları nerede bulacağını
 
-Bir Windows bileşeni, UCRT kitaplık dosyalarını ve üst bilgiler artık Windows Yazılım Geliştirme Seti (SDK) parçası olan. Visual Studio'yu yüklediğinizde UCRT kullanmak için gerekli Windows SDK'sının bölümleri de yüklenir. Visual Studio yükleyicisi UCRT üst bilgiler, kitaplıklar ve DLL dosyaları Visual Studio Proje tarafından kullanılan varsayılan yollara konumlarını yapı sistemi ekler. Varsayılan proje ayarlarını kullanıyorlarsa, Visual C++ projeleri güncelleştirdiğinizde, IDE'nin başlık dosyaları için yeni konumlar otomatik olarak bulur ve bağlayıcı otomatik olarak vcruntime kitaplıkları ve yeni varsayılan UCRT kullanır. Benzer şekilde, bir geliştirici komut istemi yapmak için kullandığınız komut satırı derlemeleri, otomatik olarak iyi iş ve ortamı içeren üst bilgiler ve kitaplıklar için yolları değişkenler güncelleştirilir.
+Bir Windows bileşeni, UCRT kitaplık dosyalarını ve üst bilgiler artık Windows Yazılım Geliştirme Seti (SDK) parçası olan. Visual Studio'yu yüklediğinizde UCRT kullanmak için gerekli Windows SDK'sının bölümleri de yüklenir. Visual Studio yükleyicisi UCRT üst bilgiler, kitaplıklar ve DLL dosyaları Visual Studio Proje tarafından kullanılan varsayılan yollara konumlarını yapı sistemi ekler. Visual Studio güncelleştirdiğinizde C++ projeleri varsayılan proje ayarlarını kullandıkları, IDE'nin başlık dosyaları için yeni konumlar otomatik olarak bulur ve bağlayıcı otomatik olarak yeni varsayılan UCRT ve vcruntime kitaplıklarını kullanır. Benzer şekilde, bir geliştirici komut istemi yapmak için kullandığınız komut satırı derlemeleri, otomatik olarak iyi iş ve ortamı içeren üst bilgiler ve kitaplıklar için yolları değişkenler güncelleştirilir.
 
 Standart C Kitaplığı üst bilgi dosyaları artık Windows SDK'yı bir SDK sürümüne özel dizin Ekle klasöründe bulunamadı. Program dosyaları veya Program dosyaları (x86) Windows Setleri dizininde üst bilgi dosyaları için tipik bir konum olduğu\\10\\INCLUDE\\_sdk sürümü_\\ucrt, burada _sdk sürümü_ bir Windows sürümü veya güncelleştirme, örneğin 10.0.14393.0 Yıldönümü güncelleştirmesi, Windows 10 için karşılık gelir.
 
@@ -29,7 +29,7 @@ Perakende ve UCRT DLL'lerin hata ayıklama ayrı konumlarda bulunabilir. Peraken
 
 C ve C++ Derleyici özgü çalışma zamanı desteği Kitaplığı **vcruntime**, program başlatma desteklemek için gereken kodu içerir ve özel durum işleme ve yapı içleri gibi özellikleri. Kitaplık ve üstbilgi dosyaları yine de Program dosyaları veya Program files (x86) dizini sürüme özgü Microsoft Visual Studio klasöründe bulunur. Visual Studio 2017'de üstbilgileri Microsoft Visual Studio altında bulunan\\2017\\_edition_\\VC\\Araçları\\MSVC\\  _LIB sürüm_\\içerir ve bağlantı kitaplıkları, Microsoft Visual Studio altında bulunan\\2017\\_edition_\\VC\\araçları \\MSVC\\_LIB sürüm_\\LIB\\_mimarisi_burada _edition_ sürümü Visual Studio'nun yüklü _LIB sürüm_ kitaplıkları sürümüdür ve _mimarisi_ İşlemci mimarisi. OneCore ve Store için bağlantı kitaplıkları da kitaplıklar klasöründe bulunur. Perakende ve hata ayıklama statik kitaplığı libvcruntime.lib ve libvcruntimed.lib sürümleridir. Dinamik bağlantı perakende ve hata ayıklama saplama kitaplıkları vcruntime.lib ve vcruntimed.lib, sırasıyla vardır.
 
-Güncelleştirdiğinizde, Visual C++ projeleri projenin ayarlarsanız **bağlayıcı** özelliği **tüm varsayılan kitaplıkları Yoksay** için **Evet** veya kullanıyorsanız `/NODEFAULTLIB` komut satırını ve ardından bağlayıcı seçeneğini listenize yeni, işlenmiş kitaplıkları eklenecek kitaplıklar güncelleştirmeniz gerekir. Eski CRT kitaplığı, LIBCMT.lib, lıbcmtd.lib, msvcrt.lib veya msvcrtd.lib, eşdeğer UIMap'e yeniden işlenmiş kitaplıkları ile değiştirin. Kullanılacak belirli kitaplıkları hakkında daha fazla bilgi için bkz: [CRT kitaplık özellikleri](../c-runtime-library/crt-library-features.md).
+Visual Studio güncelleştirdiğinizde C++ projeleri projenin ayarlarsanız **bağlayıcı** özelliği **tüm varsayılan kitaplıkları Yoksay** için **Evet** veya kullanıyorsanız`/NODEFAULTLIB` bağlayıcı seçeneğini komut satırında listenize yeni, işlenmiş kitaplıkları eklenecek kitaplıklar güncelleştirmeniz gerekir. Eski CRT kitaplığı, LIBCMT.lib, lıbcmtd.lib, msvcrt.lib veya msvcrtd.lib, eşdeğer UIMap'e yeniden işlenmiş kitaplıkları ile değiştirin. Kullanılacak belirli kitaplıkları hakkında daha fazla bilgi için bkz: [CRT kitaplık özellikleri](../c-runtime-library/crt-library-features.md).
 
 ## <a name="deployment-and-redistribution-of-the-universal-crt"></a>Dağıtım ve evrensel CRT dağıtılması
 

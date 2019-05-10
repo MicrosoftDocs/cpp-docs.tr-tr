@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - const_reverse_iterator method
 ms.assetid: ceac84d5-a40f-4bbf-81e0-a96aa2bd8ee8
-ms.openlocfilehash: 93b1ab9da2094cbb1e653bc9d6db8c195a33da84
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: cf6f57775e780ef1537ce2e9f664cba2087b0eea
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62211484"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65221693"
 ---
 # <a name="container-classconstreverseiterator"></a>Kapsayıcı Sınıfı::const_reverse_iterator
 
 > [!NOTE]
-> Bu konuda C++ Standart Kitaplığı'nda kullanılan kapsayıcıları işlevsiz bir örnek olarak Visual C++ belgelerinin bulunduğu. Daha fazla bilgi için [C++ Standart Kitaplığı kapsayıcıları](../standard-library/stl-containers.md).
+> Bu konu Microsoft olan C++ kullanılan kapsayıcıları işlevsiz bir örnek olarak belgeleri C++ standart kitaplığı. Daha fazla bilgi için [C++ Standart Kitaplığı kapsayıcıları](../standard-library/stl-containers.md).
 
 Denetlenen dizi için bir sabit ters yineleyici olarak hizmet verebilen bir nesneyi tanımlar.
 

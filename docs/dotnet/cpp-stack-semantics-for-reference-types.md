@@ -4,16 +4,16 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - reference types, C++ stack semantics for
 ms.assetid: 319a1304-f4a4-4079-8b84-01cec847d531
-ms.openlocfilehash: 69771de120dc413496a3b7b0613e51a13d208e22
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 4d9aaa493eab39199ac75b6b9fe888c3e103f115
+ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62209167"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "65448073"
 ---
 # <a name="c-stack-semantics-for-reference-types"></a>Referans Türleri için C++ Yığın Anlamları
 
-Visual C++ 2005'ten önce bir başvuru türünün bir örneği yalnızca kullanarak oluşturulabilir `new` toplanan yığın atık nesneyi oluşturan işleci. Bununla birlikte, artık yığında yerel türünün örneğini oluşturmak için kullanacağınız aynı sözdizimini kullanarak bir başvuru türünün bir örneğini oluşturabilirsiniz. Bu nedenle, kullanın gerekmez [yeni başvuru, gcnew](../extensions/ref-new-gcnew-cpp-component-extensions.md) başvuru türünde bir nesne oluşturmak için. Ve nesne kapsam dışına çıktığında, derleyicinin nesnenin yok Edicisi çağırır.
+Visual Studio 2005'ten önce bir başvuru türünün bir örneği yalnızca kullanarak oluşturulabilir `new` toplanan yığın atık nesneyi oluşturan işleci. Bununla birlikte, artık yığında yerel türünün örneğini oluşturmak için kullanacağınız aynı sözdizimini kullanarak bir başvuru türünün bir örneğini oluşturabilirsiniz. Bu nedenle, kullanın gerekmez [yeni başvuru, gcnew](../extensions/ref-new-gcnew-cpp-component-extensions.md) başvuru türünde bir nesne oluşturmak için. Ve nesne kapsam dışına çıktığında, derleyicinin nesnenin yok Edicisi çağırır.
 
 ## <a name="remarks"></a>Açıklamalar
 

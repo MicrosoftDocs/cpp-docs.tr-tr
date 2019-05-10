@@ -2,16 +2,16 @@
 title: Visual C++ ne&#39;s yeni 2003 ile 2015 arasındaki
 ms.date: 11/04/2016
 ms.assetid: c4afde6f-3d75-40bf-986f-be57e3818e26
-ms.openlocfilehash: ae21a81869bd68c5a2641dba47b89d7e10b67567
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 773500b32b1a80a6a7b1d1f2431b036f7ad3bd63
+ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62371928"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "65448866"
 ---
 # <a name="visual-c-what39s-new-2003-through-2015"></a>Visual C++ ne&#39;s yeni 2003 ile 2015 arasındaki
 
-Bu sayfa, Visual Studio 2015'ten tüm "Yenilikler" sayfalar için tüm sürümlerinde Visual C++ 2003'e toplar. Durumda Visual C++'ın önceki sürümlerinden yükseltme sırasında yararlı olabilir, bu bilgileri bir kolaylık olarak sağlanır.
+Bu sayfa, Visual Studio 2015'ten tüm "Yenilikler" sayfalar için tüm sürümlerinde Visual C++ 2003'e toplar. Durumunda Visual Studio'nun önceki sürümlerinden yükseltme sırasında yararlı olabilir, bu bilgileri bir kolaylık olarak sağlanır.
 
 > [!NOTE]
 > Visual Studio'nın geçerli sürümü hakkında daha fazla bilgi için bkz: [Visual Studio'da Visual C++ yenilikleri](../overview/what-s-new-for-visual-cpp-in-visual-studio.md) ve [Visual Studio'daki Visual c++ uyumluluk geliştirmeleri](../overview/cpp-conformance-improvements.md).
@@ -75,7 +75,7 @@ Bu farklılıklar, kaynak kodu veya diğer derleme yapıtlarının etkileyebilir
     };
    ```
 
-   Visual C++ derleyicisinin önceki sürümlerinde bu kabul, ancak şimdi derleyici, aşağıdaki hatayı verir:
+   Microsoft'ın önceki sürümlerini C++ Derleyici bunu kabul edilen, ancak şimdi derleyici, aşağıdaki hatayı verir:
 
    ```Output
     error C2071: 'S::r': illegal storage class
@@ -1516,7 +1516,7 @@ Bu farklılıklar, kaynak kodu veya diğer derleme yapıtlarının etkileyebilir
 
 #### <a name="compiler"></a>Derleyici
 
-Microsoft Visual C++ derleyicisi, şu ISO C ++ 11 dil özelliklerini destekler:
+MSVC şu ISO C ++ 11 dil özelliklerini destekler:
 
 - İşlev şablonları için varsayılan şablon bağımsız değişkenleri.
 - Oluşturucuları temsilci olarak görevlendirme
@@ -1696,7 +1696,7 @@ Bu geliştirilmiş ISO C/C++ standartları desteği, C ++ 11 ile uyumlu olması 
 ### <a name="new-in-visual-studio-2012-update-1"></a>Yeni Visual Studio 2012 güncelleştirme 1
 
 C++ kodunuzu derlerken Windows XP hedefleyin.
-Visual C++ derleyicisi ve kitaplıklarında hedef Windows XP ve Windows Server 2003 için kullanabilirsiniz.
+Microsoft kullanabileceğiniz C++ derleyici ve kitaplıkları hedef Windows XP ve Windows Server 2003 için.
 
 #### <a name="parallel-programming-support"></a>Paralel Programlama Desteği
 
@@ -1787,7 +1787,7 @@ Kod Kapsamı aracı ikili çalışma zamanında dinamik olarak güncelleştirild
 
 **static_assert Declaration.** A **static_assert** bildirimi derleme zamanında çalışma zamanında test diğer onaylama mekanizmaları aksine bir yazılım onayını sınar. Onaylama başarısız olursa, derleme başarısız olur ve belirtilen hata iletisi verilir.
 
-**nullptr ve __nullptr anahtar sözcükler.** Visual C++ derleyicisi kullanmanıza olanak tanıyan **nullptr** yerel kod veya yönetilen kod ile anahtar sözcüğü. **Nullptr** anahtar sözcüğü bir nesne tanıtıcısı, iç işaretçi veya yerel bir işaretçi türü bir nesneye göstermiyor gösterir. Derleyici, Yorumlar **nullptr** olmasını kullandığınızda yönetilen kod `/clr` derleyici seçeneği ve kullandığınızda, yerel kod `/clr` seçeneği.
+**nullptr ve __nullptr anahtar sözcükler.** MSVC kullanmanıza imkan tanır **nullptr** yerel kod veya yönetilen kod ile anahtar sözcüğü. **Nullptr** anahtar sözcüğü bir nesne tanıtıcısı, iç işaretçi veya yerel bir işaretçi türü bir nesneye göstermiyor gösterir. Derleyici, Yorumlar **nullptr** olmasını kullandığınızda yönetilen kod `/clr` derleyici seçeneği ve kullandığınızda, yerel kod `/clr` seçeneği.
 Microsoft'a özgü **__nullptr** anahtar sözcüğü sahip aynı anlamı **nullptr**, ancak yalnızca yerel kod için geçerlidir. Yerel C/C++ kod kullanarak derlerseniz `/clr` derleyici seçeneği, derleyicinin belirleyemiyor olmadığını **nullptr** anahtar sözcüğü, bir yerel veya yönetilen bir terim. Amacınız, derleyicinin Temizle hale getirmek için yönetilen terimi belirtmek için nullptr anahtar sözcüğü kullanın ve **__nullptr** yerel terimi belirtmek için.
 
 **/ ZC: trigraphs derleyici seçeneği.** Varsayılan olarak, desteği trigrafları devre dışı. Kullanım `/Zc:trigraphs` trigrafları desteğini etkinleştirmek için derleyici seçeneği.
@@ -1801,9 +1801,9 @@ Bir trigraf iki ardışık soru benzersiz bir üçüncü karakter işareti (?) o
 
 **XOP yapı içleri FMA4 İç bilgileri ve LWP İç bilgileri.** Yeni İç işlevleri XOP yapı içleri eklenen Visual Studio 2010 SP1, yapı içleri FMA4 İç eklenen için Visual Studio 2010 SP1 ve yapı içleri LWP eklenen için Visual Studio 2010 SP1 işlemci teknolojileri için desteklemek için eklendi. __Cpuid, belirli bir bilgisayarda hangi işlemci teknolojileri desteklendiğini belirlemek üzere __cpuidex kullanın.
 
-### <a name="visual-c-projects-and-the-build-system"></a>Visual C++ projeleri ve yapı sistemi
+### <a name="visual-studio-c-projects-and-the-build-system"></a>Visual Studio C++ projeleri ve yapı sistemi
 
-**MSBuild.** Visual C++ çözümler ve projeler artık VCBuild.exe değiştiren MSBuild.exe kullanarak oluşturulur. MSBuild ve diğer Visual Studio dilleri ve proje türleri tarafından kullanılan aynı esnek, Genişletilebilir, XML tabanlı yapı aracıdır. Bu değişiklik nedeniyle Visual C++ proje dosyaları artık bir XML dosyası biçimini kullanmak ve .vcxproj dosya adı uzantısına sahip. Visual Studio'nun önceki sürümlerinde Visual C++ proje dosyalarından otomatik olarak yeni bir dosya biçimine dönüştürülür.
+**MSBuild.** Visual C++ çözümler ve projeler artık VCBuild.exe değiştiren MSBuild.exe kullanarak oluşturulur. MSBuild ve diğer Visual Studio dilleri ve proje türleri tarafından kullanılan aynı esnek, Genişletilebilir, XML tabanlı yapı aracıdır. Bu değişiklik, Visual Studio nedeniyle C++ proje dosyaları artık bir XML dosyası biçimini kullanmak ve .vcxproj dosya adı uzantısına sahip. Visual Studio C++ Visual Studio'nun önceki sürümlerini proje dosyalarından otomatik olarak yeni bir dosya biçimine dönüştürülür.
 
 **VC ++ dizinleri.** VC ++ dizinleri ayarlama artık iki yerde bulunur. VC ++ dizinleri her proje değerlerini ayarlamak için proje özellik sayfalarını kullanın. Kullanım **özellik Yöneticisi** ve genel ayarlamak için bir özellik sayfası başına yapılandırma değerleri için VC ++ dizinleri.
 
@@ -1934,7 +1934,7 @@ Intel Gelişmiş vektör Uzantıları (AVX) yönergeleri dahil olan 256 bit mult
 - Yapı içleri yeni AMD ve Intel işlemcileri destekler. Birkaç yeni iç yönergeleri daha yeni AMD ve Intel işlemcileri işlevselliği destekler. Yeni yapı içleri hakkında daha fazla bilgi için bkz: **ek Akış SIMD uzantıları 3 yönergeler**, **Akış SIMD uzantıları 4 yönergeler**, **SSE4A ve Gelişmiş Bit İşleme iç**, **AES yapı içleri**, **_mm_clmulepi64_si128**, ve **__rdtscp**.
 - `__cpuid` İşlevi güncelleştirilir. `__cpuid`, `__cpuidex` İşlevleri artık birkaç yeni özelliklerden en son düzeltmeler AMD ve Intel işlemci desteği. `__cpuidex` İç yenidir ve son işlemcileri'nden daha fazla bilgi toplar.
 - `/MP` Derleyici seçeneği, toplam derleme zamanı azaltır. `/MP` Seçeneği dosyaları aynı anda derlemek çeşitli işlemleri oluşturarak birkaç kaynak dosyalarını derlemek için toplam süreyi önemli ölçüde azaltabilirsiniz. Bu seçenek, hiper iş parçacığı, birden çok işlemciye veya birden çok çekirdek destekleyen bilgisayarlarda özellikle yararlıdır.
-- `/Wp64` Derleyici seçeneği ve **__w64** anahtar sözcüğü kullanım dışı bırakılmıştır. `/Wp64` Derleyici seçeneği ve **__w64** 64-bit taşınabilirlik sorunlarını algıla, kullanım dışıdır ve derleyici gelecek bir sürümünde kaldırılacak anahtar sözcüğü. Bu derleyici seçeneği ve anahtar sözcüğü yerine, Visual C++ derleyicisi, 64 bit hedef platform kullanın.
+- `/Wp64` Derleyici seçeneği ve **__w64** anahtar sözcüğü kullanım dışı bırakılmıştır. `/Wp64` Derleyici seçeneği ve **__w64** 64-bit taşınabilirlik sorunlarını algıla, kullanım dışıdır ve derleyici gelecek bir sürümünde kaldırılacak anahtar sözcüğü. Bu derleyici seçeneği ve anahtar sözcüğü yerine 64-bit platformu hedefleyen bir MSVC kullanın.
 - `/Qfast_transcendentals` aşkın işlevleri için satır içi kod oluşturur.
 - `/Qimprecise_fwaits` kullandığınızda try blokları için fwaıt komutları iç kaldırır `/fp:except` derleyici seçeneği.
 

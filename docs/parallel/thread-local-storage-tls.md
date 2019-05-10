@@ -9,16 +9,16 @@ helpviewer_keywords:
 - thread attribute
 - Thread Local Storage [C++]
 ms.assetid: 80801907-d792-45ca-b776-df0cf2e9f197
-ms.openlocfilehash: f5a75f7964b0291a980b22d36e7ce6a0a87d3dc3
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 5c7bf2ae7cb5bfe71be9a1d72147e97c894064b3
+ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62362731"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "65448903"
 ---
 # <a name="thread-local-storage-tls"></a>İş Parçacığı Yerel Depolaması (TLS)
 
-İş parçacığı yerel depolaması (TLS) tarafından verilen ve çok iş parçacıklı bir işlemdeki her iş parçacığının iş parçacığına özgü verileri depolamak konumlar ayırabilirsiniz yöntemidir. Dinamik olarak bağlama (çalışma zamanı) iş parçacığına özgü verileri TLS API yoluyla desteklenir ([TlsAlloc](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-tlsalloc).  Win32 ve Visual C++ derleyicisi artık statik olarak bağlı (yükleme zamanı) iş parçacığı başına veri mevcut API uygulamasına ek olarak destekler.
+İş parçacığı yerel depolaması (TLS) tarafından verilen ve çok iş parçacıklı bir işlemdeki her iş parçacığının iş parçacığına özgü verileri depolamak konumlar ayırabilirsiniz yöntemidir. Dinamik olarak bağlama (çalışma zamanı) iş parçacığına özgü verileri TLS API yoluyla desteklenir ([TlsAlloc](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-tlsalloc).  Win32 ve Microsoft C++ desteği, statik olarak mevcut API uygulamasına ek olarak (yükleme zamanı) iş parçacığı başına veri bağlama şimdi derleyici.
 
 ##  <a name="_core_compiler_implementation_for_tls"></a> TLS derleyici uygulaması
 

@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - debug executable, preparing a test machine to run
 ms.assetid: f0400989-cc2e-4dce-9788-6bdbe91c6f5a
-ms.openlocfilehash: 9598d7a0480ee762892d1026a1eb64dcc5c64399
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 6d7e9c2e0a29c2871fd86922151f2226dd9078fc
+ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62362315"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "65448448"
 ---
 # <a name="preparing-a-test-machine-to-run-a-debug-executable"></a>Yürütülebilir Hata Ayıklamayı Çalıştırmak için Test Makinesi Hazırlama
 
@@ -25,7 +25,7 @@ Bir uygulamanın hata ayıklama sürümü ile birlikte Visual C++ Kitaplık DLL'
 - Belirli bir görsel hata ayıklama sürümünü yüklemek için yerel dağıtım kullanan C++ Program dosyaları veya Program dosyaları (x86) \Microsoft Visual Studio dizininde sağlanan dosyalarını kullanarak uygulama yükleme dizinindeki DLL'de \< Sürüm > \VC\redist\Debug_NonRedist\\.
 
     > [!NOTE]
-    >  Visual C++ Kitaplığı'nı DLL'ler paylaşılan yan yana derlemeler olarak hata ayıklama sürümlerini dağıtmak zorunda uzak başka bir bilgisayarda Visual C++ 2005 ya da Visual C++ 2008 kullanılarak oluşturulmuş uygulamanızın hata ayıklama için. Karşılık gelen birleştirme modüllerini yüklemek için bir kurulum projesi veya Windows Installer'ı kullanabilirsiniz.
+    >  Visual hata ayıklama sürümlerini dağıtmak zorunda uzak başka bir bilgisayarda Visual Studio 2005 ya da Visual Studio 2008'i kullanarak oluşturulmuş uygulamanızın hata ayıklama için C++ kitaplık DLL'lerini paylaşılan yan yana derlemeler olarak. Karşılık gelen birleştirme modüllerini yüklemek için bir kurulum projesi veya Windows Installer'ı kullanabilirsiniz.
 
 - The_ kullanın**Dağıt** seçeneğini **Configuration Manager** proje çıktısı ve diğer dosyaları uzak bilgisayara kopyalamak üzere Visual Studio'da iletişim kutusu.
 

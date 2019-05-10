@@ -1,5 +1,5 @@
 ---
-title: Derleyici hataları C3500 ile c3999 arasındaki
+title: C3500 ile C3999 arasındaki derleyici hataları
 ms.date: 04/21/2019
 f1_keywords:
 - C3502
@@ -247,13 +247,13 @@ f1_keywords:
 - C3999
 ms.assetid: bd6f23ad-b300-4e07-8e35-9661cab1585f
 ms.openlocfilehash: c5cb482804dac90a278036d594dc92e7be33e2bf
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.sourcegitcommit: 283cb64fd7958a6b7fbf0cd8534de99ac8d408eb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62281341"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "64857711"
 ---
-# <a name="compiler-errors-c3500-through-c3999"></a>Derleyici hataları C3500 ile c3999 arasındaki
+# <a name="compiler-errors-c3500-through-c3999"></a>C3500 ile C3999 arasındaki derleyici hataları
 
 Belgelerin bu bölümdeki makaleleri bir alt kümesini derleyici tarafından oluşturulan hata iletilerini açıklayın.
 
@@ -261,7 +261,7 @@ Belgelerin bu bölümdeki makaleleri bir alt kümesini derleyici tarafından olu
 
 ## <a name="error-messages"></a>Hata iletileri
 
-|Hata|İleti|
+|Hata|`Message`|
 |-----------|-------------|
 |[Derleyici Hatası C3500](compiler-error-c3500.md)|Geçersiz Program Kimliği '*ProgID*'|
 |[Derleyici Hatası C3501](compiler-error-c3501.md)|Program Kimliği için kayıtlı bir tür kitaplığı yok '*ProgID*'|
@@ -646,7 +646,7 @@ Belgelerin bu bölümdeki makaleleri bir alt kümesini derleyici tarafından olu
 |[Derleyici Hatası C3880](compiler-error-c3880.md)|'*üye*': sabit değerli veri üyesi olamaz|
 |Derleyici Hatası C3881|yalnızca Oluşturucu doğrudan tabandan alınabilir|
 |Derleyici Hatası C3882|'*sınıfı*': Oluşturucu zaten öğesinden devralınan '*sınıfı*'|
-|Derleyici Hatası C3883|'*üye*': initonly statik veri üyesi başlatılmalıdır|
+|Derleyici hatası C3883|'*üye*': initonly statik veri üyesi başlatılmalıdır|
 |Derleyici Hatası C3884|'*türü*': Boyutu bilinmeyen bir dizi, değer tarafından başlatılamaz|
 |Derleyici Hatası C3885|'*türü*': Boyutu bilinmeyen bir dizi bir boş bir başlatıcı listesiyle başlatılamaz|
 |[Derleyici Hatası C3886](compiler-error-c3886.md)|'*üye*': sabit değerli veri üyesi başlatılmalıdır|

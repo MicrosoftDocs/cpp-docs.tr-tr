@@ -8,11 +8,11 @@ helpviewer_keywords:
 - scope, declared within functions
 ms.assetid: 6e1a14c2-1fb0-4937-8628-8d963cc35ed4
 ms.openlocfilehash: 60dcfe61be24516b96054532931fb65245ab31d0
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.sourcegitcommit: 283cb64fd7958a6b7fbf0cd8534de99ac8d408eb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62226789"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "64856684"
 ---
 # <a name="automatic-function-scope-variables"></a>Otomatik (işlev kapsamı) değişkenleri
 

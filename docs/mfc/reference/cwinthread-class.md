@@ -50,12 +50,12 @@ helpviewer_keywords:
 - CWinThread [MFC], m_pActiveWnd
 - CWinThread [MFC], m_pMainWnd
 ms.assetid: 10cdc294-4057-4e76-ac7c-a8967a89af0b
-ms.openlocfilehash: 0e02f123580696519e59d828ec590456cbd2a81c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 9f17561941d785e5eb7b5fd8c52ab452aa6369e7
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62323287"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65220431"
 ---
 # <a name="cwinthread-class"></a>CWinThread sınıfı
 
@@ -311,7 +311,7 @@ BOOL m_bAutoDelete;
 
 `m_bAutoDelete` Veri üyesi BOOL türü genel değişkenidir.
 
-Değerini `m_bAutoDelete` temel alınan iş parçacığı işleyicisini nasıl kapalı etkilemez. İş parçacığı işleyicisini daima kapatılır `CWinThread` nesnesi yok edildiğinde.
+Değerini `m_bAutoDelete` temel alınan iş parçacığı işleyicisini nasıl kapalı, etkilemez ancak tanıtıcı kapatma zamanlamasını etkilemez. İş parçacığı işleyicisini daima kapatılır `CWinThread` nesnesi yok edildiğinde.
 
 ##  <a name="m_hthread"></a>  CWinThread::m_hThread
 
@@ -323,7 +323,9 @@ HANDLE m_hThread;
 
 ### <a name="remarks"></a>Açıklamalar
 
-`m_hThread` Veri üyesi tanıtıcı türü genel değişkenidir. Yalnızca şu anda iş parçacığı temelindeki varsa geçerlidir.
+`m_hThread` Veri üyesi tanıtıcı türü genel değişkenidir. Yalnızca çekirdek iş parçacığı nesnesini şu anda varsa ve tanıtıcı henüz kapalı henüz geçerli olduğundan.
+
+CWinThread yıkıcı üzerinde CloseHandle çağırır `m_hThread`. Varsa [m_bAutoDelete](#m_bautodelete) olduğundan iş parçacığı sonlandığında TRUE, CWinThread nesnesi yok edildiğinde, hangi CWinThread nesnesi ve onun üye değişkenleri herhangi bir işaretçinin geçersiz kılar. İhtiyaç duyabileceğiniz `m_hThread` üyesi iş parçacığı çıkış değeri denetleyin veya bir sinyal için beklenecek. CWinThread nesnesi tutmak ve kendi `m_hThread` kümesi üyesi iş parçacığı yürütme sırasında ve sonlandırıldıktan sonra `m_bAutoDelete` devam etmek için iş parçacığını yürütmeye izin vermeden önce FALSE. Aksi takdirde, iş parçacığı sonlandırın, CWinThread nesnesi yok ve bunu kullanmayı denemeden önce tanıtıcı kapatın. Bu yöntemi kullanırsanız, bu CWinThread nesnesi silme işlemi için sorumlu olursunuz.
 
 ##  <a name="m_nthreadid"></a>  CWinThread::m_nThreadID
 
@@ -335,7 +337,8 @@ DWORD m_nThreadID;
 
 ### <a name="remarks"></a>Açıklamalar
 
-`m_nThreadID` Veri üyesi DWORD türü genel değişkenidir. Yalnızca şu anda iş parçacığı temelindeki varsa geçerlidir.
+`m_nThreadID` Veri üyesi DWORD türü genel değişkenidir. Yalnızca çekirdek iş parçacığı nesnesini şu anda varsa geçerlidir.
+Açıklamalara bakın da bilgi [m_hThread](#m_hthread) yaşam süresi.
 
 ### <a name="example"></a>Örnek
 

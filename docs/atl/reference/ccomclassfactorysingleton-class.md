@@ -9,12 +9,12 @@ f1_keywords:
 helpviewer_keywords:
 - CComClassFactorySingleton class
 ms.assetid: debb983c-382b-487b-8d42-7ea26dc158b8
-ms.openlocfilehash: 480b4c2a6e052e8e0823b97b548fc5d07b55230f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c415da15341f7800a706379d991cb753f5991170
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62260181"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65221167"
 ---
 # <a name="ccomclassfactorysingleton-class"></a>CComClassFactorySingleton Class
 
@@ -108,7 +108,7 @@ CComPtr<IUnknown> m_spObj;
 
 Her çağrı [CreateInstance](#createinstance) yöntemi yalnızca bu nesne bir arabirim işaretçisi için sorgular.
 
-Unutmayın, geçerli form `m_spObj` sunan bir arabirimden değişiklik, `CComClassFactorySingleton` ATL önceki sürümlerinde çalışan Önceki sürümlerde `CComClassFactorySingleton` nesnenin oluşturulduğu sınıf üreteci ile aynı zamanda sunucu başlatma sırasında. Visual C++ .NET 2003 nesne gevşek, ilk isteği oluşturulur. Bu değişiklik, üzerinde erken başlatma kullanan programlar hatalara yol açabilir.
+Unutmayın, geçerli form `m_spObj` sunan bir arabirimden değişiklik, `CComClassFactorySingleton` ATL önceki sürümlerinde çalışan Önceki sürümlerde `CComClassFactorySingleton` nesnenin oluşturulduğu sınıf üreteci ile aynı zamanda sunucu başlatma sırasında. Görselde C++.NET 2003 ve sonraki nesne oluşturulur gevşek, ilk isteği. Bu değişiklik, üzerinde erken başlatma kullanan programlar hatalara yol açabilir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

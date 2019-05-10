@@ -4,12 +4,12 @@ ms.date: 09/18/2018
 helpviewer_keywords:
 - .vcxproj file structure
 ms.assetid: 14d0c552-29db-480e-80c1-7ea89d6d8e9c
-ms.openlocfilehash: 3b7c7bdad8848a3755db4ea565117459c72e939b
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: a1052d0a0eeeff177f0a22883fe06cd07d7b03f6
+ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62317126"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "65446494"
 ---
 # <a name="vcxproj-and-props-file-structure"></a>.vcxproj ve .props dosya yapısı
 
@@ -21,13 +21,13 @@ ms.locfileid: "62317126"
 
 1. Bu makalede açıklanan önceden belirlenmiş bir form dosya yapısını izlemeniz gerekir.
 
-1. Visual C++ proje sistemi şu anda proje öğelerinde joker karakterleri desteklemiyor. Örneğin, bu desteklenmez:
+1. Visual Studio C++ proje sistemi şu anda desteklemiyor joker karakterler proje öğeleri. Örneğin, bu desteklenmez:
 
    ```xml
    <ClCompile Include="*.cpp"/>
    ```
 
-1. Visual C++ proje sistemi proje öğesi yollarında makroları şu anda desteklemiyor. Örneğin, bu desteklenmez:
+1. Visual Studio C++ proje sistemi şu anda desteklemiyor makroları proje öğesi yolları. Örneğin, bu desteklenmez:
 
    ```xml
    <ClCompile Include="$(IntDir)\generated.cpp"/>
@@ -224,7 +224,7 @@ Bunların tümü aynı olsa bile, her bir yapılandırma için koşulları yapı
 </ItemGroup>
 ```
 
-Visual C++ proje sistemi şu anda proje öğelerinde joker karakterleri desteklemiyor.
+Visual Studio C++ proje sistemi şu anda desteklemiyor joker karakterler proje öğeleri.
 
 ```xml
 <ItemGroup>
@@ -232,7 +232,7 @@ Visual C++ proje sistemi şu anda proje öğelerinde joker karakterleri destekle
 </ItemGroup>
 ```
 
-Visual C++ proje sistemi proje öğeleri makroları şu anda desteklemiyor.
+Visual Studio C++ proje sistemi şu anda desteklemiyor makroları proje öğeleri.
 
 ```xml
 <ItemGroup>

@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - static libraries, MFC
 ms.assetid: c3f62b0e-3f13-42c5-9859-d3890d0c3e1d
-ms.openlocfilehash: be4fff19b812ef3dfdafc3270b4923a02e456cee
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 2c7fc8c1d04105bbdf2fe05ff65283e1beeda810
+ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62151272"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "65446440"
 ---
 # <a name="application-type-mfc-application-wizard"></a>Uygulama Türü, MFC Uygulama Sihirbazı
 
@@ -101,4 +101,4 @@ Bu sayfanın kullanın [MFC Uygulama Sihirbazı](../../mfc/reference/mfc-applica
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [MFC Uygulama Sihirbazı](../../mfc/reference/mfc-application-wizard.md)<br/>
-[Visual C++ Projeleri için Oluşturulan Dosya Türleri](../../build/reference/file-types-created-for-visual-cpp-projects.md)
+[Oluşturulan türleri görsel için dosya C++ projeleri](../../build/reference/file-types-created-for-visual-cpp-projects.md)

@@ -4,14 +4,14 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - verifiable assemblies [C++], creating
 - conversions, C++ projects
-- Visual C++ projects
+- Visual Studio C++ projects
 ms.assetid: 4ef2cc1a-e3e5-4d67-8d8d-9c614f8ec5d3
-ms.openlocfilehash: de3742717bf55c53ab4007aaed18b6ce687fbede
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 0784e6f202750e846c75434eef62a12dab3952f1
+ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62387467"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "65448114"
 ---
 # <a name="how-to-create-verifiable-c-projects-ccli"></a>Nasıl yapılır: doğrulanabilir oluşturma C++ projeleri (C++/CLI)
 
@@ -20,7 +20,7 @@ Visual C++ uygulama sihirbazları doğrulanabilir projeleri oluşturabilirsiniz.
 > [!IMPORTANT]
 > Visual Studio 2015 kullanım dışı ve Visual Studio 2017'yi desteklemez **/CLR: pure** ve **/CLR: safe** doğrulanabilir projeleri oluşturma. Doğrulanabilen kod gerekiyorsa, C# kodunuzda Çevir öneririz.
 
-Ancak, destekleyen Visual C++ Derleyici araç setini daha eski bir sürümünü kullanıyorsanız **/CLR: pure** ve **/CLR: safe**, projeleri doğrulanabilir dönüştürülebilir. Bu konuda, proje özelliklerini ayarlama ve doğrulanabilir uygulamalar oluşturmak için Visual C++ projeleriniz dönüştürmek için proje kaynak dosyalarında değişiklik açıklar.
+Ancak, Microsoft daha eski bir sürümünü kullanıyorsanız C++ destekleyen derleyici araç takımı **/CLR: pure** ve **/CLR: safe**, projeleri doğrulanabilir dönüştürülebilir. Bu konuda, proje özelliklerini ve Visual Studio dönüştürmek için proje kaynak dosyalarında değişiklik açıklar C++ doğrulanabilir uygulamalar oluşturmak için proje.
 
 ## <a name="compiler-and-linker-settings"></a>Derleyici ve bağlayıcı ayarları
 

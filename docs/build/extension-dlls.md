@@ -1,8 +1,6 @@
 ---
 title: Uzantı DLL'leri
-ms.date: 11/04/2016
-f1_keywords:
-- afxdll
+ms.date: 05/06/2019
 helpviewer_keywords:
 - memory [C++], DLLs
 - MFC extension DLLs [C++]
@@ -15,12 +13,12 @@ helpviewer_keywords:
 - extension DLLs [C++]
 - extension DLLs [C++], about MFC extension DLLs
 ms.assetid: f69ac3d4-e474-4b1c-87a1-6738843a135c
-ms.openlocfilehash: eca33b60b8fa6ba812bf5fa68520f51ceb1d164b
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 55b1e55a9c7bdf6daaff98a7fe3f1a2a55f68334
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62195666"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65220767"
 ---
 # <a name="mfc-extension-dlls"></a>MFC uzantı DLL'leri
 
@@ -52,7 +50,7 @@ Bir MFC uzantılı DLL MFC paylaşılan bir sürümü ile bazı ek hususlar MFC,
 
 MFC 4.0 sürümünden önce bu tür bir DLL AFXDLL çağrıldı. AFXDLL başvurduğu `_AFXDLL` DLL'si oluşturulurken tanımlanan önişlemci sembolü.
 
-İçeri aktarma kitaplıkları için MFC'nin paylaşılan sürümünden açıklanan kurallara göre adlandırılır [MFC DLL'leri için adlandırma kuralları](../mfc/mfc-library-versions.md#mfc-static-library-naming-conventions). Visual C++ MFC DLL'lerinin yanı sıra, MFC olmayan kullanan ve uygulamalarınızı dağıtmak DLL'leri birkaç önceden oluşturulmuş sürümleri sağlar. Bu Program Files\Microsoft Visual Studio klasöre yüklenen REDIST.txt belgelenmiştir.
+İçeri aktarma kitaplıkları için MFC'nin paylaşılan sürümünden açıklanan kurallara göre adlandırılır [MFC DLL'leri için adlandırma kuralları](../mfc/mfc-library-versions.md#mfc-static-library-naming-conventions). Visual Studio MFC DLL'lerinin yanı sıra, MFC olmayan kullanan ve uygulamalarınızı dağıtmak DLL'leri birkaç önceden oluşturulmuş sürümleri sağlar. Bu Program Files\Microsoft Visual Studio klasöre yüklenen REDIST.txt belgelenmiştir.
 
 Bir .def dosyası kullanarak dışa aktarıyorsanız aşağıdaki kodu, üst bilgi dosyası başında ve sonunda yerleştirin:
 
@@ -132,4 +130,4 @@ MFC uzantısı DLL her uygulama için ek verileri tutması gerekiyorsa, yeni bir
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Visual C++'ta DLL'ler](dlls-in-visual-cpp.md)
+[Visual Studio'da C/C++ DLL'leri oluşturma](dlls-in-visual-cpp.md)

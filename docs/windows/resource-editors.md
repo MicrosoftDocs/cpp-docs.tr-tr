@@ -21,12 +21,12 @@ helpviewer_keywords:
 - properties [C++], resources
 - resources [C++], properties
 ms.assetid: e20a29ec-d6fb-4ead-98f3-431a0e23aaaf
-ms.openlocfilehash: 774575e978a8e7f94868eb1b5dad90c6ac345460
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: a752122d89b3d952aec664f0dec092af1599f143
+ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62388182"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "65448920"
 ---
 # <a name="resource-editors-c"></a>Kaynak Düzenleyicileri (C++)
 
@@ -39,15 +39,15 @@ Bir kaynak oluşturduğunuzda veya açtığınızda uygun Düzenleyicisi'ni otom
 
 |Kullan...|Düzenlemek için...|
 |----------------|----------------|
-|[Hızlandırıcı Düzenleyicisi](../windows/accelerator-editor.md)|Hızlandırıcı tablolarında Visual C++ projeleri.|
+|[Hızlandırıcı Düzenleyicisi](../windows/accelerator-editor.md)|Visual Studio Hızlandırıcı tablolarında C++ projeleri.|
 |[İkili Düzenleyicisi](binary-editor.md)|İkili veri bilgileri ve Visual C++, Visual Basic veya Visual C# projelerinde özel kaynaklar.|
-|[İletişim Kutusu Düzenleyicisi](../windows/dialog-editor.md)|Visual C++ projelerinde iletişim kutuları.|
+|[İletişim Kutusu Düzenleyicisi](../windows/dialog-editor.md)|Visual Studio iletişim kutularını C++ projeleri.|
 |[Görüntü Düzenleyicisi](../windows/image-editor-for-icons.md)|Bit eşlemler, simgeler, işaretçiler ve diğer Visual C++, Visual Basic veya Visual C# projelerinde görüntü dosyaları.|
-|[Menü Düzenleyicisi](../windows/menu-editor.md)|Visual C++ projelerinde menüsü kaynaklarını.|
+|[Menü Düzenleyicisi](../windows/menu-editor.md)|Visual Studio'da menü kaynakları C++ projeleri.|
 |[Ribbon Düzenleyicisi](../mfc/ribbon-designer-mfc.md)|MFC projeleri Şerit kaynakları.|
-|[Dize Düzenleyicisi](../windows/string-editor.md)|Visual C++ projeleri tablolarında dize.|
-|[Araç Çubuğu Düzenleyicisi](../windows/toolbar-editor.md)|Visual C++ projelerinde araç çubuğu kaynakları. **Araç çubuğu Düzenleyicisi** parçasıdır **Resim Düzenleyicisi**.|
-|[Sürüm Bilgileri Düzenleyicisi](../windows/version-information-editor.md)|Visual C++ projelerinde sürüm bilgisi.|
+|[Dize Düzenleyicisi](../windows/string-editor.md)|Dize tabloları Visual Studio'da C++ projeleri.|
+|[Araç Çubuğu Düzenleyicisi](../windows/toolbar-editor.md)|Visual Studio araç çubuğu kaynakları C++ projeleri. **Araç çubuğu Düzenleyicisi** parçasıdır **Resim Düzenleyicisi**.|
+|[Sürüm Bilgileri Düzenleyicisi](../windows/version-information-editor.md)|Visual Studio sürüm bilgisi C++ projeleri.|
 
 > [!NOTE]
 > Projenize bir .rc dosyası yoksa, lütfen bkz [nasıl yapılır: Kaynakları oluşturma](../windows/how-to-create-a-resource-script-file.md).
@@ -124,7 +124,7 @@ Aşağıdaki kaynaklar, görüntü önizlemesini sağlaması gerekmez: Hızland�
 
 ## <a name="requirements"></a>Gereksinimler
 
-Yok.
+None
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

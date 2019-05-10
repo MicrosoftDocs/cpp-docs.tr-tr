@@ -1,13 +1,14 @@
 ---
 title: Yazma ve yeniden düzenleme kod (C++)
+description: Kullanım C++ Kod Düzenleyicisi'nde Visual Studio biçimlendirme, gitmeniz, anlamak ve kodunuzu yeniden düzenleyin.
 ms.date: 04/30/2018
 ms.assetid: 56ffb9e9-514f-41f4-a3cf-fd9ce2daf3b6
-ms.openlocfilehash: bc839a759d2ff3f403ca001ab32702d3fe27833e
-ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
+ms.openlocfilehash: ee506229584690cd4f7730011e0b5b50af0e27e0
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "64345239"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65222310"
 ---
 # <a name="writing-and-refactoring-code-c"></a>Yazma ve yeniden düzenleme kod (C++)
 
@@ -91,7 +92,7 @@ Bir değişken veya işlev bildiriminin sağ tıklayın, ardından gelin seçin 
 
 ## <a name="view-call-hierarchy"></a>Çağrı hiyerarşisini görüntüle
 
-Herhangi bir işlev çağrısına sağ tıklayın ve çağrı yaptığı tüm işlevlerin ve çağırdığı tüm işlevlerin resursive listesini görüntüleyin. Listedeki her işlev aynı şekilde genişletilebilir. Daha fazla bilgi için [çağrı hiyerarşisi](/visualstudio/ide/reference/call-hierarchy).
+Herhangi bir işlev çağrısına sağ tıklayın ve çağrı yaptığı tüm işlevlerin ve çağırdığı tüm işlevlerin özyinelemeli listesini görüntüleyin. Listedeki her işlev aynı şekilde genişletilebilir. Daha fazla bilgi için [çağrı hiyerarşisi](/visualstudio/ide/reference/call-hierarchy).
 
 ![Visual C&#43; &#43; çağrı hiyerarşisi](../ide/media/vs2015_cpp_call_hierarchy.png "vs2015_cpp_call_hierarchy")
 
