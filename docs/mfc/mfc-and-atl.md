@@ -2,12 +2,12 @@
 title: MFC ve ATL
 ms.date: 01/24/2018
 ms.assetid: 31b1a3a8-4154-4c4a-af10-fafc23ecdc5c
-ms.openlocfilehash: c2cfb77f0e3885e0b315ddfe38bf942ec157375a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 54498ddf8999379d93c899c05aa41fe224616ea3
+ms.sourcegitcommit: 00e26915924869cd7eb3c971a7d0604388abd316
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62239259"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65525430"
 ---
 # <a name="mfc-and-atl"></a>MFC ve ATL
 
@@ -17,7 +17,7 @@ Visual Studio Community Edition veya sonrası MFC veya ATL programları oluştur
 
 Visual Studio 2015'te Visual C++ isteğe bağlı bir bileşendir ve isteğe bağlı alt bileşenler altında Visual C++ MFC ve ATL bileşenleri şunlardır. Visual Studio'yu ilk kez yüklediğinizde bu bileşenlerin seçmezseniz, bir MFC veya ATL projesi oluşturun veya açın girişimi ilk kez yüklemeye istenir.
 
-Visual Studio 2017 ve sonraki sürümlerinde, isteğe bağlı alt bileşenler altında olan MFC ve ATL **C++ ile masaüstü geliştirme** Visual Studio yükleyicisi programdaki iş yükü. ATL desteği MFC olmadan yükleyebilirsiniz veya birleştirilmiş MFC ve ATL desteği (MFC, ATL üzerinde bağlıdır). İş yükleri ve bileşenleri hakkında daha fazla bilgi için bkz. [Visual Studio 2017'yi yükleme](/visualstudio/install/install-visual-studio).
+Visual Studio 2017 ve sonraki sürümlerinde, isteğe bağlı alt bileşenler altında olan MFC ve ATL **C++ ile masaüstü geliştirme** Visual Studio yükleyicisi programdaki iş yükü. ATL desteği MFC olmadan yükleyebilirsiniz veya birleştirilmiş MFC ve ATL desteği (MFC, ATL üzerinde bağlıdır). İş yükleri ve bileşenleri hakkında daha fazla bilgi için bkz. [Visual Studio'yu yükleyin](/visualstudio/install/install-visual-studio).
 
 ## <a name="related-articles"></a>İlgili Makaleler
 

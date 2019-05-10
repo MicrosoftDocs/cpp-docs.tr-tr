@@ -6,14 +6,22 @@ helpviewer_keywords:
 - IPropertyPage class
 - property pages, implementing
 ms.assetid: 62f29440-33a7-40eb-a1ef-3634c95f640c
-ms.openlocfilehash: 8999f6469e420fa86cb1267675f10dc173d45ff0
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c4ba69d8421a76a94e4a676cb62ee53936d77da3
+ms.sourcegitcommit: 00e26915924869cd7eb3c971a7d0604388abd316
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62250443"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65524580"
 ---
 # <a name="implementing-property-pages"></a>Özellik sayfaları uygulama
+
+::: moniker range="vs-2019"
+
+ATL Özellik Sayfası Sihirbazı, Visual Studio 2019 bulunan ve daha yeni değil.
+
+::: moniker-end
+
+::: moniker range="vs-2017"
 
 Özellik sayfaları olan COM nesneleri uygulayan `IPropertyPage` veya `IPropertyPage2` arabirimi. ATL özellik sayfaları aracılığıyla uygulamak için destek sağlar [ATL Özellik Sayfası Sihirbazı](../atl/reference/atl-property-page-wizard.md) içinde [Sınıf Ekle iletişim kutusu](../ide/add-class-dialog-box.md).
 
@@ -44,6 +52,8 @@ ATL kullanarak bir özellik sayfası oluşturmak için:
 
 > [!NOTE]
 > Özellik sayfasında konak ActiveX denetimleri için isterseniz Değiştirme Sihirbazı tarafından oluşturulan sınıfının türetme gerekecektir. Değiştirin **Cdialogımpl\<CYourClass >** ile **Caxdialogımpl\<CYourClass >** temel sınıflar listesinde.
+
+::: moniker-end
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

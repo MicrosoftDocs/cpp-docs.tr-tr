@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - MFC Application Wizard, database support
 ms.assetid: 9ddf4558-fd41-4ac7-8d9b-c93d9c68ab59
-ms.openlocfilehash: a1e0519e1351a48bbd969168d62f163c9dde7e7e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 94ed75ffd59294d5beb076ef4d66e57ef763f10e
+ms.sourcegitcommit: 00e26915924869cd7eb3c971a7d0604388abd316
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62323121"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65525462"
 ---
 # <a name="database-support-mfc-application-wizard"></a>Veritabanı Desteği, MFC Uygulama Sihirbazı
 
@@ -46,15 +46,15 @@ Bu sayfa, veritabanının düzeyini belirtmenize olanak sağlayan seçenekler sa
 
 - **Veri kaynağı**
 
+   > [!NOTE]
+   > ATL OLE DB Tüketicisi Sihirbazı ve MFC ODBC Tüketicisi Sihirbazı'nı Visual Studio 2019 bulunan ve daha sonra değildir. İşlevselliğini el ile eklemeye devam edebilirsiniz. Daha fazla bilgi için [olmadan bir tüketici kullanarak sihirbaz oluşturma](../../data/oledb/creating-a-consumer-without-using-a-wizard.md).
+
    Tıklayın **veri kaynağı** düğmesini belirtilen sürücü ya da sağlayıcı ve veritabanı'nı kullanarak bir veri kaynağını ayarlayın. OLE DB içinde seçtiyseniz **istemci türü** seçeneği, bu düğmeyi görüntüler **veri bağlantı özellikleri** iletişim kutusu. ODBC seçtiyseniz **istemci türü** seçeneği, bu düğmeyi sağlar **veri kaynağı Seç** iletişim kutusu. Bu seçenek, bir veritabanı görünümü uygulamanıza dahil seçerseniz kullanılabilir.
 
    |Seçenek|Açıklama|
    |------------|-----------------|
    |**Veri bağlantı özellikleri** (OLE DB)|Belirtilen OLE DB sağlayıcısı kullanılarak belirtilen veri kaynağı oluşturur. OLE DB sağlayıcısı, veri, veri kaynağı, oturum açma kimliği ve (isteğe bağlı) parola konumunu belirtmelisiniz. Bu iletişim kutusu hakkında daha fazla bilgi için bkz: **veri kaynağı** içinde [ATL OLE DB Tüketicisi Sihirbazı](../../atl/reference/atl-ole-db-consumer-wizard.md).|
    |**Veri kaynağı** (ODBC)|Belirtilen ODBC sürücüsünü kullanarak belirtilen veri kaynağı oluşturur. Veri kaynağı için bir tablo seçmek için bir veri kaynağı adı seçmeniz gerekir. Sihirbaz için üye değişkenleri tablonun tüm sütunlarını bağlar bir `CRecordset`-türetilmiş sınıf. Bu iletişim kutusu hakkında daha fazla bilgi için bkz: **veri kaynağı** içinde [MFC ODBC Tüketicisi Sihirbazı](../../mfc/reference/mfc-odbc-consumer-wizard.md).|
-
-   > [!NOTE]
-   > Önceki sürümlerde, SHIFT tuşunu **veri kaynağı** düğmesi, bir veri bağlantısı (UDL) dosyasını seçmek izin vermek için bir dosya Aç iletişim kutusu açılır. Bu işlev artık desteklenmemektedir.
 
 - **Öznitelik atanmış veritabanı sınıfı üret**
 

@@ -1,15 +1,15 @@
 ---
 title: Sihirbaz Kullanmadan bir Tüketici Oluşturma
-ms.date: 10/12/2018
+ms.date: 05/09/2019
 helpviewer_keywords:
 - OLE DB consumers, creating
 ms.assetid: e8241cfe-5faf-48f8-9de3-241203de020b
-ms.openlocfilehash: 029fe6866df81d366cc3bc15096f638791faa413
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 421723ed561e8ed986a64024c4c5d29c9fba6110
+ms.sourcegitcommit: 00e26915924869cd7eb3c971a7d0604388abd316
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62362510"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65525118"
 ---
 # <a name="creating-a-consumer-without-using-a-wizard"></a>Sihirbaz Kullanmadan bir Tüketici Oluşturma
 

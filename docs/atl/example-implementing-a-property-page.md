@@ -1,17 +1,25 @@
 ---
 title: Özellik sayfası (ATL) uygulama
-ms.date: 11/19/2018
+ms.date: 05/09/2019
 helpviewer_keywords:
 - property pages, implementing
 ms.assetid: c30b67fe-ce08-4249-ae29-f3060fa8d61e
-ms.openlocfilehash: 9aaf75916196f33904a51289d0a49725e042aa9e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 1da7a2691465162e645ae9790eecdb08d9a2ce98
+ms.sourcegitcommit: 00e26915924869cd7eb3c971a7d0604388abd316
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62262113"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65524569"
 ---
 # <a name="example-implementing-a-property-page"></a>Örnek: Özellik sayfası uygulama
+
+::: moniker range="vs-2019"
+
+ATL Özellik Sayfası Sihirbazı, Visual Studio 2019 bulunan ve daha yeni değil.
+
+::: moniker-end
+
+::: moniker range="vs-2017"
 
 Bu örnekte derleme özelliklerini görüntüler (ve değiştirmenize izin verir) bir özellik sayfası gösterilmektedir [belge sınıfları](../mfc/document-classes.md) arabirimi.
 
@@ -160,6 +168,8 @@ End Module
 ```
 
 Bu makro çalıştırdığınızda, dosya adı ve şu anda etkin bir metin belgesi salt okunur durumunu gösteren özellik sayfası görüntülenir. Belge salt okunur durumunu, yalnızca geliştirme ortamında belge yazma olanağı yansıtır; Bu dosya diskte salt okunur özniteliğini etkilemez.
+
+::: moniker-end
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -7,12 +7,12 @@ helpviewer_keywords:
 - OLE DB providers, schema rowsets
 - OLE DB, schema rowsets
 ms.assetid: 71c5e14b-6e33-4502-a2d9-a1dc6d6e9ba0
-ms.openlocfilehash: b49d53836179d765a72409d28304d7166dcf51d8
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 09af59d97ab87c66a0a7096e72cc7b92bc3a5dbf
+ms.sourcegitcommit: 00e26915924869cd7eb3c971a7d0604388abd316
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62389176"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65525278"
 ---
 # <a name="supporting-schema-rowsets"></a>Şema Satır Kümelerini Destekleme
 
@@ -31,6 +31,14 @@ ms.locfileid: "62389176"
 - [GetSchemas](../../data/oledb/idbschemarowsetimpl-getschemas.md) şema satır kümeleri listesi tarafından erişilebilen döndürür `IDBSchemaRowsetImpl::GetRowset` (arabiriminden devralınan).
 
 ## <a name="atl-ole-db-provider-wizard-support"></a>ATL OLE DB sağlayıcısı Sihirbazı desteği
+
+::: moniker range="vs-2019"
+
+ATL OLE DB sağlayıcısı Sihirbazı'nı ve sonrasında Visual Studio 2019 içinde kullanılabilir değil.
+
+::: moniker-end
+
+::: moniker range="vs-2017"
 
 **ATL OLE DB sağlayıcısı Sihirbazı** üç şema sınıfları oturumu üstbilgi dosyası oluşturur:
 
@@ -53,6 +61,8 @@ Bu sınıflar için şema bilgileri tüketici isteklerine yanıt vermek; OLE DB 
 - İçinde **C**<em>ShortName</em>**SessionTRSchemaRowset**, katalog, tablo ve açıklama alanları doldurmanız gerekir (`trData.m_szType`, `trData.m_szTable`ve `trData.m_szDesc`). Sihirbazın ürettiği örnek yalnızca bir satır (tablo) kullanır. Diğer sağlayıcılar, birden fazla tablo döndürebilir.
 
 - İçinde **C**<em>ShortName</em>**SessionColSchemaRowset**, tablonun adını geçirdiğiniz bir `DBID`.
+
+::: moniker-end
 
 ## <a name="setting-restrictions"></a>Kısıtlamalarını ayarlama
 

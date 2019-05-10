@@ -1,19 +1,25 @@
 ---
 title: ATL OLE DB Tüketicisi Ekleme
-ms.date: 11/04/2016
+ms.date: 05/09/2019
 helpviewer_keywords:
-- ATL projects, adding ATL OLE DB consumers
-- OLE DB, adding ATL OLE DB consumer to projects
 - ATL OLE DB consumers
 ms.assetid: f940a513-4e42-4148-b521-dd0d7dc89fa2
-ms.openlocfilehash: d93bf715f8fd8a03c75b1d1bf2e44f12c1d1b9c0
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 7925063e03522c96d251748b23b6b929733999a1
+ms.sourcegitcommit: 00e26915924869cd7eb3c971a7d0604388abd316
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62261383"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65524633"
 ---
 # <a name="adding-an-atl-ole-db-consumer"></a>ATL OLE DB Tüketicisi Ekleme
+
+::: moniker range="vs-2019"
+
+ATL OLE DB Tüketicisi Sihirbazı'nı ve sonrasında Visual Studio 2019 içinde kullanılabilir değil. İşlevselliğini el ile eklemeye devam edebilirsiniz. Daha fazla bilgi için [olmadan bir tüketici kullanarak sihirbaz oluşturma](../../data/oledb/creating-a-consumer-without-using-a-wizard.md).
+
+::: moniker-end
+
+::: moniker range="vs-2017"
 
 ATL OLE DB tüketici bir projeye eklemek için bu sihirbazı kullanın. ATL OLE DB tüketici bir OLE DB erişimci sınıf ve veri bağlamalarını bir veri kaynağına erişmek için gerekli oluşur. Projenin ATL COM uygulama veya (ATL OLE DB Tüketicisi Sihirbazı otomatik olarak ekler) ATL desteği içeren bir MFC veya Win32 uygulaması olarak oluşturulmuş olması gerekir.
 
@@ -31,6 +37,8 @@ ATL OLE DB tüketici bir projeye eklemek için bu sihirbazı kullanın. ATL OLE 
 1. Bölümünde anlatıldığı gibi ayarları tanımlama [ATL OLE DB Tüketicisi Sihirbazı](../../atl/reference/atl-ole-db-consumer-wizard.md).
 
 1. Tıklayın **son** sihirbazı kapatın. Yeni oluşturulan OLE DB Tüketici kod projenize eklenir.
+
+::: moniker-end
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

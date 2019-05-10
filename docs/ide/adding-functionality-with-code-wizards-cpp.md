@@ -1,28 +1,32 @@
 ---
 title: (C++) kod sihirbazlarıyla işlevsellik ekleme
-ms.date: 10/03/2018
-f1_keywords:
-- vc.codewiz.classes
+ms.date: 05/09/2019
 helpviewer_keywords:
 - code wizards [C++]
-- wizards [C++], code
-- Visual Studio C++ projects, adding functionality
-- projects [C++], adding functionality
-- class wizards [C++]
 ms.assetid: 6afb7ef9-7056-423d-b244-91bb4236d1d7
-ms.openlocfilehash: 45ba745492bf652b18dc3c7f9acceeffe0870fb7
-ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
+ms.openlocfilehash: 3050b3e2d2a188c2465cd454325e458cd8cc4047
+ms.sourcegitcommit: 00e26915924869cd7eb3c971a7d0604388abd316
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2019
-ms.locfileid: "65446876"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65525478"
 ---
 # <a name="adding-functionality-with-code-wizards-c"></a>(C++) kod sihirbazlarıyla işlevsellik ekleme
 
 Proje oluşturulduktan sonra değiştirin veya projenin işlevsellik eklemek isteyebilirsiniz. Yeni üye işlevleri ve değişkenler ve ekleme Otomasyon yöntemleri ve özellikleri ekleme yeni sınıflar oluşturma gibi görevleri içerir. Kod sihirbazları, tüm bu işlemler yapmanıza olanak sağlamak için tasarlanmıştır.
 
-> [!WARNING]
-> Çeşitli ATL ve MFC kodu sihirbazları artık kullanım dışı ve Visual Studio'nun gelecekteki bir sürümde kaldırılacak. Bu sihirbazlar nadiren kullanılır. ATL ve MFC genel desteği, bu sihirbazlar kaldırılmasını tarafından etkilenmez. Bu kullanımdan kaldırma hakkındaki görüşlerinizi paylaşmak istiyorsanız, Lütfen tamamlayın [bu anketi](https://www.surveymonkey.com/r/QDWKKCN). Geri bildiriminiz bizim için önemlidir.
+> [!NOTE]
+> Aşağıdaki nadiren kullanılan kod sihirbazları Visual Studio 2019 kaldırılır. ATL ve MFC genel desteği, bu sihirbazlar kaldırılmasını tarafından etkilenmez. Bu teknolojiler için örnek kod Microsoft Docs ve VCSamples GitHub deposunu arşivlenir.
+
+- ATL COM + 1.0 bileşeni Sihirbazı
+- ATL Active Server Pages bileşeni Sihirbazı
+- ATL OLE DB sağlayıcısı Sihirbazı
+- ATL Özellik Sayfası Sihirbazı
+- ATL OLE DB Tüketicisi Sihirbazı
+- MFC ODBC Tüketicisi
+- ActiveX denetiminden MFC sınıfı
+- Tür kitaplığı kitaplığından MFC sınıfı.
+
 
 > [!NOTE]
 >  Şimdi ileti işleyicileri ekleyebilir ve harita iletileri için ve MFC kullanarak sanal işlevleri geçersiz kılma [Özellikler penceresi](/visualstudio/ide/reference/properties-window).

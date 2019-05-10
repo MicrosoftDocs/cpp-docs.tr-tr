@@ -1,23 +1,25 @@
 ---
 title: MFC ODBC Tüketici Sihirbazı
-ms.date: 10/03/2018
-f1_keywords:
-- vc.codewiz.class.mfc.consumer.overview
+ms.date: 05/09/2019
 helpviewer_keywords:
-- MFC ODBC Consumer Wizard
 - wizards [MFC]
 ms.assetid: f64a890b-a252-4887-88a1-782a7cd4ff3d
-ms.openlocfilehash: b6009a1e6b6100eabaa2ed05404217c0d2906be0
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 20357646bbb7aa4fe00db43d8e77f9bf0b95c9b5
+ms.sourcegitcommit: 00e26915924869cd7eb3c971a7d0604388abd316
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62310321"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65525362"
 ---
 # <a name="mfc-odbc-consumer-wizard"></a>MFC ODBC Tüketici Sihirbazı
 
-> [!WARNING]
-> Visual Studio 2017 sürüm 15.9 bu kod Sihirbazı kullanım dışıdır ve Visual Studio'nun gelecekteki bir sürümde kaldırılacak. Bu sihirbaz nadiren kullanılır. ATL ve MFC genel desteği, bu sihirbazın kaldırma işlemi etkilenmez. Bu kullanımdan kaldırma hakkındaki görüşlerinizi paylaşmak istiyorsanız, Lütfen tamamlayın [bu anketi](https://www.surveymonkey.com/r/QDWKKCN). Geri bildiriminiz bizim için önemlidir.
+::: moniker range="vs-2019"
+
+Bu sihirbaz, Visual Studio 2019 bulunan ve daha yeni değil.
+
+::: moniker-end
+
+::: moniker range="vs-2017"
 
 Bu sihirbaz bir ODBC kayıt kümesi sınıfı ve veri bağlamaları belirtilen veri kaynağına erişmek için gereken ayarlar.
 
@@ -73,6 +75,8 @@ Bu sihirbaz bir ODBC kayıt kümesi sınıfı ve veri bağlamaları belirtilen v
 - **Tüm sütunları bağlayın**
 
    Seçili tablodaki tüm sütunları bağlanıp bağlanmadığını belirtir. Bu kutuyu (varsayılan) seçeneğini belirlerseniz, tüm sütunları bağlıdır; Bu kutuyu işaretlemeyin, hiçbir sütun bağlı ve el ile kayıt kümesi sınıfında bağlanmalıdır.
+
+::: moniker-end
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -1,17 +1,25 @@
 ---
 title: Sağlayıcı Sihirbazı Tarafından Üretilen Dosyalar
-ms.date: 10/18/2018
+ms.date: 05/09/2019
 helpviewer_keywords:
 - OLE DB providers, wizard-generated files
 ms.assetid: 6e1ac94b-eb90-4abf-82b3-06944b947ebc
-ms.openlocfilehash: a9a706463326249135a55bc907cb8a664a3ca808
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: de5c9056402cb1db25240772eb3c592523daafae
+ms.sourcegitcommit: 00e26915924869cd7eb3c971a7d0604388abd316
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62282968"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65525330"
 ---
 # <a name="provider-wizard-generated-files"></a>Sağlayıcı Sihirbazı Tarafından Üretilen Dosyalar
+
+::: moniker range="vs-2019"
+
+ATL OLE DB sağlayıcısı Sihirbazı'nı ve sonrasında Visual Studio 2019 içinde kullanılabilir değil.
+
+::: moniker-end
+
+::: moniker range="vs-2017"
 
 **ATL OLE DB sağlayıcısı Sihirbazı** aşağıdaki dosyaları oluşturur. Kısa ad aşağıdaki konuları kullanın *özel*, ancak tam dosya adlarını sağlayıcısı oluşturulurken yaptığınız seçimi bağlıdır.
 
@@ -22,6 +30,8 @@ ms.locfileid: "62282968"
 |*Özel*RS.h|Komut ve rowset nesneleri uygular. Bu başlık dosyasının satır kümesi ve komut özellikleri için özellik eşlemesi içerir.|
 |*Özel*Sess.h|Oturum nesnesi uygular. Bu başlık dosyasının özellik eşlemesi için oturum özellikleri içerir.|
 |*Özel*.rgs|Tarafından oluşturulan kayıtlı nesneler içeren **OLE DB sağlayıcısı Sihirbazı**.|
+
+::: moniker-end
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

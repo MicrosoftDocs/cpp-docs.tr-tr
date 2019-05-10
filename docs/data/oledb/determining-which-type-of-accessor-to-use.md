@@ -1,22 +1,22 @@
 ---
 title: Ne Tür Erişimci Kullanacağınızı Belirleme
-ms.date: 10/24/2018
+ms.date: 05/09/2019
 helpviewer_keywords:
 - rowsets [C++], data types
 - accessors [C++], types
 ms.assetid: 22483dd2-f4e0-4dcb-8e4d-cd43a9c1a3db
-ms.openlocfilehash: 98234852d0577e581135980d6b8e525aeead5dc2
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f32b3375a517c8716324a2d5b35ec16826605f8e
+ms.sourcegitcommit: 00e26915924869cd7eb3c971a7d0604388abd316
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62175375"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65525087"
 ---
 # <a name="determining-which-type-of-accessor-to-use"></a>Ne Tür Erişimci Kullanacağınızı Belirleme
 
 Derleme zamanında veya çalışma zamanında bir satır kümesi veri türlerinde belirleyebilirsiniz.
 
-Veri türleri, derleme zamanında belirlemeniz gerekiyorsa, statik erişimci kullanma (gibi `CAccessor`). El ile veya kullanarak, veri türlerini belirleyebilirsiniz **ATL OLE DB Tüketicisi Sihirbazı**.
+Veri türleri, derleme zamanında belirlemeniz gerekiyorsa, statik erişimci kullanma (gibi `CAccessor`). 
 
 Veri türlerini çalışma zamanında belirlemeniz gerekiyorsa, dinamik kullanın (`CDynamicAccessor` veya onun alt öğelerini) veya el ile erişimci (`CManualAccessor`). Bu gibi durumlarda çağırabilirsiniz `GetColumnInfo` şirket içinden belirleyebilirsiniz türleri sütun bağlama bilgileri döndürülecek satır kümesi.
 

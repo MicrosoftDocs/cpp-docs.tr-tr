@@ -1,19 +1,28 @@
 ---
 title: ATL Özellik Sayfası Sihirbazı Seçenekleri
-ms.date: 11/04/2016
+ms.date: 05/09/2019
 f1_keywords:
 - vc.codewiz.class.atl.ppg.options
 helpviewer_keywords:
 - ATL Property Page Wizard, options
 ms.assetid: a7107779-b2ea-4f99-b84b-7f3e0c504bc8
-ms.openlocfilehash: c92c7a3f03c3ddedbea02647e2317d77a7655609
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c883b3e79bd857bb457da0a1bd540a08ddddf017
+ms.sourcegitcommit: 00e26915924869cd7eb3c971a7d0604388abd316
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62275405"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65524550"
 ---
 # <a name="options-atl-property-page-wizard"></a>ATL Özellik Sayfası Sihirbazı Seçenekleri
+
+
+::: moniker range="vs-2019"
+
+ATL Özellik Sayfası Sihirbazı, Visual Studio 2019 bulunan ve daha yeni değil.
+
+::: moniker-end
+
+::: moniker range="vs-2017"
 
 Sihirbazın bu sayfasındaki özellik sayfası oluşturmakta olduğunuz iş parçacığı modelini ve toplamayı düzeyini tanımlamak için kullanın.
 
@@ -37,6 +46,8 @@ Sihirbazın bu sayfasındaki özellik sayfası oluşturmakta olduğunuz iş par�
    |**Evet**|Toplanabilir bir özellik sayfası oluşturun.|
    |**Yok**|Toplanamaz bir özellik sayfası oluşturun.|
    |**Yalnızca**|Yalnızca toplama oluşturulan özellik sayfası oluşturun.|
+
+::: moniker-end
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

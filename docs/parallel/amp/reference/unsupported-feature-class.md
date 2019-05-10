@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - unsupported_feature class
 ms.assetid: 6b1ab917-df13-48c7-9648-7cb2465a0ff5
-ms.openlocfilehash: 7635f999b227d02ec7fd56296fef1b0b047abd29
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 451318bfbcfb9c5e002677556944e3499c0ed5fb
+ms.sourcegitcommit: 00e26915924869cd7eb3c971a7d0604388abd316
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62405475"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65525410"
 ---
 # <a name="unsupportedfeature-class"></a>unsupported_feature Sınıfı
 
@@ -41,7 +41,7 @@ class unsupported_feature : public runtime_exception;
 
 `unsupported_feature`
 
-## <a name="unsupportedfeature"></a>unsupported_feature
+## <a name="unsupported_feature"></a> unsupported_feature
 
   Yeni bir örneğini oluşturur `unsupported_feature` özel durum.
 

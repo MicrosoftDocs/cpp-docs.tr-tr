@@ -3,14 +3,17 @@ title: Özellik Sayfası Ekleme (ATL Eğitmeni, Bölüm 6)
 ms.custom: get-started-article
 ms.date: 09/27/2018
 ms.assetid: df80d255-e7ea-49d9-b940-3f012e90cf9b
-ms.openlocfilehash: 9287b7a15e3653212ed6a5428cdfe5a530ececc3
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 2c487d1446f5d1050868f2066359e9639f474ba3
+ms.sourcegitcommit: 00e26915924869cd7eb3c971a7d0604388abd316
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62198519"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65524694"
 ---
 # <a name="adding-a-property-page-atl-tutorial-part-6"></a>Özellik Sayfası Ekleme (ATL Eğitmeni, Bölüm 6)
+
+> [!NOTE] 
+> ATL OLE DB sağlayıcısı Sihirbazı'nı ve sonrasında Visual Studio 2019 içinde kullanılabilir değil.
 
 Özellik sayfaları, gerekirse paylaşılmasına izin vermek ayrı COM nesneleri uygulanır. Bu adımda, bir özellik sayfası denetimi eklemek için aşağıdaki görevleri yapar:
 

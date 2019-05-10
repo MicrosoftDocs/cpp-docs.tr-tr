@@ -1,23 +1,26 @@
 ---
 title: Tüketici Sihirbazı Tarafından Oluşturulan Sınıflar
-ms.date: 10/17/2018
+ms.date: 05/09/2019
 helpviewer_keywords:
-- attribute-injected classes and methods
-- wizard-generated classes and methods
-- OLE DB consumers, wizard-generated classes and methods
-- command classes in OLE DB consumer
-- classes [C++], OLE DB Consumer Wizard-generated
-- consumer wizard-generated classes and methods
 - user record classes in OLE DB consumer
 ms.assetid: dba0538f-2afe-4354-8cbb-f202ea8ade5a
-ms.openlocfilehash: 7cd1fbe69186a2fcdbf25f1b2aa12727c98065da
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f172da3aefb3f2440ddb4bba41dc549b0bf4a926
+ms.sourcegitcommit: 00e26915924869cd7eb3c971a7d0604388abd316
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62362249"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65525136"
 ---
 # <a name="consumer-wizard-generated-classes"></a>Tüketici Sihirbazı Tarafından Oluşturulan Sınıflar
+
+
+::: moniker range="vs-2019"
+
+ATL OLE DB Tüketicisi Sihirbazı'nı ve sonrasında Visual Studio 2019 içinde kullanılabilir değil. İşlevselliğini el ile eklemeye devam edebilirsiniz.
+
+::: moniker-end
+
+::: moniker range="vs-2017"
 
 Kullanırken **ATL OLE DB Tüketicisi Sihirbazı** tüketici oluşturmak için OLE DB Şablonları ya da OLE DB öznitelikleri kullanma seçeneğiniz vardır. Her iki durumda da sihirbaz bir komutu ve bir kullanıcı kaydı sınıfı oluşturur. Komut sınıfı Sihirbazı'nda belirtilen satır kümesi ve veri kaynağını açmak için kodu içerir. Sütun eşlemesi, seçtiğiniz veritabanı tablosu için kullanıcı kayıt sınıfı içerir. Ancak, oluşturulan kod her durumda farklıdır:
 
@@ -183,6 +186,8 @@ class CProducts : public CCommand<CAccessor<_CProductsAccessor>>
 Eklenen kodu çoğunu aynı veya benzer şablonlu sürüme olur. Açıklanan eklenen yöntemlerini temel farklılıklar şunlardır [Tüketici Sihirbazı tarafından oluşturulan yöntemler](../../data/oledb/consumer-wizard-generated-methods.md).
 
 Eklenen kodu görüntüleme hakkında daha fazla bilgi için bkz: [eklenen kodda hata ayıklama](/visualstudio/debugger/how-to-debug-injected-code).
+
+::: moniker-end
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

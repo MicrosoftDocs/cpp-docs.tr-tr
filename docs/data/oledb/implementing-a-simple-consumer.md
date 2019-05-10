@@ -1,18 +1,25 @@
 ---
 title: Basit Tüketici Uygulama
-ms.date: 10/12/2018
+ms.date: 05/09/2019
 helpviewer_keywords:
-- clients, creating
 - OLE DB consumers, implementing
 ms.assetid: 13828167-23a4-4e94-8b6c-878262fda464
-ms.openlocfilehash: 9067e8645fac9a06bd85ca5ef18fbaff45d16aae
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 592a51dd77f7a2e115ee67a481e56dc558209253
+ms.sourcegitcommit: 00e26915924869cd7eb3c971a7d0604388abd316
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62390808"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65525077"
 ---
 # <a name="implementing-a-simple-consumer"></a>Basit Tüketici Uygulama
+
+::: moniker range="vs-2019"
+
+ATL OLE DB Tüketicisi Sihirbazı'nı ve sonrasında Visual Studio 2019 içinde kullanılabilir değil. İşlevselliğini el ile eklemeye devam edebilirsiniz. Daha fazla bilgi için [olmadan bir tüketici kullanarak sihirbaz oluşturma](creating-a-consumer-without-using-a-wizard.md).
+
+::: moniker-end
+
+::: moniker range="vs-2017"
 
 Aşağıdaki konular tarafından oluşturulan dosyaların nasıl düzenleneceğini gösterir **MFC Uygulama Sihirbazı** ve **ATL OLE DB Tüketicisi Sihirbazı** Basit Tüketici oluşturma. Bu örnek aşağıdaki bölümleri içerir:
 
@@ -195,6 +202,8 @@ Bir yer işareti tablosundaki satırları benzersiz olarak tanımlayan bir sütu
     ```
 
 Yer işaretleri hakkında daha fazla bilgi için bkz. [kullanarak yer işaretleri](../../data/oledb/using-bookmarks.md). Yer işaretleri örnekleri de gösterilir [satır kümelerini güncelleştirme](../../data/oledb/updating-rowsets.md).
+
+::: moniker-end
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

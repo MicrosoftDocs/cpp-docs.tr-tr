@@ -1,6 +1,6 @@
 ---
 title: MFC Kitaplık Sürümleri
-ms.date: 1/09/2018
+ms.date: 05/08/2019
 helpviewer_keywords:
 - class libraries [MFC], building versions
 - version information [MFC], MFC library
@@ -9,12 +9,12 @@ helpviewer_keywords:
 - MFC libraries
 - MFC, library versions
 - libraries [MFC], versions
-ms.openlocfilehash: c0dc724566063066175ea54e2b7734892e3c6e05
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b8e32366d9ff43bd6e5770f64f0ba9d8bf6e56ab
+ms.sourcegitcommit: 00e26915924869cd7eb3c971a7d0604388abd316
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62238513"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65524794"
 ---
 # <a name="mfc-library-versions"></a>MFC Kitaplık Sürümleri
 
@@ -129,7 +129,7 @@ MFC DLL'leri sahip *sürüm* ikili uyumluluğu gösteren sayı. MFC DLL'leri, di
 
 Bir uygulama veya bir MFC uzantılı DLL olup olmadığını, MFC paylaşılan DLL sürümü dinamik olarak bağlıyorsanız, eşleşen MFC içermelidir*sürüm*. DLL veya MFC*sürüm*ürününüzü dağıttığınızda U.DLL.
 
-Uygulamalarınızı yeniden dağıtılabilir Visual C++ DLL'lerini listesi için bkz. [Microsoft Visual Studio 2017 ve Microsoft Visual Studio 2017 SDK'sı (içerir yardımcı programları ve BuildServer Dosyaları) için dağıtılabilir kod](http://go.microsoft.com/fwlink/p/?LinkId=823098).
+Görsel bir listesi için C++ uygulamalarınızla dağıtılabilir, bkz: dll [Microsoft Visual Studio 2017 ve Microsoft Visual Studio 2017 SDK'sı (içerir yardımcı programları ve BuildServer Dosyaları) için dağıtılabilir kod](/visualstudio/productinfo/2017-redistribution-vs) veya [ Visual Studio 2019 için dağıtılabilir kod](/visualstudio/releases/2019/redistribution).
 
 MFC MBCS ve Unicode desteği hakkında daha fazla bilgi için bkz. [Unicode ve çok baytlı karakter kümesi (MBCS) desteği](../atl-mfc-shared/unicode-and-multibyte-character-set-mbcs-support.md).
 

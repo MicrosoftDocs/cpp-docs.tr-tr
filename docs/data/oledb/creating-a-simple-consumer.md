@@ -1,17 +1,25 @@
 ---
 title: Basit Tüketici Oluşturma
-ms.date: 11/06/2018
+ms.date: 05/09/2019
 helpviewer_keywords:
 - OLE DB consumers, creating
 ms.assetid: ae32d657-72ea-4db8-9839-75cb5cff68ae
-ms.openlocfilehash: 060a39a8436ff73900ebfaea7d1c882b9862ee7e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f72363478696baccb0473e37104427b1516b39c3
+ms.sourcegitcommit: 00e26915924869cd7eb3c971a7d0604388abd316
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62362031"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65524996"
 ---
 # <a name="creating-a-simple-consumer"></a>Basit Tüketici Oluşturma
+
+::: moniker range="vs-2019"
+
+ATL OLE DB Tüketicisi Sihirbazı'nı ve sonrasında Visual Studio 2019 içinde kullanılabilir değil. İşlevselliğini el ile eklemeye devam edebilirsiniz. Daha fazla bilgi için [olmadan bir tüketici kullanarak sihirbaz oluşturma](creating-a-consumer-without-using-a-wizard.md).
+
+::: moniker-end
+
+::: moniker range="vs-2017"
 
 Kullanım **ATL projesi Sihirbazı** ve **ATL OLE DB Tüketicisi Sihirbazı** bir OLE DB Şablonları tüketicisi oluşturmak için.
 
@@ -41,7 +49,7 @@ Ardından, **ATL OLE DB Tüketicisi Sihirbazı** OLE DB Tüketici nesne eklemek 
 
    **Yeni Öğe Ekle** iletişim kutusu görünür.
 
-1. İçinde **kategorileri** bölmesinde tıklayın **yüklü** > **Visual C++** > **ATL**, tıklayın**ATL OLEDB tüketicisi** simgesini **şablonları** bölmesi ve ardından **Ekle**.
+1. İçinde **kategorileri** bölmesinde tıklayın **yüklü** > **Visual C++**  > **ATL**, tıklayın **ATL OLEDB tüketicisi** simgesini **şablonları** bölmesi ve ardından **Ekle**.
 
    **ATL OLEDB tüketicisi Sihirbazı** görünür.
 
@@ -97,6 +105,8 @@ Sihirbaz gösterildiği gibi bir komut ve bir kullanıcı kaydı sınıfı oluş
 
 > [!NOTE]
 > Bu satırı önleyen tüketici uygulama engeller ve bağlantı dizenizi sabit kodlanmış parolalar için denetlenecek anımsatır. Bağlantı dizenizi denetledikten sonra bu kod satırı kaldırabilirsiniz.
+
+::: moniker-end
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

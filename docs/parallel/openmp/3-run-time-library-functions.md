@@ -2,12 +2,12 @@
 title: 3. Çalışma zamanı kitaplık işlevleri
 ms.date: 01/17/2019
 ms.assetid: b226e512-6822-4cbe-a2ca-74cc2bb7e880
-ms.openlocfilehash: 4e72d2d74bb26f8eeeb422881cabf92630cced43
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 3eb6dc4110145a6c45dbdd772deaee3023e68e9d
+ms.sourcegitcommit: 00e26915924869cd7eb3c971a7d0604388abd316
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62363238"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65525039"
 ---
 # <a name="3-run-time-library-functions"></a>3. Çalışma zamanı kitaplık işlevleri
 
@@ -40,7 +40,7 @@ Bu bölümde açıklanan işlevleri etkiler ve iş parçacıkları, işlemci ve 
 - [omp_set_nested](#319-omp_set_nested-function)
 - [omp_get_nested](#3110-omp_get_nested-function)
 
-### <a name="311-ompsetnumthreads-function"></a>3.1.1 omp_set_num_threads işlevi
+### <a name="311-omp_set_num_threads-function"></a>3.1.1 omp_set_num_threads işlevi
 
 `omp_set_num_threads` İşlevi varsayılan belirtmeyin daha sonra paralel bölgeleri için kullanılacak iş parçacığı sayısını ayarlar bir `num_threads` yan tümcesi. Biçimi aşağıdaki gibidir:
 
@@ -62,7 +62,7 @@ Bu çağrı, üzerinde önceliğe sahiptir. `OMP_NUM_THREADS` ortam değişkeni.
 - [OMP_NUM_THREADS](4-environment-variables.md#42-omp_num_threads) ortam değişkeni
 - [num_threads](2-directives.md#23-parallel-construct) yan tümcesi
 
-### <a name="312-ompgetnumthreads-function"></a>3.1.2 omp_get_num_threads işlevi
+### <a name="312-omp_get_num_threads-function"></a>3.1.2 omp_get_num_threads işlevi
 
 `omp_get_num_threads` İşlevi döndürür iş parçacığı sayısını şu anda takım içinden çağırıldığında bir paralel bölgenin yürütme. Biçimi aşağıdaki gibidir:
 
@@ -81,7 +81,7 @@ int omp_get_num_threads(void);
 - [num_threads](2-directives.md#23-parallel-construct)
 - [parallel](2-directives.md#23-parallel-construct)
 
-### <a name="313-ompgetmaxthreads-function"></a>3.1.3 omp_get_max_threads function
+### <a name="313-omp_get_max_threads-function"></a>3.1.3 omp_get_max_threads function
 
 `omp_get_max_threads` İşlevi en az kadar büyük bir paralel bölgenin olmadan, bir takım oluşturmak için kullanılacak iş parçacığı sayısını olması garanti bir tamsayı döndürür bir `num_threads` yan tümcesi olan bu noktada kodda görülebilmesi için. Biçimi aşağıdaki gibidir:
 
@@ -109,7 +109,7 @@ Paralel bir diğerine, bölge kullandığına dikkat edin `num_threads` iş par�
 - [omp_set_dynamic](#317-omp_set_dynamic-function)
 - [num_threads](2-directives.md#23-parallel-construct)
 
-### <a name="314-ompgetthreadnum-function"></a>3.1.4 omp_get_thread_num işlevi
+### <a name="314-omp_get_thread_num-function"></a>3.1.4 omp_get_thread_num işlevi
 
 `omp_get_thread_num` İşlevi, iş parçacığı sayısı, kendi takım içindeki işlevi yürüten iş parçacığının döndürür. 0 arasında iş parçacığı numarası kalıyor ve `omp_get_num_threads()`-1, kapsamlı. Takım ana iş parçacığı 0 parçacığıdır.
 
@@ -126,7 +126,7 @@ Bir seri bölgeden çağrılırsa `omp_get_thread_num` 0 döndürür. Serileşti
 
 - [omp_get_num_threads](#312-omp_get_num_threads-function) işlevi
 
-### <a name="315-ompgetnumprocs-function"></a>3.1.5 omp_get_num_procs işlevi
+### <a name="315-omp_get_num_procs-function"></a>3.1.5 omp_get_num_procs işlevi
 
 `omp_get_num_procs` İşlevi işlevin çağrıldığı zaman programa kullanılabilir işlemci sayısını döndürür. Biçimi aşağıdaki gibidir:
 
@@ -135,7 +135,7 @@ Bir seri bölgeden çağrılırsa `omp_get_thread_num` 0 döndürür. Serileşti
 int omp_get_num_procs(void);
 ```
 
-### <a name="316-ompinparallel-function"></a>3.1.6 omp_in_parallel işlevi
+### <a name="316-omp_in_parallel-function"></a>3.1.6 omp_in_parallel işlevi
 
 `omp_in_parallel` İşlevi dinamik kapsam, paralel olarak yürütülen bir paralel bölgenin içinde çağrılırsa sıfır olmayan bir değer döndürür; Aksi takdirde 0 değerini döndürür. Biçimi aşağıdaki gibidir:
 
@@ -146,7 +146,7 @@ int omp_in_parallel(void);
 
 Bu işlev bir bölge serileştirilme şeklini iç içe geçmiş bölge dahil paralel olarak yürütülen'içinde çağrılır, sıfır olmayan bir değer döndürür.
 
-### <a name="317-ompsetdynamic-function"></a>3.1.7 omp_set_dynamic işlevi
+### <a name="317-omp_set_dynamic-function"></a>3.1.7 omp_set_dynamic işlevi
 
 `omp_set_dynamic` İşlevini etkinleştirir veya paralel bölgeleri yürütülmesi için kullanılabilir iş parçacığı sayısını yerleştirmenin dinamik ayarına devre dışı bırakır. Biçimi aşağıdaki gibidir:
 
@@ -171,7 +171,7 @@ Yerleştirmenin dinamik ayarına iş parçacığı sayısı için varsayılan uy
 - [OMP_DYNAMIC](4-environment-variables.md#43-omp_dynamic)
 - [omp_in_parallel](#316-omp_in_parallel-function)
 
-### <a name="318-ompgetdynamic-function"></a>3.1.8 omp_get_dynamic işlevi
+### <a name="318-omp_get_dynamic-function"></a>3.1.8 omp_get_dynamic işlevi
 
 `omp_get_dynamic` İşlevi, iş parçacıkları yerleştirmenin dinamik ayarına etkinleştirilmişse ve 0 döndürür sıfır olmayan bir değer döndürür. Biçimi aşağıdaki gibidir:
 
@@ -186,7 +186,7 @@ Uygulama iş parçacığı sayısını yerleştirmenin dinamik ayarına uygulama
 
 - Dinamik iş parçacığı ayarlama ile ilgili açıklama için bkz: [omp_set_dynamic](#317-omp_set_dynamic-function).
 
-### <a name="319-ompsetnested-function"></a>3.1.9 omp_set_nested işlevi
+### <a name="319-omp_set_nested-function"></a>3.1.9 omp_set_nested işlevi
 
 `omp_set_nested` İşlevini etkinleştirir veya iç içe geçmiş paralellik devre dışı bırakır. Biçimi aşağıdaki gibidir:
 
@@ -208,7 +208,7 @@ Bu çağrı, üzerinde önceliğe sahiptir. `OMP_NESTED` ortam değişkeni.
 - [OMP_NESTED](4-environment-variables.md#44-omp_nested)
 - [omp_in_parallel](#316-omp_in_parallel-function)
 
-### <a name="3110-ompgetnested-function"></a>3.1.10 omp_get_nested işlevi
+### <a name="3110-omp_get_nested-function"></a>3.1.10 omp_get_nested işlevi
 
 `omp_get_nested` İşlevi, iç içe geçmiş paralellik etkinse, sıfır dışında bir değeri ile 0 değilse döndürür. İç içe geçmiş paralellik hakkında daha fazla bilgi için bkz. [omp_set_nested](#319-omp_set_nested-function). Biçimi aşağıdaki gibidir:
 
@@ -241,7 +241,7 @@ Aşağıdaki işlevler için kilit değişken türüne sahip olmalıdır `omp_ne
 
 OpenMP kilit işlevleri kilit değişken bunlar her zaman okuyabilmesini ve en güncel kilit değişkenin değerini güncelleştirme emin bir şekilde erişin. Bu nedenle, açık dahil etmek bir OpenMP program için gerekli değildir `flush` yönergelerini kilit değişkenin değeri farklı iş parçacıkları arasında tutarlı olduğundan emin olun. (İhtiyacı olabilir `flush` diğer değişkenlerin değerlerini tutarlı hale getirmek için yönergeleri.)
 
-### <a name="321-ompinitlock-and-ompinitnestlock-functions"></a>3.2.1 omp_init_lock ve omp_init_nest_lock işlevleri
+### <a name="321-omp_init_lock-and-omp_init_nest_lock-functions"></a>3.2.1 omp_init_lock ve omp_init_nest_lock işlevleri
 
 Bu işlevler bir kilit başlatma, yalnızca bir yöntem sağlar. Her işlev parametresi ile ilişkili kilit başlatır *kilit* yaklaşan çağrılarda kullanılmak. Biçimi aşağıdaki gibidir:
 
@@ -253,7 +253,7 @@ void omp_init_nest_lock(omp_nest_lock_t *lock);
 
 İlk durum açılmış (diğer bir deyişle, hiçbir iş parçacığı kilit sahibi). Nestable kilit, ilk iç içe geçme sayısı sıfırdır. Zaten başlatılmış bir kilit değişkeniyle bu yordamların birini çağırmaya uyumsuzdur.
 
-### <a name="322-ompdestroylock-and-ompdestroynestlock-functions"></a>3.2.2 omp_destroy_lock ve omp_destroy_nest_lock işlevleri
+### <a name="322-omp_destroy_lock-and-omp_destroy_nest_lock-functions"></a>3.2.2 omp_destroy_lock ve omp_destroy_nest_lock işlevleri
 
 Bu işlevler emin işaret değişkeni kilitlemek için *kilit* başlatılmadı. Biçimi aşağıdaki gibidir:
 
@@ -265,7 +265,7 @@ void omp_destroy_nest_lock(omp_nest_lock_t *lock);
 
 Başlatılmamış bir kilit değişkeniyle bu yordamların birini çağırmak için uyumsuz ya da kilitli olduğu.
 
-### <a name="323-ompsetlock-and-ompsetnestlock-functions"></a>3.2.3 omp_set_lock ve omp_set_nest_lock işlevleri
+### <a name="323-omp_set_lock-and-omp_set_nest_lock-functions"></a>3.2.3 omp_set_lock ve omp_set_nest_lock işlevleri
 
 Bu işlevlerin her biri, belirtilen kilit kullanılabilir ve ardından kilit ayarlar kadar işlevi yürütme iş parçacığını engeller. Basit bir kilit, varsa kullanılabilir kilidi. Nestable kilit, varsa kullanılabilir kilidi veya işlev yürütme iş parçacığı tarafından zaten sahiplenilmiş. Biçimi aşağıdaki gibidir:
 
@@ -279,7 +279,7 @@ Basit bir kilit, bağımsız değişkeni için `omp_set_lock` işlevi bir başla
 
 Nestable kilit, bağımsız değişkeni için `omp_set_nest_lock` işlevi bir başlatılmış kilit değişkene işaret etmelidir. İç içe geçme sayısının artırılması ve iş parçacığı verilir veya kilidi sahipliğini tutar.
 
-### <a name="324-ompunsetlock-and-ompunsetnestlock-functions"></a>3.2.4 omp_unset_lock ve omp_unset_nest_lock işlevleri
+### <a name="324-omp_unset_lock-and-omp_unset_nest_lock-functions"></a>3.2.4 omp_unset_lock ve omp_unset_nest_lock işlevleri
 
 Bu işlevler bir kilidin sahipliğini serbest bir yöntem sağlar. Biçimi aşağıdaki gibidir:
 
@@ -295,7 +295,7 @@ Basit bir kilitleme `omp_unset_lock` işlevi kilidi sahipliğini işlev yürütm
 
 Bir nestable kilit için `omp_unset_nest_lock` işlev iç içe geçme sayısı ve yayınlar sonuç sayısı sıfır ise, işlev kilidi sahipliğini yürüten iş parçacığının azaltır.
 
-### <a name="325-omptestlock-and-omptestnestlock-functions"></a>3.2.5 omp_test_lock ve omp_test_nest_lock işlevleri
+### <a name="325-omp_test_lock-and-omp_test_nest_lock-functions"></a>3.2.5 omp_test_lock ve omp_test_nest_lock işlevleri
 
 Bu işlevler bir kilidi ayarlama girişiminde bulunuldu ancak iş parçacığının yürütülmesini engelleme. Biçimi aşağıdaki gibidir:
 
@@ -318,7 +318,7 @@ Bu bölümde açıklanan işlevler bir taşınabilir duvar saati Zamanlayıcı d
 - [Omp_get_wtime](#331-omp_get_wtime-function) geçen duvar saati zamanı işlevi döndürür.
 - [Omp_get_wtick](#332-omp_get_wtick-function) işlevi art arda gelen saatin tik takları saniye döndürür.
 
-### <a name="331-ompgetwtime-function"></a>3.3.1 omp_get_wtime işlevi
+### <a name="331-omp_get_wtime-function"></a>3.3.1 omp_get_wtime işlevi
 
 `omp_get_wtime` İşlevi döndürür çift duyarlıklı kayan noktalı değeri eşittir geçen duvar saati süresi içinde bazı "zamanda" geçmiş beri geçen saniye sayısı.  Gerçek "süresi geçmiş" isteğe bağlıdır, ancak uygulama programın yürütülmesi sırasında değiştirmemesi garantisi. Biçimi aşağıdaki gibidir:
 
@@ -340,7 +340,7 @@ printf_s("Work took %f sec. time.\n", end-start);
 
 Döndürülen süreleri, bir uygulamada katılan tüm iş parçacıkları arasında genel olarak tutarlı olması için gerekli olmayan yöneliktir tarafından "iş parçacığı başına saatleri" formundadır.
 
-### <a name="332-ompgetwtick-function"></a>3.3.2 omp_get_wtick işlevi
+### <a name="332-omp_get_wtick-function"></a>3.3.2 omp_get_wtick işlevi
 
 `omp_get_wtick` İşlevi döndürür çift duyarlıklı kayan noktalı değeri saniye sayısını eşit art arda gelen saatin tik takları. Biçimi aşağıdaki gibidir:
 

@@ -1,27 +1,29 @@
 ---
 title: ATL COM + 1.0 bileşeni Sihirbazı
-ms.date: 10/03/2018
-f1_keywords:
-- vc.codewiz.class.atl.mts.overview
+ms.date: 05/08/2019
 helpviewer_keywords:
 - ATL projects, adding components
-- ATL COM+ 1.0 Component Wizard
 ms.assetid: 11670681-8671-4122-96a4-2e52f8dadce0
-ms.openlocfilehash: df13c94eb0cc2aa7e2dea49aba6901f01fce0a15
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e8ab9238f921b3c4e5c0eb396f0b26e46ab2a244
+ms.sourcegitcommit: 00e26915924869cd7eb3c971a7d0604388abd316
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62248836"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65524681"
 ---
 # <a name="atl-com-10-component-wizard"></a>ATL COM + 1.0 bileşeni Sihirbazı
+
+::: moniker range="vs-2019"
+
+Bu sihirbaz, Visual Studio 2019 bulunan ve daha yeni değil.
+
+::: moniker-end
+
+::: moniker range="vs-2017"
 
 Nesne işlemleri dahil olmak üzere, COM + 1.0 hizmetlerini destekleyen projenize eklemek için bu sihirbazı kullanın.
 
 Çift arabirimler ve Otomasyon nesne destekleyip desteklemediğini belirleyebilirsiniz. Hata bilgisi arabirimi, Gelişmiş nesne denetimi, işlemler ve zaman uyumsuz ileti sıraya alma desteği de belirtebilir.
-
-> [!WARNING]
-> Visual Studio 2017 sürüm 15.9 bu kod Sihirbazı kullanım dışıdır ve Visual Studio'nun gelecekteki bir sürümde kaldırılacak. Bu sihirbaz nadiren kullanılır. ATL ve MFC genel desteği, bu sihirbazın kaldırma işlemi etkilenmez. Bu kullanımdan kaldırma hakkındaki görüşlerinizi paylaşmak istiyorsanız, Lütfen tamamlayın [bu anketi](https://www.surveymonkey.com/r/QDWKKCN). Geri bildiriminiz bizim için önemlidir.
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -83,6 +85,8 @@ Nesne için COM işlevleri hakkında bilgi sağlar.
 - **ProgID**
 
    Kapsayıcı nesnesinin CLSID yerine kullanabileceği adını ayarlar.
+   
+::: moniker-end
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

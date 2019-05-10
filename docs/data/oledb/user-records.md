@@ -1,6 +1,6 @@
 ---
 title: Kullanıcı Kayıtları
-ms.date: 10/22/2018
+ms.date: 05/09/2019
 f1_keywords:
 - COLUMN_ENTRY_MAP
 helpviewer_keywords:
@@ -15,14 +15,17 @@ helpviewer_keywords:
 - accessors [C++], static
 - BEGIN_ACCESSOR macro, example
 ms.assetid: 2de9e5eb-53ce-42b1-80fa-57d46600a80c
-ms.openlocfilehash: 5dd7be3eccd59dc1a5a0dc1cd6932ca1310627c0
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c9c1126f0e8248f31ac739bb1d939f811bda678d
+ms.sourcegitcommit: 00e26915924869cd7eb3c971a7d0604388abd316
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62389053"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65525282"
 ---
 # <a name="user-records"></a>Kullanıcı Kayıtları
+
+> [!NOTE]
+> ATL OLE DB Tüketicisi Sihirbazı'nı ve sonrasında Visual Studio 2019 içinde kullanılabilir değil. İşlevselliğini el ile eklemeye devam edebilirsiniz. Daha fazla bilgi için [olmadan bir tüketici kullanarak sihirbaz oluşturma](creating-a-consumer-without-using-a-wizard.md).
 
 Statik erişimci kullanılacak (dan türetilen bir erişimci `CAccessor`), bir kullanıcı kaydı tüketiciye sahip olmanız gerekir. Kullanıcı tanıtıcı giriş veya çıkış için veri öğeleri içeren bir C++ sınıfı kaydıdır. **ATL OLE DB Tüketicisi Sihirbazı** , tüketici için bir kullanıcı kaydı oluşturur. Kullanıcı kaydı komutları işleme gibi isteğe bağlı görevler için yöntemler ekleyebilirsiniz.
 

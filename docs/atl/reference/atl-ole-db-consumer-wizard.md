@@ -1,21 +1,25 @@
 ---
 title: ATL OLE DB Tüketicisi Sihirbazı
-ms.date: 08/31/2018
-f1_keywords:
-- vc.codewiz.class.atl.consumer.overview
+ms.date: 05/09/2019
 helpviewer_keywords:
 - ATL projects, adding ATL OLE DB consumers
-- connection strings [C++], OLE DB consumers
-- ATL OLE DB Consumer Wizard
 ms.assetid: dcb68ed1-2224-422f-9f7b-108a74864204
-ms.openlocfilehash: 59ad635f62ab7a20a31de7255ec4522136e102ec
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 46a13f1ac46215fc28e71c15feb9f209967b67a2
+ms.sourcegitcommit: 00e26915924869cd7eb3c971a7d0604388abd316
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62261266"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65524647"
 ---
 # <a name="atl-ole-db-consumer-wizard"></a>ATL OLE DB Tüketicisi Sihirbazı
+
+::: moniker range="vs-2019"
+
+Bu sihirbaz, Visual Studio 2019 bulunan ve daha yeni değil.
+
+::: moniker-end
+
+::: moniker range="vs-2017"
 
 Bu sihirbaz bir OLE DB Tüketici sınıfı veri bağlamaları ile belirtilen OLE DB sağlayıcısı belirtilen veri kaynağına erişmek için gereken ayarlar.
 
@@ -180,6 +184,8 @@ Bu sihirbaz bir OLE DB Tüketici sınıfı veri bağlamaları ile belirtilen OLE
    - **Delete**
 
       Tüketici satır satır silme desteklediğini belirtir.
+
+::: moniker-end
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

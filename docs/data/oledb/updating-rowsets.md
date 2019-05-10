@@ -1,18 +1,18 @@
 ---
 title: Satır Kümelerini Güncelleştirme
-ms.date: 10/19/2018
+ms.date: 05/09/2019
 helpviewer_keywords:
 - rowsets, updating data
 - updating data, rowsets
 - updating rowsets
 - rowsets
 ms.assetid: 39588758-5c72-4254-a10d-cc2b1f473357
-ms.openlocfilehash: 7151d897469993b2f9be3575eb11a08844af3c69
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e0ee5cf97170cd9293abcb9039771f8fe23962aa
+ms.sourcegitcommit: 00e26915924869cd7eb3c971a7d0604388abd316
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62389066"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65525296"
 ---
 # <a name="updating-rowsets"></a>Satır Kümelerini Güncelleştirme
 
@@ -27,6 +27,9 @@ Tüketiciler, satır kümesi veri güncelleştirmeleri aşağıdaki türde tamam
 - [Silme](../../data/oledb/crowset-delete.md) bir satır kümesinden; satırları siler, SQL'i Sil komutu karşılık gelmektedir.
 
 ## <a name="supporting-update-operations"></a>Güncelleştirme işlemleri destekleme
+
+> [!NOTE]
+> ATL OLE DB Tüketicisi Sihirbazı'nı ve sonrasında Visual Studio 2019 içinde kullanılabilir değil. İşlevselliğini el ile eklemeye devam edebilirsiniz. Daha fazla bilgi için [olmadan bir tüketici kullanarak sihirbaz oluşturma](creating-a-consumer-without-using-a-wizard.md).
 
 Bir tüketici ile oluşturduğunuzda **ATL OLE DB Tüketicisi Sihirbazı**, birini seçerek güncelleştirme işlemleri destekleyebilir veya daha fazla üç onay kutularını işaretleyin **değişiklik**, **Ekle**, ve **Sil**. Bu Seçenekler'i seçerseniz, sihirbaz kodu seçtiğiniz değişikliklerin türünü desteklemek için uygun şekilde değiştirir. Sihirbazı'nı kullanmıyorsanız, ancak aşağıdaki satır kümesi özelliklerini ayarlamak için ihtiyacınız `VARIANT_TRUE` güncelleştirmeleri desteklemek için:
 

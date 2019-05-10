@@ -1,6 +1,6 @@
 ---
 title: Kullanıcı Kaydı
-ms.date: 11/04/2016
+ms.date: 05/09/2019
 helpviewer_keywords:
 - records, user
 - OLE DB providers, user record
@@ -8,14 +8,17 @@ helpviewer_keywords:
 - user records, described
 - rowsets, user record
 ms.assetid: 9c0d2864-2738-4f62-a750-1016d9c3523f
-ms.openlocfilehash: b37835f1a3161edd10f61f9b4e76cfb5f558e07b
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: d6920a73f107f226cc31cb27fd15178f6d2f1c26
+ms.sourcegitcommit: 00e26915924869cd7eb3c971a7d0604388abd316
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62389118"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65525260"
 ---
 # <a name="user-record"></a>Kullanıcı Kaydı
+
+> [!NOTE] 
+> ATL OLE DB sağlayıcısı Sihirbazı'nı ve sonrasında Visual Studio 2019 içinde kullanılabilir değil.
 
 Kullanıcı kaydı, bir satır için sütun verileri temsil eden kod ve veri yapısı sağlar. Bir kullanıcı kaydı, derleme zamanında veya çalışma zamanında oluşturulabilir. İle bir sağlayıcı oluşturduğunuzda **ATL OLE DB sağlayıcısı Sihirbazı**, şuna benzer bir varsayılan kullanıcı kaydı sihirbaz oluşturur (bir sağlayıcı adı [kısa adı] belirtilen varsayılarak *MyProvider*):
 

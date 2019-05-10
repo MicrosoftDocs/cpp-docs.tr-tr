@@ -1,18 +1,26 @@
 ---
 title: Sihirbazın Ürettiği Erişimcilerde Alan Durumu Veri Üyeleri
-ms.date: 10/24/2018
+ms.date: 05/09/2019
 helpviewer_keywords:
 - OLE DB consumer templates, field status
 - field status in OLE DB templates
 ms.assetid: 66e4e223-c60c-471e-860d-d23abcdfe371
-ms.openlocfilehash: dd650b7cafef78e23c23ddfef791c88b6b93727f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c92a450a00e6218d2ccc679d56aeff0f379762a3
+ms.sourcegitcommit: 00e26915924869cd7eb3c971a7d0604388abd316
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62409011"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65525065"
 ---
 # <a name="field-status-data-members-in-wizard-generated-accessors"></a>Sihirbazın Ürettiği Erişimcilerde Alan Durumu Veri Üyeleri
+
+::: moniker range="vs-2019"
+
+ATL OLE DB Tüketicisi Sihirbazı'nı ve sonrasında Visual Studio 2019 içinde kullanılabilir değil. İşlevselliğini el ile eklemeye devam edebilirsiniz. Daha fazla bilgi için [olmadan bir tüketici kullanarak sihirbaz oluşturma](creating-a-consumer-without-using-a-wizard.md).
+
+::: moniker-end
+
+::: moniker range="vs-2017"
 
 Kullanırken **ATL OLE DB Tüketicisi Sihirbazı** bir tüketici oluşturmak için sütun eşlemesinde belirttiğiniz her bir alan için kullanıcı kayıt sınıftaki veri üyesi sihirbaz oluşturur. Her veri üyesi türünde `DWORD` ve kendi ilgili alana karşılık gelen bir durum değeri içerir.
 
@@ -103,6 +111,8 @@ Bir değişken uzunluklu sütun uzunluğu ya da bir sütun (DBSTATUS_S_ISNULL i�
     ```
 
 Kullanırken `CDynamicAccessor`, uzunluğu ve durum sizin için otomatik olarak bağlanır. Uzunluğu ve durum değerleri almak için kullanın `GetLength` ve `GetStatus` üye işlevleri.
+
+::: moniker-end
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

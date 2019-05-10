@@ -1,25 +1,25 @@
 ---
 title: ATL OLE DB sağlayıcısı Sihirbazı
-ms.date: 10/03/2018
-f1_keywords:
-- vc.codewiz.class.atl.provider.overview
+ms.date: 05/09/2019
 helpviewer_keywords:
-- ATL OLE DB Provider Wizard
 - ATL projects, adding ATL OLE DB providers
 ms.assetid: cf91ba78-01d1-4d12-b673-e95d96bfbebe
-ms.openlocfilehash: 3f8ff69fd80056bc2ac5a52cf3f42c69f8e8c543
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 1b30b9aa3956d0dbfa7ddf2fe7281484ebd2444e
+ms.sourcegitcommit: 00e26915924869cd7eb3c971a7d0604388abd316
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62248269"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65524667"
 ---
 # <a name="atl-ole-db-provider-wizard"></a>ATL OLE DB sağlayıcısı Sihirbazı
 
-Bu sihirbaz, OLE DB sağlayıcısı oluşturma sınıfları oluşturur.
+::: moniker range="vs-2019"
 
-> [!WARNING]
-> Visual Studio 2017 sürüm 15.9 bu kod Sihirbazı kullanım dışıdır ve Visual Studio'nun gelecekteki bir sürümde kaldırılacak. Bu sihirbaz nadiren kullanılır. ATL ve MFC genel desteği, bu sihirbazın kaldırma işlemi etkilenmez. Bu kullanımdan kaldırma hakkındaki görüşlerinizi paylaşmak istiyorsanız, Lütfen tamamlayın [bu anketi](https://www.surveymonkey.com/r/QDWKKCN). Geri bildiriminiz bizim için önemlidir.
+Bu sihirbaz, Visual Studio 2019 bulunan ve daha yeni değil.
+
+::: moniker-end
+
+::: moniker range="vs-2017"
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -84,6 +84,8 @@ ATL OLE DB sağlayıcısı Sihirbazı seçenekleri aşağıdaki tabloda açıkla
 - **Satır kümesi .cpp dosyası**
 
    Sağlayıcının uygulama dosyası. Bu dosyanın adını düzenleyebilir veya var olan bir uygulama dosyasını seçebilirsiniz.
+
+::: moniker-end
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

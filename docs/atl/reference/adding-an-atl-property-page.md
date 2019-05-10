@@ -1,19 +1,22 @@
 ---
 title: ATL özellik sayfası ekleme
-ms.date: 11/04/2016
+ms.date: 05/09/2019
 helpviewer_keywords:
 - property pages, adding
 - ATL projects, adding property pages
 - controls [ATL], property pages
 ms.assetid: ddf92b49-42a2-46d2-b6b8-d37baedebeca
-ms.openlocfilehash: c61f666865d3e1db4cdcf2dc6d3e07c2113a79c7
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 81f793fbdc6d9dda567051b8c35a96f3d3f2f470
+ms.sourcegitcommit: 00e26915924869cd7eb3c971a7d0604388abd316
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62249105"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65524623"
 ---
 # <a name="adding-an-atl-property-page"></a>ATL özellik sayfası ekleme
+
+> [!NOTE] 
+> ATL Özellik Sayfası Sihirbazı, Visual Studio 2019 bulunan ve daha yeni değil.
 
 Bir Etkin Şablon kitaplığı (ATL) özellik sayfasını projeye eklemek için projenize ATL uygulamasını veya ATL desteği içeren bir MFC uygulaması olarak oluşturulmuş gerekir. Kullanabileceğiniz [ATL projesi Sihirbazı](../../atl/reference/atl-project-wizard.md) ATL uygulamasını oluşturmak için veya [MFC uygulamanıza bir ATL nesnesi eklemek](../../mfc/reference/adding-atl-support-to-your-mfc-project.md) bir MFC uygulaması için ATL desteği uygulamak için.
 
@@ -36,4 +39,4 @@ Bir denetim için bir özellik sayfası oluşturduktan sonra sağlamanız gereke
 
 [Özellik Sayfaları](../../atl/atl-com-property-pages.md)<br/>
 [ATL COM Nesnelerinin Temelleri](../../atl/fundamentals-of-atl-com-objects.md)<br/>
-[Örnek: Özellik sayfası uygulama](../../atl/example-implementing-a-property-page.md)
+[Örnek: Özellik Sayfası Uygulama](../../atl/example-implementing-a-property-page.md)

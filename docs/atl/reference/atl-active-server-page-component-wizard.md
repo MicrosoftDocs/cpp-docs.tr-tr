@@ -1,31 +1,33 @@
 ---
 title: ATL Active Server Page bileşeni Sihirbazı
-ms.date: 11/04/2016
-f1_keywords:
-- vc.codewiz.class.atl.asp.overview
+ms.date: 05/09/2019
 helpviewer_keywords:
 - ASP components, creating in ATL
-- ATL Active Server Page Component Wizard
 ms.assetid: 5a5cb904-dbbf-44ea-ad3d-2ddd14c1d3c5
-ms.openlocfilehash: f020ed9b58f631bfff09fe54c70e36146eb03368
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: d2f47176fb25b050e4b1f72053e4cbaaf89f569e
+ms.sourcegitcommit: 00e26915924869cd7eb3c971a7d0604388abd316
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62249025"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65524600"
 ---
 # <a name="atl-active-server-page-component-wizard"></a>ATL Active Server Page bileşeni Sihirbazı
+
+::: moniker range="vs-2019"
+
+Bu sihirbaz, Visual Studio 2019 bulunan ve daha yeni değil.
+
+::: moniker-end
+
+::: moniker range="vs-2017"
 
 Bu sihirbaz, Active Server Pages (ASP) bileşeni projeye ekler. Microsoft Internet Information Services (IIS) Web sayfası Gelişmiş geliştirme mimarisinin bir parçası olarak ASP bileşenleri kullanır.
 
 Bu sihirbazı kullanarak model ve toplama desteğini bileşenin iş parçacığı belirtebilirsiniz. Hata bilgisi arabirimi, bağlantı noktaları ve ücretsiz iş parçacıklı sıralama desteği de belirtebilir.
 
-> [!WARNING]
-> Visual Studio 2017 sürüm 15.9 bu kod Sihirbazı kullanım dışıdır ve Visual Studio'nun gelecekteki bir sürümde kaldırılacak. Bu sihirbaz nadiren kullanılır. ATL ve MFC genel desteği, bu sihirbazın kaldırma işlemi etkilenmez. Bu kullanımdan kaldırma hakkındaki görüşlerinizi paylaşmak istiyorsanız, Lütfen tamamlayın [bu anketi](https://www.surveymonkey.com/r/QDWKKCN). Geri bildiriminiz bizim için önemlidir.
-
 ## <a name="remarks"></a>Açıklamalar
 
-Visual Studio 2008'den itibaren bu sihirbaz tarafından üretilen kayıt betiği altında COM bileşenlerini kaydolacak **HKEY_CURRENT_USER** yerine **HKEY_LOCAL_MACHINE**. Bu davranışı değiştirmek için Ayarla **tüm kullanıcılar için kayıt bileşeni** ATL Sihirbazı seçeneği.
+Visual Studio 2008'den itibaren bu sihirbaz tarafından üretilen kayıt betiği COM bileşenlerini altında kaydeder **HKEY_CURRENT_USER** yerine **HKEY_LOCAL_MACHINE**. Bu davranışı değiştirmek için Ayarla **tüm kullanıcılar için kayıt bileşeni** ATL Sihirbazı seçeneği.
 
 ## <a name="names"></a>Adlar
 
@@ -86,6 +88,8 @@ Nesne için COM işlevleri hakkında bilgi sağlar.
 - **ProgID**
 
    Kapsayıcı nesnesinin CLSID yerine kullanabileceği adını ayarlar.
+
+::: moniker-end
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
