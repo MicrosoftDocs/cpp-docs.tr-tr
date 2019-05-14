@@ -1,8 +1,6 @@
 ---
 title: 'TN055: Geçirme MFC ODBC veritabanı sınıfı uygulamalarını MFC DAO sınıflarına'
 ms.date: 06/20/2018
-f1_keywords:
-- vc.mfc.odbc
 helpviewer_keywords:
 - DAO [MFC], migration
 - TN055
@@ -14,12 +12,12 @@ helpviewer_keywords:
 - porting ODBC database applications to DAO
 - migrating database applications [MFC]
 ms.assetid: 0f858bd1-e168-4e2e-bcd1-8debd82856e4
-ms.openlocfilehash: f8e0d8e50f05e86c35e0f8b7f324533bffea6f25
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 7a1d3436a9b19c40df2a08576d797de49833f14f
+ms.sourcegitcommit: 934cb53fa4cb59fea611bfeb9db110d8d6f7d165
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62399674"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65611240"
 ---
 # <a name="tn055-migrating-mfc-odbc-database-class-applications-to-mfc-dao-classes"></a>TN055: Geçirme MFC ODBC veritabanı sınıfı uygulamalarını MFC DAO sınıflarına
 

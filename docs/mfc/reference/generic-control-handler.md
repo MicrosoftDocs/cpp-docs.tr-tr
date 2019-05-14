@@ -1,20 +1,18 @@
 ---
 title: Genel Denetim İşleyicisi
 ms.date: 11/04/2016
-f1_keywords:
-- vc.mfc.controls
 helpviewer_keywords:
 - handlers [MFC], ON_CONTROL
 - handlers [MFC]
 - GenericControl Handler [MFC]
 - ON_CONTROL macro [MFC]
 ms.assetid: 1e25e583-5d5a-4363-8904-839991a8570d
-ms.openlocfilehash: 26d1bcda73670687b73f0c6cda864f8b6bcae784
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 350c0337b0b43018000c4be318821cc97cdf07c0
+ms.sourcegitcommit: 934cb53fa4cb59fea611bfeb9db110d8d6f7d165
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62322403"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65612176"
 ---
 # <a name="generic-control-handler"></a>Genel Denetim İşleyicisi
 

@@ -1,17 +1,15 @@
 ---
 title: CString Biçimlendirmesi ve İleti Kutusu Görüntüleme
 ms.date: 11/04/2016
-f1_keywords:
-- vc.mfc.macros.strings
 helpviewer_keywords:
 - CString objects [MFC], formatting and message boxes
 ms.assetid: d1068cf4-9cc5-4952-b9e7-d612c53cbc28
-ms.openlocfilehash: fee8ba89605e6425b511407dab62be1f32e94a9d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: ad880c5302fd2274c5d46719e912461fd7497f10
+ms.sourcegitcommit: 934cb53fa4cb59fea611bfeb9db110d8d6f7d165
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62323797"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65611020"
 ---
 # <a name="cstring-formatting-and-message-box-display"></a>CString Biçimlendirmesi ve İleti Kutusu Görüntüleme
 

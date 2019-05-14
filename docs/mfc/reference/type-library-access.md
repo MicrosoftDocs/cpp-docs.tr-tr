@@ -1,17 +1,15 @@
 ---
 title: Tür Kitaplığı Erişimi
 ms.date: 11/04/2016
-f1_keywords:
-- vc.mfc.macros
 helpviewer_keywords:
 - type libraries [MFC], accessing
 ms.assetid: a03fa7f0-86c2-4119-bf81-202916fb74b3
-ms.openlocfilehash: d5aa92d520e2a806837ceb5208ca1262504ee02e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 23d4675bd3638d2effd1b967f0729f9e70dac6de
+ms.sourcegitcommit: 934cb53fa4cb59fea611bfeb9db110d8d6f7d165
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62309791"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65611538"
 ---
 # <a name="type-library-access"></a>Tür Kitaplığı Erişimi
 

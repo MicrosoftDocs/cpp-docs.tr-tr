@@ -1,19 +1,17 @@
 ---
 title: Hiyerarşi Grafiği
 ms.date: 11/19/2018
-f1_keywords:
-- vc.mfc
 helpviewer_keywords:
 - object models, MFC
 - classes [MFC], MFC hierarchy
 - MFC, object model
 ms.assetid: 19d70341-e391-4a72-94c6-35755ce975d4
-ms.openlocfilehash: 4b991c9dab2d3549ac64b5ba0b8689c6fe63f113
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 703008b78994a9400bd5dfa1dfa64072fea949bd
+ms.sourcegitcommit: 934cb53fa4cb59fea611bfeb9db110d8d6f7d165
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62352374"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65611955"
 ---
 # <a name="hierarchy-chart"></a>Hiyerarşi Grafiği
 

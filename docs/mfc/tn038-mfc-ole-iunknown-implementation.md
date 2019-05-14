@@ -1,8 +1,6 @@
 ---
 title: 'TN038: MFC-OLE IUnknown uygulaması'
 ms.date: 06/28/2018
-f1_keywords:
-- vc.mfc.ole
 helpviewer_keywords:
 - aggregation macros [MFC]
 - COM interfaces, base interface
@@ -18,12 +16,12 @@ helpviewer_keywords:
 - END_INTERFACE_PART macro [MFC]
 - INTERFACE_PART macro
 ms.assetid: 19d946ba-beaf-4881-85c6-0b598d7f6f11
-ms.openlocfilehash: 0722ce294e6a088446b8ba681810cf3f7885f122
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: a366d200c272570b4806a8642f287a7ef69b430e
+ms.sourcegitcommit: 934cb53fa4cb59fea611bfeb9db110d8d6f7d165
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62305482"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65611317"
 ---
 # <a name="tn038-mfcole-iunknown-implementation"></a>TN038: MFC/OLE IUnknown uygulaması
 

@@ -1,19 +1,17 @@
 ---
 title: 'TN045: Uzun Varchar-Varbinary için MFC-veritabanı desteği'
 ms.date: 11/04/2016
-f1_keywords:
-- vc.mfc.data
 helpviewer_keywords:
 - TN045
 - Varbinary data type
 - Varchar data type
 ms.assetid: cf572c35-5275-45b5-83df-5f0e36114f40
-ms.openlocfilehash: d356f094759775f709838de149769b1671fdf9ba
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 3e8b356027e5c5b7c604a0354624d9f11e32fb9a
+ms.sourcegitcommit: 934cb53fa4cb59fea611bfeb9db110d8d6f7d165
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62305378"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65611041"
 ---
 # <a name="tn045-mfcdatabase-support-for-long-varcharvarbinary"></a>TN045: Uzun Varchar/Varbinary için MFC/veritabanı desteği
 

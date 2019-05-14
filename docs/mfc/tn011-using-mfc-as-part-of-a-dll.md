@@ -1,8 +1,6 @@
 ---
 title: "TN011: Bir DLL'in bir parçası MFC kullanma"
 ms.date: 11/04/2016
-f1_keywords:
-- vc.mfc.dll
 helpviewer_keywords:
 - _USRDLL symbol
 - USRDLLs, compiler switches
@@ -10,12 +8,12 @@ helpviewer_keywords:
 - DLLs [MFC], linking
 - MFC DLLs [MFC], linking regular MFC DLLs to MFC
 ms.assetid: 76753e9c-59dc-40f6-b6a7-f6bb9a7c4190
-ms.openlocfilehash: 7e9fda44e2af4ec32bae6299fbcc0eda17984f9b
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 753612fae101708dd4f8294db121980b62af30b3
+ms.sourcegitcommit: 934cb53fa4cb59fea611bfeb9db110d8d6f7d165
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62306256"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65610955"
 ---
 # <a name="tn011-using-mfc-as-part-of-a-dll"></a>TN011: Bir DLL'in bir parçası MFC kullanma
 

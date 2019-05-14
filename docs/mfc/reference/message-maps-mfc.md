@@ -1,20 +1,18 @@
 ---
 title: İleti Eşlemeleri (MFC)
 ms.date: 11/04/2016
-f1_keywords:
-- vc.mfc.messages
 helpviewer_keywords:
 - message maps [MFC], MFC
 - Windows messages [MFC], message maps
 - messages [MFC], Windows
 - MFC, messages
 ms.assetid: 3f9855e4-9d7d-4b64-8f3f-a19ea3cf79ba
-ms.openlocfilehash: 91b7f21d92b2f899895b008b3fab8b541aec9963
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 14c08a008456160fe817f066e5b22b06b9f9fa14
+ms.sourcegitcommit: 934cb53fa4cb59fea611bfeb9db110d8d6f7d165
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62412793"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65611824"
 ---
 # <a name="message-maps-mfc"></a>İleti Eşlemeleri (MFC)
 

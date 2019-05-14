@@ -1,8 +1,6 @@
 ---
 title: MFC Tarafından Kullanılan Stiller
 ms.date: 06/20/2018
-f1_keywords:
-- vc.mfc.styles
 helpviewer_keywords:
 - button objects (CButton), button styles
 - button styles [MFC]
@@ -196,12 +194,12 @@ helpviewer_keywords:
 - WS_EX_TRANSPARENT constant [MFC]
 - WS_EX_WINDOWEDGE constant [MFC]
 ms.assetid: d3b9af37-31b5-4c97-a8ad-189fd724b04c
-ms.openlocfilehash: eb5123c347fdb847cade54f15764f175ee0ab799
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 450a907ba69e7bc48e58e6aea4162c053f789e00
+ms.sourcegitcommit: 934cb53fa4cb59fea611bfeb9db110d8d6f7d165
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62309830"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65611718"
 ---
 # <a name="styles-used-by-mfc"></a>MFC Tarafından Kullanılan Stiller
 

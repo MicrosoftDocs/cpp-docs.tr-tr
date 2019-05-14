@@ -1,17 +1,15 @@
 ---
 title: Bağlantı Eşlemeleri
 ms.date: 11/04/2016
-f1_keywords:
-- vc.mfc.macros.maps
 helpviewer_keywords:
 - connection maps
 ms.assetid: 1f25a9bc-6d09-4614-99cf-dc38e8ddfa73
-ms.openlocfilehash: cbd993e7172ca9a25f25db18d5d0fa042db847b3
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: a36c112de8c760f91afd5cf544b355f7cb8e1bed
+ms.sourcegitcommit: 934cb53fa4cb59fea611bfeb9db110d8d6f7d165
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62373303"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65612279"
 ---
 # <a name="connection-maps"></a>Bağlantı Eşlemeleri
 

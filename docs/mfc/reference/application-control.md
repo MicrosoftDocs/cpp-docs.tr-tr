@@ -1,17 +1,15 @@
 ---
 title: Uygulama Denetimi
 ms.date: 11/04/2016
-f1_keywords:
-- vc.mfc.macros
 helpviewer_keywords:
 - application control [MFC]
 ms.assetid: c1f69f15-e0fe-4515-9f36-d63d31869deb
-ms.openlocfilehash: e4944c1cf1114bbd009ebc62b776628ba86b3b4d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: cb4ad19dfad06b793f226324d8e28c37c084ad67
+ms.sourcegitcommit: 934cb53fa4cb59fea611bfeb9db110d8d6f7d165
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62352053"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65612297"
 ---
 # <a name="application-control"></a>Uygulama Denetimi
 

@@ -1,18 +1,16 @@
 ---
 title: MFC Tarafından Kullanılan Yapılar
 ms.date: 12/03/2018
-f1_keywords:
-- vc.mfc.structures
 helpviewer_keywords:
 - structures
 - structures, MFC
 ms.assetid: 2168fcc6-e800-4814-aabf-0bca86ff790d
-ms.openlocfilehash: d91daeded9933abd73612a6a66a19a159bf36006
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: cb888c1f3efe3ae0ecf35bc0f14ac0cda66112f9
+ms.sourcegitcommit: 934cb53fa4cb59fea611bfeb9db110d8d6f7d165
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62309973"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65611706"
 ---
 # <a name="structures-used-by-mfc"></a>MFC Tarafından Kullanılan Yapılar
 

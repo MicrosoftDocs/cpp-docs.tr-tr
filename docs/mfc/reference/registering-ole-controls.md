@@ -1,18 +1,16 @@
 ---
 title: OLE Denetimlerini Kaydetme
 ms.date: 11/04/2016
-f1_keywords:
-- vc.mfc.macros.ole
 helpviewer_keywords:
 - registering OLE controls
 - OLE controls [MFC], registering
 ms.assetid: 73c45b7f-7dbc-43f5-bd17-dd77c6acec72
-ms.openlocfilehash: 9c480696bdec3591f0509cbad04051a2b3af4070
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: a8ade688b90c99c166073b22a9eed71d1a518dc2
+ms.sourcegitcommit: 934cb53fa4cb59fea611bfeb9db110d8d6f7d165
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62310142"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65611763"
 ---
 # <a name="registering-ole-controls"></a>OLE Denetimlerini Kaydetme
 

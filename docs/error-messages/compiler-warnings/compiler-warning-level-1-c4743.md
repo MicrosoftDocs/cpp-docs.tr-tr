@@ -1,17 +1,17 @@
 ---
 title: Derleyici Uyarısı (düzey 1) C4743
-ms.date: 11/04/2016
+ms.date: 05/13/2019
 f1_keywords:
 - C4743
 helpviewer_keywords:
 - C4743
 ms.assetid: 2ee76ea3-77f3-4c2f-9a57-0751823c89fd
-ms.openlocfilehash: d17fd65f1108aab6e3ce97ec75c0ffb899c06cda
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 53ead0e34b55eca44399cee09f1947a12e1eadd3
+ms.sourcegitcommit: 934cb53fa4cb59fea611bfeb9db110d8d6f7d165
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62152014"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65611836"
 ---
 # <a name="compiler-warning-level-1-c4743"></a>Derleyici Uyarısı (düzey 1) C4743
 
@@ -19,17 +19,22 @@ ms.locfileid: "62152014"
 
 İki dosyalarında tanımlanan ya da başvurulan bir dış değişkenine bu dosyaları farklı türleri vardır ve derleyici, belirlenen değişkenin boyutu *dosya1* değişkenin boyutu farklıdır *dosya2*.
 
-Bu uyarı için C++ yayılabilir, önemli durum yoktur. Ardından bu bildirimler sanal işlevler içeriyorsa ve bildirimleri aynı değilse, iki farklı dosyanın aynı adla aynı türlerini bildirirseniz, derleyici sanal işlev tablolar için uyarı C4744 gönderebilir. Uyarı, aynı türe yönelik iki farklı boyutta bir sanal işlev tablolar bulunur ve bağlayıcı çalıştırılabilir dosyaya birleştirmek için bunlardan birini seçmeniz gerekir çünkü oluşur.  Bu yanlış sanal işlevinin çağrılması, programınızda neden mümkündür.
+## <a name="remarks"></a>Açıklamalar
+
+Bu uyarı için yayılabilir, önemli bir durumda olduğundan C++. Ardından bu bildirimler sanal işlevler içeriyorsa ve bildirimleri aynı değilse, iki farklı dosyanın aynı adla aynı türlerini bildirirseniz, derleyici sanal işlev tablolar için uyarı C4744 gönderebilir. Uyarı, aynı türe yönelik iki farklı boyutlardaki sanal işlev tablolar bulunur ve bağlayıcı çalıştırılabilir dosyaya birleştirmek için bunlardan birini seçmeniz gerekir çünkü oluşur.  Bu, yanlış sanal işlevinin çağrılması, programınızda sonuçlanabilir mümkündür.
 
 Bu uyarıyı çözmek için aynı tür tanımını kullanabilir veya değişkenleri ve türleri için farklı adlar kullanın.
 
 ## <a name="example"></a>Örnek
 
-Bu örnek, türü bir tanım içeriyor.
+Aşağıdaki örnek, C4743 oluşturur. Bu derleme için hem dosyaları aynı klasöre yerleştirin ve çalıştırın  
 
+```cmd
+cl /EHsc /W1 /GL /O2 C4743a.cpp C4743b.cpp
 ```
+
+```cpp
 // C4743a.cpp
-// compile with: /c
 class C {
 public:
     virtual void f1(void);
@@ -43,14 +48,8 @@ void C::f3(void) {}
 C q;
 ```
 
-## <a name="example"></a>Örnek
-
-Aşağıdaki örnek, C4743 oluşturur.
-
-```
+```cpp
 // C4743b.cpp
-// compile with: C4743a.cpp /W1 /GL /O2
-// C4743 expected
 class C {
 public:
     virtual void f1(void);

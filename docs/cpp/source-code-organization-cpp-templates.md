@@ -1,13 +1,13 @@
 ---
 title: Kaynak kodu kuruluşu (C++ Şablonları)
-ms.date: 11/04/2016
+ms.date: 04/22/2019
 ms.assetid: 50569c5d-0219-4966-9bcf-a8689074ad1d
-ms.openlocfilehash: 592f17c08b9d4de0f67f17c60521d6e9a11dfc3a
-ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.openlocfilehash: 1933758e47f2fcc0b63f0d16809591b932501854
+ms.sourcegitcommit: 934cb53fa4cb59fea611bfeb9db110d8d6f7d165
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65222008"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65611396"
 ---
 # <a name="source-code-organization-c-templates"></a>Kaynak kodu kuruluşu (C++ Şablonları)
 

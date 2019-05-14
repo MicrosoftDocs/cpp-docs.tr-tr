@@ -1,18 +1,16 @@
 ---
 title: 'TN050: MFC-OLE ortak iletişim kutuları (Mfcuıx32)'
 ms.date: 11/04/2016
-f1_keywords:
-- vc.mfc.ole
 helpviewer_keywords:
 - MFCUIx32
 - TN050
 ms.assetid: 397c92f7-e7c8-49fb-97bc-f5602ec744b8
-ms.openlocfilehash: f407a764ebfc0f8d1a12a4cf933f55d403380716
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f201eac23a9c344f8699cc26c78813888bf5c113
+ms.sourcegitcommit: 934cb53fa4cb59fea611bfeb9db110d8d6f7d165
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62399713"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65610992"
 ---
 # <a name="tn050-mfcole-common-dialogs-mfcuix32"></a>TN050: MFC/OLE Common Dialogs (MFCUIx32)
 

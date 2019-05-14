@@ -1,8 +1,6 @@
 ---
 title: MFC Makroları ve Genel Öğeleri
 ms.date: 11/04/2016
-f1_keywords:
-- vc.mfc.macros
 helpviewer_keywords:
 - MFC, global functions and variables
 - MFC, macros
@@ -13,12 +11,12 @@ helpviewer_keywords:
 - Afx naming convention
 - macros
 ms.assetid: add4e33f-0e62-4d27-be14-896cb8675d22
-ms.openlocfilehash: 27664d4e48c0c4e09439f9e970ded9f2a630d90d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 86fbda42d97c9086a3c1d021618a4694cfade7df
+ms.sourcegitcommit: 934cb53fa4cb59fea611bfeb9db110d8d6f7d165
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62310285"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65611803"
 ---
 # <a name="mfc-macros-and-globals"></a>MFC Makroları ve Genel Öğeleri
 

@@ -1,13 +1,13 @@
 ---
 title: 3. Çalışma zamanı kitaplık işlevleri
-ms.date: 01/17/2019
+ms.date: 05/13/2019
 ms.assetid: b226e512-6822-4cbe-a2ca-74cc2bb7e880
-ms.openlocfilehash: 3eb6dc4110145a6c45dbdd772deaee3023e68e9d
-ms.sourcegitcommit: 00e26915924869cd7eb3c971a7d0604388abd316
+ms.openlocfilehash: 7ecb2a79ad61169cdeabc9bd4893147a5de6a210
+ms.sourcegitcommit: 934cb53fa4cb59fea611bfeb9db110d8d6f7d165
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "65525039"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65611179"
 ---
 # <a name="3-run-time-library-functions"></a>3. Çalışma zamanı kitaplık işlevleri
 
@@ -55,6 +55,8 @@ Bu işlev, bir program bölümünden çağrıldığında yukarıda açıklanan e
 
 Bu çağrı, üzerinde önceliğe sahiptir. `OMP_NUM_THREADS` ortam değişkeni. Çağırarak gerçekleştirilebilir iş parçacığı sayısı için varsayılan değer `omp_set_num_threads` ayarlayarak `OMP_NUM_THREADS` ortam değişkeni, tek bir açıkça geçersiz kılınabilir `parallel` belirterek yönerge `num_threads` yan tümcesi.
 
+Daha fazla bilgi için [omp_set_dynamic](#317-omp_set_dynamic-function).
+
 #### <a name="cross-references"></a>Çapraz başvuruları
 
 - [omp_set_dynamic](#317-omp_set_dynamic-function) işlevi
@@ -74,6 +76,8 @@ int omp_get_num_threads(void);
 `num_threads` Yan tümcesi `omp_set_num_threads` işlevi ve `OMP_NUM_THREADS` ortam değişkeni denetimi bir takım olarak iş parçacığı sayısı.
 
 İş parçacığı sayısı kullanıcı tarafından açıkça ayarlanmamışsa, varsayılan uygulama tarafından tanımlanır. Bu işlev en yakın kapsayan bağlar `parallel` yönergesi. Bu işlev, bir program seri bir kısmını veya serileştirilmiş bir iç içe geçmiş bir paralel bölgenin çağrılırsa, 1 döndürür.
+
+Daha fazla bilgi için [omp_set_dynamic](#317-omp_set_dynamic-function).
 
 #### <a name="cross-references"></a>Çapraz başvuruları
 
@@ -165,6 +169,12 @@ Bir çağrı `omp_set_dynamic` üzerinden önceliğe sahip `OMP_DYNAMIC` ortam d
 
 Yerleştirmenin dinamik ayarına iş parçacığı sayısı için varsayılan uygulama tanımlanır. Sonuç olarak, belirli bir sayıya doğru yürütme için iş parçacığı bağımlı kullanıcı kodlarını açıkça dinamik iş parçacığı devre dışı bırakmanız gerekir. Uygulamaları iş parçacığı sayısını dinamik olarak ayarlama olanağı sağlamak için gerekli değildir, ancak tüm platformlar arasında taşınabilirlik desteklemek için bir arabirim sağlayacağı şekilde gerekmesinden.
 
+#### <a name="microsoft-specific"></a>Microsoft'a özgü
+
+Geçerli desteğini `omp_get_dynamic` ve `omp_set_dynamic` aşağıdaki gibidir: 
+
+Giriş parametresi olarak `omp_set_dynamic` iş parçacığı ilkesini etkilemez ve iş parçacığı sayısını değiştirmez. `omp_get_num_threads` her zaman, ayarlanırsa kullanıcı tanımlı numarası veya varsayılan iş parçacığı sayısını döndürür. Geçerli bir Microsoft uygulamasında `omp_set_dynamic(0)` var olan iş parçacıkları kümesini aşağıdaki bir paralel bölgenin için yeniden kullanılabilir olacak şekilde, dinamik threading devre dışı bırakır. `omp_set_dynamic(1)` var olan iş parçacıkları kümesini atılıyor ve yaklaşan bir paralel bölgenin için yeni bir küme oluşturarak dinamik iş parçacığı üzerinde kapatır. Yeni iş parçacıklarının sayısını, eski kümedeki ile aynıdır ve dönüş değerini temel alarak `omp_get_num_threads`. En iyi performans için bu nedenle kullanmanız `omp_set_dynamic(0)` var olan iş parçacıklarının yeniden kullanmak için.
+
 #### <a name="cross-references"></a>Çapraz başvuruları
 
 - [omp_get_num_threads](#312-omp_get_num_threads-function)
@@ -180,7 +190,7 @@ Yerleştirmenin dinamik ayarına iş parçacığı sayısı için varsayılan uy
 int omp_get_dynamic(void);
 ```
 
-Uygulama iş parçacığı sayısını yerleştirmenin dinamik ayarına uygulamaz, bu işlev her zaman 0 değerini döndürür.
+Uygulama iş parçacığı sayısını yerleştirmenin dinamik ayarına uygulamaz, bu işlev her zaman 0 değerini döndürür. Daha fazla bilgi için [omp_set_dynamic](#317-omp_set_dynamic-function).
 
 #### <a name="cross-references"></a>Çapraz başvuruları
 

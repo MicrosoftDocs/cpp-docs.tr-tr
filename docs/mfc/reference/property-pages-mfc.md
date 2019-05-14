@@ -1,18 +1,16 @@
 ---
 title: Özellik Sayfaları (MFC)
 ms.date: 11/04/2016
-f1_keywords:
-- vc.mfc.macros
 helpviewer_keywords:
 - property page data transfer functions in MFC
 - property pages [MFC], global MFC functions
 ms.assetid: 734f88bc-c776-4136-9b0e-f45c761a45c1
-ms.openlocfilehash: e2f75044c7cfbc1f9d2af1d9bda5c108f9afa881
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 1c4e6c585bf216518e46109e88a2388da03a0496
+ms.sourcegitcommit: 934cb53fa4cb59fea611bfeb9db110d8d6f7d165
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62310337"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65611786"
 ---
 # <a name="property-pages-mfc"></a>Özellik Sayfaları (MFC)
 

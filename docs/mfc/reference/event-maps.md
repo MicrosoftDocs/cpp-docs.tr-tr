@@ -1,17 +1,15 @@
 ---
 title: Olay Eşlemeleri
 ms.date: 06/20/2018
-f1_keywords:
-- vc.mfc.macros.maps
 helpviewer_keywords:
 - event maps [MFC]
 ms.assetid: 1ed53aee-bc53-43cd-834a-6fb935c0d29b
-ms.openlocfilehash: 512170d7eaa891b3616ca1ea56c29a8bb5cccda9
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 98614aa41d3131d28c9e0c7584e5a88c2249ef97
+ms.sourcegitcommit: 934cb53fa4cb59fea611bfeb9db110d8d6f7d165
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62322247"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65612240"
 ---
 # <a name="event-maps"></a>Olay Eşlemeleri
 

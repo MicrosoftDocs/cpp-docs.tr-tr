@@ -1,18 +1,16 @@
 ---
 title: "TN049: MFC-OLE MBCS'den Unicode çeviri katmanına (MFCANS32)"
 ms.date: 11/04/2016
-f1_keywords:
-- vc.mfc.mbcs
 helpviewer_keywords:
 - MFCANS32.DLL
 - TN049
 ms.assetid: c027e30d-8a51-4e28-b215-13fc49b40431
-ms.openlocfilehash: 6bb4e13f964d06ee8d1944ede8bd6261a752e60b
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 3f91b2c4d476eb4de6f8413693d27475292ff4fd
+ms.sourcegitcommit: 934cb53fa4cb59fea611bfeb9db110d8d6f7d165
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62305313"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65611054"
 ---
 # <a name="tn049-mfcole-mbcs-to-unicode-translation-layer-mfcans32"></a>TN049: MFC/OLE MBCS'den Unicode çeviri katmanına (MFCANS32)
 

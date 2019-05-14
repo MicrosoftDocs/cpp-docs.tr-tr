@@ -1,18 +1,16 @@
 ---
 title: OLE Denetimlerinin Kalıcılığı
 ms.date: 11/04/2016
-f1_keywords:
-- vc.mfc.macros.ole
 helpviewer_keywords:
 - OLE controls [MFC], persistence
 - persistence, OLE controls
 ms.assetid: 64f8dc80-f110-41af-b3ea-14948f6bfdf7
-ms.openlocfilehash: b8bcba63c8e09873fe7f30e4fd07d652850be1f3
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 639a5a98da03307e3edf22deb6d32956c3f73374
+ms.sourcegitcommit: 934cb53fa4cb59fea611bfeb9db110d8d6f7d165
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62310181"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65611771"
 ---
 # <a name="persistence-of-ole-controls"></a>OLE Denetimlerinin Kalıcılığı
 

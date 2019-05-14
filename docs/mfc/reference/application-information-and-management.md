@@ -1,17 +1,15 @@
 ---
 title: Uygulama bilgileri ve Yönetimi
 ms.date: 11/04/2016
-f1_keywords:
-- vc.mfc.macros
 helpviewer_keywords:
 - applications [MFC], managing
 ms.assetid: b72f4154-24db-4e75-bca3-6873e2459c15
-ms.openlocfilehash: 78b9ae467d3504f3922c540a3e4cd100322d8f4e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 84d11b5c2d456a55e09b8512a3c0af06409939e8
+ms.sourcegitcommit: 934cb53fa4cb59fea611bfeb9db110d8d6f7d165
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62151291"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65612291"
 ---
 # <a name="application-information-and-management"></a>Uygulama bilgileri ve Yönetimi
 

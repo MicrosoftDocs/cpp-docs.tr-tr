@@ -1,20 +1,18 @@
 ---
 title: 'TN040: MFC-OLE yerinde yeniden boyutlandırma ve yakınlaştırma'
 ms.date: 11/04/2016
-f1_keywords:
-- vc.mfc.ole
 helpviewer_keywords:
 - resizing in-place
 - TN040
 - zooming and in-place activation
 - in-place activation, zooming and resizing
 ms.assetid: 4d7859bd-0b2e-4254-be62-2735cecf02c6
-ms.openlocfilehash: c2cb25388184ac969bec7c01d8077a458c03a03a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 9d5c87e6d5daff34a479ba61c0c275b48a8bba4d
+ms.sourcegitcommit: 934cb53fa4cb59fea611bfeb9db110d8d6f7d165
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62305469"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65611121"
 ---
 # <a name="tn040-mfcole-in-place-resizing-and-zooming"></a>TN040: MFC/OLE yerinde yeniden boyutlandırma ve yakınlaştırma
 

@@ -1,8 +1,6 @@
 ---
 title: 'TN058: MFC modül durumu uygulaması'
 ms.date: 06/28/2018
-f1_keywords:
-- vc.mfc.implementation
 helpviewer_keywords:
 - thread state [MFC]
 - module states [MFC], managing state data
@@ -12,12 +10,12 @@ helpviewer_keywords:
 - DLLs [MFC], module states
 - process state [MFC]
 ms.assetid: 72f5b36f-b3da-4009-a144-24258dcd2b2f
-ms.openlocfilehash: db34f528e70a7dcc437836684656b3ce8a4078fd
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: d803dba36b7790173b21dacb6cb34241f27dfb96
+ms.sourcegitcommit: 934cb53fa4cb59fea611bfeb9db110d8d6f7d165
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62399609"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65610968"
 ---
 # <a name="tn058-mfc-module-state-implementation"></a>TN058: MFC modül durumu uygulaması
 

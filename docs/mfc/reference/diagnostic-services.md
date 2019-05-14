@@ -1,8 +1,6 @@
 ---
 title: Tanı Hizmetleri
 ms.date: 11/04/2016
-f1_keywords:
-- vc.mfc.macros
 helpviewer_keywords:
 - diagnosi [MFC]s, diagnostic services
 - diagnostic macros [MFC], list of general MFC
@@ -20,12 +18,12 @@ helpviewer_keywords:
 - diagnostics [MFC], diagnostic services
 - diagnostic functions and variables [MFC]
 ms.assetid: 8d78454f-9fae-49c2-88c9-d3fabd5393e8
-ms.openlocfilehash: a4979ab7bbc0e396de5629fba1b86f3bfb602dcf
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 682644dd84901e0f73a5fd43ca299d965476d759
+ms.sourcegitcommit: 934cb53fa4cb59fea611bfeb9db110d8d6f7d165
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62322728"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65611446"
 ---
 # <a name="diagnostic-services"></a>Tanı Hizmetleri
 

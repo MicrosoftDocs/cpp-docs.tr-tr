@@ -1,8 +1,6 @@
 ---
 title: 'TN053: DAO veritabanı sınıfları için özel DFX rutinleri'
 ms.date: 11/04/2016
-f1_keywords:
-- vc.mfc.dfx
 helpviewer_keywords:
 - MFC, DAO and
 - database classes [MFC], DAO
@@ -13,12 +11,12 @@ helpviewer_keywords:
 - DFX (DAO record field exchange) [MFC]
 - custom DFX routines [MFC]
 ms.assetid: fdcf3c51-4fa8-4517-9222-58aaa4f25cac
-ms.openlocfilehash: b610604c1b7a68128dc9eb6fb5515225ed22b16e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 262da283f20df1fe7af6aa02785e8c1ceb09dfda
+ms.sourcegitcommit: 934cb53fa4cb59fea611bfeb9db110d8d6f7d165
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62399687"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65611096"
 ---
 # <a name="tn053-custom-dfx-routines-for-dao-database-classes"></a>TN053: DAO veritabanı sınıfları için özel DFX rutinleri
 

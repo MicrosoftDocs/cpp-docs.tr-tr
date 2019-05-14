@@ -1,8 +1,6 @@
 ---
 title: "TN054: Doğrudan MFC DAO sınıflarını kullanırken DAO'yu çağırma"
 ms.date: 06/28/2018
-f1_keywords:
-- vc.mfc.dao
 helpviewer_keywords:
 - MFC, DAO and
 - passwords [MFC], calling DAO
@@ -13,12 +11,12 @@ helpviewer_keywords:
 - TN054
 - DAO (Data Access Objects), and MFC
 ms.assetid: f7de7d85-8d6c-4426-aa05-2e617c0da957
-ms.openlocfilehash: 938381f55b598911b69bb25bf7af576dfdfb2e4f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b6aae8929e2840791e8d629378a0ec2261a2cda9
+ms.sourcegitcommit: 934cb53fa4cb59fea611bfeb9db110d8d6f7d165
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62399661"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65610987"
 ---
 # <a name="tn054-calling-dao-directly-while-using-mfc-dao-classes"></a>TN054: Doğrudan MFC DAO sınıflarını kullanırken DAO'yu çağırma
 

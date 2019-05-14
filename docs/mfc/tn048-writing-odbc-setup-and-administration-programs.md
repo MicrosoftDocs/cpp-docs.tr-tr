@@ -1,8 +1,6 @@
 ---
 title: 'TN048: MFC veritabanı uygulamaları için ODBC Kurulum ve yönetim programları yazma'
 ms.date: 11/04/2016
-f1_keywords:
-- vc.mfc.odbc
 helpviewer_keywords:
 - installing ODBC
 - ODBC, installing
@@ -11,12 +9,12 @@ helpviewer_keywords:
 - ODBC, and MFC
 - MFC, database applications
 ms.assetid: d456cdd4-0513-4a51-80c0-9132b66115ce
-ms.openlocfilehash: 2904ceb626fd1bfad0b24026deb08f2c5dcbcd4a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: ec74b75ff34c98a9231582b3db411fda90c5a9ff
+ms.sourcegitcommit: 934cb53fa4cb59fea611bfeb9db110d8d6f7d165
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62305339"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65612135"
 ---
 # <a name="tn048-writing-odbc-setup-and-administration-programs-for-mfc-database-applications"></a>TN048: MFC veritabanı uygulamaları için ODBC Kurulum ve yönetim programları yazma
 

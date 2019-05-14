@@ -1,19 +1,17 @@
 ---
 title: Eşlemeleri Dağıtma
 ms.date: 06/20/2018
-f1_keywords:
-- vc.mfc.macros.maps
 helpviewer_keywords:
 - dispatch maps [MFC], macros
 - dispatch maps [MFC]
 - dispatch map macros [MFC]
 ms.assetid: bef9d08b-ad35-4c3a-99d8-04150c7c04e2
-ms.openlocfilehash: 5ebedaa02a03bcc7802110977b96659dae45f174
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: a1baa5274dbd33bb1e88b57ccfab2b5ed2085f6d
+ms.sourcegitcommit: 934cb53fa4cb59fea611bfeb9db110d8d6f7d165
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62322520"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65611302"
 ---
 # <a name="dispatch-maps"></a>Eşlemeleri Dağıtma
 

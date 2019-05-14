@@ -1,19 +1,17 @@
 ---
 title: 'TN032: MFC özel durum mekanizması'
 ms.date: 11/04/2016
-f1_keywords:
-- vc.mfc.exceptions
 helpviewer_keywords:
 - TN032
 - MFC, exceptions
 - CException class [MFC], using
 ms.assetid: 0271f0aa-82cb-47a2-b7ea-e88126fc7e43
-ms.openlocfilehash: 210e47e117cd602ba77edd330205385f54199ce5
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 5b419fdcc4f20579b1a809dd8a5cf6a93f4fe835
+ms.sourcegitcommit: 934cb53fa4cb59fea611bfeb9db110d8d6f7d165
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62305664"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65611420"
 ---
 # <a name="tn032-mfc-exception-mechanism"></a>TN032: MFC özel durum mekanizması
 
