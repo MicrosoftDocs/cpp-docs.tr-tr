@@ -1,19 +1,17 @@
 ---
 title: 'TN023: Standart MFC kaynakları'
 ms.date: 11/04/2016
-f1_keywords:
-- vc.mfc.resources
 helpviewer_keywords:
 - resources [MFC]
 - TN023
 - standard resources
 ms.assetid: 60af8415-c576-4c2f-a711-ca5da0b9a1f2
-ms.openlocfilehash: d29f0ab2254a52e01f2016f64a37ddfce47955bb
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b6a1978a92fcf53de7caacd41c01a91ff16a3fc3
+ms.sourcegitcommit: 934cb53fa4cb59fea611bfeb9db110d8d6f7d165
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62306044"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65611409"
 ---
 # <a name="tn023-standard-mfc-resources"></a>TN023: Standart MFC kaynakları
 
