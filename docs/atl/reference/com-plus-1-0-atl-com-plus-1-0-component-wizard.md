@@ -1,17 +1,25 @@
 ---
 title: COM + 1.0, ATL COM + 1.0 bileşeni Sihirbazı
-ms.date: 11/04/2016
+ms.date: 05/09/2019
 f1_keywords:
 - vc.codewiz.class.atl.mts.options
 ms.assetid: 2fbe259c-6be1-4d0e-9cfe-721c75c97cb1
-ms.openlocfilehash: 0fa649ba41a684be6ed18bd05d48954503c5db16
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: bff7f87fbdebbff9a1823ae8718c64be4f47a2ea
+ms.sourcegitcommit: fc1de63a39f7fcbfe2234e3f372b5e1c6a286087
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62278598"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65707448"
 ---
 # <a name="com-10-atl-com-10-component-wizard"></a>COM + 1.0, ATL COM + 1.0 bileşeni Sihirbazı
+
+::: moniker range="vs-2019"
+
+Bu sihirbaz, Visual Studio 2019 bulunan ve daha yeni değil.
+
+::: moniker-end
+
+::: moniker range="<=vs-2017"
 
 ATL COM + 1.0 bileşeni Sihirbazı bu sayfanın bir arabirim türüne ve ek arabirimleri desteklenecek belirtmek için kullanın.
 
@@ -50,6 +58,8 @@ ATL projeleri ve ATL COM sınıfları hakkında daha fazla bilgi için bkz. [ATL
    |**Gerekli**|Nesne olabilir veya bir işlem akışını kök bileşeni özniteliği makrosu custom(TLBATTR_TRANS_REQUIRED,0) .h dosyası (öznitelikli projeler) veya (nonattributed projeler) .idl dosyasına ekleyerek olmayabilir belirtir.|
    |**Desteklenmiyor**|Nesne işlemleri hariç belirtir. Bileşen özniteliği makrosu custom(TLBATTR_TRANS_NOTSUPP,0) .h dosyası (öznitelikli projeler) veya .idl dosyasına (nonattributed projeler) ekler.|
    |**Yeni gerektirir**|Nesne her zaman bir işlem akışını kök bileşeni özniteliği makrosu custom(TLBATTR_TRANS_REQNEW,0) .h dosyası (öznitelikli projeler) veya (nonattributed projeler) .idl dosyasına ekleyerek olduğunu belirtir.|
+
+::: moniker-end
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

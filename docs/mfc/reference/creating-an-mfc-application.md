@@ -6,12 +6,12 @@ helpviewer_keywords:
 - MFC, creating applications
 - MFC applications
 ms.assetid: b8b8aa08-9c49-404c-8078-b42079ac18f0
-ms.openlocfilehash: c70c82d14227687f34309f8d125e3aeab53034a5
-ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
+ms.openlocfilehash: 0f16fe577f1dc02dc9a2fc0cffb5899b16ad8cca
+ms.sourcegitcommit: fc1de63a39f7fcbfe2234e3f372b5e1c6a286087
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2019
-ms.locfileid: "65448439"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65708242"
 ---
 # <a name="creating-an-mfc-application"></a>MFC Uygulaması Oluşturma
 
@@ -47,7 +47,7 @@ MFC Uygulama Sihirbazı uygun sınıf ve tüm uygulamalar, sihirbazda seçtiğin
 
 1. Tıklayın **son** sihirbazı kapatın ve geliştirme ortamında yeni projenizi açın.
 
-Projeniz oluşturulduktan sonra oluşturulan dosyalar görüntüleyebileceğiniz **Çözüm Gezgini**. Projeniz için sihirbaz dosyaları hakkında daha fazla bilgi için proje tarafından oluşturulan ReadMe.txt dosyasına bakın. Dosya türleri hakkında daha fazla bilgi için bkz. [görsel için oluşturulan dosya türleri C++ projeleri](../../build/reference/file-types-created-for-visual-cpp-projects.md).
+Projeniz oluşturulduktan sonra oluşturulan dosyalar görüntüleyebileceğiniz **Çözüm Gezgini**. Projeniz için sihirbaz dosyaları hakkında daha fazla bilgi için proje tarafından oluşturulan ReadMe.txt dosyasına bakın. Dosya türleri hakkında daha fazla bilgi için bkz. [Visual Studio için oluşturulan dosya türleri C++ projeleri](../../build/reference/file-types-created-for-visual-cpp-projects.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

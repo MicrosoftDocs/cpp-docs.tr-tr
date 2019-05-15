@@ -6,16 +6,16 @@ helpviewer_keywords:
 - projects [C++], building
 - project building [C++]
 ms.assetid: d459bc03-88ef-48d0-9f9a-82d17f0b6a4d
-ms.openlocfilehash: 16f1f0bc66b9d1f1a6ece4856d213bb13b2b7dbf
-ms.sourcegitcommit: 283cb64fd7958a6b7fbf0cd8534de99ac8d408eb
+ms.openlocfilehash: ea477e7b2f5435e049b242e68d151cc1f2d20624
+ms.sourcegitcommit: fc1de63a39f7fcbfe2234e3f372b5e1c6a286087
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "64855947"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65708134"
 ---
 # <a name="walkthrough-building-a-project-c"></a>İzlenecek yol: Proje derleme (C++)
 
-Bu kılavuzda, kasıtlı bir derleme hatası nasıl göründüğünü ve nasıl düzeltileceğini öğrenmek için kodunuzda bir Visual C++ sözdizimi hatası tanıtır. Projeyi derlediğinizde, bir hata iletisi sorunun ne olduğunu ve oluştuğu yeri gösterir.
+Bu izlenecek yolda, kasıtlı olarak tanıtan bir C++ söz dizimi hatası, kodunuzda bir derleme hatası nasıl göründüğünü ve nasıl düzeltileceğini öğrenin. Projeyi derlediğinizde, bir hata iletisi sorunun ne olduğunu ve oluştuğu yeri gösterir.
 
 ## <a name="prerequisites"></a>Önkoşullar
 

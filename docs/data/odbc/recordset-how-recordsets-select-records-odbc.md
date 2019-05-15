@@ -1,6 +1,6 @@
 ---
 title: 'Kayıt kümesi: Kayıtları seçme biçimi (ODBC) nasıl kaydeder'
-ms.date: 11/04/2016
+ms.date: 05/09/2019
 helpviewer_keywords:
 - recordsets, selecting records
 - record selection, ODBC recordsets
@@ -9,14 +9,17 @@ helpviewer_keywords:
 - recordsets, constructing SQL statements
 - ODBC recordsets, selecting records
 ms.assetid: 343a6a91-aa4c-4ef7-b21f-2f2bfd0d3787
-ms.openlocfilehash: 310481a6ea6637de817bf29d528cbdfe70ae70db
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 41542e3e11d304bd9ad8b81c0a1b9c6504e156a7
+ms.sourcegitcommit: fc1de63a39f7fcbfe2234e3f372b5e1c6a286087
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62397828"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65707895"
 ---
 # <a name="recordset-how-recordsets-select-records-odbc"></a>Kayıt kümesi: Kayıtları seçme biçimi (ODBC) nasıl kaydeder
+
+> [!NOTE] 
+> MFC ODBC Tüketici Sihirbazı'nı ve sonrasında Visual Studio 2019 içinde kullanılabilir değil. Bir tüketici yine de el ile oluşturabilirsiniz.
 
 Bu konu MFC ODBC sınıflarına uygulanır.
 

@@ -9,12 +9,12 @@ helpviewer_keywords:
 - _ATL_MIN_CRT macro
 - distributing files with ATL components
 ms.assetid: 061d5f98-f669-440e-9380-42f017a0f9e8
-ms.openlocfilehash: c36200d7f0d41aa4f116fdee3f5d95ff1e80e839
-ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
+ms.openlocfilehash: 971d6c05ad4669f32e3b232d5e91c501e197be30
+ms.sourcegitcommit: fc1de63a39f7fcbfe2234e3f372b5e1c6a286087
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2019
-ms.locfileid: "65445996"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65707419"
 ---
 # <a name="creating-an-atl-project"></a>ATL projesi oluşturma
 
@@ -33,7 +33,7 @@ Bir ATL projesi oluşturmak için en kolay yolu bulunan ATL projesi Sihirbazı, 
 
 1. Tıklayın **son** sihirbazı kapatın ve geliştirme ortamında yeni projenizi açın.
 
-Projeniz oluşturulduktan sonra oluşturulan dosyalar görüntüleyebileceğiniz **Çözüm Gezgini**. Projeniz için sihirbaz dosyaları hakkında daha fazla bilgi için proje tarafından oluşturulan ReadMe.txt dosyasına bakın. Dosya türleri hakkında daha fazla bilgi için bkz. [görsel için oluşturulan dosya türleri C++ projeleri](../../build/reference/file-types-created-for-visual-cpp-projects.md). Yapılandırmalar yeni ATL projesi ve ayarların nasıl değiştirileceği hakkında daha fazla bilgi için bkz. [varsayılan ATL projesi yapılandırmaları](../../atl/reference/default-atl-project-configurations.md).
+Projeniz oluşturulduktan sonra oluşturulan dosyalar görüntüleyebileceğiniz **Çözüm Gezgini**. Projeniz için sihirbaz dosyaları hakkında daha fazla bilgi için proje tarafından oluşturulan ReadMe.txt dosyasına bakın. Dosya türleri hakkında daha fazla bilgi için bkz. [Visual Studio için oluşturulan dosya türleri C++ projeleri](../../build/reference/file-types-created-for-visual-cpp-projects.md). Yapılandırmalar yeni ATL projesi ve ayarların nasıl değiştirileceği hakkında daha fazla bilgi için bkz. [varsayılan ATL projesi yapılandırmaları](../../atl/reference/default-atl-project-configurations.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -1,8 +1,7 @@
 ---
 title: Bir sınıf ekleyin
-ms.date: 11/08/2018
+ms.date: 05/14/2019
 f1_keywords:
-- vc.codewiz.classes.adding
 - vc.addclass
 helpviewer_keywords:
 - ATL projects, adding classes
@@ -10,12 +9,12 @@ helpviewer_keywords:
 - classes [C++], adding
 - Add Class dialog box
 ms.assetid: c34b5f70-4e72-4faa-ba21-e2b05361c4d9
-ms.openlocfilehash: 4cd4ed4d4ec5a7093ce674c7883a77fa4e91d5ef
-ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
+ms.openlocfilehash: fa53c2af5cd3e81c2d4877ef255430eac9525aad
+ms.sourcegitcommit: fc1de63a39f7fcbfe2234e3f372b5e1c6a286087
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2019
-ms.locfileid: "65446943"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65708138"
 ---
 # <a name="add-a-class"></a>Bir sınıf ekleyin
 
@@ -81,13 +80,8 @@ Dört kategorisi vardır **sınıfı Ekle** şablonları: .NET, ATL, MFC ve gene
 |Şablon|Sihirbazı|
 |--------------|------------|
 |MFC'ye ATL desteği Ekle|Yok|
-|ATL Active Server Page bileşeni|[ATL active server sayfa bileşeni Sihirbazı](../atl/reference/atl-active-server-page-component-wizard.md)|
 |ATL denetimi|[ATL Denetim Sihirbazı](../atl/reference/atl-control-wizard.md)|
 |ATL iletişim kutusu|[ATL iletişim kutusu Sihirbazı](../atl/reference/atl-dialog-wizard.md)|
-|ATL COM + 1.0 bileşeni|[ATL COM + 1.0 bileşeni Sihirbazı](../atl/reference/atl-com-plus-1-0-component-wizard.md)|
-|ATL OLEDB tüketicisi|[ATL OLE DB Tüketicisi Sihirbazı](../atl/reference/atl-ole-db-consumer-wizard.md)|
-|ATL OLEDB Sağlayıcısı|[ATL OLE DB sağlayıcısı Sihirbazı](../atl/reference/atl-ole-db-provider-wizard.md)|
-|ATL özellik sayfası|[ATL Özellik Sayfası Sihirbazı](../atl/reference/atl-property-page-wizard.md)|
 |ATL Basit Nesne|[ATL Basit Nesne Sihirbazı](../atl/reference/atl-simple-object-wizard.md)|
 |WMI Olay sağlayıcısı|WMI Olay sağlayıcısı Sihirbazı|
 |WMI örnek sağlayıcısı|WMI örnek sağlayıcısı Sihirbazı|
@@ -97,9 +91,6 @@ Dört kategorisi vardır **sınıfı Ekle** şablonları: .NET, ATL, MFC ve gene
 |Şablon|Sihirbazı|
 |--------------|------------|
 |MFC Sınıfı|[MFC sınıf Ekleme Sihirbazı](../mfc/reference/mfc-add-class-wizard.md)|
-|ActiveX denetiminden MFC sınıfı|[ActiveX denetimi sihirbazından sınıf ekleme](../ide/add-class-from-activex-control-wizard.md)|
-|Typelib'den MFC sınıfı|[Typelib sihirbazından sınıf ekleme](../mfc/reference/add-class-from-typelib-wizard.md)|
-|MFC ODBC Tüketicisi|[MFC ODBC Tüketicisi Sihirbazı](../mfc/reference/mfc-odbc-consumer-wizard.md)|
 
 #### <a name="generic-classes"></a>Genel sınıflar
 

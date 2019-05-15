@@ -4,12 +4,12 @@ ms.date: 05/09/2019
 helpviewer_keywords:
 - OLE DB consumers, creating
 ms.assetid: 652309d3-7736-4354-89ec-28ec80a83f9a
-ms.openlocfilehash: 21b0e0452d702cfe8a32561eb8b22ebd9b3a98d2
-ms.sourcegitcommit: 00e26915924869cd7eb3c971a7d0604388abd316
+ms.openlocfilehash: a221aa98f5d4011bb310e056f4c2c8b04d847af6
+ms.sourcegitcommit: fc1de63a39f7fcbfe2234e3f372b5e1c6a286087
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "65525017"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65707588"
 ---
 # <a name="creating-an-ole-db-consumer"></a>OLE DB Tüketicisi Oluşturma
 
@@ -19,7 +19,7 @@ ATL OLE DB Tüketicisi Sihirbazı'nı ve sonrasında Visual Studio 2019 içinde 
 
 ::: moniker-end
 
-::: moniker range="vs-2017"
+::: moniker range="<=vs-2017"
 
 OLE DB Şablonları tüketici içeren veya içermeyen oluşturabilirsiniz **ATL OLE DB Tüketicisi Sihirbazı**, ancak Sihirbazı'nı kullanarak önerilen yöntemdir. ATL destekleyen herhangi bir uygulamada bir tüketici çalışabilir
 

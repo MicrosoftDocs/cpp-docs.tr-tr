@@ -1,15 +1,15 @@
 ---
 title: (C++) kod sihirbazlarıyla işlevsellik ekleme
-ms.date: 05/09/2019
+ms.date: 05/14/2019
 helpviewer_keywords:
 - code wizards [C++]
 ms.assetid: 6afb7ef9-7056-423d-b244-91bb4236d1d7
-ms.openlocfilehash: 3050b3e2d2a188c2465cd454325e458cd8cc4047
-ms.sourcegitcommit: 00e26915924869cd7eb3c971a7d0604388abd316
+ms.openlocfilehash: 8c88936edcb9110fe7482281f483f11c542b83c1
+ms.sourcegitcommit: fc1de63a39f7fcbfe2234e3f372b5e1c6a286087
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "65525478"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65708126"
 ---
 # <a name="adding-functionality-with-code-wizards-c"></a>(C++) kod sihirbazlarıyla işlevsellik ekleme
 
@@ -31,9 +31,9 @@ Proje oluşturulduktan sonra değiştirin veya projenin işlevsellik eklemek ist
 > [!NOTE]
 >  Şimdi ileti işleyicileri ekleyebilir ve harita iletileri için ve MFC kullanarak sanal işlevleri geçersiz kılma [Özellikler penceresi](/visualstudio/ide/reference/properties-window).
 
-## <a name="accessing-visual-c-code-wizards"></a>Visual C++ kod sihirbazları erişme
+## <a name="accessing-c-code-wizards"></a>Erişim C++ kod sihirbazları
 
-Visual C++ kod sihirbazları erişebileceğiniz üç konum vardır:
+Erişebileceğiniz üç konum vardır C++ kod sihirbazları:
 
 - Üzerinde **proje** menüsünde **Yeni Öğe Ekle** komutu ortaya çıkarmak verir `Add New Item` iletişim kutusunda, yeni dosyalar projenize eklemenize yardımcı olur. **Sınıfı Ekle** komutunu görüntüler [sınıfı Ekle](../ide/add-class-dialog-box.md) her sınıf türleri için hangi sırayla sihirbazları Aç iletişim kutusu, projenize ekleyebilirsiniz. **Kaynak Ekle** komutunu görüntüler [kaynak Ekle](../windows/add-resource-dialog-box.md) iletişim kutusunda, içinden oluşturun veya projenize eklemek için bir kaynak seçin.
 
@@ -78,4 +78,4 @@ Visual C++ kod sihirbazları erişebileceğiniz üç konum vardır:
 [Bir sanal işlevi geçersiz kılma](../ide/overriding-a-virtual-function-visual-cpp.md)<br>
 [Sınıf yapısında gezinme](../ide/navigating-the-class-structure-visual-cpp.md)<br>
 [C++Visual Studio Proje türleri](../build/reference/visual-cpp-project-types.md)<br>
-[Oluşturulan türleri görsel için dosya C++ projeleri](../build/reference/file-types-created-for-visual-cpp-projects.md)
+[Oluşturulan türleri için Visual Studio dosya C++ projeleri](../build/reference/file-types-created-for-visual-cpp-projects.md)

@@ -1,6 +1,6 @@
 ---
 title: ATL Kaydedicisi betikleri oluşturma
-ms.date: 11/04/2016
+ms.date: 05/14/2014
 helpviewer_keywords:
 - scripting, registry scripting
 - ATL, registry
@@ -8,12 +8,12 @@ helpviewer_keywords:
 - scripts, Registrar scripts
 - scripts, creating
 ms.assetid: cbd5024b-8061-4a71-be65-7fee90374a35
-ms.openlocfilehash: e1a0b66e673fcefd0b75683ef75247a388217361
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f32606701ea08736985f0b0dd2ed82712040a049
+ms.sourcegitcommit: fc1de63a39f7fcbfe2234e3f372b5e1c6a286087
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62250859"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65707054"
 ---
 # <a name="creating-registrar-scripts"></a>Kaydedici betikleri oluşturma
 
@@ -25,7 +25,7 @@ ATL kayıt şirketinin komut dosyası altyapısı çalışma zamanında Kaydedic
 
 Bu makalede Kaydedici betikleri için ilgili aşağıdaki konular ele alınmaktadır:
 
-- [Backus Nauer Form (BNF) Söz Dizimini Anlama](../atl/understanding-backus-nauer-form-bnf-syntax.md)
+- [Backus-Naur form (BNF) söz dizimini anlama](../atl/understanding-backus-naur-form-bnf-syntax.md)
 
 - [Ayrıştırma Ağaçlarını Anlama](../atl/understanding-parse-trees.md)
 

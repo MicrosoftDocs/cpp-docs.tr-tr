@@ -1,18 +1,18 @@
 ---
 title: C karmaşık matematik desteği
-ms.date: 03/30/2018
+ms.date: 05/14/2019
 f1_keywords:
 - c.complex
 helpviewer_keywords:
 - complex numbers, math routines
 - math routines
 - complex numbers
-ms.openlocfilehash: 12ba858993d3712cbf390288df60faedc602c90a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 493886fcf1dbfd3dc16487dd8650206c428bb06d
+ms.sourcegitcommit: fc1de63a39f7fcbfe2234e3f372b5e1c6a286087
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62290020"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65707390"
 ---
 # <a name="c-complex-math-support"></a>C karmaşık matematik desteği
 
@@ -28,15 +28,15 @@ Microsoft uygulaması complex.h üstbilgisinin eşdeğerleri C99 standart yerel 
 
 |Standart türü|Microsoft türü|
 |-|-|
-|**float karmaşık** veya **_Complex Kaydır**|**_FComplex**|
-|**çift karmaşık** veya **çift _Complex**|**_DComplex**|
-|**uzun çift karmaşık** veya **_Complex uzun çift**|**_LComplex**|
+|**float karmaşık** veya **_Complex Kaydır**|**_Fcomplex**|
+|**çift karmaşık** veya **çift _Complex**|**_Dcomplex**|
+|**uzun çift karmaşık** veya **_Complex uzun çift**|**_Lcomplex**|
 
 Ayrı bir tür math.h üstbilgi tanımlar **yapı _complex**için kullanılan [_cabs](../c-runtime-library/reference/cabs.md) işlevi. **Yapı _complex** türü eşdeğer karmaşık matematik işlevleri tarafından kullanılmaz [cab dosyaları, cabsf cabsl](../c-runtime-library/reference/cabs-cabsf-cabsl.md).
 
 ## <a name="complex-constants-and-macros"></a>Karmaşık sabitleri ve makroları
 
-**Ben** olarak tanımlanan **float** karmaşık tür **_FComplex** başlatan `{ 0.0f, 1.0f }`.
+**Ben** olarak tanımlanan **float** karmaşık tür **_Fcomplex** başlatan `{ 0.0f, 1.0f }`.
 
 ## <a name="trigonometric-functions"></a>Trigonometrik İşlevler
 

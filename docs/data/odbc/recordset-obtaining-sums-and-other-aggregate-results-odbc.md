@@ -10,14 +10,17 @@ helpviewer_keywords:
 - SQL Server projects, retrieving aggregate values from recordsets
 - SQL aggregate values, retrieving from recordsets
 ms.assetid: 94500662-22a4-443e-82d7-acbe6eca447b
-ms.openlocfilehash: e10f2e1574dae234d98d210784d4a8ddef3bb57e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 29906366e6e9a5a852fcf40d9e7ecc8593d1b0b0
+ms.sourcegitcommit: fc1de63a39f7fcbfe2234e3f372b5e1c6a286087
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62397789"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65707840"
 ---
 # <a name="recordset-obtaining-sums-and-other-aggregate-results-odbc"></a>Kayıt kümesi: SUM'ları ve diğer toplama sonuçlarını (ODBC) alma
+
+> [!NOTE] 
+> MFC ODBC Tüketici Sihirbazı'nı ve sonrasında Visual Studio 2019 içinde kullanılabilir değil. Bir tüketici yine de el ile oluşturabilirsiniz.
 
 Bu konu MFC ODBC sınıflarına uygulanır.
 

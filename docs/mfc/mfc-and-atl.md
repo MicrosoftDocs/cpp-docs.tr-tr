@@ -2,12 +2,12 @@
 title: MFC ve ATL
 ms.date: 01/24/2018
 ms.assetid: 31b1a3a8-4154-4c4a-af10-fafc23ecdc5c
-ms.openlocfilehash: 54498ddf8999379d93c899c05aa41fe224616ea3
-ms.sourcegitcommit: 00e26915924869cd7eb3c971a7d0604388abd316
+ms.openlocfilehash: 2d986c3237a6fa58cfcebef29939dbf6b1c316ae
+ms.sourcegitcommit: fc1de63a39f7fcbfe2234e3f372b5e1c6a286087
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "65525430"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65706629"
 ---
 # <a name="mfc-and-atl"></a>MFC ve ATL
 
@@ -27,4 +27,4 @@ Visual Studio 2017 ve sonraki sürümlerinde, isteğe bağlı alt bileşenler al
 |[ATL COM Masaüstü Bileşenleri](../atl/atl-com-desktop-components.md)|ATL sınıf şablonları sağlar ve COM nesnelerinin C++ oluşturulmasını kolaylaştırmak için diğer kullanım oluşturur.|
 |[ATL/MFC paylaşılan sınıfları](../atl-mfc-shared/atl-mfc-shared-classes.md)|Başvuruları [CStringT sınıfı](../atl-mfc-shared/reference/cstringt-class.md) ve MFC ve ATL tarafından paylaşılan diğer sınıfları|
 |[Kaynak Dosyalarıyla Çalışma](../windows/working-with-resource-files.md)|Kaynak Düzenleyicisi UI kaynakları dizeleri, resimler ve iletişim kutuları gibi düzenlemenize olanak tanır.|
-|[Visual C++](../overview/visual-cpp-in-visual-studio.md)|MSDN kitaplığındaki tüm C++ içeriği için üst konu.|
+|[Visual Studio’da C++](../overview/visual-cpp-in-visual-studio.md)|MSDN kitaplığındaki tüm C++ içeriği için üst konu.|

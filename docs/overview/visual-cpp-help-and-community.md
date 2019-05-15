@@ -5,12 +5,12 @@ ms.technology: cpp-ide
 ms.assetid: 6bc23c18-fcd9-47bc-bff2-17537700be4a
 author: mikeblome
 ms.author: mblome
-ms.openlocfilehash: 8fdd48c026485e55db01f6f70b0dde3c1e68d847
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: a897f3b6154368c7381f1cac8e51ed5acfac5d32
+ms.sourcegitcommit: fc1de63a39f7fcbfe2234e3f372b5e1c6a286087
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62352047"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65708176"
 ---
 # <a name="visual-c-help-and-community"></a>Visual C++ Yardım ve Topluluk
 
@@ -26,7 +26,7 @@ ms.locfileid: "62352047"
 
 |Başlık|Açıklama|
 |-----------|-----------------|
-|[Visual C++](visual-cpp-in-visual-studio.md)|Başvuru ve Visual C++ hakkında kavramsal belgeler içeriyor. MSDN Kitaplığı'nın bir parçası.|
+|[Visual Studio’da C++](visual-cpp-in-visual-studio.md)|Başvuru ve Visual C++ hakkında kavramsal belgeler içeriyor. MSDN Kitaplığı'nın bir parçası.|
 |[Windows Geliştirici Merkezi](https://developer.microsoft.com/windows/)|Windows 10 için uygulamalar geliştirmek için C++ ve diğer dilleri kullanma hakkında bilgiler içerir. Windows Geliştirici Merkezi parçası; Docs altında C++ içeriktir > dil başvurusu düğümü.|
 
 ### <a name="online-and-offline-documentation"></a>Çevrimiçi ve çevrimdışı belgeleri

@@ -1,6 +1,6 @@
 ---
 title: Kayıt Kümesi (ODBC)
-ms.date: 11/04/2016
+ms.date: 05/09/2019
 helpviewer_keywords:
 - recordsets, snapshots
 - recordsets, creating
@@ -13,12 +13,12 @@ helpviewer_keywords:
 - snapshots, ODBC recordsets
 - dynasets
 ms.assetid: 333337c5-575e-4d26-b5f6-47166ad7874d
-ms.openlocfilehash: b201e152d83d3812253aa4803eebe715d726219d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b043b08e13611b87bbffbe9dfb3255d5520e3359
+ms.sourcegitcommit: fc1de63a39f7fcbfe2234e3f372b5e1c6a286087
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62397750"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65707829"
 ---
 # <a name="recordset-odbc"></a>Kayıt Kümesi (ODBC)
 
@@ -35,10 +35,7 @@ A [CRecordset](../../mfc/reference/crecordset-class.md) nesnesi, bir veri kayna�
 Bir tabloyu temel alan bir kayıt kümesi "tüm müşteriler,", bir müşteri tablosu erişen örneğidir. Bir sorgu, "tüm faturalara Joe Smith için" örneğidir Bir saklı yordama (bazen önceden tanımlanmış sorgu olarak adlandırılır) bağlı bir kayıt kümesi "tüm ödenmemiş hesapları" örneğidir arka uç veritabanında bir saklı yordam çağırır. Bir kayıt kümesi iki veya daha fazla aynı veri kaynağından alınan tablolar ancak değil farklı veri kaynaklarından alınan tablolar katılabilirsiniz.
 
 > [!NOTE]
->  Kayıt kümesi sınıfları sihirbazlarıyla türetme hakkında daha fazla bilgi için bkz [MFC ODBC Tüketicisi Ekleme](../../mfc/reference/adding-an-mfc-odbc-consumer.md) ve [veritabanı desteği, MFC Uygulama Sihirbazı](../../mfc/reference/database-support-mfc-application-wizard.md).
-
-> [!NOTE]
->  Veritabanı görünümlerini bazı ODBC sürücüleri destekler. Bu bağlamdaki bir görünüm başlangıçta SQL ile oluşturulan bir sorgudur `CREATE VIEW` deyimi. Sihirbazlar görünümleri şu anda desteklemez, ancak bu desteğin kodunu kendiniz yazmak mümkündür.
+>  Veritabanı görünümlerini bazı ODBC sürücüleri destekler. Bu bağlamdaki bir görünüm başlangıçta SQL ile oluşturulan bir sorgudur `CREATE VIEW` deyimi.
 
 ##  <a name="_core_recordset_capabilities"></a> Kayıt kümesi özellikleri
 

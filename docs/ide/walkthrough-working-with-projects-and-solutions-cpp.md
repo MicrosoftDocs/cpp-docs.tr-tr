@@ -1,18 +1,18 @@
 ---
 title: 'İzlenecek yol: Projeler ve çözümler (C++) ile çalışma'
-ms.date: 04/25/2019
+ms.date: 05/14/2019
 helpviewer_keywords:
 - solutions [C++]
 - projects [C++], about projects
 - projects [C++]
 - solutions [C++], about solutions
 ms.assetid: 93a3f290-e294-46e3-876e-e3084d9ae833
-ms.openlocfilehash: 978899e6e73d78623e37222e3248dc299ec29c69
-ms.sourcegitcommit: 18d3b1e9cdb4fc3a76f7a650c31994bdbd2bde64
+ms.openlocfilehash: 6dfee695092a69252069dbfc73b6260bd65245e2
+ms.sourcegitcommit: fc1de63a39f7fcbfe2234e3f372b5e1c6a286087
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/29/2019
-ms.locfileid: "64877298"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65708130"
 ---
 # <a name="walkthrough-working-with-projects-and-solutions-c"></a>İzlenecek yol: Projeler ve çözümler (C++) ile çalışma
 
@@ -22,7 +22,7 @@ Visual Studio'da iş, projeler ve çözümler halinde düzenlenmiştir. Bir çö
 
 ## <a name="before-you-start"></a>Başlamadan önce
 
-Bu izlenecek yolu tamamlamak için Visual Studio 2017 veya üstü gerekir. Bir kopyası gerekirse, kısa bir kılavuz aşağıda verilmiştir: [Visual Studio'da C++ desteği yükleme](../build/vscpp-step-0-installation.md). Bunu henüz yapmadıysanız sonraki adımları aracılığıyla Visual C++'ın doğru şekilde yüklendiğinden emin olmak için "Hello, World" öğretici ve yüklemeden sonra tüm works izleyin.
+Bu izlenecek yolu tamamlamak için Visual Studio 2017 veya üstü gerekir. Bir kopyası gerekirse, kısa bir kılavuz aşağıda verilmiştir: [Visual Studio'da C++ desteği yükleme](../build/vscpp-step-0-installation.md). Bunu henüz yapmadıysanız Bu öğreticide emin olmak için "Hello, World" yüklemeden sonra sonraki adımları izleyin C++ bileşenleri düzgün şekilde yüklenir ve tüm çalışır.
 
 C++ dilinin temellerini anlamanız ve bildiğiniz ne derleyici, bağlayıcı ve hata ayıklayıcı için kullanılan yardımcı olur. Öğreticide ayrıca Windows ve menüler, iletişim kutuları kullanma ile ilgili bilgi sahibi olduğunuz varsayılır,
 

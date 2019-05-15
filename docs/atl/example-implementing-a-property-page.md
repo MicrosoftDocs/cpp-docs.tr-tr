@@ -4,12 +4,12 @@ ms.date: 05/09/2019
 helpviewer_keywords:
 - property pages, implementing
 ms.assetid: c30b67fe-ce08-4249-ae29-f3060fa8d61e
-ms.openlocfilehash: 1da7a2691465162e645ae9790eecdb08d9a2ce98
-ms.sourcegitcommit: 00e26915924869cd7eb3c971a7d0604388abd316
+ms.openlocfilehash: 1f2c0387cd0a78ad0179e251654d2fa82b1eef13
+ms.sourcegitcommit: fc1de63a39f7fcbfe2234e3f372b5e1c6a286087
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "65524569"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65707095"
 ---
 # <a name="example-implementing-a-property-page"></a>Örnek: Özellik sayfası uygulama
 
@@ -19,7 +19,7 @@ ATL Özellik Sayfası Sihirbazı, Visual Studio 2019 bulunan ve daha yeni değil
 
 ::: moniker-end
 
-::: moniker range="vs-2017"
+::: moniker range="<=vs-2017"
 
 Bu örnekte derleme özelliklerini görüntüler (ve değiştirmenize izin verir) bir özellik sayfası gösterilmektedir [belge sınıfları](../mfc/document-classes.md) arabirimi.
 

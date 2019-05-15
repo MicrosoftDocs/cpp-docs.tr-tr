@@ -1,23 +1,22 @@
 ---
 title: Kaynak Dosyalar (C++)
-ms.date: 11/04/2016
+ms.date: 05/14/2019
 helpviewer_keywords:
 - resource files
 - resources [C++]
-- file types [C++], resource files
 ms.assetid: 338a4a0f-0c62-4ef1-a34f-5d86262d93a4
-ms.openlocfilehash: f1e32ba4776f3e975dc0fbc72334a85d6c793c93
-ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
+ms.openlocfilehash: 20e57aa51cff8c4e3392c313645468387c2a4244
+ms.sourcegitcommit: fc1de63a39f7fcbfe2234e3f372b5e1c6a286087
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2019
-ms.locfileid: "65446350"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65707398"
 ---
 # <a name="resource-files-c"></a>Kaynak Dosyalar (C++)
 
-Bilgi sağlamak için kullanıcı arabirimi öğeleri kaynaklardır. Bit eşlemler, simgeler, araç çubukları ve İmleçler tüm kaynaklardır. Bazı kaynaklar, veri iletişim kutusuna girerek veya bir menüden gibi bir eylem gerçekleştirmek için kullanılabilirler.
+Bilgi sağlamak için kullanıcı arabirimi öğeleri kaynaklardır. Bit eşlemler, simgeler, araç çubukları ve İmleçler tüm kaynaklardır. Bazı kaynaklar, veri iletişim kutusuna girerek veya bir menüden gibi bir eylem gerçekleştirebilirsiniz.
 
-Bkz: [kaynaklarıyla çalışmaya](../../windows/working-with-resource-files.md) daha fazla bilgi için.
+ Daha fazla bilgi için [kaynaklarıyla çalışmaya](../../windows/working-with-resource-files.md).
 
 |Dosya adı|Dizin konumu|Çözüm Gezgini konumu|Açıklama|
 |---------------|------------------------|--------------------------------|-----------------|
@@ -32,4 +31,4 @@ Bkz: [kaynaklarıyla çalışmaya](../../windows/working-with-resource-files.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Oluşturulan türleri görsel için dosya C++ projeleri](file-types-created-for-visual-cpp-projects.md)
+[Oluşturulan türleri için Visual Studio dosya C++ projeleri](file-types-created-for-visual-cpp-projects.md)

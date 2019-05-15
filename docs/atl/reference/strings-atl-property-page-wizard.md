@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - ATL Property Page Wizard, strings
 ms.assetid: 00547db6-911f-49eb-92e1-2ba67079d4df
-ms.openlocfilehash: 29a7129e25f7db992fec7214e66996fbbd3248ff
-ms.sourcegitcommit: 00e26915924869cd7eb3c971a7d0604388abd316
+ms.openlocfilehash: 04178c435bbd0ca80e412efc39a1b736062d95e7
+ms.sourcegitcommit: fc1de63a39f7fcbfe2234e3f372b5e1c6a286087
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "65524477"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65706760"
 ---
 # <a name="strings-atl-property-page-wizard"></a>Dizeleri, ATL Özellik Sayfası Sihirbazı
 
@@ -21,7 +21,7 @@ ATL Özellik Sayfası Sihirbazı, Visual Studio 2019 bulunan ve daha yeni değil
 
 ::: moniker-end
 
-::: moniker range="vs-2017"
+::: moniker range="<=vs-2017"
 
 Özellik sayfası ile ilişkili metni sağlar.
 

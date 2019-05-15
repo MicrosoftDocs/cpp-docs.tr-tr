@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - ATL Property Page Wizard, options
 ms.assetid: a7107779-b2ea-4f99-b84b-7f3e0c504bc8
-ms.openlocfilehash: c883b3e79bd857bb457da0a1bd540a08ddddf017
-ms.sourcegitcommit: 00e26915924869cd7eb3c971a7d0604388abd316
+ms.openlocfilehash: 205f6d3debafe22373355af12ef88c83d6a01911
+ms.sourcegitcommit: fc1de63a39f7fcbfe2234e3f372b5e1c6a286087
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "65524550"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65707010"
 ---
 # <a name="options-atl-property-page-wizard"></a>ATL Özellik Sayfası Sihirbazı Seçenekleri
 
@@ -22,7 +22,7 @@ ATL Özellik Sayfası Sihirbazı, Visual Studio 2019 bulunan ve daha yeni değil
 
 ::: moniker-end
 
-::: moniker range="vs-2017"
+::: moniker range="<=vs-2017"
 
 Sihirbazın bu sayfasındaki özellik sayfası oluşturmakta olduğunuz iş parçacığı modelini ve toplamayı düzeyini tanımlamak için kullanın.
 

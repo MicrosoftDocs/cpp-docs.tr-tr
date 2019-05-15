@@ -1,6 +1,6 @@
 ---
 title: Bir ATL projesine nesne ve denetim ekleme
-ms.date: 11/04/2016
+ms.date: 05/09/2019
 f1_keywords:
 - vc.appwiz.ATL.controls
 helpviewer_keywords:
@@ -11,14 +11,17 @@ helpviewer_keywords:
 - objects [C++], adding to ATL projects
 - ATL Control Wizard
 ms.assetid: c0adcbd0-07fe-4c55-a8fd-8c2c65ecdaad
-ms.openlocfilehash: d16e9a9e7b92d2a98f8994227c5641994677fdda
-ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.openlocfilehash: deaac8f2d6aac02d0cd751e6abebb3b67051200f
+ms.sourcegitcommit: fc1de63a39f7fcbfe2234e3f372b5e1c6a286087
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65221212"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65706856"
 ---
 # <a name="adding-objects-and-controls-to-an-atl-project"></a>Bir ATL projesine nesne ve denetim ekleme
+
+> [!NOTE] 
+> ATL COM + 1.0 bileşeni Sihirbazı, ATL OLE DB Tüketicisi Sihirbazı ve ATL Active Server Page bileşeni Sihirbazı'nı Visual Studio 2019 ve sonraki sürümlerinde kullanılamaz.
 
 ATL kodu sihirbazlardan birini, ATL veya MFC tabanlı projelerinize bir nesne veya bir denetim eklemek için kullanabilirsiniz. Her bir COM nesnesi veya denetim için eklemenize, sihirbaz, .cpp ve .h dosyaları yanı sıra, kayıt defteri betik tabanlı desteği için bir .rgs dosyası oluşturur. Aşağıdaki ATL kod sihirbazları, Visual Studio'da kullanılabilir:
 

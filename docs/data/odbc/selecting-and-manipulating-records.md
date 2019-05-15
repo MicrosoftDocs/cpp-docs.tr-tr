@@ -1,21 +1,24 @@
 ---
 title: Kayıtları Seçme ve Düzenleme
-ms.date: 11/04/2016
+ms.date: 05/09/2019
 helpviewer_keywords:
 - records, selecting
 - record selection, MFC ODBC classes
 - ODBC recordsets, selecting records
 ms.assetid: 7f0b3a4a-9941-4475-a612-9ec8d15b7691
-ms.openlocfilehash: fa8b63dab24c921804c474df73f6b6da192a4cd8
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 745c0c35e42426242d92d720d5dcd3de631fb17b
+ms.sourcegitcommit: fc1de63a39f7fcbfe2234e3f372b5e1c6a286087
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62329952"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65707803"
 ---
 # <a name="selecting-and-manipulating-records"></a>Kayıtları Seçme ve Düzenleme
 
-Normalde seçtiğinizde, kayıtları bir SQL kullanarak bir veri kaynağından **seçin** deyimi, bir dizi kayıtlardan bir tablo veya bir sorgu bir sonuç kümesi alın. Veritabanı sınıfları ile seçin ve sonuç kümesi erişmek için bir kayıt kümesi nesnesi kullanın. Bu sınıftan türetilen bir uygulamaya özgü sınıfın bir nesnesi, [CRecordset](../../mfc/reference/crecordset-class.md). Kayıt kümesi sınıfı tanımladığınızda, ile ilişkilendirmek istediğiniz veri kaynağı tablosunu ve tablo sütunları belirtin. MFC Uygulama Sihirbazı'nı veya **sınıfı Ekle** (açıklandığı [MFC ODBC Tüketicisi Ekleme](../../mfc/reference/adding-an-mfc-odbc-consumer.md)) belirli bir veri kaynağına bağlantı ile bir sınıf oluşturur. Sihirbazlar [GetDefaultSQL](../../mfc/reference/crecordset-class.md#getdefaultsql) sınıfının üye işlevinde `CRecordset` tablo adını döndürmek için. Kayıt kümesi sınıfları oluşturmak için sihirbaz kullanma hakkında daha fazla bilgi için bkz. [veritabanı desteği, MFC Uygulama Sihirbazı](../../mfc/reference/database-support-mfc-application-wizard.md) ve [MFC ODBC Tüketicisi Ekleme](../../mfc/reference/adding-an-mfc-odbc-consumer.md).
+> [!NOTE] 
+> MFC ODBC Tüketici Sihirbazı'nı ve sonrasında Visual Studio 2019 içinde kullanılabilir değil. Bir tüketici yine de el ile oluşturabilirsiniz.
+
+Normalde seçtiğinizde, kayıtları bir SQL kullanarak bir veri kaynağından **seçin** deyimi, bir dizi kayıtlardan bir tablo veya bir sorgu bir sonuç kümesi alın. Veritabanı sınıfları ile seçin ve sonuç kümesi erişmek için bir kayıt kümesi nesnesi kullanın. Bu sınıftan türetilen bir uygulamaya özgü sınıfın bir nesnesi, [CRecordset](../../mfc/reference/crecordset-class.md). Kayıt kümesi sınıfı tanımladığınızda, ile ilişkilendirmek istediğiniz veri kaynağı tablosunu ve tablo sütunları belirtin. MFC Uygulama Sihirbazı'nı veya **sınıfı Ekle** (açıklandığı [MFC ODBC Tüketicisi Ekleme](../../mfc/reference/adding-an-mfc-odbc-consumer.md)) belirli bir veri kaynağına bağlantı ile bir sınıf oluşturur. Sihirbazlar [GetDefaultSQL](../../mfc/reference/crecordset-class.md#getdefaultsql) sınıfının üye işlevinde `CRecordset` tablo adını döndürmek için.
 
 Kullanarak bir [CRecordset](../../mfc/reference/crecordset-class.md) nesne çalışma zamanında, şunları yapabilirsiniz:
 

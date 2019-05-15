@@ -1,6 +1,6 @@
 ---
 title: 'Kayıt kümesi: (ODBC) veri sütunlarını dinamik olarak bağlama'
-ms.date: 11/19/2018
+ms.date: 05/09/2019
 helpviewer_keywords:
 - ODBC recordsets [C++], binding columns dynamically
 - data binding [C++], recordset columns
@@ -8,12 +8,12 @@ helpviewer_keywords:
 - data binding [C++], columns in recordsets
 - columns [C++], binding to recordsets
 ms.assetid: bff67254-d953-4ae4-9716-91c348cb840b
-ms.openlocfilehash: c2f2a6a6696f46fb5b8f2777c6c911269c9e7a80
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: bde61348bbfb33eef42e36bd75830c23e5b2a5f5
+ms.sourcegitcommit: fc1de63a39f7fcbfe2234e3f372b5e1c6a286087
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62397901"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65707941"
 ---
 # <a name="recordset-dynamically-binding-data-columns-odbc"></a>Kayıt kümesi: (ODBC) veri sütunlarını dinamik olarak bağlama
 
@@ -29,6 +29,9 @@ Tasarım zamanında belirttiğiniz bağlama tablo sütunları kayıt kümelerini
 >  Bu konu, türetilmiş nesneler için geçerlidir. `CRecordset` toplu satır getirme uygulanmadı. Toplu satır getirme kullanıyorsanız genel olarak açıklanan olan tekniklerle önerilmez. Toplu satır getirme hakkında daha fazla bilgi için bkz. [kayıt kümesi: Kayıtları toplu yakalama (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md).
 
 ##  <a name="_core_when_you_might_bind_columns_dynamically"></a> Sütunları dinamik olarak bağladığınızda
+
+> [!NOTE] 
+> MFC ODBC Tüketici Sihirbazı'nı ve sonrasında Visual Studio 2019 içinde kullanılabilir değil. Bir tüketici yine de el ile oluşturabilirsiniz.
 
 Tasarım zamanında, MFC Uygulama Sihirbazı'nı veya [MFC ODBC Tüketicisi Sihirbazı](../../mfc/reference/adding-an-mfc-odbc-consumer.md) (gelen **sınıfı Ekle**) göre bilinen tablolar ve sütunlar, veri kaynağında kayıt kümesi sınıfları oluşturur. Veritabanları, bunları ve daha sonra uygulamanızın çalışma zamanında bu tablolar ve sütunlar kullandığında tasarlarken arasında değiştirebilirsiniz. Siz veya başka bir kullanıcı veya bir tablo bırakma eklediğinizde veya uygulamanızın kayıt dayanan bir tablodaki sütunları kaldırın. Bu büyük olasılıkla tüm veri erişim uygulamaları için önemli değildir, ancak sizin, nasıl, veritabanı şeması, yeniden derlemeden ve yeniden tasarlanmasını dışındaki değişikliklerle başa çıkabilir? Bu soruyu cevaplamak için bu konunun amacı olan.
 

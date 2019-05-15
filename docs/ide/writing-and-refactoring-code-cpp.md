@@ -1,18 +1,18 @@
 ---
 title: Yazma ve yeniden düzenleme kod (C++)
 description: Kullanım C++ Kod Düzenleyicisi'nde Visual Studio biçimlendirme, gitmeniz, anlamak ve kodunuzu yeniden düzenleyin.
-ms.date: 04/30/2018
+ms.date: 05/14/2019
 ms.assetid: 56ffb9e9-514f-41f4-a3cf-fd9ce2daf3b6
-ms.openlocfilehash: ee506229584690cd4f7730011e0b5b50af0e27e0
-ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.openlocfilehash: 04f738cd6fdd456c432c334df42f37339e7fa49e
+ms.sourcegitcommit: fc1de63a39f7fcbfe2234e3f372b5e1c6a286087
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65222310"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65708289"
 ---
 # <a name="writing-and-refactoring-code-c"></a>Yazma ve yeniden düzenleme kod (C++)
 
-Visual C++ Kod Düzenleyicisi ve IDE birçok kodlama yardımları sağlar. Bazı C++ için özeldir ve bazı temel olarak tüm Visual Studio dilleri için aynıdır. Paylaşılan özellikler hakkında daha fazla bilgi için bkz. [kodu ve metin düzenleyicisi kod yazma](/visualstudio/ide/writing-code-in-the-code-and-text-editor). Etkinleştirme ve C++ diline özgü özelliklere yapılandırma seçenekleri altında bulunur **Araçları &#124; seçenekleri &#124; metin düzenleyici &#124; C/C++**. Hangi seçeneği ayarlamak istediğiniz seçtikten sonra daha fazla yardım tuşuna basarak alabilirsiniz **F1** iletişim kutusu, odakta olduğunda. Biçimlendirme seçenekleri genel kodunu yazın `Editor C++` içine **hızlı başlatma**.
+C++ Kod Düzenleyicisi ve Visual Studio IDE birçok kodlama yardımları sağlayın. Bazı C++ için özeldir ve bazı temel olarak tüm Visual Studio dilleri için aynıdır. Paylaşılan özellikler hakkında daha fazla bilgi için bkz. [kodu ve metin düzenleyicisi kod yazma](/visualstudio/ide/writing-code-in-the-code-and-text-editor). Etkinleştirme ve C++ diline özgü özelliklere yapılandırma seçenekleri altında bulunur **Araçları &#124; seçenekleri &#124; metin düzenleyici &#124; C/C++**. Hangi seçeneği ayarlamak istediğiniz seçtikten sonra daha fazla yardım tuşuna basarak alabilirsiniz **F1** iletişim kutusu, odakta olduğunda. Biçimlendirme seçenekleri genel kodunu yazın `Editor C++` içine **hızlı başlatma**.
 
 Visual Studio, gelecek bir sürümünde bulunmayabilir veya olabilir, Deneysel özellikler bulunur [metin düzenleyicisi C++ Deneysel](/visualstudio/ide/reference/options-text-editor-c-cpp-experimental) iletişim. Visual Studio 2017'de etkinleştirebilirsiniz **Tahmine dayalı IntelliSense** bu iletişim kutusunda.
 

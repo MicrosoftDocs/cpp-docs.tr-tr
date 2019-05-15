@@ -1,18 +1,18 @@
 ---
 title: 'Kayıt kümesi: (ODBC) bir kayıt kümesini parametreleştirme'
-ms.date: 11/04/2016
+ms.date: 05/09/2019
 helpviewer_keywords:
 - parameterizing recordsets
 - ODBC recordsets, parameterizing
 - recordsets, parameterizing
 - passing parameters, to queries at runtime
 ms.assetid: 7d1dfeb6-5ee0-45e2-aacc-63bc52a465cd
-ms.openlocfilehash: df67256c54cae3e2adb054d653d3e58bb91dd631
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 499741693009fb27df58f0ed3cde046d5e6b8c2d
+ms.sourcegitcommit: fc1de63a39f7fcbfe2234e3f372b5e1c6a286087
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62397763"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65707799"
 ---
 # <a name="recordset-parameterizing-a-recordset-odbc"></a>Kayıt kümesi: (ODBC) bir kayıt kümesini parametreleştirme
 
@@ -92,6 +92,9 @@ Filtreleri hakkında daha fazla bilgi için bkz. [kayıt kümesi: Kayıtları fi
 Kayıt kümesi sınıfı oluşturmadan önce gereksinim duyduğunuz parametreleri, veri türlerini nelerdir ve kayıt bunları nasıl kullandığını belirleyin.
 
 #### <a name="to-parameterize-a-recordset-class"></a>Kayıt kümesi sınıfı parametre haline getirmek için
+
+> [!NOTE] 
+> MFC ODBC Tüketici Sihirbazı'nı ve sonrasında Visual Studio 2019 içinde kullanılabilir değil. Bu işlevselliği yine de el ile oluşturabilirsiniz.
 
 1. Çalıştırma [MFC ODBC Tüketicisi Sihirbazı](../../mfc/reference/adding-an-mfc-odbc-consumer.md) gelen **sınıfı Ekle** sınıfı oluşturmak için.
 

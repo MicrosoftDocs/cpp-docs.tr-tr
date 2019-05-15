@@ -4,12 +4,12 @@ ms.date: 05/09/2019
 helpviewer_keywords:
 - ASP components, creating in ATL
 ms.assetid: 5a5cb904-dbbf-44ea-ad3d-2ddd14c1d3c5
-ms.openlocfilehash: d2f47176fb25b050e4b1f72053e4cbaaf89f569e
-ms.sourcegitcommit: 00e26915924869cd7eb3c971a7d0604388abd316
+ms.openlocfilehash: a78beeab663ef1b467cdec32ca51132e8134a9b2
+ms.sourcegitcommit: fc1de63a39f7fcbfe2234e3f372b5e1c6a286087
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "65524600"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65707048"
 ---
 # <a name="atl-active-server-page-component-wizard"></a>ATL Active Server Page bileşeni Sihirbazı
 
@@ -19,7 +19,7 @@ Bu sihirbaz, Visual Studio 2019 bulunan ve daha yeni değil.
 
 ::: moniker-end
 
-::: moniker range="vs-2017"
+::: moniker range="<=vs-2017"
 
 Bu sihirbaz, Active Server Pages (ASP) bileşeni projeye ekler. Microsoft Internet Information Services (IIS) Web sayfası Gelişmiş geliştirme mimarisinin bir parçası olarak ASP bileşenleri kullanır.
 

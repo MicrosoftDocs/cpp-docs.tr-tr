@@ -1,20 +1,24 @@
 ---
 title: Bir ATL Active Server Page bileşeni ekleme
-ms.date: 11/04/2016
-helpviewer_keywords:
-- ASP components, adding
-- ASP components
-- ATL, ASP components
-- ATL ASP components
+ms.date: 05/09/2019
 ms.assetid: 7be2204c-6e58-4099-8892-001b848c8987
-ms.openlocfilehash: 2f7ad08cb514e33224c877bcbf1c5e8128e26185
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b6c1d23efdff6885cc8ab900aaf552db39631e6e
+ms.sourcegitcommit: fc1de63a39f7fcbfe2234e3f372b5e1c6a286087
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62261318"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65706925"
 ---
 # <a name="adding-an-atl-active-server-page-component"></a>Bir ATL Active Server Page bileşeni ekleme
+
+
+::: moniker range="vs-2019"
+
+ATL Active Server Pages bileşeni Sihirbazı, Visual Studio 2019 ve sonraki sürümlerinde kullanılabilir değil.
+
+::: moniker-end
+
+::: moniker range="<=vs-2017"
 
 Etkin Şablon kitaplığı (ATL) nesne projenize eklemek için projenize ATL COM uygulama veya ATL desteği içeren bir MFC uygulaması olarak oluşturulmuş gerekir. Kullanabilirsiniz [ATL projesi Sihirbazı](../../atl/reference/atl-project-wizard.md) ATL uygulamasını oluşturmak için seçebileceğiniz **MFC ATL desteği Ekle** gelen [sınıfı iletişim kutusunu](../../ide/add-class-dialog-box.md) veya iletişim kutusu için [MFC uygulamanıza bir ATL nesnesi eklemek](../../mfc/reference/adding-atl-support-to-your-mfc-project.md) bir MFC uygulaması için ATL desteği uygulamak için.
 
@@ -33,6 +37,8 @@ Active Server Pages bileşenleri aşağıdaki gelişmiş Web geliştirme özelli
 1. Kısayol menüsünden tıklayın **Ekle**ve ardından **sınıfı Ekle**.
 
 1. İçinde [sınıfı Ekle](../../ide/add-class-dialog-box.md) iletişim kutusundaki **şablonları** bölmesinde tıklayın **ATL Active Server Page bileşeni**ve ardından **açık** görüntülemek için [ATL Active Server Page bileşeni Sihirbazı](../../atl/reference/atl-active-server-page-component-wizard.md).
+
+::: moniker-end
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

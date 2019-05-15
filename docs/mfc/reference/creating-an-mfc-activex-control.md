@@ -7,12 +7,12 @@ helpviewer_keywords:
 - MFC ActiveX controls [MFC], creating
 - ActiveX controls [MFC], creating
 ms.assetid: 8bd5a93c-d04d-414e-bb28-163fdc1c0dd5
-ms.openlocfilehash: 27b82fb7a688c8cc7a3df734a7e60a17f7ffa184
-ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
+ms.openlocfilehash: c67f925773854258111b3a2aa1967f51de4df127
+ms.sourcegitcommit: fc1de63a39f7fcbfe2234e3f372b5e1c6a286087
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2019
-ms.locfileid: "65446756"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65708247"
 ---
 # <a name="creating-an-mfc-activex-control"></a>MFC ActiveX Denetimi Oluşturma
 
@@ -36,7 +36,7 @@ MFC ActiveX denetimi oluşturmak için en kolay yolu kullanmaktır [MFC ActiveX 
 
 1. Tıklayın **son** sihirbazı kapatın ve geliştirme ortamında yeni projenizi açın.
 
-Projenizi oluşturduktan sonra oluşturulan dosyalar görüntüleyebileceğiniz **Çözüm Gezgini**. Projeniz için sihirbaz dosyaları hakkında daha fazla bilgi için proje tarafından oluşturulan ReadMe.txt dosyasına bakın. Dosya türleri hakkında daha fazla bilgi için bkz. [görsel için oluşturulan dosya türleri C++ projeleri](../../build/reference/file-types-created-for-visual-cpp-projects.md).
+Projenizi oluşturduktan sonra oluşturulan dosyalar görüntüleyebileceğiniz **Çözüm Gezgini**. Projeniz için sihirbaz dosyaları hakkında daha fazla bilgi için proje tarafından oluşturulan ReadMe.txt dosyasına bakın. Dosya türleri hakkında daha fazla bilgi için bkz. [Visual Studio için oluşturulan dosya türleri C++ projeleri](../../build/reference/file-types-created-for-visual-cpp-projects.md).
 
 Projenizi oluşturduktan sonra kod sihirbazları eklemek için kullanabileceğiniz [işlevleri](../../ide/add-member-function-wizard.md), [değişkenleri](../../ide/add-member-variable-wizard.md), [olayları](../../ide/add-event-wizard.md), [özellikleri](../../ide/names-add-property-wizard.md), ve [yöntemleri](../../ide/add-method-wizard.md). ActiveX denetimi özelleştirme hakkında daha fazla bilgi için bkz. [MFC ActiveX denetimleri](../../mfc/mfc-activex-controls.md).
 

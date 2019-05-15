@@ -2,12 +2,12 @@
 title: Visual C++'da Bulut ve Web Programlama
 ms.date: 11/04/2016
 ms.assetid: b63611f1-9723-44d0-ba7f-c3ebef341313
-ms.openlocfilehash: 33431a8f8660af683ed2e39e10811c22fe2f4fcc
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 3d71e36b6209c693940f2ebe6b5e9c73bc0c9d9d
+ms.sourcegitcommit: fc1de63a39f7fcbfe2234e3f372b5e1c6a286087
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62385277"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65708039"
 ---
 # <a name="cloud-and-web-programming-in-visual-c"></a>Visual C++'da Bulut ve Web Programlama
 
@@ -58,5 +58,5 @@ C++'da, web ve buluta bağlamak için birkaç seçeneğiniz vardır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Visual C++](../overview/visual-cpp-in-visual-studio.md) <br/>
+[Visual Studio’da C++](../overview/visual-cpp-in-visual-studio.md) <br/>
 [Ağlara ve web Hizmetleri](/windows/uwp/networking/)

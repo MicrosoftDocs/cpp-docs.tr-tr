@@ -4,12 +4,12 @@ ms.date: 05/08/2019
 helpviewer_keywords:
 - ATL projects, adding components
 ms.assetid: 11670681-8671-4122-96a4-2e52f8dadce0
-ms.openlocfilehash: e8ab9238f921b3c4e5c0eb396f0b26e46ab2a244
-ms.sourcegitcommit: 00e26915924869cd7eb3c971a7d0604388abd316
+ms.openlocfilehash: 24b4698ebc8dd4f61dfd88ad14e64d4f70b2ef35
+ms.sourcegitcommit: fc1de63a39f7fcbfe2234e3f372b5e1c6a286087
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "65524681"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65707029"
 ---
 # <a name="atl-com-10-component-wizard"></a>ATL COM + 1.0 bileşeni Sihirbazı
 
@@ -19,7 +19,7 @@ Bu sihirbaz, Visual Studio 2019 bulunan ve daha yeni değil.
 
 ::: moniker-end
 
-::: moniker range="vs-2017"
+::: moniker range="<=vs-2017"
 
 Nesne işlemleri dahil olmak üzere, COM + 1.0 hizmetlerini destekleyen projenize eklemek için bu sihirbazı kullanın.
 

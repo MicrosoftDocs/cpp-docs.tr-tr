@@ -5,12 +5,12 @@ helpviewer_keywords:
 - OLE DB providers, creating
 - OLE DB provider templates, creating providers
 ms.assetid: ade8ccdd-9ea4-4e46-a964-18460c2a2401
-ms.openlocfilehash: c0f31818002ce4611926d942b3bc556e31c1ae6f
-ms.sourcegitcommit: 00e26915924869cd7eb3c971a7d0604388abd316
+ms.openlocfilehash: 466530cb8c2ebca7f1c87370389309d3a0486e26
+ms.sourcegitcommit: fc1de63a39f7fcbfe2234e3f372b5e1c6a286087
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "65524719"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65707618"
 ---
 # <a name="creating-a-simple-read-only-provider"></a>Basit bir Salt Okunur Sağlayıcı Oluşturma
 
@@ -20,7 +20,7 @@ ATL OLE DB sağlayıcısı Sihirbazı'nı ve sonrasında Visual Studio 2019 içi
 
 ::: moniker-end
 
-::: moniker range="vs-2017"
+::: moniker range="<=vs-2017"
 
 Ne zaman oluşturduğunuz kullanarak bir OLE DB sağlayıcısından **ATL projesi Sihirbazı** ve **ATL OLE DB sağlayıcısı Sihirbazı**, desteklemek istediğiniz diğer işlevler ekleyebilirsiniz. Ne tür veriler, tüketici ve hangi koşullar altında ileti inceleyerek sağlayıcınız tasarlamaya başlayabilir. Komutlar, işlemleri ve diğer isteğe bağlı nesneler destek gerekip gerekmediğini belirlemek özellikle önemlidir. Önden iyi bir tasarım, uygulama ve test hızlandırır.
 

@@ -1,18 +1,18 @@
 ---
 title: SQL
-ms.date: 11/04/2016
+ms.date: 05/09/2019
 helpviewer_keywords:
 - database classes [C++], SQL statements
 - SQL [C++]
 - SQL [C++], ODBC
 - ODBC [C++], SQL implementation
 ms.assetid: e3923bc4-b317-4e0b-afd8-3cd403eb0faf
-ms.openlocfilehash: 8f93d97530068695359273b523e7d2ae46de01cb
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 68c01623ef97e89623dff3f46a952c75ea31a774
+ms.sourcegitcommit: fc1de63a39f7fcbfe2234e3f372b5e1c6a286087
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62329900"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65707823"
 ---
 # <a name="sql"></a>SQL
 
@@ -38,6 +38,9 @@ Bu konu şunları açıklar:
 SQL komutları ekleme kodu yerine bir çağrı düzeyi arabirimi SQL kullanan ODBC ile veritabanı sınıflarını uygulanır. ODBC ile iletişim kurmak için SQL kullanan bir [veri kaynağı](../../data/odbc/data-source-odbc.md) aracılığıyla ODBC sürücüleri. Bu sürücüleri SQL yorumlar ve, gerekirse, bir Microsoft Access gibi belirli veritabanı biçimi ile kullanılmak üzere çevir. ODBC SQL nasıl kullandığı hakkında daha fazla bilgi için bkz. [ODBC](../../data/odbc/odbc-basics.md) ve ODBC SDK'sı *Programcının Başvurusu* MSDN Kitaplığı CD'sindeki.
 
 ##  <a name="_core_the_database_classes"></a> Veritabanı sınıfları
+
+> [!NOTE] 
+> MFC ODBC Tüketici Sihirbazı'nı ve sonrasında Visual Studio 2019 içinde kullanılabilir değil. Bir tüketici yine de el ile oluşturabilirsiniz.
 
 Veritabanı sınıfları işlemek ve mevcut veri güncelleştirme izin vermek için tasarlanmış [veri kaynağı](../../data/odbc/data-source-odbc.md). [MFC Uygulama Sihirbazı](../../mfc/reference/database-support-mfc-application-wizard.md), [MFC ODBC Tüketicisi Sihirbazı](../../mfc/reference/adding-an-mfc-odbc-consumer.md) (aracılığıyla erişilen **sınıfı Ekle**), ve veritabanı sınıfları SQL deyimlerinin çoğu sizin için oluşturur.
 

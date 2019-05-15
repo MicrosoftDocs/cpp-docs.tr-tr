@@ -5,12 +5,12 @@ helpviewer_keywords:
 - OLE DB consumer templates, field status
 - field status in OLE DB templates
 ms.assetid: 66e4e223-c60c-471e-860d-d23abcdfe371
-ms.openlocfilehash: c92a450a00e6218d2ccc679d56aeff0f379762a3
-ms.sourcegitcommit: 00e26915924869cd7eb3c971a7d0604388abd316
+ms.openlocfilehash: a6623cb02f14650d92e4adabed749b0b37725d45
+ms.sourcegitcommit: fc1de63a39f7fcbfe2234e3f372b5e1c6a286087
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "65525065"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65707555"
 ---
 # <a name="field-status-data-members-in-wizard-generated-accessors"></a>Sihirbazın Ürettiği Erişimcilerde Alan Durumu Veri Üyeleri
 
@@ -20,7 +20,7 @@ ATL OLE DB Tüketicisi Sihirbazı'nı ve sonrasında Visual Studio 2019 içinde 
 
 ::: moniker-end
 
-::: moniker range="vs-2017"
+::: moniker range="<=vs-2017"
 
 Kullanırken **ATL OLE DB Tüketicisi Sihirbazı** bir tüketici oluşturmak için sütun eşlemesinde belirttiğiniz her bir alan için kullanıcı kayıt sınıftaki veri üyesi sihirbaz oluşturur. Her veri üyesi türünde `DWORD` ve kendi ilgili alana karşılık gelen bir durum değeri içerir.
 

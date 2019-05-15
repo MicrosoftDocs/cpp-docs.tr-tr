@@ -1,6 +1,6 @@
 ---
 title: 'İzlenecek yol: Programınızı dağıtma (C++)'
-ms.date: 04/25/2019
+ms.date: 05/14/2019
 helpviewer_keywords:
 - deploying applications [C++], walkthroughs
 - setup projects [C++]
@@ -9,12 +9,12 @@ helpviewer_keywords:
 - projects [C++], deploying programs
 - application deployment [C++], walkthroughs
 ms.assetid: 79e6cc4e-dced-419d-aaf7-d62d1367603f
-ms.openlocfilehash: 307fa5e867b97fc05cc5419b8d51e4673284e097
-ms.sourcegitcommit: 283cb64fd7958a6b7fbf0cd8534de99ac8d408eb
+ms.openlocfilehash: 4232edd10b71c70097002511ef4ee663e67d6598
+ms.sourcegitcommit: fc1de63a39f7fcbfe2234e3f372b5e1c6a286087
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "64857531"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65708132"
 ---
 # <a name="walkthrough-deploying-your-program-c"></a>İzlenecek yol: Programınızı dağıtma (C++)
 

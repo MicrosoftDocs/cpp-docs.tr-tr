@@ -6,12 +6,12 @@ helpviewer_keywords:
 - IPropertyPage class
 - property pages, implementing
 ms.assetid: 62f29440-33a7-40eb-a1ef-3634c95f640c
-ms.openlocfilehash: c4ba69d8421a76a94e4a676cb62ee53936d77da3
-ms.sourcegitcommit: 00e26915924869cd7eb3c971a7d0604388abd316
+ms.openlocfilehash: 49058fe13457c2d0050452cbc0015575371e4043
+ms.sourcegitcommit: fc1de63a39f7fcbfe2234e3f372b5e1c6a286087
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "65524580"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65706898"
 ---
 # <a name="implementing-property-pages"></a>Özellik sayfaları uygulama
 
@@ -21,7 +21,7 @@ ATL Özellik Sayfası Sihirbazı, Visual Studio 2019 bulunan ve daha yeni değil
 
 ::: moniker-end
 
-::: moniker range="vs-2017"
+::: moniker range="<=vs-2017"
 
 Özellik sayfaları olan COM nesneleri uygulayan `IPropertyPage` veya `IPropertyPage2` arabirimi. ATL özellik sayfaları aracılığıyla uygulamak için destek sağlar [ATL Özellik Sayfası Sihirbazı](../atl/reference/atl-property-page-wizard.md) içinde [Sınıf Ekle iletişim kutusu](../ide/add-class-dialog-box.md).
 

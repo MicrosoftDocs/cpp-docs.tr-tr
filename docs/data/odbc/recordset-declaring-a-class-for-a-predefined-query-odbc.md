@@ -1,6 +1,6 @@
 ---
 title: 'Kayıt kümesi: Bir sınıf bildirme (ODBC) önceden tanımlanmış sorgu için'
-ms.date: 11/04/2016
+ms.date: 05/09/2019
 helpviewer_keywords:
 - ODBC recordsets, queries
 - predefined queries and recordsets
@@ -8,14 +8,17 @@ helpviewer_keywords:
 - recordsets, predefined queries
 - recordsets, stored procedures
 ms.assetid: d27c4df9-dad2-4484-ba72-92ab0c8ff928
-ms.openlocfilehash: d4ae9f21c4bd53a8050d6f8c3765bb9823d077ba
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 9ef95f4a2ebbc1bdf52e5631389f65391ce7cf8f
+ms.sourcegitcommit: fc1de63a39f7fcbfe2234e3f372b5e1c6a286087
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62395605"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65707961"
 ---
 # <a name="recordset-declaring-a-class-for-a-predefined-query-odbc"></a>Kayıt kümesi: Bir sınıf bildirme (ODBC) önceden tanımlanmış sorgu için
+
+> [!NOTE] 
+> MFC ODBC Tüketici Sihirbazı'nı ve sonrasında Visual Studio 2019 içinde kullanılabilir değil. Bir tüketici yine de el ile oluşturabilirsiniz.
 
 Bu konu MFC ODBC sınıflarına uygulanır.
 

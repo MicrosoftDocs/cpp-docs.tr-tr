@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - MFC Application Wizard, generated classes
 ms.assetid: 5f33209c-7f01-4f72-8c1c-6f02f507ba9f
-ms.openlocfilehash: d19952e00413cc1c05d675bbe3800e13b5eea1ab
-ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
+ms.openlocfilehash: 14efffeca11a87f4c3bcaa3241af5cf6784d01e9
+ms.sourcegitcommit: fc1de63a39f7fcbfe2234e3f372b5e1c6a286087
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2019
-ms.locfileid: "65448549"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65708346"
 ---
 # <a name="generated-classes-mfc-application-wizard"></a>Oluşturulan Sınıflar, MFC Uygulama Sihirbazı
 
@@ -42,5 +42,5 @@ Bu konu, temel sınıflar ve, projenin oluşturduğu dosya adlarını listeler. 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Gelişmiş Özellikler, MFC Uygulama Sihirbazı](../../mfc/reference/advanced-features-mfc-application-wizard.md)<br/>
-[Oluşturulan türleri görsel için dosya C++ projeleri](../../build/reference/file-types-created-for-visual-cpp-projects.md)
+[Oluşturulan türleri için Visual Studio dosya C++ projeleri](../../build/reference/file-types-created-for-visual-cpp-projects.md)
 

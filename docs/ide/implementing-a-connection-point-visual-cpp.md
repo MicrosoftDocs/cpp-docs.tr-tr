@@ -1,18 +1,16 @@
 ---
 title: Uygulama bağlantı noktası
-ms.date: 11/12/2018
-f1_keywords:
-- vc.codewiz.impl.cp.overview
+ms.date: 05/14/2019
 helpviewer_keywords:
 - connection points [C++], implementing
 - implement connection point wizard [C++]
 ms.assetid: 5b37e4f9-73c9-4bef-b26d-365bc0662260
-ms.openlocfilehash: 7afa61246c5251936967e281f7237dc37e5be045
-ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
+ms.openlocfilehash: 8a75a5fbbabd20f4591e3a119c175d68cdfb1f90
+ms.sourcegitcommit: fc1de63a39f7fcbfe2234e3f372b5e1c6a286087
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "64344258"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65708077"
 ---
 # <a name="implement-a-connection-point"></a>Uygulama bağlantı noktası
 
@@ -61,7 +59,7 @@ Bağlanılabilirlik bir nesne (diğer bir deyişle, bir kaynak) bir bağlantı n
 
 ## <a name="implement-connection-point-wizard"></a>Bağlantı noktası Uygulama Sihirbazı
 
-Bu sihirbaz bir COM nesnesi için bir bağlantı noktası uygular. Bağlanılabilirlik bir nesne (diğer bir deyişle, bir kaynak) bir bağlantı noktası kendi arabirimleri veya herhangi bir giden arabirimi gösterebilirsiniz. Visual C++ hem de Windows giden arabirimlere sahip tür kitaplıkları sağlar. Giden her arabirim bir istemcide bir nesnenin (diğer bir deyişle, bir havuz) tarafından uygulanabilir.
+Bu sihirbaz bir COM nesnesi için bir bağlantı noktası uygular. Bağlanılabilirlik bir nesne (diğer bir deyişle, bir kaynak) bir bağlantı noktası kendi arabirimleri veya herhangi bir giden arabirimi gösterebilirsiniz. MSVC hem de Windows giden arabirimlere sahip tür kitaplıkları sağlar. Giden her arabirim bir istemcide bir nesnenin (diğer bir deyişle, bir havuz) tarafından uygulanabilir.
 
 Daha fazla bilgi için [ATL bağlantı noktaları](../atl/atl-connection-points.md).
 

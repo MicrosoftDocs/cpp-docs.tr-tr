@@ -4,12 +4,12 @@ ms.date: 05/09/2019
 helpviewer_keywords:
 - user record classes in OLE DB consumer
 ms.assetid: dba0538f-2afe-4354-8cbb-f202ea8ade5a
-ms.openlocfilehash: f172da3aefb3f2440ddb4bba41dc549b0bf4a926
-ms.sourcegitcommit: 00e26915924869cd7eb3c971a7d0604388abd316
+ms.openlocfilehash: 3442ff484876aec9b2cd3fa93e95c4d503649ee9
+ms.sourcegitcommit: fc1de63a39f7fcbfe2234e3f372b5e1c6a286087
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "65525136"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65707745"
 ---
 # <a name="consumer-wizard-generated-classes"></a>Tüketici Sihirbazı Tarafından Oluşturulan Sınıflar
 
@@ -20,7 +20,7 @@ ATL OLE DB Tüketicisi Sihirbazı'nı ve sonrasında Visual Studio 2019 içinde 
 
 ::: moniker-end
 
-::: moniker range="vs-2017"
+::: moniker range="<=vs-2017"
 
 Kullanırken **ATL OLE DB Tüketicisi Sihirbazı** tüketici oluşturmak için OLE DB Şablonları ya da OLE DB öznitelikleri kullanma seçeneğiniz vardır. Her iki durumda da sihirbaz bir komutu ve bir kullanıcı kaydı sınıfı oluşturur. Komut sınıfı Sihirbazı'nda belirtilen satır kümesi ve veri kaynağını açmak için kodu içerir. Sütun eşlemesi, seçtiğiniz veritabanı tablosu için kullanıcı kayıt sınıfı içerir. Ancak, oluşturulan kod her durumda farklıdır:
 

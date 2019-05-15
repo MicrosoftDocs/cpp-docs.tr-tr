@@ -7,19 +7,19 @@ helpviewer_keywords:
 - MFC Application Wizard
 - executable files, creating
 ms.assetid: 227ac090-921d-4b2f-be0a-66a5f4cab0d4
-ms.openlocfilehash: f69f0a19cdcd3526d8afac2e1492da806c2dffd3
-ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
+ms.openlocfilehash: e97c7a29dd56a69fad99e85c206ca2104fa71798
+ms.sourcegitcommit: fc1de63a39f7fcbfe2234e3f372b5e1c6a286087
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2019
-ms.locfileid: "65448482"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65708192"
 ---
 # <a name="mfc-application-wizard"></a>MFC Uygulama Sihirbazı
 
 MFC Uygulama Sihirbazı bir uygulama oluşturur, bir Windows yürütülebilir (.exe) uygulamasının temel özelliklerini derlendiğinde uygular. MFC başlangıç uygulaması C++ kaynak (.cpp) dosyaları, kaynak (.rc) dosyaları, üstbilgi (.h) dosyaları ve proje (.vcxproj) dosyasını içerir. Bu Başlatıcı dosyalarında oluşturulan kodu MFC'ye dayalı.
 
 > [!NOTE]
->  Seçtiğiniz seçeneklere bağlı olarak, sihirbaz projenize ek dosyaları oluşturur. Örneğin, **bağlama duyarlı Yardım** üzerinde [Gelişmiş Özellikler](../../mfc/reference/advanced-features-mfc-application-wizard.md) sayfasında, Sihirbazı, projenin Yardım dosyalarını derlemek için gerekli olan dosyaları oluşturur. Sihirbazın oluşturduğu dosyaları hakkında daha fazla bilgi için bkz. [görsel için oluşturulan dosya türleri C++ projeleri](../../build/reference/file-types-created-for-visual-cpp-projects.md)ve proje Readme.txt dosyasına bakın.
+>  Seçtiğiniz seçeneklere bağlı olarak, sihirbaz projenize ek dosyaları oluşturur. Örneğin, **bağlama duyarlı Yardım** üzerinde [Gelişmiş Özellikler](../../mfc/reference/advanced-features-mfc-application-wizard.md) sayfasında, Sihirbazı, projenin Yardım dosyalarını derlemek için gerekli olan dosyaları oluşturur. Sihirbazın oluşturduğu dosyaları hakkında daha fazla bilgi için bkz. [Visual Studio için oluşturulan dosya türleri C++ projeleri](../../build/reference/file-types-created-for-visual-cpp-projects.md)ve proje Readme.txt dosyasına bakın.
 
 ## <a name="overview"></a>Genel Bakış
 

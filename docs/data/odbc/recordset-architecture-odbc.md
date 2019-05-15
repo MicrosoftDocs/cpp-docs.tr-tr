@@ -13,12 +13,12 @@ helpviewer_keywords:
 - m_nParams data member
 - m_nFields data member, recordsets
 ms.assetid: 47555ddb-11be-4b9e-9b9a-f2931764d298
-ms.openlocfilehash: 5904a69f81dd1fbf22171a46040da5d4f5511588
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 0edde640e0eebaf21216fc9ef37a8e31e2c1a210
+ms.sourcegitcommit: fc1de63a39f7fcbfe2234e3f372b5e1c6a286087
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62395644"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65707972"
 ---
 # <a name="recordset-architecture-odbc"></a>Kayıt kümesi: Mimari (ODBC)
 
@@ -36,6 +36,9 @@ Bu konu, bir kayıt kümesi nesnesi mimarisi oluşturan veri üyelerini açıkla
 >  Bu konu, türetilmiş nesneler için geçerlidir. `CRecordset` toplu satır getirme uygulanmadı. Toplu satır getirme uygulanmışsa, benzer bir mimaridir. Farkları anlamak için bkz: [kayıt kümesi: Kayıtları toplu yakalama (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md).
 
 ##  <a name="_core_a_sample_class"></a> Örnek sınıfı
+
+> [!NOTE] 
+> MFC ODBC Tüketici Sihirbazı'nı ve sonrasında Visual Studio 2019 içinde kullanılabilir değil. Bir tüketici yine de el ile oluşturabilirsiniz.
 
 Kullandığınızda, [MFC ODBC Tüketicisi Sihirbazı](../../mfc/reference/adding-an-mfc-odbc-consumer.md) gelen **sınıfı Ekle** sınıfından türetilen bir kayıt kümesi sınıfı bildirmek için Sihirbazı `CRecordset`, sonuçta elde edilen sınıfında aşağıdaki basit gösterilen genel yapı sınıf:
 

@@ -4,12 +4,12 @@ ms.date: 05/09/2019
 helpviewer_keywords:
 - OLE DB providers, creating
 ms.assetid: 2506ba8f-010d-4231-aac1-387432f7b6b9
-ms.openlocfilehash: 2b3b3f56ad4bbd1940beb4159d1a78f08b47d26a
-ms.sourcegitcommit: 00e26915924869cd7eb3c971a7d0604388abd316
+ms.openlocfilehash: 7a8b4caf85ff7d0310c97cb953739796cca21c43
+ms.sourcegitcommit: fc1de63a39f7fcbfe2234e3f372b5e1c6a286087
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "65525100"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65707572"
 ---
 # <a name="creating-the-provider"></a>Sağlayıcı Oluşturma
 
@@ -19,7 +19,7 @@ ATL OLE DB sağlayıcısı Sihirbazı'nı ve sonrasında Visual Studio 2019 içi
 
 ::: moniker-end
 
-::: moniker range="vs-2017"
+::: moniker range="<=vs-2017"
 
 ## <a name="to-create-an-ole-db-provider-with-the-atl-ole-db-provider-wizard"></a>ATL OLE DB sağlayıcısı Sihirbazı ile bir OLE DB sağlayıcısı oluşturmak için
 

@@ -1,18 +1,21 @@
 ---
 title: 'Kayıt kümesi: Bir sınıf bildirme (ODBC) için bir tablo'
-ms.date: 11/04/2016
+ms.date: 05/09/2019
 helpviewer_keywords:
 - ODBC recordsets, declaring class for tables
 - recordsets, declaring classes for tables
 ms.assetid: 3fe286c2-3f3d-493d-9d8c-762310939d08
-ms.openlocfilehash: 17adc6e26dcbb39453d9009d82843d213271cc78
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: ea17f131552fe7f71d9106a8979bb661955fe850
+ms.sourcegitcommit: fc1de63a39f7fcbfe2234e3f372b5e1c6a286087
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62397880"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65707946"
 ---
 # <a name="recordset-declaring-a-class-for-a-table-odbc"></a>Kayıt kümesi: Bir sınıf bildirme (ODBC) için bir tablo
+
+> [!NOTE] 
+> MFC ODBC Tüketici Sihirbazı'nı ve sonrasında Visual Studio 2019 içinde kullanılabilir değil. Bir tüketici yine de el ile oluşturabilirsiniz.
 
 Bu konu MFC ODBC sınıflarına uygulanır.
 

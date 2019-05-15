@@ -2,12 +2,12 @@
 title: Visual C++'ta Paralel Programlama
 ms.date: 11/04/2016
 ms.assetid: f5c28ab6-a1d9-492f-b207-05e8aee73e96
-ms.openlocfilehash: 80f3708b7c5f5a2c5167e0c27324898195e9d340
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 9a14768f9ff19fddd811166e4c8fffe90fc46cb8
+ms.sourcegitcommit: fc1de63a39f7fcbfe2234e3f372b5e1c6a286087
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62362575"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65708073"
 ---
 # <a name="parallel-programming-in-visual-c"></a>Visual C++'ta Paralel Programlama
 
@@ -22,4 +22,4 @@ Visual C++ birden çok iş parçacıklı oluşturmanıza yardımcı olması içi
 |[C++ AMP (C++ Accelerated Massive Parallelism)](amp/cpp-amp-cpp-accelerated-massive-parallelism.md)|Genel amaçlı programlama için modern grafik işlemcileri kullanımını etkinleştiren sınıflar.|
 |[Eski Kod için Çoklu İş Parçacığı Kullanma Desteği (Visual C++)](multithreading-support-for-older-code-visual-cpp.md)|Eski uygulamalarda yararlı olabilir, daha eski teknolojileri. Yeni uygulamalar için eşzamanlılık çalışma zamanı veya C++ AMP kullanın.|
 |[OpenMP](openmp/openmp-in-visual-cpp.md)|OpenMP API'ın Microsoft uygulaması.|
-|[Visual C++](../overview/visual-cpp-in-visual-studio.md)|Belgelerinin bu bölümü Visual C++'ın çoğu özelliği hakkında bilgi içerir.|
+|[Visual Studio’da C++](../overview/visual-cpp-in-visual-studio.md)|Belgelerinin bu bölümü Visual C++'ın çoğu özelliği hakkında bilgi içerir.|

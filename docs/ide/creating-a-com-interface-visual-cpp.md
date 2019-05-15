@@ -1,25 +1,22 @@
 ---
 title: Bir COM arabirimi oluşturma
-ms.date: 11/12/2018
-f1_keywords:
-- vc.codewiz.com.creating.interfaces
-- vc.codewiz.com.editing.interfaces
+ms.date: 05/14/2019
 helpviewer_keywords:
 - COM interfaces, creating
 - methods [C++], adding to COM interfaces
 - COM interfaces, editing
 - properties [C++], adding to COM interfaces
 ms.assetid: 1be84d3c-6886-4d1e-8493-56c4d38a96d4
-ms.openlocfilehash: 6ed2784c781b474b57a3aef796a336a8911df8fc
-ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
+ms.openlocfilehash: 09ddc113450fadb208e4f8471bc9aacf596a53f1
+ms.sourcegitcommit: fc1de63a39f7fcbfe2234e3f372b5e1c6a286087
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2019
-ms.locfileid: "65448160"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65708079"
 ---
 # <a name="create-a-com-interface"></a>Bir COM arabirimi oluşturma
 
-Visual C++ sihirbazları ve şablonlarını tanımlama COM arabirimlerine ve görüntüleme Otomasyon sınıfları ve COM nesneleri için kullanan projeleri oluşturmak için sağlar.
+Sihirbazlar ve şablonlar tanımlama COM arabirimlerine ve görüntüleme Otomasyon sınıfları ve COM nesneleri için kullanan projeleri oluşturmak için Visual Studio sağlar.
 
 Bu sihirbazlar, aşağıdaki üç yaygın görevleri gerçekleştirmek için kullanabilirsiniz:
 
