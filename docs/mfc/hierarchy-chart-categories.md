@@ -1,17 +1,15 @@
 ---
 title: Hiyerarşi Grafiği Kategorileri
 ms.date: 11/19/2018
-f1_keywords:
-- vc.mfc
 helpviewer_keywords:
 - MFC, hierarchy
 ms.assetid: 1f109428-4b84-4f7c-90a9-e71fe071311e
-ms.openlocfilehash: 8f6ee44011535dc6051b03d1edc35633ed11bbe2
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 5413cf08a4a5b7e70a650c5b7b9000a72b32c0c5
+ms.sourcegitcommit: 934cb53fa4cb59fea611bfeb9db110d8d6f7d165
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62396523"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65611963"
 ---
 # <a name="hierarchy-chart-categories"></a>Hiyerarşi Grafiği Kategorileri
 
