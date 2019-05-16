@@ -95,7 +95,7 @@
 ## [ATL Koleksiyon Sınıfları](atl-collection-classes.md)
 ## [ATL Kayıt Defteri Bileşeni (Kaydedici)](atl-registry-component-registrar.md)
 ### [Kaydedici Betikleri Oluşturma](creating-registrar-scripts.md)
-#### [Backus Nauer Form (BNF) Söz Dizimini Anlama](understanding-backus-nauer-form-bnf-syntax.md)
+#### [Backus Naur form (BNF) söz dizimini anlama](understanding-backus-naur-form-bnf-syntax.md)
 #### [Ayrıştırma Ağaçlarını Anlama](understanding-parse-trees.md)
 #### [Kayıt Defteri Betik Oluşturma Örnekleri](registry-scripting-examples.md)
 #### [Değiştirilebilir Parametreler Kullanma (Kaydedicinin Ön İşlemcisi)](using-replaceable-parameters-the-registrar-s-preprocessor.md)
