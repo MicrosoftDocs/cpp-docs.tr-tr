@@ -5,12 +5,12 @@ f1_keywords:
 - /Qspectre
 helpviewer_keywords:
 - /Qspectre
-ms.openlocfilehash: 42adff6564dc1c2ef47abffe9f9e6e630279ea7d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e44416a44a9f772c17bc734d26c62ff87be775c8
+ms.sourcegitcommit: a10c9390413978d36b8096b684d5ed4cf1553bc8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62319193"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65837415"
 ---
 # <a name="qspectre"></a>/ Qspectre
 
@@ -28,7 +28,7 @@ Derleyici belirli Spectre değişkeni 1 güvenlik açıklarını gidermek için 
 
 İlk sürümde, **/qspectre** seçeneği yalnızca üzerinde çalıştığınız en iyi duruma getirilmiş kod. Visual Studio 2017 sürüm 15.7 ve üzeri, **/qspectre** seçeneği, tüm iyileştirme düzeylerinde desteklenir.
 
-Microsoft Visual C++ kitaplıkları da Spectre riskini azaltma sürümlerle kullanılabilir. Visual Studio 2017 için Spectre azaltılabilir kitaplıkları Visual Studio Yükleyicisi'nde indirilebilir. İçinde bulundukları **tek tek bileşenler** sekmesinde altında **derleyiciler, derleme araçları ve çalışma zamanları**, ve "Spectre için kitaplıklar" adı. DLL hem statik çalışma zamanı kitaplıkları ile etkinleştirilen risk azaltma Visual C++ çalışma zamanı bir alt kümesi için kullanılabilir: VC ++ başlatma kodu, vcruntime140, msvcp140, concrt140 ve vcamp140. DLL'leri yalnızca yerel uygulama dağıtımı için desteklenir; Visual C++ 2017 çalışma zamanı kitaplıklarının yeniden dağıtılabilir içeriğini değiştirilmemiş. MFC ve ATL, bulunan için Spectre azaltılabilir kitaplıkları da yükleyebilirsiniz **tek tek bileşenler** sekmesinde altında **SDK'lar, kitaplıklar ve çerçeveler**.
+Microsoft Visual C++ kitaplıkları da Spectre riskini azaltma sürümlerle kullanılabilir. Spectre azaltılabilir kitaplıkları ve daha sonra Visual Studio 2017 için Visual Studio Yükleyicisi'nde indirilebilir. İçinde bulundukları **tek tek bileşenler** sekmesinde altında **derleyiciler, derleme araçları ve çalışma zamanları**, ve "Spectre için kitaplıklar" adı. DLL hem statik çalışma zamanı kitaplıkları ile etkinleştirilen risk azaltma Visual C++ çalışma zamanı bir alt kümesi için kullanılabilir: VC ++ başlatma kodu, vcruntime140, msvcp140, concrt140 ve vcamp140. DLL'leri yalnızca yerel uygulama dağıtımı için desteklenir; görselin içeriklerini C++ 2017 ve sonraki çalışma zamanı kitaplıklarının yeniden dağıtılabilir değil değiştirilmiş olabilir. MFC ve ATL, bulunan için Spectre azaltılabilir kitaplıkları da yükleyebilirsiniz **tek tek bileşenler** sekmesinde altında **SDK'lar, kitaplıklar ve çerçeveler**.
 
 ### <a name="applicability"></a>Uygulanabilirlik
 
@@ -54,7 +54,7 @@ Performans etkisini **/qspectre** birkaç çok büyük kod tabanlarında göz ar
 
 **/Qspectre** derleyici seçeneği Spectre risk azaltma işlemleri sağlamak için oluşturulan çalışma zamanı kitaplıklarının sürümlerini örtük olarak bağlanan kod oluşturur. Bu kitaplıklar, Visual Studio Yükleyicisi'ni kullanarak yüklü olması gereken isteğe bağlı bileşenleri şunlardır:
 
-- VC ++ 2017 sürüm *version_numbers* Spectre için kitaplıklar \[(x86 ve x64) | (ARM) | (ARM64)]
+- MSVC sürüm *version_numbers* Spectre için kitaplıklar \[(x86 ve x64) | (ARM) | (ARM64)]
 - Görsel C++ için ATL \[(x86/x64) | ARM | ARM64] Spectre azaltmaları ile
 - Görsel C++ için MFC \[x86/x64 | ARM | ARM64] Spectre azaltmaları ile
 

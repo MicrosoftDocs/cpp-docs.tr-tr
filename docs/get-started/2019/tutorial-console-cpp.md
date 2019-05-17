@@ -7,11 +7,11 @@ ms.topic: tutorial
 ms.devlang: cpp
 ms.assetid: 45138d70-719d-42dc-90d7-1d0ca31a2f54
 ms.openlocfilehash: f1e6b06c3212ae3ff192fdf402c0167575161656
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.sourcegitcommit: a10c9390413978d36b8096b684d5ed4cf1553bc8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62382909"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65837586"
 ---
 # <a name="create-a-c-console-app-project"></a>C++ konsol uygulama projesi oluşturma
 

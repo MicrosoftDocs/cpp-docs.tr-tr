@@ -8,12 +8,12 @@ helpviewer_keywords:
 - Visual Studio C++ projects
 - ATL projects
 ms.assetid: 11003cd8-9046-4630-a189-a32bf3b88047
-ms.openlocfilehash: 15adae6cb9908f74d62709622ca3302fd35faa46
-ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
+ms.openlocfilehash: 30d3b13ba4d392cdc5d1c7c611b61066503647a2
+ms.sourcegitcommit: a10c9390413978d36b8096b684d5ed4cf1553bc8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2019
-ms.locfileid: "65446354"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65837060"
 ---
 # <a name="visual-studio-projects---c"></a>Visual Studio projeleri - C++
 
@@ -21,9 +21,21 @@ A *Visual Studio projesi* proje MSBuild yapı sistemini temel alır. MSBuild Vis
 
 ## <a name="create-a-project"></a>Proje oluşturma
 
-C++ projeleri seçerek oluşturabilirsiniz **dosya &#124; yeni &#124; proje**, Visual C++'ın sol bölmesinde seçerek sonra. Orta bölmede, proje şablonları listesi görürsünüz: 
+::: moniker range="vs-2019"
+
+Oluşturabileceğiniz C++ seçerek projeleri **dosya** > **yeni** > **proje**, ardından ayarı **dil** için C++. Sonuçlar listesinde ayarlayarak filtre projesi şablonlarının bir listesi görmek **Platform** veya **proje türü** ve arama kutusuna anahtar sözcükleri yazarak. 
+
+   ![Visual Studio 2019 proje şablonları](../build/media/vs2019-choose-console-app.png "Visual Studio 2019 yeni proje iletişim kutusu")
+
+::: moniker-end
+
+::: moniker range="vs-2017"
+
+Oluşturabileceğiniz C++ seçerek projeleri **dosya** > **yeni** > **proje**, ardından görsel seçme C++ sol bölmesinde. Orta bölmede, proje şablonları listesi görürsünüz:
 
    ![Proje şablonları](../overview/media/vs2017-new-project.png "Visual Studio 2017 yeni proje iletişim kutusu")
+
+::: moniker-end
 
 Visual Studio'ya dahil olan tüm varsayılan proje şablonları hakkında daha fazla bilgi için bkz: [Visual Studio'da C++ proje şablonları](reference/visual-cpp-project-types.md). Kendi proje şablonları oluşturabilirsiniz. Daha fazla bilgi için [nasıl yapılır: Proje şablonları oluşturma](/visualstudio/ide/how-to-create-project-templates).
 

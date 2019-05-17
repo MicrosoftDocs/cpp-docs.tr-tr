@@ -1,18 +1,18 @@
 ---
 title: Bağlayıcı Girişi olarak .netmodule Dosyaları
-ms.date: 11/04/2016
+ms.date: 05/16/2019
 helpviewer_keywords:
 - MSIL linking
 - linking [C++], modules
 - .netmodules
 - modules, Visual C++
 ms.assetid: a4bcbe8a-4255-451d-853b-f88cfd82f4e1
-ms.openlocfilehash: fcba363cff567c69ac0fbd0a541953dfe2c8e910
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 50a0f0a1ff5f65a7512e8372de2fe5296c866dca
+ms.sourcegitcommit: a10c9390413978d36b8096b684d5ed4cf1553bc8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62320675"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65837435"
 ---
 # <a name="netmodule-files-as-linker-input"></a>Bağlayıcı Girişi olarak .netmodule Dosyaları
 
@@ -20,7 +20,7 @@ Link.exe giriş olarak artık MSIL .obj ve netmodule'leri kabul eder. Bağlayıc
 
 MSVC derleyicisi ile tarafından oluşturulmuş. netmodule'leri [/LN (MSIL modülü Oluştur)](ln-create-msil-module.md) veya bağlayıcı ile [noassembly (MSIL modülü Oluştur)](noassembly-create-a-msil-module.md). .objs her zaman bir Visual C++ derleme içinde oluşturulur. Diğer Visual Studio derleyicileri için kullanmak **/target: Module** derleyici seçeneği.
 
-Visual C++ derlemeden .netmodule oluşturulan bağlayıcıya .obj dosyasına geçmesi gerekir. .Netmodule geçirmeye çünkü artık desteklenmiyor **/CLR: pure** ve **/CLR: safe** derleyici seçenekleri Visual Studio 2015'te kullanım dışı ve Visual Studio 2017'de desteklenmiyor.
+Visual C++ derlemeden .netmodule oluşturulan bağlayıcıya .obj dosyasına geçmesi gerekir. .Netmodule geçirmeye çünkü artık desteklenmeyen **/CLR: pure** ve **/CLR: safe** derleyici seçenekleri Visual Studio 2015'te kullanım dışı ve Visual Studio 2017 ve sonraki sürümlerinde desteklenmeyen.
 
 Bağlayıcı komut satırından çağırma hakkında daha fazla bilgi için bkz: [bağlayıcı komut satırı sözdizimi](linking.md), [komut satırından MSVC araç takımı kullanın](../building-on-the-command-line.md), ve [yolu ve ortam değişkenlerini ayarlama komut satırı derlemeleri için](../setting-the-path-and-environment-variables-for-command-line-builds.md).
 

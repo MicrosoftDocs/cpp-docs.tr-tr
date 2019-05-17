@@ -1,15 +1,15 @@
 ---
 title: .vcxproj ve .props dosya yapısı
-ms.date: 09/18/2018
+ms.date: 05/16/2019
 helpviewer_keywords:
 - .vcxproj file structure
 ms.assetid: 14d0c552-29db-480e-80c1-7ea89d6d8e9c
-ms.openlocfilehash: a1052d0a0eeeff177f0a22883fe06cd07d7b03f6
-ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
+ms.openlocfilehash: 86c393796b1ce3efdb92d8aefd1f653390619ea4
+ms.sourcegitcommit: a10c9390413978d36b8096b684d5ed4cf1553bc8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2019
-ms.locfileid: "65446494"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65837511"
 ---
 # <a name="vcxproj-and-props-file-structure"></a>.vcxproj ve .props dosya yapısı
 
@@ -268,11 +268,11 @@ Visual Studio IDE proje dosyası sıralaması yukarıda açıklanan bağlıdır.
 
 Bu düzen bir .vcxproj dosyası izlemiyorsa, yapı sonuçlarını beklediğiniz olmayabilir. Örneğin, kullanıcı tarafından tanımlanan özellik sayfalarından sonra yanlışlıkla bir sistem özellik sayfası içe aktarırsanız, kullanıcı ayarları tarafından sistem özellik sayfalarını kılınır.
 
-Hatta IDE tasarım zamanı deneyimi öğeleri doğru sıralama belirli bir ölçüde bağlıdır. Örneğin, .vcxproj dosyası yoksa, `PropertySheets` grubunu İçeri Aktar, IDE içinde kullanıcı tarafından oluşturulan yeni bir özellik sayfası yerleştirileceği yeri belirlemek mümkün olmayabilir **özellik Yöneticisi**. Bu, bir sistem sayfası tarafından geçersiz kılınmış olan bir kullanıcı e-tablosunda sonuçlanabilir. IDE tarafından kullanılan buluşsal yöntem .vcxproj dosya düzeni küçük tutarsızlıklar tolere edebilen olsa da, bu makalenin önceki bölümlerinde gösterilen yapısından cluster_count_prıor değil önemle tavsiye edilir.
+Hatta IDE tasarım zamanı deneyimi öğeleri doğru sıralama belirli bir ölçüde bağlıdır. Örneğin, .vcxproj dosyası yoksa, `PropertySheets` grubunu İçeri Aktar, IDE içinde kullanıcı tarafından oluşturulan yeni bir özellik sayfası yerleştirileceği yeri belirlemek mümkün olmayabilir **özellik Yöneticisi**. Bu, bir kullanıcı e-tablosunda bir sistem sayfası tarafından geçersiz kılınmasını sonuçlanabilir. IDE tarafından kullanılan buluşsal yöntem .vcxproj dosya düzeni küçük tutarsızlıklar tolere edebilen olsa da, bu makalenin önceki bölümlerinde gösterilen yapısından cluster_count_prıor değil önemle tavsiye edilir.
 
 ## <a name="how-the-ide-uses-element-labels"></a>IDE öğesi etiketleri kullanma
 
-Ayarladığınızda IDE'de **UseOfAtl** özelliği genel özellik sayfası'nda yazılmış proje dosyasındaki yapılandırma özellik grubuna sırada **TargetName** aynı özellik sayfası özelliği Etiket daha az başına-yapılandırma özellik grubuna yazılır. Visual Studio her bir özellik yazılacağı hakkında bilgi için özellik sayfanın xml dosyasını inceler. İçin **genel** özellik sayfası (Visual Studio Enterprise Edition'ın İngilizce sürümünü sahip olduğunuz varsayılarak), bu dosya `%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\VC\VCTargets\1033\general.xml`. Özellik sayfası XML kural dosyası, bir kural ve tüm özelliklerini statik bilgilerini tanımlar. Böyle bir bilgi parçasıdır tercih edilen bir kural özelliğine (değerinin yazılacağı dosyası) hedef dosyadaki konumudur. Tercih edilen konum, proje dosyası öğelerini etiket özniteliği tarafından belirtilir.
+Ayarladığınızda IDE'de **UseOfAtl** özelliği genel özellik sayfası'nda yazılmış proje dosyasındaki yapılandırma özellik grubuna sırada **TargetName** aynı özellik sayfası özelliği Etiket daha az başına-yapılandırma özellik grubuna yazılır. Visual Studio her bir özellik yazılacağı hakkında bilgi için özellik sayfanın xml dosyasını inceler. İçin **genel** özellik sayfası (Visual Studio 2019 Enterprise Edition'ın İngilizce sürümünü sahip olduğunuz varsayılarak), bu dosya `%ProgramFiles(x86)%\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\VC\VCTargets\1033\general.xml`. Özellik sayfası XML kural dosyası, bir kural ve tüm özelliklerini statik bilgilerini tanımlar. Böyle bir bilgi parçasıdır tercih edilen bir kural özelliğine (değerinin yazılacağı dosyası) hedef dosyadaki konumudur. Tercih edilen konum, proje dosyası öğelerini etiket özniteliği tarafından belirtilir.
 
 ## <a name="property-sheet-layout"></a>Özellik sayfa düzeni
 
@@ -288,7 +288,7 @@ Aşağıdaki XML kod parçacığı, bir özellik sayfası (.props) dosyasının 
 </Project>
 ```
 
-Kendi özellik sayfası yapmak için .props dosyalardan biri VCTargets klasörüne kopyalayıp amaçlarınız için değiştirebilirsiniz. Visual Studio 2017 Enterprise edition için varsayılan VCTargets yoldur `%ProgramFiles%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\VC\VCTargets`.
+Kendi özellik sayfası yapmak için .props dosyalardan biri VCTargets klasörüne kopyalayıp amaçlarınız için değiştirebilirsiniz. Visual Studio 2019 Enterprise edition için varsayılan VCTargets yoldur `%ProgramFiles%\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\VC\VCTargets`.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

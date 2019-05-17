@@ -1,14 +1,14 @@
 ---
 title: Visual Studio'da CMake derleme ayarlarını özelleştirme
-ms.date: 04/25/2019
+ms.date: 05/16/2019
 helpviewer_keywords:
 - CMake build settings
-ms.openlocfilehash: 20ed066f71a5c8c3acb00ef5923fa5c9f16ac229
-ms.sourcegitcommit: 18d3b1e9cdb4fc3a76f7a650c31994bdbd2bde64
+ms.openlocfilehash: d8102250fa59dc787cc48fc293ac740b81b4446c
+ms.sourcegitcommit: a10c9390413978d36b8096b684d5ed4cf1553bc8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/29/2019
-ms.locfileid: "64877148"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65837104"
 ---
 # <a name="customize-cmake-build-settings"></a>CMake derleme ayarlarını özelleştirme
 
@@ -128,7 +128,7 @@ Uzak makinede CMake hedefleri yükleyen dizin.
 
 ### <a name="remote-copy-sources"></a>Uzaktan Kopyala kaynakları
 
-Kaynak dosyalar uzak makineye kopyalanıp kopyalanmayacağını belirtir ve belirtmenize olanak tanıyan etkinleştirilip etkinleştirilmeyeceğini yse rsync veya sftp. 
+Kaynak dosyalar uzak makineye kopyalanıp kopyalanmayacağını belirtir ve, rsync veya sftp kullanılıp kullanılmayacağını belirlemenize olanak tanır. 
 
 ## <a name="directly-edit-cmakesettingsjson"></a>Doğrudan CMakeSettings.json Düzenle
 

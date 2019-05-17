@@ -3,19 +3,19 @@ title: vcpkg--bir C++ için Paket Yöneticisi Windows, Linux ve MacOS
 description: vcpkg edinme ve yükleme, açık kaynaklı C++ kitaplıklarının Windows üzerinde büyük ölçüde kolaylaştıran bir komut satırı paket yöneticisidir.
 author: mikeblome
 ms.author: mblome
-ms.date: 03/18/2019
+ms.date: 05/16/2019
 ms.technology: cpp-ide
 ms.assetid: f50d459a-e18f-4b4e-814b-913e444cedd6
-ms.openlocfilehash: 5dba6877c4489337625eed016c77b853f84af990
-ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.openlocfilehash: 58f8a9b8223dc54bf083ebbac97528f88890777c
+ms.sourcegitcommit: a10c9390413978d36b8096b684d5ed4cf1553bc8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65217659"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65837016"
 ---
 # <a name="vcpkg-a-c-package-manager-for-windows-linux-and-macos"></a>vcpkg: Windows, Linux ve MacOS için C++ Paket Yöneticisi
 
-vcpkg edinme ve yükleme Windows, Linux ve Macos'ta üçüncü taraf kitaplıkların büyük ölçüde kolaylaştıran bir komut satırı paket yöneticisidir. Projeniz üçüncü taraf kitaplıklarını kullanıyorsa, bunları yüklemek için vcpkg kullanmanızı öneririz. vcpkg hem açık kaynak hem de özel kütüphanelerini destekler. Vcpkg Windows katalogdaki tüm kitaplıkları Visual Studio 2015 ve Visual Studio 2017 ile uyumluluk için test edilmiştir. Mayıs 2018'den itibaren Windows kataloğunda ve Linux/MacOS kataloğunda 350 üzerinden 900 kitaplıkları vardır. C++ topluluğu, her iki kataloglarında düzenli olarak daha fazla kitaplıkları eklemektir.
+vcpkg edinme ve yükleme Windows, Linux ve Macos'ta üçüncü taraf kitaplıkların büyük ölçüde kolaylaştıran bir komut satırı paket yöneticisidir. Projeniz üçüncü taraf kitaplıklarını kullanıyorsa, bunları yüklemek için vcpkg kullanmanızı öneririz. vcpkg hem açık kaynak hem de özel kütüphanelerini destekler. Vcpkg Windows katalogdaki tüm kitaplıkları Visual Studio 2015, Visual Studio 2017 ve Visual Studio 2019 ile uyumluluk için test edilmiştir. Mayıs 2018'den itibaren Windows kataloğunda ve Linux/MacOS kataloğunda 350 üzerinden 900 kitaplıkları vardır. C++ topluluğu, her iki kataloglarında düzenli olarak daha fazla kitaplıkları eklemektir.
 
 ## <a name="simple-yet-flexible"></a>Basit ancak esnek
 
@@ -23,7 +23,7 @@ Tek bir komutla kaynakları indirmek ve bir kitaplık oluşturun. vcpkg kendisin
 
 ## <a name="sources-not-binaries"></a>Kaynakları değil ikili dosyaları
 
-Windows kataloğunda kitaplıkları için ikili dosyaları [1] yerine kaynakları vcpkg indirir. Bu, bu kaynakları 2017 yüklü değilse Visual Studio 2017 veya Visual Studio 2015'i kullanarak derler. Uygulama kodu olarak bağlanan, C++'da, kullandığınız tüm kitaplıkları aynı derleyici ve derleyici sürümü ile derlendiğini çok önemlidir. Vcpkg'ı kullanarak kaldırın veya eşleşmeyen ikili dosyaları ve sorunlara neden olabilir olası en az önemli ölçüde azaltabilir. Bir derleyici belirli bir sürümü üzerinde standartlaştırılmıştır teams'de, bir takım üyesinin kaynakları indirmek ve bir dizi ikili dosyaları derlemek ve ardından export komutu ikili dosyaları ve üstbilgi diğer ekip üyeleri ZIP vcpkg kullanabilirsiniz. Daha fazla bilgi için [dışarı aktarma derlenmiş ikili dosyaları ve üstbilgi](#export_binaries_per_project) aşağıda.
+Windows kataloğunda kitaplıkları için ikili dosyaları [1] yerine kaynakları vcpkg indirir. Bu, bu kaynakları bulmak Visual Studio'nun en son sürümünü kullanarak derler. Uygulama kodu olarak bağlanan, C++'da, kullandığınız tüm kitaplıkları aynı derleyici ve derleyici sürümü ile derlendiğini çok önemlidir. Vcpkg'ı kullanarak kaldırın veya eşleşmeyen ikili dosyaları ve sorunlara neden olabilir olası en az önemli ölçüde azaltabilir. Bir derleyici belirli bir sürümü üzerinde standartlaştırılmıştır teams'de, bir takım üyesinin kaynakları indirmek ve bir dizi ikili dosyaları derlemek ve ardından export komutu ikili dosyaları ve üstbilgi diğer ekip üyeleri ZIP vcpkg kullanabilirsiniz. Daha fazla bilgi için [dışarı aktarma derlenmiş ikili dosyaları ve üstbilgi](#export_binaries_per_project) aşağıda.
 
 Özel bağlantı noktaları koleksiyonu kitaplıkları ile vcpkg kopya oluşturma, önceden oluşturulmuş ikili dosyalar ve üstbilgi indiren bir bağlantı noktasını ekleyin ve yalnızca bu dosyaları istenilen konuma kopyalar. bir portfile.cmake dosyasına yazılamıyor.
 
@@ -178,7 +178,7 @@ Tür **vcpkg Kaldır** yüklü bir kitaplığını kaldırmak için. Diğer bir 
 
 ## <a name="customize-vcpkg"></a>Vcpkg özelleştirme
 
-Vcpkg istediğiniz herhangi bir şekilde, bir kopyasını değiştirebilirsiniz. Birden çok vcpkg kopyaları oluşturabilir ve portfiles kitaplıkları belirli sürümlerini edinmek veya komut satırı parametreleri belirtmek için her biri olarak değiştirin. Örneğin, kuruluş, geliştiricilerin bir grup kümesi bağımlılıkları olan yazılımı çalışıyor olabilirsiniz ve başka bir grup farklı olabilir. Vcpkg iki klonlarını ayarlayabilir ve her biri, kitaplıklar ve derleme anahtarlar vb., sürümlerini indirmek için ihtiyaçlarınıza göre değiştirin.
+Vcpkg istediğiniz herhangi bir şekilde, bir kopyasını değiştirebilirsiniz. Birden çok vcpkg kopyaları oluşturabilir ve portfiles kitaplıkları belirli sürümlerini edinmek veya komut satırı parametreleri belirtmek için her biri olarak değiştirin. Örneğin, kuruluş, geliştiricilerin bir grup kümesi bağımlılıkları olan yazılımı çalışıyor olabilirsiniz ve başka bir grup farklı olabilir. Vcpkg iki klonlarını ayarlayabilir ve her biri, kitaplıklar ve derleme anahtarlar ve benzeri sürümlerini indirmek için ihtiyaçlarınıza göre değiştirin.
 
 ## <a name="uninstall-vcpkg"></a>Vcpkg kaldırma
 

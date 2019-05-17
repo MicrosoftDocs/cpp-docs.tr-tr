@@ -1,15 +1,15 @@
 ---
 title: Visual Studio'da MSBuild iç c++ projeleri
-ms.date: 12/08/2018
+ms.date: 05/16/2019
 helpviewer_keywords:
 - MSBuild overview
 ms.assetid: dd258f6f-ab51-48d9-b274-f7ba911d05ca
-ms.openlocfilehash: 6c8e891f6bf6ed6b3bb3d1c84dbc13b64ab7b868
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b3348320a1468fea03f39e43cc847f1085f3d319
+ms.sourcegitcommit: a10c9390413978d36b8096b684d5ed4cf1553bc8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62320897"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65837225"
 ---
 # <a name="msbuild-internals-for-c-projects"></a>C++ projeleri için MSBuild iç işlevleri
 
@@ -25,7 +25,7 @@ Varsayılan olarak birincil Visual Studio destek dosyaları aşağıdaki dizinle
 |---------------|-----------------|
 |*drive*:\Program Files *(x86)* \Microsoft Visual Studio\\*year*\\*edition*\Common7\IDE\VC\VCTargets\ <br /><br />*drive*:\Program Files *(x86)* \MSBuild\Microsoft.Cpp (x86)\v4.0\\*version*\ |Birincil hedef dosyalarını (.targets) içerir ve hedefler tarafından kullanılan özellik dosyalarını (.props). Varsayılan olarak $(VCTargetsPath) makro bu dizine başvurur.|
 |*drive*:\Program Files *(x86)* \Microsoft Visual Studio\\*year*\\*edition*\Common7\IDE\VC\VCTargets\Platforms\\*platform*\ <br /><br />*drive*:\Program Files *(x86)* \MSBuild\Microsoft.Cpp\v4.0\\*version*\Platforms\\*platform*\ |Hedefleri ve özellikleri üst dizinindeki geçersiz kılma platforma özgü hedef ve özellik dosyalarını içerir. Bu dizin, içindeki hedefler tarafından kullanılan görevleri tanımlayan bir DLL de içerir.<br /><br /> *Platform* yer tutucusu, ARM, Win32 veya x64 gösterir alt.|
-|*drive*:\Program Files *(x86)* \Microsoft Visual Studio\\*year*\\*edition*\Common7\IDE\VC\VCTargets\Platforms\\*platform*\PlatformToolsets\\*toolset*\ <br /><br />*Sürücü*: \Program dosyaları *(x86)* \MSBuild\Microsoft.Cpp\v4.0\\*sürüm*\Platforms\\*platform*\ PlatformToolsets\\*araç takımı*\ <br /><br />*drive*:\Program Files *(x86)* \MSBuild\Microsoft.Cpp\v4.0\Platforms\\*platform*\PlatformToolsets\\*toolset*\ |Belirtilen kullanarak C++ uygulamalarını oluşturmasını sağlayan dizinleri içerir *araç takımı*.<br /><br /> *Yıl* ve *edition* yer tutucuları, Visual Studio 2017 ve sonraki sürümleri tarafından kullanılır. *Sürüm* V110 Visual Studio 2012 için Visual Studio 2013 için V120 veya V140 Visual Studio 2015 için yer tutucu. *Platform* yer tutucusu, ARM, Win32 veya x64 gösterir alt. *Araç takımı* yer tutucusu v120_xp Windows XP için v110_wp80 veya Visual Studio 2013 araç takımı kullanarak oluşturmak için Visual Studio 2015 Araç Takımı'nı kullanarak Windows uygulamaları oluşturmaya yönelik örnek v140 araç kümesi alt dizinini temsil eder Visual Studio 2012 araç setini kullanarak Windows Phone 8.0 uygulamaları oluşturun.<br /><br />Visual Studio 2008 veya Visual Studio 2010 uygulamaları oluşturmasını sağlayan dizinleri içeren yolu içermez *sürüm*ve *platform* yer tutucu Itanium, Win32 veya x64 temsil eden alt. *Araç takımı* yer tutucusu v90 veya v100 araç kümesi alt dizinini temsil eder.|
+|*drive*:\Program Files *(x86)* \Microsoft Visual Studio\\*year*\\*edition*\Common7\IDE\VC\VCTargets\Platforms\\*platform*\PlatformToolsets\\*toolset*\ <br /><br />*Sürücü*: \Program dosyaları *(x86)* \MSBuild\Microsoft.Cpp\v4.0\\*sürüm*\Platforms\\*platform*\ PlatformToolsets\\*araç takımı*\ <br /><br />*drive*:\Program Files *(x86)* \MSBuild\Microsoft.Cpp\v4.0\Platforms\\*platform*\PlatformToolsets\\*toolset*\ |Belirtilen kullanarak C++ uygulamalarını oluşturmasını sağlayan dizinleri içerir *araç takımı*.<br /><br /> *Yıl* ve *edition* yer tutucuları, Visual Studio 2017 ve sonraki sürümleri tarafından kullanılır. *Sürüm* V110 Visual Studio 2012, Visual Studio 2013 için V120 V140 Visual Studio 2015, Visual Studio 2017 v141 ve Visual Studio 2019 için v142 için yer tutucudur. *Platform* yer tutucusu, ARM, Win32 veya x64 gösterir alt. *Araç takımı* yer tutucusu v120_xp Visual Studio 2013 Araç Takımı'nı kullanarak Windows XP için oluşturmak için Visual Studio 2015 Araç Takımı'nı kullanarak Windows uygulamaları oluşturmaya yönelik örnek v140 araç kümesi alt dizinini temsil eder.<br /><br />Visual Studio 2008 veya Visual Studio 2010 uygulamaları oluşturmasını sağlayan dizinleri içeren yolu içermez *sürüm*ve *platform* yer tutucu Itanium, Win32 veya x64 temsil eden alt. *Araç takımı* yer tutucusu v90 veya v100 araç kümesi alt dizinini temsil eder.|
 
 ## <a name="support-files"></a>Destek dosyaları
 
@@ -86,7 +86,7 @@ Aşağıdaki tabloda, kullanıcıya yönelik bazı yararlı hedefler listeler.
 |Xsd|XML şema tanımı aracı yürütür XSD.exe'nin. *Aşağıdaki nota bakın.*|
 
 > [!NOTE]
-> Visual Studio 2017'de C++ proje desteği **xsd** dosyaları kullanım dışı bırakılmıştır. Kullanmaya devam edebilirsiniz **Microsoft.VisualC.CppCodeProvider** ekleyerek **CppCodeProvider.dll** GAC için el ile.
+> Visual Studio 2017 ve sonraki sürümlerinde, C++ proje desteği **xsd** dosyaları kullanım dışı bırakılmıştır. Kullanmaya devam edebilirsiniz **Microsoft.VisualC.CppCodeProvider** ekleyerek **CppCodeProvider.dll** GAC için el ile.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -1,14 +1,14 @@
 ---
 title: CppProperties.json schema reference
-ms.date: 03/21/2019
+ms.date: 05/16/2019
 helpviewer_keywords:
 - CMake in Visual Studio
-ms.openlocfilehash: 05bb92b0fe791ad8b0037665c2db32a08fa52d7c
-ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.openlocfilehash: e80f4e8a189510a9a3e8860609d74121b7cbb0ef
+ms.sourcegitcommit: a10c9390413978d36b8096b684d5ed4cf1553bc8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65220846"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65837049"
 ---
 # <a name="cpppropertiesjson-schema-reference"></a>CppProperties.json schema reference
 
@@ -122,7 +122,7 @@ Not: Değerleri `msvc-x86` ve `msvc-x64` yalnızca eski nedenlerle desteklenir. 
 ## <a name="custom-configurations"></a>Özel yapılandırmalar
 
 
-Herhangi bir varsayılan configuations özelleştirebileceğiniz `CppProperties.json`, ya da yeni yapılandırmalar oluşturun. Her yapılandırma açılan listede görünür:
+Varsayılan yapılandırmalardan birini özelleştirebileceğiniz `CppProperties.json`, ya da yeni yapılandırmalar oluşturun. Her yapılandırma açılan listede görünür:
 
 ```json
 {
@@ -264,7 +264,7 @@ Tüm özel ve varsayılan ortam değişkenlerini de kullanılabilir `tasks.vs.js
 |-|-|
 |`${workspaceRoot}`| Çalışma alanı klasörün tam yolu|
 |`${projectRoot}`| klasörün tam yolu burada `CppProperties.json` yerleştirilir|
-|`${vsInstallDir}`| çalışan örneği VS 2017'in yüklendiği klasörün tam yolu|
+|`${vsInstallDir}`| Visual Studio'nun çalışan örneği yüklendiği klasörün tam yolu|
 
 Örneğin, projeniz bir dahil etme klasörü varsa, ve ayrıca windows.h ve diğer ortak üst bilgileri Windows SDK içerir güncelleştirmek isteyebilirsiniz, `CppProperties.json` bu yapılandırma dosyası içerir:
 
@@ -289,7 +289,7 @@ Tüm özel ve varsayılan ortam değişkenlerini de kullanılabilir `tasks.vs.js
 ```
 
 > [!Note]
-> `%WindowsSdkDir%` ve `%VCToolsInstallDir%` genel ortam değişkenleri bu nedenle "Geliştirici komut isteminden bu değişkenleri tanımlayan VS 2017 için" devenv.exe başlattığınız emin olun olarak ayarlı değil.
+> `%WindowsSdkDir%` ve `%VCToolsInstallDir%` genel ortam değişkenleri bu nedenle bu değişkenleri tanımlayan bir geliştirici komut istemi gelen devenv.exe Başlat emin olun olarak ayarlı değil. (Windows Başlat menüsündeki "Geliştirici" yazın.)
 
 ## <a name="troubleshoot-intellisense-errors"></a>IntelliSense sorunlarını giderme
 

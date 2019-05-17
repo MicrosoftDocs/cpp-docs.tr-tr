@@ -6,11 +6,11 @@ ms.assetid: 8801dbdb-ca0b-491f-9e33-01618bff5ae9
 author: mikeblome
 ms.author: mblome
 ms.openlocfilehash: 493b96a8ce3359cc18287adbae8cbd6c374671ec
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.sourcegitcommit: a10c9390413978d36b8096b684d5ed4cf1553bc8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62351483"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65837634"
 ---
 <!--NOTE all https:// links to docs.microsoft.com need to be converted to site-relative links prior to publishing-->
 

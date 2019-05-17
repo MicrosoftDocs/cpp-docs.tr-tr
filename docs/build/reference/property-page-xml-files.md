@@ -4,16 +4,16 @@ ms.date: 05/06/2019
 helpviewer_keywords:
 - property page XML files
 ms.assetid: dd9d9734-4387-4098-8ba6-85b93507731d
-ms.openlocfilehash: 610dc7341a35845b35d8ed80f52b421d1c2fb5d1
-ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.openlocfilehash: f23c252604c5b69423b808b3b9f072889e38c816
+ms.sourcegitcommit: a10c9390413978d36b8096b684d5ed4cf1553bc8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65217726"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65837441"
 ---
 # <a name="property-page-xml-rule-files"></a>Özellik sayfası XML kuralı dosyaları
 
-IDE'de proje özelliği sayfalarından VCTargets klasöründe bulunan XML dosyaları tarafından yapılandırılır. Visual Studio'nun hangi sürümleri yüklenir ve ürün dili tam yolunu bağlıdır. Visual Studio 2017 Enterprise sürümünde, İngilizce için yoludur `%ProgramFiles%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\VC\VCTargets\1033`. XML dosyaları, kuralları, kategoriler ve özellikler, veri türü, varsayılan değerleri adları ve nasıl görüntülenecek oldukları açıklanmaktadır. IDE'de bir özelliği ayarlamak, yeni değer proje dosyasında depolanır.
+IDE'de proje özelliği sayfalarından VCTargets klasöründe bulunan XML dosyaları tarafından yapılandırılır. Visual Studio'nun hangi sürümleri yüklenir ve ürün dili tam yolunu bağlıdır. Visual Studio 2019 Enterprise Edition için İngilizce, yoludur `%ProgramFiles%\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\VC\VCTargets\1033`. XML dosyaları, kuralları, kategoriler ve özellikler, veri türü, varsayılan değerleri adları ve nasıl görüntülenecek oldukları açıklanmaktadır. IDE'de bir özelliği ayarlamak, yeni değer proje dosyasında depolanır.
 
 (A) Bu dosyalar ve Visual Studio IDE iç işleyişini olduğunu anlamak gereksinim tek senaryoları bir özel özellik sayfası oluşturmak istiyorsunuz veya (b), proje özellikleri aracılığıyla Visual Studio IDE dışında bazı yollarla özelleştirmek istediğiniz.
 
@@ -107,7 +107,7 @@ Aşağıdaki bölümde, her temel öğeleri ve bazı kendisine bağlı meta veri
 
    - `ItemType="ClCompile"` belirten özellikleri ItemDefinition meta verileri veya (ikincisi yalnızca özellik sayfaları Çözüm Gezgini'ndeki bir dosya düğümünden kökenli,) öğesi meta veri olarak depolanır, bu öğe türü. Bu alan ayarlanmazsa, özellik, bir PropertyGroup ortak özelliği olarak yazılır.
 
-   - `Label=""` özellikleri olarak yazıldığında belirten `ItemDefinition` meta verileri, üst Itemdefinitiongroup etiketi boş olacaktır (her MSBuild öğesi, bir etiket olabilir). Visual Studio 2017, .vcxproj proje dosyasına gitmek için etiketli gruplarını kullanır. Çoğu kural özelliklerini içeren gruplar bir etiket olarak boş bir dize gerektiğini unutmayın.
+   - `Label=""` özellikleri olarak yazıldığında belirten `ItemDefinition` meta verileri, üst Itemdefinitiongroup etiketi boş olacaktır (her MSBuild öğesi, bir etiket olabilir). Visual Studio 2017 ve daha sonra kullanmak, .vcxproj proje dosyasına gitmek için grupları etiketi. Çoğu kural özelliklerini içeren gruplar bir etiket olarak boş bir dize gerektiğini unutmayın.
 
    - `HasConfigurationCondition="true"` Proje sistemi bir yapılandırma koşulu değerle (koşulu üst gruba veya değer yapıştırılmış) yalnızca geçerli proje yapılandırması için geçerli olur böylece eklemesi söyler. Örneğin, özellik sayfalarını kapatmak proje düğümünü açın ve özellik değerini ayarlamak **uyarıları hata olarak değerlendir** altında **yapılandırma özellikleri > C/C++ genel** "Yes". Aşağıdaki değer proje dosyasına yazılır. Itemdefinitiongroup üst yapılandırma koşul bağlı dikkat edin.
 
@@ -133,7 +133,7 @@ Aşağıdaki bölümde, her temel öğeleri ve bazı kendisine bağlı meta veri
 
    Tek bir özellik, üst kural veri kaynağı geçersiz kılabilirsiniz. Bu durumda, bu özelliğin değerini konumunu kuralında diğer özellikleri farklı olacaktır.
 
-   h. Burada gösterilmiyor bir kural açıklaması, SupportsFileBatching vb. gibi diğer öznitelikleri vardır. Öznitelik geçerli bir kural veya başka bir öğenin tam kümesi, bu tür belgelerine göz atarak alınabilir. Alternatif olarak, türlerinde ortak özelliklerde inceleyebilirsiniz `Microsoft.Build.Framework.XamlTypes` ad alanında `Microsoft.Build.Framework .dll` derleme.
+   h. Burada gösterilmiyor açıklaması ve SupportsFileBatching, dahil olmak üzere bir kural, diğer öznitelikleri vardır. Öznitelik geçerli bir kural veya başka bir öğenin tam kümesi, bu tür belgelerine göz atarak alınabilir. Alternatif olarak, türlerinde ortak özelliklerde inceleyebilirsiniz `Microsoft.Build.Framework.XamlTypes` ad alanında `Microsoft.Build.Framework .dll` derleme.
 
    i. **DisplayName**, **PageTemplate**, ve **sipariş** bu var olan kullanıcı Arabirimi ile ilgili özellikleri Aksi durumda olan kullanıcı Arabirimi bağımsız veri modeli. Bu özellik sayfaları görüntülemek için kullanılan herhangi bir kullanıcı Arabirimi tarafından kullanılacak belirli neredeyse özelliklerdir. **DisplayName** ve **açıklama** neredeyse tüm öğelerin xml dosyasında bulunan iki özellik. Ve yerelleştirilmiş yalnızca iki özellik şunlardır (Bu dizelerin yerelleştirilmesi daha yeni bir gönderiyi verilecektir).
 

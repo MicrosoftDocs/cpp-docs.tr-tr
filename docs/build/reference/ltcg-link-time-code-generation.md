@@ -1,6 +1,6 @@
 ---
 title: /LTCG (Bağlama Zamanı Kodu Üretme)
-ms.date: 03/14/2018
+ms.date: 05/16/2019
 f1_keywords:
 - VC.Project.VCLinkerTool.LinkTimeCodeGeneration
 - VC.Project.VCConfiguration.WholeProgramOptimization
@@ -13,12 +13,12 @@ helpviewer_keywords:
 - -LTCG linker option
 - LTCG linker option
 ms.assetid: 788c6f52-fdb8-40c2-90af-4026ea2cf2e2
-ms.openlocfilehash: 40fb591952180735de3a2c226a3953a303c7d90f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: a8f13c32593d1cfef690d63d506faf14490de02d
+ms.sourcegitcommit: a10c9390413978d36b8096b684d5ed4cf1553bc8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62162363"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65837263"
 ---
 # <a name="ltcg-link-time-code-generation"></a>/LTCG (Bağlama Zamanı Kodu Üretme)
 
@@ -132,7 +132,7 @@ Bir işlev işaretçisi çağrılan bir işlev veya bir işlev kullanılarak der
 
 Kullanılarak derlenmiş modüller [/GL](gl-whole-program-optimization.md) ve [/CLR](clr-common-language-runtime-compilation.md) bağlayıcı giriş olarak kullanılabilir olduğunda **/LTCG** belirtilir.
 
-- **/ LTCG** yerel nesne dosyaları kabul edebilir ve karma yerel/Yönetilen Nesne dosyaları (kullanılarak derlenmiş **/CLR**). **/CLR: pure** ve **/CLR: safe** derleyici seçenekleri Visual Studio 2015'te kullanım dışı ve Visual Studio 2017'de desteklenmiyor.
+- **/ LTCG** yerel nesne dosyaları kabul edebilir ve karma yerel/Yönetilen Nesne dosyaları (kullanılarak derlenmiş **/CLR**). **/CLR: pure** ve **/CLR: safe** derleyici seçenekleri Visual Studio 2015'te kullanım dışı ve Visual Studio 2017 ve sonraki sürümlerde desteklenmiyor.
 
 - **/LTCG:PGI** kullanılarak derlenmiş yerel modülleri kabul etmiyor **/GL** ve   **/CLR**
 

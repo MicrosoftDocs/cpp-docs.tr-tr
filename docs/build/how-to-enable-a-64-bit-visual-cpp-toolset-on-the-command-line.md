@@ -1,6 +1,6 @@
 ---
 title: 'Nasıl yapılır: Komut satırında 64 Bit MSVC araç takımını etkinleştirme'
-ms.date: 03/29/2018
+ms.date: 05/16/2019
 helpviewer_keywords:
 - x64 [C++]
 - 64-bit compiler [C++], command line usage
@@ -12,12 +12,12 @@ helpviewer_keywords:
 - IPF, command-line compiler
 - x64 [C++], command-line compiler
 ms.assetid: 4da93a19-e20d-4778-902a-5eee9a6a90b5
-ms.openlocfilehash: 8436254a3d8c5c1dae018c2309ceaad7bd5b2408
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 24dd6355578e8e9e00064ccfdf31bc51b7fd12ec
+ms.sourcegitcommit: a10c9390413978d36b8096b684d5ed4cf1553bc8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62188918"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65836983"
 ---
 # <a name="how-to-enable-a-64-bit-x64-hosted-msvc-toolset-on-the-command-line"></a>Nasıl yapılır: 64 Bit etkinleştirmek için komut satırında MSVC araç takımı x64 barındırılan
 
@@ -32,7 +32,7 @@ Visual Studio Yükleyicisi'nde bir C++ iş yükünü yüklediğinizde, 32-bit x8
 
 ## <a name="use-a-64-bit-hosted-developer-command-prompt-shortcut"></a>Bir 64-bit barındırılan Geliştirici komut istemi kısayolunun kullanın
 
-Ek Geliştirici komut istemi kısayolları 64-bit, x64 barındırılan yerel ve çapraz derleyiciler, Visual Studio 64-bit Windows işletim sisteminde yüklü olduğunda kullanılabilir. Üzerinde Windows 10, bu komut istemlerine erişmek için **Başlat** menüsünde, Visual Studio sürümünüz için örneğin yapıtlarını **Visual Studio 2017**, yerel veya çapraz araç x64 birini seçin Geliştirici komut istemleri. Üzerinde Windows 8'de, bu komut istemlerine erişmek için **Başlat** ekran açık **tüm uygulamalar**. Visual Studio'nın yüklü sürümü başlığı altında açık **Visual Studio** klasörü (Visual Studio'nun eski sürümleri adlandırılabilir **Visual Studio Araçları**). Önceki Windows sürümlerinde seçin **Başlat**, genişletme **tüm programlar**, sürümünüz için klasör **Visual Studio** (ve Visual Studio'nun daha eski sürümlerindeki  **Visual Studio Araçları**). Daha fazla bilgi için [Geliştirici komut istemi kısayolları](building-on-the-command-line.md#developer_command_prompt_shortcuts).
+Ek Geliştirici komut istemi kısayolları 64-bit, x64 barındırılan yerel ve çapraz derleyiciler, Visual Studio 64-bit Windows işletim sisteminde yüklü olduğunda kullanılabilir. Üzerinde Windows 10, bu komut istemlerine erişmek için **Başlat** menüsünde, Visual Studio sürümünüz için örneğin yapıtlarını **Visual Studio 2019**, yerel veya çapraz araç x64 birini seçin Geliştirici komut istemleri. Üzerinde Windows 8'de, bu komut istemlerine erişmek için **Başlat** ekran açık **tüm uygulamalar**. Visual Studio'nın yüklü sürümü başlığı altında açık **Visual Studio** klasörü (Visual Studio'nun eski sürümleri adlandırılabilir **Visual Studio Araçları**). Önceki Windows sürümlerinde seçin **Başlat**, genişletme **tüm programlar**, sürümünüz için klasör **Visual Studio** (ve Visual Studio'nun daha eski sürümlerindeki  **Visual Studio Araçları**). Daha fazla bilgi için [Geliştirici komut istemi kısayolları](building-on-the-command-line.md#developer_command_prompt_shortcuts).
 
 ## <a name="use-vcvarsallbat-to-set-a-64-bit-hosted-build-architecture"></a>Bir 64-bit barındırılan yapı mimarisi için Vcvarsall.bat kullanın
 

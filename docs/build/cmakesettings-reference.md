@@ -1,19 +1,19 @@
 ---
 title: CMakeSettings.json şema başvurusu
-ms.date: 04/25/2019
+ms.date: 05/16/2019
 helpviewer_keywords:
 - CMake in Visual C++
 ms.assetid: 444d50df-215e-4d31-933a-b41841f186f8
-ms.openlocfilehash: 80392eedd5ef50ddd9c9bcb81c1605a534088133
-ms.sourcegitcommit: 18d3b1e9cdb4fc3a76f7a650c31994bdbd2bde64
+ms.openlocfilehash: 018a755aa4f3acde44fe1dbb33b07b49c8d1c223
+ms.sourcegitcommit: a10c9390413978d36b8096b684d5ed4cf1553bc8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/29/2019
-ms.locfileid: "64877099"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65837250"
 ---
 # <a name="cmakesettingsjson-schema-reference"></a>CMakeSettings.json şema başvurusu
 
-**Cmakesettings.json**' dosyası Visual Studio belirtilen platform için bir proje oluşturmak için CMake ile nasıl etkileşim kuracağını belirten bilgileri içerir. Dosya, ortam değişkenleri ya da cmake.exe ortam için bağımsız değişkenler gibi bilgileri depolar. Doğrudan düzenlemeniz veya kullanın **CMake ayarları Düzenleyicisi**. Bkz: [özelleştirme CMake derleme ayarları Visual Studio'da](customize-cmake-settings.md) Düzenleyicisi hakkında daha fazla bilgi.
+**Cmakesettings.json**' dosyası Visual Studio belirtilen platform için bir proje oluşturmak için CMake ile nasıl etkileşim kuracağını belirten bilgileri içerir. Dosya, ortam değişkenleri ya da cmake.exe ortam için bağımsız değişkenler gibi bilgileri depolar. Doğrudan düzenlemeniz veya kullanın **CMake ayarları Düzenleyicisi** (2019 ve daha sonra Visual Studio). Bkz: [özelleştirme CMake derleme ayarları Visual Studio'da](customize-cmake-settings.md) Düzenleyicisi hakkında daha fazla bilgi.
 
 ## <a name="environments"></a>Ortamlar
 
@@ -28,7 +28,7 @@ ms.locfileid: "64877099"
    "inheritEnvironments": [ "msvc_x64_x64" ]
    ```
 
-   Yukarıdaki örnekte çalışan aynıdır **VS 2017 için geliştirici komut istemi** ile **-arch = amd64-host_arch amd64 =** bağımsız değişkenler. Önceden tanımlanmış bu ortamları veya herhangi bir özel ortama kullanılabilir:
+   Yukarıdaki örnekte çalışan aynıdır **VS 2017 için geliştirici komut istemi** veya **VS 2019 için geliştirici komut istemi** ile **-arch = amd64-host_arch amd64 =** bağımsız değişkenler. Önceden tanımlanmış bu ortamları veya herhangi bir özel ortama kullanılabilir:
  
   - linux_arm: ARM Linux'u uzaktan hedefleyin.
   - linux_x64: Hedef x64 Linux uzaktan.
@@ -50,7 +50,13 @@ A `configuration` şu özelliklere sahiptir:
 - `name`: yapılandırma adları.
 - `description`: menülerde görünür bu yapılandırma açıklaması.
 - `generator`: Bu yapılandırma için kullanılacak CMake Oluşturucu belirtir. Aşağıdakilerden biri olabilir:
+  
+  **Yalnızca Visual Studio 2019:**
+  - Visual Studio 16 2019
+  - Visual Studio 16 2019 Win64
+  - Visual Studio 16 2019 ARM
 
+  **Visual Studio 2017 ve sonraki sürümleri:**
   - Visual Studio 15 2017
   - Visual Studio 15 2017 Win64
   - Visual Studio 15 2017 ARM
@@ -62,7 +68,9 @@ A `configuration` şu özelliklere sahiptir:
 
 Ninja, esneklik ve işlevi yerine hızlı derleme hızı için tasarlandığından, varsayılan olarak ayarlanır. Ancak, bazı CMake projelerini Ninja kullanarak doğru şekilde derlenmesi olabilir. Bu meydana gelirse, bunun yerine Visual Studio projesi oluşturmak için CMake bildirebilirsiniz.
 
-Visual Studio Oluşturucu belirtmek için açık `CMakeSettings.json` seçerek ana menüden **CMake | CMake ayarlarını değiştir**. "Ninja" silin ve "V" yazın. Bu, istediğiniz Oluşturucu seçmenize olanak sağlayan IntelliSense etkinleştirir.
+Visual Studio 2017'de Visual Studio Oluşturucu belirtmek için açık `CMakeSettings.json` seçerek ana menüden **CMake | CMake ayarlarını değiştir**. "Ninja" silin ve "V" yazın. Bu, istediğiniz Oluşturucu seçmenize olanak sağlayan IntelliSense etkinleştirir.
+
+Visual Studio oluşturucu içinde Visual Studio 2019 belirtmek için CMakeLists.txt dosyasına sağ **Çözüm Gezgini** ve **CMake proje ayarlarını** > **Göster Gelişmiş ayarlar** > **CMake Oluşturucu**.
 
 Etkin yapılandırma bir Visual Studio oluşturucuyu belirttiğinde, varsayılan olarak MSBuild.exe ile çağrılan `-m -v:minimal` bağımsız değişkenler. Derleme içinde özelleştirmek için `CMakeSettings.json` , belirtebileceğiniz ek dosya [MSBuild komut satırı bağımsız değişkenleri](../build/reference/msbuild-visual-cpp-overview.md) yapı sistemi geçirilecek `buildCommandArgs` özelliği:
 

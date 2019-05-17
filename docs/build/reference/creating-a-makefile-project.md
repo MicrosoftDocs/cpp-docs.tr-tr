@@ -1,18 +1,18 @@
 ---
 title: Visual Studio'da C++ derleme görevleri dosyası projesi oluşturma
-ms.date: 12/08/2018
+ms.date: 05/16/2019
 f1_keywords:
 - vc.appwiz.makefile.project
 helpviewer_keywords:
 - Makefile projects, creating
 - project files [C++], Makefile projects
 ms.assetid: dd077af3-97a8-48fb-baaa-cf7e07ddef61
-ms.openlocfilehash: 9c2edfe35233672e8117d336ba40cfea497b1a22
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b460b16b3a64818501187b00e503ad0179d26443
+ms.sourcegitcommit: a10c9390413978d36b8096b684d5ed4cf1553bc8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62272353"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65837388"
 ---
 # <a name="create-a-c-makefile-project"></a>C++ derleme görevleri dosyası projesi oluşturma
 
@@ -23,6 +23,7 @@ Mevcut bir derleme görevleri dosyası projesi varsa, kod ve/veya Visual Studio 
 - Visual Studio'da Visual Studio IntelliSense için kullanacağı bir .vcxproj dosyası yapılandırmak için mevcut derleme görevleri dosyası kullanan bir derleme görevleri dosyası projesi oluşturun. (, Yerel bir MSBuild projesi ile aldığınız tüm IDE özelliklerini yoktur.) Bkz: [makefile projesi oluşturmak için](#create_a_makefile_project) aşağıda.
 - Kullanım **varolan kod dosyalarından yeni proje oluştur** kaynak kodunuzu yerel bir MSBuild projesi oluşturmak için Sihirbazı. Orijinal derleme görevleri dosyası bundan sonra kullanılmaz. Daha fazla bilgi için [nasıl yapılır: Varolan koddan C++ projesi oluşturma](../how-to-create-a-cpp-project-from-existing-code.md).
 - **Visual Studio 2017 ve üzeri**: Kullanım **Klasör Aç** düzenleyin ve bir derleme görevleri dosyası projesi olarak oluşturmak için özellik-tüm MSBuild sistemi katılımı olduğu. Daha fazla bilgi için [C++ açık klasörü projelerde](../open-folder-projects-cpp.md).
+- **Visual Studio 2019 ve üzeri**: Linux için UNIX makefile projesi oluşturun.
 
 ## <a name="a-namecreateamakefileproject-to-create-a-makefile-project-with-the-makefile-project-template"></a><a name="create_a_makefile_project"> Derleme görevleri dosyası proje şablonuyla bir derleme görevleri dosyası projesi oluşturmak için
 
@@ -34,11 +35,29 @@ Varsayılan olarak, derleme görevleri dosyası projesi hiçbir dosya Çözüm G
 
 Projede belirttiğiniz çıktı dosyasının, derleme komut dosyasının oluşturduğu ad üzerinde hiçbir etkisi yoktur; yalnızca bir amaç belirtir. Derleme görevleri dosyası yine de derleme işlemini denetler ve yapı hedeflerini belirtir.
 
+::: moniker range="vs-2019"
+
+### <a name="to-create-a-makefile-project-in-visual-studio-2019"></a>Visual Studio 2019 içinde bir derleme görevleri dosyası projesi oluşturmak için
+
+1. Visual Studio ana menüden seçin **dosya** > **yeni** > **proje** ve arama kutusuna "derleme görevleri dosyası" yazın. Veya **yeni proje** iletişim kutusunda **Visual C++**   >  **genel** (Visual Studio 2015) veya **diğer** () Visual Studio 2017) ve ardından olup, Windows veya Linux hedefleyecektir bağlı olarak iki seçenek seçin.
+
+1. **Yalnızca Windows**: İçinde **hata ayıklama yapılandırma ayarlarını** sayfasında, komut çıktısında, temizleme ve yeniden oluşturma bilgileri için hata ayıklama ve perakende derlemeleri sağlayın. Tıklayın **sonraki** yayın yapılandırması için farklı ayarlar belirlemek istiyorsanız.
+
+1. Tıklayın **son** iletişim kutusunu kapatmak ve yeni oluşturulan projeyi **Çözüm Gezgini**.
+
+::: moniker-end
+
+::: moniker range="<=vs-2017"
+
+### <a name="to-create-a-makefile-project-in-visual-studio-2015-or-visual-studio-2017"></a>Visual Studio 2015 veya Visual Studio 2017 derleme görevleri dosyası projesi oluşturmak için
+
 1. "Derleme görevleri dosyası" yazın Visual Studio başlangıç sayfasından **yeni proje** arama kutusu. Veya **yeni proje** iletişim kutusunda **Visual C++** > **genel** (Visual Studio 2015) veya **diğer** (görsel Studio 2017'de) ve ardından **derleme görevleri dosyası projesi** Proje Sihirbazı'nı açmak için şablonlar bölmesindeki.
 
 1. İçinde **uygulama ayarları** sayfasında, komut çıktısında, temizleme ve yeniden oluşturma bilgileri için hata ayıklama ve perakende derlemeleri sağlayın.
 
 1. Tıklayın **son** sihirbazı kapatın ve yeni oluşturulan projeyi **Çözüm Gezgini**.
+
+::: moniker-end
 
 Özellik sayfasında projenin özelliklerini görüntüleyebilir ve düzenleyebilirsiniz. Bkz: [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md) özellik sayfasını görüntüleme hakkında bilgi.
 

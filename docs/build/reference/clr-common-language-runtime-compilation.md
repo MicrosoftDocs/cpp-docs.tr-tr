@@ -1,6 +1,6 @@
 ---
 title: /clr (Ortak Dil Çalışma Zamanı Derlemesi)
-ms.date: 09/18/2018
+ms.date: 05/16/2019
 f1_keywords:
 - /CLR
 - VC.Project.VCNMakeTool.CompileAsManaged
@@ -13,12 +13,12 @@ helpviewer_keywords:
 - Managed Extensions for C++, compiling
 - common language runtime, /clr compiler option
 ms.assetid: fec5a8c0-40ec-484c-a213-8dec918c1d6c
-ms.openlocfilehash: ea4a878afea4453796277486da88b85e7f74883c
-ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
+ms.openlocfilehash: fa2be3d3ce17df104cda121e4869c975ec6dd440
+ms.sourcegitcommit: a10c9390413978d36b8096b684d5ed4cf1553bc8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2019
-ms.locfileid: "65446530"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65837302"
 ---
 # <a name="clr-common-language-runtime-compilation"></a>/clr (Ortak Dil Çalışma Zamanı Derlemesi)
 
@@ -39,11 +39,11 @@ Bir veya daha fazla aşağıdaki anahtarları, virgülle ayrılmış.
 
 - **saf**
 
-   **/ CLR: pure kullanım dışı**. Seçeneği, Visual Studio 2017'de kaldırılır. Saf MSIL C# için gereken kod bağlantı noktası öneririz.
+   **/ CLR: pure kullanım dışı**. Seçeneği, Visual Studio 2017 ve sonraki sürümlerinde kaldırılır. Saf MSIL C# için gereken kod bağlantı noktası öneririz.
 
 - **Güvenli**
 
-   **/ CLR: safe kullanım dışı**. Seçeneği, Visual Studio 2017'de kaldırılır. Güvenli MSIL C# için gereken kod bağlantı noktası öneririz.
+   **/ CLR: safe kullanım dışı**. Seçeneği, Visual Studio 2017 ve sonraki sürümlerinde kaldırılır. Güvenli MSIL C# için gereken kod bağlantı noktası öneririz.
 
 - **noAssembly**
 

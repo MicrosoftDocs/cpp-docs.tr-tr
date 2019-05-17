@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - /clr compiler option [C++], restrictions
 ms.assetid: 385f6462-2c68-46d6-810e-469553ead447
-ms.openlocfilehash: 21b7ead553871854c73021756eb2086f9e6e7393
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: d0318ce2e23f92600d5a78d6472646ec91492152
+ms.sourcegitcommit: a10c9390413978d36b8096b684d5ed4cf1553bc8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62294466"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65837371"
 ---
 # <a name="clr-restrictions"></a>/clr Kısıtlamalar
 
@@ -70,7 +70,7 @@ Kullanımı ile ilgili aşağıdaki kısıtlamalara dikkat edin **/CLR**:
 
 - Değişken sayıda bağımsız değişkenler (varargs) almayan işlevleri yerel işlevleri oluşturulur. Değişken bağımsız değişken konumu içindeki herhangi bir yönetilen veri türleri için yerel türler sıralanacağını. Unutmayın <xref:System.String?displayProperty=fullName> türleri gerçekten geniş karakterli dizelerdir, ancak tek baytlı karakter dizeleri için hazırlanırlar. Printf belirticisi %S (wchar_t *) ise, bu nedenle, %s dizeye yerine sıralama.
 
-- Va_arg makrosu kullanırken ile derlerken beklenmeyen sonuçlar alabilirsiniz **/CLR: pure**. Daha fazla bilgi için [va_copy, olan va_arg, va_end, va_start](../../c-runtime-library/reference/va-arg-va-copy-va-end-va-start.md). **/CLR: pure** ve **/CLR: safe** derleyici seçenekleri Visual Studio 2015'te kullanım dışı ve Visual Studio 2017'de desteklenmiyor. "Saf" veya "güvenli" olmalıdır kod unity'nin için C#.
+- Va_arg makrosu kullanırken ile derlerken beklenmeyen sonuçlar alabilirsiniz **/CLR: pure**. Daha fazla bilgi için [va_copy, olan va_arg, va_end, va_start](../../c-runtime-library/reference/va-arg-va-copy-va-end-va-start.md). **/CLR: pure** ve **/CLR: safe** derleyici seçenekleri Visual Studio 2015'te kullanım dışı ve Visual Studio 2017 ve sonraki sürümlerde desteklenmiyor. "Saf" veya "güvenli" olmalıdır kod unity'nin için C#.
 
 - Size, yönetilen koddan (işlev bağımsız değişkenleri); parametre bilgilerini almak için stack size yol gösteren tüm işlevleri çağırmalıdır değil P/Invoke katmanı yığın ayırabilir, bu bilgileri neden olur.  Örneğin, proxy/saplama derlenmiyor **/CLR**.
 

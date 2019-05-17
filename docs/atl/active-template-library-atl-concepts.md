@@ -4,12 +4,12 @@ ms.date: 05/06/2019
 helpviewer_keywords:
 - ATL, about ATL
 ms.assetid: a3960991-4d76-4da5-9568-3fa7fde53ff4
-ms.openlocfilehash: 785b929e935962f6461ffbc3722f573a61cb8749
-ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.openlocfilehash: a7b6a40eaed05462f3aa5c877a1c4da3e19c0b03
+ms.sourcegitcommit: a10c9390413978d36b8096b684d5ed4cf1553bc8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65221305"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65836994"
 ---
 # <a name="active-template-library-atl-concepts"></a>Etkin Şablon Kitaplığı (ATL) Kavramlar
 
@@ -18,9 +18,6 @@ Etkin Şablon kitaplığı (ATL), küçük, hızlı Bileşen Nesne Modeli (COM) 
 ATL programlama birçok bunu yaparsanız, COM ve .NET öznitelikleri hakkında daha fazla bilgi edinmek, COM programlama basitleştirmek için tasarlanmış isteyebilirsiniz. Daha fazla bilgi için [Öznitelikli Programlama](../windows/attributed-programming-concepts.md). (COM ve .NET öznitelikleri olduğundan ile karıştırılmamalıdır \[ \[özniteliği]] içinde özellik C++ standart.)
 
 ## <a name="in-this-section"></a>Bu Bölümde
-
-[ATL öğretici](../atl/active-template-library-atl-tutorial.md)<br/>
-Bir denetimin oluşturulmasını müşteri adayları ve işleminde bazı ATL temelleri gösterir.
 
 [COM ve ATL’ye Giriş](../atl/introduction-to-com-and-atl.md)<br/>
 Bileşen Nesne Modeli (COM) arkasında önemli kavramlar tanıtılmaktadır. Bu makalede, ATL nedir ve hangi durumlarda kullanmalıdır de kısaca açıklanmaktadır.
@@ -86,6 +83,9 @@ Programlama yaparken dikkat gerektiren birkaç durum anlatılmaktadır `CComBSTR
 Yollar ve URL'leri biçiminde işlemek için kod sağlar [CPathT](../atl/reference/cpatht-class.md) ve [CUrl](../atl/reference/curl-class.md). İş parçacığı havuzu [CThreadPool](../atl/reference/cthreadpool-class.md), kendi uygulamalarında kullanılabilir. Bu kod, atlpath.h ve atlutil.h bulunabilir.
 
 ## <a name="related-sections"></a>İlgili Bölümler
+
+[ATL öğretici](../atl/active-template-library-atl-tutorial.md)<br/>
+Bir denetimin oluşturulmasını müşteri adayları ve işleminde bazı ATL temelleri gösterir.
 
 [ATL örnekleri](../overview/visual-cpp-samples.md)<br/>
 Açıklamaları ve örnek ATL programları için bağlantılar sağlar.

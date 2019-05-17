@@ -1,6 +1,6 @@
 ---
 title: / CLRUNMANAGEDCODECHECK (SuppressUnmanagedCodeSecurityAttribute Kaldır)
-ms.date: 09/27/2018
+ms.date: 05/16/2019
 ms.topic: reference
 f1_keywords:
 - /CLRUNMANAGEDCODECHECK
@@ -10,12 +10,12 @@ helpviewer_keywords:
 ms.assetid: 73abc426-dab0-45e2-be85-0f9a14206cc2
 author: corob-msft
 ms.author: corob
-ms.openlocfilehash: cb23106648e3325755a857d0b962112e9bdcfac4
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: ecc560673a8e98752289ef0e0f89d3abfc1938e4
+ms.sourcegitcommit: a10c9390413978d36b8096b684d5ed4cf1553bc8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62294427"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65837237"
 ---
 # <a name="clrunmanagedcodecheck-remove-suppressunmanagedcodesecurityattribute"></a>/ CLRUNMANAGEDCODECHECK (SuppressUnmanagedCodeSecurityAttribute Kaldır)
 
@@ -29,7 +29,7 @@ ms.locfileid: "62294427"
 
 Varsayılan olarak, bağlayıcı uygular **SuppressUnmanagedCodeSecurityAttribute** için bağlayıcı tarafından oluşturulan `PInvoke` çağırır. Zaman **/clrunmanagedcodecheck** kıyaslandığında geçerli **SuppressUnmanagedCodeSecurityAttribute** kaldırılır. Açıkça uygulamak için **SuppressUnmanagedCodeSecurityAttribute** için bağlayıcı tarafından oluşturulan `PInvoke` kullanabileceğiniz çağrıları **/CLRUNMANAGEDCODECHECK:NO**.
 
-Bağlayıcı, yalnızca öznitelik kullanılarak derlenmiş nesneleri ekler **/CLR** veya **/CLR: pure**. Ancak, **/CLR: pure** derleyici seçeneğini Visual Studio 2015'te kullanım dışı ve Visual Studio 2017'de desteklenmiyor.
+Bağlayıcı, yalnızca öznitelik kullanılarak derlenmiş nesneleri ekler **/CLR** veya **/CLR: pure**. Ancak, **/CLR: pure** derleyici seçeneğini Visual Studio 2015'te kullanım dışı ve Visual Studio 2017 ve sonraki sürümlerde desteklenmiyor.
 
 A `PInvoke` çağrı, bağlayıcı tarafından oluşturulur, bağlayıcı yönetilen çağıran bir başvurudan karşılamak için yönetilen bir sembolü bulunamadı, ancak bu başvuruyu karşılamak için bir yerel sembol bulabilirsiniz. Hakkında daha fazla bilgi için `PInvoke`, bkz: [yönetilen koddan yerel işlevleri çağırma](../../dotnet/calling-native-functions-from-managed-code.md).
 

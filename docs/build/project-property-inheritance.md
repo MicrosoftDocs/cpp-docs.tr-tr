@@ -1,14 +1,14 @@
 ---
 title: Visual Studio projelerindeki - C++ özellik devralma
-ms.date: 12/10/2018
+ms.date: 05/16/2019
 helpviewer_keywords:
 - C++ projects, property inheritance
-ms.openlocfilehash: 7e6e2ec4e4f1999639a1b0a0d7ce35873736e5e3
-ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.openlocfilehash: 472700226ffc1f265f6fab84dbd44fca651b3c87
+ms.sourcegitcommit: a10c9390413978d36b8096b684d5ed4cf1553bc8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65220446"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65837399"
 ---
 # <a name="property-inheritance-in-visual-studio-projects"></a>Visual Studio projelerinde özellik devralma
 
@@ -16,7 +16,7 @@ Visual Studio Proje sistemi dosya biçimlerini ve projeleri oluşturmak için ku
 
 ## <a name="the-vcxproj-file-props-files-and-targets-files"></a>.Vcxproj dosyası, .props dosyaları ve .targets dosyaları
 
-Proje özellikleri, proje dosyası (*.vcxproj) içinde doğrudan ya da proje dosyası içeri aktarmalar ve hangi varsayılan değerler sağlamanız diğer .targets veya .props dosyalarında depolanır. Visual Studio 2015 için bu dosyalar bulunur **\Program dosyaları (x86)\MSBuild\Microsoft.Cpp\v4.0\V140**. Bu dosyalar bulunan Visual Studio 2017 için  **\\Program dosyaları (x86)\\Microsoft Visual Studio\\2017\\_edition_\\Common7\\ IDE\\VC\\VCTargets**burada _edition_ olan Visual Studio sürümü yüklü. Özellikleri, ayrıca kendi projenize ekleyebilirsiniz. herhangi özel .props dosyalarında depolanır. OLMAYAN dosyaları el ile düzenlemeniz ve bunun yerine özellik sayfaları IDE'de, özellikle de MSBuild çok iyi bir anlayışa sahip olduğunuz sürece, Devralmada rol oynayan tüm özelliklerini değiştirmek için kullanmanızı öneririz.
+Proje özellikleri, proje dosyası (*.vcxproj) içinde doğrudan ya da proje dosyası içeri aktarmalar ve hangi varsayılan değerler sağlamanız diğer .targets veya .props dosyalarında depolanır. Visual Studio 2015 için bu dosyalar bulunur **\Program dosyaları (x86)\MSBuild\Microsoft.Cpp\v4.0\V140**. Visual Studio 2017 veya Visual Studio 2019 için bu dosyalar bulunur  **\\Program dosyaları (x86)\\Microsoft Visual Studio\\&lt;2017 veya 2019 >\\_sürümü_  \\Common7\\IDE\\VC\\VCTargets**burada _edition_ olan Visual Studio sürümü yüklü. Özellikleri, ayrıca kendi projenize ekleyebilirsiniz. herhangi özel .props dosyalarında depolanır. OLMAYAN dosyaları el ile düzenlemeniz ve bunun yerine özellik sayfaları IDE'de, özellikle de MSBuild çok iyi bir anlayışa sahip olduğunuz sürece, Devralmada rol oynayan tüm özelliklerini değiştirmek için kullanmanızı öneririz.
 
 Daha önce gösterildiği gibi bu farklı dosyalar farklı bir değer için olan aynı yapılandırmanın aynı özelliğe atanabilir. Bir proje oluşturduğunuzda, MSBuild altyapısına proje dosyası ve içeri aktarılan tüm dosyaları (aşağıda açıklanmıştır) iyi tanımlanmış bir sırayla değerlendirir. Her dosya değerlendirilir gibi bu dosyada tanımlanan tüm özellik değerlerini mevcut değerler geçersiz kılınır. Belirtilmeyen herhangi bir değeri, daha önce değerlendirilen dosyalarından devralınır. Özellik sayfaları ile bir özelliğini ayarladığınızda, bu nedenle, aynı zamanda için ayarladığınız yere dikkat etmeniz önemlidir. Bir .props dosyası içinde "X" bir özelliği ayarlamak, ancak özelliği proje dosyasında "Y" olarak ayarlanmış, "Y" özelliği ile proje oluşturacaksınız. Aynı özellik bir .cpp dosyası gibi bir proje öğesi "Z" olarak ayarlanır, MSBuild altyapısına "Z" değerini kullanın. 
 
@@ -67,7 +67,7 @@ Derleme yapılandırmaları hakkında daha iyi bir fikir edinmek için açık **
 
 Özellik sayfaları genel bölmesine gidin "Ayarlı değil" yerine "Kullanımı Unicode" için karakter kümesi özelliğini ve tıklayın, **Tamam**, özellik Yöneticisi gösterir hiçbir **Unicode desteği** için özellik sayfası Geçerli yapılandırma, ancak yine de diğer yapılandırmalar için olacak.
 
-Özellik Yöneticisi ve özellik sayfaları hakkında daha fazla bilgi için bkz: [paylaşımı veya resuse Visual Studio C++ proje ayarlarını](create-reusable-property-configurations.md).
+Özellik Yöneticisi ve özellik sayfaları hakkında daha fazla bilgi için bkz: [paylaşımını veya yeniden Visual Studio C++ proje ayarları](create-reusable-property-configurations.md).
 
 > [!TIP]
 > .User dosyasını eski bir özelliktir ve doğru şekilde yapılandırma/platform göre gruplandırılmış bir özellikler tutulabilmesi için sildiğini öneririz.

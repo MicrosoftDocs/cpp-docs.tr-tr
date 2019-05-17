@@ -1,17 +1,19 @@
 ---
 title: Programları Windows XP için yapılandırma
-ms.date: 02/02/2018
+ms.date: 05/16/2019
 ms.assetid: 1e4487b3-d815-4123-878b-5718b22f0fd5
-ms.openlocfilehash: f27921e062fd8abb7bc9b63bfbb9b050f25ee54b
-ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
+ms.openlocfilehash: 6c94c6a66d0f22b8707012856a65df4b19965acb
+ms.sourcegitcommit: a10c9390413978d36b8096b684d5ed4cf1553bc8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2019
-ms.locfileid: "65446367"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65837131"
 ---
 # <a name="configuring-programs-for-windows-xp"></a>Programları Windows XP için yapılandırma
 
 Visual Studio, birden çok platform araç takımları desteklediğinden, işletim sistemleri ve varsayılan araç takımı tarafından desteklenmez çalışma zamanı kitaplıklarını hedefleyebilir. Örneğin, platform araç takımını geçerek, C ++ 11, C ++ 14 ve C ++ 17 dil geliştirmelerini Visual Studio'da MSVC derleyicisi tarafından desteklenen Windows XP ve Windows Server 2003 hedefleyen uygulamalar oluşturmak için kullanabilirsiniz. Ayrıca ikili ile uyumlu eski kod korumak için eski platform araç takımları kullanacak ve yine de Visual Studio IDE'nin en son özelliklerden yararlanın.
+
+Visual Studio 2019 ve üzeri v142 araç setini kullanarak, Windows XP için kod oluşturmak için destek içermez. Visual Studio 2017'de sevk v141 Araç Takımı'nı kullanarak Windows XP geliştirme desteği için Visual Studio Yükleyicisi'nde isteğe bağlı bir bileşen olarak kullanılabilir.
 
 ## <a name="install-the-windows-xp-platform-toolset"></a>Windows XP platform araç takımını yükleyin
 
