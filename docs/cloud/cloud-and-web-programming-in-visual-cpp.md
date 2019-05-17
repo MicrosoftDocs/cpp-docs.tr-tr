@@ -1,25 +1,21 @@
 ---
 title: Visual C++'da Bulut ve Web Programlama
-ms.date: 11/04/2016
+ms.date: 05/14/2019
 ms.assetid: b63611f1-9723-44d0-ba7f-c3ebef341313
-ms.openlocfilehash: 3d71e36b6209c693940f2ebe6b5e9c73bc0c9d9d
-ms.sourcegitcommit: fc1de63a39f7fcbfe2234e3f372b5e1c6a286087
+ms.openlocfilehash: 677e9da18e8d171f523994d21bfbd0411270e3c8
+ms.sourcegitcommit: bc1b14f29a02685f97c7ef5c098d16db6eaf369f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65708039"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "65790355"
 ---
 # <a name="cloud-and-web-programming-in-visual-c"></a>Visual C++'da Bulut ve Web Programlama
 
 C++'da, web ve buluta bağlamak için birkaç seçeneğiniz vardır.
 
-## <a name="cloud-programming-options"></a>Bulut programlama seçenekleri
+## <a name="microsoft-azure-sdks-and-rest-services"></a>Microsoft Azure SDK'ları ve REST Hizmetleri
 
-- [Windows Azure mobil hizmetler](http://www.windowsazure.com/develop/mobile/)
-
-  Windows Azure mobil Hizmetler'e bağlanmak için evrensel Windows Platformu (UWP) uygulamaları veya Windows masaüstü uygulamalarında kullanabileceğiniz yerel API'ler sağlar. Web sitesindeki örneklerin çoğu C# ' de olsa da, C++ de kullanabilirsiniz. Daha fazla bilgi için [hızlı başlangıç: C++ kullanarak mobil hizmet ekleme](https://msdn.microsoft.com/library/windows/apps/dn263181.aspx).
-
-- [C++ için Microsoft Azure depolama istemci kitaplığı](https://blogs.msdn.microsoft.com/windowsazurestorage/2015/04/29/microsoft-azure-storage-client-library-for-c-v1-0-0-general-availability/)
+- [C++ için Microsoft Azure depolama istemci kitaplığı](https://azure.github.io/azure-storage-cpp/)
 
   C++ için Azure depolama istemci kitaplığı, ancak bunlarla sınırlı olmamak aşağıdaki yetenekleri dahil olmak üzere Azure depolama ile çalışmak için kapsamlı bir API sağlar:
 
@@ -29,17 +25,21 @@ C++'da, web ve buluta bağlamak için birkaç seçeneğiniz vardır.
   - Sıraya alma ve bir Azure kuyruğundaki iletileri sıradan çıkarma.
   - Kapsayıcıları, blobları, tablolar ve Kuyruklar gevşek listelemek ve gevşek varlıkları sorgulama
 
-- [OneDrive API](https://dev.onedrive.com/README.htm)
+- ANSI C99 [Azure IOT Hub SDK'ları](/azure/iot-hub/iot-hub-devguide-sdks) nesnelerin interneti için arka uç veya cihaz üzerinde çalıştırmak IOT uygulamaları etkinleştirin.
+
+- [OneDrive ve SharePoint Microsoft Graph'te](https://dev.onedrive.com/README.htm)
 
   OneDrive API uygulamanızı dosyalara ve klasörlere Office 365 ve SharePoint Server 2016'ya bağlanmak için HTTP Hizmetleri sunmaktadır.
 
-- [C++ REST SDK (Codename "Kazablanka")](https://github.com/Microsoft/cpprestsdk)
+## <a name="windows-and-cross-platform-networking-apis"></a>Windows ve platformlar arası ağ API'leri
+
+- [C++REST SDK (kod adı "Casablanca")](https://github.com/Microsoft/cpprestsdk)
 
   REST Hizmetleri ile etkileşim kurmaya yönelik modern, platformlar arası, zaman uyumsuz bir API sağlar.
 
   - JSON belgesini ayrıştırmak ve seri hale getirme için yerleşik destek sunan herhangi bir HTTP sunucusu karşı REST çağrılarını gerçekleştirme
   - OAuth 1 ve 2 ' nin yerel bir yeniden yönlendirme dinleyici dahil olmak üzere destekler
-  - Uzak Hizmetleri karşı Websockets bağlantıları oluşturma
+  - Uzak Hizmetleri karşı WebSockets bağlantıları oluşturma
   - Tam olarak zaman uyumsuz bir görev gibi yerleşik iş parçacığı havuzu PPL üzerinde temel API
 
   Windows Masaüstü (7 +), Windows Server (2012 +), Evrensel Windows platformu, Linux, OSX, Android ve iOS destekler.
@@ -59,4 +59,5 @@ C++'da, web ve buluta bağlamak için birkaç seçeneğiniz vardır.
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Visual Studio’da C++](../overview/visual-cpp-in-visual-studio.md) <br/>
-[Ağlara ve web Hizmetleri](/windows/uwp/networking/)
+[Microsoft Azure C ve C++ Geliştirici Merkezi](https://azure.microsoft.com/develop/cpp/) <br/>
+[Ağlara ve web hizmetlerine (UWP)](/windows/uwp/networking/)

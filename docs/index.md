@@ -4,12 +4,12 @@ title: Visual C++ belgeleri
 description: C++ uygulamaları, hizmetleri ve araçları, platformlar ve cihazlar için geliştirmek için kullanmayı öğrenin.
 author: mikeblome
 ms.author: mblome
-ms.openlocfilehash: f402087b101487a444996e7e27b186382c4874fd
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 5db891bd1ed7a51a623dadfd5cc4e40a081cf0e7
+ms.sourcegitcommit: bc1b14f29a02685f97c7ef5c098d16db6eaf369f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62264445"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "65789011"
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -423,7 +423,7 @@ ms.locfileid: "62264445"
                                 </a>
                             </li>
                             <li>
-                                <a href="https://github.com/Microsoft/cpprestsdk">
+                                <a href="/cpp/cloud/cloud-and-web-programming-in-visual-cpp">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -433,8 +433,8 @@ ms.locfileid: "62264445"
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Ağ kitaplıkları</h3>
-                                                    <p>Web programlama için C++ REST SDK (kod adı Kazablanka) açık kaynak kitaplığı.</p>
+                                                    <h3>Bulut ve ağ kitaplıkları</h3>
+                                                    <p>Microsoft Azure C kullanma /C++ için IOT, depolama ve diğer SDK'lar ve C++ web programlama için REST SDK açık kaynak kitaplığı.</p>
                                                 </div>
                                             </div>
                                         </div>
