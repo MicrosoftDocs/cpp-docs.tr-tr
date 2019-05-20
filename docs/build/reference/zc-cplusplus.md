@@ -1,17 +1,17 @@
 ---
 title: '/ ZC: __cplusplus (güncelleştirilmiş __cplusplus makrosu etkinleştir)'
-ms.date: 05/30/2018
+ms.date: 05/16/2019
 f1_keywords:
 - /Zc:__cplusplus
 helpviewer_keywords:
 - -Zc:__cplusplus compiler option (C++)
 - __cplusplus macro (C++)
-ms.openlocfilehash: 89545f541f32374a47dce7f87958e61873c1b47c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 43392438eabc7cc7f6decb1349d112a0ce5bd0f5
+ms.sourcegitcommit: a10c9390413978d36b8096b684d5ed4cf1553bc8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62315722"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65837546"
 ---
 # <a name="zccplusplus-enable-updated-cplusplus-macro"></a>/ ZC: __cplusplus (güncelleştirilmiş __cplusplus makrosu etkinleştir)
 
