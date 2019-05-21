@@ -1,0 +1,966 @@
+- name: Etkin Şablon Kütüphanesi (ATL)
+  href: atl-com-desktop-components.md
+- name: Etkin Şablon Kütüphanesi (ATL) kavramları
+  expanded: false
+  items:
+    - name: Etkin Şablon Kütüphanesi (ATL) kavramları
+      href: active-template-library-atl-concepts.md
+    - name: COM ve ATL'ye Giriş
+      expanded: false
+      items:
+        - name: COM ve ATL'ye Giriş
+          href: introduction-to-com-and-atl.md
+        - name: COM'a Giriş
+          expanded: false
+          items:
+            - name: COM'a Giriş
+              href: introduction-to-com.md
+            - name: Arabirimler (ATL)
+              href: interfaces-atl.md
+            - name: IUnknown
+              href: iunknown.md
+            - name: Başvuru sayımı
+              href: reference-counting.md
+            - name: QueryInterface
+              href: queryinterface.md
+            - name: Hazırlama
+              href: marshaling.md
+            - name: Toplama
+              href: aggregation.md
+        - name: ATL'ye Giriş
+          expanded: false
+          items:
+            - name: ATL'ye Giriş
+              href: introduction-to-atl.md
+            - name: Şablon kitaplığı kullanma
+              href: using-a-template-library.md
+            - name: ATL'nin kapsamı
+              href: scope-of-atl.md
+            - name: ATL ile MFC arasında seçim yapma önerileri
+              href: recommendations-for-choosing-between-atl-and-mfc.md
+    - name: ATL COM nesneleriyle ilgili temel bilgiler
+      expanded: false
+      items:
+        - name: ATL COM nesneleriyle ilgili temel bilgiler
+          href: fundamentals-of-atl-com-objects.md
+        - name: CComObjectRootEx uygulama
+          href: implementing-ccomobjectrootex.md
+        - name: 'CComObject, CComAggObject ve CComPolyObject uygulama'
+          href: implementing-ccomobject-ccomaggobject-and-ccompolyobject.md
+        - name: IDispatch ve IErrorInfo desteği
+          href: supporting-idispatch-and-ierrorinfo.md
+        - name: IDispEventImpl desteği
+          href: supporting-idispeventimpl.md
+        - name: Varsayılan sınıf üretecini ve toplama modelini değiştirme
+          href: changing-the-default-class-factory-and-aggregation-model.md
+        - name: Kümelenmiş nesne oluşturma
+          href: creating-an-aggregated-object.md
+    - name: Çift arabirim ve ATL
+      expanded: false
+      items:
+        - name: Çift arabirim ve ATL
+          href: dual-interfaces-and-atl.md
+        - name: Çift arabirim gerçekleştirme
+          href: implementing-a-dual-interface.md
+        - name: Birden çok çift arabirim
+          href: multiple-dual-interfaces.md
+        - name: genişletilemez öznitelik
+          href: nonextensible-attribute.md
+        - name: Çift arabirim ve olaylar
+          href: dual-interfaces-and-events.md
+    - name: ATL koleksiyonları ve numaralandırıcıları
+      expanded: false
+      items:
+        - name: ATL koleksiyonları ve numaralandırıcıları
+          href: atl-collections-and-enumerators.md
+        - name: ATL koleksiyon ve numaralandırıcı sınıfları
+          href: atl-collection-and-enumerator-classes.md
+        - name: Koleksiyon ve numaralandırıcı arabirimleri için tasarım ilkeleri
+          href: design-principles-for-collection-and-enumerator-interfaces.md
+        - name: C++ Standart Kitaplığı'na dayalı koleksiyon gerçekleştirme
+          expanded: false
+          items:
+            - name: C++ Standart Kitaplığı'na dayalı koleksiyon gerçekleştirme
+              href: implementing-an-stl-based-collection.md
+            - name: ATL kopyalama ilkesi sınıfları
+              href: atl-copy-policy-classes.md
+    - name: ATL bileşik denetimle ilgili temel bilgiler
+      expanded: false
+      items:
+        - name: ATL bileşik denetimle ilgili temel bilgiler
+          href: atl-composite-control-fundamentals.md
+        - name: Bileşik denetim ekleme
+          href: inserting-a-composite-control.md
+        - name: ATL projesini değiştirme
+          href: modifying-the-atl-project.md
+        - name: Bileşik denetime işlevsellik ekleme
+          href: adding-functionality-to-the-composite-control.md
+        - name: ATL projesini oluşturma ve test etme
+          href: building-and-testing-the-atl-project.md
+    - name: ATL denetim kapsama hakkında SSS
+      href: atl-control-containment-faq.md
+    - name: ATL COM özellik sayfaları
+      expanded: false
+      items:
+        - name: ATL COM özellik sayfaları
+          href: atl-com-property-pages.md
+        - name: Özellik sayfalarını belirtme
+          href: specifying-property-pages.md
+        - name: Özellik sayfalarını gerçekleştirme
+          expanded: false
+          items:
+            - name: Özellik sayfalarını gerçekleştirme
+              href: implementing-property-pages.md
+            - name: 'Örnek: Özellik sayfasını gerçekleştirme'
+              href: example-implementing-a-property-page.md
+    - name: DHTML denetimleri için ATL desteği
+      expanded: false
+      items:
+        - name: DHTML denetimleri için ATL desteği
+          href: atl-support-for-dhtml-controls.md
+        - name: DHTML denetim projesinin öğelerini tanımlama
+          href: identifying-the-elements-of-the-dhtml-control-project.md
+        - name: DHTML'den C++ kodunu çağırma
+          href: calling-cpp-code-from-dhtml.md
+        - name: ATL DHTML denetimi oluşturma
+          href: creating-an-atl-dhtml-control.md
+        - name: ATL DHTML denetimini test etme
+          href: testing-the-atl-dhtml-control.md
+        - name: ATL DHTML denetimini değiştirme
+          href: modifying-the-atl-dhtml-control.md
+        - name: Değiştirilmiş ATL DHTML denetimini test etme
+          href: testing-the-modified-atl-dhtml-control.md
+    - name: ATL bağlantı noktaları
+      expanded: false
+      items:
+        - name: ATL bağlantı noktaları
+          href: atl-connection-points.md
+        - name: ATL bağlantı noktası sınıfları
+          href: atl-connection-point-classes.md
+        - name: Nesneye bağlantı noktaları ekleme
+          href: adding-connection-points-to-an-object.md
+        - name: ATL bağlantı noktası örneği
+          href: atl-connection-point-example.md
+    - name: Olay işleme ve ATL
+      expanded: false
+      items:
+        - name: Olay işleme ve ATL
+          href: event-handling-and-atl.md
+        - name: Olay işleme ilkeleri
+          href: event-handling-principles.md
+        - name: Olay işleme arabirimini gerçekleştirme
+          href: implementing-the-event-handling-interface.md
+        - name: IDispEventImpl kullanma
+          href: using-idispeventimpl.md
+        - name: IDispEventSimpleImpl kullanma
+          href: using-idispeventsimpleimpl.md
+        - name: ATL olay işleme özeti
+          href: atl-event-handling-summary.md
+    - name: ATL ve serbest iş parçacıklı hazırlayıcı
+      href: atl-and-the-free-threaded-marshaler.md
+    - name: Proje için iş parçacıklı modeli belirtme (ATL)
+      href: specifying-the-threading-model-for-a-project-atl.md
+    - name: ATL modül sınıfları
+      href: atl-module-classes.md
+    - name: ATL hizmetleri
+      expanded: false
+      items:
+        - name: ATL hizmetleri
+          href: atl-services.md
+        - name: 'CAtlServiceModuleT::Start işlevi'
+          href: catlservicemodulet-start-function.md
+        - name: 'CAtlServiceModuleT::ServiceMain işlevi'
+          href: catlservicemodulet-servicemain-function.md
+        - name: 'CAtlServiceModuleT::Run işlevi'
+          href: catlservicemodulet-run-function.md
+        - name: 'CAtlServiceModuleT::Handler işlevi'
+          href: catlservicemodulet-handler-function.md
+        - name: Kayıt defteri girdileri
+          href: registry-entries.md
+        - name: DCOMCNFG
+          href: dcomcnfg.md
+        - name: Hata ayıklama ipuçları
+          expanded: false
+          items:
+            - name: Hata ayıklama ipuçları
+              href: debugging-tips.md
+            - name: Görev Yöneticisini kullanma
+              href: using-task-manager.md
+            - name: Onay belgelerini görüntüleme
+              href: displaying-assertions.md
+            - name: Programı yerel sunucu olarak çalıştırma
+              href: running-the-program-as-a-local-server.md
+    - name: ATL pencere sınıfları
+      expanded: false
+      items:
+        - name: ATL pencere sınıfları
+          href: atl-window-classes.md
+        - name: ATL pencere sınıflarına giriş
+          href: introduction-to-atl-window-classes.md
+        - name: Pencereyi kullanma
+          href: using-a-window.md
+        - name: Pencereyi gerçekleştirme
+          expanded: false
+          items:
+            - name: Pencereyi gerçekleştirme
+              href: implementing-a-window.md
+            - name: ATL ileti işleyicisi ekleme
+              href: adding-an-atl-message-handler.md
+            - name: İleti eşlemeleri (ATL)
+              href: message-maps-atl.md
+            - name: İleti işleyicisi işlevleri
+              expanded: false
+              items:
+                - name: İleti işleyicisi işlevleri
+                  href: message-handler-functions.md
+                - name: CommandHandler
+                  href: commandhandler.md
+                - name: MessageHandler
+                  href: messagehandler.md
+                - name: NotifyHandler
+                  href: notifyhandler.md
+            - name: CWindowImpl ile pencere gerçekleştirme
+              href: implementing-a-window-with-cwindowimpl.md
+        - name: İletişim kutusu gerçekleştirme
+          href: implementing-a-dialog-box.md
+        - name: Kapsanan pencereleri kullanma
+          href: using-contained-windows.md
+        - name: Pencere niteliklerini anlama
+          href: understanding-window-traits.md
+    - name: ATL koleksiyon sınıfları
+      href: atl-collection-classes.md
+    - name: ATL kayıt defteri bileşeni (Kayıt Şirketi)
+      expanded: false
+      items:
+        - name: ATL kayıt defteri bileşeni (Kayıt Şirketi)
+          href: atl-registry-component-registrar.md
+        - name: Kayıt Şirketi betiklerini oluşturma
+          expanded: false
+          items:
+            - name: Kayıt Şirketi betiklerini oluşturma
+              href: creating-registrar-scripts.md
+            - name: Backus-Naur formu (BNF) söz dizimini anlama
+              href: understanding-backus-nauer-form-bnf-syntax.md
+            - name: Ayrıştırma ağaçlarını anlama
+              href: understanding-parse-trees.md
+            - name: Kayıt defteri betik oluşturma örnekleri
+              href: registry-scripting-examples.md
+            - name: Değiştirilebilir parametreleri kullanma (Kayıt Şirketini ön işlemcisi)
+              href: using-replaceable-parameters-the-registrar-s-preprocessor.md
+            - name: Betikleri çağırma
+              href: invoking-scripts.md
+        - name: Kayıt Şirketi koduna statik bağlantı ayarlama (yalnızca C++)
+          href: setting-up-a-static-link-to-the-registrar-code-cpp-only.md
+    - name: ATL ve C Çalışma zamanı koduyla programlama
+      expanded: false
+      items:
+        - name: ATL ve C Çalışma zamanı koduyla programlama
+          href: programming-with-atl-and-c-run-time-code.md
+        - name: CRT'ye bağlanmak için kullanılan yöntemin avantajları ve dezavantajları
+          href: benefits-and-tradeoffs-of-the-method-used-to-link-to-the-crt.md
+        - name: ATL projenizde CRT'ye bağlanma
+          href: linking-to-the-crt-in-your-atl-project.md
+    - name: CComBSTR (ATL) ile programlama
+      href: programming-with-ccombstr-atl.md
+    - name: ATL kodlama başvurusu
+      href: atl-encoding-reference.md
+    - name: ATL yardımcı programları başvurusu
+      href: atl-utilities-reference.md
+- name: Etkin Şablon Kütüphanesi (ATL) öğreticisi
+  expanded: false
+  items:
+    - name: Etkin Şablon Kütüphanesi (ATL) öğreticisi
+      href: active-template-library-atl-tutorial.md
+    - name: 'Projeyi oluşturma (ATL öğreticisi, bölüm 1)'
+      href: creating-the-project-atl-tutorial-part-1.md
+    - name: 'Denetim ekleme (ATL öğreticisi, bölüm 2)'
+      href: adding-a-control-atl-tutorial-part-2.md
+    - name: 'Denetime özellik ekleme (ATL öğreticisi, bölüm 3)'
+      href: adding-a-property-to-the-control-atl-tutorial-part-3.md
+    - name: 'Çizim kodunu değiştirme (ATL öğreticisi, bölüm 4)'
+      href: changing-the-drawing-code-atl-tutorial-part-4.md
+    - name: 'Olay ekleme (ATL öğreticisi, bölüm 5)'
+      href: adding-an-event-atl-tutorial-part-5.md
+    - name: 'Özellik sayfası ekleme (ATL öğreticisi, bölüm 6)'
+      href: adding-a-property-page-atl-tutorial-part-6.md
+    - name: 'Denetimi web sayfasına yerleştirme (ATL öğreticisi, bölüm 7)'
+      href: putting-the-control-on-a-web-page-atl-tutorial-part-7.md
+- name: Kategoriye göre ATL sınıfına genel bakış
+  expanded: false
+  items:
+    - name: ATL sınıfına genel bakış
+      href: atl-class-overview.md
+    - name: Sınıf üreteci sınıfları
+      href: class-factories-classes.md
+    - name: Sınıf bilgisi sınıfları
+      href: class-information-classes.md
+    - name: Koleksiyon sınıfları
+      href: collection-classes.md
+    - name: COM modülü sınıfları
+      href: com-modules-classes.md
+    - name: Bileşik denetim sınıfları
+      href: composite-controls-classes.md
+    - name: Bağlantı noktası sınıfları
+      href: connection-points-classes.md
+    - name: Denetim kapsama sınıfları
+      href: control-containment-classes.md
+    - name: 'Denetimler: Genel destek sınıfları'
+      href: controls-general-support-classes.md
+    - name: Veri aktarımı sınıfları
+      href: data-transfer-classes.md
+    - name: Veri türü sınıfları
+      href: data-types-classes.md
+    - name: Hata ayıklama ve özel durum sınıfları
+      href: debugging-and-exceptions-classes.md
+    - name: Çift arabirim sınıfları
+      href: dual-interfaces-classes.md
+    - name: Numaralandırıcı ve koleksiyon sınıfları
+      href: enumerators-and-collections-classes.md
+    - name: Hata bilgisi sınıfları
+      href: error-information-classes.md
+    - name: Dosya işleme sınıfları
+      href: file-handling-classes.md
+    - name: Arabirim işaretçisi sınıfları
+      href: interface-pointers-classes.md
+    - name: IUnknown gerçekleştirme sınıfları
+      href: iunknown-implementation-classes.md
+    - name: Bellek yönetimi sınıfları
+      href: memory-management-classes.md
+    - name: MMC ek bileşeni sınıfları
+      href: mmc-snap-in-classes.md
+    - name: Nesne güvenliği sınıfları
+      href: object-safety-classes.md
+    - name: Kalıcılık sınıfları
+      href: persistence-classes.md
+    - name: Özellik ve özellik sayfası sınıfları
+      href: properties-and-property-pages-classes.md
+    - name: Kayıt defteri destek sınıfları
+      href: registry-support-classes.md
+    - name: Çalışan nesne sınıfları
+      href: running-objects-classes.md
+    - name: Güvenlik sınıfları
+      href: security-classes.md
+    - name: Hizmet sağlayıcısı destek sınıfları
+      href: service-provider-support-classes.md
+    - name: Site bilgisi sınıfları
+      href: site-information-classes.md
+    - name: Dize ve metin sınıfları
+      href: string-and-text-classes.md
+    - name: Bölünmüş arabirim sınıfları
+      href: tear-off-interfaces-classes.md
+    - name: İş parçacığı havuzu sınıfları
+      href: thread-pooling-classes.md
+    - name: İş parçacığı modeli ve kritik bölüm sınıfları
+      href: threading-models-and-critical-sections-classes.md
+    - name: UI desteği sınıfları
+      href: ui-support-classes.md
+    - name: Yardımcı program sınıfları
+      href: utility-classes.md
+    - name: Windows desteği sınıfları
+      href: windows-support-classes.md
+- name: ATL kitaplığı başvurusu
+  expanded: false
+  items:
+    - name: ATL sınıf ile yapı başvurusu
+      expanded: false
+      items:
+        - name: ATL sınıfları ve yapıları
+          href: reference/atl-classes.md
+        - name: _ATL_BASE_MODULE70 yapısı
+          href: reference/atl-base-module70-structure.md
+        - name: _ATL_COM_MODULE70 yapısı
+          href: reference/atl-com-module70-structure.md
+        - name: _ATL_FUNC_INFO yapısı
+          href: reference/atl-func-info-structure.md
+        - name: _ATL_MODULE70 yapısı
+          href: reference/atl-module70-structure.md
+        - name: _ATL_WIN_MODULE70 yapısı
+          href: reference/atl-win-module70-structure.md
+        - name: _AtlCreateWndData yapısı
+          href: reference/atlcreatewnddata-structure.md
+        - name: ATL_DRAWINFO yapısı
+          href: reference/atl-drawinfo-structure.md
+        - name: _U_MENUorID sınıfı
+          href: reference/u-menuorid-class.md
+        - name: _U_RECT sınıfı
+          href: reference/u-rect-class.md
+        - name: _U_STRINGorID sınıfı
+          href: reference/u-stringorid-class.md
+        - name: CA2AEX sınıfı
+          href: reference/ca2aex-class.md
+        - name: CA2CAEX sınıfı
+          href: reference/ca2caex-class.md
+        - name: CA2WEX sınıfı
+          href: reference/ca2wex-class.md
+        - name: CAccessToken sınıfı
+          href: reference/caccesstoken-class.md
+        - name: CAcl sınıfı
+          href: reference/cacl-class.md
+        - name: CAdapt sınıfı
+          href: reference/cadapt-class.md
+        - name: CAtlArray sınıfı
+          href: reference/catlarray-class.md
+        - name: CAtlAutoThreadModule sınıfı
+          href: reference/catlautothreadmodule-class.md
+        - name: CAtlAutoThreadModuleT sınıfı
+          href: reference/catlautothreadmodulet-class.md
+        - name: CAtlBaseModule sınıfı
+          href: reference/catlbasemodule-class.md
+        - name: CAtlComModule sınıfı
+          href: reference/catlcommodule-class.md
+        - name: CAtlDebugInterfacesModule sınıfı
+          href: reference/catldebuginterfacesmodule-class.md
+        - name: CAtlDllModuleT sınıfı
+          href: reference/catldllmodulet-class.md
+        - name: CAtlException sınıfı
+          href: reference/catlexception-class.md
+        - name: CAtlExeModuleT sınıfı
+          href: reference/catlexemodulet-class.md
+        - name: CAtlFile sınıfı
+          href: reference/catlfile-class.md
+        - name: CAtlFileMapping sınıfı
+          href: reference/catlfilemapping-class.md
+        - name: CAtlFileMappingBase sınıfı
+          href: reference/catlfilemappingbase-class.md
+        - name: CAtlList sınıfı
+          href: reference/catllist-class.md
+        - name: CAtlMap sınıfı
+          href: reference/catlmap-class.md
+        - name: CAtlModule sınıfı
+          href: reference/catlmodule-class.md
+        - name: CAtlModuleT sınıfı
+          href: reference/catlmodulet-class.md
+        - name: CAtlPreviewCtrlImpl sınıfı
+          href: reference/catlpreviewctrlimpl-class.md
+        - name: CAtlServiceModuleT sınıfı
+          href: reference/catlservicemodulet-class.md
+        - name: CAtlTemporaryFile sınıfı
+          href: reference/catltemporaryfile-class.md
+        - name: CAtlTransactionManager sınıfı
+          href: reference/catltransactionmanager-class.md
+        - name: CAtlWinModule sınıfı
+          href: reference/catlwinmodule-class.md
+        - name: CAutoPtr sınıfı
+          href: reference/cautoptr-class.md
+        - name: CAutoPtrArray sınıfı
+          href: reference/cautoptrarray-class.md
+        - name: CAutoPtrElementTraits sınıfı
+          href: reference/cautoptrelementtraits-class.md
+        - name: CAutoPtrList sınıfı
+          href: reference/cautoptrlist-class.md
+        - name: CAutoRevertImpersonation sınıfı
+          href: reference/cautorevertimpersonation-class.md
+        - name: CAutoVectorPtr sınıfı
+          href: reference/cautovectorptr-class.md
+        - name: CAutoVectorPtrElementTraits sınıfı
+          href: reference/cautovectorptrelementtraits-class.md
+        - name: CAxDialogImpl sınıfı
+          href: reference/caxdialogimpl-class.md
+        - name: CAxWindow sınıfı
+          href: reference/caxwindow-class.md
+        - name: CAxWindow2T sınıfı
+          href: reference/caxwindow2t-class.md
+        - name: CBindStatusCallback sınıfı
+          href: reference/cbindstatuscallback-class.md
+        - name: CComAggObject sınıfı
+          href: reference/ccomaggobject-class.md
+        - name: CComAllocator sınıfı
+          href: reference/ccomallocator-class.md
+        - name: CComApartment sınıfı
+          href: reference/ccomapartment-class.md
+        - name: CComAutoCriticalSection sınıfı
+          href: reference/ccomautocriticalsection-class.md
+        - name: CComAutoDeleteCriticalSection sınıfı
+          href: reference/ccomautodeletecriticalsection-class.md
+        - name: CComAutoThreadModule sınıfı
+          href: reference/ccomautothreadmodule-class.md
+        - name: CComBSTR sınıfı
+          href: reference/ccombstr-class.md
+        - name: CComCachedTearOffObject sınıfı
+          href: reference/ccomcachedtearoffobject-class.md
+        - name: CComClassFactory sınıfı
+          href: reference/ccomclassfactory-class.md
+        - name: CComClassFactory2 sınıfı
+          href: reference/ccomclassfactory2-class.md
+        - name: CComClassFactoryAutoThread sınıfı
+          href: reference/ccomclassfactoryautothread-class.md
+        - name: CComClassFactorySingleton sınıfı
+          href: reference/ccomclassfactorysingleton-class.md
+        - name: CComCoClass sınıfı
+          href: reference/ccomcoclass-class.md
+        - name: CComCompositeControl sınıfı
+          href: reference/ccomcompositecontrol-class.md
+        - name: CComContainedObject sınıfı
+          href: reference/ccomcontainedobject-class.md
+        - name: CComControl sınıfı
+          href: reference/ccomcontrol-class.md
+        - name: CComControlBase sınıfı
+          href: reference/ccomcontrolbase-class.md
+        - name: CComCriticalSection sınıfı
+          href: reference/ccomcriticalsection-class.md
+        - name: CComCritSecLock sınıfı
+          href: reference/ccomcritseclock-class.md
+        - name: CComCurrency sınıfı
+          href: reference/ccomcurrency-class.md
+        - name: CComDynamicUnkArray sınıfı
+          href: reference/ccomdynamicunkarray-class.md
+        - name: CComEnum sınıfı
+          href: reference/ccomenum-class.md
+        - name: CComEnumImpl sınıfı
+          href: reference/ccomenumimpl-class.md
+        - name: CComEnumOnSTL sınıfı
+          href: reference/ccomenumonstl-class.md
+        - name: CComFakeCriticalSection sınıfı
+          href: reference/ccomfakecriticalsection-class.md
+        - name: CComGITPtr sınıfı
+          href: reference/ccomgitptr-class.md
+        - name: CComHeap sınıfı
+          href: reference/ccomheap-class.md
+        - name: CComHeapPtr sınıfı
+          href: reference/ccomheapptr-class.md
+        - name: CComModule sınıfı
+          href: reference/ccommodule-class.md
+        - name: CComMultiThreadModel sınıfı
+          href: reference/ccommultithreadmodel-class.md
+        - name: CComMultiThreadModelNoCS sınıfı
+          href: reference/ccommultithreadmodelnocs-class.md
+        - name: CComObject sınıfı
+          href: reference/ccomobject-class.md
+        - name: CComObjectGlobal sınıfı
+          href: reference/ccomobjectglobal-class.md
+        - name: CComObjectNoLock sınıfı
+          href: reference/ccomobjectnolock-class.md
+        - name: CComObjectRoot sınıfı
+          href: reference/ccomobjectroot-class.md
+        - name: CComObjectRootEx sınıfı
+          href: reference/ccomobjectrootex-class.md
+        - name: CComObjectStack sınıfı
+          href: reference/ccomobjectstack-class.md
+        - name: CComPolyObject sınıfı
+          href: reference/ccompolyobject-class.md
+        - name: CComPtr sınıfı
+          href: reference/ccomptr-class.md
+        - name: CComPtrBase sınıfı
+          href: reference/ccomptrbase-class.md
+        - name: CComQIPtr sınıfı
+          href: reference/ccomqiptr-class.md
+        - name: CComQIPtrElementTraits sınıfı
+          href: reference/ccomqiptrelementtraits-class.md
+        - name: CComSafeArray sınıfı
+          href: reference/ccomsafearray-class.md
+        - name: CComSafeArrayBound sınıfı
+          href: reference/ccomsafearraybound-class.md
+        - name: CComSafeDeleteCriticalSection sınıfı
+          href: reference/ccomsafedeletecriticalsection-class.md
+        - name: CComSimpleThreadAllocator sınıfı
+          href: reference/ccomsimplethreadallocator-class.md
+        - name: CComSingleThreadModel sınıfı
+          href: reference/ccomsinglethreadmodel-class.md
+        - name: CComTearOffObject sınıfı
+          href: reference/ccomtearoffobject-class.md
+        - name: CComUnkArray sınıfı
+          href: reference/ccomunkarray-class.md
+        - name: CComVariant sınıfı
+          href: reference/ccomvariant-class.md
+        - name: CContainedWindowT sınıfı
+          href: reference/ccontainedwindowt-class.md
+        - name: CCRTAllocator sınıfı
+          href: reference/ccrtallocator-class.md
+        - name: CCRTHeap sınıfı
+          href: reference/ccrtheap-class.md
+        - name: CDacl sınıfı
+          href: reference/cdacl-class.md
+        - name: CDebugReportHook sınıfı
+          href: reference/cdebugreporthook-class.md
+        - name: CDefaultCharTraits sınıfı
+          href: reference/cdefaultchartraits-class.md
+        - name: CDefaultCompareTraits sınıfı
+          href: reference/cdefaultcomparetraits-class.md
+        - name: CDefaultElementTraits sınıfı
+          href: reference/cdefaultelementtraits-class.md
+        - name: CDefaultHashTraits sınıfı
+          href: reference/cdefaulthashtraits-class.md
+        - name: CDialogImpl sınıfı
+          href: reference/cdialogimpl-class.md
+        - name: CDynamicChain sınıfı
+          href: reference/cdynamicchain-class.md
+        - name: CElementTraits sınıfı
+          href: reference/celementtraits-class.md
+        - name: CElementTraitsBase sınıfı
+          href: reference/celementtraitsbase-class.md
+        - name: CFirePropNotifyEvent sınıfı
+          href: reference/cfirepropnotifyevent-class.md
+        - name: CGlobalHeap sınıfı
+          href: reference/cglobalheap-class.md
+        - name: CHandle sınıfı
+          href: reference/chandle-class.md
+        - name: CHeapPtr sınıfı
+          href: reference/cheapptr-class.md
+        - name: CHeapPtrBase sınıfı
+          href: reference/cheapptrbase-class.md
+        - name: CHeapPtrElementTraits sınıfı
+          href: reference/cheapptrelementtraits-class.md
+        - name: CHeapPtrList sınıfı
+          href: reference/cheapptrlist-class.md
+        - name: CInterfaceArray sınıfı
+          href: reference/cinterfacearray-class.md
+        - name: CInterfaceList sınıfı
+          href: reference/cinterfacelist-class.md
+        - name: CLocalHeap sınıfı
+          href: reference/clocalheap-class.md
+        - name: CMessageMap sınıfı
+          href: reference/cmessagemap-class.md
+        - name: CNonStatelessWorker sınıfı
+          href: reference/cnonstatelessworker-class.md
+        - name: CNoWorkerThread sınıfı
+          href: reference/cnoworkerthread-class.md
+        - name: CPathT sınıfı
+          href: reference/cpatht-class.md
+        - name: CPrimitiveElementTraits sınıfı
+          href: reference/cprimitiveelementtraits-class.md
+        - name: CPrivateObjectSecurityDesc sınıfı
+          href: reference/cprivateobjectsecuritydesc-class.md
+        - name: CRBMap sınıfı
+          href: reference/crbmap-class.md
+        - name: CRBMultiMap sınıfı
+          href: reference/crbmultimap-class.md
+        - name: CRBTree sınıfı
+          href: reference/crbtree-class.md
+        - name: CRegKey sınıfı
+          href: reference/cregkey-class.md
+        - name: CRTThreadTraits sınıfı
+          href: reference/crtthreadtraits-class.md
+        - name: CSacl sınıfı
+          href: reference/csacl-class.md
+        - name: CSecurityAttributes sınıfı
+          href: reference/csecurityattributes-class.md
+        - name: CSecurityDesc sınıfı
+          href: reference/csecuritydesc-class.md
+        - name: CSid sınıfı
+          href: reference/csid-class.md
+        - name: CSimpleArray sınıfı
+          href: reference/csimplearray-class.md
+        - name: CSimpleArrayEqualHelper sınıfı
+          href: reference/csimplearrayequalhelper-class.md
+        - name: CSimpleArrayEqualHelperFalse sınıfı
+          href: reference/csimplearrayequalhelperfalse-class.md
+        - name: CSimpleDialog sınıfı
+          href: reference/csimpledialog-class.md
+        - name: CSimpleMap sınıfı
+          href: reference/csimplemap-class.md
+        - name: CSimpleMapEqualHelper sınıfı
+          href: reference/csimplemapequalhelper-class.md
+        - name: CSimpleMapEqualHelperFalse sınıfı
+          href: reference/csimplemapequalhelperfalse-class.md
+        - name: CSnapInItemImpl sınıfı
+          href: reference/csnapinitemimpl-class.md
+        - name: CSnapInPropertyPageImpl sınıfı
+          href: reference/csnapinpropertypageimpl-class.md
+        - name: CSocketAddr sınıfı
+          href: reference/csocketaddr-class.md
+        - name: CStockPropImpl sınıfı
+          href: reference/cstockpropimpl-class.md
+        - name: CStringElementTraits sınıfı
+          href: reference/cstringelementtraits-class.md
+        - name: CStringElementTraitsI sınıfı
+          href: reference/cstringelementtraitsi-class.md
+        - name: CStringRefElementTraits sınıfı
+          href: reference/cstringrefelementtraits-class.md
+        - name: CThreadPool sınıfı
+          href: reference/cthreadpool-class.md
+        - name: CTokenGroups sınıfı
+          href: reference/ctokengroups-class.md
+        - name: CTokenPrivileges sınıfı
+          href: reference/ctokenprivileges-class.md
+        - name: CUrl sınıfı
+          href: reference/curl-class.md
+        - name: CW2AEX sınıfı
+          href: reference/cw2aex-class.md
+        - name: CW2CWEX sınıfı
+          href: reference/cw2cwex-class.md
+        - name: CW2WEX sınıfı
+          href: reference/cw2wex-class.md
+        - name: CWin32Heap sınıfı
+          href: reference/cwin32heap-class.md
+        - name: CWindow sınıfı
+          href: reference/cwindow-class.md
+        - name: CWindowImpl sınıfı
+          href: reference/cwindowimpl-class.md
+        - name: CWinTraits sınıfı
+          href: reference/cwintraits-class.md
+        - name: CWinTraitsOR sınıfı
+          href: reference/cwintraitsor-class.md
+        - name: CWndClassInfo sınıfı
+          href: reference/cwndclassinfo-class.md
+        - name: CWorkerThread sınıfı
+          href: reference/cworkerthread-class.md
+        - name: IAtlAutoThreadModule sınıfı
+          href: reference/iatlautothreadmodule-class.md
+        - name: IAtlMemMgr sınıfı
+          href: reference/iatlmemmgr-class.md
+        - name: IAxWinAmbientDispatch arabirimi
+          href: reference/iaxwinambientdispatch-interface.md
+        - name: IAxWinAmbientDispatchEx arabirimi
+          href: reference/iaxwinambientdispatchex-interface.md
+        - name: IAxWinHostWindow arabirimi
+          href: reference/iaxwinhostwindow-interface.md
+        - name: IAxWinHostWindowLic arabirimi
+          href: reference/iaxwinhostwindowlic-interface.md
+        - name: ICollectionOnSTLImpl sınıfı
+          href: reference/icollectiononstlimpl-class.md
+        - name: IConnectionPointContainerImpl sınıfı
+          href: reference/iconnectionpointcontainerimpl-class.md
+        - name: IConnectionPointImpl sınıfı
+          href: reference/iconnectionpointimpl-class.md
+        - name: IDataObjectImpl sınıfı
+          href: reference/idataobjectimpl-class.md
+        - name: IDispatchImpl sınıfı
+          href: reference/idispatchimpl-class.md
+        - name: IDispEventImpl sınıfı
+          href: reference/idispeventimpl-class.md
+        - name: IDispEventSimpleImpl sınıfı
+          href: reference/idispeventsimpleimpl-class.md
+        - name: IDocHostUIHandlerDispatch arabirimi
+          href: reference/idochostuihandlerdispatch-interface.md
+        - name: IEnumOnSTLImpl sınıfı
+          href: reference/ienumonstlimpl-class.md
+        - name: IObjectSafetyImpl sınıfı
+          href: reference/iobjectsafetyimpl-class.md
+        - name: IObjectWithSiteImpl sınıfı
+          href: reference/iobjectwithsiteimpl-class.md
+        - name: IOleControlImpl sınıfı
+          href: reference/iolecontrolimpl-class.md
+        - name: IOleInPlaceActiveObjectImpl sınıfı
+          href: reference/ioleinplaceactiveobjectimpl-class.md
+        - name: IOleInPlaceObjectWindowlessImpl sınıfı
+          href: reference/ioleinplaceobjectwindowlessimpl-class.md
+        - name: IOleObjectImpl sınıfı
+          href: reference/ioleobjectimpl-class.md
+        - name: IPerPropertyBrowsingImpl sınıfı
+          href: reference/iperpropertybrowsingimpl-class.md
+        - name: IPersistPropertyBagImpl sınıfı
+          href: reference/ipersistpropertybagimpl-class.md
+        - name: IPersistStorageImpl sınıfı
+          href: reference/ipersiststorageimpl-class.md
+        - name: IPersistStreamInitImpl sınıfı
+          href: reference/ipersiststreaminitimpl-class.md
+        - name: IPointerInactiveImpl sınıfı
+          href: reference/ipointerinactiveimpl-class.md
+        - name: IPropertyNotifySinkCP sınıfı
+          href: reference/ipropertynotifysinkcp-class.md
+        - name: IPropertyPage2Impl sınıfı
+          href: reference/ipropertypage2impl-class.md
+        - name: IPropertyPageImpl sınıfı
+          href: reference/ipropertypageimpl-class.md
+        - name: IProvideClassInfo2Impl sınıfı
+          href: reference/iprovideclassinfo2impl-class.md
+        - name: IQuickActivateImpl sınıfı
+          href: reference/iquickactivateimpl-class.md
+        - name: IRegistrar arabirimi
+          href: reference/iregistrar-class.md
+        - name: IRunnableObjectImpl sınıfı
+          href: reference/irunnableobjectimpl-class.md
+        - name: IServiceProviderImpl sınıfı
+          href: reference/iserviceproviderimpl-class.md
+        - name: ISpecifyPropertyPagesImpl sınıfı
+          href: reference/ispecifypropertypagesimpl-class.md
+        - name: ISupportErrorInfoImpl sınıfı
+          href: reference/isupporterrorinfoimpl-class.md
+        - name: IThreadPoolConfig arabirimi
+          href: reference/ithreadpoolconfig-interface.md
+        - name: IViewObjectExImpl sınıfı
+          href: reference/iviewobjecteximpl-class.md
+        - name: IWorkerThreadClient arabirimi
+          href: reference/iworkerthreadclient-interface.md
+        - name: Win32ThreadTraits sınıfı
+          href: reference/win32threadtraits-class.md
+        - name: Çalışan ilk örneği
+          href: reference/worker-archetype.md
+    - name: ATL_URL_SCHEME numaralandırması
+      href: reference/atl-url-scheme-enum.md
+    - name: ATL işlev başvurusu
+      expanded: false
+      items:
+        - name: ATL işlevleri
+          href: reference/atl-functions.md
+        - name: ATL HTTP yardımcı programı işlevleri
+          href: reference/atl-http-utility-functions.md
+        - name: ATL metin kodlama işlevleri
+          href: reference/atl-text-encoding-functions.md
+        - name: ATL yol işlevleri
+          href: reference/atl-path-functions.md
+        - name: COM eşleme genel işlevleri
+          href: reference/com-map-global-functions.md
+        - name: Bileşik denetim genel işlevleri
+          href: reference/composite-control-global-functions.md
+        - name: Bağlantı noktası genel işlevleri
+          href: reference/connection-point-global-functions.md
+        - name: Hata ayıklama ve hata raporlama genel işlevleri
+          href: reference/debugging-and-error-reporting-global-functions.md
+        - name: Cihaz bağlamı genel işlevleri
+          href: reference/device-context-global-functions.md
+        - name: Olay işleme genel işlevleri
+          href: reference/event-handling-global-functions.md
+        - name: Hazırlama genel işlevleri
+          href: reference/marshaling-global-functions.md
+        - name: Pixel-HIMETRIC dönüştürmesi genel işlevleri
+          href: reference/pixel-himetric-conversion-global-functions.md
+        - name: Kayıt Defteri ve TypeLib genel işlevleri
+          href: reference/registry-and-typelib-global-functions.md
+        - name: Güvenlik genel işlevleri
+          href: reference/security-global-functions.md
+        - name: Güvenlik tanımlayıcısı genel işlevleri
+          href: reference/security-identifier-global-functions.md
+        - name: Sunucu kaydı genel işlevleri
+          href: reference/server-registration-global-functions.md
+        - name: WinModule genel işlevleri
+          href: reference/winmodule-global-functions.md
+    - name: ATL makro başvurusu
+      expanded: false
+      items:
+        - name: ATL makroları
+          href: reference/atl-macros.md
+        - name: Toplama ve sınıf üreteci makroları
+          href: reference/aggregation-and-class-factory-macros.md
+        - name: Kategori makroları
+          href: reference/category-macros.md
+        - name: COM eşleme makroları
+          href: reference/com-map-macros.md
+        - name: COM arabirim girdisi makroları
+          href: reference/com-interface-entry-macros.md
+        - name: Derleyici seçenekleri makroları
+          href: reference/compiler-options-macros.md
+        - name: Bileşik denetim makroları
+          href: reference/composite-control-macros.md
+        - name: Bağlantı noktası makroları
+          href: reference/connection-point-macros.md
+        - name: Hata ayıklama ve hata raporlama makroları
+          href: reference/debugging-and-error-reporting-macros.md
+        - name: Özel durum işleme makroları
+          href: reference/exception-handling-macros.md
+        - name: İleti eşleme makroları (ATL)
+          href: reference/message-map-macros-atl.md
+        - name: Nesne eşleme makroları
+          href: reference/object-map-macros.md
+        - name: Nesne durumu makroları
+          href: reference/object-status-macros.md
+        - name: Özellik eşleme makroları
+          href: reference/property-map-macros.md
+        - name: Kayıt Defteri Veri Değişimi makroları
+          href: reference/registry-data-exchange-macros.md
+        - name: Kayıt defteri makroları
+          href: reference/registry-macros.md
+        - name: Hizmet eşleme makroları
+          href: reference/service-map-macros.md
+        - name: Ek bileşen nesne makroları
+          href: reference/snap-in-object-macros.md
+        - name: Dize dönüştürme makroları
+          href: reference/string-conversion-macros.md
+        - name: Pencere sınıfı makroları
+          href: reference/window-class-macros.md
+        - name: Windows iletisi makroları
+          href: reference/windows-messages-macros.md
+    - name: ATL işleç başvurusu
+      href: reference/atl-operators.md
+    - name: ATL genel değişken başvurusu
+      href: reference/atl-global-variables.md
+    - name: ATL typedef başvurusu
+      href: reference/atl-typedefs.md
+- name: Visual Studio'da ATL projeleri
+  expanded: false
+  items:
+    - name: ATL sihirbaz ve iletişim kutusu başvurusu
+      expanded: false
+      items:
+        - name: ATL sihirbazları ve iletişim kutuları
+          href: reference/atl-wizards-and-dialog-boxes.md
+        - name: ATL Active Server Page Bileşeni Sihirbazı başvurusu
+          expanded: false
+          items:
+            - name: ATL Active Server Page Bileşeni Sihirbazı
+              href: reference/atl-active-server-page-component-wizard.md
+            - name: 'ATL Active Server Page Bileşeni Sihirbazı, ASP'
+              href: reference/asp-atl-active-server-page-component-wizard.md
+            - name: 'ATL Active Server Page Bileşeni Sihirbazı, Seçenekler'
+              href: reference/options-atl-active-server-page-component-wizard.md
+        - name: ATL COM+ 1.0 Bileşeni Sihirbazı başvurusu
+          expanded: false
+          items:
+            - name: ATL COM+ 1.0 Bileşeni Sihirbazı
+              href: reference/atl-com-plus-1-0-component-wizard.md
+            - name: 'COM+ 1.0, ATL COM+ 1.0 Bileşeni Sihirbazı'
+              href: reference/com-plus-1-0-atl-com-plus-1-0-component-wizard.md
+        - name: ATL Denetim Sihirbazı başvurusu
+          expanded: false
+          items:
+            - name: ATL Denetim Sihirbazı
+              href: reference/atl-control-wizard.md
+            - name: 'ATL Denetim Sihirbazı, Görünüm'
+              href: reference/appearance-atl-control-wizard.md
+            - name: 'ATL Denetim Sihirbazı, Arabirimler'
+              href: reference/interfaces-atl-control-wizard.md
+            - name: 'ATL Denetim Sihirbazı, Seçenekler'
+              href: reference/options-atl-control-wizard.md
+            - name: 'ATL Denetim Sihirbazı, Stok Özellikleri'
+              href: reference/stock-properties-atl-control-wizard.md
+        - name: ATL İletişim Kutusu Sihirbazı başvurusu
+          href: reference/atl-dialog-wizard.md
+        - name: ATL OLE DB Tüketici Sihirbazı başvurusu
+          href: reference/atl-ole-db-consumer-wizard.md
+        - name: ATL OLE DB Sağlayıcı Sihirbazı başvurusu
+          href: reference/atl-ole-db-provider-wizard.md
+        - name: ATL Proje Sihirbazı başvurusu
+          expanded: false
+          items:
+            - name: ATL Proje Sihirbazı
+              href: reference/atl-project-wizard.md
+            - name: 'Uygulama Ayarları, ATL Proje Sihirbazı'
+              href: reference/application-settings-atl-project-wizard.md
+        - name: ATL Özellik Sayfası Sihirbazı başvurusu
+          expanded: false
+          items:
+            - name: ATL Özellik Sayfası Sihirbazı
+              href: reference/atl-property-page-wizard.md
+            - name: 'ATL Özellik Sayfası Sihirbazı, Seçenekler'
+              href: reference/options-atl-property-page-wizard.md
+            - name: 'ATL Özellik Sayfası Sihirbazı, Dizeler'
+              href: reference/strings-atl-property-page-wizard.md
+        - name: ATL Basit Nesne Sihirbazı başvurusu
+          expanded: false
+          items:
+            - name: ATL Basit Nesne Sihirbazı
+              href: reference/atl-simple-object-wizard.md
+            - name: 'ATL Basit Nesne Sihirbazı, Seçenekler'
+              href: reference/options-atl-simple-object-wizard.md
+    - name: ATL projesinde yeni arabirim ekleme
+      href: reference/adding-a-new-interface-in-an-atl-project.md
+    - name: ATL Active Server Page bileşeni ekleme
+      href: reference/adding-an-atl-active-server-page-component.md
+    - name: ATL COM+ 1.0 bileşeni ekleme
+      href: reference/adding-an-atl-com-plus-1-0-component.md
+    - name: ATL denetimi ekleme
+      href: reference/adding-an-atl-control.md
+    - name: ATL iletişim kutusu ekleme
+      href: reference/adding-an-atl-dialog-box.md
+    - name: ATL OLE DB tüketicisi ekleme
+      href: reference/adding-an-atl-ole-db-consumer.md
+    - name: ATL OLE DB sağlayıcısı ekleme
+      href: reference/adding-an-atl-ole-db-provider.md
+    - name: ATL özellik sayfası ekleme
+      href: reference/adding-an-atl-property-page.md
+    - name: ATL basit nesnesi ekleme
+      href: reference/adding-an-atl-simple-object.md
+    - name: ATL projesine nesneler ve denetimler ekleme
+      href: reference/adding-objects-and-controls-to-an-atl-project.md
+    - name: ATL projesi oluşturma
+      href: reference/creating-an-atl-project.md
+    - name: ATL projelerinde COM+ 1.0 desteği
+      href: reference/com-plus-1-0-support-in-atl-projects.md
+    - name: Varsayılan ATL projesi yapılandırmaları
+      href: reference/default-atl-project-configurations.md
+    - name: ATL nesnesini oluşturulamaz yapma
+      href: reference/making-an-atl-object-noncreatable.md
+    - name: ATL projelerinde MFC desteği
+      href: reference/mfc-support-in-atl-projects.md
+    - name: ATL projesinde derleyici iyileştirmesi belirtme
+      href: reference/specifying-compiler-optimization-for-an-atl-project.md
