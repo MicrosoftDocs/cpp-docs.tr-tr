@@ -12,12 +12,12 @@ f1_keywords:
 helpviewer_keywords:
 - tile_barrier class
 ms.assetid: b4ccdccb-0032-4e11-b7bd-dc9d43445dee
-ms.openlocfilehash: f0e742a0cc1a0809fc08b3862cadb7e3deb36fa8
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 89e6d972fbecb2674e6343bf6d11f9972c25c63d
+ms.sourcegitcommit: a61d17cffdd50f1c3c6e082a01bbcbc85b6cc5a7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62351514"
+ms.lasthandoff: 05/21/2019
+ms.locfileid: "65975034"
 ---
 # <a name="tilebarrier-class"></a>tile_barrier Sınıfı
 
@@ -82,7 +82,7 @@ Döşemedeki tüm iş parçacıkları beklemeyi bitirene kadar yürütmeyi durdu
 void wait() const restrict(amp);
 ```
 
-## <a name="waitwithallmemoryfence"></a>wait_with_all_memory_fence
+## <a name="wait_with_all_memory_fence"></a> wait_with_all_memory_fence
 
 Döşemedeki tüm iş parçacıkları bu çağrıya ulaşıncaya kadar döşemedeki tüm iş parçacıklarının yürütülmesini engeller. Bu, tüm bellek erişimlerinin iş parçacığı döşemesindeki diğer iş parçacıkları tarafından ve program sırasıyla yürütülen sağlar.
 
@@ -92,7 +92,7 @@ Döşemedeki tüm iş parçacıkları bu çağrıya ulaşıncaya kadar döşemed
 void wait_with_all_memory_fence() const restrict(amp);
 ```
 
-## <a name="waitwithglobalmemoryfence"></a>wait_with_global_memory_fence
+## <a name="a-namewaitwithglobalmemoryfence-waitwithglobalmemoryfence"></a><a name="wait_with_global_memory_fence"> wait_with_global_memory_fence
 
 Döşemedeki tüm iş parçacıkları bu çağrıya ulaşıncaya kadar döşemedeki tüm iş parçacıklarının yürütülmesini engeller. Bu, tüm genel bellek erişimlerinin iş parçacığı döşemesindeki diğer iş parçacıkları tarafından ve program sırasıyla yürütülen sağlar.
 
@@ -102,7 +102,7 @@ Döşemedeki tüm iş parçacıkları bu çağrıya ulaşıncaya kadar döşemed
 void wait_with_global_memory_fence() const  restrict(amp);
 ```
 
-## <a name="waitwithtilestaticmemoryfence"></a>wait_with_tile_static_memory_fence
+## <a name="a-namewaitwithtilestaticmemoryfence-waitwithtilestaticmemoryfence"></a><a name="wait_with_tile_static_memory_fence"> wait_with_tile_static_memory_fence
 
 Döşemedeki tüm iş parçacıkları bu çağrıya ulaşıncaya kadar döşemedeki tüm iş parçacıklarının yürütülmesini engeller. Bu, sağlar `tile_static` bellek erişimlerinin iş parçacığı döşemesindeki diğer iş parçacıkları tarafından ve program sırasıyla yürütülen.
 

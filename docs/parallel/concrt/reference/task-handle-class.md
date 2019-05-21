@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - task_handle class
 ms.assetid: 74a34b15-708b-4231-a509-947874292b13
-ms.openlocfilehash: 8528bc212603484be9325ed967e9475e4faa1348
-ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
+ms.openlocfilehash: eda4fa84dd4e7c3fa8ffb5a09e273afac2acd8f8
+ms.sourcegitcommit: a61d17cffdd50f1c3c6e082a01bbcbc85b6cc5a7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "64346150"
+ms.lasthandoff: 05/21/2019
+ms.locfileid: "65975193"
 ---
 # <a name="taskhandle-class"></a>task_handle Sınıfı
 
@@ -76,7 +76,7 @@ Görev tanıtıcısını işini gerçekleştirmek için çalışma zamanı çağ
 void operator()() const;
 ```
 
-## <a name="taskhandle"></a>task_handle
+## <a name="task_handle"></a> task_handle
 
 Yeni bir oluşturur `task_handle` nesne. Görevin iş oluşturucusuna bir parametre olarak belirtilen işlevi çağrılarak gerçekleştirilir.
 

@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - uninitialized_object class
 ms.assetid: 6ae3c4e8-64a6-4511-a158-03be197b63af
-ms.openlocfilehash: 05c24672531d50fa9bc31587e6c6733fdff21f29
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: a977957fcb28a7f4c6c849c954026e2bda4e728c
+ms.sourcegitcommit: a61d17cffdd50f1c3c6e082a01bbcbc85b6cc5a7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62405462"
+ms.lasthandoff: 05/21/2019
+ms.locfileid: "65975152"
 ---
 # <a name="uninitializedobject-class"></a>uninitialized_object Sınıfı
 
@@ -47,7 +47,7 @@ class uninitialized_object : public runtime_exception;
 
 **Namespace:** Eşzamanlılık
 
-## <a name="uninitializedobject"></a>uninitialized_object
+## <a name="uninitialized_object"></a> uninitialized_object
 
 Yeni bir örneğini oluşturur `uninitialized_object` özel durum.
 
