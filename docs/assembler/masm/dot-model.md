@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - .MODEL directive
 ms.assetid: 057f00df-1515-4c55-852a-d936c8a34b53
-ms.openlocfilehash: c3917fea0f13e54d5f8f73599a2d28482bb6d259
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c409bf10a2f863c380cda6b4822583ffb3787da6
+ms.sourcegitcommit: 61121faf879cc581a4d39e4baccabf7cf1f673a5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62204103"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "65934095"
 ---
 # <a name="model"></a>.MODEL
 
@@ -50,7 +50,7 @@ Aşağıdaki tabloda, 16-bit ve 32-bit platformu hedeflerken her parametre için
 
 ## <a name="code"></a>Kod
 
-MASM ile ilgili örnekler için derleyici örneklerini indirin [Visual C++ örnekleri ve ilgili belgeler için Visual Studio 2010](http://go.microsoft.com/fwlink/p/?linkid=178749).
+MASM ile ilgili örnekler için derleyici örneklerini indirin [Visual C++ örnekleri ve ilgili belgeler için Visual Studio 2010](https://go.microsoft.com/fwlink/p/?linkid=178749).
 
 Aşağıdaki örnek, kullanımını gösterir `.MODEL` yönergesi.
 

@@ -1,28 +1,29 @@
 ---
 title: Visual Studio’da C++
 description: Visual C++ için Microsoft C++ Derleyici, Kod Düzenleyicisi ve ilgili araçlar Visual Studio IDE'de addır. Programları Windows, Linux, Android ve iOS geliştirme için Visual C++ kullanın.
-ms.date: 09/26/2018
+ms.date: 05/13/2019
 ms.technology: cpp-ide
 helpviewer_keywords:
 - Visual C++, home page
 author: mikeblome
 ms.author: mblome
-ms.openlocfilehash: a01c6448174a35da900b7b50a1df5916a2983201
-ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.openlocfilehash: 2706d232dba2a7971edd8d84da2b1d1399ed6e25
+ms.sourcegitcommit: 61121faf879cc581a4d39e4baccabf7cf1f673a5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65222606"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "65934153"
 ---
 # <a name="c-in-visual-studio"></a>Visual Studio’da C++
 
 > [!NOTE]
-> Bu Geliştirici belgeleri, Visual Studio 2015 ve Visual Studio 2017 için geçerlidir.
+> Bu Geliştirici belgeleri Visual Studio 2015 ve sonrası için geçerlidir. Sürüm Seçici, Visual Studio sürümünüze eşleştirmek için sayfanın sol üst içinde kullanın.
 >
 > Bir program çalıştırabilmek için Visual C++ yeniden dağıtılabilir paketi arıyorsanız, Git [Microsoft Download Center](http://www.microsoft.com/download/) girin **Visual C++** arama kutusuna.
 
-
 Microsoft Visual Visual C++ ya da MSVC, genellikle kısalttık C++, C++, C ve derleme dili geliştirme araçları ve kitaplıkları kullanılabilir adıdır, Windows üzerinde Visual Studio'nun bir parçası olarak. Bu araçlar ve kitaplıklar, Evrensel Windows Platformu (UWP) uygulamaları, yerel Windows Masaüstü ve sunucu uygulamaları, platformlar arası kitaplıklar ve Windows, Linux, Android ve iOS, hem de yönetilen uygulamaları ve .NET kullanma kitaplıkları çalışan uygulamalar oluşturmanızı sağlar Çerçeve. Her şeyi basit bir konsol uygulamalardan en karmaşık ve karmaşık uygulamalar Windows Masaüstü için cihaz sürücüleri ve platformlar arası oyunlar mobil cihazları ve işletim sistemi bileşenleri için en küçük IOT cihazlarından yazmak için Visual C++ kullanabilirsiniz çok sunuculu yüksek performanslı Azure bulutta bilgi işlem.
+
+Visual Studio 2015 ve 2017 2019 yüklü yan yana olabilir. Düzenle ve araç takımı (v140) Visual Studio 2015 ve Visual Studio 2017 (v141) kullanan programlar oluşturmak için Visual Studio 2019 (derleyici araç takımı v142) kullanabilirsiniz.
 
 ## <a name="whats-new-and-conformance-history"></a>Yenilikler ve uyumluluk geçmişi
 

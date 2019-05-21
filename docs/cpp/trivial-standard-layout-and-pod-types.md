@@ -2,16 +2,16 @@
 title: Önemsiz, Standart Düzen ve POD değişmez değer türleri
 ms.date: 04/05/2018
 ms.assetid: 2b23a7be-9bad-49fc-8298-31a9a7c556b0
-ms.openlocfilehash: c742f4c84a1b2ba558b790d7eea7760902da7818
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 2745302b3ebd7927e9d839e4661e884a2bd91042
+ms.sourcegitcommit: 61121faf879cc581a4d39e4baccabf7cf1f673a5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62266770"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "65934207"
 ---
 # <a name="trivial-standard-layout-pod-and-literal-types"></a>Önemsiz, Standart Düzen ve POD değişmez değer türleri
 
-Terim *Düzen* bellekte sınıf, yapı veya birleşim türü, bir nesnenin üyelerine nasıl düzenlenir için ifade eder. Bazı durumlarda, Düzen dil belirtimine göre iyi tanımlanmış. Ancak bir sınıf veya yapı sanal temel sınıflar, sanal işlevler, farklı erişim denetimi ile üyeleri gibi belirli C++ dil özellikleri içerdiğinde, ardından derleyici bir düzen seçebilirsiniz. Bu düzen hangi iyileştirmeleri gerçekleştirilen bağlı olarak değişiklik gösterebilir ve çoğu durumda nesne bile bir bitişik bellek alanının belleğinde değil. Örneğin, bir sınıf sanal işlevler varsa, bu sınıfın tüm örnekleri tek sanal işlev tablosuna paylaşabilir. Gibi türler Elbette çok yararlı olur, ancak aynı zamanda sınırlamalara sahiptirler. Düzen tanımsız olduğundan bunlar C gibi diğer dillerde yazılmış programlar için geçirilemez ve bitişik olmayan olabileceğinden, güvenilir bir şekilde hızlı alt düzey işlevlerle gibi kopyalanamaz `memcopy` veya bir ağ üzerinden seri hale getirilmiş.
+Terim *Düzen* bellekte sınıf, yapı veya birleşim türü, bir nesnenin üyelerine nasıl düzenlenir için ifade eder. Bazı durumlarda, Düzen dil belirtimine göre iyi tanımlanmış. Ancak bir sınıf veya yapı sanal temel sınıflar, sanal işlevler, farklı erişim denetimi ile üyeleri gibi belirli C++ dil özellikleri içerdiğinde, ardından derleyici bir düzen seçebilirsiniz. Bu düzen hangi iyileştirmeleri gerçekleştirilen bağlı olarak değişiklik gösterebilir ve çoğu durumda nesne bile bir bitişik bellek alanının belleğinde değil. Örneğin, bir sınıf sanal işlevler varsa, bu sınıfın tüm örnekleri tek sanal işlev tablosuna paylaşabilir. Gibi türler oldukça faydalıdır, ancak aynı zamanda sınırlamalara sahiptirler. Düzen tanımsız olduğundan bunlar C gibi diğer dillerde yazılmış programlar için geçirilemez ve bitişik olmayan olabileceğinden, güvenilir bir şekilde hızlı alt düzey işlevlerle gibi kopyalanamaz `memcopy`, veya bir ağ üzerinden seri hale getirilmiş.
 
 C ++ 14 derleyicileri hem de C++ programları ve üzerinde bir belirli bellek düzeni bağlı işlemler için belirtilen her türlü uygunluğu konusunda nedeni metaprograms etkinleştirmek için basit sınıflar ve yapılar üç kategorisi sunulan: *Önemsiz*, *Standart Düzen*, ve *POD* veya düz eski veriler. Standart kitaplık işlev şablonları sahip `is_trivial<T>`, `is_standard_layout<T>` ve `is_pod<T>` verilen tür belirli bir kategoriye ait olup olmadığını belirler.
 

@@ -5,12 +5,12 @@ ms.technology: cpp-language
 ms.assetid: 8801dbdb-ca0b-491f-9e33-01618bff5ae9
 author: mikeblome
 ms.author: mblome
-ms.openlocfilehash: f168da7440c52d1a2d5bc68a6e973d47122b7212
-ms.sourcegitcommit: a10c9390413978d36b8096b684d5ed4cf1553bc8
+ms.openlocfilehash: 726d9f6573b4a3457205001875dac80b3a2997d7
+ms.sourcegitcommit: 61121faf879cc581a4d39e4baccabf7cf1f673a5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65837496"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "65934162"
 ---
 # <a name="c-conformance-improvements-in-visual-studio-2017-versions-150-153improvements153-155improvements155-156improvements156-157improvements157-158update158-159improvements159"></a>Visual Studio 2017 sürüm 15.0,'deki C++ uyumluluk geliştirmeleri [15.3](#improvements_153), [15.5](#improvements_155), [15.6](#improvements_156), [15.7](#improvements_157), [15,8](#update_158), [15.9](#improvements_159)
 
@@ -70,7 +70,7 @@ Bir öznitelik listesinde yalnızca tek bir ad tanımlayıcısı etkinleştirmek
 
 ### <a name="structured-bindings"></a>Yapılandırılmış bağlamalar
 
-Artık, tek bir bildirimde değer bir dizi, std::tuple veya std::pair veya tüm ortak statik olmayan veri üyelerine sahip olduğunda, bileşenleri için ayrı ayrı adlara sahip bir değer depolamak için de mümkündür. Daha fazla bilgi için [yapılandırılmış bağlamalar](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2015/p0144r0.pdf) ve [birden çok değer döndüren bir işlevden](../../cpp/functions-cpp.md#multi_val).
+Artık değeri bir dizi olduğunda, bileşenleri için ayrı ayrı adlara sahip bir değer depolamak için tek bir bildirimde olası bir `std::tuple` veya `std::pair`, ya da tüm ortak statik olmayan veri üyelerine sahip. Daha fazla bilgi için [yapılandırılmış bağlamalar](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2015/p0144r0.pdf) ve [birden çok değer döndüren bir işlevden](../../cpp/functions-cpp.md#multi_val).
 
 ### <a name="construction-rules-for-enum-class-values"></a>Enum sınıfı değerleri için oluşturma kuralları
 
