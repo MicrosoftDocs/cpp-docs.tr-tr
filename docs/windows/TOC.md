@@ -3,7 +3,7 @@
 # [İzlenecek yol: Windows Masaüstü Uygulaması Oluşturma](walkthrough-creating-windows-desktop-applications-cpp.md)
 # [Windows Masaüstü Sihirbazı](win32-application-wizard.md)
 # [Etkin Şablon Kitaplığı (ATL)](../atl/atl-com-desktop-components.md)
-# [Microsoft Foundation Sınıfları (MFC)](../mfc/TOC.md)
+# [Microsoft Foundation Sınıfları (MFC)](../mfc/mfc-desktop-applications.md)
 # [ATL ve MFC Paylaşılan Sınıfları](../atl-mfc-shared/TOC.md)
 # [Veri Erişimi](../data/data-access-in-cpp.md)
 # [Metin ve Dizeler](../text/text-and-strings-in-visual-cpp.md)

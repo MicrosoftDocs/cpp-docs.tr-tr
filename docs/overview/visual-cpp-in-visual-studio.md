@@ -1,18 +1,18 @@
 ---
 title: Visual Studio’da C++
 description: Visual C++ için Microsoft C++ Derleyici, Kod Düzenleyicisi ve ilgili araçlar Visual Studio IDE'de addır. Programları Windows, Linux, Android ve iOS geliştirme için Visual C++ kullanın.
-ms.date: 05/13/2019
+ms.date: 05/14/2019
 ms.technology: cpp-ide
 helpviewer_keywords:
 - Visual C++, home page
 author: mikeblome
 ms.author: mblome
-ms.openlocfilehash: 2706d232dba2a7971edd8d84da2b1d1399ed6e25
-ms.sourcegitcommit: 61121faf879cc581a4d39e4baccabf7cf1f673a5
+ms.openlocfilehash: e9327f74f46590f4d4a71e56340dcadf6527fabb
+ms.sourcegitcommit: bde3279f70432f819018df74923a8bb895636f81
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "65934153"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66174787"
 ---
 # <a name="c-in-visual-studio"></a>Visual Studio’da C++
 
@@ -45,10 +45,10 @@ MSVC C++ derleyicisinde özelliğiyle uygunluk durumu listesi.
 ## <a name="install-visual-studio-and-upgrade-from-earlier-versions"></a>Visual Studio'yu yükleyin ve önceki sürümlerinden yükseltme
 
 [Visual Studio'ya C++ desteği yükleme](../build/vscpp-step-0-installation.md)<br/>
-Visual Studio 2015 veya Visual Studio 2017'yi indirip Visual C++ Araç Takımı'nı yükleyin.
+Visual Studio 2017 veya Visual Studio 2019 yükleyip, görsel C++ araç takımı.
 
 [Visual C++ Taşıma ve Yükseltme Kılavuzu](../porting/visual-cpp-porting-and-upgrading-guide.md)<br/>
-Kod taşıma ve Visual Studio 2015 veya Visual Studio 2017, Windows 10 ve evrensel Windows platformu için C++ kodunu taşıma dahil olmak üzere projelerini Yükseltme Kılavuzu.
+Kod taşıma ve büyük derleyici uyumluluğu için yararlanmak için projeleri Visual Studio 2015 veya sonraki bir sürüme yükseltme için kılavuz C++ yanı sıra büyük ölçüde geliştirilmiş derleme sürelerini ve güvenlik özellikleri Spectre riskini azaltma gibi standart.
 
 [Visual Studio Sürümlerinde Visual C++ Araçları ve Özellikleri](visual-cpp-tools-and-features-in-visual-studio-editions.md)<br/>
 Farklı Visual Studio sürümleri hakkında bilgi edinin.
@@ -59,7 +59,7 @@ Hangi platformların desteklendiğini öğrenin.
 ## <a name="learn-c"></a>Learn C++
 
 [C++ tekrar Hoş Geldiniz](../cpp/welcome-back-to-cpp-modern-cpp.md)<br/>
-C stili programlama düşebileceğiniz tuzakları birçoğu önlemek ve daha hızlı yazmanıza olanak tanıyan C ++ 14 ve C ++ 11 dayalı programlama modern C++ hakkında güvenli kod öğrenin.
+Modern hakkında daha fazla bilgi C++ hızlı, güvenli kod yazma ve birçok C stili programlama düşebileceğiniz tuzakları önlemek etkinleştirdiğiniz C ++ 11 ve sonraki sürümlerde tabanlı programlama.
 
 [Standart C++](http://isocpp.org/)<br/>
 C++ hakkında bilgi edinin, Modern C++ hakkında genel bilgileri alın ve kitaplar, makaleler, konuşmalar ve olaylar için bağlantılara ulaşın
@@ -79,7 +79,7 @@ Visual Studio IDE kullanmak projeler oluşturun, kod düzenleme, kitaplıkların
 Nasıl oluşturun ve Visual Studio C++ projeleri, CMake projelerini ve diğer tür projelere MSVC derleyici ve bağlayıcı seçeneklerini yapılandırın.
 
 [Yazma ve C++ kodu yeniden düzenleme](../ide/writing-and-refactoring-code-cpp.md)<br/>
-Yeniden düzenleme C++ düzenleyicide üretkenlik kullanılacak özellikleri nasıl gidin ve kod yazın.
+Üretkenlik kullanmayı özellikleri C++ yeniden düzenleyin, Git, anlamak ve kod yazmak için düzenleyici.
 
 [Yerel Kodda Hata Ayıklama](/visualstudio/debugger/debugging-native-code)<br/>
 C++ projeleri Visual Studio hata ayıklayıcısını kullanın.
@@ -117,7 +117,7 @@ Uygulamaları kötü amaçlı kod ve yetkisiz kullanıma karşı nasıl koruyaca
 C++'da, web ve buluta bağlamak için birkaç seçeneğiniz vardır.
 
 [Veri Erişimi](../data/data-access-in-cpp.md)<br/>
-ODBC ve diğer veritabanı erişim teknolojileri kullanan veritabanlarına bağlanın.
+ODBC ve OLE DB kullanan veritabanlarına bağlanın.
 
 [Metin ve Dizeler](../text/text-and-strings-in-visual-cpp.md)<br/>
 Farklı metin ve dize biçimleri ve yerel ve uluslararası geliştirme için Kodlamalar ile çalışma hakkında bilgi edinin.

@@ -1,30 +1,34 @@
 ---
-title: .ERRIDN]
-ms.date: 08/30/2018
+title: '&period;ERRIDN, &period;ERRIDNI'
+ms.date: 05/23/2019
 f1_keywords:
 - .ERRIDN[[I]]
+- .ERRIDN
+- .ERRIDNI
 helpviewer_keywords:
 - .ERRIDN[[I]] directive
+- .ERRIDN directive
+- .ERRIDNI directive
 ms.assetid: 89507db3-7d40-4a5e-a378-24d30feda9d1
-ms.openlocfilehash: 91da9a4650bff66950abd9b4327033cca647aaa9
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: cbac548efd1a8b030100e26ddf966b93c15ed3f4
+ms.sourcegitcommit: 79e985d3c6e8ccaf94f6e641972887cae8c6eeb0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62205727"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66197709"
 ---
-# <a name="erridn"></a>.ERRIDN]
+# <a name="perioderridn-perioderridni"></a>&period;ERRIDN, &period;ERRIDNI
 
 Metin öğelerini aynıysa, bir hata oluşturur.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> . [[I]] ERRIDN *textitem1*, *textitem2* [[, *ileti*]]
+> **. ERRIDN**\[**miyim**] *textitem1* __,__ *textitem2* \[ __,__ *ileti*]
 
 ## <a name="remarks"></a>Açıklamalar
 
-Varsa **miyim** olduğunu göz önünde bulundurulduğunda, karşılaştırma büyük/küçük harf ve büyük harflere duyarlı değildir.
+Varsa  **&period;ERRIDNI** olduğunu göz önünde bulundurulduğunda, karşılaştırma büyük/küçük harf ve büyük harflere duyarlı değildir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Yönergeler Başvurusu](../../assembler/masm/directives-reference.md)<br/>
+[Yönergeler başvurusu](../../assembler/masm/directives-reference.md)

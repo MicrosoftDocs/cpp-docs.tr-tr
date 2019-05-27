@@ -2,12 +2,12 @@
 title: C++'da Windows Programlamasına Genel Bakış
 ms.date: 05/06/2019
 ms.assetid: efc691d7-21f3-47ae-ae56-cab999ccf59d
-ms.openlocfilehash: 036da87c24eef38f3c88bb5f73808a434b9da6a1
-ms.sourcegitcommit: a10c9390413978d36b8096b684d5ed4cf1553bc8
+ms.openlocfilehash: 957e3565ad4caa12da5e7d10915ca159d00954b8
+ms.sourcegitcommit: 79e985d3c6e8ccaf94f6e641972887cae8c6eeb0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65837557"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66197748"
 ---
 # <a name="overview-of-windows-programming-in-c"></a>C++'da Windows Programlamasına Genel Bakış
 
@@ -100,7 +100,7 @@ Visual Studio yerel kod, statik çözümleme araçları, grafik hata ayıklama a
 |[İzlenecek yol: Windows Masaüstü Uygulaması Oluşturma (C++)](walkthrough-creating-windows-desktop-applications-cpp.md)|Yerel bir Windows masaüstü uygulaması oluşturun.|
 |[Windows Masaüstü Sihirbazı](windows-desktop-wizard.md)|Yeni Windows projeleri oluşturmak için Sihirbazı'nı kullanın.|
 |[Etkin Şablon Kitaplığı (ATL)](../atl/atl-com-desktop-components.md)|ATL kitaplığı, C++ ile COM bileşenleri oluşturmak için kullanın.|
-|[Microsoft Foundation Sınıfları (MFC)](../mfc/TOC.md)|MFC iletişim kutuları ve denetimleri ile büyük veya küçük Windows uygulamaları oluşturmak için kullanın|
+|[Microsoft Foundation Sınıfları (MFC)](../mfc/mfc-desktop-applications.md)|MFC iletişim kutuları ve denetimleri ile büyük veya küçük Windows uygulamaları oluşturmak için kullanın|
 |[ATL ve MFC Paylaşılan Sınıfları](../atl-mfc-shared/TOC.md)|ATL ve MFC paylaşılan sınıfları CString gibi kullanın.|
 |[Veri Erişimi](../data/data-access-in-cpp.md)| OLE DB ve ODBC|
 |[Metin ve Dizeler](../text/text-and-strings-in-visual-cpp.md)|Windows üzerinde çeşitli dize türleri.|

@@ -6,47 +6,48 @@ helpviewer_keywords:
 - Visual C++, development tools
 author: corob-msft
 ms.author: corob
-ms.openlocfilehash: 18d13fa74554e2cb37c02bc0e5a00443e7813798
-ms.sourcegitcommit: 18d3b1e9cdb4fc3a76f7a650c31994bdbd2bde64
+ms.openlocfilehash: 54ed590122f1eb914ff039378914a1fd4adc5f10
+ms.sourcegitcommit: bde3279f70432f819018df74923a8bb895636f81
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/29/2019
-ms.locfileid: "64876884"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66174772"
 ---
 # <a name="overview-of-c-development-in-visual-studio"></a>Visual Studio’da C++ geliştirmeye genel bakış
 
-Visual Studio tümleşik geliştirme ortamı (IDE) parçası olarak, Microsoft C++ (MSVC) birçok windows ve diğer diller ortak Araçlar paylaşır. Bu da dahil olmak üzere birçok **Çözüm Gezgini**, Kod Düzenleyicisi ve hata ayıklayıcı altında belgelenen [Visual Studio IDE](/visualstudio/get-started/visual-studio-ide). Genellikle, paylaşılan bir aracı veya pencere biraz farklı bir özellik kümesi için C++ JavaScript veya .NET dilleri için vardır. Bazı windows veya araçları yalnızca Visual Studio Professional veya Visual Studio Enterprise sürümlerinde kullanılabilir.
+Visual Studio tümleşik geliştirme ortamı (IDE) parçası olarak, Microsoft C++ (MSVC) birçok windows ve diğer diller ortak Araçlar paylaşır. Bu da dahil olmak üzere birçok **Çözüm Gezgini**, Kod Düzenleyicisi ve hata ayıklayıcı altında belgelenen [Visual Studio IDE](/visualstudio/get-started/visual-studio-ide). Genellikle, özellikler için biraz farklı bir dizi paylaşılan aracı veya pencere vardır C++ daha başka diller için. Bazı windows veya araçları yalnızca Visual Studio Professional veya Visual Studio Enterprise sürümlerinde kullanılabilir.
 
 Visual Studio IDE'de paylaşılan araçlara ek olarak, MSVC yerel kod geliştirme için özel olarak çeşitli araçları vardır. Bu araçlar, bu makalede de listelenir. Hangi Araçlar Visual Studio'nun her sürümünde bir listesi için bkz [C++ Araçları ve özellikleri Visual Studio sürümlerinde](visual-cpp-tools-and-features-in-visual-studio-editions.md).
 
 ## <a name="create-projects"></a>Projeleri oluşturma
 
-A *proje* temel bir kaynak kodu dosyaları ve yürütülebilir bir dosyada yerleşik görüntüleri veya veri dosyaları gibi kaynakları kümesidir.
+A *proje* temel bir kaynak kodu dosyaları ve bir yürütülebilir programı veya kitaplığa yerleşik görüntüleri veya veri dosyaları gibi kaynakları kümesidir.
 
-Visual Studio, herhangi bir derleme sistemi veya tam IntelliSense, göz atma ve hata ayıklama desteği ile kullanmak istediğiniz özel derleme araçları için destek sağlar:
+Visual Studio Proje sistemi veya tam IntelliSense, göz atma ve hata ayıklama desteği ile kullanmak istediğiniz özel derleme araçları desteği sağlar:
 
-- **MSBuild** yerel yapı sistemi için Visual Studio. Seçtiğinizde, **dosya** > **yeni** > **proje** birçok farklı MSBuild'in gördüğünüz ana menüden *proje şablonları*  hızlıca farklı türde C++ uygulamalar geliştirmeye başlamanıza edinin.
+- **MSBuild** Visual Studio için yerel proje sistemidir. Seçtiğinizde, **dosya** > **yeni** > **proje** birçok farklı MSBuild'in gördüğünüz ana menüden *proje şablonları*  hızlıca farklı türde C++ uygulamalar geliştirmeye başlamanıza edinin.
 
-::: moniker range="vs-2019"
+   ::: moniker range="vs-2019"
 
    ![Yeni proje şablonları](../build/media/mathclient-project-name-2019.png "Visual Studio 2019 yeni proje iletişim kutusu")
 
-::: moniker-end
+   ::: moniker-end
 
-::: moniker range="<=vs-2017"
+   ::: moniker range="<=vs-2017"
 
    ![Proje şablonları](media/vs2017-new-project.png "Visual Studio 2017 yeni proje iletişim kutusu")
 
-::: moniker-end
+   ::: moniker-end
 
-   Genel olarak, CMake veya başka bir proje sistemi kullanmak için belirli bir neden olmadığı sürece, bu şablonlardan yeni projeler için kullanmanız gerekir. Bazı projeler sahip bir *Sihirbazı* , size yeni bir proje oluşturma işleminde size adım adım. Daha fazla bilgi için [oluşturma ve yönetme MSBuild tabanlı projeler](../build/creating-and-managing-visual-cpp-projects.md).
+   Genel olarak, bu şablonları yeni projeler için mevcut CMake projelerini kullandığınız ya da başka bir proje sistemi kullanmadığınız sürece kullanmanız gerekir. Daha fazla bilgi için [oluşturma ve yönetme MSBuild tabanlı projeler](../build/creating-and-managing-visual-cpp-projects.md).
 
-- **CMake** platformlar arası C++ iş yükünde ile masaüstü geliştirme yüklediğinizde Visual Studio IDE'ye tümleşik sistemi yapı. Daha fazla bilgi için [Visual Studio'daki CMake projeleri](../build/cmake-projects-in-visual-studio.md).
+- **CMake** platformlar arası C++ iş yükünde ile masaüstü geliştirme yüklediğinizde Visual Studio IDE'ye tümleşik sistemi yapı. Yeni projeler için CMake proje şablonu kullanın veya bir klasöre bir CMakeLists.txt dosyasıyla açmanız yeterlidir. Daha fazla bilgi için [Visual Studio'daki CMake projeleri](../build/cmake-projects-in-visual-studio.md).
+
 - Aracılığıyla dosyaları gevşek koleksiyonu dahil olmak üzere tüm diğer C++ yapı sistemini, desteklenen **Klasör Aç** özelliği. Derleme programınızı çağırmak ve hata ayıklama oturumları yapılandırmak için basit JSON dosyalarını oluşturduğunuz. Daha fazla bilgi için [C++ açık klasörü projelerde](../build/open-folder-projects-cpp.md).
 
 ## <a name="add-to-source-control"></a>Kaynak denetimine Ekle
 
-Kaynak denetimi işi birden fazla Geliştirici arasında devam eden üretim kodundan yalıtmak ve kaynak kodunuzu yedekleme sağlar. Visual Studio, Git destekler ve [Team Foundation sürüm denetimi \(TFVC\) ](/azure/devops/repos/tfvc/) aracılığıyla kendi **Takım Gezgini** penceresi.
+Kaynak denetimi işi birden fazla Geliştirici arasında devam eden üretim kodundan yalıtmak ve kaynak kodunuzu yedekleme sağlar. Visual Studio, Git destekler ve [Team Foundation sürüm denetimi \(TFVC\) ](/azure/devops/repos/tfvc/) aracılığıyla kendi **Takım Gezgini** penceresi. 
 
 ::: moniker range="vs-2019"
 
@@ -61,6 +62,10 @@ Kaynak denetimi işi birden fazla Geliştirici arasında devam eden üretim kodu
 ::: moniker-end
 
 Azure'da depolarla Git tümleştirmesi hakkında daha fazla bilgi için bkz: [Azure depoları Git ile Visual Studio 2017 ile kodunuzu paylaşmaya](/azure/devops/repos/git/share-your-code-in-git-vs-2017). GitHub ile Git tümleştirmesi hakkında daha fazla bilgi için bkz. [Visual Studio için GitHub uzantısı](https://visualstudio.github.com/).
+
+## <a name="obtain-libraries"></a>Kitaplıkları edinin
+
+Kullanım [vcpkg](../build/vcpkg.md) elde edilir ve üçüncü taraf kitaplıklarını yüklemek için Paket Yöneticisi. 900 açık kaynak kitaplıkları katalogda şu anda kullanılabilir.
 
 ## <a name="create-user-interfaces-with-designers"></a>Tasarımcılar ile kullanıcı arabirimleri oluşturun
 
@@ -78,9 +83,7 @@ Bir projeyi oluşturduktan sonra tüm proje dosyaları içinde görüntülenen *
 
 ![Çözüm Gezgini ve Kod Düzenleyicisi](media/vs2017-solution-explorer-code-editor.png "Visual Studio 2017 Çözüm Gezgini ve Kod Düzenleyicisi")
 
-Özelleştirilmiş bir sözcük işlemcisi C++ kaynak kodu için kod düzenleyicisidir. Dil anahtar sözcükleri, yöntemi ve değişken adları ve diğer öğelerin kodunu daha okunabilir ve daha kolay anlaşılır hale getirmek için kodunuzu renkli kodlarla gösterir.
-
-Daha fazla bilgi için [yazma ve yeniden düzenleme kodunda](../ide/writing-and-refactoring-code-cpp.md).
+Özelleştirilmiş bir sözcük işlemcisi C++ kaynak kodu için kod düzenleyicisidir. Dil anahtar sözcükleri, yöntemi ve değişken adları ve diğer öğelerin kodunu daha okunabilir ve daha kolay anlaşılır hale getirmek için kodunuzu renkli kodlarla gösterir. Ayrıca araçları kodu yeniden düzenleme, farklı dosyalar arasında gezinme ve kod nasıl yapılandırıldığını anlamak için sağlar. Daha fazla bilgi için [yazma ve yeniden düzenleme kodunda](../ide/writing-and-refactoring-code-cpp.md).
 
 ## <a name="add-and-edit-resources"></a>Ekleme ve kaynakları düzenleme
 
@@ -94,7 +97,7 @@ Seçin **derleme** > **Çözümü Derle** menüsünde çubuk veya derlemek ve bi
 
 ![Çıkış penceresi ve hata listesi](media/vs2017-output-error-list.png "Visual Studio 2017 çıktı penceresi ve hata listesi")
 
-MSBuild yapılandırmaları hakkında daha fazla bilgi için bkz. [Working with Project Properties](../build/working-with-project-properties.md) ve [projeler ve yapı sistemi](../build/projects-and-build-systems-cpp.md).
+Yapı yapılandırma hakkında daha fazla bilgi için bkz. [Working with Project Properties](../build/working-with-project-properties.md) ve [projeler ve yapı sistemi](../build/projects-and-build-systems-cpp.md).
 
 Ayrıca, derleyici (cl.exe) ve diğer birçok derlemeyle ilgili tek başına Araçlar NMAKE ve LIB gibi komut satırından doğrudan da kullanabilirsiniz. Daha fazla bilgi için [komut satırında C/C++ derleme kodu](../build/building-on-the-command-line.md) ve [C/C++ oluşturma başvurusu](../build/reference/c-cpp-building-reference.md).
 
@@ -108,7 +111,7 @@ Daha fazla bilgi için [Visual Studio'da hata ayıklama](/visualstudio/debugger/
 
 ## <a name="test"></a>Test
 
-Visual Studio, hem yerel C++ ve C + için birim testi çerçevelerini içerir +/ CLI. Boost.Test, Google Test ve CTest de desteklenir. Kullanarak bu testleri **Test Gezgini** penceresi:
+Visual Studio için Microsoft Birim Test Çerçevesi içerir C++, Boost.Test, Google Test ve CTest desteği yanı sıra. Kullanarak bu testleri **Test Gezgini** penceresi:
 
 ![Test Gezgini](media/cpp-test-explorer-passed.png "Visual Studio 2017 Test Gezgini")
 

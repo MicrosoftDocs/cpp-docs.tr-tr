@@ -7,19 +7,21 @@ f1_keywords:
 helpviewer_keywords:
 - A2219
 ms.assetid: 5ebc2f40-e47e-4f8e-b7b9-960b9cfc9f6d
-ms.openlocfilehash: beb1e7c565e80d34899e933256f0659b0fded645
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 61fa6bc6d630f1e8a8ac84492b60690c9545fb3e
+ms.sourcegitcommit: 79e985d3c6e8ccaf94f6e641972887cae8c6eeb0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62201448"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66197675"
 ---
 # <a name="ml-nonfatal-error-a2219"></a>ML Önemli Olmayan Hatası A2219
 
-**Uzaklığı hatalı hizalanması, kod geriye doğru izleme**
+> Uzaklığı hatalı hizalanması, kod geriye doğru izleme
 
-İçin işlenen [. ALLOCSTACK](../../assembler/masm/dot-allocstack.md) ve [. SAVEREG](../../assembler/masm/dot-savereg.md) 8'in katı olmalıdır.  İçin işlenen [. SAVEXMM128](../../assembler/masm/dot-savexmm128.md) ve [. SETFRAME](../../assembler/masm/dot-setframe.md) 16 katı olmalıdır.
+## <a name="remarks"></a>Açıklamalar
+
+İçin işlenen [ &period;ALLOCSTACK](../../assembler/masm/dot-allocstack.md) ve [ &period;SAVEREG](../../assembler/masm/dot-savereg.md) 8'in katı olmalıdır.  İçin işlenen [ &period;SAVEXMM128](../../assembler/masm/dot-savexmm128.md) ve [ &period;SETFRAME](../../assembler/masm/dot-setframe.md) 16 katı olmalıdır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[ML Hata İletileri](../../assembler/masm/ml-error-messages.md)<br/>
+[ML hata iletileri](../../assembler/masm/ml-error-messages.md)

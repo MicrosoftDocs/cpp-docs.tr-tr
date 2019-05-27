@@ -4,12 +4,12 @@ ms.date: 03/27/2019
 helpviewer_keywords:
 - run-time object model services macros
 ms.assetid: 4a3e79df-2ee3-43a4-8193-20298828de85
-ms.openlocfilehash: 2dccb1c2081996ce7336652b207f3a68b20a3f9e
-ms.sourcegitcommit: a61d17cffdd50f1c3c6e082a01bbcbc85b6cc5a7
+ms.openlocfilehash: 3e9c3dcc02cb4307787f3e0baf5e99ac31b3d183
+ms.sourcegitcommit: bde3279f70432f819018df74923a8bb895636f81
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/21/2019
-ms.locfileid: "65975112"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66174843"
 ---
 # <a name="run-time-object-model-services"></a>Çalışma Süresi Nesne Modeli Hizmetleri
 
@@ -60,7 +60,7 @@ Ortak Denetimler kitaplığını belirtilen API uygulayıp uygulamadığını be
 
 ### <a name="syntax"></a>Sözdizimi
 
-  ```
+```
 AFX_COMCTL32_IF_EXISTS(  proc );
 ```
 
@@ -165,7 +165,7 @@ DECLARE_DYNCREATE makrosu hakkında daha fazla bilgi için bkz. [CObject sınıf
 
 **Başlık:** afx.h
 
-## <a name="declare_olectltype"></a> declare_olectltype
+## <a name="declare_olectltype"></a> DECLARE_OLECTLTYPE
 
 Bildirir `GetUserTypeNameID` ve `GetMiscStatus` denetim sınıfınızın bir üye işlevleri.
 
@@ -188,7 +188,7 @@ Denetim sınıfı adı.
 
 **Başlık:** afxctl.h
 
-## <a name="a-namedeclareproppageids-declareproppageids"></a><a name="declare_proppageids"> declare_proppageıds
+## <a name="declare_proppageids"></a> DECLARE_PROPPAGEIDS
 
 OLE denetim özelliklerini görüntülemek için özellik sayfalarının bir listesini sağlar bildirir.
 
@@ -361,7 +361,7 @@ OLE sınıf kimliği bir nesne için benzersiz 128-bit tanımlayıcısıdır. Bi
 
 **Başlık:** afxdisp.h
 
-## <a name="a-nameimplementolectltype-implementolectltype"></a><a name="implement_olectltype"> ımplement_olectltype
+## <a name="implement_olectltype"></a> IMPLEMENT_OLECTLTYPE
 
 Implements `GetUserTypeNameID` ve `GetMiscStatus` denetim sınıfınızın bir üye işlevleri.
 

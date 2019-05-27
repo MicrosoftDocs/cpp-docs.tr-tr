@@ -1,6 +1,6 @@
 ---
 title: _open_osfhandle
-ms.date: 05/29/2018
+ms.date: 05/21/2019
 apiname:
 - _open_osfhandle
 apilocation:
@@ -24,12 +24,12 @@ helpviewer_keywords:
 - file handles [C++], associating
 - _open_osfhandle function
 ms.assetid: 30d94df4-7868-4667-a401-9eb67ecb7855
-ms.openlocfilehash: f45ca46cae459c8606f88a98d03b64c40e5d5f01
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 8527dade37f20b7341d5a26f5752ece668ab7fc9
+ms.sourcegitcommit: bde3279f70432f819018df74923a8bb895636f81
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62156116"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66174794"
 ---
 # <a name="openosfhandle"></a>_open_osfhandle
 
@@ -69,7 +69,7 @@ Bu bildirim sabitleri tanımlanan \<fcntl.h >:
 | **\_O\_METİN** | Dosya, metin (çevrilmiş) modunda açılır. |
 | **\_O\_WTEXT** | Dosya Unicode (çevrilmiş UTF-16) modunda açılır. |
 
-**_Open_osfhandle** çağrı dosya tanımlayıcısı için Win32 dosya işleci sahipliğini aktarır. Açılmış neden olan bir dosyayı kapatmak için **_open_osfhandle**, çağrı [ \_kapatmak](close.md). Temel işletim sistemi dosya tanıtıcısı aynı zamanda yapılan bir çağrıyla kapalı **_close**, Win32 işlevini çağırmak için gereken, yani **CloseHandle** özgün tutamacı. Dosya tanımlayıcısı aitse bir **dosya &#42;**  akış, ardından arama [fclose](fclose-fcloseall.md) üzerindeki **dosya &#42;**  akışı de her iki dosya tanımlayıcısı kapatır ve temel alınan tanıtıcısı. Bu durumda, çağırmayın **_close** üzerinde dosya tanımlayıcısı.
+**_Open_osfhandle** çağrı dosya tanımlayıcısı için Win32 dosya işleci sahipliğini aktarır. Kullanarak açılan bir dosyanın kapatmak için **_open_osfhandle**, çağrı [ \_kapatmak](close.md). Temel işletim sistemi dosya tanıtıcısı aynı zamanda yapılan bir çağrıyla kapalı **_close**. Win32 işlevini çağırmayın **CloseHandle** özgün tutamacı. Dosya tanımlayıcısı aitse bir **dosya &#42;**  stream ve ardından bir çağrı [fclose](fclose-fcloseall.md) üzerindeki **dosya &#42;**  dosya tanımlayıcısı ve temel akışı kapatır tanıtıcı. Bu durumda, Remove() çağırmayın **_close** üzerinde dosya tanımlayıcısı veya **CloseHandle** özgün tutamacı.
 
 ## <a name="requirements"></a>Gereksinimler
 

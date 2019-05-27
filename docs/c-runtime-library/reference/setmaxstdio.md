@@ -1,6 +1,6 @@
 ---
 title: _setmaxstdio
-ms.date: 11/04/2016
+ms.date: 05/21/2019
 apiname:
 - _setmaxstdio
 apilocation:
@@ -25,48 +25,48 @@ helpviewer_keywords:
 - setmaxstdio function
 - open files, maximum
 ms.assetid: 9e966875-9ff5-47c4-9b5f-e79e83b70249
-ms.openlocfilehash: 58cffedf673e23a69c2d8040071b2e3353ff4502
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 94b768d920ffd86a5bd762f8994244dda67fb15f
+ms.sourcegitcommit: bde3279f70432f819018df74923a8bb895636f81
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62356348"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66174827"
 ---
 # <a name="setmaxstdio"></a>_setmaxstdio
 
-En fazla eşzamanlı olarak açık dosyaları sayısı ayarlar **stdio** düzeyi.
+Aynı anda açık dosya sayısı için en fazla akış g/ç düzeyini ayarlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
 ```C
 int _setmaxstdio(
-   int newmax
+   int new_max
 );
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*newmax*<br/>
-Yeni aynı anda açık dosya sayısı üst sınırı **stdio** düzeyi.
+*new_max*<br/>
+Yeni maksimum sayısı için aynı anda akış g/ç düzeyi dosyalarını açın.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Döndürür *newmax* başarılıysa; Aksi takdirde -1.
+Döndürür *new_max* başarılıysa; Aksi takdirde -1.
 
-Varsa *newmax* olduğu küçüktür **_IOB_ENTRIES** ya da açıklandığı gibi geçersiz parametre işleyicisi işletim sisteminde kullanılamıyor sayısı çağrılır büyük [ Parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için bu işlev -1 döndürür ve kümeleri yürütülmesine izin veriliyorsa **errno** için **EINVAL**.
+Varsa *new_max* olduğu küçüktür **_IOB_ENTRIES**, veya en fazla sayısından büyük işletim sistemi içinde kullanılabilir işler, açıklanan şekilde geçersiz parametre işleyicisi çağrılır [ Parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için bu işlev -1 döndürür ve kümeleri yürütülmesine izin veriliyorsa **errno** için **EINVAL**.
 
 Bu ve diğer hata kodları hakkında daha fazla bilgi için bkz: [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Setmaxstdio** işlev aynı anda Aç olabilecek dosyaların sayısı, en fazla değeri değiştirir **stdio** düzeyi.
+**_Setmaxstdio** işlev aynı anda akış g/ç düzeyi açık olabilir dosyaların sayısı, en fazla değeri değiştirir.
 
-C çalışma zamanı g/ç Win32 platformları pek çok daha açık dosyalarda önceki sürümlerde artık desteklemektedir. 2.048 dosyaları kadar aynı anda açık olabilir [lowio düzeyi](../../c-runtime-library/low-level-i-o.md) (diğer bir deyişle, açtığınız ve yoluyla erişilen **_aç**, **_read**, **_write**, g/ç işlevler ailesini vb.). En fazla 512 dosyaları aynı anda açık olabilir [stdio düzeyi](../../c-runtime-library/stream-i-o.md) (diğer bir deyişle, açtığınız ve yoluyla erişilen **fopen**, **fgetc**, **fputc** İşlevler ailesini vb.). 512 açık dosyaları sınırını **stdio** düzeyini, en fazla yoluyla 2.048 artırılabilir **_setmaxstdio** işlevi.
+Artık, aynı anda açık 8192 dosyaları kadar destekler C çalışma zamanı g/ç [düşük düzey g/ç](../../c-runtime-library/low-level-i-o.md). Bu düzeyde açılır ve kullanılarak erişilen dosyalar içerir **_aç**, **_read**, ve **_write** g/ç işlevler ailesini. Varsayılan olarak, en çok 512 dosyaları aynı anda açılabilir [g/ç düzeyi akış](../../c-runtime-library/stream-i-o.md). Bu düzeyde açılır ve kullanılarak erişilen dosyalar içerir **fopen**, **fgetc**, ve **fputc** işlevler ailesini. Akış g/ç düzeyinde 512 açık dosyalar sınırını kullanarak olmak üzere 8.192 maksimum kadar artırılabilir **_setmaxstdio** işlevi.
 
-Çünkü **stdio**-gibi işlevler, düzey **fopen**, üst kısmındaki yerleşik **lowio** işlevleri, en fazla 2.048, sabit bir üst sınırı sayısı için aynı anda C çalışma zamanı kitaplığı erişilen dosyalarını açın.
+Akış miyim/O-düzeyi, gibi gördüğünden **fopen**, oluşturulan düşük miyim/O-düzey işlevleri en üstünde olmak üzere 8.192 maksimum C çalışma zamanı kitaplığı erişilen aynı anda açık dosya sayısı için sabit bir üst sınır olan.
 
 > [!NOTE]
-> Bu üst sınırı belirli Win32 platform ve yapılandırma tarafından desteklenen özellikler olabilir.
+> Bu üst sınırı, belirli Win32 platform ve yapılandırma tarafından desteklenen özellikler dışında olabilir.
 
 ## <a name="requirements"></a>Gereksinimler
 
