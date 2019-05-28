@@ -1,0 +1,2945 @@
+- name: MFC masaüstü uygulamaları
+  href: mfc-desktop-applications.md
+- name: MFC kavramları
+  expanded: false
+  items:
+    - name: MFC kavramları
+      href: mfc-concepts.md
+    - name: Genel MFC konuları
+      expanded: false
+      items:
+        - name: Genel MFC konuları
+          href: general-mfc-topics.md
+        - name: MFC kaynak dosyalarını kullanma
+          expanded: false
+          items:
+            - name: MFC kaynak dosyalarını kullanma
+              href: using-the-mfc-source-files.md
+            - name: Açıklamalara Bir Örnek
+              href: an-example-of-the-comments.md
+            - name: '-- Uygulama açıklaması'
+              href: decrement-implementation-comment.md
+            - name: '-- Oluşturucu açıklaması'
+              href: decrement-constructors-comment.md
+            - name: '-- Özniteliklerle ilgili açıklama'
+              href: decrement-attributes-comment.md
+            - name: '-- İşlem Açıklaması'
+              href: decrement-operations-comment.md
+            - name: '-- Geçersiz Kılınabilen Öğelerle İlgili Açıklama'
+              href: decrement-overridables-comment.md
+        - name: MFC kitaplık sürümleri
+          expanded: false
+          items:
+            - name: MFC kitaplık sürümleri
+              href: mfc-library-versions.md
+            - name: MFC MBCS DLL eklentisi
+              href: mfc-mbcs-dll-add-on.md
+        - name: Windows uygulamaları yazmak için sınıfları kullanma
+          expanded: false
+          items:
+            - name: Windows uygulamaları yazmak için sınıfları kullanma
+              href: using-the-classes-to-write-applications-for-windows.md
+            - name: Framework (MFC)
+              href: framework-mfc.md
+            - name: SDI ve MDI
+              href: sdi-and-mdi.md
+            - name: 'Belgeler, görünümler ve çerçeve'
+              href: documents-views-and-the-framework.md
+            - name: Sihirbazlar ve kaynak düzenleyicileri
+              href: wizards-and-the-resource-editors.md
+        - name: Framework'te derleme
+          expanded: false
+          items:
+            - name: Framework'te derleme
+              href: building-on-the-framework.md
+            - name: MFC uygulamaları oluşturmak için işlem dizisi
+              href: sequence-of-operations-for-building-mfc-applications.md
+            - name: OLE uygulamaları oluşturmak için işlem dizisi
+              href: sequence-of-operations-for-creating-ole-applications.md
+            - name: ActiveX denetimleri oluşturmak için işlem dizisi
+              href: sequence-of-operations-for-creating-activex-controls.md
+            - name: Veritabanı uygulamaları oluşturmak için işlem dizisi
+              href: sequence-of-operations-for-creating-database-applications.md
+            - name: Framework'ün kodunuzu çağırması
+              href: how-the-framework-calls-your-code.md
+        - name: 'CWinApp: Uygulama Sınıfı'
+          expanded: false
+          items:
+            - name: 'CWinApp: Uygulama Sınıfı'
+              href: cwinapp-the-application-class.md
+            - name: CWinApp ve MFC uygulama sihirbazı
+              href: cwinapp-and-the-mfc-application-wizard.md
+            - name: Geçersiz kılınabilir CWinApp üye İşlevleri
+              href: overridable-cwinapp-member-functions.md
+            - name: InitInstance üye işlevi
+              href: initinstance-member-function.md
+            - name: Üye işlevini çalıştırma
+              href: run-member-function.md
+            - name: ExitInstance üye işlevi
+              href: exitinstance-member-function.md
+            - name: OnIdle üye işlevi
+              href: onidle-member-function.md
+            - name: Özel CWinApp hizmetleri
+              href: special-cwinapp-services.md
+        - name: Belge şablonları ve belge/görünüm oluşturma işlemi
+          expanded: false
+          items:
+            - name: Belge şablonları ve belge/görünüm oluşturma işlemi
+              href: document-templates-and-the-document-view-creation-process.md
+            - name: Belge şablonu oluşturma
+              href: document-template-creation.md
+            - name: Belge-görünüm oluşturma
+              href: document-view-creation.md
+            - name: MFC nesneleri arasındaki ilişki
+              href: relationships-among-mfc-objects.md
+            - name: 'Yeni belgeler, pencereler ve görünümler oluşturma'
+              href: creating-new-documents-windows-and-views.md
+        - name: MFC modüllerinin durum verisini yönetme
+          expanded: false
+          items:
+            - name: MFC modüllerinin durum verisini yönetme
+              href: managing-the-state-data-of-mfc-modules.md
+            - name: Dışa aktarılan DLL işlev giriş noktaları
+              href: exported-dll-function-entry-points.md
+            - name: COM arabirimi giriş noktaları
+              href: com-interface-entry-points.md
+            - name: Pencere yordamı giriş noktaları
+              href: window-procedure-entry-points.md
+        - name: Boşta çevrim işleme
+          href: idle-loop-processing.md
+        - name: MFC modül durumunda etkinleştirme bağlamları desteği
+          href: support-for-activation-contexts-in-the-mfc-module-state.md
+        - name: MFC ortak denetimler kitaplığını yalıtma
+          href: isolation-of-the-mfc-common-controls-library.md
+        - name: Windows Vista ortak denetimleri için derleme gereksinimleri
+          expanded: false
+          items:
+            - name: Windows Vista ortak denetimleri için derleme gereksinimleri
+              href: build-requirements-for-windows-vista-common-controls.md
+            - name: Kullanım Dışı ANSI API'ları
+              href: deprecated-ansi-apis.md
+        - name: 'Nasıl yapılır: Yeniden başlatma yöneticisi desteği ekleme'
+          href: how-to-add-restart-manager-support.md
+        - name: Dinamik düzen
+          href: dynamic-layout.md
+    - name: CObject Kullanma
+      expanded: false
+      items:
+        - name: CObject Kullanma
+          href: using-cobject.md
+        - name: CObject'ten sınıf türetme
+          expanded: false
+          items:
+            - name: CObject'ten sınıf türetme
+              href: deriving-a-class-from-cobject.md
+            - name: İşlevsellik düzeylerini belirtme
+              href: specifying-levels-of-functionality.md
+        - name: Çalışma süresi sınıf bilgilerine erişme
+          href: accessing-run-time-class-information.md
+        - name: Dinamik nesne oluşturma
+          href: dynamic-object-creation.md
+        - name: 'CObject sınıfı: Sık sorulan sorular'
+          expanded: false
+          items:
+            - name: 'CObject sınıfı: Sık sorulan sorular'
+              href: cobject-class-frequently-asked-questions.md
+            - name: CObject'ten yeni sınıflar türetmem gerekiyor mu?
+              href: do-i-have-to-derive-new-classes-from-cobject-q.md
+            - name: CObject'ten sınıf türetmenin bana maliyeti nedir?
+              href: what-does-it-cost-me-to-derive-a-class-from-cobject-q.md
+    - name: Koleksiyonlar
+      expanded: false
+      items:
+        - name: Koleksiyonlar
+          href: collections.md
+        - name: Koleksiyon sınıfı seçme önerileri
+          href: recommendations-for-choosing-a-collection-class.md
+        - name: Şablona dayalı sınıflar
+          href: template-based-classes.md
+        - name: 'Nasıl yapılır: Tür kullanımı uyumlu koleksiyon yapma'
+          href: how-to-make-a-type-safe-collection.md
+        - name: Bir koleksiyonun tüm üyelerine erişme
+          expanded: false
+          items:
+            - name: Bir koleksiyonun tüm üyelerine erişme
+              href: accessing-all-members-of-a-collection.md
+            - name: CObject koleksiyonundaki tüm nesneleri silme
+              href: deleting-all-objects-in-a-cobject-collection.md
+        - name: Yığın ve kuyruk koleksiyonları oluşturma
+          href: creating-stack-and-queue-collections.md
+    - name: MFC'de özel durum işleme
+      expanded: false
+      items:
+        - name: MFC'de özel durum işleme
+          href: exception-handling-in-mfc.md
+        - name: 'Özel durumlar: Sürüm 3.0''da özel durum makrolarındaki değişiklikler'
+          href: exceptions-changes-to-exception-macros-in-version-3-0.md
+        - name: 'Özel durumlar: Özel durumları yakalama ve silme'
+          href: exceptions-catching-and-deleting-exceptions.md
+        - name: 'Özel durumlar: MFC özel durum makrolarından dönüştürme'
+          href: exceptions-converting-from-mfc-exception-macros.md
+        - name: 'Özel durumlar: MFC makrolarını ve C++ özel durumlarını kullanma'
+          href: exceptions-using-mfc-macros-and-cpp-exceptions.md
+        - name: 'Özel durumlar: Özel durum içeriklerini inceleme'
+          href: exceptions-examining-exception-contents.md
+        - name: 'Özel durumlar: Özel durumlardaki nesneleri boşaltma'
+          href: exceptions-freeing-objects-in-exceptions.md
+        - name: 'Özel durumlar: Kendi işlevlerinizden özel durumlar oluşturma'
+          href: exceptions-throwing-exceptions-from-your-own-functions.md
+        - name: 'Özel durumlar: Oluşturuculardaki özel durumlar'
+          href: exceptions-exceptions-in-constructors.md
+        - name: 'Özel durumlar: Veritabanı özel durumları'
+          href: exceptions-database-exceptions.md
+        - name: 'Özel durumlar: OLE özel durumları'
+          href: exceptions-ole-exceptions.md
+    - name: MFC'deki Dosyalar
+      expanded: false
+      items:
+        - name: MFC'deki Dosyalar
+          href: files-in-mfc.md
+        - name: Dosyaları Açma
+          href: opening-files.md
+        - name: Dosyaları okuma ve yazma
+          href: reading-and-writing-files.md
+        - name: Dosyaları kapatma
+          href: closing-files.md
+        - name: Dosya durumuna erişme
+          href: accessing-file-status.md
+    - name: Arabirim öğeleri
+      href: interface-elements.md
+    - name: MAPI
+      expanded: false
+      items:
+        - name: MAPI
+          href: mapi.md
+        - name: MFC'de MAPI desteği
+          href: mapi-support-in-mfc.md
+        - name: MAPI örnekleri
+          href: mapi-samples.md
+    - name: Bellek yönetimi
+      expanded: false
+      items:
+        - name: Bellek yönetimi
+          href: memory-management.md
+        - name: 'Bellek yönetimi: Çerçeve ayırma'
+          href: memory-management-frame-allocation.md
+        - name: 'Bellek yönetimi: Yığın Ayırma'
+          expanded: false
+          items:
+            - name: 'Bellek yönetimi: Yığın Ayırma'
+              href: memory-management-heap-allocation.md
+            - name: 'Bellek yönetimi: Örnekler'
+              href: memory-management-examples.md
+            - name: 'Bellek yönetimi: Yeniden boyutlandırılabilir bellek blokları'
+              href: memory-management-resizable-memory-blocks.md
+    - name: İleti işleme ve eşleme
+      expanded: false
+      items:
+        - name: İleti işleme ve eşleme
+          href: message-handling-and-mapping.md
+        - name: Framework'teki iletiler ve komutlar
+          expanded: false
+          items:
+            - name: Framework'teki iletiler ve komutlar
+              href: messages-and-commands-in-the-framework.md
+            - name: İletiler
+              href: messages.md
+            - name: İleti işleyicileri
+              href: message-handlers.md
+            - name: İleti kategorileri
+              href: message-categories.md
+            - name: Eşleme iletileri
+              href: mapping-messages.md
+            - name: Kullanıcı arabirimi nesneleri ve komut kimlikleri
+              expanded: false
+              items:
+                - name: Kullanıcı arabirimi nesneleri ve komut kimlikleri
+                  href: user-interface-objects-and-command-ids.md
+                - name: Komut Kimlikleri
+                  href: command-ids.md
+                - name: Standart komutlar
+                  href: standard-commands.md
+            - name: Komut hedefleri
+              href: command-targets.md
+        - name: Framework'ün işleyici çağırması
+          expanded: false
+          items:
+            - name: Framework'ün işleyici çağırması
+              href: how-the-framework-calls-a-handler.md
+            - name: İleti gönderme ve alma
+              href: message-sending-and-receiving.md
+            - name: Komut dışı iletilerin işleyicilerine erişmesi
+              href: how-noncommand-messages-reach-their-handlers.md
+            - name: Komut yönlendirme
+              href: command-routing.md
+            - name: Komut yönlendirme çizimi
+              href: command-routing-illustration.md
+            - name: OnCmdMsg işleyicisi
+              href: oncmdmsg-handler.md
+            - name: Standart komut yönlendirmeyi geçersiz kılma
+              href: overriding-the-standard-command-routing.md
+        - name: Framework'ün ileti eşlemelerini araması
+          expanded: false
+          items:
+            - name: Framework'ün ileti eşlemelerini araması
+              href: how-the-framework-searches-message-maps.md
+            - name: İleti eşlemelerinin bulunduğu yer
+              href: where-to-find-message-maps.md
+            - name: Türetilen ileti eşlemeleri
+              href: derived-message-maps.md
+        - name: İleti işleyici işlevlerini bildirme
+          expanded: false
+          items:
+            - name: İleti işleyici işlevlerini bildirme
+              href: declaring-message-handler-functions.md
+            - name: Standart Windows iletileri işleyicileri
+              href: handlers-for-standard-windows-messages.md
+            - name: Komutlar ve denetim bildirimleri için işleyiciler
+              href: handlers-for-commands-and-control-notifications.md
+            - name: İleti eşleme aralıkları için işleyiciler
+              href: handlers-for-message-map-ranges.md
+            - name: Yansımış iletileri işleme
+              href: handling-reflected-messages.md
+        - name: 'Nasıl yapılır: Durum çubuğunda komut bilgilerini görüntüleme'
+          href: how-to-display-command-information-in-the-status-bar.md
+        - name: 'Nasıl yapılır: Bir şablon sınıfı için ileti eşlemesi oluşturma'
+          href: how-to-create-a-message-map-for-a-template-class.md
+    - name: MFC COM
+      expanded: false
+      items:
+        - name: MFC COM
+          href: mfc-com.md
+        - name: Etkin belge kapsaması
+          expanded: false
+          items:
+            - name: Etkin belge kapsaması
+              href: active-document-containment.md
+            - name: 'Etkin belge kapsama örneği: Office Binder'
+              href: example-of-active-document-containment-office-binder.md
+            - name: Etkin belge kapsayıcı uygulaması oluşturma
+              href: creating-an-active-document-container-application.md
+            - name: Etkin belge kapsayıcıları
+              expanded: false
+              items:
+                - name: Etkin belge kapsayıcıları
+                  href: active-document-containers.md
+                - name: Yardım menüsü birleştirme
+                  href: help-menu-merging.md
+                - name: Program aracılığıyla yazdırma
+                  href: programmatic-printing.md
+                - name: İleti işleme ve komut hedefleri
+                  href: message-handling-and-command-targets.md
+            - name: Etkin belge sunucuları
+              href: active-document-servers.md
+            - name: Etkin belgeler
+              href: active-documents.md
+        - name: Otomatikleştirme
+          expanded: false
+          items:
+            - name: Otomatikleştirme
+              href: automation.md
+            - name: Otomasyon istemcileri
+              expanded: false
+              items:
+                - name: Otomasyon istemcileri
+                  href: automation-clients.md
+                - name: 'Otomasyon istemcileri: Tür kitaplıkları kullanma'
+                  href: automation-clients-using-type-libraries.md
+            - name: Otomasyon sunucuları
+              expanded: false
+              items:
+                - name: Otomasyon sunucuları
+                  href: automation-servers.md
+                - name: 'Otomasyon sunucuları: Nesne ömrü sorunları'
+                  href: automation-servers-object-lifetime-issues.md
+        - name: Bağlantı noktaları
+          href: connection-points.md
+    - name: MFC internet programlama temelleri
+      expanded: false
+      items:
+        - name: MFC internet programlama temelleri
+          href: mfc-internet-programming-basics.md
+        - name: İnternet ile ilgili MFC sınıfları
+          href: internet-related-mfc-classes.md
+        - name: Konuya göre internet bilgileri
+          href: internet-information-by-topic.md
+        - name: Göreve göre internet bilgileri
+          href: internet-information-by-task.md
+        - name: İnternet'te etkin teknoloji
+          href: active-technology-on-the-internet.md
+        - name: WinInet temelleri
+          href: wininet-basics.md
+        - name: HTML temelleri
+          href: html-basics.md
+    - name: MFC internet programlama görevleri
+      expanded: false
+      items:
+        - name: MFC internet programlama görevleri
+          href: mfc-internet-programming-tasks.md
+        - name: Uygulama tasarımı seçimleri
+          href: application-design-choices.md
+        - name: MFC uygulamaları yazma
+          href: writing-mfc-applications.md
+        - name: İnternet'te ActiveX denetimleri
+          href: activex-controls-on-the-internet.md
+        - name: Varolan bir ActiveX denetimini güncelleştirme
+          href: upgrading-an-existing-activex-control.md
+        - name: İnternet'teki zaman uyumsuz adlar
+          href: asynchronous-monikers-on-the-internet.md
+        - name: İnternet uygulamalarını test etme
+          href: testing-internet-applications.md
+        - name: İnternet güvenliği (C++)
+          href: internet-security-cpp.md
+    - name: MFC'de OLE
+      expanded: false
+      items:
+        - name: MFC'de OLE
+          href: ole-in-mfc.md
+        - name: OLE arka planı
+          expanded: false
+          items:
+            - name: OLE arka planı
+              href: ole-background.md
+            - name: 'OLE arka planı: Bağlama ve katıştırma'
+              href: ole-background-linking-and-embedding.md
+            - name: 'OLE arka planı: Kapsayıcılar ve sunucular'
+              href: ole-background-containers-and-servers.md
+            - name: 'OLE arka planı: Uygulama stratejileri'
+              href: ole-background-implementation-strategies.md
+            - name: 'OLE arka planı: MFC uygulama'
+              href: ole-background-mfc-implementation.md
+        - name: Etkinleştirme (C++)
+          expanded: false
+          items:
+            - name: Etkinleştirme (C++)
+              href: activation-cpp.md
+            - name: 'Etkinleştirme: Fiiller'
+              href: activation-verbs.md
+        - name: Kapsayıcılar
+          expanded: false
+          items:
+            - name: Kapsayıcılar
+              href: containers.md
+            - name: 'Kapsayıcılar: Kapsayıcı uygulama'
+              href: containers-implementing-a-container.md
+            - name: 'Kapsayıcılar: İstemci öğeleri'
+              href: containers-client-items.md
+            - name: 'Kapsayıcılar: İstemci öğesi bildirimleri'
+              href: containers-client-item-notifications.md
+            - name: 'Kapsayıcılar: İstemci öğesi durumları'
+              href: containers-client-item-states.md
+            - name: 'Kapsayıcılar: Bileşik dosyalar'
+              href: containers-compound-files.md
+            - name: 'Kapsayıcılar: Kullanıcı arabirimi sorunları'
+              href: containers-user-interface-issues.md
+            - name: 'Kapsayıcılar: Gelişmiş özellikler'
+              href: containers-advanced-features.md
+        - name: Veri nesneleri ve veri kaynakları (OLE)
+          expanded: false
+          items:
+            - name: Veri nesneleri ve veri kaynakları (OLE)
+              href: data-objects-and-data-sources-ole.md
+            - name: 'Veri nesneleri ve veri kaynakları: Oluşturma ve yok etme'
+              href: data-objects-and-data-sources-creation-and-destruction.md
+            - name: 'Veri nesneleri ve veri kaynakları: Düzenleme'
+              href: data-objects-and-data-sources-manipulation.md
+        - name: Sürükleme ve bırakma (OLE)
+          expanded: false
+          items:
+            - name: Sürükleme ve bırakma (OLE)
+              href: drag-and-drop-ole.md
+            - name: 'Sürükleme ve Bırakma: Bırakma kaynağı uygulama'
+              href: drag-and-drop-implementing-a-drop-source.md
+            - name: 'Sürükleme ve Bırakma: Bırakma hedefi uygulama'
+              href: drag-and-drop-implementing-a-drop-target.md
+            - name: 'Sürükleme ve Bırakma: Özelleştirme'
+              href: drag-and-drop-customizing.md
+        - name: Menüler ve kaynaklar (OLE)
+          expanded: false
+          items:
+            - name: Menüler ve kaynaklar (OLE)
+              href: menus-and-resources-ole.md
+            - name: 'Menüler ve Kaynaklar: Kapsayıcı ekleme'
+              href: menus-and-resources-container-additions.md
+            - name: 'Menüler ve Kaynaklar: Sunucu ekleme'
+              href: menus-and-resources-server-additions.md
+            - name: 'Menüler ve Kaynaklar: Menü birleştirme'
+              href: menus-and-resources-menu-merging.md
+        - name: Kayıt
+          href: registration.md
+        - name: Sunucular
+          expanded: false
+          items:
+            - name: Sunucular
+              href: servers.md
+            - name: 'Sunucular: Sunucu uygulama'
+              href: servers-implementing-a-server.md
+            - name: 'Sunucular: Sunucu belgeleri uygulama'
+              href: servers-implementing-server-documents.md
+            - name: 'Sunucular: Yerinde çerçeve pencereleri uygulama'
+              href: servers-implementing-in-place-frame-windows.md
+            - name: 'Sunucular: Sunucu öğeleri'
+              href: servers-server-items.md
+            - name: 'Sunucular: Kullanıcı arabirimi sorunları'
+              href: servers-user-interface-issues.md
+        - name: İzleyiciler
+          expanded: false
+          items:
+            - name: İzleyiciler
+              href: trackers.md
+            - name: 'İzleyiciler: OLE uygulamanızda izleyiciler uygulama'
+              expanded: false
+              items:
+                - name: 'İzleyiciler: OLE uygulamanızda izleyiciler uygulama'
+                  href: trackers-implementing-trackers-in-your-ole-application.md
+                - name: 'Nasıl yapılır: Kodunuzda izleme uygulama'
+                  href: how-to-implement-tracking-in-your-code.md
+                - name: Rubber-banding ve izleyiciler
+                  href: rubber-banding-and-trackers.md
+    - name: MFC'de Seri Hale Getirme
+      expanded: false
+      items:
+        - name: MFC'de Seri Hale Getirme
+          href: serialization-in-mfc.md
+        - name: 'Serileştirme: Serileştirilebilir sınıf oluşturma'
+          href: serialization-making-a-serializable-class.md
+        - name: 'Serileştirme: Nesneyi serileştirme'
+          expanded: false
+          items:
+            - name: 'Serileştirme: Nesneyi serileştirme'
+              href: serialization-serializing-an-object.md
+            - name: CArchive nesnesi nedir?
+              href: what-is-a-carchive-object.md
+            - name: CArchive nesnesi oluşturmanın iki yolu
+              href: two-ways-to-create-a-carchive-object.md
+            - name: CArchive << ve >> işleçlerini kullanma
+              href: using-the-carchive-output-and-input-operators.md
+            - name: Bir arşiv kullanarak CObject'leri depolama ve yükleme
+              href: storing-and-loading-cobjects-via-an-archive.md
+        - name: 'Serileştirme: Serileştirme ve veritabanı giriş/çıkışı'
+          expanded: false
+          items:
+            - name: 'Serileştirme: Serileştirme ve veritabanı giriş/çıkışı'
+              href: serialization-serialization-vs-database-input-output.md
+            - name: Giriş/Çıkış işleme için öneriler
+              href: recommendations-for-handling-input-output.md
+            - name: MFC veritabanı uygulamasında dosya menüsü
+              href: file-menu-in-an-mfc-database-application.md
+    - name: Kullanıcı arabirim öğeleri (MFC)
+      expanded: false
+      items:
+        - name: Kullanıcı arabirim öğeleri (MFC)
+          href: user-interface-elements-mfc.md
+        - name: ActiveX denetimleri
+          expanded: false
+          items:
+            - name: ActiveX denetimleri
+              href: activex-controls.md
+            - name: MFC ActiveX denetimleri
+              expanded: false
+              items:
+                - name: MFC ActiveX denetimleri
+                  href: mfc-activex-controls.md
+                - name: 'MFC ActiveX denetimleri: İyileştirme'
+                  expanded: false
+                  items:
+                    - name: 'MFC ActiveX denetimleri: İyileştirme'
+                      href: mfc-activex-controls-optimization.md
+                    - name: Kalıcılığı ve başlatmayı iyileştirme
+                      href: optimizing-persistence-and-initialization.md
+                    - name: Penceresiz etkinleştirme sağlama
+                      href: providing-windowless-activation.md
+                    - name: Görünürken etkinleştir seçeneğini kapatma
+                      href: turning-off-the-activate-when-visible-option.md
+                    - name: Devre dışıyken fare etkileşimi sağlama
+                      href: providing-mouse-interaction-while-inactive.md
+                    - name: Titreşimsiz etkinleştirme sağlama
+                      href: providing-flicker-free-activation.md
+                    - name: Kesilmemiş bir cihaz bağlamı kullanma
+                      href: using-an-unclipped-device-context.md
+                    - name: Denetim çizimini iyileştirme
+                      href: optimizing-control-drawing.md
+                - name: 'MFC ActiveX denetimleri: ActiveX denetimi boyama'
+                  href: mfc-activex-controls-painting-an-activex-control.md
+                - name: 'MFC ActiveX denetimleri: Olaylar'
+                  href: mfc-activex-controls-events.md
+                - name: 'MFC ActiveX denetimleri: ActiveX denetimine stok olayları ekleme'
+                  href: mfc-activex-controls-adding-stock-events-to-an-activex-control.md
+                - name: 'MFC ActiveX denetimleri: Özel olaylar ekleme'
+                  href: mfc-activex-controls-adding-custom-events.md
+                - name: 'MFC ActiveX denetimleri: Yöntemler'
+                  href: mfc-activex-controls-methods.md
+                - name: 'MFC ActiveX denetimleri: Stok yöntemleri ekleme'
+                  href: mfc-activex-controls-adding-stock-methods.md
+                - name: 'MFC ActiveX denetimleri: Özel yöntemler ekleme'
+                  href: mfc-activex-controls-adding-custom-methods.md
+                - name: 'MFC ActiveX denetimleri: Yöntemden hata kodları döndürme'
+                  href: mfc-activex-controls-returning-error-codes-from-a-method.md
+                - name: 'MFC ActiveX denetimleri: Özellikler'
+                  href: mfc-activex-controls-properties.md
+                - name: 'MFC ActiveX denetimleri: Stok özellikleri ekleme'
+                  href: mfc-activex-controls-adding-stock-properties.md
+                - name: 'MFC ActiveX denetimleri: Özel özellikler ekleme'
+                  href: mfc-activex-controls-adding-custom-properties.md
+                - name: 'MFC ActiveX denetimleri: Gelişmiş özellik uygulama'
+                  href: mfc-activex-controls-advanced-property-implementation.md
+                - name: 'MFC ActiveX denetimleri: Ortam özelliklerine erişme'
+                  href: mfc-activex-controls-accessing-ambient-properties.md
+                - name: 'MFC ActiveX denetimleri: Özellik sayfaları'
+                  href: mfc-activex-controls-property-pages.md
+                - name: 'MFC ActiveX denetimleri: Başka bir özel özellik sayfası ekleme'
+                  href: mfc-activex-controls-adding-another-custom-property-page.md
+                - name: 'MFC ActiveX denetimleri: Stok özelliği sayfaları kullanma'
+                  href: mfc-activex-controls-using-stock-property-pages.md
+                - name: 'MFC ActiveX denetimleri: Otomasyon sunucusu oluşturma'
+                  href: mfc-activex-controls-creating-an-automation-server.md
+                - name: 'MFC ActiveX denetimleri: Yazı tipleri kullanma'
+                  href: mfc-activex-controls-using-fonts.md
+                - name: 'MFC ActiveX denetimleri: ActiveX denetiminde resimler kullanma'
+                  href: mfc-activex-controls-using-pictures-in-an-activex-control.md
+                - name: 'MFC ActiveX denetimleri: Gelişmiş konular'
+                  href: mfc-activex-controls-advanced-topics.md
+                - name: 'MFC ActiveX denetimleri: ActiveX denetimlerini dağıtma'
+                  href: mfc-activex-controls-distributing-activex-controls.md
+                - name: 'MFC ActiveX denetimleri: ActiveX denetimi lisanslama'
+                  href: mfc-activex-controls-licensing-an-activex-control.md
+                - name: 'MFC ActiveX denetimleri: ActiveX denetimi yerelleştirme'
+                  href: mfc-activex-controls-localizing-an-activex-control.md
+                - name: 'MFC ActiveX denetimleri: Seri hale getirme'
+                  href: mfc-activex-controls-serializing.md
+                - name: 'MFC ActiveX denetimleri: Windows denetimlerinin alt sınıfını oluşturma'
+                  expanded: false
+                  items:
+                    - name: 'MFC ActiveX denetimleri: Windows denetimlerinin alt sınıfını oluşturma'
+                      href: mfc-activex-controls-subclassing-a-windows-control.md
+                    - name: Yansımış pencere iletisi kimlikleri
+                      href: reflected-window-message-ids.md
+                - name: 'MFC ActiveX denetimleri: ActiveX denetiminde veri bağlama kullanma'
+                  href: mfc-activex-controls-using-data-binding-in-an-activex-control.md
+            - name: ActiveX denetimi kapsayıcıları
+              expanded: false
+              items:
+                - name: ActiveX denetimi kapsayıcıları
+                  href: activex-control-containers.md
+                - name: ActiveX denetimleri için kapsayıcılar
+                  href: containers-for-activex-controls.md
+                - name: 'ActiveX denetimi kapsayıcıları: ActiveX denetimi kapsamasını el ile etkinleştirme'
+                  href: activex-control-containers-manually-enabling-activex-control-containment.md
+                - name: 'ActiveX denetimi kapsayıcıları: Denetim kapsayıcısı uygulamasına denetim ekleme'
+                  href: inserting-a-control-into-a-control-container-application.md
+                - name: 'ActiveX denetimi kapsayıcıları: Bir üye değişkenine ActiveX denetimi bağlama'
+                  href: activex-control-containers-connecting-an-activex-control-to-a-member-variable.md
+                - name: 'ActiveX denetimi kapsayıcıları: ActiveX denetimindeki olayları işleme'
+                  href: activex-control-containers-handling-events-from-an-activex-control.md
+                - name: 'ActiveX denetimi kapsayıcıları: Denetim özelliklerini görüntüleme ve değiştirme'
+                  href: activex-control-containers-viewing-and-modifying-control-properties.md
+                - name: 'ActiveX denetimi kapsayıcıları: ActiveX denetimi kapsayıcısındaki ActiveX denetimlerini programlama'
+                  href: programming-activex-controls-in-a-activex-control-container.md
+                - name: 'ActiveX denetimi kapsayıcıları: Denetimleri iletişim kutusu olmayan kapsayıcılarda kullanma'
+                  href: activex-control-containers-using-controls-in-a-non-dialog-container.md
+            - name: Test Kapsayıcısı ile özellikleri ve olayları test etme
+              href: testing-properties-and-events-with-test-container.md
+        - name: Pano
+          expanded: false
+          items:
+            - name: Pano
+              href: clipboard.md
+            - name: 'Pano: Her pano mekanizmasının kullanılma zamanı'
+              href: clipboard-when-to-use-each-clipboard-mechanism.md
+            - name: 'Pano: Windows panosunu kullanma'
+              href: clipboard-using-the-windows-clipboard.md
+            - name: 'Pano: OLE pano mekanizmasını kullanma'
+              expanded: false
+              items:
+                - name: 'Pano: OLE pano mekanizmasını kullanma'
+                  href: clipboard-using-the-ole-clipboard-mechanism.md
+                - name: 'Pano: Veri kopyalama ve yapıştırma'
+                  href: clipboard-copying-and-pasting-data.md
+                - name: 'Pano: Diğer biçimleri ekleme'
+                  href: clipboard-adding-other-formats.md
+        - name: Denetimler (MFC)
+          expanded: false
+          items:
+            - name: Denetimler (MFC)
+              href: controls-mfc.md
+            - name: Ortak denetim örneği listesi
+              href: common-control-sample-list.md
+            - name: Denetimleri yapma ve kullanma
+              expanded: false
+              items:
+                - name: Denetimleri yapma ve kullanma
+                  href: making-and-using-controls.md
+                - name: İletişim kutusunda ortak denetimleri kullanma
+                  href: using-common-controls-in-a-dialog-box.md
+                - name: Denetim eklemek için iletişim kutusu düzenleyicisini kullanma
+                  href: using-the-dialog-editor-to-add-controls.md
+                - name: El ile denetim ekleme
+                  href: adding-controls-by-hand.md
+                - name: Standart bir denetimden denetim türetme
+                  href: deriving-controls-from-a-standard-control.md
+                - name: Bir ortak denetimi alt pencere olarak kullanma
+                  href: using-a-common-control-as-a-child-window.md
+                - name: Ortak denetimlerden bildirim alma
+                  href: receiving-notification-from-common-controls.md
+            - name: CAnimateCtrl Kullanma
+              expanded: false
+              items:
+                - name: CAnimateCtrl Kullanma
+                  href: using-canimatectrl.md
+                - name: Animasyon denetimi kullanma
+                  href: using-an-animation-control.md
+                - name: Animasyon denetimlerinin gönderdiği bildirimler
+                  href: notifications-sent-by-animation-controls.md
+            - name: CDateTimeCtrl Kullanma
+              expanded: false
+              items:
+                - name: CDateTimeCtrl Kullanma
+                  href: using-cdatetimectrl.md
+                - name: Tarih ve saat seçici denetimini oluşturma
+                  href: creating-the-date-and-time-picker-control.md
+                - name: Tarih ve saat seçici denetimine örnekler
+                  href: date-and-time-picker-control-examples.md
+                - name: Katıştırılmış aylık takvim denetimine erişme
+                  href: accessing-the-embedded-month-calendar-control.md
+                - name: Tarih ve Saat Seçici denetiminde özel biçim dizeleri kullanma
+                  href: using-custom-format-strings-in-a-date-and-time-picker-control.md
+                - name: Bir Tarih ve Saat Seçici denetiminde geri çağrı alanlarını kullanma
+                  href: using-callback-fields-in-a-date-and-time-picker-control.md
+                - name: Tarih ve Saat Seçici denetimlerinde bildirim iletilerini işleme
+                  href: processing-notification-messages-in-date-and-time-picker-controls.md
+            - name: CComboBoxEx Kullanma
+              expanded: false
+              items:
+                - name: CComboBoxEx Kullanma
+                  href: using-ccomboboxex.md
+                - name: Genişletilmiş birleşik giriş kutusu denetimi oluşturma
+                  href: creating-an-extended-combo-box-control.md
+                - name: Genişletilmiş birleşik giriş kutusu denetiminde görüntü listeleri kullanma
+                  href: using-image-lists-in-an-extended-combo-box-control.md
+                - name: Ayrı bir öğe için resimleri ayarlama
+                  href: setting-the-images-for-an-individual-item.md
+                - name: Genişletilmiş birleşik giriş kutusu denetimlerinde bildirim iletilerini işleme
+                  href: processing-notification-messages-in-extended-combo-box-controls.md
+            - name: CHeaderCtrl Kullanma
+              expanded: false
+              items:
+                - name: CHeaderCtrl Kullanma
+                  href: using-cheaderctrl.md
+                - name: Üstbilgi denetimi ve liste denetimi
+                  href: header-control-and-list-control.md
+                - name: Üstbilgi denetimine örnekler
+                  href: header-control-examples.md
+                - name: Üstbilgi denetimindeki üstbilgi öğeleri
+                  href: header-items-in-a-header-control.md
+                - name: Üstbilgi öğesinin görünümünü özelleştirme
+                  href: customizing-the-header-item-s-appearance.md
+                - name: Üstbilgi öğeleri için sürükle ve bırak desteği sağlama
+                  href: providing-drag-and-drop-support-for-header-items.md
+                - name: Üstbilgi denetimleriyle birlikte görüntü listeleri kullanma
+                  href: using-image-lists-with-header-controls.md
+                - name: Sahip tarafından çizilmiş üstbilgi denetimleri yapma
+                  href: making-owner-drawn-header-controls.md
+                - name: Üstbilgi denetimiyle çalışma
+                  href: working-with-a-header-control.md
+                - name: Üstbilgi denetimi oluşturma
+                  href: creating-the-header-control.md
+                - name: Üstbilgi denetimine öğe ekleme
+                  href: adding-items-to-the-header-control.md
+                - name: Üstbilgi denetimindeki öğeleri sıralama
+                  href: ordering-items-in-the-header-control.md
+                - name: Üstbilgi denetimi bildirimlerini işleme
+                  href: processing-header-control-notifications.md
+            - name: CHotKeyCtrl Kullanma
+              expanded: false
+              items:
+                - name: CHotKeyCtrl Kullanma
+                  href: using-chotkeyctrl.md
+                - name: Bir sık kullanılan tuş denetimi kullanma
+                  href: using-a-hot-key-control.md
+                - name: Sık kullanılan tuş ayarlama
+                  href: setting-a-hot-key.md
+                - name: Genel sık kullanılan tuşlar
+                  href: global-hot-keys.md
+                - name: İş parçacığına özgü sık kullanılan tuşlar
+                  href: thread-specific-hot-keys.md
+            - name: CImageList Kullanma
+              expanded: false
+              items:
+                - name: CImageList Kullanma
+                  href: using-cimagelist.md
+                - name: Resim listesi türleri
+                  href: types-of-image-lists.md
+                - name: Resim listesi kullanma
+                  href: using-an-image-list.md
+                - name: Resim listelerini düzenleme
+                  href: manipulating-image-lists.md
+                - name: Resim listesinden resim çizme
+                  href: drawing-images-from-an-image-list.md
+                - name: Görüntü listelerindeki görüntü yer paylaşımları
+                  href: image-overlays-in-image-lists.md
+                - name: Görüntü listesinden görüntü sürükleme
+                  href: dragging-images-from-an-image-list.md
+                - name: Görüntü listelerindeki görüntü bilgileri
+                  href: image-information-in-image-lists.md
+            - name: CListCtrl Kullanma
+              expanded: false
+              items:
+                - name: CListCtrl Kullanma
+                  href: using-clistctrl.md
+                - name: Liste denetimi ve liste görünümü
+                  href: list-control-and-list-view.md
+                - name: Liste öğeleri ve görüntü listeleri
+                  href: list-items-and-image-lists.md
+                - name: Geri çağrı öğeleri ve geri çağrı maskesi
+                  href: callback-items-and-the-callback-mask.md
+                - name: Liste denetimi oluşturma
+                  href: creating-the-list-control.md
+                - name: Görüntü listelerini oluşturma
+                  href: creating-the-image-lists.md
+                - name: Denetime sütun ekleme (Rapor görünümü)
+                  href: adding-columns-to-the-control-report-view.md
+                - name: Denetime öğe ekleme
+                  href: adding-items-to-the-control.md
+                - name: 'Liste denetimlerinde kaydırma, düzenleme, sıralama ve Bulma'
+                  href: scrolling-arranging-sorting-and-finding-in-list-controls.md
+                - name: Liste denetimlerinde çalışma alanlarını uygulama
+                  href: implementing-working-areas-in-list-controls.md
+                - name: Liste denetimlerinde bildirim iletilerini işleme
+                  href: processing-notification-messages-in-list-controls.md
+                - name: Liste denetim stillerini değiştirme
+                  href: changing-list-control-styles.md
+                - name: Sanal liste denetimleri
+                  href: virtual-list-controls.md
+                - name: Listesi denetimini yok etme
+                  href: destroying-the-list-control.md
+            - name: CMonthCalCtrl Kullanma
+              expanded: false
+              items:
+                - name: CMonthCalCtrl Kullanma
+                  href: using-cmonthcalctrl.md
+                - name: Aylık takvim denetimi oluşturma
+                  href: creating-the-month-calendar-control.md
+                - name: Aylık takvim denetimine örnekler
+                  href: month-calendar-control-examples.md
+                - name: Aylık takvim denetimlerinde bildirim iletilerini işleme
+                  href: processing-notification-messages-in-month-calendar-controls.md
+                - name: Aylık takvim denetiminin Gün durumunu ayarlama
+                  href: setting-the-day-state-of-a-month-calendar-control.md
+            - name: CProgressCtrl Kullanma
+              expanded: false
+              items:
+                - name: CProgressCtrl Kullanma
+                  href: using-cprogressctrl.md
+                - name: İlerleme denetimi için stiller
+                  href: styles-for-the-progress-control.md
+                - name: İlerleme denetimi ayarları
+                  href: settings-for-the-progress-control.md
+                - name: İlerleme durumu denetimini düzenleme
+                  href: manipulating-the-progress-control.md
+            - name: CReBarCtrl Kullanma
+              expanded: false
+              items:
+                - name: CReBarCtrl Kullanma
+                  href: using-crebarctrl.md
+                - name: CReBar ile CReBarCtrl Karşılaştırması
+                  href: crebar-vs-crebarctrl.md
+                - name: Rebar denetimi oluşturma
+                  href: creating-a-rebar-control.md
+                - name: Rebar Denetimleri ve bantları
+                  href: rebar-controls-and-bands.md
+                - name: Rebar denetimiyle birlikte bir görüntü listesi kullanma
+                  href: using-an-image-list-with-a-rebar-control.md
+                - name: Rebar denetimiyle birlikte bir iletişim çubuğu kullanma
+                  href: using-a-dialog-bar-with-a-rebar-control.md
+                - name: Bir rebar denetiminde bildirim iletilerini işleme
+                  href: processing-notification-messages-in-a-rebar-control.md
+            - name: CRichEditCtrl Kullanma
+              expanded: false
+              items:
+                - name: CRichEditCtrl Kullanma
+                  href: using-cricheditctrl.md
+                - name: Zengin Düzenleme denetimine genel bakış
+                  href: overview-of-the-rich-edit-control.md
+                - name: Zengin Düzenleme denetimleriyle ilgili sınıflar
+                  href: classes-related-to-rich-edit-controls.md
+                - name: Zengin Düzenleme denetimine örnekler
+                  href: rich-edit-control-examples.md
+                - name: Zengin Düzenleme denetimlerinde karakter biçimlendirme
+                  href: character-formatting-in-rich-edit-controls.md
+                - name: Zengin Düzenleme denetimlerinde paragraf biçimlendirme
+                  href: paragraph-formatting-in-rich-edit-controls.md
+                - name: Bir Zengin Düzenleme denetimindeki geçerli bölüm
+                  href: current-selection-in-a-rich-edit-control.md
+                - name: Zengin Düzenleme denetimlerinde sözcük sonları
+                  href: word-breaks-in-rich-edit-controls.md
+                - name: Zengin Düzenleme denetimlerinde pano işlemleri
+                  href: clipboard-operations-in-rich-edit-controls.md
+                - name: Zengin Düzenleme denetimlerinde akış işlemleri
+                  href: stream-operations-in-rich-edit-controls.md
+                - name: Zengin Düzenleme denetimlerinde yazdırma
+                  href: printing-in-rich-edit-controls.md
+                - name: Tabansız Zengin Düzenleme denetimleri
+                  href: bottomless-rich-edit-controls.md
+                - name: Bir Zengin Düzenleme denetiminden bildirim
+                  href: notifications-from-a-rich-edit-control.md
+            - name: CSliderCtrl Kullanma
+              expanded: false
+              items:
+                - name: CSliderCtrl Kullanma
+                  href: using-csliderctrl.md
+                - name: Kaydırıcı denetimlerini kullanma
+                  href: using-slider-controls.md
+                - name: Kaydırıcı denetim stilleri
+                  href: slider-control-styles.md
+                - name: Kaydırıcı denetimi üye işlevleri
+                  href: slider-control-member-functions.md
+                - name: Kaydırıcı bildirim iletileri
+                  href: slider-notification-messages.md
+            - name: CSpinButtonCtrl Kullanma
+              expanded: false
+              items:
+                - name: CSpinButtonCtrl Kullanma
+                  href: using-cspinbuttonctrl.md
+                - name: Döndür düğmesi stilleri
+                  href: spin-button-styles.md
+                - name: Döndür düğmesi üye işlevleri
+                  href: spin-button-member-functions.md
+            - name: CStatusBarCtrl Kullanma
+              expanded: false
+              items:
+                - name: CStatusBarCtrl Kullanma
+                  href: using-cstatusbarctrl.md
+                - name: Durum çubuğu oluşturma yöntemleri
+                  href: methods-of-creating-a-status-bar.md
+                - name: CStatusBarCtrl Ayarları
+                  href: settings-for-the-cstatusbarctrl.md
+                - name: CStatusBarCtrl kullanarak CStatusBarCtrl nesnesi oluşturma
+                  href: using-cstatusbarctrl-to-create-a-cstatusbarctrl-object.md
+                - name: CStatusBarCtrl nesnesinin modunu ayarlama
+                  href: setting-the-mode-of-a-cstatusbarctrl-object.md
+                - name: Bir CStatusBarCtrl nesnesinin bölümlerini başlatma
+                  href: initializing-the-parts-of-a-cstatusbarctrl-object.md
+                - name: Bir CStatusBarCtrl nesnesinde araç ipuçları kullanma
+                  href: using-tooltips-in-a-cstatusbarctrl-object.md
+            - name: CTabCtrl Kullanma
+              expanded: false
+              items:
+                - name: CTabCtrl Kullanma
+                  href: using-ctabctrl.md
+                - name: Sekme denetimleri ve özellik sayfaları
+                  href: tab-controls-and-property-sheets.md
+                - name: Sekme ve sekme denetimi öznitelikleri
+                  href: tabs-and-tab-control-attributes.md
+                - name: Sahip tarafından çizilmiş sekmeler yapma
+                  href: making-owner-drawn-tabs.md
+                - name: Sekme denetimiyle çalışma
+                  href: working-with-a-tab-control.md
+                - name: Sekme denetimi oluşturma
+                  href: creating-the-tab-control.md
+                - name: Sekme denetimine sekmeler ekleme
+                  href: adding-tabs-to-a-tab-control.md
+                - name: Sekme denetimi bildirim iletilerini işleme
+                  href: processing-tab-control-notification-messages.md
+            - name: CToolBarCtrl Kullanma
+              expanded: false
+              items:
+                - name: CToolBarCtrl Kullanma
+                  href: using-ctoolbarctrl.md
+                - name: Araç çubuğu oluşturma yöntemleri
+                  href: methods-of-creating-a-toolbar.md
+                - name: Araç çubuğu denetimi için ayarlar
+                  href: settings-for-the-toolbar-control.md
+                - name: CToolBarCtrl nesnesi oluşturma
+                  href: creating-a-ctoolbarctrl-object.md
+                - name: Bir araç çubuğu denetiminde görüntü listeleri kullanma
+                  href: using-image-lists-in-a-toolbar-control.md
+                - name: Bir araç çubuğu denetiminde açılır düğmeler kullanma
+                  href: using-drop-down-buttons-in-a-toolbar-control.md
+                - name: Bir araç çubuğu denetiminin görünümünü özelleştirme
+                  href: customizing-the-appearance-of-a-toolbar-control.md
+                - name: Araç ipucu bildirimlerini işleme
+                  href: handling-tool-tip-notifications.md
+                - name: Özelleştirme bildirimlerini işleme
+                  href: handling-customization-notifications.md
+            - name: CToolTipCtrl Kullanma
+              expanded: false
+              items:
+                - name: CToolTipCtrl Kullanma
+                  href: using-ctooltipctrl.md
+                - name: Araç ipuçları oluşturma yöntemleri
+                  href: methods-of-creating-tool-tips.md
+                - name: Araç ipucu denetimi için ayarlar
+                  href: settings-for-the-tool-tip-control.md
+                - name: CToolTipCtrl kullanarak bir CToolTipCtrl nesnesi oluşturma ve düzenleme
+                  href: using-ctooltipctrl-to-create-and-manipulate-a-ctooltipctrl-object.md
+                - name: Araç ipucu denetimini düzenleme
+                  href: manipulating-the-tool-tip-control.md
+            - name: CTreeCtrl Kullanma
+              expanded: false
+              items:
+                - name: CTreeCtrl Kullanma
+                  href: using-ctreectrl.md
+                - name: CTreeCtrl ile CTreeView karşılaştırması
+                  href: ctreectrl-vs-ctreeview.md
+                - name: Ağaç denetimlerini kullanma
+                  href: using-tree-controls.md
+                - name: Ağaç denetimi ile iletişim
+                  href: communicating-with-a-tree-control.md
+                - name: Ağaç denetimi stilleri
+                  href: tree-control-styles.md
+                - name: Ağaç denetimi üst ve alt öğeleri
+                  href: tree-control-parent-and-child-items.md
+                - name: Ağaç denetim öğesi konumu
+                  href: tree-control-item-position.md
+                - name: Ağaç denetim öğesi etiketleri
+                  href: tree-control-item-labels.md
+                - name: Ağaç denetimi etiketini düzenleme
+                  href: tree-control-label-editing.md
+                - name: Ağaç denetim öğesi durumlarına genel bakış
+                  href: tree-control-item-states-overview.md
+                - name: Ağaç denetim görüntü listeleri
+                  href: tree-control-image-lists.md
+                - name: Ağaç denetim öğesi seçimi
+                  href: tree-control-item-selection.md
+                - name: Ağaç denetimi sürükle ve bırak işlemleri
+                  href: tree-control-drag-and-drop-operations.md
+                - name: Ağaç denetim öğesi bilgileri
+                  href: tree-control-item-information.md
+                - name: Ağaç denetimi bildirim iletileri
+                  href: tree-control-notification-messages.md
+        - name: Denetim çubukları
+          href: control-bars.md
+        - name: İletişim kutusu çubukları
+          href: dialog-bars.md
+        - name: İletişim kutuları
+          expanded: false
+          items:
+            - name: İletişim kutuları
+              href: dialog-boxes.md
+            - name: 'Örnek: İletişim kutusunu menü komutu ile görüntüleme'
+              href: example-displaying-a-dialog-box-via-a-menu-command.md
+            - name: İletişim kutusu örnek listesi
+              href: dialog-sample-list.md
+            - name: Framework'te iletişim kutusu bileşenleri
+              href: dialog-box-components-in-the-framework.md
+            - name: Kalıcı ve kalıcı olmayan iletişim kutuları
+              href: modal-and-modeless-dialog-boxes.md
+            - name: Özellik bölümleri ve özellik sayfaları (MFC)
+              href: property-sheets-and-property-pages-mfc.md
+            - name: İletişim kaynağını oluşturma
+              href: creating-the-dialog-resource.md
+            - name: Kod sihirbazları ile iletişim kutusu sınıfı oluşturma
+              expanded: false
+              items:
+                - name: Kod sihirbazları ile iletişim kutusu sınıfı oluşturma
+                  href: creating-a-dialog-class-with-code-wizards.md
+                - name: İletişim sınıfınızı oluşturma
+                  href: creating-your-dialog-class.md
+            - name: Bir iletişim kutusunun yaşam döngüsü
+              expanded: false
+              items:
+                - name: Bir iletişim kutusunun yaşam döngüsü
+                  href: life-cycle-of-a-dialog-box.md
+                - name: İletişim kutuları oluşturma ve görüntüleme
+                  href: creating-and-displaying-dialog-boxes.md
+                - name: Kalıcı iletişim kutuları oluşturma
+                  href: creating-modal-dialog-boxes.md
+                - name: Kalıcı olmayan iletişim kutuları oluşturma
+                  href: creating-modeless-dialog-boxes.md
+                - name: Bellekteki bir iletişim şablonunu kullanma
+                  href: using-a-dialog-template-in-memory.md
+                - name: İletişim kutusunun arka plan rengini ayarlama
+                  href: setting-the-dialog-boxs-background-color.md
+                - name: İletişim kutusunu başlatma
+                  href: initializing-the-dialog-box.md
+                - name: İletişim kutunuzda Windows iletilerini işleme
+                  href: handling-windows-messages-in-your-dialog-box.md
+                - name: İletişim nesnesinden veriyi geri alma
+                  href: retrieving-data-from-the-dialog-object.md
+                - name: İletişim kutusunu kapatma
+                  href: closing-the-dialog-box.md
+                - name: İletişim kutusunu yok etme
+                  href: destroying-the-dialog-box.md
+            - name: İletişim kutusu Veri Değişimi ve doğrulaması
+              expanded: false
+              items:
+                - name: İletişim kutusu Veri Değişimi ve doğrulaması
+                  href: dialog-data-exchange-and-validation.md
+                - name: İletişim Kutusu Veri Değişimi
+                  href: dialog-data-exchange.md
+                - name: İletişim verisi doğrulama
+                  href: dialog-data-validation.md
+            - name: Bir iletişim kutusundaki denetimlere tür kullanımı uyumlu erişim
+              expanded: false
+              items:
+                - name: Bir iletişim kutusundaki denetimlere tür kullanımı uyumlu erişim
+                  href: type-safe-access-to-controls-in-a-dialog-box.md
+                - name: Kod sihirbazları olmadan denetimlere tür kullanımı uyumlu erişim
+                  href: type-safe-access-to-controls-without-code-wizards.md
+                - name: Kod sihirbazları kullanarak denetimlere tür kullanımı uyumlu erişim
+                  href: type-safe-access-to-controls-with-code-wizards.md
+            - name: Windows iletilerini sınıfınıza eşleme
+              href: mapping-windows-messages-to-your-class.md
+            - name: Yaygın olarak geçersiz kılınan üye işlevleri
+              href: commonly-overridden-member-functions.md
+            - name: Yaygın olarak eklenen üye işlevleri
+              href: commonly-added-member-functions.md
+            - name: Ortak iletişim kutusu sınıfları
+              href: common-dialog-classes.md
+            - name: OLE'deki iletişim kutuları
+              href: dialog-boxes-in-ole.md
+            - name: 'İzlenecek yol: Uygulamaya CTaskDialog ekleme'
+              href: walkthrough-adding-a-ctaskdialog-to-an-application.md
+        - name: Belge/görünüm mimarisi
+          expanded: false
+          items:
+            - name: Belge/görünüm mimarisi
+              href: document-view-architecture.md
+            - name: Belge/görünüm örnek listesi
+              href: document-view-sample-list.md
+            - name: Belge/görünüm mimarisinin bir özeti
+              href: a-portrait-of-the-document-view-architecture.md
+            - name: Belge/görünüm mimarisinin avantajları
+              href: advantages-of-the-document-view-architecture.md
+            - name: MFC uygulama sihirbazından oluşturulan belge ve görünüm sınıfları
+              href: document-and-view-classes-created-by-the-mfc-application-wizard.md
+            - name: Belge/Görünüm mimarisinin alternatifleri
+              href: alternatives-to-the-document-view-architecture.md
+            - name: Belgeleri kullanma
+              expanded: false
+              items:
+                - name: Belgeleri kullanma
+                  href: using-documents.md
+                - name: CDocument'ten belge sınıfı türetme
+                  href: deriving-a-document-class-from-cdocument.md
+                - name: Belge verisi değişkenleri ile verileri yönetme
+                  href: managing-data-with-document-data-variables.md
+                - name: Dosyalarda verileri seri hale getirme
+                  href: serializing-data-to-and-from-files.md
+                - name: Seri hale getirme mekanizmasını atlama
+                  href: bypassing-the-serialization-mechanism.md
+                - name: Belgedeki komutları işleme
+                  href: handling-commands-in-the-document.md
+            - name: Görünümleri kullanma
+              expanded: false
+              items:
+                - name: Görünümleri kullanma
+                  href: using-views.md
+                - name: MFC'de kullanılabilen türetilmiş görünüm sınıfları
+                  href: derived-view-classes-available-in-mfc.md
+                - name: Bir görünümde çizim yapma
+                  href: drawing-in-a-view.md
+                - name: Bir görünümü kullanarak kullanıcı girişini yorumlama
+                  href: interpreting-user-input-through-a-view.md
+                - name: Yazdırmada görünümün rolü
+                  href: role-of-the-view-in-printing.md
+                - name: Görünümleri kaydırma ve ölçeklendirme
+                  href: scrolling-and-scaling-views.md
+            - name: 'Birden fazla belge türü, görünüm ve çerçeve penceresi'
+              href: multiple-document-types-views-and-frame-windows.md
+            - name: Belgeleri ve görünümleri başlatma ve temizleme
+              expanded: false
+              items:
+                - name: Belgeleri ve görünümleri başlatma ve temizleme
+                  href: initializing-and-cleaning-up-documents-and-views.md
+                - name: Belgeleri ve görünümleri başlatma
+                  href: initializing-documents-and-views.md
+                - name: Belgeleri ve görünümleri temizleme
+                  href: cleaning-up-documents-and-views.md
+            - name: Tek bir belgeye birden çok görünüm ekleme
+              href: adding-multiple-views-to-a-single-document.md
+        - name: Form görünümleri (MFC)
+          expanded: false
+          items:
+            - name: Form görünümleri (MFC)
+              href: form-views-mfc.md
+            - name: Bir projeye form ekleme
+              href: inserting-a-form-into-a-project.md
+        - name: 'HTML Yardımı: Programlarınız için bağlama duyarlı yardım'
+          href: html-help-context-sensitive-help-for-your-programs.md
+        - name: MDI sekmeli grupları
+          href: mdi-tabbed-groups.md
+        - name: Menüler (MFC)
+          expanded: false
+          items:
+            - name: Menüler (MFC)
+              href: menus-mfc.md
+            - name: Menü örnek listesi
+              href: menu-sample-list.md
+            - name: Program yürütülmesi sırasında menüleri düzenleme
+              href: manipulating-menus-during-program-execution.md
+            - name: 'Nasıl yapılır: Kullanıcı arabirimi nesnelerini güncelleştirme'
+              expanded: false
+              items:
+                - name: 'Nasıl yapılır: Kullanıcı arabirimi nesnelerini güncelleştirme'
+                  href: how-to-update-user-interface-objects.md
+                - name: Güncelleştirme işleyicilerini çağırma zamanı
+                  href: when-update-handlers-are-called.md
+                - name: ON_UPDATE_COMMAND_UI makrosu
+                  href: on-update-command-ui-macro.md
+                - name: CCmdUI sınıfı
+                  href: the-ccmdui-class.md
+        - name: OLE (MFC)
+          href: ole-mfc.md
+        - name: Yazdırma ve baskı önizleme
+          expanded: false
+          items:
+            - name: Yazdırma ve baskı önizleme
+              href: printing-and-print-preview.md
+            - name: Yazdırma
+              expanded: false
+              items:
+                - name: Yazdırma
+                  href: printing.md
+                - name: Varsayılan yazdırmayı yapma
+                  href: how-default-printing-is-done.md
+                - name: Birden fazla belge
+                  href: multipage-documents.md
+                - name: Üstbilgiler ve altbilgiler
+                  href: headers-and-footers.md
+                - name: GDI kaynaklarını ayırma
+                  href: allocating-gdi-resources.md
+            - name: Baskı önizleme mimarisi
+              href: print-preview-architecture.md
+        - name: Özellik sayfaları (MFC)
+          expanded: false
+          items:
+            - name: Özellik sayfaları (MFC)
+              href: property-sheets-mfc.md
+            - name: MFC'de özellik bölümleri ve özellik sayfaları
+              href: property-sheets-and-property-pages-in-mfc.md
+            - name: Uygulamanızdaki özellik sayfalarını kullanma
+              href: using-property-sheets-in-your-application.md
+            - name: Özellik sayfasına denetim ekleme
+              href: adding-controls-to-a-property-sheet.md
+            - name: Veri değişimi
+              href: exchanging-data.md
+            - name: Kalıcı olmayan özellik sayfası oluşturma
+              href: creating-a-modeless-property-sheet.md
+            - name: Uygula düğmesini işleme
+              href: handling-the-apply-button.md
+            - name: Sihirbaz olarak özellik sayfaları
+              href: property-sheets-as-wizards.md
+        - name: Şerit tasarımcısı (MFC)
+          expanded: false
+          items:
+            - name: Şerit tasarımcısı (MFC)
+              href: ribbon-designer-mfc.md
+            - name: 'Nasıl yapılır: Mevcut MFC şeridini şerit kaynağına dönüştürme'
+              href: how-to-convert-an-existing-mfc-ribbon-to-a-ribbon-resource.md
+            - name: 'Nasıl yapılır: Uygulama düğmesini özelleştirme'
+              href: how-to-customize-the-application-button.md
+            - name: 'Nasıl yapılır: Hızlı Erişim araç çubuğunu özelleştirme'
+              href: how-to-customize-the-quick-access-toolbar.md
+            - name: 'Nasıl yapılır: Şerit denetimleri ve olay işleyicileri ekleme'
+              href: how-to-add-ribbon-controls-and-event-handlers.md
+            - name: 'Nasıl yapılır: MFC uygulamasından şerit kaynağı yükleme'
+              href: how-to-load-a-ribbon-resource-from-an-mfc-application.md
+            - name: 'İzlenecek yol: MFC kullanarak şerit uygulaması oluşturma'
+              href: walkthrough-creating-a-ribbon-application-by-using-mfc.md
+            - name: 'İzlenecek yol: MFC Karalama uygulamasını güncelleştirme (1. Bölüm)'
+              href: walkthrough-updating-the-mfc-scribble-application-part-1.md
+            - name: 'İzlenecek yol: MFC Karalama uygulamasını güncelleştirme (2. Bölüm)'
+              href: walkthrough-updating-the-mfc-scribble-application-part-2.md
+        - name: Durum çubukları
+          expanded: false
+          items:
+            - name: Durum çubukları
+              href: status-bars.md
+            - name: MFC'de durum çubuğu uygulaması
+              expanded: false
+              items:
+                - name: MFC'de durum çubuğu uygulaması
+                  href: status-bar-implementation-in-mfc.md
+                - name: Durum çubuğu bölmesinin metnini güncelleştirme
+                  href: updating-the-text-of-a-status-bar-pane.md
+        - name: Araç ipuçları
+          expanded: false
+          items:
+            - name: Araç ipuçları
+              href: tool-tips.md
+            - name: CFrameWnd'den türetilmemiş pencerelerde araç ipuçları
+              expanded: false
+              items:
+                - name: CFrameWnd'den türetilmemiş pencerelerde araç ipuçları
+                  href: tool-tips-in-windows-not-derived-from-cframewnd.md
+                - name: Araç ipuçlarını etkinleştirme
+                  href: enabling-tool-tips.md
+                - name: Araç ipuçları için TTN_NEEDTEXT bildirimini işleme
+                  href: handling-ttn-needtext-notification-for-tool-tips.md
+                - name: TOOLTIPTEXT yapısı
+                  href: tooltiptext-structure.md
+        - name: Araç Çubukları
+          expanded: false
+          items:
+            - name: Araç Çubukları
+              href: toolbars.md
+            - name: Araç çubuğu örnek listesi
+              href: toolbar-sample-list.md
+            - name: MFC araç çubuğu uygulaması
+              expanded: false
+              items:
+                - name: MFC araç çubuğu uygulaması
+                  href: mfc-toolbar-implementation.md
+                - name: Araç çubuğu temelleri
+                  href: toolbar-fundamentals.md
+                - name: Yerleşen ve kayan araç çubukları
+                  href: docking-and-floating-toolbars.md
+                - name: Araç çubuğu araç ipuçları
+                  href: toolbar-tool-tips.md
+                - name: Araç çubuğu denetimiyle çalışma
+                  href: working-with-the-toolbar-control.md
+                - name: Eski araç çubuklarınızı kullanma
+                  href: using-your-old-toolbars.md
+        - name: Görselleştirme Yöneticisi
+          href: visualization-manager.md
+        - name: Windows
+          expanded: false
+          items:
+            - name: Windows
+              href: windows.md
+            - name: Pencere nesneleri
+              expanded: false
+              items:
+                - name: Pencere nesneleri
+                  href: window-objects.md
+                - name: Bir C++ pencere nesnesi ile bir HWND arasındaki ilişkiler
+                  href: relationship-between-a-cpp-window-object-and-an-hwnd.md
+                - name: Türetilen pencere sınıfları
+                  href: derived-window-classes.md
+                - name: Pencereler oluşturma
+                  expanded: false
+                  items:
+                    - name: Pencereler oluşturma
+                      href: creating-windows.md
+                    - name: Pencere sınıflarını kaydetme
+                      href: registering-window-classes.md
+                    - name: Genel pencere oluşturma dizisi
+                      href: general-window-creation-sequence.md
+                - name: Pencere nesnelerini yok etme
+                  expanded: false
+                  items:
+                    - name: Pencere nesnelerini yok etme
+                      href: destroying-window-objects.md
+                    - name: Pencere yok etme dizisi
+                      href: window-destruction-sequence.md
+                    - name: Pencere belleğini ayırma ve serbest bırakma
+                      href: allocating-and-deallocating-window-memory.md
+                - name: Bir CWnd'i HWND'inden ayırma
+                  href: detaching-a-cwnd-from-its-hwnd.md
+                - name: Pencere nesneleriyle çalışma
+                  href: working-with-window-objects.md
+                - name: Cihaz bağlamları
+                  href: device-contexts.md
+                - name: Grafik nesneler
+                  expanded: false
+                  items:
+                    - name: Grafik nesneler
+                      href: graphic-objects.md
+                    - name: Nesnelerin tek aşamalı ve iki aşamalı yapımı
+                      href: one-stage-and-two-stage-construction-of-objects.md
+                    - name: Bir cihaz bağlamına grafik nesnesi seçme
+                      href: selecting-a-graphic-object-into-a-device-context.md
+            - name: Çerçeve pencereleri
+              expanded: false
+              items:
+                - name: Çerçeve pencereleri
+                  href: frame-windows.md
+                - name: Çerçeve penceresi sınıfları
+                  expanded: false
+                  items:
+                    - name: Çerçeve penceresi sınıfları
+                      href: frame-window-classes.md
+                    - name: Uygulama sihirbazı tarafından oluşturulan çerçeve pencere sınıfları
+                      href: frame-window-classes-created-by-the-application-wizard.md
+                - name: Çerçeve pencere stilleri (C++)
+                  expanded: false
+                  items:
+                    - name: Çerçeve pencere stilleri (C++)
+                      href: frame-window-styles-cpp.md
+                    - name: MFC tarafından oluşturulan pencerenin stillerini değiştirme
+                      href: changing-the-styles-of-a-window-created-by-mfc.md
+                - name: Çerçeve pencerelerinin görevi
+                  href: what-frame-windows-do.md
+                - name: Çerçeve pencerelerini kullanma
+                  expanded: false
+                  items:
+                    - name: Çerçeve pencerelerini kullanma
+                      href: using-frame-windows.md
+                    - name: Belge çerçeve pencereleri oluşturma
+                      href: creating-document-frame-windows.md
+                    - name: CWnd nesneleri ne zaman başlatılır?
+                      href: when-to-initialize-cwnd-objects.md
+                    - name: Çerçeve pencerelerini yok etme
+                      href: destroying-frame-windows.md
+                    - name: MDI alt öğe pencerelerini yönetme
+                      href: managing-mdi-child-windows.md
+                    - name: Geçerli görünümü yönetme
+                      href: managing-the-current-view.md
+                    - name: 'Menüleri, denetim çubuklarını ve hızlandırıcıları yönetme'
+                      href: managing-menus-control-bars-and-accelerators.md
+                    - name: Bir çerçeve penceresinde dosyaları sürükleme ve bırakma
+                      href: dragging-and-dropping-files-in-a-frame-window.md
+                    - name: Dinamik Veri Değişimine Yanıt Verme (DDE)
+                      href: responding-to-dynamic-data-exchange-dde.md
+                    - name: Diğer pencere işlemlerini yönetme
+                      href: orchestrating-other-window-actions.md
+    - name: Windows Yuvaları
+      expanded: false
+      items:
+        - name: Windows Yuvaları
+          href: windows-sockets.md
+        - name: MFC'de Windows Yuvaları
+          expanded: false
+          items:
+            - name: MFC'de Windows Yuvaları
+              href: windows-sockets-in-mfc.md
+            - name: 'Windows Yuvaları: Arka Plan'
+              href: windows-sockets-background.md
+            - name: 'Windows Yuvaları: Akış yuvaları'
+              href: windows-sockets-stream-sockets.md
+            - name: 'Windows Yuvaları: Veri birimi yuvaları'
+              href: windows-sockets-datagram-sockets.md
+            - name: 'Windows Yuvaları: Yuvaları arşivlerle kullanma'
+              href: windows-sockets-using-sockets-with-archives.md
+            - name: 'Windows Yuvaları: İşlem dizisi'
+              href: windows-sockets-sequence-of-operations.md
+            - name: 'Windows Yuvaları: Arşivler kullanan yuvalara örnek'
+              href: windows-sockets-example-of-sockets-using-archives.md
+            - name: 'Windows Yuvaları: Yuvaları arşivlerle kullanma'
+              href: windows-sockets-how-sockets-with-archives-work.md
+            - name: 'Windows Yuvaları: CAsyncSocket sınıfını kullanma'
+              href: windows-sockets-using-class-casyncsocket.md
+            - name: 'Windows Yuvaları: Yuva sınıflarından türetme'
+              href: windows-sockets-deriving-from-socket-classes.md
+            - name: 'Windows Yuvaları: Yuva bildirimleri'
+              href: windows-sockets-socket-notifications.md
+            - name: 'Windows Yuvaları: Engelleme'
+              href: windows-sockets-blocking.md
+            - name: 'Windows Yuvaları: Bayt sıralama'
+              href: windows-sockets-byte-ordering.md
+            - name: 'Windows Yuvaları: Dizeleri dönüştürme'
+              href: windows-sockets-converting-strings.md
+            - name: 'Windows Yuvaları: Bağlantı noktaları ve yuva adresleri'
+              href: windows-sockets-ports-and-socket-addresses.md
+    - name: Win32 internet uzantıları (WinInet)
+      expanded: false
+      items:
+        - name: Win32 internet uzantıları (WinInet)
+          href: win32-internet-extensions-wininet.md
+        - name: WinInet'in internet istemci uygulamaları oluşturmayı kolaylaştırması
+          href: how-wininet-makes-it-easier-to-create-internet-client-applications.md
+        - name: MFC'nin internet istemci uygulamaları oluşturmayı kolaylaştırması
+          href: how-mfc-makes-it-easier-to-create-internet-client-applications.md
+        - name: İnternet istemci uygulamaları oluşturmak için MFC sınıfları
+          href: mfc-classes-for-creating-internet-client-applications.md
+        - name: İnternet istemci sınıfları için önkoşullar
+          href: prerequisites-for-internet-client-classes.md
+        - name: MFC WinInet sınıfları kullanarak internet istemci uygulaması yazma
+          href: writing-an-internet-client-application-using-mfc-wininet-classes.md
+        - name: Tipik bir internet istemci uygulamasındaki adımlar
+          href: steps-in-a-typical-internet-client-application.md
+        - name: Tipik bir FTP istemci uygulamasındaki adımlar
+          href: steps-in-a-typical-ftp-client-application.md
+        - name: Dosya silmek için tipik bir FTP istemci uygulamasındaki adımlar
+          href: steps-in-a-typical-ftp-client-application-to-delete-a-file.md
+        - name: Tipik bir Gopher istemci uygulamasındaki adımlar
+          href: steps-in-a-typical-gopher-client-application.md
+        - name: Tipik bir HTTP istemci uygulamasındaki adımlar
+          href: steps-in-a-typical-http-client-application.md
+- name: Hiyerarşi grafiği
+  expanded: false
+  items:
+    - name: Hiyerarşi grafiği
+      href: hierarchy-chart.md
+    - name: Hiyerarşi grafiği kategorileri
+      href: hierarchy-chart-categories.md
+- name: MFC için Özelleştirme
+  expanded: false
+  items:
+    - name: MFC için Özelleştirme
+      href: customization-for-mfc.md
+    - name: Klavye ve fare özelleştirmesi
+      href: keyboard-and-mouse-customization.md
+    - name: Kullanıcı tanımlı araçlar
+      href: user-defined-tools.md
+    - name: Özelleştirmenin güvenlikle ilgili etkileri
+      href: security-implications-of-customization.md
+- name: MFC Teknik Notları
+  expanded: false
+  items:
+    - name: MFC Teknik Notları
+      href: mfc-technical-notes.md
+    - name: Kategoriye göre Teknik Notlar
+      href: technical-notes-by-category.md
+    - name: Sayıya göre Teknik Notlar
+      href: technical-notes-by-number.md
+    - name: 'TN001: Pencere sınıfı kaydı'
+      href: tn001-window-class-registration.md
+    - name: 'TN002: Kalıcı nesne veri biçimi'
+      href: tn002-persistent-object-data-format.md
+    - name: 'TN003: Pencere işleyicilerini nesnelere eşleme'
+      href: tn003-mapping-of-windows-handles-to-objects.md
+    - name: 'TN006: İleti eşlemeleri'
+      href: tn006-message-maps.md
+    - name: 'TN011: Bir DLL''in parçası olarak MFC kullanma'
+      href: tn011-using-mfc-as-part-of-a-dll.md
+    - name: 'TN014: Özel denetimler'
+      href: tn014-custom-controls.md
+    - name: 'TN016: MFC''de C++ birden çok devralma kullanma'
+      href: tn016-using-cpp-multiple-inheritance-with-mfc.md
+    - name: 'TN017: Pencere nesnelerini yok etme'
+      href: tn017-destroying-window-objects.md
+    - name: 'TN020: Kimlik adlandırma ve numaralandırma kuralları'
+      href: tn020-id-naming-and-numbering-conventions.md
+    - name: 'TN021: Komut ve ileti yönlendirme'
+      href: tn021-command-and-message-routing.md
+    - name: 'TN022: Standart komutlar uygulama'
+      href: tn022-standard-commands-implementation.md
+    - name: 'TN023: Standart MFC kaynakları'
+      href: tn023-standard-mfc-resources.md
+    - name: 'TN024: MFC tanımlı iletiler ve kaynaklar'
+      href: tn024-mfc-defined-messages-and-resources.md
+    - name: 'TN025: Belge, görünüm ve çerçeve oluşturma'
+      href: tn025-document-view-and-frame-creation.md
+    - name: 'TN026: DDX ve DDV yordamları'
+      href: tn026-ddx-and-ddv-routines.md
+    - name: 'TN028: Bağlama duyarlı yardım desteği'
+      href: tn028-context-sensitive-help-support.md
+    - name: 'TN029: Ayırıcı pencereler'
+      href: tn029-splitter-windows.md
+    - name: 'TN030: Yazdırmayı ve baskı önizlemeyi özelleştirme'
+      href: tn030-customizing-printing-and-print-preview.md
+    - name: 'TN031: Denetim çubukları'
+      href: tn031-control-bars.md
+    - name: 'TN032: MFC özel durum mekanizması'
+      href: tn032-mfc-exception-mechanism.md
+    - name: 'TN033: MFC''nin DLL sürümü'
+      href: tn033-dll-version-of-mfc.md
+    - name: 'TN035: Visual C++ ile birden çok kaynak dosya ve üstbilgi dosyası kullanma'
+      href: tn035-using-multiple-resource-files-and-header-files-with-visual-cpp.md
+    - name: 'TN036: CFormView''u AppWizard ve ClassWizard ile kullanma'
+      href: tn036-using-cformview-with-appwizard-and-classwizard.md
+    - name: 'TN037: Çok iş parçacıklı MFC 2.1 uygulamaları'
+      href: tn037-multithreaded-mfc-2-1-applications.md
+    - name: 'TN038: MFC-OLE IUnknown uygulama'
+      href: tn038-mfc-ole-iunknown-implementation.md
+    - name: 'TN039: MFC-OLE otomasyonu uygulama'
+      href: tn039-mfc-ole-automation-implementation.md
+    - name: 'TN040: MFC-OLE yerinde yeniden boyutlandırma ve yakınlaştırma'
+      href: tn040-mfc-ole-in-place-resizing-and-zooming.md
+    - name: 'TN041: MFC-OLE1''den MFC-OLE 2''ye geçiş'
+      href: tn041-mfc-ole1-migration-to-mfc-ole-2.md
+    - name: 'TN042: ODBC sürücüsü geliştirici önerileri'
+      href: tn042-odbc-driver-developer-recommendations.md
+    - name: 'TN043: RFX yordamları'
+      href: tn043-rfx-routines.md
+    - name: 'TN044: DBCS için MFC desteği'
+      href: tn044-mfc-support-for-dbcs.md
+    - name: 'TN045: Uzun değişken karakter-değişken ikili için MFC-veritabanı desteği'
+      href: tn045-mfc-database-support-for-long-varchar-varbinary.md
+    - name: 'TN046: MFC sınıfları için yorum yapma kuralları'
+      href: tn046-commenting-conventions-for-the-mfc-classes.md
+    - name: 'TN047: Veritabanı işlem gereksinimlerini esnetme'
+      href: tn047-relaxing-database-transaction-requirements.md
+    - name: 'TN048: MFC veritabanı uygulamaları için ODBC kurulum ve yönetim programları yazma'
+      href: tn048-writing-odbc-setup-and-administration-programs.md
+    - name: 'TN049: MFC-OLE MBCS''den Unicode çeviri katmanına (MFCANS32)'
+      href: tn049-mfc-ole-mbcs-to-unicode-translation-layer-mfcans32.md
+    - name: 'TN050: MFC-OLE ortak iletişim kutuları (MFCUIx32)'
+      href: tn050-mfc-ole-common-dialogs-mfcuix32.md
+    - name: 'TN051: Şimdi ve gelecekte CTL3D kullanma'
+      href: tn051-using-ctl3d-now-and-in-the-future.md
+    - name: 'TN053: DAO veritabanı sınıfları için özel DFX yordamları'
+      href: tn053-custom-dfx-routines-for-dao-database-classes.md
+    - name: 'TN054: MFC DAO sınıfları kullanırken DAO''yu doğrudan çağırma'
+      href: tn054-calling-dao-directly-while-using-mfc-dao-classes.md
+    - name: 'TN055: MFC ODBC veritabanı sınıfı uygulamalarını MFC DAO sınıflarına geçirme'
+      href: tn055-migrating-mfc-odbc-database-class-applications-to-mfc-dao-classes.md
+    - name: 'TN056: Yerelleştirilmiş MFC bileşenlerinin yüklenmesi'
+      href: tn056-installation-of-localized-mfc-components.md
+    - name: 'TN057: MFC bileşenlerinin yerelleştirilmesi'
+      href: tn057-localization-of-mfc-components.md
+    - name: 'TN058: MFC modül durumu uygulama'
+      href: tn058-mfc-module-state-implementation.md
+    - name: 'TN059: MFC MBCS-Unicode dönüştürme makroları kullanma'
+      href: tn059-using-mfc-mbcs-unicode-conversion-macros.md
+    - name: 'TN060: Yeni Windows ortak denetimleri'
+      href: tn060-the-new-windows-common-controls.md
+    - name: 'TN061: ON_NOTIFY ve WM_NOTIFY iletileri'
+      href: tn061-on-notify-and-wm-notify-messages.md
+    - name: 'TN062: Windows denetimleri için ileti yansıması'
+      href: tn062-message-reflection-for-windows-controls.md
+    - name: 'TN063: İnternet MFC uzantısı DLL''lerinde hata ayıklama'
+      href: tn063-debugging-internet-extension-dlls.md
+    - name: 'TN064: ActiveX denetimlerinde apartman modeli iş parçacığı oluşturma'
+      href: tn064-apartment-model-threading-in-activex-controls.md
+    - name: 'TN065: OLE otomasyon sunucuları için çift arabirim desteği'
+      href: tn065-dual-interface-support-for-ole-automation-servers.md
+    - name: 'TN066: Genel MFC 3.x''ten 4.0''a taşıma oluşturma sorunları'
+      href: tn066-common-mfc-3-x-to-4-0-porting-issues.md
+    - name: 'TN068: Microsoft Access 7 ODBC sürücüsü ile işlem gerçekleştirme'
+      href: tn068-performing-transactions-with-the-microsoft-access-7-odbc-driver.md
+    - name: 'TN070: MFC pencere sınıfı adları'
+      href: tn070-mfc-window-class-names.md
+    - name: 'TN071: MFC IOleCommandTarget uygulama'
+      href: tn071-mfc-iolecommandtarget-implementation.md
+- name: Sınıf kitaplığına genel bakış
+  expanded: false
+  items:
+    - name: Sınıf kitaplığına genel bakış
+      href: class-library-overview.md
+    - name: Genel sınıf tasarımı felsefesi
+      expanded: false
+      items:
+        - name: Genel sınıf tasarımı felsefesi
+          href: general-class-design-philosophy.md
+        - name: Uygulama framework'ü
+          href: application-framework.md
+        - name: C dili API'sine yönelik ilişki
+          href: relationship-to-the-c-language-api.md
+    - name: 'Kök Sınıflar: CObject'
+      href: root-class-cobject.md
+    - name: MFC uygulama mimarisi sınıfları
+      expanded: false
+      items:
+        - name: MFC uygulama mimarisi sınıfları
+          href: mfc-application-architecture-classes.md
+        - name: Uygulama ve iş parçacığı destek sınıfları
+          href: application-and-thread-support-classes.md
+        - name: Komut yönlendirme sınıfları
+          href: command-routing-classes.md
+        - name: Belge sınıfları
+          href: document-classes.md
+        - name: Görünüm sınıfları (Mimari)
+          href: view-classes-architecture.md
+        - name: Çerçeve penceresi sınıfları (Mimari)
+          href: frame-window-classes-architecture.md
+        - name: Belge şablonu sınıfları
+          href: document-template-classes.md
+    - name: 'Pencere, iletişim kutusu ve denetim sınıfları'
+      expanded: false
+      items:
+        - name: 'Pencere, iletişim kutusu ve denetim sınıfları'
+          href: window-dialog-and-control-classes.md
+        - name: Çerçeve penceresi sınıfları (Windows)
+          href: frame-window-classes-windows.md
+        - name: Görünüm sınıfları (Windows)
+          href: view-classes-windows.md
+        - name: İletişim kutusu sınıfları
+          href: dialog-box-classes.md
+        - name: Denetim sınıfları
+          href: control-classes.md
+        - name: Denetim çubuğu sınıfları
+          href: control-bar-classes.md
+    - name: Sınıf çizme ve boyama
+      expanded: false
+      items:
+        - name: Sınıf çizme ve boyama
+          href: drawing-and-printing-classes.md
+        - name: Çıktı (Cihaz bağlamı) sınıfları
+          href: output-device-context-classes.md
+        - name: Çizim aracı sınıfları
+          href: drawing-tool-classes.md
+    - name: Basit veri türü sınıfları
+      href: simple-data-type-classes.md
+    - name: 'Dizi, liste ve eşleme sınıfları'
+      expanded: false
+      items:
+        - name: 'Dizi, liste ve eşleme sınıfları'
+          href: array-list-and-map-classes.md
+        - name: 'Diziler, listeler ve eşlemeler için şablon sınıfları'
+          href: template-classes-for-arrays-lists-and-maps.md
+        - name: Kullanıma hazır dizi sınıfları
+          href: ready-to-use-array-classes.md
+        - name: Kullanıma hazır liste sınıfları
+          href: ready-to-use-list-classes.md
+        - name: Kullanıma hazır eşleme sınıfları
+          href: ready-to-use-map-classes.md
+    - name: Dosya ve veritabanı sınıfları
+      expanded: false
+      items:
+        - name: Dosya ve veritabanı sınıfları
+          href: file-and-database-classes.md
+        - name: Dosya G-Ç sınıfları
+          href: file-i-o-classes.md
+        - name: OLE DB sınıfları
+          href: ole-db-classes.md
+        - name: DAO sınıfları
+          href: dao-classes.md
+        - name: ODBC sınıfları
+          href: odbc-classes.md
+    - name: İnternet ve ağ sınıfları
+      expanded: false
+      items:
+        - name: İnternet ve ağ sınıfları
+          href: internet-and-networking-classes.md
+        - name: Windows Yuvaları sınıfları
+          href: windows-sockets-classes.md
+        - name: Win32 internet sınıfları
+          href: win32-internet-classes.md
+    - name: OLE sınıfları
+      expanded: false
+      items:
+        - name: OLE sınıfları
+          href: ole-classes.md
+        - name: OLE kapsayıcı sınıfları
+          href: ole-container-classes.md
+        - name: OLE sunucu sınıfları
+          href: ole-server-classes.md
+        - name: OLE sürükle/bırak ve veri aktarımı sınıfları
+          href: ole-drag-and-drop-and-data-transfer-classes.md
+        - name: OLE ortak iletişim kutusu sınıfları
+          href: ole-common-dialog-classes.md
+        - name: OLE otomasyon sınıfları
+          href: ole-automation-classes.md
+        - name: OLE denetim sınıfları
+          href: ole-control-classes.md
+        - name: Etkin belge sınıfları
+          href: active-document-classes.md
+        - name: OLE ile ilgili sınıflar
+          href: ole-related-classes.md
+    - name: Hata ayıklama ve özel durum sınıfları
+      expanded: false
+      items:
+        - name: Hata ayıklama ve özel durum sınıfları
+          href: debugging-and-exception-classes.md
+        - name: Destek sınıflarında hata ayıklama
+          href: debugging-support-classes.md
+        - name: Özel durum sınıfları
+          href: exception-classes.md
+- name: İzlenecek Yollar (MFC)
+  expanded: false
+  items:
+    - name: İzlenecek Yollar (MFC)
+      href: walkthroughs-mfc.md
+    - name: 'İzlenecek yol: Yeni MFC kabuk denetimlerini kullanma'
+      href: walkthrough-using-the-new-mfc-shell-controls.md
+    - name: 'İzlenecek yol: Araç çubuklarına denetimler yerleştirme'
+      href: walkthrough-putting-controls-on-toolbars.md
+    - name: 'İzlenecek yol: MFC projesine D2D nesnesi ekleme'
+      href: walkthrough-adding-a-d2d-object-to-an-mfc-project.md
+    - name: 'İzlenecek yol: MFC projesine animasyon ekleme'
+      href: walkthrough-adding-animation-to-an-mfc-project.md
+- name: MFC API Başvurusu
+  items:
+    - name: MFC sınıfları
+      expanded: false
+      items:
+        - name: MFC sınıfları
+          href: reference/mfc-classes.md
+        - name: CAccelerateDecelerateTransition sınıfı
+          href: reference/cacceleratedeceleratetransition-class.md
+        - name: CAnimateCtrl sınıfı
+          href: reference/canimatectrl-class.md
+        - name: CAnimationBaseObject sınıfı
+          href: reference/canimationbaseobject-class.md
+        - name: CAnimationColor sınıfı
+          href: reference/canimationcolor-class.md
+        - name: CAnimationController sınıfı
+          href: reference/canimationcontroller-class.md
+        - name: CAnimationGroup sınıfı
+          href: reference/canimationgroup-class.md
+        - name: CAnimationManagerEventHandler sınıfı
+          href: reference/canimationmanagereventhandler-class.md
+        - name: CAnimationPoint sınıfı
+          href: reference/canimationpoint-class.md
+        - name: CAnimationRect sınıfı
+          href: reference/canimationrect-class.md
+        - name: CAnimationSize sınıfı
+          href: reference/canimationsize-class.md
+        - name: CAnimationStoryboardEventHandler sınıfı
+          href: reference/canimationstoryboardeventhandler-class.md
+        - name: CAnimationTimerEventHandler sınıfı
+          href: reference/canimationtimereventhandler-class.md
+        - name: CAnimationValue sınıfı
+          href: reference/canimationvalue-class.md
+        - name: CAnimationVariable sınıfı
+          href: reference/canimationvariable-class.md
+        - name: CAnimationVariableChangeHandler sınıfı
+          href: reference/canimationvariablechangehandler-class.md
+        - name: CAnimationVariableIntegerChangeHandler sınıfı
+          href: reference/canimationvariableintegerchangehandler-class.md
+        - name: CArchive sınıfı
+          href: reference/carchive-class.md
+        - name: CArchiveException sınıfı
+          href: reference/carchiveexception-class.md
+        - name: CArray sınıfı
+          href: reference/carray-class.md
+        - name: CAsyncMonikerFile sınıfı
+          href: reference/casyncmonikerfile-class.md
+        - name: CAsyncSocket sınıfı
+          href: reference/casyncsocket-class.md
+        - name: CAutoHideDockSite sınıfı
+          href: reference/cautohidedocksite-class.md
+        - name: CBaseKeyFrame sınıfı
+          href: reference/cbasekeyframe-class.md
+        - name: CBasePane sınıfı
+          href: reference/cbasepane-class.md
+        - name: CBaseTabbedPane sınıfı
+          href: reference/cbasetabbedpane-class.md
+        - name: CBaseTransition sınıfı
+          href: reference/cbasetransition-class.md
+        - name: CBitmap sınıfı
+          href: reference/cbitmap-class.md
+        - name: CBitmapButton sınıfı
+          href: reference/cbitmapbutton-class.md
+        - name: CBitmapRenderTarget sınıfı
+          href: reference/cbitmaprendertarget-class.md
+        - name: CBrush sınıfı
+          href: reference/cbrush-class.md
+        - name: CButton sınıfı
+          href: reference/cbutton-class.md
+        - name: CByteArray sınıfı
+          href: reference/cbytearray-class.md
+        - name: CCachedDataPathProperty sınıfı
+          href: reference/ccacheddatapathproperty-class.md
+        - name: CCheckListBox sınıfı
+          href: reference/cchecklistbox-class.md
+        - name: CClientDC sınıfı
+          href: reference/cclientdc-class.md
+        - name: CCmdTarget sınıfı
+          href: reference/ccmdtarget-class.md
+        - name: CCmdUI sınıfı
+          href: reference/ccmdui-class.md
+        - name: CColorDialog sınıfı
+          href: reference/ccolordialog-class.md
+        - name: CComboBox sınıfı
+          href: reference/ccombobox-class.md
+        - name: CComboBoxEx sınıfı
+          href: reference/ccomboboxex-class.md
+        - name: CCommandLineInfo sınıfı
+          href: reference/ccommandlineinfo-class.md
+        - name: CCommonDialog sınıfı
+          href: reference/ccommondialog-class.md
+        - name: CConnectionPoint sınıfı
+          href: reference/cconnectionpoint-class.md
+        - name: CConstantTransition sınıfı
+          href: reference/cconstanttransition-class.md
+        - name: CContextMenuManager sınıfı
+          href: reference/ccontextmenumanager-class.md
+        - name: CControlBar sınıfı
+          href: reference/ccontrolbar-class.md
+        - name: CCreateContext sınıfı
+          href: reference/ccreatecontext-structure.md
+        - name: CCriticalSection sınıfı
+          href: reference/ccriticalsection-class.md
+        - name: CCtrlView sınıfı
+          href: reference/cctrlview-class.md
+        - name: CCubicTransition
+          href: reference/ccubictransition-class.md
+        - name: CCustomInterpolator sınıfı
+          href: reference/ccustominterpolator-class.md
+        - name: CCustomTransition sınıfı
+          href: reference/ccustomtransition-class.md
+        - name: CD2DBitmap sınıfı
+          href: reference/cd2dbitmap-class.md
+        - name: CD2DBitmapBrush sınıfı
+          href: reference/cd2dbitmapbrush-class.md
+        - name: CD2DBrush sınıfı
+          href: reference/cd2dbrush-class.md
+        - name: CD2DBrushProperties sınıfı
+          href: reference/cd2dbrushproperties-class.md
+        - name: CD2DEllipse sınıfı
+          href: reference/cd2dellipse-class.md
+        - name: CD2DGeometry sınıfı
+          href: reference/cd2dgeometry-class.md
+        - name: CD2DGeometrySink sınıfı
+          href: reference/cd2dgeometrysink-class.md
+        - name: CD2DGradientBrush sınıfı
+          href: reference/cd2dgradientbrush-class.md
+        - name: CD2DLayer sınıfı
+          href: reference/cd2dlayer-class.md
+        - name: CD2DLinearGradientBrush sınıfı
+          href: reference/cd2dlineargradientbrush-class.md
+        - name: CD2DMesh sınıfı
+          href: reference/cd2dmesh-class.md
+        - name: CD2DPathGeometry sınıfı
+          href: reference/cd2dpathgeometry-class.md
+        - name: CD2DPointF sınıfı
+          href: reference/cd2dpointf-class.md
+        - name: CD2DPointU sınıfı
+          href: reference/cd2dpointu-class.md
+        - name: CD2DRadialGradientBrush sınıfı
+          href: reference/cd2dradialgradientbrush-class.md
+        - name: CD2DRectF sınıfı
+          href: reference/cd2drectf-class.md
+        - name: CD2DRectU sınıfı
+          href: reference/cd2drectu-class.md
+        - name: CD2DResource sınıfı
+          href: reference/cd2dresource-class.md
+        - name: CD2DRoundedRect sınıfı
+          href: reference/cd2droundedrect-class.md
+        - name: CD2DSizeF sınıfı
+          href: reference/cd2dsizef-class.md
+        - name: CD2DSizeU sınıfı
+          href: reference/cd2dsizeu-class.md
+        - name: CD2DSolidColorBrush sınıfı
+          href: reference/cd2dsolidcolorbrush-class.md
+        - name: CD2DTextFormat sınıfı
+          href: reference/cd2dtextformat-class.md
+        - name: CD2DTextLayout sınıfı
+          href: reference/cd2dtextlayout-class.md
+        - name: CDaoDatabase sınıfı
+          href: reference/cdaodatabase-class.md
+        - name: CDaoException sınıfı
+          href: reference/cdaoexception-class.md
+        - name: CDaoFieldExchange sınıfı
+          href: reference/cdaofieldexchange-class.md
+        - name: CDaoQueryDef sınıfı
+          href: reference/cdaoquerydef-class.md
+        - name: CDaoRecordset sınıfı
+          href: reference/cdaorecordset-class.md
+        - name: CDaoRecordView sınıfı
+          href: reference/cdaorecordview-class.md
+        - name: CDaoTableDef sınıfı
+          href: reference/cdaotabledef-class.md
+        - name: CDaoWorkspace sınıfı
+          href: reference/cdaoworkspace-class.md
+        - name: CDatabase sınıfı
+          href: reference/cdatabase-class.md
+        - name: CDataExchange sınıfı
+          href: reference/cdataexchange-class.md
+        - name: CDataPathProperty sınıfı
+          href: reference/cdatapathproperty-class.md
+        - name: CDataRecoveryHandler sınıfı
+          href: reference/cdatarecoveryhandler-class.md
+        - name: CDateTimeCtrl sınıfı
+          href: reference/cdatetimectrl-class.md
+        - name: CDBException sınıfı
+          href: reference/cdbexception-class.md
+        - name: CDBVariant sınıfı
+          href: reference/cdbvariant-class.md
+        - name: CDC sınıfı
+          href: reference/cdc-class.md
+        - name: CDCRenderTarget sınıfı
+          href: reference/cdcrendertarget-class.md
+        - name: CDHtmlDialog sınıfı
+          expanded: false
+          items:
+            - name: CDHtmlDialog sınıfı
+              href: reference/cdhtmldialog-class.md
+            - name: DDX_DHtml yardımcı makroları
+              href: reference/ddx-dhtml-helper-macros.md
+        - name: CDialog sınıfı
+          href: reference/cdialog-class.md
+        - name: CDialogBar sınıfı
+          href: reference/cdialogbar-class.md
+        - name: CDialogEx sınıfı
+          href: reference/cdialogex-class.md
+        - name: CDiscreteTransition sınıfı
+          href: reference/cdiscretetransition-class.md
+        - name: CDocItem sınıfı
+          href: reference/cdocitem-class.md
+        - name: CDockablePane sınıfı
+          href: reference/cdockablepane-class.md
+        - name: CDockablePaneAdapter sınıfı
+          href: reference/cdockablepaneadapter-class.md
+        - name: CDockingManager sınıfı
+          href: reference/cdockingmanager-class.md
+        - name: CDockingPanesRow sınıfı
+          href: reference/cdockingpanesrow-class.md
+        - name: CDockSite sınıfı
+          href: reference/cdocksite-class.md
+        - name: CDockState sınıfı
+          href: reference/cdockstate-class.md
+        - name: CDocObjectServer sınıfı
+          href: reference/cdocobjectserver-class.md
+        - name: CDocObjectServerItem sınıfı
+          href: reference/cdocobjectserveritem-class.md
+        - name: CDocTemplate sınıfı
+          href: reference/cdoctemplate-class.md
+        - name: CDocument sınıfı
+          href: reference/cdocument-class.md
+        - name: CDragListBox sınıfı
+          href: reference/cdraglistbox-class.md
+        - name: CDrawingManager sınıfı
+          href: reference/cdrawingmanager-class.md
+        - name: CDumpContext sınıfı
+          href: reference/cdumpcontext-class.md
+        - name: CDWordArray sınıfı
+          href: reference/cdwordarray-class.md
+        - name: CEdit sınıfı
+          href: reference/cedit-class.md
+        - name: CEditView sınıfı
+          href: reference/ceditview-class.md
+        - name: CEvent sınıfı
+          href: reference/cevent-class.md
+        - name: CException sınıfı
+          href: reference/cexception-class.md
+        - name: CFieldExchange sınıfı
+          href: reference/cfieldexchange-class.md
+        - name: CFile sınıfı
+          href: reference/cfile-class.md
+        - name: CFileDialog sınıfı
+          href: reference/cfiledialog-class.md
+        - name: CFileException sınıfı
+          href: reference/cfileexception-class.md
+        - name: CFileFind sınıfı
+          href: reference/cfilefind-class.md
+        - name: CFindReplaceDialog sınıfı
+          href: reference/cfindreplacedialog-class.md
+        - name: CFolderPickerDialog sınıfı
+          href: reference/cfolderpickerdialog-class.md
+        - name: CFont sınıfı
+          href: reference/cfont-class.md
+        - name: CFontDialog sınıfı
+          href: reference/cfontdialog-class.md
+        - name: CFontHolder sınıfı
+          href: reference/cfontholder-class.md
+        - name: CFormView sınıfı
+          href: reference/cformview-class.md
+        - name: CFrameWnd sınıfı
+          href: reference/cframewnd-class.md
+        - name: CFrameWndEx sınıfı
+          href: reference/cframewndex-class.md
+        - name: CFtpConnection sınıfı
+          href: reference/cftpconnection-class.md
+        - name: CFtpFileFind sınıfı
+          href: reference/cftpfilefind-class.md
+        - name: CGdiObject sınıfı
+          href: reference/cgdiobject-class.md
+        - name: CGlobalUtils sınıfı
+          href: reference/cglobalutils-class.md
+        - name: CGopherConnection sınıfı
+          href: reference/cgopherconnection-class.md
+        - name: CGopherFile sınıfı
+          href: reference/cgopherfile-class.md
+        - name: CGopherFileFind sınıfı
+          href: reference/cgopherfilefind-class.md
+        - name: CGopherLocator sınıfı
+          href: reference/cgopherlocator-class.md
+        - name: CHeaderCtrl sınıfı
+          href: reference/cheaderctrl-class.md
+        - name: CHotKeyCtrl sınıfı
+          href: reference/chotkeyctrl-class.md
+        - name: CHtmlEditCtrl sınıfı
+          href: reference/chtmleditctrl-class.md
+        - name: CHtmlEditCtrlBase sınıfı
+          href: reference/chtmleditctrlbase-class.md
+        - name: CHtmlEditDoc sınıfı
+          href: reference/chtmleditdoc-class.md
+        - name: CHtmlEditView sınıfı
+          href: reference/chtmleditview-class.md
+        - name: CHtmlView sınıfı
+          href: reference/chtmlview-class.md
+        - name: CHttpConnection sınıfı
+          href: reference/chttpconnection-class.md
+        - name: CHttpFile sınıfı
+          href: reference/chttpfile-class.md
+        - name: CHwndRenderTarget sınıfı
+          href: reference/chwndrendertarget-class.md
+        - name: CImageList sınıfı
+          href: reference/cimagelist-class.md
+        - name: CInstantaneousTransition sınıfı
+          href: reference/cinstantaneoustransition-class.md
+        - name: CInternetConnection sınıfı
+          href: reference/cinternetconnection-class.md
+        - name: CInternetException sınıfı
+          href: reference/cinternetexception-class.md
+        - name: CInternetFile sınıfı
+          href: reference/cinternetfile-class.md
+        - name: CInternetSession sınıfı
+          href: reference/cinternetsession-class.md
+        - name: CInterpolatorBase sınıfı
+          href: reference/cinterpolatorbase-class.md
+        - name: CInvalidArgException sınıfı
+          href: reference/cinvalidargexception-class.md
+        - name: CIPAddressCtrl sınıfı
+          href: reference/cipaddressctrl-class.md
+        - name: CJumpList sınıfı
+          href: reference/cjumplist-class.md
+        - name: CKeyboardManager sınıfı
+          href: reference/ckeyboardmanager-class.md
+        - name: CKeyFrame sınıfı
+          href: reference/ckeyframe-class.md
+        - name: CLinearTransition sınıfı
+          href: reference/clineartransition-class.md
+        - name: CLinearTransitionFromSpeed sınıfı
+          href: reference/clineartransitionfromspeed-class.md
+        - name: CLinkCtrl sınıfı
+          href: reference/clinkctrl-class.md
+        - name: CList sınıfı
+          href: reference/clist-class.md
+        - name: CListBox sınıfı
+          href: reference/clistbox-class.md
+        - name: CListCtrl sınıfı
+          href: reference/clistctrl-class.md
+        - name: CListView sınıfı
+          href: reference/clistview-class.md
+        - name: CLongBinary sınıfı
+          href: reference/clongbinary-class.md
+        - name: CMap sınıfı
+          href: reference/cmap-class.md
+        - name: CMapPtrToPtr sınıfı
+          href: reference/cmapptrtoptr-class.md
+        - name: CMapPtrToWord sınıfı
+          href: reference/cmapptrtoword-class.md
+        - name: CMapStringToOb sınıfı
+          href: reference/cmapstringtoob-class.md
+        - name: CMapStringToPtr sınıfı
+          href: reference/cmapstringtoptr-class.md
+        - name: CMapStringToString sınıfı
+          href: reference/cmapstringtostring-class.md
+        - name: CMapWordToOb sınıfı
+          href: reference/cmapwordtoob-class.md
+        - name: CMapWordToPtr sınıfı
+          href: reference/cmapwordtoptr-class.md
+        - name: CMDIChildWnd sınıfı
+          href: reference/cmdichildwnd-class.md
+        - name: CMDIChildWndEx sınıfı
+          href: reference/cmdichildwndex-class.md
+        - name: CMDIFrameWnd sınıfı
+          href: reference/cmdiframewnd-class.md
+        - name: CMDIFrameWndEx sınıfı
+          href: reference/cmdiframewndex-class.md
+        - name: CMDITabInfo sınıfı
+          href: reference/cmditabinfo-class.md
+        - name: CMemFile sınıfı
+          href: reference/cmemfile-class.md
+        - name: CMemoryException sınıfı
+          href: reference/cmemoryexception-class.md
+        - name: CMemoryState sınıfı
+          href: reference/cmemorystate-structure.md
+        - name: CMenu sınıfı
+          href: reference/cmenu-class.md
+        - name: CMenuTearOffManager sınıfı
+          href: reference/cmenutearoffmanager-class.md
+        - name: CMetaFileDC sınıfı
+          href: reference/cmetafiledc-class.md
+        - name: CMFCAcceleratorKey sınıfı
+          href: reference/cmfcacceleratorkey-class.md
+        - name: CMFCAcceleratorKeyAssignCtrl sınıfı
+          href: reference/cmfcacceleratorkeyassignctrl-class.md
+        - name: CMFCAutoHideBar sınıfı
+          href: reference/cmfcautohidebar-class.md
+        - name: CMFCAutoHideButton sınıfı
+          href: reference/cmfcautohidebutton-class.md
+        - name: CMFCBaseTabCtrl sınıfı
+          href: reference/cmfcbasetabctrl-class.md
+        - name: CMFCBaseToolBar sınıfı
+          href: reference/cmfcbasetoolbar-class.md
+        - name: CMFCBaseVisualManager sınıfı
+          href: reference/cmfcbasevisualmanager-class.md
+        - name: CMFCButton sınıfı
+          href: reference/cmfcbutton-class.md
+        - name: CMFCCaptionBar sınıfı
+          href: reference/cmfccaptionbar-class.md
+        - name: CMFCCaptionButton sınıfı
+          href: reference/cmfccaptionbutton-class.md
+        - name: CMFCCmdUsageCount sınıfı
+          href: reference/cmfccmdusagecount-class.md
+        - name: CMFCColorBar sınıfı
+          href: reference/cmfccolorbar-class.md
+        - name: CMFCColorButton sınıfı
+          href: reference/cmfccolorbutton-class.md
+        - name: CMFCColorDialog sınıfı
+          href: reference/cmfccolordialog-class.md
+        - name: CMFCColorMenuButton sınıfı
+          href: reference/cmfccolormenubutton-class.md
+        - name: CMFCColorPickerCtrl sınıfı
+          href: reference/cmfccolorpickerctrl-class.md
+        - name: CMFCColorPopupMenu sınıfı
+          href: reference/cmfccolorpopupmenu-class.md
+        - name: CMFCCustomColorsPropertyPage sınıfı
+          href: reference/cmfccustomcolorspropertypage-class.md
+        - name: CMFCDesktopAlertDialog sınıfı
+          href: reference/cmfcdesktopalertdialog-class.md
+        - name: CMFCDesktopAlertWnd sınıfı
+          href: reference/cmfcdesktopalertwnd-class.md
+        - name: CMFCDesktopAlertWndButton sınıfı
+          href: reference/cmfcdesktopalertwndbutton-class.md
+        - name: CMFCDesktopAlertWndInfo sınıfı
+          href: reference/cmfcdesktopalertwndinfo-class.md
+        - name: CMFCDisableMenuAnimation sınıfı
+          href: reference/cmfcdisablemenuanimation-class.md
+        - name: CMFCDragFrameImpl sınıfı
+          href: reference/cmfcdragframeimpl-class.md
+        - name: CMFCDropDownFrame sınıfı
+          href: reference/cmfcdropdownframe-class.md
+        - name: CMFCDropDownToolBar sınıfı
+          href: reference/cmfcdropdowntoolbar-class.md
+        - name: CMFCDropDownToolbarButton sınıfı
+          href: reference/cmfcdropdowntoolbarbutton-class.md
+        - name: CMFCDynamicLayout sınıfı
+          href: reference/cmfcdynamiclayout-class.md
+        - name: CMFCEditBrowseCtrl sınıfı
+          href: reference/cmfceditbrowsectrl-class.md
+        - name: CMFCFilterChunkValueImpl sınıfı
+          href: reference/cmfcfilterchunkvalueimpl-class.md
+        - name: CMFCFontComboBox sınıfı
+          href: reference/cmfcfontcombobox-class.md
+        - name: CMFCFontInfo sınıfı
+          href: reference/cmfcfontinfo-class.md
+        - name: CMFCHeaderCtrl sınıfı
+          href: reference/cmfcheaderctrl-class.md
+        - name: CMFCImageEditorDialog sınıfı
+          href: reference/cmfcimageeditordialog-class.md
+        - name: CMFCImageEditorPaletteBar sınıfı
+          href: reference/cmfcimageeditorpalettebar-class.md
+        - name: CMFCImagePaintArea sınıfı
+          href: reference/cmfcimagepaintarea-class.md
+        - name: CMFCKeyMapDialog sınıfı
+          href: reference/cmfckeymapdialog-class.md
+        - name: CMFCLinkCtrl sınıfı
+          href: reference/cmfclinkctrl-class.md
+        - name: CMFCListCtrl sınıfı
+          href: reference/cmfclistctrl-class.md
+        - name: CMFCMaskedEdit sınıfı
+          href: reference/cmfcmaskededit-class.md
+        - name: CMFCMenuBar sınıfı
+          href: reference/cmfcmenubar-class.md
+        - name: CMFCMenuButton sınıfı
+          href: reference/cmfcmenubutton-class.md
+        - name: CMFCOutlookBar sınıfı
+          href: reference/cmfcoutlookbar-class.md
+        - name: CMFCOutlookBarPane sınıfı
+          href: reference/cmfcoutlookbarpane-class.md
+        - name: CMFCOutlookBarTabCtrl sınıfı
+          href: reference/cmfcoutlookbartabctrl-class.md
+        - name: CMFCPopupMenu sınıfı
+          href: reference/cmfcpopupmenu-class.md
+        - name: CMFCPopupMenuBar sınıfı
+          href: reference/cmfcpopupmenubar-class.md
+        - name: CMFCPreviewCtrlImpl sınıfı
+          href: reference/cmfcpreviewctrlimpl-class.md
+        - name: CMFCPrintPreviewToolBar sınıfı
+          href: reference/cmfcprintpreviewtoolbar-class.md
+        - name: CMFCPropertyGridColorProperty sınıfı
+          href: reference/cmfcpropertygridcolorproperty-class.md
+        - name: CMFCPropertyGridCtrl sınıfı
+          href: reference/cmfcpropertygridctrl-class.md
+        - name: CMFCPropertyGridFileProperty sınıfı
+          href: reference/cmfcpropertygridfileproperty-class.md
+        - name: CMFCPropertyGridFontProperty sınıfı
+          href: reference/cmfcpropertygridfontproperty-class.md
+        - name: CMFCPropertyGridProperty sınıfı
+          href: reference/cmfcpropertygridproperty-class.md
+        - name: CMFCPropertyGridToolTipCtrl sınıfı
+          href: reference/cmfcpropertygridtooltipctrl-class.md
+        - name: CMFCPropertyPage sınıfı
+          href: reference/cmfcpropertypage-class.md
+        - name: CMFCPropertySheet sınıfı
+          href: reference/cmfcpropertysheet-class.md
+        - name: CMFCReBar sınıfı
+          href: reference/cmfcrebar-class.md
+        - name: CMFCRibbonApplicationButton sınıfı
+          href: reference/cmfcribbonapplicationbutton-class.md
+        - name: CMFCRibbonBar sınıfı
+          href: reference/cmfcribbonbar-class.md
+        - name: CMFCRibbonBaseElement sınıfı
+          href: reference/cmfcribbonbaseelement-class.md
+        - name: CMFCRibbonButton sınıfı
+          href: reference/cmfcribbonbutton-class.md
+        - name: CMFCRibbonButtonsGroup sınıfı
+          href: reference/cmfcribbonbuttonsgroup-class.md
+        - name: CMFCRibbonCategory sınıfı
+          href: reference/cmfcribboncategory-class.md
+        - name: CMFCRibbonCheckBox sınıfı
+          href: reference/cmfcribboncheckbox-class.md
+        - name: CMFCRibbonColorButton sınıfı
+          href: reference/cmfcribboncolorbutton-class.md
+        - name: CMFCRibbonComboBox sınıfı
+          href: reference/cmfcribboncombobox-class.md
+        - name: CMFCRibbonContextCaption sınıfı
+          href: reference/cmfcribboncontextcaption-class.md
+        - name: CMFCRibbonCustomizeDialog sınıfı
+          href: reference/cmfcribboncustomizedialog-class.md
+        - name: CMFCRibbonCustomizePropertyPage sınıfı
+          href: reference/cmfcribboncustomizepropertypage-class.md
+        - name: CMFCRibbonEdit sınıfı
+          href: reference/cmfcribbonedit-class.md
+        - name: CMFCRibbonFontComboBox sınıfı
+          href: reference/cmfcribbonfontcombobox-class.md
+        - name: CMFCRibbonGallery sınıfı
+          href: reference/cmfcribbongallery-class.md
+        - name: CMFCRibbonGalleryMenuButton sınıfı
+          href: reference/cmfcribbongallerymenubutton-class.md
+        - name: CMFCRibbonLabel sınıfı
+          href: reference/cmfcribbonlabel-class.md
+        - name: CMFCRibbonLinkCtrl sınıfı
+          href: reference/cmfcribbonlinkctrl-class.md
+        - name: CMFCRibbonMainPanel sınıfı
+          href: reference/cmfcribbonmainpanel-class.md
+        - name: CMFCRibbonMiniToolBar sınıfı
+          href: reference/cmfcribbonminitoolbar-class.md
+        - name: CMFCRibbonPanel sınıfı
+          href: reference/cmfcribbonpanel-class.md
+        - name: CMFCRibbonProgressBar sınıfı
+          href: reference/cmfcribbonprogressbar-class.md
+        - name: CMFCRibbonQuickAccessToolBarDefaultState sınıfı
+          href: reference/cmfcribbonquickaccesstoolbardefaultstate-class.md
+        - name: CMFCRibbonSeparator sınıfı
+          href: reference/cmfcribbonseparator-class.md
+        - name: CMFCRibbonSlider sınıfı
+          href: reference/cmfcribbonslider-class.md
+        - name: CMFCRibbonStatusBar sınıfı
+          href: reference/cmfcribbonstatusbar-class.md
+        - name: CMFCRibbonStatusBarPane sınıfı
+          href: reference/cmfcribbonstatusbarpane-class.md
+        - name: CMFCRibbonUndoButton sınıfı
+          href: reference/cmfcribbonundobutton-class.md
+        - name: CMFCShellListCtrl sınıfı
+          href: reference/cmfcshelllistctrl-class.md
+        - name: CMFCShellTreeCtrl sınıfı
+          href: reference/cmfcshelltreectrl-class.md
+        - name: CMFCSpinButtonCtrl sınıfı
+          href: reference/cmfcspinbuttonctrl-class.md
+        - name: CMFCStandardColorsPropertyPage sınıfı
+          href: reference/cmfcstandardcolorspropertypage-class.md
+        - name: CMFCStatusBar sınıfı
+          href: reference/cmfcstatusbar-class.md
+        - name: CMFCTabCtrl sınıfı
+          href: reference/cmfctabctrl-class.md
+        - name: CMFCTabDropTarget sınıfı
+          href: reference/cmfctabdroptarget-class.md
+        - name: CMFCTabToolTipInfo sınıfı
+          href: reference/cmfctabtooltipinfo-structure.md
+        - name: CMFCTasksPane sınıfı
+          href: reference/cmfctaskspane-class.md
+        - name: CMFCTasksPaneTask sınıfı
+          href: reference/cmfctaskspanetask-class.md
+        - name: CMFCTasksPaneTaskGroup sınıfı
+          href: reference/cmfctaskspanetaskgroup-class.md
+        - name: CMFCToolBar sınıfı
+          href: reference/cmfctoolbar-class.md
+        - name: CMFCToolBarButton sınıfı
+          href: reference/cmfctoolbarbutton-class.md
+        - name: CMFCToolBarComboBoxButton sınıfı
+          href: reference/cmfctoolbarcomboboxbutton-class.md
+        - name: CMFCToolBarComboBoxEdit sınıfı
+          href: reference/cmfctoolbarcomboboxedit-class.md
+        - name: CMFCToolBarDateTimeCtrl sınıfı
+          href: reference/cmfctoolbardatetimectrl-class.md
+        - name: CMFCToolBarEditBoxButton sınıfı
+          href: reference/cmfctoolbareditboxbutton-class.md
+        - name: CMFCToolBarFontComboBox sınıfı
+          href: reference/cmfctoolbarfontcombobox-class.md
+        - name: CMFCToolBarFontSizeComboBox sınıfı
+          href: reference/cmfctoolbarfontsizecombobox-class.md
+        - name: CMFCToolBarImages sınıfı
+          href: reference/cmfctoolbarimages-class.md
+        - name: CMFCToolBarMenuButton sınıfı
+          href: reference/cmfctoolbarmenubutton-class.md
+        - name: CMFCToolBarInfo sınıfı
+          href: reference/cmfctoolbarinfo-class.md
+        - name: CMFCToolBarsCustomizeDialog sınıfı
+          href: reference/cmfctoolbarscustomizedialog-class.md
+        - name: CMFCToolTipCtrl sınıfı
+          href: reference/cmfctooltipctrl-class.md
+        - name: CMFCToolTipInfo sınıfı
+          href: reference/cmfctooltipinfo-class.md
+        - name: CMFCVisualManager sınıfı
+          href: reference/cmfcvisualmanager-class.md
+        - name: CMFCVisualManagerOffice2003 sınıfı
+          href: reference/cmfcvisualmanageroffice2003-class.md
+        - name: CMFCVisualManagerOffice2007 sınıfı
+          href: reference/cmfcvisualmanageroffice2007-class.md
+        - name: CMFCVisualManagerOfficeXP sınıfı
+          href: reference/cmfcvisualmanagerofficexp-class.md
+        - name: CMFCVisualManagerVS2005 sınıfı
+          href: reference/cmfcvisualmanagervs2005-class.md
+        - name: CMFCVisualManagerWindows sınıfı
+          href: reference/cmfcvisualmanagerwindows-class.md
+        - name: CMFCVisualManagerWindows7 sınıfı
+          href: reference/cmfcvisualmanagerwindows7-class.md
+        - name: CMFCWindowsManagerDialog sınıfı
+          href: reference/cmfcwindowsmanagerdialog-class.md
+        - name: CMiniFrameWnd sınıfı
+          href: reference/cminiframewnd-class.md
+        - name: CMonikerFile sınıfı
+          href: reference/cmonikerfile-class.md
+        - name: CMonthCalCtrl sınıfı
+          href: reference/cmonthcalctrl-class.md
+        - name: CMouseManager sınıfı
+          href: reference/cmousemanager-class.md
+        - name: CMultiDocTemplate sınıfı
+          href: reference/cmultidoctemplate-class.md
+        - name: CMultiLock sınıfı
+          href: reference/cmultilock-class.md
+        - name: CMultiPageDHtmlDialog sınıfı
+          href: reference/cmultipagedhtmldialog-class.md
+        - name: CMultiPaneFrameWnd sınıfı
+          href: reference/cmultipaneframewnd-class.md
+        - name: CMutex sınıfı
+          href: reference/cmutex-class.md
+        - name: CNetAddressCtrl sınıfı
+          href: reference/cnetaddressctrl-class.md
+        - name: CNotSupportedException sınıfı
+          href: reference/cnotsupportedexception-class.md
+        - name: CObArray sınıfı
+          href: reference/cobarray-class.md
+        - name: CObject sınıfı
+          href: reference/cobject-class.md
+        - name: CObList sınıfı
+          href: reference/coblist-class.md
+        - name: COccManager sınıfı
+          href: reference/coccmanager-class.md
+        - name: COleBusyDialog sınıfı
+          href: reference/colebusydialog-class.md
+        - name: COleChangeIconDialog sınıfı
+          href: reference/colechangeicondialog-class.md
+        - name: COleChangeSourceDialog sınıfı
+          href: reference/colechangesourcedialog-class.md
+        - name: COleClientItem sınıfı
+          href: reference/coleclientitem-class.md
+        - name: COleCmdUI sınıfı
+          href: reference/colecmdui-class.md
+        - name: COleControl sınıfı
+          href: reference/colecontrol-class.md
+        - name: COleControlContainer sınıfı
+          href: reference/colecontrolcontainer-class.md
+        - name: COleControlModule sınıfı
+          href: reference/colecontrolmodule-class.md
+        - name: COleControlSite sınıfı
+          href: reference/colecontrolsite-class.md
+        - name: COleConvertDialog sınıfı
+          href: reference/coleconvertdialog-class.md
+        - name: COleCurrency sınıfı
+          href: reference/colecurrency-class.md
+        - name: COleDataObject sınıfı
+          href: reference/coledataobject-class.md
+        - name: COleDataSource sınıfı
+          href: reference/coledatasource-class.md
+        - name: COleDBRecordView sınıfı
+          href: reference/coledbrecordview-class.md
+        - name: COleDialog sınıfı
+          href: reference/coledialog-class.md
+        - name: COleDispatchDriver sınıfı
+          href: reference/coledispatchdriver-class.md
+        - name: COleDispatchException sınıfı
+          href: reference/coledispatchexception-class.md
+        - name: COleDocObjectItem sınıfı
+          href: reference/coledocobjectitem-class.md
+        - name: COleDocument sınıfı
+          href: reference/coledocument-class.md
+        - name: COleDropSource sınıfı
+          href: reference/coledropsource-class.md
+        - name: COleDropTarget sınıfı
+          href: reference/coledroptarget-class.md
+        - name: COleException sınıfı
+          href: reference/coleexception-class.md
+        - name: COleInsertDialog sınıfı
+          href: reference/coleinsertdialog-class.md
+        - name: COleIPFrameWnd sınıfı
+          href: reference/coleipframewnd-class.md
+        - name: COleIPFrameWndEx sınıfı
+          href: reference/coleipframewndex-class.md
+        - name: COleLinkingDoc sınıfı
+          href: reference/colelinkingdoc-class.md
+        - name: COleLinksDialog sınıfı
+          href: reference/colelinksdialog-class.md
+        - name: COleMessageFilter sınıfı
+          href: reference/colemessagefilter-class.md
+        - name: COleObjectFactory sınıfı
+          href: reference/coleobjectfactory-class.md
+        - name: COlePasteSpecialDialog sınıfı
+          href: reference/colepastespecialdialog-class.md
+        - name: COlePropertiesDialog sınıfı
+          href: reference/colepropertiesdialog-class.md
+        - name: COlePropertyPage sınıfı
+          href: reference/colepropertypage-class.md
+        - name: COleResizeBar sınıfı
+          href: reference/coleresizebar-class.md
+        - name: COleSafeArray sınıfı
+          href: reference/colesafearray-class.md
+        - name: COleServerDoc sınıfı
+          href: reference/coleserverdoc-class.md
+        - name: COleServerItem sınıfı
+          href: reference/coleserveritem-class.md
+        - name: COleStreamFile sınıfı
+          href: reference/colestreamfile-class.md
+        - name: COleTemplateServer sınıfı
+          href: reference/coletemplateserver-class.md
+        - name: COleUpdateDialog sınıfı
+          href: reference/coleupdatedialog-class.md
+        - name: COleVariant sınıfı
+          href: reference/colevariant-class.md
+        - name: CPagerCtrl sınıfı
+          href: reference/cpagerctrl-class.md
+        - name: CPageSetupDialog sınıfı
+          href: reference/cpagesetupdialog-class.md
+        - name: CPaintDC sınıfı
+          href: reference/cpaintdc-class.md
+        - name: CPalette sınıfı
+          href: reference/cpalette-class.md
+        - name: CPane sınıfı
+          href: reference/cpane-class.md
+        - name: CPaneContainer sınıfı
+          href: reference/cpanecontainer-class.md
+        - name: CPaneContainerManager sınıfı
+          href: reference/cpanecontainermanager-class.md
+        - name: CPaneDialog sınıfı
+          href: reference/cpanedialog-class.md
+        - name: CPaneDivider sınıfı
+          href: reference/cpanedivider-class.md
+        - name: CPaneFrameWnd sınıfı
+          href: reference/cpaneframewnd-class.md
+        - name: CParabolicTransitionFromAcceleration sınıfı
+          href: reference/cparabolictransitionfromacceleration-class.md
+        - name: CPen sınıfı
+          href: reference/cpen-class.md
+        - name: CPictureHolder sınıfı
+          href: reference/cpictureholder-class.md
+        - name: CPrintDialog sınıfı
+          href: reference/cprintdialog-class.md
+        - name: CPrintDialogEx sınıfı
+          href: reference/cprintdialogex-class.md
+        - name: CPrintInfo sınıfı
+          href: reference/cprintinfo-structure.md
+        - name: CProgressCtrl sınıfı
+          href: reference/cprogressctrl-class.md
+        - name: CPropertyPage sınıfı
+          href: reference/cpropertypage-class.md
+        - name: CPropertySheet sınıfı
+          href: reference/cpropertysheet-class.md
+        - name: CPropExchange sınıfı
+          href: reference/cpropexchange-class.md
+        - name: CPtrArray sınıfı
+          href: reference/cptrarray-class.md
+        - name: CPtrList sınıfı
+          href: reference/cptrlist-class.md
+        - name: CReBar sınıfı
+          href: reference/crebar-class.md
+        - name: CReBarCtrl sınıfı
+          href: reference/crebarctrl-class.md
+        - name: CRecentDockSiteInfo sınıfı
+          href: reference/crecentdocksiteinfo-class.md
+        - name: CRecentFileList sınıfı
+          href: reference/crecentfilelist-class.md
+        - name: CRecordset sınıfı
+          href: reference/crecordset-class.md
+        - name: CRecordView sınıfı
+          href: reference/crecordview-class.md
+        - name: CRectTracker sınıfı
+          href: reference/crecttracker-class.md
+        - name: CRenderTarget sınıfı
+          href: reference/crendertarget-class.md
+        - name: CResourceException sınıfı
+          href: reference/cresourceexception-class.md
+        - name: CReversalTransition sınıfı
+          href: reference/creversaltransition-class.md
+        - name: CRgn sınıfı
+          href: reference/crgn-class.md
+        - name: CRichEditCntrItem sınıfı
+          href: reference/cricheditcntritem-class.md
+        - name: CRichEditCtrl sınıfı
+          href: reference/cricheditctrl-class.md
+        - name: CRichEditDoc sınıfı
+          href: reference/cricheditdoc-class.md
+        - name: CRichEditView sınıfı
+          href: reference/cricheditview-class.md
+        - name: CRuntimeClass sınıfı
+          href: reference/cruntimeclass-structure.md
+        - name: CScrollBar sınıfı
+          href: reference/cscrollbar-class.md
+        - name: CScrollView sınıfı
+          href: reference/cscrollview-class.md
+        - name: CSemaphore sınıfı
+          href: reference/csemaphore-class.md
+        - name: CSettingsStore sınıfı
+          href: reference/csettingsstore-class.md
+        - name: CSettingsStoreSP sınıfı
+          href: reference/csettingsstoresp-class.md
+        - name: CSharedFile sınıfı
+          href: reference/csharedfile-class.md
+        - name: CShellManager sınıfı
+          href: reference/cshellmanager-class.md
+        - name: CSimpleException sınıfı
+          href: reference/csimpleexception-class.md
+        - name: CSingleDocTemplate sınıfı
+          href: reference/csingledoctemplate-class.md
+        - name: CSingleLock sınıfı
+          href: reference/csinglelock-class.md
+        - name: CSinusoidalTransitionFromRange sınıfı
+          href: reference/csinusoidaltransitionfromrange-class.md
+        - name: CSinusoidalTransitionFromVelocity sınıfı
+          href: reference/csinusoidaltransitionfromvelocity-class.md
+        - name: CSliderCtrl sınıfı
+          href: reference/csliderctrl-class.md
+        - name: CSmartDockingInfo sınıfı
+          href: reference/csmartdockinginfo-class.md
+        - name: CSmoothStopTransition sınıfı
+          href: reference/csmoothstoptransition-class.md
+        - name: CSocket sınıfı
+          href: reference/csocket-class.md
+        - name: CSocketFile sınıfı
+          href: reference/csocketfile-class.md
+        - name: CSpinButtonCtrl sınıfı
+          href: reference/cspinbuttonctrl-class.md
+        - name: CSplitButton sınıfı
+          href: reference/csplitbutton-class.md
+        - name: CSplitterWnd sınıfı
+          href: reference/csplitterwnd-class.md
+        - name: CSplitterWndEx sınıfı
+          href: reference/csplitterwndex-class.md
+        - name: CStatic sınıfı
+          href: reference/cstatic-class.md
+        - name: CStatusBar sınıfı
+          href: reference/cstatusbar-class.md
+        - name: CStatusBarCtrl sınıfı
+          href: reference/cstatusbarctrl-class.md
+        - name: CStdioFile sınıfı
+          href: reference/cstdiofile-class.md
+        - name: CStringArray sınıfı
+          href: reference/cstringarray-class.md
+        - name: CStringList sınıfı
+          href: reference/cstringlist-class.md
+        - name: CSyncObject sınıfı
+          href: reference/csyncobject-class.md
+        - name: CTabCtrl sınıfı
+          href: reference/ctabctrl-class.md
+        - name: CTabbedPane sınıfı
+          href: reference/ctabbedpane-class.md
+        - name: CTabView sınıfı
+          href: reference/ctabview-class.md
+        - name: CTaskDialog sınıfı
+          href: reference/ctaskdialog-class.md
+        - name: CToolBar sınıfı
+          href: reference/ctoolbar-class.md
+        - name: CToolBarCtrl sınıfı
+          href: reference/ctoolbarctrl-class.md
+        - name: CToolTipCtrl sınıfı
+          href: reference/ctooltipctrl-class.md
+        - name: CTooltipManager sınıfı
+          href: reference/ctooltipmanager-class.md
+        - name: CTreeCtrl sınıfı
+          href: reference/ctreectrl-class.md
+        - name: CTreeView sınıfı
+          href: reference/ctreeview-class.md
+        - name: CTypedPtrArray sınıfı
+          href: reference/ctypedptrarray-class.md
+        - name: CTypedPtrList sınıfı
+          href: reference/ctypedptrlist-class.md
+        - name: CTypedPtrMap sınıfı
+          href: reference/ctypedptrmap-class.md
+        - name: CUIntArray sınıfı
+          href: reference/cuintarray-class.md
+        - name: CUserException sınıfı
+          href: reference/cuserexception-class.md
+        - name: CUserTool sınıfı
+          href: reference/cusertool-class.md
+        - name: CUserToolsManager sınıfı
+          href: reference/cusertoolsmanager-class.md
+        - name: CView sınıfı
+          href: reference/cview-class.md
+        - name: CVSListBox sınıfı
+          href: reference/cvslistbox-class.md
+        - name: CWaitCursor sınıfı
+          href: reference/cwaitcursor-class.md
+        - name: CWinApp sınıfı
+          href: reference/cwinapp-class.md
+        - name: CWinAppEx sınıfı
+          href: reference/cwinappex-class.md
+        - name: CWindowDC sınıfı
+          href: reference/cwindowdc-class.md
+        - name: CWinFormsControl sınıfı
+          href: reference/cwinformscontrol-class.md
+        - name: CWinFormsDialog sınıfı
+          href: reference/cwinformsdialog-class.md
+        - name: CWinFormsView sınıfı
+          href: reference/cwinformsview-class.md
+        - name: CWinThread sınıfı
+          href: reference/cwinthread-class.md
+        - name: CWnd sınıfı
+          href: reference/cwnd-class.md
+        - name: CWordArray sınıfı
+          href: reference/cwordarray-class.md
+        - name: ICommandSource arabirimi
+          href: reference/icommandsource-interface.md
+        - name: ICommandTarget arabirimi
+          href: reference/icommandtarget-interface.md
+        - name: ICommandUI arabirimi
+          href: reference/icommandui-interface.md
+        - name: IView arabirimi
+          href: reference/iview-interface.md
+    - name: İç sınıflar
+      href: reference/internal-classes.md
+    - name: MFC makroları ve genel öğeleri
+      expanded: false
+      items:
+        - name: MFC makroları ve genel öğeleri
+          href: reference/mfc-macros-and-globals.md
+        - name: Veri türleri (MFC)
+          href: reference/data-types-mfc.md
+        - name: MFC sınıf nesnelerine ilişkin tür atama
+          href: reference/type-casting-of-mfc-class-objects.md
+        - name: Çalışma süresi nesne modeli hizmetleri
+          href: reference/run-time-object-model-services.md
+        - name: Tanı hizmetleri
+          href: reference/diagnostic-services.md
+        - name: Modüller ve DLL'ler
+          href: reference/extension-dll-macros.md
+        - name: Özel durum işleme
+          href: reference/exception-processing.md
+        - name: CString biçimlendirmesi ve ileti kutusu görüntüleme
+          href: reference/cstring-formatting-and-message-box-display.md
+        - name: Uygulama bilgileri ve yönetimi
+          href: reference/application-information-and-management.md
+        - name: Standart komut ve pencere kimlikleri
+          href: reference/standard-command-and-window-ids.md
+        - name: Koleksiyon sınıfı yardımcıları
+          href: reference/collection-class-helpers.md
+        - name: Gri ve titremeli bit eşlem işlevleri
+          href: reference/gray-and-dithered-bitmap-functions.md
+        - name: Kayıt Alanı Değişim işlevleri
+          href: reference/record-field-exchange-functions.md
+        - name: CRecordView ve CDaoRecordView için İletişim Kutusu Veri Değişimi işlevleri
+          href: reference/dialog-data-exchange-functions-for-crecordview-and-cdaorecordview.md
+        - name: OLE denetimleri için İletişim Kutusu Veri Değişimi işlevleri
+          href: reference/dialog-data-exchange-functions-for-ole-controls.md
+        - name: Veritabanı makroları ve genel öğeleri
+          href: reference/database-macros-and-globals.md
+        - name: DAO veritabanı motoru başlatma ve sonlandırma
+          href: reference/dao-database-engine-initialization-and-termination.md
+        - name: OLE başlatma
+          href: reference/ole-initialization.md
+        - name: Uygulama denetimi
+          href: reference/application-control.md
+        - name: Eşlemeleri dağıtma
+          href: reference/dispatch-maps.md
+        - name: Değişken parametre türü sabitleri
+          href: reference/variant-parameter-type-constants.md
+        - name: Tür kitaplığı erişimi
+          href: reference/type-library-access.md
+        - name: Özellik sayfaları (MFC)
+          href: reference/property-pages-mfc.md
+        - name: Olay eşlemeleri
+          href: reference/event-maps.md
+        - name: Olay iç havuz eşlemeleri
+          href: reference/event-sink-maps.md
+        - name: Bağlantı eşlemeleri
+          href: reference/connection-maps.md
+        - name: OLE denetimlerini kaydetme
+          href: reference/registering-ole-controls.md
+        - name: Sınıf oluşturucular ve lisanslama
+          href: reference/class-factories-and-licensing.md
+        - name: OLE denetimlerinin kalıcılığı
+          href: reference/persistence-of-ole-controls.md
+        - name: İnternet URL ayrıştırma genel öğeleri
+          href: reference/internet-url-parsing-globals.md
+        - name: DHTML olay eşlemeleri
+          href: reference/dhtml-event-maps.md
+        - name: DHTML düzenleme komutu eşlemeleri
+          href: reference/dhtml-editing-command-maps.md
+        - name: Standart İletişim Kutusu Veri Değişimi rutinleri
+          href: reference/standard-dialog-data-exchange-routines.md
+        - name: Standart İletişim Kutusu veri doğrulama rutinleri
+          href: reference/standard-dialog-data-validation-routines.md
+        - name: AFX iletileri
+          href: reference/afx-messages.md
+        - name: ToolBar denetim stilleri
+          href: reference/toolbar-control-styles.md
+        - name: 'CMFCImagePaintArea::IMAGE_EDIT_MODE numaralandırması'
+          href: reference/cmfcimagepaintarea-image-edit-mode-enumeration.md
+        - name: UICheckState numaralandırması
+          href: reference/uicheckstate-enumeration.md
+    - name: 'Yapılar, stiller, geri çağrılar ve ileti eşlemeleri'
+      expanded: false
+      items:
+        - name: 'Yapılar, stiller, geri çağrılar ve ileti eşlemeleri'
+          href: reference/structures-styles-callbacks-and-message-maps.md
+        - name: MFC tarafından kullanılan yapılar
+          expanded: false
+          items:
+            - name: MFC tarafından kullanılan yapılar
+              href: reference/structures-used-by-mfc.md
+            - name: AFX_EXTENSION_MODULE yapısı
+              href: reference/afx-extension-module-structure.md
+            - name: AFX_GLOBAL_DATA yapısı
+              href: reference/afx-global-data-structure.md
+            - name: CDaoDatabaseInfo yapısı
+              href: reference/cdaodatabaseinfo-structure.md
+            - name: CDaoErrorInfo yapısı
+              href: reference/cdaoerrorinfo-structure.md
+            - name: CDaoFieldInfo yapısı
+              href: reference/cdaofieldinfo-structure.md
+            - name: CDaoIndexInfo yapısı
+              href: reference/cdaoindexinfo-structure.md
+            - name: CDaoIndexFieldInfo yapısı
+              href: reference/cdaoindexfieldinfo-structure.md
+            - name: CDaoParameterInfo yapısı
+              href: reference/cdaoparameterinfo-structure.md
+            - name: CDaoQueryDefInfo yapısı
+              href: reference/cdaoquerydefinfo-structure.md
+            - name: CDaoRelationInfo yapısı
+              href: reference/cdaorelationinfo-structure.md
+            - name: CDaoRelationFieldInfo yapısı
+              href: reference/cdaorelationfieldinfo-structure.md
+            - name: CDaoTableDefInfo yapısı
+              href: reference/cdaotabledefinfo-structure.md
+            - name: CDaoWorkspaceInfo yapısı
+              href: reference/cdaoworkspaceinfo-structure.md
+            - name: CODBCFieldInfo yapısı
+              href: reference/codbcfieldinfo-structure.md
+            - name: DHtmlUrlEventMapEntry yapısı
+              href: reference/dhtmlurleventmapentry-structure.md
+            - name: HSE_VERSION_INFO yapısı
+              href: reference/hse-version-info-structure.md
+        - name: MFC tarafından kullanılan stiller
+          href: reference/styles-used-by-mfc.md
+        - name: MFC tarafından kullanılan geri çağırma işlevleri
+          href: reference/callback-functions-used-by-mfc.md
+        - name: İleti eşlemeleri (MFC)
+          expanded: false
+          items:
+            - name: İleti eşlemeleri (MFC)
+              href: reference/message-maps-mfc.md
+            - name: İleti eşleme makroları (MFC)
+              href: reference/message-map-macros-mfc.md
+            - name: Temsilci ve arabirim eşleme makroları
+              href: reference/delegate-and-interface-maps.md
+            - name: 'Nasıl yapılır: İleti eşleme çapraz başvurusunu kullanma'
+              href: reference/how-to-use-the-message-map-cross-reference.md
+            - name: Alt pencere bildirim iletisi işleyicileri
+              href: reference/child-window-notification-message-handlers.md
+            - name: Genel denetim işleyicisi
+              href: reference/generic-control-handler.md
+            - name: Kullanıcı düğmesi işleyicileri
+              href: reference/user-button-handlers.md
+            - name: Birleşik giriş kutusu işleyicileri
+              href: reference/combo-box-handlers.md
+            - name: Denetim işleyicilerini düzenleme
+              href: reference/edit-control-handlers.md
+            - name: Liste kutusu işleyicileri
+              href: reference/list-box-handlers.md
+            - name: WM_ iletileri için işleyiciler
+              href: reference/handlers-for-wm-messages.md
+            - name: 'WM_ İleti işleyicileri: A - C'
+              href: reference/wm-message-handlers-a-c.md
+            - name: 'WM_ İleti işleyicileri: D - E'
+              href: reference/wm-message-handlers-d-e.md
+            - name: 'WM_ İleti işleyicileri: F - K'
+              href: reference/wm-message-handlers-f-k.md
+            - name: 'WM_ İleti işleyicileri: L - M'
+              href: reference/wm-message-handlers-l-m.md
+            - name: 'WM_ İleti işleyicileri: N - O'
+              href: reference/wm-message-handlers-n-o.md
+            - name: 'WM_ iletileri: P - R'
+              href: reference/wm-messages-p-r.md
+            - name: 'WM_ iletileri: S'
+              href: reference/wm-messages-s.md
+            - name: 'WM_ iletileri: T - Z'
+              href: reference/wm-messages-t-z.md
+            - name: Kullanıcı tanımlı işleyiciler
+              href: reference/user-defined-handlers.md
+- name: MFC sihirbazları ve iletişim kutuları
+  expanded: false
+  items:
+    - name: MFC sihirbazları ve iletişim kutuları
+      href: reference/mfc-wizards-and-dialog-boxes.md
+    - name: MFC DLL projesi oluşturma
+      expanded: false
+      items:
+        - name: MFC DLL projesi oluşturma
+          href: reference/creating-an-mfc-dll-project.md
+        - name: MFC DLL sihirbazı
+          expanded: false
+          items:
+            - name: MFC DLL sihirbazı
+              href: reference/mfc-dll-wizard.md
+            - name: 'Uygulama ayarları, MFC DLL sihirbazı'
+              href: reference/application-settings-mfc-dll-wizard.md
+        - name: MFC DLL sihirbazı tarafından üretilen sınıflar ve işlevler
+          href: reference/classes-and-functions-generated-by-the-mfc-dll-wizard.md
+    - name: MFC uygulaması oluşturma
+      expanded: false
+      items:
+        - name: MFC uygulaması oluşturma
+          href: reference/creating-an-mfc-application.md
+        - name: MFC uygulama sihirbazı
+          expanded: false
+          items:
+            - name: MFC uygulama sihirbazı
+              href: reference/mfc-application-wizard.md
+            - name: 'Uygulama türü, MFC uygulama sihirbazı'
+              href: reference/application-type-mfc-application-wizard.md
+            - name: 'Birleşik belge desteği, MFC uygulama sihirbazı'
+              href: reference/compound-document-support-mfc-application-wizard.md
+            - name: 'Belge şablonu dizeleri, MFC uygulama sihirbazı'
+              href: reference/document-template-strings-mfc-application-wizard.md
+            - name: 'Veritabanı desteği, MFC uygulama sihirbazı'
+              href: reference/database-support-mfc-application-wizard.md
+            - name: 'Kullanıcı arabirimi özellikleri, MFC uygulama sihirbazı'
+              href: reference/user-interface-features-mfc-application-wizard.md
+            - name: 'Gelişmiş özellikler, MFC uygulama sihirbazı'
+              href: reference/advanced-features-mfc-application-wizard.md
+            - name: 'Oluşturulan sınıflar, MFC uygulama sihirbazı'
+              href: reference/generated-classes-mfc-application-wizard.md
+        - name: Form tabanlı MFC uygulaması oluşturma
+          href: reference/creating-a-forms-based-mfc-application.md
+        - name: Dosya gezgini stilinde MFC uygulaması oluşturma
+          href: reference/creating-a-file-explorer-style-mfc-application.md
+        - name: Web tarayıcısı stilinde MFC uygulaması oluşturma
+          href: reference/creating-a-web-browser-style-mfc-application.md
+    - name: MFC ActiveX denetimi kapsayıcısı oluşturma
+      href: reference/creating-an-mfc-activex-control-container.md
+    - name: MFC ActiveX denetimi oluşturma
+      expanded: false
+      items:
+        - name: MFC ActiveX denetimi oluşturma
+          href: reference/creating-an-mfc-activex-control.md
+        - name: MFC ActiveX denetim sihirbazı
+          expanded: false
+          items:
+            - name: MFC ActiveX denetim sihirbazı
+              href: reference/mfc-activex-control-wizard.md
+            - name: 'Uygulama ayarları, MFC ActiveX denetim sihirbazı'
+              href: reference/application-settings-mfc-activex-control-wizard.md
+            - name: 'Denetim adları, MFC ActiveX denetim sihirbazı'
+              href: reference/control-names-mfc-activex-control-wizard.md
+            - name: 'Denetim ayarları, MFC ActiveX denetim sihirbazı'
+              href: reference/control-settings-mfc-activex-control-wizard.md
+    - name: Bir MFC sınıf ekleme
+      expanded: false
+      items:
+        - name: Bir MFC sınıf ekleme
+          href: reference/adding-an-mfc-class.md
+        - name: MFC sınıf ekleme sihirbazı
+          expanded: false
+          items:
+            - name: MFC sınıf ekleme sihirbazı
+              href: reference/mfc-add-class-wizard.md
+            - name: 'Belge şablonu dizeleri, MFC sınıf ekleme sihirbazı'
+              href: reference/document-template-strings-mfc-add-class-wizard.md
+    - name: Tür kitaplığından bir MFC sınıfı ekleme
+      expanded: false
+      items:
+        - name: Tür kitaplığından bir MFC sınıfı ekleme
+          href: reference/adding-an-mfc-class-from-a-type-library.md
+        - name: Tür kitaplığı sihirbazından sınıf ekleme
+          href: reference/add-class-from-typelib-wizard.md
+    - name: MFC ileti işleyicisi ekleme
+      expanded: false
+      items:
+        - name: MFC ileti işleyicisi ekleme
+          href: reference/adding-an-mfc-message-handler.md
+        - name: İletileri işlevlere eşleme
+          expanded: false
+          items:
+            - name: İletileri işlevlere eşleme
+              href: reference/mapping-messages-to-functions.md
+            - name: Kullanıcı arabirimi nesneleri ile ilişkili ileti türleri
+              href: reference/message-types-associated-with-user-interface-objects.md
+            - name: İleti işleyicisini düzenleme
+              href: reference/editing-a-message-handler.md
+            - name: Yansımış bir ileti için ileti işleyicisi tanımlama
+              href: reference/defining-a-message-handler-for-a-reflected-message.md
+            - name: Yeni denetim sınıfınıza dayalı değişken bildirme
+              href: reference/declaring-a-variable-based-on-your-new-control-class.md
+    - name: MFC ODBC tüketicisi ekleme
+      expanded: false
+      items:
+        - name: MFC ODBC tüketicisi ekleme
+          href: reference/adding-an-mfc-odbc-consumer.md
+        - name: MFC ODBC tüketici sihirbazı
+          href: reference/mfc-odbc-consumer-wizard.md
+    - name: MFC projenize ATL desteği ekleme
+      expanded: false
+      items:
+        - name: MFC projenize ATL desteği ekleme
+          href: reference/adding-atl-support-to-your-mfc-project.md
+        - name: ATL sihirbazı tarafından eklenen ATL desteğinin ayrıntıları
+          href: reference/details-of-atl-support-added-by-the-atl-wizard.md
+    - name: MFC sınıf sihirbazı
+      href: reference/mfc-class-wizard.md
