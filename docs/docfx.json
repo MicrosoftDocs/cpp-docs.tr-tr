@@ -41,7 +41,7 @@
       "breadcrumb_path": "~/_breadcrumb/toc.yml",
       "extendBreadcrumb": "true",
       "ROBOTS": "INDEX,FOLLOW",
-      "manager": "wpickett",
+      "manager": "markl",
       "ms.date": "11/16/2016",
       "ms.topic": "conceptual",
       "audience": "developer",
@@ -57,8 +57,8 @@
         "C++"
       ],
       "feedback_system": "GitHub",
-            "feedback_github_repo": "MicrosoftDocs/cpp-docs.tr-tr",
-            "feedback_product_url": "https://developercommunity.visualstudio.com/spaces/62/index.html"
+      "feedback_github_repo": "MicrosoftDocs/cpp-docs.tr-tr",
+      "feedback_product_url": "https://developercommunity.visualstudio.com/spaces/62/index.html"
     },
     "fileMetadata": {
       "ms.tgt_pltfrm": {
