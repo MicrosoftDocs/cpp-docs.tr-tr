@@ -93,7 +93,8 @@
                   tocHref: /cpp/ide/
                   topicHref: /cpp/ide/using-the-visual-studio-ide-for-cpp-desktop-development
             - name: C/C++ Projeleri Oluşturma
-              tocHref: /cpp/build/building-c-cpp-programs
+              tocHref: /cpp/build/
+              topicHref: /cpp/build/building-c-cpp-programs
               items:
                 - name: Derleme Başvurusu
                   tocHref: /cpp/build/reference/
