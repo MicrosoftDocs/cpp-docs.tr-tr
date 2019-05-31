@@ -2,12 +2,12 @@
 title: 'Taşıma Kılavuzu: COM Spy'
 ms.date: 11/04/2016
 ms.assetid: 24aa0d52-4014-4acb-8052-f4e2e4bbc3bb
-ms.openlocfilehash: ec928768307a38cbb6ea00d985d60e6c2311b563
-ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
+ms.openlocfilehash: 791b2e88166caae39c3b8e645ca1cc053f0b9379
+ms.sourcegitcommit: 28eae422049ac3381c6b1206664455dbb56cbfb6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2019
-ms.locfileid: "65449096"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66451176"
 ---
 # <a name="porting-guide-com-spy"></a>Taşıma Kılavuzu: COM Spy
 
@@ -24,7 +24,7 @@ Proje dosyası, kolayca dönüştürür ve geçiş raporu üretir. Biz uğraşma
 ComSpyAudit\ComSpyAudit.vcproj: MSB8012: $(TargetPath) ('C:\Users\UserName\Desktop\spy\spy\ComSpyAudit\.\XP32_DEBUG\ComSpyAudit.dll') does not match the Librarian's OutputFile property value '.\XP32_DEBUG\ComSpyAudit.dll' ('C:\Users\UserName\Desktop\spy\spy\XP32_DEBUG\ComSpyAudit.dll') in project configuration 'Unicode Debug|Win32'. This may cause your project to build incorrectly. To correct this, please make sure that $(TargetPath) property value matches the value specified in %(Lib.OutputFile).
 ```
 
-Projeleri yükseltme sırasında sık sık sorunlardan biri olan **bağlayıcı OutputFile** Proje Özellikleri iletişim kutusunda ayar gözden geçirilmesi gerekebilir. Standart olmayan bir değere ayarlarsanız Visual Studio 2010'dan önceki projelerde OutputFile, sorun otomatik dönüştürme Sihirbazı'nı içeren bir ayardır. Bu durumda, Çıkış dosyalarını yollarını standart olmayan bir klasör, XP32_DEBUG ayarlandı. Bu hata hakkında daha fazla bilgi için biz consulted bir [blog gönderisi](http://blogs.msdn.com/b/vcblog/archive/2010/03/02/visual-studio-2010-c-project-upgrade-guide.aspx) vcbuild değişiklik MSBuild, önemli bir değişiklik söz konusu yükseltme olan Visual Studio 2010 proje yükseltme, ilgili. Bu bilgiler göre varsayılan değer için **çıkış dosyası** yeni bir proje oluşturduğunuzda ayardır `$(OutDir)$(TargetName)$(TargetExt)`, ancak doğrulamak, dönüştürülen projelerde mümkün olmadığından, bu dönüştürme sırasında ayarlanmamış her şeyin doğru mu? Bununla birlikte, şimdi, OutputFile için yerleştirmeyi deneyin ve çalışıp çalışmadığına bakabilirsiniz.  Biz hareket edecek şekilde bunu, yapar. Standart olmayan bir çıkış klasörü kullanılarak hiçbir belirli bir neden varsa, standart konumu kullanmanızı öneririz. Bu durumda, taşıma ve yükseltme işlemi sırasında çıkış konumu standart dışı olarak bırakmak seçtik; `$(OutDir)` XP32_DEBUG klasörüne çözümler **hata ayıklama** yapılandırma ve ReleaseU klasörünü **yayın** yapılandırma.
+Projeleri yükseltme sırasında sık sık sorunlardan biri olan **bağlayıcı OutputFile** Proje Özellikleri iletişim kutusunda ayar gözden geçirilmesi gerekebilir. Standart olmayan bir değere ayarlarsanız Visual Studio 2010'dan önceki projelerde OutputFile, sorun otomatik dönüştürme Sihirbazı'nı içeren bir ayardır. Bu durumda, Çıkış dosyalarını yollarını standart olmayan bir klasör, XP32_DEBUG ayarlandı. Bu hata hakkında daha fazla bilgi için biz consulted bir [blog gönderisi](https://devblogs.microsoft.com/cppblog/visual-studio-2010-c-project-upgrade-guide/) vcbuild değişiklik MSBuild, önemli bir değişiklik söz konusu yükseltme olan Visual Studio 2010 proje yükseltme, ilgili. Bu bilgiler göre varsayılan değer için **çıkış dosyası** yeni bir proje oluşturduğunuzda ayardır `$(OutDir)$(TargetName)$(TargetExt)`, ancak doğrulamak, dönüştürülen projelerde mümkün olmadığından, bu dönüştürme sırasında ayarlanmamış her şeyin doğru mu? Bununla birlikte, şimdi, OutputFile için yerleştirmeyi deneyin ve çalışıp çalışmadığına bakabilirsiniz.  Biz hareket edecek şekilde bunu, yapar. Standart olmayan bir çıkış klasörü kullanılarak hiçbir belirli bir neden varsa, standart konumu kullanmanızı öneririz. Bu durumda, taşıma ve yükseltme işlemi sırasında çıkış konumu standart dışı olarak bırakmak seçtik; `$(OutDir)` XP32_DEBUG klasörüne çözümler **hata ayıklama** yapılandırma ve ReleaseU klasörünü **yayın** yapılandırma.
 
 ### <a name="step-2-getting-it-to-build"></a>Adım 2. Derleme için alma
 Taşınmasını proje oluşturma, hataları ve Uyarıları birkaç oluşur.

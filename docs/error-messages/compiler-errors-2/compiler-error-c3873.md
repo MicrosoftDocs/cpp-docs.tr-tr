@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3873
 ms.assetid: e68fd3be-2391-492b-ac3f-d2428901b2e9
-ms.openlocfilehash: eb2a6935073c3b4a2b9eb3d9b099b372cfa34303
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: ca70af12ef3223c8c5950f0fa98b1c63a2dd3a4c
+ms.sourcegitcommit: 28eae422049ac3381c6b1206664455dbb56cbfb6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62385647"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66450827"
 ---
 # <a name="compiler-error-c3873"></a>Derleyici Hatası C3873
 
@@ -19,7 +19,7 @@ ms.locfileid: "62385647"
 
 C++ Derleyici C ++ 11 standart bir tanımlayıcıda izin verilen karakterleri izler. Bir tanımlayıcı yalnızca karakterler ve evrensel karakter adları belirli aralıklarına izin verilir. Bir tanımlayıcının ilk karakteri ek kısıtlamalar. Daha fazla bilgi ve izin verilen karakter ve evrensel karakter adı aralıkları listesi için bkz: [tanımlayıcıları](../../cpp/identifiers-cpp.md).
 
-Bir tanımlayıcı izin verilen karakter aralığı daha az kısıtlayıcı olduğunda C + derleniyor +/ CLI kodu. / CLR ile derlenmiş kodda tanımlayıcıları izlemelidir [standart ECMA-335: Ortak dil altyapısı (CLI)](http://www.ecma-international.org/publications/standards/Ecma-335.htm).
+Bir tanımlayıcı izin verilen karakter aralığı daha az kısıtlayıcı olduğunda C + derleniyor +/ CLI kodu. / CLR ile derlenmiş kodda tanımlayıcıları izlemelidir [standart ECMA-335: Ortak dil altyapısı (CLI)](https://www.ecma-international.org/publications/standards/Ecma-335.htm).
 
 Aşağıdaki örnek, C3873 oluşturur:
 

@@ -21,12 +21,12 @@ helpviewer_keywords:
 - Gv compiler option [C++]
 - /Gr compiler option [C++]
 ms.assetid: fd3110cb-2d77-49f2-99cf-a03f9ead00a3
-ms.openlocfilehash: 4e3da750b174fa92e28c1d0d5a8cbc035738ee51
-ms.sourcegitcommit: a10c9390413978d36b8096b684d5ed4cf1553bc8
+ms.openlocfilehash: 72d65ce7471ed047ab8347a45c58a6b8a9f39a7a
+ms.sourcegitcommit: 28eae422049ac3381c6b1206664455dbb56cbfb6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65837285"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66450852"
 ---
 # <a name="gd-gr-gv-gz-calling-convention"></a>/Gd, /Gr, /Gv, /Gz (Çağırma Kuralı)
 
@@ -47,7 +47,7 @@ Bu seçenekler çağıran işlevin veya çağrılan işlevin çağrının sonund
 
 **/GZ** belirtir `__stdcall` C++ üye işlevleri hariç tüm işlevler için çağırma kuralı, İşlevler adlı `main`ve işaretli işlevler `__cdecl`, `__fastcall`, veya `__vectorcall`. Tüm `__stdcall` işlevleri prototiplere sahip olmalıdır. Bu çağırma kuralı yalnızca x86 hedefleyen derleyicilerde kullanılabilir ve diğer mimarileri hedefleyen derleyiciler tarafından göz ardı edilir.
 
-**/GV** belirtir `__vectorcall` C++ üye işlevleri hariç tüm işlevler için çağırma kuralı, main olarak adlandırılan işlevler içeren işlevler bir `vararg` bağımsız değişken listesi veya çakışan ile işaretlenen işlevler `__cdecl`, `__stdcall`, veya `__fastcall` özniteliği. Bu çağırma kuralı yalnızca/arch: SSE2 desteği x86 ve x64 mimarilerde ve üzerinde kullanılabilir ve ARM mimarisini hedefleyen derleyiciler tarafından göz ardı edilir.
+**/GV** belirtir `__vectorcall` hariç tüm işlevler çağırma kuralını C++ üye işlevleri, İşlevler adlı `main`, içeren işlevler bir `vararg` bağımsız değişken listesi veya çakışan ile işaretlenen İşlevler `__cdecl`, `__stdcall`, veya `__fastcall` özniteliği. Bu çağırma kuralı yalnızca/arch: SSE2 desteği x86 ve x64 mimarilerde ve üzerinde kullanılabilir ve ARM mimarisini hedefleyen derleyiciler tarafından göz ardı edilir.
 
 Değişken sayıda bağımsız değişkenler almayan işlevleri işaretlenmelidir `__cdecl`.
 
@@ -75,7 +75,7 @@ Bazı bir `__fastcall` işlev bağımsız yazmaçlara geçirilir (x86 için işl
 > [!NOTE]
 > Kullanırken dikkatli olun `__fastcall` satır içi derleme dilinde yazılmış bir işlev çağırma kuralını. Yazmaçların kullanımı derleyicinin kullanımıyla çakışabilir.
 
-C'de, `__fastcall` kuralı kullanan bir işlev adı adlandırma öncesinde bir at işareti (**\@**) işlev bağımsız değişkenlerinin bayt cinsinden boyutu ardından. Durum çevirisi yok gerçekleştirilir. Derleyici, bu şablon yönelik adlandırma kuralını kullanır:
+C'de, `__fastcall` kuralı kullanan bir işlev adı adlandırma öncesinde bir at işareti ( **\@** ) işlev bağımsız değişkenlerinin bayt cinsinden boyutu ardından. Durum çevirisi yok gerçekleştirilir. Derleyici, bu şablon yönelik adlandırma kuralını kullanır:
 
 `@function_name@number`
 
@@ -85,7 +85,7 @@ Kullanırken `__fastcall` dosyalarını adlandırma kuralını kullanın. Aksi t
 
 A `__stdcall` işlevinin bağımsız değişkenleri sağdan sola yığın itilir ve çağrılan işlev döndürülmeden önce yığından bu bağımsız yığından açar.
 
-C'de, `__stdcall` kuralı kullanan bir işlev adı adlandırma öncesinde bir alt çizgi (**\_**) ve ardından bir at işareti (**\@**) ve işlevin boyutu bayt cinsinden bağımsız değişkenler. Gerçekleşen durum çevirisi yok. Derleyici, bu şablon yönelik adlandırma kuralını kullanır:
+C'de, `__stdcall` kuralı kullanan bir işlev adı adlandırma öncesinde bir alt çizgi ( **\_** ) ve ardından bir at işareti ( **\@** ) ve işlevin boyutu bayt cinsinden bağımsız değişkenler. Gerçekleşen durum çevirisi yok. Derleyici, bu şablon yönelik adlandırma kuralını kullanır:
 
 `_functionname@number`
 
@@ -93,7 +93,7 @@ C'de, `__stdcall` kuralı kullanan bir işlev adı adlandırma öncesinde bir al
 
 A `__vectorcall` işlevinin tamsayı değişkenleri (x x86) iki veya dört (x x64) kullanılarak değerle geçirilir tamsayı kaydeder ve en fazla altı XMM için kayan nokta ve vektör değerleri ve geri Kalanlar yığın üzerinde sağdan sola. Çağrılan işlev, döndürülmeden önce yığını temizler. XMM0'vektör ve kayan nokta dönüş değerleri döndürülür.
 
-C'de, `__vectorcall` adlandırma kuralı iki et işareti işlevi adından kullanır (**\@\@**) ve işlev bağımsız değişkenlerinin bayt cinsinden boyutu. Gerçekleşen durum çevirisi yok. Derleyici, bu şablon yönelik adlandırma kuralını kullanır:
+C'de, `__vectorcall` adlandırma kuralı iki et işareti işlevi adından kullanır ( **\@\@** ) ve işlev bağımsız değişkenlerinin bayt cinsinden boyutu. Gerçekleşen durum çevirisi yok. Derleyici, bu şablon yönelik adlandırma kuralını kullanır:
 
 `functionname@@number`
 
@@ -101,7 +101,7 @@ C'de, `__vectorcall` adlandırma kuralı iki et işareti işlevi adından kullan
 
 1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
 
-1. Seçin **C/C++** > **Gelişmiş** özellik sayfası.
+1. Seçin **C/C++**  > **Gelişmiş** özellik sayfası.
 
 1. Değiştirme **çağırma kuralı** özelliği.
 

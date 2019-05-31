@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - LNK2001
 ms.assetid: dc1cf267-c984-486c-abd2-fd07c799f7ef
-ms.openlocfilehash: 824fa9108e6322b1bcf77d6c28c7fb843b743833
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 916c37e3283f40ff5ded865a573ff45839de6e2a
+ms.sourcegitcommit: 28eae422049ac3381c6b1206664455dbb56cbfb6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62161023"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66449623"
 ---
 # <a name="linker-tools-error-lnk2001"></a>Bağlayıcı Araçları Hatası LNK2001
 
@@ -71,7 +71,7 @@ Bu hata, kodunuzu kitaplığa bir sürümünden bir sembole başvuruyor, ancak b
 
 Şu an için bir standart olan [C++ adlandırma](../../error-messages/tool-errors/name-decoration.md) derleyici satıcılar veya bir derleyicinin farklı sürümleri arasında bile. Bu nedenle, diğer derleyicilerle derlenmiş nesne dosyaları bağlantılandırma değil aynı adlandırma düzeni oluşturmak ve bu nedenle hatası LNK2001 neden.
 
-[Karıştırma satır içi hem de satır içi derleme seçenekleri](../../error-messages/tool-errors/function-inlining-problems.md) farklı modülleri LNK2001 neden olabilir. Bir C++ Kitaplığı satır içi işlev açık olarak oluşturulursa (**/Ob1** veya **/ob2**) ancak işlevlerini açıklayan ilgili başlık dosyası inlining'i kapalı (hiçbir `inline` anahtar sözcüğü), bu hata gerçekleşir. Bu sorunu gidermek için işlevleri tanımlayın `inline` üstbilgi dosyasında diğer kaynak dosyaları içerir.
+[Karıştırma satır içi hem de satır içi derleme seçenekleri](../../error-messages/tool-errors/function-inlining-problems.md) farklı modülleri LNK2001 neden olabilir. Bir C++ Kitaplığı satır içi işlev açık olarak oluşturulursa ( **/Ob1** veya **/ob2**) ancak işlevlerini açıklayan ilgili başlık dosyası inlining'i kapalı (hiçbir `inline` anahtar sözcüğü), bu hata gerçekleşir. Bu sorunu gidermek için işlevleri tanımlayın `inline` üstbilgi dosyasında diğer kaynak dosyaları içerir.
 
 Kullanırsanız `#pragma inline_depth` derleyici yönergesi emin olduğunuz bir [değeri 2 veya daha fazla küme](../../error-messages/tool-errors/function-inlining-problems.md)ve ayrıca kullandığınızdan emin olun [/Ob1](../../build/reference/ob-inline-function-expansion.md) veya [/ob2](../../build/reference/ob-inline-function-expansion.md) derleyici seçeneği.
 
@@ -101,5 +101,5 @@ Bazı durumlarda, bağlayıcı, yalnızca bir sembol için düzenlenmiş adı bi
 
 ## <a name="additional-resources"></a>Ek kaynaklar
 
-Stack Overflow soru LNK2001 olası nedenleri ve çözümleri hakkında daha fazla bilgi için bkz. [tanımlanmamış başvuru/çözümlenmemiş dış sembol hata nedir ve nasıl düzeltirim bunu?](http://stackoverflow.com/q/12573816/2002113).
+Stack Overflow soru LNK2001 olası nedenleri ve çözümleri hakkında daha fazla bilgi için bkz. [tanımlanmamış başvuru/çözümlenmemiş dış sembol hata nedir ve nasıl düzeltirim bunu?](https://stackoverflow.com/q/12573816/2002113).
 

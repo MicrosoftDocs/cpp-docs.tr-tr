@@ -16,12 +16,12 @@ helpviewer_keywords:
 - Internet content [MFC]
 - WinInet classes [MFC]
 ms.assetid: 6df2dfd0-6e3f-4587-9d01-2a32f00f8a6f
-ms.openlocfilehash: 814e63272058200850424e9d5355637111527e1c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: eee045e198f61c088e302c40deb2de406adab428
+ms.sourcegitcommit: 28eae422049ac3381c6b1206664455dbb56cbfb6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62239139"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66449743"
 ---
 # <a name="mfc-internet-programming-basics"></a>MFC Internet Programlama Temelleri
 
@@ -70,11 +70,11 @@ MFC Internet programlama destekleyen sınıflar sağlar. Kullanabileceğiniz [CO
 
 ##  <a name="_core_web_sites_for_more_information"></a> Daha fazla bilgi için Web siteleri
 
-Microsoft Internet teknolojisi hakkında ek bilgi için bkz: [Microsoft Developer Network (MSDN)](http://go.microsoft.com/fwlink/p/?linkid=56322) Web sitesi. (Bağlantılar değiştirilebilir.)
+Microsoft Internet teknolojisi hakkında ek bilgi için bkz: [Microsoft Developer Network (MSDN)](https://go.microsoft.com/fwlink/p/?linkid=56322) Web sitesi. (Bağlantılar değiştirilebilir.)
 
 Bu Web sitesi geliştiricileri için Microsoft geliştirme araçları ve teknolojileri ve güncel ve gelecek konferanslarda hakkında öne çıkan Haberler kullanma hakkında bilgi içerir. Bu sayfadan XML Geliştirici merkezleri ve .NET dahil olmak üzere birçok ilgili Geliştirici sitesi atlayabilirsiniz. Beta SDK'lar ve örnekler de indirebilirsiniz.
 
-[World Wide Web Consortium (W3C)](http://go.microsoft.com/fwlink/p/?linkid=37125) HTML, HTTP, CGI ve diğer World Wide Web teknolojileri özellikleri yayımlar.
+[World Wide Web Consortium (W3C)](https://go.microsoft.com/fwlink/p/?linkid=37125) HTML, HTTP, CGI ve diğer World Wide Web teknolojileri özellikleri yayımlar.
 
 ##  <a name="_core_more_internet_help"></a> Daha fazla Internet Yardımı
 

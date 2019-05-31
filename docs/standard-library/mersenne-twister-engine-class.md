@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - mersenne_twister_engine class
 ms.assetid: 7ee968fa-a1cc-450f-890f-7305de062685
-ms.openlocfilehash: c0f30eacb308da61064a0383a6433b7127032a3e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 9949d1cab5a97b30df0b156289dff2dfbe15d851
+ms.sourcegitcommit: 28eae422049ac3381c6b1206664455dbb56cbfb6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62410986"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66449661"
 ---
 # <a name="mersennetwisterengine-class"></a>mersenne_twister_engine Sınıfı
 
@@ -99,7 +99,7 @@ typedef mersenne_twister_engine<unsigned long long, 64, 312, 156,
     43, 6364136223846793005ULL> mt19937_64;
 ```
 
-Mersenne bükücü algoritmasına hakkında ayrıntılı bilgi için bkz. Wikipedia makalesi [Mersenne bükücü](http://go.microsoft.com/fwlink/p/?linkid=402356).
+Mersenne bükücü algoritmasına hakkında ayrıntılı bilgi için bkz. Wikipedia makalesi [Mersenne bükücü](https://go.microsoft.com/fwlink/p/?linkid=402356).
 
 ## <a name="example"></a>Örnek
 

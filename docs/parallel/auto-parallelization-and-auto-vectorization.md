@@ -2,12 +2,12 @@
 title: Otomatik Paralelleştirme ve Otomatik Vektörleştirme
 ms.date: 11/04/2016
 ms.assetid: ec71583a-287b-4599-8767-1d255e080fe3
-ms.openlocfilehash: 018289bc9499aee8d1739ebeed0c1cb847769a08
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 6ff908d1c7d45c8f757b8efe29f4f392102dc61d
+ms.sourcegitcommit: 28eae422049ac3381c6b1206664455dbb56cbfb6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62236705"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66450243"
 ---
 # <a name="auto-parallelization-and-auto-vectorization"></a>Otomatik Paralelleştirme ve Otomatik Vektörleştirme
 
@@ -107,12 +107,12 @@ Otomatik paralel hale getirici ile belirttiğiniz [/Qvec-report (otomatik vektö
 
 Neden kodları ve iletiler hakkında daha fazla bilgi için bkz. [vektör yapıcı ve paralel hale getirici iletileri](../error-messages/tool-errors/vectorizer-and-parallelizer-messages.md).
 
-Vektör hale getirici uygulamada nasıl çalıştığını gösteren bir örnek için bkz [proje Austin Kısım 2 / 6: Curling sayfası](http://blogs.msdn.com/b/vcblog/archive/2012/09/27/10348494.aspx)
+Vektör hale getirici uygulamada nasıl çalıştığını gösteren bir örnek için bkz [proje Austin Kısım 2 / 6: Curling sayfası](https://devblogs.microsoft.com/cppblog/project-austin-part-2-of-6-page-curling/)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [loop](../preprocessor/loop.md)<br/>
-[Yerel kodda paralel programlama](http://go.microsoft.com/fwlink/p/?linkid=263662)<br/>
+[Yerel kodda paralel programlama](https://go.microsoft.com/fwlink/p/?linkid=263662)<br/>
 [/Qpar (Otomatik Paralel Hale Getirici)](../build/reference/qpar-auto-parallelizer.md)<br/>
 [/Qpar-report (Otomatik Paralel Hale Getirici Raporlama Düzeyi)](../build/reference/qpar-report-auto-parallelizer-reporting-level.md)<br/>
 [/Qvec-report (Otomatik Vektör Hale Getirici Raporlama Düzeyi)](../build/reference/qvec-report-auto-vectorizer-reporting-level.md)<br/>

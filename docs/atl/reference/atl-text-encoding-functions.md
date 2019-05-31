@@ -25,12 +25,12 @@ f1_keywords:
 - atlenc/ATL::UUEncode
 - atlenc/ATL::UUEncodeGetRequiredLength
 ms.assetid: 2ae1648b-2b87-4112-92aa-0069fcfd23da
-ms.openlocfilehash: 13c521bae6790a030212c4a8edac460c960ecfc0
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 1e3e44e99e6f3a53a930ed5b3ac1f7cd5ae23063
+ms.sourcegitcommit: 28eae422049ac3381c6b1206664455dbb56cbfb6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62247870"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66449565"
 ---
 # <a name="atl-text-encoding-functions"></a>ATL metin kodlama işlevleri
 
@@ -295,7 +295,7 @@ Başarılı olduğunda TRUE döndürür başarısız olduğunda FALSE.
 
 ### <a name="remarks"></a>Açıklamalar
 
-"B" kodlama düzeni RFC 2047 açıklanan ([http://www.ietf.org/rfc/rfc2047.txt](http://www.ietf.org/rfc/rfc2047.txt)).
+"B" kodlama düzeni RFC 2047 açıklanan ([https://www.ietf.org/rfc/rfc2047.txt](https://www.ietf.org/rfc/rfc2047.txt)).
 
 ## <a name="bencodegetrequiredlength"></a> BEncodeGetRequiredLength
 
@@ -319,7 +319,7 @@ Kodlanmış veri tutabilen bir arabellek için gereken karakter sayısı *nSrcLe
 
 ### <a name="remarks"></a>Açıklamalar
 
-"B" kodlama düzeni RFC 2047 açıklanan ([http://www.ietf.org/rfc/rfc2047.txt](http://www.ietf.org/rfc/rfc2047.txt)).
+"B" kodlama düzeni RFC 2047 açıklanan ([https://www.ietf.org/rfc/rfc2047.txt](https://www.ietf.org/rfc/rfc2047.txt)).
 
 ## <a name="escapexml"></a> EscapeXML
 
@@ -447,7 +447,7 @@ Başarılı olduğunda TRUE döndürür başarısız olduğunda FALSE.
 
 ### <a name="remarks"></a>Açıklamalar
 
-"Q" kodlama düzeni RFC 2047 açıklanan ([http://www.ietf.org/rfc/rfc2047.txt](http://www.ietf.org/rfc/rfc2047.txt)).
+"Q" kodlama düzeni RFC 2047 açıklanan ([https://www.ietf.org/rfc/rfc2047.txt](https://www.ietf.org/rfc/rfc2047.txt)).
 
 ## <a name="qencodegetrequiredlength"></a> QEncodeGetRequiredLength
 
@@ -471,7 +471,7 @@ Kodlanmış veri tutabilen bir arabellek için gereken karakter sayısı *nSrcLe
 
 ### <a name="remarks"></a>Açıklamalar
 
-"Q" kodlama düzeni RFC 2047 açıklanan ([http://www.ietf.org/rfc/rfc2047.txt](http://www.ietf.org/rfc/rfc2047.txt)).
+"Q" kodlama düzeni RFC 2047 açıklanan ([https://www.ietf.org/rfc/rfc2047.txt](https://www.ietf.org/rfc/rfc2047.txt)).
 
 ## <a name="qpdecode"></a> QPDecode
 
@@ -509,7 +509,7 @@ Başarılı olduğunda TRUE döndürür başarısız olduğunda FALSE.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Sınırlandırılmış Yazdırılabilir kodlama düzenini RFC 2045 açıklanan ([http://www.ietf.org/rfc/rfc2045.txt](http://www.ietf.org/rfc/rfc2045.txt)).
+Sınırlandırılmış Yazdırılabilir kodlama düzenini RFC 2045 açıklanan ([https://www.ietf.org/rfc/rfc2045.txt](https://www.ietf.org/rfc/rfc2045.txt)).
 
 ## <a name="qpdecodegetrequiredlength"></a> QPDecodeGetRequiredLength
 
@@ -530,7 +530,7 @@ Kodu çözülen dize, tutabilen bir arabellek için gereken bayt sayısını *nS
 
 ### <a name="remarks"></a>Açıklamalar
 
-Sınırlandırılmış Yazdırılabilir kodlama düzenini RFC 2045 açıklanan ([http://www.ietf.org/rfc/rfc2045.txt](http://www.ietf.org/rfc/rfc2045.txt)).
+Sınırlandırılmış Yazdırılabilir kodlama düzenini RFC 2045 açıklanan ([https://www.ietf.org/rfc/rfc2045.txt](https://www.ietf.org/rfc/rfc2045.txt)).
 
 ## <a name="qpencode"></a> QPEncode
 
@@ -566,7 +566,7 @@ Dönüştürme nasıl gerçekleştirilecek açıklayan ATLSMTP_QPENCODE bayrakla
 
 - ATLSMTP_QPENCODE_TRAILING_SOFT ekler `=\r\n` kodlanmış dize.
 
-Sınırlandırılmış Yazdırılabilir kodlama düzenini açıklanan [RFC 2045](http://www.ietf.org/rfc/rfc2045.txt).
+Sınırlandırılmış Yazdırılabilir kodlama düzenini açıklanan [RFC 2045](https://www.ietf.org/rfc/rfc2045.txt).
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -574,7 +574,7 @@ Başarılı olduğunda TRUE döndürür başarısız olduğunda FALSE.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Sınırlandırılmış Yazdırılabilir kodlama düzenini RFC 2045 açıklanan ([http://www.ietf.org/rfc/rfc2045.txt](http://www.ietf.org/rfc/rfc2045.txt)).
+Sınırlandırılmış Yazdırılabilir kodlama düzenini RFC 2045 açıklanan ([https://www.ietf.org/rfc/rfc2045.txt](https://www.ietf.org/rfc/rfc2045.txt)).
 
 ## <a name="qpencodegetrequiredlength"></a> QPEncodeGetRequiredLength
 
@@ -595,7 +595,7 @@ Kodlanmış veri tutabilen bir arabellek için gereken karakter sayısı *nSrcLe
 
 ### <a name="remarks"></a>Açıklamalar
 
-Sınırlandırılmış Yazdırılabilir kodlama düzenini RFC 2045 açıklanan ([http://www.ietf.org/rfc/rfc2045.txt](http://www.ietf.org/rfc/rfc2045.txt)).
+Sınırlandırılmış Yazdırılabilir kodlama düzenini RFC 2045 açıklanan ([https://www.ietf.org/rfc/rfc2045.txt](https://www.ietf.org/rfc/rfc2045.txt)).
 
 ## <a name="uudecode"></a> UUDecode
 

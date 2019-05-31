@@ -818,12 +818,12 @@ helpviewer_keywords:
 - CWnd [MFC], WindowProc
 - CWnd [MFC], m_hWnd
 ms.assetid: 49a832ee-bc34-4126-88b3-bc1d9974f6c4
-ms.openlocfilehash: e88c375560c617e970c70adda245125ac8242ae4
-ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.openlocfilehash: fc92497c4d43238f9cf6aea7132afb8c8dc27fbd
+ms.sourcegitcommit: 28eae422049ac3381c6b1206664455dbb56cbfb6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65220347"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66451225"
 ---
 # <a name="cwnd-class"></a>CWnd sınıfı
 
@@ -1652,7 +1652,7 @@ void BringWindowToTop();
 
 Ayrıca, `BringWindowToTop` açılan, üst düzey ve MDI alt öğe pencerelerini etkinleştirir. `BringWindowToTop` Üye işlevi kullanılmalıdır kısmen veya tamamen engellediği herhangi bir pencereyi açığa çıkarmak için örtüşen pencerelerin.
 
-Bu işlev sadece Win32 çağırır [BringWindowToTop](/windows/desktop/api/winuser/nf-winuser-bringwindowtotop) işlevi. Çağrı [SetWindowPos](#setwindowpos) Z düzeninde bir pencerenin konumunu değiştirmek için işlevi. `BringWindowToTop` İşlevi bir üst düzey pencere yapmak için pencere stilini değişmez. Daha fazla bilgi için [HWND_TOP ile HWND_TOPMOST arasındaki fark nedir](http://blogs.msdn.com/b/oldnewthing/archive/2005/11/21/495246.aspx)
+Bu işlev sadece Win32 çağırır [BringWindowToTop](/windows/desktop/api/winuser/nf-winuser-bringwindowtotop) işlevi. Çağrı [SetWindowPos](#setwindowpos) Z düzeninde bir pencerenin konumunu değiştirmek için işlevi. `BringWindowToTop` İşlevi bir üst düzey pencere yapmak için pencere stilini değişmez. Daha fazla bilgi için [HWND_TOP ile HWND_TOPMOST arasındaki fark nedir](https://devblogs.microsoft.com/oldnewthing/?p=33263)
 
 ### <a name="example"></a>Örnek
 
@@ -2455,7 +2455,7 @@ Görüntülenecek dosyaların özniteliklerini belirtir. Bu, aşağıdaki değer
 
 `[drive:] [ [\u]directory[\idirectory]...\u] [filename]`
 
-Bu örnekte, *sürücü* bir sürücü harfi *dizin* geçerli dizin adıdır ve *filename* en az bir joker karakter içermesi gereken geçerli bir dosya adı. Joker karakterler soru işareti olan (**?**), herhangi bir karakter ve bir yıldız işareti eşleşme hangi anlamına gelir (<strong>\*</strong>), herhangi bir sayıda karakteri eşleştirmek anlamına gelir.
+Bu örnekte, *sürücü* bir sürücü harfi *dizin* geçerli dizin adıdır ve *filename* en az bir joker karakter içermesi gereken geçerli bir dosya adı. Joker karakterler soru işareti olan ( **?** ), herhangi bir karakter ve bir yıldız işareti eşleşme hangi anlamına gelir (<strong>\*</strong>), herhangi bir sayıda karakteri eşleştirmek anlamına gelir.
 
 İçin 0 uzunlukta bir dize belirtirseniz *lpPathSpec*, ya da yalnızca bir dizin adı belirtin, ancak herhangi bir dosya belirtimi içermez, dize değiştirilecek "\*.\*".
 
@@ -2523,7 +2523,7 @@ DOS görüntülenecek dosyaların dosya öznitelikleri belirtir. Bu, aşağıdak
 
 `[drive:] [ [\u]directory[\idirectory]...\u] [filename]`
 
-Bu örnekte, *sürücü* bir sürücü harfi *dizin* geçerli dizin adıdır ve *filename* en az bir joker karakter içermesi gereken geçerli bir dosya adı. Joker karakterler soru işareti olan (**?**), herhangi bir karakter ve bir yıldız işareti eşleşme hangi anlamına gelir (<strong>\*</strong>), herhangi bir sayıda karakter eşleşme hangi anlamına gelir.
+Bu örnekte, *sürücü* bir sürücü harfi *dizin* geçerli dizin adıdır ve *filename* en az bir joker karakter içermesi gereken geçerli bir dosya adı. Joker karakterler soru işareti olan ( **?** ), herhangi bir karakter ve bir yıldız işareti eşleşme hangi anlamına gelir (<strong>\*</strong>), herhangi bir sayıda karakter eşleşme hangi anlamına gelir.
 
 İçin sıfır uzunlukta bir dize belirtirseniz *lpPathSpec*, geçerli dizin kullanılır ve *lpPathSpec* değiştirilmeyecek. Yalnızca bir dizin adı belirtin, ancak herhangi bir dosya belirtimi içermez, dize değiştirilecek "\*".
 
@@ -9756,7 +9756,7 @@ IBM Geliştirilmiş 101 ve 102-tuşlu klavye için Gelişmiş sağ ALT ve sağ C
 
 ABD dışı için Sağ ALT tuşunu Gelişmiş 102-tuşlu klavye CTRL + ALT anahtar bileşimi gerçekleştirilir. Aşağıdaki iletilerini ve kullanıcı tuşuna basar ve bu anahtarı serbest sonucu oluşan çağrılarının dizisini gösterir:
 
-|Dizisi|Erişilen işlevi|Başarılı iletisi|
+|Sequence|Erişilen işlevi|Başarılı iletisi|
 |--------------|-----------------------|--------------------|
 |1.|[WM_KEYDOWN](#onkeydown)|VK_CONTROL|
 |2.|[WM_KEYDOWN](#onkeydown)|VK_MENU|

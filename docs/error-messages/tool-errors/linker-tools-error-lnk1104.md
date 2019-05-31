@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - LNK1104
 ms.assetid: 9ca6f929-0efc-4055-8354-3cf5b4e636dc
-ms.openlocfilehash: bc6305ab2e96496aa212004e186150d4a51cf3fc
-ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
+ms.openlocfilehash: fcd3c06ae2db5c43aacbf781800870a83d2d77c1
+ms.sourcegitcommit: 28eae422049ac3381c6b1206664455dbb56cbfb6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2019
-ms.locfileid: "65446975"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66451139"
 ---
 # <a name="linker-tools-error-lnk1104"></a>Bağlayıcı Araçları Hatası LNK1104
 
@@ -81,7 +81,7 @@ Tek tek kitaplıklarda belirttiğinizde **ek bağımlılıklar** özelliği doğ
 
 Bu hatayı görebilirsiniz, yolunu *filename* için 260 karakterden genişletir. Adlarını değiştirme veya gerekli dosyalara olan yolları kısaltmak için gerekirse dizin yapınızı yeniden düzenleyin.
 
-Dosya çok büyük olduğundan, bu hata oluşabilir. Daha fazla bir gigabayt boyutunda 32-bit bağlayıcı için sorunlara neden olabilir, kitaplıkları veya nesne dosyaları. Bu sorunun olası bir düzeltme 64-bit araç takımı kullanmaktır. Komut satırında nasıl yapılacağı hakkında daha fazla bilgi için bkz. [nasıl yapılır: Bir 64 Bit Visual C++ araç takımını komut satırında etkinleştirme](../../build/how-to-enable-a-64-bit-visual-cpp-toolset-on-the-command-line.md). IDE içinde bunun hakkında daha fazla bilgi için bkz: [64 bit derleyici ve araçlarla MSBuild kullanma](../../build/walkthrough-using-msbuild-to-create-a-visual-cpp-project.md#using-msbuild-to-build-your-project) ve Stack Overflow yazıya: [Visual Studio yerel amd64 araç zincirini kullanın yapma](http://stackoverflow.com/questions/19820718/how-to-make-visual-studio-use-the-native-amd64-toolchain/23793055).
+Dosya çok büyük olduğundan, bu hata oluşabilir. Daha fazla bir gigabayt boyutunda 32-bit bağlayıcı için sorunlara neden olabilir, kitaplıkları veya nesne dosyaları. Bu sorunun olası bir düzeltme 64-bit araç takımı kullanmaktır. Komut satırında nasıl yapılacağı hakkında daha fazla bilgi için bkz. [nasıl yapılır: Bir 64 Bit Visual C++ araç takımını komut satırında etkinleştirme](../../build/how-to-enable-a-64-bit-visual-cpp-toolset-on-the-command-line.md). IDE içinde bunun hakkında daha fazla bilgi için bkz: [64 bit derleyici ve araçlarla MSBuild kullanma](../../build/walkthrough-using-msbuild-to-create-a-visual-cpp-project.md#using-msbuild-to-build-your-project) ve Stack Overflow yazıya: [Visual Studio yerel amd64 araç zincirini kullanın yapma](https://stackoverflow.com/questions/19820718/how-to-make-visual-studio-use-the-native-amd64-toolchain/23793055).
 
 Yeterli dosya erişim iznine sahip değilse bu hata oluşabilir *filename*. Bu kitaplık dosyaları korumalı sistem dizinlerde erişmek için bir normal bir kullanıcı hesabı ve girişim kullanın veya kendi özgün izinleri olan diğer kullanıcıların kopyalanan dosya halinde gerçekleşebilir ayarlayın. Bu sorunu gidermek için dosyayı bir yazılabilir proje dizinine taşıyın. Dosya yazılabilir bir dizinde ancak erişilemez izinleri varsa bir yönetici komut istemi kullanın ve dosya sahipliğini takeown.exe komutu çalıştırın.
 

@@ -1,18 +1,19 @@
 ---
-title: Dize ve g-Ç biçimlendirme (Modern C++)
-ms.date: 11/04/2016
+title: Dize ve G/Ç Biçimlendirme (Modern C++)
+description: Modern, biçimlendirilmiş dize g/ç kullanılabilir seçenekleri C++.
+ms.date: 05/30/2019
 ms.topic: conceptual
 ms.assetid: 3954e8de-a59b-4175-89c9-4ee842ab89ed
-ms.openlocfilehash: c051a7d70042456d30bee0ebb2b362c5d05b8e37
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e22c745798109a2dbef82297c45256593823f806
+ms.sourcegitcommit: 28eae422049ac3381c6b1206664455dbb56cbfb6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62266926"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66450507"
 ---
 # <a name="string-and-io-formatting-modern-c"></a>Dize ve G/Ç Biçimlendirme (Modern C++)
 
-C++ [iostreams](../standard-library/iostream.md) biçimlendirilmiş dize g/ç yeteneğine sahiptir. Örneğin, aşağıdaki kod önce geçerli durumun kaydedilmesi ve daha sonra bir kez cout için durum biçimlendirme geçirilir, bu, yalnızca bir satır için değiştirilene kadar bu şekilde kalacağından yeniden ayarlama onaltılı çıkış için bir tamsayı biçimlendirmek için cout ayarlama işlemini gösterir kodu.
+C++[ \<iostream >](../standard-library/iostream.md) biçimlendirilmiş dize g/ç sınıfları, İşlevler ve işleçler destekler. Örneğin, aşağıdaki kod nasıl ayarlanacağını gösterir `cout` tamsayının onaltılık çıkış biçimlendirmek için. İlk olarak, çünkü biçim durum için bir kez geçirilir daha sonra sıfırlamak için geçerli durumunu kaydeder `cout`, değiştirilene kadar bu şekilde kalır. Yalnızca bir kod satırı için geçerli değildir.
 
 ```cpp
 #include <iostream>
@@ -38,17 +39,21 @@ int main()
 }
 ```
 
-Bu tamamen, çoğu durumda çok kullanışsız. Alternatif olarak, standart dışı olsa bile Boost C++ kitaplıklarından Boost.Format kullanabilirsiniz. Boost kitaplıklarını indirebileceğiniz [Boost](http://www.boost.org/) Web sitesi.
+Bu yaklaşım, tür kullanımı uyumlu ve genişletilebilir, ancak aynı zamanda karmaşık ve ayrıntılı.
 
-Boost.Format avantajlarından bazıları şunlardır:
+## <a name="alternative-format-options"></a>Diğer biçimlendirme seçenekleri
 
-- Güvenli: Tür açısından güvenlidir ve hatalar için bir özel durum oluşturur; Örneğin, çok az veya çok fazla öğe belirtimi.
+Alternatif olarak, kullandığınız `Boost.Format` Boost gelen C++ kitaplıklarını, standart dışı olsa bile. Boost kitaplıklarını indirebileceğiniz [Boost](https://www.boost.org/) Web sitesi.
+
+Bazı avantajları `Boost.Format` şunlardır:
+
+- Güvenli: Tür kullanımı uyumlu ve bir özel durum için hataları, örneğin, çok az veya çok fazla öğe belirtimi oluşturur.
 
 - Genişletilebilir: Yapılabilen herhangi bir tür için çalışır.
 
 - Kullanışlı: Standart Posix ve benzer biçim dizeleri.
 
-Boost.Format C++ üzerinde kurulmuş olmasına rağmen [iostreams](../standard-library/iostream-programming.md), güvenli ve Genişletilebilir olan, bunlar performans iyileştirme yapılmamıştır. Performansı en iyi, C göz önünde bulundurun [printf](../c-runtime-library/reference/printf-printf-l-wprintf-wprintf-l.md) ve [sprintf](../c-runtime-library/reference/sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md), hızlı ve kullanımı kolaydır. Ancak, bunlar genişletilebilir veya güvenlik açıklarına karşı güvenli değildir. (Güvenli sürümler var ancak bunlara küçük bir performans cezası uygulanmaz. Daha fazla bilgi için [printf_s, _printf_s_l, wprintf_s, _wprintf_s_l](../c-runtime-library/reference/printf-s-printf-s-l-wprintf-s-wprintf-s-l.md) ve [sprintf_s, _sprintf_s_l, swprintf_s, _swprintf_s_l](../c-runtime-library/reference/sprintf-s-sprintf-s-l-swprintf-s-swprintf-s-l.md)).
+Ancak `Boost.Format` üzerine kurulmuştur C++ [ \<iostream >](../standard-library/iostream-programming.md) güvenli ve genişletilebilir, özellikleri, bunlar olmayan performans için iyileştirilmiş. Performansı en iyi, C göz önünde bulundurun [printf](../c-runtime-library/reference/printf-printf-l-wprintf-wprintf-l.md) ve [sprintf](../c-runtime-library/reference/sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md), hızlı ve kullanımı kolaydır. Ancak, bunlar genişletilebilir veya güvenlik açıklarına karşı güvenli değildir. (Güvenli sürümler var ancak bunlara küçük bir performans cezası uygulanmaz. Daha fazla bilgi için [printf_s, _printf_s_l, wprintf_s, _wprintf_s_l](../c-runtime-library/reference/printf-s-printf-s-l-wprintf-s-wprintf-s-l.md) ve [sprintf_s, _sprintf_s_l, swprintf_s, _swprintf_s_l](../c-runtime-library/reference/sprintf-s-sprintf-s-l-swprintf-s-swprintf-s-l.md)).
 
 Aşağıdaki kod Boost biçimlendirme özelliklerinin bazılarını gösterir.
 

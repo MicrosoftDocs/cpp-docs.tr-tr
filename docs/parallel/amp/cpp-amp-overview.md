@@ -8,12 +8,12 @@ helpviewer_keywords:
 - C++ Accelerated Massive Parallelism, overview
 - C++ Accelerated Massive Parallelism
 ms.assetid: 9e593b06-6e3c-43e9-8bae-6d89efdd39fc
-ms.openlocfilehash: 258266768d3f456fb761a9d5a403a92c502dbe32
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 4098a1467b0f81b5f66a2e45a4bb2138e8c1c262
+ms.sourcegitcommit: 28eae422049ac3381c6b1206664455dbb56cbfb6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62349907"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66449953"
 ---
 # <a name="c-amp-overview"></a>C++ AMP'ye Genel Bakış
 
@@ -62,7 +62,7 @@ Kodun önemli bölümleri aşağıdaki gibidir:
 
 - Yineleme: İlk `for` döngüsü dizilerde öğelerin arasında dolaşmak için bir mekanizma sağlar. Toplamları hesaplamak için yürütmek istediğiniz kod ilk bulunan `for` blok.
 
-- Dizini: `idx` Değişkeni dizilerin tek tek öğelerine erişir.
+- Dizin: `idx` Değişkeni dizilerin tek tek öğelerine erişir.
 
 C++ AMP kullanarak, aşağıdaki kodu yerine yazabilirsiniz.
 
@@ -106,7 +106,7 @@ Aynı temel öğeler vardır, ancak C++ AMP yapıları kullanılır:
 
 - Yineleme: [Parallel_for_each işlevi (C++ AMP)](reference/concurrency-namespace-functions-amp.md#parallel_for_each) veri öğeleri boyunca yineleme için bir mekanizma sağlar veya *hesaplama alanı*. Bu örnekte, hesaplama alanı tarafından belirtilen `sum.extent`. Yürütmek istediğiniz kod bir lambda ifadesinde bulunan veya *çekirdek işlevi*. `restrict(amp)` Yalnızca C++ AMP'nin hızlandırabileceği C++ dilinin alt kullanıldığını gösterir.
 
-- Dizini: [İndex sınıfı](../../parallel/amp/reference/index-class.md) değişken `idx`, bir boyut sayısı eşleştirilecek derecesi ile bildirilen `array_view` nesne. Dizini kullanarak, tek tek öğelerine erişebilirsiniz `array_view` nesneleri.
+- Dizin: [İndex sınıfı](../../parallel/amp/reference/index-class.md) değişken `idx`, bir boyut sayısı eşleştirilecek derecesi ile bildirilen `array_view` nesne. Dizini kullanarak, tek tek öğelerine erişebilirsiniz `array_view` nesneleri.
 
 ## <a name="shaping-and-indexing-data-index-and-extent"></a>Veri şekillendirme ve dizinleme: dizin ve kapsam
 
@@ -431,7 +431,7 @@ for (int i = 0; i <4; i++) {
 
 ## <a name="math-libraries"></a>Matematik kitaplıkları
 
-C++ AMP, iki matematik kitaplığı içerir. Çift duyarlık Kitaplığı'nda [Concurrency::precise_math Namespace](../../parallel/amp/reference/concurrency-precise-math-namespace.md) çift duyarlıklı işlevler için destek sağlar. Donanımda çift duyarlık desteği yine de gereklidir tek duyarlıklı işlevler için de destek sağlar. İle uyumlu [C99 belirtimi (ISO/IEC 9899)](http://go.microsoft.com/fwlink/p/?linkid=225887). Hızlandırıcı tam çift duyarlık desteği sağlamalıdır. Değerini kontrol ederek mevcut olup olmadığını belirlemek [accelerator::supports_double_precision veri üyesi](reference/accelerator-class.md#supports_double_precision). Hızlı matematik kitaplığı, [Concurrency::fast_math Namespace](../../parallel/amp/reference/concurrency-fast-math-namespace.md), başka bir matematiksel işlevler kümesi içerir. Bu işlevler yalnızca Destek `float` işlenenler, daha çabuk yürütülürler ancak kitaplığındakiler kadar çift duyarlık matematik Kitaplığı'nda değildir. İşlevleri içerdiği \<amp_math.h > üstbilgi dosyasını ve tüm ile bildirilir `restrict(amp)`. İşlevler \<cmath > Üstbilgi dosyası her ikisini de kopyalayıp aktarılır `fast_math` ve `precise_math` ad alanları. **Kısıtlama** ayırt etmek için kullanılan anahtar sözcüğü \<cmath > sürümü ile C++ AMP sürüm. Aşağıdaki kodu kullanarak hızlı yöntemi hesaplama etki alanındaki her değerin 10 tabanında logaritmasını hesaplar.
+C++ AMP, iki matematik kitaplığı içerir. Çift duyarlık Kitaplığı'nda [Concurrency::precise_math Namespace](../../parallel/amp/reference/concurrency-precise-math-namespace.md) çift duyarlıklı işlevler için destek sağlar. Donanımda çift duyarlık desteği yine de gereklidir tek duyarlıklı işlevler için de destek sağlar. İle uyumlu [C99 belirtimi (ISO/IEC 9899)](https://go.microsoft.com/fwlink/p/?linkid=225887). Hızlandırıcı tam çift duyarlık desteği sağlamalıdır. Değerini kontrol ederek mevcut olup olmadığını belirlemek [accelerator::supports_double_precision veri üyesi](reference/accelerator-class.md#supports_double_precision). Hızlı matematik kitaplığı, [Concurrency::fast_math Namespace](../../parallel/amp/reference/concurrency-fast-math-namespace.md), başka bir matematiksel işlevler kümesi içerir. Bu işlevler yalnızca Destek `float` işlenenler, daha çabuk yürütülürler ancak kitaplığındakiler kadar çift duyarlık matematik Kitaplığı'nda değildir. İşlevleri içerdiği \<amp_math.h > üstbilgi dosyasını ve tüm ile bildirilir `restrict(amp)`. İşlevler \<cmath > Üstbilgi dosyası her ikisini de kopyalayıp aktarılır `fast_math` ve `precise_math` ad alanları. **Kısıtlama** ayırt etmek için kullanılan anahtar sözcüğü \<cmath > sürümü ile C++ AMP sürüm. Aşağıdaki kodu kullanarak hızlı yöntemi hesaplama etki alanındaki her değerin 10 tabanında logaritmasını hesaplar.
 
 ```cpp
 #include <amp.h>
@@ -473,13 +473,13 @@ Diğer C++ kitaplıkları gibi UWP uygulamalarında C++ AMP kullanabilirsiniz. B
 
 - [UWP Uygulamalarında C++ AMP Kullanma](../../parallel/amp/using-cpp-amp-in-windows-store-apps.md)
 
-- [İzlenecek yol: C++ uygulamasında temel bir Windows çalışma zamanı bileşeni oluşturma ve JavaScript'ten çağırma](http://go.microsoft.com/fwlink/p/?linkid=249077)
+- [İzlenecek yol: C++ uygulamasında temel bir Windows çalışma zamanı bileşeni oluşturma ve JavaScript'ten çağırma](https://go.microsoft.com/fwlink/p/?linkid=249077)
 
-- [Bing Haritalar seyahat iyileştirici, JavaScript ve C++'ta bir pencere Store uygulaması](http://go.microsoft.com/fwlink/p/?linkid=249078)
+- [Bing Haritalar seyahat iyileştirici, JavaScript ve C++'ta bir pencere Store uygulaması](https://go.microsoft.com/fwlink/p/?linkid=249078)
 
-- [C# kullanarak Windows çalışma zamanı C++ AMP kullanma](http://go.microsoft.com/fwlink/p/?linkid=249080)
+- [C# kullanarak Windows çalışma zamanı C++ AMP kullanma](https://go.microsoft.com/fwlink/p/?linkid=249080)
 
-- [C#, C++ AMP kullanma](http://go.microsoft.com/fwlink/p/?linkid=249081)
+- [C#, C++ AMP kullanma](https://go.microsoft.com/fwlink/p/?linkid=249081)
 
 - [Yönetilen Koddan Yerel İşlevleri Çağırma](../../dotnet/calling-native-functions-from-managed-code.md)
 
@@ -508,4 +508,4 @@ Eşzamanlılık görselleştiricisi C++ AMP kod performansını çözümlemek i�
 [C++ AMP (C++ Accelerated Massive Parallelism)](../../parallel/amp/cpp-amp-cpp-accelerated-massive-parallelism.md)<br/>
 [Lambda İfadesi Söz Dizimi](../../cpp/lambda-expression-syntax.md)<br/>
 [Başvuru (C++ AMP)](../../parallel/amp/reference/reference-cpp-amp.md)<br/>
-[Yerel kod Blog içinde paralel programlama](http://go.microsoft.com/fwlink/p/?linkid=238472)
+[Yerel kod Blog içinde paralel programlama](https://go.microsoft.com/fwlink/p/?linkid=238472)

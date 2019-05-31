@@ -6,12 +6,12 @@ helpviewer_keywords:
 - ConcRT (see Concurrency Runtime)
 - Concurrency Runtime
 ms.assetid: 874bc58f-8dce-483e-a3a1-4dcc9e52ed2c
-ms.openlocfilehash: 6f7b70dcbee639bdd44a195709bddde9e06dee21
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: fa64e2536fd1697e839f1b4921a290e1b7a30a35
+ms.sourcegitcommit: 28eae422049ac3381c6b1206664455dbb56cbfb6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62414015"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66449688"
 ---
 # <a name="concurrency-runtime"></a>Eşzamanlılık Çalışma Zamanı
 
@@ -63,7 +63,7 @@ Referans belgeleri için bkz. [başvuru](../../parallel/concrt/reference/referen
 |-|-|
 |[UWP Uygulamaları için C++ Uygulamasında Zaman Uyumsuz İşlemler Oluşturma](../../parallel/concrt/creating-asynchronous-operations-in-cpp-for-windows-store-apps.md)|Eşzamanlılık Çalışma zamanı bir UWP uygulamasında zaman uyumsuz işlemler oluşturmak için kullandığınız zaman akılda tutulması gereken önemli noktaları bazılarını açıklar.|
 |[İzlenecek yol: Görevleri ve XML HTTP İsteklerini Kullanarak Bağlanma](../../parallel/concrt/walkthrough-connecting-using-tasks-and-xml-http-requests.md)|PPL görevleri ile birleştirilecek gösterilmektedir `IXMLHTTPRequest2` ve `IXMLHTTPRequest2Callback` bir UWP uygulamasında bir web hizmetine HTTP GET ve POST istekleri göndermek için gereken arabirimler.|
-|[Windows çalışma zamanı uygulama örnekleri](http://code.msdn.microsoft.com/windowsapps)|İndirilebilir kod örneklerini ve demo içeren uygulamalar için Windows 8.x. C++ örnekleri UX duyarlı korumak için arka planda gibi verileri işlemek için PPL görevlerinin eşzamanlılık çalışma zamanı özellikleri kullanın.|
+|[Windows çalışma zamanı uygulama örnekleri](https://code.msdn.microsoft.com/windowsapps)|İndirilebilir kod örneklerini ve demo içeren uygulamalar için Windows 8.x. C++ örnekleri UX duyarlı korumak için arka planda gibi verileri işlemek için PPL görevlerinin eşzamanlılık çalışma zamanı özellikleri kullanın.|
 
 ## <a name="dataflow-programming-in-the-asynchronous-agents-library"></a>Zaman Uyumsuz Aracılar Kitaplığı'nda Veri Akışı Programlama
 
@@ -99,8 +99,8 @@ Referans belgeleri için bkz. [başvuru](../../parallel/concrt/reference/referen
 |||
 |-|-|
 |[Zaman uyumsuz programlama desenleri ve Hilo (C++ ve XAML kullanan Windows Store apps) içinde ipuçları](https://msdn.microsoft.com/library/windows/apps/jj160321.aspx)|Nasıl eşzamanlılık çalışma zamanı zaman uyumsuz işlemler Hilo, C++ ve XAML kullanarak bir Windows çalışma zamanı uygulaması uygulamak için kullandığımız öğrenin.|
-|[Yerel kod blog içinde paralel programlama](http://go.microsoft.com/fwlink/p/?linkid=183873)|Eşzamanlılık Çalışma zamanı içinde paralel programlama hakkında ek ayrıntılı blog makaleler sağlar.|
-|[C++ ve yerel kod forumdaki paralel bilgi işlem](http://go.microsoft.com/fwlink/p/?linkid=183874)|Eşzamanlılık Çalışma zamanı hakkında topluluk tartışmaları katılmasını sağlar.|
+|[Yerel kod blog içinde paralel programlama](https://go.microsoft.com/fwlink/p/?linkid=183873)|Eşzamanlılık Çalışma zamanı içinde paralel programlama hakkında ek ayrıntılı blog makaleler sağlar.|
+|[C++ ve yerel kod forumdaki paralel bilgi işlem](https://go.microsoft.com/fwlink/p/?linkid=183874)|Eşzamanlılık Çalışma zamanı hakkında topluluk tartışmaları katılmasını sağlar.|
 |[Paralel Programlama](/dotnet/standard/parallel-programming/index)|.NET Framework'teki kullanılabilir paralel programlama modeli hakkında size öğretir.|
 
 ## <a name="see-also"></a>Ayrıca bkz.

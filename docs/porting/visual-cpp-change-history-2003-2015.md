@@ -4,12 +4,12 @@ ms.date: 08/30/2017
 helpviewer_keywords:
 - breaking changes [C++]
 ms.assetid: b38385a9-a483-4de9-99a6-797488bc5110
-ms.openlocfilehash: a0a13748894880c076f8d32c9c74afde1752504c
-ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
+ms.openlocfilehash: f05656612e464395117e77c82fb9dc9eb2290e0e
+ms.sourcegitcommit: 28eae422049ac3381c6b1206664455dbb56cbfb6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2019
-ms.locfileid: "65448978"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66451279"
 ---
 # <a name="visual-c-change-history-2003---2015"></a>Visual C++ değişiklik geçmişi 2003-2015
 
@@ -409,7 +409,7 @@ Kod, önceki sürümlerinden yükselttiğinizde, Visual Studio 2015'te yapılan 
 
 Visual Studio 2015'te nasıl derleyici mevcut kaynak kodunuzu anlar derleyici uyumluluğu yapılan sürekli geliştirmeler bazen değiştirebilirsiniz. Sonuç olarak, derleme veya kodda, daha önce derlenmiş ve düzgün şekilde çalışması için olduğu görülüyor bile davranışsal farklılıklar sırasında yeni veya farklı hatalarla karşılaşabilirsiniz.
 
-Neyse ki, bu farklılıkları, kaynak kodunuzu çoğunu üzerinde çok az kayıpla veya hiç etkisi olur. Bu farklar ele almak için kaynak kodu veya başka değişiklikler gerektiğinde, düzeltmeler küçük ve rahatça olma eğilimindedir. Daha önce kabul edilebilir kaynak kodunun değiştirilmesi gerekebilir birçok örnekler ekledik *(önce)* ve bunları düzeltmeye yönelik düzeltmeler *(sonra)*.
+Neyse ki, bu farklılıkları, kaynak kodunuzu çoğunu üzerinde çok az kayıpla veya hiç etkisi olur. Bu farklar ele almak için kaynak kodu veya başka değişiklikler gerektiğinde, düzeltmeler küçük ve rahatça olma eğilimindedir. Daha önce kabul edilebilir kaynak kodunun değiştirilmesi gerekebilir birçok örnekler ekledik *(önce)* ve bunları düzeltmeye yönelik düzeltmeler *(sonra)* .
 
 Bu farklılıklar, kaynak kodu veya diğer derleme yapıtlarının etkileyebilir olsa da, bunların güncelleştirmelerini Visual Studio sürümleri arasında ikili uyumluluğu etkilemez. A *değişiklik* daha ciddi ve ikili uyumluluk, ancak bu tür yalnızca sonlarının Visual Studio sürümleri gibi önemli arasında Visual Studio 2013 ve Visual Studio arasında ikili uyumluluğu etkileyebilir 2015. Visual Studio 2015 ve Visual Studio 2013 arasında gerçekleşen bozucu değişiklikler hakkında daha fazla bilgi için bkz: [Visual Studio 2015 uyumluluk değişiklikleri](#VC_2015).
 
@@ -641,7 +641,7 @@ Bu farklılıklar, kaynak kodu veya diğer derleme yapıtlarının etkileyebilir
 
 - **Yerleştirme yeni ve Sil**
 
-   İçin bir değişiklik yapılmadığını **Sil** , C ++ 14 standart ile uyumluluk duruma getirmek için işleci. Standartlar değişiklik ayrıntılarını bulunabilir [C++ boyutlandırılmış ayırmayı kaldırma](http://isocpp.org/files/papers/n3778.html). Genel form değişiklikleri ekleme **Sil** boyutu parametresi alır. işleci. Operatör daha önce kullandıysanız olan değişiklik **Sil** aynı imzayla (karşılayacak şekilde bir **yerleştirme yeni** işleci), bir derleyici hatasına (gerçekleşen C2956, alırsınız Burada yeni yerleştirme kullanılmışsa, derleyici nerede çalışırsa uygun eşleşen tanımlamak için kod konumda olduğundan bir noktada **Sil** işleci).
+   İçin bir değişiklik yapılmadığını **Sil** , C ++ 14 standart ile uyumluluk duruma getirmek için işleci. Standartlar değişiklik ayrıntılarını bulunabilir [C++ boyutlandırılmış ayırmayı kaldırma](https://isocpp.org/files/papers/n3778.html). Genel form değişiklikleri ekleme **Sil** boyutu parametresi alır. işleci. Operatör daha önce kullandıysanız olan değişiklik **Sil** aynı imzayla (karşılayacak şekilde bir **yerleştirme yeni** işleci), bir derleyici hatasına (gerçekleşen C2956, alırsınız Burada yeni yerleştirme kullanılmışsa, derleyici nerede çalışırsa uygun eşleşen tanımlamak için kod konumda olduğundan bir noktada **Sil** işleci).
 
    İşlev `void operator delete(void *, size_t)` olduğu bir **yerleştirme silme** karşılık gelen işleci **yerleştirme yeni** işlevi `void * operator new(size_t, size_t)` C ++ 11'de. C ++ 14 boyutlandırılmış ayırmayı kaldırma ile artık bu silme işlev, bir *normal ayırmayı kaldırma işlevi* (genel **Sil** işleci). Standart, yeni bir yerleştirme kullanımını karşılık gelen bir delete işlevi arar ve bulduğu her zamanki ayırmayı kaldırma işlevi, programın hatalı oluşturulmuş olması gerekir.
 
@@ -1106,7 +1106,7 @@ Bu farklılıklar, kaynak kodu veya diğer derleme yapıtlarının etkileyebilir
 
 - **Dize sabit değeri bir sabit bir dizidir**
 
-   Aşağıdaki kod artık C2664 oluşturur: ' void f (void *)': 1 bağımsız değişkeninden dönüştürülemiyor ' const char (*) [2]' için ' void *'
+   Aşağıdaki kod artık C2664 oluşturur: ' void f (void *)': 1 bağımsız değişkeninden dönüştürülemiyor ' const char (* ) [2]' için ' void *'
 
     ```cpp
     void f(void *);

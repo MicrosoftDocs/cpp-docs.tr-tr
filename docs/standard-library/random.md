@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - random header
 ms.assetid: 60afc25c-b162-4811-97c1-1b65398d4c57
-ms.openlocfilehash: 5b246be02c860ede6691db1c4d21af7e6b4da26a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 3fd6272ebcb58d48cc943541f32d1195c3fab498
+ms.sourcegitcommit: 28eae422049ac3381c6b1206664455dbb56cbfb6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62369819"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66450796"
 ---
 # <a name="ltrandomgt"></a>&lt;rastgele&gt;
 
@@ -49,7 +49,7 @@ Kullanırken akılda tutulması gereken bazı ipuçları \<rastgele >:
 
 - Çoğu uygulama için en kullanışlı eşleştirme olduğu `mt19937` ile altyapısını `uniform_int_distribution`gösterildiği [kod örneği](#code) bu makalenin ilerleyen bölümlerinde.
 
-Birçok seçenek içinden seçebileceğiniz \<rastgele > üst bilgi ve bunların hiçbirine eski C çalışma zamanı işleve tercih `rand()`. Sorun nedir hakkında bilgi için `rand()` ve nasıl \<rastgele > Bu eksiklikleri adresleri bkz [bu videoyu](http://go.microsoft.com/fwlink/p/?linkid=397615).
+Birçok seçenek içinden seçebileceğiniz \<rastgele > üst bilgi ve bunların hiçbirine eski C çalışma zamanı işleve tercih `rand()`. Sorun nedir hakkında bilgi için `rand()` ve nasıl \<rastgele > Bu eksiklikleri adresleri bkz [bu videoyu](https://go.microsoft.com/fwlink/p/?linkid=397615).
 
 ## <a name="code"></a> Örnekleri
 
@@ -500,7 +500,7 @@ Visual Studio'da iki çok kullanışlı URNGs vardır —`mt19937` ve `random_de
 
 <sup>* İle bilinen bir çekirdek sağlandığında.</sup>
 
-ISO C++ standardı gerektirmez ancak `random_device` şifreleme bakımından güvenli olacak şekilde uygulanan şifreli olarak olmasını Visual Studio'da güvenli. ("Şifreleme bakımından güvenli" terimi garantisi anlamına gelmez, ancak en az bir entropi düzeyine başvuruyor — ve bu nedenle, öngörülebilirlik düzeyini — belirli bir rastgele seçim algoritması sağlar. Daha fazla bilgi için bkz. Wikipedia makalesi [şifreleme bakımından güvenli sözde rastgele sayı üretici](http://go.microsoft.com/fwlink/p/?linkid=398017).) ISO C++ standardı bu gerektirmediğinden, diğer platformlar uygulayabilir `random_device` basit sözde rastgele sayı üreticisinin (şifreleme bakımından güvenli) ve yalnızca Mayıs başka bir oluşturucu için bir çekirdek kaynağı olarak uygun olabilir. Kullanırken bu platformlar için belgelere bakın `random_device` platformlar arası kod.
+ISO C++ standardı gerektirmez ancak `random_device` şifreleme bakımından güvenli olacak şekilde uygulanan şifreli olarak olmasını Visual Studio'da güvenli. ("Şifreleme bakımından güvenli" terimi garantisi anlamına gelmez, ancak en az bir entropi düzeyine başvuruyor — ve bu nedenle, öngörülebilirlik düzeyini — belirli bir rastgele seçim algoritması sağlar. Daha fazla bilgi için bkz. Wikipedia makalesi [şifreleme bakımından güvenli sözde rastgele sayı üretici](https://go.microsoft.com/fwlink/p/?linkid=398017).) ISO C++ standardı bu gerektirmediğinden, diğer platformlar uygulayabilir `random_device` basit sözde rastgele sayı üreticisinin (şifreleme bakımından güvenli) ve yalnızca Mayıs başka bir oluşturucu için bir çekirdek kaynağı olarak uygun olabilir. Kullanırken bu platformlar için belgelere bakın `random_device` platformlar arası kod.
 
 Tanımına göre `random_device` sonuçları tekrarlanabilir olmayan ve diğer URNGs göre önemli ölçüde daha yavaş çalışabilir yan etkisi olan. Şifreleme bakımından olması gerekmez, çoğu uygulama güvenlidir `mt19937` veya benzer bir altyapısı çağrısıyla temel isteyebilirsiniz ancak `random_device`gösterildiği [kod örneği](#code).
 

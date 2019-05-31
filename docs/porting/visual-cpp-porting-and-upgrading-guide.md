@@ -2,12 +2,12 @@
 title: Visual C++ taşıma ve yükseltme Kılavuzu
 ms.date: 09/18/2018
 ms.assetid: f5fbcc3d-aa72-41a6-ad9a-a706af2166fb
-ms.openlocfilehash: 058972ec4ad44fd4ec9fa2dad926916846d47adf
-ms.sourcegitcommit: fc1de63a39f7fcbfe2234e3f372b5e1c6a286087
+ms.openlocfilehash: 5659ca362204c62ab8fb21a74dccf8e29f33912c
+ms.sourcegitcommit: 28eae422049ac3381c6b1206664455dbb56cbfb6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65708047"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66450382"
 ---
 # <a name="visual-c-porting-and-upgrading-guide"></a>Visual C++ taşıma ve yükseltme Kılavuzu
 
@@ -53,7 +53,7 @@ Bir proje veya çözüm yükseltmeye başlamak için yalnızca yeni sürümünü
 
 8. Çalışma zamanı hataları veya davranış değişiklikleri nedeniyle beklenmeyen sonuçlar
 
-9. Hataları araçları tanıtılan hataları nedeniyle. Bir sorunla karşılaşırsanız, normal destek kanalları aracılığıyla ya da kullanarak Visual C++ ekibine rapor [Visual Studio geri bildirim Merkezi'ne](http://connect.microsoft.com/VisualStudio/Feedback).
+9. Hataları araçları tanıtılan hataları nedeniyle. Bir sorunla karşılaşırsanız, görsel için raporu C++ takım, normal destek kanalları aracılığıyla ya da kullanarak [Visual Studio C++ Geliştirici topluluğu](https://developercommunity.visualstudio.com/spaces/62/index.html) sayfası.
 
 Derleyici hataları nedeniyle yoksayılamaz değişikliklerin yanı sıra bazı değişiklikler gibi bir yükseltme işleminde isteğe bağlıdır:
 

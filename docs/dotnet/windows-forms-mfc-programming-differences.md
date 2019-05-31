@@ -5,12 +5,12 @@ helpviewer_keywords:
 - MFC [C++], Windows Forms support
 - Windows Forms [C++], compared to MFC
 ms.assetid: f3bfcf45-cfd4-45a4-8cde-5f4dbb18ee51
-ms.openlocfilehash: 998485a3384512f57cf35fc264e2321fa0996728
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 165c72b4f91073947d3914ae773e277cce192564
+ms.sourcegitcommit: 28eae422049ac3381c6b1206664455dbb56cbfb6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62384458"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66449999"
 ---
 # <a name="windows-formsmfc-programming-differences"></a>Windows Forms/MFC Programlama Farkları
 
@@ -22,7 +22,7 @@ MFC için alışkın olduğunuz, ancak, belirli türdeki henüz Windows Forms'ta
 
 Windows Forms uygulamaları hakkında daha fazla bilgi için bkz: [Windows Forms giriş](/dotnet/framework/winforms/windows-forms-overview).
 
-MFC'de Windows formlarını gösteren örnek bir uygulama için bkz. [MFC ve Windows Forms tümleştirme](http://www.microsoft.com/downloads/details.aspx?FamilyID=987021bc-e575-4fe3-baa9-15aa50b0f599&displaylang=en).
+MFC'de Windows formlarını gösteren örnek bir uygulama için bkz. [MFC ve Windows Forms tümleştirme](https://www.microsoft.com/downloads/details.aspx?FamilyID=987021bc-e575-4fe3-baa9-15aa50b0f599&displaylang=en).
 
 Aşağıdaki MFC görünümü veya belge ve yönlendirme özelliklerinin komutu eşdeğerleri Windows Forms'ta yoktur:
 

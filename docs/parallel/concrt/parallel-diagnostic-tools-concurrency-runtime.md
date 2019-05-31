@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - Parallel Diagnostic Tools [Concurrency Runtime]
 ms.assetid: b1a3f1d2-f5df-4f29-852e-906b3d8341fc
-ms.openlocfilehash: 2af1898312a4f448d618fcfc4e43ea93f5f0bc76
-ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
+ms.openlocfilehash: 182171bfcfbaf1476cc25fe3160114bc1d96ca7e
+ms.sourcegitcommit: 28eae422049ac3381c6b1206664455dbb56cbfb6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "64346308"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66449238"
 ---
 # <a name="parallel-diagnostic-tools-concurrency-runtime"></a>Paralel Tanılama Araçları (Eşzamanlılık Çalışma Zamanı)
 
@@ -27,7 +27,7 @@ Profil oluşturma araçları, çok iş parçacıklı bir uygulamanın kendisiyle
 
 Eşzamanlılık Çalışma zamanı kullanan [olay izleme için Windows](/windows/desktop/ETW/event-tracing-portal) izleme araçları, profil oluşturucular gibi çeşitli olaylar meydana geldiğinde bildirmek için (ETW). Bir paralel algoritma başladığı ve bittiği zaman bir zamanlayıcı etkinleştirilmiş veya devre dışı bir bağlam başlar, sona erer, engeller, engellemesini kaldırır veya oluşturur ve bu olayları dahil.
 
-Araçlar [eşzamanlılık görselleştiricisi](/visualstudio/profiling/concurrency-visualizer) bu işlevselliğini kullanır; bu nedenle, genellikle bu olayları ile doğrudan çalışmak zorunda değilsiniz. Bu olayları, özel bir profil oluşturucu geliştirme veya olay izleme araçları gibi kullandığınızda, ancak kullanışlıdır [Xperf](http://go.microsoft.com/fwlink/p/?linkid=160628).
+Araçlar [eşzamanlılık görselleştiricisi](/visualstudio/profiling/concurrency-visualizer) bu işlevselliğini kullanır; bu nedenle, genellikle bu olayları ile doğrudan çalışmak zorunda değilsiniz. Bu olayları, özel bir profil oluşturucu geliştirme veya olay izleme araçları gibi kullandığınızda, ancak kullanışlıdır [Xperf](https://go.microsoft.com/fwlink/p/?linkid=160628).
 
 Eşzamanlılık Çalışma zamanı, bu olaylar yalnızca izleme etkinleştirildiğinde başlatır. Çağrı [concurrency::EnableTracing](reference/concurrency-namespace-functions.md#enabletracing) olay izlemeyi etkinleştirmek için işlevi ve [concurrency::DisableTracing](reference/concurrency-namespace-functions.md#disabletracing) izlemeyi devre dışı bırakmak için işlevi.
 

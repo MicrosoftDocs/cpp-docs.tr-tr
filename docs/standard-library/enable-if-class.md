@@ -7,12 +7,12 @@ helpviewer_keywords:
 - enable_if class
 - enable_if
 ms.assetid: c6b8d41c-a18f-4e30-a39e-b3aa0e8fd926
-ms.openlocfilehash: b6990dba20643b35dde36a492d40c3e3e76ae0b4
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 450664f71851778cc40160e55cbb80bcb51330d5
+ms.sourcegitcommit: 28eae422049ac3381c6b1206664455dbb56cbfb6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62413768"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66451255"
 ---
 # <a name="enableif-class"></a>enable_if Sınıfı
 
@@ -46,7 +46,7 @@ template <bool B, class T = void>
 using enable_if_t = typename enable_if<B,T>::type;
 ```
 
-C++'da, şablon parametre değiştirme hatası kendi içinde bir hata değildir — bu olarak adlandırılır *SFINAE* (değiştirme hatası bir hata değildir). Genellikle, `enable_if` adayları aşırı yükleme çözünürlüğü kaldırmak için kullanılır — diğer bir deyişle, aşırı yükleme kümesi ayırmasından — böylece bir tanım yerine başka bir reddedilemiyor. Bu, SFINAE davranışı için uygundur. SFINAE hakkında daha fazla bilgi için bkz: [değiştirme hatası bir hata değil](http://go.microsoft.com/fwlink/p/?linkid=394798) wikipedia.
+C++'da, şablon parametre değiştirme hatası kendi içinde bir hata değildir — bu olarak adlandırılır *SFINAE* (değiştirme hatası bir hata değildir). Genellikle, `enable_if` adayları aşırı yükleme çözünürlüğü kaldırmak için kullanılır — diğer bir deyişle, aşırı yükleme kümesi ayırmasından — böylece bir tanım yerine başka bir reddedilemiyor. Bu, SFINAE davranışı için uygundur. SFINAE hakkında daha fazla bilgi için bkz: [değiştirme hatası bir hata değil](https://go.microsoft.com/fwlink/p/?linkid=394798) wikipedia.
 
 Dört örnek senaryolar şunlardır:
 

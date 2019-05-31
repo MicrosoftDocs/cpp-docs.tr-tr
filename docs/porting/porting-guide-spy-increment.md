@@ -2,12 +2,12 @@
 title: 'Taşıma Kılavuzu: Spy++'
 ms.date: 11/19/2018
 ms.assetid: e558f759-3017-48a7-95a9-b5b779d5e51d
-ms.openlocfilehash: b28de2396ba94578a8d06038a1191be42dce49ea
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: bca5e912d28124e8d5d6e56cc234ef7bf9bceb89
+ms.sourcegitcommit: 28eae422049ac3381c6b1206664455dbb56cbfb6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62337428"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66451127"
 ---
 # <a name="porting-guide-spy"></a>Taşıma Kılavuzu: Spy++
 
@@ -51,7 +51,7 @@ MSBuild şeklinde hata verir, **Link.OutputFile** özellik eşleşmiyor **Target
 warning MSB8012: TargetPath(...\spyxx\spyxxhk\.\..\Debug\SpyxxHk.dll) does not match the Linker's OutputFile property value (...\spyxx\Debug\SpyHk55.dll). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).warning MSB8012: TargetName(SpyxxHk) does not match the Linker's OutputFile property value (SpyHk55). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
 ```
 
-**Link.OutputFile** yapı çıktı (EXE, DLL, örneğin) ve nesnesinden normalde oluşturulan `$(TargetDir)$(TargetName)$(TargetExt)`, yol ve dosya adı uzantısı sağlar. Eski Visual C++ projeleri geçirme Aracı (vcbuild.exe) oluşturduğunuzda Yeni derleme aracını (MSBuild.exe) sık karşılaşılan budur. Visual Studio 2010'da derleme aracı değişikliğinin olduğundan, bu bir pre-2010 project 2010'a geçişi olduğunda sorunu veya sonraki bir sürümünü karşılaşabilirsiniz. Proje Yükseltme Sihirbazı'nı güncelleştirmez temel sorun olduğunu **Link.OutputFile** her zaman değeri olması gerektiğini belirlemek mümkün olmadığından değer bir proje ayarlarına göre. Bu nedenle, genellikle el ile ayarlamanız gerekir. Daha fazla ayrıntı için bkz. Bu [sonrası](http://blogs.msdn.com/b/vcblog/archive/2010/03/02/visual-studio-2010-c-project-upgrade-guide.aspx) Visual C++ blogundaki.
+**Link.OutputFile** yapı çıktı (EXE, DLL, örneğin) ve nesnesinden normalde oluşturulan `$(TargetDir)$(TargetName)$(TargetExt)`, yol ve dosya adı uzantısı sağlar. Eski Visual C++ projeleri geçirme Aracı (vcbuild.exe) oluşturduğunuzda Yeni derleme aracını (MSBuild.exe) sık karşılaşılan budur. Visual Studio 2010'da derleme aracı değişikliğinin olduğundan, bu bir pre-2010 project 2010'a geçişi olduğunda sorunu veya sonraki bir sürümünü karşılaşabilirsiniz. Proje Yükseltme Sihirbazı'nı güncelleştirmez temel sorun olduğunu **Link.OutputFile** her zaman değeri olması gerektiğini belirlemek mümkün olmadığından değer bir proje ayarlarına göre. Bu nedenle, genellikle el ile ayarlamanız gerekir. Daha fazla ayrıntı için bkz. Bu [sonrası](https://devblogs.microsoft.com/cppblog/visual-studio-2010-c-project-upgrade-guide/) Visual C++ blogundaki.
 
 Bu durumda, **Link.OutputFile** dönüştürülmüş projedeki özellik,.\Debug\Spyxx.exe ve yapılandırmasına bağlı olarak Spy ++ projesi için.\Release\Spyxx.exe ayarlandığı. En iyi yol olduğundan bu sabit kodlanmış değerler ile değiştirilecek `$(TargetDir)$(TargetName)$(TargetExt)` için **yapılandırmalarında**. Bu işe yaramazsa, buradan özelleştirme, veya özellikleri değiştirmek **genel** bölümünde bu değerlerin ayarlandığı (özellikleri **çıkış dizinine**, **hedefadı**, ve **hedef uzantısı**. Görüntülemekte olduğunuz özelliği makroları kullanıyorsa, seçebilirsiniz anımsa **Düzenle** yapılan makrosu değişimler ile son dizede gösteren bir iletişim kutusu açmak için aşağı açılan listede. Tüm uygun makroları ve geçerli değerlerini seçerek görüntüleyebilirsiniz **makroları** düğmesi.
 

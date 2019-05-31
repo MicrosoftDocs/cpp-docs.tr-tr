@@ -2,12 +2,12 @@
 title: Visual C++ ne&#39;s yeni 2003 ile 2015 arasındaki
 ms.date: 11/04/2016
 ms.assetid: c4afde6f-3d75-40bf-986f-be57e3818e26
-ms.openlocfilehash: 773500b32b1a80a6a7b1d1f2431b036f7ad3bd63
-ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
+ms.openlocfilehash: 4bcf661284d447b18542bb158940d539ef9c0686
+ms.sourcegitcommit: 28eae422049ac3381c6b1206664455dbb56cbfb6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2019
-ms.locfileid: "65448866"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66449801"
 ---
 # <a name="visual-c-what39s-new-2003-through-2015"></a>Visual C++ ne&#39;s yeni 2003 ile 2015 arasındaki
 
@@ -20,7 +20,7 @@ Bu sayfa, Visual Studio 2015'ten tüm "Yenilikler" sayfalar için tüm sürümle
 
 Visual Studio 2015 ve sonraki sürümlerinde, derleyici uyumluluğu yapılan sürekli geliştirmeler bazen nasıl derleyici mevcut kaynak kodunuzu anlar değiştirebilirsiniz. Bu durumda, derleme veya kodda, daha önce derlenmiş ve düzgün şekilde çalışması için olduğu görülüyor bile davranışsal farklılıklar sırasında yeni veya farklı hata karşılaşabilirsiniz.
 
-Neyse ki, bu farklılıkları çok az kayıpla veya hiç kaynak kodunuzun çoğunu etkisi ve bu farklar ele almak için kaynak kodu veya başka değişiklikler gerektiğinde, düzeltmeleri genellikle küçük ve rahatça. Daha önce kabul edilebilir kaynak kodunun değiştirilmesi gerekebilir birçok örnekler ekledik *(önce)* ve bunları düzeltmeye yönelik düzeltmeler *(sonra)*.
+Neyse ki, bu farklılıkları çok az kayıpla veya hiç kaynak kodunuzun çoğunu etkisi ve bu farklar ele almak için kaynak kodu veya başka değişiklikler gerektiğinde, düzeltmeleri genellikle küçük ve rahatça. Daha önce kabul edilebilir kaynak kodunun değiştirilmesi gerekebilir birçok örnekler ekledik *(önce)* ve bunları düzeltmeye yönelik düzeltmeler *(sonra)* .
 
 Bu farklılıklar, kaynak kodu veya diğer derleme yapıtlarının etkileyebilir olsa da, bunlar Visual C++ sürümleri için güncelleştirmeler arasında ikili uyumluluğu etkilemez. Değişiklik, daha ciddi bir tür *değişiklik* ikili uyumluluğu etkileyebilir, ancak ikili uyumluluğu sonları bu tür yalnızca önemli Visual C++ sürümü arasında oluşur. Örneğin, Visual C++ 2013 arasında Visual C++ 2015. Visual C++ 2015 ve Visual C++ 2013 arasında gerçekleşen bozucu değişiklikler hakkında daha fazla bilgi için bkz: [Visual C++ değişiklik geçmişi 2003-2015](../porting/visual-cpp-change-history-2003-2015.md).
 
@@ -253,7 +253,7 @@ Bu farklılıklar, kaynak kodu veya diğer derleme yapıtlarının etkileyebilir
 
 - **Yerleştirme yeni ve Sil**
 
-   İçin bir değişiklik yapılmadığını **Sil** , C ++ 14 standart ile uyumluluk duruma getirmek için işleci. Standartlar değişiklik ayrıntılarını bulunabilir [C++ boyutlandırılmış ayırmayı kaldırma](http://isocpp.org/files/papers/n3778.html). Genel form değişiklikleri ekleme **Sil** boyutu parametresi alır. işleci. Operatör daha önce kullandıysanız olan değişiklik **Sil** aynı imzayla (karşılayacak şekilde bir **yerleştirme yeni** işleci), bir derleyici hatasına (gerçekleşen C2956, alırsınız bir noktada burada **yerleştirme yeni** kullanılır, derleyici nerede çalışırsa uygun eşleşen tanımlamak için kod konumda olduğundan **Sil** işleci).
+   İçin bir değişiklik yapılmadığını **Sil** , C ++ 14 standart ile uyumluluk duruma getirmek için işleci. Standartlar değişiklik ayrıntılarını bulunabilir [C++ boyutlandırılmış ayırmayı kaldırma](https://isocpp.org/files/papers/n3778.html). Genel form değişiklikleri ekleme **Sil** boyutu parametresi alır. işleci. Operatör daha önce kullandıysanız olan değişiklik **Sil** aynı imzayla (karşılayacak şekilde bir **yerleştirme yeni** işleci), bir derleyici hatasına (gerçekleşen C2956, alırsınız bir noktada burada **yerleştirme yeni** kullanılır, derleyici nerede çalışırsa uygun eşleşen tanımlamak için kod konumda olduğundan **Sil** işleci).
 
    İşlev `void operator delete(void *, size_t)` olduğu bir **yerleştirme silme** karşılık gelen işleci **yerleştirme yeni** işlevi `void * operator new(size_t, size_t)` C ++ 11'de. C ++ 14 ile boyutlandırılmış ayırmayı kaldırma, bu **Sil** işlevi, artık bir *normal ayırmayı kaldırma işlevi* (genel **Sil** işleci). Standart olması durumunda kullanılmasını gerektirir. bir **yerleştirme yeni** karşılık gelen yedekleme arar **Sil** işlevi ve program bir normal ayırmayı kaldırma işlevi hatalı oluşturulmuş bulur.
 
@@ -1741,7 +1741,7 @@ Ek olarak **Paralel Görevler** penceresi ve **Paralel Yığınlar** penceresi, 
 
 **Semantik renklendirme.** Artık türler, numaralandırmalar, makroları ve diğer C++ belirteçleri renklendirme, varsayılan olarak sahiptir.
 
-**Başvuru vurgulama.** Artık bir simge seçerek geçerli dosyadaki simgenin tüm örnekleri vurgular. Tuşuna **Ctrl**+**Shift**+**yukarı ok** veya **Ctrl**+**kaydırma**  + **Aşağı ok** vurgulanan başvurulara arasında taşımak için. Bu özellik, kapatabilirsiniz **seçenekleri** iletişim kutusunun **metin düzenleyici** > **C/C++** > **Gelişmiş**.
+**Başvuru vurgulama.** Artık bir simge seçerek geçerli dosyadaki simgenin tüm örnekleri vurgular. Tuşuna **Ctrl**+**Shift**+**yukarı ok** veya **Ctrl**+**kaydırma**  + **Aşağı ok** vurgulanan başvurulara arasında taşımak için. Bu özellik, kapatabilirsiniz **seçenekleri** iletişim kutusunun **metin düzenleyici** > **C/C++**  > **Gelişmiş**.
 
 ### <a name="application-lifecycle-management-tools"></a>Uygulama yaşam döngüsü Yönetim Araçları
 

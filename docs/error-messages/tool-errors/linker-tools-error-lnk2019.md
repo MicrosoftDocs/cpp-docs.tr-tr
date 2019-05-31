@@ -7,12 +7,12 @@ helpviewer_keywords:
 - nochkclr.obj
 - LNK2019
 - _check_commonlanguageruntime_version
-ms.openlocfilehash: 0ef0bfd565b8c76816cc1f8a20b1521da238cdfc
-ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
+ms.openlocfilehash: eb28ff3673c054b8ac1876d8ba736ceddfa5fd1a
+ms.sourcegitcommit: 28eae422049ac3381c6b1206664455dbb56cbfb6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2019
-ms.locfileid: "65447714"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66449607"
 ---
 # <a name="linker-tools-error-lnk2019"></a>Bağlayıcı Araçları Hatası LNK2019
 
@@ -213,9 +213,9 @@ int main() {
 }
 ```
 
-Bu hatayı düzeltmek için değiştirme `unsigned short` için `wchar_t` veya `WCHAR`, veya LNK2019g.cpp kullanarak derleme **/Zc:wchar_t-**.
+Bu hatayı düzeltmek için değiştirme `unsigned short` için `wchar_t` veya `WCHAR`, veya LNK2019g.cpp kullanarak derleme **/Zc:wchar_t-** .
 
 ## <a name="additional-resources"></a>Ek kaynaklar
 
-Stack Overflow soru LNK2001 olası nedenleri ve çözümleri hakkında daha fazla bilgi için bkz. [tanımlanmamış başvuru/çözümlenmemiş dış sembol hata nedir ve nasıl düzeltirim bunu?](http://stackoverflow.com/q/12573816/2002113).
+Stack Overflow soru LNK2001 olası nedenleri ve çözümleri hakkında daha fazla bilgi için bkz. [tanımlanmamış başvuru/çözümlenmemiş dış sembol hata nedir ve nasıl düzeltirim bunu?](https://stackoverflow.com/q/12573816/2002113).
 

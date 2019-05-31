@@ -26,12 +26,12 @@ helpviewer_keywords:
 - std::binomial_distribution [C++], param_type
 - std::binomial_distribution [C++], param_type
 ms.assetid: b7c8a26a-da8c-45a5-a3a8-208f7a3609ce
-ms.openlocfilehash: 1cbb7aff254cee848d711b22414b38deee8cfc07
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: ee61b79848a5649d44cf02384f32ad8e0226feb0
+ms.sourcegitcommit: 28eae422049ac3381c6b1206664455dbb56cbfb6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62380227"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66451116"
 ---
 # <a name="binomialdistribution-class"></a>binomial_distribution Sınıfı
 
@@ -98,7 +98,7 @@ Tekdüzen rastgele sayı üretici altyapısı. Olası türleri için bkz: [ \<ra
 
 Dağıtım sınıfları ve üyeleri hakkında daha fazla bilgi için bkz: [ \<rastgele >](../standard-library/random.md).
 
-İki terimli dağıtım ayrık olasılık işlevi hakkında ayrıntılı bilgi için Wolfram MathWorld bkz [binom açılımı](http://go.microsoft.com/fwlink/p/?linkid=398469).
+İki terimli dağıtım ayrık olasılık işlevi hakkında ayrıntılı bilgi için Wolfram MathWorld bkz [binom açılımı](https://go.microsoft.com/fwlink/p/?linkid=398469).
 
 ## <a name="example"></a>Örnek
 

@@ -9,12 +9,12 @@ helpviewer_keywords:
 - cpuid instruction
 - cpuid intrinsic
 ms.assetid: f8c344d3-91bf-405f-8622-cb0e337a6bdc
-ms.openlocfilehash: 30b66c78c6c3477c4da634901058d77d0e362101
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c66a3fe7b923b214c4cf2bd84fc03f535d5f4973
+ms.sourcegitcommit: 28eae422049ac3381c6b1206664455dbb56cbfb6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62349088"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66449991"
 ---
 # <a name="cpuid-cpuidex"></a>__cpuid, __cpuidex
 
@@ -63,9 +63,9 @@ Bu iç tarafından döndürülen CPU bilgilerini ve desteklenen özellikleri dep
 
 `__cpuid` İç çağırmadan önce ECX kayıt temizler `cpuid` yönergesi. `__cpuidex` İç ECX kasaya değerini ayarlar *subfunction_id* ürettiği önce `cpuid` yönergesi. Bu, işlemci hakkında ek bilgi toplamanızı sağlar.
 
-Belirli parametreleri ve Intel işlemci üzerinde bu iç tarafından döndürülen değerler hakkında daha fazla bilgi için belgelere bakın `cpuid` yönergesinde [Intel 64 ve IA-32 mimarileri yazılım geliştiriciler el ile 2. birim: Yönerge kümesi başvurusu](http://go.microsoft.com/fwlink/p/?LinkID=510021) ve [Intel mimarisi yönerge kümesi programlama başvurusu uzantıları](http://go.microsoft.com/fwlink/p/?LinkID=506627). Intel belgeleri kullanım koşulları "yaprak" ve "subleaf" *function_id* ve *subfunction_id* EAX ve ECX geçirilen parametreler.
+Belirli parametreleri ve Intel işlemci üzerinde bu iç tarafından döndürülen değerler hakkında daha fazla bilgi için belgelere bakın `cpuid` yönergesinde [Intel 64 ve IA-32 mimarileri yazılım geliştiriciler el ile 2. birim: Yönerge kümesi başvurusu](https://go.microsoft.com/fwlink/p/?LinkID=510021) ve [Intel mimarisi yönerge kümesi programlama başvurusu uzantıları](https://go.microsoft.com/fwlink/p/?LinkID=506627). Intel belgeleri kullanım koşulları "yaprak" ve "subleaf" *function_id* ve *subfunction_id* EAX ve ECX geçirilen parametreler.
 
-Belirli parametreleri ve AMD işlemciler üzerinde bu iç tarafından döndürülen değerler hakkında daha fazla bilgi için belgelere bakın `cpuid` yönerge AMD64 mimarisi Programcı el ile birim 3'te: Genel amaçlı ve sistem yönergeleri ve belirli bir işlemci aileleri için düzeltme Kılavuzlar. Bu belgelere ve diğer bilgilere bağlantılar için bkz: AMD [Geliştirici kılavuzlar, Kılavuzlar ve ISA belgeleri](http://go.microsoft.com/fwlink/p/?LinkId=510023) sayfası. İçin AMD belgeleri kullanan işlevi koşulları "number" ve "yürütülemiyor number" *function_id* ve *subfunction_id* EAX ve ECX geçirilen parametreler.
+Belirli parametreleri ve AMD işlemciler üzerinde bu iç tarafından döndürülen değerler hakkında daha fazla bilgi için belgelere bakın `cpuid` yönerge AMD64 mimarisi Programcı el ile birim 3'te: Genel amaçlı ve sistem yönergeleri ve belirli bir işlemci aileleri için düzeltme Kılavuzlar. Bu belgelere ve diğer bilgilere bağlantılar için bkz: AMD [Geliştirici kılavuzlar, Kılavuzlar ve ISA belgeleri](https://go.microsoft.com/fwlink/p/?LinkId=510023) sayfası. İçin AMD belgeleri kullanan işlevi koşulları "number" ve "yürütülemiyor number" *function_id* ve *subfunction_id* EAX ve ECX geçirilen parametreler.
 
 Zaman *function_id* bağımsız değişken: 0, *cpuInfo*[0] döndürür en yüksek kullanılabilir genişletilmiş *function_id* işlemcisi tarafından desteklenen bir değer. İşlemci üreticisi kodlandığını *cpuInfo*[1], *cpuInfo*[2] ve *cpuInfo*[3].
 

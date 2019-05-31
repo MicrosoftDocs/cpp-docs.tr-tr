@@ -1,21 +1,24 @@
 ---
 title: başvuru sınıfı ve ref struct (C++/CLI ve C++/CX)
-ms.date: 05/16/2019
+ms.date: 05/30/2019
 ms.topic: reference
 f1_keywords:
 - ref class
+- value class
+- ref struct
+- value struct
 helpviewer_keywords:
 - ref class keyword [C++]
 - value class keyword [C++]
 - value struct keyword [C++]
 - ref struct keyword [C++]
 ms.assetid: 5c360764-b229-49c6-9357-66213afbc372
-ms.openlocfilehash: 9c993b134d6d359d0bc756f5e79d2f9cc137c9cf
-ms.sourcegitcommit: bc1b14f29a02685f97c7ef5c098d16db6eaf369f
+ms.openlocfilehash: 7db1683ee153c34b3476c51eb22fb99eae4c6891
+ms.sourcegitcommit: 28eae422049ac3381c6b1206664455dbb56cbfb6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "65788783"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66450370"
 ---
 # <a name="ref-class-and-ref-struct--ccli-and-ccx"></a>başvuru sınıfı ve ref struct (C++/CLI ve C++/CX)
 

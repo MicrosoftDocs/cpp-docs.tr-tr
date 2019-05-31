@@ -2,12 +2,12 @@
 title: Visual Studio'da C++ Linux projesi yapılandırma
 ms.date: 11/12/2018
 ms.assetid: 4d7c6adf-54b9-4b23-bd23-5de0c825b768
-ms.openlocfilehash: 84b9242ad5af79ed48d716fb5a35db56428e9a98
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 8e8bf2b12462a18c8a0e6c1c4d6677f18e2f0f34
+ms.sourcegitcommit: 28eae422049ac3381c6b1206664455dbb56cbfb6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62389859"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66451157"
 ---
 # <a name="configure-a-linux-project"></a>Linux projesi yapılandırma
 
@@ -31,7 +31,7 @@ Uzak Linux bilgisayara ilgili ayarları değiştirmek için görünen Uzak seçe
 
 - **Uzaktan derleme kök dizini** proje uzak Linux bilgisayarda nerede oluşturulan kök konumu belirler.  Bu varsayılan **~/projects** değiştirmediğiniz sürece.
 
-- **Uzaktan derleme proje dizini** burada uzak Linux bilgisayarda bu belirli proje oluşturulacak olan.  Bu varsayılan **$(RemoteRootDir)/$(ProjectName)**, yukarıda kök dizininin altındaki şu anki proje sonra adlandırılmış bir dizine genişletin.
+- **Uzaktan derleme proje dizini** burada uzak Linux bilgisayarda bu belirli proje oluşturulacak olan.  Bu varsayılan **$(RemoteRootDir)/$(ProjectName)** , yukarıda kök dizininin altındaki şu anki proje sonra adlandırılmış bir dizine genişletin.
 
 > [!NOTE]
 > ' % S'varsayılan C ve C++ Derleyicileri, veya bağlayıcı ve projeyi derlemek için kullanılan Arşivleyicide değiştirmek için uygun girdileri kullanmak **C/C++ > Genel** bölümü ve **bağlayıcı > Genel** bölümü.  Bunlar, örneğin belirli bir sürümü GCC veya hatta Clang derleyici kullanmak için ayarlanabilir. Daha fazla bilgi için [C/C++ özellikleri (Linux C++)](prop-pages/c-cpp-linux.md) ve [bağlayıcı Özellikleri (Linux C++)](prop-pages/linker-linux.md).
@@ -40,7 +40,7 @@ Uzak Linux bilgisayara ilgili ayarları değiştirmek için görünen Uzak seçe
 
 **Visual Studio 2017 sürüm 15.6 ve önceki sürümler:**<br/>
 Varsayılan olarak, Visual Studio sistem düzeyindeki içerik dosyalarını Linux bilgisayardan içermez.  Örneğin, öğeler **/usr/INCLUDE** dizini Visual Studio'da mevcut değildir.
-Tam [IntelliSense](/visualstudio/ide/using-intellisense) desteği gerekir, geliştirme bilgisayarınızdaki bir konuma dosyaları kopyalayın ve Visual Studio bu konuma işaret edecek.  Bir seçenek, dosyaları kopyalamak için SCP'yi (güvenli kopya) kullanmaktır.  Windows 10'da kullandığınız [Windows üzerinde Bash](https://msdn.microsoft.com/commandline/wsl/about) scp çalıştırılacak.  Önceki Windows sürümleri için aşağıdaki gibi kullanabilirsiniz [PSCP'yi (PuTTY güvenli kopya)](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html).
+Tam [IntelliSense](/visualstudio/ide/using-intellisense) desteği gerekir, geliştirme bilgisayarınızdaki bir konuma dosyaları kopyalayın ve Visual Studio bu konuma işaret edecek.  Bir seçenek, dosyaları kopyalamak için SCP'yi (güvenli kopya) kullanmaktır.  Windows 10'da kullandığınız [Windows üzerinde Bash](https://msdn.microsoft.com/commandline/wsl/about) scp çalıştırılacak.  Önceki Windows sürümleri için aşağıdaki gibi kullanabilirsiniz [PSCP'yi (PuTTY güvenli kopya)](https://www.chiark.greenend.org.uk/~sgtatham/putty/download.html).
 
 Aşağıdakine benzer bir komut kullanarak dosyalarını kopyalayabilirsiniz:
 

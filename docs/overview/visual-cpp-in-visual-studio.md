@@ -7,19 +7,19 @@ helpviewer_keywords:
 - Visual C++, home page
 author: mikeblome
 ms.author: mblome
-ms.openlocfilehash: e9327f74f46590f4d4a71e56340dcadf6527fabb
-ms.sourcegitcommit: bde3279f70432f819018df74923a8bb895636f81
+ms.openlocfilehash: c2a38d13cd7b34880b64521af99103ed8192bfd0
+ms.sourcegitcommit: 28eae422049ac3381c6b1206664455dbb56cbfb6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66174787"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66451209"
 ---
 # <a name="c-in-visual-studio"></a>Visual Studio’da C++
 
 > [!NOTE]
 > Bu Geliştirici belgeleri Visual Studio 2015 ve sonrası için geçerlidir. Sürüm Seçici, Visual Studio sürümünüze eşleştirmek için sayfanın sol üst içinde kullanın.
 >
-> Bir program çalıştırabilmek için Visual C++ yeniden dağıtılabilir paketi arıyorsanız, Git [Microsoft Download Center](http://www.microsoft.com/download/) girin **Visual C++** arama kutusuna.
+> Bir program çalıştırabilmek için Visual C++ yeniden dağıtılabilir paketi arıyorsanız, Git [Microsoft Download Center](https://www.microsoft.com/download/) girin **Visual C++** arama kutusuna.
 
 Microsoft Visual Visual C++ ya da MSVC, genellikle kısalttık C++, C++, C ve derleme dili geliştirme araçları ve kitaplıkları kullanılabilir adıdır, Windows üzerinde Visual Studio'nun bir parçası olarak. Bu araçlar ve kitaplıklar, Evrensel Windows Platformu (UWP) uygulamaları, yerel Windows Masaüstü ve sunucu uygulamaları, platformlar arası kitaplıklar ve Windows, Linux, Android ve iOS, hem de yönetilen uygulamaları ve .NET kullanma kitaplıkları çalışan uygulamalar oluşturmanızı sağlar Çerçeve. Her şeyi basit bir konsol uygulamalardan en karmaşık ve karmaşık uygulamalar Windows Masaüstü için cihaz sürücüleri ve platformlar arası oyunlar mobil cihazları ve işletim sistemi bileşenleri için en küçük IOT cihazlarından yazmak için Visual C++ kullanabilirsiniz çok sunuculu yüksek performanslı Azure bulutta bilgi işlem.
 
@@ -61,7 +61,7 @@ Hangi platformların desteklendiğini öğrenin.
 [C++ tekrar Hoş Geldiniz](../cpp/welcome-back-to-cpp-modern-cpp.md)<br/>
 Modern hakkında daha fazla bilgi C++ hızlı, güvenli kod yazma ve birçok C stili programlama düşebileceğiniz tuzakları önlemek etkinleştirdiğiniz C ++ 11 ve sonraki sürümlerde tabanlı programlama.
 
-[Standart C++](http://isocpp.org/)<br/>
+[Standart C++](https://isocpp.org/)<br/>
 C++ hakkında bilgi edinin, Modern C++ hakkında genel bilgileri alın ve kitaplar, makaleler, konuşmalar ve olaylar için bağlantılara ulaşın
 
 [Visual C++ öğrenin](../build/vscpp-step-1-create.md)<br/>

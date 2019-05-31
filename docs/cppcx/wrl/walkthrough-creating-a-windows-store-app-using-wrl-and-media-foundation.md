@@ -3,12 +3,12 @@ title: 'İzlenecek yol: WRL ve medya altyapısı kullanarak UWP uygulaması olu�
 ms.date: 04/23/2019
 ms.topic: reference
 ms.assetid: 0336c550-fbeb-4dc4-aa9b-660f9fc45382
-ms.openlocfilehash: 28e8d4b2871dbd3bef0f30bae5480d346af50706
-ms.sourcegitcommit: 283cb64fd7958a6b7fbf0cd8534de99ac8d408eb
+ms.openlocfilehash: 1eee353bb13a3fa03fda42c3d0f7a4103dc5ad13
+ms.sourcegitcommit: 28eae422049ac3381c6b1206664455dbb56cbfb6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "64558261"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66450148"
 ---
 # <a name="walkthrough-creating-a-uwp-app-using-wrl-and-media-foundation"></a>İzlenecek yol: WRL ve medya altyapısı kullanarak UWP uygulaması oluşturma
 
@@ -25,7 +25,7 @@ Bu örnek, bir Web kamerası yakalanır görüntü gri tonlamalı etkisi uygulan
 Çoğu durumda, C + kullanabileceğiniz +/ CX Windows çalışma zamanı oluşturma. Ancak, bazen WRL kullanmak zorunda. Örneğin, Microsoft Media Foundation için bir ortam uzantısı oluşturduğunuzda hem Windows çalışma zamanı, hem de COM arabirimleri uygulayan bir bileşen oluşturmanız gerekir. Çünkü C++/CX yalnızca Windows çalışma zamanı nesneleri oluşturma hem Windows çalışma zamanı, hem de COM arabirimleri uygulamasını sağladığından medya uzantısı oluşturmak için WRL kullanmalısınız.
 
 > [!NOTE]
-> Bu kod örneği uzun olmasına rağmen kullanışlı Media Foundation dönüşüm oluşturmak için gereken en düşük gösterir. Bunu kendi özel dönüştürme için bir başlangıç noktası olarak kullanabilirsiniz. Bu örnekte gelen uyarlanmış, [medya uzantılar örneği](http://code.msdn.microsoft.com/windowsapps/Media-extensions-sample-7b466096)uygulamak için hangi kullanan media uzantıları video efektleri video kod çözme ve medya akışlarının üreten düzeni işleyicileri oluşturun.
+> Bu kod örneği uzun olmasına rağmen kullanışlı Media Foundation dönüşüm oluşturmak için gereken en düşük gösterir. Bunu kendi özel dönüştürme için bir başlangıç noktası olarak kullanabilirsiniz. Bu örnekte gelen uyarlanmış, [medya uzantılar örneği](https://code.msdn.microsoft.com/windowsapps/Media-extensions-sample-7b466096)uygulamak için hangi kullanan media uzantıları video efektleri video kod çözme ve medya akışlarının üreten düzeni işleyicileri oluşturun.
 
 ## <a name="prerequisites"></a>Önkoşullar
 
@@ -98,7 +98,7 @@ Bu örnek, bir Web kamerası yakalanır görüntü gri tonlamalı etkisi uygulan
 
    1. Ayrıca altında **giriş**, ekleme `runtimeobject.lib`, `mfuuid.lib`, ve `mfplat.lib` için **ek bağımlılıklar** özelliği.
 
-   1. Altında **Windows meta verileri**ayarlayın **Windows meta verileri oluşturma** için **Evet (/ WINMD)**.
+   1. Altında **Windows meta verileri**ayarlayın **Windows meta verileri oluşturma** için **Evet (/ WINMD)** .
 
 ### <a name="to-use-the-wrl-the-custom-media-foundation-component-from-a-c-app"></a>Bir C# uygulamasından özel Media Foundation bileşen WRL kullanmak için
 
@@ -122,10 +122,10 @@ Aşağıdaki çizimde gösterildiği `MediaCapture app`.
 
 ## <a name="next-steps"></a>Sonraki Adımlar
 
-Örnekte, varsayılan Web kamerası bir gelen fotoğrafları aynı anda yakalama gösterilmektedir. [Medya uzantılar örneği](http://code.msdn.microsoft.com/windowsapps/Media-extensions-sample-7b466096) daha fazlasını yapar. Web kamerası cihazları listeleme ve yerel düzeni işleyicilerle iş yapmayı gösteren ve bireysel fotoğraf ve video akışları çalışma ek medya efektleri gösterir.
+Örnekte, varsayılan Web kamerası bir gelen fotoğrafları aynı anda yakalama gösterilmektedir. [Medya uzantılar örneği](https://code.msdn.microsoft.com/windowsapps/Media-extensions-sample-7b466096) daha fazlasını yapar. Web kamerası cihazları listeleme ve yerel düzeni işleyicilerle iş yapmayı gösteren ve bireysel fotoğraf ve video akışları çalışma ek medya efektleri gösterir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Windows Çalışma Zamanı C++ Şablon Kitaplığı (WRL)](windows-runtime-cpp-template-library-wrl.md)<br/>
 [Microsoft Media Foundation](/windows/desktop/medfound/microsoft-media-foundation-sdk)<br/>
-[Medya uzantılar örneği](http://code.msdn.microsoft.com/windowsapps/Media-extensions-sample-7b466096)
+[Medya uzantılar örneği](https://code.msdn.microsoft.com/windowsapps/Media-extensions-sample-7b466096)

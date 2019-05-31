@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - LNK1168
 ms.assetid: 97ead151-fd99-46fe-9a1d-7e84dc0b8cc8
-ms.openlocfilehash: d18aacd23a7ce9ed49f12a62f8358bb6d668c778
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f0eb63c124162dbb515782bbd014c556c12de153
+ms.sourcegitcommit: 28eae422049ac3381c6b1206664455dbb56cbfb6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62254942"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66450894"
 ---
 # <a name="linker-tools-error-lnk1168"></a>Bağlayıcı Araçları Hatası LNK1168
 
@@ -21,10 +21,10 @@ Bağlayıcı yazılamıyor `filename`. Dosya kullanımda olabilir ve kendi dosya
 
 Bu sorunu gidermek için aşağıdakileri doğrulayın `filename` dosya tanıtıcısı kilitli olmadığını ve dosya için yazma izniniz olduğunu. Yürütülebilir bir dosya ise, zaten yürütülmekte olmadığını doğrulayın.
 
-Windows SysInternals yardımcı programları kullanabileceğiniz [işlemek](http://technet.microsoft.com/sysinternals/bb896655.aspx) veya [Process Explorer](http://technet.microsoft.com/sysinternals/bb896653) kilit üzerinde dosya tanıtıcısı işlemi belirlemek için `filename`. Process Explorer'ı, açık dosya tanıtıcılarındaki kilitleri serbest bırakmak için de kullanabilirsiniz. Bu yardım programlarının nasıl kullanılacağıyla ilgili bilgi için, beraberinde gelen Yardım dosyalarına göz atın.
+Windows SysInternals yardımcı programları kullanabileceğiniz [işlemek](/sysinternals/downloads/handle) veya [Process Explorer](/sysinternals/downloads/process-explorer) kilit üzerinde dosya tanıtıcısı işlemi belirlemek için `filename`. Process Explorer'ı, açık dosya tanıtıcılarındaki kilitleri serbest bırakmak için de kullanabilirsiniz. Bu yardım programlarının nasıl kullanılacağıyla ilgili bilgi için, beraberinde gelen Yardım dosyalarına göz atın.
 
 Dosya, virüsten koruma programı tarafından kilitlenmişse, virüs koruma programıyla yapı çıktı dizinlerinizi otomatik taramanın dışında tutarak bu sorunu çözebilirsiniz. Anti-virüs tarayıcıları çoğunlukla dosya sisteminde yeni dosyaların oluşturulmasıyla tetiklenir ve tarama devam ederken kilitleri dosyalar üzerinde tutar. Belirli dizinleri taramanın dışında nasıl tutacağınız hakkındaki ayrıntılar için, virüsten koruma programı belgelerinize bakın.
 
-Dosya, arama dizinleme hizmeti tarafından kilitlenmişse, yapı çıktı dizinlerinizi otomatik dizinlemenin dışında tutarak bu sorunu giderebilirsiniz. Daha fazla bilgi için dizinleme hizmetiyle ilgili belgelere başvurun. Windows Arama Dizin Oluşturma Hizmeti değiştirmek için kullanın **dizinleme seçeneklerini** Windows içinde **Denetim Masası**. Daha fazla bilgi için [geliştirmek Windows dizini kullanarak arar: sık sorulan sorular](http://windows.microsoft.com/windows/improve-windows-searches-using-index-faq#1TC=windows-7).
+Dosya, arama dizinleme hizmeti tarafından kilitlenmişse, yapı çıktı dizinlerinizi otomatik dizinlemenin dışında tutarak bu sorunu giderebilirsiniz. Daha fazla bilgi için dizinleme hizmetiyle ilgili belgelere başvurun. Windows Arama Dizin Oluşturma Hizmeti değiştirmek için kullanın **dizinleme seçeneklerini** Windows içinde **Denetim Masası**. Daha fazla bilgi için [arama Windows 10'da dizin oluşturma: SSS](https://support.microsoft.com/help/4098843/windows-10-search-indexing-faq).
 
 Yürütülebilir dosyanızın üzerine yapı işlemi tarafından yazılamıyorsa, dosyanız Dosya Gezgini tarafından kilitlenmiş olabilir. Varsa **uygulama deneyimi** hizmeti devre dışı bırakıldı, dosya Gezgini'nde bir yürütülebilir dosya tanıtıcı kilidine uzun bir süre tutunabilir. Bu sorunu gidermek için çalıştırın **services.msc** açın **özellikleri** iletişim kutusu için **uygulama deneyimi** hizmeti. Değişiklik **başlangıç türü** gelen **devre dışı bırakılmış** için **el ile**.

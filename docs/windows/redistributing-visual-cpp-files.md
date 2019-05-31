@@ -8,17 +8,17 @@ helpviewer_keywords:
 - file redistribution [C++]
 - redistributing applications [C++], about redistributing applications
 ms.assetid: d201b2ce-36f1-44e5-a96c-0db81a1ba652
-ms.openlocfilehash: 2bf4297a6c61d16c68d6a9cb893aed78b9d7609d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b64fac7086dcc22199ca359a163074b967c56f95
+ms.sourcegitcommit: 28eae422049ac3381c6b1206664455dbb56cbfb6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62388169"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66450625"
 ---
 # <a name="redistributing-visual-c-files"></a>Visual C++ Dosyalarını Yeniden Dağıtma
 
 > [!NOTE]
-> Bir Visual C++ çalışma zamanı dosyaları indirme için aradığınız çünkü burada misiniz? Git [Microsoft Web sitesi](http://www.microsoft.com/) girin **Visual C++ yeniden dağıtılabilir** arama kutusuna. İndirin ve bilgisayarınıza (64-bit Windows çalıştırıyorsanız Örneğin, x64) mimarisini ve Visual C++ sürümlerinden birini gereken (örneğin, 2015) yeniden dağıtılabilir paketi yükleyin.
+> Bir Visual C++ çalışma zamanı dosyaları indirme için aradığınız çünkü burada misiniz? Git [Microsoft Web sitesi](https://www.microsoft.com/) girin **Visual C++ yeniden dağıtılabilir** arama kutusuna. İndirin ve bilgisayarınıza (64-bit Windows çalıştırıyorsanız Örneğin, x64) mimarisini ve Visual C++ sürümlerinden birini gereken (örneğin, 2015) yeniden dağıtılabilir paketi yükleyin.
 
 Bir uygulamayı dağıtırken, onu desteklemek için gerekli tüm dosyaları da dağıtmalısınız. Bu dosyalardan herhangi biri Microsoft tarafından sağlanıyorsa, bunları yeniden dağıtma izniniz olup olmadığını kontrol edin. Visual Studio Lisans Koşulları'nı gözden geçirmek için IDE hakkında Microsoft Visual Studio iletişim kutusunda lisans koşulları bağlantısına bakın veya indirme [Microsoft Yazılımı Lisans koşulları](https://visualstudio.microsoft.com/license-terms/mlt687465/) dosya. Visual Studio'nun belirli sürümleri için Microsoft Yazılım Lisansı Koşullarındaki "Dağıtılabilir kod" bölümünde anılan "REDIST listesi" görüntülemek için bkz: [Microsoft Visual Studio 2017 ve Microsoft Visual Studio 2017 için dağıtılabilir kod SDK (içerir yardımcı programları ve BuildServer Dosyaları)](/visualstudio/productinfo/2017-redistribution-vs), veya Visual Studio 2015 için bkz. [Microsoft Visual Studio 2015 ve Microsoft Visual Studio 2015 SDK için dağıtılabilir kod](/visualstudio/productinfo/2015-redistribution-vs). Yeniden dağıtılabilir dosyalar hakkında daha fazla bilgi için bkz. [belirleme hangi DLL'lerin yeniden dağıtılacağını](determining-which-dlls-to-redistribute.md) ve [Dağıtım örnekleri](deployment-examples.md).
 

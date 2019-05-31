@@ -200,12 +200,12 @@ helpviewer_keywords:
 - std::count_if [C++]
 - std::partition_copy [C++]
 - std::swap [C++]
-ms.openlocfilehash: 260b2ee780956550678fcb01b3a018a60fb58deb
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b914b3d2ed61c81629c06739eac86692d1444e58
+ms.sourcegitcommit: 28eae422049ac3381c6b1206664455dbb56cbfb6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62411194"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66450425"
 ---
 # <a name="ltalgorithmgt-functions"></a>&lt;algoritma&gt; işlevleri
 
@@ -5561,7 +5561,7 @@ int main() {
 
 ## <a name="random_shuffle"></a>  random_shuffle
 
-Std::random_shuffle() işlevi yerine kullanım dışı [std::shuffle](../standard-library/algorithm-functions.md#shuffle). Bir kod örneği ve daha fazla bilgi için bkz: [ \<rastgele >](../standard-library/random.md) ve Stack Overflow post [neden std::random_shuffle yöntemleri kaldırılmaktadır C ++ 14'te?](http://go.microsoft.com/fwlink/p/?linkid=397954).
+Std::random_shuffle() işlevi yerine kullanım dışı [std::shuffle](../standard-library/algorithm-functions.md#shuffle). Bir kod örneği ve daha fazla bilgi için bkz: [ \<rastgele >](../standard-library/random.md) ve Stack Overflow post [neden std::random_shuffle yöntemleri kaldırılmaktadır C ++ 14'te?](https://go.microsoft.com/fwlink/p/?linkid=397954).
 
 ## <a name="remove"></a>  Kaldır
 
@@ -7937,7 +7937,7 @@ Başvurulan aralık geçerli olmalı; Tüm İşaretçiler tekrar başvurulabilir
 
 Öğeleri eşdeğerdir, ancak mutlaka eşittir, hiçbiri diğerinden olduğu. `sort` Algoritması kararlı ve öğeleri, eşdeğer öğelerin göreli sıralamasını korunur, garanti eder.
 
-Çalışma zamanı karmaşıklığı `stable_sort` kullanılabilir bellek miktarına bağlıdır ancak (yeterli bellek verilir) en iyi durumda *O*( *N* günlük *N*) ve en kötü durumu olan *O*( *N* (günlük *N* ) 2), burada *N* =  *- soyadı.* Genellikle, `sort` algoritmasıdır kıyasla önemli ölçüde daha hızlı `stable_sort`.
+Çalışma zamanı karmaşıklığı `stable_sort` kullanılabilir bellek miktarına bağlıdır ancak (yeterli bellek verilir) en iyi durumda *O*( *N* günlük *N*) ve en kötü durumu olan *O*( *N* (günlük *N* ) 2), burada *N* =   *- soyadı.* Genellikle, `sort` algoritmasıdır kıyasla önemli ölçüde daha hızlı `stable_sort`.
 
 ### <a name="example"></a>Örnek
 

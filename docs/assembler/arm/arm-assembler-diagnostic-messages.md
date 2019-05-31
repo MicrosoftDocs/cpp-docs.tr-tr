@@ -20,12 +20,12 @@ helpviewer_keywords:
 - A4508
 - A4509
 ms.assetid: 52b38267-6023-4bdc-a0ef-863362f48eec
-ms.openlocfilehash: 867ef50065c6ed63a4da6d37523bd5a1f3cbadba
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 72c1ea64501ef8104fee9bdf914a1464c07c3b76
+ms.sourcegitcommit: 28eae422049ac3381c6b1206664455dbb56cbfb6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62167849"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66449218"
 ---
 # <a name="arm-assembler-diagnostic-messages"></a>ARM Assembler tanılama iletileri
 
@@ -33,13 +33,13 @@ Microsoft ARM derleyicisi (*armasm*) bu karşılaştığında tanılama uyarıla
 
 ## <a name="syntax"></a>Sözdizimi
 
-> <em>filename</em>**(**<em>satır numarası</em>**):** \[ **hata**|**Uyarısı** ] **A**<em>numarası</em>**:** *iletisi*
+> <em>filename</em> **(** <em>satır numarası</em> **):** \[ **hata**|**Uyarısı** ] **A**<em>numarası</em> **:** *iletisi*
 
 ## <a name="diagnostic-messages---errors"></a>Tanılama iletileri - hata
 
 > A2193: Bu yönergeyi öngörülemeyen davranışlara oluşturur.
 
-ARM mimarisi, bu yönerge yürütme sırasında ne olacağını garanti edemez.  Bu yönerge, iyi tanımlanmış biçimleri hakkında daha fazla ayrıntı için inceleyin [ARM mimarisi Reference Manual](http://go.microsoft.com/fwlink/p/?linkid=246464).
+ARM mimarisi, bu yönerge yürütme sırasında ne olacağını garanti edemez.  Bu yönerge, iyi tanımlanmış biçimleri hakkında daha fazla ayrıntı için inceleyin [ARM mimarisi Reference Manual](https://go.microsoft.com/fwlink/p/?linkid=246464).
 
 ```asm
     ADD r0, r8, pc         ; A2193: this instruction generates unpredictable behavior
@@ -115,7 +115,7 @@ ARM modunda sabitleri belirtmek için alternatif bir sözdizimi yoktur.  Yazma y
 
 > A4509: Bu formu koşullu yönerge kullanım dışıdır
 
-Bu formu koşullu yönerge ARM ARMv8 mimarisinde tarafından onaylanmaz. Koşullu dalları kullanmak için kodu değiştirmenizi öneririz. Hangi koşullu yönergeleri hala desteklenmektedir görmek için başvurun [ARM mimarisi Reference Manual](http://go.microsoft.com/fwlink/p/?linkid=246464).
+Bu formu koşullu yönerge ARM ARMv8 mimarisinde tarafından onaylanmaz. Koşullu dalları kullanmak için kodu değiştirmenizi öneririz. Hangi koşullu yönergeleri hala desteklenmektedir görmek için başvurun [ARM mimarisi Reference Manual](https://go.microsoft.com/fwlink/p/?linkid=246464).
 
 Bu uyarı değil ne zaman yayılan **- oldit** komut satırı anahtarı kullanılır.
 

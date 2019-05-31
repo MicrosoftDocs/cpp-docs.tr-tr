@@ -6,12 +6,12 @@ helpviewer_keywords:
 - Windows Forms [C++], hosting as MFC Dialog
 - hosting Windows Forms control [C++]
 ms.assetid: 0434a9d7-8b14-48e6-ad69-9ba9a684677a
-ms.openlocfilehash: 4c4ee8c8b4570b598ba20b3bd5e1cf4c706ee885
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 5b216580f4965e0814b8a100f968a322641a3398
+ms.sourcegitcommit: 28eae422049ac3381c6b1206664455dbb56cbfb6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62222955"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66450722"
 ---
 # <a name="hosting-a-windows-form-user-control-as-an-mfc-dialog-box"></a>MFC İletişim Kutusu Olarak Windows Formu Kullanıcı Denetimi Barındırma
 
@@ -19,7 +19,7 @@ MFC sağlayan Şablon sınıfı [CWinFormsDialog](../mfc/reference/cwinformsdial
 
 İşlem, `CWinFormsDialog` kullanıcı denetimini barındırmak için kullandığı benzer açıklanan [MFC iletişim kutusu bir Windows formu kullanıcı denetimi barındırma](../dotnet/hosting-a-windows-form-user-control-in-an-mfc-dialog-box.md). Ancak, `CWinFormsDialog` başlatma ve böylece, el ile programlanmak zorunda değildir, kullanıcı denetimi barındırma yönetir.
 
-MFC'de Windows formlarını gösteren örnek bir uygulama için bkz. [MFC ve Windows Forms tümleştirme](http://www.microsoft.com/downloads/details.aspx?FamilyID=987021bc-e575-4fe3-baa9-15aa50b0f599&displaylang=en).
+MFC'de Windows formlarını gösteren örnek bir uygulama için bkz. [MFC ve Windows Forms tümleştirme](https://www.microsoft.com/downloads/details.aspx?FamilyID=987021bc-e575-4fe3-baa9-15aa50b0f599&displaylang=en).
 
 ### <a name="to-create-the-mfc-host-application"></a>MFC konak uygulaması oluşturmak için
 
@@ -35,7 +35,7 @@ MFC'de Windows formlarını gösteren örnek bir uygulama için bkz. [MFC ve Win
 
    İçinde **Çözüm Gezgini**, sağ **MFC03** proje düğümünü ve seçin **özellikleri**. **Özellik sayfaları** iletişim kutusu görüntülenir.
 
-   İçinde **özellik sayfaları** iletişim kutusundaki **yapılandırma özellikleri** ağaç denetiminden, select **genel**, ardından **Proje Varsayılanları**bölümünde, **ortak dil çalışma zamanı desteği** için **ortak dil çalışma zamanı desteği (/ clr)**. **Tamam**'ı tıklatın.
+   İçinde **özellik sayfaları** iletişim kutusundaki **yapılandırma özellikleri** ağaç denetiminden, select **genel**, ardından **Proje Varsayılanları**bölümünde, **ortak dil çalışma zamanı desteği** için **ortak dil çalışma zamanı desteği (/ clr)** . **Tamam**'ı tıklatın.
 
 1. .NET denetimine bir başvuru ekleyin.
 

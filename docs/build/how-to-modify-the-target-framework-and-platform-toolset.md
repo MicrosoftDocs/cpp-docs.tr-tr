@@ -5,12 +5,12 @@ ms.date: 05/06/2019
 helpviewer_keywords:
 - 'msbuild (c++), howto: modify target framework and platform toolset'
 ms.assetid: 031b1d54-e6e1-4da7-9868-3e75a87d9ffe
-ms.openlocfilehash: c3d6b50a57cab9cc63657949fceccebf4ea6b8c9
-ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.openlocfilehash: b2cf5ac5c6a339917b87a25001be568a7caa2247
+ms.sourcegitcommit: 28eae422049ac3381c6b1206664455dbb56cbfb6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65220680"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66450744"
 ---
 # <a name="how-to-modify-the-target-framework-and-platform-toolset"></a>Nasıl yapılır: Hedef Framework ve Platform araç kümesini değiştirme
 
@@ -22,7 +22,7 @@ Visual Studio değiştirebilirsiniz C++ proje .NET Framework'ün farklı sürüm
 Ayrıca, hedef Framework'ü değiştirdiğinizde, platform araç takımını, Framework destekleyen bir sürüm olarak değiştirin. Örneğin, .NET Framework 4.5 hedeflemek için Visual Studio 2015 (v140), Visual Studio 2013 (v120) veya Visual Studio 2012 (v110) gibi uyumlu bir platform araç takımını kullanmanız gerekir. Kullanabileceğiniz **Windows7.1SDK** .NET Framework 2.0, 3.0, 3.5 ve 4 ve x86, Itanium, hedef platform araç setini ve x64 platformlar.
 
 > [!NOTE]
->  Hedef platform araç takımını değiştirmek için Visual Studio veya Windows Platform SDK ilişkili sürümü olması gerekir. Örneğin, Itanium platformunu hedeflemek için **Windows7.1SDK** platform araç olmalıdır [Windows 7 için Microsoft Windows SDK ve .NET Framework 4 SP1](http://www.microsoft.com/download/details.aspx?id=8279) yüklü; ancak kullanabilirsiniz doğru Framework sürümünü ve platform araç kümesini hedeflemek koşuluyla geliştirme çalışmalarınızı yapmak için Visual Studio'nun uyumlu başka bir sürümü.
+>  Hedef platform araç takımını değiştirmek için Visual Studio veya Windows Platform SDK ilişkili sürümü olması gerekir. Örneğin, Itanium platformunu hedeflemek için **Windows7.1SDK** platform araç olmalıdır [Windows 7 için Microsoft Windows SDK ve .NET Framework 4 SP1](https://www.microsoft.com/download/details.aspx?id=8279) yüklü; ancak kullanabilirsiniz doğru Framework sürümünü ve platform araç kümesini hedeflemek koşuluyla geliştirme çalışmalarınızı yapmak için Visual Studio'nun uyumlu başka bir sürümü.
 
 Özel platform araç takımı oluşturarak hedef platformu genişletebilirsiniz. Daha fazla bilgi için [yerel C++ çoklu sürüm desteğinin](https://blogs.msdn.microsoft.com/vcblog/2009/12/08/c-native-multi-targeting/) Visual C++ blogundaki.
 

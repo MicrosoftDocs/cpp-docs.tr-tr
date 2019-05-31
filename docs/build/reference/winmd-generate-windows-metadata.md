@@ -4,18 +4,18 @@ ms.date: 11/04/2016
 f1_keywords:
 - VC.Project.VCLinkerTool.GenerateWindowsMetadata
 ms.assetid: bcfb4901-411e-4c9e-9f78-23028b6e5fcc
-ms.openlocfilehash: 93db20d14d3477734e35d33111246f9459310b90
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 45d6492c87b7543a54d031f02dcf09e319150131
+ms.sourcegitcommit: 28eae422049ac3381c6b1206664455dbb56cbfb6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62317165"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66449708"
 ---
 # <a name="winmd-generate-windows-metadata"></a>/WINMD (Windows Meta Verileri Oluşturun)
 
 Bir Windows çalışma zamanı meta veri (.winmd) dosyasının oluşturulmasını etkinleştirir.
 
-> **/WINMD**\[**:**{**NO**\|**ONLY**}]
+> **/WINMD**\[ **:** {**NO**\|**ONLY**}]
 
 ## <a name="arguments"></a>Arguments
 
@@ -30,7 +30,7 @@ Bağlayıcı, yalnızca .winmd dosyası, ancak değil ikili yürütülebilir dos
 
 ## <a name="remarks"></a>Açıklamalar
 
-**/WINMD** bağlayıcı seçeneği UWP uygulamaları ve Windows çalışma zamanı bileşenleri için bir Windows çalışma zamanı meta veri (.winmd) dosyası oluşturma denetlemek için kullanılır. .Winmd dosyası için Windows çalışma zamanı türlerini ve çalışma zamanı bileşenleri, uygulamaları bu türlerden birini söz konusu olduğunda meta verileri içeren DLL türüdür. Meta veriler aşağıdaki [ECMA-335](http://www.ecma-international.org/publications/standards/Ecma-335.htm) standart.
+**/WINMD** bağlayıcı seçeneği UWP uygulamaları ve Windows çalışma zamanı bileşenleri için bir Windows çalışma zamanı meta veri (.winmd) dosyası oluşturma denetlemek için kullanılır. .Winmd dosyası için Windows çalışma zamanı türlerini ve çalışma zamanı bileşenleri, uygulamaları bu türlerden birini söz konusu olduğunda meta verileri içeren DLL türüdür. Meta veriler aşağıdaki [ECMA-335](https://www.ecma-international.org/publications/standards/Ecma-335.htm) standart.
 
 Varsayılan olarak, çıktı dosyası adını formundadır *binaryname*.winmd. Farklı bir dosya adı belirtmek için kullanın [/wınmdfıle](winmdfile-specify-winmd-file.md) seçeneği.
 

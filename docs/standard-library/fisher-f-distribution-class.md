@@ -26,12 +26,12 @@ helpviewer_keywords:
 - std::fisher_f_distribution [C++], param_type
 - std::fisher_f_distribution [C++], param_type
 ms.assetid: 9513b6ce-3309-4be1-829b-f504bca35bbf
-ms.openlocfilehash: cff7883c0b563e7d6a377bffcd0e48192dc01071
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 643c564d7407a79bd9e2e776946c4b8df37a2974
+ms.sourcegitcommit: 28eae422049ac3381c6b1206664455dbb56cbfb6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62159814"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66449926"
 ---
 # <a name="fisherfdistribution-class"></a>fisher_f_distribution Sınıfı
 
@@ -96,7 +96,7 @@ Tekdüzen rastgele sayı üretici altyapısı. Olası türleri için bkz: [ \<ra
 
 Dağıtım sınıfları ve üyeleri hakkında daha fazla bilgi için bkz: [ \<rastgele >](../standard-library/random.md).
 
-F dağılımı hakkında ayrıntılı bilgi için Wolfram MathWorld bkz [F dağılımı](http://go.microsoft.com/fwlink/p/?linkid=400899).
+F dağılımı hakkında ayrıntılı bilgi için Wolfram MathWorld bkz [F dağılımı](https://go.microsoft.com/fwlink/p/?linkid=400899).
 
 ## <a name="example"></a>Örnek
 

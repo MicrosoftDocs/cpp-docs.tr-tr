@@ -13,12 +13,12 @@ f1_keywords:
 helpviewer_keywords:
 - VC++ Directories Property Page
 ms.assetid: 428eeef6-f127-4271-b3ea-0ae6f2c3d624
-ms.openlocfilehash: 3822a3c751ac06154e4b13a12f449e7f0ff2cc07
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e739ea99df424f44dc43a28e3dc01c3529bb0c1a
+ms.sourcegitcommit: 28eae422049ac3381c6b1206664455dbb56cbfb6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62316875"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66450710"
 ---
 # <a name="vc-directories-property-page-windows"></a>VC ++ dizinleri özellik sayfası (Windows)
 
@@ -74,7 +74,7 @@ Kendi makroları iki yolla tanımlayabilirsiniz:
 
 - Bir .props dosyası içinde kullanıcı makroları tanımlar. Daha fazla bilgi için [özellik sayfası makroları](../working-with-project-properties.md).
 
-Daha fazla bilgi için şu blog postalarına bakın: [VC ++ dizinleri](http://blogs.msdn.com/b/vsproject/archive/2009/07/07/vc-directories.aspx), [devralınan özellikler ve özellik sayfaları](http://blogs.msdn.com/b/vsproject/archive/2009/06/23/inherited-properties-and-property-sheets.aspx), ve [Visual Studio 2010 C++ proje Yükseltme Kılavuzu](http://blogs.msdn.com/b/vcblog/archive/2010/03/02/visual-studio-2010-c-project-upgrade-guide.aspx).
+Daha fazla bilgi için şu blog postalarına bakın: [VC ++ dizinleri](https://blogs.msdn.com/b/vsproject/archive/2009/07/07/vc-directories.aspx), [devralınan özellikler ve özellik sayfaları](https://blogs.msdn.com/b/vsproject/archive/2009/06/23/inherited-properties-and-property-sheets.aspx), ve [Visual Studio 2010 C++ proje Yükseltme Kılavuzu](https://devblogs.microsoft.com/cppblog/visual-studio-2010-c-project-upgrade-guide/).
 
 ## <a name="directory-types"></a>Dizin Türleri
 

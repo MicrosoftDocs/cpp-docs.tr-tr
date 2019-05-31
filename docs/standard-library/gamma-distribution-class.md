@@ -26,12 +26,12 @@ helpviewer_keywords:
 - std::gamma_distribution [C++], param_type
 - std::gamma_distribution [C++], param_type
 ms.assetid: 2a6798ac-6152-41d7-8ef6-d684d92f1572
-ms.openlocfilehash: a5dcd2ed80a2858ac08d2d8e9cb03095ddfec5b8
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 06a7cbc8b054075f881474dbf49ad3bd42f0a9dc
+ms.sourcegitcommit: 28eae422049ac3381c6b1206664455dbb56cbfb6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62159684"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66450690"
 ---
 # <a name="gammadistribution-class"></a>gamma_distribution Sınıfı
 
@@ -97,7 +97,7 @@ Tekdüzen rastgele sayı üretici altyapısı. Olası türleri için bkz: [ \<ra
 
 Dağıtım sınıfları ve üyeleri hakkında daha fazla bilgi için bkz: [ \<rastgele >](../standard-library/random.md).
 
-Bir gamma dağılımı hakkında ayrıntılı bilgi için Wolfram MathWorld bkz [Gamma dağılımı](http://go.microsoft.com/fwlink/p/?linkid=401111).
+Bir gamma dağılımı hakkında ayrıntılı bilgi için Wolfram MathWorld bkz [Gamma dağılımı](https://go.microsoft.com/fwlink/p/?linkid=401111).
 
 ## <a name="example"></a>Örnek
 

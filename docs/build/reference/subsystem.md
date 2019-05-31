@@ -8,12 +8,12 @@ helpviewer_keywords:
 - -SUBSYSTEM editbin option
 - SUBSYSTEM editbin option
 ms.assetid: 515e4cdf-3cc4-4659-8764-1f2757b49215
-ms.openlocfilehash: b13313d57226719086cb73584543488f842057c1
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e67ec57c3a8d74fdd97a94ed04c29cad53af1ea5
+ms.sourcegitcommit: 28eae422049ac3381c6b1206664455dbb56cbfb6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62317724"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66450735"
 ---
 # <a name="subsystem"></a>/SUBSYSTEM
 
@@ -43,7 +43,7 @@ Windows karakter modu uygulaması. İşletim sistemi konsol uygulamaları için 
 **EFI_RUNTIME_DRIVER**<br/>
 Genişletilebilir Bellenim Arabirimi (EFI) görüntüsü
 
-EFI alt seçenekleri, Genişletilebilir Bellenim Arabirimi ortamında çalışan yürütülebilir resimleri açıklar. Bu ortam genellikle donanımla birlikte sağlanır ve işletim sistemi yüklenmeden önce yürütülür. EFI resim türleri arasındaki başlıca farklar şunlardır: görüntünün yüklendiği bellek konumu ve resim çağrısı döndüğünde alınmış eylemi. Denetimi geri döndüğünde, efı_applıcatıon görüntüsü kaldırılır. Efı_boot_servıce_drıver veya efı_runtıme_drıver yalnızca denetim bir hata koduyla döndüğünde kaldırılır. Efı_rom görüntüsü ROM'dan yürütülür. Daha fazla bilgi için bakın [birleşik EFI Forumu](http://www.uefi.org/) Web sitesi.
+EFI alt seçenekleri, Genişletilebilir Bellenim Arabirimi ortamında çalışan yürütülebilir resimleri açıklar. Bu ortam genellikle donanımla birlikte sağlanır ve işletim sistemi yüklenmeden önce yürütülür. EFI resim türleri arasındaki başlıca farklar şunlardır: görüntünün yüklendiği bellek konumu ve resim çağrısı döndüğünde alınmış eylemi. Denetimi geri döndüğünde, efı_applıcatıon görüntüsü kaldırılır. Efı_boot_servıce_drıver veya efı_runtıme_drıver yalnızca denetim bir hata koduyla döndüğünde kaldırılır. Efı_rom görüntüsü ROM'dan yürütülür. Daha fazla bilgi için bakın [birleşik EFI Forumu](https://www.uefi.org/) Web sitesi.
 
 **YEREL**<br/>
 Bir alt sistem ortamı olmadan çalışan kod — Örneğin, kernel modlu cihaz sürücüleri ve yerel sistem işlemleri. Bu seçenek genelde Windows Sistem özellikleri için ayrılmıştır.

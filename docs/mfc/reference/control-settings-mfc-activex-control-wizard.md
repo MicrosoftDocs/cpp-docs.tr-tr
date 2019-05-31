@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - MFC ActiveX Control Wizard, control settings
 ms.assetid: 2ccaa4fc-0d52-413e-afa3-ecd474c3f6f0
-ms.openlocfilehash: 34cc49fff88399a6c3cf5f7db71410c88e5c9bab
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 9d7653e61e6aada9205f599cf7a7ca6187dd139d
+ms.sourcegitcommit: 28eae422049ac3381c6b1206664455dbb56cbfb6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62373290"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66450548"
 ---
 # <a name="control-settings-mfc-activex-control-wizard"></a>Denetim Ayarları, MFC ActiveX Denetim Sihirbazı
 
@@ -57,7 +57,7 @@ Denetim verimliliğini en üst düzeye çıkarmak için bu sayfadaki seçenekler
    Denetimin standart Windows sahip olduğunu belirtir **hakkında** iletişim kutusunda, sürüm numarasını ve telif hakkı bilgilerini görüntüler.
 
    > [!NOTE]
-   > Kullanıcı denetimi için Yardım nasıl eriştiğini nasıl Yardım uygulanmıştır ve kapsayıcı yardımıyla Denetim Yardımı olup tümleştirdik bağlıdır. Hakkında Yardım, tümleştirme hakkında daha fazla bilgi için [MSDN Kitaplığı](http://go.microsoft.com/fwlink/p/?linkid=150542) Web sitesi, "Ekleyerek Context-Sensitive yardımcı olmak için bir MFC ActiveX denetimi" arayın.
+   > Kullanıcı denetimi için Yardım nasıl eriştiğini nasıl Yardım uygulanmıştır ve kapsayıcı yardımıyla Denetim Yardımı olup tümleştirdik bağlıdır. Hakkında Yardım, tümleştirme hakkında daha fazla bilgi için [MSDN Kitaplığı](https://go.microsoft.com/fwlink/p/?linkid=150542) Web sitesi, "Ekleyerek Context-Sensitive yardımcı olmak için bir MFC ActiveX denetimi" arayın.
 
    Bu seçeneği belirlediğinizde, bunu ekler `AboutBox` denetimi proje denetim sınıftaki yöntemi (C*ProjName*Ctrl.cpp) ve proje gönderme Haritası'na AboutBox ekler. Varsayılan olarak, bu seçenek seçilidir.
 
@@ -87,7 +87,7 @@ Denetim verimliliğini en üst düzeye çıkarmak için bu sayfadaki seçenekler
 
 - **Basit bir çerçeve denetimi görür**
 
-   Denetim için bit OLEMISC_SIMPLEFRAME ayarlayarak bir denetimin diğer denetimler için kapsayıcı olduğunu belirtir. Daha fazla bilgi için üzerinde [MSDN Kitaplığı](http://go.microsoft.com/fwlink/p/?linkid=150542) Web sitesi, "Basit çerçeve Site kapsama" arayın.
+   Denetim için bit OLEMISC_SIMPLEFRAME ayarlayarak bir denetimin diğer denetimler için kapsayıcı olduğunu belirtir. Daha fazla bilgi için üzerinde [MSDN Kitaplığı](https://go.microsoft.com/fwlink/p/?linkid=150542) Web sitesi, "Basit çerçeve Site kapsama" arayın.
 
 - **Zaman uyumsuz olarak özelliklerini yükler**
 

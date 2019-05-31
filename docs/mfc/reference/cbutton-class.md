@@ -74,12 +74,12 @@ helpviewer_keywords:
 - CButton [MFC], SetState
 - CButton [MFC], SetTextMargin
 ms.assetid: cdc76d5b-31da-43c5-bc43-fde4cb39de5b
-ms.openlocfilehash: b1a02d995594f5e079359151167ac970a3d1ab37
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 3283e974dc2b933049599fba0b6cf51c32a18ef3
+ms.sourcegitcommit: 28eae422049ac3381c6b1206664455dbb56cbfb6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62348698"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66450838"
 ---
 # <a name="cbutton-class"></a>CButton sınıfı
 
@@ -153,7 +153,7 @@ Düğme denetimi tarafından yollanır Windows bildirim iletilerini işlemek ist
 
 Her ileti eşleme girişi aşağıdaki biçimi alır:
 
-**ON\_**_bildirim_ **(** _kimliği_, _memberFxn_ **)**
+**ON\_** _bildirim_ **(** _kimliği_, _memberFxn_ **)**
 
 Burada *kimliği* bildirimi gönderilmesi denetimi alt pencere Kimliğini belirtir ve *memberFxn* bildirimini işlemek için yazdığınız üst üye işlev adıdır.
 
@@ -808,7 +808,7 @@ Bu yöntem başarılı olursa TRUE; Aksi takdirde FALSE.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir düğme veya komut bağlantı denetimi bir eylemi gerçekleştirmek için yükseltilmiş bir güvenlik izni gerektiriyorsa, denetimin kümesine `elevation required` durumu. Sonuç olarak, Windows kullanıcı hesabı denetimi (UAC) Kalkan simgesi denetiminde görüntüler. Daha fazla bilgi için bkz: "Kullanıcı hesabı denetimi" [MSDN](http://go.microsoft.com/fwlink/p/?linkid=18507).
+Bir düğme veya komut bağlantı denetimi bir eylemi gerçekleştirmek için yükseltilmiş bir güvenlik izni gerektiriyorsa, denetimin kümesine `elevation required` durumu. Sonuç olarak, Windows kullanıcı hesabı denetimi (UAC) Kalkan simgesi denetiminde görüntüler. Daha fazla bilgi için bkz: "Kullanıcı hesabı denetimi" [MSDN](https://go.microsoft.com/fwlink/p/?linkid=18507).
 
 Bu yöntem gönderir [BCM_SETSHIELD](/windows/desktop/Controls/bcm-setshield) Windows SDK'da açıklanan ileti.
 

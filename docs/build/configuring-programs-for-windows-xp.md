@@ -2,12 +2,12 @@
 title: Programları Windows XP için yapılandırma
 ms.date: 05/16/2019
 ms.assetid: 1e4487b3-d815-4123-878b-5718b22f0fd5
-ms.openlocfilehash: 6c94c6a66d0f22b8707012856a65df4b19965acb
-ms.sourcegitcommit: a10c9390413978d36b8096b684d5ed4cf1553bc8
+ms.openlocfilehash: 55753737b4868f33487ed980eaf37a8801f59638
+ms.sourcegitcommit: 28eae422049ac3381c6b1206664455dbb56cbfb6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65837131"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66450695"
 ---
 # <a name="configuring-programs-for-windows-xp"></a>Programları Windows XP için yapılandırma
 
@@ -69,4 +69,4 @@ Platform ve kitaplık desteği farklılıkları nedeniyle, bir Windows XP platfo
 
 - **HLSL oluşturma**
 
-   Varsayılan olarak, Windows XP araç HLSL kaynak kodu dosyaları için derlenmiyor. HLSL dosyalarını derlemek, indirip Haziran 2010 DirectX SDK'yı ve ardından projeyi kullanıcının VC, dahil etmek için dizinler. Daha fazla bilgi için "DirectX SDK kaydetmiyor Ekle/kitaplık yollarını Visual Studio 2010 ile" bölümünü [Haziran 2010 DirectX SDK indirme sayfası](http://www.microsoft.com/download/details.aspx?displaylang=en&id=6812).
+   Varsayılan olarak, Windows XP araç HLSL kaynak kodu dosyaları için derlenmiyor. HLSL dosyalarını derlemek, indirip Haziran 2010 DirectX SDK'yı ve ardından projeyi kullanıcının VC, dahil etmek için dizinler. Daha fazla bilgi için "DirectX SDK kaydetmiyor Ekle/kitaplık yollarını Visual Studio 2010 ile" bölümünü [Haziran 2010 DirectX SDK indirme sayfası](https://www.microsoft.com/download/details.aspx?displaylang=en&id=6812).

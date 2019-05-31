@@ -2,12 +2,12 @@
 title: Grafikler (C++ AMP)
 ms.date: 11/04/2016
 ms.assetid: 190a98a4-5f7d-442e-866b-b374ca74c16f
-ms.openlocfilehash: 4a40575d84c9a0efedcb3c7c9717fc310870b530
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 6e21c5af094ce90c8e4365ed4263198422ad1905
+ms.sourcegitcommit: 28eae422049ac3381c6b1206664455dbb56cbfb6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62405670"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66449874"
 ---
 # <a name="graphics-c-amp"></a>Grafikler (C++ AMP)
 
@@ -25,7 +25,7 @@ C++ AMP alanındaki birkaç API içeren [Concurrency::graphics](../../parallel/a
 
 ## <a name="short-vector-library"></a>Kısa vektör kitaplığı
 
-Kısa vektör kitaplığı bazı işlevlerini sağlar [vektör türü](http://go.microsoft.com/fwlink/p/?linkid=248500) HLSL'de tanımlı olan ve genellikle texel'in tanımlamak için kullanılır. Bir kısa vektörü aynı türde bir ile dört değerleri içeren bir veri yapısıdır. Desteklenen türler **çift**, **float**, **int**, `norm`, `uint`, ve `unorm`. Tür adları aşağıdaki tabloda gösterilmektedir. Her türü için var. Ayrıca karşılık gelen **typedef** adı, alt çizgi yoktur. Altçizginin olduğu türler bulunan [Concurrency::graphics Namespace](../../parallel/amp/reference/concurrency-graphics-namespace.md). Alt çizgileri olmayan türleri bulunan [CONCURRENCY::Graphics:: Direct3D Namespace](../../parallel/amp/reference/concurrency-graphics-direct3d-namespace.md) bunlar açıkça benzer şekilde adlandırılmış temel türlerden gibi şekilde isimlendirilmiş **__int8** ve **__int16**.
+Kısa vektör kitaplığı bazı işlevlerini sağlar [vektör türü](https://go.microsoft.com/fwlink/p/?linkid=248500) HLSL'de tanımlı olan ve genellikle texel'in tanımlamak için kullanılır. Bir kısa vektörü aynı türde bir ile dört değerleri içeren bir veri yapısıdır. Desteklenen türler **çift**, **float**, **int**, `norm`, `uint`, ve `unorm`. Tür adları aşağıdaki tabloda gösterilmektedir. Her türü için var. Ayrıca karşılık gelen **typedef** adı, alt çizgi yoktur. Altçizginin olduğu türler bulunan [Concurrency::graphics Namespace](../../parallel/amp/reference/concurrency-graphics-namespace.md). Alt çizgileri olmayan türleri bulunan [CONCURRENCY::Graphics:: Direct3D Namespace](../../parallel/amp/reference/concurrency-graphics-direct3d-namespace.md) bunlar açıkça benzer şekilde adlandırılmış temel türlerden gibi şekilde isimlendirilmiş **__int8** ve **__int16**.
 
 ||Uzunluğu 2|Uzunluğu 3|Uzunluğu 4|
 |-|--------------|--------------|--------------|
@@ -67,7 +67,7 @@ Kısa vektör kitaplığı destekler `vector_type.identifier` kısa vektörün b
 
 - İki veya dört bileşeni olan kısa bir vektör. Tek özel durum `double_4`, hangi izin verilmiyor.
 
-`texture` Nesnesi 1, 2 veya 3 derecesine sahip olabilir. `texture` Nesne, yalnızca başvuru ile yapılan bir çağrının tarafından tutulabilir `parallel_for_each`. Doku, GPU üzerinde Direct3D Doku nesneleri olarak saklanır. Dokular ve doku hücresi Direct3D'deki hakkında daha fazla bilgi için bkz: [Direct3D 11'de dokulara giriş](http://go.microsoft.com/fwlink/p/?linkid=248502).
+`texture` Nesnesi 1, 2 veya 3 derecesine sahip olabilir. `texture` Nesne, yalnızca başvuru ile yapılan bir çağrının tarafından tutulabilir `parallel_for_each`. Doku, GPU üzerinde Direct3D Doku nesneleri olarak saklanır. Dokular ve doku hücresi Direct3D'deki hakkında daha fazla bilgi için bkz: [Direct3D 11'de dokulara giriş](https://go.microsoft.com/fwlink/p/?linkid=248502).
 
 Kullandığınız görüntü doku hücresi türü, grafik programlamada kullanılan pek çok doku biçiminden biri olabilir. Örneğin, RGBA biçimi, 32 bit 8 bit her R, G, B ve A skaler değer öğelerinin için kullanabilirsiniz. Grafik kartının doku donanımı, biçimi temel alarak tek tek öğelerine erişebilirsiniz. Örneğin, RGBA biçimi kullanıyorsanız, doku donanımı 8 bitlik her öğeyi bir 32 bitlik biçimde ayıklayabilir. C++ AMP'de, koddaki tek tek skaler öğelere bit kaydırma kullanmadan otomatik olarak erişebilir, böylece texel'inizin skaler öğe başına bit ayarlayabilirsiniz.
 
@@ -307,7 +307,7 @@ void write2ComponentTexture() {
 
 Gördüğünüz gibi birincil mipmap düzeyine tüm yaptığınız yazmak olduğunda iki kod örneği neredeyse aynıdır. Kullandıysanız `writeonly_texture_view` mevcut kodunuzu ve siz kodu, bunu değiştirmeniz gerekmez, geliştirmek planlamıyorsanız. Bu kodu öne çıkarmayı düşünüyorsanız, ancak kullanacak şekilde yeniden öneririz `texture_view` çünkü içindeki geliştirmeler yeni donanım doku özelliklerini desteklemektedir. Bu yeni özellikler hakkında daha fazla bilgi için okumaya devam edin.
 
-Kullanımdan kaldırılması hakkında daha fazla bilgi için `writeonly_texture_view`, bkz: [C++ amp'de doku görünümü tasarımına genel bakış](http://blogs.msdn.com/b/nativeconcurrency/archive/2013/07/25/overview-of-the-texture-view-design-in-c-amp.aspx) paralel programlama yerel kod blog içinde.
+Kullanımdan kaldırılması hakkında daha fazla bilgi için `writeonly_texture_view`, bkz: [C++ amp'de doku görünümü tasarımına genel bakış](https://blogs.msdn.com/b/nativeconcurrency/archive/2013/07/25/overview-of-the-texture-view-design-in-c-amp.aspx) paralel programlama yerel kod blog içinde.
 
 ### <a name="instantiating-texture-view-objects"></a>Doku görünüm nesnelerini başlatma
 
@@ -379,9 +379,9 @@ void write2ComponentTexture() {
 
 Doku görünümleri öğeleri, kayan nokta türlerine dayanan dayalı — Örneğin, float, float_2 veya float_4 — ayrıca çeşitli donanım desteği avantajlarından yararlanmak için doku örnekleme kullanarak okuma filtreleme modları ve adresleme modları. C++ AMP, hesaplama senaryolarında en yaygın iki filtreleme modunu destekler; nokta filtreleme (en yakın komşu) ve doğrusal filtreleme (Ağırlıklı ortama) — ve dört adresleme modunu — kaydırılmış, yansıtılan, kenetlenen ve sınır. Adresleme modları hakkında daha fazla bilgi için bkz. [address_mode numaralandırması](reference/concurrency-graphics-namespace-enums.md#address_mode).
 
-C++ AMP'nin doğrudan desteklediği modlara ek olarak, diğer filtreleme modlarına ve adresleme modlarına temel platform, doğrudan platformun API'leri kullanılarak oluşturulmuş bir doku örnekleyicisini benimsemek için Interop API'leri kullanarak erişebilirsiniz. Örneğin Direct3D anizotropik filtreleme gibi diğer filtreleme modlarını destekler ve bir dokunun her boyut için farklı bir adresleme modu uygulayabilir. Direct3D API'leri kullanılarak anizotropik filtreleme ile koordinatları dikey olarak sarılan, yatay olarak yansıtılan ve örneklenen bir doku örnekleyici oluşturabilir ve kullanarak bu örnekleyici C++ AMP kodunuzda yararlanarak `make_sampler` interop API'sini. Daha fazla bilgi için [C++ amp'de doku örnekleme](http://blogs.msdn.com/b/nativeconcurrency/archive/2013/07/18/texture-sampling-in-c-amp.aspx) paralel programlama yerel kod blog içinde.
+C++ AMP'nin doğrudan desteklediği modlara ek olarak, diğer filtreleme modlarına ve adresleme modlarına temel platform, doğrudan platformun API'leri kullanılarak oluşturulmuş bir doku örnekleyicisini benimsemek için Interop API'leri kullanarak erişebilirsiniz. Örneğin Direct3D anizotropik filtreleme gibi diğer filtreleme modlarını destekler ve bir dokunun her boyut için farklı bir adresleme modu uygulayabilir. Direct3D API'leri kullanılarak anizotropik filtreleme ile koordinatları dikey olarak sarılan, yatay olarak yansıtılan ve örneklenen bir doku örnekleyici oluşturabilir ve kullanarak bu örnekleyici C++ AMP kodunuzda yararlanarak `make_sampler` interop API'sini. Daha fazla bilgi için [C++ amp'de doku örnekleme](https://blogs.msdn.com/b/nativeconcurrency/archive/2013/07/18/texture-sampling-in-c-amp.aspx) paralel programlama yerel kod blog içinde.
 
-Doku görünümleri ayrıca Mipmap okumayı da destekler. Salt okunur doku görünümlerinin örneklemede belirlenen bir dizi Orta-düzeylerini dinamik olarak örneklenebilir ve çünkü 1, 2 ya da 4 bileşenleri olan öğeler desteklenir (bir const öğe türüne sahip olanlar) en fazla esnekliği sunar. Bir bileşene sahip öğeleri olan okuma-yazma doku görünümleri ayrıca Mipmap, ancak yalnızca örneklemede belirlenen bir düzeyi destekler. Daha fazla bilgi için [mipmap'lar ile doku](http://blogs.msdn.com/b/nativeconcurrency/archive/2013/08/22/texture-with-mipmaps.aspx) paralel programlama yerel kod blog içinde.
+Doku görünümleri ayrıca Mipmap okumayı da destekler. Salt okunur doku görünümlerinin örneklemede belirlenen bir dizi Orta-düzeylerini dinamik olarak örneklenebilir ve çünkü 1, 2 ya da 4 bileşenleri olan öğeler desteklenir (bir const öğe türüne sahip olanlar) en fazla esnekliği sunar. Bir bileşene sahip öğeleri olan okuma-yazma doku görünümleri ayrıca Mipmap, ancak yalnızca örneklemede belirlenen bir düzeyi destekler. Daha fazla bilgi için [mipmap'lar ile doku](https://blogs.msdn.com/b/nativeconcurrency/archive/2013/08/22/texture-with-mipmaps.aspx) paralel programlama yerel kod blog içinde.
 
 ### <a name="writing-to-texture-view-objects"></a>Doku görünüm nesnelerine yazma
 
@@ -404,7 +404,7 @@ parallel_for_each(w_view.extent, [=](index<2> idx) restrict(amp)
 
 ## <a name="interoperability"></a>Birlikte Çalışabilirlik
 
-C++ AMP çalışma zamanı çalıştırılabilirliği Desteler `texture<T,1>` ve [ıd3d11texture1d arabirimi](http://go.microsoft.com/fwlink/p/?linkId=248503), arasında `texture<T,2>` ve [ıd3d11texture2d arabirimi](http://go.microsoft.com/fwlink/p/?linkId=255317), arasında `texture<T,3>`ve [ıd3d11texture3d arabirimi](http://go.microsoft.com/fwlink/p/?linkId=255377). [Get_texture](reference/concurrency-graphics-direct3d-namespace-functions.md#get_texture) yöntemi bir `texture` nesne ve döndürür bir `IUnknown` arabirimi. [Make_texture](reference/concurrency-graphics-direct3d-namespace-functions.md#make_texture) yöntemi bir `IUnknown` arabirimi ve `accelerator_view` nesne ve döndürür bir `texture` nesne.
+C++ AMP çalışma zamanı çalıştırılabilirliği Desteler `texture<T,1>` ve [ıd3d11texture1d arabirimi](https://go.microsoft.com/fwlink/p/?linkId=248503), arasında `texture<T,2>` ve [ıd3d11texture2d arabirimi](https://go.microsoft.com/fwlink/p/?linkId=255317), arasında `texture<T,3>`ve [ıd3d11texture3d arabirimi](https://go.microsoft.com/fwlink/p/?linkId=255377). [Get_texture](reference/concurrency-graphics-direct3d-namespace-functions.md#get_texture) yöntemi bir `texture` nesne ve döndürür bir `IUnknown` arabirimi. [Make_texture](reference/concurrency-graphics-direct3d-namespace-functions.md#make_texture) yöntemi bir `IUnknown` arabirimi ve `accelerator_view` nesne ve döndürür bir `texture` nesne.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -5,12 +5,12 @@ description: Microsoft C++ Visual Studio 2019 içinde C ++ 20 dili standardına 
 ms.technology: cpp-language
 author: mikeblome
 ms.author: mblome
-ms.openlocfilehash: e9bc86683ec89858d0b6cb39dcc6a65cf4eb05b2
-ms.sourcegitcommit: 61121faf879cc581a4d39e4baccabf7cf1f673a5
+ms.openlocfilehash: 02b778f10ad94342c922a4e79a856cc2a7d53076
+ms.sourcegitcommit: 28eae422049ac3381c6b1206664455dbb56cbfb6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "65934130"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66451211"
 ---
 # <a name="c-conformance-improvements-in-visual-studio-2019-rtw-and-version-161improvements161"></a>C++Visual Studio 2019 RTW ve sürüm uyumluluğu geliştirmeleri [16.1](#improvements_161)
 
@@ -26,7 +26,7 @@ Modüller C ++ 20 standart resmi olarak sunulmuştur. Visual Studio 2017 sürüm
 
 ### <a name="modified-specification-of-aggregate-type"></a>Değiştirilen toplama türü belirtimi
 
-Bir toplama türü belirtimi, C ++ 20 değiştirildi (bkz [engelle kullanıcı bildirilen oluşturuculara sahip toplamalar](http://wg21.link/p1008r1)). Visual Studio 2019 içinde altında `/std:c++latest`, herhangi bir kullanıcı olarak bildirilen oluşturucusuna sahip bir sınıf (örneğin bir oluşturucu dahil olmak üzere bildirilen `= default` veya `= delete`) bir toplama ifadesi değil. Daha önce yalnızca kullanıcı tarafından sağlanan bir oluşturucu, bir sınıfın bir toplama engeller diskalifiye. Bu değişiklik bu türler nasıl başlatılabilir ek kısıtlamalar getirir.
+Bir toplama türü belirtimi, C ++ 20 değiştirildi (bkz [engelle kullanıcı bildirilen oluşturuculara sahip toplamalar](https://wg21.link/p1008r1)). Visual Studio 2019 içinde altında `/std:c++latest`, herhangi bir kullanıcı olarak bildirilen oluşturucusuna sahip bir sınıf (örneğin bir oluşturucu dahil olmak üzere bildirilen `= default` veya `= delete`) bir toplama ifadesi değil. Daha önce yalnızca kullanıcı tarafından sağlanan bir oluşturucu, bir sınıfın bir toplama engeller diskalifiye. Bu değişiklik bu türler nasıl başlatılabilir ek kısıtlamalar getirir.
 
 Aşağıdaki kod Visual Studio 2017'de hatasız derlenir, ancak C2280 ve Visual Studio 2019 altında içinde C2440 hataları başlatır `/std:c++latest`:
 
@@ -160,7 +160,7 @@ Uygulanan `remove_cvref` ve `remove_cvref_t` türü nitelikler [P0550](http://ww
 
 ### <a name="char8t"></a>char8_t
 
-[P0482r6](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/p0482r6.html). C ++ 20 UTF-8 kod birimlerini temsil etmek için kullanılan yeni bir karakter türü ekler. C ++ 20 U8 dize değişmez değerlerine sahip türü `const char8_t[N]` yerine `const char[N]`, olduğu durum daha önce. Benzer değişiklikler önerilen C standardı'için [N2231](http://www.open-std.org/jtc1/sc22/wg14/www/docs/n2231.htm). Char8_t geriye dönük uyumluluk düzeltme önerileri verilmiştir [P1423r0](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2019/p1423r0.html). Microsoft C++ derleyici belirttiğinizde bu char8_t desteği Visual Studio 2019 sürüm 16.1 ekler **/Zc:char8_t** derleyici seçeneği. Gelecekte ile desteklenecektir [/Std: c ++ Son](../../build/reference/std-specify-language-standard-version.md), hangi döndürülebilir C ++ 17 davranışına **/Zc:char8_t-**. Gerçek derleme etkilemez alacaklardır yalnızca IntelliSense hataları göreceğiniz şekilde çalışmasını sağlayan IntelliSense EDG derleyici henüz, desteklemez.
+[P0482r6](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/p0482r6.html). C ++ 20 UTF-8 kod birimlerini temsil etmek için kullanılan yeni bir karakter türü ekler. C ++ 20 U8 dize değişmez değerlerine sahip türü `const char8_t[N]` yerine `const char[N]`, olduğu durum daha önce. Benzer değişiklikler önerilen C standardı'için [N2231](http://www.open-std.org/jtc1/sc22/wg14/www/docs/n2231.htm). Char8_t geriye dönük uyumluluk düzeltme önerileri verilmiştir [P1423r0](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2019/p1423r0.html). Microsoft C++ derleyici belirttiğinizde bu char8_t desteği Visual Studio 2019 sürüm 16.1 ekler **/Zc:char8_t** derleyici seçeneği. Gelecekte ile desteklenecektir [/Std: c ++ Son](../../build/reference/std-specify-language-standard-version.md), hangi döndürülebilir C ++ 17 davranışına **/Zc:char8_t-** . Gerçek derleme etkilemez alacaklardır yalnızca IntelliSense hataları göreceğiniz şekilde çalışmasını sağlayan IntelliSense EDG derleyici henüz, desteklemez.
 
 #### <a name="example"></a>Örnek
 
@@ -200,7 +200,7 @@ long j = static_cast<long>(i);
 
 Yeni lambda işlemci altında genel lambda ifadeleri, bazı uyumluluk modu söz dizimsel denetimlerinde sağlayan [/Std: c ++ Son](../../build/reference/std-specify-language-standard-version.md) veya diğer bir dil moduyla altında **/ Deneysel: newLambdaProcessor**. 
 
-Visual Studio 2017'de uyarılar olmadan bu kod derlenir, ancak isteğe bağlı olarak Visual Studio 2019 hata üreten *C2760 söz dizimi hatası: beklenmeyen belirteç '\<kimliği-expr >', beklenen 'kimliği-expression'*:
+Visual Studio 2017'de uyarılar olmadan bu kod derlenir, ancak isteğe bağlı olarak Visual Studio 2019 hata üreten *C2760 söz dizimi hatası: beklenmeyen belirteç '\<kimliği-expr >', beklenen 'kimliği-expression'* :
 
 ```cpp
 void f() {

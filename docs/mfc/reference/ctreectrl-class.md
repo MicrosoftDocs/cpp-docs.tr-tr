@@ -162,12 +162,12 @@ helpviewer_keywords:
 - CTreeCtrl [MFC], SortChildren
 - CTreeCtrl [MFC], SortChildrenCB
 ms.assetid: 96e20031-6161-4143-8c12-8d1816c66d90
-ms.openlocfilehash: 3819e861b7a5e6ff27fe632a33413b588a5a4835
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 2428c94eaa5dd371d58680f6317173709f684507
+ms.sourcegitcommit: 28eae422049ac3381c6b1206664455dbb56cbfb6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62323641"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66449559"
 ---
 # <a name="ctreectrl-class"></a>CTreeCtrl sınıfı
 
@@ -375,7 +375,7 @@ Başarılı olursa sıfır dışı Aksi durumda 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kullanım `CreateEx` yerine [Oluştur](#create) Windows genişletilmiş sitil önsöz tarafından belirtilen Genişletilmiş Windows stilleri uygulamak için **WS_EX_**.
+Kullanım `CreateEx` yerine [Oluştur](#create) Windows genişletilmiş sitil önsöz tarafından belirtilen Genişletilmiş Windows stilleri uygulamak için **WS_EX_** .
 
 ##  <a name="createdragimage"></a>  CTreeCtrl::CreateDragImage
 
@@ -1505,7 +1505,7 @@ Bir ağaç görünümü öğesi tanıtıcısını ( `HTREEITEM`) karşılık gel
 
 ### <a name="remarks"></a>Açıklamalar
 
-Erişilebilirlik Yardımcıları ile engelli yardımcı olan uygulamaları bilgisayarlara kullanılır. Erişilebilirlik tanımlayıcısı tarafından kullanılan `IAccessible` benzersiz bir pencerede bir öğe belirtmek için arabirim. Erişilebilirlik tanımlayıcıları hakkında daha fazla bilgi için "Hakkında Active Accessibility desteği" konusuna arama [Microsoft Developer Network](http://go.microsoft.com/fwlink/p/?linkid=56322).
+Erişilebilirlik Yardımcıları ile engelli yardımcı olan uygulamaları bilgisayarlara kullanılır. Erişilebilirlik tanımlayıcısı tarafından kullanılan `IAccessible` benzersiz bir pencerede bir öğe belirtmek için arabirim. Erişilebilirlik tanımlayıcıları hakkında daha fazla bilgi için "Hakkında Active Accessibility desteği" konusuna arama [Microsoft Developer Network](https://go.microsoft.com/fwlink/p/?linkid=56322).
 
 Bu yöntem gönderir [TVM_MAPACCIDTOHTREEITEM](/windows/desktop/Controls/tvm-mapaccidtohtreeitem) Windows SDK'da açıklanan ileti.
 
@@ -1541,7 +1541,7 @@ Karşılık gelen erişilebilirlik tanımlayıcı *hItem* parametresi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Erişilebilirlik Yardımcıları ile engelli yardımcı olan uygulamaları bilgisayarlara kullanılır. Erişilebilirlik tanımlayıcısı tarafından kullanılan `IAccessible` benzersiz bir pencerede bir öğe belirtmek için arabirim. Erişilebilirlik tanımlayıcıları hakkında daha fazla bilgi için "Hakkında Active Accessibility desteği" konusuna arama [Microsoft Developer Network](http://go.microsoft.com/fwlink/p/?linkid=56322).
+Erişilebilirlik Yardımcıları ile engelli yardımcı olan uygulamaları bilgisayarlara kullanılır. Erişilebilirlik tanımlayıcısı tarafından kullanılan `IAccessible` benzersiz bir pencerede bir öğe belirtmek için arabirim. Erişilebilirlik tanımlayıcıları hakkında daha fazla bilgi için "Hakkında Active Accessibility desteği" konusuna arama [Microsoft Developer Network](https://go.microsoft.com/fwlink/p/?linkid=56322).
 
 Bu yöntem gönderir [TVM_MAPHTREEITEMTOACCID](/windows/desktop/Controls/tvm-maphtreeitemtoaccid) Windows SDK'da açıklanan ileti.
 
@@ -2281,7 +2281,7 @@ void ShowInfoTip(HTREEITEM hItem);
 
 ### <a name="remarks"></a>Açıklamalar
 
-Araç ipuçları ve infotips arasındaki fark hakkında daha fazla bilgi için "Araç ipuçları ve Infotips" konusuna arama [Microsoft Developer Network](http://go.microsoft.com/fwlink/p/?linkid=56322).
+Araç ipuçları ve infotips arasındaki fark hakkında daha fazla bilgi için "Araç ipuçları ve Infotips" konusuna arama [Microsoft Developer Network](https://go.microsoft.com/fwlink/p/?linkid=56322).
 
 Bu yöntem gönderir [TVM_SHOWINFOTIP](/windows/desktop/Controls/tvm-showinfotip) Windows SDK'da açıklanan ileti.
 

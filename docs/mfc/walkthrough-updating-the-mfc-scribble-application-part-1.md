@@ -9,12 +9,12 @@ helpviewer_keywords:
 - MFC Feature Pack, update existing application
 - walkthroughs [MFC], update existing application
 ms.assetid: aa6330d3-6cfc-4c79-8fcb-0282263025f7
-ms.openlocfilehash: cba28039cb7755149b35a47ddee82b6274fe4c72
-ms.sourcegitcommit: 283cb64fd7958a6b7fbf0cd8534de99ac8d408eb
+ms.openlocfilehash: a12c2bd2c1c1963630a1bd74b56f2c832573cc94
+ms.sourcegitcommit: 28eae422049ac3381c6b1206664455dbb56cbfb6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "64558216"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66450519"
 ---
 # <a name="walkthrough-updating-the-mfc-scribble-application-part-1"></a>İzlenecek yol: (Kısım 1) MFC karalama uygulamasını güncelleştirme
 
@@ -24,7 +24,7 @@ Bu kılavuz satırı çizimler için fare kullanmanıza olanak sağlayan Klasik 
 
 ## <a name="prerequisites"></a>Önkoşullar
 
-[1.0 MFC karalama örnek](http://download.microsoft.com/download/4/0/9/40946FEC-EE5C-48C2-8750-B0F8DA1C99A8/MFC/general/Scribble.zip.exe). Visual Studio 2017 veya sonraki bir sürüme dönüştürme hakkında daha fazla yardım için bkz: [Taşıma Kılavuzu: MFC Scribble](../porting/porting-guide-mfc-scribble.md).
+[1.0 MFC karalama örnek](https://download.microsoft.com/download/4/0/9/40946FEC-EE5C-48C2-8750-B0F8DA1C99A8/MFC/general/Scribble.zip.exe). Visual Studio 2017 veya sonraki bir sürüme dönüştürme hakkında daha fazla yardım için bkz: [Taşıma Kılavuzu: MFC Scribble](../porting/porting-guide-mfc-scribble.md).
 
 ##  <a name="top"></a> Bölümleri
 
@@ -171,7 +171,7 @@ Bir Şerit oluşan **uygulama** düğmesi, Şeridin sol tarafındaki büyük dü
 
 1. Tasarım görünümünde tıklayın **uygulama** özelliklerini görüntülemek için düğme. Özellik değerleri aşağıdaki gibi değiştirin: **Görüntü** için `IDB_RIBBON_MAIN`, **istemi** için `File`, **anahtarları** için `f`, **büyük resimler** için `IDB_RIBBON_FILELARGE`ve **Küçük resimler** için `IDB_RIBBON_FILESMALL`.
 
-1. Kullanıcı tıkladığında açılan menüden aşağıdaki değişiklikleri oluşturma **uygulama** düğmesi. Üç nokta simgesine tıklayın (**...** ) yanındaki **ana öğeler** açmak için **öğe düzenleyici**.
+1. Kullanıcı tıkladığında açılan menüden aşağıdaki değişiklikleri oluşturma **uygulama** düğmesi. Üç nokta simgesine tıklayın ( **...** ) yanındaki **ana öğeler** açmak için **öğe düzenleyici**.
 
    1. İle **öğesi** türü **düğmesi** seçili tıklayın **Ekle** bir düğme eklemek için. Değişiklik **açıklamalı alt yazı** için `&New`, **kimliği** için `ID_FILE_NEW`, **görüntü** için `0`, **büyük görüntü** için`0`.
 
@@ -199,7 +199,7 @@ Bir Şerit oluşan **uygulama** düğmesi, Şeridin sol tarafındaki büyük dü
 
 1. Aşağıdaki değişiklik alt kısmında görüntülenen bir çıkış düğmesi oluşturur **uygulama** düğmesi menüsü.
 
-   1. İçinde **özellikleri** penceresinde üç noktaya tıklayın (**...** ) yanındaki **düğmesi** açmak için **öğe düzenleyici**.
+   1. İçinde **özellikleri** penceresinde üç noktaya tıklayın ( **...** ) yanındaki **düğmesi** açmak için **öğe düzenleyici**.
 
    1. İle **öğesi** türü **düğmesi** seçili tıklayın **Ekle** bir düğme eklemek için. Değişiklik **açıklamalı alt yazı** için `E&xit`, **kimliği** için `ID_APP_EXIT`, **görüntü** için `8`.
 

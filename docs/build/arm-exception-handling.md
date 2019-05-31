@@ -2,12 +2,12 @@
 title: ARM özel durum işleme
 ms.date: 07/11/2018
 ms.assetid: fe0e615f-c033-4ad5-97f4-ff96af45b201
-ms.openlocfilehash: 8a2bae8e42ac6a624bebe7c185ac7e0ade8d5491
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f4e56284ce8db18ec76b0143253ee1e25f3fd82c
+ms.sourcegitcommit: 28eae422049ac3381c6b1206664455dbb56cbfb6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62195361"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66450486"
 ---
 # <a name="arm-exception-handling"></a>ARM özel durum işleme
 
@@ -21,7 +21,7 @@ ARM EABI (katıştırılmış uygulama ikili arabirimi) kullanan bir özel durum
 
 ### <a name="assumptions"></a>Varsayımlar
 
-ARM üzerinde Windows yürütülebilir görüntüler taşınabilir yürütülebilir (PE) biçimini kullanın. Daha fazla bilgi için [Microsoft PE ve COFF belirtimi](http://go.microsoft.com/fwlink/p/?linkid=84140). Özel durum bilgi işleme resminin .pdata ve .xdata bölümlerde depolanır.
+ARM üzerinde Windows yürütülebilir görüntüler taşınabilir yürütülebilir (PE) biçimini kullanın. Daha fazla bilgi için [Microsoft PE ve COFF belirtimi](https://go.microsoft.com/fwlink/p/?linkid=84140). Özel durum bilgi işleme resminin .pdata ve .xdata bölümlerde depolanır.
 
 Özel durum işleme mekanizmasını, üzerinde ARM ABI Windows için aşağıdaki kod ile ilgili bazı varsayımlarda bulunur:
 
