@@ -11,12 +11,12 @@ f1_keywords:
 helpviewer_keywords:
 - IPersistPropertyBagImpl class
 ms.assetid: 712af24d-99f8-40f2-9811-53b3ff6e5b19
-ms.openlocfilehash: 800c38c15e4ec8028fba9188d75e49be7ca51146
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 569a24fd08801de952e998f772afbc3478096628
+ms.sourcegitcommit: ecf274bcfe3a977c48745aaa243e5e731f1fdc5f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62274899"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66503140"
 ---
 # <a name="ipersistpropertybagimpl-class"></a>Ipersistpropertybagımpl sınıfı
 
@@ -50,9 +50,9 @@ Sınıfınız, türetilen `IPersistPropertyBagImpl`.
 
 ## <a name="remarks"></a>Açıklamalar
 
-[IPersistPropertyBag](https://msdn.microsoft.com/library/aa768205.aspx) bir nesne için bir istemci tarafından sağlanan özellik paketi özelliklerini kaydetmek arabirim sağlar. Sınıf `IPersistPropertyBagImpl` bu arabirimin bir varsayılan uygulamasını sağlar ve uygulayan `IUnknown` dökümünü almak için bilgi göndererek hata ayıklama cihazı oluşturur.
+[IPersistPropertyBag](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa768205\(v=vs.85\)) bir nesne için bir istemci tarafından sağlanan özellik paketi özelliklerini kaydetmek arabirim sağlar. Sınıf `IPersistPropertyBagImpl` bu arabirimin bir varsayılan uygulamasını sağlar ve uygulayan `IUnknown` dökümünü almak için bilgi göndererek hata ayıklama cihazı oluşturur.
 
-`IPersistPropertyBag` ile birlikte çalışır [IPropertyBag](https://msdn.microsoft.com/library/aa768196.aspx) ve [IErrorLog](https://msdn.microsoft.com/library/aa768231.aspx). Bu ikinci iki arabirim istemci tarafından uygulanmalıdır. Aracılığıyla `IPropertyBag`, istemci kaydeder ve tek nesnenin özelliklerini yükler. Aracılığıyla `IErrorLog`, hem nesnenin hem de istemci karşılaşılan hataları rapor edebilirsiniz.
+`IPersistPropertyBag` ile birlikte çalışır [IPropertyBag](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa768196\(v=vs.85\)) ve [IErrorLog](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa768231\(v=vs.85\)). Bu ikinci iki arabirim istemci tarafından uygulanmalıdır. Aracılığıyla `IPropertyBag`, istemci kaydeder ve tek nesnenin özelliklerini yükler. Aracılığıyla `IErrorLog`, hem nesnenin hem de istemci karşılaşılan hataları rapor edebilirsiniz.
 
 **İle ilgili makaleler** [ATL öğretici](../../atl/active-template-library-atl-tutorial.md), [ATL projesi oluşturma](../../atl/reference/creating-an-atl-project.md)
 
@@ -92,7 +92,7 @@ Başarılıysa S_OK döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bkz: [IPersistPropertyBag::InitNew](https://msdn.microsoft.com/library/aa768204.aspx) Windows SDK içinde.
+Bkz: [IPersistPropertyBag::InitNew](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa768204\(v=vs.85\)) Windows SDK içinde.
 
 ##  <a name="load"></a>  IPersistPropertyBagImpl::Load
 
@@ -106,7 +106,7 @@ STDMETHOD(Load)(LPPROPERTYBAG pPropBag, LPERRORLOG pErrorLog);
 
 ATL, bu bilgileri almak için nesnenin özellik eşlemesi kullanır.
 
-Bkz: [IPersistPropertyBag::Load](https://msdn.microsoft.com/library/aa768206.aspx) Windows SDK içinde.
+Bkz: [IPersistPropertyBag::Load](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa768206\(v=vs.85\)) Windows SDK içinde.
 
 ##  <a name="save"></a>  IPersistPropertyBagImpl::Save
 
@@ -123,7 +123,7 @@ STDMETHOD(Save)(
 
 ATL nesnenin özellik eşlemesi bu bilgileri depolamak için kullanır. Varsayılan olarak, bu yöntem değerinden bağımsız olarak tüm özellikleri kaydeder *fSaveAllProperties*.
 
-Bkz: [IPersistPropertyBag::Save](https://msdn.microsoft.com/library/aa768207.aspx) Windows SDK içinde.
+Bkz: [IPersistPropertyBag::Save](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa768207\(v=vs.85\)) Windows SDK içinde.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

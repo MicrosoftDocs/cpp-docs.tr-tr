@@ -30,12 +30,12 @@ helpviewer_keywords:
 - CFtpConnection [MFC], Rename
 - CFtpConnection [MFC], SetCurrentDirectory
 ms.assetid: 5e3a0501-8893-49cf-a3d5-0628d8d6b936
-ms.openlocfilehash: 12ef4de16279c5c2033a95df5928a6dfb7a2a652
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 8940b1d028edc76383470f913ccbe16cb8c0e9f0
+ms.sourcegitcommit: ecf274bcfe3a977c48745aaa243e5e731f1fdc5f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62181983"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66503709"
 ---
 # <a name="cftpconnection-class"></a>CFtpConnection sınıfı
 
@@ -208,7 +208,7 @@ Oluşturulacak dizinin adını içeren bir dize işaretçisi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa sıfır dışı; Aksi durumda 0. Windows işlev çağrı başarısız olursa [GetLastError](https://msdn.microsoft.com/library/windows/desktop/ms679360) hatanın nedenini belirlemek için çağrılabilir.
+Başarılı olursa sıfır dışı; Aksi durumda 0. Windows işlev çağrı başarısız olursa [GetLastError](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) hatanın nedenini belirlemek için çağrılabilir.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -246,7 +246,7 @@ Aşağıdaki bilgileri içeren bir DWORD işaretçi:
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa sıfır dışı; Aksi durumda 0. Çağrı başarısız olursa, Win32 işlevini [GetLastError](https://msdn.microsoft.com/library/windows/desktop/ms679360) hatanın nedenini belirlemek için çağrılabilir.
+Başarılı olursa sıfır dışı; Aksi durumda 0. Çağrı başarısız olursa, Win32 işlevini [GetLastError](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) hatanın nedenini belirlemek için çağrılabilir.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -284,7 +284,7 @@ Aşağıdaki bilgileri içeren bir DWORD işaretçi:
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa sıfır dışı; Aksi durumda 0. Çağrı başarısız olursa, Win32 işlevini [GetLastError](https://msdn.microsoft.com/library/windows/desktop/ms679360) hatanın nedenini belirlemek için çağrılabilir.
+Başarılı olursa sıfır dışı; Aksi durumda 0. Çağrı başarısız olursa, Win32 işlevini [GetLastError](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) hatanın nedenini belirlemek için çağrılabilir.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -344,7 +344,7 @@ Dosya alma bağlamı tanımlayıcısı. Bkz: **açıklamalar** hakkında daha fa
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa sıfır dışı; Aksi durumda 0. Çağrı başarısız olursa, Win32 işlevini [GetLastError](https://msdn.microsoft.com/library/windows/desktop/ms679360) hatanın nedenini belirlemek için çağrılabilir.
+Başarılı olursa sıfır dışı; Aksi durumda 0. Çağrı başarısız olursa, Win32 işlevini [GetLastError](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) hatanın nedenini belirlemek için çağrılabilir.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -434,7 +434,7 @@ Dosya yerleştirme içerik tanımlayıcısı. Bkz: **açıklamalar** hakkında d
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa sıfır dışı; Aksi durumda 0. Çağrı başarısız olursa, Win32 işlevini [GetLastError](https://msdn.microsoft.com/library/windows/desktop/ms679360) hatanın nedenini belirlemek için çağrılabilir.
+Başarılı olursa sıfır dışı; Aksi durumda 0. Çağrı başarısız olursa, Win32 işlevini [GetLastError](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) hatanın nedenini belirlemek için çağrılabilir.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -457,7 +457,7 @@ Kaldırmak için dosya adını içeren bir dize işaretçisi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa sıfır dışı; Aksi durumda 0. Çağrı başarısız olursa, Win32 işlevini [GetLastError](https://msdn.microsoft.com/library/windows/desktop/ms679360) hatanın nedenini belirlemek için çağrılabilir.
+Başarılı olursa sıfır dışı; Aksi durumda 0. Çağrı başarısız olursa, Win32 işlevini [GetLastError](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) hatanın nedenini belirlemek için çağrılabilir.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -478,7 +478,7 @@ Kaldırılacak dizini içeren bir dize işaretçisi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa sıfır dışı; Aksi durumda 0. Çağrı başarısız olursa, Win32 işlevini [GetLastError](https://msdn.microsoft.com/library/windows/desktop/ms679360) hatanın nedenini belirlemek için çağrılabilir.
+Başarılı olursa sıfır dışı; Aksi durumda 0. Çağrı başarısız olursa, Win32 işlevini [GetLastError](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) hatanın nedenini belirlemek için çağrılabilir.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -506,7 +506,7 @@ Yeni dosyanın adını içeren bir dize işaretçisi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa sıfır dışı; Aksi durumda 0. Çağrı başarısız olursa, Win32 işlevini [GetLastError](https://msdn.microsoft.com/library/windows/desktop/ms679360) hatanın nedenini belirlemek için çağrılabilir.
+Başarılı olursa sıfır dışı; Aksi durumda 0. Çağrı başarısız olursa, Win32 işlevini [GetLastError](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) hatanın nedenini belirlemek için çağrılabilir.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -527,7 +527,7 @@ Dizinin adını içeren bir dize işaretçisi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa sıfır dışı; Aksi durumda 0. Çağrı başarısız olursa, Win32 işlevini [GetLastError](https://msdn.microsoft.com/library/windows/desktop/ms679360) hatanın nedenini belirlemek için çağrılabilir.
+Başarılı olursa sıfır dışı; Aksi durumda 0. Çağrı başarısız olursa, Win32 işlevini [GetLastError](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) hatanın nedenini belirlemek için çağrılabilir.
 
 ### <a name="remarks"></a>Açıklamalar
 

@@ -50,12 +50,12 @@ helpviewer_keywords:
 - buttons [C++], tool tips
 - Toolbar editor [C++], creating tool tips
 ms.assetid: aa9f0adf-60f6-4f79-ab05-bc330f15ec43
-ms.openlocfilehash: 9d50561c598f17e251425972590c0663efe6e832
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f0faa93cd4ea1fdc2fad90a5d4d47f2feeef65e6
+ms.sourcegitcommit: ecf274bcfe3a977c48745aaa243e5e731f1fdc5f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62387904"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66504218"
 ---
 # <a name="toolbar-editor-c"></a>Araç çubuğu Düzenleyicisi (C++)
 
@@ -107,7 +107,7 @@ Araç çubuğu düğmesi, aşağıdaki özelliklere sahiptir:
 
 1. İçinde **kaynak Ekle** iletişim kutusunda **araç** içinde **kaynak türü** listeleyin ve ardından **yeni**.
 
-   Bir artı işareti (**+**) yanında görünen **araç** kaynak türü geldiğini araç şablonları kullanılabilir. Şablonlar listesinde genişletin, bir şablon seçin veya seçmek için artı işaretini seçin **yeni**.
+   Bir artı işareti ( **+** ) yanında görünen **araç** kaynak türü geldiğini araç şablonları kullanılabilir. Şablonlar listesinde genişletin, bir şablon seçin veya seçmek için artı işaretini seçin **yeni**.
 
 ### <a name="to-convert-bitmaps-to-toolbar-resources"></a>Bit eşlemleri araç çubuğu kaynakları dönüştürmek için
 
@@ -203,7 +203,6 @@ MFC veya ATL
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Kaynak Düzenleyicileri](../windows/resource-editors.md)
-<!--
-[Menus and Other Resources](https://msdn.microsoft.com/library/windows/desktop/ms632583.aspx)<br/>
-[Toolbar Button Properties](../windows/toolbar-button-properties.md)<br/>-->
+[Kaynak düzenleyicileri](../windows/resource-editors.md)
+[menüler ve diğer kaynaklar](/windows/desktop/menurc/resources)<br/>
+[Araç Çubuğu Düğmesi Özellikleri](../windows/toolbar-button-properties.md)<br/>

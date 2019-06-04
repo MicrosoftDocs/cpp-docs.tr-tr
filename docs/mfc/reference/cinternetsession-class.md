@@ -32,12 +32,12 @@ helpviewer_keywords:
 - CInternetSession [MFC], SetCookie
 - CInternetSession [MFC], SetOption
 ms.assetid: ef54feb4-9d0f-4e65-a45d-7a4cf6c40e51
-ms.openlocfilehash: 5ad1a1a0dde32358828d58a8f237337c4f62f3e5
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e3d6d319a963fbc24e89bf8c4c0858cd80ec5a9d
+ms.sourcegitcommit: ecf274bcfe3a977c48745aaa243e5e731f1fdc5f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62345597"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66503452"
 ---
 # <a name="cinternetsession-class"></a>Cınternetsession sınıfı
 
@@ -156,7 +156,7 @@ Tercih edilen CERN proxy adını, *dwAccessType* INTERNET_OPEN_TYPE_PROXY ayarla
 
 - INTERNET_FLAG_DONT_CACHE önbelleğe almaz verileri yerel olarak veya herhangi bir ağ geçidi sunucusu.
 
-- INTERNET_FLAG_OFFLINE indirme işlemleri yalnızca kalıcı önbellek aracılığıyla karşılanır. Öğeyi önbellekte mevcut değilse, uygun hata kodu döndürülür. Bu bayrak bit düzeyinde ile birleştirilebilir **veya** ( **&#124;**) işleci.
+- INTERNET_FLAG_OFFLINE indirme işlemleri yalnızca kalıcı önbellek aracılığıyla karşılanır. Öğeyi önbellekte mevcut değilse, uygun hata kodu döndürülür. Bu bayrak bit düzeyinde ile birleştirilebilir **veya** ( **&#124;** ) işleci.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -258,7 +258,7 @@ Boyutun belirtmek değişkeni *pstrCookieData* arabellek. İşlev başarılı ol
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa TRUE veya FALSE döndürür. Çağrı başarısız olursa Win32 işlevini çağırmak [GetLastError](https://msdn.microsoft.com/library/windows/desktop/ms679360) hatanın nedenini belirlemek için. Aşağıdaki hata değerler geçerlidir:
+Başarılı olursa TRUE veya FALSE döndürür. Çağrı başarısız olursa Win32 işlevini çağırmak [GetLastError](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) hatanın nedenini belirlemek için. Aşağıdaki hata değerler geçerlidir:
 
 - ERROR_NO_MORE_ITEMS belirtilen URL için tanımlama bilgisi ve tüm üst öğelerinden yoktur.
 
@@ -536,7 +536,7 @@ FTP, GOPHER, HTTP ve dosya türü Internet Hizmetleri için bir dosya tanıtıc�
 
 ### <a name="remarks"></a>Açıklamalar
 
-Parametre *CertOpenStore* INTERNET_FLAG_TRANSFER_ASCII veya INTERNET_FLAG_TRANSFER_BINARY ancak ikisini birden içermelidir. Kalan bayrak bit düzeyinde ile birleştirilebilir **veya** işleci ( **&#124;**).
+Parametre *CertOpenStore* INTERNET_FLAG_TRANSFER_ASCII veya INTERNET_FLAG_TRANSFER_BINARY ancak ikisini birden içermelidir. Kalan bayrak bit düzeyinde ile birleştirilebilir **veya** işleci ( **&#124;** ).
 
 `OpenURL`, Win32 işlevini sarmalayan `InternetOpenURL`, yalnızca indiriliyor, alma ve bir Internet sunucusundan verileri okumasını sağlar. `OpenURL` Hayır gerektirir böylece uzak bir konumdaki hiçbir dosya işlenmesine izin verir. [Cınternetconnection](../../mfc/reference/cinternetconnection-class.md) nesne.
 
@@ -616,11 +616,11 @@ Seçenek ayarları içeren bir DWORD.
 
 - INTERNET_FLAG_DONT_CACHE önbelleğe almaz verileri yerel olarak veya herhangi bir ağ geçidi sunucusu.
 
-- INTERNET_FLAG_OFFLINE indirme işlemleri yalnızca kalıcı önbellek aracılığıyla karşılanır. Öğeyi önbellekte mevcut değilse, uygun hata kodu döndürülür. Bu bayrak bit düzeyinde ile birleştirilebilir **veya** ( **&#124;**) işleci.
+- INTERNET_FLAG_OFFLINE indirme işlemleri yalnızca kalıcı önbellek aracılığıyla karşılanır. Öğeyi önbellekte mevcut değilse, uygun hata kodu döndürülür. Bu bayrak bit düzeyinde ile birleştirilebilir **veya** ( **&#124;** ) işleci.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İşlem başarılı olursa TRUE değeri döndürülür. Bir hata oluştu, FALSE değeri döndürülür. Çağrı başarısız olursa, Win32 işlevini [GetLastError](https://msdn.microsoft.com/library/windows/desktop/ms679360) hatanın nedenini belirlemek için çağrılabilir.
+İşlem başarılı olursa TRUE değeri döndürülür. Bir hata oluştu, FALSE değeri döndürülür. Çağrı başarısız olursa, Win32 işlevini [GetLastError](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) hatanın nedenini belirlemek için çağrılabilir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

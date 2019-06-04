@@ -40,12 +40,12 @@ helpviewer_keywords:
 - CDialog [MFC], OnCancel
 - CDialog [MFC], OnOK
 ms.assetid: ca64b77e-2cd2-47e3-8eff-c2645ad578f9
-ms.openlocfilehash: 9918b1ae38caacf2b2355ace6337e8e5e6260605
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 23d170cf023374fe61e13d907e3c3466c0352fe6
+ms.sourcegitcommit: ecf274bcfe3a977c48745aaa243e5e731f1fdc5f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62168329"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66504451"
 ---
 # <a name="cdialog-class"></a>CDialog sınıfı
 
@@ -276,7 +276,7 @@ virtual INT_PTR DoModal();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir **int** değerini belirten bir değer *Nsonuç* için geçirilen parametre [CDialog::EndDialog](#enddialog) iletişim kutusunu kapatmak için kullanılan üye işlevi. Dönüş değeri başka bir hata oluştu, çıkış penceresi hata bilgileri içerir ve bu durumda, işlev iletişim kutusu veya IDABORT oluşturulamadı -1 ise [GetLastError](https://msdn.microsoft.com/library/windows/desktop/ms679360).
+Bir **int** değerini belirten bir değer *Nsonuç* için geçirilen parametre [CDialog::EndDialog](#enddialog) iletişim kutusunu kapatmak için kullanılan üye işlevi. Dönüş değeri başka bir hata oluştu, çıkış penceresi hata bilgileri içerir ve bu durumda, işlev iletişim kutusu veya IDABORT oluşturulamadı -1 ise [GetLastError](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror).
 
 ### <a name="remarks"></a>Açıklamalar
 

@@ -72,12 +72,12 @@ helpviewer_keywords:
 - COleControlContainer [MFC], m_pWnd
 - COleControlContainer [MFC], m_siteMap
 ms.assetid: f7ce9246-0fb7-4f07-a83a-6c2390d0fdf8
-ms.openlocfilehash: 6e97f7ceafb92098d701cba64b4ec01d26d3991a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 1d386072b67568ecf58afd0853df2d7fbaeac68d
+ms.sourcegitcommit: ecf274bcfe3a977c48745aaa243e5e731f1fdc5f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62310444"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66504559"
 ---
 # <a name="colecontrolcontainer-class"></a>COleControlContainer sınıfı
 
@@ -473,7 +473,7 @@ Denetim tanımlayıcısı.
 Bir işlev başarı/hata değerini alan bir Boolean değişkeni işaretçisine (TRUE, başarı gösterir, FALSE, hata gösterir).
 
 *bSigned*<br/>
-İşlev ve başında bir eksi işareti metnini inceleyin bulursa bir işaretli tamsayı değeri döndürmek belirtir. Varsa *bSigned* parametresi TRUE, alınacak değerin bir işaretli tamsayı değer olduğunu belirtmek için dönüş değeri türüne bir **int** türü. Genişletilmiş hata bilgilerini almak için arama [GetLastError](https://msdn.microsoft.com/library/windows/desktop/ms679360).
+İşlev ve başında bir eksi işareti metnini inceleyin bulursa bir işaretli tamsayı değeri döndürmek belirtir. Varsa *bSigned* parametresi TRUE, alınacak değerin bir işaretli tamsayı değer olduğunu belirtmek için dönüş değeri türüne bir **int** türü. Genişletilmiş hata bilgilerini almak için arama [GetLastError](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror).
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -515,7 +515,7 @@ Tarafından işaret edilen arabellek kopyalanacağı dizenin karakter cinsinden 
 
 İşlev başarılı olursa, dönüş değeri arabelleğe sondaki null karakter hariç, kopyalanan karakter sayısını belirtir.
 
-İşlev başarısız olursa, dönüş değeri sıfırdır. Genişletilmiş hata bilgilerini almak için arama [GetLastError](https://msdn.microsoft.com/library/windows/desktop/ms679360).
+İşlev başarısız olursa, dönüş değeri sıfırdır. Genişletilmiş hata bilgilerini almak için arama [GetLastError](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror).
 
 ##  <a name="handlesetfocus"></a>  COleControlContainer::HandleSetFocus
 

@@ -20,12 +20,12 @@ helpviewer_keywords:
 - CNetAddressCtrl [MFC], GetAllowType
 - CNetAddressCtrl [MFC], SetAllowType
 ms.assetid: cb4c6aca-3f49-4b52-b76c-65f57096155b
-ms.openlocfilehash: ec4d7aa6f2a1061e632b81a27a0233cf5fdd1c63
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 23160c51466ce1a2857d3648dd5f4970dfe172f7
+ms.sourcegitcommit: ecf274bcfe3a977c48745aaa243e5e731f1fdc5f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62373818"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66504205"
 ---
 # <a name="cnetaddressctrl-class"></a>CNetAddressCtrl sınıfı
 
@@ -74,7 +74,7 @@ Aşağıdaki kod örneği, bir ağ adresi doğrulayan bir iletişim kutusu böl�
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki kod örneği iletişim üstbilgi dosyasından tanımlar [NC_ADDRESS](/windows/desktop/api/shellapi/ns-shellapi-tagnc_address) ve [NET_ADDRESS_INFO](https://msdn.microsoft.com/library/windows/desktop/bb773346) gerektirdiği değişkenleri [CNetAddressCtrl::GetAddress](#getaddress)yöntemi.
+Aşağıdaki kod örneği iletişim üstbilgi dosyasından tanımlar [NC_ADDRESS](/windows/desktop/api/shellapi/ns-shellapi-tagnc_address) ve [NET_ADDRESS_INFO](/windows/desktop/shell/hkey-type) gerektirdiği değişkenleri [CNetAddressCtrl::GetAddress](#getaddress)yöntemi.
 
 [!code-cpp[NVC_MFC_CNetAddressCtrl_s1#2](../../mfc/reference/codesnippet/cpp/cnetaddressctrl-class_2.h)]
 
@@ -191,7 +191,7 @@ HRESULT GetAddress(PNC_ADDRESS pAddress) const;
 ### <a name="parameters"></a>Parametreler
 
 *pAddress*<br/>
-[out içinde] İşaretçi bir [NC_ADDRESS](/windows/desktop/api/shellapi/ns-shellapi-tagnc_address) yapısı.  Ayarlama *pAddrInfo* adresine bu yapı üyesi bir [NET_ADDRESS_INFO](https://msdn.microsoft.com/library/windows/desktop/bb773346) siz GetAddress yöntemi çağırmadan önce yapılandırın.
+[out içinde] İşaretçi bir [NC_ADDRESS](/windows/desktop/api/shellapi/ns-shellapi-tagnc_address) yapısı.  Ayarlama *pAddrInfo* adresine bu yapı üyesi bir [NET_ADDRESS_INFO](/windows/desktop/shell/hkey-type) siz GetAddress yöntemi çağırmadan önce yapılandırın.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -199,7 +199,7 @@ Bu yöntem başarılıysa S_OK değeri; Aksi takdirde, bir COM hata kodu. Dönü
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem başarılı olursa [NET_ADDRESS_INFO](https://msdn.microsoft.com/library/windows/desktop/bb773346) yapısı ağ adresi hakkında ek bilgiler içerir.
+Bu yöntem başarılı olursa [NET_ADDRESS_INFO](/windows/desktop/shell/hkey-type) yapısı ağ adresi hakkında ek bilgiler içerir.
 
 Kullanım [CNetAddressCtrl::SetAllowType](#setallowtype) adresleri geçerli ağ adresi denetimi destekleyebilir türlerini belirtmek için yöntemi. Kullanım [CNetAddressCtrl::GetAddress](#getaddress) doğrulamak ve kullanıcının girdiği ağ adresi ayrıştırmak için yöntemi. Kullanım [CNetAddressCtrl::DisplayErrorTip](#displayerrortip) yöntemi, bir hata iletisi bilgi ipucu görüntülenecek [CNetAddressCtrl::GetAddress](#getaddress) yöntemi başarısız.
 
@@ -215,7 +215,7 @@ DWORD GetAllowType() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Tür adresi belirten bir bit düzeyinde (veya) bayrakların birleşimi ağ adresi denetimini destekler. Daha fazla bilgi için [NET_STRING](https://msdn.microsoft.com/library/windows/desktop/bb762586).
+Tür adresi belirten bir bit düzeyinde (veya) bayrakların birleşimi ağ adresi denetimini destekler. Daha fazla bilgi için [NET_STRING](/windows/desktop/shell/net-string).
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -233,7 +233,7 @@ HRESULT SetAllowType(DWORD dwAddrMask);
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|*dwAddrMask*|[in] Tür adresi belirten bir bit düzeyinde (veya) bayrakların birleşimi ağ adresi denetimini destekler. Daha fazla bilgi için [NET_STRING](https://msdn.microsoft.com/library/windows/desktop/bb762586).|
+|*dwAddrMask*|[in] Tür adresi belirten bir bit düzeyinde (veya) bayrakların birleşimi ağ adresi denetimini destekler. Daha fazla bilgi için [NET_STRING](/windows/desktop/shell/net-string).|
 
 ### <a name="return-value"></a>Dönüş Değeri
 

@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - ATL_DRAWINFO structure
 ms.assetid: dd2e2aa8-e8c5-403b-b4df-35c0f6f57fb7
-ms.openlocfilehash: 70329d3b2c18c8cd8e94854f40ff971c0b39a8f4
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 77ef56f73be1ed9ddfc63c459b6bab3ad4decb3f
+ms.sourcegitcommit: ecf274bcfe3a977c48745aaa243e5e731f1fdc5f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62261071"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66503424"
 ---
 # <a name="atldrawinfo-structure"></a>Atl_drawınfo yapısı
 
@@ -60,7 +60,7 @@ Hedef cihaz bağlamının bilgi tarafından işaret edilen `ptd` içinden nesne 
 Cihaz bağlamı üretileceği çizin. Penceresiz bir nesne için `hdcDraw` üyesiyse `MM_TEXT` pencerenin istemci koordinatları eşleşen mantıksal koordinatları ile eşleme modu. Ayrıca, cihaz bağlam normalde geçirilen aynı duruma olmalıdır bir `WM_PAINT` ileti.
 
 `prcBounds`<br/>
-İşaretçi bir [RECTL](https://msdn.microsoft.com/library/windows/desktop/dd162907) dikdörtgen belirterek yapısı `hdcDraw` ve nesne çizileceğini. Bu üye, konumlandırma ve nesnenin uzatma denetler. Bu üye penceresiz yerinde etkin nesne çizmek için NULL olmalıdır. Diğer her durumda, NULL geçerli bir değer değil ve neden bir `E_INVALIDARG` hata kodu. Kapsayıcı penceresiz bir nesne için bir NULL olmayan değer geçerse, nesne dikdörtgen ve belirtilen bir cihaz bağlamı içinde istenen boyut işlemesi gerekir. Bir kapsayıcı bir penceresiz nesneden nesnesinin ikinci, etkin olmayan görünüm işlemek için veya nesneyi yazdırmak için bu talep edebilir.
+İşaretçi bir [RECTL](/previous-versions//dd162907\(v=vs.85\)) dikdörtgen belirterek yapısı `hdcDraw` ve nesne çizileceğini. Bu üye, konumlandırma ve nesnenin uzatma denetler. Bu üye penceresiz yerinde etkin nesne çizmek için NULL olmalıdır. Diğer her durumda, NULL geçerli bir değer değil ve neden bir `E_INVALIDARG` hata kodu. Kapsayıcı penceresiz bir nesne için bir NULL olmayan değer geçerse, nesne dikdörtgen ve belirtilen bir cihaz bağlamı içinde istenen boyut işlemesi gerekir. Bir kapsayıcı bir penceresiz nesneden nesnesinin ikinci, etkin olmayan görünüm işlemek için veya nesneyi yazdırmak için bu talep edebilir.
 
 `prcWBounds`<br/>
 Varsa `hdcDraw` bir meta dosyası cihaz bağlamı (bkz [GetDeviceCaps](/windows/desktop/api/wingdi/nf-wingdi-getdevicecaps) Windows SDK), bu işaretçisidir bir `RECTL` yapısı temel alınan meta sınırlayıcı belirtme. Dikdörtgen yapı penceresi başlangıç ve pencere uzantı içeriyor. Bu değerler, meta çizmek için yararlıdır. Tarafından belirtilen dikdörtgen `prcBounds` bu iç içe geçmiş `prcWBounds` dikdörtgen; aynı koordinat alanında oldukları.

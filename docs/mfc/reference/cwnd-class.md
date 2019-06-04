@@ -818,12 +818,12 @@ helpviewer_keywords:
 - CWnd [MFC], WindowProc
 - CWnd [MFC], m_hWnd
 ms.assetid: 49a832ee-bc34-4126-88b3-bc1d9974f6c4
-ms.openlocfilehash: fc92497c4d43238f9cf6aea7132afb8c8dc27fbd
-ms.sourcegitcommit: 28eae422049ac3381c6b1206664455dbb56cbfb6
+ms.openlocfilehash: 50558e6959789dddc8223804394a0b242f793de5
+ms.sourcegitcommit: ecf274bcfe3a977c48745aaa243e5e731f1fdc5f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66451225"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66504249"
 ---
 # <a name="cwnd-class"></a>CWnd sınıfı
 
@@ -5607,7 +5607,7 @@ BOOL LockWindowUpdate();
 
 Kilitli bir pencere taşınamaz. Bir kerede yalnızca bir pencere kilitlenebilir. Bir pencere ile kilitli kilidini açmak için `LockWindowUpdate`, çağrı [UnlockWindowUpdate](#unlockwindowupdate).
 
-Kilitli bir pencere (veya tüm kilitli alt pencereleri) ile uygulama çağrıları, [GetDC,](https://msdn.microsoft.com/library/windows/desktop/dd144871) [GetDCEx,](https://msdn.microsoft.com/library/windows/desktop/dd144873) veya [BeginPaint](/windows/desktop/api/winuser/nf-winuser-beginpaint) Windows işlevi, çağrılan işlev, bir cihaz döndürür bağlam görünür olan bölge boştur. Çağırarak uygulama penceresi açana kadar meydana gelir `UnlockWindowUpdate` üye işlevi.
+Kilitli bir pencere (veya tüm kilitli alt pencereleri) ile uygulama çağrıları, [GetDC,](/windows/desktop/api/winuser/nf-winuser-getdc) [GetDCEx,](/windows/desktop/api/winuser/nf-winuser-getdcex) veya [BeginPaint](/windows/desktop/api/winuser/nf-winuser-beginpaint) Windows işlevi, çağrılan işlev, bir cihaz döndürür bağlam görünür olan bölge boştur. Çağırarak uygulama penceresi açana kadar meydana gelir `UnlockWindowUpdate` üye işlevi.
 
 Pencere güncelleştirmeleri kilitliyken sistem cihaz bağlamlarına kilitli bir pencere ile ilgili herhangi bir çizim işlem sınırlayıcı dikdörtgenini izler. Yeniden çizim iler hale, kilitli pencerenin ve onun alt pencereleri bir nihai zorlamak için bu sınırlayıcı bir dikdörtgen geçersiz [WM_PAINT](/windows/desktop/gdi/wm-paint) ileti güncelleştirme ekranı. Hiçbir çizim penceresi güncelleştirmeleri kilitliyken oluştuysa, hiçbir alan geçersiz kılınır.
 
@@ -10038,7 +10038,7 @@ afx_msg void OnUserChanged();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem alır [WM_USERCHANGED](https://msdn.microsoft.com/library/windows/desktop/ms632651) Windows SDK'da açıklanan bildirim iletisi. Oturum açıp kapatabilir, işletim sistemi kullanıcıya özgü ayarları güncelleştirir. Sistem ayarları güncelleştirildikten hemen sonra bu iletiyi gönderir.
+Bu yöntem alır [WM_USERCHANGED](/windows/desktop/winmsg/wm-userchanged) Windows SDK'da açıklanan bildirim iletisi. Oturum açıp kapatabilir, işletim sistemi kullanıcıya özgü ayarları güncelleştirir. Sistem ayarları güncelleştirildikten hemen sonra bu iletiyi gönderir.
 
 > [!NOTE]
 > Bu üye işlevi bir Windows iletisini işlemek için uygulamanıza izin vermek için framework tarafından çağırılır. İşlevinize geçirilen parametreler iletisini aldığınızda çerçeve tarafından alınan parametreleri yansıtır. Bu işlevin temel sınıf uygulamasını çağırırsanız, bu uygulamayı ilk ileti ve sağladığınız parametreler işleve geçirilen parametreleri kullanır.

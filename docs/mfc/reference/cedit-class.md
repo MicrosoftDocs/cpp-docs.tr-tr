@@ -94,12 +94,12 @@ helpviewer_keywords:
 - CEdit [MFC], ShowBalloonTip
 - CEdit [MFC], Undo
 ms.assetid: b1533c30-7f10-4663-88d3-8b7f2c9f7024
-ms.openlocfilehash: 45c03d142c34186660aa2715081ffb0f45e85ccc
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 295a58a86f35fca3b8d25706857162facc9cb3ea
+ms.sourcegitcommit: ecf274bcfe3a977c48745aaa243e5e731f1fdc5f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62164078"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66503741"
 ---
 # <a name="cedit-class"></a>CEdit sınıfı
 
@@ -181,7 +181,7 @@ Bir düzenleme denetimi tarafından yollanır Windows bildirim iletilerini işle
 
 Her ileti eşleme girişi aşağıdaki biçimi alır:
 
-  **ON_**_bildirim_**(** _kimliği_**,** _memberFxn_ **)**
+  **ON_** _bildirim_ **(** _kimliği_ **,** _memberFxn_ **)**
 
 Burada `id` bildirimi gönderilmesi düzenleme denetimi alt pencere Kimliğini belirtir ve `memberFxn` bildirimini işlemek için yazdığınız üst üye işlev adıdır.
 
@@ -708,7 +708,7 @@ Kullanıcı yazılan karakter yerine görüntülenecek karakter belirtir. Dönü
 
 ### <a name="remarks"></a>Açıklamalar
 
-ES_PASSWORD stiliyle düzenleme denetiminin oluşturursanız, Denetim DLL varsayılan parola karakteri belirler. Bildirim veya [InitCommonControlsEx](/windows/desktop/api/commctrl/nf-commctrl-initcommoncontrolsex) yöntemi belirleyen DLL destekleyen düzenleme denetimi. User32.dll düzenleme denetimini destekler, varsayılan parola karakteri yıldız işareti ise ('* ', U + 002A). Comctl32.dll sürüm 6 düzenleme denetiminin destekliyorsa, varsayılan karakter ('●', U + 25CF) siyah DAİRE uygulanır. Ortak Denetimler DLL ve sürümünü destekleyen hakkında daha fazla bilgi için bkz [kabuk ve ortak denetimleri sürümleri](https://msdn.microsoft.com/library/windows/desktop/bb776779).
+ES_PASSWORD stiliyle düzenleme denetiminin oluşturursanız, Denetim DLL varsayılan parola karakteri belirler. Bildirim veya [InitCommonControlsEx](/windows/desktop/api/commctrl/nf-commctrl-initcommoncontrolsex) yöntemi belirleyen DLL destekleyen düzenleme denetimi. User32.dll düzenleme denetimini destekler, varsayılan parola karakteri yıldız işareti ise ('* ', U + 002A). Comctl32.dll sürüm 6 düzenleme denetiminin destekliyorsa, varsayılan karakter ('●', U + 25CF) siyah DAİRE uygulanır. Ortak Denetimler DLL ve sürümünü destekleyen hakkında daha fazla bilgi için bkz [kabuk ve ortak denetimleri sürümleri](/previous-versions/windows/desktop/legacy/bb776779\(v=vs.85\)).
 
 Bu yöntem gönderir [EM_GETPASSWORDCHAR](/windows/desktop/Controls/em-getpasswordchar) Windows SDK'da açıklanan ileti.
 
@@ -867,7 +867,7 @@ Karakter dizini belirtilen satırın başına düzenleme denetiminin karakterler
 
 Bu üye işlevi, yalnızca birden çok satırlı düzenleme denetimleri tarafından işlenir.
 
-Daha fazla bilgi için [EM_LINEINDEX](https://msdn.microsoft.com/library/windows/desktop/bb761611) Windows SDK.
+Daha fazla bilgi için [EM_LINEINDEX](/windows/desktop/controls/em-lineindex) Windows SDK.
 
 ### <a name="example"></a>Örnek
 

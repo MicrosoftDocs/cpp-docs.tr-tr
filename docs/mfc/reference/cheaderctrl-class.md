@@ -64,12 +64,12 @@ helpviewer_keywords:
 - CHeaderCtrl [MFC], SetItem
 - CHeaderCtrl [MFC], SetOrderArray
 ms.assetid: b847ac90-5fae-4a87-88e0-ca45f77b8b3b
-ms.openlocfilehash: 51cdfb481892ba5057d4ca26ff4d6e51665557e5
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 5268a5ae336b0f96dfd6c0bd348a883e85ac32e6
+ms.sourcegitcommit: ecf274bcfe3a977c48745aaa243e5e731f1fdc5f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62160204"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66503548"
 ---
 # <a name="cheaderctrl-class"></a>CHeaderCtrl sınıfı
 
@@ -315,7 +315,7 @@ Başarılı olursa sıfır dışı; Aksi durumda 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kullanım `CreateEx` yerine `Create` Windows genişletilmiş sitil önsöz tarafından belirtilen Genişletilmiş Windows stilleri uygulamak için **WS_EX_**.
+Kullanım `CreateEx` yerine `Create` Windows genişletilmiş sitil önsöz tarafından belirtilen Genişletilmiş Windows stilleri uygulamak için **WS_EX_** .
 
 ##  <a name="createdragimage"></a>  CHeaderCtrl::CreateDragImage
 
@@ -761,7 +761,7 @@ Soldan sağa doğru üstbilgi denetimindeki öğeyi göründüğü sıfır taban
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi Win32 makrosu davranışını uygulayan [HDM_ORDERTOINDEX](https://msdn.microsoft.com/library/windows/desktop/bb775355)Windows SDK içinde açıklandığı gibi. Üstbilgi öğesi sıralama desteği sunulur.
+Bu üye işlevi Win32 makrosu davranışını uygulayan [HDM_ORDERTOINDEX](/windows/desktop/controls/hdm-ordertoindex)Windows SDK içinde açıklandığı gibi. Üstbilgi öğesi sıralama desteği sunulur.
 
 ##  <a name="setbitmapmargin"></a>  CHeaderCtrl::SetBitmapMargin
 

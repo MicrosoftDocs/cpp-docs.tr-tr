@@ -7,16 +7,16 @@ f1_keywords:
 helpviewer_keywords:
 - Platform::Guid Struct
 ms.assetid: 25c0bfb2-7f93-44d8-bdf4-ef4fbac3424a
-ms.openlocfilehash: 64c70b619380d7c2ed4aaaecad3ee01a1d0f79c7
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 8d6c71028e4f93064c7b4df978678b5f7c26d6bc
+ms.sourcegitcommit: ecf274bcfe3a977c48745aaa243e5e731f1fdc5f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62383327"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66504526"
 ---
 # <a name="platformguid-value-class"></a>Platform::Guid değer sınıfı
 
-Temsil eden bir [GUID](https://msdn.microsoft.com/library/windows/desktop/aa373931) Windows çalışma zamanı tür sisteminde türü.
+Temsil eden bir [GUID](/previous-versions/aa373931\(v=vs.80\)) Windows çalışma zamanı tür sisteminde türü.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -115,7 +115,7 @@ Guid(
 Öğesinin sonraki baytı `GUID`.
 
 *m*<br/>
-A `GUID` biçiminde bir [GUID yapısı](https://msdn.microsoft.com/library/windows/desktop/aa373931).
+A `GUID` biçiminde bir [GUID yapısı](/previous-versions/aa373931\(v=vs.80\)).
 
 *n*<br/>
 Kalan 8 bayt `GUID`.
@@ -194,7 +194,7 @@ Bu işleç sağlanan böylece `Guid` nesneleri C++ Standart Kitaplığı tarafı
 
 ## <a name="operator-call"></a> Guid::operator() Operator
 
-Örtük olarak dönüştürür bir `Platform::Guid` için bir [GUID yapısı](https://msdn.microsoft.com/library/windows/desktop/aa373931).
+Örtük olarak dönüştürür bir `Platform::Guid` için bir [GUID yapısı](/previous-versions/aa373931\(v=vs.80\)).
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -204,7 +204,7 @@ const GUID& Platform::Guid::operator();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-A [GUID yapısı](https://msdn.microsoft.com/library/windows/desktop/aa373931).
+A [GUID yapısı](/previous-versions/aa373931\(v=vs.80\)).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

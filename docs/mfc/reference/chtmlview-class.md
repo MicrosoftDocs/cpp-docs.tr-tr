@@ -194,12 +194,12 @@ helpviewer_keywords:
 - CHtmlView [MFC], SetWidth
 - CHtmlView [MFC], Stop
 ms.assetid: 904976af-73de-4aba-84ac-cfae8e2be09a
-ms.openlocfilehash: 17979dce7899820db3da3c24968385914c3a57e9
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 5ea7b59ccb95078324ae85bbf04c11c537f0f525
+ms.sourcegitcommit: ecf274bcfe3a977c48745aaa243e5e731f1fdc5f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62337901"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66503558"
 ---
 # <a name="chtmlview-class"></a>CHtmlView sınıfı
 
@@ -493,7 +493,7 @@ Komut çıkış bağımsız değişkenlerini belirtmek için kullanılan bir de�
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bkz: [IWebBrowser2::ExecWB](https://msdn.microsoft.com/library/aa752117.aspx) Windows SDK içinde.
+Bkz: [IWebBrowser2::ExecWB](/previous-versions//aa752117\(v=vs.85\)) Windows SDK içinde.
 
 ##  <a name="getaddressbar"></a>  CHtmlView::GetAddressBar
 
@@ -759,7 +759,7 @@ READYSTATE GetReadyState() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-A [READYSTATE](https://msdn.microsoft.com/library/aa768362.aspx) Windows SDK içinde açıklandığı gibi değer.
+A [READYSTATE](/previous-versions//aa768362\(v=vs.85\)) Windows SDK içinde açıklandığı gibi değer.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -1307,7 +1307,7 @@ Geçersiz kılma `OnFrameWindowActivate` tepki için `OnFrameWindowActivate` Mic
 
 ##  <a name="onfullscreen"></a>  CHtmlView::OnFullScreen
 
-Bu üye işlevi, framework tarafından çağırılır, [FullScreen](https://msdn.microsoft.com/library/aa752119.aspx) özelliği değişti.
+Bu üye işlevi, framework tarafından çağırılır, [FullScreen](/previous-versions/aa752119\(v=vs.85\)) özelliği değişti.
 
 ```
 virtual void OnFullScreen(BOOL bFullScreen);
@@ -1430,7 +1430,7 @@ Geçersiz kılma `OnHideUI` tepki için `HideUI` Microsoft Web tarayıcısı den
 
 ##  <a name="onmenubar"></a>  CHtmlView::OnMenuBar
 
-Bu üye işlevi, framework tarafından çağırılır, [menü](https://msdn.microsoft.com/library/aa752131.aspx) özelliği değişti.
+Bu üye işlevi, framework tarafından çağırılır, [menü](/previous-versions/aa752131\(v=vs.85\)) özelliği değişti.
 
 ```
 virtual void OnMenuBar(BOOL bMenuBar);
@@ -1481,7 +1481,7 @@ URL kendisi için gezinme başarısız oldu.
 Kaynak görüntülenen veya adlandırılmış çerçeve için kaynak hedeflendiyse NULL olduğu çerçeve adı.
 
 *dwError*<br/>
-Bir hata durum kodu, varsa. Olası HRESULT ve HTTP durum kodları listesi için bkz. [NavigateError olay durum kodları.](https://msdn.microsoft.com/library/aa768365.aspx)
+Bir hata durum kodu, varsa. Olası HRESULT ve HTTP durum kodları listesi için bkz. [NavigateError olay durum kodları.](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa768365\(v=vs.85\)).
 
 *pbCancel*<br/>
 Bir hata sayfası veya herhangi başka bir çoğaltmalar için gezinti iptal verilip verilmeyeceğini belirtir. Değilse (varsayılan) TRUE, bir hata sayfası veya çoğaltmalar; Gezinti devam edin FALSE ise, bir hata sayfası veya çoğaltmalar gezinti iptal edin.
@@ -1490,7 +1490,7 @@ Bir hata sayfası veya herhangi başka bir çoğaltmalar için gezinti iptal ver
 
 Özel gezinti hata işleme sağlamak için bu yöntemi yok sayın.
 
-Daha fazla bilgi için [DWebBrowserEvents2::NavigateError](https://msdn.microsoft.com/library/aa768286.aspx)
+Daha fazla bilgi için [DWebBrowserEvents2::NavigateError](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa768286\(v=vs.85\))
 
 ##  <a name="onnewwindow2"></a>  CHtmlView::OnNewWindow2
 
@@ -1661,7 +1661,7 @@ Geçersiz kılma `OnShowUI` tepki için `ShowUI` Microsoft Web tarayıcısı den
 
 ##  <a name="onstatusbar"></a>  CHtmlView::OnStatusBar
 
-Bu üye işlevi, framework tarafından çağırılır, [StatusBar](https://msdn.microsoft.com/library/aa768270.aspx) özelliği değişti.
+Bu üye işlevi, framework tarafından çağırılır, [StatusBar](/previous-versions//aa768270\(v=vs.85\)) özelliği değişti.
 
 ```
 virtual void OnStatusBar(BOOL bStatusBar);
@@ -1687,7 +1687,7 @@ Yeni durum çubuğu metni içeren bir dize.
 
 ##  <a name="ontheatermode"></a>  CHtmlView::OnTheaterMode
 
-Bu üye işlevi, framework tarafından çağırılır, [TheaterMode](https://msdn.microsoft.com/library/aa768273.aspx) özelliği değişti.
+Bu üye işlevi, framework tarafından çağırılır, [TheaterMode](/previous-versions/aa768273\(v=vs.85\)) özelliği değişti.
 
 ```
 virtual void OnTheaterMode(BOOL bTheaterMode);
@@ -1717,7 +1717,7 @@ HTML için başlık değişebilir; HTML hala yüklenirken URL belgenin başlığ
 
 ##  <a name="ontoolbar"></a>  CHtmlView::OnToolBar
 
-Bu üye işlevi, framework tarafından çağırılır, [araç](https://msdn.microsoft.com/library/aa768274.aspx) özelliği değişti.
+Bu üye işlevi, framework tarafından çağırılır, [araç](/previous-versions/aa768274\(v=vs.85\)) özelliği değişti.
 
 ```
 virtual void OnToolBar(BOOL bToolBar);
@@ -1956,7 +1956,7 @@ void Refresh2(int nLevel);
 ### <a name="parameters"></a>Parametreler
 
 *nLevel*<br/>
-Yenileme düzeyini belirten değişkenin adresidir. Olası değişkenleri tanımlanan [RefreshConstants](https://msdn.microsoft.com/library/aa768363.aspx), Windows SDK.
+Yenileme düzeyini belirten değişkenin adresidir. Olası değişkenleri tanımlanan [RefreshConstants](/previous-versions/aa768363\(v=vs.85\)), Windows SDK.
 
 ### <a name="remarks"></a>Açıklamalar
 

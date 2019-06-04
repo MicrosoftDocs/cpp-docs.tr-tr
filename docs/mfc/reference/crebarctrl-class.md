@@ -98,12 +98,12 @@ helpviewer_keywords:
 - CReBarCtrl [MFC], ShowBand
 - CReBarCtrl [MFC], SizeToRect
 ms.assetid: 154570d7-e48c-425d-8c7e-c64542bcb4cc
-ms.openlocfilehash: db72dbab14db69f14d7c3d813562ec661df4b424
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: a6996f978305472ec7a3af171ecf0987724751d5
+ms.sourcegitcommit: ecf274bcfe3a977c48745aaa243e5e731f1fdc5f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62372388"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66504744"
 ---
 # <a name="crebarctrl-class"></a>CReBarCtrl sınıfı
 
@@ -317,7 +317,7 @@ Başarılı olursa sıfır dışı; Aksi durumda 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kullanım `CreateEx` yerine [Oluştur](#create) Windows genişletilmiş sitil önsöz tarafından belirtilen Genişletilmiş Windows stilleri uygulamak için **WS_EX_**.
+Kullanım `CreateEx` yerine [Oluştur](#create) Windows genişletilmiş sitil önsöz tarafından belirtilen Genişletilmiş Windows stilleri uygulamak için **WS_EX_** .
 
 ##  <a name="crebarctrl"></a>  CReBarCtrl::CReBarCtrl
 
@@ -678,7 +678,7 @@ Belirtilen noktasını ya da hiçbir çubuk barınağı bant noktada ise -1 bant
 
 ##  <a name="idtoindex"></a>  CReBarCtrl::IDToIndex
 
-Win32 ileti davranışı uygulayan [RB_IDTOINDEX](https://msdn.microsoft.com/library/windows/desktop/bb774496)Windows SDK içinde açıklandığı gibi.
+Win32 ileti davranışı uygulayan [RB_IDTOINDEX](/windows/desktop/controls/rb-idtoindex)Windows SDK içinde açıklandığı gibi.
 
 ```
 int IDToIndex(UINT uBandID) const;

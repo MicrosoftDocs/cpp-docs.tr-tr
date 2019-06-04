@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - module attributes
 ms.assetid: 02223b2a-62b5-4262-832f-564b1e11e58e
-ms.openlocfilehash: 5c69e0aa9e3444ec9b43470f8feb4d1f870dc9c8
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 8348a56171836642db5c44cd5d075ba9d2c33769
+ms.sourcegitcommit: ecf274bcfe3a977c48745aaa243e5e731f1fdc5f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62409193"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66503849"
 ---
 # <a name="module-c"></a>modül (C++)
 
@@ -36,14 +36,14 @@ Kitaplık blok .idl dosyasında tanımlar.
 
 - `unspecified` Modül özniteliği için ilgili ATL kod ekleme devre dışı bırakır: ekleme ATL modül sınıfı, genel örnek _AtlModule ve giriş noktası işlevleri. ATL kod projesinde diğer öznitelikleri nedeniyle ekleme devre dışı bırakmaz.
 
-*Adı*<br/>
+*name*<br/>
 (İsteğe bağlı) Kitaplık blok adı.
 
 *version*<br/>
 (İsteğe bağlı) Kitaplığını bloğuna atamak istediğiniz sürüm numarası. 1.0 varsayılan değerdir.
 
 *uuid*<br/>
-Kitaplık için benzersiz kimliği. Bu parametreyi unutursanız, kitaplık için bir kimliği otomatik olarak oluşturulur. Almanız gerekebilir *UUID* tanımlayıcısını kullanarak bunu yapabilirsiniz, kitaplık bloğunun **__uuidof (** *libraryname* **)**.
+Kitaplık için benzersiz kimliği. Bu parametreyi unutursanız, kitaplık için bir kimliği otomatik olarak oluşturulur. Almanız gerekebilir *UUID* tanımlayıcısını kullanarak bunu yapabilirsiniz, kitaplık bloğunun **__uuidof (** *libraryname* **)** .
 
 *lcid*<br/>
 Yerelleştirme parametre. Bkz: [LCID](/windows/desktop/Midl/lcid) daha fazla bilgi için.
@@ -97,7 +97,7 @@ Bu öznitelik ATL kullanan bir proje içinde kullanılıyorsa, öznitelik davran
 
 - `type` = **dll**
 
-   [CAtlDllModuleT](../../atl/reference/catldllmodulet-class.md) taban sınıfı ve standart DLL girdi kullanılan noktaları için bir COM sunucusu gerekir. Bu giriş noktalarıdır [DllMain](/windows/desktop/Dlls/dllmain), [DllRegisterServer](/windows/desktop/api/olectl/nf-olectl-dllregisterserver), [DllUnRegisterServer](/windows/desktop/api/olectl/nf-olectl-dllunregisterserver), [DllCanUnloadNow](/windows/desktop/api/combaseapi/nf-combaseapi-dllcanunloadnow), ve [ DllGetClassObject](https://msdn.microsoft.com/library/windows/desktop/dd797891).
+   [CAtlDllModuleT](../../atl/reference/catldllmodulet-class.md) taban sınıfı ve standart DLL girdi kullanılan noktaları için bir COM sunucusu gerekir. Bu giriş noktalarıdır [DllMain](/windows/desktop/Dlls/dllmain), [DllRegisterServer](/windows/desktop/api/olectl/nf-olectl-dllregisterserver), [DllUnRegisterServer](/windows/desktop/api/olectl/nf-olectl-dllunregisterserver), [DllCanUnloadNow](/windows/desktop/api/combaseapi/nf-combaseapi-dllcanunloadnow), ve [ DllGetClassObject](/previous-versions//dd797891\(v=vs.85\)).
 
 - `type` = **exe**
 

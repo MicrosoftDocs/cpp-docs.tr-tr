@@ -18,12 +18,12 @@ helpviewer_keywords:
 - CMonikerFile [MFC], Open
 - CMonikerFile [MFC], CreateBindContext
 ms.assetid: 87be5966-f4f7-4235-bce2-1fa39e9417de
-ms.openlocfilehash: ecffdb3a6f44f60004cf4f039bdab9c98e212ce1
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 7fb0ad3eef781be1b5ca358e825c09a88c0109e3
+ms.sourcegitcommit: ecf274bcfe3a977c48745aaa243e5e731f1fdc5f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62338044"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66503820"
 ---
 # <a name="cmonikerfile-class"></a>CMonikerFile sınıfı
 
@@ -117,7 +117,7 @@ Dosya özel durum işaretçisi. Bir hata olması durumunda, neden ayarlanır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bağlama bağlamı için bir işaretçi [ıbindctx i](/windows/desktop/api/objidl/nn-objidl-ibindctx) başarılı; Aksi takdirde NULL ile bağlamak için. Örneği ile açıldıysa bir `IBindHost` arabirimi, bağlama bağlamı alınır `IBindHost`. Yoksa hiçbir `IBindHost` arabirimi veya arabirim başarısız bir bağlama bağlamı geri dönmek, bağlama bağlamı oluşturulur. Bir açıklaması için [IBindHost](https://msdn.microsoft.com/library/ie/ms775076) arabirimi, Windows SDK'sı bakın.
+Bağlama bağlamı için bir işaretçi [ıbindctx i](/windows/desktop/api/objidl/nn-objidl-ibindctx) başarılı; Aksi takdirde NULL ile bağlamak için. Örneği ile açıldıysa bir `IBindHost` arabirimi, bağlama bağlamı alınır `IBindHost`. Yoksa hiçbir `IBindHost` arabirimi veya arabirim başarısız bir bağlama bağlamı geri dönmek, bağlama bağlamı oluşturulur. Bir açıklaması için [IBindHost](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/ms775076\(v=vs.85\)) arabirimi, Windows SDK'sı bakın.
 
 ### <a name="remarks"></a>Açıklamalar
 

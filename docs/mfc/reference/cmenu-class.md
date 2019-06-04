@@ -84,12 +84,12 @@ helpviewer_keywords:
 - CMenu [MFC], TrackPopupMenuEx
 - CMenu [MFC], m_hMenu
 ms.assetid: 40cacfdc-d45c-4ec7-bf28-991c72812499
-ms.openlocfilehash: 464b59f7e598ea1901cf88c47c5887cbbf308607
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 5df6515573cfca784d1e59f34342466dde2e42e4
+ms.sourcegitcommit: ecf274bcfe3a977c48745aaa243e5e731f1fdc5f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62375801"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66504855"
 ---
 # <a name="cmenu-class"></a>CMenu sınıfı
 
@@ -769,7 +769,7 @@ Anlamını belirten değeri `nIDItem`. Varsayılan olarak, `ByPos` bu uItem gös
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İşlev başarılı olursa, dönüş değeri sıfır. İşlev başarısız olursa, dönüş değeri sıfırdır. Genişletilmiş hata bilgilerini almak için Win32 işlevini [GetLastError](https://msdn.microsoft.com/library/windows/desktop/ms679360)Windows SDK içinde açıklandığı gibi.
+İşlev başarılı olursa, dönüş değeri sıfır. İşlev başarısız olursa, dönüş değeri sıfırdır. Genişletilmiş hata bilgilerini almak için Win32 işlevini [GetLastError](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror)Windows SDK içinde açıklandığı gibi.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -1267,7 +1267,7 @@ Anlamını belirten değeri *uItem*. Bu parametre FALSE ise *uItem* bir menü ö
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İşlev başarılı olursa, dönüş değeri sıfır. İşlev başarısız olursa, dönüş değeri sıfırdır. Genişletilmiş hata bilgilerini almak için Win32 işlevini [GetLastError](https://msdn.microsoft.com/library/windows/desktop/ms679360)Windows SDK içinde açıklandığı gibi.
+İşlev başarılı olursa, dönüş değeri sıfır. İşlev başarısız olursa, dönüş değeri sıfırdır. Genişletilmiş hata bilgilerini almak için Win32 işlevini [GetLastError](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror)Windows SDK içinde açıklandığı gibi.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -1476,7 +1476,7 @@ Açılır menü sahip olan ve oluşturulan menüsünden iletileri alma penceresi
 
 İçinde TPM_RETURNCMD belirtirseniz *fuFlags* parametre, dönüş değeri, kullanıcının seçtiği öğesinin menü öğesi tanımlayıcısıdır. Seçim yapmadan kullanıcı menü iptal ederse veya bir hata oluşursa, dönüş değeri 0'dır.
 
-İçinde TPM_RETURNCMD belirtmezseniz *fuFlags* parametre, dönüş değeri işlevin başarılı olursa sıfır dışı ve 0 başarısız olması durumunda. Genişletilmiş hata bilgilerini almak için arama [GetLastError](https://msdn.microsoft.com/library/windows/desktop/ms679360).
+İçinde TPM_RETURNCMD belirtmezseniz *fuFlags* parametre, dönüş değeri işlevin başarılı olursa sıfır dışı ve 0 başarısız olması durumunda. Genişletilmiş hata bilgilerini almak için arama [GetLastError](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror).
 
 ### <a name="remarks"></a>Açıklamalar
 

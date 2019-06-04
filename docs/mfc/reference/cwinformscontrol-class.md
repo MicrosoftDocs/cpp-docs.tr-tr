@@ -14,12 +14,12 @@ helpviewer_keywords:
 - CWinFormsControl [MFC], GetControl
 - CWinFormsControl [MFC], GetControlHandle
 ms.assetid: 6406dd7b-fb89-4a18-ac3a-c010d6b6289a
-ms.openlocfilehash: 91691203f88f07f597aaad6a5db32b03e7ad11c4
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c1c7a394317fefba7911e9500126919e83389f20
+ms.sourcegitcommit: ecf274bcfe3a977c48745aaa243e5e731f1fdc5f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62323307"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66504670"
 ---
 # <a name="cwinformscontrol-class"></a>CWinFormsControl sınıfı
 
@@ -108,7 +108,7 @@ inline BOOL CreateManagedControl(
 ### <a name="parameters"></a>Parametreler
 
 *pType*<br/>
-Oluşturulacak denetimi veri türü. Olmalıdır bir [türü](https://msdn.microsoft.com/library/system.type) veri türü.
+Oluşturulacak denetimi veri türü. Olmalıdır bir [türü](/dotnet/api/system.type) veri türü.
 
 *dwStyle*<br/>
 Denetime uygulamak için pencere stili. Bir birleşimi belirler [pencere stilleri](../../mfc/reference/styles-used-by-mfc.md#window-styles). Şu anda, yalnızca aşağıdaki stilleri desteklenmektedir: WS_TABSTOP, ws_vısıble, ws_dısabled ve WS_GROUP.
@@ -136,7 +136,7 @@ Başarılı olursa sıfır olmayan bir değer döndürür. İşlem başarısız 
 
 Bu yöntem, bir MFC kapsayıcısındaki bir .NET Framework Windows Forms Denetim örneği oluşturur.
 
-İlk aşırı yükleme yöntemi, bir .NET Framework veri türü kabul eden *pType* böylece MFC bu türün yeni bir nesne örneği oluşturabilir. *pType* olmalıdır bir [türü](https://msdn.microsoft.com/library/system.type) veri türü.
+İlk aşırı yükleme yöntemi, bir .NET Framework veri türü kabul eden *pType* böylece MFC bu türün yeni bir nesne örneği oluşturabilir. *pType* olmalıdır bir [türü](/dotnet/api/system.type) veri türü.
 
 Yönteminin ikinci aşırı yükleme göre Windows Forms denetimi oluşturur `TManagedControl` şablon parametresinin `CWinFormsControl` sınıfı. Denetimin konumunu ve boyutunu temel `RECT` yapısı, yönteme geçirilen. Yalnızca *dwStyle* stilleri için önemlidir.
 

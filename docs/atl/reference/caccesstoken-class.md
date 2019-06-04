@@ -52,12 +52,12 @@ f1_keywords:
 helpviewer_keywords:
 - CAccessToken class
 ms.assetid: bb5c5945-56a5-4083-b442-76573cee83ab
-ms.openlocfilehash: 0b98df740b751d019c9b2852d682f61a51384818
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: ce5c29c2399fd47bdb1ad0135257b41617094aa9
+ms.sourcegitcommit: ecf274bcfe3a977c48745aaa243e5e731f1fdc5f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62260733"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66503378"
 ---
 # <a name="caccesstoken-class"></a>CAccessToken sınıfı
 
@@ -246,7 +246,7 @@ bool CreatePrimaryToken(
 Yeni belirteç için istenen erişim haklarını belirtir. Varsayılan olarak, MAXIMUM_ALLOWED arayan için geçerli olan tüm erişim hakları ister. Bkz: [erişim hakları ve erişim maskesi](/windows/desktop/SecAuthZ/access-rights-and-access-masks) üzerinde daha fazla erişim hakları için.
 
 *pTokenAttributes*<br/>
-İşaretçi bir [SECURITY_ATTRIBUTES](https://msdn.microsoft.com/library/windows/desktop/aa379560) yapısı, yeni belirteç için bir güvenlik tanımlayıcısının belirtir ve alt işlemlerin belirteç devralınabilir olup olmadığını belirler. Varsa *pTokenAttributes* NULL, varsayılan bir güvenlik tanımlayıcısı belirteci alır ve tanıtıcı devralınamaz.
+İşaretçi bir [SECURITY_ATTRIBUTES](/previous-versions/windows/desktop/legacy/aa379560\(v=vs.85\)) yapısı, yeni belirteç için bir güvenlik tanımlayıcısının belirtir ve alt işlemlerin belirteç devralınabilir olup olmadığını belirler. Varsa *pTokenAttributes* NULL, varsayılan bir güvenlik tanımlayıcısı belirteci alır ve tanıtıcı devralınamaz.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -295,10 +295,10 @@ Yürütülecek komut satırı belirten bir null ile sonlandırılmış dize işa
 TRUE ise, kullanıcının profili ile yüklenir [LoadUserProfile](/windows/desktop/api/userenv/nf-userenv-loaduserprofilea).
 
 *pProcessAttributes*<br/>
-İşaretçi bir [SECURITY_ATTRIBUTES](https://msdn.microsoft.com/library/windows/desktop/aa379560) yapısı yeni işlem için bir güvenlik açıklayıcısı belirtir ve döndürülen tanıtıcının alt işlemler devralınabilir olup olmadığını belirler. Varsa *pProcessAttributes* NULL, işlem varsayılan bir güvenlik açıklayıcısı alır ve tanıtıcı devralınamaz.
+İşaretçi bir [SECURITY_ATTRIBUTES](/previous-versions/windows/desktop/legacy/aa379560\(v=vs.85\)) yapısı yeni işlem için bir güvenlik açıklayıcısı belirtir ve döndürülen tanıtıcının alt işlemler devralınabilir olup olmadığını belirler. Varsa *pProcessAttributes* NULL, işlem varsayılan bir güvenlik açıklayıcısı alır ve tanıtıcı devralınamaz.
 
 *pThreadAttributes*<br/>
-İşaretçi bir [SECURITY_ATTRIBUTES](https://msdn.microsoft.com/library/windows/desktop/aa379560) yapısı, yeni iş parçacığı için bir güvenlik açıklayıcısı belirtir ve döndürülen tanıtıcının alt işlemler devralınabilir olup olmadığını belirler. Varsa *pThreadAttributes* NULL, iş parçacığı bir varsayılan güvenlik tanımlayıcısını alır ve tanıtıcı devralınamaz.
+İşaretçi bir [SECURITY_ATTRIBUTES](/previous-versions/windows/desktop/legacy/aa379560\(v=vs.85\)) yapısı, yeni iş parçacığı için bir güvenlik açıklayıcısı belirtir ve döndürülen tanıtıcının alt işlemler devralınabilir olup olmadığını belirler. Varsa *pThreadAttributes* NULL, iş parçacığı bir varsayılan güvenlik tanımlayıcısını alır ve tanıtıcı devralınamaz.
 
 *bInherit*<br/>
 Yeni işlem çağırma işlemden tanıtıcıları devralıp almadığını gösterir. TRUE ise, her devralınabilir açık tanıtıcı çağıran işlemin içinde yeni bir işlem tarafından devralınır. Devralınan tanıtıcıları özgün tanıtıcıları aynı değeri ve erişim ayrıcalıklarına sahiptir.

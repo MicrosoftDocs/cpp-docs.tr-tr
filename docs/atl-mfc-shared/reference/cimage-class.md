@@ -54,12 +54,12 @@ helpviewer_keywords:
 - CImage class
 - transparent color
 ms.assetid: 52861e3d-bf7e-481f-a240-90e88f76c490
-ms.openlocfilehash: 14a4691e0c1f25a8f9e8b2b652c6e582f51c954a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 0b61d38d141392dc85a150ddd2caf50b28146ae7
+ms.sourcegitcommit: ecf274bcfe3a977c48745aaa243e5e731f1fdc5f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62235128"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66503168"
 ---
 # <a name="cimage-class"></a>Cımage sınıfı
 
@@ -158,7 +158,7 @@ Ekli bir bit eşlem DIB bölümü olup olmadığını belirlemek için çağrı 
 > [!NOTE]
 > Genel kullanarak `CImage` DLL'de nesneleri önerilmez. Genel bir kullanmanız gerekiyorsa `CImage` DLL'deki, çağrı [CImage::ReleaseGDIPlus](#releasegdiplus) açıkça GDI +'TARAFINDAN kullanılan kaynakları serbest bırakmak için.
 
-`CImage` Yeni bir seçilemez [CDC](../../mfc/reference/cdc-class.md). `CImage` kendi HDC görüntüsü oluşturur. HBITMAP bir HBITMAP yalnızca bir HDC teker teker seçilebilir çünkü ilişkili `CImage` içinde başka bir HDC seçilemez. Bir bu CDC gerekiyorsa, gelen HDC almak `CImage` ve [CDC::FromHandle] için verin (.. /.. /MFC/Reference/cdc-class.MD#cdc__fromhandle.
+`CImage` Yeni bir seçilemez [CDC](../../mfc/reference/cdc-class.md). `CImage` kendi HDC görüntüsü oluşturur. HBITMAP bir HBITMAP yalnızca bir HDC teker teker seçilebilir çünkü ilişkili `CImage` içinde başka bir HDC seçilemez. Bir bu CDC gerekiyorsa, gelen HDC almak `CImage` ve ona verin [CDC::FromHandle](../../mfc/reference/cdc-class.md#fromhandle).
 
 ## <a name="example"></a>Örnek
 
@@ -480,7 +480,7 @@ Sıkıştırılmış bir aşağıdan yukarıya bit eşlem (yukarıdan aşağıya
 - BI_BITFIELDS biçimi sıkıştırılmamış ve renk tablosunu kırmızı, yeşil ve mavi bileşenlerinin sırasıyla her pikseli belirten üç DWORD renk maskeleri oluşur. Bu, bit eşlemler 16 ve 32 bpp kullanıldığında geçerlidir.
 
 *pdwBitfields*<br/>
-Yalnızca *eCompression* ayarlanır BI_BITFIELDS için Aksi takdirde, NULL olmalıdır. Hangi bitlerin her pikselin rengin kırmızı, yeşil ve mavi bileşenlerinin sırasıyla kullanılan belirten üç DWORD bit maskesi, bir dizi için bir işaretçi. Bit alanları için kısıtlamaları hakkında daha fazla bilgi için bkz: [BITMAPINFOHEADER](https://msdn.microsoft.com/library/windows/desktop/dd183376) Windows SDK.
+Yalnızca *eCompression* ayarlanır BI_BITFIELDS için Aksi takdirde, NULL olmalıdır. Hangi bitlerin her pikselin rengin kırmızı, yeşil ve mavi bileşenlerinin sırasıyla kullanılan belirten üç DWORD bit maskesi, bir dizi için bir işaretçi. Bit alanları için kısıtlamaları hakkında daha fazla bilgi için bkz: [BITMAPINFOHEADER](/previous-versions//dd183376\(v=vs.85\)) Windows SDK.
 
 *CertOpenStore*<br/>
 Bitmap nesnesi bir alfa kanalı olup olmadığını belirtir. Sıfır veya daha fazla aşağıdaki değerlerin bir birleşimi olabilir:
@@ -648,7 +648,7 @@ Piksel başına bit sayısı.
 
 Bu değer, her pikselin tanımlayan bit sayısını ve renk bit eşlemde maksimum sayısını belirler.
 
-Piksel başına bit olduğundan genellikle 1, 4, 8, 16, 24 veya 32. Bkz: `biBitCount` üyesi [BITMAPINFOHEADER](https://msdn.microsoft.com/library/windows/desktop/dd183376) bu değeri hakkında daha fazla bilgi için Windows SDK.
+Piksel başına bit olduğundan genellikle 1, 4, 8, 16, 24 veya 32. Bkz: `biBitCount` üyesi [BITMAPINFOHEADER](/previous-versions//dd183376\(v=vs.85\)) bu değeri hakkında daha fazla bilgi için Windows SDK.
 
 ##  <a name="getcolortable"></a>  CImage::GetColorTable
 

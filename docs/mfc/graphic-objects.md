@@ -41,19 +41,19 @@ helpviewer_keywords:
 - painting and device context [MFC]
 - CPalette class [MFC], HPALETTE handle type
 ms.assetid: 41963b25-34b7-4343-8446-34ba516b83ca
-ms.openlocfilehash: 58ecf680d64f39ab61589a0ad668c15d1a9cd68c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 3058bc5793a7766b0a6849ba77f0533f0bbbcef6
+ms.sourcegitcommit: ecf274bcfe3a977c48745aaa243e5e731f1fdc5f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62359075"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66503815"
 ---
 # <a name="graphic-objects"></a>Grafik Nesneler
 
 Çizim Araçları, cihaz bağlamlarında kullanmak için çeşitli Windows sağlar. Bu, kalemler, çizgiler, Fırçalar dolgu evin içindekiler ve metin çizmek için yazı tiplerini çizmek için sağlar. MFC Windows de çizim araçlarından eşdeğer grafik nesne sınıfları sağlar. Aşağıdaki tabloda kullanılabilir sınıflar ve eşdeğer Windows grafik cihaz arabirimi (GDI) tanıtıcı türlerine gösterir.
 
 > [!NOTE]
->  Daha fazla bilgi için GDI +'da SDK belgelerine bakın: [ https://msdn.microsoft.com/library/default.aspurl=/library/gdicpp/GDIPlus/GDIPlus.asp ](https://msdn.microsoft.com/library/default.aspurl=/library/gdicpp/gdiplus/gdiplus.asp).
+>  Daha fazla bilgi için [GDI +'da SDK Belgeleri](/windows/desktop/gdiplus/-gdiplus-gdi-start).
 
 Bu makalede, bu grafik nesne sınıfları kullanımını açıklar:
 

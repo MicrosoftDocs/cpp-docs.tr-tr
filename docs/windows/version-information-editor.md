@@ -23,12 +23,12 @@ helpviewer_keywords:
 - GetFileVersionInfo
 - version information
 ms.assetid: 772e6f19-f765-4cec-9521-0ad3eeb99f9b
-ms.openlocfilehash: 7910522578d89657adb09eb7729eb7539e010027
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: a17539d0a9fb94c440d65275e9d032182088ae6e
+ms.sourcegitcommit: ecf274bcfe3a977c48745aaa243e5e731f1fdc5f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62387837"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66504479"
 ---
 # <a name="version-information-editor-c"></a>Sürüm bilgileri Düzenleyicisi (C++)
 
@@ -87,6 +87,5 @@ Win32
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Kaynak Düzenleyicileri](../windows/resource-editors.md)<br/>
-<!--
-[Menus and Other Resources](https://msdn.microsoft.com/library/windows/desktop/ms632583.aspx)<br/>
-[Version Information (Windows)](https://msdn.microsoft.com/library/windows/desktop/ms646981.aspx)-->
+[Menüler ve diğer kaynaklar](/windows/desktop/menurc/resources)<br/>
+[Sürüm bilgileri (Windows)](/windows/desktop/menurc/version-information)

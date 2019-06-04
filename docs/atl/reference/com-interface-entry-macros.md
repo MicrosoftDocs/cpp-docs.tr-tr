@@ -18,12 +18,12 @@ f1_keywords:
 helpviewer_keywords:
 - COM interfaces, COM interface entry macros
 ms.assetid: 19dcb768-2e1f-4b8d-a618-453a01a4bd00
-ms.openlocfilehash: ed2b8445a0f13b82338d2904d43fd17688d05b9e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f8439e973c935108d645076bb7e2bfae7207e65d
+ms.sourcegitcommit: ecf274bcfe3a977c48745aaa243e5e731f1fdc5f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62245588"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66503337"
 ---
 # <a name="cominterfaceentry-macros"></a>COM_INTERFACE_ENTRY makroları
 
@@ -39,7 +39,7 @@ Bu makrolar böylece tarafından erişilebilecek bir nesnenin arabirimlerinin, C
 |[COM_INTERFACE_ENTRY_AGGREGATE_BLIND](#com_interface_entry_aggregate_blind)|Aynı [COM_INTERFACE_ENTRY_AGGREGATE](#com_interface_entry_aggregate), sorgulama için bir IID sorguya iletme sonuçları hariç, *punk*.|
 |[COM_INTERFACE_ENTRY_AUTOAGGREGATE](#com_interface_entry_autoaggregate)|Aynı [COM_INTERFACE_ENTRY_AGGREGATE](#com_interface_entry_aggregate), eğer dışında *punk* NULL ise tarafından açıklanan toplama otomatik olarak oluşturur *CLSID*.|
 |[COM_INTERFACE_ENTRY_AUTOAGGREGATE_BLIND](#com_interface_entry_autoaggregate_blind)|Aynı [COM_INTERFACE_ENTRY_AUTOAGGREGATE](#com_interface_entry_autoaggregate), sorgulama için bir IID sorguya iletme sonuçları hariç, *punk*ve eğer *punk* , NULL, otomatik olarak oluşturma tarafından açıklanan toplama *CLSID*.|
-|[COM_INTERFACE_ENTRY_BREAK](#com_interface_entry_break)|Programınızı çağırmak neden [DebugBreak](https://msdn.microsoft.com/library/windows/desktop/ms679297) zaman belirtilen arabirim sorgulanan için.|
+|[COM_INTERFACE_ENTRY_BREAK](#com_interface_entry_break)|Programınızı çağırmak neden [DebugBreak](/windows/desktop/api/debugapi/nf-debugapi-debugbreak) zaman belirtilen arabirim sorgulanan için.|
 |[COM_INTERFACE_ENTRY_CACHED_TEAR_OFF](#com_interface_entry_cached_tear_off)|Her örnek için arabirime özgü verileri kaydeder.|
 |[COM_INTERFACE_ENTRY_TEAR_OFF](#com_interface_entry_tear_off)|Etiket arabirimleri kullanıma sunar.|
 |[COM_INTERFACE_ENTRY_CHAIN](#com_interface_entry_chain)|İşleme bu girdiye COM eşlemesine ulaştığında temel sınıfın COM eşlemesine işler.|
@@ -243,7 +243,7 @@ Arabirimi sorgu başarısız olursa, COM harita işleme devam eder.
 
 ##  <a name="com_interface_entry_break"></a>  COM_INTERFACE_ENTRY_BREAK
 
-Programınızı çağırmak neden [DebugBreak](https://msdn.microsoft.com/library/windows/desktop/ms679297) zaman belirtilen arabirim sorgulanan için.
+Programınızı çağırmak neden [DebugBreak](/windows/desktop/api/debugapi/nf-debugapi-debugbreak) zaman belirtilen arabirim sorgulanan için.
 
 ```
 COM_INTERFACE_ENTRY_BREAK(x)
@@ -328,7 +328,7 @@ COM_INTERFACE_ENTRY_CHAIN(classname)
 
 [!code-cpp[NVC_ATL_Windowing#116](../../atl/codesnippet/cpp/com-map-macros_9.h)]
 
-COM eşlemesi ilk giriş COM eşlemesine içeren nesnesi bir arabirimde olması gerektiğini unutmayın. Bu nedenle, farklı bir nesnenin noktada aranacak COM eşlemesine neden COM_INTERFACE_ENTRY_CHAIN ile COM eşleme girişleri başlayamaz burada **COM_INTERFACE_ENTRY_CHAIN (**`COtherObject`**)** nesnenizin COM eşlemede görünür. COM eşlemesi başka bir nesnenin ilk arama yapmak istiyorsanız, bir arabirimi girdi ekleyin `IUnknown` COM haritanıza sonra başka bir nesnenin COM eşlemesi zincir. Örneğin:
+COM eşlemesi ilk giriş COM eşlemesine içeren nesnesi bir arabirimde olması gerektiğini unutmayın. Bu nedenle, farklı bir nesnenin noktada aranacak COM eşlemesine neden COM_INTERFACE_ENTRY_CHAIN ile COM eşleme girişleri başlayamaz burada **COM_INTERFACE_ENTRY_CHAIN (** `COtherObject` **)** nesnenizin COM eşlemede görünür. COM eşlemesi başka bir nesnenin ilk arama yapmak istiyorsanız, bir arabirimi girdi ekleyin `IUnknown` COM haritanıza sonra başka bir nesnenin COM eşlemesi zincir. Örneğin:
 
 [!code-cpp[NVC_ATL_Windowing#111](../../atl/codesnippet/cpp/com-map-macros_10.h)]
 

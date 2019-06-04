@@ -334,12 +334,12 @@ helpviewer_keywords:
 - COleControl [MFC], IsInvokeAllowed
 - COleControl [MFC], SetInitialDataFormats
 ms.assetid: 53e95299-38e8-447b-9c5f-a381d27f5123
-ms.openlocfilehash: 30d73d546ee68a25f1e59776020477d038da65e8
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: edad2ca391639868e7af1db6e13aaec66733f383
+ms.sourcegitcommit: ecf274bcfe3a977c48745aaa243e5e731f1fdc5f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62160321"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66503861"
 ---
 # <a name="colecontrol-class"></a>COleControl sınıfı
 
@@ -1184,7 +1184,7 @@ Olayın parametre türleri için bir tanımlayıcı.
 
 Genellikle bu işlev doğrudan çağrılmamalıdır. Bunun yerine denetiminizin sınıf bildirimi olay eşlemesi bölümünde olay tetikleyicisinin tetikleme işlevleri çağırır.
 
-*PbParams* bağımsız değişkeni, boşlukla ayrılmış bir listesi **VTS_**. Bir veya daha fazla (değil virgüller), boşluk ile ayırarak, bu değerleri işlevin parametre listesi belirtir. Olası değerler aşağıdaki gibidir:
+*PbParams* bağımsız değişkeni, boşlukla ayrılmış bir listesi **VTS_** . Bir veya daha fazla (değil virgüller), boşluk ile ayırarak, bu değerleri işlevin parametre listesi belirtir. Olası değerler aşağıdaki gibidir:
 
 |Sembol|Parametre türü|
 |------------|--------------------|
@@ -2811,7 +2811,7 @@ Hangi formda veya bir nesnenin en boy açıklayan DWORD görüntülenecek olan. 
 - Saydam veya düzensiz bambaşka kapsayan DVASPECT_TRANSPARENT dikdörtgen.
 
 *pRect*<br/>
-İşaret [RECTL](https://msdn.microsoft.com/library/windows/desktop/dd162907) yapısı içinde nesne çizilip dikdörtgen belirtme. Bu parametre, konumlandırma ve nesnenin uzatma denetler.
+İşaret [RECTL](/previous-versions/dd162907\(v=vs.85\)) yapısı içinde nesne çizilip dikdörtgen belirtme. Bu parametre, konumlandırma ve nesnenin uzatma denetler.
 
 ### <a name="return-value"></a>Dönüş Değeri
 

@@ -12,12 +12,12 @@ helpviewer_keywords:
 - stock properties, about stock properties
 - stock properties
 ms.assetid: 37bd4db7-efd3-4faa-87ad-64902ed16a36
-ms.openlocfilehash: 06940bb72f9113e0a8148e15418504b35fc95099
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 79938cb5c762292c5e1802832477c3a568ae2fdb
+ms.sourcegitcommit: ecf274bcfe3a977c48745aaa243e5e731f1fdc5f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62226274"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66504467"
 ---
 # <a name="add-a-property"></a>Özellik ekleme
 
@@ -191,5 +191,5 @@ Bir MFC dispinterface kullanarak bir özellik ekliyoruz, [Özellik Ekleme Sihirb
 |`Font`|Döndürür veya denetimin ortam yazı tipini ayarlar. Denetim yazı tipi yoksa null değeri.|
 |`ForeColor`|Döndürür veya denetimin ortam ayarlar `ForeColor` özelliği.|
 |`hWnd`|Döndürür veya denetimin ayarlar `hWnd` özelliği. `hWnd` hiçbir **üye değişkeni** uygulama türü.|
-|`ReadyState`|Döndürür veya denetimin ayarlar `ReadyState` özelliği. Bir denetim başlatılmamış, başlatılmış, yükleme, etkileşimli veya tam olabilir. Daha fazla bilgi için [READYSTATE](https://msdn.microsoft.com/library/aa768362.aspx) içinde *Internet SDK*.|
+|`ReadyState`|Döndürür veya denetimin ayarlar `ReadyState` özelliği. Bir denetim başlatılmamış, başlatılmış, yükleme, etkileşimli veya tam olabilir. Daha fazla bilgi için [READYSTATE](/previous-versions//aa768362\(v=vs.85\)) içinde *Internet SDK*.|
 |`Text`|Döndürür veya bir denetimde bulunan metni ayarlar. `Text` hiçbir **üye değişkeni** uygulama türü.|

@@ -132,12 +132,12 @@ helpviewer_keywords:
 - CFileDialog [MFC], OnTypeChange
 - CFileDialog [MFC], m_ofn
 ms.assetid: fda4fd3c-08b8-4ce0-8e9d-7bab23f8c6c0
-ms.openlocfilehash: f74d883fa0dcdce025345848caf49069736ee0fa
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: fe4994b91813e2965972b47c838ddaf5333cc5f0
+ms.sourcegitcommit: ecf274bcfe3a977c48745aaa243e5e731f1fdc5f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62385371"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66503770"
 ---
 # <a name="cfiledialog-class"></a>CFileDialog sınıfı
 
@@ -512,7 +512,7 @@ void ApplyOFNToShellDialog();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Windows Vista, üye önce Windows sürümlerinde [LPSTRFİLE](https://msdn.microsoft.com/library/ms911906.aspx) veri yapısı ile durumunu sürekli olarak eşitlenmiş `CFileDialog`. Herhangi bir değişiklik [m_ofn](#m_ofn) üye değişkeni iletişim kutusunun durumunda hemen yansıtılmasını. Ayrıca, herhangi bir değişiklik iletişim kutusunun durumunu hemen güncelleştirmek `m_ofn` üye değişkeni.
+Windows Vista, üye önce Windows sürümlerinde [LPSTRFİLE](/previous-versions/windows/embedded/ms911906\(v=msdn.10\)) veri yapısı ile durumunu sürekli olarak eşitlenmiş `CFileDialog`. Herhangi bir değişiklik [m_ofn](#m_ofn) üye değişkeni iletişim kutusunun durumunda hemen yansıtılmasını. Ayrıca, herhangi bir değişiklik iletişim kutusunun durumunu hemen güncelleştirmek `m_ofn` üye değişkeni.
 
 Windows Vista veya sonraki sürümlerde, değerler `m_ofn` üye değişkeni ve durumunu `CFileDialog` eşitlenmiş garanti edilmez. Bu işlev zorlar durumu `CFileDialog` eşleşecek şekilde güncelleştirilecek `m_ofn` yapısı. Windows sırasında otomatik olarak bu işlevi çağıran [CFileDialog::DoModal](#domodal).
 
@@ -1626,7 +1626,7 @@ void UpdateOFNFromShellDialog();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Windows Vista, üye önce Windows sürümlerinde [LPSTRFİLE](https://msdn.microsoft.com/library/ms911906.aspx) veri yapısı ile durumunu sürekli olarak eşitlenmiş `CFileDialog`. Herhangi bir değişiklik [m_ofn](#m_ofn) üye değişkeni doğrudan iletişim kutusunun durumu etkilenir. Ayrıca, herhangi bir değişiklik iletişim durumunu hemen m_ofn üye değişkeni güncelleştirildi.
+Windows Vista, üye önce Windows sürümlerinde [LPSTRFİLE](/previous-versions/windows/embedded/ms911906\(v=msdn.10\)) veri yapısı ile durumunu sürekli olarak eşitlenmiş `CFileDialog`. Herhangi bir değişiklik [m_ofn](#m_ofn) üye değişkeni doğrudan iletişim kutusunun durumu etkilenir. Ayrıca, herhangi bir değişiklik iletişim durumunu hemen m_ofn üye değişkeni güncelleştirildi.
 
 Windows Vista veya sonraki sürümlerde, `m_ofn` veri yapısı otomatik olarak güncelleştirilmez. Verilerin doğruluğunu garanti etmek için `m_ofn` üye değişkeni çağırmalıdır `UpdateOFNFromShellDialog` verilere erişmeden önce işlevi. Windows çağıran bu işlev otomatik olarak işlenmesi sırasında [IFileDialog::OnFileOK](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-ifiledialogevents-onfileok).
 

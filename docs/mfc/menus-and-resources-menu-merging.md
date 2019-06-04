@@ -10,12 +10,12 @@ helpviewer_keywords:
 - merging toolbar and status bar [MFC]
 - menus [MFC], OLE document applications
 ms.assetid: 80b6bb17-d830-4122-83f0-651fc112d4d1
-ms.openlocfilehash: e00464e59de5e20627fd2423c101c23629d7c4d2
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 1f7af7007e72cb8e01022c81a244fc70ba52a5cc
+ms.sourcegitcommit: ecf274bcfe3a977c48745aaa243e5e731f1fdc5f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62225545"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66504819"
 ---
 # <a name="menus-and-resources-menu-merging"></a>Menüler ve kaynaklar: Menü birleştirme
 
@@ -29,9 +29,7 @@ Bu makalede ele alınan konular:
 
 ##  <a name="_core_menu_layouts"></a> Menü düzenlerini
 
-Menü düzenlerini koordine etmek için ilk adımdır bakın. Daha fazla bilgi için **menü oluşturma** konusundaki [menü programlama konuları](https://msdn.microsoft.com/library/ms647557.aspx) Windows SDK.
-
-Kapsayıcı uygulamaları, yalnızca katıştırılmış öğeler yerinde etkinleştirildiğinde kullanılacak yeni bir menü oluşturmanız gerekir. En azından aşağıdaki listelendikleri sırada bu menü oluşmalıdır:
+Menü düzenlerini koordine etmek için ilk adımdır bakın. Kapsayıcı uygulamaları, yalnızca katıştırılmış öğeler yerinde etkinleştirildiğinde kullanılacak yeni bir menü oluşturmanız gerekir. En azından aşağıdaki listelendikleri sırada bu menü oluşmalıdır:
 
 1. Dosya menüsü dosyası açıkken kullanılan işlem için aynıdır. (Genellikle diğer bir menü öğeleri sonraki öğeye önce yerleştirilir.)
 

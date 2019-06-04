@@ -16,12 +16,12 @@ helpviewer_keywords:
 - CEvent [MFC], SetEvent
 - CEvent [MFC], Unlock
 ms.assetid: df676042-ce27-4702-800a-e73ff4f44395
-ms.openlocfilehash: d7731c87c6d6b0ebdec9a0c72c24b04334aa0662
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 54501e5ff690b855ca65652e76d45b9c6cfb6259
+ms.sourcegitcommit: ecf274bcfe3a977c48745aaa243e5e731f1fdc5f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62206049"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66503713"
 ---
 # <a name="cevent-class"></a>CEvent sınıfı
 
@@ -110,7 +110,7 @@ TRUE ise, el ile bir olay Olay nesnedir, aksi takdirde olay nesnesiyle otomatik 
 Adını `CEvent` nesne. İşlem sınırları ötesinde nesneye kullanılacaksa sağlanmalıdır. Oluşturucu ad var olan bir olaya eşleşiyorsa, yeni bir yapılar `CEvent` olay adının başvuran nesne. Adla eşleşen bir olay değil mevcut olan bir eşitleme nesnesi oluşturma başarısız olur. NULL ise, adı null olacaktır.
 
 *lpsaAttribute*<br/>
-Olay nesnesi için güvenlik öznitelikleri. Bu yapı tam bir açıklaması için bkz. [SECURITY_ATTRIBUTES](https://msdn.microsoft.com/library/windows/desktop/aa379560) Windows SDK.
+Olay nesnesi için güvenlik öznitelikleri. Bu yapı tam bir açıklaması için bkz. [SECURITY_ATTRIBUTES](/previous-versions/windows/desktop/legacy/aa379560\(v=vs.85\)) Windows SDK.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -119,7 +119,7 @@ Erişim veya yayın için bir `CEvent` nesne, oluşturun bir [CMultiLock](../../
 Durumunu değiştirmek için bir `CEvent` sinyal nesnesini (iş parçacıkları bekleyin gerek kalmaz), çağrı [SetEvent](#setevent) veya [pulseevent güvenilir](#pulseevent). Durumunu ayarlamak için bir `CEvent` nonsignaled nesnesine (iş parçacıkları gerekir beklemeniz gerekebilir), çağrı [ResetEvent](#resetevent).
 
 > [!IMPORTANT]
->  Oluşturduktan sonra `CEvent` nesnesi [GetLastError](https://msdn.microsoft.com/library/windows/desktop/ms679360) mutex önceden yoksa emin olmak için. Mutex beklenmedik bir şekilde mevcut olması, dolandırıcı işlemin ele geçirilmesi ve mutex kötü amaçlı olarak kullanmayı planlayan gösterebilir. Bu durumda, tanıtıcı kapatın ve var olan bir hata varmış gibi nesnesi oluşturulurken devam etmek için önerilen güvenliğe yordam aynıdır.
+>  Oluşturduktan sonra `CEvent` nesnesi [GetLastError](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) mutex önceden yoksa emin olmak için. Mutex beklenmedik bir şekilde mevcut olması, dolandırıcı işlemin ele geçirilmesi ve mutex kötü amaçlı olarak kullanmayı planlayan gösterebilir. Bu durumda, tanıtıcı kapatın ve var olan bir hata varmış gibi nesnesi oluşturulurken devam etmek için önerilen güvenliğe yordam aynıdır.
 
 ##  <a name="pulseevent"></a>  CEvent::PulseEvent
 

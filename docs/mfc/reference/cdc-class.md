@@ -402,12 +402,12 @@ helpviewer_keywords:
 - CDC [MFC], m_hAttribDC
 - CDC [MFC], m_hDC
 ms.assetid: 715b3334-cb2b-4c9c-8067-02eb7c66c8b2
-ms.openlocfilehash: 2ff6cd6e0817f74c7688fc573d4b98f70704f96c
-ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.openlocfilehash: a6b6c872963dbbdf991d013cceba66ffd20bac5c
+ms.sourcegitcommit: ecf274bcfe3a977c48745aaa243e5e731f1fdc5f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65222581"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66504393"
 ---
 # <a name="cdc-class"></a>CDC sınıfı
 
@@ -3220,7 +3220,7 @@ Geçerli grafik modu başarı döndürür. Bu yöntem döndürebilir değerlerin
 
 Hata durumunda 0 döndürür.
 
-Genişletilmiş hata bilgilerini almak için arama [GetLastError](https://msdn.microsoft.com/library/windows/desktop/ms679360).
+Genişletilmiş hata bilgilerini almak için arama [GetLastError](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror).
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -3276,7 +3276,7 @@ DWORD GetLayout() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa, düzeni geçerli cihaz bağlamı için işaretler. Aksi takdirde, GDI_ERROR. Genişletilmiş hata bilgileri için arama [GetLastError](https://msdn.microsoft.com/library/windows/desktop/ms679360). Düzen bayrakların listesi için bkz. [CDC::SetLayout](#setlayout).
+Başarılı olursa, düzeni geçerli cihaz bağlamı için işaretler. Aksi takdirde, GDI_ERROR. Genişletilmiş hata bilgileri için arama [GetLastError](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror). Düzen bayrakların listesi için bkz. [CDC::SetLayout](#setlayout).
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -4012,7 +4012,7 @@ Başarılı olduğunda sıfır olmayan bir değer döndürür.
 
 Hata durumunda 0 döndürür.
 
-Genişletilmiş hata bilgilerini almak için arama [GetLastError](https://msdn.microsoft.com/library/windows/desktop/ms679360).
+Genişletilmiş hata bilgilerini almak için arama [GetLastError](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror).
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -4459,7 +4459,7 @@ Başarılı olduğunda sıfır olmayan bir değer döndürür.
 
 Hata durumunda 0 döndürür.
 
-Genişletilmiş hata bilgilerini almak için arama [GetLastError](https://msdn.microsoft.com/library/windows/desktop/ms679360).
+Genişletilmiş hata bilgilerini almak için arama [GetLastError](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror).
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -5742,7 +5742,7 @@ Microsoft Visual C++ özelliklerinin geçirilen geri çağırma işlevi oluştur
 
 Ayrıca işlev adı dışarı gerekmez bir **dışarı AKTARMALARI** uygulamanızın modül tanım dosyasını deyiminde. Bunun yerine kullanabileceğiniz **dışarı** gibi işlev değiştiricisi
 
-**BOOL CALLBACK EXPORT** AFunction( **HDC**, `int`**);**
+**BOOL CALLBACK EXPORT** AFunction( **HDC**, `int` **);**
 
 dışarı aktarma için doğru dışa aktarma kayıt yumuşatma olmadan yalnızca adla dönüştüğünde derleyicinin neden olacak. Bu, çoğu ihtiyaçları için çalışır. Bir işlev sıra ya da diğer ad kullanımı dışarı aktarma, dışarı aktarma gibi bazı özel durumlar için kullanılacak yine bir **dışarı AKTARMALARI** deyimi bir modül tanım dosyası içinde.
 
@@ -6003,7 +6003,7 @@ Grafik modunu belirtir. Bu parametre alabilir değerlerin listesi için bkz. [Se
 
 Eski grafik modu başarı döndürür.
 
-Hata durumunda 0 döndürür. Genişletilmiş hata bilgilerini almak için arama [GetLastError](https://msdn.microsoft.com/library/windows/desktop/ms679360).
+Hata durumunda 0 döndürür. Genişletilmiş hata bilgilerini almak için arama [GetLastError](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror).
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -6032,7 +6032,7 @@ Cihaz bağlamı düzeni ve bit eşlem bayrakları kontrol eder. Aşağıdaki de�
 
 Başarılı olursa, önceki düzenini cihaz bağlamı.
 
-İşlem başarısız olursa, GDI_ERROR. Genişletilmiş hata bilgilerini almak için arama [GetLastError](https://msdn.microsoft.com/library/windows/desktop/ms679360).
+İşlem başarısız olursa, GDI_ERROR. Genişletilmiş hata bilgilerini almak için arama [GetLastError](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror).
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -6657,7 +6657,7 @@ Başarılı olduğunda sıfır olmayan bir değer döndürür.
 
 Hata durumunda 0 döndürür.
 
-Genişletilmiş hata bilgilerini almak için arama [GetLastError](https://msdn.microsoft.com/library/windows/desktop/ms679360).
+Genişletilmiş hata bilgilerini almak için arama [GetLastError](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror).
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -6812,7 +6812,7 @@ Bit eşlem çizilirse sıfır dışında bir değer, aksi durumda 0.
 
 Hedef cihaz bağlamının Uzatma modunu işlevi kullanır (belirlediği `SetStretchBltMode`) nasıl uzatılacağını veya bit eşlem Sıkıştır belirlemek için.
 
-`StretchBlt` İşlevi tarafından verilen kaynak CİHAZDAN bit eşlem taşır *psrcdc &* üye işlevi çağrılmakta olan cihaz bağlamındaki nesne ile temsil edilen hedef cihaza. *Tanımlar*, *ysrc &*, *nSrcWidth*, ve *nSrcHeight* sol üst köşesini ve boyutlarını kaynak dikdörtgenin parametrelerini tanımlayın . *x*, *y*, *nWidth*, ve *nHeight* sol üst köşesini ve boyutlarını hedef dikdörtgenin parametreleri verin. Tarafından belirtilen ızgara işlemi *dwRop* kaynak bit eşlem ve hedef cihazda önceden bulunan bitlerin nasıl birleştirileceğini tanımlar.
+`StretchBlt` İşlevi tarafından verilen kaynak CİHAZDAN bit eşlem taşır *psrcdc &* üye işlevi çağrılmakta olan cihaz bağlamındaki nesne ile temsil edilen hedef cihaza. *Tanımlar*, *ysrc &* , *nSrcWidth*, ve *nSrcHeight* sol üst köşesini ve boyutlarını kaynak dikdörtgenin parametrelerini tanımlayın . *x*, *y*, *nWidth*, ve *nHeight* sol üst köşesini ve boyutlarını hedef dikdörtgenin parametreleri verin. Tarafından belirtilen ızgara işlemi *dwRop* kaynak bit eşlem ve hedef cihazda önceden bulunan bitlerin nasıl birleştirileceğini tanımlar.
 
 `StretchBlt` İşlevi, bir eşlemin bir Ayna görüntüsünü oluşturur işaretlerini *nSrcWidth* ve *nWidth* veya *nSrcHeight* ve *nHeight* parametreleri farklıdır. Varsa *nSrcWidth* ve *nWidth* farklı işaretlere sahipse işlev x ekseni boyunca bit eşlemin bir Ayna görüntüsünü oluşturur. Varsa *nSrcHeight* ve *nHeight* farklı işaretlere sahipse işlev y ekseni boyunca bit eşlemin bir Ayna görüntüsünü oluşturur.
 

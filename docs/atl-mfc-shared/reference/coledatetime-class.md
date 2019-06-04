@@ -34,12 +34,12 @@ helpviewer_keywords:
 - dates, handling in MFC
 - time, handling in MFC
 ms.assetid: e718f294-16ec-4649-88b6-a4dbae5178fb
-ms.openlocfilehash: 46b5f15a2f6048745a12b8c3a8c8a63404f71aa2
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 63c2971f5d55cb5198925650bcf90b2f1a8b0958
+ms.sourcegitcommit: ecf274bcfe3a977c48745aaa243e5e731f1fdc5f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62252707"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66503223"
 ---
 # <a name="coledatetime-class"></a>COleDateTime sınıfı
 
@@ -169,7 +169,7 @@ bool operator>=(const COleDateTime& date) const throw();
 
 ### <a name="example"></a>Örnek
 
-İşleçler **>=**, **\< =**, **>**, ve **<**, varsa onay `COleDateTime` kümesi nesnesi null.
+İşleçler **>=** , **\< =** , **>** , ve **<** , varsa onay `COleDateTime` kümesi nesnesi null.
 
 [!code-cpp[NVC_ATLMFC_Utilities#170](../../atl-mfc-shared/codesnippet/cpp/coledatetime-class_3.cpp)]
 
@@ -225,7 +225,7 @@ Yeni içine kopyalanacak tarih ve saat değerleri gösterir `COleDateTime` nesne
 Bir tarih/saat değerine dönüştürülür ve yeni kopyalanan için tarih ve saat değerlerini MS-DOS `COleDateTime` nesne.
 
 *Zaman damgası*<br/>
-Bir başvuru bir [DBTimeStamp](https://msdn.microsoft.com/library/system.data.oledb.oledbtype) geçerli yerel saat içeren yapısı.
+Bir başvuru bir [DBTimeStamp](/dotnet/api/system.data.oledb.oledbtype) geçerli yerel saat içeren yapısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -347,7 +347,7 @@ bool GetAsDBTIMESTAMP(DBTIMESTAMP& timeStamp) const throw();
 ### <a name="parameters"></a>Parametreler
 
 *Zaman damgası*<br/>
-Bir başvuru bir [DBTimeStamp](https://msdn.microsoft.com/library/system.data.oledb.oledbtype) yapısı.
+Bir başvuru bir [DBTimeStamp](/dotnet/api/system.data.oledb.oledbtype) yapısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1141,7 +1141,7 @@ void SetStatus(DateTimeStatus status) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*Durumu*<br/>
+*status*<br/>
 Bu yeni durum değeri `COleDateTime` nesne.
 
 ### <a name="remarks"></a>Açıklamalar

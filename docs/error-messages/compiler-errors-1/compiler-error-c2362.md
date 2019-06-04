@@ -1,29 +1,29 @@
 ---
 title: Derleyici Hatası C2362
-ms.date: 11/04/2016
+ms.date: 06/03/2019
 f1_keywords:
 - C2362
 helpviewer_keywords:
 - C2362
 ms.assetid: 7aafecbc-b3cf-45a6-9ec3-a17e3f222511
-ms.openlocfilehash: 17656b2a48a3680a9269d3ca300fd4188eda6b84
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: d48806982bbb6cdda4d29e47f6692e7e3601d6de
+ms.sourcegitcommit: ecf274bcfe3a977c48745aaa243e5e731f1fdc5f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62364330"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66503208"
 ---
 # <a name="compiler-error-c2362"></a>Derleyici Hatası C2362
 
-'identifier' öğesinin başlatılması 'goto etiketle' atlandı
+> öğesinin başlatılması '*tanımlayıcısı*' tarafından atlandığını ' goto *etiket*'
 
-İle derlerken [/Za](../../build/reference/za-ze-disable-language-extensions.md), etikete atladıktan engeller tanımlayıcı başlatılmış.
+Kullanılarak derlendiğinde [/Za](../../build/reference/za-ze-disable-language-extensions.md), başlatılmış bir atlama etiketine tanımlayıcısı engeller.
 
-Bildirimi olmayan girilen bir bloğu içinde alınmış sürece bir bildirimi bir başlatıcıya sahip son atlama olamaz veya değişken zaten başlatıldı.
+Yalnızca bir bildirimi bir başlatıcıya sahip son bildirimi girilen değil bir bloğu içinde alınmış veya değişken zaten başlatılmış atlayabilirsiniz.
 
-Aşağıdaki örnek, C2326 oluşturur:
+Aşağıdaki örnek, C2362 oluşturur:
 
-```
+```cpp
 // C2362.cpp
 // compile with: /Za
 int main() {
@@ -35,7 +35,7 @@ label1:;
 
 Olası çözüm:
 
-```
+```cpp
 // C2362b.cpp
 // compile with: /Za
 int main() {

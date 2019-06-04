@@ -12,12 +12,12 @@ helpviewer_keywords:
 - upgrading ActiveX controls
 - licensing ActiveX controls
 ms.assetid: 4d12ddfa-b491-4f9f-a0b7-b51458e05651
-ms.openlocfilehash: 57d94a51d9dfb78dfaf3a690c43c74a2d6ab6db3
-ms.sourcegitcommit: 28eae422049ac3381c6b1206664455dbb56cbfb6
+ms.openlocfilehash: 22cbeaa5ac0f92e2b7bcc9dcbd06df9ab4ccaff5
+ms.sourcegitcommit: ecf274bcfe3a977c48745aaa243e5e731f1fdc5f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66450605"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66503829"
 ---
 # <a name="upgrading-an-existing-activex-control"></a>Varolan Bir ActiveX Denetimini Güncelleştirme
 
@@ -181,7 +181,7 @@ Internet Explorer'da lisanslı bir ActiveX denetimi kullanmak için lisans denet
 
 - Kod temeli parametresinin kullanımı
 
-Bir HTML sayfasında nonlicensed bir makinede lisanslı bir denetim kullanmak için bir lisans paket dosyası (LPK) oluşturmanız gerekir. Çalışma zamanı lisansları HTML sayfasındaki lisanslı denetimler için LPK dosya içerir. Bu dosya LPK_TOOL oluşturulur. ActiveX SDK'sı ile sunulan EXE. Daha fazla bilgi için MSDN Web sitesinde bkz [ https://msdn.microsoft.com ](https://msdn.microsoft.com).
+Bir HTML sayfasında nonlicensed bir makinede lisanslı bir denetim kullanmak için bir lisans paket dosyası (LPK) oluşturmanız gerekir. Çalışma zamanı lisansları HTML sayfasındaki lisanslı denetimler için LPK dosya içerir. Bu dosya LPK_TOOL oluşturulur. ActiveX SDK'sı ile sunulan EXE.
 
 #### <a name="to-create-an-lpk-file"></a>Bir LPK dosyası oluşturmak için
 

@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - CSemaphore [MFC], CSemaphore
 ms.assetid: 385fc7e4-8f86-4be2-85e1-d23b38c12f7f
-ms.openlocfilehash: f2a05963f39393bcc73650beb44c5dbb8e5535ee
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 6c518b6a9ad0fe857b0878bcecd3020ba97174e6
+ms.sourcegitcommit: ecf274bcfe3a977c48745aaa243e5e731f1fdc5f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62324213"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66504708"
 ---
 # <a name="csemaphore-class"></a>CSemaphore sınıfı
 
@@ -83,14 +83,14 @@ Semafor için en fazla kullanım sayısı. 0'dan büyük olmalıdır.
 Semafor adı. Semafor işlem sınırları ötesinde erişecek olursa sağlanmalıdır. Varsa `NULL`, nesne adlandırılmamış olacaktır. Oluşturucu ad var olan bir semaforu eşleşiyorsa, yeni bir yapılar `CSemaphore` adının semafor başvuran nesne. Semafor olmayan mevcut bir eşitleme nesnesi adıyla, yapı başarısız olur.
 
 *lpsaAttributes*<br/>
-Semafor nesne için güvenlik öznitelikleri. Bu yapı tam bir açıklaması için bkz. [SECURITY_ATTRIBUTES](https://msdn.microsoft.com/library/windows/desktop/aa379560) Windows SDK.
+Semafor nesne için güvenlik öznitelikleri. Bu yapı tam bir açıklaması için bkz. [SECURITY_ATTRIBUTES](/previous-versions/windows/desktop/legacy/aa379560\(v=vs.85\)) Windows SDK.
 
 ### <a name="remarks"></a>Açıklamalar
 
 Erişim veya yayın için bir `CSemaphore` nesne, oluşturun bir [CMultiLock](../../mfc/reference/cmultilock-class.md) veya [CSingleLock](../../mfc/reference/csinglelock-class.md) nesne ve çağrı kendi [kilit](../../mfc/reference/csinglelock-class.md#lock) ve [kilidini](../../mfc/reference/csinglelock-class.md#unlock) üye işlevleri.
 
 > [!IMPORTANT]
->  Oluşturduktan sonra `CSemaphore` nesnesi [GetLastError](https://msdn.microsoft.com/library/windows/desktop/ms679360) mutex zaten yoktu emin olmak için. Mutex beklenmedik bir şekilde mevcut olması, dolandırıcı işlemin ele geçirilmesi ve mutex kötü amaçlı olarak kullanmayı planlayan gösterebilir. Bu durumda, tanıtıcı kapatın ve var olan bir hata varmış gibi nesnesi oluşturulurken devam etmek için önerilen güvenliğe yordam aynıdır.
+>  Oluşturduktan sonra `CSemaphore` nesnesi [GetLastError](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) mutex zaten yoktu emin olmak için. Mutex beklenmedik bir şekilde mevcut olması, dolandırıcı işlemin ele geçirilmesi ve mutex kötü amaçlı olarak kullanmayı planlayan gösterebilir. Bu durumda, tanıtıcı kapatın ve var olan bir hata varmış gibi nesnesi oluşturulurken devam etmek için önerilen güvenliğe yordam aynıdır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

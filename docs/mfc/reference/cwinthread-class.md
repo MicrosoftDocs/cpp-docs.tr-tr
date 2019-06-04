@@ -50,12 +50,12 @@ helpviewer_keywords:
 - CWinThread [MFC], m_pActiveWnd
 - CWinThread [MFC], m_pMainWnd
 ms.assetid: 10cdc294-4057-4e76-ac7c-a8967a89af0b
-ms.openlocfilehash: 9f17561941d785e5eb7b5fd8c52ab452aa6369e7
-ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.openlocfilehash: 4d3582493489faf44afece9338b1491620ca798a
+ms.sourcegitcommit: ecf274bcfe3a977c48745aaa243e5e731f1fdc5f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65220431"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66504648"
 ---
 # <a name="cwinthread-class"></a>CWinThread sınıfı
 
@@ -164,7 +164,7 @@ BOOL CreateThread(
 Yeni iş parçacığı yığınının bayt cinsinden boyutunu belirtir. Varsa **0**, yığın boyutu varsayılan olarak, işlemin birincil iş parçacığının aynı boyutta için.
 
 *lpSecurityAttrs*<br/>
-İşaret eden bir [SECURITY_ATTRIBUTES](https://msdn.microsoft.com/library/windows/desktop/aa379560) iş parçacığı için güvenlik özniteliklerini belirten yapısı.
+İşaret eden bir [SECURITY_ATTRIBUTES](/previous-versions/windows/desktop/legacy/aa379560\(v=vs.85\)) iş parçacığı için güvenlik özniteliklerini belirten yapısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 

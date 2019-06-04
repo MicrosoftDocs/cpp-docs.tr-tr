@@ -264,12 +264,12 @@ helpviewer_keywords:
 - CListCtrl [MFC], SubItemHitTest
 - CListCtrl [MFC], Update
 ms.assetid: fe08a1ca-4b05-4ff7-a12a-ee4c765a2197
-ms.openlocfilehash: eea37d03ca5a4fab450fbca0c4c3f6c76fefb407
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 1cdc4bfacee4913d3a38aaa45aadf0a430e547ab
+ms.sourcegitcommit: ecf274bcfe3a977c48745aaa243e5e731f1fdc5f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62225262"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66503448"
 ---
 # <a name="clistctrl-class"></a>CListCtrl sınıfı
 
@@ -681,7 +681,7 @@ Başarılı olursa sıfır dışı; Aksi durumda 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kullanım `CreateEx` yerine [Oluştur](#create) Windows genişletilmiş sitil önsöz tarafından belirtilen Genişletilmiş Windows stilleri uygulamak için **WS_EX_**.
+Kullanım `CreateEx` yerine [Oluştur](#create) Windows genişletilmiş sitil önsöz tarafından belirtilen Genişletilmiş Windows stilleri uygulamak için **WS_EX_** .
 
 `CreateEx` tarafından belirtilen Genişletilmiş Windows stillerle denetimi oluşturur *dwExStyle*. Genişletilmiş stiller belirli bir denetime ayarlamadığınız için çağrı [SetExtendedStyle](#setextendedstyle). Örneğin, `CreateEx` böyle stilleri WS_EX_CONTEXTHELP ayarlandı, ancak kullanmak için `SetExtendedStyle` böyle stilleri LVS_EX_FULLROWSELECT ayarlanacak. Daha fazla bilgi için bkz. Bu konu başlığı altında açıklanan stilleri [Genişletilmiş liste görünümü stillerini](/windows/desktop/Controls/extended-list-view-styles) Windows SDK.
 
@@ -1367,7 +1367,7 @@ Bu yöntem başarılı olursa TRUE; Aksi takdirde FALSE.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem gönderir [LVM_GETGROUPINFOBYINDEX](https://msdn.microsoft.com/library/windows/desktop/bb774933) --> Windows SDK'da açıklanan ileti.
+Bu yöntem gönderir [LVM_GETGROUPINFOBYINDEX](/windows/desktop/controls/lvm-getgroupinfobyindex) --> Windows SDK'da açıklanan ileti.
 
 ### <a name="example"></a>Örnek
 
@@ -1787,7 +1787,7 @@ BOOL GetItemIndexRect(
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|*pItemIndex*|[in] İşaretçi bir [LVITEMINDEX](https://msdn.microsoft.com/library/windows/desktop/bb774762) üst öğenin alt yapısı.<br /><br /> Ayırma ve üyelerinin ayarlamak için çağıran sorumludur [LVITEMINDEX](https://msdn.microsoft.com/library/windows/desktop/bb774762) yapısı. Bu parametre NULL olamaz.|
+|*pItemIndex*|[in] İşaretçi bir [LVITEMINDEX](/windows/desktop/api/commctrl/ns-commctrl-lvitemindex) üst öğenin alt yapısı.<br /><br /> Ayırma ve üyelerinin ayarlamak için çağıran sorumludur [LVITEMINDEX](/windows/desktop/api/commctrl/ns-commctrl-lvitemindex) yapısı. Bu parametre NULL olamaz.|
 |*iColumn*|[in] Denetim bir sütunun sıfır tabanlı dizini.|
 |*rectType*|[in] İçin sınırlayıcı dikdörtgenini alınacağı liste görünüm alt kısmı. Aşağıdaki değerlerden birini belirtin:<br /><br /> LVIR_BOUNDS - etiket ve simgeyi dahil olmak üzere tüm alt sınırlayıcı dikdörtgenini döndürür.<br /><br /> LVIR_ICON - sınırlayıcı dikdörtgenini simge veya alt küçük simgesini döndürür.<br /><br /> LVIR_LABEL - alt metnin dikdörtgen döndürür.|
 |*pRect*|[out] İşaretçi bir [RECT](/previous-versions/dd162897\(v=vs.85\)) yapısı alt dikdörtgen hakkındaki bilgileri alır.<br /><br /> Çağıranın sorumlu olan [RECT](/previous-versions/dd162897\(v=vs.85\)) yapısı. Bu parametre NULL olamaz.|
@@ -2093,8 +2093,8 @@ BOOL GetNextItemIndex(
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|*pItemIndex*|[out içinde] İşaretçi [LVITEMINDEX](https://msdn.microsoft.com/library/windows/desktop/bb774762) arama başladığı öğenin açıkladığı yapısı veya bayrak eşleşen ilk öğeyi bulmak için -1 *nFlags* parametresi.<br /><br /> Bu yöntem başarılı olursa `LVITEMINDEX` arama tarafından bulunan öğe yapısını açıklar.|
-|*nFlags*|[in] Bitsel bir birleşimi (veya) aramanın nasıl yapılacağını belirten bayrak.<br /><br /> Arama dizini, durumu veya hedef öğenin görünümünü bağımlı olabilir ya da hedef öğenin fiziksel konumu göreli öğesi tarafından belirtilen *pItemIndex* parametresi. Daha fazla bilgi için *bayrakları* parametresinde [LVM_GETNEXTITEMINDEX](https://msdn.microsoft.com/library/windows/desktop/bb761059) ileti.|
+|*pItemIndex*|[out içinde] İşaretçi [LVITEMINDEX](/windows/desktop/api/commctrl/ns-commctrl-lvitemindex) arama başladığı öğenin açıkladığı yapısı veya bayrak eşleşen ilk öğeyi bulmak için -1 *nFlags* parametresi.<br /><br /> Bu yöntem başarılı olursa `LVITEMINDEX` arama tarafından bulunan öğe yapısını açıklar.|
+|*nFlags*|[in] Bitsel bir birleşimi (veya) aramanın nasıl yapılacağını belirten bayrak.<br /><br /> Arama dizini, durumu veya hedef öğenin görünümünü bağımlı olabilir ya da hedef öğenin fiziksel konumu göreli öğesi tarafından belirtilen *pItemIndex* parametresi. Daha fazla bilgi için *bayrakları* parametresinde [LVM_GETNEXTITEMINDEX](/windows/desktop/controls/lvm-getnextitemindex) ileti.|
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -2104,7 +2104,7 @@ Bu yöntem başarılı olursa TRUE; Aksi takdirde FALSE.
 
 Ayırma ve üyelerinin ayarlamak için çağıran sorumludur `LVITEMINDEX` yapısı tarafından işaret edilen *pItemIndex* parametresi.
 
-Bu yöntem gönderir [LVM_GETNEXTITEMINDEX](https://msdn.microsoft.com/library/windows/desktop/bb761059) Windows SDK'da açıklanan ileti.
+Bu yöntem gönderir [LVM_GETNEXTITEMINDEX](/windows/desktop/controls/lvm-getnextitemindex) Windows SDK'da açıklanan ileti.
 
 ## <a name="getnextselecteditem"></a>  CListCtrl::GetNextSelectedItem
 
@@ -2909,7 +2909,7 @@ Bir liste görünümü denetimi öğeleri dizin tarafından dahili olarak izler.
 
 Liste Görünümü denetimi, arka plan iş parçacığı üzerinde barındıran iş parçacığı üzerinde dizin birden çok iş parçacıklı bir ortamda garanti unutmayın.
 
-Bu yöntem gönderir [LVM_MAPIDTOINDEX](https://msdn.microsoft.com/library/windows/desktop/bb761137) Windows SDK'da açıklanan ileti.
+Bu yöntem gönderir [LVM_MAPIDTOINDEX](/windows/desktop/controls/lvm-mapidtoindex) Windows SDK'da açıklanan ileti.
 
 ## <a name="mapindextoid"></a>  CListCtrl::MapIndexToID
 
@@ -3822,7 +3822,7 @@ BOOL SetItemIndexState(
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|*pItemIndex*|[in] İşaretçi bir [LVITEMINDEX](https://msdn.microsoft.com/library/windows/desktop/bb774762) öğeyi tanımlayan yapısı. Bu yapı ayırma ve üyelerini ayarlamak için çağıran sorumludur.|
+|*pItemIndex*|[in] İşaretçi bir [LVITEMINDEX](/windows/desktop/api/commctrl/ns-commctrl-lvitemindex) öğeyi tanımlayan yapısı. Bu yapı ayırma ve üyelerini ayarlamak için çağıran sorumludur.|
 |*dwState*|[in] Öğe için ayarlanacak durumu Bitsel bir birleşimi olan [liste görünümü öğesi durumları](/windows/desktop/Controls/list-view-item-states). Sıfırlama için sıfır veya bir ayarlamak için bir durum belirtin.|
 |*dwMask*|[in] Tarafından belirtilen durumunun geçerli bit maskesi *dwState* parametresi. Bit düzeyinde birleşimi (veya) belirtin [liste görünümü öğesi durumları](/windows/desktop/Controls/list-view-item-states).|
 

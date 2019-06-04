@@ -8,12 +8,12 @@ helpviewer_keywords:
 - Clipboard, programming
 - transferring data
 ms.assetid: a71b2824-1f14-4914-8816-54578d73ad4e
-ms.openlocfilehash: 4fcf53f1d861a85d830d0fb4244e8af9c11af163
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 5814b2fdfc7fbcaca00037cc64dd71aa27d65cc3
+ms.sourcegitcommit: ecf274bcfe3a977c48745aaa243e5e731f1fdc5f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62326912"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66504621"
 ---
 # <a name="clipboard"></a>Pano
 
@@ -39,7 +39,7 @@ Pano, tanıtıcı veya sınıf kendi içermez tüm Windows oturumu tarafından p
 
 - [Diğer biçimleri ekleme](../mfc/clipboard-adding-other-formats.md)
 
-- [Windows panosu](https://msdn.microsoft.com/library/ms648709)
+- [Windows panosu](/windows/desktop/dataxchg/clipboard)
 
 - [Sürükleme ve bırakma (OLE) uygulama](../mfc/drag-and-drop-ole.md)
 

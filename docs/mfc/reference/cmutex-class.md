@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - CMutex [MFC], CMutex
 ms.assetid: 6330c050-4f01-4195-a099-2029b92f8cf1
-ms.openlocfilehash: f85e562af9d048503be20d1ab5d219fe8d2d039f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 9c55da8a7692982fc18589fa69e9e2b0749cb6eb
+ms.sourcegitcommit: ecf274bcfe3a977c48745aaa243e5e731f1fdc5f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62373654"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66504182"
 ---
 # <a name="cmutex-class"></a>CMutex sınıfı
 
@@ -77,14 +77,14 @@ Belirtir iş parçacığı oluşturma `CMutex` nesnenin başlangıçta mutex tar
 Adını `CMutex` nesne. Aynı ada sahip başka bir mutex varsa *lpszName* işlem sınırları ötesinde nesneye kullanılacaksa sağlanmalıdır. Varsa **NULL**, mutex adlandırılmamış olacaktır. Oluşturucu ad var olan bir mutex eşleşiyorsa, yeni bir yapılar `CMutex` başvuran adının mutex nesnesi. Adla eşleşen bir mutex olmayan mevcut bir eşitleme nesnesi oluşturma başarısız olur.
 
 *lpsaAttribute*<br/>
-Mutex nesnesi için güvenlik öznitelikleri. Bu yapı tam bir açıklaması için bkz. [SECURITY_ATTRIBUTES](https://msdn.microsoft.com/library/windows/desktop/aa379560) Windows SDK.
+Mutex nesnesi için güvenlik öznitelikleri. Bu yapı tam bir açıklaması için bkz. [SECURITY_ATTRIBUTES](/previous-versions/windows/desktop/legacy/aa379560\(v=vs.85\)) Windows SDK.
 
 ### <a name="remarks"></a>Açıklamalar
 
 Erişim veya yayın için bir `CMutex` nesne, oluşturun bir [CMultiLock](../../mfc/reference/cmultilock-class.md) veya [CSingleLock](../../mfc/reference/csinglelock-class.md) nesne ve çağrı kendi [kilit](../../mfc/reference/csinglelock-class.md#lock) ve [kilidini](../../mfc/reference/csinglelock-class.md#unlock) üye işlevleri. Varsa `CMutex` nesne kullanılan tek başına, çağrı kendi `Unlock` bunu serbest bırakmak için üye işlevi.
 
 > [!IMPORTANT]
->  Oluşturduktan sonra `CMutex` nesnesi [GetLastError](https://msdn.microsoft.com/library/windows/desktop/ms679360) mutex zaten yoktu emin olmak için. Mutex beklenmedik bir şekilde mevcut olması, dolandırıcı işlemin ele geçirilmesi ve mutex kötü amaçlı olarak kullanmayı planlayan gösterebilir. Bu durumda, tanıtıcı kapatın ve var olan bir hata varmış gibi nesnesi oluşturulurken devam etmek için önerilen güvenliğe yordam aynıdır.
+>  Oluşturduktan sonra `CMutex` nesnesi [GetLastError](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) mutex zaten yoktu emin olmak için. Mutex beklenmedik bir şekilde mevcut olması, dolandırıcı işlemin ele geçirilmesi ve mutex kötü amaçlı olarak kullanmayı planlayan gösterebilir. Bu durumda, tanıtıcı kapatın ve var olan bir hata varmış gibi nesnesi oluşturulurken devam etmek için önerilen güvenliğe yordam aynıdır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
