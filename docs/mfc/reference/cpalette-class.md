@@ -26,12 +26,12 @@ helpviewer_keywords:
 - CPalette [MFC], ResizePalette
 - CPalette [MFC], SetPaletteEntries
 ms.assetid: 8cd95498-53ed-4852-85e1-70e522541114
-ms.openlocfilehash: f0105a8ee33a57f7431a9c6a97b4b132f291f42a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 1dc29a675f6ab3883683b3afae7e22e7ed0f1cc3
+ms.sourcegitcommit: ecf274bcfe3a977c48745aaa243e5e731f1fdc5f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62373186"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66504754"
 ---
 # <a name="cpalette-class"></a>CPalette sınıfı
 
@@ -111,7 +111,7 @@ void AnimatePalette(
 Animasyonlu hale getirilmesini palette giriş sayısını belirtir.
 
 *lpPaletteColors*<br/>
-Bir dizi ilk üyesine işaret [PALETTEENTRY](https://msdn.microsoft.com/library/windows/desktop/dd162769) yapıları tarafından tanımlanan paleti girdileri değiştirilecek *nStartIndex* ve *nNumEntries*.
+Bir dizi ilk üyesine işaret [PALETTEENTRY](/previous-versions/dd162769\(v=vs.85\)) yapıları tarafından tanımlanan paleti girdileri değiştirilecek *nStartIndex* ve *nNumEntries*.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -245,7 +245,7 @@ UINT GetPaletteEntries(
 Girdi sayısı alınacak, mantıksal paletini belirtir.
 
 *lpPaletteColors*<br/>
-İşaret dizilerine [PALETTEENTRY](https://msdn.microsoft.com/library/windows/desktop/dd162769) paleti girdileri almak için veri yapıları. Dizi en az sayıda veri yapıları tarafından belirtilen içermelidir *nNumEntries*.
+İşaret dizilerine [PALETTEENTRY](/previous-versions/dd162769\(v=vs.85\)) paleti girdileri almak için veri yapıları. Dizi en az sayıda veri yapıları tarafından belirtilen içermelidir *nNumEntries*.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -312,7 +312,7 @@ UINT SetPaletteEntries(
 Girdi sayısı bu değeri ayarlamak için mantıksal paletini belirtir.
 
 *lpPaletteColors*<br/>
-İşaret dizilerine [PALETTEENTRY](https://msdn.microsoft.com/library/windows/desktop/dd162769) paleti girdileri almak için veri yapıları. Dizi en az sayıda veri yapıları tarafından belirtilen içermelidir *nNumEntries*.
+İşaret dizilerine [PALETTEENTRY](/previous-versions/dd162769\(v=vs.85\)) paleti girdileri almak için veri yapıları. Dizi en az sayıda veri yapıları tarafından belirtilen içermelidir *nNumEntries*.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -322,7 +322,7 @@ Girdi sayısı mantıksal palette ayarlayın; işlev başarısız olursa 0.
 
 Mantıksal paletini uygulaması çağırdığında bir cihaz bağlamına seçilirse `SetPaletteEntries`, değişiklikleri uygulama çağrıları kadar etkili olmaz [CDC::RealizePalette](../../mfc/reference/cdc-class.md#realizepalette).
 
-Windows yapısı hakkında daha fazla bilgi için `PALETTEENTRY`, bkz: [PALETTEENTRY](https://msdn.microsoft.com/library/windows/desktop/dd162769) Windows SDK.
+Daha fazla bilgi için [PALETTEENTRY](/previous-versions/dd162769\(v=vs.85\)) Windows SDK.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
