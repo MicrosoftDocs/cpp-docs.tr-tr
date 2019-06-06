@@ -4,12 +4,12 @@ ms.date: 05/14/2019
 helpviewer_keywords:
 - code wizards [C++]
 ms.assetid: 6afb7ef9-7056-423d-b244-91bb4236d1d7
-ms.openlocfilehash: 8c88936edcb9110fe7482281f483f11c542b83c1
-ms.sourcegitcommit: fc1de63a39f7fcbfe2234e3f372b5e1c6a286087
+ms.openlocfilehash: efced3be3a0bcc7efe16aef1061c4cd9ec1ed21c
+ms.sourcegitcommit: 65ed563a8a1d4d90f872a2a6edcb086f84ec9f77
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65708126"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66741633"
 ---
 # <a name="adding-functionality-with-code-wizards-c"></a>(C++) kod sihirbazlarıyla işlevsellik ekleme
 
@@ -18,7 +18,7 @@ Proje oluşturulduktan sonra değiştirin veya projenin işlevsellik eklemek ist
 > [!NOTE]
 > Aşağıdaki nadiren kullanılan kod sihirbazları Visual Studio 2019 kaldırılır. ATL ve MFC genel desteği, bu sihirbazlar kaldırılmasını tarafından etkilenmez. Bu teknolojiler için örnek kod Microsoft Docs ve VCSamples GitHub deposunu arşivlenir.
 
-- ATL COM + 1.0 bileşeni Sihirbazı
+- ATL COM+ 1.0 Bileşeni Sihirbazı
 - ATL Active Server Pages bileşeni Sihirbazı
 - ATL OLE DB sağlayıcısı Sihirbazı
 - ATL Özellik Sayfası Sihirbazı
@@ -76,6 +76,6 @@ Erişebileceğiniz üç konum vardır C++ kod sihirbazları:
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Bir sanal işlevi geçersiz kılma](../ide/overriding-a-virtual-function-visual-cpp.md)<br>
-[Sınıf yapısında gezinme](../ide/navigating-the-class-structure-visual-cpp.md)<br>
+[Git, C++ Visual Studio'da temel kod](../ide/navigate-code-cpp.md)<br>
 [C++Visual Studio Proje türleri](../build/reference/visual-cpp-project-types.md)<br>
 [Oluşturulan türleri için Visual Studio dosya C++ projeleri](../build/reference/file-types-created-for-visual-cpp-projects.md)

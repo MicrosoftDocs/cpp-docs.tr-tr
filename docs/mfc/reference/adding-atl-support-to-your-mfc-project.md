@@ -7,12 +7,12 @@ helpviewer_keywords:
 - MFC, ATL support
 - ATL, MFC projects
 ms.assetid: b5fe15d6-7752-4818-b9f9-62482ad35c95
-ms.openlocfilehash: 2870bf70492dc09d1a0af3664d1a819aec354b92
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 0f75ffd09da1502e5f1488dbce0d8d2b9623d396
+ms.sourcegitcommit: 65ed563a8a1d4d90f872a2a6edcb086f84ec9f77
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62296715"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66741734"
 ---
 # <a name="adding-atl-support-to-your-mfc-project"></a>MFC Projenize ATL Desteği Ekleme
 
@@ -47,4 +47,4 @@ ATL desteği ekleme MFC proje kodunuzun nasıl değiştiğini hakkında daha faz
 [Üye değişkeni ekleme](../../ide/adding-a-member-variable-visual-cpp.md)<br/>
 [Bir sanal işlevi geçersiz kılma](../../ide/overriding-a-virtual-function-visual-cpp.md)<br/>
 [MFC ileti işleyicisi](../../mfc/reference/adding-an-mfc-message-handler.md)<br/>
-[Sınıf yapısında gezinme](../../ide/navigating-the-class-structure-visual-cpp.md)
+[Sınıf yapısında gezinme](../../ide/navigate-code-cpp.md)
