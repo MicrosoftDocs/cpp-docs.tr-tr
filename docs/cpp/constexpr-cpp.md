@@ -21,8 +21,8 @@ Derleme zamanı sabit hesaplamaları ve derleme zamanında, olası etkilerini s�
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **constexpr** *değişmez değer türü* *tanımlayıcı* ** = ** *sabit-ifade* **;** 
->  **constexpr** *değişmez değer türü* *tanımlayıcı* **{** *sabit-ifade * **}** **;** 
+> **constexpr** *değişmez değer türü* *tanımlayıcı* **=** *sabit-ifade* **;** 
+>  **constexpr** *değişmez değer türü* *tanımlayıcı* **{** *sabit-ifade* **}** **;** 
 >  **constexpr** *değişmez değer türü* *tanımlayıcı* **(** *params* **)** **;** 
 >  **constexpr** *ctor* **(** *params* **)** **;**
 

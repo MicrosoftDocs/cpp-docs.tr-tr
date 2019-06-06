@@ -4246,6 +4246,8 @@
           href: compiler-warnings/c5046.md
 - name: Derleyici sürümüne göre derleyici uyarıları
   href: compiler-warnings/compiler-warnings-by-compiler-version.md
+- name: Varsayılan olarak kapalı olan derleyici uyarıları
+  href: ../preprocessor/compiler-warnings-that-are-off-by-default.md
 - name: C Çalışma Zamanı hataları
   expanded: false
   items:
