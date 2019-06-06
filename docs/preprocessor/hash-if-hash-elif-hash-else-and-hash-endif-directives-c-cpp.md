@@ -41,25 +41,25 @@ ms.locfileid: "62409895"
 &nbsp;&nbsp;&nbsp;&nbsp;*if-line metni*
 
 *Eğer satır içi* :<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**#if***sabit-ifade*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**#ifdef***tanımlayıcısı*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**#ifndef***tanımlayıcısı*
+&nbsp;&nbsp;&nbsp;&nbsp; **#if** *sabit-ifade*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp; **#ifdef** *tanımlayıcısı*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp; **#ifndef** *tanımlayıcısı*
 
 *elif-parts* :<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*elif-line metni*<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*elif-parts elif-line metni*
 
 *elif-satırı* :<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**#elif**  *constant-expression*
+&nbsp;&nbsp;&nbsp;&nbsp; **#elif**  *constant-expression*
 
 *else bölümünü* :<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*else-line metni*
 
 *başka satır* :<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**#else**
+&nbsp;&nbsp;&nbsp;&nbsp; **#else**
 
 *Satır içi endif* :<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**#endif**
+&nbsp;&nbsp;&nbsp;&nbsp; **#endif**
 
 Her **#if** yönergesi kaynak dosyada bir kapanış eşleştirilmelidir **#endif** yönergesi. Herhangi bir sayıda **#elif** yönergeleri arasında görünebilir **#if** ve **#endif** yönergeleri, ancak en fazla bir **#else** yönergesine izin verilir. **#Else** yönergesi, varsa, olmalıdır öncesindeki son yönerge **#endif**.
 
@@ -73,7 +73,7 @@ Makro değiştirme, izleyen komut satırı bölümünde gerçekleştirilir bir *
 
 Önişlemci seçilen işler *metin* ve derleyiciye gönderir. Varsa *metin* önişlemci yönergeleri, önişlemci yönergeleri Bu tıklatıldığındaki içerir. Yalnızca önişlemci tarafından seçilen metin blokları derlenir.
 
-Tek bir önişlemci seçer *metin* her izleyen sabit ifadeyi değerlendirerek by öğesi **#if** veya **#elif** true (sıfırdan farklı) sabit bulana kadar yönergesi ifade. Tüm metni seçer (ile başlayan diğer önişlemci yönergeleri dahil olmak üzere **#**) kadar ilişkili **#elif**, **#else**, veya **#endif** .
+Tek bir önişlemci seçer *metin* her izleyen sabit ifadeyi değerlendirerek by öğesi **#if** veya **#elif** true (sıfırdan farklı) sabit bulana kadar yönergesi ifade. Tüm metni seçer (ile başlayan diğer önişlemci yönergeleri dahil olmak üzere **#** ) kadar ilişkili **#elif**, **#else**, veya **#endif** .
 
 Tüm oluşumlarını *sabit-ifade* yanlış olan veya hiçbir **#elif** yönergesi görünmüyorsa, önişlemci sonra metin bloğunu seçer **#else** yan tümcesi. Varsa **#else** yan tümcesi atlanırsa ve tüm örneklerini *sabit-ifade* içinde **#if** false ise, hiçbir metin bloğu seçilmez.
 
