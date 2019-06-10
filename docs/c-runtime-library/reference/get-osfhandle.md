@@ -25,12 +25,12 @@ helpviewer_keywords:
 - _get_osfhandle function
 - file handles [C++], operating system
 ms.assetid: 0bdd728a-4fd8-410b-8c9f-01a121135196
-ms.openlocfilehash: beab4e4308bc7bcde287366b78671f61a89f8827
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: cc3b50e3d3f65bee83b8df83aa0adb5c8694e35a
+ms.sourcegitcommit: 8adabe177d557c74566c13145196c11cef5d10d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62332214"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66821662"
 ---
 # <a name="getosfhandle"></a>_get_osfhandle
 
@@ -51,11 +51,16 @@ Var olan bir dosya tanımlayıcısı.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Bir işletim sistemi dosya tanıtıcısı döndürür *fd* geçerlidir. Aksi takdirde, geçersiz parametre işleyicisi açıklandığı gibi çağrılır [Parameter Validation](../../c-runtime-library/parameter-validation.md). Yürütmenin devam etmesine izin verilirse, bu işlevi döndürür **INVALID_HANDLE_VALUE** (-1) ve ayarlar **errno** için **EBADF**, geçersiz bir dosya işlemesi belirten. Sonucu bir Win32 dosya işleci beklediğiniz çalışmalarında kullanıldığında, bir derleyici uyarısı önlemek için yayınlayacağınızı bir **İŞLEMEK** türü.
+Bir işletim sistemi dosya tanıtıcısı döndürür *fd* geçerlidir. Aksi takdirde, geçersiz parametre işleyicisi açıklandığı gibi çağrılır [Parameter Validation](../../c-runtime-library/parameter-validation.md). Yürütmenin devam etmesine izin verilirse, döndürür **INVALID_HANDLE_VALUE** (-1). Ayrıca ayarlar **errno** için **EBADF**, geçersiz bir dosya işlemesi belirten. Bir uyarı sonucu bir Win32 dosya işleci kullanıldığında önlemek için yayınlayacağınızı bir **İŞLEMEK** türü.
+
+> [!NOTE]
+> Zaman **stdin**, **stdout**, ve **stderr** bulunmayan bir akış (örneğin, bir uygulamada Windows bir konsol penceresi olmadan), dosya tanımlayıcısı değerlerini ilişkili Bu akışları döndürülen [_fileno](fileno.md) -2 özel değer. Benzer şekilde, bir çağrı sonucunu yerine dosya tanımlayıcısı parametresi 0, 1 veya 2 kullanıyorsanız **_fileno**, **_get_osfhandle** ayrıca dosya tanımlayıcısı ilişkili olmadığında özel değeri -2 döndürür. bir akışı ve ayarlı değil **errno**. Ancak, bu geçerli bir dosya tanıtıcısı değeri değil ve bunu kullanma girişimi yapılan sonraki çağrılar büyük olasılıkla başarısız olur.
+
+Hakkında daha fazla bilgi için **EBADF** ve diğer hata kodları [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bir dosya olan işletim sistemi (OS) dosya tanıtıcısı ile elde edilir kapatmak için **_get_osfhandle**, çağrı [_close](close.md) dosya tanımlayıcısı üzerinde *fd*. Çağırmayın **CloseHandle** bu işlevin dönüş değeri. Temel işletim sistemi dosya tanıtıcısı tarafından sahip olunan *fd* dosya tanımlayıcısı ve kapatılır [_close](close.md) üzerinde çağrılır *fd*. Dosya tanımlayıcısı aitse bir `FILE *` akış, ardından arama [fclose](fclose-fcloseall.md) üzerindeki `FILE *` hem dosya tanımlayıcısı hem de temel alınan işletim sistemi dosya tanıtıcısı akışı kapatır. Bu durumda, çağırmayın [_close](close.md) üzerinde dosya tanımlayıcısı.
+Bir dosya olan işletim sistemi (OS) dosya tanıtıcısı ile elde edilir kapatmak için **_get_osfhandle**, çağrı [_close](close.md) dosya tanımlayıcısı üzerinde *fd*. Hiçbir çağrı **CloseHandle** bu işlevin dönüş değeri. Temel işletim sistemi dosya tanıtıcısı tarafından sahip olunan *fd* dosya tanımlayıcısı ve kapatılır [_close](close.md) üzerinde çağrılır *fd*. Dosya tanımlayıcısı aitse bir `FILE *` akış, ardından arama [fclose](fclose-fcloseall.md) üzerindeki `FILE *` hem dosya tanımlayıcısı hem de temel alınan işletim sistemi dosya tanıtıcısı akışı kapatır. Bu durumda, Remove() çağırmayın [_close](close.md) üzerinde dosya tanımlayıcısı.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -72,3 +77,4 @@ Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/comp
 [_creat, _wcreat](creat-wcreat.md)<br/>
 [_dup, _dup2](dup-dup2.md)<br/>
 [_open, _wopen](open-wopen.md)<br/>
+[\_open_osfhandle](open-osfhandle.md)

@@ -4,12 +4,12 @@ ms.custom: how-to
 ms.date: 05/22/2019
 ms.topic: conceptual
 ms.assetid: 7d6ebb73-fa0d-4b0b-a528-bf05de96518e
-ms.openlocfilehash: 4e7d63840f60c00f97b02825965cc247cddc38fd
-ms.sourcegitcommit: bde3279f70432f819018df74923a8bb895636f81
+ms.openlocfilehash: ac6db74122383ef8adb0f208860a6f6fba02dcc7
+ms.sourcegitcommit: 8adabe177d557c74566c13145196c11cef5d10d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66174805"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66821688"
 ---
 # <a name="how-to-create-and-use-sharedptr-instances"></a>Nasıl yapılır: Shared_ptr örnekleri oluşturma ve kullanma
 
@@ -108,7 +108,7 @@ Geçirebilirsiniz bir `shared_ptr` aşağıdaki yollarla başka bir işleve:
 
 - Gerekirse temel alınan işaretçi için ve bir yardımcı işlev erişim yardımcı işlevini yalnızca işaretçi kullanıyor ve çağıran işlevi döndürür ve ardından bu işlev önce iade olduğunu bilmeniz verin temel alınan işaretçi sahipliğini paylaşma gerekmez. Yalnızca işaretçi arayanın yaşam süresi içinde erişmek sahip `shared_ptr`. Bu durumda, geçirilecek güvenli `shared_ptr` başvuru veya pass ham işaretçi veya başvuru temel alınan nesne. Bu şekilde geçirme küçük performans artar ve ayrıca, programlama amacınızla express yardımcı olabilir.
 
-- Bazı durumlarda örneğin bir `std:vector<shared_ptr<T>>`, her geçmesi gerekebilir `shared_ptr` bir lambda ifadesi gövdesinin veya adlandırılmış işlev nesnesi. Lambda veya işlev işaretçisi depolamaz, ardından geçirin `shared_ptr` her öğe için kopya Oluşturucusu çağrılırken önlemek için başvuruya göre.
+- Bazı durumlarda örneğin bir `std::vector<shared_ptr<T>>`, her geçmesi gerekebilir `shared_ptr` bir lambda ifadesi gövdesinin veya adlandırılmış işlev nesnesi. Lambda veya işlev işaretçisi depolamaz, ardından geçirin `shared_ptr` her öğe için kopya Oluşturucusu çağrılırken önlemek için başvuruya göre.
 
 ## <a name="example-6"></a>Örnek 6
 

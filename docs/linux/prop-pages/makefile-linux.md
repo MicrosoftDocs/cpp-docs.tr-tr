@@ -1,15 +1,23 @@
 ---
 title: Genel Özellikler (Linux C++ derleme görevleri dosyası projesi) | Microsoft Docs
-ms.date: 9/26/2017
+ms.date: 06/07/2019
 ms.assetid: 3dec6853-43f6-412b-9806-9bfad333a204
-ms.openlocfilehash: fb742d552d0b70ba5f5c406dd43bdf4cf8d1914b
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: a64066ad3c8d7e6ca8bfa9d3d82670ff1da4b527
+ms.sourcegitcommit: 8adabe177d557c74566c13145196c11cef5d10d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62393031"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66821449"
 ---
 # <a name="makefile-project-properties-linux-c"></a>Derleme görevleri dosyası özellikleri (Linux C++)
+
+::: moniker range="vs-2015"
+
+Linux desteği, Visual Studio 2017 ile kullanılabilir ve üzerinde desteklenir.
+
+::: moniker-end
+
+::: moniker range=">=vs-2017"
 
 Bu Linux Makefile projesi içinde mevcut olan özelliklerin kısmi bir listesidir. Çok sayıda derleme görevleri dosyası proje özellikleri için Linux C++ konsol uygulaması projesi özellikleri aynıdır.
 
@@ -101,3 +109,5 @@ Komut satırı derleme | 'Build' komutu için çalıştırılacak komut satırı
 Rebuild all komut satırı | 'Tümünü yeniden derle' komutu için çalıştırılacak komut satırını belirtir. Bu, uzak sistemde çalıştırılır.
 Temizle komut satırı | 'Temizle' komutu için çalıştırılacak komut satırını belirtir. Bu, uzak sistemde çalıştırılır.
 Çıktılar | Uzak sistemdeki Uzak derleme tarafından oluşturulan çıkışları belirtir.
+
+::: moniker-end

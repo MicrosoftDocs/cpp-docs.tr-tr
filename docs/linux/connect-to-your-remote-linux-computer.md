@@ -1,18 +1,30 @@
 ---
 title: Visual Studio'da uzak Linux bilgisayarınıza bağlanma
 description: Visual Studio C++ projesi içinde uzak Linux makineden bağlanma.
-ms.date: 07/20/2018
+ms.date: 06/07/2019
 ms.assetid: 5eeaa683-4e63-4c46-99ef-2d5f294040d4
-ms.openlocfilehash: e20714308448349ee5dac8951a7b5d7bfd2f29ef
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 6348681ecc8e6f7863b2119810db24879526a1c6
+ms.sourcegitcommit: 8adabe177d557c74566c13145196c11cef5d10d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62389764"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66821603"
 ---
 # <a name="connect-to-your-remote-linux-computer"></a>Uzak Linux bilgisayarınıza bağlanma
 
-Visual Studio'da C++ Linux projesi oluştururken, kodu uzak Linux bilgisayarınıza kopyalanır ve sonra derlenmiş Linux Visual Studio ayarlarınızı temel alan. Bu uzak bağlantı kurmak için:
+::: moniker range="vs-2015"
+
+Linux desteği, Visual Studio 2017 ile kullanılabilir ve üzerinde desteklenir.
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+Ne zaman, hedef Linux (WSL) Visual Studio için Windows alt sistemi, Linux distro dosya sistemi üzerinden doğrudan etkileşime; Uzak bağlantı gereklidir.
+
+::: moniker-end
+
+Oluşturma sırasında bir C++ Linux projesi bir uzak Linux Sistemi'nde (VM veya fiziksel makine), kod uzak Linux bilgisayarınıza kopyalanır ve sonra derlenmiş Linux Visual Studio ayarlarına göre. Bu uzak bağlantı kurmak için:
 
 1. İlk kez projeyi derlemeyi ya da el ile seçerek yeni bir giriş oluşturun **Araçlar > Seçenekler** ve açın **Çoklu Platform > Bağlantı Yöneticisi** düğüm ve tıklatın **Ekle** düğmesi.
 

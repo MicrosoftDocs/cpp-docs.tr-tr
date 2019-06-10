@@ -1,15 +1,23 @@
 ---
 title: VC ++ dizinleri (Linux C++)
-ms.date: 9/26/2017
+ms.date: 06/07/2019
 ms.assetid: 12d45b93-0a5c-455e-b12a-9b9aad9a6d6c
-ms.openlocfilehash: 35417eeb4dbfc429d51dafe83013ea40b791ccb7
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 26f30163b81c672795a14820f6e95ca5a315cfbb
+ms.sourcegitcommit: 8adabe177d557c74566c13145196c11cef5d10d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62359052"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66821373"
 ---
 # <a name="vc-directories-linux-c"></a>VC ++ dizinleri (Linux C++)
+
+::: moniker range="vs-2015"
+
+Linux desteği, Visual Studio 2017 ile kullanılabilir ve üzerinde desteklenir.
+
+::: moniker-end
+
+::: moniker range=">=vs-2017"
 
 Özellik | Açıklama
 --- | ---
@@ -17,3 +25,6 @@ Ekleme kodu dizinleri | VC ++ projesi oluşturulurken ekleme kodu dosyalarının
 Kitaplık dizinleri | VC ++ projesi oluşturulurken kitaplık dosyaları aramasında kullanılacak yol.  Ortam değişkeni LIB'e karşılık gelir.
 {1&gt;Kaynak Dizinleri&lt;1} | IntelliSense için kullanılacak kaynak dosyalarının aranmasında kullanılacak yol.
 Dışarıda tutulan dizinler | Tarama bağımlılıkları aranırken atlanacak yol.
+
+::: moniker-end
+

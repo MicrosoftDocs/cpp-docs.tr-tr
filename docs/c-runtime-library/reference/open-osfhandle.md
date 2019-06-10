@@ -24,12 +24,12 @@ helpviewer_keywords:
 - file handles [C++], associating
 - _open_osfhandle function
 ms.assetid: 30d94df4-7868-4667-a401-9eb67ecb7855
-ms.openlocfilehash: 8527dade37f20b7341d5a26f5752ece668ab7fc9
-ms.sourcegitcommit: bde3279f70432f819018df74923a8bb895636f81
+ms.openlocfilehash: 9e940844eb5e37755c10999feb294981afc8683a
+ms.sourcegitcommit: 8adabe177d557c74566c13145196c11cef5d10d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66174794"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66821592"
 ---
 # <a name="openosfhandle"></a>_open_osfhandle
 
@@ -58,7 +58,7 @@ Başarılı olursa, **_open_osfhandle** C çalışma zamanı dosya tanımlayıc�
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Open_osfhandle** işlevi C çalışma zamanı dosya tanımlayıcısı ayırır ve tarafından belirtilen işletim sistemi dosya tanıtıcısı ile ilişkilendirir *osfhandle*. Derleyici Uyarısı önlemek için cast *osfhandle* bağımsız değişkeninden **İŞLEMEK** için **intptr_t**. *Bayrakları* değişkeni birinden oluşturulmuş bir tamsayı ifade veya daha fazla bildirim sabitleri içinde tanımlanan \<fcntl.h >. İki veya daha fazla bildirim sabitleri için form kullanılan zaman *bayrakları* bağımsız değişkeni, sabitleri, bit düzeyinde OR işleci ile birleştirilir ( **&#124;** ).
+**_Open_osfhandle** işlevi C çalışma zamanı dosya tanımlayıcısı ayırır. Bu dosya tanımlayıcısı tarafından belirtilen işletim sistemi dosya tanıtıcısı ile ilişkilendirir *osfhandle*. Derleyici Uyarısı önlemek için cast *osfhandle* bağımsız değişkeninden **İŞLEMEK** için **intptr_t**. *Bayrakları* değişkeni birinden oluşturulmuş bir tamsayı ifade veya daha fazla bildirim sabitleri içinde tanımlanan \<fcntl.h >. Bit düzeyinde OR işleci kullanabilirsiniz ( **&#124;** ) iki veya daha fazla bildirim sabitleri forma birleştirilecek *bayrakları* bağımsız değişken.
 
 Bu bildirim sabitleri tanımlanan \<fcntl.h >:
 
@@ -69,7 +69,7 @@ Bu bildirim sabitleri tanımlanan \<fcntl.h >:
 | **\_O\_METİN** | Dosya, metin (çevrilmiş) modunda açılır. |
 | **\_O\_WTEXT** | Dosya Unicode (çevrilmiş UTF-16) modunda açılır. |
 
-**_Open_osfhandle** çağrı dosya tanımlayıcısı için Win32 dosya işleci sahipliğini aktarır. Kullanarak açılan bir dosyanın kapatmak için **_open_osfhandle**, çağrı [ \_kapatmak](close.md). Temel işletim sistemi dosya tanıtıcısı aynı zamanda yapılan bir çağrıyla kapalı **_close**. Win32 işlevini çağırmayın **CloseHandle** özgün tutamacı. Dosya tanımlayıcısı aitse bir **dosya &#42;**  stream ve ardından bir çağrı [fclose](fclose-fcloseall.md) üzerindeki **dosya &#42;**  dosya tanımlayıcısı ve temel akışı kapatır tanıtıcı. Bu durumda, Remove() çağırmayın **_close** üzerinde dosya tanımlayıcısı veya **CloseHandle** özgün tutamacı.
+**_Open_osfhandle** çağrı dosya tanımlayıcısı için Win32 dosya işleci sahipliğini aktarır. Kullanarak açılan bir dosyanın kapatmak için **_open_osfhandle**, çağrı [ \_kapatmak](close.md). Temel işletim sistemi dosya tanıtıcısı aynı zamanda yapılan bir çağrıyla kapalı **_close**. Win32 işlevini çağırmayın **CloseHandle** özgün tutamacı. Dosya tanımlayıcısı aitse bir **dosya &#42;**  stream ve ardından bir çağrı [fclose](fclose-fcloseall.md) hem dosya tanımlayıcısı hem de temel alınan tanıtıcı kapatır. Bu durumda, Remove() çağırmayın **_close** üzerinde dosya tanımlayıcısı veya **CloseHandle** özgün tutamacı.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -82,3 +82,4 @@ Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/comp
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Dosya İşleme](../../c-runtime-library/file-handling.md)<br/>
+[\_get_osfhandle](get-osfhandle.md)

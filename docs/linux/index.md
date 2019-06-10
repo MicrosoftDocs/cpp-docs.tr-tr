@@ -2,16 +2,16 @@
 layout: LandingPage
 title: C++ belgeleri ile Linux geliştirme
 description: Oluşturma ve Linux'ta çalışan uygulamalarda hata ayıklayın.
-ms.openlocfilehash: 516b57ca976ddd89081581978c6ac5f86c64876e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f57777451e861a8ea0df1eb81fc97553c176ebec
+ms.sourcegitcommit: 8adabe177d557c74566c13145196c11cef5d10d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62393148"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66821639"
 ---
 # <a name="linux-development-with-c-documentation"></a>C++ belgeleri ile Linux geliştirme
 
-Visual Studio 2017, oluşturma ve Linux'ta çalışan uygulamalarda hata ayıklama için kullanın.
+Visual Studio 2017 ve üzeri, oluşturmak ve Linux için Linux uzak makine ya da Windows alt sistemi üzerinde çalışan uygulamalarda hata ayıklama için kullanın.
 
 <ul class="panelContent cardsF">
     <li>
@@ -64,8 +64,8 @@ Visual Studio 2017, oluşturma ve Linux'ta çalışan uygulamalarda hata ayıkla
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardText">
-                        <h3><a href="/cpp/overview/visual-cpp-in-visual-studio.md">Visual C++</a></h3>
-                        <p><a href="/cpp/overview-of-cpp-development">Visual C++ Geliştirme Araçları ve IDE</a></p>
+                        <h3><a href="/cpp/overview/visual-cpp-in-visual-studio.md">Visual Studio’da C++</a></h3>
+                        <p><a href="/cpp/overview-of-cpp-development">Visual Studio'da C++ geliştirmeye genel bakış</a></p>
                     </div>
                 </div>
             </div>
