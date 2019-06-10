@@ -1531,14 +1531,20 @@
               href: build/reference/dot-xml-file-processing.md
             - name: C++ belge etiketleri için sınırlayıcılar
               href: build/reference/delimiters-for-visual-cpp-documentation-tags.md
-- name: Kodu yazma ve yeniden düzenleme
+- name: Kod okuma ve yazma
   expanded: false
   items:
-    - name: Kodu yazma ve yeniden düzenleme
+    - name: Kod okuma ve yazma
       expanded: false
       items:
-        - name: Kodu yazma ve yeniden düzenleme
+        - name: C++ kodunu okuma ve anlama
+          href: ide/read-and-understand-code-cpp.md
+        - name: C++ kodu düzenleme ve yeniden düzenleme
           href: ide/writing-and-refactoring-code-cpp.md
+        - name: C++ kodunda gezinme
+          href: ide/navigate-code-cpp.md
+        - name: C++ için Live Share kullanarak işbirliği yapma
+          href: ide/live-share-cpp.md
         - name: İmzayı değiştirme
           href: ide/refactoring/change-signature.md
         - name: Ham dize sabit değerine dönüştürme
@@ -1597,8 +1603,6 @@
           href: ide/implementing-a-connection-point-visual-cpp.md
         - name: Arabirim uygulama
           href: ide/implementing-an-interface-visual-cpp.md
-        - name: Sınıf yapısında gezinme
-          href: ide/navigating-the-class-structure-visual-cpp.md
         - name: Sanal işlevi geçersiz kılma
           href: ide/overriding-a-virtual-function-visual-cpp.md
 - name: Windows masaüstü geliştirme
