@@ -31,7 +31,7 @@ ms.locfileid: "62157746"
 
 *init-declarator*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*Bildirimci*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*bildirimci***=***Başlatıcı*  / \* skaler başlatma \*/
+&nbsp;&nbsp;&nbsp;&nbsp;*bildirimci* **=** *Başlatıcı*  / \* skaler başlatma \*/
 
 *depolama sınıfı tanımlayıcısı*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**Otomatik**<br/>
@@ -39,17 +39,17 @@ ms.locfileid: "62157746"
 &nbsp;&nbsp;&nbsp;&nbsp;**Statik**<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**extern**<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**tür tanımı**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**__declspec (** *genişletilmiş-decl-değiştirici-seq* **)**  / \* Microsoft Specific \*/
+&nbsp;&nbsp;&nbsp;&nbsp; **__declspec (** *genişletilmiş-decl-değiştirici-seq* **)**  / \* Microsoft Specific \*/
 
 *tür belirticisi*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**Geçersiz kılma**<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**Char**<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**kısa**<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**int**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**__int8**  / \* Microsoft'a özgü \*/<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**__int16**  / \* Microsoft'a özgü \*/<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**__int32**  / \* Microsoft'a özgü \*/<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**__int64**  / \* Microsoft'a özgü \*/<br/>
+&nbsp;&nbsp;&nbsp;&nbsp; **__int8**  / \* Microsoft'a özgü \*/<br/>
+&nbsp;&nbsp;&nbsp;&nbsp; **__int16**  / \* Microsoft'a özgü \*/<br/>
+&nbsp;&nbsp;&nbsp;&nbsp; **__int32**  / \* Microsoft'a özgü \*/<br/>
+&nbsp;&nbsp;&nbsp;&nbsp; **__int64**  / \* Microsoft'a özgü \*/<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**uzun**<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**kayan nokta**<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**çift**<br/>
@@ -68,7 +68,7 @@ ms.locfileid: "62157746"
 
 *doğrudan bildirimci*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*tanımlayıcı*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**(** *bildirimci* **)**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp; **(** *bildirimci* **)**<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*doğrudan bildirimci* **[** *sabit-ifade*<sub>iyileştirilmiş</sub> **]**<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*doğrudan bildirimci* **(** *parametre türü listesi* **)**  / \* yeni stil bildirimci \*/<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*doğrudan bildirimci* **(** *tanımlayıcı listesi*<sub>iyileştirilmiş</sub> **)**  / \* Kullanımdan kalktı stili bildirimci \*/
@@ -143,14 +143,14 @@ ms.locfileid: "62157746"
 &nbsp;&nbsp;&nbsp;&nbsp;*İşaretçi*<sub>iyileştirilmiş</sub> *doğrudan soyut bildirimci*
 
 *doğrudan soyut bildirimci*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**(** *soyut bildirimci* **)**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp; **(** *soyut bildirimci* **)**<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*doğrudan soyut bildirimci*<sub>iyileştirilmiş</sub> **[** *sabit-ifade*<sub>iyileştirilmiş</sub> **]**<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*doğrudan soyut bildirimci*<sub>iyileştirilmiş</sub> **(** *parametre türü listesi*<sub>iyileştirilmiş</sub> **)**
 
 *Başlatıcı*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*atama ifadesi*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**{** *başlatıcı listesi* **}**  / \* toplama başlatma \*/<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**{** *başlatıcı listesi* **,}**
+&nbsp;&nbsp;&nbsp;&nbsp; **{** *başlatıcı listesi* **}**  / \* toplama başlatma \*/<br/>
+&nbsp;&nbsp;&nbsp;&nbsp; **{** *başlatıcı listesi* **,}**
 
 *Başlatıcı listesi*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*Başlatıcı*<br/>

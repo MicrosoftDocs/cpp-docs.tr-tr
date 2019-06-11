@@ -10,6 +10,8 @@
   href: create-a-new-linux-project.md
 - name: Uzak Linux bilgisayarınıza bağlanma
   href: connect-to-your-remote-linux-computer.md
+- name: Linux projelerini Adres Temizleyici kullanmak üzere yapılandırma
+  href: linux-asan-configuration.md
 - name: 'Linux projenizi dağıtma, çalıştırma ve projenizin hatalarını ayıklama'
   href: deploy-run-and-debug-your-linux-project.md
 - name: 'Öğretici: Visual Studio’da platformlar arası C++ projeleri oluşturma'

@@ -15,7 +15,7 @@ ms.locfileid: "62157824"
 &nbsp;&nbsp;&nbsp;&nbsp;*tanımlayıcı*<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*Sabit*<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*dize sabit değeri*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**(***ifade***)**
+&nbsp;&nbsp;&nbsp;&nbsp; **(** *ifade* **)**
 
 *ifade*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*atama ifadesi*<br/>
@@ -26,7 +26,7 @@ ms.locfileid: "62157824"
 
 *Koşullu ifade*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*mantıksal-veya-ifadesi*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*mantıksal-veya-expression***?**  *ifade* **:** *koşullu ifade*
+&nbsp;&nbsp;&nbsp;&nbsp;*mantıksal-veya-expression* **?**  *ifade* **:** *koşullu ifade*
 
 *atama ifadesi*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*Koşullu ifade*<br/>
@@ -36,7 +36,7 @@ ms.locfileid: "62157824"
 &nbsp;&nbsp;&nbsp;&nbsp;*Birincil ifade*<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*sonek ifadesi* **[** *ifade* **]**<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*sonek ifadesi* **(** *bağımsız değişken ifade listesi*<sub>iyileştirilmiş</sub> **)**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*sonek ifadesi* **.**   *tanımlayıcı*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*sonek ifadesi* **.**  *tanımlayıcı*<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*sonek ifadesi* **->** *tanımlayıcısı*<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*sonek ifadesi*  **++**<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*sonek ifadesi*  **--**
@@ -47,63 +47,63 @@ ms.locfileid: "62157824"
 
 *Tekli ifade*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*postfix-expression*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**++**  *Tekli ifade*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**--**  *Tekli ifade*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp; **++**  *Tekli ifade*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp; **--**  *Tekli ifade*<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*birli-işleç*<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*Cast ifadesi*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**sizeof***tekli ifade*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**sizeof (***tür adı***)**
+&nbsp;&nbsp;&nbsp;&nbsp;**sizeof** *tekli ifade*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**sizeof (** *tür adı* **)**
 
 *birli işleç*: biri<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**&** **&#42;** **+** **-** **~** **!**
+&nbsp;&nbsp;&nbsp;&nbsp; **&** **&#42;** **+** **-** **~** **!**
 
 *Cast ifadesi*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*Tekli ifade*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**(** *tür adı* **)** *atama ifadesi* 
+&nbsp;&nbsp;&nbsp;&nbsp; **(** *tür adı* **)** *atama ifadesi*
 
 *ifade çarpma*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*Cast ifadesi*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*ifade çarpma***&#42;***atama ifadesi*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*ifade çarpma***/***atama ifadesi*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*ifade çarpma***%***atama ifadesi*
+&nbsp;&nbsp;&nbsp;&nbsp;*ifade çarpma* **&#42;** *atama ifadesi*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*ifade çarpma* **/** *atama ifadesi*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*ifade çarpma* **%** *atama ifadesi*
 
 *additive-expression*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*çarpma ifadesi*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*additive-expression***+***çarpma ifadesi*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*additive-expression***-***çarpma ifadesi*
+&nbsp;&nbsp;&nbsp;&nbsp;*additive-expression* **+** *çarpma ifadesi*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*additive-expression* **-** *çarpma ifadesi*
 
 *Shift-expression*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*additive-expression*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*Shift-expression***\<\<***additive-expression*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*Shift-expression***>>***additive-expression*
+&nbsp;&nbsp;&nbsp;&nbsp;*Shift-expression* **\<\<** *additive-expression*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*Shift-expression* **>>** *additive-expression*
 
 *İlişkisel ifade*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*Shift-expression*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*İlişkisel ifade***\<***shift-expression*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*İlişkisel ifade***>***shift-expression*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*İlişkisel ifade***\<=***shift-expression*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*İlişkisel ifade***>=***shift-expression*
+&nbsp;&nbsp;&nbsp;&nbsp;*İlişkisel ifade* **\<** *shift-expression*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*İlişkisel ifade* **>** *shift-expression*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*İlişkisel ifade* **\<=** *shift-expression*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*İlişkisel ifade* **>=** *shift-expression*
 
 *Eşitlik ifade*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*İlişkisel ifade*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*Eşitlik ifade***==***ilişkisel ifade*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*Eşitlik ifade***! =***ilişkisel ifade*
+&nbsp;&nbsp;&nbsp;&nbsp;*Eşitlik ifade* **==** *ilişkisel ifade*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*Eşitlik ifade* **! =** *ilişkisel ifade*
 
 *VE ifadeli*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*Eşitlik ifadesi*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*VE ifade***&***eşitlik ifadesi*
+&nbsp;&nbsp;&nbsp;&nbsp;*VE ifade* **&** *eşitlik ifadesi*
 
 *dışlamalı OR ifadesi*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*AND ifadesi*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*dışlamalı OR ifadesi***^***ve ifade*
+&nbsp;&nbsp;&nbsp;&nbsp;*dışlamalı OR ifadesi* **^** *ve ifade*
 
 *OR ifadesi kapsamlı*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*dışlamalı OR ifadesi*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*OR ifadesi kapsamlı***&#124;***dışlamalı OR ifadesi*
+&nbsp;&nbsp;&nbsp;&nbsp;*OR ifadesi kapsamlı* **&#124;** *dışlamalı OR ifadesi*
 
 *mantıksal-ve-expression*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*OR ifadesi dahil*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*mantıksal-ve-expression***&&***OR ifadesi dahil*
+&nbsp;&nbsp;&nbsp;&nbsp;*mantıksal-ve-expression* **&&** *OR ifadesi dahil*
 
 *mantıksal-veya-expression*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*mantıksal-ve-ifadesi*<br/>
