@@ -16,14 +16,14 @@ ms.locfileid: "62179886"
 # <a name="preprocessor-grammar"></a>Ön işlemci Dil Bilgisi
 
 *Satır içi denetim*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**#define** *tanımlayıcı* *belirteç dizesinde*<sub>iyileştirilmiş</sub><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**#define** <em>identifier</em>**(** *identifier*<sub>opt</sub> **,** ... **,** *identifier*<sub>opt</sub> **)** *token-string*<sub>opt</sub><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**#include** **"** *path-spec* **"**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**#include** **\<** *path-spec* **>**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**#line** *basamak dizisi***"** *filename* **"**<sub>iyileştirilmiş</sub><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**#undef** *tanımlayıcısı*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**#error** *belirteci dizesi*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**#pragma** *token-string*
+&nbsp;&nbsp;&nbsp;&nbsp; **#define** *tanımlayıcı* *belirteç dizesinde*<sub>iyileştirilmiş</sub><br/>
+&nbsp;&nbsp;&nbsp;&nbsp; **#define** <em>identifier</em> **(** *identifier*<sub>opt</sub> **,** ... **,** *identifier*<sub>opt</sub> **)** *token-string*<sub>opt</sub><br/>
+&nbsp;&nbsp;&nbsp;&nbsp; **#include** **"** *path-spec* **"**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp; **#include** **\<** *path-spec* **>**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp; **#line** *basamak dizisi* **"** *filename* **"** <sub>iyileştirilmiş</sub><br/>
+&nbsp;&nbsp;&nbsp;&nbsp; **#undef** *tanımlayıcısı*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp; **#error** *belirteci dizesi*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp; **#pragma** *token-string*
 
 *Sabit ifade*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**tanımlanan (** *tanımlayıcı* **)**<br/>
@@ -37,25 +37,25 @@ ms.locfileid: "62179886"
 &nbsp;&nbsp;&nbsp;&nbsp;*Eğer satır içi* *metin*
 
 *Eğer satır içi* :<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**#if** *sabit-ifade*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**#ifdef** *tanımlayıcısı*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**#ifndef** *tanımlayıcısı*
+&nbsp;&nbsp;&nbsp;&nbsp; **#if** *sabit-ifade*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp; **#ifdef** *tanımlayıcısı*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp; **#ifndef** *tanımlayıcısı*
 
 *elif-parts* :<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*elif-satırı* *metin*<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*elif-parts* *elif-satırı* *metin*
 
 *elif-satırı* :<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**#elif** *constant-expression*
+&nbsp;&nbsp;&nbsp;&nbsp; **#elif** *constant-expression*
 
 *else bölümünü* :<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*başka satır* *metin*
 
 *başka satır* :<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**#else**
+&nbsp;&nbsp;&nbsp;&nbsp; **#else**
 
 *Satır içi endif* :<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**#endif**
+&nbsp;&nbsp;&nbsp;&nbsp; **#endif**
 
 *basamak dizisi* :<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*basamak*<br/>
