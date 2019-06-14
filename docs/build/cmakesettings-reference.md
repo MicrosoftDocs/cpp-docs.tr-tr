@@ -4,12 +4,12 @@ ms.date: 05/16/2019
 helpviewer_keywords:
 - CMake in Visual C++
 ms.assetid: 444d50df-215e-4d31-933a-b41841f186f8
-ms.openlocfilehash: 018a755aa4f3acde44fe1dbb33b07b49c8d1c223
-ms.sourcegitcommit: a10c9390413978d36b8096b684d5ed4cf1553bc8
+ms.openlocfilehash: 0dcd05833af005807d874d71e8f6a07d4e738e8c
+ms.sourcegitcommit: fde637f823494532314790602c2819f889706ff6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65837250"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67042594"
 ---
 # <a name="cmakesettingsjson-schema-reference"></a>CMakeSettings.json şema başvurusu
 
@@ -121,7 +121,7 @@ Etkin yapılandırma bir Visual Studio oluşturucuyu belirttiğinde, varsayılan
 
 - `remoteMachineName`: Cmake'i, derlemeleri ve hata ayıklayıcı barındıran uzak Linux makinesinin adını belirtir. Yeni Linux makineleri eklemek için Bağlantı Yöneticisi'ni kullanın. Desteklenen makrolar `${defaultRemoteMachineName}`.
 - `remoteCopySourcesOutputVerbosity`: işlem uzak makineye kopyalanıyor kaynak ayrıntı düzeyini belirtir. "Yalnızca"Normal","Ayrıntılı"veya"Tanılama". olabilir
-- `remoteCopySourcesConcurrentCopies`: kaynakların Uzak makineyle eşitlenmesi sırasında kullanılan eş zamanlı kopyaların sayısını belirtir.
+- `remoteCopySourcesConcurrentCopies`: kaynakları uzak makineye (yalnızca sftp) eşitleme sırasında kullanılan eş zamanlı kopyaların sayısını belirtir.
 - `remoteCopySourcesMethod`: dosyalar uzak makineye kopyalamak için yöntemini belirtir. "Rsync" veya "sftp" olabilir.
 - `remoteCMakeListsRoot`: uzak makinede CMake projesini içeren dizini belirtir. Desteklenen makrolar `${workspaceRoot}`, `${workspaceHash}`, `${projectFile}`, `${projectDir}`, `${thisFile}`, `${thisFileDir}`, `${name}`, `${generator}`, `${env.VARIABLE}`.
 - `remoteBuildRoot`: cmake'in seçili Oluşturucu için derleme betikleri uzak bir makinede dizini belirtir. Desteklenen makrolar `${workspaceRoot}`, `${workspaceHash}`, `${projectFile}`, `${projectDir}`, `${thisFile}`, `${thisFileDir}`, `${name}`, `${generator}`, `${env.VARIABLE}`.

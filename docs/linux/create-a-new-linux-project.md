@@ -1,13 +1,13 @@
 ---
 title: Visual Studio'da yeni bir C++ Linux projesi oluşturma
-ms.date: 06/07/2019
+ms.date: 06/11/2019
 ms.assetid: 5d7c1d67-bc31-4f96-8622-2b4cf91372fd
-ms.openlocfilehash: e39e60c906901420a4809c22b4f4e71d3b621da1
-ms.sourcegitcommit: 8adabe177d557c74566c13145196c11cef5d10d4
+ms.openlocfilehash: 0377e21177b29d998fc3e66bb1863dbc127c1fbe
+ms.sourcegitcommit: fde637f823494532314790602c2819f889706ff6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66821647"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67042715"
 ---
 # <a name="create-a-new-linux-project"></a>Yeni Linux projesi oluşturma
 
@@ -19,7 +19,7 @@ Linux projeleri, Visual Studio 2017 ile kullanılabilir ve üzeri.
 
 İlk olarak, sahip olduğunuzdan emin olun **Linux geliştirme iş yükü** yüklü Visual Studio için. Daha fazla bilgi için [indirin, yükleyin ve Linux iş yükünü Kurulum](download-install-and-setup-the-linux-development-workload.md).
 
-Yeni bir oluşturduğunuzda C++ proje Visual Studio'da Linux için Visual Studio projesi ya da bir CMake projesini oluşturmayı seçebilirsiniz. Bu makalede, Visual Studio projesi oluşturma işlemini açıklar. Oluşturma ve mevcut CMake projelerini ile çalışma hakkında daha fazla bilgi için bkz. [Linux CMake projesi yapılandırma ](cmake-linux-project.md).
+Yeni bir oluşturduğunuzda C++ proje Visual Studio'da Linux için Visual Studio projesi ya da bir CMake projesini oluşturmayı seçebilirsiniz. Bu makalede, Visual Studio projesi oluşturma işlemini açıklar. Oluşturma ve mevcut CMake projelerini ile çalışma hakkında daha fazla bilgi için bkz. [oluştur ve Linux CMake projesi yapılandırma ](cmake-linux-project.md).
 
 ## <a name="to-create-a-new-linux-project"></a>Yeni Linux projesi oluşturmak için
 
@@ -49,6 +49,12 @@ Visual Studio'da yeni Linux projesi oluşturmak için aşağıdaki adımları iz
    | **Konsol uygulaması (Linux)** | Konsola metni çıkardığından örnek kod ile herhangi bir Linux bilgisayar için hedeflenen bir proje |
    | **Boş proje (Linux)**       | Örnek kod olmadan herhangi bir Linux bilgisayar için hedeflenen bir proje |
    | **Derleme görevleri dosyası projesi (Linux)**    | Derleme Sistemi standart bir derleme görevleri dosyası kullanılarak oluşturulan tüm Linux bilgisayar için hedeflenen bir proje |
+
+   ::: moniker range="vs-2019"
+
+   Visual Studio 2019, yeni bir CMake proje oluşturmanıza olanak sağlar. Daha fazla bilgi için [oluştur ve Linux CMake projesi yapılandırma ](cmake-linux-project.md).
+   
+   ::: moniker-end
 
 ## <a name="next-steps"></a>Sonraki Adımlar
 

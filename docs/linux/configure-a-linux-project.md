@@ -1,13 +1,13 @@
 ---
 title: Visual Studio'da C++ Linux projesi yapılandırma
-ms.date: 06/07/2019
+ms.date: 06/11/2019
 ms.assetid: 4d7c6adf-54b9-4b23-bd23-5de0c825b768
-ms.openlocfilehash: 5acd9edeef8f09f86c394c39939d8408821dd691
-ms.sourcegitcommit: 8adabe177d557c74566c13145196c11cef5d10d4
+ms.openlocfilehash: a4e20222cc0b04f496989bf2d51fc12c85f5d162
+ms.sourcegitcommit: fde637f823494532314790602c2819f889706ff6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66821573"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67042628"
 ---
 # <a name="configure-a-linux-project"></a>Linux projesi yapılandırma
 
@@ -37,7 +37,7 @@ Yapılandırma seçenekleri görüntülemek için seçin **Proje > Özellikleri*
 
 ![Genel yapılandırma](media/settings_general.png)
 
-Varsayılan olarak, bir yürütülebilir dosya (.out) aracı ile yerleşik hale getirilmiştir. Bir statik veya dinamik kitaplığını oluşturmak veya mevcut bir derleme görevleri dosyası kullanmak için **yapılandırma türü** ayarı.
+Varsayılan olarak, bir yürütülebilir dosya (.out) oluşturulur. Bir statik veya dinamik kitaplığını oluşturmak veya mevcut bir derleme görevleri dosyası kullanmak için **yapılandırma türü** ayarı.
 
 Özellik sayfaları ayarlar hakkında daha fazla bilgi için bkz. [Linux projesi özellik Sayfa başvurusu](prop-pages-linux.md).
 
@@ -105,7 +105,7 @@ Bu bölümde WSL hedeflenirken geçerli değildir.
 Bu işlev, zip yüklü olan bir Linux makinesinde bağlıdır. Zip bu apt-get komutuyla yükleyebilirsiniz:
 
 ```cmd
-apt install zip
+sudo apt install zip
 ```
 
 Üst bilgi önbelleği yönetmek için gidin **Araçlar > Seçenekler, Çoklu Platform > Bağlantı Yöneticisi > Uzak üst bilgiler IntelliSense Yöneticisi**. Linux makinenizde değişiklikleri yaptıktan sonra üst bilgi önbelleği güncelleştirmek için Uzak bağlantıyı seçin ve ardından **güncelleştirme**. Seçin **Sil** bağlantı silmeden üstbilgileri kaldırmak için. Seçin **Araştır** yerel dizinde açmak için **dosya Gezgini**. Bu klasör, salt okunur olarak kabul eder. Visual Studio 2017 sürüm 15.3 önce oluşturulmuş mevcut bir bağlantı için üst bilgileri indirmek için bağlantıyı seçin ve ardından **indirme**.

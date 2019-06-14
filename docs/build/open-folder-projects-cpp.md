@@ -4,24 +4,24 @@ ms.date: 03/21/2019
 helpviewer_keywords:
 - Open Folder Projects in Visual Studio
 ms.assetid: abd1985e-3717-4338-9e80-869db5435175
-ms.openlocfilehash: 4f59781833a303ad2db837549eddca2f2ce291b1
-ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.openlocfilehash: 8856a5b1782c75c5a59dfdc93a8203627059ea12
+ms.sourcegitcommit: fde637f823494532314790602c2819f889706ff6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65220486"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67042726"
 ---
-# <a name="open-folder-projects-for-c"></a>C++ için klasör Proje Aç
+# <a name="open-folder-projects-for-c"></a>C++ için Klasör projelerini açma
 
 Visual Studio 2017 ve sonraki sürümlerinde, "Klasör Aç" özelliği, bir kaynak dosya klasörü açın ve hemen desteğiyle tarama, yeniden düzenleme, hata ayıklama, IntelliSense, kod yazmaya başlayın ve benzeri sağlar. Hiçbir .sln veya .vcxproj dosyaları yüklenir; Gerekirse, özel görevleri oluşturmak ve parametreler aracılığıyla basit .json dosyaları başlatma olarak belirtebilirsiniz. Klasör Aç hakkında genel bilgi için bkz: [kod Visual Studio'da projeler veya çözümler olmadan geliştirme](/visualstudio/ide/develop-code-in-visual-studio-without-projects-or-solutions).
 
-CMake, Visual Studio, C++ Masaüstü iş yükünde bir bileşeni CMake araçları Visual Studio IDE'de tümleşiktir. Daha fazla bilgi için [Visual Studio'daki CMake projeleri](cmake-projects-in-visual-studio.md). Diğer yapı sistemi için klasörü aç özelliğini kullanabilirsiniz. Klasör Aç, Kod Düzenleyicisi, hata ayıklayıcı ve derleme sistemi ve derleyici araç takımı Çözümleyicileri etkili bir şekilde ayırır. Zengin IntelliSense özelliklerini, kod Çözümleyicileri ve CMake Ninja, QMake (Qt projelerde), gyp, SCons, Gradle, Buck, oluşturma ve gibi neredeyse tüm derleme sistemi, Visual Studio hata ayıklayıcı ile C++ Kod Düzenleyicisi'ni kullanabilirsiniz. Hatta tek bir dosyayı veya dosyaları derleme sistemi gevşek koleksiyonu ile çalışır.
+CMake bir bileşeni olarak Visual Studio IDE içinde tümleşik C++ masaüstü iş yükü. Daha fazla bilgi için [Visual Studio'daki CMake projeleri](cmake-projects-in-visual-studio.md). Diğer yapı sistemi için klasörü aç özelliğini kullanabilirsiniz. Klasör Aç, Kod Düzenleyicisi, hata ayıklayıcı ve derleme sistemi ve derleyici araç takımı Çözümleyicileri etkili bir şekilde ayırır. Zengin IntelliSense özelliklerini, kod Çözümleyicileri ve CMake Ninja, QMake (Qt projelerde), gyp, SCons, Gradle, Buck, oluşturma ve gibi neredeyse tüm derleme sistemi, Visual Studio hata ayıklayıcı ile C++ Kod Düzenleyicisi'ni kullanabilirsiniz. Hatta tek bir dosyayı veya dosyaları derleme sistemi gevşek koleksiyonu ile çalışır.
 
 Klasör Aç'ı kullanmak için ana menüden seçin **dosya | Açık | Klasör** veya basın **Ctrl + Shift + Alt + O**. Çözüm Gezgini, hemen klasördeki tüm dosyaları görüntüler. Düzenlemeye başlamak için herhangi bir dosyaya tıklayabilirsiniz. Arka planda, dosyaları, IntelliSense, gezinti ve yeniden düzenleme özellikleri etkinleştirmek için Visual Studio başlatılır. Düzenleme, oluşturma, taşıma veya dosyaları silmek gibi Visual Studio değişiklikleri otomatik olarak izler ve IntelliSense dizinini sürekli olarak güncelleştirir. 
 
 ## <a name="qmake-projects-that-target-the-qt-framework"></a>QMake Qt Framework'ü hedefleyen projeleri
 
-Qt projeleri derlemek için Qt hedeflemek için Visual Studio için CMake araçlarını kullanabilir veya kullanabileceğiniz [Qt Visual Studio Uzantısı](https://download.qt.io/development_releases/vsaddin/) Visual Studio 2015 veya Visual Studio 2017 için.
+CMake Qt projeleri derlemek için kullanabileceğiniz ya da kullanabileceğinizi [Qt Visual Studio Uzantısı](https://download.qt.io/development_releases/vsaddin/) Visual Studio 2015 veya Visual Studio 2017 için.
 
 ## <a name="gyp-cons-scons-buck-etc"></a>gyp, simgeler, SCons, Buck, vb.
 

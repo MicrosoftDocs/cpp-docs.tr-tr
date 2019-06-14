@@ -1,17 +1,22 @@
 ---
 title: Visual Studio'da C++ Linux iş yükünü yükleyin
 description: İndirme, yükleme ve Linux iş yükünü Visual Studio'da C++ için Kurulum açıklar.
-ms.date: 06/07/2019
+ms.date: 06/11/2019
 ms.assetid: e11b40b2-f3a4-4f06-b788-73334d58dfd9
-ms.openlocfilehash: af4e3ec0ac21951163e92786555559cd02e8148f
-ms.sourcegitcommit: 8adabe177d557c74566c13145196c11cef5d10d4
+ms.openlocfilehash: d5c099794f781fa9e6217f3796d24d1a63fd7b53
+ms.sourcegitcommit: fde637f823494532314790602c2819f889706ff6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66821585"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67042750"
 ---
 # <a name="download-install-and-set-up-the-linux-workload"></a>İndirme, yükleme ve Linux iş yükü ayarlayın
 
+::: moniker range="vs-2015"
+
+Linux projeleri, Visual Studio 2017 ve sonraki sürümlerde desteklenir.
+
+::: moniker-end
 
 ::: moniker range=">=vs-2017"
 
@@ -35,7 +40,10 @@ Destek [AddressSanitizer (IsObject)](https://github.com/google/sanitizers/wiki/A
 
 ## <a name="visual-studio-setup"></a>Visual Studio Kurulumu
 
-1. "Visual Studio yükleyicisi" Windows Arama kutusuna yazın: ![Windows Arama kutusuna](media/visual-studio-installer-search.png)
+1. "Visual Studio yükleyicisi" Windows Arama kutusuna yazın:
+
+   ![Windows Arama kutusuna](media/visual-studio-installer-search.png)
+
 2. Yükleyici altında arayın **uygulamaları** sonuçlanır ve çift tıklayın. Yükleyici açıldığında seçin **Değiştir**ve ardından **iş yükleri** sekmesi. Ekranı aşağı kaydırarak **diğer araç takımları** seçip **C++ ile Linux geliştirme** iş yükü.
 
    ![Linux geliştirme iş yükü için Visual C++](media/linuxworkload.png)
@@ -56,10 +64,10 @@ Windows 10'da yükleyebilir ve Linux (WSL) için Windows alt sisteminde, sık ku
 
 ## <a name="linux-setup-ubuntu-on-wsl"></a>Linux Kurulumu: Ubuntu'da WSL
 
-Uzak bağlantı WSL üzerinde gereklidir. **zip** ve **rsync** otomatik IntelliSense desteği için Linux üstbilgileri Visual Studio ile eşitlenmesi için gereklidir. Gerekli uygulamaları henüz mevcut değilse şu şekilde yükleyebilirsiniz:
+WSL hedeflenirken uzak bir bağlantı ekleyin veya derleme ve hata ayıklama için SSH yapılandırmak için gerek yoktur. **zip** ve **rsync** otomatik IntelliSense desteği için Linux üstbilgileri Visual Studio ile eşitlenmesi için gereklidir. Gerekli uygulamaları henüz mevcut değilse şu şekilde yükleyebilirsiniz:
 
 ```bash
-sudo g++ gdb make rsync zip
+sudo apt-get install g++ gdb make rsync zip
 ```
 ::: moniker-end
 

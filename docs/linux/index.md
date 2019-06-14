@@ -2,12 +2,12 @@
 layout: LandingPage
 title: C++ belgeleri ile Linux geliştirme
 description: Oluşturma ve Linux'ta çalışan uygulamalarda hata ayıklayın.
-ms.openlocfilehash: f57777451e861a8ea0df1eb81fc97553c176ebec
-ms.sourcegitcommit: 8adabe177d557c74566c13145196c11cef5d10d4
+ms.openlocfilehash: ac80c6ad3b0650d7da20f18b049af0242ffa5704
+ms.sourcegitcommit: fde637f823494532314790602c2819f889706ff6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66821639"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67042738"
 ---
 # <a name="linux-development-with-c-documentation"></a>C++ belgeleri ile Linux geliştirme
 
@@ -34,7 +34,7 @@ Visual Studio 2017 ve üzeri, oluşturmak ve Linux için Linux uzak makine ya da
         </a>
     </li>
     <li>
-        <a href="https://blogs.msdn.microsoft.com/vcblog/2016/03/30/visual-c-for-linux-development/">
+        <a href="https://devblogs.microsoft.com/cppblog/">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -44,8 +44,8 @@ Visual Studio 2017 ve üzeri, oluşturmak ve Linux için Linux uzak makine ya da
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Visual C++ için Linux blogu</h3>
-                        <p>Visual C++ için Linux iş yükü için eklenen yeni özellikler ile güncel tutun.</p>
+                        <h3>C++Ekip blogu</h3>
+                        <p>En son ile güncel tutmak C++ Visual Studio özellikleri.</p>
                     </div>
                 </div>
             </div>
@@ -64,8 +64,7 @@ Visual Studio 2017 ve üzeri, oluşturmak ve Linux için Linux uzak makine ya da
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardText">
-                        <h3><a href="/cpp/overview/visual-cpp-in-visual-studio.md">Visual Studio’da C++</a></h3>
-                        <p><a href="/cpp/overview-of-cpp-development">Visual Studio'da C++ geliştirmeye genel bakış</a></p>
+                        <h3><a href="/cpp/overview/visual-cpp-in-visual-studio">Visual Studio’da C++</a></h3>
                     </div>
                 </div>
             </div>
