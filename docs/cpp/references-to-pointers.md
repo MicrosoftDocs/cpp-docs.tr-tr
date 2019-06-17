@@ -1,25 +1,25 @@
 ---
-title: İşaretçi Başvuruları
-ms.date: 08/20/2018
+title: İşaretçi başvuruları
+ms.date: 06/13/2019
 helpviewer_keywords:
 - references, to pointers
 ms.assetid: 4ce48b08-1511-4d2f-a31f-95f99eac0c70
-ms.openlocfilehash: 060bbaef74c934de4d8529b3ceafc61d1b70dc70
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 4719bc5ca0980da3a4f8ad3c2348fc870e916e90
+ms.sourcegitcommit: e79188287189b76b34eb7e8fb1bfe646bdb586bc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62403457"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "67141692"
 ---
-# <a name="references-to-pointers"></a>İşaretçi Başvuruları
+# <a name="references-to-pointers"></a>İşaretçi başvuruları
 
-İşaretçilerin başvuruları, nesne başvurularıyla hemen hemen aynı şekilde bildirilebilir. Bir işaretçi başvurusunun bildirilmesi, normal bir işaretçi gibi kullanılan değiştirilebilir bir değer oluşturur.
+İşaretçilerin başvuruları, nesne başvurularıyla hemen hemen aynı şekilde bildirilebilir. Bir işaretçi başvurusu normal bir işaretçi gibi kullanılan değiştirilebilir bir değerdir.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki kod örnekleri, bir işaretçi işaretçisi ile işaretçi başvurusu kullanma arasındaki farkı gösterir.
+Bu kod örneği, bir işaretçi işaretçisi ve bir işaretçi başvurusu kullanma arasındaki farkı gösterir.
 
-`Add1` ve `Add2` işlevleri, (aynı şekilde çağrılmasalar da) işlevsel olarak eşdeğerdir. Aralarındaki fark, `Add1`'in çift yöneltme kullanması, `Add2`'nin ise işaretçi başvurusundan yararlanmasıdır.
+İşlevleri `Add1` ve `Add2` rağmen bunların aynı şekilde adlandırılırlar değil işlevsel olarak eşdeğerdir. Fark `Add1` çift yöneltme kullanır ancak `Add2` kullanışlı bir işaretçi başvurusu kullanır.
 
 ```cpp
 // references_to_pointers.cpp
@@ -52,11 +52,11 @@ void PrintTree( BTree* btRoot );
 int main( int argc, char *argv[] ) {
    // Usage message
    if( argc < 2 ) {
-      cerr << "Usage: Refptr [1 | 2]" << "\n";
+      cerr << "Usage: " << argv[0] << " [1 | 2]" << "\n";
       cerr << "\nwhere:\n";
       cerr << "1 uses double indirection\n";
       cerr << "2 uses a reference to a pointer.\n";
-      cerr << "\nInput is from stdin.\n";
+      cerr << "\nInput is from stdin. Use ^Z to terminate input.\n";
       return 1;
    }
 
@@ -99,15 +99,15 @@ int main( int argc, char *argv[] ) {
 // PrintTree: Display the binary tree in order.
 void PrintTree( BTree* MybtRoot ) {
    // Traverse the left branch of the tree recursively.
-   if ( btRoot->Left )
-      PrintTree( btRoot->Left );
+   if ( MybtRoot->Left )
+      PrintTree( MybtRoot->Left );
 
    // Print the current node.
-   cout << btRoot->szText << "\n";
+   cout << MybtRoot->szText << "\n";
 
    // Traverse the right branch of the tree recursively.
-   if ( btRoot->Right )
-      PrintTree( btRoot->Right );
+   if ( MybtRoot->Right )
+      PrintTree( MybtRoot->Right );
 }
 
 // Add1: Add a node to the binary tree.
@@ -150,13 +150,13 @@ int Add2( BTree*& Root, char *szToAdd ) {
 ```
 
 ```Output
-Usage: Refptr [1 | 2]
+Usage: references_to_pointers.exe [1 | 2]
 
 where:
 1 uses double indirection
 2 uses a reference to a pointer.
 
-Input is from stdin.
+Input is from stdin. Use ^Z to terminate input.
 ```
 
 ## <a name="see-also"></a>Ayrıca bkz.

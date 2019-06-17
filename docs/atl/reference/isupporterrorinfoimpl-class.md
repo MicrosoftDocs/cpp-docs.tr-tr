@@ -1,6 +1,6 @@
 ---
 title: Isupporterrorınfoımpl sınıfı
-ms.date: 11/04/2016
+ms.date: 06/13/2019
 f1_keywords:
 - ISupportErrorInfoImpl
 - ATLCOM/ATL::ISupportErrorInfoImpl
@@ -10,29 +10,29 @@ helpviewer_keywords:
 - ISupportErrorInfoImpl class
 - error information, ATL
 ms.assetid: e33a4b11-a123-41cf-bcea-7b19743902af
-ms.openlocfilehash: f7e300e30ff0f14b56d2a1bae86b00e090674679
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 650d90c9ec98754e11586f63e0871b70ebbe34f3
+ms.sourcegitcommit: e79188287189b76b34eb7e8fb1bfe646bdb586bc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62274771"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "67141698"
 ---
 # <a name="isupporterrorinfoimpl-class"></a>Isupporterrorınfoımpl sınıfı
 
 Bu sınıfın bir varsayılan uygulamayı sağlar [ISupportErrorInfo arabirimi](/windows/desktop/api/oaidl/nn-oaidl-isupporterrorinfo) ve yalnızca tek bir arabirim bir nesne üzerinde hata oluşturduğunda kullanılabilir.
 
 > [!IMPORTANT]
->  Bu sınıf ve üyelerine, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz.
+> Bu sınıf ve üyelerine, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
+```cpp
 template<const IID* piid>
 class ATL_NO_VTABLE ISupportErrorInfoImpl
    : public ISupportErrorInfo
 ```
 
-#### <a name="parameters"></a>Parametreler
+### <a name="parameters"></a>Parametreler
 
 *piid*<br/>
 Laboratuvardaki destekleyen bir arabirim işaretçisi [IErrorInfo](/windows/desktop/api/oaidl/nn-oaidl-ierrorinfo).
@@ -67,101 +67,13 @@ Sınıf `ISupportErrorInfoImpl` bir varsayılan uygulamayı sağlar `ISupportErr
 
 Arabirim tarafından tanımlanan olup olmadığını gösteren `riid` destekler [IErrorInfo](/windows/desktop/api/oaidl/nn-oaidl-ierrorinfo) arabirimi.
 
-```
+```cpp
 STDMETHOD(InterfaceSupportsErrorInfo)(REFIID riid);
 ```
 
 ### <a name="remarks"></a>Açıklamalar
 
 Bkz: [ISupportErrorInfo::InterfaceSupportsErrorInfo](/windows/desktop/api/oaidl/nf-oaidl-isupporterrorinfo-interfacesupportserrorinfo) Windows SDK içinde.
-
-##  <a name="getsize"></a>  IThreadPoolConfig::GetSize
-
-Havuzda iş parçacığı sayısını almak için bu yöntemi çağırın.
-
-```
-STDMETHOD(GetSize)(int* pnNumThreads);
-```
-
-### <a name="parameters"></a>Parametreler
-
-*pnNumThreads*<br/>
-[out] Değişkeninin adresi, başarı, havuzda iş parçacığı sayısını alır.
-
-### <a name="return-value"></a>Dönüş Değeri
-
-Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.
-
-### <a name="example"></a>Örnek
-
-[!code-cpp[NVC_ATL_Utilities#134](../../atl/codesnippet/cpp/isupporterrorinfoimpl-class_2.cpp)]
-
-##  <a name="gettimeout"></a>  IThreadPoolConfig::GetTimeout
-
-İş parçacığı havuzu kapatmak bir iş parçacığı için bekleyeceği milisaniye cinsinden en uzun süreyi almak için bu yöntemi çağırın.
-
-```
-STDMETHOD(GetTimeout)(DWORD* pdwMaxWait);
-```
-
-### <a name="parameters"></a>Parametreler
-
-*pdwMaxWait*<br/>
-[out] Başarı durumunda, iş parçacığı havuzu kapatmak bir iş parçacığı için bekleyeceği milisaniye cinsinden en uzun süreyi alır. değişkenin adresi.
-
-### <a name="return-value"></a>Dönüş Değeri
-
-Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.
-
-### <a name="example"></a>Örnek
-
-Bkz: [IThreadPoolConfig::GetSize](#getsize).
-
-##  <a name="setsize"></a>  IThreadPoolConfig::SetSize
-
-Havuzda iş parçacığı sayısını ayarlamak için bu yöntemi çağırın.
-
-```
-STDMETHOD(SetSize)int nNumThreads);
-```
-
-### <a name="parameters"></a>Parametreler
-
-*nNumThreads*<br/>
-İstenen havuzundaki iş parçacığı sayısı.
-
-Varsa *nNumThreads* olan negatif mutlak değerini toplam iş parçacığı sayısını almak için makinede işlemci sayısını çarpılacağı.
-
-Varsa *nNumThreads* sıfır ATLS_DEFAULT_THREADSPERPROC çarpılarak toplam iş parçacığı sayısını almak için makinede işlemci sayısı.
-
-### <a name="return-value"></a>Dönüş Değeri
-
-Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.
-
-### <a name="example"></a>Örnek
-
-Bkz: [IThreadPoolConfig::GetSize](#getsize).
-
-##  <a name="settimeout"></a>  IThreadPoolConfig::SetTimeout
-
-İş parçacığı havuzu kapatmak bir iş parçacığı için bekleyeceği milisaniye cinsinden en uzun süreyi ayarlamak için bu yöntemi çağırın.
-
-```
-STDMETHOD(SetTimeout)(DWORD dwMaxWait);
-```
-
-### <a name="parameters"></a>Parametreler
-
-*dwMaxWait*<br/>
-İstenen en uzun süreyi milisaniye kapatmak bir iş parçacığı için iş parçacığı havuzu bekler.
-
-### <a name="return-value"></a>Dönüş Değeri
-
-Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.
-
-### <a name="example"></a>Örnek
-
-Bkz: [IThreadPoolConfig::GetSize](#getsize).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

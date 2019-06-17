@@ -1,15 +1,15 @@
 ---
 title: Visual Studio'da CMake projeleri
-ms.date: 03/27/2019
+ms.date: 06/12/2019
 helpviewer_keywords:
 - CMake in Visual C++
 ms.assetid: 444d50df-215e-4d31-933a-b41841f186f8
-ms.openlocfilehash: ae686383d82453f291bbf81428748524160082f7
-ms.sourcegitcommit: 18d3b1e9cdb4fc3a76f7a650c31994bdbd2bde64
+ms.openlocfilehash: f2bafb75aae2eabb4e8f289435ddaeb61e6aabf4
+ms.sourcegitcommit: fde637f823494532314790602c2819f889706ff6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/29/2019
-ms.locfileid: "64877180"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67042672"
 ---
 # <a name="cmake-projects-in-visual-studio"></a>Visual Studio'da CMake projeleri
 
@@ -20,13 +20,13 @@ CMake, birden çok platformda çalışacak yapı işlemlerini tanımlamak için 
 
 ::: moniker range="vs-2019"
 
-Visual Studio 2019 tanıtır **CMake ayarları Düzenleyicisi** ve Visual Studio 2017 üzerinden diğer geliştirmeler. **CMake için Visual C++ Araçları** bileşen **Klasör Aç** IntelliSense ve gözatma amacıyla doğrudan IDE CMake proje dosyaları (örneğin, CMakeLists.txt) kullanmak üzere etkinleştirmek için özellik. Ninja hem de Visual Studio oluşturucuları desteklenir. Visual Studio Oluşturucu kullanırsanız, geçici bir proje dosyası oluşturulur ve msbuild.exe için geçirilen ancak hiçbir zaman IntelliSense ya amaçları için yüklenir. Ayrıca, mevcut bir CMake önbelleği içeri aktarabilirsiniz. 
+Visual Studio 2019 tanıtır **CMake ayarları Düzenleyicisi** ve Visual Studio 2017 üzerinden diğer geliştirmeler. **C++ Windows için CMake araçlarını** bileşen **Klasör Aç** IntelliSense amacıyla doğrudan IDE CMake proje dosyaları (örneğin, CMakeLists.txt) kullanmak üzere etkinleştirmek için özellik ve göz atma. Ninja hem de Visual Studio oluşturucuları desteklenir. Visual Studio Oluşturucu kullanırsanız, geçici bir proje dosyası oluşturulur ve msbuild.exe için geçirilen ancak hiçbir zaman IntelliSense ya amaçları için yüklenir. Ayrıca, mevcut bir CMake önbelleği içeri aktarabilirsiniz. 
 
 ## <a name="installation"></a>Yükleme
 
-**CMake için Visual C++ Araçları** varsayılan olarak, bir parçası olarak yüklenen **C++ ile masaüstü geliştirme** iş yükü ve bir parçası olarak **C++ ile Linux geliştirme** iş yükü. Bkz: [platformlar arası CMake projelerini](../linux/cmake-linux-project.md) daha fazla bilgi için.
+**C++Windows için CMake araçlarını** varsayılan olarak, bir parçası olarak yüklenen **ile masaüstü geliştirme C++**  iş yükü ve bir parçası olarak **ile Linux geliştirme C++**  iş yükü. Bkz: [platformlar arası CMake projelerini](../linux/cmake-linux-project.md) daha fazla bilgi için.
 
-![C++ Masaüstü iş yükünde CMake bileşeni](media/cmake-install.png)
+![C++ Masaüstü iş yükünde CMake bileşeni](media/cmake-install-2019.png)
 
 Daha fazla bilgi için [Visual Studio'da C++ Linux iş yükünü yükleyin](../linux/download-install-and-setup-the-linux-development-workload.md).
 

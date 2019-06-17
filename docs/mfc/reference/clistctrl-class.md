@@ -1,6 +1,6 @@
 ---
 title: CListCtrl sınıfı
-ms.date: 11/04/2016
+ms.date: 06/13/2019
 f1_keywords:
 - CListCtrl
 - AFXCMN/CListCtrl
@@ -264,12 +264,12 @@ helpviewer_keywords:
 - CListCtrl [MFC], SubItemHitTest
 - CListCtrl [MFC], Update
 ms.assetid: fe08a1ca-4b05-4ff7-a12a-ee4c765a2197
-ms.openlocfilehash: 1cdc4bfacee4913d3a38aaa45aadf0a430e547ab
-ms.sourcegitcommit: ecf274bcfe3a977c48745aaa243e5e731f1fdc5f
+ms.openlocfilehash: 63668de8134267880b48a3406c552d06376ea4f7
+ms.sourcegitcommit: e79188287189b76b34eb7e8fb1bfe646bdb586bc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "66503448"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "67141673"
 ---
 # <a name="clistctrl-class"></a>CListCtrl sınıfı
 
@@ -522,8 +522,7 @@ Genişlik ve yükseklik bir liste görünümü denetimi öğelerini görüntüle
 
 ```
 CSize ApproximateViewRect(
-    CSize sz = CSize(-1,
--1),
+    CSize sz = CSize(-1, -1),
     int iCount = -1) const;
 ```
 
@@ -683,7 +682,7 @@ Başarılı olursa sıfır dışı; Aksi durumda 0.
 
 Kullanım `CreateEx` yerine [Oluştur](#create) Windows genişletilmiş sitil önsöz tarafından belirtilen Genişletilmiş Windows stilleri uygulamak için **WS_EX_** .
 
-`CreateEx` tarafından belirtilen Genişletilmiş Windows stillerle denetimi oluşturur *dwExStyle*. Genişletilmiş stiller belirli bir denetime ayarlamadığınız için çağrı [SetExtendedStyle](#setextendedstyle). Örneğin, `CreateEx` böyle stilleri WS_EX_CONTEXTHELP ayarlandı, ancak kullanmak için `SetExtendedStyle` böyle stilleri LVS_EX_FULLROWSELECT ayarlanacak. Daha fazla bilgi için bkz. Bu konu başlığı altında açıklanan stilleri [Genişletilmiş liste görünümü stillerini](/windows/desktop/Controls/extended-list-view-styles) Windows SDK.
+`CreateEx` tarafından belirtilen Genişletilmiş Windows stillerle denetimi oluşturur *dwExStyle*. Genişletilmiş stiller belirli bir denetime ayarlamadığınız için çağrı [SetExtendedStyle](#setextendedstyle). Örneğin, `CreateEx` böyle stilleri WS_EX_CONTEXTHELP ayarlandı, ancak kullanmak için `SetExtendedStyle` böyle stilleri LVS_EX_FULLROWSELECT ayarlanacak. Daha fazla bilgi için bkz. makalesinde açıklanan stilleri [Genişletilmiş liste görünümü stillerini](/windows/desktop/Controls/extended-list-view-styles) Windows SDK.
 
 ## <a name="createdragimage"></a>  CListCtrl::CreateDragImage
 
@@ -971,7 +970,7 @@ Bir RGB rengi belirtmek için kullanılan bir 32-bit değeri.
 
 ### <a name="example"></a>Örnek
 
-  Örneğin bakın [CListCtrl::SetBkColor](#setbkcolor).
+Örneğin bakın [CListCtrl::SetBkColor](#setbkcolor).
 
 ## <a name="getbkimage"></a>  CListCtrl::GetBkImage
 
@@ -1027,7 +1026,7 @@ Bir liste görünümü öğesi olan bir "geri çağırma öğesi" olan uygulama 
 
 ### <a name="example"></a>Örnek
 
-  Örneğin bakın [CListCtrl::SetCallbackMask](#setcallbackmask).
+Örneğin bakın [CListCtrl::SetCallbackMask](#setcallbackmask).
 
 ## <a name="getcheck"></a>  CListCtrl::GetCheck
 
@@ -1052,7 +1051,7 @@ Bu üye işlevi Win32 makrosu davranışını uygulayan [ListView_GetCheckState]
 
 ### <a name="example"></a>Örnek
 
-  Örneğin bakın [CListCtrl::SetCheck](#setcheck).
+Örneğin bakın [CListCtrl::SetCheck](#setcheck).
 
 ## <a name="getcolumn"></a>  CListCtrl::GetColumn
 
@@ -1134,7 +1133,7 @@ Bu üye işlevi Win32 makrosu davranışını uygulayan [ListView_GetColumnOrder
             int  nColumnCount = pHeaderCtrl->GetItemCount();
             LPINT pnOrder = (LPINT) malloc(nColumnCount*sizeof(int));
             ASSERT(pnOrder != NULL);
-m_myListCtrl.GetColumnOrderArray(pnOrder, nColumnCount);
+            m_myListCtrl.GetColumnOrderArray(pnOrder, nColumnCount);
 
             int i, j, nTemp;
             for (i = 0, j = nColumnCount-1; i < j; i++, j--)
@@ -1188,7 +1187,7 @@ Liste görünümü veya rapor görünümü içinde dikey bir liste görünümü 
 
 ### <a name="example"></a>Örnek
 
-  Örneğin bakın [CListCtrl::GetTopIndex](#gettopindex).
+Örneğin bakın [CListCtrl::GetTopIndex](#gettopindex).
 
 ## <a name="geteditcontrol"></a>  CListCtrl::GetEditControl
 
@@ -1243,7 +1242,7 @@ DWORD GetExtendedStyle();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Genişletilmiş stiller listesi tarafından kullanılmakta birleşimi denetim görüntüleyin. Bu Genişletilmiş stiller açıklayıcı bir listesi için bkz. [Genişletilmiş liste görünümü stillerini](/windows/desktop/Controls/extended-list-view-styles) konu başlığında Windows SDK'sı.
+Genişletilmiş stiller listesi tarafından kullanılmakta birleşimi denetim görüntüleyin. Bu Genişletilmiş stiller açıklayıcı bir listesi için bkz. [Genişletilmiş liste görünümü stillerini](/windows/desktop/Controls/extended-list-view-styles) Windows SDK'sı makalesinde.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -1251,7 +1250,7 @@ Bu üye işlevi Win32 makrosu davranışını uygulayan [ListView_GetExtendedLis
 
 ### <a name="example"></a>Örnek
 
-  Örneğin bakın [CListCtrl::SetExtendedStyle](#setextendedstyle).
+Örneğin bakın [CListCtrl::SetExtendedStyle](#setextendedstyle).
 
 ## <a name="getfirstselecteditemposition"></a>  CListCtrl::GetFirstSelectedItemPosition
 
@@ -1381,7 +1380,7 @@ public:
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki kod örneğinde `GetGroupInfoByIndex` yöntemi. Bu kod, önceki bölümde örnek bir liste görünümü denetimi, oluşturduğumuz bir rapor görünümü'nde "ClientID" ve "Sınıf" adlı iki sütun görüntüler. Bu tür bir grup zaten varsa, aşağıdaki kod örneği dizini 0'dır ve grubu hakkındaki bilgileri alır.
+Aşağıdaki kod örneğinde `GetGroupInfoByIndex` yöntemi. Bu kod örneği önceki bölümünde, bir rapor görünümü'nde "ClientID" ve "Sınıf" adlı iki sütun görüntüleyen bir liste görünümü denetimi oluşturduk. Bu tür bir grup zaten varsa, aşağıdaki kod örneği dizini 0'dır ve grubu hakkındaki bilgileri alır.
 ```cpp
     // GetGroupInfoByIndex
     const int GROUP_HEADER_BUFFER_SIZE = 40;
@@ -1528,7 +1527,7 @@ Bu üye işlevi Win32 makrosu davranışını uygulayan [ListView_GetHeader](/wi
 
 ### <a name="example"></a>Örnek
 
-  Örneğin bakın [CListCtrl::GetColumnOrderArray](#getcolumnorderarray).
+Örneğin bakın [CListCtrl::GetColumnOrderArray](#getcolumnorderarray).
 
 ## <a name="gethotcursor"></a>  CListCtrl::GetHotCursor
 
@@ -1634,7 +1633,7 @@ Liste Görünümü öğelerini çizmek için kullanılan görüntü listesi içi
 
 ```cpp
         ASSERT(m_myListCtrl.GetImageList(LVSIL_NORMAL) == NULL);
-m_myListCtrl.SetImageList(&m_lcImageList, LVSIL_NORMAL);
+        m_myListCtrl.SetImageList(&m_lcImageList, LVSIL_NORMAL);
         ASSERT(m_myListCtrl.GetImageList(LVSIL_NORMAL) == &m_lcImageList);
 ```
 
@@ -1643,12 +1642,12 @@ m_myListCtrl.SetImageList(&m_lcImageList, LVSIL_NORMAL);
 Ekleme işareti geçerli konumunu alır.
 
 ```
-BOOL GetInsertMark(LPLVINSERTMARK lvim) const;
+BOOL GetInsertMark(LPLVINSERTMARK plvim) const;
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*lvim*<br/>
+*plvim*<br/>
 Bir işaretçi bir [LVINSERTMARK](/windows/desktop/api/commctrl/ns-commctrl-lvinsertmark) ekleme işareti için bilgi içeren yapıya.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -1735,7 +1734,7 @@ Liste Görünümü denetimi içindeki öğelerin sayısı.
 
 ### <a name="example"></a>Örnek
 
-  Örneğin bakın [CListCtrl::DeleteItem](#deleteitem).
+Örneğin bakın [CListCtrl::DeleteItem](#deleteitem).
 
 ## <a name="getitemdata"></a>  CListCtrl::GetItemData
 
@@ -1905,7 +1904,7 @@ Başarılı olursa sıfır dışı; Aksi halde sıfır.
 void CListCtrlDlg::OnClick(NMHDR* pNMHDR, LRESULT* pResult)
 {
     UNREFERENCED_PARAMETER(pResult);
-LPNMITEMACTIVATE pia = (LPNMITEMACTIVATE)pNMHDR;
+    LPNMITEMACTIVATE pia = (LPNMITEMACTIVATE)pNMHDR;
 
     // Get the current mouse location and convert it to client
     // coordinates.
@@ -1995,7 +1994,7 @@ Bir öğenin durum tarafından belirtilen `state` üyesi [LVITEM](/windows/deskt
 
 ### <a name="example"></a>Örnek
 
-  Örneğin bakın [CListCtrl::GetTopIndex](#gettopindex).
+Örneğin bakın [CListCtrl::GetTopIndex](#gettopindex).
 
 ## <a name="getitemtext"></a>  CListCtrl::GetItemText
 
@@ -2228,7 +2227,7 @@ Başarılı olursa sıfır dışı; Aksi halde sıfır. Rapor Görünümü'nde d
 
 ## <a name="getselectedcolumn"></a>  CListCtrl::GetSelectedColumn
 
-Liste denetimi şu anda seçili sütun dizinini alır.
+Liste denetimi seçili sütundaki dizinini alır.
 
 ```
 UINT GetSelectedColumn() const;
@@ -2388,7 +2387,7 @@ Bir RGB rengi belirtmek için kullanılan bir 32-bit değeri.
 
 ### <a name="example"></a>Örnek
 
-  Örneğin bakın [CListCtrl::SetTextBkColor](#settextbkcolor).
+Örneğin bakın [CListCtrl::SetTextBkColor](#settextbkcolor).
 
 ## <a name="gettextcolor"></a>  CListCtrl::GetTextColor
 
@@ -2404,19 +2403,19 @@ Bir RGB rengi belirtmek için kullanılan bir 32-bit değeri.
 
 ### <a name="example"></a>Örnek
 
-  Örneğin bakın [CListCtrl::SetTextColor](#settextcolor).
+Örneğin bakın [CListCtrl::SetTextColor](#settextcolor).
 
 ## <a name="gettileinfo"></a>  CListCtrl::GetTileInfo
 
 Bir liste görünümü denetimi kutucuk hakkındaki bilgileri alır.
 
 ```
-BOOL GetTileInfo(PLVTILEINFO pti) const;
+BOOL GetTileInfo(PLVTILEINFO plvti) const;
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*pti*<br/>
+*plvti*<br/>
 Bir işaretçi bir [LVTILEINFO](/windows/desktop/api/commctrl/ns-commctrl-taglvtileinfo) kutucuk bilgileri alan yapısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -2548,15 +2547,15 @@ Bir liste görünümü denetimi geçerli çalışma alanlarını alır.
 ```
 void GetWorkAreas(
     int nWorkAreas,
-    LPRECT prc) const;
+    LPRECT pRect) const;
 ```
 
 ### <a name="parameters"></a>Parametreler
 
 *nWorkAreas*<br/>
-Sayısını `RECT` içindeki yapıları *ÇHC* dizisi.
+Sayısını `RECT` içindeki yapıları *pRect* dizisi.
 
-*ÇHC*<br/>
+*pRect*<br/>
 Bir dizi işaretçi `RECT` yapıları (veya [CRect](../../atl-mfc-shared/reference/crect-class.md) nesneleri) liste görünümü denetimi çalışma alanlarının alırsınız. Bu yapılar istemci koordinatlarında değerler.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -2565,7 +2564,7 @@ Bu üye işlevi Win32 makrosu davranışını uygulayan [ListView_GetWorkAreas](
 
 ### <a name="example"></a>Örnek
 
-  Örneğin bakın [CListCtrl::GetNumberOfWorkAreas](#getnumberofworkareas).
+Örneğin bakın [CListCtrl::GetNumberOfWorkAreas](#getnumberofworkareas).
 
 ## <a name="hasgroup"></a>  CListCtrl::HasGroup
 
@@ -2781,10 +2780,10 @@ Eklenecek öğenin dizini.
 *NMask* parametresinin belirttiği hangi öğe parametre olarak geçirilen öznitelikleri geçerlidir. Bir olabilir ya da daha fazla maskesi değeri açıklanan [LVITEM yapısı](/windows/desktop/api/commctrl/ns-commctrl-taglvitema) Windows SDK. Geçerli değerler, bit düzeyinde OR işleci ile birleştirilebilir.
 
 *nDurum*<br/>
-Öğenin durumu, durum görüntüsünün ve katmana görüntü gösterir. Windows SDK'sı konulara bakın [LVITEM yapısı](/windows/desktop/api/commctrl/ns-commctrl-taglvitema) daha fazla bilgi ve [liste görünümü öğesi durumları](/windows/desktop/Controls/list-view-item-states) geçerli bayrakların listesi için.
+Öğenin durumu, durum görüntüsünün ve katmana görüntü gösterir. Daha fazla bilgi için Windows SDK'sı konulara bakın [LVITEM yapısı](/windows/desktop/api/commctrl/ns-commctrl-taglvitema) ve [liste görünümü öğesi durumları](/windows/desktop/Controls/list-view-item-states) geçerli bayrakların listesi için.
 
 *nStateMask*<br/>
-Durum üyenin hangi bitlerin alınan veya değiştirilecek gösterir. Bkz: [LVITEM yapısı](/windows/desktop/api/commctrl/ns-commctrl-taglvitema) daha fazla bilgi için Windows SDK.
+Durum üyenin hangi bitlerin alınan veya değiştirilecek gösterir. Daha fazla bilgi için [LVITEM yapısı](/windows/desktop/api/commctrl/ns-commctrl-taglvitema) Windows SDK.
 
 *lParam*<br/>
 Öğeyle ilişkili 32 bit uygulamaya özgü bir değer. Bu parametre belirtilmezse, ayarlamalısınız *nMask* LVIF_PARAM özniteliği.
@@ -2795,7 +2794,7 @@ Başarılı olursa yeni öğeyi veya -1 aksi dizini.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntemin çağrılması denetim pencerenizi gönderilecek LVM_INSERTITEM iletisi neden olabilir. Denetim için ilişkili ileti işleyicisini öğesi metni (LVS_OWNERDRAW gibi pencere stilleri kullanarak gibi) belirli koşullar altında ayarlamak başarısız olabilir. Bu koşullar hakkında daha fazla bilgi için başvurmak [LVM_INSERTITEM](/windows/desktop/Controls/lvm-insertitem) Windows SDK.
+Bu yöntemin çağrılması denetim pencerenizi gönderilecek LVM_INSERTITEM iletisi neden olabilir. Denetim için ilişkili ileti işleyicisini öğesi metni (LVS_OWNERDRAW gibi pencere stilleri kullanarak gibi) belirli koşullar altında ayarlamak başarısız olabilir. Bu koşullar hakkında daha fazla bilgi için bkz. [LVM_INSERTITEM](/windows/desktop/Controls/lvm-insertitem) Windows SDK.
 
 ### <a name="example"></a>Örnek
 
@@ -2828,7 +2827,7 @@ Belirli bir noktaya en yakın noktasını alır.
 ```
 int InsertMarkHitTest(
     LPPOINT pPoint,
-    LPLVINSERTMARK lvim) const;
+    LPLVINSERTMARK plvim) const;
 ```
 
 ### <a name="parameters"></a>Parametreler
@@ -2836,7 +2835,7 @@ int InsertMarkHitTest(
 *pPoint*<br/>
 Bir işaretçi bir [noktası](/previous-versions/dd162805\(v=vs.85\)) isabet testi içeren yapısı koordinatları, liste denetimi istemci alanına göre.
 
-*lvim*<br/>
+*plvim*<br/>
 Bir işaretçi bir [LVINSERTMARK](/windows/desktop/api/commctrl/ns-commctrl-lvinsertmark) noktası parametresi tarafından tanımlanan koordinatlara en yakın noktasını belirten yapısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -2879,7 +2878,7 @@ BOOL IsItemVisible(int index) const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Belirtilen öğe görünür; Aksi takdirde FALSE ise TRUE.
+Belirtilen öğe görünür ise TRUE; Aksi takdirde FALSE.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -3138,7 +3137,7 @@ Bir liste görünümü denetimi, arka plan resmini ayarlar.
 BOOL SetBkImage(LVBKIMAGE* plvbkImage);
 
 BOOL SetBkImage(
-    HBITMAP hbm,
+    HBITMAP hBitmap,
     BOOL fTile = TRUE,
     int xOffsetPercent = 0,
     int yOffsetPercent = 0);
@@ -3155,7 +3154,7 @@ BOOL SetBkImage(
 *plvbkImage*<br/>
 Adresi bir `LVBKIMAGE` yapısı, yeni arka plan görüntü bilgilerini içeren.
 
-*hbm*<br/>
+*Hbıtmap*<br/>
 Bit eşleme işleyin.
 
 *pszUrl*<br/>
@@ -3181,7 +3180,7 @@ Başarılı olursa sıfır dışı döndürür veya sıfır, aksi takdirde.
 
 ### <a name="example"></a>Örnek
 
-  Örneğin bakın [CListCtrl::GetBkImage](#getbkimage).
+Örneğin bakın [CListCtrl::GetBkImage](#getbkimage).
 
 ## <a name="setcallbackmask"></a>  CListCtrl::SetCallbackMask
 
@@ -3273,7 +3272,7 @@ Başarılı olursa sıfır dışı; Aksi halde sıfır.
 
 ### <a name="example"></a>Örnek
 
-  Örneğin bakın [CListCtrl::GetColumn](#getcolumn).
+Örneğin bakın [CListCtrl::GetColumn](#getcolumn).
 
 ## <a name="setcolumnorderarray"></a>  CListCtrl::SetColumnOrderArray
 
@@ -3303,7 +3302,7 @@ Bu üye işlevi Win32 makrosu davranışını uygulayan [ListView_SetColumnOrder
 
 ### <a name="example"></a>Örnek
 
-  Örneğin bakın [CListCtrl::GetColumnOrderArray](#getcolumnorderarray).
+Örneğin bakın [CListCtrl::GetColumnOrderArray](#getcolumnorderarray).
 
 ## <a name="setcolumnwidth"></a>  CListCtrl::SetColumnWidth
 
@@ -3424,7 +3423,7 @@ Bu üye işlevi Win32 makrosu davranışını uygulayan [ListView_SetHotCursor](
 
 ### <a name="example"></a>Örnek
 
-  Örneğin bakın [CListCtrl::GetHotCursor](#gethotcursor).
+Örneğin bakın [CListCtrl::GetHotCursor](#gethotcursor).
 
 ## <a name="sethotitem"></a>  CListCtrl::SetHotItem
 
@@ -3449,7 +3448,7 @@ Bu üye işlevi Win32 makrosu davranışını uygulayan [ListView_SetHotItem](/w
 
 ### <a name="example"></a>Örnek
 
-  Örneğin bakın [CListCtrl::GetHotItem](#gethotitem).
+Örneğin bakın [CListCtrl::GetHotItem](#gethotitem).
 
 ## <a name="sethovertime"></a>  CListCtrl::SetHoverTime
 
@@ -3474,7 +3473,7 @@ Bu üye işlevi Win32 makrosu davranışını uygulayan [ListView_SetHoverTime](
 
 ### <a name="example"></a>Örnek
 
-  Örneğin bakın [CListCtrl::GetHoverTime](#gethovertime).
+Örneğin bakın [CListCtrl::GetHoverTime](#gethovertime).
 
 ## <a name="seticonspacing"></a>  CListCtrl::SetIconSpacing
 
@@ -3544,7 +3543,7 @@ Görüntü listesi türü. Şu değerlerden biri olabilir:
 
 ### <a name="example"></a>Örnek
 
-  Örneğin bakın [CListCtrl::GetImageList](#getimagelist).
+Örneğin bakın [CListCtrl::GetImageList](#getimagelist).
 
 ## <a name="setinfotip"></a>  CListCtrl::SetInfoTip
 
@@ -3572,12 +3571,12 @@ Bu üye işlevi işlevselliğine öykünür [LVM_SETINFOTIP](/windows/desktop/Co
 Ekleme noktasını tanımlı konuma ayarlar.
 
 ```
-BOOL SetInsertMark(LPLVINSERTMARK lvim);
+BOOL SetInsertMark(LPLVINSERTMARK plvim);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*lvim*<br/>
+*plvim*<br/>
 Bir işaretçi bir [LVINSERTMARK](/windows/desktop/api/commctrl/ns-commctrl-lvinsertmark) noktasını nerede yapılacağını belirleyen yapısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -3686,7 +3685,7 @@ Başarılı olursa sıfır dışı; Aksi halde sıfır.
 
 ### <a name="example"></a>Örnek
 
-  Örneğin bakın [CListCtrl::HitTest](#hittest).
+Örneğin bakın [CListCtrl::HitTest](#hittest).
 
 ## <a name="setitemcount"></a>  CListCtrl::SetItemCount
 
@@ -3868,7 +3867,7 @@ Liste Görünümü denetimi LVS_AUTOARRANGE stili varsa, öğenin konumunu ayarl
 
 ### <a name="example"></a>Örnek
 
-  Örneğin bakın [CListCtrl::GetItemPosition](#getitemposition).
+Örneğin bakın [CListCtrl::GetItemPosition](#getitemposition).
 
 ## <a name="setitemstate"></a>  CListCtrl::SetItemState
 
@@ -3909,7 +3908,7 @@ Bir öğenin "state" öğenin kullanılabilirlik belirtir, kullanıcı eylemleri
 
 ### <a name="example"></a>Örnek
 
-  Örneğin bakın [CListCtrl::GetTopIndex](#gettopindex).
+Örneğin bakın [CListCtrl::GetTopIndex](#gettopindex).
 
 ## <a name="setitemtext"></a>  CListCtrl::SetItemText
 
@@ -3943,7 +3942,7 @@ Bu yöntem içeren LVS_OWNERDATA pencere stili denetimleri ile kullanılmak üze
 
 ### <a name="example"></a>Örnek
 
-  Örneğin bakın [CListCtrl::InsertItem](#insertitem).
+Örneğin bakın [CListCtrl::InsertItem](#insertitem).
 
 ## <a name="setoutlinecolor"></a>  CListCtrl::SetOutlineColor
 
@@ -4010,7 +4009,7 @@ Bu üye işlevi Win32 makrosu davranışını uygulayan [ListView_SetSelectionMa
 
 ### <a name="example"></a>Örnek
 
-  Örneğin bakın [CListCtrl::GetSelectionMark](#getselectionmark).
+Örneğin bakın [CListCtrl::GetSelectionMark](#getselectionmark).
 
 ## <a name="settextbkcolor"></a>  CListCtrl::SetTextBkColor
 
@@ -4070,12 +4069,12 @@ Başarılı olursa sıfır dışı; Aksi halde sıfır.
 Liste Görünümü denetimi bir kutucuk için bilgilerini ayarlar.
 
 ```
-BOOL SetTileInfo(PLVTILEINFO pti);
+BOOL SetTileInfo(PLVTILEINFO pTileInfo);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*pti*<br/>
+*pTileInfo*<br/>
 Bir işaretçi bir [LVTILEINFO](/windows/desktop/api/commctrl/ns-commctrl-taglvtileinfo) ayarlamak için bilgi içeren yapıya.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -4257,7 +4256,7 @@ int CALLBACK CListCtrlDlg::MyCompareProc(LPARAM lParam1, LPARAM lParam2,
     LPARAM lParamSort)
 {
     UNREFERENCED_PARAMETER(lParamSort);
-return (int)(lParam1 - lParam2);
+    return (int)(lParam1 - lParam2);
 }
 ```
 
@@ -4381,7 +4380,7 @@ Bu üye işlevi Win32 makrosu davranışını uygulayan [ListView_SubItemHitTest
 void CListCtrlDlg::OnDblClk(NMHDR* pNMHDR, LRESULT* pResult)
 {
     UNREFERENCED_PARAMETER(pResult);
-LPNMITEMACTIVATE pia = (LPNMITEMACTIVATE)pNMHDR;
+    LPNMITEMACTIVATE pia = (LPNMITEMACTIVATE)pNMHDR;
     LVHITTESTINFO lvhti;
 
     // Clear the subitem text the user clicked on.
@@ -4418,7 +4417,7 @@ LVS_AUTOARRANGE stili varsa, bu işlev Ayrıca liste görünümü denetimi düze
 
 ### <a name="example"></a>Örnek
 
-  Örneğin bakın [CListCtrl::GetSelectedCount](#getselectedcount).
+Örneğin bakın [CListCtrl::GetSelectedCount](#getselectedcount).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

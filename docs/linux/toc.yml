@@ -2,14 +2,14 @@
   href: index.md
 - name: 'Linux Geliştirme iş yükünü indirme, yükleme ve ayarlama'
   href: download-install-and-setup-the-linux-development-workload.md
-- name: Linux projesi yapılandırma
-  href: configure-a-linux-project.md
-- name: Linux CMake projesi yapılandırma
-  href: cmake-linux-project.md
-- name: Yeni Linux projesi oluşturma
-  href: create-a-new-linux-project.md
 - name: Uzak Linux bilgisayarınıza bağlanma
   href: connect-to-your-remote-linux-computer.md
+- name: Yeni Linux projesi oluşturma
+  href: create-a-new-linux-project.md
+- name: Linux projesi yapılandırma
+  href: configure-a-linux-project.md
+- name: Linux CMake projesi oluşturma ve yapılandırma
+  href: cmake-linux-project.md
 - name: Linux projelerini Adres Temizleyici kullanmak üzere yapılandırma
   href: linux-asan-configuration.md
 - name: 'Linux projenizi dağıtma, çalıştırma ve projenizin hatalarını ayıklama'
