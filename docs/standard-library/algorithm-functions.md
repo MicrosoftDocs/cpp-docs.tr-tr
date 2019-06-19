@@ -200,12 +200,12 @@ helpviewer_keywords:
 - std::count_if [C++]
 - std::partition_copy [C++]
 - std::swap [C++]
-ms.openlocfilehash: b914b3d2ed61c81629c06739eac86692d1444e58
-ms.sourcegitcommit: 28eae422049ac3381c6b1206664455dbb56cbfb6
+ms.openlocfilehash: 17ce5628dbf7c781cfc9d3ebdf348d003c863f76
+ms.sourcegitcommit: 0ad35b26e405bbde17dc0bd0141e72f78f0a38fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66450425"
+ms.lasthandoff: 06/18/2019
+ms.locfileid: "67194773"
 ---
 # <a name="ltalgorithmgt-functions"></a>&lt;algoritma&gt; işlevleri
 
@@ -317,19 +317,21 @@ int main()
       cout << "There are not two adjacent elements that are equal."
            << endl;
    else
-      cout << "There are two adjacent elements that are equal."
-           << "\n They have a value of "
-           <<  *( result1 ) << "." << endl;
+      cout << "There are two adjacent elements that are equal.\n"
+           << "They have a value of "
+           << *( result1 ) << "." << endl;
 
    result2 = adjacent_find( L.begin( ), L.end( ), twice );
    if ( result2 == L.end( ) )
       cout << "There are not two adjacent elements where the "
-           << " second is twice the first." << endl;
+           << "second is twice the first." << endl;
    else
+   {
       cout << "There are two adjacent elements where "
-           << "the second is twice the first."
-           << "\n They have values of " << *(result2++);
-      cout << " & " << *result2 << "." << endl;
+           << "the second is twice the first.\n"
+           << "They have values of " << *(result2++)
+           << " & " << *result2 << "." << endl;
+   }
 }
 ```
 
@@ -366,11 +368,46 @@ Test etmek için bir koşul. Denetlenen bir öğe tarafından karşılanması ko
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Döndürür **true** Belirtilen aralıktaki her bir öğede koşul algılanırsa ve **false** koşul en az bir kez algılanmazsa.
+Döndürür **true** Belirtilen aralıktaki her bir öğede koşul algılanırsa veya aralığı boşsa, ve **false** Aksi takdirde.
 
 ### <a name="remarks"></a>Açıklamalar
 
 Şablon işlevinin döndürdüğü **true** her biri için yalnızca Eğer `N` aralığında `[0,Last - first)`, koşul `comp(*(_First + N))` olduğu **true**.
+
+### <a name="example"></a>Örnek
+
+```cpp
+// alg_all_of.cpp
+// compile with: /EHsc
+#include <list>
+#include <algorithm>
+#include <iostream>
+
+int main()
+{
+    using namespace std;
+
+    list<int> li { 50, 40, 10, 20, 20 };
+    list<int>::iterator iter;
+
+    cout << "li = ( ";
+    for (iter = li.begin(); iter != li.end(); iter++)
+        cout << *iter << " ";
+    cout << ")" << endl;
+
+    // Check if all elements in li are even.
+    auto is_even = [](int elem){ return !(elem % 2); };
+    if (all_of(li.begin(), li.end(), is_even))
+        cout << "All the elements are even numbers.\n";
+    else
+        cout << "Not all the elements are even numbers.\n";
+}
+```
+
+```Output
+L = ( 50 40 10 20 20 )
+All the elements are even numbers.
+```
 
 ## <a name="any_of"></a>  any_of
 
@@ -404,6 +441,40 @@ Döndürür **true** koşul belirtilen aralığında en az bir kez algılanırsa
 Şablon işlevinin döndürdüğü **true** yalnızca şu durumlarda, bazı `N` aralığında
 
 `[0, last - first)`, koşul `comp(*(first + N))` geçerlidir.
+
+### <a name="example"></a>Örnek
+
+```cpp
+// alg_any_of.cpp
+// compile with: /EHsc
+#include <list>
+#include <algorithm>
+#include <iostream>
+
+int main()
+{
+    using namespace std;
+
+    list<int> li { 51, 41, 11, 21, 20 };
+
+    cout << "li = ( ";
+    for (auto const& el : li)
+        cout << el << " ";
+    cout << ")" << endl;
+
+    // Check if there is an even elememt in li.
+    auto is_even = [](int const elem){ return !(elem % 2); };
+    if (any_of(li.begin(), li.end(), is_even))
+        cout << "There's an even element in li.\n";
+    else
+        cout << "There are no even elements in li.\n";
+}
+```
+
+```Output
+L = ( 51 41 11 21 20 )
+There's an even element in li.
+```
 
 ## <a name="binary_search"></a>  binary_search
 
