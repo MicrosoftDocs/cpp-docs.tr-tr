@@ -14,19 +14,19 @@ helpviewer_keywords:
 - dialog boxes [C++], size
 - dialog boxes [C++], positioning
 ms.assetid: 303de801-c4f8-42e1-b622-353f6423f688
-ms.openlocfilehash: c5f026683881ba8e608bd00089879e0e2a7b4af2
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 28ed6c8be262e0446b828cfa3e6e9fe2ba53672a
+ms.sourcegitcommit: 6cf0c67acce633b07ff31b56cebd5de3218fd733
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62223577"
+ms.lasthandoff: 06/24/2019
+ms.locfileid: "67344215"
 ---
 # <a name="how-to-create-a-dialog-box-c"></a>Nasıl yapılır: Oluştur iletişim kutusu (C++)
 
 Boyutu ve bir C++ iletişim kutusunda, konumu ve denetimleri içindeki boyutunu ve konumunu iletişim birimleriyle ölçülür. Visual Studio durum seçtiğiniz zaman çubuğunda sağ alt köşesindeki değerleri tek tek denetimler ve iletişim kutusu görünür.
 
 > [!NOTE]
-> Projenize bir .rc dosyası yoksa, lütfen bkz [yeni bir kaynak betik dosyası oluşturma](../windows/how-to-create-a-resource-script-file.md).
+> Projenize bir .rc dosyası yoksa, bkz. [yeni bir kaynak betik dosyası oluşturma](../windows/how-to-create-a-resource-script-file.md).
 
 ## <a name="how-to"></a>Nasıl Yapılır
 
@@ -38,7 +38,7 @@ Boyutu ve bir C++ iletişim kutusunda, konumu ve denetimleri içindeki boyutunu 
 
 1. İçinde **kaynak Ekle** iletişim kutusunda **iletişim** içinde **kaynak türü** listeleyin ve ardından **yeni**.
 
-   Bir artı işareti (**+**) yanında görünen **iletişim** kaynak türü geldiğini iletişim kutusu şablonları kullanılabilir. Şablonlar listesinde genişletin, bir şablon seçin veya seçmek için artı işaretini seçin **yeni**.
+   Bir artı işareti ( **+** ) yanında görünen **iletişim** kaynak türü geldiğini iletişim kutusu şablonları kullanılabilir. Şablonlar listesinde genişletin, bir şablon seçin veya seçmek için artı işaretini seçin **yeni**.
 
    Yeni iletişim kutusu açılır **iletişim kutusu Düzenleyicisi**.
 

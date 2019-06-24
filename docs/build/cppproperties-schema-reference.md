@@ -1,25 +1,25 @@
 ---
-title: CppProperties.json schema reference
+title: CppProperties.json şema başvurusu
 ms.date: 05/16/2019
 helpviewer_keywords:
 - CMake in Visual Studio
-ms.openlocfilehash: e80f4e8a189510a9a3e8860609d74121b7cbb0ef
-ms.sourcegitcommit: a10c9390413978d36b8096b684d5ed4cf1553bc8
+ms.openlocfilehash: 8432b72deaef99ee20147505030cbc8a9a270869
+ms.sourcegitcommit: 6cf0c67acce633b07ff31b56cebd5de3218fd733
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65837049"
+ms.lasthandoff: 06/24/2019
+ms.locfileid: "67344410"
 ---
-# <a name="cpppropertiesjson-schema-reference"></a>CppProperties.json schema reference
+# <a name="cpppropertiesjson-schema-reference"></a>CppProperties.json şema başvurusu
 
 CMake kullanmayan klasör Proje Aç projesi yapılandırma ayarlarında depolayabileceğiniz bir `CppProperties.json` dosya. (Kullanım CMake projeleri bir [CMakeSettings.json](customize-cmake-settings.md) dosyası.) Visual Studio IDE kullanan `CppProperties.json` için IntelliSense ve kod gezintisi. Bir yapılandırmayı, ad/değer çiftlerinden oluşur ve tanımlar # yolları, derleyici anahtarlarını ve diğer parametreler include. 
 
 
 ## <a name="default-configurations"></a>Varsayılan yapılandırmaları
 
-Visual Studio, önceden tanımlanmış yapılandırmaları sunar x86 ve x64 hata ayıklama ve yayın. Varsayılan olarak, projenizin bir x86 hata ayıklama yapılandırması vardır `CppProperties.json`. Yeni bir yapılandırma eklemek için sağ tıklayın `CppProperties.json` dosyası **Çözüm Gezgini** ve **Yapılandırması Ekle**:
+Visual Studio, önceden tanımlanmış yapılandırmaları sunar x86 ve x64 hata ayıklama ve yayın. Varsayılan olarak, projenizin bir x86 hata ayıklama yapılandırması vardır `CppProperties.json`. Yeni bir yapılandırma eklemek için sağ `CppProperties.json` dosyası **Çözüm Gezgini** ve **Yapılandırması Ekle**:
 
-![Açık klasör ekleme Yapılandırması](media/open-folder-add-config.png "Klasör Aç, yeni yapılandırma Ekle")
+![Klasör Aç - yeni yapılandırma ekleme](media/open-folder-add-config.png "Klasör Aç, yeni yapılandırma Ekle")
 
 Varsayılan yapılandırmaları burada gösterilir:
 
@@ -115,9 +115,9 @@ Bir yapılandırma aşağıdaki özelliklerinden herhangi birini içerebilir:
 |`compilerSwitches`|IntelliSense davranışını etkileyen bir veya daha fazla ek anahtarlar|
 |`forcedInclude`|Her derleme biriminde otomatik olarak eklenecek üstbilgi (/FI için MSVC için eşler veya - clang için dahil)|
 |`undefines`|Tanımsız (maps) MSVC için /U için olmasını makroları listesi|
-|`intelliSenseMode`|kullanılacak IntelliSense altyapısı. Mimari belirli çeşitleri MSVC, gcc veya Clang belirtebilirsiniz:<br/><br/>-windows msvc x86 (varsayılan)<br/>- windows-msvc-x64<br/>- msvc-arm<br/>- windows-clang-x86<br/>- windows-clang-x64<br/>- windows-clang-arm<br/>- Linux-x64<br/>- Linux-x86<br/>-Linux-arm<br/>-gccarm|
+|`intelliSenseMode`|kullanılacak IntelliSense altyapısı. MSVC, gcc veya Clang özel mimari türevleri belirtebilirsiniz:<br/><br/>-windows msvc x86 (varsayılan)<br/>- windows-msvc-x64<br/>- msvc-arm<br/>- windows-clang-x86<br/>- windows-clang-x64<br/>- windows-clang-arm<br/>- Linux-x64<br/>- Linux-x86<br/>-Linux-arm<br/>-gccarm|
 
-Not: Değerleri `msvc-x86` ve `msvc-x64` yalnızca eski nedenlerle desteklenir. Lütfen kullanın `windows-msvc*` çeşitleri.
+Not: Değerleri `msvc-x86` ve `msvc-x64` yalnızca eski nedenlerle desteklenir. Kullanım `windows-msvc-*` çeşitleri yerine.
 
 ## <a name="custom-configurations"></a>Özel yapılandırmalar
 
@@ -208,7 +208,7 @@ Tanımlayabileceğiniz özel ortam değişkenleri `CppProperties.json` ya da gen
 ```
 ## <a name="per-configuration-environment-variables"></a>Yapılandırma ortam değişkenleri
 
-Ayrıca tanımlayabilirsiniz bir **ortamları** özelliği içinde bir yapılandırması olan yalnızca bu yapılandırma için geçerlidir ve herhangi bir genel değişkenler aynı ada sahip geçersiz kılar. Aşağıdaki örnekte, x64 yapılandırmasını tanımlayan bir yerel **INCLUDE** genel değerini geçersiz kılar değişkeni:
+Ayrıca tanımlayabilirsiniz bir **ortamları** içinde bir yapılandırma özellik. Yalnızca bu yapılandırma için geçerlidir ve herhangi bir genel değişkenler aynı ada sahip geçersiz kılar. Aşağıdaki örnekte, x64 yapılandırmasını tanımlayan bir yerel **INCLUDE** genel değerini geçersiz kılar değişkeni:
 
 ```json
 {
@@ -266,7 +266,7 @@ Tüm özel ve varsayılan ortam değişkenlerini de kullanılabilir `tasks.vs.js
 |`${projectRoot}`| klasörün tam yolu burada `CppProperties.json` yerleştirilir|
 |`${vsInstallDir}`| Visual Studio'nun çalışan örneği yüklendiği klasörün tam yolu|
 
-Örneğin, projeniz bir dahil etme klasörü varsa, ve ayrıca windows.h ve diğer ortak üst bilgileri Windows SDK içerir güncelleştirmek isteyebilirsiniz, `CppProperties.json` bu yapılandırma dosyası içerir:
+Örneğin, projeniz bir dahil etme klasörü varsa, ve ayrıca windows.h ve diğer ortak üst bilgileri Windows SDK içerir güncelleştirmek isteyebilirsiniz, `CppProperties.json` aşağıdaki yapılandırma dosyası içerir:
 
 ```json
 {
@@ -294,6 +294,3 @@ Tüm özel ve varsayılan ortam değişkenlerini de kullanılabilir `tasks.vs.js
 ## <a name="troubleshoot-intellisense-errors"></a>IntelliSense sorunlarını giderme
 
 IntelliSense sorunlarını gidermek için yol, hataları nedeni eksik eklemeyi açın **hata listesi** hata kodu E1696 "kaynak dosyayı açamıyor..." ve "Yalnızca IntelliSense" çıktısını Filtrele.
-
-
-

@@ -1,5 +1,5 @@
 ---
-title: _Interlockedcompareexchange iç işlevleri
+title: _InterlockedCompareExchange İç İşlevleri
 ms.date: 12/17/2018
 f1_keywords:
 - _InterlockedCompareExchange_HLERelease
@@ -48,18 +48,18 @@ helpviewer_keywords:
 - InterlockedCompareExchange64_rel intrinsic
 - _InterlockedCompareExchange64_rel intrinsic
 ms.assetid: c3ad79c0-a523-4930-a3a4-69a65d7d5c81
-ms.openlocfilehash: 6c0fabe7cbada87253960faca8e207bb10dd07bd
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 6ac3ea1c97fe78cf2a145cd2ce62f7b3f198ab3c
+ms.sourcegitcommit: 6cf0c67acce633b07ff31b56cebd5de3218fd733
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62263743"
+ms.lasthandoff: 06/24/2019
+ms.locfileid: "67344445"
 ---
-# <a name="interlockedcompareexchange-intrinsic-functions"></a>_Interlockedcompareexchange iç işlevleri
+# <a name="interlockedcompareexchange-intrinsic-functions"></a>_InterlockedCompareExchange İç İşlevleri
 
 **Microsoft'a özgü**
 
-Bir birbirine kenetlenmiş karşılaştırma ve değişim gerçekleştirir.
+Bir birbirine kenetlenmiş exchange ve karşılaştırma.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -202,7 +202,7 @@ Dönüş değeri ilk değeri `Destination` işaretçi.
 
 ## <a name="remarks"></a>Açıklamalar
 
-`_InterlockedCompareExchange` atomik bir karşılaştırma gerçekleştirir `Destination` değerini `Comparand` değeri. Varsa `Destination` değeri eşittir `Comparand` değeri `Exchange` değeri tarafından belirtilen adresi depolanan `Destination`. Aksi takdirde, hiçbir işlem yapılmadı.
+`_InterlockedCompareExchange` atomik bir karşılaştırma yapar `Destination` değerini `Comparand` değeri. Varsa `Destination` değeri eşittir `Comparand` değeri `Exchange` değeri tarafından belirtilen adresi depolanan `Destination`. Aksi takdirde, hiçbir işlem yapmaz.
 
 `_InterlockedCompareExchange` Win32 Windows SDK'sı için derleyici iç desteği sağlayan [InterlockedCompareExchange](/windows/desktop/api/winnt/nf-winnt-interlockedcompareexchange) işlevi.
 
@@ -210,7 +210,7 @@ Bazı farklılıklar vardır `_InterlockedCompareExchange` , bunlar içeren veri
 
 Sırada `_InterlockedCompareExchange` işlevi uzun tamsayı değerleri üzerinde çalışır `_InterlockedCompareExchange8` 8 bit tam sayı değerleri üzerinde çalışan `_InterlockedCompareExchange16` kısa tamsayı değerler üzerinde çalışır ve `_InterlockedCompareExchange64` 64-bit tamsayı değerler üzerinde çalışır.
 
-ARM platformlarında, yapı içleri ile kullanmak `_acq` ve `_rel` sonekleri edinme ve sürüm semantiği gibi kritik bir bölüm başında ve sonunda. ARM iç bilgileri ile bir `_nf` ("hiçbir sınır") soneki bellek önünde bir engel hareket değil.
+ARM platformlarında, yapı içleri ile kullanmak `_acq` ve `_rel` sonekleri edinme ve sürüm semantiği gibi kritik bir bölüm başında ve sonunda. ARM iç bilgileri ile bir `_nf` ("hiçbir sınır") soneki, bellek önünde bir engel işlem yok.
 
 Yapı içleri ile bir `_np` ("hiçbir hazırlık") soneki, derleyici tarafından eklenen bir olası önceden getirme işleminin engelle.
 
@@ -220,7 +220,7 @@ Bu yordamlar, yalnızca iç öğe olarak kullanılabilir.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnekte, `_InterlockedCompareExchange` basit düzey iş parçacığı eşitleme için kullanılır. Yaklaşım, birden çok iş parçacıklı programlama için temel olarak kendi sınırlamaları vardır; birbirine kenetlenmiş yapı içlerini tipik kullanımını göstermek için sunulur. En iyi sonuçlar için Windows API kullanın. Çok iş parçacıklı programlama hakkında daha fazla bilgi için bkz: [bir çoklu iş parçacığı kullanan Win32 programı yazma](../parallel/writing-a-multithreaded-win32-program.md).
+Aşağıdaki örnekte, `_InterlockedCompareExchange` basit düzey iş parçacığı eşitleme için kullanılır. Yaklaşım, birden çok iş parçacıklı programlama için temel olarak kendi sınırlamaları vardır; birbirine kenetlenmiş yapı içlerini tipik kullanımını göstermek için sunulur. En iyi sonuçlar için Windows API kullanın. Çok iş parçacıklı programlama hakkında daha fazla bilgi için bkz. [bir çoklu iş parçacığı kullanan Win32 programı yazma](../parallel/writing-a-multithreaded-win32-program.md).
 
 ```
 // intrinExample.cpp
@@ -248,7 +248,7 @@ using namespace std;
 //#define SKIP_LOCKING
 
 // A common way of locking using _InterlockedCompareExchange.
-// Please refer to other sources for a discussion of the many issues
+// Refer to other sources for a discussion of the many issues
 // involved. For example, this particular locking scheme performs well
 // when lock contention is low, as the while loop overhead is small and
 // locks are acquired very quickly, but degrades as many callers want

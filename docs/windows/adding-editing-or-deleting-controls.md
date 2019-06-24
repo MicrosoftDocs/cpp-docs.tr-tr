@@ -43,12 +43,12 @@ helpviewer_keywords:
 - RichEdit 1.0 control
 - rich edit controls [C++], RichEdit 1.0
 ms.assetid: 73cef03f-5c8c-456a-87d1-1458dff185cf
-ms.openlocfilehash: 2e3e671cd92313ad120d2cd6aae3f7e815e09e65
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 01116116ad6bb455d3b0fd8966e65b2fec4c5a35
+ms.sourcegitcommit: 6cf0c67acce633b07ff31b56cebd5de3218fd733
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62390990"
+ms.lasthandoff: 06/24/2019
+ms.locfileid: "67344371"
 ---
 # <a name="how-to-add-edit-or-delete-controls-c"></a>Nasıl yapılır: Ekleme, düzenleme veya silme denetimleri (C++)
 
@@ -69,9 +69,9 @@ Kullanarak **iletişim kutusu Düzenleyicisi**ekleyebilir, yeniden boyutlandır,
 
    - İletişim kutusunu denetimi yerleştirmek istediğiniz yeri seçin ve burada seçtiğiniz denetimi görünür.
 
-   - Sürükle ve bırak denetiminden **araç kutusu** pencere, iletişim kutusu ve konumuna, ardından denetimleri yerleri veya kendi boyutu ve şekli değiştirin.
+   - Sürükle ve bırak denetiminden **araç kutusu** pencere, iletişim kutusu konumuna. Denetimin etrafında taşıyın veya boyutunu veya şeklini değiştirin.
 
-   - Denetimde çift **araç kutusu** penceresinde görüntülenen iletişim kutusunda, ardından tercih ettiğiniz konumuna denetimi yeniden konumlandırma.
+   - Denetimde çift **araç kutusu** penceresinde, iletişim kutusunda görüntülenir. Denetim yeniden konumlandırmak tercih ettiğiniz konumu.
 
 ### <a name="to-add-multiple-controls"></a>Birden çok denetim eklemek için
 
@@ -87,7 +87,7 @@ Kullanarak **iletişim kutusu Düzenleyicisi**ekleyebilir, yeniden boyutlandır,
 
 1. Yeni Denetim, iletişim kutusunda sol üst köşesindeki istediğiniz işaretçileri görünen imleci yerleştirin.
 
-1. Seçin ve iletişim kutusunda, denetimin sol üst köşesinin bağlantı için fare düğmesini basılı tutun ve imleci denetimin istediğiniz boyuta kadar sağa ve aşağı sürükleyin.
+1. Seçin ve iletişim kutusunda, denetimin sol üst köşesinin bağlantı için fare düğmesini basılı tutun. Denetimin istediğiniz boyuta kadar imleç sağa ve aşağı doğru sürükleyin.
 
    > [!NOTE]
    > Dört köşe, çizim denetimi sabitleyebilirsiniz. Bu yordam üst sol löşede örnek olarak kullanılır.
@@ -99,7 +99,7 @@ Kullanarak **iletişim kutusu Düzenleyicisi**ekleyebilir, yeniden boyutlandır,
 
 ### <a name="to-add-a-custom-control"></a>Özel denetim eklemek için
 
-Seçerek iletişim kutusuna özel denetimleri ekleyebilirsiniz **özel denetim** simgesini **araç kutusu** ve, iletişim kutusuna sürükleyerek. Eklemek için bir **Syslink** denetimi, bir özel denetim eklemek ve ardından denetimin değiştirme **sınıfı** özelliğini **Syslink**. Bu eylem yenileyin ve göstermek için özellikleri neden olacak **Syslink** denetim özellikleri. MFC sarmalayıcı sınıfı hakkında daha fazla bilgi için bkz. [CLinkCtrl](../mfc/reference/clinkctrl-class.md).
+İletişim kutusuna özel denetimleri ekleyebilirsiniz. Seçin **özel denetim** simgesini **araç kutusu** , iletişim kutusuna sürükleyin. Eklemek için bir `Syslink` denetimi, bir özel denetim eklemek ve ardından denetimin değiştirme **sınıfı** özelliğini `Syslink`. Bu eylem yenileyin ve göstermek için özellikleri neden olacak `Syslink` denetim özellikleri. MFC sarmalayıcı sınıfı hakkında daha fazla bilgi için bkz. [CLinkCtrl](../mfc/reference/clinkctrl-class.md).
 
 ## <a name="edit-controls"></a>Düzenleme denetimleri
 
@@ -139,7 +139,7 @@ Seçerek iletişim kutusuna özel denetimleri ekleyebilirsiniz **özel denetim**
 > [!TIP]
 > Herhangi bir iletişim kutusu denetiminden mevcut işleyicisine atlamak için denetimi çift tıklatın.
 
-Ayrıca **üye değişkenleri** sekmesinde [MFC Sınıf Sihirbazı](../mfc/reference/mfc-class-wizard.md) belirli bir sınıf için yeni üye değişkenlerini ekleyin ve önceden tanımlanmış üye değişkenlerine görüntüleyin.
+Ayrıca **üye değişkenleri** sekmesinde [MFC Sınıf Sihirbazı](../mfc/reference/mfc-class-wizard.md) belirli bir sınıf için yeni üye değişkenleri ekleyip zaten tanımlı üye değişkenlerine görüntüleyin.
 
 ## <a name="delete-controls"></a>Denetimleri Sil
 
@@ -149,7 +149,7 @@ Ayrıca **üye değişkenleri** sekmesinde [MFC Sınıf Sihirbazı](../mfc/refer
 
 ### <a name="troubleshooting"></a>Sorun giderme
 
-Bir iletişim kutusu için bir ortak denetimi veya zengin düzenleme denetimi ekledikten sonra iletişim kutusunu test ya da iletişim, örneğin görünmez görünmez:
+Bir iletişim kutusu için bir ortak denetimi veya zengin düzenleme denetimi ekledikten sonra iletişim kutusunu test ettiğinizde görünmez. Veya iletişim görünmez. Örneğin:
 
 1. Bir Windows uygulaması (konsol uygulaması değil) oluşturmak için uygulama ayarları değiştirme bir Win32 projesi oluşturun.
 
@@ -196,7 +196,7 @@ Visual Studio, iletişim kutusuna ActiveX denetimleri eklemenize olanak tanır. 
 |**Yolu**|ActiveX denetimi içinde bulunan dosyayı görüntüler.|
 
 > [!CAUTION]
-> ActiveX denetimleri, sisteminizdeki tüm dağıtmak için geçerli olmayabilir. Lütfen denetimleri yüklü yazılımlar için lisans sözleşmesi bakın veya yazılım şirketine başvurun.
+> ActiveX denetimleri, sisteminizdeki tüm dağıtmak için geçerli olmayabilir. Denetimleri yüklü yazılımlar için lisans sözleşmesi bakın veya yazılım şirketine başvurun.
 
 #### <a name="to-add-an-activex-control"></a>ActiveX denetimi eklemek için
 
@@ -215,7 +215,7 @@ Visual Studio, iletişim kutusuna ActiveX denetimleri eklemenize olanak tanır. 
 
 #### <a name="to-edit-properties-for-an-activex-control"></a>ActiveX denetimi özelliklerini düzenlemek için
 
-ActiveX denetimleri bağımsız satıcıları tarafından sağlanan kendi özellikleri ve özellikleri ile donatıldı gelebilir. Bu özellikler görüntülenir **özellikleri** ActiveX denetiminin yazarlar tarafından oluşturulan sayfaları görüntülenir herhangi bir özelliği de dahil olmak üzere penceresinde **özellikler sayfaları** ( görüntülemekiçiniletişimkutusu **Özellik sayfası** belirli bir ActiveX denetimi seçin **özellik sayfası** düğmesine [Özellikler penceresi](/visualstudio/ide/reference/properties-window)).
+ActiveX denetimleri bağımsız satıcıları tarafından sağlanan kendi özellikleri ve özellikleri ile donatıldı gelebilir. Bu özellikler görüntülenir **özellikleri** penceresi. ActiveX denetiminin yazarlar tarafından oluşturulan tüm özellik sayfaları görüntülenen **özellikler sayfaları** iletişim kutusu. (Görüntülenecek **özellik sayfası** belirli bir ActiveX denetimi seçin **özellik sayfası** düğmesine [Özellikler penceresi](/visualstudio/ide/reference/properties-window)).
 
 - Seçin **ActiveX** menüsüne gidin ve Denetim **görünümü** > **özellik sayfası** özelliklerini görüntülemek için. Özellik sayfasında gerekli değişiklikleri yapın.
 
