@@ -8,12 +8,12 @@ helpviewer_keywords:
 - breakpoints, __debugbreak intrinsic
 - __debugbreak intrinsic
 ms.assetid: 1d1e1c0c-891a-4613-ae4b-d790094ba830
-ms.openlocfilehash: 8e5d53998b6ca37d2f60e9b86aed8df07c256ded
-ms.sourcegitcommit: fc1de63a39f7fcbfe2234e3f372b5e1c6a286087
+ms.openlocfilehash: 97932dfe0e187a13b72ae5fe70d761224721c3ff
+ms.sourcegitcommit: 1acb6755e11379026a96f63facac4d33f4dc47ae
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65708185"
+ms.lasthandoff: 06/21/2019
+ms.locfileid: "67314253"
 ---
 # <a name="debugbreak"></a>__debugbreak
 
@@ -59,6 +59,8 @@ main() {
 ```
 
 x x86 bilgisayar.
+
+ARM64 üzerinde `__debugbreak` iç yönerge derlenmiş olan `brk #0xF000`.
 
 Bu yordam yalnızca bir iç öğe olarak kullanılabilir.
 
