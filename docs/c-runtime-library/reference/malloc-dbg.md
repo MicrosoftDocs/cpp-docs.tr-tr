@@ -23,12 +23,12 @@ helpviewer_keywords:
 - memory allocation
 - _malloc_dbg function
 ms.assetid: c97eca51-140b-4461-8bd2-28965b49ecdb
-ms.openlocfilehash: 64fb40028d9130278077f3d05dd1e25914dba212
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b126678a9aecf6ae4041764576e8d06d1557dcc1
+ms.sourcegitcommit: fc6bdffcf7d5521609da629621cc8459b200b004
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62156947"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "67351776"
 ---
 # <a name="mallocdbg"></a>_malloc_dbg
 
@@ -95,5 +95,4 @@ Nasıl kullanılacağını gösteren bir örnek **_malloc_dbg**, bkz: [crt_dbg1]
 
 [Hata Ayıklama Yordamları](../../c-runtime-library/debug-routines.md)<br/>
 [malloc](malloc.md)<br/>
-[_calloc_dbg](calloc-dbg.md)<br/>
 [_calloc_dbg](calloc-dbg.md)<br/>

@@ -29,12 +29,12 @@ helpviewer_keywords:
 - files [C++], length
 - _filelengthi64 function
 ms.assetid: 3ab83d5a-543c-4079-b9d9-0abfc7da0275
-ms.openlocfilehash: 5434a6ea2155b75f1c034202477a67db36da8b3d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 00d755138b9293145865b832994a25062edd883e
+ms.sourcegitcommit: fc6bdffcf7d5521609da629621cc8459b200b004
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62333800"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "67351767"
 ---
 # <a name="filelength-filelengthi64"></a>_filelength, _filelengthi64
 
@@ -79,6 +79,4 @@ Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/comp
 [_chsize](chsize.md)<br/>
 [_fileno](fileno.md)<br/>
 [_fstat, _fstat32, _fstat64, _fstati64, _fstat32i64, _fstat64i32](fstat-fstat32-fstat64-fstati64-fstat32i64-fstat64i32.md)<br/>
-[_fstat, _fstat32, _fstat64, _fstati64, _fstat32i64, _fstat64i32](fstat-fstat32-fstat64-fstati64-fstat32i64-fstat64i32.md)<br/>
-[_stat, _wstat işlevleri](stat-functions.md)<br/>
 [_stat, _wstat işlevleri](stat-functions.md)<br/>
