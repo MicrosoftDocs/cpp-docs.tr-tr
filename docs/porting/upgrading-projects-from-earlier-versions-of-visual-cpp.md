@@ -6,12 +6,12 @@ helpviewer_keywords:
 - 32-bit code porting
 - upgrading Visual C++ applications, 32-bit code
 ms.assetid: 18cdacaa-4742-43db-9e4c-2d9e73d8cc84
-ms.openlocfilehash: fca4a87310f7ba0c21a6a7512dd93dce0f915f6b
-ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.openlocfilehash: 25cf8d451c0efb5234fba5e56b6bfe7ceb7c2c08
+ms.sourcegitcommit: 8bb2bea1384b290b7570b01608a86c7488ae7a02
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65220390"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "67400821"
 ---
 # <a name="upgrading-projects-from-earlier-versions-of-visual-c"></a>Önceki Visual C++ Sürümü Projelerini Yükseltme
 
@@ -42,7 +42,7 @@ Hedeflenen Windows sürümlerine yönelik güncelleştirme hakkında daha fazla 
 [Kayan Nokta Geçiş Sorunları](floating-point-migration-issues.md)<br/>
 [Visual Studio’da Eski Projeleri Oluşturmak için Yerel Çoklu Sürüm Paketi Kullanma](use-native-multi-targeting.md)<br/>
 [Visual Studio 2019 önizlemede kullanım dışı bırakılan Visual C++ özellikleri](features-deprecated-in-visual-studio.md)<br/>
-[Derleme Sistemi Değişiklikleri](build-system-changes.md)<br/>
+[Derleme Sistemi Değişiklikleri](build-system-changes.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

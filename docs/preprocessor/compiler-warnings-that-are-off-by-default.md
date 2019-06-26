@@ -5,12 +5,12 @@ helpviewer_keywords:
 - warnings, compiler
 - cl.exe compiler, setting options
 ms.assetid: 69809cfb-a38a-4035-b154-283a61938df8
-ms.openlocfilehash: ee2b6097a62a8f1030dc631354f96ec7a33d2f11
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 0f306ef11b17ac94281dc9a5fdba55a34d236eb1
+ms.sourcegitcommit: 8bb2bea1384b290b7570b01608a86c7488ae7a02
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62236576"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "67400919"
 ---
 # <a name="compiler-warnings-that-are-off-by-default"></a>Varsayılan olarak kapalı olan derleyici uyarıları
 
@@ -159,7 +159,7 @@ Aşağıdaki uyarılar Visual Studio 2015 ve sonraki sürümlerinde varsayılan 
 ::: moniker range=">= vs-2019"
 <sup>16,0</sup> bu uyarı, Visual Studio 2019 RTM'DE'den itibaren kullanılabilmektedir.<br/>
 ::: moniker-end
-<sup>Kalıcı</sup> bu uyarıyı devre dışı olduğu sürece [/ permissive-](../build/reference/permissive-standards-conformance.md) derleyici seçeneği ayarlanır.<br/>
+<sup>Kalıcı</sup> bu uyarıyı devre dışı olduğu sürece [/ permissive-](../build/reference/permissive-standards-conformance.md) derleyici seçeneği ayarlanır.
 
 ## <a name="warnings-off-by-default-in-earlier-versions"></a>Önceki sürümlerde varsayılan olarak kapalı uyarıları
 

@@ -6,12 +6,12 @@ helpviewer_keywords:
 - project debugging [C++]
 - debugging projects
 ms.assetid: a5cade77-ba51-4b03-a7a0-6897e3cd6a59
-ms.openlocfilehash: 55124bc2f240499cc163fca6d0004a79047060a4
-ms.sourcegitcommit: 283cb64fd7958a6b7fbf0cd8534de99ac8d408eb
+ms.openlocfilehash: ce792345b045a1e647de6363ca094fb3f3826b73
+ms.sourcegitcommit: 8bb2bea1384b290b7570b01608a86c7488ae7a02
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "64857247"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "67400970"
 ---
 # <a name="walkthrough-debugging-a-project-c"></a>İzlenecek yol: Bir projenin (C++)
 
@@ -54,7 +54,7 @@ Bu izlenecek yolda, proje sınandığında bulunan sorunu gidermek için program
 ## <a name="next-steps"></a>Sonraki Adımlar
 
 **Önceki:** [İzlenecek yol: Projeyi Test Etme (C++)](../ide/walkthrough-testing-a-project-cpp.md)<br/>
-**Sonraki:** [İzlenecek yol: Programınızı Dağıtma (C++)](../ide/walkthrough-deploying-your-program-cpp.md)<br/>
+**Sonraki:** [İzlenecek yol: Programınızı Dağıtma (C++)](../ide/walkthrough-deploying-your-program-cpp.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -26,12 +26,12 @@ helpviewer_keywords:
 - _exception_info keyword [C++]
 - _abnormal_termination keyword [C++]
 ms.assetid: 30d60071-ea49-4bfb-a8e6-7a420de66381
-ms.openlocfilehash: 400c831eec1c570f26dfc010b4e4c61e7d21b1c4
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b4dccb58bf63f51e88006b793b8a94bfbe021c73
+ms.sourcegitcommit: 8bb2bea1384b290b7570b01608a86c7488ae7a02
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62266848"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "67400543"
 ---
 # <a name="try-except-statement"></a>try-except Deyimi
 
@@ -48,7 +48,7 @@ ms.locfileid: "62266848"
 > **\_\_dışında** ( *ifade* )<br/>
 > {<br/>
 > &nbsp;&nbsp;&nbsp;&nbsp;özel durum işleyici kodu<br/>
-> }<br/>
+> }
 
 ## <a name="remarks"></a>Açıklamalar
 

@@ -13,12 +13,12 @@ helpviewer_keywords:
 - dialog box controls [C++], custom (user) controls
 - Dialog Editor [C++], custom controls
 ms.assetid: e216c4f9-2fd4-429d-889a-8ebce7bad177
-ms.openlocfilehash: 563cf73299c00413889ada2520b1bf4fcd86f2be
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 568754bc514ae017293805fab1b25849d5ffe5f8
+ms.sourcegitcommit: 8bb2bea1384b290b7570b01608a86c7488ae7a02
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62223590"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "67400879"
 ---
 # <a name="dialog-box-controls-c"></a>İletişim kutusu denetimleri (C++)
 
@@ -101,7 +101,7 @@ Win32
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[İletişim Kutusu Düzenleyicisi](../windows/dialog-editor.md)<br/>
+[İletişim Kutusu Düzenleyicisi](../windows/dialog-editor.md)
 
 <!--
 [Adding Event Handlers for Dialog Box Controls](../windows/adding-event-handlers-for-dialog-box-controls.md)<br/>

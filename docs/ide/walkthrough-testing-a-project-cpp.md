@@ -6,12 +6,12 @@ helpviewer_keywords:
 - testing projects
 - projects [C++], testing
 ms.assetid: 88cdd377-c5c8-4201-889d-32f5653ebead
-ms.openlocfilehash: 5ced3c4267f2c33869e18373c11ebf5e237d9485
-ms.sourcegitcommit: 283cb64fd7958a6b7fbf0cd8534de99ac8d408eb
+ms.openlocfilehash: c170deef8bf76bdd223bde01794f8996dc77922d
+ms.sourcegitcommit: 8bb2bea1384b290b7570b01608a86c7488ae7a02
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "64857663"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "67400931"
 ---
 # <a name="walkthrough-testing-a-project-c"></a>İzlenecek yol: (C++) projeyi test etme
 
@@ -58,7 +58,7 @@ Bu izlenecek yolda, program çalışırken bir değişkenin değerini izleyin ve
 ## <a name="next-steps"></a>Sonraki Adımlar
 
 **Önceki:** [İzlenecek yol: Proje Derleme (C++)](../ide/walkthrough-building-a-project-cpp.md)<br/>
-**Sonraki:** [İzlenecek yol: Proje Hatalarını Ayıklama (C++)](../ide/walkthrough-debugging-a-project-cpp.md)<br/>
+**Sonraki:** [İzlenecek yol: Proje Hatalarını Ayıklama (C++)](../ide/walkthrough-debugging-a-project-cpp.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

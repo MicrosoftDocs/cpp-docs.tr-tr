@@ -1,16 +1,16 @@
 ---
 title: Kitaplıklar
 ms.date: 11/18/2018
-ms.openlocfilehash: 8837bd005cd5c75307874ec293f3ef956431d32e
-ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
+ms.openlocfilehash: 7eba3905fc0010f37b15b4af40f6135c4fd97f47
+ms.sourcegitcommit: 8bb2bea1384b290b7570b01608a86c7488ae7a02
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "64346058"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "67400698"
 ---
 # <a name="libraries"></a>Kitaplıklar
 
-Bir veya daha fazla C++ iş yükleri yüklediğinizde visual Studio aşağıdaki kitaplıkları içerir. 3. taraf kitaplıkları yükleme hakkında daha fazla bilgi için bkz: [vcpkg: Windows, Linux ve MacOS için C++ Paket Yöneticisi](../build/vcpkg.md).
+Bir veya daha fazla C++ iş yükleri yüklediğinizde visual Studio aşağıdaki kitaplıkları içerir. 3\. taraf kitaplıkları yükleme hakkında daha fazla bilgi için bkz: [vcpkg: Windows, Linux ve MacOS için C++ Paket Yöneticisi](../build/vcpkg.md).
 
 ## <a name="standard-libraries"></a>Standart kitaplıkları
 
@@ -23,5 +23,5 @@ Bir veya daha fazla C++ iş yükleri yüklediğinizde visual Studio aşağıdaki
 
 [MFC/ATL](../mfc/mfc-and-atl.md)<br/>
 [Paralel kitaplıkları](../parallel/parallel-programming-in-visual-cpp.md)<br/>
-[Veri erişim kitaplıkları](../data/data-access-in-cpp.md)<br/>
+[Veri erişim kitaplıkları](../data/data-access-in-cpp.md)
 

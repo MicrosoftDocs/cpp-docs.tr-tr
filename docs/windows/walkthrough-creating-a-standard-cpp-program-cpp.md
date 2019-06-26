@@ -6,12 +6,12 @@ helpviewer_keywords:
 - command-line applications [C++], standard
 - standard applications [C++]
 ms.assetid: 48217e35-d892-46b7-93e3-f6f0b7e2da35
-ms.openlocfilehash: ed9c19dad029f8fc9495d38ab6e5c0ba8ad6d529
-ms.sourcegitcommit: 18d3b1e9cdb4fc3a76f7a650c31994bdbd2bde64
+ms.openlocfilehash: b3172dd6ed4c438bacedd6760da5ab65228396f3
+ms.sourcegitcommit: 8bb2bea1384b290b7570b01608a86c7488ae7a02
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/29/2019
-ms.locfileid: "64877412"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "67400917"
 ---
 # <a name="walkthrough-creating-a-standard-c-program-c"></a>İzlenecek yol: Standart bir C++ programını (C++) oluşturma
 
@@ -107,9 +107,9 @@ Aşağıdaki adımlar, kullandığınız Visual Studio'nun hangi sürümünün b
 ## <a name="next-steps"></a>Sonraki Adımlar
 
 **Önceki:** [Visual C++'ta Konsol Uygulamaları](../windows/console-applications-in-visual-cpp.md)<br/>
-**Sonraki:** [İzlenecek yol: Komut Satırında Yerel C++ Programı Derleme](../build/walkthrough-compiling-a-native-cpp-program-on-the-command-line.md)<br/>
+**Sonraki:** [İzlenecek yol: Komut Satırında Yerel C++ Programı Derleme](../build/walkthrough-compiling-a-native-cpp-program-on-the-command-line.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [C++ Dil Başvurusu](../cpp/cpp-language-reference.md)<br/>
-[C++ Standart Kitaplığı](../standard-library/cpp-standard-library-reference.md)<br/>
+[C++ Standart Kitaplığı](../standard-library/cpp-standard-library-reference.md)

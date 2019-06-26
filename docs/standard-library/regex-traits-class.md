@@ -38,12 +38,12 @@ helpviewer_keywords:
 - std::regex_traits [C++], imbue
 - std::regex_traits [C++], getloc
 ms.assetid: bc5a5eed-32fc-4eb7-913d-71c42e729e81
-ms.openlocfilehash: 80739d3d8f4bfd38dc3d252a5f3d6308653a7bb9
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 47e0a1e51809efad2924a2051d1627fe2e9ff95f
+ms.sourcegitcommit: 8bb2bea1384b290b7570b01608a86c7488ae7a02
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62369130"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "67400672"
 ---
 # <a name="regextraits-class"></a>regex_traits Sınıfı
 
@@ -259,7 +259,6 @@ static size_type length(const char_type *str);
 ### <a name="parameters"></a>Parametreler
 
 *str*<br/>
-
 Null ile sonlandırılmış dizisi.
 
 ### <a name="remarks"></a>Açıklamalar

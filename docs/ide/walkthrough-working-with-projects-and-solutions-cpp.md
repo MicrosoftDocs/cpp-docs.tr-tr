@@ -7,12 +7,12 @@ helpviewer_keywords:
 - projects [C++]
 - solutions [C++], about solutions
 ms.assetid: 93a3f290-e294-46e3-876e-e3084d9ae833
-ms.openlocfilehash: 6dfee695092a69252069dbfc73b6260bd65245e2
-ms.sourcegitcommit: fc1de63a39f7fcbfe2234e3f372b5e1c6a286087
+ms.openlocfilehash: ae2830d58bb992a4ff065aa0e53085a490eb90d7
+ms.sourcegitcommit: 8bb2bea1384b290b7570b01608a86c7488ae7a02
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65708130"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "67400947"
 ---
 # <a name="walkthrough-working-with-projects-and-solutions-c"></a>İzlenecek yol: Projeler ve çözümler (C++) ile çalışma
 
@@ -56,7 +56,7 @@ Proje oluşturmak için önce bir proje türü şablonu seçin. Her proje türü
 
 1. Menü çubuğunda, **dosya** > **yeni** > **proje**.
 
-1. Sol bölmesinde **yeni proje** iletişim kutusunda **yüklü** seçip **Visual C++**, zaten açık değilse.
+1. Sol bölmesinde **yeni proje** iletişim kutusunda **yüklü** seçip **Visual C++** , zaten açık değilse.
 
 1. Orta bölmedeki yüklü şablonlar listesinde seçin **Windows konsol uygulaması**.
 
@@ -78,7 +78,7 @@ Proje oluşturmak için önce bir proje türü şablonu seçin. Her proje türü
 
 1. Menü çubuğunda, **dosya** > **yeni** > **proje**.
 
-1. Sol bölmesinde **yeni proje** iletişim kutusunda **yüklü** seçip **Visual C++**, zaten açık değilse.
+1. Sol bölmesinde **yeni proje** iletişim kutusunda **yüklü** seçip **Visual C++** , zaten açık değilse.
 
 1. Orta bölmedeki yüklü şablonlar listesinde seçin **Win32 konsol uygulaması**.
 
@@ -261,7 +261,7 @@ Tebrikler, bir uygulama projesi ve çözümü başarıyla derlediyseniz. İzlene
 ## <a name="next-steps"></a>Sonraki Adımlar
 
 **Önceki:** [C++ Masaüstü Geliştirmesi için Visual Studio IDE Kullanma](../ide/using-the-visual-studio-ide-for-cpp-desktop-development.md)<br/>
-**Sonraki:** [İzlenecek yol: Proje Derleme (C++)](../ide/walkthrough-building-a-project-cpp.md)<br/>
+**Sonraki:** [İzlenecek yol: Proje Derleme (C++)](../ide/walkthrough-building-a-project-cpp.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

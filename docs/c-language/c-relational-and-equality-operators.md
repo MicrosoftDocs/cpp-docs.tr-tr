@@ -8,12 +8,12 @@ helpviewer_keywords:
 - equality operator, syntax
 - operators [C], relational
 ms.assetid: c89a3815-a65e-4e0d-8333-0e8dc7fdb30b
-ms.openlocfilehash: 78dfd9f208b4c5cf484f0ff43c5e07ce1aadec35
-ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
+ms.openlocfilehash: 25e9bb65492e0c4b100ecd7a800491d238b1dd38
+ms.sourcegitcommit: 8bb2bea1384b290b7570b01608a86c7488ae7a02
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "64343839"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "67400524"
 ---
 # <a name="c-relational-and-equality-operators"></a>C İlişkisel ve Eşitlik İşleçleri
 
@@ -26,7 +26,7 @@ ms.locfileid: "64343839"
 &nbsp;&nbsp;&nbsp;&nbsp;*İlişkisel ifade* **&lt;** *shift-expression*<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*İlişkisel ifade* **>** *shift-expression*<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*İlişkisel ifade* **&lt; =** *shift-expression*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*İlişkisel ifade* **>=** *shift-expression*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*İlişkisel ifade* **>=** *shift-expression*
 
 *Eşitlik ifade*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*İlişkisel ifade*<br/>
@@ -48,7 +48,7 @@ Yukarıdaki listede ilk dört işleçleri eşitlik işleçleri daha yüksek bir 
 
 İşlenen, integral, kayan veya işaretçi türü olabilir. İşlenen türleri farklı olabilir. İlişkisel işleçler olağan aritmetik dönüştürmeler integral ve kayan türü işlenen üzerinde gerçekleştirin. Ayrıca, aşağıdaki birleşimler işlenen türleri ile ilişkisel ve eşitlik işleçleri kullanabilirsiniz:
 
-- Her iki işleneni de her ilişkisel veya eşitlik işleci aynı türü işaretçileri olabilir. Eşitlik (`==`) ve eşitsizlik (`!=`) işleçleri, Karşılaştırmanın sonucu gösterir iki işaretçi aynı bellek konumunda adresi olup olmadığını. Bir ilişkisel işleçleri (**\<**, **>**, **\<**=, ve **>**=), Karşılaştırmanın sonucu işaret edilen nesne iki bellek adresleri göreli konumunu belirtir. İlişkisel işleçler yalnızca uzaklıkları karşılaştırın.
+- Her iki işleneni de her ilişkisel veya eşitlik işleci aynı türü işaretçileri olabilir. Eşitlik (`==`) ve eşitsizlik (`!=`) işleçleri, Karşılaştırmanın sonucu gösterir iki işaretçi aynı bellek konumunda adresi olup olmadığını. Bir ilişkisel işleçleri ( **\<** , **>** , **\<** =, ve **>** =), Karşılaştırmanın sonucu işaret edilen nesne iki bellek adresleri göreli konumunu belirtir. İlişkisel işleçler yalnızca uzaklıkları karşılaştırın.
 
    İşaretçi karşılaştırması, yalnızca aynı nesneye bölümleri için tanımlanır. Bir dizi üyeleri için işaretçiler başvuruda bulunursanız, karşılık gelen alt simgeleri, karşılaştırma karşılaştırma eşdeğerdir. İlk dizi öğesinin adresidir "değerinden" son öğenin adresi. Söz konusu olduğunda, daha sonra bildirilen Yapı üyeleri için işaretçiler "büyüktür" yapısı içinde bildirilen üye işaretçileri yapılardır. Aynı union üyelerinin işaretçileri eşit olur.
 

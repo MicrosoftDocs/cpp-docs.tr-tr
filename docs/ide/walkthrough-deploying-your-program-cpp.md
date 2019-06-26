@@ -9,12 +9,12 @@ helpviewer_keywords:
 - projects [C++], deploying programs
 - application deployment [C++], walkthroughs
 ms.assetid: 79e6cc4e-dced-419d-aaf7-d62d1367603f
-ms.openlocfilehash: 4232edd10b71c70097002511ef4ee663e67d6598
-ms.sourcegitcommit: fc1de63a39f7fcbfe2234e3f372b5e1c6a286087
+ms.openlocfilehash: 5cc4ead7aaef2ffa56870a374b0b73d16eb31521
+ms.sourcegitcommit: 8bb2bea1384b290b7570b01608a86c7488ae7a02
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65708132"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "67400963"
 ---
 # <a name="walkthrough-deploying-your-program-c"></a>İzlenecek yol: Programınızı dağıtma (C++)
 
@@ -50,7 +50,7 @@ Bu bölümdeki adımlarda, yüklediğiniz Visual Studio'nun hangi sürümünün 
 
 1. İletişim kutusunda **birincil çıkışının** tıklatıp **Tamam**. Adlı yeni bir öğe **Game (etkin) birincil çıkışı** görünür.
 
-1. Öğeyi seçin **birincil (etkin) oyun çıktısını**seçin ve sağ tıklatıp **oluşturma kısayoldan birincil çıkış için oyun (etkin)**. Adlı yeni bir öğe **Game (etkin) için birincil çıkışının kısayoldan** görünür.
+1. Öğeyi seçin **birincil (etkin) oyun çıktısını**seçin ve sağ tıklatıp **oluşturma kısayoldan birincil çıkış için oyun (etkin)** . Adlı yeni bir öğe **Game (etkin) için birincil çıkışının kısayoldan** görünür.
 
 1. Kısayol öğeyi yeniden adlandır *oyun*ardından sürükleyip öğesine **kullanıcının Programlar menüsü** pencerenin sol tarafındaki düğümü.
 
@@ -92,7 +92,7 @@ Bu bölümdeki adımlarda, yüklediğiniz Visual Studio'nun hangi sürümünün 
 
 1. İletişim kutusunda **birincil çıkışının** tıklatıp **Tamam**. Adlı yeni bir öğe **Game (etkin) birincil çıkışı** görünür.
 
-1. Öğeyi seçin **birincil (etkin) oyun çıktısını**seçin ve sağ tıklatıp **oluşturma kısayoldan birincil çıkış için oyun (etkin)**. Adlı yeni bir öğe **Game (etkin) için birincil çıkışının kısayoldan** görünür.
+1. Öğeyi seçin **birincil (etkin) oyun çıktısını**seçin ve sağ tıklatıp **oluşturma kısayoldan birincil çıkış için oyun (etkin)** . Adlı yeni bir öğe **Game (etkin) için birincil çıkışının kısayoldan** görünür.
 
 1. Kısayol öğeyi yeniden adlandır *oyun*ardından sürükleyip öğesine **kullanıcının Programlar menüsü** pencerenin sol tarafındaki düğümü.
 
@@ -110,7 +110,7 @@ Bu bölümdeki adımlarda, yüklediğiniz Visual Studio'nun hangi sürümünün 
 
 ## <a name="next-steps"></a>Sonraki Adımlar
 
-**Önceki:** [İzlenecek yol: Proje Hatalarını Ayıklama (C++)](walkthrough-debugging-a-project-cpp.md)<br/>
+**Önceki:** [İzlenecek yol: Proje Hatalarını Ayıklama (C++)](walkthrough-debugging-a-project-cpp.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

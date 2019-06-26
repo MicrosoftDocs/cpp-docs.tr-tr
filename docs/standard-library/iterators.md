@@ -5,18 +5,18 @@ helpviewer_keywords:
 - iterator conventions
 - C++ Standard Library, iterator conventions
 ms.assetid: 2f746be7-b37d-4bfc-bf05-be4336ca982f
-ms.openlocfilehash: ae4193b8e6edf94ab0f8d839ac36fc1addfd8d04
-ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.openlocfilehash: d72cd26f2642816efae2ec826df1bd9fa02e7531
+ms.sourcegitcommit: 8bb2bea1384b290b7570b01608a86c7488ae7a02
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65220321"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "67400418"
 ---
 # <a name="iterators"></a>Yineleyiciler
 
 Bir yineleyicinin bir C++ Standart Kitaplığı kapsayıcı öğeler üzerinden yineleme yapma ve tek tek öğelere erişim sağlayan bir nesnedir. Öğeleri algoritmaları öğeleri standart bir biçimde kapsayıcı türü ile merak gerek kalmadan erişebilmesi için tüm yineleyiciler sağlayan C++ Standart Kitaplığı kapsayıcıları depolanır.
 
-Yineleyiciler açıkça üyesi ve genel işlevler gibi kullanarak kullanabileceğiniz `begin()` ve `end()` ve işleçler gibi **++** ve **--** ilerlemek için veya Geriye dönük. Yineleyiciler örtük olarak bir aralık kullanabilirsiniz-(bazı yineleyici türleri için) veya döngü için alt simge işleci  **\[]**.
+Yineleyiciler açıkça üyesi ve genel işlevler gibi kullanarak kullanabileceğiniz `begin()` ve `end()` ve işleçler gibi **++** ve **--** ilerlemek için veya Geriye dönük. Yineleyiciler örtük olarak bir aralık kullanabilirsiniz-(bazı yineleyici türleri için) veya döngü için alt simge işleci  **\[]** .
 
 C++ Standart Kitaplığı dizisi veya aralık başına ilk öğesidir. Dizisi veya aralığın sonu, her zaman son öğeden bir öncekine olarak tanımlanır. Genel işlevler `begin` ve `end` belirtilen kapsayıcıya yineleyiciler döndürür. Bir kapsayıcıdaki tüm öğeleri tipik açık yineleyici döngüsü şöyle görünür:
 
@@ -49,7 +49,7 @@ Yineleyicilerin beş kategorisi vardır. Güç artan sırada kategorileri şunla
 
 - **Çift yönlü**. A *çift yönlü yineleyici* `X` ileriye doğru yineleyici yerini alabilir. Ancak ayrıca çift yönlü bir yineleyici gibi azaltma kullanabileceği `--X`, `X--`, veya `(V = *X--)`. Öğe üyelere erişmek ve çift yönlü yineleyiciler ileriye doğru Yineleyicilerin aynı şekilde karşılaştırın.
 
-- **Rastgele erişim**. A *rastgele erişim yineleyicisini* `X` çift yönlü bir yineleyici yerini alabilir. Alt simge işleci kullanabileceğiniz bir rastgele erişim yineleyici ile  **\[]** öğelere erişim. Kullanabileceğiniz **+**, **-**, **+=** ve **-=** taşımak işleçleri ileriye veya geriye doğru öğelerin ve yineleyici arasındaki uzaklığı hesaplamak için belirtilen bir sayı. Çift yönlü yineleyiciler kullanarak karşılaştırabilirsiniz **==**, **! =**, **\<**, **>**, **\< =**, ve **>=**.
+- **Rastgele erişim**. A *rastgele erişim yineleyicisini* `X` çift yönlü bir yineleyici yerini alabilir. Alt simge işleci kullanabileceğiniz bir rastgele erişim yineleyici ile  **\[]** öğelere erişim. Kullanabileceğiniz **+** , **-** , **+=** ve **-=** taşımak işleçleri ileriye veya geriye doğru öğelerin ve yineleyici arasındaki uzaklığı hesaplamak için belirtilen bir sayı. Çift yönlü yineleyiciler kullanarak karşılaştırabilirsiniz **==** , **! =** , **\<** , **>** , **\< =** , ve **>=** .
 
 Tüm yineleyiciler atanan veya kopyalanır. Bunlar basit nesneler olarak kabul edilir ve genellikle geçirilen ve başvuruya göre değil değere göre döndürdü. Ayrıca, daha önce açıklanan işlemlerin hiçbiri üzerinde geçerli bir yineleyici gerçekleştirildiğinde bir özel durum oluşturabilecek unutmayın.
 
@@ -58,7 +58,7 @@ Yineleyici kategori hiyerarşisi üç dizileri göstererek özetlenebilir. Bir d
 > Çıkış yineleyici<br/>
 > ileriye doğru yineleyici -><br/>
 > çift yönlü yineleyici -><br/>
-> rastgele erişim yineleyicisini -><br/>
+> rastgele erişim yineleyicisini ->
 
 Sağ ok "tarafından değiştirilebilir." anlamına gelir. Çıkış yineleyici güzelce ileriye doğru yineleyici ile Örneğin, iş, çağıran herhangi bir algoritma ancak *değil* güvenmelidir.
 
@@ -67,7 +67,7 @@ Bir diziye salt okunur erişim için herhangi birini kullanabilirsiniz:
 > Giriş yineleyici<br/>
 > ileriye doğru yineleyici -><br/>
 > çift yönlü yineleyici -><br/>
-> rastgele erişim yineleyicisini -><br/>
+> rastgele erişim yineleyicisini ->
 
 Bir giriş yineleyici zayıf tüm kategoriler, bu durumda olur.
 
@@ -75,7 +75,7 @@ Son olarak, bir dizi için okuma/yazma erişimi için herhangi birini kullanabil
 
 > ileriye doğru yineleyici<br/>
 > çift yönlü yineleyici -><br/>
-> rastgele erişim yineleyicisini -><br/>
+> rastgele erişim yineleyicisini ->
 
 Uygun okuma/yazma erişimi, atayan dizisine destekliyorsa, yineleyici herhangi bir kategori sunabilmeniz için bir nesne işaretçisi her zaman bir rastgele erişim yineleyici hizmet verebilir.
 

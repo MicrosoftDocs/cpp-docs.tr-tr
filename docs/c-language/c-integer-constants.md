@@ -4,12 +4,12 @@ ms.date: 02/27/2018
 helpviewer_keywords:
 - integer constants
 ms.assetid: fcf6b83c-2038-49ec-91ca-3d5ca1f83037
-ms.openlocfilehash: 4a3d6b945f3611b8e51029c0a5ec5dc77b2cbaa0
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 48561599896bb8a6f9ee159630ff15df6c0454be
+ms.sourcegitcommit: 8bb2bea1384b290b7570b01608a86c7488ae7a02
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62326895"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "67400519"
 ---
 # <a name="c-integer-constants"></a>C Tamsayı Sabitleri
 
@@ -20,33 +20,33 @@ Bir *tamsayı sabiti* (10 tabanında) ondalık, sekizlik (Temel 8) ya da temsil 
 *tamsayı sabiti*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*ondalık sabit* *tamsayı soneki*<sub>iyileştirilmiş</sub><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*sekizlik sabit* *tamsayı soneki*<sub>iyileştirilmiş</sub><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*onaltılık sabit* *tamsayı soneki*<sub>iyileştirilmiş</sub><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*onaltılık sabit* *tamsayı soneki*<sub>iyileştirilmiş</sub>
 
 *ondalık sabit*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*sıfır olmayan basamak*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*ondalık sabit* *basamak*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*ondalık sabit* *basamak*
 
 *sekizlik sabit*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**0**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*sekizlik sabit* *sekizlik basamak*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*sekizlik sabit* *sekizlik basamak*
 
 *onaltılık sabit*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*onaltılık önek* *onaltılık basamak*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*onaltılık sabit* *onaltılık basamak*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*onaltılık sabit* *onaltılık basamak*
 
 *onaltılık önek*: biri<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**0x**  **0X**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**0x**  **0X**
 
 *sıfır olmayan basamak*: biri<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**1 2 3 4 5 6 7 8 9**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**1 2 3 4 5 6 7 8 9**
 
 *sekizlik basamak*: biri<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**0 1 2 3 4 5 6 7**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**0 1 2 3 4 5 6 7**
 
 *onaltılık basamak*: biri<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**0 1 2 3 4 5 6 7 8 9**<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**b c d e f**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**B C D E F**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**B C D E F**
 
 *integer-suffix*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*işaretsiz sonek* *uzun soneki*<sub>iyileştirilmiş</sub><br/>
@@ -54,23 +54,23 @@ Bir *tamsayı sabiti* (10 tabanında) ondalık, sekizlik (Temel 8) ya da temsil 
 &nbsp;&nbsp;&nbsp;&nbsp;*işaretsiz sonek* *64 bit tamsayı soneki*<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*uzun soneki* *işaretsiz sonek*<sub>iyileştirilmiş</sub><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*uzun uzun soneki* *işaretsiz sonek*<sub>iyileştirilmiş</sub><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*64 bit tamsayı soneki*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*64 bit tamsayı soneki*
 
 *işaretsiz sonek*: biri<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**u U**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**u U**
 
 *uzun soneki*: biri<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**l L**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**l L**
 
 *uzun uzun soneki*: biri<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**ll LL**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**ll LL**
 
 *64 bit tamsayı soneki*: biri<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**i64 I64**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**i64 I64**
 
 **I64** ve **I64** birimlerdir Microsoft'a özgü.
 
-Bunlar bir eksi işareti tarafından öncelenen sürece tamsayı sabitleri pozitif (**-**). Eksi işareti birli aritmetik olumsuzlama işleci yorumlanır. (Bkz [birli aritmetik işleçler](../c-language/unary-arithmetic-operators.md) bu işleci hakkında bilgi için.)
+Bunlar bir eksi işareti tarafından öncelenen sürece tamsayı sabitleri pozitif ( **-** ). Eksi işareti birli aritmetik olumsuzlama işleci yorumlanır. (Bkz [birli aritmetik işleçler](../c-language/unary-arithmetic-operators.md) bu işleci hakkında bilgi için.)
 
 Bir tam sayı sabiti ile başlıyorsa **0 x** veya **0 X**, onaltılık. Basamağı ile başlıyorsa **0**, sekizlik. Aksi takdirde, ondalık olduğu varsayılır.
 

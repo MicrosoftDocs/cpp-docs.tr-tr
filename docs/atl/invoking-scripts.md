@@ -24,8 +24,8 @@ ms.locfileid: "62250473"
 |**ResourceUnregisterSz**|**HRESULT ResourceUnregisterSz (LPCOLESTR***resFileName* **, LPCOLESTR***szID* **, LPCOLESTR** `szType` **);**<br /><br /> Bir modülün kaynakta yer alan komut kaydını siler. *resFileName* modülü UNC yolunu gösterir. *szID* ve *szType* kaynağın dize tanımlayıcı ve türü içerir.|
 |**FileRegister**|**HRESULT FileRegister( LPCOLESTR**  *fileName*  **);**<br /><br /> Betik bir dosyaya kaydeder. *fileName* kaynak betiği içeren (veya olan) bir dosya bir UNC yoludur.|
 |**FileUnregister**|**HRESULT FileUnregister( LPCOLESTR**  *fileName*  **);**<br /><br /> Bir dosyadaki betik kaydını siler. *fileName* kaynak betiği içeren (veya olan) bir dosya bir UNC yoludur.|
-|**StringRegister**|**HRESULT StringRegister (LPCOLESTR***veri***);**<br /><br /> Betik, bir dize kaydeder. *veri* betiği içerir.|
-|**StringUnregister**|**HRESULT StringUnregister (LPCOLESTR***veri***);**<br /><br /> Bir dizedeki betik kaydını siler. *veri* betiği içerir.|
+|**StringRegister**|**HRESULT StringRegister (LPCOLESTR***veri* **);**<br /><br /> Betik, bir dize kaydeder. *veri* betiği içerir.|
+|**StringUnregister**|**HRESULT StringUnregister (LPCOLESTR***veri* **);**<br /><br /> Bir dizedeki betik kaydını siler. *veri* betiği içerir.|
 
 **ResourceRegisterSz** ve **ResourceUnregisterSz**, benzer **ResourceRegister** ve **ResourceUnregister**, ancak bir dize belirtmenizi sağlar tanımlayıcısı.
 
