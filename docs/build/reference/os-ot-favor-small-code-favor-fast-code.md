@@ -17,12 +17,12 @@ helpviewer_keywords:
 - Os compiler option [C++]
 - -Os compiler option [C++]
 ms.assetid: 9a340806-fa15-4308-892c-355d83cac0f2
-ms.openlocfilehash: d4e8d062685a543c428f0c86a22c17c8faf017ad
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 5bbdda07eacdb003515a40a93a232c0f8626ca89
+ms.sourcegitcommit: aed09c9c05e6b031c8a9f87a8d6bbdaf253485e8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62320181"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "67412237"
 ---
 # <a name="os-ot-favor-small-code-favor-fast-code"></a>/Os, /Ot (Küçük Koda Ayrıcalık Tanı, Hızlı Koda Ayrıcalık Tanı)
 
@@ -39,7 +39,7 @@ Simge durumuna küçültür veya ve exe ve dll boyutunu en üst düzeye çıkar�
 
 **/OS** (küçük koda ayrıcalık tanı) derleyicinin boyut hız yerine boyuta ayrıcalık tanımasını sağlar ve exe ve dll boyutunu azaltır. Derleyici, makine kodu işlevsel olarak benzer dizileri için birçok C ve C++ yapıları azaltabilir. Bazen bu farklılıkları avantajsız yönleri hızı karşı boyutu sunar. **/Os** ve **/Ot** seçeneklerden biri diğerine bir tercihini belirtmenize olanak tanır:
 
-**/Ot** (hızlı koda ayrıcalık tanı) derleyicinin boyutu hızlı yönlendirerek ve exe ve dll hızına büyütür. (Varsayılan değer budur.) Derleyici, makine kodu işlevsel olarak benzer dizileri için birçok C ve C++ yapıları azaltabilir. Bazen bu farklılıkları avantajsız yönleri hızı karşı boyutu sunar. /Ot seçeneği en üst düzeye hızını kapsanıyor ([/O2](o1-o2-minimize-size-maximize-speed.md)) seçeneği. **/O2** seçeneği çok hızlı kod üretmek için çeşitli seçenekler birleştirir.
+**/Ot** (hızlı koda ayrıcalık tanı) derleyicinin boyutu hızlı yönlendirerek ve exe ve dll hızına büyütür. (Varsayılan değer budur.) Derleyici, makine kodu işlevsel olarak benzer dizileri için birçok C ve C++ yapıları azaltabilir. Bazen bu farklılıkları avantajsız yönleri hızı karşı boyutu sunar. **/Ot** seçeneği en üst düzeye hızını kapsanan ([/O2](o1-o2-minimize-size-maximize-speed.md)) seçeneği. **/O2** seçeneği çok hızlı kod üretmek için çeşitli seçenekler birleştirir.
 
 Kullanırsanız **/Os** veya **/Ot**, sonra da belirtmeniz gerekir [/Og](og-global-optimizations.md) kodu en iyi duruma getirme.
 
@@ -48,7 +48,7 @@ Kullanırsanız **/Os** veya **/Ot**, sonra da belirtmeniz gerekir [/Og](og-glob
 
 **x86 belirli**
 
-Aşağıdaki kod örneği, küçük koda arasındaki farkı gösterir (**/Os**) seçenekleri ve ayrıcalık hızlı koda ayrıcalık tanı (**/Ot**) seçeneği:
+Aşağıdaki kod örneği, küçük koda arasındaki farkı gösterir ( **/Os**) seçenekleri ve ayrıcalık hızlı koda ayrıcalık tanı ( **/Ot**) seçeneği:
 
 > [!NOTE]
 >  Kullanırken aşağıdaki beklenen davranışı açıklar **/Os** veya **/Ot**. Ancak, derleyici davranışı yapma farklı iyileştirmeler için aşağıdaki kodu neden olabilir.
@@ -65,14 +65,14 @@ int differ(int x)
 }
 ```
 
-Aşağıdaki makine kod parçasını gösterildiği, zaman DIFFER.c derlendiği boyutu (**/Os**), derleyici uygular dönüş deyimindeki ifade Çarp açık olarak bir Çarp kod kısa ancak daha yavaş bir dizi oluşturmak için:
+Aşağıdaki makine kod parçasını gösterildiği, zaman DIFFER.c derlendiği boyutu ( **/Os**), derleyici uygular dönüş deyimindeki ifade Çarp açık olarak bir Çarp kod kısa ancak daha yavaş bir dizi oluşturmak için:
 
 ```
 mov    eax, DWORD PTR _x$[ebp]
 imul   eax, 71                  ; 00000047H
 ```
 
-Alternatif olarak, ne zaman DIFFER.c derlendiği hızını (**/Ot**), derleyici uygular üst karakter dizisi olarak dönüş deyimindeki ifade çarpın ve `LEA` kod hızlı ancak uzun bir dizi oluşturmak için yönergeler:
+Alternatif olarak, ne zaman DIFFER.c derlendiği hızını ( **/Ot**), derleyici uygular üst karakter dizisi olarak dönüş deyimindeki ifade çarpın ve `LEA` kod hızlı ancak uzun bir dizi oluşturmak için yönergeler:
 
 ```
 mov    eax, DWORD PTR _x$[ebp]
