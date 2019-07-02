@@ -3,12 +3,12 @@ title: CppProperties.json şema başvurusu
 ms.date: 05/16/2019
 helpviewer_keywords:
 - CMake in Visual Studio
-ms.openlocfilehash: 8432b72deaef99ee20147505030cbc8a9a270869
-ms.sourcegitcommit: 6cf0c67acce633b07ff31b56cebd5de3218fd733
+ms.openlocfilehash: cf5cd964068ad2e3aeeaf1e057c9bf407f4985f5
+ms.sourcegitcommit: b233f05adae607f75815111006a771c432df5a9d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/24/2019
-ms.locfileid: "67344410"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67516368"
 ---
 # <a name="cpppropertiesjson-schema-reference"></a>CppProperties.json şema başvurusu
 
@@ -264,7 +264,7 @@ Tüm özel ve varsayılan ortam değişkenlerini de kullanılabilir `tasks.vs.js
 |-|-|
 |`${workspaceRoot}`| Çalışma alanı klasörün tam yolu|
 |`${projectRoot}`| klasörün tam yolu burada `CppProperties.json` yerleştirilir|
-|`${vsInstallDir}`| Visual Studio'nun çalışan örneği yüklendiği klasörün tam yolu|
+|`${env.vsInstallDir}`| Visual Studio'nun çalışan örneği yüklendiği klasörün tam yolu|
 
 Örneğin, projeniz bir dahil etme klasörü varsa, ve ayrıca windows.h ve diğer ortak üst bilgileri Windows SDK içerir güncelleştirmek isteyebilirsiniz, `CppProperties.json` aşağıdaki yapılandırma dosyası içerir:
 

@@ -4,16 +4,16 @@ ms.date: 05/16/2019
 helpviewer_keywords:
 - CMake in Visual C++
 ms.assetid: 444d50df-215e-4d31-933a-b41841f186f8
-ms.openlocfilehash: 0dcd05833af005807d874d71e8f6a07d4e738e8c
-ms.sourcegitcommit: fde637f823494532314790602c2819f889706ff6
+ms.openlocfilehash: cc9b9a788f17e9257bed628024e3f65dfc89fb23
+ms.sourcegitcommit: b233f05adae607f75815111006a771c432df5a9d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67042594"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67516374"
 ---
 # <a name="cmakesettingsjson-schema-reference"></a>CMakeSettings.json şema başvurusu
 
-**Cmakesettings.json**' dosyası Visual Studio belirtilen platform için bir proje oluşturmak için CMake ile nasıl etkileşim kuracağını belirten bilgileri içerir. Dosya, ortam değişkenleri ya da cmake.exe ortam için bağımsız değişkenler gibi bilgileri depolar. Doğrudan düzenlemeniz veya kullanın **CMake ayarları Düzenleyicisi** (2019 ve daha sonra Visual Studio). Bkz: [özelleştirme CMake derleme ayarları Visual Studio'da](customize-cmake-settings.md) Düzenleyicisi hakkında daha fazla bilgi.
+**Cmakesettings.json** dosya Visual Studio'nun belirli bir platform için bir proje oluşturmak için CMake ile nasıl etkileşim kuracağını belirten bilgileri içerir. Dosya, ortam değişkenleri ya da cmake.exe ortam için bağımsız değişkenler gibi bilgileri depolar. Doğrudan düzenlemeniz veya kullanın **CMake ayarları Düzenleyicisi** (2019 ve daha sonra Visual Studio). Bkz: [özelleştirme CMake derleme ayarları Visual Studio'da](customize-cmake-settings.md) Düzenleyicisi hakkında daha fazla bilgi.
 
 ## <a name="environments"></a>Ortamlar
 
