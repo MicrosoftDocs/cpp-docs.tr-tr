@@ -1,6 +1,6 @@
 ---
 title: CMFCTasksPane sınıfı
-ms.date: 11/19/2018
+ms.date: 07/02/2019
 f1_keywords:
 - CMFCTasksPane
 - AFXTASKSPANE/CMFCTasksPane
@@ -194,12 +194,12 @@ helpviewer_keywords:
 - CMFCTasksPane [MFC], Update
 - CMFCTasksPane [MFC], OnActivateTasksPanePage
 ms.assetid: b456328e-2525-4642-b78b-9edd1a1a7d3f
-ms.openlocfilehash: 137f30262ce01ad82c075302b6e85bf67ae7b9be
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: eeb24a0a02d1a084c83e280705344a9e5c505724
+ms.sourcegitcommit: 9b904e490b1e262293a602bd1291a8f3045e755b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62218683"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67552277"
 ---
 # <a name="cmfctaskspane-class"></a>CMFCTasksPane sınıfı
 
@@ -294,7 +294,7 @@ class CMFCTasksPane : public CDockablePane
 |[CMFCTasksPane::RemovePage](#removepage)|Belirtilen bir sayfa görev bölmesinden kaldırır.|
 |[CMFCTasksPane::RemoveTask](#removetask)|Bir görev, bir görev grubundan kaldırır.|
 |[CMFCTasksPane::SaveState](#savestate)|(Geçersiz kılmaları [CDockablePane::SaveState](cdockablepane-class.md).)|
-|[CMFCTasksPane::Serialize](#serialize)|(Geçersiz kılmaları [CDockablePane::Serialize]().)|
+|[CMFCTasksPane::Serialize](#serialize)|(Geçersiz kılmaları [CDockablePane::Serialize](cdockablepane-class.md).)|
 |[CMFCTasksPane::SetActivePage](#setactivepage)|Belirtilen bir sayfa görev bölmesinde etkinleştirir.|
 |[CMFCTasksPane::SetCaption](#setcaption)|Bir görev bölmesi resim yazısı adını ayarlar.|
 |[CMFCTasksPane::SetGroupCaptionHeight](#setgroupcaptionheight)|Bir Grup başlığını yüksekliğini belirler.|

@@ -1,18 +1,18 @@
 ---
 title: Visual Studio’da C++
 description: Visual C++ için Microsoft C++ Derleyici, Kod Düzenleyicisi ve ilgili araçlar Visual Studio IDE'de addır. Programları Windows, Linux, Android ve iOS geliştirme için Visual C++ kullanın.
-ms.date: 05/14/2019
+ms.date: 07/02/2019
 ms.technology: cpp-ide
 helpviewer_keywords:
 - Visual C++, home page
 author: mikeblome
 ms.author: mblome
-ms.openlocfilehash: c2a38d13cd7b34880b64521af99103ed8192bfd0
-ms.sourcegitcommit: 28eae422049ac3381c6b1206664455dbb56cbfb6
+ms.openlocfilehash: 67bed9a8ce9b5cfbe11a5383d2f67ea6c02d1106
+ms.sourcegitcommit: 9b904e490b1e262293a602bd1291a8f3045e755b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66451209"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67552371"
 ---
 # <a name="c-in-visual-studio"></a>Visual Studio’da C++
 
@@ -92,7 +92,7 @@ C++, Google Test, Boost.Test veya CTest için Microsoft birim testi çerçevesin
 
 ## <a name="write-applications-in-c"></a>C++'da uygulamaları yazma
 
-[Evrensel Windows uygulamaları](../windows/universal-windows-apps-cpp.md)<br/>
+[Evrensel Windows Uygulamaları (C++)](../cppcx/universal-windows-apps-cpp.md)<br/>
 Kılavuzları ve referans içeriği Windows Geliştirici Merkezi'nde bulabilirsiniz. UWP uygulamaları geliştirme hakkında daha fazla bilgi için bkz: [Evrensel Windows platformu giriş](/windows/uwp/get-started/universal-application-platform-guide) ve [C++ kullanarak ilk UWP uygulamanızı oluşturmak](/windows/uwp/get-started/create-a-basic-windows-10-app-in-cpp).
 
 [Masaüstü uygulamaları (C++)](../windows/desktop-applications-visual-cpp.md)<br/>
@@ -122,7 +122,7 @@ ODBC ve OLE DB kullanan veritabanlarına bağlanın.
 [Metin ve Dizeler](../text/text-and-strings-in-visual-cpp.md)<br/>
 Farklı metin ve dize biçimleri ve yerel ve uluslararası geliştirme için Kodlamalar ile çalışma hakkında bilgi edinin.
 
-## <a name="languages-reference"></a>Dil Başvurusu
+## <a name="languages-reference"></a>Dil başvurusu
 
 [C++ Dil Başvurusu](../cpp/cpp-language-reference.md)
 

@@ -1,13 +1,13 @@
 ---
 title: C++'da Windows Programlamasına Genel Bakış
-ms.date: 05/06/2019
+ms.date: 07/02/2019
 ms.assetid: efc691d7-21f3-47ae-ae56-cab999ccf59d
-ms.openlocfilehash: 585fda614acce85e286e25b807d0fda57d03758b
-ms.sourcegitcommit: af580f3a11b19d22288424eac7ceae1bc24ab312
+ms.openlocfilehash: 1f49c9f8f78f83d6ae991b7427b28f7f5cbf7f0c
+ms.sourcegitcommit: 9b904e490b1e262293a602bd1291a8f3045e755b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66355561"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67552312"
 ---
 # <a name="overview-of-windows-programming-in-c"></a>C++'da Windows Programlamasına Genel Bakış
 
@@ -118,5 +118,5 @@ Visual Studio yerel kod, statik çözümleme araçları, grafik hata ayıklama a
 |[Visual Studio’da C++](../overview/visual-cpp-in-visual-studio.md)|Visual C++ Geliştirici içeriği için üst konu.|
 [C++/CLI ile .NET Geliştirme](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)|.NET uygulamaları ve bileşenleri ile iletişimi etkinleştir yerel C++ kitaplıkları için sarmalayıcıları oluşturun.|
 |[.NET ve UWP İçin Bileşen Uzantıları](../extensions/component-extensions-for-runtime-platforms.md)|Söz dizimi öğeleri tarafından paylaşılan başvurusunu C++/CX ve C++/CLI.|
-|[Evrensel Windows Uygulamaları (C++)](universal-windows-apps-cpp.md)|UWP uygulamaları kullanarak yazma C++/CX veya Windows çalışma zamanı Şablon kitaplığı (WRL).|
+|[Evrensel Windows Uygulamaları (C++)](../cppcx/universal-windows-apps-cpp.md)|UWP uygulamaları kullanarak yazma C++/CX veya Windows çalışma zamanı Şablon kitaplığı (WRL).|
 |[COM ve .NET için C++ Öznitelikleri](attributes/cpp-attributes-com-net.md)|Standart olmayan öznitelikler için .NET veya COM kullanarak yalnızca Windows programlama|

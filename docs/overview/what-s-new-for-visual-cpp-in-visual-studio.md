@@ -1,22 +1,22 @@
 ---
 title: Visual Studio 2017’deki C++ yenilikleri
-ms.date: 06/17/2019
+ms.date: 07/02/2019
 ms.technology: cpp-ide
 ms.assetid: 8801dbdb-ca0b-491f-9e33-01618bff5ae9
 author: mikeblome
 ms.author: mblome
-ms.openlocfilehash: b408036fdee3d8163ef48cdbdab6e0f0a9c939ab
-ms.sourcegitcommit: 6cf0c67acce633b07ff31b56cebd5de3218fd733
+ms.openlocfilehash: f02c5878f5f741c216499f619bfd1392483bfa86
+ms.sourcegitcommit: 9b904e490b1e262293a602bd1291a8f3045e755b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/24/2019
-ms.locfileid: "67344182"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67552352"
 ---
 # <a name="whats-new-for-c-in-visual-studio"></a>Visual Studio 2017’deki C++ yenilikleri
 
 ::: moniker range=">=vs-2019"
 
-Visual Studio 2019 birçok güncelleştirme ve Microsoft C++ ortamına giderir. Birçok hataları ve derleyici ve Araçları'ndaki sorunları düzelttik. Bu sorunların çoğu, aracılığıyla müşteriler tarafından gönderilen [sorun bildir](/visualstudio/how-to-report-a-problem-with-visual-studio-2017) ve [bir öneride](https://developercommunity.visualstudio.com/spaces/62/index.html) altında seçenekleri **geri bildirim gönder**. Hataları bildirdiğiniz için teşekkür ederiz! Visual Studio'nun tüm yenilikler hakkında daha fazla bilgi için ziyaret [içinde Visual Studio 2019 yenilikler](/visualstudio/ide/whats-new-visual-studio-2019). Yenilikler hakkında bilgi C++ Visual Studio 2017'de bkz [yenilikler C++ Visual Studio 2017'de](/cpp/overview/what-s-new-for-visual-cpp-in-visual-studio?view=vs-2017). Yenilikler hakkında bilgi C++ Visual Studio 2015 veya önceki sürümlerinde, bkz. [Visual C++ 2015 tarihine kadar yeni 2003 nedir](/cpp/porting/visual-cpp-what-s-new-2003-through-2015).
+Visual Studio 2019 birçok güncelleştirme ve Microsoft C++ ortamına giderir. Birçok hataları ve derleyici ve Araçları'ndaki sorunları düzelttik. Bu sorunların çoğu, aracılığıyla müşteriler tarafından gönderilen [sorun bildir](/visualstudio/ide/how-to-report-a-problem-with-visual-studio?view=vs-2019) ve [bir öneride](https://developercommunity.visualstudio.com/spaces/62/index.html) altında seçenekleri **geri bildirim gönder**. Hataları bildirdiğiniz için teşekkür ederiz! Visual Studio'nun tüm yenilikler hakkında daha fazla bilgi için ziyaret [içinde Visual Studio 2019 yenilikler](/visualstudio/ide/whats-new-visual-studio-2019). Yenilikler hakkında bilgi C++ Visual Studio 2017'de bkz [yenilikler C++ Visual Studio 2017'de](/cpp/overview/what-s-new-for-visual-cpp-in-visual-studio?view=vs-2017). Yenilikler hakkında bilgi C++ Visual Studio 2015 veya önceki sürümlerinde, bkz. [Visual C++ 2015 tarihine kadar yeni 2003 nedir](/cpp/porting/visual-cpp-what-s-new-2003-through-2015).
 
 ## <a name="c-compiler"></a>C++ derleyicisi
 
@@ -241,7 +241,7 @@ Yönetilen C++ Test Projesi şablonu artık sağlanmıyor. Yönetilen C++ Test �
 
 ::: moniker range="=vs-2017"
 
-Visual Studio 2017 birçok güncelleştirme ve C++ ortamına giderir. Biz 250'den fazla hatalar düzeltildi ve bildirilen sorunları derleyici ve araçları, aracılığıyla müşteriler tarafından birçok gönderilen [sorun bildirin ve bir öneride](/visualstudio/how-to-report-a-problem-with-visual-studio-2017) altında seçenekleri **geri bildirim gönder**. Hataları bildirdiğiniz için teşekkür ederiz! Visual Studio'nun tüm yenilikler hakkında daha fazla bilgi için bkz: [Visual Studio 2017'deki yenilikler](/visualstudio/ide/whats-new-visual-studio-2017?view=vs-2017). Yenilikler hakkında bilgi C++ Visual Studio 2019 ' bkz [yenilikler C++ Visual Studio'daki](/cpp/overview/what-s-new-for-visual-cpp-in-visual-studio?view=vs-2019). Yenilikler hakkında bilgi C++ Visual Studio 2015 veya önceki sürümlerinde, bkz. [Visual C++ 2015 tarihine kadar yeni 2003 nedir](/cpp/porting/visual-cpp-what-s-new-2003-through-2015).
+Visual Studio 2017 birçok güncelleştirme ve C++ ortamına giderir. Biz 250'den fazla hatalar düzeltildi ve bildirilen sorunları derleyici ve araçları, aracılığıyla müşteriler tarafından birçok gönderilen [sorun bildirin ve bir öneride](/visualstudio/ide/how-to-report-a-problem-with-visual-studio?view=vs-2017) altında seçenekleri **geri bildirim gönder**. Hataları bildirdiğiniz için teşekkür ederiz! Visual Studio'nun tüm yenilikler hakkında daha fazla bilgi için bkz: [Visual Studio 2017'deki yenilikler](/visualstudio/ide/whats-new-visual-studio-2017?view=vs-2017). Yenilikler hakkında bilgi C++ Visual Studio 2019 ' bkz [yenilikler C++ Visual Studio'daki](/cpp/overview/what-s-new-for-visual-cpp-in-visual-studio?view=vs-2019). Yenilikler hakkında bilgi C++ Visual Studio 2015 veya önceki sürümlerinde, bkz. [Visual C++ 2015 tarihine kadar yeni 2003 nedir](/cpp/porting/visual-cpp-what-s-new-2003-through-2015).
 
 ## <a name="c-compiler"></a>C++ derleyicisi
 

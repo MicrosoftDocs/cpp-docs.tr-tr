@@ -1,6 +1,6 @@
 ---
 title: Visual C++ Proje Türleri
-ms.date: 11/29/2018
+ms.date: 07/02/2019
 helpviewer_keywords:
 - programs [C++], projects
 - project templates [Visual Studio], C++
@@ -10,19 +10,19 @@ helpviewer_keywords:
 - applications [C++], projects
 - C++ projects, types
 ms.assetid: 7337987e-1e7b-4120-9a4b-94f0401f15e7
-ms.openlocfilehash: dce96a221804e5538929d63fa3c125a27e7fc36d
-ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.openlocfilehash: 98f8ea11cce61ca91fbdc8f8afb900a7ba5b42c9
+ms.sourcegitcommit: 9b904e490b1e262293a602bd1291a8f3045e755b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65217780"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67552221"
 ---
 # <a name="c-project-templates"></a>C++ proje şablonları
 
 Kaynak kodu dosyaları, derleyici seçenekleri, menüler, araç çubukları, simgeler, başvurular, Visual Studio Proje şablonları oluşturmak ve `#include` oluşturmak istediğiniz proje türü için uygun olan deyimleri. Visual Studio, birçok tür içerir, C++ proje şablonları ve sihirbazları kaç tanesinin oluştururken projelerinizi özelleştirebilmeniz için sağlar. Hemen bir proje oluşturduğunuzda, derleyin ve uygulamayı çalıştırın; Uygulamanızı geliştirirken, aralıklı olarak oluşturmak için iyi bir uygulamadır.
 
 > [!NOTE]
-> C++ proje şablonlarını kullanarak bir C dili projesi oluşturabilirsiniz. Oluşturulan proje bir .cpp olarak değiştirin ve dosya adı uzantısına sahip dosyaları bulun. c. Ardından **proje özellikleri** sayfasında projenin (için çözüm) **yapılandırma özellikleri**, **C/C++** seçip **Gelişmiş**. Değişiklik **derleme olarak** ayarını **C kodu olarak derle (/ TC)**.
+> C++ proje şablonlarını kullanarak bir C dili projesi oluşturabilirsiniz. Oluşturulan proje bir .cpp olarak değiştirin ve dosya adı uzantısına sahip dosyaları bulun. c. Ardından **proje özellikleri** sayfasında projenin (için çözüm) **yapılandırma özellikleri**, **C/C++** seçip **Gelişmiş**. Değişiklik **derleme olarak** ayarını **C kodu olarak derle (/ TC)** .
 
 ## <a name="project-templates"></a>Proje şablonları
 
@@ -72,7 +72,7 @@ Visual Studio yüklemenizin bileşenine MFC ve ATL desteği eklerseniz, bu proje
 
 Visual Studio yüklemenizin C++ Evrensel Windows platformu araçları bileşeni eklerseniz, bu proje şablonları, Visual Studio'ya eklenir.
 
-C++'ta Windows Evrensel uygulamaları genel bakış için bkz. [Evrensel Windows uygulamaları (C++)](../../windows/universal-windows-apps-cpp.md).
+C++'ta Windows Evrensel uygulamaları genel bakış için bkz. [Evrensel Windows uygulamaları (C++)](../../cppcx/universal-windows-apps-cpp.md).
 
 |Proje şablonu|Açıklama|
 |----------------------|-----------------------------|

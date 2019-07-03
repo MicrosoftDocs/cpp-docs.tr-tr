@@ -1,13 +1,13 @@
 ---
 title: Özel durumlar (C++/CX)
-ms.date: 01/18/2018
+ms.date: 07/02/2019
 ms.assetid: 6cbdc1f1-e4d7-4707-a670-86365146432f
-ms.openlocfilehash: 7134cbb9e90f0355a3b2a912330027cf73876443
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 93a3c096c79140787a46dcbd0ae6ec7edc0bf2e4
+ms.sourcegitcommit: 9b904e490b1e262293a602bd1291a8f3045e755b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62301532"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67552175"
 ---
 # <a name="exceptions-ccx"></a>Özel durumlar (C++/CX)
 
@@ -63,7 +63,7 @@ Zaman uyumsuz bir işlemi sırasında oluşturulan özel durumları yakalamak i�
 
 ## <a name="unhandlederrordetected-event"></a>UnhandledErrorDetected olay
 
-Windows 8.1 abone olabileceğiniz [Windows::ApplicationModel::Core::CoreApplication::UnhandledErrorDetected](/uwp/api/windows.applicationmodel.core.icoreapplicationunhandlederror#Windows_ApplicationModel_Core_ICoreApplicationUnhandledError_UnhandledErrorDetected) hakkında işleminin çökmesine işlenmemiş hataları erişim sağlayan statik olay. Hata nereden geldiğini bağımsız olarak, bu işleyici olarak ulaştığında bir [Windows::ApplicationModel::Core::UnhandledError](/uwp/api/windows.applicationmodel.core.unhandlederror) oturum event args geçirilen nesne. Çağırdığınızda `Propagate` nesnesinde oluşturur ve oluşturur bir `Platform::*Exception` hata koduna karşılık gelen türü. Catch bloğu içinde kullanıcı durumunu gerekirse kaydedebilir ve sonra ya da çağırarak ciddiyeti işlemin sonlandırılmasına izin `throw`, veya program bilinen bir duruma geri dönmek için bir şey. Aşağıdaki örnek, temel düzeni gösterir:
+Windows 8.1 abone olabileceğiniz [Windows::ApplicationModel::Core::CoreApplication::UnhandledErrorDetected](/uwp/api/windows.applicationmodel.core.icoreapplicationunhandlederror.unhandlederrordetected) hakkında işleminin çökmesine işlenmemiş hataları erişim sağlayan statik olay. Hata nereden geldiğini bağımsız olarak, bu işleyici olarak ulaştığında bir [Windows::ApplicationModel::Core::UnhandledError](/uwp/api/windows.applicationmodel.core.unhandlederror) oturum event args geçirilen nesne. Çağırdığınızda `Propagate` nesnesinde oluşturur ve oluşturur bir `Platform::*Exception` hata koduna karşılık gelen türü. Catch bloğu içinde kullanıcı durumunu gerekirse kaydedebilir ve sonra ya da çağırarak ciddiyeti işlemin sonlandırılmasına izin `throw`, veya program bilinen bir duruma geri dönmek için bir şey. Aşağıdaki örnek, temel düzeni gösterir:
 
 App.xaml.h içinde:
 

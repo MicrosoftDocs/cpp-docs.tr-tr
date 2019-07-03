@@ -1,18 +1,18 @@
 ---
 title: Idochostuıhandlerdispatch arabirimi
-ms.date: 11/04/2016
+ms.date: 07/02/2019
 f1_keywords:
 - IDocHostUIHandlerDispatch
 - atlbase/ATL::IDocHostUIHandlerDispatch
 helpviewer_keywords:
 - IDocHostUIHandlerDispatch interface
 ms.assetid: 6963a301-601a-4ac3-8bef-f7b252ea2fc6
-ms.openlocfilehash: f4f5024e282885797858c800640bc5651819ca20
-ms.sourcegitcommit: ecf274bcfe3a977c48745aaa243e5e731f1fdc5f
+ms.openlocfilehash: a60c178eff1e02c3032e792f9a0420dfeab82388
+ms.sourcegitcommit: 9b904e490b1e262293a602bd1291a8f3045e755b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "66503066"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67552162"
 ---
 # <a name="idochostuihandlerdispatch-interface"></a>Idochostuıhandlerdispatch arabirimi
 
@@ -32,7 +32,7 @@ interface IDocHostUIHandlerDispatch : IDispatch
 ### <a name="public-methods"></a>Ortak Yöntemler
 
 > [!NOTE]
->  Aşağıdaki tabloda bağlantıları üyelerinin INet SDK başvuru konusundan üzeresiniz [IDocUIHostHandler](/windows/internet-explorer/ie-developer/platform-apis/aa753260\(v=vs.85\)) arabirimi. `IDocHostUIHandlerDispatch` aynı işlevlere sahip `IDocUIHostHandler`, olan farkla `IDocHostUIHandlerDispatch` bir dispinterface takvimidir `IDocUIHostHandler` özel bir arabirimdir.
+>  Aşağıdaki tabloda bağlantıları üyelerinin INet SDK başvuru konusundan üzeresiniz [IDocUIHostHandler](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753260\(v=vs.85\)) arabirimi. `IDocHostUIHandlerDispatch` aynı işlevlere sahip `IDocUIHostHandler`, olan farkla `IDocHostUIHandlerDispatch` bir dispinterface takvimidir `IDocUIHostHandler` özel bir arabirimdir.
 
 |||
 |-|-|
@@ -67,4 +67,4 @@ Bu arabirim tanımı aşağıda gösterildiği gibi IDL veya C++ olarak kullanı
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[IDocUIHostHandler](/windows/internet-explorer/ie-developer/platform-apis/aa753260\(v=vs.85\))
+[IDocUIHostHandler](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753260\(v=vs.85\))

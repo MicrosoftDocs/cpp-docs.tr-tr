@@ -1,6 +1,6 @@
 ---
 title: 'Biçim Belirtim Sözdizimi: printf ve wprintf İşlevleri'
-ms.date: 11/04/2016
+ms.date: 07/02/2019
 helpviewer_keywords:
 - format specification fields for printf function
 - printf function format specification fields
@@ -9,20 +9,20 @@ helpviewer_keywords:
 - width fields, printf function
 - precision fields, printf function
 ms.assetid: 664b1717-2760-4c61-bd9c-22eee618d825
-ms.openlocfilehash: bccbe435d926a75990a4ca35b98c9b352dd40e8b
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 07565da17eb53274e0c3203abbc8cddb9e61da90
+ms.sourcegitcommit: 9b904e490b1e262293a602bd1291a8f3045e755b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62289838"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67552262"
 ---
-# <a name="format-specification-syntax-printf-and-wprintf-functions"></a>Biçim belirtim Sözdizimi: printf ve wprintf işlevleri
+# <a name="format-specification-syntax-printf-and-wprintf-functions"></a>Biçim belirtim sözdizimi: printf ve wprintf işlevleri
 
 Çeşitli `printf` ve `wprintf` işlevler bir biçim dizesi ve isteğe bağlı bağımsız değişkeni alır ve biçimlendirilmiş çıkış için bir karakter dizisi üretir. Sıfır veya daha fazla biçim dizesi içeren *yönergeleri*, çıkış veya kodlanmış ya da değişmez karakterler olan *dönüştürme belirtimleri* çıktıda bir bağımsız değişken biçimlendirme nasıl açıklanmaktadır. Bu konu, Biçim dizesinde dönüştürme belirtimleri kodlamak için kullanılan söz dizimini açıklar. Bu işlevlerin bir listesi için bkz. [Stream g/ç](../c-runtime-library/stream-i-o.md).
 
 İsteğe bağlı ve gerekli alanlara bu formu dönüştürme belirtimi oluşur:
 
-**%**[[*flags*](#flags)][[*width*](#width)][.[*precision*](#precision)][[*size*](#size)][*type*](#type)
+**%** [[*flags*](#flags)][[*width*](#width)][.[*precision*](#precision)][[*size*](#size)][*type*](#type)
 
 Her alanı dönüştürme belirtimi, bir karakter veya seçeneği veya dönüştürme bir özel biçim belirticisi belirten bir sayı alır. Gerekli *türü* alanı bağımsız değişkeni uygulanacak dönüştürme türünü belirtir. İsteğe bağlı *bayrakları*, *genişliği*, ve *duyarlık* alanlarını başında boşluk veya sıfır ve gerekçe görüntülenen duyarlık gibi ek biçimi özelliklerini denetleyin. *Boyutu* alanı bağımsız değişkeni kullanılan ve dönüştürülen boyutunu belirtir.
 
@@ -64,7 +64,7 @@ Tamsayı türleri gibi `short`, `int`, `long`, `long long`ve bunların `unsigned
 |**X**|Tamsayı|İmzasız onaltılık tamsayı; "ABCDEF" kullanır.|
 |**e**|Kayan nokta|[-] Biçiminde olan değeri işaretli*d.dddd*__e±__*GG*[*d*] burada *d* bir adet ondalık rakam olduğunu *dddd* belirtilen duyarlık bağlı olarak bir veya daha fazla ondalık basamak veya varsayılan olarak altı ve *GG*[*d*] bağlıolarakikiveyaüçondalıkbasamak[çıkış biçimi](../c-runtime-library/set-output-format.md) ve üs boyutu.|
 |**E**|Kayan nokta|Aynı **e** dışında biçimi **E** yerine **e** üs tanıtır.|
-|**f**|Kayan nokta|[-] Biçiminde olan değeri işaretli*dddd*__.__ *dddd*burada *dddd* bir veya daha fazla ondalık basamak. Ondalık sayı büyüklüğünü üzerinde bağlıdır önce basamak sayısı ve istenen duyarlık veya altı varsayılan ondalık ayırıcıdan sonraki basamak sayısı.|
+|**f**|Kayan nokta|[-] Biçiminde olan değeri işaretli*dddd* __.__ *dddd*burada *dddd* bir veya daha fazla ondalık basamak. Ondalık sayı büyüklüğünü üzerinde bağlıdır önce basamak sayısı ve istenen duyarlık veya altı varsayılan ondalık ayırıcıdan sonraki basamak sayısı.|
 |**F**|Kayan nokta|Aynı **f** sonsuzluk ve nan çıkış büyük harfle dışında biçimlendirin.|
 |**g**|Kayan nokta|İşaretli değerleri görüntülenir **f** veya **e** biçimi, hangisi için belirtilen değer ve duyarlık daha kısadır. **e** değerinin üs -4'den az olduğunda yalnızca veya büyüktür veya eşittir biçimi kullanılır *duyarlık* bağımsız değişken. Sıfırları kesilir ve yalnızca bir ondalık görünür veya daha fazla basamak takip edin.|
 |**G**|Kayan nokta|Aynı **g** , hariç biçimde **E**, yerine **e**, üs (uygun olduğunda) sunar.|
@@ -74,7 +74,7 @@ Tamsayı türleri gibi `short`, `int`, `long`, `long long`ve bunların `unsigned
 |**p**|İşaretçi türü|Bağımsız değişkenin adresi onaltılık basamak olarak görüntüler.|
 |**s**|Dize|İle kullanıldığında `printf` İşlevler, bir tek baytlı veya çok baytlı karakter dizesi; ile kullanıldığında belirtir `wprintf` İşlevler, bir geniş karakter dizesini belirtir. İlk boş karaktere kadar veya kadar karakter görüntülenmezse *duyarlık* değerine ulaşılmadan.|
 |**S**|Dize|İle kullanıldığında `printf` İşlevler, geniş karakterli bir dizedir; ile kullanıldığında belirtir `wprintf` İşlevler, bir tek baytlı veya çok baytlı karakter dizesi belirtir. İlk boş karaktere kadar veya kadar karakter görüntülenmezse *duyarlık* değerine ulaşılmadan.|
-|**Z**|`ANSI_STRING` veya `UNICODE_STRING` yapısı|Zaman adresini bir [ANSI_STRING](/windows/desktop/api/ntdef/ns-ntdef-_string) veya [UNICODE_STRING](/windows-hardware/drivers/ddi/content/wudfwdm/ns-wudfwdm-_unicode_string) yapısı bağımsız değişkeni geçirilir, işaret ettiği arabellek içindeki dize görüntüler `Buffer` yapısı alan. Kullanım bir *boyutu* değiştiricisi öneki **w** belirtmek için bir `UNICODE_STRING` bağımsız değişken — Örneğin, `%wZ`. `Length` Yapısının alanı dize uzunluğu için bayt cinsinden ayarlanması gerekir. `MaximumLength` Yapısının alanı uzunluğu arabellek, bayt cinsinden ayarlanması gerekir.<br /><br /> Genellikle, **Z** türü karakter yalnızca bir dönüştürme belirtimi gibi kullandığınız işlevlerinde hata ayıklama sürücüde kullanılan `dbgPrint` ve `kdPrint`.|
+|**Z**|`ANSI_STRING` veya `UNICODE_STRING` yapısı|Zaman adresini bir [ANSI_STRING](/windows/desktop/api/ntdef/ns-ntdef-_string) veya [UNICODE_STRING](/windows/win32/api/ntdef/ns-ntdef-_unicode_string) yapısı bağımsız değişkeni geçirilir, işaret ettiği arabellek içindeki dize görüntüler `Buffer` yapısı alan. Kullanım bir *boyutu* değiştiricisi öneki **w** belirtmek için bir `UNICODE_STRING` bağımsız değişken — Örneğin, `%wZ`. `Length` Yapısının alanı dize uzunluğu için bayt cinsinden ayarlanması gerekir. `MaximumLength` Yapısının alanı uzunluğu arabellek, bayt cinsinden ayarlanması gerekir.<br /><br /> Genellikle, **Z** türü karakter yalnızca bir dönüştürme belirtimi gibi kullandığınız işlevlerinde hata ayıklama sürücüde kullanılan `dbgPrint` ve `kdPrint`.|
 
 Visual Studio 2015'te başlatılmasının bir kayan nokta dönüştürme belirleyicisine karşılık gelen bağımsız değişken (**bir**, **A**, **e**, **E**, **f**, **F**, **g**, **G**) belirsiz sonsuz veya NaN, biçimlendirilmiş çıktı C99 standartlarına uyar. Bu tabloda biçimlendirilmiş çıktı:
 
@@ -129,7 +129,7 @@ Bunlardan birine bir işaretiyle önekli ve biraz daha farklı alan genişliğin
 
 ## <a name="width-specification"></a>Genişlik belirtimi
 
-İsteğe bağlı bir genişlik belirtimi alanı sonra herhangi bir dönüştürme belirtiminde görünür *bayrakları* karakter. *Genişliği* olmayan en az sayıda çıkış karakteri denetleyen negatif olmayan bir ondalık tamsayı bağımsız değişken. Çıkış değeri karakter sayısı belirtilen genişlik küçükse sola veya sağa değerlerin boşluklar eklenir — olup sola hizalama bayrak bağlı olarak (**-**) belirtilen — en düşük kadar Genişlik ulaşıldı. Varsa *genişliği* öneki dönüştürme bir sonsuz veya NaN olduğunda dışında minimum genişliğini ulaşılana kadar 0 tarafından baştaki sıfırlar tamsayı veya kayan nokta dönüştürme eklenir.
+İsteğe bağlı bir genişlik belirtimi alanı sonra herhangi bir dönüştürme belirtiminde görünür *bayrakları* karakter. *Genişliği* olmayan en az sayıda çıkış karakteri denetleyen negatif olmayan bir ondalık tamsayı bağımsız değişken. Çıkış değeri karakter sayısı belirtilen genişlik küçükse sola veya sağa değerlerin boşluklar eklenir — olup sola hizalama bayrak bağlı olarak ( **-** ) belirtilen — en düşük kadar Genişlik ulaşıldı. Varsa *genişliği* öneki dönüştürme bir sonsuz veya NaN olduğunda dışında minimum genişliğini ulaşılana kadar 0 tarafından baştaki sıfırlar tamsayı veya kayan nokta dönüştürme eklenir.
 
 Genişlik belirtimi hiçbir zaman kesilecek değeri neden olur. Çıkış değeri karakter sayısı belirtilen genişlik büyükse veya *genişliği* olduğundan verilen değil, tüm karakter değerinin çıktı tabi olan *duyarlık* belirtimi.
 

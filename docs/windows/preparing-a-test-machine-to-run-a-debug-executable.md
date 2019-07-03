@@ -1,15 +1,15 @@
 ---
 title: Yürütülebilir Hata Ayıklamayı Çalıştırmak için Test Makinesi Hazırlama
-ms.date: 11/04/2016
+ms.date: 07/02/2019
 helpviewer_keywords:
 - debug executable, preparing a test machine to run
 ms.assetid: f0400989-cc2e-4dce-9788-6bdbe91c6f5a
-ms.openlocfilehash: 6d7e9c2e0a29c2871fd86922151f2226dd9078fc
-ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
+ms.openlocfilehash: 87d2bf434aef3a85bf7fa19f5886bec106515809
+ms.sourcegitcommit: 9b904e490b1e262293a602bd1291a8f3045e755b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2019
-ms.locfileid: "65448448"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67552336"
 ---
 # <a name="preparing-a-test-machine-to-run-a-debug-executable"></a>Yürütülebilir Hata Ayıklamayı Çalıştırmak için Test Makinesi Hazırlama
 
@@ -29,11 +29,11 @@ Bir uygulamanın hata ayıklama sürümü ile birlikte Visual C++ Kitaplık DLL'
 
 - The_ kullanın**Dağıt** seçeneğini **Configuration Manager** proje çıktısı ve diğer dosyaları uzak bilgisayara kopyalamak üzere Visual Studio'da iletişim kutusu.
 
-Visual C++ DLL'leri yüklendikten sonra uzaktan hata ayıklayıcı bir ağ paylaşımı üzerinde çalıştırabilirsiniz. Uzaktan hata ayıklama hakkında daha fazla bilgi için bkz. [uzaktan hata ayıklama](/visualstudio/debugger/remote-debugging.md).
+Visual C++ DLL'leri yüklendikten sonra uzaktan hata ayıklayıcı bir ağ paylaşımı üzerinde çalıştırabilirsiniz. Uzaktan hata ayıklama hakkında daha fazla bilgi için bkz. [uzaktan hata ayıklama](/visualstudio/debugger/remote-debugging).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Visual C++ üzerinde Dağıtım](deployment-in-visual-cpp.md)<br>
 [Windows Installer komut satırı seçenekleri](/windows/desktop/Msi/command-line-options)<br>
 [Dağıtım Örnekleri](deployment-examples.md)<br>
-[Uzaktan Hata Ayıklama](/visualstudio/debugger/remote-debugging.md)
+[Uzaktan Hata Ayıklama](/visualstudio/debugger/remote-debugging)

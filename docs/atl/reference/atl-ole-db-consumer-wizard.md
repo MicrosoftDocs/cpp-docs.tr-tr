@@ -1,15 +1,15 @@
 ---
 title: ATL OLE DB Tüketicisi Sihirbazı
-ms.date: 05/09/2019
+ms.date: 07/02/2019
 helpviewer_keywords:
 - ATL projects, adding ATL OLE DB consumers
 ms.assetid: dcb68ed1-2224-422f-9f7b-108a74864204
-ms.openlocfilehash: bd7af5c9788f5075f38f85bd035ba8cd09e8baec
-ms.sourcegitcommit: fc1de63a39f7fcbfe2234e3f372b5e1c6a286087
+ms.openlocfilehash: 7195d712474765258ac0319539697b3517cb91b3
+ms.sourcegitcommit: 9b904e490b1e262293a602bd1291a8f3045e755b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65706982"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67552234"
 ---
 # <a name="atl-ole-db-consumer-wizard"></a>ATL OLE DB Tüketicisi Sihirbazı
 
@@ -30,7 +30,7 @@ Bu sihirbaz bir OLE DB Tüketici sınıfı veri bağlamaları ile belirtilen OLE
 
 - **Veri kaynağı**
 
-   **Veri kaynağı** düğmesi belirtilen OLE DB sağlayıcısı kullanılarak belirtilen veri kaynağını ayarlamanıza imkan sağlar. Bu düğmeye tıkladığınızda **veri bağlantı özellikleri** iletişim kutusu görüntülenir. Bağlantı dizeleri derleme hakkında daha fazla bilgi ve **veri bağlantı özellikleri** iletişim kutusu, bkz: [veri bağlantısı API'sine genel bakış](/previous-versions/windows/desktop/ms718102) Windows SDK belgelerinde.
+   **Veri kaynağı** düğmesi belirtilen OLE DB sağlayıcısı kullanılarak belirtilen veri kaynağını ayarlamanıza imkan sağlar. Bu düğmeye tıkladığınızda **veri bağlantı özellikleri** iletişim kutusu görüntülenir. Bağlantı dizeleri derleme hakkında daha fazla bilgi ve **veri bağlantı özellikleri** iletişim kutusu, bkz: [veri bağlantısı API'sine genel bakış](/previous-versions/windows/desktop/ms718102(v=vs.85)) Windows SDK belgelerinde.
 
    Aşağıdaki ek bilgileri sekmeleri açıklar **veri bağlantı özellikleri** iletişim kutusu.
 
@@ -171,7 +171,7 @@ Bu sihirbaz bir OLE DB Tüketici sınıfı veri bağlamaları ile belirtilen OLE
 
 - **Destek**
 
-   (Varsayılan, Yok'tur) tüketicide desteklenmesi için güncelleştirmeleri türlerini belirtmek için onay kutularını seçin. Aşağıdakilerin her biri ayarlayacak [DBPROP_IRowsetChange](/previous-versions/windows/desktop/ms715892) ve uygun girişleri [DBPROP_UPDATABILITY](/previous-versions/windows/desktop/ms722676) eşleme özelliğini ayarlayın.
+   (Varsayılan, Yok'tur) tüketicide desteklenmesi için güncelleştirmeleri türlerini belirtmek için onay kutularını seçin. Aşağıdakilerin her biri ayarlayacak [DBPROP_IRowsetChange](/previous-versions/windows/desktop/ms715892(v=vs.85)) ve uygun girişleri [DBPROP_UPDATABILITY](/previous-versions/windows/desktop/ms722676(v=vs.85)) eşleme özelliğini ayarlayın.
 
    - **Değişiklik**
 
@@ -191,4 +191,4 @@ Bu sihirbaz bir OLE DB Tüketici sınıfı veri bağlamaları ile belirtilen OLE
 
 [ATL OLE DB Tüketicisi](../../atl/reference/adding-an-atl-ole-db-consumer.md)<br/>
 [Kod Sihirbazlarıyla İşlevsellik Ekleme](../../ide/adding-functionality-with-code-wizards-cpp.md)<br/>
-[Bağlantı dizelerini ve veri bağlantıları (OLE DB)](/previous-versions/windows/desktop/ms718376)
+[Bağlantı dizelerini ve veri bağlantıları (OLE DB)](/previous-versions/windows/desktop/ms718376(v=vs.85))

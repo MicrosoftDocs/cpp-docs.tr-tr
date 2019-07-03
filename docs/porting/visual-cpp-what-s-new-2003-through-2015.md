@@ -1,13 +1,13 @@
 ---
 title: Visual C++ ne&#39;s yeni 2003 ile 2015 arasındaki
-ms.date: 11/04/2016
+ms.date: 07/02/2019
 ms.assetid: c4afde6f-3d75-40bf-986f-be57e3818e26
-ms.openlocfilehash: 4bcf661284d447b18542bb158940d539ef9c0686
-ms.sourcegitcommit: 28eae422049ac3381c6b1206664455dbb56cbfb6
+ms.openlocfilehash: 1aff65ff998d9b3bb86fbf7288850287f4445275
+ms.sourcegitcommit: 9b904e490b1e262293a602bd1291a8f3045e755b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66449801"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67552208"
 ---
 # <a name="visual-c-what39s-new-2003-through-2015"></a>Visual C++ ne&#39;s yeni 2003 ile 2015 arasındaki
 
@@ -1682,7 +1682,7 @@ Bu geliştirilmiş ISO C/C++ standartları desteği, C ++ 11 ile uyumlu olması 
 ### <a name="windows-runtime-app-development-support"></a>Windows çalışma zamanı uygulaması geliştirme desteği
 
 - **Yerel XAML tabanlı UI modeli**. Windows çalışma zamanı uygulamaları için yeni yerel XAML tabanlı UI modeli kullanabilirsiniz.
-- **Visual C++ bileşen uzantıları**. Bu uzantılar, Windows çalışma zamanı uygulamalarını gerekli bir parçası olan Windows çalışma zamanı nesnelerinin tüketimini basitleştirin. Daha fazla bilgi için [kullanarak yol haritası için Windows çalışma zamanı uygulamaları C++ ](../windows/universal-windows-apps-cpp.md) ve [Visual C++ dil başvurusu (C++/CX)](../cppcx/visual-c-language-reference-c-cx.md)
+- **Visual C++ bileşen uzantıları**. Bu uzantılar, Windows çalışma zamanı uygulamalarını gerekli bir parçası olan Windows çalışma zamanı nesnelerinin tüketimini basitleştirin. Daha fazla bilgi için [kullanarak yol haritası için Windows çalışma zamanı uygulamaları C++ ](../cppcx/universal-windows-apps-cpp.md) ve [Visual C++ dil başvurusu (C++/CX)](../cppcx/visual-c-language-reference-c-cx.md)
 - **DirectX oyunları**. Windows çalışma zamanı uygulamaları için yeni destek DirectX kullanarak etkileyici oyunlar geliştirme yapabilirsiniz.
 - **XAML/DirectX Interop**. Artık hem XAML hem de DirectX kullanan Windows çalışma zamanı uygulamaları verimli bir şekilde çalışmak.
 - **Windows çalışma zamanı DLL bileşeni geliştirme**. Bileşen DLL geliştirme, Genişletilebilir Windows çalışma zamanı ortamı sağlar.
@@ -1700,7 +1700,7 @@ Microsoft kullanabileceğiniz C++ derleyici ve kitaplıkları hedef Windows XP v
 
 #### <a name="parallel-programming-support"></a>Paralel Programlama Desteği
 
-##### <a name="c-accelerated-massive-parallelism-amp"></a>C++ hızlandırılmış yoğun paralellik (AMP)
+##### <a name="c-accelerated-massive-parallelism-amp"></a>C++ Accelerated Massive Parallelism (AMP)
 
 C++ AMP ayrı ekran kartı GPU'da normalde mevcut olan veri-paralel donanımlardan yararlanarak C++ kod yürütülmesini hızlandırır. C++ AMP programlama modeli çok boyutlu diziler, dizin oluşturma, bellek aktarımı, döşeme ve bir matematiksel işlev kitaplığını içerir. C++ AMP dil uzantılarını ve derleyici kısıtlamaları'ı kullanarak nasıl verilerin CPU'dan GPU'ya ve geri taşındığını kontrol edebilirsiniz.
 
