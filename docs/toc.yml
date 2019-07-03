@@ -93,6 +93,8 @@
           href: build/cmake-projects-in-visual-studio.md
         - name: 'Öğretici: Visual Studio’da platformlar arası C++ projeleri oluşturma'
           href: build/get-started-linux-cmake.md
+        - name: CMake projelerinde Clang/LLVM
+          href: build/clang-support-cmake.md
         - name: Linux CMake projesi yapılandırma
           href: build/../linux/cmake-linux-project.md
         - name: CMake derleme ayarlarını özelleştirme
@@ -3740,10 +3742,10 @@
                   href: cpp/comments-cpp.md
                 - name: Tanımlayıcılar
                   href: cpp/identifiers-cpp.md
-                - name: Anahtar Sözcükler
+                - name: Anahtar sözcükler
                   expanded: false
                   items:
-                    - name: Anahtar Sözcükler
+                    - name: Anahtar sözcükler
                       href: cpp/keywords-cpp.md
                     - name: auto anahtar sözcüğü
                       href: cpp/auto-keyword.md
