@@ -8,7 +8,7 @@
       "locale": "tr-tr",
       "monikers": [],
       "moniker_ranges": [">= vs-2015"],
-      "open_to_public_contributors": false,
+      "open_to_public_contributors": true,
       "type_mapping": {
         "Conceptual": "Content",
         "ManagedReference": "Content",
