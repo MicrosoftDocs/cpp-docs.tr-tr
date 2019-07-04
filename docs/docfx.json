@@ -58,7 +58,8 @@
       ],
       "feedback_system": "GitHub",
       "feedback_github_repo": "MicrosoftDocs/cpp-docs.tr-tr",
-      "feedback_product_url": "https://developercommunity.visualstudio.com/spaces/62/index.html"
+      "feedback_product_url": "https://developercommunity.visualstudio.com/spaces/62/index.html",
+      "disable_contribution_on_translation_quality": ["MT"]
     },
     "fileMetadata": {
       "ms.tgt_pltfrm": {
@@ -205,26 +206,6 @@
         "standard-library/**.md": "corob",
         "text/**.md": "corob",
         "windows/**.md": "mblome"
-      },
-      "open_to_public_contributors": {
-        "assembler/**.md": false,
-        "atl-mfc-shared/**.md": false,
-        "atl/**.md": false,
-        "build/**.md": false,
-        "cloud/**.md": false,
-        "cpp/**.md": false,
-        "cppcx/**.md": false,
-        "data/**.md": false,
-        "dotnet/**.md": false,
-        "error-messages/**.md": false,
-        "intrinsics/**.md": false,
-        "mfc/**.md": false,
-        "parallel/**.md": false,
-        "preprocessor/**.md": false,
-        "security/**.md": false,
-        "standard-library/**.md": false,
-        "text/**.md": false,
-        "windows/**.md": false
       }
     },
     "template": [],
