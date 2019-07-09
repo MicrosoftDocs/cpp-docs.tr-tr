@@ -1,6 +1,6 @@
 ---
 title: CHandle sınıfı
-ms.date: 11/04/2016
+ms.date: 07/09/2019
 f1_keywords:
 - CHandle
 - ATLBASE/ATL::CHandle
@@ -12,12 +12,12 @@ f1_keywords:
 helpviewer_keywords:
 - CHandle class
 ms.assetid: 883e9db5-40ec-4e29-9c74-4dd2ddd2e35d
-ms.openlocfilehash: 19e761ea8eb133db55b4d24600f2a1fd01ac3e34
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 86d2cba6c3ee2e914d96ae2a09b642d556d46027
+ms.sourcegitcommit: 07b34ca1c1fecced9fadc95de15dc5fee4f31e5a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62245640"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67693405"
 ---
 # <a name="chandle-class"></a>CHandle sınıfı
 
@@ -85,7 +85,7 @@ void Attach(HANDLE h) throw();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Atar `CHandle` nesnesini *h* tanıtıcı. Hatalarını düzeltir yapılarında bir ATLASSERT gerçekleştirilecektir *h* null. Tanıtıcı geçerliliğini dair herhangi bir denetim yapılmaz.
+Atar `CHandle` nesnesini *h* tanıtıcısı ve çağrıları **h.Detach()** . Hatalarını düzeltir yapılarında bir ATLASSERT gerçekleştirilecektir *h* null. Tanıtıcı geçerliliğini dair herhangi bir denetim yapılmaz.
 
 ##  <a name="chandle"></a>  CHandle::CHandle
 

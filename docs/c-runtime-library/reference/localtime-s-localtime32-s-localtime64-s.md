@@ -1,6 +1,6 @@
 ---
 title: localtime_s, _localtime32_s, _localtime64_s
-ms.date: 11/04/2016
+ms.date: 07/09/2019
 apiname:
 - _localtime64_s
 - _localtime32_s
@@ -32,12 +32,12 @@ helpviewer_keywords:
 - time, converting values
 - localtime_s function
 ms.assetid: 842d1dc7-d6f8-41d3-b340-108d4b90df54
-ms.openlocfilehash: 44b2eb2515035d56143a2aab251437a92515e652
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 454ab492fbe8a31b9ceeca518fa5e590271dbf06
+ms.sourcegitcommit: 07b34ca1c1fecced9fadc95de15dc5fee4f31e5a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62157299"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67693422"
 ---
 # <a name="localtimes-localtime32s-localtime64s"></a>localtime_s, _localtime32_s, _localtime64_s
 
@@ -84,9 +84,9 @@ Başarılıysa sıfır. Bir hata varsa dönüş değeri bir hata kodudur. Hata k
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Localtime32_s** işlevi dönüştürür bir saat olarak depolanan bir [time_t](../../c-runtime-library/standard-types.md) değeri ve sonucu türündeki yapıda depolar [tm](../../c-runtime-library/standard-types.md). **Uzun** değer *sourceTime* saniye gece yarısından beri geçen temsil eder (00: 00:00), 1 Ocak 1970, UTC. Bu değer genellikle öğesinden alınan [zaman](time-time32-time64.md) işlevi.
+**Localtime_s** işlevi dönüştürür bir saat olarak depolanan bir [time_t](../../c-runtime-library/standard-types.md) değeri ve sonucu türündeki yapıda depolar [tm](../../c-runtime-library/standard-types.md). **Time_t** değer *sourceTime* saniye gece yarısından beri geçen temsil eder (00: 00:00), 1 Ocak 1970, UTC. Bu değer genellikle öğesinden alınan [zaman](time-time32-time64.md) işlevi.
 
-**_localtime32_s** kullanıcı önce genel ortam değişkenini ayarlar, yerel saat dilimini düzeltir **TZ**. Zaman **TZ** ayarlandığında, üç ortam değişkenlerini (**_timezone**, **_daylight**, ve **_tzname**) de otomatik olarak ayarlanır. Varsa **TZ** değişkeni ayarlanmamış, **localtime32_s** Denetim Masası'ndaki Tarih/saat uygulamasında belirtilen saat dilimi bilgilerini kullanmaya çalışır. Bu bilgileri alınamıyor, Pasifik Saat dilimini belirtir, PST8PDT, varsayılan olarak kullanılır. Bkz: [_tzset](tzset.md) bu değişkenleri açıklaması. **TZ** standart ANSI tanımının parçası değildir ve Microsoft uzantısı olduğundan **localtime**.
+**localtime_s** kullanıcı önce genel ortam değişkenini ayarlar, yerel saat dilimini düzeltir **TZ**. Zaman **TZ** ayarlandığında, üç ortam değişkenlerini ( **_timezone**, **_daylight**, ve **_tzname**) de otomatik olarak ayarlanır. Varsa **TZ** değişkeni ayarlanmamış, **localtime_s** Denetim Masası'ndaki Tarih/saat uygulamasında belirtilen saat dilimi bilgilerini kullanmaya çalışır. Bu bilgileri alınamıyor, Pasifik Saat dilimini belirtir, PST8PDT, varsayılan olarak kullanılır. Bkz: [_tzset](tzset.md) bu değişkenleri açıklaması. **TZ** standart ANSI tanımının parçası değildir ve Microsoft uzantısı olduğundan **localtime**.
 
 > [!NOTE]
 > Gün ışığından yararlanma etkin olup olmadığını belirlemek hedef ortamı denemelisiniz.

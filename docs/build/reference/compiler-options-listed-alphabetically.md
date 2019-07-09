@@ -3,12 +3,12 @@ title: Alfabetik Listelenmiş Derleyici Seçenekleri
 ms.date: 05/06/2019
 helpviewer_keywords:
 - compiler options, C++
-ms.openlocfilehash: ba4357f4c14e5cca9363ad2029374ede93529a2a
-ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.openlocfilehash: 7e69aa501dd0a7dbf2af51b6fa2c5bf4339eb416
+ms.sourcegitcommit: 07b34ca1c1fecced9fadc95de15dc5fee4f31e5a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65221769"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67693425"
 ---
 # <a name="compiler-options-listed-alphabetically"></a>Alfabetik Listelenmiş Derleyici Seçenekleri
 
@@ -158,6 +158,7 @@ Derleyici Seçenekleri kapsamlı bir alfabetik listesi verilmiştir. Kategorisel
 |[/Zi](z7-zi-zi-debug-information-format.md)|Tam hata ayıklama bilgisi üretir.|
 |[/Zl](zl-omit-default-library-name.md)|Varsayılan kitaplık adını .obj dosyasından (yalnızca x86) kaldırır.|
 |[/Zm](zm-specify-precompiled-header-memory-allocation-limit.md)|Önceden derlenmiş üst bilgi bellek ayırma sınırını belirtir.|
+|[/ZO](zo-enhance-optimized-debugging.md)|Gelişmiş hata ayıklama bilgileri için en iyi duruma getirilmiş kodu üretir.|
 |[/ZP](zp-struct-member-alignment.md)|Yapı üyelerini paketler.|
 |[/ZS](zs-syntax-check-only.md)|Yalnızca söz dizimini denetler.|
 |[/ZW](zw-windows-runtime-compilation.md)|Windows çalışma zamanında çalışacak bir çıktı dosyası üretir.|
