@@ -143,12 +143,12 @@ helpviewer_keywords:
 - _WINRT_DLL macro
 - __func__ identifier
 ms.assetid: 1cc5f70a-a225-469c-aed0-fe766238e23f
-ms.openlocfilehash: dedcab9b0addd3696749b50fef92b70081981c03
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: bf74bc3b5293cba018c07b6b5c56c85695db7635
+ms.sourcegitcommit: 6cb0670ca7d40e8ec55f162b8ce2847f5ae15f5c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62179912"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67787362"
 ---
 # <a name="predefined-macros"></a>Önceden Tanımlı Makrolar
 
@@ -362,7 +362,7 @@ Bu ek önceden tanımlı makrolar MSVC destekler.
 
 - **&#95;MSC&#95;VER** tanımlanan derleyicinin sürüm numarasının büyük ve küçük sayı öğelerini kodlayan bir tamsayı değişmez. Birincil numara noktayla ayrılmış sürüm numarasının ilk öğedir ve ikincil numara ikinci öğedir. Örneğin, Microsoft C/C++ derleyicinin sürüm numarası 17.00.51106.1 ise  **&#95;MSC&#95;VER** makrosu 1700 olarak. Girin `cl /?` derleyicinin sürüm numarası görüntülemek için komut satırına. Bu makro, her zaman tanımlanır.
 
-   |Visual Studio sürüm|**&AMP;#95;MSC&AMP;#95;VER**|
+   |Visual Studio sürüm|**&#95;MSC&#95;VER**|
    |-|-|
    |Visual Studio 6.0|1200|
    |Visual Studio .NET 2002 (7.0)|1300|
@@ -381,6 +381,9 @@ Bu ek önceden tanımlı makrolar MSVC destekler.
    |Visual Studio 2017 sürüm 15,8|1915|
    |Visual Studio 2017 sürüm 15.9|1916|
    |Visual Studio 2019 RTW (16.0)|1920|
+   |Visual Studio 2019 16.1 sürümü|1921|
+   |Visual Studio 2019 16,2 sürümü|1922|
+   |Visual Studio 2019 16,3 sürümü|1923|
 
    Derleyici yayınları veya belirli bir sürümü Visual Studio'nun veya sonra güncelleştirmeleri, kullanım için test etmek için **>=** işleci. Karşılaştırmak için bir koşullu yönergesinde kullanabilirsiniz  **&#95;MSC&#95;VER** bilinen bu sürüme karşı. Sürüm numarasının azalan düzende, karşılaştırmaları karşılaştırmak için birkaç birbirini dışlayan sürümleri varsa, sipariş. Örneğin, bu kod, Visual Studio 2017 ve sonrasında yayımlanan derleyicileri için denetler. Ardından, derleyicilerini veya Visual Studio 2015 sonra yayımlanan denetler. Ardından Visual Studio 2015 öncesinde yayımlanan tüm derleyiciler denetler:
 
@@ -396,7 +399,7 @@ Bu ek önceden tanımlı makrolar MSVC destekler.
 
    Daha fazla bilgi için [Visual C++ Derleyici sürümü](https://devblogs.microsoft.com/cppblog/visual-c-compiler-version/) Microsoft C++ Team blogunda.
 
-- **&#95;MSVC&#95;LANG** derleyici tarafından hedeflenen C++ dil standardı belirten bir tamsayı sabit değeri olarak tanımlanır. Yalnızca C++ derlenmiş kod olarak ayarlanır. Tamsayı sabit değeri makrodur 201402 L değeri varsayılan olarak, veya [/Std: c ++ 14](../build/reference/std-specify-language-standard-version.md) derleyici seçeneği belirtildi. Makro, 201703 M'ye ayarlanır [/Std: c ++ 17](../build/reference/std-specify-language-standard-version.md) derleyici seçeneği belirtildi. Yüksek, belirtilmeyen bir değere ayarlanmış olduğunda [/Std: c ++ Son](../build/reference/std-specify-language-standard-version.md) seçeneği belirtildi. Aksi takdirde, makro tanımsız olur.  **&#95;MSVC&#95;LANG** makrosu ve [/Std (dil standart sürümünü belirtin)](../build/reference/std-specify-language-standard-version.md) derleyici seçenekleri olan Visual Studio 2015 güncelleştirme 3'te sonraki sürümlerinde kullanılabilir.
+- **&#95;MSVC&#95;LANG** derleyici tarafından hedeflenen C++ dil standardı belirten bir tamsayı sabit değeri olarak tanımlanır. Yalnızca C++ derlenmiş kod olarak ayarlanır. Tamsayı sabit değeri makrodur 201402 L değeri varsayılan olarak, veya [/Std: c ++ 14](../build/reference/std-specify-language-standard-version.md) derleyici seçeneği belirtildi. Makro, 201703 M'ye ayarlanır [/Std: c ++ 17](../build/reference/std-specify-language-standard-version.md) derleyici seçeneği belirtildi. Yüksek, belirtilmeyen bir değere ayarlanmış olduğunda [/Std: c ++ Son](../build/reference/std-specify-language-standard-version.md) seçeneği belirtildi. Aksi takdirde, makro tanımsız olur. **&#95;MSVC&#95;LANG** makrosu ve [/Std (dil standart sürümünü belirtin)](../build/reference/std-specify-language-standard-version.md) derleyici seçenekleri olan Visual Studio 2015 güncelleştirme 3'te sonraki sürümlerinde kullanılabilir.
 
 - **&#95;&#95;MSVC&#95;çalışma zamanı&#95;DENETLER** biri 1 tanımlanmış, [/RTC](../build/reference/rtc-run-time-error-checks.md) derleyici seçeneklerini ayarlayın. Aksi takdirde, tanımlı değil.
 
@@ -421,7 +424,7 @@ Bu ek önceden tanımlı makrolar MSVC destekler.
 
 - **&#95;VC&#95;NODEFAULTLIB** 1 olduğunda tanımlanan [/Zl (varsayılan kitaplık adını atla)](../build/reference/zl-omit-default-library-name.md) derleyici seçeneği ayarlanır. Aksi takdirde, tanımlı değil.
 
-- **&#95;WCHAR&#95;T&#95;TANIMLANAN** 1 olduğunda tanımlanan varsayılan [/ZC: wchar_t](../build/reference/zc-wchar-t-wchar-t-is-native-type.md) derleyici seçeneği ayarlanır.  **&#95;WCHAR&#95;T&#95;TANIMLANAN** makrosu tanımlandı, ancak hiçbir değer sahipse `/Zc:wchar_t-` derleyici seçeneği ayarlanır, ve **wchar_t** dahil olan sistem üstbilgi dosyasında tanımlanan, Proje. Aksi takdirde, tanımlı değil.
+- **&#95;WCHAR&#95;T&#95;TANIMLANAN** 1 olduğunda tanımlanan varsayılan [/ZC: wchar_t](../build/reference/zc-wchar-t-wchar-t-is-native-type.md) derleyici seçeneği ayarlanır. **&#95;WCHAR&#95;T&#95;TANIMLANAN** makrosu tanımlandı, ancak hiçbir değer sahipse `/Zc:wchar_t-` derleyici seçeneği ayarlanır, ve **wchar_t** dahil olan sistem üstbilgi dosyasında tanımlanan, Proje. Aksi takdirde, tanımlı değil.
 
 - **&#95;WIN32** tanımlanan 32 bit ARM, 64-bit ARM x86, derleme hedef olduğunda 1 olarak veya x 64. Aksi takdirde, tanımlı değil.
 
