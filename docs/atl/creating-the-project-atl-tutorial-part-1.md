@@ -3,12 +3,12 @@ title: Proje Oluşturma (ATL Eğitmeni, Bölüm 1)
 ms.custom: get-started-article
 ms.date: 05/06/2019
 ms.assetid: f6b727d1-390a-4b27-b82f-daadcd9fc059
-ms.openlocfilehash: 292faf1769baa2e1c3fc6e52ba6df065cf08766e
-ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.openlocfilehash: 0df793b23aaec57835774252eeac21b092f8a9e9
+ms.sourcegitcommit: 0e3da5cea44437c132b5c2ea522bd229ea000a10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65221411"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "67861015"
 ---
 # <a name="creating-the-project-atl-tutorial-part-1"></a>Proje Oluşturma (ATL Eğitmeni, Bölüm 1)
 
@@ -44,15 +44,10 @@ Bu öğreticide, bir Çokgen görüntüleyen bir ActiveX nesnesini oluşturan bi
 
     Kaynak kodu konumu için \Users genellikle varsayılan\\\<kullanıcıadı > \source\repos ve yeni bir klasör otomatik olarak oluşturulur.
 
-1. Tıklayın **Tamam** ve **ATL projesi** Sihirbazı açılır.
+1. Visual Studio 2019'nda varsayılan değerleri kabul edin ve **Tamam**. 
+   Visual Studio 2017'de tıklayın **Tamam** açmak için **ATL projesi** Sihirbazı. Tıklayın **uygulama ayarları** kullanılabilir seçenekleri görmek için. Bu proje bir denetimi oluşturur ve bir işlem sunucusu bir denetim olmalıdır çünkü bırakın **uygulama türü** bir DLL olarak.           **Tamam**'ı tıklatın.
 
-1. Tıklayın **uygulama ayarları** kullanılabilir seçenekleri görmek için.
-
-1. Bir denetim oluşturuyorsanız ve bir işlem sunucusu bir denetim olmalıdır gibi bırakın **uygulama türü** bir DLL olarak.
-
-1. Diğer seçenekleri varsayılan değerlerinde bırakın ve tıklayın **Tamam**.
-
-**ATL projesi Sihirbazı** birkaç dosya oluşturarak projesi oluşturacaksınız. Bu dosyalarda görüntüleyebileceğiniz **Çözüm Gezgini** genişleterek `Polygon` nesne. Dosya aşağıda listelenmiştir.
+Visual Studio projeyi birkaç dosya oluşturarak oluşturun. Bu dosyalarda görüntüleyebileceğiniz **Çözüm Gezgini** genişleterek `Polygon` nesne. Dosya aşağıda listelenmiştir.
 
 |Dosya|Açıklama|
 |----------|-----------------|
@@ -72,7 +67,7 @@ Bu öğreticide, bir Çokgen görüntüleyen bir ActiveX nesnesini oluşturan bi
 
 1. Tıklayarak **bağlayıcı**. Değişiklik **UserRedirection başına** seçeneğini **Evet**.
 
-1. **Tamam**'ı tıklatın.
+1.           **Tamam**'ı tıklatın.
 
 Sonraki adımda, projenize bir denetim ekleyeceksiniz.
 

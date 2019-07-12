@@ -8,12 +8,12 @@ helpviewer_keywords:
 - CommitTrans method
 - Rollback method, ODBC transactions
 ms.assetid: 9e00bbf4-e9fb-4332-87fc-ec8ac61b3f68
-ms.openlocfilehash: 996b8410366661cb91cf82cfff823f17d3aad8b4
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: d03ec3f71c38f7790d66fbf6f800b7647e080147
+ms.sourcegitcommit: 0e3da5cea44437c132b5c2ea522bd229ea000a10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62329913"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "67860912"
 ---
 # <a name="transaction-how-transactions-affect-updates-odbc"></a>İşlem: İşlemler (ODBC) güncelleştirmeleri nasıl etkiler
 
@@ -54,7 +54,6 @@ Aşağıdaki tablo etkilerini açıklar `Rollback` işlemlerle ilgili.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[İşlem (ODBC)](../../data/odbc/transaction-odbc.md)<br/>
 [İşlem (ODBC)](../../data/odbc/transaction-odbc.md)<br/>
 [İşlem: Kayıt Kümesinde İşlem Gerçekleştirme (ODBC)](../../data/odbc/transaction-performing-a-transaction-in-a-recordset-odbc.md)<br/>
 [CDatabase Sınıfı](../../mfc/reference/cdatabase-class.md)<br/>

@@ -1,6 +1,6 @@
 ---
 title: C++'da Sıralamaya Genel Bakış
-ms.date: 06/28/2018
+ms.date: 07/12/2019
 ms.topic: reference
 f1_keywords:
 - marshaling
@@ -10,16 +10,16 @@ helpviewer_keywords:
 - C++ Support Library, marshaling
 - marshaling, about marshaling
 ms.assetid: 997dd4bc-5f98-408f-b890-f35de9ce3bb8
-ms.openlocfilehash: 9e3b8f561ce6609eb2afedb527a16c4803f69c53
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 937fbdf4b3ed09344e69a8f1eb731565c36794ae
+ms.sourcegitcommit: 0e3da5cea44437c132b5c2ea522bd229ea000a10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62384744"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "67861169"
 ---
-# <a name="overview-of-marshaling-in-c"></a>C++'da Sıralamaya Genel Bakış
+# <a name="overview-of-marshaling-in-ccli"></a>İçinde hazırlama genel bakış C++/CLI
 
-Karma modda bazen verilerinizi yerel ve yönetilen türleri sıralamanız gerekir. Visual Studio 2008 ile sunulan *sıralama kitaplığı* yardımcı olmak için yönlendirmeyi ve basit bir şekilde veri dönüştürme.  Sıralama Kitaplığı işlevler bir dizi oluşur ve `marshal_context` hazırlama gerçekleştirmek için genel türleri sınıf. Kitaplık bu üstbilgisinde tanımlanır **dahil msclr** dizin, Visual Studio sürümü için:
+Karma modda bazen verilerinizi yerel ve yönetilen türleri sıralamanız gerekir. *Sıralama kitaplığı* hazırlamak ve basit bir şekilde veri dönüştürme yardımcı olur.  Sıralama Kitaplığı işlevler bir dizi oluşur ve `marshal_context` hazırlama gerçekleştirmek için genel türleri sınıf. Kitaplık bu üstbilgisinde tanımlanır **dahil msclr** dizin, Visual Studio sürümü için:
 
 |Üstbilgi|Açıklama|
 |---------------|-----------------|
@@ -71,8 +71,6 @@ Bu örnek, bir dahil etme üstbilgi bildiriminde msclr dizin içerecek şekilde 
 `#include "msclr\marshal_cppstd.h"`
 
 Sıralama Kitaplığı genişletilebilir, böylelikle kendi sıralama türlerini ekleyebilirsiniz. Hazırlama kitaplığını genişletme hakkında daha fazla bilgi için bkz. [nasıl yapılır: Hazırlama kitaplığını genişletme](../dotnet/how-to-extend-the-marshaling-library.md).
-
-Önceki sürümlerde, verileri kullanarak sıralama [Platform Çağırma](/dotnet/framework/interop/consuming-unmanaged-dll-functions). Hakkında daha fazla bilgi için `PInvoke`, bkz: [yönetilen koddan yerel işlevleri çağırma](../dotnet/calling-native-functions-from-managed-code.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -2,12 +2,12 @@
 title: 'Nasıl yapılır: Mevcut C++ kodunu Evrensel Windows platformu uygulamasında kullanma'
 ms.date: 04/08/2019
 ms.assetid: 87e5818c-3081-42f3-a30d-3dca2cf0645c
-ms.openlocfilehash: 3aeef205effe072a25fc0b3dabb9145245461d45
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b46cbdc088908f59d6cbdc0ecd7cd6475da370d8
+ms.sourcegitcommit: 0e3da5cea44437c132b5c2ea522bd229ea000a10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62205198"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "67861128"
 ---
 # <a name="how-to-use-existing-c-code-in-a-universal-windows-platform-app"></a>Nasıl yapılır: Mevcut C++ kodunu Evrensel Windows platformu uygulamasında kullanma
 
@@ -135,7 +135,7 @@ Aşağıdaki yordamı kullanarak işlevleri sunan yerel bir DLL sahip olduğu du
 
 2. Açık **proje özellikleri** DLL projesi ve küme için **yapılandırma** için **yapılandırmalarında**.
 
-3. İçinde **proje özellikleri**altında **C/C++** > **genel** sekmesinde, belirleyin **Windows çalışma zamanı uzantısını kullanma** için **Evet (/ZW)**. Bu bileşen uzantıları sağlar (C++/CX).
+3. İçinde **proje özellikleri**altında **C/C++**  > **genel** sekmesinde, belirleyin **Windows çalışma zamanı uzantısını kullanma** için **Evet (/ZW)** . Bu bileşen uzantıları sağlar (C++/CX).
 
 4. İçinde **Çözüm Gezgini**, proje düğümünü seçin, kısayol menüsünü açın ve seçin **projeyi**. Ardından, yüklenmemiş proje düğümünün kısayol menüsünde açın ve proje dosyasını düzenlemek seçin. Bulun `WindowsTargetPlatformVersion` öğesi şu öğeleri ile değiştirin.
 
@@ -193,9 +193,9 @@ Bir UWP projesi yerel C++ statik kitaplıkta kullanabilirsiniz, ancak bazı sın
 
 ### <a name="to-use-a-native-c-static-library-in-a-uwp-project"></a>Bir UWP projesi yerel C++ statik kitaplıkta kullanmak için
 
-1. UWP projesi için proje özelliklerinde içinde **bağlayıcı** bölümünde, yolu kitaplığa eklemek **giriş** özelliği. Örneğin, bir kitaplık, çıktısını yerleştirir projedeki *SolutionFolder*\Debug\MyNativeLibrary\MyNativeLibrary.lib, göreli yol ekleme `Debug\MyNativeLibrary\MyNativeLibrary.lib`.
+1. UWP projesi için proje özelliklerinde seçin **yapılandırma özellikleri** > **bağlayıcı** > **giriş** sol bölmesinde. Sağ bölmede, yolu kitaplığa eklemek **ek bağımlılıklar** özelliği. Örneğin, bir kitaplık, çıktısını yerleştirir projedeki *SolutionFolder*\Debug\MyNativeLibrary\MyNativeLibrary.lib, göreli yol ekleme `Debug\MyNativeLibrary\MyNativeLibrary.lib`.
 
-2. UWP projesi içinde pch.h üstbilgi dosyasına başvurmak ve kitaplığı kullanan kod ekleme başlatmak için bir ekleme deyimi ekleyin.
+2. Üstbilgi dosyası pch.h dosyanıza (varsa) ya da gerektiği gibi herhangi bir .cpp dosya başvurusu ve kitaplığı kullanan kod ekleme başlatmak için bir ekleme deyimi ekleyin.
 
    ```cpp
    #include "..\MyNativeLibrary\giraffe.h"
@@ -221,7 +221,7 @@ Statik kitaplıkta bir UWP uygulamasında yerel API'lerin kullanmasını istedi�
 
 6. Şimdi bazı kod Çoğalttığınız. Birden fazla önceden derlenmiş üst bilgi (örneğin stdafx.h ve pch.h) varsa tutmayı seçin. Tüm gerekli kodu kopyalayın, gibi açıklamaalarını tutma bir içerir. Ardından, projedeki diğer ve Özellikler altında Sil **önceden derlenmiş üst bilgiler**, üst bilgi dosyasının adının doğru olduğundan emin olun.
 
-   Önceden derlenmiş üst bilgi kullanılacak dosyasını değiştirdiyseniz, önceden derlenmiş üst bilgi seçeneklerini her dosya için doğru olduğundan emin olun. Sırayla her .cpp dosyası seçin, kendi özellikleri penceresini açın ve tüm ayarlandığından emin olun **kullan (/Yu)**, istenen Ön derlenmiş üstbilgi dışında ayarlanması **oluştur (/Yc)**.
+   Önceden derlenmiş üst bilgi kullanılacak dosyasını değiştirdiyseniz, önceden derlenmiş üst bilgi seçeneklerini her dosya için doğru olduğundan emin olun. Sırayla her .cpp dosyası seçin, kendi özellikleri penceresini açın ve tüm ayarlandığından emin olun **kullan (/Yu)** , istenen Ön derlenmiş üstbilgi dışında ayarlanması **oluştur (/Yc)** .
 
 7. Projeyi oluşturmak ve tüm hataları çözümleyin. Bu hataları kullanarak kaynaklanabilir `/ZW` seçeneği veya Windows SDK'sı, yeni bir sürümü ile bunun veya bağımlılıkları kitaplığınızı bağlı başlık dosyaları ya da proje ayarlarında eski arasındaki farklar gibi olmanızdan kaynaklanabilir Proje ve yeni bir tane.
 

@@ -100,12 +100,12 @@ helpviewer_keywords:
 - END_PARAM_MAP macro
 - SET_PARAM_TYPE macro
 ms.assetid: 8765eb7b-32dd-407c-bacf-8890ef959837
-ms.openlocfilehash: d4ed6b86d99cdfc272b5df10ede6af6bd05ed366
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 854172de41ba6298d598801439d459b423c1ab37
+ms.sourcegitcommit: 0e3da5cea44437c132b5c2ea522bd229ea000a10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62361353"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "67861160"
 ---
 # <a name="macros-and-global-functions-for-ole-db-consumer-templates"></a>OLE DB Tüketici Şablonları için Makrolar ve Genel İşlevler
 
@@ -452,7 +452,7 @@ BLOB_ENTRY_LENGTH_STATUS(
 *Uzunluğu*<br/>
 [out] Bayt cinsinden BLOB sütun (gerçek) uzunluğu.
 
-*Durumu*<br/>
+*status*<br/>
 [out] BLOB veri sütununun durumu.
 
 #### <a name="example"></a>Örnek
@@ -483,7 +483,7 @@ BLOB_ENTRY_STATUS(nOrdinal, IID, flags, data, status)
 *Veri*<br/>
 [in] Kullanıcı kaydındaki karşılık gelen veri üyesi.
 
-*Durumu*<br/>
+*status*<br/>
 [out] BLOB alan durumu.
 
 #### <a name="example"></a>Örnek
@@ -572,7 +572,7 @@ BLOB_NAME_LENGTH_STATUS(pszName, IID, flags, data, length, status )
 *Uzunluğu*<br/>
 [out] Bayt cinsinden BLOB sütun (gerçek) uzunluğu.
 
-*Durumu*<br/>
+*status*<br/>
 [out] BLOB alan durumu.
 
 ### <a name="blob_name_status"></a> BLOB_NAME_STATUS
@@ -599,7 +599,7 @@ BLOB_NAME_STATUS(pszName, IID, flags, data, status )
 *Veri*<br/>
 [in] Kullanıcı kaydındaki karşılık gelen veri üyesi.
 
-*Durumu*<br/>
+*status*<br/>
 [out] BLOB alan durumu.
 
 ### <a name="bookmark_entry"></a> BOOKMARK_ENTRY
@@ -736,7 +736,7 @@ Bkz: [IAccessor::CreateAccessor'ı](/previous-versions/windows/desktop/ms716845(
 *Uzunluğu*<br/>
 [in] Sütun uzunluğu için bağlanacak değişkeni.
 
-*Durumu*<br/>
+*status*<br/>
 [in] Sütun durumuna bağlı değişken.
 
 #### <a name="remarks"></a>Açıklamalar
@@ -809,7 +809,7 @@ Bkz: [IAccessor::CreateAccessor'ı](/previous-versions/windows/desktop/ms716845(
 *Uzunluğu*<br/>
 [in] Sütun uzunluğu için bağlanacak değişkeni.
 
-*Durumu*<br/>
+*status*<br/>
 [in] Sütun durumuna bağlı değişken.
 
 #### <a name="remarks"></a>Açıklamalar
@@ -926,7 +926,7 @@ Bkz: [IAccessor::CreateAccessor'ı](/previous-versions/windows/desktop/ms716845(
 *Uzunluğu*<br/>
 [in] Sütun uzunluğu için bağlanacak değişkeni.
 
-*Durumu*<br/>
+*status*<br/>
 [in] Sütun durumuna bağlı değişken.
 
 #### <a name="remarks"></a>Açıklamalar
@@ -965,7 +965,7 @@ Bkz: [IAccessor::CreateAccessor'ı](/previous-versions/windows/desktop/ms716845(
 *Veri*<br/>
 [in] Kullanıcı kaydındaki karşılık gelen veri üyesi.
 
-*Durumu*<br/>
+*status*<br/>
 [in] Sütun durumuna bağlı değişken.
 
 #### <a name="remarks"></a>Açıklamalar
@@ -998,7 +998,7 @@ Bkz: [IAccessor::CreateAccessor'ı](/previous-versions/windows/desktop/ms716845(
 *Veri*<br/>
 [in] Kullanıcı kaydındaki karşılık gelen veri üyesi.
 
-*Durumu*<br/>
+*status*<br/>
 [in] Sütun durumuna bağlı değişken.
 
 #### <a name="remarks"></a>Açıklamalar
@@ -1125,7 +1125,7 @@ COLUMN_NAME_EX(pszName, wType, nLength, nPrecision, nScale, data, length, status
 *Uzunluğu*<br/>
 [in] Sütun uzunluğu için bağlanacak değişkeni.
 
-*Durumu*<br/>
+*status*<br/>
 [in] Sütun durumuna bağlı değişken.
 
 #### <a name="remarks"></a>Açıklamalar
@@ -1178,7 +1178,7 @@ COLUMN_NAME_LENGTH_STATUS(pszName, data, length, status )
 *Uzunluğu*<br/>
 [in] Sütun uzunluğu için bağlanacak değişkeni.
 
-*Durumu*<br/>
+*status*<br/>
 [in] Sütun durumuna bağlı değişken.
 
 #### <a name="remarks"></a>Açıklamalar
@@ -1271,7 +1271,7 @@ COLUMN_NAME_PS_LENGTH_STATUS(pszName, nPrecision, nScale, data, length, status )
 *Uzunluğu*<br/>
 [in] Sütun uzunluğu için bağlanacak değişkeni.
 
-*Durumu*<br/>
+*status*<br/>
 [in] Sütun durumuna bağlı değişken.
 
 #### <a name="remarks"></a>Açıklamalar
@@ -1302,7 +1302,7 @@ COLUMN_NAME_PS_STATUS(pszName, nPrecision, nScale, data, status )
 *Veri*<br/>
 [in] Kullanıcı kaydındaki karşılık gelen veri üyesi.
 
-*Durumu*<br/>
+*status*<br/>
 [in] Sütun durumuna bağlı değişken.
 
 #### <a name="remarks"></a>Açıklamalar
@@ -1327,7 +1327,7 @@ COLUMN_NAME_STATUS(pszName, data, status )
 *Veri*<br/>
 [in] Kullanıcı kaydındaki karşılık gelen veri üyesi.
 
-*Durumu*<br/>
+*status*<br/>
 [in] Sütun durumuna bağlı değişken.
 
 #### <a name="remarks"></a>Açıklamalar
@@ -1436,7 +1436,7 @@ COLUMN_NAME_TYPE_STATUS(pszName, wType, status, data)
 *wType*<br/>
 [in] Veri türü.
 
-*Durumu*<br/>
+*status*<br/>
 [in] Sütun durumuna bağlı değişken.
 
 *Veri*<br/>
@@ -1636,6 +1636,5 @@ END_COLUMN_MAP()
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [OLE DB Tüketici Şablonları için Makrolar ve Genel İşlevler](../../data/oledb/macros-and-global-functions-for-ole-db-consumer-templates.md)<br/>
-[OLE DB Tüketici Şablonları](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
 [OLE DB Tüketici Şablonları](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
 [OLE DB Tüketici Şablonları Başvurusu](../../data/oledb/ole-db-consumer-templates-reference.md)

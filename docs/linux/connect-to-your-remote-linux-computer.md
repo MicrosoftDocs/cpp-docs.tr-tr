@@ -3,12 +3,12 @@ title: Hedef için Linux sisteminde Visual Studio bağlanma
 description: Uzak Linux makinesinin veya WSL gelen bir Visual Studio içinde nasıl C++ proje.
 ms.date: 06/19/2019
 ms.assetid: 5eeaa683-4e63-4c46-99ef-2d5f294040d4
-ms.openlocfilehash: 7fa09c49df3da39084edb6735a7a2ccc724c34d3
-ms.sourcegitcommit: 3ae8025df7fd50f5f56a0a2b5396533218bcc7dc
+ms.openlocfilehash: 00d7facca2857efb0b8b43b5aaf38edce348a511
+ms.sourcegitcommit: 0e3da5cea44437c132b5c2ea522bd229ea000a10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/20/2019
-ms.locfileid: "67285252"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "67861141"
 ---
 # <a name="connect-to-your-target-linux-system-in-visual-studio"></a>Hedef için Linux sisteminde Visual Studio bağlanma
 
@@ -108,7 +108,7 @@ Projeniz için WSL yapılandırmak için bkz [Linux projesi yapılandırma](conf
 
 [Linux projesi yapılandırma](configure-a-linux-project.md)<br />
 [Linux CMake projesi yapılandırma](cmake-linux-project.md)<br />
-[Deply, çalıştırma ve Linux projenizin hatalarını ayıklama](deploy-run-and-debug-your-linux-project.md)<br />
+[Dağıtma, çalıştırma ve Linux projenizin hatalarını ayıklama](deploy-run-and-debug-your-linux-project.md)<br />
 
 
 

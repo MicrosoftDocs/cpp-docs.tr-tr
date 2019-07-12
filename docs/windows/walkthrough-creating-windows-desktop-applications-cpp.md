@@ -6,12 +6,12 @@ helpviewer_keywords:
 - Windows applications [C++], Win32
 - Windows Desktop applications [C++]
 - Windows API [C++]
-ms.openlocfilehash: 0bc9ef82863fde361964234cca54f12aac1e2abe
-ms.sourcegitcommit: 18d3b1e9cdb4fc3a76f7a650c31994bdbd2bde64
+ms.openlocfilehash: 2cf9928d56c564edc0e3bda1935eb11004000985
+ms.sourcegitcommit: 0e3da5cea44437c132b5c2ea522bd229ea000a10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/29/2019
-ms.locfileid: "64877385"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "67861112"
 ---
 # <a name="walkthrough-create-a-traditional-windows-desktop-application-c"></a>İzlenecek yol: Geleneksel Windows masaüstü uygulaması (C++) oluştur
 
@@ -50,13 +50,13 @@ Windows masaüstü uygulaması için bir çalışma kodu girin ve ilk Windows Ma
 
 1. Seçin **Oluştur** projeyi oluşturmak için.
 
-1. **Windows Masaüstü projesi** iletişim kutusu görünür. Altında **uygulama türü**seçin **Windows uygulaması (.exe)**. Altında **ek seçenekler**seçin **boş proje**. Seçin **Tamam** projeyi oluşturmak için.
+1. **Windows Masaüstü projesi** iletişim kutusu görünür. Altında **uygulama türü**seçin **Windows uygulaması (.exe)** . Altında **ek seçenekler**seçin **boş proje**. Seçin **Tamam** projeyi oluşturmak için.
 
 1. İçinde **Çözüm Gezgini**, sağ **DesktopApp** projesinin **Ekle**ve ardından **yeni öğe**.
 
    ![DesktopApp projesine yeni öğe Ekle](../build/media/desktop-app-project-add-new-item-153.gif "DesktopApp projesine yeni öğe Ekle")
 
-1. İçinde **Yeni Öğe Ekle** iletişim kutusunda **C++ dosyası (.cpp)**. İçinde **adı** kutusuna, dosya için bir ad yazın örneğin, *HelloWindowsDesktop.cpp*. Seçin **ekleme**.
+1. İçinde **Yeni Öğe Ekle** iletişim kutusunda **C++ dosyası (.cpp)** . İçinde **adı** kutusuna, dosya için bir ad yazın örneğin, *HelloWindowsDesktop.cpp*. Seçin **ekleme**.
 
    ![DesktopApp projesine Ekle .cpp dosyası](../build/media/desktop-app-add-cpp-file-153.png "DesktopApp projesine Ekle .cpp dosyası")
 
@@ -70,13 +70,13 @@ Projeniz oluşturuldu ve kaynak dosyanızı Düzenleyicisi'nde açılır. Devam 
 
 1. Üzerinde **dosya** menüsünde seçin **yeni** seçip **proje**.
 
-1. İçinde **yeni proje** iletişim kutusunda, sol bölmede, **yüklü** > **Visual C++**, ardından **Windows Masaüstü**. Orta bölmede seçin **Windows Masaüstü Sihirbazı'nı**.
+1. İçinde **yeni proje** iletişim kutusunda, sol bölmede, **yüklü** > **Visual C++** , ardından **Windows Masaüstü**. Orta bölmede seçin **Windows Masaüstü Sihirbazı'nı**.
 
    İçinde **adı** kutusunda, proje için bir ad yazın örneğin, *DesktopApp*. **Tamam**’ı seçin.
 
    ![DesktopApp projesini adlandırın](../build/media/desktop-app-new-project-name-153.png "DesktopApp projesini adlandırın")
 
-1. İçinde **Windows Masaüstü projesi** iletişim altında **uygulama türü**seçin **Windows uygulaması (.exe)**. Altında **ek seçenekler**seçin **boş proje**. Seçin **Tamam** projeyi oluşturmak için.
+1. İçinde **Windows Masaüstü projesi** iletişim altında **uygulama türü**seçin **Windows uygulaması (.exe)** . Altında **ek seçenekler**seçin **boş proje**. Seçin **Tamam** projeyi oluşturmak için.
 
    ![Windows Masaüstü Proje Sihirbazı'nda DesktopApp oluşturma](../build/media/desktop-app-new-project-wizard-153.png "DesktopApp Windows Masaüstü Proje Sihirbazı'nda oluşturma")
 
@@ -84,7 +84,7 @@ Projeniz oluşturuldu ve kaynak dosyanızı Düzenleyicisi'nde açılır. Devam 
 
    ![DesktopApp projesine yeni öğe Ekle](../build/media/desktop-app-project-add-new-item-153.gif "DesktopApp projesine yeni öğe Ekle")
 
-1. İçinde **Yeni Öğe Ekle** iletişim kutusunda **C++ dosyası (.cpp)**. İçinde **adı** kutusuna, dosya için bir ad yazın örneğin, *HelloWindowsDesktop.cpp*. Seçin **ekleme**.
+1. İçinde **Yeni Öğe Ekle** iletişim kutusunda **C++ dosyası (.cpp)** . İçinde **adı** kutusuna, dosya için bir ad yazın örneğin, *HelloWindowsDesktop.cpp*. Seçin **ekleme**.
 
    ![DesktopApp projesine Ekle .cpp dosyası](../build/media/desktop-app-add-cpp-file-153.png "DesktopApp projesine Ekle .cpp dosyası")
 
@@ -116,7 +116,7 @@ Projeniz oluşturuldu ve kaynak dosyanızı Düzenleyicisi'nde açılır. Devam 
 
    ![DesktopApp projesine yeni öğe Ekle](../build/media/desktop-app-project-add-new-item-150.gif "DesktopApp projesine yeni öğe Ekle")
 
-1. İçinde **Yeni Öğe Ekle** iletişim kutusunda **C++ dosyası (.cpp)**. İçinde **adı** kutusuna, dosya için bir ad yazın örneğin, *HelloWindowsDesktop.cpp*. Seçin **ekleme**.
+1. İçinde **Yeni Öğe Ekle** iletişim kutusunda **C++ dosyası (.cpp)** . İçinde **adı** kutusuna, dosya için bir ad yazın örneğin, *HelloWindowsDesktop.cpp*. Seçin **ekleme**.
 
    ![DesktopApp projesine Ekle .cpp dosyası](../build/media/desktop-app-add-cpp-file-150.png "DesktopApp projesine Ekle .cpp dosyası")
 
@@ -589,7 +589,7 @@ Söz verdiğimiz gibi çalışan bir uygulama için tam kod aşağıda verilmiş
 
 1. Uygulamayı çalıştırmak için basın **F5**. "Hello, Windows Masaüstü!" metni içeren bir pencere ekranın sol üst köşesinde görüntülenir.
 
-   ![DesktopApp projeyi Çalıştır](../build/media/desktop-app-project-run-157.png "DesktopApp projeyi Çalıştır")
+   ![DesktopApp projeyi Çalıştır](../build/media/desktop-app-project-run-157.PNG "DesktopApp projeyi Çalıştır")
 
 Tebrikler! Siz bu kılavuzda tamamlayıp geleneksel Windows Masaüstü uygulamanızı oluşturdunuz.
 

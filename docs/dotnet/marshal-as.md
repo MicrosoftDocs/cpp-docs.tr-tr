@@ -1,6 +1,6 @@
 ---
 title: marshal_as
-ms.date: 11/04/2016
+ms.date: 07/12/2019
 ms.topic: reference
 f1_keywords:
 - marshal_as
@@ -9,12 +9,12 @@ f1_keywords:
 helpviewer_keywords:
 - marshal_as template [C++]
 ms.assetid: 2ed717da-2b11-41e5-981d-47d251771989
-ms.openlocfilehash: 2294d8fe94a32f281332c963b21a542366ae3207
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 6ab4962f18368f0d896f8b7343baf54e8f59ac52
+ms.sourcegitcommit: 0e3da5cea44437c132b5c2ea522bd229ea000a10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62386089"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "67861094"
 ---
 # <a name="marshalas"></a>marshal_as
 
@@ -44,6 +44,8 @@ Bu yöntem, yerel ve yönetilen türleri arasında verileri dönüştürmek içi
 Bir çift desteklenmeyen veri türleri sıralamanız çalışırsanız `marshal_as` bir hata oluşturur [C4996](../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md) derleme zamanında. Daha fazla bilgi için bu hata ile sağlanmış bir iletiyi okuyun. `C4996` Hata birden fazla yalnızca kullanım dışı işlevler için oluşturulabilir. Desteklenmeyen veri türleri bir çift hazırlamak bunun bir örneği çalışıyor.
 
 Sıralama Kitaplığı çeşitli üstbilgi dosyalarından oluşur. Herhangi bir dönüştürmeyi yalnızca bir dosya gerektirir, ancak diğer dönüştürmeleri için gerekiyorsa, ek dosyalar içerebilir. Tablodaki hangi dönüştürmeler hangi dosyalarıyla ilişkili olduğunu görmek için Ara `Marshaling Overview`. Yapmak istediğiniz hangi dönüştürülmesi bakılmaksızın, ad alanı her zaman etkin gereksinimidir.
+
+Oluşturur `System::ArgumentNullException(_EXCEPTION_NULLPTR)` giriş parametresi null ise.
 
 ## <a name="example"></a>Örnek
 

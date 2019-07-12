@@ -1,16 +1,16 @@
 ---
-title: çağırma kuralı x64
+title: x64 çağırma kuralı
 description: Varsayılan x64 ABI çağrı kuralı ayrıntıları.
 ms.date: 12/17/2018
 ms.assetid: 41ca3554-b2e3-4868-9a84-f1b46e6e21d9
-ms.openlocfilehash: 02bf4719766366049b600b148ad88fc238f4e54e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 2cad00ac7f2cb5fe086fa262a0f512330997391f
+ms.sourcegitcommit: 0e3da5cea44437c132b5c2ea522bd229ea000a10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62313629"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "67861155"
 ---
-# <a name="x64-calling-convention"></a>çağırma kuralı x64
+# <a name="x64-calling-convention"></a>x64 çağırma kuralı
 
 Bu bölümde standart süreçler ve içinde x64 (çağrılan) başka bir işleve çağrı yapmak için bir işlev (arayan) kullanan kurallar açıklanmaktadır kod.
 
@@ -142,12 +142,12 @@ Struct2 func4(int a, double b, int c, float d);
 
 ## <a name="callercallee-saved-registers"></a>Çağıran/Çağrılan Kaydedilmiş Yazmaçlar
 
-İşlev çağrılarında RAX'daki, RCX, RDX, R8, R9, R10, R11 geçici olarak kabul edilir ve dikkate alınması gereken kayıtları yok (sürece Aksi durumda güvenlik-kanıtlanabilir bütün program iyileştirmesi gibi analiz tarafından).
+İşlev çağrılarında RAX'daki, RCX, RDX, R8, R9, R10, R11, XMM0 5 ve YMM0 15 ve ZMM0 15 üst bölümleri geçici olarak kabul edilir ve dikkate alınması gereken kayıtları yok (sürece Aksi durumda güvenlik-kanıtlanabilir bütün program iyileştirmesi gibi analiz tarafından). AVX512VL üzerinde ZMM YMM ve XMM kayıtları 16-31 geçici olarak.
 
-Yazmaçları RBX, RBP, RDI, RSI, RSP, R12, R13, R14 ve R15 kayıtları kalıcı olarak kabul edilir ve kaydedilmesi gerekir ve bir işlev tarafından geri, bunları kullanır.
+Yazmaçları RBX, RBP, RDI, RSI, RSP, R12, R13, R14, R15 kayıtları ve XMM6 15 kalıcı olarak kabul edilir ve kaydedilmesi gerekir ve bir işlev tarafından geri, bunları kullanır.
 
 ## <a name="function-pointers"></a>İşlev işaretçileri
-
+ 
 İşlev işaretçileri, yalnızca ilgili işlevi etiketini işaretçileri olan. İşlev işaretçileri için içeriği (TOC) gereksinimleri tablosu vardır.
 
 ## <a name="floating-point-support-for-older-code"></a>Eski kod için kayan nokta desteği

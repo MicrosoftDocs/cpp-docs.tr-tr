@@ -13,16 +13,16 @@ f1_keywords:
 helpviewer_keywords:
 - VC++ Directories Property Page
 ms.assetid: 428eeef6-f127-4271-b3ea-0ae6f2c3d624
-ms.openlocfilehash: e739ea99df424f44dc43a28e3dc01c3529bb0c1a
-ms.sourcegitcommit: 28eae422049ac3381c6b1206664455dbb56cbfb6
+ms.openlocfilehash: aff143fca47cb5958b90e4a3f4c7ec284f2129f5
+ms.sourcegitcommit: 0e3da5cea44437c132b5c2ea522bd229ea000a10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66450710"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "67861054"
 ---
 # <a name="vc-directories-property-page-windows"></a>VC ++ dizinleri özellik sayfası (Windows)
 
-Visual Studio şu anda seçili proje oluşturma sırasında kullanmak için hangi dizinleri bildirmek için bu özellik sayfasını kullanın. Bir çözümde birden çok proje için dizinleri ayarlamak için bir özel özellik sayfası ölçeklendirmesini kullanacak [paylaşımı veya resuse Visual Studio C++ proje ayarlarını](../create-reusable-property-configurations.md).
+Visual Studio şu anda seçili proje oluşturma sırasında kullanmak için hangi dizinleri bildirmek için bu özellik sayfasını kullanın. Bir çözümde birden çok proje için dizinleri ayarlamak için bir özel özellik sayfası ölçeklendirmesini kullanacak [paylaşımını veya yeniden Visual Studio C++ proje ayarları](../create-reusable-property-configurations.md).
 
 Bu sayfa Linux sürümü için bkz: [VC ++ dizinleri (Linux C++)](../../linux/prop-pages/directories-linux.md).
 
@@ -54,7 +54,7 @@ Artık böyle bir iletişim kutusu görürsünüz:
 
 ![Kitaplık dizinleri Göster](../media/vcppdir_libdir.png "eklemek veya kitaplık yollarını kaldırmak için iletişim kutusu")
 
-Geçerli dizinleri görüntülemek için bu iletişim kutusunu kullanın. Bir dizin eklemek veya değiştirmek istiyorsanız, ancak bunu kullanmak en iyisidir **özellik Yöneticisi** bir özellik sayfası oluşturma veya varsayılan kullanıcı özellik sayfası değiştirmek için. Daha fazla bilgi için [paylaşımı veya resuse Visual Studio C++ proje ayarlarını](../create-reusable-property-configurations.md).
+Geçerli dizinleri görüntülemek için bu iletişim kutusunu kullanın. Bir dizin eklemek veya değiştirmek istiyorsanız, ancak bunu kullanmak en iyisidir **özellik Yöneticisi** bir özellik sayfası oluşturma veya varsayılan kullanıcı özellik sayfası değiştirmek için. Daha fazla bilgi için [paylaşımını veya yeniden Visual Studio C++ proje ayarları](../create-reusable-property-configurations.md).
 
 Yukarıda gösterildiği gibi devralınan yolların çoğu makro olarak verilir.  Bir makronun geçerli değerini incelemek için seçin **makroları** iletişim kutusunun sağ alt köşedeki düğmesi. Not birçok makroları yapılandırma türüne bağlıdır. Hata ayıklama derlemesinde makro için aynı makroyu derleme farklı bir yolda değerlendirebilir.
 
