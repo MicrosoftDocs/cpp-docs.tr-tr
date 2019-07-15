@@ -1,6 +1,6 @@
 ---
 title: friend (C++)
-ms.date: 11/19/2018
+ms.date: 07/15/2019
 f1_keywords:
 - friend_cpp
 helpviewer_keywords:
@@ -8,12 +8,12 @@ helpviewer_keywords:
 - friend classes [C++]
 - friend keyword [C++]
 ms.assetid: 8fe9ee55-d56f-40cd-9075-d9fb1375aff4
-ms.openlocfilehash: 769720877cc58de530791b268811d7d01adad3e6
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 03b6cb7f856ec59c10f5e410c947f74d17ec4e46
+ms.sourcegitcommit: fd466f2e14ad001f52f3dbe54f46d77be10f2d7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62154491"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67894412"
 ---
 # <a name="friend-c"></a>friend (C++)
 
@@ -119,7 +119,7 @@ Arkadaş birbirleriyle olan iki sınıf bildirmek için birinci sınıf bir arka
 
 ## <a name="friend-functions"></a>arkadaş işlevleri
 
-A **arkadaş** işlev, bir işlev bir sınıfın üyesi değil ama sınıfın özel ve korumalı üyelerine erişebilir. Arkadaş işlevleri sınıf üyeleri olarak kabul edilmez; özel erişim ayrıcalıkları verilmiş normal dış işlevler değildirler. Arkadaşlar sınıf kapsamında değildir ve üye seçim işleçleri kullanarak çağrılır değil (**.** ve -**>**) başka bir sınıf üyesi olduğu sürece. A **arkadaş** erişim verme sınıfı tarafından bildirilen işlev. **Arkadaş** bildirimi yerleştirilebileceğini herhangi bir sınıf bildirimi içinde. Erişim denetimi anahtar sözcüklere göre etkilenmez.
+A **arkadaş** işlev, bir işlev bir sınıfın üyesi değil ama sınıfın özel ve korumalı üyelerine erişebilir. Arkadaş işlevleri sınıf üyeleri olarak kabul edilmez; özel erişim ayrıcalıkları verilmiş normal dış işlevler değildirler. Arkadaşlar sınıf kapsamında değildir ve üye seçim işleçleri kullanarak çağrılır değil ( **.** ve - **>** ) başka bir sınıf üyesi olduğu sürece. A **arkadaş** erişim verme sınıfı tarafından bildirilen işlev. **Arkadaş** bildirimi yerleştirilebileceğini herhangi bir sınıf bildirimi içinde. Erişim denetimi anahtar sözcüklere göre etkilenmez.
 
 Aşağıdaki örnekte gösterildiği bir `Point` sınıfı ve bir arkadaş işlev `ChangePrivate`. **Arkadaş** işlevi, özel veri üyesi erişimi olduğundan `Point` nesnesini parametre olarak alır.
 
@@ -224,7 +224,7 @@ int main() {
 
 Bu nedenle açıkça belirtilmediği sürece karşılıklı Arkadaşlık değil. Yukarıdaki örnekte, üye işlevleri `YourClass` özel üyelerine erişemez `YourOtherClass`.
 
-Yönetilen tür herhangi bir arkadaş işlevleri, arkadaş sınıfları veya arkadaş arabirimleri sahip olamaz.
+Yönetilen bir türe (içinde C++/CLI) herhangi bir arkadaş işlevleri, arkadaş sınıfları veya arkadaş arabirimleri sahip olamaz.
 
 Arkadaşlık değil devralınır, yani sınıfından türetilen sınıfların `YourOtherClass` erişemiyor `YourClass`ait özel üyeler. Arkadaşlık değil geçişli arkadaşların olmayan sınıflar için `YourOtherClass` erişemiyor `YourClass`ait özel üyeler.
 
@@ -235,9 +235,7 @@ Arkadaş ilişki etkileri
 
 ## <a name="inline-friend-definitions"></a>Satır içi arkadaş tanımları
 
-Arkadaş işlevleri sınıf bildirimi içinde tanımlanabilir. Bu işlevler, satır içi işlevlerdir ve üye satır içi işlevleri gibi, tüm sınıf üyeleri görüldükten hemen sonra tanımlanmış gibi davranırlar, ancak bu durum sınıf kapsamı (sınıf bildiriminin sonu) kapatılmadan önce gerçekleşir.
-
-Sınıf bildirimi içinde tanımlanan arkadaş işlevleri çevreleyen sınıf kapsamında dikkate alınmaz; dosya kapsamındadırlar.
+Arkadaş işlevleri (bir işlev gövdesinin), sınıf bildirimi içinde tanımlanabilir. Bu işlevler, satır içi işlevlerdir ve üye satır içi işlevleri gibi, tüm sınıf üyeleri görüldükten hemen sonra tanımlanmış gibi davranırlar, ancak bu durum sınıf kapsamı (sınıf bildiriminin sonu) kapatılmadan önce gerçekleşir. Sınıf bildirimi içinde tanımlanan arkadaş işlevleri çevreleyen sınıf kapsamında ' dir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

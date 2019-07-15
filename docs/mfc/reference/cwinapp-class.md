@@ -1,6 +1,6 @@
 ---
 title: CWinApp sınıfı
-ms.date: 11/04/2016
+ms.date: 07/15/2019
 f1_keywords:
 - CWinApp
 - AFXWIN/CWinApp
@@ -192,12 +192,12 @@ helpviewer_keywords:
 - CWinApp [MFC], m_nAutosaveInterval
 - CWinApp [MFC], m_pDataRecoveryHandler
 ms.assetid: e426a3cd-0d15-40d6-bd55-beaa5feb2343
-ms.openlocfilehash: 6366638ebfd5e78ad517a8913e4276d5cd820670
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: a4ec6c976b6611563eb95cce1173d7c77c3b5ef0
+ms.sourcegitcommit: fd466f2e14ad001f52f3dbe54f46d77be10f2d7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62323365"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67894493"
 ---
 # <a name="cwinapp-class"></a>CWinApp sınıfı
 
@@ -899,7 +899,7 @@ Başarılı olursa sıfır dışı; Aksi durumda 0.
 Bu üye işlevi büyük/küçük harfe duyarlı, bu nedenle değil dizelerde *lpszSection* ve *lpszEntry* parametreleri durumda farklı olabilir.
 
 > [!NOTE]
-> `GetProfileBinary` bir arabelleği ayırır ve onun adresini döndürür \* *ppData*. Arabellek kullanarak boşaltma için çağıran sorumludur **delete []**.
+> `GetProfileBinary` bir arabelleği ayırır ve onun adresini döndürür \* *ppData*. Arabellek kullanarak boşaltma için çağıran sorumludur **delete []** .
 
 > [!IMPORTANT]
 > Bu işlev tarafından döndürülen veriler sonlandırıldı mutlaka NULL değil ve çağıran doğrulaması gerçekleştirmeniz gerekir. Daha fazla bilgi için [arabellek taşmalarını](/windows/desktop/SecBP/avoiding-buffer-overruns).
@@ -1033,10 +1033,10 @@ virtual void HtmlHelp(
 ### <a name="parameters"></a>Parametreler
 
 *dwData*<br/>
-Ek veri belirtir. Kullanılan değer değerine bağlıdır *nCmd* parametresi.
+Ek veri belirtir. Kullanılan değer değerine bağlıdır *nCmd* parametresi. Varsayılan olarak `0x000F` anlamına [HH_HELP_CONTEXT](/previous-versions/windows/desktop/htmlhelp/hh-help-context-command).
 
 *nCmd*<br/>
-Yardım talep türünü belirtir. Olası değerler ve bunların nasıl etkileyeceğini listesini *dwData* parametresi bkz *uCommand* hakkında HTMLHelp API işlevi Windows SDK'sındaki açıklanan parametresi.
+Yardım talep türünü belirtir. Olası değerler ve bunların nasıl etkileyeceğini listesini *dwData* parametresi bkz *uCommand* parametresi açıklanan [HtmlHelpW](/windows/desktop/api/htmlhelp/nf-htmlhelp-htmlhelpw) veya [HtmlHelpA](/windows/desktop/api/htmlhelp/nf-htmlhelp-htmlhelpa) Windows SDK API işlevleri.  
 
 ### <a name="remarks"></a>Açıklamalar
 

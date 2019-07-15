@@ -1,13 +1,13 @@
 ---
 title: Olaylar (C++/CX)
-ms.date: 01/22/2017
+ms.date: 07/15/2019
 ms.assetid: 31c8e08a-00ad-40f9-8f7e-124864aaad58
-ms.openlocfilehash: 8e7e8616831e66a7f59ed849fc92ef2553aadb5b
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: d0a3ab01628487dcca081eb300470cbd1bf3bb83
+ms.sourcegitcommit: fd466f2e14ad001f52f3dbe54f46d77be10f2d7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62301545"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67894452"
 ---
 # <a name="events-ccx"></a>Olaylar (C++/CX)
 
@@ -15,7 +15,7 @@ Bir Windows türü bildirebilirsiniz (Yayımlama) çalışma zamanı olayları v
 
 ## <a name="consuming-events-in-windows-components"></a>Windows bileşenleri olayları kullanma
 
-Windows çalışma zamanı'ndaki birçok bileşen olayları gösterir. Örneğin, bir LightSensor nesnesi algılayıcı yeni parlaklığı değeri bildirdiğinde bir ReadingChanged olayı tetikler. Programınızda LightSensor nesne kullandığınızda ReadingChanged olay harekete çağrılacak bir yöntem tanımlayabilirsiniz. Yöntem ne olursa olsun yapmak istediğiniz yapabilirler. imzası bir temsilci olay işleyicisi oluşturun ve bir olaya abone görmek hakkında daha fazla bilgi için temsilcisinin imzasıyla eşleşmelidir tek gereksinim olmasıdır [Temsilciler](../cppcx/delegates-c-cx.md).
+Windows çalışma zamanı'ndaki birçok bileşen olayları gösterir. Örneğin, bir LightSensor nesnesi algılayıcı yeni parlaklığı değeri bildirdiğinde bir ReadingChanged olayı tetikler. Programınızda LightSensor nesne kullandığınızda ReadingChanged olay harekete çağrılacak bir yöntem tanımlayabilirsiniz. Yöntem ne olursa olsun yapmak istediğiniz yapabilirler. imzası çağrılan temsilcisinin imzasıyla eşleşmelidir tek gereksinim olmasıdır. Bir temsilci olay işleyicisi oluşturun ve bir olaya abone hakkında daha fazla bilgi için bkz. [Temsilciler](../cppcx/delegates-c-cx.md).
 
 ## <a name="creating-custom-events"></a>Özel olaylar oluşturma
 

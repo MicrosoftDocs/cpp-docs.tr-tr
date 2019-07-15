@@ -1,11 +1,12 @@
 ---
 title: HStringReference Sınıfı
-ms.date: 09/25/2018
+ms.date: 07/15/2019
 ms.topic: reference
 f1_keywords:
 - corewrappers/Microsoft::WRL::Wrappers::HStringReference
 - corewrappers/Microsoft::WRL::Wrappers::HStringReference::CopyTo
 - corewrappers/Microsoft::WRL::Wrappers::HStringReference::Get
+- corewrappers/Microsoft::WRL::Wrappers::GetRawBuffer
 - corewrappers/Microsoft::WRL::Wrappers::HStringReference::HStringReference
 - corewrappers/Microsoft::WRL::Wrappers::HStringReference::operator=
 - corewrappers/Microsoft::WRL::Wrappers::HStringReference::operator==
@@ -21,12 +22,12 @@ helpviewer_keywords:
 - Microsoft::WRL::Wrappers::HStringReference::operator!= operator
 - Microsoft::WRL::Wrappers::HStringReference::operator< operator
 ms.assetid: 9bf823b1-17eb-4ac4-8c5d-27d27c7a4150
-ms.openlocfilehash: b9d2e49d0a7e1321e2259c06e1313a90d55dc90e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 9c17a9df8fcc7d849bbbd4f613bf5dce6dae8983
+ms.sourcegitcommit: fd466f2e14ad001f52f3dbe54f46d77be10f2d7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62398283"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67894388"
 ---
 # <a name="hstringreference-class"></a>HStringReference Sınıfı
 
@@ -56,6 +57,7 @@ Ad                                                    | Açıklama
 ----------------------------------- | ------------------------------------------------------------------
 [HStringReference::CopyTo](#copyto) | Geçerli kopyalar `HStringReference` nesnesini bir HSTRING nesnesine.
 [HStringReference::Get](#get)       | Temel HSTRING tanıtıcısının değerini alır.
+[HStringReference::GetRawBuffer](#getrawbuffer) | Temel dize verileri için bir işaretçi alır.
 
 ### <a name="public-operators"></a>Ortak İşleçler
 
@@ -106,6 +108,21 @@ HSTRING Get() const throw()
 ### <a name="return-value"></a>Dönüş Değeri
 
 Temel HSTRING tanıtıcısının değerini.
+
+## <a name="getrawbuffer"></a>HStringReference::GetRawBuffer
+
+Temel dize verileri için bir işaretçi alır.
+
+```cpp
+const wchar_t* GetRawBuffer(unsigned int* length) const;
+```
+### <a name="parameters"></a>Parametreler
+
+*uzunluğu* işaretçi bir **int** değişken veri uzunluğunu alır.
+
+### <a name="return-value"></a>Dönüş Değeri
+
+A **const** temel alınan verileri dize işaretçisi.
 
 ## <a name="hstringreference"></a>HStringReference::HStringReference
 

@@ -1,6 +1,6 @@
 ---
 title: Hangi DLL'lerin Yeniden Dağıtılacağını Belirleme
-ms.date: 03/25/2019
+ms.date: 07/15/2019
 helpviewer_keywords:
 - redistributing DLLs
 - DLLs [C++], redistributing
@@ -8,18 +8,18 @@ helpviewer_keywords:
 - application deployment [C++], DLL redistribution
 - deploying applications [C++], DLL redistribution
 ms.assetid: f7a2cb42-fb48-42ab-abd2-b35e2fd5601a
-ms.openlocfilehash: 4e4b53745c76a8e5b630bdd92633779e84262188
-ms.sourcegitcommit: 28eae422049ac3381c6b1206664455dbb56cbfb6
+ms.openlocfilehash: 82fb582cae129b517a96deb3d4a9572ef8370a9d
+ms.sourcegitcommit: fd466f2e14ad001f52f3dbe54f46d77be10f2d7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66451268"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67894477"
 ---
 # <a name="determining-which-dlls-to-redistribute"></a>Hangi DLL'lerin Yeniden Dağıtılacağını Belirleme
 
 Visual Studio tarafından sağlanan kitaplığı DLL'ler kullanan bir uygulama oluşturduğunuzda, uygulamanızın kullanıcılarının uygulamayı çalıştırmak için kendi bilgisayarlarında bu DLL'leri de olmalıdır. Çoğu kullanıcı büyük olasılıkla Visual Studio'nun yüklü olmadığından, bu DLL'leri için bunları sağlamanız gerekir. Visual Studio kullanılabilir hale getirir bu dll olarak *yeniden dağıtılabilir dosyaları* , uygulama Yükleyicinizle içerebilir.
 
-Yükleyicinizle birlikte yeniden dağıtılabilir DLL'lerinin dahil daha kolay hale getirmek için bunlar bağımsız olarak kullanılabilir *yeniden dağıtılabilir paketleri*. Bu, bir kullanıcının bilgisayarına yeniden dağıtılabilir dosyalarını yüklemek için merkezi dağıtım kullanmaktadır mimariye özel yürütülebilir dosyalar. Örneğin, vcredist\_x86.exe x86 için 32-bit kitaplıklarını yükler bilgisayarlar, vcredist\_x64.exe x64 için 64-bit kitaplıklarını yükler bilgisayarlar ve vcredist\_ARM.exe bilgisayarlara ARM için kitaplıklarını yükler. Microsoft bu kitaplıklar bağımsız olarak güncelleştirmek için Windows Update hizmeti kullanabileceğinizden merkezi dağıtım öneririz. Visual Studio yüklemenizin kopyalama ek olarak, geçerli yeniden dağıtılabilir paketleri indirmek için mevcuttur. En son desteklenen için yeniden dağıtılabilir paketleri hem geçerli hem de eski araç takımları bağlantıları için bkz [Visual C++ indirmeleri en son desteklenen](https://support.microsoft.com/help/2977003/the-latest-supported-visual-c-downloads). Arama yaparak belirli önceki sürümleri yeniden dağıtılabilir paketleri bulunabilir [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?LinkId=158431) "Visual C++ yeniden dağıtılabilir paketleri" için.
+Yükleyicinizle birlikte yeniden dağıtılabilir DLL'lerinin dahil daha kolay hale getirmek için bunlar bağımsız olarak kullanılabilir *yeniden dağıtılabilir paketleri*. Bu, bir kullanıcının bilgisayarına yeniden dağıtılabilir dosyalarını yüklemek için merkezi dağıtım kullanmaktadır mimariye özel yürütülebilir dosyalar. Örneğin, vcredist\_x86.exe x86 hem x64 bilgisayarlar vcredist 32-bit kitaplıklarını yükler\_x64.exe x64 için 64-bit kitaplıklarını yükler bilgisayarlar ve vcredist\_ARM.exe kitaplıkları için ARM yükler bilgisayarlar. Microsoft bu kitaplıklar bağımsız olarak güncelleştirmek için Windows Update hizmeti kullanabileceğinizden merkezi dağıtım öneririz. Visual Studio yüklemenizin kopyalama ek olarak, geçerli yeniden dağıtılabilir paketleri indirmek için mevcuttur. En son desteklenen için yeniden dağıtılabilir paketleri hem geçerli hem de eski araç takımları bağlantıları için bkz [Visual C++ indirmeleri en son desteklenen](https://support.microsoft.com/help/2977003/the-latest-supported-visual-c-downloads). Arama yaparak belirli önceki sürümleri yeniden dağıtılabilir paketleri bulunabilir [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?LinkId=158431) "Visual C++ yeniden dağıtılabilir paketleri" için.
 
 Dağıttığınız yeniden dağıtılabilir paketinin ana sürüm numarası uygulamanızı oluşturmak için kullanılan Visual Studio araç takımı sürümü ile eşleşmelidir ve alt sürümü aynı olmalıdır veya üzeri. Visual Studio 2017 ve Visual Studio 2015, Visual Studio 2017 yeniden dağıtılabilir dosyaları, 2015 Araç Takımı ' kullanılarak oluşturulmuş uygulamalar tarafından kullanılabilir, yani, uyumlu bir araç takımı sürüm numaralarına sahip. Uyumlu olabilir, ancak 2017 araç takımını kullanılarak oluşturulmuş uygulamalar 2015 yeniden dağıtılabilir dosyaları kullanmaya desteklemez. Yalnızca aynı veya, araç takımı sürümden daha yeni bir yeniden dağıtılabilir paketi kullanarak destekliyoruz.
 

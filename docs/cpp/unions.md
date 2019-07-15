@@ -7,14 +7,17 @@ helpviewer_keywords:
 - class types [C++], unions as
 - union keyword [C++]
 ms.assetid: 25c4e219-fcbb-4b7b-9b64-83f3252a92ca
-ms.openlocfilehash: 58f4940d209b783b00c7167265ff1a2a733c947c
-ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.openlocfilehash: c15ec782d16aebab85d57de2dea1e91b91620c74
+ms.sourcegitcommit: fd466f2e14ad001f52f3dbe54f46d77be10f2d7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65222336"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67894463"
 ---
 # <a name="unions"></a>Birleşimler
+
+> [!NOTE]
+> C ++ 17 ve sonraki sürümlerinde, **std::variant** birleşimler için tür kullanımı uyumlu bir alternatif bir sınıftır.
 
 A **birleşim** tüm üyeleri aynı bellek konumunda paylaşır ve kullanıcı tanımlı bir tür. Başka bir deyişle, belirli bir zamanda üyeler listesinden birden fazla nesne bir birleşim içerebilir. Ayrıca, kaç üyeleri olan bir birleşim ne olursa olsun, her zaman yeterli bellek en büyük üyesini depolamak için kullandığı anlamına gelir.
 

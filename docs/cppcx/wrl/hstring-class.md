@@ -1,6 +1,6 @@
 ---
 title: HString Sınıfı
-ms.date: 09/24/2018
+ms.date: 07/15/2019
 ms.topic: reference
 f1_keywords:
 - corewrappers/Microsoft::WRL::Wrappers::HString
@@ -8,6 +8,7 @@ f1_keywords:
 - corewrappers/Microsoft::WRL::Wrappers::HString::CopyTo
 - corewrappers/Microsoft::WRL::Wrappers::HString::Detach
 - corewrappers/Microsoft::WRL::Wrappers::HString::Get
+- corewrappers/Microsoft::WRL::Wrappers::HString::GetRawBuffer
 - corewrappers/Microsoft::WRL::Wrappers::HString::GetAddressOf
 - corewrappers/Microsoft::WRL::Wrappers::HString::HString
 - corewrappers/Microsoft::WRL::Wrappers::HString::IsValid
@@ -37,12 +38,12 @@ helpviewer_keywords:
 - Microsoft::WRL::Wrappers::HString::Set method
 - Microsoft::WRL::Wrappers::HString::~HString, destructor
 ms.assetid: 6709dd2e-8d72-4675-8ec7-1baa7d71854d
-ms.openlocfilehash: 19ef11a5d33e69bb77049e450df1b386528b7f7b
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 884efb2a69b05589ad9458148409533880073878
+ms.sourcegitcommit: fd466f2e14ad001f52f3dbe54f46d77be10f2d7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62398296"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67894397"
 ---
 # <a name="hstring-class"></a>HString Sınıfı
 
@@ -76,6 +77,7 @@ Ad                                     | Açıklama
 [HString::Detach](#detach)               | Belirtilen ayırır `HString` nesnesini temel değerinden.
 [HString::Get](#get)                     | Temel HSTRING tanıtıcısının değerini alır.
 [HString::GetAddressOf](#getaddressof)   | Temel HSTRING tanıtıcısına bir işaretçi alır.
+[HString::GetRawBuffer](#getrawbuffer)   | Temel dize verileri için bir işaretçi alır.
 [Hstring::IsValid](#isvalid)             | Belirtir olup olmadığını geçerli `HString` nesne geçerlidir.
 [HString::MakeReference](#makereference) | Oluşturur bir `HStringReference` nesnesinden belirtilen dize parametresi.
 [HString::Release](#release)             | Temel dize değerini siler ve geçerli başlatır `HString` boş bir değere nesne.
@@ -181,6 +183,22 @@ Temel HSTRING tanıtıcısına bir işaretçi.
 ### <a name="remarks"></a>Açıklamalar
 
 Temel HSTRING tanıtıcısına dize değerini bu işlemden sonra yok edilir.
+
+## <a name="getrawbuffer"></a>HString::GetRawBuffer
+
+Temel dize verileri için bir işaretçi alır.
+
+```cpp
+const wchar_t* GetRawBuffer(unsigned int* length) const;
+```
+### <a name="parameters"></a>Parametreler
+
+*uzunluğu* işaretçi bir **int** değişken veri uzunluğunu alır.
+
+### <a name="return-value"></a>Dönüş Değeri
+
+A **const** temel alınan verileri dize işaretçisi.
+
 
 ## <a name="hstring"></a>HString::HString
 
