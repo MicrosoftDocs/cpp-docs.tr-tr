@@ -6,16 +6,16 @@ f1_keywords:
 ms.assetid: 2ac9ec59-619b-4b85-a425-f729277c1bc8
 helpviewer_keywords:
 - std::generate_canonical
-ms.openlocfilehash: 80bdb1ca83be5fb390035d7f3b005793a2f03715
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 87b640d4f3aa3fbfa23ad5603d84102301e71ea4
+ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62370352"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68240382"
 ---
 # <a name="ltrandomgt-functions"></a>&lt;rastgele&gt; işlevleri
 
-## <a name="generate_canonical"></a>  generate_canonical
+## <a name="generate_canonical"></a> generate_canonical
 
 Rastgele bir diziden bir kayan nokta değeri döndürür.
 
@@ -29,19 +29,15 @@ RealType generate_canonical(Generator& Gen);
 
 ### <a name="parameters"></a>Parametreler
 
-*RealType*<br/>
+*RealType*\
 Kayan nokta integral türü. Olası türleri için bkz: [ \<rastgele >](../standard-library/random.md).
 
-*BITS*<br/>
+*BITS*\
 Rasgele sayı üreteci.
 
-*Genel*<br/>
+*Genel*\
 Rasgele sayı üreteci.
 
 ### <a name="remarks"></a>Açıklamalar
 
 Şablonu işlev çağrıları `operator()` , *Gen* sürekli ve döndürülen değerlerin bir kayan nokta değerine paketleri `x` türü *RealType* belirtilen sayı topladı kadar içinde Mantis bit `x`. Belirtilen sayı olan daha küçük olan *BITS* (olması gereken sıfır olmayan) ve tam Mantis bit sayısı *RealType*. İlk çağrı, en düşük sıralı BITS sağlar. İşlev döndürür `x`.
-
-## <a name="see-also"></a>Ayrıca bkz.
-
-[\<rastgele >](../standard-library/random.md)<br/>

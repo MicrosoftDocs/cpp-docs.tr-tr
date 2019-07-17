@@ -20,12 +20,12 @@ helpviewer_keywords:
 - std::stack [C++], size
 - std::stack [C++], top
 ms.assetid: 02151c1e-eab0-41b8-be94-a839ead78ecf
-ms.openlocfilehash: cc18a62db3f39bc85c0a3bb7e84e6a27011c2b5a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 36074f75830f92ba3fb9e5edb4e1507aa5ae1407
+ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62412442"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68241058"
 ---
 # <a name="stack-class"></a>stack Sınıfı
 
@@ -40,11 +40,11 @@ class stack
 
 ### <a name="parameters"></a>Parametreler
 
-*Tür*<br/>
+*Türü*\
 Yığın içinde depolanacak öğe veri türü.
 
-*Kapsayıcı*<br/>
-Yığın uygulamak için kullanılan temel alınan kapsayıcı türü. Varsayılan değer sınıfı, `deque`  *\<türü >*.
+*Kapsayıcı*\
+Yığın uygulamak için kullanılan temel alınan kapsayıcı türü. Varsayılan değer sınıfı, `deque`  *\<türü >* .
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -60,23 +60,25 @@ Yığın nesneleri: eşitlik için karşılaştırılabilir ise ve yalnızca sı
 
 - [Priority_queue sınıfı](../standard-library/priority-queue-class.md) en büyük öğe her zaman üst konumunda olması, öğeleri sıralar. Bu, bir öğe ve inceleme, ekleme ve kaldırma üst öğenin destekler. Burada, yaş, yüksekliğe veya diğer bir ölçüte göre düzenlenmiş yukarı hizalama kişiler akılda tutulması için iyi bir analog olacaktır.
 
+## <a name="members"></a>Üyeler
+
 ### <a name="constructors"></a>Oluşturucular
 
-|Oluşturucu|Açıklama|
+|||
 |-|-|
 |[Yığın](#stack)|Oluşturur bir `stack` boş veya bir temel kapsayıcı nesnesinin bir kopyasını başka bir deyişle olduğu.|
 
 ### <a name="typedefs"></a>Tür tanımları
 
-|Tür adı|Açıklama|
+|||
 |-|-|
 |[container_type](#container_type)|Temel olarak uyarlanabilen kapsayıcıya sağlayan bir tür bir `stack`.|
 |[size_type](#size_type)|İçindeki öğelerin sayısını temsil edebilen bir işaretsiz tamsayı türü bir `stack`.|
 |[value_type](#value_type)|Bir öğe olarak depolanan nesne türünü temsil eden bir tür bir `stack`.|
 
-### <a name="member-functions"></a>Üye işlevleri
+### <a name="functions"></a>İşlevler
 
-|Üye işlevi|Açıklama|
+|||
 |-|-|
 |[boş](#empty)|Olmadığını test eder `stack` boştur.|
 |[POP](#pop)|Öğe üst kısmından kaldırır `stack`.|
@@ -84,13 +86,7 @@ Yığın nesneleri: eşitlik için karşılaştırılabilir ise ve yalnızca sı
 |[Boyutu](#size)|İçindeki öğelerin sayısını döndürür `stack`.|
 |[Sayfanın Üstü](#top)|Üst kısmında bir öğeye bir başvuru döndürür `stack`.|
 
-## <a name="requirements"></a>Gereksinimler
-
-**Başlık:** \<yığın >
-
-**Namespace:** std
-
-## <a name="container_type"></a>  Stack::container_type
+## <a name="container_type"></a> container_type
 
 Temel uyarlanabilen kapsayıcıya sağlayan bir tür.
 
@@ -108,7 +104,7 @@ Daha fazla bilgi için `Container`, Açıklamalar bölümüne bakın [stack sın
 
 Örneğin bakın [stack::stack](#stack) bildirme ve kullanma konusunda bir örnek için `container_type`.
 
-## <a name="empty"></a>  Stack::empty
+## <a name="empty"></a> boş
 
 Bir yığını boş olup olmadığını sınar.
 
@@ -153,7 +149,7 @@ The stack s1 is not empty.
 The stack s2 is empty.
 ```
 
-## <a name="pop"></a>  Stack::POP
+## <a name="pop"></a> POP
 
 Öğeyi yığın üst kısmından kaldırır.
 
@@ -209,7 +205,7 @@ After a pop, the stack length is 2.
 After a pop, the element at the top of the stack is 20.
 ```
 
-## <a name="push"></a>  Stack::push
+## <a name="push"></a> anında iletme
 
 Bir öğeyi yığın üstüne ekler.
 
@@ -219,7 +215,7 @@ void push(const Type& val);
 
 ### <a name="parameters"></a>Parametreler
 
-*VAL*<br/>
+*VAL*\
 Yığın üstüne eklenen öğe.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -258,7 +254,7 @@ The stack length is 3.
 The element at the top of the stack is 30.
 ```
 
-## <a name="size"></a>  Stack::size
+## <a name="size"></a> Boyutu
 
 Yığın içinde öğelerin sayısını döndürür.
 
@@ -299,7 +295,7 @@ The stack length is 1.
 The stack length is now 2.
 ```
 
-## <a name="size_type"></a>  Stack::size_type
+## <a name="size_type"></a> size_type
 
 Bir yığın içindeki öğelerin sayısını temsil edebilen bir işaretsiz tamsayı türü.
 
@@ -315,7 +311,7 @@ Türü eşanlamlıdır `size_type` yığını tarafından uyarlanmış temel kap
 
 Örneğin bakın [boyutu](#size) bildirme ve kullanma konusunda bir örnek için `size_type`.
 
-## <a name="stack"></a>  Stack::Stack
+## <a name="stack"></a> Yığın
 
 Bir yığını boş olan veya bir temel kapsayıcı sınıfı bir kopyasını oluşturur.
 
@@ -327,7 +323,7 @@ explicit stack(const container_type& right);
 
 ### <a name="parameters"></a>Parametreler
 
-*sağ*<br/>
+*sağ*\
 Oluşturulan yığın kopyası olacak olduğu kapsayıcı.
 
 ### <a name="example"></a>Örnek
@@ -369,7 +365,7 @@ int main( )
 The element at the top of stack vsi2 is 1.
 ```
 
-## <a name="top"></a>  Stack::Top
+## <a name="top"></a> Sayfanın Üstü
 
 Yığının üst öğeye bir başvuru döndürür.
 
@@ -420,7 +416,7 @@ The top integer of the stack s1 is 2.
 The next integer down is 1.
 ```
 
-## <a name="value_type"></a>  Stack::value_type
+## <a name="value_type"></a> value_type
 
 Bir yığın içinde bir öğe olarak depolanan nesne türünü temsil eden tür.
 

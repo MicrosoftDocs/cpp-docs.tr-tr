@@ -9,22 +9,22 @@ helpviewer_keywords:
 - functors
 - functional header
 ms.assetid: 7dd463e8-a29f-49bc-aedd-8fa53b54bfbc
-ms.openlocfilehash: 317344db856a7a0568aca422ecfe8280b80db097
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 7a72941c7b8c351f7b4fb8fa0e40afb809ea7cbe
+ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62159424"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68243752"
 ---
 # <a name="ltfunctionalgt"></a>&lt;işlev&gt;
 
 Oluşturmaya yardımcı olan C++ Standart Kitaplığı işlevleri tanımlar *işlev nesneleri*olarak da bilinen *işlev nesneleri*ve bunların bağlayıcılar. Bir nesne tanımlayan bir tür bir işlev nesnesidir `operator()`. Bir işlev nesnesi bir işlev işaretçisi olabilir, ancak nesne daha genel bir işlev çağrısı sırasında erişilebilir ek bilgileri depolamak için kullanılır.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="requirements"></a>Gereksinimler
 
-```cpp
-#include <functional>
-```
+**Başlık:** \<işlev >
+
+**Namespace:** std
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -72,18 +72,23 @@ Sözde işlevi `INVOKE(f, t1, t2, ..., tN, R)` anlamına gelir `INVOKE(f, t1, t2
 
 Her çağrı sarmalayıcı bir taşıma oluşturucusuna ve kopya Oluşturucusu vardır. A *basit çağrısı sarmalayıcı* atama işleci ve, kopya Oluşturucu, taşıma oluşturucu ve atama işleci değil throw özel durumları olan bir çağrı sarmalayıcıdır. A *çağrı sarmalayıcı iletme* Sarmalanan çağrılabilir nesnesine başvuru olarak bağımsız değişkenler sunan ve rastgele bağımsız değişken listesi kullanılarak çağrılabilen bir çağrı sarmalayıcıdır. Tüm rvalue bağımsız değişken rvalue başvuruları teslim edilir ve lvalue bağımsız değişkenlerini lvalue başvuruları sunulur.
 
-## <a name="classes"></a>Sınıflar
+## <a name="members"></a>Üyeler
 
-|örneği|Açıklama|
+### <a name="classes"></a>Sınıflar
+
+|||
 |-|-|
 |[bad_function_call](../standard-library/bad-function-call-class.md)|Bir çağrı göstermek için bir özel durum tanımlayan bir sınıfı `operator()` üzerinde bir [işlevi](../standard-library/function-class.md) nesne nesnesi boş olduğundan başarısız oldu.|
 |[binary_negate](../standard-library/binary-negate-class.md)|Belirtilen bir ikili fonksiyon dönüş değeri verilerek bir üye işlevi sağlayan bir şablon sınıfı.<br/> (C ++ 17'de kullanım dışı) |
 |[binder1st](../standard-library/binder1st-class.md)|Bir ikili fonksiyon nesnesi belirtilen değere ikili işlevinin ilk bağımsız değişkeni bağlayarak birli nesnesine dönüştürür. bir oluşturucu sağlayan bir şablon sınıfı.<br/> (C ++ 17 sürümünde kaldırılmıştır C ++ 11 ' de kullanımdan.) |
 |[binder2nd](../standard-library/binder2nd-class.md)|Bir ikili fonksiyon nesnesi belirtilen değere ikili işlevinin ikinci bağımsız değişkeni bağlayarak birli nesnesine dönüştürür. bir oluşturucu sağlayan bir şablon sınıfı.<br/> (C ++ 17 sürümünde kaldırılmıştır C ++ 11 ' de kullanımdan.) |
+|[boyer_moore_horspool_searcher](../standard-library/boyer-moore-horspool-searcher-class.md)||
+|[boyer_moore_searcher](../standard-library/boyer-moore-searcher-class.md)||
 |[const_mem_fun_ref_t](../standard-library/const-mem-fun-ref-t-class.md)|Bir başvuru bağımsız değişkeni ile hazırlarken bir birli işlev nesnesi olarak çağrılacak hiçbir bağımsız değişken const bir üye işlevi sağlayan bir bağdaştırıcı sınıfı.<br/> (C ++ 17 sürümünde kaldırılmıştır C ++ 11 ' de kullanımdan.) |
 |[const_mem_fun_t](../standard-library/const-mem-fun-t-class.md)|Hiçbir bağımsız değişken bir işaretçi bağımsız değişkeni ile hazırlarken bir birli işlev nesnesi olarak çağrılacak const bir üye işlevi sağlayan bir bağdaştırıcı sınıfı.<br/> (C ++ 17 sürümünde kaldırılmıştır C ++ 11 ' de kullanımdan.) |
 |[const_mem_fun1_ref_t](../standard-library/const-mem-fun1-ref-t-class.md)|Bir başvuru bağımsız değişkeni ile hazırlarken bir ikili fonksiyon nesnesi olarak çağrılan tek bir bağımsız değişken alan sabit bir üye işlevi sağlayan bir bağdaştırıcı sınıfı.<br/> (C ++ 17 sürümünde kaldırılmıştır C ++ 11 ' de kullanımdan.) |
 |[const_mem_fun1_t](../standard-library/const-mem-fun1-t-class.md)|Bir işaretçi bağımsız değişkeni ile hazırlarken bir ikili fonksiyon nesnesi olarak çağrılan tek bir bağımsız değişken alan sabit bir üye işlevi sağlayan bir bağdaştırıcı sınıfı.<br/> (C ++ 17 sürümünde kaldırılmıştır C ++ 11 ' de kullanımdan.) |
+|[default_searcher](../standard-library/default-searcher-class.md)||
 |[İşlevi](../standard-library/function-class.md)|Çağrılabilir nesnesini saran bir sınıf.|
 |[Karma](../standard-library/hash-class.md)|Bir değer için bir karma kod hesaplar sınıfı.|
 |[is_bind_expression](../standard-library/is-bind-expression-class.md)|Belirli bir tür çağırarak oluşturulursa, testleri bir sınıf `bind`.|
@@ -97,9 +102,9 @@ Her çağrı sarmalayıcı bir taşıma oluşturucusuna ve kopya Oluşturucusu v
 |[reference_wrapper](../standard-library/reference-wrapper-class.md)|Bir başvuru saran bir sınıf.|
 |[unary_negate](../standard-library/unary-negate-class.md)|Belirtilen birli işlevi dönüş değeri verilerek bir üye işlevi sağlayan bir şablon sınıfı.<br/> (C ++ 17'de kullanım dışı)  |
 
-## <a name="functions"></a>İşlevler
+### <a name="functions"></a>İşlevler
 
-|İşlev|Açıklama|
+|||
 |-|-|
 |[bağlama](../standard-library/functional-functions.md#bind)|Bağımsız değişkenler çağrılabilir nesnesine bağlar.|
 |[bind1st](../standard-library/functional-functions.md#bind1st)|Bir ikili fonksiyon nesnesi belirtilen değere ikili işlevinin ilk bağımsız değişkeni bağlayarak birli nesnesine dönüştürmek için bir bağdaştırıcı oluşturan yardımcı şablonu işlev.<br/> (C ++ 17 sürümünde kaldırılmıştır C ++ 11 ' de kullanımdan.) |
@@ -109,6 +114,7 @@ Her çağrı sarmalayıcı bir taşıma oluşturucusuna ve kopya Oluşturucusu v
 |[bit_or](../standard-library/functional-functions.md#bit_or)|Bit Mantıksal OR döndürür (işleci&#124;) iki parametre.|
 |[bit_xor](../standard-library/functional-functions.md#bit_xor)|Mantıksal bit düzeyinde XOR döndürür (operator ^) iki parametre.|
 |[cref](../standard-library/functional-functions.md#cref)|Bir const yapıları `reference_wrapper` bir bağımsız.|
+|[çağırma](../standard-library/functional-functions.md#invoke)||
 |[mem_fn](../standard-library/functional-functions.md#mem_fn)|Basit Arama bir sarmalayıcı oluşturur.|
 |[mem_fun](../standard-library/functional-functions.md#mem_fun)|İşaretçi bağımsız değişkenler ile hazırlarken üye işlevler için işlev nesnesi bağdaştırıcıları oluşturmak için kullanılan yardımcı şablon işlevleri.<br/> (C ++ 17 sürümünde kaldırılmıştır C ++ 11 ' de kullanımdan.) |
 |[mem_fun_ref](../standard-library/functional-functions.md#mem_fun_ref)|İşlev nesnesi bağdaştırıcılarını başvuru bağımsız değişkenleri ile hazırlarken üye işlevleri oluşturmak için kullanılan bir yardımcı şablon işlevi.|
@@ -119,16 +125,16 @@ Her çağrı sarmalayıcı bir taşıma oluşturucusuna ve kopya Oluşturucusu v
 |[ref](../standard-library/functional-functions.md#ref)|Oluşturur bir `reference_wrapper` bir bağımsız.|
 |[değiştirme](../standard-library/functional-functions.md#swap)|İki değiştirir `function` nesneleri.|
 
-## <a name="structs"></a>Yapılar
+### <a name="structs"></a>Yapılar
 
-|Yapı|Açıklama|
+|||
 |-|-|
 |[binary_function](../standard-library/binary-function-struct.md)|Bir ikili bir işlev nesnesi sağlayan türetilmiş sınıf tarafından devralınan türlerini tanımlar boş bir temel sınıf.<br/> (C ++ 17 sürümünde kaldırılmıştır C ++ 11 ' de kullanımdan.) |
 |[bölen](../standard-library/divides-struct.md)|Sınıfı, belirtilen değer türü öğeleri üzerinde bölümünün aritmetik işlemi gerçekleştiren bir önceden tanımlanmış bir işlev nesnesi sağlar.|
 |[equal_to](../standard-library/equal-to-struct.md)|Belirtilen türde bir değer olup olmadığını test bir ikili koşul türü başka bir değere eşittir.|
 |[daha büyük](../standard-library/greater-struct.md)|Belirtilen türde bir değer olup olmadığını test bir ikili koşul türü başka bir değerden büyüktür.|
 |[greater_equal](../standard-library/greater-equal-struct.md)|Bir değeri belirtilen bir türün değerinden büyük veya bu türün başka bir değere eşit olup olmadığını test bir ikili koşul.|
-|[daha az](../standard-library/less-struct.md)|Belirtilen türde bir değer olup olmadığını test bir ikili koşula başka bir değer türü'dan küçük.|
+|[less](../standard-library/less-struct.md)|Belirtilen türde bir değer olup olmadığını test bir ikili koşula başka bir değer türü'dan küçük.|
 |[less_equal](../standard-library/less-equal-struct.md)|Belirtilen türde bir değer ya da başka bir değer türü eşit olup olmadığını test bir ikili koşul.|
 |[logical_and](../standard-library/logical-and-struct.md)|Sınıf birlikte'nın mantıksal işleyişini öğeleri belirtilen değer türü ve testler için basit veya sonucun falsity gerçekleştirir. önceden tanımlanmış bir işlev nesnesi sağlar.|
 |[logical_not](../standard-library/logical-not-struct.md)|Sınıf, öğeler belirtilen değer türü ve testler için basit veya sonucun falsity mantıksal değilleme işlemi gerçekleştiren bir önceden tanımlanmış bir işlev nesnesi sağlar.|
@@ -141,15 +147,15 @@ Her çağrı sarmalayıcı bir taşıma oluşturucusuna ve kopya Oluşturucusu v
 |[artı](../standard-library/plus-struct.md)|Sınıfı, belirtilen değer türü öğeleri üzerinde aritmetik toplama işlemi gerçekleştiren bir önceden tanımlanmış bir işlev nesnesi sağlar.|
 |[unary_function](../standard-library/unary-function-struct.md)|Birli işlev nesnesi sağlayan türetilmiş sınıf tarafından devralınan türlerini tanımlar boş bir temel sınıf.<br/> (C ++ 17 sürümünde kaldırılmıştır C ++ 11 ' de kullanımdan.) |
 
-## <a name="objects"></a>Nesneler
+### <a name="objects"></a>Nesneler
 
-|Nesne|Açıklama|
+|||
 |-|-|
 |[_1.._M](../standard-library/1-object.md)|Değiştirilebilir bağımsız değişkenleri için yer tutucu.|
 
-## <a name="operators"></a>İşleçler
+### <a name="operators"></a>İşleçler
 
-|İşleç|Açıklama|
+|||
 |-|-|
 |[operator==](../standard-library/functional-operators.md#op_eq_eq)|Eşitlik karşılaştırma çağrılabilir nesnelerin izin vermiyor.|
 |[operator!=](../standard-library/functional-operators.md#op_neq)|Eşitsizlik karşılaştırma çağrılabilir nesnelerin izin vermiyor.|

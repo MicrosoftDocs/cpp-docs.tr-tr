@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - tuple class
 ms.assetid: c38749be-ae4d-41f3-98ea-6aa3250de9a3
-ms.openlocfilehash: 7e85ad445743cc02ba078eb3c09342f69915c09c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: aca5cc90566fb1fa602b96568d4cda9dd5ab26b9
+ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62279068"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68241830"
 ---
 # <a name="tuple-class"></a>tuple Sınıfı
 
@@ -22,7 +22,6 @@ Sabit uzunluklu dizi öğe sarmalar.
 
 ```
 class tuple {
-public:
    tuple();
    explicit tuple(P1, P2, ..., PN); // 0 < N
    tuple(const tuple&);
@@ -37,12 +36,12 @@ public:
       tuple& operator=(const tuple<U1, U2, ..., UN>&);
    template <class U1, class U2>
       tuple& operator=(const pair<U1, U2>&); // N == 2
-   };
+};
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*TN*<br/>
+*TN*\
 Nth demet öğesi türü.
 
 ## <a name="remarks"></a>Açıklamalar
@@ -117,13 +116,7 @@ The tuples in the vector are
 ( 3, 0.033, three ).
 ```
 
-## <a name="requirements"></a>Gereksinimler
-
-**Başlık:** \<kayıt >
-
-**Namespace:** std
-
-## <a name="op_eq"></a>  tuple::operator=
+## <a name="op_eq"></a> işleç =
 
 Atayan bir `tuple` nesne.
 
@@ -144,10 +137,10 @@ template <class U1, class U2>
 
 ### <a name="parameters"></a>Parametreler
 
-*GERİ AL*<br/>
+*GERİ AL*\
 Demet öğesi türü n. kopyalanır.
 
-*sağ*<br/>
+*sağ*\
 Kopyalamak için kayıt düzeni.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -196,7 +189,7 @@ int main()
     std::cout << std::endl;
 
     return (0);
-    }
+}
 ```
 
 ```Output
@@ -205,7 +198,7 @@ int main()
 x 4
 ```
 
-## <a name="tuple_swap"></a>  tuple:swap
+## <a name="tuple_swap"></a> değiştirme
 
 İki öğelerini birbiriyle değiştirir.
 
@@ -216,16 +209,17 @@ template <class... Types>
 
 ### <a name="parameters"></a>Parametreler
 
-|Parametre|Açıklama|
-|---------------|-----------------|
-|*Sol*|Kayıt düzeninin öğelerle için öğeleri olan tanımlama grubu *doğru*.|
-|*sağ*|Kayıt düzeninin öğelerle için öğeleri olan tanımlama grubu *sol*.|
+*Sol*\
+Kayıt düzeninin öğelerle için öğeleri olan tanımlama grubu *doğru*.
+
+*sağ*\
+Kayıt düzeninin öğelerle için öğeleri olan tanımlama grubu *sol*.
 
 ### <a name="remarks"></a>Açıklamalar
 
 İşlevi yürütür `left.swap(right)`.
 
-## <a name="tuple"></a>  Tuple::Tuple
+## <a name="tuple"></a> Tanımlama grubu
 
 Oluşturur bir `tuple` nesne.
 
@@ -252,10 +246,10 @@ template <class U1, class U2>
 
 ### <a name="parameters"></a>Parametreler
 
-*GERİ AL*<br/>
+*GERİ AL*\
 Demet öğesi türü n. kopyalanır.
 
-*sağ*<br/>
+*sağ*\
 Kopyalamak için kayıt düzeni.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -338,8 +332,3 @@ x 4
 0 1 2 3
 4 5 6 7
 ```
-
-## <a name="see-also"></a>Ayrıca bkz.
-
-[\<Tanımlama grubu >](../standard-library/tuple.md)<br/>
-[make_tuple](../standard-library/tuple-functions.md#make_tuple)<br/>

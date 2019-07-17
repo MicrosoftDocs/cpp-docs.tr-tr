@@ -6,12 +6,12 @@ f1_keywords:
 - -std
 - VC.Project.VCCLCompilerTool.CppLanguageStandard
 ms.assetid: 0acb74ba-1aa8-4c05-b96c-682988dc19bd
-ms.openlocfilehash: 0f45727c61d55ff57befc7ff23a3d434e86673bc
-ms.sourcegitcommit: a10c9390413978d36b8096b684d5ed4cf1553bc8
+ms.openlocfilehash: 9bdeb92e03b3ae00258ac48a29cec42ef7e18e81
+ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65837525"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68241222"
 ---
 # <a name="std-specify-language-standard-version"></a>/ Std (dil standart sürümünü belirt)
 
@@ -23,7 +23,7 @@ C++ dil standardı'nın belirtilen sürümünden C++ dil özelliklerini etkinle�
 
 ## <a name="remarks"></a>Açıklamalar
 
-**/Std** seçenektir ve sonrasında Visual Studio 2017'de kullanılabilir. Sürüme özgü ISO C++ programlama dili standart özelliklerine kodunuzun derleme sırasında etkin denetlemek için kullanılır. Bu seçenek, belirli bir dil sürümüne uyan mevcut kod standart kesme belirli özellikler için destek yeni dil ve kitaplığa devre dışı bırakmanıza olanak tanır. Varsayılan olarak, **/Std: c ++ 14** belirtilirse, hangi devre dışı bırakır dili ve standart kitaplık özellikleri C++ dilinin sonraki sürümlerde, standart bulunamadı. Kullanım **/Std: c ++ 17** C ++ 17 standart özgü özellikler ve davranışı etkinleştirmek için. Şu anda uygulanan derleyici ve standart kitaplık özellikleri ileri taslak standardı için önerilen açıkça etkinleştirmek için **/Std: c ++ Son**. Tüm C ++ 20 özellikleri gerektiren **/std:latest**; uygulama tamamlandığında, yeni bir **/Std: c ++ 20** seçeneği etkinleştirilir.
+**/Std** seçenektir ve sonrasında Visual Studio 2017'de kullanılabilir. Sürüme özgü ISO C++ programlama dili standart özelliklerine kodunuzun derleme sırasında etkin denetlemek için kullanılır. Bu seçenek, belirli bir dil sürümüne uyan mevcut kod standart kesme belirli özellikler için destek yeni dil ve kitaplığa devre dışı bırakmanıza olanak tanır. Varsayılan olarak, **/Std: c ++ 14** belirtilirse, hangi devre dışı bırakır dili ve standart kitaplık özellikleri C++ dilinin sonraki sürümlerde, standart bulunamadı. Kullanım **/Std: c ++ 17** C ++ 17 standart özgü özellikler ve davranışı etkinleştirmek için. Şu anda uygulanan derleyici ve standart kitaplık özellikleri ileri taslak standardı için önerilen açıkça etkinleştirmek için **/Std: c ++ Son**. Tüm C ++ 20 özellikleri gerektiren **/Std: c ++ Son**; uygulama tamamlandığında, yeni bir **/Std: c ++ 20** seçeneği etkinleştirilir.
 
 Varsayılan **/Std: c ++ 14** seçeneği MSVC derleyici tarafından uygulanan C ++ 14 özellikleri kümesini sağlar. Bu seçenek derleyici ve değiştirilen özellikler veya yeni dil standardı, önceki sürümlerinde MSVC derleyicisi, zaten uygulanmış bazı C ++ 17 özellikleri hariç olmak üzere daha yeni sürümlerinde standart kitaplığı desteği devre dışı bırakır. Visual Studio 2015 güncelleştirme 2'den itibaren kullanılabilir özelliklere bağımlılıkları zaten kullanımda kullanıcılar için önemli değişiklikler önlemek için bu özellikleri ne zaman etkin kalmaya devam **/Std: c ++ 14** seçeneği belirtildiğinde:
 
@@ -57,7 +57,7 @@ Ek bilgi için hangi C ++ 14 ve C ++ 17 özellikleri üzerinde ne zaman etkin **
 
 1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
 
-1. Seçin **yapılandırma özellikleri**, **C/C++**, **dil**.
+1. Seçin **yapılandırma özellikleri**, **C/C++** , **dil**.
 
 1. İçinde **C++ dil standardı**, dil standardı açılır denetimden desteklemek ve ardından seçin **Tamam** veya **Uygula** yaptığınız değişiklikleri kaydedin.
 

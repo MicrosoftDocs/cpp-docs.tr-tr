@@ -12,21 +12,16 @@ helpviewer_keywords:
 - std::operator&amp; (bitset)
 - std::operator&gt;&gt; (bitset)
 - std::operator&lt;&lt; (bitset)
-ms.openlocfilehash: 1c4c1b6f6c023514a1d3ae46f6670247e4bf99d4
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 30367e003d2dad95e870854098e7fcae34f50efa
+ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62380201"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68243329"
 ---
 # <a name="ltbitsetgt-operators"></a>&lt;bitset&gt; işleçleri
 
-||||
-|-|-|-|
-|[İşleci&amp;](#op_amp)|[İşleci&gt;&gt;](#op_gt_gt)|[İşleci&lt;&lt;](#op_lt_lt)|
-|[operator ^](#op_xor)|[operator&#124;](#op_or)| |
-
-## <a name="op_amp"></a>  İşleci&amp;
+## <a name="op_amp"></a> İşleci&amp;
 
 Bit düzeyinde gerçekleştirir `AND` iki bitsets arasında.
 
@@ -40,10 +35,10 @@ operator&(
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*<br/>
+*Sol*\
 İlgili öğeleri olan bit ile birleştirilecek iki bitsets ilk `AND`.
 
-*sağ*<br/>
+*sağ*\
 İki valarrays ilgili öğeleri olan bit ile birleştirilecek ikinci `AND`.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -78,7 +73,7 @@ bitset 2: 0011
 bitset 3: 0001
 ```
 
-## <a name="op_lt_lt"></a>  İşleci&lt;&lt;
+## <a name="op_lt_lt"></a> İşleci&lt;&lt;
 
 Bit sırayı bir metin temsili çıkış akışına ekler.
 
@@ -91,7 +86,7 @@ basic_ostream<CharType, Traits>& operator<<(
 
 ### <a name="parameters"></a>Parametreler
 
-*sağ*<br/>
+*sağ*\
 Bir nesne türü **bitset\<N >** olan dize olarak çıkış akışına içine eklenecek.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -102,7 +97,7 @@ Bit sırayı bir metin temsili `ostr`.
 
 Şablonu işlev aşırı yüklemelerinin `operator<<`, ilk dizeye değiştirmeden yazılmalıdır bir bitset izin verme. Şablon işlevi etkin şekilde şunları yürütür:
 
-**ostr** << _ *sağ*. [to_string](bitset-class.md) < **CharType**, **nitelikler**, **ayırıcı** \< **CharType**>>)
+**ostr** << _*sağ*. [to_string](bitset-class.md) <**CharType**, **nitelikler**, **ayırıcı**\<**CharType**>>)
 
 ### <a name="example"></a>Örnek
 
@@ -135,7 +130,7 @@ int main( )
 }
 ```
 
-## <a name="op_gt_gt"></a>  İşleci&gt;&gt;
+## <a name="op_gt_gt"></a> İşleci&gt;&gt;
 
 Bir bitset bir bit karakter dizesini okur.
 
@@ -150,10 +145,10 @@ _Istr,
 
 ### <a name="parameters"></a>Parametreler
 
-*_Istr*<br/>
+*_Istr*\
 Bitset eklenecek giriş akışının içine girilen bir dize.
 
-*sağ*<br/>
+*sağ*\
 BITS, giriş akışından alıyor bitset.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -221,7 +216,7 @@ int main()
 }
 ```
 
-## <a name="op_xor"></a>  operator ^
+## <a name="op_xor"></a> operator ^
 
 Bit düzeyinde gerçekleştirir `EXCLUSIVE-OR` iki bitsets arasında.
 
@@ -235,10 +230,10 @@ operator^(
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*<br/>
+*Sol*\
 İlgili öğeleri olan bit ile birleştirilecek iki bitsets ilk `EXCLUSIVE-OR`.
 
-*sağ*<br/>
+*sağ*\
 İki valarrays ilgili öğeleri olan bit ile birleştirilecek ikinci `EXCLUSIVE-OR`.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -273,7 +268,7 @@ bitset 2: 0011
 bitset 3: 0110
 ```
 
-## <a name="op_or"></a>  işleci&#124;
+## <a name="op_or"></a> işleci&#124;
 
 Bit düzeyinde gerçekleştirir `OR` iki bitsets arasında.
 
@@ -287,10 +282,10 @@ operator|(
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*<br/>
+*Sol*\
 İlgili öğeleri olan bit ile birleştirilecek iki bitsets ilk `OR`.
 
-*sağ*<br/>
+*sağ*\
 İki valarrays ilgili öğeleri olan bit ile birleştirilecek ikinci `OR`.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -324,7 +319,3 @@ bitset 1: 0101
 bitset 2: 0011
 bitset 3: 0111
 ```
-
-## <a name="see-also"></a>Ayrıca bkz.
-
-[\<bitset >](../standard-library/bitset.md)<br/>

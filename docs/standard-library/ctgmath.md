@@ -2,26 +2,26 @@
 title: '&lt;ctgmath&gt;'
 ms.date: 11/04/2016
 ms.assetid: ff521893-f445-4dc8-a2f6-699185bb7024
-ms.openlocfilehash: 64d72bb643e792fe39978d5c2e92e1bcf23cfc4f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 85099f3cb206dd791aade59bf9a531a714e68ac3
+ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62394207"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68246602"
 ---
 # <a name="ltctgmathgt"></a>&lt;ctgmath&gt;
 
-Aslında, C++ Standart Kitaplığı üst bilgilerini içeren \<ccomplex > ve \<cmath >, eşdeğer türü matematik makroları sağlayan \<tgmath.h >.
+Aslında içerir C++ standart kitaplık üstbilgi \<karmaşık > ve \<cmath >, eşdeğer türü matematik makroları sağlayan \<tgmath.h >.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="requirements"></a>Gereksinimler
 
-```cpp
-#include <ctgmath>
-```
+**Başlık:** \<ctgmath >
+
+**Namespace:** std
 
 ## <a name="remarks"></a>Açıklamalar
 
-Standart C Kitaplığı üstbilgisi işlevselliğini \<tgmath.h > aşırı yüklemeler tarafından sağlanan \<ccomplex > ve \<cmath >.
+Standart C Kitaplığı üstbilgisi işlevselliğini \<tgmath.h > aşırı yüklemeler tarafından sağlanan \<karmaşık > ve \<cmath >.
 
 Bu üstbilginin dahil sağlar, standart C Kitaplığı üstbilgisinde harici bağlantı kullanılarak bildirilen adların bildirilir `std` ad alanı.
 

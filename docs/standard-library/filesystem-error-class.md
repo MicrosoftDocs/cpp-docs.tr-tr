@@ -4,12 +4,12 @@ ms.date: 09/10/2018
 f1_keywords:
 - filesystem/std::experimental::filesystem::filesystem_error
 ms.assetid: c53aac27-c1fa-43e4-8967-48ea8ba1f172
-ms.openlocfilehash: add1e0da43a44c35f39c96e8d65e36aeea0d3afb
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c3dbfc080f0a1494950016f42189d932be05b0f1
+ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62405163"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68240738"
 ---
 # <a name="filesystemerror-class"></a>filesystem_error Sınıfı
 
@@ -25,15 +25,17 @@ class filesystem_error    : public system_error;
 
 Sınıfı bir hata rapor için oluşturulan tüm özel durumlar için temel sınıf olarak hizmet verir \<filesystem > işlevleri. Türünde bir nesne depolar `string`adlı `mymesg` exposition amaçları için burada. Türünden iki nesne de depolar `path`adlı `mypval1` ve `mypval2`.
 
+## <a name="members"></a>Üyeler
+
 ### <a name="constructors"></a>Oluşturucular
 
-|Oluşturucu|Açıklama|
+|||
 |-|-|
 |[filesystem_error](#filesystem_error)|Oluşturur bir `filesystem_error` ileti.|
 
-### <a name="member-functions"></a>Üye işlevleri
+### <a name="functions"></a>İşlevler
 
-|Üye işlevi|Açıklama|
+|||
 |-|-|
 |[yol1](#path1)|döndürür `mypval1`|
 |[yol2](#path2)|döndürür `mypval2`|
@@ -45,7 +47,7 @@ Sınıfı bir hata rapor için oluşturulan tüm özel durumlar için temel sın
 
 **Namespace:** std::experimental::filesystem
 
-## <a name="filesystem_error"></a> filesystem_error::filesystem_error
+## <a name="filesystem_error"></a> filesystem_error
 
 İlk Oluşturucu, ileti oluşturur *what_arg* ve *ec*. İkinci oluşturucu Ayrıca, ileti oluşturur *pval1*, içinde depoladığı `mypval1`. Üçüncü Oluşturucu, ayrıca kendi ileti oluşturur *pval1*, içinde depoladığı `mypval1`, gelen ve giden *pval2*, içinde depoladığı `mypval2`.
 
@@ -65,19 +67,19 @@ filesystem_error(const string& what_arg,
 
 ### <a name="parameters"></a>Parametreler
 
-*what_arg*<br/>
+*what_arg*\
 Belirtilen ileti.
 
-*EC*<br/>
+*EC*\
 Belirtilen hata kodu.
 
-*mypval1*<br/>
+*mypval1*\
 Daha fazla belirtilen iletiyi parametresi.
 
-*mypval2*<br/>
+*mypval2*\
 Daha fazla belirtilen iletinin parametresi.
 
-## <a name="path1"></a> filesystem_error::path1
+## <a name="path1"></a> yol1
 
 Üye işlevi döndürür `mypval1`
 
@@ -85,7 +87,7 @@ Daha fazla belirtilen iletinin parametresi.
 const path& path1() const noexcept;
 ```
 
-## <a name="path2"></a> filesystem_error::path2
+## <a name="path2"></a> yol2
 
 Üye işlevi döndürür `mypval2`
 
@@ -93,17 +95,10 @@ const path& path1() const noexcept;
 const path& path2() const noexcept;
 ```
 
-## <a name="what"></a> filesystem_error::What
+## <a name="what"></a> ne
 
 Üye işlevi işaretçisi döndüren bir `NTBS`, tercihen oluşan gelen `runtime_error::what()`, `system_error::what()`, `mymesg`, `mypval1.native_string()`, ve `mypval2.native_string()`.
 
 ```cpp
 const char *what() const noexcept;
 ```
-
-## <a name="see-also"></a>Ayrıca bkz.
-
-[Üstbilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md)<br/>
-[system_error Sınıfı](../standard-library/system-error-class.md)<br/>
-[\<FileSystem >](../standard-library/filesystem.md)<br/>
-[\<Özel Durum >](../standard-library/exception.md)<br/>

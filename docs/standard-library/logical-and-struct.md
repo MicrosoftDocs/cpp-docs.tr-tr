@@ -7,12 +7,12 @@ helpviewer_keywords:
 - logical_and class
 - logical_and struct
 ms.assetid: 1a375cc2-0592-4d57-a553-78009c7ad610
-ms.openlocfilehash: 0a8d8c0fba8b1ad621e80fb96336eefe2aec5dd8
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 86b780c71a0b0265cbd0c8829fb5aea70f0fa42e
+ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62413118"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68243281"
 ---
 # <a name="logicaland-struct"></a>logical_and Yapısı
 
@@ -39,12 +39,13 @@ struct logical_and<void>
 
 ### <a name="parameters"></a>Parametreler
 
-*Tür*, *T*, *U* destekleyen herhangi bir türü bir `operator&&` , belirtilen veya çıkarsanan tür işlenen alır.
+*Tür*, *T*, *U*\
+Destekleyen herhangi bir türü bir `operator&&` , belirtilen veya çıkarsanan tür işlenen alır.
 
-*Sol*<br/>
+*Sol*\
 Mantıksal ve işlecini işleminin sol işleneni. Uzmanlaşmamış şablon türü bir lvalue başvuru bağımsız değişkeni alır *türü*. Özelleşmiş şablon lvalue iletilmesini mükemmel ve rvalue başvuru bağımsız değişkenleri tür çıkarımı yapılan *T*.
 
-*sağ*<br/>
+*sağ*\
 Mantıksal ve işlecini işlemi sağ işleneni. Uzmanlaşmamış şablon türü bir lvalue başvuru bağımsız değişkeni alır *türü*. Özelleşmiş şablon lvalue iletilmesini mükemmel ve rvalue başvuru bağımsız değişkenleri tür çıkarımı yapılan *U*.
 
 ## <a name="return-value"></a>Dönüş Değeri
@@ -116,24 +117,13 @@ int main( )
       cout << *iter3 << " ";
    cout << ")" << endl;
 }
+```
 
-/* Output:
+```Output
 Original deque:
 d1 = ( true true true true true false false )
 Original deque:
 d2 = ( true false true true false true false )
 The deque which is the conjuction of d1 & d2 is:
 d3 = ( true false true true false false false )
-*/
 ```
-
-## <a name="requirements"></a>Gereksinimler
-
-**Başlık:** \<işlev >
-
-**Namespace:** std
-
-## <a name="see-also"></a>Ayrıca bkz.
-
-[C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
-[C++ Standart Kitaplığı Başvurusu](../standard-library/cpp-standard-library-reference.md)<br/>

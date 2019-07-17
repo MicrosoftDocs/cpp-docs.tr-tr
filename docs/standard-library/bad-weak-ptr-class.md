@@ -7,12 +7,12 @@ helpviewer_keywords:
 - bad_weak_ptr
 - bad_weak_ptr class
 ms.assetid: a09336d5-7237-4480-ab6b-3787e0e6025e
-ms.openlocfilehash: 78438ef3378e5002396eecb32b9b7a76d5b50325
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 8ea29f12a8a86bd6b58c5051645182d69ff43389
+ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62377497"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68246191"
 ---
 # <a name="badweakptr-class"></a>bad_weak_ptr Sınıfı
 
@@ -23,7 +23,6 @@ Bozuk weak_ptr özel durumunu raporlar.
 ```cpp
 class bad_weak_ptr : public std::exception
 {
-public:
     bad_weak_ptr();
     const char *what() throw();
 };
@@ -70,12 +69,6 @@ int main()
 ```Output
 bad weak pointer
 ```
-
-## <a name="requirements"></a>Gereksinimler
-
-**Başlık:** \<bellek >
-
-**Namespace:** std
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

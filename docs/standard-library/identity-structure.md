@@ -7,12 +7,12 @@ helpviewer_keywords:
 - identity class
 - identity structure
 ms.assetid: 990756fd-7969-4b39-ad7e-0878e8dac8fd
-ms.openlocfilehash: 722eb9c0579d0c07765434127d0a7c43718fbc37
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 49b2c1eb3ca03f9bf9199bdbca49348866ff0a7e
+ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62405007"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68246158"
 ---
 # <a name="identity-structure"></a>identity Yapısı
 
@@ -24,27 +24,16 @@ ms.locfileid: "62405007"
 struct identity {
    typedef Type type;
    Type operator()(const Type& left) const;
-   };
+};
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-|Parametre|Açıklama|
-|---------------|-----------------|
-|*Sol*|Tanımlamak için değeri.|
+*Sol*\
+Tanımlamak için değeri.
 
 ## <a name="remarks"></a>Açıklamalar
 
 Sınıfı ortak tür tanımını içeren `type`, şablon parametre türü ile aynı olduğu. Şablon işlevi ile birlikte kullanılan [İleri](../standard-library/utility-functions.md#forward) bir işlev parametresi istenen türde olduğundan emin olmak için.
 
 Eski kod ile uyumluluk için sınıf IDENTITY işlevi de tanımlar `operator()` bağımsız değişkenini döndürür *sol*.
-
-## <a name="requirements"></a>Gereksinimler
-
-**Başlık:** \<yardımcı programı >
-
-**Namespace:** std
-
-## <a name="see-also"></a>Ayrıca bkz.
-
-[\<yardımcı programı >](../standard-library/utility.md)<br/>

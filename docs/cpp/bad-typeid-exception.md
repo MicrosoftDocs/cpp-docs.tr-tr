@@ -8,12 +8,12 @@ helpviewer_keywords:
 - bad_typeid exception
 - exceptions [C++], bad_typeid
 ms.assetid: 5963ed58-4ede-4597-957d-f7bbd06299c2
-ms.openlocfilehash: 0389a6db1249ad47d4ca5cc10003169933c7a5c3
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 2ff7339b02cfe8c21cebfa7d9bb0cc98b3e08799
+ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62392394"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68242269"
 ---
 # <a name="badtypeid-exception"></a>bad_typeid Özel Durumu
 
@@ -34,9 +34,13 @@ Arabirimin **bad_typeid** olan:
 class bad_typeid : public exception
 {
 public:
+   bad_typeid();
    bad_typeid(const char * _Message = "bad typeid");
    bad_typeid(const bad_typeid &);
    virtual ~bad_typeid();
+
+   bad_typeid& operator=(const bad_typeid&);
+   const char* what() const;
 };
 ```
 

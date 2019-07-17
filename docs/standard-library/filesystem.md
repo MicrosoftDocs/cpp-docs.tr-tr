@@ -9,12 +9,12 @@ f1_keywords:
 - filesystem/std::experimental::filesystem::directory_iterator
 - <filesystem>
 ms.assetid: 5005753b-46fa-43e1-8d4e-1b38617d3cfd
-ms.openlocfilehash: 0f397d8b0c39769fde20b6aa50412c979237f70a
-ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.openlocfilehash: a44fc3c6c6a37c20e1e1c294929ae3cb15cece58
+ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65220380"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68240703"
 ---
 # <a name="ltfilesystemgt"></a>&lt;dosya sistemi&gt;
 
@@ -89,10 +89,12 @@ Son olarak, önemli bir özelliği, yol nesneleri üstbilgisinde tanımlanan sı
 
 Daha fazla bilgi ve kod örnekleri için bkz. [dosya sistemi gezintisi (C++)](../standard-library/file-system-navigation.md).
 
-## <a name="classes"></a>Sınıflar
+## <a name="members"></a>Üyeler
 
-|Ad|Açıklama|
-|----------|-----------------|
+### <a name="classes"></a>Sınıflar
+
+|||
+|-|-|
 |[directory_entry Sınıfı](../standard-library/directory-entry-class.md)|Tarafından döndürülen bir nesne tanımlayan bir `directory_iterator` veya `recursive_directory_iterator` ve bir yol içeriyor.|
 |[directory_iterator Sınıfı](../standard-library/directory-iterator-class.md)|Bir dosya sistemi dizindeki dosya adlarını aracılığıyla dizilerinin bir giriş yineleyici açıklar.|
 |[filesystem_error Sınıfı](../standard-library/filesystem-error-class.md)|Bir düzey sistemi taşması bildirmek için oluşturulan özel durumlar için temel sınıf.|
@@ -100,10 +102,10 @@ Daha fazla bilgi ve kod örnekleri için bkz. [dosya sistemi gezintisi (C++)](..
 |[recursive_directory_iterator Sınıfı](../standard-library/recursive-directory-iterator-class.md)|Bir dosya sistemi dizindeki dosya adlarını aracılığıyla dizilerinin bir giriş yineleyici açıklar. Yineleyici içinde alt dizinler de düzen.|
 |[file_status Sınıfı](../standard-library/file-status-class.md)|Saran bir `file_type`.|
 
-## <a name="structs"></a>Yapılar
+### <a name="structs"></a>Yapılar
 
-|Ad|Açıklama|
-|----------|-----------------|
+|||
+|-|-|
 |[space_info Yapısı](../standard-library/space-info-structure.md)|Bir birim ilgili bilgileri tutar.|
 
 ## <a name="functions"></a>İşlevler
@@ -116,12 +118,13 @@ Daha fazla bilgi ve kod örnekleri için bkz. [dosya sistemi gezintisi (C++)](..
 
 ## <a name="enumerations"></a>Numaralandırmalar
 
-|Ad|Açıklama|
-|----------|-----------------|
+|||
+|-|-|
 |[copy_options](../standard-library/filesystem-enumerations.md#copy_options)|İle kullanılan bir numaralandırma [copy_file](../standard-library/filesystem-functions.md#copy_file) ve hedef dosya zaten mevcutsa davranışını belirler.|
 |[copy_options](../standard-library/filesystem-enumerations.md#copy_options)|İle kullanılan bir numaralandırma [copy_file](../standard-library/filesystem-functions.md#copy_file) ve hedef dosya zaten mevcutsa davranışını belirler.|
 |[directory_options](../standard-library/filesystem-enumerations.md#directory_options)|Dizin yineleyicileri için seçenekleri belirten bir sabit listesi.|
 |[file_type](../standard-library/filesystem-enumerations.md#file_type)|Dosya türleri için bir sabit listesi.|
+|[perm_options](../standard-library/filesystem-enumerations.md#perm_options)||
 |[izinleri](../standard-library/filesystem-enumerations.md#perms)|İzinler ve izinleri seçenekleri iletmek için kullanılan bir bit maskesi türü|
 
 ## <a name="see-also"></a>Ayrıca bkz.

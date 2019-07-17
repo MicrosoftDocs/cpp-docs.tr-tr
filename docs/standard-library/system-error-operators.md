@@ -5,20 +5,16 @@ f1_keywords:
 - system_error/std::operator!=
 - system_error/std::operator==
 ms.assetid: c14edefb-bd8a-4e90-88d3-c59c98e6f73c
-ms.openlocfilehash: d5c8f49c4a38862d62b7fe8212d98c87949fecfc
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 5cf6a455beb5654ef65f7411db4783a32c71d625
+ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62412130"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68246218"
 ---
 # <a name="ltsystemerrorgt-operators"></a>&lt;system_error&gt; işleçleri
 
-||||
-|-|-|-|
-|[operator!=](#op_neq)|[İşleci&lt;](#op_lt)|[operator==](#op_eq_eq)|
-
-## <a name="op_eq_eq"></a>  işleç ==
+## <a name="op_eq_eq"></a> işleç ==
 
 İşlecin sol tarafındaki nesnesinin işlecin sağ tarafındaki nesneye eşit olup olmadığını sınar.
 
@@ -28,14 +24,18 @@ bool operator==(const error_code& left,
 
 bool operator==(const error_condition& left,
     const error_code& right);
+
+bool operator==(const error_condition& left,
+    const error_condition& right);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-|Parametre|Açıklama|
-|---------------|-----------------|
-|*Sol*|Eşitlik için test edilecek nesne.|
-|*sağ*|Eşitlik için test edilecek nesne.|
+*Sol*\
+Eşitlik için test edilecek nesne.
+
+*sağ*\
+Eşitlik için test edilecek nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -45,24 +45,24 @@ bool operator==(const error_condition& left,
 
 Bu işlev döndürür `left.category() == right.category() && left.value() == right.value()`.
 
-## <a name="op_neq"></a>  işleç! =
+## <a name="op_neq"></a> işleç! =
 
 İşlecin sol tarafındaki nesne işlecin sağ tarafındaki nesneye eşit olup olmadığını sınar.
 
 ```cpp
-bool operator!=(const error_code& left,
-    const error_condition& right);
-
-bool operator!=(const error_condition& left,
-    const error_code& right);
+bool operator!=(const error_code& left, const error_condition& right);
+bool operator!=(const error_condition& left, const error_code& right);
+bool operator!=(const error_code& left, const error_code& right);
+bool operator!=(const error_condition& left, const error_condition& right);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-|Parametre|Açıklama|
-|---------------|-----------------|
-|*Sol*|Eşitsizlik için test edilecek nesne.|
-|*sağ*|Eşitsizlik için test edilecek nesne.|
+*Sol*\
+Eşitsizlik için test edilecek nesne.
+
+*sağ*\
+Eşitsizlik için test edilecek nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -72,7 +72,7 @@ bool operator!=(const error_condition& left,
 
 Bu işlev döndürür `!(left == right)`.
 
-## <a name="op_lt"></a>  İşleci&lt;
+## <a name="op_lt"></a> İşleci&lt;
 
 Bir nesnenin karşılaştırma için içeri geçirilen nesneden küçük olup olmadığını sınar.
 
@@ -102,10 +102,11 @@ inline bool operator<(
 
 ### <a name="parameters"></a>Parametreler
 
-|Parametre|Açıklama|
-|---------------|-----------------|
-|*Sol*|Karşılaştırılacak nesne.|
-|*sağ*|Karşılaştırılacak nesne.|
+*Sol*\
+Karşılaştırılacak nesne.
+
+*sağ*\
+Karşılaştırılacak nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -115,6 +116,9 @@ inline bool operator<(
 
 Bu işlev hata sıralamasını sınar.
 
-## <a name="see-also"></a>Ayrıca bkz.
+## <a name="op_ostream"></a> İşleci&lt;&lt;
 
-[<system_error>](../standard-library/system-error.md)<br/>
+```cpp
+template <class charT, class traits> 
+    basic_ostream<charT, traits>& operator<<(basic_ostream<charT, traits>& os, const error_code& ec);
+```

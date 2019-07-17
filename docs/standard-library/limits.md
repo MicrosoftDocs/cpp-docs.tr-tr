@@ -7,26 +7,28 @@ f1_keywords:
 helpviewer_keywords:
 - limits header
 ms.assetid: e07d6379-5b00-4a3d-a789-40d41538b59e
-ms.openlocfilehash: c029095d5298048874a7eb6f1a41209d6a6f4779
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e23c47b3eaecec92e462af7b2cc47627c5bad86a
+ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62413248"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68245314"
 ---
 # <a name="ltlimitsgt"></a>&lt;sınırları&gt;
 
 Şablon sınıfı tanımlar `numeric_limits` ve kayan nokta ifadeleri ilgili ve yuvarlama iki numaralandırma.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="requirements"></a>Gereksinimler
 
-```cpp
-#include <limits>
-```
+**Başlık:** \<sınırları >
+
+**Namespace:** std
 
 ## <a name="remarks"></a>Açıklamalar
 
 Açık uzmanlıkları `numeric_limits` sınıfı temel türlerin karakter, tamsayı ve kayan nokta türleri dahil olmak üzere birçok özelliklerini açıklar ve **bool** giderilen yerine tanımlanan uygulaması olan C++ dilinin kurallar. Özellikleri açıklanan \<sınırları > doğruluğu, minimum ve maksimum dahil yuvarlama ve türü hata sinyali gösterimleri, boyutlandırılmış.
+
+## <a name="members"></a>Üyeler
 
 ### <a name="enumerations"></a>Numaralandırmalar
 
@@ -37,7 +39,7 @@ Açık uzmanlıkları `numeric_limits` sınıfı temel türlerin karakter, tamsa
 
 ### <a name="classes"></a>Sınıflar
 
-|örneği|Açıklama|
+|||
 |-|-|
 |[numeric_limits Sınıfı](../standard-library/numeric-limits-class.md)|Şablon sınıfı, yerleşik sayısal türler aritmetik özelliklerini açıklar.|
 

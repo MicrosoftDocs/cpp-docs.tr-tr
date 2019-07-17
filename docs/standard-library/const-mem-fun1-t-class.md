@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - const_mem_fun1_t class
 ms.assetid: 250fac30-9663-4133-9051-6303f76ea259
-ms.openlocfilehash: df984d90f8b632f8e3e3b183943343952d45b8be
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 8ccd9d7e58b9cadec83b64df5553564db20a5745
+ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62211981"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68244523"
 ---
 # <a name="constmemfun1t-class"></a>const_mem_fun1_t Sınıfı
 
@@ -30,13 +30,13 @@ class const_mem_fun1_t : public binary_function<const Type *, Arg, Result>
 
 ### <a name="parameters"></a>Parametreler
 
-*member_ptr*<br/>
+*member_ptr*\
 Bir sınıfın üye işlevi işaretçisi `Type` bir işlev nesnesi için dönüştürülecek.
 
-*Sol*<br/>
+*Sol*\
 **Const** nesnesinin *member_ptr* üye işlevi çağrılır.
 
-*sağ*<br/>
+*sağ*\
 Bağımsız değişkeni için verilen *member_ptr*.
 
 ## <a name="return-value"></a>Dönüş Değeri
@@ -50,14 +50,3 @@ Uyarlanabilir bir ikili fonksiyon.
 ## <a name="example"></a>Örnek
 
 Oluşturucusuna `const_mem_fun1_t` doğrudan nadiren kullanılır. `mem_fn` üye işlevleri uyum sağlamak için kullanılır. Bkz: [mem_fn](../standard-library/functional-functions.md#mem_fn) üye işlevi bağdaştırıcıları kullanmayı gösteren bir örnek.
-
-## <a name="requirements"></a>Gereksinimler
-
-**Başlık:** \<işlev >
-
-**Namespace:** std
-
-## <a name="see-also"></a>Ayrıca bkz.
-
-[C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
-[C++ Standart Kitaplığı Başvurusu](../standard-library/cpp-standard-library-reference.md)<br/>

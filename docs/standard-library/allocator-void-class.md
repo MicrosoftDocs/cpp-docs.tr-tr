@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - allocator<void> class
 ms.assetid: abfb40f5-c600-46a6-b130-f42c6535b2bd
-ms.openlocfilehash: 5591570527946895d1e0456b23327d7fabc4bef5
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 7ac7fbaa8c50eb13457271cf96ddc3412733c833
+ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62377926"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68245875"
 ---
 # <a name="allocatorltvoidgt-class"></a>Allocator&lt;void&gt; sınıfı
 
@@ -50,13 +50,3 @@ Sınıfı bir şablon sınıfı açıkça uzmanlaşmış [ayırıcı](../standar
 - [value_type](../standard-library/allocator-class.md#value_type).
 
 - [rebind](../standard-library/allocator-class.md#rebind), iç içe geçmiş Şablon sınıfı.
-
-## <a name="requirements"></a>Gereksinimler
-
-**Başlık:** \<bellek >
-
-**Namespace:** std
-
-## <a name="see-also"></a>Ayrıca bkz.
-
-[C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>

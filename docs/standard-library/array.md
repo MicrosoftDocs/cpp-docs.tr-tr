@@ -6,26 +6,31 @@ f1_keywords:
 helpviewer_keywords:
 - array header
 ms.assetid: 084147c1-e805-478e-8201-76846020f187
-ms.openlocfilehash: 8915a652fe442af84f2582b9b9d47a243f416eeb
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: fce204e3873151eafa0c4fa9c2b1e0af9971cfae
+ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62377250"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68243892"
 ---
 # <a name="ltarraygt"></a>&lt;Dizi&gt;
 
 Kapsayıcı Şablon sınıfı tanımlar **dizi** ve çeşitli destek şablonları.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="requirements"></a>Gereksinimler
 
-```cpp
-#include <array>
-```
+**Başlık:** \<array >
+
+**Namespace:** std
+
+> [!NOTE]
+> \<Array > Kitaplığı'nı da kullanan `#include <initializer_list>` deyimi.
+
+## <a name="members"></a>Üyeler
 
 ### <a name="classes"></a>Sınıflar
 
-|örneği|Açıklama|
+|||
 |-|-|
 |[Dizi](../standard-library/array-class-stl.md)|Sabit uzunluklu dizi öğe depolar.|
 |[tuple_element](../standard-library/tuple-element-class-tuple.md)|Türü bir dizi öğesine sarmalar.|
@@ -33,7 +38,7 @@ Kapsayıcı Şablon sınıfı tanımlar **dizi** ve çeşitli destek şablonlar�
 
 ### <a name="operators"></a>İşleçler
 
-|İşleç|Açıklama|
+|||
 |-|-|
 |[operator==](../standard-library/array-operators.md#op_eq_eq)|dizi karşılaştırma veya eşit|
 |[operator!=](../standard-library/array-operators.md#op_neq)|dizi karşılaştırması, eşit değil|
@@ -44,7 +49,7 @@ Kapsayıcı Şablon sınıfı tanımlar **dizi** ve çeşitli destek şablonlar�
 
 ### <a name="functions"></a>İşlevler
 
-|İşlev|Açıklama|
+|||
 |-|-|
 |[get](../standard-library/array-functions.md#get)|Belirtilen dizi öğesi alın.|
 |[değiştirme](../standard-library/array-functions.md#swap)|Bir dizinin içeriğini başka bir dizinin içeriğini birbiriyle değiştirir.|

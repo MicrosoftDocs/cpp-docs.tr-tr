@@ -32,40 +32,30 @@ helpviewer_keywords:
 - std::make_unchecked_array_iterator [C++]
 - std::next [C++]
 - std::prev [C++]
-ms.openlocfilehash: f6ea1ac49dabbfc34af9c8ddd020543f606d37a4
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 69f1007f0c7f587e81313f5de97947410bf243df
+ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62224148"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68244029"
 ---
 # <a name="ltiteratorgt-functions"></a>&lt;Yineleyici&gt; işlevleri
 
-||||
-|-|-|-|
-|[İlerlet](#advance)|[back_inserter](#back_inserter)|[başlayın](#begin)|
-|[cbegin](#cbegin)|[cend](#cend)|[uzaklık](#distance)|
-|[Son](#end)|[front_inserter](#front_inserter)|[inserter](#inserter)|
-|[make_checked_array_iterator](#make_checked_array_iterator)|[make_move_iterator](#make_move_iterator)|[make_unchecked_array_iterator](#make_unchecked_array_iterator)|
-|[Sonraki](#next)|[önceki](#prev)|
-
-## <a name="advance"></a>  İlerlet
+## <a name="advance"></a> İlerlet
 
 Belirtilen bir konum sayısıyla yineleyiciyi artırır.
 
 ```cpp
 template <class InputIterator, class Distance>
-void advance(
-    InputIterator& InIt,
-    Distance Off);
+    void advance(InputIterator& InIt, Distance Off);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*InIt*<br/>
+*InIt*\
 Artırılacak ve bir girişi yineleyicisinin gereksinimleri karşılaması gereken yineleyici.
 
-*Kapalı*<br/>
+*Kapalı*\
 Yineleyicinin fark türüne dönüştürülebilir ve yineleyici konumunun yükseltileceği artış sayısını belirten integral türü.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -123,7 +113,7 @@ LPOS is advanced 4 steps forward to point to the fifth element: 5.
 LPOS is moved 3 steps back to point to the 2nd element: 2.
 ```
 
-## <a name="back_inserter"></a>  back_inserter
+## <a name="back_inserter"></a> back_inserter
 
 Belirtilen kapsayıcının arkasında öğeler ekleyebilen bir yineleyici oluşturur.
 
@@ -134,7 +124,7 @@ back_insert_iterator<Container> back_inserter(Container& _Cont);
 
 ### <a name="parameters"></a>Parametreler
 
-*_Cont*<br/>
+*_Cont*\
 İçine geri ekleme yürütülecek kapsayıcısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -194,7 +184,7 @@ The initial vector vec is: ( 0 1 2 ).
 After the insertions, the vector vec is: ( 0 1 2 30 40 500 600 ).
 ```
 
-## <a name="begin"></a>  başlayın
+## <a name="begin"></a> başlayın
 
 Belirtilen bir kapsayıcıdaki ilk öğe için bir yineleyici alır.
 
@@ -213,10 +203,10 @@ Ty *begin(Ty (& array)[Size]);
 
 ### <a name="parameters"></a>Parametreler
 
-*devamı*<br/>
+*devamı*\
 Bir kapsayıcı.
 
-*Dizi*<br/>
+*Dizi*\
 Bir dizi türünde nesne `Ty`.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -296,7 +286,7 @@ Ona bir dizi göndermek, bu derleyicinin hata vermesine neden olur:
 error C2228: left of '.begin' must have class/struct/union
 ```
 
-## <a name="cbegin"></a>  cbegin
+## <a name="cbegin"></a> cbegin
 
 Belirtilen kapsayıcıdaki ilk öğeyi izleyen öğeye sabit bir yineleyici alır.
 
@@ -308,7 +298,7 @@ auto cbegin(const Container& cont)
 
 ### <a name="parameters"></a>Parametreler
 
-*devamı*<br/>
+*devamı*\
 Bir kapsayıcı ya da initializer_list.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -329,7 +319,7 @@ auto i2 = Container.cbegin();
 // i2 is Container<T>::const_iterator
 ```
 
-## <a name="cend"></a>  cend
+## <a name="cend"></a> cend
 
 Belirtilen kapsayıcıdaki son öğeyi izleyen öğe için sabit bir yineleyici alır.
 
@@ -341,7 +331,7 @@ auto cend(const Container& cont)
 
 ### <a name="parameters"></a>Parametreler
 
-*devamı*<br/>
+*devamı*\
 Bir kapsayıcı ya da initializer_list.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -362,7 +352,28 @@ auto i2 = Container.cend();
 // i2 is Container<T>::const_iterator
 ```
 
-## <a name="distance"></a>  uzaklık
+## <a name="crbegin"></a> crbegin
+
+```cpp
+template <class C> constexpr auto crbegin(const C& c) -> decltype(std::rbegin(c));
+```
+
+## <a name="crend"></a> crend
+
+```cpp
+template <class C> constexpr auto crend(const C& c) -> decltype(std::rend(c));
+```
+
+## <a name="data"></a> Veri
+
+```cpp
+template <class C> constexpr auto data(C& c) -> decltype(c.data());
+template <class C> constexpr auto data(const C& c) -> decltype(c.data());
+template <class T, size_t N> constexpr T* data(T (&array)[N]) noexcept;
+template <class E> constexpr const E* data(initializer_list<E> il) noexcept;
+```
+
+## <a name="distance"></a> uzaklık
 
 İki yineleyici tarafından ele alınan konumlar arasındaki artış sayısını belirler.
 
@@ -373,10 +384,10 @@ typename iterator_traits<InputIterator>::difference_type distance(InputIterator 
 
 ### <a name="parameters"></a>Parametreler
 
-*ilk*<br/>
+*ilk*\
 Belirlenecek olan ikinci mesafe olan ilk yineleyicisi.
 
-*Son*<br/>
+*Son*\
 İlk uzaklığı belirlenecek olan ikinci yineleyicisi.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -435,7 +446,15 @@ LPOS is advanced 7 steps forward to point  to the eighth element: 12.
 The distance from L.begin( ) to LPOS is: 7.
 ```
 
-## <a name="end"></a>  Son
+## <a name="empty"></a> boş
+
+```cpp
+template <class C> constexpr auto empty(const C& c) -> decltype(c.empty());
+template <class T, size_t N> constexpr bool empty(const T (&array)[N]) noexcept;
+template <class E> constexpr bool empty(initializer_list<E> il) noexcept;
+```
+
+## <a name="end"></a> Son
 
 Belirtilen kapsayıcıdaki son öğeyi izleyen öğeye bir yineleyici alır.
 
@@ -454,10 +473,10 @@ Ty *end(Ty (& array)[Size]);
 
 ### <a name="parameters"></a>Parametreler
 
-*devamı*<br/>
+*devamı*\
 Bir kapsayıcı.
 
-*Dizi*<br/>
+*Dizi*\
 Bir dizi türünde nesne `Ty`.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -470,7 +489,7 @@ Bir dizi türünde nesne `Ty`.
 
 Kod örneği için bkz: [başlamak](../standard-library/iterator-functions.md#begin).
 
-## <a name="front_inserter"></a>  front_inserter
+## <a name="front_inserter"></a> front_inserter
 
 Belirtilen kapsayıcının önünde öğeler ekleyebilen bir yineleyici oluşturur.
 
@@ -481,7 +500,7 @@ front_insert_iterator<Container> front_inserter(Container& _Cont);
 
 ### <a name="parameters"></a>Parametreler
 
-*_Cont*<br/>
+*_Cont*\
 Olan ön öğeye sahip kapsayıcı nesnesi eklenir.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -541,7 +560,7 @@ After the front insertions, the list L is:
 ( 200 100 -1 0 1 2 3 4 5 6 7 8 ).
 ```
 
-## <a name="inserter"></a>  inserter
+## <a name="inserter"></a> inserter
 
 Kullanmanıza olanak sağlayan bir yardımcı şablon işlevi `inserter(_Cont, _Where)` yerine `insert_iterator<Container>(_Cont, _Where)`.
 
@@ -555,10 +574,10 @@ inserter(
 
 ### <a name="parameters"></a>Parametreler
 
-*_Cont*<br/>
+*_Cont*\
 Yeni öğeleri eklenecek olan kapsayıcı.
 
-*_Where*<br/>
+*_Where*\
 Ekleme noktasını bulmak için bir yineleyici.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -612,7 +631,7 @@ After the insertions, the list L is:
 ( 1 20 30 40 500 ).
 ```
 
-## <a name="make_checked_array_iterator"></a>  make_checked_array_iterator
+## <a name="make_checked_array_iterator"></a> make_checked_array_iterator
 
 Oluşturur bir [checked_array_iterator](../standard-library/checked-array-iterator-class.md) diğer algoritmalarda kullanılabilen.
 
@@ -630,13 +649,13 @@ Iter Ptr,
 
 ### <a name="parameters"></a>Parametreler
 
-*PTR*<br/>
+*PTR*\
 Hedef dizi için işaretçi.
 
-*Boyutu*<br/>
+*Boyutu*\
 Hedef dizinin boyutu.
 
-*Index*<br/>
+*Dizin*\
 Diziye isteğe bağlı dizin.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -706,7 +725,7 @@ int main()
 }
 ```
 
-## <a name="make_move_iterator"></a>  make_move_iterator
+## <a name="make_move_iterator"></a> make_move_iterator
 
 Oluşturur bir `move iterator` sağlanan yineleyicisi olarak içeren `stored` yineleyici.
 
@@ -718,14 +737,14 @@ make_move_iterator(const Iterator& _It);
 
 ### <a name="parameters"></a>Parametreler
 
-*_Bt*<br/>
+*_Bt*\
 Yeni taşıma yineleyicisi depolanan yineleyici.
 
 ### <a name="remarks"></a>Açıklamalar
 
 Şablon işlevinin döndürdüğü `move_iterator` `<Iterator>(_It)`.
 
-## <a name="make_unchecked_array_iterator"></a>  make_unchecked_array_iterator
+## <a name="make_unchecked_array_iterator"></a> make_unchecked_array_iterator
 
 Oluşturur bir [unchecked_array_iterator](../standard-library/unchecked-array-iterator-class.md) diğer algoritmalarda kullanılabilen.
 
@@ -740,7 +759,7 @@ unchecked_array_iterator<Iter>
 
 ### <a name="parameters"></a>Parametreler
 
-*PTR*<br/>
+*PTR*\
 Hedef dizi için işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -804,7 +823,7 @@ int main()
 }
 ```
 
-## <a name="next"></a>  Sonraki
+## <a name="next"></a> Sonraki
 
 Belirtilen sayıda yineler ve yeni yineleyici konumunu döndürür.
 
@@ -817,10 +836,10 @@ InputIterator next(
 
 ### <a name="parameters"></a>Parametreler
 
-*ilk*<br/>
+*ilk*\
 Geçerli konumu.
 
-*_Off*<br/>
+*_Off*\
 Kaç kez yinelemek için.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -831,7 +850,7 @@ Yineleme sonra yeni yineleyici konumunu döndürür *_Off* kez.
 
 Şablon işlevinin döndürdüğü `next` artan *_Off* saatleri
 
-## <a name="prev"></a>  önceki
+## <a name="prev"></a> önceki
 
 Belirtilen sayıda geri yineler ve yeni yineleyici konumunu döndürür.
 
@@ -844,16 +863,33 @@ BidirectionalIterator prev(
 
 ### <a name="parameters"></a>Parametreler
 
-*ilk*<br/>
+*ilk*\
 Geçerli konumu.
 
-*_Off*<br/>
+*_Off*\
 Kaç kez yinelemek için.
 
 ### <a name="remarks"></a>Açıklamalar
 
 Şablon işlevinin döndürdüğü `next` indirildiği `off` kez.
 
-## <a name="see-also"></a>Ayrıca bkz.
+## <a name="rbegin"></a> rbegin
 
-[\<Yineleyici >](../standard-library/iterator.md)<br/>
+```cpp
+template <class C> constexpr auto rbegin(C& c) -> decltype(c.rbegin());
+template <class C> constexpr auto rbegin(const C& c) -> decltype(c.rbegin());
+```
+
+## <a name="rend"></a> rend
+
+```cpp
+template <class C> constexpr auto rend(C& c) -> decltype(c.rend());
+template <class C> constexpr auto rend(const C& c) -> decltype(c.rend());
+```
+
+## <a name="size"></a> Boyutu
+
+```cpp
+template <class C> constexpr auto size(const C& c) -> decltype(c.size());
+template <class T, size_t N> constexpr size_t size(const T (&array)[N]) noexcept;
+```

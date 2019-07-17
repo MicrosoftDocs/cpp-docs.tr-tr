@@ -16,21 +16,16 @@ helpviewer_keywords:
 - std::operator&lt; (vector)
 - std::operator&lt;= (vector)
 - std::operator== (vector)
-ms.openlocfilehash: f659f1291c4111d83cc8715fd0deb104a9685f4f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f6717add93c489f536bd0c0b0f82b74bbd915985
+ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62185951"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68240989"
 ---
 # <a name="ltvectorgt-operators"></a>&lt;vektör&gt; işleçleri
 
-||||
-|-|-|-|
-|[operator!=](#op_neq)|[İşleci&gt;](#op_gt)|[İşleci&gt;=](#op_gt_eq)|
-|[İşleci&lt;](#op_lt)|[İşleci&lt;=](#op_lt_eq)|[operator==](#op_eq_eq)|
-
-## <a name="op_neq"></a>  işleç! =
+## <a name="op_neq"></a> işleç! =
 
 İşlecin sol tarafındaki nesne işlecin sağ tarafındaki nesneye eşit olup olmadığını sınar.
 
@@ -40,10 +35,10 @@ bool operator!=(const vector<Type, Allocator>& left, const vector<Type, Allocato
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*<br/>
+*Sol*\
 Bir nesne türü `vector`.
 
-*sağ*<br/>
+*sağ*\
 Bir nesne türü `vector`.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -81,7 +76,7 @@ int main( )
 Vectors not equal.
 ```
 
-## <a name="op_lt"></a>  İşleci&lt;
+## <a name="op_lt"></a> İşleci&lt;
 
 İşlecin sol tarafındaki nesnesinin işlecin sağ tarafındaki nesneden küçük olup olmadığını sınar.
 
@@ -91,10 +86,10 @@ bool operator<(const vector<Type, Allocator>& left, const vector<Type, Allocator
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*<br/>
+*Sol*\
 Bir nesne türü `vector`.
 
-*sağ*<br/>
+*sağ*\
 Bir nesne türü `vector`.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -132,7 +127,7 @@ int main( )
 Vector v1 is less than vector v2.
 ```
 
-## <a name="op_lt_eq"></a>  İşleci&lt;=
+## <a name="op_lt_eq"></a> İşleci&lt;=
 
 Nesnesinin işlecin sol tarafındaki küçüktür veya eşittir nesnesinin işlecin sağ tarafındaki olup olmadığını sınar.
 
@@ -142,10 +137,10 @@ bool operator<=(const vector<Type, Allocator>& left, const vector<Type, Allocato
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*<br/>
+*Sol*\
 Bir nesne türü `vector`.
 
-*sağ*<br/>
+*sağ*\
 Bir nesne türü `vector`.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -183,7 +178,7 @@ int main( )
 Vector v1 is less than or equal to vector v2.
 ```
 
-## <a name="op_eq_eq"></a>  işleç ==
+## <a name="op_eq_eq"></a> işleç ==
 
 İşlecin sol tarafındaki nesnesinin işlecin sağ tarafındaki nesneye eşit olup olmadığını sınar.
 
@@ -193,10 +188,10 @@ bool operator==(const vector<Type, Allocator>& left, const vector<Type, Allocato
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*<br/>
+*Sol*\
 Bir nesne türü `vector`.
 
-*sağ*<br/>
+*sağ*\
 Bir nesne türü `vector`.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -234,7 +229,7 @@ int main( )
 Vectors equal.
 ```
 
-## <a name="op_gt"></a>  İşleci&gt;
+## <a name="op_gt"></a> İşleci&gt;
 
 İşlecin sol tarafındaki nesnesinin işlecin sağ tarafındaki nesneden büyük olup olmadığını sınar.
 
@@ -244,10 +239,10 @@ bool operator>(const vector<Type, Allocator>& left, const vector<Type, Allocator
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*<br/>
+*Sol*\
 Bir nesne türü `vector`.
 
-*sağ*<br/>
+*sağ*\
 Bir nesne türü `vector`.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -286,7 +281,7 @@ int main( )
 Vector v1 is greater than vector v2.
 ```
 
-## <a name="op_gt_eq"></a>  İşleci&gt;=
+## <a name="op_gt_eq"></a> İşleci&gt;=
 
 İşlecin sol tarafındaki nesnesinin değerinden büyük veya işlecin sağ tarafındaki nesneye eşit olup olmadığını sınar.
 
@@ -296,10 +291,10 @@ bool operator>=(const vector<Type, Allocator>& left, const vector<Type, Allocato
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*<br/>
+*Sol*\
 Bir nesne türü `vector`.
 
-*sağ*<br/>
+*sağ*\
 Bir nesne türü `vector`.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -337,7 +332,3 @@ int main( )
 ```Output
 Vector v1 is greater than or equal to vector v2.
 ```
-
-## <a name="see-also"></a>Ayrıca bkz.
-
-[\<vektör >](../standard-library/vector.md)<br/>

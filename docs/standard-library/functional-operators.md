@@ -7,40 +7,36 @@ f1_keywords:
 helpviewer_keywords:
 - functional operators
 ms.assetid: d4b3c760-f3e2-4b65-bdaa-d42e8dd6f5e1
-ms.openlocfilehash: 6fd4e25b3ca7b56e2221cb99b64f7c8e109bf452
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b396e5c692129821c0deb9aef9469a5c54e600b0
+ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62159566"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68243769"
 ---
 # <a name="ltfunctionalgt-operators"></a>&lt;işlevsel&gt; işleçleri
 
-|||
-|-|-|
-|[operator!=](#op_neq)|[operator==](#op_eq_eq)|
-
-## <a name="op_eq_eq"></a>  işleç ==
+## <a name="op_eq_eq"></a> işleç ==
 
 Çağrılabilir nesnesi boş olup olmadığını sınar.
 
 ```cpp
 template <class Fty>
-bool operator==(const function<Fty>& f, null_ptr_type npc);
+    bool operator==(const function<Fty>& f, null_ptr_type npc);
 
 template <class Fty>
-bool operator==(null_ptr_type npc, const function<Fty>& f);
+    bool operator==(null_ptr_type npc, const function<Fty>& f);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*Fty*<br/>
+*Fty*\
 Kaydırmak için işlev türü.
 
-*f*<br/>
+*F*\
 İşlev nesnesi
 
-*npc*<br/>
+*npc*\
 Null bir işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -79,27 +75,27 @@ empty == true
 empty == false
 ```
 
-## <a name="op_neq"></a>  işleç! =
+## <a name="op_neq"></a> işleç! =
 
 Çağrılabilir nesnesi boş olup olmadığını sınar.
 
 ```cpp
 template <class Fty>
-bool operator!=(const function<Fty>& f, null_ptr_type npc);
+    bool operator!=(const function<Fty>& f, null_ptr_type npc);
 
 template <class Fty>
-bool operator!=(null_ptr_type npc, const function<Fty>& f);
+    bool operator!=(null_ptr_type npc, const function<Fty>& f);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*Fty*<br/>
+*Fty*\
 Kaydırmak için işlev türü.
 
-*f*<br/>
+*F*\
 İşlev nesnesi
 
-*npc*<br/>
+*npc*\
 Null bir işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -137,7 +133,3 @@ int main()
 not empty == false
 not empty == true
 ```
-
-## <a name="see-also"></a>Ayrıca bkz.
-
-[\<işlev >](../standard-library/functional.md)<br/>

@@ -7,12 +7,12 @@ helpviewer_keywords:
 - not_equal_to function
 - not_equal_to struct
 ms.assetid: 333fce09-4f51-44e0-ba26-533bccffd485
-ms.openlocfilehash: 8dc0e5710790714bab2c0109db3a4aa41f0acbaf
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 5ee1ce120490b91a5f904109f49bf36d88e6261f
+ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62223603"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68243534"
 ---
 # <a name="notequalto-struct"></a>not_equal_to Yapısı
 
@@ -39,12 +39,13 @@ struct not_equal_to<void>
 
 ### <a name="parameters"></a>Parametreler
 
-*Tür*, *T*, *U* destekleyen herhangi bir türü bir `operator!=` , belirtilen veya çıkarsanan tür işlenen alır.
+*Tür*, *T*, *U*\
+Destekleyen herhangi bir türü bir `operator!=` , belirtilen veya çıkarsanan tür işlenen alır.
 
-*Sol*<br/>
+*Sol*\
 Eşitsizlik işleminin sol işleneni. Uzmanlaşmamış şablon türü bir lvalue başvuru bağımsız değişkeni alır *türü*. Özelleşmiş şablon lvalue iletilmesini mükemmel ve rvalue başvuru bağımsız değişkenleri tür çıkarımı yapılan *T*.
 
-*sağ*<br/>
+*sağ*\
 Eşitsizlik işlemi sağ işleneni. Uzmanlaşmamış şablon türü bir lvalue başvuru bağımsız değişkeni alır *türü*. Özelleşmiş şablon lvalue iletilmesini mükemmel ve rvalue başvuru bağımsız değişkenleri tür çıkarımı yapılan *U*.
 
 ## <a name="return-value"></a>Dönüş Değeri
@@ -106,20 +107,11 @@ int main( )
       cout << *Iter3 << " ";
    cout << ")" << endl;
 }
-/* Output:
+```
+
+```Output
 The vector v1 = ( 0 1 4 5 8 9 )
 The vector v2 = ( -0 1 -4 5 -8 9 )
 The result of the element-wise not_equal_to comparsion
 between v1 & v2 is: ( 0 0 1 0 1 0 )
-*/
 ```
-
-## <a name="requirements"></a>Gereksinimler
-
-**Başlık:** \<işlev >
-
-**Namespace:** std
-
-## <a name="see-also"></a>Ayrıca bkz.
-
-[C++ Standart Kitaplığı Başvurusu](../standard-library/cpp-standard-library-reference.md)<br/>

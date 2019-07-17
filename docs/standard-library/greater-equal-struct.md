@@ -7,12 +7,12 @@ helpviewer_keywords:
 - greater_equal struct
 - greater_equal function
 ms.assetid: a8ba911b-7af8-4653-b972-d8618f4df7d5
-ms.openlocfilehash: 91d8265fa699bbaafe946c44a55dd63c13f44b42
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f09364203c905407d8ce4607f527d58108eec778
+ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62159359"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68243739"
 ---
 # <a name="greaterequal-struct"></a>greater_equal Yapısı
 
@@ -39,12 +39,13 @@ struct greater_equal<void>
 
 ### <a name="parameters"></a>Parametreler
 
-*Tür*, *T*, *U* destekleyen herhangi bir türü bir `operator>=` , belirtilen veya çıkarsanan tür işlenen alır.
+*Tür*, *T*, *U*\
+Destekleyen herhangi bir türü bir `operator>=` , belirtilen veya çıkarsanan tür işlenen alır.
 
-*Sol*<br/>
+*Sol*\
 Büyük-veya-eşittir-yeri işleminin sol işleneni. Uzmanlaşmamış şablon türü bir lvalue başvuru bağımsız değişkeni alır *türü*. Özelleşmiş şablon lvalue iletilmesini mükemmel ve rvalue başvuru bağımsız değişkenleri tür çıkarımı yapılan *T*.
 
-*sağ*<br/>
+*sağ*\
 Büyük--veya-eşittir-işlemin sağ işleneni. Uzmanlaşmamış şablon türü bir lvalue başvuru bağımsız değişkeni alır *türü*. Özelleşmiş şablon lvalue iletilmesini mükemmel ve rvalue başvuru bağımsız değişkenleri tür çıkarımı yapılan *U*.
 
 ## <a name="return-value"></a>Dönüş Değeri
@@ -53,7 +54,7 @@ Sonucu `Left >= Right`. Özelleşmiş şablon tarafından döndürülen türünd
 
 ## <a name="remarks"></a>Açıklamalar
 
-İkili koşul `greater_equal` <  `Type`> katı bir zayıf türünün öğe değerlerini bir dizi sıralama sağlar *türü* denk sınıfların içinde bu tür standart matematiksel karşılar ve yalnızca, Bu nedenle sıralanan gereksinimleri. Farklı değerlerin tüm öğelerin birbirine göre sıralanır, toplam, öğelerin sıralaması uzmanlıkları herhangi bir işaretçi türü için yield.
+İkili koşul `greater_equal` < `Type`> katı bir zayıf türünün öğe değerlerini bir dizi sıralama sağlar *türü* denk sınıfların içinde bu tür standart matematiksel karşılar ve yalnızca, Bu nedenle sıralanan gereksinimleri. Farklı değerlerin tüm öğelerin birbirine göre sıralanır, toplam, öğelerin sıralaması uzmanlıkları herhangi bir işaretçi türü için yield.
 
 ## <a name="example"></a>Örnek
 
@@ -108,13 +109,3 @@ Original vector v1 = (6262 6262 41 18467 6334 26500 19169)
 Sorted vector v1 = (41 6262 6262 6334 18467 19169 26500)
 Resorted vector v1 = (26500 19169 18467 6334 6262 6262 41)
 ```
-
-## <a name="requirements"></a>Gereksinimler
-
-**Başlık:** \<işlev >
-
-**Namespace:** std
-
-## <a name="see-also"></a>Ayrıca bkz.
-
-[C++ Standart Kitaplığı Başvurusu](../standard-library/cpp-standard-library-reference.md)<br/>

@@ -9,21 +9,16 @@ f1_keywords:
 - iosfwd/std::wios
 - iosfwd/std::wstreampos
 ms.assetid: 0b962632-3439-44de-bf26-20c67a7f0ff3
-ms.openlocfilehash: 1f0ff93c22263ca4b35377b5d9af089816e8895a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: a0fd73cc53c5d538469cb957b7b4c4ec56783ade
+ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62159268"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68245273"
 ---
 # <a name="ltiosgt-typedefs"></a>&lt;iOS&gt; tür tanımları
 
-||||
-|-|-|-|
-|[iOS](#ios)|[streamoff](#streamoff)|[streampos](#streampos)|
-|[streamsize](#streamsize)|[wios](#wios)|[wstreampos](#wstreampos)|
-
-## <a name="ios"></a>  iOS
+## <a name="ios"></a> iOS
 
 Eski iostream Kitaplığı'ndan ios sınıf destekler.
 
@@ -35,7 +30,7 @@ typedef basic_ios<char, char_traits<char>> ios;
 
 Şablon sınıfı için bir eşanlamlı türüdür [basic_ios](../standard-library/basic-ios-class.md), türü öğeler için özelleştirilmiş **char** varsayılan karakter nitelikleri ile.
 
-## <a name="streamoff"></a>  streamoff
+## <a name="streamoff"></a> streamoff
 
 İç işlemlerini destekler.
 
@@ -51,7 +46,7 @@ typedef basic_ios<char, char_traits<char>> ios;
 
 İşlemleri konumlandırma çeşitli stream'de ilgili bir bayt uzaklığı depolayan bir nesne tanımlayan bir işaretli bir tamsayı türüdür. Değer en az 32 bit gösterimine sahiptir. Bir rastgele bayt konumu bir akış içinde temsil etmek için mutlaka yeterli büyüklükte değil. Değer `streamoff(-1)` genellikle hatalı bir uzaklık gösterir.
 
-## <a name="streampos"></a>  streampos
+## <a name="streampos"></a> streampos
 
 Arabelleğin işaretçisini veya dosya işaretçisi konumunu içerir.
 
@@ -134,7 +129,7 @@ typedef basic_ios<wchar_t, char_traits<wchar_t>> wios;
 
 Şablon sınıfı için bir eşanlamlı türüdür [basic_ios](../standard-library/basic-ios-class.md), türü öğeler için özelleştirilmiş **wchar_t** varsayılan karakter nitelikleri ile.
 
-## <a name="wstreampos"></a>  wstreampos
+## <a name="wstreampos"></a> wstreampos
 
 Arabelleğin işaretçisini veya dosya işaretçisi konumunu içerir.
 
@@ -167,7 +162,3 @@ int main( )
 ```Output
 7
 ```
-
-## <a name="see-also"></a>Ayrıca bkz.
-
-[\<iOS >](../standard-library/ios.md)<br/>

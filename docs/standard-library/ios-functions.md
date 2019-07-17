@@ -32,8 +32,14 @@ helpviewer_keywords:
 - std::dec [C++]
 - std::fixed [C++]
 - std::hex [C++]
+- std::hexfloat [C++]
+- std::io_errc [C++]
 - std::internal [C++]
+- std::iostream_category [C++]
+- std::is_error_code_enum [C++]
 - std::left [C++]
+- std::make_error_code [C++]
+- std::make_error_condition [C++]
 - std::noboolalpha [C++]
 - std::noshowbase [C++]
 - std::noshowpoint [C++]
@@ -50,27 +56,16 @@ helpviewer_keywords:
 - std::skipws [C++]
 - std::unitbuf [C++]
 - std::uppercase [C++]
-ms.openlocfilehash: 18f42f8e5bcd69872e4300d154eb72f489015e36
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: a08c039322c49f33ae4441851c96aa56e62fcb84
+ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62404903"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68245287"
 ---
 # <a name="ltiosgt-functions"></a>&lt;iOS&gt; işlevleri
 
-||||
-|-|-|-|
-|[defaultfloat](#ios_defaultfloat)|[boolalpha](#boolalpha)|[Ara](#dec)|
-|[düzeltildi](#fixed)|[onaltılık](#hex)|[internal](#internal)|
-|[Sol](#left)|[noboolalpha](#noboolalpha)|[noshowbase](#noshowbase)|
-|[noshowpoint](#noshowpoint)|[noshowpos](#noshowpos)|[noskipws](#noskipws)|
-|[nounitbuf](#nounitbuf)|[nouppercase](#nouppercase)|[Eki](#oct)|
-|[sağ](#right)|[Bilimsel](#scientific)|[showbase](#showbase)|
-|[showpoint](#showpoint)|[showpos](#showpos)|[skipws](#skipws)|
-|[unitbuf](#unitbuf)|[büyük harf](#uppercase)|
-
-## <a name="boolalpha"></a>  boolalpha
+## <a name="boolalpha"></a> boolalpha
 
 Belirtir, türü değişkenlerindeki [bool](../cpp/bool-cpp.md) olarak görünür **true** veya **false** akış.
 
@@ -80,7 +75,7 @@ ios_base& boolalpha(ios_base& str);
 
 ### <a name="parameters"></a>Parametreler
 
-*str*<br/>
+*str*\
 Türü bir nesneye başvuru [ios_base](../standard-library/ios-base-class.md), veya devralınan bir türe `ios_base`.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -122,7 +117,7 @@ true
 true
 ```
 
-## <a name="dec"></a>  Ara
+## <a name="dec"></a> Ara
 
 Tamsayı değişkenleri taban 10 gösteriminde görüneceğini belirtir.
 
@@ -132,7 +127,7 @@ ios_base& dec(ios_base& str);
 
 ### <a name="parameters"></a>Parametreler
 
-*str*<br/>
+*str*\
 Türü bir nesneye başvuru [ios_base](../standard-library/ios-base-class.md), veya devralınan bir türe `ios_base`.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -175,7 +170,7 @@ int main( )
 100
 ```
 
-## <a name="ios_defaultfloat"></a>  &lt;iOS&gt; defaultfloat
+## <a name="ios_defaultfloat"></a> &lt;iOS&gt; defaultfloat
 
 Bayraklarını yapılandırır bir `ios_base` kayan nokta değerleri için varsayılan görüntüleme biçimi kullanılacak nesne.
 
@@ -185,14 +180,14 @@ ios_base& defaultfloat(ios_base& _Iosbase);
 
 ### <a name="parameters"></a>Parametreler
 
-*_Iosbase*<br/>
+*_Iosbase*\
 Bir `ios_base` nesne.
 
 ### <a name="remarks"></a>Açıklamalar
 
 İşleyici _lisans etkili bir şekilde çağıran `osbase.` [ios_base::unsetf](../standard-library/ios-base-class.md#unsetf)`(ios_base::floatfield)`, ardından _lisans döndürür `osbase`.
 
-## <a name="fixed"></a>  düzeltildi
+## <a name="fixed"></a> düzeltildi
 
 Bir kayan noktalı sayı sabit ondalık gösteriminde görüntüleneceğini belirtir.
 
@@ -202,7 +197,7 @@ ios_base& fixed(ios_base& str);
 
 ### <a name="parameters"></a>Parametreler
 
-*str*<br/>
+*str*\
 Türü bir nesneye başvuru [ios_base](../standard-library/ios-base-class.md), veya devralınan bir türe `ios_base`.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -240,7 +235,7 @@ int main( )
 1.1
 ```
 
-## <a name="hex"></a>  onaltılık
+## <a name="hex"></a> onaltılık
 
 Tamsayı değişkenleri temel 16 gösteriminde görünmesi gereken belirtir.
 
@@ -250,7 +245,7 @@ ios_base& hex(ios_base& str);
 
 ### <a name="parameters"></a>Parametreler
 
-*str*<br/>
+*str*\
 Türü bir nesneye başvuru [ios_base](../standard-library/ios-base-class.md), veya devralınan bir türe `ios_base`.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -267,7 +262,21 @@ Varsayılan olarak, tamsayı değişkenleri taban 10 gösterim görüntülenir. 
 
 Bkz: [Ara](../standard-library/ios-functions.md#dec) nasıl kullanılacağına ilişkin bir örnek `hex`.
 
-## <a name="internal"></a>  İç
+## <a name="hexfloat"></a> hexfloat
+
+```cpp
+ios_base& hexfloat (ios_base& str);
+```
+
+## <a name="io_errc"></a> io_errc
+
+```cpp
+enum class io_errc {
+    stream = 1
+};
+```
+
+## <a name="internal"></a> İç
 
 Bir sayının işaretini sola hizalı olarak ve sağa hizalı olarak sayı neden olur.
 
@@ -277,7 +286,7 @@ ios_base& internal(ios_base& str);
 
 ### <a name="parameters"></a>Parametreler
 
-*str*<br/>
+*str*\
 Türü bir nesneye başvuru [ios_base](../standard-library/ios-base-class.md), veya devralınan bir türe `ios_base`.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -313,7 +322,19 @@ int main( void )
 -..123.456
 ```
 
-## <a name="left"></a>  Sol
+## <a name="is_error_code_enum"></a> is_error_code_enum
+
+```cpp
+template <> struct is_error_code_enum<io_errc> : public true_type { };
+```
+
+## <a name="iostream_category"></a> iostream_category
+
+```cpp
+const error_category& iostream_category() noexcept;
+```
+
+## <a name="left"></a> Sol
 
 Sol kenar boşluğu ile stream temizleme görünmesini çıkış olarak geniş olmayan metin neden olur.
 
@@ -323,7 +344,7 @@ ios_base& left(ios_base& str);
 
 ### <a name="parameters"></a>Parametreler
 
-*str*<br/>
+*str*\
 Türü bir nesneye başvuru [ios_base](../standard-library/ios-base-class.md), veya devralınan bir türe `ios_base`.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -352,11 +373,23 @@ int main( )
 ```
 
 ```Output
-                   5
 5
+        5
 ```
 
-## <a name="noboolalpha"></a>  noboolalpha
+## <a name="make_error_code"></a> make_error_code
+
+```cpp
+error_code make_error_code(io_errc e) noexcept;
+```
+
+## <a name="make_error_condition"></a> make_error_condition
+
+```cpp
+error_condition make_error_condition(io_errc e) noexcept;
+```
+
+## <a name="noboolalpha"></a> noboolalpha
 
 Belirten bu türü değişkenlerindeki [bool](../cpp/bool-cpp.md) 1 veya 0 akışı gibi görünür.
 
@@ -366,7 +399,7 @@ ios_base& noboolalpha(ios_base& str);
 
 ### <a name="parameters"></a>Parametreler
 
-*str*<br/>
+*str*\
 Türü bir nesneye başvuru [ios_base](../standard-library/ios-base-class.md), veya devralınan bir türe `ios_base`.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -385,7 +418,7 @@ Varsayılan olarak, `noboolalpha` etkilidir.
 
 Bkz: [boolalpha](../standard-library/ios-functions.md#boolalpha) kullanma örneği için `noboolalpha`.
 
-## <a name="noshowbase"></a>  noshowbase
+## <a name="noshowbase"></a> noshowbase
 
 Bir sayı görüntülendiği notational temel belirten devre dışı bırakır.
 
@@ -395,7 +428,7 @@ ios_base& noshowbase(ios_base& str);
 
 ### <a name="parameters"></a>Parametreler
 
-*str*<br/>
+*str*\
 Türü bir nesneye başvuru [ios_base](../standard-library/ios-base-class.md), veya devralınan bir türe `ios_base`.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -412,7 +445,7 @@ Hangi _ nesnesine bir başvuru *Str* türetilir.
 
 Bkz: [showbase](../standard-library/ios-functions.md#showbase) nasıl kullanılacağına ilişkin bir örnek `noshowbase`.
 
-## <a name="noshowpoint"></a>  noshowpoint
+## <a name="noshowpoint"></a> noshowpoint
 
 Kayan noktalı sayıların, kesirli bölümü sıfırdır. yalnızca tam sayı bölümünü görüntüler.
 
@@ -422,7 +455,7 @@ ios_base& noshowpoint(ios_base& str);
 
 ### <a name="parameters"></a>Parametreler
 
-*str*<br/>
+*str*\
 Türü bir nesneye başvuru [ios_base](../standard-library/ios-base-class.md), veya devralınan bir türe `ios_base`.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -459,7 +492,7 @@ int main( )
 5
 ```
 
-## <a name="noshowpos"></a>  noshowpos
+## <a name="noshowpos"></a> noshowpos
 
 Pozitif sayı değil açıkça imzalanmasını neden olur.
 
@@ -469,7 +502,7 @@ ios_base& noshowpos(ios_base& str);
 
 ### <a name="parameters"></a>Parametreler
 
-*str*<br/>
+*str*\
 Türü bir nesneye başvuru [ios_base](../standard-library/ios-base-class.md), veya devralınan bir türe `ios_base`.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -486,7 +519,7 @@ Hangi _ nesnesine bir başvuru *Str* türetilir.
 
 Bkz: [showpos](../standard-library/ios-functions.md#showpos) kullanma örneği için `noshowpos`.
 
-## <a name="noskipws"></a>  noskipws
+## <a name="noskipws"></a> noskipws
 
 Giriş akışı tarafından okunacak alanları neden.
 
@@ -496,7 +529,7 @@ ios_base& noskipws(ios_base& str);
 
 ### <a name="parameters"></a>Parametreler
 
-*str*<br/>
+*str*\
 Türü bir nesneye başvuru [ios_base](../standard-library/ios-base-class.md), veya devralınan bir türe `ios_base`.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -528,7 +561,7 @@ int main() {
 }
 ```
 
-## <a name="nounitbuf"></a>  nounitbuf
+## <a name="nounitbuf"></a> nounitbuf
 
 Arabelleğe alınan ve arabelleği dolu olduğunda işlenmesi için neden çıktı.
 
@@ -538,7 +571,7 @@ ios_base& nounitbuf(ios_base& str);
 
 ### <a name="parameters"></a>Parametreler
 
-*str*<br/>
+*str*\
 Türü bir nesneye başvuru [ios_base](../standard-library/ios-base-class.md), veya devralınan bir türe `ios_base`.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -551,7 +584,7 @@ Hangi _ nesnesine bir başvuru *Str* türetilir.
 
 İşleyici etkili bir şekilde çağıran `str`.[ unsetf](../standard-library/ios-base-class.md#unsetf)( `ios_base::unitbuf`) ve sonra *str*.
 
-## <a name="nouppercase"></a>  nouppercase
+## <a name="nouppercase"></a> nouppercase
 
 Onaltılık basamak ve bilimsel gösterimde üs küçük harflerle görüneceğini belirtir.
 
@@ -561,7 +594,7 @@ ios_base& nouppercase(ios_base& str);
 
 ### <a name="parameters"></a>Parametreler
 
-*str*<br/>
+*str*\
 Türü bir nesneye başvuru [ios_base](../standard-library/ios-base-class.md), veya devralınan bir türe `ios_base`.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -576,7 +609,7 @@ Hangi _ nesnesine bir başvuru *Str* türetilir.
 
 Bkz: [büyük](../standard-library/ios-functions.md#uppercase) kullanma örneği için `nouppercase`.
 
-## <a name="oct"></a>  Eki
+## <a name="oct"></a> Eki
 
 Tamsayı değişkenleri temel 8 gösteriminde görüneceğini belirtir.
 
@@ -586,7 +619,7 @@ ios_base& oct(ios_base& str);
 
 ### <a name="parameters"></a>Parametreler
 
-*str*<br/>
+*str*\
 Türü bir nesneye başvuru [ios_base](../standard-library/ios-base-class.md), veya devralınan bir türe `ios_base`.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -603,7 +636,7 @@ Varsayılan olarak, tamsayı değişkenleri taban 10 gösterim görüntülenir. 
 
 Bkz: [Ara](../standard-library/ios-functions.md#dec) nasıl kullanılacağına ilişkin bir örnek `oct`.
 
-## <a name="right"></a>  sağ
+## <a name="right"></a> sağ
 
 Sağ kenar boşluğu ile stream temizleme görünmesini çıkış olarak geniş olmayan metin neden olur.
 
@@ -613,7 +646,7 @@ ios_base& right(ios_base& str);
 
 ### <a name="parameters"></a>Parametreler
 
-*str*<br/>
+*str*\
 Türü bir nesneye başvuru [ios_base](../standard-library/ios-base-class.md), veya devralınan bir türe `ios_base`.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -660,7 +693,7 @@ int main( )
                    5
 ```
 
-## <a name="scientific"></a>  Bilimsel
+## <a name="scientific"></a> Bilimsel
 
 Bilimsel gösterim kullanılarak görüntüleneceğini kayan noktalı sayıların neden olur.
 
@@ -670,7 +703,7 @@ ios_base& scientific(ios_base& str);
 
 ### <a name="parameters"></a>Parametreler
 
-*str*<br/>
+*str*\
 Türü bir nesneye başvuru [ios_base](../standard-library/ios-base-class.md), veya devralınan bir türe `ios_base`.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -705,7 +738,7 @@ int main( )
 1.002300e+002
 ```
 
-## <a name="showbase"></a>  showbase
+## <a name="showbase"></a> showbase
 
 Bir sayı görüntülendiği notational temel gösterir.
 
@@ -715,7 +748,7 @@ ios_base& showbase(ios_base& str);
 
 ### <a name="parameters"></a>Parametreler
 
-*str*<br/>
+*str*\
 Türü bir nesneye başvuru [ios_base](../standard-library/ios-base-class.md), veya devralınan bir türe `ios_base`.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -759,7 +792,7 @@ int main( )
 144
 ```
 
-## <a name="showpoint"></a>  showpoint
+## <a name="showpoint"></a> showpoint
 
 Kesirli bölümü sıfır olsa bile tam sayı bölümü bir kayan noktalı sayı ve sayılar ondalık noktasının sağında görüntüler.
 
@@ -769,7 +802,7 @@ ios_base& showpoint(ios_base& str);
 
 ### <a name="parameters"></a>Parametreler
 
-*str*<br/>
+*str*\
 Türü bir nesneye başvuru [ios_base](../standard-library/ios-base-class.md), veya devralınan bir türe `ios_base`.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -786,7 +819,7 @@ Varsayılan olarak, [noshowpoint](../standard-library/ios-functions.md#noshowpoi
 
 Bkz: [noshowpoint](../standard-library/ios-functions.md#noshowpoint) kullanma örneği için `showpoint`.
 
-## <a name="showpos"></a>  showpos
+## <a name="showpos"></a> showpos
 
 Pozitif sayıları açıkça imzalanmasını neden olur.
 
@@ -796,7 +829,7 @@ ios_base& showpos(ios_base& str);
 
 ### <a name="parameters"></a>Parametreler
 
-*str*<br/>
+*str*\
 Türü bir nesneye başvuru [ios_base](../standard-library/ios-base-class.md), veya devralınan bir türe `ios_base`.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -831,7 +864,7 @@ int main( )
 +1
 ```
 
-## <a name="skipws"></a>  skipws
+## <a name="skipws"></a> skipws
 
 Giriş akışı tarafından okunur olmayan alanları neden.
 
@@ -841,7 +874,7 @@ ios_base& skipws(ios_base& str);
 
 ### <a name="parameters"></a>Parametreler
 
-*str*<br/>
+*str*\
 Türü bir nesneye başvuru [ios_base](../standard-library/ios-base-class.md), veya devralınan bir türe `ios_base`.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -883,7 +916,7 @@ Enter three characters: 1 2 3
 .3.
 ```
 
-## <a name="unitbuf"></a>  unitbuf
+## <a name="unitbuf"></a> unitbuf
 
 Çıkış arabelleği boş olmadığında işlenmesi için neden olur.
 
@@ -893,7 +926,7 @@ ios_base& unitbuf(ios_base& str);
 
 ### <a name="parameters"></a>Parametreler
 
-*str*<br/>
+*str*\
 Türü bir nesneye başvuru [ios_base](../standard-library/ios-base-class.md), veya devralınan bir türe `ios_base`.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -918,7 +951,7 @@ ios_base& uppercase(ios_base& str);
 
 ### <a name="parameters"></a>Parametreler
 
-*str*<br/>
+*str*\
 Türü bir nesneye başvuru [ios_base](../standard-library/ios-base-class.md), veya devralınan bir türe `ios_base`.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -958,7 +991,3 @@ int main( void )
 a
 A
 ```
-
-## <a name="see-also"></a>Ayrıca bkz.
-
-[\<iOS >](../standard-library/ios.md)<br/>

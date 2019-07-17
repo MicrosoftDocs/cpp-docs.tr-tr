@@ -8,12 +8,12 @@ helpviewer_keywords:
 - exceptions [C++], bad_cast
 - bad_cast keyword [C++]
 ms.assetid: 31eae1e7-d8d5-40a0-9fef-64a6a4fc9021
-ms.openlocfilehash: 028fa8cc90b33aca6a37fb3b7f58b8c5fad81bd7
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b40f64671e7c259b7dc04b31a11d20d0fc76c5c4
+ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62284779"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68242391"
 ---
 # <a name="badcast-exception"></a>bad_cast Özel Durumu
 
@@ -31,12 +31,7 @@ catch (bad_cast)
 Arabirimin **bad_cast** olan:
 
 ```cpp
-class bad_cast : public exception {
-public:
-   bad_cast(const char * _Message = "bad cast");
-   bad_cast(const bad_cast &);
-   virtual ~bad_cast();
-};
+class bad_cast : public exception
 ```
 
 Başarısız bir örneği aşağıdaki kodu içeren **dynamic_cast** oluşturan **bad_cast** özel durum.
@@ -81,6 +76,49 @@ Ardından algılama atama yönünü ters **deneyin** bloğunu şu şekilde:
 
 ```cpp
 Shape& ref_shape = dynamic_cast<Shape&>(ref_circle);
+```
+
+## <a name="members"></a>Üyeler
+
+### <a name="constructors"></a>Oluşturucular
+
+|Oluşturucu|Açıklama|
+|-|-|
+|[bad_cast](#bad_cast)|Türündeki nesneler için oluşturucu `bad_cast`.|
+
+### <a name="functions"></a>İşlevler
+
+|İşlev|Açıklama|
+|-|-|
+|[ne](#what)|TBD|
+
+### <a name="operators"></a>İşleçler
+
+|İşleç|Açıklama|
+|-|-|
+|[operator=](#op_eq)|Atar bir atama işleci `bad_cast` başka bir nesne.|
+
+## <a name="bad_cast"></a> bad_cast
+
+Türündeki nesneler için oluşturucu `bad_cast`.
+
+```cpp
+bad_cast(const char * _Message = "bad cast");
+bad_cast(const bad_cast &);
+```
+
+## <a name="op_eq"></a> işleç =
+
+Atar bir atama işleci `bad_cast` başka bir nesne.
+
+```cpp
+bad_cast& operator=(const bad_cast&) noexcept;
+```
+
+## <a name="what"></a> ne
+
+```cpp
+const char* what() const noexcept override;
 ```
 
 ## <a name="see-also"></a>Ayrıca bkz.

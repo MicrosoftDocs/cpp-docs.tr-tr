@@ -6,26 +6,51 @@ f1_keywords:
 helpviewer_keywords:
 - clocale header
 ms.assetid: 5bde3e01-cf67-4f1f-a383-447ec814d00e
-ms.openlocfilehash: 5ca899282891f26221ca5b786debfcaee114d0b2
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 624a1afdbe0e73c81a324273836eff6b89705236
+ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62386219"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68244752"
 ---
 # <a name="ltclocalegt"></a>&lt;clocale&gt;
 
 Standart C Kitaplığı üstbilgisi içerir \<locale.h > ve ilişkili adlar ekler `std` ad alanı.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="requirements"></a>Gereksinimler
 
-```cpp
-#include <clocale>
-```
+**Başlık:** \<clocale >
+
+**Namespace:** std
 
 ## <a name="remarks"></a>Açıklamalar
 
 Bu üstbilginin dahil sağlar, standart C Kitaplığı üstbilgisinde harici bağlantı kullanılarak bildirilen adların bildirilir `std` ad alanı.
+
+## <a name="constants"></a>Sabitler
+
+```cpp
+#define NULL see below
+#define LC_ALL see below
+#define LC_COLLATE see below
+#define LC_CTYPE see below
+#define LC_MONETARY see below
+#define LC_NUMERIC see below
+#define LC_TIME see below
+```
+
+## <a name="structures"></a>Yapılar
+
+```cpp
+struct lconv;
+```
+
+## <a name="functions"></a>İşlevler
+
+```cpp
+char* setlocale(int category, const char* locale);
+lconv* localeconv();
+```
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

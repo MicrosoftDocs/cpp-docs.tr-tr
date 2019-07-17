@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - csetjmp header
 ms.assetid: 8f21fddd-5e9b-4219-a848-581cdd3569d9
-ms.openlocfilehash: 5a170030ffc72f8d45a157ed97e207b93a18b0f9
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 3eba0b4521c0abf414de1416f02039a67c896644
+ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62394331"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68244513"
 ---
 # <a name="ltcsetjmpgt"></a>&lt;csetjmp&gt;
 
@@ -21,6 +21,20 @@ Standart C Kitaplığı üstbilgisi içerir \<setjmp.h > ve ilişkili adlar ekle
 
 ```cpp
 #include <csetjmp>
+
+using jmp_buf = see below;
+```
+
+## <a name="functions"></a>İşlevler
+
+```cpp
+[[noreturn]] void longjmp(jmp_buf env, int val);
+```
+
+## <a name="macros"></a>Makrolar
+
+```cpp
+#define setjmp(env)
 ```
 
 ## <a name="remarks"></a>Açıklamalar

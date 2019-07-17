@@ -28,12 +28,12 @@ helpviewer_keywords:
 - std::weak_ptr [C++], swap
 - std::weak_ptr [C++], use_count
 ms.assetid: 2db4afb2-c7be-46fc-9c20-34ec2f8cc7c2
-ms.openlocfilehash: e2efb5d534ad43e2492ac4fb0bf76db402dca272
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e491c376f110f48b0b02a30fc39f6c6da1a5ab02
+ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62410869"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68240904"
 ---
 # <a name="weakptr-class"></a>weak_ptr Sınıfı
 
@@ -57,17 +57,18 @@ public:
       weak_ptr& operator=(const weak_ptr<Other>&);
    template <class Other>
       weak_ptr& operator=(shared_ptr<Other>&);
+      
    void swap(weak_ptr&);
    void reset();
    long use_count() const;
    bool expired() const;
    shared_ptr<Ty> lock() const;
-   };
+};
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*Ty*<br/>
+*Ty*\
 Zayıf işaretçiyle kontrol edilen tür.
 
 ## <a name="remarks"></a>Açıklamalar
@@ -84,7 +85,7 @@ Boş weak_ptr nesnenin herhangi bir kaynakta işaret etmiyor ve denetim bloğu y
 
 ### <a name="constructors"></a>Oluşturucular
 
-|Oluşturucu|Açıklama|
+|||
 |-|-|
 |[weak_ptr](#weak_ptr)|Oluşturur bir `weak_ptr`.|
 
@@ -102,17 +103,11 @@ Boş weak_ptr nesnenin herhangi bir kaynakta işaret etmiyor ve denetim bloğu y
 
 ### <a name="operators"></a>İşleçler
 
-|İşleç|Açıklama|
+|||
 |-|-|
 |[operator=](#op_eq)|Sahip olunan kaynağın yerini alır.|
 
-## <a name="requirements"></a>Gereksinimler
-
-**Başlık:** \<bellek >
-
-**Namespace:** std
-
-## <a name="element_type"></a>  ELEMENT_TYPE
+### <a name="element_type"></a> ELEMENT_TYPE
 
 Öğe türü.
 
@@ -120,11 +115,11 @@ Boş weak_ptr nesnenin herhangi bir kaynakta işaret etmiyor ve denetim bloğu y
 typedef Ty element_type;
 ```
 
-### <a name="remarks"></a>Açıklamalar
+#### <a name="remarks"></a>Açıklamalar
 
 Şablon parametresi için bir eşanlamlı türüdür `Ty`.
 
-### <a name="example"></a>Örnek
+#### <a name="example"></a>Örnek
 
 ```cpp
 // std__memory__weak_ptr_element_type.cpp
@@ -148,7 +143,7 @@ int main()
 *wp0.lock() == 5
 ```
 
-## <a name="expired"></a>  Süresi doldu
+### <a name="expired"></a> Süresi doldu
 
 Test sahipliği süresi doldu.
 
@@ -156,11 +151,11 @@ Test sahipliği süresi doldu.
 bool expired() const;
 ```
 
-### <a name="remarks"></a>Açıklamalar
+#### <a name="remarks"></a>Açıklamalar
 
 Üye işlevinin döndürdüğü **true** varsa `*this` , aksi takdirde doldu **false**.
 
-### <a name="example"></a>Örnek
+#### <a name="example"></a>Örnek
 
 ```cpp
 // std__memory__weak_ptr_expired.cpp
@@ -205,7 +200,7 @@ wp.expired() == true
 (bool)wp.lock() == false
 ```
 
-## <a name="lock"></a>  Kilit
+### <a name="lock"></a> Kilit
 
 Özel bir kaynağın sahipliğini alır.
 
@@ -213,11 +208,11 @@ wp.expired() == true
 shared_ptr<Ty> lock() const;
 ```
 
-### <a name="remarks"></a>Açıklamalar
+#### <a name="remarks"></a>Açıklamalar
 
 Üye işlevi boş shared_ptr nesneyi döndürür `*this` sona erdi; Aksi halde döndürür bir [shared_ptr sınıfı](../standard-library/shared-ptr-class.md)\<Ty > kaynağa sahip olan nesne `*this` işaret eder.
 
-### <a name="example"></a>Örnek
+#### <a name="example"></a>Örnek
 
 ```cpp
 // std__memory__weak_ptr_lock.cpp
@@ -262,7 +257,7 @@ wp.expired() == true
 (bool)wp.lock() == false
 ```
 
-## <a name="op_eq"></a>  işleç =
+### <a name="op_eq"></a> işleç =
 
 Sahip olunan kaynağın yerini alır.
 
@@ -270,28 +265,28 @@ Sahip olunan kaynağın yerini alır.
 weak_ptr& operator=(const weak_ptr& wp);
 
 template <class Other>
-weak_ptr& operator=(const weak_ptr<Other>& wp);
+    weak_ptr& operator=(const weak_ptr<Other>& wp);
 
 template <class Other>
-weak_ptr& operator=(const shared_ptr<Other>& sp);
+    weak_ptr& operator=(const shared_ptr<Other>& sp);
 ```
 
-### <a name="parameters"></a>Parametreler
+#### <a name="parameters"></a>Parametreler
 
-*Diğer*<br/>
+*Diğer*\
 Bağımsız değişken paylaşılan zayıf işaretçiyle kontrol edilen tür.
 
-*WP*<br/>
+*WP*\
 Kopyalamak için zayıf işaretçi.
 
-*SP*<br/>
+*SP*\
 Kopyalamak için paylaşılan işaretçi.
 
-### <a name="remarks"></a>Açıklamalar
+#### <a name="remarks"></a>Açıklamalar
 
 Kaynak şu anda işaret ettiği tüm işleçleri yayın `*this` ve işlenen dizinin tarafından adlı kaynağın sahipliğini Ata `*this`. İsteğe bağlı olarak bir işleç leaves başarısız olursa `*this` değişmez.
 
-### <a name="example"></a>Örnek
+#### <a name="example"></a>Örnek
 
 ```cpp
 // std__memory__weak_ptr_operator_as.cpp
@@ -323,28 +318,28 @@ int main()
 *wp1.lock() == 10
 ```
 
-## <a name="owner_before"></a>  owner_before
+### <a name="owner_before"></a> owner_before
 
 Döndürür **true** bu `weak_ptr` önceyse (veya küçüktür) sağlanan işaretçi.
 
 ```cpp
 template <class Other>
-bool owner_before(const shared_ptr<Other>& ptr);
+    bool owner_before(const shared_ptr<Other>& ptr);
 
 template <class Other>
-bool owner_before(const weak_ptr<Other>& ptr);
+    bool owner_before(const weak_ptr<Other>& ptr);
 ```
 
-### <a name="parameters"></a>Parametreler
+#### <a name="parameters"></a>Parametreler
 
-*ptr*<br/>
+*PTR*\
 Bir `lvalue` başvuru ya da bir `shared_ptr` veya `weak_ptr`.
 
-### <a name="remarks"></a>Açıklamalar
+#### <a name="remarks"></a>Açıklamalar
 
 Şablon üye işlevinin döndürdüğü **true** varsa `*this` olduğu `ordered before` `ptr`.
 
-## <a name="reset"></a>  Sıfırlama
+### <a name="reset"></a> Sıfırlama
 
 Yayınları kaynak sahibi.
 
@@ -352,11 +347,11 @@ Yayınları kaynak sahibi.
 void reset();
 ```
 
-### <a name="remarks"></a>Açıklamalar
+#### <a name="remarks"></a>Açıklamalar
 
 Üye işlevi tarafından işaret kaynak sürümleri `*this` ve dönüştüren `*this` boş weak_ptr nesneye.
 
-### <a name="example"></a>Örnek
+#### <a name="example"></a>Örnek
 
 ```cpp
 // std__memory__weak_ptr_reset.cpp
@@ -386,7 +381,7 @@ wp.expired() == false
 wp.expired() == true
 ```
 
-## <a name="swap"></a>  değiştirme
+### <a name="swap"></a> değiştirme
 
 İki değiştirir `weak_ptr` nesneleri.
 
@@ -394,16 +389,23 @@ wp.expired() == true
 void swap(weak_ptr& wp);
 ```
 
-### <a name="parameters"></a>Parametreler
+Uzmanlık da içerir.
 
-*WP*<br/>
+```cpp
+template<class T>
+    void swap(weak_ptr<T>& a, weak_ptr<T>& b) noexcept;
+```
+
+#### <a name="parameters"></a>Parametreler
+
+*WP*\
 İle takas için zayıf işaretçi.
 
-### <a name="remarks"></a>Açıklamalar
+#### <a name="remarks"></a>Açıklamalar
 
 İlk olarak işaret ettiği kaynak üye işlevi bırakır `*this` sonradan işaret ettiği *wp*ve ilk olarak işaret ettiği kaynak *wp* sonradan tarafındanişaretedilen`*this`. İşlev iki kaynaklar için başvuru sayılarını değiştirmez ve özel durumlar oluşturmaz.
 
-### <a name="example"></a>Örnek
+#### <a name="example"></a>Örnek
 
 ```cpp
 // std__memory__weak_ptr_swap.cpp
@@ -456,7 +458,7 @@ int main()
 *wp1 == 5
 ```
 
-## <a name="use_count"></a>  use_count
+### <a name="use_count"></a> use_count
 
 Sayıları sayısı belirtilen `shared_ptr` nesneleri.
 
@@ -464,11 +466,11 @@ Sayıları sayısı belirtilen `shared_ptr` nesneleri.
 long use_count() const;
 ```
 
-### <a name="remarks"></a>Açıklamalar
+#### <a name="remarks"></a>Açıklamalar
 
 Üye işlevi döndürür `shared_ptr` kaynağa sahip nesneler tarafından işaret edilen `*this`.
 
-### <a name="example"></a>Örnek
+#### <a name="example"></a>Örnek
 
 ```cpp
 // std__memory__weak_ptr_use_count.cpp
@@ -496,9 +498,9 @@ wp.use_count() == 1
 wp.use_count() == 2
 ```
 
-## <a name="weak_ptr"></a>  weak_ptr
+### <a name="weak_ptr"></a> weak_ptr
 
-Oluşturur bir `weak_ptr`.
+Oluşturur bir `weak_ptr`. Ayrıca bir yok edici içerir.
 
 ```cpp
 weak_ptr();
@@ -506,28 +508,30 @@ weak_ptr();
 weak_ptr(const weak_ptr& wp);
 
 template <class Other>
-weak_ptr(const weak_ptr<Other>& wp);
+    weak_ptr(const weak_ptr<Other>& wp);
 
 template <class Other>
-weak_ptr(const shared_ptr<Other>& sp);
+    weak_ptr(const shared_ptr<Other>& sp);
+
+~weak_ptr();
 ```
 
-### <a name="parameters"></a>Parametreler
+#### <a name="parameters"></a>Parametreler
 
-*Diğer*<br/>
+*Diğer*\
 Bağımsız değişken paylaşılan zayıf işaretçiyle kontrol edilen tür.
 
-*WP*<br/>
+*WP*\
 Kopyalamak için zayıf işaretçi.
 
-*SP*<br/>
+*SP*\
 Kopyalamak için paylaşılan işaretçi.
 
-### <a name="remarks"></a>Açıklamalar
+#### <a name="remarks"></a>Açıklamalar
 
 Her oluşturucular tarafından işlenen dizisi adlı kaynağı işaret eden bir nesne oluşturur.
 
-### <a name="example"></a>Örnek
+#### <a name="example"></a>Örnek
 
 ```cpp
 // std__memory__weak_ptr_construct.cpp
@@ -559,7 +563,3 @@ wp0.expired() == true
 *wp1.lock() == 5
 *wp2.lock() == 5
 ```
-
-## <a name="see-also"></a>Ayrıca bkz.
-
-[shared_ptr Sınıfı](../standard-library/shared-ptr-class.md)<br/>

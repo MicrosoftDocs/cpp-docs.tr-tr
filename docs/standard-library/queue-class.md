@@ -22,12 +22,12 @@ helpviewer_keywords:
 - std::queue [C++], push
 - std::queue [C++], size
 ms.assetid: 28c20ab0-3a72-4185-9e0f-5a44eea0e204
-ms.openlocfilehash: 2b82e4237a525b09758323ae2483d8818fc938af
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 78479a05f8957aea5ca0f78fd3a086a49b9ef009
+ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62369949"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68240394"
 ---
 # <a name="queue-class"></a>queue Sınıfı
 
@@ -42,10 +42,10 @@ class queue
 
 ### <a name="parameters"></a>Parametreler
 
-*Tür*<br/>
+*Türü*\
 Kuyrukta depolanacak öğe veri türü
 
-*Kapsayıcı*<br/>
+*Kapsayıcı*\
 Sıranın uygulamak için kullanılan temel alınan kapsayıcı türü.
 
 ## <a name="remarks"></a>Açıklamalar
@@ -64,23 +64,25 @@ Kapsayıcı bağdaştırıcıları tarafından tanımlanan üç tür vardır C++
 
 - [Priority_queue sınıfı](../standard-library/priority-queue-class.md) en büyük öğe her zaman üst konumunda olması, öğeleri sıralar. Bu, bir öğe ve inceleme, ekleme ve kaldırma üst öğenin destekler. Burada, yaş, yüksekliğe veya diğer bir ölçüte göre düzenlenmiş yukarı hizalama kişiler akılda tutulması için iyi bir analog olacaktır.
 
+## <a name="members"></a>Üyeler
+
 ### <a name="constructors"></a>Oluşturucular
 
-|Oluşturucu|Açıklama|
+|||
 |-|-|
 |[Kuyruk](#queue)|Oluşturur bir `queue` boş veya bir temel kapsayıcı nesnesinin bir kopyasını başka bir deyişle olduğu.|
 
 ### <a name="typedefs"></a>Tür tanımları
 
-|Tür adı|Açıklama|
+|||
 |-|-|
 |[container_type](#container_type)|Temel olarak uyarlanabilen kapsayıcıya sağlayan bir tür `queue`.|
 |[size_type](#size_type)|İçindeki öğelerin sayısını temsil edebilen bir işaretsiz tamsayı türü bir `queue`.|
 |[value_type](#value_type)|Bir öğe olarak depolanan nesne türünü temsil eden bir tür bir `queue`.|
 
-### <a name="member-functions"></a>Üye işlevleri
+### <a name="functions"></a>İşlevler
 
-|Üye işlevi|Açıklama|
+|||
 |-|-|
 |[Geri](#back)|Döndürür bir başvuru son ve en son eklenen öğenin konumundaki yedeklemesini `queue`.|
 |[boş](#empty)|Olmadığını test eder `queue` boştur.|
@@ -89,13 +91,7 @@ Kapsayıcı bağdaştırıcıları tarafından tanımlanan üç tür vardır C++
 |[push](#push)|Bir öğe geri ekler `queue`.|
 |[Boyutu](#size)|İçindeki öğelerin sayısını döndürür `queue`.|
 
-## <a name="requirements"></a>Gereksinimler
-
-**Başlık:** \<kuyruk >
-
-**Namespace:** std
-
-## <a name="back"></a>  Queue::Back
+## <a name="back"></a> Geri
 
 Başvuru öğesi kuyruk arkasına son ve en son eklenen döndürür.
 
@@ -141,7 +137,7 @@ int main( )
 }
 ```
 
-## <a name="container_type"></a>  Queue::container_type
+## <a name="container_type"></a> container_type
 
 Temel uyarlanabilen kapsayıcıya sağlayan bir tür.
 
@@ -159,7 +155,7 @@ Daha fazla bilgi için `Container`, Açıklamalar bölümüne bakın [sınıfı 
 
 Örneğin bakın [kuyruk](#queue) bildirme ve kullanma konusunda bir örnek için `container_type`.
 
-## <a name="empty"></a>  Queue::empty
+## <a name="empty"></a> boş
 
 Bir kuyruğu boş olup olmadığını sınar.
 
@@ -205,7 +201,7 @@ The queue q1 is not empty.
 The queue q2 is empty.
 ```
 
-## <a name="front"></a>  Queue::Front
+## <a name="front"></a> Ön
 
 Kuyruğun önündeki ilk öğeye bir başvuru döndürür.
 
@@ -257,7 +253,7 @@ int main() {
 }
 ```
 
-## <a name="pop"></a>  Queue::POP
+## <a name="pop"></a> POP
 
 Bir öğenin sıra önünden kaldırır.
 
@@ -313,7 +309,7 @@ After a pop the queue length is 2.
 After a pop, the element at the front of the queue is 20.
 ```
 
-## <a name="push"></a>  Queue::push
+## <a name="push"></a> anında iletme
 
 Kuyruğun arkasına bir öğe ekler.
 
@@ -323,7 +319,7 @@ void push(const Type& val);
 
 ### <a name="parameters"></a>Parametreler
 
-*VAL*<br/>
+*VAL*\
 Kuyruğun geri eklenen öğe.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -362,7 +358,7 @@ The queue length is 3.
 The element at the front of the queue is 10.
 ```
 
-## <a name="queue"></a>  Queue::Queue
+## <a name="queue"></a> Kuyruk
 
 Bir kuyruğu boş olan veya bir temel kapsayıcı nesnesinin bir kopyasını oluşturur.
 
@@ -374,7 +370,7 @@ explicit queue(const container_type& right);
 
 ### <a name="parameters"></a>Parametreler
 
-*sağ*<br/>
+*sağ*\
 **Const** kapsayıcı oluşturulan kuyruk olduğu kopyası olacak.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -429,7 +425,7 @@ The element at the front of queue q5 is 1.
 The element at the back of queue q5 is 2.
 ```
 
-## <a name="size"></a>  Queue::size
+## <a name="size"></a> Boyutu
 
 Sırasındaki öğelerin sayısını döndürür.
 
@@ -470,7 +466,7 @@ The queue length is 1.
 The queue length is now 2.
 ```
 
-## <a name="size_type"></a>  Queue::size_type
+## <a name="size_type"></a> size_type
 
 Kuyruktaki öğelerin sayısını temsil edebilen bir işaretsiz tamsayı türü.
 
@@ -486,7 +482,7 @@ Türü eşanlamlıdır `size_type` tarafından sıraya göre uyarlanmış temel 
 
 Örneğin bakın [queue::front](#front) bildirme ve kullanma konusunda bir örnek için `size_type`.
 
-## <a name="value_type"></a>  Queue::value_type
+## <a name="value_type"></a> value_type
 
 Kuyruktaki bir öğe olarak depolanan nesne türünü temsil eden tür.
 

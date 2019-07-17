@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - string header
 ms.assetid: a2fb9d00-d7ae-4170-bfea-2dc337aa37cf
-ms.openlocfilehash: 3d84f4707af33f44a930f7f67b7f751e2ead627c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 3f3874b1d439326c97b015007ad8d5ede06341f7
+ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62412312"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68245400"
 ---
 # <a name="ltstringgt"></a>&lt;string&gt;
 
@@ -61,6 +61,7 @@ C++ dili ve C++ Standart Kitaplığı dizeleri iki türünü destekler:
 
 |||
 |-|-|
+|[Karma]()||
 |[değiştirme](../standard-library/string-functions.md#swap)|İki dizenin karakter dizileri birbiriyle değiştirir.|
 |[stod](../standard-library/string-functions.md#stod)|Bir karakter dizisine dönüştürür bir **çift**.|
 |[stof](../standard-library/string-functions.md#stof)|Bir karakter dizisine dönüştürür bir **float**.|

@@ -11,12 +11,12 @@ f1_keywords:
 - filesystem/std::filesystem::perms
 - filesystem/std::experimental::filesystem::perms
 ms.assetid: 0096c046-d101-464c-8259-b878a48280b0
-ms.openlocfilehash: 9c4efa145455240c4420a51c4a01662a30dc0761
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 9bf5f0231fbc5b694c1f4ae507feb82b0d19d600
+ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62405137"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68240750"
 ---
 # <a name="ltfilesystemgt-enumerations"></a>&lt;dosya sistemi&gt; sabit listeleri
 
@@ -111,7 +111,7 @@ enum class file_type {
 |----------|-----------|-----------------|
 |`not_found`|-1|Mevcut bir dosyayı temsil eder.|
 |`none`|0|Hiçbir tür özniteliği olan bir dosyayı temsil eder. (Desteklenmiyor.)|
-|`regular`|1.|Geleneksel disk dosyasını temsil eder.|
+|`regular`|1\.|Geleneksel disk dosyasını temsil eder.|
 |`directory`|2|Bir dizin temsil eder.|
 |`symlink`|3|Sembolik bağlantıyı temsil eder. (Desteklenmiyor.)|
 |`block`|4|UNIX tabanlı sistemlerde bir blok özel dosyasını temsil eder. (Desteklenmiyor.)|
@@ -119,6 +119,14 @@ enum class file_type {
 |`fifo`|6|Bir FIFO dosyasını UNIX tabanlı sistemlerde temsil eder. (Desteklenmiyor.)|
 |`socket`|7|Bir yuva UNIX tabanlı sistemlerde temsil eder. (Desteklenmiyor.)|
 |`unknown`|8|Durumu belirlenemediğinden bir dosyayı temsil eder.|
+
+## <a name="perm_options"></a>  perm_options
+
+Değerleri içeren `replace`, `add`, `remove`, ve `nofollow`.
+
+```cpp
+enum class perm_options;
+```
 
 ## <a name="perms"></a>  izinleri
 

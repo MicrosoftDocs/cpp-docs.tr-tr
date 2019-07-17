@@ -7,22 +7,25 @@ f1_keywords:
 helpviewer_keywords:
 - ios header
 ms.assetid: d3d4c161-2f37-4f04-93cc-0a2a89984a9c
-ms.openlocfilehash: 1566f9105a61b1c037e86fd2e4b280ed6dd2020e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 013888a1ae11042645ef48c4fae15cbe6c2d939f
+ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62385225"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68245245"
 ---
 # <a name="ltiosgt"></a>&lt;iOS&gt;
 
 İostreams çalışması için çeşitli türleri ve işlevleri temel tanımlar. Bu üstbilginin başka bir iostream üstbilgi tarafından sizin için genellikle bulunur; nadiren doğrudan dahil.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="requirements"></a>Gereksinimler
 
-```cpp
-#include <ios>
-```
+**Üst bilgi**: \<ios >
+
+**Namespace:** std
+
+> [!NOTE]
+> \<İos > kitaplığını kullanan `#include <iosfwd>` deyimi.
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -36,9 +39,11 @@ istr>> noskipws;
 
 çağrıları [noskipws](../standard-library/ios-functions.md#noskipws)(**istr**).
 
+## <a name="members"></a>Üyeler
+
 ### <a name="typedefs"></a>Tür tanımları
 
-|Tür adı|Açıklama|
+|||
 |-|-|
 |[iOS](../standard-library/ios-typedefs.md#ios)|Eski iostream Kitaplığı'ndan ios sınıf destekler.|
 |[streamoff](../standard-library/ios-typedefs.md#streamoff)|İç işlemlerini destekler.|
@@ -56,6 +61,7 @@ istr>> noskipws;
 |[defaultfloat](../standard-library/ios-functions.md#ios_defaultfloat)|Bayraklarını yapılandırır bir `ios_base` kayan nokta değerleri için varsayılan görüntüleme biçimi kullanılacak nesne.|
 |[düzeltildi](../standard-library/ios-functions.md#fixed)|Bir kayan noktalı sayı sabit ondalık gösteriminde görüntüleneceğini belirtir.|
 |[onaltılık](../standard-library/ios-functions.md#hex)|Tamsayı değişkenleri temel 16 gösteriminde görüneceğini belirtir.|
+|[hexfloat](../standard-library/ios-functions.md#hexfloat)|
 |[internal](../standard-library/ios-functions.md#internal)|Bir sayının işaretini sola hizalı olarak ve sağa hizalı olarak sayı neden olur.|
 |[Sol](../standard-library/ios-functions.md#left)|Sol kenar boşluğu ile stream temizleme görünmesini çıkış olarak geniş olmayan metin neden olur.|
 |[noboolalpha](../standard-library/ios-functions.md#noboolalpha)|Belirten bu türü değişkenlerindeki [bool](../cpp/bool-cpp.md) 1 veya 0 akışı gibi görünür.|
@@ -75,9 +81,19 @@ istr>> noskipws;
 |[unitbuf](../standard-library/ios-functions.md#unitbuf)|Çıkış arabelleği boş olmadığında işlenmesi için neden olur.|
 |[büyük harf](../standard-library/ios-functions.md#uppercase)|Onaltılık basamak ve bilimsel gösterimde üs büyük harf olarak görüneceğini belirtir.|
 
+### <a name="error-reporting"></a>Hata Raporlama
+
+|||
+|-|-|
+|[io_errc](../standard-library/ios-functions.md#io_errc)||
+|[is_error_code_enum](../standard-library/ios-functions.md#is_error_code_enum)||
+|[iostream_category](../standard-library/ios-functions.md#iostream_category)||
+|[make_error_code](../standard-library/ios-functions.md#make_error_code)||
+|[make_error_condition](../standard-library/ios-functions.md#make_error_condition)||
+
 ### <a name="classes"></a>Sınıflar
 
-|örneği|Açıklama|
+|||
 |-|-|
 |[basic_ios](../standard-library/basic-ios-class.md)|Şablon sınıfı için her iki giriş akışları genel depolama ve üye işlevleri tanımlar (şablon sınıfının [basic_istream](../standard-library/basic-istream-class.md)) ve çıkış akışlarına (şablon sınıfının [basic_ostream](../standard-library/basic-ostream-class.md)) bağlı olduğu Şablon parametreleri.|
 |[fpos](../standard-library/fpos-class.md)|Şablon sınıfı, yükün herhangi bir rastgele dosya konumu göstergesi geri yüklemek için gerekli tüm bilgileri depolayan nesneyi tanımlar.|

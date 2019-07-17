@@ -18,12 +18,12 @@ helpviewer_keywords:
 - std::function [C++], target
 - std::function [C++], target_type
 ms.assetid: 7b5ca76b-9ca3-4d89-8fcf-cad70a4aeae6
-ms.openlocfilehash: 44c7691cc967b13b4fa94a7c51da57b7bf4d511f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: d775af68b8238093c794a0f78d7e24f2a515ee56
+ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62159723"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68243800"
 ---
 # <a name="function-class"></a>function Sınıfı
 
@@ -79,10 +79,10 @@ public:
 
 ### <a name="parameters"></a>Parametreler
 
-*Fty*<br/>
+*Fty*\
 Kaydırmak için işlev türü.
 
-*AX*<br/>
+*AX*\
 Allocator işlev.
 
 ## <a name="remarks"></a>Açıklamalar
@@ -103,21 +103,23 @@ Tüm durumlarda `INVOKE(f, t1, t2, ..., tN)`burada `f` çağrılabilir nesne ve 
 
 Boş bir `function` nesne değil basılı çağrılabilir bir nesne ya da çağrılabilir nesnesine bir başvuru.
 
+## <a name="members"></a>Üyeler
+
 ### <a name="constructors"></a>Oluşturucular
 
-|Oluşturucu|Açıklama|
+|||
 |-|-|
 |[İşlevi](#function)|Rastgele tür sabit bir imza ile çağrılabilen bir nesne depolar veya boş bir sarmalayıcı oluşturur.|
 
 ### <a name="typedefs"></a>Tür tanımları
 
-|Tür adı|Açıklama|
+|||
 |-|-|
 |[result_type](#result_type)|Saklı çağrılabilir nesnenin dönüş türü.|
 
-### <a name="member-functions"></a>Üye işlevleri
+### <a name="functions"></a>İşlevler
 
-|Üye işlevi|Açıklama|
+|||
 |-|-|
 |[Ata](#assign)|Bu işlev nesnesi için çağrılabilen bir nesnesi atar.|
 |[değiştirme](#swap)|İki çağrılabilir nesneleri değiştirme.|
@@ -126,19 +128,13 @@ Boş bir `function` nesne değil basılı çağrılabilir bir nesne ya da çağr
 
 ### <a name="operators"></a>İşleçler
 
-|İşleç|Açıklama|
+|||
 |-|-|
-|[function::operator belirtilmemiş](#op_unspecified)|Depolanan çağrılabilir nesne varolup olmadığını test eder.|
-|[function::operator()](#op_call)|Aranabilir bir nesne çağırır.|
-|[function::operator=](#op_eq)|Saklı çağrılabilir nesnenin yerini alır.|
+|[Belirtilmeyen işleç](#op_unspecified)|Depolanan çağrılabilir nesne varolup olmadığını test eder.|
+|[operator()](#op_call)|Aranabilir bir nesne çağırır.|
+|[operator=](#op_eq)|Saklı çağrılabilir nesnenin yerini alır.|
 
-## <a name="requirements"></a>Gereksinimler
-
-**Başlık:** \<işlev >
-
-**Namespace:** std
-
-## <a name="assign"></a>  Function::Assign
+## <a name="assign"></a> Ata
 
 Bu işlev nesnesi için çağrılabilen bir nesnesi atar.
 
@@ -156,20 +152,20 @@ template <class Fx, class Alloc>
 
 ### <a name="parameters"></a>Parametreler
 
-*_Func*<br/>
+*_Func*\
 Aranabilir bir nesne.
 
-*_Fnref*<br/>
+*_Fnref*\
 Çağrılabilir nesnesi içeren bir başvuru sarmalayıcı.
 
-*AX*<br/>
+*AX*\
 Ayırıcı nesnesi.
 
 ### <a name="remarks"></a>Açıklamalar
 
 Her Değiştir üye işlevleri `callable object` tutulan `*this` olarak geçirilen çağrılabilir nesnesi ile `operand`. Her ikisi de ayırıcı nesnesi ile depolama tahsis *Ax*.
 
-## <a name="function"></a>  Function::Function
+## <a name="function"></a> İşlevi
 
 Rastgele tür sabit bir imza ile çağrılabilen bir nesne depolar veya boş bir sarmalayıcı oluşturur.
 
@@ -194,22 +190,22 @@ template <class Fx, class Alloc>
 
 ### <a name="parameters"></a>Parametreler
 
-*sağ*<br/>
+*sağ*\
 Kopyalamak için işlev nesnesi.
 
-*FX*<br/>
+*FX*\
 Çağrılabilir nesnenin türü.
 
-*_Func*<br/>
+*_Func*\
 Kaydırmak için çağrılabilir nesne.
 
-*Ayırma*<br/>
+*Ayırma*\
 Ayırıcı türü.
 
-*AX*<br/>
+*AX*\
 Ayırıcı.
 
-*_Fnref*<br/>
+*_Fnref*\
 Kaydırmak için çağrılabilir nesne başvurusu.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -286,7 +282,7 @@ f is non-empty (correct).
 g is empty (correct).
 ```
 
-## <a name="op_unspecified"></a>  function::operator belirtilmemiş
+## <a name="op_unspecified"></a> Belirtilmeyen işleç
 
 Depolanan çağrılabilir nesne varolup olmadığını test eder.
 
@@ -328,7 +324,7 @@ not empty == false
 not empty == true
 ```
 
-## <a name="op_call"></a>  işlev:: operator()
+## <a name="op_call"></a> operator()
 
 Aranabilir bir nesne çağırır.
 
@@ -341,10 +337,10 @@ result_type operator()(
 
 ### <a name="parameters"></a>Parametreler
 
-*TN*<br/>
+*TN*\
 Çağrı bağımsız değişken türü n.
 
-*TN*<br/>
+*TN*\
 Nth çağrı bağımsız değişkeni.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -379,7 +375,7 @@ empty == false
 val == -3
 ```
 
-## <a name="op_eq"></a>  Function::operator =
+## <a name="op_eq"></a> işleç =
 
 Saklı çağrılabilir nesnenin yerini alır.
 
@@ -394,16 +390,16 @@ template <class Fty>
 
 ### <a name="parameters"></a>Parametreler
 
-*npc*<br/>
+*npc*\
 Boş işaretçi sabiti.
 
-*sağ*<br/>
+*sağ*\
 Kopyalamak için işlev nesnesi.
 
-*fn*<br/>
+*fn*\
 Kaydırmak için çağrılabilir nesne.
 
-*fnref*<br/>
+*fnref*\
 Kaydırmak için çağrılabilir nesne başvurusu.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -461,7 +457,7 @@ empty == false
 val == -3
 ```
 
-## <a name="result_type"></a>  Function::result_type
+## <a name="result_type"></a> result_type
 
 Saklı çağrılabilir nesnenin dönüş türü.
 
@@ -503,7 +499,7 @@ empty == false
 val == -3
 ```
 
-## <a name="swap"></a>  Function::Swap
+## <a name="swap"></a> değiştirme
 
 İki çağrılabilir nesneleri değiştirme.
 
@@ -513,7 +509,7 @@ void swap(function& right);
 
 ### <a name="parameters"></a>Parametreler
 
-*sağ*<br/>
+*sağ*\
 İle takas için işlev nesnesi.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -562,7 +558,7 @@ empty == false
 val == -3
 ```
 
-## <a name="target"></a>  Function::target
+## <a name="target"></a> Hedef
 
 Çağrılabilir nesne depolanan olup olmadığını test eder belirtildiği şekilde çağrılabilir.
 
@@ -575,7 +571,7 @@ template <class Fty2>
 
 ### <a name="parameters"></a>Parametreler
 
-*Fty2*<br/>
+*Fty2*\
 Test etmek için hedef çağrılabilir nesne türü.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -623,7 +619,7 @@ empty == true
 no target == true
 ```
 
-## <a name="target_type"></a>  Function::target_type
+## <a name="target_type"></a> target_type
 
 Çağrılabilir nesne türü bilgileri alır.
 
@@ -668,8 +664,3 @@ type == int (__cdecl*)(int)
 empty == true
 type == void
 ```
-
-## <a name="see-also"></a>Ayrıca bkz.
-
-[mem_fn](../standard-library/functional-functions.md#mem_fn)<br/>
-[reference_wrapper Sınıfı](../standard-library/reference-wrapper-class.md)<br/>

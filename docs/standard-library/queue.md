@@ -6,26 +6,31 @@ f1_keywords:
 helpviewer_keywords:
 - queue header
 ms.assetid: 24fcf350-eb0e-48cf-9fef-978be1aeda1f
-ms.openlocfilehash: ed1960dffa4bfe8b1ae4105f9f31943fa7a30212
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 641ab1bfe99360320509b806149fcedfe1068879
+ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62369871"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68240356"
 ---
 # <a name="ltqueuegt"></a>&lt;Kuyruk&gt;
 
 Şablon sınıfları priority_queue ve kuyruk ve çeşitli destek şablonları tanımlar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="requirements"></a>Gereksinimler
 
-```cpp
-#include <queue>
-```
+**Başlık:** \<kuyruk >
+
+**Namespace:** std
+
+> [!NOTE]
+> \<Kuyruk > Kitaplığı'nı da kullanan `#include <initializer_list>` deyimi.
+
+## <a name="members"></a>Üyeler
 
 ### <a name="operators"></a>İşleçler
 
-|İşleç|Açıklama|
+|||
 |-|-|
 |[operator!=](../standard-library/queue-operators.md#op_neq)|Sıra nesnesinin işlecin sol tarafındaki sıra nesnesinin işlecin sağ tarafındaki eşit olup olmadığını sınar.|
 |[işleç <](../standard-library/queue-operators.md#op_lt)|Sıra nesnesinin işlecin sol tarafındaki sıra nesnesinin işlecin sağ tarafındaki küçüktür olup olmadığını sınar.|
@@ -34,9 +39,15 @@ ms.locfileid: "62369871"
 |[operator >](../standard-library/queue-operators.md#op_gt)|Sıra nesnesinin işlecin sol tarafındaki sıra nesnesinin işlecin sağ tarafındaki büyük olup olmadığını sınar.|
 |[operator>=](../standard-library/queue-operators.md#op_gt_eq)|İşlecin sol tarafındaki sıra nesnesinin değerinden büyük veya eşittir sıra nesnesinin işlecin sağ tarafındaki olup olmadığını sınar.|
 
+### <a name="functions"></a>İşlevler
+
+|||
+|-|-|
+|[değiştirme]()||
+
 ### <a name="classes"></a>Sınıflar
 
-|örneği|Açıklama|
+|||
 |-|-|
 |[queue Sınıfı](../standard-library/queue-class.md)|Bir kısıtlama bazı temel alınan kapsayıcı türünün ön ve arka öğelere erişim sınırlama işlevsellik sağlayan şablon kapsayıcı bağdaştırıcısı sınıf.|
 |[priority_queue Sınıfı](../standard-library/priority-queue-class.md)|İşlev her zaman en büyük olduğu bazı temel alınan bir kapsayıcı türü üst öğesine erişimi sınırlayan bir kısıtlama sağlayan şablon kapsayıcı bağdaştırıcısı sınıf.|

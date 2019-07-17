@@ -6,22 +6,25 @@ f1_keywords:
 helpviewer_keywords:
 - ciso646 header
 ms.assetid: 9d570924-d299-4225-9a58-8c4c820f5903
-ms.openlocfilehash: 70305581fb8afff71c87d284c773e50977342c1e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 299bbad53b75457e3b30caee031ab717cea0597f
+ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62386752"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68244809"
 ---
 # <a name="ltciso646gt"></a>&lt;ciso646&gt;
 
 Standart C Kitaplığı üstbilgisi içerir \<iso646.h > ve ilişkili adlar ekler `std` ad alanı.
 
-## <a name="syntax"></a>Sözdizimi
+> [!NOTE]
+> Bu üstbilginin kullanımı, gereksiz C++.
 
-```cpp
-#include <ciso646>
-```
+## <a name="requirements"></a>Gereksinimler
+
+**Başlık:** \<ciso646 >
+
+**Namespace:** std
 
 ## <a name="remarks"></a>Açıklamalar
 

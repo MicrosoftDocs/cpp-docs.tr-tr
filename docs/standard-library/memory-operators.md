@@ -10,22 +10,16 @@ f1_keywords:
 - memory/std::operator<<
 - memory/std::operator==
 ms.assetid: 257e3ba9-c4c2-4ae8-9b11-b156ba9c28de
-ms.openlocfilehash: ca1412efb4d095ef9a371b3739d4c282683821dc
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 661f1bb4c0f5734d88dd23f73c69b362f59a76c2
+ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62348464"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68243825"
 ---
 # <a name="ltmemorygt-operators"></a>&lt;bellek&gt; işleçleri
 
-||||
-|-|-|-|
-|[operator!=](#op_neq)|[İşleci&gt;](#op_gt)|[İşleci&gt;=](#op_gt_eq)|
-|[İşleci&lt;](#op_lt)|[İşleci&lt;&lt;](#op_lt_lt)|[İşleci&lt;=](#op_lt_eq)|
-|[operator==](#op_eq_eq)|
-
-## <a name="op_neq"></a>  işleç! =
+## <a name="op_neq"></a> işleç! =
 
 Nesneleri arasındaki eşitsizliği sınar.
 
@@ -48,16 +42,16 @@ bool operator!=(
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*<br/>
+*Sol*\
 Bir eşitsizlik için test edilecek nesne.
 
-*sağ*<br/>
+*sağ*\
 Bir eşitsizlik için test edilecek nesne.
 
-*Ty1*<br/>
+*Ty1*\
 Sol paylaşılan işaretçiyle kontrol edilen tür.
 
-*Ty2*<br/>
+*Ty2*\
 Doğru paylaşılan işaretçiyle kontrol edilen tür.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -126,7 +120,7 @@ sp0 != sp0 == false
 sp0 != sp1 == true
 ```
 
-## <a name="op_eq_eq"></a>  işleç ==
+## <a name="op_eq_eq"></a> işleç ==
 
 Nesneleri arasındaki eşitliği sınar.
 
@@ -149,16 +143,16 @@ bool operator==(
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*<br/>
+*Sol*\
 Eşitlik için test edilecek nesnelerden biri.
 
-*sağ*<br/>
+*sağ*\
 Eşitlik için test edilecek nesnelerden biri.
 
-*Ty1*<br/>
+*Ty1*\
 Sol paylaşılan işaretçiyle kontrol edilen tür.
 
-*Ty2*<br/>
+*Ty2*\
 Doğru paylaşılan işaretçiyle kontrol edilen tür.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -238,7 +232,7 @@ sp0 == sp0 == true
 sp0 == sp1 == false
 ```
 
-## <a name="op_gt_eq"></a>  İşleci&gt;=
+## <a name="op_gt_eq"></a> İşleci&gt;=
 
 Bir nesnesinin değerinden büyük veya eşittir ikinci bir nesnesinin sınar.
 
@@ -256,23 +250,23 @@ bool operator>=(
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*<br/>
+*Sol*\
 Bir Karşılaştırılacak nesne.
 
-*sağ*<br/>
+*sağ*\
 Bir Karşılaştırılacak nesne.
 
-*Ty1*<br/>
+*Ty1*\
 Sol paylaşılan işaretçiyle kontrol edilen tür.
 
-*Ty2*<br/>
+*Ty2*\
 Doğru paylaşılan işaretçiyle kontrol edilen tür.
 
 ### <a name="remarks"></a>Açıklamalar
 
 Şablon işleçlerin dönüş `left.get() >= right.get()`.
 
-## <a name="op_lt"></a>  İşleci&lt;
+## <a name="op_lt"></a> İşleci&lt;
 
 Bir nesnesinin değerinden küçük olmasını ikinci bir nesnesinin sınar.
 
@@ -290,19 +284,19 @@ bool operator<(
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*<br/>
+*Sol*\
 Bir Karşılaştırılacak nesne.
 
-*sağ*<br/>
+*sağ*\
 Bir Karşılaştırılacak nesne.
 
-*Ty1*<br/>
+*Ty1*\
 Sol işaretçiyle kontrol edilen tür.
 
-*Ty2*<br/>
+*Ty2*\
 Doğru işaretçiyle kontrol edilen tür.
 
-## <a name="op_lt_eq"></a>  İşleci&lt;=
+## <a name="op_lt_eq"></a> İşleci&lt;=
 
 Küçük veya buna eşit bir ikinci nesneye bir nesnesinin sınar.
 
@@ -320,23 +314,23 @@ bool operator<=(
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*<br/>
+*Sol*\
 Bir Karşılaştırılacak nesne.
 
-*sağ*<br/>
+*sağ*\
 Bir Karşılaştırılacak nesne.
 
-*Ty1*<br/>
+*Ty1*\
 Sol paylaşılan işaretçiyle kontrol edilen tür.
 
-*Ty2*<br/>
+*Ty2*\
 Doğru paylaşılan işaretçiyle kontrol edilen tür.
 
 ### <a name="remarks"></a>Açıklamalar
 
 Şablon işleçleri döndürür `left.get() <= right.get()`
 
-## <a name="op_gt"></a>  İşleci&gt;
+## <a name="op_gt"></a> İşleci&gt;
 
 Bir nesnenin ikinci nesneden büyük olan sınar.
 
@@ -354,19 +348,19 @@ bool operator>(
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*<br/>
+*Sol*\
 Bir Karşılaştırılacak nesne.
 
-*sağ*<br/>
+*sağ*\
 Bir Karşılaştırılacak nesne.
 
-*Ty1*<br/>
+*Ty1*\
 Sol paylaşılan işaretçiyle kontrol edilen tür.
 
-*Ty2*<br/>
+*Ty2*\
 Doğru paylaşılan işaretçiyle kontrol edilen tür.
 
-## <a name="op_lt_lt"></a>  İşleci&lt;&lt;
+## <a name="op_lt_lt"></a> İşleci&lt;&lt;
 
 Paylaşılan işaretçi akışa yazar.
 
@@ -378,19 +372,19 @@ std::basic_ostream<Elem, Tr>& operator<<(std::basic_ostream<Elem, Tr>& out,
 
 ### <a name="parameters"></a>Parametreler
 
-*Elem*<br/>
+*Elem*\
 Akış öğesi türü.
 
-*tr*<br/>
+*tr*\
 Türü akış öğesi özellikleri.
 
-*Ty*<br/>
+*Ty*\
 Paylaşılan işaretçiyle kontrol edilen tür.
 
-*out*<br/>
+*Çıkış*\
 Çıkış akışı.
 
-*SP*<br/>
+*SP*\
 Paylaşılan işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -418,7 +412,3 @@ int main()
 ```Output
 sp0 == 3f3040 (varies)
 ```
-
-## <a name="see-also"></a>Ayrıca bkz.
-
-[\<bellek >](../standard-library/memory.md)<br/>

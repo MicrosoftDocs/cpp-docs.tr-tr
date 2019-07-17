@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - std::tuple_size
 ms.assetid: 73852fc5-eb68-41f1-8379-465cedc2314a
-ms.openlocfilehash: 1a069bcf5385a014438e36983e455ec3761ce727
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 1c03c02dde3178a257a83720ff437f7981f5f7ed
+ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62278949"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68241548"
 ---
 # <a name="tuplesize-class"></a>tuple_size sınıfı;
 
@@ -54,24 +54,28 @@ template <class Tuple>
    struct tuple_size<const volatile Tuple>;
 ```
 
+```cpp
+template <class T> inline constexpr size_t tuple_size_v = tuple_size<T>::value;
+```
+
 ### <a name="parameters"></a>Parametreler
 
-*Tanımlama grubu*<br/>
+*Tanımlama grubu*\
 Demet türü.
 
-*Elem*<br/>
+*Elem*\
 Dizi öğelerinin türü.
 
-*Boyutu*<br/>
+*Boyutu*\
 Dizinin boyutu.
 
-*T1*<br/>
+*T1*\
 Çiftin ilk üye türü.
 
-*T2*<br/>
+*T2*\
 Çiftin ikinci üyenin türü.
 
-*Türler*<br/>
+*Türleri*\
 Tanımlama grubu öğelerinin türleri.
 
 ## <a name="remarks"></a>Açıklamalar
@@ -120,9 +124,3 @@ int main()
 **Başlık:** \<yardımcı programı > (için çifti özelleştirme)
 
 **Namespace:** std
-
-## <a name="see-also"></a>Ayrıca bkz.
-
-[\<Tanımlama grubu >](../standard-library/tuple.md)<br/>
-[Tanımlama grubu](../standard-library/tuple-class.md)<br/>
-[tuple_element sınıfı](../standard-library/tuple-element-class-tuple.md)<br/>

@@ -7,22 +7,22 @@ f1_keywords:
 helpviewer_keywords:
 - iterator header
 ms.assetid: c61a3962-f3ed-411a-b5a3-e8b3c2b500bd
-ms.openlocfilehash: 1b0d3282075246f3b217f0c8acac19ed8ece79cb
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f859c2e11d8a800c44b93e69e4b862300c6d3a13
+ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62224096"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68245778"
 ---
 # <a name="ltiteratorgt"></a>&lt;Yineleyici&gt;
 
 Yineleyici basit öğelerini, önceden tanımlanmış yineleyicileri ve akış yineleyicilerinin yanı sıra pek çok destek şablonunu da tanımlar. Ön tanımlı yineleyiciler ekleme ve tersine çevirme bağdaştırıcıları içerir. Ekleme yineleyici bağdaştırıcıların üç sınıfı vardır: ön, arka ve genel. Kapsayıcı üye işlevi yineleyicilerin sağladığı üzerine yaz semantiği yerine ekle semantiği sağlar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="requirements"></a>Gereksinimler
 
-```cpp
-#include <iterator>
-```
+**Başlık:** \<yineleyici >
+
+**Namespace:** std
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -42,17 +42,23 @@ Daha az gereksinime sahip yineleyiciler yerine daha çok gereksinimi olan ve ö�
 
 Visual Studio, denetlenmiş ve denetlenmemiş yineleyiciler için bir hata ayıklama modu çeşitliliğini desteklemek amacıyla Standart C++ Kitaplığı yineleyicilerine uzantılar eklemiştir. Daha fazla bilgi için [güvenli kitaplıklar: C++Standart kitaplık](../standard-library/safe-libraries-cpp-standard-library.md).
 
+## <a name="members"></a>Üyeler
+
 ### <a name="functions"></a>İşlevler
 
-|İşlev|Açıklama|
+|||
 |-|-|
 |[İlerlet](../standard-library/iterator-functions.md#advance)|Belirtilen bir konum sayısıyla yineleyiciyi artırır.|
 |[back_inserter](../standard-library/iterator-functions.md#back_inserter)|Belirtilen kapsayıcının arkasında öğeler ekleyebilen bir yineleyici oluşturur.|
 |[başlayın](../standard-library/iterator-functions.md#begin)|Belirtilen bir kapsayıcıdaki ilk öğe için bir yineleyici alır.|
 |[cbegin](../standard-library/iterator-functions.md#cbegin)|Belirtilen bir kapsayıcıdaki ilk öğe için sabit bir yineleyici alır.|
 |[cend](../standard-library/iterator-functions.md#cend)|Belirtilen kapsayıcıdaki son öğeyi izleyen öğe için sabit bir yineleyici alır.|
+|[crbegin](../standard-library/iterator-functions.md#crbegin)||
+|[crend](../standard-library/iterator-functions.md#crend)||
+|[Veri](../standard-library/iterator-functions.md#data)||
 |[uzaklık](../standard-library/iterator-functions.md#distance)|İki yineleyici tarafından ele alınan konumlar arasındaki artış sayısını belirler.|
 |[Son](../standard-library/iterator-functions.md#end)|Belirtilen kapsayıcıdaki son öğeyi izleyen öğeye bir yineleyici alır.|
+|[boş](../standard-library/iterator-functions.md#empty)||
 |[front_inserter](../standard-library/iterator-functions.md#front_inserter)|Belirtilen kapsayıcının önünde öğeler ekleyebilen bir yineleyici oluşturur.|
 |[inserter](../standard-library/iterator-functions.md#inserter)|Bir kapsayıcıya belirli bir ekleme noktasında yeni bir öğe ekleyen bir yineleyici bağdaştırıcısı.|
 |[make_checked_array_iterator](../standard-library/iterator-functions.md#make_checked_array_iterator)|Oluşturur bir [checked_array_iterator](../standard-library/checked-array-iterator-class.md) diğer algoritmalarda kullanılabilen. **Not:**  Bu işlev, C++ Standart Kitaplığı'nın bir Microsoft uzantısıdır. Bu işlev kullanılarak uygulanan kod bu Microsoft uzantısını desteklemeyen C++ Standart yapı ortamları için taşınabilir değildir.|
@@ -60,10 +66,13 @@ Visual Studio, denetlenmiş ve denetlenmemiş yineleyiciler için bir hata ayık
 |[make_unchecked_array_iterator](../standard-library/iterator-functions.md#make_unchecked_array_iterator)|Oluşturur bir [unchecked_array_iterator](../standard-library/unchecked-array-iterator-class.md) diğer algoritmalarda kullanılabilen. **Not:**  Bu işlev, C++ Standart Kitaplığı'nın bir Microsoft uzantısıdır. Bu işlev kullanılarak uygulanan kod bu Microsoft uzantısını desteklemeyen C++ Standart yapı ortamları için taşınabilir değildir.|
 |[Sonraki](../standard-library/iterator-functions.md#next)|Belirtilen sayıda yineler ve yeni yineleyici konumunu döndürür.|
 |[önceki](../standard-library/iterator-functions.md#prev)|Belirtilen sayıda geri yineler ve yeni yineleyici konumunu döndürür.|
+|[rbegin](../standard-library/iterator-functions.md#rbegin)||
+|[rend](../standard-library/iterator-functions.md#rend)||
+|[Boyutu](../standard-library/iterator-functions.md#size)||
 
 ### <a name="operators"></a>İşleçler
 
-|İşleç|Açıklama|
+|||
 |-|-|
 |[operator!=](../standard-library/iterator-operators.md#op_neq)|İşlecin sol tarafındaki yineleyici nesnesinin işlecin sağ tarafındaki yineleyici nesnesinden farklı olup olmadığını sınar.|
 |[operator==](../standard-library/iterator-operators.md#op_eq_eq)|İşlecin sol tarafındaki yineleyici nesnesinin işlecin sağ tarafındaki yineleyici nesnesine eşit olup olmadığını sınar.|
@@ -76,7 +85,7 @@ Visual Studio, denetlenmiş ve denetlenmemiş yineleyiciler için bir hata ayık
 
 ### <a name="classes"></a>Sınıflar
 
-|örneği|Açıklama|
+|||
 |-|-|
 |[back_insert_iterator](../standard-library/back-insert-iterator-class.md)|Şablon sınıfı, bir çıkış yineleyici nesnesi tanımlar. Türündeki bir kapsayıcıya öğe ekler; `Container`, korumalı erişir `pointer` bilinen depolandığı kapsayıcı.|
 |[bidirectional_iterator_tag](../standard-library/bidirectional-iterator-tag-struct.md)|Bir dönüş türü sağlayan sınıf bir `iterator_category` çift yönlü yineleyiciyi temsil eden bir işlev.|

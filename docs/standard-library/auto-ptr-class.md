@@ -14,12 +14,12 @@ helpviewer_keywords:
 - std::auto_ptr [C++], release
 - std::auto_ptr [C++], reset
 ms.assetid: 7f9108b6-9eb3-4634-b615-cf7aa814f23b
-ms.openlocfilehash: f0c8e0c1f4dc2e1082d5df230c74efafcae24f29
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c64865c98f52f68fcb6d38160ac885657a7b8916
+ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62377990"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68244002"
 ---
 # <a name="autoptr-class"></a>auto_ptr Sınıfı
 
@@ -33,7 +33,6 @@ Hakkında daha fazla bilgi için `throw()` ve özel durum işleme, bkz: [özel d
 
 ```cpp
 class auto_ptr {
-public:
     typedef Type element_type;
     explicit auto_ptr(Type* ptr = 0) throw();
     auto_ptr(auto_ptr<Type>& right) throw()
@@ -56,10 +55,10 @@ public:
 
 ### <a name="parameters"></a>Parametreler
 
-*sağ*<br/>
+*sağ*\
 `auto_ptr` Mevcut bir kaynağı alınmaya başlanacağı.
 
-*ptr*<br/>
+*PTR*\
 Depolanmış bir işaretçiyle değiştirmek için belirtilen işaretçisi.
 
 ## <a name="remarks"></a>Açıklamalar
@@ -72,19 +71,19 @@ Geçirebilirsiniz bir `auto_ptr<Type>` değer işlev çağrısı için bağıms�
 
 ### <a name="constructors"></a>Oluşturucular
 
-|Oluşturucu|Açıklama|
+|||
 |-|-|
 |[auto_ptr](#auto_ptr)|Türündeki nesneler için oluşturucu `auto_ptr`.|
 
 ### <a name="typedefs"></a>Tür tanımları
 
-|Tür adı|Açıklama|
+|||
 |-|-|
 |[element_type](#element_type)|Şablon parametresi için bir eşanlamlı türüdür `Type`.|
 
-### <a name="member-functions"></a>Üye işlevleri
+### <a name="functions"></a>İşlevler
 
-|Üye işlevi|Açıklama|
+|||
 |-|-|
 |[get](#get)|Depolanmış bir işaretçiyle üye işlevinin döndürdüğü `myptr`.|
 |[Yayın](#release)|Üye depolanan işaretçinin yerini `myptr` null bir işaretçi ve daha önce depolanan işaretçi döndürür.|
@@ -92,7 +91,7 @@ Geçirebilirsiniz bir `auto_ptr<Type>` değer işlev çağrısı için bağıms�
 
 ### <a name="operators"></a>İşleçler
 
-|İşleç|Açıklama|
+|||
 |-|-|
 |[operator=](#op_eq)|Sahipliği diğerine aktaran bir atama işleci `auto_ptr` başka bir nesne.|
 |[operator *](#op_star)|Nesne türü için başvuru kaldırma işleci akıştaki `auto_ptr`.|
@@ -100,13 +99,7 @@ Geçirebilirsiniz bir `auto_ptr<Type>` değer işlev çağrısı için bağıms�
 |[işleç auto_ptr\<diğer >](#op_auto_ptr_lt_other_gt)|Bir tür yayınlar `auto_ptr` başka bir tür, `auto_ptr`.|
 |[işleç auto_ptr_ref\<diğer >](#op_auto_ptr_ref_lt_other_gt)|Gelen bıraktığı bir `auto_ptr` için bir `auto_ptr_ref`.|
 
-## <a name="requirements"></a>Gereksinimler
-
-**Başlık:** \<bellek >
-
-**Namespace:** std
-
-## <a name="auto_ptr"></a>  auto_ptr::auto_ptr
+### <a name="auto_ptr"></a> auto_ptr
 
 Türündeki nesneler için oluşturucu `auto_ptr`.
 
@@ -121,15 +114,15 @@ template <class Other>
 auto _ptr(auto _ptr<Other>& right) throw();
 ```
 
-### <a name="parameters"></a>Parametreler
+#### <a name="parameters"></a>Parametreler
 
-*ptr*<br/>
+*PTR*\
 Nesne işaretçisi, `auto_ptr` kapsüller.
 
-*sağ*<br/>
+*sağ*\
 `auto_ptr` Oluşturucu tarafından kopyalanacak nesne.
 
-### <a name="remarks"></a>Açıklamalar
+#### <a name="remarks"></a>Açıklamalar
 
 İlk Oluşturucu depoları *ptr* içinde `myptr`, ayrılmış nesneyi depolanan işaretçide. İkinci oluşturucu depolanmış işaretçi sahipliğini aktarır *doğru*, depolayarak *doğru*. [Yayın](#release) içinde `myptr`.
 
@@ -137,7 +130,7 @@ Nesne işaretçisi, `auto_ptr` kapsüller.
 
 Şablon oluşturucu aynı şekilde davranır, bir işaretçi ikinci oluşturucu, sağlanan `Other` örtük olarak bir işaretçiye dönüştürülebilir `Type`.
 
-### <a name="example"></a>Örnek
+#### <a name="example"></a>Örnek
 
 ```cpp
 // auto_ptr_auto_ptr.cpp
@@ -196,16 +189,15 @@ Constructing 00311AF8
 Destructing 00311AF8
 ```
 
-## <a name="element_type"></a>  auto_ptr::element_type
+### <a name="element_type"></a> ELEMENT_TYPE
 
 Şablon parametresi için bir eşanlamlı türüdür `Type`.
 
 ```cpp
-
 typedef Type element  _type;
 ```
 
-## <a name="get"></a>  auto_ptr::get
+### <a name="get"></a> Al
 
 Depolanmış bir işaretçiyle üye işlevinin döndürdüğü `myptr`.
 
@@ -213,11 +205,11 @@ Depolanmış bir işaretçiyle üye işlevinin döndürdüğü `myptr`.
 Type *get() const throw();
 ```
 
-### <a name="return-value"></a>Dönüş Değeri
+#### <a name="return-value"></a>Dönüş Değeri
 
 Depolanmış bir işaretçiyle `myptr`.
 
-### <a name="example"></a>Örnek
+#### <a name="example"></a>Örnek
 
 ```cpp
 // auto_ptr_get.cpp
@@ -264,35 +256,35 @@ pi2 == pi3
 Destructing 00311B88 Value: 6
 ```
 
-## <a name="op_eq"></a>  auto_ptr::operator =
+### <a name="op_eq"></a> işleç =
 
 Sahipliği diğerine aktaran bir atama işleci `auto_ptr` başka bir nesne.
 
 ```cpp
 template <class Other>
-auto_ptr<Type>& operator=(auto_ptr<Other>& right) throw();
+    auto_ptr<Type>& operator=(auto_ptr<Other>& right) throw();
 auto_ptr<Type>& operator=(auto_ptr<Type>& right) throw();
 auto_ptr<Type>& operator=(auto_ptr_ref<Type> right) throw();
 ```
 
-### <a name="parameters"></a>Parametreler
+#### <a name="parameters"></a>Parametreler
 
-*sağ*<br/>
+*sağ*\
 Bir nesne türü `auto_ptr`.
 
-### <a name="return-value"></a>Dönüş Değeri
+#### <a name="return-value"></a>Dönüş Değeri
 
 Türü bir nesneye başvuru `auto_ptr<Type>`.
 
-### <a name="remarks"></a>Açıklamalar
+#### <a name="remarks"></a>Açıklamalar
 
 Atama ifadesini değerlendirir `delete myptr`, ancak yalnızca depolanmış bir işaretçiyle `myptr` değişikliklerin bir atamanın sonucu. Ardından depolanan işaretçi sahipliğini aktarır *doğru*, depolayarak *doğru*.[ Yayın](#release) içinde `myptr`. İşlev döndürür  __\*bu__.
 
-### <a name="example"></a>Örnek
+#### <a name="example"></a>Örnek
 
-Üye işleci kullanımı örneği için bkz: [auto_ptr::auto_ptr](#auto_ptr).
+Üye işleci kullanımı örneği için bkz: [auto_ptr](#auto_ptr).
 
-## <a name="op_star"></a>  auto_ptr::operator *
+### <a name="op_star"></a> operator *
 
 Nesne türü için başvuru kaldırma işleci akıştaki `auto_ptr`.
 
@@ -300,19 +292,19 @@ Nesne türü için başvuru kaldırma işleci akıştaki `auto_ptr`.
 Type& operator*() const throw();
 ```
 
-### <a name="return-value"></a>Dönüş Değeri
+#### <a name="return-value"></a>Dönüş Değeri
 
 Türü bir nesneye başvuru `Type` , işaretçiyi üstlenir.
 
-### <a name="remarks"></a>Açıklamalar
+#### <a name="remarks"></a>Açıklamalar
 
 Yöneltme işleci döndürür `*` [alma](#get). Bu nedenle, depolanmış işaretçiyi null olmamalıdır.
 
-### <a name="example"></a>Örnek
+#### <a name="example"></a>Örnek
 
-Üye işlevini kullanma örneği için bkz: [auto_ptr::auto_ptr](#auto_ptr).
+Üye işlevini kullanma örneği için bkz: [auto_ptr](#auto_ptr).
 
-## <a name="op_arrow"></a>  auto_ptr::operator-&gt;
+### <a name="op_arrow"></a> operator-&gt;
 
 Üye erişim işleci.
 
@@ -320,19 +312,19 @@ Yöneltme işleci döndürür `*` [alma](#get). Bu nedenle, depolanmış işaret
 Type * operator->() const throw();
 ```
 
-### <a name="return-value"></a>Dönüş Değeri
+#### <a name="return-value"></a>Dönüş Değeri
 
 Nesne üyesi, `auto_ptr` sahip.
 
-### <a name="remarks"></a>Açıklamalar
+#### <a name="remarks"></a>Açıklamalar
 
 Seçim operatörü döndürür [alma](#get)`( )`, böylece ifade *ap*-> **üye** gibi davranır ( *ap*. **Alma**()) -> **üye**burada *ap* sınıfın bir nesnesi `auto_ptr` \< **türü**>. Bu nedenle, depolanmış işaretçiyi null olmamalıdır ve `Type` bir sınıf, yapı veya birleşim türü ile olmalıdır bir `member` üyesi.
 
-### <a name="example"></a>Örnek
+#### <a name="example"></a>Örnek
 
-Üye işlevini kullanma örneği için bkz: [auto_ptr::auto_ptr](#auto_ptr).
+Üye işlevini kullanma örneği için bkz: [auto_ptr](#auto_ptr).
 
-## <a name="op_auto_ptr_lt_other_gt"></a>  auto_ptr::operator auto_ptr&lt;diğer&gt;
+### <a name="op_auto_ptr_lt_other_gt"></a> işleç auto_ptr&lt;diğer&gt;
 
 Bir tür yayınlar `auto_ptr` başka bir tür, `auto_ptr`.
 
@@ -341,11 +333,11 @@ template <class Other>
 operator auto _ptr<Other>() throw();
 ```
 
-### <a name="return-value"></a>Dönüş Değeri
+#### <a name="return-value"></a>Dönüş Değeri
 
 Tür dönüştürme işleci döndürür `auto_ptr` \< **diğer**> (  **\*bu**).
 
-### <a name="example"></a>Örnek
+#### <a name="example"></a>Örnek
 
 ```cpp
 // auto_ptr_op_auto_ptr.cpp
@@ -362,7 +354,7 @@ int main()
 }
 ```
 
-## <a name="op_auto_ptr_ref_lt_other_gt"></a>  auto_ptr::operator auto_ptr_ref&lt;Other&gt;
+### <a name="op_auto_ptr_ref_lt_other_gt"></a> işleç auto_ptr_ref&lt;diğer&gt;
 
 Gelen bıraktığı bir `auto_ptr` için bir `auto_ptr_ref`.
 
@@ -371,11 +363,11 @@ template <class Other>
 operator auto _ptr  _ref<Other>() throw();
 ```
 
-### <a name="return-value"></a>Dönüş Değeri
+#### <a name="return-value"></a>Dönüş Değeri
 
 Tür dönüştürme işleci döndürür **auto_ptr_ref** \< **diğer**> (  **\*bu**).
 
-### <a name="example"></a>Örnek
+#### <a name="example"></a>Örnek
 
 ```cpp
 // auto_ptr_op_auto_ptr_ref.cpp
@@ -423,7 +415,7 @@ main exiting
 ~C:  1
 ```
 
-## <a name="release"></a>  auto_ptr::release
+### <a name="release"></a> Yayın
 
 Üye depolanan işaretçinin yerini `myptr` null bir işaretçi ve daha önce depolanan işaretçi döndürür.
 
@@ -431,15 +423,15 @@ main exiting
 Type *release() throw();
 ```
 
-### <a name="return-value"></a>Dönüş Değeri
+#### <a name="return-value"></a>Dönüş Değeri
 
 Daha önce depolanan işaretçi.
 
-### <a name="remarks"></a>Açıklamalar
+#### <a name="remarks"></a>Açıklamalar
 
 Üye depolanan işaretçinin yerini `myptr` null bir işaretçi ve daha önce depolanan işaretçi döndürür.
 
-### <a name="example"></a>Örnek
+#### <a name="example"></a>Örnek
 
 ```cpp
 // auto_ptr_release.cpp
@@ -485,7 +477,7 @@ pi2 == pi3
 Destructing 00311B88 Value: 6
 ```
 
-## <a name="reset"></a>  auto_ptr::reset
+### <a name="reset"></a> Sıfırlama
 
 Üye işlevi ifade değerlendirilir `delete myptr`, ancak depolanan işaretçi değeri `myptr` değişikliklerin bir işlev çağrısının sonucu. Daha sonra depolanmış bir işaretçiyle değiştirir `ptr`.
 
@@ -493,12 +485,12 @@ Destructing 00311B88 Value: 6
 void reset(Type* ptr = 0);
 ```
 
-### <a name="parameters"></a>Parametreler
+#### <a name="parameters"></a>Parametreler
 
-*ptr*<br/>
+*PTR*\
 Depolanmış bir işaretçiyle değiştirmek için belirtilen işaretçi `myptr`.
 
-### <a name="example"></a>Örnek
+#### <a name="example"></a>Örnek
 
 ```cpp
 // auto_ptr_reset.cpp
@@ -547,5 +539,4 @@ Destructing 00311B88 Value: 6
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
 [unique_ptr Sınıfı](../standard-library/unique-ptr-class.md)<br/>

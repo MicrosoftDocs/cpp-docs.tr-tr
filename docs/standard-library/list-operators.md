@@ -16,21 +16,16 @@ helpviewer_keywords:
 - std::operator&lt; (list)
 - std::operator&lt;= (list)
 - std::operator== (list)
-ms.openlocfilehash: 919c24217866a57d0401c8cd6fea8f5cef02906b
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 7b0b7540c1b9a55140405a55e8e034f9c6ec646c
+ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62413196"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68246458"
 ---
 # <a name="ltlistgt-operators"></a>&lt;Liste&gt; işleçleri
 
-||||
-|-|-|-|
-|[operator!=](#op_neq)|[İşleci&gt;](#op_gt)|[İşleci&gt;=](#op_gt_eq)|
-|[İşleci&lt;](#op_lt)|[İşleci&lt;=](#op_lt_eq)|[operator==](#op_eq_eq)|
-
-## <a name="op_neq"></a>  işleç! =
+## <a name="op_neq"></a> işleç! =
 
 İşlecin sol tarafındaki liste nesnesi işlecin sağ tarafındaki liste nesnesine eşit olup olmadığını sınar.
 
@@ -42,10 +37,10 @@ bool operator!=(
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*<br/>
+*Sol*\
 Bir nesne türü `list`.
 
-*sağ*<br/>
+*sağ*\
 Bir nesne türü `list`.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -81,7 +76,7 @@ Lists not equal.
 */
 ```
 
-## <a name="op_lt"></a>  İşleci&lt;
+## <a name="op_lt"></a> İşleci&lt;
 
 İşlecin sol tarafındaki liste nesnesi işlecin sağ tarafındaki listesi nesneden küçük olup olmadığını sınar.
 
@@ -93,10 +88,10 @@ bool operator<(
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*<br/>
+*Sol*\
 Bir nesne türü `list`.
 
-*sağ*<br/>
+*sağ*\
 Bir nesne türü `list`.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -136,7 +131,7 @@ List c1 is less than list c2.
 */
 ```
 
-## <a name="op_lt_eq"></a>  İşleci&lt;=
+## <a name="op_lt_eq"></a> İşleci&lt;=
 
 Listenin işlecinin sol tarafında nesne küçük olup olmadığını sınar veya liste nesnesi eşit işlecin sağ tarafındaki.
 
@@ -148,10 +143,10 @@ bool operator<=(
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*<br/>
+*Sol*\
 Bir nesne türü `list`.
 
-*sağ*<br/>
+*sağ*\
 Bir nesne türü `list`.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -191,7 +186,7 @@ List c1 is less than or equal to list c2.
 */
 ```
 
-## <a name="op_eq_eq"></a>  işleç ==
+## <a name="op_eq_eq"></a> işleç ==
 
 İşlecin sol tarafındaki listesi nesnesinin işlecin sağ tarafındaki liste nesnesine eşit olup olmadığını sınar.
 
@@ -203,10 +198,10 @@ bool operator==(
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*<br/>
+*Sol*\
 Bir nesne türü `list`.
 
-*sağ*<br/>
+*sağ*\
 Bir nesne türü `list`.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -242,7 +237,7 @@ The lists are equal.
 */
 ```
 
-## <a name="op_gt"></a>  İşleci&gt;
+## <a name="op_gt"></a> İşleci&gt;
 
 İşlecin sol tarafındaki liste nesnesi liste nesnesi işlecin sağ tarafındaki büyük olup olmadığını sınar.
 
@@ -254,10 +249,10 @@ bool operator>(
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*<br/>
+*Sol*\
 Bir nesne türü `list`.
 
-*sağ*<br/>
+*sağ*\
 Bir nesne türü `list`.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -297,7 +292,7 @@ List c1 is greater than list c2.
 */
 ```
 
-## <a name="op_gt_eq"></a>  İşleci&gt;=
+## <a name="op_gt_eq"></a> İşleci&gt;=
 
 İşlecin sol tarafındaki liste nesnesi büyük veya işlecin sağ tarafındaki liste nesnesine eşit olup olmadığını sınar.
 
@@ -309,10 +304,10 @@ bool operator>=(
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*<br/>
+*Sol*\
 Bir nesne türü `list`.
 
-*sağ*<br/>
+*sağ*\
 Bir nesne türü `list`.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -352,7 +347,3 @@ int main( )
 List c1 is greater than or equal to list c2.
 */
 ```
-
-## <a name="see-also"></a>Ayrıca bkz.
-
-[\<listesi >](../standard-library/list.md)<br/>

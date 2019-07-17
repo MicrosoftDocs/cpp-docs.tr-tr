@@ -7,12 +7,12 @@ helpviewer_keywords:
 - typetrait header
 - type_traits
 ms.assetid: 2260b51f-8160-4c66-a82f-00b534cb60d4
-ms.openlocfilehash: c80629fd8771206d193b53aa7c32073de0ba45dd
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c83949a2c74447735f6863c5f1af68b4dfe2ee4e
+ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62278988"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68243518"
 ---
 # <a name="lttypetraitsgt"></a>&lt;type_traits&gt;
 
@@ -110,6 +110,7 @@ Tür özellikleri
 |[is_polymorphic](../standard-library/is-polymorphic-class.md)|Çok biçimli bir sınıf türü olup olmadığını sınar.|
 |[is_abstract](../standard-library/is-abstract-class.md)|Soyut bir sınıf türü olup olmadığını sınar.|
 |[is_final](../standard-library/is-final-class.md)|Türü olarak işaretlenmiş bir sınıf türü olup olmadığını sınar `final`.|
+|[is_aggregate](../standard-library/is-aggregate-class.md)||
 |[is_signed](../standard-library/is-signed-class.md)|İmzalı bir tamsayı türü olup olmadığını sınar.|
 |[is_unsigned](../standard-library/is-unsigned-class.md)|İşaretsiz bir tamsayı türü olup olmadığını sınar.|
 |[is_constructible](../standard-library/is-constructible-class.md)|Belirtilen bağımsız değişken türleri kullanarak atmamalıdır türü olup olmadığını sınar.|
@@ -119,6 +120,8 @@ Tür özellikleri
 |[is_assignable](../standard-library/type-traits-functions.md#is_assignable)|İlk tür ikinci türünde bir değer atanabilir olup olmadığını sınar.|
 |[is_copy_assignable](../standard-library/type-traits-functions.md#is_copy_assignable)|Bir türü türün const bir başvuru değeri atanabilir olup olmadığını sınar.|
 |[is_move_assignable](../standard-library/type-traits-functions.md#is_move_assignable)|Bir türü bir rvalue başvuru türü atanabilir olup olmadığını sınar.|
+|[is_swappable](../standard-library/type-traits-functions.md#is_swappable)||
+|[is_swappable_with](../standard-library/type-traits-functions.md#is_swappable_with)||
 |[is_destructible](../standard-library/is-destructible-class.md)|Yıkıcı türü olup olmadığını sınar.|
 |[is_trivially_constructible](../standard-library/is-trivially-constructible-class.md)|Belirtilen türlerini kullanarak bir yapıda, Önemsiz olmayan bir işlem türünü kullanan olup olmadığını sınar.|
 |[is_trivially_default_constructible](../standard-library/is-trivially-default-constructible-class.md)|Varsayılan oluşturulan Önemsiz olmayan bir işlem türü kullanır olup olmadığını sınar.|
@@ -135,8 +138,11 @@ Tür özellikleri
 |[is_nothrow_assignable](../standard-library/is-nothrow-assignable-class.md)|Belirtilen türü kullanarak atanabilir bir türdür ve atama değil throw bilinen olup olmadığını sınar.|
 |[is_nothrow_copy_assignable](../standard-library/is-nothrow-copy-assignable-class.md)|Türü kopya atanabilir ve atama değil throw bilinen olup olmadığını sınar.|
 |[is_nothrow_move_assignable](../standard-library/type-traits-functions.md#is_nothrow_move_assignable)|Türü taşıma atanabilir ve atama değil throw bilinen olup olmadığını sınar.|
+|[is_nothrow_swappable](../standard-library/type-traits-functions.md#is_nothrow_swappable)||
+|[is_nothrow_swappable_with](../standard-library/type-traits-functions.md#is_nothrow_swappable_with)||
 |[is_nothrow_destructible](../standard-library/is-nothrow-destructible-class.md)|Yıkıcı bir türdür ve yok edici değil throw bilinen olup olmadığını sınar.|
 |`has_virtual_destructor`|Sanal bir yıkıcı türüne sahip olup olmadığını sınar.|
+|`has_unique_object_representations`||
 | [is_invocable](is-invocable-classes.md) | Belirtilen bağımsız değişken türleri kullanılarak çağrılabilir türü çağrılabilir olup olmadığını sınar.<br/> C ++ 17'de eklendi. |
 | [is_invocable_r](is-invocable-classes.md) | Testler belirtilen bağımsız değişken türleri ve sonucu kullanılarak çağrılabilir türü olup olmadığını çağrılabilen belirtilen türe dönüştürülebilir.<br/> C ++ 17'de eklendi. |
 | [is_nothrow_invocable](is-invocable-classes.md) | Türleri ve özel durum oluşturması beklenmiyor bilinen çağrılabilir türü belirtilen bağımsız değişken kullanılarak çağrılan olup olmadığını sınar.<br/> C ++ 17'de eklendi. |
@@ -147,7 +153,7 @@ Tür özelliği sorguları
 |||
 |-|-|
 |[alignment_of](../standard-library/alignment-of-class.md)|Bir tür hizalamasını alır.|
-|[rank](../standard-library/rank-class.md)|Dizi boyut sayısını alır.|
+|[boyut sayısı](../standard-library/rank-class.md)|Dizi boyut sayısını alır.|
 |[Kapsam](../standard-library/extent-class.md)|Belirtilen dizinin boyutun öğe sayısını alır.|
 
 Tür ilişkileri
@@ -211,6 +217,14 @@ Diğer dönüşümleri
 |[invoke_result](invoke-result-class.md)|Belirtilen bağımsız değişken türleri alan çağrılabilir türü dönüş türünü belirler. <br/>C ++ 17'de eklendi. |
 |[result_of](../standard-library/result-of-class.md)|Belirtilen bağımsız değişken türleri alan çağrılabilir türü dönüş türünü belirler. <br/>C ++ 17'de kullanımdan C ++ 14, eklendi. |
 |[underlying_type](../standard-library/underlying-type-class.md)|Bir numaralandırma türünün temel alınan integral türü üretir.|
+
+Mantıksal işleç nitelikler
+
+|||
+|-|-|
+|[birlikte](../standard-library/conjunction-class.md)||
+|[ayrım](../standard-library/disjunction-class.md)||
+|[Olumsuzlama](../standard-library/negation-class.md)||
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

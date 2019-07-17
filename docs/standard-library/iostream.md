@@ -14,16 +14,16 @@ f1_keywords:
 helpviewer_keywords:
 - iostream header
 ms.assetid: de5d39e1-7e77-4b55-bcd1-7c77b41515c8
-ms.openlocfilehash: 18d6a8517d71cfa9c7e17a45c97f77977ec778f0
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: fa90a861194275d8c82a407e2ca8db6e757aab35
+ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62385147"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68245220"
 ---
 # <a name="ltiostreamgt"></a>&lt;iostream&gt;
 
-Okuma ve yazma için standart akışlarına denetim nesnesi bildirir. Bu genellikle giriş ve çıkış bir C++ programı gerçekleştirmek için eklemeniz gereken yalnızca üst bilgi olur.
+Okuma ve yazma için standart akışlarına denetim nesnesi bildirir. Şunlar genellikle yalnızca üst bilgi, girdi ve çıktı için ihtiyacınız olan bir C++ program.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -31,19 +31,22 @@ Okuma ve yazma için standart akışlarına denetim nesnesi bildirir. Bu genelli
 #include <iostream>
 ```
 
+> [!NOTE]
+> \<İostream > kitaplığını kullanan `#include <ios>`, `#include <streambuf>`, `#include <istream>`, ve `#include <ostream>` deyimleri.
+
 ## <a name="remarks"></a>Açıklamalar
 
 Nesneleri ikiye ayrılır:
 
-- [cin](#cin), [cout](#cout), [cerr](#cerr), ve [clog](#clog) olan yönelik, bayt geleneksel bir kerede bir bayt aktarımları gerçekleştiriliyor.
+- [cin](#cin), [cout](#cout), [cerr](#cerr), ve [clog](#clog) olan geleneksel bir kerede bir bayt aktarımları yapılırken yönelik, bayt.
 
 - [wcin](#wcin), [wcout](#wcout), [wcerr](#wcerr), ve [wclog](#wclog) program dahili olarak yöneten geniş karakterler gelen ve giden çevirme geniş, yerleştirilir.
 
-Standart giriş gibi bir akış üzerinde belirli işlemlerin gerçekleştirilmesi sonra aynı akışta farklı yön ayarına işlemleri gerçekleştiremezsiniz. Bu nedenle, bir program birbirinin yerine hem de çalışamaz [cin](#cin) ve [wcin](#wcin), örneğin.
+Standart giriş gibi bir akış üzerinde belirli işlemlerin yaptıktan sonra aynı akışta farklı yön ayarına işlemleri yapamazsınız. Bu nedenle, bir program birbirinin yerine hem de çalışamaz [cin](#cin) ve [wcin](#wcin), örneğin.
 
-Tüm nesneleri bildirilen bu üst bilgi paylaşımına özgü bir özellik — bunlar oluşturulması, tanımlayın, içeren bir çeviri biriminde herhangi bir statik nesne önce varsayabilirsiniz \<iostream >. Eşit şekilde, bu nesneler için tanımladığınız gibi statik nesnelerin yok ediciler önce yok edilmez varsayabilirsiniz. (Çıkış akışları ancak program sonlandırma sırasında temizlenir.) Bu nedenle, güvenli bir şekilde okuyabilir ya da önce program başlatma ve program sonlandırma sonra standart akışlara yazma.
+Tüm nesneleri bildirilen bu üst bilgi paylaşımına özgü bir özellik — bunlar oluşturulmuş tanımladığınız içeren bir çeviri biriminde herhangi bir statik nesne önce varsayabilirsiniz \<iostream >. Eşit şekilde, bu nesneler için tanımladığınız gibi statik nesnelerin yok ediciler önce yok olmayan varsayabilirsiniz. (Çıkış akışları ancak program sonlandırma sırasında temizlenir.) Bu nedenle, güvenli bir şekilde okuyabilir ya da önce program başlatma ve program sonlandırma sonra standart akışlara yazma.
 
-Bu garanti ancak universal, değildir. Statik Oluşturucu başka bir çeviri biriminde bir işlevi çağırabilir. Çağrılan işlev bu üstbilgisinde bildirilen nesneler, hangi çeviri birimleri statik oluşturma, katılmak belirsiz sırasını verilen yapılandırılmış olduğunu varsayamazsınız. Bu nesneler bu tür bir bağlamda kullanmak için önce sınıfın bir nesnesi oluşturmalıdır [ios_base::Init](../standard-library/ios-base-class.md#init).
+Ancak bu garanti universal, değildir. Statik Oluşturucu başka bir çeviri biriminde bir işlevi çağırabilir. Çağrılan işlev bu üstbilgisinde bildirilen nesneler, hangi çeviri birimleri statik oluşturma, katılmak belirsiz sırasını verilen yapılandırılmış olduğunu varsayamazsınız. Bu nesneler bu tür bir bağlamda kullanmak için önce sınıfın bir nesnesi oluşturmalıdır [ios_base::Init](../standard-library/ios-base-class.md#init).
 
 ### <a name="global-stream-objects"></a>Genel Stream nesneleri
 
@@ -58,7 +61,7 @@ Bu garanti ancak universal, değildir. Statik Oluşturucu başka bir çeviri bir
 |[wclog](#wclog)|Belirtir `wclog` genel akışı.|
 |[wcout](#wcout)|Belirtir `wcout` genel akışı.|
 
-###  <a name="cerr"></a>  cerr
+###  <a name="cerr"></a> cerr
 
 Nesne `cerr` nesnesiyle ilişkili bir akış arabelleğinin çıktısına denetimleri `stderr`bildirilen \<cstdio >.
 
@@ -104,7 +107,7 @@ int main( )
 }
 ```
 
-###  <a name="cin"></a>  cin
+###  <a name="cin"></a> cin
 
 Belirtir `cin` genel akışı.
 
@@ -122,7 +125,7 @@ Nesne ayıklamalar standart girişten alınan bayt akışı olarak denetler. Nes
 
 #### <a name="example"></a>Örnek
 
-Bu örnekte, `cin` sayısal olmayan karakterler karşılaştığında akışta bit başarısız ayarlar. Program başarısız bit temizler ve devam etmek için akışından geçersiz karakteri kaldırır.
+Bu örnekte, `cin` sayısal olmayan karakterler arasında geldiğinde akışta bit başarısız ayarlar. Program başarısız bit temizler ve devam etmek için akışından geçersiz karakteri kaldırır.
 
 ```cpp
 // iostream_cin.cpp
@@ -152,11 +155,10 @@ int main()
 ```
 
 ```Output
-
 2
 ```
 
-###  <a name="clog"></a>  clog
+###  <a name="clog"></a> clog
 
 Belirtir `clog` genel akışı.
 
@@ -176,7 +178,7 @@ Nesne denetimleri, bayt akışı olarak standart hata çıktısı eklemelerin ar
 
 Bkz: [cerr](#cerr) kullanma örneği için `clog`.
 
-###  <a name="cout"></a>  cout
+###  <a name="cout"></a> cout
 
 Belirtir `cout` genel akışı.
 
@@ -196,7 +198,7 @@ Nesne eklemeler standart çıktıya bayt akışı olarak denetler.
 
 Bkz: [cerr](#cerr) kullanma örneği için `cout`.
 
-###  <a name="wcerr"></a>  wcerr
+### <a name="wcerr"></a> wcerr
 
 Belirtir `wcerr` genel akışı.
 
@@ -216,7 +218,7 @@ Nesnesi, geniş bir akış olarak standart hata çıktısı arabellekten çıkar
 
 Bkz: [cerr](#cerr) kullanma örneği için `wcerr`.
 
-###  <a name="wcin"></a>  wcin
+### <a name="wcin"></a> wcin
 
 Belirtir `wcin` genel akışı.
 
@@ -236,7 +238,7 @@ Nesne ayıklamalar standart girişten alınan geniş bir akış olarak denetler.
 
 Bkz: [cerr](#cerr) kullanma örneği için `wcin`.
 
-###  <a name="wclog"></a>  wclog
+### <a name="wclog"></a> wclog
 
 Belirtir `wclog` genel akışı.
 
@@ -256,7 +258,7 @@ Nesne denetimleri, geniş bir akış olarak standart hata çıktısı eklemeleri
 
 Bkz: [cerr](#cerr) kullanma örneği için `wclog`.
 
-###  <a name="wcout"></a>  wcout
+### <a name="wcout"></a> wcout
 
 Belirtir `wcout` genel akışı.
 
@@ -279,10 +281,9 @@ Bkz: [cerr](#cerr) kullanma örneği için `wcout`.
 `CString` içinde örnekler bir `wcout` deyimi cast, için `const wchar_t*`, aşağıdaki örnekte gösterildiği gibi.
 
 ```
+CString cs("meow");
 
-    CString cs("meow");
-
-    wcout <<(const wchar_t*) cs <<endl;
+wcout <<(const wchar_t*) cs <<endl;
 ```
 
 Daha fazla bilgi için [temel CString işlemleri](../atl-mfc-shared/basic-cstring-operations.md).

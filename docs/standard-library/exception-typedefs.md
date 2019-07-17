@@ -6,18 +6,14 @@ f1_keywords:
 - exception/std::terminate_handler
 - exception/std::unexpected_handler
 ms.assetid: 2a338480-35e2-46f7-b223-52d4e84a5768
-ms.openlocfilehash: 98a7e8197a0d729ab3a4e9ec0daf55a28cdaeb2d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e3904393096422a8986414a253d515342c7382f0
+ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62412650"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68246039"
 ---
 # <a name="ltexceptiongt-typedefs"></a>&lt;özel durum&gt; tür tanımları
-
-||||
-|-|-|-|
-|[exception_ptr](#exception_ptr)|[terminate_handler](#terminate_handler)|[unexpected_handler](#unexpected_handler)|
 
 ## <a name="exception_ptr"></a>  exception_ptr
 
@@ -43,7 +39,7 @@ Adına rağmen bir `exception_ptr` nesnesinin kendisi bir işaretçi değildir. 
 
 Eşit kullanabilirsiniz ( `==`) ve eşit değil ( `!=`) karşılaştırmak için işleçleri `exception_ptr` nesneleri. İşleçler ikili değerini (bit deseni) karşılaştırın değil `EXCEPTION_RECORD` özel durumları temsil eden yapılar. Bunun yerine, işleçler özel durum başvuru alanlarındaki adresleri karşılaştırır `exception_ptr` nesneleri. Sonuç olarak, bir null `exception_ptr` ve NULL değeri eşit olarak karşılaştırılır.
 
-## <a name="terminate_handler"></a>  terminate_handler
+## <a name="terminate_handler"></a> terminate_handler
 
 Türü olarak kullanmak için uygun bir işleve işaretçi tanımlayan bir `terminate_handler`.
 
@@ -59,7 +55,7 @@ Sonlandırıcı işleyici olarak kullanım için bir işleve işaretçi tanımla
 
 Bkz: [set_terminate](../standard-library/exception-functions.md#set_terminate) kullanımına ilişkin bir örnek `terminate_handler`.
 
-## <a name="unexpected_handler"></a>  unexpected_handler
+## <a name="unexpected_handler"></a> unexpected_handler
 
 Türü olarak kullanmak için uygun bir işleve işaretçi tanımlayan bir `unexpected_handler`.
 
@@ -70,7 +66,3 @@ typedef void (*unexpected_handler)();
 ### <a name="example"></a>Örnek
 
 Bkz: [set_unexpected](../standard-library/exception-functions.md#set_unexpected) kullanımına ilişkin bir örnek `unexpected_handler`.
-
-## <a name="see-also"></a>Ayrıca bkz.
-
-[\<Özel Durum >](../standard-library/exception.md)<br/>

@@ -8,12 +8,12 @@ helpviewer_keywords:
 - C++ Standard Library, algorithms
 - <algorithm> header
 ms.assetid: 19f97711-7a67-4a65-8fd1-9a2bd3ca327d
-ms.openlocfilehash: 042523cddf640e7cf6fd7f9a1dac9f3adbc360b6
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 36dfca8418cbbabd7dcfb30b2cece483406a5667
+ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62411155"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68245950"
 ---
 # <a name="ltalgorithmgt"></a>&lt;Algoritması&gt;
 
@@ -24,6 +24,9 @@ Algoritmalar gerçekleştiren C++ Standart Kitaplığı kapsayıcı şablon işl
 ```cpp
 (see relevant links below for specific algorithm syntax)
 ```
+
+> [!NOTE]
+> \<Algoritma > Kitaplığı'nı da kullanan `#include <initializer_list>` deyimi.
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -43,12 +46,13 @@ Sayısal işlemler için sağlanan C++ Standart Kitaplığı sayısal algoritmal
 
 ### <a name="function-templates"></a>İşlev şablonları
 
-|İşlev şablonu|Açıklama|
+|||
 |-|-|
 |[adjacent_find](../standard-library/algorithm-functions.md#adjacent_find)|Eşit ya da belirli bir koşulu karşılayan iki bitişik öğeyi arar.|
 |[all_of](../standard-library/algorithm-functions.md#all_of)|Döndürür **true** koşul olduğunda verilen aralıktaki her bir öğede yok.|
 |[any_of](../standard-library/algorithm-functions.md#any_of)|Döndürür **true** koşul olduğunda en az bir kez öğelerin belirtilen aralığında mevcut.|
 |[binary_search](../standard-library/algorithm-functions.md#binary_search)|Belirtilen değere eşit sıralanmış bir aralıkta bir öğe olup olmadığını ya da bir ikili koşula göre belirtilen anlamda ona eşdeğer bir öğe olup olmadığını sınar.|
+|[CLAMP](../standard-library/algorithm-functions.md#clamp)||
 |[kopyalama](../standard-library/algorithm-functions.md#copy)|Bir kaynak aralığındaki öğe değerlerini bir hedef aralığına atayarak, öğelerin kaynak sırası boyunca yineler ve bunları yeni konumlarına ileri yönde atar.|
 |[copy_backward](../standard-library/algorithm-functions.md#copy_backward)|Bir kaynak aralığındaki öğe değerlerini bir hedef aralığına atayarak, öğelerin kaynak sırası boyunca yineler ve bunları yeni konumlarına geri yönde atar.|
 |[copy_if](../standard-library/algorithm-functions.md#copy_if)|Test verili bir aralıktaki tüm öğeleri Kopyala **true** belirtilen bir koşul için|
@@ -65,6 +69,7 @@ Sayısal işlemler için sağlanan C++ Standart Kitaplığı sayısal algoritmal
 |[find_if](../standard-library/algorithm-functions.md#find_if)|Bir öğenin belirli bir koşulu karşıladığı aralıktaki ilk geçtiği konumu bulur.|
 |[find_if_not](../standard-library/algorithm-functions.md#find_if_not)|Bir koşulu karşılamayan belirtilen aralıktaki ilk öğeyi döndürür.|
 |[for_each](../standard-library/algorithm-functions.md#for_each)|Bir aralıktaki ileriye doğru sıradaki her öğeye belirli bir işlev uygular ve işlev nesnesini döndürür.|
+|[for_each_n](../standard-library/algorithm-functions.md#for_each_n)||
 |[Oluştur](../standard-library/algorithm-functions.md#generate)|Bir işlev nesnesi tarafından oluşturulan değerleri bir aralıktaki her öğeye atar.|
 |[generate_n](../standard-library/algorithm-functions.md#generate_n)|Bir işlev nesnesi tarafından oluşturulan değerleri bir aralıktaki belirtilen öğe sayısına atar ve birinin son atanan değere geçirdiği konuma döner.|
 |[içerir](../standard-library/algorithm-functions.md#includes)|Sıralanmış bir aralığın ikinci bir sıralanmış aralıkta kapsanan tüm öğeleri içerip içermediğini sınar, burada öğeler arasındaki sıralama veya denklik ölçütü bir ikili koşula göre belirlenebilir.|
@@ -113,6 +118,7 @@ Sayısal işlemler için sağlanan C++ Standart Kitaplığı sayısal algoritmal
 |[reverse_copy](../standard-library/algorithm-functions.md#reverse_copy)|Bir hedef aralığına kopyalanırken bir kaynak aralığındaki öğelerin sırasını tersine çevirir|
 |[Döndürme](../standard-library/algorithm-functions.md#rotate)|İki bitişik aralık içindeki öğeleri birbiriyle değiştirir.|
 |[rotate_copy](../standard-library/algorithm-functions.md#rotate_copy)|Bir kaynak aralık içindeki iki bitişik aralıktaki öğeleri birbiriyle değiştirir ve sonucu bir hedef aralığına kopyalar.|
+|[Örnek](../standard-library/algorithm-functions.md#sample)||
 |[Arama](../standard-library/algorithm-functions.md#search)|Öğeleri verili bir öğe dizisi içindekilerle eşit olan veya öğeleri verili bir dizi öğe için ikili bir koşula göre belirtildiği şekilde denk olan bir hedef aralığındaki dizinin ilk geçtiği yeri arar.|
 |[search_n](../standard-library/algorithm-functions.md#search_n)|Belirli bir değere veya ikili bir koşula göre belirtilen değerle bir ilişkiye sahip olan öğelerin belirli bir sayısının aralığındaki ilk diziyi arar.|
 |[set_difference](../standard-library/algorithm-functions.md#set_difference)|Sıralanmış ikinci bir kaynak aralığına sahip olanları değil, sıralanmış bir kaynak aralığına sahip öğelerin tümünü tek, sıralanmış bir hedef aralığı içinde birleştirir, burada sıralama ölçütü ikili bir koşula göre belirtilebilir.|

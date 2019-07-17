@@ -4,23 +4,16 @@ ms.date: 11/04/2016
 f1_keywords:
 - chrono/std::operator modulo
 ms.assetid: c5a19267-4684-40c1-b7a9-cc1012b058f3
-ms.openlocfilehash: d86fbf15313c25dd28b9220c654750ee8bc96d81
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 398e2429c38cffb454c7b510aa5ab44fbe4cfef6
+ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62279079"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68244884"
 ---
 # <a name="ltchronogt-operators"></a>&lt;chrono&gt; işleçleri
 
-||||
-|-|-|-|
-|[mod işleci](#op_modulo)|[operator!=](#op_neq)|[İşleci&gt;](#op_gt)|
-|[İşleci&gt;=](#op_gt_eq)|[İşleci&lt;](#op_lt)|[İşleci&lt;=](#op_lt_eq)|
-|[operator *](#op_star)|[operator +](#op_add)|[operator-](#operator-)|
-|[operator /](#op_div)|[operator==](#op_eq_eq)|
-
-## <a name="operator-"></a>  operator-
+## <a name="operator-"></a> operator-
 
 Veya negation işleci [süresi](../standard-library/duration-class.md) ve [time_point](../standard-library/time-point-class.md) nesneleri.
 
@@ -46,16 +39,16 @@ constexpr typename common_type<Duration1, Duration2>::type
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*<br/>
+*Sol*\
 Sol `duration` veya `time_point` nesne.
 
-*sağ*<br/>
+*sağ*\
 Sağa `duration` veya `time_point` nesne.
 
-*saat*<br/>
+*saat*\
 A `time_point` nesne.
 
-*Süre*<br/>
+*Süre*\
 A `duration` nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -66,7 +59,7 @@ A `duration` nesne.
 
 Üçüncü işlevi döndürür bir `duration` arasındaki zaman aralığını temsil eden nesne *sol* ve *sağ*.
 
-## <a name="op_neq"></a>  işleç! =
+## <a name="op_neq"></a> işleç! =
 
 Eşitsizlik işleci için [süresi](../standard-library/duration-class.md) veya [time_point](../standard-library/time-point-class.md) nesneleri.
 
@@ -84,17 +77,17 @@ constexpr bool operator!=(
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*<br/>
+*Sol*\
 Sol `duration` veya `time_point` nesne.
 
-*sağ*<br/>
+*sağ*\
 Sağa `duration` veya `time_point` nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 Her işlev `!(Left == Right)`.
 
-## <a name="op_star"></a>  operator *
+## <a name="op_star"></a> operator *
 
 Çarpma işleci için [süresi](../standard-library/chrono-operators.md#op_star) nesneleri.
 
@@ -115,10 +108,10 @@ constexpr duration<typename common_type<Rep1, Rep2>::type, Period2>
 
 ### <a name="parameters"></a>Parametreler
 
-*Süre*<br/>
+*Süre*\
 A `duration` nesne.
 
-*Mult*<br/>
+*Mult*\
 Bir tamsayı değeri.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -129,7 +122,7 @@ Sürece `is_convertible<Rep2, common_type<Rep1, Rep2>>` *korumadıkça*, ilk iş
 
 Sürece `is_convertible<Rep1, common_type<Rep1, Rep2>>` *korumadıkça*, ikinci işlev aşırı yükleme çözünürlüğü içinde yer almaz. Daha fazla bilgi için [< type_traits >](../standard-library/type-traits.md).
 
-## <a name="op_div"></a>  operator /
+## <a name="op_div"></a> operator /
 
 Bölme işleci için [süresi](../standard-library/chrono-operators.md#op_star) nesneleri.
 
@@ -149,16 +142,16 @@ constexpr typename common_type<Rep1, Rep2>::type
 
 ### <a name="parameters"></a>Parametreler
 
-*Süre*<br/>
+*Süre*\
 A `duration` nesne.
 
-*div*<br/>
+*div*\
 Bir tamsayı değeri.
 
-*Sol*<br/>
+*Sol*\
 Sol `duration` nesne.
 
-*sağ*<br/>
+*sağ*\
 Sağa `duration` nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -169,7 +162,7 @@ Sağa `duration` nesne.
 
 Sürece `is_convertible<Rep2, common_type<Rep1, Rep2>>` *korumadıkça*, ve `Rep2` örneklemesi değil `duration`, ilk operatör aşırı yükleme çözünürlüğü içinde yer almaz. Daha fazla bilgi için [< type_traits >](../standard-library/type-traits.md).
 
-## <a name="op_add"></a>  operator +
+## <a name="op_add"></a> operator +
 
 Ekler [süresi](../standard-library/duration-class.md) ve [time_point](../standard-library/time-point-class.md) nesneleri.
 
@@ -195,16 +188,16 @@ time_point<Clock, constexpr typename common_type<duration<Rep1, Period1>, Durati
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*<br/>
+*Sol*\
 Sol `duration` veya `time_point` nesne.
 
-*sağ*<br/>
+*sağ*\
 Sağa `duration` veya `time_point` nesne.
 
-*saat*<br/>
+*saat*\
 A `time_point` nesne.
 
-*Süre*<br/>
+*Süre*\
 A `duration` nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -213,7 +206,7 @@ A `duration` nesne.
 
 İkinci ve üçüncü işlevler döndürür bir `time_point` zamanında, aralığa göre değişmiş olan zamanda bir noktayı temsil eden bir nesne *süre*, zaman içerisinde bir noktadan *zaman*.
 
-## <a name="op_lt"></a>  İşleci&lt;
+## <a name="op_lt"></a> İşleci&lt;
 
 Az olup olmadığını belirler [süresi](../standard-library/duration-class.md) veya [time_point](../standard-library/time-point-class.md) nesnedir daha az `duration` veya `time_point` nesne.
 
@@ -231,10 +224,10 @@ constexpr bool operator<(
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*<br/>
+*Sol*\
 Sol `duration` veya `time_point` nesne.
 
-*sağ*<br/>
+*sağ*\
 Sağa `duration` veya `time_point` nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -243,7 +236,7 @@ Sağa `duration` veya `time_point` nesne.
 
 İkinci işlevi döndürür **true** varsa *sol* önündeki *sağ*. Aksi halde, işlev döndürür **false**.
 
-## <a name="op_lt_eq"></a>  İşleci&lt;=
+## <a name="op_lt_eq"></a> İşleci&lt;=
 
 Az olup olmadığını belirler [süresi](../standard-library/duration-class.md) veya [time_point](../standard-library/time-point-class.md) nesnedir küçüktür veya eşittir diğerine `duration` veya `time_point` nesne.
 
@@ -261,17 +254,17 @@ constexpr bool operator<=(
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*<br/>
+*Sol*\
 Sol `duration` veya `time_point` nesne.
 
-*sağ*<br/>
+*sağ*\
 Sağa `duration` veya `time_point` nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 Her işlev `!(Right < Left)`.
 
-## <a name="op_eq_eq"></a>  işleç ==
+## <a name="op_eq_eq"></a> işleç ==
 
 İki olup olmadığını belirler `duration` nesneleri aynı uzunluğa sahip zaman aralıklarını temsil etmek veya iki olduğunu `time_point` nesneleri zaman içinde aynı noktaya temsil eder.
 
@@ -289,10 +282,10 @@ constexpr bool operator==(
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*<br/>
+*Sol*\
 Sol `duration` veya `time_point` nesne.
 
-*sağ*<br/>
+*sağ*\
 Sağa `duration` veya `time_point` nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -301,7 +294,7 @@ Sağa `duration` veya `time_point` nesne.
 
 İkinci işlevi döndürür **true** varsa *sol* ve *sağ* zaman içinde aynı noktaya temsil eder. Aksi halde, işlev döndürür **false**.
 
-## <a name="op_gt"></a>  İşleci&gt;
+## <a name="op_gt"></a> İşleci&gt;
 
 Az olup olmadığını belirler [süresi](../standard-library/duration-class.md) veya [time_point](../standard-library/time-point-class.md) nesnedir diğerinden daha büyük `duration` veya `time_point` nesne.
 
@@ -319,17 +312,17 @@ constexpr bool operator>(
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*<br/>
+*Sol*\
 Sol `duration` veya `time_point` nesne.
 
-*sağ*<br/>
+*sağ*\
 Sağa `duration` veya `time_point` nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 Her işlev `Right < Left`.
 
-## <a name="op_gt_eq"></a>  İşleci&gt;=
+## <a name="op_gt_eq"></a> İşleci&gt;=
 
 Az olup olmadığını belirler [süresi](../standard-library/duration-class.md) veya [time_point](../standard-library/time-point-class.md) nesnedir büyüktür veya eşittir diğerine `duration` veya `time_point` nesne.
 
@@ -347,17 +340,17 @@ constexpr bool operator>=(
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*<br/>
+*Sol*\
 Sol `duration` veya `time_point` nesne.
 
-*sağ*<br/>
+*sağ*\
 Sağa `duration` veya `time_point` nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 Her işlev `!(Left < Right)`.
 
-## <a name="op_modulo"></a>  mod işleci
+## <a name="op_modulo"></a> mod işleci
 
 Modül işlemleri için işleç [süresi](../standard-library/duration-class.md) nesneleri.
 
@@ -377,16 +370,16 @@ constexpr typename common_type<duration<Rep1, _Period1>, duration<Rep2, Period2>
 
 ### <a name="parameters"></a>Parametreler
 
-*Süre*<br/>
+*Süre*\
 A `duration` nesne.
 
-*div*<br/>
+*div*\
 Bir tamsayı değeri.
 
-*Sol*<br/>
+*Sol*\
 Sol `duration` nesne.
 
-*sağ*<br/>
+*sağ*\
 Sağa `duration` nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -394,7 +387,3 @@ Sağa `duration` nesne.
 İşlev bir `duration` aralığına nesne *süre* modül *Div*.
 
 İkinci işlevi temsil eden bir değer döndürür *sol* modül *sağ*.
-
-## <a name="see-also"></a>Ayrıca bkz.
-
-[\<chrono >](../standard-library/chrono.md)<br/>

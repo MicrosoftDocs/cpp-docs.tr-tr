@@ -6,22 +6,25 @@ f1_keywords:
 helpviewer_keywords:
 - map header
 ms.assetid: bbf76680-7362-456e-88fa-ecda93561b6a
-ms.openlocfilehash: 0ea47a28599df543987831ee13a2c645f72a0113
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 96ca19b2562c3f145555c3c1b1d8db4fc700ed91
+ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62413001"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68243320"
 ---
 # <a name="ltmapgt"></a>&lt;Harita&gt;
 
 Kapsayıcı şablon sınıfları harita ve multimap ve kendi destek şablonları tanımlar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="requirements"></a>Gereksinimler
 
-```cpp
-#include <map>
-```
+**Başlık:** \<harita >
+
+**Namespace:** std
+
+> [!NOTE]
+> \<Harita > Kitaplığı'nı da kullanan `#include <initializer_list>` deyimi.
 
 ## <a name="members"></a>Üyeler
 
@@ -44,7 +47,7 @@ Kapsayıcı şablon sınıfları harita ve multimap ve kendi destek şablonları
 
 ### <a name="classes"></a>Sınıflar
 
-|örneği|Açıklama|
+|||
 |-|-|
 |[value_compare Sınıfı](../standard-library/value-compare-class-map.md)|Bir eşlemin öğelerini haritadaki kendi göreli sıralarını belirlemek için anahtarlarına değerlerini karşılaştırarak karşılaştıran bir işlev nesnesi sağlar.|
 |[map Sınıfı](../standard-library/map-class.md)|Öğelerin her biri benzersiz bir anahtar ile verilerin otomatik sıralamasına sahip bir koleksiyondaki verileri alma ve depolama için kullanılır.|

@@ -14,12 +14,12 @@ f1_keywords:
 - xmemory0/std::pointer_traits::rebind
 - memory/std::pointer_traits::pointer_to
 ms.assetid: 545aecf1-3561-4859-8b34-603c079fe1b3
-ms.openlocfilehash: b661d4b36ce48a08faba6638c5114f3f4e6981a6
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 109e51ad9eba54f31b90da9b8b85bec105c7dce6
+ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62370391"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68240417"
 ---
 # <a name="pointertraits-struct"></a>pointer_traits Yapısı
 
@@ -29,7 +29,7 @@ ms.locfileid: "62370391"
 
 ```cpp
 template <class Ptr>
-struct pointer_traits;
+    struct pointer_traits;
 ```
 
 ## <a name="remarks"></a>Açıklamalar
@@ -38,30 +38,31 @@ PTR, bir ham işaretçi türü olabilir `Ty *` veya aşağıdaki özelliklere sa
 
 ```cpp
 struct Ptr
-   { // describes a pointer type usable by allocators
+{ // describes a pointer type usable by allocators
    typedef Ptr pointer;
    typedef T1 element_type; // optional
    typedef T2 difference_type; // optional
    template <class Other>
    using rebind = typename Ptr<Other, Rest...>; // optional
-   static pointer pointer_to(element_type& obj);
-   // optional
-   };
+   static pointer pointer_to(element_type& obj); // optional
+};
 ```
+
+## <a name="members"></a>Üyeler
 
 ### <a name="typedefs"></a>Tür tanımları
 
-|Ad|Açıklama|
-|----------|-----------------|
+|||
+|-|-|
 |`typedef T2 difference_type`|Türü `T2` olduğu `Ptr::difference_type` türü varsa, aksi takdirde, `ptrdiff_t`. Varsa `Ptr` ham bir işaretçi türü `ptrdiff_t`.|
 |`typedef T1 element_type`|Türü `T1` olduğu `Ptr::element_type` türü varsa, aksi takdirde, `Ty`. Varsa `Ptr` ham bir işaretçi türü `Ty`.|
 |`typedef Ptr pointer`|Türü `Ptr`.|
 
 ### <a name="structs"></a>Yapılar
 
-|Ad|Açıklama|
-|----------|-----------------|
-|`pointer_traits::rebind`|Temel alınan işaretçiye dönüştürmek için girişimleri için belirtilen bir türün yazın.|
+|||
+|-|-|
+|`rebind`|Temel alınan işaretçiye dönüştürmek için girişimleri için belirtilen bir türün yazın.|
 
 ### <a name="methods"></a>Yöntemler
 
@@ -69,21 +70,10 @@ struct Ptr
 |----------|-----------------|
 |[pointer_to](#pointer_to)|Rastgele bir başvuru sınıfının bir nesnesi için dönüştürür `Ptr`.|
 
-## <a name="requirements"></a>Gereksinimler
-
-**Başlık:** \<bellek >
-
-**Namespace:** std
-
-## <a name="pointer_to"></a>  pointer_to
+### <a name="pointer_to"></a> pointer_to
 
 Döndüren statik yöntem `Ptr::pointer_to(obj)`, bu işlev zaten varsa. Aksi takdirde, rastgele bir başvuru sınıfının bir nesnesi için dönüştürülmesi mümkün değil `Ptr`. Varsa `Ptr` bu yöntemi döndürür bir ham işaretçi olan `addressof(obj)`.
 
 ```cpp
 static pointer pointer_to(element_type& obj);
 ```
-
-## <a name="see-also"></a>Ayrıca bkz.
-
-[\<bellek >](../standard-library/memory.md)<br/>
-[allocator_traits Sınıfı](../standard-library/allocator-traits-class.md)<br/>

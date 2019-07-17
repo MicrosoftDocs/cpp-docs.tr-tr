@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - const_mem_fun_ref_t class
 ms.assetid: 316ddbaa-9f46-4931-8eba-ea4ca66360ef
-ms.openlocfilehash: 16025764cdcf28900c30ef53dced871998f8bd07
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 7e208364e2cac0e0d4e020dc865b299fbd2bde2c
+ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62212059"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68244559"
 ---
 # <a name="constmemfunreft-class"></a>const_mem_fun_ref_t Sınıfı
 
@@ -21,7 +21,7 @@ ms.locfileid: "62212059"
 
 ```cpp
 template <class Result, class Type>
-class const_mem_fun_ref_t
+    class const_mem_fun_ref_t
 : public unary_function<Type, Result>
 {
     explicit const_mem_fun_t(Result (Type::* Pm)() const);
@@ -31,10 +31,10 @@ class const_mem_fun_ref_t
 
 ### <a name="parameters"></a>Parametreler
 
-*PM*<br/>
+*PM*\
 Bir sınıfın üye işlevi işaretçisi `Type` bir işlev nesnesi için dönüştürülecek.
 
-*Sol*<br/>
+*Sol*\
 Nesne, *Pm* üye işlevi çağrılır.
 
 ## <a name="return-value"></a>Dönüş Değeri
@@ -43,19 +43,8 @@ Bir uyarlanabilir birli işlevi.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Şablon sınıfı bir kopyasını depolar *Pm*, bir sınıfın bir üye işlevi işaretçisi olmalıdır `Type`, özel üye nesnesinde. Onun üye işlevini tanımlar `operator()` döndüren olarak ( **sol**.\* `Pm`) () **const**.
+Şablon sınıfı bir kopyasını depolar *Pm*, bir sınıfın bir üye işlevi işaretçisi olmalıdır `Type`, özel üye nesnesinde. Onun üye işlevini tanımlar `operator()` döndüren olarak (**sol**.\* `Pm`) () **const**.
 
 ## <a name="example"></a>Örnek
 
 Oluşturucusuna `const_mem_fun_ref_t` genellikle kullanılmaz doğrudan; yardımcı işlevini `mem_fun_ref` üye işlevleri uyum sağlamak için kullanılır. Bkz: [mem_fun_ref](../standard-library/functional-functions.md#mem_fun_ref) üye işlevi bağdaştırıcıları kullanmayı gösteren bir örnek.
-
-## <a name="requirements"></a>Gereksinimler
-
-**Başlık:** \<işlev >
-
-**Namespace:** std
-
-## <a name="see-also"></a>Ayrıca bkz.
-
-[C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
-[C++ Standart Kitaplığı Başvurusu](../standard-library/cpp-standard-library-reference.md)<br/>

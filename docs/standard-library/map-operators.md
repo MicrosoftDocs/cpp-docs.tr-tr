@@ -16,21 +16,14 @@ helpviewer_keywords:
 - std::operator&lt; (map)
 - std::operator&lt;= (map)
 - std::operator== (map)
-ms.openlocfilehash: b6d2ac108652e33fdd76abaac9b982840d4fce7f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e05aca75f527e1bc78912ab6b4b5a9de6dcd54c5
+ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62413027"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68246417"
 ---
 # <a name="ltmapgt-operators"></a>&lt;Harita&gt; işleçleri
-
-||||
-|-|-|-|
-|[operator!=](#op_neq)|[İşleci&gt;](#op_gt)|[İşleci&gt;=](#op_gt_eq)|
-|[İşleci&lt;](#op_lt)|[İşleci&lt;=](#op_lt_eq)|[operator==](#op_eq_eq)|
-|[işleç! = (multimap)](#op_neq_multimap)|[İşleç&gt; (multimap)](#op_gt_multimap)|[İşleç&gt;= (multimap)](#op_gt_eq_multimap)|
-|[İşleç&lt; (multimap)](#op_lt_multimap)|[İşleç&lt;= (multimap)](#op_lt_eq_multimap)|[işleç == (multimap)](#op_eq_eq_multimap)|
 
 ## <a name="op_neq"></a>  işleç! =
 
@@ -44,10 +37,10 @@ bool operator!=(
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*<br/>
+*Sol*\
 Bir nesne türü `map`.
 
-*sağ*<br/>
+*sağ*\
 Bir nesne türü `map`.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -90,13 +83,14 @@ int main( )
    else
       cout << "The maps m1 and m3 are equal." << endl;
 }
-/* Output:
-The maps m1 and m2 are not equal.
-The maps m1 and m3 are equal.
-*/
 ```
 
-## <a name="op_lt"></a>  İşleci&lt;
+```Output
+The maps m1 and m2 are not equal.
+The maps m1 and m3 are equal.
+```
+
+## <a name="op_lt"></a> İşleci&lt;
 
 İşlecin sol tarafındaki harita nesne eşleme nesnesinin işlecin sağ tarafındaki küçüktür olup olmadığını sınar.
 
@@ -108,10 +102,10 @@ bool operator<(
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*<br/>
+*Sol*\
 Bir nesne türü `map`.
 
-*sağ*<br/>
+*sağ*\
 Bir nesne türü `map`.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -154,13 +148,14 @@ int main( )
    else
       cout << "The map m1 is not less than the map m3." << endl;
 }
-/* Output:
-The map m1 is less than the map m2.
-The map m1 is not less than the map m3.
-*/
 ```
 
-## <a name="op_lt_eq"></a>  İşleci&lt;=
+```Output
+The map m1 is less than the map m2.
+The map m1 is not less than the map m3.
+```
+
+## <a name="op_lt_eq"></a> İşleci&lt;=
 
 Harita işlecinin sol tarafında nesne küçük olup olmadığını sınar eşlem nesnesine eşit veya işlecin sağ tarafındaki.
 
@@ -172,10 +167,10 @@ bool operator<=(
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*<br/>
+*Sol*\
 Bir nesne türü `map`.
 
-*sağ*<br/>
+*sağ*\
 Bir nesne türü `map`.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -220,14 +215,15 @@ int main( )
    else
       cout << "The map m1 is greater than the map m4." << endl;
 }
-/* Output:
+```
+
+```Output
 The map m1 is less than or equal to the map m2.
 The map m1 is greater than the map m3.
 The map m1 is less than or equal to the map m4.
-*/
 ```
 
-## <a name="op_eq_eq"></a>  işleç ==
+## <a name="op_eq_eq"></a> işleç ==
 
 İşlecin sol tarafındaki eşleme nesnesinin işlecin sağ tarafındaki eşleme nesnesine eşit olup olmadığını sınar.
 
@@ -239,10 +235,10 @@ bool operator==(
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*<br/>
+*Sol*\
 Bir nesne türü `map`.
 
-*sağ*<br/>
+*sağ*\
 Bir nesne türü `map`.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -285,13 +281,14 @@ int main( )
    else
       cout << "The maps m1 and m3 are not equal." << endl;
 }
-/* Output:
-The maps m1 and m2 are not equal.
-The maps m1 and m3 are equal.
-*/
 ```
 
-## <a name="op_gt"></a>  İşleci&gt;
+```Output
+The maps m1 and m2 are not equal.
+The maps m1 and m3 are equal.
+```
+
+## <a name="op_gt"></a> İşleci&gt;
 
 İşlecin sol tarafındaki harita nesne eşleme nesnesinin işlecin sağ tarafındaki büyük olup olmadığını sınar.
 
@@ -303,10 +300,10 @@ bool operator>(
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*<br/>
+*Sol*\
 Bir nesne türü `map`.
 
-*sağ*<br/>
+*sağ*\
 Bir nesne türü `map`.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -367,10 +364,10 @@ bool operator>=(
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*<br/>
+*Sol*\
 Bir nesne türü `map`.
 
-*sağ*<br/>
+*sağ*\
 Bir nesne türü `map`.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -415,14 +412,15 @@ int main( )
    else
       cout << "The map m1 is less than the map m4." << endl;
 }
-/* Output:
+```
+
+```Output
 The map m1 is less than the map m2.
 Map m1 is greater than or equal to map m3.
 Map m1 is greater than or equal to map m4.
-*/
 ```
 
-## <a name="op_neq_multimap"></a>  işleç! = (multimap)
+## <a name="op_neq_multimap"></a> işleç! = (multimap)
 
 İşlecin sol tarafındaki multimap nesne işlecin sağ tarafındaki multimap nesneye eşit olup olmadığını sınar.
 
@@ -434,10 +432,10 @@ bool operator!=(
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*<br/>
+*Sol*\
 Bir nesne türü `multimap`.
 
-*sağ*<br/>
+*sağ*\
 Bir nesne türü `multimap`.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -480,13 +478,14 @@ int main( )
    else
       cout << "The multimaps m1 and m3 are equal." << endl;
 }
-/* Output:
-The multimaps m1 and m2 are not equal.
-The multimaps m1 and m3 are equal.
-*/
 ```
 
-## <a name="op_lt_multimap"></a>  İşleci&lt;
+```Output
+The multimaps m1 and m2 are not equal.
+The multimaps m1 and m3 are equal.
+```
+
+## <a name="op_lt_multimap"></a> İşleci&lt;
 
 İşlecin sol tarafındaki multimap nesnesinin işlecin sağ tarafındaki multimap nesneden küçük olup olmadığını sınar.
 
@@ -498,10 +497,10 @@ bool operator<(
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*<br/>
+*Sol*\
 Bir nesne türü `multimap`.
 
-*sağ*<br/>
+*sağ*\
 Bir nesne türü `multimap`.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -544,13 +543,18 @@ int main( )
    else
       cout << "The multimap m1 is not less than the multimap m3." << endl;
 }
-/* Output:
-The multimap m1 is less than the multimap m2.
-The multimap m1 is not less than the multimap m3.
-*/
 ```
 
+```Output
+The multimap m1 is less than the multimap m2.
+The multimap m1 is not less than the multimap m3.
+```
+
+<<<<<<< BAŞ
+## <a name="eq_multimap"></a> İşleci&lt;=
+=======
 ## <a name="op_lt_eq_multimap"></a>  İşleci&lt;=
+>>>>>>> 009c7ce384664f2a62ffb0bc61d6586b585ed38a
 
 Multimap işlecinin sol tarafında nesne küçük olup olmadığını sınar multimap nesnesine eşit veya işlecin sağ tarafındaki.
 
@@ -562,10 +566,10 @@ bool operator<=(
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*<br/>
+*Sol*\
 Bir nesne türü `multimap`.
 
-*sağ*<br/>
+*sağ*\
 Bir nesne türü `multimap`.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -610,14 +614,15 @@ int main( )
    else
       cout << "m1 is greater than m4" << endl;
 }
-/* Output:
+```
+
+```Output
 m1 is less than or equal to m2
 m1 is greater than m3
 m1 is less than or equal to m4
-*/
 ```
 
-## <a name="op_eq_eq_multimap"></a>  işleç ==
+## <a name="op_eq_eq_multimap"></a> işleç ==
 
 İşlecin sol tarafındaki multimap nesne işlecin sağ tarafındaki multimap nesneye eşit olup olmadığını sınar.
 
@@ -629,10 +634,10 @@ bool operator==(
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*<br/>
+*Sol*\
 Bir nesne türü `multimap`.
 
-*sağ*<br/>
+*sağ*\
 Bir nesne türü `multimap`.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -675,13 +680,14 @@ int main( )
    else
       cout << "m1 and m3 are not equal" << endl;
 }
-/* Output:
-m1 and m2 are not equal
-m1 and m3 are equal
-*/
 ```
 
-## <a name="op_gt_multimap"></a>  İşleci&gt;
+```Output
+m1 and m2 are not equal
+m1 and m3 are equal
+```
+
+## <a name="op_gt_multimap"></a> İşleci&gt;
 
 İşlecin sol tarafındaki multimap nesne multimap nesnesinin işlecin sağ tarafındaki büyük olup olmadığını sınar.
 
@@ -693,10 +699,10 @@ bool operator>(
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*<br/>
+*Sol*\
 Bir nesne türü `multimap`.
 
-*sağ*<br/>
+*sağ*\
 Bir nesne türü `multimap`.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -739,13 +745,14 @@ int main( )
    else
       cout << "The multimap m1 is not greater than the multimap m3." << endl;
 }
-/* Output:
-Multimap m1 is not greater than multimap m2.
-The multimap m1 is greater than the multimap m3.
-*/
 ```
 
-## <a name="op_gt_eq_multimap"></a>  İşleci&gt;=
+```Output
+Multimap m1 is not greater than multimap m2.
+The multimap m1 is greater than the multimap m3.
+```
+
+## <a name="op_gt_eq_multimap"></a> İşleci&gt;=
 
 İşlecin sol tarafındaki multimap nesnesinin değerinden büyük veya işlecin sağ tarafındaki multimap nesneye eşit olup olmadığını sınar.
 
@@ -757,10 +764,10 @@ bool operator>=(
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*<br/>
+*Sol*\
 Bir nesne türü `multimap`.
 
-*sağ*<br/>
+*sağ*\
 Bir nesne türü `multimap`.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -805,13 +812,10 @@ int main( )
    else
       cout << "The multimap m1 is less than the multimap m4." << endl;
 }
-/* Output:
+```
+
+```Output
 The multimap m1 is less than the multimap m2.
 The multimap m1 is greater than or equal to the multimap m3.
 The multimap m1 is greater than or equal to the multimap m4.
-*/
 ```
-
-## <a name="see-also"></a>Ayrıca bkz.
-
-[\<Harita >](../standard-library/map.md)<br/>

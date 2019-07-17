@@ -18,12 +18,12 @@ helpviewer_keywords:
 - std::reference_wrapper [C++], type
 - std::reference_wrapper [C++], get
 ms.assetid: 90b8ed62-e6f1-44ed-acc7-9619bd58865a
-ms.openlocfilehash: baf38dd637e31f6fabdf869a242f8f18e2812717
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 83b68d1fdf89519df0a26acd478467fddec8b662
+ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62369596"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68240269"
 ---
 # <a name="referencewrapper-class"></a>reference_wrapper Sınıfı
 
@@ -35,7 +35,6 @@ Bir başvuru sarmalar.
 template <class Ty>
 class reference_wrapper
 {
-public:
     typedef Ty type;
 
     reference_wrapper(Ty&) noexcept;
@@ -45,9 +44,6 @@ public:
     template <class... Types>
     auto operator()(Types&&... args) const ->
         decltype(std::invoke(get(), std::forward<Types>(args)...));
-
-private:
-    Ty *ptr; // exposition only
 };
 ```
 
@@ -59,39 +55,35 @@ Türü `Ty` bir nesne türü veya bir işlev türü veya derleme zamanında bir 
 
 Yardımcı işlevleri [std::ref](functional-functions.md#ref) ve [std::cref](functional-functions.md#cref) oluşturmak için kullanılan `reference_wrapper` nesneleri.
 
+## <a name="members"></a>Üyeler
+
 ### <a name="constructors"></a>Oluşturucular
 
-|Oluşturucu|Açıklama|
+|||
 |-|-|
 |[reference_wrapper](#reference_wrapper)|Oluşturur bir `reference_wrapper`.|
 
 ### <a name="typedefs"></a>Tür tanımları
 
-|Tür adı|Açıklama|
+|||
 |-|-|
 |[result_type](#result_type)|Sarmalanan başvuru zayıf sonuç türü.|
 |[type](#type)|Sarmalanan bir başvuru türü.|
 
-### <a name="member-functions"></a>Üye işlevleri
+### <a name="functions"></a>İşlevler
 
-|Üye işlevi|Açıklama|
+|||
 |-|-|
 |[get](#get)|Sarmalanan bir başvuru edinir.|
 
 ### <a name="operators"></a>İşleçler
 
-|İşleç|Açıklama|
+|||
 |-|-|
-|[reference_wrapper::operator Ty&amp;](#op_ty_amp)|Sarmalanan başvurusu bir işaretçi alır.|
-|[reference_wrapper::operator()](#op_call)|Sarmalanan başvuru çağırır.|
+|[operator Ty&amp;](#op_ty_amp)|Sarmalanan başvurusu bir işaretçi alır.|
+|[operator()](#op_call)|Sarmalanan başvuru çağırır.|
 
-## <a name="requirements"></a>Gereksinimler
-
-**Başlık:** \<işlev >
-
-**Namespace:** std
-
-## <a name="get"></a>  reference_wrapper::get
+## <a name="get"></a> Al
 
 Sarmalanan bir başvuru edinir.
 
@@ -130,7 +122,7 @@ rwi = 1
 i = -1
 ```
 
-## <a name="op_ty_amp"></a>  reference_wrapper::operator Ty&amp;
+## <a name="op_ty_amp"></a> operator Ty&amp;
 
 Sarmalanan referansını alır.
 
@@ -166,7 +158,7 @@ i = 1
 (int)rwi = 1
 ```
 
-## <a name="op_call"></a>  reference_wrapper::operator()
+## <a name="op_call"></a> operator()
 
 Sarmalanan başvuru çağırır.
 
@@ -177,10 +169,10 @@ auto operator()(Types&&... args);
 
 ### <a name="parameters"></a>Parametreler
 
-*Türler*<br/>
+*Türleri*\
 Bağımsız değişken listesi türleri.
 
-*bağımsız değişken*<br/>
+*bağımsız değişken*\
 Bağımsız değişken listesi.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -212,7 +204,7 @@ int main() {
 rwi(3) = -3
 ```
 
-## <a name="reference_wrapper"></a>  reference_wrapper::reference_wrapper
+## <a name="reference_wrapper"></a> reference_wrapper
 
 Oluşturur bir `reference_wrapper`.
 
@@ -222,10 +214,10 @@ reference_wrapper(Ty& val) noexcept;
 
 ### <a name="parameters"></a>Parametreler
 
-*Ty*<br/>
+*Ty*\
 Kaydırmak için türü.
 
-*VAL*<br/>
+*VAL*\
 Sarım değeri.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -263,7 +255,7 @@ rwi = 1
 i = -1
 ```
 
-## <a name="result_type"></a>  reference_wrapper::result_type
+## <a name="result_type"></a> result_type
 
 Sarmalanan başvuru zayıf sonuç türü.
 
@@ -302,7 +294,7 @@ int main() {
 val = -3
 ```
 
-## <a name="type"></a>  reference_wrapper::type
+## <a name="type"></a> Türü
 
 Sarmalanan bir başvuru türü.
 
@@ -343,8 +335,3 @@ int main() {
 i = 1
 rwi = 1
 ```
-
-## <a name="see-also"></a>Ayrıca bkz.
-
-[cref](../standard-library/functional-functions.md#cref)<br/>
-[ref](../standard-library/functional-functions.md#ref)<br/>

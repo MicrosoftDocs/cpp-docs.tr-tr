@@ -102,12 +102,12 @@ helpviewer_keywords:
 - CListBox [MFC], SetTopIndex
 - CListBox [MFC], VKeyToItem
 ms.assetid: 7ba3c699-c286-4cd9-9066-532c41ec05d1
-ms.openlocfilehash: b448f725bac68c2b67dc44d660c664c075aa86da
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f7b62ecf64c70c554fe14883c45d6b7936c668d7
+ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62225275"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68243573"
 ---
 # <a name="clistbox-class"></a>CListBox sınıfı
 
@@ -146,7 +146,7 @@ class CListBox : public CWnd
 |[CListBox::GetCount](#getcount)|Dizelerden oluşan bir liste kutusunda döndürür.|
 |[CListBox::GetCurSel](#getcursel)|Bir liste kutusunda seçili dize sıfır tabanlı dizinini döndürür.|
 |[CListBox::GetHorizontalExtent](#gethorizontalextent)|Liste kutusu yatay yönde kaydırılabileceğini piksel cinsinden genişliğini döndürür.|
-|[CListBox::GetItemData](#getitemdata)|Liste kutusu öğesi ile ilişkili 32-bit değeri döndürür.|
+|[CListBox::GetItemData](#getitemdata)|Liste kutusu öğeyle ilişkili bir değer döndürür.|
 |[CListBox::GetItemDataPtr](#getitemdataptr)|Liste kutusu öğeye bir işaretçi döndürür.|
 |[CListBox::GetItemHeight](#getitemheight)|Öğeleri liste kutusunda yüksekliğini belirler.|
 |[CListBox::GetItemRect](#getitemrect)|Şu anda görüntülenen liste kutusu öğesinin dikdörtgen döndürür.|
@@ -170,7 +170,7 @@ class CListBox : public CWnd
 |[CListBox::SetColumnWidth](#setcolumnwidth)|Bir çoklu sütun liste kutusunu sütun genişliğini belirler.|
 |[CListBox::SetCurSel](#setcursel)|Bir liste kutusu dize seçer.|
 |[CListBox::SetHorizontalExtent](#sethorizontalextent)|Liste kutusu yatay yönde kaydırılabileceğini piksel cinsinden genişliğini belirler.|
-|[CListBox::SetItemData](#setitemdata)|Liste kutusu öğesi ile ilişkili 32-bit değeri ayarlar.|
+|[CListBox::SetItemData](#setitemdata)|Liste kutusu öğeyle ilişkili bir değer ayarlar.|
 |[CListBox::SetItemDataPtr](#setitemdataptr)|Bir işaretçi liste kutusu öğesini ayarlar.|
 |[CListBox::SetItemHeight](#setitemheight)|Öğe yüksekliğini bir liste kutusunda ayarlar.|
 |[CListBox::SetLocale](#setlocale)|Liste kutusu yerel ayar tanımlayıcısı ayarlar.|
@@ -345,7 +345,7 @@ Açıklanan iki öğenin göreli konumunu belirten [COMPAREITEMSTRUCT](/windows/
 |-----------|-------------|
 |-1|Öğe 1 öğe 2 önce sıralar.|
 |0|Öğe 1 ve 2 öğe aynı sıralama.|
-|1.|Öğe 1 öğe 2 sonra sıralar.|
+|1\.|Öğe 1 öğe 2 sonra sıralar.|
 
 Bkz: [CWnd::OnCompareItem](../../mfc/reference/cwnd-class.md#oncompareitem) açıklamasını `COMPAREITEMSTRUCT` yapısı.
 
@@ -702,7 +702,7 @@ Liste kutusunda öğenin sıfır tabanlı dizinini belirtir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir hata oluşursa öğe veya LB_ERR ile ilişkili 32-bit değeri.
+Bir hata oluşursa öğe veya LB_ERR ile ilişkili değer.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -1288,7 +1288,7 @@ Bu üye işlevi, çoklu sütun liste kutuları için faydalı değil. Çoklu sü
 
 ##  <a name="setitemdata"></a>  CListBox::SetItemData
 
-Belirtilen öğeyi liste kutusunda ile ilişkili 32 bit bir değer ayarlar.
+Belirtilen öğeyi liste kutusunda ile ilişkili bir değer ayarlar.
 
 ```
 int SetItemData(

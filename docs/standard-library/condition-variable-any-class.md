@@ -18,12 +18,12 @@ helpviewer_keywords:
 - std::condition_variable_any::wait
 - std::condition_variable_any::wait_for
 - std::condition_variable_any::wait_until
-ms.openlocfilehash: c38c080b0a8dbd9d4b0b76496aa367fa55892f50
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 7ecf13974404ec6e223d5d3e7387a70526eeefcc
+ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62279067"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68244655"
 ---
 # <a name="conditionvariableany-class"></a>condition_variable_any Sınıfı
 
@@ -37,29 +37,23 @@ class condition_variable_any;
 
 ## <a name="members"></a>Üyeler
 
-### <a name="public-constructors"></a>Ortak Oluşturucular
+### <a name="constructors"></a>Oluşturucular
 
-|Ad|Açıklama|
-|----------|-----------------|
+|||
+|-|-|
 |[condition_variable_any](#condition_variable_any)|Oluşturur bir `condition_variable_any` nesne.|
 
-### <a name="public-methods"></a>Ortak Yöntemler
+### <a name="functions"></a>İşlevler
 
-|Ad|Açıklama|
-|----------|-----------------|
+|||
+|-|-|
 |[notify_all](#notify_all)|İçin bekleyen tüm iş parçacıklarının engellemesinin kaldırıldığı `condition_variable_any` nesne.|
 |[notify_one](#notify_one)|İçin bekleyen iş parçacıklarının birinin engellemesini kaldırır `condition_variable_any` nesne.|
 |[bekleme](#wait)|Bir iş parçacığını engeller.|
 |[wait_for](#wait_for)|Bir iş parçacığını engeller ve sonrasında iş parçacığı engellemesinin kaldırıldığı bir zaman aralığı ayarlar.|
 |[wait_until](#wait_until)|Bir iş parçacığını engeller ve hangi iş parçacığı engellemesinin kaldırıldığı zaman maksimum noktası ayarlar.|
 
-## <a name="requirements"></a>Gereksinimler
-
-**Başlık:** \<condition_variable >
-
-**Namespace:** std
-
-## <a name="condition_variable_any"></a>  condition_variable_any::condition_variable_any Oluşturucusu
+## <a name="condition_variable_any"></a> condition_variable_any
 
 Oluşturur bir `condition_variable_any` nesne.
 
@@ -71,7 +65,7 @@ condition_variable_any();
 
 Yeterli bellek yoksa, oluşturucu oluşturur bir [system_error](../standard-library/system-error-class.md) nesnesi bir `not_enough_memory` hata kodu. Başka bir kaynak kullanılamadığından nesne oluşturulamıyorsa, oluşturucu oluşturur bir `system_error` nesnesi bir `resource_unavailable_try_again` hata kodu.
 
-## <a name="notify_all"></a>  condition_variable_any::notify_all
+## <a name="notify_all"></a> notify_all
 
 İçin bekleyen tüm iş parçacıklarının engellemesinin kaldırıldığı `condition_variable_any` nesne.
 
@@ -79,7 +73,7 @@ Yeterli bellek yoksa, oluşturucu oluşturur bir [system_error](../standard-libr
 void notify_all() noexcept;
 ```
 
-## <a name="notify_one"></a>  condition_variable_any::notify_one
+## <a name="notify_one"></a> notify_one
 
 Bekleyen iş parçacıklarının birinin engellemesini kaldırır `condition_variable_any` nesne.
 
@@ -87,7 +81,7 @@ Bekleyen iş parçacıklarının birinin engellemesini kaldırır `condition_var
 void notify_one() noexcept;
 ```
 
-## <a name="wait"></a>  condition_variable_any::wait
+## <a name="wait"></a> bekleme
 
 Bir iş parçacığını engeller.
 
@@ -101,10 +95,10 @@ void wait(Lock& Lck, Predicate Pred);
 
 ### <a name="parameters"></a>Parametreler
 
-*Lck*<br/>
+*Lck*\
 A `mutex` herhangi bir türde nesne.
 
-*Pred*<br/>
+*Pred*\
 Döndüren herhangi bir ifade **true** veya **false**.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -118,7 +112,7 @@ while (!Pred())
     wait(Lck);
 ```
 
-## <a name="wait_for"></a>  condition_variable_any::wait_for
+## <a name="wait_for"></a> wait_for
 
 Bir iş parçacığını engeller ve sonrasında iş parçacığı engellemesinin kaldırıldığı bir zaman aralığı ayarlar.
 
@@ -132,13 +126,13 @@ bool wait_for(Lock& Lck, const chrono::duration<Rep, Period>& Rel_time, Predicat
 
 ### <a name="parameters"></a>Parametreler
 
-*Lck*<br/>
+*Lck*\
 A `mutex` herhangi bir türde nesne.
 
-*Rel_time*<br/>
+*Rel_time*\
 A `chrono::duration` iş parçacığı süre miktarını belirten nesne uyanır.
 
-*Pred*<br/>
+*Pred*\
 Döndüren herhangi bir ifade **true** veya **false**.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -161,7 +155,7 @@ while(!Pred())
 return true;
 ```
 
-## <a name="wait_until"></a>  condition_variable_any::wait_until
+## <a name="wait_until"></a> wait_until
 
 Bir iş parçacığını engeller ve hangi iş parçacığı engellemesinin kaldırıldığı zaman maksimum noktası ayarlar.
 
@@ -187,13 +181,13 @@ void wait_until(
 
 ### <a name="parameters"></a>Parametreler
 
-*Lck*<br/>
+*Lck*\
 Mutex nesnesi.
 
-*Abs_time*<br/>
+*Abs_time*\
 A [chrono::time_point](../standard-library/time-point-class.md) nesne.
 
-*Pred*<br/>
+*Pred*\
 Döndüren herhangi bir ifade **true** veya **false**.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -217,8 +211,3 @@ return true;
 ```
 
 Üçüncü ve dördüncü yöntemler türünde bir nesne için bir işaretçi kullanın `xtime` değiştirilecek `chrono::time_point` nesne. `xtime` Nesnesini bir sinyal için beklenecek en uzun süreyi belirtir.
-
-## <a name="see-also"></a>Ayrıca bkz.
-
-[Üstbilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md)<br/>
-[<condition_variable>](../standard-library/condition-variable.md)<br/>

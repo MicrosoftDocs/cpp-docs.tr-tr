@@ -1,41 +1,38 @@
 ---
-title: '&lt;Yeni&gt; işleçleri'
+title: '&lt;Yeni&gt; işleçler ve numaralandırmalar'
 ms.date: 11/04/2016
 f1_keywords:
 - new/std::operator delete
 - new/std::operator new
 ms.assetid: d1af4b56-9a95-4c65-ab01-bf43e982c7bd
-ms.openlocfilehash: 87f7b6cfd6a06ab03b27ebe6aa4dd41b0b900673
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: a3fd5b825fe1eaf3a07d9d001f03b9d0c64ffa31
+ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62223694"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68243675"
 ---
-# <a name="ltnewgt-operators"></a>&lt;Yeni&gt; işleçleri
+# <a name="ltnewgt-operators-and-enums"></a>&lt;Yeni&gt; işleçler ve numaralandırmalar
 
-||||
-|-|-|-|
-|[delete işleci](#op_delete)|[delete [] işleci](#op_delete_arr)|[new işleci](#op_new)|
-|[new [] işleci](#op_new_arr)|
+## <a name="op_align_val_t"></a> Enum align_val_t
 
-## <a name="op_delete"></a>  delete işleci
+```cpp
+enum class align_val_t : size_t {};
+```
 
-Tek nesne için depolama ayırması için ifadeyi silmenin tarafından çağrılan işlev.
+## <a name="op_delete"></a> delete işleci
+
+Tek nesne için depolama ayırmayı iptal etmek için ifadeyi silmenin tarafından çağrılan işlev.
 
 ```cpp
 void operator delete(void* ptr) throw();
-
-void operator delete(void *,
-    void*) throw();
-
-void operator delete(void* ptr,
-    const std::nothrow_t&) throw();
+void operator delete(void *, void*) throw();
+void operator delete(void* ptr, const std::nothrow_t&) throw();
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*ptr*<br/>
+*PTR*\
 Silme işleminden geçersiz işlenmek üzere değeri olan işaretçisi.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -46,29 +43,25 @@ Null değeri için varsayılan davranış *ptr* hiçbir şey yapma sağlamaktır
 
 İkinci işlev formun yeni bir ifadeye karşılık gelen bir yerleştirme delete ifadesi tarafından çağrılır **yeni**( **std::size_t**). Hiçbir şey yapmaz.
 
-Üçüncü işlev, formun yeni bir ifadeye karşılık gelen bir yerleştirme delete ifadesi tarafından çağrılır **yeni**( **std::size_t**, **conststd::nothrow_t &**). Program C++ Standart Kitaplığı tarafından tanımlanan varsayılan sürümü değiştirir. Bu işlev imzası olan bir işlev tanımlayabilirsiniz. Bir değeri kabul etmek için gerekli davranıştır `ptr` diğer bir deyişle null ya da daha önceki bir çağrı tarafından döndürülen `operator new`( **size_t**). Değerlendirmek için varsayılan davranıştır **Sil**(`ptr`).
+Üçüncü işlev, formun yeni bir ifadeye karşılık gelen bir yerleştirme delete ifadesi tarafından çağrılır **yeni**( **std::size_t**, **conststd::nothrow_t &** ). Program C++ Standart Kitaplığı tarafından tanımlanan varsayılan sürümü değiştirir. Bu işlev imzası olan bir işlev tanımlayabilirsiniz. Bir değeri kabul etmek için gerekli davranıştır `ptr` diğer bir deyişle null ya da daha önceki bir çağrı tarafından döndürülen `operator new`( **size_t**). Değerlendirmek için varsayılan davranıştır **Sil**(`ptr`).
 
 ### <a name="example"></a>Örnek
 
 Bkz: [new işleci](../standard-library/new-operators.md#op_new) kullanan bir örnek **delete işleci**.
 
-## <a name="op_delete_arr"></a>  delete [] işleci
+## <a name="op_delete_arr"></a> delete [] işleci
 
 Bir nesne dizisi için depolama ayırması için ifadeyi silmenin tarafından çağrılan işlev.
 
 ```cpp
 void operator delete[](void* ptr) throw();
-
-void operator delete[](void *,
-    void*) throw();
-
-void operator delete[](void* ptr,
-    const std::nothrow_t&) throw();
+void operator delete[](void *, void*) throw();
+void operator delete[](void* ptr, const std::nothrow_t&) throw();
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*ptr*<br/>
+*PTR*\
 Silme işleminden geçersiz işlenmek üzere değeri olan işaretçisi.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -77,32 +70,28 @@ Silme işleminden geçersiz işlenmek üzere değeri olan işaretçisi.
 
 İkinci işlevi tarafından bir yerleştirme denir `delete[]` ifade karşılık gelen bir `new[]` biçiminde ifade `new[]`(**std::size_t**). Hiçbir şey yapmaz.
 
-Üçüncü işlevi bir yerleştirme delete deyimi karşılık gelen tarafından adlandırılan bir `new[]` biçiminde ifade `new[]`( **std::size_t**, **const std::nothrow_t &**). Program C++ Standart Kitaplığı tarafından tanımlanan varsayılan sürümü değiştirir. Bu işlev imzası olan bir işlev tanımlayabilirsiniz. Bir değeri kabul etmek için gerekli davranıştır *ptr* diğer bir deyişle null ya da işleç önceki bir çağrı tarafından döndürülen `new[]`(**size_t**). Değerlendirmek için varsayılan davranıştır `delete[]`( `ptr`).
+Üçüncü işlevi bir yerleştirme delete deyimi karşılık gelen tarafından adlandırılan bir `new[]` biçiminde ifade `new[]`( **std::size_t**, **const std::nothrow_t &** ). Program C++ Standart Kitaplığı tarafından tanımlanan varsayılan sürümü değiştirir. Bu işlev imzası olan bir işlev tanımlayabilirsiniz. Bir değeri kabul etmek için gerekli davranıştır *ptr* diğer bir deyişle null ya da işleç önceki bir çağrı tarafından döndürülen `new[]`(**size_t**). Değerlendirmek için varsayılan davranıştır `delete[]`( `ptr`).
 
 ### <a name="example"></a>Örnek
 
 Bkz: [new işleci&#91; &#93; ](../standard-library/new-operators.md#op_new_arr) kullanımı örnekleri için `operator delete[]`.
 
-## <a name="op_new"></a>  new işleci
+## <a name="op_new"></a> new işleci
 
 Yeni-tek tek nesneler için ayrılacak ifadesi tarafından çağrılan işlev.
 
 ```cpp
 void* operator new(std::size_t count) throw(bad_alloc);
-
-void* operator new(std::size_t count,
-    const std::nothrow_t&) throw();
-
-void* operator new(std::size_t count,
-    void* ptr) throw();
+void* operator new(std::size_t count, const std::nothrow_t&) throw();
+void* operator new(std::size_t count, void* ptr) throw();
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*Sayısı*<br/>
+*Sayısı*\
 Depolama ayrılacak bayt sayısı.
 
-*ptr*<br/>
+*PTR*\
 Döndürülecek işaretçisi.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -137,7 +126,7 @@ Döndürülecek varsayılan davranıştır `operator new`(`count`), işlev başa
 
 Ayrılan depolama alanı boşaltmak için **new işleci**, çağrı [delete işleci](../standard-library/new-operators.md#op_delete).
 
-Oluşturma hakkında bilgi için veya yeni, bkz: nonthrowing davranışını [yeni ve delete işleçleri](../cpp/new-and-delete-operators.md).
+Oluşturma hakkında bilgi için veya yeni, bkz: oluşturmayan davranışını [yeni ve delete işleçleri](../cpp/new-and-delete-operators.md).
 
 ### <a name="example"></a>Örnek
 
@@ -182,26 +171,22 @@ int main( )
 }
 ```
 
-## <a name="op_new_arr"></a>  new [] işleci
+## <a name="op_new_arr"></a> new [] işleci
 
 Ayırma, bir nesne dizisi için ayrılacak yeni bir ifade tarafından çağrılan işlev.
 
 ```cpp
 void* operator new[](std::size_t count) throw(std::bad_alloc);
-
-void* operator new[](std::size_t count,
-    const std::nothrow_t&) throw();
-
-void* operator new[](std::size_t count,
-    void* ptr) throw();
+void* operator new[](std::size_t count, const std::nothrow_t&) throw();
+void* operator new[](std::size_t count, void* ptr) throw();
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*Sayısı*<br/>
+*Sayısı*\
 Depolama dizisi nesne için ayrılacak bayt sayısı.
 
-*ptr*<br/>
+*PTR*\
 Döndürülecek işaretçisi.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -260,7 +245,3 @@ int main() {
    delete[ ] fPtr3;
 }
 ```
-
-## <a name="see-also"></a>Ayrıca bkz.
-
-[\<Yeni >](../standard-library/new.md)<br/>

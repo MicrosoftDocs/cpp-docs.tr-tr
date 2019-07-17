@@ -2,12 +2,12 @@
 title: '&lt;cfenv&gt;'
 ms.date: 11/04/2016
 ms.assetid: 6a17ad51-2182-4e91-8108-65997382acd3
-ms.openlocfilehash: 386e4607cb8a53e7f0128873853ee133d6acd1e2
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: dcaf49d19009ac831776134cf3d5b6cbce7e14d4
+ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62379811"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68244965"
 ---
 # <a name="ltcfenvgt"></a>&lt;cfenv&gt;
 
@@ -22,6 +22,43 @@ Standart C Kitaplığı üstbilgisi içerir \<fenv.h > ve ilişkili adlar ekler 
 ## <a name="remarks"></a>Açıklamalar
 
 Bu üstbilginin dahil sağlar, standart C Kitaplığı üstbilgisinde harici bağlantı kullanılarak bildirilen adların bildirilir `std` ad alanı.
+
+## <a name="constants-and-types"></a>Sabitler ve türler
+
+```cpp
+#define FE_ALL_EXCEPT see below
+#define FE_DIVBYZERO see below
+#define FE_INEXACT see below
+#define FE_INVALID see below
+#define FE_OVERFLOW see below
+#define FE_UNDERFLOW see below
+#define FE_DOWNWARD see below
+#define FE_TONEAREST see below
+#define FE_TOWARDZERO see below
+#define FE_UPWARD see below
+#define FE_DFL_ENV see below
+
+namespace std {
+    using fenv_t = object type ;
+    using fexcept_t = integer type ;
+}
+```
+
+## <a name="functions"></a>İşlevler
+
+```cpp
+int feclearexcept(int except);
+int fegetexceptflag(fexcept_t* pflag, int except);
+int feraiseexcept(int except);
+int fesetexceptflag(const fexcept_t* pflag, int except);
+int fetestexcept(int except);
+int fegetround();
+int fesetround(int mode);
+int fegetenv(fenv_t* penv);
+int feholdexcept(fenv_t* penv);
+int fesetenv(const fenv_t* penv);
+int feupdateenv(const fenv_t* penv);
+```
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

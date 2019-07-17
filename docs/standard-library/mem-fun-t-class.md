@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - mem_fun_t class
 ms.assetid: 242566d4-750c-4c87-9d63-2e2c9d19ca2a
-ms.openlocfilehash: cf1080f5f832bd79a347ee7fd847ff56a7567fdf
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 19ccd4835c4257a7f409bcf0f7bda1a898567458
+ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62412897"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68245080"
 ---
 # <a name="memfunt-class"></a>mem_fun_t Sınıfı
 
@@ -25,16 +25,15 @@ class mem_fun_t : public unary_function<Type *, Result> {
     explicit mem_fun_t(Result (Type::* _Pm)());
 
     Result operator()(Type* _Pleft) const;
-
 };
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*_Pm*<br/>
+*_Pm*\
 Bir sınıfın üye işlevi işaretçisi `Type` bir işlev nesnesi için dönüştürülecek.
 
-*_Pleft*<br/>
+*_Pleft*\
 Nesne, *_Pm* üye işlevi çağrılır.
 
 ## <a name="return-value"></a>Dönüş Değeri
@@ -43,20 +42,8 @@ Bir uyarlanabilir birli işlevi.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Şablon sınıfı bir kopyasını depolar *_Pm*, bir sınıfın bir üye işlevi işaretçisi olmalıdır `Type`, özel üye nesnesinde. Onun üye işlevini tanımlar `operator()` döndüren olarak ( `_Pleft` ->*  `_Pm`) ().
+Şablon sınıfı bir kopyasını depolar *_Pm*, bir sınıfın bir üye işlevi işaretçisi olmalıdır `Type`, özel üye nesnesinde. Onun üye işlevini tanımlar `operator()` döndüren olarak (`_Pleft`->* `_Pm`) ().
 
 ## <a name="example"></a>Örnek
 
 Oluşturucusuna `mem_fun_t` genellikle kullanılmaz doğrudan; yardımcı işlevini `mem_fun` üye işlevleri uyum sağlamak için kullanılır. Bkz: [mem_fun](../standard-library/functional-functions.md#mem_fun) üye işlevi bağdaştırıcıları kullanmayı gösteren bir örnek.
-
-## <a name="requirements"></a>Gereksinimler
-
-**Başlık:** \<işlev >
-
-**Namespace:** std
-
-## <a name="see-also"></a>Ayrıca bkz.
-
-[\<işlev >](../standard-library/functional.md)<br/>
-[C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
-[C++ Standart Kitaplığı Başvurusu](../standard-library/cpp-standard-library-reference.md)<br/>

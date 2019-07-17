@@ -17,22 +17,16 @@ helpviewer_keywords:
 - std::operator&gt;= (iterator)
 - std::operator&lt; (iterator)
 - std::operator&lt;= (iterator), std::operator== (iterator)
-ms.openlocfilehash: 311710d5614bbc7c24d6b32e89285715476f94da
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 7455610af5f03be024753e26f67e561b14c85612
+ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62224265"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68244013"
 ---
 # <a name="ltiteratorgt-operators"></a>&lt;Yineleyici&gt; işleçleri
 
-||||
-|-|-|-|
-|[operator!=](#op_neq)|[İşleci&gt;](#op_gt)|[İşleci&gt;=](#op_gt_eq)|
-|[İşleci&lt;](#op_lt)|[İşleci&lt;=](#op_lt_eq)|[operator +](#op_add)|
-|[operator-](#operator-)|[operator==](#op_eq_eq)|
-
-## <a name="op_neq"></a>  işleç! =
+## <a name="op_neq"></a> işleç! =
 
 İşlecin sol tarafındaki yineleyici nesnesinin işlecin sağ tarafındaki yineleyici nesnesinden farklı olup olmadığını sınar.
 
@@ -49,10 +43,10 @@ bool operator!=(const istreambuf_iterator<CharType, Traits>& left, const istream
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*<br/>
+*Sol*\
 Bir nesne türü `iterator`.
 
-*sağ*<br/>
+*sağ*\
 Bir nesne türü `iterator`.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -125,7 +119,7 @@ in the reversed sequence: 7.
 The iterators are not equal.
 ```
 
-## <a name="op_eq_eq"></a>  işleç ==
+## <a name="op_eq_eq"></a> işleç ==
 
 İşlecin sol tarafındaki yineleyici nesnesinin işlecin sağ tarafındaki yineleyici nesnesine eşit olup olmadığını sınar.
 
@@ -153,10 +147,10 @@ bool operator==(
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*<br/>
+*Sol*\
 Bir nesne türü yineleyici.
 
-*sağ*<br/>
+*sağ*\
 Bir nesne türü yineleyici.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -167,7 +161,7 @@ Bir nesne türü yineleyici.
 
 Bunlar aynı öğeleri bir kapsayıcıda adresi değişirse bir yineleyici nesnesi başka bir eşittir. Bir kapsayıcı içindeki farklı öğelere iki yineleyici işaret ederseniz, ardından bunlar eşit değildir.
 
-İlk iki şablon işleçler yalnızca her iki true döndürür *sol* ve *doğru* aynı yineleyici depolar. Üçüncü şablon işlecini yalnızca her iki true değerini döndürür *sol* ve *doğru* aynı akış işaretçisini depolar. Dördüncü bir şablon işlecini verir ` left.equal ( right)`.
+İlk iki şablon işleçler yalnızca her iki true döndürür *sol* ve *doğru* aynı yineleyici depolar. Üçüncü şablon işlecini yalnızca her iki true değerini döndürür *sol* ve *doğru* aynı akış işaretçisini depolar. Dördüncü bir şablon işlecini verir `left.equal (right)`.
 
 ### <a name="example"></a>Örnek
 
@@ -231,7 +225,7 @@ in the reversed sequence: 8.
 The iterators are not equal.
 ```
 
-## <a name="op_lt"></a>  İşleci&lt;
+## <a name="op_lt"></a> İşleci&lt;
 
 İşlecin sol tarafındaki yineleyici nesnesinin işlecin sağ tarafındaki yineleyici nesnesinden küçük olup olmadığını sınar.
 
@@ -242,10 +236,10 @@ bool operator<(const reverse_iterator<RandomIterator>& left, const reverse_itera
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*<br/>
+*Sol*\
 Bir nesne türü `iterator`.
 
-*sağ*<br/>
+*sağ*\
 Bir nesne türü `iterator`.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -322,7 +316,7 @@ in the reversed sequence: 8.
 The iterator rVPOS1 is less than the iterator rVPOS2.
 ```
 
-## <a name="op_lt_eq"></a>  İşleci&lt;=
+## <a name="op_lt_eq"></a> İşleci&lt;=
 
 İşlecin sol tarafındaki yineleyici nesnesinin işlecin sağ tarafındaki yineleyici nesnesine eşit veya ondan küçük olup olmadığını sınar.
 
@@ -333,10 +327,10 @@ bool operator<=(const reverse_iterator<RandomIterator>& left, const reverse_iter
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*<br/>
+*Sol*\
 Bir nesne türü yineleyici.
 
-*sağ*<br/>
+*sağ*\
 Bir nesne türü yineleyici.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -417,7 +411,7 @@ in the reversed sequence: 8.
 The iterator rVPOS1 is less than or equal to the iterator rVPOS2.
 ```
 
-## <a name="op_gt"></a>  İşleci&gt;
+## <a name="op_gt"></a> İşleci&gt;
 
 İşlecin sol tarafındaki yineleyici nesnesinin işlecin sağ tarafındaki yineleyici nesnesinden büyük olup olmadığını sınar.
 
@@ -428,10 +422,10 @@ bool operator>(const reverse_iterator<RandomIterator>& left, const reverse_itera
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*<br/>
+*Sol*\
 Bir nesne türü yineleyici.
 
-*sağ*<br/>
+*sağ*\
 Bir nesne türü yineleyici.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -506,7 +500,7 @@ in the reversed sequence: 8.
 The iterator rVPOS1 is greater than the iterator rVPOS2.
 ```
 
-## <a name="op_gt_eq"></a>  İşleci&gt;=
+## <a name="op_gt_eq"></a> İşleci&gt;=
 
 İşlecin sol tarafındaki yineleyici nesnesinin işlecin sağ tarafındaki yineleyici nesnesine eşit veya ondan büyük olup olmadığını sınar.
 
@@ -517,10 +511,10 @@ bool operator>=(const reverse_iterator<RandomIterator>& left, const reverse_iter
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*<br/>
+*Sol*\
 Bir nesne türü yineleyici.
 
-*sağ*<br/>
+*sağ*\
 Bir nesne türü yineleyici.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -601,7 +595,7 @@ in the reversed sequence: 8.
 The iterator rVPOS1 is greater than or equal to the iterator rVPOS2.
 ```
 
-## <a name="op_add"></a>  operator +
+## <a name="op_add"></a> operator +
 
 Yineleyiciye bir uzaklık ekler ve döndüren bir `move_iterator` veya `reverse_iterator` eklenen öğeyi yeni uzaklık konumunda ele alan.
 
@@ -621,15 +615,15 @@ operator+(
 
 ### <a name="parameters"></a>Parametreler
 
-*_Off*<br/>
+*_Off*\
 Move_iterator const veya const reverse_iterator uzaklık olarak olduğu konum sayısı.
 
-*sağ*<br/>
+*sağ*\
 Uzaklık olarak yineleyici.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Toplamını döndürür *doğru* + *_Off*.
+Toplamını döndürür *doğru* +  *_Off*.
 
 ### <a name="example"></a>Örnek
 
@@ -680,7 +674,7 @@ The iterator rVPOS1 now points to the fifth element
 in the reversed sequence: 2.
 ```
 
-## <a name="operator-"></a>  operator-
+## <a name="operator-"></a> operator-
 
 Bir yineleyiciyi bir başkasından çıkarır ve farkı döndürür.
 
@@ -698,10 +692,10 @@ Tdiff operator-(
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*<br/>
+*Sol*\
 Bir yineleyici.
 
-*sağ*<br/>
+*sağ*\
 Bir yineleyici.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -772,7 +766,3 @@ The iterator rVPOS2 now points to the fifth element
 in the reversed sequence: 2.
 The difference: rVPOS2 - rVPOS1= 4.
 ```
-
-## <a name="see-also"></a>Ayrıca bkz.
-
-[\<Yineleyici >](../standard-library/iterator.md)<br/>

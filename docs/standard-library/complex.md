@@ -7,22 +7,22 @@ f1_keywords:
 helpviewer_keywords:
 - complex header
 ms.assetid: 5e728995-3059-496a-9ce9-61d1bfbe4f2b
-ms.openlocfilehash: afcdb1246d9c02f83dbc8708326d10e802ad2779
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e3d4330f8b0fcbce940f6647ebb8920f0b1969b6
+ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62212098"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68244678"
 ---
 # <a name="ltcomplexgt"></a>&lt;karmaşık&gt;
 
 Kapsayıcı Şablon sınıfı tanımlar `complex` ve kendi destek şablonları.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="requirements"></a>Gereksinimler
 
-```cpp
-#include <complex>
-```
+**Üst bilgi**: \<karmaşık >
+
+**Namespace:** std
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -40,7 +40,7 @@ Karmaşık toplama ve karmaşık çarpma işlemleri karmaşık sayılar kümesiy
 
 - Karmaşık bir sayıyı için eklenebilir ters (*bir*, *b*) olduğunu (-*bir*, -*b*) ve tüm karmaşık sayılar için multiplicative ters dışında (0, 0) olan
 
-   (*a*/(*a*<sup>2</sup> + *b*<sup>2</sup>), -*b*/(*a*<sup>2</sup> + *b*<sup>2</sup>))
+   (*bir*/ (*bir*<sup>2</sup> + *b*<sup>2</sup>), -*b*/ (*bir*<sup>2</sup> + *b*<sup>2</sup>))
 
 Karmaşık bir sayıyı temsil eden tarafından *z* = (*bir*, *b*) biçiminde *z* = *bir*  +  *BI*burada *miyim*<sup>2</sup> Cebir gerçek sayılar kümesinin karmaşık sayılar kümesini ve bileşenleri için uygulanabilir için -1, kuralları =. Örneğin:
 
@@ -68,12 +68,20 @@ Bu standart karmaşık bir sayıyı temsil eden içinde kullanılan terimler iç
 
 Aksi belirtilmediği sürece, birden çok değer döndüren işlevler - π'dan büyük ve küçük bir asıl kendi bir bağımsız değişken değerini döndürmek için gerekli olan daha eşit + π veya tek değerli saklamak için. Tüm açıların radyan cinsinden ifade edilmelidir burada 2π radyan (360 derece) bir daire.
 
+## <a name="members"></a>Üyeler
+
 ### <a name="functions"></a>İşlevler
 
-|İşlev|Açıklama|
+|||
 |-|-|
 |[Abs](../standard-library/complex-functions.md#abs)|Karmaşık bir sayıyı modüllerini hesaplar.|
+|[acos](../standard-library/complex-functions.md#acos)||
+|[ACOSH](../standard-library/complex-functions.md#acosh)||
 |[bağımsız değişken](../standard-library/complex-functions.md#arg)|Bağımsız değişken, bir karmaşık numarasından ayıklar.|
+|[asin](../standard-library/complex-functions.md#asin)||
+|[ASİNH](../standard-library/complex-functions.md#asinh)||
+|[atan](../standard-library/complex-functions.md#atan)||
+|[ATANH](../standard-library/complex-functions.md#atanh)||
 |[conj](../standard-library/complex-functions.md#conj)|Karmaşık bir sayının karmaşık çiftini döndürür.|
 |[cos](../standard-library/complex-functions.md#cos)|Karmaşık bir sayının kosinüsünü döndürür.|
 |[COSH](../standard-library/complex-functions.md#cosh)|Karmaşık bir sayının hiperbolik kosinüsünü döndürür.|
@@ -84,6 +92,7 @@ Aksi belirtilmediği sürece, birden çok değer döndüren işlevler - π'dan b
 |[Norm](../standard-library/complex-functions.md#norm)|Karmaşık bir sayıyı normalini ayıklar.|
 |[Yuvarlak](../standard-library/complex-functions.md#polar)|Belirtilen modül ve bağımsız değişken için karşılık gelen, karmaşık sayıyı Kartezyen biçiminde döndürür.|
 |[POW](../standard-library/complex-functions.md#pow)|Başka bir karmaşık sayı değerini karmaşık bir sayıyı bir tabanı oluşturularak elde edilen karmaşık sayıyı değerlendirir.|
+|[Proj](../standard-library/complex-functions.md#proj)||
 |[Gerçek](../standard-library/complex-functions.md#real)|Gerçek ve karmaşık bir sayıyı bileşenini ayıklar.|
 |[sin](../standard-library/complex-functions.md#sin)|Karmaşık bir sayının sinüsünü döndürür.|
 |[SİNH](../standard-library/complex-functions.md#sinh)|Karmaşık bir sayının hiperbolik sinüsünü döndürür.|
@@ -93,7 +102,7 @@ Aksi belirtilmediği sürece, birden çok değer döndüren işlevler - π'dan b
 
 ### <a name="operators"></a>İşleçler
 
-|İşleç|Açıklama|
+|||
 |-|-|
 |[operator!=](../standard-library/complex-operators.md#op_neq)|İki karmaşık sayılar, biri veya ikisi de arasındaki eşitsizliği sınar reel ve sanal parça türünün bir alt kümesine ait olabilir.|
 |[operator *](../standard-library/complex-operators.md#op_star)|İki çarpar karmaşık sayılar, biri veya ikisi de ait alt reel ve sanal parçaları için türü.|
@@ -106,7 +115,7 @@ Aksi belirtilmediği sürece, birden çok değer döndüren işlevler - π'dan b
 
 ### <a name="classes"></a>Sınıflar
 
-|örneği|Açıklama|
+|||
 |-|-|
 |[karmaşık\<çift >](../standard-library/complex-double.md)|Açıkça özel bir şablon sınıfı nesne, türü hem de sıralı bir çift depolayan bir nesneyi tanımlayan **çift**burada ilk karmaşık bir sayıyı gerçek bölümünü temsil eder ve ikinci sanal bölümü temsil eder.|
 |[karmaşık\<kayan noktalı sayı >](../standard-library/complex-float.md)|Açıkça özel bir şablon sınıfı nesne, türü hem de sıralı bir çift depolayan bir nesneyi tanımlayan **float**burada ilk karmaşık bir sayıyı gerçek bölümünü temsil eder ve ikinci sanal bölümü temsil eder.|

@@ -24,12 +24,12 @@ helpviewer_keywords:
 - std::is_trivially_copy_assignable
 - std::is_trivially_move_assignable
 - std::is_trivially_move_constructible
-ms.openlocfilehash: 027ed3052f5341860112f564974b7a96aea7ff51
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: d607e68bd61a4f9aa6c00ab66c5ded3ecd508082
+ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62399414"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68241501"
 ---
 # <a name="lttypetraitsgt-functions"></a>&lt;type_traits&gt; işlevleri
 
@@ -37,8 +37,9 @@ ms.locfileid: "62399414"
 |-|-|-|
 |[is_assignable](#is_assignable)|[is_copy_assignable](#is_copy_assignable)|[is_copy_constructible](#is_copy_constructible)|
 |[is_default_constructible](#is_default_constructible)|[is_move_assignable](#is_move_assignable)|[is_move_constructible](#is_move_constructible)|
-|[is_nothrow_move_assignable](#is_nothrow_move_assignable)|[is_trivially_copy_assignable](#is_trivially_copy_assignable)|[is_trivially_move_assignable](#is_trivially_move_assignable)|
-|[is_trivially_move_constructible](#is_trivially_move_constructible)|
+|[is_nothrow_move_assignable](#is_nothrow_move_assignable)|[is_nothrow_swappable](#is_nothrow_swappable)|[is_nothrow_swappable_with](#is_nothrow_swappable_with)|
+|[is_swappable](#is_swappable)|[is_swappable_with](#is_swappable_with)|[is_trivially_copy_assignable](#is_trivially_copy_assignable)|
+|[is_trivially_move_assignable](#is_trivially_move_assignable)|[is_trivially_move_constructible](#is_trivially_move_constructible)|
 
 ## <a name="is_assignable"></a>  is_assignable
 
@@ -51,10 +52,10 @@ struct is_assignable;
 
 ### <a name="parameters"></a>Parametreler
 
-*Alıcı*<br/>
+*To*<br/>
 Atamayı alan nesnenin türü.
 
-*Kaynak*<br/>
+*From*<br/>
 Değer sağlayan bir nesne türü.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -236,6 +237,30 @@ Sorgulanacak tür.
 ### <a name="remarks"></a>Açıklamalar
 
 Karşılaştırmasının bir örneği true tutan türü *Ty* false tuttuğu nothrow taşıma atama işleci, aksi takdirde sahiptir.
+
+## <a name="is_nothrow_swappable"></a>  is_nothrow_swappable
+
+```cpp
+template <class T> struct is_nothrow_swappable;
+```
+
+## <a name="is_nothrow_swappable_with"></a>  is_nothrow_swappable_with
+
+```cpp
+template <class T, class U> struct is_nothrow_swappable_with;
+```
+
+## <a name="is_swappable"></a>  is_swappable
+
+```cpp
+template <class T> struct is_swappable;
+```
+
+## <a name="is_swappable_with"></a>  is_swappable_with
+
+```cpp
+template <class T, class U> struct is_swappable_with;
+```
 
 ## <a name="is_trivially_copy_assignable"></a>  is_trivially_copy_assignable
 

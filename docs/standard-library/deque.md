@@ -6,26 +6,29 @@ f1_keywords:
 helpviewer_keywords:
 - deque header
 ms.assetid: 4521fe92-5a91-4853-9e9f-59600bf9e46f
-ms.openlocfilehash: 4c9746a0ffee654bb783e30e9a98e708b68048cf
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 167bdc324a67d8b1379f279e8fcc363ee6b0fca2
+ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62393993"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68246732"
 ---
 # <a name="ltdequegt"></a>&lt;deque&gt;
 
 Kapsayıcı Şablon sınıfı deque ve çeşitli destek şablonları tanımlar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="requirements"></a>Gereksinimler
 
-```cpp
-#include <deque>
-```
+**Üst bilgi**: \<deque >
+
+> [!NOTE]
+> \<Deque > Kitaplığı'nı da kullanan `#include <initializer_list>` deyimi.
+
+## <a name="members"></a>Üyeler
 
 ### <a name="operators"></a>İşleçler
 
-|İşleç|Açıklama|
+|||
 |-|-|
 |[operator!=](../standard-library/deque-operators.md#op_neq)|İşlecin sol tarafındaki deque nesne işlecin sağ tarafındaki deque nesneye eşit olup olmadığını sınar.|
 |[işleç <](../standard-library/deque-operators.md#op_lt)|İşlecin sol tarafındaki deque nesnesinin işlecin sağ tarafındaki deque nesneden küçük olup olmadığını sınar.|
@@ -36,13 +39,13 @@ Kapsayıcı Şablon sınıfı deque ve çeşitli destek şablonları tanımlar.
 
 ### <a name="functions"></a>İşlevler
 
-|İşlev|Açıklama|
+|||
 |-|-|
 |[değiştirme](../standard-library/deque-functions.md#swap)|İki deques öğelerini birbiriyle değiştirir.|
 
 ### <a name="classes"></a>Sınıflar
 
-|örneği|Açıklama|
+|||
 |-|-|
 |[deque Sınıfı](../standard-library/deque-class.md)|Öğeleri belirli bir türden doğrusal bir düzende düzenlemek ve vektör gibi herhangi bir öğe ve verimli ekleme ve silme kapsayıcı arkasına hızlı rastgele erişim izni dizi kapsayıcılarının bir şablon sınıfı.|
 

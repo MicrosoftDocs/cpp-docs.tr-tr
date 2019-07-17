@@ -6,16 +6,19 @@ f1_keywords:
 helpviewer_keywords:
 - cassert header
 ms.assetid: 6ead15a3-ac45-4075-be8e-350bca995c26
-ms.openlocfilehash: 6634ddd9adb4e7e7364aec2354c4ebd707e6ccd1
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 14dda03e835ec411013b2d827bd1ccaa77f8982e
+ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62380045"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68245013"
 ---
 # <a name="ltcassertgt"></a>&lt;cassert&gt;
 
-Standart C Kitaplığı üstbilgisi içerir \<assert.h > ve ilişkili adlar ekler `std` ad alanı.
+Standart C Kitaplığı üstbilgisi içerir \<assert.h > ve ilişkili adlar ekler `std` ad alanı. Bu üstbilginin dahil sağlar, standart C Kitaplığı üstbilgisinde harici bağlantı kullanılarak bildirilen adların bildirilir `std` ad alanı.
+
+> [!NOTE]
+> \<Assert.h > tanımlamıyor `static_assert` makrosu.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -23,9 +26,15 @@ Standart C Kitaplığı üstbilgisi içerir \<assert.h > ve ilişkili adlar ekle
 #include <cassert>
 ```
 
-## <a name="remarks"></a>Açıklamalar
+## <a name="macros"></a>Makrolar
 
-Bu üstbilginin dahil sağlar, standart C Kitaplığı üstbilgisinde harici bağlantı kullanılarak bildirilen adların bildirilir `std` ad alanı.
+```cpp
+#define assert(E)
+```
+
+### <a name="remarks"></a>Açıklamalar
+
+`assert(E)` yalnızca NDEBUG tanımlanmışsa sabittir burada `assert` son tanımlanan veya yeniden tanımlandı, veya *E* türüne dönüştürülmüş bool değerlendirilen **true**.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

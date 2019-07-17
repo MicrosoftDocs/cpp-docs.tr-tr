@@ -21,12 +21,12 @@ helpviewer_keywords:
 - std::locale [C++], facet
 - std::locale [C++], id
 ms.assetid: 7dd6d271-472d-4750-8fb5-ea8f55fbef62
-ms.openlocfilehash: a1f5ace58af427645a0ad4eb8706506cc52ab08c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: dedc1b5812357c84944654d1c352be2a51e9393c
+ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62413183"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68245403"
 ---
 # <a name="locale-class"></a>locale Sınıfı
 
@@ -155,7 +155,7 @@ Sayısal biçimlendirme kuralları için sonraki eklemeler `cout` genel yerel ay
 |Üye işlevi|Açıklama|
 |-|-|
 |[Birleştirme](#combine)|Belirtilen yerel ayardaki bir modeli hedef yerel ayara ekler.|
-|[Adı](#name)|Depolanan yerel ayar adını döndürür.|
+|[name](#name)|Depolanan yerel ayar adını döndürür.|
 
 ### <a name="static-functions"></a>Statik işlevler
 
@@ -168,6 +168,7 @@ Sayısal biçimlendirme kuralları için sonraki eklemeler `cout` genel yerel ay
 
 |İşleç|Açıklama|
 |-|-|
+|[operator=](#op_eq)|Bir yerel ayar atar.|
 |[operator!=](#op_neq)|İki yerel ayarın farklı olup olmadığını sınar.|
 |[işleç)](#op_call)|İki karşılaştırır `basic_string` nesneleri.|
 |[operator==](#op_eq_eq)|İki yerel ayarın farksız olup olmadığını sınar.|
@@ -417,7 +418,7 @@ class id
 
 ## <a name="locale"></a>  Locale::Locale
 
-Bir yerel ayar veya yerel ayar kopyası ya da modelin veya kategorinin başka bir yerel ayardaki bir model veya kategori tarafından değiştirilen bir kopyasını oluşturur.
+Bir yerel ayar veya yerel ayar kopyası ya da modelin veya kategorinin başka bir yerel ayardaki bir model veya kategori tarafından değiştirilen bir kopyasını oluşturur. Ayrıca bir yok edici içerir.
 
 ```cpp
 locale();
@@ -430,6 +431,8 @@ locale(const locale& Loc, const char* Locname, category Cat);
 
 template <class Facet>
 locale(const locale& Loc, const Facet* Fac);
+
+~locale();
 ```
 
 ### <a name="parameters"></a>Parametreler
@@ -546,6 +549,14 @@ int main( )
 ```Output
 The name of the previous locale is: C.
 The name of the current locale is: German_Germany.1252.
+```
+
+## <a name="op_eq"></a>  Locale::operator =
+
+Bir yerel ayar atar.
+
+```cpp
+const locale& operator=(const locale& other) noexcept;
 ```
 
 ## <a name="op_neq"></a>  Locale::operator! =

@@ -16,21 +16,16 @@ helpviewer_keywords:
 - std::operator&lt; (deque)
 - std::operator&lt;= (deque)
 - std::operator== (deque)
-ms.openlocfilehash: a5e88d421df2746cf2ca0aab5be4c19953162559
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 868909ac4346a59cade3660f288a0f0e71bc4ed0
+ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62394006"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68245654"
 ---
 # <a name="ltdequegt-operators"></a>&lt;deque&gt; işleçleri
 
-||||
-|-|-|-|
-|[operator!=](#op_neq)|[İşleci&gt;](#op_gt)|[İşleci&gt;=](#op_gt_eq)|
-|[İşleci&lt;](#op_lt)|[İşleci&lt;=](#op_lt_eq)|[operator==](#op_eq_eq)|
-
-## <a name="op_neq"></a>  işleç! =
+## <a name="op_neq"></a> işleç! =
 
 İşlecin sol tarafındaki deque nesne işlecin sağ tarafındaki deque nesneye eşit olup olmadığını sınar.
 
@@ -40,10 +35,10 @@ bool operator!=(const deque<Type, Allocator>& left, const deque<Type, Allocator>
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*<br/>
+*Sol*\
 Bir nesne türü `deque`.
 
-*sağ*<br/>
+*sağ*\
 Bir nesne türü `deque`.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -75,12 +70,13 @@ int main( )
    else
       cout << "The deques are equal." << endl;
 }
-/* Output:
-The deques are not equal.
-*/
 ```
 
-## <a name="op_lt"></a>  İşleci&lt;
+```Output
+The deques are not equal.
+```
+
+## <a name="op_lt"></a> İşleci&lt;
 
 İşlecin sol tarafındaki deque nesnesinin işlecin sağ tarafındaki deque nesneden küçük olup olmadığını sınar.
 
@@ -90,10 +86,10 @@ bool operator<(const deque<Type, Allocator>& left, const deque<Type, Allocator>&
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*<br/>
+*Sol*\
 Bir nesne türü `deque`.
 
-*sağ*<br/>
+*sağ*\
 Bir nesne türü `deque`.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -129,12 +125,13 @@ int main( )
    else
       cout << "Deque c1 is not less than deque c2." << endl;
 }
-/* Output:
-Deque c1 is less than deque c2.
-*/
 ```
 
-## <a name="op_lt_eq"></a>  İşleci&lt;=
+```Output
+Deque c1 is less than deque c2.
+```
+
+## <a name="op_lt_eq"></a> İşleci&lt;=
 
 Deque işlecinin sol tarafında nesne küçük olup olmadığını sınar deque nesnesine eşit veya işlecin sağ tarafındaki.
 
@@ -144,10 +141,10 @@ bool operator<=(const deque<Type, Allocator>& left, const deque<Type, Allocator>
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*<br/>
+*Sol*\
 Bir nesne türü `deque`.
 
-*sağ*<br/>
+*sağ*\
 Bir nesne türü `deque`.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -183,12 +180,13 @@ int main( )
    else
       cout << "Deque c1 is greater than deque c2." << endl;
 }
-/* Output:
-Deque c1 is less than or equal to deque c2.
-*/
 ```
 
-## <a name="op_eq_eq"></a>  işleç ==
+```Output
+Deque c1 is less than or equal to deque c2.
+```
+
+## <a name="op_eq_eq"></a> işleç ==
 
 İşlecin sol tarafındaki deque nesnesinin işlecin sağ tarafındaki deque nesneye eşit olup olmadığını sınar.
 
@@ -198,10 +196,10 @@ bool operator==(const deque<Type, Allocator>& left, const deque<Type, Allocator>
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*<br/>
+*Sol*\
 Bir nesne türü `deque`.
 
-*sağ*<br/>
+*sağ*\
 Bir nesne türü `deque`.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -239,13 +237,14 @@ int main( )
    else
       cout << "The deques are not equal." << endl;
 }
-/* Output:
-The deques are equal.
-The deques are not equal.
-*/
 ```
 
-## <a name="op_gt"></a>  İşleci&gt;
+```Output
+The deques are equal.
+The deques are not equal.
+```
+
+## <a name="op_gt"></a> İşleci&gt;
 
 İşlecin sol tarafındaki deque nesnesinin işlecin sağ tarafındaki deque nesneden büyük olup olmadığını sınar.
 
@@ -255,10 +254,10 @@ bool operator>(const deque<Type, Allocator>& left, const deque<Type, Allocator>&
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*<br/>
+*Sol*\
 Bir nesne türü `deque`.
 
-*sağ*<br/>
+*sağ*\
 Bir nesne türü `deque`.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -295,12 +294,13 @@ int main( )
    else
       cout << "Deque c1 is not greater than deque c2." << endl;
 }
-/* Output:
-Deque c1 is greater than deque c2.
-*/
 ```
 
-## <a name="op_gt_eq"></a>  İşleci&gt;=
+```Output
+Deque c1 is greater than deque c2.
+```
+
+## <a name="op_gt_eq"></a> İşleci&gt;=
 
 İşlecin sol tarafındaki deque nesnesinin değerinden büyük veya işlecin sağ tarafındaki deque nesneye eşit olup olmadığını sınar.
 
@@ -310,10 +310,10 @@ bool operator>=(const deque<Type, Allocator>& left, const deque<Type, Allocator>
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*<br/>
+*Sol*\
 Bir nesne türü `deque`.
 
-*sağ*<br/>
+*sağ*\
 Bir nesne türü `deque`.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -350,11 +350,8 @@ int main( )
    else
       cout << "Deque c1 is less than deque c2." << endl;
 }
-/* Output:
-Deque c1 is greater than or equal to deque c2.
-*/
 ```
 
-## <a name="see-also"></a>Ayrıca bkz.
-
-[\<deque >](../standard-library/deque.md)<br/>
+```Output
+Deque c1 is greater than or equal to deque c2.
+```

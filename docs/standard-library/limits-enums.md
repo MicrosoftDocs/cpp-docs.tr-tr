@@ -5,20 +5,16 @@ f1_keywords:
 - limits/std::float_denorm_style
 - limits/std::float_round_style
 ms.assetid: c86680a2-ba97-4ed9-8c20-a448857d7dc5
-ms.openlocfilehash: 68f0ba605b62f2492f49a2b81030c42dca80bf5f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 567e0538f59c40d57f85d652a8919be6e034cf0b
+ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62413235"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68245351"
 ---
 # <a name="ltlimitsgt-enums"></a>&lt;sınırları&gt; sabit listeleri
 
-|||
-|-|-|
-|[float_denorm_style](#float_denorm_style)|[float_round_style](#float_round_style)|
-
-## <a name="float_denorm_style"></a>  float_denorm_style numaralandırması
+## <a name="float_denorm_style"></a> float_denorm_style
 
 Numaralandırma normalleştirilmişlikten çıkarılmış bir kayan nokta değeri temsil eden bir uygulama seçim yapabileceği çeşitli yöntemleri açıklar; normalleştirilmiş bir değer olarak göstermek için çok küçük bir:
 
@@ -43,7 +39,7 @@ Sabit listesi döndürür:
 
 Bkz: [numeric_limits::has_denorm](../standard-library/numeric-limits-class.md#has_denorm) içinde bu sabit listesi değerlerini erişilebilir bir örnek.
 
-## <a name="float_round_style"></a>  float_round_style numaralandırması
+## <a name="float_round_style"></a> float_round_style
 
 Sabit bir kayan nokta değeri tamsayıya yuvarlama uygulaması seçim yapabileceği çeşitli yöntemleri açıklar.
 
@@ -73,7 +69,3 @@ Sabit listesi döndürür:
 ### <a name="example"></a>Örnek
 
 Bkz: [numeric_limits::round_style](../standard-library/numeric-limits-class.md#round_style) içinde bu sabit listesi değerlerini erişilebilir bir örnek.
-
-## <a name="see-also"></a>Ayrıca bkz.
-
-[\<sınırları >](../standard-library/limits.md)<br/>

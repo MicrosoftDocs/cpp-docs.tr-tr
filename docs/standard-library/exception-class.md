@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - exception class
 ms.assetid: 4f181f67-5888-4b50-89a6-745091ffb2fe
-ms.openlocfilehash: 009ef74d810976eb9f054b45e388ceb0fe612b2e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 90906469e923d29dd886930bd36944e4292bd9cd
+ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62400623"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68246075"
 ---
 # <a name="exception-class"></a>exception Class
 
@@ -29,7 +29,7 @@ class exception {
    exception& operator=(const exception &right);
    virtual ~exception();
    virtual const char *what() const;
-   };
+};
 ```
 
 ## <a name="remarks"></a>Açıklamalar
@@ -44,13 +44,3 @@ class exception {
 ## <a name="example"></a>Örnek
 
 Devralınan standart özel durum sınıfları kullanım örnekleri için `exception` sınıfı, hiç tanımlanan sınıfların [ \<stdexcept >](../standard-library/stdexcept.md).
-
-## <a name="requirements"></a>Gereksinimler
-
-**Başlık:** \<özel durum >
-
-**Namespace:** std
-
-## <a name="see-also"></a>Ayrıca bkz.
-
-[C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>

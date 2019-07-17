@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - const_mem_fun_t class
 ms.assetid: f169d381-019b-4a0e-a9a3-54da6d948270
-ms.openlocfilehash: 10a39d4b7871e08a5bf3ec56f6d11df5ad8b646c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 0bdfdbac7a23a4b0e3b830b05990bf028c7bb316
+ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62212034"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68244554"
 ---
 # <a name="constmemfunt-class"></a>const_mem_fun_t Sınıfı
 
@@ -30,10 +30,10 @@ class const_mem_fun_t : public unary_function <Type *, Result>
 
 ### <a name="parameters"></a>Parametreler
 
-*PM*<br/>
+*PM*\
 Bir sınıfın üye işlevi işaretçisi `Type` bir işlev nesnesi için dönüştürülecek.
 
-*Pleft*<br/>
+*Pleft*\
 Nesne, *Pm* üye işlevi çağrılır.
 
 ## <a name="return-value"></a>Dönüş Değeri
@@ -42,19 +42,8 @@ Bir uyarlanabilir birli işlevi.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Şablon sınıfı bir kopyasını depolar *Pm*, bir sınıfın bir üye işlevi işaretçisi olmalıdır `Type`, özel üye nesnesinde. Onun üye işlevini tanımlar `operator()` döndüren olarak ( `Pleft` -> \* `Pm`) () **const**.
+Şablon sınıfı bir kopyasını depolar *Pm*, bir sınıfın bir üye işlevi işaretçisi olmalıdır `Type`, özel üye nesnesinde. Onun üye işlevini tanımlar `operator()` döndüren olarak (`Pleft` -> \* `Pm`) () **const**.
 
 ## <a name="example"></a>Örnek
 
 Oluşturucusuna `const_mem_fun_t` genellikle kullanılmaz doğrudan; yardımcı işlevini `mem_fun` üye işlevleri uyum sağlamak için kullanılır. Bkz: [mem_fun](../standard-library/functional-functions.md#mem_fun) üye işlevi bağdaştırıcıları kullanmayı gösteren bir örnek.
-
-## <a name="requirements"></a>Gereksinimler
-
-**Başlık:** \<işlev >
-
-**Namespace:** std
-
-## <a name="see-also"></a>Ayrıca bkz.
-
-[C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
-[C++ Standart Kitaplığı Başvurusu](../standard-library/cpp-standard-library-reference.md)<br/>

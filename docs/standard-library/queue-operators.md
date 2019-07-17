@@ -16,21 +16,16 @@ helpviewer_keywords:
 - std::operator&lt; (queue)
 - std::operator&lt;= (queue)
 - std::operator== (queue)
-ms.openlocfilehash: 496b728b67c4539a63d5bf3c783f8c9145c1de42
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 420d717b34b6c17587f8790701906e06ab008d96
+ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62369910"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68240283"
 ---
 # <a name="ltqueuegt-operators"></a>&lt;Kuyruk&gt; işleçleri
 
-||||
-|-|-|-|
-|[operator!=](#op_neq)|[İşleci&gt;](#op_gt)|[İşleci&gt;=](#op_gt_eq)|
-|[İşleci&lt;](#op_lt)|[İşleci&lt;=](#op_lt_eq)|[operator==](#op_eq_eq)|
-
-## <a name="op_neq"></a>  işleç! =
+## <a name="op_neq"></a> işleç! =
 
 Sıra nesnesinin işlecin sol tarafındaki sıra nesnesinin işlecin sağ tarafındaki eşit olup olmadığını sınar.
 
@@ -40,10 +35,10 @@ bool operator!=(const queue <Type, Container>& left, const queue <Type, Containe
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*<br/>
+*Sol*\
 Bir nesne türü `queue`.
 
-*sağ*<br/>
+*sağ*\
 Bir nesne türü `queue`.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -97,7 +92,7 @@ The queues q1 and q2 are not equal.
 The queues q1 and q3 are equal.
 ```
 
-## <a name="op_lt"></a>  İşleci&lt;
+## <a name="op_lt"></a> İşleci&lt;
 
 Sıra nesnesinin işlecin sol tarafındaki sıra nesnesinin işlecin sağ tarafındaki küçüktür olup olmadığını sınar.
 
@@ -107,10 +102,10 @@ bool operator<(const queue <Type, Container>& left, const queue <Type, Container
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*<br/>
+*Sol*\
 Bir nesne türü `queue`.
 
-*sağ*<br/>
+*sağ*\
 Bir nesne türü `queue`.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -160,7 +155,7 @@ The queue q1 is less than the queue q2.
 The queue q1 is not less than the queue q3.
 ```
 
-## <a name="op_lt_eq"></a>  İşleci&lt;=
+## <a name="op_lt_eq"></a> İşleci&lt;=
 
 Sıranın işlecinin sol tarafında nesne olup olmadığını test eder küçüktür veya eşittir sıra nesnesinin işlecin sağ tarafındaki.
 
@@ -170,10 +165,10 @@ bool operator<=(const queue <Type, Container>& left, const queue <Type, Containe
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*<br/>
+*Sol*\
 Bir nesne türü `queue`.
 
-*sağ*<br/>
+*sağ*\
 Bir nesne türü `queue`.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -225,7 +220,7 @@ The queue q1 is greater than the queue q2.
 The queue q1 is less than or equal to the queue q3.
 ```
 
-## <a name="op_eq_eq"></a>  işleç ==
+## <a name="op_eq_eq"></a> işleç ==
 
 İşlecin sol tarafındaki sıra nesnesinin işlecin sağ tarafındaki sıra nesnesinin eşit olup olmadığını sınar.
 
@@ -235,10 +230,10 @@ bool operator==(const queue <Type, Container>& left, const queue <Type, Containe
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*<br/>
+*Sol*\
 Bir nesne türü `queue`.
 
-*sağ*<br/>
+*sağ*\
 Bir nesne türü `queue`.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -291,7 +286,7 @@ The queues q1 and q2 are not equal.
 The queues q1 and q3 are equal.
 ```
 
-## <a name="op_gt"></a>  İşleci&gt;
+## <a name="op_gt"></a> İşleci&gt;
 
 Sıra nesnesinin işlecin sol tarafındaki sıra nesnesinin işlecin sağ tarafındaki büyük olup olmadığını sınar.
 
@@ -301,10 +296,10 @@ bool operator>(const queue <Type, Container>& left, const queue <Type, Container
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*<br/>
+*Sol*\
 Bir nesne türü `queue`.
 
-*sağ*<br/>
+*sağ*\
 Bir nesne türü `queue`.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -357,7 +352,7 @@ The queue q1 is not greater than the queue q2.
 The queue q1 is greater than the queue q3.
 ```
 
-## <a name="op_gt_eq"></a>  İşleci&gt;=
+## <a name="op_gt_eq"></a> İşleci&gt;=
 
 İşlecin sol tarafındaki sıra nesnesinin değerinden büyük veya eşittir sıra nesnesinin işlecin sağ tarafındaki olup olmadığını sınar.
 
@@ -367,10 +362,10 @@ bool operator>=(const queue <Type, Container>& left, const queue <Type, Containe
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*<br/>
+*Sol*\
 Bir nesne türü `queue`.
 
-*sağ*<br/>
+*sağ*\
 Bir nesne türü `queue`.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -421,7 +416,3 @@ int main( )
 The queue q1 is less than the queue q2.
 The queue q1 is greater than or equal to the queue q3.
 ```
-
-## <a name="see-also"></a>Ayrıca bkz.
-
-[\<Kuyruk >](../standard-library/queue.md)<br/>

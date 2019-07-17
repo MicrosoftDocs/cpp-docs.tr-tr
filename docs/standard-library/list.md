@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - list header
 ms.assetid: 2345823b-5612-44d8-95d3-aa96ed076d17
-ms.openlocfilehash: cfe6e8b4f75a3dbf824574654bfba83dcbbd8ba6
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f2c04bb73bfa379ea87ba4c950bf805931c16ba1
+ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62413209"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68245560"
 ---
 # <a name="ltlistgt"></a>&lt;list&gt;
 
@@ -24,9 +24,14 @@ Kapsayıcı Şablon sınıfı listesini ve çeşitli destek şablonları tanıml
 #include <list>
 ```
 
+> [!NOTE]
+> \<Listesi > Kitaplığı'nı da kullanan `#include <initializer_list>` deyimi.
+
+## <a name="members"></a>Üyeler
+
 ### <a name="operators"></a>İşleçler
 
-|İşleç|Açıklama|
+|||
 |-|-|
 |[operator!=](../standard-library/list-operators.md#op_neq)|İşlecin sol tarafındaki liste nesnesi işlecin sağ tarafındaki liste nesnesine eşit olup olmadığını sınar.|
 |[işleç <](../standard-library/list-operators.md#op_lt)|İşlecin sol tarafındaki liste nesnesi işlecin sağ tarafındaki listesi nesneden küçük olup olmadığını sınar.|
@@ -35,9 +40,15 @@ Kapsayıcı Şablon sınıfı listesini ve çeşitli destek şablonları tanıml
 |[operator >](../standard-library/list-operators.md#op_gt)|İşlecin sol tarafındaki liste nesnesi liste nesnesi işlecin sağ tarafındaki büyük olup olmadığını sınar.|
 |[operator>=](../standard-library/list-operators.md#op_gt_eq)|İşlecin sol tarafındaki liste nesnesi büyük veya işlecin sağ tarafındaki liste nesnesine eşit olup olmadığını sınar.|
 
+### <a name="functions"></a>İşlevler
+
+|||
+|-|-|
+|[değiştirme](../standard-library/list-functions.md#swap)|İki listenin öğelerini değiştirir.|
+
 ### <a name="classes"></a>Sınıflar
 
-|örneği|Açıklama|
+|||
 |-|-|
 |[list Sınıfı](../standard-library/list-class.md)|Doğrusal bir düzenleme içinde öğeleri korumak ve verimli eklemeler ve silmeler dizisi içindeki herhangi bir yere izin veren bir dizi kapsayıcılarının bir şablon sınıfı.|
 

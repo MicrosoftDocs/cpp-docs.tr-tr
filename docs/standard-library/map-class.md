@@ -88,12 +88,12 @@ helpviewer_keywords:
 - std::map [C++], upper_bound
 - std::map [C++], value_comp
 ms.assetid: 7876f4c9-ebb4-4878-af1e-09364c43af0a
-ms.openlocfilehash: 52a24bb2372cc7f22797ae7122b6659724c47b55
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 67345a9530162aee0c1b5c44baa81fa9c799014a
+ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62413014"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68246433"
 ---
 # <a name="map-class"></a>map Sınıfı
 
@@ -113,18 +113,18 @@ class map;
 
 ### <a name="parameters"></a>Parametreler
 
-*Key*<br/>
+*Anahtarı*\
 Eşlemde depolanacak anahtar veri türü.
 
-*Tür*<br/>
+*Türü*\
 Eşlemde depolanacak öğe veri türü.
 
-*Nitelikler*<br/>
+*Nitelikler*\
 İki öğenin değerlerini eşlemde kendi göreli sıralarını belirlemek için sıralama anahtarları olarak karşılaştırabilen bir işlev nesnesi sağlayan tür. Bu bağımsız değişken isteğe bağlıdır ve ikili koşul `less<Key>` varsayılan değerdir.
 
 C ++ 14 sürümünde türü parametresi yok std::less <> koşul belirterek heterojen arama etkinleştirebilirsiniz. Daha fazla bilgi için [, ilişkili kapsayıcılar için heterojen arama](../standard-library/stl-containers.md#sequence_containers)
 
-*Ayırıcı*<br/>
+*Ayırıcı*\
 Eşlemin bellek ayırmayı ve ayırmayı kaldırma hakkındaki ayrıntıları içeren saklı ayırıcı nesnesini gösteren tür. Bu bağımsız değişken isteğe bağlıdır ve varsayılan değer `allocator<pair<const Key, Type> >`.
 
 ## <a name="remarks"></a>Açıklamalar
@@ -160,13 +160,13 @@ Eşleme türü bir depolanmış bir işlev nesnesi çağırarak denetlediği ö�
 
 ### <a name="constructors"></a>Oluşturucular
 
-|Oluşturucu|Açıklama|
+|||
 |-|-|
 |[Harita](#map)|Belirli bir boyut veya belirli bir değer öğeleriyle veya belirli bir ile bir liste oluşturur `allocator` veya başka bir eşlemin bir kopyasını olarak.|
 
 ### <a name="typedefs"></a>Tür tanımları
 
-|Tür adı|Açıklama|
+|||
 |-|-|
 |[allocator_type](#allocator_type)|İçin bir typedef `allocator` harita nesnesi için sınıf.|
 |[const_iterator](#const_iterator)|Okuyabilen çift yönlü yineleyiciler için typedef bir **const** haritadaki öğe.|
@@ -204,7 +204,7 @@ Eşleme türü bir depolanmış bir işlev nesnesi çağırarak denetlediği ö�
 |[silme](#erase)|Bir eşlemdeki bir öğe veya öğe aralığını belirtilen konumdan kaldırır.|
 |[Bul](#find)|Belirtilen anahtara eşit bir anahtara sahip bir eşlem içindeki bir öğenin konumunu gösteren bir yineleyici döndürür.|
 |[get_allocator](#get_allocator)|Bir kopyasını döndürür `allocator` harita oluşturmak için kullanılan nesne.|
-|[insert](#insert)|Bir eşlemdeki bir öğeyi veya öğe aralığını belirtilen konumda ekler.|
+|[Ekle](#insert)|Bir eşlemdeki bir öğeyi veya öğe aralığını belirtilen konumda ekler.|
 |[key_comp](#key_comp)|Bir eşlem içindeki anahtarları sıralamak için kullanılan karşılaştırma nesnesinin bir kopyasını döndürür.|
 |[lower_bound](#lower_bound)|Bir yineleyiciyi belirtilen anahtardan daha büyük veya ona eşit bir anahtar değere sahip bir eşlem içindeki ilk öğeye döndürür.|
 |[max_size](#max_size)|Eşlem öğesinin maksimum uzunluğunu döndürür.|
@@ -217,18 +217,12 @@ Eşleme türü bir depolanmış bir işlev nesnesi çağırarak denetlediği ö�
 
 ### <a name="operators"></a>İşleçler
 
-|İşleç|Açıklama|
+|||
 |-|-|
 |[işleci&#91;&#93;](#op_at)|Belirtilen bir anahtar değere sahip bir eşleme bir öğe ekler.|
 |[operator=](#op_eq)|Bir eşlemin öğelerini başka bir eşlem kopyasıyla değiştirir.|
 
-## <a name="requirements"></a>Gereksinimler
-
-**Başlık:** \<harita >
-
-**Namespace:** std
-
-## <a name="allocator_type"></a>  Map::allocator_type
+## <a name="allocator_type"></a> allocator_type
 
 Harita nesnesi için ayırıcı sınıf temsil eden tür.
 
@@ -240,7 +234,7 @@ typedef Allocator allocator_type;
 
 Örneğin bakın [get_allocator](#get_allocator) kullanan bir örnek için `allocator_type`.
 
-## <a name="at"></a>  Map::AT
+## <a name="at"></a> konumunda
 
 Belirtilen anahtar değere sahip bir öğe bulur.
 
@@ -252,10 +246,8 @@ const Type& at(const Key& key) const;
 
 ### <a name="parameters"></a>Parametreler
 
-|Parametre|Açıklama|
-|-|-|
-|Parametre|Açıklama|
-|*anahtar*|Bulunacak anahtar değer.|
+anahtar * \
+Bulunacak anahtar değer.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -291,7 +283,7 @@ int main()
     }
 ```
 
-## <a name="begin"></a>  Map::Begin
+## <a name="begin"></a> başlayın
 
 Eşlem içindeki ilk öğeyi ele alan bir yineleyici döndürür.
 
@@ -346,7 +338,7 @@ The first element of m1 is 0
 The first element of m1 is now 1
 ```
 
-## <a name="cbegin"></a>  Map::cbegin
+## <a name="cbegin"></a> cbegin
 
 Döndürür bir **const** konuma bir aralıktaki son öğeyi ele alan bir yineleyici.
 
@@ -372,7 +364,7 @@ auto i2 = Container.cbegin();
 // i2 is Container<T>::const_iterator
 ```
 
-## <a name="cend"></a>  Map::cend
+## <a name="cend"></a> cend
 
 Döndürür bir **const** konuma bir aralıktaki son öğeyi ele alan bir yineleyici.
 
@@ -400,7 +392,7 @@ auto i2 = Container.cend();
 
 Tarafından döndürülen değer `cend` kaldırılmamalıdır.
 
-## <a name="clear"></a>  Map::Clear
+## <a name="clear"></a> Temizle
 
 Eşlemin tüm öğelerini siler.
 
@@ -444,7 +436,7 @@ The size of the map is initially 2.
 The size of the map after clearing is 0.
 ```
 
-## <a name="const_iterator"></a>  Map::const_iterator
+## <a name="const_iterator"></a> const_iterator
 
 Çift yönlü bir yineleyici sağlayan tür okuma bir **const** haritadaki öğe.
 
@@ -468,7 +460,7 @@ Eşlenmiş veri öğesi için değeri erişmek için `cIter`  ->  **ikinci**, e�
 
 Örneğin bakın [başlamak](#begin) kullanan bir örnek için `const_iterator`.
 
-## <a name="const_pointer"></a>  Map::const_pointer
+## <a name="const_pointer"></a> const_pointer
 
 Bir işaretçi sağlayan bir tür bir **const** bir eşlem içindeki öğe.
 
@@ -482,7 +474,7 @@ Bir tür `const_pointer` bir öğenin değerini değiştirmek için kullanılama
 
 Çoğu durumda bir [yineleyici](#iterator) harita nesnesindeki öğelere erişmek için kullanılmalıdır.
 
-## <a name="const_reference"></a>  Map::const_reference
+## <a name="const_reference"></a> const_reference
 
 Bir başvuru sağlayan bir tür bir **const** okumak ve gerçekleştirmek için bir eşlem içinde depolanan öğenin **const** operations.
 
@@ -532,7 +524,7 @@ The key of first element in the map is 1.
 The data value of first element in the map is 10.
 ```
 
-## <a name="const_reverse_iterator"></a>  Map::const_reverse_iterator
+## <a name="const_reverse_iterator"></a> const_reverse_iterator
 
 Çift yönlü bir yineleyici sağlayan tür herhangi okuma **const** haritadaki öğe.
 
@@ -556,7 +548,7 @@ Eşlenmiş veri öğesi için değeri erişmek için `crIter`  ->  **ikinci**, e
 
 Örneğin bakın [rend](#rend) bildirme ve kullanma konusunda bir örnek için `const_reverse_iterator`.
 
-## <a name="count"></a>  Map::Count
+## <a name="count"></a> Sayısı
 
 Anahtarı parametre tarafından belirtilen bir anahtarla eşleşen bir eşlem öğelerin sayısını döndürür.
 
@@ -566,7 +558,7 @@ size_type count(const Key& key) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*anahtar*<br/>
+*Anahtarı*\
 Öğeleri eşlemden eşleştirilmesi için anahtar değeri.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -624,7 +616,7 @@ The number of elements in m1 with a sort key of 2 is: 1.
 The number of elements in m1 with a sort key of 3 is: 0.
 ```
 
-## <a name="crbegin"></a>  Map::crbegin
+## <a name="crbegin"></a> crbegin
 
 Ters Döndürülmüş eşlem içindeki ilk öğeyi ele alan sabit bir yineleyici döndürür.
 
@@ -674,7 +666,7 @@ int main( )
 The first element of the reversed map m1 is 3.
 ```
 
-## <a name="crend"></a>  Map::crend
+## <a name="crend"></a> crend
 
 Ters Döndürülmüş eşlem içindeki son öğeyi takip eden konumu ele alan sabit bir yineleyici döndürür.
 
@@ -727,7 +719,7 @@ int main( )
 The last element of the reversed map m1 is 1.
 ```
 
-## <a name="difference_type"></a>  Map::difference_type
+## <a name="difference_type"></a> difference_type
 
 Yineleyiciler tarafından gösterilen öğeler arasındaki bir aralıktaki eşlemin öğelerinin sayısını temsil etmek için kullanılabilen işaretli bir tamsayı türü.
 
@@ -783,7 +775,7 @@ int main( )
 The number of elements in the map m1 is: 4.
 ```
 
-## <a name="emplace"></a>  Map::emplace
+## <a name="emplace"></a> emplace
 
 Bir haritayı (hiçbir kopyalama veya taşıma işlemleri gerçekleştirilir) yerinde oluşturulmuş bir öğe ekler.
 
@@ -796,10 +788,8 @@ emplace(
 
 ### <a name="parameters"></a>Parametreler
 
-|Parametre|Açıklama|
-|-|-|
-|Parametre|Açıklama|
-|*bağımsız değişken*|Bir öğenin değerini eşdeğer sıralı bir öğe içermiyorsa eşlemeye eklenecek oluşturmak için iletilen bağımsız değişkenler.|
+*bağımsız değişken*\
+Bir öğenin değerini eşdeğer sıralı bir öğe içermiyorsa eşlemeye eklenecek oluşturmak için iletilen bağımsız değişkenler.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -871,7 +861,7 @@ int main()
 }
 ```
 
-## <a name="emplace_hint"></a>  Map::emplace_hint
+## <a name="emplace_hint"></a> emplace_hint
 
 (Hiçbir kopyalama veya taşıma işlemleri gerçekleştirilir) bir yerleşim ipucuyla birlikte yerinde oluşturulmuş bir öğe ekler.
 
@@ -884,11 +874,11 @@ iterator emplace_hint(
 
 ### <a name="parameters"></a>Parametreler
 
-|Parametre|Açıklama|
-|-|-|
-|Parametre|Açıklama|
-|*bağımsız değişken*|Harita, bu öğeyi zaten içeriyor veya zaten anahtarı bir öğe içeriyorsa sürece daha genel olarak, eşdeğer sıralanır sürece eşlemeye eklenecek bir öğe oluşturmak için iletilen bağımsız değişkenler.|
-|*Burada*|Doğru ekleme noktasını için aramaya başlamak için bir yerde. (Bu noktanın hemen önceyse *burada*, ekleme Logaritmik süre yerine amorti edilmiş sabit zaman meydana gelebilir.)|
+*bağımsız değişken*\
+Harita, bu öğeyi zaten içeriyor veya zaten anahtarı bir öğe içeriyorsa sürece daha genel olarak, eşdeğer sıralanır sürece eşlemeye eklenecek bir öğe oluşturmak için iletilen bağımsız değişkenler.
+
+*Burada*\
+Doğru ekleme noktasını için aramaya başlamak için bir yerde. (Bu noktanın hemen önceyse *burada*, ekleme Logaritmik süre yerine amorti edilmiş sabit zaman meydana gelebilir.)
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -948,7 +938,7 @@ int main()
 }
 ```
 
-## <a name="empty"></a>  Map::empty
+## <a name="empty"></a> boş
 
 Bir harita boş olup olmadığını sınar.
 
@@ -993,7 +983,7 @@ The map m1 is not empty.
 The map m2 is empty.
 ```
 
-## <a name="end"></a>  Map::End
+## <a name="end"></a> Son
 
 past-the-end yineleyici döndürür.
 
@@ -1015,7 +1005,7 @@ Tarafından döndürülen değer `end` kaldırılmamalıdır.
 
 Kod örneği için bkz: [map::find](#find).
 
-## <a name="equal_range"></a>  Map::equal_range
+## <a name="equal_range"></a> equal_range
 
 Yineleyicilerin bir çiftini temsil eden döndürür [lower_bound](#lower_bound) anahtarının ve [upper_bound](#upper_bound) anahtarı.
 
@@ -1027,7 +1017,7 @@ pair <iterator, iterator> equal_range (const Key& key);
 
 ### <a name="parameters"></a>Parametreler
 
-*anahtar*<br/>
+*Anahtarı*\
 Bir öğenin Aranan eşlemesinden sıralama anahtarı ile Karşılaştırılacak bağımsız değişken anahtar değeri.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -1094,7 +1084,7 @@ matching the 2nd element of the pair returned by equal_range( 2 ).
 The map m1 doesn't have an element with a key less than 40.
 ```
 
-## <a name="erase"></a>  Map::ERASE
+## <a name="erase"></a> silme
 
 Bir öğenin veya öğelerin aralığını belirtilen konumlardan bir eşlem içindeki kaldırır veya belirtilen bir anahtarla eşleşen öğeleri kaldırır.
 
@@ -1112,16 +1102,16 @@ size_type erase(
 
 ### <a name="parameters"></a>Parametreler
 
-*Burada*<br/>
+*Burada*\
 Kaldırılacak öğenin konumu.
 
-*ilk*<br/>
+*ilk*\
 Kaldırılacak ilk öğenin konumu.
 
-*Son*<br/>
+*Son*\
 Kaldırılacak yalnızca son öğenin ötesinde konumu.
 
-*Key*<br/>
+*Anahtarı*\
 Kaldırılacak öğe anahtar değeri.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -1210,7 +1200,7 @@ int main()
 }
 ```
 
-## <a name="find"></a>  Map::Find
+## <a name="find"></a> Bul
 
 Belirtilen anahtara denk bir anahtara sahip bir eşlem içindeki bir öğenin konumunu gösteren bir yineleyici döndürür.
 
@@ -1222,7 +1212,7 @@ const_iterator find(const Key& key) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*anahtar*<br/>
+*Anahtarı*\
 Bir öğenin Aranan eşlemesinden sıralama anahtarı tarafından eşleştirilecek anahtar değeri.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -1297,7 +1287,7 @@ int main()
 }
 ```
 
-## <a name="get_allocator"></a>  Map::get_allocator
+## <a name="get_allocator"></a> get_allocator
 
 Eşlem oluşturmak için kullanılan ayırıcı nesnesinin bir kopyasını döndürür.
 
@@ -1367,7 +1357,7 @@ int main( )
 }
 ```
 
-## <a name="insert"></a>  Map::insert
+## <a name="insert"></a> Ekle
 
 Bir öğenin veya öğelerin aralığını bir eşlemeye ekler.
 
@@ -1407,16 +1397,26 @@ IList);
 
 ### <a name="parameters"></a>Parametreler
 
-|Parametre|Açıklama|
-|-|-|
-|Parametre|Açıklama|
-|*VAL*|Anahtarı eşdeğer sıralı bir öğe içermiyorsa eşlemeye eklenecek bir öğenin değeri.|
-|*Burada*|Doğru ekleme noktasını için aramaya başlamak için bir yerde. (Bu noktanın hemen önceyse *burada*, ekleme Logaritmik süre yerine amorti edilmiş sabit zaman meydana gelebilir.)|
-|*ValTy*|Eşleme öğesi oluşturmak için kullanabileceğiniz bağımsız değişken türü belirten bir şablon parametresi [value_type](#value_type)ve mükemmel ileten *Val* bağımsız değişken olarak.|
-|*ilk*|Kopyalanacak ilk öğenin konumu.|
-|*Son*|Kopyalanacak son öğenin ötesinde konumu.|
-|*Inputıterator*|Gereksinimlerini karşılayan şablonu işlev bağımsız değişkeni bir [giriş yineleyici](../standard-library/input-iterator-tag-struct.md) oluşturmak için kullanılan bir tür öğelerine işaret eden [value_type](#value_type) nesneleri.|
-|*IList*|[İnitializer_list](../standard-library/initializer-list.md) öğeleri kopyalanacak.|
+*VAL*\
+Anahtarı eşdeğer sıralı bir öğe içermiyorsa eşlemeye eklenecek bir öğenin değeri.
+
+*Burada*\
+Doğru ekleme noktasını için aramaya başlamak için bir yerde. (Bu noktanın hemen önceyse *burada*, ekleme Logaritmik süre yerine amorti edilmiş sabit zaman meydana gelebilir.)
+
+*ValTy*\
+Eşleme öğesi oluşturmak için kullanabileceğiniz bağımsız değişken türü belirten bir şablon parametresi [value_type](#value_type)ve mükemmel ileten *Val* bağımsız değişken olarak.
+
+*ilk*\
+Kopyalanacak ilk öğenin konumu.
+
+*Son*\
+Kopyalanacak son öğenin ötesinde konumu.
+
+*Inputıterator*\
+Gereksinimlerini karşılayan şablonu işlev bağımsız değişkeni bir [giriş yineleyici](../standard-library/input-iterator-tag-struct.md) oluşturmak için kullanılan bir tür öğelerine işaret eden [value_type](#value_type) nesneleri.
+
+*IList*\
+[İnitializer_list](../standard-library/initializer-list.md) öğeleri kopyalanacak.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1538,7 +1538,7 @@ int main()
 }
 ```
 
-## <a name="iterator"></a>  Map::iterator
+## <a name="iterator"></a> Yineleyici
 
 Okuyabilen veya değiştirebilen bir eşlem içindeki herhangi bir öğeye çift yönlü yineleyiciler sağlayan tür.
 
@@ -1558,7 +1558,7 @@ Bir yineleyicinin başvuru kaldırma için *Iter* bir eşlem içindeki bir öğe
 
 Örneğin bakın [başlamak](#begin) bildirme ve kullanma konusunda bir örnek için `iterator`.
 
-## <a name="key_comp"></a>  Map::key_comp
+## <a name="key_comp"></a> key_comp
 
 Bir eşlem içindeki anahtarları sıralamak için kullanılan karşılaştırma nesnesinin bir kopyasını alır.
 
@@ -1629,7 +1629,7 @@ kc1( 2,3 ) returns value of true, where kc1 is the function object of m1.
 kc2( 2,3 ) returns value of false, where kc2 is the function object of m2.
 ```
 
-## <a name="key_compare"></a>  Map::key_compare
+## <a name="key_compare"></a> key_compare
 
 Eşlem içindeki iki öğenin göreli sırasını belirlemek için iki sıralama anahtarını karşılaştıran işlev nesnesi sağlayan tür.
 
@@ -1647,7 +1647,7 @@ Daha fazla bilgi için *nitelikler* bkz [map sınıfı](../standard-library/map-
 
 Örneğin bakın [key_comp](#key_comp) bildirme ve kullanma konusunda bir örnek için `key_compare`.
 
-## <a name="key_type"></a>  Map::key_type
+## <a name="key_type"></a> key_type
 
 Eşlemin her öğesinde depolanan sıralama anahtarı tanımlayan tür.
 
@@ -1665,7 +1665,7 @@ Daha fazla bilgi için *anahtarı*, Açıklamalar bölümüne bakın [map sını
 
 Örneğin bakın [value_type](#value_type) bildirme ve kullanma konusunda bir örnek için `key_type`.
 
-## <a name="lower_bound"></a>  Map::lower_bound
+## <a name="lower_bound"></a> lower_bound
 
 Bir yineleyiciyi belirtilen anahtardan daha büyük veya ona eşit bir anahtar değere sahip bir eşlem içindeki ilk öğeye döndürür.
 
@@ -1677,7 +1677,7 @@ const_iterator lower_bound(const Key& key) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*anahtar*<br/>
+*Anahtarı*\
 Bir öğenin Aranan eşlemesinden sıralama anahtarı ile Karşılaştırılacak bağımsız değişken anahtar değeri.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -1736,7 +1736,7 @@ The map m1 doesn't have an element with a key of 4.
 The element of m1 with a key matching that of the last element is: 30.
 ```
 
-## <a name="map"></a>  Map::Map
+## <a name="map"></a> Harita
 
 Boş veya bir kopyası tüm veya başka bir eşlemin bir parçası olan bir harita oluşturur.
 
@@ -1789,15 +1789,23 @@ map(
 
 ### <a name="parameters"></a>Parametreler
 
-|Parametre|Açıklama|
-|-|-|
-|Parametre|Açıklama|
-|*Al*|Varsayılan olarak bu harita nesnesi için kullanılacak depolama ayırıcı sınıf `Allocator`.|
-|*Comp*|Karşılaştırma işlevi türü `const Traits` varsayılan olarak haritada öğeleri sıralamak için kullanılan `hash_compare`.|
-|*sağ*|Oluşturulan kümesi kopyası olacak olduğu eşlemesi.|
-|*ilk*|Kopyalanacak öğe aralığındaki ilk öğenin konumu.|
-|*Son*|Kopyalanacak öğe aralığının dışındaki ilk öğenin konumu.|
-|*IList*|İçerdiği öğeleri kopyalanacak olan initializer_list.|
+*Al*\
+Varsayılan olarak bu harita nesnesi için kullanılacak depolama ayırıcı sınıf `Allocator`.
+
+*Comp*\
+Karşılaştırma işlevi türü `const Traits` varsayılan olarak haritada öğeleri sıralamak için kullanılan `hash_compare`.
+
+*sağ*\
+Oluşturulan kümesi kopyası olacak olduğu eşlemesi.
+
+*ilk*\
+Kopyalanacak öğe aralığındaki ilk öğenin konumu.
+
+*Son*\
+Kopyalanacak öğe aralığının dışındaki ilk öğenin konumu.
+
+*IList*\
+İçerdiği öğeleri kopyalanacak olan initializer_list.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -1933,7 +1941,7 @@ int main()
 }
 ```
 
-## <a name="mapped_type"></a>  Map::mapped_type
+## <a name="mapped_type"></a> mapped_type
 
 Bir eşlem içinde depolanan verileri temsil eden tür.
 
@@ -1951,7 +1959,7 @@ Daha fazla bilgi için *türü* bkz [map sınıfı](../standard-library/map-clas
 
 Örneğin bakın [value_type](#value_type) bildirme ve kullanma konusunda bir örnek için `mapped_type`.
 
-## <a name="max_size"></a>  Map::max_size
+## <a name="max_size"></a> max_size
 
 Eşlem öğesinin maksimum uzunluğunu döndürür.
 
@@ -1984,7 +1992,7 @@ int main( )
 }
 ```
 
-## <a name="op_at"></a>  Map::operator]
+## <a name="op_at"></a> operator]
 
 Belirtilen bir anahtar değere sahip bir eşleme bir öğe ekler.
 
@@ -1996,10 +2004,8 @@ Type& operator[](Key&& key);
 
 ### <a name="parameters"></a>Parametreler
 
-|Parametre|Açıklama|
-|-|-|
-|Parametre|Açıklama|
-|*anahtar*|Eklenecek öğenin anahtar değeri.|
+*Anahtarı*\
+Eklenecek öğenin anahtar değeri.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -2009,7 +2015,7 @@ Eklenen öğenin veri değerine başvuru.
 
 Bağımsız değişken anahtar değeri bulunamazsa, değer veri türünün varsayılan değeriyle birlikte eklenir.
 
-`operator[]` öğe bir eşlemeye eklemek için kullanılabilir `m` kullanarak `m[ key] = DataValue;` burada `DataValue` değeri `mapped_type` öğenin anahtar değeri ile *anahtar*.
+`operator[]` öğe bir eşlemeye eklemek için kullanılabilir `m` kullanarak `m[key] = DataValue;` burada `DataValue` değeri `mapped_type` öğenin anahtar değeri ile *anahtar*.
 
 Kullanırken `operator[]` öğeleri eklemek için döndürülen başvuru ekleme önceden varolan bir öğeyi değiştirmek veya yeni bir tane oluşturmak anlamına gelmez. Üye işlevleri [Bul](#find) ve [Ekle](#insert) belirtilen anahtara sahip bir öğe zaten bir ekleme mevcut olup olmadığını belirlemek için kullanılabilir.
 
@@ -2084,22 +2090,19 @@ c2[move(str)] == 0
 c2["abc"] == 1
 ```
 
-## <a name="op_eq"></a>  Map::operator =
+## <a name="op_eq"></a> işleç =
 
 Bir eşlemin öğelerini başka bir eşlem kopyasıyla değiştirir.
 
 ```cpp
 map& operator=(const map& right);
-
 map& operator=(map&& right);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-|Parametre|Açıklama|
-|-|-|
-|Parametre|Açıklama|
-|*sağ*|[Harita](../standard-library/map-class.md) içine kopyalanan `map`.|
+*sağ*\
+[Harita](../standard-library/map-class.md) içine kopyalanan `map`.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -2142,7 +2145,7 @@ int main( )
    }
 ```
 
-## <a name="pointer"></a>  Map::pointer
+## <a name="pointer"></a> İşaretçi
 
 Bir eşlem içindeki bir öğeye işaretçi sağlayan bir tür.
 
@@ -2156,7 +2159,7 @@ Bir tür `pointer` bir öğenin değerini değiştirmek için kullanılabilir.
 
 Çoğu durumda bir [yineleyici](#iterator) harita nesnesindeki öğelere erişmek için kullanılmalıdır.
 
-## <a name="rbegin"></a>  Map::rbegin
+## <a name="rbegin"></a> rbegin
 
 Ters Döndürülmüş eşlem içindeki ilk öğeyi adresleyen bir yineleyici döndürür.
 
@@ -2236,7 +2239,7 @@ The reversed map is: 3 2 1 .
 After the erasure, the first element in the reversed map is 2.
 ```
 
-## <a name="reference"></a>  Map::Reference
+## <a name="reference"></a> Başvuru
 
 Bir eşlem içinde depolan bir öğeye başvuru sağlayan bir tür.
 
@@ -2293,7 +2296,7 @@ The data value of first element in the map is 10.
 The modified data value of first element is 15.
 ```
 
-## <a name="rend"></a>  Map::rend
+## <a name="rend"></a> rend
 
 Ters Döndürülmüş eşlem içindeki son öğeyi takip eden konumu adresleyen bir yineleyici döndürür.
 
@@ -2377,7 +2380,7 @@ The reversed map is: 3 2 1 .
 After the erasure, the last element in the reversed map is 2.
 ```
 
-## <a name="reverse_iterator"></a>  Map::reverse_iterator
+## <a name="reverse_iterator"></a> reverse_iterator
 
 Okuyabilen veya değiştirebilen döndürülmüş bir eşlem içindeki bir öğeyi çift yönlü yineleyiciler sağlayan tür.
 
@@ -2399,7 +2402,7 @@ Başvurulacak bir `reverse_iterator` *rIter* bir eşlem içindeki bir öğeyi i�
 
 Örneğin bakın [rbegin](#rbegin) bildirme ve kullanma konusunda bir örnek için `reverse_iterator`.
 
-## <a name="size"></a>  Map::size
+## <a name="size"></a> Boyutu
 
 Eşlem içindeki öğelerin sayısını döndürür.
 
@@ -2443,7 +2446,7 @@ The map length is 1.
 The map length is now 2.
 ```
 
-## <a name="size_type"></a>  Map::size_type
+## <a name="size_type"></a> size_type
 
 Bir eşlem içindeki öğelerin sayısını temsil edebilen bir işaretsiz tamsayı türü.
 
@@ -2455,7 +2458,7 @@ typedef typename allocator_type::size_type size_type;
 
 Örneğin bakın [boyutu](#size) bildirme ve kullanma konusunda bir örnek için `size_type`.
 
-## <a name="swap"></a>  Map::Swap
+## <a name="swap"></a> değiştirme
 
 İki eşlemin öğelerini birbiriyle değiştirir.
 
@@ -2466,7 +2469,7 @@ void swap(
 
 ### <a name="parameters"></a>Parametreler
 
-*sağ*<br/>
+*sağ*\
 Hedef haritayla değiştirilecek öğeleri sağlayan bağımsız değişken eşleme.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -2525,7 +2528,7 @@ After swapping with m2, map m1 is: 100 200.
 After swapping with m3, map m1 is: 300.
 ```
 
-## <a name="upper_bound"></a>  Map::upper_bound
+## <a name="upper_bound"></a> upper_bound
 
 Bir anahtar ile belirtilen anahtardan büyük bir değere sahip bir eşlem içindeki ilk öğeye bir yineleyici döndürür.
 
@@ -2537,7 +2540,7 @@ const_iterator upper_bound(const Key& key) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*anahtar*<br/>
+*Anahtarı*\
 Bir öğenin Aranan eşlemesinden sıralama anahtar değeri ile Karşılaştırılacak bağımsız değişken anahtar değeri.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -2597,7 +2600,7 @@ The 1st element of m1 with a key greater than
 that of the initial element of m1 is: 20.
 ```
 
-## <a name="value_comp"></a>  Map::value_comp
+## <a name="value_comp"></a> value_comp
 
 Üye işlevi, anahtar değerlerini karşılaştırarak bir eşlem içindeki öğelerin sırasını belirleyen bir işlev nesnesi döndürür.
 
@@ -2665,7 +2668,7 @@ The element ( 1,10 ) precedes the element ( 2,5 ).
 The element ( 2,5 ) does not precede the element ( 1,10 ).
 ```
 
-## <a name="value_type"></a>  Map::value_type
+## <a name="value_type"></a> value_type
 
 Bir eşlemdeki bir öğe olarak depolanan nesne türü.
 

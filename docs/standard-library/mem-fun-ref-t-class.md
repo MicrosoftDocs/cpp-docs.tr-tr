@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - mem_fun_ref_t class
 ms.assetid: 7dadcac3-8d33-4e4b-a792-81bd53d3df39
-ms.openlocfilehash: 0eb7d20037598e1fa03fa7bf8e1d6b79a788ae1e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 0879736863a9b8052d19cc86dc5636ba14bcf993
+ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62412910"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68240603"
 ---
 # <a name="memfunreft-class"></a>mem_fun_ref_t Sınıfı
 
@@ -26,16 +26,15 @@ class mem_fun_ref_t : public unary_function<Type, Result> {
     Result (Type::* _Pm)());
 
     Result operator()(Type& left) const;
-
 };
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*_Pm*<br/>
+*_Pm*\
 Bir sınıfın üye işlevi işaretçisi `Type` bir işlev nesnesi için dönüştürülecek.
 
-*Sol*<br/>
+*Sol*\
 Nesne, *_Pm* üye işlevi çağrılır.
 
 ## <a name="return-value"></a>Dönüş Değeri
@@ -44,19 +43,8 @@ Bir uyarlanabilir birli işlevi.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Şablon sınıfı bir kopyasını depolar *_Pm*, bir sınıfın bir üye işlevi işaretçisi olmalıdır `Type`, özel üye nesnesinde. Onun üye işlevini tanımlar `operator()` döndüren olarak ( **sol**. * `_Pm`) ().
+Şablon sınıfı bir kopyasını depolar *_Pm*, bir sınıfın bir üye işlevi işaretçisi olmalıdır `Type`, özel üye nesnesinde. Onun üye işlevini tanımlar `operator()` döndüren olarak (**sol**. * `_Pm`) ().
 
 ## <a name="example"></a>Örnek
 
 Oluşturucusuna `mem_fun_ref_t` genellikle kullanılmaz doğrudan; yardımcı işlevini `mem_fun_ref` üye işlevleri uyum sağlamak için kullanılır. Bkz: [mem_fun_ref](../standard-library/functional-functions.md#mem_fun_ref) üye işlevi bağdaştırıcıları kullanmayı gösteren bir örnek.
-
-## <a name="requirements"></a>Gereksinimler
-
-**Başlık:** \<işlev >
-
-**Namespace:** std
-
-## <a name="see-also"></a>Ayrıca bkz.
-
-[C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
-[C++ Standart Kitaplığı Başvurusu](../standard-library/cpp-standard-library-reference.md)<br/>

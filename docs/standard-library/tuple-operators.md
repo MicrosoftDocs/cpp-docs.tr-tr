@@ -9,21 +9,16 @@ f1_keywords:
 - tuple/std::operator<=
 - tuple/std::operator==
 ms.assetid: f25752dc-d3e2-4e12-b5ac-9a8682ca60ed
-ms.openlocfilehash: e60de54a78f3a206ef77776761c3419bf8a2f3b1
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 5554f08f32048bafde5bdb2c316e12e1e01c6ffb
+ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62411883"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68241655"
 ---
 # <a name="lttuplegt-operators"></a>&lt;Tanımlama grubu&gt; işleçleri
 
-||||
-|-|-|-|
-|[operator!=](#op_neq)|[İşleci&gt;](#op_gt)|[İşleci&gt;=](#op_gt_eq)|
-|[İşleci&lt;](#op_lt)|[İşleci&lt;=](#op_lt_eq)|[operator==](#op_eq_eq)|
-
-## <a name="op_neq"></a>  işleç! =
+## <a name="op_neq"></a> işleç! =
 
 Karşılaştırma `tuple` nesneleri için eşitsizlik.
 
@@ -36,7 +31,7 @@ bool operator!=(const tuple<T1, T2, ..., TN>& tpl1,
 
 ### <a name="parameters"></a>Parametreler
 
-*TN*<br/>
+*TN*\
 Nth demet öğesi türü.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -88,7 +83,7 @@ false
 true
 ```
 
-## <a name="op_lt"></a>  İşleci&lt;
+## <a name="op_lt"></a> İşleci&lt;
 
 Karşılaştırma `tuple` daha az nesne.
 
@@ -101,7 +96,7 @@ bool operator<(const tuple<T1, T2, ..., TN>& tpl1,
 
 ### <a name="parameters"></a>Parametreler
 
-*TN*<br/>
+*TN*\
 Nth demet öğesi türü.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -153,7 +148,7 @@ false
 true
 ```
 
-## <a name="op_lt_eq"></a>  İşleci&lt;=
+## <a name="op_lt_eq"></a> İşleci&lt;=
 
 Karşılaştırma `tuple` nesneleri daha az veya eşit.
 
@@ -166,7 +161,7 @@ bool operator<=(const tuple<T1, T2, ..., TN>& tpl1,
 
 ### <a name="parameters"></a>Parametreler
 
-*TN*<br/>
+*TN*\
 Nth demet öğesi türü.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -218,7 +213,7 @@ true
 false
 ```
 
-## <a name="op_eq_eq"></a>  işleç ==
+## <a name="op_eq_eq"></a> işleç ==
 
 Karşılaştırma `tuple` eşitlik için nesneleri.
 
@@ -231,7 +226,7 @@ bool operator==(const tuple<T1, T2, ..., TN>& tpl1,
 
 ### <a name="parameters"></a>Parametreler
 
-*TN*<br/>
+*TN*\
 Nth demet öğesi türü.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -283,7 +278,7 @@ true
 false
 ```
 
-## <a name="op_gt"></a>  İşleci&gt;
+## <a name="op_gt"></a> İşleci&gt;
 
 Karşılaştırma `tuple` için nesneleri büyük.
 
@@ -296,7 +291,7 @@ bool operator>(const tuple<T1, T2, ..., TN>& tpl1,
 
 ### <a name="parameters"></a>Parametreler
 
-*TN*<br/>
+*TN*\
 Nth demet öğesi türü.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -348,7 +343,7 @@ false
 true
 ```
 
-## <a name="op_gt_eq"></a>  İşleci&gt;=
+## <a name="op_gt_eq"></a> İşleci&gt;=
 
 Karşılaştırma `tuple` nesneleri büyük veya eşit.
 
@@ -361,7 +356,7 @@ bool operator>=(const tuple<T1, T2, ..., TN>& tpl1,
 
 ### <a name="parameters"></a>Parametreler
 
-*TN*<br/>
+*TN*\
 Nth demet öğesi türü.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -412,7 +407,3 @@ int main() {
 true
 false
 ```
-
-## <a name="see-also"></a>Ayrıca bkz.
-
-[\<Tanımlama grubu >](../standard-library/tuple.md)<br/>

@@ -6,38 +6,45 @@ f1_keywords:
 helpviewer_keywords:
 - valarray header
 ms.assetid: 30835415-21c1-4801-8f24-6bbef7dd8ecd
-ms.openlocfilehash: 8b8118722d7219e3b30e11ad67411595c3dc36ad
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 9154f15500863d815f56438090662416b9b6fe7f
+ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62365422"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68246652"
 ---
 # <a name="ltvalarraygt"></a>&lt;valarray&gt;
 
 Şablon sınıfı valarray ve çok sayıda destekleyici şablon sınıfları ve işlevleri tanımlar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="requirements"></a>Gereksinimler
 
-```cpp
-#include <valarray>
-```
+**Başlık:** \<valarray >
+
+**Namespace:** std
+
+> [!NOTE]
+> \<Valarray > kitaplığını kullanan ' # < initializer_list > include' deyimi.
 
 ## <a name="remarks"></a>Açıklamalar
 
 Bu şablonu sınıfları ve işlevleri, Gelişmiş performans açısından olağan dışı enlem izin verilir. Özellikle türü döndüren bir işlev `valarray<T1>` türünde bir nesne bazı diğer T2 döndürebilir. Bu durumda, herhangi bir veya daha fazla bağımsız değişken türü kabul eden işlev `valarray<T2>` rasgele bağımsız değişkenleri, bağımsız değişken T2 türü ile her değiştirilen birleşimlerini kabul eden aşırı yüklemeler olması gerekir.
 
+## <a name="members"></a>Üyeler
+
 ### <a name="functions"></a>İşlevler
 
-|İşlev|Açıklama|
+|||
 |-|-|
 |[Abs](../standard-library/valarray-functions.md#abs)|Öğeleri girdi valarray öğelerini mutlak değerini eşit olan bir valarray döndüren bir giriş valarray öğeler üzerinde çalışır.|
 |[acos](../standard-library/valarray-functions.md#acos)|Öğeleri girdi valarray öğelerini arkkosinüsünü eşit olan bir valarray döndüren bir giriş valarray öğeler üzerinde çalışır.|
 |[asin](../standard-library/valarray-functions.md#asin)|Öğeleri girdi valarray öğelerini sinüsünü eşit olan bir valarray döndüren bir giriş valarray öğeler üzerinde çalışır.|
 |[atan](../standard-library/valarray-functions.md#atan)|Öğeleri girdi valarray öğelerini arktanjantını asıl değerine eşit olan bir valarray döndüren bir giriş valarray öğeler üzerinde çalışır.|
 |[atan2](../standard-library/valarray-functions.md#atan2)|Öğeleri arktanjantını Kartezyen için eşit olan bir valarray sabitler birleşimi ve valarrays öğeleri tarafından belirtilen bileşenlerini döndürür.|
+|[başlayın](../standard-library/valarray-functions.md#begin)||
 |[cos](../standard-library/valarray-functions.md#cos)|Öğeleri girdi valarray öğelerini kosinüsünü eşit olan bir valarray döndüren bir giriş valarray öğeler üzerinde çalışır.|
 |[COSH](../standard-library/valarray-functions.md#cosh)|Öğeleri girdi valarray öğelerini hiperbolik kosinüsünü için eşit olan bir valarray döndüren bir giriş valarray öğeler üzerinde çalışır.|
+|[Son](../standard-library/valarray-functions.md#end)||
 |[exp](../standard-library/valarray-functions.md#exp)|Öğeleri girdi valarray öğelerinin üstel doğal eşit olan bir valarray döndüren bir giriş valarray öğeler üzerinde çalışır.|
 |[log](../standard-library/valarray-functions.md#log)|Öğeleri için doğal logaritmasını giriş valarray öğelerinin eşit olan bir valarray döndüren bir giriş valarray öğeler üzerinde çalışır.|
 |[log10](../standard-library/valarray-functions.md#log10)|Öğeleri taban 10 ya da ortak logaritmasını giriş valarray öğelerinin eşit olan bir valarray döndüren bir giriş valarray öğeler üzerinde çalışır.|
@@ -51,7 +58,7 @@ Bu şablonu sınıfları ve işlevleri, Gelişmiş performans açısından olağ
 
 ### <a name="operators"></a>İşleçler
 
-|İşleç|Açıklama|
+|||
 |-|-|
 |[operator!=](../standard-library/valarray-operators.md#op_neq)|Eşit değil veya bir valarray tüm öğelerini eşit olup iki eşit boyutlu valarrays karşılık gelen öğeleri olup olmadığını test eder valarray'nın öğe türünün belirtilen bir değer.|
 |[operator%](../standard-library/valarray-operators.md#op_mod)|Valarray'nın öğe türünün veya bir valarray tarafından belirtilen değere bölerek belirtilen değerle bir valarray ayırma iki eşit boyutlu valarrays ve karşılık gelen öğelerle bölme kalanı alır.|
@@ -74,7 +81,7 @@ Bu şablonu sınıfları ve işlevleri, Gelişmiş performans açısından olağ
 
 ### <a name="classes"></a>Sınıflar
 
-|örneği|Açıklama|
+|||
 |-|-|
 |[gslice Sınıfı](../standard-library/gslice-class.md)|Çok boyutlu bir valarray Kesitler tanımlamak için kullanılan valarray için yardımcı program sınıfı.|
 |[gslice_array Sınıfı](../standard-library/gslice-array-class.md)|Genel bir valarray dilim tarafından tanımlanan alt diziler arasındaki işlemleri sağlayarak genel dilimi nesneleri destekleyen bir iç, yardımcı Şablon sınıfı.|

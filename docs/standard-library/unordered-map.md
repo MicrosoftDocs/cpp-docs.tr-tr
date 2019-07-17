@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - unordered_map header
 ms.assetid: eb90ecb2-250a-4be1-83d2-f66b2917edde
-ms.openlocfilehash: 6ccb2c0c54f8094110d37e6dfd2c504fa8173641
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: a7238d36e27b516aa30ad89b7322e6830f57e403
+ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62167601"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68243456"
 ---
 # <a name="ltunorderedmapgt"></a>&lt;unordered_map&gt;
 
@@ -22,6 +22,9 @@ Kapsayıcı şablon sınıfları tanımlar [unordered_map](../standard-library/u
 ```cpp
 #include <unordered_map>
 ```
+
+> [!NOTE]
+> \<Unordered_map > Kitaplığı'nı da kullanan `#include <initializer_list>` deyimi.
 
 ### <a name="classes"></a>Sınıflar
 

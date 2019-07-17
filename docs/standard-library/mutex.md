@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 f1_keywords:
 - <mutex>
 ms.assetid: efb60c89-687a-4e38-8fe4-694e11c4e8a3
-ms.openlocfilehash: 4655278e312647f4e69cf48cb772df854260ce57
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 377ec995f4e61c957e8e620749f96523b60fed3e
+ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62224083"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68240590"
 ---
 # <a name="ltmutexgt"></a>&lt;Mutex&gt;
 
@@ -18,11 +18,11 @@ Standart üst bilgiyi dahil \<mutex > sınıflarını tanımlamak için `mutex`,
 > [!WARNING]
 > Visual Studio 2015'te başlayarak, C++ Standart Kitaplığı eşitleme türleri üzerinde Windows eşitleme temellerine temel alır ve artık ConcRT (hedef platformu Windows XP olduğunda hariç) kullanın. İçinde tanımlanmış türlere \<mutex > herhangi bir ConcRT türleri ve işlevleri ile birlikte kullanılmamalıdır.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="requirements"></a>Gereksinimler
 
-```cpp
-#include <mutex>
-```
+**Başlık:** \<mutex >
+
+**Namespace:** std
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -47,28 +47,33 @@ A *mutex türünü zaman aşımına* mutex türü için gereksinimleri karşıla
 
 Bir mutex türü olarak da bilinen, bir *kilitlenebilir türü*. Üye işlevi sağlamıyorsa `try_lock`, bunun bir *temel kilitlenebilir türü*. Bir zaman aşımına mutex türü olarak da bilinen, bir *kilitlenebilir türü zaman aşımına*.
 
+## <a name="members"></a>Üyeler
+
 ### <a name="classes"></a>Sınıflar
 
-|Ad|Açıklama|
-|----------|-----------------|
+|||
+|-|-|
 |[lock_guard Sınıfı](../standard-library/lock-guard-class.md)|Yok Edicisi kilidini açarak bir nesne oluşturmak için örneği bir şablonunu temsil eden bir `mutex`.|
 |[mutex Sınıfı (C++ Standart Kitaplığı)](../standard-library/mutex-class-stl.md)|Mutex türünü temsil eder. Bir programın içinde karşılıklı dışlamayı zorlamak için bu tür nesnelerin kullanın.|
 |[recursive_mutex Sınıfı](../standard-library/recursive-mutex-class.md)|Mutex türünü temsil eder. İçin constrast içinde `mutex` sınıfı zaten kilitli olan nesneler için kilitleme yöntemlerini çağırma davranıştır iyi tanımlanmış.|
 |[recursive_timed_mutex Sınıfı](../standard-library/recursive-timed-mutex-class.md)|Zamanlanmış mutex türünü temsil eder. Bir program içindeki süre sınırlı engelleme olan karşılıklı dışlama zorlamak için bu tür nesnelerin kullanın. Türündeki nesneler aksine `timed_mutex`, kilitleme yöntemleri çağırma etkisini `recursive_timed_mutex` nesneleri, iyi tanımlanmış.|
+|[scoped_lock sınıfı](../standard-library/scoped-lock-class.md)||
 |[timed_mutex Sınıfı](../standard-library/timed-mutex-class.md)|Zamanlanmış mutex türünü temsil eder. Bir program içindeki süre sınırlı engelleme olan karşılıklı dışlama zorlamak için bu tür nesnelerin kullanın.|
 |[unique_lock Sınıfı](../standard-library/unique-lock-class.md)|Kilitleme ve, kilidini açma yönetme nesneleri oluşturmak için örneği bir şablonunu temsil eden bir `mutex`.|
 
 ### <a name="functions"></a>İşlevler
 
-|Ad|Açıklama|
-|----------|-----------------|
+|||
+|-|-|
 |[call_once](../standard-library/mutex-functions.md#call_once)|Yürütme sırasında tam bir kez belirli bir çağrılabilir nesnesini çağırmak için bir mekanizma sağlar.|
 |[lock](../standard-library/mutex-functions.md#lock)|Tüm bağımsız değişkenler olmadan kilitlenme kilitlemek çalışır.|
+|[değiştirme](../standard-library/mutex-functions.md#swap)||
+|[try_lock](../standard-library/mutex-functions.md#try_lock)||
 
 ### <a name="structs"></a>Yapılar
 
-|Ad|Açıklama|
-|----------|-----------------|
+|||
+|-|-|
 |[adopt_lock_t Yapısı](../standard-library/adopt-lock-t-structure.md)|Tanımlamak için kullanılan bir türü temsil eder bir `adopt_lock`.|
 |[defer_lock_t Yapısı](../standard-library/defer-lock-t-structure.md)|Tanımlayan bir türünü temsil eden bir `defer_lock` aşırı yüklü oluşturucular birini seçmek için kullanılan nesne `unique_lock`.|
 |[once_flag Yapısı](../standard-library/once-flag-structure.md)|Temsil eden bir **yapı** şablon işlevi ile kullanılan `call_once` başlatmanın emin olmak için kodu bile birden çok yürütme iş parçacığının varlığında yalnızca bir kez çağrılır.|
@@ -76,8 +81,8 @@ Bir mutex türü olarak da bilinen, bir *kilitlenebilir türü*. Üye işlevi sa
 
 ### <a name="variables"></a>Değişkenler
 
-|Ad|Açıklama|
-|----------|-----------------|
+|||
+|-|-|
 |[adopt_lock](../standard-library/mutex-functions.md#adopt_lock)|Oluşturucular için geçirilecek bir nesneyi temsil ediyor `lock_guard` ve `unique_lock` ayrıca oluşturucuya geçirilen mutex nesnesi kilitli olmadığını belirtmek için.|
 |[defer_lock](../standard-library/mutex-functions.md#defer_lock)|İçin oluşturucuya geçirilen nesneyi temsil eden `unique_lock`Oluşturucu ayrıca için geçirilmiş mutex nesnesi kilitlemenizi değil belirtmek için.|
 |[try_to_lock](../standard-library/mutex-functions.md#try_to_lock)|İçin oluşturucuya geçirilen nesneyi temsil eden `unique_lock` Oluşturucu kilidini açma denemesi gerektiğini belirtmek için `mutex` de yapan kendisine engellemeden.|

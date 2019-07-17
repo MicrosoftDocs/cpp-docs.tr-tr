@@ -15,27 +15,20 @@ helpviewer_keywords:
 - std::operator!= (complex)
 - std::operator&gt;&gt; (complex)
 - std::operator&lt;&lt; (complex), std::operator== (complex)
-ms.openlocfilehash: 8641e2f8bcc80cd2ba9b6b68e5574a476f60312e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: a8f8b623ad53b84b8e614a1831d1a060df890931
+ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62371626"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68244701"
 ---
 # <a name="ltcomplexgt-operators"></a>&lt;karmaşık&gt; işleçleri
 
-||||
-|-|-|-|
-|[operator!=](#op_neq)|[İşleci&gt;&gt;](#op_gt_gt)|[İşleci&lt;&lt;](#op_lt_lt)|
-|[operator *](#op_star)|[operator +](#op_add)|[operator-](#operator-)|
-|[operator /](#op_div)|[operator==](#op_eq_eq)|
-
-## <a name="op_neq"></a>  işleç! =
+## <a name="op_neq"></a> işleç! =
 
 İki karmaşık sayılar, biri veya ikisi de arasındaki eşitsizliği sınar reel ve sanal parça türünün bir alt kümesine ait olabilir.
 
 ```
-
 template <class Type>
 bool operator!=(
     const complex<Type>& left,
@@ -54,10 +47,10 @@ bool operator!=(
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*<br/>
+*Sol*\
 Karmaşık bir sayıyı veya parametre türünü eşitsizlik için test edilecek nesne.
 
-*sağ*<br/>
+*sağ*\
 Karmaşık bir sayıyı veya parametre türünü eşitsizlik için test edilecek nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -170,7 +163,7 @@ The 2nd right-side complex number is cr3b = (5,0)
 The complex numbers cl3b & cr3b are equal.
 ```
 
-## <a name="op_star"></a>  İşleci\*
+## <a name="op_star"></a> İşleci\*
 
 İki çarpar karmaşık sayılar, biri veya ikisi de ait alt reel ve sanal parçaları için türü.
 
@@ -194,10 +187,10 @@ complex<Type> operator*(
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*<br/>
+*Sol*\
 İlk iki karmaşık sayılar veya ile çarpılmasına olan karmaşık bir sayıyı için parametre türü bir sayı \* işlemi.
 
-*sağ*<br/>
+*sağ*\
 İkinci iki karmaşık sayılar veya ile çarpılmasına olan karmaşık bir sayıyı için parametre türü bir sayı \* işlemi.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -268,7 +261,7 @@ int main( )
 }
 ```
 
-## <a name="op_add"></a>  operator +
+## <a name="op_add"></a> operator +
 
 Alt tür reel ve sanal parçaları için iki karmaşık sayılar, biri veya ikisi de ait ekler.
 
@@ -295,10 +288,10 @@ complex<Type> operator+(const complex<Type>& left);
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*<br/>
+*Sol*\
 İlk iki karmaşık sayılar olarak eklenecek olan karmaşık bir sayıyı için parametre türü bir sayı veya + işlem.
 
-*sağ*<br/>
+*sağ*\
 İkinci iki karmaşık sayılar olarak eklenecek olan karmaşık bir sayıyı için parametre türü bir sayı veya + işlem.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -409,7 +402,7 @@ The modulus of cs4 is: 5
 The argument of cs4 is: 0.927295 radians, which is 53.1301 degrees.
 ```
 
-## <a name="operator-"></a>  operator-
+## <a name="operator-"></a> operator-
 
 İki çıkarır karmaşık sayılar, biri veya ikisi de ait alt reel ve sanal parçaları için türü.
 
@@ -435,10 +428,10 @@ complex<Type> operator-(const complex<Type>& left);
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*<br/>
+*Sol*\
 İlk iki karmaşık sayılar veya işlem tarafından çıkarılan için karmaşık bir sayıyı için parametre türü bir sayı.
 
-*sağ*<br/>
+*sağ*\
 İkinci iki karmaşık sayılar veya işlem tarafından çıkarılan için karmaşık bir sayıyı için parametre türü bir sayı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -551,7 +544,7 @@ The modulus of cs4 is: 5
 The argument of cs4 is: -2.2143 radians, which is -126.87 degrees.
 ```
 
-## <a name="op_div"></a>  operator /
+## <a name="op_div"></a> operator /
 
 Böler iki karmaşık sayılar, biri veya ikisi de reel ve sanal parça türünün bir alt kümesine ait olabilir.
 
@@ -574,10 +567,10 @@ complex<Type> operator*(
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*<br/>
+*Sol*\
 Karmaşık bir sayıyı veya pay ile paydası bölünüp olan karmaşık bir sayıyı için parametre türü bir sayı / işlemi.
 
-*sağ*<br/>
+*sağ*\
 Karmaşık bir sayıyı veya pay ile ayırmak için kullanılacak ise karmaşık bir sayıyı için parametre türü bir sayı / işlemi.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -671,7 +664,7 @@ The modulus of cs3 is: 1.66667
 The argument of cs3 is: -0.523599 radians, which is -30 degrees.
 ```
 
-## <a name="op_lt_lt"></a>  İşleci&lt;&lt;
+## <a name="op_lt_lt"></a> İşleci&lt;&lt;
 
 Karmaşık çıkış akışına belirtilen bir sayıyı ekler.
 
@@ -684,10 +677,10 @@ basic_ostream<Elem, Traits>& operator<<(
 
 ### <a name="parameters"></a>Parametreler
 
-*Ostr*<br/>
+*Ostr*\
 Karmaşık sayıyı girilmiş olan çıkış akışı.
 
-*sağ*<br/>
+*sağ*\
 Çıkış akımına girilmesi gereken karmaşık numara
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -733,7 +726,7 @@ The modulus of c2 is: 2
 The argument of c2 is: 0.523599 radians, which is 30 degrees.
 ```
 
-## <a name="op_eq_eq"></a>  işleç ==
+## <a name="op_eq_eq"></a> işleç ==
 
 İki karmaşık sayılar, biri veya ikisi de arasındaki eşitliği sınar reel ve sanal parça türünün bir alt kümesine ait olabilir.
 
@@ -757,10 +750,10 @@ bool operator==(
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*<br/>
+*Sol*\
 Karmaşık bir sayıyı veya parametre türünü eşitsizlik için test edilecek nesne.
 
-*sağ*<br/>
+*sağ*\
 Karmaşık bir sayıyı veya parametre türünü eşitsizlik için test edilecek nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -873,7 +866,7 @@ The 2nd right-side complex number is cr3b = (5,0)
 The complex numbers cl3b & cr3b are equal.
 ```
 
-## <a name="op_gt_gt"></a>  İşleci&gt;&gt;
+## <a name="op_gt_gt"></a> İşleci&gt;&gt;
 
 Karmaşık bir değer, giriş akışından ayıklar.
 
@@ -887,10 +880,10 @@ basic_istream<Elem, Traits>& operator>>(
 
 ### <a name="parameters"></a>Parametreler
 
-*Istr*<br/>
+*Istr*\
 Karmaşık sayıyı ayıklandığı Giriş akışı.
 
-*sağ*<br/>
+*sağ*\
 Girdi akışından ayıklanan karmaşık sayı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -932,7 +925,3 @@ int main( )
 Input a complex number ( try: 2.0 ): 2.0
 2.0
 ```
-
-## <a name="see-also"></a>Ayrıca bkz.
-
-[\<karmaşık >](../standard-library/complex.md)<br/>

@@ -134,12 +134,12 @@ helpviewer_keywords:
 - std::unordered_set::size
 - std::unordered_set::swap
 ms.assetid: ac08084e-05a7-48c0-9ae4-d40c529922dd
-ms.openlocfilehash: 01c8b79f596c2fda8cef0a74a7b5dcdc70786dbf
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 739e39dcb5dd79cfaae8875c5166eb7015134430
+ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62362744"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68243448"
 ---
 # <a name="unorderedset-class"></a>unordered_set Sınıfı
 
@@ -158,16 +158,23 @@ class unordered_set;
 
 ### <a name="parameters"></a>Parametreler
 
-|Parametre|Açıklama|
-|-|-|
-|*Key*|Anahtar türü.|
-|*Karma*|Karma işlev nesne türü.|
-|*Pred*|Eşitlik karşılaştırma işlevi nesne türü.|
-|*Ayırma*|Ayırıcı sınıf.|
+*Anahtarı*\
+Anahtar türü.
+
+*Karma*\
+Karma işlev nesne türü.
+
+*Pred*\
+Eşitlik karşılaştırma işlevi nesne türü.
+
+*Ayırma*\
+Ayırıcı sınıf.
 
 ## <a name="members"></a>Üyeler
 
-|Tür Tanımlaması|Açıklama|
+### <a name="typedefs"></a>Tür tanımları
+
+|||
 |-|-|
 |[allocator_type](#allocator_type)|Depolamayı yönetmek için bir ayırıcı türü.|
 |[const_iterator](#const_iterator)|Denetlenen dizi için bir sabit yineleyici türü.|
@@ -185,7 +192,9 @@ class unordered_set;
 |[size_type](#size_type)|İki öğe arasındaki işaretsiz bir mesafenin türü.|
 |[value_type](#value_type)|Öğenin türü.|
 
-|Üye İşlevi|Açıklama|
+### <a name="functions"></a>İşlevler
+
+|||
 |-|-|
 |[başlayın](#begin)|Denetlenen dizinin başlangıcını belirtir.|
 |[Demet](#bucket)|Bir anahtar değeri için demet numarasını alır.|
@@ -204,7 +213,7 @@ class unordered_set;
 |[Bul](#find)|Belirtilen bir anahtarla eşleşen bir öğeyi bulur.|
 |[get_allocator](#get_allocator)|Depolanan ayırıcı nesnesini alır.|
 |[hash_function](#hash)|Depolanan karma işlevi nesnesini alır.|
-|[insert](#insert)|Öğeleri ekler.|
+|[Ekle](#insert)|Öğeleri ekler.|
 |[key_eq](#key_eq)|Depolanan karşılaştırma işlevi nesnesini alır.|
 |[load_factor](#load_factor)|Demet başına ortalama öğeyi sayar.|
 |[max_bucket_count](#max_bucket_count)|En yüksek demet sayısını alır.|
@@ -215,7 +224,9 @@ class unordered_set;
 |[değiştirme](#swap)|İki kapsayıcının içeriğinin yerini değiştirir.|
 |[unordered_set](#unordered_set)|Bir kapsayıcı nesnesi oluşturur.|
 
-|İşleçler|Açıklama|
+### <a name="operators"></a>İşleçler
+
+|||
 |-|-|
 |[unordered_set::operator=](#op_eq)|Bir karma tabloya kopyalar.|
 
@@ -228,12 +239,6 @@ Nesne ayrıca, demet başına istenen ortalama öğe sayısını belirten en yü
 Denetlenen dizideki öğelerin gerçek sırası karma işleve, karşılaştırma işlevine, ekleme sırasına, en yüksek yük faktörüne ve geçerli demet sayısına bağlıdır. Denetlenen dizideki öğelerin sırasını genelde tahmin edemezsiniz. Ancak, eşdeğer sıralamaya sahip öğelerin herhangi bir alt kümesinin her zaman denetlenen dizide bitişik olduğundan emin olabilirsiniz.
 
 Nesneyi ayırır ve boşaltır türünde bir saklı ayırıcı nesnesi denetlediği dizi için depolama[unordered_set::allocator_type](#allocator_type). Böyle bir ayırıcı nesnenin şablon sınıfının bir nesnesiyle aynı dış arayüze sahip olması gerekir `allocator`. Depolanan ayırıcı nesnenin kapsayıcı nesne atandığında kopyalanmayacağını unutmayın.
-
-## <a name="requirements"></a>Gereksinimler
-
-**Başlık:** \<unordered_set >
-
-**Namespace:** std
 
 ## <a name="allocator_type"></a>  unordered_set::allocator_type
 
@@ -273,7 +278,7 @@ int main()
 al == std::allocator() is true
 ```
 
-## <a name="begin"></a>  unordered_set::begin
+## <a name="begin"></a> başlayın
 
 Denetlenen dizi veya bir demet başına belirler.
 
@@ -289,9 +294,8 @@ const_local_iterator begin(size_type nbucket) const;
 
 ### <a name="parameters"></a>Parametreler
 
-|Parametre|Açıklama|
-|-|-|
-|*nbucket*|Demet sayısı.|
+*nbucket*\
+Demet sayısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -353,7 +357,7 @@ int main()
 [a]
 ```
 
-## <a name="bucket"></a>  unordered_set::Bucket
+## <a name="bucket"></a> Demet
 
 Bir anahtar değeri için demet numarasını alır.
 
@@ -363,7 +367,7 @@ size_type bucket(const Key& keyval) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*keyval*<br/>
+*keyval*\
 Eşlenecek anahtar değeri.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -408,7 +412,7 @@ bucket('a') == 7
 bucket_size(7) == 1
 ```
 
-## <a name="bucket_count"></a>  unordered_set::bucket_count
+## <a name="bucket_count"></a> bucket_count
 
 Demet sayısını alır.
 
@@ -493,7 +497,7 @@ max_bucket_count() == 128
 max_load_factor() == 0.1
 ```
 
-## <a name="bucket_size"></a>  unordered_set::bucket_size
+## <a name="bucket_size"></a> bucket_size
 
 Demet boyutunu alır.
 
@@ -503,7 +507,7 @@ size_type bucket_size(size_type nbucket) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*nbucket*<br/>
+*nbucket*\
 Demet sayısı.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -548,7 +552,7 @@ bucket('a') == 7
 bucket_size(7) == 1
 ```
 
-## <a name="cbegin"></a>  unordered_set::cbegin
+## <a name="cbegin"></a> cbegin
 
 Döndürür bir **const** aralıktaki ilk öğeyi adresleyen bir yineleyici.
 
@@ -574,7 +578,7 @@ auto i2 = Container.cbegin();
 // i2 isContainer<T>::const_iterator
 ```
 
-## <a name="cend"></a>  unordered_set::cend
+## <a name="cend"></a> cend
 
 Döndürür bir **const** konuma bir aralıktaki son öğeyi ele alan bir yineleyici.
 
@@ -602,7 +606,7 @@ auto i2 = Container.cend();
 
 Tarafından döndürülen değer `cend` kaldırılmamalıdır.
 
-## <a name="clear"></a>  unordered_set::clear
+## <a name="clear"></a> Temizle
 
 Tüm öğeleri kaldırır.
 
@@ -666,7 +670,7 @@ size == 2
 empty() == false
 ```
 
-## <a name="const_iterator"></a>  unordered_set::const_iterator
+## <a name="const_iterator"></a> const_iterator
 
 Denetlenen dizi için bir sabit yineleyici türü.
 
@@ -708,7 +712,7 @@ int main()
 [c] [b] [a]
 ```
 
-## <a name="const_local_iterator"></a>  unordered_set::const_local_iterator
+## <a name="const_local_iterator"></a> const_local_iterator
 
 Denetlenen dizi için bir sabit demet yineleyici türü.
 
@@ -755,7 +759,7 @@ int main()
 [a]
 ```
 
-## <a name="const_pointer"></a>  unordered_set::const_pointer
+## <a name="const_pointer"></a> const_pointer
 
 Bir öğe için sabit bir işaretçi türü.
 
@@ -800,7 +804,7 @@ int main()
 [c] [b] [a]
 ```
 
-## <a name="const_reference"></a>  unordered_set::const_reference
+## <a name="const_reference"></a> const_reference
 
 Bir öğe için sabit bir başvuru türü.
 
@@ -845,7 +849,7 @@ int main()
 [c] [b] [a]
 ```
 
-## <a name="count"></a>  unordered_set::count
+## <a name="count"></a> Sayısı
 
 Belirtilen bir anahtar ile eşleşen öğe sayısını bulur.
 
@@ -855,7 +859,7 @@ size_type count(const Key& keyval) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*keyval*<br/>
+*keyval*\
 Aranacak anahtar değeri.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -899,7 +903,7 @@ count('b') == 1
 count('C') == 0
 ```
 
-## <a name="difference_type"></a>  unordered_set::difference_type
+## <a name="difference_type"></a> difference_type
 
 İki öğe arasındaki işaretli mesafenin türü.
 
@@ -955,7 +959,7 @@ end()-begin() == 3
 begin()-end() == -3
 ```
 
-## <a name="emplace"></a>  unordered_set::emplace
+## <a name="emplace"></a> emplace
 
 (Hiçbir kopyalama veya taşıma işlemleri gerçekleştirilir) yerinde oluşturulmuş bir öğe ekler.
 
@@ -968,9 +972,8 @@ Args&&... args);
 
 ### <a name="parameters"></a>Parametreler
 
-|Parametre|Açıklama|
-|-|-|
-|*bağımsız değişken*|Bir öğenin değerini eşdeğer sıralı bir öğe içermiyorsa unordered_set eklenecek oluşturmak için iletilen bağımsız değişkenler.|
+*bağımsız değişken*\
+Bir öğenin değerini eşdeğer sıralı bir öğe içermiyorsa unordered_set eklenecek oluşturmak için iletilen bağımsız değişkenler.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -986,7 +989,7 @@ Bir özel durum oluşturulur ancak kapsayıcının karma işlevi gerçekleşmez 
 
 Kod örneği için bkz:[set::emplace](../standard-library/set-class.md#emplace).
 
-## <a name="emplace_hint"></a>  unordered_set::emplace_hint
+## <a name="emplace_hint"></a> emplace_hint
 
 (Hiçbir kopyalama veya taşıma işlemleri gerçekleştirilir) bir yerleşim ipucuyla birlikte yerinde oluşturulmuş bir öğe ekler.
 
@@ -999,10 +1002,11 @@ Args&&... args);
 
 ### <a name="parameters"></a>Parametreler
 
-|Parametre|Açıklama|
-|-|-|
-|*bağımsız değişken*|Unordered_set bu öğeyi zaten içeriyor veya zaten anahtarı bir öğe içeriyorsa sürece daha genel olarak, eşdeğer sıralanır sürece unordered_set eklenecek bir öğe oluşturmak için iletilen bağımsız değişkenler.|
-|*Burada*|Doğru ekleme noktasını için aramaya başlamak için yer ile ilgili bir ipucu.|
+*bağımsız değişken*\
+Unordered_set bu öğeyi zaten içeriyor veya zaten anahtarı bir öğe içeriyorsa sürece daha genel olarak, eşdeğer sıralanır sürece unordered_set eklenecek bir öğe oluşturmak için iletilen bağımsız değişkenler.
+
+*Burada*\
+Doğru ekleme noktasını için aramaya başlamak için yer ile ilgili bir ipucu.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1018,7 +1022,7 @@ Bir özel durum oluşturulur ancak kapsayıcının karma işlevi gerçekleşmez 
 
 Kod örneği için bkz:[set::emplace_hint](../standard-library/set-class.md#emplace_hint).
 
-## <a name="empty"></a>  unordered_set::empty
+## <a name="empty"></a> boş
 
 Bir öğe olup olmadığını sınar.
 
@@ -1082,7 +1086,7 @@ size == 2
 empty() == false
 ```
 
-## <a name="end"></a>  unordered_set::end
+## <a name="end"></a> Son
 
 Denetlenen dizinin bitişini belirtir.
 
@@ -1098,9 +1102,8 @@ const_local_iterator end(size_type nbucket) const;
 
 ### <a name="parameters"></a>Parametreler
 
-|Parametre|Açıklama|
-|-|-|
-|*nbucket*|Demet sayısı.|
+*nbucket*\
+Demet sayısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -1151,7 +1154,7 @@ int main()
 [a]
 ```
 
-## <a name="equal_range"></a>  unordered_set::equal_range
+## <a name="equal_range"></a> equal_range
 
 Belirtilen bir anahtarla eşleşen aralığı bulur.
 
@@ -1165,7 +1168,7 @@ equal_range(const Key& keyval) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*keyval*<br/>
+*keyval*\
 Aranacak anahtar değeri.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -1219,7 +1222,7 @@ equal_range('x'):
 equal_range('b'): [b]
 ```
 
-## <a name="erase"></a>  unordered_set::erase
+## <a name="erase"></a> silme
 
 Bir öğenin veya öğelerin aralığını belirtilen konumlardan bir unordered_set kaldırır veya belirtilen bir anahtarla eşleşen öğeleri kaldırır.
 
@@ -1233,16 +1236,16 @@ size_type erase(const key_type& Key);
 
 ### <a name="parameters"></a>Parametreler
 
-*Burada*<br/>
+*Burada*\
 Kaldırılacak öğenin konumu.
 
-*ilk*<br/>
+*ilk*\
 Kaldırılacak ilk öğenin konumu.
 
-*Son*<br/>
+*Son*\
 Kaldırılacak yalnızca son öğenin ötesinde konumu.
 
-*Key*<br/>
+*Anahtarı*\
 Kaldırılacak öğe anahtar değeri.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -1255,7 +1258,7 @@ Kaldırılacak öğe anahtar değeri.
 
 Kod örneği için bkz:[set::erase](../standard-library/set-class.md#erase).
 
-## <a name="find"></a>  unordered_set::find
+## <a name="find"></a> Bul
 
 Belirtilen bir anahtarla eşleşen bir öğeyi bulur.
 
@@ -1265,7 +1268,7 @@ const_iterator find(const Key& keyval) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*keyval*<br/>
+*keyval*\
 Aranacak anahtar değeri.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -1314,7 +1317,7 @@ find('A') == false
 find('b') == true: [b]
 ```
 
-## <a name="get_allocator"></a>  unordered_set::get_allocator
+## <a name="get_allocator"></a> get_allocator
 
 Depolanan ayırıcı nesnesini alır.
 
@@ -1352,7 +1355,7 @@ int main()
 al == std::allocator() is true
 ```
 
-## <a name="hash"></a>  unordered_set::hash_function
+## <a name="hash"></a> hash_function
 
 Depolanan karma işlevi nesnesini alır.
 
@@ -1390,7 +1393,7 @@ hfn('a') == 1630279
 hfn('b') == 1647086
 ```
 
-## <a name="hasher"></a>  unordered_set::hasher
+## <a name="hasher"></a> karma değeri Oluşturucusu
 
 Karma işlevin türü.
 
@@ -1428,7 +1431,7 @@ hfn('a') == 1630279
 hfn('b') == 1647086
 ```
 
-## <a name="insert"></a>  unordered_set::insert
+## <a name="insert"></a> Ekle
 
 Bir öğenin veya öğelerin aralığını bir unordered_set ekler.
 
@@ -1457,15 +1460,26 @@ void insert(initializer_list<value_type> IList);
 
 ### <a name="parameters"></a>Parametreler
 
-|Parametre|Açıklama|
-|-|-|
-|*VAL*|Anahtarı eşdeğer sıralı bir öğe içermiyorsa unordered_set eklenecek bir öğenin değeri.|
-|*Burada*|Doğru ekleme noktasını için aramaya başlamak için bir yerde.|
-|*ValTy*|Unordered_set öğesi oluşturmak için kullanabileceğiniz bağımsız değişken türü belirten bir şablon parametresi[value_type](../standard-library/map-class.md#value_type)ve mükemmel ileten *Val* bağımsız değişken olarak.|
-|*ilk*|Kopyalanacak ilk öğenin konumu.|
-|*Son*|Kopyalanacak son öğenin ötesinde konumu.|
-|*Inputıterator*|Gereksinimlerini karşılayan şablonu işlev bağımsız değişkeni bir[giriş yineleyici](../standard-library/input-iterator-tag-struct.md) oluşturmak için kullanılan bir tür öğelerine işaret eden[value_type](../standard-library/map-class.md#value_type) nesneleri.|
-|*IList*|[İnitializer_list](../standard-library/initializer-list.md) öğeleri kopyalanacak.|
+*VAL*\
+Anahtarı eşdeğer sıralı bir öğe içermiyorsa unordered_set eklenecek bir öğenin değeri.
+
+*Burada*\
+Doğru ekleme noktasını için aramaya başlamak için bir yerde.
+
+*ValTy*\
+Unordered_set öğesi oluşturmak için kullanabileceğiniz bağımsız değişken türü belirten bir şablon parametresi[value_type](../standard-library/map-class.md#value_type)ve mükemmel ileten *Val* bağımsız değişken olarak.
+
+*ilk*\
+Kopyalanacak ilk öğenin konumu.
+
+*Son*\
+Kopyalanacak son öğenin ötesinde konumu.
+
+*Inputıterator*\
+Gereksinimlerini karşılayan şablonu işlev bağımsız değişkeni bir[giriş yineleyici](../standard-library/input-iterator-tag-struct.md) oluşturmak için kullanılan bir tür öğelerine işaret eden[value_type](../standard-library/map-class.md#value_type) nesneleri.
+
+*IList*\
+[İnitializer_list](../standard-library/initializer-list.md) öğeleri kopyalanacak.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1491,7 +1505,7 @@ Yerinde oluşturulmuş bir öğe ekleme — diğer bir deyişle, hiçbir kopyala
 
 Kod örneği için bkz:[set::insert](../standard-library/set-class.md#insert).
 
-## <a name="iterator"></a>  unordered_set::iterator
+## <a name="iterator"></a> Yineleyici
 
 Bir sabit sağlayan bir tür[ileriye doğru yineleyici](../standard-library/forward-iterator-tag-struct.md) bir unordered_set öğelerini okuyabilir.
 
@@ -1503,7 +1517,7 @@ typedef implementation-defined iterator;
 
 Örneğin bakın[başlamak](../standard-library/set-class.md#begin) bildirme ve kullanma konusunda bir örnek için bir**yineleyici**.
 
-## <a name="key_eq"></a>  unordered_set::key_eq
+## <a name="key_eq"></a> key_eq
 
 Depolanan karşılaştırma işlevi nesnesini alır.
 
@@ -1543,7 +1557,7 @@ cmpfn('a', 'a') == true
 cmpfn('a', 'b') == false
 ```
 
-## <a name="key_equal"></a>  unordered_set::key_equal
+## <a name="key_equal"></a> key_equal
 
 Karşılaştırma işlevinin türü.
 
@@ -1583,7 +1597,7 @@ cmpfn('a', 'a') == true
 cmpfn('a', 'b') == false
 ```
 
-## <a name="key_type"></a>  unordered_set::key_type
+## <a name="key_type"></a> key_type
 
 Bir sıralama anahtarının türü.
 
@@ -1635,7 +1649,7 @@ int main()
 [d] [c] [b] [a]
 ```
 
-## <a name="load_factor"></a>  unordered_set::load_factor
+## <a name="load_factor"></a> load_factor
 
 Demet başına ortalama öğeyi sayar.
 
@@ -1720,7 +1734,7 @@ max_bucket_count() == 128
 max_load_factor() == 0.1
 ```
 
-## <a name="local_iterator"></a>  unordered_set::local_iterator
+## <a name="local_iterator"></a> local_iterator
 
 Bir demet yineleyici türü.
 
@@ -1767,7 +1781,7 @@ int main()
 [a]
 ```
 
-## <a name="max_bucket_count"></a>  unordered_set::max_bucket_count
+## <a name="max_bucket_count"></a> max_bucket_count
 
 En yüksek demet sayısını alır.
 
@@ -1852,7 +1866,7 @@ max_bucket_count() == 128
 max_load_factor() == 0.1
 ```
 
-## <a name="max_load_factor"></a>  unordered_set::max_load_factor
+## <a name="max_load_factor"></a> max_load_factor
 
 Demet başına en yüksek öğe sayısını alır veya ayarlar.
 
@@ -1864,7 +1878,7 @@ void max_load_factor(float factor);
 
 ### <a name="parameters"></a>Parametreler
 
-*faktörü*<br/>
+*faktörü*\
 Yeni en yüksek yük faktörünün.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -1944,7 +1958,7 @@ max_bucket_count() == 128
 max_load_factor() == 0.1
 ```
 
-## <a name="max_size"></a>  unordered_set::max_size
+## <a name="max_size"></a> max_size
 
 Denetlenen dizinin en büyük boyutunu alır.
 
@@ -1979,7 +1993,7 @@ int main()
 max_size() == 4294967295
 ```
 
-## <a name="op_eq"></a>  unordered_set::operator=
+## <a name="op_eq"></a> işleç =
 
 Bir karma tabloya kopyalar.
 
@@ -1991,9 +2005,8 @@ unordered_set& operator=(unordered_set&& right);
 
 ### <a name="parameters"></a>Parametreler
 
-|Parametre|Açıklama|
-|-|-|
-|*sağ*|[Unordered_set](../standard-library/unordered-set-class.md) içine kopyalanan `unordered_set`.|
+*sağ*\
+[Unordered_set](../standard-library/unordered-set-class.md) içine kopyalanan `unordered_set`.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -2036,7 +2049,7 @@ int main( )
 }
 ```
 
-## <a name="pointer"></a>  unordered_set::pointer
+## <a name="pointer"></a> İşaretçi
 
 Bir öğe için bir işaretçi türü.
 
@@ -2082,7 +2095,7 @@ int main()
 [c] [b] [a]
 ```
 
-## <a name="reference"></a>  unordered_set::reference
+## <a name="reference"></a> Başvuru
 
 Bir öğe için bir başvuru türü.
 
@@ -2128,7 +2141,7 @@ int main()
 [c] [b] [a]
 ```
 
-## <a name="rehash"></a>  unordered_set::rehash
+## <a name="rehash"></a> rehash
 
 Karma tabloyu yeniden oluşturur.
 
@@ -2138,7 +2151,7 @@ void rehash(size_type nbuckets);
 
 ### <a name="parameters"></a>Parametreler
 
-*nbuckets*<br/>
+*nbuckets*\
 İstenen demet sayısı.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -2205,7 +2218,7 @@ load_factor() == 0.0234375
 max_load_factor() == 0.1
 ```
 
-## <a name="size"></a>  unordered_set::size
+## <a name="size"></a> Boyutu
 
 Öğe sayısını sayar.
 
@@ -2270,7 +2283,7 @@ size == 2
 empty() == false
 ```
 
-## <a name="size_type"></a>  unordered_set::size_type
+## <a name="size_type"></a> size_type
 
 İki öğe arasındaki işaretsiz bir mesafenin türü.
 
@@ -2306,7 +2319,7 @@ int main()
 size == 0
 ```
 
-## <a name="swap"></a>  unordered_set::swap
+## <a name="swap"></a> değiştirme
 
 İki kapsayıcının içeriğinin yerini değiştirir.
 
@@ -2316,7 +2329,7 @@ void swap(unordered_set& right);
 
 ### <a name="parameters"></a>Parametreler
 
-*sağ*<br/>
+*sağ*\
 İle takas için kapsayıcı.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -2375,7 +2388,7 @@ int main()
 [c] [b] [a]
 ```
 
-## <a name="unordered_set"></a>  unordered_set::unordered_set
+## <a name="unordered_set"></a> unordered_set
 
 Bir kapsayıcı nesnesi oluşturur.
 
@@ -2424,15 +2437,26 @@ unordered_set(
 
 ### <a name="parameters"></a>Parametreler
 
-|Parametre|Açıklama|
-|-|-|
-|*Inputıterator*|Yineleyici türü.|
-|*Al*|Depolanacak ayırıcı nesne.|
-|*Comp*|Depolanacak karşılaştırma işlevi nesnesi.|
-|*Karma*|Depolanacak karma işlev nesnesi.|
-|*bucket_count*|En düşük demet sayısı.|
-|*sağ*|Kopyalanacak kapsayıcı.|
-|*IList*|Kopyalanacak öğe içeren initializer_list.|
+*Inputıterator*\
+Yineleyici türü.
+
+*Al*\
+Depolanacak ayırıcı nesne.
+
+*Comp*\
+Depolanacak karşılaştırma işlevi nesnesi.
+
+*Karma*\
+Depolanacak karma işlev nesnesi.
+
+*bucket_count*\
+En düşük demet sayısı.
+
+*sağ*\
+Kopyalanacak kapsayıcı.
+
+*IList*\
+Kopyalanacak öğe içeren initializer_list.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -2448,7 +2472,7 @@ Karşılaştırma işlevi nesnesini bağımsız değişken olan *kompozisyonu*, 
 
 Bağımsız değişken ayırıcısı nesnedir *Al*, mevcut; Aksi durumda, `Alloc()`.
 
-## <a name="value_type"></a>  unordered_set::value_type
+## <a name="value_type"></a> value_type
 
 Öğenin türü.
 
@@ -2499,10 +2523,3 @@ int main()
 [c] [b] [a]
 [d] [c] [b] [a]
 ```
-
-## <a name="see-also"></a>Ayrıca bkz.
-
-[<unordered_set>](../standard-library/unordered-set.md)<br/>
-[Kapsayıcılar](../cpp/containers-modern-cpp.md)<br/>
-[C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
-[C++ Standart Kitaplığı Başvurusu](../standard-library/cpp-standard-library-reference.md)<br/>

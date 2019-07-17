@@ -16,23 +16,16 @@ helpviewer_keywords:
 - std::operator&lt; (set)
 - std::operator&lt;= (set)
 - std::operator== (set)
-ms.openlocfilehash: 16308623a845fdbf804f4e72f2159bc2a2dbc76b
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 4618030cf81f79a085e16052c8b9c547201e3577
+ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62412598"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68246394"
 ---
 # <a name="ltsetgt-operators"></a>&lt;ayarlama&gt; işleçleri
 
-||||
-|-|-|-|
-|[işleç! = (set)](#op_neq)|[İşleç&gt; (set)](#op_gt)|[İşleç&gt;= (set)](#op_gt_eq)|
-|[İşleç&lt; (set)](#op_lt)|[İşleç&lt;= (set)](#op_lt_eq)|[işleç == (set)](#op_eq_eq)|
-|[işleç! = (multiset)](#op_neq_multiset)|[İşleç&gt; (multiset)](#op_gt_multiset)|[İşleç&gt;= (multiset)](#op_gt_eq_multiset)|
-|[İşleç&lt; (multiset)](#op_lt_multiset)|[İşleç&lt;= (multiset)](#op_lt_eq_multiset)|[işleç == (multiset)](#op_eq_eq_multiset)|
-
-## <a name="op_neq"></a>  işleç! = (set)
+## <a name="op_neq"></a> işleç! = (set)
 
 İşlecin sol tarafındaki küme nesnesi kümesi nesnesinin işlecin sağ tarafındaki eşit olup olmadığını sınar.
 
@@ -42,10 +35,10 @@ bool operator!=(const set <Key, Traits, Allocator>& left, const set <Key, Traits
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*<br/>
+*Sol*\
 Bir nesne türü `set`.
 
-*sağ*<br/>
+*sağ*\
 Bir nesne türü `set`.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -93,7 +86,7 @@ The sets s1 and s3 are equal.
 */
 ```
 
-## <a name="op_lt"></a>  İşleç&lt; (set)
+## <a name="op_lt"></a> İşleç&lt; (set)
 
 İşlecin sol tarafındaki küme nesnesi işlecin sağ tarafındaki kümesi nesneden küçük olup olmadığını sınar.
 
@@ -103,10 +96,10 @@ bool operator<(const set <Key, Traits, Allocator>& left, const set <Key, Traits,
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*<br/>
+*Sol*\
 Bir nesne türü `set`.
 
-*sağ*<br/>
+*sağ*\
 Bir nesne türü `set`.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -154,7 +147,7 @@ The set s1 is not less than the set s3.
 */
 ```
 
-## <a name="op_lt_eq"></a>  İşleç&lt;= (set)
+## <a name="op_lt_eq"></a> İşleç&lt;= (set)
 
 İşlecinin sol tarafında kümesi nesnesi küçük olup olmadığını sınar veya küme nesnesi eşit işlecin sağ tarafındaki.
 
@@ -164,10 +157,10 @@ bool operator!<=(const set <Key, Traits, Allocator>& left, const set <Key, Trait
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*<br/>
+*Sol*\
 Bir nesne türü `set`.
 
-*sağ*<br/>
+*sağ*\
 Bir nesne türü `set`.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -215,14 +208,15 @@ int main( )
    else
       cout << "The set s1 is greater than the set s4." << endl;
 }
-/* Output:
+```
+
+```Output
 Set s1 is less than or equal to the set s2.
 The set s1 is greater than the set s3.
 Set s1 is less than or equal to the set s4.
-*/
 ```
 
-## <a name="op_eq_eq"></a>  işleç == (set)
+## <a name="op_eq_eq"></a> işleç == (set)
 
 İşlecin sol tarafındaki kümesi nesne kümesi nesnesinin işlecin sağ tarafındaki eşit olup olmadığını sınar.
 
@@ -232,10 +226,10 @@ bool operator!==(const set <Key, Traits, Allocator>& left, const set <Key, Trait
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*<br/>
+*Sol*\
 Bir nesne türü `set`.
 
-*sağ*<br/>
+*sağ*\
 Bir nesne türü `set`.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -277,13 +271,14 @@ int main( )
    else
       cout << "The sets s1 and s3 are not equal." << endl;
 }
-/* Output:
-The sets s1 and s2 are not equal.
-The sets s1 and s3 are equal.
-*/
 ```
 
-## <a name="op_gt"></a>  İşleç&gt; (set)
+```Output
+The sets s1 and s2 are not equal.
+The sets s1 and s3 are equal.
+```
+
+## <a name="op_gt"></a> İşleç&gt; (set)
 
 İşlecin sol tarafındaki kümesi nesne kümesi nesnesinin işlecin sağ tarafındaki büyük olup olmadığını sınar.
 
@@ -293,10 +288,10 @@ bool operator>(const set <Key, Traits, Allocator>& left, const set <Key, Traits,
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*<br/>
+*Sol*\
 Bir nesne türü `set`.
 
-*sağ*<br/>
+*sağ*\
 Bir nesne türü `set`.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -344,7 +339,7 @@ The set s1 is greater than the set s3.
 */
 ```
 
-## <a name="op_gt_eq"></a>  İşleç&gt;= (set)
+## <a name="op_gt_eq"></a> İşleç&gt;= (set)
 
 Küme nesnesi işlecinin sol tarafındaki büyük veya işlecin sağ tarafındaki kümesi nesneye eşit olup olmadığını sınar.
 
@@ -354,10 +349,10 @@ bool operator!>=(const set <Key, Traits, Allocator>& left, const set <Key, Trait
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*<br/>
+*Sol*\
 Bir nesne türü `set`.
 
-*sağ*<br/>
+*sağ*\
 Bir nesne türü `set`.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -405,14 +400,15 @@ int main( )
    else
       cout << "The set s1 is less than the set s4." << endl;
 }
-/* Output:
+```
+
+```Output
 The set s1 is less than the set s2.
 Set s1 is greater than or equal to set s3.
 Set s1 is greater than or equal to set s4.
-*/
 ```
 
-## <a name="op_neq_multiset"></a>  işleç! = (multiset)
+## <a name="op_neq_multiset"></a> işleç! = (multiset)
 
 İşlecin sol tarafındaki multiset nesne işlecin sağ tarafındaki multiset nesneye eşit olup olmadığını sınar.
 
@@ -422,10 +418,10 @@ bool operator!=(const multiset <Key, Traits, Allocator>& left, const multiset <K
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*<br/>
+*Sol*\
 Bir nesne türü `multiset`.
 
-*sağ*<br/>
+*sağ*\
 Bir nesne türü `multiset`.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -467,13 +463,14 @@ int main( )
    else
       cout << "The multisets s1 and s3 are equal." << endl;
 }
-/* Output:
-The multisets s1 and s2 are not equal.
-The multisets s1 and s3 are equal.
-*/
 ```
 
-## <a name="op_lt_multiset"></a>  İşleç&lt; (multiset)
+```Output
+The multisets s1 and s2 are not equal.
+The multisets s1 and s3 are equal.
+```
+
+## <a name="op_lt_multiset"></a> İşleç&lt; (multiset)
 
 İşlecin sol tarafındaki multiset nesnesinin işlecin sağ tarafındaki multiset nesneden küçük olup olmadığını sınar.
 
@@ -483,10 +480,10 @@ bool operator<(const multiset <Key, Traits, Allocator>& left, const multiset <Ke
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*<br/>
+*Sol*\
 Bir nesne türü `multiset`.
 
-*sağ*<br/>
+*sağ*\
 Bir nesne türü `multiset`.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -532,13 +529,14 @@ int main( )
       cout << "The multiset s1 is not less than "
            << "the multiset s3." << endl;
 }
-/* Output:
-The multiset s1 is less than the multiset s2.
-The multiset s1 is not less than the multiset s3.
-*/
 ```
 
-## <a name="op_lt_eq_multiset"></a>  İşleç&lt;= (multiset)
+```Output
+The multiset s1 is less than the multiset s2.
+The multiset s1 is not less than the multiset s3.
+```
+
+## <a name="op_lt_eq_multiset"></a> İşleç&lt;= (multiset)
 
 Multiset işlecinin sol tarafında nesne küçük olup olmadığını sınar veya çok kümeli nesneye eşitse işlecin sağ tarafındaki.
 
@@ -548,10 +546,10 @@ bool operator!<=(const multiset <Key, Traits, Allocator>& left, const multiset <
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*<br/>
+*Sol*\
 Bir nesne türü `multiset`.
 
-*sağ*<br/>
+*sağ*\
 Bir nesne türü `multiset`.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -605,14 +603,15 @@ int main( )
       cout << "The multiset s1 is greater than "
            << "the multiset s4." << endl;
 }
-/* Output:
+```
+
+```Output
 The multiset s1 is less than or equal to the multiset s2.
 The multiset s1 is greater than the multiset s3.
 The multiset s1 is less than or equal to the multiset s4.
-*/
 ```
 
-## <a name="op_eq_eq_multiset"></a>  işleç == (multiset)
+## <a name="op_eq_eq_multiset"></a> işleç == (multiset)
 
 İşlecin sol tarafındaki multiset nesne işlecin sağ tarafındaki multiset nesneye eşit olup olmadığını sınar.
 
@@ -622,10 +621,10 @@ bool operator!==(const multiset <Key, Traits, Allocator>& left, const multiset <
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*<br/>
+*Sol*\
 Bir nesne türü `multiset`.
 
-*sağ*<br/>
+*sağ*\
 Bir nesne türü `multiset`.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -667,13 +666,14 @@ int main( )
    else
       cout << "The multisets s1 and s3 are not equal." << endl;
 }
-/* Output:
-The multisets s1 and s2 are not equal.
-The multisets s1 and s3 are equal.
-*/
 ```
 
-## <a name="op_gt_multiset"></a>  İşleç&gt; (multiset)
+```Output
+The multisets s1 and s2 are not equal.
+The multisets s1 and s3 are equal.
+```
+
+## <a name="op_gt_multiset"></a> İşleç&gt; (multiset)
 
 İşlecin sol tarafındaki multiset nesne multiset nesnesinin işlecin sağ tarafındaki büyük olup olmadığını sınar.
 
@@ -683,10 +683,10 @@ bool operator>(const multiset <Key, Traits, Allocator>& left, const multiset <Ke
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*<br/>
+*Sol*\
 Bir nesne türü `multiset`.
 
-*sağ*<br/>
+*sağ*\
 Bir nesne türü `multiset`.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -732,13 +732,14 @@ int main( )
       cout << "The multiset s1 is not greater than "
            << "the multiset s3." << endl;
 }
-/* Output:
-The multiset s1 is not greater than the multiset s2.
-The multiset s1 is greater than the multiset s3.
-*/
 ```
 
-## <a name="op_gt_eq_multiset"></a>  İşleç&gt;= (multiset)
+```Output
+The multiset s1 is not greater than the multiset s2.
+The multiset s1 is greater than the multiset s3.
+```
+
+## <a name="op_gt_eq_multiset"></a> İşleç&gt;= (multiset)
 
 İşlecin sol tarafındaki multiset nesnesinin değerinden büyük veya çok kümeli nesnesinin işlecin sağ tarafındaki eşit olup olmadığını sınar.
 
@@ -748,10 +749,10 @@ bool operator!>=(const multiset <Key, Traits, Allocator>& left, const multiset <
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*<br/>
+*Sol*\
 Bir nesne türü `multiset`.
 
-*sağ*<br/>
+*sağ*\
 Bir nesne türü `multiset`.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -805,13 +806,10 @@ int main( )
       cout << "The multiset s1 is less than "
            << "the multiset s4." << endl;
 }
-/* Output:
+```
+
+```Output
 The multiset s1 is less than the multiset s2.
 The multiset s1 is greater than or equal to the multiset s3.
 The multiset s1 is greater than or equal to the multiset s4.
-*/
 ```
-
-## <a name="see-also"></a>Ayrıca bkz.
-
-[\<kümesi >](../standard-library/set.md)<br/>

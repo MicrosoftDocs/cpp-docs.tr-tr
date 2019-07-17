@@ -7,12 +7,12 @@ helpviewer_keywords:
 - pointer_to_binary_function function
 - pointer_to_binary_function class
 ms.assetid: fb50599f-bcb3-4076-a669-6dcc3eb189a5
-ms.openlocfilehash: 88d38be258c6ceb1054e0d31cc52e4d8d25186ec
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: fcc643d7569bd4f71b11249babdb49ef1362dc8b
+ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62370326"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68240487"
 ---
 # <a name="pointertobinaryfunction-class"></a>pointer_to_binary_function Sınıfı
 
@@ -25,7 +25,6 @@ template <class Arg1, class Arg2, class Result>
 class pointer_to_binary_function
     : public binary_function <Arg1, Arg2, Result>
 {
-public:
     explicit pointer_to_binary_function(
         Result(*pfunc)(Arg1, Arg2));
     Result operator()(Arg1 left, Arg2 right) const;
@@ -34,13 +33,13 @@ public:
 
 ### <a name="parameters"></a>Parametreler
 
-*pfunc*<br/>
+*pfunc*\
 Dönüştürülecek ikili fonksiyon.
 
-*Sol*<br/>
+*Sol*\
 Sol nesne  *\*pfunc* üzerinde çağrılır.
 
-*sağ*<br/>
+*sağ*\
 Sağa nesne  *\*pfunc* üzerinde çağrılır.
 
 ## <a name="return-value"></a>Dönüş Değeri
@@ -54,13 +53,3 @@ Bir ikili fonksiyon işaretçi bir işlev nesnesi ve ikili bir işlev bir parame
 ## <a name="example"></a>Örnek
 
 Oluşturucusuna `pointer_to_binary_function` doğrudan nadiren kullanılır. Yardımcı işlevini bkz [ptr_fun](../standard-library/functional-functions.md#ptr_fun) bildirme ve kullanma konusunda bir örnek için `pointer_to_binary_function` bağdaştırıcısı koşul.
-
-## <a name="requirements"></a>Gereksinimler
-
-**Başlık:** \<işlev >
-
-**Namespace:** std
-
-## <a name="see-also"></a>Ayrıca bkz.
-
-[C++ Standart Kitaplığı Başvurusu](../standard-library/cpp-standard-library-reference.md)<br/>

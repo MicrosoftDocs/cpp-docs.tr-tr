@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - is_placeholder class
 ms.assetid: 2b21a792-96d1-4bb8-b911-0db796510835
-ms.openlocfilehash: 2c7848c88194a9b541867b26ffe27764ad862503
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 9fa7d4aaade6244fe26f89f3a667598d39471a47
+ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62413638"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68245144"
 ---
 # <a name="isplaceholder-class"></a>is_placeholder Sınıfı
 
@@ -54,13 +54,3 @@ int main()
 0
 3
 ```
-
-## <a name="requirements"></a>Gereksinimler
-
-**Başlık:** \<işlev >
-
-**Namespace:** std
-
-## <a name="see-also"></a>Ayrıca bkz.
-
-[_1 Nesnesi](../standard-library/1-object.md)<br/>

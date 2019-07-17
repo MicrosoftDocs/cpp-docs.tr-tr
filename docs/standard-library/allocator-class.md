@@ -34,12 +34,12 @@ helpviewer_keywords:
 - std::allocator [C++], max_size
 - std::allocator [C++], rebind
 ms.assetid: 3fd58076-56cc-43bb-ad58-b4b7c9c6b410
-ms.openlocfilehash: 40e99901d4d4105902010a9e5b71ed3edf7d00db
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 1a0c8a04dda6c396b4f56d0939838fb6cb8e7455
+ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62411051"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68245934"
 ---
 # <a name="allocator-class"></a>allocator Sınıfı
 
@@ -83,13 +83,13 @@ Bunlar `Type`s işaretçileri ve başvuruları ayrılan öğeler için gerçekle
 
 ### <a name="constructors"></a>Oluşturucular
 
-|Oluşturucu|Açıklama|
+|||
 |-|-|
 |[allocator](#allocator)|Oluşturmak için kullanılan Oluşturucu `allocator` nesneleri.|
 
 ### <a name="typedefs"></a>Tür tanımları
 
-|Tür adı|Açıklama|
+|||
 |-|-|
 |[const_pointer](#const_pointer)|Ayırıcı tarafından yönetilen nesne türü için sabit bir işaretçi sağlayan bir tür.|
 |[const_reference](#const_reference)|Ayırıcı tarafından yönetilen nesne türü için sabit bir başvuru sağlayan bir tür.|
@@ -99,9 +99,9 @@ Bunlar `Type`s işaretçileri ve başvuruları ayrılan öğeler için gerçekle
 |[size_type](#size_type)|Herhangi bir uzunluğunu temsil edebilen bir işaretsiz tamsayı türü dizisi şablon sınıfın bir nesnesi `allocator` ayırabilirsiniz.|
 |[value_type](#value_type)|Ayırıcı tarafından yönetilen bir tür.|
 
-### <a name="member-functions"></a>Üye işlevleri
+### <a name="functions"></a>İşlevler
 
-|Üye işlevi|Açıklama|
+|||
 |-|-|
 |[Adresi](#address)|Değeri belirtilen bir nesnenin adresini bulur.|
 |[allocate](#allocate)|En azından bazı belirtilen sayıda öğeyi depolamak için büyük bir bellek bloğu ayırır.|
@@ -113,17 +113,11 @@ Bunlar `Type`s işaretçileri ve başvuruları ayrılan öğeler için gerçekle
 
 ### <a name="operators"></a>İşleçler
 
-|İşleç|Açıklama|
+|||
 |-|-|
 |[operator=](#op_eq)|Atar `allocator` başka bir nesneye `allocator` nesne.|
 
-## <a name="requirements"></a>Gereksinimler
-
-**Başlık:** \<bellek >
-
-**Namespace:** std
-
-## <a name="address"></a>  Allocator::Address
+### <a name="address"></a> Adresi
 
 Değeri belirtilen bir nesnenin adresini bulur.
 
@@ -132,20 +126,20 @@ pointer address(reference val) const;
 const_pointer address(const_reference val) const;
 ```
 
-### <a name="parameters"></a>Parametreler
+#### <a name="parameters"></a>Parametreler
 
-*VAL*<br/>
+*VAL*\
 Const veya nonconst değeri nesnenin adresini aranır.
 
-### <a name="return-value"></a>Dönüş Değeri
+#### <a name="return-value"></a>Dönüş Değeri
 
 Const veya nonconst nesneye işaretçi, sırasıyla, const veya nonconst değeri bulundu.
 
-### <a name="remarks"></a>Açıklamalar
+#### <a name="remarks"></a>Açıklamalar
 
 Üye işlevleri adresini döndürmek *val*, işaretçiler atmanız için formun ayrılan öğeler.
 
-### <a name="example"></a>Örnek
+#### <a name="example"></a>Örnek
 
 ```cpp
 // allocator_address.cpp
@@ -189,7 +183,7 @@ The original vector v1 is:
 The integer addressed by v1Ptr has a value of: *v1Ptr = 8.
 ```
 
-## <a name="allocate"></a>  Allocator::allocate
+### <a name="allocate"></a> ayırma
 
 En azından bazı belirtilen sayıda öğeyi depolamak için büyük bir bellek bloğu ayırır.
 
@@ -197,23 +191,23 @@ En azından bazı belirtilen sayıda öğeyi depolamak için büyük bir bellek 
 pointer allocate(size_type count, const void* _Hint);
 ```
 
-### <a name="parameters"></a>Parametreler
+#### <a name="parameters"></a>Parametreler
 
-*Sayısı*<br/>
+*Sayısı*\
 Yeterli depolama alanı ayrılacak olan öğe sayısı.
 
-*_Hint*<br/>
+*_Hint*\
 Ayırıcı nesnesini yardımcı olabilecek bir const işaretçisi, istek önce ayrılmış bir nesne adresi bularak depolama talebi karşılamak.
 
-### <a name="return-value"></a>Dönüş Değeri
+#### <a name="return-value"></a>Dönüş Değeri
 
 Ayrılmış nesneyi veya bellek tahsis yoksa null bir işaretçi.
 
-### <a name="remarks"></a>Açıklamalar
+#### <a name="remarks"></a>Açıklamalar
 
 Üye işlevi depolama türü sayısı öğeler için bir dizi ayırır `Type`, yeni arama işleci (*sayısı*). Bu ayrılan bir nesneye bir işaretçi döndürür. İpucu bağımsız değişken başvuru yeri geliştirme içinde bazı ayırıcılar yardımcı olur; daha önce aynı ayırıcı nesnesi tarafından ayrılmış ve henüz serbest bırakılmış bir nesnenin adresini buna geçerli bir seçimdir. Hiçbir ipucu sağlamak için bir null işaretçi bağımsız değişkeni kullanın.
 
-### <a name="example"></a>Örnek
+#### <a name="example"></a>Örnek
 
 ```cpp
 // allocator_allocate.cpp
@@ -249,7 +243,7 @@ int main( )
 0 1 2 3 4 5 6 7 8 9
 ```
 
-## <a name="allocator"></a>  Allocator::Allocator
+### <a name="allocator"></a> Ayırıcı
 
 Ayırıcı nesneleri oluşturmak için kullanılan Oluşturucu.
 
@@ -257,19 +251,19 @@ Ayırıcı nesneleri oluşturmak için kullanılan Oluşturucu.
 allocator();
 allocator(const allocator<Type>& right);
 template <class Other>
-allocator(const allocator<Other>& right);
+    allocator(const allocator<Other>& right);
 ```
 
-### <a name="parameters"></a>Parametreler
+#### <a name="parameters"></a>Parametreler
 
-*sağ*<br/>
+*sağ*\
 Kopyalanacak ayırıcı nesne.
 
-### <a name="remarks"></a>Açıklamalar
+#### <a name="remarks"></a>Açıklamalar
 
 Oluşturucu hiçbir şey yapmaz. Genel olarak, ancak başka bir ayırıcı nesnesinden oluşturulan bir ayırıcı nesnenin ona eşit karşılaştırın ve nesne ayırma intermixing ve iki ayırıcı nesneleri boşaltma izin.
 
-### <a name="example"></a>Örnek
+#### <a name="example"></a>Örnek
 
 ```cpp
 // allocator_allocator.cpp
@@ -332,7 +326,7 @@ The allocator objects cv1Alloc & v1Alloc are equal.
 The allocator objects cAlloc & Alloc are equal.
 ```
 
-## <a name="const_pointer"></a>  allocator::const_pointer
+### <a name="const_pointer"></a> const_pointer
 
 Ayırıcı tarafından yönetilen nesne türü için sabit bir işaretçi sağlayan bir tür.
 
@@ -340,11 +334,11 @@ Ayırıcı tarafından yönetilen nesne türü için sabit bir işaretçi sağla
 typedef const value_type *const_pointer;
 ```
 
-### <a name="remarks"></a>Açıklamalar
+#### <a name="remarks"></a>Açıklamalar
 
 İşaretçi türü bir nesneyi tanımlayan `ptr` , belirleyebilirler, ifade yoluyla `*ptr`, şablon sınıf ayırıcı nesnenin ayırabilirsiniz herhangi bir const nesnesi.
 
-### <a name="example"></a>Örnek
+#### <a name="example"></a>Örnek
 
 ```cpp
 // allocator_const_ptr.cpp
@@ -387,7 +381,7 @@ The original vector v1 is:
 The integer's address found has a value of: 10.
 ```
 
-## <a name="const_reference"></a>  Allocator::const_reference
+### <a name="const_reference"></a> const_reference
 
 Ayırıcı tarafından yönetilen nesne türü için sabit bir başvuru sağlayan bir tür.
 
@@ -395,11 +389,11 @@ Ayırıcı tarafından yönetilen nesne türü için sabit bir başvuru sağlaya
 typedef const value_type& const_reference;
 ```
 
-### <a name="remarks"></a>Açıklamalar
+#### <a name="remarks"></a>Açıklamalar
 
 Başvuru türü, şablon sınıf ayırıcı nesnenin ayırabilirsiniz herhangi bir const nesnesi belirleyebileceğiniz bir nesneyi tanımlar.
 
-### <a name="example"></a>Örnek
+#### <a name="example"></a>Örnek
 
 ```cpp
 // allocator_const_ref.cpp
@@ -453,7 +447,7 @@ The value of the element referred to by vcref,
 after nofication through its nonconst iterator, is: 175.
 ```
 
-## <a name="construct"></a>  Allocator::Construct
+### <a name="construct"></a> Yapısı
 
 Belirli türde bir nesne belirli bir değerle başlatılır, belirtilen bir adresteki oluşturur.
 
@@ -461,22 +455,22 @@ Belirli türde bir nesne belirli bir değerle başlatılır, belirtilen bir adre
 void construct(pointer ptr, const Type& val);
 void construct(pointer ptr, Type&& val);
 template <class _Other>
-void construct(pointer ptr, _Other&&...   val);
+    void construct(pointer ptr, _Other&&... val);
 ```
 
-### <a name="parameters"></a>Parametreler
+#### <a name="parameters"></a>Parametreler
 
-*ptr*<br/>
+*PTR*\
 Nesnenin oluşturulması olduğu yere bir işaretçi.
 
-*VAL*<br/>
+*VAL*\
 Yapılandırılan nesnesinin başlatılacak olduğu değeri.
 
-### <a name="remarks"></a>Açıklamalar
+#### <a name="remarks"></a>Açıklamalar
 
-İlk üye işlevi eşdeğerdir **yeni** (( `void` \*) `ptr` ) **türü** ( `val` ).
+İlk üye işlevi eşdeğerdir **yeni** ((`void` \*) `ptr`) **türü** (`val`).
 
-### <a name="example"></a>Örnek
+#### <a name="example"></a>Örnek
 
 ```cpp
 // allocator_construct.cpp
@@ -525,7 +519,7 @@ The modified vector v1 is:
 ( 3 7 9 12 15 18 21 ).
 ```
 
-## <a name="deallocate"></a>  Allocator::deallocate
+### <a name="deallocate"></a> Serbest Bırak
 
 Belirtilen konumda depolama başından nesneleri belirtilen sayıda serbest bırakır.
 
@@ -533,23 +527,23 @@ Belirtilen konumda depolama başından nesneleri belirtilen sayıda serbest bır
 void deallocate(pointer ptr, size_type count);
 ```
 
-### <a name="parameters"></a>Parametreler
+#### <a name="parameters"></a>Parametreler
 
-*ptr*<br/>
+*PTR*\
 Depolama alanından serbest bırakılması ilk nesneye bir işaretçi.
 
-*Sayısı*<br/>
+*Sayısı*\
 Depolama alanından serbest bırakılması nesne sayısı.
 
-### <a name="remarks"></a>Açıklamalar
+#### <a name="remarks"></a>Açıklamalar
 
 Üye işlev sayısı türü nesnelerin dizisi için depolama boşaltır `Type` konumunda başlayan *ptr*, çağırarak `operator delete(ptr)`. İşaretçi *ptr* önceki bir çağrı tarafından iade edilmiş gerekir [tahsis](#allocate) eşit karşılaştıran bir ayırıcı nesnesinin  **\*bu**, bir dizi ayırma aynı büyüklük ve türdeki nesne. `deallocate` hiçbir zaman bir özel durum oluşturur.
 
-### <a name="example"></a>Örnek
+#### <a name="example"></a>Örnek
 
 Üye işlevini kullanarak bir örnek için bkz [allocator::allocate](#allocate).
 
-## <a name="destroy"></a>  Allocator::Destroy
+### <a name="destroy"></a> yok
 
 Bir nesne yok Edicisi belleğini olmadan nesne saklandığı çağırır.
 
@@ -557,16 +551,16 @@ Bir nesne yok Edicisi belleğini olmadan nesne saklandığı çağırır.
 void destroy(pointer ptr);
 ```
 
-### <a name="parameters"></a>Parametreler
+#### <a name="parameters"></a>Parametreler
 
-*ptr*<br/>
+*PTR*\
 Yok edilecek nesnenin adresini gösteren bir işaretçi.
 
-### <a name="remarks"></a>Açıklamalar
+#### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi tarafından belirlenen nesnede yok eder *ptr*, yok edici çağırarak `ptr->` **türü**::**~ türü**.
+Üye işlevi tarafından belirlenen nesnede yok eder *ptr*, yok edici çağırarak `ptr->` **türü**:: **~ türü**.
 
-### <a name="example"></a>Örnek
+#### <a name="example"></a>Örnek
 
 ```cpp
 // allocator_destroy.cpp
@@ -615,7 +609,7 @@ The modified vector v1 is:
 ( 2 4 6 8 10 -99 14 ).
 ```
 
-## <a name="difference_type"></a>  allocator::difference_type
+### <a name="difference_type"></a> difference_type
 
 İşaretçiler ayırıcısı tarafından yönetilen nesne türü için değer arasındaki farkı temsil edebilen imzalı bir tamsayı türü.
 
@@ -623,11 +617,11 @@ The modified vector v1 is:
 typedef ptrdiff_t difference_type;
 ```
 
-### <a name="remarks"></a>Açıklamalar
+#### <a name="remarks"></a>Açıklamalar
 
 İmzalı bir tamsayı türü adreslerini şablon sınıf ayırıcı nesnenin ayırabilirsiniz bir dizideki herhangi iki öğe arasındaki farkı temsil edebilen bir nesneyi tanımlar.
 
-### <a name="example"></a>Örnek
+#### <a name="example"></a>Örnek
 
 ```cpp
 // allocator_diff_type.cpp
@@ -676,7 +670,7 @@ Pointer v1PtrB addresses 12.
 The difference between the integer's addresses is: 8.
 ```
 
-## <a name="max_size"></a>  Allocator::max_size
+### <a name="max_size"></a> max_size
 
 Tür öğelerin sayısını döndürür `Type` , ayrılan bir nesnenin sınıf ayırıcısı tarafından boş bellek kullanılmadan önce.
 
@@ -684,11 +678,11 @@ Tür öğelerin sayısını döndürür `Type` , ayrılan bir nesnenin sınıf a
 size_type max_size() const;
 ```
 
-### <a name="return-value"></a>Dönüş Değeri
+#### <a name="return-value"></a>Dönüş Değeri
 
 Ayrılamadı öğe sayısı.
 
-### <a name="example"></a>Örnek
+#### <a name="example"></a>Örnek
 
 ```cpp
 // allocator_max_size.cpp
@@ -745,29 +739,29 @@ int main( )
 }
 ```
 
-## <a name="op_eq"></a>  allocator::operator=
+### <a name="op_eq"></a> işleç =
 
 Bir ayırıcı nesnesinin, başka bir ayırıcı nesnesine atar.
 
 ```cpp
 template <class Other>
-allocator<Type>& operator=(const allocator<Other>& right);
+    allocator<Type>& operator=(const allocator<Other>& right);
 ```
 
-### <a name="parameters"></a>Parametreler
+#### <a name="parameters"></a>Parametreler
 
-*sağ*<br/>
+*sağ*\
 Böyle bir nesne başka bir atanmış olan bir ayırıcı nesne.
 
-### <a name="return-value"></a>Dönüş Değeri
+#### <a name="return-value"></a>Dönüş Değeri
 
 Allocator nesnesine bir başvuru
 
-### <a name="remarks"></a>Açıklamalar
+#### <a name="remarks"></a>Açıklamalar
 
 Şablon atama işleci, hiçbir şey yapmaz. Genel olarak, ancak başka bir ayırıcı nesnesine atanmış bir ayırıcı nesnenin ona eşit karşılaştırın ve intermixing nesne ayırma ve serbest bırakma iki ayırıcı nesneleri izin.
 
-### <a name="example"></a>Örnek
+#### <a name="example"></a>Örnek
 
 ```cpp
 // allocator_op_assign.cpp
@@ -808,7 +802,7 @@ int main( )
 }
 ```
 
-## <a name="pointer"></a>  Allocator::pointer
+### <a name="pointer"></a> İşaretçi
 
 Ayırıcı tarafından yönetilen nesne türü için bir işaretçi sağlayan bir tür.
 
@@ -816,11 +810,11 @@ Ayırıcı tarafından yönetilen nesne türü için bir işaretçi sağlayan bi
 typedef value_type *pointer;
 ```
 
-### <a name="remarks"></a>Açıklamalar
+#### <a name="remarks"></a>Açıklamalar
 
 İşaretçi türü bir nesneyi tanımlayan `ptr` , belirleyebilirler, ifade yoluyla  **\*ptr**, şablon sınıf ayırıcı nesnenin ayırabilirsiniz herhangi bir nesne.
 
-### <a name="example"></a>Örnek
+#### <a name="example"></a>Örnek
 
 ```cpp
 // allocator_ptr.cpp
@@ -863,19 +857,20 @@ The original vector v1 is:
 The integer addressed by v1Ptr has a value of: *v1Ptr = 12.
 ```
 
-## <a name="rebind"></a>  Allocator::rebind
+### <a name="rebind"></a> yeniden bağlayın
 
 Başka bir türdeki nesneler için depolama alanı ayırmak için ayırıcı bir türden nesneler için sağlayan bir yapı.
+
 ```cpp
-struct rebind {    typedef allocator<_Other> other ;    };
+struct rebind { typedef allocator<_Other> other; };
 ```
 
-### <a name="parameters"></a>Parametreler
+#### <a name="parameters"></a>Parametreler
 
-*Diğer*<br/>
+*Diğer*\
 Kendisi için bellek ayrılan öğe türü.
 
-### <a name="remarks"></a>Açıklamalar
+#### <a name="remarks"></a>Açıklamalar
 
 Bu yapı, uygulanmakta olan bir kapsayıcı öğenin türünden farklı bir tür için bellek ayırma için kullanışlıdır.
 
@@ -893,7 +888,7 @@ Veya işaretçi türü türü yazarak ad verebilirsiniz:
 A::rebind<Other>::other::pointer
 ```
 
-### <a name="example"></a>Örnek
+#### <a name="example"></a>Örnek
 
 ```cpp
 // allocator_rebind.cpp
@@ -918,7 +913,7 @@ int main( )
 }
 ```
 
-## <a name="reference"></a>  Allocator::Reference
+### <a name="reference"></a> Başvuru
 
 Ayırıcı tarafından yönetilen nesne türü bir başvuru sağlayan bir tür.
 
@@ -926,11 +921,11 @@ Ayırıcı tarafından yönetilen nesne türü bir başvuru sağlayan bir tür.
 typedef value_type& reference;
 ```
 
-### <a name="remarks"></a>Açıklamalar
+#### <a name="remarks"></a>Açıklamalar
 
 Başvuru türü, bir şablon sınıf ayırıcı nesnenin ayırabilirsiniz herhangi bir nesne belirleyebileceğiniz bir nesneyi tanımlar.
 
-### <a name="example"></a>Örnek
+#### <a name="example"></a>Örnek
 
 ```cpp
 // allocator_reference.cpp
@@ -978,7 +973,7 @@ the first element in the vector.
 The element referred to by vref after being modified is: 150.
 ```
 
-## <a name="size_type"></a>  Allocator::size_type
+### <a name="size_type"></a> size_type
 
 Şablon sınıf ayırıcı nesnenin ayırabilirsiniz hiçbir sırası uzunluğu temsil edebilen bir işaretsiz tamsayı türü.
 
@@ -986,7 +981,7 @@ The element referred to by vref after being modified is: 150.
 typedef size_t size_type;
 ```
 
-### <a name="example"></a>Örnek
+#### <a name="example"></a>Örnek
 
 ```cpp
 // allocator_size_type.cpp
@@ -1023,7 +1018,7 @@ int main( )
 }
 ```
 
-## <a name="value_type"></a>  Allocator::value_type
+### <a name="value_type"></a> value_type
 
 Ayırıcı tarafından yönetilen bir tür.
 
@@ -1031,11 +1026,11 @@ Ayırıcı tarafından yönetilen bir tür.
 typedef Type value_type;
 ```
 
-### <a name="remarks"></a>Açıklamalar
+#### <a name="remarks"></a>Açıklamalar
 
 Şablon parametresi için bir eşanlamlı türüdür `Type`.
 
-### <a name="example"></a>Örnek
+#### <a name="example"></a>Örnek
 
 ```cpp
 // allocator_value_type.cpp
@@ -1084,6 +1079,17 @@ The modified vector v is:
 ( 150 200 300 400 500 600 700 ).
 ```
 
-## <a name="see-also"></a>Ayrıca bkz.
+## <a name="helpers"></a>Yardımcıları
 
-[C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
+### <a name="allocator_arg_t"></a> allocator_arg_t
+
+```cpp
+struct allocator_arg_t { explicit allocator_arg_t() = default; };
+inline constexpr allocator_arg_t allocator_arg{};
+```
+
+### <a name="uses_allocator"></a> uses_allocator
+
+```cpp
+template <class T, class Alloc> struct uses_allocator;
+```

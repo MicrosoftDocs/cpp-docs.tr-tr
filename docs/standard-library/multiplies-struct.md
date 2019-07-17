@@ -7,12 +7,12 @@ helpviewer_keywords:
 - multiplies class
 - multiplies struct
 ms.assetid: ec85e8af-70ad-44ad-90f0-d961a5847864
-ms.openlocfilehash: 7e91c834d3e56d4c0170c4e2f6b26b73dc925432
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 3bccaf2a5e6594652a1179b357cdbbee2d2436b3
+ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62186081"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68240578"
 ---
 # <a name="multiplies-struct"></a>multiplies Yapısı
 
@@ -39,12 +39,13 @@ struct multiplies<void>
 
 ### <a name="parameters"></a>Parametreler
 
-*Tür*, *T*, *U* bir ikili destekleyen bir türü `operator*` , belirtilen veya çıkarsanan tür işlenen alır.
+*Tür*, *T*, *U*\
+Bir ikili destekleyen bir türü `operator*` , belirtilen veya çıkarsanan tür işlenen alır.
 
-*Sol*<br/>
+*Sol*\
 Çarpma işleminin sol işleneni. Uzmanlaşmamış şablon türü bir lvalue başvuru bağımsız değişkeni alır *türü*. Özelleşmiş şablon lvalue iletilmesini mükemmel ve rvalue başvuru bağımsız değişkenleri tür çıkarımı yapılan *T*.
 
-*sağ*<br/>
+*sağ*\
 Çarpma işlemi sağ işleneni. Uzmanlaşmamış şablon türü bir lvalue başvuru bağımsız değişkeni alır *türü*. Özelleşmiş şablon lvalue iletilmesini mükemmel ve rvalue başvuru bağımsız değişkenleri tür çıkarımı yapılan *U*.
 
 ## <a name="return-value"></a>Dönüş Değeri
@@ -99,21 +100,11 @@ int main( )
       cout << *Iter3 << " ";
    cout << ")" << endl;
 }
-/* Output:
+```
+
+```Output
 The vector v1 = ( 2 4 6 8 10 12 )
 The vector v2 = ( 3 6 9 12 15 18 )
 The element-wise products of vectors V1 & v2
 are: ( 6 24 54 96 150 216 )
-*/
 ```
-
-## <a name="requirements"></a>Gereksinimler
-
-**Başlık:** \<işlev >
-
-**Namespace:** std
-
-## <a name="see-also"></a>Ayrıca bkz.
-
-[C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
-[C++ Standart Kitaplığı Başvurusu](../standard-library/cpp-standard-library-reference.md)<br/>

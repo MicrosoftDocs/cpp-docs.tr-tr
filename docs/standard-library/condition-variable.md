@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 f1_keywords:
 - <condition_variable>
 ms.assetid: 8567f7cc-20bd-42a7-9137-87c46f878009
-ms.openlocfilehash: 3ce9125a13f0dd2f2e4f98a217c4373f2be2f8a8
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: ed98966f651df76078fa47b05f5a2d8ae1b71d05
+ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62212072"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68244570"
 ---
 # <a name="ltconditionvariablegt"></a>&lt;condition_variable&gt;
 
@@ -17,11 +17,11 @@ Sınıfları tanımlar [condition_variable](../standard-library/condition-variab
 
 Diğer ConcRT mekanizmaları ile birlikte kullanabilirsiniz, böylece bu başlığı eşzamanlılık çalışma zamanı (ConcRT) kullanır. ConcRT hakkında daha fazla bilgi için bkz: [eşzamanlılık çalışma zamanı](../parallel/concrt/concurrency-runtime.md).
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="requirements"></a>Gereksinimler
 
-```cpp
-#include <condition_variable>
-```
+**Başlık:** \<condition_variable >
+
+**Namespace:** std
 
 > [!NOTE]
 > Derlenmiş kodda **/CLR**, bu başlığı engellenir.
@@ -56,6 +56,14 @@ Her sınıf kendi koşul olan bir koşul değişkenini bildirmek için kullanıl
 - `notify_one` bir koşul değişken için bekleyen iş parçacıklarının uyku modundan çıkar.
 
 - `notify_all` Koşul değişken için bekleyen iş parçacıklarının tüm uyku modundan çıkar.
+
+## <a name="functions-and-enums"></a>İşlevler ve numaralandırmalar
+
+```cpp
+void notify_all_at_thread_exit(condition_variable& cond, unique_lock<mutex> lk);
+
+enum class cv_status { no_timeout, timeout };
+```
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
