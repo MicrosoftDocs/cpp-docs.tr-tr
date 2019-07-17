@@ -1,6 +1,6 @@
 ---
 title: /FORCE (Dosya Çıktısını Zorla)
-ms.date: 11/04/2016
+ms.date: 07/19/2019
 f1_keywords:
 - VC.Project.VCLinkerTool.ForceLink
 - /force
@@ -10,12 +10,12 @@ helpviewer_keywords:
 - /FORCE linker option
 - -FORCE linker option
 ms.assetid: b1e9a218-a5eb-4e60-a4a4-65b4be15e5da
-ms.openlocfilehash: af7962a4b3b5805e7e0c4d59752254c8ade17f7b
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 28b1c21382832c8775ffe0406038a482e74076c5
+ms.sourcegitcommit: 7f5b29e24e1be9b5985044a030977485fea0b50c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62292477"
+ms.lasthandoff: 07/17/2019
+ms.locfileid: "68299713"
 ---
 # <a name="force-force-file-output"></a>/FORCE (Dosya Çıktısını Zorla)
 
@@ -25,29 +25,31 @@ ms.locfileid: "62292477"
 
 ## <a name="remarks"></a>Açıklamalar
 
-/ Force seçeneği geçerli bir .exe dosyası oluşturmak için söyler veya DLL sembole başvurulduğunda ancak bile tanımlanan veya tanımlı çarpın.
+/FORCE seçeneği, bir sembol başvuruluyorsa ancak tanımlanmadığı ya da tanımlanmış çarpma olsa bile, bağlayıcıya geçerli bir. exe dosyası veya DLL oluşturmasını söyler.
 
-/ Force seçeneği isteğe bağlı bağımsız değişken alabilir:
+/FORCE seçeneği isteğe bağlı bir bağımsız değişken alabilir:
 
-- BAĞLANTI bir sembol için birden fazla tanım bulursa olup olmadığını bulmadığında çıkış dosyası oluşturmak için/Force: multıple kullanın.
+- BAĞLANTıNıN bir sembol için birden fazla tanım bulup bulmadığını bir çıkış dosyası oluşturmak için/FORCE: MULTIPLE kullanın.
 
-- / Force kullanın: tanımsız bir sembol bağlantı bulursa olup olmadığını bir çıkış dosyası oluşturmak için. / FORCE: ÇÖZÜMLENMEMİŞ giriş noktası sembolü çözümlenmemiş ise göz ardı edilir.
+- BAĞLANTıNıN tanımsız bir simge bulup bulmadığını bir çıkış dosyası oluşturmak için/FORCE: ÇÖZÜMLENMEMIŞ kullanın. /FORCE: giriş noktası simgesi çözülmedi ise ÇÖZÜMLENMEMIŞ yok sayılır.
 
-/ Bağımsız değişken olmadan FORCE, hem birden çok anlamına gelir ve çözümlenmemiş.
+Bağımsız değişken içermeyen/FORCE, hem birden çok hem de çözülmemiş anlamına gelir.
 
-Bu seçenekle oluşturulan bir dosya, beklendiği gibi çalışmayabilir. / Force seçeneği belirtildiğinde bağlayıcı artımlı olarak bağlayacaksınız değil.
+Bu seçenekle oluşturulan bir dosya beklendiği gibi çalışmayabilir. /FORCE seçeneği belirtildiğinde bağlayıcı artımlı olarak bağlantı etmez.
 
-Bir modül ile derlenmişse **/CLR**, **/FORCE** görüntü oluşturmaz.
+Bir modül **/clr**ile derlenirse **/Force** bir görüntü oluşturmaz.
 
 ### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio geliştirme ortamındaki bu bağlayıcı seçeneğini ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
+1. **Çözüm Gezgini** ' de projeye sağ tıklayın ve **Özellikler**' i seçin. 
 
-1. Tıklayın **bağlayıcı** klasör.
+1. **Bağlayıcı** klasörüne tıklayın.
 
-1. Tıklayın **komut satırı** özellik sayfası.
+1. **Komut satırı** Özellik sayfasına tıklayın.
 
-1. Seçeneğini yazın **ek seçenekler** kutusu.
+1. Seçeneği **ek seçenekler** kutusuna yazın.
+
+Daha fazla bilgi için bkz [. C++ Visual Studio 'da derleyici ve derleme özelliklerini ayarlama](../working-with-project-properties.md).
 
 ### <a name="to-set-this-linker-option-programmatically"></a>Bu bağlayıcı seçeneğini program aracılığıyla ayarlamak için
 

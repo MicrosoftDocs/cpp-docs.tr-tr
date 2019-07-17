@@ -1,6 +1,6 @@
 ---
 title: VC++ Dizinleri Özellik Sayfası
-ms.date: 10/09/2018
+ms.date: 07/17/2019
 f1_keywords:
 - VC.Project.VCDirectories.IncludePath
 - VC.Project.VCDirectories.ReferencePath
@@ -13,94 +13,94 @@ f1_keywords:
 helpviewer_keywords:
 - VC++ Directories Property Page
 ms.assetid: 428eeef6-f127-4271-b3ea-0ae6f2c3d624
-ms.openlocfilehash: aff143fca47cb5958b90e4a3f4c7ec284f2129f5
-ms.sourcegitcommit: 0e3da5cea44437c132b5c2ea522bd229ea000a10
+ms.openlocfilehash: 9b005a89156db48615ec6ea8dfc4f07a7414fc3b
+ms.sourcegitcommit: 7f5b29e24e1be9b5985044a030977485fea0b50c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "67861054"
+ms.lasthandoff: 07/17/2019
+ms.locfileid: "68299782"
 ---
-# <a name="vc-directories-property-page-windows"></a>VC ++ dizinleri özellik sayfası (Windows)
+# <a name="vc-directories-property-page-windows"></a>VC + + dizinleri Özellik sayfası (Windows)
 
-Visual Studio şu anda seçili proje oluşturma sırasında kullanmak için hangi dizinleri bildirmek için bu özellik sayfasını kullanın. Bir çözümde birden çok proje için dizinleri ayarlamak için bir özel özellik sayfası ölçeklendirmesini kullanacak [paylaşımını veya yeniden Visual Studio C++ proje ayarları](../create-reusable-property-configurations.md).
+Visual Studio 'ya Şu anda seçili olan projeyi oluştururken hangi dizinlerin kullanılacağını bildirmek için bu özellik sayfasını kullanın. Bir çözümdeki birden çok projenin dizinini ayarlamak için, [Visual Studio C++ proje ayarlarını paylaşma veya yeniden kullanma](../create-reusable-property-configurations.md)bölümünde açıklandığı gibi özel bir özellik sayfası kullanın.
 
-Bu sayfa Linux sürümü için bkz: [VC ++ dizinleri (Linux C++)](../../linux/prop-pages/directories-linux.md).
+Bu sayfanın Linux sürümü için bkz. [VC + + dizinleri (Linux C++)](../../linux/prop-pages/directories-linux.md).
 
-Erişim için **VC ++ dizinleri** özellik sayfası:
+**VC + + dizinleri** Özellik sayfasına erişmek için:
 
-1. Varsa **Çözüm Gezgini** penceresi görünür değilse, ana menüden seçin **görünümü** > **Çözüm Gezgini**.
-1. Bir proje düğümü (en üst düzey çözümü değil) sağ tıklatın ve seçin **özellikleri**.
-1. Sol bölmesinde **özellik sayfaları** iletişim kutusunda **yapılandırma özellikleri** > **VC ++ dizinleri**.
+1. **Çözüm Gezgini** pencere görünür değilse, ana menüden **Görünüm** > **Çözüm Gezgini**' i seçin.
+1. Proje düğümüne (en üst düzey çözümü değil) sağ tıklayın ve **Özellikler**' i seçin.
+1. **Özellik sayfaları** iletişim kutusunun sol bölmesinde **yapılandırma özellikleri** > **VC + + dizinleri**' ni seçin.
 
-VC ++ dizinleri özellikleri, üst düzey çözüm düğümüne bir proje için geçerlidir. Görmüyorsanız, **VC ++ dizinleri** altında **yapılandırma özellikleri**, bir C++ projesi düğümünde seçin **Çözüm Gezgini** penceresi:
+VC + + dizinleri özellikleri, en üst düzey çözüm düğümüne değil, bir proje için geçerlidir. **Yapılandırma özellikleri**altında C++ **VC + + dizinleri** ' ni görmüyorsanız, **Çözüm Gezgini** penceresinde bir proje düğümü seçin:
 
-![Proje düğümünü seçin](../media/vcppdir.png "VC ++ dizinleri özellikleri görmek için proje düğümünü seçin")
+![Proje düğümünü seçin](../media/vcppdir.png "VC + + dizinleri özelliklerini görmek için proje düğümünü seçin")
 
-Unutmayın **VC ++ dizinleri** farklı platformlar arası projeler için özellik sayfası görünür. Linux C++ projelerine özgü bilgiler için bkz: [VC ++ dizinleri (Linux C++)](../../linux/prop-pages/directories-linux.md).
+Platformlar arası projeler için **VC + + dizinleri** Özellik sayfasının farklı göründüğünü unutmayın. Linux C++ projelerine özgü bilgiler için bkz. [VC + + dizinleri (Linux C++)](../../linux/prop-pages/directories-linux.md).
 
-İle aşina değilseniz *proje özellikleri* Visual Studio'da ilk okuma için yararlı [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
+Visual Studio 'da *Proje özellikleri* hakkında bilgi sahibi değilseniz, [Visual Studio 'Da ilk olarak C++ set derleyicisini ve derleme özelliklerini](../working-with-project-properties.md)okumayı yararlı bulabilirsiniz.
 
-İçin varsayılan ayarları **VC ++ dizinleri** özellikleri proje türüne bağlıdır. Masaüstü projeleri için C++ araçlarının konumları için belirli bir Platform araç takımını ve Windows SDK'sı konumu içerirler. Değiştirebileceğiniz **Platform araç takımını** ve **Windows SDK sürümü** üzerinde **yapılandırma özellikleri** > **genel** Sayfa.
+**VC + + dizinleri** özellikleri için varsayılan ayarlar proje türüne bağlıdır. Masaüstü projeleri için, C++ belirli bir platform araç takımı ve Windows SDK konumu için Araçlar konumlarını içerirler. **Platform araç takımını** ve **Windows SDK sürümünü** , **yapılandırma özellikleri** > **genel** sayfasında değiştirebilirsiniz.
 
-Tüm dizinlerin değerlerini görüntülemek için:
+Dizinlerden herhangi birine ait değerleri görüntülemek için:
 
-1. Özelliklerinde birini **VC ++ dizinleri** sayfası. Örneğin, **kitaplık dizinleri**.
-1. Özellik değeri alanı sonundaki aşağı ok düğmesini seçin.
-1. Aşağı açılan menüsünde **Düzenle**.
+1. **VC + + dizinleri** sayfasındaki özelliklerden birini seçin. Örneğin, **kitaplık dizinleri**' ni seçin.
+1. Özellik değeri alanının sonundaki aşağı ok düğmesini seçin.
+1. Açılan menüde **Düzenle**' yi seçin.
 
-![Kitaplık dizinleri Düzenle](../media/vcppdir_libdir_edit.png "kitaplık yollarını düzenlemek için iletişim kutusu")
+![Kitaplık dizinlerini Düzenle](../media/vcppdir_libdir_edit.png "Kitaplık yollarını düzenleme Iletişim kutusu")
 
-Artık böyle bir iletişim kutusu görürsünüz:
+Şimdi şöyle bir iletişim kutusu görürsünüz:
 
-![Kitaplık dizinleri Göster](../media/vcppdir_libdir.png "eklemek veya kitaplık yollarını kaldırmak için iletişim kutusu")
+![Kitaplık dizinlerini göster](../media/vcppdir_libdir.png "Kitaplık yollarını ekleme veya kaldırma Iletişim kutusu")
 
-Geçerli dizinleri görüntülemek için bu iletişim kutusunu kullanın. Bir dizin eklemek veya değiştirmek istiyorsanız, ancak bunu kullanmak en iyisidir **özellik Yöneticisi** bir özellik sayfası oluşturma veya varsayılan kullanıcı özellik sayfası değiştirmek için. Daha fazla bilgi için [paylaşımını veya yeniden Visual Studio C++ proje ayarları](../create-reusable-property-configurations.md).
+Geçerli dizinleri görüntülemek için bu iletişim kutusunu kullanın. Ancak, bir dizini değiştirmek veya eklemek istiyorsanız, bir özellik sayfası oluşturmak veya varsayılan kullanıcı özellik sayfasını değiştirmek için **Özellik Yöneticisi** kullanmak daha iyidir. Daha fazla bilgi için bkz. [Visual Studio C++ proje ayarlarını paylaşma veya yeniden kullanma](../create-reusable-property-configurations.md).
 
-Yukarıda gösterildiği gibi devralınan yolların çoğu makro olarak verilir.  Bir makronun geçerli değerini incelemek için seçin **makroları** iletişim kutusunun sağ alt köşedeki düğmesi. Not birçok makroları yapılandırma türüne bağlıdır. Hata ayıklama derlemesinde makro için aynı makroyu derleme farklı bir yolda değerlendirebilir.
+Yukarıda gösterildiği gibi, devralınan yolların çoğu makro olarak verilir.  Bir makronun geçerli değerini incelemek için iletişim kutusunun sağ alt köşesindeki **makrolar** düğmesini seçin. Birçok makronun yapılandırma türüne bağlı olduğunu unutmayın. Bir hata ayıklama derlemesi içindeki bir makro, bir yayın derlemesi içindeki aynı makrodan farklı bir yol olarak değerlendirilemeyebilir.
 
-Düzenleme kutusuna kısmi veya tam eşleşme arayabilirsiniz. Aşağıdaki çizimde "WindowsSDK" dizesini içeren tüm makroları gösterir ve ayrıca makro değerlendiren geçerli yol gösterir:
+Düzenleme kutusunda kısmi veya tamamlanmış eşleşmelerin aranmasını sağlayabilirsiniz. Aşağıdaki çizimde "WindowsSDK" dizesini içeren tüm makrolar gösterilmektedir ve ayrıca makronun değerlendirdiği geçerli yol gösterilmektedir:
 
-![Makro değerleri görmek](../media/vcppdir_libdir_macros.png "makroları düzenlemek için iletişim kutusu")
+![Makro değerlerini gör](../media/vcppdir_libdir_macros.png "Makroları düzenlemek Için Iletişim kutusu")
 
-Not: Siz yazarken liste doldurulur. Basın yoksa **Enter**.
+Not: Liste siz yazarken doldurulur. **ENTER**tuşuna basmayın.
 
-Makrolar ve neden sabit kodlanmış yollar mümkün olduğunda yerine kullanmanız gerektiği hakkında daha fazla bilgi için bkz. [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
+Makrolar hakkında daha fazla bilgi edinmek ve mümkün olan her durumda sabit kodlanmış yollar yerine bunları nasıl kullanmanız gerektiği hakkında daha fazla bilgi için bkz. [Visual Studio 'da derleyici ve derleme özelliklerini ayarlama C++ ](../working-with-project-properties.md).
 
-Yaygın olarak kullanılan makrolar bir listesi için bkz. [derleme komutları ve özellikler için ortak makroları](common-macros-for-build-commands-and-properties.md).
+Yaygın olarak kullanılan makroların listesi için bkz. [derleme komutları ve özellikleri Için ortak makrolar](common-macros-for-build-commands-and-properties.md).
 
-Kendi makroları iki yolla tanımlayabilirsiniz:
+Kendi makrolarınızı iki şekilde tanımlayabilirsiniz:
 
-- Bir geliştirici Komut İstemi'nde ortam değişkenlerini ayarlayın. Tüm ortam değişkenlerini MSBuild özellikleri/makro kabul edilir.
+- Bir geliştirici komut isteminde ortam değişkenlerini ayarlayın. Tüm ortam değişkenleri MSBuild özellikleri/makrolar olarak değerlendirilir.
 
-- Bir .props dosyası içinde kullanıcı makroları tanımlar. Daha fazla bilgi için [özellik sayfası makroları](../working-with-project-properties.md).
+- Kullanıcı makrolarını bir. props dosyasında tanımlayın. Daha fazla bilgi için bkz. [özellik sayfası makroları](../working-with-project-properties.md).
 
-Daha fazla bilgi için şu blog postalarına bakın: [VC ++ dizinleri](https://blogs.msdn.com/b/vsproject/archive/2009/07/07/vc-directories.aspx), [devralınan özellikler ve özellik sayfaları](https://blogs.msdn.com/b/vsproject/archive/2009/06/23/inherited-properties-and-property-sheets.aspx), ve [Visual Studio 2010 C++ proje Yükseltme Kılavuzu](https://devblogs.microsoft.com/cppblog/visual-studio-2010-c-project-upgrade-guide/).
+Daha fazla bilgi için şu blog gönderilerine bakın: [VC + + dizinleri](https://blogs.msdn.com/b/vsproject/archive/2009/07/07/vc-directories.aspx), [devralınan özellikler ve özellik sayfaları](https://blogs.msdn.com/b/vsproject/archive/2009/06/23/inherited-properties-and-property-sheets.aspx)ve [Visual Studio 2010 C++ proje yükseltme Kılavuzu](https://devblogs.microsoft.com/cppblog/visual-studio-2010-c-project-upgrade-guide/).
 
 ## <a name="directory-types"></a>Dizin Türleri
 
 Ayrıca, aşağıdaki gibi diğer dizinleri de belirtebilirsiniz.
 
 **Yürütülebilir dizinler**<br/>
-Yürütülebilir dosyaların aranacağı dizinler. Karşılık gelen **yolu** ortam değişkeni.
+Yürütülebilir dosyaların aranacağı dizinler. **Path** ortam değişkenine karşılık gelir.
 
 **Ekleme kodu dizinleri**<br/>
-Kaynak kodda başvurulan ekleme kodu dosyalarının aranacağı dizinler. Karşılık gelen **INCLUDE** ortam değişkeni.
+Kaynak kodda başvurulan ekleme kodu dosyalarının aranacağı dizinler. **Include** ortam değişkenine karşılık gelir.
 
 **Başvuru dizinleri**<br/>
-Derleme ve kaynak kod tarafından başvurulan modül (meta veriler) dosyalarının aranacağı dizinler [#using](../../preprocessor/hash-using-directive-cpp.md) yönergesi. Karşılık gelen **LIBPATH** ortam değişkeni.
+[#Using](../../preprocessor/hash-using-directive-cpp.md) yönergesi tarafından kaynak kodunda başvurulan derleme ve modül (meta veri) dosyalarının aranacağı dizinler. **LIBPATH** ortam değişkenine karşılık gelir.
 
 **Kitaplık dizinleri**<br/>
-Kitaplık (.lib) dosyalarının aranacağı dizinler; çalışma zamanı kitaplıkları da buna dahildir. Karşılık gelen **LIB** ortam değişkeni. Bu ayar .obj dosyaları için geçerli değildir; bir .obj dosyasına bağlantı vermek **yapılandırma özellikleri** > **bağlayıcı** > **genel** özellik sayfasında  **Ek Kitaplık bağımlılıkları** ve ardından dosyanın göreli yolunu belirtin. Daha fazla bilgi için [bağlayıcı özellik sayfaları](linker-property-pages.md).
+Kitaplık (.lib) dosyalarının aranacağı dizinler; çalışma zamanı kitaplıkları da buna dahildir. **LIB** ortam değişkenine karşılık gelir. Bu ayar. obj dosyaları için geçerlidir; bir. obj dosyasına bağlantı sağlamak için, **yapılandırma özellikleri** > **bağlayıcı** > **genel** Özellik sayfasında, **Ek kitaplık bağımlılıkları** ' nı seçin ve sonra dosyanın göreli yolunu belirtin. Daha fazla bilgi için bkz. [bağlayıcı özellik sayfaları](linker-property-pages.md).
 
 **Kitaplık WinRT dizinleri**<br/>
-WinRT kitaplığı dosyaları için aranacak dizinleri, Evrensel Windows Platformu (UWP) uygulamaları kullanın.
+Evrensel Windows Platformu (UWP) uygulamalarında kullanılmak üzere WinRT kitaplığı dosyalarını aramak için dizinler.
 
-**Kaynak dizinleri**<br/>
+**Kaynak dizinler**<br/>
 IntelliSense için kullanılacak kaynak dosyaların aranacağı dizinler.
 
-**Dışarıda tutulan dizinler**<br/>
-Her derlemeden önce Visual Studio tüm önceki derleme beri değiştirilmiş olup olmadığını belirlemek için tüm dosyalarını zaman damgasını sorgular. Projeniz büyük kararlı kitaplıkları varsa, bu dizinlerin zaman damgası denetimden hariç tutarak oluşturma sürelerini potansiyel olarak hızlandırabilir.
+**Dizinleri dışla**<br/>
+Her derlemeden önce, Visual Studio önceki derlemeden bu yana herhangi bir değişiklik yapılıp yapılmayacağını anlamak için tüm dosyalardaki zaman damgasını sorgular. Projenizin büyük kararlı kitaplıkları varsa, bu dizinleri zaman damgası denetiminden çıkararak derleme sürelerini hızlandırabilirsiniz.
 
 ## <a name="sharing-the-settings"></a>Ayarları Paylaşma
 
-Proje özelliklerini diğer kullanıcılarla veya birden çok bilgisayar arasında paylaşabilirsiniz. Daha fazla bilgi için [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
+Proje özelliklerini diğer kullanıcılarla veya birden çok bilgisayar arasında paylaşabilirsiniz. Daha fazla bilgi için bkz [. C++ Visual Studio 'da derleyici ve derleme özelliklerini ayarlama](../working-with-project-properties.md).

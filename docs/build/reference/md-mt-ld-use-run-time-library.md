@@ -1,6 +1,6 @@
 ---
-title: / MD, -MT, -LD (çalışma zamanı kitaplığını kullan)
-ms.date: 11/04/2016
+title: /MD,-MT,-LD (çalışma zamanı kitaplığını kullan)
+ms.date: 07/17/2019
 f1_keywords:
 - /ld
 - /mt
@@ -35,12 +35,12 @@ helpviewer_keywords:
 - LIBCMTD.lib
 - -MT compiler option [C++]
 ms.assetid: cf7ed652-dc3a-49b3-aab9-ad60e5395579
-ms.openlocfilehash: 4ae63f2d45d5a1170f94de0480711bc719e4a2e0
-ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.openlocfilehash: 4e734233d94bf57d6838bd4d37c023d55f1d5f6b
+ms.sourcegitcommit: 7f5b29e24e1be9b5985044a030977485fea0b50c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65217621"
+ms.lasthandoff: 07/17/2019
+ms.locfileid: "68299759"
 ---
 # <a name="md-mt-ld-use-run-time-library"></a>/MD, /MT, /LD (Çalışma Zamanı Kitaplığını Kullan)
 
@@ -58,30 +58,30 @@ ms.locfileid: "65217621"
 
 |Seçenek|Açıklama|
 |------------|-----------------|
-|**/MD**|Uygulamanın, çalışma zamanı kitaplığının çok iş parçacığına özgü ve DLL'ye özgü sürümlerini kullanmasını sağlar. Tanımlar `_MT` ve `_DLL` ve derleyicinin MSVCRT.lib kitaplık adını .obj dosyasına yerleştirmesini yerleştirin.<br /><br /> Bu seçenekle derlenen uygulamalar, statik olarak MSVCRT.lib öğesine bağlıdır. Bu kitaplık, bağlayıcının dış başvuruları çözümlemesini sağlayan bir kod katmanı sağlar. Fiili Çalışma kodu MSVCR içinde yer alan*versionnumber*. DLL'yi MSVCRT.lib ile bağlanan uygulamalar için çalışma zamanında kullanılabilir olması gerekir.|
-|**/MDd**|Tanımlar `_DEBUG`, `_MT`, ve `_DLL` ve çalışma zamanı kitaplığı hata ayıklama çok iş parçacığına özgü ve DLL'ye özgü sürümünü kullanmak için uygulamayı neden olur. Ayrıca, derleyicinin MSVCRTD.lib kitaplık adını .obj dosyasına yerleştirmesini sağlar.|
-|**/MT**|Uygulamanın, çalışma zamanı kitaplığının çok iş parçacığı, statik sürümünü kullanmasını sağlar. Tanımlar `_MT` ve derleyicinin LIBCMT.lib kitaplık adını .obj dosyasına yerleştirmesini lıbcmtd.lib bağlayıcının dış simgeleri çözme LIBCMT.lib kullanır.|
-|**/MTd**|Tanımlar `_DEBUG` ve `_MT`. Bu seçenek, aynı zamanda, derleyicinin LIBCMTD.lib kitaplık adını .obj dosyasına koyarak bağlayıcının dış simgeleri çözme sırasında LIBCMTD.lib kullanmasını sağlar.|
-|**/LD**|DLL oluşturur.<br /><br /> Geçişleri **/dll** bağlayıcı seçeneği. Bağlayıcı arar fakat gerektirmez, bir `DllMain` işlevi. Yazmazsanız, bir `DllMain` bağlayıcı işlevini ekler bir `DllMain` TRUE döndüren bir işlev.<br /><br /> DLL başlatma kodunu bağlar.<br /><br /> Komut satırında dışa aktarma (.exp) dosyası belirtilmezse, içeri aktarma kitaplığı (.lib) oluşturur. İçeri aktarma kitaplığını DLL'nizi çağıran uygulamalara bağlarsınız.<br /><br /> Yorumlar [/Fe (EXE dosyasını Adlandır)](fe-name-exe-file.md) bir .exe dosyası yerine bir DLL adlandırma olarak. Varsayılan olarak, program adı haline gelen *basename*yerine .dll *basename*.exe.<br /><br /> Gelir **/MT** , açıkça belirtmediğiniz sürece **/MD**.|
-|**/LDd**|Hata ayıklama DLL'si oluşturur. Tanımlar `_MT` ve `_DEBUG`.|
+|**/MD**|Uygulamanın, çalışma zamanı kitaplığının çok iş parçacığına özgü ve DLL'ye özgü sürümlerini kullanmasını sağlar. `_MT` Ve`_DLL` derleyicisinin, Msvcrt. lib kitaplık adını. obj dosyasına yerleştirmesini sağlar.<br /><br /> Bu seçenekle derlenen uygulamalar, statik olarak MSVCRT.lib öğesine bağlıdır. Bu kitaplık, bağlayıcının dış başvuruları çözümlemesini sağlayan bir kod katmanı sağlar. Gerçek çalışma kodu MSVCR*versionNumber*içinde bulunur. DLL, MSVCRT. lib ile bağlantılı uygulamalara çalışma zamanında kullanılabilir olmalıdır.|
+|**/MDd**|, `_DEBUG` Vetanımlar`_DLL` , uygulamanın, çalışma zamanı kitaplığının çok iş parçacıklı ve DLL 'ye özgü sürümünü kullanmasını sağlar. `_MT` Ayrıca, derleyicinin MSVCRTD.lib kitaplık adını .obj dosyasına yerleştirmesini sağlar.|
+|**/MT**|Uygulamanın, çalışma zamanı kitaplığının çok iş parçacığı, statik sürümünü kullanmasını sağlar. `_MT` Derleyicinin Libcmt. lib kitaplık adını. obj dosyasına yerleştirmesini, böylece bağlayıcının dış sembolleri çözümlemek için Libcmt. lib kullanmasını sağlar.|
+|**/MTd**|`_DEBUG` Ve`_MT`tanımlar. Bu seçenek, aynı zamanda, derleyicinin LIBCMTD.lib kitaplık adını .obj dosyasına koyarak bağlayıcının dış simgeleri çözme sırasında LIBCMTD.lib kullanmasını sağlar.|
+|**/LD**|DLL oluşturur.<br /><br /> **/DLL** seçeneğini bağlayıcıya geçirir. Bağlayıcı, bir `DllMain` işlev için arar, ancak gerektirmez. Bir `DllMain` işlev yazarsanız, bağlayıcı doğru döndüren bir `DllMain` işlev ekler.<br /><br /> DLL başlatma kodunu bağlar.<br /><br /> Komut satırında dışa aktarma (.exp) dosyası belirtilmezse, içeri aktarma kitaplığı (.lib) oluşturur. İçeri aktarma kitaplığını DLL'nizi çağıran uygulamalara bağlarsınız.<br /><br /> [/Fe 'yi (ad exe dosyası)](fe-name-exe-file.md) bir. exe dosyası yerıne bir dll olarak adlandırmayla yorumlar. Varsayılan olarak, program adı *baseName*. exe yerine *baseName*. dll olur.<br /><br /> Açıkça **/md**belirtmediğiniz takdirde **/MT** 'i belirtir.|
+|**/LDd**|Hata ayıklama DLL'si oluşturur. `_MT` Ve`_DEBUG`tanımlar.|
 
-C çalışma zamanı kitaplıkları ve ile derleme yaparken hangi kitaplıkların kullanıldığı hakkında daha fazla bilgi için [/CLR (ortak dil çalışma zamanı derlemesi)](clr-common-language-runtime-compilation.md), bkz: [CRT kitaplık özellikleri](../../c-runtime-library/crt-library-features.md).
+C çalışma zamanı kitaplıkları ve [/clr (ortak dil çalışma zamanı derlemesi)](clr-common-language-runtime-compilation.md)ile derleme yaparken hangi kitaplıkların kullanıldığı hakkında daha fazla bilgi için bkz. [CRT kitaplık özellikleri](../../c-runtime-library/crt-library-features.md).
 
-Bağlayıcının belirli bir çağrıya geçirilen tüm modüller aynı çalışma zamanı kitaplığı derleyici seçeneğiyle derlenmiş olmalıdır (**/MD**, **/MT**, **/LD**).
+Belirli bir bağlayıcı çağrısına geçirilen tüm modüller aynı çalışma zamanı kitaplığı derleyici seçeneğiyle derlenmiş olmalıdır ( **/md**, **/MT**, **/ld**).
 
 Çalışma zamanı kitaplıklarının hata ayıklama sürümlerini kullanma hakkında daha fazla bilgi için bkz. [C çalışma zamanı kitaplığı başvurusu](../../c-runtime-library/c-run-time-library-reference.md).
 
-DLL'ler hakkında daha fazla bilgi için bkz. [C Oluştur /C++ DLL'leri Visual Studio'da](../dlls-in-visual-cpp.md).
+Dll 'Ler hakkında daha fazla bilgi için bkz. [Visual Studio 'Da CC++ /dll oluşturma](../dlls-in-visual-cpp.md).
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
+1. Projenin **Özellik sayfaları** iletişim kutusunu açın. Ayrıntılar için bkz. [Visual C++ Studio 'da derleyici ve derleme özelliklerini ayarlama](../working-with-project-properties.md).
 
-1. Genişletin **C/C++** klasör.
+1. **Yapılandırma özellikleri** > **CC++/** komut > **satırı** Özellik sayfası ' nı seçin.
 
-1. Seçin **kod oluşturma** özellik sayfası.
+1. **Kod oluşturma** özellik sayfasını seçin.
 
-1. Değiştirme **çalışma zamanı kitaplığı** özelliği.
+1. **Çalışma zamanı kitaplığı** özelliğini değiştirin.
 
 ### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için
 

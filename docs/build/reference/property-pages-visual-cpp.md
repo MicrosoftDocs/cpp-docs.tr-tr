@@ -1,6 +1,6 @@
 ---
-title: C++ projesi özellik Sayfa başvurusu - Visual Studio
-ms.date: 05/06/2019
+title: C++Proje özellik sayfası başvurusu-Visual Studio
+ms.date: 07/16/2019
 f1_keywords:
 - VC.Project.NotAProp.Edit
 helpviewer_keywords:
@@ -14,22 +14,30 @@ helpviewer_keywords:
 - build macro
 - user-defined macros
 ms.assetid: 13ffe3ea-1bc3-4bee-be5e-053a8a99cce4
-ms.openlocfilehash: 7b10e3c7eef846d72220545b89a217da7a4bb9a1
-ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.openlocfilehash: 164a8e8aff5428be36c5d921bc8078ab352f51c0
+ms.sourcegitcommit: 7f5b29e24e1be9b5985044a030977485fea0b50c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65217792"
+ms.lasthandoff: 07/17/2019
+ms.locfileid: "68299737"
 ---
-# <a name="c-project-property-page-reference"></a>C++ projesi özellik Sayfa başvurusu
+# <a name="c-project-property-page-reference"></a>C++Proje özellik sayfası başvurusu
 
-Özellik sayfaları kullanarak Visual Studio projeleri için ayarları belirtebilirsiniz. Açmak için **özellik sayfaları** iletişim kutusu için bir Visual Studio Proje **proje** menüsünde seçin **özellikleri**. Proje özellikleri hakkında daha fazla bilgi için bkz: [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
+Visual Studio 'da, derleyici ve bağlayıcı seçeneklerini, dosya yollarını ve proje için özellik sayfaları aracılığıyla diğer derleme ayarlarını belirtirsiniz. **Özellik sayfalarını**açmak için, ana menüden **Proje** > **özellikleri** ' ni seçin veya **Çözüm Gezgini** ' de proje düğümüne sağ tıklayın ve **Özellikler**' i seçin. Proje özellikleri hakkında daha fazla bilgi için bkz [. C++ Visual Studio 'da derleyici ve derleme özelliklerini ayarlama](../working-with-project-properties.md).
 
-Windows olmayan projelerinde özellik sayfaları için bkz: [Linux C++ özellik Sayfa başvurusu](../../linux/prop-pages-linux.md).
+Linux projelerindeki Özellik sayfaları için bkz. [Linux C++ Özellik sayfası başvurusu](../../linux/prop-pages-linux.md).
 
 ## <a name="in-this-section"></a>Bu Bölümde
 
-[Gelişmiş, bildirim aracı, yapılandırma özellikleri, \<Projectname > özellik sayfaları iletişim kutusu](advanced-manifest-tool.md)
+[Genel Özellik Sayfası (Proje)](general-property-page-project.md)
+
+[VC++ Dizinleri Özellik Sayfası](vcpp-directories-property-page.md)
+
+[Bildirim Aracı, genel](general-manifest-tool-configuration-properties.md)
+[Bildirim Aracı, giriş ve çıkış](input-and-output-manifest-tool.md)
+[bildirimi Aracı, yalıtılmış com](isolated-com-manifest-tool.md)
+[Bildirim Aracı, gelişmiş](advanced-manifest-tool.md)
+
 
 [Komut Satırı özellik sayfaları](command-line-property-pages.md)
 
@@ -39,9 +47,9 @@ Windows olmayan projelerinde özellik sayfaları için bkz: [Linux C++ özellik 
 
 [Genel Özellik Sayfası (Dosya)](general-property-page-file.md)
 
-[Genel Özellik Sayfası (Proje)](general-property-page-project.md)
 
-[Genel, bildirim aracı, yapılandırma özellikleri, \<Projectname > özellik sayfaları iletişim kutusu](general-manifest-tool-configuration-properties.md)
+
+
 
 [HLSL Özellik Sayfaları](hlsl-property-pages.md)
 
@@ -51,9 +59,9 @@ Windows olmayan projelerinde özellik sayfaları için bkz: [Linux C++ özellik 
 
 [HLSL Özellik Sayfaları: Çıkış Dosyaları](hlsl-property-pages-output-files.md)
 
-[Girdi ve çıktı, bildirim aracı, yapılandırma özellikleri, \<Projectname > özellik sayfaları iletişim kutusu](input-and-output-manifest-tool.md)
 
-[Yalıtılmış COM, bildirim aracı, yapılandırma özellikleri, \<Projectname > özellik sayfaları iletişim kutusu](isolated-com-manifest-tool.md)
+
+
 
 [Bağlayıcı Özellik Sayfaları](linker-property-pages.md)
 
@@ -73,7 +81,7 @@ Windows olmayan projelerinde özellik sayfaları için bkz: [Linux C++ özellik 
 
 [Kaynaklar Özellik Sayfaları](resources-property-pages.md)
 
-[VC++ Dizinleri Özellik Sayfası](vcpp-directories-property-page.md)
+
 
 [Web Başvuruları Özellik Sayfası](web-references-property-page.md)
 
