@@ -1,7 +1,7 @@
 ---
-title: C/C++ projeleri ve Visual Studio'da derleme sistemleri
+title: Visual StudioC++ 'da C/projeler ve derleme sistemleri
 ms.description: Use Visual Studio to compile and build C++ projects for Windows, ARM or Linux based on any project system.
-ms.date: 05/06/2019
+ms.date: 07/17/2019
 helpviewer_keywords:
 - builds [C++]
 - C++ projects, building
@@ -9,84 +9,84 @@ helpviewer_keywords:
 - builds [C++], options
 - C++, build options
 ms.assetid: fa6ed4ff-334a-4d99-b5e2-a1f83d2b3008
-ms.openlocfilehash: b345517bb1202030c9d512d16e80484feb4ba737
-ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.openlocfilehash: 672dea77c4165ddcd84d3253525dc8c2d8be3e7c
+ms.sourcegitcommit: 610751254a01cba6ad15fb1e1764ecb2e71f66bf
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65220366"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "68313181"
 ---
-# <a name="cc-projects-and-build-systems-in-visual-studio"></a>C/C++ projeleri ve Visual Studio'da derleme sistemleri
+# <a name="cc-projects-and-build-systems-in-visual-studio"></a>Visual StudioC++ 'da C/projeler ve derleme sistemleri
 
-Visual Studio 2017, düzenleme, derleme ve herhangi bir C++ kod tam IntelliSense desteği ile temel bir Visual Studio Proje veya derleme MSVC araç takımı ile kod dönüştürmek zorunda kalmadan oluşturmak için kullanabilirsiniz. Örneğin, bir Windows makinede platformlar arası CMake projesini Visual Studio'da Düzenle ardından g ++ uzak Linux makinesinde kullanarak Linux için derleyin.
+Visual Studio 'Yu, bu kodu Visual Studio projesine dönüştürmek veya MSVC C++ araç kümesi ile derlemek zorunda kalmadan, tam IntelliSense desteğiyle herhangi bir kod temelini düzenlemek, derlemek ve derlemek için kullanabilirsiniz. Örneğin, Visual Studio 'da bir platformlar arası CMake projesini bir Windows makinesinde düzenleyebilir ve ardından uzak bir Linux makinesinde g + + kullanarak Linux için derleyebilirsiniz.
 
-## <a name="c-compilation"></a>C++ derleme
+## <a name="c-compilation"></a>C++derleme
 
-İçin *derleme* bir veya daha fazla dosyalardan kaynak kodu derleyin ve ardından bu dosyalar bir yürütülebilir dosya (.exe), dinamik yük kitaplığı (.dll) veya bir statik kitaplık (.lib) bağlamak bir C++ programını anlamına gelir. 
+C++ Program *oluşturmak* için bir veya daha fazla dosyadan kaynak kodu derlemek ve ardından bu dosyaları yürütülebilir bir dosyaya (. exe), dinamik yükleme kitaplığı (. dll) veya statik kitaplık (. lib) ile bağlamak anlamına gelir. 
 
 Temel C++ derleme üç ana adımdan oluşur:
 
-- C++ önişlemcisi, her kaynak dosyasındaki tüm #directives ve makro tanımlarını dönüştürür. Bu, oluşturur bir *çeviri birimi*.
-- C++ derleyicisi, derleyici seçenekleri kümesi uygulayarak her çeviri birimini nesne (.obj) dosyalarına derlenir.
-- *Bağlayıcı* nesne dosyaları ayarlanan bağlayıcı seçenekleri uygulayarak bir tek yürütülebilir dosya birleştirir. 
+- C++ Önişlemci her kaynak dosyasındaki tüm #directives ve Makro tanımlarını dönüştürür. Bu bir *çeviri birimi*oluşturur.
+- C++ Derleyici her bir çeviri birimini, her bir derleyici seçeneğinin ayarlandığı her bir çeviri birimini nesne dosyalarına (. obj) derler.
+- *Bağlayıcı* , nesne dosyalarını, ayarlanmış bağlayıcı seçeneklerini uygulayarak tek bir yürütülebilirde birleştirir. 
 
 ## <a name="the-msvc-toolset"></a>MSVC araç takımı
 
-Microsoft C++ derleyici, bağlayıcı, standart kitaplıkları ve ilgili yardımcı programlarını oluşturan (bir araç zincirinizi veya "derleme Araçları" olarak da bilinir) MSVC derleyici araç takımı. Bu, Visual Studio'da dahil edilir. Ayrıca indirin ve araç takımı tek başına paket olarak ücretsiz kullanmak [Visual Studio 2017 için derleme araçları indirme konumu](https://visualstudio.microsoft.com/downloads/#build-tools-for-visual-studio-2017).
+Microsoft C++ derleyicisi, bağlayıcı, standart kitaplıklar ve ilgili yardımcı programlar, MSVC derleyici araç takımını (araç zinciri veya "derleme araçları" olarak da bilinir) oluşturur. Bunlar Visual Studio 'Ya dahildir. Ayrıca, araç takımını [Visual Studio 2019 indirme konumu Için derleme araçları](https://visualstudio.microsoft.com/downloads/#build-tools-for-visual-studio-2019)' ndan ücretsiz bir paket olarak indirebilir ve kullanabilirsiniz.
 
-MSVC derleyicisi (cl.exe) doğrudan komut satırından çağırarak basit programlar oluşturabilirsiniz. Aşağıdaki komut, bir tek bir kaynak kodu dosyasını kabul eder ve adlı yürütülebilir bir dosya oluşturmak için cl.exe çağırır *hello.exe*: 
+MSVC derleyicisini (CL. exe) doğrudan komut satırından çağırarak basit programlar oluşturabilirsiniz. Aşağıdaki komut, tek bir kaynak kod dosyasını kabul eder ve *Hello.* exe adlı bir yürütülebilir dosya oluşturmak için CL. exe ' yi çağırır: 
 
 ```cmd
 cl /EHsc hello.cpp
 ```
-Unutmayın, burada ' % s'derleyicisi (cl.exe) son çıktı dosyası üretmek için C++ önişlemcisi ve bağlayıcı otomatik olarak çağırır.  Daha fazla bilgi için [komut satırında derleme](building-on-the-command-line.md).
+Burada derleyicinin (CL. exe), son çıktı dosyasını oluşturmak için C++ Önişlemci ve bağlayıcı için otomatik olarak çağırdığını unutmayın.  Daha fazla bilgi için, bkz. [komut satırı üzerinde oluşturma](building-on-the-command-line.md).
 
-## <a name="build-systems-and-projects"></a>Sistemler ve projeler oluşturun
+## <a name="build-systems-and-projects"></a>Yapı sistemleri ve projeler
 
-Çoğu gerçek program bazı tür kullanın *yapı sistemi* birden fazla yapılandırması için birden çok kaynak dosyalarını derlerken, karmaşıklık yönetmek için (yani debug release), birden çok Platformu (x86, x64, ARM, vb.), özel derleme adımlar ve belirli bir sırayla derlenmelidir bile yürütülebilir. Bir yapı yapılandırma dosyasında ayarları yapın ve onu çağırmak önce derleyici derleme sistemi, dosya giriş olarak kabul eder. Kaynak kodu dosyaları ve yürütülebilir bir dosya oluşturmak için gereken yapı yapılandırma dosyaları kümesini adlı bir *proje*. 
+Çoğu gerçek dünyada, birden çok yapılandırma (örneğin, hata ayıklama vs. sürüm), birden çok platform (x86, x64, ARM, vb.), özel derleme adımları ve hatta birden çok kaynak dosyasını derleme karmaşıklıklarını yönetmek için bazı tür *derleme sistemleri* kullanır. belirli bir sırada derlenmesi gereken yürütülebilir dosyalar. Bir yapı yapılandırma dosyasında ayarları yaparsınız ve derleme sistemi bu dosyayı derleyicinin çağrılmadan önce girdi olarak kabul eder. Yürütülebilir dosya oluşturmak için gereken kaynak kodu dosyaları ve yapı yapılandırma dosyaları kümesi *Proje*olarak adlandırılır. 
 
-Aşağıdaki listede C++ - Visual Studio projeleri için çeşitli seçenekler gösterilmektedir:
+Aşağıdaki listede, Visual Studio projeleri için çeşitli seçenekler gösterilmektedir C++:
 
-- Visual Studio IDE kullanarak bir Visual Studio projesi oluşturun ve özellik sayfaları kullanarak yapılandırın. Visual Studio projeleri, Windows üzerinde çalışan programlar üretir. Genel bakış için bkz. [derleme ve oluşturma](/visualstudio/ide/compiling-and-building-in-visual-studio) Visual Studio belgelerinde.
+- Visual Studio IDE 'yi kullanarak Visual Studio projesi oluşturun ve özellik sayfalarını kullanarak yapılandırın. Visual Studio projeleri, Windows üzerinde çalışan programlar oluşturur. Genel bakış için bkz. Visual Studio belgelerinde [derleme ve oluşturma](/visualstudio/ide/compiling-and-building-in-visual-studio) .
 
-- CMakeLists.txt dosyasını içeren klasörü açın. CMake desteği, Visual Studio'da tümleşiktir. Düzenlemek için test ve herhangi bir şekilde CMake dosyalarda değişiklik yapmadan hata ayıklama için IDE kullanabilirsiniz. Bu, farklı düzenleyici kullanan aynı CMake proje içinde diğer olarak çalışmanıza olanak sağlar. CMake, platformlar arası geliştirme için önerilen yaklaşımdır. Daha fazla bilgi için [CMake projelerini](cmake-projects-in-visual-studio.md).
+- CMakeLists. txt dosyasını içeren bir klasör açın. CMake desteği Visual Studio ile tümleşiktir. CMake dosyalarını dilediğiniz şekilde değiştirmeden düzenlemek, test etmek ve hatalarını ayıklamak için IDE 'yi kullanabilirsiniz. Bu, farklı düzenleyiciler kullanıyor olabilecek diğer kullanıcılarla aynı CMake projesinde çalışmanıza olanak sağlar. CMake, platformlar arası geliştirme için önerilen yaklaşımdır. Daha fazla bilgi için bkz. [CMake projeleri](cmake-projects-in-visual-studio.md).
  
-- gevşek bir kaynak dosya klasörü hiçbir proje dosyasını açın. Visual Studio, dosyaları oluşturmak için buluşsal yöntemler kullanır. Bu, derlemek ve küçük konsol uygulamaları çalıştırmak için kolay bir yoludur. Daha fazla bilgi için [Klasör Aç, projeler](open-folder-projects-cpp.md).
+- Proje dosyası olmayan, kaynak dosyalarının gevşek bir klasörünü açın. Visual Studio, dosyaları derlemek için buluşsal yöntemler kullanır. Bu, küçük Konsol uygulamalarını derlemek ve çalıştırmak için kolay bir yoldur. Daha fazla bilgi için bkz. [klasör projelerini açma](open-folder-projects-cpp.md).
 
-- derleme görevleri dosyası ya da herhangi diğer yapı sistemini yapılandırma dosyasını içeren klasörü açın. JSON dosyaları klasöre ekleyerek herhangi bir rastgele derleme komut çağırmak için Visual Studio yapılandırabilirsiniz. Daha fazla bilgi için [Klasör Aç, projeler](open-folder-projects-cpp.md).
+- derleme görevleri dosyası veya başka bir yapı sistemi yapılandırma dosyası içeren bir klasörü açın. Visual Studio 'Yu, JSON dosyalarını klasöre ekleyerek herhangi bir rastgele derleme komutunu çağırmak üzere yapılandırabilirsiniz. Daha fazla bilgi için bkz. [klasör projelerini açma](open-folder-projects-cpp.md).
  
-- Windows derleme görevleri dosyası, Visual Studio'da açın. Daha fazla bilgi için [NMAKE başvurusu](reference/nmake-reference.md).
+- Visual Studio 'da bir Windows derleme görevleri dosyası açın. Daha fazla bilgi için bkz. [NMAKE Başvurusu](reference/nmake-reference.md).
 
-## <a name="msbuild-from-the-command-line"></a>Komut satırında MSBuild 
+## <a name="msbuild-from-the-command-line"></a>Komut satırından MSBuild 
 
-MSBuild komut satırı seçenekleri ile birlikte bir .vcxproj dosyası geçirerek, komut satırından çalıştırabilirsiniz. Bu yaklaşım, MSBuild iyi bir anlayış gerektirir ve yalnızca gerçekten gerekli olduğunda önerilir. Daha fazla bilgi için [MSBuild](msbuild-visual-cpp.md).
+Komut satırı seçenekleriyle birlikte bir. vcxproj dosyası geçirerek, komut satırından MSBuild 'i çağırabilirsiniz. Bu yaklaşım MSBuild 'in iyi bir şekilde anlaşılmasına gerek duyar ve yalnızca kesinlikle gerekli olduğunda önerilir. Daha fazla bilgi için bkz. [MSBuild](msbuild-visual-cpp.md).
 
 ## <a name="in-this-section"></a>Bu Bölümde
 
-[Visual Studio projeleri](creating-and-managing-visual-cpp-projects.md) nasıl oluşturmak, yapılandırmak ve C++ derleme için kendi yerel kullanarak Visual Studio projelerinde yapı sistemi (MSBuild).
+[Visual Studio projeleri](creating-and-managing-visual-cpp-projects.md) Visual Studio 'da kendi yerel yapı sistemini ( C++ MSBuild) kullanarak projeler oluşturma, yapılandırma ve derleme.
 
-[CMake projelerini](cmake-projects-in-visual-studio.md) nasıl kod, derleme ve Visual Studio'da CMake projelerini dağıtın.
+[CMake projeleri](cmake-projects-in-visual-studio.md) Visual Studio 'da CMake projelerini kodlama, derleme ve dağıtma.
 
-[Açık klasör projelere](open-folder-projects-cpp.md) kod, derleme ve dağıtma C++ projeleri için Visual Studio kullanmayı bağlı herhangi bir rastgele yapı sistemini veya hiçbir derleme sistemi. Asla. 
+[Klasör projelerini aç](open-folder-projects-cpp.md) Visual Studio 'Yu kullanarak, herhangi bir rastgele derleme sistemine veya C++ hiçbir derleme sistemine göre projeler derleyip, derleme ve dağıtma. Asla. 
 
-[Yayın derlemeleri](release-builds.md) son kullanıcıların dağıtımını oluşturun ve en iyi duruma getirilmiş sürüm ilgili sorunları giderme oluşturur.
+[Yayın yapıları](release-builds.md) Son kullanıcılara dağıtım için iyileştirilmiş yayın derlemeleri oluşturma ve sorunlarını giderme.
 
 [Komut satırından MSVC araç takımını kullanma](building-on-the-command-line.md)<br/>
-C/C++ derleyicisi ve derleme araçlarını doğrudan Visual Studio IDE kullanarak yerine komut satırını nasıl kullanılacağını açıklar.
+Visual Studio IDE kullanmak yerine C/C++ derleyici ve derleme araçlarının doğrudan komut satırından nasıl kullanılacağını açıklar.
 
-[Visual Studio'da DLL'leri oluşturma](dlls-in-visual-cpp.md) oluşturma, hata ayıklayın ve Visual Studio'da C/C++ DLL'leri (paylaşılan kitaplıklar) dağıtın.
+[Visual Studio 'Da dll 'Leri derleme](dlls-in-visual-cpp.md) Visual Studio 'da C/C++ dll (paylaşılan kitaplıklar) oluşturma, hata ayıklama ve dağıtma.
 
-[İzlenecek yol: Statik kitaplık oluşturma ve kullanma](walkthrough-creating-and-using-a-static-library-cpp.md) .lib ikili dosyasının nasıl oluşturulacağı.
+[İzlenecek yol: Statik kitaplık](walkthrough-creating-and-using-a-static-library-cpp.md) oluşturma ve kullanma. lib ikili dosyası oluşturma.
 
-[C/C++ yalıtılmış uygulamaları ve yan yana derlemeleri oluşturma](building-c-cpp-isolated-applications-and-side-by-side-assemblies.md) yalıtılmış uygulamalar ve yan yana derlemeler fikrini tabanlı Windows Masaüstü uygulamalar için dağıtım modelini açıklar.
+[CC++ /yalıtılmış uygulamalar ve yan yana derlemeler oluşturma](building-c-cpp-isolated-applications-and-side-by-side-assemblies.md) Yalıtılmış uygulamaların ve yan yana derlemelerin fikrini temel alarak Windows Masaüstü uygulamaları için dağıtım modelini açıklar.
 
-[C++ projeleri için 64 bit x64 yapılandırma hedefleri](configuring-programs-for-64-bit-visual-cpp.md) nasıl 64-bit x64 hedefine MSVC donanımla derleme araçları.
+[Projeleri C++ 64-bit, x64 hedefleri için yapılandırma](configuring-programs-for-64-bit-visual-cpp.md) MSVC derleme araçlarıyla 64 bitlik x64 donanımını hedefleme.
 
-[C++ projeleri ARM işlemcileri için yapılandırma](configuring-programs-for-arm-processors-visual-cpp.md) nasıl MSVC derleme araçları, ARM donanım hedeflemek için kullanın.
+[ARM C++ Işlemcileri için projeleri yapılandırma](configuring-programs-for-arm-processors-visual-cpp.md) ARM donanımını hedeflemek için MSVC derleme araçlarını kullanma.
 
-[Kodunuzu iyileştirme](optimizing-your-code.md) destekli program iyileştirmeleri gibi çeşitli yollarla kodunuzda en iyi duruma getirme.
+[Kodunuzu iyileştirme](optimizing-your-code.md) Programın Kılavuzlu iyileştirmeler dahil çeşitli yollarla kodunuzu en iyi duruma getirme.
 
-[Programları Windows XP için yapılandırma](configuring-programs-for-windows-xp.md) hedef Windows XP MSVC derleme araçlarını nasıl.
+[WINDOWS XP Için programları yapılandırma](configuring-programs-for-windows-xp.md) Windows XP 'yi MSVC derleme araçlarıyla hedefleme.
 
 [C/C++ Derleme Başvurusu](reference/c-cpp-building-reference.md)<br/>
-C++, derleyici ve bağlayıcı seçenekleri ve çeşitli derleme araçları oluşturmaya programı hakkında başvuru makalelerimize bağlantılar sağlar.
+' De C++program oluşturma, derleyici ve bağlayıcı seçenekleri ve çeşitli derleme araçları hakkında başvuru makalelerine bağlantılar sağlar.
