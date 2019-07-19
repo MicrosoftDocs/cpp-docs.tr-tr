@@ -1,33 +1,40 @@
 ---
 title: '&lt;ccomplex&gt;'
-ms.date: 11/04/2016
+ms.date: 07/11/2019
 f1_keywords:
 - <ccomplex>
+- ccomplex
+helpviewer_keywords:
+- ccomplex header
 ms.assetid: a9fcb5f0-88e3-464b-a5fd-d1afb8cd7e6f
-ms.openlocfilehash: ab9e95eb7b432a85a75d73d388ec069b0d04ac62
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 5b5383b1eca4fda72f5f9e3a78637373acbcf7ab
+ms.sourcegitcommit: 0867d648e0955ebad7260b5fbebfd6cd4d58f3c7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62351111"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68341132"
 ---
 # <a name="ltccomplexgt"></a>&lt;ccomplex&gt;
 
-C++ Standart Kitaplığı üst bilgisi [ \<karmaşık >](../standard-library/complex.md), standart C Kitaplığı üstbilgisi etkili bir şekilde içeren \<complex.h > ve ilişkili adlar ekler `std` ad alanı.
+, C++ [ \<Karmaşık >](complex.md)standart kitaplık üst bilgisini içerir.
 
-## <a name="syntax"></a>Sözdizimi
+> [!NOTE]
+> C standart \<kitaplığı karmaşık. h > üstbilgisi, \<karmaşık > ve \< \<cmath > C++ aşırı yüklemeler tarafından etkin bir şekilde değiştirildiğinden ccomplex > tarafından dahil değildir. Bu, \<ccomplex > üst bilgisini gereksiz hale getirir. Karmaşık. h > üstbilgisi ' de C++kullanım dışıdır. \< \<Ccomplex > üst bilgisi c++ 17 ' de kullanımdan kaldırılmıştır ve taslak c++ 20 standardında kaldırılmıştır.
 
-```cpp
-#include <ccomplex>
-```
+## <a name="requirements"></a>Gereksinimler
+
+**Üst bilgi:** \<ccomplex >
+
+**Ad alanı:** std
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu üstbilginin dahil sağlar, standart C Kitaplığı üstbilgisinde harici bağlantı kullanılarak bildirilen adların bildirilir `std` ad alanı.
-
-Adı `clog`, içinde bildirilen \<complex.h >, tanımlı değil `std` ad alanı ile olası çakışmaları nedeniyle `clog` dosyasında bildirilen [ \<iostream >](../standard-library/iostream.md).
+Karmaşık. `clog`h > olarak \<belirtilen ad, [ \<ıostream >](iostream.md)içinde belirtilen ile `clog` olası çakışmalar `std` nedeniyle ad alanında tanımlı değil.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Üstbilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md)<br/>
-[C++ Standart Kitaplığına Genel Bakış](../standard-library/cpp-standard-library-overview.md)<br/>
+[\<karmaşık >](complex.md)\
+[\<cmath >](cmath.md)\
+[Üst bilgi dosyaları başvurusu](cpp-standard-library-header-files.md)\
+[C++Standart kitaplığa genel bakış](cpp-standard-library-overview.md)\
+[C++ Standart kitaplıkta iş parçacığı güvenliği](thread-safety-in-the-cpp-standard-library.md)
