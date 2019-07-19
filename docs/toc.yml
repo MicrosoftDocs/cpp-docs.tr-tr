@@ -414,6 +414,8 @@
                   href: build/reference/general-property-page-project.md
                 - name: Genel özellik sayfası
                   href: build/reference/general-property-page-file.md
+                - name: Gelişmiş özellik sayfası
+                  href: build/reference/advanced-property-page.md
                 - name: VC++ Dizinleri özellik sayfası
                   href: build/reference/vcpp-directories-property-page.md
                 - name: Komut satırı özellik sayfaları
