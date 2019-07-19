@@ -1,38 +1,38 @@
 ---
-title: Hedef için Linux sisteminde Visual Studio bağlanma
-description: Uzak Linux makinesinin veya WSL gelen bir Visual Studio içinde nasıl C++ proje.
+title: Visual Studio 'da hedef Linux sisteminize bağlanma
+description: Visual Studio C++ projesinin içinden bir uzak Linux makinesine veya WSL 'ye bağlanma.
 ms.date: 06/19/2019
 ms.assetid: 5eeaa683-4e63-4c46-99ef-2d5f294040d4
-ms.openlocfilehash: 00d7facca2857efb0b8b43b5aaf38edce348a511
-ms.sourcegitcommit: 0e3da5cea44437c132b5c2ea522bd229ea000a10
+ms.openlocfilehash: cd107f096e4395f93775ee80b889cc0efd627166
+ms.sourcegitcommit: 610751254a01cba6ad15fb1e1764ecb2e71f66bf
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "67861141"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "68313425"
 ---
-# <a name="connect-to-your-target-linux-system-in-visual-studio"></a>Hedef için Linux sisteminde Visual Studio bağlanma
+# <a name="connect-to-your-target-linux-system-in-visual-studio"></a>Visual Studio 'da hedef Linux sisteminize bağlanma
 
 ::: moniker range="vs-2015"
 
-Linux desteği, Visual Studio 2017 ile kullanılabilir ve üzerinde desteklenir.
+Linux desteği, Visual Studio 2017 ve üzeri sürümlerde kullanılabilir.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2017"
 
-Linux projesi Linux (WSL) bir uzak makine ya da Windows alt sistemi hedefleyecek şekilde yapılandırabilirsiniz. Uzak makinelere ve WSL Visual Studio 2017'de bir bağlantı kurmak gerekir. 
+Bir Linux projesini, uzak bir makineyi veya Linux için Windows alt sistemini (WSL) hedefleyecek şekilde yapılandırabilirsiniz. Uzak makineler için ve Visual Studio 2017 üzerinde WSL için, uzak bir bağlantı ayarlamanız gerekir. 
 
-## <a name="connect-to-a-remote-linux-computer"></a>Uzak Linux bilgisayara bağlanın
+## <a name="connect-to-a-remote-linux-computer"></a>Uzak bir Linux bilgisayara bağlanma
 
-Oluşturma sırasında bir C++ Linux projesi bir uzak Linux Sistemi'nde (VM veya fiziksel makine), kod uzak Linux bilgisayarınıza kopyalanır ve sonra derlenmiş Linux Visual Studio ayarlarına göre.
+Bir uzak Linux C++ SISTEMI (VM veya fiziksel makine) için bir Linux projesi oluştururken, Linux kaynak kodu uzak Linux bilgisayarınıza kopyalanır ve ardından Visual Studio ayarlarına bağlı olarak derlenir.
 
-Bu uzak bağlantı kurmak için:
+Bu uzak bağlantıyı kurmak için:
 
-1. İlk kez projeyi derlemeyi ya da el ile seçerek yeni bir giriş oluşturun **Araçlar > Seçenekler** ve açın **Çoklu Platform > Bağlantı Yöneticisi** düğüm ve tıklatın **Ekle** düğmesi.
+1. Projeyi ilk kez oluşturun veya **araçlar > seçenekler** ' i seçip **platformlar arası > Bağlantı Yöneticisi** düğümünü açın ve **Ekle** düğmesine tıklayın.
 
    ![Bağlantı Yöneticisi](media/settings_connectionmanager.png)
 
-   Her iki senaryoda **uzak sisteme Bağlan** penceresi görüntülenir.
+   Her iki senaryoda da **uzak sistem 'e Bağlan** penceresi görüntülenir.
 
    ![Uzak sisteme Bağlan](media/connect.png)
 
@@ -41,66 +41,66 @@ Bu uzak bağlantı kurmak için:
    | Giriş | Açıklama
    | ----- | ---
    | **Ana bilgisayar adı**           | Hedef cihazınızın adı veya IP adresi
-   | **Bağlantı noktası**                | Genellikle, 22 SSH hizmeti çalışıyor bağlantı noktası
-   | **Kullanıcı adı**           | Kullanıcı olarak kimlik doğrulaması yapmak için
-   | **Kimlik doğrulaması türü** | Parola veya özel anahtar desteklenir
-   | **Parola**            | Girilen kullanıcı adının parolası
-   | **Özel anahtar dosyası**    | Özel anahtar dosyası için ssh bağlantı oluşturuldu
-   | **Parola**          | Yukarıda seçilen özel anahtarlı kullanılan parola
+   | **Bağ**                | SSH hizmetinin üzerinde çalıştığı bağlantı noktası, genellikle 22
+   | **Kullanıcı adı**           | Kimlik doğrulaması yapılacak Kullanıcı
+   | **Kimlik doğrulama türü** | Parola veya özel anahtar desteklenir
+   | **Parola**            | Girilen Kullanıcı adı için parola
+   | **Özel anahtar dosyası**    | SSH bağlantısı için özel anahtar dosyası oluşturuldu
+   | **Deyimi**          | Yukarıda seçilen özel anahtarla kullanılan parola
 
-   Bir parola veya anahtar dosyası ve parola kimlik doğrulaması için kullanabilirsiniz. Birçok geliştirme senaryoları için parola kimlik doğrulaması yeterli olur. Bir ortak/özel anahtar dosyası kullanmayı tercih ederseniz, yeni bir tane oluşturabilirsiniz veya [var olan bir yeniden](https://security.stackexchange.com/questions/10203/reusing-private-public-keys). Şu anda yalnızca RSA ve DSA anahtarlar desteklenir. 
+   Kimlik doğrulaması için bir parola ya da anahtar dosyası ve parola kullanabilirsiniz. Birçok geliştirme senaryosunda parola kimlik doğrulaması yeterlidir. Ortak/özel anahtar dosyası kullanmayı tercih ediyorsanız, yeni bir tane oluşturabilir veya [var olan](https://security.stackexchange.com/questions/10203/reusing-private-public-keys)bir dosyayı yeniden kullanabilirsiniz. Şu anda yalnızca RSA ve DSA anahtarları desteklenir. 
    
-   Özel bir RSA anahtar dosyası, aşağıdaki adımları izleyerek oluşturabilirsiniz:
+   Aşağıdaki adımları izleyerek özel bir RSA anahtar dosyası oluşturabilirsiniz:
 
-    1. Windows makinede, ssh ile anahtar çiftini `ssh-keygen -t rsa`. Bu, bir ortak anahtar ve özel bir anahtar oluşturur. Varsayılan olarak, anahtarları altında yerleştirilen `C:\Users\%USERNAME%\.ssh` adlarla `id_rsa.pub` ve `id_rsa`.
+    1. Windows makinesinde, ile `ssh-keygen -t rsa`SSH anahtar çiftini oluşturun. Bu, bir ortak anahtar ve özel anahtar oluşturur. Varsayılan olarak anahtarlar ve `C:\Users\%USERNAME%\.ssh` `id_rsa.pub` `id_rsa`adlarıyla birlikte yerleştirilir.
 
-    1. Windows ortak anahtarını Linux makinesine kopyalayın: `scp -p C:\Users\%USERNAME%\.ssh\id_rsa.pub user@hostname`.
+    1. Windows 'tan ortak anahtarı Linux makinesine kopyalayın: `scp -p C:\Users\%USERNAME%\.ssh\id_rsa.pub user@hostname`.
 
-    1. Linux sisteminde, anahtarın yetkili anahtarlar listesine ekleyin (ve dosyanın doğru izinlere sahip olduğundan emin olun): `cat ~/id_rsa.pub >> ~/.ssh/authorized_keys; chmod 600 ~/.ssh/authorized_keys`
+    1. Linux sisteminde, anahtarı yetkili anahtarlar listesine ekleyin (ve dosyanın doğru izinlere sahip olduğundan emin olun):`cat ~/id_rsa.pub >> ~/.ssh/authorized_keys; chmod 600 ~/.ssh/authorized_keys`
 
-1. Tıklayın **Connect** uzak bilgisayara bağlanmaya düğmesi. 
+1. Uzak bilgisayara bir bağlantı denemek için **Bağlan** düğmesine tıklayın. 
 
-   Bağlantı başarılı olursa, Visual Studio IntelliSense uzak üstbilgileri kullanmak üzere yapılandırma başlar. Daha fazla bilgi için [uzak sistemlerdeki üst bilgileri için IntelliSense](configure-a-linux-project.md#remote_intellisense).
+   Bağlantı başarılı olursa, Visual Studio IntelliSense 'i uzak üstbilgileri kullanacak şekilde yapılandırmaya başlayacaktır. Daha fazla bilgi için bkz. [uzak sistemlerdeki üst bilgiler Için IntelliSense](configure-a-linux-project.md#remote_intellisense).
 
-   Değiştirilmesi gereken giriş kutuları, bağlantı başarısız olursa, kırmızı renkle vurgulanır.
+   Bağlantı başarısız olursa, değiştirilmesi gereken giriş kutuları kırmızı renkle gösterilir.
 
-   ![Bağlantı Yöneticisi hata](media/settings_connectionmanagererror.png)
+   ![Bağlantı Yöneticisi hatası](media/settings_connectionmanagererror.png)
 
-   Kimlik doğrulaması için anahtar dosyaları kullanıyorsanız, hedef makinenin SSH sunucusu düzgün çalıştığından ve yapılandırılan olun.
+   Kimlik doğrulaması için anahtar dosyaları kullanıyorsanız, hedef makinenin SSH sunucusunun çalıştığından ve doğru şekilde yapılandırıldığından emin olun.
 
    ::: moniker-end
 
    ::: moniker range="vs-2019"
 
-   Git **Araçlar > Seçenekler > Çoklu Platform > Günlük** bağlantı sorunlarını gidermek günlük kaydını etkinleştirmek için:
+   Bağlantı sorunlarını gidermeye yardımcı olmak üzere günlüğe yazmayı etkinleştirmek için, **platformlar arası > günlüğe kaydetme > araçlar > seçeneklere** gidin:
 
    ![Uzaktan günlüğe kaydetme](media/remote-logging-vs2019.png)
 
-   Günlükleri, bağlantılar, uzak makine (kendi metin, çıkış kodu ve yürütme süresi) ve tüm çıkış kabuğa Visual Studio'dan gönderilen tüm komutlar içerir. Platformlar arası CMake proje ya da Visual Studio'da MSBuild tabanlı Linux projesi için günlük çalışır.
+   Günlükler arasında bağlantılar, uzak makineye gönderilen tüm komutlar (bunların metin, çıkış kodu ve yürütme süresi) ve Visual Studio 'dan kabuğa giden tüm çıktılar bulunur. Günlüğe kaydetme, Visual Studio 'daki platformlar arası CMake projesi veya MSBuild tabanlı Linux projesi için geçerlidir.
 
-   Çıkış bir dosyaya veya çok gitmek için yapılandırabileceğiniz **Çapraz Platform günlüğü** çıktı penceresinde bölmesi. MSBuild tabanlı Linux projeleri için MSBuild tarafından uzak makineye verilen komutları için yönlendirilmeyen **çıkış penceresine** çünkü bunlar yayılan giden işlem. Bunun yerine, bunlar "msbuild_" ön ekine sahip bir dosyaya kaydedilir.
+   Çıktıyı bir dosyaya veya Çıkış Penceresi **çapraz platform günlüğü** bölmesine gidecek şekilde yapılandırabilirsiniz. MSBuild tabanlı Linux projeleri için, MSBuild tarafından uzak makineye verilen komutlar, işlem dışı yayıldıklarından **Çıkış penceresi** yönlendirmemektedir. Bunun yerine, "msbuild_" ön ekine sahip bir dosyaya kaydedilir.
 
    ::: moniker-end
 
-## <a name="connect-to-wsl"></a>Bağlanmak için WSL
+## <a name="connect-to-wsl"></a>WSL 'ye Bağlan
 
 ::: moniker range="vs-2017"
 
-Visual Studio 2017'de WSL için bu makalenin önceki bölümlerinde anlatıldığı gibi bir uzak Linux makinesine bağlanma olarak aynı adımları kullanarak bağlanın. Kullanım **localhost** için **ana bilgisayar adı**.
+Visual Studio 2017 ' de, bu makalenin önceki kısımlarında açıklandığı gibi, uzak bir Linux makinesine bağlanırken aynı adımları kullanarak WSL 'ye bağlanırsınız. **Ana bilgisayar adı**için **localhost** kullanın.
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-Visual Studio 2019 içinde sürüm 16.1, uzak bağlantı eklemek veya WSL hedeflenirken SSH'ı yapılandırmak gerekli değildir. Linux sisteminde gerekli olan tek şey gcc, gdb, oluştur, rsync ve zip. Visual Studio, rsync ve yalnızca ilk kullanımda üst bilgi dosyaları, WSL örneğinden IntelliSense için kullanılacak Windows dosya sistemi ayıklamak için zip gerektirir. Visual Studio 2019 içinde 16.1 sürümü, sürüm 1809 Windows üzerinde podpora WSL temel alır. Windows daha sonraki bir sürümünü çalıştıran, ancak Visual Studio henüz yeni WSL özelliklerinden almaz.
+Visual Studio 2019 sürüm 16,1, C++ [Linux Için Windows alt sistemi (WSL)](https://docs.microsoft.com/windows/wsl/about)ile kullanımı için yerel destek ekledi.  Bu, artık yerel WSL yüklemenizde derleme ve hata ayıklama yapmak için uzak bir bağlantı eklemeniz veya SSH yapılandırmanız gerekmediği anlamına gelir. [WSL 'nin nasıl yükleneceğine](https://docs.microsoft.com/windows/wsl/install-win10) ilişkin ayrıntıları burada bulabilirsiniz.
 
-Distro apt destekliyorsa, bu komutla birlikte gerekli paketleri yükleyebilirsiniz:
+WSL yüklemenizi Visual Studio ile çalışacak şekilde yapılandırmak için aşağıdaki araçların yüklü olması gerekir: GCC, gdb, Make, rsync ve zip. Bu komutu kullanarak, apt 'yi kullanan distro 'lara 'e yükleyebilirsiniz: 
 
 ```bash
 sudo apt install g++ gdb make rsync zip
 ```
 
-Projeniz için WSL yapılandırmak için bkz [Linux projesi yapılandırma](configure-a-linux-project.md) veya [Linux CMake projesi yapılandırma](cmake-linux-project.md) proje türünü bağlı olarak, sahip.
+Projenizi WSL için yapılandırmak üzere bkz. [bir Linux projesi yapılandırma](configure-a-linux-project.md) veya sahip olduğunuz proje türüne bağlı olarak [bir Linux CMake projesi yapılandırma](cmake-linux-project.md) . WSL ile basit bir konsol uygulaması oluşturmaya yönelik adım adım yönergeleri izlemek için, [ C++ Visual Studio 2019 ve Linux için Windows alt sistemi (WSL) ile birlikte](https://devblogs.microsoft.com/cppblog/c-with-visual-studio-2019-and-windows-subsystem-for-linux-wsl/)bu giriş blog gönderisine göz atın.
 
 ::: moniker-end
 
@@ -108,7 +108,7 @@ Projeniz için WSL yapılandırmak için bkz [Linux projesi yapılandırma](conf
 
 [Linux projesi yapılandırma](configure-a-linux-project.md)<br />
 [Linux CMake projesi yapılandırma](cmake-linux-project.md)<br />
-[Dağıtma, çalıştırma ve Linux projenizin hatalarını ayıklama](deploy-run-and-debug-your-linux-project.md)<br />
+[Linux projenizi dağıtma, çalıştırma ve hata ayıklama](deploy-run-and-debug-your-linux-project.md)<br />
 
 
 
