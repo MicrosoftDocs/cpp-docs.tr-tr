@@ -418,12 +418,14 @@
                   href: build/reference/advanced-property-page.md
                 - name: VC++ Dizinleri özellik sayfası
                   href: build/reference/vcpp-directories-property-page.md
+                - name: C/C++ özellik sayfaları
+                  href: build/reference/c-cpp-prop-page.md
+                - name: Bağlayıcı özellik sayfaları
+                  href: build/reference/linker-property-pages.md
                 - name: Komut satırı özellik sayfaları
                   href: build/reference/command-line-property-pages.md
                 - name: NMake özellik sayfaları
                   href: build/reference/nmake-property-page.md
-                - name: Bağlayıcı özellik sayfaları
-                  href: build/reference/linker-property-pages.md
                 - name: Bildirim aracı özellik sayfaları
                   expanded: false
                   items:
@@ -8538,6 +8540,8 @@
                   href: standard-library/csetjmp.md
                 - name: <csignal>
                   href: standard-library/csignal.md
+                - name: <cstdalign>
+                  href: standard-library/cstdalign.md
                 - name: <cstdarg>
                   href: standard-library/cstdarg.md
                 - name: <cstdbool>
@@ -8556,6 +8560,8 @@
                   href: standard-library/ctgmath.md
                 - name: <ctime>
                   href: standard-library/ctime.md
+                - name: <cuchar>
+                  href: standard-library/cuchar.md
                 - name: <cvt-wbuffer>
                   href: standard-library/cvt-wbuffer.md
                 - name: <cvt-wstring>
