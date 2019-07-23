@@ -16,12 +16,12 @@ helpviewer_keywords:
 - is routines
 - isw routines
 ms.assetid: 1e171a57-2cde-41f6-a75f-a080fa3c12e5
-ms.openlocfilehash: 961ad52070928ba755625747546c8dc7b1c215ba
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 1550f8f012802e03e9228e67c381915b1b4e1d64
+ms.sourcegitcommit: 878a164fe6d550ca81ab87d8425c8d3cd52fe384
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62342945"
+ms.lasthandoff: 07/22/2019
+ms.locfileid: "68376041"
 ---
 # <a name="is-isw-routines"></a>is, isw Rutinleri
 
@@ -32,33 +32,33 @@ ms.locfileid: "62342945"
 |[isascii, __isascii, iswascii](../c-runtime-library/reference/isascii-isascii-iswascii.md)|[islower, iswlower, _islower_l, _iswlower_l](../c-runtime-library/reference/islower-iswlower-islower-l-iswlower-l.md)|
 |[isblank, iswblank, _isblank_l, _iswblank_l](../c-runtime-library/reference/isblank-iswblank-isblank-l-iswblank-l.md)|[isprint, iswprint, _isprint_l, _iswprint_l](../c-runtime-library/reference/isprint-iswprint-isprint-l-iswprint-l.md)|
 |[iscntrl, iswcntrl, _iscntrl_l, _iswcntrl_l](../c-runtime-library/reference/iscntrl-iswcntrl-iscntrl-l-iswcntrl-l.md)|[ispunct, iswpunct, _ispunct_l, _iswpunct_l](../c-runtime-library/reference/ispunct-iswpunct-ispunct-l-iswpunct-l.md)|
-|[iscsym, iscsymf, __iscsym, \__iswcsym, \__iscsymf, \__iswcsymf, _iscsym_l, _iswcsym_l, _iscsymf_l, _iswcsymf_l](../c-runtime-library/reference/iscsym-functions.md)|[isspace, iswspace, _isspace_l, _iswspace_l](../c-runtime-library/reference/isspace-iswspace-isspace-l-iswspace-l.md)|
+|[SCC, SCC, SCC, __scc \_,, _iswcsym, \__scc symf, \__iswcsymf, _scc sym_l, _iswcsym_l, _scc symf_l, _iswcsymf_l](../c-runtime-library/reference/iscsym-functions.md)|[isspace, iswspace, _isspace_l, _iswspace_l](../c-runtime-library/reference/isspace-iswspace-isspace-l-iswspace-l.md)|
 |[_isctype, iswctype, _isctype_l, _iswctype_l](../c-runtime-library/reference/isctype-iswctype-isctype-l-iswctype-l.md)|[isupper, _isupper_l, iswupper, _iswupper_l](../c-runtime-library/reference/isupper-isupper-l-iswupper-iswupper-l.md)|
 |[isdigit, iswdigit, _isdigit_l, _iswdigit_l](../c-runtime-library/reference/isdigit-iswdigit-isdigit-l-iswdigit-l.md)|[isxdigit, iswxdigit, _isxdigit_l, _iswxdigit_l](../c-runtime-library/reference/isxdigit-iswxdigit-isxdigit-l-iswxdigit-l.md)|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu yordamlar, belirtilen koşullar için karakterleri test edin.
+Bu yordamlar belirtilen koşullar için karakterleri test etme.
 
-**Olduğu** yordamları-1 herhangi bir tamsayı bağımsız değişkeni için anlamlı sonuçlar oluşturur (`EOF`) için **UCHAR_MAX** (0xFF) dahil. Beklenen değişken türü `int`.
+Bu **yordamlar,** -1 (`EOF`) ile **uchar_max** (0xFF) (dahil) arasında herhangi bir tamsayı bağımsız değişkeni için anlamlı sonuçlar üretir. Beklenen bağımsız değişken türü `int`.
 
 > [!CAUTION]
-> İçin **olduğu** türünde bir bağımsız değişken geçirme yordamlarını `char` öngörülemeyen sonuçlara neden olabilir. Türü bir SBCS veya MBCS tek baytlık karakteri `char` 0x7F değerinden büyük bir değere sahip. Varsa bir `char` olan geçti, derleyici değeri işaretli dönüştürebiliriz `int` ya da işaretli bir **uzun**. Bu değer, beklenmeyen sonuçlarla derleyici tarafından işareti genişletilmiş olabilir.
+> **In** yordamları için, türünde `char` bir bağımsız değişken geçirmek öngörülemeyen sonuçlara neden olabilir. 0x7F 'den büyük bir değere `char` sahip olan bir sbcs veya mbcs tek baytlı karakteri negatif. Bir `char` geçirildiğinde, derleyici değeri işaretli `int` veya imzalı bir **Long**değerine dönüştürebilir. Bu değer, derleyici tarafından, beklenmeyen sonuçlarla işaret eden genişletilmiş olabilir.
 
-**İsw** yordamları - 1 arasında herhangi bir tamsayı değeri için anlamlı sonuçlar oluşturur (**WEOF**) ile 0xFFFF arasında kapsamlı. **Wint_t** veri türü WCHAR içinde tanımlanmıştır. H olarak bir **işaretsiz**; herhangi bir geniş karakter veya geniş karakter son dosya tutun (**WEOF**) değeri.
+**İsw** yordamları,-1 ' den (**weof**), 0xFFFF, dahil olmak üzere herhangi bir tamsayı değeri için anlamlı sonuçlar üretir. **Wint_t** VERI türü wchar içinde tanımlanmıştır. **İşaretsiz kısa**olarak H; herhangi bir geniş karakter veya geniş karakter dosya sonu (**weof**) değeri tutabilir.
 
-Çıkış değeri ayarından etkilenir `LC_CTYPE` yerel ayarının kategori ayarına; bkz: [setlocale](../c-runtime-library/reference/setlocale-wsetlocale.md) daha fazla bilgi için. Bu işlevlerin sürümleri **_l** soneki geçerli yerel ayarı kullanır bu yerel ayara bağlı davranışı için; sürümleriyle **_l** sonekine bunların yerel ayar parametresini kullanmalarıdır Bunun yerine iletilmiş.
+Çıkış değeri yerel ayarın `LC_CTYPE` kategori ayarı ayarından etkilenir; daha fazla bilgi için bkz. [setlocale](../c-runtime-library/reference/setlocale-wsetlocale.md) . **_L** sonekine sahip olmayan bu işlevlerin sürümleri, yerel ayara bağımlı davranış için geçerli yerel ayarı kullanır; **_l** sonekine sahip sürümler, bunun yerine geçirilen yerel ayar parametresini kullanmaları dışında aynıdır.
 
-İçin "C" yerel ayarında test koşulları **olduğu** yordamları aşağıdaki gibidir:
+"C" yerel ayarında, **Bu yordamlar için** test koşulları aşağıdaki gibidir:
 
 `isalnum`<br/>
-Alfasayısal (A - Z, a - z veya 0 - 9).
+Alfasayısal (A-Z, A-z veya 0-9).
 
 `isalpha`<br/>
-Alfabetik (A - Z veya a - z).
+Alfabetik (A-Z veya A-z).
 
 `__isascii`<br/>
-ASCII karakter (0x00 - 0x7F).
+ASCII karakteri (0x00-0x7F).
 
 `isblank`<br/>
 Yatay sekme veya boşluk karakteri (0x09 veya 0x20).
@@ -73,16 +73,16 @@ Harf, alt çizgi veya rakam.
 Harf veya alt çizgi.
 
 `isdigit`<br/>
-Ondalık basamak (0 - 9).
+Ondalık basamak (0-9).
 
 `isgraph`<br/>
 Boşluk () dışında yazdırılabilir karakter.
 
 `islower`<br/>
-Küçük harf (a - z).
+Küçük harf (a-z).
 
 `isprint`<br/>
-Boşluk da içinde yazdırılabilir karakter (0x20 - 0x7E).
+Boşluk (0x20-0x7E) dahil yazdırılabilir karakter.
 
 `ispunct`<br/>
 Noktalama karakteri.
@@ -91,78 +91,78 @@ Noktalama karakteri.
 Boşluk karakteri (0x09-0x0D veya 0x20).
 
 `isupper`<br/>
-Büyük harf (A - Z).
+Büyük harf (A-Z).
 
 `isxdigit`<br/>
-Onaltılık basamak (A - F, a - f veya 0 - 9).
+Onaltılık basamak (A-F, A-f veya 0-9).
 
-İçin **isw** rutinleri için belirtilen koşula ilişkin test sonucu yerel ayardan bağımsızdır. Sınama koşulları **isw** işlevleri aşağıdaki gibidir:
+**İsw** yordamları için, belirtilen koşulun test sonucu yerel ayardan bağımsızdır. **İsw** işlevleri için test koşulları aşağıdaki gibidir:
 
 `iswalnum`<br/>
-`iswalpha` veya `iswdigit`.
+`iswalpha`veya `iswdigit`.
 
 `iswalpha`<br/>
-Bir uygulama tanımlı kümesinin öğelerinin hiçbiri biri olan geniş karakter `iswcntrl`, `iswdigit`, `iswpunct`, veya `iswspace` sıfır değil. `iswalpha` geniş karakterler için sıfır olmayan döndüğü `iswupper` veya `iswlower` sıfır değil.
+`iswcntrl` `iswdigit`,,, Veya`iswspace` hiçbiri sıfır dışında olmayan, uygulama tanımlı bir küme olan herhangi bir geniş karakter. `iswpunct` `iswalpha`yalnızca `iswupper` veya`iswlower` sıfır dışında bir geniş karakter için sıfır dışında bir değer döndürür.
 
 `iswascii`<br/>
-ASCII karakterinin geniş karakter gösterimi (0x0000 - 0x007F).
+ASCII karakterinin geniş karakterli temsili (0x0000-0x007F).
 
 `iswblank`<br/>
-Geniş karakter standart boşluk karakterine karşılık gelen veya kendisi için geniş karakterlerin uygulama tanımlı bir dizi biri `iswalnum` false'tur. Standart boş karakterler: boşluk (L' ') ve yatay sekmedir (L '\t').
+Standart boşluk karakterine karşılık gelen veya yanlış olan `iswalnum` uygulama tanımlı geniş karakter kümesinden biri olan geniş karakter. Standart boş karakterler boşluk (L ' ') ve yatay sekme (L ' \t ').
 
 `iswcntrl`<br/>
-Geniş karakteri denetleyin.
+Denetim geniş karakter.
 
 `__iswcsym`<br/>
-Bir geniş karakter `isalnum` doğru ya da '_' karakteri.
+İçin geçerli olan `isalnum` herhangi bir geniş karakter veya ' _ ' karakteri.
 
 `__iswcsymf`<br/>
-Bir geniş karakter `iswalpha` doğru ya da '_' karakteri.
+İçin geçerli olan `iswalpha` herhangi bir geniş karakter veya ' _ ' karakteri.
 
 `iswctype`<br/>
-Karakteri tarafından belirtilen özelliğe sahip `desc` bağımsız değişken. Her bir geçerli değerini `desc` bağımsız değişkeni `iswctype`, aşağıdaki tabloda gösterildiği gibi bir eşdeğer bir geniş karakter sınıflandırma rutini olan:
+Karakter, `desc` bağımsız değişken tarafından belirtilen özelliğe sahip. Bağımsız değişkeninin geçerli her bir değeri için,aşağıdakitablodagösterildiğigibieşdeğerbirgenişkaraktersınıflandırmayordamıvardır:`iswctype` `desc`
 
-### <a name="equivalence-of-iswctypec-desc-to-other-isw-testing-routines"></a>İswctype (c, desc) için diğer isw sınama yordamları denkliği
+### <a name="equivalence-of-iswctypec-desc-to-other-isw-testing-routines"></a>İswctype (c, DESC) diğer isw test yordamlarına denklik
 
-|Değeri *desc* bağımsız değişken|iswctype ( *c, desc* ) eşdeğer|
+|*DESC* bağımsız değişkeninin değeri|ıwctype ( *c, DESC* ) eşdeğeri|
 |------------------------------|----------------------------------------|
-|**_ALPHA**|**iswalpha (** `c` **)**|
+|**_ALFA**|**iswalpha (** `c` **)**|
 |**_ALPHA** &#124; **_DIGIT**|**iswalnum (** `c` **)**|
-|**_BLANK**|**iswblank (** `c` **)**|
-|**_CONTROL**|**iswcntrl (** `c` **)**|
-|**_DIGIT**|**iswdigit (** `c` **)**|
-|**_ALPHA** &#124; **_DIGIT** &#124; **_PUNCT**|**iswgraph (** `c` **)**|
-|**_LOWER**|**iswlower (** `c` **)**|
-|**_ALPHA** &#124; **_BLANK** &#124; **_DIGIT** &#124; **_PUNCT**|**iswprint(** `c` **)**|
+|**_BLANK**|**ıwıblank (** `c` **)**|
+|**_DENETIM**|**iswcnw (** `c` **)**|
+|**_BASAMAK**|**iswdigit (** `c` **)**|
+|**_ALPHA** &#124; **_DIGIT** &#124; **_PUNCT**|**iswgraf (** `c` **)**|
+|**_DÜŞÜK**|**iswlower (** `c` **)**|
+|**_ALPHA** &#124; **_BLANK** &#124; **_DIGIT** &#124; **_PUNCT**|**iswprint (** `c` **)**|
 |**_PUNCT**|**iswpunct (** `c` **)**|
-|**_BLANK**|**iswblank (** `c` **)**|
-|**_SPACE**|**iswspace (** `c` **)**|
-|**_UPPER**|**iswupper (** `c` **)**|
-|**_HEX**|**iswxdigit (** `c` **)**|
+|**_BLANK**|**ıwıblank (** `c` **)**|
+|**_BOŞLUK**|**iswspace (** `c` **)**|
+|**_ÜST**|**iswupper (** `c` **)**|
+|**_ONALTILI**|**iswxdigit (** `c` **)**|
 
 `iswdigit`<br/>
-Bir ondalık basamak karakterine karşılık gelen geniş karakter.
+Ondalık basamaklı bir karaktere karşılık gelen geniş karakter.
 
 `iswgraph`<br/>
-Boşluk geniş karakteri dışında yazdırılabilir geniş karakteri (L' ').
+Boşluk geniş karakteri (L ' ') dışında yazdırılabilir geniş karakter.
 
 `iswlower`<br/>
-Küçük Harf ya da bir uygulama tanımlı kümesinin geniş karakterler öğelerinin hiçbiri `iswcntrl`, `iswdigit`, `iswpunct`, veya `iswspace` sıfır değil. `iswlower` küçük harfe karşılık gelen geniş karakterler için sıfır döndürür.
+Küçük `iswcntrl`harf veya `iswdigit` ,,,veya`iswspace` olmayan, ,,yadasıfırdanfarklıbiruygulamatanımlıgenişkarakterkümesi.`iswpunct` `iswlower`yalnızca küçük harflere karşılık gelen geniş karakterler için sıfır dışında bir değer döndürür.
 
 `iswprint`<br/>
-Boşluk geniş karakteri dahil yazdırılabilir geniş karakteri (L' ').
+Boşluk geniş karakteri (L ' ') içeren yazdırılabilir geniş karakter.
 
 `iswpunct`<br/>
-Ne boşluk geniş karakteri yazdırılabilir geniş karakteri (L' ') ne de geniş karakter `iswalnum` sıfır değil.
+Boşluk geniş karakteri (L ' ') veya geniş karakter `iswalnum` olmayan, yazdırılabilir geniş karakter.
 
 `iswspace`<br/>
-Geniş karakter standart boşluk karakterine karşılık gelen veya uygulama tanımlı olan geniş karakterler kümesi biri `iswalnum` false'tur. Standart beyaz boşluk karakterleri: boşluk (L' '), form besleme (L '\f'), satır başı karakteri (L '\n'), satır başı (L '\r'), yatay sekme (L '\t') ve dikey sekmedir (L '\v').
+Standart boşluk karakterine karşılık gelen veya yanlış olan `iswalnum` uygulama tanımlı geniş karakter kümesinden biri olan geniş karakter. Standart boşluk karakterleri şunlardır: boşluk (L ' '), form akışı (L ' \f '), yeni satır (L ' \n '), satır başı (l ' \r '), yatay sekme (L ' \t ') ve dikey sekme (L ' \v ').
 
 `iswupper`<br/>
-Geniş karakter, büyük harf ya da hiçbiri geniş karakterlerin uygulama tanımlı bir dizi biri `iswcntrl`, `iswdigit`, `iswpunct`, veya `iswspace` sıfır değil. `iswupper` büyük harf karakterlere karşılık gelen geniş karakterler için sıfır döndürür.
+Büyük harf olan veya `iswcntrl`,, `iswpunct`, ya `iswspace` da sıfırdan farklı olmayan, `iswdigit`uygulama tanımlı geniş karakter kümesinden biri olan geniş karakter. `iswupper`yalnızca büyük harfli karakterlere karşılık gelen geniş karakterler için sıfır dışında bir değer döndürür.
 
 `iswxdigit`<br/>
-Bir onaltılık basamak karakterine karşılık gelen geniş karakter.
+Onaltılık basamaklı bir karaktere karşılık gelen geniş karakter.
 
 ## <a name="example"></a>Örnek
 

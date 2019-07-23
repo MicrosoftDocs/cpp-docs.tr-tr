@@ -1,40 +1,28 @@
 ---
 title: Giriş Akışı Üye İşlevleri
-ms.date: 11/04/2016
+ms.date: 07/19/2019
 helpviewer_keywords:
 - input stream objects
 - input streams, member functions
 ms.assetid: b4b9465d-0da9-4ccf-859d-72a68418982e
-ms.openlocfilehash: b046ea1995d5a8eaa39dced9feb7a5e4c422c253
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 3b028090c9b91c7f0dde195243a5d2daef55fbbc
+ms.sourcegitcommit: 878a164fe6d550ca81ab87d8425c8d3cd52fe384
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62159294"
+ms.lasthandoff: 07/22/2019
+ms.locfileid: "68376240"
 ---
 # <a name="input-stream-member-functions"></a>Giriş Akışı Üye İşlevleri
 
-Giriş akışı üye işlevleri, disk giriş için kullanılır. Üye işlevleri şunları içerir:
+Giriş akışı üye işlevleri disk girişi için kullanılır.
 
-- [Giriş akışları için açık işlevi](#vclrftheopenfunctionforinputstreamsanchor11)
+## <a name="vclrftheopenfunctionforinputstreamsanchor11"></a>açın
 
-- [Get](#vclrfthegetfunctionanchor12)
+Bir giriş dosyası akışı (`ifstream`) kullanıyorsanız, bu akışı belirli bir disk dosyası ile ilişkilendirmeniz gerekir. Bunu oluşturucuda yapabilir veya `open` işlevini kullanabilirsiniz. Her iki durumda da, bağımsız değişkenler aynıdır.
 
-- [Getline](#vclrfthegetlinefunctionanchor13)
+Bir giriş akışıyla ilişkili dosyayı açtığınızda genellikle bir [ios_base:: OpenMode](../standard-library/ios-base-class.md#openmode) bayrağı belirtirsiniz (varsayılan mod ' dır `ios::in`). `openmode` Bayrakların bir listesi için bkz. [ios_base:: OpenMode](../standard-library/ios-base-class.md#openmode). Bayraklar bit düzeyinde OR ( &#124; ) işleciyle birleştirilebilir.
 
-- [Okuma](#vclrfthereadfunctionanchor14)
-
-- [Seekg ve tellg işlevleri](#vclrftheseekgandtellgfunctionsanchor7)
-
-- [Giriş akışları için Kapat işlevi](#vclrftheclosefunctionforinputstreamsanchor15)
-
-## <a name="vclrftheopenfunctionforinputstreamsanchor11"></a> Giriş akışları için açık işlevi
-
-Bir giriş dosya akışı (ifstream) kullanıyorsanız, bu akış bir belirli disk dosyası ile ilişkilendirmeniz gerekir. Bu oluşturucuda yapabilirsiniz veya kullanabileceğiniz `open` işlevi. Her iki durumda da aynı bağımsız değişkenler.
-
-Genel olarak belirttiğiniz bir [ios_base::openmode](../standard-library/ios-base-class.md#openmode) bir giriş akışı ile ilişkili dosyayı açtığınızda bayrağını (varsayılan mod `ios::in`). Bir listesi için `open_mode` bayrakları, bkz: [açık](#vclrftheopenfunctionforinputstreamsanchor11). Bayrak bit düzeyinde OR ile birleştirilebilir ( &#124; ) işleci.
-
-Bir dosyayı okumak için önce kullanın `fail` üye işlevi var olup olmadığını belirlemek için:
+Bir dosyayı okumak için, önce varolup olmadığını `fail` öğrenmek için üye işlevini kullanın:
 
 ```cpp
 istream ifile("FILENAME");
@@ -43,11 +31,11 @@ if (ifile.fail())
 // The file does not exist ...
 ```
 
-## <a name="vclrfthegetfunctionanchor12"></a> Get
+## <a name="vclrfthegetfunctionanchor12"></a>Al
 
-Biçimlendirilmemiş `get` üye işlev çalışır gibi `>>` işleci iki özel durumu. İlk olarak, `get` işlevi içeren beyaz boşluk karakterleri, boşluk ayıklayıcısı dışlar ise zaman `skipws` bayrağı ayarlanmış (varsayılan). İkinci olarak, `get` işlevi bağlı çıkış akışına neden olma olasılığını (`cout`, örneğin) kopyalanması için.
+Biçimlendirilmemiş `get` üye işlevi, `>>` iki özel durum ile işleç gibi çalışır. İlk olarak, `get` işlev boşluk karakterleri içerir, ancak Extractor, `skipws` bayrak ayarlandığında boşluk dışlar (varsayılan). İkinci olarak, `get` işlev bağlı çıkış akışının (`cout`Örneğin,) silinmesine neden olur.
 
-Çeşitlemesi `get` işlevi bir arabellek adresi ve en fazla Okunacak karakter sayısını belirtir. Bu örnekte gösterildiği gibi belirli bir değişkene gönderilen karakter sayısını sınırlamak için kullanışlıdır:
+`get` İşlevin çeşitlemesi bir arabellek adresi ve okunacak en fazla karakter sayısını belirtir. Bu örnekte gösterildiği gibi belirli bir değişkene gönderilen karakter sayısını kısıtlamak için faydalıdır:
 
 ```cpp
 // ioo_get_function.cpp
@@ -78,11 +66,11 @@ int main()
 1234
 ```
 
-## <a name="vclrfthegetlinefunctionanchor13"></a> Getline
+## <a name="vclrfthegetlinefunctionanchor13"></a>getline
 
-`getline` Üye işlevine benzer `get` işlevi. Her iki işlev girişi için Sonlandırıcı karakter belirten üçüncü bir bağımsız değişken izin verin. Yeni satır karakterini varsayılan değerdir. Her iki işlev, gerekli Sonlandırıcı karakter için bir karakter saklı tutarız. Ancak, `get` Sonlandırıcı karakter stream'de bırakır ve `getline` Sonlandırıcı karakteri kaldırır.
+Üye işlevi `get` işlevine benzer. `getline` Her iki işlev de giriş için Sonlandırıcı karakteri belirten üçüncü bir bağımsız değişkene izin verir. Varsayılan değer yeni satır karakteridir. Her iki işlev de gerekli sonlandırma karakteri için bir karakter ayırmakta. Ancak, `get` akışta sonlandırma karakterini bırakır ve `getline` sonlandırma karakterini kaldırır.
 
-Aşağıdaki örnek, bir giriş akışı Sonlandırıcı karakter belirtir:
+Aşağıdaki örnek, giriş akışı için bir sonlandırma karakteri belirtir:
 
 ```cpp
 // getline_func.cpp
@@ -105,11 +93,11 @@ int main( )
 test
 ```
 
-## <a name="vclrfthereadfunctionanchor14"></a> Okuma
+## <a name="vclrfthereadfunctionanchor14"></a>okuyamaz
 
-`read` Üye işlevi bir dosyadan bayt bellek belirtilen bir alana okur. Uzunluk değişkeni, okunan bayt sayısını belirler. Bu bağımsız değişkeni eklemezseniz, fiziksel dosya sonuna ulaşıldığında veya bir metin modunda dosyası katıştırılmış zaman okuma durdurur `EOF` karakter okunur.
+`read` Üye işlevi bir dosyadan belirtilen bellek alanına bayt okur. Length bağımsız değişkeni, okunan bayt sayısını belirler. Bu bağımsız değişkeni eklemezseniz, okuma, dosyanın fiziksel sonuna ulaşıldığında veya bir metin modu dosyası söz konusu olduğunda, gömülü `EOF` bir karakter okunurken yanıt vermez.
 
-Bu örnek bir ikili kayıt yapısı içinde bir bordro dosyadan okur:
+Bu örnek, bir bordro dosyasındaki ikili kaydı bir yapıya okur:
 
 ```cpp
 #include <fstream>
@@ -135,11 +123,11 @@ int main()
 }
 ```
 
-Program veri kayıtlarının biçimlendirildiğini tam olarak belirtilen sonlandırma hiçbir satır başı veya satır besleme karakteri ile yapısı tarafından varsayar.
+Program, veri kayıtlarının kesin olmayan satır dönüşü veya satır besleme karakterleri olmadan yapı tarafından belirtilen şekilde biçimlendirildiğini varsayar.
 
-## <a name="vclrftheseekgandtellgfunctionsanchor7"></a> Seekg ve tellg işlevleri
+## <a name="vclrftheseekgandtellgfunctionsanchor7"></a>seekg ve tellg
 
-Giriş dosyası akışları veri sonraki okunacak nerede dosya konumuna bir iç işaretçi tutun. Bu işaretçiyle ayarladığınız `seekg` burada gösterildiği gibi işlev:
+Giriş dosyası akışları, dosyadaki bir sonraki okunacak konuma bir iç işaretçi tutar. Bu işaretçiyi `seekg` , aşağıda gösterildiği gibi işleviyle ayarlarsınız:
 
 ```cpp
 #include <iostream>
@@ -165,9 +153,9 @@ int main( )
 }
 ```
 
-Kullanılacak `seekg` kayıt odaklı veriler yönetim sistemleri uygulamak için sabit uzunluklu kayıt boyutu dosyasının sonuna göre bayt konumunun alıp ardından kayıt sayısıyla çarpın `get` kayıt okumak için nesne.
+Kayıt odaklı `seekg` veri yönetimi sistemlerini uygulamak için kullanmak üzere, dosyanın sonuna göre bayt konumunu almak için sabit uzunluklu kayıt boyutunu kayıt numarası ile çarpın ve sonra kaydı okumak için `get` nesnesini kullanın.
 
-`tellg` Üye işlevi okumak için geçerli dosya konumu döndürür. Bu değer türünde `streampos`, `typedef` tanımlanan \<iostream >. Aşağıdaki örnek, bir dosyayı okur ve alanları konumlarını gösteren bir ileti görüntüler.
+`tellg` Üye işlevi, okuma için geçerli dosya konumunu döndürür. Bu değer, `streampos` \<iostream > tanımlı `typedef` bir türüdür. Aşağıdaki örnek bir dosyayı okur ve boşluk konumlarını gösteren iletileri görüntüler.
 
 ```cpp
 #include <fstream>
@@ -192,9 +180,9 @@ int main( )
 }
 ```
 
-## <a name="vclrftheclosefunctionforinputstreamsanchor15"></a> Giriş akışları için Kapat işlevi
+## <a name="vclrftheclosefunctionforinputstreamsanchor15"></a>~eksik
 
-`close` Üye işlevi bir giriş dosya akışı ile ilişkili disk dosyayı kapatır ve işletim sisteminin dosya tanıtıcısı serbest bırakır. [İfstream](../standard-library/basic-ifstream-class.md) yok Edicisi, dosyayı kapatır, ancak kullanabileceğiniz `close` aynı stream nesne için başka bir dosyayı açmaya gerekiyorsa işlev.
+`close` Üye işlevi, bir giriş dosyası akışıyla ilişkili disk dosyasını kapatır ve işletim sistemi dosya tanıtıcısını serbest bırakır. Yıkıcı dosyayı sizin için kapatır, ancak aynı Stream nesnesi için başka bir `close` dosya açmanız gerekiyorsa bu işlevi kullanabilirsiniz. [`ifstream`](../standard-library/basic-ifstream-class.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

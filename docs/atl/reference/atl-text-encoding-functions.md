@@ -1,5 +1,5 @@
 ---
-title: ATL metin kodlama işlevleri
+title: ATL metin kodlama Işlevleri
 ms.date: 11/04/2016
 f1_keywords:
 - atlbase/ATL::AtlGetHexValue
@@ -25,48 +25,48 @@ f1_keywords:
 - atlenc/ATL::UUEncode
 - atlenc/ATL::UUEncodeGetRequiredLength
 ms.assetid: 2ae1648b-2b87-4112-92aa-0069fcfd23da
-ms.openlocfilehash: 1e3e44e99e6f3a53a930ed5b3ac1f7cd5ae23063
-ms.sourcegitcommit: 28eae422049ac3381c6b1206664455dbb56cbfb6
+ms.openlocfilehash: 1380d33c485c1ac895558bbcaf86c902c6074cd4
+ms.sourcegitcommit: 878a164fe6d550ca81ab87d8425c8d3cd52fe384
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66449565"
+ms.lasthandoff: 07/22/2019
+ms.locfileid: "68375888"
 ---
-# <a name="atl-text-encoding-functions"></a>ATL metin kodlama işlevleri
+# <a name="atl-text-encoding-functions"></a>ATL metin kodlama Işlevleri
 
-Bu işlevler, kodlama ve kodunu çözme metin destekler.
+Bu işlevler metin kodlamasını ve kod çözmeyi destekler.
 
 |||
 |-|-|
 |[AtlGetHexValue](#atlgethexvalue)|Onaltılık basamağın sayısal değerini almak için bu işlevi çağırın.|
-|[AtlGetVersion](#atlgetversion)|Kullanmakta olduğunuz ATL kitaplığı sürümünü almak için bu işlevi çağırın.  |
-|[AtlHexDecode](#atlhexdecode)|Onaltılı metin olarak önceki bir çağrı tarafından kodlanmış veri dizisinin kodunu çözer [AtlHexEncode](#atlhexencode).|
-|[AtlHexDecodeGetRequiredLength](#atlhexdecodegetrequiredlength)|Belirtilen uzunlukta onaltılık kodlanmış bir dizeden çözülmüş verileri içerebilen bir arabelleğin bayt cinsinden boyutunu almak için bu işlevi çağırın.|
-|[AtlHexEncode](#atlhexencode)|Herhangi bir veriyi onaltılık bir metin dizesi olarak kodlamak için bu işlevi çağırın.|
-|[AtlHexEncodeGetRequiredLength](#atlhexencodegetrequiredlength)|Belirtilen boyutta veriyle kodlanmış bir dizeyi içerebilen bir arabelleğin karakter cinsinden boyutunu almak için bu işlevi çağırın.|
-|[AtlHexValue](#atlhexvalue)|Onaltılık basamağın sayısal değerini almak için bu işlevi çağırın. |
+|[AtlGetVersion](#atlgetversion)|Kullanmakta olduğunuz ATL kitaplığının sürümünü almak için bu işlevi çağırın.  |
+|[Atlonaltık kodu çözme](#atlhexdecode)|Bir önceki [Atlonaltıl kodlaması](#atlhexencode)çağrısıyla gibi onaltılık metin olarak kodlanmış bir veri dizesinin kodunu çözer.|
+|[Atlonaltıdecodegetrequiredlength](#atlhexdecodegetrequiredlength)|Belirtilen uzunlukta onaltılık kodlanmış bir dizeden çözülmüş verileri içerebilen bir arabelleğin bayt cinsinden boyutunu almak için bu işlevi çağırın.|
+|[Atlonaltıl kodlama](#atlhexencode)|Herhangi bir veriyi onaltılık bir metin dizesi olarak kodlamak için bu işlevi çağırın.|
+|[Atlonaltıencodegetrequiredlength](#atlhexencodegetrequiredlength)|Belirtilen boyutta veriyle kodlanmış bir dizeyi içerebilen bir arabelleğin karakter cinsinden boyutunu almak için bu işlevi çağırın.|
+|[Atlonaltıl değeri](#atlhexvalue)|Onaltılık basamağın sayısal değerini almak için bu işlevi çağırın. |
 |[AtlUnicodeToUTF8](#atlunicodetoutf8)|Unicode dizesini UTF-8'e dönüştürmek için bu işlevi çağırın. |
 |[BEncode](#bencode)|Bazı verileri "B" kodlama kullanarak dönüştürmek için bu işlevi çağırın.|
 |[BEncodeGetRequiredLength](#bencodegetrequiredlength)|Belirtilen boyutta veriyle kodlanmış bir dizeyi içerebilen bir arabelleğin karakter cinsinden boyutunu almak için bu işlevi çağırın.|
-|[EscapeXML](#escapexml)|XML'de kullanılması güvenli olmayan karakterleri güvenli eşdeğerlerine dönüştürmek için bu işlevi çağırın.|
-|[GetExtendedChars](#getextendedchars)|Bir dizede genişletilmiş karakter sayısını almak için bu işlevi çağırın.|
-|[IsExtendedChar](#isextendedchar)|Belirli bir karakterin genişletilmiş bir karakter (32 den küçük, 126'dan büyük ve sekme, satır besleme veya satır başı değil) olup olmadığını öğrenmek için bu işlevi çağırın.|
+|[Çıkar Exml](#escapexml)|XML'de kullanılması güvenli olmayan karakterleri güvenli eşdeğerlerine dönüştürmek için bu işlevi çağırın.|
+|[Gebir Dedchars](#getextendedchars)|Bir dizede genişletilmiş karakter sayısını almak için bu işlevi çağırın.|
+|[IsExtendedChar](#isextendedchar)|Belirli bir karakterin genişletilmiş bir karakter olup olmadığını bulmak için bu işlevi çağırın (32 ' dan az, 126 ' den büyük olan ve sekme, satır besleme veya satır başı değil)|
 |[QEncode](#qencode)|Bazı verileri "Q" kodlama kullanarak dönüştürmek için bu işlevi çağırın.  |
 |[QEncodeGetRequiredLength](#qencodegetrequiredlength)|Belirtilen boyutta veriyle kodlanmış bir dizeyi içerebilen bir arabelleğin karakter cinsinden boyutunu almak için bu işlevi çağırın.|
-|[QPDecode](#qpdecode)|Sınırlandırılmış Yazdırılabilir biçimde gibi önceki bir çağrı tarafından kodlanmış veri dizisinin kodunu çözer [QPEncode](#qpencode).|
+|[Qpkodunu çöz](#qpdecode)|Daha önceki bir [QPEncode](#qpencode)çağrısıyla gibi tırnaklı yazdırılabilir biçimde kodlanmış bir veri dizesinin kodunu çözer.|
 |[QPDecodeGetRequiredLength](#qpdecodegetrequiredlength)|Belirtilen uzunlukta sınırlandırılmış yazdırılabilir biçimde kodlanmış bir dizeden çözülmüş verileri içerebilen bir arabelleğin bayt cinsinden boyutunu almak için bu işlevi çağırın.|
 |[QPEncode](#qpencode)|Bazı verileri sınırlandırılmış yazdırılabilir biçimde kodlamak için bu işlevi çağırın.|
 |[QPEncodeGetRequiredLength](#qpencodegetrequiredlength)|Belirtilen boyutta veriyle kodlanmış bir dizeyi içerebilen bir arabelleğin karakter cinsinden boyutunu almak için bu işlevi çağırın.|
-|[UUDecode](#uudecode)|Önceki bir çağrı uuencoded olarak bırakıldı veri dizisinin kodunu çözer [UUEncode](#uuencode).|
+|[UUDecode](#uudecode)|Daha önceki [uuencode](#uuencode)çağrısıyla gibi uuencoded bir veri dizesinin kodunu çözer.|
 |[UUDecodeGetRequiredLength](#uudecodegetrequiredlength)|Belirtilen uzunlukta uuencoded olarak kodlanmış bir dizeden çözülmüş verileri içerebilen bir arabelleğin bayt cinsinden boyutunu almak için bu işlevi çağırın.|
 |[UUEncode](#uuencode)|Bazı verileri uuencode olarak kodlamak için bu işlevi çağırın. |
 |[UUEncodeGetRequiredLength](#uuencodegetrequiredlength)|Belirtilen boyutta veriyle kodlanmış bir dizeyi içerebilen bir arabelleğin karakter cinsinden boyutunu almak için bu işlevi çağırın.|
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atlenc.h
+**Üstbilgi:** atlenc. h
 
-## <a name="atlgethexvalue"></a> AtlGetHexValue
+## <a name="atlgethexvalue"></a>AtlGetHexValue
 
 Onaltılık basamağın sayısal değerini almak için bu işlevi çağırın.
 
@@ -76,16 +76,16 @@ inline char AtlGetHexValue(char chIn) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*şirketinden chIn*<br/>
-Onaltılık karakter '0'-'9', 'A'-'F' veya 'a'-'f'.
+*chIn*<br/>
+' 0 '-' 9 ', ' A'-'F ' veya ' A'-'f ' onaltılık karakteri.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Znak na vstupu sayısal değeri bir onaltılık basamak yorumlanır. Örneğin, '0' ın girdi 0 değerini döndürür ve 'A' girdisi 10 değerini döndürür. Bu işlev, girdi karakteri bir onaltılık rakam değil, -1 döndürür.
+Giriş karakterinin sayısal değeri, onaltılık bir sayı olarak yorumlanır. Örneğin, ' 0 ' girişi 0 değerini döndürür ve ' A ' girişi 10 değerini döndürür. Giriş karakteri onaltılık bir sayı değilse, bu işlev-1 döndürür.
 
-## <a name="atlgetversion"></a> AtlGetVersion
+## <a name="atlgetversion"></a>AtlGetVersion
 
-Kullanmakta olduğunuz ATL kitaplığı sürümünü almak için bu işlevi çağırın.
+Kullanmakta olduğunuz ATL kitaplığının sürümünü almak için bu işlevi çağırın.
 
 ```
 ATLAPI_(DWORD) AtlGetVersion(void* pReserved);
@@ -93,26 +93,26 @@ ATLAPI_(DWORD) AtlGetVersion(void* pReserved);
 
 ### <a name="parameters"></a>Parametreler
 
-*Korunur*<br/>
+*Korunacağını*<br/>
 Ayrılmış bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Derleme veya çalışan ATL kitaplığı sürümünü DWORD tamsayı değerini döndürür.
+Derlediğiniz veya çalıştırdığınız ATL Kitaplığı sürümünün DWORD tamsayı değerini döndürür.
 
 ## <a name="example"></a>Örnek
 
-İşlev gibi çağrılmalıdır.
+İşlevin aşağıdaki şekilde çağrılması gerekir.
 
 [!code-cpp[NVC_ATL_Utilities#95](../../atl/codesnippet/cpp/atl-text-encoding-functions_1.cpp)]
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atlbase.h
+**Üstbilgi:** atlbase. h
 
-## <a name="atlhexdecode"></a> AtlHexDecode
+## <a name="atlhexdecode"></a>Atlonaltık kodu çözme
 
-Onaltılı metin olarak önceki bir çağrı tarafından kodlanmış veri dizisinin kodunu çözer [AtlHexEncode](#atlhexencode).
+Bir önceki [Atlonaltıl kodlaması](#atlhexencode)çağrısıyla gibi onaltılık metin olarak kodlanmış bir veri dizesinin kodunu çözer.
 
 ```
 inline BOOL AtlHexDecode(
@@ -125,22 +125,22 @@ inline BOOL AtlHexDecode(
 ### <a name="parameters"></a>Parametreler
 
 *pSrcData*<br/>
-Kodu çözülecek veriler içeren dize.
+Kodu çözülecek verileri içeren dize.
 
 *nSrcLen*<br/>
-Karakter cinsinden uzunluğu *pSrcData*.
+*PSrcData*karakter uzunluğu.
 
 *pbDest*<br/>
-Kodu çözülmüş verileri almak için çağırıcı tarafından ayrılan arabelleği.
+Kodu çözülen verileri almak için arayana ayrılan arabellek.
 
 *pnDestLen*<br/>
-Bayt cinsinden uzunluğunu içeren bir değişken işaretçisi *pbDest*. İşlev başarılı olursa değişken arabelleğe yazılan bayt sayısını alır. İşlev başarısız olursa, değişken arabelleğin bayt cinsinden gerekli uzunluğunu alır.
+*PbDest*bayt cinsinden uzunluğu içeren bir değişkene yönelik işaretçi. İşlev başarılı olursa, değişken arabelleğe yazılan bayt sayısını alır. İşlev başarısız olursa, değişken arabelleğin bayt cinsinden gereken uzunluğu alır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olduğunda TRUE döndürür başarısız olduğunda FALSE.
+Başarılı olduğunda TRUE, hatada FALSE döndürür.
 
-## <a name="atlhexdecodegetrequiredlength"></a> AtlHexDecodeGetRequiredLength
+## <a name="atlhexdecodegetrequiredlength"></a>Atlonaltıdecodegetrequiredlength
 
 Belirtilen uzunlukta onaltılık kodlanmış bir dizeden çözülmüş verileri içerebilen bir arabelleğin bayt cinsinden boyutunu almak için bu işlevi çağırın.
 
@@ -151,13 +151,13 @@ inline int AtlHexDecodeGetRequiredLength(int nSrcLen) throw();
 ### <a name="parameters"></a>Parametreler
 
 *nSrcLen*<br/>
-Kodlanmış dize karakter sayısı.
+Kodlanan dizedeki karakterlerin sayısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Kodu çözülen dize, tutabilen bir arabellek için gereken bayt sayısını *nSrcLen* karakter.
+Kodu çözülen *nSrcLen* karakter dizesini tutan bir arabellek için gereken bayt sayısı.
 
-## <a name="atlhexencode"></a> AtlHexEncode
+## <a name="atlhexencode"></a>Atlonaltıl kodlama
 
 Herhangi bir veriyi onaltılık bir metin dizesi olarak kodlamak için bu işlevi çağırın.
 
@@ -175,23 +175,23 @@ int * pnDestLen) throw();
 Kodlanacak verileri içeren arabellek.
 
 *nSrcLen*<br/>
-Kodlanacak verilerin bayt cinsinden uzunluğu.
+Kodlanan verilerin bayt cinsinden uzunluğu.
 
 *szDest*<br/>
-Kodlanmış verileri almak için çağırıcı tarafından ayrılan arabelleği.
+Kodlanmış verileri almak için arayan tarafından ayrılmış arabellek.
 
 *pnDestLen*<br/>
-Karakter cinsinden uzunluğunu içeren bir değişken işaretçisi *szDest*. İşlev başarılı olursa değişken arabelleğe yazılan karakter sayısını alır. İşlev başarısız olursa, değişken karakter arabelleği gereken uzunluğu alır.
+*SzDest*'ın karakter uzunluğunu içeren bir değişkene yönelik işaretçi. İşlev başarılı olursa, değişken arabelleğe yazılan karakter sayısını alır. İşlev başarısız olursa, değişken arabelleğin karakter cinsinden gereken uzunluğu alır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olduğunda TRUE döndürür başarısız olduğunda FALSE.
+Başarılı olduğunda TRUE, hatada FALSE döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Her kaynak verileri baytlık 2 on altılı karakter olarak kodlanır.
+Kaynak verilerin her baytı 2 onaltılık karakter olarak kodlanır.
 
-## <a name="atlhexencodegetrequiredlength"></a> AtlHexEncodeGetRequiredLength
+## <a name="atlhexencodegetrequiredlength"></a>Atlonaltıencodegetrequiredlength
 
 Belirtilen boyutta veriyle kodlanmış bir dizeyi içerebilen bir arabelleğin karakter cinsinden boyutunu almak için bu işlevi çağırın.
 
@@ -202,13 +202,13 @@ inline int AtlHexEncodeGetRequiredLength(int nSrcLen) throw();
 ### <a name="parameters"></a>Parametreler
 
 *nSrcLen*<br/>
-Kodlanacak veri baytı sayısı.
+Kodlanacak veri bayt sayısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Kodlanmış veri tutabilen bir arabellek için gereken karakter sayısı *nSrcLen* bayt.
+*NSrcLen* bayt kodlu verileri tutabilecek bir arabellek için gereken karakter sayısı.
 
-## <a name="atlhexvalue"></a> AtlHexValue
+## <a name="atlhexvalue"></a>Atlonaltıl değeri
 
 Onaltılık basamağın sayısal değerini almak için bu işlevi çağırın.
 
@@ -218,14 +218,14 @@ inline short AtlHexValue(char chIn) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*şirketinden chIn*<br/>
-Onaltılık karakter '0'-'9', 'A'-'F' veya 'a'-'f'.
+*chIn*<br/>
+' 0 '-' 9 ', ' A'-'F ' veya ' A'-'f ' onaltılık karakteri.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Znak na vstupu sayısal değeri bir onaltılık basamak yorumlanır. Örneğin, '0' ın girdi 0 değerini döndürür ve 'A' girdisi 10 değerini döndürür. Bu işlev, girdi karakteri bir onaltılık rakam değil, -1 döndürür.
+Giriş karakterinin sayısal değeri, onaltılık bir sayı olarak yorumlanır. Örneğin, ' 0 ' girişi 0 değerini döndürür ve ' A ' girişi 10 değerini döndürür. Giriş karakteri onaltılık bir sayı değilse, bu işlev-1 döndürür.
 
-## <a name="atlunicodetoutf8"></a> AtlUnicodeToUTF8
+## <a name="atlunicodetoutf8"></a>AtlUnicodeToUTF8
 
 Unicode dizesini UTF-8'e dönüştürmek için bu işlevi çağırın.
 
@@ -240,26 +240,26 @@ ATL_NOINLINE inline int AtlUnicodeToUTF8(
 ### <a name="parameters"></a>Parametreler
 
 *wszSrc*<br/>
-Dönüştürülecek Unicode dizesi
+Dönüştürülecek Unicode dize
 
 *nSrc*<br/>
-Unicode dize karakter cinsinden uzunluğu.
+Unicode dizesinin karakter cinsinden uzunluğu.
 
 *szDest*<br/>
-Dönüştürülmüş dizeyi almak için çağırıcı tarafından ayrılan arabelleği.
+Dönüştürülmüş dizeyi almak için arayan tarafından ayrılan arabellek.
 
 *nDest*<br/>
 Arabelleğin bayt cinsinden uzunluğu.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Dönüştürülmüş dize karakter sayısını döndürür.
+Dönüştürülen dize için karakter sayısını döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Dönüştürülmüş dize için gerekli arabellek boyutunu belirlemek için 0'ı geçirmek için bu işlevi çağırın. *szDest* ve *nDest*.
+Dönüştürülen dize için gereken arabelleğin boyutunu öğrenmek için, *szDest* ve *nDest*için 0 geçirerek bu işlevi çağırın.
 
-## <a name="bencode"></a> BEncode
+## <a name="bencode"></a>BEncode
 
 Bazı verileri "B" kodlama kullanarak dönüştürmek için bu işlevi çağırın.
 
@@ -278,26 +278,26 @@ inline BOOL BEncode(
 Kodlanacak verileri içeren arabellek.
 
 *nSrcLen*<br/>
-Kodlanacak verilerin bayt cinsinden uzunluğu.
+Kodlanan verilerin bayt cinsinden uzunluğu.
 
 *szDest*<br/>
-Kodlanmış verileri almak için çağırıcı tarafından ayrılan arabelleği.
+Kodlanmış verileri almak için arayan tarafından ayrılmış arabellek.
 
 *pnDestLen*<br/>
-Karakter cinsinden uzunluğunu içeren bir değişken işaretçisi *szDest*. İşlev başarılı olursa değişken arabelleğe yazılan karakter sayısını alır. İşlev başarısız olursa, değişken karakter arabelleği gereken uzunluğu alır.
+*SzDest*'ın karakter uzunluğunu içeren bir değişkene yönelik işaretçi. İşlev başarılı olursa, değişken arabelleğe yazılan karakter sayısını alır. İşlev başarısız olursa, değişken arabelleğin karakter cinsinden gereken uzunluğu alır.
 
 *pszCharSet*<br/>
-Karakter dönüştürme için kullanılacak ayarlayın.
+Dönüştürme için kullanılacak karakter kümesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olduğunda TRUE döndürür başarısız olduğunda FALSE.
+Başarılı olduğunda TRUE, hatada FALSE döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-"B" kodlama düzeni RFC 2047 açıklanan ([https://www.ietf.org/rfc/rfc2047.txt](https://www.ietf.org/rfc/rfc2047.txt)).
+"B" kodlama şeması, RFC 2047 ([https://www.ietf.org/rfc/rfc2047.txt](https://www.ietf.org/rfc/rfc2047.txt)) bölümünde açıklanmaktadır.
 
-## <a name="bencodegetrequiredlength"></a> BEncodeGetRequiredLength
+## <a name="bencodegetrequiredlength"></a>BEncodeGetRequiredLength
 
 Belirtilen boyutta veriyle kodlanmış bir dizeyi içerebilen bir arabelleğin karakter cinsinden boyutunu almak için bu işlevi çağırın.
 
@@ -308,20 +308,20 @@ inline int BEncodeGetRequiredLength(int nSrcLen, int nCharsetLen) throw();
 ### <a name="parameters"></a>Parametreler
 
 *nSrcLen*<br/>
-Kodlanacak veri baytı sayısı.
+Kodlanacak veri bayt sayısı.
 
 *nCharsetLen*<br/>
-Karakter dönüştürme için kullanacak şekilde karakter cinsinden uzunluğu.
+Dönüştürme için kullanılacak karakter kümesinin karakter uzunluğu.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Kodlanmış veri tutabilen bir arabellek için gereken karakter sayısı *nSrcLen* bayt.
+*NSrcLen* bayt kodlu verileri tutabilecek bir arabellek için gereken karakter sayısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-"B" kodlama düzeni RFC 2047 açıklanan ([https://www.ietf.org/rfc/rfc2047.txt](https://www.ietf.org/rfc/rfc2047.txt)).
+"B" kodlama şeması, RFC 2047 ([https://www.ietf.org/rfc/rfc2047.txt](https://www.ietf.org/rfc/rfc2047.txt)) bölümünde açıklanmaktadır.
 
-## <a name="escapexml"></a> EscapeXML
+## <a name="escapexml"></a>Çıkar Exml
 
 XML'de kullanılması güvenli olmayan karakterleri güvenli eşdeğerlerine dönüştürmek için bu işlevi çağırın.
 
@@ -336,31 +336,31 @@ inline int EscapeXML(
 
 ### <a name="parameters"></a>Parametreler
 
-*szIn*<br/>
+*szın*<br/>
 Dönüştürülecek dize.
 
 *nSrclen*<br/>
-Dönüştürülecek dize karakter cinsinden uzunluğu.
+Dönüştürülecek dizenin karakter cinsinden uzunluğu.
 
 *szEsc*<br/>
-Dönüştürülmüş dizeyi almak için çağırıcı tarafından ayrılan arabelleği.
+Dönüştürülmüş dizeyi almak için arayan tarafından ayrılan arabellek.
 
 *nDestLen*<br/>
-Arayana ayrılan arabelleğin karakter cinsinden uzunluğu.
+Arayan tarafından ayrılan arabelleğin karakter cinsinden uzunluğu.
 
-*CertOpenStore*<br/>
-ATL_ESC dönüştürme nasıl gerçekleştirilecek açıklayan bayrakları.
+*dwFlags*<br/>
+Dönüştürmenin nasıl gerçekleştirileceğini açıklayan ATL_ESC bayrakları.
 
-- ATL_ESC_FLAG_NONE varsayılan davranışı geçersiz kılar. Tırnak işaretleri ve kesme dönüştürülmez.
-- ATL_ESC_FLAG_ATTR tırnak işaretleri ve kesme dönüştürülür `&quot;` ve `&apos;` sırasıyla.
+- Varsayılan ATL_ESC_FLAG_NONE davranışı. Tırnak işaretleri ve kesme çizgileri dönüştürülmez.
+- ATL_ESC_FLAG_ATTR tırnak işaretleri ve kesme çizgileri, ve `&quot;` `&apos;` sırasıyla öğesine dönüştürülür.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Dönüştürülmüş dize karakter cinsinden uzunluğu.
+Dönüştürülmüş dizenin karakter cinsinden uzunluğu.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev tarafından gerçekleştirilebilse olası dönüştürmeler tabloda gösterilmiştir:
+Bu işlev tarafından gerçekleştirilen olası dönüşümler tabloda gösterilmiştir:
 
 |Source|Hedef|
 |------------|-----------------|
@@ -370,7 +370,7 @@ Bu işlev tarafından gerçekleştirilebilse olası dönüştürmeler tabloda g�
 |'|&apos;|
 |"|&quot;|
 
-## <a name="getextendedchars"></a> GetExtendedChars
+## <a name="getextendedchars"></a>Gebir Dedchars
 
 Bir dizede genişletilmiş karakter sayısını almak için bu işlevi çağırın.
 
@@ -381,18 +381,18 @@ inline int GetExtendedChars(LPCSTR szSrc, int nSrcLen) throw();
 ### <a name="parameters"></a>Parametreler
 
 *szSrc*<br/>
-Analiz edilecek dize.
+Çözümlenecek dize.
 
 *nSrcLen*<br/>
-Dize karakter cinsinden uzunluğu.
+Dizenin karakter cinsinden uzunluğu.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Tarafından belirlenen şekilde bir dizenin içinde bulunan Genişletilmiş karakter sayısını döndürür [IsExtendedChar](#isextendedchar).
+[IsExtendedChar](#isextendedchar)tarafından belirlendiği şekilde dizedeki bulunan genişletilmiş karakter sayısını döndürür.
 
-## <a name="isextendedchar"></a> IsExtendedChar
+## <a name="isextendedchar"></a>IsExtendedChar
 
-Belirli bir karakterin genişletilmiş bir karakter (32 den küçük, 126'dan büyük ve sekme, satır besleme veya satır başı değil) olup olmadığını öğrenmek için bu işlevi çağırın.
+Belirli bir karakterin genişletilmiş bir karakter olup olmadığını bulmak için bu işlevi çağırın (32 ' dan az, 126 ' den büyük olan ve sekme, satır besleme veya satır başı değil)
 
 ```
 inline int IsExtendedChar(char ch) throw();
@@ -401,13 +401,13 @@ inline int IsExtendedChar(char ch) throw();
 ### <a name="parameters"></a>Parametreler
 
 *ch*<br/>
-Test edilecek karakter
+Sınanacak karakter
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Karakter, yanlış aksi uzatıldıysa TRUE.
+Karakter genişletilmişse doğru, aksi takdirde yanlış olur.
 
-## <a name="qencode"></a> QEncode
+## <a name="qencode"></a>QEncode
 
 Bazı verileri "Q" kodlama kullanarak dönüştürmek için bu işlevi çağırın.
 
@@ -427,29 +427,29 @@ inline BOOL QEncode(
 Kodlanacak verileri içeren arabellek.
 
 *nSrcLen*<br/>
-Kodlanacak verilerin bayt cinsinden uzunluğu.
+Kodlanan verilerin bayt cinsinden uzunluğu.
 
 *szDest*<br/>
-Kodlanmış verileri almak için çağırıcı tarafından ayrılan arabelleği.
+Kodlanmış verileri almak için arayan tarafından ayrılmış arabellek.
 
 *pnDestLen*<br/>
-Karakter cinsinden uzunluğunu içeren bir değişken işaretçisi *szDest*. İşlev başarılı olursa değişken arabelleğe yazılan karakter sayısını alır. İşlev başarısız olursa, değişken karakter arabelleği gereken uzunluğu alır.
+*SzDest*'ın karakter uzunluğunu içeren bir değişkene yönelik işaretçi. İşlev başarılı olursa, değişken arabelleğe yazılan karakter sayısını alır. İşlev başarısız olursa, değişken arabelleğin karakter cinsinden gereken uzunluğu alır.
 
 *pszCharSet*<br/>
-Karakter dönüştürme için kullanılacak ayarlayın.
+Dönüştürme için kullanılacak karakter kümesi.
 
 *pnNumEncoded*<br/>
-Geri dönüş dönüştürülecek olan güvenli olmayan karakter sayısını içeren bir değişken için bir işaretçi.
+Dönüşte bir değişken işaretçisi, dönüştürülmesi gereken güvenli olmayan karakter sayısını içerir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olduğunda TRUE döndürür başarısız olduğunda FALSE.
+Başarılı olduğunda TRUE, hatada FALSE döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-"Q" kodlama düzeni RFC 2047 açıklanan ([https://www.ietf.org/rfc/rfc2047.txt](https://www.ietf.org/rfc/rfc2047.txt)).
+"Q" kodlama şeması, RFC 2047 ([https://www.ietf.org/rfc/rfc2047.txt](https://www.ietf.org/rfc/rfc2047.txt)) bölümünde açıklanmaktadır.
 
-## <a name="qencodegetrequiredlength"></a> QEncodeGetRequiredLength
+## <a name="qencodegetrequiredlength"></a>QEncodeGetRequiredLength
 
 Belirtilen boyutta veriyle kodlanmış bir dizeyi içerebilen bir arabelleğin karakter cinsinden boyutunu almak için bu işlevi çağırın.
 
@@ -460,22 +460,22 @@ inline int QEncodeGetRequiredLength(int nSrcLen, int nCharsetLen) throw();
 ### <a name="parameters"></a>Parametreler
 
 *nSrcLen*<br/>
-Kodlanacak veri baytı sayısı.
+Kodlanacak veri bayt sayısı.
 
 *nCharsetLen*<br/>
-Karakter dönüştürme için kullanacak şekilde karakter cinsinden uzunluğu.
+Dönüştürme için kullanılacak karakter kümesinin karakter uzunluğu.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Kodlanmış veri tutabilen bir arabellek için gereken karakter sayısı *nSrcLen* bayt.
+*NSrcLen* bayt kodlu verileri tutabilecek bir arabellek için gereken karakter sayısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-"Q" kodlama düzeni RFC 2047 açıklanan ([https://www.ietf.org/rfc/rfc2047.txt](https://www.ietf.org/rfc/rfc2047.txt)).
+"Q" kodlama şeması, RFC 2047 ([https://www.ietf.org/rfc/rfc2047.txt](https://www.ietf.org/rfc/rfc2047.txt)) bölümünde açıklanmaktadır.
 
-## <a name="qpdecode"></a> QPDecode
+## <a name="qpdecode"></a>Qpkodunu çöz
 
-Sınırlandırılmış Yazdırılabilir biçimde gibi önceki bir çağrı tarafından kodlanmış veri dizisinin kodunu çözer [QPEncode](#qpencode).
+Daha önceki bir [QPEncode](#qpencode)çağrısıyla gibi tırnaklı yazdırılabilir biçimde kodlanmış bir veri dizesinin kodunu çözer.
 
 ```
 inline BOOL QPDecode(
@@ -489,29 +489,29 @@ inline BOOL QPDecode(
 ### <a name="parameters"></a>Parametreler
 
 *pbSrcData*<br/>
-[in] Kodu çözülecek veriler içeren arabellek.
+'ndaki Kodu çözülecek verileri içeren arabellek.
 
 *nSrcLen*<br/>
-[in] Bayt cinsinden uzunluğu *pbSrcData*.
+'ndaki *PbSrcData*bayt cinsinden uzunluğu.
 
 *szDest*<br/>
-[out] Kodu çözülmüş verileri almak için çağırıcı tarafından ayrılan arabelleği.
+dışı Kodu çözülen verileri almak için arayana ayrılan arabellek.
 
 *pnDestLen*<br/>
-[out] Bayt cinsinden uzunluğunu içeren bir değişken işaretçisi *szDest*. İşlev başarılı olursa değişken arabelleğe yazılan bayt sayısını alır. İşlev başarısız olursa, değişken arabelleğin bayt cinsinden gerekli uzunluğunu alır.
+dışı *SzDest*bayt cinsinden uzunluğu içeren bir değişkene yönelik işaretçi. İşlev başarılı olursa, değişken arabelleğe yazılan bayt sayısını alır. İşlev başarısız olursa, değişken arabelleğin bayt cinsinden gereken uzunluğu alır.
 
-*CertOpenStore*<br/>
-[in] Dönüştürme nasıl gerçekleştirilecek açıklayan ATLSMTP_QPENCODE bayraklar.
+*dwFlags*<br/>
+'ndaki Dönüştürmenin nasıl gerçekleştirileceğini açıklayan ATLSMTP_QPENCODE bayrakları.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olduğunda TRUE döndürür başarısız olduğunda FALSE.
+Başarılı olduğunda TRUE, hatada FALSE döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Sınırlandırılmış Yazdırılabilir kodlama düzenini RFC 2045 açıklanan ([https://www.ietf.org/rfc/rfc2045.txt](https://www.ietf.org/rfc/rfc2045.txt)).
+Tırnaklı yazdırılabilir kodlama şeması, RFC 2045 ([https://www.ietf.org/rfc/rfc2045.txt](https://www.ietf.org/rfc/rfc2045.txt)) içinde açıklanmaktadır.
 
-## <a name="qpdecodegetrequiredlength"></a> QPDecodeGetRequiredLength
+## <a name="qpdecodegetrequiredlength"></a>QPDecodeGetRequiredLength
 
 Belirtilen uzunlukta sınırlandırılmış yazdırılabilir biçimde kodlanmış bir dizeden çözülmüş verileri içerebilen bir arabelleğin bayt cinsinden boyutunu almak için bu işlevi çağırın.
 
@@ -522,17 +522,17 @@ inline int QPDecodeGetRequiredLength(int nSrcLen) throw();
 ### <a name="parameters"></a>Parametreler
 
 *nSrcLen*<br/>
-Kodlanmış dize karakter sayısı.
+Kodlanan dizedeki karakterlerin sayısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Kodu çözülen dize, tutabilen bir arabellek için gereken bayt sayısını *nSrcLen* karakter.
+Kodu çözülen *nSrcLen* karakter dizesini tutan bir arabellek için gereken bayt sayısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Sınırlandırılmış Yazdırılabilir kodlama düzenini RFC 2045 açıklanan ([https://www.ietf.org/rfc/rfc2045.txt](https://www.ietf.org/rfc/rfc2045.txt)).
+Tırnaklı yazdırılabilir kodlama şeması, RFC 2045 ([https://www.ietf.org/rfc/rfc2045.txt](https://www.ietf.org/rfc/rfc2045.txt)) içinde açıklanmaktadır.
 
-## <a name="qpencode"></a> QPEncode
+## <a name="qpencode"></a>QPEncode
 
 Bazı verileri sınırlandırılmış yazdırılabilir biçimde kodlamak için bu işlevi çağırın.
 
@@ -551,32 +551,32 @@ inline BOOL QPEncode(
 Kodlanacak verileri içeren arabellek.
 
 *nSrcLen*<br/>
-Kodlanacak verilerin bayt cinsinden uzunluğu.
+Kodlanan verilerin bayt cinsinden uzunluğu.
 
 *szDest*<br/>
-Kodlanmış verileri almak için çağırıcı tarafından ayrılan arabelleği.
+Kodlanmış verileri almak için arayan tarafından ayrılmış arabellek.
 
 *pnDestLen*<br/>
-Karakter cinsinden uzunluğunu içeren bir değişken işaretçisi *szDest*. İşlev başarılı olursa değişken arabelleğe yazılan karakter sayısını alır. İşlev başarısız olursa, değişken karakter arabelleği gereken uzunluğu alır.
+*SzDest*'ın karakter uzunluğunu içeren bir değişkene yönelik işaretçi. İşlev başarılı olursa, değişken arabelleğe yazılan karakter sayısını alır. İşlev başarısız olursa, değişken arabelleğin karakter cinsinden gereken uzunluğu alır.
 
-*CertOpenStore*<br/>
-Dönüştürme nasıl gerçekleştirilecek açıklayan ATLSMTP_QPENCODE bayraklar.
+*dwFlags*<br/>
+Dönüştürmenin nasıl gerçekleştirileceğini açıklayan ATLSMTP_QPENCODE bayrakları.
 
-- ATLSMTP_QPENCODE_DOT nokta bir satırın başlangıcında görünür, bu çıktısına eklendi hem de kodlanmış.
+- ATLSMTP_QPENCODE_DOT bir dönem başlangıcında bir nokta görünürse, çıkışa ve kodlanacak şekilde de eklenir.
 
-- ATLSMTP_QPENCODE_TRAILING_SOFT ekler `=\r\n` kodlanmış dize.
+- ATLSMTP_QPENCODE_TRAILING_SOFT, `=\r\n` kodlanmış dizeye ekler.
 
-Sınırlandırılmış Yazdırılabilir kodlama düzenini açıklanan [RFC 2045](https://www.ietf.org/rfc/rfc2045.txt).
+Tırnaklı yazdırılabilir kodlama şeması, [RFC 2045](https://www.ietf.org/rfc/rfc2045.txt)' de açıklanmaktadır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olduğunda TRUE döndürür başarısız olduğunda FALSE.
+Başarılı olduğunda TRUE, hatada FALSE döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Sınırlandırılmış Yazdırılabilir kodlama düzenini RFC 2045 açıklanan ([https://www.ietf.org/rfc/rfc2045.txt](https://www.ietf.org/rfc/rfc2045.txt)).
+Tırnaklı yazdırılabilir kodlama şeması, RFC 2045 ([https://www.ietf.org/rfc/rfc2045.txt](https://www.ietf.org/rfc/rfc2045.txt)) içinde açıklanmaktadır.
 
-## <a name="qpencodegetrequiredlength"></a> QPEncodeGetRequiredLength
+## <a name="qpencodegetrequiredlength"></a>QPEncodeGetRequiredLength
 
 Belirtilen boyutta veriyle kodlanmış bir dizeyi içerebilen bir arabelleğin karakter cinsinden boyutunu almak için bu işlevi çağırın.
 
@@ -587,19 +587,19 @@ inline int QPEncodeGetRequiredLength(int nSrcLen) throw ();
 ### <a name="parameters"></a>Parametreler
 
 *nSrcLen*<br/>
-Kodlanacak veri baytı sayısı.
+Kodlanacak veri bayt sayısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Kodlanmış veri tutabilen bir arabellek için gereken karakter sayısı *nSrcLen* bayt.
+*NSrcLen* bayt kodlu verileri tutabilecek bir arabellek için gereken karakter sayısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Sınırlandırılmış Yazdırılabilir kodlama düzenini RFC 2045 açıklanan ([https://www.ietf.org/rfc/rfc2045.txt](https://www.ietf.org/rfc/rfc2045.txt)).
+Tırnaklı yazdırılabilir kodlama şeması, RFC 2045 ([https://www.ietf.org/rfc/rfc2045.txt](https://www.ietf.org/rfc/rfc2045.txt)) içinde açıklanmaktadır.
 
-## <a name="uudecode"></a> UUDecode
+## <a name="uudecode"></a>UUDecode
 
-Önceki bir çağrı uuencoded olarak bırakıldı veri dizisinin kodunu çözer [UUEncode](#uuencode).
+Daha önceki [uuencode](#uuencode)çağrısıyla gibi uuencoded bir veri dizesinin kodunu çözer.
 
 ```
 inline BOOL UUDecode(
@@ -612,26 +612,26 @@ inline BOOL UUDecode(
 ### <a name="parameters"></a>Parametreler
 
 *pbSrcData*<br/>
-Kodu çözülecek veriler içeren dize.
+Kodu çözülecek verileri içeren dize.
 
 *nSrcLen*<br/>
-Bayt cinsinden uzunluğu *pbSrcData*.
+*PbSrcData*bayt cinsinden uzunluğu.
 
 *pbDest*<br/>
-Kodu çözülmüş verileri almak için çağırıcı tarafından ayrılan arabelleği.
+Kodu çözülen verileri almak için arayana ayrılan arabellek.
 
 *pnDestLen*<br/>
-Bayt cinsinden uzunluğunu içeren bir değişken işaretçisi *pbDest*. İşlev başarılı olursa değişken arabelleğe yazılan bayt sayısını alır. İşlev başarısız olursa, değişken arabelleğin bayt cinsinden gerekli uzunluğunu alır.
+*PbDest*bayt cinsinden uzunluğu içeren bir değişkene yönelik işaretçi. İşlev başarılı olursa, değişken arabelleğe yazılan bayt sayısını alır. İşlev başarısız olursa, değişken arabelleğin bayt cinsinden gereken uzunluğu alır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olduğunda TRUE döndürür başarısız olduğunda FALSE.
+Başarılı olduğunda TRUE, hatada FALSE döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu uuencoding uygulama POSIX P1003.2b/D11 izler.
+Bu uuencoding uygulama, POSIX P 1003.2 b/D11 belirtimini izler.
 
-## <a name="uudecodegetrequiredlength"></a> UUDecodeGetRequiredLength
+## <a name="uudecodegetrequiredlength"></a>UUDecodeGetRequiredLength
 
 Belirtilen uzunlukta uuencoded olarak kodlanmış bir dizeden çözülmüş verileri içerebilen bir arabelleğin bayt cinsinden boyutunu almak için bu işlevi çağırın.
 
@@ -642,17 +642,17 @@ inline int UUDecodeGetRequiredLength(int nSrcLen) throw ();
 ### <a name="parameters"></a>Parametreler
 
 *nSrcLen*<br/>
-Kodlanmış dize karakter sayısı.
+Kodlanan dizedeki karakterlerin sayısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Kodu çözülen dize, tutabilen bir arabellek için gereken bayt sayısını *nSrcLen* karakter.
+Kodu çözülen *nSrcLen* karakter dizesini tutan bir arabellek için gereken bayt sayısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu uuencoding uygulama POSIX P1003.2b/D11 izler.
+Bu uuencoding uygulama, POSIX P 1003.2 b/D11 belirtimini izler.
 
-## <a name="uuencode"></a> UUEncode
+## <a name="uuencode"></a>UUEncode
 
 Bazı verileri uuencode olarak kodlamak için bu işlevi çağırın.
 
@@ -672,35 +672,35 @@ inline BOOL UUEncode(
 Kodlanacak verileri içeren arabellek.
 
 *nSrcLen*<br/>
-Kodlanacak verilerin bayt cinsinden uzunluğu.
+Kodlanan verilerin bayt cinsinden uzunluğu.
 
 *szDest*<br/>
-Kodlanmış verileri almak için çağırıcı tarafından ayrılan arabelleği.
+Kodlanmış verileri almak için arayan tarafından ayrılmış arabellek.
 
 *pnDestLen*<br/>
-Karakter cinsinden uzunluğunu içeren bir değişken işaretçisi *szDest*. İşlev başarılı olursa değişken arabelleğe yazılan karakter sayısını alır. İşlev başarısız olursa, değişken karakter arabelleği gereken uzunluğu alır.
+*SzDest*'ın karakter uzunluğunu içeren bir değişkene yönelik işaretçi. İşlev başarılı olursa, değişken arabelleğe yazılan karakter sayısını alır. İşlev başarısız olursa, değişken arabelleğin karakter cinsinden gereken uzunluğu alır.
 
 *lpszFile*<br/>
-ATLSMTP_UUENCODE_HEADER belirtildiğinde üstbilgiye eklenecek dosyanın *CertOpenStore*.
+*DwFlags*içinde ATLSMTP_UUENCODE_HEADER belirtildiğinde üstbilgiye eklenecek dosya.
 
-*CertOpenStore*<br/>
+*dwFlags*<br/>
 Bu işlevin davranışını denetleyen bayraklar.
 
-- Üst bilgi ATLSMTP_UUENCODE_HEADE kodlanmış olmalıdır.
+- ATLSMTP_UUENCODE_HEADE üst bilgi kodlanacak.
 
-- Son ATLSMTP_UUENCODE_END kodlanmış olmalıdır.
+- ATLSMTP_UUENCODE_END, son olarak kodlanır.
 
-- ATLSMTP_UUENCODE_DOT veri doldurmak gerçekleştirilir.
+- ATLSMTP_UUENCODE_DOT Data stuffing gerçekleştirilecek.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olduğunda TRUE döndürür başarısız olduğunda FALSE.
+Başarılı olduğunda TRUE, hatada FALSE döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu uuencoding uygulama POSIX P1003.2b/D11 izler.
+Bu uuencoding uygulama, POSIX P 1003.2 b/D11 belirtimini izler.
 
-## <a name="uuencodegetrequiredlength"></a> UUEncodeGetRequiredLength
+## <a name="uuencodegetrequiredlength"></a>UUEncodeGetRequiredLength
 
 Belirtilen boyutta veriyle kodlanmış bir dizeyi içerebilen bir arabelleğin karakter cinsinden boyutunu almak için bu işlevi çağırın.
 
@@ -711,17 +711,17 @@ inline int UUEncodeGetRequiredLength(int nSrcLen) throw ();
 ### <a name="parameters"></a>Parametreler
 
 *nSrcLen*<br/>
-Kodlanacak veri baytı sayısı.
+Kodlanacak veri bayt sayısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Kodlanmış veri tutabilen bir arabellek için gereken karakter sayısı *nSrcLen* bayt.
+*NSrcLen* bayt kodlu verileri tutabilecek bir arabellek için gereken karakter sayısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu uuencoding uygulama POSIX P1003.2b/D11 izler.
+Bu uuencoding uygulama, POSIX P 1003.2 b/D11 belirtimini izler.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Kavramları](../active-template-library-atl-concepts.md)<br/>
+[Tiren](../active-template-library-atl-concepts.md)<br/>
 [ATL COM Masaüstü Bileşenleri](../atl-com-desktop-components.md)

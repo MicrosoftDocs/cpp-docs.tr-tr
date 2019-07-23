@@ -11,12 +11,12 @@ helpviewer_keywords:
 - constants [C++], file translation mode
 - file translation [C++]
 ms.assetid: 49b13bf3-442e-4d19-878b-bd1029fa666a
-ms.openlocfilehash: ef9b986753de05c45b3071e55f9b163fa5a6a7da
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: ed2fae935850837ebace880d78c206754b3061bd
+ms.sourcegitcommit: 878a164fe6d550ca81ab87d8425c8d3cd52fe384
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62343678"
+ms.lasthandoff: 07/22/2019
+ms.locfileid: "68375922"
 ---
 # <a name="file-translation-constants"></a>Dosya Çeviri Sabitleri
 
@@ -28,22 +28,22 @@ ms.locfileid: "62343678"
 
 ## <a name="remarks"></a>Açıklamalar
 
-Çeviri modu sabitleri bu belirtin (**"b"** veya **"t"**). Modu erişim türünü belirten dizeyi dahildir (**"r"**, **"w"**, **"a"**, **"r +"**, **"w +"**, **"a +"**).
+Bu sabitler, çeviri modunu belirtir ( **"b"** veya **"t"** ). Modu, erişim türünü belirten dizeye dahildir ( **"r"** , " **w"** , **"a"** , **"r +"** , **"w +"** , **"a +"** ).
 
 Çeviri modları aşağıdaki gibidir:
 
-- **T**
+- **şı**
 
-   Metin (çevrilmiş) modunda açar. Bu modda, return-satır başı/satır besleme (CR-LF) birleşimleri karakterlerine (LF) giriş çevrilir ve LF karakterleri çıkış CR-LF kombinasyonlarına çevrilir. Ayrıca, CTRL + Z girişteki bir dosya sonu karakteri olarak yorumlanır. Okuma veya okuma/yazma için açılmış dosyalarında `fopen` CTRL + Z dosya sonunda olup olmadığını denetler ve eğer mümkünse bunu kaldırır. Kullanıldığından yapıldığını `fseek` ve `ftell` CTRL + Z ile biten bir dosya içinde taşımak için işlevleri neden `fseek` dosyanın sonuna yakın yanlış davranmasına.
+   Metin (çevrilmiş) modunda açılır. Bu modda, satır başı satır besleme (CR-LF) birleşimleri girişte tek satırlık akışlara (LF) çevrilir ve LF karakterleri çıkışta CR-LF birleşimlerine çevrilir. Ayrıca CTRL + Z, girişte bir dosya sonu karakteri olarak yorumlanır. Okuma veya okuma ve yazma için açılan dosyalarda, `fopen` dosyanın sonunda CTRL + Z olup olmadığını denetler ve mümkünse kaldırır. Bu, CTRL + Z ile `fseek` biten `ftell` bir dosya içinde hareket etmek için ve işlevlerinin kullanılması, dosyanın sonuna doğru `fseek` şekilde davranmasına neden olabileceğinden, yapılır.
 
    > [!NOTE]
-   > **t** seçeneği ANSI standardı bir parçası değil `fopen` ve `freopen`. Bir Microsoft uzantısıdır ve ANSI taşınabilirliğinin istendiği durumlarda kullanılmamalıdır.
+   > **T** seçeneği ve `fopen` `freopen`için ANSI standardının bir parçası değildir. Bu bir Microsoft uzantısıdır ve ANSI taşınabilirliği istendiği yerde kullanılmamalıdır.
 
 - **b**
 
    İkili (çevrilmemiş) modda açılır. Yukarıdaki Çeviriler bastırılır.
 
-Varsa **t** veya **b** verilmez *modu*, çeviri modu varsayılan modlu değişkeni tarafından tanımlanan [_fmode](../c-runtime-library/fmode.md). Metin ve ikili modlarda kullanma hakkında daha fazla bilgi için bkz. [metin ve ikili mod dosyası g/ç](../c-runtime-library/text-and-binary-mode-file-i-o.md).
+**T** veya **b** *modunda*verilmezse, çeviri modu varsayılan mod değişkeni [_fmode](../c-runtime-library/fmode.md)tarafından tanımlanır. Metin ve ikili modları kullanma hakkında daha fazla bilgi için bkz. [metin ve Ikili mod dosya g/ç](../c-runtime-library/text-and-binary-mode-file-i-o.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

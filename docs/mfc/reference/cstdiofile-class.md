@@ -18,16 +18,16 @@ helpviewer_keywords:
 - CStdioFile [MFC], WriteString
 - CStdioFile [MFC], m_pStream
 ms.assetid: 88c2274c-4f0e-4327-882a-557ba4b3ae15
-ms.openlocfilehash: fd42934107591905a1bbc273ee9eec4b37e58ea7
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 068e59fdc19821487bc78141d10743363221518e
+ms.sourcegitcommit: 878a164fe6d550ca81ab87d8425c8d3cd52fe384
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62323810"
+ms.lasthandoff: 07/22/2019
+ms.locfileid: "68375839"
 ---
 # <a name="cstdiofile-class"></a>CStdioFile sınıfı
 
-Çalışma zamanı işlevi tarafından çalıştırıldığında C çalışma zamanı Akış dosyasını temsil eden [fopen](../../c-runtime-library/reference/fopen-wfopen.md).
+Çalışma zamanı işlevi [fopen](../../c-runtime-library/reference/fopen-wfopen.md)tarafından açılan bir C çalışma zamanı akış dosyasını temsil eder.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -41,34 +41,34 @@ class CStdioFile : public CFile
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[CStdioFile::CStdioFile](#cstdiofile)|Oluşturur bir `CStdioFile` nesne yolu veya dosya işaretçisi.|
+|[CStdioFile:: CStdioFile](#cstdiofile)|Bir yol `CStdioFile` veya dosya işaretçisinden bir nesne oluşturur.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[CStdioFile::Open](#open)|Fazla Yüklendi. Açık varsayılan ile kullanılmak üzere tasarlanmıştır `CStdioFile` Oluşturucusu (geçersiz kılmaları [CFile::Open](../../mfc/reference/cfile-class.md#open)).|
-|[CStdioFile::ReadString](#readstring)|Tek satırlık metin okur.|
-|[CStdioFile::Seek](#seek)|Geçerli dosya işaretçisini yerleştirir.|
-|[CStdioFile::WriteString](#writestring)|Tek satırlık metin yazar.|
+|[CStdioFile::Open](#open)|Fazla Yüklendi. Open varsayılan `CStdioFile` oluşturucuyla kullanılmak üzere tasarlanmıştır (geçersiz kılmalar [CFile:: Open](../../mfc/reference/cfile-class.md#open)).|
+|[CStdioFile:: ReadString](#readstring)|Tek satırlık bir metin okur.|
+|[CStdioFile:: Seek](#seek)|Geçerli dosya işaretçisini konumlandırır.|
+|[CStdioFile::WriteString](#writestring)|Tek satırlık bir metin yazar.|
 
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[CStdioFile::m_pStream](#m_pstream)|Açık bir dosyaya bir işaretçi içerir.|
+|[CStdioFile::m_pStream](#m_pstream)|Açık dosya için bir işaretçi içerir.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Stream dosyaları ara belleğe alınır ve metin modunda (varsayılan) veya İkili modda açılabilir.
+Akış dosyaları arabelleğe alınır ve herhangi bir metin modunda (varsayılan) veya ikili modda açılabilir.
 
-Metin modunda, satır başı satır besleme çiftleri için özel işleme sağlar. Yeni bir satır yazdığınızda metin modunda (0x0A) karakter `CStdioFile` nesnesi, bayt çifti (0x0D, 0x0A) dosyasına gönderilir. Okurken, bayt çifti (0x0D, 0x0A) tek 0x0A bayta dönüştürülür.
+Metin modu, satır başı satır besleme çiftleri için özel işlem sağlar. Bir metin modu `CStdioFile` nesnesine bir satır besleme (yeni satır) karakteri (0x0A) yazdığınızda, bayt çifti (0x0D, 0x0A) dosyaya gönderilir. Okurken, bayt çifti (0x0D, 0x0A) tek bir 0x0A bayta çevrilir.
 
-[CFile](../../mfc/reference/cfile-class.md) işlevleri [yinelenen](../../mfc/reference/cfile-class.md#duplicate), [LockRange](../../mfc/reference/cfile-class.md#lockrange), ve [UnlockRange](../../mfc/reference/cfile-class.md#unlockrange) desteklenmez `CStdioFile`.
+[CFile](../../mfc/reference/cfile-class.md) işlevleri [yineleniyor](../../mfc/reference/cfile-class.md#duplicate), [LockRange](../../mfc/reference/cfile-class.md#lockrange)ve [UnlockRange](../../mfc/reference/cfile-class.md#unlockrange) için `CStdioFile`desteklenmez.
 
-Bu işlevler çağırırsanız bir `CStdioFile`, erişmenizi sağlayacak bir [CNotSupportedException](../../mfc/reference/cnotsupportedexception-class.md).
+Bu işlevleri bir `CStdioFile`üzerinde çağırırsanız, bir [CNotSupportedException](../../mfc/reference/cnotsupportedexception-class.md)alacaksınız.
 
-Kullanma hakkında daha fazla bilgi için `CStdioFile`, makalelere göz atın [MFC'deki dosyalar](../../mfc/files-in-mfc.md) ve [dosya işleme](../../c-runtime-library/file-handling.md) içinde *çalışma zamanı kitaplığı başvurusu*.
+Kullanma `CStdioFile`hakkında daha fazla bilgi için bkz. [MFC 'deki makale dosyaları](../../mfc/files-in-mfc.md) ve *çalışma zamanı kitaplık başvurusunda* [Dosya işleme](../../c-runtime-library/file-handling.md) .
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -80,11 +80,11 @@ Kullanma hakkında daha fazla bilgi için `CStdioFile`, makalelere göz atın [M
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afx.h
+**Üstbilgi:** AFX. h
 
-##  <a name="cstdiofile"></a>  CStdioFile::CStdioFile
+##  <a name="cstdiofile"></a>CStdioFile:: CStdioFile
 
-Oluşturur ve başlatır bir `CStdioFile` nesne.
+Bir `CStdioFile` nesnesi oluşturur ve başlatır.
 
 ```
 CStdioFile();
@@ -104,38 +104,38 @@ CStdioFile(
 ### <a name="parameters"></a>Parametreler
 
 *pOpenStream*<br/>
-C çalışma zamanı işlevine bir çağrı tarafından döndürülen dosya işaretçisini belirtir [fopen](../../c-runtime-library/reference/fopen-wfopen.md).
+C çalışma zamanı işlevi [fopen](../../c-runtime-library/reference/fopen-wfopen.md)çağrısı tarafından döndürülen dosya işaretçisini belirtir.
 
 *lpszFileName*<br/>
-İstenen dosya yolu bir dize belirtir. Göreli veya mutlak yol olabilir.
+İstenen dosyanın yolu olan bir dize belirtir. Yol göreli veya mutlak olabilir.
 
 *nOpenFlags*<br/>
-Dosya oluşturma, dosya paylaşımı ve dosya erişim modları için seçenekler belirtir. Bit düzeyinde OR kullanarak birden fazla seçenek belirtebilirsiniz ( **|** ) işleci.
+Dosya oluşturma, dosya paylaşımı ve dosya erişim modları için seçenekleri belirtir. Bit düzeyinde OR ( **|** ) işlecini kullanarak birden çok seçenek belirleyebilirsiniz.
 
-Bir dosya erişim modu seçeneği gereklidir; Diğer modları isteğe bağlıdır. Bkz: [CFile::CFile](../../mfc/reference/cfile-class.md#cfile) modu seçenekleri ve diğer bayraklar listesi. MFC sürüm 3.0 ve sonraki, paylaşım bayrakları izin verilir.
+Bir dosya erişim modu seçeneği gereklidir; Diğer modlar isteğe bağlıdır. Mod seçeneklerinin ve diğer bayrakların listesi için bkz. [CFile:: CFile](../../mfc/reference/cfile-class.md#cfile) . MFC sürüm 3,0 ve üzeri sürümlerde, paylaşım bayraklarına izin verilir.
 
 *pTM*<br/>
-CAtlTransactionManager nesne işaretçisi.
+CAtlTransactionManager nesnesine yönelik işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsayılan Oluşturucu, bir dosyaya eklemez `CStdioFile` nesne. Bu oluşturucuyu kullanırken, kullanmalısınız `CStdioFile::Open` bir dosyasını açın ve ekler için yöntem `CStdioFile` nesne.
+Varsayılan Oluşturucu `CStdioFile` nesnesine bir dosya eklemez. Bu oluşturucuyu kullanırken, bir dosyayı açmak ve `CStdioFile::Open` `CStdioFile` nesneye iliştirmek için yöntemini kullanmanız gerekir.
 
-Bir açık dosya akışı tek parametre oluşturucuya iliştirir `CStdioFile` nesne. İşaretçi değerler önceden tanımlanmış giriş/çıkış dosya işaretçileri izin *stdin*, *stdout*, veya *stderr*.
+Tek parametreli Oluşturucu, `CStdioFile` nesnesine bir açık dosya akışı iliştirir. İzin verilen işaretçi değerleri, önceden tanımlanmış giriş/çıkış dosyası işaretçilerini *STDIN*, *stdout*veya *stderr*içerir.
 
-İki parametre Oluşturucu bir `CStdioFile` nesnesini ve karşılık gelen dosyayı ile verilen yol açar.
+İki parametreli Oluşturucu bir `CStdioFile` nesne oluşturur ve ilgili dosyayı verilen yola açar.
 
-NULL ya da geçirirseniz *pOpenStream* veya *lpszFileName*, oluşturucu oluşturur bir `CInvalidArgException*`.
+Ya *pOpenStream* veya *lpszFileName*için null geçirirseniz, Oluşturucu bir `CInvalidArgException*`oluşturur.
 
-Dosya açılamadı veya olamaz, oluşturucu oluşturur bir `CFileException*`.
+Dosya açılamadığı veya oluşturulamadığı takdirde, Oluşturucu bir `CFileException*`oluşturur.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFCFiles#37](../../atl-mfc-shared/reference/codesnippet/cpp/cstdiofile-class_1.cpp)]
 
-##  <a name="m_pstream"></a>  CStdioFile::m_pStream
+##  <a name="m_pstream"></a>CStdioFile:: m_pStream
 
-`m_pStream` C çalışma zamanı işlevi tarafından döndürülen veri üyesi olan bir açık dosya işaretçisi `fopen`.
+Veri üyesi, C çalışma zamanı işlevi `fopen`tarafından döndürülen açık bir dosyanın işaretçisidir. `m_pStream`
 
 ```
 FILE* m_pStream;
@@ -143,11 +143,11 @@ FILE* m_pStream;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Dosya hiçbir zaman açılmış veya kapatılmış olan, NULL olur.
+Dosya açılmadıysa veya kapatılmışsa NULL olur.
 
-##  <a name="open"></a>  CStdioFile::Open
+##  <a name="open"></a>CStdioFile:: Open
 
-Fazla Yüklendi. Açık varsayılan ile kullanılmak üzere tasarlanmıştır `CStdioFile` Oluşturucusu.
+Fazla Yüklendi. Open, varsayılan `CStdioFile` oluşturucuyla kullanılmak üzere tasarlanmıştır.
 
 ```
 virtual BOOL Open(
@@ -165,26 +165,26 @@ virtual BOOL Open(
 ### <a name="parameters"></a>Parametreler
 
 *lpszFileName*<br/>
-İstenen dosya yolu bir dize. Göreli veya mutlak yol olabilir.
+İstenen dosyanın yolu olan bir dize. Yol göreli veya mutlak olabilir.
 
 *nOpenFlags*<br/>
-Paylaşım ve erişim modu. Dosyayı açarken gerçekleştirilecek eylemi belirtir. Seçenekler bit düzeyinde OR kullanarak birleştirebilir (&#124;) işleci. Bir erişim izni ve bir paylaşım seçeneği gereklidir; modeCreate ve modeNoInherit modları isteğe bağlıdır.
+Paylaşım ve erişim modu. Dosya açılırken gerçekleştirilecek eylemi belirtir. Bit düzeyinde OR (&#124;) işlecini kullanarak seçenekleri birleştirebilirsiniz. Bir erişim izni ve bir paylaşma seçeneği gereklidir; modeCreate ve Monominal Inherit modları isteğe bağlıdır.
 
 *pError*<br/>
-Başarısız bir işlemin durumunu alacak varolan bir dosyanın özel durum nesnesine bir işaretçi.
+Hatalı bir işlemin durumunu alacak olan, var olan bir dosya özel durum nesnesine yönelik bir işaretçi.
 
 *pTM*<br/>
-İşaretçi bir `CAtlTransactionManager` nesne.
+Bir `CAtlTransactionManager` nesne işaretçisi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa TRUE; Aksi durumda FALSE.
+Başarılı olursa doğru; Aksi halde yanlış.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="readstring"></a>  CStdioFile::ReadString
+##  <a name="readstring"></a>CStdioFile:: ReadString
 
-Bir sınır en fazla arabellek içine metin verileri okur *nMax*ilişkili dosyasından -1 karakter `CStdioFile` nesne.
+Metin verilerini, `CStdioFile` nesnesiyle ilişkili dosyadan *NMAX*-1 karakter sınırına kadar bir arabelleğe okur.
 
 ```
 virtual LPTSTR ReadString(
@@ -197,34 +197,34 @@ virtual BOOL ReadString(CString& rString);
 ### <a name="parameters"></a>Parametreler
 
 *lpsz*<br/>
-Bir metin null ile sonlandırılmış dize alacak bir kullanıcı tarafından sağlanan arabellek için işaretçi belirtir.
+Null ile sonlandırılmış bir metin dizesi alacak Kullanıcı tarafından sağlanan arabellek için bir işaretçi belirtir.
 
-*nMax*<br/>
-Sondaki null karakter sayılmaz karakterleri okumak için en yüksek sayısını belirtir.
+*Ngünde en çok*<br/>
+Sonlandıran null karakteri saymayan okunacak en fazla karakter sayısını belirtir.
 
 *rString*<br/>
-Bir başvuru bir `CString` işlevi döndüğünde dizeyi içeren nesne.
+İşlevin döndürdüğü dizeyi içeren `CString` bir nesneye başvuru.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Metin verileri içeren arabellek için işaretçi. Dosya sonu herhangi bir veri okumadan ulaştıysanız NULL; veya, boolean, dosya sonu ise FALSE herhangi bir veri okumadan ulaşıldı.
+Metin verisini içeren arabelleğin işaretçisi. Herhangi bir veri okunmadan dosya sonu ulaşılırsa NULL; ya da Boolean ise, herhangi bir veri okunmadan dosya sonu ulaşılırsa FALSE 'TUR.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Okuma ilk yeni satır karakteri tarafından durduruldu. Bu durumda, daha az ise *nMax*-1 karakter okumak, arabellekteki yeni satır karakteri depolanır. Null karakteri ('\0'), her iki durumda da eklenir.
+Okuma ilk yeni satır karakteri tarafından durdurulur. Bu durumda, *NMAX*-1 ' den az karakter okunıyorsa, bir yeni satır karakteri arabellekte depolanır. Her iki durumda da null karakter (' \ 0 ') eklenir.
 
-[CFile::Read](../../mfc/reference/cfile-class.md#read) metin modunda girdi, ancak değil sonlandırmak için bir satır başı satır besleme çiftine de kullanılabilir.
+[CFile:: Read](../../mfc/reference/cfile-class.md#read) , metin modu girişi için de kullanılabilir, ancak bir satır başı satır akış çiftinde sonlanmaz.
 
 > [!NOTE]
->  `CString` Bu işlevin sürümünü kaldırır `'\n'` varsa; LPTSTR sürümü yok.
+>  Bu işlevin `'\n'` sürümü varsa kaldırır; LPTSTR sürümü desteklemez. `CString`
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFCFiles#38](../../atl-mfc-shared/reference/codesnippet/cpp/cstdiofile-class_2.cpp)]
 
-##  <a name="seek"></a>  CStdioFile::Seek
+##  <a name="seek"></a>CStdioFile:: Seek
 
-İşaretçi önceden açılmış bir dosyaya yeniden konumlandırır.
+Daha önce açılmış bir dosyadaki işaretçiyi konumlandırır.
 
 ```
 virtual ULONGLONG Seek(
@@ -235,38 +235,38 @@ virtual ULONGLONG Seek(
 ### <a name="parameters"></a>Parametreler
 
 *lOff*<br/>
-İşaretçiyi bayt sayısı.
+İşaretçiyi taşıyacağınız bayt sayısı.
 
-*nFrom*<br/>
+*Ngüncelleştirmelerini*<br/>
 İşaretçi taşıma modu. Aşağıdaki değerlerden biri olmalıdır:
 
-- `CFile::begin`: Dosya işaretçiyi *lOff* dosyanın başından itibaren bayt iletin.
+- `CFile::begin`: Dosya *işaretçisini dosyanın* başlangıcından ileri doğru bir şekilde taşıyın.
 
-- `CFile::current`: Dosya işaretçiyi *lOff* dosyasındaki geçerli konumdan bayt.
+- `CFile::current`: Dosya *işaretçisini dosyada* bulunan geçerli konumdan taşıyın.
 
-- `CFile::end`: Dosya işaretçiyi *lOff* dosyasının sonuna gelen baytlar. Unutmayın *lOff* gerekir olması negatif mevcut aranacak dosya; pozitif değerleri, dosyanın sonundan arama.
+- `CFile::end`: Dosya *işaretçisini dosyanın* sonundaki bir değerle taşıyın. *LOff* 'ın mevcut dosyaya arama yapmak için negatif olması gerektiğini unutmayın; pozitif değerler dosyanın sonundan daha sonra aranacaktır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İstenen konumu yasal, ise `Seek` dosyanın başından itibaren yeni bayt uzaklığı döndürür. Aksi takdirde, dönüş değeri tanımsızdır ve `CFileException` nesnesi oluşturulur.
+İstenen konum geçerli ise, `Seek` dosyanın başından başlayarak yeni bayt sapmasını döndürür. Aksi takdirde, dönüş değeri tanımsızdır ve bir `CFileException` nesne oluşturulur.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`Seek` İşlevi erişme izni verir rastgele bir dosyanın içeriğini hareket ettirerek işaretçinin belirtilen bir miktarı mutlak veya göreceli olarak. Veri yok, arama sırasında gerçekten okuyun. İstenen konumu, dosya boyutundan büyükse, dosya uzunluğu o konuma genişletilir ve hiçbir özel durum oluşturulur.
+`Seek` İşlevi, işaretçiyi belirtilen miktarda, kesinlikle veya görece taşıyarak bir dosyanın içeriğine rastgele erişime izin verir. Arama sırasında hiç veri okunmamıştır. İstenen konum dosyanın boyutundan büyükse, dosya uzunluğu bu konuma genişletilir ve hiçbir özel durum oluşturulmaz.
 
-Bir dosya açıldığında, dosya işaretçisini uzaklığı 0 ' dosyasının başına yerleştirilir.
+Dosya açıldığında dosya işaretçisi, dosyanın başına 0 uzaklığında konumlandırılır.
 
-Bu uygulaması `Seek` çalışma zamanı kitaplığı (CRT) işlevine dayalı `fseek`. Kullanımı ve birkaç sınırları vardır `Seek` akışlarında metin modunda açılır. Daha fazla bilgi için [fseek, _fseeki64](../../c-runtime-library/reference/fseek-fseeki64.md).
+Bu uygulamasının `Seek` çalışma zamanı kitaplığı (CRT) işlevini `fseek`temel alır. Metin modunda açılan `Seek` akışlarda kullanımı için birkaç sınır vardır. Daha fazla bilgi için bkz. [fseek, _fseeki64](../../c-runtime-library/reference/fseek-fseeki64.md).
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki örnek nasıl kullanılacağını gösterir `Seek` işaretçiyi başından 1000 bayt `cfile` dosya. Unutmayın `Seek` sonradan çağırmanız gerekir böylece veri okumaz [CStdioFile::ReadString](#readstring) verileri okumak için.
+Aşağıdaki örnek, 1000 baytlık işaretçiyi `Seek` `cfile` dosyanın başından taşımak için nasıl kullanılacağını gösterir. Verileri okumadığını unutmayın. bu `Seek` nedenle, verileri okumak için daha sonra [CStdioFile:: ReadString](#readstring) ' i çağırmanız gerekir.
 
 [!code-cpp[NVC_MFCFiles#39](../../atl-mfc-shared/reference/codesnippet/cpp/cstdiofile-class_3.cpp)]
 
 ##  <a name="writestring"></a>  CStdioFile::WriteString
 
-Veri arabellek ile ilişkili bir dosyaya yazar `CStdioFile` nesne.
+Bir arabellekteki verileri `CStdioFile` nesneyle ilişkili dosyaya yazar.
 
 ```
 virtual void WriteString(LPCTSTR lpsz);
@@ -275,17 +275,17 @@ virtual void WriteString(LPCTSTR lpsz);
 ### <a name="parameters"></a>Parametreler
 
 *lpsz*<br/>
-Null ile sonlandırılmış bir dize içeren arabellek için işaretçi belirtir.
+Null ile sonlandırılmış bir dize içeren bir arabelleğin işaretçisini belirtir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Sondaki boş karakter ( `\0`) dosyasına yazılmaz. Bu yöntem, yeni satır karakterleri Yazar *lpsz* dosyaya bir satır başı/satır besleme çift olarak.
+Sonlandırıcı null karakteri ( `\0`) dosyaya yazılmadı. Bu yöntem, *lpsz* ' de satır başı satır besleme çifti olarak bir satır başı karakteri yazar.
 
-Bir dosyaya, kullanmak null ile sonlandırılmış değil veri yazmak istiyorsanız `CStdioFile::Write` veya [CFile::Write](../../mfc/reference/cfile-class.md#write).
+Null ile Sonlandırılmamış verileri bir dosyaya yazmak istiyorsanız veya `CStdioFile::Write` [CFile:: Write](../../mfc/reference/cfile-class.md#write)kullanın.
 
-Bu yöntem bir `CInvalidArgException*` NULL belirtirseniz *lpsz* parametresi.
+Bu yöntem, `CInvalidArgException*` *lpsz* parametresi için null belirtirseniz bir oluşturur.
 
-Bu yöntem bir `CFileException*` yanıt olarak dosya sistemi hataları.
+Bu yöntem, dosya `CFileException*` sistemi hatalarına yanıt olarak bir yanıt verir.
 
 ### <a name="example"></a>Örnek
 
@@ -296,7 +296,7 @@ Bu yöntem bir `CFileException*` yanıt olarak dosya sistemi hataları.
 [CFile Sınıfı](../../mfc/reference/cfile-class.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
 [CFile Sınıfı](../../mfc/reference/cfile-class.md)<br/>
-[CFile::Duplicate](../../mfc/reference/cfile-class.md#duplicate)<br/>
-[CFile::LockRange](../../mfc/reference/cfile-class.md#lockrange)<br/>
-[CFile::UnlockRange](../../mfc/reference/cfile-class.md#unlockrange)<br/>
+[CFile::D yukarı](../../mfc/reference/cfile-class.md#duplicate)<br/>
+[CFile:: LockRange](../../mfc/reference/cfile-class.md#lockrange)<br/>
+[CFile:: UnlockRange](../../mfc/reference/cfile-class.md#unlockrange)<br/>
 [CNotSupportedException Sınıfı](../../mfc/reference/cnotsupportedexception-class.md)

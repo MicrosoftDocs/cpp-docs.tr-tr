@@ -13,7 +13,7 @@ helpviewer_keywords:
 - tab 	 escape sequence
 - "\f escape sequence"
 - quotation marks, single
-- "formfeed \f escape sequence"
+- "form feed \f escape sequence"
 - "\v escape sequence"
 - control character escape sequences
 - " symbol in escape sequences"
@@ -30,49 +30,49 @@ helpviewer_keywords:
 - "	 escape sequence"
 - backspace escape sequence
 ms.assetid: 5aef377f-a76c-4d5c-aa04-8308758ad6a8
-ms.openlocfilehash: 9aeb8ca549cce8bddbf5d6ddadb6292c05f573d5
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 5de0b5f1a73fcfb6ea0325bea3247ebe4c85d411
+ms.sourcegitcommit: 878a164fe6d550ca81ab87d8425c8d3cd52fe384
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62233952"
+ms.lasthandoff: 07/22/2019
+ms.locfileid: "68375830"
 ---
 # <a name="escape-sequences"></a>Çıkış Sıraları
 
-Karakter birleşimlerine, bir ters eğik çizgi (**\\**) harften veya bir basamak birleşiminden oluşan "kaçış dizileri" adı verilir Yeni satır karakterini, tek tırnak işaretini veya bir karakter sabitindeki diğer belirli karakterleri göstermek için kaçış dizileri kullanmanız gerekir. Kaçış dizisi, tek bir karakter olarak kabul edilir ve bu nedenle karakter sabiti olarak geçerlidir.
+Bir ters eğik çizgi ( **\\** ) ve ardından bir harf ile veya bir basamak birleşimiyle oluşan karakter bileşimleri "kaçış dizileri" olarak adlandırılır. Yeni satır karakterini, tek tırnak işaretini veya bir karakter sabitindeki diğer belirli karakterleri göstermek için kaçış dizileri kullanmanız gerekir. Kaçış dizisi, tek bir karakter olarak kabul edilir ve bu nedenle karakter sabiti olarak geçerlidir.
 
-Kaçış dizileri, genellikle terminallerde ve yazıcılarda satır başları ve sekme hareketleri gibi eylemleri belirtmek için kullanılır. Bunlar ayrıca yazdırılmayan karakterlerin ve genellikle çift tırnak işareti gibi özel anlamları olan karakterlerin sabit gösterimlerini sağlamak için kullanılır (**"**). Aşağıdaki tabloda, ANSI kaçış dizileri ve neyi gösterdikleri listelenmektedir.
+Kaçış dizileri, genellikle terminallerde ve yazıcılarda satır başları ve sekme hareketleri gibi eylemleri belirtmek için kullanılır. Bunlar, genellikle çift tırnak işareti ( **"** ) gibi özel anlamlara sahip yazdırılmayan karakterlerin ve karakterlerin sabit gösterimlerini sağlamak için de kullanılır. Aşağıdaki tabloda, ANSI kaçış dizileri ve neyi gösterdikleri listelenmektedir.
 
-Soru işareti bir ters eğik unutmayın (**\\?**) burada karakter dizisinin yanlış bir trigraf durumlarda bir sabit soru işareti belirtir. Bkz: [Trigrafları](../c-language/trigraphs.md) daha fazla bilgi için.
+Önünde ters eğik çizgi ( **\\?** ) olan soru işaretinin, karakter sırasının bir trigraf olarak yanlış yorumlanacağı durumlarda sabit bir soru işareti belirttiğinden emin olun. Daha fazla bilgi için bkz. [Trigraf](../c-language/trigraphs.md) .
 
 ### <a name="escape-sequences"></a>Çıkış Sıraları
 
 |Çıkış Sırası|Temsil eder|
 |---------------------|----------------|
-|**\a**|Bell (uyarı)|
+|**\**|Bell (uyarı)|
 |**\b**|Geri Al tuşu|
-|**\f**|Form besleme|
+|**\f**|Form akışı|
 |**\n**|Yeni satır|
-|**\r**|satır başı|
-|**\t**|Yatay sekme|
-|**\v**|dikey sekme|
+|**\r**|Satır başı|
+|**t**|Yatay sekme|
+|**\v**|Dikey sekme|
 |**\\'**|Tek tırnak işareti|
 |**\\"**|Çift tırnak işareti|
 |**\\\\**|Ters eğik çizgi|
 |**\\?**|Sabit soru işareti|
-|**\\** *OOO*|Sekizlik gösterimde ASCII karakteri|
-|**\x** *hh*|Onaltılık gösterimde ASCII karakteri|
-|**\x** *hhhh*|Bu kaçış dizisi geniş karakter sabitinde veya Unicode dize sabit değerinde kullanılıyorsa onaltılık gösterimde Unicode karakter.<br /><br /> Örneğin, `WCHAR f = L'\x4e00'` veya `WCHAR b[] = L"The Chinese character for one is \x4e00"`.|
+|**\\** *ooo*|Sekizlik gösterimde ASCII karakteri|
+|**\x** *SS*|Onaltılık gösterimde ASCII karakteri|
+|**\x** *sshh*|Bu kaçış dizisi geniş karakter sabitinde veya Unicode dize sabit değerinde kullanılıyorsa onaltılık gösterimde Unicode karakter.<br /><br /> Örneğin, `WCHAR f = L'\x4e00'` veya `WCHAR b[] = L"The Chinese character for one is \x4e00"`.|
 
-**Microsoft'a özgü**
+**Microsoft 'a özgü**
 
-Tabloda görünmeyen bir karakterden önce ters eğik çizgi geliyorsa, derleyici tanımlanmamış karakteri, karakterin kendisi gibi işler. Örneğin, `\c` olarak kabul bir `c`.
+Tabloda görünmeyen bir karakterden önce ters eğik çizgi geliyorsa, derleyici tanımlanmamış karakteri, karakterin kendisi gibi işler. Örneğin, `\c` `c`olarak değerlendirilir.
 
-**END Microsoft özgü**
+**SON Microsoft 'a özgü**
 
-Kaçış dizileri, görüntü bağdaştırıcısına grafik olmayan denetim karakterleri göndermenizi sağlar. Örneğin, ESC karakteri (**\033**) bir terminal veya yazıcı için bir denetim komutunun ilk karakteri sıklıkla kullanılır. Bazı kaçış dizileri cihaza özgüdür. Örneğin, dikey sekme ve form besleme kaçış dizileri (**\v** ve **\f**) ekran çıktısını etkilemez, ancak uygun yazıcı işlemlerini gerçekleştirin.
+Kaçış dizileri, görüntü bağdaştırıcısına grafik olmayan denetim karakterleri göndermenizi sağlar. Örneğin, ESC karakteri ( **\ 033**), genellikle bir Terminal veya yazıcı için bir denetim komutunun ilk karakteri olarak kullanılır. Bazı kaçış dizileri cihaza özgüdür. Örneğin, dikey sekme ve form besleme kaçış dizileri ( **\v** ve **\f**) ekran çıkışını etkilemez, ancak uygun yazıcı işlemlerini gerçekleştirir.
 
-Ters eğik çizgi de kullanabilirsiniz (**\\**) devam karakteri olarak. Ters eğik çizginin hemen arkasından bir yeni satır karakteri (RETURN anahtarına basmaya eşdeğerdir) geliyorsa, derleyici ters eğik çizgiyi ve yeni satır karakterini yoksayar ve sonraki satırı önceki satırın bir parçası olarak değerlendirir. Bu, özellikle tek satırdan uzun olan önişlemci tanımları için kullanışlıdır. Örneğin:
+Ayrıca, bir devam karakteri olarak ters **\\** eğik çizgi () kullanabilirsiniz. Ters eğik çizginin hemen arkasından bir yeni satır karakteri (RETURN anahtarına basmaya eşdeğerdir) geliyorsa, derleyici ters eğik çizgiyi ve yeni satır karakterini yoksayar ve sonraki satırı önceki satırın bir parçası olarak değerlendirir. Bu, özellikle tek satırdan uzun olan önişlemci tanımları için kullanışlıdır. Örneğin:
 
 ```
 #define assert(exp) \

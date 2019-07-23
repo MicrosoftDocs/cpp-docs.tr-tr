@@ -1,5 +1,5 @@
 ---
-title: Tokens (C++)
+title: Belirteçler (C++)
 ms.date: 11/04/2016
 helpviewer_keywords:
 - tokens [C++]
@@ -7,18 +7,18 @@ helpviewer_keywords:
 - translation units
 - white space, in C++ tokens
 ms.assetid: aa812fd0-6d47-4f3f-aee0-db002ee4d8b9
-ms.openlocfilehash: 1606df56191ec00ffea543dedd3fd4eda98d01c2
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: cd104b7308716ca182374bbff2df61731c84d574
+ms.sourcegitcommit: 878a164fe6d550ca81ab87d8425c8d3cd52fe384
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62330446"
+ms.lasthandoff: 07/22/2019
+ms.locfileid: "68376259"
 ---
-# <a name="tokens-c"></a>Tokens (C++)
+# <a name="tokens-c"></a>Belirteçler (C++)
 
 Bir belirteç C++ programının derleyicisi için anlamlı olan en küçük öğesidir. C++ ayrıştırıcısı şu tür belirteçleri tanır: Tanımlayıcılar, anahtar sözcükler, sabitler, işleçler, noktalayıcılar ve diğer ayıraçlar. Bu belirteçlerin akışı bir çeviri birimi oluşturur.
 
-Belirteç tarafından ayrılmış genellikle *boşluk*. Bir veya daha fazla boşluk olabilir:
+Belirteçler genellikle *boşluk ile ayrılır*. Bir veya daha fazla boşluk olabilir:
 
 - Boşluklar
 
@@ -26,13 +26,13 @@ Belirteç tarafından ayrılmış genellikle *boşluk*. Bir veya daha fazla boş
 
 - Yeni satırlar
 
-- Form beslemeleri
+- Form akışları
 
 - Açıklamalar
 
-Ayrıştırıcının, anahtar sözcükler, tanımlayıcılar, değişmez değerler, işleçler ve noktalama tanır. Belirli belirteç türleri hakkında daha fazla bilgi için bkz: [anahtar sözcükleri](../cpp/keywords-cpp.md), [tanımlayıcıları](../cpp/identifiers-cpp.md), [sayısal, Boole ve işaretçi değişmez değerleri](../cpp/numeric-boolean-and-pointer-literals-cpp.md), [dize ve karakter değişmez değerleri ](../cpp/string-and-character-literals-cpp.md), [Kullanıcı tanımlı değişmez değerler](../cpp/user-defined-literals-cpp.md), [C++ yerleşik işleçler, öncelik ve İlişkisellik](../cpp/cpp-built-in-operators-precedence-and-associativity.md), ve [noktalama](../cpp/punctuators-cpp.md). Ayırmak için gerektiği gibi belirteçler dışında boşluk yoksayılır.
+Ayrıştırıcı, anahtar sözcükleri, tanımlayıcıları, değişmez değerleri, işleçleri ve noktacılarını tanır. Belirli belirteç türleri hakkında bilgi için bkz. [anahtar sözcükler](../cpp/keywords-cpp.md), [tanımlayıcılar](../cpp/identifiers-cpp.md), [sayısal, Boole ve işaretçi değişmez değerleri](../cpp/numeric-boolean-and-pointer-literals-cpp.md), [dize ve karakter değişmez değerleri](../cpp/string-and-character-literals-cpp.md), [Kullanıcı tanımlı sabit değerler](../cpp/user-defined-literals-cpp.md), [ C++ yerleşik işleçler, Öncelik ve Ilişkilendirilebilirlik](../cpp/cpp-built-in-operators-precedence-and-associativity.md)ve [noktaleyiciler](../cpp/punctuators-cpp.md). Belirteçleri ayırmak için gerekli olanlar dışında boşluk yok sayılır.
 
-Ön işleme belirteçleri, ön işleme aşamalar için derleyici geçirilen belirteç akışı oluşturmak için kullanılır. Ön işleme belirteci kategoriler, üst bilgi adları, tanımlayıcılar, ön işleme numaraları, karakter değişmez değerleri, dize değişmez değerleri, ön işleme işleçleri ve noktalama işaretçileri ve diğer kategorilerden birini eşleşmeyen tek boşluk olmayan karakterle bulunur. Karakter ve dize değişmez değerleri, kullanıcı tanımlı değişmez değerler olabilir. Ön işleme belirteci boşluk veya açıklamaları ayrılabilir.
+Ön işleme belirteçleri, derleyiciye geçirilen belirteç akışını oluşturmak için ön işleme aşamalarda kullanılır. Ön işleme belirteç kategorileri başlık adları, tanımlayıcılar, ön işleme numaraları, karakter sabit değerleri, dize sabit değerleri, ön işleme işleçleri ve noktaleyiciler ve diğer kategorilerden biriyle eşleşmeyen tek boşluk olmayan karakterler. Karakter ve dize sabit değerleri Kullanıcı tanımlı değişmez değerler olabilir. Ön işleme belirteçleri, boşluk veya açıklamalarla ayrılabilir.
 
 Ayrıştırıcı, soldan sağa taramada girdi karakterlerini kullanarak olası en uzun belirteci oluşturarak, belirteçleri girdi akışından ayırır. Bu kod parçasını göz önünde bulundurun:
 

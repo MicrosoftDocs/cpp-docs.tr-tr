@@ -17,12 +17,12 @@ helpviewer_keywords:
 - translation, modes
 - translation modes (file I/O)
 ms.assetid: a5993bf4-7e7a-47f9-83c3-e46332b85579
-ms.openlocfilehash: 18e0ad8615bbe89c265247041729027f661915fe
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: a86c0c1a0b70613c6e7749c78f58f6dfb3602d4d
+ms.sourcegitcommit: 878a164fe6d550ca81ab87d8425c8d3cd52fe384
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62304390"
+ms.lasthandoff: 07/22/2019
+ms.locfileid: "68376284"
 ---
 # <a name="translation-mode-constants"></a>Çeviri Modu Sabitleri
 
@@ -34,17 +34,17 @@ ms.locfileid: "62304390"
 
 ## <a name="remarks"></a>Açıklamalar
 
-`_O_BINARY` Ve `_O_TEXT` bildirim sabitleri belirlemek için çeviri modunu dosyaları (`_open` ve `_sopen`) veya akışlar için çeviri modunu (`_setmode`).
+`_open` `_sopen`Ve bildirim sabitleri, dosyalar (ve) için çeviri modunu veya akışlar (`_setmode`) için çeviri modunu belirleme. `_O_TEXT` `_O_BINARY`
 
 İzin verilen değerler şunlardır:
 
 |||
 |-|-|
-`_O_TEXT`  | Dosya, metin (çevrilmiş) modunda açar. Satır başı - satır besleme (CR-LF) kombinasyonları girişte bir tek yeni satır (LF) çevrilir. Satır başı besleme karakterleri çıkış CR-LF kombinasyonlarına çevrilir. Ayrıca, CTRL + Z girişteki bir dosya sonu karakteri olarak yorumlanır. Okuma ve okuma/yazma için açılmış dosyalarında `fopen` CTRL + Z dosya sonunda olup olmadığını denetler ve eğer mümkünse bunu kaldırır. Kullanıldığından yapıldığını `fseek` ve `ftell` CTRL + Z ile biten bir dosya içinde taşımak için işlevleri neden `fseek` dosyanın sonuna yakın yanlış davranmasına.
-`_O_BINARY`  | Dosya ikili (çevrilmemiş) modda açılır. Yukarıdaki Çeviriler bastırılır.
-`_O_RAW`  | Aynı `_O_BINARY`. C 2.0 uyumluluk için desteklenir.
+`_O_TEXT`  | Dosyayı metin (çevrilmiş) modunda açar. Satır başı satır besleme (CR-LF) birleşimleri, girişte tek satırlık bir akışa (LF) çevrilir. Satır akış karakterleri, çıkışta CR-LF birleşimlerine çevrilir. Ayrıca CTRL + Z, girişte bir dosya sonu karakteri olarak yorumlanır. Okuma ve yazma `fopen` için açılan dosyalarda, dosyanın sonunda CTRL + Z olup olmadığını denetler ve mümkünse kaldırır. Bu, CTRL + Z ile `fseek` biten `ftell` bir dosya içinde hareket etmek için ve işlevlerinin kullanılması, dosyanın sonuna doğru `fseek` şekilde davranmasına neden olabileceğinden, yapılır.
+`_O_BINARY`  | Dosyayı ikili (çevrilmemiş) modda açar. Yukarıdaki Çeviriler bastırılır.
+`_O_RAW`  | `_O_BINARY`Aynı. C 2,0 uyumluluğu için desteklenir.
 
-Daha fazla bilgi için [metin ve ikili mod dosyası g/ç](../c-runtime-library/text-and-binary-mode-file-i-o.md) ve [dosya çevirisi](../c-runtime-library/file-translation-constants.md).
+Daha fazla bilgi için bkz. [metin ve Ikili mod dosyası g/ç](../c-runtime-library/text-and-binary-mode-file-i-o.md) ve [Dosya çevirisi](../c-runtime-library/file-translation-constants.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
