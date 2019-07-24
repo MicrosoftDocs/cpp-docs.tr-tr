@@ -23,12 +23,12 @@ helpviewer_keywords:
 - write function
 - files [C++], writing to
 ms.assetid: 7b868c33-766f-4e1a-95a7-e8d25f0604c4
-ms.openlocfilehash: b3fa53b21d4ea23c5f8e59de673f4074deedb505
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 032bf332caee09fbe17d58eeae16ab44b98402d3
+ms.sourcegitcommit: 878a164fe6d550ca81ab87d8425c8d3cd52fe384
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62383418"
+ms.lasthandoff: 07/22/2019
+ms.locfileid: "68376296"
 ---
 # <a name="write"></a>_write
 
@@ -47,35 +47,35 @@ int _write(
 ### <a name="parameters"></a>Parametreler
 
 *FD*<br/>
-Verilerin üzerine yazılacağını dosyasının dosya tanımlayıcısı.
+Verilerin yazıldığı dosyanın dosya tanımlayıcısı.
 
-*Arabellek*<br/>
+*arabelleğin*<br/>
 Yazılacak veriler.
 
-*Sayısı*<br/>
+*biriktirme*<br/>
 Bayt sayısı.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa, **_write** gerçekte yazılan bayt sayısını döndürür. Diskte kalan gerçek alan işlev diske yazmak için çalışıyor arabellek boyutu altındaysa **_write** başarısız olur ve herhangi bir arabellek içeriği diske temizleme değil. -1 dönüş değeri bir hata olduğunu gösterir. Geçersiz parametreler, bu işlev geçersiz parametre işleyicisi açıklandığı gibi çağırır [Parameter Validation](../../c-runtime-library/parameter-validation.md). Yürütme devam etmesine izin verilirse işlev -1 döndürür ve **errno** üç değerlerden birine ayarlayın: **EBADF**, yani dosya tanımlayıcısı geçersiz veya dosya; yazma için açılmadı **ENOSPC**, operation;'için cihazda yeterli alan yok anlamına gelen sol veya **EINVAL**, anlamına *arabellek* null bir işaretçi ya da, bir tek *sayısı* bayt Unicode modunda bir dosyaya yazılacak geçirildi.
+Başarılı olursa, **_write** yazılan bayt sayısını döndürür. Diskte kalan gerçek alan, işlevin diske yazmaya çalıştığı arabelleğin boyutundan daha azsa, **_yazma** başarısız olur ve arabelleğin içeriğini diske temizlemez. -1 ' in dönüş değeri bir hatayı gösterir. Geçersiz parametreler geçirilmemişse, bu işlev [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmenin devam etmesine izin veriliyorsa, işlev-1 döndürür ve **errno** üç değerden birine ayarlanır: **EBADF**, dosya tanımlayıcısının geçersiz olması veya dosyanın yazma için açılmadığı anlamına gelir; **Enospc**, bu, cihazda işlem için yeterli alan olmadığı anlamına gelir; ya da **EINVAL**, bu, *arabelleğin* boş bir işaretçi olduğu veya Unicode modundaki bir dosyaya yazılması için tek bayt *sayısının* geçirildiği anlamına gelir.
 
-Bunlar ve diğer dönüş kodları hakkında daha fazla bilgi için bkz: [errno _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+Bu ve diğer dönüş kodları hakkında daha fazla bilgi için bkz. [errno, _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
-Dosyayı metin modunda açıldıysa, her bir satır besleme karakteri bir satır başı - Çıkışta satır besleme çifti ile değiştirilir. Bu değişiklik, dönüş değeri etkilemez.
+Dosya metin modunda açılırsa, her satır besleme karakteri çıkışdaki bir satır başı satır besleme çiftiyle değiştirilmiştir. Değişiklik, dönüş değerini etkilemez.
 
-Dosya Unicode çeviri modunda açılır olduğunda — Örneğin, varsa *fd* kullanılarak açılmaktadır **_aç** veya **_sopen** ve içeren bir mode parametresi **_O_ WTEXT**, **_O_U16TEXT**, veya **_O_U8TEXT**, ya da kullanarak açıldığında **fopen** ve içeren bir mode parametresi **ccs = UNICODE**, **ccs UTF-16LE =**, veya **ccs = UTF-8**, veya modu kullanılarak bir Unicode çeviri moduna değiştirilirse **_setmode**—*arabellek* bir dizi için bir işaretçi olarak yorumlanır **wchar_t** içeren **UTF-16** veri. Bu modda tek sayıda bayt yazma girişimi, bir parametre doğrulama hatasına neden olur.
+Dosya Unicode çeviri modunda açıldığında — Örneğin, *FD* **_open** veya **_Sopen** kullanılarak açıldıysa ve **_O_WTEXT**, **_O_u16text**veya **_O_U8TEXT**içeren bir mode parametresi veya kullanılarak açılırsa  **CCS = UNICODE**, **CCS = UTF-16LE**, veya **CCS = UTF-8**içeren bir mod parametresi veya mod, **_setmode**kullanarak bir UNICODE çeviri moduna değiştirildiyse,*arabellek* bir işaretçi olarak yorumlanır **UTF-16** verileri içeren **wchar_t** dizisi. Bu modda tek sayıda bayt yazma girişimi bir parametre doğrulama hatasına neden olur.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Write** işlevi *sayısı* bayt *arabellek* ilişkili dosyasına *fd*. Belirtilen dosya ile ilgili dosya işaretçisini (varsa) geçerli konumu yazma işlemi başlar. Dosya ekleme için açık değilse, geçerli dosyanın sonunda işlemi başlar. Sonra yazma işlemi, dosya işaretçisini gerçekte yazılan bayt sayısına göre artar.
+**_Write** işlevi *arabellekteki* *sayı* baytlarını *FD*ile ilişkili dosyaya yazar. Yazma işlemi, belirtilen dosyayla ilişkili dosya işaretçisinin (varsa) geçerli konumunda başlar. Dosya ekleme için açıksa, işlem dosyanın geçerli ucunda başlar. Yazma işleminden sonra, dosya işaretçisi yazılan bayt sayısıyla artar.
 
-Metin modunda açılan dosyalar için yazarken **_write** CTRL + Z karakterini mantıksal-dosya sonu değerlendirir. Bir cihaz için yazarken **_write** CTRL + Z karakterini arabelleğindeki çıkış Sonlandırıcı olarak değerlendirir.
+Metin modunda açılan dosyalara yazarken, **_write** , dosyanın mantıksal sonu olarak bir CTRL + Z karakteri uygular. Bir cihaza yazarken, **_write** ARABELLEĞE bir CTRL + Z karakteri ile çıkış Sonlandırıcı olarak davranır.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_write**|\<io.h >|
+|**_write**|\<GÇ. h >|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -139,7 +139,7 @@ Wrote 36 bytes to file.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Düşük düzey g/ç](../../c-runtime-library/low-level-i-o.md)<br/>
+[Alt düzey g/ç](../../c-runtime-library/low-level-i-o.md)<br/>
 [fwrite](fwrite.md)<br/>
 [_open, _wopen](open-wopen.md)<br/>
 [_read](read.md)<br/>

@@ -22,12 +22,12 @@ helpviewer_keywords:
 - streams, writing data to
 - fwrite function
 ms.assetid: 7afacf3a-72d7-4a50-ba2e-bea1ab9f4124
-ms.openlocfilehash: b4d6b9ce4fb66ee545f52946e28e4984d9e4f924
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f05e39390f3a2d0ad41627f6aed1aecd77b57cca
+ms.sourcegitcommit: 878a164fe6d550ca81ab87d8425c8d3cd52fe384
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62287553"
+ms.lasthandoff: 07/22/2019
+ms.locfileid: "68376058"
 ---
 # <a name="fwrite"></a>fwrite
 
@@ -46,45 +46,45 @@ size_t fwrite(
 
 ### <a name="parameters"></a>Parametreler
 
-*Arabellek*<br/>
+*arabelleğin*<br/>
 Yazılacak veri işaretçisi.
 
-*Boyutu*<br/>
-Bayt olarak öğe boyutu.
+*boyutla*<br/>
+Öğe boyutu (bayt).
 
-*Sayısı*<br/>
-Yazılacak öğe maksimum sayısı.
+*biriktirme*<br/>
+Yazılacak en fazla öğe sayısı.
 
-*Stream*<br/>
-İşaretçi **dosya** yapısı.
+*ka*<br/>
+**Dosya** yapısına yönelik işaretçi.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**fwrite** tam döndürür öğeleri, gerçekte yazılan gösterebilir küçüktür *sayısı* hata oluşması durumunda. Ayrıca, bir hata oluşursa, dosya konumu göstergesi belirlenemiyor. Ya da *stream* veya *arabellek* null bir işaretçiyse veya tek sayıda bayt yazılacak Unicode modunda belirtilirse, işlev geçersiz parametre işleyicisi açıklandığı gibi çağırır [ Parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Yürütme devam etmesine izin verilirse, bu işlev ayarlar **errno** için **EINVAL** ve 0 döndürür.
+**fwrite** , gerçekten yazılmış olan tam öğe sayısını döndürür ve bir hata oluşursa *Count* 'tan daha az olabilir. Ayrıca, bir hata oluşursa, dosya konumu göstergesi belirlenemez. *Stream* veya *buffer* bir null işaretçisiyse veya Unicode modunda yazılabilir tek sayıda bayt belirtilirse, işlev [parametre doğrulamasında](../../c-runtime-library/parameter-validation.md)açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmenin devam etmesine izin veriliyorsa, bu işlev **errno** ' ı **EINVAL** olarak ayarlar ve 0 döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Fwrite** işlevi Yazar kadar *sayısı* öğeleri, *boyutu* uzunluğu her gelen *arabellek* çıktısına *stream*. İle ilişkili dosya işaretçisini *stream* (varsa) gerçekte yazılan bayt sayısına göre artırılır. Varsa *stream* açıldığında metin modunda bir satır başı ile - satır besleme çifti her satır besleme değiştirilir. Değiştirme dönüş değeri üzerinde etkisi yoktur.
+**Fwrite** işlevi, sayı *uzunluğunun her* biri, *arabelleğe* çıkış *akışına*kadar olan öğeleri *say* için yazar. *Stream* ile ilişkili dosya işaretçisi (varsa), gerçekten yazılan bayt sayısıyla artırılır. *Akış* metin modunda açılırsa, her satır akışı bir satır başı satır besleme çiftiyle değiştirilmiştir. Değiştirme işleminin dönüş değeri üzerinde hiçbir etkisi yoktur.
 
-Zaman *stream* Unicode çeviri modunda açıldığında — Örneğin, varsa *stream* çağırarak açıldığında **fopen** ve içeren bir mode parametresi kullanarak **ccs = UNICODE**, **ccs UTF-16LE =**, veya **ccs = UTF-8**, veya modu kullanılarak bir Unicode çeviri moduna değiştirilirse **_setmode** ve modu içeren parametre **_O_WTEXT**, **_O_U16TEXT**, veya **_O_U8TEXT**—*arabellek* işaretçisi olarak yorumlanan bir dizi **wchar_t** , UTF-16 verileri içerir. Bu modda tek sayıda bayt yazma girişimi, bir parametre doğrulama hatasına neden olur.
+*Akış* Unicode çeviri modunda açıldığında — Örneğin, *Stream* , **fopen** çağırarak ve **CCS = UNICODE**, **CCS = UTF-16LE**, ya da **CCS = UTF-8**' i içeren bir mod parametresi kullanılarak açılırsa veya mod ise **_setmode** ve  **_O_WTEXT**, **_O_u16text**veya **_O_U8TEXT**— içeren bir mod parametresi kullanılarak bir Unicode çeviri moduna,*arabellek* , UTF-16 verileri. Bu modda tek sayıda bayt yazma girişimi bir parametre doğrulama hatasına neden olur.
 
-Bu işlevi çağıran iş parçacığının kilitler, iş parçacığı açısından güvenli olmasıdır. Kilitleme yapılmayan bir sürüm için bkz. **_fwrite_nolock**.
+Bu işlev çağıran iş parçacığını kilitlediği için iş parçacığı güvenlidir. Kilitleme dışı bir sürüm için bkz. **_fwrite_nolock**.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |İşlev|Gerekli başlık|
 |--------------|---------------------|
-|**fwrite**|\<stdio.h >|
+|**fwrite**|\<stdio. h >|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 
-Örneğin bakın [fread](fread.md).
+[Fread](fread.md)örneğine bakın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Stream g/ç](../../c-runtime-library/stream-i-o.md)<br/>
+[Akış g/ç](../../c-runtime-library/stream-i-o.md)<br/>
 [_setmode](setmode.md)<br/>
 [fread](fread.md)<br/>
 [_fwrite_nolock](fwrite-nolock.md)<br/>

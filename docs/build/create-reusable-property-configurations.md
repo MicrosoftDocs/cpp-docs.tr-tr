@@ -1,51 +1,51 @@
 ---
-title: Visual Studio Proje ayarları - C++ tekrar veya paylaşın
-ms.date: 03/27/2019
+title: Visual Studio proje ayarlarını paylaşma veya yeniden kullanma-C++
+ms.date: 07/17/2019
 helpviewer_keywords:
 - project properties [C++], reusable
-ms.openlocfilehash: b49c125e0341a2de68bbcd992dd8f9afaa99233d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 9a8f6da3dc754aa9d47d46e26207a02bd1685ea8
+ms.sourcegitcommit: 610751254a01cba6ad15fb1e1764ecb2e71f66bf
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62196887"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "68313188"
 ---
-# <a name="share-or-reuse-visual-studio-project-settings"></a>Veya Visual Studio Proje ayarlarını yeniden paylaşma
+# <a name="share-or-reuse-visual-studio-project-settings"></a>Visual Studio projelerinin ayarlarını paylaşma veya yeniden kullanma
 
-Birden çok proje başkalarıyla paylaşmak ya da yeniden ayarlarının özel bir grup oluşturmak için kullanın **özellik Yöneticisi** oluşturmak için bir *özellik sayfası* (tür her ayarlarını depolamak için .props dosyası) yeniden kullanabilmek veya diğer kişilerle paylaşmak mümkün olmasını istediğiniz proje. Özelliğini kullanarak sayfa çok daha az hata yapmaya açık "Genel" ayarlar oluşturmanın diğer yolu. 
+Birden çok projede başkalarıyla paylaşabileceğiniz veya yeniden kullanabileceğiniz özel bir ayar grubu oluşturmak için Özellik Yöneticisi kullanarak, yeniden kullanmak veya paylaşmak istediğiniz her proje türü için ayarları depolamak üzere bir *özellik sayfası* (. props dosyası) oluşturmak için  kullanın diğer bir deyişle. Özellik sayfalarını kullanmak, "genel" ayarları oluşturmanın diğer yöntemlerinden çok daha az hataya açıktır. 
 
 > [!IMPORTANT]
-> **.user dosyaları ve sorunlu olmalarının**
+> **. Kullanıcı dosyaları ve neden sorunlu olma**
 >
-> Visual Studio'nun önceki sürümlerinde, .kullanıcı dosya adı uzantısı ve bulunan genel özellik sayfalarını kullanılan \<kullanıcı profili > \AppData\Local\Microsoft\MSBuild\v4.0\ klasör. Bu dosyalar, proje yapılandırmalarına ilişkin özellikleri kullanıcı başına ve bilgisayar başına temelinde ayarladığından artık bu dosyaları önermiyoruz. Bu tür "genel" ayarlar, özellikle de yapı bilgisayarınızda birden fazla platformu hedef aldığınızda yapıları engelleyebilir. Örneğin, hem MFC projeniz hem de Windows Phone projeniz varsa, .user özellikleri bunlardan biri için geçersiz olur. Yeniden kullanılabilir özellik sayfaları daha esnek ve daha güçlüdür.
+> Visual Studio 'nun eski sürümleri, \<. User dosya adı uzantısına sahip olan ve USERPROFILE > \AppData\Local\Microsoft\MSBuild\v4.0\ klasöründe yer alan genel özellik sayfaları kullanıyordu. Bu dosyalar, proje yapılandırmalarına ilişkin özellikleri kullanıcı başına ve bilgisayar başına temelinde ayarladığından artık bu dosyaları önermiyoruz. Bu tür "genel" ayarlar, özellikle de yapı bilgisayarınızda birden fazla platformu hedef aldığınızda yapıları engelleyebilir. Örneğin, hem MFC projeniz hem de Windows Phone projeniz varsa, .user özellikleri bunlardan biri için geçersiz olur. Yeniden kullanılabilir özellik sayfaları daha esnek ve daha güçlüdür.
 >
-> .user dosyaları halen Visual Studio tarafından yüklenmesine ve özellik devralımında rol oynamasına karşın, bu dosyalar varsayılan olarak boştur. En iyi nde bunların başvurusunu silmektir **özellik Yöneticisi** projelerinizin kullanıcıya bağımsız olarak çalıştığından emin olmak için bilgisayar başına ayarları bu bir SCC (kaynak kodu, doğru davranışı sağlamak açısından önemlidir Ortam Denetimi).
+> .user dosyaları halen Visual Studio tarafından yüklenmesine ve özellik devralımında rol oynamasına karşın, bu dosyalar varsayılan olarak boştur. En iyi **Özellik Yöneticisi** Yöntem, projelerinizin Kullanıcı başına, bilgisayar başına ayarlarından bağımsız olarak çalıştığından emin olmak için, bir SCC (kaynak kodu denetimi) ortamında doğru davranışı sağlamak açısından önemlidir.
 
-Görüntülenecek **özellik Yöneticisi**, menü çubuğunda, **görünümü**, **diğer Windows**, **özellik Yöneticisi**.
+**Özellik Yöneticisi**görüntülemek için, menü çubuğunda**Özellik Yöneticisi** **görüntüle** > ' yi seçin veya ayarlarınıza bağlı olarak**diğer Windows** > **Özellik Yöneticisi** **görüntüleyin** > .
 
-Birden çok projeye uygulamak istediğiniz özellikleri ortak ve sık kullanılan bir dizi varsa, kullanabileceğiniz **özellik Yöneticisi** yeniden kullanılabilir Yakalanacak *özellik sayfası* olan kural olarak, dosya bir .props dosya adı uzantısı. Özelliklerini sıfırdan ayarlamanıza gerek kalmaması için sayfayı (veya sayfaları) yeni projelere uygulayabilirsiniz. Erişim için **özellik Yöneticisi**, menü çubuğunda, **görünümü**, **özellik Yöneticisi**.
+Birden çok projeye uygulamak istediğiniz ortak, sık kullanılan bir özellik kümesine sahipseniz, bunları kural tarafından bir. props dosya adı uzantısına sahip olan, yeniden kullanılabilir bir *özellik sayfası* dosyasında yakalamak için **Özellik Yöneticisi** kullanabilirsiniz. Özelliklerini sıfırdan ayarlamanıza gerek kalmaması için sayfayı (veya sayfaları) yeni projelere uygulayabilirsiniz.
 
-![Özellik Yöneticisi kısayol menüsünü](media/sharingnew.png "SharingNew")
+![Özellik Yöneticisi kısayol menüsü](media/sharingnew.png "Sharingnew")
 
-Her yapılandırma düğümü altında bu yapılandırma için uygulanan her bir özellik sayfası için düğümleri görürsünüz. Sistem projesi oluşturduğunuzda, Uygulama Sihirbazı'nda belirlediğiniz seçeneklere dayanan bir değerler kümesi özellik sayfaları ekler. Herhangi bir düğüme sağ tıklayın ve bu düğüme uygulanan özellikleri görmek için Özellikler'i seçin. Tüm özellik sayfalarının projenin "ana" özellik sayfası (ms.cpp.props) otomatik olarak içeri aktarılır ve özellik Yöneticisi'nde göründükleri sırayla değerlendirilir. Değerlendirme sırasını değiştirmek için bunları taşıyabilirsiniz. Daha sonra hesaplanan özellik sayfalarını sayfalarda daha önce hesaplanan değerler geçersiz kılınır. Bkz: [proje özellik devralma](project-property-inheritance.md) .vcxproj dosyasını, .props ve .targets dosyaları, ortam değişkenleri ve komut satırı değerlendirme sırası hakkında daha fazla bilgi.
+Her yapılandırma düğümü altında, bu yapılandırma için geçerli olan her bir özellik sayfası için düğümleri görürsünüz. Sistem, projeyi oluştururken uygulama sihirbazında seçtiğiniz seçeneklere göre değerleri ayarlamak için özellik sayfaları ekler. Herhangi bir düğüme sağ tıklayıp Özellikler ' i seçerek bu düğüm için uygulanan özellikleri görüntüleyin. Tüm özellik sayfaları, projenin "ana" özellik sayfasına (MS. cpp. props) otomatik olarak içeri aktarılır ve Özellik Yöneticisi göründükleri sırada değerlendirilir. Değerlendirme sırasını değiştirmek için bunları taşıyabilirsiniz. Daha sonra değerlendirilen Özellik sayfaları, önceden değerlendirilen sayfalardaki değerleri geçersiz kılar. . Vcxproj dosyası,. props ve. targets dosyaları, ortam değişkenleri ve komut satırı içindeki değerlendirmenin sırası hakkında daha fazla bilgi için bkz. [Proje özelliği devralma](project-property-inheritance.md) .
 
-Seçerseniz **yeni proje özelliği Sayfası Ekle** ve seçin, örneğin, MyProps.props özellik sayfasını, bir özellik sayfası iletişim kutusu görünür. Bunun MyProps özellik sayfası için geçerli olduğuna dikkat edin; yaptığınız herhangi bir değişiklik proje dosyasına (.vcxproj) değil de sayfaya yazılır.
+**Yeni proje özellik sayfası ekle** ' yi ve ardından, örneğin, MyProps. props Özellik sayfası ' nı seçerseniz, bir özellik sayfası iletişim kutusu görüntülenir. Bunun MyProps özellik sayfası için geçerli olduğuna dikkat edin; yaptığınız herhangi bir değişiklik proje dosyasına (.vcxproj) değil de sayfaya yazılır.
 
 Aynı özellik doğrudan .vcxproj dosyasında ayarlanmışsa, özellik sayfasındaki özellikler geçersiz kılınır.
 
 Bir özellik sayfasını gerektiği sıklıkta içeri aktarabilirsiniz. Bir çözümdeki birden çok proje, aynı özellik sayfasından ayarları devralabilir ve bir projenin birden fazla sayfası olabilir. Özellik sayfasının kendisi, başka bir özellik sayfasından ayarları devralabilir.
 
-Birden çok yapılandırma için tek bir özellik sayfası da oluşturabilirsiniz. Bunu yapmak için her bir yapılandırma için bir özellik sayfası oluşturun, bunlardan biri için kısayol menüsünü açın, seçin **varolan özellik sayfası Ekle**ve ardından diğer sayfaları ekleyin. Ancak, tek bir ortak özellik sayfası kullanırsanız, ayarladığınız bir özelliğin sayfanın geçerli olduğu tüm yapılandırmalar için ayarlandığını ve IDE'nin, belirli bir özellik sayfasından hangi projelerin veya diğer özellik sayfalarının devraldığını göstermediğini unutmayın.
+Birden çok yapılandırma için tek bir özellik sayfası da oluşturabilirsiniz. Bunu yapmak için, her yapılandırma için bir özellik sayfası oluşturun, bunlardan biri için kısayol menüsünü açın, **varolan özellik sayfası ekle**' yi seçin ve ardından diğer sayfaları ekleyin. Ancak, tek bir ortak özellik sayfası kullanırsanız, ayarladığınız bir özelliğin sayfanın geçerli olduğu tüm yapılandırmalar için ayarlandığını ve IDE'nin, belirli bir özellik sayfasından hangi projelerin veya diğer özellik sayfalarının devraldığını göstermediğini unutmayın.
 
-Birçok projesi olacak büyük çözümlerde, çözüm düzeyinde bir özellik sayfası oluşturulması yararlı olabilir. Çözüme bir proje eklediğinizde, kullanın **özellik Yöneticisi** o özellik sayfasını projeye eklemek için. Proje düzeyinde gerek duyulursa, projeye özgü değerleri ayarlamak için yeni bir özellik sayfası ekleyebilirsiniz.
+Birçok projesi olacak büyük çözümlerde, çözüm düzeyinde bir özellik sayfası oluşturulması yararlı olabilir. Çözüme bir proje eklediğinizde, bu özellik sayfasını projeye eklemek için **Özellik Yöneticisi** kullanın. Proje düzeyinde gerek duyulursa, projeye özgü değerleri ayarlamak için yeni bir özellik sayfası ekleyebilirsiniz.
 
 > [!IMPORTANT]
 > .props dosyası bir proje öğesi olarak oluşturulmadığından, varsayılan olarak kaynak denetiminde yer almaz. Dosyayı kaynak denetimine dahil etmek istiyorsanız bir çözüm öğesi olarak el ile ekleyebilirsiniz.
 
 #### <a name="to-create-a-property-sheet"></a>Bir özellik sayfası oluşturmak için
 
-1. Menü çubuğunda, **görünümü**, **özellik Yöneticisi**. **Özellik Yöneticisi** açılır.
+1. Menü çubuğunda**Özellik Yöneticisi** **görüntüle** > ' yi seçin veya**diğer Windows** > **Özellik Yöneticisi** **görüntüleyin** > . **Özellik Yöneticisi** açılır.
 
-2. Özellik sayfasının kapsamını tanımlamak için, geçerli olduğu öğeyi seçin. Bu, belirli bir yapılandırma veya başka bir özellik sayfası olabilir. Bu öğe için kısayol menüsünü açın ve ardından **yeni proje özelliği Sayfası Ekle**. Bir ad ve konum belirtin.
+2. Özellik sayfasının kapsamını tanımlamak için, geçerli olduğu öğeyi seçin. Bu, belirli bir yapılandırma veya başka bir özellik sayfası olabilir. Bu öğe için kısayol menüsünü açın ve **Yeni proje özellik sayfası ekle**' yi seçin. Bir ad ve konum belirtin.
 
-3. İçinde **özellik Yöneticisi**, yeni özellik sayfasını açın ve sonra eklemek istediğiniz özellikleri ayarlayın.
+3. **Özellik Yöneticisi**' de, yeni özellik sayfasını açın ve dahil etmek istediğiniz özellikleri ayarlayın.

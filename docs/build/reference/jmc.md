@@ -1,46 +1,46 @@
 ---
-title: / JMC (yalnızca kendi kodum'hata ayıklama)
+title: /JMC (Yalnızca Kendi Kodum’da hata ayıklama)
 ms.date: 08/20/2018
 f1_keywords:
-- /JMC
+- VC.Project.VCCLCompilerTool.SupportJustMyCode
 helpviewer_keywords:
 - /JMC compiler option [C++]
 - Just my code [C++]
 - -JMC compiler option [C++]
 - User code, debugging
 - JMC compiler option [C++]
-ms.openlocfilehash: c107ad7107d2a65ed19719933aa127c0557916ce
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 90fcad40b3322f8a8ae7ffc58875c2850f143138
+ms.sourcegitcommit: 0867d648e0955ebad7260b5fbebfd6cd4d58f3c7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62291645"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68341003"
 ---
-# <a name="jmc-just-my-code-debugging"></a>/ JMC (yalnızca kendi kodum'hata ayıklama)
+# <a name="jmc-just-my-code-debugging"></a>/JMC (Yalnızca Kendi Kodum’da hata ayıklama)
 
-Yerel için derleyici desteği belirtir *yalnızca kendi kodum* Visual Studio hata ayıklayıcıda hata ayıklama. Bu seçenek izin sistemi, çerçeve, kitaplık ve diğer kullanıcı olmayan çağrılardan üzerinden adımla ve bu çağrıları çağrı yığını penceresinde daraltmak için Visual Studio kullanıcı ayarlarını destekler. **/JMC** Visual Studio 2017 sürüm 15,8 başlangıç derleyici seçeneği kullanılabilir.
+Visual Studio hata ayıklayıcısında yerel *yalnızca kendi kodum* hata ayıklama için derleyici desteğini belirtir. Bu seçenek, Visual Studio 'Nun sistem, çerçeve, kitaplık ve diğer kullanıcı olmayan çağrılar üzerinde ilermasına ve çağrı yığını penceresinde bu çağrıları daraltmaya izin veren kullanıcı ayarlarını destekler. **/JMC** derleyici seçeneği, Visual Studio 2017 sürüm 15,8 ' den itibaren kullanılabilir.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **/ JMC**\[**-**]
+> **/JMC**\[] **-**
 
 ## <a name="remarks"></a>Açıklamalar
 
-Visual Studio [yalnızca kendi kodum](/visualstudio/debugger/just-my-code) ayarları, Visual Studio hata ayıklayıcısını sistem, çerçeve, kitaplık ve diğer kullanıcı olmayan çağrılardan adımları belirtin. **/JMC** derleyici seçeneği, yalnızca kendi kodum yerel C++ kodunda hata ayıklama desteği sağlar. Zaman **/JMC** olan etkin, derleyici bir yardımcı işlev çağrıları ekler `__CheckForDebuggerJustMyCode`, işlev giriş. Visual Studio hata ayıklayıcısı yalnızca kendi kodum adım işlemleri destekleyen kancaları yardımcı işlevini sağlar. Visual Studio hata ayıklayıcısı, menü çubuğunda, yalnızca kendi kodum etkinleştirmeyi tercih **Araçları** > **seçenekleri**ve ardından bir seçenek kümesinde **hata ayıklama**  >  **Genel** > **yalnızca kendi kodumu etkinleştir**.
+Visual Studio [yalnızca kendi kodum](/visualstudio/debugger/just-my-code) ayarları, Visual Studio hata ayıklayıcı 'nın sistem, çerçeve, kitaplık ve diğer kullanıcı olmayan çağrılar üzerinde adımların yapılıp yapılmayacağını belirtir. **/JMC** derleyici seçeneği, yerel C++ kodunuzda yalnızca kendi kodum hata ayıklama desteğini sağlar. **/JMC** etkinleştirildiğinde, derleyici, işlev giriş bölümündeki bir yardımcı işleve `__CheckForDebuggerJustMyCode`çağrılar ekler. Yardımcı işlevi, Visual Studio hata ayıklayıcısı Yalnızca kendi kodum adım işlemlerini destekleyen kancalar sağlar. Visual Studio hata ayıklayıcıda yalnızca kendi kodum etkinleştirmek için, menü çubuğunda **Araçlar** > **Seçenekler**' i seçin ve ardından**genel** > **etkinleştirme yalnızca kendi kodum** **hata ayıklama** > seçeneğini belirleyin.
 
-**/JMC** seçeneği gerektirir kodunuzu C çalışma zamanı kitaplığı (sağlayan CRT için), bağlantıları `__CheckForDebuggerJustMyCode` yardımcı işlevi. Projeniz için CRT bağlanmazsa, bağlayıcı hatası görebilirsiniz **LNK2019: çözümlenmemiş dış sembol __CheckForDebuggerJustMyCode**. Bu hatayı gidermek için bağlantı için CRT veya devre dışı **/JMC** seçeneği.
+**/JMC** seçeneği, kodunuzun `__CheckForDebuggerJustMyCode` yardımcı işlevini sağlayan C çalışma zamanı kitaplığı (CRT) ile bağlantı kurulmasını gerektirir. Projeniz CRT 'a bağlantı içermiyorsa, bağlayıcı hatası **LNK2019: çözülmemiş dış sembol __Checkfordebuggeryatmycode**' u görebilirsiniz. Bu hatayı çözmek için, CRT 'ya bağlantı ya da **/JMC** seçeneğini devre dışı bırakın.
 
-Varsayılan olarak, **/JMC** derleyici seçeneği kapalıdır. Ancak, bu seçenek Visual Studio 2017 sürüm 15,8 başlangıç çoğu Visual Studio Proje şablonları etkinleştirilir. Açıkça bu seçeneği devre dışı bırakma, **/JMC-** komut satırı seçeneği. Visual Studio'da proje özellik sayfaları iletişim kutusunu açmak ve değiştirmek **yalnızca My Code hata ayıklama desteği** özelliğinde **yapılandırma özellikleri** > **C/C++**  >  **Genel** özellik sayfasında **Hayır**.
+Varsayılan olarak, **/JMC** derleyici seçeneği kapalıdır. Ancak, Visual Studio 2017 sürüm 15,8 ' den itibaren bu seçenek çoğu Visual Studio proje şablonlarında etkinleştirilmiştir. Bu seçeneği açıkça devre dışı bırakmak için komut satırındaki **/JMC-** seçeneğini kullanın. Visual Studio 'da proje özellik sayfaları iletişim kutusunu açın ve **yapılandırma özellikleri** >  > **C/C++** **genel** özellik sayfasındaki **support yalnızca kendi kodum hata ayıklama** özelliğini **Hayır**.
 
-Daha fazla bilgi için bkz. [C++ Yalnızca benim kodum](/visualstudio/debugger/just-my-code#BKMK_C___Just_My_Code) içinde [yalnızca kendi kodum, Visual Studio kullanarak kullanıcı kodunda hata ayıklama belirtin](/visualstudio/debugger/just-my-code)ve Visual C++ Team Blog gönderisinde [Duyurusu C++ yalnızca kendi kodum Visual Studio'da Adımlama](https://blogs.msdn.microsoft.com/vcblog/2018/06/29/announcing-jmc-stepping-in-visual-studio/).
+Daha fazla bilgi için bkz [ C++ . yalnızca kendi kodum](/visualstudio/debugger/just-my-code#BKMK_C___Just_My_Code) Visual Studio 'da [yalnızca kendi kodum kullanarak yalnızca kullanıcı kodunda hata ayıklama yapılıp yapılmayacağını belirtme](/visualstudio/debugger/just-my-code)ve Visual C++ Team blog gönderisi Visual [Studio C++ 'da yalnızca kendi kodum adımlanıyor](https://blogs.msdn.microsoft.com/vcblog/2018/06/29/announcing-jmc-stepping-in-visual-studio/).
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
+1. Projenin **Özellik sayfaları** iletişim kutusunu açın. Ayrıntılar için bkz. [Visual C++ Studio 'da derleyici ve derleme özelliklerini ayarlama](../working-with-project-properties.md).
 
-1. Seçin **yapılandırma özellikleri** > **C/C++** > **genel** özellik sayfası.
+1. **Yapılandırma özellikleri** > **C/C++** genel > Özellik sayfası ' nı seçin.
 
-1. Değiştirme **yalnızca My Code hata ayıklama desteği** özelliği.
+1. **Destek yalnızca kendi kodum hata ayıklama** özelliğini değiştirin.
 
 ### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için
 
