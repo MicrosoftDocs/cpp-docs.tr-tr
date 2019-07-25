@@ -6,16 +6,16 @@ f1_keywords:
 helpviewer_keywords:
 - add_rvalue_reference Class
 ms.assetid: 76b0cb7c-1031-45d0-b409-f03ab0297580
-ms.openlocfilehash: e5e658f16657c0021b78175e87d122a3accd11eb
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 64694f2428c1dd536df4d242a17f3f011cfb290c
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62411181"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68456545"
 ---
 # <a name="addrvaluereference-class"></a>add_rvalue_reference Sınıfı
 
-Bir nesne veya işlev türü ise, bir şablon parametresi rvalue başvuru türünü oluşturur. Aksi takdirde, başvuru daraltma semantiği, şablon parametresi ile aynı türdür.
+Bir nesne veya işlev türü ise, şablon parametresinin bir rvalue başvuru türünü oluşturur. Aksi takdirde, başvuru daraltma semantiklerinden dolayı tür, şablon parametresiyle aynıdır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -29,18 +29,18 @@ using add_rvalue_reference_t = typename add_rvalue_reference<T>::type;
 
 ### <a name="parameters"></a>Parametreler
 
-*T*<br/>
+*ŞI*\
 Değiştirilecek tür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-`add_rvalue_reference` Sınıfında adında bir üye `type`, şablon parametresi için bir rvalue başvuru türü için bir diğer ad olduğu *T*. Nesne olmayan ve işlev olmayan türler için başvuru daraltma semantiği anlamına *T*, `T&&` olduğu bir *T*. Örneğin, *T* bir lvalue başvuru türü `add_rvalue_reference<T>::type` bir rvalue başvurusunu lvalue başvuru türü.
+Sınıfı adlı `type`bir üyeye sahiptir ve bu, T Şablon parametresine bir rvalue başvurusu türü için diğer addır.  `add_rvalue_reference` Başvuru daraltma semantiğinin anlamı, nesne olmayan ve işlev olmayan tür *t* `T&&` için bir *t*. Örneğin, *T* bir lvalue başvuru türü olduğunda, `add_rvalue_reference<T>::type` bir rvalue başvurusu değil, lvalue başvuru türüdür.
 
-Kolaylık sağlamak için \<type_traits > Yardımcısı şablon tanımlayan `add_rvalue_reference_t`, bu diğer adları `type` üyesi `add_rvalue_reference`.
+Kolaylık sağlaması \<için, type_traits >, öğesinin `type` `add_rvalue_reference`üyesi olan `add_rvalue_reference_t`bir yardımcı şablonu tanımlar.
 
 ## <a name="example"></a>Örnek
 
-Bu kod örneği static_assert, rvalue başvuru türleri kullanılarak nasıl oluşturulduğunu göstermek için kullanır `add_rvalue_reference` ve `add_rvalue_reference_t`ve nasıl sonucunu `add_rvalue_reference` bir lvalue başvuru türü bir rvalue başvurusu değil, ancak lvalue başvuru türüne daraltır.
+Bu kod örneği, rvalue başvuru türlerinin ve `add_rvalue_reference` `add_rvalue_reference_t`kullanılarak nasıl oluşturulduğunu `add_rvalue_reference` ve bir lvalue başvuru türü üzerindeki sonucunun bir rvalue başvurusu değil, lvalue başvuru türüne ne kadar daraltılaabileceğini göstermek için static_assert kullanır.
 
 ```cpp
 // ex_add_rvalue_reference.cpp
@@ -71,12 +71,12 @@ All static_assert tests of add_rvalue_reference passed.
 
 ## <a name="requirements"></a>Gereksinimler
 
-Başlık: \<type_traits >
+Üst bilgi \<: type_traits >
 
-Namespace: std
+Ad alanı: std
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[<type_traits>](../standard-library/type-traits.md)<br/>
-[add_lvalue_reference Sınıfı](../standard-library/add-lvalue-reference-class.md)<br/>
-[is_rvalue_reference Sınıfı](../standard-library/is-rvalue-reference-class.md)<br/>
+[< type_traits >](../standard-library/type-traits.md)\
+[add_lvalue_reference sınıfı](../standard-library/add-lvalue-reference-class.md)\
+[is_rvalue_reference Sınıfı](../standard-library/is-rvalue-reference-class.md)

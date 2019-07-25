@@ -11,12 +11,12 @@ f1_keywords:
 - fstream/std::wifstream
 - fstream/std::wofstream
 ms.assetid: 8dddef2d-7f17-42a6-ba08-6f6f20597d23
-ms.openlocfilehash: d5a4b0e2d671bb787501767d4321bd3ed61deb88
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 6144826254c6acc509db2c0285b21811fe37bd4e
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62159545"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68454049"
 ---
 # <a name="ltfstreamgt-typedefs"></a>&lt;fstream&gt; tür tanımları
 
@@ -26,9 +26,9 @@ ms.locfileid: "62159545"
 |[ofstream](#ofstream)|[wfilebuf](#wfilebuf)|[wfstream](#wfstream)|
 |[wifstream](#wifstream)|[wofstream](#wofstream)|
 
-## <a name="filebuf"></a>  filebuf
+## <a name="filebuf"></a>filebuf
 
-Bir tür `basic_filebuf` üzerinde özelleştirilmiş **char** şablon parametreleri.
+Char şablon `basic_filebuf` parametreleri üzerinde  özelleştirilmiş bir tür.
 
 ```cpp
 typedef basic_filebuf<char, char_traits<char>> filebuf;
@@ -36,11 +36,11 @@ typedef basic_filebuf<char, char_traits<char>> filebuf;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon sınıfı için bir eşanlamlı türüdür [basic_filebuf](../standard-library/basic-filebuf-class.md), türü öğeler için özelleştirilmiş **char** varsayılan karakter nitelikleri ile.
+Tür, varsayılan karakter nitelikleri ile **char** türündeki öğeler için özelleştirilmiş olan şablon sınıfı [basic_filebuf](../standard-library/basic-filebuf-class.md)için bir eş anlamlıdır.
 
-## <a name="fstream"></a>  fstream
+## <a name="fstream"></a>fstream
 
-Bir tür `basic_fstream` üzerinde özelleştirilmiş **char** şablon parametreleri.
+Char şablon `basic_fstream` parametreleri üzerinde  özelleştirilmiş bir tür.
 
 ```cpp
 typedef basic_fstream<char, char_traits<char>> fstream;
@@ -48,13 +48,13 @@ typedef basic_fstream<char, char_traits<char>> fstream;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon sınıfı için bir eşanlamlı türüdür [basic_fstream](../standard-library/basic-fstream-class.md), türü öğeler için özelleştirilmiş **char** varsayılan karakter nitelikleri ile.
+Tür, varsayılan karakter nitelikleri ile **char** türündeki öğeler için özelleştirilmiş olan şablon sınıfı [basic_fstream](../standard-library/basic-fstream-class.md)için bir eş anlamlıdır.
 
-## <a name="ifstream"></a>  ifstream
+## <a name="ifstream"></a>ifstream
 
-Tek baytlı karakter verilerini bir dosyadan seri olarak okumak için kullanılacak bir akışı tanımlar. `ifstream` Şablon sınıfı uzmanlaşmış bir TypeDef `basic_ifstream` için **char**.
+Bir dosyadan tek baytlık karakter verilerini okumak için kullanılacak bir akış tanımlar. `ifstream`, `basic_ifstream` **char**için şablon sınıfını özelleştirtiren bir typedef.
 
-Ayrıca `wifstream`, uzmanlaşmış bir typedef `basic_ifstream` okunacak **wchar_t** çift-geniş karakter. Daha fazla bilgi için [wifstream](../standard-library/fstream-typedefs.md#wifstream).
+Ayrıca, `wifstream` **wchar_t** çift geniş karakterleri okumak `basic_ifstream` için uzmanlaşmış bir typedef de vardır. Daha fazla bilgi için bkz. [wifstream](../standard-library/fstream-typedefs.md#wifstream).
 
 ```cpp
 typedef basic_ifstream<char, char_traits<char>> ifstream;
@@ -62,7 +62,7 @@ typedef basic_ifstream<char, char_traits<char>> ifstream;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon sınıfı için bir eşanlamlı türüdür [basic_ifstream](../standard-library/basic-ifstream-class.md), char türü ile varsayılan karakter nitelikleri öğeler için özelleştirilmiş. Bir örnek verilmiştir
+Tür, varsayılan karakter nitelikleri ile char türündeki öğeler için özelleştirilmiş olan şablon sınıfı [basic_ifstream](../standard-library/basic-ifstream-class.md)için bir eş anlamlıdır. Örnek,
 
 ```cpp
 using namespace std;
@@ -76,9 +76,9 @@ if (!infile.bad())
 }
 ```
 
-## <a name="ofstream"></a>  ofstream
+## <a name="ofstream"></a>ofstream
 
-Bir tür `basic_ofstream` üzerinde özelleştirilmiş **char** şablon parametreleri.
+Char şablon `basic_ofstream` parametreleri üzerinde  özelleştirilmiş bir tür.
 
 ```cpp
 typedef basic_ofstream<char, char_traits<char>> ofstream;
@@ -86,11 +86,11 @@ typedef basic_ofstream<char, char_traits<char>> ofstream;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon sınıfı için bir eşanlamlı türüdür [basic_ofstream](../standard-library/basic-ofstream-class.md), türü öğeler için özelleştirilmiş **char** varsayılan karakter nitelikleri ile.
+Tür, varsayılan karakter nitelikleri ile **char** türündeki öğeler için özelleştirilmiş olan şablon sınıfı [basic_ofstream](../standard-library/basic-ofstream-class.md)için bir eş anlamlıdır.
 
-## <a name="wfstream"></a>  wfstream
+## <a name="wfstream"></a>wfstream
 
-Bir tür `basic_fstream` üzerinde özelleştirilmiş **wchar_t** şablon parametreleri.
+Wchar_t şablon `basic_fstream` parametrelerine özel  bir tür.
 
 ```cpp
 typedef basic_fstream<wchar_t, char_traits<wchar_t>> wfstream;
@@ -98,11 +98,11 @@ typedef basic_fstream<wchar_t, char_traits<wchar_t>> wfstream;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon sınıfı için bir eşanlamlı türüdür [basic_fstream](../standard-library/basic-fstream-class.md), türü öğeler için özelleştirilmiş **wchar_t** varsayılan karakter nitelikleri ile.
+Tür, varsayılan karakter nitelikleri ile **wchar_t** türü öğeler için özelleştirilmiş olan şablon sınıfı [basic_fstream](../standard-library/basic-fstream-class.md)için bir eş anlamlıdır.
 
-## <a name="wifstream"></a>  wifstream
+## <a name="wifstream"></a>wifstream
 
-Bir tür `basic_ifstream` üzerinde özelleştirilmiş **wchar_t** şablon parametreleri.
+Wchar_t şablon `basic_ifstream` parametrelerine özel  bir tür.
 
 ```cpp
 typedef basic_ifstream<wchar_t, char_traits<wchar_t>> wifstream;
@@ -110,11 +110,11 @@ typedef basic_ifstream<wchar_t, char_traits<wchar_t>> wifstream;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon sınıfı için bir eşanlamlı türüdür [basic_ifstream](../standard-library/basic-ifstream-class.md), türü öğeler için özelleştirilmiş **wchar_t** varsayılan karakter nitelikleri ile.
+Tür, varsayılan karakter nitelikleri ile **wchar_t** türü öğeler için özelleştirilmiş olan şablon sınıfı [basic_ifstream](../standard-library/basic-ifstream-class.md)için bir eş anlamlıdır.
 
-## <a name="wofstream"></a>  wofstream
+## <a name="wofstream"></a>wofstream
 
-Bir tür `basic_ofstream` üzerinde özelleştirilmiş **wchar_t** şablon parametreleri.
+Wchar_t şablon `basic_ofstream` parametrelerine özel  bir tür.
 
 ```cpp
 typedef basic_ofstream<wchar_t, char_traits<wchar_t>> wofstream;
@@ -122,11 +122,11 @@ typedef basic_ofstream<wchar_t, char_traits<wchar_t>> wofstream;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon sınıfı için bir eşanlamlı türüdür [basic_ofstream](../standard-library/basic-ofstream-class.md), türü öğeler için özelleştirilmiş **wchar_t** varsayılan karakter nitelikleri ile.
+Tür, varsayılan karakter nitelikleri ile **wchar_t** türü öğeler için özelleştirilmiş olan şablon sınıfı [basic_ofstream](../standard-library/basic-ofstream-class.md)için bir eş anlamlıdır.
 
-## <a name="wfilebuf"></a>  wfilebuf
+## <a name="wfilebuf"></a>wfilebuf
 
-Bir tür `basic_filebuf` üzerinde özelleştirilmiş **wchar_t** şablon parametreleri.
+Wchar_t şablon `basic_filebuf` parametrelerine özel  bir tür.
 
 ```cpp
 typedef basic_filebuf<wchar_t, char_traits<wchar_t>> wfilebuf;
@@ -134,8 +134,8 @@ typedef basic_filebuf<wchar_t, char_traits<wchar_t>> wfilebuf;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon sınıfı için bir eşanlamlı türüdür [basic_filebuf](../standard-library/basic-filebuf-class.md), türü öğeler için özelleştirilmiş **wchar_t** varsayılan karakter nitelikleri ile.
+Tür, varsayılan karakter nitelikleri ile **wchar_t** türü öğeler için özelleştirilmiş olan şablon sınıfı [basic_filebuf](../standard-library/basic-filebuf-class.md)için bir eş anlamlıdır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[\<fstream >](../standard-library/fstream.md)<br/>
+[\<fstream >](../standard-library/fstream.md)

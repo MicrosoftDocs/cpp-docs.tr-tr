@@ -6,16 +6,16 @@ f1_keywords:
 helpviewer_keywords:
 - is_trivially_copy_constructible
 ms.assetid: 4274cef5-afdd-4f2d-bc83-7562e7944ddf
-ms.openlocfilehash: aa6d6b19ae2bd5d6967c57db61c5697c0c6153e9
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f8c4026da424e77b57555dd4c342c9ac7a386591
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62413443"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68447987"
 ---
 # <a name="istriviallycopyconstructible-class"></a>is_trivially_copy_constructible Sınıfı
 
-Önemsiz bir kopya Oluşturucu türüne sahip olmadığını sınar.
+Türün Önemsiz kopya oluşturucusuna sahip olup olmadığını sınar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -26,21 +26,21 @@ struct is_trivially_copy_constructible;
 
 ### <a name="parameters"></a>Parametreler
 
-*T*<br/>
+*ŞI*\
 Sorgulanacak tür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Karşılaştırmasının bir örneği true tutan türü *T* false tuttuğu Önemsiz kopya Oluşturucu, aksi takdirde sahip bir sınıftır.
+Tür *T* bir örneği Önemsiz kopya oluşturucusuna sahip bir sınıf ise true, aksi takdirde false barındırır.
 
-Bir sınıf için kopya Oluşturucu *T* örtük olarak bildirilmiş, sınıf gereksizse, *T* sanal işlevler veya sanal tabanları olan sınıfın tüm doğrudan tabanları olmayan *T* sahip Önemsiz kopya oluşturucuları, tüm statik olmayan veri üyeleri sınıf türünün sınıflarını Önemsiz kopya oluşturucuları olması ve dizi sınıf türünde tüm statik olmayan veri üyelerinin sınıflarını Önemsiz kopya oluşturucuları olması.
+*Sınıf t* için bir kopya Oluşturucu örtük olarak bildirilirse, *t* sınıfı, sanal işlevleri veya sanal tabanlara sahip değildir, t sınıfının tüm doğrudan temellerine, tüm statik olmayan veri üyelerinin sınıfları, Önemsiz kopya *oluşturucuları vardır.* sınıf türünün Önemsiz kopya oluşturucuları vardır ve sınıf dizisi türündeki tüm statik olmayan veri üyelerinin sınıfları Önemsiz kopya oluşturucuları vardır.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** \<type_traits >
+**Üst bilgi:** \<type_traits >
 
-**Namespace:** std
+**Ad alanı:** std
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[<type_traits>](../standard-library/type-traits.md)<br/>
+[<type_traits>](../standard-library/type-traits.md)

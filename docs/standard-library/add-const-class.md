@@ -7,16 +7,16 @@ helpviewer_keywords:
 - add_const class
 - add_const
 ms.assetid: 1262a1eb-8c9c-4dd6-9f43-88ba280182f1
-ms.openlocfilehash: dc457fd4efba538e96200f7f42f84a73fc1b5228
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 6f27a8e4bc0bea3a469d46a56e8885dabe5894df
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62411246"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68456576"
 ---
 # <a name="addconst-class"></a>add_const Sınıfı
 
-Const tür yapar.
+Türünden const türü yapar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -27,12 +27,12 @@ struct add_const;
 
 ### <a name="parameters"></a>Parametreler
 
-*Ty*<br/>
+*Kalite*\
 Değiştirilecek tür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Tür değiştiricinin bir örneği bir değişiklik-tür tutar *Ty* varsa *Ty* bir başvuru, bir işlev veya bir const nitelenmiş türde olduğundan, aksi takdirde `const Ty`.
+Tür değiştiricisinin bir örneği, *Ty* bir başvuru, bir işlev veya  const nitelikli bir tür ise, aksi durumda `const Ty`bir değiştirilmiş türü tutar.
 
 ## <a name="example"></a>Örnek
 
@@ -60,11 +60,11 @@ add_const<int> == int
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** \<type_traits >
+**Üst bilgi:** \<type_traits >
 
-**Namespace:** std
+**Ad alanı:** std
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[<type_traits>](../standard-library/type-traits.md)<br/>
-[remove_const Sınıfı](../standard-library/remove-const-class.md)<br/>
+[< type_traits >](../standard-library/type-traits.md)\
+[remove_const Sınıfı](../standard-library/remove-const-class.md)

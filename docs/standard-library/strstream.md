@@ -6,29 +6,29 @@ f1_keywords:
 helpviewer_keywords:
 - strstream header
 ms.assetid: eaa9d0d4-d217-4f28-8a68-9b9ad7b1c0f5
-ms.openlocfilehash: 212223f98db09097e596fc6fe2ddd31bbe16e6b7
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.openlocfilehash: ecf8499a07f03c00588e7b7fd83b8d41a23e8e7a
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68245365"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68459092"
 ---
 # <a name="ltstrstreamgt"></a>&lt;strstream&gt;
 
-Ayrılmış bir dizi içinde depolanan dizileri iostreams işlemleri destekleyen çeşitli sınıfları tanımlar **char** nesne. Tür dizilerini kolayca C dizeleri gelen ve giden dönüştürülür.
+**Char** nesnesinin ayrılmış dizisinde depolanan diziler üzerinde Iostreams işlemlerini destekleyen birkaç sınıfı tanımlar. Bu tür diziler kolayca C dizelerine ve bu dizeden dönüştürülür.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** \<strstream >
+**Üst bilgi:** \<strstream >
 
-**Namespace:** std
+**Ad alanı:** std
 
 ## <a name="remarks"></a>Açıklamalar
 
-Türündeki nesneler `strstream` ile çalışmak `char` *, C dizeleri olan. Kullanım [ \<sstream >](../standard-library/sstream.md) türü nesnelerle çalışmayı [basic_string](../standard-library/basic-string-class.md).
+Türündeki `strstream` nesneler, C dizeleri `char` olan * ile çalışır. [Basic_string](../standard-library/basic-string-class.md)türündeki nesnelerle çalışmak için [ \<sstream >](../standard-library/sstream.md) kullanın.
 
 > [!NOTE]
-> Sınıflarda \<strstream > kullanım dışı bırakılmıştır. Sınıflarda kullanmayı \<sstream > bunun yerine.
+> \<Strstream > sınıfları kullanım dışıdır. Yerine \<sstream > sınıflarını kullanmayı düşünün.
 
 ## <a name="members"></a>Üyeler
 
@@ -36,10 +36,10 @@ Türündeki nesneler `strstream` ile çalışmak `char` *, C dizeleri olan. Kull
 
 |||
 |-|-|
-|[strstreambuf Sınıfı](../standard-library/strstreambuf-class.md)|Sınıfı bir dizi öğe depolanan gelen ve giden öğeleri iletimini denetleyen bir akış arabelleğinin açıklar bir **char** dizi nesnesi.|
-|[istrstream Sınıfı](../standard-library/istrstream-class.md)|Öğelerin ayıklama denetleyen bir nesne ve bir akış arabelleğinin sınıfın kodlanmış nesnelerden sınıfı tanımlar [strstreambuf](../standard-library/strstreambuf-class.md).|
-|[ostrstream Sınıfı](../standard-library/ostrstream-class.md)|Sınıfı bir akış arabelleğine ekleme öğelerin denetleyen bir nesne ve kodlanmış nesneleri sınıfı tanımlar [strstreambuf](../standard-library/strstreambuf-class.md).|
-|[strstream Sınıfı](../standard-library/strstream-class.md)|Ekleme ve çıkarma öğelerin denetleyen bir nesne ve bir akış arabelleğinin sınıfı kullanarak kodlanmış nesne sınıfı tanımlar [strstreambuf](../standard-library/strstreambuf-class.md).|
+|[strstreambuf Sınıfı](../standard-library/strstreambuf-class.md)|Sınıfı, bir **char** dizi nesnesinde depolanan bir öğe dizisine ve öğesinden öğelerin aktarılmasını denetleyen bir akış arabelleği tanımlar.|
+|[istrstream Sınıfı](../standard-library/istrstream-class.md)|Sınıfı, [strstreambuffer](../standard-library/strstreambuf-class.md)sınıfının Akış arabelleğindeki öğelerin ve kodlanmış nesnelerin ayıklanmasını denetleyen bir nesneyi tanımlar.|
+|[ostrstream Sınıfı](../standard-library/ostrstream-class.md)|Sınıfı, öğeleri ve kodlanmış nesneleri [strstreambuffer](../standard-library/strstreambuf-class.md)sınıfının Akış arabelleğine eklemeyi denetleyen bir nesneyi tanımlar.|
+|[strstream Sınıfı](../standard-library/strstream-class.md)|Sınıfı, öğeleri ekleme ve ayıklamayı ve [strstreambuffer](../standard-library/strstreambuf-class.md)sınıfının akış arabelleğini kullanarak kodlanmış nesneleri denetleyen bir nesneyi tanımlar.|
 
 ### <a name="functions"></a>İşlevler
 
@@ -51,8 +51,8 @@ int pcount();
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[\<strstream >](../standard-library/strstream.md)<br/>
-[Üstbilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md)<br/>
-[C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
-[iostream Programlaması](../standard-library/iostream-programming.md)<br/>
-[iostreams Kuralları](../standard-library/iostreams-conventions.md)<br/>
+[\<strstream >](../standard-library/strstream.md)\
+[Üst bilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md)\
+[C++ Standart kitaplıkta Iş parçacığı güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)\
+[iostream programlama](../standard-library/iostream-programming.md)\
+[iostreams Kuralları](../standard-library/iostreams-conventions.md)

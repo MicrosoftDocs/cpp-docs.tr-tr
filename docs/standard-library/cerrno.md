@@ -6,16 +6,16 @@ f1_keywords:
 helpviewer_keywords:
 - cerrno header
 ms.assetid: c618f95c-ad4b-4a6f-825b-8727322ec77a
-ms.openlocfilehash: 04c8fd66edc8a61c3964241e41ef7ef1b6c88752
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.openlocfilehash: 1186a1e3c58c34de53f7a9835eaf9fd188593301
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68244977"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68455504"
 ---
 # <a name="ltcerrnogt"></a>&lt;cerrno&gt;
 
-Standart C Kitaplığı üstbilgisi içerir \<errno.h > ve ilişkili adlar ekler `std` ad alanı. Bu üstbilginin dahil sağlar, standart C Kitaplığı üstbilgisinde harici bağlantı kullanılarak bildirilen adların bildirilir `std` ad alanı.
+C standart kitaplığı üst bilgisini \<errno. h > içerir ve ilişkili adları `std` ad alanına ekler. Bu üst bilgiyi dahil etmek, C standart kitaplığı üstbilgisinde harici bağlantı kullanılarak belirtilen adların `std` ad alanında bildirilmesini sağlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -109,10 +109,10 @@ Standart C Kitaplığı üstbilgisi içerir \<errno.h > ve ilişkili adlar ekler
 
 ### <a name="remarks"></a>Açıklamalar
 
-Burada makroları POSIX standardı tarafından tanımlanır.
+Buradaki makrolar, POSIX standardı tarafından tanımlanmıştır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Üstbilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md)<br/>
-[C++ Standart Kitaplığına Genel Bakış](../standard-library/cpp-standard-library-overview.md)<br/>
-[C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
+[Üst bilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md)\
+[C++Standart kitaplığa genel bakış](../standard-library/cpp-standard-library-overview.md)\
+[C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)

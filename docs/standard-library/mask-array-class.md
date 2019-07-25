@@ -6,26 +6,26 @@ f1_keywords:
 helpviewer_keywords:
 - mask_array class
 ms.assetid: c49bed6a-3000-4f39-bff6-cb9a453acb0b
-ms.openlocfilehash: 108c942bef33e44b515d46e953c9d99274e3ce8d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 9da5e3593288be02819330e11b60e306784054dc
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62412988"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68460146"
 ---
 # <a name="maskarray-class"></a>mask_array Sınıfı
 
-Üst valarrays kümeleridir destekler nesnelerin alt diziler arasındaki işlemleri sağlayarak bir Boole ifadesi ile belirtilen bir iç, ikincil bir şablon sınıfı.
+Alt küme dizileri arasında işlemler sağlayarak bir Boolean ifadesiyle belirtilen üst valarışın alt kümeleri olan nesneleri destekleyen dahili, yardımcı şablon sınıfı.
 
 ## <a name="syntax"></a>Sözdizimi
 
 ## <a name="remarks"></a>Açıklamalar
 
-Sınıfı bir nesneye bir başvuru depolayan nesneyi tanımlar `va` sınıfın [valarray](../standard-library/valarray-class.md)**\<türü >**, nesneyle birlikte `ba` sınıfın [ valarray\<bool >](../standard-library/valarray-bool-class.md), aralarından seçim yapabileceğiniz öğe dizisi açıklar `valarray<Type>` nesne.
+Sınıfı `va` , [valarray](../standard-library/valarray-class.md)**Type>\<** sınıfınınbirnesnesinebirbaşvurudepolayanbirnesneyitanımlar,bu,`ba` bir [valarray\<bool >](../standard-library/valarray-bool-class.md)sınıfının ve `valarray<Type>` nesneden seçilecek öğelerin sırası.
 
-Oluşturmak bir `mask_array<Type>` biçiminde bir ifade yazarak yalnızca nesne [va&#91;ba&#93;](../standard-library/valarray-class.md#op_at). Mask_array sınıfı üye işlevleri sonra karşılık gelen işlev imzası için tanımlanan gibi davranmasını `valarray<Type>`dışında yalnızca seçilen öğelerin sırası etkilenmez.
+Yalnızca `mask_array<Type>` [VA&#91;ba&#93;](../standard-library/valarray-class.md#op_at)biçimindeki bir ifade yazarak bir nesne oluşturursunuz. Mask_array sınıfının üye işlevleri, için `valarray<Type>`tanımlanan karşılık gelen işlev imzaları gibi davranır, ancak yalnızca seçili öğelerin sırası etkilenir.
 
-Dizi en çok oluşan `ba.size` öğeleri. Bir öğe *J* yalnızca dahildir **ba**[ *J*] geçerlidir. Bu nedenle, doğru öğeleri olduğundan kadar dizideki vardır `ba`. Varsa `I` en düşük doğru öğenin dizinidir `ba`, ardından **va**[ `I`] seçili dizideki öğe sıfır.
+Sıra, en çok `ba.size` öğeden oluşur. Yalnızca **ba**[ *J*] true olduğunda *J* öğesi dahil edilir. Bu nedenle, içinde `ba`doğru öğeler olduğundan, dizide birçok öğe vardır. ' De `ba`en düşük doğru öğenin dizinse, **VA**[ `I`] seçili dizideki öğe sıfırdır. `I`
 
 ## <a name="example"></a>Örnek
 
@@ -70,10 +70,10 @@ The modified operand valarray is:  (0 -1 2 -1 10 -1 10 -1 10 -1).
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** \<valarray >
+**Üst bilgi:** \<valarray >
 
-**Namespace:** std
+**Ad alanı:** std
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
+[C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)

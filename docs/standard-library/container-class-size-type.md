@@ -4,19 +4,19 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - size_type typedef
 ms.assetid: e02de8af-e175-45a2-b006-835814a40e68
-ms.openlocfilehash: 5d2bbd6f391b05053bda845022c1b12ba1e8bb80
-ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.openlocfilehash: 8c9319e94d1f01eb066280a69971eef5d900384f
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65221538"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68454495"
 ---
 # <a name="container-classsizetype"></a>Kapsayıcı Sınıfı::size_type
 
 > [!NOTE]
-> Bu konu Microsoft olan C++ kullanılan kapsayıcıları işlevsiz bir örnek olarak belgeleri C++ standart kitaplığı. Daha fazla bilgi için [C++ Standart Kitaplığı kapsayıcıları](../standard-library/stl-containers.md).
+> Bu konu, C++ standart kitaplıkta kullanılan C++ kapsayıcıların Işlevsel bir örneği olarak Microsoft belgelerimde yer almaktadır. Daha fazla bilgi için bkz [ C++ . standart kitaplık kapsayıcıları](../standard-library/stl-containers.md).
 
-Denetlenen bir dizi uzunluğunu temsil edebilen bir nesneyi tanımlar.
+Denetlenen herhangi bir dizinin uzunluğunu temsil eden bir nesne tanımlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -27,8 +27,8 @@ typedef T0 size_type;
 
 ## <a name="remarks"></a>Açıklamalar
 
-Açıklanmıştır belirtilmeyen türünün eşanlamlısı olarak burada `T0` (genellikle `Alloc::size_type`).
+Burada belirtilmeyen tür `T0` için bir eş anlamlı olarak açıklanmaktadır (genellikle `Alloc::size_type`).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Örnek Kapsayıcı Sınıfı](../standard-library/sample-container-class.md)<br/>
+[Örnek Kapsayıcı Sınıfı](../standard-library/sample-container-class.md)

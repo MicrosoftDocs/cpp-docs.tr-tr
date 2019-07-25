@@ -7,12 +7,12 @@ helpviewer_keywords:
 - extent class
 - extent
 ms.assetid: 6d16263d-90b2-4330-9ec7-b59ed898792d
-ms.openlocfilehash: 7463b424d15ee86f851b7d81953abf3fe1c98fee
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 0cd53ba8537e706a68ffdcf08df998108266ad20
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62393980"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68457787"
 ---
 # <a name="extent-class"></a>extent Sınıfı
 
@@ -27,15 +27,15 @@ struct extent;
 
 ### <a name="parameters"></a>Parametreler
 
-*Ty*<br/>
+*Kalite*\
 Sorgulanacak tür.
 
-*I*<br/>
-Dizi sorgu bağlanır.
+*KAYDEDEMİYORUM*\
+Sorguya bağlantılı dizi.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Varsa *Ty* en az bir dizi türü *miyim* boyutları türü sorgu tutan öğelerin sayısı tarafından belirtilen boyutta *miyim*. Varsa *Ty* sıralamasını bir dizi türü değilse veya küçüktür *miyim*, veya *miyim* sıfırdır ve *Ty* türü "Bilinmeyen bir dizi sınırı `U` ", 0 değeri türü sorgu tutar.
+*Ty* , en az *ı* boyutlu bir dizi türüdür, tür sorgusu *i*tarafından belirtilen boyuttaki öğelerin sayısını tutar. *Ty* bir dizi türü değilse veya derecesi *i*'den küçükse ya da *sıfır ise ve* *Ty* , "bilinmeyen sınırının `U`dizisi" ise tür sorgusu 0 değerini tutar.
 
 ## <a name="example"></a>Örnek
 
@@ -63,12 +63,12 @@ extent 1 == 10
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** \<type_traits >
+**Üst bilgi:** \<type_traits >
 
-**Namespace:** std
+**Ad alanı:** std
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[<type_traits>](../standard-library/type-traits.md)<br/>
-[remove_all_extents Sınıfı](../standard-library/remove-all-extents-class.md)<br/>
-[remove_extent Sınıfı](../standard-library/remove-extent-class.md)<br/>
+[< type_traits >](../standard-library/type-traits.md)\
+[remove_all_extents sınıfı](../standard-library/remove-all-extents-class.md)\
+[remove_extent Sınıfı](../standard-library/remove-extent-class.md)

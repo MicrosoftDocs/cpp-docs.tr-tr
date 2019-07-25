@@ -7,16 +7,16 @@ helpviewer_keywords:
 - is_polymorphic class
 - is_polymorphic
 ms.assetid: 4e1704db-d6f9-4154-a100-0ba02a373f20
-ms.openlocfilehash: 8d9846f03db60cdad88fccc04ba520eeb935dc33
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 662d68d13e076733e9923d0fad7e9272cd01b559
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62413586"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68455718"
 ---
 # <a name="ispolymorphic-class"></a>is_polymorphic Sınıfı
 
-Bir sanal işlev türünde olmadığını sınar.
+Türün bir sanal işlevi varsa sınar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -27,12 +27,12 @@ struct is_polymorphic;
 
 ### <a name="parameters"></a>Parametreler
 
-*Ty*<br/>
+*Kalite*\
 Sorgulanacak tür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Karşılaştırmasının bir örneği true tutan türü *Ty* bildirir ya da false başvuruysa bir sanal işlev, aksi takdirde devralan bir sınıftır.
+Tür değeri, bir sanal işlevi bildiren veya devralan bir sınıf *ise,* yanlış bir değer içeriyorsa tür belirtiminin bir örneği true olarak tutulur.
 
 ## <a name="example"></a>Örnek
 
@@ -86,11 +86,11 @@ is_polymorphic<throws> == true
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** \<type_traits >
+**Üst bilgi:** \<type_traits >
 
-**Namespace:** std
+**Ad alanı:** std
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[<type_traits>](../standard-library/type-traits.md)<br/>
-[is_abstract Sınıfı](../standard-library/is-abstract-class.md)<br/>
+[< type_traits >](../standard-library/type-traits.md)\
+[is_abstract Sınıfı](../standard-library/is-abstract-class.md)

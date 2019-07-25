@@ -21,16 +21,16 @@ helpviewer_keywords:
 - std::student_t_distribution [C++], max
 - std::student_t_distribution [C++], param_type
 ms.assetid: 87b48127-9311-4d07-95df-833ed46bf0b1
-ms.openlocfilehash: 4c63f37c07a56144fdd18531af5e8f9fbdac656a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 42e7337a2a0803af51e7dd11f53c482dbfc2aa0f
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62412260"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68458998"
 ---
 # <a name="studenttdistribution-class"></a>student_t_distribution Sınıfı
 
-Bir öğrenci oluşturur *t*-dağıtım.
+Öğrenci 'nin *t*dağılımını üretir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -64,23 +64,23 @@ public:
 
 ### <a name="parameters"></a>Parametreler
 
-*RealType*<br/>
-Kayan noktalı bir sonuç türü varsayılan olarak **çift**. Olası türleri için bkz: [ \<rastgele >](../standard-library/random.md).
+*RealType*\
+Kayan nokta sonuç türü, varsayılan olarak **Double**olur. Olası türler için bkz [ \<. Random >](../standard-library/random.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-Şablon sınıfı tanımlar kullanıcı tanımlı bir integral değerini üreten bir dağıtım türü veya tür **çift** sağlanmazsa, öğrencinin göre dağıtılmış *t*-dağıtım. Aşağıdaki tablo ilgili makalelerin bağlantısı için tek tek üyeleri.
+Şablon sınıfı, Kullanıcı tarafından belirtilen integral türünün değerlerini üreten bir dağıtımı açıklar veya hiçbiri sağlanmazsa öğrencinin *t*dağıtımına  göre dağıtılır. Aşağıdaki tablo, bireysel üyelerle ilgili makalelere bağlantı sağlar.
 
 ||||
 |-|-|-|
 |[student_t_distribution](#student_t_distribution)|`student_t_distribution::n`|`student_t_distribution::param`|
 |`student_t_distribution::operator()`||[param_type](#param_type)|
 
-Özellik işlevi `n()` saklı dağıtım parametresinin değeri döndürür `n`.
+Property işlevi `n()` , depolanan dağıtım parametresi `n`için değeri döndürür.
 
-Dağıtım sınıfları ve üyeleri hakkında daha fazla bilgi için bkz: [ \<rastgele >](../standard-library/random.md).
+Dağıtım sınıfları ve üyeleri hakkında daha fazla bilgi için bkz [ \<. Random >](../standard-library/random.md).
 
-Öğrenci hakkında ayrıntılı bilgi için *t*-dağıtım, Wolfram MathWorld makaleye göz atın [öğrenci t dağılımı](http://mathworld.wolfram.com/Studentst-Distribution.html).
+Öğrencinin *t*dağıtımı hakkında ayrıntılı bilgi için bkz. Wolfram MathWorld article [öğrenciler t-Distribution](http://mathworld.wolfram.com/Studentst-Distribution.html).
 
 ## <a name="example"></a>Örnek
 
@@ -159,11 +159,11 @@ Distribution for 10 samples:
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** \<rastgele >
+**Üst bilgi:** \<rastgele >
 
-**Namespace:** std
+**Ad alanı:** std
 
-## <a name="student_t_distribution"></a>  student_t_distribution::student_t_distribution
+## <a name="student_t_distribution"></a>student_t_distribution::student_t_distribution
 
 Dağıtımı oluşturur.
 
@@ -174,23 +174,23 @@ explicit student_t_distribution(const param_type& parm);
 
 ### <a name="parameters"></a>Parametreler
 
-*n*<br/>
+*No*\
 `n` Dağıtım parametresi.
 
-*parametre*<br/>
-Dağıtımın oluşturulması için kullanılan parametre paketi.
+*parametresi*\
+Dağıtımı oluşturmak için kullanılan parametre paketi.
 
 ### <a name="remarks"></a>Açıklamalar
 
 **Önkoşul:** `0.0 < n`
 
-İlk Oluşturucu bir nesne oluşturur, saklı `n` değerine değeri *n*.
+İlk Oluşturucu, saklı `n` değeri *n*değerini tutan bir nesne oluşturur.
 
-İkinci oluşturucu depolanmış parametreleri dan başlatılan bir nesne oluşturur *parametresi*. Alabilir ve çağırarak geçerli var olan bir dağıtım parametrelerini ayarlayın `param()` üye işlevi.
+İkinci Oluşturucu, saklı parametreleri parmdan başlatılan bir nesne oluşturur . `param()` Üye işlevini çağırarak mevcut bir dağıtımın geçerli parametrelerini alabilir ve ayarlayabilirsiniz.
 
-## <a name="param_type"></a>  student_t_distribution::param_type
+## <a name="param_type"></a>student_t_distribution::p aram_type
 
-Dağıtım, tüm parametreleri depolar.
+Dağıtımın tüm parametrelerini depolar.
 
 ```cpp
 struct param_type {
@@ -205,18 +205,18 @@ struct param_type {
 
 ### <a name="parameters"></a>Parametreler
 
-*n*<br/>
+*No*\
 `n` Dağıtım parametresi.
 
-*sağ*<br/>
-`param_type` İçin karşılaştırılacak nesne.
+*Right*\
+Karşılaştırılacak `param_type` nesne.
 
 ### <a name="remarks"></a>Açıklamalar
 
 **Önkoşul:** `0.0 < n`
 
-Bu yapı dağıtım'ın sınıf oluşturucusu oluşturmada, en çok geçirilebilir `param()` depolanan parametre var olan bir dağıtım için ve ayarlamak için üye işlevi `operator()` depolanan parametrelerin yerine kullanılacak.
+Bu yapı, örnek oluşturma sırasında dağıtımın sınıf oluşturucusuna, `param()` var olan bir dağıtımın saklı parametrelerini ayarlamak için üye işlevine `operator()` ve depolanan parametrelerin yerine kullanılmak üzere geçirilebilir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[\<rastgele >](../standard-library/random.md)<br/>
+[\<Rastgele >](../standard-library/random.md)

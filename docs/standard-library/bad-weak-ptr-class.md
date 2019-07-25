@@ -7,12 +7,12 @@ helpviewer_keywords:
 - bad_weak_ptr
 - bad_weak_ptr class
 ms.assetid: a09336d5-7237-4480-ab6b-3787e0e6025e
-ms.openlocfilehash: 8ea29f12a8a86bd6b58c5051645182d69ff43389
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.openlocfilehash: e1d536eed6727a5d1e828d358aa6b64521d748b8
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68246191"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68454263"
 ---
 # <a name="badweakptr-class"></a>bad_weak_ptr Sınıfı
 
@@ -30,7 +30,7 @@ class bad_weak_ptr : public std::exception
 
 ## <a name="remarks"></a>Açıklamalar
 
-Öğesinden oluşturulan bir özel durum sınıfı tanımlar [shared_ptr sınıfı](../standard-library/shared-ptr-class.md) türünde bir bağımsız değişken alan oluşturucu [weak_ptr sınıfı](../standard-library/weak-ptr-class.md). Üye işlevi `what` döndürür `"bad_weak_ptr"`.
+Sınıfı, [Weak_ptr Class](../standard-library/weak-ptr-class.md)türünde bir bağımsız değişken alan [shared_ptr sınıf](../standard-library/shared-ptr-class.md) oluşturucusundan oluşturulabilecek bir özel durumu açıklar. Üye işlevi `what` döndürür `"bad_weak_ptr"`.
 
 ## <a name="example"></a>Örnek
 
@@ -72,4 +72,4 @@ bad weak pointer
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[weak_ptr Sınıfı](../standard-library/weak-ptr-class.md)<br/>
+[weak_ptr Sınıfı](../standard-library/weak-ptr-class.md)

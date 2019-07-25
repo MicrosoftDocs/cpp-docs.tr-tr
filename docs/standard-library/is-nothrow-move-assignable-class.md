@@ -6,16 +6,16 @@ f1_keywords:
 helpviewer_keywords:
 - is_nothrow_move_assignable
 ms.assetid: 000baa02-cbba-49de-9870-af730033348e
-ms.openlocfilehash: eb1ddcace7a68bf60154a15117a1c16a438d263d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 8273be92a9c7e60e446b3c2b561a6020e70fb2f2
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62148466"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68455887"
 ---
 # <a name="isnothrowmoveassignable-class"></a>is_nothrow_move_assignable sınıfı
 
-Türüne sahip olup olmadığını test bir **nothrow** atama işleçlerini taşıyın.
+Türün **nothrow** taşıma atama işlecine sahip olup olmadığını sınar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -26,19 +26,19 @@ struct is_nothrow_move_assignable;
 
 ### <a name="parameters"></a>Parametreler
 
-*Ty*<br/>
+*Kalite*\
 Sorgulanacak tür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Karşılaştırmasının bir örneği true tutan türü *Ty* false tuttuğu nothrow taşıma atama işleci, aksi takdirde sahiptir.
+Tür olarak bir nothrow taşıma atama işleci varsa, tür  koşulunda bir örnek true, aksi takdirde false barındırır.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** \<type_traits >
+**Üst bilgi:** \<type_traits >
 
-**Namespace:** std
+**Ad alanı:** std
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[<type_traits>](../standard-library/type-traits.md)<br/>
+[<type_traits>](../standard-library/type-traits.md)

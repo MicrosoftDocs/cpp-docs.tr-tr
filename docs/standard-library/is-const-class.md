@@ -7,16 +7,16 @@ helpviewer_keywords:
 - is_const class
 - is_const
 ms.assetid: 55b8e887-9c3f-4a1d-823a-4a257337b205
-ms.openlocfilehash: 25f10d8a8aed8bad6c11663687ace56a0b65afee
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 92059f43e73c4b76f45ea9aeae61daf573367b43
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62336875"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68452870"
 ---
 # <a name="isconst-class"></a>is_const Sınıfı
 
-Const türü olup olmadığını sınar.
+Tür const ise sınar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -27,12 +27,12 @@ struct is_const;
 
 ### <a name="parameters"></a>Parametreler
 
-*Ty*<br/>
+*Kalite*\
 Sorgulanacak tür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Karşılaştırmasının bir örneği true tutan *Ty* olduğu `const-qualified`.
+*Ty* ise `const-qualified`tür koşulunun bir örneği doğru barındırır.
 
 ## <a name="example"></a>Örnek
 
@@ -71,11 +71,11 @@ is_const<const int> == true
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** \<type_traits >
+**Üst bilgi:** \<type_traits >
 
-**Namespace:** std
+**Ad alanı:** std
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[<type_traits>](../standard-library/type-traits.md)<br/>
-[is_volatile Sınıfı](../standard-library/is-volatile-class.md)<br/>
+[< type_traits >](../standard-library/type-traits.md)\
+[is_volatile Sınıfı](../standard-library/is-volatile-class.md)

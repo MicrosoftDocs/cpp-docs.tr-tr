@@ -10,24 +10,24 @@ helpviewer_keywords:
 - std::array [C++], get
 - std::get [C++]
 - std::swap [C++]
-ms.openlocfilehash: 719377be2ac130100e3f9e9ea608c5c27be3101f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 61b5404d0f22cd902e35f6bee680df3c719804f2
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62377276"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68456780"
 ---
 # <a name="ltarraygt-functions"></a>&lt;dizi&gt; işlevleri
 
-\<Dizi > üst bilgi içeren iki üye olmayan işlevleri `get` ve `swap`, üzerinde çalışan **dizi** nesneleri.
+Dizi > üst bilgisi, dizi nesnelerinde çalışan iki üye olmayan `get` iki `swap`işlev içerir.  \<
 
 |||
 |-|-|
-|[get](#get)|[değiştirme](#swap)|
+|[get](#get)|[Kur](#swap)|
 
-## <a name="get"></a>  Al
+## <a name="get"></a>Al
 
-Belirtilen öğe dizinin bir başvuru döndürür.
+Dizinin belirtilen öğesine bir başvuru döndürür.
 
 ```cpp
 template <int Index, class T, size_t N>
@@ -42,17 +42,17 @@ constexpr T&& get(array<T, N>&& arr) noexcept;
 
 ### <a name="parameters"></a>Parametreler
 
-*Index*<br/>
-Öğe uzaklığı.
+*İndeks*\
+Öğe boşluğu.
 
-*T*<br/>
+*ŞI*\
 Öğenin türü.
 
-*N*<br/>
+*NO*\
 Dizideki öğelerin sayısı
 
-*arr*<br/>
-Aralarından seçim yapabileceğiniz dizisi.
+*ARR*\
+Seçilecek dizi.
 
 ### <a name="example"></a>Örnek
 
@@ -86,9 +86,9 @@ int main()
 1 3
 ```
 
-## <a name="swap"></a>  değiştirme
+## <a name="swap"></a>Kur
 
-Üye olmayan şablon özelleştirmesi `std::swap` iki değiştirir **dizi** nesneleri.
+Öğesinin `std::swap` üye olmayan şablon özelleştirmesi iki **dizi** nesnesini değiştirir.
 
 ```cpp
 template <class Ty, std::size_t N>
@@ -97,21 +97,21 @@ void swap(array<Ty, N>& left, array<Ty, N>& right);
 
 ### <a name="parameters"></a>Parametreler
 
-*Ty*<br/>
+*Kalite*\
 Öğenin türü.
 
-*N*<br/>
+*NO*\
 Dizinin boyutu.
 
-*Sol*<br/>
-Takas etmek için ilk dizi.
+*tarafta*\
+Takas edilecek ilk dizi.
 
-*sağ*<br/>
-Takas etmek için ikinci dizi.
+*Right*\
+Takas edilecek ikinci dizi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon işlevi yürütür `left.swap(right)`.
+Şablon işlevi yürütülür `left.swap(right)`.
 
 ### <a name="example"></a>Örnek
 
@@ -161,4 +161,4 @@ int main()
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[\<Array >](../standard-library/array.md)<br/>
+[\<dizi >](../standard-library/array.md)

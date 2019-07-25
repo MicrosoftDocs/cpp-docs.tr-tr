@@ -6,16 +6,16 @@ f1_keywords:
 helpviewer_keywords:
 - discard_block_engine class
 ms.assetid: aa84808e-38fe-4fa0-9f73-d5b9a653345b
-ms.openlocfilehash: a0df754f53b52c134b9eb1126f90882ceaaf1e2f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 76a78a2f47bd160c6b2b981b1ccdda2ef3a90575
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62386206"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68454392"
 ---
 # <a name="discardblockengine-class"></a>discard_block_engine Sınıfı
 
-Değerleri kendi temel altyapısıyla döndürülen atarak rastgele bir sıra üretir.
+Temel altyapısının döndürdüğü değerleri atarak rastgele bir sıra üretir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -26,14 +26,14 @@ class discard_block_engine;
 
 ### <a name="parameters"></a>Parametreler
 
-*Altyapısı*<br/>
-Temel altyapısı türü.
+*Altyapısına*\
+Temel altyapı türü.
 
-*P*<br/>
-**Bloğu boyutunu**. Değerleri blokların sayısı.
+*LAMA*\
+**Blok boyutu**. Her bloktaki değer sayısı.
 
-*R*<br/>
-**Kullanılan blok**. Her bir blok içinde kullanılan değerleri sayısı. Rest atılır (`P` - `R`). **Önkoşul**: `0 < R ≤ P`
+*R*\
+**Kullanılan blok**. Kullanılan her bloktaki değer sayısı. Rest atılır (`P` - )`R`. **Önkoşul**:`0 < R ≤ P`
 
 ## <a name="members"></a>Üyeler
 
@@ -42,18 +42,18 @@ Temel altyapısı türü.
 |`discard_block_engine::discard_block_engine`|`discard_block_engine::base`|`discard_block_engine::discard`|
 |`discard_block_engine::operator()`|`discard_block_engine::base_type`|`discard_block_engine::seed`|
 
-Altyapısı üyeleri hakkında daha fazla bilgi için bkz. [ \<rastgele >](../standard-library/random.md).
+Altyapı üyeleri hakkında daha fazla bilgi için bkz [ \<. Random >](../standard-library/random.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu şablon sınıfı, değerleri kendi temel altyapısıyla döndürülen değerlerden bazıları atarak üreten bir altyapısı bağdaştırıcısını açıklar.
+Bu şablon sınıfı, temel altyapısının döndürdüğü bazı değerleri atarak değer üreten bir altyapı bağdaştırıcısını açıklar.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** \<rastgele >
+**Üst bilgi:** \<rastgele >
 
-**Namespace:** std
+**Ad alanı:** std
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[\<rastgele >](../standard-library/random.md)<br/>
+[\<Rastgele >](../standard-library/random.md)

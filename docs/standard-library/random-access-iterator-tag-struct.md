@@ -7,16 +7,16 @@ helpviewer_keywords:
 - random_access_iterator_tag class
 - random_access_iterator_tag struct
 ms.assetid: 59f5b741-c5b4-459c-ad0a-3b67cddeea23
-ms.openlocfilehash: 81e958750ab13c12e92b61e6971c40f3362ba22d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: edbd7ad33b2487060840ec690b363d7b934fec27
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62369884"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68458315"
 ---
 # <a name="randomaccessiteratortag-struct"></a>random_access_iterator_tag Yapısı
 
-Bir dönüş türü sağlayan sınıf `iterator_category` bir rastgele erişim yineleyicisini temsil eden bir işlev.
+Rastgele erişim yineleyicisini temsil eden işlev için `iterator_category` dönüş türü sağlayan bir sınıf.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -26,9 +26,9 @@ struct random_access_iterator_tag    : public bidirectional_iterator_tag {};
 
 ## <a name="remarks"></a>Açıklamalar
 
-Kategori etiketi sınıfları algoritması seçimi için etiketler derleme gibi kullanılır. Derleme zamanında en verimli algoritması kullanabilirsiniz, böylece en belirgin kategori yineleyici bağımsız değişkeninin bulmak şablon işlevi gerekir. Her yineleyici türü için `Iterator`, `iterator_traits` <  `Iterator` >  **:: iterator_category** yineleyicinin davranışını tanımlar en belirgin kategori etiketi olarak tanımlanması gerekir.
+Kategori etiketi sınıfları, algoritma seçimi için derleme etiketleri olarak kullanılır. Şablon işlevinin, derleme zamanında en verimli algoritmayı kullanabilmesi için yineleyici bağımsız değişkeninin en belirli kategorisini bulması gerekir. `Iterator` **:: İterator_category** türündeki her Yineleyici `iterator_traits`için, <  `Iterator` > yineleyicinin davranışını açıklayan en özel kategori etiketi olacak şekilde tanımlanmalıdır.
 
-Aynı türdür **yineleyici** \< **Iter**> **:: iterator_category** olduğunda `Iter` olarak hizmet verebilen bir nesneyi tanımlayan bir rasgele erişim yineleyicisi.
+Türü, bir rastgele erişim Yineleyici işlevi görebilecek bir nesne açıkladığı zaman `Iter` **Yineleyici** \< **Iter**>  **:: iterator_category** ile aynıdır.
 
 ## <a name="example"></a>Örnek
 
@@ -81,7 +81,7 @@ int main( )
 
 ## <a name="sample-output"></a>Örnek Çıktı
 
-X86 için aşağıdaki çıkış alınır.
+Aşağıdaki çıktı x86 içindir.
 
 ```Output
 The type of iterator for vector<int> is identified by the tag:
@@ -98,12 +98,12 @@ The iterators are not the same.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** \<yineleyici >
+**Üst bilgi:** \<Yineleyici >
 
-**Namespace:** std
+**Ad alanı:** std
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[bidirectional_iterator_tag Yapısı](../standard-library/bidirectional-iterator-tag-struct.md)<br/>
-[C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
-[C++ Standart Kitaplığı Başvurusu](../standard-library/cpp-standard-library-reference.md)<br/>
+[bidirectional_iterator_tag yapısı](../standard-library/bidirectional-iterator-tag-struct.md)\
+[C++ Standart kitaplıkta Iş parçacığı güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)\
+[C++ Standart Kitaplığı Başvurusu](../standard-library/cpp-standard-library-reference.md)

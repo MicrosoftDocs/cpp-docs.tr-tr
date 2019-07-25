@@ -6,16 +6,16 @@ f1_keywords:
 helpviewer_keywords:
 - codecvt_utf8 class
 ms.assetid: 2a87478f-e2d4-4b8d-ad9c-00add01d1bb0
-ms.openlocfilehash: 3e3ddeccac2c18eedb96746f1c442c6b42349783
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: dcbb34c300d7c15f89c4a882275be0efd68359dc
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62405259"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68458711"
 ---
 # <a name="codecvtutf8"></a>codecvt_utf8
 
-Temsil eden bir [yerel ayar](../standard-library/locale-class.md) UCS-2 veya UCS-4 olarak kodlanmış geniş karakter ve UTF-8 olarak kodlanmış bir bayt akışı arasında dönüştürür modeli.
+UCS-2 veya UCS-4 olarak kodlanan geniş karakterler arasında dönüştürme yapan bir [yerel ayar](../standard-library/locale-class.md) MODELI ve UTF-8 olarak kodlanmış bir bayt akışı temsil eder.
 
 ```cpp
 template<class Elem, unsigned long Maxcode = 0x10ffff, codecvt_mode Mode = (codecvt_mode)0>
@@ -24,21 +24,21 @@ class codecvt_utf8 : public std::codecvt<Elem, char, StateType>
 
 ## <a name="parameters"></a>Parametreler
 
-*Elem*<br/>
-Geniş karakter öğe türü.
+*Elem*\
+Geniş karakterli öğe türü.
 
-*Maxcode*<br/>
-Yerel ayar modeli için karakter sayısı.
+*Maxcode*\
+Yerel ayar modeli için en fazla karakter sayısı.
 
-*Modu*<br/>
+*Modundaysa*\
 Yerel ayar modeli için yapılandırma bilgileri.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bayt akışı, ikili dosya ya da bir metin dosyası yazılabilir.
+Bayt akışı bir ikili dosyaya veya bir metin dosyasına yazılabilir.
 
 ## <a name="requirements"></a>Gereksinimler
 
-Başlık: \<codecvt > \
+Üst bilgi \<: codecvt >
 
-Namespace: std
+Ad alanı: std

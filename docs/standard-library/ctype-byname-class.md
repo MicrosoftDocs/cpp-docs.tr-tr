@@ -6,16 +6,16 @@ f1_keywords:
 helpviewer_keywords:
 - ctype_byname class
 ms.assetid: a5cec021-a1f8-425f-8757-08e6f064b604
-ms.openlocfilehash: d998747045ece765269ddb013b525b8c06fcdf8b
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 0b0f33781cc9f1f54661a44a5434c94316432a45
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62394175"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68457892"
 ---
 # <a name="ctypebyname-class"></a>ctype_byname Sınıfı
 
-Türetilmiş bir şablon sınıfı bir karakterlerin sınıflandırılmasını ve çalışması arasında ve yerel karakter dönüştürme sağlayarak verili bir yerel ayarın ctype modeli olarak hizmet verebilen bir nesneyi tanımlayan ve yerel karakter kümesi belirtildi.
+Türetilmiş şablon sınıfı, belirli bir yerel ayarın CType modeli olarak işlev görebilecek bir nesne tanımlar, bu da karakterlerin sınıflandırılmasını ve büyük/küçük harf ve yerel olarak belirtilen karakter kümeleri arasında karakter dönüştürülmesini etkinleştirir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -40,14 +40,14 @@ protected:
 
 ## <a name="remarks"></a>Açıklamalar
 
-Davranışını adlandırılmış yerel ayar tarafından belirlenir `_Locname`. Her Oluşturucu, temel nesnesiyle başlatır [ctype](../standard-library/ctype-class.md)\<CharType > ( `_Refs`) veya temel sınıf için eşdeğer `ctype<char>`.
+Davranışı, adlandırılmış yerel ayar `_Locname`tarafından belirlenir. Her Oluşturucu kendi temel nesnesini [CType](../standard-library/ctype-class.md)\<CharType > ( `_Refs`) veya temel sınıf `ctype<char>`için eşdeğer ile başlatır.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** \<yerel ayar >
+**Üst bilgi:** \<yerel ayar >
 
-**Namespace:** std
+**Ad alanı:** std
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
+[C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)

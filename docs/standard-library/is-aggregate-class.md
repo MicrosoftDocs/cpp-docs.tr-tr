@@ -5,16 +5,16 @@ f1_keywords:
 - type_traits/std::is_aggregate
 helpviewer_keywords:
 - is_aggregate
-ms.openlocfilehash: 7d979d4e4019ada12b72fb563c0b969fffe2c12d
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.openlocfilehash: 89749e2b4c0e6aaf00de074718cfb598333bc739
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68268050"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68456703"
 ---
 # <a name="isaggregate-class"></a>is_aggregate sınıfı
 
-Türü olarak işaretlenmiş bir sınıf türü olup olmadığını sınar `aggregate`.
+Türün işaretlenmiş `aggregate`bir sınıf türü olup olmadığını sınar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -25,19 +25,19 @@ struct is_aggregate;
 
 ### <a name="parameters"></a>Parametreler
 
-*T*<br/>
+*ŞI*\
 Sorgulanacak tür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Karşılaştırmasının bir örneği true tutan türü *T* sınıf türü olarak işaretlenmiş `aggregate`, aksi takdirde false tutar. Varsa *T* bir sınıf türü tam bir tür olmalıdır.
+Tür *T* türü, işaretlenmiş `aggregate`bir sınıf türü ise true, aksi takdirde false barındırır. *T* bir sınıf türü ise, bu bir tamamen türü olmalıdır.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** \<type_traits >
+**Üst bilgi:** \<type_traits >
 
-**Namespace:** std
+**Ad alanı:** std
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[<type_traits>](../standard-library/type-traits.md)<br/>
+[<type_traits>](../standard-library/type-traits.md)

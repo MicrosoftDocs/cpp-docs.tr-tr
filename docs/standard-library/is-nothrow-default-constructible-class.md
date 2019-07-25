@@ -6,16 +6,16 @@ f1_keywords:
 helpviewer_keywords:
 - is_nothrow_default_constructible
 ms.assetid: c576fcc9-5be1-43aa-b93a-64d3f1848887
-ms.openlocfilehash: d635c8a06d3acc45d214dbe7cb1eb7800f56dc86
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 76b58800a454f42f6b5b6fcea23df161c37564b2
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62148490"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68455924"
 ---
 # <a name="isnothrowdefaultconstructible-class"></a>is_nothrow_default_constructible Sınıfı
 
-Oluşturmayan bir varsayılan oluşturucu türüne sahip olup olmadığını sınar.
+Türün oluşturma olmayan bir varsayılan oluşturucuya sahip olup olmadığını sınar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -26,19 +26,19 @@ struct is_nothrow_default_constructible;
 
 ### <a name="parameters"></a>Parametreler
 
-*Ty*<br/>
+*Kalite*\
 Sorgulanacak tür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Karşılaştırmasının bir örneği true tutan türü *Ty* false tuttuğu nothrow varsayılan bir oluşturucu, aksi takdirde sahiptir. Bir tür koşulu örneğini eşdeğerdir `is_nothrow_constructible<Ty>`.
+Tür kümesi bir nothrow varsayılan *oluşturucusuna sahipse,* tür koşulunun bir örneği true, aksi takdirde false değerini taşır. Tür belirtiminin bir örneği değerine `is_nothrow_constructible<Ty>`eşdeğerdir.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** \<type_traits >
+**Üst bilgi:** \<type_traits >
 
-**Namespace:** std
+**Ad alanı:** std
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[<type_traits>](../standard-library/type-traits.md)<br/>
+[<type_traits>](../standard-library/type-traits.md)

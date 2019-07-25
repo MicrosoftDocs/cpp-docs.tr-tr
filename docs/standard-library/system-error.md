@@ -7,22 +7,22 @@ f1_keywords:
 helpviewer_keywords:
 - system_error header
 ms.assetid: 5e046c6e-48d9-4740-8c8a-05f3727c1215
-ms.openlocfilehash: 4365f0aaf8fdd4d43159b78acf6dcffa4fcbe428
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.openlocfilehash: e6eef7152e45e8177c451fc25592fab85c58ccb5
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68246556"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68449760"
 ---
 # <a name="ltsystemerrorgt"></a>&lt;system_error&gt;
 
-Üstbilgisini \<system_error > özel durum sınıfı tanımlamak için `system_error` ve ilgili alt düzey sistemi hataları işlemek için şablonlar.
+Özel durum sınıfını \< `system_error` ve alt düzey sistem hatalarını işlemeye yönelik ilgili şablonları tanımlamak için system_error > üst bilgisini ekleyin.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** \<system_error >
+**Üst bilgi:** \<system_error >
 
-**Namespace:** std
+**Ad alanı:** std
 
 ## <a name="members"></a>Üyeler
 
@@ -30,10 +30,10 @@ ms.locfileid: "68246556"
 
 |||
 |-|-|
-|[generic_category](../standard-library/system-error-functions.md#generic_category)|Genel hataları kategorisini temsil eder.|
+|[generic_category](../standard-library/system-error-functions.md#generic_category)|Genel hataların kategorisini temsil eder.|
 |[is_error_code_enum_v](../standard-library/system-error-functions.md#is_error_code_enum_v)||
 |[is_error_condition_enum_v](../standard-library/system-error-functions.md#is_error_condition_enum_v)||
-|[system_category](../standard-library/system-error-functions.md#system_category)|Alt düzey sistemi taşıyor tarafından neden olduğu hata kategorisini temsil eder.|
+|[system_category](../standard-library/system-error-functions.md#system_category)|Alt düzey sistem taşmasından kaynaklanan hataların kategorisini temsil eder.|
 
 ### <a name="functions"></a>İşlevler
 
@@ -46,29 +46,29 @@ ms.locfileid: "68246556"
 
 |||
 |-|-|
-|[operator==](../standard-library/system-error-operators.md#op_eq_eq)|İşlecin sol tarafındaki nesnesinin işlecin sağ tarafındaki nesneye eşit olup olmadığını sınar.|
-|[operator!=](../standard-library/system-error-operators.md#op_neq)|İşlecin sol tarafındaki nesne işlecin sağ tarafındaki nesneye eşit olup olmadığını sınar.|
+|[operator==](../standard-library/system-error-operators.md#op_eq_eq)|İşlecin sol tarafındaki nesnenin sağ taraftaki nesneye eşit olup olmadığını sınar.|
+|[operator!=](../standard-library/system-error-operators.md#op_neq)|İşlecin sol tarafındaki nesnenin sağ taraftaki nesneye eşit olup olmadığını sınar.|
 |[işleç <](../standard-library/system-error-operators.md#op_lt)|Bir nesnenin karşılaştırma için içeri geçirilen nesneden küçük olup olmadığını sınar.|
-|[işleç <<](../standard-library/system-error-operators.md#op_ostream)||
+|[işleç < <](../standard-library/system-error-operators.md#op_ostream)||
 
 ### <a name="enums"></a>Numaralandırmalar
 
 |||
 |-|-|
-|[errc](../standard-library/system-error-enums.md#errc)|Posıx'te tarafından tanımlanan tüm hata kodu makroları için simgesel adlar sağlar `<errno.h>`.|
+|[ERRC](../standard-library/system-error-enums.md#errc)|İçinde `<errno.h>`POSIX tarafından tanımlanan tüm hata kodu makroları için simgesel adlar sağlar.|
 
 ### <a name="classes-and-structs"></a>Sınıflar ve Yapılar
 
 |||
 |-|-|
-|[error_category](../standard-library/error-category-class.md)|Nesneler için bir kategori hata kodlarının tanımlayan soyut, ortak temel temsil eder.|
-|[error_code](../standard-library/error-code-class.md)|Uygulamaya özel alt düzey sistemi hataları temsil eder.|
-|[error_condition](../standard-library/error-condition-class.md)|Kullanıcı tanımlı hata kodları temsil eder.|
-|[Karma](../standard-library/hash-structure.md#system_error)||
-|[is_error_code_enum](../standard-library/is-error-code-enum-class.md)|İçin test eden bir tür koşulu temsil eden [error_code sınıfı](../standard-library/error-code-class.md) sabit listesi.|
-|[is_error_condition_enum](../standard-library/is-error-condition-enum-class.md)|İçin test eden bir tür koşulu temsil eden [error_condition sınıfı](../standard-library/error-condition-class.md) sabit listesi.|
-|[system_error](../standard-library/system-error-class.md)|Bir düzey sistemi taşması bildirmek için oluşturulan tüm özel durumlar için temel sınıfı temsil eder.|
+|[error_category](../standard-library/error-category-class.md)|Bir hata kodları kategorisini açıklayan nesneler için soyut, ortak temeli temsil eder.|
+|[error_code](../standard-library/error-code-class.md)|Uygulamaya özgü olan alt düzey sistem hatalarını temsil eder.|
+|[error_condition](../standard-library/error-condition-class.md)|Kullanıcı tanımlı hata kodlarını temsil eder.|
+|[yla](../standard-library/hash-structure.md#system_error)||
+|[is_error_code_enum](../standard-library/is-error-code-enum-class.md)|[Error_code sınıfı](../standard-library/error-code-class.md) numaralandırması için test edilen bir tür koşulunu temsil eder.|
+|[is_error_condition_enum](../standard-library/is-error-condition-enum-class.md)|[Error_condition sınıfı](../standard-library/error-condition-class.md) numaralandırması için test edilen bir tür koşulunu temsil eder.|
+|[system_error](../standard-library/system-error-class.md)|Düşük düzey sistem taşmasını raporlamak için oluşturulan tüm özel durumların temel sınıfını temsil eder.|
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Üstbilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md)<br/>
+[Üst bilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md)

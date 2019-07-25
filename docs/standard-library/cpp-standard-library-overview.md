@@ -7,32 +7,32 @@ helpviewer_keywords:
 - libraries, Standard C++
 - C++ Standard Library, headers
 ms.assetid: 7acb83a4-da73-4ad3-bc30-a71289db7f60
-ms.openlocfilehash: 57abafbcbd899d3eca7369205afba4ca262ad2c4
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 7b1e5226db751605d5352b1c5195759c34d080f5
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62210807"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68452444"
 ---
 # <a name="c-standard-library-overview"></a>C++ Standart Kitaplığına Genel Bakış
 
-Tüm C++ Kitaplık varlıklar bildirildi veya bir veya daha fazla standart üst bilgi tanımlandı. Bu uygulama iki ek üst bilgilere içerir \<hash_map > ve \<hash_set >, gerekli değildir tarafından C++ standart. Bu uygulama destekleyen üstbilgileri tam bir listesi için bkz. [üstbilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md).
+Tüm C++ Kitaplık varlıkları bir veya daha fazla standart üstbilgiye göre bildiriliyor veya tanımlanmıştır. Bu uygulama, standart için \< C++ gerekli olmayan iki ek üst \<bilgi içerir, hash_map > ve hash_set >. Bu uygulamanın desteklediği üstbilgilerin tüm listesi için bkz. [üstbilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md).
 
-C++ Kitaplığı bağlantısız bir uygulaması, yalnızca bir alt bu üst bilgi sağlar:
+Kitaplığın serbest duran bir uygulanması, C++ bu üstbilgilerin yalnızca bir alt kümesini sağlar:
 
 |||
 |-|-|
-|[\<cstddef >](../standard-library/cstddef.md)|[\<cstdlib >](../standard-library/cstdlib.md) (en az işlevleri bildirme `abort`, `atexit`, ve `exit`)|
-|[\<Özel Durum >](../standard-library/exception.md)|[\<sınırları >](../standard-library/limits.md)|
+|[\<cstddef >](../standard-library/cstddef.md)|`abort` `atexit` `exit` [ cstdlib\<>](../standard-library/cstdlib.md) (en azından işlevleri, ve işlevleri bildirme)|
+|[\<özel durum >](../standard-library/exception.md)|[\<sınır >](../standard-library/limits.md)|
 |[\<Yeni >](../standard-library/new.md)|[\<cstdarg >](../standard-library/cstdarg.md)|
 
-C++ Kitaplığı üstbilgilerini iki geniş düşen bölüm vardır:
+C++ Kitaplık üst bilgilerinde iki geniş alt bölüm vardır:
 
 - [iostreams](../standard-library/iostreams-conventions.md) kuralları.
 
-- [C++ Standart Kitaplığı başvurusu](../standard-library/cpp-standard-library-reference.md) kuralları.
+- Standart Kitaplık başvuru kuralları. [ C++ ](../standard-library/cpp-standard-library-reference.md)
 
-Bu bölümde, aşağıdaki bölümleri içerir:
+Bu bölüm aşağıdaki bölümleri içerir:
 
 - [C++ Kitaplığı Üst Bilgilerini Kullanma](../standard-library/using-cpp-library-headers.md)
 
@@ -56,8 +56,8 @@ Bu bölümde, aşağıdaki bölümleri içerir:
 
 - [Normal İfadeler (C++)](../standard-library/regular-expressions-cpp.md)
 
-Visual C++ çalışma zamanı kitaplıkları hakkında daha fazla bilgi için bkz. [CRT kitaplık özellikleri](../c-runtime-library/crt-library-features.md).
+Görsel C++ çalışma zamanı kitaplıkları hakkında daha fazla bilgi için bkz. [CRT kitaplık özellikleri](../c-runtime-library/crt-library-features.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C++ Standart Kitaplığı](../standard-library/cpp-standard-library-reference.md)<br/>
+[C++ Standart Kitaplığı](../standard-library/cpp-standard-library-reference.md)

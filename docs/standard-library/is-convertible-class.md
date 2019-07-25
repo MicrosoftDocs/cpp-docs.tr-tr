@@ -7,16 +7,16 @@ helpviewer_keywords:
 - is_convertible class
 - is_convertible
 ms.assetid: 75614008-1894-42ea-bd57-974399628536
-ms.openlocfilehash: cdc3276f229fb9c1ac059a9eeb29e77655b4fc69
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c90fe5687992e4df49e8655387cfdd14b40aa529
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62337381"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68454618"
 ---
 # <a name="isconvertible-class"></a>is_convertible Sınıfı
 
-Bir türden diğerine dönüştürülebilir olup olmadığını sınar.
+Bir tür diğerine dönüştürülebilir olduğunda sınar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -27,15 +27,15 @@ struct is_convertible;
 
 ### <a name="parameters"></a>Parametreler
 
-*Kaynak*<br/>
-Dönüştürmek için türü.
+*Kaynak*\
+Dönüştürülecek tür.
 
-*Ty*<br/>
-Dönüştürme türü.
+*Kalite*\
+Dönüştürülecek tür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Karşılaştırmasının bir örneği true tutan ifade `To to = from;`burada `from` türünde bir nesnedir `From`, doğru oluşturulmamış.
+Tür koşulunun bir örneği, ifadesi `To to = from;` `from` türü `From`bir nesne ise doğru bir biçimde olduğunda true olarak tutulur.
 
 ## <a name="example"></a>Örnek
 
@@ -71,11 +71,11 @@ is_convertible<char, int> == true
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** \<type_traits >
+**Üst bilgi:** \<type_traits >
 
-**Namespace:** std
+**Ad alanı:** std
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[<type_traits>](../standard-library/type-traits.md)<br/>
-[is_base_of Sınıfı](../standard-library/is-base-of-class.md)<br/>
+[< type_traits >](../standard-library/type-traits.md)\
+[is_base_of Sınıfı](../standard-library/is-base-of-class.md)

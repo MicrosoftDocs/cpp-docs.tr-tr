@@ -6,16 +6,16 @@ f1_keywords:
 helpviewer_keywords:
 - value_compare class
 ms.assetid: c306c5b9-3505-4357-aa6b-216451b951ed
-ms.openlocfilehash: 4b7fff1bef091a9d47e6ea4dc0e53e86ce39ad7c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 0e057a6229c903402a51b34a8f4e844e80ace187
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62365295"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68452369"
 ---
 # <a name="valuecompare-class"></a>value_compare Sınıfı
 
-Hash_map kendi göreli sıralarını belirlemek için kendi anahtarını değerlerini karşılaştırarak bir hash_map öğelerini karşılaştıran bir işlev nesnesi sağlar.
+, Hash_map içindeki göreli sıralarını belirleyebilmek için anahtarlarının değerlerini karşılaştırarak bir hash_map öğelerini karşılaştırabilen bir işlev nesnesi sağlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -39,22 +39,22 @@ protected:
 
 ## <a name="remarks"></a>Açıklamalar
 
-Value_compare arasında tarafından sağlanan karşılaştırma ölçütleri `value_types` tarafından bir hash_map yer alan tüm öğelerin yardımcı sınıf oluşturma ile ilgili öğelerin anahtarlarını arasında bir karşılaştırma alanından kaynaklanan. Üye işlevi işleci nesnenin kullandığı `comp` türü `key_compare` iki öğeyi sıralama anahtarı bileşenlerinin Karşılaştırılacak value_compare tarafından sağlanan işlev nesnesi depolanır.
+Bir hash_map tarafından içerilen tüm öğeler arasında `value_types` value_compare tarafından verilen karşılaştırma ölçütleri, yardımcı sınıf oluşturma tarafından ilgili öğelerin anahtarları arasındaki bir karşılaştırmadan elde edilir. Üye işlevi işleci, iki öğenin sıralama `comp` anahtarı bileşenlerini `key_compare` karşılaştırmak için value_compare tarafından sunulan Function nesnesinde depolanan nesne türünü kullanır.
 
-Value_compare hash_sets ve basit kapsayıcılar anahtar değerlerinin olduğu öğe değerlerin aynı olan hash_multisets değerine eşdeğer olan `key_compare`; hash_maps ve bunlar değildir, çünkü hash_multimaps türünün değerini `pair` öğeleri değeri öğenin anahtarı olarak aynı değil.
+Anahtar değerlerinin öğe değerleriyle özdeş olduğu basit kapsayıcılar olan hash_sets ve hash_multisets için, value_compare eşdeğerdir `key_compare`; hash_maps ve hash_multimaps için, türün değeri `pair` öğeler, öğe anahtarının değeriyle aynı değil.
 
 ## <a name="example"></a>Örnek
 
-Örneğin bakın [hash_map::value_comp](../standard-library/hash-map-class.md#value_comp) bildirme ve kullanma value_compare ilişkin bir örnek için.
+[Hash_map:: value_comp](../standard-library/hash-map-class.md#value_comp) için bkz. value_compare nasıl bildirilemeyeceğini ve kullanacağınızı gösteren bir örnek.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** \<hash_map >
+**Üst bilgi:** \<hash_map >
 
-**Namespace:** stdext
+**Ad alanı:** stdext
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[binary_function Yapısı](../standard-library/binary-function-struct.md)<br/>
-[C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
-[C++ Standart Kitaplığı Başvurusu](../standard-library/cpp-standard-library-reference.md)<br/>
+[binary_function yapısı](../standard-library/binary-function-struct.md)\
+[C++ Standart kitaplıkta Iş parçacığı güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)\
+[C++ Standart Kitaplığı Başvurusu](../standard-library/cpp-standard-library-reference.md)

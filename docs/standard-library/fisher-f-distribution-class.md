@@ -26,16 +26,16 @@ helpviewer_keywords:
 - std::fisher_f_distribution [C++], param_type
 - std::fisher_f_distribution [C++], param_type
 ms.assetid: 9513b6ce-3309-4be1-829b-f504bca35bbf
-ms.openlocfilehash: 643c564d7407a79bd9e2e776946c4b8df37a2974
-ms.sourcegitcommit: 28eae422049ac3381c6b1206664455dbb56cbfb6
+ms.openlocfilehash: c5e45af5d350ba9c3f1e4e240dec2c13366318c3
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66449926"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68457034"
 ---
 # <a name="fisherfdistribution-class"></a>fisher_f_distribution Sınıfı
 
-Bir Fisher F dağılımı üretir.
+Bir Fisher F dağıtımı oluşturur.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -69,34 +69,34 @@ public:
 
 ### <a name="parameters"></a>Parametreler
 
-*RealType*<br/>
-Kayan noktalı bir sonuç türü varsayılan olarak **çift**. Olası türleri için bkz: [ \<rastgele >](../standard-library/random.md).
+*RealType*\
+Kayan nokta sonuç türü, varsayılan olarak **Double**olur. Olası türler için bkz [ \<. Random >](../standard-library/random.md).
 
-*URNG*<br/>
-Tekdüzen rastgele sayı üretici altyapısı. Olası türleri için bkz: [ \<rastgele >](../standard-library/random.md).
+*URNG*\
+Tekdüzen rastgele sayı Oluşturucu altyapısı. Olası türler için bkz [ \<. Random >](../standard-library/random.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-Şablon sınıfı tanımlar kayan nokta değerleri, kullanıcı tarafından belirtilen üreten bir dağıtım türü veya tür **çift** Fisher'ın F-dağıtım göre belirtilmezse, dağıtılmış. Aşağıdaki tablo ilgili makalelerin bağlantısı için tek tek üyeleri.
+Şablon sınıfı, Kullanıcı tarafından belirtilen kayan nokta türünün değerlerini üreten bir dağıtımı açıklar veya hiçbir değer sağlanmazsa, Fisher 'ın  F dağıtımına göre dağıtılır. Aşağıdaki tablo, bireysel üyelerle ilgili makalelere bağlantı sağlar.
 
 ||||
 |-|-|-|
 |[fisher_f_distribution](#fisher_f_distribution)|`fisher_f_distribution::m`|`fisher_f_distribution::param`|
 |`fisher_f_distribution::operator()`|`fisher_f_distribution::n`|[param_type](#param_type)|
 
-Özellik işlevleri `m()` ve `n()` saklı dağıtım parametre değerlerini döndürmek `m` ve `n` sırasıyla.
+Özelliği `m()` ,depolanan`m` dağıtım parametrelerinin ve `n` sırasıyla değerlerini döndürür.`n()`
 
-Özellik üyesi `param()` ayarlar veya döndürür `param_type` saklı dağıtım parametre paketi.
+Özellik üyesi `param()` , `param_type` depolanan dağıtım parametresi paketini ayarlar veya döndürür.
 
-`min()` Ve `max()` üye işlevleri olası en küçük sonuç ve olası en büyük sonuç sırasıyla döndürür.
+`min()` Ve`max()` üye işlevleri, sırasıyla olası en küçük sonucu ve en büyük olası sonucu döndürür.
 
-`reset()` Üye işlevi herhangi bir önbelleğe alınan değeri atar böylece sonraki çağrı sonucunu `operator()` çağırmadan önce altyapısından alınan değerleri, bağlı değildir.
+Üye işlevi önbelleğe alınmış tüm değerleri atar, böylece sonraki `operator()` çağrının sonucu, çağrıdan önce altyapıdan alınan değerlere bağlı değildir. `reset()`
 
-`operator()` Üye işlevler URNG motoru, geçerli parametre paketi veya belirtilen parametre paketi göre sonraki oluşturulan değeri döndürür.
+`operator()` Üye işlevleri, geçerli parametre paketinden ya da belirtilen parametre paketinden, URNG altyapısına göre oluşturulan bir sonraki değeri döndürür.
 
-Dağıtım sınıfları ve üyeleri hakkında daha fazla bilgi için bkz: [ \<rastgele >](../standard-library/random.md).
+Dağıtım sınıfları ve üyeleri hakkında daha fazla bilgi için bkz [ \<. Random >](../standard-library/random.md).
 
-F dağılımı hakkında ayrıntılı bilgi için Wolfram MathWorld bkz [F dağılımı](https://go.microsoft.com/fwlink/p/?linkid=400899).
+F-dağıtımı hakkında ayrıntılı bilgi için Wolfram MathWorld makalesine [F-Distribution](https://go.microsoft.com/fwlink/p/?linkid=400899)bölümüne bakın.
 
 ## <a name="example"></a>Örnek
 
@@ -183,7 +183,7 @@ Distribution for 10 samples:
     10: 3.4320929653
 ```
 
-İkinci olarak çalıştırın:
+İkinci çalıştırma:
 
 ```Output
 Enter a floating point value for the 'm' distribution parameter (must be greater than zero): 1
@@ -207,7 +207,7 @@ Distribution for 10 samples:
     10: 20829747131.7185860000
 ```
 
-Üçüncü çalıştırın:
+Üçüncü çalıştırma:
 
 ```Output
 Enter a floating point value for the 'm' distribution parameter (must be greater than zero): .1
@@ -233,11 +233,11 @@ Distribution for 10 samples:
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** \<rastgele >
+**Üst bilgi:** \<rastgele >
 
-**Namespace:** std
+**Ad alanı:** std
 
-## <a name="fisher_f_distribution"></a>  fisher_f_distribution::fisher_f_distribution
+## <a name="fisher_f_distribution"></a>fisher_f_distribution::fisher_f_distribution
 
 Dağıtımı oluşturur.
 
@@ -248,26 +248,26 @@ explicit fisher_f_distribution(const param_type& parm);
 
 ### <a name="parameters"></a>Parametreler
 
-*m*<br/>
+*m*\
 `m` Dağıtım parametresi.
 
-*n*<br/>
+*No*\
 `n` Dağıtım parametresi.
 
-*parametre*<br/>
-`param_type` Dağıtımın oluşturulması için kullanılan yapısı.
+*parametresi*\
+Dağıtımı oluşturmak için kullanılan yapı.`param_type`
 
 ### <a name="remarks"></a>Açıklamalar
 
-**Önkoşul:** `0.0 < m` ve `0.0 < n`
+**Önkoşul:** `0.0 < m` ve`0.0 < n`
 
-İlk Oluşturucu bir nesne oluşturur, saklı `m` değerine değeri *m* ve saklı `n` değerine değeri *n*.
+İlk Oluşturucu, `m` saklı değeri *k* değerini tutan ve saklı `n` değeri *n*değerini tutan bir nesne oluşturur.
 
-İkinci oluşturucu depolanmış parametreleri dan başlatılan bir nesne oluşturur *parametresi*. Alabilir ve çağırarak geçerli var olan bir dağıtım parametrelerini ayarlayın `param()` üye işlevi.
+İkinci Oluşturucu, saklı parametreleri parmdan başlatılan bir nesne oluşturur . `param()` Üye işlevini çağırarak mevcut bir dağıtımın geçerli parametrelerini alabilir ve ayarlayabilirsiniz.
 
-## <a name="param_type"></a>  fisher_f_distribution::param_type
+## <a name="param_type"></a>fisher_f_distribution::p aram_type
 
-Dağıtım parametrelerini depolar.
+Dağıtımın parametrelerini depolar.
 
 ```cpp
 struct param_type {
@@ -283,21 +283,21 @@ struct param_type {
 
 ### <a name="parameters"></a>Parametreler
 
-*m*<br/>
+*m*\
 `m` Dağıtım parametresi.
 
-*n*<br/>
+*No*\
 `n` Dağıtım parametresi.
 
-*sağ*<br/>
-`param_type` İçin karşılaştırılacak nesne.
+*Right*\
+Karşılaştırılacak `param_type` nesne.
 
 ### <a name="remarks"></a>Açıklamalar
 
-**Önkoşul:** `0.0 < m` ve `0.0 < n`
+**Önkoşul:** `0.0 < m` ve`0.0 < n`
 
-Bu yapı dağıtım'ın sınıf oluşturucusu oluşturmada, en çok geçirilebilir `param()` depolanan parametre var olan bir dağıtım için ve ayarlamak için üye işlevi `operator()` depolanan parametrelerin yerine kullanılacak.
+Bu yapı, örnek oluşturma sırasında dağıtımın sınıf oluşturucusuna, `param()` var olan bir dağıtımın saklı parametrelerini ayarlamak için üye işlevine `operator()` ve depolanan parametrelerin yerine kullanılmak üzere geçirilebilir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[\<rastgele >](../standard-library/random.md)<br/>
+[\<Rastgele >](../standard-library/random.md)

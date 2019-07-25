@@ -7,16 +7,16 @@ helpviewer_keywords:
 - is_fundamental class
 - is_fundamental
 ms.assetid: b84eee84-2fb2-4611-beaf-b384074d8b6a
-ms.openlocfilehash: d16dfeebabd5909212425fcc27b355110e891d89
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 5643aa6a2d4bbfaafc86cba4251df162b59b4692
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62348451"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68456256"
 ---
 # <a name="isfundamental-class"></a>is_fundamental Sınıfı
 
-Void veya aritmetik türü olup olmadığını sınar.
+Tür void veya aritmetik ise sınar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -27,12 +27,12 @@ struct is_fundamental;
 
 ### <a name="parameters"></a>Parametreler
 
-*Ty*<br/>
+*Kalite*\
 Sorgulanacak tür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Karşılaştırmasının bir örneği true tutan türü *Ty* diğer bir deyişle, bir temel türü olan **void**, kayan bir integral türü işaret türü veya bir `cv-qualified` bunlardan biri, aksi takdirde false tuttuğu biçimi.
+Tür değeri temel bir tür, yani **void**, bir integral türü, bir kayan nokta türü ya da bunlardan birinin bir `cv-qualified` *biçimi ise true* , aksi takdirde false değerini alır.
 
 ## <a name="example"></a>Örnek
 
@@ -71,11 +71,11 @@ is_fundamental<void> == true
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** \<type_traits >
+**Üst bilgi:** \<type_traits >
 
-**Namespace:** std
+**Ad alanı:** std
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[<type_traits>](../standard-library/type-traits.md)<br/>
-[is_compound Sınıfı](../standard-library/is-compound-class.md)<br/>
+[< type_traits >](../standard-library/type-traits.md)\
+[is_compound Sınıfı](../standard-library/is-compound-class.md)

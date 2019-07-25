@@ -5,16 +5,16 @@ f1_keywords:
 - <memory_resource>
 helpviewer_keywords:
 - memory_resource header
-ms.openlocfilehash: b5957412d2beff0dc709dc71a77834f13eeacb41
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.openlocfilehash: d4b25c6ee575191f1e17b0202d33298e2e9e67f0
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68268158"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68451898"
 ---
 # <a name="ltmemoryresourcegt"></a>&lt;memory_resource&gt;
 
-Kapsayıcı Şablon sınıfı memory_resource ve kendi destek şablonları tanımlar.
+Kapsayıcı şablon sınıfı memory_resource ve destekleyici şablonlarını tanımlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -28,8 +28,8 @@ Kapsayıcı Şablon sınıfı memory_resource ve kendi destek şablonları tanı
 
 |||
 |-|-|
-|[operator!=](../standard-library/memory-resource-operators.md#op_neq)|İşlecin sol tarafındaki memory_resource nesne işlecin sağ tarafındaki memory_resource nesneye eşit olup olmadığını sınar.|
-|[operator==](../standard-library/memory-resource-operators.md#op_eq_eq)|İşlecin sol tarafındaki memory_resource nesnesinin işlecin sağ tarafındaki memory_resource nesneye eşit olup olmadığını sınar.|
+|[operator!=](../standard-library/memory-resource-operators.md#op_neq)|İşlecin sol tarafındaki memory_resource nesnesinin, sağ taraftaki memory_resource nesnesine eşit olup olmadığını sınar.|
+|[operator==](../standard-library/memory-resource-operators.md#op_eq_eq)|İşlecin sol tarafındaki memory_resource nesnesinin, sağ taraftaki memory_resource nesnesine eşit olup olmadığını sınar.|
 
 ### <a name="specialized-template-functions"></a>Özelleşmiş Şablon İşlevleri
 
@@ -58,6 +58,6 @@ Kapsayıcı Şablon sınıfı memory_resource ve kendi destek şablonları tanı
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Üstbilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md)<br/>
-[C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
-[C++ Standart Kitaplığı Başvurusu](../standard-library/cpp-standard-library-reference.md)<br/>
+[Üst bilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md)\
+[C++ Standart kitaplıkta Iş parçacığı güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)\
+[C++ Standart Kitaplığı Başvurusu](../standard-library/cpp-standard-library-reference.md)

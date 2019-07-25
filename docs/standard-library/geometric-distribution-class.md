@@ -23,16 +23,16 @@ helpviewer_keywords:
 - std::geometric_distribution [C++], param_type
 - std::geometric_distribution [C++], param_type
 ms.assetid: 38f933af-3b49-492e-9d26-b6b272a60013
-ms.openlocfilehash: 115d1c6f3298ea08b7c97061d37d4e27829247ea
-ms.sourcegitcommit: 28eae422049ac3381c6b1206664455dbb56cbfb6
+ms.openlocfilehash: ead6382e61066a72f97eacea91bba5b38aa00677
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66450675"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68453929"
 ---
 # <a name="geometricdistribution-class"></a>geometric_distribution Sınıfı
 
-Bir geometrik dağılım üretir.
+Geometrik bir dağıtım üretir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -66,34 +66,34 @@ public:
 
 ### <a name="parameters"></a>Parametreler
 
-*İnt'i*<br/>
-Tamsayı sonuç türü varsayılan olarak **int**. Olası türleri için bkz: [ \<rastgele >](../standard-library/random.md).
+*IntType*\
+Tamsayı sonuç türü, varsayılan olarak **int 'tir**. Olası türler için bkz [ \<. Random >](../standard-library/random.md).
 
-*URNG*<br/>
-Tekdüzen rastgele sayı üretici altyapısı. Olası türleri için bkz: [ \<rastgele >](../standard-library/random.md).
+*URNG*\
+Tekdüzen rastgele sayı Oluşturucu altyapısı. Olası türler için bkz [ \<. Random >](../standard-library/random.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-Şablon sınıfı, bir kullanıcı tarafından belirtilen integral türünden bir geometrik dağılım değerleri üreten bir dağıtım açıklar. Aşağıdaki tablo ilgili makalelerin bağlantısı için tek tek üyeleri.
+Şablon sınıfı, geometrik dağılımın Kullanıcı tarafından belirtilen integral türünün değerlerini üreten bir dağıtımı açıklar. Aşağıdaki tablo, bireysel üyelerle ilgili makalelere bağlantı sağlar.
 
 ||||
 |-|-|-|
 |[geometric_distribution](#geometric_distribution)|`geometric_distribution::p`|`geometric_distribution::param`|
 |`geometric_distribution::operator()`||[param_type](#param_type)|
 
-Özellik işlevi `p()` saklı dağıtım parametresinin değeri döndürür `p`.
+Property işlevi `p()` , depolanan dağıtım parametresi `p`için değeri döndürür.
 
-Özellik üyesi `param()` ayarlar veya döndürür `param_type` saklı dağıtım parametre paketi.
+Özellik üyesi `param()` , `param_type` depolanan dağıtım parametresi paketini ayarlar veya döndürür.
 
-`min()` Ve `max()` üye işlevleri olası en küçük sonuç ve olası en büyük sonuç sırasıyla döndürür.
+`min()` Ve`max()` üye işlevleri, sırasıyla olası en küçük sonucu ve en büyük olası sonucu döndürür.
 
-`reset()` Üye işlevi herhangi bir önbelleğe alınan değeri atar böylece sonraki çağrı sonucunu `operator()` çağırmadan önce altyapısından alınan değerleri, bağlı değildir.
+Üye işlevi önbelleğe alınmış tüm değerleri atar, böylece sonraki `operator()` çağrının sonucu, çağrıdan önce altyapıdan alınan değerlere bağlı değildir. `reset()`
 
-`operator()` Üye işlevler URNG motoru, geçerli parametre paketi veya belirtilen parametre paketi göre sonraki oluşturulan değeri döndürür.
+`operator()` Üye işlevleri, geçerli parametre paketinden ya da belirtilen parametre paketinden, URNG altyapısına göre oluşturulan bir sonraki değeri döndürür.
 
-Dağıtım sınıfları ve üyeleri hakkında daha fazla bilgi için bkz: [ \<rastgele >](../standard-library/random.md).
+Dağıtım sınıfları ve üyeleri hakkında daha fazla bilgi için bkz [ \<. Random >](../standard-library/random.md).
 
-Kikare dağılımı hakkında ayrıntılı bilgi için Wolfram MathWorld bkz [geometrik dağılım](https://go.microsoft.com/fwlink/p/?linkid=400529).
+Kikare dağıtımı hakkında ayrıntılı bilgi için bkz. Wolfram MathWorld article [geometrik dağıtım](https://go.microsoft.com/fwlink/p/?linkid=400529).
 
 ## <a name="example"></a>Örnek
 
@@ -205,11 +205,11 @@ Distribution for 100 samples:
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** \<rastgele >
+**Üst bilgi:** \<rastgele >
 
-**Namespace:** std
+**Ad alanı:** std
 
-## <a name="geometric_distribution"></a>  geometric_distribution::geometric_distribution
+## <a name="geometric_distribution"></a>geometric_distribution::geometric_distribution
 
 Dağıtımı oluşturur.
 
@@ -220,23 +220,23 @@ explicit geometric_distribution(const param_type& parm);
 
 ### <a name="parameters"></a>Parametreler
 
-*p*<br/>
+*Lama*\
 `p` Dağıtım parametresi.
 
-*parametre*<br/>
-Dağıtımın oluşturulması için kullanılan parametre yapısı.
+*parametresi*\
+Dağıtımı oluşturmak için kullanılan parametre yapısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
 **Önkoşul:** `0.0 < p && p < 1.0`
 
-İlk Oluşturucu bir nesne oluşturur, saklı `p` değerine değeri *p*.
+İlk Oluşturucu, saklı `p` değeri *p*değerini tutan bir nesne oluşturur.
 
-İkinci oluşturucu depolanmış parametreleri dan başlatılan bir nesne oluşturur *parametresi*. Alabilir ve çağırarak geçerli var olan bir dağıtım parametrelerini ayarlayın `param()` üye işlevi.
+İkinci Oluşturucu, saklı parametreleri parmdan başlatılan bir nesne oluşturur . `param()` Üye işlevini çağırarak mevcut bir dağıtımın geçerli parametrelerini alabilir ve ayarlayabilirsiniz.
 
-## <a name="param_type"></a>  geometric_distribution::param_type
+## <a name="param_type"></a>geometric_distribution::p aram_type
 
-Dağıtım parametrelerini depolar.
+Dağıtımın parametrelerini depolar.
 
 ```cpp
 struct param_type {
@@ -251,18 +251,18 @@ struct param_type {
 
 ### <a name="parameters"></a>Parametreler
 
-*p*<br/>
+*Lama*\
 `p` Dağıtım parametresi.
 
-*sağ*<br/>
-`param_type` Karşılaştırmak için bu örneği.
+*Right*\
+Bunu ile Karşılaştırılacak örnek. `param_type`
 
 ### <a name="remarks"></a>Açıklamalar
 
 **Önkoşul:** `0.0 < p && p < 1.0`
 
-Bu yapı dağıtım'ın sınıf oluşturucusu oluşturmada, en çok geçirilebilir `param()` depolanan parametre var olan bir dağıtım için ve ayarlamak için üye işlevi `operator()` depolanan parametrelerin yerine kullanılacak.
+Bu yapı, örnek oluşturma sırasında dağıtımın sınıf oluşturucusuna, `param()` var olan bir dağıtımın saklı parametrelerini ayarlamak için üye işlevine `operator()` ve depolanan parametrelerin yerine kullanılmak üzere geçirilebilir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[\<rastgele >](../standard-library/random.md)<br/>
+[\<Rastgele >](../standard-library/random.md)

@@ -11,44 +11,44 @@ helpviewer_keywords:
 - coding conventions, C++ Standard Library
 - naming conventions [C++], C++ library
 ms.assetid: bf41b79a-2d53-4f46-8d05-779358335146
-ms.openlocfilehash: f1790b75baea340d0b3ab1044290317055ac81d7
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 8747ef490c0997b1fa3fd5186618b7189fa00970
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62210781"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68450690"
 ---
 # <a name="c-library-conventions"></a>C++ Kitaplığı Kuralları
 
-C++ Kitaplık olarak standart C Kitaplığı çok aynı kuralları ilişkiden yanı sıra birkaç çok Burada özetlenen.
+C++ Kitaplık, standart C kitaplığıyla aynı kurallara ek olarak daha fazla özetlenen daha fazla bilgi edinebilirsiniz.
 
-Uygulama türleri ve işlevleri C++ Kitaplığı'nda nasıl bildirir, belirli bir enlem sahiptir:
+Bir uygulamada, C++ kitaplıkta türleri ve işlevleri nasıl bildirdiği konusunda belirli Enlem vardır:
 
-- Standart C Kitaplığı'nda işlevlerin adları extern #"C++" veya extern "C" bağlantısına sahip olabilir. Uygun standart C üstbilgisini yerine bir kitaplığı varlık satır içi bildirin.
+- Standart C kitaplığındaki işlevlerin adları extern # "C++" ya da extern "C" bağlantısına sahip olabilir. Satır içi bir kitaplık varlığı bildirmek yerine uygun standart C üst bilgisini ekleyin.
 
-- Bir kitaplık sınıfından bir üye işlev adı, bu belgede listelenen üzerinden ek işlev imzası olabilir. Burada açıklanan bir işlev çağrısı beklendiği gibi davranır, ancak güvenilir bir şekilde kitaplığı üye işlevin adresi alınamaz emin olabilirsiniz. (Tür, beklediğiniz olmayabilir.)
+- Bir kitaplık sınıfındaki üye işlev adı, bu belgede listelenenlerin üzerinde ek işlev imzaları içerebilir. Burada açıklanan bir işlev çağrısının beklenen şekilde davrandığından emin olabilirsiniz, ancak bir kitaplık üye işlevinin adresini güvenilir bir şekilde kullanamazsınız. (Tür, beklediğiniz gibi olmayabilir.)
 
-- Bir kitaplık sınıfından belgelenmemiş (sanal olmayan) temel sınıflar olabilir. Başka bir sınıftan türetildiği haliyle belgelenen türetilmiş bir sınıf aslında, bu sınıftan başka belgelenmemiş sınıflarıyla olabilir.
+- Bir kitaplık sınıfında belgelenmemiş (sanal olmayan) temel sınıflar olabilir. Başka bir sınıftan türetilmiş olarak belgelenmiş bir sınıf, aslında belgelenmemiş diğer sınıflar aracılığıyla bu sınıftan türetilebilir.
 
-- Bazı tamsayı türünün eşanlamlısı olarak tanımlanan bir türü birkaç farklı tamsayı türleri biriyle aynı olabilir.
+- Bazı tamsayı türleri için eş anlamlı olarak tanımlanan bir tür, birkaç farklı tamsayı türünden biriyle aynı olabilir.
 
-- Bir bit maskesi türünde bir tamsayı türü veya bir sabit listesi uygulanabilir. Her iki durumda da, bit düzeyinde işlemler gerçekleştirebilir (gibi `AND` ve `OR`) aynı bit maskesi türü değerleri. Öğeleri `A` ve `B` bir bit maskesi türü sıfır olmayan değerler sağlayacak şekilde `A`  &  `B` sıfırdır.
+- Bir bit maskesi türü, bir tamsayı türü veya bir numaralandırma olarak uygulanabilir. Her iki durumda da, aynı bit maskesi türünde değerler üzerinde bit `AND` düzeyinde `OR`işlemler (ve gibi) gerçekleştirebilirsiniz. Bir bit `A` maskesi `B` türü öğeleri ve sıfır olmayan değerlerdir `A`  & . `B`
 
-- Tanımı böyle bir olasılık NET bir şekilde kısıtlayan sürece hiçbir özel durum belirtimi var olan bir kitaplığı işlevi rastgele bir özel durum.
+- Özel durum belirtimi olmayan bir kitaplık işlevi, tanımı açıkça böyle bir olasılıkla kısıtlanmadığı takdirde rastgele bir özel durum oluşturabilir.
 
 Öte yandan, bazı kısıtlamalar vardır:
 
-- Standart C Kitaplığı hiçbir maskeleme makrolarını kullanır. Yalnızca belirli bir işlev imzaları ayrılmıştır, işlevlerin adları değil.
+- Standart C Kitaplığı maskeleme makrosu kullanmaz. Yalnızca belirli işlev imzaları ayrılmıştır, işlevlerin kendilerine ait adları değildir.
 
-- Sınıf dışındaki bir kitaplık işlevi adı ek, belgelenmemiş, işlev imzaları yoktur. Güvenilir bir şekilde adresini alabilir.
+- Sınıf dışında bir kitaplık işlevi adının ek, belgelenmemiş işlev imzaları olmayacaktır. Adresini güvenilir bir şekilde alabilirsiniz.
 
-- Temel sınıflar ve sanal olarak açıklanan üye işlevleri çalışırken assuredly sanal olarak sanal olmayan açıklanana assuredly sanal olmayan.
+- Sanal olarak tanımlanan temel sınıflar ve üye işlevleri assuredly sanal, ancak sanal olmayan olarak açıklanan assuredly sanal değildir.
 
-- Bu belge önerir açıkça Aksi takdirde iki C++ Kitaplığı tarafından tanımlanan her zaman farklıdır.
+- Bu belge açıkça önerilmediği C++ takdirde, kitaplık tarafından tanımlanan iki tür her zaman farklıdır.
 
-- Değiştirilebilir işlevlerin, varsayılan sürümleri dahil olmak üzere kitaplığı tarafından sağlanan işlevleri durum *en fazla* filtrenizin listelenen tüm özel durum belirtimi. Kitaplığı tarafından sağlanan hiçbir yok edicinin özel durumlar. Standart C Kitaplığı işlevleri olarak ne zaman bir özel durum yayma `qsort` karşılaştırma işlev çağrıları, bir özel durum oluşturur, ancak Aksi halde özel durumlar oluşturmayın.
+- Değiştirilebilir işlevlerin varsayılan sürümleri de dahil olmak üzere, kitaplık tarafından sağlanan işlevler, herhangi bir özel durum belirtiminde listelenen özel durumların *çoğunu* oluşturabilir. Kitaplık tarafından sağlanan hiçbir yok edici özel durum oluşturmaz. Standart C kitaplığındaki işlevler, özel durum oluşturan bir karşılaştırma işlevi `qsort` çağırdığında olduğu gibi bir özel durum yayabilir, ancak Aksi takdirde özel durum oluşturmaz.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C++ Standart Kitaplığına Genel Bakış](../standard-library/cpp-standard-library-overview.md)<br/>
-[C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
+[C++Standart kitaplığa genel bakış](../standard-library/cpp-standard-library-overview.md)\
+[C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)

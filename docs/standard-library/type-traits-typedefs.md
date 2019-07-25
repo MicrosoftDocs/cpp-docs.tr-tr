@@ -7,12 +7,12 @@ f1_keywords:
 - type_traits/std::true_type
 - xtr1common/std::true_type
 ms.assetid: 8ac040ca-ed2d-4570-adc9-cb5626530053
-ms.openlocfilehash: 579d276b7e9f2a7b44b41681b85fffd318ecddbb
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: eff1a99fb95f15c6377e8a74cca36e718cbd6fd9
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62279001"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68455091"
 ---
 # <a name="lttypetraitsgt-typedefs"></a>&lt;type_traits&gt; tür tanımları
 
@@ -20,9 +20,9 @@ ms.locfileid: "62279001"
 |-|-|
 |[false_type](#false_type)|[true_type](#true_type)|
 
-## <a name="false_type"></a>  Typedef false_type
+## <a name="false_type"></a>false_type typedef
 
-False değeri ile tamsayı sabiti tutar.
+Tamsayı sabiti yanlış değerle tutar.
 
 ```cpp
 typedef integral_constant<bool, false> false_type;
@@ -30,7 +30,7 @@ typedef integral_constant<bool, false> false_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Türü şablonunun bir özelleştirmesi eşanlamlıdır `integral_constant`.
+Tür, şablonun `integral_constant`bir özelleştirmesi için eş anlamlıdır.
 
 ### <a name="example"></a>Örnek
 
@@ -53,9 +53,9 @@ false_type == false
 true_type == true
 ```
 
-## <a name="true_type"></a>  Typedef true_type
+## <a name="true_type"></a>true_type typedef
 
-True değerine sahip tam sayı sabiti tutar.
+Gerçek değer ile integral sabiti barındırır.
 
 ```cpp
 typedef integral_constant<bool, true> true_type;
@@ -63,7 +63,7 @@ typedef integral_constant<bool, true> true_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Türü şablonunun bir özelleştirmesi eşanlamlıdır `integral_constant`.
+Tür, şablonun `integral_constant`bir özelleştirmesi için eş anlamlıdır.
 
 ### <a name="example"></a>Örnek
 
@@ -90,4 +90,4 @@ true_type == true
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[<type_traits>](../standard-library/type-traits.md)<br/>
+[<type_traits>](../standard-library/type-traits.md)

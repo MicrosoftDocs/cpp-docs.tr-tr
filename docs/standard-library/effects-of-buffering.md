@@ -5,12 +5,12 @@ helpviewer_keywords:
 - buffers, effects of buffering
 - buffering, effects of
 ms.assetid: 5d544812-e95e-4f28-b15a-edef3f3414fd
-ms.openlocfilehash: 23e241794455a92f9e3628a786d75a6d4c7b037e
-ms.sourcegitcommit: 878a164fe6d550ca81ab87d8425c8d3cd52fe384
+ms.openlocfilehash: 1f28748f1e7a837ad87ef1cfcebc56d3410d0fd2
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68376322"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68458905"
 ---
 # <a name="effects-of-buffering"></a>Ara Belleğe Almanın Etkileri
 
@@ -43,4 +43,4 @@ Bu adım, iletinin bekleme öncesinde yazdırılmasını sağlayarak arabelleği
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Çıkış Akışları](../standard-library/output-streams.md)<br/>
+[Çıkış Akışları](../standard-library/output-streams.md)

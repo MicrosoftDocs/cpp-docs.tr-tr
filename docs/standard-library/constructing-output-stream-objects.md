@@ -4,26 +4,26 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - output stream objects
 ms.assetid: 93c8eab6-610c-4f48-b76d-1d960cac7641
-ms.openlocfilehash: 7da7d9dd0fae3ce3fa21ecd774f88643dca49c26
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: d7bec211f30986deccc869a879dd5155ea70996b
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62212007"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68457279"
 ---
 # <a name="constructing-output-stream-objects"></a>Çıkış Akış Nesnelerini Oluşturma
 
-Yalnızca tanımlanmış kullanırsanız `cout`, `cerr`, veya `clog` nesneler, bir çıkış akışı oluşturmak gerekmez. Oluşturucular için kullanmanız gerekir:
+Yalnızca önceden tanımlanmış `cout`, `cerr`veya `clog` nesnelerini kullanırsanız, çıkış akışı oluşturmanız gerekmez. İçin oluşturucular kullanmanız gerekir:
 
-- [Çıkış dosyası Stream oluşturucular](#vclrfoutputfilestreamconstructorsanchor1)
+- [Çıkış dosyası akış oluşturucuları](#vclrfoutputfilestreamconstructorsanchor1)
 
-- [Çıkış dizesi Stream oluşturucular](#vclrfoutputstringstreamconstructorsanchor2)
+- [Çıkış dizesi akış oluşturucuları](#vclrfoutputstringstreamconstructorsanchor2)
 
-## <a name="vclrfoutputfilestreamconstructorsanchor1"></a> Çıkış dosyası Stream oluşturucular
+## <a name="vclrfoutputfilestreamconstructorsanchor1"></a>Çıkış dosyası akış oluşturucuları
 
-Bir çıkış dosya akışı iki yoldan biriyle oluşturabilirsiniz:
+Bir çıkış dosyası akışını iki şekilde oluşturabilirsiniz:
 
-- Varsayılan Oluşturucu kullanın ve sonra çağrı `open` üye işlevi.
+- Varsayılan oluşturucuyu kullanın ve ardından `open` üye işlevini çağırın.
 
    ```cpp
    ofstream myFile; // Static or on the stack
@@ -33,15 +33,15 @@ Bir çıkış dosya akışı iki yoldan biriyle oluşturabilirsiniz:
    pmyFile->open("filename");
    ```
 
-- Bir dosya adı ve modu bayrakları Oluşturucusu çağrısında belirtmektir.
+- Oluşturucu çağrısında bir dosya adı ve mod bayrakları belirtin.
 
    ```cpp
    ofstream myFile("filename", ios_base::out);
    ```
 
-## <a name="vclrfoutputstringstreamconstructorsanchor2"></a> Çıkış dizesi Stream oluşturucular
+## <a name="vclrfoutputstringstreamconstructorsanchor2"></a>Çıkış dizesi akış oluşturucuları
 
-Bir çıkış dizesi akışı oluşturmak için kullanabileceğiniz `ostringstream` şu şekilde:
+Çıkış dizesi akışı oluşturmak için aşağıdaki şekilde kullanabilirsiniz `ostringstream` :
 
 ```cpp
 using namespace std;
@@ -53,8 +53,8 @@ string sp = myString.str(); // Obtain string
 cout << sp << endl;
 ```
 
-`ends` "İşleyici" gerekli sondaki boş karakter dizesi olarak ekler.
+" `ends` İşleici", gereken sonlandırma null karakterini dizeye ekler.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Çıkış Akışları](../standard-library/output-streams.md)<br/>
+[Çıkış Akışları](../standard-library/output-streams.md)

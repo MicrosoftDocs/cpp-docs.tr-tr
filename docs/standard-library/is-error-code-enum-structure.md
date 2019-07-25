@@ -4,16 +4,16 @@ ms.date: 11/04/2016
 f1_keywords:
 - future/std::is_error_code_enum
 ms.assetid: 84ae4b99-66d2-41ba-9b50-645fcbe14630
-ms.openlocfilehash: 54def287aa6b4bbb06d88006615b5df45b482051
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f2a9f0d6b812b430ba3fca2d39343f912791da6f
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62336589"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68452619"
 ---
 # <a name="iserrorcodeenum-structure"></a>is_error_code_enum Yapısı
 
-Bildiren bir uzmanlık [future_errc](../standard-library/future-enums.md#future_errc) depolamak için uygun bir [error_code](../standard-library/error-code-class.md).
+[Future_errc](../standard-library/future-enums.md#future_errc) bir [error_code](../standard-library/error-code-class.md)depolamak için uygun olduğunu belirten özelleşme.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -24,11 +24,11 @@ struct is_error_code_enum<Future_errc> : public true_type;
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** \<gelecek >
+**Üst bilgi:** \<gelecekte >
 
-**Namespace:** std
+**Ad alanı:** std
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Üstbilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md)<br/>
-[\<gelecek >](../standard-library/future.md)<br/>
+[Üst bilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md)\
+[\<gelecekte >](../standard-library/future.md)

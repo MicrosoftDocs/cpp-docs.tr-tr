@@ -11,26 +11,26 @@ helpviewer_keywords:
 - incompatible iterators
 - debug iterator support
 ms.assetid: f3f5bd15-4be8-4d64-a4d0-8bc0761c68b6
-ms.openlocfilehash: 9042093bb073807e9bb1476ab514c82010aeab70
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 3ccb618c9a3c6b21d6ffe3fbbce7b6c1140e0564
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62394070"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68450583"
 ---
 # <a name="debug-iterator-support"></a>Hata Ayıklama Yineleyicisi Desteği
 
-Visual C++ çalışma zamanı kitaplığı, yanlış yineleyici kullanımını algılar ve onaylar ve çalışma zamanında bir iletişim kutusu görüntüler. Hata ayıklama yineleyici desteği etkinleştirmek için programınızı derlemek için C çalışma zamanı kitaplığı ve standart C++ Kitaplığı hata ayıklama sürümleri kullanmanız gerekir. Daha fazla bilgi için [CRT kitaplık özellikleri](../c-runtime-library/crt-library-features.md). İşaretli yineleyiciler kullanma hakkında daha fazla bilgi için bkz: [Checked Iterators](../standard-library/checked-iterators.md).
+Görsel C++ çalışma zamanı kitaplığı yanlış yineleyici kullanımını algılar ve çalışma zamanında bir iletişim kutusu görüntüler. Hata ayıklama Yineleyici desteğini etkinleştirmek için, programınızı derlemek için C++ standart kitaplığın ve C çalışma zamanı kitaplığının hata ayıklama sürümlerini kullanmanız gerekir. Daha fazla bilgi için bkz. [CRT kitaplık özellikleri](../c-runtime-library/crt-library-features.md). Denetlenen yineleyiciler kullanma hakkında daha fazla bilgi için bkz. [Checked Iterators](../standard-library/checked-iterators.md).
 
-Standart C++ üye işlevleri geçersiz olmasına Yineleyicilerin bir kapsayıcıya nasıl neden olabilecek açıklar. İki örnek verilmiştir:
+Standart C++ , üye işlevlerinin kapsayıcı için yineleyicilerin geçersiz hale gelmesine neden olabileceğini açıklar. İki örnek şunlardır:
 
-- Bir kapsayıcı bir öğeyi silme yineleyicileriyle öğesi geçersiz olmasına neden olur.
+- Bir kapsayıcıdan öğe silme, öğe için yineleyiciler geçersiz hale gelmesine neden olur.
 
-- Artırıldığında bir [vektör](../standard-library/vector.md) kullanarak anında iletme veya nedenler yineleyiciler içine Ekle `vector` geçersiz olacak.
+- İtme veya ekleme kullanarak bir [vektör](../standard-library/vector.md) boyutunu artırmak, `vector` ' ın ' a yinelenmesine neden olur.
 
-## <a name="invalid-iterators"></a>Geçersiz yineleyiciler
+## <a name="invalid-iterators"></a>Geçersiz Yineleyiciler
 
-Bu örnek program hata ayıklama modunda derlemek, çalışma zamanında onaylar ve sonlandırır.
+Bu örnek programı hata ayıklama modunda derlerseniz, çalışma zamanında onaylar ve sonlanır.
 
 ```cpp
 // iterator_debugging_0.cpp
@@ -54,9 +54,9 @@ int main() {
 }
 ```
 
-## <a name="using-iteratordebuglevel"></a>_Iterator_debug_level kullanma
+## <a name="using-iteratordebuglevel"></a>_ITERATOR_DEBUG_LEVEL kullanma
 
-Önişlemci makrosu kullanabileceğiniz [_ıterator_debug_level](../standard-library/iterator-debug-level.md) özellik hata ayıklama derlemesinde hata ayıklama yineleyici devre dışı bırakmak için. Bu program assert değil, ancak yine de tanımsız davranış tetikler.
+Bir hata ayıklama derlemesinde Yineleyici hata ayıklama özelliğini kapatmak için, [_ITERATOR_DEBUG_LEVEL](../standard-library/iterator-debug-level.md) ön işlemci makrosunu kullanabilirsiniz. Bu program onaylama işlemi yapmaz, ancak yine de tanımsız davranışı tetikler.
 
 ```cpp
 // iterator_debugging_1.cpp
@@ -87,9 +87,9 @@ int main() {
 -572662307
 ```
 
-## <a name="unitialized-iterators"></a>Unitialized yineleyiciler
+## <a name="unitialized-iterators"></a>Açılmamış yineleyiciler
 
-Assert da başlatılmadan önce aşağıda gösterildiği gibi bir yineleyici kullanmayı denerseniz oluşur:
+Burada gösterildiği gibi, bir yineleyici kullanılmadan önce bir yineleyici kullanmayı denerseniz bir onaylama da oluşur:
 
 ```cpp
 // iterator_debugging_2.cpp
@@ -106,7 +106,7 @@ int main() {
 
 ## <a name="incompatible-iterators"></a>Uyumsuz yineleyiciler
 
-Aşağıdaki kod örneği bir onaylama işlemi olduğundan neden için iki yineleyici [for_each](../standard-library/algorithm-functions.md#for_each) algoritması uyumsuz. Aynı kapsayıcı için sağlanan yineleyiciler anılıp anılmadığını algoritmaları denetleyin.
+Aşağıdaki kod örneği, [for_each](../standard-library/algorithm-functions.md#for_each) algoritmasına yönelik iki yineleyiciler uyumsuz olduğundan bir onaylama işlemi oluşmasına neden olur. Algoritmalar, kendisine sağlanan yineleyicilerin aynı kapsayıcıya başvurmalarını sağlamak için kontrol edilir.
 
 ```cpp
 // iterator_debugging_3.cpp
@@ -126,11 +126,11 @@ int main()
 }
 ```
 
-Bu örnek, lambda ifadesi kullanır bildirimi `[] (int& elem) { elem *= 2; }` bir functor yerine. Bu seçenek onay hatası ilgisi yoktur ancak — benzer bir işlev ise aynı hataya neden — lambdalar compact işlev nesnesi görevleri gerçekleştirmek için çok kullanışlı bir yol olan. Lambda ifadeleri hakkında daha fazla bilgi için bkz. [Lambda ifadeleri](../cpp/lambda-expressions-in-cpp.md).
+Bu örneğin, bir functor yerine Lambda `[] (int& elem) { elem *= 2; }` ifadesini kullandığına dikkat edin. Bu seçeneğin onaylama hatası üzerinde hiçbir ilgisi yoktur, ancak benzer bir komik ctor aynı hataya neden olur — Lambdalar, Compact Function nesne görevlerini gerçekleştirmek için çok faydalı bir yoldur. Lambda ifadeleri hakkında daha fazla bilgi için bkz. [lambda ifadeleri](../cpp/lambda-expressions-in-cpp.md).
 
-## <a name="iterators-going-out-of-scope"></a>Kapsam dışına giderek yineleyiciler
+## <a name="iterators-going-out-of-scope"></a>Kapsam dışına çıkan yineleyiciler
 
-Hata ayıklama yineleyici denetimleri de içinde bildirilen bir yineleyici değişken neden bir **için** tanesi olmasını döngü ne zaman kapsam **için** kapsamı sona erene döngü.
+Ayrıca, **for** döngüsü kapsamı sona erdiğinde, **for** döngüsünde belirtilen bir yineleyici değişkeninin kapsam dışına alınmasına neden olan hata ayıklama Yineleyici denetimleri.
 
 ```cpp
 // iterator_debugging_4.cpp
@@ -148,7 +148,7 @@ int main() {
 
 ## <a name="destructors-for-debug-iterators"></a>Hata ayıklama yineleyiciler için Yıkıcılar
 
-Hata ayıklama yineleyiciler Önemsiz yok ediciler sahip. Bir yok edici çalışmaz, ancak nesnenin belleği serbest erişim ihlalleri ve veri bozulması meydana gelebilir. Bu örneği göz önünde bulundurun:
+Hata ayıklama yineleyiciler önemsiz olmayan yıkıcıya sahip. Yıkıcı çalıştırılmadığında ancak nesnenin belleği serbest bırakılırsa, erişim ihlalleri ve veri bozulması meydana gelebilir. Şu örneği göz önünde bulundurun:
 
 ```cpp
 // iterator_debugging_5.cpp
@@ -175,4 +175,4 @@ struct derived : base {
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C++ Standart Kitaplığına Genel Bakış](../standard-library/cpp-standard-library-overview.md)<br/>
+[C++ Standart Kitaplığına Genel Bakış](../standard-library/cpp-standard-library-overview.md)

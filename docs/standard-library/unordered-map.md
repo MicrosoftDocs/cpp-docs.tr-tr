@@ -6,16 +6,16 @@ f1_keywords:
 helpviewer_keywords:
 - unordered_map header
 ms.assetid: eb90ecb2-250a-4be1-83d2-f66b2917edde
-ms.openlocfilehash: a7238d36e27b516aa30ad89b7322e6830f57e403
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.openlocfilehash: 1ac1bf2772e7eb6b2f61aa7b4f79de21fb675afe
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68243456"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68454754"
 ---
 # <a name="ltunorderedmapgt"></a>&lt;unordered_map&gt;
 
-Kapsayıcı şablon sınıfları tanımlar [unordered_map](../standard-library/unordered-map-class.md) ve [unordered_multimap](../standard-library/unordered-multimap-class.md) ve kendi destek şablonları.
+[Unordered_map](../standard-library/unordered-map-class.md) ve [unordered_multimap](../standard-library/unordered-multimap-class.md) kapsayıcı şablonu sınıflarını ve bunların destekleyici şablonlarını tanımlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -24,27 +24,27 @@ Kapsayıcı şablon sınıfları tanımlar [unordered_map](../standard-library/u
 ```
 
 > [!NOTE]
-> \<Unordered_map > Kitaplığı'nı da kullanan `#include <initializer_list>` deyimi.
+> Unordered_map > kitaplığı, `#include <initializer_list>` ifadesini de kullanır. \<
 
 ### <a name="classes"></a>Sınıflar
 
 |örneği|Açıklama|
 |-|-|
-|[unordered_map Sınıfı](../standard-library/unordered-map-class.md)|{Anahtar, eşlenen} çiftleri depolar karma tablo.|
-|[unordered_multimap Sınıfı](../standard-library/unordered-multimap-class.md)|{Anahtar, eşlenen} çiftleri depolar karma tablo.|
+|[unordered_map Sınıfı](../standard-library/unordered-map-class.md)|{Key, eşlenmiş} çifte oluşan karma tablosu depolar.|
+|[unordered_multimap Sınıfı](../standard-library/unordered-multimap-class.md)|{Key, eşlenmiş} çifte oluşan karma tablosu depolar.|
 
 ### <a name="functions"></a>İşlevler
 
 |İşlev|Açıklama|
 |-|-|
-|[operator!=](../standard-library/unordered-map-operators.md#op_neq)|İşlecin sol tarafındaki unordered_map nesne işlecin sağ tarafındaki unordered_map nesneye eşit olup olmadığını sınar.|
-|[operator==](../standard-library/unordered-map-operators.md#op_eq_eq)|İşlecin sol tarafındaki unordered_map nesnesinin işlecin sağ tarafındaki unordered_map nesneye eşit olup olmadığını sınar.|
-|[swap işlevi (unordered_map)](../standard-library/unordered-map-functions.md#swap)|İki eşleme değiştirir.|
-|[operator!=](../standard-library/unordered-map-operators.md#op_neq)|İşlecin sol tarafındaki unordered_multimap nesne işlecin sağ tarafındaki unordered_multimap nesneye eşit olup olmadığını sınar.|
-|[operator==](../standard-library/unordered-map-operators.md#op_eq_eq)|İşlecin sol tarafındaki unordered_multimap nesnesinin işlecin sağ tarafındaki unordered_multimap nesneye eşit olup olmadığını sınar.|
-|[swap işlevi (unordered_map)](../standard-library/unordered-map-functions.md#swap)|İki multimaps değiştirir.|
+|[operator!=](../standard-library/unordered-map-operators.md#op_neq)|İşlecin sol tarafındaki unordered_map nesnesinin, sağ taraftaki unordered_map nesnesine eşit olup olmadığını sınar.|
+|[operator==](../standard-library/unordered-map-operators.md#op_eq_eq)|İşlecin sol tarafındaki unordered_map nesnesinin, sağ taraftaki unordered_map nesnesine eşit olup olmadığını sınar.|
+|[Swap Işlevi (unordered_map)](../standard-library/unordered-map-functions.md#swap)|İki haritaları değiştirir.|
+|[operator!=](../standard-library/unordered-map-operators.md#op_neq)|İşlecin sol tarafındaki unordered_multimap nesnesinin, sağ taraftaki unordered_multimap nesnesine eşit olup olmadığını sınar.|
+|[operator==](../standard-library/unordered-map-operators.md#op_eq_eq)|İşlecin sol tarafındaki unordered_multimap nesnesinin, sağ taraftaki unordered_multimap nesnesine eşit olup olmadığını sınar.|
+|[Swap Işlevi (unordered_map)](../standard-library/unordered-map-functions.md#swap)|İki çok haritaları değiştirir.|
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[unordered_multiset Sınıfı](../standard-library/unordered-multiset-class.md)<br/>
-[unordered_set Sınıfı](../standard-library/unordered-set-class.md)<br/>
+[unordered_multiset sınıfı](../standard-library/unordered-multiset-class.md)\
+[unordered_set Sınıfı](../standard-library/unordered-set-class.md)

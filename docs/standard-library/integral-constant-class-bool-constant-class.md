@@ -10,16 +10,16 @@ helpviewer_keywords:
 - std::integral_constant [C++]
 - std::bool_constant [C++]
 ms.assetid: 11c002c6-4d31-4042-9341-f2543f43e108
-ms.openlocfilehash: f7b9217560bc94c536a7c819276266fd16fa4b07
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c85da1f3be7821f8d82cd2b19dab2a5864426a5a
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62404877"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68452041"
 ---
 # <a name="integralconstant-class-boolconstant-class"></a>integral_constant sınıfı, bool_constant sınıfı
 
-Bir türü ve değeri bir tamsayı sabit yapar.
+Bir tür ve değerden tamsayı sabiti oluşturur.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -36,17 +36,17 @@ struct integral_constant {
 
 ### <a name="parameters"></a>Parametreler
 
-*T*<br/>
-Sabit türü.
+*ŞI*\
+Sabitin türü.
 
-*v*<br/>
-Sabit değer.
+*Yönetim*\
+Sabitin değeri.
 
 ## <a name="remarks"></a>Açıklamalar
 
-`integral_constant` Şablon sınıfı, özelleştirilmiş bir integral türünde olduğunda *T* ve bir değer *v* bu tür bir sabit tamsayı türü belirtilen değerle tutan bir nesneyi temsil eder. Adlı üye `type` oluşturulan şablon uzmanlığı türü için bir diğer addır ve `value` üye değeri tutan *v* özelleştirmesi oluşturmak için kullanılır.
+Şablon sınıfı, bir integral türü T ve bu türün *v* değeri ile özelleştirilse, belirtilen değere sahip bu integral türünün bir sabitini tutan bir nesneyi temsil eder.  `integral_constant` Adlı `type` üye, oluşturulan şablon özelleştirmesi türü için bir diğer addır `value` ve üye, uzmanlığı oluşturmak için kullanılan *v* değerini tutar.
 
-`bool_constant` Şablon sınıfı, bir açık kısmi alt uzmanlaşması `integral_constant` kullanan **bool** olarak *T* bağımsız değişken.
+Şablon sınıfı,, *T* bağımsız değişkeni olarak **bool** kullanan, öğesinin `integral_constant` açık kısmi bir özelleştirmesi. `bool_constant`
 
 ## <a name="example"></a>Örnek
 
@@ -74,12 +74,12 @@ integral_constant<bool, false> == false
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** \<type_traits >
+**Üst bilgi:** \<type_traits >
 
-**Namespace:** std
+**Ad alanı:** std
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[<type_traits>](../standard-library/type-traits.md)<br/>
-[false_type](../standard-library/type-traits-typedefs.md#false_type)<br/>
-[true_type](../standard-library/type-traits-typedefs.md#true_type)<br/>
+[< type_traits >](../standard-library/type-traits.md)\
+[false_type](../standard-library/type-traits-typedefs.md#false_type)\
+[true_type](../standard-library/type-traits-typedefs.md#true_type)

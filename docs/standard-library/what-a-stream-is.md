@@ -7,23 +7,23 @@ helpviewer_keywords:
 - streams [C++], in iostream classes
 - streams [C++]
 ms.assetid: a7e661e9-6cd1-4543-a9a4-c58ee9fd32f3
-ms.openlocfilehash: 9b8821861baed53880a00695204a4555994dccb3
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 80f2d17d7de2ddca1ef1501cacdb44f41c06594b
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62410817"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68450937"
 ---
 # <a name="what-a-stream-is"></a>Akışın Ne Olduğu
 
-C gibi C++ yerleşik giriş/çıkış yeteneği yoktur. Ancak, tüm C++ Derleyicileri, iostream sınıfları olarak bilinen bir sistematik, nesne yönelimli g/ç paketiyle, paketlenmiş. İostream sınıfları merkezi kavramını akışıdır. Bir akış nesnesi, bir kaynak ve hedef için bayt olarak davranan bir akıllı bir dosya olarak düşünebilirsiniz. Bir akışın özelliklerini, sınıf ve özelleştirilmiş ekleme ve çıkarma işleçleri tarafından belirlenir.
+C gibi, C++ yerleşik giriş/çıkış özelliğine sahip değildir. Ancak C++ , tüm derleyiciler, ıostream sınıfları olarak bilinen bir Systematik, nesne odaklı g/ç paketiyle paketlenmiştir. Akış, ıostream sınıflarının merkezi kavramıdır. Stream nesnesini, bayt için kaynak ve hedef olarak davranan akıllı bir dosya olarak düşünebilirsiniz. Akışın özellikleri, sınıfı ve özelleştirilmiş ekleme ve ayıklama işleçleri tarafından belirlenir.
 
-Aygıt sürücülerini disk işletim sistemi genişletilmiş dosyaları olarak klavye, ekran, yazıcı ve iletişim bağlantı noktalarını ile ilgilidir. İostream sınıfları genişletilmiş bu dosyalarla etkileşim kurun. Yerleşik sınıflar, okuma ve yazma sözdizimi stream sınıfları türetmek kolaylaştıran g/ç diski için aynı olan bellek destekler.
+Cihaz sürücüleri aracılığıyla disk işletim sistemi, Genişletilmiş dosyalar olarak klavye, ekran, yazıcı ve iletişim bağlantı noktalarıyla ilgilidir. İostream sınıfları, bu genişletilmiş dosyalarla etkileşime geçin. Yerleşik sınıflar, disk g/ç için bu verilerle özdeş olan ve bu da akış sınıflarının türemesini kolaylaştıran bir sözdizimi ile belleği okumayı ve yazmayı destekler.
 
 ## <a name="in-this-section"></a>Bu Bölümde
 
-[Giriş/Çıkış Seçenekleri](../standard-library/input-output-alternatives.md)
+[Giriş/çıkış alternatifleri](../standard-library/input-output-alternatives.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[iostream Programlaması](../standard-library/iostream-programming.md)<br/>
+[iostream Programlaması](../standard-library/iostream-programming.md)

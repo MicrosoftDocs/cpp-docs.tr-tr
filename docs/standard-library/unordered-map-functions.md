@@ -8,20 +8,20 @@ f1_keywords:
 ms.assetid: cf2e4115-f205-4a0e-90be-a143ffcc1f44
 helpviewer_keywords:
 - std::swap (unordered_map/multimap)
-ms.openlocfilehash: ae00a9204e2bd5dc5220f3b2755e16b895193df3
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 8ad81157d12de017198afeeb48f3b329ef20dbde
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62158553"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68454829"
 ---
 # <a name="ltunorderedmapgt-functions"></a>&lt;unordered_map&gt; işlevleri
 
 |||
 |-|-|
-|[Swap (unordered_map)](#swap)|[Swap (unordered_multimap)](#swap_function_multimap)|
+|[swap (unordered_map)](#swap)|[swap (unordered_multimap)](#swap_function_multimap)|
 
-## <a name="swap"></a>  Swap (unordered_map)
+## <a name="swap"></a>swap (unordered_map)
 
 İki kapsayıcının içeriğinin yerini değiştirir.
 
@@ -34,30 +34,30 @@ void swap(
 
 ### <a name="parameters"></a>Parametreler
 
-*Key*<br/>
+*Anahtar*\
 Anahtar türü.
 
-*Ty*<br/>
+*Kalite*\
 Eşlenen tür.
 
-*Karma*<br/>
+*Yla*\
 Karma işlev nesne türü.
 
-*Pred*<br/>
+*Pred*\
 Eşitlik karşılaştırma işlevi nesne türü.
 
-*Ayırma*<br/>
+*Tahsis*\
 Ayırıcı sınıf.
 
-*Sol*<br/>
-Takas etmek için ilk kapsayıcı.
+*tarafta*\
+Takas edilecek ilk kapsayıcı.
 
-*sağ*<br/>
-Takas etmek için ikinci kapsayıcı.
+*Right*\
+Takas edilecek ikinci kapsayıcı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon işlevi yürütür `left.` [unordered_map::swap](../standard-library/unordered-map-class.md#swap)`(right)`.
+Şablon işlevi `left.` [unordered_map:: Swap](../standard-library/unordered-map-class.md#swap)`(right)`yürütülür.
 
 ### <a name="example"></a>Örnek
 
@@ -114,7 +114,7 @@ int main()
 [c, 3] [b, 2] [a, 1]
 ```
 
-## <a name="swap_function_multimap"></a>  Swap (unordered_multimap)
+## <a name="swap_function_multimap"></a>swap (unordered_multimap)
 
 İki kapsayıcının içeriğinin yerini değiştirir.
 
@@ -127,30 +127,30 @@ void swap(
 
 ### <a name="parameters"></a>Parametreler
 
-*Key*<br/>
+*Anahtar*\
 Anahtar türü.
 
-*Ty*<br/>
+*Kalite*\
 Eşlenen tür.
 
-*Karma*<br/>
+*Yla*\
 Karma işlev nesne türü.
 
-*Pred*<br/>
+*Pred*\
 Eşitlik karşılaştırma işlevi nesne türü.
 
-*Ayırma*<br/>
+*Tahsis*\
 Ayırıcı sınıf.
 
-*Sol*<br/>
-Takas etmek için ilk kapsayıcı.
+*tarafta*\
+Takas edilecek ilk kapsayıcı.
 
-*sağ*<br/>
-Takas etmek için ikinci kapsayıcı.
+*Right*\
+Takas edilecek ikinci kapsayıcı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon işlevi yürütür `left.` [unordered_multimap::swap](../standard-library/unordered-multimap-class.md#swap)`(right)`.
+Şablon işlevi `left.` [unordered_multimap:: Swap](../standard-library/unordered-multimap-class.md#swap)`(right)`yürütülür.
 
 ### <a name="example"></a>Örnek
 
@@ -209,4 +209,4 @@ int main()
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[<unordered_map>](../standard-library/unordered-map.md)<br/>
+[<unordered_map>](../standard-library/unordered-map.md)

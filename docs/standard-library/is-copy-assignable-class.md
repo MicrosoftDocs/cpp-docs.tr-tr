@@ -6,16 +6,16 @@ f1_keywords:
 helpviewer_keywords:
 - is_copy_assignable
 ms.assetid: 3ae6bca1-85fb-4829-9ee9-0183b081ff50
-ms.openlocfilehash: 75e0e8d995fbb3c6bfb1af3142a98651d7a29e96
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 5fedd32f026828e49ea29cb2975a2529ca28c862
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62336757"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68452835"
 ---
 # <a name="iscopyassignable-class"></a>is_copy_assignable sınıfı
 
-Türüne sahip olup olmadığını test atamada kopyalanabilir.
+Tür, atamaya kopyalanıp kopyalanamayacağını sınar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -26,19 +26,19 @@ struct is_copy_assignable;
 
 ### <a name="parameters"></a>Parametreler
 
-*Ty*<br/>
+*Kalite*\
 Sorgulanacak tür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Karşılaştırmasının bir örneği true tutan türü *Ty* tuttuğu yanlış bir kopya atama işleci, aksi takdirde sahip bir sınıftır. İs_assignable eşdeğer\<Ty &, const Ty & >.
+Tür değeri, kopya atama operatörü olan bir sınıfdaysa,  tür koşulunun bir örneği true, aksi takdirde false değerini taşır. İs_assignable\<Ty &, const Ty & > eşdeğerdir.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** \<type_traits >
+**Üst bilgi:** \<type_traits >
 
-**Namespace:** std
+**Ad alanı:** std
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[<type_traits>](../standard-library/type-traits.md)<br/>
+[<type_traits>](../standard-library/type-traits.md)

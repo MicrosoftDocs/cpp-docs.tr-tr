@@ -7,16 +7,16 @@ helpviewer_keywords:
 - is_array class
 - is_array
 ms.assetid: 61fb2201-8de3-4746-9721-617f02df170f
-ms.openlocfilehash: daaa4faa82dba7f98a6636cc06b2637534cfc99b
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c54664ed5f56411929c60a0f15ae3c4f0e4581ce
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62252720"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68456652"
 ---
 # <a name="isarray-class"></a>is_array Sınıfı
 
-Dizi türü olup olmadığını sınar.
+Tür dizi ise sınar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -27,12 +27,12 @@ struct is_array;
 
 ### <a name="parameters"></a>Parametreler
 
-*Ty*<br/>
+*Kalite*\
 Sorgulanacak tür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Karşılaştırmasının bir örneği true tutan türü *Ty* tuttuğu yanlış bir dizi türü, aksi takdirde.
+Tür değeri bir dizi türünde ise true, aksi takdirde false  değerini tutan tür koşulu örneği.
 
 ## <a name="example"></a>Örnek
 
@@ -68,12 +68,12 @@ is_array<int[5]> == true
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** \<type_traits >
+**Üst bilgi:** \<type_traits >
 
-**Namespace:** std
+**Ad alanı:** std
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[<type_traits>](../standard-library/type-traits.md)<br/>
-[extent Sınıfı](../standard-library/extent-class.md)<br/>
-[rank Sınıfı](../standard-library/rank-class.md)<br/>
+[< type_traits >](../standard-library/type-traits.md)\
+[kapsam sınıfı](../standard-library/extent-class.md)\
+[rank Sınıfı](../standard-library/rank-class.md)

@@ -4,22 +4,22 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - manipulators
 ms.assetid: 2dc62d09-45b7-454d-bd9d-55f3c72c206d
-ms.openlocfilehash: 0c3037c007e9388485f9553f9d2b0a69a1980b9a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 9a1f72ae3e6860d8ab532a72a1776b77c7204f48
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62410830"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68450910"
 ---
 # <a name="writing-your-own-manipulators-without-arguments"></a>Bağımsız Değişkenler Olmadan Kendi Manipülatörlerinizi Yazma
 
-Bağımsız değişkenler kullanmayan manipülatörlerinizi yazma sınıf türetme ne karmaşık makroların kullanılması gerekir. Yazıcı çifti gerektirir varsayalım \<ESC > [Kalın moduna girmek için. Akışa doğrudan bu çifti ekleyebilirsiniz:
+Bağımsız değişken kullanmayan kaldırıcılar yazma, ne sınıf türetme ne de karmaşık makroların kullanılmasını gerektirir. Yazıcınızda \<ESC tuşuna > [kalın moduna girmek için ESC) gerekli olduğunu varsayalım. Bu çifti doğrudan akışa ekleyebilirsiniz:
 
 ```cpp
 cout << "regular " << '\033' << '[' << "boldface" << endl;
 ```
 
-Veya tanımlayabilirsiniz `bold` karakterleri ekleyen işleyici:
+Ya da şu karakterleri ekleyen `bold` işleici tanımlayabilirsiniz:
 
 ```cpp
 ostream& bold(ostream& os) {
@@ -28,7 +28,7 @@ ostream& bold(ostream& os) {
 cout << "regular " << bold << "boldface" << endl;
 ```
 
-Genel olarak tanımlanan `bold` işlevini alır bir `ostream` başvuru bağımsız değişkeni ve döndürür `ostream` başvuru. Herhangi bir özel sınıf öğelere erişim gerekmediği için bir arkadaş veya bir üye işlev değil. `bold` İşlevi, çünkü akışa bağlar akışın `<<` işleci aşırı yüklenmiş işlev türü kabul etmek için şuna benzer bir bildirimi kullanarak:
+Genel olarak tanımlanan `bold` işlev bir `ostream` `ostream` başvuru bağımsız değişkeni alır ve başvuruyu döndürür. Herhangi bir özel sınıf öğesine erişmesi gerekmeyen için bu bir üye işlev veya arkadaş değil. `bold` Stream 'in`<<` işleci, şunun gibi görünen bir bildirim kullanarak bu tür bir işlevi kabul etmek için akışa bağlanır.
 
 ```cpp
 _Myt& operator<<(ios_base& (__cdecl *_Pfn)(ios_base&))
@@ -40,8 +40,8 @@ _Myt& operator<<(ios_base& (__cdecl *_Pfn)(ios_base&))
 }
 ```
 
-Bu özellik, diğer aşırı yüklenmiş işleçler genişletmek için kullanabilirsiniz. Bu durumda, arızi olduğu, `bold` karakter akışı halinde ekler. Bitişik karakter yazdırıldığında akışa mutlaka eklendiği işlevi çağrılır. Bu nedenle, yazdırma akışın arabelleğe alma nedeniyle Gecikmeli.
+Diğer aşırı yüklenmiş işleçleri genişletmek için bu özelliği kullanabilirsiniz. Bu durumda, akışa karakter ekleyen bir `bold` arızdır. İşlev akışa eklendiğinde çağrılır, bitişik karakterlerin yazdırılması zaman değildir. Bu nedenle, akışın arabelleğe alınması nedeniyle yazdırma gecikebilir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Çıkış Akışları](../standard-library/output-streams.md)<br/>
+[Çıkış Akışları](../standard-library/output-streams.md)

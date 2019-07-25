@@ -7,16 +7,16 @@ helpviewer_keywords:
 - forward_iterator_tag struct
 - forward_iterator_tag class
 ms.assetid: 68b633ac-b135-4e9e-837d-14248a262ec5
-ms.openlocfilehash: 04d526e7778dc219a8d9a49db40751b4418cc82d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 687e39ce752bc0d4d289421887570dea6870f8f3
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62159801"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68457129"
 ---
 # <a name="forwarditeratortag-struct"></a>forward_iterator_tag Yapısı
 
-Bir dönüş türü sağlayan sınıf **iterator_category** ileriye doğru yineleyiciyi temsil eden bir işlev.
+Bir ileri Yineleyici temsil eden **iterator_category** işlevi için dönüş türü sağlayan bir sınıf.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -26,22 +26,22 @@ struct forward_iterator_tag    : public input_iterator_tag {};
 
 ## <a name="remarks"></a>Açıklamalar
 
-Kategori etiketi sınıfları algoritması seçimi için etiketler derleme gibi kullanılır. Şablon işlevi, derleme zamanında en verimli algoritması kullanabilmeniz ne yineleyici bağımsız değişkeninin en belirgin kategori mi olduğunu bulmanız gerekir. Her yineleyici türü için `Iterator`, `iterator_traits` <  `Iterator` >  **:: iterator_category** yineleyicinin davranışını tanımlar en belirgin kategori etiketi olarak tanımlanması gerekir.
+Kategori etiketi sınıfları, algoritma seçimi için derleme etiketleri olarak kullanılır. Şablon işlevinin, derleme zamanında en verimli algoritmayı kullanabilmesi için yineleyici bağımsız değişkeninin en belirli kategorisini ne olduğunu bulması gerekir. `Iterator` **:: İterator_category** türündeki her Yineleyici `iterator_traits`için, <  `Iterator` > yineleyicinin davranışını açıklayan en özel kategori etiketi olacak şekilde tanımlanmalıdır.
 
-Aynı türdür **yineleyici** \< **Iter**> **:: iterator_category** olduğunda **Iter** açıklayan bir ileriye doğru yineleyici hizmet verebilen bir nesne.
+Bu tür **Yineleyici** \< **iter**>  **:: iterator_category** ile aynıdır, çünkü **Iter** ileri Yineleyici olarak işlev görebilir bir nesne tanımlar.
 
 ## <a name="example"></a>Örnek
 
-Bkz: [iterator_traits](../standard-library/iterator-traits-struct.md) veya [random_access_iterator_tag](../standard-library/random-access-iterator-tag-struct.md) nasıl kullanılacağına ilişkin bir örnek **iterator_tag**s.
+**İterator_tag**s 'yi nasıl kullanacağınızı gösteren bir örnek için bkz. [iterator_traits](../standard-library/iterator-traits-struct.md) veya [random_access_iterator_tag](../standard-library/random-access-iterator-tag-struct.md) .
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** \<yineleyici >
+**Üst bilgi:** \<Yineleyici >
 
-**Namespace:** std
+**Ad alanı:** std
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[input_iterator_tag Yapısı](../standard-library/input-iterator-tag-struct.md)<br/>
-[C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
-[C++ Standart Kitaplığı Başvurusu](../standard-library/cpp-standard-library-reference.md)<br/>
+[input_iterator_tag yapısı](../standard-library/input-iterator-tag-struct.md)\
+[C++ Standart kitaplıkta Iş parçacığı güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)\
+[C++ Standart Kitaplığı Başvurusu](../standard-library/cpp-standard-library-reference.md)

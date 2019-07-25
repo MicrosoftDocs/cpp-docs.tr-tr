@@ -6,16 +6,16 @@ f1_keywords:
 helpviewer_keywords:
 - is_nothrow_constructible
 ms.assetid: 8be3f927-283e-4d67-95a5-8bf5dc4e7a3d
-ms.openlocfilehash: 9ea11d54d49bf8f6ae6416f9663c2593cc66ea3e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 7ec4fc3ef5d9a799d5d77124870fbb337061c94c
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62383613"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68455998"
 ---
 # <a name="isnothrowconstructible-class"></a>is_nothrow_constructible sınıfı
 
-Bir tür atmamalıdır ve belirtilen bağımsız değişken türler kullanıldığında oluşturması beklenmiyor bilinen olup olmadığını sınar.
+Bir türün oluşturulabilir olup olmadığını test eder ve belirtilen bağımsız değişken türleri kullanıldığında throw olarak bilinir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -26,22 +26,22 @@ struct is_nothrow_constructible;
 
 ### <a name="parameters"></a>Parametreler
 
-*T*<br/>
+*ŞI*\
 Sorgulanacak tür.
 
-*Args*<br/>
-Bir oluşturucuda eşleştirmek için bağımsız değişken türleri *T*.
+*Args*\
+*T*yapıcısında eşleştirilecek bağımsız değişken türleri.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Karşılaştırmasının bir örneği true tutan türü *T* atmamalıdır olan bağımsız değişken türleri kullanarak *Args*ve oluşturucusu olmayan atmak için derleyici tarafından bilinir; Aksi takdirde false tutar. Tür *T* atmamalıdır olduğundan, değişken tanımını `T t(std::declval<Args>()...);` doğru oluşturulmamış. Her ikisi de *T* içindeki tüm türler *Args* tam türler olmalıdır **void**, veya bilinmeyen bağlı bir dizi.
+Tür koşulunun bir örneği, *T* türü bağımsız *değişkenler*içindeki bağımsız değişken türleri kullanılarak oluşturulabilir ise true, Oluşturucu derleyicinin throw tarafından bilinmez; Aksi takdirde yanlış olur. Değişken  tanımı `T t(std::declval<Args>()...);` düzgün biçimlendirilmişse tür T oluşturulabilir. *T* ve *args* içindeki tüm türlerin her ikisi de, bilinmeyen türler, **void**veya dizileri olmalıdır.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** \<type_traits >
+**Üst bilgi:** \<type_traits >
 
-**Namespace:** std
+**Ad alanı:** std
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[<type_traits>](../standard-library/type-traits.md)<br/>
+[<type_traits>](../standard-library/type-traits.md)

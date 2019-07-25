@@ -4,16 +4,16 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - output streams, one-argument manipulators
 ms.assetid: e381dee8-6b16-4cef-805a-4a6a1d2b696b
-ms.openlocfilehash: b5f24033d8da0933b8252fdace60fb419ef2e605
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c9e9e7531733ac40022b477980297c80ac488221
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62370833"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68453445"
 ---
 # <a name="other-one-argument-output-stream-manipulators"></a>Diğer Tek Bağımsız Değişkenli Çıkış Akışı Manipülatörleri
 
-Aşağıdaki örnek, bir sınıfı kullanır. `money`, olduğu bir **uzun** türü. `setpic` İşleyici sınıfı aşırı yüklenmiş akışı ekleme operatör tarafından kullanılabilecek sınıfına bir biçimlendirme "resmi" dizesi ekler `money`. Statik bir değişken olarak resim dizesinde depolanan `money` yerine stream sınıfı veri üyesi olarak, bu nedenle yeni bir çıkış akışı sınıf türetmek erişiminiz yok sınıfı.
+Aşağıdaki örnek, **uzun** bir tür `money`olan bir sınıfı kullanır. Bu `setpic` işlem, sınıfının `money`aşırı yüklenmiş akış ekleme işleci tarafından kullanılabilecek sınıfa bir biçimlendirme "Picture" dizesi ekliyor. Resim dizesi bir Stream sınıfının veri üyesi yerine `money` sınıfında statik bir değişken olarak depolanır, bu nedenle yeni bir çıkış akışı sınıfı türetmeniz gerekmez.
 
 ## <a name="example"></a>Örnek
 
@@ -77,4 +77,4 @@ int main( )
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Bağımsız Değişkenlerle Birlikte Özel Manipülatörler](../standard-library/custom-manipulators-with-arguments.md)<br/>
+[Bağımsız Değişkenlerle Birlikte Özel Manipülatörler](../standard-library/custom-manipulators-with-arguments.md)

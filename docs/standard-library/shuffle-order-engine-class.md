@@ -15,16 +15,16 @@ helpviewer_keywords:
 - std::shuffle_order_engine [C++], base_type
 - std::shuffle_order_engine [C++], seed
 ms.assetid: 0bcd1fb0-44d7-4e59-bb1b-4a9b673a960d
-ms.openlocfilehash: bf767c12a19e4ae47c34a8f01e1b1a2f1e028eb3
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 972ba83afb5478cd89314817ba823b8d5657c9c8
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62399440"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68450422"
 ---
 # <a name="shuffleorderengine-class"></a>shuffle_order_engine Sınıfı
 
-Kendi temel altyapısından döndürülen değerlerden yeniden sıralayarak rastgele bir sıra üretir.
+Temel altyapısından döndürülen değerleri yeniden sıralayarak rastgele bir sıra üretir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -35,11 +35,11 @@ class shuffle_order_engine;
 
 ### <a name="parameters"></a>Parametreler
 
-*Altyapısı*<br/>
-Temel altyapısı türü.
+*Altyapısına*\
+Temel altyapı türü.
 
-*K*<br/>
-**Tablo boyutu**. ' % S'arabelleği (tablo) içindeki öğelerin sayısı. **Önkoşul**: `0 < K`
+*EK*\
+**Tablo boyutu**. Arabellekteki öğelerin sayısı (tablo). **Önkoşul**:`0 < K`
 
 ## <a name="members"></a>Üyeler
 
@@ -48,18 +48,18 @@ Temel altyapısı türü.
 |`shuffle_order_engine::shuffle_order_engine`|`shuffle_order_engine::base`|`shuffle_order_engine::discard`|
 |`shuffle_order_engine::operator()`|`shuffle_order_engine::base_type`|`shuffle_order_engine::seed`|
 
-Altyapısı üyeleri hakkında daha fazla bilgi için bkz. [ \<rastgele >](../standard-library/random.md).
+Altyapı üyeleri hakkında daha fazla bilgi için bkz [ \<. Random >](../standard-library/random.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu şablon sınıfının açıklayan bir *altyapısı bağdaştırıcısı* değerler üreten kendi temel altyapısıyla döndürülen değerlerden yeniden sıralayarak. Her Oluşturucu, iç tablo ile doldurur. *K* temel altyapısıyla döndürülen ve bir değer istendiğinde tablodan rastgele bir öğe seçilir.
+Bu şablon sınıfı, temel altyapısının döndürdüğü değerleri yeniden sıralayarak değerler üreten bir *altyapı bağdaştırıcısını* açıklar. Her Oluşturucu iç tabloyu temel altyapının döndürdüğü *K* değerleriyle doldurur ve bir değer istendiğinde, tablodan rastgele bir öğe seçilir.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** \<rastgele >
+**Üst bilgi:** \<rastgele >
 
-**Namespace:** std
+**Ad alanı:** std
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[\<rastgele >](../standard-library/random.md)<br/>
+[\<Rastgele >](../standard-library/random.md)

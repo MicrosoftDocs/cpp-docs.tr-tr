@@ -1,38 +1,38 @@
 ---
-title: Giriş-Çıkış akışları
+title: Giriş çıkış akışları
 ms.date: 11/04/2016
 helpviewer_keywords:
 - I/O [C++], stream
 - stream I/O
 ms.assetid: 21a97566-91a7-42d6-b2f8-a4c16bc926f1
-ms.openlocfilehash: d426baacb52095ab2d933263fdac8e312fc29558
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 3d5344ede3a62375c4c8102d1fc39445518eb0c4
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62159242"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68455265"
 ---
 # <a name="inputoutput-streams"></a>Giriş/Çıkış Akışları
 
-`basic_iostream`, üstbilgi dosyasında tanımlanan \<istream >, her ikisini birden işlemek nesneleri giriş ve çıkış karakter tabanlı g/ç akışlarını sınıf şablonudur.
+`basic_iostream`IStream > başlık dosyasında \<tanımlanan, hem giriş hem de çıkış karakter tabanlı g/ç akışlarını işleyen nesneler için sınıf şablonudur.
 
-Özel karakter uzmanlıklarını tanımlayın iki tür tanımları vardır `basic_iostream` ve kod kolay okunur hale getirmenize yardımcı olabilir: `iostream` (üst bilgi dosyası ile karıştırılmamalıdır \<iostream >) temel alan bir g/ç akışı `basic_iostream<char>`; `wiostream` temel alan bir g/ç akışı `basic_iostream<wchar_t>`.
+' In karaktere özgü uzmanlık `basic_iostream` düzeyini tanımlayan iki tür tanımları vardır ve kodun okunmasını kolaylaştırabilir: `iostream` (üst bilgi > dosyasıyla \<karıştırılmamalıdır), temel alan `basic_iostream<char>`bir g/ç akışıdır. , temelli bir g/ç akışıdır. `basic_iostream<wchar_t>` `wiostream`
 
-Daha fazla bilgi için [basic_iostream sınıfı](../standard-library/basic-iostream-class.md), [iostream](../standard-library/basic-iostream-class.md), ve [wiostream](../standard-library/basic-iostream-class.md).
+Daha fazla bilgi için bkz. [Basic_iostream Class](../standard-library/basic-iostream-class.md), [iostream](../standard-library/basic-iostream-class.md)ve [wiostream](../standard-library/basic-iostream-class.md).
 
-Öğesinden türetilen `basic_iostream` sınıf şablonu `basic_fstream`, için ve dosyalarından karakter veri akışı için kullanılır.
+Öğesinden `basic_iostream` türetme, dosyalarından karakter verilerini `basic_fstream`akışa almak için kullanılan sınıf şablonudur.
 
-Ayrıca vardır karakter özgü uzmanlıkları sağlayan bir tür tanımları `basic_fstream`. Bunlar `fstream`, temel alan bir dosya g/ç akışı olduğu **char**, ve `wfstream`, temel alan bir dosya g/ç akışı olduğu **wchar_t**. Daha fazla bilgi için [basic_fstream sınıfı](../standard-library/basic-fstream-class.md), [fstream](../standard-library/basic-fstream-class.md), ve [wfstream](../standard-library/basic-fstream-class.md). Bu tür tanımlarından kullanılması üstbilgi dosyasının eklenmesi \<fstream >.
+Ayrıca, `basic_fstream`karaktere özgü uzmanlık sağlayan tür tanımları öğeleri de vardır. Bunlar, **char**'a dayalı bir dosya g/ç akışı, yani wchar_t 'yi temel alan bir g/ç akışı olan bir dosya g/ç akışıdır.  `fstream` `wfstream` Daha fazla bilgi için bkz. [Basic_fstream Class](../standard-library/basic-fstream-class.md), [fstream](../standard-library/basic-fstream-class.md)ve [wfstream](../standard-library/basic-fstream-class.md). Bu tür tanımları 'ın kullanılması için, fstream > Üstbilgi \<dosyasının eklenmesi gerekir.
 
 > [!NOTE]
-> Olduğunda bir `basic_fstream` nesnesi, dosya g/ç gerçekleştirmek için kullanılır, temel alınan arabellek ayrı olarak içerse de konumlarını okuma ve yazma, için belirtilen geçerli giriş ve çıkış geçerli konumlar birbirine bağlıdır ve bu nedenle, bazı verileri okuma taşır. Çıkış konumu.
+> Dosya g `basic_fstream` /ç 'yi gerçekleştirmek için bir nesne kullanıldığında, temeldeki arabellek okuma ve yazma için ayrı olarak belirlenmiş konumlar içerse de, geçerli giriş ve geçerli çıkış konumları birlikte bağlanır ve bu nedenle bazı verileri okumak için çıkış konumu.
 
-Sınıf şablonu `basic_stringstream` ve kendi ortak uzmanlığı `stringstream`, genellikle eklemek ve karakter verileri ayıklamak için g/ç akışı nesneleri ile çalışmak için kullanılır. Daha fazla bilgi için [basic_stringstream sınıfı](../standard-library/basic-stringstream-class.md).
+Sınıf şablonu `basic_stringstream` ve ortak `stringstream`özelleştirmesi, genellikle karakter verilerini eklemek ve ayıklamak için g/ç Stream nesneleriyle çalışmak üzere kullanılır. Daha fazla bilgi için bkz. [Basic_stringstream Class](../standard-library/basic-stringstream-class.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[stringstream](../standard-library/basic-stringstream-class.md)<br/>
-[basic_stringstream Sınıfı](../standard-library/basic-stringstream-class.md)<br/>
-[\<sstream >](../standard-library/sstream.md)<br/>
-[iostream Programlaması](../standard-library/iostream-programming.md)<br/>
-[C++ Standart Kitaplığı](../standard-library/cpp-standard-library-reference.md)<br/>
+[stringstream](../standard-library/basic-stringstream-class.md)\
+[basic_stringstream sınıfı](../standard-library/basic-stringstream-class.md)\
+[\<sstream >](../standard-library/sstream.md)\
+[iostream programlama](../standard-library/iostream-programming.md)\
+[C++ Standart Kitaplığı](../standard-library/cpp-standard-library-reference.md)

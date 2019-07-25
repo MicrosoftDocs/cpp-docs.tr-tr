@@ -4,23 +4,23 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - extraction errors
 ms.assetid: 6a681028-adba-4557-8f7b-f137932905f8
-ms.openlocfilehash: 62d9c94f366ec666acf2179803c62e4a3ccd7e6a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: db551a21fd33665d83b11373f040be158406d492
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62412065"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68453671"
 ---
 # <a name="testing-for-extraction-errors"></a>Ayıklama Hataları İçin Test Yapma
 
-Çıkış ele hata işleme işlevleri [hata işleme işlevleri](../standard-library/output-file-stream-member-functions.md), giriş akışları için geçerlidir. Hata ayıklama sırasında test önemlidir. Bu bildirimi göz önünde bulundurun:
+[Hata Işleme işlevlerinde](../standard-library/output-file-stream-member-functions.md)tartışılan çıkış hatası işleme işlevleri, giriş akışlarına uygulanır. Ayıklama sırasında hataları test etmek önemlidir. Bu ifadeyi göz önünde bulundurun:
 
 ```cpp
 cin>> n;
 ```
 
-Varsa `n` 32.767 büyük bir değer imzalı bir tamsayı olduğu (izin verilen maksimum değeri veya MAX_INT) akışın ayarlar `fail` bit ve `cin` nesne haline gelir kullanılamaz. Depolanan bir değer içermeyen tüm sonraki ayıklamalar sonucu hemen bir dönüş içinde.
+İşaretli bir tamsayı ise, 32.767 'den büyük bir değer (izin verilen en büyük değer veya MAX_INT) `fail` akışın bitini ayarlar ve `cin` nesne kullanılamaz hale gelir. `n` Sonraki tüm Dışlamalar, hiçbir değer depolanmamış bir anında dönüşle sonuçlanır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Giriş Akışları](../standard-library/input-streams.md)<br/>
+[Giriş Akışları](../standard-library/input-streams.md)

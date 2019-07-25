@@ -22,12 +22,12 @@ helpviewer_keywords:
 - std::messages [C++], get
 - std::messages [C++], open
 ms.assetid: c4c71f40-4f24-48ab-9f7c-daccd8d5bd83
-ms.openlocfilehash: 7a024a8cad8c536b25127d033468874de5ebd8af
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f417c33d5502f8e5bd247936c8a0f93007239924
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62383587"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68449935"
 ---
 # <a name="messages-class"></a>messages Sınıfı
 
@@ -44,12 +44,12 @@ class messages : public messages_base;
 
 ### <a name="parameters"></a>Parametreler
 
-*CharType*<br/>
+*CharType*\
 Bir program içindeki yerel ayarın karakterlerini kodlamak için kullanılan tür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Herhangi bir yerel ayar modelinde olduğu gibi, statik nesne kimliğinde depolanmış bir başlangıç sıfır değeri bulunur. Depolanan değerine erişmek için yapılan ilk girişim içinde benzersiz bir pozitif değer depolar **kimliği.**
+Herhangi bir yerel ayar modelinde olduğu gibi, statik nesne kimliğinde depolanmış bir başlangıç sıfır değeri bulunur. Depolanan değerine erişmek için yapılan ilk girişim, kimlik içinde benzersiz bir pozitif değer depolar **.**
 
 Bu model, temelde, messages_base temel sınıfında tanımlanan iletilerin kataloğunu açar, gerekli bilgileri alır ve kataloğu kapatır.
 
@@ -57,14 +57,14 @@ Bu model, temelde, messages_base temel sınıfında tanımlanan iletilerin katal
 
 |Oluşturucu|Açıklama|
 |-|-|
-|[İletileri](#messages)|İleti modeli oluşturucu işlevi.|
+|[iletilerine](#messages)|İleti modeli oluşturucu işlevi.|
 
 ### <a name="typedefs"></a>Tür tanımları
 
 |Tür adı|Açıklama|
 |-|-|
 |[char_type](#char_type)|İletileri görüntülemek için kullanılan bir karakter türü.|
-|[string_type](#string_type)|Türü dizeyi tanımlayan tür `basic_string` türü karakterler içeren `CharType`.|
+|[string_type](#string_type)|`basic_string` Türünde`CharType`karakter içeren türde bir dizeyi tanımlayan tür.|
 
 ### <a name="member-functions"></a>Üye işlevleri
 
@@ -79,11 +79,11 @@ Bu model, temelde, messages_base temel sınıfında tanımlanan iletilerin katal
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** \<yerel ayar >
+**Üst bilgi:** \<yerel ayar >
 
-**Namespace:** std
+**Ad alanı:** std
 
-## <a name="char_type"></a>  Messages::char_type
+## <a name="char_type"></a>iletiler:: char_type
 
 İletileri görüntülemek için kullanılan bir karakter türü.
 
@@ -93,9 +93,9 @@ typedef CharType char_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon parametresi için bir eşanlamlı türüdür **CharType**.
+Tür, **CharType**şablon parametresi için bir eş anlamlı.
 
-## <a name="close"></a>  Messages::Close
+## <a name="close"></a>Messages:: Close
 
 İleti kataloğunu kapatır.
 
@@ -105,14 +105,14 @@ void close(catalog _Catval) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*_Catval*<br/>
-Kapatılması Kataloğu.
+*_Catval*\
+Kapatılacak katalog.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlev çağrıları [do_close](#do_close)(_ *Catval*).
+Üye işlevi, [do_close](#do_close)(_ *catval*) öğesini çağırır.
 
-## <a name="do_close"></a>  Messages::do_close
+## <a name="do_close"></a>Mesajlar::d o_close
 
 İleti kataloğunu kapatmak için çağrılan sanal işlev.
 
@@ -122,20 +122,20 @@ virtual void do_close(catalog _Catval) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*_Catval*<br/>
-Kapatılması Kataloğu.
+*_Catval*\
+Kapatılacak katalog.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Korumalı üye işlevi ileti kataloğunu kapatır *_Catval*, hangi gerekir açıldı önceki bir çağrı tarafından [do_open](#do_open).
+Protected member işlevi, daha önceki bir [do_open](#do_open)çağrısıyla açılmış olması gereken Ileti kataloğu *_Catval*'i kapatır.
 
-*_Catval* kapalı önceden açılmış bir kataloğundan elde edilebilir.
+*_Catval* kapalı olmayan daha önce açılmış bir katalogdan alınmalıdır.
 
 ### <a name="example"></a>Örnek
 
-Örneğin bakın [kapatmak](#close), çağıran `do_close`.
+Öğesini çağıran `do_close` [Close](#close)için örneğe bakın.
 
-## <a name="do_get"></a>  Messages::do_get
+## <a name="do_get"></a>Mesajlar::d o_get
 
 İleti kataloğunu almak için çağrılan sanal işlev.
 
@@ -149,31 +149,31 @@ virtual string_type do_get(
 
 ### <a name="parameters"></a>Parametreler
 
-*_Catval*<br/>
-İleti kataloğunu aranacak belirten kimlik değeri.
+*_Catval*\
+Aranacak ileti kataloğunu belirten kimlik değeri.
 
-*_Küme*<br/>
-İlk tanımlanan bir ileti bir ileti Kataloğu'nda bulmak için kullanılır.
+*_Ayarla*\
+İlk tanımlanan bir ileti kataloğunda bir iletiyi bulmak için kullanılır.
 
-*İl_eti*<br/>
-İkinci belirlenen bir ileti bir ileti Kataloğu'nda bulmak için kullanılır.
+*_Ileti*\
+Bir ileti kataloğunda bir iletiyi bulmak için kullanılan ikinci.
 
-*_Dfault*<br/>
-Hata olduğunda döndürülecek dize.
+*_Dfault*\
+Hata durumunda döndürülecek dize.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir kopyasını döndürür *_Dfault* başarısız. Aksi takdirde, belirtilen ileti dizinin bir kopyasını döndürür.
+Hata durumunda *_Dfault* 'in bir kopyasını döndürür. Aksi halde, belirtilen ileti sırasının bir kopyasını döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Korumalı üye işlevi bir ileti sırası iletiyi Kataloğu'ndan almayı dener *_Catval*. Bunu yapabilir kullanım *_Düz*, *il_eti*, ve *_Dfault* böylece.
+Protected member işlevi, ileti kataloğu *_Catval*öğesinden bir ileti sırası edinmeye çalışır. Bunu yapmak için *_,* *_Message*ve *_Dfault* ' ı kullanabilir.
 
 ### <a name="example"></a>Örnek
 
-Örneğin bakın [alma](#get), çağıran `do_get`.
+Çağıran`do_get` [Get](#get)için örneğe bakın.
 
-## <a name="do_open"></a>  Messages::do_open
+## <a name="do_open"></a>Mesajlar::d o_open
 
 İleti kataloğunu açmak için çağrılan sanal işlev.
 
@@ -185,27 +185,27 @@ virtual catalog do_open(
 
 ### <a name="parameters"></a>Parametreler
 
-*_Catname*<br/>
-Aranacak katalog adı.
+*_Catname*\
+Aranacak kataloğun adı.
 
-*_Loc*<br/>
-Katalogda Aranan yerel ayar.
+*_Loc*\
+Katalogda aranan yerel ayar.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Küçüktür sıfır üzerinde hata karşılaştıran bir değer döndürür. Aksi takdirde, döndürülen değer sonraki çağrı sırasında ilk bağımsız değişkeni olarak kullanılabilir [alma](#get).
+Hata durumunda sıfırdan az bir değer karşılaştıran bir değer döndürür. Aksi takdirde, döndürülen değer sonraki bir [Get](#get)çağrısında ilk bağımsız değişken olarak kullanılabilir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Korumalı üye işlev adı olan bir ileti kataloğunu açmayı denediğinde *_Catname*. Bunu yapabilir yerel ayarı kullanmaları *_Loc* böylece
+Korumalı üye işlevi, adı *_Catname*olan bir ileti kataloğunu açmaya çalışır. Bunu yaparken yerel ayar *_Loc ' i* kullanabilir
 
-Dönüş değeri bir sonraki çağrısında bağımsız değişken olarak kullanılması gereken [kapatmak](#close).
+Dönüş değeri, daha sonra [kapatılacak](#close)bir çağrının bağımsız değişkeni olarak kullanılmalıdır.
 
 ### <a name="example"></a>Örnek
 
-Örneğin bakın [açın](#open), çağıran `do_open`.
+Öğesini çağıran `do_open` [Açık](#open)için örneğe bakın.
 
-## <a name="get"></a>  Messages::get
+## <a name="get"></a>Mesajlar:: Get
 
 İleti kataloğunu alır.
 
@@ -219,27 +219,27 @@ string_type get(
 
 ### <a name="parameters"></a>Parametreler
 
-*_Catval*<br/>
-İleti kataloğunu aranacak belirten kimlik değeri.
+*_Catval*\
+Aranacak ileti kataloğunu belirten kimlik değeri.
 
-*_Küme*<br/>
-İlk tanımlanan bir ileti bir ileti Kataloğu'nda bulmak için kullanılır.
+*_Ayarla*\
+İlk tanımlanan bir ileti kataloğunda bir iletiyi bulmak için kullanılır.
 
-*İl_eti*<br/>
-İkinci belirlenen bir ileti bir ileti Kataloğu'nda bulmak için kullanılır.
+*_Ileti*\
+Bir ileti kataloğunda bir iletiyi bulmak için kullanılan ikinci.
 
-*_Dfault*<br/>
-Hata olduğunda döndürülecek dize.
+*_Dfault*\
+Hata durumunda döndürülecek dize.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir kopyasını döndürür *_Dfault* başarısız. Aksi takdirde, belirtilen ileti dizinin bir kopyasını döndürür.
+Hata durumunda *_Dfault* 'in bir kopyasını döndürür. Aksi halde, belirtilen ileti sırasının bir kopyasını döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevinin döndürdüğü [do_get](#do_get)( `_Catval`, `_Set`, `_Message`, `_Dfault`).
+Üye işlevi [do_get](#do_get)döndürür `_Catval`(, `_Set` `_Message` ,,).`_Dfault`
 
-## <a name="messages"></a>  Messages::Messages
+## <a name="messages"></a>Mesajlar:: iletiler
 
 İleti modeli oluşturucu işlevi.
 
@@ -254,27 +254,27 @@ protected: messages(
 
 ### <a name="parameters"></a>Parametreler
 
-*_Refs*<br/>
-Bellek yönetimi için nesne türünü belirtmek için kullanılan tamsayı değeri.
+*_Refs*\
+Nesnenin bellek yönetimi türünü belirtmek için kullanılan tamsayı değeri.
 
-*_Locname*<br/>
-Yerel ayar adı.
+*_Locname*\
+Yerel ayarın adı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Olası değerler için *_Refs* parametresi ve bunların önemi:
+*_Refs* parametresi için olası değerler ve bunların önemi şunlardır:
 
-- 0: Nesnenin ömrünü, onu içeren yerel ayarlar tarafından yönetilir.
+- 0: Nesnenin ömrü, kendisini içeren yerel ayarlara göre yönetilir.
 
-- 1: Nesnenin ömrünü el ile yönetilmesi gerekir.
+- 1: Nesnenin ömrü el ile yönetilmelidir.
 
-- \> 1: Bu değerleri tanımlı değil.
+- \>1: Bu değerler tanımlı değil.
 
-Yok edici korumalı olduğundan doğrudan örnek mümkündür.
+Yok edicisi korunduğu için doğrudan örnek mümkün değildir.
 
-Oluşturucu, temel nesnesiyle başlatır **yerel::**[modeli](../standard-library/locale-class.md#facet_class)( `_Refs`).
+Oluşturucu kendi temel nesnesini **locale::** [model](../standard-library/locale-class.md#facet_class)( `_Refs`) ile başlatır.
 
-## <a name="open"></a>  Messages::Open
+## <a name="open"></a>Messages:: Open
 
 İleti kataloğunu açar.
 
@@ -286,23 +286,23 @@ catalog open(
 
 ### <a name="parameters"></a>Parametreler
 
-*_Catname*<br/>
-Aranacak katalog adı.
+*_Catname*\
+Aranacak kataloğun adı.
 
-*_Loc*<br/>
-Katalogda Aranan yerel ayar.
+*_Loc*\
+Katalogda aranan yerel ayar.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Küçüktür sıfır üzerinde hata karşılaştıran bir değer döndürür. Aksi takdirde, döndürülen değer sonraki çağrı sırasında ilk bağımsız değişkeni olarak kullanılabilir [alma](#get).
+Hata durumunda sıfırdan az bir değer karşılaştıran bir değer döndürür. Aksi takdirde, döndürülen değer sonraki bir [Get](#get)çağrısında ilk bağımsız değişken olarak kullanılabilir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevinin döndürdüğü [do_open](#do_open)( `_Catname`, `_Loc`).
+Üye işlevi [do_open](#do_open)( `_Catname`, `_Loc`) döndürür.
 
-## <a name="string_type"></a>  Messages::string_type
+## <a name="string_type"></a>iletiler:: string_type
 
-Türü dizeyi tanımlayan tür `basic_string` türü karakterler içeren `CharType`.
+`basic_string` Türünde`CharType`karakter içeren türde bir dizeyi tanımlayan tür.
 
 ```cpp
 typedef basic_string<CharType, Traits, Allocator> string_type;
@@ -310,10 +310,10 @@ typedef basic_string<CharType, Traits, Allocator> string_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Türü tanımlayan Şablon sınıfı bir alt uzmanlaşması [basic_string](../standard-library/basic-string-class.md) ileti dizileri kopyalarını, nesneleri depolayabilirsiniz.
+Türü, [basic_string](../standard-library/basic-string-class.md) şablon sınıfının, nesneleri ileti sıralarının kopyalarını depolayabilen bir özelleştirmesi tanımlar.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[\<yerel ayar >](../standard-library/locale.md)<br/>
-[messages_base Sınıfı](../standard-library/messages-base-class.md)<br/>
-[C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
+[\<Yerel ayar >](../standard-library/locale.md)\
+[messages_base sınıfı](../standard-library/messages-base-class.md)\
+[C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)

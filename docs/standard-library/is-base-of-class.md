@@ -7,16 +7,16 @@ helpviewer_keywords:
 - is_base_of class
 - is_base_of
 ms.assetid: 436f6213-1d4c-4ffc-a588-fc7c4887dd86
-ms.openlocfilehash: 345301b5eeed7b66f18a54e56b9bee6346078634
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: d56222f218033d00583e5e3def9790720ef7bb94
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62383678"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68456615"
 ---
 # <a name="isbaseof-class"></a>is_base_of Sınıfı
 
-Başka birine temel bir tür olup olmadığını sınar.
+Bir türün başka bir temel olup olmadığını test eder.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -27,15 +27,15 @@ struct is_base_of;
 
 ### <a name="parameters"></a>Parametreler
 
-*temel*<br/>
-Test etmek için temel sınıf.
+*Temel*\
+Sınanacak temel sınıf.
 
-*Türetilmiş*<br/>
-Test etmek için türetilmiş türü.
+*Miþ*\
+Test edilecek türetilmiş tür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Karşılaştırmasının bir örneği true tutan türü *temel* bir temel sınıf türünün *türetilmiş*, aksi takdirde false tutar.
+Tür *tabanı* , *türetilmiş*türün temel sınıfı ise true, aksi takdirde false barındırır.
 
 ## <a name="example"></a>Örnek
 
@@ -74,11 +74,11 @@ is_base_of<derived, base> == false
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** \<type_traits >
+**Üst bilgi:** \<type_traits >
 
-**Namespace:** std
+**Ad alanı:** std
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[<type_traits>](../standard-library/type-traits.md)<br/>
-[is_convertible Sınıfı](../standard-library/is-convertible-class.md)<br/>
+[< type_traits >](../standard-library/type-traits.md)\
+[is_convertible Sınıfı](../standard-library/is-convertible-class.md)

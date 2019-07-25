@@ -16,16 +16,16 @@ helpviewer_keywords:
 - stdext::max_fixed_size [C++], released
 - stdext::max_fixed_size [C++], saved
 ms.assetid: 8c8f4588-37e9-4579-8168-ba3553800914
-ms.openlocfilehash: 08510ecc3b7469e8f88a61dcb0df28541e170892
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: bbc39a169f9a4bbac3e78b208b3a1a31e4e30ff2
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62412962"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68456371"
 ---
 # <a name="maxfixedsize-class"></a>max_fixed_size Sınıfı
 
-Açıklar bir [sınıfı en fazla](../standard-library/allocators-header.md) sınırlayan nesne bir [freelist](../standard-library/freelist-class.md) nesne sabit en büyük uzunluğu.
+[Freelist](../standard-library/freelist-class.md) nesnesini sabit maksimum uzunlukla sınırlayan bir [Max Class](../standard-library/allocators-header.md) nesnesi tanımlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -38,33 +38,33 @@ class max_fixed_size
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|*en fazla*|Depolamak için öğelerin maksimum sayısını belirleyen max sınıfı `freelist`.|
+|*en fazla*|İçinde depolanacak en fazla öğe sayısını belirleyen Max sınıfı `freelist`.|
 
 ### <a name="constructors"></a>Oluşturucular
 
 |Oluşturucu|Açıklama|
 |-|-|
-|[max_fixed_size](#max_fixed_size)|Türünde bir nesne oluşturur `max_fixed_size`.|
+|[max_fixed_size](#max_fixed_size)|Türünde `max_fixed_size`bir nesne oluşturur.|
 
 ### <a name="member-functions"></a>Üye işlevleri
 
 |Üye işlevi|Açıklama|
 |-|-|
-|[ayrılmış](#allocated)|Ayrılmış bellek bloğu sayısını artırır.|
-|[Serbest bırakıldı](#deallocated)|Azaltır, bellek bloğu sayısı tahsis edilir.|
-|[Tam](#full)|Daha fazla bellek blokları serbest listeye eklenmesi gerekip gerekmediğini belirten bir değeri döndürür.|
-|[Yayımlanan](#released)|Boş liste bellek sayısı engeller azaltır.|
-|[kaydedildi](#saved)|Boş listede bellek bloğu sayısını artırır.|
+|[ayrılabilir](#allocated)|Ayrılan bellek bloklarının sayısını artırır.|
+|[iptal](#deallocated)|Ayrılan bellek bloklarının sayısını azaltır.|
+|[tümünü](#full)|Boş listeye daha fazla bellek bloğu eklenip eklenmeyeceğini belirten bir değer döndürür.|
+|[yayımlanacak](#released)|, Ücretsiz listedeki bellek bloklarının sayısını azaltır.|
+|[kaydedildiğini](#saved)|Ücretsiz listedeki bellek bloklarının sayısını artırır.|
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** \<ayırıcılar >
+**Üst bilgi:** \<ayrıcılar >
 
-**Namespace:** stdext
+**Ad alanı:** stdext
 
 ## <a name="allocated"></a>  max_fixed_size::allocated
 
-Ayrılmış bellek bloğu sayısını artırır.
+Ayrılan bellek bloklarının sayısını artırır.
 
 ```cpp
 void allocated(std::size_t _Nx = 1);
@@ -78,11 +78,11 @@ void allocated(std::size_t _Nx = 1);
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlev hiçbir şey yapmaz. Her başarılı çağrı tarafından sonra bu üye işlevi çağrılan `cache_freelist::allocate` işleci **yeni**. Bağımsız değişken *_Nx* öbek işleci tarafından ayrılan bellek bloğu sayısı **yeni**.
+Üye işlevi hiçbir şey yapmaz. Bu üye işlevi, her başarılı çağrıdan `cache_freelist::allocate` sonra **New**işlecine kadar çağrılır. *_Nx* bağımsız değişkeni, **New**işlecine göre ayrılan öbekteki bellek bloklarının sayısıdır.
 
 ## <a name="deallocated"></a>  max_fixed_size::deallocated
 
-Azaltır, bellek bloğu sayısı tahsis edilir.
+Ayrılan bellek bloklarının sayısını azaltır.
 
 ```cpp
 void deallocated(std::size_t _Nx = 1);
@@ -96,11 +96,11 @@ void deallocated(std::size_t _Nx = 1);
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlev hiçbir şey yapmaz. Bu üye işlevi, her bir çağrı tarafından sonra çağrılan `cache_freelist::deallocate` işleci **Sil**. Bağımsız değişken *_Nx* işleci ile serbest Öbek bellek bloğu sayısı **Sil**.
+Üye işlevi hiçbir şey yapmaz. Bu üye işlevi, her çağrıdan `cache_freelist::deallocate` sonra işleç **Delete**'e kadar çağrılır. *_Nx* bağımsız değişkeni, işleç **silme**tarafından serbest bırakılmış öbek içindeki bellek bloklarının sayısıdır.
 
 ## <a name="full"></a>  max_fixed_size::full
 
-Daha fazla bellek blokları serbest listeye eklenmesi gerekip gerekmediğini belirten bir değeri döndürür.
+Boş listeye daha fazla bellek bloğu eklenip eklenmeyeceğini belirten bir değer döndürür.
 
 ```cpp
 bool full();
@@ -108,15 +108,15 @@ bool full();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**doğru** varsa `Max <= _Nblocks`; Aksi takdirde **false**.
+**true** ise `Max <= _Nblocks`true, aksi durumda **false**.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi çağıran `cache_freelist::deallocate`. Çağrısında **true**, `deallocate` false döndürürse, bellek bloğu boş liste; koyar `deallocate` çağrıları işleci **Sil** ayırması için blok.
+Bu üye işlevi tarafından `cache_freelist::deallocate`çağrılır. Çağrı **true**döndürürse, `deallocate` bellek bloğunu ücretsiz listeye koyar; yanlış döndürürse, `deallocate` blok serbest bırakmak için işleç **silme** yöntemini çağırır.
 
 ## <a name="max_fixed_size"></a>  max_fixed_size::max_fixed_size
 
-Türünde bir nesne oluşturur `max_fixed_size`.
+Türünde `max_fixed_size`bir nesne oluşturur.
 
 ```cpp
 max_fixed_size();
@@ -124,11 +124,11 @@ max_fixed_size();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu oluşturucu depolanan değeri başlatır `_Nblocks` sıfır.
+Bu Oluşturucu, depolanan değeri `_Nblocks` sıfır olarak başlatır.
 
 ## <a name="released"></a>  max_fixed_size::released
 
-Boş liste bellek sayısı engeller azaltır.
+, Ücretsiz listedeki bellek bloklarının sayısını azaltır.
 
 ```cpp
 void released();
@@ -136,11 +136,11 @@ void released();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Azaltır depolanan değeri `_Nblocks`. `released` Üye işlevi geçerli [sınıfı en fazla](../standard-library/allocators-header.md) tarafından çağrılır `cache_freelist::allocate` olduğunda, bir bellek bloğu boş listeden kaldırır.
+Depolanan değeri `_Nblocks`azaltır. Geçerli Max [sınıfının](../standard-library/allocators-header.md) `cache_freelist::allocate` üye işlevi, boş listeden bir bellek bloğunu her kaldırdığında tarafından çağrılır. `released`
 
 ## <a name="saved"></a>  max_fixed_size::saved
 
-Boş listede bellek bloğu sayısını artırır.
+Ücretsiz listedeki bellek bloklarının sayısını artırır.
 
 ```cpp
 void saved();
@@ -148,8 +148,8 @@ void saved();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi depolanan değeri artırır `_Nblocks`. Bu üye işlevi çağıran `cache_freelist::deallocate` zaman bunu koyar bir bellek bloğu boş liste.
+Bu üye işlevi, depolanan değeri `_Nblocks`arttırır. Bu üye işlevi, her bir `cache_freelist::deallocate` bellek bloğunu ücretsiz listeye yerleştirdiğinde tarafından çağrılır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[\<Ayırıcılar >](../standard-library/allocators-header.md)<br/>
+[\<ayrıcılar >](../standard-library/allocators-header.md)

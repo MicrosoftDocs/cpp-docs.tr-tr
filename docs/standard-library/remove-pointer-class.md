@@ -7,12 +7,12 @@ helpviewer_keywords:
 - remove_pointer class
 - remove_pointer
 ms.assetid: 2cd4e417-32fb-4f53-bd16-4e8a98240832
-ms.openlocfilehash: 6bc735af1c1af292b32b56aae599eef019836254
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 786a1cba5fc35014e33e3e19245271adefec1372
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62368870"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68451249"
 ---
 # <a name="removepointer-class"></a>remove_pointer Sınıfı
 
@@ -30,12 +30,12 @@ using remove_pointer_t = typename remove_pointer<T>::type;
 
 ### <a name="parameters"></a>Parametreler
 
-*T*<br/>
+*ŞI*\
 Değiştirilecek tür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Örneği `remove_pointer<T>` bir değişiklik-tür tutar `T1` olduğunda *T* biçimindedir `T1*`, `T1* const`, `T1* volatile`, veya `T1* const volatile`, aksi takdirde *T*.
+Bir `remove_pointer<T>` örneği, *t* , `T1*` `T1` ,veya`T1* volatile` , değilse t biçiminde olan bir değiştirilmiş türü tutar. `T1* const volatile` `T1* const`
 
 ## <a name="example"></a>Örnek
 
@@ -61,11 +61,11 @@ remove_pointer_t<int *> == int
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** \<type_traits >
+**Üst bilgi:** \<type_traits >
 
-**Namespace:** std
+**Ad alanı:** std
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[<type_traits>](../standard-library/type-traits.md)<br/>
-[add_pointer Sınıfı](../standard-library/add-pointer-class.md)<br/>
+[< type_traits >](../standard-library/type-traits.md)\
+[add_pointer Sınıfı](../standard-library/add-pointer-class.md)

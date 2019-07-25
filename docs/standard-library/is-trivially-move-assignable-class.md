@@ -6,16 +6,16 @@ f1_keywords:
 helpviewer_keywords:
 - is_trivially_move_assignable
 ms.assetid: 374f7322-0706-4bc1-a1a5-4191d0315e28
-ms.openlocfilehash: b25d16658def4e3cf620ab707d2dabacb2620f33
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 324e4a1f1bd3528f09f21c5e485ac814038b7517
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62413403"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68448376"
 ---
 # <a name="istriviallymoveassignable-class"></a>is_trivially_move_assignable sınıfı
 
-Önemsiz taşıma atama işleci türünde olup olmadığını sınar.
+Türün bir önemsiz taşıma atama işlecine sahip olup olmadığını sınar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -26,31 +26,31 @@ struct is_trivially_move_assignable;
 
 ### <a name="parameters"></a>Parametreler
 
-*Ty*<br/>
+*Kalite*\
 Sorgulanacak tür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Karşılaştırmasının bir örneği true tutan türü *Ty* false tuttuğu Önemsiz taşıma atama işleci, aksi takdirde sahip bir sınıftır.
+Tür değeri, önemsiz taşıma atama operatörü olan bir sınıfdaysa  , tür koşulu true, aksi takdirde false barındırır.
 
-Bir sınıf için bir taşıma atama işlecini *Ty* gereksizse, varsa:
+Sınıf *Ty* için bir taşıma atama işleci şu durumlarda önemsiz:
 
-örtük olarak sağlanan
+örtülü olarak sağlanır
 
-sınıf *Ty* sahip sanal işlev yok
+sınıf *Ty* 'nin sanal işlevleri yok
 
-sınıf *Ty* hiçbir sanal temellere sahip
+sınıf *Ty* 'nin sanal tabanı yok
 
-tüm statik olmayan veri üyeleri sınıf türünün sınıflarını sahip Önemsiz taşıma atama işleçleri
+sınıf türündeki tüm statik olmayan veri üyelerinin sınıfları, önemsiz taşıma atama işleçlerine sahiptir
 
-Önemsiz taşıma atama işleçleri dizi sınıf türünde tüm statik olmayan veri üyelerinin sınıflarını sahip
+Sınıf dizisi türündeki tüm statik olmayan veri üyelerinin sınıfları, önemsiz taşıma atama işleçlerine sahiptir
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** \<type_traits >
+**Üst bilgi:** \<type_traits >
 
-**Namespace:** std
+**Ad alanı:** std
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[<type_traits>](../standard-library/type-traits.md)<br/>
+[<type_traits>](../standard-library/type-traits.md)

@@ -7,16 +7,16 @@ helpviewer_keywords:
 - add_cv class
 - add_cv
 ms.assetid: a5572c78-a097-45d7-b476-ed4876889dea
-ms.openlocfilehash: 37001815710b197ec77ed0d45a16ea971ad1edce
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 0cc63558ea392976bd6a3c5a43735c592e4606b4
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62411233"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68456590"
 ---
 # <a name="addcv-class"></a>add_cv Sınıfı
 
-Yapar **const volatile** türünden türü.
+Türünden **const geçici** tür yapar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -30,14 +30,14 @@ using add_cv_t = typename add_cv<T>::type;
 
 ### <a name="parameters"></a>Parametreler
 
-*T*<br/>
+*ŞI*\
 Değiştirilecek tür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Değiştirilen türün bir örneğini `add_cv<T>` sahip bir `type` üye **typedef** eşdeğer *T* tarafından ikisi de değiştirlildi [add_volatile](../standard-library/add-volatile-class.md) ve [ add_const](../standard-library/add-const-class.md)sürece *T* zaten cv niteleyicileri olan, bir başvuru veya bir işlevdir.
+Değiştirilen türün `add_cv<T>` bir örneği, *t* zaten CV niteleyicilerine sahip olmadığı, bir başvuru veya bir değer olduğu müddetçe, hem [add_volatile](../standard-library/add-volatile-class.md) hem de [add_const](../standard-library/add-const-class.md)tarafından değiştirilen bir `type` üye **typedef** *öğesine sahiptir* . çalışmayacaktır.
 
-`add_cv_t<T>` Yardımcısı türüdür erişmek için bir kısayol `add_cv<T>` üye typedef `type`.
+Yardımcı türü, typedef `add_cv<T>` `type`üyesine erişmek için bir kısayoldur. `add_cv_t<T>`
 
 ## <a name="example"></a>Örnek
 
@@ -86,12 +86,12 @@ invoked const volatile S.f()
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** \<type_traits >
+**Üst bilgi:** \<type_traits >
 
-**Namespace:** std
+**Ad alanı:** std
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[<type_traits>](../standard-library/type-traits.md)<br/>
-[remove_const Sınıfı](../standard-library/remove-const-class.md)<br/>
-[remove_volatile Sınıfı](../standard-library/remove-volatile-class.md)<br/>
+[< type_traits >](../standard-library/type-traits.md)\
+[remove_const sınıfı](../standard-library/remove-const-class.md)\
+[remove_volatile Sınıfı](../standard-library/remove-volatile-class.md)

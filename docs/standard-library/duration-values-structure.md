@@ -7,16 +7,16 @@ f1_keywords:
 - chrono/std::chrono::duration_values::min
 - chrono/std::chrono::duration_values::zero
 ms.assetid: 7f66d2e3-1faf-47c3-b47e-08f2a87f20e8
-ms.openlocfilehash: bc382bbc408b11cbc18210f3ab944dda39adc8f2
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: ba4b202a5c8c6da742ac884bf58a5b8c55373d14
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62413781"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68454296"
 ---
 # <a name="durationvalues-structure"></a>duration_values Yapısı
 
-İçin belirli değerler sağlar [süresi](../standard-library/duration-class.md) şablon parametresi `Rep`.
+[Süre](../standard-library/duration-class.md) şablon parametresi `Rep`için belirli değerler sağlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -31,19 +31,19 @@ struct duration_values;
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[en fazla](#max)|Statik. Türünde bir değer üst sınırını belirtir `Rep`.|
-|[Min](#min)|Statik. Türündeki bir değerin alt sınırını belirtir `Rep`.|
-|[Sıfır](#zero)|Statik. Döndürür `Rep(0)`.|
+|[max](#max)|Se. Türünde `Rep`bir değer için üst sınırı belirtir.|
+|[min](#min)|Se. Türünde `Rep`bir değer için alt sınırı belirtir.|
+|[sıfırlama](#zero)|Se. Döndürür `Rep(0)`.|
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** \<chrono >
+**Üst bilgi:** \<> hatası
 
-**Namespace:** std::chrono
+**Ad alanı:** std:: hatası
 
-## <a name="max"></a>  duration_values::Max
+## <a name="max"></a>duration_values:: Max
 
-Türündeki değerlerin üst sınırını döndüren statik yöntem `Ref`.
+Türündeki `Ref`değerler için üst sınırı döndüren statik yöntem.
 
 ```cpp
 static constexpr Rep max();
@@ -51,15 +51,15 @@ static constexpr Rep max();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Aslında döndürür `numeric_limits<Rep>::max()`.
+Aslında, döndürür `numeric_limits<Rep>::max()`.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Zaman `Rep` bir kullanıcı tanımlı tür olduğunda döndürülen değer değerinden büyük olmalıdır [duration_values::zero](#zero).
+Kullanıcı `Rep` tanımlı bir tür olduğunda, dönüş değeri [duration_values:: Zero](#zero)değerinden büyük olmalıdır.
 
-## <a name="min"></a>  duration_values::Min
+## <a name="min"></a>duration_values:: min
 
-Türündeki değerlerin alt sınırını döndüren statik yöntem `Ref`.
+Türündeki `Ref`değerler için alt sınır döndüren statik yöntem.
 
 ```cpp
 static constexpr Rep min();
@@ -67,13 +67,13 @@ static constexpr Rep min();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Aslında döndürür `numeric_limits<Rep>::lowest()`.
+Aslında, döndürür `numeric_limits<Rep>::lowest()`.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Zaman `Rep` bir kullanıcı tanımlı tür olduğunda döndürülen değer veya buna eşit olmalıdır [duration_values::zero](#zero).
+Kullanıcı `Rep` tanımlı bir tür olduğunda, dönüş değeri [duration_values:: Zero](#zero)değerinden küçük veya buna eşit olmalıdır.
 
-## <a name="zero"></a>  duration_values::Zero
+## <a name="zero"></a>duration_values:: Zero
 
 Döndürür `Rep(0)`.
 
@@ -83,9 +83,9 @@ static constexpr Rep zero();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Zaman `Rep` bir kullanıcı tanımlı tür olduğunda döndürülen değer artırıcı sonsuzu göstermelidir.
+Kullanıcı `Rep` tanımlı bir tür olduğunda, dönüş değeri, eklenebilir sonsuzu temsil etmelidir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Üstbilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md)<br/>
-[\<chrono >](../standard-library/chrono.md)<br/>
+[Üst bilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md)\
+[\<> hatası](../standard-library/chrono.md)

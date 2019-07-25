@@ -6,16 +6,16 @@ f1_keywords:
 helpviewer_keywords:
 - linear_congruential_engine class
 ms.assetid: 30e00ca6-1933-4701-9561-54f3e810a5a1
-ms.openlocfilehash: 41ce5590476a8327c9449ece5e3173146a04760f
-ms.sourcegitcommit: 28eae422049ac3381c6b1206664455dbb56cbfb6
+ms.openlocfilehash: f5b448fbf158cf9e9cfb8331c6ec7a228859fffc
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66449899"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68447581"
 ---
 # <a name="linearcongruentialengine-class"></a>linear_congruential_engine Sınıfı
 
-Çizgisel eşleşik algoritmasını tarafından rastgele bir sıra üretir.
+Doğrusal uyumlu algoritmayla rastgele bir sıra üretir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -45,17 +45,17 @@ class linear_congruential_engine{
 
 ### <a name="parameters"></a>Parametreler
 
-*UIntType*<br/>
-İşeritsiz tamsayı sonuç türü. Olası türleri için bkz: [ \<rastgele >](../standard-library/random.md).
+*UIntType*\
+İşaretsiz tamsayı sonuç türü. Olası türler için bkz [ \<. Random >](../standard-library/random.md).
 
-*A*<br/>
-**Çarpan**. **Önkoşul**: Açıklamalar bölümüne bakın.
+*A*\
+**Çarpan**. **Önkoşul**: Bkz. açıklamalar bölümü.
 
-*C*<br/>
-**Artırma**. **Önkoşul**: Açıklamalar bölümüne bakın.
+*,* \
+**Artış**. **Önkoşul**: Bkz. açıklamalar bölümü.
 
-*M*<br/>
-**Modulus**. **Önkoşul**: Açıklamalara bakın.
+*M*\
+**Mod**. **Önkoşul**: Bkz. açıklamalar.
 
 ## <a name="members"></a>Üyeler
 
@@ -64,42 +64,42 @@ class linear_congruential_engine{
 |`linear_congruential_engine::linear_congruential_engine`|`linear_congruential_engine::min`|`linear_congruential_engine::discard`|
 |`linear_congruential_engine::operator()`|`linear_congruential_engine::max`|`linear_congruential_engine::seed`|
 
-`default_seed` üye sabit, olarak tanımlı `1u`için varsayılan parametre değeri olarak kullanılır `linear_congruential_engine::seed` ve tek değer Oluşturucusu.
+`default_seed``1u`, için`linear_congruential_engine::seed` varsayılan parametre değeri olarak kullanılan, ve tek değer Oluşturucusu olarak tanımlanmış bir üye sabiti.
 
-Altyapısı üyeleri hakkında daha fazla bilgi için bkz. [ \<rastgele >](../standard-library/random.md).
+Altyapı üyeleri hakkında daha fazla bilgi için bkz [ \<. Random >](../standard-library/random.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-`linear_congruential_engine` Şablon sınıfı, en basit Oluşturucu altyapısı, ancak hızlı veya yüksek kalite değil. Bu altyapı üzerinden bir iyileştirmedir [substract_with_carry_engine](../standard-library/subtract-with-carry-engine-class.md). Hızlı veya bu altyapılar hiçbiri değildir yüksek kaliteli sonuçlar olarak [mersenne_twister_engine](../standard-library/mersenne-twister-engine-class.md).
+`linear_congruential_engine` Şablon sınıfı en hızlı veya en yüksek kaliteyi değil, en basit Oluşturucu altyapısıdır. Bu altyapıya yönelik bir geliştirme [substract_with_carry_engine](../standard-library/subtract-with-carry-engine-class.md). Bu altyapılardan hiçbiri hızlı veya [mersenne_twister_engine](../standard-library/mersenne-twister-engine-class.md)olarak yüksek kaliteli sonuçlar olarak değildir.
 
-Bu altyapı yinelenme ilişkisini kullanarak bir kullanıcı tarafından belirtilen işeritsiz tamsayı türünü değerlerini üretir ( *süresi*) `x(i) = (A * x(i-1) + C) mod M`.
+Bu altyapı, bir kullanıcı tarafından belirtilen işaretsiz integral türünün değerlerini yineleme ilişkisini ( *period*) `x(i) = (A * x(i-1) + C) mod M`kullanarak üretir.
 
-Varsa *M* sıfırsa, bu mod işlemi için kullanılan değer `numeric_limits<result_type>::max() + 1`. İçin hiçbir çağrı yapılır altyapının durumu son döndürülen değer veya çekirdek değeri ise `operator()`.
+*D* sıfırsa, bu mod işlemi `numeric_limits<result_type>::max() + 1`için kullanılan değer. Altyapının durumu döndürülen son değer ya da hiçbir çağrı yapılmediğinde `operator()`çekirdek değeri.
 
-Varsa *M* sıfır olmayan şablon bağımsız değişkenlerinin değerleri olan *A* ve *C* olmalıdır küçüktür *M*.
+*M* sıfır değilse, *a* ve *C* şablon bağımsız değişkenlerinin değerleri *M*'den küçük olmalıdır.
 
-Doğrudan bu altyapısından bir oluşturucuyu oluşturmak olsa da, önceden tanımlanmış bu tür tanımlarından birini de kullanabilirsiniz.
+Bu altyapıdan doğrudan bir Oluşturucu oluşturabilseniz de, bu önceden tanımlanmış Typedefs değerlerinden birini de kullanabilirsiniz.
 
-`minstd_rand0`: 1988 en az standart altyapısı (Gamze, Goodman ve Miller, 1969).
+`minstd_rand0`: 1988 en düşük standart altyapı (Liwis, Goodman ve Miller, 1969).
 
 ```cpp
 typedef linear_congruential_engine<unsigned int, 16807, 0, 2147483647> minstd_rand0;
 ```
 
-`minstd_rand`: Güncelleştirilmiş en az standart altyapısını `minstd_rand0` (Park, Miller ve Stockmeyer, 1993).
+`minstd_rand`: Minimum standart motor `minstd_rand0` (Park, Miller ve Stockmeyer, 1993) güncelleştirildi.
 
 ```cpp
 typedef linear_congruential_engine<unsigned int, 48271, 0, 2147483647> minstd_rand;
 ```
 
-Çizgisel eşleşik altyapısı algoritma hakkında ayrıntılı bilgi için bkz. Wikipedia makalesi [çizgisel eşleşik Oluşturucu](https://go.microsoft.com/fwlink/p/?linkid=402446).
+Doğrusal bir eş altyapı algoritması hakkında ayrıntılı bilgi için bkz. Vikipedi makalesi [Doğrusal congruize Oluşturucu](https://go.microsoft.com/fwlink/p/?linkid=402446).
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** \<rastgele >
+**Üst bilgi:** \<rastgele >
 
-**Namespace:** std
+**Ad alanı:** std
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[\<rastgele >](../standard-library/random.md)<br/>
+[\<Rastgele >](../standard-library/random.md)

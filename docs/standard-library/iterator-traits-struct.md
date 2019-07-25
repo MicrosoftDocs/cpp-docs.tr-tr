@@ -7,16 +7,16 @@ helpviewer_keywords:
 - iterator_traits struct
 - iterator_traits class
 ms.assetid: 8b92c2c5-f658-402f-8ca1-e7ae301b8514
-ms.openlocfilehash: 6fe9e2d576afcacc7d014d4f5c920ecab3a83fc9
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 9d2f9d79d200579f539f7d9edc49d4a907e6cdb2
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62224046"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68455577"
 ---
 # <a name="iteratortraits-struct"></a>iterator_traits Yapısı
 
-Bir yineleyici olması gereken tüm kritik tür tanımlarını belirtmek için kullanılan bir şablon Yardımcısı yapı.
+Bir yineleyicinin sahip olması gereken tüm kritik tür tanımlarını belirtmek için kullanılan bir şablon Yardımcısı yapısı.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -33,23 +33,23 @@ struct iterator_traits {
 
 ## <a name="remarks"></a>Açıklamalar
 
-Şablon yapı üye türleri tanımlar.
+Şablon yapısı üye türlerini tanımlar
 
-- `iterator_category`: bir eşanlamlısı `Iterator::iterator_category`.
+- `iterator_category`: için `Iterator::iterator_category`bir eş anlamlı.
 
-- `value_type`: bir eşanlamlısı `Iterator::value_type`.
+- `value_type`: için `Iterator::value_type`bir eş anlamlı.
 
-- `difference_type`: bir eşanlamlısı `Iterator::difference_type`.
+- `difference_type`: için `Iterator::difference_type`bir eş anlamlı.
 
-- `distance_type`: bir eşanlamlısı `Iterator::difference_type.`
+- `distance_type`: için bir eş anlamlı`Iterator::difference_type.`
 
-- `pointer`: bir eşanlamlısı `Iterator::pointer`.
+- `pointer`: için `Iterator::pointer`bir eş anlamlı.
 
-- `reference`: bir eşanlamlısı `Iterator::reference`.
+- `reference`: için `Iterator::reference`bir eş anlamlı.
 
-Bir nesne işaretçisi türü ile ilişkili kritik türler kısmi uzmanlıklar belirlemek **türü** <strong>\*</strong> veya **const türünde**  <strong>\*</strong>.
+Kısmi uzmanlık, **tür** <strong>\*</strong> veya **const türünde** <strong>\*</strong>bir nesne işaretçiyle ilişkili kritik türleri tespit.
 
-Ayrıca bu uygulamada, kısmi alt uzmanlaşması haline getirmez birkaç şablon işlevleri kullanın:
+Bu uygulamada, kısmi özelleşmenin kullanıldığı çeşitli şablon işlevleri de kullanabilirsiniz:
 
 ```cpp
 template <class Category, class Type, class Diff>
@@ -71,7 +71,7 @@ template <class Ty>
 ptrdiff_t *_Dist_type(const Ty *);
 ```
 
-hangi birkaç aynı tür daha dolaylı olarak belirleyin. Bu işlevler bir işlev çağrısında bağımsız değişkenleri olarak kullanın. Kullanıcıların tek amacı çağrılan işlev için kullanışlı bir şablon sınıfı parametresi sağlayın sağlamaktır.
+aynı türden birkaçını daha dolaylı olarak belirleyen. Bu işlevleri bir işlev çağrısında bağımsız değişken olarak kullanırsınız. Tek amaçları, çağrılan işleve yararlı bir şablon sınıfı parametresi sağlamaktır.
 
 ## <a name="example"></a>Örnek
 
@@ -118,12 +118,12 @@ struct std::bidirectional_iterator_tag
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** \<yineleyici >
+**Üst bilgi:** \<Yineleyici >
 
-**Namespace:** std
+**Ad alanı:** std
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[\<Yineleyici >](../standard-library/iterator.md)<br/>
-[C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
-[C++ Standart Kitaplığı Başvurusu](../standard-library/cpp-standard-library-reference.md)<br/>
+[\<Yineleyici >](../standard-library/iterator.md)\
+[C++ Standart kitaplıkta Iş parçacığı güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)\
+[C++ Standart Kitaplığı Başvurusu](../standard-library/cpp-standard-library-reference.md)

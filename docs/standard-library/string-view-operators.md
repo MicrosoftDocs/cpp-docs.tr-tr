@@ -17,26 +17,26 @@ helpviewer_keywords:
 - std::basic_string_view::operator&lt;
 - std::basic_string_view::operator&lt;&lt;
 - std::basic_string_view::operator&lt;=, std::basic_string_view::operator==
-ms.openlocfilehash: 1fbb7faf7d6fc92a053c0f4d47575c5c53c7968e
-ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
+ms.openlocfilehash: caa6e515428cc0ea767eef20e819753c8f7ff8f9
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "64346631"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68459214"
 ---
 # <a name="ltstringviewgt-operators"></a>&lt;string_view&gt; işleçleri
 
-İki string_view nesnesi veya bir string_view ve başka bir dize nesnesinin karşılaştırmak için bu işleçler kullanın (örneğin [std::string](basic-string-class.md), veya **char\***) için sağlanan bir örtük dönüştürme. 
+Bu işleçleri kullanarak iki string_view nesnesini veya bir string_view ve diğer bir dize nesnesini (örneğin, [std:: String](basic-string-class.md)veya **char\*** ), örtük bir dönüştürmenin sağlandığı bir şekilde karşılaştırın. 
 
 ||||
 |-|-|-|
-|[operator!=](#op_neq)|[İşleci&gt;](#op_gt)|[İşleci&gt;=](#op_gt_eq)|
-|[İşleci&lt;](#op_lt)|[İşleci&lt;&lt;](#op_lt_lt)|[İşleci&lt;=](#op_lt_eq)|
-|[operator==](#op_eq_eq)|[işleç""sv](#op_sv)|
+|[operator!=](#op_neq)|[işlecinde&gt;](#op_gt)|[işlecinde&gt;=](#op_gt_eq)|
+|[işlecinde&lt;](#op_lt)|[işlecinde&lt;&lt;](#op_lt_lt)|[işlecinde&lt;=](#op_lt_eq)|
+|[operator==](#op_eq_eq)|["" SV işleci](#op_sv)|
 
-## <a name="op_neq"></a> işleç! =
+## <a name="op_neq"></a>işleç! =
 
-İşlecin sol tarafındaki nesne işlecin sağ tarafındaki nesneye eşit olup olmadığını sınar.
+İşlecin sol tarafındaki nesnenin sağ taraftaki nesneye eşit olup olmadığını sınar.
 
 ```cpp
 template <class CharType, class Traits>
@@ -57,25 +57,25 @@ bool operator!=(
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*<br/>
-Herhangi bir dönüştürülebilir dize türü veya bir nesne türü `basic_string_view` karşılaştırılmalıdır.
+*tarafta*\
+Herhangi bir dönüştürülebilir dize türü veya Karşılaştırılacak türü `basic_string_view` bir nesne.
 
-*sağ*<br/>
-Herhangi bir dönüştürülebilir dize türü veya bir nesne türü `basic_string_view` karşılaştırılmalıdır.
+*Right*\
+Herhangi bir dönüştürülebilir dize türü veya Karşılaştırılacak türü `basic_string_view` bir nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**doğru** işlecinin sol tarafındaki nesnesi değilse, lexicographically işlecin sağ tarafındaki nesneye eşitse; Aksi takdirde **false**.
+işlecin sol tarafındaki nesne sağ taraftaki nesneye sözcüıgrafik eşit değilse **true** ; Aksi halde **yanlış**.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Örtük bir dönüştürme var olmalıdır *convertible_string_type* diğer tarafında string_view için. 
+Örtük bir dönüştürme, *convertible_string_type* 'den diğer taraftaki string_view 'e varolmalıdır. 
 
-Karşılaştırma ikili üzerinde temel karakter sıralarının lexicographical karşılaştırma. Bunlar aynı sayıda öğe varsa ve öğeleri tüm eşitse, iki nesne eşit olur. Aksi takdirde, eşit oldukları.
+Karşılaştırma, karakter sıralarının ikili bir lexıgraf karşılaştırmasını temel alır. Aynı sayıda öğe varsa ve öğelerin tümü eşitse, iki nesne eşittir. Aksi takdirde, bunlar eşit değildir.
 
-## <a name="op_eq_eq"></a> işleç ==
+## <a name="op_eq_eq"></a>işleç = =
 
-İşlecin sol tarafındaki nesnesinin işlecin sağ tarafındaki nesneye eşit olup olmadığını sınar.
+İşlecin sol tarafındaki nesnenin sağ taraftaki nesneye eşit olup olmadığını sınar.
 
 ```cpp
 template <class CharType, class Traits>
@@ -96,26 +96,26 @@ bool operator==(
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*<br/>
-Herhangi bir dönüştürülebilir dize türü veya bir nesne türü `basic_string_view` karşılaştırılmalıdır.
+*tarafta*\
+Herhangi bir dönüştürülebilir dize türü veya Karşılaştırılacak türü `basic_string_view` bir nesne.
 
-*sağ*<br/>
-Herhangi bir dönüştürülebilir dize türü veya bir nesne türü `basic_string_view` karşılaştırılmalıdır.
+*Right*\
+Herhangi bir dönüştürülebilir dize türü veya Karşılaştırılacak türü `basic_string_view` bir nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**doğru** nesnesinin işlecin sol tarafındaki olup olmadığını lexicographically işlecin sağ tarafındaki nesneye eşitse; Aksi takdirde **false**.
+işlecin sol tarafındaki nesne sağ taraftaki nesneye sözcüıgrafik eşitse **true** ; Aksi halde **yanlış**.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Örtük bir dönüştürme var olmalıdır *convertible_string_type* diğer tarafında string_view için. 
+Örtük bir dönüştürme, *convertible_string_type* 'den diğer taraftaki string_view 'e varolmalıdır. 
 
-Karşılaştırma ikili üzerinde temel karakter sıralarının lexicographical karşılaştırma. Bunlar aynı sayıda öğe varsa ve öğeleri tüm eşitse, iki nesne eşit olur.
+Karşılaştırma, karakter sıralarının ikili bir lexıgraf karşılaştırmasını temel alır. Aynı sayıda öğe varsa ve öğelerin tümü eşitse, iki nesne eşittir.
 
 
-## <a name="op_lt"></a> İşleci&lt;
+## <a name="op_lt"></a>işlecinde&lt;
 
-İşlecin sol tarafındaki nesne üzerinde doğru sidestring_view nesneden küçük olup olmadığını sınar
+İşlecin sol tarafındaki nesnenin sağ taraftaki nesneden daha az olup olmadığını test eder sidestring_view
 ```cpp
 template <class CharType, class Traits>
 bool operator<(
@@ -135,21 +135,21 @@ bool operator<(
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*<br/>
-Herhangi bir dönüştürülebilir dize türü veya bir nesne türü `basic_string_view` karşılaştırılmalıdır.
+*tarafta*\
+Herhangi bir dönüştürülebilir dize türü veya Karşılaştırılacak türü `basic_string_view` bir nesne.
 
-*sağ*<br/>
-Herhangi bir dönüştürülebilir dize türü veya bir nesne türü `basic_string_view` karşılaştırılmalıdır.
+*Right*\
+Herhangi bir dönüştürülebilir dize türü veya Karşılaştırılacak türü `basic_string_view` bir nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**doğru** işlecin sol tarafındaki nesnesinin işlecin sağ tarafındaki; nesne lexicographically değerinden olup olmadığını aksi **false**.
+işlecin sol tarafındaki nesne sağ taraftaki nesnenin lexıgrafik değerinden küçükse **true** ; Aksi halde **yanlış**.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Örtük bir dönüştürme var olmalıdır *convertible_string_type* diğer tarafında string_view için. 
+Örtük bir dönüştürme, *convertible_string_type* 'den diğer taraftaki string_view 'e varolmalıdır. 
 
-Karşılaştırma ikili üzerinde temel karakter sıralarının lexicographical karşılaştırma. İlk eşit çift karakterlerin karşılaşıldığında, bu karşılaştırma sonucu döndürülür. Hiçbir eşit olmayan karakterler bulundu, ancak daha kısa bir sıralı, küçük kısa sırası daha uzun. Diğer bir deyişle, "cat" "cats" küçüktür.
+Karşılaştırma, karakter sıralarının ikili bir lexıgraf karşılaştırmasını temel alır. İlk eşit olmayan karakter çiftinden karşılaşıldığında, bu Karşılaştırmanın sonucu döndürülür. Eşit olmayan karakter bulunamazsa, ancak bir dizi kısaysa, daha kısa bir sıra daha uzundur. Diğer bir deyişle, "Cat", "Kediler" den küçüktür.
 
 ### <a name="example"></a>Örnek
 
@@ -173,9 +173,9 @@ int main()
 }
 ```
 
-## <a name="op_lt_eq"></a> İşleci&lt;=
+## <a name="op_lt_eq"></a>işlecinde&lt;=
 
-Nesnesinin işlecin sol tarafındaki küçüktür veya eşittir nesnesinin işlecin sağ tarafındaki olup olmadığını sınar.
+İşlecin sol tarafındaki nesnenin sağ taraftaki nesneden küçük veya ona eşit olup olmadığını sınar.
 
 ```cpp
 template <class CharType, class Traits>
@@ -196,23 +196,23 @@ bool operator<=(
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*<br/>
-Herhangi bir dönüştürülebilir dize türü veya bir nesne türü `basic_string_view` karşılaştırılmalıdır.
+*tarafta*\
+Herhangi bir dönüştürülebilir dize türü veya Karşılaştırılacak türü `basic_string_view` bir nesne.
 
-*sağ*<br/>
-Herhangi bir dönüştürülebilir dize türü veya bir nesne türü `basic_string_view` karşılaştırılmalıdır.
+*Right*\
+Herhangi bir dönüştürülebilir dize türü veya Karşılaştırılacak türü `basic_string_view` bir nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**doğru** işlecinin sol tarafındaki nesne lexicographically daha az daha veya işlecin sağ tarafındaki nesneye eşitse; Aksi halde ise **false**.
+işlecin sol tarafındaki nesne sağ taraftaki nesneye sözcüıgrafik veya daha küçükse **true** ; Aksi halde **yanlış**.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bkz: [işleci&lt;](#op_lt).
+Bkz [.&lt;işleci](#op_lt).
 
-## <a name="op_lt_lt"></a> İşleci&lt;&lt;
+## <a name="op_lt_lt"></a>işlecinde&lt;&lt;
 
-Bir string_view bir çıkış akışına yazar.
+Çıkış akışına bir string_view yazar.
 
 ```cpp
 template <class CharType, class Traits>
@@ -222,23 +222,23 @@ inline basic_ostream<CharType, Traits>& operator<<(
 
 ### <a name="parameters"></a>Parametreler
 
-*Ostr*<br/>
-yazılmakta olan bir çıkış akışı.
+*OSTR*\
+yazılan çıkış akışı.
 
-*str*<br/>
-Elem girilmesi string_view.
+*Üstbilgisine*\
+Bir çıkış akışına girilecek string_view.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-yazılmakta olan bir çıkış akışı.
+yazılan çıkış akışı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Örneğin, bir çıkış akışına bir string_view içeriğini eklemek için bu işleci kullanın [std::cout](iostream.md#cout).
+Bir string_view içeriğini bir çıkış akışına eklemek için, örneğin [std:: cout](iostream.md#cout)kullanarak bu işleci kullanın.
 
-## <a name="op_gt"></a> İşleci&gt;
+## <a name="op_gt"></a>işlecinde&gt;
 
-İşlecin sol tarafındaki nesnesinin işlecin sağ tarafındaki nesneden büyük olup olmadığını sınar.
+İşlecin sol tarafındaki nesnenin sağ taraftaki nesneden daha büyük olup olmadığını sınar.
 
 ```cpp
 template <class CharType, class Traits>
@@ -259,23 +259,23 @@ bool operator>(
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*<br/>
-Herhangi bir dönüştürülebilir dize türü veya bir nesne türü `basic_string_view` karşılaştırılmalıdır.
+*tarafta*\
+Herhangi bir dönüştürülebilir dize türü veya Karşılaştırılacak türü `basic_string_view` bir nesne.
 
-*sağ*<br/>
-Herhangi bir dönüştürülebilir dize türü veya bir nesne türü `basic_string_view` karşılaştırılmalıdır.
+*Right*\
+Herhangi bir dönüştürülebilir dize türü veya Karşılaştırılacak türü `basic_string_view` bir nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**doğru** nesnesinin işlecin sol tarafındaki olup olmadığını lexicographically string_view nesnesinin işlecin sağ tarafındaki büyük; Aksi takdirde **false**.
+işlecin sol tarafındaki nesne sağ taraftaki string_view nesnesinden sözcüıgrafik büyükse **true** ; Aksi halde **yanlış**.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bkz: [işleci&lt;](#op_lt).
+Bkz [.&lt;işleci](#op_lt).
 
-## <a name="op_gt_eq"></a> İşleci&gt;=
+## <a name="op_gt_eq"></a>işlecinde&gt;=
 
-İşlecin sol tarafındaki nesnesinin değerinden büyük veya işlecin sağ tarafındaki nesneye eşit olup olmadığını sınar.
+İşlecin sol tarafındaki nesnenin sağ taraftaki nesneden büyük veya ona eşit olup olmadığını sınar.
 
 ```cpp
 template <class CharType, class Traits>
@@ -296,23 +296,23 @@ bool operator>=(
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*<br/>
-Herhangi bir dönüştürülebilir dize türü veya bir nesne türü `basic_string_view` karşılaştırılmalıdır.
+*tarafta*\
+Herhangi bir dönüştürülebilir dize türü veya Karşılaştırılacak türü `basic_string_view` bir nesne.
 
-*sağ*<br/>
-Herhangi bir dönüştürülebilir dize türü veya bir nesne türü `basic_string_view` karşılaştırılmalıdır.
+*Right*\
+Herhangi bir dönüştürülebilir dize türü veya Karşılaştırılacak türü `basic_string_view` bir nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**doğru** nesnesinin işlecin sol tarafındaki olup olmadığını lexicographically büyüktür veya işlecin sağ tarafındaki nesneye eşitse; Aksi takdirde **false**.
+işlecin sol tarafındaki nesne sağ taraftaki nesneye sözcüıgrafik büyükse veya buna eşitse **true** ; Aksi halde **yanlış**.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bkz: [işleci&lt;](#op_lt).
+Bkz [.&lt;işleci](#op_lt).
 
-## <a name="op_sv"></a> "işleci" sv (string_view değişmez değer)
+## <a name="op_sv"></a>"" SV işleci (string_view literal)
 
-Bir dize sabit değerinden bir string_view oluşturur. Ad alanı gerektiriyor `std::literals::string_view_literals`. 
+Bir dize sabit değerinden bir string_view oluşturur. Ad alanı `std::literals::string_view_literals`gerektirir. 
 
 ### <a name="example"></a>Örnek
 
@@ -329,4 +329,4 @@ using namespace literals::string_view_literals;
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[\<string_view>](../standard-library/string-view.md)<br/>
+[\<string_view >](../standard-library/string-view.md)

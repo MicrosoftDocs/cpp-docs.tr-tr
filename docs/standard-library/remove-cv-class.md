@@ -7,12 +7,12 @@ helpviewer_keywords:
 - remove_cv class
 - remove_cv
 ms.assetid: 8502602a-1c80-479c-84e0-33bd1d6496d6
-ms.openlocfilehash: dcabf9b4687d473898dea98f1001647299a40b76
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: dbe21d8e9f0ed0dc7c72a19584f24ee1bce0803c
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62368909"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68451332"
 ---
 # <a name="removecv-class"></a>remove_cv Sınıfı
 
@@ -30,12 +30,12 @@ using remove_cv_t = typename remove_cv<T>::type;
 
 ### <a name="parameters"></a>Parametreler
 
-*T*<br/>
+*ŞI*\
 Değiştirilecek tür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Örneği `remove_cv<T>` bir değişiklik-tür tutar `T1` olduğunda *T* biçimindedir `const T1`, `volatile T1`, veya `const volatile T1`, aksi takdirde *T*.
+Bir örneği `remove_cv<T>` , *t* , `const T1` `T1` ,veya`const volatile T1`, değilse t biçiminde olan bir değiştirilmiş türü tutar.  `volatile T1`
 
 ## <a name="example"></a>Örnek
 
@@ -61,12 +61,12 @@ remove_cv_t<const volatile int> == int
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** \<type_traits >
+**Üst bilgi:** \<type_traits >
 
-**Namespace:** std
+**Ad alanı:** std
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[<type_traits>](../standard-library/type-traits.md)<br/>
-[remove_const Sınıfı](../standard-library/remove-const-class.md)<br/>
-[remove_volatile Sınıfı](../standard-library/remove-volatile-class.md)<br/>
+[< type_traits >](../standard-library/type-traits.md)\
+[remove_const sınıfı](../standard-library/remove-const-class.md)\
+[remove_volatile Sınıfı](../standard-library/remove-volatile-class.md)

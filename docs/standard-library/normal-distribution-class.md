@@ -26,16 +26,16 @@ helpviewer_keywords:
 - std::normal_distribution [C++], param_type
 - std::normal_distribution [C++], param_type
 ms.assetid: bf92cdbd-bc72-4d4a-b588-173d748f0d7d
-ms.openlocfilehash: df30ddb910cf2fa266a603a3ab285379ea45ec7c
-ms.sourcegitcommit: 28eae422049ac3381c6b1206664455dbb56cbfb6
+ms.openlocfilehash: daf9ab6b91eb4af19fdd563937b626515c4bc99b
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66449861"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68457655"
 ---
 # <a name="normaldistribution-class"></a>normal_distribution Sınıfı
 
-Bir normal dağılım üretir.
+Normal bir dağıtım oluşturur.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -71,31 +71,31 @@ public:
 
 ### <a name="parameters"></a>Parametreler
 
-*RealType*<br/>
-Kayan noktalı bir sonuç türü varsayılan olarak **çift**. Olası türleri için bkz: [ \<rastgele >](../standard-library/random.md).
+*RealType*\
+Kayan nokta sonuç türü, varsayılan olarak **Double**olur. Olası türler için bkz [ \<. Random >](../standard-library/random.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-Şablon sınıfı tanımlar kullanıcı tanımlı bir integral değerini üreten bir dağıtım türü veya tür **çift** sağlanmazsa, Normal dağıtım göre dağıtılmış. Aşağıdaki tablo ilgili makalelerin bağlantısı için tek tek üyeleri.
+Şablon sınıfı, Kullanıcı tarafından belirtilen integral türünün değerlerini üreten bir dağıtımı açıklar veya yoksa **Double** , normal dağıtıma göre dağıtılır. Aşağıdaki tablo, bireysel üyelerle ilgili makalelere bağlantı sağlar.
 
 ||||
 |-|-|-|
 |[normal_distribution](#normal_distribution)|`normal_distribution::mean`|`normal_distribution::param`|
 |`normal_distribution::operator()`|`normal_distribution::stddev`|[param_type](#param_type)|
 
-Özellik işlevleri `mean()` ve `stddev()` saklı dağıtım parametre değerlerini döndürmek *ortalama* ve *stddev* sırasıyla.
+Özelliği `mean()` , `stddev()` *ve sırasıyla depolanan* *dağıtım parametrelerinin değerlerini* döndürür.
 
-Özellik üyesi `param()` ayarlar veya döndürür `param_type` saklı dağıtım parametre paketi.
+Özellik üyesi `param()` , `param_type` depolanan dağıtım parametresi paketini ayarlar veya döndürür.
 
-`min()` Ve `max()` üye işlevleri olası en küçük sonuç ve olası en büyük sonuç sırasıyla döndürür.
+`min()` Ve`max()` üye işlevleri, sırasıyla olası en küçük sonucu ve en büyük olası sonucu döndürür.
 
-`reset()` Üye işlevi herhangi bir önbelleğe alınan değeri atar böylece sonraki çağrı sonucunu `operator()` çağırmadan önce altyapısından alınan değerleri, bağlı değildir.
+Üye işlevi önbelleğe alınmış tüm değerleri atar, böylece sonraki `operator()` çağrının sonucu, çağrıdan önce altyapıdan alınan değerlere bağlı değildir. `reset()`
 
-`operator()` Üye işlevler URNG motoru, geçerli parametre paketi veya belirtilen parametre paketi göre sonraki oluşturulan değeri döndürür.
+`operator()` Üye işlevleri, geçerli parametre paketinden ya da belirtilen parametre paketinden, URNG altyapısına göre oluşturulan bir sonraki değeri döndürür.
 
-Dağıtım sınıfları ve üyeleri hakkında daha fazla bilgi için bkz: [ \<rastgele >](../standard-library/random.md).
+Dağıtım sınıfları ve üyeleri hakkında daha fazla bilgi için bkz [ \<. Random >](../standard-library/random.md).
 
-Normal dağıtım hakkında ayrıntılı bilgi için Wolfram MathWorld bkz [Normal dağıtım](https://go.microsoft.com/fwlink/p/?linkid=400924).
+Normal dağıtım hakkında ayrıntılı bilgi için, bkz. Wolfram MathWorld article [normal dağıtım](https://go.microsoft.com/fwlink/p/?linkid=400924).
 
 ## <a name="example"></a>Örnek
 
@@ -183,11 +183,11 @@ Distribution for 10 samples:
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** \<rastgele >
+**Üst bilgi:** \<rastgele >
 
-**Namespace:** std
+**Ad alanı:** std
 
-## <a name="normal_distribution"></a>  normal_distribution::normal_distribution
+## <a name="normal_distribution"></a>normal_distribution::normal_distribution
 
 Dağıtımı oluşturur.
 
@@ -198,26 +198,26 @@ explicit normal_distribution(const param_type& parm);
 
 ### <a name="parameters"></a>Parametreler
 
-*Ortalama*<br/>
+*ortası*\
 `mean` Dağıtım parametresi.
 
-*stddev*<br/>
+*StdDev*\
 `stddev` Dağıtım parametresi.
 
-*parametre*<br/>
-Dağıtımın oluşturulması için kullanılan parametre yapısı.
+*parametresi*\
+Dağıtımı oluşturmak için kullanılan parametre yapısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
 **Önkoşul:** `0.0 < stddev`
 
-İlk Oluşturucu bir nesne oluşturur, saklı `mean` değerine değeri *ortalama* ve saklı `stddev` değerine değeri *stddev*.
+İlk Oluşturucu `mean` , saklı değeri değeri *Ortalama* olan ve saklı `stddev` değeri *StdDev*değerini tutan bir nesne oluşturur.
 
-İkinci oluşturucu depolanmış parametreleri dan başlatılan bir nesne oluşturur *parametresi*. Alabilir ve çağırarak geçerli var olan bir dağıtım parametrelerini ayarlayın `param()` üye işlevi.
+İkinci Oluşturucu, saklı parametreleri parmdan başlatılan bir nesne oluşturur . `param()` Üye işlevini çağırarak mevcut bir dağıtımın geçerli parametrelerini alabilir ve ayarlayabilirsiniz.
 
-## <a name="param_type"></a>  normal_distribution::param_type
+## <a name="param_type"></a>normal_distribution::p aram_type
 
-Dağıtım parametrelerini depolar.
+Dağıtımın parametrelerini depolar.
 
 ```cpp
 struct param_type {
@@ -233,21 +233,21 @@ struct param_type {
 
 ### <a name="parameters"></a>Parametreler
 
-*Ortalama*<br/>
+*ortası*\
 `mean` Dağıtım parametresi.
 
-*stddev*<br/>
+*StdDev*\
 `stddev` Dağıtım parametresi.
 
-*sağ*<br/>
-`param_type` Karşılaştırmak için kullanılan yapısı.
+*Right*\
+Karşılaştırmak için kullanılan yapı. `param_type`
 
 ### <a name="remarks"></a>Açıklamalar
 
 **Önkoşul:** `0.0 < stddev`
 
-Bu yapı dağıtım'ın sınıf oluşturucusu oluşturmada, en çok geçirilebilir `param()` depolanan parametre var olan bir dağıtım için ve ayarlamak için üye işlevi `operator()` depolanan parametrelerin yerine kullanılacak.
+Bu yapı, örnek oluşturma sırasında dağıtımın sınıf oluşturucusuna, `param()` var olan bir dağıtımın saklı parametrelerini ayarlamak için üye işlevine `operator()` ve depolanan parametrelerin yerine kullanılmak üzere geçirilebilir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[\<rastgele >](../standard-library/random.md)<br/>
+[\<Rastgele >](../standard-library/random.md)

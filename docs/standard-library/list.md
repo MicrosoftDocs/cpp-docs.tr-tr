@@ -7,16 +7,16 @@ f1_keywords:
 helpviewer_keywords:
 - list header
 ms.assetid: 2345823b-5612-44d8-95d3-aa96ed076d17
-ms.openlocfilehash: f2c04bb73bfa379ea87ba4c950bf805931c16ba1
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.openlocfilehash: 8eb497e6a4380affd0f13f41c7b55990c562b7d3
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68245560"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68453653"
 ---
 # <a name="ltlistgt"></a>&lt;list&gt;
 
-Kapsayıcı Şablon sınıfı listesini ve çeşitli destek şablonları tanımlar.
+Kapsayıcı şablonu sınıf listesini ve çeşitli destekleyici şablonları tanımlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -25,7 +25,7 @@ Kapsayıcı Şablon sınıfı listesini ve çeşitli destek şablonları tanıml
 ```
 
 > [!NOTE]
-> \<Listesi > Kitaplığı'nı da kullanan `#include <initializer_list>` deyimi.
+> Liste > kitaplığı, `#include <initializer_list>` ifadesini de kullanır. \<
 
 ## <a name="members"></a>Üyeler
 
@@ -33,27 +33,27 @@ Kapsayıcı Şablon sınıfı listesini ve çeşitli destek şablonları tanıml
 
 |||
 |-|-|
-|[operator!=](../standard-library/list-operators.md#op_neq)|İşlecin sol tarafındaki liste nesnesi işlecin sağ tarafındaki liste nesnesine eşit olup olmadığını sınar.|
-|[işleç <](../standard-library/list-operators.md#op_lt)|İşlecin sol tarafındaki liste nesnesi işlecin sağ tarafındaki listesi nesneden küçük olup olmadığını sınar.|
-|[İşleci\<=](../standard-library/list-operators.md#op_gt_eq)|Listenin işlecinin sol tarafında nesne küçük olup olmadığını sınar veya liste nesnesi eşit işlecin sağ tarafındaki.|
-|[operator==](../standard-library/list-operators.md#op_eq_eq)|İşlecin sol tarafındaki listesi nesnesinin işlecin sağ tarafındaki liste nesnesine eşit olup olmadığını sınar.|
-|[operator >](../standard-library/list-operators.md#op_gt)|İşlecin sol tarafındaki liste nesnesi liste nesnesi işlecin sağ tarafındaki büyük olup olmadığını sınar.|
-|[operator>=](../standard-library/list-operators.md#op_gt_eq)|İşlecin sol tarafındaki liste nesnesi büyük veya işlecin sağ tarafındaki liste nesnesine eşit olup olmadığını sınar.|
+|[operator!=](../standard-library/list-operators.md#op_neq)|İşlecin sol tarafındaki list nesnesinin sağ taraftaki liste nesnesine eşit olup olmadığını sınar.|
+|[işleç <](../standard-library/list-operators.md#op_lt)|İşlecin sol tarafındaki liste nesnesinin sağ taraftaki liste nesnesinden küçük olup olmadığını sınar.|
+|[işlecinde\<=](../standard-library/list-operators.md#op_gt_eq)|İşlecin sol tarafındaki liste nesnesinin sağ taraftaki liste nesnesinden küçük veya ona eşit olup olmadığını sınar.|
+|[operator==](../standard-library/list-operators.md#op_eq_eq)|İşlecin sol tarafındaki list nesnesinin sağ taraftaki liste nesnesine eşit olup olmadığını sınar.|
+|[işleç >](../standard-library/list-operators.md#op_gt)|İşlecin sol tarafındaki list nesnesinin sağ taraftaki liste nesnesinden büyük olup olmadığını sınar.|
+|[operator>=](../standard-library/list-operators.md#op_gt_eq)|İşlecin sol tarafındaki liste nesnesinin sağ taraftaki liste nesnesinden büyük veya ona eşit olup olmadığını sınar.|
 
 ### <a name="functions"></a>İşlevler
 
 |||
 |-|-|
-|[değiştirme](../standard-library/list-functions.md#swap)|İki listenin öğelerini değiştirir.|
+|[Kur](../standard-library/list-functions.md#swap)|İki listenin öğelerini değiş tokuş eder.|
 
 ### <a name="classes"></a>Sınıflar
 
 |||
 |-|-|
-|[list Sınıfı](../standard-library/list-class.md)|Doğrusal bir düzenleme içinde öğeleri korumak ve verimli eklemeler ve silmeler dizisi içindeki herhangi bir yere izin veren bir dizi kapsayıcılarının bir şablon sınıfı.|
+|[list Sınıfı](../standard-library/list-class.md)|Öğeleri doğrusal bir düzenlemede barındıran ve sıra içinde herhangi bir konumda etkili eklemeler ve silme işlemlerine izin veren dizi kapsayıcılarının şablon sınıfı.|
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Üstbilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md)<br/>
-[C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
-[C++ Standart Kitaplığı Başvurusu](../standard-library/cpp-standard-library-reference.md)<br/>
+[Üst bilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md)\
+[C++ Standart kitaplıkta Iş parçacığı güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)\
+[C++ Standart Kitaplığı Başvurusu](../standard-library/cpp-standard-library-reference.md)

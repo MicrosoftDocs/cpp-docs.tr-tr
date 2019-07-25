@@ -6,19 +6,19 @@ f1_keywords:
 helpviewer_keywords:
 - cassert header
 ms.assetid: 6ead15a3-ac45-4075-be8e-350bca995c26
-ms.openlocfilehash: 14dda03e835ec411013b2d827bd1ccaa77f8982e
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.openlocfilehash: 58ebd91fb4fa32cf31d2c49429d0445b92fe0c82
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68245013"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68449915"
 ---
 # <a name="ltcassertgt"></a>&lt;cassert&gt;
 
-Standart C Kitaplığı üstbilgisi içerir \<assert.h > ve ilişkili adlar ekler `std` ad alanı. Bu üstbilginin dahil sağlar, standart C Kitaplığı üstbilgisinde harici bağlantı kullanılarak bildirilen adların bildirilir `std` ad alanı.
+C Standart Kitaplığı başlığı \<onayı. h > içerir ve ilişkili adları `std` ad alanına ekler. Bu üst bilgiyi dahil etmek, C standart kitaplığı üstbilgisinde harici bağlantı kullanılarak belirtilen adların `std` ad alanında bildirilmesini sağlar.
 
 > [!NOTE]
-> \<Assert.h > tanımlamıyor `static_assert` makrosu.
+> \<onaylama. h >, `static_assert` makroyu tanımlamaz.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -34,11 +34,11 @@ Standart C Kitaplığı üstbilgisi içerir \<assert.h > ve ilişkili adlar ekle
 
 ### <a name="remarks"></a>Açıklamalar
 
-`assert(E)` yalnızca NDEBUG tanımlanmışsa sabittir burada `assert` son tanımlanan veya yeniden tanımlandı, veya *E* türüne dönüştürülmüş bool değerlendirilen **true**.
+`assert(E)`yalnızca, ndebug tanımlanıyorsa `assert` veya yeniden tanımlandığında, ya da bool değerine dönüştürülmüş bir değer  **true**olarak değerlendirilirse bir sabittir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[assert Makrosu, _assert, _wassert](../c-runtime-library/reference/assert-macro-assert-wassert.md)<br/>
-[Üstbilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md)<br/>
-[C++ Standart Kitaplığına Genel Bakış](../standard-library/cpp-standard-library-overview.md)<br/>
-[C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
+[onaylama makrosu, _Onay, _TatLı](../c-runtime-library/reference/assert-macro-assert-wassert.md)\
+[Üst bilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md)\
+[C++Standart kitaplığa genel bakış](../standard-library/cpp-standard-library-overview.md)\
+[C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)

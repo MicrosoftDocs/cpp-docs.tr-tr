@@ -26,16 +26,16 @@ helpviewer_keywords:
 - std::weibull_distribution [C++], param_type
 - std::weibull_distribution [C++], param_type
 ms.assetid: f20b49d3-1b9a-41af-8db4-baf800eaa02b
-ms.openlocfilehash: bbcfa23ae84d0a035d4b00d1c154da4b4281be32
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f3c5a2a3d8e4b5f2c8a13ef7525b29683b94acc4
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62410843"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68459626"
 ---
 # <a name="weibulldistribution-class"></a>weibull_distribution Sınıfı
 
-Bir Weibull dağılım üretir.
+Bir Weibull dağıtımı oluşturur.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -70,31 +70,31 @@ class weibull_distribution
 
 ### <a name="parameters"></a>Parametreler
 
-*RealType*<br/>
-Kayan noktalı bir sonuç türü varsayılan olarak **çift**. Olası türleri için bkz: [ \<rastgele >](../standard-library/random.md).
+*RealType*\
+Kayan nokta sonuç türü, varsayılan olarak **Double**olur. Olası türler için bkz [ \<. Random >](../standard-library/random.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-Şablon sınıfı tanımlar, kullanıcı tarafından belirtilen bir kayan nokta değerleri üreten bir dağıtım türü veya tür **çift** göre Weibull dağılım belirtilmezse, dağıtılmış. Aşağıdaki tablo ilgili makalelerin bağlantısı için tek tek üyeleri.
+Şablon sınıfı, Kullanıcı tarafından belirtilen kayan nokta türünün değerlerini üreten bir dağılımı veya hiçbir sağlanmazsa, Weibull dağıtımına göre dağıtılan bir **Double** türü tanımlar. Aşağıdaki tablo, bireysel üyelerle ilgili makalelere bağlantı sağlar.
 
 ||||
 |-|-|-|
 |[weibull_distribution](#weibull_distribution)|`weibull_distribution::a`|`weibull_distribution::param`|
 |`weibull_distribution::operator()`|`weibull_distribution::b`|[param_type](#param_type)|
 
-Özellik işlevleri `a()` ve `b()` ilgili saklı dağıtım parametre değerlerini döndürmek *bir* ve *b*.
+Özelliği işlevleri `a()` ve `b()` depolanan dağıtım parametreleri *a* ve *b*için ilgili değerlerini döndürür.
 
-Özellik üyesi `param()` ayarlar veya döndürür `param_type` saklı dağıtım parametre paketi.
+Özellik üyesi `param()` , `param_type` depolanan dağıtım parametresi paketini ayarlar veya döndürür.
 
-`min()` Ve `max()` üye işlevleri olası en küçük sonuç ve olası en büyük sonuç sırasıyla döndürür.
+`min()` Ve`max()` üye işlevleri, sırasıyla olası en küçük sonucu ve en büyük olası sonucu döndürür.
 
-`reset()` Üye işlevi herhangi bir önbelleğe alınan değeri atar böylece sonraki çağrı sonucunu `operator()` çağırmadan önce altyapısından alınan değerleri, bağlı değildir.
+Üye işlevi önbelleğe alınmış tüm değerleri atar, böylece sonraki `operator()` çağrının sonucu, çağrıdan önce altyapıdan alınan değerlere bağlı değildir. `reset()`
 
-`operator()` Üye işlevler URNG motoru, geçerli parametre paketi veya belirtilen parametre paketi göre sonraki oluşturulan değeri döndürür.
+`operator()` Üye işlevleri, geçerli parametre paketinden ya da belirtilen parametre paketinden, URNG altyapısına göre oluşturulan bir sonraki değeri döndürür.
 
-Dağıtım sınıfları ve üyeleri hakkında daha fazla bilgi için bkz: [ \<rastgele >](../standard-library/random.md).
+Dağıtım sınıfları ve üyeleri hakkında daha fazla bilgi için bkz [ \<. Random >](../standard-library/random.md).
 
-Bir Weibull dağılım hakkında ayrıntılı bilgi için Wolfram MathWorld bkz [Weibull dağılım](http://mathworld.wolfram.com/WeibullDistribution.html).
+Weibull dağıtımı hakkında ayrıntılı bilgi için, Wolfram MathWorld makalesine [Weibull dağıtımına](http://mathworld.wolfram.com/WeibullDistribution.html)bakın.
 
 ## <a name="example"></a>Örnek
 
@@ -182,7 +182,7 @@ Distribution for 10 samples:
     10: 2.1201210996
 ```
 
-İkinci olarak çalıştırın:
+İkinci çalıştırma:
 
 ```Output
 Use CTRL-Z to bypass data entry and run using default values.
@@ -209,11 +209,11 @@ Distribution for 10 samples:
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** \<rastgele >
+**Üst bilgi:** \<rastgele >
 
-**Namespace:** std
+**Ad alanı:** std
 
-## <a name="weibull_distribution"></a>  weibull_distribution::weibull_distribution
+## <a name="weibull_distribution"></a>weibull_distribution::weibull_distribution
 
 ```cpp
 explicit weibull_distribution(result_type a = 1.0, result_type b = 1.0);
@@ -222,26 +222,26 @@ explicit weibull_distribution(const param_type& parm);
 
 ### <a name="parameters"></a>Parametreler
 
-*a*<br/>
+*a*\
 `a` Dağıtım parametresi.
 
-*b*<br/>
+*kenarı*\
 `b` Dağıtım parametresi.
 
-*parametre*<br/>
-`param_type` Dağıtımın oluşturulması için kullanılan yapısı.
+*parametresi*\
+Dağıtımı oluşturmak için kullanılan yapı.`param_type`
 
 ### <a name="remarks"></a>Açıklamalar
 
-**Önkoşul:** `0.0 < a` ve `0.0 < b`
+**Önkoşul:** `0.0 < a` ve`0.0 < b`
 
-İlk Oluşturucu bir nesne oluşturur, saklı `a` değerine değeri *bir* ve saklı `b` değerine değeri *b*.
+İlk Oluşturucu, `a` saklı değeri *a* değerini tutan ve saklı `b` değeri *b*değerini tutan bir nesne oluşturur.
 
-İkinci oluşturucu depolanmış parametreleri dan başlatılan bir nesne oluşturur *parametresi*. Alabilir ve çağırarak geçerli var olan bir dağıtım parametrelerini ayarlayın `param()` üye işlevi.
+İkinci Oluşturucu, saklı parametreleri parmdan başlatılan bir nesne oluşturur . `param()` Üye işlevini çağırarak mevcut bir dağıtımın geçerli parametrelerini alabilir ve ayarlayabilirsiniz.
 
-## <a name="param_type"></a>  weibull_distribution::param_type
+## <a name="param_type"></a>weibull_distribution::p aram_type
 
-Dağıtım parametrelerini depolar.
+Dağıtımın parametrelerini depolar.
 
 ```cpp
 struct param_type {
@@ -257,21 +257,21 @@ struct param_type {
 
 ### <a name="parameters"></a>Parametreler
 
-*a*<br/>
+*a*\
 `a` Dağıtım parametresi.
 
-*b*<br/>
+*kenarı*\
 `b` Dağıtım parametresi.
 
-*sağ*<br/>
-`param_type` İçin karşılaştırılacak nesne.
+*Right*\
+Karşılaştırılacak `param_type` nesne.
 
 ### <a name="remarks"></a>Açıklamalar
 
-**Önkoşul:** `0.0 < a` ve `0.0 < b`
+**Önkoşul:** `0.0 < a` ve`0.0 < b`
 
-Bu yapı dağıtım'ın sınıf oluşturucusu oluşturmada, en çok geçirilebilir `param()` depolanan parametre var olan bir dağıtım için ve ayarlamak için üye işlevi `operator()` depolanan parametrelerin yerine kullanılacak.
+Bu yapı, örnek oluşturma sırasında dağıtımın sınıf oluşturucusuna, `param()` var olan bir dağıtımın saklı parametrelerini ayarlamak için üye işlevine `operator()` ve depolanan parametrelerin yerine kullanılmak üzere geçirilebilir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[\<rastgele >](../standard-library/random.md)<br/>
+[\<Rastgele >](../standard-library/random.md)

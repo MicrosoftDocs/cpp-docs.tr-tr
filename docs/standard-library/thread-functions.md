@@ -1,5 +1,5 @@
 ---
-title: '&lt;iş parçacığı&gt; işlevleri'
+title: '&lt;iş&gt; parçacığı işlevleri'
 ms.date: 11/04/2016
 f1_keywords:
 - thread/std::get_id
@@ -14,23 +14,23 @@ helpviewer_keywords:
 - std::sleep_until [C++]
 - std::swap [C++]
 - std::yield [C++]
-ms.openlocfilehash: c0a8e42cb7ee78c399459be82e50ef37ab203816
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 8064cec7e94a909d7dc2e1b22142d362bb7b9488
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62279040"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68458509"
 ---
-# <a name="ltthreadgt-functions"></a>&lt;iş parçacığı&gt; işlevleri
+# <a name="ltthreadgt-functions"></a>&lt;iş&gt; parçacığı işlevleri
 
 ||||
 |-|-|-|
 |[get_id](#get_id)|[sleep_for](#sleep_for)|[sleep_until](#sleep_until)|
-|[değiştirme](#swap)|[yield](#yield)|
+|[Kur](#swap)|[yield](#yield)|
 
 ## <a name="get_id"></a>  get_id
 
-Geçerli iş parçacığı yürütme benzersiz olarak tanımlar.
+Yürütmenin geçerli iş parçacığını benzersiz şekilde tanımlar.
 
 ```cpp
 thread::id this_thread::get_id() noexcept;
@@ -38,9 +38,9 @@ thread::id this_thread::get_id() noexcept;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir nesne türü [thread::id](../standard-library/thread-class.md) tanımlamasının, geçerli iş parçacığı yürütme.
+Yürütmenin geçerli iş parçacığını benzersiz bir şekilde tanımlayan [thread:: ID](../standard-library/thread-class.md) türünde bir nesne.
 
-## <a name="sleep_for"></a>  sleep_for
+## <a name="sleep_for"></a>sleep_for
 
 Çağıran iş parçacığını engeller.
 
@@ -52,16 +52,16 @@ inline void sleep_for(const chrono::duration<Rep, Period>& Rel_time);
 
 ### <a name="parameters"></a>Parametreler
 
-*Rel_time*<br/>
-A [süresi](../standard-library/duration-class.md) zaman aralığını belirten bir nesne.
+*Rel_time*\
+Bir zaman aralığı belirten [Duration](../standard-library/duration-class.md) nesnesi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşlev çağırma iş parçacığı tarafından belirtilen zaman en az engeller *Rel_time*. Bu işlev bir özel durum oluşturmaz.
+İşlevi çağıran iş parçacığını en az *Rel_time*tarafından belirtilen süre için engeller. Bu işlev hiçbir özel durum oluşturmaz.
 
-## <a name="sleep_until"></a>  sleep_until
+## <a name="sleep_until"></a>sleep_until
 
-Çağıran iş parçacığını en az belirtilen süre kadar engeller.
+Çağıran iş parçacığını, belirtilen saate kadar en az kadar engeller.
 
 ```cpp
 template <class Clock, class Duration>
@@ -72,16 +72,16 @@ void sleep_until(const xtime *Abs_time);
 
 ### <a name="parameters"></a>Parametreler
 
-*Abs_time*<br/>
-Bir kez temsil eder.
+*Abs_time*\
+Zaman içinde bir noktayı temsil eder.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev bir özel durum oluşturmaz.
+Bu işlev hiçbir özel durum oluşturmaz.
 
-## <a name="swap"></a>  değiştirme
+## <a name="swap"></a>Kur
 
-İki durumlarını değiştirir **iş parçacığı** nesneleri.
+İki **iş parçacığı** nesnesinin durumunu değiştirir.
 
 ```cpp
 void swap(thread& Left, thread& Right) noexcept;
@@ -89,19 +89,19 @@ void swap(thread& Left, thread& Right) noexcept;
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*<br/>
-Sol **iş parçacığı** nesne.
+*Tarafta*\
+Sol **iş parçacığı** nesnesi.
 
-*sağ*<br/>
-Sağa **iş parçacığı** nesne.
+*Right*\
+Sağ **iş parçacığı** nesnesi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşlev çağrıları `Left.swap(Right)`.
+İşlev çağırır `Left.swap(Right)`.
 
-## <a name="yield"></a>  yield
+## <a name="yield"></a>yield
 
-Geçerli iş parçacığını normal şekilde çalışmaya devam ediyordu olsa bile işletim sisteminin diğer iş parçacıklarını çalıştırmasını bildirir.
+Geçerli iş parçacığı normalde çalışmaya devam edebilse bile, işletim sistemine diğer iş parçacıklarını çalıştırmasını bildirir.
 
 ```cpp
 inline void yield() noexcept;
@@ -109,4 +109,4 @@ inline void yield() noexcept;
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[\<iş parçacığı >](../standard-library/thread.md)<br/>
+[\<iş parçacığı >](../standard-library/thread.md)

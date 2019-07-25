@@ -6,16 +6,16 @@ f1_keywords:
 helpviewer_keywords:
 - sstream header
 ms.assetid: 56f55bc5-549d-4e7f-aaad-99e0ffa49c9e
-ms.openlocfilehash: cc08fb426df289b3478ad9d29b03f9a6dd5d3978
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 8284e56e8afb1e5518cbcbb772079b4f19d57b18
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62412481"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68451725"
 ---
 # <a name="ltsstreamgt"></a>&lt;sstream&gt;
 
-Ayrılan dizi nesnesinde depolanan dizileri iostreams işlemleri destekleyen çeşitli şablon sınıfları tanımlar. Tür dizilerini kolayca şablon sınıfının nesneleri gelen ve giden dönüştürülür [basic_string](../standard-library/basic-string-class.md).
+Ayrılmış bir dizi nesnesinde depolanan diziler üzerinde Iostreams işlemlerini destekleyen çeşitli şablon sınıflarını tanımlar. Bu tür diziler, [basic_string](../standard-library/basic-string-class.md)şablon sınıfının nesnelerine ve nesnelerden kolayca dönüştürülür.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -72,50 +72,50 @@ void swap (
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|*Sol*|Başvuru bir `sstream` nesne.|
-|*sağ*|Başvuru bir `sstream` nesne.|
+|*tarafta*|Bir `sstream` nesneye başvuru.|
+|*Right*|Bir `sstream` nesneye başvuru.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Türündeki nesneler `char *` işlevleri kullanabilirsiniz [ \<strstream >](../standard-library/strstream.md) akış. Ancak, \<strstream > kullanım dışıdır ve kullanımını \<sstream > önerilir.
+Türündeki `char *` nesneler, akış için [ \<strstream >](../standard-library/strstream.md) işlevlerini kullanabilir. Ancak, \<strstream > kullanım dışıdır ve \<sstream > kullanılması önerilir.
 
 ### <a name="typedefs"></a>Tür tanımları
 
 |Tür adı|Açıklama|
 |-|-|
-|[istringstream](../standard-library/sstream-typedefs.md#istringstream)|Bir türü oluşturur `basic_istringstream` üzerinde özel bir **char** şablon parametresi.|
-|[ostringstream](../standard-library/sstream-typedefs.md#ostringstream)|Bir türü oluşturur `basic_ostringstream` üzerinde özel bir **char** şablon parametresi.|
-|[stringbuf](../standard-library/sstream-typedefs.md#stringbuf)|Bir türü oluşturur `basic_stringbuf` üzerinde özel bir **char** şablon parametresi.|
-|[stringstream](../standard-library/sstream-typedefs.md#stringstream)|Bir türü oluşturur `basic_stringstream` üzerinde özel bir **char** şablon parametresi.|
-|[wistringstream](../standard-library/sstream-typedefs.md#wistringstream)|Bir türü oluşturur `basic_istringstream` üzerinde özel bir **wchar_t** şablon parametresi.|
-|[wostringstream](../standard-library/sstream-typedefs.md#wostringstream)|Bir türü oluşturur `basic_ostringstream` üzerinde özel bir **wchar_t** şablon parametresi.|
-|[wstringbuf](../standard-library/sstream-typedefs.md#wstringbuf)|Bir türü oluşturur `basic_stringbuf` üzerinde özel bir **wchar_t** şablon parametresi.|
-|[wstringstream](../standard-library/sstream-typedefs.md#wstringstream)|Bir türü oluşturur `basic_stringstream` üzerinde özel bir **wchar_t** şablon parametresi.|
+|[istringstream](../standard-library/sstream-typedefs.md#istringstream)|Bir Char şablon `basic_istringstream` parametresi üzerinde özelleştirilmiş  bir tür oluşturur.|
+|[ostringstream](../standard-library/sstream-typedefs.md#ostringstream)|Bir Char şablon `basic_ostringstream` parametresi üzerinde özelleştirilmiş  bir tür oluşturur.|
+|[stringbuf](../standard-library/sstream-typedefs.md#stringbuf)|Bir Char şablon `basic_stringbuf` parametresi üzerinde özelleştirilmiş  bir tür oluşturur.|
+|[stringstream](../standard-library/sstream-typedefs.md#stringstream)|Bir Char şablon `basic_stringstream` parametresi üzerinde özelleştirilmiş  bir tür oluşturur.|
+|[wistringstream](../standard-library/sstream-typedefs.md#wistringstream)|Wchar_t Şablon parametresinde `basic_istringstream` özelleştirilmiş bir tür  oluşturur.|
+|[wostringstream](../standard-library/sstream-typedefs.md#wostringstream)|Wchar_t Şablon parametresinde `basic_ostringstream` özelleştirilmiş bir tür  oluşturur.|
+|[wstringbuf](../standard-library/sstream-typedefs.md#wstringbuf)|Wchar_t Şablon parametresinde `basic_stringbuf` özelleştirilmiş bir tür  oluşturur.|
+|[wstringstream](../standard-library/sstream-typedefs.md#wstringstream)|Wchar_t Şablon parametresinde `basic_stringstream` özelleştirilmiş bir tür  oluşturur.|
 
 ### <a name="manipulators"></a>Manipülatörleri
 
 |||
 |-|-|
-|[değiştirme](../standard-library/sstream-functions.md#sstream_swap)|İki değeri birbiriyle değiştirir `sstream` nesneleri.|
+|[Kur](../standard-library/sstream-functions.md#sstream_swap)|İki `sstream` nesne arasındaki değerleri değiş tokuş eder.|
 
 ### <a name="classes"></a>Sınıflar
 
 |örneği|Açıklama|
 |-|-|
-|[basic_stringbuf](../standard-library/basic-stringbuf-class.md)|Türünde öğeler aktarımını denetleyen bir akış arabelleğinin açıklar `Elem`, olan karakter nitelikleri sınıfı tarafından belirlenen `Tr`, için ve bir dizi nesnesinde saklanan öğe dizisi.|
-|[basic_istringstream](../standard-library/basic-istringstream-class.md)|Öğelerin ayıklama denetleyen bir nesne ve bir akış arabelleğinin sınıfın kodlanmış nesnelerden açıklar [basic_stringbuf](../standard-library/basic-stringbuf-class.md)<**Elem**, **Tr**, `Alloc`>, türü öğeler ile `Elem`, olan karakter nitelikleri sınıfı tarafından belirlenen `Tr`, ve öğeleri bir sınıf ayırıcısı tarafından ayrılan `Alloc`.|
-|[basic_ostringstream](../standard-library/basic-ostringstream-class.md)|Sınıfı bir akış arabelleğine ekleme öğelerin denetleyen bir nesne ve kodlanmış nesneleri açıklar [basic_stringbuf](../standard-library/basic-stringbuf-class.md)<**Elem**, **Tr**, `Alloc`>, türü öğeler ile `Elem`, olan karakter nitelikleri sınıfı tarafından belirlenen `Tr`, ve öğeleri bir sınıf ayırıcısı tarafından ayrılan `Alloc`.|
-|[basic_stringstream](../standard-library/basic-stringstream-class.md)|Ekleme ve çıkarma öğelerin denetleyen bir nesne ve bir akış arabelleğinin sınıfı kullanarak kodlanmış nesne açıklar [basic_stringbuf](../standard-library/basic-stringbuf-class.md)<**Elem**, **Tr**, `Alloc`>, türü öğeler ile `Elem`, olan karakter nitelikleri sınıfı tarafından belirlenen `Tr`, ve öğeleri bir sınıf ayırıcısı tarafından ayrılan `Alloc`.|
+|[basic_stringbuf](../standard-library/basic-stringbuf-class.md)|Karakter nitelikleri, bir dizi nesnesinde depolanan öğelerin dizisine ve türüne göre `Elem` `Tr`belirlenen, türü öğelerin aktarımını denetleyen bir akış arabelleğini açıklar.|
+|[basic_istringstream](../standard-library/basic-istringstream-class.md)|`Alloc` [Basic_stringbuf](../standard-library/basic-stringbuf-class.md)<**eled**, **tr**, > `Elem`sınıfının bir akış arabelleğinden öğe ve kodlanmış nesnelerin ayıklanmasını denetleyen bir nesneyi nitelikleri sınıfı `Tr`tarafından belirlenir ve öğeleri bir sınıf `Alloc`ayırıcısı tarafından ayrılır.|
+|[basic_ostringstream](../standard-library/basic-ostringstream-class.md)|Öğelerin ve kodlanmış nesnelerin [basic_stringbuf](../standard-library/basic-stringbuf-class.md)<**eled**, **tr**, `Alloc`> `Elem`sınıfının bir akış arabelleğine eklenmesini denetleyen ve karakter nitelikleri olan bir nesneyi tanımlar. sınıfı `Tr`tarafından belirlenir ve öğeleri bir sınıf `Alloc`ayırıcısı tarafından ayrılır.|
+|[basic_stringstream](../standard-library/basic-stringstream-class.md)|Öğelerin ve ayıklamanın [basic_stringbuf](../standard-library/basic-stringbuf-class.md)<**eled**, **tr**, `Alloc`> sınıfının bir akış arabelleğini kullanarak, türü `Elem`öğeleri olan bir nesne ve karakter nitelikleri sınıfı `Tr`tarafından belirlenir ve öğeleri bir sınıf `Alloc`ayırıcısı tarafından ayrılır.|
 
 ## <a name="requirements"></a>Gereksinimler
 
-- **Başlık:** \<sstream >
+- **Üst bilgi:** \<sstream >
 
-- **Namespace:** std
+- **Ad alanı:** std
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Üstbilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md)<br/>
-[C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
-[iostream Programlaması](../standard-library/iostream-programming.md)<br/>
-[iostreams Kuralları](../standard-library/iostreams-conventions.md)<br/>
+[Üst bilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md)\
+[C++ Standart kitaplıkta Iş parçacığı güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)\
+[iostream programlama](../standard-library/iostream-programming.md)\
+[iostreams Kuralları](../standard-library/iostreams-conventions.md)

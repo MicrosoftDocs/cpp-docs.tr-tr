@@ -6,26 +6,26 @@ f1_keywords:
 helpviewer_keywords:
 - clocale header
 ms.assetid: 5bde3e01-cf67-4f1f-a383-447ec814d00e
-ms.openlocfilehash: 624a1afdbe0e73c81a324273836eff6b89705236
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.openlocfilehash: 60d15795328de567a8ba626f5344b2fb08e57aa7
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68244752"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68459344"
 ---
 # <a name="ltclocalegt"></a>&lt;clocale&gt;
 
-Standart C Kitaplığı üstbilgisi içerir \<locale.h > ve ilişkili adlar ekler `std` ad alanı.
+Standart C Kitaplığı üstbilgisi \<locale. h > içerir ve ilişkili adları `std` ad alanına ekler.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** \<clocale >
+**Üst bilgi:** \<clocale >
 
-**Namespace:** std
+**Ad alanı:** std
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu üstbilginin dahil sağlar, standart C Kitaplığı üstbilgisinde harici bağlantı kullanılarak bildirilen adların bildirilir `std` ad alanı.
+Bu üstbilginin dahil edilmesi, standart C Kitaplığı üstbilgisinde harici bağlantı kullanılarak belirtilen adların `std` ad alanında bildirilmesini sağlar.
 
 ## <a name="constants"></a>Sabitler
 
@@ -54,6 +54,6 @@ lconv* localeconv();
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Üstbilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md)<br/>
-[C++ Standart Kitaplığına Genel Bakış](../standard-library/cpp-standard-library-overview.md)<br/>
-[C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
+[Üst bilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md)\
+[C++Standart kitaplığa genel bakış](../standard-library/cpp-standard-library-overview.md)\
+[C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)

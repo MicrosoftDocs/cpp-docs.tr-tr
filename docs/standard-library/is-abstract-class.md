@@ -7,16 +7,16 @@ helpviewer_keywords:
 - is_abstract class
 - is_abstract
 ms.assetid: 8867f660-3434-404c-ba90-c26607a5e0d2
-ms.openlocfilehash: 02863f5694f519e8cca54d07622a185f69de82d4
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 57b2413e673f92e5258bee5711db2870e2b58a11
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62404825"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68448984"
 ---
 # <a name="isabstract-class"></a>is_abstract Sınıfı
 
-Soyut sınıf türü olup olmadığını sınar.
+Türün soyut sınıf olup olmadığını sınar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -27,12 +27,12 @@ struct is_abstract;
 
 ### <a name="parameters"></a>Parametreler
 
-*Ty*<br/>
+*Kalite*\
 Sorgulanacak tür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Karşılaştırmasının bir örneği true tutan türü *Ty* false tuttuğu en az bir saf sanal işlevi, aksi takdirde sahip bir sınıftır.
+Tür değeri en az bir saf sanal işlevi olan bir sınıfdaysa, tür koşulu true, aksi takdirde false değerini alır.
 
 ## <a name="example"></a>Örnek
 
@@ -70,11 +70,11 @@ is_abstract<abstract> == true
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** \<type_traits >
+**Üst bilgi:** \<type_traits >
 
-**Namespace:** std
+**Ad alanı:** std
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[<type_traits>](../standard-library/type-traits.md)<br/>
-[is_polymorphic Sınıfı](../standard-library/is-polymorphic-class.md)<br/>
+[< type_traits >](../standard-library/type-traits.md)\
+[is_polymorphic Sınıfı](../standard-library/is-polymorphic-class.md)

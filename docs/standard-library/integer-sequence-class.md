@@ -14,16 +14,16 @@ helpviewer_keywords:
 - std::make_integer_sequence
 - std::index_sequence_for
 ms.assetid: 2cfdddee-819d-478e-bb78-c8a9c2696803
-ms.openlocfilehash: c996fdc2756ee489dc3b0abf9321a1d9ce47aded
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: ca923933ac7a401f6a3ef14f821ceb04b844797b
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62404955"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68451013"
 ---
 # <a name="integersequence-class"></a>integer_sequence Sınıfı
 
-Bir tamsayı dizisi temsil eder. Türetme ve std::tuple gibi değişen sayıda bağımsız değişken türlerinin parametre paketlerinde genişletmek için kullanılan\<T... >, geçirilir bağımsız değişken olarak işleve.
+Bir tamsayı dizisini temsil eder. , Std:: Tuple\<T gibi bağımsız değişken türlerde parametre paketlerini bırakmak ve genişletmek için kullanılabilir... bir işleve bağımsız değişken olarak geçirilen >.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -34,30 +34,30 @@ struct integer_sequence
 
 ### <a name="parameters"></a>Parametreler
 
-*T*<br/>
-Değerlerin türü; bir tamsayı türü olmalıdır: bool, char, char16_t, char32_t, wchar_t, veya imzalı veya imzasız tamsayı türleri.
+*ŞI*\
+Değerlerin türü; bir integral türü olmalıdır: bool, Char, char16_t, char32_t, wchar_t veya imzalı ya da işaretsiz tamsayı türleri.
 
-*Elenen*<br/>
-T integral türünde değerler dizisini temsil eden bir tür olmayan parametre paketi
+*Varış*\
+T türünde bir değer dizisini temsil eden tür olmayan bir parametre paketi.
 
 ## <a name="members"></a>Üyeler
 
 |||
 |-|-|
 |`static size_t size() noexcept`|Dizideki öğelerin sayısı.|
-|`typedef T value_type`|Dizideki her öğe türü. Bir tamsayı türü olmalıdır.|
+|`typedef T value_type`|Dizideki her öğenin türü. Bir integral türü olmalıdır.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Doğrudan bir işleve geçirilen bir parametre paketi herhangi bir özel kitaplık Yardımcıları paketten çıkarılan olabilir. Ne zaman bir parametre paketi bir işleve geçirilen bir tür bir parçasıdır ve dizinlerini öğelere erişmek için gereksinim duyduğunuz sonra bu paketten en kolay yolu kullanmaktır `integer_sequence` ve onun ilişkili tür diğer adları `make_integer_sequence`, `index_sequence`, `make_index_sequence`ve `index_sequence_for`.
+Bir işleve doğrudan geçirilen bir parametre paketi özel bir kitaplık yardımcıları olmadan yüklenebilir. Bir parametre paketi, işleve geçirilen bir türün parçası olduğunda ve öğelere erişmek için dizinlerle ihtiyacınız olduğunda, onu paketten çıkarmanın en `integer_sequence` kolay yolu, ve ilgili tür diğer adları `make_integer_sequence`, `index_sequence` `make_index_sequence`, ve `index_sequence_for`'ıkullanmaktır.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, özgün teklifine dayalı [N3658](http://open-std.org/jtc1/sc22/wg21/docs/papers/2013/n3658.html). Nasıl kullanılacağını gösterir bir `integer_sequence` oluşturmak için bir `std::tuple` gelen bir `std::array<T,N>`ve nasıl kullanılacağını bir `integer_sequence` tanımlama grubu üyeleri alınamıyor.
+Aşağıdaki örnek, [N3658](http://open-std.org/jtc1/sc22/wg21/docs/papers/2013/n3658.html)orijinal teklifini temel alır. Bir `integer_sequence` `std::tuple` ' dan `integer_sequence` ' a oluşturmak için ' nin nasıl kullanılacağını ve demet üyelerine ulaşmak için nasıl kullanılacağını gösterir. `std::array<T,N>`
 
-İçinde `a2t` işlevi, bir `index_sequence` bir diğer adıdır `integer_sequence` göre `size_t` integral türü. `make_index_sequence` sıfır tabanlı oluşturur, derleme zamanında bir diğer addır `index_sequence` ile aynı sayıda öğe çağıran tarafından geçirilen dizi. `a2t` geçirir `index_sequence` değerine göre `a2t_` burada ifade `a[I]...` ayıklar `I`, ve ardından öğeleri için beslenir `make_tuple` hangi tüketir bunları gibi belirli bağımsız değişkenler. Örneğin, dizi üç öğeleri içeriyorsa, `make_tuple` make_tuple adlandırılır ([0], [1], a[2]). Dizi öğeleri, Elbette herhangi bir tür olabilir.
+İşlevinde, tamsayıtürüne`size_t` göre bir `index_sequence` `integer_sequence`diğeraddır. `a2t` `make_index_sequence`, derleme süresi içinde, çağıran tarafından geçirilen dizi ile aynı sayıda `index_sequence` öğe ile sıfır tabanlı bir ad oluşturur. `a2t``a2t_` `a[I]...` `I`değerine göre değerini öğesine geçirir, burada ifade paketleri ve sonra öğeler `make_tuple` , bağımsız bağımsız değişkenler olarak tüketir. `index_sequence` Örneğin, dizi üç öğe içeriyorsa, `make_tuple` make_tuple (a [0], [1], bir [2]) olarak çağrılır. Dizi öğelerinin kendileri herhangi bir tür olabilir.
 
-Uygula işlevi kabul eden bir [std::tuple](../standard-library/tuple-class.md), oluşturur bir `integer_sequence` kullanarak `tuple_size` yardımcı sınıfı. Unutmayın [std::decay_t](../standard-library/decay-class.md) gereklidir çünkü [tuple_size](../standard-library/tuple-size-class-tuple.md) başvuru türleri ile çalışmaz. `apply_` İşlevi tanımlama grubu üyeleri ayıklar ve bunları olarak ayrı bağımsız değişkenleri işlev çağrısı için iletir. Bu örnekte değerleri yazdıran basit bir lambda ifadesi bir işlevdir.
+Apply işlevi bir [std:: Tuple](../standard-library/tuple-class.md)kabul eder ve `tuple_size` yardımcı sınıfını kullanarak `integer_sequence` bir üretir. [Tuple_size](../standard-library/tuple-size-class-tuple.md) başvuru türleriyle çalışmadığından [std::d ecay_t](../standard-library/decay-class.md) gereklidir. `apply_` İşlevi demet üyelerinin paketini kaldırır ve bunları bir işlev çağrısına ayrı bağımsız değişkenler olarak iletir. Bu örnekte, işlevi değerleri yazdıran basit bir lambda ifadesidir.
 
 ```cpp
 #include <stddef.h>
@@ -115,14 +115,14 @@ int main()
 }
 ```
 
-Yapmak için bir `index_sequence` kullanmak için bir parametre paketi `index_sequence_for` \<T... > için bir diğer ad olduğu `make_index_sequence` \<sizeof... (T) >
+Bir parametre paketi `index_sequence` için oluşturmak üzere T. `index_sequence_for`. öğesini kullanın \<. sizeof için `make_index_sequence` \<bir diğer ad >... (T) >
 
 ## <a name="requirements"></a>Gereksinimler
 
-Başlık: \<type_traits\>
+Üst bilgi \<: type_traits\>
 
-Ad alanı: std
+Ad hızadı: std
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Üç Nokta ve Variadic Şablonları](../cpp/ellipses-and-variadic-templates.md)<br/>
+[Üç Nokta ve Variadic Şablonları](../cpp/ellipses-and-variadic-templates.md)

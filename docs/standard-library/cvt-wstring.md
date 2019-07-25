@@ -1,5 +1,5 @@
 ---
-title: '&lt;CVT wstring&gt;'
+title: '&lt;CVT-wstring&gt;'
 ms.date: 11/04/2016
 f1_keywords:
 - stdext.cvt.<cvt/wstring>
@@ -8,16 +8,16 @@ f1_keywords:
 helpviewer_keywords:
 - cvt/wstring header
 ms.assetid: d78b04bb-9ac0-4adb-8ffe-3aefb9b14c2d
-ms.openlocfilehash: d2183d7bfbe0f4f6cd2848e7a032d2f166283361
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 7b540644d0d1ba0f539688e9d7e30ef7ae631f91
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62394123"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68455378"
 ---
 # <a name="ltcvtwstringgt"></a>&lt;CVT/wstring&gt;
 
-Üst bilgi `<cvt/wstring>` Şablon sınıfı, Visual Studio'nun önceki sürümlerinde tanımlanan [wstring_convert sınıfı](../standard-library/wstring-convert-class.md) stdext::cvt ad. Üst bilgi, geriye dönük uyumluluk için korunur. Yeni kod içinde tanımlanan sınıfın sürümü kullanması gereken [ \<yerel ayar >](../standard-library/locale.md) içinde `std` ad alanı
+Visual Studio `<cvt/wstring>` 'nun önceki sürümlerindeki üst bilgi, stdext:: CVT ad alanındaki Template Class [wstring_convert sınıfını](../standard-library/wstring-convert-class.md) tanımladı. Üst bilgi geriye dönük uyumluluk için korunur. Yeni kod, `std` ad alanındaki [ \<> yerel ayarda](../standard-library/locale.md) tanımlanan sınıfın sürümünü kullanmalıdır
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -29,4 +29,4 @@ ms.locfileid: "62394123"
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Üstbilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md)<br/>
+[Üst bilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md)

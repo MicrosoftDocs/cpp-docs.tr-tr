@@ -6,16 +6,16 @@ f1_keywords:
 helpviewer_keywords:
 - iosfwd header
 ms.assetid: 964442eb-17f1-43ef-a0e0-c5bb77f9c187
-ms.openlocfilehash: 7b21e6e92c1fa1d01826ad8f6805d9a52b0fde42
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e66c3e869f01775512419c877cd52c7f0e0fa2c4
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62385186"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68449080"
 ---
 # <a name="ltiosfwdgt"></a>&lt;iosfwd&gt;
 
-İostreams kullanılan birkaç şablon sınıfları İleri başvurulara bildirir. Bu şablonu sınıfları diğer standart üstbilgisinde tanımlanır. Yalnızca kendi bildirimleri, ancak kendi tanımının birini gerektiğinde bu başlığı açıkça içerir.
+İostreams boyunca kullanılan birkaç şablon sınıfına iletme başvuruları bildirir. Tüm şablon sınıfları diğer standart başlıklarda tanımlanır. Bu üst bilgiyi yalnızca kendi bildirimlerinden birine ihtiyacınız olduğunda, ancak tanımını değil, açıkça dahil edersiniz.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -128,7 +128,7 @@ class basic_fstream;
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Üstbilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md)<br/>
-[C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
-[iostream Programlaması](../standard-library/iostream-programming.md)<br/>
-[iostreams Kuralları](../standard-library/iostreams-conventions.md)<br/>
+[Üst bilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md)\
+[C++ Standart kitaplıkta Iş parçacığı güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)\
+[iostream programlama](../standard-library/iostream-programming.md)\
+[iostreams Kuralları](../standard-library/iostreams-conventions.md)

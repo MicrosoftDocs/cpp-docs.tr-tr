@@ -6,16 +6,16 @@ f1_keywords:
 helpviewer_keywords:
 - codecvt_utf16 class
 ms.assetid: a9897f98-f84d-4db6-90ad-858b2727570c
-ms.openlocfilehash: 18b95884bb673305398739968ef2530e8c4778d1
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: ca66a3273567a8d30a982211a6e977c129b00f5f
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62405228"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68459716"
 ---
 # <a name="codecvtutf16"></a>codecvt_utf16
 
-Temsil eden bir [yerel ayar](../standard-library/locale-class.md) UCS-2 veya UCS-4 olarak kodlanmış geniş karakterler ve UTF-16LE veya UTF-16BE türlerinden olarak kodlanmış bir bayt akışı arasında dönüştürür modeli.
+UCS-2 veya UCS-4 olarak kodlanmış geniş karakterler ve UTF-16LE veya UTF-16AS olarak kodlanmış bir bayt akışı arasında dönüştürme yapan bir [yerel ayar](../standard-library/locale-class.md) modeli temsil eder.
 
 ```cpp
 template<class Elem, unsigned long Maxcode = 0x10ffff, codecvt_mode Mode = (codecvt_mode)0>
@@ -24,23 +24,23 @@ class codecvt_utf16 : public std::codecvt<Elem, char, StateType>
 
 ## <a name="parameters"></a>Parametreler
 
-*Elem*<br/>
-Geniş karakter öğe türü.
+*Elem*\
+Geniş karakterli öğe türü.
 
-*Maxcode*<br/>
-Yerel ayar modeli için karakter sayısı.
+*Maxcode*\
+Yerel ayar modeli için en fazla karakter sayısı.
 
-*Modu*<br/>
+*Modundaysa*\
 Yerel ayar modeli için yapılandırma bilgileri.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu şablon sınıfının UCS-2 veya UCS-4 olarak kodlanmış geniş karakterler ve UTF-16LE kodlanmış bir bayt akışı arasında dönüştürür modu & little_endian veya UTF-16BE türlerinden Aksi takdirde.
+Bu şablon sınıfı, UCS-2 veya UCS-4 olarak kodlanmış geniş karakterler arasında ve UTF-16LE olarak kodlanmış bir bayt akışı, Eğer mod & little_endian veya UTF-16, aksi durumda dönüştürür.
 
-Bayt akışından bir ikili dosyaya yazılması gerekir; bir metin dosyasına yazılmış bozulabilir.
+Bayt akışı ikili bir dosyaya yazılmalıdır; bir metin dosyasına yazılmışsa bozulmuş olabilir.
 
 ## <a name="requirements"></a>Gereksinimler
 
-Başlık: \<codecvt >
+Üst bilgi \<: codecvt >
 
-Namespace: std
+Ad alanı: std

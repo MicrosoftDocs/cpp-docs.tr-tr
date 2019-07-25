@@ -2,16 +2,16 @@
 title: '&lt;cfenv&gt;'
 ms.date: 11/04/2016
 ms.assetid: 6a17ad51-2182-4e91-8108-65997382acd3
-ms.openlocfilehash: dcaf49d19009ac831776134cf3d5b6cbce7e14d4
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.openlocfilehash: b1ae987d49c95b781cb255a4d7e3a9a04ab6043a
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68244965"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68449868"
 ---
 # <a name="ltcfenvgt"></a>&lt;cfenv&gt;
 
-Standart C Kitaplığı üstbilgisi içerir \<fenv.h > ve ilişkili adlar ekler `std` ad alanı.
+Standart C Kitaplığı üstbilgisi \<fenv. h > içerir ve ilişkili adları `std` ad alanına ekler.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -21,7 +21,7 @@ Standart C Kitaplığı üstbilgisi içerir \<fenv.h > ve ilişkili adlar ekler 
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu üstbilginin dahil sağlar, standart C Kitaplığı üstbilgisinde harici bağlantı kullanılarak bildirilen adların bildirilir `std` ad alanı.
+Bu üstbilginin dahil edilmesi, standart C Kitaplığı üstbilgisinde harici bağlantı kullanılarak belirtilen adların `std` ad alanında bildirilmesini sağlar.
 
 ## <a name="constants-and-types"></a>Sabitler ve türler
 
@@ -62,6 +62,6 @@ int feupdateenv(const fenv_t* penv);
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Üstbilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md)<br/>
-[C++ Standart Kitaplığına Genel Bakış](../standard-library/cpp-standard-library-overview.md)<br/>
-[C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
+[Üst bilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md)\
+[C++Standart kitaplığa genel bakış](../standard-library/cpp-standard-library-overview.md)\
+[C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)

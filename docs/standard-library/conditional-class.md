@@ -7,12 +7,12 @@ helpviewer_keywords:
 - conditional class
 - conditional
 ms.assetid: ece9f539-fb28-4e26-a79f-3264bc984493
-ms.openlocfilehash: be81a1bc32f2f86f1d79970868933bddb8dc3620
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b8f0f69cc1e4f6966bc9ccb63fe529436295badd
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62212111"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68457318"
 ---
 # <a name="conditional-class"></a>conditional Sınıfı
 
@@ -30,25 +30,25 @@ using conditional_t = typename conditional<_Test, _T1, _T2>::type;
 
 ### <a name="parameters"></a>Parametreler
 
-*B*<br/>
+*KENARI*\
 Seçili türü belirleyen değer.
 
-*T1*<br/>
-B true olduğunda türü sonucu.
+*T1*\
+B doğru olduğunda tür sonucu.
 
-*T2*<br/>
-B false olduğunda türü sonucu.
+*T2*\
+B false olduğunda tür sonucu.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Şablon üye typedef `conditional<B, T1, T2>::type` değerlendiren *T1* olduğunda *B* değerlendiren **true**ve değerlendiren *T2* olduğunda  *B* değerlendiren **false**.
+Şablon üyesi `conditional<B, T1, T2>::type` typedef, *b* **doğru**olarak değerlendirildiğinde *T1* olarak değerlendirilir ve *b* , **false**olduğunda *T2* olarak değerlendirilir.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** \<type_traits >
+**Üst bilgi:** \<type_traits >
 
-**Namespace:** std
+**Ad alanı:** std
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[<type_traits>](../standard-library/type-traits.md)<br/>
+[<type_traits>](../standard-library/type-traits.md)

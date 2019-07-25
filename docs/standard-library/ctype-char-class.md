@@ -7,16 +7,16 @@ f1_keywords:
 helpviewer_keywords:
 - ctype<char> class
 ms.assetid: ee30acb4-a743-405e-b3d4-13602092da84
-ms.openlocfilehash: adaad8f76de5b712aea13794ef2d7b9a096fb8ef
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 7fe1eef32741d63e7b2e2c2320d18f445784c44f
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62394162"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68455463"
 ---
 # <a name="ctypeltchargt-class"></a>CType&lt;char&gt; sınıfı
 
-Şablon sınıfının açık uzmanlığı sınıftır `ctype\<CharType>` türüne **char**, türü bir karakterin çeşitli özelliklerini karakterize etmek için bir yerel ayar modeli hizmet verebilen bir nesneyi tanımlayan **char**.
+Sınıfı, Char türünde bir karakterin çeşitli özelliklerini niteleyen bir yerel ayar modeli olarak işlev görebilecek bir nesneyi açıklayan, `ctype\<CharType>` **char**yazmak için şablon sınıfının açık bir **özelleştirmesi.**
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -106,30 +106,30 @@ protected:
 
 ## <a name="remarks"></a>Açıklamalar
 
-Açık özelleştirme, Şablon sınıfı, çeşitli şekillerde farklıdır:
+Açık özelleştirme, şablon sınıfından çeşitli yollarla farklılık gösterir:
 
-- Bir nesne sınıfı ctype < `char`> ctype maskesini ilk öğesi, bir dizi UCHAR_MAX + 1 öğesi türü için bir işaretçi depolayan `ctype_base::mask`. Ayrıca bir dizinin silinmesi gerekip gerekmediğini belirten bir Boolean nesnesi depolar (kullanarak `operator delete[]`) olduğunda ctype\< **Elem**> nesnesi yok edildiğinde.
+- CType < `char`> sınıfının bir nesnesi bir CType maske tablosunun ilk öğesine bir işaretçi depolar, bu tür `ctype_base::mask`bir uchar_max + 1 öğelerinden oluşan bir dizi. Ayrıca, CType `operator delete[]`\< **eled**> nesnesi yok edildiğinde dizinin silinip silinmeyeceğini (kullanılarak) belirten bir Boole nesnesi de depolar.
 
-- Tek bir Genel oluşturucu belirtmenize olanak tanır `tab`, ctype maskesini ve `del`, dizi olması gerekiyorsa true olan Boolean nesnesi ne zaman silinmiş ctype < `char`> nesnesi yok edildiğinde, başvuru sayısının yanı sıra parametre refs.
+- Tek genel Oluşturucusu, CType < `tab` `char`> nesnesi yok edildiğinde ve başvuru sayısının yanı `del`sıra, dize siliniyorsa, CType maske tablosu ve, Boolean nesnesini belirtmenize olanak tanır. parametre başvuruları.
 
-- Korumalı üye işlevi `table` saklı ctype maskesi tablosunu döndürür.
+- Protected member işlevi `table` , depolanan CType maske tablosunu döndürür.
 
-- Statik üye nesne `table_size` ctype maskesi tabloda öğeleri en az sayısını belirtir.
+- Statik üye nesnesi `table_size` bir CType maske tablosundaki en az öğe sayısını belirtir.
 
-- Korumalı statik üye işlevi `classic_table`("C" yerel ayarına uygun olarak ctype maskesi tablosunu döndürür.
+- Korunan statik üye işlevi `classic_table`("C" yerel ayarına uygun CType maske tablosunu döndürür.
 
-- Korumalı sanal üye işlev yok [do_is](../standard-library/ctype-class.md#do_is), [do_scan_is](../standard-library/ctype-class.md#do_scan_is), veya [do_scan_not](../standard-library/ctype-class.md#do_scan_not). Karşılık gelen ortak üye işlevleri eşdeğer işlemleri gerçekleştirin.
+- [Do_is](../standard-library/ctype-class.md#do_is), [do_scan_is](../standard-library/ctype-class.md#do_scan_is)veya [do_scan_not](../standard-library/ctype-class.md#do_scan_not)korumalı sanal üye işlevi yok. Karşılık gelen ortak üye işlevleri, denk işlemleri gerçekleştirir.
 
-Üye işlevleri [do_narrow](../standard-library/ctype-class.md#do_narrow) ve [do_widen](../standard-library/ctype-class.md#do_widen) değiştirilmeden öğeleri kopyalama.
+Üye işlevleri [do_narrow](../standard-library/ctype-class.md#do_narrow) ve [do_widen](../standard-library/ctype-class.md#do_widen) Copy öğeleri değiştirilmez.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** \<yerel ayar >
+**Üst bilgi:** \<yerel ayar >
 
-**Namespace:** std
+**Ad alanı:** std
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[facet sınıfı](locale-class.md#facet_class)<br/>
-[ctype_base Sınıfı](../standard-library/ctype-base-class.md)<br/>
-[C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
+[model sınıfı](locale-class.md#facet_class)\
+[ctype_base sınıfı](../standard-library/ctype-base-class.md)\
+[C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)

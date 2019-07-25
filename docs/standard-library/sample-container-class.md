@@ -4,76 +4,76 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - container classes [C++]
 ms.assetid: 5b1451f2-c708-45da-bbf0-9e42fd687a1a
-ms.openlocfilehash: c797a893549c8ec708cfb60e6f002b35c27cd35c
-ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.openlocfilehash: 2024574633069cc70f0885fdce63f3afc09227c0
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65220237"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68451105"
 ---
 # <a name="sample-container-class"></a>Örnek Kapsayıcı Sınıfı
 
 > [!NOTE]
-> Bu konu Microsoft olan C++ kullanılan kapsayıcıları işlevsiz bir örnek olarak belgeleri C++ standart kitaplığı. Daha fazla bilgi için [C++ Standart Kitaplığı kapsayıcıları](../standard-library/stl-containers.md).
+> Bu konu, C++ standart kitaplıkta kullanılan C++ kapsayıcıların Işlevsel bir örneği olarak Microsoft belgelerimde yer almaktadır. Daha fazla bilgi için bkz [ C++ . standart kitaplık kapsayıcıları](../standard-library/stl-containers.md).
 
-Öğeler, genellikle türündeki değişen uzunluktaki dizisini denetleyen bir nesneyi tanımlayan `Ty`. Sıralı kapsayıcı bağlı olarak farklı şekillerde depolanır.
+Genellikle türündeki `Ty`, değişken uzunluklu bir öğe dizisini denetleyen bir nesne tanımlar. Sıra, gerçek kapsayıcıya bağlı olarak farklı yollarla depolanır.
 
-Bir kapsayıcı Oluşturucusu veya üye işlev oluşturucuyu çağırmak için gün bulabilirsiniz **Ty**(**const Ty &**) veya işlev **Ty::operator =**(**const Ty &**). Böyle bir çağrı, bir özel durum oluşturursa, kapsayıcı nesnesi bütünlüğünü sağlamak ve zaman yakalar herhangi bir özel durumu yeniden oluşturulması için'de de yükümlülüğü olan. Güvenli bir şekilde değiştirme, silme veya bu özel durumları oluşturur sonra kapsayıcı nesnesini yok etmek için atayın. Genel olarak, ancak, aksi takdirde kapsayıcı nesnesi tarafından denetlenen dizinin durumunu tahmin edemezsiniz.
+Bir kapsayıcı Oluşturucu veya üye işlevi, Oluşturucu **Ty**(**const Ty &** ) veya işlev **Ty:: operator =** (**const Ty &** ) çağırmak için bir durum bulabilir. Böyle bir çağrı bir özel durum oluşturursa, kapsayıcı nesne bütünlüğünü sürdürmek ve yakalar özel durumu yeniden oluşturmak için kullanılır. Bir kapsayıcı nesnesini, bu özel durumlardan birini oluşturduktan sonra güvenle takas edebilir, atayabilir, silebilir veya yok edebilirsiniz. Ancak genel olarak, kapsayıcı nesnesi tarafından denetlenen sıranın durumunu tahmin edilemez.
 
 Birkaç ek uyarılar:
 
-- İfade `~Ty` özel durumu oluşturur, sonuçta elde edilen kapsayıcı nesnenin durumu tanımsızdır.
+- İfade `~Ty` bir özel durum oluşturursa, kapsayıcı nesnesinin sonuç durumu tanımsız olur.
 
-- Kapsayıcı bir ayırıcı nesnesini depolar *al*, ve *al* dışında bir özel durum çağrı sonucunda oluşturur `al.allocate`, sonuçta elde edilen kapsayıcı nesnenin durumu tanımsızdır.
+- Kapsayıcı bir ayırıcı nesnesi *Al*ve *Al* , bir çağrısının `al.allocate`sonucu olarak dışında bir özel durum oluşturursa, kapsayıcı nesnesinin sonuç durumu tanımsız olur.
 
-- Kapsayıcı bir işlev nesnesi depoluyorsa *comp*, denetlenen sıra sıralamanızı nasıl belirlemek için ve *comp* herhangi bir türde özel durumu oluşturur, sonuçta elde edilen kapsayıcı nesnenin durumu tanımsızdır.
+- Kapsayıcı bir işlev nesnesi *kompozisyonu*depoluyorsa, denetlenen sıranın nasıl oluşturulacağını ve *comp* her türlü özel durum oluşturduğunda, kapsayıcı nesnesinin sonuç durumu tanımsız olur.
 
-C++ Standart Kitaplığı tarafından tanımlanan kapsayıcı sınıfları, aşağıdaki paragrafta açıklandığı gibi bazı ek gereksinimleri karşılar.
+Standart kitaplık tarafından C++ tanımlanan kapsayıcı sınıfları, aşağıdaki paragraflarda açıklandığı gibi birkaç ek gereksinimi karşılar.
 
-Kapsayıcı Şablon sınıfı [listesi](../standard-library/list-class.md) bile yukarıda açıklanan özel durumlar varsa kararlı ve yararlı davranış sağlar. Örneğin, bir ekleme sırasında bir özel durum veya daha fazla öğe, kapsayıcının sol değiştirilmeden ve özel durum yeniden oluşur.
+Kapsayıcı şablonu sınıf [listesi](../standard-library/list-class.md) , yukarıda açıklanan özel durumların varlığına bile belirleyici ve yararlı bir davranış sağlar. Örneğin, bir veya daha fazla öğenin eklenmesi sırasında bir özel durum oluşturulursa, kapsayıcı değiştirilmemiş olarak kalır ve özel durum yeniden oluşturulur.
 
-İçin *tüm* aşağıdaki üye işlevleri, çağrı sırasında bir özel durum oluşturulursa, C++ Standart Kitaplığı tarafından tanımlanan kapsayıcı sınıfları `insert`, `push_back`, veya `push_front`, kapsayıcının sol değiştirilmemiş ve özel durum yeniden oluşur.
+Standart  kitaplık tarafından C++ tanımlanan tüm kapsayıcı sınıfları için, bir özel durum aşağıdaki `insert`üye `push_back`işlevlerine yapılan çağrılar sırasında oluşturulursa,,, veya `push_front`, kapsayıcı değiştirilmemiş olarak bırakılır ve özel durum işlenemezse.
 
-İçin *tüm* C++ Standart Kitaplığı tarafından tanımlanan, bir kapsayıcı sınıfları aşağıdaki üye işlevleri çağrı sırasında hiçbir özel durum: `pop_back`, `pop_front`.
+Standart  kitaplık tarafından C++ tanımlanan tüm kapsayıcı sınıfları için, aşağıdaki üye işlevlerine yapılan çağrılar sırasında hiçbir özel durum oluşturulmaz: `pop_back`, `pop_front`.
 
-Üye işlevi [silme](../standard-library/container-class-erase.md) yalnızca bir kopyalama işlemi (atama veya kopya oluşturma) bir özel durum oluşturursa, bir özel durum oluşturur.
+[Erase](../standard-library/container-class-erase.md) üye işlevi yalnızca bir kopyalama işlemi (atama veya kopyalama oluşturma) bir özel durum oluşturursa bir özel durum oluşturur.
 
-Ayrıca, üye işlevi tarafından döndürülen yineleyici kopyalanırken hiçbir özel durum oluşturulur.
+Üstelik, bir üye işlevi tarafından döndürülen bir yineleyici kopyalanırken hiçbir özel durum oluşturulmaz.
 
-Üye işlevi [takas](../standard-library/container-class-swap.md) ek öneriler yapar *tüm* C++ Standart Kitaplığı tarafından tanımlanan kapsayıcı sınıfları:
+Üye işlevi [takası](../standard-library/container-class-swap.md) , standart kitaplık tarafından C++ tanımlanan *Tüm* kapsayıcı sınıfları için ek taahhüt yapar:
 
-- Üye işlevi yalnızca bir ayırıcı nesnesi al kapsayıcı depolayan bir özel durum oluşturur ve `al` kopyalarken bir özel durum oluşturur.
+- Üye işlevi yalnızca kapsayıcı bir ayırıcı nesnesi Al ' ı depoladığında bir özel durum oluşturur ve `al` kopyalanırken bir özel durum oluşturur.
 
-- Başvurular, işaretçiler ve öğeleri değiştiriliyor denetimli sıralarının belirlemek yineleyiciler geçerli kalır.
+- Değiştirilen denetim sıralarının öğelerini belirten başvurular, işaretçiler ve yineleyiciler geçerli kalır.
 
-C++ Standart Kitaplığı tarafından tanımlanan bir kapsayıcı sınıfının bir nesnesi ayırır ve serbest bırakma türü depolanmış bir nesne denetlediği dizi için depolama `Alloc`, olduğu genellikle bir şablon parametresi. Böyle bir ayırıcı nesnenin sınıfın bir nesnesi olarak aynı dış arayüze sahip olması gerekir `allocator<Ty>`. Özellikle, `Alloc` aynı türde olmalıdır `Alloc::rebind<value_type>::other`
+Standart kitaplık tarafından C++ tanımlanan kapsayıcı sınıfının bir nesnesi, genellikle bir şablon parametresi olan türünde `Alloc`depolanan bir nesne aracılığıyla denetlediği sıra için depolamayı ayırır ve boşaltır. Böyle bir ayırıcı nesne, sınıfının `allocator<Ty>`bir nesnesi ile aynı dış arabirime sahip olmalıdır. Özellikle, `Alloc` ile aynı türde olmalıdır`Alloc::rebind<value_type>::other`
 
-İçin *tüm* C++ Standart Kitaplığı tarafından üye işlevi tanımlanan kapsayıcı sınıfları `Alloc get_allocator const;` saklı ayırıcı nesnesini bir kopyasını döndürür. Saklı ayırıcı nesnesini olduğuna dikkat edin *değil* kapsayıcı nesne atandığında kopyalanır. Tüm oluşturucular depolanan değeriyle `allocator`, `Alloc` Oluşturucu ayırıcı parametre içeriyorsa.
+Standart  kitaplık tarafından C++ tanımlanan tüm kapsayıcı sınıfları için, üye işlevi `Alloc get_allocator const;` Depolanan ayırıcı nesnesinin bir kopyasını döndürür. Kapsayıcı nesne atandığında saklı ayırıcı nesnesinin *kopyalanmadığını* unutmayın. Oluşturucu Ayırıcı parametresi içermiyorsa `allocator` `Alloc` , tüm oluşturucular ' de depolanan değeri başlatır.
 
-C++ standardına göre C++ Standart Kitaplığı tarafından tanımlanan bir kapsayıcı sınıfı, kabul edilebilir:
+C++ Standart olarak, standart kitaplık tarafından C++ tanımlanan bir kapsayıcı sınıfı şunları varsayabilir:
 
-- Sınıfın tüm nesneleri `Alloc` karşılaştırma eşittir.
+- Sınıf `Alloc` karşılaştırıldığı tüm nesneler eşittir.
 
-- Tür `Alloc::const_pointer` aynı `const Ty *`.
+- Tür `Alloc::const_pointer` ile`const Ty *`aynıdır.
 
-- Tür `Alloc::const_reference` aynı `const Ty&`.
+- Tür `Alloc::const_reference` ile`const Ty&`aynıdır.
 
-- Tür `Alloc::pointer` aynı `Ty *`.
+- Tür `Alloc::pointer` ile`Ty *`aynıdır.
 
-- Tür `Alloc::reference` aynı `Ty&`.
+- Tür `Alloc::reference` ile`Ty&`aynıdır.
 
-Bu uygulama, ancak böyle basitleştirme varsayımlar kapsayıcıları yapmayın. Bu nedenle, daha hırslı ayırıcı nesneleri ile düzgün çalıştıklarını:
+Ancak, kapsayıcılar bu uygulamada basitleşmez. Bu nedenle, daha hırslı olan ayırıcı nesneleriyle düzgün şekilde çalışırlar:
 
-- Sınıfın tüm nesneleri `Alloc` karşılaştırma eşit gerek yoktur. (Birden çok depolama havuzlarını koruyabilirsiniz.)
+- Sınıfın `Alloc` tüm nesnelerinin eşit olarak karşılaştırılabilmesi gerekmez. (Birden çok depolama havuzunu koruyabilirsiniz.)
 
-- Tür `Alloc::const_pointer` aynı olması gerekmez `const Ty *`. (Bir const işaretçisi bir sınıf olabilir.)
+- Türün `Alloc::const_pointer` ile`const Ty *`aynı olması gerekmez. (Const işaretçisi bir sınıf olabilir.)
 
-- Tür `Alloc::pointer` aynı olması gerekmez `Ty *`. (Bir işaretçiyi bir sınıf olabilir.)
+- Türün `Alloc::pointer` ile`Ty *`aynı olması gerekmez. (Bir işaretçi bir sınıf olabilir.)
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi**: \<örnek kapsayıcı >
+**Üstbilgi**: \<örnek kapsayıcı >
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[\<Örnek kapsayıcı >](../standard-library/sample-container.md)<br/>
+[\<örnek kapsayıcı >](../standard-library/sample-container.md)

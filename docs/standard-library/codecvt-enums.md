@@ -1,23 +1,23 @@
 ---
-title: '&lt;codecvt&gt; sabit listeleri'
+title: '&lt;codecvt&gt; numaralandırmaları'
 ms.date: 11/04/2016
 f1_keywords:
 - codecvt/std::codecvt_mode
 ms.assetid: 46a8b073-01bc-46d3-b3d3-a8540f9422c1
 helpviewer_keywords:
 - std::codecvt_mode
-ms.openlocfilehash: 0b43c7c148076e96dd0d3f444ffa8b6bad7c8b29
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: bbef1fe28c3321f06c0cc586062cd017168f8e73
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62405293"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68459788"
 ---
-# <a name="ltcodecvtgt-enums"></a>&lt;codecvt&gt; sabit listeleri
+# <a name="ltcodecvtgt-enums"></a>&lt;codecvt&gt; numaralandırmaları
 
-## <a name="codecvt_mode"></a>  codecvt_mode numaralandırması
+## <a name="codecvt_mode"></a>codecvt_mode numaralandırması
 
-Yapılandırma bilgilerini belirtir [yerel ayar](../standard-library/locale-class.md) modeller.
+[Yerel ayar](../standard-library/locale-class.md) modelleri için yapılandırma bilgilerini belirtir.
 
 ```cpp
 enum codecvt_mode {
@@ -29,16 +29,16 @@ enum codecvt_mode {
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bildirilen yerel ayar modelleri için yapılandırma bilgilerini sağlayın, üç sabitleri sabit listesi tanımlar [ \<codecvt >](../standard-library/codecvt.md). Farklı değerler şunlardır:
+Sabit listesi, [ \<codecvt >](../standard-library/codecvt.md)içinde belirtilen yerel ayar modellerine yapılandırma bilgilerini sağlayan üç sabiti tanımlar. DISTINCT değerleri şunlardır:
 
-- `consume_header`, çok baytlı bir sıra okunurken ilk üstbilgi dizisi kullanmak ve okumak için sonraki çok baytlı dizisi endianness belirlemek için
+- `consume_header`, çok baytlı bir sırayı okurken bir başlangıç üst bilgi sırasını kullanmak ve daha sonra okunacak çok baytlı sıranın bitimliğini öğrenmek için
 
-- `generate_header`, yazılacak sonraki çok baytlı dizisi endianness bildirmek üzere bir çok baytlı dizisi yazarken ilk üstbilgi dizisi oluşturmak için
+- `generate_header`bir çok baytlı sıra yazarken bir ilk üst bilgi sırası oluşturmak için, daha sonra yazılacak olan sonraki çok baytlı sıranın bitimliği
 
-- `little_endian`, varsayılan büyük endian sırası aksine endian sırasıyla bir çok baytlı dizisi oluşturmak için
+- `little_endian`, varsayılan Big-endian sırasından farklı olarak çok baytlı bir sıra oluşturmak için
 
-Bu sabitlerden ORed birlikte rastgele kombinasyonları için geçerli olabilir.
+Bu sabitler, rastgele birleşimlerde birlikte ORed olabilir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[\<codecvt >](../standard-library/codecvt.md)<br/>
+[\<codecvt >](../standard-library/codecvt.md)

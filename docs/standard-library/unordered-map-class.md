@@ -138,16 +138,16 @@ helpviewer_keywords:
 - std::unordered_map::size
 - std::unordered_map::swap
 ms.assetid: 7cf7cfa1-16e7-461c-a9b2-3b8d8ec24e0d
-ms.openlocfilehash: 51b84b8a48365189abf1efa111ae2186af0cab11
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 8a2e9958bda96ffbfce407c8e9981a0fab14cde1
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62159151"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68454833"
 ---
 # <a name="unorderedmap-class"></a>unordered_map Sınıfı
 
-Şablon sınıfı bir türdeki öğelerin değişen uzunluktaki dizisini denetleyen bir nesneyi tanımlayan `std::pair<const Key, Ty>`. Dizi çağrılan demetlerin sıralı bir dizi kümesini bölümleyen bir karma işlev tarafından zayıf bir şekilde sıralanır. Her bir demette herhangi bir öğe çiftinin eşdeğer sıralamaya sahip olup olmadığını belirleyen bir karşılaştırma işlevi vardır. Her bir öğe iki nesne, bir sıralama anahtarı ve bir değer depolar. Dizi, en azından tüm demetleri kabaca eşit uzunlukta olduğunda, dizideki (sabit zaman) öğe sayısından bağımsız olabilen işlem sayısına sahip rastgele bir öğenin aranması, eklenmesi ve kaldırılmasına izin verecek şekilde temsil edilir. En kötü durumda, tüm öğeler tek bir demet içinde olduğunda işlem sayısı dizideki (doğrusal zaman) öğelerin sayısıyla orantılıdır. Ayrıca, bir öğe eklenmesi hiçbir yineleyiciyi geçersiz kılmaz; bir öğenin kaldırılması yalnızca bu kaldırılan öğeyi gösteren yineleyicileri geçersiz kılar.
+Şablon sınıfı, türünde `std::pair<const Key, Ty>`öğelerin değişen uzunluklu dizisini denetleyen bir nesneyi tanımlar. Dizi çağrılan demetlerin sıralı bir dizi kümesini bölümleyen bir karma işlev tarafından zayıf bir şekilde sıralanır. Her bir demette herhangi bir öğe çiftinin eşdeğer sıralamaya sahip olup olmadığını belirleyen bir karşılaştırma işlevi vardır. Her bir öğe iki nesne, bir sıralama anahtarı ve bir değer depolar. Dizi, en azından tüm demetleri kabaca eşit uzunlukta olduğunda, dizideki (sabit zaman) öğe sayısından bağımsız olabilen işlem sayısına sahip rastgele bir öğenin aranması, eklenmesi ve kaldırılmasına izin verecek şekilde temsil edilir. En kötü durumda, tüm öğeler tek bir demet içinde olduğunda işlem sayısı dizideki (doğrusal zaman) öğelerin sayısıyla orantılıdır. Ayrıca, bir öğe eklenmesi hiçbir yineleyiciyi geçersiz kılmaz; bir öğenin kaldırılması yalnızca bu kaldırılan öğeyi gösteren yineleyicileri geçersiz kılar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -165,10 +165,10 @@ class unordered_map;
 |Parametre|Açıklama|
 |-|-|
 |*Key*|Anahtar türü.|
-|*Ty*|Eşlenen tür.|
-|*Karma*|Karma işlev nesne türü.|
+|*Kalite*|Eşlenen tür.|
+|*Yla*|Karma işlev nesne türü.|
 |*Pred*|Eşitlik karşılaştırma işlevi nesne türü.|
-|*Ayırma*|Ayırıcı sınıf.|
+|*Tahsis*|Ayırıcı sınıf.|
 
 ## <a name="members"></a>Üyeler
 
@@ -181,45 +181,45 @@ class unordered_map;
 |[const_reference](#const_reference)|Bir öğe için sabit bir başvuru türü.|
 |[difference_type](#difference_type)|İki öğe arasındaki işaretli mesafenin türü.|
 |[karma değeri Oluşturucusu](#hasher)|Karma işlevin türü.|
-|[Yineleyici](#iterator)|Denetlenen dizi için bir yineleyici türü.|
+|[iden](#iterator)|Denetlenen dizi için bir yineleyici türü.|
 |[key_equal](#key_equal)|Karşılaştırma işlevinin türü.|
 |[key_type](#key_type)|Bir sıralama anahtarının türü.|
 |[local_iterator](#local_iterator)|Denetlenen dizi için bir demet yineleyici türü.|
 |[mapped_type](#mapped_type)|Her bir anahtar ile ilişkili bir eşlenen değer türü.|
-|[İşaretçi](#pointer)|Bir öğe için bir işaretçi türü.|
+|[çağrısı](#pointer)|Bir öğe için bir işaretçi türü.|
 |[Başvuru](#reference)|Bir öğe için bir başvuru türü.|
 |[size_type](#size_type)|İki öğe arasındaki işaretsiz bir mesafenin türü.|
 |[value_type](#value_type)|Öğenin türü.|
 
 |Üye İşlevi|Açıklama|
 |-|-|
-|[konumunda](#at)|Belirtilen anahtarı içeren bir öğe bulur.|
-|[başlayın](#begin)|Denetlenen dizinin başlangıcını belirtir.|
-|[Demet](#bucket)|Bir anahtar değeri için demet numarasını alır.|
+|[hızı](#at)|Belirtilen anahtarı içeren bir öğe bulur.|
+|[başladı](#begin)|Denetlenen dizinin başlangıcını belirtir.|
+|[demet](#bucket)|Bir anahtar değeri için demet numarasını alır.|
 |[bucket_count](#bucket_count)|Demet sayısını alır.|
 |[bucket_size](#bucket_size)|Demet boyutunu alır.|
 |[cbegin](#cbegin)|Denetlenen dizinin başlangıcını belirtir.|
 |[cend](#cend)|Denetlenen dizinin bitişini belirtir.|
-|[Temizle](#clear)|Tüm öğeleri kaldırır.|
-|[Sayısı](#count)|Belirtilen bir anahtar ile eşleşen öğe sayısını bulur.|
-|[emplace](#emplace)|Yerinde oluşturulmuş bir öğe ekler.|
+|[lediğiniz](#clear)|Tüm öğeleri kaldırır.|
+|[biriktirme](#count)|Belirtilen bir anahtar ile eşleşen öğe sayısını bulur.|
+|[Emplace](#emplace)|Yerinde oluşturulmuş bir öğe ekler.|
 |[emplace_hint](#emplace_hint)|Göstergeyle birlikte, yerinde oluşturulmuş bir öğe ekler.|
-|[boş](#empty)|Bir öğe olup olmadığını sınar.|
-|[Son](#end)|Denetlenen dizinin bitişini belirtir.|
+|[empty](#empty)|Bir öğe olup olmadığını sınar.|
+|[erer](#end)|Denetlenen dizinin bitişini belirtir.|
 |[equal_range](#equal_range)|Belirtilen bir anahtarla eşleşen aralığı bulur.|
 |[silme](#erase)|Belirtilen konumlardaki öğeleri kaldırır.|
-|[Bul](#find)|Belirtilen bir anahtarla eşleşen bir öğeyi bulur.|
+|[bilgi](#find)|Belirtilen bir anahtarla eşleşen bir öğeyi bulur.|
 |[get_allocator](#get_allocator)|Depolanan ayırıcı nesnesini alır.|
 |[hash_function](#hash)|Depolanan karma işlevi nesnesini alır.|
-|[insert](#insert)|Öğeleri ekler.|
+|[ekleyin](#insert)|Öğeleri ekler.|
 |[key_eq](#key_eq)|Depolanan karşılaştırma işlevi nesnesini alır.|
 |[load_factor](#load_factor)|Demet başına ortalama öğeyi sayar.|
 |[max_bucket_count](#max_bucket_count)|En yüksek demet sayısını alır.|
 |[max_load_factor](#max_load_factor)|Demet başına en yüksek öğe sayısını alır veya ayarlar.|
 |[max_size](#max_size)|Denetlenen dizinin en büyük boyutunu alır.|
 |[rehash](#rehash)|Karma tabloyu yeniden oluşturur.|
-|[Boyutu](#size)|Öğe sayısını sayar.|
-|[değiştirme](#swap)|İki kapsayıcının içeriğinin yerini değiştirir.|
+|[boyutla](#size)|Öğe sayısını sayar.|
+|[Kur](#swap)|İki kapsayıcının içeriğinin yerini değiştirir.|
 |[unordered_map](#unordered_map)|Bir kapsayıcı nesnesi oluşturur.|
 
 |İşleç|Açıklama|
@@ -229,21 +229,21 @@ class unordered_map;
 
 ## <a name="remarks"></a>Açıklamalar
 
-Nesne depolanan iki nesneyi, türünde bir karşılaştırma işlev nesnesi çağırarak denetlediği diziyi sıralar [unordered_map::key_equal](#key_equal) ve karma işlev nesne türü [unordered_map::hasher](#hasher). Üye işlevini çağırarak depolanan birinci nesneye erişim [unordered_map::key_eq](#key_eq)`()`; ve üye işlevini çağırarak depolanan ikinci nesneye erişebilirsiniz [unordered_map::hash_function](#hash) `()`. Tüm değerler için özellikle `X` ve `Y` türü `Key`, çağrı `key_eq()(X, Y)` yalnızca iki bağımsız değişken eşdeğer sıralamaya sahipse true değerini döndürür; çağrı `hash_function()(keyval)` türündebirdeğerlerdağıtımıverir`size_t`. Şablon sınıfının aksine [unordered_multimap sınıfı](../standard-library/unordered-multimap-class.md), şablon sınıfın bir nesnesi `unordered_map` sağlar `key_eq()(X, Y)` her zaman değerinin denetlenen dizideki herhangi iki öğe için yanlış. (Anahtarlar benzersizdir.)
+Nesnesi, [unordered_map:: key_equal](#key_equal) türünde bir karşılaştırma işlevi nesnesi ve [unordered_map:: hasher](#hasher)türünde bir karma işlev nesnesi olan iki saklı nesneyi çağırarak denetlediği diziyi sıralar. [Unordered_map:: key_eq](#key_eq)`()`; üye işlevini çağırarak ve ikinci saklı nesneye [unordered_map:: hash_function](#hash)`()`üye işlevini çağırarak, ilk saklı nesneye erişirsiniz. Özellikle, tüm değerleri `X` ve `Y` türü `Key`için, çağrı `key_eq()(X, Y)` yalnızca iki bağımsız değişken değeri eşdeğer sıralama içeriyorsa true değerini döndürür; çağrı `hash_function()(keyval)` , türü `size_t`değerlerinbirdağılımınıverir. Şablon sınıfı [unordered_multimap sınıfının](../standard-library/unordered-multimap-class.md)aksine, şablon sınıfının `unordered_map` bir nesnesi, denetlenen sıranın herhangi iki öğesi için her zaman false olmasını sağlar. `key_eq()(X, Y)` (Anahtarlar benzersizdir.)
 
-Nesne ayrıca, demet başına istenen ortalama öğe sayısını belirten en yüksek yük faktörünü depolar. Bir öğe eklenmesi neden olursa [unordered_map::load_factor](#load_factor) `()` en yüksek yük faktörünün aşılmasına, kapsayıcı demet sayısını artırır ve gerektiğinde karma tabloyu yeniden oluşturur.
+Nesne ayrıca, demet başına istenen ortalama öğe sayısını belirten en yüksek yük faktörünü depolar. Bir öğe eklemek [unordered_map:: load_factor](#load_factor) `()` ' nin en fazla yük faktörünü aşmasına neden olursa kapsayıcı, demetlerin sayısını artırır ve gerekirse karma tabloyu yeniden oluşturur.
 
 Denetlenen dizideki öğelerin gerçek sırası karma işleve, karşılaştırma işlevine, ekleme sırasına, en yüksek yük faktörüne ve geçerli demet sayısına bağlıdır. Denetlenen dizideki öğelerin sırasını genelde tahmin edemezsiniz. Ancak, eşdeğer sıralamaya sahip öğelerin herhangi bir alt kümesinin her zaman denetlenen dizide bitişik olduğundan emin olabilirsiniz.
 
-Nesneyi ayırır ve boşaltır türünde bir saklı ayırıcı nesnesi denetlediği dizi için depolama [unordered_map::allocator_type](#allocator_type). Böyle bir ayırıcı nesnenin şablon sınıfının bir nesnesiyle aynı dış arayüze sahip olması gerekir `allocator`. Depolanan ayırıcı nesnenin kapsayıcı nesne atandığında kopyalanmayacağını unutmayın.
+Nesnesi, [unordered_map:: allocator_type](#allocator_type)türünde depolanan bir ayırıcı nesne aracılığıyla denetlediği sıra için depolamayı ayırır ve boşaltır. Böyle bir ayırıcı nesne, şablon sınıfının `allocator`bir nesnesi ile aynı dış arabirime sahip olmalıdır. Depolanan ayırıcı nesnenin kapsayıcı nesne atandığında kopyalanmayacağını unutmayın.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** \<unordered_map >
+**Üst bilgi:** \<unordered_map >
 
-**Namespace:** std
+**Ad alanı:** std
 
-## <a name="allocator_type"></a>  unordered_map::allocator_type
+## <a name="allocator_type"></a>unordered_map::allocator_type
 
 Depolamayı yönetmek için bir ayırıcı türü.
 
@@ -253,7 +253,7 @@ typedef Alloc allocator_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon parametresi için bir eşanlamlı türüdür `Alloc`.
+Tür, şablon parametresi `Alloc`için bir eş anlamlı.
 
 ### <a name="example"></a>Örnek
 
@@ -281,9 +281,9 @@ int main()
 al == std::allocator() is true
 ```
 
-## <a name="at"></a>  unordered_map::AT
+## <a name="at"></a>unordered_map:: at
 
-Belirtilen anahtar değere sahip bir unordered_map bir öğe bulur.
+Bir unordered_map içinde belirtilen anahtar değeri olan bir öğe bulur.
 
 ```cpp
 Ty& at(const Key& key);
@@ -294,15 +294,15 @@ const Ty& at(const Key& key) const;
 
 |Parametre|Açıklama|
 |-|-|
-|*anahtar*|Bulunacak anahtar değer.|
+|*anahtar*|Bulunacak anahtar değeri.|
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bulunan elemanın veri değerine başvuru.
+Bulunan öğenin veri değerine başvuru.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bağımsız değişken anahtarı değeri bulunamazsa sonra işlevin sınıfın bir nesnesi atar `out_of_range`.
+Bağımsız değişken anahtar değeri bulunamazsa, işlev sınıfının `out_of_range`bir nesnesini oluşturur.
 
 ### <a name="example"></a>Örnek
 
@@ -331,9 +331,9 @@ int main()
 }
 ```
 
-## <a name="begin"></a>  unordered_map::begin
+## <a name="begin"></a>unordered_map:: Begin
 
-Denetlenen dizi veya bir demet başına belirler.
+Denetlenen sıranın veya bir demetini başlangıcını belirtir.
 
 ```cpp
 iterator begin();
@@ -346,11 +346,11 @@ const_local_iterator begin(size_type nbucket) const;
 
 |Parametre|Açıklama|
 |-|-|
-|*nbucket*|Demet sayısı.|
+|*nbucket*|Demet numarası.|
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk iki üye işlev bu noktalarda ilk öğe dizisi (veya yalnızca boş bir dizi bitiminin ötesinde) ileriye doğru bir yineleyici döndürür. Son iki üye işlevleri bu noktalarda bir demet ilk öğesi ileriye doğru yineleyiciyi döndürür *nbucket* (veya yalnızca boş bir demet bitiminin ötesinde).
+İlk iki üye işlevi, dizinin ilk öğesine (veya boş bir sıranın sonuna kadar) işaret eden bir ileri yineleyici döndürür. Son iki üye işlevi, demet *nbucket* 'un ilk öğesini işaret eden bir ileri yineleyici döndürür (veya boş bir demet sonunun ötesinde).
 
 ### <a name="example"></a>Örnek
 
@@ -396,7 +396,7 @@ int main()
 [a, 1]
 ```
 
-## <a name="bucket"></a>  unordered_map::Bucket
+## <a name="bucket"></a>unordered_map:: Bucket
 
 Bir anahtar değeri için demet numarasını alır.
 
@@ -406,12 +406,12 @@ size_type bucket(const Key& keyval) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*keyval*<br/>
-Eşlenecek anahtar değeri.
+*keyval*\
+Eşlenecek anahtar değer.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi şu anda anahtar değerine karşılık gelen demet numarasını döndürür *keyval*.
+Üye işlevi, anahtar değeri *keyval*'e Şu anda karşılık gelen demet numarasını döndürür.
 
 ### <a name="example"></a>Örnek
 
@@ -452,7 +452,7 @@ bucket('a') == 7
 bucket_size(7) == 1
 ```
 
-## <a name="bucket_count"></a>  unordered_map::bucket_count
+## <a name="bucket_count"></a>unordered_map::bucket_count
 
 Demet sayısını alır.
 
@@ -538,9 +538,9 @@ max_bucket_count() == 128
 max_load_factor() == 0.1
 ```
 
-## <a name="bucket_size"></a>  unordered_map::bucket_size
+## <a name="bucket_size"></a>unordered_map::bucket_size
 
-Demet boyutunu alır.
+Bir demet boyutunu alır
 
 ```cpp
 size_type bucket_size(size_type nbucket) const;
@@ -548,12 +548,12 @@ size_type bucket_size(size_type nbucket) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*nbucket*<br/>
-Demet sayısı.
+*nbucket*\
+Demet numarası.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevleri, demet numarasını boyutunu döndürür *nbucket*.
+Üye işlevleri, *nbucket*demet sayısı boyutunu döndürür.
 
 ### <a name="example"></a>Örnek
 
@@ -594,9 +594,9 @@ bucket('a') == 7
 bucket_size(7) == 1
 ```
 
-## <a name="cbegin"></a>  unordered_map::cbegin
+## <a name="cbegin"></a>unordered_map:: cbegin
 
-Döndürür bir **const** aralıktaki ilk öğeyi adresleyen bir yineleyici.
+Aralıktaki ilk öğeyi ele alan bir **sabit** yineleyici döndürür.
 
 ```cpp
 const_iterator cbegin() const;
@@ -604,13 +604,13 @@ const_iterator cbegin() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-A **const** aralığı veya konuma boş bir aralığın ilk öğesine konumundaki ileriye doğru erişim yineleyicisi (boş bir aralık için `cbegin() == cend()`).
+Aralığın  ilk öğesine veya boş bir aralığın sonundaki konuma (boş bir Aralık `cbegin() == cend()`için) işaret eden bir const ileri erişim yineleyicisi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Dönüş değeri ile `cbegin`, aralıktaki öğeler değiştirilemez.
+Dönüş değeri `cbegin`ile, aralıktaki öğeler değiştirilemez.
 
-Bu üye işlevi yerine kullanabileceğiniz `begin()` üye işlev dönüş değeri olacağını garanti etmek için `const_iterator`. Genellikle birlikte kullanılır [otomatik](../cpp/auto-cpp.md) kesinti anahtar sözcüğü, aşağıdaki örnekte gösterildiği gibi yazın. Örnekte, göz önünde bulundurun `Container` değiştirilebilir (olmayan **const**) destekleyen herhangi bir türdeki kapsayıcı `begin()` ve `cbegin()`.
+Dönüş değerinin olduğunu `begin()` `const_iterator`garantilemek için üye işlevin yerine bu üye işlevi kullanabilirsiniz. Genellikle, aşağıdaki örnekte gösterildiği gibi [Otomatik](../cpp/auto-cpp.md) tür kesintisi anahtar sözcüğüyle birlikte kullanılır. Örnekte, ve `Container` `begin()` ' ı destekleyen herhangi bir türde değiştirilebilir (const olmayan) bir kapsayıcı olarak göz önünde bulundurun.  `cbegin()`
 
 ```cpp
 auto i1 = Container.begin();
@@ -620,9 +620,9 @@ auto i2 = Container.cbegin();
 // i2 is Container<T>::const_iterator
 ```
 
-## <a name="cend"></a>  unordered_map::cend
+## <a name="cend"></a>unordered_map:: cend
 
-Döndürür bir **const** konuma bir aralıktaki son öğeyi ele alan bir yineleyici.
+Bir aralıktaki son öğeden hemen sonra gelen konumu ele alan bir **const** yineleyici döndürür.
 
 ```cpp
 const_iterator cend() const;
@@ -630,13 +630,13 @@ const_iterator cend() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-A **const** aralığın sonunu yalnızca ileri erişim yineleyicisi.
+Yalnızca aralığın sonunu işaret eden bir **const** ileri erişim yineleyicisi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`cend` bir yineleyicinin kendi aralığının sonunu geçmediğini sınamak için kullanılır.
+`cend`, bir yineleyicinin aralığın sonunu geçtiğini test etmek için kullanılır.
 
-Bu üye işlevi yerine kullanabileceğiniz `end()` üye işlev dönüş değeri olacağını garanti etmek için `const_iterator`. Genellikle birlikte kullanılır [otomatik](../cpp/auto-cpp.md) kesinti anahtar sözcüğü, aşağıdaki örnekte gösterildiği gibi yazın. Örnekte, göz önünde bulundurun `Container` değiştirilebilir (olmayan **const**) destekleyen herhangi bir türdeki kapsayıcı `end()` ve `cend()`.
+Dönüş değerinin olduğunu `end()` `const_iterator`garantilemek için üye işlevin yerine bu üye işlevi kullanabilirsiniz. Genellikle, aşağıdaki örnekte gösterildiği gibi [Otomatik](../cpp/auto-cpp.md) tür kesintisi anahtar sözcüğüyle birlikte kullanılır. Örnekte, ve `Container` `end()` ' ı destekleyen herhangi bir türde değiştirilebilir (const olmayan) bir kapsayıcı olarak göz önünde bulundurun.  `cend()`
 
 ```cpp
 auto i1 = Container.end();
@@ -645,9 +645,9 @@ auto i2 = Container.cend();
 // i2 is Container<T>::const_iterator
 ```
 
-Tarafından döndürülen değer `cend` kaldırılmamalıdır.
+Tarafından `cend` döndürülen değer başvurulmamalıdır.
 
-## <a name="clear"></a>  unordered_map::Clear
+## <a name="clear"></a>unordered_map:: Clear
 
 Tüm öğeleri kaldırır.
 
@@ -657,7 +657,7 @@ void clear();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlev çağrıları [unordered_map::erase](#erase) `(` [unordered_map::begin](#begin) `(),` [unordered_map::end](#end)`())`.
+Üye işlevi, [unordered_map:: Erase](#erase) `(` [unordered_map:: BEGIN](#begin) `(),` [unordered_map:: End](#end)`())`' i çağırır.
 
 ### <a name="example"></a>Örnek
 
@@ -714,7 +714,7 @@ size == 2
 empty() == false
 ```
 
-## <a name="const_iterator"></a>  unordered_map::const_iterator
+## <a name="const_iterator"></a>unordered_map::const_iterator
 
 Denetlenen dizi için bir sabit yineleyici türü.
 
@@ -724,7 +724,7 @@ typedef T1 const_iterator;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Denetlenen dizi için sabit bir ileriye doğru yineleyici olarak hizmet verebilen bir nesneyi tanımlayan bir tür. Açıklanmıştır uygulama tanımlı türünün eşanlamlısı olarak burada `T1`.
+Türü, denetimli sıra için sabit bir ileri Yineleyici işlevi görebilecek bir nesneyi tanımlar. Burada uygulama tanımlı tür `T1`için bir eş anlamlı olarak açıklanmaktadır.
 
 ### <a name="example"></a>Örnek
 
@@ -757,7 +757,7 @@ int main()
 [c, 3] [b, 2] [a, 1]
 ```
 
-## <a name="const_local_iterator"></a>  unordered_map::const_local_iterator
+## <a name="const_local_iterator"></a>unordered_map::const_local_iterator
 
 Denetlenen dizi için bir sabit demet yineleyici türü.
 
@@ -767,7 +767,7 @@ typedef T5 const_local_iterator;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir demet için sabit bir ileriye doğru yineleyici olarak hizmet verebilen bir nesneyi tanımlayan bir tür. Açıklanmıştır uygulama tanımlı türünün eşanlamlısı olarak burada `T5`.
+Türü, bir demet için sabit bir ileri Yineleyici işlevi görebilecek bir nesneyi tanımlar. Burada uygulama tanımlı tür `T5`için bir eş anlamlı olarak açıklanmaktadır.
 
 ### <a name="example"></a>Örnek
 
@@ -805,7 +805,7 @@ int main()
 [a, 1]
 ```
 
-## <a name="const_pointer"></a>  unordered_map::const_pointer
+## <a name="const_pointer"></a>unordered_map::const_pointer
 
 Bir öğe için sabit bir işaretçi türü.
 
@@ -815,7 +815,7 @@ typedef Alloc::const_pointer const_pointer;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Denetlenen dizinin bir öğe için sabit bir işaretçi olarak hizmet verebilen bir nesneyi tanımlayan bir tür.
+Türü, denetlenen dizinin bir öğesi için sabit bir işaretçi olarak kullanılabilecek bir nesneyi tanımlar.
 
 ### <a name="example"></a>Örnek
 
@@ -851,7 +851,7 @@ int main()
 [c, 3] [b, 2] [a, 1]
 ```
 
-## <a name="const_reference"></a>  unordered_map::const_reference
+## <a name="const_reference"></a>unordered_map::const_reference
 
 Bir öğe için sabit bir başvuru türü.
 
@@ -861,7 +861,7 @@ typedef Alloc::const_reference const_reference;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Denetlenen dizinin bir öğe için sabit bir başvuru olarak hizmet verebilen bir nesneyi tanımlayan bir tür.
+Türü, denetlenen dizinin bir öğesine sabit başvuru olarak işlev yapabilecek bir nesneyi tanımlar.
 
 ### <a name="example"></a>Örnek
 
@@ -897,7 +897,7 @@ int main()
 [c, 3] [b, 2] [a, 1]
 ```
 
-## <a name="count"></a>  unordered_map::Count
+## <a name="count"></a>unordered_map:: Count
 
 Belirtilen bir anahtar ile eşleşen öğe sayısını bulur.
 
@@ -907,12 +907,12 @@ size_type count(const Key& keyval) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*keyval*<br/>
-Aranacak anahtar değeri.
+*keyval*\
+Aranacak anahtar değer.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi tarafından ayrılmış aralıktaki öğelerin sayısını döndürür. [unordered_map::equal_range](#equal_range)`(keyval)`.
+Üye işlevi, [unordered_map:: equal_range](#equal_range)`(keyval)`ile ayrılmış aralıktaki öğelerin sayısını döndürür.
 
 ### <a name="example"></a>Örnek
 
@@ -952,7 +952,7 @@ count('b') == 1
 count('C') == 0
 ```
 
-## <a name="difference_type"></a>  unordered_map::difference_type
+## <a name="difference_type"></a>unordered_map::d ifference_type
 
 İki öğe arasındaki işaretli mesafenin türü.
 
@@ -962,7 +962,7 @@ typedef T3 difference_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-İmzalı bir tamsayı türü adreslerini denetlenen dizideki herhangi iki öğe arasındaki farkı temsil edebilen bir nesneyi tanımlar. Açıklanmıştır uygulama tanımlı türünün eşanlamlısı olarak burada `T3`.
+İmzalanan tamsayı türü, denetlenen dizideki herhangi iki öğenin adresleri arasındaki farkı temsil eden bir nesneyi tanımlar. Burada uygulama tanımlı tür `T3`için bir eş anlamlı olarak açıklanmaktadır.
 
 ### <a name="example"></a>Örnek
 
@@ -1011,9 +1011,9 @@ end()-begin() == 3
 begin()-end() == -3
 ```
 
-## <a name="emplace"></a>  unordered_map::emplace
+## <a name="emplace"></a>unordered_map:: emplace
 
-Bir unordered_map (hiçbir kopyalama veya taşıma işlemleri gerçekleştirilir) yerinde oluşturulmuş bir öğe ekler.
+Bir unordered_map içinde oluşturulmuş bir öğe ekler (kopyalama veya taşıma işlemleri yapılmaz).
 
 ```cpp
 template <class... Args>
@@ -1024,25 +1024,25 @@ pair<iterator, bool>  emplace( Args&&... args);
 
 |Parametre|Açıklama|
 |-|-|
-|*bağımsız değişken*|Bir öğenin değerini eşdeğer sıralı bir öğe içermiyorsa unordered_map eklenecek oluşturmak için iletilen bağımsız değişkenler.|
+|*args*|Değeri equivalently sıralı olan bir öğe içermiyorsa, unordered_map içine eklenecek bir öğe oluşturmak için iletilen bağımsız değişkenler.|
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-A `pair` olan **bool** bileşeni ekleme yaptıysanız true ve false değerini döndürür `unordered_map` anahtarı sıralama, eşdeğer bir değer vardı ve yineleyici bileşeni döndürür bir öğe zaten içeriyordu Burada yeni bir öğe eklendi veya öğenin zaten bulunduğu adres.
+Bir `pair` ekleme yapılırsa ve anahtarı sıralamada denk bir değere sahip olan bir öğe içeriyorsa ve `unordered_map` yineleyici bileşeni yeni bir öğenin bulunduğu adresi döndürürse, **bool** bileşeni bir ekleme yapıldıktan true, false değerini döndürür eklenmiş veya öğenin zaten bulunduğu konum.
 
-Yineleyici bileşen çifti erişmeye `pr` bu üye işlevi tarafından döndürülen, kullanın `pr.first`ve bu başvuru için `*(pr.first)`. Erişim için **bool** bileşen çifti `pr` bu üye işlevi tarafından döndürülen, kullanın `pr.second`.
+Bu üye işlevi tarafından döndürülen bir çiftin `pr` Yineleyici bileşenine erişmek için, kullanın `pr.first`ve `*(pr.first)`öğesini kullanın. Bu üye işlevi  tarafından döndürülen bir çiftin `pr` bool bileşenine erişmek için kullanın `pr.second`.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yineleyiciler ya da başvuruları, bu işlev tarafından geçersiz kılınır.
+Bu işlev tarafından hiçbir yineleyiciler veya başvuru geçersiz kılınmamıştır.
 
-Bir özel durum oluşturulur ancak kapsayıcının karma işlevi gerçekleşmez kapsayıcı ekleme sırasında değiştirilmez. Karma işlev özel durum, sonuç tanımsızdır.
+Ekleme sırasında, bir özel durum oluşturulursa, ancak kapsayıcının karma işlevinde gerçekleşmezse kapsayıcı değiştirilmez. Karma işlevde özel durum oluşturulursa, sonuç tanımsızdır.
 
-Kod örneği için bkz: [map::emplace](../standard-library/map-class.md#emplace).
+Kod örneği için bkz. [map:: emplace](../standard-library/map-class.md#emplace).
 
-## <a name="emplace_hint"></a>  unordered_map::emplace_hint
+## <a name="emplace_hint"></a>unordered_map::emplace_hint
 
-(Hiçbir kopyalama veya taşıma işlemleri gerçekleştirilir) bir yerleşim ipucuyla birlikte yerinde oluşturulmuş bir öğe ekler.
+Yerinde oluşturulmuş bir öğe ekler (kopyalama veya taşıma işlemleri yapılmaz), yerleştirme ipucuyla birlikte.
 
 ```cpp
 template <class... Args>
@@ -1053,26 +1053,26 @@ iterator emplace_hint(const_iterator where, Args&&... args);
 
 |Parametre|Açıklama|
 |-|-|
-|*bağımsız değişken*|Unordered_map bu öğeyi zaten içeriyor veya zaten anahtarı bir öğe içeriyorsa sürece daha genel olarak, eşdeğer sıralanır sürece unordered_map eklenecek bir öğe oluşturmak için iletilen bağımsız değişkenler.|
-|*Burada*|Doğru ekleme noktasını için aramaya başlamak için yer ile ilgili bir ipucu.|
+|*args*|Unordered_map zaten bu öğeyi içermediği veya daha önce anahtarı equivalently sıralı bir öğe içermiyorsa, unordered_map içine eklenecek bir öğe oluşturmak için iletilen bağımsız değişkenler.|
+|*olmadığı*|Doğru ekleme noktasını aramaya başlamak için yer hakkında bir ipucu.|
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yeni eklenen öğeye bir yineleyici.
+Yeni eklenmekte olan öğe için bir yineleyici.
 
-Öğe zaten var olduğundan ekleme başarısız olursa var olan öğeye bir yineleyici döndürür.
+Öğe zaten mevcut olduğundan ekleme başarısız olursa, varolan öğeye bir yineleyici döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Başvuru, bu işlev tarafından geçersiz kılınır.
+Bu işlev tarafından hiçbir başvuru geçersiz kılınmamıştır.
 
-Bir özel durum oluşturulur ancak kapsayıcının karma işlevi gerçekleşmez kapsayıcı ekleme sırasında değiştirilmez. Karma işlev özel durum, sonuç tanımsızdır.
+Ekleme sırasında, bir özel durum oluşturulursa, ancak kapsayıcının karma işlevinde gerçekleşmezse kapsayıcı değiştirilmez. Karma işlevde özel durum oluşturulursa, sonuç tanımsızdır.
 
-[Value_type](../standard-library/map-class.md#value_type) böylece bir öğenin değerini sıralı bir çift anahtar değerine eşit olan ilk bileşen ve saniye bileşenini öğenin veri değerine eşit olan bir çift öğesidir.
+Bir öğe [value_type](../standard-library/map-class.md#value_type) bir çifttir, böylece bir öğe değeri, ilk bileşeni anahtar değerine eşit olan ve ikinci bileşen öğenin veri değerine eşit olan bir sıralı çift olacaktır.
 
-Kod örneği için bkz: [map::emplace_hint](../standard-library/map-class.md#emplace_hint).
+Kod örneği için bkz. [map:: emplace_hint](../standard-library/map-class.md#emplace_hint).
 
-## <a name="empty"></a>  unordered_map::empty
+## <a name="empty"></a>unordered_map:: Empty
 
 Bir öğe olup olmadığını sınar.
 
@@ -1082,7 +1082,7 @@ bool empty() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi boş bir denetlenmiş dizi için true değerini döndürür.
+Üye işlevi boş bir denetlenen dizi için true döndürür.
 
 ### <a name="example"></a>Örnek
 
@@ -1139,7 +1139,7 @@ size == 2
 empty() == false
 ```
 
-## <a name="end"></a>  unordered_map::End
+## <a name="end"></a>unordered_map:: End
 
 Denetlenen dizinin bitişini belirtir.
 
@@ -1154,13 +1154,13 @@ const_local_iterator end(size_type nbucket) const;
 
 |Parametre|Açıklama|
 |-|-|
-|*nbucket*|Demet sayısı.|
+|*nbucket*|Demet numarası.|
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk iki üye işlevleri, son sırasının hemen ötesine işaret eden ileriye doğru bir yineleyici döndürür. Son iki üye işlevleri demetine sonuna hemen ötesine işaret eden ileriye doğru yineleyiciyi döndürür *nbucket*.
+İlk iki üye işlevi, dizinin sonunun hemen ötesinde işaret eden bir ileri yineleyici döndürür. Son iki üye işlevi, demet *nbucket*'un sonuna işaret eden bir ileri yineleyici döndürür.
 
-## <a name="equal_range"></a>  unordered_map::equal_range
+## <a name="equal_range"></a>unordered_map::equal_range
 
 Belirtilen bir anahtarla eşleşen aralığı bulur.
 
@@ -1171,12 +1171,12 @@ std::pair<const_iterator, const_iterator>  equal_range(const Key& keyval) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*keyval*<br/>
-Aranacak anahtar değeri.
+*keyval*\
+Aranacak anahtar değer.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi Yineleyicilerin bir çiftini döndürür `X` şekilde `[X.first, X.second)` yalnızca öğeleri ile eşdeğer sıralamaya sahip denetlenen dizinin sınırlandırır *keyval*. Böyle bir öğe varsa, her iki yineleyiciler olan `end()`.
+Üye işlevi, yalnızca *keyval*ile eşdeğer sıralamaya `X` sahip olan `[X.first, X.second)` denetimli dizinin öğelerini sınırlandıran bir çift yineleyiciyi döndürür. Böyle bir öğe yoksa, her iki yineleyiciler de `end()`vardır.
 
 ### <a name="example"></a>Örnek
 
@@ -1228,9 +1228,9 @@ equal_range('x'):
 equal_range('b'): [b, 2]
 ```
 
-## <a name="erase"></a>  unordered_map::ERASE
+## <a name="erase"></a>unordered_map:: Erase
 
-Bir öğenin veya öğelerin aralığını belirtilen konumlardan bir unordered_map kaldırır veya belirtilen bir anahtarla eşleşen öğeleri kaldırır.
+Belirtilen konumlardan bir unordered_map içindeki öğe veya öğe aralığını kaldırır veya belirtilen bir anahtarla eşleşen öğeleri kaldırır.
 
 ```cpp
 iterator erase(const_iterator Where);
@@ -1240,29 +1240,29 @@ size_type erase(const key_type& Key);
 
 ### <a name="parameters"></a>Parametreler
 
-*Burada*<br/>
+*Olmadığı*\
 Kaldırılacak öğenin konumu.
 
-*ilk*<br/>
+*Adı*\
 Kaldırılacak ilk öğenin konumu.
 
-*Son*<br/>
-Kaldırılacak yalnızca son öğenin ötesinde konumu.
+*Soyadına*\
+Kaldırılacak son öğenin hemen ötesinde konumlandır.
 
-*Key*<br/>
-Kaldırılacak öğe anahtar değeri.
+*Anahtar*\
+Kaldırılacak öğelerin anahtar değeri.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İlk iki üye işlevleri için çift yönlü bir yineleyici, kaldırılan herhangi bir öğe veya böyle bir öğe yoksa eşleme sonuna bir öğeyi ilk öğeyi belirtir.
+İlk iki üye işlevi için, kaldırılan tüm öğelerin ötesinde kalan ilk öğeyi veya böyle bir öğe yoksa haritanın sonu olan bir öğeyi atayan çift yönlü bir yineleyici.
 
-Üye işlevi için üçüncü unordered_map kaldırılan öğelerin sayısını döndürür.
+Üçüncü üye işlevi için, unordered_map kaldırılan öğelerin sayısını döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kod örneği için bkz: [map::erase](../standard-library/map-class.md#erase).
+Kod örneği için bkz. [map:: Erase](../standard-library/map-class.md#erase).
 
-## <a name="find"></a>  unordered_map::Find
+## <a name="find"></a>unordered_map:: Find
 
 Belirtilen bir anahtarla eşleşen bir öğeyi bulur.
 
@@ -1272,12 +1272,12 @@ const_iterator find(const Key& keyval) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*keyval*<br/>
-Aranacak anahtar değeri.
+*keyval*\
+Aranacak anahtar değer.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevinin döndürdüğü [unordered_map::equal_range](#equal_range)`(keyval).first`.
+Üye işlevi [unordered_map:: equal_range](#equal_range)`(keyval).first`döndürür.
 
 ### <a name="example"></a>Örnek
 
@@ -1322,7 +1322,7 @@ find('A') == false
 find('b') == true: [b, 2]
 ```
 
-## <a name="get_allocator"></a>  unordered_map::get_allocator
+## <a name="get_allocator"></a>unordered_map::get_allocator
 
 Depolanan ayırıcı nesnesini alır.
 
@@ -1332,7 +1332,7 @@ Alloc get_allocator() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi saklı ayırıcı nesnesini döndürür.
+Üye işlevi, depolanan ayırıcı nesnesini döndürür.
 
 ### <a name="example"></a>Örnek
 
@@ -1360,7 +1360,7 @@ int main()
 al == std::allocator() is true
 ```
 
-## <a name="hash"></a>  unordered_map::hash_function
+## <a name="hash"></a>unordered_map::hash_function
 
 Depolanan karma işlevi nesnesini alır.
 
@@ -1398,7 +1398,7 @@ hfn('a') == 1630279
 hfn('b') == 1647086
 ```
 
-## <a name="hasher"></a>  unordered_map::hasher
+## <a name="hasher"></a>unordered_map:: hasher
 
 Karma işlevin türü.
 
@@ -1408,7 +1408,7 @@ typedef Hash hasher;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon parametresi için bir eşanlamlı türüdür `Hash`.
+Tür, şablon parametresi `Hash`için bir eş anlamlı.
 
 ### <a name="example"></a>Örnek
 
@@ -1436,9 +1436,9 @@ hfn('a') == 1630279
 hfn('b') == 1647086
 ```
 
-## <a name="insert"></a>  unordered_map::insert
+## <a name="insert"></a>unordered_map:: insert
 
-Bir öğenin veya öğelerin aralığını bir unordered_map ekler.
+Bir unordered_map öğesine öğe veya öğe aralığı ekler.
 
 ```cpp
 // (1) single element
@@ -1472,39 +1472,39 @@ IList);
 
 |Parametre|Açıklama|
 |-|-|
-|*VAL*|Anahtarı eşdeğer sıralı bir öğe içermiyorsa unordered_map eklenecek bir öğenin değeri.|
-|*Burada*|Doğru ekleme noktasını için aramaya başlamak için bir yerde.|
-|*ValTy*|Unordered_map öğesi oluşturmak için kullanabileceğiniz bağımsız değişken türü belirten bir şablon parametresi [value_type](../standard-library/map-class.md#value_type)ve mükemmel ileten *Val* bağımsız değişken olarak.|
-|*ilk*|Kopyalanacak ilk öğenin konumu.|
-|*Son*|Kopyalanacak son öğenin ötesinde konumu.|
-|*Inputıterator*|Gereksinimlerini karşılayan şablonu işlev bağımsız değişkeni bir [giriş yineleyici](../standard-library/input-iterator-tag-struct.md) oluşturmak için kullanılan bir tür öğelerine işaret eden [value_type](../standard-library/map-class.md#value_type) nesneleri.|
-|*IList*|[İnitializer_list](../standard-library/initializer-list.md) öğeleri kopyalanacak.|
+|*Acil*|Anahtarı equivalently sıralı bir öğe içermiyorsa, unordered_map içine eklenecek öğenin değeri.|
+|*Olmadığı*|Doğru ekleme noktasını aramaya başlamak için yer.|
+|*ValTy*|Unordered_map 'in bir [value_type](../standard-library/map-class.md#value_type)öğesi oluşturmak için kullanabileceği bağımsız değişken türünü belirten şablon parametresi ve bağımsız *değişken olarak kusursuz* iletme değeri.|
+|*Adı*|Kopyalanacak ilk öğenin konumu.|
+|*Soyadına*|Kopyalanacak son öğenin hemen ötesinde konum.|
+|*InputIterator*|[Value_type](../standard-library/map-class.md#value_type) nesnelerini oluşturmak için kullanılabilecek bir türün öğelerine işaret eden bir [giriş yineleyicisinin](../standard-library/input-iterator-tag-struct.md) gereksinimlerini karşılayan şablon işlevi bağımsız değişkeni.|
+|*IList*|Öğelerin kopyalanacağı [initializer_list](../standard-library/initializer-list.md) .|
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Tek öğeli üye işlevleri (1) ve (2) iade bir [çifti](../standard-library/pair-structure.md) olan **bool** bileşendir ekleme yaptıysanız true ve false unordered_map anahtarı olan bir öğe içeriyorsa bir sıralama, eşdeğer bir değer. Yineleyici bileşeni dönüş değeri çiftinin yeni eklenen öğeye işaret ederse **bool** bileşendir true veya var olan öğeye varsa **bool** bileşen değer false.
+Tek öğeli üye işlevleri, (1) ve (2), bir ekleme yapılırsa **bool** bileşeni doğru olan bir [çift](../standard-library/pair-structure.md) döndürür ve unordered_map zaten, anahtarı sıralamada denk bir değere sahip olan bir öğe içeriyorsa false. Dönüş-değer çiftinin yineleyici bileşeni, **bool** bileşeni true ise yeni ınsertedelement öğesine veya **bool** bileşeni false ise var olan öğeye işaret eder.
 
-İpucu ile tek öğe üye işlevleri, (3) ve (4), yeni bir öğe unordered_map eklenen burada veya eşdeğer bir anahtara sahip bir öğe zaten var olan öğeye varsa konuma gösteren bir yineleyici döndürür.
+Tek öğeli-ipucu üye işlevleri, (3) ve (4), yeni öğenin unordered_map içine eklendiği konuma ya da eşdeğer anahtara sahip bir öğe zaten varsa var olan öğeye işaret eden bir yineleyici döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Hiçbir yineleyiciler, işaretçiler veya başvurular, bu işlev tarafından geçersiz kılınır.
+Bu işlev tarafından hiçbir yineleyiciler, işaretçiler veya başvuru geçersiz kılınamaz.
 
-Bir özel durum oluşturulur ancak kapsayıcının karma işlevi gerçekleşmez yalnızca bir öğe ekleme sırasında kapsayıcının durumu değiştirilmez. Karma işlev özel durum, sonuç tanımsızdır. Bir özel durum oluşturulursa, birden çok öğe ekleme sırasında kapsayıcı belirtilmeyen ancak geçerli bir durumda bırakılır.
+Yalnızca bir öğenin eklenmesi sırasında, bir özel durum oluşturulursa, ancak kapsayıcının karma işlevinde gerçekleşmemişse kapsayıcının durumu değiştirilmez. Karma işlevde özel durum oluşturulursa, sonuç tanımsızdır. Birden çok öğenin eklenmesi sırasında, bir özel durum oluşturulursa, kapsayıcı belirtilmemiş ancak geçerli bir durumda bırakılır.
 
-Yineleyici bileşeni erişmek için bir `pair` `pr` kullanın, tek öğeli üye işlevleri tarafından döndürülen `pr.first`; döndürülen çiftin içinde yineleyicinin başvuru kaldırma, kullanın `*pr.first`, size bir öğe sağlar. Erişim için **bool** bileşeni, kullanım `pr.second`. Bu makaledeki örnek kod örneği için bkz.
+Tek öğeli üye işlevleri tarafından döndürülen bir `pair` `pr` ' ın Yineleyici bileşenine erişmek için, öğesini kullanın `pr.first`; döndürülen çiftin içindeki yineleyiciyi başvuru olarak kullanın `*pr.first`. **Bool** bileşenine erişmek için kullanın `pr.second`. Örnek için, bu makalenin ilerleyen kısımlarında örnek koda bakın.
 
-[Value_type](../standard-library/map-class.md#value_type) eşlemesini yanı sıra, kapsayıcıya ait bir tür tanımı, kapsayıcısıdır `map<K, V>::value_type` olduğu `pair<const K, V>`. Bir öğenin ilk bileşen anahtar değerine eşittir ve ikinci bileşen öğenin veri değerine eşit olan sıralı bir çift değerdir.
+Bir kapsayıcının [value_type](../standard-library/map-class.md#value_type) , kapsayıcısına ait olan ve Map `map<K, V>::value_type` `pair<const K, V>`için olan bir typedef 'dir. Bir öğenin değeri, ilk bileşenin anahtar değere eşit olduğu ve ikinci bileşenin öğenin veri değerine eşit olduğu sıralı bir çiftidir.
 
-Aralık üye işlevi (5) aralığında bir yineleyici tarafından ele alınan her öğe için karşılık gelen bir unordered_map öğe değerleri dizisi ekler `[First, Last)`; bu nedenle `Last` takılı. Kapsayıcı üye işlevi `end()` kapsayıcıdaki son öğeden hemen sonra konuma başvuran — Örneğin, deyim `m.insert(v.begin(), v.end());` tüm öğeleri ekleme girişiminde `v` içine `m`. Yalnızca benzersiz değerler aralığında olan öğeler eklenir; Yinelenen göz ardı edilir. Hangi öğelerin reddedilir gözlemlemek için tek öğeli sürümleri kullanın `insert`.
+Aralık üye işlevi (5), öğe değerlerinin dizisini aralıktaki `[First, Last)`bir yineleyici tarafından bahsedilen her öğeye karşılık gelen bir unordered_map ekler; bu nedenle, `Last` eklenmez. Kapsayıcı üye işlevi `end()` , kapsayıcıdaki son öğeden hemen sonra gelen konuma başvurur — Örneğin, ifade `m.insert(v.begin(), v.end());` öğesine tüm öğelerini `v` `m`eklemeye çalışır. Yalnızca aralıktaki benzersiz değerlere sahip öğeler eklenir; yinelemeler yoksayıldı. Hangi öğelerin reddedildiğini gözlemlemek için, öğesinin `insert`tek öğeli sürümlerini kullanın.
 
-Başlatıcı listesinde üye işlev (6) kullanan bir [initializer_list](../standard-library/initializer-list.md) öğeleri unordered_map kopyalanacak.
+Başlatıcı listesi üye işlevi (6), unordered_map öğelerini kopyalamak için bir [initializer_list](../standard-library/initializer-list.md) kullanır.
 
-Yerinde oluşturulmuş bir öğe ekleme — diğer bir deyişle, hiçbir kopyalama veya taşıma işlemleri gerçekleştirilir — bkz [unordered_map::emplace](#emplace) ve [unordered_map::emplace_hint](#emplace_hint).
+Yerinde oluşturulmuş bir öğenin eklenmesi için (yani, kopyalama veya taşıma işlemleri yapılmaz), bkz. [unordered_map:: emplace](#emplace) ve [unordered_map:: emplace_hint](#emplace_hint).
 
-Kod örneği için bkz: [map::insert](../standard-library/map-class.md#insert).
+Kod örneği için bkz. [map:: insert](../standard-library/map-class.md#insert).
 
-## <a name="iterator"></a>  unordered_map::iterator
+## <a name="iterator"></a>unordered_map:: Yineleyici
 
 Denetlenen dizi için bir yineleyici türü.
 
@@ -1514,7 +1514,7 @@ typedef T0 iterator;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Denetlenen dizi için ileriye doğru yineleyici olarak hizmet verebilen bir nesneyi tanımlayan bir tür. Açıklanmıştır uygulama tanımlı türünün eşanlamlısı olarak burada `T0`.
+Türü, denetimli sıra için ileri Yineleyici olarak işlev görebilecek bir nesne tanımlar. Burada uygulama tanımlı tür `T0`için bir eş anlamlı olarak açıklanmaktadır.
 
 ### <a name="example"></a>Örnek
 
@@ -1547,7 +1547,7 @@ int main()
 [c, 3] [b, 2] [a, 1]
 ```
 
-## <a name="key_eq"></a>  unordered_map::key_eq
+## <a name="key_eq"></a>unordered_map::key_eq
 
 Depolanan karşılaştırma işlevi nesnesini alır.
 
@@ -1557,7 +1557,7 @@ Pred key_eq() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi, depolanan karşılaştırma işlevi nesnesini döndürür.
+Üye işlevi, saklı karşılaştırma işlevi nesnesini döndürür.
 
 ### <a name="example"></a>Örnek
 
@@ -1587,7 +1587,7 @@ cmpfn('a', 'a') == true
 cmpfn('a', 'b') == false
 ```
 
-## <a name="key_equal"></a>  unordered_map::key_equal
+## <a name="key_equal"></a>unordered_map::key_equal
 
 Karşılaştırma işlevinin türü.
 
@@ -1597,7 +1597,7 @@ typedef Pred key_equal;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon parametresi için bir eşanlamlı türüdür `Pred`.
+Tür, şablon parametresi `Pred`için bir eş anlamlı.
 
 ### <a name="example"></a>Örnek
 
@@ -1627,7 +1627,7 @@ cmpfn('a', 'a') == true
 cmpfn('a', 'b') == false
 ```
 
-## <a name="key_type"></a>  unordered_map::key_type
+## <a name="key_type"></a>unordered_map::key_type
 
 Bir sıralama anahtarının türü.
 
@@ -1637,7 +1637,7 @@ typedef Key key_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon parametresi için bir eşanlamlı türüdür `Key`.
+Tür, şablon parametresi `Key`için bir eş anlamlı.
 
 ### <a name="example"></a>Örnek
 
@@ -1682,7 +1682,7 @@ int main()
 [d, 4] [c, 3] [b, 2] [a, 1]
 ```
 
-## <a name="load_factor"></a>  unordered_map::load_factor
+## <a name="load_factor"></a>unordered_map::load_factor
 
 Demet başına ortalama öğeyi sayar.
 
@@ -1692,7 +1692,7 @@ float load_factor() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevinin döndürdüğü `(float)` [unordered_map::size](#size)`() / (float)`[unordered_map::bucket_count](#bucket_count)`()`, öğe demet başına ortalama sayısı.
+Üye işlevi, demet `(float)`başına ortalama öğe sayısı olan [unordered_map:: size](#size)`() / (float)`[unordered_map:: bucket_count](#bucket_count)`()`döndürür.
 
 ### <a name="example"></a>Örnek
 
@@ -1768,9 +1768,9 @@ max_bucket_count() == 128
 max_load_factor() == 0.1
 ```
 
-## <a name="local_iterator"></a>  unordered_map::local_iterator
+## <a name="local_iterator"></a>unordered_map::local_iterator
 
-Bir demet yineleyici türü.
+Demet yineleyicisinin türü.
 
 ```cpp
 typedef T4 local_iterator;
@@ -1778,7 +1778,7 @@ typedef T4 local_iterator;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir demet için ileriye doğru yineleyici olarak hizmet verebilen bir nesneyi tanımlayan bir tür. Açıklanmıştır uygulama tanımlı türünün eşanlamlısı olarak burada `T4`.
+Türü, bir demet için ileriye doğru Yineleyici işlevi görebilecek bir nesneyi tanımlar. Burada uygulama tanımlı tür `T4`için bir eş anlamlı olarak açıklanmaktadır.
 
 ### <a name="example"></a>Örnek
 
@@ -1816,7 +1816,7 @@ int main()
 [a, 1]
 ```
 
-## <a name="mapped_type"></a>  unordered_map::mapped_type
+## <a name="mapped_type"></a>unordered_map::mapped_type
 
 Her bir anahtar ile ilişkili bir eşlenen değer türü.
 
@@ -1826,7 +1826,7 @@ typedef Ty mapped_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon parametresi için bir eşanlamlı türüdür `Ty`.
+Tür, şablon parametresi `Ty`için bir eş anlamlı.
 
 ### <a name="example"></a>Örnek
 
@@ -1871,7 +1871,7 @@ int main()
 [d, 4] [c, 3] [b, 2] [a, 1]
 ```
 
-## <a name="max_bucket_count"></a>  unordered_map::max_bucket_count
+## <a name="max_bucket_count"></a>unordered_map::max_bucket_count
 
 En yüksek demet sayısını alır.
 
@@ -1881,7 +1881,7 @@ size_type max_bucket_count() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi, demet şu anda izin verilen en büyük sayısını döndürür.
+Üye işlevi, şu anda izin verilen en fazla demet sayısını döndürür.
 
 ### <a name="example"></a>Örnek
 
@@ -1957,7 +1957,7 @@ max_bucket_count() == 128
 max_load_factor() == 0.1
 ```
 
-## <a name="max_load_factor"></a>  unordered_map::max_load_factor
+## <a name="max_load_factor"></a>unordered_map::max_load_factor
 
 Demet başına en yüksek öğe sayısını alır veya ayarlar.
 
@@ -1969,12 +1969,12 @@ void max_load_factor(float factor);
 
 ### <a name="parameters"></a>Parametreler
 
-*faktörü*<br/>
-Yeni en yüksek yük faktörünün.
+*çarpan*\
+Yeni en yüksek yük faktörü.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk üye işlevi, depolanan en yüksek yük faktörünün döndürür. İkinci üye işlevi ile depolanan en yüksek yük faktörünün değiştirir *faktörü*.
+İlk üye işlevi, depolanan en fazla yük faktörünü döndürür. İkinci üye işlevi, saklı maksimum yük faktörünü faktörle değiştirir .
 
 ### <a name="example"></a>Örnek
 
@@ -2050,7 +2050,7 @@ max_bucket_count() == 128
 max_load_factor() == 0.1
 ```
 
-## <a name="max_size"></a>  unordered_map::max_size
+## <a name="max_size"></a>unordered_map::max_size
 
 Denetlenen dizinin en büyük boyutunu alır.
 
@@ -2060,7 +2060,7 @@ size_type max_size() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi, nesneyi de denetleyebilir kastetmek uzunluğunu döndürür.
+Üye işlevi, nesnenin denetleyecan en uzun sırasının uzunluğunu döndürür.
 
 ### <a name="example"></a>Örnek
 
@@ -2085,7 +2085,7 @@ int main()
 max_size() == 536870911
 ```
 
-## <a name="op_at"></a>  unordered_map::operator]
+## <a name="op_at"></a>unordered_map:: operator []
 
 Belirtilen anahtarı içeren bir öğe bulur veya ekler.
 
@@ -2099,7 +2099,7 @@ Ty& operator[](Key&& keyval);
 
 |Parametre|Açıklama|
 |-|-|
-|*keyval*|Bulmak veya eklemek için anahtar değeri.|
+|*Keyval*|Bulmak veya eklemek için anahtar değeri.|
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -2109,9 +2109,9 @@ Eklenen öğenin veri değerine başvuru.
 
 Bağımsız değişken anahtar değeri bulunamazsa, değer veri türünün varsayılan değeriyle birlikte eklenir.
 
-`operator[]` öğe bir eşlemeye eklemek için kullanılabilir *m* kullanarak *m*[*anahtarı*] = `DataValue`; burada `DataValue` değeri `mapped_type` bir anahtara sahip öğe değerini *anahtar*.
+`operator[]`, *bir Map 'e* , *k*[*Key*] = `DataValue`; kullanarak öğe eklemek için kullanılabilir; burada `DataValue` anahtar değeri *anahtar*olan öğenin `mapped_type` değeridir.
 
-Kullanırken `operator[]` öğeleri eklemek için döndürülen başvuru ekleme önceden varolan bir öğeyi değiştirmek veya yeni bir tane oluşturmak anlamına gelmez. Üye işlevleri [Bul](../standard-library/map-class.md#find) ve [Ekle](../standard-library/map-class.md#insert) belirtilen anahtara sahip bir öğe zaten bir ekleme mevcut olup olmadığını belirlemek için kullanılabilir.
+Öğeleri eklemek `operator[]` için kullanırken, döndürülen başvuru, bir eklentinin önceden varolan bir öğeyi değiştirip değiştirmediğini veya yeni bir tane oluşturmadığını göstermez. [Bul](../standard-library/map-class.md#find) ve [Ekle](../standard-library/map-class.md#insert) üye işlevleri, bir ekleme işleminden önce belirtilen anahtara sahip bir öğenin zaten mevcut olup olmadığını anlamak için kullanılabilir.
 
 ### <a name="example"></a>Örnek
 
@@ -2170,11 +2170,11 @@ c2["abc"] == 1
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi yineleyici belirler `where` dönüş değeri olarak [unordered_map::insert](#insert) `(` [unordered_map::value_type](#value_type)`(keyval, Ty())`. (Böyle bir öğe yoksa, belirtilen anahtara sahip öğe ekler.) Ardından bir başvuru döndürür `(*where).second`.
+Üye `where` işlevi, [unordered_map:: INSERT](#insert) `(` [unordered_map:: value_type](#value_type)`(keyval, Ty())`dönüş değeri olarak yineleyiciyi belirler. (Böyle bir öğe yoksa, belirtilen anahtara sahip öğe ekler.) Daha sonra öğesine `(*where).second`bir başvuru döndürür.
 
-## <a name="op_eq"></a>  unordered_map::operator =
+## <a name="op_eq"></a>unordered_map:: operator =
 
-Başka bir unordered_map öğeleri kullanarak bu unordered_map öğelerini değiştirir.
+Bu unordered_map öğelerini başka bir unordered_map öğelerini kullanarak değiştirir.
 
 ```cpp
 unordered_map& operator=(const unordered_map& right);
@@ -2186,15 +2186,15 @@ unordered_map& operator=(unordered_map&& right);
 
 |Parametre|Açıklama|
 |-|-|
-|*sağ*|İşleç işlevini içerikten atar unordered_map.|
+|*Right*|İşleç işlevinin içeriği atadığı unordered_map.|
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk sürüm tüm öğeleri kopyalar *doğru* bu unordered_map için.
+İlk sürüm tüm öğeleri *sağdan* Bu unordered_map kopyalar.
 
-Dosyanın ikinci sürümü tüm öğeleri taşır *doğru* bu unordered_map için.
+İkinci sürüm tüm öğeleri *sağdan* Bu unordered_map kaydırır.
 
-Önce bu unordered_map bulunan herhangi bir öğe `operator`= yürütür atılır.
+Bu unordered_map Before `operator`= yürütmeden olan tüm öğeler atılır.
 
 ### <a name="example"></a>Örnek
 
@@ -2233,7 +2233,7 @@ int main( )
    }
 ```
 
-## <a name="pointer"></a>  unordered_map::pointer
+## <a name="pointer"></a>unordered_map::p oınter
 
 Bir öğe için bir işaretçi türü.
 
@@ -2243,7 +2243,7 @@ typedef Alloc::pointer pointer;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Denetlenen dizinin öğeye bir işaretçi olarak hizmet verebilen bir nesneyi tanımlayan bir tür.
+Türü, denetlenen sıranın bir öğesi için bir işaretçi olarak işlev görebilecek bir nesneyi tanımlar.
 
 ### <a name="example"></a>Örnek
 
@@ -2279,7 +2279,7 @@ int main()
 [c, 3] [b, 2] [a, 1]
 ```
 
-## <a name="reference"></a>  unordered_map::Reference
+## <a name="reference"></a>unordered_map:: Reference
 
 Bir öğe için bir başvuru türü.
 
@@ -2289,7 +2289,7 @@ typedef Alloc::reference reference;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Denetlenen dizinin bir öğesine bir başvuru olarak hizmet verebilen bir nesneyi tanımlayan bir tür.
+Türü, denetlenen sıranın bir öğesine başvuru olarak işlev görebilecek bir nesne tanımlar.
 
 ### <a name="example"></a>Örnek
 
@@ -2325,7 +2325,7 @@ int main()
 [c, 3] [b, 2] [a, 1]
 ```
 
-## <a name="rehash"></a>  unordered_map::rehash
+## <a name="rehash"></a>unordered_map:: rehash
 
 Karma tabloyu yeniden oluşturur.
 
@@ -2335,12 +2335,12 @@ void rehash(size_type nbuckets);
 
 ### <a name="parameters"></a>Parametreler
 
-*nbuckets*<br/>
+*ndemet 'ler*\
 İstenen demet sayısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi en az olacak şekilde demet sayısını değiştirir *nbuckets* ve gerektiğinde karma tabloyu yeniden oluşturur.
+Üye işlevi, demetlerin sayısını en az *ndemetler* olacak şekilde değiştirir ve karma tabloyu gerektiği gibi yeniden oluşturur.
 
 ### <a name="example"></a>Örnek
 
@@ -2403,7 +2403,7 @@ load_factor() == 0.0234375
 max_load_factor() == 0.1
 ```
 
-## <a name="size"></a>  unordered_map::size
+## <a name="size"></a>unordered_map:: size
 
 Öğe sayısını sayar.
 
@@ -2413,7 +2413,7 @@ size_type size() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi, denetlenen dizinin uzunluğunu döndürür.
+Üye işlevi denetlenen sıranın uzunluğunu döndürür.
 
 ### <a name="example"></a>Örnek
 
@@ -2470,7 +2470,7 @@ size == 2
 empty() == false
 ```
 
-## <a name="size_type"></a>  unordered_map::size_type
+## <a name="size_type"></a>unordered_map::size_type
 
 İki öğe arasındaki işaretsiz bir mesafenin türü.
 
@@ -2480,7 +2480,7 @@ typedef T2 size_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşaretsiz tamsayı türü, denetlenen bir dizi uzunluğunu temsil edebilen bir nesneyi tanımlar. Açıklanmıştır uygulama tanımlı türünün eşanlamlısı olarak burada `T2`.
+İşaretsiz tamsayı türü, denetlenen bir dizinin uzunluğunu temsil eden bir nesneyi tanımlar. Burada uygulama tanımlı tür `T2`için bir eş anlamlı olarak açıklanmaktadır.
 
 ### <a name="example"></a>Örnek
 
@@ -2506,7 +2506,7 @@ int main()
 size == 0
 ```
 
-## <a name="swap"></a>  unordered_map::Swap
+## <a name="swap"></a>unordered_map:: swap
 
 İki kapsayıcının içeriğinin yerini değiştirir.
 
@@ -2516,12 +2516,12 @@ void swap(unordered_map& right);
 
 ### <a name="parameters"></a>Parametreler
 
-*sağ*<br/>
-İle takas için kapsayıcı.
+*Right*\
+İle takas edilecek kapsayıcı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Denetlenen diziyi üye işlevi değiştirir `*this` ve *doğru*. Varsa [unordered_map::get_allocator](#get_allocator)`() == right.get_allocator()`depolanan özellikleri nesnesinin türü kopyalama sonucunda yalnızca özel durum oluşturur, bunu sabit sürede yapar `Tr`, hiçbir başvurular, işaretçiler, gösteren geçersiz kılar veya Bu yineleyiciler iki denetlenen dizinin öğelerini belirleyin. Aksi takdirde, bir dizi öğesi atamalar ve oluşturucu çağrıları öğelerin sayısını orantılı iki denetimli sıralarında gerçekleştirir.
+Üye işlevi, ve `*this` *sağ*arasındaki denetlenen dizileri değiştirir. [Unordered_map:: get_allocator](#get_allocator)`() == right.get_allocator()`ise, bu, sabit bir zamanda, yalnızca türünde `Tr`depolanan nitelikler nesnesini kopyalamanın sonucu olarak bir özel durum oluşturur ve bunu belirten hiçbir başvuru, işaretçi veya yineleyiciyi geçersiz kılar. iki denetimli dizi öğeleri. Aksi takdirde, bir dizi öğe ataması ve Oluşturucu çağrısı, iki denetimli dizi içindeki öğe sayısıyla orantılı olarak gerçekleştirilir.
 
 ### <a name="example"></a>Örnek
 
@@ -2578,7 +2578,7 @@ int main()
 [c, 3] [b, 2] [a, 1]
 ```
 
-## <a name="unordered_map"></a>  unordered_map::unordered_map
+## <a name="unordered_map"></a>unordered_map::unordered_map
 
 Bir kapsayıcı nesnesi oluşturur.
 
@@ -2627,28 +2627,28 @@ unordered_map(
 
 |Parametre|Açıklama|
 |-|-|
-|*Al*|Depolanacak ayırıcı nesne.|
-|*Comp*|Depolanacak karşılaştırma işlevi nesnesi.|
-|*Karma*|Depolanacak karma işlev nesnesi.|
+|*Eşkenar*|Depolanacak ayırıcı nesne.|
+|*İnin*|Depolanacak karşılaştırma işlevi nesnesi.|
+|*Yla*|Depolanacak karma işlev nesnesi.|
 |*Bucket_count*|En düşük demet sayısı.|
-|*sağ*|Kopyalanacak kapsayıcı.|
-|*ilk*||
-|*Son*||
-|*IList*|Kopyalanacak öğe içeren initializer_list.|
+|*Right*|Kopyalanacak kapsayıcı.|
+|*Adı*||
+|*Soyadına*||
+|*IList*|Kopyalanacak öğeleri içeren initializer_list.|
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk Oluşturucu tarafından denetlenen dizinin bir kopyasını belirtir `right`. İkinci oluşturucu boş bir denetlenmiş dizi belirtir. Üçüncü Oluşturucu öğe değerleri dizisi ekler `[first, last)`. Dördüncü Oluşturucu taşıyarak dizinin bir kopyasını belirtir. `right`.
+İlk Oluşturucu tarafından `right`denetlenen sıranın bir kopyasını belirtir. İkinci oluşturucu boş bir denetlenmiş dizi belirtir. Üçüncü Oluşturucu öğe değerlerinin `[first, last)`dizisini ekler. Dördüncü Oluşturucu taşıyarak `right`sıranın bir kopyasını belirtir.
 
-Ayrıca, tüm oluşturucular çeşitli depolanmış değerleri başlatır. Kopya oluşturucusu için gelen değerler elde edilir *sağ*. Aksi durumda:.
+Ayrıca, tüm oluşturucular çeşitli depolanmış değerleri başlatır. Kopya Oluşturucu için değerler *sağdan*alınır. Aksi durumda:.
 
-demetler en az sayıda bağımsız değişken olan *Bucket_count*, aksi takdirde mevcut açıklanan varsayılan bir değer olup olmadığını burada uygulama tanımlı değer olarak `N0`.
+En düşük demet sayısı, varsa *Bucket_count*bağımsız değişkenidir; Aksi takdirde, burada uygulama tanımlı değer `N0`olarak açıklanan varsayılan bir değerdir.
 
-Karma işlev nesnesi bağımsız değişken olan *karma*, mevcut; Aksi durumda, `Hash()`.
+karma işlev nesnesi varsa bağımsız değişken *karmasıdır*; Aksi takdirde, `Hash()`.
 
-Karşılaştırma işlevi nesnesini bağımsız değişken olan *kompozisyonu*, mevcut; Aksi durumda, `Pred()`.
+Karşılaştırma işlevi nesnesi, varsa, *comp*bağımsız değişkenidir; Aksi takdirde, `Pred()`.
 
-Bağımsız değişken ayırıcısı nesnedir *Al*, mevcut; Aksi durumda, `Alloc()`.
+Ayırıcı nesne varsa *Al*bağımsız değişkenidir; Aksi takdirde, `Alloc()`.
 
 ### <a name="example"></a>Örnek
 
@@ -2784,7 +2784,7 @@ int main()
 [a, 1] [b, 2] [c, 3]
 ```
 
-## <a name="value_type"></a>  unordered_map::value_type
+## <a name="value_type"></a>unordered_map::value_type
 
 Öğenin türü.
 
@@ -2794,7 +2794,7 @@ typedef std::pair<const Key, Ty> value_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Denetlenen dizinin bir öğe türü açıklar.
+Tür denetimli sıranın bir öğesini açıklar.
 
 ### <a name="example"></a>Örnek
 
@@ -2841,7 +2841,7 @@ int main()
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[<unordered_map>](../standard-library/unordered-map.md)<br/>
-[Kapsayıcılar](../cpp/containers-modern-cpp.md)<br/>
-[C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
-[C++ Standart Kitaplığı Başvurusu](../standard-library/cpp-standard-library-reference.md)<br/>
+[< unordered_map >](../standard-library/unordered-map.md)\
+[Kapsayıcıları](../cpp/containers-modern-cpp.md)\
+[C++ Standart kitaplıkta Iş parçacığı güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)\
+[C++ Standart Kitaplığı Başvurusu](../standard-library/cpp-standard-library-reference.md)

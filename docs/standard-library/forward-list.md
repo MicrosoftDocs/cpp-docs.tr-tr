@@ -6,25 +6,25 @@ f1_keywords:
 helpviewer_keywords:
 - <forward_list>
 ms.assetid: 8b4ab09e-1475-434a-b4e0-fdbc07a08b5b
-ms.openlocfilehash: d20c5b83e0ce00c7634d32e6b63c92242c24d1b2
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.openlocfilehash: a8b343fbe5e175828b4b8470da486a6dea9f3455
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68240645"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68457009"
 ---
 # <a name="ltforwardlistgt"></a>&lt;forward_list&gt;
 
-Kapsayıcı Şablon sınıfı forward_list ve çeşitli destek şablonları tanımlar.
+Kapsayıcı şablon sınıfı forward_list ve çeşitli destekleyici şablonlar tanımlar.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** \<forward_list >
+**Üst bilgi:** \<forward_list >
 
-**Namespace:** std
+**Ad alanı:** std
 
 > [!NOTE]
-> \<Forward_list > Kitaplığı'nı da kullanan `#include <initializer_list>` deyimi.
+> Forward_list > kitaplığı, `#include <initializer_list>` ifadesini de kullanır. \<
 
 ## <a name="members"></a>Üyeler
 
@@ -32,25 +32,25 @@ Kapsayıcı Şablon sınıfı forward_list ve çeşitli destek şablonları tan�
 
 |||
 |-|-|
-|[operator==](../standard-library/forward-list-operators.md#op_eq_eq)|İşlecin sol tarafındaki iletme liste nesnesi işlecin sağ tarafındaki iletme liste nesnesi eşit olup olmadığını sınar.|
-|[operator!=](../standard-library/forward-list-operators.md#op_neq)|İşlecin sol tarafındaki iletme liste nesnesi işlecin sağ tarafındaki iletme liste nesnesi eşit olup olmadığını sınar.|
-|[işleç <](../standard-library/forward-list-operators.md#op_lt)|İşlecin sol tarafındaki iletme liste nesnesi işlecin sağ tarafındaki iletme listesi nesneden küçük olup olmadığını sınar.|
-|[operator < =](../standard-library/forward-list-operators.md#op_lt_eq)|İşlecinin sol tarafında iletme liste nesnesi küçük olup olmadığını sınar veya işlecin sağ tarafındaki iletme liste nesnesi eşittir.|
-|[operator >](../standard-library/forward-list-operators.md#op_gt)|İşlecin sol tarafındaki iletme liste nesnesi iletme liste nesnesi işlecin sağ tarafındaki büyük olup olmadığını sınar.|
-|[operator>=](../standard-library/forward-list-operators.md#op_lt_eq)|İşlecin sol tarafındaki iletme liste nesnesi büyük veya işlecin sağ tarafındaki iletme Liste nesnesine eşit olup olmadığını sınar.|
+|[operator==](../standard-library/forward-list-operators.md#op_eq_eq)|İşlecin sol tarafındaki ileri liste nesnesinin sağ taraftaki ileri liste nesnesine eşit olup olmadığını sınar.|
+|[operator!=](../standard-library/forward-list-operators.md#op_neq)|İşlecin sol tarafındaki ileri liste nesnesinin sağ taraftaki ileri liste nesnesine eşit olup olmadığını sınar.|
+|[işleç <](../standard-library/forward-list-operators.md#op_lt)|İşlecin sol tarafındaki ileri liste nesnesinin sağ taraftaki ileriye doğru liste nesnesinden küçük olup olmadığını sınar.|
+|[işleç < =](../standard-library/forward-list-operators.md#op_lt_eq)|İşlecin sol tarafındaki ileri liste nesnesinin sağ taraftaki ileri liste nesnesinden küçük veya ona eşit olup olmadığını sınar.|
+|[işleç >](../standard-library/forward-list-operators.md#op_gt)|İşlecin sol tarafındaki ileri liste nesnesinin, sağ taraftaki ileri liste nesnesinden daha büyük olup olmadığını sınar.|
+|[operator>=](../standard-library/forward-list-operators.md#op_lt_eq)|İşlecin sol tarafındaki ileri liste nesnesinin sağ taraftaki ileri liste nesnesinden büyük veya ona eşit olup olmadığını sınar.|
 
 ### <a name="functions"></a>İşlevler
 
 |||
 |-|-|
-|[değiştirme](../standard-library/forward-list-functions.md#swap)|İletme iki listenin öğelerini değiştirir.|
+|[Kur](../standard-library/forward-list-functions.md#swap)|İki ileri listenin öğelerini değiş tokuş eder.|
 
 ### <a name="classes"></a>Sınıflar
 
 |||
 |-|-|
-|[forward_list](../standard-library/forward-list-class.md)|Bir öğelerin değişen uzunluktaki dizisini denetleyen bir nesneyi tanımlar. Dizisi her tür üyesi içeren bir tek bağlantılı öğe listesi, depolanan `Type`.|
+|[forward_list](../standard-library/forward-list-class.md)|Değişen uzunluklu öğe dizisini denetleyen bir nesne tanımlar. Dizi, her biri türünün `Type`bir üyesini içeren, listedir bağlantılı öğelerin bir listesi olarak depolanır.|
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Üstbilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md)<br/>
+[Üst bilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md)

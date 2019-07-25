@@ -1,5 +1,5 @@
 ---
-title: 'vektör&lt;bool&gt;:: reference::operator bool'
+title: 'Vector&lt;bool&gt;:: Reference:: operator bool'
 ms.date: 11/04/2016
 f1_keywords:
 - operatorbool
@@ -10,16 +10,16 @@ helpviewer_keywords:
 - BOOL operator
 - reference::operator bool
 ms.assetid: b0e57869-18cc-4296-9061-da502f30120d
-ms.openlocfilehash: 7fa95b3037538ccbbf27fa5b9749dc21f72670cd
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: ca2d21a7706248cd84ca3591eb717e4081972f9c
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62410921"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68452117"
 ---
-# <a name="vectorltboolgtreferenceoperator-bool"></a>vektör&lt;bool&gt;:: reference::operator bool
+# <a name="vectorltboolgtreferenceoperator-bool"></a>Vector&lt;bool&gt;:: Reference:: operator bool
 
-Örtük bir dönüştürme sağlar `vector<bool>::reference` için **bool**.
+Kaynağından `vector<bool>::reference` **bool**'a örtük bir dönüştürme sağlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -29,19 +29,19 @@ operator bool() const;
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Öğesinin Boolean değerini [vektör\<bool >](../standard-library/vector-bool-class.md) nesne.
+[Vektör\<bool >](../standard-library/vector-bool-class.md) nesnesinin öğesinin Boolean değeri.
 
 ## <a name="remarks"></a>Açıklamalar
 
-`vector<bool>` Nesnesi bu işleç tarafından değiştirilemez.
+`vector<bool>` Nesne bu işleç tarafından değiştirilemiyor.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** \<vektör >
+**Üst bilgi:** \<vektör >
 
-**Namespace:** std
+**Ad alanı:** std
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[vektör\<bool >:: reference sınıfı](../standard-library/vector-bool-reference-class.md)<br/>
-[C++ Standart Kitaplığı Başvurusu](../standard-library/cpp-standard-library-reference.md)<br/>
+[Vector\<bool >:: Reference sınıfı](../standard-library/vector-bool-reference-class.md)\
+[C++ Standart Kitaplığı Başvurusu](../standard-library/cpp-standard-library-reference.md)

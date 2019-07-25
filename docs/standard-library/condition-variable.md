@@ -4,58 +4,58 @@ ms.date: 11/04/2016
 f1_keywords:
 - <condition_variable>
 ms.assetid: 8567f7cc-20bd-42a7-9137-87c46f878009
-ms.openlocfilehash: ed98966f651df76078fa47b05f5a2d8ae1b71d05
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.openlocfilehash: e63dc5a494f471997c28be8b2cd237aba45a6fd6
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68244570"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68457391"
 ---
 # <a name="ltconditionvariablegt"></a>&lt;condition_variable&gt;
 
-Sınıfları tanımlar [condition_variable](../standard-library/condition-variable-class.md) ve [condition_variable_any](../standard-library/condition-variable-any-class.md) bir koşul true olmasını bekleyin nesneleri oluşturmak için kullanılır.
+Bir koşulun doğru olmasını bekleyen nesneler oluşturmak için kullanılan [condition_variable](../standard-library/condition-variable-class.md) ve [condition_variable_any](../standard-library/condition-variable-any-class.md) sınıflarını tanımlar.
 
-Diğer ConcRT mekanizmaları ile birlikte kullanabilirsiniz, böylece bu başlığı eşzamanlılık çalışma zamanı (ConcRT) kullanır. ConcRT hakkında daha fazla bilgi için bkz: [eşzamanlılık çalışma zamanı](../parallel/concrt/concurrency-runtime.md).
+Bu üst bilgi, diğer ConcRT mekanizmalarıyla birlikte kullanabilmeniz için Eşzamanlılık Çalışma Zamanı (ConcRT) kullanır. ConcRT hakkında daha fazla bilgi için bkz. [Eşzamanlılık çalışma zamanı](../parallel/concrt/concurrency-runtime.md).
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** \<condition_variable >
+**Üst bilgi:** \<condition_variable >
 
-**Namespace:** std
+**Ad alanı:** std
 
 > [!NOTE]
-> Derlenmiş kodda **/CLR**, bu başlığı engellenir.
+> **/Clr**kullanılarak derlenen kodda, bu üst bilgi engellenir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir koşul değişken aynı zamanda kullanmalıdır bekler kod bir `mutex`. Bir çağıran iş parçacığının kilitler gerekir `mutex` koşul değişkeni bekleyin işlevleri çağırmadan önce. `mutex` Çağrılan işlev döndürdüğünde ardından kilitlenir. `mutex` İş parçacığı koşul true olmasını beklerken kilitli değil. Böylece herhangi bir öngörülemeyen sonuçlara, için bir koşul değişken bekler her bir iş parçacığı aynı kullanmalısınız `mutex` nesne.
+Bir koşul değişkeni için bekleyen kodun de bir `mutex`kullanması gerekir. Çağıran iş parçacığı, `mutex` koşul değişkeni için bekleyen işlevleri çağırmadan önce öğesini kilitlemelidir. `mutex` Çağrılan işlev döndürüldüğünde kilitlenir. `mutex` İş parçacığı koşulun doğru olmasını beklediği sürece kilitli değildir. Öngörülemeyen sonuçlar bulunmadığından, bir koşul değişkeni için bekleyen her iş parçacığının aynı `mutex` nesneyi kullanması gerekir.
 
-Türündeki nesneler `condition_variable_any` herhangi bir türde bir mutex ile kullanılabilir. Kullanılan mutex türünü sağlamak zorunda değildir `try_lock` yöntemi. Türündeki nesneler `condition_variable` ile türünde bir mutex kullanılması `unique_lock<mutex>`. Bu tür nesneler türündeki nesneler hızlı `condition_variable_any<unique_lock<mutex>>`.
+Türündeki `condition_variable_any` nesneler, her türlü bir mutex ile kullanılabilir. Kullanılan mutex türünün `try_lock` yöntemi sağlaması gerekmez. Türündeki `condition_variable` nesneler yalnızca, türünde `unique_lock<mutex>`bir mutex ile kullanılabilir. Bu türden nesneler, türündeki `condition_variable_any<unique_lock<mutex>>`nesnelerden daha hızlı olabilir.
 
-Bir olay beklemek için önce mutex kilitleyebilir ve birini çağırın `wait` koşul değişkeni yöntemleri. `wait` Koşul değişkeni başka bir iş parçacığı verinceye kadar blokları çağırın.
+Bir olayı beklemek için, önce mutex 'i kilitleyin ve sonra koşul değişkeninde `wait` yöntemlerden birini çağırın. `wait` Çağrı, başka bir iş parçacığı koşul değişkenine işaret edene kadar engeller.
 
-*Sahte wakeups* bildirimleri olmadan koşul değişkenleri engeli için bekleyen iş parçacıklarının uygun oluşur. Kod bir bekleme işlevden döndükten sonra böyle alacaklardır wakeups tanımak için bir koşul true olmasını bekler kod açıkça bu koşulu denetlemeniz gerekir. Bu durum genellikle döngü kullanarak gerçekleştirilir; kullanabileceğiniz `wait(unique_lock<mutex>& lock, Predicate pred)` sizin için bu döngü gerçekleştirmek için.
+Durum değişkenlerini bekleyen iş parçacıkları uygun bildirimler olmadan engellenmemiş hale geldiğinde *Spuremwakeups* oluşur. Bu tür spuremwakeups 'ı tanımak için, bir koşulun true hale gelmesini bekleyen kod, kod bir bekleme işlevinden döndürüldüğünde bu koşulu açıkça denetlemelidir. Bu genellikle bir döngü kullanılarak yapılır; Bu döngüyü sizin `wait(unique_lock<mutex>& lock, Predicate pred)` için yapmak üzere kullanabilirsiniz.
 
 ```cpp
 while (condition is false)
     wait for condition variable;
 ```
 
-`condition_variable_any` Ve `condition_variable` sınıflarının her koşulunun oluşmasını bekler üç yöntem vardır.
+`condition_variable_any` Ve`condition_variable` sınıflarının her biri, bir koşulu bekleyen üç yönteme sahiptir.
 
-- `wait` sınırsız bir süre boyunca bekler.
+- `wait`Sınırlandırılmamış bir zaman aralığı bekler.
 
-- `wait_until` Belirtilen kadar bekler `time`.
+- `wait_until`Belirtilen `time`bir olana kadar bekler.
 
-- `wait_for` Belirtilen bir bekler `time interval`.
+- `wait_for`Belirtilen `time interval`bir için bekler.
 
-Bu yöntemlerin her biri iki aşırı yüklenmiş sürümlerini içerir. Bir yalnızca bekler ve uyanabilir. Diğer bir koşulu tanımlayan bir ek şablon bağımsız değişkeni alır. Koşul olana kadar yöntemi döndürmüyor **true**.
+Bu yöntemlerin her birinin iki aşırı yüklü sürümü vardır. Yalnızca bir bekler ve uyanabilir uyandırabilirler. Diğeri, bir koşulu tanımlayan ek bir şablon bağımsız değişkeni alır. Yöntemi, koşul **true**olana kadar döndürmez.
 
-Her sınıf kendi koşul olan bir koşul değişkenini bildirmek için kullanılan iki yöntem de sahiptir **true**.
+Her sınıfta, koşulunun **doğru**olduğunu bildiren bir koşul değişkenine bildirimde bulunan iki yöntem de vardır.
 
-- `notify_one` bir koşul değişken için bekleyen iş parçacıklarının uyku modundan çıkar.
+- `notify_one`koşul değişkeni için bekleyen iş parçacıklarından birini uyandırır.
 
-- `notify_all` Koşul değişken için bekleyen iş parçacıklarının tüm uyku modundan çıkar.
+- `notify_all`koşul değişkeni için bekleyen tüm iş parçacıklarını uyandırır.
 
 ## <a name="functions-and-enums"></a>İşlevler ve numaralandırmalar
 
@@ -67,6 +67,6 @@ enum class cv_status { no_timeout, timeout };
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Üstbilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md)<br/>
-[condition_variable Sınıfı](../standard-library/condition-variable-class.md)<br/>
-[condition_variable_any Sınıfı](../standard-library/condition-variable-any-class.md)<br/>
+[Üst bilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md)\
+[condition_variable sınıfı](../standard-library/condition-variable-class.md)\
+[condition_variable_any Sınıfı](../standard-library/condition-variable-any-class.md)

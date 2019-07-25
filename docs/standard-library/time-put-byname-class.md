@@ -6,16 +6,16 @@ f1_keywords:
 helpviewer_keywords:
 - time_put_byname class
 ms.assetid: e08c2348-64d2-4ace-98b1-1496e14c7b1a
-ms.openlocfilehash: ffe7aa276e9380b6544a78c1c1735ab57765507a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 2da2bf4ea1c709b820c1a82dc20e288634139a83
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62411974"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68460000"
 ---
 # <a name="timeputbyname-class"></a>time_put_byname Sınıfı
 
-Türetilmiş bir şablon sınıfı türü bir yerel ayar modeli olarak hizmet verebilen bir nesneyi tanımlayan `time_put` \< CharType, Outputıterator >.
+Türetilmiş şablon sınıfı, CharType, OutputIterator > türünde `time_put` \< bir yerel ayar modeli olarak kullanılabilecek bir nesneyi tanımlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -40,22 +40,22 @@ protected:
 
 ### <a name="parameters"></a>Parametreler
 
-*_Locname*<br/>
-Bir yerel ayar adı.
+*_Locname*\
+Yerel ayar adı.
 
-*_Refs*<br/>
-Bir ilk başvuru sayısı.
+*_Refs*\
+İlk başvuru sayısı.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Davranışını tarafından belirlenen [adlı](../standard-library/locale-class.md#name) yerel *_Locname*. Her Oluşturucu, temel nesnesiyle başlatır [time_put](../standard-library/time-put-class.md#time_put)\<CharType, Outputıterator > (`_Refs`).
+Davranışı [adlandırılmış](../standard-library/locale-class.md#name) yerel ayar *_Locname*tarafından belirlenir. Her Oluşturucu temel nesnesini [time_put](../standard-library/time-put-class.md#time_put)\<CharType, OutputIterator > (`_Refs`) ile başlatır.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** \<yerel ayar >
+**Üst bilgi:** \<yerel ayar >
 
-**Namespace:** std
+**Ad alanı:** std
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
+[C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)

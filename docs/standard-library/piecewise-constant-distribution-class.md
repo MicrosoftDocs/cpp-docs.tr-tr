@@ -26,16 +26,16 @@ helpviewer_keywords:
 - std::piecewise_constant_distribution [C++], param_type
 - std::piecewise_constant_distribution [C++], param_type
 ms.assetid: 2c9a21fa-623e-4d63-b827-3f1556b6dedb
-ms.openlocfilehash: 0c990953f0cda81366ff2645d3cdf1065850abbd
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 62cfba1fda3d9a42788e8dd47144705fb05c6787
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62370404"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68455239"
 ---
 # <a name="piecewiseconstantdistribution-class"></a>piecewise_constant_distribution Sınıfı
 
-Bir piecewise oluşturduğu her aralığında değişen genişlikli Tekdüzen olasılık aralıklarıyla olan sabit dağıtım.
+Her aralıkta Tekdüzen olasılığa sahip değişen genişlik aralıklarına sahip bir piecewise sabit dağıtımı oluşturur.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -80,33 +80,33 @@ public:
 
 ### <a name="parameters"></a>Parametreler
 
-*RealType*<br/>
-Kayan nokta sonuç türü ve ayarlarına **çift**. Olası türleri için bkz: [ \<rastgele >](../standard-library/random.md).
+*RealType*\
+Kayan nokta sonuç türü, varsayılan olarak **Double**olur. Olası türler için bkz [ \<. Random >](../standard-library/random.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu örnekleme dağıtım her aralığında değişen genişlikli Tekdüzen olasılık aralıklarıyla sahiptir. Diğer örnekleme dağıtımları hakkında daha fazla bilgi için bkz. [piecewise_linear_distribution sınıfı](../standard-library/piecewise-linear-distribution-class.md) ve [discrete_distribution](../standard-library/discrete-distribution-class.md).
+Bu örnekleme dağıtımında, her aralıkta Tekdüzen olasılığa sahip farklı genişlik aralıkları vardır. Diğer örnekleme dağıtımları hakkında daha fazla bilgi için bkz. [Piecewise_linear_distribution Class](../standard-library/piecewise-linear-distribution-class.md) and [discrete_distribution](../standard-library/discrete-distribution-class.md).
 
-Aşağıdaki tablo ilgili makalelerin bağlantısı için tek tek üyeleri:
+Aşağıdaki tablo, bireysel üyelerle ilgili makalelere bağlantı sağlar:
 
 ||||
 |-|-|-|
 |[piecewise_constant_distribution](#piecewise_constant_distribution)|`piecewise_constant_distribution::intervals`|`piecewise_constant_distribution::param`|
 |`piecewise_constant_distribution::operator()`|`piecewise_constant_distribution::densities`|[param_type](#param_type)|
 
-Özellik işlevi `intervals()` döndürür bir `vector<result_type>` dağılımının saklı aralıkları kümesiyle.
+Özellik işlevi `intervals()` , dağıtımın saklı `vector<result_type>` aralıkları kümesiyle bir döndürür.
 
-Özellik işlevi `densities()` döndürür bir `vector<result_type>` Oluşturucu parametresi sağlanan ağırlıklara göre hesaplanan saklı densities her aralığı kümesi ile.
+Property işlevi `densities()` , Oluşturucu parametrelerinde `vector<result_type>` belirtilen ağırlığa göre hesaplanan her bir Aralık kümesi için depolanan normalleştirlıklarla birlikte döndürür.
 
-Özellik üyesi `param()` ayarlar veya döndürür `param_type` saklı dağıtım parametre paketi.
+Özellik üyesi `param()` , `param_type` depolanan dağıtım parametresi paketini ayarlar veya döndürür.
 
-`min()` Ve `max()` üye işlevleri olası en küçük sonuç ve olası en büyük sonuç sırasıyla döndürür.
+`min()` Ve`max()` üye işlevleri, sırasıyla olası en küçük sonucu ve en büyük olası sonucu döndürür.
 
-`reset()` Üye işlevi herhangi bir önbelleğe alınan değeri atar böylece sonraki çağrı sonucunu `operator()` çağırmadan önce altyapısından alınan değerleri, bağlı değildir.
+Üye işlevi önbelleğe alınmış tüm değerleri atar, böylece sonraki `operator()` çağrının sonucu, çağrıdan önce altyapıdan alınan değerlere bağlı değildir. `reset()`
 
-`operator()` Üye işlevler URNG motoru, geçerli parametre paketi veya belirtilen parametre paketi göre sonraki oluşturulan değeri döndürür.
+`operator()` Üye işlevleri, geçerli parametre paketinden ya da belirtilen parametre paketinden, URNG altyapısına göre oluşturulan bir sonraki değeri döndürür.
 
-Dağıtım sınıfları ve üyeleri hakkında daha fazla bilgi için bkz: [ \<rastgele >](../standard-library/random.md).
+Dağıtım sınıfları ve üyeleri hakkında daha fazla bilgi için bkz [ \<. Random >](../standard-library/random.md).
 
 ## <a name="example"></a>Örnek
 
@@ -214,11 +214,11 @@ Distribution for 100 samples:
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** \<rastgele >
+**Üst bilgi:** \<rastgele >
 
-**Namespace:** std
+**Ad alanı:** std
 
-## <a name="piecewise_constant_distribution"></a>  piecewise_constant_distribution::piecewise_constant_distribution
+## <a name="piecewise_constant_distribution"></a>piecewise_constant_distribution::p iecewise_constant_distribution
 
 Dağıtımı oluşturur.
 
@@ -248,45 +248,45 @@ explicit piecewise_constant_distribution(const param_type& parm);
 
 ### <a name="parameters"></a>Parametreler
 
-*firstI*<br/>
-Dağıtım aralıktaki ilk öğenin bir giriş yineleyici.
+*Ilki*\
+Dağıtım aralığındaki ilk öğenin giriş yineleyicisi.
 
-*lastI*<br/>
-Dağıtım aralıktaki son öğeden bir giriş yineleyici.
+*lastI*\
+Dağıtım aralığındaki son öğenin giriş yineleyicisi.
 
-*firstW*<br/>
-Ağırlıklar aralıktaki ilk öğenin bir giriş yineleyici.
+*firstW*\
+Ağırlık aralığındaki ilk öğenin giriş yineleyicisi.
 
-*aralıkları*<br/>
-Bir [initializer_list](../cpp/initializers.md) dağıtım aralıklarına sahip.
+*aralıklarla*\
+Dağıtım aralıklarıyla bir [initializer_list](../cpp/initializers.md) .
 
-*Sayısı*<br/>
-Dağıtım aralıktaki öğelerin sayısı.
+*biriktirme*\
+Dağıtım aralığındaki öğe sayısı.
 
-*xMin*<br/>
-Dağıtım aralıktaki en düşük değeri.
+*xmin*\
+Dağıtım aralığındaki en düşük değer.
 
-*xmax*<br/>
-Dağıtım aralıktaki en yüksek değeri. Değerinden büyük olmalıdır *xmin*.
+*maksimum xmak*\
+Dağıtım aralığındaki en yüksek değer. *XMin*'den büyük olmalıdır.
 
-*weightfunc*<br/>
-Dağıtım için olasılık işlevini temsil eden nesne. Parametre ve dönüş değeri hem dönüştürülebilir olmalıdır **çift**.
+*ağırlıklı tfunc*\
+Dağıtım için olasılık işlevini temsil eden nesne. Hem parametre hem de dönüş değeri **Double**'a dönüştürülebilir olmalıdır.
 
-*parametre*<br/>
-Dağıtımın oluşturulması için kullanılan parametre yapısı.
+*parametresi*\
+Dağıtımı oluşturmak için kullanılan parametre yapısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Var olan bir aralık, 0-1, 1 ile bir olasılık yoğunluğu, varsayılan oluşturucu depolanmış parametreleri ayarlar.
+Varsayılan Oluşturucu, 1 ile 1 arasında, olasılık yoğunluğu 1 olan bir Aralık olmak üzere saklı parametreleri ayarlar.
 
-Yineleyici aralığı Oluşturucusu
+Yineleyici Aralık Oluşturucusu
 ```cpp
 template <class InputIteratorI, class InputIteratorW>
 piecewise_constant_distribution(InputIteratorI firstI, InputIteratorI lastI,
     InputIteratorW firstW);
 ```
 
-yineleyiciler gelen itnervals dağıtım nesnesiyle dizisi oluşturur [ `firstI`, `lastI`) ve eşleşen bir ağırlık dizisi başlayarak `firstW`.
+[ `firstI` `firstW`, `lastI`) sırası üzerinde yineleyicilerin ve ile başlayan eşleşen bir ağırlık dizisinin bulunduğu bir dağıtım nesnesi oluşturur.
 
 Başlatıcı listesi Oluşturucusu
 ```cpp
@@ -296,27 +296,27 @@ intervals,
     UnaryOperation weightfunc);
 ```
 
-Başlatıcı listesi aralıklarını dağıtım nesnesiyle oluşturur *aralıkları* ve işlevden oluşturulan ağırlıkları *weightfunc*.
+Başlatıcı listesi *aralıklarıyla* ve ağırlık *tfunc*işlevinden oluşturulan ağırlıklarla bir dağıtım nesnesi oluşturur.
 
-Tanımlanan Oluşturucusu
+Olarak tanımlanan Oluşturucu
 ```cpp
 template <class UnaryOperation>
 piecewise_constant_distribution(size_t count, result_type xmin, result_type xmax,
     UnaryOperation weightfunc);
 ```
 
-bir dağıtım nesnesiyle oluşturur *sayısı* aralıkları üzerinde birörnek dağıtılmış [ `xmin,xmax`], ağırlık verme göre işlevi her aralığı atama *weightfunc*, ve  *weightfunc* bir parametre kabul etmeniz ve ikisi için de dönüştürülebilir bir dönüş değeri olması gerekir `double`. **Önkoşul:** `xmin < xmax`
+[`xmin,xmax`] üzerinde eşit olarak dağıtılan *sayı* aralıklarına sahip bir dağıtım nesnesi oluşturur, her Aralık kalınlıklarının ağırlığına *tfunc*işlevine göre atanması ve *ağırlıklı tfunc* 'nin bir parametre kabul etmesi ve geri dönmesi gerekir her ikisi de dönüştürülebilir `double`değeri. **Önkoşul:** `xmin < xmax`
 
-Tanımlanan Oluşturucusu
+Olarak tanımlanan Oluşturucu
 ```cpp
 explicit piecewise_constant_distribution(const param_type& parm);
 ```
 
-dağıtım nesnesi kullanılarak oluşturur *parametresi* depolanmış parametre yapısı olarak.
+saklı parametre yapısı olarak *Pard* 'yi kullanarak bir dağıtım nesnesi oluşturur.
 
-## <a name="param_type"></a>  piecewise_constant_distribution::param_type
+## <a name="param_type"></a>piecewise_constant_distribution::p aram_type
 
-Dağıtım, tüm parametreleri depolar.
+Dağıtımın tüm parametrelerini depolar.
 
 ```cpp
 struct param_type {
@@ -336,15 +336,15 @@ struct param_type {
 
 ### <a name="parameters"></a>Parametreler
 
-Görmek yapıcı parametrelerini [piecewise_constant_distribution](#piecewise_constant_distribution).
+[Piecewise_constant_distribution](#piecewise_constant_distribution)için Oluşturucu parametrelerine bakın.
 
 ### <a name="remarks"></a>Açıklamalar
 
 **Önkoşul:** `xmin < xmax`
 
-Bu yapı dağıtım'ın sınıf oluşturucusu oluşturmada, en çok geçirilebilir `param()` depolanan parametre var olan bir dağıtım için ve ayarlamak için üye işlevi `operator()` depolanan parametrelerin yerine kullanılacak.
+Bu yapı, örnek oluşturma sırasında dağıtımın sınıf oluşturucusuna, `param()` var olan bir dağıtımın saklı parametrelerini ayarlamak için üye işlevine `operator()` ve depolanan parametrelerin yerine kullanılmak üzere geçirilebilir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[\<rastgele >](../standard-library/random.md)<br/>
-[piecewise_linear_distribution](../standard-library/piecewise-linear-distribution-class.md)<br/>
+[\<Rastgele >](../standard-library/random.md)\
+[piecewise_linear_distribution](../standard-library/piecewise-linear-distribution-class.md)

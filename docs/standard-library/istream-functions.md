@@ -1,26 +1,26 @@
 ---
-title: '&lt;istream&gt; işlevleri'
+title: '&lt;IStream&gt; işlevleri'
 ms.date: 11/04/2016
 f1_keywords:
 - istream/std::swap
 - istream/std::ws
 ms.assetid: 0301ea0d-4ded-4841-83dd-4253b55b3188
-ms.openlocfilehash: b590559b01bb8f5db21fca9f78d220d8bad5c27e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: fc512558969bc25d2b16afa2b93219e13d0b28ca
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62413339"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68458762"
 ---
-# <a name="ltistreamgt-functions"></a>&lt;istream&gt; işlevleri
+# <a name="ltistreamgt-functions"></a>&lt;IStream&gt; işlevleri
 
 |||
 |-|-|
-|[değiştirme](#istream_swap)|[ws](#ws)|
+|[Kur](#istream_swap)|[RW](#ws)|
 
-## <a name="istream_swap"></a>  değiştirme
+## <a name="istream_swap"></a>Kur
 
-İki akışı nesneleri öğelerini birbiriyle değiştirir.
+İki Stream nesnesinin öğelerini değiş tokuş eder.
 
 ```cpp
 template <class Elem, class Tr>
@@ -36,15 +36,15 @@ void swap(
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*<br/>
+*tarafta*\
 Bir akış.
 
-*sağ*<br/>
+*Right*\
 Bir akış.
 
-## <a name="ws"></a>  ws
+## <a name="ws"></a>RW
 
-Boşluk stream'de atlar.
+Akıştaki boşluğu atlar.
 
 ```cpp
 template class<Elem, Tr> basic_istream<Elem, Tr>& ws(basic_istream<Elem, Tr>& _Istr);
@@ -52,7 +52,7 @@ template class<Elem, Tr> basic_istream<Elem, Tr>& ws(basic_istream<Elem, Tr>& _I
 
 ### <a name="parameters"></a>Parametreler
 
-*_Istr*<br/>
+*_Istr*\
 Bir akış.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -61,14 +61,14 @@ Akış.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşleyici ayıklar ve herhangi bir öğe çıkarır `ch` hangi [use_facet](../standard-library/basic-filebuf-class.md#open)< **ctype** \< **Elem**>> ( [getloc](../standard-library/ios-base-class.md#getloc)). **olan**( **ctype** \< **Elem**>:: **alanı**, **ch**) geçerlidir.
+İşleici, `ch` [use_facet](../standard-library/basic-filebuf-class.md#open)< **CType** \< **eled**> > ( [getloc](../standard-library/ios-base-class.md#getloc)) için tüm öğeleri ayıklar ve atar. **Şu** ( **CType** \< **eled**>:: **Space**, **ch**) true.
 
-İşlev çağrıları [setstate](../standard-library/basic-ios-class.md#setstate)( **eofbit**) öğeleri ayıklanırken dosya sonu karşılaştığında. Döndürür *_Istr*.
+İşlev, öğelerin ayıklanması sırasında dosya sonuyla karşılaştığında [SetState](../standard-library/basic-ios-class.md#setstate)( **eofbit**) öğesini çağırır. *_Istr*döndürür.
 
 ### <a name="example"></a>Örnek
 
-Bkz: [işleci >>](../standard-library/istream-operators.md#op_gt_gt) kullanma örneği için `ws`.
+Kullanım`ws`örneği için bkz. [operator > >](../standard-library/istream-operators.md#op_gt_gt) .
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[\<istream >](../standard-library/istream.md)<br/>
+[\<IStream >](../standard-library/istream.md)

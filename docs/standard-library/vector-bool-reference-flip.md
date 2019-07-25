@@ -1,21 +1,21 @@
 ---
-title: 'vektör&lt;bool&gt;:: reference::flip'
+title: 'Vector&lt;bool&gt;:: Reference:: Flip'
 ms.date: 11/04/2016
 f1_keywords:
 - vector/std::vector<bool>::reference::flip
 helpviewer_keywords:
 - reference::flip method
 ms.assetid: ef940365-cbe4-4a87-a3e2-1f3cfa357e29
-ms.openlocfilehash: 68172de6e50a599d5b1822b83787be3a3a94e037
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 1743df7773d577e53f054fa4e403cf0d00da8ce7
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62205131"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68452167"
 ---
-# <a name="vectorltboolgtreferenceflip"></a>vektör&lt;bool&gt;:: reference::flip
+# <a name="vectorltboolgtreferenceflip"></a>Vector&lt;bool&gt;:: Reference:: Flip
 
-Başvurulan bir Boolean değerini tersine çevirir [vektör\<bool >](../standard-library/vector-bool-class.md) öğesi.
+Başvurulan [\<vector bool >](../standard-library/vector-bool-class.md) öğesinin Boole değerini tersine çevirir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -66,11 +66,11 @@ The vector with first element flipped is:
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** \<vektör >
+**Üst bilgi:** \<vektör >
 
-**Namespace:** std
+**Ad alanı:** std
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[vektör\<bool >:: reference sınıfı](../standard-library/vector-bool-reference-class.md)<br/>
-[C++ Standart Kitaplığı Başvurusu](../standard-library/cpp-standard-library-reference.md)<br/>
+[Vector\<bool >:: Reference sınıfı](../standard-library/vector-bool-reference-class.md)\
+[C++ Standart Kitaplığı Başvurusu](../standard-library/cpp-standard-library-reference.md)

@@ -6,16 +6,16 @@ f1_keywords:
 helpviewer_keywords:
 - complex<float> function
 ms.assetid: 1178eb1e-39bd-4017-89cd-aea95f813939
-ms.openlocfilehash: a09b6d0306f633754cad4b12a652eac557f96634
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: bfe0e9dcb0bf8f8b74487404998e06d233097a39
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62279092"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68453108"
 ---
 # <a name="complexltfloatgt"></a>karmaşık&lt;float&gt;
 
-Her iki türdeki nesneleri sıralı bir çift depolayan bir nesneyi tanımlayan **float**, ilk karmaşık sayıyı ve ikinci gerçek bölümünü temsil eden sanal bölümü temsil eden.
+İlk olarak, karmaşık bir sayının gerçek bölümünü ve sanal parçayı temsil eden ikincisini temsil eden **float**türünde nesnelerin sıralı bir çiftini depolayan bir nesneyi tanımlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -41,24 +41,24 @@ constexpr complex(
 
 ### <a name="parameters"></a>Parametreler
 
-*_RealVal*<br/>
-Türü değeri **float** için yapılandırılan karmaşık sayıyı gerçek bir parçası.
+*_RealVal*\
+Oluşturulan karmaşık sayının gerçek parçası için **float** türünün değeri.
 
-*_ImagVal*<br/>
-Türü değeri **float** yapılandırılmakta karmaşık sayıyı sanal bölümü için.
+*_ImagVal*\
+Oluşturulan karmaşık sayının sanal bölümü için **float** türünün değeri.
 
-*complexNum*<br/>
-Tür karmaşık sayısı **çift** veya türü **uzun çift** olan reel ve sanal parça türü karmaşık bir sayıyı başlatmak için kullanılan **float** oluşturuluyor.
+*Karmaşıksayı*\
+Gerçek ve sanal parçaları, oluşturulmakta olan karmaşık sayıda **kayan** türü başlatmak için kullanılan **Double** veya **Long Double** türünde karmaşık bir sayıdır.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Türü karmaşık bir sayıyı **float**.
+**Kayan**türünde karmaşık bir sayı.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Karmaşık türü karmaşık bir sınıfa şablon sınıfının açık uzmanlığı **float** Şablon sınıfı yalnızca tanımladığı Yapıcılardaki farklıdır. Dönüştürme **float** için **çift** örtük, izin verilen ancak daha az güvenli dönüştürme **float** için **uzun çift** olduğu olması gereken **açık**. Kullanımını **açık** başlatma ile atama sözdizimi kullanılarak tür dönüştürme kuralları.
+**Float** türündeki karmaşık bir sınıf için karmaşık olan şablon sınıfının açık özelleştirmesi, şablon sınıfından yalnızca tanımladığı oluşturuculardan farklıdır. **Float** 'ten **Double** 'a dönüştürmenin örtük olmasına izin verilir, ancak **float** 'ten **Long Double** 'a daha az güvenli dönüştürmenin **Açık**olması gerekir. Atama söz dizimini kullanarak tür dönüşümle başlatma, **Açık** kuralların kullanımı.
 
-Şablon sınıfı hakkında daha fazla bilgi için `complex`, bkz: [complex sınıfı](../standard-library/complex-class.md). Şablon sınıfının üye listesini `complex`, bkz.
+Şablon sınıfı `complex`hakkında daha fazla bilgi için bkz. [Complex Class](../standard-library/complex-class.md). Şablon sınıfının `complex`üyelerinin bir listesi için bkz.
 
 ## <a name="example"></a>Örnek
 
@@ -118,11 +118,11 @@ arg ( c3 ) = 0.927295 radians, which is 53.1301 degrees.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi**: \<karmaşık >
+**Üstbilgi**: \<karmaşık >
 
-**Namespace:** std
+**Ad alanı:** std
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[complex Sınıfı](../standard-library/complex-class.md)<br/>
-[C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
+[karmaşık sınıf](../standard-library/complex-class.md)\
+[C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)

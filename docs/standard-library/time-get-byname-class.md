@@ -6,16 +6,16 @@ f1_keywords:
 helpviewer_keywords:
 - time_get_byname class
 ms.assetid: 6e54153e-da40-4bb9-a942-1a6ce57b30c9
-ms.openlocfilehash: e18f210dba03d66fa3a4ea111a6dfc61f0d0c12a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b466f8a893a14f7a94ee7b9e54b72e43aa6cf6e3
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62412013"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68460023"
 ---
 # <a name="timegetbyname-class"></a>time_get_byname Sınıfı
 
-Türetilmiş bir şablon sınıfı türü bir yerel ayar modeli olarak hizmet verebilen bir nesneyi tanımlayan `time_get` \<CharType, Inputıterator >.
+Türetilmiş şablon sınıfı, CharType, InputIterator > türünde `time_get` \<bir yerel ayar modeli olarak kullanılabilecek bir nesneyi tanımlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -40,22 +40,22 @@ protected:
 
 ### <a name="parameters"></a>Parametreler
 
-*_Locname*<br/>
+*_Locname*\
 Adlandırılmış bir yerel ayar.
 
-*_Refs*<br/>
-Bir ilk başvuru sayısı.
+*_Refs*\
+İlk başvuru sayısı.
 
 ## <a name="requirements"></a>Gereksinimler
 
-Davranışını adlandırılmış yerel ayar tarafından belirlenir *_Locname*. Her Oluşturucu, temel nesnesiyle başlatır [time_get](../standard-library/time-get-class.md#time_get)\<CharType, Inputıterator > ( `_Refs`).
+Davranışı adlandırılmış yerel ayar *_Locname*tarafından belirlenir. Her Oluşturucu temel nesnesini [time_get](../standard-library/time-get-class.md#time_get)\<CharType, InputIterator > ( `_Refs`) ile başlatır.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** \<yerel ayar >
+**Üst bilgi:** \<yerel ayar >
 
-**Namespace:** std
+**Ad alanı:** std
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
+[C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)

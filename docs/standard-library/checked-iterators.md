@@ -10,57 +10,57 @@ helpviewer_keywords:
 - iterators, checked
 - checked iterators
 ms.assetid: cfc87df8-e3d9-403b-ab78-e9483247d940
-ms.openlocfilehash: 163729b401fa917d7df0002c621998f5021757f6
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f5a31843386d2246f5d74eae1f40b93f0ae35c90
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62279170"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68452132"
 ---
 # <a name="checked-iterators"></a>Denetlenmiş Yineleyiciler
 
-İşaretli yineleyiciler, kapsayıcınızın sınırlarının geçersiz kılınmamasını sağlar. İşaretli yineleyiciler, hem yayın derlemeleri ve hata ayıklama yapıları için geçerlidir. Hata ayıklama modunda derleme yaptığınızda, hata ayıklama yineleyicileri kullanma hakkında daha fazla bilgi için bkz. [Debug Iterator Support](../standard-library/debug-iterator-support.md).
+İşaretli yineleyiciler, kapsayıcınızın sınırlarının geçersiz kılınmamasını sağlar. Denetlenen yineleyiciler hem yayın yapıları hem de hata ayıklama yapıları için geçerlidir. Hata ayıklama modunda derlerken hata ayıklama yineleyiciler kullanma hakkında daha fazla bilgi için bkz. [hata ayıklama Yineleyici desteği](../standard-library/debug-iterator-support.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-İşaretli yineleyiciler tarafından oluşturulan uyarıları devre dışı bırakma hakkında daha fazla bilgi için bkz: [_scl_secure_no_warnıngs](../standard-library/scl-secure-no-warnings.md).
+Denetlenen yineleyiciler tarafından oluşturulan uyarıların nasıl devre dışı bırakılacağı hakkında bilgi için, bkz. [_Scl_secure_no_uyarılar](../standard-library/scl-secure-no-warnings.md).
 
-Kullanabileceğiniz [ \_YİNELEYİCİ\_hata ayıklama\_düzeyi](../standard-library/iterator-debug-level.md) etkinleştirme veya devre dışı işaretli yineleyiciler özellik önişlemci makrosu. _Iterator_debug_level 1 veya 2 tanımlanırsa, Yineleyicilerin güvensiz kullanımı bir çalışma zamanı hatasına neden olur ve program sonlandırılır. 0 olarak tanımlanmışsa, işaretli yineleyiciler devre dışı bırakılır. Hata ayıklama yapıları için varsayılan olarak, _ıterator_debug_level için sürüm yapıları için 0. ve 2 değerdir.
+Denetlenen yineleyiciler özelliğini etkinleştirmek veya devre dışı bırakmak için [ \_Yineleyici\_hata ayıklama\_düzeyi](../standard-library/iterator-debug-level.md) önişlemci makrosunu kullanabilirsiniz. _ITERATOR_DEBUG_LEVEL, 1 veya 2 olarak tanımlandıysa, yineleyicilerin güvenli olmayan kullanımı bir çalışma zamanı hatasına neden olur ve program sonlandırılır. 0 olarak tanımlanmışsa, işaretli yineleyiciler devre dışı bırakılır. Varsayılan olarak, _ıTERATOR_DEBUG_LEVEL değeri yayın yapıları için 0 ve hata ayıklama derlemeleri için 2 ' dir.
 
 > [!IMPORTANT]
-> Eski belgelere ve kaynak kodu başvurabilir [_SECURE_SCL](../standard-library/secure-scl.md) makrosu. _Iterator_debug_level _SECURE_SCL denetlemek için kullanın. Daha fazla bilgi için [_ıterator_debug_level](../standard-library/iterator-debug-level.md).
+> Eski belgeler ve kaynak kodu [_Secure_scl](../standard-library/secure-scl.md) makrosunu ifade edebilir. _SECURE_SCL denetimini denetlemek için _ıTERATOR_DEBUG_LEVEL kullanın. Daha fazla bilgi için bkz. [_ITERATOR_DEBUG_LEVEL](../standard-library/iterator-debug-level.md).
 
-_Iterator_debug_level 1 veya 2 tanımlandığında, bu yineleyici denetimleri gerçekleştirilir:
+_ITERATOR_DEBUG_LEVEL, 1 veya 2 olarak tanımlandığında, bu yineleyici denetimleri gerçekleştirilir:
 
-- Tüm standart yineleyiciler (örneğin, [vector::iterator](../standard-library/vector-class.md#iterator)) denetlenir.
+- Tüm standart yineleyiciler (örneğin, [vector:: Yineleyici](../standard-library/vector-class.md#iterator)) denetlenir.
 
-- Denetlenmiş yineleyici bir çıkış yineleyici ise standart kitaplık işlevleri için gibi çağıran [std::copy](../standard-library/algorithm-functions.md#copy) işaretli davranış alın.
+- Çıkış Yineleyici, denetlenen bir yineleyici ise, [std:: Copy](../standard-library/algorithm-functions.md#copy) işaretli davranış gibi standart kitaplık işlevlerine çağrı yapılır.
 
-- Çıkış yineleyici işaretlenmemiş bir yineleyiciyse, standart kitaplık işlevleri için çağrılar Derleyici uyarılarını neden.
+- Çıkış yineleyici işaretsiz bir yineleyiciyse, standart kitaplık işlevlerine yapılan çağrılar derleyici uyarılarına neden olur.
 
-- Kapsayıcının sınırları dışında bir erişim varsa aşağıdaki işlevleri bir çalışma zamanı hatası oluşturur:
+- Aşağıdaki işlevler, kapsayıcının sınırları dışında bir erişim varsa bir çalışma zamanı hatası oluşturur:
 
 |||||
 |-|-|-|-|
-|[basic_string::operator\[\]](../standard-library/basic-string-class.md#op_at)|[bitset::operator\[\]](../standard-library/bitset-class.md#op_at)|[Geri](../standard-library/deque-class.md#back)|[Ön](../standard-library/deque-class.md#front)|
-|[deque::operator\[\]](../standard-library/deque-class.md#op_at)|[Geri](../standard-library/list-class.md#back)|[Ön](../standard-library/list-class.md#front)|[Geri](../standard-library/queue-class.md#back)|
-|[Ön](../standard-library/queue-class.md#front)|[Vector::operator\[\]](../standard-library/vector-class.md#op_at)|[Geri](../standard-library/vector-class.md#back)|[Ön](../standard-library/vector-class.md#front)|
+|[basic_string:: işleci\[\]](../standard-library/basic-string-class.md#op_at)|[bitset:: işleci\[\]](../standard-library/bitset-class.md#op_at)|[Geri](../standard-library/deque-class.md#back)|[yapılan](../standard-library/deque-class.md#front)|
+|[deque:: işleci\[\]](../standard-library/deque-class.md#op_at)|[Geri](../standard-library/list-class.md#back)|[yapılan](../standard-library/list-class.md#front)|[Geri](../standard-library/queue-class.md#back)|
+|[yapılan](../standard-library/queue-class.md#front)|[vector:: operator\[\]](../standard-library/vector-class.md#op_at)|[Geri](../standard-library/vector-class.md#back)|[yapılan](../standard-library/vector-class.md#front)|
 
-Ne zaman _ıterator_debug_level 0 tanımlanır:
+_ITERATOR_DEBUG_LEVEL 0 olarak tanımlandığında:
 
-- Tüm standart yineleyiciler işaretlenmemiş. Yineleyicileri, tanımsız davranışa yol kapsayıcı sınırlarının ötesine taşıyabilirsiniz.
+- Tüm standart yineleyiciler işaretlenmemiştir. Yineleyiciler kapsayıcı sınırlarının ötesine geçebilir, bu da tanımsız davranışa yol açar.
 
-- Denetlenmiş yineleyici bir çıkış yineleyici ise standart kitaplık işlevleri için gibi çağıran `std::copy` işaretli davranış alın.
+- Çıkış Yineleyici, denetlenen bir yineleyici ise, işaretli davranış gibi `std::copy` standart kitaplık işlevlerine çağrı yapılır.
 
-- Çıkış yineleyici işaretlenmemiş bir yineleyiciyse, standart kitaplık işlevleri için çağrıları işaretsiz davranış alın.
+- Çıkış yineleyici işaretsiz bir yineleyiciyse, standart kitaplık işlevlerine yapılan çağrılar Denetlenmemiş davranışı alır.
 
-Denetlenen bir yineleyiciye çağıran bir yineleyiciye başvurur `invalid_parameter_handler` kapsayıcının sınırlarını taşımayı denerseniz. Hakkında daha fazla bilgi için `invalid_parameter_handler`, bkz: [Parameter Validation](../c-runtime-library/parameter-validation.md).
+Denetlenen bir yineleyici, kapsayıcının sınırları dışına taşımaya çalışırsanız `invalid_parameter_handler` çağıran bir yineleyici anlamına gelir. Hakkında `invalid_parameter_handler`daha fazla bilgi için bkz. [parametre doğrulama](../c-runtime-library/parameter-validation.md).
 
-İşaretli yineleyicileri destekleyen yineleyici başvurularıdır [checked_array_iterator sınıfı](../standard-library/checked-array-iterator-class.md) ve [unchecked_array_iterator sınıfı](../standard-library/unchecked-array-iterator-class.md).
+Denetlenen yineleyiciler destekleyen Yineleyici bağdaştırıcılar [Checked_array_iterator Class](../standard-library/checked-array-iterator-class.md) and [unchecked_array_iterator Class](../standard-library/unchecked-array-iterator-class.md).
 
 ## <a name="example"></a>Örnek
 
-1 veya 2'ye ayarlayın _ıterator_debug_level kullanarak derleme yaptığınızda, belirli sınıfların dizinleme işlecini kullanarak kapsayıcının sınırları dışında olan bir öğeye erişmeyi denerseniz bir çalışma zamanı hatası oluşur.
+_ITERATOR_DEBUG_LEVEL ' ı 1 veya 2 ' ye ayarlayarak derlerken, belirli sınıfların dizin oluşturma işlecini kullanarak kapsayıcının sınırları dışında bir öğeye erişmeyi denerseniz bir çalışma zamanı hatası oluşur.
 
 ```cpp
 // checked_iterators_1.cpp
@@ -85,11 +85,11 @@ int main()
 }
 ```
 
-Bu program "67" yazdırır, ardından hata hakkında ek bilgi içeren bir onaylama işlemi hatası iletişim kutusu görüntüler.
+Bu program "67" yazdırır ve hata hakkında ek bilgi içeren bir onaylama işlemi hatası iletişim kutusu açılır.
 
 ## <a name="example"></a>Örnek
 
-1 veya 2'ye ayarlayın _ıterator_debug_level kullanarak derlediğinizde, kullanarak bir öğeye erişmeyi denerseniz, benzer şekilde, bir çalışma zamanı hatası oluşur `front` veya `back` kapsayıcı boşsa, kapsayıcı sınıflardaki.
+Benzer şekilde, _ITERATOR_DEBUG_LEVEL ' ı 1 veya 2 ' ye ayarlayarak derlerken, kapsayıcı boş olduğunda kapsayıcı sınıflarında veya `front` `back` kullanarak bir öğeye erişmeyi denerseniz bir çalışma zamanı hatası oluşur.
 
 ```cpp
 // checked_iterators_2.cpp
@@ -109,11 +109,11 @@ int main()
 }
 ```
 
-Bu program hata hakkında ek bilgi içeren bir onaylama işlemi hatası iletişim kutusu görüntüler.
+Bu program hata hakkında ek bilgi içeren bir onaylama işlemi hatası iletişim kutusu açılır.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki kod, her biriyle ilgili yorumlar içeren çeşitli yineleyici kullanım örneği senaryolarını gösterir. Varsayılan olarak, _ıterator_debug_level 2 hata ayıklama yapılarında ve perakende yapılarında 0 olarak ayarlanır.
+Aşağıdaki kod, her biriyle ilgili yorumlar içeren çeşitli yineleyici kullanım örneği senaryolarını gösterir. Varsayılan olarak, _ıTERATOR_DEBUG_LEVEL, hata ayıklama yapılarında 2 olarak, perakende yapılarında 0 olarak ayarlanır.
 
 ```cpp
 // checked_iterators_3.cpp
@@ -195,7 +195,7 @@ int main()
 }
 ```
 
-Derleme yaptığınızda bu kodu kullanarak `cl.exe /EHsc /W4 /MTd checked_iterators_3.cpp` derleyici bir uyarı yaydığına ancak yürütülebilir bir dosyaya hatasız derlenir:
+Derleyici kullanarak `cl.exe /EHsc /W4 /MTd checked_iterators_3.cpp` bu kodu derlerken bir uyarı yayar, ancak bir çalıştırılabilire hata olmadan derlenir:
 
 ```Output
 algorithm(1026) : warning C4996: 'std::_Transform1': Function call with parameters
@@ -204,7 +204,7 @@ are correct. To disable this warning, use -D_SCL_SECURE_NO_WARNINGS. See documen
 on how to use Visual C++ 'Checked Iterators'
 ```
 
-Yürütülebilir dosya, komut satırında çalıştırdığınızda, aşağıdaki çıkışı üretir:
+Komut satırında çalıştırıldığında, yürütülebilir bu çıktıyı oluşturur:
 
 ```Output
 v: 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
@@ -219,5 +219,5 @@ a8: 0 8 16 24 32 40 48 56 64 72 80 88 96 104 112 120
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C++ Standart Kitaplığına Genel Bakış](../standard-library/cpp-standard-library-overview.md)<br/>
-[Hata Ayıklama Yineleyici Desteği](../standard-library/debug-iterator-support.md)<br/>
+[C++Standart kitaplığa genel bakış](../standard-library/cpp-standard-library-overview.md)\
+[Hata Ayıklama Yineleyici Desteği](../standard-library/debug-iterator-support.md)

@@ -5,16 +5,16 @@ helpviewer_keywords:
 - allocators
 - C++ Standard Library, allocators
 ms.assetid: ac95023b-9e7d-49f5-861a-bf7a9a340746
-ms.openlocfilehash: 1f11d1b007a728b32d27afd733df271f361864e7
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: cb1b0e0d1466d4af5ba255bdf3d00b11cd921fd6
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62252733"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68457542"
 ---
 # <a name="allocators"></a>Ayırıcılar
 
-Ayırıcılar C++ Standart Kitaplığı tarafından ayırmayı ve ayırmayı kaldırma kapsayıcılarda depolanan öğeleri işlemek için kullanılır. Bir şablon parametresi türü std::array dışındaki tüm C++ Standart Kitaplığı kapsayıcıları sahip `allocator<Type>`burada `Type` kapsayıcı öğe türünü temsil eder. Örneğin, vector sınıfı şu şekilde bildirilir:
+Ayrıcılar, kapsayıcılarda depolanan C++ öğelerin ayrılmasını ve ayırmayı işlemek Için standart kitaplık tarafından kullanılır. STD C++ :: Array hariç tüm standart kitaplık kapsayıcıları türünde `allocator<Type>`bir şablon parametresine sahiptir; burada `Type` kapsayıcı öğesinin türü temsil eder. Örneğin, vektör sınıfı şu şekilde bildirilmiştir:
 
 ```cpp
 template <
@@ -24,15 +24,15 @@ template <
 class vector
 ```
 
-C++ Standart Kitaplığı için bir ayırıcısı bir varsayılan uygulamasını sağlar. C ++ 11 ve sonraki sürümlerinde, varsayılan ayırıcı daha küçük bir arabirimi kullanıma sunmak için güncelleştirilir; Yeni ayırıcı olarak adlandırılan bir *minimal ayırıcılar*. Özellikle, minimal ayırıcılar 's `construct()` üye performansı önemli ölçüde iyileştirebilen taşıma semantiklerini destekler. Çoğu durumda, bu varsayılan ayırıcı yeterli olur. C ++ 11'de tüm standart kitaplık türleri ve işlevleri, bir ayırıcıyı tür parametresi desteği minimal ayırıcılar arabiriminin olması da dahil olmak üzere `std::function`, `shared_ptr, allocate_shared()`, ve `basic_string`.  Varsayılan ayırıcı hakkında daha fazla bilgi için bkz. [allocator sınıfı](../standard-library/allocator-class.md).
+Standart C++ kitaplık, ayırıcı için varsayılan bir uygulama sağlar. C++ 11 ve sonrasında varsayılan ayırıcı, daha küçük bir arabirim sunmak üzere güncelleştirilir; Yeni ayırıcı *en az ayırıcı*olarak adlandırılır. Özellikle, en küçük ayırıcı `construct()` üyesi, performansı önemli ölçüde iyileştirebilecek taşıma semantiğini destekler. Çoğu durumda, bu varsayılan ayırıcı yeterli olmalıdır. C++ 11 ' de, `std::function` `shared_ptr, allocate_shared()`bir ayırıcı türü parametresi alan standart kitaplık türleri ve işlevleri,, ve `basic_string`dahil olmak üzere minimum ayırıcı arabirimini destekler.  Varsayılan ayırıcı hakkında daha fazla bilgi için bkz. [ayırıcı sınıfı](../standard-library/allocator-class.md).
 
-## <a name="writing-your-own-allocator-c11"></a>Kendi ayırıcınızı (C ++ 11) yazma
+## <a name="writing-your-own-allocator-c11"></a>Kendi ayırıcıyı yazma (C++ 11)
 
-Varsayılan ayırıcı kullanır **yeni** ve **Sil** ayırma ve bellek serbest bırakın. Bellek ayırma, paylaşılan bellek kullanma gibi farklı bir yöntem kullanmak istiyorsanız kendi ayırıcınızı oluşturmanız gerekir. C ++ 11'i hedeflediğiniz ve yeni bir özel bellek ayırıcısı yazmanız gereken, mümkünse bir minimal ayırıcılar olun. Eski stil ayırıcı zaten uygulanmış olsa bile olmasını değiştirme göz önünde bir *minimal ayırıcılar* daha verimli avantajlarından yararlanmak için `construct()` sizin için otomatik olarak sağlanacak yöntemi.
+Varsayılan ayırıcı, belleği ayırmak ve serbest bırakmak için **New** ve **Delete** kullanır. Paylaşılan bellek kullanma gibi farklı bir bellek ayırma yöntemi kullanmak istiyorsanız, kendi ayırıcıyı oluşturmanız gerekir. C++ 11 ' i hedefliyorsanız ve yeni bir özel ayırıcı yazmanız gerekiyorsa, mümkünse bunu minimum ayırıcı yapın. Eski stil ayırıcı uygulamış olsanız bile, sizin için otomatik olarak sağlanacak daha verimli `construct()` bir yöntemden faydalanmak için onu *en az ayırıcı* olacak şekilde değiştirmeyi göz önünde bulundurun.
 
-Minimal ayırıcılar çok daha az ortak gerektirir ve odağı etkinleştirmeden `allocate` ve `deallocate` tüm işleri bunu üye işlevleri. Minimal ayırıcılar oluştururken, aşağıdaki örnekte gösterilenlerin dışında herhangi bir üye kullanılmaz:
+Minimum ayırıcı çok daha az ortak gerektirir ve tüm işleri oluşturan `allocate` ve `deallocate` üye işlevlerine odaklanabilmenizi sağlar. Minimum ayırıcı oluştururken, aşağıdaki örnekte gösterilenler dışında hiçbir üye uygulamayın:
 
-1. dönüştürme bir kopya Oluşturucu (örneğe bakın)
+1. bir kopya Oluşturucusu dönüştürülüyor (bkz. örnek)
 
 1. operator==
 
@@ -40,14 +40,14 @@ Minimal ayırıcılar çok daha az ortak gerektirir ve odağı etkinleştirmeden
 
 1. allocate
 
-1. Serbest Bırak
+1. kaldırmak
 
-C ++ 11 varsayılan `construct()` sizin için sağlanan üye kusursuz iletme ve taşıma semantiği sağlar; sürümünden daha eski çoğu durumda çok daha verimli olur.
+Sizin için sağlanacak olan `construct()` c++ 11 varsayılan üyesi, mükemmel bir iletme ve taşıma semantiğini sağlar; eski sürümden çok sayıda durumda çok daha etkilidir.
 
 > [!WARNING]
-> Derleme zamanında C++ standart kitaplığı allocator_traits sınıfı açıkça sağlanan hangi üyelerin algılamak için kullanır ve mevcut olmayan herhangi bir üye için bir varsayılan uygulamasını sağlar. Bu mekanizma ile allocator_traits özelleştirmesi için ayırıcı sağlayarak müdahale etmez!
+> Derleme zamanında C++ standart kitaplık, açıkça hangi üyelerin sağlandığını saptamak için allocator_traits sınıfını kullanır ve mevcut olmayan tüm Üyeler için varsayılan bir uygulama sağlar. Ayırıcılarınız için allocator_traits özelleştirmesi sunarak bu mekanizmayı engellemez!
 
-Aşağıdaki örnek, kullanan bir ayırıcı'nın en az bir uygulamasını gösterir. `malloc` ve `free`. Yeni özel durum türü kullanımına dikkat edin `std::bad_array_new_length` sıfırdan küçük veya izin verilen en yüksek boyuttan büyük dizi boyutu ise oluşturulur.
+Aşağıdaki örnek, ve `malloc` `free`kullanan bir ayırıcının en az bir uygulamasını gösterir. Dizi boyutu sıfırdan küçükse veya izin verilen en `std::bad_array_new_length` büyük boyuttan daha büyükse oluşturulan yeni özel durum türünün kullanımını aklınızda yapın.
 
 ```cpp
 #pragma once
@@ -97,9 +97,9 @@ void Mallocator<T>::deallocate(T * const p, size_t) const noexcept
 }
 ```
 
-## <a name="writing-your-own-allocator-c03"></a>Kendi ayırıcınızı (C ++ 03) yazma
+## <a name="writing-your-own-allocator-c03"></a>Kendi ayırıcıyı yazma (C++ 03)
 
-C ++ 03, C++ Standart Kitaplığı kapsayıcıları ile kullanılan herhangi bir ayırıcı aşağıdaki tür tanımlarını uygulamanız gerekir:
+C++ 03 ' de, standart kitaplık kapsayıcılarıyla C++ kullanılan herhangi bir ayırıcı aşağıdaki tür tanımlarını gerçekleştirmelidir:
 
 |||
 |-|-|
@@ -108,7 +108,7 @@ C ++ 03, C++ Standart Kitaplığı kapsayıcıları ile kullanılan herhangi bir
 |`difference_type`|`size_type`|
 |`pointer`|`value_type`|
 
-Ayrıca, C++ Standart Kitaplığı kapsayıcıları ile kullanılan herhangi bir ayırıcı aşağıdaki yöntemleri uygulamanız gerekir:
+Ayrıca, standart kitaplık kapsayıcılarıyla C++ kullanılan herhangi bir ayırıcı aşağıdaki yöntemleri gerçekleştirmelidir:
 
 |||
 |-|-|
@@ -119,8 +119,8 @@ Ayrıca, C++ Standart Kitaplığı kapsayıcıları ile kullanılan herhangi bir
 |`allocate`|`operator!=`|
 |`construct`||
 
-Bu tür tanımlarını ve yöntemleri hakkında daha fazla bilgi için bkz. [allocator sınıfı](../standard-library/allocator-class.md).
+Bu tür tanımları ve yöntemleri hakkında daha fazla bilgi için bkz. [ayırıcı sınıfı](../standard-library/allocator-class.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C++ Standart Kitaplığı Başvurusu](../standard-library/cpp-standard-library-reference.md)<br/>
+[C++ Standart Kitaplığı Başvurusu](../standard-library/cpp-standard-library-reference.md)
