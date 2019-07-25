@@ -7,12 +7,12 @@ helpviewer_keywords:
 - add_pointer class
 - add_pointer
 ms.assetid: d8095cb0-6578-4143-b78f-87f82485298c
-ms.openlocfilehash: fda2bcbd3484b9244d69358aac3e9baf5d37a4ad
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 759867a542aa128755ba31e090984eb5b3fe6963
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62411220"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68456552"
 ---
 # <a name="addpointer-class"></a>add_pointer Sınıfı
 
@@ -30,18 +30,18 @@ using add_pointer_t = typename add_pointer<T>::type;
 
 ### <a name="parameters"></a>Parametreler
 
-*T*<br/>
+*ŞI*\
 Değiştirilecek tür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Üye **typedef** `type` aynı türü adları `remove_reference<T>::type*`. Diğer ad `add_pointer_t` üyesine erişmek için bir kısayol **typedef** `type`.
+`remove_reference<T>::type*`  Typedef`type` öğesi, ile aynı türü adlandırır. Diğer ad `add_pointer_t` , **typedef** `type`üyesine erişmek için bir kısayoldur.
 
-Bir işaretçi, başvuru yapmak için geçersiz olduğundan `add_pointer` başvuruyu, varsa kaldırır, kendisinden önce belirtilen türden bir işaretçi türü sağlar. Sonuç olarak, bir türü ile kullanabileceğiniz `add_pointer` türün başvuru olup hakkında endişe olmadan.
+Bir başvurudan `add_pointer` işaretçi yapmak için geçersiz olduğundan, türü bir işaretçi yapmadan önce belirtilen türden bir başvuruyu kaldırır. Sonuç olarak, türün bir başvuru olup olmadığı `add_pointer` konusunda endişe duymadan bir türü kullanabilirsiniz.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, gösterir `add_pointer` türü bir işaretçi türü ile aynıdır.
+Aşağıdaki örnek, bir türün `add_pointer` bu türe yönelik işaretçiyle aynı olduğunu gösterir.
 
 ```cpp
 #include <type_traits>
@@ -65,11 +65,11 @@ add_pointer_t<int> == int *
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** \<type_traits >
+**Üst bilgi:** \<type_traits >
 
-**Namespace:** std
+**Ad alanı:** std
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[<type_traits>](../standard-library/type-traits.md)<br/>
-[remove_pointer Sınıfı](../standard-library/remove-pointer-class.md)<br/>
+[< type_traits >](../standard-library/type-traits.md)\
+[remove_pointer Sınıfı](../standard-library/remove-pointer-class.md)

@@ -6,16 +6,16 @@ f1_keywords:
 helpviewer_keywords:
 - time_base class
 ms.assetid: 9ae37f0b-9a42-496e-9870-3d9b71bab8fb
-ms.openlocfilehash: e790237e506aa32bafdb39938d841307bbc4d9c3
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 85565dc0c0ec904551eb8dd981cfacc9a2e1f256
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62412026"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68460035"
 ---
 # <a name="timebase-class"></a>time_base Sınıfı
 
-Sınıfı yalnızca bir listeden seçimli türü tanımlayan Şablon sınıfı time_get modelleri için temel bir sınıf olarak hizmet verir `dateorder` ve bu türdeki çeşitli sabit.
+Sınıfı, yalnızca numaralandırılmış türü `dateorder` ve bu türden birkaç sabiti tanımlayarak time_get şablon sınıfı modelleri için bir temel sınıf görevi görür.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -36,24 +36,24 @@ public:
 
 ## <a name="remarks"></a>Açıklamalar
 
-Her sabit tarih bileşenlerinin sıralamak için farklı bir şekilde çalışmayan belirtir. Sabittir:
+Her sabit, bir tarihin bileşenlerini sıralamayı farklı bir şekilde gösterir. Sabitler şunlardır:
 
-- `no_order` belirli bir sırada belirtir.
+- `no_order`belirli bir sıra belirtir.
 
-- `dmy` sipariş günü, ay ve yıl, 2 aralık 1979 olduğu gibi belirtir.
+- `dmy`2 Aralık 1979 ' de olduğu gibi, ayı gün, ay ve yıl olarak belirtir.
 
-- `mdy` sıra ay, gün ve yıl, 2 aralık 1979 olduğu gibi belirtir.
+- `mdy`2 Aralık 1979 ' de olacak şekilde ayı, günü ve yılı belirtir.
 
-- `ymd` Sipariş yılı, ayı ve ardından 1979/12/2 olduğu gibi günlük belirtir.
+- `ymd`1979/12/2 içinde olduğu gibi sipariş yılını, ayı ve günü belirtir.
 
-- `ydm` Sipariş yılı, gün, ay, 1979 olduğu gibi belirtir: 2 Ara.
+- `ydm`1979 ' de olduğu gibi, gün ve sonra ay yılını belirtir: 2 Dec.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** \<yerel ayar >
+**Üst bilgi:** \<yerel ayar >
 
-**Namespace:** std
+**Ad alanı:** std
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
+[C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)

@@ -12,16 +12,16 @@ helpviewer_keywords:
 - std::experimental::filesystem::file_status::operator=
 - std::experimental::filesystem::file_status::type
 - std::experimental::filesystem::file_status::permissions
-ms.openlocfilehash: 81ce4ecc1673087db8e985f94e297798dd712a6e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 60ced1f60c811f585928f47c6cfd5e695d0c4085
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62160023"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68457748"
 ---
 # <a name="filestatus-class"></a>file_status Sınıfı
 
-Saran bir [file_type](../standard-library/filesystem-enumerations.md#file_type) ve dosya [izinleri](../standard-library/filesystem-enumerations.md#perms).
+Bir [file_type](../standard-library/filesystem-enumerations.md#file_type) ve dosya [performansı](../standard-library/filesystem-enumerations.md#perms)sarar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -33,30 +33,30 @@ class file_status;
 
 |Oluşturucu|Açıklama|
 |-|-|
-|[file_status](#file_status)|İçin bir sarmalayıcı oluşturur [file_type](../standard-library/filesystem-enumerations.md#file_type) ve dosya [izinleri](../standard-library/filesystem-enumerations.md#perms).|
+|[file_status](#file_status)|[File_type](../standard-library/filesystem-enumerations.md#file_type) ve dosya [izinleri](../standard-library/filesystem-enumerations.md#perms)için bir sarmalayıcı oluşturur.|
 
 ### <a name="member-functions"></a>Üye işlevleri
 
 |Üye işlevi|Açıklama|
 |-|-|
 |[type](#type)|Alır veya ayarlar `file_type`.|
-|[izinleri](#permissions)|Alır veya dosya izinlerini ayarlar.|
+|[izinleri](#permissions)|Dosya izinlerini alır veya ayarlar.|
 
 ### <a name="operators"></a>İşleçler
 
 |İşleç|Açıklama|
 |-|-|
-|[operator=](#op_as)|Varsayılan haline getirilen üye atama işleçleri, beklendiği gibi davranır.|
+|[operator=](#op_as)|Varsayılan olarak ayarlanmış üye atama işleçleri beklenen şekilde davranır.|
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** \<filesystem >
+**Üst bilgi:** \<dosya sistemi >
 
-**Namespace:** std::experimental::filesystem, std::experimental::filesystem
+**Ad alanı:** std:: deneysel:: FileSystem, std:: deneysel:: FileSystem
 
-## <a name="file_status"></a> file_status::file_status
+## <a name="file_status"></a>file_status::file_status
 
-İçin bir sarmalayıcı oluşturur [file_type](../standard-library/filesystem-enumerations.md#file_type) ve dosya [izinleri](../standard-library/filesystem-enumerations.md#perms).
+[File_type](../standard-library/filesystem-enumerations.md#file_type) ve dosya [izinleri](../standard-library/filesystem-enumerations.md#perms)için bir sarmalayıcı oluşturur.
 
 ```cpp
 explicit file_status(
@@ -72,18 +72,18 @@ file_status(file_status&&) noexcept = default;
 
 ### <a name="parameters"></a>Parametreler
 
-*ftype*<br/>
-Belirtilen `file_type`, varsayılan olarak `file_type::none`.
+*Type*\
+Belirtildi `file_type`, varsayılan olarak `file_type::none`olur.
 
-*mask*<br/>
-Belirtilen dosya `perms`, varsayılan olarak `perms::unknown`.
+*maskesi*\
+Belirtilen dosya `perms`, varsayılan olarak `perms::unknown`olur.
 
-*file_status*<br/>
-Depolanan nesne.
+*file_status*\
+Saklı nesne.
 
-## <a name="op_as"></a> file_status::operator =
+## <a name="op_as"></a>file_status:: operator =
 
-Varsayılan haline getirilen üye atama işleçleri, beklendiği gibi davranır.
+Varsayılan olarak ayarlanmış üye atama işleçleri beklenen şekilde davranır.
 
 ```cpp
 file_status& operator=(const file_status&) noexcept = default;
@@ -92,10 +92,10 @@ file_status& operator=(file_status&&) nexcept = default;
 
 ### <a name="parameters"></a>Parametreler
 
-*file_status*<br/>
-[File_status](../standard-library/file-status-class.md) içine kopyalanan `file_status`.
+*file_status*\
+İçine`file_status`Kopyalanmakta olan [file_status](../standard-library/file-status-class.md) .
 
-## <a name="type"></a> Türü
+## <a name="type"></a>türüyle
 
 Alır veya ayarlar `file_type`.
 
@@ -106,14 +106,14 @@ void type(file_type ftype) noexcept
 
 ### <a name="parameters"></a>Parametreler
 
-*ftype*<br/>
-Belirtilen `file_type`.
+*Type*\
+Belirtildi `file_type`.
 
-## <a name="permissions"></a> İzinleri
+## <a name="permissions"></a>izinleri
 
-Alır veya dosya izinlerini ayarlar.
+Dosya izinlerini alır veya ayarlar.
 
-Ayarlayıcı dosya yapma `readonly` Kaldır `readonly` özniteliği.
+Bir dosya `readonly` oluşturmak veya `readonly` özniteliği kaldırmak için ayarlayıcısı 'nı kullanın.
 
 ```cpp
 perms permissions() const noexcept
@@ -122,11 +122,11 @@ void permissions(perms mask) noexcept
 
 ### <a name="parameters"></a>Parametreler
 
-*mask*<br/>
-Belirtilen `perms`.
+*maskesi*\
+Belirtildi `perms`.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Üstbilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md)<br/>
-[path Sınıfı](../standard-library/path-class.md)<br/>
-[\<FileSystem >](../standard-library/filesystem.md)<br/>
+[Üst bilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md)\
+[yol sınıfı](../standard-library/path-class.md)\
+[\<dosya sistemi >](../standard-library/filesystem.md)

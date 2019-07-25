@@ -4,19 +4,19 @@ ms.date: 05/07/2019
 helpviewer_keywords:
 - begin method
 ms.assetid: 633708cb-17fe-488b-9fb1-1b5f2da0f46c
-ms.openlocfilehash: 1d3ea3501282c1570d9858f523c96b2eae234ecc
-ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.openlocfilehash: d5cb494a7d2471f7b18d80685dd8eafe7f2f1a44
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65221734"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68457369"
 ---
 # <a name="container-classbegin"></a>Kapsayıcı Sınıfı::begin
 
 > [!NOTE]
-> Visual Studio'da bu konudur C++ kullanılan kapsayıcıları işlevsiz bir örnek olarak belgeleri C++ standart kitaplığı. Daha fazla bilgi için [C++ Standart Kitaplığı kapsayıcıları](../standard-library/stl-containers.md).
+> Bu konu, C++ standart kitaplığı 'nda kullanılan C++ kapsayıcılardan oluşan Işlevsel bir örnek olarak Visual Studio belgelerinde yer almaktadır. Daha fazla bilgi için bkz [ C++ . standart kitaplık kapsayıcıları](../standard-library/stl-containers.md).
 
-Bu noktalarda ilk öğe dizisi (veya yalnızca boş bir dizi bitiminin ötesinde) bir yineleyici döndürür.
+Dizinin ilk öğesini işaret eden bir yineleyici döndürür (veya bir boş dizinin sonunun ötesinde).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -29,4 +29,4 @@ iterator begin();
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Örnek Kapsayıcı Sınıfı](../standard-library/sample-container-class.md)<br/>
+[Örnek Kapsayıcı Sınıfı](../standard-library/sample-container-class.md)

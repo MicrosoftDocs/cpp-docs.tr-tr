@@ -10,16 +10,16 @@ f1_keywords:
 ms.assetid: 18be1e52-57b9-489a-8a9b-f58894f0aaad
 helpviewer_keywords:
 - std::chrono [C++], time_point
-ms.openlocfilehash: 99477f57dc44d63f663a6db38250cc0620151ec9
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 4511c7b2d8629f1a052137c7997daf5913c976ab
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62412000"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68459984"
 ---
 # <a name="timepoint-class"></a>time_point Sınıfı
 
-A `time_point` zamanda bir noktayı temsil eden bir türü açıklar. Bir nesne türü tutar [süresi](../standard-library/duration-class.md) şablon bağımsız değişkeni tarafından temsil edilen dönem bu yana geçen süreyi depolayan `Clock`.
+, Zaman içinde bir noktayı temsil eden bir türü açıklar.`time_point` Şablon bağımsız değişkeni `Clock`tarafından temsil edilen dönem bu yana geçen süreyi depolayan, [Duration](../standard-library/duration-class.md) türünde bir nesne tutar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -31,45 +31,45 @@ class time_point;
 
 ## <a name="members"></a>Üyeler
 
-### <a name="public-typedefs"></a>Genel Typedefler
+### <a name="public-typedefs"></a>Ortak tür tanımları
 
 |Ad|Açıklama|
 |----------|-----------------|
-|`time_point::clock`|Şablon parametresi için eş anlamlı `Clock`.|
-|`time_point::duration`|Şablon parametresi için eş anlamlı `Duration`.|
-|`time_point::period`|İç içe geçmiş tür adı için eş anlamlı `duration::period`.|
-|`time_point::rep`|İç içe geçmiş tür adı için eş anlamlı `duration::rep`.|
+|`time_point::clock`|Şablon parametresi `Clock`için eş anlamlı.|
+|`time_point::duration`|Şablon parametresi `Duration`için eş anlamlı.|
+|`time_point::period`|İç içe tür adı `duration::period`için eş anlamlı.|
+|`time_point::rep`|İç içe tür adı `duration::rep`için eş anlamlı.|
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[time_point](#time_point)|Oluşturur bir `time_point` nesne.|
+|[time_point](#time_point)|Bir `time_point` nesnesi oluşturur.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[en fazla](#max)|Üst sınırını belirtir `time_point::ref`.|
-|[Min](#min)|Alt sınırını belirtir `time_point::ref`.|
-|[time_since_epoch](#time_since_epoch)|Depolanan döndürür `duration` değeri.|
+|[max](#max)|İçin `time_point::ref`üst sınırı belirtir.|
+|[min](#min)|İçin `time_point::ref`alt sınırı belirtir.|
+|[time_since_epoch](#time_since_epoch)|Depolanan `duration` değeri döndürür.|
 
 ### <a name="public-operators"></a>Ortak İşleçler
 
 |Ad|Açıklama|
 |----------|-----------------|
 |[time_point::operator+=](#op_add_eq)|Depolanan süreye belirtilen bir değer ekler.|
-|[time_point::operator-=](#operator-_eq)|Belirtilen bir değeri depolanan süreden çıkarır.|
+|[time_point::operator-=](#operator-_eq)|Belirtilen bir değeri depolanan süreden çıkartır.|
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** \<chrono >
+**Üst bilgi:** \<> hatası
 
-**Namespace:** std::chrono
+**Ad alanı:** std:: hatası
 
-## <a name="max"></a>  time_point::Max
+## <a name="max"></a>time_point:: Max
 
-Türündeki değerlerin üst sınırını döndüren statik yöntem `time_point::ref`.
+Türündeki `time_point::ref`değerler için üst sınırı döndüren statik yöntem.
 
 ```cpp
 static constexpr time_point max();
@@ -77,11 +77,11 @@ static constexpr time_point max();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Aslında döndürür `time_point(duration::max())`.
+Aslında, döndürür `time_point(duration::max())`.
 
-## <a name="min"></a>  time_point::Min
+## <a name="min"></a>time_point:: min
 
-Türündeki değerlerin alt sınırını döndüren statik yöntem `time_point::ref`.
+Türündeki `time_point::ref`değerler için alt sınır döndüren statik yöntem.
 
 ```cpp
 static constexpr time_point min();
@@ -89,11 +89,11 @@ static constexpr time_point min();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Aslında döndürür `time_point(duration::min())`.
+Aslında, döndürür `time_point(duration::min())`.
 
 ## <a name="op_add_eq"></a>  time_point::operator+=
 
-Belirtilen bir değeri depolanan ekler [süresi](../standard-library/duration-class.md) değeri.
+Saklı [süre](../standard-library/duration-class.md) değerine belirtilen bir değer ekler.
 
 ```cpp
 time_point& operator+=(const duration& Dur);
@@ -101,16 +101,16 @@ time_point& operator+=(const duration& Dur);
 
 ### <a name="parameters"></a>Parametreler
 
-*Süre*<br/>
+*Hecesi*\
 A `duration` nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`time_point` Toplama işlemi gerçekleştirildikten sonra nesne.
+Ekleme gerçekleştirildikten sonra nesnesi. `time_point`
 
 ## <a name="operator-_eq"></a>  time_point::operator-=
 
-Belirtilen bir değeri depolanan çıkarır [süresi](../standard-library/duration-class.md) değeri.
+Saklanan [süre](../standard-library/duration-class.md) değerinden belirtilen değeri çıkartır.
 
 ```cpp
 time_point& operator-=(const duration& Dur);
@@ -118,16 +118,16 @@ time_point& operator-=(const duration& Dur);
 
 ### <a name="parameters"></a>Parametreler
 
-*Süre*<br/>
+*Hecesi*\
 A `duration` nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`time_point` Çıkarma işlemi gerçekleştirildikten sonra nesne.
+Çıkarma gerçekleştirildikten sonra nesnesi. `time_point`
 
-## <a name="time_point"></a>  time_point::time_point Oluşturucusu
+## <a name="time_point"></a>time_point:: time_point Oluşturucusu
 
-Oluşturur bir `time_point` nesne.
+Bir `time_point` nesnesi oluşturur.
 
 ```cpp
 constexpr time_point();
@@ -140,23 +140,23 @@ constexpr time_point(const time_point<clock, Duration2>& Tp);
 
 ### <a name="parameters"></a>Parametreler
 
-*Süre*<br/>
-A [süresi](../standard-library/duration-class.md) nesne.
+*Hecesi*\
+[Süre](../standard-library/duration-class.md) nesnesi.
 
-*TP*<br/>
+*'Ye*\
 A `time_point` nesne.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk Oluşturucu bir nesne oluşturur, saklı `duration` değeri eşittir [duration::zero](../standard-library/duration-class.md#zero).
+İlk Oluşturucu, saklı `duration` değeri [Duration:: Zero](../standard-library/duration-class.md#zero)değerine eşit olan bir nesne oluşturur.
 
-İkinci oluşturucu depolanmış süre değeri eşit olan bir nesne oluşturur *süre*. Sürece `is_convertible<Duration2, duration>` tutan true, İkinci kurucu aşırı yükleme çözünürlüğü içinde yer yok. Daha fazla bilgi için [< type_traits >](../standard-library/type-traits.md).
+İkinci Oluşturucu, saklı süresi değeri *süre*' ne eşit olan bir nesne oluşturur. Doğru `is_convertible<Duration2, duration>` tutmadığı müddetçe, ikinci Oluşturucu aşırı yükleme çözümüne katılmaz. Daha fazla bilgi için bkz. [< type_traits >](../standard-library/type-traits.md).
 
-Üçüncü Oluşturucu başlatır, `duration` kullanarak değer `Tp.time_since_epoch()`.
+Üçüncü Oluşturucu, kullanarak `duration` `Tp.time_since_epoch()`değerini başlatır.
 
-## <a name="time_since_epoch"></a>  time_point::time_since_epoch
+## <a name="time_since_epoch"></a>time_point::time_since_epoch
 
-Depolanan alır [süresi](../standard-library/duration-class.md) değeri.
+Saklı [süre](../standard-library/duration-class.md) değerini alır.
 
 ```cpp
 constexpr duration time_since_epoch() const;
@@ -164,5 +164,5 @@ constexpr duration time_since_epoch() const;
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Üstbilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md)<br/>
-[\<chrono >](../standard-library/chrono.md)<br/>
+[Üst bilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md)\
+[\<> hatası](../standard-library/chrono.md)

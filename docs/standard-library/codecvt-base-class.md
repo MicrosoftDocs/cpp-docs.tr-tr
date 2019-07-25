@@ -6,16 +6,16 @@ f1_keywords:
 helpviewer_keywords:
 - codecvt_base class
 ms.assetid: 7e95c083-91b4-4b3f-8918-0d4ea244a040
-ms.openlocfilehash: 6f957c39f9c78fd182b7ba2a14bdab7f27db56ac
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 1a32ba5e583fdb20118a3397f1ddb326302f2de1
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62405306"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68459385"
 ---
 # <a name="codecvtbase-class"></a>codecvt_base Sınıfı
 
-Bir numaralandırma türü tanımlamak için kullanılan codecvt sınıfının bir temel sınıf denir `result`bir dönüştürmenin sonucunu belirtmek için model üye işlevleri için dönüş türü olarak kullanılır.
+Bir dönüştürme sonucunu göstermek için model üye işlevleri için dönüş türü olarak kullanılan, olarak `result`adlandırılan bir numaralandırma türünü tanımlamak için kullanılan codecvt sınıfı için temel sınıf.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -38,22 +38,22 @@ protected:
 
 ## <a name="remarks"></a>Açıklamalar
 
-Sınıfı için şablon sınıfın tüm uzmanlıkları ortak bir numaralandırma açıklar [codecvt](../standard-library/codecvt-class.md). Sabit listesi sonucu olası dönüş değerleri açıklar [do_in](../standard-library/codecvt-class.md#do_in) veya [do_out](../standard-library/codecvt-class.md#do_out):
+Sınıfı, [codecvt](../standard-library/codecvt-class.md)şablon sınıfının tüm uzmanlıklarıyla ortak bir numaralandırma tanımlar. Numaralandırma sonucu, [do_in](../standard-library/codecvt-class.md#do_in) veya [do_out](../standard-library/codecvt-class.md#do_out)' den olası dönüş değerlerini açıklar:
 
-- `ok` İç ve dış karakter kodlamaları arasında dönüştürme başarılı olursa.
+- `ok`iç ve dış karakter kodlamaları arasında dönüştürme başarılı olursa.
 
-- `partial` Hedef dönüştürme başarılı olması için yeterince büyük değilse.
+- `partial`hedef dönüştürmenin başarılı olması için yeterince büyük değilse.
 
-- `error` Kaynak sırası olgu ise oluşturulmuş.
+- `error`kaynak sırası hatalı biçimlendirilmişse.
 
-- `noconv` herhangi bir dönüştürme işlevi uyguluyorsa.
+- `noconv`işlev dönüştürme işlemi gerçekleştirmeyebilir.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** \<yerel ayar >
+**Üst bilgi:** \<yerel ayar >
 
-**Namespace:** std
+**Ad alanı:** std
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
+[C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)

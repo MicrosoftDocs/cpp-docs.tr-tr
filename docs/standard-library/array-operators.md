@@ -9,25 +9,25 @@ f1_keywords:
 - array/std::array::operator>=
 - array/std::array::operator==
 ms.assetid: c8f46282-f179-4909-9a01-639cb8e18c27
-ms.openlocfilehash: c44789c958b3fc24441b95178acc85ce3ba337fb
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 88244879be9ab27c826c0b051b724fa1c3ed4784
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62377341"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68456760"
 ---
 # <a name="ltarraygt-operators"></a>&lt;dizi&gt; işleçleri
 
-\<Array > Bu içeren üst bilgi **dizi** üye olmayan karşılaştırma şablon işlevleri.
+Dizi > üst bilgisi bu dizi üye olmayan karşılaştırma şablonu işlevlerini içerir.  \<
 
 ||||
 |-|-|-|
-|[operator!=](#op_neq)|[İşleci&gt;](#op_gt)|[İşleci&gt;=](#op_gt_eq)|
-|[İşleci&lt;](#op_lt)|[İşleci&lt;=](#op_lt_eq)|[operator==](#op_eq_eq)|
+|[operator!=](#op_neq)|[işlecinde&gt;](#op_gt)|[işlecinde&gt;=](#op_gt_eq)|
+|[işlecinde&lt;](#op_lt)|[işlecinde&lt;=](#op_lt_eq)|[operator==](#op_eq_eq)|
 
-## <a name="op_neq"></a>  işleç! =
+## <a name="op_neq"></a>işleç! =
 
-Dizi karşılaştırması, eşit değil.
+Dizi karşılaştırması, eşit değildir.
 
 ```cpp
 template <Ty, std::size_t N>
@@ -38,21 +38,21 @@ bool operator!=(
 
 ### <a name="parameters"></a>Parametreler
 
-*Ty*<br/>
+*Kalite*\
 Öğenin türü.
 
-*N*<br/>
+*NO*\
 Dizinin boyutu.
 
-*Sol*<br/>
-Karşılaştırılacak sol kapsayıcısı.
+*tarafta*\
+Karşılaştırılacak sol kapsayıcı.
 
-*sağ*<br/>
-Karşılaştırılacak doğru kapsayıcısı.
+*Right*\
+Karşılaştırılacak doğru kapsayıcı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon işlevinin döndürdüğü `!(left == right)`.
+Şablon işlevi döndürür `!(left == right)`.
 
 ### <a name="example"></a>Örnek
 
@@ -98,7 +98,7 @@ false
 true
 ```
 
-## <a name="op_lt"></a>  İşleci&lt;
+## <a name="op_lt"></a>işlecinde&lt;
 
 Dizi karşılaştırması, küçüktür.
 
@@ -111,21 +111,21 @@ bool operator<(
 
 ### <a name="parameters"></a>Parametreler
 
-*Ty*<br/>
+*Kalite*\
 Öğenin türü.
 
-*N*<br/>
+*NO*\
 Dizinin boyutu.
 
-*Sol*<br/>
-Karşılaştırılacak sol kapsayıcısı.
+*tarafta*\
+Karşılaştırılacak sol kapsayıcı.
 
-*sağ*<br/>
-Karşılaştırılacak doğru kapsayıcısı.
+*Right*\
+Karşılaştırılacak doğru kapsayıcı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablonu işlev aşırı yüklemelerinin `operator<` şablon sınıfının iki nesneleri karşılaştırmak için [array sınıfı](../standard-library/array-class-stl.md). İşlev döndürür `lexicographical_compare(left.begin(), left.end(), right.begin())`.
+Şablon işlevi, şablon `operator<` sınıfı [dizi sınıfının](../standard-library/array-class-stl.md)iki nesnesini karşılaştırmak için aşırı yükler. İşlev döndürür `lexicographical_compare(left.begin(), left.end(), right.begin())`.
 
 ### <a name="example"></a>Örnek
 
@@ -171,7 +171,7 @@ false
 true
 ```
 
-## <a name="op_lt_eq"></a>  İşleci&lt;=
+## <a name="op_lt_eq"></a>işlecinde&lt;=
 
 Dizi karşılaştırması, küçüktür veya eşittir.
 
@@ -184,21 +184,21 @@ bool operator<=(
 
 ### <a name="parameters"></a>Parametreler
 
-*Ty*<br/>
+*Kalite*\
 Öğenin türü.
 
-*N*<br/>
+*NO*\
 Dizinin boyutu.
 
-*Sol*<br/>
-Karşılaştırılacak sol kapsayıcısı.
+*tarafta*\
+Karşılaştırılacak sol kapsayıcı.
 
-*sağ*<br/>
-Karşılaştırılacak doğru kapsayıcısı.
+*Right*\
+Karşılaştırılacak doğru kapsayıcı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon işlevinin döndürdüğü `!(right < left)`.
+Şablon işlevi döndürür `!(right < left)`.
 
 ### <a name="example"></a>Örnek
 
@@ -244,9 +244,9 @@ true
 false
 ```
 
-## <a name="op_eq_eq"></a>  işleç ==
+## <a name="op_eq_eq"></a>işleç = =
 
-Dizi karşılaştırması, eşit.
+Dizi karşılaştırması, eşittir.
 
 ```cpp
 template <Ty, std::size_t N>
@@ -257,21 +257,21 @@ bool operator==(
 
 ### <a name="parameters"></a>Parametreler
 
-*Ty*<br/>
+*Kalite*\
 Öğenin türü.
 
-*N*<br/>
+*NO*\
 Dizinin boyutu.
 
-*Sol*<br/>
-Karşılaştırılacak sol kapsayıcısı.
+*tarafta*\
+Karşılaştırılacak sol kapsayıcı.
 
-*sağ*<br/>
-Karşılaştırılacak doğru kapsayıcısı.
+*Right*\
+Karşılaştırılacak doğru kapsayıcı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablonu işlev aşırı yüklemelerinin `operator==` şablon sınıfının iki nesneleri karşılaştırmak için [array sınıfı](../standard-library/array-class-stl.md). İşlev döndürür `equal(left.begin(), left.end(), right.begin())`.
+Şablon işlevi, şablon `operator==` sınıfı [dizi sınıfının](../standard-library/array-class-stl.md)iki nesnesini karşılaştırmak için aşırı yükler. İşlev döndürür `equal(left.begin(), left.end(), right.begin())`.
 
 ### <a name="example"></a>Örnek
 
@@ -317,7 +317,7 @@ true
 false
 ```
 
-## <a name="op_gt"></a>  İşleci&gt;
+## <a name="op_gt"></a>işlecinde&gt;
 
 Dizi karşılaştırması, büyüktür.
 
@@ -330,21 +330,21 @@ bool operator>(
 
 ### <a name="parameters"></a>Parametreler
 
-*Ty*<br/>
+*Kalite*\
 Öğenin türü.
 
-*N*<br/>
+*NO*\
 Dizinin boyutu.
 
-*Sol*<br/>
-Karşılaştırılacak sol kapsayıcısı.
+*tarafta*\
+Karşılaştırılacak sol kapsayıcı.
 
-*sağ*<br/>
-Karşılaştırılacak doğru kapsayıcısı.
+*Right*\
+Karşılaştırılacak doğru kapsayıcı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon işlevinin döndürdüğü `(right < left)`.
+Şablon işlevi döndürür `(right < left)`.
 
 ### <a name="example"></a>Örnek
 
@@ -390,7 +390,7 @@ false
 true
 ```
 
-## <a name="op_gt_eq"></a>  İşleci&gt;=
+## <a name="op_gt_eq"></a>işlecinde&gt;=
 
 Dizi karşılaştırması, büyüktür veya eşittir.
 
@@ -403,21 +403,21 @@ bool operator>=(
 
 ### <a name="parameters"></a>Parametreler
 
-*Ty*<br/>
+*Kalite*\
 Öğenin türü.
 
-*N*<br/>
+*NO*\
 Dizinin boyutu.
 
-*Sol*<br/>
-Karşılaştırılacak sol kapsayıcısı.
+*tarafta*\
+Karşılaştırılacak sol kapsayıcı.
 
-*sağ*<br/>
-Karşılaştırılacak doğru kapsayıcısı.
+*Right*\
+Karşılaştırılacak doğru kapsayıcı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon işlevinin döndürdüğü `!(left < right)`.
+Şablon işlevi döndürür `!(left < right)`.
 
 ### <a name="example"></a>Örnek
 
@@ -465,4 +465,4 @@ false
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[\<Array >](../standard-library/array.md)<br/>
+[\<dizi >](../standard-library/array.md)

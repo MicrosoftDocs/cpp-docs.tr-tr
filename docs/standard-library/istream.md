@@ -8,16 +8,16 @@ f1_keywords:
 helpviewer_keywords:
 - istream header
 ms.assetid: efcf24e4-05d1-4719-ab0b-9e7ebe845d89
-ms.openlocfilehash: 2e39c0de5b11c9aa0a4c69f0142841469ef798c7
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 0ad27bf849e8d4b9188868b9a29bf423b4cafafa
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62413287"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68458739"
 ---
 # <a name="ltistreamgt"></a>&lt;istream&gt;
 
-İostreams için ayıklamalar aracılık, Şablon sınıfı basic_istream ve hem ekleme hem de ayıklamalar aracılık Şablon sınıfı basic_iostream tanımlar. Üst bilgi, ayrıca ilgili işleyici tanımlar. Bu başlık dosyasının başka bir iostreams üstbilgisi tarafından sizin için genellikle bulunur; nadiren doğrudan dahil etmek zorunda.
+İostreams için dışlamaları gösteren basic_istream şablon sınıfını ve hem eklemeleri hem de dışlamaları içeren basic_iostream şablon sınıfını tanımlar. Üst bilgi ayrıca ilgili bir işleici tanımlar. Bu üst bilgi dosyası, genellikle başka bir Iostreams üst bilgisi tarafından sizin için eklenmiştir; genellikle doğrudan eklemeniz gerekir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -29,33 +29,33 @@ ms.locfileid: "62413287"
 
 |Tür adı|Açıklama|
 |-|-|
-|[iostream](../standard-library/istream-typedefs.md#iostream)|Bir tür `basic_iostream` üzerinde özelleştirilmiş **char**.|
-|[istream](../standard-library/istream-typedefs.md#istream)|Bir tür `basic_istream` üzerinde özelleştirilmiş **char**.|
-|[wiostream](../standard-library/istream-typedefs.md#wiostream)|Bir tür `basic_iostream` üzerinde özelleştirilmiş **wchar**.|
-|[wistream](../standard-library/istream-typedefs.md#wistream)|Bir tür `basic_istream` üzerinde özelleştirilmiş **wchar**.|
+|[iostream](../standard-library/istream-typedefs.md#iostream)|Char üzerinde `basic_iostream` özelleştirilmiş bir tür.|
+|[istream](../standard-library/istream-typedefs.md#istream)|Char üzerinde `basic_istream` özelleştirilmiş bir tür.|
+|[wiostream](../standard-library/istream-typedefs.md#wiostream)|`basic_iostream` **Wchar**üzerinde özelleştirilmiş bir tür.|
+|[wistream](../standard-library/istream-typedefs.md#wistream)|`basic_istream` **Wchar**üzerinde özelleştirilmiş bir tür.|
 
 ### <a name="manipulators"></a>Manipülatörleri
 
 |||
 |-|-|
-|[ws](../standard-library/istream-functions.md#ws)|Boşluk stream'de atlar.|
-|[değiştirme](../standard-library/istream-functions.md#istream_swap)|İki akışı nesneleri birbiriyle değiştirir.|
+|[RW](../standard-library/istream-functions.md#ws)|Akıştaki boşluğu atlar.|
+|[Kur](../standard-library/istream-functions.md#istream_swap)|İki Stream nesnesi değiş tokuş eder.|
 
 ### <a name="operators"></a>İşleçler
 
 |İşleç|Açıklama|
 |-|-|
-|[İşleç >>](../standard-library/istream-operators.md#op_gt_gt)|Karakterlerin ve dizelerin akıştan ayıklar.|
+|[işleç > >](../standard-library/istream-operators.md#op_gt_gt)|Akıştan karakterler ve dizeler ayıklar.|
 
 ### <a name="classes"></a>Sınıflar
 
 |örneği|Açıklama|
 |-|-|
-|[basic_iostream](../standard-library/basic-iostream-class.md)|Hem giriş ve çıkış yapabileceği bir akışı sınıfı.|
-|[basic_istream](../standard-library/basic-istream-class.md)|Şablon sınıfı öğelerin ayıklama denetleyen bir nesne ve bir Akış Arabellek türü öğeler ile kodlanmış nesneleri tanımlar `Elem`olarak da bilinen [char_type](../standard-library/basic-ios-class.md#char_type), olan karakter nitelikleri sınıfı tarafından belirlenir `Tr`olarak da bilinen [traits_type](../standard-library/basic-ios-class.md#traits_type).|
+|[basic_iostream](../standard-library/basic-iostream-class.md)|Hem giriş hem de çıkış yapan bir akış sınıfı.|
+|[basic_istream](../standard-library/basic-istream-class.md)|Şablon sınıfı, öğe ve karakter nitelikleri sınıf `Elem` `Tr`tarafından belirlendiği şekilde [char_type](../standard-library/basic-ios-class.md#char_type)olarak da bilinen öğe ve kodlanmış nesneleri içeren bir akış arabelleğinden öğelerin ayıklanmasını denetleyen bir nesneyi tanımlar. [traits_type](../standard-library/basic-ios-class.md#traits_type)olarak bilinir.|
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
-[iostream Programlaması](../standard-library/iostream-programming.md)<br/>
-[iostreams Kuralları](../standard-library/iostreams-conventions.md)<br/>
+[C++ Standart kitaplıkta Iş parçacığı güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)\
+[iostream programlama](../standard-library/iostream-programming.md)\
+[iostreams Kuralları](../standard-library/iostreams-conventions.md)

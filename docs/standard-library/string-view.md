@@ -4,16 +4,16 @@ ms.date: 04/18/2019
 helpviewer_keywords:
 - string_view header
 ms.assetid: a2fb9d00-d7ae-4170-bfea-2dc337aa37cf
-ms.openlocfilehash: 8952416cf37fc4d8d281d6ced9b8264495ec3799
-ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
+ms.openlocfilehash: 47924c3d6bd1a2f45cdbac648f4f563c57ce8939
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "64346649"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68459113"
 ---
 # <a name="ltstringviewgt"></a>&lt;string_view&gt;
 
-Sınıf şablonu tanımlar `basic_string_view` ve ilgili türleri ve işleçler. (Derleyici seçeneği gerektirir [Std: c ++ 17](../build/reference/std-specify-language-standard-version.md) veya üzeri.)
+Sınıf şablonunu `basic_string_view` ve ilgili türleri ve işleçleri tanımlar. (Bir derleyici seçeneği [std: c++ 17](../build/reference/std-specify-language-standard-version.md) veya sonraki bir sürümü gerektirir.)
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -23,52 +23,52 @@ Sınıf şablonu tanımlar `basic_string_view` ve ilgili türleri ve işleçler.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Şablon uzmanlıkları string_view ailesi salt okunur, özel durum açısından güvenli, sahip olmayan bir tanıtıcı sıfır konumunda dizinin ilk öğesi ile herhangi bir dize benzeri nesnelerin karakter verileri geçirmek için etkili bir yol sağlar. Bir işlev parametresi türü `string_view` (için bir typedef olduğu `basic_string_view<char>`) gibi bağımsız değişkenleri kabul edebilir `std::string`, **char\***, veya herhangi bir dize benzeri sınıf olan dar karakter örtük Dönüştürme `string_view` tanımlanır. Benzer şekilde, bir parametre `wstring_view`, `u16string_view` veya `u32string_view` için örtük bir dönüştürme tanımlanan herhangi bir dize türü kabul edebilir. Daha fazla bilgi için [basic_string_view sınıfı](../standard-library/basic-string-view-class.md).
+Şablon Uzmanlıkları string_view ailesi, salt okunurdur, özel durum güvenli, sahip olmayan bir tutamacı, dizinin ilk öğesi olan herhangi bir dize benzeri nesnenin karakter verilerine geçirmek için etkili bir yol sağlar. Türünde `string_view` bir işlev parametresi (için `basic_string_view<char>`bir typedef) `std::string`, bir örtük dönüştürme **\*** `string_view`işlemiiçin,charveyadarkarakterlerdenoluşandiğerdizebenzeribağımsızdeğişkenlerikabuledebilirtanımlanmıştır. Benzer şekilde, `wstring_view` `u16string_view` veya `u32string_view` parametresi örtük bir dönüştürme tanımlanmış herhangi bir dize türünü kabul edebilir. Daha fazla bilgi için bkz. [Basic_string_view Class](../standard-library/basic-string-view-class.md).
 
 ### <a name="typedefs"></a>Tür tanımları
 
 |Tür adı|Açıklama|
 |-|-|
-|[string_view](../standard-library/string-view-typedefs.md#string_view)|Sınıf şablonunun bir özelleştirmesi `basic_string_view` öğelerini türle **char**.|
-|[wstring_view](../standard-library/string-view-typedefs.md#wstring_view)|Sınıf şablonunun bir özelleştirmesi `basic_string_view` öğelerini türle **wchar_t**.|
-|[u16string_view](../standard-library/string-view-typedefs.md#u16string_view)|Sınıf şablonunun bir özelleştirmesi `basic_string_view` öğelerini türle `char16_t`.|
-|[u32string_view](../standard-library/string-view-typedefs.md#u32string_view)|Sınıf şablonunun bir özelleştirmesi `basic_string_view` öğelerini türle `char32_t`.|
+|[string_view](../standard-library/string-view-typedefs.md#string_view)|**Char**türünde öğeler içeren sınıf şablonunun `basic_string_view` özelleştirmesi.|
+|[wstring_view](../standard-library/string-view-typedefs.md#wstring_view)|**Wchar_t**türünde öğeler içeren sınıf şablonunun `basic_string_view` özelleştirmesi.|
+|[u16string_view](../standard-library/string-view-typedefs.md#u16string_view)|`basic_string_view` Türünde`char16_t`öğeler içeren sınıf şablonunun özelleştirmesi.|
+|[u32string_view](../standard-library/string-view-typedefs.md#u32string_view)|`basic_string_view` Türünde`char32_t`öğeler içeren sınıf şablonunun özelleştirmesi.|
 
 ### <a name="operators"></a>İşleçler
 
-\<String_view > işleçleri karşılaştırabilirsiniz `string_view` nesnelerine dönüştürülebilir tüm nesnelerin dize türleri.
+String_view > işleçleri nesneleri herhangi bir dönüştürülebilir dize türünün nesneleriyle karşılaştırabilirler `string_view`. \<
 
 |İşleç|Açıklama|
 |-|-|
-|[operator!=](../standard-library/string-view-operators.md#op_neq)|İşlecin sol tarafındaki nesne işlecin sağ tarafındaki nesneye eşit olup olmadığını sınar.|
-|[operator==](../standard-library/string-view-operators.md#op_eq_eq)|İşlecin sol tarafındaki nesnesinin işlecin sağ tarafındaki nesneye eşit olup olmadığını sınar.|
-|[işleç <](../standard-library/string-view-operators.md#op_lt)|Nesnesinin işlecin sol tarafındaki küçüktür için olup olmadığını sınar işlecin sağ tarafındaki bir nesne.|
-|[operator < =](../standard-library/string-view-operators.md#op_lt_eq)|Nesnesinin işlecin sol tarafındaki küçüktür veya eşittir nesnesinin işlecin sağ tarafındaki olup olmadığını sınar.|
-|[işleç <\<](../standard-library/string-view-operators.md#op_lt_lt)|Ekleyen bir şablon işlevine bir `string_view` içine bir çıkış akışı.|
-|[operator >](../standard-library/string-view-operators.md#op_gt)|İşlecin sol tarafındaki nesne nesnesine sağ tarafındaki büyük olup olmadığını sınar.|
-|[operator>=](../standard-library/string-view-operators.md#op_gt_eq)|İşlecin sol tarafındaki nesnesinin değerinden büyük veya işlecin sağ tarafındaki nesneye eşit olup olmadığını sınar.|
+|[operator!=](../standard-library/string-view-operators.md#op_neq)|İşlecin sol tarafındaki nesnenin sağ taraftaki nesneye eşit olup olmadığını sınar.|
+|[operator==](../standard-library/string-view-operators.md#op_eq_eq)|İşlecin sol tarafındaki nesnenin sağ taraftaki nesneye eşit olup olmadığını sınar.|
+|[işleç <](../standard-library/string-view-operators.md#op_lt)|İşlecin sol tarafındaki nesnenin sağ taraftaki nesneden daha az olup olmadığını sınar.|
+|[işleç < =](../standard-library/string-view-operators.md#op_lt_eq)|İşlecin sol tarafındaki nesnenin sağ taraftaki nesneden küçük veya ona eşit olup olmadığını sınar.|
+|[işleç <\<](../standard-library/string-view-operators.md#op_lt_lt)|Bir çıkış akışına bir `string_view` ekleyen bir şablon işlevi.|
+|[işleç >](../standard-library/string-view-operators.md#op_gt)|İşlecin sol tarafındaki nesnenin sağ taraftaki nesneden daha büyük olup olmadığını sınar.|
+|[operator>=](../standard-library/string-view-operators.md#op_gt_eq)|İşlecin sol tarafındaki nesnenin sağ taraftaki nesneden büyük veya ona eşit olup olmadığını sınar.|
 
 ### <a name="literals"></a>Sabit değerler
 
 |İşleç|Açıklama|
 |-|-|
-|[sv](../standard-library/string-view-operators.md#op_sv)|Oluşturur bir `string_view`, `wstring_view`, `u16string_view`, veya `u32string_view` türüne bağlı olarak, eklenmeden dize sabit değeri.|
+|[v](../standard-library/string-view-operators.md#op_sv)|Eklendiği dize sabit değerinin türüne bağlı `u32string_view` olarak,, veya oluşturur. `string_view` `wstring_view` `u16string_view`|
 
 ### <a name="classes"></a>Sınıflar
 
 |örneği|Açıklama|
 |-|-|
-|[basic_string_view Sınıfı](../standard-library/basic-string-view-class.md)|Rastgele bir karakter benzeri nesneleri dizisini bir salt okunur görünüm sağlayan bir sınıf şablonunun.|
-|[Karma](string-view-hash.md)|Bir string_view için bir karma değer üreten bir işlev nesnesi.|
+|[basic_string_view Sınıfı](../standard-library/basic-string-view-class.md)|Rastgele bir karakter benzeri nesne dizisine salt okunurdur görünümü sağlayan bir sınıf şablonu.|
+|[yla](string-view-hash.md)|Bir string_view için karma değer üreten işlev nesnesi.|
 
 ## <a name="requirements"></a>Gereksinimler
 
-- **Başlık:** \<string_view >
+- **Üst bilgi:** \<string_view >
 
-- **Namespace:** std
+- **Ad alanı:** std
 
-- **Derleyici seçeneği:** Std: c ++ 17'ı (veya üzeri)
+- **Derleyici seçeneği:** std: c++ 17 (veya üzeri)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Üstbilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md)<br/>
+[Üst bilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md)

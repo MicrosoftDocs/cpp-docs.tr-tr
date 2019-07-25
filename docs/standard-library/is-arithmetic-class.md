@@ -7,16 +7,16 @@ helpviewer_keywords:
 - is_arithmetic class
 - is_arithmetic
 ms.assetid: ea427b7e-0141-4a04-848f-561054c53001
-ms.openlocfilehash: 7aff4b051786c3d77dacb65ddbdbd29fa695ca48
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e2c148b7cb58cf38e5f73d4e3d2297eac099ef7e
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62404812"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68456682"
 ---
 # <a name="isarithmetic-class"></a>is_arithmetic Sınıfı
 
-Aritmetik türü olup olmadığını sınar.
+Tür aritmetik ise sınar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -27,12 +27,12 @@ struct is_arithmetic;
 
 ### <a name="parameters"></a>Parametreler
 
-*Ty*<br/>
+*Kalite*\
 Sorgulanacak tür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Karşılaştırmasının bir örneği true tutan türü *Ty* olduğu bir aritmetik tür, diğer bir deyişle, bir tamsayı türü veya bir kayan nokta türüne, veya bir `cv-qualified` bunlardan biri, aksi takdirde false tuttuğu biçimi.
+Tür değeri bir aritmetik tür, yani bir integral türü veya kayan nokta türü ya da bunlardan birinin bir `cv-qualified` *biçimi ise,* bir tür koşulu true, aksi takdirde false barındırır.
 
 ## <a name="example"></a>Örnek
 
@@ -68,12 +68,12 @@ is_arithmetic<float> == true
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** \<type_traits >
+**Üst bilgi:** \<type_traits >
 
-**Namespace:** std
+**Ad alanı:** std
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[<type_traits>](../standard-library/type-traits.md)<br/>
-[is_floating_point Sınıfı](../standard-library/is-floating-point-class.md)<br/>
-[is_integral Sınıfı](../standard-library/is-integral-class.md)<br/>
+[< type_traits >](../standard-library/type-traits.md)\
+[is_floating_point sınıfı](../standard-library/is-floating-point-class.md)\
+[is_integral Sınıfı](../standard-library/is-integral-class.md)

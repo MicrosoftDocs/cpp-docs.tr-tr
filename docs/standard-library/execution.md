@@ -1,21 +1,21 @@
 ---
-title: '&lt;Yürütme&gt;'
+title: '&lt;yürütme&gt;'
 ms.date: 04/18/2019
 f1_keywords:
 - <execution>
 - std::<execution>
 helpviewer_keywords:
 - execution header
-ms.openlocfilehash: 3bce34019f9ed4880d72a9d16c3c8b78dde0e0e3
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.openlocfilehash: 3b0ccd540c56500c2f265aa6192a12fc2d5078b0
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68267882"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68457977"
 ---
-# <a name="ltexecutiongt"></a>&lt;Yürütme&gt;
+# <a name="ltexecutiongt"></a>&lt;yürütme&gt;
 
-Paralel algoritmalar için yürütme ilkelerini açıklar.
+Paralel algoritmaların yürütme ilkelerini açıklar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -33,19 +33,19 @@ namespace std::execution {
 
 |||
 |-|-|
-|[is_execution_policy yapısı](is-execution-policy-struct.md)|Aksi takdirde belirsiz aşırı yükleme çözünürlüğü katılım işlev imzası hariç amacıyla yürütme ilkelerini algılar.|
-|[parallel_policy sınıfı](parallel-policy-class.md)|Paralel algoritma aşırı yükleme belirsizliği ortadan kaldırmak ve bir paralel algoritma 's yürütme paralel belirtmek için benzersiz bir türü olarak kullanılır.|
-|[parallel_unsequenced_policy sınıfı](parallel-unsequenced-policy-class.md)|Benzersiz bir türü paralel algoritma aşırı yükleme belirsizliği ortadan kaldırmak ve bir paralel algoritma 's yürütme paralel ve vektörleştirildi olduğunu belirtmek için kullanılır.|
-|[sequenced_policy sınıfı](sequenced-policy-class.md)|Gerektiren paralel algoritma 's yürütme paralel ve paralel algoritma aşırı yükleme belirsizliği ortadan kaldırmak için benzersiz bir türü olarak kullanılır.|
+|[is_execution_policy yapısı](is-execution-policy-struct.md)|Aksi takdirde belirsiz aşırı yükleme çözümlemesi katılımında işlev imzalarını dışlamamak amacıyla yürütme ilkelerini algılar.|
+|[parallel_policy sınıfı](parallel-policy-class.md)|Paralel algoritma aşırı yüklemesini belirsizliği ortadan kaldırmak için benzersiz bir tür olarak kullanılır ve paralel algoritma yürütmenin paralelleştirilmesine işaret edilebilir.|
+|[parallel_unsequenced_policy sınıfı](parallel-unsequenced-policy-class.md)|Paralel algoritma aşırı yüklemesini netleştirmek için benzersiz bir tür olarak kullanılır ve bir paralel algoritma yürütmenin paralelleştirilmiş ve vektörleştirilmemiş olabileceğini belirtir.|
+|[sequenced_policy sınıfı](sequenced-policy-class.md)|Paralel algoritma aşırı yüklemesini ayırt etmek için benzersiz bir tür olarak kullanılır ve paralel algoritma yürütmenin paralelleştirilmesine gerek yoktur.|
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** \<yürütme >
+**Üst bilgi:** \<yürütme >
 
-**Namespace:** stdext
+**Ad alanı:** stdext
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Üstbilgi dosyaları başvurusu](cpp-standard-library-header-files.md)<br/>
-[C++ Standart Kitaplığında İş Parçacığı Güvenliği](thread-safety-in-the-cpp-standard-library.md)<br/>
+[Üst bilgi dosyaları başvurusu](cpp-standard-library-header-files.md)\
+[C++ Standart kitaplıkta Iş parçacığı güvenliği](thread-safety-in-the-cpp-standard-library.md)\
 [C++ Standart Kitaplığı Başvurusu](cpp-standard-library-reference.md)
