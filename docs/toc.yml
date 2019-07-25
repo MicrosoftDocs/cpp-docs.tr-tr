@@ -444,16 +444,7 @@
                 - name: Yönetilen kaynaklar özellik sayfası
                   href: build/reference/managed-resources-property-page.md
                 - name: MIDL özellik sayfaları
-                  expanded: false
-                  items:
-                    - name: MIDL özellik sayfaları
-                      href: build/reference/midl-property-pages.md
-                    - name: 'MIDL özellik sayfaları: Genel'
-                      href: build/reference/midl-property-pages-general.md
-                    - name: 'MIDL özellik sayfaları: Çıkış'
-                      href: build/reference/midl-property-pages-output.md
-                    - name: 'MIDL özellik sayfaları: Gelişmiş'
-                      href: build/reference/midl-property-pages-advanced.md
+                  href: build/reference/midl-property-pages.md
                 - name: Web Başvuruları özellik sayfası
                   href: build/reference/web-references-property-page.md
                 - name: XML Verileri Oluşturma Aracı özellik sayfası
