@@ -6,16 +6,16 @@ f1_keywords:
 helpviewer_keywords:
 - fstream header
 ms.assetid: 660de351-0489-41df-b239-40e0cdcab46b
-ms.openlocfilehash: 20efdc755b7f706fc6ee962daa32bd352df39d45
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: ba6a4152b8d37f5b0186f9d05c6ba850e8c2e54c
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62159775"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68454014"
 ---
 # <a name="ltfstreamgt"></a>&lt;fstream&gt;
 
-Dış dosyalarında depolanan dizileri iostreams işlemleri destekleyen çeşitli sınıfları tanımlar.
+Dış dosyalarda depolanan diziler üzerinde Iostreams işlemlerini destekleyen birkaç sınıfı tanımlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -27,27 +27,27 @@ Dış dosyalarında depolanan dizileri iostreams işlemleri destekleyen çeşitl
 
 |Tür adı|Açıklama|
 |-|-|
-|[filebuf](../standard-library/fstream-typedefs.md#filebuf)|Bir tür `basic_filebuf` üzerinde özelleştirilmiş **char** şablon parametreleri.|
-|[fstream](../standard-library/fstream-typedefs.md#fstream)|Bir tür `basic_fstream` üzerinde özelleştirilmiş **char** şablon parametreleri.|
-|[ifstream](../standard-library/fstream-typedefs.md#ifstream)|Bir tür `basic_ifstream` üzerinde özelleştirilmiş **char** şablon parametreleri.|
-|[ofstream](../standard-library/fstream-typedefs.md#ofstream)|Bir tür `basic_ofstream` üzerinde özelleştirilmiş **char** şablon parametreleri.|
-|[wfstream](../standard-library/fstream-typedefs.md#wfstream)|Bir tür `basic_fstream` üzerinde özelleştirilmiş **wchar_t** şablon parametreleri.|
-|[wifstream](../standard-library/fstream-typedefs.md#wifstream)|Bir tür `basic_ifstream` üzerinde özelleştirilmiş **wchar_t** şablon parametreleri.|
-|[wofstream](../standard-library/fstream-typedefs.md#wofstream)|Bir tür `basic_ofstream` üzerinde özelleştirilmiş **wchar_t** şablon parametreleri.|
-|[wfilebuf](../standard-library/fstream-typedefs.md#wfilebuf)|Bir tür `basic_filebuf` üzerinde özelleştirilmiş **wchar_t** şablon parametreleri.|
+|[filebuf](../standard-library/fstream-typedefs.md#filebuf)|Char şablon `basic_filebuf` parametreleri üzerinde  özelleştirilmiş bir tür.|
+|[fstream](../standard-library/fstream-typedefs.md#fstream)|Char şablon `basic_fstream` parametreleri üzerinde  özelleştirilmiş bir tür.|
+|[ifstream](../standard-library/fstream-typedefs.md#ifstream)|Char şablon `basic_ifstream` parametreleri üzerinde  özelleştirilmiş bir tür.|
+|[ofstream](../standard-library/fstream-typedefs.md#ofstream)|Char şablon `basic_ofstream` parametreleri üzerinde  özelleştirilmiş bir tür.|
+|[wfstream](../standard-library/fstream-typedefs.md#wfstream)|Wchar_t şablon `basic_fstream` parametrelerine özel  bir tür.|
+|[wifstream](../standard-library/fstream-typedefs.md#wifstream)|Wchar_t şablon `basic_ifstream` parametrelerine özel  bir tür.|
+|[wofstream](../standard-library/fstream-typedefs.md#wofstream)|Wchar_t şablon `basic_ofstream` parametrelerine özel  bir tür.|
+|[wfilebuf](../standard-library/fstream-typedefs.md#wfilebuf)|Wchar_t şablon `basic_filebuf` parametrelerine özel  bir tür.|
 
 ### <a name="classes"></a>Sınıflar
 
 |örneği|Açıklama|
 |-|-|
-|[basic_filebuf](../standard-library/basic-filebuf-class.md)|Şablon sınıfı türü öğeler aktarımını denetleyen bir akış arabelleğinin tanımlar `Elem`, olan karakter nitelikleri sınıfı tarafından belirlenir `Tr`, için ve bir dış dosya içinde depolanan öğeleri dizisi.|
-|[basic_fstream](../standard-library/basic-fstream-class.md)|Şablon sınıfı, denetimleri ekleme ve çıkarma öğelerin bir nesne ve bir akış arabelleğinin sınıfı kullanarak kodlanmış nesneleri tanımlar [basic_filebuf](../standard-library/basic-filebuf-class.md)\<**Elem**,  **Tr**>, türü öğeler ile `Elem`, olan karakter nitelikleri sınıfı tarafından belirlenen `Tr`.|
-|[basic_ifstream](../standard-library/basic-ifstream-class.md)|Şablon sınıfı öğelerin ayıklama denetleyen bir nesne ve kodlanmış bir akış arabelleğinin sınıfın nesneleri tanımlar [basic_filebuf](../standard-library/basic-filebuf-class.md)\<**Elem**, **Tr**>, türü öğeler ile `Elem`, olan karakter nitelikleri sınıfı tarafından belirlenen `Tr`.|
-|[basic_ofstream](../standard-library/basic-ofstream-class.md)|Şablon sınıfı bir sınıfın akış arabelleğine ekleme öğelerin denetleyen bir nesne ve kodlanmış nesneleri açıklar [basic_filebuf](../standard-library/basic-filebuf-class.md)\<**Elem**, **Tr**>, türü öğeler ile `Elem`, olan karakter nitelikleri sınıfı tarafından belirlenen `Tr`.|
+|[basic_filebuf](../standard-library/basic-filebuf-class.md)|Şablon sınıfı, türünde `Elem`öğelerin aktarılmasını denetleyen bir akış arabelleğini tanımlar. Bu, karakter nitelikleri sınıfı `Tr`tarafından, dış dosyada depolanan bir öğe dizisine ve bu diziye göre belirlenir.|
+|[basic_fstream](../standard-library/basic-fstream-class.md)|Şablon sınıfı, [basic_filebuf](../standard-library/basic-filebuf-class.md)\<**eled**, `Elem` **tr**> sınıfının bir akış arabelleğini kullanarak öğeleri ve ayıklamayı ve kodlanmış nesneleri içeren bir nesneyi tanımlar, karakter nitelikleri sınıfı `Tr`tarafından belirlenir.|
+|[basic_ifstream](../standard-library/basic-ifstream-class.md)|Şablon sınıfı, öğe ve kodlanmış nesneleri [basic_filebuf](../standard-library/basic-filebuf-class.md)\<**eled**, `Elem` **tr**> sınıfının bir akış arabelleğinden, karakter nitelikleri olan bir nesne sınıfı `Tr`tarafından belirlenir.|
+|[basic_ofstream](../standard-library/basic-ofstream-class.md)|Şablon sınıfı, öğelerin ve kodlanmış nesnelerin [basic_filebuf](../standard-library/basic-filebuf-class.md)\<**eled**, `Elem` **tr**> sınıfının bir akış arabelleğine eklenmesini denetleyen, karakter nitelikleri olan bir nesneyi tanımlar. sınıfı `Tr`tarafından belirlenir.|
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Üstbilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md)<br/>
-[C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
-[iostream Programlaması](../standard-library/iostream-programming.md)<br/>
-[iostreams Kuralları](../standard-library/iostreams-conventions.md)<br/>
+[Üst bilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md)\
+[C++ Standart kitaplıkta Iş parçacığı güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)\
+[iostream programlama](../standard-library/iostream-programming.md)\
+[iostreams Kuralları](../standard-library/iostreams-conventions.md)

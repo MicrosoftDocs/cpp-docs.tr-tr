@@ -6,16 +6,16 @@ f1_keywords:
 helpviewer_keywords:
 - cstdarg header
 ms.assetid: 639b4ef7-8408-4640-9343-41631f0ab663
-ms.openlocfilehash: f8d2d3b886cfa46905e8f17f1e13b51881b80191
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.openlocfilehash: 0b45d5f591c5394ffa861e75169dce70f53b1baf
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68244480"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68448022"
 ---
 # <a name="ltcstdarggt"></a>&lt;cstdarg&gt;
 
-Standart C Kitaplığı üstbilgisi içerir \<stdarg.h > ve ilişkili adlar ekler `std` ad alanı. Bu üstbilginin dahil sağlar, standart C Kitaplığı üstbilgisinde harici bağlantı kullanılarak bildirilen adların bildirilir `std` ad alanı.
+, Stdarg. h \<> C standart kitaplığı başlığını içerir ve ilişkili adları `std` ad alanına ekler. Bu üst bilgiyi dahil etmek, C standart kitaplığı üstbilgisinde harici bağlantı kullanılarak belirtilen adların `std` ad alanında bildirilmesini sağlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -23,7 +23,7 @@ Standart C Kitaplığı üstbilgisi içerir \<stdarg.h > ve ilişkili adlar ekle
 #include <cstdarg>
 ```
 
-## <a name="namespace-and-macros"></a>Namespace ve makroları
+## <a name="namespace-and-macros"></a>Ad alanı ve makrolar
 
 ```cpp
 namespace std {
@@ -38,6 +38,6 @@ namespace std {
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Üstbilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md)<br/>
-[C++ Standart Kitaplığına Genel Bakış](../standard-library/cpp-standard-library-overview.md)<br/>
-[C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
+[Üst bilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md)\
+[C++Standart kitaplığa genel bakış](../standard-library/cpp-standard-library-overview.md)\
+[C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)

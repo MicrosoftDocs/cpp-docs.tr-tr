@@ -7,16 +7,16 @@ f1_keywords:
 helpviewer_keywords:
 - iomanip header
 ms.assetid: 3681c346-4763-4037-bba4-cf0dc3447974
-ms.openlocfilehash: 983fbc190fb83b81534e3888c748c0bf9c235638
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b9da0de64bbb0ef48a6a9741ff941e6abda0e705
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62404942"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68449203"
 ---
 # <a name="ltiomanipgt"></a>&lt;iomanip&gt;
 
-Dahil `iostreams` standart üstbilgi \<iomanip > her birkaç manipülatörleri tanımlamak için tek bir bağımsız değişken alın.
+Her birinin tek bir \<bağımsız değişken aldığı birkaç işlem tanımlamak için iomanıp > Standartüstbilgisiniekleyin.`iostreams`
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -26,27 +26,27 @@ Dahil `iostreams` standart üstbilgi \<iomanip > her birkaç manipülatörleri t
 
 ## <a name="remarks"></a>Açıklamalar
 
-Her biri bu manipülatörleri adlı belirtilmeyen bir türün döndürür `T1` aracılığıyla `T10`, her ikisi de aşırı `basic_istream` \< **Elem**, **Tr** > `::` [işleci >>](../standard-library/istream-operators.md#op_gt_gt) ve `basic_ostream` \< **Elem**, **Tr** > `::` [işleci <<](../standard-library/ostream-operators.md#op_lt_lt).
+`T1` Bu işleçlerden her biri, ile `T10`çağrılan belirtilmemiş bir tür döndürür ve hem **elee**, **tr**> `basic_istream``::`[işleci > >](../standard-library/istream-operators.md#op_gt_gt) hem de \< `basic_ostream` **Eled**, trişleci><[<](../standard-library/ostream-operators.md#op_lt_lt).`::` \<
 
 ### <a name="manipulators"></a>Manipülatörleri
 
 |||
 |-|-|
-|[get_money](../standard-library/iomanip-functions.md#iomanip_get_money)|İsteğe bağlı olarak uluslararası biçiminde bir parasal miktarını alır.|
-|[get_time](../standard-library/iomanip-functions.md#iomanip_get_time)|Saati zaman yapısını, belirtilen biçimi kullanarak alır.|
-|[put_money](../standard-library/iomanip-functions.md#iomanip_put_money)|İsteğe bağlı olarak uluslararası biçiminde bir parasal miktarını sağlar.|
-|[put_time](../standard-library/iomanip-functions.md#iomanip_put_time)|Zaman yapısı ve kullanmak için bir biçim dizesi bir sürede sağlar.|
-|[Teklif](../standard-library/iomanip-functions.md#quoted)|Dizeler ekleme ve çıkarma işleçleri ile kullanışlı gidiş dönüşü sağlar.|
-|[resetiosflags](../standard-library/iomanip-functions.md#resetiosflags)|Belirtilen bayraklar temizler.|
-|[setbase](../standard-library/iomanip-functions.md#setbase)|Tamsayılar için temel olarak ayarlayın.|
-|[setfill](../standard-library/iomanip-functions.md#setfill)|Sağa yaslanmış görüntüsündeki alanları doldurmak için kullanılan karakter ayarlar.|
-|[setiosflags](../standard-library/iomanip-functions.md#setiosflags)|Belirtilen bayraklar ayarlar.|
-|[setprecision](../standard-library/iomanip-functions.md#setprecision)|Duyarlık kayan nokta değerleri için ayarlar.|
+|[get_money](../standard-library/iomanip-functions.md#iomanip_get_money)|İsteğe bağlı olarak uluslararası biçimde parasal bir miktar alır.|
+|[get_time](../standard-library/iomanip-functions.md#iomanip_get_time)|Belirtilen biçimi kullanarak zaman yapısında bir zaman alır.|
+|[put_money](../standard-library/iomanip-functions.md#iomanip_put_money)|İsteğe bağlı olarak uluslararası biçimde parasal bir miktar sağlar.|
+|[put_time](../standard-library/iomanip-functions.md#iomanip_put_time)|Bir zaman yapısında ve kullanılacak biçim dizesinde bir zaman sağlar.|
+|[tırnak işaretli](../standard-library/iomanip-functions.md#quoted)|Ekleme ve ayıklama işleçleri ile dizelerin kolay gidiş dönüşü sunar.|
+|[resetiosflags](../standard-library/iomanip-functions.md#resetiosflags)|Belirtilen bayrakları temizler.|
+|[setbase](../standard-library/iomanip-functions.md#setbase)|Tamsayılar için taban ayarla.|
+|[setfill](../standard-library/iomanip-functions.md#setfill)|Sağa hizalanmış bir ekranda boşlukları doldur, kullanılacak karakteri ayarlar.|
+|[setiosflags](../standard-library/iomanip-functions.md#setiosflags)|Belirtilen bayrakları ayarlar.|
+|[setprecision](../standard-library/iomanip-functions.md#setprecision)|Kayan nokta değerleri için duyarlığı ayarlar.|
 |[setw](../standard-library/iomanip-functions.md#setw)|Görüntüleme alanının genişliğini belirtir.|
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Üstbilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md)<br/>
-[C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
-[iostream Programlaması](../standard-library/iostream-programming.md)<br/>
-[iostreams Kuralları](../standard-library/iostreams-conventions.md)<br/>
+[Üst bilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md)\
+[C++ Standart kitaplıkta Iş parçacığı güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)\
+[iostream programlama](../standard-library/iostream-programming.md)\
+[iostreams Kuralları](../standard-library/iostreams-conventions.md)

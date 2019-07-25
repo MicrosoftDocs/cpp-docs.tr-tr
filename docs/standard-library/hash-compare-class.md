@@ -6,44 +6,44 @@ f1_keywords:
 helpviewer_keywords:
 - hash_compare class
 ms.assetid: d502bb59-de57-4585-beb9-00e3a998c0af
-ms.openlocfilehash: f535122b67f854b8b204664b829ce9da5fe3c6a6
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 399b412c41128f513cf01d1e034bad2bbc5ef79f
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62159827"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68448803"
 ---
 # <a name="hashcompare-class"></a>hash_compare Sınıfı
 
-Şablon sınıfı herhangi bir karma ilişkilendirilebilir kapsayıcılar tarafından kullanılabilen bir nesne tanımlayan — hash_map, hash_multimap, hash_set, veya hash_multiset — varsayılan olarak **nitelikler** sipariş ve içerdikleri öğelerin karma parametre nesnesi .
+Şablon sınıfı, içerdikleri öğeleri sıralamak ve karma hale getirmek için varsayılan **nitelikler** parametre nesnesi olarak, karma ilişkilendirilebilir kapsayıcılar (hash_map, hash_multimap, hash_set veya hash_multiset) tarafından kullanılabilen bir nesneyi tanımlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
-hash_compare sınıfı {nitelikler comp; ortak: const size_t bucket_size = 4; const size_t min_buckets = 8; hash_compare() hash_compare (nitelikler pred); size_t operator() (const anahtar & anahtarı) const; bool operator() (const anahtar & key1, key2 & const anahtarını) const;};
+Class hash_compare {nitelikler comp; public: const size_t bucket_size = 4; const size_t min_buckets = 8; hash_compare (); hash_compare (nitelikler Pred); size_t işleci () (const Key & Key) const; bool işleci () (const Key & KEY1, const Key & key2) const;};
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bir karma özellikleri nesnesinin türü her karma seçimin ilişkili kapsayıcısı depolar `Traits` (şablon parametresi). Hash_compare seçerek belirli işlevler ve nesneler geçersiz kılmak için bir alt uzmanlaşması bir sınıf türetebilirsiniz veya belirli en düşük gereksinimleri karşılıyorsa bu sınıfın kendi sürümü sağlayabilirsiniz. Özellikle, bir nesne hash_comp türü için `hash_compare<Key, Traits>`, aşağıdaki davranış göre yukarıdaki kapsayıcı gereklidir:
+Her karma ilişkilendirilebilir kapsayıcı, türünde `Traits` bir karma nitelikleri nesnesi depolar (bir şablon parametresi). Belirli işlevleri ve nesneleri seçmeli olarak geçersiz kılmak için bir hash_compare uzmanından bir sınıf türetebilirsiniz veya belirli minimum gereksinimleri karşıladıysanız bu sınıfın kendi sürümünü sağlayabilirsiniz. Özellikle, türünde `hash_compare<Key, Traits>`bir nesne hash_comp için aşağıdaki davranış yukarıdaki kapsayıcılar için gereklidir:
 
-- Tüm değerler için `key` türü `Key`, çağrı **hash_comp**(`key`) türünde bir değerler dağıtımı verir ve karma işlevi olarak görev yapar `size_t`. Hash_compare tarafından sağlanan işlevi döndürür `key`.
+- Türündeki `key` `size_t` `key`tüm değerler için, hash_comp () çağrısı bir karma işlevi olarak işlev görür, bu, türü değerlerinin bir dağılımını verir. `Key` Hash_compare tarafından sağlanan işlev döndürür `key`.
 
-- Herhangi bir değer için `key1` türü `Key` metninden önce `key2` sırayla ve aynı karma değeri (karma işlev tarafından döndürülen değer), **hash_comp**(`key2`, `key1`) yanlış. İşlev türünün değerleri üzerinde sıralama toplam zorunlu tuttukları `Key`. Hash_compare tarafından sağlanan işlevi döndürür *comp*(`key2`, `key1`) `,` burada *comp* depolanan bir nesne türünün `Traits` ne zaman belirtin, Nesne hash_comp oluşturun. Varsayılan `Traits` parametre türü `less<Key>`, sıralama anahtarı değeri hiçbir zaman azaltabilirsiniz.
+- Dizide `key1` `key2` yer `Key` alan ve aynı karma değerine (karma işlevi tarafından döndürülen değer) sahip olan herhangi bir değer için, **hash_comp**(`key2`, `key1`) false olur. İşlev, türündeki `Key`değerlere toplam bir sıralama getirmelidir. Hash_compare tarafından sağlanan işlev, hash_comp nesnesini oluştururken belirtebileceğiniz `key1`bir saklı  `Traits` nesne olan *comp*(`key2`,) `,` döndürür. Varsayılan `Traits` parametre türü `less<Key>`için sıralama anahtarları değerde hiçbir şekilde azalmayın.
 
-- Tamsayı sabiti `bucket_size` ", kapsayıcı aşmayan denemelisiniz demet başına" (karma tablo girişi) öğelerin ortalama sayısını belirtir. Sıfırdan büyük olmalıdır. Hash_compare tarafından sağlanan değer 4'tür.
+- Tamsayı sabiti `bucket_size` , kapsayıcının aşmamak için gereken ortalama öğe sayısını "demet" (karma tablo girişi) başına belirler. Sıfırdan büyük olmalıdır. Hash_compare tarafından sağlanan değer 4 ' dir.
 
-- Tamsayı sabiti `min_buckets` karma tablosundan korumak için demet en az sayısını belirtir. Bir güç iki ve sıfırdan büyük olmalıdır. Hash_compare tarafından sağlanan değer 8'dir.
+- Tamsayı sabiti `min_buckets` , karma tablosunda korunacak en düşük demet sayısını belirtir. İki ve sıfırdan büyük bir üssü olmalıdır. Hash_compare tarafından sağlanan değer 8 ' dir.
 
 ## <a name="example"></a>Örnek
 
-Örnekler için bkz: [hash_map::hash_map](../standard-library/hash-map-class.md#hash_map), [hash_multimap::hash_multimap](../standard-library/hash-multimap-class.md#hash_multimap), [hash_set::hash_set](../standard-library/hash-set-class.md#hash_set), ve [hash_multiset::hash_multiset](../standard-library/hash-multiset-class.md#hash_multiset), bildirmek ve hash_compare kullanma örnekleri için.
+Hash_set bildirme ve kullanma örnekleri için bkz. [hash_map:: hash_map](../standard-library/hash-map-class.md#hash_map), [hash_multimap:: hash_multimap](../standard-library/hash-multimap-class.md#hash_multimap), [hash_set:: hash_multiset](../standard-library/hash-set-class.md#hash_set)ve hash_multiset [:: hash_compare](../standard-library/hash-multiset-class.md#hash_multiset)örnekleri.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** \<hash_map >
+**Üst bilgi:** \<hash_map >
 
-**Namespace:** stdext
+**Ad alanı:** stdext
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
-[C++ Standart Kitaplığı Başvurusu](../standard-library/cpp-standard-library-reference.md)<br/>
+[C++ Standart kitaplıkta Iş parçacığı güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)\
+[C++ Standart Kitaplığı Başvurusu](../standard-library/cpp-standard-library-reference.md)

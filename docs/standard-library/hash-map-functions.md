@@ -5,25 +5,25 @@ f1_keywords:
 - hash_map/std::swap
 - hash_map/std::swap (hash_map)
 ms.assetid: 28748cd0-71f7-41b9-b068-579183645fba
-ms.openlocfilehash: dae2c47ef3b84247ab1747e37719a23b220b5d08
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: efaa960d91c69d2157896adb4612c5dd36f00cff
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62159450"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68448741"
 ---
 # <a name="lthashmapgt-functions"></a>&lt;hash_map&gt; işlevleri
 
 |||
 |-|-|
-|[değiştirme](#swap)|[swap (hash_map)](#swap_hash_map)|
+|[Kur](#swap)|[swap (hash_map)](#swap_hash_map)|
 
-## <a name="swap_hash_map"></a>  Swap (hash_map)
+## <a name="swap_hash_map"></a>swap (hash_map)
 
 > [!NOTE]
-> Bu, API artık kullanılmıyor. Alternatif [unordered_map sınıfı](../standard-library/unordered-map-class.md).
+> Bu, API artık kullanılmıyor. Alternatif, [unordered_map sınıfıdır](../standard-library/unordered-map-class.md).
 
-İki hash_maps öğelerini birbiriyle değiştirir.
+İki hash_maps öğelerini değiş tokuş eder.
 
 ```cpp
 void swap(
@@ -33,22 +33,22 @@ void swap(
 
 ### <a name="parameters"></a>Parametreler
 
-*sağ*<br/>
-Öğeleri harita öğelerle ilişkili hash_map *sol*.
+*Right*\
+Öğeleri *, eşlemedeki*haritalarla birlikte değiş tokuş edilecek hash_map.
 
-*Sol*<br/>
-Öğeleri harita öğelerle ilişkili hash_map *doğru*.
+*tarafta*\
+Öğeleri haritanın *sağına*göre değiş tokuş edilecek hash_map.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Özel üye işlevini yürütmek için kapsayıcı sınıfı hash_map bir algoritma şablon işlevi olan `left.` [takas](../standard-library/basic-ios-class.md#swap)*(doğru*). İşlev şablonlarının kısmi derleyici tarafından sıralanması bir örneğini budur. Şablon işlevleri şablonu işlev çağrısı ile eşleşen benzersiz değil bir şekilde aşırı yüklendiğinde, derleyici en özel şablon işlevi sürümü seçin. Şablon işlevinin genel sürüm **şablon \<sınıfı T > void takas (T &, T &)**, algoritma üstbilgi dosyası tarafından atama çalışır ve yavaş bir işlemdir. Her bir kapsayıcıdaki özelleştirilmiş bir sürüm olarak kapsayıcı sınıfı iç gösterimine ile çalışabilir daha hızlıdır.
+Şablon işlevi, `left.` [değiştirme](../standard-library/basic-ios-class.md#swap) *(sağ*) üye işlevini yürütmek için hash_map kapsayıcı sınıfı üzerinde özelleştirilmiş bir algoritmadır. Bu, derleyici tarafından işlev şablonlarının kısmi sıralaması örneğidir. Şablon işlevleri, işlev çağrısı ile şablonla eşleşen bir şekilde aşırı yüklendiğinde, derleyici şablon işlevinin en özelleştirilmiş sürümünü seçer. Bu şablon işlevinin genel sürümü, algoritma üstbilgi **dosyasındaki \<t > void swap (t &, t &) şablon sınıfı**atama tarafından çalışır ve yavaş bir işlemdir. Kapsayıcı sınıfının iç temsili ile çalışabildiğinden, her kapsayıcıda özelleştirilmiş sürüm çok daha hızlıdır.
 
-## <a name="swap"></a>  değiştirme
+## <a name="swap"></a>Kur
 
 > [!NOTE]
-> Bu, API artık kullanılmıyor. Alternatif [unordered_multimap sınıfı](../standard-library/unordered-multimap-class.md).
+> Bu, API artık kullanılmıyor. Alternatif, [unordered_multimap sınıfıdır](../standard-library/unordered-multimap-class.md).
 
-İki hash_multimaps öğelerini birbiriyle değiştirir.
+İki hash_multimaps öğelerini değiş tokuş eder.
 
 ```cpp
 void swap(
@@ -58,16 +58,16 @@ void swap(
 
 ### <a name="parameters"></a>Parametreler
 
-*sağ*<br/>
-Öğeleri harita öğelerle ilişkili hash_multimap *sol*.
+*Right*\
+Öğeleri *, eşlemedeki*haritalarla birlikte değiş tokuş edilecek hash_multimap.
 
-*Sol*<br/>
-Öğeleri harita öğelerle ilişkili hash_multimap *doğru*.
+*tarafta*\
+Öğeleri haritanın *sağına*göre değiş tokuş edilecek hash_multimap.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Özel üye işlevini yürütmek için kapsayıcı sınıfı hash_multimap bir algoritma şablon işlevi olan `left.` [takas](../standard-library/hash-multimap-class.md#swap)*(doğru*`)`. İşlev şablonlarının kısmi derleyici tarafından sıralanması bir örneğini budur. Şablon işlevleri şablonu işlev çağrısı ile eşleşen benzersiz değil bir şekilde aşırı yüklendiğinde, derleyici en özel şablon işlevi sürümü seçin. Şablon işlevinin genel sürüm **şablon \<sınıfı T > void takas (T &, T &)**, algoritma üstbilgi dosyası tarafından atama çalışır ve yavaş bir işlemdir. Her bir kapsayıcıdaki özelleştirilmiş bir sürüm olarak kapsayıcı sınıfı iç gösterimine ile çalışabilir daha hızlıdır.
+Şablon işlevi `left.`, [değiştirme](../standard-library/hash-multimap-class.md#swap)üye işlevi için hash_multimap kapsayıcı sınıfı üzerinde özelleştirilmiş bir algoritmadır *(sağ*`)`. Bu, derleyici tarafından işlev şablonlarının kısmi sıralaması örneğidir. Şablon işlevleri, işlev çağrısı ile şablonla eşleşen bir şekilde aşırı yüklendiğinde, derleyici şablon işlevinin en özelleştirilmiş sürümünü seçer. Bu şablon işlevinin genel sürümü, algoritma üstbilgi **dosyasındaki \<t > void swap (t &, t &) şablon sınıfı**atama tarafından çalışır ve yavaş bir işlemdir. Kapsayıcı sınıfının iç temsili ile çalışabildiğinden, her kapsayıcıda özelleştirilmiş sürüm çok daha hızlıdır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[<hash_map>](../standard-library/hash-map.md)<br/>
+[<hash_map>](../standard-library/hash-map.md)

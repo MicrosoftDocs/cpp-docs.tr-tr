@@ -7,16 +7,16 @@ helpviewer_keywords:
 - common_type class
 - common_type
 ms.assetid: 02bc4e7b-c63d-49de-9f8a-511d3a5c1e7f
-ms.openlocfilehash: f627705109315d3fee84c1777390f00e1e2010ef
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 3605b34a2bfc50831c889976ac5ea884053bb642
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62405124"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68449490"
 ---
 # <a name="commontype-class"></a>common_type Sınıfı
 
-Bir veya daha fazla türleri ortak türünü belirler.
+Bir veya daha fazla türün ortak türünü belirler.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -43,15 +43,15 @@ struct common_type<T, U, V...> {
 
 ### <a name="parameters"></a>Parametreler
 
-Olan türlerinin listesi [tamamlamak türleri](../c-language/incomplete-types.md) veya void.
+[Tamamen türler](../c-language/incomplete-types.md) veya void olan türlerin listesi.
 
 ## <a name="remarks"></a>Açıklamalar
 
-`type` Parametresinde tüm türlerin listesi dönüştürülebileceği ortak tür üyesidir.
+`type` Üye, parametre listesindeki tüm türlerin dönüştürülebileceği ortak türdür.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki program, bazı doğru kullanım senaryolarını ve sonuçlar için testleri göstermektedir.
+Aşağıdaki program, sonuçlar için bazı doğru kullanım senaryolarını ve testlerini gösterir.
 
 ```cpp
 // Compile using cl.exe /EHsc
@@ -116,10 +116,10 @@ ClassType: true
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** \<type_traits >
+**Üst bilgi:** \<type_traits >
 
-**Namespace:** std
+**Ad alanı:** std
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[<type_traits>](../standard-library/type-traits.md)<br/>
+[<type_traits>](../standard-library/type-traits.md)

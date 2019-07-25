@@ -5,26 +5,26 @@ f1_keywords:
 - hash_set/std::operator!=
 - hash_set/std::operator==
 ms.assetid: 403d8e4e-0b3f-43fb-bc5a-8100c4f331c5
-ms.openlocfilehash: 901070731d372904ae297a5360ec0da78d179468
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 3900e9c6e4fb7f5a163279165a51b440d138a8e5
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62405033"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68452027"
 ---
 # <a name="lthashsetgt-operators"></a>&lt;hash_set&gt; işleçleri
 
 ||||
 |-|-|-|
 |[operator!=](#op_neq)|[işleç! = (hash_multiset)](#op_neq_hash_multiset)|[operator==](#op_eq_eq)|
-|[işleç == (hash_multiset)](#op_eq_eq_hash_multiset)|
+|[operator = = (hash_multiset)](#op_eq_eq_hash_multiset)|
 
-## <a name="op_neq"></a>  işleç! =
+## <a name="op_neq"></a>işleç! =
 
 > [!NOTE]
-> Bu, API artık kullanılmıyor. Alternatif [unordered_set sınıfı](../standard-library/unordered-set-class.md).
+> Bu, API artık kullanılmıyor. Alternatif, [unordered_set sınıfıdır](../standard-library/unordered-set-class.md).
 
-İşlecin sol tarafındaki hash_set nesne işlecin sağ tarafındaki hash_set nesneye eşit olup olmadığını sınar.
+İşlecin sol tarafındaki hash_set nesnesinin, sağ taraftaki hash_set nesnesine eşit olup olmadığını sınar.
 
 ```cpp
 bool operator!=(const hash_set <Key, Traits, Allocator>& left, const hash_set <Key, Traits, Allocator>& right);
@@ -32,21 +32,21 @@ bool operator!=(const hash_set <Key, Traits, Allocator>& left, const hash_set <K
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*<br/>
-Bir nesne türü `hash_set`.
+*tarafta*\
+Türünde `hash_set`bir nesne.
 
-*sağ*<br/>
-Bir nesne türü `hash_set`.
+*Right*\
+Türünde `hash_set`bir nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**doğru** hash_sets eşit; değilse, **false** hash_sets eşitse.
+hash_sets eşitse **true** ; hash_sets eşitse **false** .
 
 ### <a name="remarks"></a>Açıklamalar
 
-Hash_set nesneleri arasında karşılaştırma öğeleri arasında ikili bir karşılaştırma temel alır. Bunlar aynı sayıda öğe varsa ve ilgili öğeleri aynı değerlere sahip iki hash_sets eşit olur. Aksi takdirde, eşit oldukları.
+Hash_set nesneleri arasındaki karşılaştırma, öğeleri arasındaki ikili karşılaştırmayı temel alır. İki hash_sets aynı sayıda öğe varsa ve ilgili öğeleri aynı değere sahip olduğunda eşittir. Aksi takdirde, bunlar eşit değildir.
 
-Üyeleri [< hash_map >](../standard-library/hash-map.md) ve [< hash_set >](../standard-library/hash-set.md) üstbilgi dosyalar, [stdext Namespace](../standard-library/stdext-namespace.md).
+[< Hash_map >](../standard-library/hash-map.md) ve [< hash_set >](../standard-library/hash-set.md) başlık dosyalarının üyeleri, [stdext ad alanında](../standard-library/stdext-namespace.md)bulunur.
 
 ### <a name="example"></a>Örnek
 
@@ -87,12 +87,12 @@ The hash_sets hs1 and hs2 are not equal.
 The hash_sets hs1 and hs3 are equal.
 ```
 
-## <a name="op_eq_eq"></a>  işleç ==
+## <a name="op_eq_eq"></a>işleç = =
 
 > [!NOTE]
-> Bu, API artık kullanılmıyor. Alternatif [unordered_set sınıfı](../standard-library/unordered-set-class.md).
+> Bu, API artık kullanılmıyor. Alternatif, [unordered_set sınıfıdır](../standard-library/unordered-set-class.md).
 
-İşlecin sol tarafındaki hash_set nesnesinin işlecin sağ tarafındaki hash_set nesneye eşit olup olmadığını sınar.
+İşlecin sol tarafındaki hash_set nesnesinin, sağ taraftaki hash_set nesnesine eşit olup olmadığını sınar.
 
 ```cpp
 bool operator!==(const hash_set <Key, Traits, Allocator>& left, const hash_set <Key, Traits, Allocator>& right);
@@ -100,19 +100,19 @@ bool operator!==(const hash_set <Key, Traits, Allocator>& left, const hash_set <
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*<br/>
-Bir nesne türü `hash_set`.
+*tarafta*\
+Türünde `hash_set`bir nesne.
 
-*sağ*<br/>
-Bir nesne türü `hash_set`.
+*Right*\
+Türünde `hash_set`bir nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**doğru** hash_set işlecinin sol tarafındaki ise, aksi takdirde işlecin sağ tarafındaki hash_set eşit **false**.
+işlecin sol tarafındaki hash_set işlecin sağ tarafındaki hash_set öğesine eşitse **true** ; Aksi halde **yanlış**.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Hash_set nesneleri arasında karşılaştırma öğeleri üzerinde bir ikili karşılaştırma temel alır. Bunlar aynı sayıda öğe varsa ve ilgili öğeleri aynı değerlere sahip iki hash_sets eşit olur. Aksi takdirde, eşit oldukları.
+Hash_set nesneleri arasındaki karşılaştırma, öğelerinin ikili bir karşılaştırmasını temel alır. İki hash_sets aynı sayıda öğe varsa ve ilgili öğeleri aynı değere sahip olduğunda eşittir. Aksi takdirde, bunlar eşit değildir.
 
 ### <a name="example"></a>Örnek
 
@@ -153,12 +153,12 @@ The hash_sets s1 and s2 are not equal.
 The hash_sets s1 and s3 are equal.
 ```
 
-## <a name="op_neq_hash_multiset"></a>  işleç! = (hash_multiset)
+## <a name="op_neq_hash_multiset"></a>işleç! = (hash_multiset)
 
 > [!NOTE]
-> Bu, API artık kullanılmıyor. Alternatif [unordered_set sınıfı](../standard-library/unordered-set-class.md).
+> Bu, API artık kullanılmıyor. Alternatif, [unordered_set sınıfıdır](../standard-library/unordered-set-class.md).
 
-İşlecin sol tarafındaki hash_multiset nesne işlecin sağ tarafındaki hash_multiset nesneye eşit olup olmadığını sınar.
+İşlecin sol tarafındaki hash_multiset nesnesinin, sağ taraftaki hash_multiset nesnesine eşit olup olmadığını sınar.
 
 ```cpp
 bool operator!=(const hash_multiset <Key, Traits, Allocator>& left, const hash_multiset <Key, Traits, Allocator>& right);
@@ -166,19 +166,19 @@ bool operator!=(const hash_multiset <Key, Traits, Allocator>& left, const hash_m
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*<br/>
-Bir nesne türü `hash_multiset`.
+*tarafta*\
+Türünde `hash_multiset`bir nesne.
 
-*sağ*<br/>
-Bir nesne türü `hash_multiset`.
+*Right*\
+Türünde `hash_multiset`bir nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**doğru** hash_multisets eşit; değilse, **false** hash_multisets eşitse.
+hash_multisets eşitse **true** ; hash_multisets eşitse **false** .
 
 ### <a name="remarks"></a>Açıklamalar
 
-Hash_multiset nesneleri arasında karşılaştırma öğeleri arasında ikili bir karşılaştırma temel alır. Bunlar aynı sayıda öğe varsa ve ilgili öğeleri aynı değerlere sahip iki hash_multisets eşit olur. Aksi takdirde, eşit oldukları.
+Hash_multiset nesneleri arasındaki karşılaştırma, öğeleri arasındaki ikili karşılaştırmayı temel alır. İki hash_multisets aynı sayıda öğe varsa ve ilgili öğeleri aynı değere sahip olduğunda eşittir. Aksi takdirde, bunlar eşit değildir.
 
 ### <a name="example"></a>Örnek
 
@@ -219,12 +219,12 @@ The hash_multisets hs1 and hs2 are not equal.
 The hash_multisets hs1 and hs3 are equal.
 ```
 
-## <a name="op_eq_eq_hash_multiset"></a>  işleç == (hash_multiset)
+## <a name="op_eq_eq_hash_multiset"></a>operator = = (hash_multiset)
 
 > [!NOTE]
-> Bu, API artık kullanılmıyor. Alternatif [unordered_set sınıfı](../standard-library/unordered-set-class.md).
+> Bu, API artık kullanılmıyor. Alternatif, [unordered_set sınıfıdır](../standard-library/unordered-set-class.md).
 
-İşlecin sol tarafındaki hash_multiset nesnesinin işlecin sağ tarafındaki hash_multiset nesneye eşit olup olmadığını sınar.
+İşlecin sol tarafındaki hash_multiset nesnesinin, sağ taraftaki hash_multiset nesnesine eşit olup olmadığını sınar.
 
 ```cpp
 bool operator!==(const hash_multiset <Key, Traits, Allocator>& left, const hash_multiset <Key, Traits, Allocator>& right);
@@ -232,19 +232,19 @@ bool operator!==(const hash_multiset <Key, Traits, Allocator>& left, const hash_
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*<br/>
-Bir nesne türü `hash_multiset`.
+*tarafta*\
+Türünde `hash_multiset`bir nesne.
 
-*sağ*<br/>
-Bir nesne türü `hash_multiset`.
+*Right*\
+Türünde `hash_multiset`bir nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**doğru** hash_multiset işlecinin sol tarafındaki ise, aksi takdirde işlecin sağ tarafındaki hash_multiset eşit **false**.
+işlecin sol tarafındaki hash_multiset işlecin sağ tarafındaki hash_multiset öğesine eşitse **true** ; Aksi halde **yanlış**.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Hash_multiset nesneleri arasında karşılaştırma öğeleri üzerinde bir ikili karşılaştırma temel alır. Bunlar aynı sayıda öğe varsa ve ilgili öğeleri aynı değerlere sahip iki hash_multisets eşit olur. Aksi takdirde, eşit oldukları.
+Hash_multiset nesneleri arasındaki karşılaştırma, öğelerinin ikili bir karşılaştırmasını temel alır. İki hash_multisets aynı sayıda öğe varsa ve ilgili öğeleri aynı değere sahip olduğunda eşittir. Aksi takdirde, bunlar eşit değildir.
 
 ### <a name="example"></a>Örnek
 
@@ -287,4 +287,4 @@ The hash_multisets s1 and s2 are equal.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[<hash_set>](../standard-library/hash-set.md)<br/>
+[<hash_set>](../standard-library/hash-set.md)

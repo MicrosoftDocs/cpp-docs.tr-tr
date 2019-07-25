@@ -17,18 +17,18 @@ helpviewer_keywords:
 - programming [C++], iostream programming
 - text input [C++]
 ms.assetid: 1aa0a0be-4dd8-4dac-ac1f-d2afdaeab769
-ms.openlocfilehash: 56b6d2a69372c9c8232823feb085780c38c00f0e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 883050c8ad838d642156dc6dac4c779d2dd3420a
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62385166"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68449060"
 ---
 # <a name="iostream-programming"></a>iostream Programlaması
 
-Bu bölümde bir [Genel Açıklama](../standard-library/what-a-stream-is.md) , iostream sınıfları ve ardından açıklar [çıkış akışlarına](../standard-library/output-streams.md), [girdi akışı](../standard-library/input-streams.md), ve [giriş/çıkış akışları](../standard-library/input-output-streams.md). Bölümün sonuna Gelişmiş iostream programlaması hakkında bilgi sağlar.
+Bu bölüm, iostream sınıflarının [genel bir açıklamasını](../standard-library/what-a-stream-is.md) sağlar ve ardından [Çıkış akışlarını](../standard-library/output-streams.md), [giriş akışlarını](../standard-library/input-streams.md)ve [giriş/çıkış akışlarını](../standard-library/input-output-streams.md)açıklar. Bölümün sonunda gelişmiş iostream programlaması hakkında bilgi sağlanır.
 
-Olduğundan ayrıca bir tartışma [C++ Standart kitaplığında iş parçacığı güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md) ve [stdext ad alanı](../standard-library/stdext-namespace.md).
+Ayrıca, [ C++ standart kitaplıkta](../standard-library/thread-safety-in-the-cpp-standard-library.md) ve [stdext ad alanında](../standard-library/stdext-namespace.md)iş parçacığı güvenliği hakkında bir tartışma vardır.
 
 ## <a name="in-this-section"></a>Bu Bölümde
 
@@ -38,11 +38,11 @@ Olduğundan ayrıca bir tartışma [C++ Standart kitaplığında iş parçacığ
 
 [Giriş Akışları](../standard-library/input-streams.md)
 
-[Giriş/Çıkış akışları](../standard-library/input-output-streams.md)
+[Giriş/çıkış akışları](../standard-library/input-output-streams.md)
 
 [Bağımsız Değişkenlerle Birlikte Özel Manipülatörler](../standard-library/custom-manipulators-with-arguments.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C++ Standart Kitaplığı](../standard-library/cpp-standard-library-reference.md)<br/>
-[iostreams Kuralları](../standard-library/iostreams-conventions.md)<br/>
+[C++Standart Kitaplık](../standard-library/cpp-standard-library-reference.md)\
+[iostreams Kuralları](../standard-library/iostreams-conventions.md)

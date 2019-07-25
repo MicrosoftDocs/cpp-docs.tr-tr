@@ -7,22 +7,22 @@ helpviewer_keywords:
 - <bitset> header
 - bitset header
 ms.assetid: af30a9b9-489e-46e3-9d29-5f3ea07ae6dc
-ms.openlocfilehash: b0a5a01ca04d01d9535291e3c4a254143bc09e5a
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.openlocfilehash: 5de13e66523ee5a5dbcb4c2c54d38037909a4c95
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68243306"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68449702"
 ---
 # <a name="ltbitsetgt"></a>&lt;bitset&gt;
 
-Şablon sınıfı bitset ve temsil eden ve sabit boyutlu dizileri bit işlemek için iki destekleyici şablon işlevleri tanımlar.
+Bit kümesini ve sabit boyutlu bit dizilerini göstermek ve işlemek için bir bit kümesi ve iki destekleyici şablon işlevi tanımlar.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** \<bitset >
+**Üst bilgi:** \<bitset >
 
-**Namespace:** std
+**Ad alanı:** std
 
 ## <a name="members"></a>Üyeler
 
@@ -30,19 +30,19 @@ ms.locfileid: "68243306"
 
 |||
 |-|-|
-|[işleç &](../standard-library/bitset-operators.md#op_amp)|Bit düzeyinde bir AND iki bitsets arasında gerçekleştirir.|
-|[işleç <\<](../standard-library/bitset-operators.md#op_lt_lt)|Bit sırayı bir metin temsili standart çıkış akışına ekler.|
-|[İşleç >>](../standard-library/bitset-operators.md#op_gt_gt)|Standart giriş akışı bit sırayı bir metin temsilini ekler.|
-|[operator ^](../standard-library/bitset-operators.md#op_xor)|Gerçekleştiren bir bit düzeyinde DIŞLAMALI OR iki bitsets arasında.|
-|[operator&#124;](../standard-library/bitset-operators.md#op_or)|Bit düzeyinde bir veya iki bitsets arasında gerçekleştirir.|
+|[işleç &](../standard-library/bitset-operators.md#op_amp)|Bit düzeyinde ve iki bit kümesi arasında çalışır.|
+|[işleç <\<](../standard-library/bitset-operators.md#op_lt_lt)|Standart çıkış akışına bit dizisinin metin gösterimini ekler.|
+|[işleç > >](../standard-library/bitset-operators.md#op_gt_gt)|Standart giriş akışına bit dizisinin metin gösterimini ekler.|
+|[işleç ^](../standard-library/bitset-operators.md#op_xor)|İki bitlik bir DıŞLAMALı veya iki bit kümesi arasında çalışır.|
+|[operator&#124;](../standard-library/bitset-operators.md#op_or)|Bit düzeyinde veya iki bit kümesi arasında çalışır.|
 
 ### <a name="classes"></a>Sınıflar
 
 |||
 |-|-|
-|[bitset](../standard-library/bitset-class.md)|Şablon sınıfı depolayan bir sabit bit sayısı kadar bir dizi öğeleri veya koşulları bayrakları tutma kompakt bir şekilde sağlayan oluşan bir dizi nesnesi türünü açıklar.|
+|[bitset](../standard-library/bitset-class.md)|Şablon sınıfı, bir öğe veya koşul kümesi için bayrakları tutmanın kompakt bir yolunu sağlayan sabit bir bit sayısından oluşan bir diziyi depolayan bir nesne türünü tanımlar.|
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Üstbilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md)<br/>
-[C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
+[Üst bilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md)\
+[C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)

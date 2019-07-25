@@ -14,16 +14,16 @@ helpviewer_keywords:
 - std::seed_seq [C++], size
 - std::seed_seq [C++], param
 ms.assetid: cba114f7-9ac6-4f2f-b773-9c84805401d6
-ms.openlocfilehash: 5309042e9f26875e0cf5c2024cc74910fef21148
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: d2dc561a9160188507a61ec3734cfbf9f3e74199
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62295727"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68450503"
 ---
 # <a name="seedseq-class"></a>seed_seq Sınıfı
 
-Rastgele sayı altyapısı için rastgele bir tohum sağlayabilirsiniz işaretsiz tamsayı değerleri bir vektör depolar.
+Rastgele sayı altyapısı için rastgele bir çekirdek sağlayabilecek işaretsiz tamsayı değerlerinin bir vektörünü depolar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -62,7 +62,7 @@ public:
 typedef unsigned int result_type;
 ```
 
-Çekirdek dizisinin öğelerinin türü. Bir 32-bit işaretsiz tamsayı türü.
+Çekirdek dizisinin öğelerinin türü. 32 bitlik işaretsiz bir tamsayı türü.
 
 ## <a name="constructors"></a>Oluşturucular
 
@@ -70,27 +70,27 @@ typedef unsigned int result_type;
 seed_seq();
 ```
 
-Varsayılan Oluşturucu boş bir iç sıra olmasını başlatır.
+Varsayılan Oluşturucu, boş bir iç diziye sahip olacak şekilde başlatılır.
 
 ```cpp
 template<class T>
 seed_seq(initializer_list<T> initlist);
 ```
 
-Kullanan `initlist` iç sırasını ayarlamak için.
-`T` bir tamsayı türü olmalıdır.
+İç `initlist` diziyi ayarlamak için kullanır.
+`T`bir tamsayı türü olmalıdır.
 
 ```cpp
 template<class InputIterator>
 seed_seq(InputIterator begin, InputIterator end);
 ```
 
-Sağlanan giriş yineleyici aralıktaki tüm öğeleri kullanılarak iç dizisini başlatır.
-`iterator_traits<InputIterator>::value_type` bir tamsayı türü olmalıdır.
+Belirtilen giriş Yineleyici aralığındaki tüm öğeleri kullanarak iç diziyi başlatır.
+`iterator_traits<InputIterator>::value_type`bir tamsayı türü olmalıdır.
 
 ## <a name="members"></a>Üyeler
 
-### <a name="generating-functions"></a>İşlev oluşturma
+### <a name="generating-functions"></a>Işlev oluşturma
 
 ```cpp
 template<class RandomAccessIterator>
@@ -98,8 +98,8 @@ void generate(RandomAccessIterator begin,
           RandomAccessIterator end);
 ```
 
-Bir iç algoritmaya kullanarak sağlanan dizisinin doldurur. Bu algoritma, iç dizisiyle etkilenen `seed_seq` başlatıldı.
-Hiçbir şey yapmaz, `begin == end`.
+İç algoritma kullanarak, belirtilen dizinin öğelerini doldurur. Bu algoritma, başlatıldığı iç sıra `seed_seq` tarafından etkilenir.
+İse `begin == end`hiçbir şey yapmaz.
 
 ### <a name="property-functions"></a>Özellik İşlevleri
 
@@ -114,11 +114,11 @@ template<class OutputIterator>
 void param(OutputIterator dest) const;
 ```
 
-Çıkış yineleyici iç sıra kopyalar `dest`.
+İç diziyi çıkış yineleyiciye `dest`kopyalar.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki kod örneği, üç oluşturucular sınayan ve oluşan bir çıktı üretir `seed_seq` örneklerini bir diziye atandığında. Kullanan bir örnek için `seed_seq` rastgele sayı üreticisinin ile bkz [ \<rastgele >](../standard-library/random.md).
+Aşağıdaki kod örneği, üç Oluşturucu alıştırmaları sağlar ve bir diziye atandığında elde edilen `seed_seq` örneklerden çıkış üretir. Rastgele sayı Oluşturucu ile kullanan `seed_seq` bir örnek için bkz [ \<. Random >](../standard-library/random.md).
 
 ```cpp
 #include <iostream>
@@ -187,14 +187,14 @@ Generating a sequence of 5 elements into an array:
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu sınıfın üye işlevleri, özel durum oluşturması beklenmiyor.
+Bu sınıfın üye işlevleri özel durum oluşturmaz.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** \<rastgele >
+**Üst bilgi:** \<rastgele >
 
-**Namespace:** std
+**Ad alanı:** std
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[\<rastgele >](../standard-library/random.md)<br/>
+[\<Rastgele >](../standard-library/random.md)

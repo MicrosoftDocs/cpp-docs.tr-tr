@@ -10,16 +10,16 @@ helpviewer_keywords:
 - std::result_of_t
 - std::result_of::type
 ms.assetid: 5374a096-4b4a-4712-aa97-6852c5cdd6be
-ms.openlocfilehash: f60a3ef6528da33fd1117fc940e961e9fe0987df
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 5a3265cfe4b2629bf02925ea6e3eeb0c4acb1e0e
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62185912"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68451209"
 ---
 # <a name="resultof-class"></a>result_of Sınıfı
 
-Belirtilen bağımsız değişken türleri alan çağrılabilir türü dönüş türünü belirler. C ++ 17'de kullanımdan C ++ 14, eklendi.
+Belirtilen bağımsız değişken türlerini alan çağrılabilir türün dönüş türünü belirler. C++ 14 ' te eklenmiştir ve C++ 17 ' de kullanımdan kaldırılmıştır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -37,23 +37,23 @@ template<class T>
 
 ### <a name="parameters"></a>Parametreler
 
-*fn*<br/>
-Sorgu için çağrılabilir türü.
+*FN*\
+Sorgulanacak çağrılabilir tür.
 
-*ArgTypes*<br/>
-Bağımsız değişken listesi sorguya çağrılabilir türüne türlerini.
+*ArgTypes*\
+Sorgu yapılacak çağrılabilir türe bağımsız değişken listesinin türleri.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Sonuç türü derleme zamanında belirlemek için bu şablonu kullanın `Fn`(`ArgTypes`), burada *Fn* çağrılabilir türü, işlev başvurusu veya içinde türlerininbirbağımsızdeğişkenlistesikullanılarakçağrılançağrılabilirtürünebaşvuru *ArgTypes*. `type` Şablon sınıfının üye adları sonuç türü `decltype(std::invoke(declval<Fn>(), declval<ArgTypes>()...))` varsa değerlendirilmemiş ifade `std::invoke(declval<Fn>(), declval<ArgTypes>()...)` doğru oluşturulmamış. Aksi takdirde, Şablon sınıfı üyesi yok `type`. Türü *Fn* ve tüm türleri parametre paketi *ArgTypes* tam türler olmalıdır **void**, veya bilinmeyen bağlı bir dizi. Sunulmasıyla kullanım dışı [invoke_result](invoke-result-class.md) içinde C ++ 17.
+Bu şablonu, derleme zamanında `Fn`(), *FN* 'nin çağrılabilir tür, işlev başvurusu veya çağrılabilir türe başvuru olarak, *ArgTypes*içindeki türlerin bir bağımsız değişken listesi kullanılarak çağrılan (`ArgTypes`), bu şablonu kullanın. Şablon sınıfının `decltype(std::invoke(declval<Fn>(), declval<ArgTypes>()...))` `std::invoke(declval<Fn>(), declval<ArgTypes>()...)`üyesi, değerlendirilmemiştir ifadesi doğru biçimlendirilmişse sonuç türünü adlandırır. `type` Aksi halde, şablon sınıfının üyesi `type`yoktur. Tür *FN* ve parametre paketi *ArgTypes* içindeki tüm türler, bilinmeyen sınırlı sayıda tür, **void**veya diziler olmalıdır. C++ 17 ' de [invoke_result](invoke-result-class.md) kullanımı kullanım dışı.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** \<type_traits >
+**Üst bilgi:** \<type_traits >
 
-**Namespace:** std
+**Ad alanı:** std
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[<type_traits>](../standard-library/type-traits.md)<br/>
-[invoke_result sınıfı](invoke-result-class.md)<br/>
+[< type_traits >](../standard-library/type-traits.md)\
+[invoke_result sınıfı](invoke-result-class.md)

@@ -20,16 +20,16 @@ helpviewer_keywords:
 - std::sub_match [C++], iterator
 - std::sub_match [C++], value_type
 ms.assetid: 804e2b9e-d16a-4c4c-ac60-024e0b2dd0e8
-ms.openlocfilehash: e0edfbc69d6cba6ee352a34406860e4c999dc3a7
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 07ec6f0dc9daaec19fa97a6220da4d4ea93b254b
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62412221"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68447424"
 ---
 # <a name="submatch-class"></a>sub_match Sınıfı
 
-Bir alt eşleşme açıklar.
+Bir alt eşleşme tanımlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -41,43 +41,43 @@ class sub_match
 
 ## <a name="parameters"></a>Parametreler
 
-*BidIt*<br/>
-Alt eşleşmeleri için yineleyici türü.
+*BidIt*\
+Alt eşleşmeler için Yineleyici türü.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Şablon sınıfı, bir çağrıda bir yakalama grubu eşleşen karakter dizisi atayan bir nesneyi tanımlayan [regex_match](../standard-library/regex-functions.md#regex_match) veya [regex_search](../standard-library/regex-functions.md#regex_search). Türündeki nesneler [match_results sınıfı](../standard-library/match-results-class.md) bu nesnelerin her aramaya kullanıldı ve normal ifadedeki yakalama grubu için bir dizi tutun.
+Şablon sınıfı, [regex_match](../standard-library/regex-functions.md#regex_match) veya [regex_search](../standard-library/regex-functions.md#regex_search)için bir çağrıda bir yakalama grubuyla eşleşen bir karakter dizisini belirten bir nesneyi tanımlar. [Match_results sınıfı](../standard-library/match-results-class.md) türündeki nesneler, aramada kullanılan Normal ifadedeki her bir yakalama grubu için bir tane olmak üzere bu nesnelerin bir dizisini tutar.
 
-Yakalama grubu olmadıysa nesnenin veri üyesi eşleşen `matched` false ve iki yineleyici tutan `first` ve `second` (temelden devralınan `std::pair`) eşit. Yakalama grubu eşleştirildi, `matched` doğru yineleyici tutan `first` yakalama grubu ve yineleyici eşleştirilen hedef dizideki ilk karaktere işaret `second` hedef geçmiş son karakter bir konuma işaret eder Yakalama grubuyla eşleşen dizisi. Sıfır uzunluklu için üyesi ile eşleşmesi gerektiğini unutmayın `matched` tutan true, iki yineleyici eşit olur ve her ikisi de eşleşmeyi konumunu işaret edecek.
+`matched` Yakalama grubu eşleştirilmamışsa, nesnenin veri üyesi yanlış olur ve iki yineleyiciler `first` ve `second` (tabandan `std::pair`devralınır) eşittir. Yakalama grubu eşleştirildiği `matched` takdirde, yineleyici `first` , yakalama grubuyla eşleşen hedef dizideki ilk karaktere işaret eder ve yineleyici `second` , hedefteki son karakteri aşan bir konumu işaret eder yakalama grubuyla eşleşen sıra. Üyenin `matched` , sıfır uzunluklu eşleşme doğru tuttuğunda, iki yineleyicinin eşit olacağını ve ikisinin de eşleşme konumunu işaret edecek olduğunu unutmayın.
 
-Sıfır uzunluklu eşleşen bir onaylama yalnızca bir yakalama grubu oluşur veya sıfır yineleme sağlayan bir tekrarını oluşabilir. Örneğin:
+Bir yakalama grubu yalnızca bir onaylama işlemi ya da sıfır tekrarda izin veren bir tekrardan oluştuğunda sıfır uzunluklu eşleşme meydana gelebilir. Örneğin:
 
-"^" hedef dizisiyle eşleşir "a"; `sub_match` tutan yineleyiciler yakalama grubu 0 karşılık gelen nesne hem de dizideki ilk karakter'ın üzerine gelin.
+"^", "a" hedef dizisiyle eşleşir; yakalama grubu 0 ' a karşılık gelen nesne,herikisidedizidekiilkkarakteriişaretedenyineleyicilerbarındırır.`sub_match`
 
-"b(a*) b", "bb" hedef dizisiyle eşleşir `sub_match` tutan yineleyiciler yakalama grubu 1 için karşılık gelen nesne hem de ikinci karakter dizisi'nın üzerine gelin.
+"b (a *) b", "BB" hedef dizisiyle eşleşir; yakalama grubu 1 ' e karşılık gelen nesne,herikisidedizidekiikincikaraktereişaretedenyineleyicilerbarındırır.`sub_match`
 
 ### <a name="typedefs"></a>Tür tanımları
 
 |Tür adı|Açıklama|
 |-|-|
-|[difference_type](#difference_type)|Bir yineleyicinin fark türü.|
-|[Yineleyici](#iterator)|Bir yineleyici türü.|
+|[difference_type](#difference_type)|Yineleyici farkının türü.|
+|[iden](#iterator)|Yineleyicinin türü.|
 |[value_type](#value_type)|Öğenin türü.|
 
 ### <a name="member-functions"></a>Üye işlevleri
 
 |Üye işlevi|Açıklama|
 |-|-|
-|[Karşılaştırma](#compare)|Alt eşleşme karşı bir sıralı karşılaştırma.|
-|[Uzunluğu](#length)|Bir alt eşleşme uzunluğunu döndürür.|
-|[eşleşen](#matched)|Eşleşme başarılı olup olmadığını gösterir.|
-|[str](#str)|Alt eşleşme bir dizeye dönüştürür.|
+|[Karşılaştır](#compare)|Alt eşleşmeyi bir diziye göre karşılaştırın.|
+|[length](#length)|Alt eşleşmenin uzunluğunu döndürür.|
+|[eşleşen](#matched)|Eşleşmenin başarılı olup olmadığını gösterir.|
+|[üstbilgisine](#str)|Alt eşleşmeyi bir dizeye dönüştürür.|
 
 ### <a name="operators"></a>İşleçler
 
 |İşleç|Açıklama|
 |-|-|
-|[işleç basic_string < value_type >](#op_basic_string_lt_value_type_gt)|Yayınları alt eşleşme için bir dize.|
+|[operator basic_string < value_type >](#op_basic_string_lt_value_type_gt)|Bir dizeye alt eşleşme yayınlar.|
 
 ## <a name="example"></a>Örnek
 
@@ -133,13 +133,13 @@ compare(sub) == 0
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** \<regex >
+**Üst bilgi:** \<Regex >
 
-**Namespace:** std
+**Ad alanı:** std
 
-## <a name="compare"></a>  sub_match::COMPARE
+## <a name="compare"></a>sub_match:: Compare
 
-Alt eşleşme karşı bir sıralı karşılaştırma.
+Alt eşleşmeyi bir diziye göre karşılaştırın.
 
 ```cpp
 int compare(const sub_match& right) const;
@@ -149,30 +149,30 @@ int compare(const value_type *ptr) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*sağ*<br/>
-Karşılaştırma yapılacak alt eşleşme.
+*Right*\
+Karşılaştırılacak alt eşleşme.
 
-*str*<br/>
-Karşılaştırma yapılacak dize.
+*üstbilgisine*\
+Karşılaştırılacak dize.
 
-*ptr*<br/>
-Karşılaştırmak için null ile sonlandırılmış dizisi.
+*kaydetmeye*\
+Karşılaştırılacak null ile sonlandırılmış dizi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk üye işlevi eşleşen dizisi karşılaştırır `[first, second)` eşleşen dizisine `[right.first, right.second)`. İkinci üye işlevi eşleşen dizisi karşılaştırır `[first, second)` karakter dizisine `[right.begin(), right.end())`. Üçüncü üye işlevi eşleşen dizisi karşılaştırır `[first, second)` karakter dizisine `[right, right + std::char_traits<value_type>::length(right))`.
+İlk üye işlevi eşleşen sırayı `[first, second)` eşleşen sırayla `[right.first, right.second)`karşılaştırır. İkinci üye işlevi eşleşen sırayı `[first, second)` karakter dizisiyle `[right.begin(), right.end())`karşılaştırır. Üçüncü üye işlevi, eşleşen sırayı `[first, second)` karakter dizisiyle `[right, right + std::char_traits<value_type>::length(right))`karşılaştırır.
 
-Her bir işlevi döndürür:
+Her işlev şunu döndürür:
 
-eşleşen dizideki ilk farklı değer ve işlenen sırasının karşılık gelen öğe sayısından az karşılaştırırsa negatif bir değer (tarafından belirlenen şekilde `std::char_traits<value_type>::compare`), ya da iki ortak bir önek varsa, ancak hedef dizideki uzun
+eşleşen dizideki ilk farklı değer, işlenen dizideki (tarafından `std::char_traits<value_type>::compare`belirlendiği şekilde) karşılık gelen öğeden daha az karşılaştırıyorsa veya iki ortak öneki varsa ancak hedef sıra daha uzunsa, negatif bir değer
 
-iki öğe eşitse karşılaştırın ve aynı uzunluğa sahip, sıfır
+iki karşılaştırma öğesi öğesine göre eşit ve aynı uzunluğa sahip ise sıfır
 
 Aksi takdirde pozitif bir değer
 
 ## <a name="difference_type"></a>  sub_match::difference_type
 
-Bir yineleyicinin fark türü.
+Yineleyici farkının türü.
 
 ```cpp
 typedef typename iterator_traits<BidIt>::difference_type difference_type;
@@ -180,11 +180,11 @@ typedef typename iterator_traits<BidIt>::difference_type difference_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Typedef eşanlamlıdır `iterator_traits<BidIt>::difference_type`.
+TypeDef, için `iterator_traits<BidIt>::difference_type`bir eş anlamlı.
 
-## <a name="iterator"></a>  sub_match::iterator
+## <a name="iterator"></a>sub_match:: Yineleyici
 
-Bir yineleyici türü.
+Yineleyicinin türü.
 
 ```cpp
 typedef BidIt iterator;
@@ -192,11 +192,11 @@ typedef BidIt iterator;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Typedef şablon türü bağımsız değişkeni eşanlamlıdır `Bidit`.
+TypeDef, şablon türü bağımsız değişkeninin `Bidit`eşanlamlısıdır.
 
-## <a name="length"></a>  sub_match::length
+## <a name="length"></a>sub_match:: length
 
-Bir alt eşleşme uzunluğunu döndürür.
+Alt eşleşmenin uzunluğunu döndürür.
 
 ```cpp
 difference_type length() const;
@@ -204,11 +204,11 @@ difference_type length() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Eşleşen hiçbir sırası olduysa üye işlevi eşleşen dizisi veya sıfır uzunluğunu döndürür.
+Üye işlevi, eşleşen sıranın uzunluğunu veya eşleşen bir sıra yoksa sıfır değerini döndürür.
 
-## <a name="matched"></a>  sub_match::matched
+## <a name="matched"></a>sub_match:: eşleşti
 
-Eşleşme başarılı olup olmadığını gösterir.
+Eşleşmenin başarılı olup olmadığını gösterir.
 
 ```cpp
 bool matched;
@@ -216,11 +216,11 @@ bool matched;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye tutan **true** yakalama grubuyla ilişkilendirilen yalnızca `*this` normal ifade eşleştirmesi verilmişti.
+Üye yalnızca,  ile `*this` ilişkili yakalama grubu normal ifade eşleşmesinden bir parçasıysa doğru tutar.
 
-## <a name="op_basic_string_lt_value_type_gt"></a>  sub_match::operator basic_string&lt;value_type&gt;
+## <a name="op_basic_string_lt_value_type_gt"></a>sub_match:: operator basic_string&lt;value_type&gt;
 
-Yayınları alt eşleşme için bir dize.
+Bir dizeye alt eşleşme yayınlar.
 
 ```cpp
 operator basic_string<value_type>() const;
@@ -230,9 +230,9 @@ operator basic_string<value_type>() const;
 
 Üye işleci döndürür `str()`.
 
-## <a name="str"></a>  sub_match::str
+## <a name="str"></a>sub_match:: Str
 
-Alt eşleşme bir dizeye dönüştürür.
+Alt eşleşmeyi bir dizeye dönüştürür.
 
 ```cpp
 basic_string<value_type> str() const;
@@ -240,7 +240,7 @@ basic_string<value_type> str() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevinin döndürdüğü `basic_string<value_type>(first, second)`.
+Üye işlevi döndürür `basic_string<value_type>(first, second)`.
 
 ## <a name="value_type"></a>  sub_match::value_type
 
@@ -252,9 +252,9 @@ typedef typename iterator_traits<BidIt>::value_type value_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Typedef eşanlamlıdır `iterator_traits<BidIt>::value_type`.
+TypeDef, için `iterator_traits<BidIt>::value_type`bir eş anlamlı.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[\<Regex >](../standard-library/regex.md)<br/>
-[sub_match](../standard-library/sub-match-class.md)<br/>
+[\<Regex >](../standard-library/regex.md)\
+[sub_match](../standard-library/sub-match-class.md)

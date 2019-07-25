@@ -18,12 +18,12 @@ helpviewer_keywords:
 - std::reverse_iterator [C++], base
 - std::reverse_iterator [C++], operator_star
 ms.assetid: c0b34d04-ae9a-4999-9aff-28b313897ffa
-ms.openlocfilehash: ae4a3da8f15f838900cb5a4324fbaeda01d918a2
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e7164e72dfc7bef0213a38e2605dee8195747f17
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62368800"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68451170"
 ---
 # <a name="reverseiterator-class"></a>reverse_iterator Sınıfı
 
@@ -38,64 +38,64 @@ class reverse_iterator
 
 ### <a name="parameters"></a>Parametreler
 
-Randomıterator yineleyiciyi tersten çalışmaya uygun olacak şekilde temsil eden tür.
+RandomIterator, geriye doğru çalışacak şekilde uyarlanan yineleyiciyi temsil eden tür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Var olan C++ Standart Kitaplığı kapsayıcıları da tanımlamanız `reverse_iterator` ve `const_reverse_iterator` türleri ve üye işlevlerde `rbegin` ve `rend` ters yineleyici döndüren. Bu yineleyicilerde üzerine yazma semantikleri vardır. `reverse_iterator` Bağdaştırıcısı bu işlevselliği ekleme semantikleri ve akışları ile de kullanılabilir sunduğu tamamlar.
+Varolan C++ standart kitaplık kapsayıcıları Ayrıca, `reverse_iterator` ve `const_reverse_iterator` türlerini tanımlar ve `rend` bu işlevleri `rbegin` ve ters yineleyiciler döndüren üye işlevlerini de tanımlar. Bu yineleyicilerde üzerine yazma semantikleri vardır. Bağdaştırıcı `reverse_iterator` , ekleme semantiğini sağladığından bu işlevselliği tamamlar ve akışlar ile de kullanılabilir.
 
-`reverse_iterator` Gerektiren çift yönlü bir yineleyici gerekir değil herhangi bir üye işlevleri çağırma `operator+=`, `operator+`, `operator-=`, `operator-`, veya `operator[]`, hangi yalnızca kullanılabilir rasgele erişim yineleyicileri ile.
+Çift `reverse_iterator` yönlü bir yineleyici gerektiren,,,, veya `operator-=` `operator+` `operator+=` `operator[]`yalnızca rastgele erişim yineleyiciler ile kullanılabilen `operator-`üye işlevlerinden herhangi birini çağırmamalıdır.
 
-Bir yineleyicinin aralığı [*ilk*, *son*), burada sol köşeli ayraç eklenmesi, gösteren *ilk* ve sağdaki parantezler gösterir en fazla ancak hariç öğelerin eklenmesi *son* kendisi. Tersine çevrilmiş sırada dahil aynı öğeleri [ **rev** - *ilk*, **rev** - *son*) için olması durumunda *son* bir-past--end öğesi bir dizideki ilk öğe ise **rev** - *ilk* ters dizide işaret \*(*son* - 1). Tüm ters yineleyicilerin kendi temel yineleyicileriyle ilişkili kimliği aşağıdaki gibidir:
+Yineleyicinin aralığı [*First*, *Last*), burada sol taraftaki köşeli ayraç *ilk* ve ayracın dahil olduğu, *en son* kendisi hariç olan öğelerin dahil edildiği anlamına gelir. Aynı öğeler ters çevrilme dizisine [ **Rev** - *First*, **Rev** - *Last*) dahil edilir, böylece *son* bir dizideki son bir öğe, sonra da ilk öğe **Rev** ters sırada *ilk* ' i (Son-1) gösterir \*.  -  Tüm ters yineleyicilerin kendi temel yineleyicileriyle ilişkili kimliği aşağıdaki gibidir:
 
-&\*( **reverse_iterator** ( *i* ) ) == &\*( *i* - 1 ).
+&\*( **reverse_iterator** ( *i* )) = = &\*( *i* -1).
 
-Uygulamada, bunun anlamı ters dizideki reverse_iterator öğesinin, yineleyicinin özgün dizinde başvurduğu öğenin bir ötesindeki (sağındaki) konuma başvuracağıdır. Böyle bir yineleyici 6 öğesini dizideki (2, 4, 6, 8), ele sonra `reverse_iterator` ters dizide (8, 6, 4, 2) 4 öğesine adresi olur.
+Uygulamada, bunun anlamı ters dizideki reverse_iterator öğesinin, yineleyicinin özgün dizinde başvurduğu öğenin bir ötesindeki (sağındaki) konuma başvuracağıdır. Bu nedenle, bir Yineleyici dizideki 6 öğe (2, 4, 6, 8) ile `reverse_iterator` ilgilenirse, ters dizideki öğe 4 ' ü (8, 6, 4, 2) ele alınacaktır.
 
 ### <a name="constructors"></a>Oluşturucular
 
 |Oluşturucu|Açıklama|
 |-|-|
-|[reverse_iterator](#reverse_iterator)|Varsayılan yapıları `reverse_iterator` veya `reverse_iterator` temel yineleyiciden.|
+|[reverse_iterator](#reverse_iterator)|Temel bir yineleyiciden `reverse_iterator` varsayılan `reverse_iterator` veya bir oluşturur.|
 
 ### <a name="typedefs"></a>Tür tanımları
 
 |Tür adı|Açıklama|
 |-|-|
-|[difference_type](#difference_type)|İkisi arasındaki farkı sağlayan bir tür `reverse_iterator`aynı kapsayıcı içindeki öğelere başvuran.|
-|[iterator_type](#iterator_type)|İçin temel bir yineleyici sağlayan tür bir `reverse_iterator`.|
-|[İşaretçi](#pointer)|Tarafından ele alınan öğeye işaretçi sağlayan bir tür bir `reverse_iterator`.|
-|[Başvuru](#reference)|Tarafından ele alınan öğeye başvuru sağlayan bir tür bir `reverse_iterator`.|
+|[difference_type](#difference_type)|Aynı kapsayıcı içindeki öğelere başvuran iki `reverse_iterator`s arasındaki farkı sağlayan bir tür.|
+|[iterator_type](#iterator_type)|İçin temel yineleyiciyi sağlayan bir tür `reverse_iterator`.|
+|[çağrısı](#pointer)|Tarafından bahsedilen bir öğeye işaretçi sağlayan bir tür `reverse_iterator`.|
+|[Başvuru](#reference)|Tarafından bahsedilen bir öğeye başvuru sağlayan bir tür `reverse_iterator`.|
 
 ### <a name="member-functions"></a>Üye işlevleri
 
 |Üye işlevi|Açıklama|
 |-|-|
-|[base](#base)|Temel yineleyiciden kurtarır kendi `reverse_iterator`.|
+|[base](#base)|Temel yineleyiciyi öğesinden `reverse_iterator`kurtarır.|
 
 ### <a name="operators"></a>İşleçler
 
 |İşleç|Açıklama|
 |-|-|
-|[operator_star](#op_star)|Öğeyi döndürür bir `reverse_iterator` adresleri.|
-|[operator +](#op_add)|Yineleyiciye bir uzaklık ekler ve yeni döndürür `reverse_iterator` eklenen öğeyi yeni uzaklık konumunda ele alan.|
-|[operator ++](#op_add_add)|Artışlarla `reverse_iterator` sonraki öğeye.|
-|[operator+=](#op_add_eq)|Öğesinden belirtilen bir uzaklık ekler bir `reverse_iterator`.|
-|[operator-](#operator-)|Öğesinden bir uzaklık çıkarı bir `reverse_iterator` ve döndüren bir `reverse_iterator` uzaklık konumunda öğeyi ele alan.|
-|[--işleci](#operator--)|Azaltır `reverse_iterator` öğesini önceki öğeye.|
-|[-= işleci](#operator-_eq)|Öğesinden belirtilen bir uzaklık çıkarır bir `reverse_iterator`.|
-|[-> işleci](#op-arrow)|Yineleyicisinin adreslediği öğeye bir işaretçi döndürür `reverse_iterator`.|
-|[işleci&#91;&#93;](#op_at)|Yineleyicisinin adreslediği öğeye bir öğe uzaklığı için bir başvuru döndürür bir `reverse_iterator` belirli sayıdaki uzaklığına göre.|
+|[operator_star](#op_star)|`reverse_iterator` Adreslerin bulunduğu öğeyi döndürür.|
+|[işleç +](#op_add)|Bir yineleyici için bir konum ekler ve yeni bir konum `reverse_iterator` konumundaki eklenen öğeyi yeni adreslemeyi döndürür.|
+|[işleç + +](#op_add_add)|`reverse_iterator` Öğesini bir sonraki öğeye artırır.|
+|[operator+=](#op_add_eq)|İçinden belirtilen bir sapmayı ekler `reverse_iterator`.|
+|[işlecinde](#operator-)|Bir sapmayı bir uzaklığa çıkartır `reverse_iterator` ve öğe, `reverse_iterator` konum konumunu bir ele döndürür.|
+|[işleç--](#operator--)|Önceki öğeye kadar azaltır. `reverse_iterator`|
+|[işleç-=](#operator-_eq)|Belirtilen bir sapmayı kaynağından `reverse_iterator`çıkartır.|
+|[operator->](#op-arrow)|Tarafından belirtilen öğeye bir işaretçi döndürür `reverse_iterator`.|
+|[işlecinde&#91;&#93;](#op_at)|Belirtilen sayıda konum tarafından bahsedilen öğeden bir `reverse_iterator` öğe kaydırmasına yönelik bir başvuru döndürür.|
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** \<yineleyici >
+**Üst bilgi:** \<Yineleyici >
 
-**Namespace:** std
+**Ad alanı:** std
 
-## <a name="base"></a>  reverse_iterator::Base
+## <a name="base"></a>reverse_iterator:: Base
 
-Temel yineleyiciden kurtarır kendi `reverse_iterator`.
+Temel yineleyiciyi öğesinden `reverse_iterator`kurtarır.
 
 ```cpp
 RandomIterator base() const;
@@ -103,15 +103,15 @@ RandomIterator base() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Alttaki yineleyiciyi `reverse_iterator`.
+Temel alınan `reverse_iterator`Yineleyici.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tüm ters Yineleyicilerin kendi temel yineleyicileriyle ilişkili kimliği aşağıdaki gibidir:
+Tüm ters yineleyicileri temel yineleyiciler ile ilişkilendiren kimlik:
 
-&\*( `reverse_iterator` ( *i* ) ) == &\*( *i* - 1 ).
+&\*( `reverse_iterator` ( *ı* )) = = &\*( *i* -1).
 
-Uygulamada, ters sırada buna `reverse_iterator` öğenin bir ötesindeki (sağındaki) başvuracaktır yineleyici özgün dizisinde başvurulan öğe. Böyle bir yineleyici 6 öğesini dizideki (2, 4, 6, 8), ele sonra `reverse_iterator` ters dizide (8, 6, 4, 2) 4 öğesine adresi olur.
+Uygulamada, bu, tersine çevrilmiş dizide `reverse_iterator` , yineleyicinin orijinal sırada başvurduğu öğenin bir konumdan bir konuma (öğesinin sağına) başvuracağı anlamına gelir. Bu nedenle, bir Yineleyici dizideki 6 öğe (2, 4, 6, 8) ile `reverse_iterator` ilgilenirse, ters dizideki öğe 4 ' ü (8, 6, 4, 2) ele alınacaktır.
 
 ### <a name="example"></a>Örnek
 
@@ -164,7 +164,7 @@ int main( )
 
 ## <a name="difference_type"></a>  reverse_iterator::difference_type
 
-İkisi arasındaki farkı sağlayan bir tür `reverse_iterator`aynı kapsayıcı içindeki öğelere başvuran.
+Aynı kapsayıcı içindeki öğelere başvuran iki `reverse_iterator`s arasındaki farkı sağlayan bir tür.
 
 ```cpp
 typedef typename iterator_traits<RandomIterator>::difference_type  difference_type;
@@ -172,17 +172,17 @@ typedef typename iterator_traits<RandomIterator>::difference_type  difference_ty
 
 ### <a name="remarks"></a>Açıklamalar
 
-`reverse_iterator` Fark türü, yineleyicinin fark türüne ile aynı.
+`reverse_iterator` Fark türü yineleyici fark türüyle aynıdır.
 
-Türü yineleyici nitelik typename eşanlamlıdır `iterator_traits` \< **Randomıterator**> **:: işaretçi**.
+Tür, `iterator_traits` Yineleyici nitelik TypeName \< **RandomIterator**>  **::p oınter**için bir eş anlamlı.
 
 ### <a name="example"></a>Örnek
 
-Bkz: [reverse_iterator::operator&#91; &#93; ](#op_at) bildirme ve kullanma konusunda bir örnek için `difference_type`.
+Bildirme ve kullanma `difference_type`hakkında bir örnek için bkz. [reverse_iterator:: operator&#91; ](#op_at) .
 
-## <a name="iterator_type"></a>  reverse_iterator::iterator_type
+## <a name="iterator_type"></a>reverse_iterator::iterator_type
 
-İçin temel bir yineleyici sağlayan tür bir `reverse_iterator`.
+İçin temel yineleyiciyi sağlayan bir tür `reverse_iterator`.
 
 ```cpp
 typedef RandomIterator iterator_type;
@@ -190,15 +190,15 @@ typedef RandomIterator iterator_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon parametresi için bir eşanlamlı türüdür `Iterator`.
+Tür, şablon parametresi `Iterator`için bir eş anlamlı.
 
 ### <a name="example"></a>Örnek
 
-Bkz: [reverse_iterator::base](#base) bildirme ve kullanma konusunda bir örnek için `iterator_type`.
+Bildirme ve kullanma `iterator_type`hakkında bir örnek için bkz. [reverse_iterator:: Base](#base) .
 
-## <a name="op_star"></a>  reverse_iterator::operator\*
+## <a name="op_star"></a>reverse_iterator:: işleci\*
 
-Bir reverse_iterator adresleri öğeyi döndürür.
+Reverse_iterator adresinin bulunduğu öğeyi döndürür.
 
 ```cpp
 reference operator*() const;
@@ -206,11 +206,11 @@ reference operator*() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Reverse_iterator tarafından ele alınan öğelerin değeri.
+Reverse_iterator tarafından belirtilen öğelerin değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşleç döndürür \*( **geçerli** - 1).
+İşleç döndürür \*( **geçerli** -1).
 
 ### <a name="example"></a>Örnek
 
@@ -257,7 +257,7 @@ int main( )
 
 ## <a name="op_add"></a>  reverse_iterator::operator+
 
-Yineleyiciye bir uzaklık ekler ve yeni döndürür `reverse_iterator` eklenen öğeyi yeni uzaklık konumunda ele alan.
+Bir yineleyici için bir konum ekler ve yeni bir konum `reverse_iterator` konumundaki eklenen öğeyi yeni adreslemeyi döndürür.
 
 ```cpp
 reverse_iterator<RandomIterator> operator+(difference_type Off) const;
@@ -265,16 +265,16 @@ reverse_iterator<RandomIterator> operator+(difference_type Off) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*Kapalı*<br/>
-Ters yineleyici eklenecek olan uzaklık.
+*Dışına*\
+Tersine yineleyiciye eklenecek olan Aralık.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-A `reverse_iterator` uzaklık öğeyi ele alan.
+Bir `reverse_iterator` adres boşluğu öğesi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi, yalnızca, kullanılabilir `reverse_iterator` bir rastgele erişim yineleyici için gereksinimleri karşılar.
+Bu üye işlevi yalnızca, `reverse_iterator` bir rastgele erişim Yineleyici için gereksinimleri karşılıyorsa kullanılabilir.
 
 ### <a name="example"></a>Örnek
 
@@ -333,7 +333,7 @@ to the 3rd element in the reversed sequence: 6.
 
 ## <a name="op_add_add"></a>  reverse_iterator::operator++
 
-Reverse_iterator öğesini önceki öğeye artırır.
+Önceki öğeye reverse_iterator artırır.
 
 ```cpp
 reverse_iterator<RandomIterator>& operator++();
@@ -342,11 +342,11 @@ reverse_iterator<RandomIterator> operator++(int);
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İlk işleç preincremented döndürür `reverse_iterator` ve ikinci postincrement işleci, artımlı bir kopyasını döndürür `reverse_iterator`.
+İlk operatör, ön arttırılan `reverse_iterator` ve ikincisi, postıncrement işleci, artın `reverse_iterator`bir kopyasını döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi, yalnızca, kullanılabilir `reverse_iterator` çift yönlü bir yineleyici için gereksinimleri karşılar.
+Bu üye işlevi yalnızca çift yönlü bir yineleyici için `reverse_iterator` gereksinimleri karşılıyorsa kullanılabilir.
 
 ### <a name="example"></a>Örnek
 
@@ -404,9 +404,9 @@ After incrementing, the iterator rVPOS1 points
 to the second element in the reversed sequence: 7.
 ```
 
-## <a name="op_add_eq"></a>  reverse_iterator::operator +=
+## <a name="op_add_eq"></a>reverse_iterator:: operator + =
 
-Bir reverse_iterator belirtilen bir uzaklık ekler.
+Reverse_iterator öğesinden belirtilen bir sapmayı ekler.
 
 ```cpp
 reverse_iterator<RandomIterator>& operator+=(difference_type Off);
@@ -414,12 +414,12 @@ reverse_iterator<RandomIterator>& operator+=(difference_type Off);
 
 ### <a name="parameters"></a>Parametreler
 
-*Kapalı*<br/>
-Yineleyici artırmak üzere uzaklığı.
+*Dışına*\
+Yineleyicinin artılacağı fark.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Tarafından ele alınan öğeye başvuru `reverse_iterator`.
+Tarafından bahsedilen öğesine bir başvuru `reverse_iterator`.
 
 ### <a name="example"></a>Örnek
 
@@ -477,9 +477,9 @@ After the +2 offset, the iterator rVPOS1 now points
 to the third element in the reversed sequence: 6.
 ```
 
-## <a name="operator-"></a>  reverse_iterator::operator-
+## <a name="operator-"></a>reverse_iterator:: operator-
 
-Öğesinden bir uzaklık çıkarı bir `reverse_iterator` ve döndüren bir `reverse_iterator` uzaklık konumunda öğeyi ele alan.
+Bir sapmayı bir uzaklığa çıkartır `reverse_iterator` ve öğe, `reverse_iterator` konum konumunu bir ele döndürür.
 
 ```cpp
 reverse_iterator<RandomIterator> operator-(difference_type Off) const;
@@ -487,16 +487,16 @@ reverse_iterator<RandomIterator> operator-(difference_type Off) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*Kapalı*<br/>
-Reverse_iterator çıkarılsın uzaklığı.
+*Dışına*\
+Reverse_iterator çıkarılacak olan Aralık.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-A `reverse_iterator` uzaklık öğeyi ele alan.
+Bir `reverse_iterator` adres boşluğu öğesi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi, yalnızca, kullanılabilir `reverse_iterator` bir rastgele erişim yineleyici için gereksinimleri karşılar.
+Bu üye işlevi yalnızca, `reverse_iterator` bir rastgele erişim Yineleyici için gereksinimleri karşılıyorsa kullanılabilir.
 
 ### <a name="example"></a>Örnek
 
@@ -556,7 +556,7 @@ to the 2nd element from the last in the reversed sequence: 9.
 
 ## <a name="operator--"></a>  reverse_iterator::operator--
 
-Azaltır öğesini önceki öğeye reverse_iterator.
+Reverse_iterator önceki öğeye kadar azaltır.
 
 ```cpp
 reverse_iterator<RandomIterator>& operator--();
@@ -565,11 +565,11 @@ reverse_iterator<RandomIterator> operator--(int);
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İlk işleç predecremented döndürür `reverse_iterator` ve postdecrement işleci, ikinci bir kopyasını indirildiği döndürür `reverse_iterator`.
+İlk operatör, predecremented `reverse_iterator` döndürür ve ikinci olarak, postazaltma işleci, `reverse_iterator`azaltma işlevinin bir kopyasını döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi, yalnızca, kullanılabilir `reverse_iterator` çift yönlü bir yineleyici için gereksinimleri karşılar.
+Bu üye işlevi yalnızca çift yönlü bir yineleyici için `reverse_iterator` gereksinimleri karşılıyorsa kullanılabilir.
 
 ### <a name="example"></a>Örnek
 
@@ -627,9 +627,9 @@ After the decrement, the iterator rVPOS1 points
 to the next-to-last element in the reversed sequence: 3.
 ```
 
-## <a name="operator-_eq"></a>  reverse_iterator::operator-=
+## <a name="operator-_eq"></a>reverse_iterator:: operator-=
 
-Öğesinden belirtilen bir uzaklık çıkarır bir `reverse_iterator`.
+Belirtilen bir sapmayı kaynağından `reverse_iterator`çıkartır.
 
 ```cpp
 reverse_iterator<RandomIterator>& operator-=(difference_type Off);
@@ -637,14 +637,14 @@ reverse_iterator<RandomIterator>& operator-=(difference_type Off);
 
 ### <a name="parameters"></a>Parametreler
 
-*Kapalı*<br/>
-Çıkarmanın yapılacağı uzaklık `reverse_iterator`.
+*Dışına*\
+Öğesinden çıkarılacak olan `reverse_iterator`Aralık.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi, yalnızca, kullanılabilir `reverse_iterator` bir rastgele erişim yineleyici için gereksinimleri karşılar.
+Bu üye işlevi yalnızca, `reverse_iterator` bir rastgele erişim Yineleyici için gereksinimleri karşılıyorsa kullanılabilir.
 
-İşleç değerlendirir **geçerli** + _ *kapalı*. ardından döndürür  **\*bu**.
+İşleç **geçerli** + _ *kapalı*değerini değerlendirir. ardından  **\*bunu**döndürür.
 
 ### <a name="example"></a>Örnek
 
@@ -702,9 +702,9 @@ After the -2 offset, the iterator rVPOS1 now points
 to the 2nd element from the last in the reversed sequence: 9.
 ```
 
-## <a name="op-arrow"></a>  reverse_iterator::operator-&gt;
+## <a name="op-arrow"></a>reverse_iterator:: operator-&gt;
 
-Yineleyicisinin adreslediği öğeye bir işaretçi döndürür `reverse_iterator`.
+Tarafından belirtilen öğeye bir işaretçi döndürür `reverse_iterator`.
 
 ```cpp
 pointer operator->() const;
@@ -712,11 +712,11 @@ pointer operator->() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Tarafından ele alınan öğeye işaretçi `reverse_iterator`.
+Tarafından bahsedilen öğe için bir işaretçi `reverse_iterator`.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşleç döndürür  **& \* \*bu**.
+İşleci bunu döndürür  **& \*. \***
 
 ### <a name="example"></a>Örnek
 
@@ -781,9 +781,9 @@ The reverse_iterator rpos points to:
 ( 1, 2 )
 ```
 
-## <a name="op_at"></a>  reverse_iterator::operator]
+## <a name="op_at"></a>reverse_iterator:: operator []
 
-Yineleyicisinin adreslediği öğeye bir öğe uzaklığı için bir başvuru döndürür bir `reverse_iterator` belirli sayıdaki uzaklığına göre.
+Belirtilen sayıda konum tarafından bahsedilen öğeden bir `reverse_iterator` öğe kaydırmasına yönelik bir başvuru döndürür.
 
 ```cpp
 reference operator[](difference_type Off) const;
@@ -791,16 +791,16 @@ reference operator[](difference_type Off) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*Kapalı*<br/>
-Uzaklığı `reverse_iterator` adresi.
+*Dışına*\
+`reverse_iterator` Adresten gelen fark.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Referans öğesi.
+Öğe kaydırmasına başvuru.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşleç döndürür <strong>\*</strong>(  **\*bu** + `Off`).
+<strong>\*</strong>İşleci (  **this\*** )döndürür`Off`. + 
 
 ### <a name="example"></a>Örnek
 
@@ -859,9 +859,9 @@ The iterator rpos points to: 6.
 The iterator rpos now points to: 2.
 ```
 
-## <a name="pointer"></a>  reverse_iterator::pointer
+## <a name="pointer"></a>reverse_iterator::p oınter
 
-Tarafından ele alınan öğeye işaretçi sağlayan bir tür bir `reverse_iterator`.
+Tarafından bahsedilen bir öğeye işaretçi sağlayan bir tür `reverse_iterator`.
 
 ```cpp
 typedef typename iterator_traits<RandomIterator>::pointer pointer;
@@ -869,7 +869,7 @@ typedef typename iterator_traits<RandomIterator>::pointer pointer;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Türü yineleyici nitelik typename eşanlamlıdır `iterator_traits` \< *Randomıterator*> **:: işaretçi**.
+Tür, `iterator_traits` Yineleyici nitelik TypeName \< *RandomIterator*>  **::p oınter**için bir eş anlamlı.
 
 ### <a name="example"></a>Örnek
 
@@ -931,9 +931,9 @@ The iterator rpos points to:
 ( 1, 2 )
 ```
 
-## <a name="reference"></a>  reverse_iterator::Reference
+## <a name="reference"></a>reverse_iterator:: Reference
 
-Bir reverse_iterator tarafından ele alınan öğeye başvuru sağlayan bir tür.
+Bir reverse_iterator tarafından bahsedilen bir öğeye başvuru sağlayan bir tür.
 
 ```cpp
 typedef typename iterator_traits<RandomIterator>::reference reference;
@@ -941,15 +941,15 @@ typedef typename iterator_traits<RandomIterator>::reference reference;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Türü yineleyici nitelik typename eşanlamlıdır `iterator_traits` \< *Randomıterator*> **:: reference**.
+Tür, `iterator_traits` Yineleyici nitelik TypeName \< *RandomIterator*>  **:: Reference**için bir eş anlamlı.
 
 ### <a name="example"></a>Örnek
 
-Bkz: [reverse_iterator::operator&#91; &#93; ](#op_at) veya [reverse_iterator::operator *](#op_star) bildirme ve kullanma örnekleri için `reference`.
+Bildirme ve kullanma`reference`örnekleri için bkz. [reverse_iterator:: operator&#91; ](#op_at) veya [reverse_iterator:: operator *](#op_star) .
 
-## <a name="reverse_iterator"></a>  reverse_iterator::reverse_iterator
+## <a name="reverse_iterator"></a>reverse_iterator::reverse_iterator
 
-Varsayılan yapıları `reverse_iterator` veya `reverse_iterator` temel yineleyiciden.
+Temel bir yineleyiciden `reverse_iterator` varsayılan `reverse_iterator` veya bir oluşturur.
 
 ```cpp
 reverse_iterator();
@@ -961,20 +961,20 @@ reverse_iterator(const reverse_iterator<Type>& right);
 
 ### <a name="parameters"></a>Parametreler
 
-*sağ*<br/>
-Yineleyiciyi tersten çalışmaya uygun olacak bir `reverse_iterator`.
+*Right*\
+' A `reverse_iterator`uyarlanabilen Yineleyici.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Varsayılan `reverse_iterator` veya `reverse_iterator` temel bir yineleyici uyarlama.
+Temel bir `reverse_iterator` yineleyiciden bir varsayılan veya bir `reverse_iterator` uyum.
 
 ### <a name="remarks"></a>Açıklamalar
 
 Tüm ters yineleyicilerin kendi temel yineleyicileriyle ilişkili kimliği aşağıdaki gibidir:
 
-&\*( `reverse_iterator` ( *i* ) ) == &\*( *i* - 1 ).
+&\*( `reverse_iterator` ( *ı* )) = = &\*( *i* -1).
 
-Uygulamada, bunun anlamı ters dizideki reverse_iterator öğesinin, yineleyicinin özgün dizinde başvurduğu öğenin bir ötesindeki (sağındaki) konuma başvuracağıdır. Böyle bir yineleyici 6 öğesini dizideki (2, 4, 6, 8), ele sonra `reverse_iterator` ters dizide (8, 6, 4, 2) 4 öğesine adresi olur.
+Uygulamada, bunun anlamı ters dizideki reverse_iterator öğesinin, yineleyicinin özgün dizinde başvurduğu öğenin bir ötesindeki (sağındaki) konuma başvuracağıdır. Bu nedenle, bir Yineleyici dizideki 6 öğe (2, 4, 6, 8) ile `reverse_iterator` ilgilenirse, ters dizideki öğe 4 ' ü (8, 6, 4, 2) ele alınacaktır.
 
 ### <a name="example"></a>Örnek
 
@@ -1021,6 +1021,6 @@ int main( )
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[\<Yineleyici >](../standard-library/iterator.md)<br/>
-[C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
-[C++ Standart Kitaplığı Başvurusu](../standard-library/cpp-standard-library-reference.md)<br/>
+[\<Yineleyici >](../standard-library/iterator.md)\
+[C++ Standart kitaplıkta Iş parçacığı güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)\
+[C++ Standart Kitaplığı Başvurusu](../standard-library/cpp-standard-library-reference.md)

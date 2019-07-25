@@ -5,12 +5,12 @@ f1_keywords:
 - scoped_allocator/std::operator!=
 - scoped_allocator/std::operator==
 ms.assetid: 4dfe0805-cc6e-479f-887f-a1c164f73837
-ms.openlocfilehash: 7c9f2c3a2425bf3ac6e62ce7fcecfe9315c3e04e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 071fc3b73cd3378b110d6d412bb7575e35a77478
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62348204"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68447337"
 ---
 # <a name="ltscopedallocatorgt-operators"></a>&lt;scoped_allocator&gt; işleçleri
 
@@ -18,9 +18,9 @@ ms.locfileid: "62348204"
 |-|-|
 |[operator!=](#op_neq)|[operator==](#op_eq_eq)|
 
-## <a name="op_neq"></a>  işleç! =
+## <a name="op_neq"></a>işleç! =
 
-İki `scoped_allocator_adaptor` nesneleri için eşitsizlik.
+Eşitsizlik için `scoped_allocator_adaptor` iki nesneyi sınar.
 
 ```cpp
 template <class Outer, class... Inner>
@@ -31,19 +31,19 @@ bool operator!=(
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*<br/>
+*tarafta*\
 Sol `scoped_allocator_adaptor` nesne.
 
-*sağ*<br/>
-Sağa `scoped_allocator_adaptor` nesne.
+*Right*\
+Doğru `scoped_allocator_adaptor` nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 `!(left == right)`
 
-## <a name="op_eq_eq"></a>  işleç ==
+## <a name="op_eq_eq"></a>işleç = =
 
-İki `scoped_allocator_adaptor` eşitlik için nesneleri.
+İki `scoped_allocator_adaptor` nesneyi eşitlik için sınar.
 
 ```cpp
 template <class Outer, class... Inner>
@@ -54,11 +54,11 @@ bool operator==(
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*<br/>
+*tarafta*\
 Sol `scoped_allocator_adaptor` nesne.
 
-*sağ*<br/>
-Sağa `scoped_allocator_adaptor` nesne.
+*Right*\
+Doğru `scoped_allocator_adaptor` nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -66,4 +66,4 @@ Sağa `scoped_allocator_adaptor` nesne.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[<scoped_allocator>](../standard-library/scoped-allocator.md)<br/>
+[<scoped_allocator>](../standard-library/scoped-allocator.md)

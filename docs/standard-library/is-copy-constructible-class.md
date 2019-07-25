@@ -6,16 +6,16 @@ f1_keywords:
 helpviewer_keywords:
 - is_copy_constructible
 ms.assetid: d8db9d4c-21ed-4884-bead-0b0b562de007
-ms.openlocfilehash: c85d036efda2509885a079cf59a130a63c0389bc
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 70de134fa0cb3e9d6b0259135372f37b9c017e92
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62336637"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68452800"
 ---
 # <a name="iscopyconstructible-class"></a>is_copy_constructible sınıfı
 
-Kopya Oluşturucu türüne sahip olmadığını sınar.
+Türün bir kopya Oluşturucusu varsa sınar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -26,12 +26,12 @@ struct is_copy_constructible;
 
 ### <a name="parameters"></a>Parametreler
 
-*Ty*<br/>
+*Kalite*\
 Sorgulanacak tür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Karşılaştırmasının bir örneği true tutan türü *Ty* tuttuğu yanlış bir kopya Oluşturucu, aksi takdirde sahip bir sınıftır.
+Tür değeri, kopya Oluşturucusu olan bir sınıfdaysa, tür  koşulu true, aksi takdirde false barındırır.
 
 ## <a name="example"></a>Örnek
 
@@ -69,10 +69,10 @@ is_copy_constructible<NotCopyable > == false
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** \<type_traits >
+**Üst bilgi:** \<type_traits >
 
-**Namespace:** std
+**Ad alanı:** std
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[<type_traits>](../standard-library/type-traits.md)<br/>
+[<type_traits>](../standard-library/type-traits.md)

@@ -1,27 +1,27 @@
 ---
-title: '&lt;Gelecekteki&gt; sabit listeleri'
+title: '&lt;gelecekteki&gt; numaralandırmalar'
 ms.date: 11/04/2016
 f1_keywords:
 - future/std::future_errc
 - future/std::future_status
 - future/std::launch
 ms.assetid: 8c675645-db47-4cab-bc0e-7b87f8a302df
-ms.openlocfilehash: 1e487128d4af5c6f9b3f29f5c71e52f616e1807a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: a5bcebd80b296a0b8416580aa03acc59ce3750cd
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62159528"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68448221"
 ---
-# <a name="ltfuturegt-enums"></a>&lt;Gelecekteki&gt; sabit listeleri
+# <a name="ltfuturegt-enums"></a>&lt;gelecekteki&gt; numaralandırmalar
 
 ||||
 |-|-|-|
-|[future_errc](#future_errc)|[future_status](#future_status)|[başlatma](#launch)|
+|[future_errc](#future_errc)|[future_status](#future_status)|[Man](#launch)|
 
-## <a name="future_errc"></a>  future_errc numaralandırması
+## <a name="future_errc"></a>future_errc numaralandırması
 
-Tüm tarafından bildirilen hataları için simgesel adlar sağlar [future_error](../standard-library/future-error-class.md) sınıfı.
+[Future_error](../standard-library/future-error-class.md) sınıfı tarafından bildirilen tüm hatalar için simgesel adlar sağlar.
 
 ```cpp
 class future_errc {
@@ -32,9 +32,9 @@ class future_errc {
    };
 ```
 
-## <a name="future_status"></a>  future_status numaralandırması
+## <a name="future_status"></a>future_status numaralandırması
 
-Zamanlanmış bekleme işlevi döndürebilir nedenleri için simgesel adlar sağlar.
+, Zaman aşımına uğramayı bekleyen bir işlevin döndürebileceği nedenlerle sembolik adlar sağlar.
 
 ```cpp
 enum future_status{
@@ -44,9 +44,9 @@ enum future_status{
 };
 ```
 
-## <a name="launch"></a>  launch numaralandırması
+## <a name="launch"></a>başlatma numaralandırması
 
-Şablon işlevi için olası modları açıklar bir bit maskesi türünü temsil eden [zaman uyumsuz](../standard-library/future-functions.md#async).
+[Zaman uyumsuz](../standard-library/future-functions.md#async)şablon işlevi için olası modları açıklayan bir bit maskesi türünü temsil eder.
 
 ```cpp
 class launch{
@@ -57,4 +57,4 @@ class launch{
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[\<gelecek >](../standard-library/future.md)<br/>
+[\<gelecekte >](../standard-library/future.md)

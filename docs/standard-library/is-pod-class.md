@@ -7,16 +7,16 @@ helpviewer_keywords:
 - is_pod class
 - is_pod
 ms.assetid: d73ebdee-746b-4082-9fa4-2db71432eb0e
-ms.openlocfilehash: 3dff4650cf0337a5ff54065d3b1644e11008ecfe
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 1249e9a3689d4b91334e545ba294c28984898035
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62413625"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68455760"
 ---
 # <a name="ispod-class"></a>is_pod Sınıfı
 
-POD türü olup olmadığını sınar.
+Tür POD ise sınar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -27,36 +27,36 @@ struct is_pod;
 
 ### <a name="parameters"></a>Parametreler
 
-*T*<br/>
+*ŞI*\
 Sorgulanacak tür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-`is_pod<T>::value` olan **true** , türü *T* olan düz eski veri (POD). Aksi halde kalır **false**.
+`is_pod<T>::value`*T* türü düz eski VERILER (pod) ise, **geçerlidir** . Aksi takdirde, **false**olur.
 
-Aritmetik tür, sabit listesi türleri, işaretçi türleri ve işaretçi üye türleri için POD ' dir.
+Aritmetik türler, numaralandırma türleri, işaretçi türleri ve üye türleri işaretçisi POD.
 
-Bir POD türü cv tam bir sürümünü kendisi bir POD türüdür.
+POD türünün CV nitelikli bir sürümü bir POD türüdür.
 
-POD kendisini POD dizisidir.
+POD 'un bir dizisi kendi POD olur.
 
-Varsa bir yapıda veya birleşimde, statik olmayan veri üyeleri POD tümü, kendisini POD verilmiştir:
+Tüm statik olmayan veri üyeleri POD olan bir yapı veya birleşim, varsa, kendi POD olan bir yapıdır:
 
-- Kullanıcı bildirimi Oluşturucusu.
+- Kullanıcı tarafından bildirilmeyen Oluşturucu yok.
 
-- Özel veya korumalı statik olmayan veri üye yok.
+- Özel veya korumalı statik olmayan veri üyesi yok.
 
 - Temel olmayan sınıflar.
 
 - Sanal işlev yok.
 
-- Başvuru türü statik olmayan veri üye yok.
+- Başvuru türündeki statik olmayan veri üyesi yok.
 
-- Hiçbir kullanıcı tanımlı kopya atama işleci.
+- Kullanıcı tanımlı kopya atama işleci yok.
 
-- Hiçbir kullanıcı tarafından tanımlanan yıkıcı.
+- Kullanıcı tanımlı yıkıcı yok.
 
-Bu nedenle, yinelemeli olarak derleme POD yapıları ve POD yapıları ve dizileri içeren dizileri kullanabilirsiniz.
+Bu nedenle, POD yapılar ve diziler içeren POD yapılarını ve dizilerini yinelemeli olarak oluşturabilirsiniz.
 
 ## <a name="example"></a>Örnek
 
@@ -96,10 +96,10 @@ is_pod<throws> == false
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** \<type_traits >
+**Üst bilgi:** \<type_traits >
 
-**Namespace:** std
+**Ad alanı:** std
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[<type_traits>](../standard-library/type-traits.md)<br/>
+[<type_traits>](../standard-library/type-traits.md)

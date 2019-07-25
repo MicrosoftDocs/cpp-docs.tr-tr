@@ -7,16 +7,16 @@ helpviewer_keywords:
 - <cstring> header
 - cstring header
 ms.assetid: d665429f-5d39-4712-9c0a-68c8abcc3536
-ms.openlocfilehash: cc6821d63a42d498347745bb7a96c838fc634415
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.openlocfilehash: 0aa92bc366e6f669c01932c2b44413cfc587c16d
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68246612"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68449333"
 ---
 # <a name="ltcstringgt"></a>&lt;CString&gt;
 
-Standart C Kitaplığı üstbilgisi içerir \<string.h > ve ilişkili adlar ekler `std` ad alanı.
+Standart C Kitaplığı üst bilgi \<dizesi. h > içerir ve ilişkili adları `std` ad alanına ekler.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -26,7 +26,7 @@ Standart C Kitaplığı üstbilgisi içerir \<string.h > ve ilişkili adlar ekle
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu üstbilginin dahil sağlar, standart C Kitaplığı üstbilgisinde harici bağlantı kullanılarak bildirilen adların bildirilir `std` ad alanı.
+Bu üstbilginin dahil edilmesi, standart C Kitaplığı üstbilgisinde harici bağlantı kullanılarak belirtilen adların `std` ad alanında bildirilmesini sağlar.
 
 ## <a name="constants"></a>Sabitler
 
@@ -72,6 +72,6 @@ size_t strlen(const char* s);
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Üstbilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md)<br/>
-[C++ Standart Kitaplığına Genel Bakış](../standard-library/cpp-standard-library-overview.md)<br/>
-[C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
+[Üst bilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md)\
+[C++Standart kitaplığa genel bakış](../standard-library/cpp-standard-library-overview.md)\
+[C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)

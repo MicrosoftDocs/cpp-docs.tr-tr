@@ -8,47 +8,47 @@ helpviewer_keywords:
 - _SCL_SECURE_NO_DEPRECATE
 - _SCL_SECURE_NO_WARNINGS
 ms.assetid: ef0ddea9-7c62-4b53-8b64-5f4fd369776f
-ms.openlocfilehash: 77c60aed511fc3dbbea2d74e83e36dae735dcb0e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: d19d47fe7120301740e1431765fc6edbeaa48c60
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62348314"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68448199"
 ---
 # <a name="sclsecurenowarnings"></a>_SCL_SECURE_NO_WARNINGS
 
-C++ Standart Kitaplığı'nda güvenli olmayan yöntemlerden birini çağırma sonuçlanıyor [Derleyici Uyarısı (Düzey 3) C4996](../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md). Bu uyarıyı devre dışı bırakmak için kodunuzda makrosu _scl_secure_no_warnıngs tanımlayın:
+C++ Standart kitaplıkta güvensiz olabilecek yöntemlerin herhangi birini çağırmak, [Derleyici Uyarısı (düzey 3) C4996](../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md). Bu uyarıyı devre dışı bırakmak için kodunuzda _SCL_SECURE_NO_UYARıLAR makrosunu tanımlayın:
 
 ```cpp
 #define _SCL_SECURE_NO_WARNINGS
 ```
 
-Önceden derlenmiş üst bilgiler kullanıyorsanız, herhangi bir C çalışma zamanı kitaplığı veya standart kitaplığı üst bilgiler dahil etmeden önce bu yönerge, önceden derlenmiş üst bilgi dosyanızda yerleştirin. Önceden derlenmiş üstbilgi dosyasını dahil etmeden önce bir bağımsız kaynak kodu dosyasında koyarsanız, derleyici tarafından yoksayılır.
+Önceden derlenmiş üstbilgiler kullanıyorsanız, herhangi bir C çalışma zamanı kitaplığı veya standart kitaplık üst bilgisini eklemeden önce bu yönergeyi ön derlenmiş üstbilgi dosyanıza koyun. Ön derlenmiş üstbilgi dosyasını eklemeden önce tek bir kaynak kodu dosyasına yerleştirirseniz, derleyici tarafından yok sayılır.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Uyarıyı C4996 devre dışı bırakmak için kullanabileceğiniz diğer yöntemler şunlardır:
+Uyarı C4996 ' yi devre dışı bırakmak için diğer yollar şunlardır:
 
-- Kullanarak [/D (önişlemci tanımları)](../build/reference/d-preprocessor-definitions.md) derleyici seçeneği:
+- [/D (Önişlemci tanımları)](../build/reference/d-preprocessor-definitions.md) derleyici seçeneğini kullanma:
 
-   > cl [derleyici seçenekleri diğer] /D_SCL_SECURE_NO_WARNINGS myfile.cpp
+   > CL/D_SCL_SECURE_NO_WARNINGS [diğer derleyici seçenekleri] dosyam. cpp
 
-- Kullanarak [/w](../build/reference/compiler-option-warning-level.md) derleyici seçeneği:
+- [/W](../build/reference/compiler-option-warning-level.md) derleyici seçeneğini kullanma:
 
-   > cl /wd4996 [derleyici seçenekleri diğer] myfile.cpp
+   > CL/wd4996 [diğer derleyici seçenekleri] dosyam. cpp
 
-- Kullanarak [#pragma Uyarısı](../preprocessor/warning.md) yönergesi:
+- [#Pragma uyarı](../preprocessor/warning.md) yönergesini kullanma:
 
    ```cpp
    #pragma warning(disable:4996)
    ```
 
-Ayrıca, el ile C4996 bir uyarı ile düzeyini değiştirebilirsiniz **/w\<l >\<n >** derleyici seçeneği. Örneğin, C4996 düzey 4 uyarısı ayarlamak için şunu yazın:
+Ayrıca, C4996 ' in Level **\<l >\<n >** derleyici seçeneği ile uyarı düzeyini el ile değiştirebilirsiniz. Örneğin, Uyarı C4996 ' yi düzey 4 ' e ayarlamak için:
 
-> cl /w44996 [derleyici seçenekleri diğer] myfile.cpp
+> CL/w44996 [diğer derleyici seçenekleri] dosyam. cpp
 
-Daha fazla bilgi için [/w, /W0, / W1, / w2, / W3, / W4, / W1, / w2, / W3, / W4, /Wall, WD, / we Wo, wv, /WX (uyarı düzeyi)](../build/reference/compiler-option-warning-level.md).
+Daha fazla bilgi için bkz. [/w,/W0,/W1,/W2,/W3,/W4,/W1,/W2,/W3,/W4,/duvar,/WD,/we,/Wo,/WV,/WX (uyarı düzeyi)](../build/reference/compiler-option-warning-level.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Güvenli Kitaplıklar: C++ Standart Kitaplığı](../standard-library/safe-libraries-cpp-standard-library.md)<br/>
+[Güvenli Kitaplıklar: C++ Standart Kitaplığı](../standard-library/safe-libraries-cpp-standard-library.md)

@@ -45,28 +45,28 @@ f1_keywords:
 - shared_mutex/std::shared_timed_mutex::try_lock_shared_until
 - shared_mutex/std::shared_timed_mutex::unlock_shared
 ms.assetid: 0b37a97d-ee5d-4050-b29f-09db9f76beb3
-ms.openlocfilehash: 97d77399357030feaa90228a1b0cdeb80d48034c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 7dd72550bc8658158b399e88573526269202f8f4
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62412572"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68450430"
 ---
 # <a name="ltsharedmutex"></a>&lt;shared_mutex >
 
-&lt;Shared_mutex > üst bilgi, birden çok iş parçacığı tarafından erişilebilen paylaşılan bir veri koruma için eşitleme temellerine sağlar. Mutex sınıfı tarafından sağlanan özel erişim denetimine ek olarak, paylaşılan bir mutex sınıfları paylaşılan sahipliği münhasır olmayan erişim için birden çok iş parçacığı tarafından da sağlar. Paylaşılan mutex'leri bir yarış durumu neden olmadan birkaç iş parçacığı tarafından okunabilir ancak özel olarak tek bir iş parçacığı tarafından yazılan kaynakları denetlemek için kullanılabilir.
+Shared_mutex &lt;> üstbilgisi, birden çok iş parçacığı tarafından erişilebilen paylaşılan verilerin korunması için eşitleme temelleri sağlar. Karşılıklı dışlama sınıfları tarafından sunulan özel erişim denetimine ek olarak, paylaşılan mutex sınıfları Ayrıca, özel olmayan erişim için birden çok iş parçacığı tarafından paylaşılan sahiplik sağlar. Paylaşılan zaman uyumu sağlayıcılar, bir yarış durumuna neden olmadan birçok iş parçacığı tarafından okunabilen kaynakları denetlemek için kullanılabilir, ancak tek bir iş parçacığı tarafından özel olarak yazılması gerekir.
 
-Üst bilgi &lt;shared_mutex > sınıfları tanımlar `shared_mutex` ve `shared_timed_mutex`, Şablon sınıfı `shared_lock`ve şablon işlevi `swap` paylaşılan mutex desteği.
+Üst bilgi &lt;shared_mutex >, sınıfları `shared_mutex` ve `shared_timed_mutex`, şablon sınıfını `shared_lock`ve paylaşılan mutex desteği için şablon işlevini `swap` tanımlar.
 
 |Sınıflar|Açıklama|
 |-------------|-----------------|
-|[shared_mutex sınıfı](#class_shared_mutex)|Bir aracı tarafından özel olarak kilitlenmiş veya özel olmayan birden çok aracı tarafından paylaşılan bir paylaşılan mutex türü.|
-|[shared_timed_mutex sınıfı](#class_shared_timed_mutex)|Paylaşılan bir aracı tarafından özel olarak kilitlenmiş veya özel olmayan birden çok aracı tarafından paylaşılan mutex türünü zaman aşımına uğradı.|
-|[shared_lock sınıfı](#class_shared_lock)|Zamanlanmış kilitleme işlemler ve birden çok aracı tarafından münhasır olmayan paylaşımı desteklemek için paylaşılan bir mutex sarmalayan bir şablon sınıfı.|
+|[shared_mutex sınıfı](#class_shared_mutex)|Yalnızca bir aracı tarafından kilitlenen veya birden çok aracı tarafından özel olarak paylaşılabilen paylaşılan bir mutex türü.|
+|[shared_timed_mutex sınıfı](#class_shared_timed_mutex)|Yalnızca bir aracı tarafından kilitlenen veya birden çok aracı tarafından özel olarak paylaşılabilen paylaşılan zaman uyumsuz bir mutex türü.|
+|[shared_lock sınıfı](#class_shared_lock)|Zaman uyumsuz kilitleme işlemlerini ve çoklu aracıların özel olmayan paylaşımını desteklemek için paylaşılan bir mutex 'i sarmalayan bir şablon sınıfı.|
 
 |İşlevler|Açıklama|
 |---------------|-----------------|
-|[değiştirme](#function_swap)|İşlev parametreleri tarafından başvurulan paylaşılan mutex nesnelerinin içeriğini değiştirir.|
+|[Kur](#function_swap)|İşlev parametrelerinin başvurduğu paylaşılan mutex nesnelerinin içeriğini değiştirir.|
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -83,34 +83,34 @@ void swap(shared_lock<Mutex>& x, shared_lock<Mutex>& y) noexcept;
 
 ## <a name="remarks"></a>Açıklamalar
 
-Sınıfının bir örneğini `shared_mutex` olduğu bir *paylaşılan mutex türünü*, paylaşılan bir kapsam içinde bir mutex sahipliğini denetleyen bir tür. Paylaşılan mutex türünü paylaşılan münhasır olmayan sahipliği desteklemek için tüm gereksinimleri üyelerinin yanı sıra bir mutex türünü karşılar.
+Sınıfının `shared_mutex` bir örneği, bir kapsam içindeki bir mutex 'in paylaşılan sahipliğini denetleyen bir tür olan *paylaşılan bir mutex türüdür*. Paylaşılan bir mutex türü, bir mutex türünün tüm gereksinimlerini ve ayrıca paylaşılan özel olmayan sahipliği desteklemeye yönelik üyeleri karşılar.
 
-Paylaşılan mutex türünü ek yöntemleri destekler `lock_shared`, `unlock_shared`, ve `try_lock_shared`:
+Paylaşılan bir mutex türü, ve `lock_shared` `try_lock_shared`ek yöntemleri `unlock_shared`destekler:
 
-- `lock_shared` Yöntemi iş parçacığı mutex paylaşılan sahipliğini alana kadar çağıran iş parçacığını engeller.
+- `lock_shared` Yöntemi, iş parçacığı, mutex 'in paylaşılan sahipliğini edinene kadar çağıran iş parçacığını engeller.
 
-- `unlock_shared` Yöntemi çağıran iş parçacığı tarafından tutulan mutex paylaşılan sahipliğini serbest bırakır.
+- `unlock_shared` Yöntemi, çağıran iş parçacığı tarafından tutulan mutex 'in paylaşılan sahipliğini yayınlar.
 
-- `try_lock_shared` Yöntemi engellemeden mutex paylaşılan sahipliğini almayı dener. Kendi dönüş türüne dönüştürülebilir **bool** ve **true** yöntemi sahipliğini alır, ancak aksi **false**.
+- `try_lock_shared` Yöntemi, karşılıklı mutex 'in paylaşılan sahipliğini engelleme olmadan almaya çalışır. Dönüş türü **bool** değerine dönüştürülebilir ve Yöntem sahipliği alırsa **true** , değilse **false 'tur**.
 
-Sınıf `shared_timed_mutex` olduğu bir *paylaşılan zamanlanmış mutex türünü*, her ikisi de gereksinimlerini karşılayan bir paylaşılan bir mutex türünü ve zamanlanmış bir mutex yazın.
+Sınıfı `shared_timed_mutex` , hem paylaşılan bir mutex türünün hem de zaman uyumu türünün gereksinimlerini karşılayan bir tür olan *paylaşılan bir zaman uyumu türüdür*.
 
-Ek yöntemleri bir paylaşılan zamanlanmış mutex türünü destekler `try_lock_shared_for` ve `try_lock_shared_until`:
+Paylaşılan bir zaman uyumu türü, ek yöntemleri `try_lock_shared_for` ve `try_lock_shared_until`şunları destekler:
 
-- `try_lock_shared_for` Yöntemi parametresi ile belirtilen süre bitene kadar mutex paylaşılan sahipliğini almayı dener. Süre pozitif değil ise, yöntem değerine eşdeğer olan `try_lock_shared`. Yöntemi, Paylaşılan sahiplik alındıktan sürece belirtilen süre içinde döndürmez. Dönüş değeri **true** yöntemi sahipliğini alır, ancak aksi **false**.
+- `try_lock_shared_for` Yöntemi, parametre tarafından belirtilen süre geçtikten sonra mutex 'in paylaşılan sahipliğini almaya çalışır. Süre pozitif değilse, yöntemi değerine `try_lock_shared`eşdeğerdir. Bu yöntem, paylaşılan sahiplik alınmadıysa belirtilen süre içinde döndürmüyor. Yöntemi sahiplik alırsa, aksi durumda **false**ise dönüş değeri **doğrudur** .
 
-- `try_lock_shared_until` Yöntemi belirtilen mutlak süre bitene kadar mutex paylaşılan sahipliğini almayı dener. Yöntemi, belirtilen zaman zaten geçtiyse, eşdeğer olan `try_lock_shared`. Sahipliği paylaşılan sürece belirtilen süre edinmenizden önce yöntemin döndürmez. Dönüş değeri **true** yöntemi sahipliğini alır, ancak aksi **false**.
+- `try_lock_shared_until` Yöntemi, belirtilen mutlak süre geçtikten sonra mutex 'in paylaşılan sahipliğini almaya çalışır. Belirtilen saat zaten geçmişse, yöntemi değerine `try_lock_shared`eşdeğerdir. Bu yöntem, paylaşılan sahiplik alınmadığı takdirde belirtilen süreden önce döndürmez. Yöntemi sahiplik alırsa, aksi durumda **false**ise dönüş değeri **doğrudur** .
 
-`shared_lock` Şablon sınıfı, kilitleme ve sahipliğin aktarılması için paylaşılan bir mutex zaman aşımına için desteği genişletir. Mutex sahipliğini ya yapım sonrasındaki alınabilir ve başka aktarılamayacağını `shared_lock` nesne. Türündeki nesneler `shared_lock` taşınabilir, ancak kopyalanamaz.
+Şablon `shared_lock` sınıfı, paylaşılan bir mutex 'e zaman zaman kilitleme ve sahiplik aktarma desteğini genişletir. Mutex 'in sahipliği, oluşturma sırasında veya sonrasında elde edilebilir ve başka bir `shared_lock` nesneye aktarılabilir. Türündeki `shared_lock` nesneler taşınabilir, ancak kopyalanamayabilir.
 
 > [!WARNING]
-> Visual Studio 2015'te başlayarak, C++ Standart Kitaplığı eşitleme türleri üzerinde Windows eşitleme temellerine temel alır ve artık ConcRT (hedef platformu Windows XP olduğunda hariç) kullanın. İçinde tanımlanmış türlere &lt;shared_mutex > herhangi bir ConcRT türleri ve işlevleri ile birlikte kullanılmamalıdır.
+> Visual Studio 2015 ' den başlayarak C++ standart kitaplık eşitleme türleri Windows eşitleme temel temellerine dayalıdır ve artık ConcRT kullanmaz (hedef platformun Windows XP olduğu durumlar dışında). &lt;Shared_mutex > tanımlı türler, herhangi bir ConcRT türü veya işlevleriyle kullanılmamalıdır.
 
 ## <a name="classes"></a>Sınıflar
 
-###  <a name="class_shared_mutex"></a> shared_mutex sınıfı
+###  <a name="class_shared_mutex"></a>shared_mutex sınıfı
 
-Sınıf `shared_mutex` paylaşılan sahipliği semantiğine sahip bir özyinelemeli olmayan mutex uygular.
+Sınıf `shared_mutex` , paylaşılan sahiplik semantiğinin özyinelemeli olmayan bir mutex 'i uygular.
 
 ```cpp
 class shared_mutex {
@@ -135,9 +135,9 @@ public:
    };
 ```
 
-###  <a name="class_shared_timed_mutex"></a> shared_timed_mutex sınıfı
+###  <a name="class_shared_timed_mutex"></a>shared_timed_mutex sınıfı
 
-Sınıf `shared_timed_mutex` zamanlanmış mutex türünün gereksinimlerini karşılayan paylaşılan sahipliği semantiğine sahip bir özyinelemeli olmayan mutex uygular.
+Sınıfı `shared_timed_mutex` , zaman uyumsuz bir mutex türünün gereksinimlerini karşılayan paylaşılan sahiplik semantiğinin özyinelemeli olmayan bir mutex 'i uygular.
 
 ```cpp
 class shared_timed_mutex {
@@ -167,9 +167,9 @@ public:
    };
 ```
 
-###  <a name="class_shared_lock"></a> shared_lock sınıfı
+###  <a name="class_shared_lock"></a>shared_lock sınıfı
 
-Şablon sınıfı `shared_lock` paylaşılan mutex nesnesi bir kapsam içindeki paylaşılan sahipliğini denetler. Şablon parametresi paylaşılan mutex türünde olmalıdır.
+Şablon sınıfı `shared_lock` , bir kapsam içindeki paylaşılan bir mutex nesnesinin paylaşılan sahipliğini denetler. Şablon parametresi, paylaşılan bir mutex türü olmalıdır.
 
 ```cpp
 class shared_lock {
@@ -215,24 +215,24 @@ private:
 
 ## <a name="functions"></a>İşlevler
 
-###  <a name="function_swap"></a> değiştirme
+###  <a name="function_swap"></a>Kur
 
-Değiştirir `shared_lock` nesneleri.
+`shared_lock` Nesneleri değiştirir.
 
 ```cpp
 template <class Mutex>
 void swap(shared_lock<Mutex>& x, shared_lock<Mutex>& y) noexcept;
 ```
 
-İki içeriğini birbiriyle değiştirir `shared_lock` nesneleri. Etkili bir şekilde aynı `x.swap(y)`.
+İki `shared_lock` nesnenin içeriğini değiş tokuş eder. Etkin şekilde aynı `x.swap(y)`.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** &lt;shared_mutex >
+**Üst bilgi:** &lt;shared_mutex >
 
-**Namespace:** std
+**Ad alanı:** std
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Üstbilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md)<br/>
-[&lt;Mutex >](../standard-library/mutex.md)
+[Üst bilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md)\
+[&lt;mutex >](../standard-library/mutex.md)

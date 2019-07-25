@@ -23,16 +23,16 @@ helpviewer_keywords:
 - std::hash [C++]
 - std::hash [C++]
 ms.assetid: e1b500c6-a5c8-4f6f-ad33-7ec52eb8e2e4
-ms.openlocfilehash: 2f7206e3764df384004b78e6df2127833a784f70
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 61446ab6b79496024d44a99fcf5f500bb871bb80
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62405098"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68448814"
 ---
 # <a name="hash-class"></a>hash Sınıfı
 
-Hesaplar karma kodu için bir değer.
+Bir değer için karma kodu hesaplar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -45,7 +45,7 @@ struct hash {
 
 ## <a name="remarks"></a>Açıklamalar
 
-İşlev nesnesi türü için uygun bir karma işlevi tanımlar *Ty* dizin değerlerinin dağıtımına. Üye `operator()` bir karma kodu döndürür *val*, şablon sınıfları ile kullanım için uygun `unordered_map`, `unordered_multimap`, `unordered_set`, ve `unordered_multiset`. Standart kitaplık, temel türleri için uzmanlıklar sağlar: *Ty* işaretçi türleri ve Numaralandırma türleri dahil olmak üzere herhangi bir skalar türü olabilir. Ayrıca, kitaplık türleri için uzmanlıklar vardır `string`, `wstring`, `u16string`, `u32string`, `string_view`, `wstring_view`, `u16string_view`, `u32string_view`, `bitset`, `error_code`, `error_condition`, `optional`, `shared_ptr`, `thread`, `type_index`, `unique_ptr`, `variant`, ve `vector<bool>`.
+Function nesnesi bir karma işlevi tanımlar, *Bu tür değeri* , dizin değerlerinin dağıtımına göre değer eşlemek için uygundur. `operator()` Üye, *değer*için `unordered_map` `unordered_multimap` şablonsınıflarıyla`unordered_multiset`,, ve ile kullanım için uygun bir karma kod döndürür. `unordered_set` Standart Kitaplık, temel türler için uzmanlık sağlar: *Ty* , işaretçi türleri ve numaralandırma türleri de dahil olmak üzere herhangi bir skalar tür olabilir. Ayrıca, kitaplık türleri `string` ,`string_view` ,,`wstring_view`,, ,`u32string_view`, ,`bitset`,,,,,,,,,,,,,, `error_code` `u16string_view` `wstring` `u16string` `u32string` `error_condition`, ,`optional` ,,`unique_ptr`,,, ve`vector<bool>`. `shared_ptr` `thread` `type_index` `variant`
 
 ## <a name="example"></a>Örnek
 
@@ -72,13 +72,13 @@ int main()
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** \<işlev >
+**Üst bilgi:** \<işlevsel >
 
-**Namespace:** std
+**Ad alanı:** std
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[<unordered_map>](../standard-library/unordered-map.md)<br/>
-[unordered_multimap Sınıfı](../standard-library/unordered-multimap-class.md)<br/>
-[unordered_multiset Sınıfı](../standard-library/unordered-multiset-class.md)<br/>
-[<unordered_set>](../standard-library/unordered-set.md)<br/>
+[< unordered_map >](../standard-library/unordered-map.md)\
+[unordered_multimap Sınıfı](../standard-library/unordered-multimap-class.md)\
+[unordered_multiset sınıfı](../standard-library/unordered-multiset-class.md)\
+[<unordered_set>](../standard-library/unordered-set.md)

@@ -6,16 +6,16 @@ f1_keywords:
 helpviewer_keywords:
 - add_lvalue_reference
 ms.assetid: 9933afc2-ad0d-465d-98fe-7d547fa3efe2
-ms.openlocfilehash: 8dbb4f91da8d7a0bf0a90b3edc4fce2918d52a9b
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 6317b6665adb7f3a06da564fcf049d0b64eb42e8
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62411207"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68456569"
 ---
 # <a name="addlvaluereference-class"></a>add_lvalue_reference sınıfı
 
-Yaptığı türünden başvurusu.
+Türden türe başvuru yapar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -29,12 +29,12 @@ using add_lvalue_reference_t = typename add_lvalue_reference<T>::type;
 
 ### <a name="parameters"></a>Parametreler
 
-*T*<br/>
+*ŞI*\
 Değiştirilecek tür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Tür değiştiricinin bir örneği bir değişiklik-tür tutar *T* varsa *T* bir lvalue başvurusuna, aksi halde kalır `T&`.
+Tür değiştiricisinin bir örneği, *t* bir lvalue başvurusu ise, aksi durumda `T&` *t* olan bir değiştirilmiş türü tutar.
 
 ## <a name="example"></a>Örnek
 
@@ -61,11 +61,11 @@ add_lvalue_reference_t<int> == int
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** \<type_traits >
+**Üst bilgi:** \<type_traits >
 
-**Namespace:** std
+**Ad alanı:** std
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[<type_traits>](../standard-library/type-traits.md)<br/>
-[remove_reference Sınıfı](../standard-library/remove-reference-class.md)<br/>
+[< type_traits >](../standard-library/type-traits.md)\
+[remove_reference Sınıfı](../standard-library/remove-reference-class.md)

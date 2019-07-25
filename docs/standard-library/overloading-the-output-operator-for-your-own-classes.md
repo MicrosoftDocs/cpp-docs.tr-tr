@@ -1,24 +1,24 @@
 ---
-title: Aşırı yükleme &lt; &lt; kendi işleci
+title: Kendi sınıflarınız için işleci aşırı yükleme &lt; &lt;
 ms.date: 11/04/2016
 helpviewer_keywords:
 - operator<<, overloading for your own classes
 - operator <<, overloading for your own classes
 ms.assetid: ad1d2c49-d84e-48a8-9c09-121f28b10bf0
-ms.openlocfilehash: 290491f7afb22873d60abb6662b470d8e7abefc1
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c470bb7335a5997ae26327f99b8c5f31d20b4edb
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62370690"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68452060"
 ---
-# <a name="overloading-the-ltlt-operator-for-your-own-classes"></a>Aşırı yükleme &lt; &lt; kendi işleci
+# <a name="overloading-the-ltlt-operator-for-your-own-classes"></a>Kendi sınıflarınız için işleci aşırı yükleme &lt; &lt;
 
-Çıkış akışları ekleme kullanın (`<<`) standart türler için işleci. Ayrıca aşırı `<<` kendi işleci.
+Çıkış akışları standart türler için ekleme`<<`() işlecini kullanır. Ayrıca kendi sınıflarınız için `<<` işlecini aşırı yükleyebilirsiniz.
 
 ## <a name="example"></a>Örnek
 
-`write` İşlevi örnek kullanımını gösteriyordu bir `Date` yapısı. Veri üyeleri (ay, gün ve yıl) görünümünden gizlenen bir C++ sınıfı için ideal bir aday tarihtir. Böyle bir yapı görüntülemek için mantıksal hedef bir çıkış akışıdır. Bu kod kullanarak bir tarih görüntüler `cout` nesnesi:
+İşlev örneği bir `Date` yapının kullanımını gösterdi. `write` Tarih, veri üyelerinin (ay, gün C++ ve yıl) görünümden gizlendiği bir sınıf için ideal bir adaydır. Çıkış akışı, böyle bir yapıyı görüntülemek için mantıksal hedefdir. Bu kod, `cout` nesnesini kullanarak bir tarih görüntüler:
 
 ```cpp
 Date dt(1, 2, 92);
@@ -26,7 +26,7 @@ Date dt(1, 2, 92);
 cout <<dt;
 ```
 
-Almak için `cout` kabul etmek için bir `Date` tanımak için ekleme İşleç aşırı yüklemesi, nesne ekleme işleçten sonra bir `ostream` soldaki nesnesi ve bir `Date` sağ. Aşırı yüklenen `<<` işleç işlevini ardından bildirilmiş bir sınıfın arkadaş `Date` içinde özel verilere erişebilmek için bir `Date` nesne.
+Ekleme işlecinden sonra bir `Date` nesneyi kabul `ostream` `Date` etmek için, sol ve sağ taraftaki bir nesneyi tanımak üzere ekleme işlecini aşırı yükleme. `cout` Aşırı yüklenmiş `<<` işleç işlevi, bir `Date` nesne içindeki özel verilere erişebilmeleri için sınıfın `Date` bir arkadaşınız olarak bildirilmelidir.
 
 ```cpp
 // overload_date.cpp
@@ -64,7 +64,7 @@ int main()
 
 ## <a name="remarks"></a>Açıklamalar
 
-Aşırı yüklenmiş işleç özgün bir başvuru döndürür `ostream` nesne eklemeler birleştirebilirsiniz anlamına gelir:
+Aşırı yüklenmiş operatör özgün `ostream` nesneye bir başvuru döndürür; bu, eklemeleri birleştirebileceğiniz anlamına gelir:
 
 ```cpp
 cout <<"The date is" <<dt <<flush;
@@ -72,4 +72,4 @@ cout <<"The date is" <<dt <<flush;
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Çıkış Akışları](../standard-library/output-streams.md)<br/>
+[Çıkış Akışları](../standard-library/output-streams.md)

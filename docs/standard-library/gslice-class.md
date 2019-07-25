@@ -12,56 +12,56 @@ helpviewer_keywords:
 - std::gslice [C++], start
 - std::gslice [C++], stride
 ms.assetid: f47cffd0-ea59-4b13-848b-7a5ce1d7e2a3
-ms.openlocfilehash: bee6fec3e09f7c5758112ba8b0c171a300797f9a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 9290fabc86ffbdb051b7c61fe1600cd2f7f17dca
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62159476"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68448891"
 ---
 # <a name="gslice-class"></a>gslice Sınıfı
 
-Çok boyutlu bir valarray kümelerine tanımlamak için kullanılan valarray için yardımcı program sınıfı. Bir valarray bir dizideki tüm öğeler çok boyutlu bir matris olarak kabul edilir, dilim boyutlu bir dizi dışında bir vektör ayıklar.
+Bir valarray 'ın çok boyutlu alt kümelerini tanımlamak için kullanılan valarray için yardımcı program sınıfı. Bir valarray, bir dizideki tüm öğelerle çok boyutlu bir matris olarak kabul edilir, dilim çok boyutlu dizinin bir vektörünü ayıklar.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Sınıf türünde bir nesne niteleyen parametreleri depolayan [gslice_array](../standard-library/gslice-array-class.md). Gslice sınıfı bir nesne sınıfının bir nesnesi için bağımsız değişken olarak göründüğünde alt kümesini bir valarray dolaylı olarak oluşturulmuş [valarray](../standard-library/valarray-class.md#op_at)**\<türü >**. Üst valarray Seçili alt küme belirtmeyi depolanan değerler şunlardır:
+Sınıfı, [gslice_array](../standard-library/gslice-array-class.md)türünde bir nesne niteleyen parametreleri depolar. Bir valarray alt kümesi, gslice sınıfının bir nesnesi [valarray](../standard-library/valarray-class.md#op_at) **\<türü >** bir nesne için bağımsız değişken olarak göründüğünde dolaylı olarak oluşturulur. Üst valarray seçili alt kümeyi belirten depolanan değerler şunları içerir:
 
-- Bir başlangıç dizini.
+- Başlangıç dizini.
 
-- Sınıfın bir uzunluk vektör `valarray<size_t>`.
+- Sınıfın `valarray<size_t>`uzunluk vektörü.
 
-- STRIDE vektör sınıfın `valarray<size_t>`.
+- Sınıfın `valarray<size_t>`bir adım vektörü.
 
-İki vektörün aynı uzunlukta olmalıdır.
+İki vektörün aynı uzunlukta olması gerekir.
 
-Bir gslice tarafından tanımlanan kümeye bir sabit valarray alt kümesidir, gslice yeni valarray olur. Bir gslice tarafından tanımlanan kümeye nonconstant valarray alt kümesidir, gslice özgün valarray için başvuru semantiği vardır. Değerlendirme mekanizması nonconstant valarrays süresi ve bellek kaydeder.
+Bir gslice tarafından tanımlanan küme bir sabit valarray alt kümesiyse, gslice yeni bir valarray. Bir gslice tarafından tanımlanan küme, sabit olmayan bir valarray 'nin alt kümesiyse, gslice 'ın özgün valarray başvuru semantiğini vardır. Sabit olmayan valarışın için değerlendirme mekanizması zaman ve bellek tasarrufu sağlar.
 
-Valarrays işlemleri yalnızca gslices tarafından tanımlanan kaynak ve hedef kümeleri farklıdır ve tüm dizinleri geçerli garanti edilir.
+Valarışın üzerinde işlemler yalnızca, gslices tarafından tanımlanan kaynak ve hedef alt kümeleri birbirinden farklı olduğunda ve tüm dizinler geçerliyse garanti edilir.
 
 ### <a name="constructors"></a>Oluşturucular
 
 |Oluşturucu|Açıklama|
 |-|-|
-|[gslice](#gslice)|Bir alt kümesini tanımlayan bir `valarray` birden çok dilimleri oluşur `valarray` tüm belirtilen bir öğe başlangıç.|
+|[gslice](#gslice)|Belirtilen bir öğe `valarray` ile başlayan `valarray` birden çok diliminden oluşan bir alt kümesini tanımlar.|
 
 ### <a name="member-functions"></a>Üye işlevleri
 
 |Üye işlevi|Açıklama|
 |-|-|
-|[Boyutu](#size)|Öğe sayıları genel bir dilim belirten dizi değerlerini bulur bir `valarray`.|
-|[start](#start)|Genel bir dilimin başlangıç dizini bulur bir `valarray`.|
-|[STRIDE](#stride)|Genel bir dilimin öğeler arasındaki uzaklık bulur bir `valarray`.|
+|[boyutla](#size)|Genel bir `valarray`diliminizdeki öğe sayılarını belirten dizi değerlerini bulur.|
+|[start](#start)|A `valarray`'nın genel diliminin başlangıç dizinini bulur.|
+|[adım](#stride)|Bir `valarray`genel dilimi içindeki öğeler arasındaki mesafeyi bulur.|
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** \<valarray >
+**Üst bilgi:** \<valarray >
 
-**Namespace:** std
+**Ad alanı:** std
 
-## <a name="gslice"></a>  gslice::gslice
+## <a name="gslice"></a>gslice:: gslice
 
-Çok boyutlu bir valarray Kesitler tanımlamak için kullanılan valarray için yardımcı program sınıfı.
+Bir valarray 'ın çok boyutlu dilimlerini tanımlamak için kullanılan valarray için yardımcı program sınıfı.
 
 ```cpp
 gslice();
@@ -74,22 +74,22 @@ gslice(
 
 ### <a name="parameters"></a>Parametreler
 
-*_StartIndex*<br/>
-Valarray ilk alt öğenin dizini.
+*_Startındex*\
+Alt kümedeki ilk öğenin valarray dizini.
 
-*_LenArray*<br/>
-Her bir dilimi içinde öğe sayısını belirten bir dizi.
+*_LenArray*\
+Her bir dilimdeki öğelerin sayısını belirten bir dizi.
 
-*_IncArray*<br/>
-İlerleme her bir dilimi belirten bir dizi.
+*_IncArray*\
+Her bir dilimde bir adım belirten dizi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Varsayılan Oluşturucu, başlangıç dizini için sıfır ve sıfır uzunluklu vektörleri uzunluğu ve STRIDE vektör depolar. İkinci oluşturucu depoları *_StartIndex* başlangıç dizini için *_LenArray* uzunluk dizisi için ve *_IncArray* STRIDE dizi.
+Varsayılan Oluşturucu başlangıç dizini için sıfır, uzunluk ve ilerleme vektörlerine yönelik sıfır uzunluklu vektörler depolar. İkinci Oluşturucu başlangıç dizini için *_Startındex* , length dizisi Için *_LenArray* ve bir Ilerlemesiyle dizi için *_incarray* depolar.
 
 ### <a name="remarks"></a>Açıklamalar
 
-**gslice** aynı her bir başlangıç öğesi belirtilen valarray birden çok Kesitler oluşan bir valarray kümesini tanımlar. Birden çok dilim tanımlamak için dizileri kullanabilme arasındaki tek fark olduğu `gslice` ve [slice::slice](../standard-library/slice-class.md#slice). İlk dilim ile bir dizinin ilk öğesinin *_StartIndex*, bir dizi ilk öğesi tarafından belirtilen öğe *_LenArray*ve ilk öğesi tarafından verilen bir adım *_IncArray* . Sonraki dikey dilimleri kümesini ilk dilim tarafından verilen ilk öğesine sahip. İkinci öğesini *_LenArray* öğelerin sayısını belirtir. STRIDE ikinci öğesi tarafından verilen *_IncArray*. Üçüncü boyutu dilim ve iki boyutlu dizi öğelerinin başlangıç öğesi olarak ele öğesine devam edin
+**gslice** , her biri belirtilen öğede başlayan valarray birden çok diliminden oluşan bir valarray alt kümesini tanımlar. Birden çok dilimi tanımlamak için dizileri kullanma yeteneği, ve `gslice` [Slice:: Slice](../standard-library/slice-class.md#slice)arasındaki tek farktır. İlk dilimin dizini *_Startındex*olan bir ilk öğe, *_LenArray*öğesinin ilk öğesi tarafından belirtilen bir dizi öğe ve *_incarray*öğesinin ilk öğesi tarafından verilen bir adım vardır. Dikgen dilimlerin sonraki kümesinde ilk dilim tarafından verilen ilk öğe vardır. *_Lenarray* öğesinin ikinci öğesi öğelerin sayısını belirtir. Bu adım, *_Incarray*öğesinin ikinci öğesi tarafından verilir. Üçüncü bir dilim boyutu, iki boyutlu dizinin öğelerini başlangıç öğeleri olarak alır ve anormal olarak devam edecektir
 
 ### <a name="example"></a>Örnek
 
@@ -138,9 +138,9 @@ The valarray for vaGSlice is vaResult:
 va[vaGSlice] = ( 0 4 8 12 7 11 15 19)
 ```
 
-## <a name="size"></a>  gslice::size
+## <a name="size"></a>gslice:: size
 
-Öğe sayıları bir valarray genel bir dilim belirten dizi değerlerini bulur.
+Bir valarray genel diliminizdeki öğe sayılarını belirten dizi değerlerini bulur.
 
 ```cpp
 valarray<size_t> size() const;
@@ -148,11 +148,11 @@ valarray<size_t> size() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir valarray, genel bir dilim her bir dilimi öğelerin sayısını belirten bir valarray.
+Bir valarray 'ın genel diliminin her bir diliminizdeki öğe sayısını belirten bir valarray.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi dilimleri saklı uzunluklarının döndürür.
+Üye işlevi, dilimlerin saklı uzunluklarını döndürür.
 
 ### <a name="example"></a>Örnek
 
@@ -216,9 +216,9 @@ The size of vaResult is:
 vaGSlice.size ( ) = ( 4 4 ).
 ```
 
-## <a name="start"></a>  gslice::Start
+## <a name="start"></a>gslice:: Start
 
-Genel bir valarray dilimin başlangıç dizini bulur.
+Bir valarray genel diliminin başlangıç dizinini bulur.
 
 ```cpp
 size_t start() const;
@@ -226,7 +226,7 @@ size_t start() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Genel bir valarray dilimin başlangıç dizini.
+Bir valarray genel diliminin başlangıç dizini.
 
 ### <a name="example"></a>Örnek
 
@@ -279,9 +279,9 @@ va[vaGSlice] = ( 0 4 8 12 7 11 15 19 ).
 The index of the first element of vaResult is: 0.
 ```
 
-## <a name="stride"></a>  gslice::stride
+## <a name="stride"></a>gslice:: ilerme
 
-Genel bir valarray dilimin öğeler arasındaki uzaklık bulur.
+Bir valarray genel diliminden öğeler arasındaki mesafeyi bulur.
 
 ```cpp
 valarray<size_t> stride() const;
@@ -289,7 +289,7 @@ valarray<size_t> stride() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Genel bir diliminin bir valarray, her bir dilimi öğeler arasında uzaklıkları belirten bir valarray.
+Bir valarray 'ın genel diliminin her bir diliminizdeki öğeler arasındaki uzaklıkları belirten bir valarray.
 
 ### <a name="example"></a>Örnek
 
@@ -349,4 +349,4 @@ vaGSlice.stride ( ) = ( 7 4 ).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
+[C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)

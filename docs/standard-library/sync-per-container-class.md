@@ -7,16 +7,16 @@ f1_keywords:
 helpviewer_keywords:
 - sync_per_container class
 ms.assetid: 0b4b2904-b668-4d94-a422-d4f919cbffab
-ms.openlocfilehash: 641595f663c382129a40ce503ebdb789f8042cf0
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 378451ac2643d62271fd9e7fa44706a84ee8bb83
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62412169"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68450282"
 ---
 # <a name="syncpercontainer-class"></a>sync_per_Kapsayıcı Sınıfı
 
-Açıklayan bir [eşitleme filtresi](../standard-library/allocators-header.md) her bir ayırıcı nesne için ayrı önbellek nesnesi sağlar.
+Her ayırıcı nesnesi için ayrı bir önbellek nesnesi sağlayan bir [eşitleme filtresi](../standard-library/allocators-header.md) tanımlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -30,23 +30,23 @@ class sync_per_container
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|*Önbellek*|Eşitleme filtresiyle ilişkili önbellek türü. Bu, [cache_chunklist](../standard-library/cache-chunklist-class.md), [cache_freelist](../standard-library/cache-freelist-class.md), veya [cache_suballoc](../standard-library/cache-suballoc-class.md).|
+|*Önbellek*|Eşitleme filtresiyle ilişkili önbelleğin türü. Bu, [cache_chunklist](../standard-library/cache-chunklist-class.md), [cache_freelist](../standard-library/cache-freelist-class.md)veya [cache_suballoc](../standard-library/cache-suballoc-class.md)olabilir.|
 
 ### <a name="member-functions"></a>Üye işlevleri
 
 |Üye işlevi|Açıklama|
 |-|-|
-|[equals](#equals)|Eşitlik için iki önbellekler karşılaştırır.|
+|[equals](#equals)|, Eşitlik için iki önbelleği karşılaştırır.|
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** \<ayırıcılar >
+**Üst bilgi:** \<ayrıcılar >
 
-**Namespace:** stdext
+**Ad alanı:** stdext
 
-## <a name="equals"></a>  sync_per_container::Equals
+## <a name="equals"></a>sync_per_container:: Equals
 
-Eşitlik için iki önbellekler karşılaştırır.
+, Eşitlik için iki önbelleği karşılaştırır.
 
 ```cpp
 bool equals(const sync_per_container<Cache>& Other) const;
@@ -56,15 +56,15 @@ bool equals(const sync_per_container<Cache>& Other) const;
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|*Önbellek*|Eşitleme filtresi önbellek nesnesi.|
-|*Diğer*|Eşitlik için karşılaştırma için önbellek nesnesi.|
+|*Önbellek*|Eşitleme filtresinin önbellek nesnesi.|
+|*Diğer*|Eşitlik için Karşılaştırılacak önbellek nesnesi.|
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Üye işlevi her zaman döndürür **false**.
+Üye işlev her zaman **false**döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[\<Ayırıcılar >](../standard-library/allocators-header.md)<br/>
+[\<ayrıcılar >](../standard-library/allocators-header.md)

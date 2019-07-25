@@ -5,20 +5,20 @@ helpviewer_keywords:
 - iterator conventions
 - C++ Standard Library, iterator conventions
 ms.assetid: 2f746be7-b37d-4bfc-bf05-be4336ca982f
-ms.openlocfilehash: d72cd26f2642816efae2ec826df1bd9fa02e7531
-ms.sourcegitcommit: 8bb2bea1384b290b7570b01608a86c7488ae7a02
+ms.openlocfilehash: ec23cbea63bc6884a361600362fcf0061e927ca6
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "67400418"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68449957"
 ---
 # <a name="iterators"></a>Yineleyiciler
 
-Bir yineleyicinin bir C++ Standart Kitaplığı kapsayıcı öğeler üzerinden yineleme yapma ve tek tek öğelere erişim sağlayan bir nesnedir. Öğeleri algoritmaları öğeleri standart bir biçimde kapsayıcı türü ile merak gerek kalmadan erişebilmesi için tüm yineleyiciler sağlayan C++ Standart Kitaplığı kapsayıcıları depolanır.
+Yineleyici bir C++ standart kitaplık kapsayıcısındaki öğeleri yinelemek ve tek tek öğelere erişim sağlamak için bir nesnedir. Standart C++ kitaplık kapsayıcıları, algoritmaların öğelerine, öğelerin depolandığı kapsayıcı türüyle ilgilenmeden bir standart şekilde erişmelerini sağlamak için yineleyiciler sağlar.
 
-Yineleyiciler açıkça üyesi ve genel işlevler gibi kullanarak kullanabileceğiniz `begin()` ve `end()` ve işleçler gibi **++** ve **--** ilerlemek için veya Geriye dönük. Yineleyiciler örtük olarak bir aralık kullanabilirsiniz-(bazı yineleyici türleri için) veya döngü için alt simge işleci  **\[]** .
+Yineleyiciler, `begin()` ve `end()` gibi nesneler ve genel işlevleri kullanarak, ve gibi işleçler **++** **--** ve ileri veya geri taşımak için kullanabilirsiniz. Yineleyicilerin bir for döngüsü veya (bazı yineleyici türleri için) alt  **\[simge işleci ile**örtülü olarak de kullanabilirsiniz.
 
-C++ Standart Kitaplığı dizisi veya aralık başına ilk öğesidir. Dizisi veya aralığın sonu, her zaman son öğeden bir öncekine olarak tanımlanır. Genel işlevler `begin` ve `end` belirtilen kapsayıcıya yineleyiciler döndürür. Bir kapsayıcıdaki tüm öğeleri tipik açık yineleyici döngüsü şöyle görünür:
+C++ Standart kitaplıkta, bir sıranın veya aralığın başlangıcı ilk öğedir. Bir sıranın veya aralığın sonu her zaman son öğeden bir geçmiş olarak tanımlanır. Genel işlevler `begin` ve `end` yineleyiciler belirtilen kapsayıcıya döndürülür. Bir kapsayıcıdaki tüm öğeler üzerinde tipik açık Yineleyici döngüsü şöyle görünür:
 
 ```cpp
 vector<int> vec{ 0,1,2,3,4 };
@@ -29,7 +29,7 @@ for (auto it = begin(vec); it != end(vec); it++)
 }
 ```
 
-Aynı şeyi daha basit bir aralık gerçekleştirilebilir-for döngüsü:
+Aynı şey, bir dizi döngüyle daha basit bir şekilde gerçekleştirilebilir:
 
 ```cpp
 for (auto num : vec)
@@ -39,56 +39,56 @@ for (auto num : vec)
 }
 ```
 
-Yineleyicilerin beş kategorisi vardır. Güç artan sırada kategorileri şunlardır:
+Yineleyicilerin beş kategorisi vardır. Güç artırma sırasıyla kategoriler şunlardır:
 
-- **Çıkış**. Bir *çıkış yineleyici* `X` kullanarak bir dizi üzerinde İleri yineleyebilirsiniz **++** işleci ve kullanarak bir öğe yalnızca bir kez yazabilirsiniz __\*__ işleci.
+- **Çıktı**. *Çıkış Yineleyici* `X` , **++** işlecini kullanarak bir sıra boyunca İleri doğru bir şekilde yineleyebilirsiniz ve __\*__ işlecini kullanarak bir öğeyi yalnızca bir kez yazabilir.
 
-- **Giriş**. Bir *giriş yineleyici* `X` kullanarak bir dizi üzerinde İleri yineleyebilirsiniz ++ işleç ve bir öğe herhangi sayıda kullanarak okuyabilir **&ast;** işleci. Giriş yineleyiciler kullanarak karşılaştırabilirsiniz **++** ve **! =** işleçleri. Herhangi bir giriş yineleyici kopyasını artırmanız sonra diğer kopyaların hiçbiri güvenli bir şekilde, başvurusu kaldırılmış veya artan bundan sonra karşılaştırılabilir.
+- **Giriş**. Bir *giriş Yineleyici* `X` , + + işlecini kullanarak bir dizi üzerinde ileri doğru bir şekilde yineleyebilirsiniz ve **&ast;** işlecini kullanarak herhangi bir sayıda öğeyi okuyabilir. **++** Ve **! =** işleçlerini kullanarak giriş yineleyicilerini karşılaştırabilirsiniz. Bir giriş yineleyicisinin herhangi bir kopyasını artırdıktan sonra, diğer kopyaların hiçbiri güvenli bir şekilde karşılaştırılamaz, başvurulduktan veya artmaz.
 
-- **İleri**. A *ileriye doğru yineleyici* `X` İleri dizisi kullanılarak üzerinden yineleme ++ işleci ve herhangi bir öğeyi okuyabilen veya sabit olmayan öğeleri kullanarak herhangi bir sayıda kez yazma **&ast;** işleci. Öğe üyeleri kullanarak erişebileceğiniz **->** işleci ve karşılaştırma İleri yineleyiciler kullanılarak **==** ve **! =** işleçleri. Her biri kullanılabilir başvurusu ve bağımsız olarak artan bir ileriye doğru yineleyici birden çok kopyasını yapabilirsiniz. Tüm kapsayıcı başvuru adlı olmadan başlatılır ileri doğru yineleyici bir *null ileriye doğru yineleyici*. Null İleri yineleyiciler her zaman eşit karşılaştırın.
+- **İleri**. Bir *ileriye doğru yineleyici* `X` , + + işlecini kullanarak bir dizi üzerinde ileri doğru yineleyebilir ve **&ast;** işlecini kullanarak herhangi bir öğeyi okuyabilir veya const olmayan öğeleri yazabilir. **->** İşlecini kullanarak öğe üyelerine erişebilir ve **==** ve **! =** işleçlerini kullanarak ileri yineleyicileri karşılaştırın. Bir ileri yineleyicisinin, her biri başvurusu kaldırılmış ve bağımsız olarak arttırılan birden çok kopyasını oluşturabilirsiniz. Herhangi bir kapsayıcıya başvuru olmadan başlatılan bir ileri Yineleyici, *null ileri Yineleyici*olarak adlandırılır. Null ileri yineleyiciler her zaman eşit olarak Karşılaştır.
 
-- **Çift yönlü**. A *çift yönlü yineleyici* `X` ileriye doğru yineleyici yerini alabilir. Ancak ayrıca çift yönlü bir yineleyici gibi azaltma kullanabileceği `--X`, `X--`, veya `(V = *X--)`. Öğe üyelere erişmek ve çift yönlü yineleyiciler ileriye doğru Yineleyicilerin aynı şekilde karşılaştırın.
+- **Çift yönlü**. *Çift yönlü bir yineleyici* `X` , ileriye doğru bir yineleyicinin yerini alabilir. Bununla birlikte,, veya `--X` `(V = *X--)`' de `X--`olduğu gibi çift yönlü yineleyiciyi de azaledebilirsiniz. Öğe üyelerine erişebilir ve çift yönlü yineleyiciler ileri yineleyiciler ile aynı şekilde karşılaştırabilirsiniz.
 
-- **Rastgele erişim**. A *rastgele erişim yineleyicisini* `X` çift yönlü bir yineleyici yerini alabilir. Alt simge işleci kullanabileceğiniz bir rastgele erişim yineleyici ile  **\[]** öğelere erişim. Kullanabileceğiniz **+** , **-** , **+=** ve **-=** taşımak işleçleri ileriye veya geriye doğru öğelerin ve yineleyici arasındaki uzaklığı hesaplamak için belirtilen bir sayı. Çift yönlü yineleyiciler kullanarak karşılaştırabilirsiniz **==** , **! =** , **\<** , **>** , **\< =** , ve **>=** .
+- **Rastgele erişim**. *Rastgele erişim Yineleyici* `X` , çift yönlü yineleyicinin yerini alabilir. Rastgele bir erişim yineleyicisi ile, öğelere  **\[erişmek için '** alt simge işlecini kullanabilirsiniz. **+** **,-** Ve **işleçlerini,belirtilensayıdaöğeyiileriveyageritaşımakveyineleyicilerarasındakimesafeyihesaplamakiçinkullanabilirsiniz.-=** **+=** , **==** **!** **\<** **=, ,,\<Ve kullanarak çift yönlü yineleyiciler karşılaştırabilirsiniz. =**  **>** **>=**
 
-Tüm yineleyiciler atanan veya kopyalanır. Bunlar basit nesneler olarak kabul edilir ve genellikle geçirilen ve başvuruya göre değil değere göre döndürdü. Ayrıca, daha önce açıklanan işlemlerin hiçbiri üzerinde geçerli bir yineleyici gerçekleştirildiğinde bir özel durum oluşturabilecek unutmayın.
+Tüm yineleyiciler atanabilir veya kopyalanabilir. Bunlar, hafif nesneler olarak kabul edilir ve genellikle, başvuruya göre değil, değer tarafından geçirilir ve döndürülür. Ayrıca, daha önce açıklanan işlemlerden hiçbirinin geçerli bir yineleyiciden gerçekleştirildiğinde özel durum oluşturabildiğini unutmayın.
 
-Yineleyici kategori hiyerarşisi üç dizileri göstererek özetlenebilir. Bir diziye salt yazılır erişim için herhangi birini kullanabilirsiniz:
+Yineleyici kategorilerinin hiyerarşisi üç sıra göstererek özetlenebilir. Bir diziye salt yazılır erişim için aşağıdakilerden birini kullanabilirsiniz:
 
-> Çıkış yineleyici<br/>
-> ileriye doğru yineleyici -><br/>
-> çift yönlü yineleyici -><br/>
-> rastgele erişim yineleyicisini ->
+> Çıkış Yineleyici \
+> -> ileri Yineleyici \
+> -Çift yönlü yineleyiciyi > \
+> -> Rastgele erişimli Yineleyici
 
-Sağ ok "tarafından değiştirilebilir." anlamına gelir. Çıkış yineleyici güzelce ileriye doğru yineleyici ile Örneğin, iş, çağıran herhangi bir algoritma ancak *değil* güvenmelidir.
+Sağ ok, "değiştirilerek değiştirilebilir" anlamına gelir. Bir çıkış yineleyiciyi çağıran her bir algoritma, örneğin, bir ileri Yineleyici ile biraz çalışır *, ancak başka* bir şekilde çalışmaz.
 
-Bir diziye salt okunur erişim için herhangi birini kullanabilirsiniz:
+Bir diziye salt okuma erişimi için aşağıdakilerden birini kullanabilirsiniz:
 
-> Giriş yineleyici<br/>
-> ileriye doğru yineleyici -><br/>
-> çift yönlü yineleyici -><br/>
-> rastgele erişim yineleyicisini ->
+> giriş Yineleyici \
+> -> ileri Yineleyici \
+> -Çift yönlü yineleyiciyi > \
+> -> Rastgele erişimli Yineleyici
 
-Bir giriş yineleyici zayıf tüm kategoriler, bu durumda olur.
+Bu durumda, bir giriş yineleyicisi tüm kategorilerin en zayıf halini içerir.
 
-Son olarak, bir dizi için okuma/yazma erişimi için herhangi birini kullanabilirsiniz:
+Son olarak, bir diziye yönelik okuma/yazma erişimi için aşağıdakilerden birini kullanabilirsiniz:
 
-> ileriye doğru yineleyici<br/>
-> çift yönlü yineleyici -><br/>
-> rastgele erişim yineleyicisini ->
+> ileri Yineleyici \
+> -Çift yönlü yineleyiciyi > \
+> -> Rastgele erişimli Yineleyici
 
-Uygun okuma/yazma erişimi, atayan dizisine destekliyorsa, yineleyici herhangi bir kategori sunabilmeniz için bir nesne işaretçisi her zaman bir rastgele erişim yineleyici hizmet verebilir.
+Bir nesne işaretçisi her zaman Rastgele erişimli bir yineleyici olarak görev yapabilir, bu sayede, yaptığı diziye uygun okuma/yazma erişimini destekliyorsa herhangi bir yineleyici kategorisi olarak görev yapabilir.
 
-Bir yineleyici `Iterator` dışındaki bir nesnenin uzmanlık tarafından gerekli üye türleri de işaretçi tanımlamalıdır `iterator_traits<Iterator>`. Bu gereksinimleri türetilerek karşılanabiliyorsa unutmayın `Iterator` genel temel sınıftan [yineleyici](../standard-library/iterator-struct.md).
+Bir nesne `Iterator` işaretçisi dışındaki bir yineleyici, özelleşmenin `iterator_traits<Iterator>`gerektirdiği üye türlerini de tanımlamalıdır. Bu gereksinimlerin, genel temel sınıf `Iterator` [yineleyiciden](../standard-library/iterator-struct.md)türeterek karşılanabileceği unutulmamalıdır.
 
-Gösterir ve her bir yineleyici kategori sınırlamaları yineleyiciler kapsayıcılar ve C++ Standart Kitaplığı algoritmaları tarafından nasıl kullanıldığını görmek için anlamak önemlidir.
+Yineleyicilerin C++ standart kitaplıktaki kapsayıcılar ve algoritmalar tarafından nasıl kullanıldığını görmek için her Yineleyici kategorisinin taahhüt ve sınırlamalarını anlamak önemlidir.
 
 > [!NOTE]
-> Yineleyicilerin aralığı kullanarak kullanarak açıkça kaçınabilirsiniz-döngüler için. Daha fazla bilgi için [Range-based for deyimi](../cpp/range-based-for-statement-cpp.md).
+> Döngüler için Range-for döngüleri kullanarak yineleyiciler kullanmaktan kaçınabilirsiniz. Daha fazla bilgi için bkz. [Aralık tabanlı for deyimleri](../cpp/range-based-for-statement-cpp.md).
 
-Microsoft C++ artık teklifler işaretli yineleyiciler ve hata ayıklama yineleyiciler, kapsayıcınızın sınırlarının üzerine değil emin olmak için. Daha fazla bilgi için [Checked Iterators](../standard-library/checked-iterators.md) ve [Debug Iterator Support](../standard-library/debug-iterator-support.md).
+Microsoft C++ artık, kapsayıcının sınırları üzerine yazılmadığından emin olmak için, denetlenen yineleyiciler ve hata ayıklama yineleyicileri sunmaktadır. Daha fazla bilgi için bkz. [denetlenen yineleyiciler](../standard-library/checked-iterators.md) ve [hata ayıklama Yineleyici desteği](../standard-library/debug-iterator-support.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C++ Standart Kitaplığı Başvurusu](../standard-library/cpp-standard-library-reference.md)<br/>
-[C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
+[C++Standart kitaplık başvurusu](../standard-library/cpp-standard-library-reference.md)\
+[C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)

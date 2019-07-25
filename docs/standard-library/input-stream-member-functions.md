@@ -5,12 +5,12 @@ helpviewer_keywords:
 - input stream objects
 - input streams, member functions
 ms.assetid: b4b9465d-0da9-4ccf-859d-72a68418982e
-ms.openlocfilehash: 3b028090c9b91c7f0dde195243a5d2daef55fbbc
-ms.sourcegitcommit: 878a164fe6d550ca81ab87d8425c8d3cd52fe384
+ms.openlocfilehash: b846ff177f3032d81e5c81a39a0111c73a1750fb
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68376240"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68452064"
 ---
 # <a name="input-stream-member-functions"></a>Giriş Akışı Üye İşlevleri
 
@@ -186,4 +186,4 @@ int main( )
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Giriş Akışları](../standard-library/input-streams.md)<br/>
+[Giriş Akışları](../standard-library/input-streams.md)

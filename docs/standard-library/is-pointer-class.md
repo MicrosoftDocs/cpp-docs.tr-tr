@@ -7,16 +7,16 @@ helpviewer_keywords:
 - is_pointer class
 - is_pointer
 ms.assetid: 44e0a403-7241-4e0a-8922-32877bcb9a4c
-ms.openlocfilehash: 7e46d692f76f80302dcd181aa1cee2efd1b189d8
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: d8b15f9eb5ef817f5576387b0d8119b86aa86af7
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62413612"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68455739"
 ---
 # <a name="ispointer-class"></a>is_pointer Sınıfı
 
-Bir işaretçi türü olup olmadığını sınar.
+Tür bir işaretçisiyse sınar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -27,12 +27,12 @@ struct is_pointer;
 
 ### <a name="parameters"></a>Parametreler
 
-*Ty*<br/>
+*Kalite*\
 Sorgulanacak tür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Karşılaştırmasının bir örneği true tutan türü *Ty* işaretçisidir **void**, işaretçi bir nesne için bir veya bir işlev işaretçisine veya bir `cv-qualified` bunlardan biri, aksi takdirde false tuttuğu biçimi. Unutmayın `is_pointer` ayrı tutma false ise *Ty* üye işaretçisi veya bir üye işlevi işaretçisi.
+Tür değeri **void**, bir nesnenin işaretçisi veya bir işlevin işaretçisi ya `cv-qualified` da birinin bir biçimi ise, yanlış bir değer içeriyorsa tür belirtiminin bir örneği true değerini tutar. Ty bir üye işaretçisi veya  üye işlevine yönelik bir işaretçi ise, yanlış bir değer içerir.`is_pointer`
 
 ## <a name="example"></a>Örnek
 
@@ -74,12 +74,12 @@ is_pointer<int *> == true
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** \<type_traits >
+**Üst bilgi:** \<type_traits >
 
-**Namespace:** std
+**Ad alanı:** std
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[<type_traits>](../standard-library/type-traits.md)<br/>
-[is_member_pointer Sınıfı](../standard-library/is-member-pointer-class.md)<br/>
-[is_reference Sınıfı](../standard-library/is-reference-class.md)<br/>
+[< type_traits >](../standard-library/type-traits.md)\
+[is_member_pointer sınıfı](../standard-library/is-member-pointer-class.md)\
+[is_reference Sınıfı](../standard-library/is-reference-class.md)

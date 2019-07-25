@@ -7,16 +7,16 @@ helpviewer_keywords:
 - is_enum class
 - is_enum
 ms.assetid: df3b00b7-4f98-4b3a-96ce-10ad958ee69c
-ms.openlocfilehash: 623bda13a12ac311618e1b9fffdbc3f676013df6
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 4c8ac69bacf72cc9a281e239263a14a42f4a0efe
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62336512"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68452674"
 ---
 # <a name="isenum-class"></a>is_enum Sınıfı
 
-Bir numaralandırma türü olup olmadığını sınar.
+Tür bir sabit listesi ise sınar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -27,12 +27,12 @@ struct is_enum;
 
 ### <a name="parameters"></a>Parametreler
 
-*Ty*<br/>
+*Kalite*\
 Sorgulanacak tür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Karşılaştırmasının bir örneği true tutar türü *Ty* bir sabit listesi türü veya bir `cv-qualified` form tuttuğu yanlış bir numaralandırma türü, aksi takdirde.
+Tür değeri bir sabit listesi türü veya `cv-qualified` numaralandırma türünde bir form *ise true* , aksi takdirde false barındırır.
 
 ## <a name="example"></a>Örnek
 
@@ -71,11 +71,11 @@ is_enum<int> == false
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** \<type_traits >
+**Üst bilgi:** \<type_traits >
 
-**Namespace:** std
+**Ad alanı:** std
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[<type_traits>](../standard-library/type-traits.md)<br/>
-[is_integral Sınıfı](../standard-library/is-integral-class.md)<br/>
+[< type_traits >](../standard-library/type-traits.md)\
+[is_integral Sınıfı](../standard-library/is-integral-class.md)

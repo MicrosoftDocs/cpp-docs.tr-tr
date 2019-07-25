@@ -20,16 +20,16 @@ helpviewer_keywords:
 - std::condition_variable::wait
 - std::condition_variable::wait_for
 - std::condition_variable::wait_until
-ms.openlocfilehash: 69f356301ce5b546c8bebe9429ca64fa61eff404
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.openlocfilehash: 999e236433ec4f3f2f52abb06855004a89169fa6
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68244632"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68449453"
 ---
 # <a name="conditionvariable-class"></a>condition_variable Sınıfı
 
-Kullanım `condition_variable` varsa bir olay beklemek için sınıf bir `mutex` türü `unique_lock<mutex>`. Bu tür nesneler türündeki nesneler daha iyi performans olabilir [condition_variable_any < unique_lock\<mutex >>](../standard-library/condition-variable-any-class.md).
+`condition_variable` Bir `mutex` türe sahipolduğunuzdabirolayıbeklemekiçinsınıfınıkullanın.`unique_lock<mutex>` Bu türden nesneler, [condition_variable_any < unique_lock\<mutex > >](../standard-library/condition-variable-any-class.md)türünden nesnelerden daha iyi performansa sahip olabilir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -43,22 +43,22 @@ class condition_variable;
 
 |||
 |-|-|
-|[condition_variable](#condition_variable)|Oluşturur bir `condition_variable` nesne.|
+|[condition_variable](#condition_variable)|Bir `condition_variable` nesnesi oluşturur.|
 
 ### <a name="functions"></a>İşlevler
 
 |||
 |-|-|
 |[native_handle](#native_handle)|Condition_variable tanıtıcısını temsil eden uygulamaya özel türü döndürür.|
-|[notify_all](#notify_all)|İçin bekleyen tüm iş parçacıklarının engellemesinin kaldırıldığı `condition_variable` nesne.|
-|[notify_one](#notify_one)|İçin bekleyen iş parçacıklarının birinin engellemesini kaldırır `condition_variable` nesne.|
-|[bekleme](#wait)|Bir iş parçacığını engeller.|
-|[wait_for](#wait_for)|Bir iş parçacığını engeller ve sonrasında iş parçacığı engellemesinin kaldırıldığı bir zaman aralığı ayarlar.|
-|[wait_until](#wait_until)|Bir iş parçacığını engeller ve hangi iş parçacığı engellemesinin kaldırıldığı zaman maksimum noktası ayarlar.|
+|[notify_all](#notify_all)|`condition_variable` Nesne için bekleyen tüm iş parçacıklarının bloklarını kaldırır.|
+|[notify_one](#notify_one)|`condition_variable` Nesne için bekleyen iş parçacıklarından birinin engellemesini kaldırır.|
+|[bekleneceğini](#wait)|Bir iş parçacığını engeller.|
+|[wait_for](#wait_for)|Bir iş parçacığını engeller ve sonra iş parçacığı bloklarından sonra bir zaman aralığı ayarlar.|
+|[wait_until](#wait_until)|Bir iş parçacığını engeller ve iş parçacığı bloklarından en fazla bir zaman noktası ayarlar.|
 
-## <a name="condition_variable"></a> condition_variable
+## <a name="condition_variable"></a>condition_variable
 
-Oluşturur bir `condition_variable` nesne.
+Bir `condition_variable` nesnesi oluşturur.
 
 ```cpp
 condition_variable();
@@ -66,9 +66,9 @@ condition_variable();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yeterli bellek yoksa, oluşturucu oluşturur bir [system_error](../standard-library/system-error-class.md) nesnesi bir `not_enough_memory` hata kodu. Başka bir kaynak kullanılamadığından nesne oluşturulamıyorsa, oluşturucu oluşturur bir `system_error` nesnesi bir `resource_unavailable_try_again` hata kodu.
+Yeterli kullanılabilir bellek yoksa, Oluşturucu `not_enough_memory` hata kodu içeren bir [system_error](../standard-library/system-error-class.md) nesnesi oluşturur. Başka bir kaynak kullanılabilir olmadığından nesne oluşturulamıyor, Oluşturucu `system_error` `resource_unavailable_try_again` hata koduna sahip bir nesne oluşturur.
 
-## <a name="native_handle"></a> native_handle
+## <a name="native_handle"></a>native_handle
 
 Condition_variable tanıtıcısını temsil eden uygulamaya özel türü döndürür.
 
@@ -78,25 +78,25 @@ native_handle_type native_handle();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`native_handle_type` Eşzamanlılık Çalışma zamanı iç veri yapılarını işaretçisi olarak tanımlanır.
+`native_handle_type`Eşzamanlılık Çalışma Zamanı iç veri yapıları için bir işaretçi olarak tanımlanır.
 
-## <a name="notify_all"></a> notify_all
+## <a name="notify_all"></a>notify_all
 
-İçin bekleyen tüm iş parçacıklarının engellemesinin kaldırıldığı `condition_variable` nesne.
+`condition_variable` Nesne için bekleyen tüm iş parçacıklarının bloklarını kaldırır.
 
 ```cpp
 void notify_all() noexcept;
 ```
 
-## <a name="notify_one"></a> notify_one
+## <a name="notify_one"></a>notify_one
 
-Bekleyen iş parçacıklarının birinin engellemesini kaldırır `condition_variable` nesne.
+`condition_variable` Nesne üzerinde bekleyen iş parçacıklarından birinin engellemesini kaldırır.
 
 ```cpp
 void notify_one() noexcept;
 ```
 
-## <a name="wait"></a> bekleme
+## <a name="wait"></a>bekleneceğini
 
 Bir iş parçacığını engeller.
 
@@ -109,26 +109,26 @@ void wait(unique_lock<mutex>& Lck, Predicate Pred);
 
 ### <a name="parameters"></a>Parametreler
 
-*Lck*\
-A [unique_lock\<mutex >](../standard-library/unique-lock-class.md) nesne.
+*LCK*\
+Bir [unique_lock\<mutex >](../standard-library/unique-lock-class.md) nesnesi.
 
 *Pred*\
-Döndüren herhangi bir ifade **true** veya **false**.
+**True** veya **false**döndüren herhangi bir ifade.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk yöntem engeller `condition_variable` nesnesine sinyal yollanana kadar [notify_one](#notify_one) veya [notify_all](#notify_all). Bu ayrıca uyanabilir.
+İlk yöntem, `condition_variable` nesneye bir [notify_one](#notify_one) veya [notify_all](#notify_all)çağrısı tarafından bildirilene kadar engeller. Ayrıca, uyanabilir 'i de uyandırabilirler.
 
-Aslında, ikinci yöntem aşağıdaki kodu çalıştırır.
+Aslında, ikinci yöntem aşağıdaki kodu yürütür.
 
 ```cpp
 while(!Pred())
     wait(Lck);
 ```
 
-## <a name="wait_for"></a> wait_for
+## <a name="wait_for"></a>wait_for
 
-Bir iş parçacığını engeller ve sonrasında iş parçacığı engellemesinin kaldırıldığı bir zaman aralığı ayarlar.
+Bir iş parçacığını engeller ve sonra iş parçacığı bloklarından sonra bir zaman aralığı ayarlar.
 
 ```cpp
 template <class Rep, class Period>
@@ -145,26 +145,26 @@ bool wait_for(
 
 ### <a name="parameters"></a>Parametreler
 
-*Lck*\
-A [unique_lock\<mutex >](../standard-library/unique-lock-class.md) nesne.
+*LCK*\
+Bir [unique_lock\<mutex >](../standard-library/unique-lock-class.md) nesnesi.
 
 *Rel_time*\
-A `chrono::duration` iş parçacığı süre miktarını belirten nesne uyanır.
+İş `chrono::duration` parçacığı uyanmadan önce geçen süreyi belirten bir nesne.
 
 *Pred*\
-Döndüren herhangi bir ifade **true** veya **false**.
+**True** veya **false**döndüren herhangi bir ifade.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İlk yöntem döndürür `cv_status::timeout` bekleme *Rel_time* geçti. Aksi takdirde yöntem döndürür `cv_status::no_timeout`.
+İlk yöntem, `cv_status::timeout` *Rel_time* geçtiğinde bekleme sonlandırılırsa döndürür. Aksi takdirde, yöntemi döndürür `cv_status::no_timeout`.
 
-İkinci yöntem değerini döndürür *Pred*.
+İkinci yöntem *Pred*değerini döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk yöntem engeller `condition_variable` nesnesine sinyal yollanana kadar [notify_one](#notify_one) veya [notify_all](#notify_all) veya zaman aralığı kadar *Rel_time* geçti. Bu ayrıca uyanabilir.
+`condition_variable` İlk yöntem, nesneye bir [notify_one](#notify_one) veya [notify_all](#notify_all) çağrısıyla veya zaman aralığı *Rel_time* geçene kadar bir çağrı tarafından sinyallene kadar engeller. Ayrıca, uyanabilir 'i de uyandırabilirler.
 
-Aslında, ikinci yöntem aşağıdaki kodu çalıştırır.
+Aslında, ikinci yöntem aşağıdaki kodu yürütür.
 
 ```cpp
 while(!Pred())
@@ -174,9 +174,9 @@ while(!Pred())
 return true;
 ```
 
-## <a name="wait_until"></a> wait_until
+## <a name="wait_until"></a>wait_until
 
-Bir iş parçacığını engeller ve hangi iş parçacığı engellemesinin kaldırıldığı zaman maksimum noktası ayarlar.
+Bir iş parçacığını engeller ve iş parçacığı bloklarından en fazla bir zaman noktası ayarlar.
 
 ```cpp
 template <class Clock, class Duration>
@@ -203,26 +203,26 @@ bool wait_until(
 
 ### <a name="parameters"></a>Parametreler
 
-*Lck*\
-A [unique_lock\<mutex >](../standard-library/unique-lock-class.md) nesne.
+*LCK*\
+Bir [unique_lock\<mutex >](../standard-library/unique-lock-class.md) nesnesi.
 
 *Abs_time*\
-A [chrono::time_point](../standard-library/time-point-class.md) nesne.
+Bir zaman [hatası:: time_point](../standard-library/time-point-class.md) nesnesi.
 
 *Pred*\
-Döndüren herhangi bir ifade **true** veya **false**.
+**True** veya **false**döndüren herhangi bir ifade.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Döndüren yöntemler bir `cv_status` türünü `cv_status::timeout` bekleme *Abs_time* geçen. Aksi takdirde, yöntemlerin dönüş `cv_status::no_timeout`.
+Bir `cv_status` tür döndüren yöntemler, Abs_time geçtiğinde bekleme sona erdiğinde döndürülür.  `cv_status::timeout` Aksi halde Yöntemler döndürülür `cv_status::no_timeout`.
 
-Döndüren yöntemler bir **bool** dönüş değeri *Pred*.
+Bir **bool** döndüren yöntemler *Pred*değerini döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk yöntem engeller `condition_variable` nesnesine sinyal yollanana kadar [notify_one](#notify_one) veya [notify_all](#notify_all) veya kadar `Abs_time`. Bu ayrıca uyanabilir.
+İlk yöntem, `condition_variable` nesneye bir [notify_one](#notify_one) veya [notify_all](#notify_all) veya Until `Abs_time`çağrısı tarafından bildirilene kadar engeller. Ayrıca, uyanabilir 'i de uyandırabilirler.
 
-Aslında, ikinci yöntem aşağıdaki kodu çalıştırır
+Aslında, ikinci yöntem aşağıdaki kodu yürütür
 
 ```cpp
 while(!Pred())
@@ -232,9 +232,9 @@ while(!Pred())
 return true;
 ```
 
-Üçüncü ve dördüncü yöntemler türünde bir nesne için bir işaretçi kullanın `xtime` değiştirilecek `chrono::time_point` nesne. `xtime` Nesnesini bir sinyal için beklenecek en uzun süreyi belirtir.
+Üçüncü ve dördüncü Yöntemler, `xtime` `chrono::time_point` nesneyi değiştirmek için türünde bir nesne işaretçisi kullanır. `xtime` Nesne, bir sinyal için beklenecek en uzun süreyi belirtir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Üstbilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md)<br/>
-[<condition_variable>](../standard-library/condition-variable.md)<br/>
+[Üst bilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md)\
+[<condition_variable>](../standard-library/condition-variable.md)

@@ -7,12 +7,12 @@ helpviewer_keywords:
 - remove_volatile class
 - remove_volatile
 ms.assetid: 8b87e2c2-a581-4eb3-8691-c5603910d61d
-ms.openlocfilehash: b327bb8362e1f6523d22950974012747e0de99f8
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 19514d1839fa6e0afcecb690dcb12657a85f3c2e
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62185938"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68451258"
 ---
 # <a name="removevolatile-class"></a>remove_volatile Sınıfı
 
@@ -30,12 +30,12 @@ using remove_volatile_t = typename remove_volatile<T>::type;
 
 ### <a name="parameters"></a>Parametreler
 
-*T*<br/>
+*ŞI*\
 Değiştirilecek tür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Örneği `remove_volatile<T>` bir değişiklik-tür tutar `T1` olduğunda *T* biçimindedir `volatile T1`, aksi takdirde *T*.
+`remove_volatile<T>` Bir örneği, *t* formu `T1` `volatile T1`olduğunda, yoksa *t*olarak değiştirilmiş bir türü tutar.
 
 ## <a name="example"></a>Örnek
 
@@ -61,11 +61,11 @@ remove_volatile_t<volatile int> == int
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** \<type_traits >
+**Üst bilgi:** \<type_traits >
 
-**Namespace:** std
+**Ad alanı:** std
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[<type_traits>](../standard-library/type-traits.md)<br/>
-[add_volatile Sınıfı](../standard-library/add-volatile-class.md)<br/>
+[< type_traits >](../standard-library/type-traits.md)\
+[add_volatile Sınıfı](../standard-library/add-volatile-class.md)

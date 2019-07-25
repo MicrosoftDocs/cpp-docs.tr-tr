@@ -6,16 +6,16 @@ f1_keywords:
 helpviewer_keywords:
 - cmath header
 ms.assetid: 80df1dba-60ca-4918-9c2e-fbf446eaa7d6
-ms.openlocfilehash: 1b581e19d53be6faddb983f12d739f2a199b2e9c
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.openlocfilehash: d01b02d8fa169aa7fddbc3e51d75e5328b400d2b
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68244740"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68459275"
 ---
 # <a name="ltcmathgt"></a>&lt;cmath&gt;
 
-Standart C Kitaplığı üstbilgisi içerir \<math.h > ve ilişkili adlar ekler `std` ad alanı.
+Standart C Kitaplığı üstbilgisi \<Math. h > içerir ve ilişkili adları `std` ad alanına ekler.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -217,7 +217,7 @@ float hypotf(float x, float y);
 long double hypotl(long double x, long double y);
 ```
 
-## <a name="three-dimensional-hypotenuse"></a>Üç boyutlu hipotenüs
+## <a name="three-dimensional-hypotenuse"></a>Üç boyutlu hipotenüsü
 
 ```cpp
 float hypot(float x, float y, float z);
@@ -358,7 +358,7 @@ float fmaf(float x, float y, float z);
 long double fmal(long double x, long double y, long double z);
 ```
 
-## <a name="classification--comparison-functions"></a>Sınıflandırma / karşılaştırma işlevleri
+## <a name="classification--comparison-functions"></a>Sınıflandırma/karşılaştırma işlevleri
 
 ```cpp
 int fpclassify(float x);
@@ -399,9 +399,9 @@ int isunordered(double x, double y);
 int isunordered(long double x, long double y);
 ```
 
-## <a name="mathematical-special-functions"></a>Özel matematik işlevleri
+## <a name="mathematical-special-functions"></a>Matematik özel işlevleri
 
-### <a name="associated-laguerre-polynomials"></a>İlişkili Laguerre polynomials
+### <a name="associated-laguerre-polynomials"></a>İlişkili Laguerre Polynomials
 
 ```cpp
 double assoc_laguerre(unsigned n, unsigned m, double x);
@@ -425,7 +425,7 @@ float betaf(float x, float y);
 long double betal(long double x, long double y);
 ```
 
-### <a name="complete-elliptic-integral-of-the-first-kind"></a>İlk tür Eliptik integral tamamlayın
+### <a name="complete-elliptic-integral-of-the-first-kind"></a>İlk türdeki eliptik integrali doldurun
 
 ```cpp
 double comp_ellint_1(double k);
@@ -433,7 +433,7 @@ float comp_ellint_1f(float k);
 long double comp_ellint_1l(long double k);
 ```
 
-### <a name="complete-elliptic-integral-of-the-second-kind"></a>İkinci tür Eliptik integral tamamlayın
+### <a name="complete-elliptic-integral-of-the-second-kind"></a>İkinci türdeki eliptik integrali doldurun
 
 ```cpp
 double comp_ellint_2(double k);
@@ -441,7 +441,7 @@ float comp_ellint_2f(float k);
 long double comp_ellint_2l(long double k);
 ```
 
-### <a name="complete-elliptic-integral-of-the-third-kind"></a>Üçüncü bir türdeki Eliptik integral tamamlayın
+### <a name="complete-elliptic-integral-of-the-third-kind"></a>Üçüncü tür için eliptik integrali doldurun
 
 ```cpp
 double comp_ellint_3(double k, double nu);
@@ -449,7 +449,7 @@ float comp_ellint_3f(float k, float nu);
 long double comp_ellint_3l(long double k, long double nu);
 ```
 
-### <a name="regular-modified-cylindrical-bessel-functions"></a>Normal Silindirik Bessel işlevleri değiştirme
+### <a name="regular-modified-cylindrical-bessel-functions"></a>Düzenli olarak değiştirilen silindir Bessel işlevleri
 
 ```cpp
 double cyl_bessel_i(double nu, double x);
@@ -457,7 +457,7 @@ float cyl_bessel_if(float nu, float x);
 long double cyl_bessel_il(long double nu, long double x);
 ```
 
-### <a name="cylindrical-bessel-functions-of-the-first-kind"></a>İlk tür Silindirik Bessel işlevleri
+### <a name="cylindrical-bessel-functions-of-the-first-kind"></a>İlk türdeki silindirik Bessel işlevleri
 
 ```cpp
 double cyl_bessel_j(double nu, double x);
@@ -465,7 +465,7 @@ float cyl_bessel_jf(float nu, float x);
 long double cyl_bessel_jl(long double nu, long double x);
 ```
 
-### <a name="irregular-modified-cylindrical-bessel-functions"></a>Düzensiz Silindirik Bessel işlevleri değiştirme
+### <a name="irregular-modified-cylindrical-bessel-functions"></a>Düzensiz değiştirilmiş silindir Bessel işlevleri
 
 ```cpp
 double cyl_bessel_k(double nu, double x);
@@ -481,7 +481,7 @@ float cyl_neumannf(float nu, float x);
 long double cyl_neumannl(long double nu, long double x);
 ```
 
-### <a name="incomplete-elliptic-integral-of-the-first-kind"></a>İlk tür tamamlanmamış Eliptik tam sayıdan kaymaya
+### <a name="incomplete-elliptic-integral-of-the-first-kind"></a>İlk tür için tamamlanmamış eliptik integrali
 
 ```cpp
 double ellint_1(double k, double phi);
@@ -489,7 +489,7 @@ float ellint_1f(float k, float phi);
 long double ellint_1l(long double k, long double phi);
 ```
 
-### <a name="incomplete-elliptic-integral-of-the-second-kind"></a>İkinci tür tamamlanmamış Eliptik tam sayıdan kaymaya
+### <a name="incomplete-elliptic-integral-of-the-second-kind"></a>İkinci türdeki eksik eliptik integrali
 
 ```cpp
 double ellint_2(double k, double phi);
@@ -497,7 +497,7 @@ float ellint_2f(float k, float phi);
 long double ellint_2l(long double k, long double phi);
 ```
 
-### <a name="incomplete-elliptic-integral-of-the-third-kind"></a>Tamamlanmamış Eliptik integral üçüncü tür
+### <a name="incomplete-elliptic-integral-of-the-third-kind"></a>Üçüncü tür için eksik eliptik integral
 
 ```cpp
 double ellint_3(double k, double nu, double phi);
@@ -505,7 +505,7 @@ float ellint_3f(float k, float nu, float phi);
 long double ellint_3l(long double k, long double nu, long double phi);
 ```
 
-### <a name="exponential-integral"></a>Üstel tamsayı
+### <a name="exponential-integral"></a>Üstel integral
 
 ```cpp
 double expint(double x);
@@ -521,7 +521,7 @@ float hermitef(unsigned n, float x);
 long double hermitel(unsigned n, long double x);
 ```
 
-### <a name="laguerre-polynomials"></a>Laguerre polynomials
+### <a name="laguerre-polynomials"></a>Laguerre Polynomials
 
 ```cpp
 double laguerre(unsigned n, double x);
@@ -537,7 +537,7 @@ float legendref(unsigned l, float x);
 long double legendrel(unsigned l, long double x);
 ```
 
-### <a name="riemann-zeta-function"></a>Riemann zeta işlevi
+### <a name="riemann-zeta-function"></a>Riemann Zeta işlevi
 
 ```cpp
 double riemann_zeta(double x);
@@ -545,7 +545,7 @@ float riemann_zetaf(float x);
 long double riemann_zetal(long double x);
 ```
 
-### <a name="spherical-bessel-functions-of-the-first-kind"></a>İlk tür küresel Bessel işlevleri
+### <a name="spherical-bessel-functions-of-the-first-kind"></a>İlk türdeki küresel Bessel işlevleri
 
 ```cpp
 double sph_bessel(unsigned n, double x);
@@ -571,10 +571,10 @@ long double sph_neumannl(unsigned n, long double x);
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu üstbilginin dahil sağlar, standart C Kitaplığı üstbilgisinde harici bağlantı kullanılarak bildirilen adların bildirilir `std` ad alanı.
+Bu üstbilginin dahil edilmesi, standart C Kitaplığı üstbilgisinde harici bağlantı kullanılarak belirtilen adların `std` ad alanında bildirilmesini sağlar.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Üstbilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md)<br/>
-[C++ Standart Kitaplığına Genel Bakış](../standard-library/cpp-standard-library-overview.md)<br/>
-[C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
+[Üst bilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md)\
+[C++Standart kitaplığa genel bakış](../standard-library/cpp-standard-library-overview.md)\
+[C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)

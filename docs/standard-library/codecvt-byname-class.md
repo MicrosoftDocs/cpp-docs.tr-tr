@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - codecvt_byname class
 ms.assetid: b63b6c04-f60c-47b9-8e30-a933f24a8ffb
-ms.openlocfilehash: 62aac6abca3dce45ff3cc875823df04c69618b10
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 62781d575d6b9dda3f3c1e2a744091221c6f9584
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62405280"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68459861"
 ---
 # <a name="codecvtbyname-class"></a>codecvt_byname Sınıfı
 
@@ -43,24 +43,24 @@ protected:
 
 ### <a name="parameters"></a>Parametreler
 
-*_Locname*<br/>
+*_Locname*\
 Adlandırılmış bir yerel ayar.
 
-*_Refs*<br/>
-Bir ilk başvuru sayısı.
+*_Refs*\
+İlk başvuru sayısı.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Adlandırılmış bir yerel ayar oluşturulduğunda Byname özellikleri otomatik olarak oluşturulur.
+Adlandırılmış bir yerel ayar oluşturulduğunda, byname modelleri otomatik olarak oluşturulur.
 
-Davranışını adlandırılmış yerel ayar tarafından belirlenir *_Locname*. Her Oluşturucu, temel nesnesiyle başlatır [codecvt](../standard-library/codecvt-class.md)\<CharType, Byte, StateType > ( `_Refs`).
+Davranışı adlandırılmış yerel ayar *_Locname*tarafından belirlenir. Her Oluşturucu temel nesnesini [codecvt](../standard-library/codecvt-class.md)\<CharType, Byte, StateType > ( `_Refs`) ile başlatır.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** \<yerel ayar >
+**Üst bilgi:** \<yerel ayar >
 
-**Namespace:** std
+**Ad alanı:** std
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
+[C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)

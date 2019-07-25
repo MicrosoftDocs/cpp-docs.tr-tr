@@ -6,16 +6,16 @@ f1_keywords:
 helpviewer_keywords:
 - regex_traits<char> class
 ms.assetid: ce95ebcd-3687-4ad5-bf1d-b89fdc633675
-ms.openlocfilehash: 6a685dfa00b49ecfa7c2da2a8618b49cbc38cc01
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: d359e8dcc2778c6b312b24fea93f96c3c18f9f05
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62369377"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68451519"
 ---
 # <a name="regextraitsltchargt-class"></a>regex_traits&lt;char&gt; sınıfı
 
-Alt uzmanlaşması `regex_traits` için **char**.
+**Char**için özelleştirme `regex_traits` .
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -26,22 +26,22 @@ class regex_traits<char>
 
 ## <a name="remarks"></a>Açıklamalar
 
-Şablon sınıfının açık uzmanlığı sınıftır [regex_traits](../standard-library/regex-traits-class.md) türü öğeler için **char** (Bu tür nesneler düzenleme kitaplığı işlevleri avantajlarından yararlanabilirsiniz böylece).
+Sınıfı, **char** türündeki öğeler için [regex_traits](../standard-library/regex-traits-class.md) şablon sınıfının açık bir özelleştirmesi olur (Bu sayede, bu türden nesneleri işleyen kitaplık işlevlerinden yararlanabilir).
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** \<regex >
+**Üst bilgi:** \<Regex >
 
-**Namespace:** std
+**Ad alanı:** std
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[\<Regex >](../standard-library/regex.md)<br/>
-[regex_constants Sınıfı](../standard-library/regex-constants-class.md)<br/>
-[regex_error Sınıfı](../standard-library/regex-error-class.md)<br/>
-[\<Regex > işlevleri](../standard-library/regex-functions.md)<br/>
-[regex_iterator Sınıfı](../standard-library/regex-iterator-class.md)<br/>
-[\<Regex > işleçleri](../standard-library/regex-operators.md)<br/>
-[regex_token_iterator Sınıfı](../standard-library/regex-token-iterator-class.md)<br/>
-[regex_traits Sınıfı](../standard-library/regex-traits-class.md)<br/>
-[\<Regex > tür tanımları](../standard-library/regex-typedefs.md)<br/>
+[\<Regex >](../standard-library/regex.md)\
+[regex_constants sınıfı](../standard-library/regex-constants-class.md)\
+[regex_error sınıfı](../standard-library/regex-error-class.md)\
+[\<Regex > işlevleri](../standard-library/regex-functions.md)\
+[regex_iterator Sınıfı](../standard-library/regex-iterator-class.md)\
+[\<Regex > işleçleri](../standard-library/regex-operators.md)\
+[regex_token_iterator sınıfı](../standard-library/regex-token-iterator-class.md)\
+[regex_traits Sınıfı](../standard-library/regex-traits-class.md)\
+[\<tür tanımları > Regex](../standard-library/regex-typedefs.md)

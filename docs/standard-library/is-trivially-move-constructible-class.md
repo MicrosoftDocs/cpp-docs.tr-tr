@@ -6,16 +6,16 @@ f1_keywords:
 helpviewer_keywords:
 - is_trivially_move_constructible
 ms.assetid: 740bdec7-65e5-47b3-b94f-a2479ceac3ec
-ms.openlocfilehash: a1aef356716fac903b4e44a358602c709572e8ff
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 279da956eaff21c39c6e5ca563f26989105f7e74
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62413404"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68448368"
 ---
 # <a name="istriviallymoveconstructible-class"></a>is_trivially_move_constructible sınıfı
 
-Taşıma Oluşturucu türü, Önemsiz varsa testleri.
+Türün önemsiz taşıma Oluşturucusu varsa sınar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -26,37 +26,37 @@ struct is_trivially_move_constructible;
 
 ### <a name="parameters"></a>Parametreler
 
-*Ty*<br/>
+*Kalite*\
 Sorgulanacak tür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Karşılaştırmasının bir örneği true tutan türü *Ty* false tuttuğu Önemsiz taşıma oluşturucusu, aksi takdirde sahip bir sınıftır.
+Tür değeri, önemsiz bir taşıma oluşturucusuna sahip bir sınıfdaysa  , tür belirtiminin bir örneği true, aksi takdirde false değerini taşır.
 
-Bir sınıf için bir taşıma Oluşturucusu *Ty* gereksizse, varsa:
+Sınıf *Ty* için bir taşıma Oluşturucusu şu durumlarda önemsiz:
 
-örtük olarak bildirilen
+örtülü olarak bildirilmiştir
 
-Bu örtük bir bildirimi eşdeğer parametre türleri
+parametre türleri örtük bildirimdekilerle eşdeğerdir
 
-sınıf *Ty* sahip sanal işlev yok
+sınıf *Ty* 'nin sanal işlevleri yok
 
-sınıf *Ty* hiçbir sanal temellere sahip
+sınıf *Ty* 'nin sanal tabanı yok
 
-Geçici statik olmayan veri üyeleri sınıf yoktur
+sınıfta geçici bir statik olmayan veri üyesi yok
 
-tüm doğrudan tabanları sınıfının *Ty* Önemsiz taşıma oluşturucuları sahip
+sınıf *Ty* 'nin tüm doğrudan temellerine önemsiz taşıma oluşturucuları sahiptir
 
-Önemsiz taşıma oluşturucuları sınıfları sınıf türünün tüm statik olmayan veri üyelerinin olması
+sınıf türündeki tüm statik olmayan veri üyelerinin sınıfları, önemsiz taşıma oluşturuculara sahiptir
 
-Önemsiz taşıma oluşturucuları sınıflarını dizi sınıf türünde tüm statik olmayan veri üyelerine sahip
+Sınıf dizisi türündeki tüm statik olmayan veri üyelerinin sınıfları, önemsiz taşıma oluşturuculara sahiptir
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** \<type_traits >
+**Üst bilgi:** \<type_traits >
 
-**Namespace:** std
+**Ad alanı:** std
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[<type_traits>](../standard-library/type-traits.md)<br/>
+[<type_traits>](../standard-library/type-traits.md)

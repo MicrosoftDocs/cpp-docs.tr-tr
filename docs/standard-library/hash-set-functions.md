@@ -5,25 +5,25 @@ f1_keywords:
 - hash_set/std::swap
 - hash_set/std::swap (hash_multiset)
 ms.assetid: 557a0162-3728-4537-97dc-f9f6cc7ece94
-ms.openlocfilehash: 05a7ffd1e3bf02a88fe6a6cce841a440550c1057
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 2fbc05c16ba6629397bbb07bab30cb9315a16e1f
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62159138"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68448601"
 ---
 # <a name="lthashsetgt-functions"></a>&lt;hash_set&gt; işlevleri
 
 |||
 |-|-|
-|[değiştirme](#swap)|[Swap (hash_multiset)](#swap_hash_multiset)|
+|[Kur](#swap)|[swap (hash_multiset)](#swap_hash_multiset)|
 
-## <a name="swap"></a>  değiştirme
+## <a name="swap"></a>Kur
 
 > [!NOTE]
-> Bu, API artık kullanılmıyor. Alternatif [unordered_set sınıfı](../standard-library/unordered-set-class.md).
+> Bu, API artık kullanılmıyor. Alternatif, [unordered_set sınıfıdır](../standard-library/unordered-set-class.md).
 
-İki hash_sets öğelerini birbiriyle değiştirir.
+İki hash_sets öğelerini değiş tokuş eder.
 
 ```cpp
 void swap(
@@ -33,30 +33,30 @@ void swap(
 
 ### <a name="parameters"></a>Parametreler
 
-*sağ*<br/>
-Değiştirilecek öğeleri sağlayan hash_set veya öğeleri olan hash_set olanlar değiştirilecek hash_set *sol*.
+*Right*\
+Değiştirilecek öğeleri sağlayan hash_set veya öğeleri hash_set *Soldakilerle*değiş tokuş edilecek hash_set.
 
-*Sol*<br/>
-Öğeleri olan hash_set olanlar değiştirilecek hash_set *doğru*.
+*tarafta*\
+Öğeleri hash_set *Right*ile değiştirilecek olan hash_set.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`swap` Şablonu işlev, bir algoritma özel üye işlevini yürütmek için kapsayıcı sınıfı hash_set `left.` [takas](../standard-library/hash-set-class.md#swap)(`right`). İşlev şablonlarının kısmi derleyici tarafından sıralanması bir örneğini budur. Şablon işlevleri şablonu işlev çağrısı ile eşleşen benzersiz değil bir şekilde aşırı yüklendiğinde, derleyici en özel şablon işlevi sürümü seçin. Genel bir sürümü olan şablon işlevi
+Şablon işlevi, `left.` [Swap](../standard-library/hash-set-class.md#swap)(`right`) üye işlevini yürütmek için hash_set kapsayıcı sınıfı üzerinde özelleştirilmiş bir algoritmadır. `swap` Bu, derleyici tarafından işlev şablonlarının kısmi sıralaması örneğidir. Şablon işlevleri, işlev çağrısı ile şablonla eşleşen bir şekilde aşırı yüklendiğinde, derleyici şablon işlevinin en özelleştirilmiş sürümünü seçer. Şablon işlevinin genel sürümü
 
-**Şablon \<sınıfı T > void takas (T &, T &),**
+**Şablon \<sınıfı T > void takas (t &, t &),**
 
-algoritma sınıfı tarafından ataması çalışır ve yavaş bir işlemdir. Her bir kapsayıcıdaki özelleştirilmiş bir sürüm olarak kapsayıcı sınıfı iç gösterimine ile çalışabilir daha hızlıdır.
+algoritma sınıfında atama ile çalışıyor ve yavaş bir işlemdir. Kapsayıcı sınıfının iç temsili ile çalışabildiğinden, her kapsayıcıda özelleştirilmiş sürüm çok daha hızlıdır.
 
 ### <a name="example"></a>Örnek
 
-Üye sınıfı kod örneğine bakın [hash_set::swap](../standard-library/hash-set-class.md#swap) şablon sürümünü kullanan bir örnek için `swap`.
+Şablon sürümünü `swap`kullanan bir örnek için [hash_set:: Swap](../standard-library/hash-set-class.md#swap) üye sınıfının kod örneğine bakın.
 
-## <a name="swap_hash_multiset"></a>  Swap (hash_multiset)
+## <a name="swap_hash_multiset"></a>swap (hash_multiset)
 
 > [!NOTE]
-> Bu, API artık kullanılmıyor. Alternatif [unordered_set sınıfı](../standard-library/unordered-set-class.md).
+> Bu, API artık kullanılmıyor. Alternatif, [unordered_set sınıfıdır](../standard-library/unordered-set-class.md).
 
-İki hash_multisets öğelerini birbiriyle değiştirir.
+İki hash_multisets öğelerini değiş tokuş eder.
 
 ```cpp
 void swap(hash_multiset <Key, Traits, Allocator>& left, hash_multiset <Key, Traits, Allocator>& right);
@@ -64,24 +64,24 @@ void swap(hash_multiset <Key, Traits, Allocator>& left, hash_multiset <Key, Trai
 
 ### <a name="parameters"></a>Parametreler
 
-*sağ*<br/>
-Değiştirilecek öğeleri sağlayan hash_multiset veya öğeleri olan hash_multiset olanlar değiştirilecek hash_multiset *sol*.
+*Right*\
+Değiştirilecek öğeleri sağlayan hash_multiset veya öğeleri hash_multiset *Soldakilerle*değiş tokuş edilecek hash_multiset.
 
-*Sol*<br/>
-Öğeleri olan hash_multiset olanlar değiştirilecek hash_multiset *doğru*.
+*tarafta*\
+Öğeleri hash_multiset *Right*ile değiştirilecek olan hash_multiset.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`swap` Şablonu işlev, bir algoritma özel üye işlevini yürütmek için kapsayıcı sınıfı hash_multiset `left.` [takas](../standard-library/hash-multiset-class.md#swap)(`right`). İşlev şablonlarının kısmi derleyici tarafından sıralanması bir örneğini budur. Şablon işlevleri şablonu işlev çağrısı ile eşleşen benzersiz değil bir şekilde aşırı yüklendiğinde, derleyici en özel şablon işlevi sürümü seçin. Genel bir sürümü olan şablon işlevi
+Şablon işlevi, `left.` [Swap](../standard-library/hash-multiset-class.md#swap)(`right`) üye işlevini yürütmek için hash_multiset kapsayıcı sınıfı üzerinde özelleştirilmiş bir algoritmadır. `swap` Bu, derleyici tarafından işlev şablonlarının kısmi sıralaması örneğidir. Şablon işlevleri, işlev çağrısı ile şablonla eşleşen bir şekilde aşırı yüklendiğinde, derleyici şablon işlevinin en özelleştirilmiş sürümünü seçer. Şablon işlevinin genel sürümü
 
-**Şablon \<sınıfı T > void takas (T &, T &),**
+**Şablon \<sınıfı T > void takas (t &, t &),**
 
-algoritma sınıfı tarafından ataması çalışır ve yavaş bir işlemdir. Her bir kapsayıcıdaki özelleştirilmiş bir sürüm olarak kapsayıcı sınıfı iç gösterimine ile çalışabilir daha hızlıdır.
+algoritma sınıfında atama ile çalışıyor ve yavaş bir işlemdir. Kapsayıcı sınıfının iç temsili ile çalışabildiğinden, her kapsayıcıda özelleştirilmiş sürüm çok daha hızlıdır.
 
 ### <a name="example"></a>Örnek
 
-Üye sınıfı kod örneğine bakın [hash_multiset::swap](../standard-library/hash-multiset-class.md#swap) şablon sürümünü kullanan bir örnek için `swap`.
+Şablon sürümünü `swap`kullanan bir örnek için [hash_multiset:: Swap](../standard-library/hash-multiset-class.md#swap) üye sınıfının kod örneğine bakın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[<hash_set>](../standard-library/hash-set.md)<br/>
+[<hash_set>](../standard-library/hash-set.md)

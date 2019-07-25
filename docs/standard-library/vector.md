@@ -6,23 +6,23 @@ f1_keywords:
 helpviewer_keywords:
 - vector header
 ms.assetid: c1431ad8-c0b6-4dbb-89c4-5f651e432d7f
-ms.openlocfilehash: 96f329bfdcc13bb557ef0cc487a1f414612e96c5
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.openlocfilehash: 5992e368031b59c9b892167b135fa30a870c73f9
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68240959"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68448062"
 ---
 # <a name="ltvectorgt"></a>&lt;vektör&gt;
 
-Kapsayıcı Şablon sınıfı vektör ve çeşitli destek şablonları tanımlar.
+Kapsayıcı şablon sınıfı vektörünü ve çeşitli destekleyici şablonları tanımlar.
 
-`vector` Doğrusal bir sırada belirli bir türden öğeler düzenleyen bir kapsayıcıdır. Bu öğe ve dinamik ekleme ve çıkarma için ve serisinden hızlı rastgele erişim sağlar. `vector` Rastgele erişimli performans bir premium olduğunda tercih edilen bir dizi kapsayıcısıdır.
+, `vector` Belirli bir türün öğelerini doğrusal bir dizide düzenleyen bir kapsayıcıdır. Bu, herhangi bir öğeye ve dizi üzerinde dinamik ekleme ve kaldırma işlemleri için hızlı rastgele erişim sağlar. , `vector` Rastgele erişim performansı Premium olduğunda bir sıra için tercih edilen kapsayıcıdır.
 
 > [!NOTE]
-> \<Vektör > Kitaplığı'nı da kullanan `#include <initializer_list>` deyimi.
+> Vektör > kitaplığı, `#include <initializer_list>` ifadesini de kullanır. \<
 
-Sınıfı hakkında daha fazla bilgi için `vector`, bkz: [vector sınıfı](../standard-library/vector-class.md). Özelleştirme hakkında bilgi için `vector<bool>`, bkz: [vektör\<bool > sınıfı](../standard-library/vector-bool-class.md).
+Sınıfı `vector`hakkında daha fazla bilgi için bkz. [Vector sınıfı](../standard-library/vector-class.md). Özelleştirme `vector<bool>`hakkında daha fazla bilgi için bkz [.\<vektör bool > sınıfı](../standard-library/vector-bool-class.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -77,17 +77,17 @@ void swap (
 
 ### <a name="parameters"></a>Parametreler
 
-*Türü*\
-Şablon parametresi için vektör içinde depolanan verinin türü.
+*Türüyle*\
+Vektörde depolanan veri türü için şablon parametresi.
 
-*Ayırıcı*\
-Şablon parametresi için bellek ayırmayı ve ayırmayı kaldırma için sorumlu saklı ayırıcı nesnesini.
+*Öğe*\
+Depolanan ayırıcı nesnesinin bellek ayırmayı ve ayırmayı kaldırma işleminden sorumlu şablon parametresi.
 
-*Sol*\
-Bir karşılaştırma işlemi ilk (soldaki) vektörü
+*tarafta*\
+Karşılaştırma işleminde ilk (sol) vektör
 
-*sağ*\
-Bir karşılaştırma işleminde ikinci (sağdaki) vektör.
+*Right*\
+Karşılaştırma işleminde ikinci (sağ) vektör.
 
 ## <a name="members"></a>Üyeler
 
@@ -95,34 +95,34 @@ Bir karşılaştırma işleminde ikinci (sağdaki) vektör.
 
 |||
 |-|-|
-|[işleci! =](../standard-library/vector-operators.md#op_neq)|İşlecin sol tarafındaki vektör nesnesi işlecin sağ tarafındaki vektör nesnesine eşit olup olmadığını sınar.|
-|[işleç <](../standard-library/vector-operators.md#op_lt)|İşlecin sol tarafındaki vektör nesnesi işlecin sağ tarafındaki vektör nesneden küçük olup olmadığını sınar.|
-|[İşleci\<=](../standard-library/vector-operators.md#op_gt_eq)|İşlecinin sol tarafında vektör nesnesi küçük olup olmadığını sınar vektör nesnesine eşit veya işlecin sağ tarafındaki.|
-|[operator==](../standard-library/vector-operators.md#op_eq_eq)|İşlecin sol tarafındaki vektör nesnesinin işlecin sağ tarafındaki vektör nesnesine eşit olup olmadığını sınar.|
-|[operator >](../standard-library/vector-operators.md#op_gt)|İşlecin sol tarafındaki vektör nesnesi vektör nesnesi işlecin sağ tarafındaki büyük olup olmadığını sınar.|
-|[operator>=](../standard-library/vector-operators.md#op_gt_eq)|İşlecin sol tarafındaki vektör nesnesi büyük veya işlecin sağ tarafındaki vektör nesnesine eşit olup olmadığını sınar.|
+|[işlecinde! =](../standard-library/vector-operators.md#op_neq)|İşlecin sol tarafındaki vektör nesnesinin, sağ taraftaki vektör nesnesine eşit olup olmadığını sınar.|
+|[işleç <](../standard-library/vector-operators.md#op_lt)|İşlecin sol tarafındaki vektör nesnesinin, sağ taraftaki vektör nesnesinden küçük olup olmadığını sınar.|
+|[işlecinde\<=](../standard-library/vector-operators.md#op_gt_eq)|İşlecin sol tarafındaki vektör nesnesinin, sağ taraftaki vektör nesnesine eşit veya ondan küçük olup olmadığını test eder.|
+|[operator==](../standard-library/vector-operators.md#op_eq_eq)|İşlecin sol tarafındaki vektör nesnesinin, sağ taraftaki vektör nesnesine eşit olup olmadığını sınar.|
+|[işleç >](../standard-library/vector-operators.md#op_gt)|İşlecin sol tarafındaki vektör nesnesinin, sağ taraftaki vektör nesnesinden büyük olup olmadığını sınar.|
+|[operator>=](../standard-library/vector-operators.md#op_gt_eq)|İşlecin sol tarafındaki vektör nesnesinin, sağ taraftaki vektör nesnesine eşit veya ondan büyük olup olmadığını sınar.|
 
 ### <a name="classes"></a>Sınıflar
 
 |||
 |-|-|
-|[vector Sınıfı](../standard-library/vector-class.md)|Öğeleri belirli bir türden doğrusal bir düzende düzenlemek ve herhangi bir öğeye hızlı rastgele erişim izin veren bir dizi kapsayıcılarının bir şablon sınıfı.|
+|[vector Sınıfı](../standard-library/vector-class.md)|Bir doğrusal düzenlemede belirli bir türün öğelerini düzenleyen ve herhangi bir öğeye hızlı rastgele erişime izin veren dizi kapsayıcılarının şablon sınıfı.|
 
 ### <a name="specializations"></a>Uzmanlıklar
 
 |||
 |-|-|
-|[Karma]()||
-|[vektör\<bool > sınıfı](../standard-library/vector-bool-class.md)|Şablon sınıfı vektör türü öğeler için tam özelleştirmesi `bool` uzmanlık tarafından kullanılan temel alınan türü için bir ayırıcı ile.|
+|[yla]()||
+|[vektör\<bool > sınıfı](../standard-library/vector-bool-class.md)|Özelleştirme tarafından kullanılan temel tür için bir ayırıcıyla tür `bool` öğeleri için şablon sınıfı vektörünün tam özelleştirmesi.|
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** \<vektör >
+**Üst bilgi:** \<vektör >
 
-**Namespace:** std
+**Ad alanı:** std
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Üstbilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md)<br/>
-[C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
-[C++ Standart Kitaplığı Başvurusu](../standard-library/cpp-standard-library-reference.md)<br/>
+[Üst bilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md)\
+[C++ Standart kitaplıkta Iş parçacığı güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)\
+[C++ Standart Kitaplığı Başvurusu](../standard-library/cpp-standard-library-reference.md)

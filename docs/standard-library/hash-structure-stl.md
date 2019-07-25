@@ -1,19 +1,19 @@
 ---
-title: hash yapısı (Standart C++ Kitaplığı) | Microsoft Docs
+title: Karma yapısı (C++ standart kitaplık) | Microsoft Docs
 ms.date: 11/04/2016
 f1_keywords:
 - thread/std::hash
 ms.assetid: 4a8bf5bc-4334-4070-936b-98585f8a073b
-ms.openlocfilehash: bb230d401d5061f4951f8007f93c3a28ce3dab03
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e6d0cea7bfc8cd745e7276f7fc29d493f178fc9b
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62405020"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68451959"
 ---
-# <a name="hash-structure-c-standard-library"></a>hash yapısı (Standart C++ Kitaplığı)
+# <a name="hash-structure-c-standard-library"></a>Karma yapısı (C++ standart kitaplık)
 
-Benzersiz tarafından belirlenen bir değer döndüren bir üye işlev tanımlar `Val`. Üye işlevini tanımlayan bir [karma](../standard-library/hash-class.md) eşleme türü değerleri için uygun işlevi `thread::id` dizin değerlerinin dağıtımına.
+Tarafından `Val`benzersiz olarak belirlenen bir değer döndüren bir üye işlevi tanımlar. Üye işlevi, türündeki `thread::id` değerleri dizin değerlerinin bir dağıtımına eşlemek için uygun bir [karma](../standard-library/hash-class.md) işlevi tanımlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -29,12 +29,12 @@ struct hash<thread::id> :
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** \<iş parçacığı >
+**Üst bilgi:** \<iş parçacığı >
 
-**Namespace:** std
+**Ad alanı:** std
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Üstbilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md)<br/>
-[\<iş parçacığı >](../standard-library/thread.md)<br/>
-[unary_function Yapısı](../standard-library/unary-function-struct.md)<br/>
+[Üst bilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md)\
+[\<iş parçacığı >](../standard-library/thread.md)\
+[unary_function Yapısı](../standard-library/unary-function-struct.md)

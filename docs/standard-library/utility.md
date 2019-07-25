@@ -1,34 +1,34 @@
 ---
-title: '&lt;yardımcı programı&gt;'
+title: '&lt;Utility&gt;'
 ms.date: 11/04/2016
 f1_keywords:
 - <utility>
 helpviewer_keywords:
 - utility header
 ms.assetid: c4491103-5da9-47a1-9c2b-ed8bc64b0599
-ms.openlocfilehash: 76b04c3c26f6ec49f1d816feaeec7e21312d79a9
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.openlocfilehash: eaae94bcffcda6e113001dd7070bcc80e7c14d09
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68246274"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68458073"
 ---
-# <a name="ltutilitygt"></a>&lt;yardımcı programı&gt;
+# <a name="ltutilitygt"></a>&lt;Utility&gt;
 
-C++ standart kitaplık türleri, İşlevler ve oluşturmak ve iki nesne bir oldukları gibi kabul gerektiğinde yararlı olan nesneleri çiftlerini yönetmek üzere Yardım işleçler tanımlar.
+İki C++ nesne bir tane gibi ele alınamadığında yararlı olan nesne çiftlerini oluşturma ve yönetmeye yardımcı olan standart kitaplık türlerini, işlevleri ve işleçleri tanımlar.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** \<yardımcı programı >
+**Üst bilgi:** \<yardımcı program >
 
-**Namespace:** std
+**Ad alanı:** std
 
 ## <a name="remarks"></a>Açıklamalar
 
-Çiftler, C++ Standart Kitaplığı'nda yaygın olarak kullanılır. Çeşitli işlevleri için dönüş değerleri ve bağımsız olarak hem de olduğu gibi kapsayıcılar için öğe türleri olarak gereklidirler [harita sınıfı](../standard-library/map-class.md) ve [multimap sınıfı](../standard-library/multimap-class.md). \<Yardımcı programı > tarafından otomatik olarak üst bilgisi dahil \<harita >, anahtar/değer yönetilmesine yardımcı olmak için çifti öğelerini yazın.
+Çiftler C++ standart kitaplıkta yaygın olarak kullanılır. Bunlar hem bağımsız değişkenler hem de çeşitli işlevler için dönüş değerleri ve [eşleme sınıfı](../standard-library/map-class.md) ve [multimap sınıfı](../standard-library/multimap-class.md)gibi kapsayıcılar için öğe türleri olarak istenir. Yardımcı program > üst bilgisi, anahtar/ \<değer çifti türü öğelerinin yönetilmesine yardımcı olmak için harita > tarafından otomatik olarak eklenir. \<
 
 > [!NOTE]
-> \<Yardımcı programı > üstbilgisi kullanan deyim `#include <initializer_list>`. Ayrıca başvurduğu `class tuple` tanımlandığı gibi \<demet >.
+> Yardımcı program > üst bilgisi, ifadesini `#include <initializer_list>`kullanır. \< Ayrıca, > tanımlama `class tuple` alanında \<tanımlanan olarak da ifade eder.
 
 ## <a name="members"></a>Üyeler
 
@@ -36,9 +36,9 @@ C++ standart kitaplık türleri, İşlevler ve oluşturmak ve iki nesne bir oldu
 
 |||
 |-|-|
-|[chars_format](../standard-library/chars-format-class.md)|Basit sayısal dönüştürme için kayan nokta biçimi.|
-|[tuple_element](../standard-library/tuple-element-class-tuple.md)|Bir sınıf türü sarmalayan bir `pair` öğesi.|
-|[tuple_size](../standard-library/tuple-size-class-tuple.md)|Saran bir sınıf `pair` öğe sayısı.|
+|[chars_format](../standard-library/chars-format-class.md)|İlkel sayısal dönüştürme için kayan nokta biçimi.|
+|[tuple_element](../standard-library/tuple-element-class-tuple.md)|Bir `pair` öğenin türünü sarmalayan sınıf.|
+|[tuple_size](../standard-library/tuple-size-class-tuple.md)|Öğe sayısını sarmalayan `pair` sınıf.|
 
 ### <a name="objects"></a>Nesneler
 
@@ -54,41 +54,41 @@ C++ standart kitaplık türleri, İşlevler ve oluşturmak ve iki nesne bir oldu
 |||
 |-|-|
 |[as_const](../standard-library/utility-functions.md#asconst)|Türü döndürür.|
-|[declval](../standard-library/utility-functions.md#declval)|Kısaca ifade değerlendirmesi.|
-|[exchange](../standard-library/utility-functions.md#exchange)|Bir nesneye yeni bir değer atar ve eski değeri döndürür.|
-|[İleriye doğru](../standard-library/utility-functions.md#forward)|Başvuru türü korur (ya da `lvalue` veya `rvalue`) tarafından kusursuz iletme engellediği gelen bağımsız değişken.|
+|[declval](../standard-library/utility-functions.md#declval)|Toplu ifade değerlendirmesi.|
+|[exchange](../standard-library/utility-functions.md#exchange)|Nesnesine yeni bir değer atar ve eski değerini döndürür.|
+|[tirler](../standard-library/utility-functions.md#forward)|Bağımsız değişkenin başvuru türünü (ya `lvalue` da `rvalue`), kusursuz iletme tarafından gizlenmeden korur.|
 |[from_chars](../standard-library/utility-functions.md#from_chars)||
-|[get](../standard-library/utility-functions.md#get)|Bir öğeyi alır bir işlev bir `pair` nesne.|
-|[make_pair](../standard-library/utility-functions.md#make_pair)|Türündeki nesneler oluşturmak için kullanılan bir şablon yardımcı işlevini `pair`, burada bileşen türleri parametre olarak geçirilen veri türlerini temel alır.|
-|[Taşıma](../standard-library/utility-functions.md#move)|Bağımsız değişken olarak geçirilen döndürür bir `rvalue` başvuru.|
+|[get](../standard-library/utility-functions.md#get)|`pair` Nesnesinden bir öğe alan bir işlev.|
+|[make_pair](../standard-library/utility-functions.md#make_pair)|Türü `pair`nesneleri oluşturmak için kullanılan bir şablon Yardımcısı işlevi, bileşen türlerinin parametre olarak geçirilen veri türlerini temel alır.|
+|[geçiş](../standard-library/utility-functions.md#move)|Geçirilen bağımsız değişkeni bir `rvalue` başvuru olarak döndürür.|
 |[move_if_noexcept](../standard-library/utility-functions.md#moveif)||
-|[değiştirme](../standard-library/utility-functions.md#swap)|İki öğeleri birbiriyle değiştirir `pair` nesneleri.|
-|[to_chars](../standard-library/utility-functions.md#to_chars)|Değer, bir karakter dizisine dönüştürür.|
+|[Kur](../standard-library/utility-functions.md#swap)|İki `pair` nesnenin öğelerini değiş tokuş eder.|
+|[to_chars](../standard-library/utility-functions.md#to_chars)|Değeri bir karakter dizesine dönüştürür.|
 
 ### <a name="operators"></a>İşleçler
 
 |||
 |-|-|
-|[operator!=](../standard-library/utility-operators.md#op_neq)|İşlecin sol tarafındaki çift nesnesi işlecin sağ tarafındaki çifti nesneye eşit olup olmadığını sınar.|
-|[operator==](../standard-library/utility-operators.md#op_eq_eq)|İşlecin sol tarafındaki çifti nesnesinin işlecin sağ tarafındaki çifti nesneye eşit olup olmadığını sınar.|
-|[İşleci\<](../standard-library/utility-operators.md#op_lt)|İşlecin sol tarafta çift nesnesi olup olmadığını test eder çifti nesnesinin işlecin sağ tarafındaki küçüktür.|
-|[İşleci\<=](../standard-library/utility-operators.md#op_gt_eq)|İşlecinin sol tarafta çift nesnesi küçük olup olmadığını sınar veya işlecin sağ tarafındaki çift nesnesi eşittir.|
-|[operator >](../standard-library/utility-operators.md#op_gt)|İşlecin sol tarafındaki çifti nesnesinin işlecin sağ tarafındaki çift nesnesi büyük olup olmadığını sınar.|
-|[operator>=](../standard-library/utility-operators.md#op_gt_eq)|İşlecin sol tarafındaki çift nesnesi büyük veya işlecin sağ tarafındaki çifti nesneye eşit olup olmadığını sınar.|
+|[operator!=](../standard-library/utility-operators.md#op_neq)|İşlecin sol tarafındaki çift nesnenin sağ taraftaki çift nesneye eşit olup olmadığını sınar.|
+|[operator==](../standard-library/utility-operators.md#op_eq_eq)|İşlecin sol tarafındaki çift nesnenin sağ taraftaki çift nesneye eşit olup olmadığını sınar.|
+|[işlecinde\<](../standard-library/utility-operators.md#op_lt)|İşlecin sol tarafındaki çift nesnenin sağ taraftaki çift nesneden daha az olup olmadığını sınar.|
+|[işlecinde\<=](../standard-library/utility-operators.md#op_gt_eq)|İşlecin sol tarafındaki çift nesnenin sağ taraftaki çift nesneden küçük veya ona eşit olup olmadığını sınar.|
+|[işleç >](../standard-library/utility-operators.md#op_gt)|İşlecin sol tarafındaki çift nesnenin sağ taraftaki çift nesneden büyük olup olmadığını sınar.|
+|[operator>=](../standard-library/utility-operators.md#op_gt_eq)|İşlecin sol tarafındaki çift nesnenin sağ taraftaki çift nesneden büyük veya ona eşit olup olmadığını sınar.|
 
 ### <a name="structs"></a>Yapılar
 
 |||
 |-|-|
-|[from_chars_result](../standard-library/from-chars-result-structure.md)|İçin kullanılan bir yapının `from_chars`.|
-|[Kimlik](../standard-library/identity-structure.md)|Şablon parametresi olarak bir tür tanımı sağlayan bir yapı.|
-|[in_place_t](../standard-library/in-place-t-struct.md)|Ayrıca yapılar içerir `in_place_type_t` ve `in_place_index_t`.|
-|[integer_sequence](../standard-library/integer-sequence-class.md)|Bir tamsayı dizisi temsil eder.|
-|[çifti](../standard-library/pair-structure.md)|İki nesne tek bir nesne olarak değerlendir olanağı sağlayan bir tür.|
-|[piecewise_construct_t](../standard-library/piecewise-construct-t-structure.md)|Ayrı bir oluşturucu ve işlev aşırı yüklemesi tutmak için kullanılan bir tür.|
-|[to_chars_result](../standard-library/to-chars-result-structure.md)|İçin kullanılan bir yapının `to_chars`.|
+|[from_chars_result](../standard-library/from-chars-result-structure.md)|İçin `from_chars`kullanılan bir struct.|
+|[IDENTITY](../standard-library/identity-structure.md)|Şablon parametresi olarak bir tür tanımı sağlayan bir struct.|
+|[in_place_t](../standard-library/in-place-t-struct.md)|Ayrıca yapılar `in_place_type_t` ve `in_place_index_t`içerir.|
+|[integer_sequence](../standard-library/integer-sequence-class.md)|Bir tamsayı dizisini temsil eder.|
+|[çifti](../standard-library/pair-structure.md)|İki nesneyi tek bir nesne olarak işleme yeteneği sağlayan bir tür.|
+|[piecewise_construct_t](../standard-library/piecewise-construct-t-structure.md)|Ayrı oluşturucuyu ve işlev aşırı yüklemesini tutmak için kullanılan bir tür.|
+|[to_chars_result](../standard-library/to-chars-result-structure.md)|İçin `to_chars`kullanılan bir struct.|
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Üstbilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md)<br/>
-[C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
+[Üst bilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md)\
+[C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)

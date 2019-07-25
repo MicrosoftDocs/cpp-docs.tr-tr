@@ -12,25 +12,25 @@ helpviewer_keywords:
 - std::endl [C++]
 - std::ends [C++]
 - std::flush [C++]
-ms.openlocfilehash: fa498f4acbb151eab4321bcddc6af027ee266237
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 8d93e46b0323058d93c6d0bd8c1ee566998aef61
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62371004"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68447190"
 ---
 # <a name="ltostreamgt-functions"></a>&lt;ostream&gt; işlevleri
 
-Tanımlanan genel şablon işlevleri bunlar &lt;ostream&gt;. Üye işlevleri için bkz: [basic_ostream sınıfı](basic-ostream-class.md) belgeleri.
+Bunlar, ostream &lt;&gt;'de tanımlanan genel şablon işlevleridir. Üye işlevleri için [basic_ostream sınıfı](basic-ostream-class.md) belgelerine bakın.
 
 ||||
 |-|-|-|
-|[endl](#endl)|[sona erer](#ends)|[Temizleme](#flush)|
-|[değiştirme](#swap)|
+|[endl](#endl)|[ucundaki](#ends)|[temizlenemiyor](#flush)|
+|[Kur](#swap)|
 
 ## <a name="endl"></a>endl
 
-Bir satır sonlandırır ve arabelleğini aktarır.
+Bir satırı sonlandırır ve arabelleği boşaltır.
 
 ```cpp
 template class<Elem, Tr>
@@ -40,22 +40,22 @@ basic_ostream<Elem, Tr>& endl(
 
 ### <a name="parameters"></a>Parametreler
 
-*Elem*<br/>
+*Elem*\
 Öğe türü.
 
-*Ostr*<br/>
-Bir nesne türü **basic_ostream**.
+*OSTR*\
+**Basic_ostream**türünde bir nesne.
 
-*tr*<br/>
+*Tr*\
 Karakter nitelikleri.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir nesne türü **basic_ostream**.
+**Basic_ostream**türünde bir nesne.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşleyici çağrıları *Ostr*.[ PUT](../standard-library/basic-ostream-class.md#put)(*Ostr*.[ genişletmek](../standard-library/basic-ios-class.md#widen)('\n')) ve ardından çağırır *Ostr*.[ Flush](../standard-library/basic-ostream-class.md#flush). Döndürür *Ostr*.
+İşleici *OSTR*'yi çağırıyor. [Yerleştir](../standard-library/basic-ostream-class.md#put) (*OSTR*. [Genişlet](../standard-library/basic-ios-class.md#widen) (' \n ')) ve ardından *OSTR*çağırır. [temizler](../standard-library/basic-ostream-class.md#flush). *OSTR*döndürür.
 
 ### <a name="example"></a>Örnek
 
@@ -77,7 +77,7 @@ testing
 
 ## <a name="ends"></a>ends
 
-Bir dize sonlandırır.
+Bir dizeyi sonlandırır.
 
 ```cpp
 template class<Elem, Tr>
@@ -87,22 +87,22 @@ basic_ostream<Elem, Tr>& ends(
 
 ### <a name="parameters"></a>Parametreler
 
-*Elem*<br/>
+*Elem*\
 Öğe türü.
 
-*Ostr*<br/>
-Bir nesne türü `basic_ostream`.
+*OSTR*\
+Türünde `basic_ostream`bir nesne.
 
-*tr*<br/>
+*Tr*\
 Karakter nitelikleri.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir nesne türü `basic_ostream`.
+Türünde `basic_ostream`bir nesne.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşleyici çağrıları *Ostr*.[ PUT](../standard-library/basic-ostream-class.md#put)(*Elem*('\0')). Döndürür *Ostr*.
+İşleici *OSTR*'yi çağırıyor. [Yerleştir](../standard-library/basic-ostream-class.md#put) (*Eled*(' \ 0 ')). *OSTR*döndürür.
 
 ### <a name="example"></a>Örnek
 
@@ -126,7 +126,7 @@ ab c
 
 ## <a name="flush"></a>flush
 
-Arabelleği temizler.
+Arabelleği boşaltır.
 
 ```cpp
 template class<Elem, Tr>
@@ -136,22 +136,22 @@ basic_ostream<Elem, Tr>& flush(
 
 ### <a name="parameters"></a>Parametreler
 
-*Elem*<br/>
+*Elem*\
 Öğe türü.
 
-*Ostr*<br/>
-Bir nesne türü `basic_ostream`.
+*OSTR*\
+Türünde `basic_ostream`bir nesne.
 
-*tr*<br/>
+*Tr*\
 Karakter nitelikleri.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir nesne türü `basic_ostream`.
+Türünde `basic_ostream`bir nesne.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşleyici çağrıları *Ostr*.[ Flush](../standard-library/basic-ostream-class.md#flush). Döndürür *Ostr*.
+İşleici *OSTR*'yi çağırıyor. [temizler](../standard-library/basic-ostream-class.md#flush). *OSTR*döndürür.
 
 ### <a name="example"></a>Örnek
 
@@ -173,7 +173,7 @@ testing
 
 ## <a name="swap"></a>swap
 
-İki değeri birbiriyle değiştirir `basic_ostream` nesneleri.
+İki `basic_ostream` nesnenin değerlerini değiş tokuş eder.
 
 ```cpp
 template <class Elem, class Tr>
@@ -184,21 +184,21 @@ void swap(
 
 ### <a name="parameters"></a>Parametreler
 
-*Elem*<br/>
+*Elem*\
 Öğe türü.
 
-*tr*<br/>
+*Tr*\
 Karakter nitelikleri.
 
-*Sol*<br/>
-Bir lvalue başvurusuna bir `basic_ostream` nesne.
+*tarafta*\
+Bir `basic_ostream` nesneye lvalue başvurusu.
 
-*sağ*<br/>
-Bir lvalue başvurusuna bir `basic_ostream` nesne.
+*Right*\
+Bir `basic_ostream` nesneye lvalue başvurusu.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon işlevi `swap` yürütür `left.swap(right)`.
+Şablon işlevi `swap` yürütülür `left.swap(right)`.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

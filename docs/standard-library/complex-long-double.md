@@ -8,16 +8,16 @@ f1_keywords:
 helpviewer_keywords:
 - complex<long double> function
 ms.assetid: 37591991-b385-46e9-b727-d534dbc10432
-ms.openlocfilehash: 19d4569523879911209bf0c05e762eba2c9852a1
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 280fb4c15219b11d2325ff37a296e133810bf2b5
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62389183"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68449487"
 ---
 # <a name="complexltlong-doublegt"></a>karmaşık&lt;uzun çift&gt;
 
-Bu açıkça özel bir şablon sınıfının nesneleri, tür hem de sıralı bir çift depolayan bir nesneyi tanımlayan **uzun çift**, ilk karmaşık sayıyı ve ikinci gerçek bölümünü temsil eden sanal bölümü temsil eden.
+Bu açıkça özelleştirilmiş şablon sınıfı, her ikisi de **Long Double**türünde, her ikisi de karmaşık bir sayının gerçek bölümünü ve sanal parçayı temsil eden ikincisini temsil eden, her ikisi de, düzenli bir nesne çifti depolayan bir nesneyi tanımlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -38,26 +38,26 @@ complex(
 
 ### <a name="parameters"></a>Parametreler
 
-*_RealVal*<br/>
-Türü değeri **uzun çift** için yapılandırılan karmaşık sayıyı gerçek bir parçası.
+*_RealVal*\
+Oluşturulan karmaşık sayının gerçek parçası için **Long Double** türü değeri.
 
-*_ImagVal*<br/>
-Türü değeri **uzun çift** yapılandırılmakta karmaşık sayıyı sanal bölümü için.
+*_ImagVal*\
+Oluşturulan karmaşık sayının sanal parçası için **Long Double** türü değeri.
 
-*complexNum*<br/>
-Tür karmaşık sayısı **çift** veya türü **float** olan reel ve sanal parça türü karmaşık bir sayıyı başlatmak için kullanılan **uzun çift** oluşturuluyor.
+*Karmaşıksayı*\
+Gerçek ve sanal parçaları oluşturulan karmaşık sayıda **Long Double** türü başlatmak için kullanılan **Double** veya **float** türünde karmaşık sayı.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Türü karmaşık bir sayıyı **uzun çift**.
+**Uzun çift**türünde karmaşık bir sayı.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Şablon sınıfının açık uzmanlığı `complex` türü karmaşık bir sınıfa **uzun çift** Şablon sınıfı yalnızca tanımladığı Yapıcılardaki farklıdır. Dönüştürme **uzun çift** için **float** örtük, izin verilen ancak dönüştürme **çift** için **uzun çift** gereklidir olmasını **açık**. Kullanımını **açık** başlatma ile atama sözdizimi kullanılarak tür dönüştürme kuralları.
+Template sınıfının `complex` , **Long Double** türündeki karmaşık bir sınıfa açık özelleştirmesi, şablon sınıfından yalnızca tanımladığı oluşturucularda farklılık gösterir. **Long Double** 'dan **float** 'e dönüştürmenin örtük olmasına izin verilir, ancak **Double** 'tan **Long Double** 'a dönüştürmenin **Açık**olması gerekir. Atama söz dizimini kullanarak tür dönüşümle başlatma, **Açık** kuralların kullanımı.
 
-Şablon sınıfı hakkında daha fazla bilgi için `complex` ve onun üyeleri [complex sınıfı](../standard-library/complex-class.md).
+Şablon sınıfı `complex` ve üyeleri hakkında daha fazla bilgi için bkz. [Complex Class](../standard-library/complex-class.md).
 
-**Microsoft'a özgü**: **Uzun çift** ve **çift** türleri aynı gösterimi vardır, ancak farklı türleri. Daha fazla bilgi için [temel türler](../cpp/fundamental-types-cpp.md).
+**Microsoft 'a özgü**: **Uzun çift** ve **çift** türleri aynı gösterimine sahiptir, ancak farklı türlerdir. Daha fazla bilgi için bkz. [temel türler](../cpp/fundamental-types-cpp.md).
 
 ## <a name="example"></a>Örnek
 
@@ -117,11 +117,11 @@ arg( c3 ) = 0.927295 radians, which is 53.1301 degrees.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi**: \<karmaşık >
+**Üstbilgi**: \<karmaşık >
 
-**Namespace:** std
+**Ad alanı:** std
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[complex Sınıfı](../standard-library/complex-class.md)<br/>
-[C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
+[karmaşık sınıf](../standard-library/complex-class.md)\
+[C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)

@@ -4,65 +4,65 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - regular expressions [C++]
 ms.assetid: aafe202a-1d96-4b36-a270-d676dfd3c51c
-ms.openlocfilehash: 291b25959f790db328080aa74a6320775a33e981
-ms.sourcegitcommit: 0ad35b26e405bbde17dc0bd0141e72f78f0a38fb
+ms.openlocfilehash: db5a7eacc136b3f30187692c7ea10792b84eb3fc
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/20/2019
-ms.locfileid: "65220306"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68451385"
 ---
 # <a name="regular-expressions-c"></a>Normal İfadeler (C++)
 
-C++ Standart Kitaplığı birden çok normal ifade dilbilgisinde destekler. Bu konu, normal ifadeler kullanırken kullanılabilir dilbilgisi çeşitlemeleri açıklar.
+C++ Standart kitaplık birden çok normal ifade dilbilgisinde desteklenir. Bu konu, normal ifadeler kullanılırken kullanılabilen dilbilgisi çeşitlemelerini açıklamaktadır.
 
-## <a name="regexgrammar"></a> Normal ifade dilbilgisi
+## <a name="regexgrammar"></a>Normal Ifade dilbilgisi
 
-Normal ifade dilbilgisi kullanmak için aşağıdakilerden birini kullanarak belirtilir `std::regex_constants::syntax_option_type` sabit listesi değerleri. Bu normal ifade dilbilgisi içinde std::regex_constants tanımlanır:
+Kullanılacak normal ifade dilbilgisi, `std::regex_constants::syntax_option_type` sabit listesi değerlerinden birinin kullanımıyla belirlenir. Bu normal ifade dilbilgisi bilgileri std:: regex_constants içinde tanımlanmıştır:
 
-- `ECMAScript`: JavaScript ve .NET dilleri tarafından kullanılan dilbilgisi en yakın budur.
-- `basic`: POSIX temel normal ifadeler veya BRE.
-- `extended`: Normal ifadeler veya ERE POSIX genişletilmiş.
-- `awk`: Bu `extended`, ancak ek çıkışları yazdırılamayan karakterler içeriyor.
-- `grep`: Bu `basic`, ancak yeni satır içinde değişimleri ayırmak ('\n') karakteri de sağlar.
-- `egrep`: Bu `extended`, ancak aynı zamanda içinde değişimleri ayırmak yeni satır karakterleri verir.
+- `ECMAScript`: Bu, JavaScript ve .NET dilleri tarafından kullanılan dilbilgisine en yakındır.
+- `basic`: POSIX temel normal ifadeleri veya BRE.
+- `extended`: POSIX genişletilmiş normal ifadeler veya @.
+- `awk`: `extended`Bu, ancak yazdırılmayan karakterler için ek kaçış içerir.
+- `grep`: `basic`Bu, ancak satır (' \n ') karakterlerinin farklı değişimlere de izin verir.
+- `egrep`: `extended`Bu, ancak yeni satır karakterlerinin farklı değişimlere de izin verir.
 
-Hiçbir dil bilgisi belirtilmemişse, varsayılan olarak `ECMAScript` varsayılır. Yalnızca bir dil bilgisi belirtilebilir.
+Varsayılan olarak, hiçbir dilbilgisi belirtilmemişse `ECMAScript` varsayılır. Yalnızca bir dilbilgisi belirtilebilir.
 
-Dilbilgisi yanı sıra birkaç bayrakları uygulanabilir:
-- `icase`: Servis talebi eşleştirirken yoksayın.
-- `nosubs`: İşaretli eşleşir (diğer bir deyişle, parantezlerdeki ifadeler); yoksay hiçbir değişimler depolanır.
-- `optimize`: Daha hızlı, büyük oluşturma zaman olası gider eşleşen olun.
-- `collate`: Yerel ayar duyarlı olmayan harmanlama dizilerini (örneğin, "[a-z]" biçiminin aralıkları) kullanın.
+Dilbilgisine ek olarak, çeşitli bayraklar uygulanabilir:
+- `icase`: Eşleşirken büyük/küçük harf durumunu yoksay.
+- `nosubs`: İşaretli eşleşmeleri yoksay (yani, parantez içindeki ifadeler); hiçbir değiştirme depolanmaz.
+- `optimize`: Daha fazla oluşturma süresinin olası masrafına göre daha hızlı eşleme yapın.
+- `collate`: Yerel ayara duyarlı harmanlama dizilerini kullanın (örneğin, "[a-z]" biçiminde aralıklar).
 
-Sıfır veya daha fazla bayrakları, normal ifade altyapısı davranışını belirtmek için dil bilgisi ile birleştirilebilir. Yalnızca belirtilen bayraklar `ECMAScript` dilbilgisi kabul edilir.
+Normal ifade altyapısı davranışını belirtmek için, dilbilgisi ile sıfır veya daha fazla bayrak birleştirilebilir. Yalnızca bayraklar belirtilmişse, `ECMAScript` dilbilgisi olarak kabul edilir.
 
 ### <a name="element"></a>Öğe
 
 Bir öğe aşağıdaki şeylerden biri olabilir:
 
-- Bir *normal karakter* , hedef dizideki aynı karakterle eşleşir.
+- Hedef dizideki aynı karakterle eşleşen *sıradan bir karakter* .
 
-- A *joker karakter* '.', hedef dizideki bir yeni satır dışında herhangi bir karakterle eşleşir.
+- Bir yeni satır dışında hedef dizideki herhangi bir karakterle eşleşen bir *joker karakter* '. '.
 
-- A *köşeli ayraç ifadesi* biçiminin "[`expr`]", bir karakter veya harmanlama öğesi ifadesi tarafından tanımlanan kümesinde olan hedef dizideki eşleşen `expr`, ya da formun "[^`expr`]", bir karakter veya harmanlama öğesi ifadesi tarafından tanımlanan kümeye değil hedef dizideki eşleşen `expr`.
+- "[`expr`]" Biçimindeki bir *köşeli ayraç ifadesi* , ifadesi `expr`tarafından tanımlanan küme içinde de veya bir karakterle eşleşen "[^`expr`]" biçiminde olan hedef dizide bulunan bir karakter veya harmanlama öğesiyle eşleşen bir karakter veya hedef dizide, ifadesi `expr`tarafından tanımlanan küme içinde olmayan bir harmanlama öğesi.
 
-   İfade `expr` aşağıdakilerden herhangi bir birleşimini içerebilir:
+   İfade `expr` aşağıdaki öğelerin herhangi bir birleşimini içerebilir:
 
-   - Tek bir karakter. Bu karakter tarafından tanımlanan kümeye ekler `expr`.
+   - Tek bir karakter. Bu karakteri tarafından `expr`tanımlanan kümesine ekler.
 
-   - A *karakter aralığı* biçiminin "`ch1`-`ch2`". Kapalı aralıktaki değerler tarafından temsil edilen karakterleri ekler [`ch1`, `ch2`] tarafından tanımlanan kümeye `expr`.
+   - "`ch1`"Formununbir *karakter aralığı.* -`ch2` [`ch1` `expr`, `ch2`] Kapalı aralığındaki değerlere göre temsil edilen karakterleri tarafından tanımlanan kümesine ekler.
 
-   - A *karakter sınıfı* biçiminin "[:`name`:]". Adlandırılmış sınıftaki karakterleri tarafından tanımlanan kümeye ekler `expr`.
+   - "[:`name`:]" Biçiminde bir *karakter sınıfı* . Adlandırılmış sınıftaki karakterleri tarafından `expr`tanımlanan kümesine ekler.
 
-   - Bir *denklik sınıfı* biçiminin "[=`elt`=]". Eşdeğer harmanlama öğelerini ekler `elt` tarafından tanımlanan kümeye `expr`.
+   - "[=`elt`=]" Biçiminin bir *denklik sınıfı* . `elt` Tarafından`expr`tanımlanan kümesine eşdeğer olan harmanlama öğelerini ekler.
 
-   - A *harmanlama sembolü* biçiminin "[.`elt`.]". Harmanlama öğesi ekler `elt` tarafından tanımlanan kümeye `expr`.
+   - "[.`elt`.]" Biçiminin *harmanlama simgesi* . Harmanlama öğesini `elt` tarafından `expr`tanımlanan kümesine ekler.
 
-- Bir *bağlantı*. ' ^' yer işareti hedef dizinin başlangıcıyla eşleşir; '$' yer işareti hedef dizinin sonuyla eşleşir.
+- Bir *tutturucu*. ' ^' yer işareti hedef dizinin başlangıcıyla eşleşir; '$' yer işareti hedef dizinin sonuyla eşleşir.
 
-A *yakalama grubu* biçiminin "( *subexpression* )", veya "\\( *subexpression* \\)" içinde `basic` ve `grep`, hangi Sınırlayıcılar arasındaki desen tarafından eşleştirilen hedef dizideki karakterlerin dizisiyle eşleşir.
+"(Alt *ifade* )"\\veya içinde `basic` "`grep`(alt *ifade* \\)" biçiminde bir *yakalama grubu* , ile eşleşen hedef dizideki karakterlerin dizisiyle eşleşir. Sınırlayıcılar arasındaki desenler.
 
-- Bir *kimlik çıkışı* biçiminin "\\`k`", karakteriyle eşleşen `k` hedef dizideki.
+- Hedef dizideki karakterle eşleşen "\\`k`" biçiminde bir *kimlik kaçış* karakteri `k` .
 
 Örnekler:
 
@@ -76,111 +76,111 @@ A *yakalama grubu* biçiminin "( *subexpression* )", veya "\\( *subexpression* \
 
 - "(a)", "a" hedef dizisiyle eşleşir ve yakalama grubu 1'i "a" alt dizisiyle ilişkilendirir, ancak "B", "b" veya "c" hedef dizileriyle eşleşmez.
 
-İçinde `ECMAScript`, `basic`, ve `grep`, bir öğe ayrıca olabilir bir *geri başvuru* formun "\\`dd`" burada `dd` bir dizisi ile eşleşen bir ondalık değer N temsil eder karakter hedef sıra diğer bir deyişle n. tarafından eşleşen karakter dizisi ile aynı *yakalama grubu*. Örneğin ilk (ve tek) yakalama grubu ilk "a" dizisini ve \1 son "a" dizisini eşlediğinden, "(a)\1", "aa" hedef dizisini eşlemez.
+, `ECMAScript`\\ `dd` Ve ' de bir öğesi,"`dd`" biçiminde bir *geri başvuru* da olabilir; burada, hedefteki bir karakter dizisiyle eşleşen bir ondalık değer N temsil eder `grep` `basic` Nth *Capture grubu*tarafından eşleştirilen karakterlerin dizisiyle aynı olan sıra. Örneğin ilk (ve tek) yakalama grubu ilk "a" dizisini ve \1 son "a" dizisini eşlediğinden, "(a)\1", "aa" hedef dizisini eşlemez.
 
-İçinde `ECMAScript`, bir öğe aşağıdaki şeylerden biri de olabilir:
+' `ECMAScript`De, bir öğesi aşağıdaki işlemlerden biri de olabilir:
 
-- A *yakalama olmayan grup* biçiminin "(?: *subexpression* )". Sınırlayıcı arasındaki desen tarafından eşleştirilen hedef dizideki karakterlerin dizisiyle eşleşir.
+- "(?: Alt *ifade* )" biçimindeki *yakalama olmayan Grup* . Sınırlayıcı arasındaki desen tarafından eşleştirilen hedef dizideki karakterlerin dizisiyle eşleşir.
 
-- Sınırlı *dosya biçimi çıkışı* , form "\f", "\n", "\r", "\t" veya "\v". Bunlar hedef dizide sırasıyla bir form besleme, yeni satır, satır başı, yatay sekme ve dikey sekme ile eşleşir.
+- "\F", "\n", "\r", "\t" veya "\v" biçimindeki sınırlı bir *dosya biçimi kaçış* . Bunlar hedef dizide sırasıyla bir form besleme, yeni satır, satır başı, yatay sekme ve dikey sekme ile eşleşir.
 
-- A *pozitif onay* biçiminin "(= *subexpression* )". Sınırlayıcılar arasındaki desen tarafından eşleştirilen hedef dizinin karakterlerinin dizisiyle eşleşir, ancak hedef dizideki eşleme konumunu değiştirmez.
+- "(= Alt *ifade* )" formunun *pozitif bir onayı* . Sınırlayıcılar arasındaki desen tarafından eşleştirilen hedef dizinin karakterlerinin dizisiyle eşleşir, ancak hedef dizideki eşleme konumunu değiştirmez.
 
-- A *subexpression* biçiminin "(! *subexpression* )". Sınırlayıcılar arasındaki desen tarafından eşleştirilen hedef dizinin karakterlerinin bir dizisini eşlemez ve hedef dizideki eşleme konumunu değiştirmez.
+- Formun *negatif bir onayı* "(! *subexpression* )". Sınırlayıcılar arasındaki desen tarafından eşleştirilen hedef dizinin karakterlerinin bir dizisini eşlemez ve hedef dizideki eşleme konumunu değiştirmez.
 
-- A *onaltılı çıkış dizisi* biçiminin "\x`hh`". İki onaltılık basamak tarafından temsil edilen hedef dizideki bir karakterle eşleşen `hh`.
+- "\X`hh`" formunun *onaltılı kaçış dizisi* . İki onaltılık basamakla `hh`temsil edilen hedef dizideki bir karakterle eşleşir.
 
-- A *unicode çıkış dizisi* biçiminin "\u`hhhh`". Dört onaltılık basamak tarafından temsil edilen hedef dizideki bir karakterle eşleşen `hhhh`.
+- "\U`hhhh`" formunun *Unicode kaçış dizisi* . Dört onaltılık basamakla `hhhh`temsil edilen hedef dizideki bir karakterle eşleşir.
 
-- A *denetim çıkış dizisi* biçiminin "\c`k`". Karakteri tarafından adlandırılan Denetim karakteriyle eşleşir `k`.
+- "\C`k`" formunun *Denetim kaçış dizisi* . Karakteri `k`tarafından adlandırılan denetim karakteriyle eşleşir.
 
-- A *sözcük sınırı onayı* "\b" biçiminin. Hedef dizideki geçerli konum hemen ardından geldiğinde eşleşen bir *sözcük sınırı*.
+- "\B" biçiminin bir *sözcük sınırı onayı* . Hedef dizideki geçerli konum bir *sözcük sınırının*hemen ardından olduğunda eşleşir.
 
-- A *negatif sözcük sınırı onayı* "\B" biçiminin. Hedef dizideki geçerli konum hemen sonra değilse eşleşen bir *sözcük sınırı*.
+- "\B" formu için *negatif bir sözcük sınırı onayı* . Hedef dizideki geçerli konum bir *sözcük sınırının*hemen ardından olmadığında eşleşir.
 
-- A *dsw karakter çıkışı* form "\d", "\D", "\s", "\S", "\w", "\W". Bir karakter sınıfı için kısa bir ad sağlar.
+- "\D", "\d", "\s", "\s", "\w", "\w" biçiminde bir *DSW karakter kaçış karakteri* . Bir karakter sınıfı için kısa bir ad sağlar.
 
 Örnekler:
 
 - "(?:a)", "a" hedef dizisiyle eşleşir, ancak yakalama grubu 1 olmadığından "(?:a)\1" geçersizdir.
 
-- "(=a) bir" hedef dizisiyle eşleşir "a". Pozitif onay hedef dizideki ilk "a" dizileriyle eşleşir ve normal ifadedeki son "a" hedef dizideki ilk "a" dizileriyle eşleşir.
+- "(= a) a", "a" hedef dizisiyle eşleşir. Pozitif onay hedef dizideki ilk "a" dizileriyle eşleşir ve normal ifadedeki son "a" hedef dizideki ilk "a" dizileriyle eşleşir.
 
-- "(!a) bir" hedef dizisiyle eşleşmez "a".
+- "(! a) a", "a" hedef dizisiyle eşleşmez.
 
-- "a\b." Hedef dizisiyle eşleşir "bir ~", "ab" hedef dizisiyle eşleşmez.
+- A\B. "a ~" hedef dizisiyle eşleşir, ancak "AB" hedef dizisiyle eşleşmez.
 
-- "a\B." "ab" hedef dizisiyle eşleşir, ancak hedef dizisini eşlemez "bir ~".
+- A\B. "AB" hedef dizisiyle eşleşir, ancak "a ~" hedef dizisiyle eşleşmez.
 
-İçinde `awk`, bir öğe aşağıdaki şeylerden biri de olabilir:
+' `awk`De, bir öğesi aşağıdaki işlemlerden biri de olabilir:
 
-- A *dosya biçimi çıkışı* biçiminin "\\\\", "\a", "\b", "\f", "\n", "\r", "\t" veya "\v". Bunlar hedef dizide sırasıyla ters eğik çizgi, uyarı, geri al, bir form besleme, yeni satır, satır başı, yatay sekme ve dikey sekme ile eşleşir.
+- "\\","\A", "\b", "\f", "\n", "\r", "\t" veya "\v" biçimindeki bir *dosya biçimi kaçış.* \\ Bunlar hedef dizide sırasıyla ters eğik çizgi, uyarı, geri al, bir form besleme, yeni satır, satır başı, yatay sekme ve dikey sekme ile eşleşir.
 
-- Bir *sekizli çıkış dizisi* biçiminin "\\`ooo`". Temsili bir, iki veya üç sekizli basamak tarafından temsil edilen değeri olan hedef dizideki bir karakterle eşleşir `ooo`.
+- "\\"Formunun *sekizli kaçış dizisi* `ooo`. Temsili bir, iki veya üç sekizli basamakla `ooo`temsil edilen değer olan hedef dizideki bir karakterle eşleşir.
 
 ### <a name="repetition"></a>Yineleme
 
-Dışında herhangi bir öğe bir *pozitif onay*, *subexpression*, veya bir *bağlantı* bir yineleme sayısı gelebilir. En genel yineleme sayısı türü alır "{`min`,`max`}", veya "\\{`min`,`max`\\}" içinde `basic` ve `grep`. Bu yineleme biçiminin durumunun tarafından izlenen bir öğeyle eşleşir en az `min` oluşumunu ve Hayır birden fazla `max` oluşumunu öğeyle eşleşen bir dizi. Örneğin, "bir{2,3}" "a" ya da hedef dizideki "aaaa" "aa" hedef dizisiyle ve "aaa" hedef dizisiyle, ancak hedef dizisiyle eşleşmez, eşleşir.
+*Pozitif bir onaylama*, *negatif*bir onay veya bir *tutturucu* dışında herhangi bir öğe, bir yineleme sayısı ile izlenebilir. En genel`min`yineleme sayısı türü, ve`max``max`\\\\`min` içinde`grep`"{,}" veya "{,}" biçimini alır. `basic` Bu yineleme sayısı biçimi tarafından izlenen bir öğe, en az `min` art arda oluşumlarla eşleşir ve öğesiyle eşleşen bir dizinin art arda oluşumlarından `max` daha fazlasını içermez. Örneğin, "a{2,3}", "AA" hedef dizisiyle ve "aaa" hedef dizisiyle eşleşir, ancak "a" hedef dizisiyle veya "aaaa" hedef dizisiyle eşleşmez.
 
 Bir yineleme sayısı aşağıdaki biçimlerden birini de alabilir:
 
-- "{`min`}", veya "\\{`min`\\}" içinde `basic` ve `grep`. Eşdeğer "{`min`,`min`}".
+- ve`min`\\`min`\\içinde "{}"veya"{}".`basic` `grep` "{`min`,`min`}" İle eşdeğerdir.
 
-- "{`min`,}", veya "\\{`min`,\\}" içinde `basic` ve `grep`. Eşdeğer "{`min`, unbounded}".
+- ve`min`\\`min`\\içinde "{,}"veya"{,}".`basic` `grep` "{`min`, Sınırlandırılmamış}" ile eşdeğerdir.
 
 - "\*". "{0,unbounded}" biçimine denk.
 
 Örnekler:
 
-- "bir{2}" hedef dizisiyle eşleşmez, ancak "aa" hedef dizisiyle, "a" veya "aaa" hedef dizisiyle eşleşir.
+- "a{2}", "AA" hedef dizisiyle eşleşir, ancak "a" hedef dizisiyle veya "aaa" hedef dizisiyle eşleşmez.
 
-- "bir{2,}" "aa" hedef dizisiyle, "aaa" hedef dizisiyle vb. ile eşleşir, ancak hedef dizisini eşlemez "a".
+- "a{2,}", "AA" hedef dizisiyle, "aaa" hedef dizisiyle eşleşir, ancak "a" hedef dizisiyle eşleşmez.
 
-- "bir\*" hedef dizisiyle eşleşir "", hedef sıra "a", "aa" hedef dizisiyle ve benzeri.
+- "a\*", "" hedef dizisiyle, "a" hedef dizisiyle, "AA" hedef dizisiyle vb. eşleşir.
 
-Dışındaki tüm dilbilgisi için `basic` ve `grep`, bir yineleme sayısı aşağıdaki biçimlerden birini de alabilir:
+`basic` Ve`grep`dışındaki tüm dilmars için, bir yineleme sayısı aşağıdaki formlardan birini de alabilir:
 
-- "?". Eşdeğer "{0,1}".
+- "?". "{0,1}" İle eşdeğerdir.
 
-- "+". "{1, unbounded}" ile eşdeğerdir.
+- "+". "{1, sınırsız}" ile eşdeğerdir.
 
 Örnekler:
 
-- "a?" Hedef dizisiyle eşleşir "" ve "a", ancak "değil aa" hedef dizisiyle.
+- "a?" "" hedef dizisiyle ve "a" hedef dizisiyle eşleşir, ancak "AA" hedef dizisiyle eşleşmez.
 
 - "a+", "a" hedef dizisiyle, "aa" hedef dizisiyle vb. ile eşleşir ancak "" hedef dizisiyle eşleşmez.
 
-İçinde `ECMAScript`, yineleme sayısının tüm biçimlerinin karakteriyle izlenebilir '?', gösteren bir *doyumsuz olmayan yineleme*.
+' `ECMAScript`De, tüm yineleme sayısı biçimleri, *doyumsuz olmayan bir yineleme*atayan '? ' karakteri ile izlenebilir.
 
 ### <a name="concatenation"></a>Bitiştirme
 
-Normal ifade öğeleri içeren veya içermeyen *yineleme sayısı*, form daha uzun ifadeleri biçimlendirmek için birleştirilebilir. Sonuçta elde edilen ifade tek tek öğeler tarafından eşleştirilen dizilerin bir bitiştirmesi olan bir hedef dizisiyle eşleşir. Örneğin, "bir{2,3}b", "aab" hedef dizisini ve "aaab" hedef dizisiyle eşleşir, ancak "ab" hedef dizisini ya "da aaaab" hedef dizisiyle eşleşmez.
+*Yineleme sayımlarına*sahip veya olmayan normal ifade öğeleri, daha uzun normal ifadeler oluşturacak şekilde birleştirilebilir. Sonuçta elde edilen ifade tek tek öğeler tarafından eşleştirilen dizilerin bir bitiştirmesi olan bir hedef dizisiyle eşleşir. Örneğin, "a{2,3}b", "AAB" hedef dizisiyle ve "aaab" hedef dizisiyle eşleşir, ancak "AB" hedef dizisiyle veya "aaaab" hedef dizisiyle eşleşmez.
 
 ### <a name="alternation"></a>Değişim
 
-Dışında tüm normal ifade dilbilgisinde `basic` ve `grep`, bitişik normal bir ifade karakteriyle izlenebilir '&#124;' ve diğer bitişik normal ifadeler. Herhangi bir sayıdaki bitişik normal ifadeler bu şekilde birleştirilebilir. Sonuçta elde edilen ifade, bitişik normal ifadelerin bir veya daha fazlasını eşleyen herhangi bir hedef dizisiyle eşleşir.
+Ve `basic` dışındaki`grep`tüm normal ifade dilbilgisinde, art arda eklenmiş bir normal ifadeye sonra '&#124;' karakteri ve başka bir birleştirilmiş normal ifade gelebilir. Herhangi bir sayıdaki bitişik normal ifadeler bu şekilde birleştirilebilir. Sonuçta elde edilen ifade, bitişik normal ifadelerin bir veya daha fazlasını eşleyen herhangi bir hedef dizisiyle eşleşir.
 
-Birden fazla bitişik normal ifadele hedef diziyi eşlediğinde `ECMAScript` eşleşme olarak dizisi ile eşleşen ilk bitişik normal ifadelerin seçer (*ilk eşleşen*); diğer Normal ifade dilbilgisinde seçin elde eden *en uzun eşleşme*. Örneğin, "ab&#124;cd" "ab" hedef dizisini ve "cd" hedef dizisiyle eşleşir, ancak "abd" hedef dizisini ya da "acd" hedef dizisiyle eşleşmez.
+Art arda eklenen normal ifadelerden birden fazla, hedef sırayla eşleştiğinde, `ECMAScript` eşleşme (*ilk eşleşme*) olarak sırayla eşleşen birleştirilmiş normal ifadelerin ilkini seçer; diğer normal ifade dilbilgisinde, *en uzun eşleşmeyi*elde eden birini seçer. Örneğin, "AB&#124;CD", "AB" hedef dizisiyle ve "CD" hedef dizisiyle eşleşir, ancak "ABD" hedef dizisiyle veya "ACD" hedef dizisiyle eşleşmez.
 
-İçinde `grep` ve `egrep`, yeni satır karakteri ('\n') içinde değişimleri ayırmak için kullanılabilir.
+`grep` Ve`egrep`' de, bir yeni satır karakteri (' \n ') değişim ayırmak için kullanılabilir.
 
 ### <a name="subexpression"></a>Subexpression
 
-İçinde `basic` ve `grep`, bir alt ifade bir bitiştirmedir. Diğer normal ifade dilbilgisinde bir alt ifade bir değişimdir.
+`basic` Ve`grep`' de bir alt ifade bir birleştirme işlemi olur. Diğer normal ifade dilbilgisinde bir alt ifade bir değişimdir.
 
-## <a name="grammarsummary"></a> Dilbilgisi özeti
+## <a name="grammarsummary"></a>Dilbilgisi özeti
 
 Çeşitli normal ifade dilbilgisi sistemlerinde kullanılabilen özellikler aşağıdaki tabloda özetlenmiştir:
 
-|Öğe|Temel|genişletilmiş|ECMAScript|grep|egrep|awk|
+|Öğe|basit|genişletilmiş|ECMAScript|grep|egrep|awk|
 |-------------|---------|---------|----------|----------|-----------|---------|
-|kullanarak Değişim '&#124;'||+|+||+|+|
+|'&#124;' kullanarak değişim||+|+||+|+|
 |'\n' kullanarak değişim||||+|+||
 |yer işareti|+|+|+|+|+|+|
 |yeniden başvuru|+||+|+|||
 |köşeli ayraç ifadesi|+|+|+|+|+|+|
 |"()" kullanan yakalama grubu||+|+||+|+|
-|kullanan yakalama grubu "\\(\\)"|+|||+|||
+|"\\(\\)" kullanarak Grup yakala|+|||+|||
 |denetim çıkış dizisi|||+||||
 |dsw karakter çıkışı|||+||||
 |dosya biçimi çıkışı|||+|||+|
@@ -193,15 +193,15 @@ Birden fazla bitişik normal ifadele hedef diziyi eşlediğinde `ECMAScript` eş
 |sekizli çıkış dizisi||||||+|
 |normal karakter|+|+|+|+|+|+|
 |pozitif onay|||+||||
-|kullanarak yineleme "{}"||+|+||+|+|
-|kullanarak yineleme "\\{\\}"|+|||+|||
-|kullanarak yineleme '\*'|+|+|+|+|+|+|
+|"{}" kullanarak yineleme||+|+||+|+|
+|"\\{\\}" kullanarak yineleme|+|||+|||
+|'\*' kullanarak yineleme|+|+|+|+|+|+|
 |'?' ve '+' kullanarak yineleme||+|+||+|+|
 |unicode çıkış dizisi|||+||||
 |joker karakter|+|+|+|+|+|+|
 |sözcük sınırı onayı|||+||||
 
-## <a name="semanticdetails"></a> Anlamsal Ayrıntılar
+## <a name="semanticdetails"></a>Anlamsal Ayrıntılar
 
 ### <a name="anchor"></a>Yer işareti
 
@@ -209,7 +209,7 @@ Bir yer işareti hedef dizideki bir karakter ile değil, konumla eşleşir. Bir 
 
 ### <a name="back-reference"></a>Yeniden Başvuru
 
-Ardından bir ondalık n değeri ters eğik çizgi geri bir başvurudur N. içeriğiyle eşleşir *yakalama grubu*. N değeri, yeniden başvuruyu önceleyen yakalama gruplarının sayısından daha fazla olmamalıdır. İçinde `basic` ve `grep`, N değeri ters eğik çizgiyi takip eden ondalık basamak tarafından belirlenir. İçinde `ECMAScript`, N değeri ters eğik çizgiyi hemen takip eden tüm ondalık basamaklar tarafından belirlenir. Bu nedenle `basic` ve `grep`, normal ifade birden fazla dokuz yakalama grubundan olsa bile, N değeri hiçbir zaman birden fazla 9'dur. İçinde `ECMAScript`, N değeri sınırsızdır.
+Geri başvuru, sonunda ondalık değeri N olan bir ters eğik çizgidir. N. *yakalama grubunun*içeriğiyle eşleşir. N değeri, yeniden başvuruyu önceleyen yakalama gruplarının sayısından daha fazla olmamalıdır. `basic` Ve`grep`' de, N değeri ters eğik çizgiden sonraki ondalık basamağa göre belirlenir. İçinde `ECMAScript`, N değeri, ters eğik çizgiyi hemen izleyen tüm ondalık basamakların belirlenir. Bu nedenle, `basic` ve `grep`' de, normal ifadede dokuz ' dan fazla yakalama grubuna sahip olsa bile N değeri hiçbir şekilde 9 ' dan daha fazla. İçinde `ECMAScript`, N değeri sınırsız olur.
 
 Örnekler:
 
@@ -217,13 +217,13 @@ Ardından bir ondalık n değeri ters eğik çizgi geri bir başvurudur N. içer
 
 - "(a)\2" geçerli değildir.
 
-- "(b (((a))) \10" içinde farklı anlamları vardır `basic` ve `ECMAScript`. İçinde `basic` "\1" geri başvurudur. Yeniden başvuru ilk yakalama grubunun içeriğiyle eşleşir (diğer bir deyişle, "(b" ile başlayan ve ")" ile sonlanan ve yeniden başvurudan önce gelen öğeyi) ve son '0', '0' normal karakteriyle eşleşir. İçinde `ECMAScript`, "\10" geri başvurudur. Onuncu yakalama grubunu, diğer bir deyişle, en içtekiyle eşleşir.
+- "(b ( `basic` `ECMAScript`(((((((((((((((((((((((((((((((((( `basic` "\ 1" geri başvurusunda bulunur. Yeniden başvuru ilk yakalama grubunun içeriğiyle eşleşir (diğer bir deyişle, "(b" ile başlayan ve ")" ile sonlanan ve yeniden başvurudan önce gelen öğeyi) ve son '0', '0' normal karakteriyle eşleşir. İçinde `ECMAScript`, geri başvurusu "\ 10" ' dur. Onuncu yakalama grubunu, diğer bir deyişle, en içtekiyle eşleşir.
 
 ### <a name="bracket-expression"></a>Köşeli Ayraç İfadesi
 
-Bir köşeli ayraç ifadesi karakter kümesini tanımlar ve *harmanlama öğelerini*. Köşeli ayraç ifadesi ' ^' karakteriyle başladığında, kümede hedef dizideki geçerli karakteri eşleyen bir öğe yoksa eşleme başarılı olur. Aksi halde, eşleme yalnızca kümedeki öğelerden biri hedef dizideki geçerli karakterle eşleşiyorsa başarılı olur.
+Köşeli ayraç ifadesi bir karakter kümesini ve *harmanlama öğelerini*tanımlar. Köşeli ayraç ifadesi ' ^' karakteriyle başladığında, kümede hedef dizideki geçerli karakteri eşleyen bir öğe yoksa eşleme başarılı olur. Aksi halde, eşleme yalnızca kümedeki öğelerden biri hedef dizideki geçerli karakterle eşleşiyorsa başarılı olur.
 
-Karakter kümesi, herhangi bir birleşimi listelenerek tanımlanabilir *karakterlerin tek tek*, *karakter aralıkları*, *karakter sınıfları*, *eşdeğerlik sınıflar*, ve *sembollerinin*.
+Karakter kümesi, *tek tek karakterlerin*, *karakter aralıklarının*, *karakter sınıflarının*, *denklik sınıfların*ve *harmanlama simgelerinin*herhangi bir birleşimi listelenerek tanımlanabilir.
 
 ### <a name="capture-group"></a>Yakalama Grubu
 
@@ -239,14 +239,14 @@ Bir yakalama grubu kendi içeriğini normal ifade dilbilgisi içinde tek bir bir
 
 ### <a name="character-class"></a>Karakter Sınıfı
 
-Köşeli ayraç ifadelerindeki bir karakter sınıfı, adlandırılan sınıftaki tüm karakterleri köşeli ayraç ifadesi tarafından tanımlanan karakter kümesine ekler. Bir karakter sınıfı oluşturmak için, ardından ":]" gelen sınıfın adının ardından "[:" kullanın. Dahili olarak, karakter sınıflarının adları çağrılarak tanınır `id = traits.lookup_classname`. Bir karakter `ch` böyle bir sınıfa `traits.isctype(ch, id)` true değerini döndürür. Varsayılan `regex_traits` şablonu aşağıdaki tablodaki sınıf adlarını destekler.
+Köşeli ayraç ifadelerindeki bir karakter sınıfı, adlandırılan sınıftaki tüm karakterleri köşeli ayraç ifadesi tarafından tanımlanan karakter kümesine ekler. Bir karakter sınıfı oluşturmak için, ardından ":]" gelen sınıfın adının ardından "[:" kullanın. Dahili olarak, karakter sınıflarının adları çağırarak `id = traits.lookup_classname`tanınır. Bir karakter `ch` , `traits.isctype(ch, id)` true döndürürse bu tür bir sınıfa aittir. Varsayılan `regex_traits` şablon, aşağıdaki tablodaki sınıf adlarını destekler.
 
 |Sınıf Adı|Açıklama|
 |----------------|-----------------|
 |"alnum"|küçük harfler, büyük harfler ve rakamlar|
 |"alpha"|küçük harfler ve büyük harfler|
 |"blank"|boşluk veya sekme|
-|"cntrl"|*dosya biçimi çıkışı* karakter|
+|"cntrl"|*dosya biçimi kaçış* karakterleri|
 |"digit"|basamaklar|
 |"graph"|küçük harfler, büyük harfler, rakamlar ve noktalama işareti|
 |"lower"|küçük harfler|
@@ -285,11 +285,11 @@ Bir harmanlama öğesi tek bir karakter olarak ele alınan çoklu bir karakter d
 
 ### <a name="collating-symbol"></a>Harmanlama Sembolü
 
-Köşeli ayraç ifadesindeki bir harmanlama sembolü ekler bir *harmanlama öğesi* köşeli ayraç ifadesi tarafından tanımlanan kümeye. Bir harmanlama sembolü oluşturmak için "[." peşinden ".]" gelen harmanlama öğesinin ardından.
+Köşeli ayraç ifadesindeki harmanlama sembolü, köşeli ayraç ifadesi tarafından tanımlanan kümesine bir *harmanlama öğesi* ekler. Harmanlama simgesi oluşturmak için "[." kullanın ardından, ".]" tarafından izlenen harmanlama öğesi.
 
 ### <a name="control-escape-sequence"></a>Denetim Çıkış Dizisi
 
-Bir denetim çıkış dizisi, ardından 'a' - 'z' ya da 'A' - 'Z'' arası bir harf gelen 'c' harfinin ardından geldiği bir ters eğik çizgidir. Harf ile adlandırılan ASCI denetim karakteriyle eşleşir. Örneğin, "\ci" için "\x09" hedef dizisiyle eşleşir \<ctrl-i > 0x09 değerine sahip.
+Bir denetim çıkış dizisi, ardından 'a' - 'z' ya da 'A' - 'Z'' arası bir harf gelen 'c' harfinin ardından geldiği bir ters eğik çizgidir. Harf ile adlandırılan ASCI denetim karakteriyle eşleşir. Örneğin, "\cı", "\x09" hedef dizisiyle eşleşir, çünkü \<CTRL-ı > 0x09 değerine sahiptir.
 
 ### <a name="dsw-character-escape"></a>DSW Karakter Çıkışı
 
@@ -301,18 +301,18 @@ Bir dsw karakter çıkışı, aşağıdaki tabloda gösterildiği gibi bir karak
 |"\D"|"[^[:d:]]"|"[^[:digit:]]"|
 |"\s"|"[[:s:]]"|"[[:space:]]"|
 |"\S"|"[^[:s:]]"|"[^[:space:]]"|
-|"\w"|"[[:w:]]"|"[a-zA-Z0-9_]"\*|
-|"\W"|"[^[:w:]]"|"[^ a-zA-Z0-9_]"\*|
+|"\w"|"[[:w:]]"|"[a-zA-z0-9_]"\*|
+|"\W"|"[^[:w:]]"|"[^ a-zA-z0-9_]"\*|
 
 \*ASCII karakter kümesi
 
 ### <a name="equivalence-class"></a>Denklik Sınıfı
 
-Tüm karakterleri köşeli ayraç ifadesindeki bir denklik sınıfı ekler ve *harmanlama öğelerini* köşeli ayraç ifadesi tarafından tanımlanan kümeye denklik sınıfı açıklamasındaki harmanlama öğesine denk. Bir denklik sınıfı oluşturmak için, ardından "=]" gelen bir harmanlama öğesinin ardından "[=" kullanın. Dahili olarak, iki harmanlama öğesi `elt1` ve `elt2` eşdeğer olup olmadığını `traits.transform_primary(elt1.begin(), elt1.end()) == traits.transform_primary(elt2.begin(), elt2.end())`.
+Köşeli ayraç ifadesinde bir denklik sınıfı, denklik sınıf tanımındaki harmanlama öğesine denk gelen tüm karakterleri ve *harmanlama öğelerini* köşeli ayraç ifadesi tarafından tanımlanan kümesine ekler. Bir denklik sınıfı oluşturmak için, ardından "=]" gelen bir harmanlama öğesinin ardından "[=" kullanın. Dahili olarak, iki harmanlama `elt1` öğesi `elt2` ve ise `traits.transform_primary(elt1.begin(), elt1.end()) == traits.transform_primary(elt2.begin(), elt2.end())`eşdeğerdir.
 
 ### <a name="file-format-escape"></a>Dosya Biçimi Çıkışı
 
-Bir dosya biçimi çıkışı, normal C dili karakter kaçış dizileri, oluşan "\\\\", "\a", "\b", "\f", "\n", "\r", "\t", "\v". Bunlar normal anlamlara, diğer bir deyişle, ters eğik çizgi, uyarı, Geri Al, form besleme, yeni satır, satır başı, yatay sekme ve dikey sekme sırasıyla içerir. İçinde `ECMAScript`, "\a" ve "\b" izin verilmez. ("\\\\" izin verilir, ancak kimlik çıkışı, dosya biçimi çıkışı değil).
+Bir dosya biçimi kaçış, olağan C dili karakter kaçış dizileri, "\\\\", "\a", "\b", "\f", "\n", "\r", "\t", "\v" ile oluşur. Bunlar, sırasıyla, ters eğik çizgi, uyarı, geri al, form besleme, yeni satır, satır başı, yatay sekme ve dikey sekme gibi olağan anlamlara sahiptir. İçinde `ECMAScript`, "\a" ve "\b" kullanımına izin verilmez. ("\\\\" kullanımına izin verilir, ancak bir dosya biçimi kaçış değil, bir kimlik kaçış olur).
 
 ### <a name="hexadecimal-escape-sequence"></a>Onaltılık Çıkış Dizisi
 
@@ -322,9 +322,9 @@ Onaltılık çıkış dizisi, ardından iki onaltılık basamağın (0-9a-fA-F) 
 
 Kimlik çıkışı, ardından tek bir karakter gelen bir ters eğik çizgidir. Bu karakterle eşleşir. Karakter özel bir anlama sahip olduğunda gerekir, kimlik çıkışı kullanılarak özel anlam kaldırılır. Örneğin:
 
-- "bir\*" "aaa" hedef dizisiyle eşleşir, ancak hedef dizisini eşlemez "bir\*".
+- "a\*", "aaa" hedef dizisiyle eşleşir, ancak "a\*" hedef dizisiyle eşleşmez.
 
-- "bir\\\*", "aaa" hedef dizisiyle eşleşmez ancak hedef dizisiyle eşleşir "bir\*".
+- "a\\\*", "aaa" hedef dizisiyle eşleşmez, ancak "a\*" hedef dizisiyle eşleşir.
 
 Bir kimlik çıkışında izin verilen karakterlerin kümesi, aşağıdaki tabloda gösterildiği gibi normal ifade dilbilgisine bağlıdır.
 
@@ -332,8 +332,8 @@ Bir kimlik çıkışında izin verilen karakterlerin kümesi, aşağıdaki tablo
 |-------------|----------------------------------------|
 |`basic`, `grep`|{ '(', ')', '{', '}', '.', '[', '\\', '\*', '^', '$' }|
 |`extended`, `egrep`|{ '(', ')', '{', '.', '[', '\\', '\*', '^', '$', '+', '?', '&#124;' }|
-|`awk`|`extended` plus { '"', '/' }|
-|`ECMAScript`|Bir tanımlayıcının parçası olabilenler dışındaki tüm karakterler. Genellikle bu içerir harf, rakam, '$', '\_' ve unicode kaçış dizileri. Daha fazla bilgi için bkz. ECMAScript Dil Belirtimi.|
+|`awk`|`extended`artı {' "', '/'}|
+|`ECMAScript`|Bir tanımlayıcının parçası olabilenler dışındaki tüm karakterler. Genellikle, bu harfler, rakamlar, ' $ ', '\_' ve Unicode kaçış dizilerini içerir. Daha fazla bilgi için bkz. ECMAScript Dil Belirtimi.|
 
 ### <a name="individual-character"></a>Tekil Karakter
 
@@ -347,7 +347,7 @@ Köşeli ayraç ifadelerindeki tekil karakter, söz konusu karakteri köşeli ay
 
 - "[a^bc]", "a", "b", "c" ve "^" hedef dizileriyle eşleşir, ancak "d" hedef dizisiyle eşleşmez.
 
-Dışında tüm normal ifade dilbilgisinde `ECMAScript`, bir ']' Açılış izleyen ilk karakter ' [' veya ilk karakter bir ilk ' ^', kendisini temsil eder.
+Tüm normal ifade dilbilgisinde `ECMAScript`, '] ', ' [' açılışını izleyen ilk karakter ise veya başlangıçtaki ' ^ ' öğesini izleyen ilk karakter ise, kendisini temsil eder.
 
 Örnekler:
 
@@ -357,29 +357,29 @@ Dışında tüm normal ifade dilbilgisinde `ECMAScript`, bir ']' Açılış izle
 
 - "[^]abc]", "d" hedef dizisiyle eşleşir, ancak "a", "b", "c", or "]" hedef dizileriyle eşleşmez.
 
-İçinde `ECMAScript`, Kullan '\\]' karakterini temsil etmek için ']' köşeli ayraç ifadesindeki.
+İçinde `ECMAScript`, köşeli ayraç\\ifadesinde '] ' karakterini temsil etmek için '] ' kullanın.
 
 Örnekler:
 
 - Köşeli ayraç ifadesi boş olduğundan, "[]a", "a" hedef dizisini işler.
 
-- "[\\] [abc]" "a", "b", "c" hedef dizileriyle eşleşir ve "]", ancak "hedef d" dizisiyle eşleşmez.
+- "[\\] ABC]", "a", "b", "c" ve "]" hedef dizileriyle eşleşir, ancak "d" hedef dizisiyle eşleşmez.
 
 ### <a name="negative-assert"></a>Negatif Onay
 
-Negatif onay kendi içeriği dışında bir şeyi eşlemez. Hedef dizideki hiçbir karakteri tüketmez. Örneğin, "(!aa) (bir\*)" hedef dizisiyle eşleşir "a" ve associates yakalama grubu 1 i "a". "aa" veya "aaa" hedef dizisini eşlemez.
+Negatif onay kendi içeriği dışında bir şeyi eşlemez. Hedef dizideki hiçbir karakteri tüketmez. Örneğin, "(! AA) (a\*)", "a" hedef dizisiyle eşleşir ve yakalama grubu 1 ' i "a" alt dizisiyle ilişkilendirir. "aa" veya "aaa" hedef dizisini eşlemez.
 
 ### <a name="negative-word-boundary-assert"></a>Negatif Sözcük Sınırı Onayı
 
-Hedef dizideki geçerli konum hemen sonra değilse bir negatif sözcük sınırı onayı eşleşir bir *sözcük sınırı*.
+Hedef dizedeki geçerli konum bir *sözcük sınırının*hemen ardından değilse, negatif bir sözcük sınırı onayı eşleşir.
 
 ### <a name="non-capture-group"></a>Yakalama olmayan Grup
 
-Bir yakalama olmayan grup kendi içeriğini normal ifade dilbilgisi içinde tek bir birim olarak işaretler ancak hedef metni etiketlemez. Örneğin, "(a)(?:b)\*(c)" "abbc" hedef metni eşleşir ve yakalama grubu 1 i ilişkilendirir "bir"ve yakalama grubu 2 yi "c".
+Bir yakalama olmayan grup kendi içeriğini normal ifade dilbilgisi içinde tek bir birim olarak işaretler ancak hedef metni etiketlemez. Örneğin, "(a) (?: b)\*(c)", "abbc" hedef metniyle eşleşir ve yakalama grubu 1 ' i "a" alt dizisiyle ve yakalama grubu 2 ' yi "c" alt dizisiyle ilişkilendirir.
 
 ### <a name="non-greedy-repetition"></a>Doyumsuz olmayan Yineleme
 
-Doyumsuz olmayan bir yineleme, deseni eşleyen hedef dizinin en kısa alt dizisini tüketir. Doyumsuz bir yineleme en uzun olanı tüketir. Örneğin, "(a+) (bir\*b)" "aaab" hedef dizisiyle eşleşir. Doyumsuz olmayan bir yineleme kullanıldığında, yakalama grubu 1'i hedef dizinin başındaki "a" alt dizisiyle ve yakalama grubu 2'yi hedef dizinin sonundaki "aab" alt dizisiyle ilişkilendirir. Doyumsuz eşleşme kullanıldığında, yakalama grubu 1'i "aaa" alt dizisiyle ve yakalama grubu 2'yi "b" alt dizisiyle ilişkilendirir.
+Doyumsuz olmayan bir yineleme, deseni eşleyen hedef dizinin en kısa alt dizisini tüketir. Doyumsuz bir yineleme en uzun olanı tüketir. Örneğin, "(a +) (a\*b)", "aaab" hedef dizisiyle eşleşir. Doyumsuz olmayan bir yineleme kullanıldığında, yakalama grubu 1'i hedef dizinin başındaki "a" alt dizisiyle ve yakalama grubu 2'yi hedef dizinin sonundaki "aab" alt dizisiyle ilişkilendirir. Doyumsuz eşleşme kullanıldığında, yakalama grubu 1'i "aaa" alt dizisiyle ve yakalama grubu 2'yi "b" alt dizisiyle ilişkilendirir.
 
 ### <a name="octal-escape-sequence"></a>Sekizli Çıkış Dizisi
 
@@ -391,25 +391,25 @@ Normal bir karakter geçerli dilbilgisi içinde özel bir anlamı olmayan herhan
 
 İçinde `ECMAScript`, aşağıdaki karakterlerin özel anlamları vardır:
 
-- ^  $  \  .  \*  +  ?  (  )  \[  ]  {  }  &#124;
+- ^  $  \  .  \*+  ?  (  )  \[  ]  {  }&#124;
 
-İçinde `basic` ve `grep`, aşağıdaki karakterlerin özel anlamları vardır:
+`basic` Ve`grep`' de, aşağıdaki karakterlerin özel anlamları vardır:
 
 - biçimindeki telefon numarasıdır.   \[   \
 
-Ayrıca `basic` ve `grep`, belirli bir bağlamda kullanıldıklarında aşağıdaki karakterlerin özel anlamları vardır:
+Ayrıca, `basic` ve `grep`içinde, belirli bir bağlamda kullanıldıklarında aşağıdaki karakterlerin özel anlamları vardır:
 
-- '\*' normal bir ifadedeki ilk karakter ya da bir ilk ilk karakter olduğu zaman dışında tüm durumlarda özel bir anlamı vardır ' ^' veya normal bir ifadede, ilk karakteri olduğunda bir yakalama grubu veya ilk karakter, bir ilk ' ^' bir yakalama grubundaki.
+- '\*', normal bir ifadede ilk karakter olduğu veya normal bir ifadede ilk ' ^ ' izleyen ilk karakter ya da bir yakalama grubunun ilk karakteri veya ilk karakter olduğu zaman hariç tüm durumlarda özel bir anlam içeriyor. bir yakalama grubundaki başlangıçtaki ' ^ ' öğesini izler.
 
 - ' ^', normal bir ifadenin ilk karakteri olduğunda özel bir anlamı vardır.
 
 - '$', normal bir ifadenin son karakteri olduğunda özel bir anlamı vardır.
 
-İçinde `extended`, `egrep`, ve `awk`, aşağıdaki karakterlerin özel anlamları vardır:
+, `extended` Veiçinde`awk`, aşağıdaki karakterlerin özel anlamları vardır: `egrep`
 
-- biçimindeki telefon numarasıdır.   \[   \   (   \*   +   ?   {   &#124;
+- biçimindeki telefon numarasıdır.   \[\   (   \*   +   ?   {   &#124;
 
-Ayrıca `extended`, `egrep`, ve `awk`, belirli bir bağlamda kullanıldıklarında aşağıdaki karakterlerin özel anlamları vardır.
+Ayrıca, `extended`ve `egrep`içinde, `awk`, ve içinde, belirli bir bağlamda kullanıldıklarında aşağıdaki karakterlerin özel anlamları vardır.
 
 - ')', önceleyen bir '(' eşlediğinde özel bir anlamı vardır.
 
@@ -417,7 +417,7 @@ Ayrıca `extended`, `egrep`, ve `awk`, belirli bir bağlamda kullanıldıkların
 
 - '$', normal bir ifadenin son karakteri olduğunda özel bir anlamı vardır.
 
-Hedef dizideki aynı karakterle eşleşen bir normal karakter. Varsayılan olarak, iki karakter aynı değer tarafından temsil ediliyorsa, bu eşlemenin başarılı olduğu anlamına gelir. Büyük küçük harf duyarlı eşleme, iki karakter `ch0` ve `ch1` eşleşiyorsa `traits.translate_nocase(ch0) == traits.translate_nocase(ch1)`. Yerel ayar duyarlı eşleme, iki karakter `ch0` ve `ch1` eşleşiyorsa `traits.translate(ch0) == traits.translate(ch1)`.
+Hedef dizideki aynı karakterle eşleşen bir normal karakter. Varsayılan olarak, iki karakter aynı değer tarafından temsil ediliyorsa, bu eşlemenin başarılı olduğu anlamına gelir. Büyük/küçük harf duyarsız bir eşleşmedir, `ch0` iki `ch1` karakter ve `traits.translate_nocase(ch0) == traits.translate_nocase(ch1)`ile eşleşir. Bir yerel ayara duyarlı eşleşmedir, iki karakter `ch0` ve `ch1` ile eşleşir `traits.translate(ch0) == traits.translate(ch1)`.
 
 ### <a name="positive-assert"></a>Pozitif Onay
 
@@ -425,11 +425,11 @@ Pozitif onay kendi içeriğiyle eşleşir, ancak hedef dizideki herhangi bir kar
 
 Örnekler:
 
-- "(=aa) (bir\*)" "aaaa" hedef dizisiyle eşleşir ve yakalama grubu 1 i "aaaa" ilişkilendirir.
+- "(= AA) (a\*)", "aaaa" hedef dizisiyle eşleşir ve yakalama grubu 1 ' i "aaaa" alt dizisiyle ilişkilendirir.
 
-- "(aa) (bir\*)" "aaaa" hedef dizisiyle eşleşir ve yakalama grubu 1 ', hedef dizisiyle ve yakalama grubu 2'hedef dizinin sonundaki "aa" alt dizisiyle başındaki "aa" alt dizisiyle ilişkilendirir.
+- "(AA) (a\*)", "aaaa" hedef dizisiyle eşleşir ve yakalama grubu 1 ' i hedef dizinin başındaki "AA" alt dizisiyle ilişkilendirir ve hedef dizinin sonundaki "AA" alt dizisiyle yakalama grubu 2 ' nı yakalar.
 
-- "(=aa)(a)&#124;(a)" hedef dizisiyle eşleşir "a" ve associates yakalama grubu 1 boş bir diziyle (pozitif onay başarısız olduğundan) ve yakalama grubu 2 yi "a". Ayrıca, "aa" hedef dizisiyle eşleşir ve yakalama grubu 1'i "aa" alt dizisiyle ve yakalama grubu 2'yi boş bir diziyle ilişkilendirir.
+- "(= AA) (a)&#124;(a)", "a" hedef dizisiyle eşleşir ve yakalama grubu 1 ' i boş bir sırayla ilişkilendirir (pozitif onay başarısız olduğu için) ve "a" alt dizisiyle birlikte "a" adlı bir yakalama grubu 2. Ayrıca, "aa" hedef dizisiyle eşleşir ve yakalama grubu 1'i "aa" alt dizisiyle ve yakalama grubu 2'yi boş bir diziyle ilişkilendirir.
 
 ### <a name="unicode-escape-sequence"></a>Unicode Çıkış Dizisi
 
@@ -443,7 +443,7 @@ Hedef ifadedeki, yeni bir satır dışında herhangi bir karakterle eşleşen bi
 
 Bir sözcük sınırı aşağıdaki durumlarda oluşur:
 
-- Geçerli karakter hedef dizinin başındaki ve sözcük karakterlerinden biri `A-Za-z0-9_.`
+- Geçerli karakter, hedef dizinin başlangıcında ve sözcük karakterlerinden biridir`A-Za-z0-9_.`
 
 - Geçerli karakter konumu hedef dizinin sonunu aşar ve hedef dizideki son karakter sözcük karakterlerinden biridir.
 
@@ -453,9 +453,9 @@ Bir sözcük sınırı aşağıdaki durumlarda oluşur:
 
 ### <a name="word-boundary-assert"></a>Sözcük Sınırı Onayı
 
-Hedef dizideki geçerli konum hemen ardından geldiğinde sözcük sınırı onayı eşleşir bir *sözcük sınırı*.
+Hedef dizedeki geçerli konum bir *sözcük sınırının*hemen ardından olduğunda bir sözcük sınırı onayı eşleşir.
 
-## <a name="matchingandsearching"></a> Eşleştirme ve arama
+## <a name="matchingandsearching"></a>Eşleştirme ve arama
 
 Bir hedef dizisiyle eşleşecek bir normal ifade için, normal ifadenin tamamının hedef dizinin tamamıyla eşleşmesi gerekir. Örneğin, "bcd" normal ifadesi "bcd" hedef dizisiyle eşleşir, ancak "abcd" ya da "bcde" hedef dizisiyle eşleşmez.
 
@@ -467,23 +467,23 @@ Normal bir ifade aramasının başarılı olması için normal ifadeyle eşleşe
 
 - Hedef dizideki "bcdbcd" içindeki bir normal ifade araması başarılı olur ve ilk üç karakter ile eşleşir.
 
-Bazı konumlardaki hedef diziyle eşleşen birden fazla alt dizi varsa, eşleşen deseni seçmenin iki yolu vardır. *İlk eşleşen* normal ifade eşleştiğinde ilk bulunan alt diziyi seçer. *En uzun eşleşme* gördüğünüzden o konumda eşleşen en uzun alt diziyi seçer. En yüksek uzunlukta birden fazla alt dizi varsa, en uzun eşleşme ilk bulunanı seçer. Örneğin, ilk eşleşme kullanıldığında, normal ifade araması "b&#124;bc" değişimin sol terim o alt diziyi; eşleştiği için hedef sırası "abcd" "b" alt dizisiyle eşleşir. Bu nedenle ilk eşleşme değişimin sağ terimi denemez. En uzun eşleşme kullanıldığında, aynı "bc" araması eşleşir, çünkü "bc" "b" dizisinden uzundur.
+Bazı konumlardaki hedef diziyle eşleşen birden fazla alt dizi varsa, eşleşen deseni seçmenin iki yolu vardır. *İlk eşleştirme* , normal ifade eşleştiğinde ilk olarak bulunan alt diziyi seçer. *En uzun eşleşme* , bu konumda eşleşen olanlardan en uzun alt diziyi seçer. En yüksek uzunlukta birden fazla alt dizi varsa, en uzun eşleşme ilk bulunanı seçer. Örneğin, ilk eşleşme kullanıldığında, "abcd" hedef dizisindeki "b&#124;BC" normal ifadesi için arama, "b" alt dizisiyle eşleşir, çünkü değişim koşulunun sol tarafı bu alt diziyle eşleşiyor; Bu nedenle, ilk eşleşme değişim terimini denemez. En uzun eşleşme kullanıldığında, aynı "bc" araması eşleşir, çünkü "bc" "b" dizisinden uzundur.
 
 Normal ifadenin sonuna ulaşılmamış olsa da, eşleşme başarısız olmadan hedef dizinin sonuna kadar gelirse kısmi eşleşme başarılı olur. Bu nedenle, kısmi eşleşmenin başarılı olmasının ardından hedef dizine karakter eklenmesi sonraki bir kısmi eşleşmenin başarısız olmasına neden olabilir. Ancak, kısmi eşleşmenin başarısız olmasının ardından hedef dizine karakter eklenmesi sonraki bir kısmi eşleşmenin başarılı olmasına neden olmayabilir. Örneğin, bir kısmi eşleşme ile "ab" "a" hedef dizisiyle eşleşir, ancak "ac" ile eşleşmez.
 
-## <a name="formatflags"></a> Biçim bayrakları
+## <a name="formatflags"></a>Biçim bayrakları
 
 |ECMAScript Biçim Kuralları|sed Biçim Kuralları|Değiştirme Metni|
 |-----------------------------|----------------------|----------------------|
-|"$&"|"&"|Normal ifadenin eşleşen karakter dizisi (`[match[0].first, match[0].second)`)|
+|"$&"|"&"|Tüm normal ifade (`[match[0].first, match[0].second)`) ile eşleşen karakter dizisi|
 |"$$"||"$"|
 ||"\\&"|"&"|
-|"$\`" (arka ardından tırnak gelen dolar tarafından)||Normal ifadeyle eşleşen alt diziyi önündeki karakter dizisi (`[match.prefix().first, match.prefix().second)`)|
-|"$`" (ardından ileri tırnak gelen dolar işareti)||Normal ifadeyle eşleşen alt diziyi takip eden karakter dizisi (`[match.suffix().first, match.suffix().second)`)|
-|"$n"|"\n"|Konumundaki yakalama grubuyla eşleşen karakter dizisi `n`burada `n` 0 ile 9 arasında bir sayı (`[match[n].first, match[n].second)`)|
+|"$\`" (dolar işareti sonrasında arka tırnak işareti)||Normal ifadeyle (`[match.prefix().first, match.prefix().second)`) eşleşen alt dizinin önündeki karakter sırası|
+|"$`" (ardından ileri tırnak gelen dolar işareti)||Normal ifadeyle (`[match.suffix().first, match.suffix().second)`) eşleşen alt diziyi izleyen karakter sırası|
+|"$n"|"\n"|Konumunda `n`yakalama grubuyla eşleşen karakter dizisi; burada `n` 0 ile 9 (`[match[n].first, match[n].second)`) arasında bir sayıdır|
 ||"\\\n"|"\n"|
-|"$nn"||Konumundaki yakalama grubuyla eşleşen karakter dizisi `nn`burada `nn` 10 ile 99 arasında bir sayı (`[match[nn].first, match[nn].second)`)|
+|"$nn"||Konumunda `nn`yakalama grubuyla eşleşen karakter dizisi, burada `nn` 10 ile 99 (`[match[nn].first, match[nn].second)`) arasında bir sayıdır|
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C++ Standart Kitaplığına Genel Bakış](../standard-library/cpp-standard-library-overview.md)<br/>
+[C++ Standart Kitaplığına Genel Bakış](../standard-library/cpp-standard-library-overview.md)

@@ -7,16 +7,16 @@ helpviewer_keywords:
 - is_compound class
 - is_compound
 ms.assetid: bdad1167-cf3f-4f37-8321-62a5df159ead
-ms.openlocfilehash: f270a1a58bb8023d91d84b0d1ca3395d36298c95
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 003ddcf77c30bc2dc5491218dfbf00731517bdeb
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62337108"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68452898"
 ---
 # <a name="iscompound-class"></a>is_compound Sınıfı
 
-Belirtilen tür temel olup olmadığını sınar.
+Belirtilen tür temel değilse sınar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -27,12 +27,12 @@ struct is_compound;
 
 ### <a name="parameters"></a>Parametreler
 
-*Ty*<br/>
+*Kalite*\
 Sorgulanacak tür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bir tür koşulu örneğini **false** varsa türünü *Ty* temel türü (varsa, diğer bir deyişle, [is_fundamental](../standard-library/is-fundamental-class.md)\<Ty > tutar  **doğru**); Aksi halde tutan **true**. Bu nedenle, koşul tutan **true** varsa *Ty* olan bir dizi türü, bir işlev türü, işaretçi **void** veya bir nesneye veya bir işlev, başvuru, bir sınıf, UNION, bir numaralandırma veya bir Statik olmayan sınıf üye işaretçisi veya *cv nitelenmiş* bunlardan birinin biçimi.
+Tür belirtiminin bir örneği, *Ty* türü temel bir tür ise (yani, [is_fundamental](../standard-library/is-fundamental-class.md)\<Ty > **true**olursa) **false** barındırır. Aksi takdirde, **true**olarak tutulur. Bu nedenle, *Ty* bir dizi türü, bir işlev türü, **void** veya bir nesne ya da bir işlev, bir başvuru, sınıf, birleşim, numaralandırma veya statik olmayan sınıf üyesine yönelik bir işaretçi ya da bir *CV nitelenmiş* formu ise **true** olarak tutulur. Bunlardan biri.
 
 ## <a name="example"></a>Örnek
 
@@ -77,11 +77,11 @@ is_compound<int> == false
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** \<type_traits >
+**Üst bilgi:** \<type_traits >
 
-**Namespace:** std
+**Ad alanı:** std
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[<type_traits>](../standard-library/type-traits.md)<br/>
-[is_class Sınıfı](../standard-library/is-class-class.md)<br/>
+[< type_traits >](../standard-library/type-traits.md)\
+[is_class Sınıfı](../standard-library/is-class-class.md)

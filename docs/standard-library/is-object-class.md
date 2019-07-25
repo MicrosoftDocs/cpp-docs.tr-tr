@@ -7,16 +7,16 @@ helpviewer_keywords:
 - is_object class
 - is_object
 ms.assetid: b452ceea-5676-488f-925b-ab881126c387
-ms.openlocfilehash: 89c554bda1c82fbedda5b027dbb70b12c2c7cec4
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 521c3fe1053f53e5d30edf39a41cb840522575a2
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62413664"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68455847"
 ---
 # <a name="isobject-class"></a>is_object Sınıfı
 
-Türü bir nesne türü olup olmadığını sınar.
+Türün bir nesne türü olup olmadığını sınar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -27,12 +27,12 @@ struct is_object;
 
 ### <a name="parameters"></a>Parametreler
 
-*Ty*<br/>
+*Kalite*\
 Sorgulanacak tür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Yanlış tür koşulu örneğini tutan türü *Ty* bir başvuru türü, işlev türü veya void, veya bir `cv-qualified` form bunlardan biri, aksi halde tutan true.
+Tür değeri bir başvuru türü, bir işlev türü veya void ya da bunlardan birinin bir `cv-qualified` *biçimi ise,* true olarak saklar tür koşulunda bir örnek false barındırır.
 
 ## <a name="example"></a>Örnek
 
@@ -79,11 +79,11 @@ is_object<void> == false
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** \<type_traits >
+**Üst bilgi:** \<type_traits >
 
-**Namespace:** std
+**Ad alanı:** std
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[<type_traits>](../standard-library/type-traits.md)<br/>
-[is_function Sınıfı](../standard-library/is-function-class.md)<br/>
+[< type_traits >](../standard-library/type-traits.md)\
+[is_function Sınıfı](../standard-library/is-function-class.md)

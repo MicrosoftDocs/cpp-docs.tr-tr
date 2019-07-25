@@ -9,32 +9,32 @@ helpviewer_keywords:
 - startup code, and C++ program termination
 - main function, program startup
 ms.assetid: f72c8f76-f507-4ddd-a270-7b60f4fed625
-ms.openlocfilehash: 2246e50c81da9eb505fd30cfa31f9f24e3fe4703
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e59e8852172a998e4bf4f42f9f919dc29c2ded85
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62210768"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68450646"
 ---
 # <a name="c-program-startup-and-termination"></a>C++ Program Başlatma ve Sonlandırma
 
-Program başlatma ve sonlandırma program yanı sıra, daha da aşağıda ana hatlarıyla belirtilen birkaç C programı gibi bir C++ programını aynı işlemleri gerçekleştirir.
+C++ Program, program başlangıcında ve program sonlandırmada ve burada daha fazla özetlenen şekilde bir C programıyla aynı işlemleri gerçekleştirir.
 
-Önce hedef ortam işlevi çağırır. `main`, ve statik süresi olan tüm nesneleri belirttiğiniz tüm sabit başlangıç değerlerini depolar sonra kalan hiçbir oluşturucu gibi statik nesneler için program yürütür. Yürütme sırası çeviri birimleri arasında belirtilmedi, ancak yine de bazı kabul edebilirsiniz [iostreams](../standard-library/iostreams-conventions.md) nesneleri bu statik oluşturucular tarafından kullanılmak üzere doğru şekilde başlatılır. Bu denetim metin akışları şunlardır:
+Hedef ortam işlevi `main`çağırmadan önce ve statik süresine sahip tüm nesnelerde belirttiğiniz herhangi bir sabit değeri depoladıktan sonra program, bu tür statik nesneler için kalan oluşturucuları yürütür. Yürütme sırası, çeviri birimleri arasında belirtilmez, ancak bazı [Iostreams](../standard-library/iostreams-conventions.md) nesnelerinin bu statik oluşturucular tarafından kullanılmak üzere düzgün şekilde başlatıldığını varsayabilirsiniz. Bu denetim metni akışları şunlardır:
 
-- [cin](../standard-library/iostream.md#cin) — standart giriş.
+- Standart giriş için [cin](../standard-library/iostream.md#cin) .
 
-- [cout](../standard-library/iostream.md#cout) — standart çıktı.
+- [cout](../standard-library/iostream.md#cout) — standart çıkış için.
 
-- [cerr](../standard-library/iostream.md#cerr) — çıkarılan standart hata çıktısı için.
+- [cerr](../standard-library/iostream.md#cerr) — arabelleğe alınmamış standart hata çıktısı için.
 
-- [clog](../standard-library/iostream.md#clog) — için arabelleğe alınan standart hata çıktısı.
+- [CLOG](../standard-library/iostream.md#clog) — arabellekli standart hata çıktısı için.
 
-Program sonlandırma sırasında statik nesneler için adlandırılan yok ediciler içinde bu nesneler de kullanabilirsiniz.
+Bu nesneleri, program sonlandırma sırasında statik nesneler için çağrılan Yıkıcılar içinde de kullanabilirsiniz.
 
-Visual c gibi döndürme `main` veya çağırma `exit` kayıtlı tüm işlevleri çağırır `atexit` ters sırada kayıt defterinin. Böyle bir durum kayıtlı bir işlev çağırır `terminate`.
+C 'de olduğu gibi, `main` veya çağırma `exit` , kayıt defterinin ters sırasıyla birlikte `atexit` kaydedilen tüm işlevleri çağırır. Bu tür bir kayıtlı işlev çağrılarından `terminate`oluşan özel durum.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C++ Standart Kitaplığına Genel Bakış](../standard-library/cpp-standard-library-overview.md)<br/>
-[C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
+[C++Standart kitaplığa genel bakış](../standard-library/cpp-standard-library-overview.md)\
+[C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)

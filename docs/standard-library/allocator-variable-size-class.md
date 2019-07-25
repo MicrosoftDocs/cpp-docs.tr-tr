@@ -9,16 +9,16 @@ helpviewer_keywords:
 - stdext::allocator_variable_size
 - stdext::allocators [C++], allocator_variable_size
 ms.assetid: c3aa4105-ae45-4385-bbbe-9f23060478cb
-ms.openlocfilehash: a2c4681ec5252166754a45b026ea119651f18a38
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: bf243089ee8f4e26930e183b007a108e38f444e3
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62371678"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68458149"
 ---
 # <a name="allocatorvariablesize-class"></a>allocator_variable_size Sınıfı
 
-Depolama ayırmayı ve boşaltmayı türü nesneler için yöneten bir nesneyi tanımlayan *türü* kullanarak bir önbellek türü [cache_freelist](../standard-library/cache-freelist-class.md) tarafından yönetilen bir uzunlukta [max_variable_size](../standard-library/max-variable-size-class.md).
+[Max_variable_size](../standard-library/max-variable-size-class.md)tarafından yönetilen bir uzunluğa sahip [cache_freelist](../standard-library/cache-freelist-class.md) türünde bir *önbellek kullanarak tür* nesneleri için depolama ayırmayı ve boşaltmayı yöneten bir nesneyi tanımlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -35,14 +35,14 @@ class allocator_variable_size;
 
 ## <a name="remarks"></a>Açıklamalar
 
-[ALLOCATOR_DECL](../standard-library/allocators-functions.md#allocator_decl) makrosu bu sınıfı olarak geçirir *adı* aşağıdaki deyim parametresi: `ALLOCATOR_DECL(CACHE_FREELIST(stdext::allocators::max_variable_size), SYNC_DEFAULT, allocator_variable_size);`
+[ALLOCATOR_DECL](../standard-library/allocators-functions.md#allocator_decl) makrosu, bu sınıfı aşağıdaki deyimdeki *Name* parametresi olarak geçirir:`ALLOCATOR_DECL(CACHE_FREELIST(stdext::allocators::max_variable_size), SYNC_DEFAULT, allocator_variable_size);`
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** \<ayırıcılar >
+**Üst bilgi:** \<ayrıcılar >
 
-**Namespace:** stdext
+**Ad alanı:** stdext
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[\<Ayırıcılar >](../standard-library/allocators-header.md)<br/>
+[\<ayrıcılar >](../standard-library/allocators-header.md)

@@ -6,16 +6,16 @@ f1_keywords:
 helpviewer_keywords:
 - streambuf header
 ms.assetid: 4365b25c-5831-488b-b9c2-867bfe961b89
-ms.openlocfilehash: 15bfa86a3c697442b66a5f77aa6ea7a9aba5643c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 87fb74f62abffdd62b8c0179b13f53d96439d6c6
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62412377"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68449573"
 ---
 # <a name="ltstreambufgt"></a>&lt;streambuf&gt;
 
-İostreams standart üstbilgisini \<streambuf > şablon sınıfını tanımlamak için [basic_streambuf](../standard-library/basic-streambuf-class.md), iostreams sınıfları işlemi için temel olduğu. Bu üst bilgi, genellikle başka iostreams üst bilgi bulunur; nadiren doğrudan eklemeniz gerekir.
+İostreams sınıfları için temel olan \< [basic_streambuf](../standard-library/basic-streambuf-class.md)şablon sınıfını tanımlamak için iostreams standart üst bilgi streamarabelleğe > ekleyin. Bu üst bilgi, genellikle Iostreams başlıklarınızdan biri tarafından sizin için eklenmiştir; genellikle doğrudan eklemeniz gerekir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -27,18 +27,18 @@ ms.locfileid: "62412377"
 
 |Tür adı|Açıklama|
 |-|-|
-|[streambuf](../standard-library/streambuf-typedefs.md#streambuf)|Bir alt uzmanlaşması `basic_streambuf` kullanan **char** şablon parametreleri olarak.|
-|[wstreambuf](../standard-library/streambuf-typedefs.md#wstreambuf)|Bir alt uzmanlaşması `basic_streambuf` kullanan **wchar_t** şablon parametreleri olarak.|
+|[streambuf](../standard-library/streambuf-typedefs.md#streambuf)|Şablon parametreleri olarak `basic_streambuf` **char** kullanan bir özelleştirmesi.|
+|[wstreambuf](../standard-library/streambuf-typedefs.md#wstreambuf)|Şablon parametreleri olarak `basic_streambuf` **wchar_t** 'yi kullanan bir özelleştirmesi.|
 
 ### <a name="classes"></a>Sınıflar
 
 |örneği|Açıklama|
 |-|-|
-|[basic_streambuf Sınıfı](basic-streambuf-class.md)|Şablon sınıfı, belirli bir gösterimiyse bir akış, gelen ve giden öğeleri aktarımını denetleyen bir akış arabelleğinin türetmek için Özet temel sınıf tanımlar.|
+|[basic_streambuf Sınıfı](basic-streambuf-class.md)|Şablon sınıfı, akış arabelleği türetmede bir soyut temel sınıf tanımlar. Bu, bir akışın belirli bir gösteriminden ve öğesinden öğelerin aktarılmasını denetler.|
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Üstbilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md)<br/>
-[C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
-[iostream Programlaması](../standard-library/iostream-programming.md)<br/>
-[iostreams Kuralları](../standard-library/iostreams-conventions.md)<br/>
+[Üst bilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md)\
+[C++ Standart kitaplıkta Iş parçacığı güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)\
+[iostream programlama](../standard-library/iostream-programming.md)\
+[iostreams Kuralları](../standard-library/iostreams-conventions.md)

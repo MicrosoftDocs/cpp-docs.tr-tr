@@ -1,5 +1,5 @@
 ---
-title: '&lt;Bellek&gt;'
+title: '&lt;bellek&gt;'
 ms.date: 04/04/2019
 f1_keywords:
 - memory/std::<memory>
@@ -7,22 +7,22 @@ f1_keywords:
 - std::<memory>
 helpviewer_keywords:
 - memory header
-ms.openlocfilehash: d2776e658b511208d9a295cd84a961d7691d29e0
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.openlocfilehash: 7c30a44de70675af69648fdba79325a173ab62fc
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68246816"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68451884"
 ---
-# <a name="ltmemorygt"></a>&lt;Bellek&gt;
+# <a name="ltmemorygt"></a>&lt;bellek&gt;
 
 Bir sınıfı, işleci ve nesneleri ayırmaya ve serbest bırakmaya yardımcı çeşitli şablonları tanımlar.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** \<bellek >
+**Üst bilgi:** \<bellek >
 
-**Namespace:** std
+**Ad alanı:** std
 
 ## <a name="members"></a>Üyeler
 
@@ -32,7 +32,7 @@ Bir sınıfı, işleci ve nesneleri ayırmaya ve serbest bırakmaya yardımcı �
 |-|-|
 |[addressof](../standard-library/memory-functions.md#addressof)|Bir nesnenin doğru adresini alır.|
 |[align](../standard-library/memory-functions.md#align)|Sağlanan hizalama ve başlangıç adresini temel alarak belirli bir boyut aralığı için bir işaretçi döndürür.|
-|[allocate_shared](../standard-library/memory-functions.md#allocate_shared)|Oluşturur bir `shared_ptr` ayrılan ve bir ayırıcıyla verilen tür için oluşturulan nesneler için.|
+|[allocate_shared](../standard-library/memory-functions.md#allocate_shared)|Belirtilen bir `shared_ptr` ayırıcıyla verilen tür için ayrılan ve oluşturulan nesneler için bir oluşturur.|
 |[atomic_compare_exchange_strong](../standard-library/memory-functions.md#atomic_compare_exchange_strong)||
 |[atomic_compare_exchange_weak](../standard-library/memory-functions.md#atomic_compare_exchange_weak)||
 |[atomic_compare_exchange_strong_explicit](../standard-library/memory-functions.md#atomic_compare_exchange_strong_explicit)||
@@ -44,35 +44,35 @@ Bir sınıfı, işleci ve nesneleri ayırmaya ve serbest bırakmaya yardımcı �
 |[atomic_load_explicit](../standard-library/memory-functions.md#atomic_load_explicit)||
 |[atomic_store](../standard-library/memory-functions.md#atomic_store)||
 |[atomic_store_explicit](../standard-library/memory-functions.md#atomic_store_explicit)||
-|[const_pointer_cast](../standard-library/memory-functions.md#const_pointer_cast)|Const dönüştürmesi için `shared_ptr`.|
+|[const_pointer_cast](../standard-library/memory-functions.md#const_pointer_cast)|Const Cast `shared_ptr`.|
 |[declare_no_pointers](../standard-library/memory-functions.md#declare_no_pointers)|Belirli bir adreste başlayan ve belirtilen blok boyutu içinde kalan karakterlerin izlenebilir işaretçi içermediğini atık toplayıcıya bildirir.|
 |[declare_reachable](../standard-library/memory-functions.md#declare_reachable)|Belirtilen adresin ayrılmış depolama alanını ve erişilebilir olduğunu atık toplamaya bildirir.|
-|[default_delete](../standard-library/memory-functions.md#default_delete)|İle ayrılmış nesneleri siler `operator new`. İle kullanım için uygun `unique_ptr`.|
-|[destroy_at](../standard-library/memory-functions.md#destroy_at)|Toplu `destroy` yöntemi.|
-|[yok](../standard-library/memory-functions.md#destroy)|Toplu `destroy` yöntemi.|
-|[destroy_n](../standard-library/memory-functions.md#destroy_n)|Toplu `destroy` yöntemi.|
-|[dynamic_pointer_cast](../standard-library/memory-functions.md#dynamic_pointer_cast)|Dynamic_cast `shared_ptr`.|
-|[get_deleter](../standard-library/memory-functions.md#get_deleter)|Öğesinden Silici alın `shared_ptr`.|
+|[default_delete](../standard-library/memory-functions.md#default_delete)|İle `operator new`ayrılmış nesneleri siler. İle `unique_ptr`kullanım için uygundur.|
+|[destroy_at](../standard-library/memory-functions.md#destroy_at)|Toplu `destroy` yöntem.|
+|[kaldırılır](../standard-library/memory-functions.md#destroy)|Toplu `destroy` yöntem.|
+|[destroy_n](../standard-library/memory-functions.md#destroy_n)|Toplu `destroy` yöntem.|
+|[dynamic_pointer_cast](../standard-library/memory-functions.md#dynamic_pointer_cast)|Dinamik atama `shared_ptr`.|
+|[get_deleter](../standard-library/memory-functions.md#get_deleter)|Öğesinden `shared_ptr`silici alın.|
 |[get_pointer_safety](../standard-library/memory-functions.md#get_pointer_safety)|Herhangi bir atık toplayıcısı tarafından kabul edilen işaretçi güvenlik türünü döndürür.|
 |[get_temporary_buffer](../standard-library/memory-functions.md#get_temporary_buffer)|Belirli sayıda öğeyi aşmayan öğe dizisi için geçici depolamayı ayırır.|
-|[make_shared](../standard-library/memory-functions.md#make_shared)|Oluşturur ve döndürür bir `shared_ptr` varsayılan ayırıcı kullanılarak sıfır veya daha fazla bağımsız değişkenden oluşan ayrılmış nesneyi işaret eden.|
-|[make_unique](../standard-library/memory-functions.md#make_unique)|Oluşturur ve döndürür bir [unique_ptr](../standard-library/unique-ptr-class.md) sıfır veya daha fazla bağımsız değişkenden oluşan ayrılmış nesneyi işaret eden.|
-|[pointer_safety](../standard-library/memory-enums.md#pointer_safety)|Tüm olası dönüş değerleri numaralandırması `get_pointer_safety`.|
-|[return_temporary_buffer](../standard-library/memory-functions.md#return_temporary_buffer)|Kullanılarak ayrılan geçici bellek ayırmayı iptal eder `get_temporary_buffer` şablon işlevi.|
-|[static_pointer_cast](../standard-library/memory-functions.md#static_pointer_cast)|Statik yayın `shared_ptr`.|
-|[değiştirme](../standard-library/memory-functions.md#swap)|İki takas `shared_ptr` veya `weak_ptr` nesneleri.|
+|[make_shared](../standard-library/memory-functions.md#make_shared)|Varsayılan ayırıcıyı kullanarak sıfır `shared_ptr` veya daha fazla bağımsız değişken tarafından oluşturulan ayrılmış nesneye işaret eden bir oluşturur ve döndürür.|
+|[make_unique](../standard-library/memory-functions.md#make_unique)|Sıfır veya daha fazla bağımsız değişken tarafından oluşturulan ayrılmış nesneye işaret eden bir [unique_ptr](../standard-library/unique-ptr-class.md) oluşturur ve döndürür.|
+|[pointer_safety](../standard-library/memory-enums.md#pointer_safety)|İçin `get_pointer_safety`tüm olası dönüş değerlerinin numaralandırması.|
+|[return_temporary_buffer](../standard-library/memory-functions.md#return_temporary_buffer)|`get_temporary_buffer` Şablon işlevi kullanılarak ayrılan geçici belleği kaldırır.|
+|[static_pointer_cast](../standard-library/memory-functions.md#static_pointer_cast)|Statik atama `shared_ptr`.|
+|[Kur](../standard-library/memory-functions.md#swap)|İki `shared_ptr` veya`weak_ptr` nesneyi takas edin.|
 |[undeclare_no_pointers](../standard-library/memory-functions.md#undeclare_no_pointers)|Taban adresi işaretçisi ve blok boyutu tarafından bellek bloğuna tanımlanan Bellek bloğu karakterlerin artık izlenebilir işaretçileri içerebileceğini atık toplayıcıya bildirir.|
-|[undeclare_reachable](../standard-library/memory-functions.md#undeclare_reachable)|Bildiren bir `garbage_collector` belirtilen bellek konumuna erişilemiyor.|
+|[undeclare_reachable](../standard-library/memory-functions.md#undeclare_reachable)|Belirtilen bir `garbage_collector` bellek konumunun ulaşılamaz olduğunu bildirir.|
 |[uninitialized_copy](../standard-library/memory-functions.md#uninitialized_copy)|Nesneleri belirli bir girdi aralığından başlatılmamış hedef aralığına kopyalar.|
 |[uninitialized_copy_n](../standard-library/memory-functions.md#uninitialized_copy_n)|Bir girdi yineleyicisinde belirtilen öğe sayısının bir kopyasını oluşturur. Kopyalar ileri doğru bir yineleyicinin içine yerleştirilir.|
-|[uninitialized_default_construct](../standard-library/memory-functions.md#uninitialized_default_construct)|Toplu `uninitialized_default_construct` yöntemi.|
-|[uninitialized_default_construct_n](../standard-library/memory-functions.md#uninitialized_default_construct_n)|Toplu `uninitialized_construct` yöntemi.|
+|[uninitialized_default_construct](../standard-library/memory-functions.md#uninitialized_default_construct)|Toplu `uninitialized_default_construct` yöntem.|
+|[uninitialized_default_construct_n](../standard-library/memory-functions.md#uninitialized_default_construct_n)|Toplu `uninitialized_construct` yöntem.|
 |[uninitialized_fill](../standard-library/memory-functions.md#uninitialized_fill)|Belirli bir değerin nesnelerini başlatılmamış hedef aralığına kopyalar.|
 |[uninitialized_fill_n](../standard-library/memory-functions.md#uninitialized_fill_n)|Belirli bir değerin nesnelerini belirli sayıda öğenin başlatılmamış hedef aralığına kopyalar.|
-|[uninitialized_move](../standard-library/memory-functions.md#uninitialized_move)|Toplu `uninitialized_move` yöntemi.|
-|[uninitialized_move_n](../standard-library/memory-functions.md#uninitialized_move_n)|Toplu `uninitialized_move` yöntemi.|
-|[uninitialized_value_construct](../standard-library/memory-functions.md#uninitialized_value_construct)|Toplu `uninitialized_value_construct` yöntemi.|
-|[uninitialized_value_construct_n](../standard-library/memory-functions.md#uninitialized_value_construct_n)|Toplu `uninitialized_value_construct` yöntemi.|
+|[uninitialized_move](../standard-library/memory-functions.md#uninitialized_move)|Toplu `uninitialized_move` yöntem.|
+|[uninitialized_move_n](../standard-library/memory-functions.md#uninitialized_move_n)|Toplu `uninitialized_move` yöntem.|
+|[uninitialized_value_construct](../standard-library/memory-functions.md#uninitialized_value_construct)|Toplu `uninitialized_value_construct` yöntem.|
+|[uninitialized_value_construct_n](../standard-library/memory-functions.md#uninitialized_value_construct_n)|Toplu `uninitialized_value_construct` yöntem.|
 |[uses_allocator_v](../standard-library/memory-functions.md#uses_allocator_v)||
 
 ### <a name="operators"></a>İşleçler
@@ -83,23 +83,23 @@ Bir sınıfı, işleci ve nesneleri ayırmaya ve serbest bırakmaya yardımcı �
 |[operator==](../standard-library/memory-operators.md#op_eq_eq)|Belirtilen sınıfın ayırıcı nesneleri arasındaki eşitliği sınar.|
 |[operator>=](../standard-library/memory-operators.md#op_gt_eq)|Belirtilen sınıfın, bir ayırıcı nesnesinin ikinci bir ayırıcı nesnesinin değerinden büyük veya eşit olmasını sınar.|
 |[işleç <](../standard-library/memory-operators.md#op_lt)|Belirtilen sınıfın bir nesnesinin ikinci bir nesnesinin değerinden küçük olmasını sınar.|
-|[İşleci\<=](../standard-library/memory-operators.md#op_gt_eq)|Belirtilen sınıfın, bir ayırıcı nesnesinin ikinci bir ayırıcı nesnesinin değerinden küçük veya eşit olmasını sınar.|
-|[operator >](../standard-library/memory-operators.md#op_gt)|Belirtilen sınıfın bir nesnesinin ikinci bir nesnesinin değerinden büyük olmasını sınar.|
-|[işleç <<](../standard-library/memory-operators.md#op_lt_lt)|`shared_ptr` inserter.|
+|[işlecinde\<=](../standard-library/memory-operators.md#op_gt_eq)|Belirtilen sınıfın, bir ayırıcı nesnesinin ikinci bir ayırıcı nesnesinin değerinden küçük veya eşit olmasını sınar.|
+|[işleç >](../standard-library/memory-operators.md#op_gt)|Belirtilen sınıfın bir nesnesinin ikinci bir nesnesinin değerinden büyük olmasını sınar.|
+|[işleç < <](../standard-library/memory-operators.md#op_lt_lt)|`shared_ptr`inserter.|
 
 ### <a name="classes"></a>Sınıflar
 
 |||
 |-|-|
-|[allocator](../standard-library/allocator-class.md)|Şablon sınıfı türünde nesne dizileri için depolama ayırmayı ve boşaltmayı yöneten bir nesneyi tanımlayan **türü**.|
+|[allocator](../standard-library/allocator-class.md)|Şablon sınıfı, türünde nesne dizileri için depolama ayırmayı ve boşaltmayı yöneten bir nesneyi **tanımlar.**|
 |[allocator_traits](../standard-library/allocator-traits-class.md)|Ayırıcı tarafından etkinleştirilen kapsayıcı tarafından gerek duyulan bilgilerin tamamını belirleyen nesneyi tanımlar.|
-|[auto_ptr](../standard-library/auto-ptr-class.md)|Şablon sınıfı türünün ayrılmış bir nesneye yönelik bir işaretçi depolayan nesneyi tanımlar **türü** <strong>\*</strong> nesne için hangi BT silindiğinde işaret ettiği, kapsayan auto_ptr alır sağlar yok.|
+|[auto_ptr](../standard-library/auto-ptr-class.md)|Şablon sınıfı, kapsayan auto_ptr yok edilirken onun işaret ettiği nesnenin **silindiğini** <strong>\*</strong> sağlayan türü tür bir ayrılmış nesneye bir işaretçi depolayan bir nesneyi tanımlar.|
 |[bad_weak_ptr](../standard-library/bad-weak-ptr-class.md)|Bozuk weak_ptr özel durumunu raporlar.|
-|[enabled_shared_from_this](../standard-library/enable-shared-from-this-class.md)|Üretmeye yardımcı olur bir `shared_ptr`.|
-|[pointer_traits](../standard-library/pointer-traits-struct.md)|Şablon sınıfın bir nesnesinin gerektirdiği bilgileri sağlar `allocator_traits` bir ayırıcı işaretçi türü ile açıklamak için `Ptr`.|
+|[enabled_shared_from_this](../standard-library/enable-shared-from-this-class.md)|Bir `shared_ptr`oluşturulmasına yardımcı olur.|
+|[pointer_traits](../standard-library/pointer-traits-struct.md)|İşaretçi türündeki `allocator_traits` `Ptr`bir ayırıcıyı tanımlayan şablon sınıfının bir nesnesi için gereken bilgileri sağlar.|
 |[raw_storage_iterator](../standard-library/raw-storage-iterator-class.md)|Algoritmaların başlatılmamış belleğe sonuçları depolamasını sağlamak üzere oluşturulmuş bağdaştırıcı sınıfı.|
 |[shared_ptr](../standard-library/shared-ptr-class.md)|Dinamik olarak tahsis edilen bir nesnenin çevresine bir başvuru sayılan akıllı işaretçi sarar.|
-|[unique_ptr](../standard-library/unique-ptr-class.md)|Sahip olunan bir nesnenin işaretçisini depolar. Başka hiçbir işaretçinin sahibi değildir `unique_ptr`. `unique_ptr` Sahibi kaldırıldığında yok.|
+|[unique_ptr](../standard-library/unique-ptr-class.md)|Sahip olunan bir nesnenin işaretçisini depolar. İşaretçiye ait `unique_ptr`değildir. `unique_ptr` Sahip yok edildiğinde yok edilir.|
 |[weak_ptr](../standard-library/weak-ptr-class.md)|Zayıf bağlantılı bir işaretçi sarar.|
 
 ### <a name="structures"></a>Yapılar
@@ -108,7 +108,7 @@ Bir sınıfı, işleci ve nesneleri ayırmaya ve serbest bırakmaya yardımcı �
 |-|-|
 |[allocator_arg_t](../standard-library/allocator-class.md#allocator_arg_t)||
 |[default_delete](../standard-library/default-delete-struct.md)||
-|[Karma]()||
+|[yla]()||
 |[owner_less](../standard-library/memory-functions.md#owner_less)|Paylaşılan ve zayıf işaretçilerin sahiplik temelli karışık karşılaştırmalarını sağlar.|
 |[uses_allocator](../standard-library/allocator-class.md#uses_allocator)||
 
@@ -116,9 +116,9 @@ Bir sınıfı, işleci ve nesneleri ayırmaya ve serbest bırakmaya yardımcı �
 
 |||
 |-|-|
-|[Allocator\<void >](../standard-library/allocator-void-class.md)|Yalnızca bu özelleştirilen içerikte anlamlı üye türleri tanımlayarak void türüne şablon sınıf ayırıcı uzmanlığı.|
+|[ayırıcı\<void >](../standard-library/allocator-void-class.md)|Yalnızca bu özelleştirilen içerikte anlamlı üye türleri tanımlayarak void türüne şablon sınıf ayırıcı uzmanlığı.|
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Üstbilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md)<br/>
-[C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
+[Üst bilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md)\
+[C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)

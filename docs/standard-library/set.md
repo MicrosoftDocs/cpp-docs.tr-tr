@@ -6,54 +6,54 @@ f1_keywords:
 helpviewer_keywords:
 - set header
 ms.assetid: 43cb1ab2-6383-48cf-8bdc-2b96d7203596
-ms.openlocfilehash: 1bf5663d3e6891d45e2139c612d8e16860b6cace
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.openlocfilehash: b947d9ba268c9b4028415216e4ad0813f2d71947
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68246377"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68450517"
 ---
 # <a name="ltsetgt"></a>&lt;set&gt;
 
-Kapsayıcı şablon sınıfları kümesi ve multiset ve kendi destek şablonları tanımlar.
+Kapsayıcı şablonu sınıflarını kümesi ve çoklu küme ve destekleyici şablonlarını tanımlar.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** \<kümesi >
+**Üst bilgi:** \<> ayarla
 
-**Namespace:** std
+**Ad alanı:** std
 
 > [!NOTE]
-> \<Ayarlayın > Kitaplığı'nı da kullanan `#include <initializer_list>` deyimi.
+> Set > kitaplığı, `#include <initializer_list>` ifadesini de kullanır. \<
 
 ## <a name="members"></a>Üyeler
 
 ### <a name="operators"></a>İşleçler
 
-|Sürümü Ayarla|Multiset sürümü|Açıklama|
+|Sürümü ayarla|Çoklu küme sürümü|Açıklama|
 |-|-|-|
-|[işleç! = (set)](../standard-library/set-operators.md#op_neq)|[işleç! = (multiset)](../standard-library/set-operators.md#op_neq)|İşlecin sol tarafındaki multiset nesne veya kümesini kümesi veya işlecin sağ tarafındaki multiset nesneye eşit olup olmadığını sınar.|
-|[operator < (set)](../standard-library/set-operators.md#op_lt)|[operator < (multiset)](../standard-library/set-operators.md#op_lt_multiset)|İşlecin sol tarafındaki multiset nesne veya kümesini kümesi veya çok kümeli nesnesinin işlecin sağ tarafındaki küçüktür olup olmadığını sınar.|
-|[operator < = (set)](../standard-library/set-operators.md#op_lt_eq)|[İşleç\<= (multiset)](../standard-library/set-operators.md#op_lt_eq_multiset)|Kümesi veya çok kümeli nesne işlecinin sol tarafındaki küçüktür veya eşittir kümesi veya işlecin sağ tarafındaki multiset nesne olup olmadığını sınar.|
-|[işleç == (set)](../standard-library/set-operators.md#op_eq_eq)|[işleç == (multiset)](../standard-library/set-operators.md#op_eq_eq_multiset)|İşlecin sol tarafındaki multiset nesne veya kümesini kümesi veya işlecin sağ tarafındaki multiset nesneye eşit olup olmadığını sınar.|
-|[operator > (set)](../standard-library/set-operators.md#op_gt)|[operator > (multiset)](../standard-library/set-operators.md#op_gt_multiset)|İşlecin sol tarafındaki multiset nesne veya kümesini kümesi veya çok kümeli nesnesinin işlecin sağ tarafındaki büyük olup olmadığını sınar.|
-|[operator > = (set)](../standard-library/set-operators.md#op_gt_eq)|[operator > = (multiset)](../standard-library/set-operators.md#op_gt_eq_multiset)|Büyüktür veya eşittir kümesi veya işlecin sağ tarafındaki multiset nesne kümesi ya da işlecinin sol tarafındaki multiset nesne olup olmadığını sınar.|
+|[işleç! = (küme)](../standard-library/set-operators.md#op_neq)|[işleç! = (çoklu küme)](../standard-library/set-operators.md#op_neq)|İşlecin sol tarafındaki küme veya çok kümeli nesne sağ taraftaki küme veya çok kümeli nesneye eşit değilse sınar.|
+|[işleç < (küme)](../standard-library/set-operators.md#op_lt)|[işleç < (çoklu küme)](../standard-library/set-operators.md#op_lt_multiset)|İşlecin sol tarafındaki küme veya çoklu küme nesnesinin, sağ taraftaki küme veya çoklu küme nesnesinden küçük olup olmadığını test eder.|
+|[işleç < = (küme)](../standard-library/set-operators.md#op_lt_eq)|[operator\<= (çoklu küme)](../standard-library/set-operators.md#op_lt_eq_multiset)|İşlecin sol tarafındaki küme veya çoklu küme nesnesinin, sağ taraftaki küme veya çok kümeli nesneden küçük veya ona eşit olup olmadığını sınar.|
+|[işleç = = (küme)](../standard-library/set-operators.md#op_eq_eq)|[işleç = = (çoklu küme)](../standard-library/set-operators.md#op_eq_eq_multiset)|İşlecin sol tarafındaki küme veya çoklu küme nesnesinin, sağ taraftaki küme veya çok kümeli nesneye eşit olup olmadığını sınar.|
+|[işleç > (küme)](../standard-library/set-operators.md#op_gt)|[işleç > (çoklu küme)](../standard-library/set-operators.md#op_gt_multiset)|İşlecin sol tarafındaki küme veya çok kümeli nesne sağ taraftaki küme veya çok kümeli nesneden büyükse test eder.|
+|[işleç > = (küme)](../standard-library/set-operators.md#op_gt_eq)|[işleç > = (çoklu küme)](../standard-library/set-operators.md#op_gt_eq_multiset)|İşlecin sol tarafındaki küme veya çoklu küme nesnesinin, sağ taraftaki küme veya çok kümeli bir nesneden büyük veya ona eşit olup olmadığını sınar.|
 
 ### <a name="specialized-template-functions"></a>Özelleşmiş Şablon İşlevleri
 
-|Sürümü Ayarla|Multiset sürümü|Açıklama|
+|Sürümü ayarla|Çoklu küme sürümü|Açıklama|
 |-|-|-|
-|[değiştirme](../standard-library/set-functions.md#swap)|[Swap (multiset)](../standard-library/set-functions.md#swap_multiset)|İki kümeleri veya multisets öğelerini birbiriyle değiştirir.|
+|[Kur](../standard-library/set-functions.md#swap)|[takas (çoklu küme)](../standard-library/set-functions.md#swap_multiset)|İki kümenin veya birden çok kümenin öğelerini değiş tokuş eder.|
 
 ### <a name="classes"></a>Sınıflar
 
 |||
 |-|-|
-|[set Sınıfı](../standard-library/set-class.md)|Depolama ve, içerdiği öğelerin değerlerinin benzersiz olduğu ve verilerin otomatik sıralamasına göre anahtar değerler olarak hizmet verdikleri bir koleksiyondan verilerin alınması için kullanılır.|
-|[multiset Sınıfı](../standard-library/multiset-class.md)|Depolama ve, içerdiği öğelerin değerlerinin benzersiz olması gerekmez ve hangi verilerin otomatik sıralamasına göre anahtar değerler olarak verdikleri bir koleksiyondan verilerin alınması için kullanılır.|
+|[set Sınıfı](../standard-library/set-class.md)|İçerdiği öğelerin değerlerinin benzersiz olduğu ve verilerin otomatik olarak sıralandığı anahtar değerleri olarak kullanıldığı bir koleksiyondan verilerin depolanması ve alınması için kullanılır.|
+|[multiset Sınıfı](../standard-library/multiset-class.md)|İçerdiği öğelerin değerlerinin benzersiz olmaması ve verilerin otomatik olarak sıralandığı değere göre anahtar değerler olarak kullandıkları bir koleksiyondan verilerin depolanması ve alınması için kullanılır.|
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Üstbilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md)<br/>
-[C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
-[C++ Standart Kitaplığı Başvurusu](../standard-library/cpp-standard-library-reference.md)<br/>
+[Üst bilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md)\
+[C++ Standart kitaplıkta Iş parçacığı güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)\
+[C++ Standart Kitaplığı Başvurusu](../standard-library/cpp-standard-library-reference.md)

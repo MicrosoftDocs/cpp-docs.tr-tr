@@ -48,16 +48,16 @@ f1_keywords:
 - atomic/std::atomic_int64_t
 - atomic/std::atomic_uint_least64_t
 ms.assetid: e79a6b9f-52ff-48da-9554-654c4e1999f6
-ms.openlocfilehash: e2146c7424d4903523372ad54b0cd2eece525cbe
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 4c46eb2b9bea30bf37800b33ce0dcf44c0d807f0
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62376607"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68456722"
 ---
 # <a name="ltatomicgt"></a>&lt;atomic&gt;
 
-Atomik işlemleri destekleyen türler oluşturmak için kullanılacak şablon sınıfları tanımlar.
+Atomik işlemleri destekleyen türler oluşturmak için kullanılacak sınıfları ve şablon sınıflarını tanımlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -68,56 +68,56 @@ Atomik işlemleri destekleyen türler oluşturmak için kullanılacak şablon s�
 ## <a name="remarks"></a>Açıklamalar
 
 > [!NOTE]
-> Derlenmiş kodda **/CLR**, bu başlığı engellenir.
+> **/Clr**kullanılarak derlenen kodda, bu üst bilgi engellenir.
 
-Atomik işlem iki içeren yardımcı olan anahtar özelliklerini mutex kilitleri kullanmadan bir nesne doğru bir şekilde işlemek için birden çok iş parçacığı kullanın.
+Atomik bir işlemin, bir nesneyi, karşılıklı dışlama kilitleri kullanmadan doğru şekilde işlemek için birden çok iş parçacığı kullanmanıza yardımcı olan iki temel özelliği vardır.
 
-- Bölünemez atomik bir işlem olduğundan, farklı bir iş parçacığından aynı nesne üzerinde ikinci bir atomik işlem yalnızca önce veya sonra ilk atomik işlem nesnenin durumu elde edebilirsiniz.
+- Atomik bir işlem, farklı bir iş parçacığından aynı nesne üzerinde bulunan ikinci atomik bir işlem, nesnenin durumunu yalnızca ilk atomik işlemden önce veya sonra alabilir.
 
-- Temel kendi [memory_order](../standard-library/atomic-enums.md#memory_order_enum) bağımsız değişkeni, atomik bir işlem oluşturur aynı iş parçacığında diğer atomik işlemler etkilerini görünürlük gereksinimleri sıralama. Sonuç olarak, sıralama gereksinimlerini ihlal derleyici iyileştirmeleri engeller.
+- Atomik bir işlem, [memory_order](../standard-library/atomic-enums.md#memory_order_enum) bağımsız değişkenine göre, aynı iş parçacığında diğer atomik işlemlerin etkilerinin görünürlüğü için sıralama gereksinimlerini belirler. Sonuç olarak, sıralama gereksinimlerini ihlal eden derleyici iyileştirmelerini engeller.
 
-Bazı platformlarda, bunu kullanmadan bazı türleri atomik işlemlerin verimli bir şekilde uygulanması mümkün olmayabilir `mutex` kilitler. Atomik tür *kilitsizdir* hiçbir bu türdeki atomik işlemler kilit kullanmıyorsa.
+Bazı platformlarda, kilitleri kullanmadan `mutex` bazı türler için atomik işlemleri verimli bir şekilde uygulamak mümkün olmayabilir. Bir atomik tür, bu tür üzerinde hiçbir Atomik işlem kilit kullanıyorsa *kilit ücretsizdir* .
 
-**C ++ 11**: Sinyal işleyiciler içinde bir nesne üzerinde yapılan atomik işlemlerin gerçekleştirebileceğiniz `obj` varsa `obj.is_lock_free()` veya `atomic_is_lock_free(x)` doğrudur.
+**C++ 11**: Sinyal işleyicilerinde, veya `obj` `atomic_is_lock_free(x)` true olduğunda `obj.is_lock_free()` bir nesne üzerinde Atomik işlemler gerçekleştirebilirsiniz.
 
-Sınıf [atomic_flag](../standard-library/atomic-flag-structure.md) tutar en az bir atomik türü sağlayan bir **bool** bayrağı. Kendi işlemlerdir her zaman kilitsizdir.
+[Atomic_flag](../standard-library/atomic-flag-structure.md) sınıfı, **bool** bayrağını tutan en düşük atomik bir tür sağlar. İşlemleri her zaman kilitsiz değildir.
 
-Şablon sınıfı `atomic<T>` kendi bağımsız değişken türünde bir nesne depolar `T` ve o depolanan değeri atomik erişim sağlar. Kullanılarak kopyalanmasını herhangi bir türü kullanarak oluşturabileceğiniz [memcpy](../c-runtime-library/reference/memcpy-wmemcpy.md) ve kullanarak eşitlik için test [memcmp](../c-runtime-library/reference/memcmp-wmemcmp.md). Özellikle, bu gereksinimleri karşılayan, kullanıcı tanımlı türler ve çoğu durumda, kayan nokta türleri ile kullanabilirsiniz.
+Şablon sınıfı `atomic<T>` bağımsız değişken türünün `T` bir nesnesini depolar ve bu depolanan değere atomik erişim sağlar. [Memckopyala](../c-runtime-library/reference/memcpy-wmemcpy.md) kullanılarak kopyalanabilen ve [memcmp](../c-runtime-library/reference/memcmp-wmemcmp.md)kullanarak eşitlik için test edilmiş herhangi bir tür kullanarak bu örneği oluşturabilirsiniz. Özellikle, bu gereksinimleri karşılayan Kullanıcı tanımlı türlerle ve birçok durumda kayan nokta türleriyle kullanabilirsiniz.
 
-Şablon uzmanlıkları tam sayı türleri için işaretçiler için kısmi özelleştirmede ve ayrıca bir ayarlanmış. Bu uzmanlıklar, birincil şablonu aracılığıyla kullanılabilir olmayan ek işlemleri sağlar.
+Şablonda Ayrıca, tamsayı türleri için bir uzmanlık kümesi ve işaretçiler için kısmi özelleşmeler vardır. Bu uzmanlıklar, birincil şablon aracılığıyla kullanılamayan ek işlemler sağlar.
 
-## <a name="pointer-specializations"></a>İşaretçi uzmanlıklar
+## <a name="pointer-specializations"></a>İşaretçi özelleştirilmiş oluşturmaları
 
-`atomic<T *>` Kısmi uzmanlıklar, tüm işaretçi türleri için geçerlidir. Bunlar, işaretçi aritmetik için yöntemleri sağlar.
+`atomic<T *>` Kısmi uzmanlık tüm işaretçi türleri için geçerlidir. İşaretçi aritmetik için yöntemler sağlar.
 
-## <a name="integral-specializations"></a>Uzmanlıkları
+## <a name="integral-specializations"></a>Integral Specialmeler
 
-`atomic<integral>` Uzmanlıkları tüm integral türleri için geçerlidir. Bunlar birincil şablonu aracılığıyla kullanılabilir olmayan ek işlemler sağlar.
+`atomic<integral>` Specialmeler tüm integral türleri için geçerlidir. Bunlar, birincil şablon aracılığıyla kullanılamayan ek işlemler sağlar.
 
-Her `atomic<integral>` türünde kullanabileceğiniz karşılık gelen bir makro bir `if directive` derleme zamanında bu tür işlemler olup olmadığını belirlemek için kilitsizdir. Makrosunun değeri sıfır ise, türü üzerinde işlemler olmayan kilitsizdir. Değer 1 ise, işlemler kilidi serbest bırakın ve bir çalışma zamanı olabilir onay gereklidir. Değer 2 ise işlemlerdir kilitsizdir. İşlev kullanabilir `atomic_is_lock_free` çalışma zamanında işlem türü olup olmadığını belirlemek için kilitsizdir.
+Her `atomic<integral>` türün, bu türdeki işlemlerin kilitleme dışı olup olmadığını derleme zamanında `if directive` tespit etmek için bir içinde kullanabileceğiniz bir makro vardır. Makronun değeri sıfırsa, türdeki işlemler kilitleme ücretsizdir. Değer 1 ise, işlemler kilit boş olabilir ve bir çalışma zamanı denetimi gereklidir. Değer 2 ise, işlemler kilitleme ücretsizdir. Çalışma zamanında, tür üzerindeki `atomic_is_lock_free` işlemlerin kilitli olup olmadığını anlamak için işlevini kullanabilirsiniz.
 
-Her tamsayı türleri için bu integral türünde bir nesne yöneten karşılık gelen adlandırılmış atomik türü yoktur. Her `atomic_integral` türüne sahip karşılık gelen örneğinin aynı kümesi üye işlevleri `atomic<T>` ve tüm üye olmayan atomik işlevlerini geçirilebilir.
+İntegral türlerinin her biri için, söz konusu integral türünün bir nesnesini yöneten karşılık gelen bir adlandırılmış atomik tür vardır. Her `atomic_integral` tür, karşılık gelen `atomic<T>` örneklemeyle aynı üye işlevleri kümesine sahiptir ve üye olmayan atomik işlevlerden herhangi birine geçirilebilir.
 
-|`atomic_integral` Türü|Tamsayı türü|`atomic_is_lock_free` Makrosu|
+|`atomic_integral`Türüyle|Integral türü|`atomic_is_lock_free`Makroya|
 |----------------------------|-------------------|---------------------------------|
 |`atomic_char`|**char**|ATOMIC_CHAR_LOCK_FREE|
-|`atomic_schar`|**İmzalı char**|ATOMIC_CHAR_LOCK_FREE|
-|`atomic_uchar`|**İmzasız char**|ATOMIC_CHAR_LOCK_FREE|
+|`atomic_schar`|**işaretli karakter**|ATOMIC_CHAR_LOCK_FREE|
+|`atomic_uchar`|**işaretsiz karakter**|ATOMIC_CHAR_LOCK_FREE|
 |`atomic_char16_t`|`char16_t`|ATOMIC_CHAR16_T_LOCK_FREE|
 |`atomic_char32_t`|`char32_t`|ATOMIC_CHAR32_T_LOCK_FREE|
 |`atomic_wchar_t`|**wchar_t**|ATOMIC_WCHAR_T_LOCK_FREE|
 |`atomic_short`|**short**|ATOMIC_SHORT_LOCK_FREE|
-|`atomic_ushort`|**İmzasız short**|ATOMIC_SHORT_LOCK_FREE|
+|`atomic_ushort`|**işaretsiz kısa**|ATOMIC_SHORT_LOCK_FREE|
 |`atomic_int`|**int**|ATOMIC_INT_LOCK_FREE|
 |`atomic_uint`|**işaretsiz int**|ATOMIC_INT_LOCK_FREE|
 |`atomic_long`|**long**|ATOMIC_LONG_LOCK_FREE|
-|`atomic_ulong`|**İmzasız long**|ATOMIC_LONG_LOCK_FREE|
-|`atomic_llong`|**Long long**|ATOMIC_LLONG_LOCK_FREE|
-|`atomic_ullong`|**İmzasız uzun uzun**|ATOMIC_LLONG_LOCK_FREE|
+|`atomic_ulong`|**imzasız Long**|ATOMIC_LONG_LOCK_FREE|
+|`atomic_llong`|**uzun uzun**|ATOMIC_LLONG_LOCK_FREE|
+|`atomic_ullong`|**imzasız uzun uzun**|ATOMIC_LLONG_LOCK_FREE|
 
-TypeDef adları mevcut atomik şablon uzmanlıkları için bazı üst bilgisinde tanımlanan türleri için \<inttypes.h >.
+İnttypes. h > üst bilgisinde \<tanımlanan bazı türlerin atomik şablonunun uzmanlıkları için typedef adları vardır.
 
-|Atomik türü|TypeDef adı|
+|Atomik tür|TypeDef adı|
 |-----------------|------------------|
 |`atomic_int8_t`|`atomic<int8_t>`|
 |`atomic_uint8_t`|`atomic<uint8_t>`|
@@ -154,52 +154,52 @@ TypeDef adları mevcut atomik şablon uzmanlıkları için bazı üst bilgisinde
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[atomic Yapısı](../standard-library/atomic-structure.md)|Depolanan değeri atomik işlemleri gerçekleştiren bir nesneyi tanımlar.|
-|[atomic_flag Yapısı](../standard-library/atomic-flag-structure.md)|Atomik olarak ayarlayan ve temizleyen bir nesneyi tanımlayan bir **bool** bayrağı.|
+|[atomic Yapısı](../standard-library/atomic-structure.md)|Depolanan bir değerde Atomik işlemler gerçekleştiren bir nesneyi açıklar.|
+|[atomic_flag Yapısı](../standard-library/atomic-flag-structure.md)|Bir **bool** bayrağını sıradan olarak ayarlayan ve temizleyen bir nesneyi tanımlar.|
 
 ## <a name="enums"></a>Numaralandırmalar
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[memory_order Enum](../standard-library/atomic-enums.md#memory_order_enum)|Bellek konumlarında eşitleme işlemleri için simgesel adlar sağlar. Bu işlemlerin nasıl atamaları bir iş parçacığındaki başka bir atamada görülür hale etkiler.|
+|[memory_order numaralandırması](../standard-library/atomic-enums.md#memory_order_enum)|Bellek konumlarında eşitleme işlemleri için simgesel adlar sağlar. Bu işlemler, bir iş parçacığındaki atamaların diğerinden nasıl görünür hale geldiğini etkiler.|
 
 ## <a name="functions"></a>İşlevler
 
-Aşağıdaki listede, içinde son işlevlerin `_explicit` karşılık gelen semantiklere sahip `_explicit`örtük sahip oldukları dışında [memory_order](../standard-library/atomic-enums.md#memory_order_enum) bağımsız değişkenleri `memory_order_seq_cst`.
+Aşağıdaki listede, ' ın örtük [memory_order](../standard-library/atomic-enums.md#memory_order_enum) bağımsız değişkenlerine `memory_order_seq_cst`sahip olmaları dışında `_explicit` , içinde bitolmayan işlevler karşılık `_explicit`gelen semantiği vardır.
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[atomic_compare_exchange_strong](../standard-library/atomic-functions.md#atomic_compare_exchange_strong)|Gerçekleştiren bir *atomik karşılaştırma ve değişim* işlemi.|
-|[atomic_compare_exchange_strong_explicit](../standard-library/atomic-functions.md#atomic_compare_exchange_strong_explicit)|Gerçekleştiren bir *atomik karşılaştırma ve değişim* işlemi.|
-|[atomic_compare_exchange_weak](../standard-library/atomic-functions.md#atomic_compare_exchange_weak)|Gerçekleştiren bir *zayıf atomik karşılaştırma ve exchange* işlemi.|
-|[atomic_compare_exchange_weak_explicit](../standard-library/atomic-functions.md#atomic_compare_exchange_weak_explicit)|Gerçekleştiren bir *zayıf atomik karşılaştırma ve exchange* işlemi.|
-|[atomic_exchange](../standard-library/atomic-functions.md#atomic_exchange)|Depolanmış bir değerin yerini alır.|
-|[atomic_exchange_explicit](../standard-library/atomic-functions.md#atomic_exchange_explicit)|Depolanmış bir değerin yerini alır.|
-|[atomic_fetch_add](../standard-library/atomic-functions.md#atomic_fetch_add)|Belirtilen bir değeri depolanan mevcut bir değeri ekler.|
-|[atomic_fetch_add_explicit](../standard-library/atomic-functions.md#atomic_fetch_add_explicit)|Belirtilen bir değeri depolanan mevcut bir değeri ekler.|
-|[atomic_fetch_and](../standard-library/atomic-functions.md#atomic_fetch_and)|Bit düzeyinde gerçekleştirir `and` belirtilen bir değer ve depolanan varolan değeri.|
-|[atomic_fetch_and_explicit](../standard-library/atomic-functions.md#atomic_fetch_and_explicit)|Bit düzeyinde gerçekleştirir `and` belirtilen bir değer ve depolanan varolan değeri.|
-|[atomic_fetch_or](../standard-library/atomic-functions.md#atomic_fetch_or)|Bit düzeyinde gerçekleştirir `or` belirtilen bir değer ve depolanan varolan değeri.|
-|[atomic_fetch_or_explicit](../standard-library/atomic-functions.md#atomic_fetch_or_explicit)|Bit düzeyinde gerçekleştirir `or` belirtilen bir değer ve depolanan varolan değeri.|
-|[atomic_fetch_sub](../standard-library/atomic-functions.md#atomic_fetch_sub)|Belirtilen bir değeri depolanan mevcut bir değeri çıkarır.|
-|[atomic_fetch_sub_explicit](../standard-library/atomic-functions.md#atomic_fetch_sub_explicit)|Belirtilen bir değeri depolanan mevcut bir değeri çıkarır.|
-|[atomic_fetch_xor](../standard-library/atomic-functions.md#atomic_fetch_xor)|Bit düzeyinde gerçekleştirir `exclusive or` belirtilen bir değer ve depolanan varolan değeri.|
-|[atomic_fetch_xor_explicit](../standard-library/atomic-functions.md#atomic_fetch_xor_explicit)|Bit düzeyinde gerçekleştirir `exclusive or` belirtilen bir değer ve depolanan varolan değeri.|
-|[atomic_flag_clear](../standard-library/atomic-functions.md#atomic_flag_clear)|Bayrağı ayarlar bir `atomic_flag` nesnesini **false**.|
-|[atomic_flag_clear_explicit](../standard-library/atomic-functions.md#atomic_flag_clear_explicit)|Bayrağı ayarlar bir `atomic_flag` nesnesini **false**.|
-|[atomic_flag_test_and_set](../standard-library/atomic-functions.md#atomic_flag_test_and_set)|Bayrağı ayarlar bir `atomic_flag` nesnesini **true**.|
-|[atomic_flag_test_and_set_explicit](../standard-library/atomic-functions.md#atomic_flag_test_and_set_explicit)|Bayrağı ayarlar bir `atomic_flag` nesnesini **true**.|
-|[atomic_init](../standard-library/atomic-functions.md#atomic_init)|Depolanan değeri ayarlar bir `atomic` nesne.|
-|[atomic_is_lock_free](../standard-library/atomic-functions.md#atomic_is_lock_free)|Belirtilen bir nesne üzerinde yapılan atomik işlemlerin olup olmadığını belirten kilitsizdir.|
-|[atomic_load](../standard-library/atomic-functions.md#atomic_load)|Atomik olarak bir değer alır.|
-|[atomic_load_explicit](../standard-library/atomic-functions.md#atomic_load_explicit)|Atomik olarak bir değer alır.|
-|[atomic_signal_fence](../standard-library/atomic-functions.md#atomic_signal_fence)|Görevi gören bir *dilimi* bellek gereksinimleri bir arama içinde sınırlar arasında iş parçacığı sıralaması olan aynı iş parçacığında çalıştırılan sinyal işleyicileri oluşturur.|
-|[atomic_store](../standard-library/atomic-functions.md#atomic_store)|Bir değeri atomik olarak depolar.|
-|[atomic_store_explicit](../standard-library/atomic-functions.md#atomic_store_explicit)|Bir değeri atomik olarak depolar.|
-|[atomic_thread_fence](../standard-library/atomic-functions.md#atomic_thread_fence)|Görevi gören bir *dilimi* bellek sıralaması parçacığındaki diğer çitler gereksinimlerini oluşturur.|
-|[kill_dependency](../standard-library/atomic-functions.md#kill_dependency)|Olası bir bağımlılık zinciri keser.|
+|[atomic_compare_exchange_strong](../standard-library/atomic-functions.md#atomic_compare_exchange_strong)|*Atomik karşılaştırma ve değişim* işlemi gerçekleştirir.|
+|[atomic_compare_exchange_strong_explicit](../standard-library/atomic-functions.md#atomic_compare_exchange_strong_explicit)|*Atomik karşılaştırma ve değişim* işlemi gerçekleştirir.|
+|[atomic_compare_exchange_weak](../standard-library/atomic-functions.md#atomic_compare_exchange_weak)|*Zayıf atomik karşılaştırma ve değişim* işlemi gerçekleştirir.|
+|[atomic_compare_exchange_weak_explicit](../standard-library/atomic-functions.md#atomic_compare_exchange_weak_explicit)|*Zayıf atomik karşılaştırma ve değişim* işlemi gerçekleştirir.|
+|[atomic_exchange](../standard-library/atomic-functions.md#atomic_exchange)|Saklı bir değeri değiştirir.|
+|[atomic_exchange_explicit](../standard-library/atomic-functions.md#atomic_exchange_explicit)|Saklı bir değeri değiştirir.|
+|[atomic_fetch_add](../standard-library/atomic-functions.md#atomic_fetch_add)|Varolan bir saklı değere belirtilen bir değer ekler.|
+|[atomic_fetch_add_explicit](../standard-library/atomic-functions.md#atomic_fetch_add_explicit)|Varolan bir saklı değere belirtilen bir değer ekler.|
+|[atomic_fetch_and](../standard-library/atomic-functions.md#atomic_fetch_and)|Belirtilen bir değer `and` ve var olan bir depolanan değer üzerinde bir bit düzeyinde gerçekleştirir.|
+|[atomic_fetch_and_explicit](../standard-library/atomic-functions.md#atomic_fetch_and_explicit)|Belirtilen bir değer `and` ve var olan bir depolanan değer üzerinde bir bit düzeyinde gerçekleştirir.|
+|[atomic_fetch_or](../standard-library/atomic-functions.md#atomic_fetch_or)|Belirtilen bir değer `or` ve var olan bir depolanan değer üzerinde bir bit düzeyinde gerçekleştirir.|
+|[atomic_fetch_or_explicit](../standard-library/atomic-functions.md#atomic_fetch_or_explicit)|Belirtilen bir değer `or` ve var olan bir depolanan değer üzerinde bir bit düzeyinde gerçekleştirir.|
+|[atomic_fetch_sub](../standard-library/atomic-functions.md#atomic_fetch_sub)|Varolan bir depolanmış değerden belirtilen değeri çıkartır.|
+|[atomic_fetch_sub_explicit](../standard-library/atomic-functions.md#atomic_fetch_sub_explicit)|Varolan bir depolanmış değerden belirtilen değeri çıkartır.|
+|[atomic_fetch_xor](../standard-library/atomic-functions.md#atomic_fetch_xor)|Belirtilen bir değer `exclusive or` ve var olan bir depolanan değer üzerinde bir bit düzeyinde gerçekleştirir.|
+|[atomic_fetch_xor_explicit](../standard-library/atomic-functions.md#atomic_fetch_xor_explicit)|Belirtilen bir değer `exclusive or` ve var olan bir depolanan değer üzerinde bir bit düzeyinde gerçekleştirir.|
+|[atomic_flag_clear](../standard-library/atomic-functions.md#atomic_flag_clear)|Bir `atomic_flag` nesnedeki bayrağı **false**olarak ayarlar.|
+|[atomic_flag_clear_explicit](../standard-library/atomic-functions.md#atomic_flag_clear_explicit)|Bir `atomic_flag` nesnedeki bayrağı **false**olarak ayarlar.|
+|[atomic_flag_test_and_set](../standard-library/atomic-functions.md#atomic_flag_test_and_set)|Bir `atomic_flag` nesnedeki bayrağı **true**olarak ayarlar.|
+|[atomic_flag_test_and_set_explicit](../standard-library/atomic-functions.md#atomic_flag_test_and_set_explicit)|Bir `atomic_flag` nesnedeki bayrağı **true**olarak ayarlar.|
+|[atomic_init](../standard-library/atomic-functions.md#atomic_init)|Bir `atomic` nesne içindeki saklı değeri ayarlar.|
+|[atomic_is_lock_free](../standard-library/atomic-functions.md#atomic_is_lock_free)|Belirtilen bir nesne üzerindeki atomik işlemlerin kilitli olup olmadığını belirtir.|
+|[atomic_load](../standard-library/atomic-functions.md#atomic_load)|Sıradan olarak bir değer alır.|
+|[atomic_load_explicit](../standard-library/atomic-functions.md#atomic_load_explicit)|Sıradan olarak bir değer alır.|
+|[atomic_signal_fence](../standard-library/atomic-functions.md#atomic_signal_fence)|Aynı iş parçacığında çalıştırılan sinyal işleyicilerine sahip bir çağıran iş parçacığı arasında bellek sıralama gereksinimleri kuran bir *çit* görevi görür.|
+|[atomic_store](../standard-library/atomic-functions.md#atomic_store)|Bir değeri atomicbir şekilde depolar.|
+|[atomic_store_explicit](../standard-library/atomic-functions.md#atomic_store_explicit)|Bir değeri atomicbir şekilde depolar.|
+|[atomic_thread_fence](../standard-library/atomic-functions.md#atomic_thread_fence)|, Diğer balıklara göre bellek sıralama gereksinimlerini belirleyen bir *çit* görevi görür.|
+|[kill_dependency](../standard-library/atomic-functions.md#kill_dependency)|Olası bir bağımlılık zincirini keser.|
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Üstbilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md)<br/>
-[C++ Standart Kitaplığı Başvurusu](../standard-library/cpp-standard-library-reference.md)<br/>
+[Üst bilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md)\
+[C++ Standart Kitaplığı Başvurusu](../standard-library/cpp-standard-library-reference.md)

@@ -10,16 +10,16 @@ helpviewer_keywords:
 - std::complex [C++], imag
 - std::complex [C++], real
 ms.assetid: d6492e1c-5eba-4bc5-835b-2a88001a5868
-ms.openlocfilehash: db04569d3938c673653ac36eeebdabc9cb725c1e
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.openlocfilehash: 44d44d48f66c9bdbf03d4e36e752ea3dee5ff9c9
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68244738"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68453170"
 ---
 # <a name="complex-class"></a>complex Sınıfı
 
-Şablon sınıfı türünün iki nesnelerini depolayan bir nesneyi tanımlayan `Type`, bir karmaşık bir sayıyı ve sanal bölümünü temsil eden bir gerçek bölümünü temsil eder.
+Şablon sınıfı, bir karmaşık sayının gerçek parçasını temsil eden bir, `Type`diğeri de sanal parçayı temsil eden, türünde iki nesneyi depolayan bir nesneyi tanımlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -30,17 +30,17 @@ class complex
 
 ## <a name="remarks"></a>Açıklamalar
 
-Sınıfın bir nesnesi `Type`:
+Sınıfının `Type`bir nesnesi:
 
-- Genel varsayılan oluşturucu, yıkıcı, kopya oluşturucu ve geleneksel davranış atama işleci vardır.
+- Geleneksel davranışa sahip ortak bir varsayılan Oluşturucu, yıkıcı, kopya Oluşturucusu ve atama işleci vardır.
 
-- Tamsayı veya kayan nokta değerleri atanabilir veya dönüştürme gibi geleneksel davranışı değerlerle yazın.
+- Tamsayı veya kayan nokta değerleri atanabilir veya geleneksel davranışla bu tür değerlere tür atama yapılabilir.
 
-- Aritmetik işleçler ve geleneksel davranışına sahip kayan nokta türleri için tanımlanan gerektiği gibi matematik işlevleri tanımlar.
+- Geleneksel davranışa sahip kayan nokta türleri için tanımlanan aritmetik işleçleri ve matematik işlevlerini, gerektiğinde tanımlar.
 
-Özellikle, kopya oluşturma ve atama tarafından izlenen varsayılan yapı arasında hiçbir farklar olabilir. Sınıfındaki nesneler üzerinde işlemler hiçbiri `Type` özel durumlar oluşturabilir.
+Özellikle, kopyalama oluşturma ve varsayılan oluşturma arasında ve ardından atama ile hiçbir hafif fark olamaz. Sınıfının `Type` nesnelerinde hiçbir işlem özel durum oluşturabilir.
 
-Karmaşık şablon sınıfının açık uzmanlık üç kayan nokta türleri için mevcut. Bu uygulamada, başka türden bir değer `Type` için türü atayarak **çift** gerçek hesaplama ile **çift** sonuç türünde saklı nesneye atanmış `Type`.
+Üç kayan nokta türü için karmaşık şablon sınıfı açık Uzmanlıkları vardır. Bu uygulamada, diğer herhangi bir `Type` türün bir değeri, gerçek hesaplamalar için **Double** 'a, **Double** sonucuyla birlikte Type `Type`türünde bir değer olarak atanır.
 
 ## <a name="members"></a>Üyeler
 
@@ -48,36 +48,36 @@ Karmaşık şablon sınıfının açık uzmanlık üç kayan nokta türleri içi
 
 |||
 |-|-|
-|[karmaşık](#complex)|Karmaşık bir sayıyı belirtilen reel ve sanal parça ile veya başka bir karmaşık sayıyı kopyası olarak oluşturur.|
+|[ş](#complex)|Belirtilen gerçek ve sanal parçalar ile karmaşık bir sayı ya da başka bir karmaşık sayının kopyası olarak oluşturur.|
 
 ### <a name="typedefs"></a>Tür tanımları
 
 |||
 |-|-|
-|[value_type](#value_type)|Karmaşık bir sayıyı reel ve sanal parçalarını temsil etmek için kullanılan veri türünü temsil eden tür.|
+|[value_type](#value_type)|Karmaşık bir sayının gerçek ve sanal parçalarını temsil etmek için kullanılan veri türünü temsil eden bir tür.|
 
 ### <a name="functions"></a>İşlevler
 
 |||
 |-|-|
-|[imag](#imag)|Karmaşık bir sayıyı sanal bileşeninin ayıklar.|
-|[Gerçek](#real)|Gerçek ve karmaşık bir sayıyı bileşenini ayıklar.|
+|[imag](#imag)|Karmaşık bir sayının sanal bileşenini ayıklar.|
+|[gerçek](#real)|Karmaşık bir sayının gerçek bileşenini ayıklar.|
 
 ### <a name="operators"></a>İşleçler
 
 |||
 |-|-|
-|[operator*=](#op_star_eq)|Karmaşık veya karmaşık sayıyı gerçek ve sanal kısımlarını olduğu gibi aynı türden olması bir faktör hedef karmaşık bir sayıyı çarpar.|
-|[operator+=](#op_add_eq)|Bir hedef karmaşık sayıyı bir numara ekler, eklenen sayı karmaşık olabilir veya aynı türde reel ve sanal için onu eklendiği karmaşık sayıyı bölümlerdir.|
-|[-= işleci](#operator-_eq)|Hedef karmaşık bir sayıyı bir sayıyı çıkartır, çıkarılan sayıyı karmaşık olabilir veya aynı türde reel ve sanal için onu eklendiği karmaşık sayı bölümlerdir.|
-|[/ = işleci](#op_div_eq)|Karmaşık sayıyı gerçek ve sanal kısımlarını olduğu gibi aynı türden olması veya karmaşık bir bölen tarafından hedef karmaşık bir sayıyı böler.|
-|[operator=](#op_eq)|Burada atanan numara karmaşık olabilir bir hedef karmaşık sayı ya da aynı türden bir sayı olan karmaşık olduğu, atandığı sayı gerçek ve sanal kısımlarını atar.|
+|[operator*=](#op_star_eq)|Karmaşık bir sayının gerçek ve sanal parçalarıyla aynı türde olan bir faktörle bir hedef karmaşık sayıyı çarparak çarpar.|
+|[operator+=](#op_add_eq)|Eklenmiş sayının, eklendiği karmaşık sayının gerçek ve sanal kısımlarıyla aynı türde olabileceği hedef karmaşık sayıya bir sayı ekler.|
+|[işleç-=](#operator-_eq)|Bir sayıyı hedef karmaşık sayıdan çıkartır, burada çıkarılan sayı, eklendiği karmaşık sayının gerçek ve sanal parçalarıyla aynı türde olabilir.|
+|[işleç/=](#op_div_eq)|Karmaşık bir sayının gerçek ve sanal parçalarıyla aynı türde olan ve karmaşık olabilecek bir hedef karmaşık sayıyı bölen tarafından böler.|
+|[operator=](#op_eq)|Atanan sayının, atanmakta olduğu karmaşık sayının gerçek ve sanal parçalarıyla aynı türde olabileceği hedef karmaşık sayıya bir sayı atar.|
 
 
 
-## <a name="complex"></a> karmaşık
+## <a name="complex"></a>ş
 
-Karmaşık bir sayıyı belirtilen reel ve sanal parça ile veya başka bir karmaşık sayıyı kopyası olarak oluşturur.
+Belirtilen gerçek ve sanal parçalar ile karmaşık bir sayı ya da başka bir karmaşık sayının kopyası olarak oluşturur.
 
 ```cpp
 constexpr complex(
@@ -92,32 +92,32 @@ constexpr complex(
 ### <a name="parameters"></a>Parametreler
 
 *_RealVal*\
-Karmaşık sayıyı yapılandırılmakta başlatmak için kullanılan gerçek bölüm değeri.
+Oluşturulan karmaşık sayıyı başlatmak için kullanılan gerçek parçanın değeri.
 
 *_ImagVal*\
-Karmaşık sayıyı yapılandırılmakta başlatmak için kullanılan sanal bölüm değeri.
+Oluşturulan karmaşık sayıyı başlatmak için kullanılan sanal parçanın değeri.
 
-*complexNum*\
-Karmaşık olan reel ve sanal parçaları yapılandırılmakta karmaşık sayıyı başlatmak için kullanılan sayı.
+*Karmaşıksayı*\
+Oluşturulan karmaşık sayıyı başlatmak için gerçek ve sanal parçalarını kullanılan karmaşık sayı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk Oluşturucu depolanan başlatır gerçek parçası  *\_RealVal* ve depolanan sanal bölümüne  *\_Imagval*. İkinci oluşturucu depolanmış başlatır gerçek parçası `complexNum.real()` ve depolanan sanal bölümüne `complexNum.imag()`.
+İlk Oluşturucu, depolanan gerçek parçayı  *\_, realval* ve  *\_depolanan sanal parçayı ımagval*'ye başlatır. İkinci Oluşturucu saklı gerçek parçayı öğesine `complexNum.real()` ve depolanan sanal bölümü öğesine `complexNum.imag()`başlatır.
 
-Üye şablonu işlevleri, şablon bir translator desteklemiyorsa bu uygulamasında:
+Bu uygulamada, bir çevirmen üye şablon işlevlerini desteklemiyorsa, şablon:
 
 ```cpp
 template <class Other>
 complex(const complex<Other>& right);
 ```
 
-ile değiştirilir:
+ile değiştirilmiştir:
 
 ```
 complex(const complex& right);
 ```
 
-kopya Oluşturucusu olan.
+kopya Oluşturucu.
 
 ### <a name="example"></a>Örnek
 
@@ -159,9 +159,9 @@ int main( )
 }
 ```
 
-## <a name="imag"></a> imag
+## <a name="imag"></a>imag
 
-Karmaşık bir sayıyı sanal bileşeninin ayıklar.
+Karmaşık bir sayının sanal bileşenini ayıklar.
 
 ```cpp
 T imag() const;
@@ -171,16 +171,16 @@ T imag(const T& right);
 
 ### <a name="parameters"></a>Parametreler
 
-*sağ*\
-Ayıklanacak sanal değeri olan bir karmaşık sayı.
+*Right*\
+Sanal değeri ayıklanmak üzere olan karmaşık bir sayı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Karmaşık sayıyı sanal parçası.
+Karmaşık sayının sanal bölümü.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Karmaşık bir sayıyı için *+ BI*, sanal bir bölümü veya bileşen *Im(a + bi) = b*.
+*Bir + bı*karmaşık numarası için, sanal parça veya bileşen *IM (a + bi) = b*' dir.
 
 ### <a name="example"></a>Örnek
 
@@ -213,9 +213,9 @@ The real part of c1 is c1.real() = 4.
 The imaginary part of c1 is c1.imag() = 3.
 ```
 
-## <a name="op_star_eq"></a> operator * =
+## <a name="op_star_eq"></a>işleç * =
 
-Karmaşık veya karmaşık sayıyı gerçek ve sanal kısımlarını olduğu gibi aynı türden olması bir faktör hedef karmaşık bir sayıyı çarpar.
+Karmaşık bir sayının gerçek ve sanal parçalarıyla aynı türde olan bir faktörle bir hedef karmaşık sayıyı çarparak çarpar.
 
 ```cpp
 template <class Other>
@@ -228,16 +228,16 @@ complex<Type>& operator*=(const complex<Type>& right);
 
 ### <a name="parameters"></a>Parametreler
 
-*sağ*\
-Karmaşık bir sayıyı veya aynı türü hedef karmaşık sayının parametre olarak bir sayı.
+*Right*\
+Karmaşık bir sayı veya hedef karmaşık sayının parametresiyle aynı türde bir sayı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Parametre olarak belirtilen sayı ile çarpılan bir karmaşık sayı.
+Parametre olarak belirtilen sayı ile çarpılmış karmaşık bir sayı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Böylece basit aritmetik işlemler verilerin belirli bir biçime dönüştürme olmadan yürütülüp işlemi aşırı yüklendi.
+Bu işlem, verilerin belirli bir biçime dönüştürülmesi gerekmeden basit aritmetik işlemlerin yürütülebilmesi için aşırı yüklenmiştir.
 
 ### <a name="example"></a>Örnek
 
@@ -298,9 +298,9 @@ int main()
 }
 ```
 
-## <a name="op_add_eq"></a> += işleci
+## <a name="op_add_eq"></a>işleç + =
 
-Bir hedef karmaşık sayıyı bir numara ekler, eklenen sayı karmaşık olabilir veya aynı türde reel ve sanal için onu eklendiği karmaşık sayıyı bölümlerdir.
+Eklenmiş sayının, eklendiği karmaşık sayının gerçek ve sanal kısımlarıyla aynı türde olabileceği hedef karmaşık sayıya bir sayı ekler.
 
 ```cpp
 template <class Other>
@@ -313,16 +313,16 @@ complex<Type>& operator+=(const complex<Type>& right);
 
 ### <a name="parameters"></a>Parametreler
 
-*sağ*\
-Karmaşık bir sayıyı veya aynı türü hedef karmaşık sayının parametre olarak bir sayı.
+*Right*\
+Karmaşık bir sayı veya hedef karmaşık sayının parametresiyle aynı türde bir sayı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Eklenen bir parametre olarak belirtilen sayı olan bir karmaşık sayı.
+Eklenmiş bir parametre olarak belirtilen sayı olan karmaşık bir sayı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Böylece basit aritmetik işlemler verilerin belirli bir biçime dönüştürme olmadan yürütülüp işlemi aşırı yüklendi.
+Bu işlem, verilerin belirli bir biçime dönüştürülmesi gerekmeden basit aritmetik işlemlerin yürütülebilmesi için aşırı yüklenmiştir.
 
 ### <a name="example"></a>Örnek
 
@@ -401,9 +401,9 @@ The modulus of cl2 is: 5
 The argument of cl2 is: 0.927295 radians, which is 53.1301 degrees.
 ```
 
-## <a name="operator-_eq"></a> -= işleci
+## <a name="operator-_eq"></a>işleç-=
 
-Hedef karmaşık bir sayıyı bir sayıyı çıkartır, çıkarılan sayıyı karmaşık olabilir veya aynı türde reel ve sanal için onu eklendiği karmaşık sayı bölümlerdir.
+Bir sayıyı hedef karmaşık sayıdan çıkartır, burada çıkarılan sayı, eklendiği karmaşık sayının gerçek ve sanal parçalarıyla aynı türde olabilir.
 
 ```cpp
 template <class Other>
@@ -416,19 +416,19 @@ complex<Type>& operator-=(const complex<Type>& complexNum);
 
 ### <a name="parameters"></a>Parametreler
 
-*complexNum*\
-Hedef karmaşık numarasından çıkartılır için bir karmaşık sayı.
+*Karmaşıksayı*\
+Hedef karmaşık sayıdan çıkarılan karmaşık bir sayı.
 
 *_RealPart*\
-Hedef karmaşık numarasından çıkartılır için bir gerçek sayı.
+Hedef karmaşık sayıdan çıkarılan gerçek sayı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Buradan çıkarıldığında bir parametre olarak belirtilen sayı olan bir karmaşık sayı.
+Bir parametre olarak belirtilen sayının ondan çıkarılan karmaşık bir sayı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Böylece basit aritmetik işlemler verilerin belirli bir biçime dönüştürme olmadan yürütülüp işlemi aşırı yüklendi.
+Bu işlem, verilerin belirli bir biçime dönüştürülmesi gerekmeden basit aritmetik işlemlerin yürütülebilmesi için aşırı yüklenmiştir.
 
 ### <a name="example"></a>Örnek
 
@@ -509,9 +509,9 @@ The modulus of cl2 is: 5
 The argument of cl2 is: 2.2143 radians, which is 126.87 degrees.
 ```
 
-## <a name="op_div_eq"></a> / = işleci
+## <a name="op_div_eq"></a>işleç/=
 
-Karmaşık sayıyı gerçek ve sanal kısımlarını olduğu gibi aynı türden olması veya karmaşık bir bölen tarafından hedef karmaşık bir sayıyı böler.
+Karmaşık bir sayının gerçek ve sanal parçalarıyla aynı türde olan ve karmaşık olabilecek bir hedef karmaşık sayıyı bölen tarafından böler.
 
 ```cpp
 template <class Other>
@@ -524,19 +524,19 @@ complex<Type>& operator/=(const complex<Type>& complexNum);
 
 ### <a name="parameters"></a>Parametreler
 
-*complexNum*\
-Hedef karmaşık numarasından çıkartılır için bir karmaşık sayı.
+*Karmaşıksayı*\
+Hedef karmaşık sayıdan çıkarılan karmaşık bir sayı.
 
 *_RealPart*\
-Hedef karmaşık numarasından çıkartılır için bir gerçek sayı.
+Hedef karmaşık sayıdan çıkarılan gerçek sayı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Parametre olarak belirtilen bir sayıya bölünen karmaşık sayı.
+Parametre olarak belirtilen sayıya bölünen karmaşık bir sayı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Böylece basit aritmetik işlemler verilerin belirli bir biçime dönüştürme olmadan yürütülüp işlemi aşırı yüklendi.
+Bu işlem, verilerin belirli bir biçime dönüştürülmesi gerekmeden basit aritmetik işlemlerin yürütülebilmesi için aşırı yüklenmiştir.
 
 ### <a name="example"></a>Örnek
 
@@ -613,9 +613,9 @@ The modulus of cl2 is: 0.6
 The argument of cl2 is: 0.523599 radians, which is 30 degrees.
 ```
 
-## <a name="op_eq"></a> işleç =
+## <a name="op_eq"></a>işleç =
 
-Burada atanan numara karmaşık olabilir bir hedef karmaşık sayı ya da aynı türden bir sayı olan karmaşık olduğu, atandığı sayı gerçek ve sanal kısımlarını atar.
+Atanan sayının, atanmakta olduğu karmaşık sayının gerçek ve sanal parçalarıyla aynı türde olabileceği hedef karmaşık sayıya bir sayı atar.
 
 ```cpp
 template <class Other>
@@ -626,16 +626,16 @@ complex<Type>& operator=(const Type& right);
 
 ### <a name="parameters"></a>Parametreler
 
-*sağ*\
-Karmaşık bir sayıyı veya aynı türü hedef karmaşık sayının parametre olarak bir sayı.
+*Right*\
+Karmaşık bir sayı veya hedef karmaşık sayının parametresiyle aynı türde bir sayı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Parametre olarak belirtilen sayı atanmış olan bir karmaşık sayı.
+Parametre olarak belirtilen sayının atandığı karmaşık bir sayı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Böylece basit aritmetik işlemler verilerin belirli bir biçime dönüştürme olmadan yürütülüp işlemi aşırı yüklendi.
+Bu işlem, verilerin belirli bir biçime dönüştürülmesi gerekmeden basit aritmetik işlemlerin yürütülebilmesi için aşırı yüklenmiştir.
 
 ### <a name="example"></a>Örnek
 
@@ -691,9 +691,9 @@ The complex number (3, 4) assigned to the complex number cl2 is:
 cl2 = (3,4)
 ```
 
-## <a name="real"></a> Gerçek
+## <a name="real"></a>gerçek
 
-Alır veya karmaşık bir sayıyı gerçek bileşeninin ayarlar.
+Karmaşık bir sayının gerçek bileşenini alır veya ayarlar.
 
 ```cpp
 constexpr T real() const;
@@ -703,16 +703,16 @@ T real(const T& right);
 
 ### <a name="parameters"></a>Parametreler
 
-*sağ*\
-Ayıklanacak gerçek değeri olan bir karmaşık sayı.
+*Right*\
+Gerçek değeri ayıklanmak üzere olan karmaşık bir sayı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Karmaşık sayıyı gerçek parçası.
+Karmaşık sayının gerçek bölümü.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Karmaşık bir sayıyı için *+ BI*, gerçek bölüm veya bileşen *Re(a + bi) = bir*.
+*Bir + bi*karmaşık numarası için, gerçek parça veya bileşen bir *Re (a + bi) = a*olur.
 
 ### <a name="example"></a>Örnek
 
@@ -745,9 +745,9 @@ The real part of c1 is c1.real() = 4.
 The imaginary part of c1 is c1.imag() = 3.
 ```
 
-## <a name="value_type"></a> value_type
+## <a name="value_type"></a>value_type
 
-Karmaşık bir sayıyı reel ve sanal parçalarını temsil etmek için kullanılan veri türünü temsil eden tür.
+Karmaşık bir sayının gerçek ve sanal parçalarını temsil etmek için kullanılan veri türünü temsil eden bir tür.
 
 ```
 typedef Type value_type;
@@ -755,7 +755,7 @@ typedef Type value_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-`value_type` sınıfı için bir eşanlamlı karmaşıktır `Type` şablon parametresi.
+`value_type`, sınıf karmaşık `Type` şablon parametresinin eşanlamlısıdır.
 
 ### <a name="example"></a>Örnek
 
@@ -784,4 +784,4 @@ of type value_type: c1 = (3,4).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
+[C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)

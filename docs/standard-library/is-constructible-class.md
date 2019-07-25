@@ -6,16 +6,16 @@ f1_keywords:
 helpviewer_keywords:
 - is_constructible
 ms.assetid: 7cdec5ff-73cf-4f78-a9db-ced2e9c0fd7f
-ms.openlocfilehash: c921efd5b7e12873ce986952029ae39f118ad763
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: dc0596ac7a3fc2bcbcbe49f5fa4b20a971e5e445
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62336861"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68452857"
 ---
 # <a name="isconstructible-class"></a>is_constructible sınıfı
 
-Belirtilen bağımsız değişken türler kullanıldığında bir tür atmamalıdır olup olmadığını sınar.
+Belirtilen bağımsız değişken türleri kullanıldığında bir türün oluşturulabilir olup olmadığını test eder.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -26,22 +26,22 @@ struct is_constructible;
 
 ### <a name="parameters"></a>Parametreler
 
-*T*<br/>
+*ŞI*\
 Sorgulanacak tür.
 
-*Args*<br/>
-Bir oluşturucuda eşleştirmek için bağımsız değişken türleri *T*.
+*Args*\
+*T*yapıcısında eşleştirilecek bağımsız değişken türleri.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Karşılaştırmasının bir örneği true tutan türü *T* atmamalıdır olan bağımsız değişken türleri kullanarak *Args*, aksi takdirde false tutar. Tür *T* atmamalıdır olduğundan, değişken tanımını `T t(std::declval<Args>()...);` doğru oluşturulmamış. Her ikisi de *T* içindeki tüm türler *Args* tam türler olmalıdır **void**, veya bilinmeyen bağlı bir dizi.
+Tür koşulunun bir örneği, *T* türü, bağımsız *değişkenlerdeki bağımsız*değişken türleri kullanılarak oluşturulabilir ise true, aksi durumda false değerini taşır. Değişken  tanımı `T t(std::declval<Args>()...);` düzgün biçimlendirilmişse tür T oluşturulabilir. *T* ve *args* içindeki tüm türlerin her ikisi de, bilinmeyen türler, **void**veya dizileri olmalıdır.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** \<type_traits >
+**Üst bilgi:** \<type_traits >
 
-**Namespace:** std
+**Ad alanı:** std
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[<type_traits>](../standard-library/type-traits.md)<br/>
+[<type_traits>](../standard-library/type-traits.md)

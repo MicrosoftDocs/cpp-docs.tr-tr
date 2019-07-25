@@ -10,50 +10,50 @@ helpviewer_keywords:
 - library headers
 - C++ Standard Library, headers
 ms.assetid: a36e889e-1af2-4cd9-a211-bfc7a3fd8e85
-ms.openlocfilehash: b9841d1045a6d2d1126414f1ce4cfc93f9667eef
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 9cc0bb51b159f6668adad05ebd2d386364ae2f81
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62362376"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68450069"
 ---
 # <a name="using-c-library-headers"></a>C++ Kitaplığı Üstbilgilerini Kullanma
 
-Standart üst bilgi içeriği, yönergesinde adlandırarak içerir.
+Bir Include yönergesinde adlandırarak standart bir üstbilginin içeriğini dahil edersiniz.
 
 ```cpp
 #include <iostream>// include I/O facilities
 ```
 
-Herhangi bir sırada, birden fazla kez standart üst bilgi veya aynı makrosu veya aynı türü tanımlayan iki veya daha fazla standart üstbilgileri, standart üstbilgi ekleyebilirsiniz. Bir bildirimi içinde standart bir başlık dahil değildir. Standart bir başlık dahil etmeden önce aynı adları olarak anahtar sözcükler makroları tanımlamaz.
+Standart üst bilgileri herhangi bir sıraya, standart bir üst bilgiye veya aynı makroyu ya da aynı türü tanımlayan iki ya da daha fazla standart üstbilgiye dahil edebilirsiniz. Bir bildirime standart üst bilgi eklemeyin. Standart bir üst bilgi eklemeden önce, anahtar sözcüklerle aynı ada sahip makroları tanımlamayın.
 
-C++ Kitaplığı üstbilgi gereken türleri tanımlamak için gerekli herhangi diğer C++ Kitaplığı üstbilgilerini içerir. (Gerçek bağımlılıkları hakkında yanlış tahmin ekleyin her zaman bir çeviri biriminde, ancak gerekli açıkça bir C++ Kitaplığı üst bilgileri ekleyin.) Standart C üstbilgi hiçbir zaman başka bir standart üst bilgi içerir. Standart üst bilgi bildirir veya yalnızca kendisi için bu belgede açıklanan varlıklar tanımlayan.
+C++ Kitaplık üst bilgisi, gereken türleri C++ tanımlamak için gereken diğer kitaplık üstbilgilerini içerir. (Bir çeviri biriminde gereken C++ tüm kitaplık üstbilgilerini her zaman ekleyin, ancak gerçek bağımlılıklarıyla ilgili olarak yanlış tahmin edersiniz.) Standart bir C üst bilgisi hiçbir şekilde başka bir standart üstbilgi dahil değildir. Standart üst bilgi, yalnızca bu belgede açıklanan varlıkları bildirir veya tanımlar.
 
-Standart bir üst bilgisinde her işlev Kitaplığı'nda bildirilir. Farklı olarak standart C, standart üstbilgi hiçbir işlev bildirimi maskeleri ve aynı etkiyi elde işlevi olarak aynı ada sahip bir maskeleme makrosu sağlar. Makrolar maskeleme daha fazla bilgi için bkz: [C++ Kitaplık kuralları](../standard-library/cpp-library-conventions.md).
+Kitaplıktaki her işlev standart bir üst bilgide bildirilmiştir. Standart C 'nin aksine, standart üst bilgi, işlev bildirimini maskelerden ve aynı etkiye sahip olan işlevle aynı ada sahip bir maskeleme makrosu sağlamaz. Maskeleme makroları hakkında daha fazla bilgi için bkz [ C++ . kitaplık kuralları](../standard-library/cpp-library-conventions.md).
 
-Dışındaki tüm adları **delete işleci** ve **new işleci** üstbilgileri tanımlanan C++ Kitaplığı'nda `std` ad veya içinde iç içe geçmiş ad alanında `std` ad alanı. Adına başvurmak `cin`, örneğin, olarak `std::cin`. , Ancak her zaman yazmak için makro adları ad niteliği tabi değildir `__STD_COMPLEX` ad alanı niteleyicisi olmayan.
+C++ Kitaplık`std` başlıklarındaki **işleç Delete** ve **New işleci** dışındaki tüm adlar ad alanında veya ad `std` alanı içinde iç içe yerleştirilmiş bir ad alanında tanımlanır. Adına `cin`(örneğin `std::cin`,) başvurabilirsiniz. Ancak, makro adları ad alanı niteleyiciye tabi olmadığından, her zaman bir ad alanı niteleyicisi olmadan `__STD_COMPLEX` yazmanız gerektiğini unutmayın.
 
-Bazı çeviri ortamlarda, bir C++ Kitaplığı üst bilgisi dahil olmak üzere bildirilen dış adların çekmek `std` ad da genel ad alanına kişi ile **kullanarak** her adları bildirimleri. Aksi takdirde, üst bilgi vermez *değil* herhangi bir kitaplık adı geçerli bir ad alanına tanıtır.
+Bazı çeviri ortamlarında, bir C++ kitaplık üstbilgisi de dahil olmak üzere `std` ad alanında belirtilen dış adları genel ad alanına ve her bir ada ait bildirimleri **kullanarak** barındırmayabilir. Aksi takdirde, üst bilgi geçerli ad alanına herhangi bir kitaplık *adı sunmaz.*
 
-C++ Standart C Standart üstbilgi tüm dış adların ad alanında bildirilmesini gerektirir `std`, kişi ile küresel ad alanına çekmek **kullanarak** her adları bildirimleri. Ancak, bazı standart C çeviri ortamlar doğrudan genel ad alanındaki tüm adları bildirme hiçbir ad alanı bildirimi, üst bilgileri ekleyin. Bu nedenle, ad alanları ile dağıtılacak en taşınabilir yolu iki kural takip etmektir:
+Standart C++ , C standart üstbilgilerinin ad alanındaki `std`tüm dış adları belirtmesini ve sonra her bir ad için bildirimleri **kullanarak** genel ad alanına barındırmasını gerektirir. Ancak bazı çeviri ortamlarında, tüm adları doğrudan genel ad alanında bildiren C standart üstbilgileri ad alanı bildirimleri içermez. Bu nedenle, ad alanları ile başa çıkmak için en taşınabilir yol iki kurala uymalıdır:
 
-- Ad alanında assuredly bildirmek için `std` , geleneksel olarak bildirilen bir dış ad \<stdlib.h >, örneğin üstbilgisini \<cstdlib >. Adı aynı zamanda genel ad alanında bildirilmesini bildirin.
+- Ad alanına `std` assuredly bildirmek için, \<Stdlib. h >, örneğin, cstdlib > üstbilgisini \<içeren bir dış addır. Adın genel ad alanında da bildirilebilecek olduğunu öğrenin.
 
-- Genel ad alanında bildirilen bir dış ad assuredly bildirmek için \<stdlib.h >, üstbilgisini \<stdlib.h > doğrudan. Ad ayrıca ad alanında bildirilmesini bilmeniz `std`.
+- Genel ad alanında assuredly bildirmek için Stdlib. h > içinde \<belirtilen bir dış ad, doğrudan Stdlib. \<h > üstbilgisini ekleyin. Adın ad alanında `std`da bildirilebilecek olabileceğini öğrenin.
 
-Bu nedenle, arama istiyorsanız `std::abort` olağan dışı sonlandırma neden olmak için içermelidir \<cstdlib >. Çağrı istiyorsanız `abort`, içermesi gerekir \<stdlib.h >.
+Bu nedenle, olağan dışı sonlandırmanın `std::abort` nedenini çağırmak istiyorsanız cstdlib > dahil \<etmelisiniz. Çağırmak `abort`istiyorsanız, Stdlib. h > dahil \<etmelisiniz.
 
-Alternatif olarak, bildirimi yazabilirsiniz:
+Alternatif olarak, bildirimini de yazabilirsiniz:
 
 ```cpp
 using namespace std;
 ```
 
-Bu geçerli bir ad alanına tüm kitaplık adlarını getirir. Bu bildirim yazarsanız hemen sonra yönergelerinde, adları genel ad alanına çekmek. Daha sonra çeviri biriminin geri kalanında ad alanı konuları yoksayabilirsiniz. Ayrıca farklı çeviri ortamlar genelinde çoğu farklılığın kaçının.
+Tüm kitaplık adlarını geçerli ad alanına getiren. Bu bildirimi tüm dahil etme yönergelerinden hemen sonra yazarsanız, adları genel ad alanına barındırın. Daha sonra, çeviri biriminin geri kalanında ad alanı konularını yoksayabilirsiniz. Ayrıca, farklı çeviri ortamlarında birçok farkı önleyin.
 
-Özellikle belirtilmedikçe adlarında tanımlayamaz `std` ad veya içinde iç içe geçmiş ad alanında `std` programınızdan ad alanı.
+Özellikle belirtilmedikçe, `std` ad alanında veya ad alanı `std` içinde iç içe yerleştirilmiş bir ad alanında, programınızın içinden ad tanımlayamazsınız.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C++ Standart Kitaplığına Genel Bakış](../standard-library/cpp-standard-library-overview.md)<br/>
-[C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
+[C++Standart kitaplığa genel bakış](../standard-library/cpp-standard-library-overview.md)\
+[C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)

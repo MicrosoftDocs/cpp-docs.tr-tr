@@ -6,16 +6,16 @@ f1_keywords:
 helpviewer_keywords:
 - is_trivially_constructible
 ms.assetid: 3fa918c1-e66f-4d0e-a11b-be1fb2c02e7b
-ms.openlocfilehash: c83bea8be5c88876ffa25337464caa62b998ab45
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 6f177463b985d3e7b2f7ab7783f9c3db0dcd5722
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62413482"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68448007"
 ---
 # <a name="istriviallyconstructible-class"></a>is_trivially_constructible sınıfı
 
-Belirtilen bağımsız değişken türler kullanıldığında bir türü basit bir şekilde atmamalıdır olup olmadığını sınar.
+Belirtilen bağımsız değişken türleri kullanıldığında bir türün daha düşük bir şekilde oluşturulabilir olup olmadığını test eder.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -26,22 +26,22 @@ struct is_trivially_constructible;
 
 ### <a name="parameters"></a>Parametreler
 
-*T*<br/>
+*ŞI*\
 Sorgulanacak tür.
 
-*Args*<br/>
-Bir oluşturucuda eşleştirmek için bağımsız değişken türleri *T*.
+*Args*\
+*T*yapıcısında eşleştirilecek bağımsız değişken türleri.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Karşılaştırmasının bir örneği true tutan türü *T* bağımsız değişken türleri kullanarak basit bir şekilde atmamalıdır olduğu *Args*, aksi takdirde false tutar. Tür *T* basit bir şekilde atmamalıdır olduğundan, değişken tanımını `T t(std::declval<Args>()...);` iyi biçimlendirilmemiş ve önemsiz olmayan bir işlem çağırmak için bilinen. Her ikisi de *T* içindeki tüm türler *Args* tam türler olmalıdır **void**, veya bilinmeyen bağlı bir dizi.
+Tür koşulunda bir örnek, tür *T* bağımsız *değişkenlerdeki bağımsız*değişken türleri kullanılarak önemli bir şekilde oluşturulabilir ise true, aksi durumda false barındırır. Değişken  tanımı `T t(std::declval<Args>()...);` doğru biçimlendirilmişse ve önemsiz olmayan işlemler çağırılırdiğinde, tür T oldukça uygun bir şekilde oluşturulabilir. *T* ve *args* içindeki tüm türlerin her ikisi de, bilinmeyen türler, **void**veya dizileri olmalıdır.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** \<type_traits >
+**Üst bilgi:** \<type_traits >
 
-**Namespace:** std
+**Ad alanı:** std
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[<type_traits>](../standard-library/type-traits.md)<br/>
+[<type_traits>](../standard-library/type-traits.md)

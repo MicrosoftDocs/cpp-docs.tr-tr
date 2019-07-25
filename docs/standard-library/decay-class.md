@@ -6,16 +6,16 @@ f1_keywords:
 helpviewer_keywords:
 - decay class
 ms.assetid: 96baa2fd-c8e0-49af-be91-ba375ba7f9dc
-ms.openlocfilehash: 23c2cff37e67e78ba68c37468c110d7a3725b785
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 73b9e2d8ef9a14830c13ee3f6566137bb51e939d
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62394071"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68450637"
 ---
 # <a name="decay-class"></a>decay Sınıfı
 
-Türü, değer olarak geçilemez olarak oluşturur. Tür başvuru olmayan, sabit olmayan, geçici olmayan yapar veya bir işlev ya da bir dizi türü için tür işaretçisi yapar.
+Türü değeri geçti olarak üretir. Tür başvurusu olmayan, const olmayan, geçici olmayan ya da bir işlevden veya dizi türünden tür işaretçisi yapmaz.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -29,27 +29,27 @@ using decay_t = typename decay<T>::type;
 
 ### <a name="parameters"></a>Parametreler
 
-*T*<br/>
+*ŞI*\
 Değiştirilecek tür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Decay şablon türü bağımsız değişken olarak değere göre geçirildiyse olarak elde edilen türü kullanın. Şablon sınıfı üye typedef `type` aşağıdaki aşamalara tanımlanan bir değiştirilmiş türü tutar:
+Tür değeri bir bağımsız değişken olarak geçirildikçe, sonuç türünü oluşturmak için Decay şablonunu kullanın. TypeDef `type` şablon sınıfı üyesi, aşağıdaki aşamalar içinde tanımlanan bir değiştirilmiş türü tutar:
 
-- Türü `U` olarak tanımlanan `remove_reference<T>::type`.
+- Türü `U` olarak`remove_reference<T>::type`tanımlanır.
 
-- Varsa `is_array<U>::value` true ise değiştirilen türü `type` olduğu `remove_extent<U>::type *`.
+- True ise, değiştirilen tür `type` olur `remove_extent<U>::type *`. `is_array<U>::value`
 
-- Aksi takdirde `is_function<U>::value` true ise değiştirilen türü `type` olduğu `add_pointer<U>::type`.
+- Aksi halde, true ise, değiştirilen tür `type` olur `add_pointer<U>::type`. `is_function<U>::value`
 
-- Aksi takdirde, değiştirilen türü `type` olduğu `remove_cv<U>::type`.
+- Aksi takdirde, değiştirilen tür `type` olur `remove_cv<U>::type`.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** \<type_traits >
+**Üst bilgi:** \<type_traits >
 
-**Namespace:** std
+**Ad alanı:** std
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[<type_traits>](../standard-library/type-traits.md)<br/>
+[<type_traits>](../standard-library/type-traits.md)

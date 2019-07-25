@@ -9,16 +9,16 @@ helpviewer_keywords:
 - std::invoke_result
 - std::invoke_result_t
 - std::invoke_result::type
-ms.openlocfilehash: 7c03240d3ee666fcda30562279a8dbda2ca8dc7b
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 2b2051b0c854151cff9b439f5ec0a951c25a6387
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62404857"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68447635"
 ---
 # <a name="invokeresult-class"></a>invoke_result sınıfı
 
-Belirtilen bağımsız değişken türleri alan derleme zamanında çağrılabilir türü dönüş türünü belirler. C ++ 17'de eklendi.
+Derleme zamanında belirtilen bağımsız değişken türlerini alan çağrılabilir türün dönüş türünü belirler. C++ 17 ' ye eklenmiştir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -33,23 +33,23 @@ template<lass Callable, class... Args>
 
 ### <a name="parameters"></a>Parametreler
 
-*Çağrılabilir*<br/>
-Sorgu için çağrılabilir türü.
+*Çağrılabilir*\
+Sorgulanacak çağrılabilir tür.
 
-*Args*<br/>
-Bağımsız değişken listesi sorguya çağrılabilir türüne türlerini.
+*Args*\
+Sorgu yapılacak çağrılabilir türe bağımsız değişken listesinin türleri.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Sonuç türünü belirlemek için bu şablonu kullanın *Callable*(*Args*...) derleme zamanında burada *Callable* ve tüm türleri *Args* tam bir tür, bilinmeyen bağlı bir dizi veya bir olasılıkla cv nitelenmiş `void`. `type` Şablon sınıfının üye adları dönüş türünü *Callable* bağımsız değişkenler kullanılarak çağrıldığında *Args*... `type` Üye, yalnızca tanımlanan *Callable* çağrıldığında bağımsız değişkenler kullanılarak çağrılabilir *Args*... değerlendirilmemiş bir bağlamda. Aksi takdirde, Şablon sınıfı üyesi yok `type`, derleme zamanında testleri belirli bir bağımsız değişken türlerinin SFINAE sağlar.
+Bu şablonu, derleme zamanında *çağrılabilir (* *args*...) sonuç türünü, *çağrılabilir ve* *bağımsız değişkenler* içindeki tüm türlerin herhangi bir tam tür, bilinmeyen bir dizi veya büyük olasılıkla MF nitelikli `void`olduğunu tespit etmek için kullanın. Şablon sınıfının  üyesi, bağımsız değişken bağımsız değişkenleri kullanılarak çağrıldığında çağrılabilir dönüş türünü adlandırır....  `type` Üye yalnızca adlandırılmış bağımsız değişkenler kullanılarak çağrıldığında *çağrılabilir* *...* `type` değerlendirilmemiştir. Aksi halde, şablon sınıfı, derleme zamanında `type`belirli bir bağımsız değişken türleri kümesi üzerinde SFINAE testlerine izin veren bir üyeye sahip değildir.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** \<type_traits >
+**Üst bilgi:** \<type_traits >
 
-**Namespace:** std
+**Ad alanı:** std
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[<type_traits>](../standard-library/type-traits.md)<br/>
-[çağırma](functional-functions.md#invoke)
+[< type_traits >](../standard-library/type-traits.md)\
+[Resync](functional-functions.md#invoke)

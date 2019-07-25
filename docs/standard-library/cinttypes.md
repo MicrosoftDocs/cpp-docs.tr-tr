@@ -2,16 +2,16 @@
 title: '&lt;cinttypes&gt;'
 ms.date: 11/04/2016
 ms.assetid: 18eb738c-aa74-4ed3-9cdd-049ef4c64b80
-ms.openlocfilehash: ce0da1dd1454c3216d7a4f012f00f3af3cb89daa
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: be2bb16b21c7ea42211d2e04068cb1a32f5beaf4
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62279118"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68459358"
 ---
 # <a name="ltcinttypesgt"></a>&lt;cinttypes&gt;
 
-Standart C Kitaplığı üstbilgisi içerir \<inttypes.h >. Bu üstbilginin dahil yöntemlerine \<cstdint >.
+Standart C Kitaplığı üstbilgisi \<inttypes. h > içerir. Bu üst bilgiyi de dahil \<etmek cstdint > içerir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -21,11 +21,11 @@ Standart C Kitaplığı üstbilgisi içerir \<inttypes.h >. Bu üstbilginin dahi
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu üstbilginin dahil sağlar, standart C Kitaplığı üstbilgisinde harici bağlantı kullanılarak bildirilen adların bildirilir `std` ad alanı.
+Bu üstbilginin dahil edilmesi, standart C Kitaplığı üstbilgisinde harici bağlantı kullanılarak belirtilen adların `std` ad alanında bildirilmesini sağlar.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[\<cstdint >](../standard-library/cstdint.md)<br/>
-[Üstbilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md)<br/>
-[C++ Standart Kitaplığına Genel Bakış](../standard-library/cpp-standard-library-overview.md)<br/>
-[C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
+[\<cstdint >](../standard-library/cstdint.md)\
+[Üst bilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md)\
+[C++Standart kitaplığa genel bakış](../standard-library/cpp-standard-library-overview.md)\
+[C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)

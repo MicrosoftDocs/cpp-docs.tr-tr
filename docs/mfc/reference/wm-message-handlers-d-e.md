@@ -1,5 +1,5 @@
 ---
-title: 'WM_ ileti işleyicileri: D - E'
+title: 'WM_ Ileti Işleyicileri: D - E'
 ms.date: 11/04/2016
 f1_keywords:
 - ON_WM_ERASEBKGND
@@ -31,40 +31,40 @@ helpviewer_keywords:
 - ON_WM_DEVICECHANGE [MFC]
 - WM_ messages [MFC]
 ms.assetid: 56fb89c8-68a8-4adf-883e-a9f63bf677e9
-ms.openlocfilehash: 3ae9ff828f342bc4270c3701ced3e670988c7d54
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 12c785bb1e7e8fab0db237e8150e9e72f5c09ead
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62309297"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68449973"
 ---
-# <a name="wm-message-handlers-d---e"></a>WM_ ileti işleyicileri: D - E
+# <a name="wm-message-handlers-d---e"></a>WM_ Ileti Işleyicileri: D - E
 
-Aşağıdaki eşleme girişleri sol, sağ taraftaki işlev prototipleri karşılık gelir:
+Sol taraftaki aşağıdaki harita girdileri sağdaki işlev prototiptürlerine karşılık gelir:
 
 |Eşleme girişi|İşlev prototipi|
 |---------------|------------------------|
-|ON_WM_DEADCHAR()|afx_msg void [OnDeadChar](../../mfc/reference/cwnd-class.md#ondeadchar)(UINT, UINT, UINT);|
-|ON_WM_DELETEITEM()|afx_msg void [OnDeleteItem](../../mfc/reference/cwnd-class.md#ondeleteitem)(LPDELETEITEMSTRUCT);|
+|ON_WM_DEADCHAR()|afx_msg void [OnDeadChar](../../mfc/reference/cwnd-class.md#ondeadchar)(UINT, UINT, uint);|
+|ON_WM_DELETEITEM()|afx_msg void [OnDeleteItem](../../mfc/reference/cwnd-class.md#ondeleteitem)(Int, LPDELETEıTEMSTRUCT);|
 |ON_WM_DESTROY()|afx_msg void [OnDestroy](../../mfc/reference/cwnd-class.md#ondestroy)();|
-|ON_WM_DESTROYCLIPBOARD()|afx_msg void [OnDestroyClipboard](../../mfc/reference/cwnd-class.md#ondestroyclipboard)();|
-|ON_WM_DEVICECHANGE()|afx_msg void [OnDeviceChange](../../mfc/reference/cwnd-class.md#ondevicechange)(UINT, DWORD);|
-|ON_WM_DEVMODECHANGE()|afx_msg void [OnDevModeChange](../../mfc/reference/cwnd-class.md#ondevmodechange)(LPSTR);|
+|ON_WM_DESTROYCLIPBOARD()|afx_msg void [Ondestroyıclipboard](../../mfc/reference/cwnd-class.md#ondestroyclipboard)();|
+|ON_WM_DEVICECHANGE()|afx_msg void [Ondevicechange](../../mfc/reference/cwnd-class.md#ondevicechange)(UINT, DWORD);|
+|ON_WM_DEVMODECHANGE()|afx_msg void [Ondevmodechange](../../mfc/reference/cwnd-class.md#ondevmodechange)(LPSTR);|
 |ON_WM_DRAWCLIPBOARD()|afx_msg void [OnDrawClipboard](../../mfc/reference/cwnd-class.md#ondrawclipboard)();|
-|ON_WM_DRAWITEM()|afx_msg void [Ondrawıtem](../../mfc/reference/cwnd-class.md#ondrawitem)(LPDRAWITEMSTRUCT);|
-|ON_WM_DROPFILES()|afx_msg void [OnDropFiles](../../mfc/reference/cwnd-class.md#ondropfiles)(HDROP);|
-|ON_WM_DWMCOLORIZATIONCOLORCHANGED()|afx_msg void [OnColorizationColorChanged](../../mfc/reference/cwnd-class.md#oncolorizationcolorchanged)(DWORD, BOOL);|
-|ON_WM_DWMCOMPOSITIONCHANGED()|afx_msg void [OnCompositionChanged](../../mfc/reference/cwnd-class.md#oncompositionchanged)();|
-|ON_WM_DWMNCRENDERINGCHANGED()|afx_msg void [OnNcRenderingChanged](../../mfc/reference/cwnd-class.md#onncrenderingchanged)(Boole);|
-|ON_WM_DWMWINDOWMAXIMIZEDCHANGE()|afx_msg void [OnWindowMaximizedChanged](../../mfc/reference/cwnd-class.md#onwindowmaximizedchanged)(BOOL);|
-|ON_WM_ENABLE()|afx_msg void [OnEnable](../../mfc/reference/cwnd-class.md#onenable)(Boole);|
-|ON_WM_ENDSESSION()|afx_msg void [OnEndSession](../../mfc/reference/cwnd-class.md#onendsession)(Boole);|
-|ON_WM_ENTERIDLE()|afx_msg void [OnEnterIdle](../../mfc/reference/cwnd-class.md#onenteridle)(UINT, CWnd *);|
-|ON_WM_ENTERSIZEMOVE()|afx_msg void [OnEnterSizeMove](../../mfc/reference/cwnd-class.md#onentersizemove)();|
-|ON_WM_ERASEBKGND()|BOOL afx_msg [OnEraseBkgnd](../../mfc/reference/cwnd-class.md#onerasebkgnd)(CDC *);|
-|ON_WM_EXITSIZEMOVE()|afx_msg void [OnExitSizeMove](../../mfc/reference/cwnd-class.md#onexitsizemove)();|
+|ON_WM_DRAWITEM()|afx_msg void [OnDrawItem](../../mfc/reference/cwnd-class.md#ondrawitem)(lpdrawitemstruct);|
+|ON_WM_DROPFILES()|afx_msg void [Ondropfiles](../../mfc/reference/cwnd-class.md#ondropfiles)(HDROP);|
+|ON_WM_DWMCOLORIZATIONCOLORCHANGED()|afx_msg void [Oncolorizationcolorchanged](../../mfc/reference/cwnd-class.md#oncolorizationcolorchanged)(DWORD, bool);|
+|ON_WM_DWMCOMPOSITIONCHANGED()|afx_msg void [Onkompozisyontionchanged](../../mfc/reference/cwnd-class.md#oncompositionchanged)();|
+|ON_WM_DWMNCRENDERINGCHANGED()|afx_msg void [Onncrenderingchanged](../../mfc/reference/cwnd-class.md#onncrenderingchanged)(bool);|
+|ON_WM_DWMWINDOWMAXIMIZEDCHANGE()|afx_msg void [Onwindowmaximizedchanged](../../mfc/reference/cwnd-class.md#onwindowmaximizedchanged)(bool);|
+|ON_WM_ENABLE()|afx_msg void [OnEnable](../../mfc/reference/cwnd-class.md#onenable)(bool);|
+|ON_WM_ENDSESSION()|afx_msg void [OnEndSession](../../mfc/reference/cwnd-class.md#onendsession)(bool);|
+|ON_WM_ENTERIDLE()|afx_msg void [Onenterıdle](../../mfc/reference/cwnd-class.md#onenteridle)(UINT, CWnd *);|
+|ON_WM_ENTERSIZEMOVE()|afx_msg void [Onentersizemove](../../mfc/reference/cwnd-class.md#onentersizemove)();|
+|ON_WM_ERASEBKGND()|afx_msg BOOL [Onsilinebilir Sebkplan](../../mfc/reference/cwnd-class.md#onerasebkgnd)(CDC *);|
+|ON_WM_EXITSIZEMOVE()|afx_msg void [Onexitsizemove](../../mfc/reference/cwnd-class.md#onexitsizemove)();|
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[İleti eşlemeleri](../../mfc/reference/message-maps-mfc.md)<br/>
+[İleti haritaları](../../mfc/reference/message-maps-mfc.md)<br/>
 [WM_ İletileri için İşleyiciler](../../mfc/reference/handlers-for-wm-messages.md)

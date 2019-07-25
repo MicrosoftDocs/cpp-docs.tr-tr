@@ -6,38 +6,38 @@ f1_keywords:
 helpviewer_keywords:
 - type_index class
 ms.assetid: db366119-74cb-43e8-aacf-9679e561fa2f
-ms.openlocfilehash: 8807a041ab1c6ef47a9c3c12dac2688f121f6cfa
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b30c9719957b9ffc5f3ce17692eb90c1b266ae0f
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62278968"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68447050"
 ---
 # <a name="typeindex-class"></a>type_index Sınıfı
 
-`type_index` Sınıfı için bir işaretçi sarar [type_info sınıfı](../cpp/type-info-class.md) bu tür nesneler tarafından dizin oluşturma işleminde yardımcı olmak için.
+Sınıfı `type_index` , bu tür nesneler tarafından dizin oluşturmaya yardımcı olmak için bir işaretçi [type_info sınıfına](../cpp/type-info-class.md) kaydırılır.
 
-type_index sınıfı {public: type_index (const type_info & tinfo); const char *name() const; size_t hash_code() const bool işleci (const type_info & sağa) == const; bool işleci! (const type_info & sağa) = const; bool işleci <(const type_ bilgi & sağa) const; bool işleci\<(const type_info & sağa) = const; bool işleci > (const type_info & sağa) const; bool işleci > (const type_info & sağa) = const;};
+Class type_index {public: type_index (const type_info & tInfo); const char * Name () const; size_t hash_code () const; bool işleç = = (const type_info & Right) const; bool işleci! = (const type_info & Right) const; bool işleci < (const type_ bilgi & Right) const; bool işleç\<= (const type_info & Right) const; bool işleci > (const type_info & Right) const; bool işleci > = (const type_info & Right) const;};
 
-Oluşturucu başlatır `ptr` için `&tinfo`.
+Oluşturucu öğesine `ptr` `&tinfo`başlatılır.
 
-`name` döndürür `ptr->name()`.
+`name`döndürür `ptr->name()`.
 
-`hash_code` döndürür `ptr->hash_code().`
+`hash_code`döndürdüğü`ptr->hash_code().`
 
-`operator==` döndürür `*ptr == right.ptr`.
+`operator==`döndürür `*ptr == right.ptr`.
 
-`operator!=` döndürür `!(*this == right)`.
+`operator!=`döndürür `!(*this == right)`.
 
-`operator<` döndürür `*ptr->before(*right.ptr)`.
+`operator<`döndürür `*ptr->before(*right.ptr)`.
 
-`operator<=` döndürür `!(right < *this).`
+`operator<=`döndürdüğü`!(right < *this).`
 
-`operator>` döndürür `right < *this`.
+`operator>`döndürür `right < *this`.
 
-`operator>=` döndürür `!(*this < right)`.
+`operator>=`döndürür `!(*this < right)`.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Çalışma Zamanı Tür Bilgileri](../cpp/run-time-type-information.md)<br/>
-[\<typeindex >](../standard-library/typeindex.md)<br/>
+[Çalışma zamanı tür bilgileri](../cpp/run-time-type-information.md)\
+[\<typeındex >](../standard-library/typeindex.md)

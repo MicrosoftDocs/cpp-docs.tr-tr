@@ -7,12 +7,12 @@ helpviewer_keywords:
 - remove_const class
 - remove_const
 ms.assetid: feb76fb3-9228-41d6-80f6-2fbb04daec43
-ms.openlocfilehash: 04f7c6475d88f843ef381563f80559529e6b59e4
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 0091c77d33e1fcd2be5b361680c9422210866be2
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62368974"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68451352"
 ---
 # <a name="removeconst-class"></a>remove_const Sınıfı
 
@@ -32,12 +32,12 @@ using remove_const_t = typename remove_const<T>::type;
 
 ### <a name="parameters"></a>Parametreler
 
-*T*<br/>
+*ŞI*\
 Değiştirilecek tür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Örneği `remove_const<T>` bir değişiklik-tür tutar `T1` olduğunda *T* biçimindedir `const T1`, aksi takdirde *T*.
+`remove_const<T>` Bir örneği, *t* formu `T1` `const T1`olduğunda, yoksa *t*olarak değiştirilmiş bir türü tutar.
 
 ## <a name="example"></a>Örnek
 
@@ -63,12 +63,12 @@ remove_const_t<const int> == int
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** \<type_traits >
+**Üst bilgi:** \<type_traits >
 
-**Namespace:** std
+**Ad alanı:** std
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[<type_traits>](../standard-library/type-traits.md)<br/>
-[add_const Sınıfı](../standard-library/add-const-class.md)<br/>
-[remove_cv Sınıfı](../standard-library/remove-cv-class.md)<br/>
+[< type_traits >](../standard-library/type-traits.md)\
+[add_const sınıfı](../standard-library/add-const-class.md)\
+[remove_cv Sınıfı](../standard-library/remove-cv-class.md)

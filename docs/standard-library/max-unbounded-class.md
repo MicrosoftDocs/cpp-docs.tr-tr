@@ -16,16 +16,16 @@ helpviewer_keywords:
 - stdext::max_unbounded [C++], released
 - stdext::max_unbounded [C++], saved
 ms.assetid: e34627a9-c231-4031-a483-cbb0514fff46
-ms.openlocfilehash: ba99d6ed3af34363bf88cde1a40e4bf37841cd8d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: cea2f09837e5efc6969e4ab305d106b9c9728412
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62412923"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68447213"
 ---
 # <a name="maxunbounded-class"></a>max_unbounded Sınıfı
 
-Açıklar bir [sınıfı en fazla](../standard-library/allocators-header.md) maksimum uzunluğunu sınırlamaz nesne bir [freelist](../standard-library/freelist-class.md) nesne.
+[Freelist](../standard-library/freelist-class.md) nesnesinin maksimum uzunluğunu sınırlayan bir [Max Class](../standard-library/allocators-header.md) nesnesi tanımlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -37,21 +37,21 @@ class max_unbounded
 
 |Üye işlevi|Açıklama|
 |-|-|
-|[ayrılmış](#allocated)|Ayrılmış bellek bloğu sayısını artırır.|
-|[Serbest bırakıldı](#deallocated)|Azaltır, bellek bloğu sayısı tahsis edilir.|
-|[Tam](#full)|Daha fazla bellek blokları serbest listeye eklenmesi gerekip gerekmediğini belirten bir değeri döndürür.|
-|[Yayımlanan](#released)|Boş liste bellek sayısı engeller azaltır.|
-|[kaydedildi](#saved)|Boş listede bellek bloğu sayısını artırır.|
+|[ayrılabilir](#allocated)|Ayrılan bellek bloklarının sayısını artırır.|
+|[iptal](#deallocated)|Ayrılan bellek bloklarının sayısını azaltır.|
+|[tümünü](#full)|Boş listeye daha fazla bellek bloğu eklenip eklenmeyeceğini belirten bir değer döndürür.|
+|[yayımlanacak](#released)|, Ücretsiz listedeki bellek bloklarının sayısını azaltır.|
+|[kaydedildiğini](#saved)|Ücretsiz listedeki bellek bloklarının sayısını artırır.|
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** \<ayırıcılar >
+**Üst bilgi:** \<ayrıcılar >
 
-**Namespace:** stdext
+**Ad alanı:** stdext
 
-## <a name="allocated"></a>  max_unbounded::allocated
+## <a name="allocated"></a>max_unbounded:: ayrılmış
 
-Ayrılmış bellek bloğu sayısını artırır.
+Ayrılan bellek bloklarının sayısını artırır.
 
 ```cpp
 void allocated(std::size_t _Nx = 1);
@@ -65,11 +65,11 @@ void allocated(std::size_t _Nx = 1);
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlev hiçbir şey yapmaz. Her başarılı çağrı tarafından sonra adlı `cache_freelist::allocate` işleci **yeni**. Bağımsız değişken *_Nx* öbek işleci tarafından ayrılan bellek bloğu sayısı **yeni**.
+Bu üye işlevi hiçbir şey yapmaz. Her başarılı çağrıdan `cache_freelist::allocate` sonra **New**işlecine kadar çağrılır. *_Nx* bağımsız değişkeni, **New**işlecine göre ayrılan öbekteki bellek bloklarının sayısıdır.
 
-## <a name="deallocated"></a>  max_unbounded::deallocated
+## <a name="deallocated"></a>max_unbounded::d eayrılan
 
-Azaltır, bellek bloğu sayısı tahsis edilir.
+Ayrılan bellek bloklarının sayısını azaltır.
 
 ```cpp
 void deallocated(std::size_t _Nx = 1);
@@ -83,11 +83,11 @@ void deallocated(std::size_t _Nx = 1);
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlev hiçbir şey yapmaz. Bu üye işlevi, her bir çağrı tarafından sonra çağrılan `cache_freelist::deallocate` işleci **Sil**. Bağımsız değişken *_Nx* işleci ile serbest Öbek bellek bloğu sayısı **Sil**.
+Üye işlevi hiçbir şey yapmaz. Bu üye işlevi, her çağrıdan `cache_freelist::deallocate` sonra işleç **Delete**'e kadar çağrılır. *_Nx* bağımsız değişkeni, işleç **silme**tarafından serbest bırakılmış öbek içindeki bellek bloklarının sayısıdır.
 
-## <a name="full"></a>  max_unbounded::Full
+## <a name="full"></a>max_unbounded:: Full
 
-Daha fazla bellek blokları serbest listeye eklenmesi gerekip gerekmediğini belirten bir değeri döndürür.
+Boş listeye daha fazla bellek bloğu eklenip eklenmeyeceğini belirten bir değer döndürür.
 
 ```cpp
 bool full();
@@ -95,15 +95,15 @@ bool full();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Üye işlevi her zaman döndürür **false**.
+Üye işlev her zaman **false**döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi çağıran `cache_freelist::deallocate`. Çağrısında **true**, `deallocate` false döndürürse, bellek bloğu boş liste; koyar `deallocate` çağrıları işleci **Sil** ayırması için blok.
+Bu üye işlevi tarafından `cache_freelist::deallocate`çağrılır. Çağrı **true**döndürürse, `deallocate` bellek bloğunu ücretsiz listeye koyar; yanlış döndürürse, `deallocate` blok serbest bırakmak için işleç **silme** yöntemini çağırır.
 
-## <a name="released"></a>  max_unbounded::released
+## <a name="released"></a>max_unbounded:: yayınlandı
 
-Boş liste bellek sayısı engeller azaltır.
+, Ücretsiz listedeki bellek bloklarının sayısını azaltır.
 
 ```cpp
 void released();
@@ -111,11 +111,11 @@ void released();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlev hiçbir şey yapmaz. `released` Geçerli max sınıfının üye işlevi çağrıldığında `cache_freelist::allocate` olduğunda, bir bellek bloğu boş listeden kaldırır.
+Bu üye işlevi hiçbir şey yapmaz. Geçerli Max sınıfının `cache_freelist::allocate` üyeişlevi,boşlistedenbirbellekbloğunuher`released` kaldırdığında tarafından çağrılır.
 
-## <a name="saved"></a>  max_unbounded::Saved
+## <a name="saved"></a>max_unbounded:: kaydedildi
 
-Boş listede bellek bloğu sayısını artırır.
+Ücretsiz listedeki bellek bloklarının sayısını artırır.
 
 ```cpp
 void saved();
@@ -123,8 +123,8 @@ void saved();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlev hiçbir şey yapmaz. Tarafından çağrılır `cache_freelist::deallocate` zaman bunu koyar bir bellek bloğu boş liste.
+Bu üye işlevi hiçbir şey yapmaz. Bu, `cache_freelist::deallocate` her bir bellek bloğunu ücretsiz listeye yerleştirdiğinde çağrılır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[\<Ayırıcılar >](../standard-library/allocators-header.md)<br/>
+[\<ayrıcılar >](../standard-library/allocators-header.md)

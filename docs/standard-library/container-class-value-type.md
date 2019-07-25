@@ -4,19 +4,19 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - value_type typedef
 ms.assetid: e89d5a71-b48c-47fa-aa78-682243e6e97f
-ms.openlocfilehash: bba94e290e691c807d9db7f40f2fa6f0d3c7965b
-ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.openlocfilehash: 5a1dc2ade6daaa79e0dc56f4c1a5be85abeda99a
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65221348"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68450716"
 ---
 # <a name="container-classvaluetype"></a>Kapsayıcı Sınıfı::value_type
 
 > [!NOTE]
-> Bu konu Microsoft olan C++ kullanılan kapsayıcıları işlevsiz bir örnek olarak belgeleri C++ standart kitaplığı. Daha fazla bilgi için [C++ Standart Kitaplığı kapsayıcıları](../standard-library/stl-containers.md).
+> Bu konu, C++ standart kitaplıkta kullanılan C++ kapsayıcıların Işlevsel bir örneği olarak Microsoft belgelerimde yer almaktadır. Daha fazla bilgi için bkz [ C++ . standart kitaplık kapsayıcıları](../standard-library/stl-containers.md).
 
-Şablon parametresi için bir eşanlamlı davranır *Ty*.
+Şablon parametresi *Ty*için bir eş anlamlı yapar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -27,8 +27,8 @@ typedef T4 value_type;
 
 ## <a name="remarks"></a>Açıklamalar
 
-Açıklanmıştır belirtilmeyen türünün eşanlamlısı olarak burada `T4` (genellikle `Alloc::value_type`).
+Burada belirtilmeyen tür `T4` için bir eş anlamlı olarak açıklanmaktadır (genellikle `Alloc::value_type`).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Örnek Kapsayıcı Sınıfı](../standard-library/sample-container-class.md)<br/>
+[Örnek Kapsayıcı Sınıfı](../standard-library/sample-container-class.md)

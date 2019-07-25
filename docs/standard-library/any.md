@@ -1,26 +1,26 @@
 ---
-title: '&lt;Tüm&gt;'
+title: '&lt;kaydedilmemiş&gt;'
 ms.date: 04/04/2019
 f1_keywords:
 - <any>
 helpviewer_keywords:
 - <any>
-ms.openlocfilehash: 169e44880c98248dc1941ccc8c9adfe05f76f358
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.openlocfilehash: 19e30b1ab0a9b0f30c1a4f3d4b614643cb8b50ac
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68267951"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68456278"
 ---
-# <a name="ltanygt"></a>&lt;Tüm&gt;
+# <a name="ltanygt"></a>&lt;kaydedilmemiş&gt;
 
-Sınıf ve birkaç destekleyen işlevleri ve sınıfları tanımlar.
+Herhangi bir ve birkaç destekleyici işlev ve sınıf sınıfını tanımlar.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** \<herhangi >
+**Üst bilgi:** \<herhangi bir >
 
-**Namespace:** std
+**Ad alanı:** std
 
 ## <a name="members"></a>Üyeler
 
@@ -28,17 +28,17 @@ Sınıf ve birkaç destekleyen işlevleri ve sınıfları tanımlar.
 
 |||
 |-|-|
-|[any_cast](../standard-library/any-functions.md#any_cast)|Herhangi bir nesnede bir hale getirir.|
+|[any_cast](../standard-library/any-functions.md#any_cast)|Nesnesine bir nesnesi oluşturur.|
 |[make_any](../standard-library/any-functions.md#make_any)|Değerleri alır ve herhangi bir nesne oluşturur.|
-|[değiştirme](../standard-library/any-functions.md#swap)|İki nesne öğelerini her değiştirir.|
+|[Kur](../standard-library/any-functions.md#swap)|İki nesnenin öğelerini her bir değiş tokuş eder.|
 
 ### <a name="classes"></a>Sınıflar
 
 |||
 |-|-|
-|[Tüm](../standard-library/any-class.md)|Oluşturucu gereksinimlerini karşılayan veya herhangi bir değere sahip herhangi bir tür depolar.|
-|[bad_any_cast](../standard-library/bad-any-cast-class.md)|Başarısız tarafından oluşturulan nesneleri `any_cast`.|
+|[kaydedilmemiş](../standard-library/any-class.md)|Oluşturucu gereksinimlerini karşılayan veya hiçbir değere sahip olmayan her türlü türü depolar.|
+|[bad_any_cast](../standard-library/bad-any-cast-class.md)|Bir tarafından oluşturulan nesneler başarısız `any_cast`oldu.|
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Üstbilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md)<br/>
+[Üst bilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md)

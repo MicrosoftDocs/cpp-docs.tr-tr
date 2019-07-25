@@ -6,16 +6,16 @@ f1_keywords:
 helpviewer_keywords:
 - cwctype header
 ms.assetid: 46476f95-b8c3-4ab2-a172-9a1be91124b7
-ms.openlocfilehash: f6a754a96200e235cfc278746b1f0e5fc4ce018d
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.openlocfilehash: 26fbefa7dbaf68ac559e79c702a5a7a2c31266a2
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68243629"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68450599"
 ---
 # <a name="ltcwctypegt"></a>&lt;cwctype&gt;
 
-Standart C Kitaplığı üstbilgisi içerir \<wctype.h > ve ilişkili adlar ekler `std` ad alanı.
+Standart C Kitaplığı üstbilgisi \<wctype. h > içerir ve ilişkili adları `std` ad alanına ekler.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -25,7 +25,7 @@ Standart C Kitaplığı üstbilgisi içerir \<wctype.h > ve ilişkili adlar ekle
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu üstbilginin dahil sağlar, standart C Kitaplığı üstbilgisinde harici bağlantı kullanılarak bildirilen adların bildirilir `std` ad alanı.
+Bu üstbilginin dahil edilmesi, standart C Kitaplığı üstbilgisinde harici bağlantı kullanılarak belirtilen adların `std` ad alanında bildirilmesini sağlar.
 
 ## <a name="constants"></a>Sabitler
 
@@ -64,6 +64,6 @@ wctrans_t wctrans(const char* property);
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Üstbilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md)<br/>
-[C++ Standart Kitaplığına Genel Bakış](../standard-library/cpp-standard-library-overview.md)<br/>
-[C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
+[Üst bilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md)\
+[C++Standart kitaplığa genel bakış](../standard-library/cpp-standard-library-overview.md)\
+[C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)

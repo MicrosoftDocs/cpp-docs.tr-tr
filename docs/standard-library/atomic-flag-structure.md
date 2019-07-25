@@ -6,16 +6,16 @@ f1_keywords:
 - atomic/std::atomic_flag::clear
 - atomic/std::atomic_flag::test_and_set
 ms.assetid: 17f0c2f5-fd39-4a44-873a-b569720a670e
-ms.openlocfilehash: 13af0c26b765aa7ebbbd1ec22b5a0ed1b8cce0ec
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 36944c3c3bdc58272d87bbcdfb119d1c52c43995
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62377263"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68447397"
 ---
 # <a name="atomicflag-structure"></a>atomic_flag Yapısı
 
-Atomik olarak ayarlayan ve temizleyen bir nesneyi tanımlayan bir **bool** bayrağı. Atomik bayraklar üzerinde yapılan işlemler her zaman kilitsizdir.
+Bir **bool** bayrağını sıradan olarak ayarlayan ve temizleyen bir nesneyi tanımlar. Atomik bayraklar üzerinde işlemler her zaman kilit ücretsizdir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -29,22 +29,22 @@ struct atomic_flag;
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[Temizle](#clear)|Saklı bayrağı ayarlar **false**.|
-|[test_and_set](#test_and_set)|Saklı bayrağı ayarlar **true** ve ilk bayrak değerini döndürür.|
+|[lediğiniz](#clear)|Saklı bayrağını **false**olarak ayarlar.|
+|[test_and_set](#test_and_set)|Saklı bayrağını **true** olarak ayarlar ve ilk bayrak değerini döndürür.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-`atomic_flag` nesneleri üye olmayan işlevlere geçirilebilir [atomic_flag_clear](../standard-library/atomic-functions.md#atomic_flag_clear), [atomic_flag_clear_explicit](../standard-library/atomic-functions.md#atomic_flag_clear_explicit), [atomic_flag_test_and_set](../standard-library/atomic-functions.md#atomic_flag_test_and_set), ve [atomik _flag_test_and_set_explicit](../standard-library/atomic-functions.md#atomic_flag_test_and_set_explicit). Değeri kullanılarak başlatılabilir `ATOMIC_FLAG_INIT`.
+`atomic_flag`nesneler [atomic_flag_clear](../standard-library/atomic-functions.md#atomic_flag_clear), [atomic_flag_clear_explicit](../standard-library/atomic-functions.md#atomic_flag_clear_explicit), [atomic_flag_test_and_set](../standard-library/atomic-functions.md#atomic_flag_test_and_set)ve [atomic_flag_test_and_set_explicit](../standard-library/atomic-functions.md#atomic_flag_test_and_set_explicit)üye olmayan işlevlere geçirilebilir. Bu değerler `ATOMIC_FLAG_INIT`kullanılarak başlatılabilir.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** \<atomik >
+**Üst bilgi:** \<atomik >
 
-**Namespace:** std
+**Ad alanı:** std
 
-## <a name="clear"></a>  atomic_flag::Clear
+## <a name="clear"></a>atomic_flag:: Clear
 
-Kümeleri **bool** depolanan bayrağı `*this` için **false**, dahilinde belirtilen [memory_order](../standard-library/atomic-enums.md#memory_order_enum) kısıtlamaları.
+Belirtilen [memory_order](../standard-library/atomic-enums.md#memory_order_enum) kısıtlamaları içinde, `*this` içinde depolanan **bool** bayrağını **false**olarak ayarlar.
 
 ```cpp
 void atomic_flag::clear(memory_order Order = memory_order_seq_cst) volatile noexcept;
@@ -53,12 +53,12 @@ void atomic_flag::clear(memory_order Order = memory_order_seq_cst) noexcept;
 
 ### <a name="parameters"></a>Parametreler
 
-*Sırası*<br/>
-A [memory_order](../standard-library/atomic-enums.md#memory_order_enum).
+*Siparişi*\
+Bir [memory_order](../standard-library/atomic-enums.md#memory_order_enum).
 
-## <a name="test_and_set"></a>  atomic_flag::test_and_set
+## <a name="test_and_set"></a>atomic_flag::test_and_set
 
-Kümeleri **bool** depolanan bayrağı `*this` için **true**, dahilinde belirtilen [memory_order](../standard-library/atomic-enums.md#memory_order_enum) kısıtlamaları.
+Belirtilen [memory_order](../standard-library/atomic-enums.md#memory_order_enum) kısıtlamaları içinde, **true** `*this` olarak depolanan **bool** bayrağını ayarlar.
 
 ```cpp
 bool atomic_flag::test_and_set(memory_order Order = memory_order_seq_cst) volatile noexcept;
@@ -67,13 +67,13 @@ bool atomic_flag::test_and_set(memory_order Order = memory_order_seq_cst) noexce
 
 ### <a name="parameters"></a>Parametreler
 
-*Sırası*<br/>
-A [memory_order](../standard-library/atomic-enums.md#memory_order_enum).
+*Siparişi*\
+Bir [memory_order](../standard-library/atomic-enums.md#memory_order_enum).
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Saklanan bayrağın ilk değeri `*this`.
+İçinde `*this`depolanan bayrağın başlangıç değeri.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[\<atomik >](../standard-library/atomic.md)<br/>
+[\<Atomik >](../standard-library/atomic.md)
