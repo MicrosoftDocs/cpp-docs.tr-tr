@@ -1,62 +1,62 @@
 ---
-title: "Nasıl yapılır: Visual Studio'yu yapılandırma C++ platformları hedef 64-Bit için x64 projeleri"
+title: 'Nasıl yapılır: Visual Studio C++ projelerini 64 bit, x64 platformları hedefleyecek şekilde yapılandırma'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - platforms [C++], 64-bit
 - 64-bit programming [C++], configuring projects
 - project configurations [C++]
 ms.assetid: 2b9ae001-df36-4750-83b2-982145d632ad
-ms.openlocfilehash: a063c2f333a755ab86a4f91c9d14d0c65a6d1414
-ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
+ms.openlocfilehash: 762fd5d6ddbb55713cf2fc5e34cb33fb91b08eb9
+ms.sourcegitcommit: ce3393846c86e7905ff0c86e4cd6610476809585
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2019
-ms.locfileid: "65446402"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68492236"
 ---
-# <a name="how-to-configure-visual-studio-c-projects-to-target-64-bit-x64-platforms"></a>Nasıl yapılır: Visual Studio'yu yapılandırma C++ platformları hedef 64-Bit için x64 projeleri
+# <a name="how-to-configure-visual-studio-c-projects-to-target-64-bit-x64-platforms"></a>Nasıl yapılır: Visual Studio C++ projelerini 64 bit, x64 platformları hedefleyecek şekilde yapılandırma
 
-Visual Studio IDE'de proje yapılandırmalarını, 64-bit, hedeflemek için C++ uygulamaları x64 platformları ayarlamak için kullanabilirsiniz. Ayrıca, bir 64-bit proje yapılandırması Win32 Proje ayarlarını geçirebilirsiniz.
+Visual Studio IDE 'deki proje yapılandırmalarının, C++ uygulamaları 64 bit, x64 platformları hedefleyecek şekilde ayarlamak için kullanabilirsiniz. Ayrıca, Win32 Proje ayarlarını 64 bitlik bir proje yapılandırmasına geçirebilirsiniz.
 
-### <a name="to-set-up-c-applications-to-target-64-bit-platforms"></a>64 bit platformlarını hedeflemek için C++ uygulamalar ayarlamak için
+### <a name="to-set-up-c-applications-to-target-64-bit-platforms"></a>C++ Uygulamaları 64 bitlik platformları hedefleyecek şekilde ayarlamak için
 
-1. Yapılandırmak istediğiniz C++ projesini açın.
+1. Yapılandırmak istediğiniz C++ projeyi açın.
 
-1. Proje özellik sayfalarını açın. Daha fazla bilgi için [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](working-with-project-properties.md).
-
-   > [!NOTE]
-   > .NET projeleri için emin **yapılandırma özellikleri** düğüm veya alt düğümlerinden biri seçildiğinde,  **\<Projectname > özellik sayfaları** iletişim kutusu; Aksi takdirde  **Configuration Manager** düğmesi kullanılabilir kalır.
-
-1. Seçin **Configuration Manager** açmak için düğmeyi **Configuration Manager** iletişim kutusu.
-
-1. İçinde **etkin çözüm platformu** aşağı açılan listesinden  **\<yeni … >** açmak için seçeneği **yeni çözüm platformu** iletişim kutusu.
-
-1. İçinde **yazın veya seçin yeni platformu** açılır listede, select 64 bit hedef platformu.
+1. Bu projenin özellik sayfalarını açın. Daha fazla bilgi için bkz [. C++ Visual Studio 'da derleyici ve derleme özelliklerini ayarlama](working-with-project-properties.md).
 
    > [!NOTE]
-   > İçinde **yeni çözüm platformu** kullanabileceğiniz iletişim kutusu, **kopyalama ayarlarından** mevcut proje ayarları yeni bir 64-bit proje yapılandırması kopyalamak için seçenek.
+   > .NET projeleri için, **yapılandırma özellikleri** düğümünün veya alt düğümlerinden birinin,  **\<ProjectName > Özellik sayfaları** iletişim kutusunda seçildiğinden emin olun; Aksi takdirde **Configuration Manager** düğmesi kalır mıyor.
 
-1. Seçin **Tamam** düğmesi. Önceki adımda seçtiğiniz platform altında görünür **etkin çözüm platformu** içinde **Configuration Manager** iletişim kutusu.
+1. **Configuration Manager** iletişim kutusunu açmak için **Configuration Manager** düğmesini seçin.
 
-1. Seçin **Kapat** düğmesine **Configuration Manager** iletişim kutusuna ve ardından **Tamam** düğmesine  **\<Projectname > Özellik sayfaları** iletişim kutusu.
+1. **Etkin çözüm platformu** açılan listesinde **\<yeni... seçeneğini belirleyin.** **yeni çözüm platformu** iletişim kutusunu açmak için > seçeneği.
 
-### <a name="to-copy-win32-project-settings-into-a-64-bit-project-configuration"></a>Win32 Proje ayarları bir 64-bit proje yapılandırması kopyalamak için
+1. **Yeni platform açılır listesini yazın veya seçin** , 64 bit hedef platformu seçin.
 
-- Zaman **yeni çözüm platformu** iletişim kutusu, hedef bir 64-bit platformu için bir proje içinde ayarlayabilirsiniz ancak açıksa **Ayarları Şuradan Kopyala** aşağı açılan listesinden **Win32**. Bu proje ayarlarını proje düzeyinde otomatik olarak güncelleştirilir:
+   > [!NOTE]
+   > **Yeni çözüm platformu** iletişim kutusunda, mevcut proje ayarlarını yeni 64-bit proje yapılandırmasına kopyalamak Için **Ayarları Kopyala** seçeneğini kullanabilirsiniz.
 
-  - [/Makine](reference/machine-specify-target-platform.md) bağlayıcı seçeneğini ayarlamak **/MACHINE:X 64**.
+1. Seçin **Tamam** düğmesi. Önceki adımda seçtiğiniz platform, **Configuration Manager** Iletişim kutusunda **etkin çözüm platformu** altında görüntülenir.
 
-  - **Çıkışı Kaydet** olan kapalı. Daha fazla bilgi için [bağlayıcı özellik sayfaları](reference/linker-property-pages.md).
+1. **Configuration Manager** iletişim kutusunda **Kapat** düğmesini seçin ve sonra  **\<ProjectName > Özellik sayfaları** iletişim kutusunda **Tamam** düğmesini seçin.
 
-  - **Hedef ortam** ayarlanır **/env x64**. Daha fazla bilgi için [MIDL özellik sayfaları: Genel](reference/midl-property-pages-general.md).
+### <a name="to-copy-win32-project-settings-into-a-64-bit-project-configuration"></a>Win32 Proje ayarlarını 64 bitlik bir proje yapılandırmasına kopyalamak için
 
-  - **Parametreleri doğrula** temizlenir ve varsayılan değerine sıfırlayın. Daha fazla bilgi için [MIDL özellik sayfaları: Gelişmiş](reference/midl-property-pages-advanced.md).
+- **Yeni çözüm platformu** iletişim kutusu açık olduğunda, bir projeyi bir 64-bit platformunu hedeflemek üzere ayarlarken, ayarları açılan listeden **Kopyala** listesinden **Win32**öğesini seçin. Bu proje ayarları proje düzeyinde otomatik olarak güncelleştirilir:
 
-  - Varsa **hata ayıklama bilgi biçimi** ayarlandı **/zi** Win32 Proje yapılandırmasında sonra ayarlanmış **/zi** 64-bit proje yapılandırmasında. Daha fazla bilgi için [/z7, / zi, /zı (hata ayıklama bilgileri biçimi)](reference/z7-zi-zi-debug-information-format.md).
+  - [/Machine](reference/machine-specify-target-platform.md) bağlayıcı seçeneği **/Machine: x64**olarak ayarlanır.
+
+  - **Çıktıyı kaydet** kapatılmış. Daha fazla bilgi için bkz. [bağlayıcı özellik sayfaları](reference/linker-property-pages.md).
+
+  - **Hedef ortam** , **/env x64**olarak ayarlanmıştır. Daha fazla bilgi için bkz. [MIDL özellik sayfaları](reference/midl-property-pages.md).
+
+  - **Validate parametreleri** temizlenir ve varsayılan değere sıfırlanır. Daha fazla bilgi için bkz. [MIDL özellik sayfaları](reference/midl-property-pages.md).
+
+  - **Hata ayıklama bilgi biçimi** Win32 proje yapılandırmasında **/Zi** olarak ayarlandıysa, 64 bit proje yapılandırmasında **/Zi** olarak ayarlanır. Daha fazla bilgi için bkz. [/Z7,/Zi,/ZI (hata ayıklama bilgileri biçimi)](reference/z7-zi-zi-debug-information-format.md).
 
   > [!NOTE]
-  > Bu proje özellikleri hiçbiri dosya düzeyine kılınırsa değiştirilir.
+  > Bu proje özelliklerinden hiçbiri dosya düzeyinde geçersiz kılınırsa değiştirilmez.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C++ projeleri için 64 bit x64 yapılandırma hedefleri](configuring-programs-for-64-bit-visual-cpp.md)<br/>
+[Projeleri C++ 64-bit, x64 hedefleri için yapılandırma](configuring-programs-for-64-bit-visual-cpp.md)<br/>
 [64 Bit Uygulamalarda Hata Ayıklama](/visualstudio/debugger/debug-64-bit-applications)
