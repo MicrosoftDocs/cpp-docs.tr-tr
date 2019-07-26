@@ -1,6 +1,6 @@
 ---
-title: 'Nasıl yapılır: Komut satırında 64 Bit MSVC araç takımını etkinleştirme'
-ms.date: 05/16/2019
+title: 'Nasıl yapılır: Komut satırında 64 bitlik bir MSVC araç takımını etkinleştirme'
+ms.date: 07/24/2019
 helpviewer_keywords:
 - x64 [C++]
 - 64-bit compiler [C++], command line usage
@@ -12,32 +12,38 @@ helpviewer_keywords:
 - IPF, command-line compiler
 - x64 [C++], command-line compiler
 ms.assetid: 4da93a19-e20d-4778-902a-5eee9a6a90b5
-ms.openlocfilehash: 24dd6355578e8e9e00064ccfdf31bc51b7fd12ec
-ms.sourcegitcommit: a10c9390413978d36b8096b684d5ed4cf1553bc8
+ms.openlocfilehash: fa02e49ecc820835275e50f116f7abed8133e1a8
+ms.sourcegitcommit: ce3393846c86e7905ff0c86e4cd6610476809585
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65836983"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68492267"
 ---
-# <a name="how-to-enable-a-64-bit-x64-hosted-msvc-toolset-on-the-command-line"></a>Nasıl yapılır: 64 Bit etkinleştirmek için komut satırında MSVC araç takımı x64 barındırılan
+# <a name="how-to-enable-a-64-bit-x64-hosted-msvc-toolset-on-the-command-line"></a>Nasıl yapılır: Komut satırında 64 bit, x64 içinde barındırılan MSVC araç takımını etkinleştirme
 
-Visual Studio C++ Derleyicileri, linkers ve 32-bit, 64-bit veya ARM tabanlı Windows işletim sistemlerinde çalışan, uygulamaları platforma özgü sürümlerini oluşturmak için kullanabileceğiniz diğer araçlar içerir. İsteğe bağlı diğer Visual Studio iş yükleri, iOS, Android ve Linux gibi diğer platformlarda hedeflemek için C++ Araçları'nı kullanmanıza izin verir. Varsayılan yapı mimarisi, 32-bit, x86 yerel Windows kod oluşturmak için 32-bit, x86 barındırılan araçları kullanır. Ancak büyük olasılıkla bir 64 bit bilgisayar vardır. İşlemci ve bellek alanı 64-bit kod için kullanılabilir x86, x64 ya da ARM işlemcileri için kod oluşturma sırasında 64 bit, x64 barındırılan bir araç takımı kullanarak yararlanabilirsiniz.
+Visual Studio, C++ 32 bit, 64 BIT veya ARM tabanlı Windows işletim sistemlerinde çalışabilen uygulamalarınızın platforma özgü sürümlerini oluşturmak için kullanabileceğiniz derleyiciler, Etiketler ve diğer araçları içerir. Diğer isteğe bağlı Visual Studio iş yükleri iOS C++ , Android ve Linux gibi diğer platformları hedeflemek için araçları kullanmanıza olanak sağlar. Varsayılan derleme mimarisi, 32 bit, x86-yerel Windows kodu derlemek için 32 bit, x86 barındırılan araçları kullanır. Ancak büyük olasılıkla 64 bitlik bir bilgisayarınız vardır. Visual Studio, 64 bitlik bir Windows işletim sisteminde yüklü olduğunda, 64 bit, x64 'de barındırılan yerel ve çapraz derleyiciler için ek Geliştirici komut istemi kısayolları kullanılabilir. X86, x64 veya ARM işlemcileri için kod oluştururken, 64 bit, x64 tarafından barındırılan araç takımını kullanarak 64 bit kod için kullanılabilen işlemci ve bellek alanından yararlanabilirsiniz.
+
+## <a name="use-a-64-bit-hosted-developer-command-prompt-shortcut"></a>64 bitlik bir barındırılan Geliştirici komut istemi kısayolu kullanın
+
+ Windows 10 ' da bu komut istemlerini erişmek için, **Başlat** menüsünde, Visual Studio sürümünüz için klasörü açın, örneğin **Visual Studio 2019**ve ardından x64 yerel veya çapraz araç Geliştirici komut istemlerinin birini seçin. 
+
+![x64 yerel araçları komut istemi](media/x64-native-tools-command-prompt.png "Başlangıç menüsünde x64 yerel araçları")
+
+Bu komut istemlerini Windows 8 ' de erişmek için, **Başlangıç** ekranında **tüm uygulamalar**' ı açın. Visual Studio 'nun yüklü sürümü için başlık altında, **Visual Studio** klasörünü açın (Visual Studio 'nun eski sürümlerinde, **Visual Studio Araçları**adlandırılmış olabilir). Windows 'un önceki sürümlerinde **Başlat**' ı, **tüm programlar**' ı, **Visual Studio** sürümünüz için klasörü (ve Visual Studio 'nun eski sürümlerinde **Visual Studio Araçları**) seçin. Daha fazla bilgi için bkz. [Geliştirici komut istemi kısayolları](building-on-the-command-line.md#developer_command_prompt_shortcuts).
+
+## <a name="use-vcvarsallbat-to-set-a-64-bit-hosted-build-architecture"></a>64 bitlik bir barındırılan derleme mimarisi ayarlamak için vcvarsall. bat kullanın
+
+Tüm yerel veya çapraz derleyici araçları derleme yapılandırmalarının, vcvarsall. bat komut dosyası çalıştırılarak komut satırında kullanılabilir. Bu komut dosyası, varolan bir komut istemi penceresinde belirli bir yapı mimarisini etkinleştiren yolu ve ortam değişkenlerini yapılandırır. Belirli yönergeler için bkz. [Geliştirici komut dosyası konumları](building-on-the-command-line.md#developer_command_file_locations).
+
+## <a name="remarks"></a>Açıklamalar
 
 > [!NOTE]
-> Her Visual Studio sürüm ile birlikte gelen belirli araçları hakkında daha fazla bilgi için bkz: [Visual C++ Araçları ve özellikleri Visual Studio sürümlerinde](../overview/visual-cpp-tools-and-features-in-visual-studio-editions.md).
+> Her Visual Studio sürümüne dahil olan belirli araçlar hakkında daha fazla bilgi için bkz. Visual [Studio C++ sürümlerindeki görsel araçlar ve Özellikler](../overview/visual-cpp-tools-and-features-in-visual-studio-editions.md).
 >
-> Visual Studio IDE 64 bit uygulamalar oluşturmak için nasıl kullanılacağı hakkında daha fazla bilgi için bkz. [nasıl yapılır: 64-Bit, hedeflemek için Visual C++ projeleri x64 yapılandırma platformları](how-to-configure-visual-cpp-projects-to-target-64-bit-platforms.md).
+> Visual Studio IDE 'nin 64 bitlik uygulamalar oluşturmak için nasıl kullanılacağı hakkında bilgi için bkz [. nasıl yapılır: Visual C++ projelerini 64 bit, x64 platformları](how-to-configure-visual-cpp-projects-to-target-64-bit-platforms.md)hedefleyecek şekilde yapılandırın.
 
-Visual Studio Yükleyicisi'nde bir C++ iş yükünü yüklediğinizde, 32-bit x86 barındırılan, yerel ve çapraz derleyici araçları x86 ve x64 Kodu derlemek için daima yüklenir. Evrensel Windows platformu iş yükü dahil ederseniz, ARM kodu oluşturmak için çapraz derleyici x86 barındırılan Araçlar de yükler. Bu iş yükleri üzerinde bir 64 bit x64 yüklerseniz işlemci de 64 bit yerel almanıza ve yapı x86, x 64 ve ARM çapraz Araçlar derleyici kodu. 32 bit ve 64 bit Araçlar aynı kodu oluşturur, ancak önceden derlenmiş üstbilgi sembolleri ve tüm Program iyileştirmesi için 64 bit Araçlar daha fazla bellek destekler ([/GL](reference/gl-whole-program-optimization.md) ve [/LTCG](reference/ltcg-link-time-code-generation.md)) seçenekleri. 32 bit araçları kullanırken bellek sorunu yaşarsanız çalıştırırsanız, 64-bit araçları deneyebilirsiniz.
-
-## <a name="use-a-64-bit-hosted-developer-command-prompt-shortcut"></a>Bir 64-bit barındırılan Geliştirici komut istemi kısayolunun kullanın
-
-Ek Geliştirici komut istemi kısayolları 64-bit, x64 barındırılan yerel ve çapraz derleyiciler, Visual Studio 64-bit Windows işletim sisteminde yüklü olduğunda kullanılabilir. Üzerinde Windows 10, bu komut istemlerine erişmek için **Başlat** menüsünde, Visual Studio sürümünüz için örneğin yapıtlarını **Visual Studio 2019**, yerel veya çapraz araç x64 birini seçin Geliştirici komut istemleri. Üzerinde Windows 8'de, bu komut istemlerine erişmek için **Başlat** ekran açık **tüm uygulamalar**. Visual Studio'nın yüklü sürümü başlığı altında açık **Visual Studio** klasörü (Visual Studio'nun eski sürümleri adlandırılabilir **Visual Studio Araçları**). Önceki Windows sürümlerinde seçin **Başlat**, genişletme **tüm programlar**, sürümünüz için klasör **Visual Studio** (ve Visual Studio'nun daha eski sürümlerindeki  **Visual Studio Araçları**). Daha fazla bilgi için [Geliştirici komut istemi kısayolları](building-on-the-command-line.md#developer_command_prompt_shortcuts).
-
-## <a name="use-vcvarsallbat-to-set-a-64-bit-hosted-build-architecture"></a>Bir 64-bit barındırılan yapı mimarisi için Vcvarsall.bat kullanın
-
-Herhangi bir yerel veya çapraz derleyici araçları vcvarsall.bat çalıştırarak komut satırında derleme yapılandırmaları kullanılabilir dosya komutu. Bu komut dosyası yolunu yapılandırır ve var olan bir komut istemi penceresinde mimarisi sağlayan belirli bir ortam değişkenleri oluşturun. Ayrıntılı yönergeler için bkz: [Geliştirici komut dosyası konumları](building-on-the-command-line.md#developer_command_file_locations).
+Visual Studio yükleyicisine bir C++ iş yükü yüklediğinizde, x86 ve x64 kodu oluşturmak için her zaman 32 bit, x86-barındırılan, yerel ve çapraz derleyici araçları yükler. Evrensel Windows Platformu iş yükünü eklerseniz, ARM kodu oluşturmak için x86 barındırılan çapraz derleyici araçları da yüklenir. Bu iş yüklerini 64 bit, x64 işlemciye yüklerseniz, x86, x64 ve ARM kodu oluşturmaya yönelik 64 bit yerel ve çapraz derleyici araçları da alırsınız. 32-bit ve 64 bit araçları aynı kodu oluşturur, ancak 64 bit araçları önceden derlenmiş üstbilgi sembolleri ve tüm program Iyileştirmesi ([/GL](reference/gl-whole-program-optimization.md) ve [/LTCG](reference/ltcg-link-time-code-generation.md)) seçenekleri için daha fazla bellek destekler. 32 bit araçları kullandığınızda bellek sınırlarında çalıştırırsanız, 64 bit araçları deneyin.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C++ projeleri için 64 bit x64 yapılandırma hedefleri](configuring-programs-for-64-bit-visual-cpp.md)<br/>
+[Projeleri C++ 64-bit, x64 hedefleri için yapılandırma](configuring-programs-for-64-bit-visual-cpp.md)<br/>

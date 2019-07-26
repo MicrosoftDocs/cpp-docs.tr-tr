@@ -14,12 +14,12 @@ helpviewer_keywords:
 - build macro
 - user-defined macros
 ms.assetid: 13ffe3ea-1bc3-4bee-be5e-053a8a99cce4
-ms.openlocfilehash: 164a8e8aff5428be36c5d921bc8078ab352f51c0
-ms.sourcegitcommit: 7f5b29e24e1be9b5985044a030977485fea0b50c
+ms.openlocfilehash: 9f0dbe31325ec894add3d2577eb977a0c6dd7c41
+ms.sourcegitcommit: ce3393846c86e7905ff0c86e4cd6610476809585
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/17/2019
-ms.locfileid: "68299737"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68492143"
 ---
 # <a name="c-project-property-page-reference"></a>C++Proje özellik sayfası başvurusu
 
@@ -47,21 +47,7 @@ Linux projelerindeki Özellik sayfaları için bkz. [Linux C++ Özellik sayfası
 
 [Genel Özellik Sayfası (Dosya)](general-property-page-file.md)
 
-
-
-
-
 [HLSL Özellik Sayfaları](hlsl-property-pages.md)
-
-[HLSL Özellik Sayfaları: Gelişmiş](hlsl-property-pages-advanced.md)
-
-[HLSL Özellik Sayfaları: Genel](hlsl-property-pages-general.md)
-
-[HLSL Özellik Sayfaları: Çıkış Dosyaları](hlsl-property-pages-output-files.md)
-
-
-
-
 
 [Bağlayıcı Özellik Sayfaları](linker-property-pages.md)
 
@@ -71,17 +57,9 @@ Linux projelerindeki Özellik sayfaları için bkz. [Linux C++ Özellik sayfası
 
 [MIDL Özellik Sayfaları](midl-property-pages.md)
 
-[MIDL Özellik Sayfaları: Gelişmiş](midl-property-pages-advanced.md)
-
-[MIDL Özellik Sayfaları: Genel](midl-property-pages-general.md)
-
-[MIDL Özellik Sayfaları: Çıkış](midl-property-pages-output.md)
-
 [NMake özellik sayfası](nmake-property-page.md)
 
 [Kaynaklar Özellik Sayfaları](resources-property-pages.md)
-
-
 
 [Web Başvuruları Özellik Sayfası](web-references-property-page.md)
 
