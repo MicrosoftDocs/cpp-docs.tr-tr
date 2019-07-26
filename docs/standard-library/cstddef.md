@@ -6,19 +6,19 @@ f1_keywords:
 helpviewer_keywords:
 - cstddef header
 ms.assetid: be8d1e39-5974-41ee-b41d-eafa6c82ffce
-ms.openlocfilehash: 15d13a3af35cb41950df8aeba0c86d779e701ddb
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.openlocfilehash: 87d268977ee46112fedce517e66a9e68071863db
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68244443"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68457568"
 ---
 # <a name="ltcstddefgt"></a>&lt;cstddef&gt;
 
-C Standart Kitaplığı üst bilgisi \<stddef.h > ve ilişkili adlarına ekler `std` ad alanı. Bu üstbilginin dahil sağlar C Standart Kitaplığı üstbilgisinde harici bağlantı kullanılarak bildirilen adların bildirilir `std` ad alanı.
+, STDDEF. h > \<C standart kitaplığı başlığını içerir ve ilgili adları `std` ad alanına ekler. Bu üst bilgiyi dahil etmek, C standart kitaplığı üstbilgisinde harici bağlantı kullanılarak belirtilen adların `std` ad alanında bildirilmesini sağlar.
 
 > [!NOTE]
-> \<cstddef > türünü içeren **bayt** ve türü içermez **wchar_t**.
+> \<cstddef > tür **baytı** içerir ve **wchar_t**türü içermez.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -26,7 +26,7 @@ C Standart Kitaplığı üst bilgisi \<stddef.h > ve ilişkili adlarına ekler `
 #include <cstddef>
 ```
 
-## <a name="namespace-and-macros"></a>Namespace ve makroları
+## <a name="namespace-and-macros"></a>Ad alanı ve makrolar
 
 ```cpp
 namespace std {
@@ -43,18 +43,18 @@ namespace std {
 ### <a name="parameters"></a>Parametreler
 
 *ptrdiff_t*\
-Uygulama tanımlı iki alt simgeler farkı bir dizi nesnesinde tutabilen bir tamsayı türü imzalanmış.
+Bir dizi nesnesinde iki alt simgelerin farkını tutabilecek, uygulama tanımlı bir işaretli tamsayı türü.
 
 *size_t*\
-Herhangi bir nesnenin bayt cinsinden boyut içerecek şekilde büyük bir uygulama tanımlı işaretsiz tamsayı türü.
+Herhangi bir nesnenin bayt cinsinden boyutunu içermesi için yeterince büyük olan uygulama tanımlı işaretsiz bir tamsayı türü.
 
 *max_align_t*\
-Hizalama gereksinimi olan en az olarak, her skalar türü mükemmeldir ve hizalama gereksinimi olan her bağlamda desteklenen bir POD türü.
+Hizalama gereksinimini en az her skalar türde olan ve hizalama gereksinimini her bağlamda desteklenen bir POD türü.
 
-*nullptr_t değerine*\
-Türü için bir eşanlamlı bir **nullptr** ifade. Ancak bir **nullptr** adresi olamaz alınamadığından, başka bir *nullptr_t değerine* lvalue nesnesini alınabilmesini.
+*nullptr_t*\
+Bir **nullptr** ifadesinin türü için bir eş anlamlı. Bir **nullptr** adresi alınmasa da, lvalue olan başka bir *nullptr_t* nesnesinin adresi alınabilir.
 
-## <a name="byte-class"></a>bayt sınıfı
+## <a name="byte-class"></a>Byte sınıfı
 
 ```cpp
 enum class byte : unsigned char {};
@@ -79,6 +79,6 @@ template <class IntType>
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Üstbilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md)<br/>
-[C++ Standart Kitaplığına Genel Bakış](../standard-library/cpp-standard-library-overview.md)<br/>
-[C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
+[Üst bilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md)\
+[C++Standart kitaplığa genel bakış](../standard-library/cpp-standard-library-overview.md)\
+[C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)

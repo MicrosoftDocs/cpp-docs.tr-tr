@@ -74,16 +74,16 @@ helpviewer_keywords:
 - std::uninitialized_copy_n [C++]
 - std::uninitialized_fill [C++]
 - std::uninitialized_fill_n [C++]
-ms.openlocfilehash: 6199c97e19c18075007d5c682c2199a2e5886b29
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.openlocfilehash: 14818e93e79a0be9960ba67088f81d51d402b717
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68243834"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68448499"
 ---
 # <a name="ltmemorygt-functions"></a>&lt;bellek&gt; işlevleri
 
-## <a name="addressof"></a> AddressOf
+## <a name="addressof"></a>AddressOf
 
 Bir nesnenin doğru adresini alır.
 
@@ -94,16 +94,16 @@ template <class T>
 
 ### <a name="parameters"></a>Parametreler
 
-*VAL*\
+*Acil*\
 Doğru adresi alacak nesne veya işlev.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Nesne veya işlev tarafından başvurulan gerçek adresi *Val*, aşırı yüklenmiş bir durumunda bile `operator&()` bulunmaktadır.
+Aşırı yüklenmiş `operator&()` olsa bile, *değer*tarafından başvurulan nesnenin veya işlevin gerçek adresi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="align"></a> Hizala
+## <a name="align"></a>acaktır
 
 Verilen depolamanın ilk olası adresinde verilen, verilen hizalama belirtimine göre hizalanmış, boyutta depolamaya uyar.
 
@@ -118,27 +118,27 @@ void* align(
 
 ### <a name="parameters"></a>Parametreler
 
-*Hizalama*\
+*Hizalar*\
 Denenecek hizalama sınırı.
 
-*Boyutu*\
+*Boyutla*\
 Hizalanmış depolama için bayt cinsinden boyut.
 
-*PTR*\
-Kullanılacak mevut bitişik depolama havuzunun başlangıç adresi. Bu parametre aynı zamanda bir çıktı parametresidir ve hizalama başarılı olursa yeni başlangıç adresini içerecek şekilde ayarlanır. Varsa `align()` olduğundan başarısız, bu parametre değiştirilmez.
+*Kaydetmeye*\
+Kullanılacak mevut bitişik depolama havuzunun başlangıç adresi. Bu parametre aynı zamanda bir çıktı parametresidir ve hizalama başarılı olursa yeni başlangıç adresini içerecek şekilde ayarlanır. Başarısız `align()` olursa, bu parametre değiştirilmez.
 
-*alanı*\
-Kullanılabilir toplam alan `align()` hizalanmış depolama oluştururken kullanım için. Bu parametre aynı zamanda bir çıktı parametresidir ve hizalanmış depolamanın ve herhangi ilişkili ek yükün çıkarılmasının ardından depolama arabelleğinde kalan düzenlenmiş alanı içerir.
+*Boşlu*\
+Hizalanmış depolamayı oluştururken kullanılabilecek `align()` Toplam alan. Bu parametre aynı zamanda bir çıktı parametresidir ve hizalanmış depolamanın ve herhangi ilişkili ek yükün çıkarılmasının ardından depolama arabelleğinde kalan düzenlenmiş alanı içerir.
 
-Varsa `align()` olduğundan başarısız, bu parametre değiştirilmez.
+Başarısız `align()` olursa, bu parametre değiştirilmez.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İstenen hizalanmış arabellek kullanılabilir alana sığmazsa null bir işaretçi; Aksi takdirde, yeni değeri *Ptr*.
+İstenen hizalanmış arabelleğin kullanılabilir alana sığmadığı durumlarda boş bir işaretçi; Aksi halde, yeni *PTR*değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Değiştirilmiş *Ptr* ve *alanı* parametrelerini çağırmak etkinleştirme `align()` tekrar tekrar aynı arabellekte, büyük olasılıkla için farklı değerlerle üzerinde *hizalama* ve  *Boyutu*. Aşağıdaki kod parçacığı bir kullanımını göstermektedir `align()`.
+Değiştirilen *PTR* ve *Space* parametreleri, büyük olasılıkla *Hizalama* ve `align()` *Boyut*için farklı değerlerle aynı arabellekte sürekli olarak çağrı etkinleştirmenizi sağlar. Aşağıdaki kod parçacığı bir kullanımını `align()`gösterir.
 
 ```cpp
 #include <type_traits> // std::alignment_of()
@@ -163,9 +163,9 @@ while (std::align(alignment, sizeof(MyObj), ptr, space)) {
 // possible to allow more aligned storage in this buffer.
 ```
 
-## <a name="allocate_shared"></a> allocate_shared
+## <a name="allocate_shared"></a>allocate_shared
 
-Oluşturur bir `shared_ptr` ayrılan ve belirli bir ayırıcı kullanılarak verilen tür için oluşturulan nesneler için. Döndürür `shared_ptr`.
+Belirtilen ayırıcı `shared_ptr` kullanılarak belirli bir tür için ayrılan ve oluşturulan nesneler için bir oluşturur. `shared_ptr`Döndürür.
 
 ```cpp
 template <class Type, class Allocator, class... Types>
@@ -174,96 +174,96 @@ template <class Type, class Allocator, class... Types>
 
 ### <a name="parameters"></a>Parametreler
 
-*Ayırma*\
+*Tahsis*\
 Nesneleri oluşturmak için kullanılan ayırıcı.
 
-*bağımsız değişken*\
+*Args*\
 Nesneler haline gelen sıfır veya daha fazla bağımsız değişken.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşlev nesnesi oluşturur `shared_ptr<Type>`, işaretçi `Type(Args...)` ayrılmış'olarak ve tarafından oluşturulan *ayırma*.
+İşlevi, ayrılan ve `shared_ptr<Type>` *ayırma*tarafından oluşturulan bir `Type(Args...)` işaretçi olan nesnesini oluşturur.
 
-## <a name="atomic_compare_exchange_strong"></a> atomic_compare_exchange_strong
+## <a name="atomic_compare_exchange_strong"></a>atomic_compare_exchange_strong
 
 ```cpp
 template<class T>
     bool atomic_compare_exchange_strong(shared_ptr<T>* p, shared_ptr<T>* v, shared_ptr<T> w);
 ```
 
-## <a name="atomic_compare_exchange_weak"></a> atomic_compare_exchange_weak
+## <a name="atomic_compare_exchange_weak"></a>atomic_compare_exchange_weak
 
 ```cpp
 template<class T>
     bool atomic_compare_exchange_weak(shared_ptr<T>* p, shared_ptr<T>* v, shared_ptr<T> w);
 ```
 
-## <a name="atomic_compare_exchange_strong_explicit"></a> atomic_compare_exchange_strong_explicit
+## <a name="atomic_compare_exchange_strong_explicit"></a>atomic_compare_exchange_strong_explicit
 
 ```cpp
 template<class T>
     bool atomic_compare_exchange_strong_explicit(shared_ptr<T>* p, shared_ptr<T>* v, shared_ptr<T> w, memory_order success, memory_order failure);
 ```
 
-## <a name="atomic_compare_exchange_weak_explicit"></a> atomic_compare_exchange_weak_explicit
+## <a name="atomic_compare_exchange_weak_explicit"></a>atomic_compare_exchange_weak_explicit
 
 ```cpp
 template<class T>
     bool atomic_compare_exchange_weak_explicit(shared_ptr<T>* p, shared_ptr<T>* v, shared_ptr<T> w, memory_order success, memory_order failure);
 ```
 
-## <a name="atomic_exchange"></a> atomic_exchange
+## <a name="atomic_exchange"></a>atomic_exchange
 
 ```cpp
 template<class T>
     shared_ptr<T> atomic_exchange(shared_ptr<T>* p, shared_ptr<T> r);
 ```
 
-## <a name="atomic_exchange_explicit"></a> atomic_exchange_explicit
+## <a name="atomic_exchange_explicit"></a>atomic_exchange_explicit
 
 ```cpp
 template<class T>
     shared_ptr<T> atomic_exchange_explicit(shared_ptr<T>* p, shared_ptr<T> r, memory_order mo);
 ```
 
-## <a name="atomic_is_lock_free"></a> atomic_is_lock_free
+## <a name="atomic_is_lock_free"></a>atomic_is_lock_free
 
 ```cpp
 template<class T>
     bool atomic_is_lock_free(const shared_ptr<T>* p);
 ```
 
-## <a name="atomic_load"></a> atomic_load
+## <a name="atomic_load"></a>atomic_load
 
 ```cpp
 template<class T>
     shared_ptr<T> atomic_load(const shared_ptr<T>* p);
 ```
 
-## <a name="atomic_load_explicit"></a> atomic_load_explicit
+## <a name="atomic_load_explicit"></a>atomic_load_explicit
 
 ```cpp
 template<class T>
     shared_ptr<T> atomic_load_explicit(const shared_ptr<T>* p, memory_order mo);
 ```
 
-## <a name="atomic_store"></a> atomic_store
+## <a name="atomic_store"></a>atomic_store
 
 ```cpp
 template<class T>
     void atomic_store(shared_ptr<T>* p, shared_ptr<T> r);
 ```
 
-## <a name="atomic_store_explicit"></a> atomic_store_explicit
+## <a name="atomic_store_explicit"></a>atomic_store_explicit
 
 ```cpp
 template<class T>
     void atomic_store_explicit(shared_ptr<T>* p, shared_ptr<T> r, memory_order mo);
 ```
 
-## <a name="const_pointer_cast"></a> const_pointer_cast
+## <a name="const_pointer_cast"></a>const_pointer_cast
 
-Const dönüştürmesi shared_ptr için.
+Shared_ptr 'e const atama.
 
 ```cpp
 template <class Ty, class Other>
@@ -272,18 +272,18 @@ template <class Ty, class Other>
 
 ### <a name="parameters"></a>Parametreler
 
-*Ty*\
-Döndürülen paylaşılan işaretçiyle kontrol edilen tür.
+*Kalite*\
+Döndürülen paylaşılan işaretçi tarafından denetlenen tür.
 
-*Diğer*\
-Bağımsız değişken paylaşılan işaretçiyle kontrol edilen tür.
+*Farklı*\
+Bağımsız değişken paylaşılan işaretçisi tarafından denetlenen tür.
 
-*Diğer*\
-Bağımsız değişken paylaşılan işaretçi.
+*Farklı*\
+Bağımsız değişken paylaşılan işaretçisi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon işlevi boş shared_ptr nesneyi döndürür `const_cast<Ty*>(sp.get())` döndürür bir null işaretçi; Aksi halde döndürür bir [shared_ptr sınıfı](../standard-library/shared-ptr-class.md)\<Ty > tarafından sahip olunan kaynağın sahibi nesne `sp`. İfade `const_cast<Ty*>(sp.get())` geçerli olmalıdır.
+Şablon işlevi, null bir `const_cast<Ty*>(sp.get())` işaretçi döndürürse boş bir shared_ptr nesnesi döndürür; Aksi takdirde, tarafından `sp`sahip olunan kaynağa sahip olan [shared_ptr sınıf](../standard-library/shared-ptr-class.md)\<Ty > nesnesini döndürür. İfade `const_cast<Ty*>(sp.get())` geçerli olmalıdır.
 
 ### <a name="example"></a>Örnek
 
@@ -310,9 +310,9 @@ int main()
 sp1 == 3
 ```
 
-## <a name="declare_no_pointers"></a> declare_no_pointers
+## <a name="declare_no_pointers"></a>declare_no_pointers
 
-Bellek bloğu karakterlerin taban adresi işaretçisi tarafından tanımlanan bir atık Toplayıcıya bildirir ve blok boyutu izlenebilir işaretçi içerir.
+Bir temel adres işaretçisi ve blok boyutu tarafından tanımlanan bellek bloğundaki karakterlerin izlenebilen işaretçiler içermediğini belirten bir atık toplayıcıya bildirir.
 
 ```cpp
 void declare_no_pointers(char* ptr, size_t _Size);
@@ -320,17 +320,17 @@ void declare_no_pointers(char* ptr, size_t _Size);
 
 ### <a name="parameters"></a>Parametreler
 
-*PTR*\
-Artık izlenebilir işaretçileri içeren ilk karakterin adresi.
+*kaydetmeye*\
+Artık izlenebilecek işaretçiler içermeyen ilk karakterin adresi.
 
 *_Boyut*\
-Başlar bloğunun boyutu *ptr* izlenebilir işaretçi içeren.
+İzlenebilen işaretçiler içermeyen *PTR* 'de başlayan bloğun boyutu.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşlev herhangi bir atık Toplayıcıya bildirir, adres aralığını `[ ptr, ptr + _Size)` artık izlenebilir işaretçileri içerir. (Ayrılmış depolama için herhangi bir işaretçinin erişilebilir kılmadığınız sürece başvurusu kaldırılmalıdır değil.)
+İşlev, adres `[ ptr, ptr + _Size)` aralığının artık izlenebilecek işaretçiler içermediği tüm çöp toplayıcıyı bilgilendirir. (Ayrılan depolamaya yönelik işaretçilere, erişilebilir olmadığı müddetçe başvurulmamalıdır.)
 
-## <a name="declare_reachable"></a> declare_reachable
+## <a name="declare_reachable"></a>declare_reachable
 
 Belirtilen adresin ayrılmış depolama alanını ve erişilebilir olduğunu atık toplamaya bildirir.
 
@@ -340,16 +340,16 @@ void declare_reachable(void* ptr);
 
 ### <a name="parameters"></a>Parametreler
 
-*PTR*\
-Erişilebilir, ayrılmış, geçerli depolama alanı için bir işaretçi.
+*kaydetmeye*\
+Erişilebilir, ayrılmış, geçerli bir depolama alanına yönelik bir işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsa *ptr* işlevi herhangi bir atık Toplayıcıya bildirir null değil, *ptr* bundan böyle erişilebilir (puanlar) geçerli ayrılmış depolama olan.
+*PTR* null değilse, işlev, *PTR* 'nin bundan sonra erişilebilen herhangi bir çöp toplayıcıyı bilgilendirir (geçerli ayrılmış depolamaya işaret eder).
 
-## <a name="default_delete"></a> default_delete
+## <a name="default_delete"></a>default_delete
 
-İle ayrılmış nesneleri siler **new işleci**. İle kullanım için uygun `unique_ptr`.
+**New işleciyle**ayrılan nesneleri siler. İle `unique_ptr`kullanım için uygundur.
 
 ```cpp
 struct default_delete {
@@ -362,46 +362,46 @@ struct default_delete {
 
 ### <a name="parameters"></a>Parametreler
 
-*PTR*\
-Silinecek nesne işaretçisi.
+*Kaydetmeye*\
+Silinecek nesnenin işaretçisi.
 
-*Diğer*\
+*Farklı*\
 Silinecek dizideki öğelerin türü.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon sınıfı tanımlar bir `deleter` ile ayrılmış skaler nesneleri siler **new işleci**, Şablon sınıfı ile kullanım için uygun `unique_ptr`. Aynı zamanda açık uzmanlığında sahip `default_delete<Type[]>`.
+Şablon sınıfı, **New işleci**ile ayrılmış skaler nesneleri silen ve şablon sınıfı `unique_ptr`ile kullanım için uygun olan bir `deleter` öğesini açıklar. Ayrıca, açık özelleşmeye `default_delete<Type[]>`de sahiptir.
 
-## <a name="destroy_at"></a> destroy_at
+## <a name="destroy_at"></a>destroy_at
 
 ```cpp
 template <class T>
     void destroy_at(T* location);
 ```
 
-Aynı `location->~T()`.
+`location->~T()`Aynı.
 
-## <a name="destroy"></a> yok
+## <a name="destroy"></a>kaldırılır
 
 ```cpp
 template <class ForwardIterator>
     void destroy(ForwardIterator first, ForwardIterator last);
 ```
 
-Aynı `for (; first!=last; ++first) destroy_at(addressof(*first)); `.
+`for (; first!=last; ++first) destroy_at(addressof(*first)); `Aynı.
 
-## <a name="destroy_n"></a> destroy_n
+## <a name="destroy_n"></a>destroy_n
 
 ```cpp
 template <class ForwardIterator, class Size>
     ForwardIterator destroy_n(ForwardIterator first, Size n);
 ```
 
-Aynı `for (; n > 0; (void)++first, --n) destroy_at(addressof(*first)); return first;`.
+`for (; n > 0; (void)++first, --n) destroy_at(addressof(*first)); return first;`Aynı.
 
-## <a name="dynamic_pointer_cast"></a> dynamic_pointer_cast
+## <a name="dynamic_pointer_cast"></a>dynamic_pointer_cast
 
-Shared_ptr dinamik dönüştürme.
+Shared_ptr 'e dinamik atama.
 
 ```cpp
 template <class Ty, class Other>
@@ -410,18 +410,18 @@ template <class Ty, class Other>
 
 ### <a name="parameters"></a>Parametreler
 
-*Ty*\
-Döndürülen paylaşılan işaretçiyle kontrol edilen tür.
+*Kalite*\
+Döndürülen paylaşılan işaretçi tarafından denetlenen tür.
 
-*Diğer*\
-Bağımsız değişken paylaşılan işaretçiyle kontrol edilen tür.
+*Farklı*\
+Bağımsız değişken paylaşılan işaretçisi tarafından denetlenen tür.
 
-*SP*\
-Bağımsız değişken paylaşılan işaretçi.
+*SP2*\
+Bağımsız değişken paylaşılan işaretçisi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon işlevi boş shared_ptr nesneyi döndürür `dynamic_cast<Ty*>(sp.get())` döndürür bir null işaretçi; Aksi halde döndürür bir [shared_ptr sınıfı](../standard-library/shared-ptr-class.md)\<Ty > tarafından sahip olunan kaynağın sahibi nesne *sp* . İfade `dynamic_cast<Ty*>(sp.get())` geçerli olmalıdır.
+Şablon işlevi `dynamic_cast<Ty*>(sp.get())` , null bir işaretçi döndürürse boş bir shared_ptr nesnesi döndürür; Aksi takdirde, *SP*'nin sahip olduğu kaynağa sahip bir [shared_ptr sınıf](../standard-library/shared-ptr-class.md)\<Ty > nesnesi döndürür. İfade `dynamic_cast<Ty*>(sp.get())` geçerli olmalıdır.
 
 ### <a name="example"></a>Örnek
 
@@ -459,9 +459,9 @@ int main()
 sp1->val == 3
 ```
 
-## <a name="get_deleter"></a> get_deleter
+## <a name="get_deleter"></a>get_deleter
 
-Shared_ptr Silici alın.
+Shared_ptr 'ten silici alın.
 
 ```cpp
 template <class D, class Ty>
@@ -470,18 +470,18 @@ template <class D, class Ty>
 
 ### <a name="parameters"></a>Parametreler
 
-*D*\
-Silici türü.
+*TID*\
+Deleter türü.
 
-*Ty*\
-Paylaşılan işaretçiyle kontrol edilen tür.
+*Kalite*\
+Paylaşılan işaretçi tarafından denetlenen tür.
 
-*SP*\
+*SP2*\
 Paylaşılan işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon işlevi Silici türü için bir işaretçi döndürür *D* ait olan [shared_ptr sınıfı](../standard-library/shared-ptr-class.md) nesne *sp*. Varsa *sp* hiçbir Silici sahip veya kendi Silici türü değilse *D* işlev 0 döndürür.
+Şablon işlevi, [Shared_ptr sınıf](../standard-library/shared-ptr-class.md) nesne *SP*'sine ait olan *D* türünün silicilerine bir işaretçi döndürür. *SP* 'nin hiç bir silici yoksa veya silici tür *D* değilse, işlev 0 döndürür.
 
 ### <a name="example"></a>Örnek
 
@@ -527,7 +527,7 @@ get_deleter(sp0) != 0 == false
 get_deleter(sp1) != 0 == true
 ```
 
-## <a name="get_pointer_safety"></a> get_pointer_safety
+## <a name="get_pointer_safety"></a>get_pointer_safety
 
 Herhangi bir atık toplayıcısı tarafından kabul edilen işaretçi güvenlik türünü döndürür.
 
@@ -537,9 +537,9 @@ pointer_safety get_pointer_safety();
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşlev, herhangi bir otomatik atık toplayıcısı tarafından kabul edilen işaretçi güvenlik türünü döndürür.
+İşlevi, herhangi bir otomatik çöp toplayıcı tarafından kabul edilen işaretçi güvenlik türünü döndürür.
 
-## <a name="get_temporary_buffer"></a> get_temporary_buffer
+## <a name="get_temporary_buffer"></a>get_temporary_buffer
 
 Belirli sayıda öğeyi aşmayan öğe dizisi için geçici depolamayı ayırır.
 
@@ -550,18 +550,18 @@ template <class Type>
 
 ### <a name="parameters"></a>Parametreler
 
-*Sayısı*\
-En fazla öğe sayısı, bellek tahsis edilecek olduğu istedi.
+*biriktirme*\
+Ayrılan bellek için istenen en fazla öğe sayısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-A `pair` olan ilk bileşen bellek, ayrıldı ve ikinci bileşeni sağlar, depolayabilir öğelerin en büyük sayısını belirten bir arabellek boyutu bir işaretçidir.
+`pair` İlk bileşeni ayrılan belleğe yönelik bir işaretçidir ve ikinci bileşen, depolayabileceği en büyük öğe sayısını belirten arabelleğin boyutunu verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bellek isteği işlevi sağlar ve başarılı olmayabilir. Arabellek ayırdığınızda, işlev sıfır olarak ikinci bileşen eşittir ve null işaretçi ilk bileşen eşit bir çiftini döndürür.
+İşlev, bellek için bir istek yapar ve başarısız olabilir. Hiçbir arabellek ayrılıyorsa, işlev bir çift döndürür ve ikinci bileşen sıfıra eşit ve ilk bileşen null işaretçisine eşittir.
 
-Bu işlev, yalnızca geçici bellek için kullanılmalıdır.
+Bu işlev yalnızca geçici olan bellek için kullanılmalıdır.
 
 ### <a name="example"></a>Örnek
 
@@ -596,9 +596,9 @@ The number of elements that the allocated memory
 could store is given by: resultPair.second = 9.
 ```
 
-## <a name="make_shared"></a> make_shared
+## <a name="make_shared"></a>make_shared
 
-Oluşturur ve döndürür bir `shared_ptr` işaret eden varsayılan ayırıcı kullanılarak sıfır veya daha fazla bağımsız değişkenlerden oluşturulan ayrılan nesneler. Ayırır ve bir iki nesne belirtilen türe ait oluşturur ve bir `shared_ptr` döndürür ve nesne paylaşılan sahipliğini yönetmek için `shared_ptr`.
+Varsayılan ayırıcıyı kullanarak sıfır `shared_ptr` veya daha fazla bağımsız değişken tarafından oluşturulan ayrılmış nesneleri işaret eden bir oluşturur ve döndürür. Nesnenin paylaşılan sahipliğini yönetmek için hem belirtilen türdeki hem de bir `shared_ptr` nesnesini ayırır ve oluşturur ve `shared_ptr`döndürür.
 
 ```cpp
 template <class Type, class... Types>
@@ -607,23 +607,23 @@ template <class Type, class... Types>
 
 ### <a name="parameters"></a>Parametreler
 
-*_Args*\
-Sıfır veya daha fazla oluşturucu bağımsız değişkenleri. İşlevin hangi Oluşturucusu aşırı yüklemesini çağırmak için sağlanan bağımsız değişkenlerine göre çıkarır.
+*_Bağımsız değişkenler*\
+Sıfır veya daha fazla Oluşturucu bağımsız değişkeni. İşlevi, sunulan bağımsız değişkenlere dayanarak hangi Oluşturucu aşırı yüklemesinin çağrılmasını sağlar.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kullanım `make_shared` nesne oluşturmak için basit ve daha verimli bir yolu olarak ve `shared_ptr` aynı anda nesne paylaşılan erişimi yönetmek için. Anlamsal olarak, bu iki deyimler eşdeğerdir:
+Bir `make_shared` nesne oluşturmak için basit ve daha verimli bir yol `shared_ptr` ve aynı zamanda nesneye paylaşılan erişimi yönetmek için kullanın. Anlamsal olarak, bu iki deyim eşdeğerdir:
 
 ```cpp
 auto sp = std::shared_ptr<Example>(new Example(argument));
 auto msp = std::make_shared<Example>(argument);
 ```
 
-Ancak, ilk ifade iki ayırmaları yapar ve ayırma `shared_ptr` sonra ayırma başarısız `Example` nesne başarılı oldu, ardından adlandırılmamış `Example` nesne leaked. Kullanan deyimi `make_shared` dahil olan yalnızca bir işlev çağrısı olduğundan daha kolaydır. Kitaplığı hem nesne hem de akıllı işaretçi için tek bir ayırma yapabilirsiniz olduğundan daha verimli olur. Bu hem de daha hızlı ve daha az bellek parçalanması için müşteri adayları ve bir özel bir ayırma, ancak diğer engellerinde yoktur. Akıllı işaretçi başvuru sayılarını nesne ve güncelleştirmeleri başvuran kod için daha iyi bir yerleşim yeri tarafından performansı geliştirildi.
+Ancak, ilk ifade iki ayırma yapar ve `shared_ptr` `Example` nesnenin ayrılması sonrasında başarısız olursa, adlandırılmamış `Example` nesne sızdırılmaz. Öğesinin kullanıldığı `make_shared` ifade, yalnızca bir işlev çağrısı olduğundan daha basittir. Kitaplık hem nesne hem de akıllı işaretçi için tek bir ayırma yapabildiğinden daha etkilidir. Bu hem daha hızlıdır hem de daha az bellek parçalanması sağlar ve bir ayırma üzerinde bir özel durum değildir ancak diğeri değildir. Performans, nesneye başvuran kod için daha iyi konum tarafından geliştirilmiştir ve akıllı işaretçisindeki başvuru sayılarını günceller.
 
-Kullanmayı [make_unique](../standard-library/memory-functions.md#make_unique) nesne için paylaşılan erişim gerekmiyorsa. Kullanım [allocate_shared](../standard-library/memory-functions.md#allocate_shared) özel bir ayırıcı nesnesinin belirtmeniz gerekiyorsa. Kullanamazsınız `make_shared` Silici bağımsız değişken olarak geçirmek için hiçbir yolu olmadığından, nesne özel bir siliciyle gerektirip gerektirmediğini.
+Nesnesine paylaşılan erişim gerekmiyorsa [make_unique](../standard-library/memory-functions.md#make_unique) kullanmayı düşünün. Nesne için özel bir ayırıcı belirtmeniz gerekiyorsa [allocate_shared](../standard-library/memory-functions.md#allocate_shared) kullanın. Nesneniz bir bağımsız `make_shared` değişken olarak geçirmenin bir yolu olmadığından, nesneniz özel bir silici gerektiriyorsa kullanamazsınız.
 
-Aşağıdaki örnek, belirli bir oluşturucu aşırı yüklemeleri çağırarak bir türü paylaşılan işaretçileri oluşturma işlemi gösterilmektedir.
+Aşağıdaki örnek, belirli bir Oluşturucu aşırı yüklerini çağırarak bir tür için paylaşılan işaretçiler oluşturmayı gösterir.
 
 ### <a name="example"></a>Örnek
 
@@ -678,7 +678,7 @@ int main() {
 }
 ```
 
-Örneğin, bu çıktıyı üretir:
+Örnek bu çıktıyı üretir:
 
 ```Output
 Playing Ode to Joy by Beethoven, use count: 2
@@ -689,9 +689,9 @@ Playing Yesterday by The Beatles, use count: 3
 Playing Blackbird by The Beatles, use count: 3
 ```
 
-## <a name="make_unique"></a> make_unique
+## <a name="make_unique"></a>make_unique
 
-Oluşturur ve döndürür bir [unique_ptr](../standard-library/unique-ptr-class.md) belirtilen türün bir nesnesine oluşturulan belirtilen bağımsız değişkenler kullanarak.
+Belirtilen bağımsız değişkenler kullanılarak oluşturulan belirtilen türün nesnesine bir [unique_ptr](../standard-library/unique-ptr-class.md) oluşturur ve döndürür.
 
 ```cpp
 // make_unique<T>
@@ -715,38 +715,38 @@ template <class T, class... Types>
 
 ### <a name="parameters"></a>Parametreler
 
-*T*\
-Nesne türü, `unique_ptr` işaret.
+*ŞI*\
+Öğesinin işaret `unique_ptr` edecek nesnenin türü.
 
-*Türleri*\
-Tarafından belirtilen oluşturucu bağımsız değişken türlerinin *Args*.
+*Türü*\
+Bağımsız *değişkenler tarafından belirtilen*Oluşturucu bağımsız değişkenlerinin türleri.
 
-*bağımsız değişken*\
-Nesne türü oluşturucusuna geçirilecek bağımsız değişkenleri *T*.
+*Args*\
+*T*türünde nesnenin oluşturucusuna geçirilecek bağımsız değişkenler.
 
 *Elem*\
-Bir dizi türünde öğeler *T*.
+*T*türünde öğelerin dizisi.
 
-*Boyutu*\
-Yeni bir dizi için alan ayırmak için öğe sayısı.
+*Boyutla*\
+Yeni dizide boşluk ayrılacak öğe sayısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk aşırı yükleme tek nesneler için kullanılır, ikinci aşırı yükleme diziler için çağrılır ve üçüncü aşırı yükleme, tür bağımsız değişkeni bir dizi boyutu belirtmelerini engeller. (make_unique\<T [N] >); Bu yapı, geçerli tarafından desteklenmiyor Standart. Kullanırken `make_unique` oluşturmak için bir `unique_ptr` diziye bir dizi öğelerini ayrı ayrı başlatmanız gerekir. Bu aşırı yükleme düşünüyorsanız belki de daha iyi bir seçenek kullanmaktır bir [std::vector](../standard-library/vector-class.md).
+İlk aşırı yükleme tek nesneler için kullanılır, ikinci aşırı yükleme diziler için çağrılır ve üçüncü aşırı yükleme, tür bağımsız değişkeninde (make_unique\<T [N] >) bir dizi boyutu belirtmesini önler; bu oluşturma geçerli bir nesne tarafından desteklenmiyor Stand. Bir diziye bir `make_unique` `unique_ptr` oluşturmak için kullandığınızda, dizi öğelerini ayrı olarak başlatmalısınız. Bu aşırı yüklemeyi düşünüyorsanız, bir [std:: vector](../standard-library/vector-class.md)kullanmak daha iyi bir seçimdir.
 
-Çünkü `make_unique` dikkatle olan özel durum güvenliği için uygulanan kullanmanızı öneririz `make_unique` doğrudan çağırmak yerine `unique_ptr` oluşturucular.
+Özel durum güvenliği için dikkatle uygulandığından, oluşturucuları doğrudan çağırmak `unique_ptr` yerine kullanmanızı `make_unique` öneririz. `make_unique`
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki örnek nasıl kullanılacağını gösterir `make_unique`. Daha fazla örnek için bkz. [nasıl yapılır: Unique_ptr örnekleri oluşturma ve kullanma](../cpp/how-to-create-and-use-unique-ptr-instances.md).
+Aşağıdaki örnek nasıl kullanılacağını `make_unique`göstermektedir. Daha fazla örnek için bkz [. nasıl yapılır: Unique_ptr örnekleri](../cpp/how-to-create-and-use-unique-ptr-instances.md)oluşturun ve kullanın.
 
 [!code-cpp[stl_smart_pointers#214](../cpp/codesnippet/CPP/memory-functions_1.cpp)]
 
-İle hatası C2280 gördüğünüzde bir `unique_ptr`, olasılıkla olduğu silinmiş bir işlevi, kopya oluşturucuyu çağırmak çalıştığınız için.
+Bir `unique_ptr`ile bağlantılı olarak hata C2280 gördüğünüzde, bu, silinmiş bir işlev olan kopya oluşturucusunu çağırmaya çalışırken neredeyse kesinlikle olur.
 
-## <a name="owner_less"></a> owner_less
+## <a name="owner_less"></a>owner_less
 
-Paylaşılan ve zayıf işaretçilerin sahiplik temelli karışık karşılaştırmalarını sağlar. Döndürür **true** sol parametre sağ parametre önce üye işlevi tarafından sıralanır, `owner_before`.
+Paylaşılan ve zayıf işaretçilerin sahiplik temelli karışık karşılaştırmalarını sağlar. Sol  parametre üye işlevin `owner_before`sağ parametresinden önce sipariş alıyorsa true değerini döndürür.
 
 ```cpp
 template <class Type>
@@ -785,19 +785,19 @@ struct owner_less<weak_ptr<Type>>
 
 ### <a name="parameters"></a>Parametreler
 
-*_left*\
-Paylaşılan veya zayıf işaretçi.
+*_sol*\
+Paylaşılan veya zayıf bir işaretçi.
 
-*sağ*\
-Paylaşılan veya zayıf işaretçi.
+*Right*\
+Paylaşılan veya zayıf bir işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon sınıfları döndüren olarak kendi üye işleçleri tanımlama `left.owner_before(right)`.
+Şablon sınıfları, tüm üye işleçlerini döndüren `left.owner_before(right)`olarak tanımlar.
 
-## <a name="return_temporary_buffer"></a> return_temporary_buffer
+## <a name="return_temporary_buffer"></a>return_temporary_buffer
 
-Kullanılarak ayrılan geçici bellek ayırmayı iptal eder `get_temporary_buffer` şablon işlevi.
+`get_temporary_buffer` Şablon işlevi kullanılarak ayrılan geçici belleği kaldırır.
 
 ```cpp
 template <class Type>
@@ -806,12 +806,12 @@ template <class Type>
 
 ### <a name="parameters"></a>Parametreler
 
-*_Pbuf*\
-Serbest bırakılması bellek işaretçisi.
+*_Parabelleğe*\
+Serbest bırakmak için belleğe yönelik bir işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev, yalnızca geçici bellek için kullanılmalıdır.
+Bu işlev yalnızca geçici olan bellek için kullanılmalıdır.
 
 ### <a name="example"></a>Örnek
 
@@ -851,9 +851,9 @@ The number of elements that the allocated memory
 could store is given by: resultPair.second = 7.
 ```
 
-## <a name="static_pointer_cast"></a> static_pointer_cast
+## <a name="static_pointer_cast"></a>static_pointer_cast
 
-Shared_ptr statik dönüştürme.
+Shared_ptr 'e statik atama.
 
 ```cpp
 template <class Ty, class Other>
@@ -862,18 +862,18 @@ template <class Ty, class Other>
 
 ### <a name="parameters"></a>Parametreler
 
-*Ty*\
-Döndürülen paylaşılan işaretçiyle kontrol edilen tür.
+*Kalite*\
+Döndürülen paylaşılan işaretçi tarafından denetlenen tür.
 
-*Diğer*\
-Bağımsız değişken paylaşılan işaretçiyle kontrol edilen tür.
+*Farklı*\
+Bağımsız değişken paylaşılan işaretçisi tarafından denetlenen tür.
 
-*Diğer*\
-Bağımsız değişken paylaşılan işaretçi.
+*Farklı*\
+Bağımsız değişken paylaşılan işaretçisi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon işlevi boş shared_ptr nesneyi döndürür `sp` boş `shared_ptr` nesne; Aksi halde döndürür bir [shared_ptr sınıfı](../standard-library/shared-ptr-class.md)\<Ty > tarafındansahipolunankaynağınsahibinesnesi`sp`. İfade `static_cast<Ty*>(sp.get())` geçerli olmalıdır.
+Şablon `sp` işlevi boş `shared_ptr` bir nesne ise boş bir shared_ptr nesnesi döndürür; Aksi takdirde, sahip olduğu kaynağa sahip olan [shared_ptr sınıf](../standard-library/shared-ptr-class.md)\<Ty `sp`> nesnesini döndürür. İfade `static_cast<Ty*>(sp.get())` geçerli olmalıdır.
 
 ### <a name="example"></a>Örnek
 
@@ -910,9 +910,9 @@ int main()
 sp1->val == 3
 ```
 
-## <a name="swap"></a> değiştirme
+## <a name="swap"></a>Kur
 
-İki shared_ptr veya weak_ptr nesneleri değiştirme.
+İki shared_ptr veya weak_ptr nesnesini takas edin.
 
 ```cpp
 template <class Ty, class Other>
@@ -924,21 +924,21 @@ template <class Ty, class Other>
 
 ### <a name="parameters"></a>Parametreler
 
-*Ty*\
-Sol/zayıf paylaşılan işaretçiyle kontrol edilen tür.
+*Kalite*\
+Sol paylaşılan/zayıf işaretçi tarafından denetlenen tür.
 
-*Diğer*\
-Doğrudan paylaşılan/zayıf işaretçiyle kontrol edilen tür.
+*Farklı*\
+Doğru paylaşılan/zayıf işaretçi tarafından denetlenen tür.
 
-*Sol*\
-Sol paylaşılan zayıf işaretçi.
+*tarafta*\
+Sol paylaşılan/zayıf işaretçi.
 
-*sağ*\
-Doğrudan paylaşılan/zayıf işaretçi.
+*Right*\
+Doğru paylaşılan/zayıf işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablonu işlev çağrısı `left.swap(right)`.
+Şablon işlevleri çağırır `left.swap(right)`.
 
 ### <a name="example"></a>Örnek
 
@@ -993,7 +993,7 @@ int main()
 *wp1 == 5
 ```
 
-## <a name="undeclare_no_pointers"></a> undeclare_no_pointers
+## <a name="undeclare_no_pointers"></a>undeclare_no_pointers
 
 Taban adresi işaretçisi ve blok boyutu tarafından bellek bloğuna tanımlanan Bellek bloğu karakterlerin artık izlenebilir işaretçileri içerebileceğini atık toplayıcıya bildirir.
 
@@ -1003,11 +1003,11 @@ void undeclare_no_pointers(char* ptr, size_t _Size);
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşlev herhangi bir atık Toplayıcıya bildirir, adres aralığını `[ptr, ptr + _Size)` artık izlenebilir işaretçileri içerebileceğini.
+İşlev, adres `[ptr, ptr + _Size)` aralığının artık izlenebilecek işaretçiler içerebileceğini belirten tüm çöp toplayıcıyı bilgilendirir.
 
-## <a name="undeclare_reachable"></a> undeclare_reachable
+## <a name="undeclare_reachable"></a>undeclare_reachable
 
-Bir bildirimi için belirtilen bellek konumuna erişimi iptal eder.
+Belirtilen bellek konumu için ulaşılabilirlik bildirimini iptal eder.
 
 ```cpp
 template <class Type>
@@ -1016,14 +1016,14 @@ template <class Type>
 
 ### <a name="parameters"></a>Parametreler
 
-*PTR*\
-Bellek adresi erişilebilir bildirimi olmayan bir işaretçi.
+*kaydetmeye*\
+Belirtilecek bellek adresine yönelik bir işaretçiye ulaşılamıyor.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsa *ptr* değil **nullptr**, işlev herhangi bir atık Toplayıcıya bildirir, *ptr* artık erişilebilir değil. Eşittir karşılaştıran ve güvenli bir şekilde türetilen bir işaretçi döndürür *ptr*.
+*PTR* bir **nullptr**değilse, işlev, *PTR* 'nin artık erişilebilir olmadığı tüm atık toplayıcısına bildirir. Bu, *PTR*ile aynı karşılaştırması yapan güvenle türetilmiş bir işaretçi döndürür.
 
-## <a name="uninitialized_copy"></a> uninitialized_copy
+## <a name="uninitialized_copy"></a>uninitialized_copy
 
 Nesneleri belirli bir kaynak aralığından başlatılmamış hedef aralığına kopyalar.
 
@@ -1034,18 +1034,18 @@ template <class InputIterator, class ForwardIterator>
 
 ### <a name="parameters"></a>Parametreler
 
-*ilk*\
+*adı*\
 Kaynak aralıktaki ilk öğeyi ele alan bir giriş yineleyici.
 
-*Son*\
+*soyadına*\
 Kaynak aralıktaki son öğeyi ele alan bir giriş yineleyici.
 
-*Hedef*\
+*HD*\
 Hedef aralıktaki ilk öğeyi bulan ileriye doğru yineleyici.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Kaynak aralığı boş olmadıkça hedef aralığın ötesindeki ilk konumu ele alan ileriye doğru yineleyici.
+Kaynak aralığı boş olmadığı takdirde, hedef aralığın ötesinde ilk konumu ele alarak ileriye doğru bir yineleyici.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -1128,7 +1128,7 @@ int main()
 }
 ```
 
-## <a name="uninitialized_copy_n"></a> uninitialized_copy_n
+## <a name="uninitialized_copy_n"></a>uninitialized_copy_n
 
 Bir girdi yineleyicisinde belirtilen öğe sayısının bir kopyasını oluşturur. Kopyalar ileri doğru bir yineleyicinin içine yerleştirilir.
 
@@ -1142,18 +1142,18 @@ ForwardIterator uninitialized_copy_n(
 
 ### <a name="parameters"></a>Parametreler
 
-*ilk*\
+*adı*\
 Kopyalanacak nesneye başvuran Bir girdi yineleyicisi.
 
-*Sayısı*\
+*biriktirme*\
 Nesnenin kaç defa kopyalanacağını belirten işaretli veya işaretsiz tamsayı türü.
 
-*Hedef*\
+*HD*\
 Yeni kopyanın gideceği yere başvuran ileri doğru yineleyici.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Hedefin ötesindeki ilk konuma yönelen ileri doğru yineleyici. Kaynak aralığı boşsa yineleyici *ilk*.
+Hedefin ötesindeki ilk konuma yönelen ileri doğru yineleyici. Kaynak aralığı boşsa, yineleyici *ilk*olarak ele alınmaktadır.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -1168,7 +1168,7 @@ Hedefin ötesindeki ilk konuma yönelen ileri doğru yineleyici. Kaynak aralığ
 
 Kod bir özel durum oluşturmadıkça. Bu durumda, tüm oluşturulmuş nesneler yok edilir ve özel durum yeniden oluşur.
 
-## <a name="uninitialized_default_construct"></a> uninitialized_default_construct
+## <a name="uninitialized_default_construct"></a>uninitialized_default_construct
 
 ```cpp
 template <class ForwardIterator>
@@ -1185,7 +1185,7 @@ for (; first != last; ++first)
         typename iterator_traits<ForwardIterator>::value_type;
 ```
 
-## <a name="uninitialized_default_construct_n"></a> uninitialized_default_construct_n
+## <a name="uninitialized_default_construct_n"></a>uninitialized_default_construct_n
 
 ```cpp
 template <class ForwardIterator, class Size>
@@ -1202,7 +1202,7 @@ for (; n>0; (void)++first, --n)
         typename iterator_traits<ForwardIterator>::value_type; return first;
 ```
 
-## <a name="uninitialized_fill"></a> uninitialized_fill
+## <a name="uninitialized_fill"></a>uninitialized_fill
 
 Belirli bir değerin nesnelerini başlatılmamış hedef aralığına kopyalar.
 
@@ -1213,13 +1213,13 @@ template <class ForwardIterator, class Type>
 
 ### <a name="parameters"></a>Parametreler
 
-*ilk*\
-Başlatılacak olan hedef aralıktaki ilk öğeyi bulan ileriye doğru yineleyici.
+*adı*\
+Başlatılacak hedef aralıktaki ilk öğeyi ele alan bir ileriye doğru yineleyici.
 
-*Son*\
-Başlatılacak olan hedef aralıktaki son öğeyi ele alan ileriye doğru yineleyici.
+*soyadına*\
+Başlatılacak hedef aralıktaki son öğeyi ele alan bir ileriye doğru yineleyici.
 
-*VAL*\
+*Acil*\
 Hedef aralığı başlatmak için kullanılacak değer.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -1274,7 +1274,7 @@ int main( )
 The initialized Array contains: 25 25 25 25 25 25 25 25 25 25
 ```
 
-## <a name="uninitialized_fill_n"></a> uninitialized_fill_n
+## <a name="uninitialized_fill_n"></a>uninitialized_fill_n
 
 Belirli bir değerin nesnelerini belirli sayıda öğenin başlatılmamış hedef aralığı içine kopyalar.
 
@@ -1285,13 +1285,13 @@ template <class FwdIt, class Size, class Type>
 
 ### <a name="parameters"></a>Parametreler
 
-*ilk*\
+*adı*\
 Başlatılacak hedef aralıktaki ilk öğeyi bulan ileriye doğru yineleyici.
 
-*Sayısı*\
+*biriktirme*\
 Başlatılacak öğe sayısı.
 
-*VAL*\
+*Acil*\
 Hedef aralığı başlatmak için kullanılacak değer.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -1338,7 +1338,7 @@ int main() {
 }
 ```
 
-## <a name="uninitialized_move"></a> uninitialized_move
+## <a name="uninitialized_move"></a>uninitialized_move
 
 ```cpp
 template <class InputIterator, class ForwardIterator>
@@ -1356,9 +1356,9 @@ for (; first != last; (void)++result, ++first)
         return result;
 ```
 
-Bir özel durum oluşturulursa, bazı nesneler aralığında geçerli ancak belirsiz bir durumda kalmayabilir.
+Bir özel durum oluşturulursa, aralıktaki bazı nesneler geçerli ancak belirtilmeyen bir durumda kalabilir.
 
-## <a name="uninitialized_move_n"></a> uninitialized_move_n
+## <a name="uninitialized_move_n"></a>uninitialized_move_n
 
 ```cpp
 template <class InputIterator, class Size, class ForwardIterator>
@@ -1375,9 +1375,9 @@ for (; n > 0; ++result, (void) ++first, --n)
         typename iterator_traits<ForwardIterator>::value_type(std::move(*first)); return {first,result};
 ```
 
-Bir özel durum oluşturulursa, bazı nesneler aralığında geçerli ancak belirsiz bir durumda kalmayabilir.
+Bir özel durum oluşturulursa, aralıktaki bazı nesneler geçerli ancak belirtilmeyen bir durumda kalabilir.
 
-## <a name="uninitialized_value_construct"></a> uninitialized_value_construct
+## <a name="uninitialized_value_construct"></a>uninitialized_value_construct
 
 ```cpp
 template <class ForwardIterator>
@@ -1394,7 +1394,7 @@ for (; first != last; ++first)
         typename iterator_traits<ForwardIterator>::value_type();
 ```
 
-## <a name="uninitialized_value_construct_n"></a> uninitialized_value_construct_n
+## <a name="uninitialized_value_construct_n"></a>uninitialized_value_construct_n
 
 ```cpp
 template <class ForwardIterator, class Size>
@@ -1408,7 +1408,7 @@ for (; n>0; (void)++first, --n)
         typename iterator_traits<ForwardIterator>::value_type(); return first;
 ```
 
-## <a name="uses_allocator_v"></a> uses_allocator_v
+## <a name="uses_allocator_v"></a>uses_allocator_v
 
 ```cpp
 template <class T, class Alloc>
@@ -1417,4 +1417,4 @@ template <class T, class Alloc>
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[\<bellek >](../standard-library/memory.md)<br/>
+[\<bellek >](../standard-library/memory.md)

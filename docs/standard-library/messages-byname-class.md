@@ -6,16 +6,16 @@ f1_keywords:
 helpviewer_keywords:
 - messages_byname class
 ms.assetid: c6c64841-3e80-43c8-b54c-fed41833ad6b
-ms.openlocfilehash: 7b341f3e1dbf76021911c70560b83932b5302191
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b8fe1ab2db792819831f5c50aa99a02559f71cdd
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62404799"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68451813"
 ---
 # <a name="messagesbyname-class"></a>messages_byname Sınıfı
 
-Türetilmiş bir şablon sınıfı yerelleştirilmiş iletilerin alınmasını sağlayan verili bir yerel ayar, bir ileti modeli olarak hizmet verebilen bir nesneyi tanımlar.
+Türetilmiş şablon sınıfı, yerelleştirilmiş iletilerin alınmasını etkinleştirerek, belirli bir yerel ayarın ileti modeli olarak kullanılabilecek bir nesneyi tanımlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -39,22 +39,22 @@ protected:
 
 ### <a name="parameters"></a>Parametreler
 
-*_Locname*<br/>
+*_Locname*\
 Adlandırılmış bir yerel ayar.
 
-*_Refs*<br/>
-Bir ilk başvuru sayısı.
+*_Refs*\
+İlk başvuru sayısı.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Davranışını adlandırılmış yerel ayar tarafından belirlenir *_Locname*. Her Oluşturucu, temel nesnesiyle başlatır [iletileri](../standard-library/messages-class.md#messages)\<CharType > ( `_Refs`).
+Davranışı adlandırılmış yerel ayar *_Locname*tarafından belirlenir. Her Oluşturucu kendi temel nesnesini > CharType ( `_Refs`) [iletileri](../standard-library/messages-class.md#messages)\<ile başlatır.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** \<yerel ayar >
+**Üst bilgi:** \<yerel ayar >
 
-**Namespace:** std
+**Ad alanı:** std
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
+[C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)
