@@ -20,16 +20,16 @@ helpviewer_keywords:
 - std::stack [C++], size
 - std::stack [C++], top
 ms.assetid: 02151c1e-eab0-41b8-be94-a839ead78ecf
-ms.openlocfilehash: 36074f75830f92ba3fb9e5edb4e1507aa5ae1407
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.openlocfilehash: d282d3ea54528b422509f4259e2d9a191f88e091
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68241058"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68453781"
 ---
 # <a name="stack-class"></a>stack Sınıfı
 
-Bir kısıtlama bazı temel alınan bir kapsayıcı türü için en son eklenen öğeye erişimi sınırlandırma işlevsellik sağlayan şablon kapsayıcı bağdaştırıcı sınıfı. Stack sınıfı yalnızca yığın işlemleri kapsayıcı üzerinde gerçekleştirilen açık olması önemli olduğunda kullanılır.
+Bazı temel kapsayıcı türlerine en son eklenen öğeye erişimi sınırlayan bir işlev kısıtlaması sağlayan şablon kapsayıcı bağdaştırıcı sınıfı. Yığın sınıfı, kapsayıcıda yalnızca yığın işlemlerinin gerçekleştirildiğinden emin olmak önemliyse kullanılır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -40,25 +40,25 @@ class stack
 
 ### <a name="parameters"></a>Parametreler
 
-*Türü*\
-Yığın içinde depolanacak öğe veri türü.
+*Türüyle*\
+Yığında depolanacak öğe veri türü.
 
 *Kapsayıcı*\
-Yığın uygulamak için kullanılan temel alınan kapsayıcı türü. Varsayılan değer sınıfı, `deque`  *\<türü >* .
+Yığını uygulamak için kullanılan temeldeki kapsayıcının türü. Varsayılan değer `deque`> sınıf  *\<türüdür*.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Sınıfına ait öğelerin `Type` ilk şablon, belirlenen bir yığın nesnesinin parametresi işlevlerindeki [value_type](#value_type) ve temel alınan kapsayıcı sınıfı bir öğenin türüyle eşleşmelidir `Container` tarafından görünürlüğe İkinci şablon parametresi. `Type` Türündeki nesnelerin kopyalayın ve bu türün değişkenlerine değer atamak için mümkün olması atanabilir, olmalıdır.
+Bir Stack nesnesinin ilk `Type` Şablon parametresinde stıpulan sınıfının öğeleri, [value_type](#value_type) ile eşanlamlı ve ikinci şablon tarafından kullanılan temeldeki kapsayıcı sınıfında `Container` öğe türüyle eşleşmesi gerekir parametresinin. , `Type` Bu türdeki nesneleri kopyalamak ve bu türdeki değişkenlere değer atamak mümkün olduğundan, atanabilir olmalıdır.
 
-Yığın için uygun alt kapsayıcı sınıflarını içerir [deque](../standard-library/deque-class.md), [listesinde sınıfı](../standard-library/list-class.md), ve [vector sınıfı](../standard-library/vector-class.md), ya da işlemleri destekleyen herhangi bir dizisi kapsayıcısına `back`, `push_back`, ve `pop_back`. Temel alınan kapsayıcı sınıfı, ortak bir arabirim olarak sıralı kapsayıcı üye işlevleri sınırlı sayıda yalnızca sunan kapsayıcı bağdaştırıcısı içinde kapsüllenir.
+Yığın için uygun temel kapsayıcı sınıfları, [deque](../standard-library/deque-class.md), [list Class](../standard-library/list-class.md)ve [Vector sınıfı](../standard-library/vector-class.md)ya da `back`, `push_back`ve `pop_back`işlemlerini destekleyen herhangi bir sıra kapsayıcısını içerir. Temel alınan kapsayıcı sınıfı kapsayıcı bağdaştırıcısında kapsüllenir, bu da yalnızca ortak arabirim olarak dizi kapsayıcısı üye işlevlerinin sınırlı kümesini sunar.
 
-Yığın nesneleri: eşitlik için karşılaştırılabilir ise ve yalnızca sınıfın öğelerine `Type` eşitlik benzerdir ve küçük-karşılaştırılabilir ve yalnızca daha sınıfına ait öğelerin `Type` küçüktür-daha karşılaştırılabilir.
+Yığın nesneleri eşitlik karşılaştırılabilir ve yalnızca sınıf `Type` öğeleri eşitlik karşılaştırılabilir ise ve yalnızca sınıf `Type` öğeleri karşılaştırılabilir değilse küçüktür ve karşılaştırılabilir.
 
-- Stack sınıfı, bir son giren ilk çıkar (LIFO) veri yapısını destekler. Akılda tutulması için iyi bir analog kalıplarını yığınını olacaktır. Öğeleri (kalıplarını) eklendiğinde, inceledi veya yalnızca en son öğe temel kapsayıcı sonunda yığın kaldırılır. Yalnızca üst öğesi erişme kısıtlamasını stack sınıfı kullanarak nedenidir.
+- Stack sınıfı, son bir ilk çıkar (LıFO) veri yapısını destekler. Göz önünde bulundurmanız gereken bir şey, bir levha yığını olacaktır. Öğeler (levhalar), temel kapsayıcının sonundaki son öğe olan yığının en üstünden eklenebilir, incelenebilir veya kaldırılabilir. Yalnızca Top öğesine erişme kısıtlaması, Stack sınıfının kullanılmasına neden olur.
 
-- [Kuyruk sınıfı](../standard-library/queue-class.md) bir ilk giren ilk çıkar (FIFO) veri yapısını destekler. Akılda tutulması için iyi bir analog bir banka gişe için hizalama kişi olacaktır. Öğeleri (kişi), satırın geri eklenebilir ve satır önünden kaldırılır. Hem ön hem de bir satırın geri inceledi. Bu şekilde yalnızca ön ve arka öğelere erişme kısıtlamasını queue sınıfı kullanarak nedeni kürk ' dir.
+- [Queue sınıfı](../standard-library/queue-class.md) , ilk kez ilk çıkar (FIFO) veri yapısını destekler. İnsanların bir banka teller için yukarı doğru tutulması yararlı olacaktır. Öğeler (kişiler) satırın arkasına eklenebilir ve satırın önüne kaldırılır. Bir çizginin ön ve arka ucu incelenebilir. Yalnızca ön ve geri öğelerine bu şekilde erişme kısıtlaması, kuyruk sınıfını kullanan bir nedenidir.
 
-- [Priority_queue sınıfı](../standard-library/priority-queue-class.md) en büyük öğe her zaman üst konumunda olması, öğeleri sıralar. Bu, bir öğe ve inceleme, ekleme ve kaldırma üst öğenin destekler. Burada, yaş, yüksekliğe veya diğer bir ölçüte göre düzenlenmiş yukarı hizalama kişiler akılda tutulması için iyi bir analog olacaktır.
+- [Priority_queue sınıfı](../standard-library/priority-queue-class.md) , öğelerini en büyük öğenin her zaman en üstteki konumda olacak şekilde sıralar. Bir öğenin eklenmesini ve en üstteki öğenin incelemesini ve kaldırılmasını destekler. İnsanların yaş, yükseklik veya diğer ölçütlere göre düzenlendikleri yere göz önünde bulundurmanız gereken iyi bir yoldur.
 
 ## <a name="members"></a>Üyeler
 
@@ -66,29 +66,29 @@ Yığın nesneleri: eşitlik için karşılaştırılabilir ise ve yalnızca sı
 
 |||
 |-|-|
-|[Yığın](#stack)|Oluşturur bir `stack` boş veya bir temel kapsayıcı nesnesinin bir kopyasını başka bir deyişle olduğu.|
+|[yığın](#stack)|`stack` Boş veya temel kapsayıcı nesnesinin bir kopyası olan oluşturur.|
 
 ### <a name="typedefs"></a>Tür tanımları
 
 |||
 |-|-|
-|[container_type](#container_type)|Temel olarak uyarlanabilen kapsayıcıya sağlayan bir tür bir `stack`.|
-|[size_type](#size_type)|İçindeki öğelerin sayısını temsil edebilen bir işaretsiz tamsayı türü bir `stack`.|
-|[value_type](#value_type)|Bir öğe olarak depolanan nesne türünü temsil eden bir tür bir `stack`.|
+|[container_type](#container_type)|Tarafından uyarlanabilen temel kapsayıcıyı sağlayan bir tür `stack`.|
+|[size_type](#size_type)|İçindeki öğe sayısını temsil eden işaretsiz bir tamsayı türü `stack`.|
+|[value_type](#value_type)|İçindeki bir öğe olarak depolanan nesne türünü temsil eden bir tür `stack`.|
 
 ### <a name="functions"></a>İşlevler
 
 |||
 |-|-|
-|[boş](#empty)|Olmadığını test eder `stack` boştur.|
-|[POP](#pop)|Öğe üst kısmından kaldırır `stack`.|
-|[push](#push)|Bir öğe üstüne ekler `stack`.|
-|[Boyutu](#size)|İçindeki öğelerin sayısını döndürür `stack`.|
-|[Sayfanın Üstü](#top)|Üst kısmında bir öğeye bir başvuru döndürür `stack`.|
+|[empty](#empty)|`stack` Boşsa sınar.|
+|[cağımız](#pop)|Öğesini öğesinin üst `stack`öğesinden kaldırır.|
+|[push](#push)|Öğesinin üstüne `stack`bir öğesi ekler.|
+|[boyutla](#size)|İçindeki öğelerin sayısını döndürür `stack`.|
+|[Sayfanın Üstü](#top)|Öğesinin en üstündeki `stack`öğesine bir başvuru döndürür.|
 
-## <a name="container_type"></a> container_type
+## <a name="container_type"></a>container_type
 
-Temel uyarlanabilen kapsayıcıya sağlayan bir tür.
+Uyarlanabilen temel kapsayıcıyı sağlayan bir tür.
 
 ```cpp
 typedef Container container_type;
@@ -96,17 +96,17 @@ typedef Container container_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon parametresi için bir eşanlamlı türüdür `Container`. Üç tüm C++ Standart Kitaplığı dizisi kapsayıcı sınıfları — vector sınıfı, liste sınıfı ve varsayılan sınıf deque — gereksinimlerini bir yığın nesnesi için temel bir kapsayıcı olarak kullanılacak. Bu gereksinimlerin karşılanması kullanıcı tanımlı türler de kullanılabilir.
+Tür, şablon parametresi `Container`için bir eş anlamlı. Tüm üç C++ standart kitaplık sırası kapsayıcı sınıfları — vektör sınıfı, liste sınıfı ve varsayılan Sınıf deque — bir yığın nesnesi için temel kapsayıcı olarak kullanılacak gereksinimleri karşılar. Bu gereksinimleri karşılayan Kullanıcı tanımlı türler de kullanılabilir.
 
-Daha fazla bilgi için `Container`, Açıklamalar bölümüne bakın [stack sınıfı](../standard-library/stack-class.md) konu.
+Hakkında `Container`daha fazla bilgi için [Stack Class](../standard-library/stack-class.md) konusunun açıklamalar bölümüne bakın.
 
 ### <a name="example"></a>Örnek
 
-Örneğin bakın [stack::stack](#stack) bildirme ve kullanma konusunda bir örnek için `container_type`.
+Bildirme ve kullanma `container_type`hakkında bir örnek için [Stack:: Stack](#stack) örneğine bakın.
 
-## <a name="empty"></a> boş
+## <a name="empty"></a>olmamalıdır
 
-Bir yığını boş olup olmadığını sınar.
+Bir yığının boş olup olmadığını sınar.
 
 ```cpp
 bool empty() const;
@@ -114,7 +114,7 @@ bool empty() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**doğru** yığın boşsa; **false** yığını boş ise.
+yığın boşsa **doğru** ; yığın boş değilse **false** .
 
 ### <a name="example"></a>Örnek
 
@@ -149,9 +149,9 @@ The stack s1 is not empty.
 The stack s2 is empty.
 ```
 
-## <a name="pop"></a> POP
+## <a name="pop"></a>cağımız
 
-Öğeyi yığın üst kısmından kaldırır.
+Öğeyi yığının en üstünden kaldırır.
 
 ```cpp
 void pop();
@@ -159,7 +159,7 @@ void pop();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yığın, üye işlevi uygulamak için boş olmamalıdır. Yığının üstü en son eklenen öğe tarafından kullanılan konumu ve son öğe kapsayıcı sonunda.
+Üye işlevini uygulamak için yığının boş olması gerekir. Yığının en üst öğesi, en son eklenen öğe tarafından bulunan ve kapsayıcının sonundaki son öğe olan konumudur.
 
 ### <a name="example"></a>Örnek
 
@@ -205,9 +205,9 @@ After a pop, the stack length is 2.
 After a pop, the element at the top of the stack is 20.
 ```
 
-## <a name="push"></a> anında iletme
+## <a name="push"></a>hareketle
 
-Bir öğeyi yığın üstüne ekler.
+Yığının en üstüne bir öğe ekler.
 
 ```cpp
 void push(const Type& val);
@@ -215,12 +215,12 @@ void push(const Type& val);
 
 ### <a name="parameters"></a>Parametreler
 
-*VAL*\
-Yığın üstüne eklenen öğe.
+*Acil*\
+Yığın üst kısmına eklenen öğe.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yığının üstü en son eklenen öğe tarafından kullanılan konumu ve son öğe kapsayıcı sonunda.
+Yığının en üst öğesi, en son eklenen öğe tarafından bulunan ve kapsayıcının sonundaki son öğe olan konumudur.
 
 ### <a name="example"></a>Örnek
 
@@ -254,9 +254,9 @@ The stack length is 3.
 The element at the top of the stack is 30.
 ```
 
-## <a name="size"></a> Boyutu
+## <a name="size"></a>boyutla
 
-Yığın içinde öğelerin sayısını döndürür.
+Yığındaki öğe sayısını döndürür.
 
 ```cpp
 size_type size() const;
@@ -264,7 +264,7 @@ size_type size() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yığın geçerli uzunluğu.
+Yığının geçerli uzunluğu.
 
 ### <a name="example"></a>Örnek
 
@@ -295,9 +295,9 @@ The stack length is 1.
 The stack length is now 2.
 ```
 
-## <a name="size_type"></a> size_type
+## <a name="size_type"></a>size_type
 
-Bir yığın içindeki öğelerin sayısını temsil edebilen bir işaretsiz tamsayı türü.
+Bir yığındaki öğelerin sayısını temsil eden işaretsiz bir tamsayı türü.
 
 ```cpp
 typedef typename Container::size_type size_type;
@@ -305,15 +305,15 @@ typedef typename Container::size_type size_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Türü eşanlamlıdır `size_type` yığını tarafından uyarlanmış temel kapsayıcının.
+Tür, yığın tarafından uyarlanan `size_type` taban kapsayıcının eşanlamlısıdır.
 
 ### <a name="example"></a>Örnek
 
-Örneğin bakın [boyutu](#size) bildirme ve kullanma konusunda bir örnek için `size_type`.
+Nasıl bildirilemeyeceğini ve [](#size) `size_type`kullanılacağına ilişkin bir örnek için boyut örneğine bakın.
 
-## <a name="stack"></a> Yığın
+## <a name="stack"></a>yığın
 
-Bir yığını boş olan veya bir temel kapsayıcı sınıfı bir kopyasını oluşturur.
+Boş olan veya temel kapsayıcı sınıfının kopyası olan bir yığın oluşturur.
 
 ```cpp
 stack();
@@ -323,8 +323,8 @@ explicit stack(const container_type& right);
 
 ### <a name="parameters"></a>Parametreler
 
-*sağ*\
-Oluşturulan yığın kopyası olacak olduğu kapsayıcı.
+*Right*\
+Oluşturulan yığının bir kopya olduğu kapsayıcı.
 
 ### <a name="example"></a>Örnek
 
@@ -365,9 +365,9 @@ int main( )
 The element at the top of stack vsi2 is 1.
 ```
 
-## <a name="top"></a> Sayfanın Üstü
+## <a name="top"></a>Sayfanın Üstü
 
-Yığının üst öğeye bir başvuru döndürür.
+Yığının en üstünde bir öğeye bir başvuru döndürür.
 
 ```cpp
 reference top();
@@ -377,13 +377,13 @@ const_reference top() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yığının üst kapsayıcı içindeki son öğeden bir başvuru.
+Yığının en üstündeki kapsayıcıda bulunan son öğeye başvuru.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yığın, üye işlevi uygulamak için boş olmamalıdır. Yığının üstü en son eklenen öğe tarafından kullanılan konumu ve son öğe kapsayıcı sonunda.
+Üye işlevini uygulamak için yığının boş olması gerekir. Yığının en üst öğesi, en son eklenen öğe tarafından bulunan ve kapsayıcının sonundaki son öğe olan konumudur.
 
-Varsa dönüş değerinin `top` atanan bir `const_reference`, yığın nesnesi değiştirilemez. Varsa dönüş değerinin `top` atanan bir `reference`, yığın nesnesi değiştirilebilir.
+Dönüş değeri `top` `const_reference`öğesine atanırsa, yığın nesnesi değiştirilemez. Dönüş değeri `top` `reference`öğesine atanırsa, yığın nesnesi değiştirilebilir.
 
 ### <a name="example"></a>Örnek
 
@@ -416,9 +416,9 @@ The top integer of the stack s1 is 2.
 The next integer down is 1.
 ```
 
-## <a name="value_type"></a> value_type
+## <a name="value_type"></a>value_type
 
-Bir yığın içinde bir öğe olarak depolanan nesne türünü temsil eden tür.
+Bir yığında bir öğe olarak depolanan nesne türünü temsil eden bir tür.
 
 ```cpp
 typedef typename Container::value_type value_type;
@@ -426,7 +426,7 @@ typedef typename Container::value_type value_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Türü eşanlamlıdır `value_type` yığını tarafından uyarlanmış temel kapsayıcının.
+Tür, yığın tarafından uyarlanan `value_type` taban kapsayıcının eşanlamlısıdır.
 
 ### <a name="example"></a>Örnek
 
@@ -459,5 +459,5 @@ The element at the top of the stack is 69.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
-[C++ Standart Kitaplığı Başvurusu](../standard-library/cpp-standard-library-reference.md)<br/>
+[C++ Standart kitaplıkta Iş parçacığı güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)\
+[C++ Standart Kitaplığı Başvurusu](../standard-library/cpp-standard-library-reference.md)

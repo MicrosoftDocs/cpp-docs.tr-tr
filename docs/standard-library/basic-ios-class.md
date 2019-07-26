@@ -55,16 +55,16 @@ helpviewer_keywords:
 - std::basic_ios [C++], tie
 - std::basic_ios [C++], widen
 ms.assetid: 4fdcd8e1-62d2-4611-8a70-1e4f58434007
-ms.openlocfilehash: c22e048d01665deed83a9474525f414dfd874fe0
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e2341dcc0f2f03fbfa212d1ea49993016e193638
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62400662"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68460101"
 ---
 # <a name="basicios-class"></a>basic_ios Sınıfı
 
-Şablon sınıfı için her iki giriş akışları genel depolama ve üye işlevleri tanımlar (şablon sınıfının [basic_istream](../standard-library/basic-istream-class.md)) ve çıkış akışlarına (şablon sınıfının [basic_ostream](../standard-library/basic-ostream-class.md)) bağlı olduğu Şablon parametreleri. (Sınıfı [ios_base](../standard-library/ios-base-class.md) ortak ve şablon parametreleri bağımlı yenilikler açıklanmaktadır.) Sınıfın bir nesnesi **basic_ios\<Elem sınıfı, nitelikler sınıfı >** yardımcı denetim türünde öğelere sahip bir akış `Elem`, olan karakter nitelikleri sınıfı tarafından belirlenen `Traits`.
+Şablon sınıfı, şablon parametrelerine bağlı olan giriş akışları (şablon sınıfı [basic_istream](../standard-library/basic-istream-class.md)) ve çıkış akışları (şablon sınıfı [basic_ostream](../standard-library/basic-ostream-class.md)) için ortak olan depolama ve üye işlevlerini açıklar. ( [İos_base](../standard-library/ios-base-class.md) sınıfı, ortak olduğunu ve şablon parametrelerine bağlı olanları açıklar.) Basic_ios `Elem` `Traits` **\<Class Elet sınıfının bir nesnesi, sınıf nitelikleri >** , karakter nitelikleri sınıf tarafından belirlenen türdeki öğelerle bir akışı denetlemeye yardımcı olur.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -76,83 +76,83 @@ class basic_ios : public ios_base
 
 ### <a name="parameters"></a>Parametreler
 
-*Elem*<br/>
+*Elem*\
 Bir tür.
 
-*Nitelikler*<br/>
-Türünde bir değişken `char_traits`.
+*Lerdir*\
+Türünde `char_traits`bir değişken.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Sınıfın bir nesnesi **basic_ios\<Elem sınıfı, nitelikler sınıfı >** depolar:
+Basic_ios Sınıfı eled sınıfının bir nesnesi **,sınıfnitelikleri>depolar\<** :
 
-- Tie işaretçisi türünde bir nesne [basic_istream](../standard-library/basic-istream-class.md)**\<Elem, nitelikler >**.
+- [](../standard-library/basic-istream-class.md)**Basic_istream\<eled, nitelikler >** türünde bir nesneye bağlama işaretçisi.
 
-- Akış Arabellek işaretçisi türünde bir nesne [basic_streambuf](../standard-library/basic-streambuf-class.md)**\<Elem, nitelikler >**.
+- [](../standard-library/basic-streambuf-class.md)**Basic_streambuf\<eled, nitelikler >** türünde bir nesneye akış arabelleği işaretçisi.
 
-- [Biçimlendirme bilgilerini](../standard-library/ios-base-class.md).
+- [Biçimlendirme bilgileri](../standard-library/ios-base-class.md).
 
-- [Stream durum bilgilerini](../standard-library/ios-base-class.md) temel bir nesne türünün içinde [ios_base](../standard-library/ios-base-class.md).
+- [İos_base](../standard-library/ios-base-class.md)türünde bir temel nesnedeki [durum bilgilerini akış](../standard-library/ios-base-class.md) .
 
-- Türünde bir nesne bir dolgu karakter `char_type`.
+- Türünde `char_type`bir nesnedeki bir Fill karakteri.
 
 ### <a name="constructors"></a>Oluşturucular
 
 |Oluşturucu|Açıklama|
 |-|-|
-|[basic_ios](#basic_ios)|Yapıları `basic_ios` sınıfı.|
+|[basic_ios](#basic_ios)|`basic_ios` Sınıfını oluşturur.|
 
 ### <a name="typedefs"></a>Tür tanımları
 
 |Tür adı|Açıklama|
 |-|-|
-|[char_type](#char_type)|Şablon parametresi için bir eşanlamlı `Elem`.|
-|[int_type](#int_type)|İçin bir eşanlamlı `Traits::int_type`.|
-|[off_type](#off_type)|İçin bir eşanlamlı `Traits::off_type`.|
-|[pos_type](#pos_type)|İçin bir eşanlamlı `Traits::pos_type`.|
-|[traits_type](#traits_type)|Şablon parametresi için bir eşanlamlı `Traits`.|
+|[char_type](#char_type)|Şablon parametresi `Elem`için bir eş anlamlı.|
+|[int_type](#int_type)|İçin `Traits::int_type`bir eş anlamlı.|
+|[off_type](#off_type)|İçin `Traits::off_type`bir eş anlamlı.|
+|[pos_type](#pos_type)|İçin `Traits::pos_type`bir eş anlamlı.|
+|[traits_type](#traits_type)|Şablon parametresi `Traits`için bir eş anlamlı.|
 
 ### <a name="member-functions"></a>Üye işlevleri
 
 |Üye işlevi|Açıklama|
 |-|-|
-|[hatalı](#bad)|Akış arabelleğinin bütünlüğünü kaybı gösterir.|
-|[Temizle](#clear)|Tüm hata bayrakları siler.|
-|[copyfmt](#copyfmt)|Bir akıştan bayrakları diğerine kopyalar.|
-|[eof](#eof)|Bir akışın sonuna ulaşılıp ulaşılmadığını gösterir.|
-|[Özel durumlar](#exceptions)|Akış tarafından özel hangi durumlar gösterir.|
-|[Başarısız](#fail)|Geçerli bir alan bir akışından ayıklanacak başarısız olduğunu gösterir.|
-|[Dolgu](#fill)|Belirtir veya metin akış kadar geniş olmadığı durumlarda kullanılacak olan karakteri döndürür.|
-|[iyi](#good)|Akış iyi durumda olduğunu gösterir.|
-|[imbue](#imbue)|Yerel ayar değiştirir.|
-|[init](#init)|Çağıran `basic_ios` oluşturucular.|
-|[Taşıma](#move)|Akış arabelleği için parametre geçerli nesneye işaretçi dışında tüm değerlerini taşır.|
-|[daraltma](#narrow)|Eşdeğer char bulur bir verilen `char_type`.|
-|[rdbuf](#rdbuf)|Belirtilen arabellek akışına yollar.|
-|[rdstate](#rdstate)|Bit bayrakları için durumunu okur.|
-|[set_rdbuf](#set_rdbuf)|Bir akış arabelleğinin Okuma arabelleği için bu akış nesnesi olarak atar.|
-|[setstate](#setstate)|Ek bir bayrak ayarlar.|
-|[değiştirme](#swap)|Bu değeri birbiriyle değiştirir `basic_ios` olanlar başka bir nesne `basic_ios` nesne. Akış arabellekleri işaretçileri takas değil.|
-|[tie](#tie)|Önce başka bir akış, bir akışı işlenir sağlar.|
-|[genişletmek](#widen)|Eşdeğer bulur `char_type` için belirli bir karakter.|
+|[Hatalı](#bad)|Akış arabelleğinin bütünlüğünden oluşan bir kayıp olduğunu gösterir.|
+|[lediğiniz](#clear)|Tüm hata bayraklarını temizler.|
+|[copyfmt](#copyfmt)|Bayrakları bir akıştan diğerine kopyalar.|
+|[eof](#eof)|Akışın sonuna ulaşıldığını gösterir.|
+|[larý](#exceptions)|Akış tarafından hangi özel durumların atılamayacağını belirtir.|
+|[Neden](#fail)|Akıştan geçerli bir alan ayıklama hatası olduğunu gösterir.|
+|[doldurması](#fill)|Metin akış kadar genişse kullanılacak karakteri belirtir veya döndürür.|
+|[iyi](#good)|Akışın iyi koşullarda olduğunu gösterir.|
+|[imbue](#imbue)|Yerel ayarı değiştirir.|
+|[init](#init)|Oluşturucular tarafından `basic_ios` çağırılır.|
+|[geçiş](#move)|Stream buffer işaretçisi dışındaki tüm değerleri, parametresinden geçerli nesneye taşıtır.|
+|[Narrow](#narrow)|Verilen `char_type`karakterin eşdeğerini bulur.|
+|[rdbuf](#rdbuf)|Akışı belirtilen arabelleğe yönlendirir.|
+|[rdstate](#rdstate)|Bayrakların bitlerin durumunu okur.|
+|[set_rdbuf](#set_rdbuf)|Bu akış nesnesi için okuma arabelleği olacak bir akış arabelleği atar.|
+|[setstate](#setstate)|Ek bayrakları ayarlar.|
+|[Kur](#swap)|Bu `basic_ios` nesnedeki değerleri başka bir `basic_ios` nesne için değiş tokuş eder. Akış arabelleklerine yönelik işaretçiler takas edilmez.|
+|[formlarınızı](#tie)|Bir akışın başka bir akıştan önce işlenmesini sağlar.|
+|[Genişlet](#widen)|Verilen bir Char `char_type` 'ın eşdeğerini bulur.|
 
 ### <a name="operators"></a>İşleçler
 
 |İşleç|Açıklama|
 |-|-|
-|[Açık işleç bool değeri](#op_bool)|Kullanılmasına bir `basic_ios` nesnesinin bir **bool**. Otomatik tür dönüştürme ortak, istenmeyen yan etkileri önlemek için devre dışı bırakıldı.|
-|[işleç hükümsüz *](#op_void_star)|Akış iyi olup olmadığını gösterir.|
-|[işleci!](#op_not)|Akış bozuk değilse gösterir.|
+|[Açık işleç bool](#op_bool)|Bir `basic_ios` nesnenin **bool**olarak kullanılmasına izin verir. Ortak, istenmeyen yan etkileri engellemek için otomatik tür dönüştürmesi devre dışıdır.|
+|[void * işleci](#op_void_star)|Akışın hala iyi olup olmadığını gösterir.|
+|[işlecinde!](#op_not)|Akışın bozuk olup olmadığını gösterir.|
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** \<ios >
+**Üst bilgi:** \<iOS >
 
-**Namespace:** std
+**Ad alanı:** std
 
-## <a name="bad"></a>  basic_ios::bad
+## <a name="bad"></a>basic_ios:: Bad
 
-Akış arabelleğinin bütünlüğünü kaybı gösterir
+Akış arabelleğinin bütünlüğünden oluşan bir kayıp olduğunu belirtir
 
 ```cpp
 bool bad() const;
@@ -160,9 +160,9 @@ bool bad() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**doğru** varsa `rdstate & badbit` sıfır; Aksi takdirde **false**.
+sıfır dışında ise **true** ; Aksi takdirde **false.** `rdstate & badbit`
 
-Daha fazla bilgi için `badbit`, bkz: [ios_base::iostate](../standard-library/ios-base-class.md#iostate).
+Hakkında `badbit`daha fazla bilgi için bkz. [ios_base:: iostate](../standard-library/ios-base-class.md#iostate).
 
 ### <a name="example"></a>Örnek
 
@@ -183,9 +183,9 @@ int main( void )
 }
 ```
 
-## <a name="basic_ios"></a>  basic_ios::basic_ios
+## <a name="basic_ios"></a>basic_ios::basic_ios
 
-Basic_ios sınıfı oluşturur.
+Basic_ios sınıfını oluşturur.
 
 ```cpp
 explicit basic_ios(basic_streambuf<Elem,  Traits>* sb);
@@ -194,24 +194,24 @@ basic_ios();
 
 ### <a name="parameters"></a>Parametreler
 
-*sb*<br/>
-Giriş veya çıkış öğelerini depolamak için standart bir arabellek.
+*ise*\
+Giriş veya çıkış öğelerini depolamak için standart arabellek.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk Oluşturucu çağırarak üye nesnelerini başlatır [init](#init)(_ *Sb*). (Korumalı) ikinci oluşturucu, üye başlatılmamış nesneler bırakır. Bir sonraki çağrı `init` güvenli bir şekilde edilebilir önce nesneyi başlatmak gerekir.
+İlk Oluşturucu, [init](#init)(_ *SB*) çağırarak üye nesnelerini başlatır. İkinci (protected) Oluşturucu, üye nesnelerini başlatılmamış halde bırakır. Daha sonraki bir çağrısının `init` , güvenli bir şekilde yok edilebilmesi için nesneyi başlatması gerekir.
 
-## <a name="char_type"></a>  basic_ios::char_type
+## <a name="char_type"></a>basic_ios::char_type
 
-Şablon parametresi için bir eşanlamlı `Elem`.
+Şablon parametresi `Elem`için bir eş anlamlı.
 
 ```cpp
 typedef Elem char_type;
 ```
 
-## <a name="clear"></a>  basic_ios::Clear
+## <a name="clear"></a>basic_ios:: Clear
 
-Tüm hata bayrakları siler.
+Tüm hata bayraklarını temizler.
 
 ```cpp
 void clear(iostate state = goodbit, bool reraise = false);
@@ -220,29 +220,29 @@ void clear(io_state state);
 
 ### <a name="parameters"></a>Parametreler
 
-*durumu*<br/>
-(İsteğe bağlı) Tüm bayraklar temizledikten sonra ayarlamak istediğiniz bayraklar. Varsayılan olarak `goodbit`.
+*durumunda*\
+Seçim Tüm bayrakları temizledikten sonra ayarlamak istediğiniz bayraklar. Varsayılan olarak `goodbit`.
 
-*reraise*<br/>
-(İsteğe bağlı) Özel durum yeniden yükseltilmiş gerekip gerekmediğini belirtir. Varsayılan olarak **false** (özel durum yeniden oluşturmaz).
+*reraise*\
+Seçim Özel durumun yeniden oluşturulup oluşturulmayacağını belirtir. Varsayılan değer **false** olarak ayarlanır (özel durumu yeniden oluşturmaz).
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bayraklar `goodbit`, `failbit`, `eofbit`, ve `badbit`. Test ile bu bayrakları için [iyi](#good), [hatalı](#bad), [eof](#eof), ve [başarısız](#fail)
+Bayrakları `goodbit` ,`failbit`, ve`badbit`. `eofbit` Bu bayrakları [iyi](#good), [bozuk](#bad), [EOF](#eof)ve [başarısız](#fail) ile test edin
 
-Üye işlevi, depolanan stream durum bilgileri ile değiştirir:
+Üye işlevi, depolanan akış durumu bilgisini ile değiştirir:
 
-`state` &#124; `(`[rdbuf](#rdbuf) != 0 **goodbit** : **badbit**)
+`state`&#124;   [](#rdbuf) rdarabelleğe! = 0 goodbit: badbit) `(`
 
-Varsa `state` **&** [özel durumları](#exceptions) olan sıfır olmayan, ardından sınıfın bir nesnesi atar [hatası](../standard-library/ios-base-class.md#failure).
+Özel durumlar sıfır değilse, bir sınıf [hatası](../standard-library/ios-base-class.md#failure)nesnesi oluşturur. [](#exceptions) `state` **&**
 
 ### <a name="example"></a>Örnek
 
-Bkz: [rdstate](#rdstate) ve [getline](../standard-library/string-functions.md#getline) kullanan örnekler için `clear`.
+Using`clear`örnekleri için bkz. [rdstate](#rdstate) ve [getline](../standard-library/string-functions.md#getline) .
 
-## <a name="copyfmt"></a>  basic_ios::copyfmt
+## <a name="copyfmt"></a>basic_ios:: copyfmt
 
-Bir akıştan bayrakları diğerine kopyalar.
+Bayrakları bir akıştan diğerine kopyalar.
 
 ```cpp
 basic_ios<Elem, Traits>& copyfmt(
@@ -251,16 +251,16 @@ const basic_ios<Elem, Traits>& right);
 
 ### <a name="parameters"></a>Parametreler
 
-*sağ*<br/>
-Bayrakları kopyalamak istediğiniz akış.
+*Right*\
+Bayraklarını kopyalamak istediğiniz akış.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**Bu** bayrakları Kopyalamakta akış için nesne.
+Bayrakları kopyaladığınız akış için **Bu** nesne.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlev geri çağırma olay raporları **silme\_olay**. Bunun ardından kopyalar *doğru* içine  **\*bu** doldurma karakteri KRAVAT işaretçi ve biçimlendirme bilgileri. Özel Durum maskesi değiştirmeden önce geri çağırma olay raporları `copyfmt_event`. Kopyalama tamamlandıktan sonra ise **durumu &**[özel durumları](#exceptions) olan sıfır değilse, işlev etkili bir şekilde çağıran [temizleyin](#clear) bağımsız değişkeniyle [rdstate](#rdstate). Döndürür  **\*bu**.
+Üye işlevi geri çağırma olayı **silme\_olayını**raporlar. Daha sonra  **\*bu** , *doğrudan* bu Fill karakterine, bağlama işaretçisine ve biçimlendirme bilgilerine kopyalar. Özel durum maskesini değiştirmeden önce geri çağırma olayını `copyfmt_event`raporlar. Kopyalama işlemi tamamlandıktan sonra, **durum &** [özel durumları](#exceptions) sıfır dışında olduğunda, işlev [rdstate](#rdstate)bağımsız değişkeniyle [clear](#clear) öğesini etkin bir şekilde çağırır. Bunu döndürür  **\*.**
 
 ### <a name="example"></a>Örnek
 
@@ -283,9 +283,9 @@ int main( )
 }
 ```
 
-## <a name="eof"></a>  basic_ios::eof
+## <a name="eof"></a>basic_ios:: EOF
 
-Bir akışın sonuna ulaşılıp ulaşılmadığını gösterir.
+Akışın sonuna ulaşıldığını gösterir.
 
 ```cpp
 bool eof() const;
@@ -293,11 +293,11 @@ bool eof() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**doğru** akışın sonuna ulaşıldı, **false** Aksi takdirde.
+akışın sonuna ulaşılırsa **true** , aksi takdirde **false** .
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevinin döndürdüğü **true** varsa [rdstate](#rdstate) `& eofbit` sıfır değil. Daha fazla bilgi için `eofbit`, bkz: [ios_base::iostate](../standard-library/ios-base-class.md#iostate).
+[Rdstate](#rdstate) `& eofbit` sıfır değilse member işlevi **true** değerini döndürür. Hakkında `eofbit`daha fazla bilgi için bkz. [ios_base:: iostate](../standard-library/ios-base-class.md#iostate).
 
 ### <a name="example"></a>Örnek
 
@@ -321,9 +321,9 @@ int main( int argc, char* argv[] )
 }
 ```
 
-## <a name="exceptions"></a>  basic_ios::Exceptions
+## <a name="exceptions"></a>basic_ios:: Exceptions
 
-Akış tarafından özel hangi durumlar gösterir.
+Akış tarafından hangi özel durumların atılamayacağını belirtir.
 
 ```cpp
 iostate exceptions() const;
@@ -333,16 +333,16 @@ void exceptions(io_state Newexcept);
 
 ### <a name="parameters"></a>Parametreler
 
-*Newexcept*<br/>
-Özel durum istediğiniz bayrakları.
+*Newexcept*\
+Özel durum oluşturmak istediğiniz bayraklar.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Şu anda akış için bir özel durum için belirtilir bayrakları.
+Şu anda akış için bir özel durum oluşturdu için belirtilen bayraklar.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk üye işlevi, depolanan özel durum maskesini döndürür. İkinci üye işlevi depoları *_Except* özel durum maskesini döndürür, önceki değeri depolanır. Yeni bir özel durum maskesini depolama çağrı gibi bir özel durum oluşturabilecek Not [Temizle](#clear)( [rdstate](#rdstate) ).
+İlk üye işlevi, saklı özel durum maskesini döndürür. İkinci üye işlevi özel durum maskesi *haricinde _depolar* ve önceki depolanmış değerini döndürür. Yeni bir özel durum maskesinin depolanması, çağrı [Temizleme](#clear)( [rdstate](#rdstate) ) gibi bir özel durum oluşturabilir.
 
 ### <a name="example"></a>Örnek
 
@@ -380,9 +380,9 @@ Exception class: class std::ios_base::failure
 Exception description: ios_base::eofbit set
 ```
 
-## <a name="fail"></a>  basic_ios::Fail
+## <a name="fail"></a>basic_ios:: Fail
 
-Geçerli bir alan bir akışından ayıklanacak başarısız olduğunu gösterir.
+Akıştan geçerli bir alan ayıklama hatası olduğunu gösterir.
 
 ```cpp
 bool fail() const;
@@ -390,9 +390,9 @@ bool fail() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**doğru** varsa [rdstate](#rdstate) `& (badbit|failbit)` Aksi halde sıfır olmayan, olan **false**.
+[rdstate](#rdstate) `& (badbit|failbit)` sıfır değilse true, aksi takdirde **false**.
 
-Daha fazla bilgi için `failbit`, bkz: [ios_base::iostate](../standard-library/ios-base-class.md#iostate).
+Hakkında `failbit`daha fazla bilgi için bkz. [ios_base:: iostate](../standard-library/ios-base-class.md#iostate).
 
 ### <a name="example"></a>Örnek
 
@@ -410,9 +410,9 @@ int main( void )
 }
 ```
 
-## <a name="fill"></a>  basic_ios::Fill
+## <a name="fill"></a>basic_ios:: Fill
 
-Belirtir veya metin akış kadar geniş olmadığı durumlarda kullanılacak olan karakteri döndürür.
+Metin akış kadar genişse kullanılacak karakteri belirtir veya döndürür.
 
 ```cpp
 char_type fill() const;
@@ -421,16 +421,16 @@ char_type fill(char_type Char);
 
 ### <a name="parameters"></a>Parametreler
 
-*Char*<br/>
-Doldurma karakteri olarak istediğiniz karakteri.
+*Char*\
+İstediğiniz karakter, Fill karakteri olarak.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Geçerli doldurma karakteri.
+Geçerli Fill karakteri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk üye işlevi, depolanan doldurma karakteri döndürür. İkinci üye işlevi depoları *Char* doldurma karakteri döndürür, önceki değeri depolanır.
+İlk üye işlevi depolanan Fill karakterini döndürür. İkinci üye işlevi, *char* karakterini Fill karakteriyle depolar ve önceki depolanmış değerini döndürür.
 
 ### <a name="example"></a>Örnek
 
@@ -457,9 +457,9 @@ xxxxa
 x
 ```
 
-## <a name="good"></a>  basic_ios::good
+## <a name="good"></a>basic_ios:: iyi
 
-Akış iyi durumda olduğunu gösterir.
+Akışın iyi koşullarda olduğunu gösterir.
 
 ```cpp
 bool good() const;
@@ -467,17 +467,17 @@ bool good() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**doğru** varsa [rdstate](#rdstate) `== goodbit` (yok durumu bayrakları ayarlanmış), aksi takdirde, **false**.
+[rdstate](#rdstate) `== goodbit` (hiçbir durum bayrağı ayarlanmamışsa) true, aksi durumda **false**.
 
-Daha fazla bilgi için `goodbit`, bkz: [ios_base::iostate](../standard-library/ios-base-class.md#iostate).
+Hakkında `goodbit`daha fazla bilgi için bkz. [ios_base:: iostate](../standard-library/ios-base-class.md#iostate).
 
 ### <a name="example"></a>Örnek
 
-Bkz: [basic_ios::bad](#bad) kullanma örneği için `good`.
+Bir örnek `good`için bkz. [basic_ios:: Bad](#bad) .
 
-## <a name="imbue"></a>  basic_ios::imbue
+## <a name="imbue"></a>basic_ios:: imbue
 
-Yerel ayar değiştirir.
+Yerel ayarı değiştirir.
 
 ```cpp
 locale imbue(const locale& Loc);
@@ -485,8 +485,8 @@ locale imbue(const locale& Loc);
 
 ### <a name="parameters"></a>Parametreler
 
-*LOC*<br/>
-Bir yerel ayar dizesi.
+*Çerçeve*\
+Yerel ayar dizesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -494,11 +494,11 @@ Bir yerel ayar dizesi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsa [rdbuf](#rdbuf) null işaretçisi değil, üye işlev çağrılarıdır
+[Rdarabelleğe](#rdbuf) bir null işaretçi değilse, üye işlevi çağırır
 
-`rdbuf`-> [pubimbue](../standard-library/basic-streambuf-class.md#pubimbue)(_ *Loc*)
+`rdbuf`-> [ıbue pub](../standard-library/basic-streambuf-class.md#pubimbue) (_ *Loc*)
 
-Her durumda döndürür [ios_base::imbue](../standard-library/ios-base-class.md#imbue)(_ *Loc*).
+Herhangi bir durumda, [ios_base:: imbue](../standard-library/ios-base-class.md#imbue)(_ *loc*) döndürür.
 
 ### <a name="example"></a>Örnek
 
@@ -518,9 +518,9 @@ int main( )
 }
 ```
 
-## <a name="init"></a>  basic_ios::init
+## <a name="init"></a>basic_ios:: init
 
-Basic_ios oluşturucular tarafından çağrılır.
+Basic_ios oluşturucular tarafından çağırılır.
 
 ```cpp
 void init(basic_streambuf<Elem,Traits>* _Sb, bool _Isstd = false);
@@ -528,47 +528,47 @@ void init(basic_streambuf<Elem,Traits>* _Sb, bool _Isstd = false);
 
 ### <a name="parameters"></a>Parametreler
 
-*_Sb*<br/>
-Giriş veya çıkış öğelerini depolamak için standart bir arabellek.
+*_Sb*\
+Giriş veya çıkış öğelerini depolamak için standart arabellek.
 
-*_Isstd*<br/>
-Bir standart akışa olup olmadığını belirtir.
+*_Isstd*\
+Bunun standart bir akış olup olmadığını belirtir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi, tüm üye nesneleri değerlerini depolar için:
+Üye işlevi, değerleri tüm üye nesnelerinde depolar, böylece:
 
-- [rdbuf](#rdbuf) döndürür *_Sb.*
+- [rdarabelleğe](#rdbuf) *_Sb döndürür.*
 
-- [tie](#tie) null bir işaretçi döndürür.
+- bağlama, null bir [işaretçi döndürüyor.](#tie)
 
-- [rdstate](#rdstate) döndürür [goodbit](../standard-library/ios-base-class.md#iostate) varsa *_Sb* döndürür sıfır olmayan, tersi durumda [badbit](../standard-library/ios-base-class.md#iostate).
+- [rdstate](#rdstate) , *_Sb* sıfırdan değilse, [goodbit](../standard-library/ios-base-class.md#iostate) döndürür; Aksi halde, [badbit](../standard-library/ios-base-class.md#iostate)döndürür.
 
-- [özel durumlar](#exceptions) döndürür `goodbit`.
+- [özel durumlar](#exceptions) döndürülür `goodbit`.
 
-- [bayrakları](../standard-library/ios-base-class.md#flags) döndürür [skipws](../standard-library/ios-base-class.md#fmtflags) &#124; [Ara](../standard-library/ios-base-class.md#fmtflags).
+- [bayraklar](../standard-library/ios-base-class.md#flags) [skipws](../standard-library/ios-base-class.md#fmtflags) &#124; [Ara](../standard-library/ios-base-class.md#fmtflags)değer döndürür.
 
 - [Genişlik](../standard-library/ios-base-class.md#width) 0 döndürür.
 
-- [Duyarlık](../standard-library/ios-base-class.md#precision) 6 döndürür.
+- [duyarlık](../standard-library/ios-base-class.md#precision) 6 döndürür.
 
-- [Dolgu](#fill) boşluk karakteri döndürür.
+- [Fill](#fill) boşluk karakterini döndürür.
 
-- [getloc](../standard-library/ios-base-class.md#getloc) döndürür `locale::classic`.
+- [getloc](../standard-library/ios-base-class.md#getloc) döndürüyor `locale::classic`.
 
-- [iword](../standard-library/ios-base-class.md#iword) sıfır döndürür ve [pword](../standard-library/ios-base-class.md#pword) tüm bağımsız değişken değerleri null bir işaretçi döndürür.
+- [ıword](../standard-library/ios-base-class.md#iword) sıfır döndürüyor ve [pword](../standard-library/ios-base-class.md#pword) tüm bağımsız değişken değerleri için bir null işaretçi döndürüyor.
 
-## <a name="int_type"></a>  basic_ios::int_type
+## <a name="int_type"></a>basic_ios::int_type
 
-İçin bir eşanlamlı `traits_type::int_type`.
+İçin `traits_type::int_type`bir eş anlamlı.
 
 ```cpp
 typedef typename traits_type::int_type int_type;
 ```
 
-## <a name="move"></a>  basic_ios::Move
+## <a name="move"></a>basic_ios:: Move
 
-Akış arabelleği için parametre geçerli nesneye işaretçi dışında tüm değerlerini taşır.
+Stream buffer işaretçisi dışındaki tüm değerleri, parametresinden geçerli nesneye taşıtır.
 
 ```cpp
 void move(basic_ios&& right);
@@ -576,16 +576,16 @@ void move(basic_ios&& right);
 
 ### <a name="parameters"></a>Parametreler
 
-*sağ*<br/>
-`ios_base` Değerlerinden taşımak için nesne.
+*Right*\
+Değerlerin `ios_base` taşınacağı nesne.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Korumalı üye işlevi, depolanan tüm değerleri taşır *doğru* için `*this` dışındaki saklı `stream buffer pointer`, içinde değiştirilmemiş *doğru* ve null bir işaretçi olarak `*this`. Depolanan `tie pointer` null bir işaretçi olarak ayarlanmış *doğru*.
+Korumalı üye işlevi, sağda depolanan tüm değerleri, *sağ* tarafta değişmeyen ve içinde `*this`null `stream buffer pointer`bir işaretçiye ayarlanmış olan ' a *doğru* olarak `*this` kaydırır. Depolanan `tie pointer` , *sağ tarafta*null bir işaretçiye ayarlanır.
 
-## <a name="narrow"></a>  basic_ios::Narrow
+## <a name="narrow"></a>basic_ios:: dar
 
-Eşdeğer char bulur bir verilen `char_type`.
+Verilen `char_type`karakterin eşdeğerini bulur.
 
 ```cpp
 char narrow(char_type Char, char Default = '\0') const;
@@ -593,19 +593,19 @@ char narrow(char_type Char, char Default = '\0') const;
 
 ### <a name="parameters"></a>Parametreler
 
-*Char*<br/>
-**Char** dönüştürülecek.
+*Char*\
+Dönüştürülecek **karakter** .
 
-*Default*<br/>
-**Char** eşdeğeri bulunursa döndürülmesini istediğiniz.
+*Varsayılanını*\
+Eşdeğerini yoksa, verilmesini istediğiniz **char** .
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Eşdeğer **char** için bir verilen `char_type`.
+Verilen`char_type` **karakterin** eşdeğeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevinin döndürdüğü [use_facet](../standard-library/basic-filebuf-class.md#open)\<ctype\<E >> ( [getloc](../standard-library/ios-base-class.md#getloc)()).`narrow` ( `Char`, `Default`).
+Üye işlevi, [use_facet](../standard-library/basic-filebuf-class.md#open)\<CType\<E > > ( [getloc](../standard-library/ios-base-class.md#getloc)()) döndürür.`narrow` ( `Char`, `Default`).
 
 ### <a name="example"></a>Örnek
 
@@ -628,17 +628,17 @@ int main( )
 }
 ```
 
-## <a name="off_type"></a>  basic_ios::off_type
+## <a name="off_type"></a>basic_ios::off_type
 
-İçin bir eşanlamlı `traits_type::off_type`.
+İçin `traits_type::off_type`bir eş anlamlı.
 
 ```cpp
 typedef typename traits_type::off_type off_type;
 ```
 
-## <a name="op_void_star"></a>  basic_ios::operator void *
+## <a name="op_void_star"></a>basic_ios:: operator void *
 
-Akış iyi olup olmadığını gösterir.
+Akışın hala iyi olup olmadığını gösterir.
 
 ```cpp
 operator void *() const;
@@ -646,7 +646,7 @@ operator void *() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İşlecini bir null işaretçi yalnızca şu durumlarda döndürür [başarısız](#fail).
+İşleci yalnızca [başarısız](#fail)olursa, null bir işaretçi döndürür.
 
 ### <a name="example"></a>Örnek
 
@@ -666,9 +666,9 @@ int main( )
 1
 ```
 
-## <a name="op_not"></a>  basic_ios::operator!
+## <a name="op_not"></a>basic_ios:: operator!
 
-Akış bozuk değilse gösterir.
+Akışın bozuk olup olmadığını gösterir.
 
 ```cpp
 bool operator!() const;
@@ -676,7 +676,7 @@ bool operator!() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Döndürür [başarısız](#fail).
+[Başarısız](#fail)sonucunu döndürür.
 
 ### <a name="example"></a>Örnek
 
@@ -696,9 +696,9 @@ int main( )
 0
 ```
 
-## <a name="op_bool"></a>  basic_ios::operator bool
+## <a name="op_bool"></a>basic_ios:: operator bool
 
-Kullanılmasına bir `basic_ios` nesnesinin bir **bool**. Otomatik tür dönüştürme ortak, istenmeyen yan etkileri önlemek için devre dışı bırakıldı.
+Bir `basic_ios` nesnenin **bool**olarak kullanılmasına izin verir. Ortak, istenmeyen yan etkileri engellemek için otomatik tür dönüştürmesi devre dışıdır.
 
 ```cpp
 explicit operator bool() const;
@@ -706,19 +706,19 @@ explicit operator bool() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşleci için bir değer dönüştürülebilir döndürür **false** yalnızca `fail()`. Dönüş türüne dönüştürülebilir yalnızca **bool**değil, `void *` veya bilinen diğer skaler türü.
+İşleci bir değeri yalnızca, `fail()` **false** değerine döndürür. Dönüş türü yalnızca **bool**öğesine dönüştürülebilir, `void *` ya da bilinen skalar tür olarak değiştirilebilir.
 
-## <a name="pos_type"></a>  basic_ios::pos_type
+## <a name="pos_type"></a>basic_ios::p os_type
 
-İçin bir eşanlamlı `traits_type::pos_type`.
+İçin `traits_type::pos_type`bir eş anlamlı.
 
 ```cpp
 typedef typename traits_type::pos_type pos_type;
 ```
 
-## <a name="rdbuf"></a>  basic_ios::rdbuf
+## <a name="rdbuf"></a>basic_ios:: rdarabelleğe
 
-Belirtilen arabellek akışına yollar.
+Akışı belirtilen arabelleğe yönlendirir.
 
 ```cpp
 basic_streambuf<Elem, Traits> *rdbuf() const;
@@ -728,14 +728,14 @@ basic_streambuf<Elem, Traits>* _Sb);
 
 ### <a name="parameters"></a>Parametreler
 
-*_Sb*<br/>
+*_Sb*\
 Bir akış.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk üye işlevi, depolanan Akış Arabellek işaretçisini döndürür.
+İlk üye işlevi depolanan akış arabelleği işaretçisini döndürür.
 
-İkinci üye işlevi depoları *_Sb* saklı akış arabelleğin işaretçisini içinde ve daha önce depolanan değeri döndürür.
+İkinci üye işlevi, *_Sb* 'yi depolanan akış arabelleği işaretçisine depolar ve daha önce depolanan değeri döndürür.
 
 ### <a name="example"></a>Örnek
 
@@ -761,9 +761,9 @@ int main( )
 test2
 ```
 
-## <a name="rdstate"></a>  basic_ios::rdstate
+## <a name="rdstate"></a>basic_ios:: rdstate
 
-Bit bayrakları için durumunu okur.
+Bayrakların bitlerin durumunu okur.
 
 ```cpp
 iostate rdstate() const;
@@ -771,7 +771,7 @@ iostate rdstate() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Depolanan akış durumunu bilgiler.
+Depolanan akış durumu bilgileri.
 
 ### <a name="example"></a>Örnek
 
@@ -810,9 +810,9 @@ int main( )
 1
 ```
 
-## <a name="setstate"></a>  basic_ios::setstate
+## <a name="setstate"></a>basic_ios:: setstate
 
-Ek bir bayrak ayarlar.
+Ek bayrakları ayarlar.
 
 ```cpp
 void setstate(iostate _State);
@@ -820,12 +820,12 @@ void setstate(iostate _State);
 
 ### <a name="parameters"></a>Parametreler
 
-*Duru_m*<br/>
-Ayarlamak için ek bayraklar.
+*_Durum*\
+Ayarlanacak ek bayraklar.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi etkili bir şekilde çağıran [Temizle](#clear)(_ *durumu* &#124; [rdstate](#rdstate)).
+Üye işlevi, [clear](#clear)(_ *State* &#124; [rdstate](#rdstate)) öğesini etkin bir şekilde çağırır.
 
 ### <a name="example"></a>Örnek
 
@@ -859,9 +859,9 @@ int main( )
 1
 ```
 
-## <a name="set_rdbuf"></a>  basic_ios::set_rdbuf
+## <a name="set_rdbuf"></a>basic_ios::set_rdbuf
 
-Bir akış arabelleğinin Okuma arabelleği için bu akış nesnesi olarak atar.
+Bu akış nesnesi için okuma arabelleği olacak bir akış arabelleği atar.
 
 ```cpp
 void set_rdbuf(
@@ -870,16 +870,16 @@ basic_streambuf<Elem, Tr>* strbuf)
 
 ### <a name="parameters"></a>Parametreler
 
-*strbuf*<br/>
+*strarabelleğe*\
 Okuma arabelleği olacak akış arabelleği.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Korumalı üye işlevi depoları *strbuf* içinde `stream buffer pointer`. Çağrılmayan `clear`.
+Korumalı üye işlevi içinde `stream buffer pointer` *strarabelleğe* depolar. Çağrı `clear`yapmaz.
 
-## <a name="tie"></a>  basic_ios::tie
+## <a name="tie"></a>basic_ios:: kravat
 
-Önce başka bir akış, bir akışı işlenir sağlar.
+Bir akışın başka bir akıştan önce işlenmesini sağlar.
 
 ```cpp
 basic_ostream<Elem, Traits> *tie() const;
@@ -889,20 +889,20 @@ basic_ostream<Elem, Traits>* str);
 
 ### <a name="parameters"></a>Parametreler
 
-*str*<br/>
+*üstbilgisine*\
 Bir akış.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İlk üye işlevi, depolanan KRAVAT işaretçiyi döndürür. İkinci üye işlevi depoları *str* KRAVAT işaretçi döndürür, önceki değeri depolanır.
+İlk üye işlevi, depolanan bağlama işaretçisini döndürür. İkinci üye işlevi, *Str* 'yi bağlama işaretçisine depolar ve önceki depolanmış değerini döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`tie` diğer akış işlemleri tamamlandıktan sonra bir akış üzerinde işlemler meydana şekilde eşitlenmesi gereken iki akışları neden olur.
+`tie`, bir akışla ilgili işlemler diğer akıştaki işlemler tamamlandıktan sonra meydana gelen iki akışın eşitlenmesine neden olur.
 
 ### <a name="example"></a>Örnek
 
-Bu örnekte, cout için cin bağlamadan tarafından da, garanti "bir sayı girin:" dize gider sayı önce konsola kendisini cin ayıklanır. Bu olanağına ortadan kaldırır, "bir sayı girin:" sayı okunduğunda dize arabellek hala oturan, emin ediyoruz, böylece kullanıcının gerçekten yanıt vermek için bazı istemi sahip. Varsayılan olarak, cin ve cout bağlıdır.
+Bu örnekte, cin ile cout arasında geçiş yaparak, "bir sayı girin:" dizesinin, sayının kendisi cin öğesinden ayıklanmadan konsola gidecektir. Bu, "bir sayı gir:" dizesinin arabellekte hala oturmakta olduğunu ortadan kaldırır, böylece kullanıcının yanıt vermesi için gerçekten bir istem olduğundan emin olur. Varsayılan olarak, cin ve cout bağlıdır.
 
 ```cpp
 #include <ios>
@@ -918,17 +918,17 @@ int main( )
 }
 ```
 
-## <a name="traits_type"></a>  basic_ios::traits_type
+## <a name="traits_type"></a>basic_ios::traits_type
 
-Şablon parametresi için bir eşanlamlı `Traits`.
+Şablon parametresi `Traits`için bir eş anlamlı.
 
 ```cpp
 typedef Traits traits_type;
 ```
 
-## <a name="widen"></a>  basic_ios::widen
+## <a name="widen"></a>basic_ios:: Genişlet
 
-Eşdeğer bulur `char_type` için bir verilen **char**.
+Verilen bir `char_type` **char**'ın eşdeğerini bulur.
 
 ```cpp
 char_type widen(char Char) const;
@@ -936,16 +936,16 @@ char_type widen(char Char) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*Char*<br/>
+*Char*\
 Dönüştürülecek karakter.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Eşdeğer bulur `char_type` için bir verilen **char**.
+Verilen bir `char_type` **char**'ın eşdeğerini bulur.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevinin döndürdüğü [use_facet](../standard-library/basic-filebuf-class.md#open)< **ctype** \< **E**>> ( [getloc](../standard-library/ios-base-class.md#getloc)). `widen`( `Char`).
+Üye işlevi [use_facet](../standard-library/basic-filebuf-class.md#open)< **CType** \< **E**> > ( [getloc](../standard-library/ios-base-class.md#getloc)) döndürür. `widen`( `Char`).
 
 ### <a name="example"></a>Örnek
 
@@ -967,9 +967,9 @@ int main( )
 }
 ```
 
-## <a name="swap"></a>  basic_ios::Swap
+## <a name="swap"></a>basic_ios:: swap
 
-Bu değeri birbiriyle değiştirir `basic_ios` olanlar başka bir nesne `basic_ios` nesne. Ancak, akış arabellekleri işaretçileri takas değil.
+Bu `basic_ios` nesnedeki değerleri başka bir `basic_ios` nesne için değiş tokuş eder. Ancak, akış arabelleklerine yönelik işaretçiler takas edilmez.
 
 ```cpp
 void swap(basic_ios&& right);
@@ -977,15 +977,15 @@ void swap(basic_ios&& right);
 
 ### <a name="parameters"></a>Parametreler
 
-*sağ*<br/>
-`basic_ios` Değerleri değişimi için kullanılan nesne.
+*Right*\
+Değer değişimi için kullanılan nesne.`basic_ios`
 
 ### <a name="remarks"></a>Açıklamalar
 
-Korumalı üye işlevi, depolanan tüm değerleri değiştirir *doğru* ile `*this` dışındaki saklı `stream buffer pointer`.
+Korumalı üye işlevi, depolanan her türlü değeri, depolandıkları  `*this` `stream buffer pointer`hariç tüm değerleri değiştirir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
-[iostream Programlaması](../standard-library/iostream-programming.md)<br/>
-[iostreams Kuralları](../standard-library/iostreams-conventions.md)<br/>
+[C++ Standart kitaplıkta Iş parçacığı güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)\
+[iostream programlama](../standard-library/iostream-programming.md)\
+[iostreams Kuralları](../standard-library/iostreams-conventions.md)

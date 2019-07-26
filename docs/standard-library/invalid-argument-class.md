@@ -6,16 +6,16 @@ f1_keywords:
 helpviewer_keywords:
 - invalid_argument class
 ms.assetid: af6c227d-ad7c-4e63-9dee-67af81d83506
-ms.openlocfilehash: e6b56e98a1adc7426fe0d1b65d623549a4391c8d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 1c5caa0129730750a6429d9f7fa883e9af30f225
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62404864"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68449258"
 ---
 # <a name="invalidargument-class"></a>invalid_argument Sınıfı
 
-Sınıfı, geçersiz bir bağımsız değişken bildirmek için oluşturulan tüm özel durumlar için temel sınıf olarak hizmet verir.
+Sınıfı, geçersiz bir bağımsız değişkeni raporlamak için oluşturulan tüm özel durumlar için temel sınıf olarak hizmet verir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -31,7 +31,7 @@ public:
 
 ## <a name="remarks"></a>Açıklamalar
 
-Tarafından döndürülen değer [ne](../standard-library/exception-class.md) bir kopyasıdır **ileti**`.`[veri](../standard-library/basic-string-class.md#data).
+**İleti**[](../standard-library/basic-string-class.md#data) [](../standard-library/exception-class.md) verilerininbirkopyasıolan`.`tarafından döndürülen değer.
 
 ## <a name="example"></a>Örnek
 
@@ -63,11 +63,11 @@ Type class std::invalid_argument
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** \<stdexcept >
+**Üst bilgi:** \<stdexcept >
 
-**Namespace:** std
+**Ad alanı:** std
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[logic_error Sınıfı](../standard-library/logic-error-class.md)<br/>
-[C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
+[logic_error sınıfı](../standard-library/logic-error-class.md)\
+[C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)

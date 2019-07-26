@@ -200,16 +200,16 @@ helpviewer_keywords:
 - std::count_if [C++]
 - std::partition_copy [C++]
 - std::swap [C++]
-ms.openlocfilehash: 7b0a8b427b919b624928a7d37d67937ac04884db
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.openlocfilehash: cf6c1267b1dea86c2cad62708192a4c0a1970ed8
+ms.sourcegitcommit: 610751254a01cba6ad15fb1e1764ecb2e71f66bf
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68245985"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "68313392"
 ---
 # <a name="ltalgorithmgt-functions"></a>&lt;algoritma&gt; işlevleri
 
-## <a name="adjacent_find"></a> adjacent_find
+## <a name="adjacent_find"></a>adjacent_find
 
 Eşit ya da belirli bir koşulu karşılayan iki bitişik öğeyi arar.
 
@@ -223,7 +223,7 @@ template<class ForwardIterator , class BinaryPredicate>
 ForwardIterator adjacent_find(
     ForwardIterator first,
     ForwardIterator last,
-    BinaryPredicate comp);
+    BinaryPredicate pred);
 
 template<class ExecutionPolicy, class ForwardIterator>
 ForwardIterator adjacent_find(
@@ -241,24 +241,27 @@ ForwardIterator adjacent_find(
 
 ### <a name="parameters"></a>Parametreler
 
-*ilk*\
-Aranacak aralıktaki ilk öğenin konumunu bulan ileriye doğru yineleyici.
+*Exec*\
+Kullanılacak yürütme ilkesi.
 
-*Son*\
-Aranacak Konum son öğeden bir aralıktaki ileriye doğru yineleyici.
+*adı*\
+Aranacak aralıktaki ilk öğenin konumunu adresleyen ileri Yineleyici.
 
-*Comp*\
-Aranacak aralıktaki bitişik öğelerin değerlerinin tarafından karşılanması koşul vererek ikili koşul.
+*soyadına*\
+Bir ileriye doğru yineleyici, aranacak aralıktaki son öğeden sonraki konumu ele alıyor.
 
-### <a name="return-value"></a>Dönüş Değeri
+*pred*\
+Aranan aralıktaki bitişik öğelerin değerlerinin karşılanmasını sağlayan ikili koşul.
 
-İlk öğeye (ilk sürüm içinde) birbirine eşit olan veya koşuluyla bu tür bir çift öğeleri bulunamadı (sürümünde ikinci), ikili koşul tarafından belirtilen koşulu karşılayan bitişik çiftinin ileriye doğru yineleyici. Aksi halde gösteren bir yineleyici *son* döndürülür.
+### <a name="return-value"></a>Dönüş değeri
+
+Her birine eşit (ilk sürümde) veya ikili koşulun (İkinci sürümde) tarafından verilen koşulu karşılayan, bu tür bir öğe çifti bulunduğu bir ileri Yineleyici. Aksi takdirde, *son* ' a işaret eden bir yineleyici döndürülür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`adjacent_find` Nonmutating sıralı algoritma algoritmasıdır. Aranacak aralık geçerli olmalı; Tüm İşaretçiler tekrar başvurulabilir olmalı ve son konuma ilk konumdan erişilebilmelidir. Zaman algoritmanın karmaşıklığı, doğrusal aralığında yer alan öğelerin sayısı.
+`adjacent_find` Algoritma, değiştirici olmayan bir dizi algoritmadır. Aranacak Aralık geçerli olmalıdır; Tüm işaretçilerin erişilebilir olması gerekir ve son konuma artırılamadı tarafından ilk kez ulaşılabilir. Algoritmanın zaman karmaşıklığı, aralıkta bulunan öğelerin sayısında doğrusal bir sayıdır.
 
-`operator==` Eşleşen öğeler arasındaki bir eşdeğerlik ilişkisi işlenenleri arasındaki dayatır gerekir belirlemek için kullanılır.
+Öğeler `operator==` arasındaki eşleşmeyi belirlemede kullanılan, işlenenleri arasında bir denklik ilişkisi getirmelidir.
 
 ### <a name="example"></a>Örnek
 
@@ -272,47 +275,47 @@ Aranacak aralıktaki bitişik öğelerin değerlerinin tarafından karşılanmas
 // Returns whether second element is twice the first
 bool twice (int elem1, int elem2 )
 {
-   return elem1 * 2 == elem2;
+    return elem1 * 2 == elem2;
 }
 
 int main()
 {
-   using namespace std;
-   list <int> L;
-   list <int>::iterator Iter;
-   list <int>::iterator result1, result2;
+    using namespace std;
+    list<int> L;
+    list<int>::iterator Iter;
+    list<int>::iterator result1, result2;
 
-   L.push_back( 50 );
-   L.push_back( 40 );
-   L.push_back( 10 );
-   L.push_back( 20 );
-   L.push_back( 20 );
+    L.push_back( 50 );
+    L.push_back( 40 );
+    L.push_back( 10 );
+    L.push_back( 20 );
+    L.push_back( 20 );
 
-   cout << "L = ( " ;
-   for ( Iter = L.begin( ) ; Iter != L.end( ) ; Iter++ )
-      cout << *Iter << " ";
-   cout << ")" << endl;
+    cout << "L = ( " ;
+    for ( Iter = L.begin( ) ; Iter != L.end( ) ; Iter++ )
+        cout << *Iter << " ";
+    cout << ")" << endl;
 
-   result1 = adjacent_find( L.begin( ), L.end( ) );
-   if ( result1 == L.end( ) )
-      cout << "There are not two adjacent elements that are equal."
-           << endl;
-   else
-      cout << "There are two adjacent elements that are equal.\n"
-           << "They have a value of "
-           << *( result1 ) << "." << endl;
+    result1 = adjacent_find( L.begin( ), L.end( ) );
+    if ( result1 == L.end( ) )
+        cout << "There are not two adjacent elements that are equal."
+            << endl;
+    else
+        cout << "There are two adjacent elements that are equal.\n"
+            << "They have a value of "
+            << *( result1 ) << "." << endl;
 
-   result2 = adjacent_find( L.begin( ), L.end( ), twice );
-   if ( result2 == L.end( ) )
-      cout << "There are not two adjacent elements where the "
-           << "second is twice the first." << endl;
-   else
-   {
-      cout << "There are two adjacent elements where "
-           << "the second is twice the first.\n"
-           << "They have values of " << *(result2++)
-           << " & " << *result2 << "." << endl;
-   }
+    result2 = adjacent_find( L.begin( ), L.end( ), twice );
+    if ( result2 == L.end( ) )
+        cout << "There are not two adjacent elements where the "
+            << "second is twice the first." << endl;
+    else
+    {
+        cout << "There are two adjacent elements where "
+            << "the second is twice the first.\n"
+            << "They have values of " << *(result2++)
+            << " & " << *result2 << "." << endl;
+    }
 }
 ```
 
@@ -324,43 +327,46 @@ There are two adjacent elements where the second is twice the first.
 They have values of 10 & 20.
 ```
 
-## <a name="all_of"></a> all_of
+## <a name="all_of"></a>all_of
 
-Döndürür **true** koşul olduğunda verilen aralıktaki her bir öğede yok.
+Verilen aralıktaki her bir öğede bir koşul olduğunda **true** döndürür.
 
 ```cpp
-template<class InputIterator, class Predicate>
+template<class InputIterator, class UnaryPredicate>
 bool all_of(
     InputIterator first,
     InputIterator last,
-    BinaryPredicatecomp);
+    UnaryPredicate pred);
 
-template <class ExecutionPolicy, class ForwardIterator, class Predicate>
+template <class ExecutionPolicy, class ForwardIterator, class UnaryPredicate>
 bool all_of(
     ExecutionPolicy&& exec,
-    ForwardIterator first, 
-    ForwardIterator last, 
-    Predicate pred);
+    ForwardIterator first,
+    ForwardIterator last,
+    UnaryPredicate pred);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*ilk*\
-Koşulu denetlemek başlangıç noktası gösteren bir giriş yineleyici. Yineleyici öğelerini başlatır çeşitli yerlerde işaretler.
+*Exec*\
+Kullanılacak yürütme ilkesi.
 
-*Son*\
-Bir koşulu denetleyen öğelerin aralığının sonunu gösteren bir giriş yineleyici.
+*adı*\
+Bir koşulun denetlenmesi için nereden başlayacağını gösteren bir giriş Yineleyici. Yineleyici, bir dizi öğenin başladığı yeri işaretler.
 
-*Comp*<br/>
-Test etmek için bir koşul. Denetlenen bir öğe tarafından karşılanması koşul tanımlayan bir kullanıcı tanımlı işlevin doğrulama nesnesi budur. Bir koşulu, tek bir bağımsız değişken alır ve döndürür **true** veya **false**.
+*soyadına*\
+Bir koşulu denetlenecek öğe aralığının sonunu gösteren bir giriş Yineleyici.
 
-### <a name="return-value"></a>Dönüş Değeri
+*pred*\
+İçin sınanacak koşul. Bu, denetlenen bir öğe tarafından karşılanması gereken koşulu tanımlayan Kullanıcı tanımlı bir koşul işlevi nesnesidir. Birli koşul tek bir bağımsız değişken alır ve **true** veya **false**değerini döndürür.
 
-Döndürür **true** Belirtilen aralıktaki her bir öğede koşul algılanırsa veya aralığı boşsa, ve **false** Aksi takdirde.
+### <a name="return-value"></a>Dönüş değeri
+
+Belirtilen aralıktaki her öğede koşul algılanırsa veya Aralık boşsa **true** , değilse **false** değerini döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon işlevinin döndürdüğü **true** her biri için yalnızca Eğer `N` aralığında `[0,Last - first)`, koşul `comp(*(_First + N))` olduğu **true**.
+Şablon **işlevi yalnızca,** `N` `[0, last - first)` Aralık içinde her biri için true değerini döndürür `pred(*(first + N))` .
 
 ### <a name="example"></a>Örnek
 
@@ -397,45 +403,48 @@ li = ( 50 40 10 20 20 )
 All the elements are even numbers.
 ```
 
-## <a name="any_of"></a> any_of
+## <a name="any_of"></a>any_of
 
-Döndürür **true** koşul olduğunda en az bir kez öğelerin belirtilen aralığında mevcut.
+Bir koşul, belirtilen öğe aralığında en az bir kez olduğunda **true** döndürür.
 
 ```cpp
 template<class InputIterator, class UnaryPredicate>
 bool any_of(
     InputIterator first,
     InputIterator last,
-    UnaryPredicate comp);
+    UnaryPredicate pred);
 
-template <class ExecutionPolicy, class ForwardIterator, class Predicate>
+template <class ExecutionPolicy, class ForwardIterator, class UnaryPredicate>
 bool any_of(
     ExecutionPolicy&& exec,
     ForwardIterator first,
     ForwardIterator last,
-    Predicate pred);
+    UnaryPredicate pred);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*ilk*\
-Öğeleri bir koşul için bir dizi denetimi başlatmak yeri belirten bir giriş yineleyici.
+*Exec*\
+Kullanılacak yürütme ilkesi.
 
-*Son*\
-Bir koşulu denetleyen öğelerin aralığının sonunu gösteren bir giriş yineleyici.
+*adı*\
+Bir koşul için bir öğe aralığının nerede başlatılacağını gösteren bir giriş Yineleyici.
 
-*Comp*\
-Test etmek için bir koşul. Bu, bir kullanıcı tanımlı işlevin doğrulama nesnesi tarafından sağlanır. Test edilen öğe tarafından karşılanması koşul koşulu tanımlar. Bir koşulu, tek bir bağımsız değişken alır ve döndürür **true** veya **false**.
+*soyadına*\
+Bir koşulu denetlenecek öğe aralığının sonunu gösteren bir giriş Yineleyici.
 
-### <a name="return-value"></a>Dönüş Değeri
+*pred*\
+İçin sınanacak koşul. Bu, Kullanıcı tanımlı bir koşul işlevi nesnesi tarafından sağlanır. Koşul, sınanmakta olan öğe tarafından yerine getirilmesi gereken koşulu tanımlar. Birli koşul tek bir bağımsız değişken alır ve **true** veya **false**değerini döndürür.
 
-Döndürür **true** koşul belirtilen aralığında en az bir kez algılanırsa **false** koşulu hiçbir zaman algılanması durumunda.
+### <a name="return-value"></a>Dönüş değeri
+
+Koşul, belirtilen aralıkta en az bir kez algılanırsa **true** , koşul hiç algılanmadıysa **false** döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon işlevinin döndürdüğü **true** yalnızca şu durumlarda, bazı `N` aralığında
+Şablon işlevi yalnızca,  Aralık içinde bazıları `N` için true değerini döndürür
 
-`[0, last - first)`, koşul `comp(*(first + N))` geçerlidir.
+`[0, last - first)`, koşul `pred(*(first + N))` true 'dur.
 
 ### <a name="example"></a>Örnek
 
@@ -471,7 +480,7 @@ li = ( 51 41 11 21 20 )
 There's an even element in li.
 ```
 
-## <a name="binary_search"></a> binary_search
+## <a name="binary_search"></a>binary_search
 
 Belirtilen değere eşit sıralanmış bir aralıkta bir öğe olup olmadığını ya da bir ikili koşula göre belirtilen anlamda ona eşdeğer bir öğe olup olmadığını sınar.
 
@@ -482,43 +491,43 @@ bool binary_search(
     ForwardIterator last,
     const Type& value);
 
-template<class ForwardIterator,  class Type,  class BinaryPredicate>
+template<class ForwardIterator, class Type, class BinaryPredicate>
 bool binary_search(
     ForwardIterator first,
     ForwardIterator last,
     const Type& value,
-    BinaryPredicate comp);
+    BinaryPredicate pred);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*ilk*\
-Aranacak aralıktaki ilk öğenin konumunu bulan ileriye doğru yineleyici.
+*adı*\
+Aranacak aralıktaki ilk öğenin konumunu adresleyen ileri Yineleyici.
 
-*Son*\
-Aranacak Konum son öğeden bir aralıktaki ileriye doğru yineleyici.
+*soyadına*\
+Bir ileriye doğru yineleyici, aranacak aralıktaki son öğeden sonraki konumu ele alıyor.
 
-*Değer*\
-Değeri öğe değeriyle eşleşmesi gereken veya ikili koşul tarafından belirtilen öğe değeri ile koşula uyması gerekir.
+*deeri*\
+Öğe değeri ile eşleşmesi gereken veya ikili koşul tarafından belirtilen öğe değeri ile koşulu karşılaması gereken değer.
 
-*Comp*\
-Bir öğenin daha az olan algılama tanımlayan kullanıcı tanımlı işlevin doğrulama nesnesi. İkili koşulu, iki bağımsız değişkeni alır ve döndürür **true** karşılanmazsa ve **false** koşullar karşılanırsa.
+*pred*\
+Bir öğenin diğerinden küçük olduğu anlamlı olduğunu tanımlayan Kullanıcı tanımlı koşul işlevi nesnesi. İkili koşul iki bağımsız değişken alır ve memnun olmadığında **true** ve **false** değeri döndürür.
 
-### <a name="return-value"></a>Dönüş Değeri
+### <a name="return-value"></a>Dönüş değeri
 
-**doğru** eşit veya belirtilen değere eşdeğer; Aksi takdirde aralıktaki bir öğe bulunursa **false**.
+aralıkta belirtilen değere eşit veya eşdeğer bir öğe bulunursa **true** ; Aksi takdirde, **false**.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Başvurulan sıralanmış kaynak aralık geçerli olmalı; Tüm İşaretçiler tekrar başvurulabilir olmalı ve dizi içinde son konuma ilk konumdan erişilebilir olmalıdır erişilebilmelidir.
+Başvurulan sıralanmış kaynak aralığı geçerli olmalıdır; Tüm işaretçilerin erişilebilir olması gerekir ve sıra içinde, son konum artırılamadı tarafından ilk kez ulaşılabilir olmalıdır.
 
-Sıralanan aralık her uygulama için bir önkoşul olarak düzenlenmelidir `binary_search` olarak aynı sıralamaya uygun şekilde algoritmasıdır birleştirilmiş aralıkları Sıralama algoritması tarafından kullanılacak.
+Sıralanmış aralığın her biri, algoritma tarafından Birleşik aralıkları sıralamak için kullanılan aynı sıralamaya uygun `binary_search` olarak, algoritmanın uygulamasına bir ön koşul olarak düzenlenmelidir.
 
-Kaynak aralıkları tarafından değiştirilmez `binary_search`.
+Kaynak aralıkları tarafından `binary_search`değiştirilmez.
 
-İleriye doğru Yineleyicilerin değer türlerinin daha küçük olması gerekir-sıralanmalıdır daha karşılaştırılabilir, iki öğe belirtildiğinde, (yani birinin diğerinden diğerinden daha küçük olmadığı anlamında) eşit veya birinin diğerinden küçük olduğu belirlenebilir. Bu bir sıralamaya neden olur öğeler arasında neden olur
+İleriye doğru yineleyicilerin değer türlerinin sıralanabilmesi için kıyasla daha az karşılaştırılabilir olması gerekir. bu sayede, iki öğe verildiğinde, eşdeğer oldukları (Yani bunlardan daha küçük olmadığı anlamda) ya da birinin diğerinin daha küçük olduğu belirlenebilir. Bu, eşdeğer olmayan öğeler arasında bir sıralamaya neden olur
 
-Algoritmanın karmaşıklığı, rasgele erişim yineleyicileri için logaritmik ve doğrusal Aksi takdirde doğrusaldır adım sayısı ile (`last` - `first`).
+Algoritmanın karmaşıklığı Rastgele erişimli yineleyiciler ve doğrusal olarak, diğer bir deyişle, diğer bir deyişle, diğer bir deyişle, (`last` - `first`) ile orantılıdır.
 
 ### <a name="example"></a>Örnek
 
@@ -545,7 +554,7 @@ int main()
 {
     using namespace std;
 
-    list <int> List1;
+    list<int> List1;
 
     List1.push_back( 50 );
     List1.push_back( 10 );
@@ -602,16 +611,48 @@ int main()
 }
 ```
 
-## <a name="clamp"></a> CLAMP
+## <a name="clamp"></a>Clamp
+
+Bir değeri üst ve alt sınır ile karşılaştırır ve sınırlar arasındaysa değere bir başvuru ya da değerin üstünde ya da altında ise, üst veya alt sınır başvurusu döndürür.
 
 ```cpp
-template<class T>
-constexpr const T& clamp(const T& v, const T& lo, const T& hi);
-template<class T, class Compare>
-constexpr const T& clamp(const T& v, const T& lo, const T& hi, Compare comp);
+template<class Type>
+constexpr const Type& clamp(
+    const Type& value,
+    const Type& lower,
+    const Type& upper);
+
+template<class Type, class Compare>
+constexpr const Type& clamp(
+    const Type& value,
+    const Type& lower,
+    const Type& upper,
+    Compare pred);
 ```
 
-## <a name="copy"></a> kopyalama
+### <a name="parameters"></a>Parametreler
+
+*deeri*\
+*Üst* ve *alt*ile karşılaştırılacak değer.
+
+*düşürül*\
+Değerlerin Clamp *değerine* alt sınırı.
+
+*üst*\
+Değerlerin Clamp *değerine* göre üst sınırı.
+
+*pred*\
+*Değeri* *alt* veya *üst*ile karşılaştırmak için kullanılan bir koşul. Karşılaştırma koşulu iki bağımsız değişken alır ve ilki ikinciden küçükse **true** , aksi durumda **false**değerini döndürür.
+
+### <a name="return-value"></a>Dönüş değeri
+
+`upper < value` *Alt* `value < lower`If için bir başvuru veya bir *üst* if başvurusu döndürür. Aksi takdirde, *değere*bir başvuru döndürür.
+
+### <a name="remarks"></a>Açıklamalar
+
+*Sınır* *daha*küçüktür ise, bu davranış tanımsızdır.
+
+## <a name="copy"></a>kopya
 
 Bir kaynak aralığındaki öğe değerlerini bir hedef aralığına atayarak, öğelerin kaynak sırası boyunca yineler ve bunları yeni konumlarına ileri yönde atar.
 
@@ -625,32 +666,36 @@ OutputIterator copy(
 template<class ExecutionPolicy, class ForwardIterator1, class ForwardIterator2>
 ForwardIterator2 copy(
     ExecutionPolicy&& exec,
-    ForwardIterator1 first, ForwardIterator1 last,
+    ForwardIterator1 first,
+    ForwardIterator1 last,
     ForwardIterator2 result);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*ilk*\
-Kaynak aralıktaki ilk öğenin konumunu ele alan giriş yineleyici.
+*Exec*\
+Kullanılacak yürütme ilkesi.
 
-*Son*\
-Kaynak aralıktaki son öğeden bir öncekine olan konumu ele alan giriş yineleyici.
+*adı*\
+Kaynak aralıktaki ilk öğenin konumunu ele aldığı bir giriş Yineleyici.
+
+*soyadına*\
+Kaynak aralıktaki son öğeden sonraki konumu ele alan bir giriş Yineleyici.
 
 *destBeg*\
-Hedef aralıktaki ilk öğenin konumunu bulan çıktı yineleyici.
+Hedef aralıktaki ilk öğenin konumunu ele alarak çıkış Yineleyici.
 
-### <a name="return-value"></a>Dönüş Değeri
+### <a name="return-value"></a>Dönüş değeri
 
-Hedef aralıktaki son öğeden bir öncekine yani konumu belirleyen çıktı Yineleyici, yineleyici `result` + (*son* - *ilk*).
+Hedef aralıktaki son öğeden bir geçen konumu ele alan çıkış Yineleyici, yani `result` Yineleyici adresler + (*son* - *ilk*).
 
 ### <a name="remarks"></a>Açıklamalar
 
 Kaynak aralığının geçerli olması gerekir ve hedefte, kopyalanmakta olan tüm öğeleri tutmak için yeterli alan olmalıdır.
 
-Algoritma, ilk öğe ile başlayan sıraya öre kaynak öğeleri kopyaladığı için hedef aralığı kaynak aralığı ile örtüşebilir *son* kaynak aralığı konumunu yer almıyor hedefte Aralık. `copy` Kaynak ve hedef aralıklar arasında örtüşme olmadıkça, öğeleri sola ancak değil sağa kaydırmak için kullanılabilir. Herhangi bir sayıda konumları sağa kaydırmak için [copy_backward](../standard-library/algorithm-functions.md#copy_backward) algoritması.
+Algoritma, kaynak öğeleri ilk öğesiyle başlayarak sırayla kopyalamadığından, hedef Aralık kaynak aralığı ile örtüşebilir ve kaynak aralığın *son* konumu hedef aralıkta yer alır. `copy`Kaynak ve hedef aralıklar arasında çakışma yoksa sağ değil, öğeleri sola kaydırmak için kullanılabilir. Herhangi bir sayıda konum sağa kaydırmak için [copy_backward](../standard-library/algorithm-functions.md#copy_backward) algoritmasını kullanın.
 
-`copy` Algoritması, yalnızca hedef aralıktaki öğelere yeni değerler atayarak yineleyiciler tarafından gösterilen değerleri değiştirir. Yeni öğe oluşturmak için kullanılamaz ve öğeleri boş bir kapsayıcıya doğrudan ekleyemez.
+`copy` Algoritma yalnızca yineleyiciler tarafından işaret edilen değerleri değiştirir ve hedef aralıktaki öğelere yeni değerler atanıyor. Yeni öğe oluşturmak için kullanılamaz ve öğeleri boş bir kapsayıcıya doğrudan ekleyemez.
 
 ### <a name="example"></a>Örnek
 
@@ -662,44 +707,44 @@ Algoritma, ilk öğe ile başlayan sıraya öre kaynak öğeleri kopyaladığı 
 #include <iostream>
 
 int main() {
-   using namespace std;
-   vector <int> v1, v2;
-   vector <int>::iterator Iter1, Iter2;
+    using namespace std;
+    vector<int> v1, v2;
+    vector<int>::iterator Iter1, Iter2;
 
-   int i;
-   for ( i = 0 ; i <= 5 ; i++ )
-      v1.push_back( 10 * i );
+    int i;
+    for ( i = 0 ; i <= 5 ; i++ )
+        v1.push_back( 10 * i );
 
-   int ii;
-   for ( ii = 0 ; ii <= 10 ; ii++ )
-      v2.push_back( 3 * ii );
+    int ii;
+    for ( ii = 0 ; ii <= 10 ; ii++ )
+        v2.push_back( 3 * ii );
 
-   cout << "v1 = ( " ;
-   for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
-      cout << *Iter1 << " ";
-   cout << ")" << endl;
+    cout << "v1 = ( " ;
+    for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
+        cout << *Iter1 << " ";
+    cout << ")" << endl;
 
-   cout << "v2 = ( " ;
-   for ( Iter2 = v2.begin( ) ; Iter2 != v2.end( ) ; Iter2++ )
-      cout << *Iter2 << " ";
-   cout << ")" << endl;
+    cout << "v2 = ( " ;
+    for ( Iter2 = v2.begin( ) ; Iter2 != v2.end( ) ; Iter2++ )
+        cout << *Iter2 << " ";
+    cout << ")" << endl;
 
-   // To copy the first 3 elements of v1 into the middle of v2
-   copy( v1.begin( ), v1.begin( ) + 3, v2.begin( ) + 4 );
+    // To copy the first 3 elements of v1 into the middle of v2
+    copy( v1.begin( ), v1.begin( ) + 3, v2.begin( ) + 4 );
 
-   cout << "v2 with v1 insert = ( " ;
-   for ( Iter2 = v2.begin( ) ; Iter2 != v2.end( ) ; Iter2++ )
-      cout << *Iter2 << " ";
-   cout << ")" << endl;
+    cout << "v2 with v1 insert = ( " ;
+    for ( Iter2 = v2.begin( ) ; Iter2 != v2.end( ) ; Iter2++ )
+        cout << *Iter2 << " ";
+    cout << ")" << endl;
 
-   // To shift the elements inserted into v2 two positions
-   // to the left
-   copy( v2.begin( )+4, v2.begin( ) + 7, v2.begin( ) + 2 );
+    // To shift the elements inserted into v2 two positions
+    // to the left
+    copy( v2.begin( )+4, v2.begin( ) + 7, v2.begin( ) + 2 );
 
-   cout << "v2 with shifted insert = ( " ;
-   for ( Iter2 = v2.begin( ) ; Iter2 != v2.end( ) ; Iter2++ )
-      cout << *Iter2 << " ";
-   cout << ")" << endl;
+    cout << "v2 with shifted insert = ( " ;
+    for ( Iter2 = v2.begin( ) ; Iter2 != v2.end( ) ; Iter2++ )
+        cout << *Iter2 << " ";
+    cout << ")" << endl;
 }
 ```
 
@@ -710,7 +755,7 @@ v2 with v1 insert = ( 0 3 6 9 0 10 20 21 24 27 30 )
 v2 with shifted insert = ( 0 3 0 10 20 10 20 21 24 27 30 )
 ```
 
-## <a name="copy_backward"></a> copy_backward
+## <a name="copy_backward"></a>copy_backward
 
 Bir kaynak aralığındaki öğe değerlerini bir hedef aralığına atayarak, öğelerin kaynak sırası boyunca yineler ve bunları yeni konumlarına geri yönde atar.
 
@@ -724,30 +769,30 @@ BidirectionalIterator2 copy_backward(
 
 ### <a name="parameters"></a>Parametreler
 
-*ilk*\
+*adı*\
 Kaynak aralıktaki ilk öğenin konumunu belirleyen çift yönlü yineleyici.
 
-*Son*\
+*soyadına*\
 Kaynak aralıkta son öğeden bir önceki öğenin konumunu belirleyen çift yönlü yineleyici.
 
 *destEnd*\
 Hedef aralıkta son öğeden bir önceki öğenin konumunu belirleyen çift yönlü yineleyici.
 
-### <a name="return-value"></a>Dönüş Değeri
+### <a name="return-value"></a>Dönüş değeri
 
-Hedef aralıktaki son öğeden bir öncekine yani konumu belirleyen çıktı Yineleyici, yineleyici *destEnd* -(*son* - *ilk*).
+Hedef aralıktaki son öğeden bir geçen konumu ele alan çıkış Yineleyici, yani Yineleyici *DestEnd* -(*son* - *ilk*) adresini adresleyen.
 
 ### <a name="remarks"></a>Açıklamalar
 
 Kaynak aralığının geçerli olması gerekir ve hedefte, kopyalanmakta olan tüm öğeleri tutmak için yeterli alan olmalıdır.
 
-`copy_backward` Algoritması daha katı gereksinimler uygular kopyalama algoritması. Hem giriş hem de çıkış yineleyicileri çift yönlü olmalıdır.
+`copy_backward` Algoritma ,`copy` algoritmadan daha sıkı gereksinimler getirir. Hem giriş hem de çıkış yineleyicileri çift yönlü olmalıdır.
 
-`copy_backward` Ve [move_backward](../standard-library/algorithm-functions.md#move_backward) algoritmalar olan tek C++ standart kitaplığı algoritmaları, çıktı aralığını hedef aralığın sonuna işaret eden bir yineleyici ile belirleme.
+Ve `copy_backward` [move_backward](../standard-library/algorithm-functions.md#move_backward) algoritmaları, çıkış aralığını hedef C++ aralığın sonuna işaret eden bir yineleyici ile tanımlayarak tek standart kitaplık algoritmalardır.
 
-Algoritma son öğe ile başlayan sıraya öre kaynak öğeleri kopyaladığı için hedef aralığı kaynak aralığı ile örtüşebilir *ilk* kaynak aralığı konumunu yer almıyor hedefte Aralık. `copy_backward` Kaynak ve hedef aralıklar arasında örtüşme olmadıkça, öğeleri sola değil ancak sağa kaydırmak için kullanılabilir. Konumlar herhangi bir sayıda sola kaydırmak için [kopyalama](../standard-library/algorithm-functions.md#copy) algoritması.
+Algoritma, kaynak öğeleri son öğe ile başlayan sırayla kopyalamadığından, hedef Aralık kaynak aralığı ile örtüşebilir ve kaynak aralığın *ilk* konumu hedef aralıkta yer içermez. `copy_backward`Kaynak ve hedef aralıklar arasında çakışma olmaması dışında, öğeleri sağa doğru kaydırmak için kullanılabilir. Herhangi bir sayıda konum sola kaydırmak için [kopyalama](../standard-library/algorithm-functions.md#copy) algoritmasını kullanın.
 
-`copy_backward` Algoritması, yalnızca hedef aralıktaki öğelere yeni değerler atayarak yineleyiciler tarafından gösterilen değerleri değiştirir. Yeni öğe oluşturmak için kullanılamaz ve öğeleri boş bir kapsayıcıya doğrudan ekleyemez.
+`copy_backward` Algoritma yalnızca yineleyiciler tarafından işaret edilen değerleri değiştirir ve hedef aralıktaki öğelere yeni değerler atanıyor. Yeni öğe oluşturmak için kullanılamaz ve öğeleri boş bir kapsayıcıya doğrudan ekleyemez.
 
 ### <a name="example"></a>Örnek
 
@@ -759,94 +804,98 @@ Algoritma son öğe ile başlayan sıraya öre kaynak öğeleri kopyaladığı i
 #include <iostream>
 
 int main() {
-   using namespace std;
-   vector <int> v1, v2;
-   vector <int>::iterator Iter1, Iter2;
+    using namespace std;
+    vector<int> v1, v2;
+    vector<int>::iterator Iter1, Iter2;
 
-   int i;
-   for ( i = 0 ; i <= 5 ; ++i )
-      v1.push_back( 10 * i );
+    int i;
+    for ( i = 0 ; i <= 5 ; ++i )
+        v1.push_back( 10 * i );
 
-   int ii;
-   for ( ii = 0 ; ii <= 10 ; ++ii )
-      v2.push_back( 3 * ii );
+    int ii;
+    for ( ii = 0 ; ii <= 10 ; ++ii )
+        v2.push_back( 3 * ii );
 
-   cout << "v1 = ( " ;
-   for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; ++Iter1 )
-      cout << *Iter1 << " ";
-   cout << ")" << endl;
+    cout << "v1 = ( " ;
+    for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; ++Iter1 )
+        cout << *Iter1 << " ";
+    cout << ")" << endl;
 
-   cout << "v2 = ( " ;
-   for ( Iter2 = v2.begin( ) ; Iter2 != v2.end( ) ; ++Iter2 )
-      cout << *Iter2 << " ";
-   cout << ")" << endl;
+    cout << "v2 = ( " ;
+    for ( Iter2 = v2.begin( ) ; Iter2 != v2.end( ) ; ++Iter2 )
+        cout << *Iter2 << " ";
+    cout << ")" << endl;
 
-   // To copy_backward the first 3 elements of v1 into the middle of v2
-   copy_backward( v1.begin( ), v1.begin( ) + 3, v2.begin( ) + 7 );
+    // To copy_backward the first 3 elements of v1 into the middle of v2
+    copy_backward( v1.begin( ), v1.begin( ) + 3, v2.begin( ) + 7 );
 
-   cout << "v2 with v1 insert = ( " ;
-   for ( Iter2 = v2.begin( ) ; Iter2 != v2.end( ) ; ++Iter2 )
-      cout << *Iter2 << " ";
-   cout << ")" << endl;
+    cout << "v2 with v1 insert = ( " ;
+    for ( Iter2 = v2.begin( ) ; Iter2 != v2.end( ) ; ++Iter2 )
+        cout << *Iter2 << " ";
+    cout << ")" << endl;
 
-   // To shift the elements inserted into v2 two positions
-   // to the right
-   copy_backward( v2.begin( )+4, v2.begin( ) + 7, v2.begin( ) + 9 );
+    // To shift the elements inserted into v2 two positions
+    // to the right
+    copy_backward( v2.begin( )+4, v2.begin( ) + 7, v2.begin( ) + 9 );
 
-   cout << "v2 with shifted insert = ( " ;
-   for ( Iter2 = v2.begin( ) ; Iter2 != v2.end( ) ; ++Iter2 )
-      cout << *Iter2 << " ";
-   cout << ")" << endl;
+    cout << "v2 with shifted insert = ( " ;
+    for ( Iter2 = v2.begin( ) ; Iter2 != v2.end( ) ; ++Iter2 )
+        cout << *Iter2 << " ";
+    cout << ")" << endl;
 }
 ```
 
-## <a name="copy_if"></a> copy_if
+## <a name="copy_if"></a>copy_if
 
-Öğelerin bir aralıktaki öğeleri kopyalar **true** belirtilen koşulu için.
+Bir dizi öğe içinde, belirtilen koşul için **doğru** olan öğeleri kopyalar.
 
 ```cpp
-template<class InputIterator, class OutputIterator, class BinaryPredicate>
+template<class InputIterator, class OutputIterator, class UnaryPredicate>
 OutputIterator copy_if(
     InputIterator first,
     InputIterator last,
     OutputIterator dest,
-    Predicate pred);
+    UnaryPredicate pred);
 
-template<class ExecutionPolicy, class ForwardIterator1, class ForwardIterator2,
-class Predicate>
+template<class ExecutionPolicy, class ForwardIterator1, class ForwardIterator2, class UnaryPredicate>
 ForwardIterator2 copy_if(
     ExecutionPolicy&& exec,
-    ForwardIterator1 first, ForwardIterator1 last,
-    ForwardIterator2 result, Predicate pred);
+    ForwardIterator1 first,
+    ForwardIterator1 last,
+    ForwardIterator2 result,
+    UnaryPredicate pred);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*ilk*\
-Koşulu denetlemek için bir aralık başlangıcını gösteren bir giriş yineleyici.
+*Exec*\
+Kullanılacak yürütme ilkesi.
 
-*Son*\
-Aralığın sonunu gösteren bir giriş yineleyici.
+*adı*\
+Koşulu denetlemek için bir aralığın başlangıcını gösteren bir giriş Yineleyici.
 
-*Hedef*\
-Hedef kopyalanan öğeleri gösteren bir çıkış yineleyici.
+*soyadına*\
+Aralığın sonunu gösteren bir giriş yineleyicisi.
 
-*_Pred*\
-Koşul aralıktaki her öğeye karşı test edilmiştir. Bu durum, bir kullanıcı tanımlı işlevin doğrulama nesnesi tarafından sağlanır. Bir koşulu, bir bağımsız değişken alır ve döndürür **true** veya **false**.
+*HD*\
+Kopyalanmış öğelerin hedefini gösteren çıkış yineleyicisi.
 
-### <a name="return-value"></a>Dönüş Değeri
+*pred*\
+Aralıktaki her öğenin test edileceği koşul. Bu koşul, Kullanıcı tanımlı bir koşul işlevi nesnesi tarafından sağlanır. Birli koşul bir bağımsız değişken alır ve **true** veya **false**değerini döndürür.
 
-Eşittir bir çıkış yineleyici *dest* her öğe için koşulu karşılayan sonra artar. Diğer bir deyişle, dönüş değeri eksi *dest* kopyalanan öğelerin sayısına eşittir.
+### <a name="return-value"></a>Dönüş değeri
+
+Koşulu yerine getiren her öğe için bir kez *hedefe* eşit olan bir çıkış yineleyicisi. Diğer bir deyişle, dönüş değeri eksi *hedef* , kopyalanmış öğelerin sayısına eşittir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon işlevi değerlendirir
+Şablon işlevi değerlendirilir
 
-`if (pred(*_First + N)) * dest++ = *(_First + N))`
+`if (pred(*first + N)) * dest++ = *(first + N))`
 
-her biri için bir kez `N` aralığında `[0, last - first)`, öğesinin artan değerleri için `N` en düşük değerden başlayarak. Varsa *dest* ve *ilk* depolama bölgelerini belirlemek *dest* aralığında olmamalıdır `[ first, last )`.
+`N` aralıkta `N` herbiriiçinbirkez,endüşükdeğerlebaşlayandeğerlerikesinlikleartırmakiçin.`[0, last - first)` *Hedef* ve *ilk* olarak depolama bölgelerini belirlerseniz, *hedef* Aralık `[ first, last )`içinde olmamalıdır.
 
-## <a name="copy_n"></a> copy_n
+## <a name="copy_n"></a>copy_n
 
 Belirtilen sayıda öğeyi kopyalar.
 
@@ -857,32 +906,35 @@ OutputIterator copy_n(
     Size count,
     OutputIterator dest);
 
-template<class ExecutionPolicy, class ForwardIterator1, class Size,
-class ForwardIterator2>
+template<class ExecutionPolicy, class ForwardIterator1, class Size, class ForwardIterator2>
 ForwardIterator2 copy_n(
     ExecutionPolicy&& exec,
-    ForwardIterator1 first, Size n,
-    ForwardIterator2 result);
+    ForwardIterator1 first,
+    Size count,
+    ForwardIterator2 dest);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*ilk*\
-Nereye kopyalanacağını öğeleri gösteren bir giriş yineleyici.
+*Exec*\
+Kullanılacak yürütme ilkesi.
 
-*Sayısı*\
-Kopyalanacak öğe sayısını belirten bir işaretli veya işaretsiz tamsayı türü.
+*adı*\
+Öğelerin nereden kopyalanacağını gösteren bir giriş Yineleyici.
 
-*Hedef*\
-Öğelere kopyalamak yeri belirten bir çıkış yineleyici.
+*biriktirme*\
+Kopyalanacak öğe sayısını belirten imzalı veya işaretsiz bir tamsayı türü.
 
-### <a name="return-value"></a>Dönüş Değeri
+*HD*\
+Öğelerin nereye kopyalanacağını gösteren bir çıkış yineleyicisi.
 
-Öğeleri kopyaladınız olduğu bir çıkış yineleyici döndürür. Üçüncü parametresi, döndürülen değeri aynı olan *dest*.
+### <a name="return-value"></a>Dönüş değeri
+
+Öğelerin kopyalandığı çıkış yineleyiciyi döndürür. Bu, *hedef* parametrenin döndürülen değeriyle aynıdır.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon işlevi değerlendirir `*(dest + N) = *(first + N))` her biri için bir kez `N` aralığında `[0, count)`, öğesinin artan değerleri için `N` en düşük değerden başlayarak. Ardından döndürür `dest + N`. Varsa *dest* ve *ilk* depolama bölgelerini belirlemek *dest* aralığında olmamalıdır `[first, last)`.
+Şablon işlevi, Aralık `*(dest + N) = *(first + N))` `N` `[0, count)`içinde her biri için bir kez değerlendirilir ve en düşük değer ile `N` başlangıç değerlerini kesin olarak artırır. Ardından döndürür `dest + N`. *Hedef* ve *ilk* olarak depolama bölgelerini belirlerseniz, *hedef* Aralık `[first, last)`içinde olmamalıdır.
 
 ### <a name="example"></a>Örnek
 
@@ -900,8 +952,8 @@ int main()
     string s2{"badger"};
 
     cout << s1 << " + " << s2 << " = ";
-    
-    // Copy the first 3 letters from s1 
+
+    // Copy the first 3 letters from s1
     // to the first 3 positions in s2
     copy_n(s1.begin(), 3, s2.begin());
 
@@ -913,7 +965,7 @@ int main()
 dandelion + badger = danger
 ```
 
-## <a name="count"></a> Sayısı
+## <a name="count"></a>biriktirme
 
 Değerleri belirtilen bir değerle eşleşen bir aralıktaki öğelerin sayısını döndürür.
 
@@ -922,37 +974,40 @@ template<class InputIterator, class Type>
 typename iterator_traits<InputIterator>::difference_type count(
     InputIterator first,
     InputIterator last,
-    const Type& val);
-    
-template<class ExecutionPolicy, class ForwardIterator, class T>
+    const Type& value);
+
+template<class ExecutionPolicy, class ForwardIterator, class Type>
 typename iterator_traits<ForwardIterator>::difference_type
 count(
     ExecutionPolicy&& exec,
     ForwardIterator first,
     ForwardIterator last,
-    const T& value);
+    const Type& value);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*ilk*\
-Geçmesi için aralıktaki ilk öğenin konumunu ele alan bir giriş yineleyici.
+*Exec*\
+Kullanılacak yürütme ilkesi.
 
-*Son*\
-Geçmesi için bir son öğeden aralığındaki konumu ele alan bir giriş yineleyici.
+*adı*\
+Bir giriş yineleyicisi, geçilen aralıktaki ilk öğenin konumunu ele alıyor.
 
-*VAL*\
+*soyadına*\
+Bir giriş yineleyicisi, ele eklenecek aralıktaki son öğeden sonraki konumu ele alıyor.
+
+*deeri*\
 Sayılacak öğelerin değeri.
 
-### <a name="return-value"></a>Dönüş Değeri
+### <a name="return-value"></a>Dönüş değeri
 
-Fark türünü `InputIterator` , aralıktaki öğeleri sayar [ *ilk*, *son* ) değere sahip *val*.
+`InputIterator` Değer *değeri*olan [*First*, *Last*) aralığındaki öğe sayısını sayan fark türü.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`operator==` Eşleşen bir öğe ile belirtilen değer arasında bir eşdeğerlik ilişkisi işlenenleri arasındaki dayatır gerekir belirlemek için kullanılır.
+Bir `operator==` öğe ile belirtilen değer arasındaki eşleşmeyi belirlemede kullanılan, işlenenleri arasında bir denklik ilişkisi getirmelidir.
 
-Bu algoritma şablon işlevi ile herhangi bir koşulu karşılayan öğeleri saymak için genelleştirilmiş [count_if](../standard-library/algorithm-functions.md#count_if).
+Bu algoritma, [count_if](../standard-library/algorithm-functions.md#count_if)şablon işlevi ile herhangi bir koşulu karşılayan öğeleri saymak için genelleştirilmiştir.
 
 ### <a name="example"></a>Örnek
 
@@ -991,44 +1046,47 @@ v1 = ( 10 20 10 40 10 )
 The number of 10s in v2 is: 3.
 ```
 
-## <a name="count_if"></a> count_if
+## <a name="count_if"></a>count_if
 
-Değerleri, belirli bir koşulu karşılayan bir aralıktaki öğelerin sayısını döndürür.
+Değerleri belirtilen koşula uyan bir aralıktaki öğelerin sayısını döndürür.
 
 ```cpp
-template<class InputIterator, class Predicate>
+template<class InputIterator, class UnaryPredicate>
 typename iterator_traits<InputIterator>::difference_type count_if(
     InputIterator first,
     InputIterator last,
-    Predicate pred);
-    
-template<class ExecutionPolicy, class ForwardIterator, class Predicate>
+    UnaryPredicate pred);
+
+template<class ExecutionPolicy, class ForwardIterator, class UnaryPredicate>
 typename iterator_traits<ForwardIterator>::difference_type
 count_if(
     ExecutionPolicy&& exec,
     ForwardIterator first,
     ForwardIterator last,
-    Predicate pred);
+    UnaryPredicate pred);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*ilk*\
-Aranacak aralıktaki ilk öğenin konumunu ele alan bir giriş yineleyici.
+*Exec*\
+Kullanılacak yürütme ilkesi.
 
-*Son*\
-Aranacak bir son öğeden aralığındaki konumu ele alan bir giriş yineleyici.
+*adı*\
+Aranacak aralıktaki ilk öğenin konumunu ele aldığı bir giriş Yineleyici.
 
-*_Pred*\
-Bir öğe sayılacak ise karşılanması koşul tanımlayan kullanıcı tanımlı işlevin doğrulama nesnesi. Bir koşulu, tek bir bağımsız değişken alır ve döndürür **true** veya **false**.
+*soyadına*\
+Aranacak aralıktaki son öğeden sonraki konumu ele aldığı bir giriş Yineleyici.
 
-### <a name="return-value"></a>Dönüş Değeri
+*pred*\
+Bir öğenin sayılmaması durumunda karşılanması gereken koşulu tanımlayan Kullanıcı tanımlı koşul işlevi nesnesi. Birli koşul tek bir bağımsız değişken alır ve **true** veya **false**değerini döndürür.
 
-Koşul tarafından belirtilen koşulu karşılayan bir öğe sayısı.
+### <a name="return-value"></a>Dönüş değeri
+
+Koşul tarafından belirtilen koşulu karşılayan öğe sayısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu şablonu işlev algoritmasının Genelleştirme, [sayısı](../standard-library/algorithm-functions.md#count), koşul değiştirme "eşit belirli bir değeri" ile herhangi bir koşul.
+Bu şablon işlevi, algoritma [sayısının](../standard-library/algorithm-functions.md#count)genelleştirilmesidir ve bu koşulun "şuna eşit belirli bir değere" koşulunu herhangi bir koşula göre değiştirir.
 
 ### <a name="example"></a>Örnek
 
@@ -1073,99 +1131,107 @@ v1 = ( 10 20 10 40 10 )
 The number of elements in v1 greater than 10 is: 2.
 ```
 
-## <a name="equal"></a> eşittir
+## <a name="equal"></a>sıfıra
 
-İki aralığı öğe öğe için eşitlik ya da bir ikili koşula göre belirtilen anlamda denklik karşılaştırır.
+Bir ikili koşula göre belirtilen anlamda, eşitlik veya denklik için öğe ile iki Aralık öğesini karşılaştırır.
 
-Kullanım `std::equal` farklı kapsayıcı türlerinde öğeleri karşılaştırırken (örneğin `vector` ve `list`) veya farklı bir öğe türleri karşılaştırırken ya da alt kapsayıcıları aralıklarına karşılaştırmak gerektiğinde. Aksi takdirde aynı kapsayıcı türü aynı türdeki öğeleri karşılaştırırken üye olmayan kullanın `operator==` her kapsayıcı için sağlanır.
+Farklı `std::equal` kapsayıcı türlerindeki (örneğin `vector` ve `list`) veya farklı öğe türlerini karşılaştırırken veya kapsayıcıların alt aralıklarını karşılaştırmanız gerektiğinde kullanın. Aksi halde, aynı kapsayıcı türünde aynı türdeki öğeleri karşılaştırırken, her kapsayıcı için belirtilen üye `operator==` olmayan öğeyi kullanın.
 
-İkinci aralığı için tek bir yineleyici yalnızca aşırı farklar algılamaz ikinci aralığın ilk aralığından daha uzun ve ikinci aralığı kısaysa tanımsız davranışlara neden çünkü çift aralıklı C ++ 14 kodda aşırı yüklemeleri kullanın ilk aralığından daha.
+İkinci Aralık için yalnızca tek bir yineleyici alan aşırı yüklemeler ikinci aralığın ilk aralıktan daha uzun olması fark etmez ve ikinci Aralık daha kısaysa tanımsız davranışlara neden olacak şekilde, C++ 14 kodunda çift aralıklı aşırı yüklemeleri kullanın. ilk aralıktan fazla.
 
 ```cpp
 template<class InputIterator1, class InputIterator2>
 bool equal(
-    InputIterator1  First1,
-    InputIterator1  Last1,
-    InputIterator2  First2);
+    InputIterator1 first1,
+    InputIterator1 last1,
+    InputIterator2 first2);
 
 template<class InputIterator1, class InputIterator2, class BinaryPredicate>
 bool equal(
-    InputIterator1  First1,
-    InputIterator1  Last1,
-    InputIterator2  First2,
-    BinaryPredicate Comp); // C++14
+    InputIterator1 first1,
+    InputIterator1 last1,
+    InputIterator2 first2,
+    BinaryPredicate pred); // C++14
 
 template<class InputIterator1, class InputIterator2>
 bool equal(
-    InputIterator1  First1,
-    InputIterator1  Last1,
-    InputIterator2  First2,
-    InputIterator2  Last2);
+    InputIterator1 first1,
+    InputIterator1 last1,
+    InputIterator2 first2,
+    InputIterator2 last2);
 
 template<class InputIterator1, class InputIterator2, class BinaryPredicate>
 bool equal(
-    InputIterator1  First1,
-    InputIterator1  Last1,
-    InputIterator2  First2,
-    InputIterator2  Last2,
-    BinaryPredicate Comp);
-    
+    InputIterator1 first1,
+    InputIterator1 last1,
+    InputIterator2 first2,
+    InputIterator2 last2,
+    BinaryPredicate pred);
+
 template<class ExecutionPolicy, class ForwardIterator1, class ForwardIterator2>
 bool equal(
     ExecutionPolicy&& exec,
-    ForwardIterator1 first1, ForwardIterator1 last1,
+    ForwardIterator1 first1,
+    ForwardIterator1 last1,
     ForwardIterator2 first2);
-    
-template<class ExecutionPolicy, class ForwardIterator1, class ForwardIterator2,
-class BinaryPredicate>
+
+template<class ExecutionPolicy, class ForwardIterator1, class ForwardIterator2, class BinaryPredicate>
 bool equal(
     ExecutionPolicy&& exec,
-    ForwardIterator1 first1, ForwardIterator1 last1,
-    ForwardIterator2 first2, BinaryPredicate pred);
+    ForwardIterator1 first1,
+    ForwardIterator1 last1,
+    ForwardIterator2 first2,
+    BinaryPredicate pred);
 
 template<class ExecutionPolicy, class ForwardIterator1, class ForwardIterator2>
 bool equal(
     ExecutionPolicy&& exec,
-    ForwardIterator1 first1, ForwardIterator1 last1,
-    ForwardIterator2 first2, ForwardIterator2 last2);
+    ForwardIterator1 first1,
+    ForwardIterator1 last1,
+    ForwardIterator2 first2,
+    ForwardIterator2 last2);
 
-template<class ExecutionPolicy, class ForwardIterator1, class ForwardIterator2,
-class BinaryPredicate>
+template<class ExecutionPolicy, class ForwardIterator1, class ForwardIterator2, class BinaryPredicate>
 bool equal(
     ExecutionPolicy&& exec,
-    ForwardIterator1 first1, ForwardIterator1 last1,
-    ForwardIterator2 first2, ForwardIterator2 last2,
+    ForwardIterator1 first1,
+    ForwardIterator1 last1,
+    ForwardIterator2 first2,
+    ForwardIterator2 last2,
     BinaryPredicate pred);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
+*Exec*\
+Kullanılacak yürütme ilkesi.
+
 *first1*\
-Test edilecek ilk aralıktaki ilk öğenin konumunu ele alan bir giriş yineleyici.
+Sınanacak ilk aralıktaki ilk öğenin konumunu ele aldığı bir giriş Yineleyici.
 
 *last1*\
-Test edilecek ilk aralığın son öğesinde geçmiş konumu ele alan bir giriş yineleyici.
+Test edilecek ilk aralıktaki son öğeden sonraki konumu ele aldığı bir giriş Yineleyici.
 
 *first2*\
-Test edilecek ikinci aralıktaki ilk öğenin konumunu ele alan bir giriş yineleyici.
+Test edilecek ikinci aralıktaki ilk öğenin konumunu ele aldığı bir giriş Yineleyici.
 
-*first2*\
-Test edilecek ikinci aralıktaki son öğeden bir öncekine konumu ele alan bir giriş yineleyici.
+*last2*\
+Test edilecek ikinci aralıktaki son öğeden bir önceki öğenin konumunu ele aldığı bir giriş Yineleyici.
 
-*Comp*\
-Gerçekleştirilecek iki öğe varsa karşılanması koşul tanımlayan kullanıcı tanımlı işlevin doğrulama nesnesi olarak eşdeğer. İkili koşulu, iki bağımsız değişkeni alır ve döndürür **true** karşılanmazsa ve **false** koşullar karşılanırsa.
+*pred*\
+İki öğenin eşdeğer olarak alınması durumunda karşılanması gereken koşulu tanımlayan Kullanıcı tanımlı koşul işlevi nesnesi. İkili koşul iki bağımsız değişken alır ve memnun olmadığında **true** ve **false** değeri döndürür.
 
-### <a name="return-value"></a>Dönüş Değeri
+### <a name="return-value"></a>Dönüş değeri
 
-**doğru** aynı veya eşdeğer karşılaştırıldığında öğeye göre; Aksi takdirde ikili koşul altında aralıkları ve yalnızca, **false**.
+yalnızca, veya öğesi öğesine göre karşılaştırıldığı zaman ikili koşulun altında aralıklar özdeş veya eşdeğer ise **true** . Aksi takdirde, **false**.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Aranacak aralık geçerli olmalı; Tüm yineleyiciler tekrar başvurulabilir olmalı ve son konuma ilk konumdan erişilebilmelidir.
+Aranacak Aralık geçerli olmalıdır; tüm yineleyiciler başvurulmalıdır ve en son konuma artırılamadı tarafından ilk kez ulaşılabilir.
 
-Eşit uzunluktaki iki aralık varsa zaman algoritmanın karmaşıklığı, doğrusal aralığında yer alan öğelerin sayısı. İşlevi hemen döndürür **false**.
+İki Aralık eşitse, algoritmanın zaman karmaşıklığı, aralıkta bulunan öğelerin sayısında doğrusal olur. Aksi takdirde, işlev hemen **false**döndürür.
 
-Ne `operator==` ya da kullanıcı tanımlı koşul, bir eşdeğerlik ilişkisi bu simetrik, yansıma ve işlenenleri arasındaki geçişli dayatmak için gereklidir.
+`operator==` Ne ne de Kullanıcı tanımlı koşul, işlenenleri arasında simetrik, yansımalı ve geçişli bir denklik ilişkisi uygulamak için gerekli değildir.
 
 ### <a name="example"></a>Örnek
 
@@ -1200,54 +1266,54 @@ int main()
 }
 ```
 
-## <a name="equal_range"></a> equal_range
+## <a name="equal_range"></a>equal_range
 
-Belirli bir sıralanmış aralıktaki tüm öğeleri belirli bir değere eşdeğer alt aralığı bulur.
+Sıralı bir Aralık verildiğinde, tüm öğelerin verilen değere eşit olduğu alt aralığı bulur.
 
 ```cpp
 template<class ForwardIterator, class Type>
 pair<ForwardIterator, ForwardIterator> equal_range(
     ForwardIterator first,
     ForwardIterator last,
-    const Type& val);
+    const Type& value);
 
-template<class ForwardIterator, class Type, class Predicate>
+template<class ForwardIterator, class Type, class Compare>
 pair<ForwardIterator, ForwardIterator> equal_range(
     ForwardIterator first,
     ForwardIterator last,
-    const Type& val,
-    Predicate comp);
+    const Type& value,
+    Compare pred);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*ilk*\
-Aranacak aralıktaki ilk öğenin konumunu bulan ileriye doğru yineleyici.
+*adı*\
+Aranacak aralıktaki ilk öğenin konumunu adresleyen ileri Yineleyici.
 
-*Son*\
-Aranacak Konum son öğeden bir aralıktaki ileriye doğru yineleyici.
+*soyadına*\
+Bir ileriye doğru yineleyici, aranacak aralıktaki son öğeden sonraki konumu ele alıyor.
 
-*VAL*\
-Sıralanan aralıkta Aranan değer.
+*deeri*\
+Sıralı aralıktaki aranmakta olan değer.
 
-*Comp*\
-Bir öğenin daha az olan algılama tanımlayan kullanıcı tanımlı işlevin doğrulama nesnesi.
+*pred*\
+Bir öğenin diğerinden küçük olduğu anlamlı olduğunu tanımlayan Kullanıcı tanımlı koşul işlevi nesnesi. Karşılaştırma koşulu iki bağımsız değişken alır ve memnun olmadığında **true** ve **false** değeri döndürür.
 
-### <a name="return-value"></a>Dönüş Değeri
+### <a name="return-value"></a>Dönüş değeri
 
-Tüm öğeleri olduğu eşdeğer Aranan aralığın içerdiği alt ileriye doğru Yineleyicilerin bir çiftini *val* kullanılan ikili koşul tarafından tanımlanan anlamında (ya da *comp* Varsayılan, daha az-daha).
+Tüm öğelerin, kullanılan ikili koşul ( *Pred* veya varsayılan, küçüktür) tarafından tanımlanan anlamda *değere* eşit olduğu, bir alt Aralık belirten bir alt aralığı belirten bir çift yineleyiciler çifti.
 
-Aralıktaki hiçbir öğe eşit değilse *val*, döndürülen İleri yineleyici çifti eşit ve noktasını belirtmek burada *val* aralığın sırasını bozmadan araya eklenebileceği.
+Aralıktaki hiçbir öğe *değere*eşdeğer değilse, döndürülen çiftin içindeki ileri yineleyiciler eşittir ve aralığın sırasını bozmadan *değerin* eklenebileceği noktayı belirler.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Algoritmaya göre döndürülen çiftin ilk yineleyici [lower_bound](../standard-library/algorithm-functions.md#lower_bound), ikinci yineleyicisi ise [upper_bound](../standard-library/algorithm-functions.md#upper_bound).
+Algoritmanın döndürdüğü çiftin ilk yineleyicisi [lower_bound](../standard-library/algorithm-functions.md#lower_bound)ve ikinci Yineleyici [upper_bound](../standard-library/algorithm-functions.md#upper_bound).
 
-Aralığın öğesine sağlanan koşula göre sıralanmalıdır `equal_range`. Örneğin, büyük-tahminden daha aralık azalan düzende sıralanmalıdır.
+Aralık, öğesine `equal_range`verilen koşula göre sıralanmalıdır. Örneğin, büyüktür koşulunu kullanacaksanız, Aralık azalan düzende sıralanmalıdır.
 
-Tarafından döndürülen yineleyici çifti tarafından tanımlanan muhtemelen boş alt öğeleri `equal_range` eşdeğer olacaktır *val* kullanılan koşul tarafından tanımlanan içinde.
+Tarafından `equal_range` döndürülen yineleyicilerin çifti tarafından tanımlanan muhtemelen boş alt aralıktaki öğeler, kullanılan koşul tarafından tanımlanan anlamda *değere* eşdeğerdir.
 
-Algoritmanın karmaşıklığı, rasgele erişim yineleyicileri için logaritmik ve doğrusal Aksi takdirde doğrusaldır adım sayısı ile (*son* - *ilk*).
+Algoritmanın karmaşıklığı Rastgele erişimli yineleyiciler ve doğrusal olarak, diğer bir deyişle, diğer bir deyişle, diğer bir deyişle, diğer bir deyişle - , diğer bir deyişle, diğer bir deyişle,
 
 ### <a name="example"></a>Örnek
 
@@ -1281,7 +1347,7 @@ template<class T> void dump_vector( const vector<T>& v, pair<typename vector<T>:
     cout << endl;
 }
 
-template<class T> void equal_range_demo( const vector<T>& original_vector, T val )
+template<class T> void equal_range_demo( const vector<T>& original_vector, T value )
 {
     vector<T> v(original_vector);
 
@@ -1294,14 +1360,14 @@ template<class T> void equal_range_demo( const vector<T>& original_vector, T val
     cout << endl << endl;
 
     pair<vector<T>::iterator, vector<T>::iterator> result
-        = equal_range( v.begin(), v.end(), val );
+        = equal_range( v.begin(), v.end(), value );
 
-    cout << "Result of equal_range with val = " << val << ":" << endl << '\t';
+    cout << "Result of equal_range with value = " << value << ":" << endl << '\t';
     dump_vector( v, result );
     cout << endl;
 }
 
-template<class T, class F> void equal_range_demo( const vector<T>& original_vector, T val, F pred, string predname )
+template<class T, class F> void equal_range_demo( const vector<T>& original_vector, T value, F pred, string predname )
 {
     vector<T> v(original_vector);
 
@@ -1314,9 +1380,9 @@ template<class T, class F> void equal_range_demo( const vector<T>& original_vect
     cout << endl << endl;
 
     pair<typename vector<T>::iterator, typename vector<T>::iterator> result
-        = equal_range( v.begin(), v.end(), val, pred );
+        = equal_range( v.begin(), v.end(), value, pred );
 
-    cout << "Result of equal_range with val = " << val << ":" << endl << '\t';
+    cout << "Result of equal_range with value = " << value << ":" << endl << '\t';
     dump_vector( v, result );
     cout << endl;
 }
@@ -1366,7 +1432,7 @@ int main()
 }
 ```
 
-## <a name="fill"></a> Dolgu
+## <a name="fill"></a>doldurması
 
 Aynı yeni değeri belirtilen bir aralıktaki her öğeye atar.
 
@@ -1375,30 +1441,33 @@ template<class ForwardIterator, class Type>
 void fill(
     ForwardIterator first,
     ForwardIterator last,
-    const Type& val);
+    const Type& value);
 
-template<class ExecutionPolicy, class ForwardIterator, class T>
+template<class ExecutionPolicy, class ForwardIterator, class Type>
 void fill(
     ExecutionPolicy&& exec,
-    ForwardIterator first, 
-    ForwardIterator last, 
-    const T& value);
+    ForwardIterator first,
+    ForwardIterator last,
+    const Type& value);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*ilk*\
-Geçmesi için aralıktaki ilk öğenin konumunu bulan ileriye doğru yineleyici.
+*Exec*\
+Kullanılacak yürütme ilkesi.
 
-*Son*\
-Geçmesi için konum son öğeden bir aralıktaki ileriye doğru yineleyici.
+*adı*\
+İleri bir yineleyici, içine eklenecek aralıktaki ilk öğenin konumunu ele alıyor.
 
-*VAL*\
-Aralığı içindeki öğelere atanmış değer [ *ilk*, *son*).
+*soyadına*\
+Bir ileriye doğru yineleyici, içine geçmek üzere aralıktaki son öğeden sonraki konumu ele alıyor.
+
+*deeri*\
+[*First*, *Last*) aralığındaki öğelere atanacak değer.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Hedef aralığı geçerli olmalıdır; Tüm İşaretçiler tekrar başvurulabilir olmalı ve son konuma ilk konumdan erişilebilmelidir. Karmaşıklık aralığı boyutu ile doğrusaldır.
+Hedef Aralık geçerli olmalıdır; Tüm işaretçilerin erişilebilir olması gerekir ve son konuma artırılamadı tarafından ilk kez ulaşılabilir. Karmaşıklık, aralığın boyutuyla doğrusal olarak belirlenir.
 
 ### <a name="example"></a>Örnek
 
@@ -1411,28 +1480,28 @@ Hedef aralığı geçerli olmalıdır; Tüm İşaretçiler tekrar başvurulabili
 
 int main()
 {
-   using namespace std;
-   vector <int> v1;
-   vector <int>::iterator Iter1;
+    using namespace std;
+    vector<int> v1;
+    vector<int>::iterator Iter1;
 
-   int i;
-   for ( i = 0 ; i <= 9 ; i++ )
-   {
-      v1.push_back( 5 * i );
-   }
+    int i;
+    for ( i = 0 ; i <= 9 ; i++ )
+    {
+        v1.push_back( 5 * i );
+    }
 
-   cout << "Vector v1 = ( " ;
-   for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
-      cout << *Iter1 << " ";
-   cout << ")" << endl;
+    cout << "Vector v1 = ( " ;
+    for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
+        cout << *Iter1 << " ";
+    cout << ")" << endl;
 
-   // Fill the last 5 positions with a value of 2
-   fill( v1.begin( ) + 5, v1.end( ), 2 );
+    // Fill the last 5 positions with a value of 2
+    fill( v1.begin( ) + 5, v1.end( ), 2 );
 
-   cout << "Modified v1 = ( " ;
-   for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
-      cout << *Iter1 << " ";
-   cout << ")" << endl;
+    cout << "Modified v1 = ( " ;
+    for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
+        cout << *Iter1 << " ";
+    cout << ")" << endl;
 }
 ```
 
@@ -1441,44 +1510,46 @@ Vector v1 = ( 0 5 10 15 20 25 30 35 40 45 )
 Modified v1 = ( 0 5 10 15 20 2 2 2 2 2 )
 ```
 
-## <a name="fill_n"></a> fill_n
+## <a name="fill_n"></a>fill_n
 
-Belirli bir öğeyle başlayan bir aralıktaki öğeleri belirtilen sayıda yeni bir değer atar.
+Belirli bir öğeyle başlayan bir aralıktaki belirli öğe sayısına yeni bir değer atar.
 
 ```cpp
 template<class OutputIterator, class Size, class Type>
 OutputIterator fill_n(
-    OutputIterator First,
-    Size Count,
-    const Type& Val);
+    OutputIterator first,
+    Size count,
+    const Type& value);
 
-template<class ExecutionPolicy, class ForwardIterator,
-class Size, class T>
+template<class ExecutionPolicy, class ForwardIterator, class Size, class Type>
 ForwardIterator fill_n(
     ExecutionPolicy&& exec,
-    ForwardIterator first, 
-    Size n, 
-    const T& value);
+    ForwardIterator first,
+    Size count,
+    const Type& value);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*ilk*\
-Değeri atanacak aralıktaki ilk öğenin konumunu bulan çıktı yineleyici *Val*.
+*Exec*\
+Kullanılacak yürütme ilkesi.
 
-*Sayısı*\
-Değerin atanacağı öğe sayısını belirten bir işaretli veya işaretsiz tamsayı türü.
+*adı*\
+Değer *değerine*atanacak aralıktaki ilk öğenin konumunu ele alarak çıkış Yineleyici.
 
-*VAL*\
-Aralığı içindeki öğelere atanmış değer [ *ilk*, *First + Count*).
+*biriktirme*\
+Değere atanacak öğe sayısını belirten imzalı veya işaretsiz bir tamsayı türü.
 
-### <a name="return-value"></a>Dönüş Değeri
+*deeri*\
+[*First*, *First + Count*) aralığındaki öğelere atanacak değer.
 
-Son öğeyi izleyen öğe için bir yineleyici doldurulmuş varsa *sayısı* > sıfır, aksi takdirde ilk öğe.
+### <a name="return-value"></a>Dönüş değeri
+
+Eğer *Count* değeri sıfır >, aksi takdirde ilk öğe olan öğe için bir yineleyici.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Hedef aralığı geçerli olmalıdır; Tüm İşaretçiler tekrar başvurulabilir olmalı ve son konuma ilk konumdan erişilebilmelidir. Karmaşıklık aralığı boyutu ile doğrusaldır.
+Hedef Aralık geçerli olmalıdır; Tüm işaretçilerin erişilebilir olması gerekir ve son konuma artırılamadı tarafından ilk kez ulaşılabilir. Karmaşıklık, aralığın boyutuyla doğrusal olarak belirlenir.
 
 ### <a name="example"></a>Örnek
 
@@ -1492,12 +1563,12 @@ Hedef aralığı geçerli olmalıdır; Tüm İşaretçiler tekrar başvurulabili
 int main()
 {
     using namespace std;
-    vector <int> v;
+    vector<int> v;
 
     for ( auto i = 0 ; i < 9 ; ++i )
         v.push_back( 0 );
 
-    cout << "  vector v = ( " ;
+    cout << " vector v = ( " ;
     for ( const auto &w : v )
         cout << w << " ";
     cout << ")" << endl;
@@ -1528,83 +1599,86 @@ int main()
 }
 ```
 
-## <a name="find"></a> Bul
+## <a name="find"></a>bilgi
 
 Bir öğenin belirli bir değere sahip olan aralıktaki ilk geçtiği konumu bulur.
 
 ```cpp
-template<class InputIterator, class T>
+template<class InputIterator, class Type>
 InputIterator find(
     InputIterator first,
     InputIterator last,
-    const T& val);
+    const Type& value);
 
-template<class ExecutionPolicy, class ForwardIterator, class T>
+template<class ExecutionPolicy, class ForwardIterator, class Type>
 ForwardIterator find(
     ExecutionPolicy&& exec,
-    ForwardIterator first, 
+    ForwardIterator first,
     ForwardIterator last,
-    const T& value);
+    const Type& value);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*ilk*\
-İçin belirtilen değer aranacak aralıktaki ilk öğenin konumunu ele alan bir giriş yineleyici.
+*Exec*\
+Kullanılacak yürütme ilkesi.
 
-*Son*\
-İçin belirtilen değer aranacak aralıktaki son öğeden sonraki birinci konum ele alan bir giriş yineleyici.
+*adı*\
+Belirtilen değer için aranacak aralıktaki ilk öğenin konumunu ele aldığı bir giriş Yineleyici.
 
-*VAL*\
+*soyadına*\
+Belirtilen değer için Aranmak üzere aralıktaki son öğeden sonraki konumu ele aldığı bir giriş Yineleyici.
+
+*deeri*\
 Aranacak değer.
 
-### <a name="return-value"></a>Dönüş Değeri
+### <a name="return-value"></a>Dönüş değeri
 
-Aranacak aralıktaki belirtilen değeri ilk oluşum ele alan giriş yineleyici. Eşdeğer bir değer ile herhangi bir öğe bulunursa döndürür *son*.
+Aranmakta olan aralıktaki belirtilen değerin ilk oluşumunu ele aldığı bir giriş Yineleyici. Denk bir değere sahip hiçbir öğe bulunmazsa, *en son*döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`operator==` Eşleşen bir öğe ile belirtilen değer arasında bir eşdeğerlik ilişkisi işlenenleri arasındaki dayatır gerekir belirlemek için kullanılır.
+Bir `operator==` öğe ile belirtilen değer arasındaki eşleşmeyi belirlemede kullanılan, işlenenleri arasında bir denklik ilişkisi getirmelidir.
 
-Örnek kodu kullanarak `find()`, bkz: [find_if](../standard-library/algorithm-functions.md#find_if).
+Kullanarak `find()`bir kod örneği için bkz. [find_if](../standard-library/algorithm-functions.md#find_if).
 
-## <a name="find_end"></a> find_end
+## <a name="find_end"></a>find_end
 
 Belirli bir diziye özdeş veya bir ikili koşula göre belirtildiği şekilde denk olan son dizi için bir aralık arar.
 
 ```cpp
 template<class ForwardIterator1, class ForwardIterator2>
 ForwardIterator1 find_end(
-    ForwardIterator1 First1,
-    ForwardIterator1 Last1,
-    ForwardIterator2 First2,
-    ForwardIterator2 Last2);
+    ForwardIterator1 first1,
+    ForwardIterator1 last1,
+    ForwardIterator2 first2,
+    ForwardIterator2 last2);
 
 template<class ForwardIterator1, class ForwardIterator2, class Pred>
 ForwardIterator1 find_end(
-    ForwardIterator1 First1,
-    ForwardIterator1 Last1,
-    ForwardIterator2 First2,
-    ForwardIterator2 Last2,
-    Pred Comp);
+    ForwardIterator1 first1,
+    ForwardIterator1 last1,
+    ForwardIterator2 first2,
+    ForwardIterator2 last2,
+    Pred pred);
 
 template<class ExecutionPolicy, class ForwardIterator1, class ForwardIterator2>
 ForwardIterator1
 find_end(
     ExecutionPolicy&& exec,
-    ForwardIterator1 first1, 
+    ForwardIterator1 first1,
     ForwardIterator1 last1,
-    ForwardIterator2 first2, 
+    ForwardIterator2 first2,
     ForwardIterator2 last2);
-    
+
 template<class ExecutionPolicy, class ForwardIterator1,
 class ForwardIterator2, class BinaryPredicate>
 ForwardIterator1
 find_end(
     ExecutionPolicy&& exec,
-    ForwardIterator1 first1, 
+    ForwardIterator1 first1,
     ForwardIterator1 last1,
-    ForwardIterator2 first2, 
+    ForwardIterator2 first2,
     ForwardIterator2 last2,
     BinaryPredicate pred);
 ```
@@ -1612,29 +1686,29 @@ find_end(
 ### <a name="parameters"></a>Parametreler
 
 *first1*\
-Aranacak aralıktaki ilk öğenin konumunu bulan ileriye doğru yineleyici.
+Aranacak aralıktaki ilk öğenin konumunu adresleyen ileri Yineleyici.
 
 *last1*\
-Aranacak bir önceki öğenin konumunu son öğeyi aralıktaki ileriye doğru yineleyici.
+Arama yapılacak aralıktaki son öğeden sonraki konumu ele alarak ileri Yineleyici.
 
 *first2*\
-Aranacak aralıktaki ilk öğenin konumunu bulan ileriye doğru yineleyici.
+Arama için aralıktaki ilk öğenin konumunu ele alarak ileriye doğru bir yineleyici.
 
-*Soyadı2*\
-Aramak için bir önceki öğenin konumunu son öğeyi aralıktaki ileriye doğru yineleyici.
+*last2*\
+Arama için aralıktaki son öğeden geçen bir konumu ele alarak ileri Yineleyici.
 
-*Comp*\
-Gerçekleştirilecek iki öğe varsa karşılanması koşul tanımlayan kullanıcı tanımlı işlevin doğrulama nesnesi olarak eşdeğer. İkili koşulu, iki bağımsız değişkeni alır ve döndürür **true** karşılanmazsa ve **false** koşullar karşılanırsa.
+*pred*\
+İki öğenin eşdeğer olarak alınması durumunda karşılanması gereken koşulu tanımlayan Kullanıcı tanımlı koşul işlevi nesnesi. İkili koşul iki bağımsız değişken alır ve memnun olmadığında **true** ve **false** değeri döndürür.
 
-### <a name="return-value"></a>Dönüş Değeri
+### <a name="return-value"></a>Dönüş değeri
 
-Son dizi içinde ilk öğenin konumunu bulan ileriye doğru yineleyici [First1, Last1) [First2, Soyadı2). belirtilen sıralamadaki eşleşen
+Belirtilen [first2, Last2) dizisiyle eşleşen [First1, last1) içindeki son alt dizinin ilk öğesinin konumunu ele alan bir ileriye doğru yineleyici.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`operator==` Eşleşen bir öğe ile belirtilen değer arasında bir eşdeğerlik ilişkisi işlenenleri arasındaki dayatır gerekir belirlemek için kullanılır.
+Bir `operator==` öğe ile belirtilen değer arasındaki eşleşmeyi belirlemede kullanılan, işlenenleri arasında bir denklik ilişkisi getirmelidir.
 
-Başvurulan aralıkların geçerli olması gerekir; Tüm İşaretçiler tekrar başvurulabilir olmalı ve her bir dizisi içinde son konuma ilk konumdan erişilebilmelidir.
+Başvurulan aralıklar geçerli olmalıdır; Tüm işaretçilerin erişilebilir olması gerekir ve her bir dizide, son konuma artırılamadı tarafından ilk kez ulaşılabilir.
 
 ### <a name="example"></a>Örnek
 
@@ -1649,77 +1723,77 @@ Başvurulan aralıkların geçerli olması gerekir; Tüm İşaretçiler tekrar b
 // Return whether second element is twice the first
 bool twice ( int elem1, int elem2 )
 {
-   return 2 * elem1 == elem2;
+    return 2 * elem1 == elem2;
 }
 
 int main()
 {
-   using namespace std;
-   vector <int> v1, v2;
-   list <int> L1;
-   vector <int>::iterator Iter1, Iter2;
-   list <int>::iterator L1_Iter, L1_inIter;
+    using namespace std;
+    vector<int> v1, v2;
+    list<int> L1;
+    vector<int>::iterator Iter1, Iter2;
+    list<int>::iterator L1_Iter, L1_inIter;
 
-   int i;
-   for ( i = 0 ; i <= 5 ; i++ )
-   {
-      v1.push_back( 5 * i );
-   }
-   for ( i = 0 ; i <= 5 ; i++ )
-   {
-      v1.push_back( 5 * i );
-   }
+    int i;
+    for ( i = 0 ; i <= 5 ; i++ )
+    {
+        v1.push_back( 5 * i );
+    }
+    for ( i = 0 ; i <= 5 ; i++ )
+    {
+        v1.push_back( 5 * i );
+    }
 
-   int ii;
-   for ( ii = 1 ; ii <= 4 ; ii++ )
-   {
-      L1.push_back( 5 * ii );
-   }
+    int ii;
+    for ( ii = 1 ; ii <= 4 ; ii++ )
+    {
+        L1.push_back( 5 * ii );
+    }
 
-   int iii;
-   for ( iii = 2 ; iii <= 4 ; iii++ )
-   {
-      v2.push_back( 10 * iii );
-   }
+    int iii;
+    for ( iii = 2 ; iii <= 4 ; iii++ )
+    {
+        v2.push_back( 10 * iii );
+    }
 
-   cout << "Vector v1 = ( " ;
-   for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
-      cout << *Iter1 << " ";
-   cout << ")" << endl;
+    cout << "Vector v1 = ( " ;
+    for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
+        cout << *Iter1 << " ";
+    cout << ")" << endl;
 
-   cout << "List L1 = ( " ;
-   for ( L1_Iter = L1.begin( ) ; L1_Iter!= L1.end( ) ; L1_Iter++ )
-      cout << *L1_Iter << " ";
-   cout << ")" << endl;
+    cout << "List L1 = ( " ;
+    for ( L1_Iter = L1.begin( ) ; L1_Iter!= L1.end( ) ; L1_Iter++ )
+        cout << *L1_Iter << " ";
+    cout << ")" << endl;
 
-   cout << "Vector v2 = ( " ;
-   for ( Iter2 = v2.begin( ) ; Iter2 != v2.end( ) ; Iter2++ )
-      cout << *Iter2 << " ";
-      cout << ")" << endl;
+    cout << "Vector v2 = ( " ;
+    for ( Iter2 = v2.begin( ) ; Iter2 != v2.end( ) ; Iter2++ )
+        cout << *Iter2 << " ";
+        cout << ")" << endl;
 
-   // Searching v1 for a match to L1 under identity
-   vector <int>::iterator result1;
-   result1 = find_end ( v1.begin( ), v1.end( ), L1.begin( ), L1.end( ) );
+    // Searching v1 for a match to L1 under identity
+    vector<int>::iterator result1;
+    result1 = find_end ( v1.begin( ), v1.end( ), L1.begin( ), L1.end( ) );
 
-   if ( result1 == v1.end( ) )
-      cout << "There is no match of L1 in v1."
-           << endl;
-   else
-      cout << "There is a match of L1 in v1 that begins at "
-           << "position "<< result1 - v1.begin( ) << "." << endl;
+    if ( result1 == v1.end( ) )
+        cout << "There is no match of L1 in v1."
+            << endl;
+    else
+        cout << "There is a match of L1 in v1 that begins at "
+            << "position "<< result1 - v1.begin( ) << "." << endl;
 
-   // Searching v1 for a match to L1 under the binary predicate twice
-   vector <int>::iterator result2;
-   result2 = find_end ( v1.begin( ), v1.end( ), v2.begin( ), v2.end( ), twice );
+    // Searching v1 for a match to L1 under the binary predicate twice
+    vector<int>::iterator result2;
+    result2 = find_end ( v1.begin( ), v1.end( ), v2.begin( ), v2.end( ), twice );
 
-   if ( result2 == v1.end( ) )
-      cout << "There is no match of L1 in v1."
-           << endl;
-   else
-      cout << "There is a sequence of elements in v1 that "
-           << "are equivalent to those\n in v2 under the binary "
-           << "predicate twice and that begins at position "
-           << result2 - v1.begin( ) << "." << endl;
+    if ( result2 == v1.end( ) )
+        cout << "There is no match of L1 in v1."
+            << endl;
+    else
+        cout << "There is a sequence of elements in v1 that "
+            << "are equivalent to those\n in v2 under the binary "
+            << "predicate twice and that begins at position "
+            << result2 - v1.begin( ) << "." << endl;
 }
 ```
 
@@ -1732,33 +1806,33 @@ There is a sequence of elements in v1 that are equivalent to those
 in v2 under the binary predicate twice and that begins at position 8.
 ```
 
-## <a name="find_first_of"></a> find_first_of
+## <a name="find_first_of"></a>find_first_of
 
 Bir hedef aralığındaki çeşitli değerlerden herhangi birinin ilk geçtiği yeri veya bir ikili koşula göre belirtilen bir öğeler kümesine belirtildiği şekilde denk olan çeşitli öğelerin geçtiği ilk yeri arar.
 
 ```cpp
 template<class ForwardIterator1, class ForwardIterator2>
 ForwardIterator1 find_first_of(
-    ForwardIterator1  first1,
-    ForwardIterator1 Last1,
-    ForwardIterator2  first2,
-    ForwardIterator2 Last2);
+    ForwardIterator1 first1,
+    ForwardIterator1 last1,
+    ForwardIterator2 first2,
+    ForwardIterator2 last2);
 
 template<class ForwardIterator1, class ForwardIterator2, class BinaryPredicate>
 ForwardIterator1 find_first_of(
-    ForwardIterator1  first1,
-    ForwardIterator1 Last1,
-    ForwardIterator2  first2,
-    ForwardIterator2 Last2,
-    BinaryPredicate  comp);
-    
+    ForwardIterator1 first1,
+    ForwardIterator1 last1,
+    ForwardIterator2 first2,
+    ForwardIterator2 last2,
+    BinaryPredicate pred);
+
 template<class ExecutionPolicy, class ForwardIterator1, class ForwardIterator2>
 ForwardIterator1
 find_first_of(
     ExecutionPolicy&& exec,
-    ForwardIterator1 first1, 
+    ForwardIterator1 first1,
     ForwardIterator1 last1,
-    ForwardIterator2 first2, 
+    ForwardIterator2 first2,
     ForwardIterator2 last2);
 
 template<class ExecutionPolicy, class ForwardIterator1,
@@ -1766,9 +1840,9 @@ class ForwardIterator2, class BinaryPredicate>
 ForwardIterator1
 find_first_of(
     ExecutionPolicy&& exec,
-    ForwardIterator1 first1, 
+    ForwardIterator1 first1,
     ForwardIterator1 last1,
-    ForwardIterator2 first2, 
+    ForwardIterator2 first2,
     ForwardIterator2 last2,
     BinaryPredicate pred);
 ```
@@ -1776,29 +1850,29 @@ find_first_of(
 ### <a name="parameters"></a>Parametreler
 
 *first1*\
-Aranacak aralıktaki ilk öğenin konumunu bulan ileriye doğru yineleyici.
+Aranacak aralıktaki ilk öğenin konumunu adresleyen ileri Yineleyici.
 
 *last1*\
-Aranacak Konum son öğeden bir aralıktaki ileriye doğru yineleyici.
+Bir ileriye doğru yineleyici, aranacak aralıktaki son öğeden sonraki konumu ele alıyor.
 
 *first2*\
-Eşleştirilecek aralıktaki ilk öğenin konumunu bulan ileriye doğru yineleyici.
+Eşleştirilecek aralıktaki ilk öğenin konumunu ele alarak ileriye doğru bir yineleyici.
 
-*Soyadı2*\
-Eşleştirilecek konum son öğeden bir aralıktaki ileriye doğru yineleyici.
+*last2*\
+Bir ileri Yineleyici, eşleştirilecek aralıktaki son öğeden sonraki konumu ele alıyor.
 
-*Comp*\
-Gerçekleştirilecek iki öğe varsa karşılanması koşul tanımlayan kullanıcı tanımlı işlevin doğrulama nesnesi olarak eşdeğer. İkili koşulu, iki bağımsız değişkeni alır ve döndürür **true** karşılanmazsa ve **false** koşullar karşılanırsa.
+*pred*\
+İki öğenin eşdeğer olarak alınması durumunda karşılanması gereken koşulu tanımlayan Kullanıcı tanımlı koşul işlevi nesnesi. İkili koşul iki bağımsız değişken alır ve memnun olmadığında **true** ve **false** değeri döndürür.
 
-### <a name="return-value"></a>Dönüş Değeri
+### <a name="return-value"></a>Dönüş değeri
 
-Belirtilen sıra veya eşleşen ilk diziyi ilk öğenin konumunu bulan ileriye doğru yineleyici bir ikili koşula göre belirtilen anlamda eşdeğerdir.
+Bir ileri Yineleyici, belirtilen sırayla eşleşen veya bir ikili koşula göre belirtilen bir Sense ile eşdeğer olan ilk alt dizinin ilk öğesinin konumunu ele alıyor.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`operator==` Eşleşen bir öğe ile belirtilen değer arasında bir eşdeğerlik ilişkisi işlenenleri arasındaki dayatır gerekir belirlemek için kullanılır.
+Bir `operator==` öğe ile belirtilen değer arasındaki eşleşmeyi belirlemede kullanılan, işlenenleri arasında bir denklik ilişkisi getirmelidir.
 
-Başvurulan aralıkların geçerli olması gerekir; Tüm İşaretçiler tekrar başvurulabilir olmalı ve her bir dizisi içinde son konuma ilk konumdan erişilebilmelidir.
+Başvurulan aralıklar geçerli olmalıdır; Tüm işaretçilerin erişilebilir olması gerekir ve her bir dizide, son konuma artırılamadı tarafından ilk kez ulaşılabilir.
 
 ### <a name="example"></a>Örnek
 
@@ -1813,78 +1887,78 @@ Başvurulan aralıkların geçerli olması gerekir; Tüm İşaretçiler tekrar b
 // Return whether second element is twice the first
 bool twice ( int elem1, int elem2 )
 {
-   return 2 * elem1 == elem2;
+    return 2 * elem1 == elem2;
 }
 
 int main()
 {
-   using namespace std;
-   vector <int> v1, v2;
-   list <int> L1;
-   vector <int>::iterator Iter1, Iter2;
-   list <int>::iterator L1_Iter, L1_inIter;
+    using namespace std;
+    vector<int> v1, v2;
+    list<int> L1;
+    vector<int>::iterator Iter1, Iter2;
+    list<int>::iterator L1_Iter, L1_inIter;
 
-   int i;
-   for ( i = 0 ; i <= 5 ; i++ )
-   {
-      v1.push_back( 5 * i );
-   }
-   for ( i = 0 ; i <= 5 ; i++ )
-   {
-      v1.push_back( 5 * i );
-   }
+    int i;
+    for ( i = 0 ; i <= 5 ; i++ )
+    {
+        v1.push_back( 5 * i );
+    }
+    for ( i = 0 ; i <= 5 ; i++ )
+    {
+        v1.push_back( 5 * i );
+    }
 
-   int ii;
-   for ( ii = 3 ; ii <= 4 ; ii++ )
-   {
-      L1.push_back( 5 * ii );
-   }
+    int ii;
+    for ( ii = 3 ; ii <= 4 ; ii++ )
+    {
+        L1.push_back( 5 * ii );
+    }
 
-   int iii;
-   for ( iii = 2 ; iii <= 4 ; iii++ )
-   {
-      v2.push_back( 10 * iii );
-   }
+    int iii;
+    for ( iii = 2 ; iii <= 4 ; iii++ )
+    {
+        v2.push_back( 10 * iii );
+    }
 
-   cout << "Vector v1 = ( " ;
-   for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
-      cout << *Iter1 << " ";
-   cout << ")" << endl;
+    cout << "Vector v1 = ( " ;
+    for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
+        cout << *Iter1 << " ";
+    cout << ")" << endl;
 
-   cout << "List L1 = ( " ;
-   for ( L1_Iter = L1.begin( ) ; L1_Iter!= L1.end( ) ; L1_Iter++ )
-      cout << *L1_Iter << " ";
-   cout << ")" << endl;
+    cout << "List L1 = ( " ;
+    for ( L1_Iter = L1.begin( ) ; L1_Iter!= L1.end( ) ; L1_Iter++ )
+        cout << *L1_Iter << " ";
+    cout << ")" << endl;
 
-   cout << "Vector v2 = ( " ;
-   for ( Iter2 = v2.begin( ) ; Iter2 != v2.end( ) ; Iter2++ )
-      cout << *Iter2 << " ";
-      cout << ")" << endl;
+    cout << "Vector v2 = ( " ;
+    for ( Iter2 = v2.begin( ) ; Iter2 != v2.end( ) ; Iter2++ )
+        cout << *Iter2 << " ";
+        cout << ")" << endl;
 
-   // Searching v1 for first match to L1 under identity
-   vector <int>::iterator result1;
-   result1 = find_first_of ( v1.begin( ), v1.end( ), L1.begin( ), L1.end( ) );
+    // Searching v1 for first match to L1 under identity
+    vector<int>::iterator result1;
+    result1 = find_first_of ( v1.begin( ), v1.end( ), L1.begin( ), L1.end( ) );
 
-   if ( result1 == v1.end( ) )
-      cout << "There is no match of L1 in v1."
-           << endl;
-   else
-      cout << "There is at least one match of L1 in v1"
-           << "\n and the first one begins at "
-           << "position "<< result1 - v1.begin( ) << "." << endl;
+    if ( result1 == v1.end( ) )
+        cout << "There is no match of L1 in v1."
+            << endl;
+    else
+        cout << "There is at least one match of L1 in v1"
+            << "\n and the first one begins at "
+            << "position "<< result1 - v1.begin( ) << "." << endl;
 
-   // Searching v1 for a match to L1 under the binary predicate twice
-   vector <int>::iterator result2;
-   result2 = find_first_of ( v1.begin( ), v1.end( ), v2.begin( ), v2.end( ), twice );
+    // Searching v1 for a match to L1 under the binary predicate twice
+    vector<int>::iterator result2;
+    result2 = find_first_of ( v1.begin( ), v1.end( ), v2.begin( ), v2.end( ), twice );
 
-   if ( result2 == v1.end( ) )
-      cout << "There is no match of L1 in v1."
-           << endl;
-   else
-      cout << "There is a sequence of elements in v1 that "
-           << "are equivalent\n to those in v2 under the binary "
-           << "predicate twice\n and the first one begins at position "
-           << result2 - v1.begin( ) << "." << endl;
+    if ( result2 == v1.end( ) )
+        cout << "There is no match of L1 in v1."
+            << endl;
+    else
+        cout << "There is a sequence of elements in v1 that "
+            << "are equivalent\n to those in v2 under the binary "
+            << "predicate twice\n and the first one begins at position "
+            << result2 - v1.begin( ) << "." << endl;
 }
 ```
 
@@ -1899,42 +1973,42 @@ to those in v2 under the binary predicate twice
 and the first one begins at position 2.
 ```
 
-## <a name="find_if"></a> find_if
+## <a name="find_if"></a>find_if
 
 Bir öğenin belirli bir koşulu karşıladığı aralıktaki ilk geçtiği konumu bulur.
 
 ```cpp
-template<class InputIterator, class Predicate>
+template<class InputIterator, class UnaryPredicate>
 InputIterator find_if(
     InputIterator first,
     InputIterator last,
-    Predicate pred);
+    UnaryPredicate pred);
 
-template<class ExecutionPolicy, class ForwardIterator, class Predicate>
+template<class ExecutionPolicy, class ForwardIterator, class UnaryPredicate>
 ForwardIterator find_if(
     ExecutionPolicy&& exec,
     ForwardIterator first, ForwardIterator last,
-    Predicate pred);
+    UnaryPredicate pred);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*ilk*\
-Aranacak aralıktaki ilk öğenin konumunu ele alan bir giriş yineleyici.
+*adı*\
+Aranacak aralıktaki ilk öğenin konumunu ele aldığı bir giriş Yineleyici.
 
-*Son*\
-Aranacak bir son öğeden aralığındaki konumu ele alan bir giriş yineleyici.
+*soyadına*\
+Aranacak aralıktaki son öğeden sonraki konumu ele aldığı bir giriş Yineleyici.
 
-*Pred*\
-Kullanıcı tanımlı işlevin doğrulama nesnesi veya [lambda ifadesi](../cpp/lambda-expressions-in-cpp.md) Aranan öğesi tarafından karşılanması koşul tanımlar. Bir koşulu, tek bir bağımsız değişken alır ve döndürür **true** (memnun) veya **false** (karşılanmadı). İmzası *pred* etkin olmalıdır `bool pred(const T& arg);`burada `T` bir tür olan `InputIterator` başvurusu kaldırıldığında örtük olarak dönüştürülebilir. **Const** anahtar sözcüğü, yalnızca işlev nesnesi veya lambda bağımsız değişken değiştirmemelisiniz olduğunu göstermek için gösterilir.
+*pred*\
+Aranmakta olan öğenin yerine getirilmesi için koşulu tanımlayan Kullanıcı tanımlı koşul işlevi nesnesi veya [lambda ifadesi](../cpp/lambda-expressions-in-cpp.md) . Birli koşul tek bir bağımsız değişken alır ve memnun olursa **true** , aksi takdirde **false** döndürür. *Pred* imzası etkin `bool pred(const T& arg);`bir şekilde olmalıdır; burada `T` , başvuru yapıldığında örtük olarak dönüştürülebilen `InputIterator` bir tür olur. **Const** anahtar sözcüğü yalnızca işlev nesnesinin veya lambda bağımsız değişkeni değiştirmemelidir.
 
-### <a name="return-value"></a>Dönüş Değeri
+### <a name="return-value"></a>Dönüş değeri
 
-Koşul tarafından belirtilen bir koşulu karşıladığı aralıktaki ilk öğeyi gösteren bir giriş yineleyici (koşul sonuçlanıyor **true**). Koşul karşılamak için hiçbir öğe bulunamazsa döndürür *son*.
+Koşul tarafından belirtilen koşulu karşılayan aralıktaki ilk öğeyi ifade eden bir giriş Yineleyici (koşul, **true**sonucunu vermez). Koşulu karşılayan bir öğe bulunmazsa, *son*döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu şablonu işlev algoritmasının Genelleştirme, [Bul](../standard-library/algorithm-functions.md#find), koşul değiştirme "eşit belirli bir değeri" ile herhangi bir koşul. Mantıksal (Bul koşulu karşılamayan ilk öğeyi), ters görmek için [find_if_not](../standard-library/algorithm-functions.md#find_if_not).
+Bu şablon işlevi, "Şuna eşittir belirli bir değere" koşulunu değiştirme algoritması [bul](../standard-library/algorithm-functions.md#find)'un bir genelleştirmesidir. Mantıksal ters (koşulu karşılamayan ilk öğeyi bulun) için bkz. [find_if_not](../standard-library/algorithm-functions.md#find_if_not).
 
 ### <a name="example"></a>Örnek
 
@@ -2021,46 +2095,46 @@ int main()
 }
 ```
 
-## <a name="find_if_not"></a> find_if_not
+## <a name="find_if_not"></a>find_if_not
 
 Bir koşulu karşılamayan belirtilen aralıktaki ilk öğeyi döndürür.
 
 ```cpp
-template<class InputIterator, class Predicate>
+template<class InputIterator, class UnaryPredicate>
 InputIterator find_if_not(
     InputIterator first,
     InputIterator last,
-    Predicate pred);
+    UnaryPredicate pred);
 
-template<class ExecutionPolicy, class ForwardIterator, class Predicate>
+template<class ExecutionPolicy, class ForwardIterator, class UnaryPredicate>
 ForwardIterator find_if_not(
     ExecutionPolicy&& exec,
     ForwardIterator first, ForwardIterator last,
-    Predicate pred);
+    UnaryPredicate pred);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*ilk*\
-Aranacak aralıktaki ilk öğenin konumunu ele alan bir giriş yineleyici.
+*adı*\
+Aranacak aralıktaki ilk öğenin konumunu ele aldığı bir giriş Yineleyici.
 
-*Son*\
-Aranacak bir son öğeden aralığındaki konumu ele alan bir giriş yineleyici.
+*soyadına*\
+Aranacak aralıktaki son öğeden sonraki konumu ele aldığı bir giriş Yineleyici.
 
-*Pred*\
-Kullanıcı tanımlı işlevin doğrulama nesnesi veya [lambda ifadesi](../cpp/lambda-expressions-in-cpp.md) Aranan öğesi tarafından karşılanması değil koşulu tanımlar. Bir koşulu, tek bir bağımsız değişken alır ve döndürür **true** (memnun) veya **false** (karşılanmadı). İmzası *pred* etkin olmalıdır `bool pred(const T& arg);`burada `T` bir tür olan `InputIterator` başvurusu kaldırıldığında örtük olarak dönüştürülebilir. **Const** anahtar sözcüğü, yalnızca işlev nesnesi veya lambda bağımsız değişken değiştirmemelisiniz olduğunu göstermek için gösterilir.
+*pred*\
+Aranan öğenin karşılanmadığı koşulu tanımlayan Kullanıcı tanımlı koşul işlevi nesnesi veya [lambda ifadesi](../cpp/lambda-expressions-in-cpp.md) . Birli koşul tek bir bağımsız değişken alır ve memnun olursa **true** , aksi takdirde **false** döndürür. *Pred* imzası etkin `bool pred(const T& arg);`bir şekilde olmalıdır; burada `T` , başvuru yapıldığında örtük olarak dönüştürülebilen `InputIterator` bir tür olur. **Const** anahtar sözcüğü yalnızca işlev nesnesinin veya lambda bağımsız değişkeni değiştirmemelidir.
 
-### <a name="return-value"></a>Dönüş Değeri
+### <a name="return-value"></a>Dönüş değeri
 
-Koşul tarafından belirtilen koşulu karşılamayan aralıktaki ilk öğeyi gösteren bir giriş yineleyici (koşul sonuçlanıyor **false**). Tüm öğeler koşulu karşılaması durumunda (koşul sonuçlanıyor **true** her öğe için), döndürür *son*.
+Koşul tarafından belirtilen koşulu karşılamayan aralıktaki ilk öğeyi başvuran bir giriş Yineleyici (koşul **false**olarak sonuçlanır). Tüm öğeler koşulu karşılıyorsa (koşul her öğe için **true** sonucunu verir), *son*döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu şablonu işlev algoritmasının Genelleştirme, [Bul](../standard-library/algorithm-functions.md#find), koşul değiştirme "eşit belirli bir değeri" ile herhangi bir koşul. Mantıksal (Bul koşulu karşılayan ilk öğeyi), ters görmek için [find_if](../standard-library/algorithm-functions.md#find_if).
+Bu şablon işlevi, "Şuna eşittir belirli bir değere" koşulunu değiştirme algoritması [bul](../standard-library/algorithm-functions.md#find)'un bir genelleştirmesidir. Mantıksal ters (koşulu karşılayan ilk öğeyi bulun) için bkz. [find_if](../standard-library/algorithm-functions.md#find_if).
 
-Bir kolayca uyarlanabilir kod örneği için `find_if_not()`, bkz: [find_if](../standard-library/algorithm-functions.md#find_if).
+Bir kod örneği `find_if_not()`için, bkz. [find_if](../standard-library/algorithm-functions.md#find_if).
 
-## <a name="for_each"></a> for_each
+## <a name="for_each"></a>for_each
 
 Bir aralıktaki ileriye doğru sıradaki her öğeye belirli bir işlev uygular ve işlev nesnesini döndürür.
 
@@ -2070,37 +2144,37 @@ Function for_each(
     InputIterator first,
     InputIterator last,
     Function func);
-    
+
 template<class ExecutionPolicy, class ForwardIterator, class Function>
 void for_each(
     ExecutionPolicy&& exec,
     ForwardIterator first,
     ForwardIterator last,
-    Function f);
+    Function func);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*ilk*\
-Üzerinde yapılacak aralıktaki ilk öğenin konumunu ele alan giriş yineleyici.
+*adı*\
+Üzerinde çalışılan aralıktaki ilk öğenin konumunu ele alan bir giriş Yineleyici.
 
-*Son*\
-İşlenemeyen bir son öğeden aralığındaki konumu ele alan giriş yineleyici.
+*soyadına*\
+Üzerinde çalışılan aralıktaki son öğeden sonraki konumu ele alan bir giriş Yineleyici.
 
-*_Func*\
-Aralıktaki her öğeye uygulanan kullanıcı tanımlı işlev nesnesi.
+*melerinin*\
+Aralıktaki her öğeye uygulanan Kullanıcı tanımlı işlev nesnesi.
 
-### <a name="return-value"></a>Dönüş Değeri
+### <a name="return-value"></a>Dönüş değeri
 
-Aralıktaki tüm öğeleri için uygulandıktan sonra işlev nesnesi bir kopyası.
+İşlev nesnesinin, aralıktaki tüm öğelere uygulandıktan sonra bir kopyası.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Algoritma `for_each` değişikliği bir aralıktaki her bir öğenin farklı, kullanıcı tarafından belirtilen şekilde izin vermek çok esnektir. Şablonlaştırılmış işlevleri farklı parametreler geçirerek değiştirilmiş bir biçimde yeniden. Kullanıcı tanımlı işlevleri algoritması aralıktaki tüm öğeleri işledikten sonra döndürebileceği bir iç durum içerisinde bilgileri birikebilir.
+Algoritma `for_each` çok esnektir ve farklı, Kullanıcı tarafından belirtilen yollarla bir aralıktaki her öğe değişikliğine izin verir. Şablonlı işlevler, farklı parametreler geçirerek değiştirilmiş bir formda yeniden kullanılabilir. Kullanıcı tanımlı işlevler, algoritmanın aralıktaki tüm öğeleri işledikten sonra dönebilecek iç bir durum içinde bilgi birikmesini sağlayabilir.
 
-Başvurulan aralık geçerli olmalı; Tüm İşaretçiler tekrar başvurulabilir olmalı ve dizi içinde son konuma ilk konumdan erişilebilir olmalıdır erişilebilmelidir.
+Başvurulan Aralık geçerli olmalıdır; Tüm işaretçilerin erişilebilir olması gerekir ve sıra içinde, son konum artırılamadı tarafından ilk kez ulaşılabilir olmalıdır.
 
-Karmaşıklığı en fazla ile doğrusal (*son* - *ilk*) karşılaştırmalar.
+Karmaşıklık en çok (*son* - *ilk*) karşılaştırmalarda doğrusal olarak belirlenir.
 
 ### <a name="example"></a>Örnek
 
@@ -2116,95 +2190,95 @@ template <class Type>
 class MultValue
 {
 private:
-   Type Factor;   // The value to multiply by
+    Type Factor;   // The value to multiply by
 public:
-   // Constructor initializes the value to multiply by
-   MultValue ( const Type& val ) : Factor ( val ) {
-   }
+    // Constructor initializes the value to multiply by
+    MultValue ( const Type& value ) : Factor ( value ) {
+    }
 
-   // The function call for the element to be multiplied
-   void operator( ) ( Type& elem ) const
-   {
-      elem *= Factor;
-   }
+    // The function call for the element to be multiplied
+    void operator( ) ( Type& elem ) const
+    {
+        elem *= Factor;
+    }
 };
 
 // The function object to determine the average
 class Average
 {
 private:
-   long num;      // The number of elements
-   long sum;      // The sum of the elements
+    long num;      // The number of elements
+    long sum;      // The sum of the elements
 public:
-   // Constructor initializes the value to multiply by
-   Average( ) : num ( 0 ) , sum ( 0 )
-   {
-   }
+    // Constructor initializes the value to multiply by
+    Average( ) : num ( 0 ) , sum ( 0 )
+    {
+    }
 
-   // The function call to process the next elment
-   void operator( ) ( int elem ) \
-   {
-      num++;      // Increment the element count
-      sum += elem;   // Add the value to the partial sum
-   }
+    // The function call to process the next elment
+    void operator( ) ( int elem )
+    {
+        num++;      // Increment the element count
+        sum += elem;   // Add the value to the partial sum
+    }
 
-   // return Average
-   operator double( )
-   {
-      return  static_cast <double> (sum) /
-      static_cast <double> (num);
-   }
+    // return Average
+    operator double( )
+    {
+        return static_cast<double> (sum) /
+            static_cast<double> (num);
+    }
 };
 
 int main()
 {
-   using namespace std;
-   vector <int> v1;
-   vector <int>::iterator Iter1;
+    using namespace std;
+    vector<int> v1;
+    vector<int>::iterator Iter1;
 
-   // Constructing vector v1
-   int i;
-   for ( i = -4 ; i <= 2 ; i++ )
-   {
-      v1.push_back(  i );
-   }
+    // Constructing vector v1
+    int i;
+    for ( i = -4 ; i <= 2 ; i++ )
+    {
+        v1.push_back( i );
+    }
 
-   cout << "Original vector  v1 = ( " ;
-   for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
-      cout << *Iter1 << " ";
-   cout << ")." << endl;
+    cout << "Original vector v1 = ( " ;
+    for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
+        cout << *Iter1 << " ";
+    cout << ")." << endl;
 
-   // Using for_each to multiply each element by a Factor
-   for_each ( v1.begin( ), v1.end( ), MultValue<int> ( -2 ) );
+    // Using for_each to multiply each element by a Factor
+    for_each ( v1.begin( ), v1.end( ), MultValue<int> ( -2 ) );
 
-   cout << "Multiplying the elements of the vector v1\n "
-        <<  "by the factor -2 gives:\n v1mod1 = ( " ;
-   for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
-      cout << *Iter1 << " ";
-   cout << ")." << endl;
+    cout << "Multiplying the elements of the vector v1\n "
+            << "by the factor -2 gives:\n v1mod1 = ( " ;
+    for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
+        cout << *Iter1 << " ";
+    cout << ")." << endl;
 
-   // The function object is templatized and so can be
-   // used again on the elements with a different Factor
-   for_each (v1.begin( ), v1.end( ), MultValue<int> (5 ) );
+    // The function object is templatized and so can be
+    // used again on the elements with a different Factor
+    for_each (v1.begin( ), v1.end( ), MultValue<int> (5 ) );
 
-   cout << "Multiplying the elements of the vector v1mod\n "
-        <<  "by the factor 5 gives:\n v1mod2 = ( " ;
-   for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
-      cout << *Iter1 << " ";
-   cout << ")." << endl;
+    cout << "Multiplying the elements of the vector v1mod\n "
+            << "by the factor 5 gives:\n v1mod2 = ( " ;
+    for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
+        cout << *Iter1 << " ";
+    cout << ")." << endl;
 
-   // The local state of a function object can accumulate
-   // information about a sequence of actions that the
-   // return value can make available, here the Average
-   double avemod2 = for_each ( v1.begin( ), v1.end( ),
-      Average( ) );
-   cout << "The average of the elements of v1 is:\n Average ( v1mod2 ) = "
-        << avemod2 << "." << endl;
+    // The local state of a function object can accumulate
+    // information about a sequence of actions that the
+    // return value can make available, here the Average
+    double avemod2 = for_each ( v1.begin( ), v1.end( ),
+        Average( ) );
+    cout << "The average of the elements of v1 is:\n Average ( v1mod2 ) = "
+            << avemod2 << "." << endl;
 }
 ```
 
 ```Output
-Original vector  v1 = ( -4 -3 -2 -1 0 1 2 ).
+Original vector v1 = ( -4 -3 -2 -1 0 1 2 ).
 Multiplying the elements of the vector v1
 by the factor -2 gives:
 v1mod1 = ( 8 6 4 2 0 -2 -4 ).
@@ -2215,24 +2289,24 @@ The average of the elements of v1 is:
 Average ( v1mod2 ) = 10.
 ```
 
-## <a name="for_each_n"></a> for_each_n
+## <a name="for_each_n"></a>for_each_n
 
 ```cpp
 template<class InputIterator, class Size, class Function>
 InputIterator for_each_n(
-    InputIterator first, 
-    Size n, 
+    InputIterator first,
+    Size n,
     Function f);
 
 template<class ExecutionPolicy, class ForwardIterator, class Size, class Function>
 ForwardIterator for_each_n(
-    ExecutionPolicy&& exec, 
-    ForwardIterator first, 
-    Size n, 
+    ExecutionPolicy&& exec,
+    ForwardIterator first,
+    Size n,
     Function f);
 ```
 
-## <a name="generate"></a> Oluştur
+## <a name="generate"></a>üretecek
 
 Bir işlev nesnesi tarafından oluşturulan değerleri bir aralıktaki her öğeye atar.
 
@@ -2241,8 +2315,8 @@ template<class ForwardIterator, class Generator>
 void generate(
     ForwardIterator first,
     ForwardIterator last,
-    Generator _Gen);
-    
+    Generator gen);
+
 template<class ExecutionPolicy, class ForwardIterator, class Generator>
 void generate(
     ExecutionPolicy&& exec,
@@ -2252,22 +2326,22 @@ void generate(
 
 ### <a name="parameters"></a>Parametreler
 
-*ilk*\
-Kendisine atanan değerler aralıktaki ilk öğenin konumunu bulan ileriye doğru yineleyici.
+*adı*\
+Değerleri atanacak olan aralıktaki ilk öğenin konumunu ele veren ileriye doğru bir yineleyici.
 
-*Son*\
-Kendisine atanan değerler aralıktaki son öğeden sonraki birinci konum ele alan ileriye doğru yineleyici.
+*soyadına*\
+Bir ileriye doğru yineleyici, değerleri atanacak olan aralıktaki son öğeden geçen öğeyi ele alıyor.
 
-*_Gen*\
-Aralığındaki öğelerin her biri için atanacak değerleri oluşturmak için kullanılan bağımsız değişken olmadan çağrılan bir işlev nesnesi.
+*alanına*\
+Aralıktaki öğelerin her birine atanacak değerleri oluşturmak için kullanılan bağımsız değişken olmadan çağrılan bir işlev nesnesi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşlev nesnesi bir aralıktaki her öğe için çağrılır ve her çağrıldığında aynı değeri döndürmesi gerekmez. , Örneğin, bir dosyadan okunan veya başvurmak ve bir yerel durumunu değiştir. Üreticinin sonuç türü aralığı için ileriye doğru Yineleyicilerin değer türüne dönüştürülebilir olmalıdır.
+İşlev nesnesi aralıktaki her öğe için çağrılır ve her çağrıldığında aynı değeri döndürmesi gerekmez. Örneğin, bir dosyadan okuma veya yerel bir durumu değiştirme ve değiştirme gibi olabilir. Oluşturucunun sonuç türü, Aralık için ileri yineleyicilerinin değer türüne dönüştürülebilir olmalıdır.
 
-Başvurulan aralık geçerli olmalı; Tüm İşaretçiler tekrar başvurulabilir olmalı ve dizi içinde son konuma ilk konumdan erişilebilir olmalıdır erişilebilmelidir.
+Başvurulan Aralık geçerli olmalıdır; Tüm işaretçilerin erişilebilir olması gerekir ve sıra içinde, son konum artırılamadı tarafından ilk kez ulaşılabilir olmalıdır.
 
-Tam olarak karmaşıklığı ile doğrusal ( `last`  -   `first`) gerektiği Oluşturucu çağrıları.
+Karmaşıklık, gerekli olan oluşturucuya tam olarak ( `last`  -  `first`) çağrıları ile doğrusal bir şekilde yapılır.
 
 ### <a name="example"></a>Örnek
 
@@ -2282,28 +2356,28 @@ Tam olarak karmaşıklığı ile doğrusal ( `last`  -   `first`) gerektiği Olu
 
 int main()
 {
-   using namespace std;
+    using namespace std;
 
-   // Assigning random values to vector integer elements
-   vector <int> v1 ( 5 );
-   vector <int>::iterator Iter1;
-   deque <int> deq1 ( 5 );
-   deque <int>::iterator d1_Iter;
+    // Assigning random values to vector integer elements
+    vector<int> v1 ( 5 );
+    vector<int>::iterator Iter1;
+    deque<int> deq1 ( 5 );
+    deque<int>::iterator d1_Iter;
 
-   generate ( v1.begin( ), v1.end( ), rand );
+    generate ( v1.begin( ), v1.end( ), rand );
 
-   cout << "Vector v1 is ( " ;
-   for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
-      cout << *Iter1 << " ";
-   cout << ")." << endl;
+    cout << "Vector v1 is ( " ;
+    for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
+        cout << *Iter1 << " ";
+    cout << ")." << endl;
 
-   // Assigning random values to deque integer elements
-   generate ( deq1.begin( ), deq1.end( ), rand );
+    // Assigning random values to deque integer elements
+    generate ( deq1.begin( ), deq1.end( ), rand );
 
-   cout << "Deque deq1 is ( " ;
-   for ( d1_Iter = deq1.begin( ) ; d1_Iter != deq1.end( ) ; d1_Iter++ )
-      cout << *d1_Iter << " ";
-   cout << ")." << endl;
+    cout << "Deque deq1 is ( " ;
+    for ( d1_Iter = deq1.begin( ) ; d1_Iter != deq1.end( ) ; d1_Iter++ )
+        cout << *d1_Iter << " ";
+    cout << ")." << endl;
 }
 ```
 
@@ -2312,43 +2386,46 @@ Vector v1 is ( 41 18467 6334 26500 19169 ).
 Deque deq1 is ( 15724 11478 29358 26962 24464 ).
 ```
 
-## <a name="generate_n"></a> generate_n
+## <a name="generate_n"></a>generate_n
 
-Belirtilen bir aralıktaki öğelerin sayısı bir işlev nesnesi tarafından oluşturulan değerleri atar ve bir önceki öğenin son atanan değere konumunu döndürür.
+Bir işlev nesnesi tarafından oluşturulan değerleri bir aralıktaki belirli sayıda öğeye atar ve en son atanan değeri aşan konuma döndürür.
 
 ```cpp
 template<class OutputIterator, class Diff, class Generator>
 void generate_n(
-    OutputIterator First,
-    Diff Count,
-    Generator Gen);
+    OutputIterator first,
+    Diff count,
+    Generator gen);
 
 template<class ExecutionPolicy, class ForwardIterator, class Size, class Generator>
 ForwardIterator generate_n(
     ExecutionPolicy&& exec,
-    ForwardIterator first, 
-    Size n, 
+    ForwardIterator first,
+    Size count,
     Generator gen);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*ilk*\
-Kendisine atanan değerler aralıktaki ilk öğenin konumunu bulan çıktı yineleyici.
+*Exec*\
+Kullanılacak yürütme ilkesi.
 
-*Sayısı*\
-Oluşturucu işlevi tarafından bir değerin atanacağı öğe sayısını belirten bir işaretli veya işaretsiz tamsayı türü.
+*adı*\
+Değerleri atanacak aralıktaki ilk öğenin konumunu ele veren çıkış Yineleyici.
 
-*Genel*\
-Aralığındaki öğelerin her biri için atanacak değerleri oluşturmak için kullanılan bağımsız değişken olmadan çağrılan bir işlev nesnesi.
+*biriktirme*\
+Oluşturucu işlevi tarafından bir değere atanacak öğe sayısını belirten imzalı veya işaretsiz bir tamsayı türü.
+
+*alanına*\
+Aralıktaki öğelerin her birine atanacak değerleri oluşturmak için kullanılan bağımsız değişken olmadan çağrılan bir işlev nesnesi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşlev nesnesi bir aralıktaki her öğe için çağrılır ve her çağrıldığında aynı değeri döndürmesi gerekmez. , Örneğin, bir dosyadan okunan veya başvurmak ve bir yerel durumunu değiştir. Üreticinin sonuç türü aralığı için ileriye doğru Yineleyicilerin değer türüne dönüştürülebilir olmalıdır.
+İşlev nesnesi aralıktaki her öğe için çağrılır ve her çağrıldığında aynı değeri döndürmesi gerekmez. Örneğin, bir dosyadan okuma veya yerel bir durumu değiştirme ve değiştirme gibi olabilir. Oluşturucunun sonuç türü, Aralık için ileri yineleyicilerinin değer türüne dönüştürülebilir olmalıdır.
 
-Başvurulan aralık geçerli olmalı; Tüm İşaretçiler tekrar başvurulabilir olmalı ve dizi içinde son konuma ilk konumdan erişilebilir olmalıdır erişilebilmelidir.
+Başvurulan Aralık geçerli olmalıdır; Tüm işaretçilerin erişilebilir olması gerekir ve sıra içinde, son konum artırılamadı tarafından ilk kez ulaşılabilir olmalıdır.
 
-Tam olarak karmaşıklığı ile doğrusal `Count` çağrıları için gerekli Oluşturucu.
+Karmaşıklık, gereken oluşturucunun tam olarak `count` çağrılarında doğrusal bir şekilde yapılır.
 
 ### <a name="example"></a>Örnek
 
@@ -2363,7 +2440,9 @@ Tam olarak karmaşıklığı ile doğrusal `Count` çağrıları için gerekli O
 
 using namespace std;
 
-template <typename C> void print(const string& s, const C& c) {
+template <typename C>
+void print(const string& s, const C& c)
+{
     cout << s;
 
     for (const auto& e : c) {
@@ -2393,7 +2472,7 @@ int main()
 }
 ```
 
-## <a name="includes"></a> içerir
+## <a name="includes"></a>içermektedir
 
 Sıralanmış bir aralığın ikinci bir sıralanmış aralıkta kapsanan tüm öğeleri içerip içermediğini sınar, burada öğeler arasındaki sıralama veya denklik ölçütü bir ikili koşula göre belirlenebilir.
 
@@ -2405,67 +2484,69 @@ bool includes(
     InputIterator2 first2,
     InputIterator2 last2);
 
-template<class InputIterator1, class InputIterator2, class BinaryPredicate>
+template<class InputIterator1, class InputIterator2, class Compare>
 bool includes(
     InputIterator1 first1,
     InputIterator1 last1,
     InputIterator2 first2,
     InputIterator2 last2,
-    BinaryPredicate comp );
-    
+    Compare pred );
+
 template<class ExecutionPolicy, class ForwardIterator1, class ForwardIterator2>
 bool includes(
     ExecutionPolicy&& exec,
-    ForwardIterator1 first1, 
+    ForwardIterator1 first1,
     ForwardIterator1 last1,
-    ForwardIterator2 first2, 
+    ForwardIterator2 first2,
     ForwardIterator2 last2);
-    
-template<class ExecutionPolicy, class ForwardIterator1, class ForwardIterator2,
-class Compare>
+
+template<class ExecutionPolicy, class ForwardIterator1, class ForwardIterator2, class Compare>
 bool includes(
     ExecutionPolicy&& exec,
-    ForwardIterator1 first1, 
+    ForwardIterator1 first1,
     ForwardIterator1 last1,
-    ForwardIterator2 first2, 
-    ForwardIterator2 last2, 
-    Compare comp);
+    ForwardIterator2 first2,
+    ForwardIterator2 last2,
+    Compare pred);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
+*Exec*\
+Kullanılacak yürütme ilkesi.
+
 *first1*\
-İkinci tüm öğelerinin ilk olup içerdiği için test edilecek ilk iki sıralanmış kaynak aralıktaki ilk öğenin konumu ele alan giriş yineleyici.
+İkinci sıralı kaynak aralıktaki ilk öğenin konumunu ele alan, ikincinin tüm öğelerinin birincinin içine dahil edilip edilmeyeceğini test eden bir giriş Yineleyici.
 
 *last1*\
-İkinci tüm öğelerinin ilk olup içerdiği için test edilecek bir önceki öğenin konumunu son öğeden ilk iki sıralanmış kaynak aralığa, ele alan bir giriş yineleyici.
+İkinci sıralı kaynak aralıktaki en son öğeden geçen bir bir girdi yineleyicisi, ikincinin tüm öğelerinin birincinin içinde yer almayacağı için test edilir.
 
 *first2*\
-Kaynak aralıktaki ilk ikinci tüm öğelerini olup içerdiği için test edilecek art arda iki saniye içinde ilk öğenin konumunu ele alan giriş yineleyici sıralanır.
+İkinci art arda sıralanmış kaynak aralıklarının ikinci kısmında ilk öğenin konumunu ele alan, ikincinin tüm öğelerinin birincinin içinde olup olmadığı test edilecek bir giriş Yineleyici.
 
-*Soyadı2*\
-İkinci tüm öğelerinin ilk olup içerdiği için test edilecek iki ardışık sıralanmış kaynak aralık saniye içinde bir son öğeden önceki öğenin konumunu ele alan giriş yineleyici.
+*last2*\
+İkinci art arda sıralanmış kaynak aralıklarının ikinci içindeki son öğeden geçen bir bir girdi yineleyicisi, ikincinin tüm öğelerinin birincinin içinde yer almayacağı için test edilir.
 
-*Comp*\
-Bir öğenin daha az olan algılama tanımlayan kullanıcı tanımlı işlevin doğrulama nesnesi. İkili koşulu, iki bağımsız değişkeni alır ve döndürür **true** karşılanmazsa ve **false** koşullar karşılanırsa.
+*pred*\
+Bir öğenin diğerinden küçük olduğu anlamlı olduğunu tanımlayan Kullanıcı tanımlı koşul işlevi nesnesi. Karşılaştırma koşulu iki bağımsız değişken alır ve memnun olmadığında **true** ve **false** değeri döndürür.
 
-### <a name="return-value"></a>Dönüş Değeri
+### <a name="return-value"></a>Dönüş değeri
 
-**doğru** ilk sıralanmış aralıkta ikinci sıralanmış aralıktaki; tüm öğeler içeriyorsa, aksi takdirde, **false**.
+ilk sıralanmış Aralık ikinci sıralı aralıktaki tüm öğeleri içeriyorsa **true** ; Aksi takdirde, **false**.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu test etmeniz gereken başka bir, ikinci aralığın bir alt kümesini ilk kaynak aralığı olup olmadığını belirledi yoludur.
+Bu testi düşünmek için bir diğer yol ise ikinci kaynak aralığının ilk kaynak aralığın bir alt kümesi olup olmadığını belirlemiştir.
 
-Başvurulan sıralanmış kaynak aralık geçerli olmalıdır; Tüm İşaretçiler tekrar başvurulabilir olmalı ve her bir dizisi içinde son konuma ilk konumdan erişilebilir olmalıdır erişilebilmelidir.
+Başvurulan sıralanmış kaynak aralıkları geçerli olmalıdır; Tüm işaretçilerin erişilebilir olması gerekir ve her bir dizide, son konuma artırılamadı tarafından ilk kez ulaşılabilir olmalıdır.
 
-Birleştirilmiş aralıkları Sıralama algoritması tarafından kullanılacak önkoşul algoritmasının uygulamaya aynı olarak sıralama uygun olarak içerdiğinden aralıkları her düzenlenmelidir sıralanmış kaynak var.
+Sıralanmış kaynak aralıklarının her biri, algoritma uygulaması için bir önkoşul olarak düzenlenmelidir, bu arada, Birleşik aralıkları sıralamak için algoritma tarafından kullanılacak şekilde aynı sıralamaya uygun olarak dahildir.
 
-Kaynak aralıkları algoritması tarafından değiştirilmez `merge`.
+Kaynak aralıkları algoritma `merge`tarafından değiştirilmez.
 
-Giriş Yineleyicilerin değer türlerinin daha küçük olması-sıralanmalıdır daha karşılaştırılabilir, iki öğe belirtildiğinde, (yani birinin diğerinden diğerinden daha küçük olmadığı anlamında) eşit veya birinin diğerinden küçük olduğu belirlenebilir. Bu, denk olmayan öğeler arasında bir sıralamaya neden olur. Belirtilen bir ikili koşul altında ilk sıralanmış aralıktaki tüm öğeleri bu ikinci bir sıralanmış aralıkta eşdeğer sıralamaya sahip olup olmadığını algoritması daha kesin bir şekilde test eder.
+Giriş yineleyicilerinin değer türlerinin sıralanabilmesi için kıyasla daha az olması gerekir, böylece iki öğe söz konusu olduğunda, eşdeğer oldukları (Yani bunlardan daha küçük olmayan) ya da birinin diğerinin daha küçük olduğu belirlenebilir. Bu, denk olmayan öğeler arasında bir sıralamaya neden olur. Daha kesin olarak, algoritma, belirtilen bir ikili koşulun altındaki ilk sıralanmış aralıktaki tüm öğelerin, ikinci sıralı aralıktaki olanlarla eşdeğer sıralamaya sahip olup olmadığını sınar.
 
-Algoritmanın karmaşıklığı, en fazla 2 ile doğrusal \* (( *last1 - first1*)-(* Soyadı2 - first2 *)) - 1 karşılaştırmalar için boş olmayan kaynak aralık.
+Algoritmanın karmaşıklığı, boş olmayan kaynak aralıkları için en çok `2 * ((last1 - first1) - (last2 - first2)) - 1` karşılaştırmalar ile doğrusal bir şekilde yapılır.
 
 ### <a name="example"></a>Örnek
 
@@ -2480,121 +2561,121 @@ Algoritmanın karmaşıklığı, en fazla 2 ile doğrusal \* (( *last1 - first1*
 // Return whether modulus of elem1 is less than modulus of elem2
 bool mod_lesser (int elem1, int elem2 )
 {
-   if ( elem1 < 0 )
-      elem1 = - elem1;
-   if ( elem2 < 0 )
-      elem2 = - elem2;
-   return elem1 < elem2;
+    if ( elem1 < 0 )
+        elem1 = - elem1;
+    if ( elem2 < 0 )
+        elem2 = - elem2;
+    return elem1 < elem2;
 }
 
 int main()
 {
-   using namespace std;
-   vector <int> v1a, v1b;
-   vector <int>::iterator Iter1a,  Iter1b;
+    using namespace std;
+    vector<int> v1a, v1b;
+    vector<int>::iterator Iter1a, Iter1b;
 
-   // Constructing vectors v1a & v1b with default less-than ordering
-   int i;
-   for ( i = -2 ; i <= 4 ; i++ )
-   {
-      v1a.push_back(  i );
-   }
+    // Constructing vectors v1a & v1b with default less-than ordering
+    int i;
+    for ( i = -2 ; i <= 4 ; i++ )
+    {
+        v1a.push_back( i );
+    }
 
-   int ii;
-   for ( ii =-2 ; ii <= 3 ; ii++ )
-   {
-      v1b.push_back(  ii  );
-   }
+    int ii;
+    for ( ii =-2 ; ii <= 3 ; ii++ )
+    {
+        v1b.push_back( ii );
+    }
 
-   cout << "Original vector v1a with range sorted by the\n "
-        << "binary predicate less than is v1a = ( " ;
-   for ( Iter1a = v1a.begin( ) ; Iter1a != v1a.end( ) ; Iter1a++ )
-      cout << *Iter1a << " ";
-   cout << ")." << endl;
+    cout << "Original vector v1a with range sorted by the\n "
+            << "binary predicate less than is v1a = ( " ;
+    for ( Iter1a = v1a.begin( ) ; Iter1a != v1a.end( ) ; Iter1a++ )
+        cout << *Iter1a << " ";
+    cout << ")." << endl;
 
-   cout << "Original vector v1b with range sorted by the\n "
-        <<  "binary predicate less than is v1b = ( " ;
-   for ( Iter1b = v1b.begin( ) ; Iter1b != v1b.end( ) ; Iter1b++ )
-      cout << *Iter1b << " ";
-   cout << ")." << endl;
+    cout << "Original vector v1b with range sorted by the\n "
+            << "binary predicate less than is v1b = ( " ;
+    for ( Iter1b = v1b.begin( ) ; Iter1b != v1b.end( ) ; Iter1b++ )
+        cout << *Iter1b << " ";
+    cout << ")." << endl;
 
-   // Constructing vectors v2a & v2b with ranges sorted by greater
-   vector <int> v2a ( v1a ) , v2b ( v1b );
-   vector <int>::iterator Iter2a,  Iter2b;
-   sort ( v2a.begin( ), v2a.end( ), greater<int>( ) );
-   sort ( v2b.begin( ), v2b.end( ), greater<int>( ) );
-   v2a.pop_back( );
+    // Constructing vectors v2a & v2b with ranges sorted by greater
+    vector<int> v2a ( v1a ) , v2b ( v1b );
+    vector<int>::iterator Iter2a, Iter2b;
+    sort ( v2a.begin( ), v2a.end( ), greater<int>( ) );
+    sort ( v2b.begin( ), v2b.end( ), greater<int>( ) );
+    v2a.pop_back( );
 
-   cout << "Original vector v2a with range sorted by the\n "
-        <<  "binary predicate greater is v2a = ( " ;
-   for ( Iter2a = v2a.begin( ) ; Iter2a != v2a.end( ) ; Iter2a++ )
-      cout << *Iter2a << " ";
-   cout << ")." << endl;
+    cout << "Original vector v2a with range sorted by the\n "
+            << "binary predicate greater is v2a = ( " ;
+    for ( Iter2a = v2a.begin( ) ; Iter2a != v2a.end( ) ; Iter2a++ )
+        cout << *Iter2a << " ";
+    cout << ")." << endl;
 
-   cout << "Original vector v2b with range sorted by the\n "
-        <<  "binary predicate greater is v2b = ( " ;
-   for ( Iter2b = v2b.begin( ) ; Iter2b != v2b.end( ) ; Iter2b++ )
-      cout << *Iter2b << " ";
-   cout << ")." << endl;
+    cout << "Original vector v2b with range sorted by the\n "
+            << "binary predicate greater is v2b = ( " ;
+    for ( Iter2b = v2b.begin( ) ; Iter2b != v2b.end( ) ; Iter2b++ )
+        cout << *Iter2b << " ";
+    cout << ")." << endl;
 
-   // Constructing vectors v3a & v3b with ranges sorted by mod_lesser
-   vector <int> v3a ( v1a ), v3b ( v1b ) ;
-   vector <int>::iterator Iter3a, Iter3b;
-   reverse (v3a.begin( ), v3a.end( ) );
-   v3a.pop_back( );
-   v3a.pop_back( );
-   sort ( v3a.begin( ), v3a.end( ), mod_lesser );
-   sort ( v3b.begin( ), v3b.end( ), mod_lesser );
+    // Constructing vectors v3a & v3b with ranges sorted by mod_lesser
+    vector<int> v3a ( v1a ), v3b ( v1b ) ;
+    vector<int>::iterator Iter3a, Iter3b;
+    reverse (v3a.begin( ), v3a.end( ) );
+    v3a.pop_back( );
+    v3a.pop_back( );
+    sort ( v3a.begin( ), v3a.end( ), mod_lesser );
+    sort ( v3b.begin( ), v3b.end( ), mod_lesser );
 
-   cout << "Original vector v3a with range sorted by the\n "
-        <<  "binary predicate mod_lesser is v3a = ( " ;
-   for ( Iter3a = v3a.begin( ) ; Iter3a != v3a.end( ) ; Iter3a++ )
-      cout << *Iter3a << " ";
-   cout << ")." << endl;
+    cout << "Original vector v3a with range sorted by the\n "
+            << "binary predicate mod_lesser is v3a = ( " ;
+    for ( Iter3a = v3a.begin( ) ; Iter3a != v3a.end( ) ; Iter3a++ )
+        cout << *Iter3a << " ";
+    cout << ")." << endl;
 
-   cout << "Original vector v3b with range sorted by the\n "
-        <<  "binary predicate mod_lesser is v3b = ( " ;
-   for ( Iter3b = v3b.begin( ) ; Iter3b != v3b.end( ) ; Iter3b++ )
-      cout << *Iter3b << " ";
-   cout << ")." << endl;
+    cout << "Original vector v3b with range sorted by the\n "
+            << "binary predicate mod_lesser is v3b = ( " ;
+    for ( Iter3b = v3b.begin( ) ; Iter3b != v3b.end( ) ; Iter3b++ )
+        cout << *Iter3b << " ";
+    cout << ")." << endl;
 
-   // To test for inclusion under an asscending order
-   // with the default binary predicate less <int>( )
-   bool Result1;
-   Result1 = includes ( v1a.begin( ), v1a.end( ),
-      v1b.begin( ), v1b.end( ) );
-   if ( Result1 )
-      cout << "All the elements in vector v1b are "
-           << "contained in vector v1a." << endl;
-   else
-      cout << "At least one of the elements in vector v1b "
-           << "is not contained in vector v1a." << endl;
+    // To test for inclusion under an asscending order
+    // with the default binary predicate less<int>( )
+    bool Result1;
+    Result1 = includes ( v1a.begin( ), v1a.end( ),
+        v1b.begin( ), v1b.end( ) );
+    if ( Result1 )
+        cout << "All the elements in vector v1b are "
+            << "contained in vector v1a." << endl;
+    else
+        cout << "At least one of the elements in vector v1b "
+            << "is not contained in vector v1a." << endl;
 
-   // To test for inclusion under descending
-   // order specify binary predicate greater<int>( )
-   bool Result2;
-   Result2 = includes ( v2a.begin( ), v2a.end( ),
-      v2b.begin( ), v2b.end( ), greater <int>( ) );
-   if ( Result2 )
-      cout << "All the elements in vector v2b are "
-           << "contained in vector v2a." << endl;
-   else
-      cout << "At least one of the elements in vector v2b "
-           << "is not contained in vector v2a." << endl;
+    // To test for inclusion under descending
+    // order specify binary predicate greater<int>( )
+    bool Result2;
+    Result2 = includes ( v2a.begin( ), v2a.end( ),
+        v2b.begin( ), v2b.end( ), greater<int>( ) );
+    if ( Result2 )
+        cout << "All the elements in vector v2b are "
+            << "contained in vector v2a." << endl;
+    else
+        cout << "At least one of the elements in vector v2b "
+            << "is not contained in vector v2a." << endl;
 
-   // To test for inclusion under a user
-   // defined binary predicate mod_lesser
-   bool Result3;
-   Result3 = includes ( v3a.begin( ), v3a.end( ),
-      v3b.begin( ), v3b.end( ), mod_lesser );
-   if ( Result3 )
-      cout << "All the elements in vector v3b are "
-           << "contained under mod_lesser in vector v3a."
-           << endl;
-   else
-      cout << "At least one of the elements in vector v3b is "
-           << " not contained under mod_lesser in vector v3a."
-           << endl;
+    // To test for inclusion under a user
+    // defined binary predicate mod_lesser
+    bool Result3;
+    Result3 = includes ( v3a.begin( ), v3a.end( ),
+        v3b.begin( ), v3b.end( ), mod_lesser );
+    if ( Result3 )
+        cout << "All the elements in vector v3b are "
+            << "contained under mod_lesser in vector v3a."
+            << endl;
+    else
+        cout << "At least one of the elements in vector v3b is "
+            << " not contained under mod_lesser in vector v3a."
+            << endl;
 }
 ```
 
@@ -2613,10 +2694,10 @@ Original vector v3b with range sorted by the
 binary predicate mod_lesser is v3b = ( 0 -1 1 -2 2 3 ).
 All the elements in vector v1b are contained in vector v1a.
 At least one of the elements in vector v2b is not contained in vector v2a.
-At least one of the elements in vector v3b is  not contained under mod_lesser in vector v3a.
+At least one of the elements in vector v3b is not contained under mod_lesser in vector v3a.
 ```
 
-## <a name="inplace_merge"></a> inplace_merge
+## <a name="inplace_merge"></a>inplace_merge
 
 Ardışık iki sıralanmış aralıktaki öğeleri tek bir sıralanmış aralıkta birleştirir, burada sıralama ölçütü bir ikili koşula göre belirtilebilir.
 
@@ -2627,50 +2708,53 @@ void inplace_merge(
     BidirectionalIterator middle,
     BidirectionalIterator last);
 
-template<class BidirectionalIterator, class Predicate>
+template<class BidirectionalIterator, class Compare>
 void inplace_merge(
     BidirectionalIterator first,
     BidirectionalIterator middle,
     BidirectionalIterator last,
-    Predicate comp);
-    
+    Compare pred);
+
 template<class ExecutionPolicy, class BidirectionalIterator>
 void inplace_merge(
     ExecutionPolicy&& exec,
     BidirectionalIterator first,
     BidirectionalIterator middle,
     BidirectionalIterator last);
-    
+
 template<class ExecutionPolicy, class BidirectionalIterator, class Compare>
 void inplace_merge(
     ExecutionPolicy&& exec,
     BidirectionalIterator first,
     BidirectionalIterator middle,
-    BidirectionalIterator last, 
-    Compare comp);
+    BidirectionalIterator last,
+    Compare pred);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*ilk*\
-İlk iki ardışık ilk öğenin konumunu bulan çift yönlü bir yineleyici aralıklarını birleştirilir ve tek bir aralığa sıralanmış sıralanır.
+*Exec*\
+Kullanılacak yürütme ilkesi.
 
-*Orta*\
-Art arda iki saniye içinde ilk öğenin konumunu bulan çift yönlü yineleyici aralıklarını birleştirilir ve tek bir aralığa sıralanmış sıralanır.
+*adı*\
+Art arda iki sıralı aralıktaki ilk öğenin konumunu birleştirerek ve tek bir aralığa göre sıralanacak çift yönlü bir yineleyici.
 
-*Son*\
-Konum, ardışık iki saniye içinde geçen son öğe adresleme çift yönlü bir yineleyici aralıklarını birleştirilir ve tek bir aralığa sıralanmış sıralanır.
+*Beceri*\
+Art arda iki sıralı aralığın ikinci, tek bir aralığa göre birleştirileceği ve sıralanan ilk öğenin konumunu ele aldığı çift yönlü bir yineleyici.
 
-*Comp*\
-Bir öğenin diğerinden daha büyük olan algılama tanımlayan kullanıcı tanımlı işlevin doğrulama nesnesi. İkili koşulu, iki bağımsız değişkeni alır ve döndürmelidir **true** ilk öğe olduğunda ikinci öğe küçüktür ve **false** Aksi takdirde.
+*soyadına*\
+Art arda iki sıralı aralığın ikinci, tek bir aralığa göre birleştirilmesi ve sıralanabilmesi için geçen öğeden geçen öğeden geçen bir çift yönlü Yineleyici.
+
+*pred*\
+Bir öğenin diğerinden küçük olduğu anlamlı olduğunu tanımlayan Kullanıcı tanımlı koşul işlevi nesnesi. Karşılaştırma koşulu iki bağımsız değişken alır ve ilk öğe ikinci öğeden küçük olduğunda **true** , aksi durumda **false** döndürmelidir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Başvurulan sıralanmış ardışık aralıkların geçerli olması gerekir; Tüm İşaretçiler tekrar başvurulabilir olmalı ve her bir dizisi içinde son konuma ilk konumdan erişilebilir olmalıdır erişilebilmelidir.
+Başvurulan sıralanmış ardışık aralıklar geçerli olmalıdır; Tüm işaretçilerin erişilebilir olması gerekir ve her bir dizide, son konuma artırılamadı tarafından ilk kez ulaşılabilir olmalıdır.
 
-Sıralanmış ardışık aralıktaki her uygulama için bir önkoşul olarak düzenlenmelidir `inplace_merge` olarak aynı sıralamaya uygun şekilde algoritmasıdır birleştirilmiş aralıkları Sıralama algoritması tarafından kullanılacak. Her aralık içindeki öğelerin göreli sırasını korunduğu kalıcı bir işlemdir. Her iki kaynak aralıklardaki eşdeğer öğelerin olduğunda, aralığın ilk birleşik aralığında ikinci öğesi önündeki öğesidir.
+Sıralanmış ardışık aralıklar, her biri algoritma tarafından, Birleşik aralıkları sıralamak için kullanılan aynı sıralamaya `inplace_merge` uygun olarak, algoritmanın uygulamasına bir önkoşul olarak düzenlenmelidir. Her aralıktaki öğelerin göreli sırası korunduğu için işlem kararlı değildir. Her iki kaynak aralığında da eşdeğer öğeler olduğunda, öğe ilk Aralık Birleşik aralıktaki ikinciden önce gelir.
 
-Algoritma geçici bir arabelleğe bellek ayırır gibi kullanılabilir belleğe karmaşıklığına bağlıdır. Yeterli bellek varsa, en iyi durum ile doğrusal (*son* - *ilk*) - 1; karşılaştırmalar yardımcı bellek varsa, en kötü durumda *N*günlük (*N*), burada *N* = (*son* - *ilk*).
+Algoritma, belleğin geçici bir arabelleğe ayırdığı şekilde kullanılabilir belleğe göre değişir. Yeterli bellek varsa, `(last - first) - 1` en iyi durum karşılaştırmalar ile doğrusal olur; yardımcı bellek kullanılabilir değilse, en kötü `N log(N)`durum, burada *N* = *son* - *birincsahiptir*.
 
 ### <a name="example"></a>Örnek
 
@@ -2685,92 +2769,92 @@ Algoritma geçici bir arabelleğe bellek ayırır gibi kullanılabilir belleğe 
 // Return whether modulus of elem1 is less than modulus of elem2
 bool mod_lesser ( int elem1, int elem2 )
 {
-   if ( elem1 < 0 )
-      elem1 = - elem1;
-   if ( elem2 < 0 )
-      elem2 = - elem2;
-   return elem1 < elem2;
+    if ( elem1 < 0 )
+        elem1 = - elem1;
+    if ( elem2 < 0 )
+        elem2 = - elem2;
+    return elem1 < elem2;
 }
 
 int main()
 {
-   using namespace std;
-   vector <int> v1;
-   vector <int>::iterator Iter1, Iter2, Iter3;
+    using namespace std;
+    vector<int> v1;
+    vector<int>::iterator Iter1, Iter2, Iter3;
 
-   // Constructing vector v1 with default less-than ordering
-   int i;
-   for ( i = 0 ; i <= 5 ; i++ )
-   {
-      v1.push_back( i );
-   }
+    // Constructing vector v1 with default less-than ordering
+    int i;
+    for ( i = 0 ; i <= 5 ; i++ )
+    {
+        v1.push_back( i );
+    }
 
-   int ii;
-   for ( ii =-5 ; ii <= 0 ; ii++ )
-   {
-      v1.push_back(  ii  );
-   }
+    int ii;
+    for ( ii =-5 ; ii <= 0 ; ii++ )
+    {
+        v1.push_back( ii );
+    }
 
-   cout << "Original vector v1 with subranges sorted by the\n "
-        <<  "binary predicate less than is  v1 = ( " ;
-   for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
-      cout << *Iter1 << " ";
-   cout << ")" << endl;
+    cout << "Original vector v1 with subranges sorted by the\n "
+            << "binary predicate less than is v1 = ( " ;
+    for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
+        cout << *Iter1 << " ";
+    cout << ")" << endl;
 
-   // Constructing vector v2 with ranges sorted by greater
-   vector <int> v2 ( v1 );
-   vector <int>::iterator break2;
-   break2 = find ( v2.begin( ), v2.end( ), -5 );
-   sort ( v2.begin( ), break2 , greater<int>( ) );
-   sort ( break2 , v2.end( ), greater<int>( ) );
-   cout << "Original vector v2 with subranges sorted by the\n "
-        << "binary predicate greater is v2 = ( " ;
-   for ( Iter2 = v2.begin( ) ; Iter2 != v2.end( ) ; Iter2++ )
-      cout << *Iter2 << " ";
-   cout << ")" << endl;
+    // Constructing vector v2 with ranges sorted by greater
+    vector<int> v2 ( v1 );
+    vector<int>::iterator break2;
+    break2 = find ( v2.begin( ), v2.end( ), -5 );
+    sort ( v2.begin( ), break2 , greater<int>( ) );
+    sort ( break2 , v2.end( ), greater<int>( ) );
+    cout << "Original vector v2 with subranges sorted by the\n "
+            << "binary predicate greater is v2 = ( " ;
+    for ( Iter2 = v2.begin( ) ; Iter2 != v2.end( ) ; Iter2++ )
+        cout << *Iter2 << " ";
+    cout << ")" << endl;
 
-   // Constructing vector v3 with ranges sorted by mod_lesser
-   vector <int> v3 ( v1 );
-   vector <int>::iterator break3;
-   break3 = find ( v3.begin( ), v3.end( ), -5 );
-   sort ( v3.begin( ), break3 , mod_lesser );
-   sort ( break3 , v3.end( ), mod_lesser );
-   cout << "Original vector v3 with subranges sorted by the\n "
-        << "binary predicate mod_lesser is v3 = ( " ;
-   for ( Iter3 = v3.begin( ) ; Iter3 != v3.end( ) ; Iter3++ )
-      cout << *Iter3 << " ";
-   cout << ")" << endl;
+    // Constructing vector v3 with ranges sorted by mod_lesser
+    vector<int> v3 ( v1 );
+    vector<int>::iterator break3;
+    break3 = find ( v3.begin( ), v3.end( ), -5 );
+    sort ( v3.begin( ), break3 , mod_lesser );
+    sort ( break3 , v3.end( ), mod_lesser );
+    cout << "Original vector v3 with subranges sorted by the\n "
+            << "binary predicate mod_lesser is v3 = ( " ;
+    for ( Iter3 = v3.begin( ) ; Iter3 != v3.end( ) ; Iter3++ )
+        cout << *Iter3 << " ";
+    cout << ")" << endl;
 
-   vector <int>::iterator break1;
-   break1 = find (v1.begin( ), v1.end( ), -5 );
-   inplace_merge ( v1.begin( ), break1, v1.end( ) );
-   cout << "Merged inplace with default order,\n vector v1mod = ( " ;
-   for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
-      cout << *Iter1 << " ";
-   cout << ")" << endl;
+    vector<int>::iterator break1;
+    break1 = find (v1.begin( ), v1.end( ), -5 );
+    inplace_merge ( v1.begin( ), break1, v1.end( ) );
+    cout << "Merged inplace with default order,\n vector v1mod = ( " ;
+    for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
+        cout << *Iter1 << " ";
+    cout << ")" << endl;
 
-   // To merge inplace in descending order, specify binary
-   // predicate greater<int>( )
-   inplace_merge ( v2.begin( ), break2 , v2.end( ) , greater<int>( ) );
-   cout << "Merged inplace with binary predicate greater specified,\n "
-        << "vector v2mod = ( " ;
-   for ( Iter2 = v2.begin( ) ; Iter2 != v2.end( ) ; Iter2++ )
-      cout << *Iter2 << " ";
-   cout << ")" << endl;
+    // To merge inplace in descending order, specify binary
+    // predicate greater<int>( )
+    inplace_merge ( v2.begin( ), break2 , v2.end( ) , greater<int>( ) );
+    cout << "Merged inplace with binary predicate greater specified,\n "
+            << "vector v2mod = ( " ;
+    for ( Iter2 = v2.begin( ) ; Iter2 != v2.end( ) ; Iter2++ )
+        cout << *Iter2 << " ";
+    cout << ")" << endl;
 
-   // Applying a user defined (UD) binary predicate mod_lesser
-   inplace_merge ( v3.begin( ), break3, v3.end( ), mod_lesser );
-   cout << "Merged inplace with binary predicate mod_lesser specified,\n "
-        << "vector v3mod = ( " ; ;
-   for ( Iter3 = v3.begin( ) ; Iter3 != v3.end( ) ; Iter3++ )
-      cout << *Iter3 << " ";
-   cout << ")" << endl;
+    // Applying a user defined (UD) binary predicate mod_lesser
+    inplace_merge ( v3.begin( ), break3, v3.end( ), mod_lesser );
+    cout << "Merged inplace with binary predicate mod_lesser specified,\n "
+            << "vector v3mod = ( " ; ;
+    for ( Iter3 = v3.begin( ) ; Iter3 != v3.end( ) ; Iter3++ )
+        cout << *Iter3 << " ";
+    cout << ")" << endl;
 }
 ```
 
 ```Output
 Original vector v1 with subranges sorted by the
-binary predicate less than is  v1 = ( 0 1 2 3 4 5 -5 -4 -3 -2 -1 0 )
+binary predicate less than is v1 = ( 0 1 2 3 4 5 -5 -4 -3 -2 -1 0 )
 Original vector v2 with subranges sorted by the
 binary predicate greater is v2 = ( 5 4 3 2 1 0 0 -1 -2 -3 -4 -5 )
 Original vector v3 with subranges sorted by the
@@ -2783,9 +2867,9 @@ Merged inplace with binary predicate mod_lesser specified,
 vector v3mod = ( 0 0 1 -1 2 -2 3 -3 4 -4 5 -5 )
 ```
 
-## <a name="is_heap"></a> is_heap
+## <a name="is_heap"></a>is_heap
 
-Döndürür **true** Belirtilen aralıktaki öğeler bir yığın biçimlendiriyorsa.
+Belirtilen aralıktaki öğeler bir yığın oluşturbiliyorsa, **true** döndürür.
 
 ```cpp
 template<class RandomAccessIterator>
@@ -2793,205 +2877,214 @@ bool is_heap(
     RandomAccessIterator first,
     RandomAccessIterator last);
 
-template<class RandomAccessIterator, class BinaryPredicate>
+template<class RandomAccessIterator, class Compare>
 bool is_heap(
     RandomAccessIterator first,
     RandomAccessIterator last,
-    BinaryPredicate comp);
-    
+    Compare pred);
+
 template<class ExecutionPolicy, class RandomAccessIterator>
 bool is_heap(
     ExecutionPolicy&& exec,
-    RandomAccessIterator first, 
+    RandomAccessIterator first,
     RandomAccessIterator last);
 
 template<class ExecutionPolicy, class RandomAccessIterator, class Compare>
 bool is_heap(
     ExecutionPolicy&& exec,
-    RandomAccessIterator first, 
-    RandomAccessIterator last, 
-    Compare comp);
+    RandomAccessIterator first,
+    RandomAccessIterator last,
+    Compare pred);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*ilk*\
-Bir yığın için denetlemek için bir aralık başlangıcını gösteren bir rastgele erişim yineleyicisi.
+*Exec*\
+Kullanılacak yürütme ilkesi.
 
-*Son*\
-Bir aralığın sonunu gösteren bir rastgele erişim yineleyicisi.
+*adı*\
+Bir yığını denetlemek için aralığın başlangıcını belirten rastgele bir erişim Yineleyici.
 
-*Comp*\
-Sipariş öğelerine test etmek için bir koşul. İkili koşulu, tek bir bağımsız değişken alır ve döndürür **true** veya **false**.
+*soyadına*\
+Bir aralığın sonunu gösteren bir rastgele erişim Yineleyici.
 
-### <a name="return-value"></a>Dönüş Değeri
+*pred*\
+Order öğelerini test etmek için bir koşul. Karşılaştırma koşulu iki bağımsız değişken alır ve **true** veya **false**değerini döndürür.
 
-Döndürür **true** Belirtilen aralıktaki öğeler bir yığın biçimlendiriyorsa **false** Aksi takdirde.
+### <a name="return-value"></a>Dönüş değeri
+
+Belirtilen aralıktaki öğeler bir yığın oluşturacaksa **true** , değilse **false** döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk şablon işlevinin döndürdüğü [is_heap_until](../standard-library/algorithm-functions.md#is_heap_until)`(first , last) == last`.
+İlk şablon işlevi [is_heap_until](../standard-library/algorithm-functions.md#is_heap_until)`(first , last) == last`döndürür.
 
-İkinci şablon işlevi döndürür
+İkinci şablon işlevi şunu döndürür
 
-`is_heap_until(first, last, comp) == last`.
+`is_heap_until(first, last, pred) == last`.
 
-## <a name="is_heap_until"></a> is_heap_until
+## <a name="is_heap_until"></a>is_heap_until
 
-Aralıktaki ilk öğeyi adresindeki konumlandırılmış bir yineleyici döndürür [ `begin`, `end`) koşulu,'sıralama yığın karşılamıyor veya *son* aralığın bir yığın biçimlendiriyorsa.
+Yığın sıralama koşulunu karşılamayan [ `first`, `last`) aralığındaki ilk öğede konumlandırılmış bir yineleyici döndürür veya Aralık bir yığın oluşturur.
 
 ```cpp
 template<class RandomAccessIterator>
 RandomAccessIterator is_heap_until(
-    RandomAccessIterator begin,
-    RandomAccessIterator end);
+    RandomAccessIterator first,
+    RandomAccessIterator last);
 
-template<class RandomAccessIterator, class BinaryPredicate>
+template<class RandomAccessIterator, class Compare>
 RandomAccessIterator is_heap_until(
-    RandomAccessIterator begin,
-    RandomAccessIterator end,
-    BinaryPredicate compare);
-    
+    RandomAccessIterator first,
+    RandomAccessIterator last,
+    Compare pred);
+
 template<class ExecutionPolicy, class RandomAccessIterator>
 RandomAccessIterator is_heap_until(
     ExecutionPolicy&& exec,
-    RandomAccessIterator first, 
+    RandomAccessIterator first,
     RandomAccessIterator last);
 
 template<class ExecutionPolicy, class RandomAccessIterator, class Compare>
 RandomAccessIterator is_heap_until(
     ExecutionPolicy&& exec,
-    RandomAccessIterator first, 
+    RandomAccessIterator first,
     RandomAccessIterator last,
-    Compare comp);
+    Compare pred);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*başlayın*\
-Bir yığın için denetlenecek aralığının ilk öğeyi belirten bir rastgele erişim yineleyicisi.
+*Exec*\
+Kullanılacak yürütme ilkesi.
 
-*Son*\
-Bir yığın için denetlenecek aralığın sonuna belirten bir rastgele erişim yineleyicisi.
+*adı*\
+Bir yığını denetlemek için bir aralığın ilk öğesini belirten bir rastgele erişim Yineleyici.
 
-*Karşılaştırma*\
-Koşul, sıralama katı zayıf belirten bir ikili koşul, bir yığın tanımlar. Varsayılan koşul *karşılaştırma* belirtilmemiş olan `std::less<>`.
+*soyadına*\
+Bir yığını denetlemek için aralığın sonunu belirten bir rastgele erişim Yineleyici.
 
-### <a name="return-value"></a>Dönüş Değeri
+*pred*\
+Yığın tanımlayan katı zayıf sıralama koşulunu belirten bir ikili koşul. Varsayılan koşul, `std::less<>` *Pred* belirtilmediğinde belirlenir.
 
-Döndürür *son* Belirtilen aralıktaki bir yığın oluşturur ya da bir veya daha az öğe içeriyor. Aksi takdirde, yığın koşulu karşılamayan ilk öğe için bir yineleyici bulunan döndürür.
+### <a name="return-value"></a>Dönüş değeri
+
+Belirtilen Aralık bir yığın veya bir ya da daha az öğe içeriyorsa *son* döndürür. Aksi takdirde, yığın koşulunu karşılamayan bulunan ilk öğe için bir yineleyici döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Son yineleyici ilk şablon işlevinin döndürdüğü `next` içinde `[begin , end]` burada `[begin , next)` işlev nesnesi tarafından sıralı bir yığın `std::less<>`. Varsa uzaklık `end - begin < 2`, işlev döndürür *son*.
+`next` İlk şablon işlevi, `[first, last)` `std::less<>`içinde işlev nesnesi tarafından sıralanan yığın olaniçindekisonyineleyiciyidöndürür.`[first, next)` Uzaklık `last - first` 2 ' den küçükse, işlev *son*döndürür.
 
-Koşul kullanması hariç, ikinci şablon işlevi, ilk olarak davranır `compare` yerine `std::less<>` koşul sıralama yığın olarak.
+İkinci şablon işlevi, yığın sıralama koşulu yerine `std::less<>` *Pred* 'yi kullanması dışında, ilki ile aynı şekilde davranır.
 
-## <a name="is_partitioned"></a> is_partitioned
+## <a name="is_partitioned"></a>is_partitioned
 
-Döndürür **true** verili aralıktaki tüm öğeleri, test, **true** test herhangi bir öğeden önce gelen bir koşul için **false**.
+Bir koşul için **doğru** test eden belirtilen aralıktaki tüm öğeler **false**test eden herhangi bir öğeden önce geliyorsa **true** döndürür.
 
 ```cpp
-template<class InputIterator, class BinaryPredicate>
+template<class InputIterator, class UnaryPredicate>
 bool is_partitioned(
     InputIterator first,
     InputIterator last,
-    BinaryPredicate comp);
-    
-template <class ExecutionPolicy, class ForwardIterator, class Predicate>
+    UnaryPredicate pred);
+
+template <class ExecutionPolicy, class ForwardIterator, class UnaryPredicate>
 bool is_partitioned(
     ExecutionPolicy&& exec,
-    ForwardIterator first, 
-    ForwardIterator last, 
-    Predicate pred);
+    ForwardIterator first,
+    ForwardIterator last,
+    UnaryPredicate pred);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*ilk*\
-Aralığı bir koşulu denetleyen başladığı gösteren bir giriş yineleyici.
+*Exec*\
+Kullanılacak yürütme ilkesi.
 
-*Son*\
-Bir aralığın sonunu gösteren bir giriş yineleyici.
+*adı*\
+Bir aralığın bir koşulu denetlemeye başladığı yeri gösteren bir giriş yineleyicisi.
 
-*Comp*\
-Sınanacak koşulu. Bu öğe, aranan tarafından karşılanması koşul tanımlayan bir kullanıcı tanımlı işlevin doğrulama nesnesi tarafından sağlanır. Bir koşulu, tek bir bağımsız değişken alır ve döndürür **true** veya **false**.
+*soyadına*\
+Bir aralığın sonunu gösteren bir giriş yineleyicisi.
 
-### <a name="return-value"></a>Dönüş Değeri
+*pred*\
+Sınanacak koşul. Bu, aranmakta olan öğe tarafından yerine getirilmesi gereken koşulu tanımlayan Kullanıcı tanımlı bir koşul işlevi nesnesi tarafından sağlanır. Birli koşul tek bir bağımsız değişken alır ve **true** veya **false**değerini döndürür.
 
-Doğru döndürür test tüm öğeleri verili aralıktaki **true** test herhangi bir öğeden önce gelen bir koşul için **false**, aksi takdirde döndüren **false**.
+### <a name="return-value"></a>Dönüş değeri
+
+Bir koşul için **doğru** test eden belirtilen aralıktaki tüm öğelerin, **yanlış**test eden herhangi bir öğeden önce geldiği ve aksi durumda **false**döndürdüğünden, **true** döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon işlevinin döndürdüğü **true** yalnızca tüm öğeler `[first, last)` göre bölümlenir *comp*; diğer bir deyişle, tüm öğeleri `X` içinde `[first, last)` hangi `comp (X)` geçerlidir tüm öğeler önce gerçekleşmesi `Y` hangi `comp (Y)` olduğu **false**.
+Şablon işlevi yalnızca içindeki  `[first, last)` tüm öğeler *Pred*tarafından bölümlenmiş ise true değerini döndürür `X` ; diğer bir `pred (X)` deyişle, `Y` içindeki `[first, last)` tüm öğeler `pred (Y)` **yanlış**.
 
-## <a name="is_permutation"></a> is_permutation
+## <a name="is_permutation"></a>is_permutation
 
-Öğeler aynı sırada olsun olmasın hem de aralık aynı öğeleri içeriyorsa true döndürür. İkinci aralığı için tek bir yineleyici yalnızca aşırı farklar algılamaz ikinci aralığın ilk aralığından daha uzun ve ikinci aralığı kısaysa tanımsız davranışlara neden çünkü çift aralıklı C ++ 14 kodda aşırı yüklemeleri kullanın ilk aralığından daha.
+Her iki Aralık de aynı öğeleri içeriyorsa, öğelerin aynı sırada olup olmadığına bakılmaksızın true döndürür. İkinci Aralık için yalnızca tek bir yineleyici alan aşırı yüklemeler ikinci aralığın ilk aralıktan daha uzun olması fark etmez ve ikinci Aralık daha kısaysa tanımsız davranışlara neden olacak şekilde, C++ 14 kodunda çift aralıklı aşırı yüklemeleri kullanın. ilk aralıktan fazla.
 
 ```cpp
 template<class ForwardIterator1, class ForwardIterator2>
 bool is_permutation(
-    ForwardIterator1 First1,
-    ForwardIterator1 Last1,
-    ForwardIterator2 First2);
+    ForwardIterator1 first1,
+    ForwardIterator1 last1,
+    ForwardIterator2 first2);
 
-template<class ForwardIterator1, class ForwardIterator2, class Predicate>
+template<class ForwardIterator1, class ForwardIterator2, class BinaryPredicate>
 bool is_permutation(
-    ForwardIterator1 First1,
-    ForwardIterator1 Last1,
-    ForwardIterator2 First2,
-    Predicate Pred);
+    ForwardIterator1 first1,
+    ForwardIterator1 last1,
+    ForwardIterator2 first2,
+    BinaryPredicate Pred);
 
 // C++14
 template<class ForwardIterator1, class ForwardIterator2>
 bool is_permutation(
-    ForwardIterator1 First1,
-    ForwardIterator1 Last1,
-    ForwardIterator2 First2,
-    ForwardIterator2 Last2);
+    ForwardIterator1 first1,
+    ForwardIterator1 last1,
+    ForwardIterator2 first2,
+    ForwardIterator2 last2);
 
-template<class ForwardIterator1, class ForwardIterator2, class Predicate>
+template<class ForwardIterator1, class ForwardIterator2, class BinaryPredicate>
 bool is_permutation(
-    ForwardIterator1 First1,
-    ForwardIterator1 Last1,
-    ForwardIterator2 First2,
-    ForwardIterator2 Last2,
-    Predicate Pred);
+    ForwardIterator1 first1,
+    ForwardIterator1 last1,
+    ForwardIterator2 first2,
+    ForwardIterator2 last2,
+    BinaryPredicate pred);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
 *first1*\
-Aralığın ilk öğeye başvuran ileri doğru yineleyici.
+Aralığın ilk öğesine başvuran bir ileri Yineleyici.
 
 *last1*\
-Aralığın son öğeden bir öncekine başvuran ileri doğru yineleyici.
+Aralığın son öğesinden bir geçen bir ileri Yineleyici.
 
 *first2*\
-Karşılaştırma için kullanılan bir ikinci aralığının ilk öğeye başvuran ileri doğru yineleyici.
+Karşılaştırma için kullanılan ikinci bir aralığın ilk öğesine başvuran bir ileri Yineleyici.
 
-*Soyadı2*\
-Karşılaştırma için kullanılan bir ikinci aralığının son öğeden bir öncekine başvuran ileri doğru yineleyici.
+*last2*\
+Karşılaştırma için kullanılan ikinci bir aralığın son öğesinden bir geçen bir ileri Yineleyici.
 
-*Pred*\
-Denklik için test eder ve döndüren bir koşul bir **bool**.
+*pred*\
+Denklik için test eden ve **bool**döndüren bir koşul.
 
-### <a name="return-value"></a>Dönüş Değeri
+### <a name="return-value"></a>Dönüş değeri
 
-**doğru** zaman aralıkları karşılaştırıcı koşula göre aynı; Aksi takdirde olması için yeniden **false**.
+aralıklar karşılaştırma koşuluna göre özdeş olacak şekilde yeniden düzenlenbiliyorsa, **true** . Aksi takdirde, **false**.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`is_permutation` ikinci dereceden karmaşıklığı en kötü durumda sahiptir.
+`is_permutation`en kötü durumda büyük olasılıkla karmaşıklığa sahiptir.
 
-İlk şablon işlevi olduğunu kadar öğeleri de aralık başında varsayar *First2* olduğundan tarafından belirtilen aralıktaki [ `First1`, `Last1`). İkinci aralık içinde daha fazla öğe varsa, bunlar yoksayılır; varsa daha az, tanımsız davranış ortaya çıkar. Üçüncü şablon işlevi (C ++ 14 ve üzeri) Bu varsayım yapmaz.  İkisi de **true** tarafından belirlenen aralığındaki her öğeyi X için yalnızca Eğer [ `First1`, `Last1`) hangi X aralığında aynı sayıda öğe Y vardır olduğundan de aralık başında Y == *First2* veya [ `First2, Last2).` burada `operator==` işlenenleri arasındaki ikili karşılaştırma gerçekleştirmeniz gerekir.
+İlk şablon işlevi, tarafından `[first1, last1)`belirlenen aralıkta olduğu gibi, *first2* adresinden başlayan aralıkta çok sayıda öğe olduğunu varsayar. İkinci aralıkta daha fazla öğe varsa, bunlar yok sayılır; daha az varsa, tanımsız bir davranış meydana gelir. Üçüncü şablon işlevi (C++ 14 ve üzeri) Bu varsayımını yapmaz. Her ikisi de **true değeri** yalnızca, x = = Y, *first2* veya `[first2, last2)`' `[first1, last1)` den başlayarak Aralık içinde olduğu gibi, x = = Y için aynı aralıkta bulunan her bir x öğesi için de geçerlidir. Burada, `operator==` işlenenleri arasında ikili bir karşılaştırma gerçekleştirmeniz gerekir.
 
-Bunlar değiştirir dışında ikinci ve dördüncü bir şablon işlevleri aynı şekilde davranır `operator==(X, Y)` ile `Pred(X, Y)`. Koşul doğru şekilde davranmaz için simetrik, yansıma ve geçişli olması gerekir.
+İkinci ve dördüncü şablon işlevleri aynı şekilde davranır, ancak ile `operator==(X, Y)` `Pred(X, Y)`değiştirilir. Doğru şekilde davranması için koşul simetrik, yansımalı ve geçişli olmalıdır.
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki örnek nasıl kullanılacağını gösterir `is_permutation`:
+Aşağıdaki örnek nasıl kullanılacağını `is_permutation`gösterir:
 
 ```cpp
 #include <vector>
@@ -3045,9 +3138,9 @@ int main()
 }
 ```
 
-## <a name="is_sorted"></a> is_sorted
+## <a name="is_sorted"></a>is_sorted
 
-Döndürür **true** sıralanmış olarak belirtilen aralıktaki öğeler varsa.
+Belirtilen aralıktaki öğeler sıralanmış sıradüzende ise, **true** döndürür.
 
 ```cpp
 template<class ForwardIterator>
@@ -3055,96 +3148,103 @@ bool is_sorted(
     ForwardIterator first,
     ForwardIterator last);
 
-template<class ForwardIterator, class BinaryPredicate>
+template<class ForwardIterator, class Compare>
 bool is_sorted(
     ForwardIterator first,
     ForwardIterator last,
-    BinaryPredicate comp);
-    
+    Compare pred);
+
 template<class ExecutionPolicy, class ForwardIterator>
 bool is_sorted(
     ExecutionPolicy&& exec,
-    ForwardIterator first, 
+    ForwardIterator first,
     ForwardIterator last);
-    
+
 template<class ExecutionPolicy, class ForwardIterator, class Compare>
 bool is_sorted(
     ExecutionPolicy&& exec,
     ForwardIterator first,
     ForwardIterator last,
-    Compare comp);
+    Compare pred);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*ilk*\
-Denetlenecek aralık başladığı yeri gösteren bir ileriye doğru yineleyici.
+*Exec*\
+Kullanılacak yürütme ilkesi.
 
-*Son*\
-Bir aralığın sonunu gösteren bir ileriye doğru yineleyici.
+*adı*\
+Denetlenecek aralığın başlayacağı konumu gösteren bir ileri Yineleyici.
 
-*Comp*\
-İki öğe arasındaki bir sırayı belirlemek için test edilecek koşul. Bir koşulu, tek bir bağımsız değişken alır ve döndürür **true** veya **false**. Bu aynı görevi gerçekleştirir `operator<`.
+*soyadına*\
+Bir aralığın sonunu gösteren bir ileri Yineleyici.
+
+*pred*\
+İki öğe arasında bir sıra belirlenmesi için sınanacak koşul. Karşılaştırma koşulu iki bağımsız değişken alır ve **true** veya **false**değerini döndürür. Bu, ile `operator<`aynı görevi gerçekleştirir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk şablon işlevinin döndürdüğü [is_sorted_until](#is_sorted_until)`( first, last ) == last`. `operator<` İşlevi sipariş karşılaştırma gerçekleştirir.
+İlk şablon işlevi [is_sorted_until](#is_sorted_until)`( first, last ) == last`döndürür. `operator<` İşlev, sıra karşılaştırması gerçekleştirir.
 
-İkinci şablon işlevinin döndürdüğü `is_sorted_until( first, last , comp ) == last`. *Comp* koşul işlevi, sipariş karşılaştırma gerçekleştirir.
+İkinci şablon işlevi döndürür `is_sorted_until( first, last , pred ) == last`. *Pred* koşul işlevi, sıra karşılaştırması gerçekleştirir.
 
-## <a name="is_sorted_until"></a> is_sorted_until
+## <a name="is_sorted_until"></a>is_sorted_until
 
-Döndürür bir `ForwardIterator` kümesi son belirtilen bir aralıktan sıralanmış sırayla öğesi.
+Belirtilen aralıktan `ForwardIterator` sıralanmış sırada olan son öğeye ayarlanmış bir döndürür.
 
-Dosyanın ikinci sürümü, sağlamanızı bir `BinaryPredicate` döndüren işlev **true** iki belirli öğeleri sıralanmış olarak olduğunda ve **false** Aksi takdirde.
+İkinci sürüm, belirtilen iki öğe sıralanmış sırada olduğunda **true değeri** döndüren bir karşılaştırma işlevi nesnesi sağlamanıza olanak sağlar ve aksi takdirde **yanlış** olur.
 
 ```cpp
 template<class ForwardIterator>
 ForwardIterator is_sorted_until(
     ForwardIterator first,
     ForwardIterator last);
-template<class ForwardIterator, class BinaryPredicate>
+
+template<class ForwardIterator, class Compare>
 ForwardIterator is_sorted_until(
     ForwardIterator first,
     ForwardIterator last,
-    BinaryPredicate comp);
-    
+    Compare pred);
+
 template<class ExecutionPolicy, class ForwardIterator>
 ForwardIterator is_sorted_until(
     ExecutionPolicy&& exec,
-    ForwardIterator first, 
+    ForwardIterator first,
     ForwardIterator last);
 
 template<class ExecutionPolicy, class ForwardIterator, class Compare>
 ForwardIterator is_sorted_until(
     ExecutionPolicy&& exec,
-    ForwardIterator first, 
+    ForwardIterator first,
     ForwardIterator last,
-    Compare comp);
+    Compare pred);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*ilk*\
-Denetlenecek aralık başladığı gösteren bir ileriye doğru yineleyici.
+*Exec*\
+Kullanılacak yürütme ilkesi.
 
-*Son*\
-Bir aralığın sonunu gösteren bir ileriye doğru yineleyici.
+*adı*\
+Denetlenecek aralığın nerede başlayacağını gösteren bir ileriye doğru yineleyici.
 
-*Comp*\
-İki öğe arasındaki bir sırayı belirlemek için test edilecek koşul. Bir koşulu, tek bir bağımsız değişken alır ve döndürür **true** veya **false**.
+*soyadına*\
+Bir aralığın sonunu gösteren bir ileri Yineleyici.
 
-### <a name="return-value"></a>Dönüş Değeri
+*pred*\
+İki öğe arasında bir sıra belirlenmesi için sınanacak koşul. Karşılaştırma koşulu iki bağımsız değişken alır ve **true** veya **false**değerini döndürür.
 
-Döndürür bir `ForwardIterator` son öğesi sıralanmış olarak ayarlayın. Sıralanmış dizisi başlatılır *ilk*.
+### <a name="return-value"></a>Dönüş değeri
+
+Sıralı düzende `ForwardIterator` son öğeye bir küme döndürür. Sıralanmış sıra *ilk*öğesinden başlar.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Son yineleyici ilk şablon işlevinin döndürdüğü `next` içinde `[first, last]` böylece `[first, next)` sıralı bir dizisi göre sıralanmış `operator<`. Varsa `distance()` `< 2` işlevi döndürür *son*.
+İlk `next` şablon işlevi ' de `[first, last]` son yineleyiciyi döndürür, bu `[first, next)` nedenle tarafından `operator<`sıralanan sıralanmış bir sıra. 2 ' den küçükse, işlev son ' u döndürür.  `distance()`
 
-Değiştirir dışında ikinci şablon işlevi aynı şekilde davranır `operator<(X, Y)` ile `comp (X, Y)`.
+İkinci şablon işlevi aynı şekilde davranır, ancak ile `operator<(X, Y)` `pred(X, Y)`değiştirilir.
 
-## <a name="iter_swap"></a> iter_swap
+## <a name="iter_swap"></a>iter_swap
 
 Belirtilen yineleyicilerin bir çifti tarafından başvurulan iki değeri birbiriyle değiştirir.
 
@@ -3155,17 +3255,17 @@ void iter_swap( ForwardIterator1 left, ForwardIterator2 right );
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*\
-Değiştirilecek değeri olan ileriye doğru Yineleyicilerin biri.
+*tarafta*\
+Değeri değiş tokuş edilecek olan ileri yineleyicilerinin biri.
 
-*sağ*\
-Değiştirilecek değeri olan ileriye doğru Yineleyicilerin saniye.
+*Right*\
+Değeri değiş tokuş edilecek olan ileri yineleyiciler ikincisinin ikincisi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`swap` preference için kullanılması gereken miyim **ter_swap**, de dahil C++ geriye dönük uyumluluk için standart. Varsa `Fit1` ve `Fit2` ileriye doğru Yineleyicilerin ardından olan `iter_swap(Fit1, Fit2)`, eşdeğerdir `swap( *Fit1, *Fit2)`.
+`swap`, geriye doğru uyumluluk için C++ standart olan **İter_swap**için tercih edilen tercihe göre kullanılmalıdır. Ve `Fit1` daha`Fit2` `swap( *Fit1, *Fit2 )`sonra yineleyicilervarsa,öğesineeşdeğerdir`iter_swap( Fit1, Fit2 )`.
 
-Giriş ileriye doğru Yineleyicilerin değer türlerinin aynı değere sahip olmalıdır.
+Giriş iletme yineleyicilerinin değer türleri aynı değere sahip olmalıdır.
 
 ### <a name="example"></a>Örnek
 
@@ -3185,105 +3285,105 @@ ostream& operator<<( ostream& osIn, const CInt& rhs );
 class CInt
 {
 public:
-   CInt( int n = 0 ) : m_nVal( n ){}
-   CInt( const CInt& rhs ) : m_nVal( rhs.m_nVal ){}
-   CInt&   operator=( const CInt& rhs ) { m_nVal =
-   rhs.m_nVal; return *this; }
-   bool operator<( const CInt& rhs ) const
-      { return ( m_nVal < rhs.m_nVal );}
-   friend ostream& operator<<( ostream& osIn, const CInt& rhs );
+    CInt( int n = 0 ) : m_nVal( n ){}
+    CInt( const CInt& rhs ) : m_nVal( rhs.m_nVal ){}
+    CInt&   operator=( const CInt& rhs ) { m_nVal =
+    rhs.m_nVal; return *this; }
+    bool operator<( const CInt& rhs ) const
+        { return ( m_nVal < rhs.m_nVal );}
+    friend ostream& operator<<( ostream& osIn, const CInt& rhs );
 
 private:
-   int m_nVal;
+    int m_nVal;
 };
 
 inline ostream& operator<<( ostream& osIn, const CInt& rhs )
 {
-   osIn << "CInt(" << rhs.m_nVal << ")";
-   return osIn;
+    osIn << "CInt(" << rhs.m_nVal << ")";
+    return osIn;
 }
 
 // Return whether modulus of elem1 is less than modulus of elem2
 bool mod_lesser ( int elem1, int elem2 )
 {
-   if ( elem1 < 0 )
-      elem1 = - elem1;
-   if ( elem2 < 0 )
-      elem2 = - elem2;
-   return elem1 < elem2;
+    if ( elem1 < 0 )
+        elem1 = - elem1;
+    if ( elem2 < 0 )
+        elem2 = - elem2;
+    return elem1 < elem2;
 };
 
 int main()
 {
-   CInt c1 = 5, c2 = 1, c3 = 10;
-   deque<CInt> deq1;
-   deque<CInt>::iterator d1_Iter;
+    CInt c1 = 5, c2 = 1, c3 = 10;
+    deque<CInt> deq1;
+    deque<CInt>::iterator d1_Iter;
 
-   deq1.push_back ( c1 );
-   deq1.push_back ( c2 );
-   deq1.push_back ( c3 );
+    deq1.push_back ( c1 );
+    deq1.push_back ( c2 );
+    deq1.push_back ( c3 );
 
-   cout << "The original deque of CInts is deq1 = (";
-   for ( d1_Iter = deq1.begin( ); d1_Iter != --deq1.end( ); d1_Iter++ )
-      cout << " " << *d1_Iter << ",";
-   d1_Iter = --deq1.end( );
-   cout << " " << *d1_Iter << " )." << endl;
+    cout << "The original deque of CInts is deq1 = (";
+    for ( d1_Iter = deq1.begin( ); d1_Iter != --deq1.end( ); d1_Iter++ )
+        cout << " " << *d1_Iter << ",";
+    d1_Iter = --deq1.end( );
+    cout << " " << *d1_Iter << " )." << endl;
 
-   // Exchanging first and last elements with iter_swap
-   iter_swap ( deq1.begin( ), --deq1.end( ) );
+    // Exchanging first and last elements with iter_swap
+    iter_swap ( deq1.begin( ), --deq1.end( ) );
 
-   cout << "The deque of CInts with first & last elements swapped is:\n deq1 = (";
-   for ( d1_Iter = deq1.begin( ); d1_Iter != --deq1.end( ); d1_Iter++ )
-      cout << " " << *d1_Iter << ",";
-   d1_Iter = --deq1.end( );
-   cout << " " << *d1_Iter << " )." << endl;
+    cout << "The deque of CInts with first & last elements swapped is:\n deq1 = (";
+    for ( d1_Iter = deq1.begin( ); d1_Iter != --deq1.end( ); d1_Iter++ )
+        cout << " " << *d1_Iter << ",";
+    d1_Iter = --deq1.end( );
+    cout << " " << *d1_Iter << " )." << endl;
 
-   // Swapping back first and last elements with swap
-   swap ( *deq1.begin( ), *(deq1.end( ) -1 ) );
+    // Swapping back first and last elements with swap
+    swap ( *deq1.begin( ), *(deq1.end( ) -1 ) );
 
-   cout << "The deque of CInts with first & last elements swapped back is:\n deq1 = (";
-   for ( d1_Iter = deq1.begin( ); d1_Iter != --deq1.end( ); d1_Iter++ )
-      cout << " " << *d1_Iter << ",";
-   d1_Iter = --deq1.end( );
-   cout << " " << *d1_Iter << " )." << endl;
+    cout << "The deque of CInts with first & last elements swapped back is:\n deq1 = (";
+    for ( d1_Iter = deq1.begin( ); d1_Iter != --deq1.end( ); d1_Iter++ )
+        cout << " " << *d1_Iter << ",";
+    d1_Iter = --deq1.end( );
+    cout << " " << *d1_Iter << " )." << endl;
 
-   // Swapping a vector element with a deque element
-   vector <int> v1;
-   vector <int>::iterator Iter1;
-   deque <int> deq2;
-   deque <int>::iterator d2_Iter;
+    // Swapping a vector element with a deque element
+    vector<int> v1;
+    vector<int>::iterator Iter1;
+    deque<int> deq2;
+    deque<int>::iterator d2_Iter;
 
-   int i;
-   for ( i = 0 ; i <= 3 ; i++ )
-   {
-      v1.push_back( i );
-   }
+    int i;
+    for ( i = 0 ; i <= 3 ; i++ )
+    {
+        v1.push_back( i );
+    }
 
-   int ii;
-   for ( ii = 4 ; ii <= 5 ; ii++ )
-   {
-      deq2.push_back( ii );
-   }
+    int ii;
+    for ( ii = 4 ; ii <= 5 ; ii++ )
+    {
+        deq2.push_back( ii );
+    }
 
-   cout << "Vector v1 is ( " ;
-   for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
-      cout << *Iter1 << " ";
-   cout << ")." << endl;
+    cout << "Vector v1 is ( " ;
+    for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
+        cout << *Iter1 << " ";
+    cout << ")." << endl;
 
-   cout << "Deque deq2 is ( " ;
-   for ( d2_Iter = deq2.begin( ) ; d2_Iter != deq2.end( ) ; d2_Iter++ )
-      cout << *d2_Iter << " ";
-   cout << ")." << endl;
+    cout << "Deque deq2 is ( " ;
+    for ( d2_Iter = deq2.begin( ) ; d2_Iter != deq2.end( ) ; d2_Iter++ )
+        cout << *d2_Iter << " ";
+    cout << ")." << endl;
 
-   iter_swap ( v1.begin( ), deq2.begin( ) );
+    iter_swap ( v1.begin( ), deq2.begin( ) );
 
-   cout << "After exchanging first elements,\n vector v1 is: v1 = ( " ;
-   for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
-      cout << *Iter1 << " ";
-   cout << ")." << endl << " & deque deq2 is: deq2 = ( ";
-   for ( d2_Iter = deq2.begin( ) ; d2_Iter != deq2.end( ) ; d2_Iter++ )
-      cout << *d2_Iter << " ";
-   cout << ")." << endl;
+    cout << "After exchanging first elements,\n vector v1 is: v1 = ( " ;
+    for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
+        cout << *Iter1 << " ";
+    cout << ")." << endl << " & deque deq2 is: deq2 = ( ";
+    for ( d2_Iter = deq2.begin( ) ; d2_Iter != deq2.end( ) ; d2_Iter++ )
+        cout << *d2_Iter << " ";
+    cout << ")." << endl;
 }
 ```
 
@@ -3300,75 +3400,77 @@ vector v1 is: v1 = ( 4 1 2 3 ).
 & deque deq2 is: deq2 = ( 0 5 ).
 ```
 
-## <a name="lexicographical_compare"></a> lexicographical_compare
+## <a name="lexicographical_compare"></a>lexicographical_compare
 
 Daha küçük olanı belirlemek için iki diziyi öğe öğe karşılaştırır.
 
 ```cpp
 template<class InputIterator1, class InputIterator2>
 bool lexicographical_compare(
-    InputIterator1  first1,
-    InputIterator1 Last1,
-    InputIterator2  first2,
-    InputIterator2 Last2  );
+    InputIterator1 first1,
+    InputIterator1 last1,
+    InputIterator2 first2,
+    InputIterator2 last2 );
 
-template<class InputIterator1, class InputIterator2, class BinaryPredicate>
+template<class InputIterator1, class InputIterator2, class Compare>
 bool lexicographical_compare(
-    InputIterator1  first1,
-    InputIterator1 Last1,
-    InputIterator2  first2,
-    InputIterator2 Last2,
-    BinaryPredicate  comp  );
-    
+    InputIterator1 first1,
+    InputIterator1 last1,
+    InputIterator2 first2,
+    InputIterator2 last2,
+    Compare pred );
+
 template<class ExecutionPolicy, class ForwardIterator1, class ForwardIterator2>
 bool lexicographical_compare(
     ExecutionPolicy&& exec,
-    ForwardIterator1 first1, 
+    ForwardIterator1 first1,
     ForwardIterator1 last1,
-    ForwardIterator2 first2, 
+    ForwardIterator2 first2,
     ForwardIterator2 last2);
 
-template<class ExecutionPolicy, class ForwardIterator1, class ForwardIterator2,
-class Compare>
+template<class ExecutionPolicy, class ForwardIterator1, class ForwardIterator2, class Compare>
 bool lexicographical_compare(
     ExecutionPolicy&& exec,
-    ForwardIterator1 first1, 
+    ForwardIterator1 first1,
     ForwardIterator1 last1,
-    ForwardIterator2 first2, 
+    ForwardIterator2 first2,
     ForwardIterator2 last2,
-    Compare comp);
+    Compare pred);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
+*Exec*\
+Kullanılacak yürütme ilkesi.
+
 *first1*\
-Karşılaştırılacak ilk aralıktaki ilk öğenin konumunu ele alan bir giriş yineleyici.
+Karşılaştırılacak ilk aralıktaki ilk öğenin konumunu ele almak için bir giriş Yineleyici.
 
 *last1*\
-Karşılaştırılacak ilk aralığın son öğesinde geçmiş konumu ele alan bir giriş yineleyici.
+Karşılaştırılacak ilk aralıktaki son öğeden önceki konumu ele aldığı bir giriş Yineleyici.
 
 *first2*\
-Karşılaştırılacak ikinci aralıktaki ilk öğenin konumunu ele alan bir giriş yineleyici.
+Karşılaştırılacak ikinci aralıktaki ilk öğenin konumunu ele almak için bir giriş Yineleyici.
 
-*Soyadı2*\
-Karşılaştırılacak ikinci aralığın son öğesinde geçmiş konumu ele alan bir giriş yineleyici.
+*last2*\
+Karşılaştırılan ikinci aralıktaki son öğeden sonraki konumu ele aldığı bir giriş Yineleyici.
 
-*Comp*\
-Bir öğenin daha az olan algılama tanımlayan kullanıcı tanımlı işlevin doğrulama nesnesi. İkili koşulu, iki bağımsız değişkeni alır ve döndürür **true** karşılanmazsa ve **false** koşullar karşılanırsa.
+*pred*\
+Bir öğenin diğerinden küçük olduğu anlamlı olduğunu tanımlayan Kullanıcı tanımlı koşul işlevi nesnesi. Karşılaştırma koşulu iki bağımsız değişken alır ve memnun olmadığında **true** ve **false** değeri döndürür.
 
-### <a name="return-value"></a>Dönüş Değeri
+### <a name="return-value"></a>Dönüş değeri
 
-**doğru** ilk aralığın ikinci aralığından; lexicographically daha az ise, aksi takdirde **false**.
+ilk Aralık, ikinci aralıktan sözcüıgrafik küçükse **true** ; Aksi halde **yanlış**.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Lexicographical karşılaştırma dizileri arasında bunları kadar öğeye göre karşılaştırılır:
+Sıralar arasında bir lexicografik karşılaştırması, onları öğesine göre öğe ile karşılaştırır:
 
-- İki karşılık gelen öğelerle eşit bulur ve bunların karşılaştırma sonucu dizileri arasındaki Karşılaştırmanın sonucu olarak alınır.
+- Karşılık gelen iki öğeyi eşit olarak bulur ve karşılaştırma sonuçları diziler arasındaki karşılaştırma sonucu olarak alınır.
 
-- Hiçbir inequalities bulundu, ancak bir sıralı uzun dizisi'den küçük olan diğer ve daha kısa bir dizisi olarak kabul edilir çok daha fazla öğe vardır.
+- Hiçbir inede bulunmadı, ancak bir dizide diğerinin daha fazla öğesi vardır ve daha kısa bir sıra daha uzun bir sıra daha küçüktür olarak kabul edilir.
 
-- Hiçbir inequalities bulundu ve öğeleri aynı sayıda dizileri sahiptir ve dizileri eşit şekilde ve Karşılaştırmanın sonucu false'tur.
+- Herhangi bir inede bulunmadı ve diziler aynı sayıda öğeye sahip ve bu nedenle sıralar eşitse ve Karşılaştırmanın sonucu **false**.
 
 ### <a name="example"></a>Örnek
 
@@ -3383,76 +3485,76 @@ Lexicographical karşılaştırma dizileri arasında bunları kadar öğeye gör
 // Return whether second element is twice the first
 bool twice ( int elem1, int elem2 )
 {
-   return 2 * elem1 < elem2;
+    return 2 * elem1 < elem2;
 }
 
 int main()
 {
-   using namespace std;
-   vector <int> v1, v2;
-   list <int> L1;
-   vector <int>::iterator Iter1, Iter2;
-   list <int>::iterator L1_Iter, L1_inIter;
+    using namespace std;
+    vector<int> v1, v2;
+    list<int> L1;
+    vector<int>::iterator Iter1, Iter2;
+    list<int>::iterator L1_Iter, L1_inIter;
 
-   int i;
-   for ( i = 0 ; i <= 5 ; i++ )
-   {
-      v1.push_back( 5 * i );
-   }
-   int ii;
-   for ( ii = 0 ; ii <= 6 ; ii++ )
-   {
-      L1.push_back( 5 * ii );
-   }
+    int i;
+    for ( i = 0 ; i <= 5 ; i++ )
+    {
+        v1.push_back( 5 * i );
+    }
+    int ii;
+    for ( ii = 0 ; ii <= 6 ; ii++ )
+    {
+        L1.push_back( 5 * ii );
+    }
 
-   int iii;
-   for ( iii = 0 ; iii <= 5 ; iii++ )
-   {
-      v2.push_back( 10 * iii );
-   }
+    int iii;
+    for ( iii = 0 ; iii <= 5 ; iii++ )
+    {
+        v2.push_back( 10 * iii );
+    }
 
-   cout << "Vector v1 = ( " ;
-   for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
-      cout << *Iter1 << " ";
-   cout << ")" << endl;
+    cout << "Vector v1 = ( " ;
+    for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
+        cout << *Iter1 << " ";
+    cout << ")" << endl;
 
-   cout << "List L1 = ( " ;
-   for ( L1_Iter = L1.begin( ) ; L1_Iter!= L1.end( ) ; L1_Iter++ )
-      cout << *L1_Iter << " ";
-   cout << ")" << endl;
+    cout << "List L1 = ( " ;
+    for ( L1_Iter = L1.begin( ) ; L1_Iter!= L1.end( ) ; L1_Iter++ )
+        cout << *L1_Iter << " ";
+    cout << ")" << endl;
 
-   cout << "Vector v2 = ( " ;
-   for ( Iter2 = v2.begin( ) ; Iter2 != v2.end( ) ; Iter2++ )
-      cout << *Iter2 << " ";
-      cout << ")" << endl;
+    cout << "Vector v2 = ( " ;
+    for ( Iter2 = v2.begin( ) ; Iter2 != v2.end( ) ; Iter2++ )
+        cout << *Iter2 << " ";
+        cout << ")" << endl;
 
-   // Self lexicographical_comparison of v1 under identity
-   bool result1;
-   result1 = lexicographical_compare (v1.begin( ), v1.end( ),
-                  v1.begin( ), v1.end( ) );
-   if ( result1 )
-      cout << "Vector v1 is lexicographically_less than v1." << endl;
-   else
-      cout << "Vector v1 is not lexicographically_less than v1." << endl;
+    // Self lexicographical_comparison of v1 under identity
+    bool result1;
+    result1 = lexicographical_compare (v1.begin( ), v1.end( ),
+                    v1.begin( ), v1.end( ) );
+    if ( result1 )
+        cout << "Vector v1 is lexicographically_less than v1." << endl;
+    else
+        cout << "Vector v1 is not lexicographically_less than v1." << endl;
 
-   // lexicographical_comparison of v1 and L2 under identity
-   bool result2;
-   result2 = lexicographical_compare (v1.begin( ), v1.end( ),
-                  L1.begin( ), L1.end( ) );
-   if ( result2 )
-      cout << "Vector v1 is lexicographically_less than L1." << endl;
-   else
-      cout << "Vector v1 is lexicographically_less than L1." << endl;
+    // lexicographical_comparison of v1 and L2 under identity
+    bool result2;
+    result2 = lexicographical_compare (v1.begin( ), v1.end( ),
+                    L1.begin( ), L1.end( ) );
+    if ( result2 )
+        cout << "Vector v1 is lexicographically_less than L1." << endl;
+    else
+        cout << "Vector v1 is lexicographically_less than L1." << endl;
 
-   bool result3;
-   result3 = lexicographical_compare (v1.begin( ), v1.end( ),
-                  v2.begin( ), v2.end( ), twice );
-   if ( result3 )
-      cout << "Vector v1 is lexicographically_less than v2 "
-           << "under twice." << endl;
-   else
-      cout << "Vector v1 is not lexicographically_less than v2 "
-           << "under twice." << endl;
+    bool result3;
+    result3 = lexicographical_compare (v1.begin( ), v1.end( ),
+                    v2.begin( ), v2.end( ), twice );
+    if ( result3 )
+        cout << "Vector v1 is lexicographically_less than v2 "
+            << "under twice." << endl;
+    else
+        cout << "Vector v1 is not lexicographically_less than v2 "
+            << "under twice." << endl;
 }
 ```
 
@@ -3465,7 +3567,7 @@ Vector v1 is lexicographically_less than L1.
 Vector v1 is not lexicographically_less than v2 under twice.
 ```
 
-## <a name="lower_bound"></a> lower_bound
+## <a name="lower_bound"></a>lower_bound
 
 Sıralı bir aralıkta belirtilen değere eşit ya da daha büyük bir değere sahip ilk öğenin konumunu bulur, burada sıralama kriteri bir ikili koşula göre belirtilebilir.
 
@@ -3481,38 +3583,38 @@ ForwardIterator lower_bound(
     ForwardIterator first,
     ForwardIterator last,
     const Type& value,
-    BinaryPredicate comp );
+    BinaryPredicate pred );
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*ilk*\
-Aranacak aralıktaki ilk öğenin konumunu bulan ileriye doğru yineleyici.
+*adı*\
+Aranacak aralıktaki ilk öğenin konumunu adresleyen ileri Yineleyici.
 
-*Son*\
-Aranacak Konum son öğeden bir aralıktaki ileriye doğru yineleyici.
+*soyadına*\
+Bir ileriye doğru yineleyici, aranacak aralıktaki son öğeden sonraki konumu ele alıyor.
 
-*Değer*\
-İlk konumu veya olası ilk konumu Sıralanan aralıkta Aranan değer.
+*deeri*\
+Düzenli aralıktaki ilk konumu veya olası ilk konumu aranmakta olan değer.
 
-*Comp*\
-Bir öğenin daha az olan algılama tanımlayan kullanıcı tanımlı işlevin doğrulama nesnesi. İkili koşulu, iki bağımsız değişkeni alır ve döndürür **true** karşılanmazsa ve **false** koşullar karşılanırsa.
+*pred*\
+Bir öğenin diğerinden küçük olduğu anlamlı olduğunu tanımlayan Kullanıcı tanımlı koşul işlevi nesnesi. İkili koşul iki bağımsız değişken alır ve memnun olmadığında **true** ve **false** değeri döndürür.
 
-### <a name="return-value"></a>Dönüş Değeri
+### <a name="return-value"></a>Dönüş değeri
 
-Konumda denkliğin ikili tahminle burada belirtilen ilk öğenin belirtilen değere eşit veya daha büyük bir değere sahip sıralı bir aralıktaki ileriye doğru yineleyici.
+Belirtilen değere eşit veya ondan daha büyük bir değere sahip sıralı bir aralıktaki ilk öğenin konumunu bir ileriye doğru yineleyici, burada denklik bir ikili koşula göre belirtilir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Başvurulan sıralanmış kaynak aralık geçerli olmalı; Tüm yineleyiciler tekrar başvurulabilir olmalı ve dizi içinde son konuma ilk konumdan erişilebilir olmalıdır erişilebilmelidir.
+Başvurulan sıralanmış kaynak aralığı geçerli olmalıdır; tüm yineleyiciler, en başta artırılamadı 'e başvurulamamalıdır.
 
-Bir sıralanmış aralıkta kullanmanın bir önkoşuludur `lower_bound` ve sıralama ile ikili koşul tarafından belirtildiği gibi aynı.
+Sıralanmış bir Aralık, kullanmanın `lower_bound` önkoşuludur ve sıralama ikili koşula göre belirtilen şekilde aynıdır.
 
-Aralığın algoritması tarafından değiştirilmez `lower_bound`.
+Aralık, algoritma `lower_bound`tarafından değiştirilmez.
 
-İleriye doğru Yineleyicilerin değer türlerinin daha küçük olması-sıralanmalıdır daha karşılaştırılabilir, iki öğe belirtildiğinde, (yani birinin diğerinden diğerinden daha küçük olmadığı anlamında) eşit veya birinin diğerinden küçük olduğu belirlenebilir. Bu bir sıralamaya neden olur öğeler arasında neden olur
+İleriye doğru yineleyicilerin değer türlerinin sıralanabilmesi için kıyasla daha az karşılaştırılabilir olması gerekir. bu sayede, iki öğe verildiğinde, eşdeğer oldukları (Yani bunlardan daha küçük olmadığı anlamda) ya da birinin diğerinin daha küçük olduğu belirlenebilir. Bu, eşdeğer olmayan öğeler arasında bir sıralamaya neden olur
 
-Algoritmanın karmaşıklığı, rasgele erişim yineleyicileri için logaritmik ve doğrusal Aksi takdirde doğrusaldır adım sayısı ile (`last - first`).
+Algoritmanın karmaşıklığı Rastgele erişimli yineleyiciler ve doğrusal olarak, diğer bir deyişle, diğer bir deyişle, diğer bir deyişle, (`last - first`) ile orantılıdır.
 
 ### <a name="example"></a>Örnek
 
@@ -3542,12 +3644,12 @@ int main()
     // Constructing vector v1 with default less-than ordering
     for ( auto i = -1 ; i <= 4 ; ++i )
     {
-        v1.push_back(  i );
+        v1.push_back( i );
     }
 
     for ( auto ii =-3 ; ii <= 0 ; ++ii )
     {
-        v1.push_back(  ii  );
+        v1.push_back( ii );
     }
 
     cout << "Starting vector v1 = ( " ;
@@ -3578,7 +3680,7 @@ int main()
     sort(v3.begin(), v3.end(), mod_lesser);
 
     cout << "Original vector v3 with range sorted by the\n "
-        <<  "binary predicate mod_lesser is v3 = ( " ;
+        << "binary predicate mod_lesser is v3 = ( " ;
     for (const auto &Iter : v3)
         cout << Iter << " ";
     cout << ")." << endl;
@@ -3597,14 +3699,14 @@ int main()
     cout << "The lower_bound in v2 for the element with a value of 3 is: "
         << *Result << "." << endl;
 
-    // lower_bound of 3 in v3 with the binary predicate  mod_lesser
-    Result = lower_bound(v3.begin(), v3.end(), 3,  mod_lesser);
+    // lower_bound of 3 in v3 with the binary predicate mod_lesser
+    Result = lower_bound(v3.begin(), v3.end(), 3, mod_lesser);
     cout << "The lower_bound in v3 for the element with a value of 3 is: "
         << *Result << "." << endl;
 }
 ```
 
-## <a name="make_heap"></a> make_heap
+## <a name="make_heap"></a>make_heap
 
 Belirtilen bir aralıktaki öğeleri ilk öğenin en büyük olduğu ve onun için bir ikili koşula sahip bir sıralama ölçütünün belirtilebildiği bir yığına dönüştürür.
 
@@ -3618,31 +3720,31 @@ template<class RandomAccessIterator, class BinaryPredicate>
 void make_heap(
     RandomAccessIterator first,
     RandomAccessIterator last,
-    BinaryPredicate comp );
+    BinaryPredicate pred );
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*ilk*\
-Yığına dönüştürülmesi aralıktaki ilk öğenin konumunu bulan bir rastgele erişim yineleyicisi.
+*adı*\
+Bir yığına dönüştürülecek aralıktaki ilk öğenin konumunu ele alarak rastgele erişimli bir yineleyici.
 
-*Son*\
-Yığına dönüştürülmesi aralığın son öğesinde geçmiş konumu ele alan bir rastgele erişim yineleyicisi.
+*soyadına*\
+Bir yığına dönüştürülecek aralıktaki son öğeden geçmiş bir konumu ele alarak rastgele erişimli bir yineleyici.
 
-*Comp*\
-Bir öğenin daha az olan algılama tanımlayan kullanıcı tanımlı işlevin doğrulama nesnesi. İkili koşulu, iki bağımsız değişkeni alır ve döndürür **true** karşılanmazsa ve **false** koşullar karşılanırsa.
+*pred*\
+Bir öğenin diğerinden küçük olduğu anlamlı olduğunu tanımlayan Kullanıcı tanımlı koşul işlevi nesnesi. İkili koşul iki bağımsız değişken alır ve memnun olmadığında **true** ve **false** değeri döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yığınlar iki özelliğe sahiptir:
+Heap 'ler iki özelliğe sahiptir:
 
-- İlk öğe her zaman daha büyüktür.
+- İlk öğe her zaman en büyüktür.
 
-- Öğeleri eklenebilir veya Logaritmik süre kaldırıldı.
+- Öğeler, logaritmik bir zamanda eklenebilir veya kaldırılabilir.
 
-Yığınlar öncelikli kuyruklardaki uygulamak için ideal bir yol ve bunlar uygulamasında kullanılır C++ standart kitaplığı kapsayıcı bağdaştırıcısı [priority_queue sınıfı](../standard-library/priority-queue-class.md).
+Heap 'ler, öncelik kuyruklarını uygulamanın ideal bir yoludur ve C++ standart kitaplık kapsayıcı bağdaştırıcısı [priority_queue sınıfının](../standard-library/priority-queue-class.md)uygulamasında kullanılır.
 
-Karmaşıklığı 3 gerektiren doğrusal \* (* Soyadı - *) karşılaştırmalar.
+Karmaşıklık, karşılaştırmalar gerektiren `3 * (last - first)` doğrusal bir değer.
 
 ### <a name="example"></a>Örnek
 
@@ -3655,38 +3757,38 @@ Karmaşıklığı 3 gerektiren doğrusal \* (* Soyadı - *) karşılaştırmalar
 #include <iostream>
 
 int main() {
-   using namespace std;
-   vector <int> v1, v2;
-   vector <int>::iterator Iter1, Iter2;
+    using namespace std;
+    vector<int> v1, v2;
+    vector<int>::iterator Iter1, Iter2;
 
-   int i;
-   for ( i = 0 ; i <= 9 ; i++ )
-      v1.push_back( i );
+    int i;
+    for ( i = 0 ; i <= 9 ; i++ )
+        v1.push_back( i );
 
-   random_shuffle( v1.begin( ), v1.end( ) );
+    random_shuffle( v1.begin( ), v1.end( ) );
 
-   cout << "Vector v1 is ( " ;
-   for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
-      cout << *Iter1 << " ";
-   cout << ")." << endl;
+    cout << "Vector v1 is ( " ;
+    for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
+        cout << *Iter1 << " ";
+    cout << ")." << endl;
 
-   // Make v1 a heap with default less than ordering
-   make_heap ( v1.begin( ), v1.end( ) );
-   cout << "The heaped version of vector v1 is ( " ;
-   for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
-      cout << *Iter1 << " ";
-   cout << ")." << endl;
+    // Make v1 a heap with default less than ordering
+    make_heap ( v1.begin( ), v1.end( ) );
+    cout << "The heaped version of vector v1 is ( " ;
+    for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
+        cout << *Iter1 << " ";
+    cout << ")." << endl;
 
-   // Make v1 a heap with greater than ordering
-   make_heap ( v1.begin( ), v1.end( ), greater<int>( ) );
-   cout << "The greater-than heaped version of v1 is ( " ;
-   for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
-      cout << *Iter1 << " ";
-   cout << ")." << endl;
+    // Make v1 a heap with greater than ordering
+    make_heap ( v1.begin( ), v1.end( ), greater<int>( ) );
+    cout << "The greater-than heaped version of v1 is ( " ;
+    for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
+        cout << *Iter1 << " ";
+    cout << ")." << endl;
 }
 ```
 
-## <a name="max"></a> en fazla
+## <a name="max"></a>Biçimlendir
 
 İki nesneyi karşılaştırır ve ikisinden büyük olanı döndürür, burada sıralama ölçütü ikili bir koşula göre belirtilebilir.
 
@@ -3699,37 +3801,37 @@ template<class Type, class Pr>
 constexpr Type& max(
     const Type& left,
     const Type& right,
-    BinaryPredicate comp);
+    BinaryPredicate pred);
 template<class Type>
 constexpr Type& max (
-    initializer_list<Type> );
+    initializer_list<Type> ilist);
 template<class Type, class Pr>
 constexpr Type& max(
-    initializer_list<Type> ,
-    BinaryPredicate comp);
+    initializer_list<Type> ilist,
+    BinaryPredicate pred);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*\
-İlk Karşılaştırılan iki nesne.
+*tarafta*\
+Karşılaştırılan iki nesnenin ilki.
 
-*sağ*\
-İkinci Karşılaştırılan iki nesne.
+*Right*\
+Karşılaştırılan iki nesnenin ikincisi.
 
-*Comp*\
-İki nesneleri karşılaştırmak için kullanılan bir ikili koşul.
+*pred*\
+İki nesneyi karşılaştırmak için kullanılan bir ikili koşul.
 
-*_IList*\
-Karşılaştırılacak nesneleri içeren bir başlatıcı listesi.
+*liste tümce*\
+Karşılaştırılacak nesneleri içeren Başlatıcı listesi.
 
-### <a name="return-value"></a>Dönüş Değeri
+### <a name="return-value"></a>Dönüş değeri
 
-Hiçbiri büyük değilse iki büyük, nesneleri; Bu durumda, ilk iki nesne döndürür. Bir initializer_list söz konusu olduğunda, en büyük nesneleri listesinde döndürür.
+İki nesnenin daha büyük olması, hiçbiri daha büyük değilse; Bu durumda, iki nesnenin ilki döndürülür. Bir initializer_list söz konusu olduğunda, listedeki nesnelerin en büyük kısmını döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`max` Algoritmasıdır parametre olarak geçirilen nesneleri etmeyle olağan dışı. Çoğu standart C++ Kitaplığı algoritmaları konumu parametre olarak geçirilen yineleyiciler tarafından belirtilen öğelerin bir aralığını üzerinde çalışır. Öğe aralığını üzerinde çalışan bir işlev ihtiyacınız varsa, [max_element](../standard-library/algorithm-functions.md#max_element) yerine. Visual Studio 2017 tanır **constexpr** bir initializer_list aşırı üzerinde.
+`max` Algoritma parametre olarak geçirilme sırasında olağandışı bir şekilde yapılır. Çoğu C++ standart kitaplık algoritmaları, konumu parametre olarak geçirilen yineleyiciler tarafından belirtilen bir dizi öğe üzerinde çalışır. Bir dizi öğe üzerinde çalışan bir işleve ihtiyacınız varsa, bunun yerine [max_element](../standard-library/algorithm-functions.md#max_element) kullanın. Visual Studio 2017, initializer_list alan aşırı yüklemelerin üzerinde **constexpr** 'yi sunar.
 
 ### <a name="example"></a>Örnek
 
@@ -3749,137 +3851,137 @@ ostream& operator<<( ostream& osIn, const CInt& rhs );
 class CInt
 {
 public:
-   CInt( int n = 0 ) : m_nVal( n ){}
-   CInt( const CInt& rhs ) : m_nVal( rhs.m_nVal ){}
-   CInt&   operator=( const CInt& rhs ) {m_nVal =
-   rhs.m_nVal; return *this;}
-   bool operator<( const CInt& rhs ) const
-      {return ( m_nVal < rhs.m_nVal );}
-   friend ostream& operator<<( ostream& osIn, const CInt& rhs );
+    CInt( int n = 0 ) : m_nVal( n ){}
+    CInt( const CInt& rhs ) : m_nVal( rhs.m_nVal ){}
+    CInt&   operator=( const CInt& rhs ) {m_nVal =
+    rhs.m_nVal; return *this;}
+    bool operator<( const CInt& rhs ) const
+        {return ( m_nVal < rhs.m_nVal );}
+    friend ostream& operator<<( ostream& osIn, const CInt& rhs );
 
 private:
-   int m_nVal;
+    int m_nVal;
 };
 
 inline ostream& operator<<( ostream& osIn, const CInt& rhs )
 {
-   osIn << "CInt( " << rhs.m_nVal << " )";
-   return osIn;
+    osIn << "CInt( " << rhs.m_nVal << " )";
+    return osIn;
 }
 
 // Return whether absolute value of elem1 is greater than
 // absolute value of elem2
 bool abs_greater ( int elem1, int elem2 )
 {
-   if ( elem1 < 0 )
-      elem1 = -elem1;
-   if ( elem2 < 0 )
-      elem2 = -elem2;
-   return elem1 < elem2;
+    if ( elem1 < 0 )
+        elem1 = -elem1;
+    if ( elem2 < 0 )
+        elem2 = -elem2;
+    return elem1 < elem2;
 };
 
 int main()
 {
-   int a = 6, b = -7;
-   // Return the integer with the larger absolute value
-   const int& result1 = max(a, b, abs_greater);
-   // Return the larger integer
-   const int& result2 = max(a, b);
+    int a = 6, b = -7;
+    // Return the integer with the larger absolute value
+    const int& result1 = max(a, b, abs_greater);
+    // Return the larger integer
+    const int& result2 = max(a, b);
 
-   cout << "Using integers 6 and -7..." << endl;
-   cout << "The integer with the greater absolute value is: "
-        << result1 << "." << endl;
-   cout << "The integer with the greater value is: "
-        << result2 << "." << endl;
-   cout << endl;
+    cout << "Using integers 6 and -7..." << endl;
+    cout << "The integer with the greater absolute value is: "
+            << result1 << "." << endl;
+    cout << "The integer with the greater value is: "
+            << result2 << "." << endl;
+    cout << endl;
 
-// Comparing the members of an initializer_list
-const int& result3 = max({ a, b });
-const int& result4 = max({ a, b }, abs_greater);
+    // Comparing the members of an initializer_list
+    const int& result3 = max({ a, b });
+    const int& result4 = max({ a, b }, abs_greater);
 
-cout << "Comparing the members of an initializer_list..." << endl;
-cout << "The member with the greater value is: " << result3 << endl;
-cout << "The integer with the greater absolute value is: " << result4 << endl;
+    cout << "Comparing the members of an initializer_list..." << endl;
+    cout << "The member with the greater value is: " << result3 << endl;
+    cout << "The integer with the greater absolute value is: " << result4 << endl;
 
-   // Comparing set containers with elements of type CInt
-   // using the max algorithm
-   CInt c1 = 1, c2 = 2, c3 = 3;
-   set<CInt> s1, s2, s3;
-   set<CInt>::iterator s1_Iter, s2_Iter, s3_Iter;
+    // Comparing set containers with elements of type CInt
+    // using the max algorithm
+    CInt c1 = 1, c2 = 2, c3 = 3;
+    set<CInt> s1, s2, s3;
+    set<CInt>::iterator s1_Iter, s2_Iter, s3_Iter;
 
-   s1.insert ( c1 );
-   s1.insert ( c2 );
-   s2.insert ( c2 );
-   s2.insert ( c3 );
+    s1.insert ( c1 );
+    s1.insert ( c2 );
+    s2.insert ( c2 );
+    s2.insert ( c3 );
 
-   cout << "s1 = (";
-   for ( s1_Iter = s1.begin( ); s1_Iter != --s1.end( ); s1_Iter++ )
-      cout << " " << *s1_Iter << ",";
-   s1_Iter = --s1.end( );
-   cout << " " << *s1_Iter << " )." << endl;
+    cout << "s1 = (";
+    for ( s1_Iter = s1.begin( ); s1_Iter != --s1.end( ); s1_Iter++ )
+        cout << " " << *s1_Iter << ",";
+    s1_Iter = --s1.end( );
+    cout << " " << *s1_Iter << " )." << endl;
 
-   cout << "s2 = (";
-   for ( s2_Iter = s2.begin( ); s2_Iter != --s2.end( ); s2_Iter++ )
-      cout << " " << *s2_Iter << ",";
-   s2_Iter = --s2.end( );
-   cout << " " << *s2_Iter << " )." << endl;
+    cout << "s2 = (";
+    for ( s2_Iter = s2.begin( ); s2_Iter != --s2.end( ); s2_Iter++ )
+        cout << " " << *s2_Iter << ",";
+    s2_Iter = --s2.end( );
+    cout << " " << *s2_Iter << " )." << endl;
 
-   s3 = max ( s1, s2 );
-   cout << "s3 = max ( s1, s2 ) = (";
-   for ( s3_Iter = s3.begin( ); s3_Iter != --s3.end( ); s3_Iter++ )
-      cout << " " << *s3_Iter << ",";
-   s3_Iter = --s3.end( );
-   cout << " " << *s3_Iter << " )." << endl << endl;
+    s3 = max ( s1, s2 );
+    cout << "s3 = max ( s1, s2 ) = (";
+    for ( s3_Iter = s3.begin( ); s3_Iter != --s3.end( ); s3_Iter++ )
+        cout << " " << *s3_Iter << ",";
+    s3_Iter = --s3.end( );
+    cout << " " << *s3_Iter << " )." << endl << endl;
 
-   // Comparing vectors with integer elements using the max algorithm
-   vector <int> v1, v2, v3, v4, v5;
-   vector <int>::iterator Iter1, Iter2, Iter3, Iter4, Iter5;
+    // Comparing vectors with integer elements using the max algorithm
+    vector<int> v1, v2, v3, v4, v5;
+    vector<int>::iterator Iter1, Iter2, Iter3, Iter4, Iter5;
 
-   int i;
-   for ( i = 0 ; i <= 2 ; i++ )
-   {
-      v1.push_back( i );
-   }
+    int i;
+    for ( i = 0 ; i <= 2 ; i++ )
+    {
+        v1.push_back( i );
+    }
 
-   int ii;
-   for ( ii = 0 ; ii <= 2 ; ii++ )
-   {
-      v2.push_back( ii );
-   }
+    int ii;
+    for ( ii = 0 ; ii <= 2 ; ii++ )
+    {
+        v2.push_back( ii );
+    }
 
-   int iii;
-   for ( iii = 0 ; iii <= 2 ; iii++ )
-   {
-      v3.push_back( 2 * iii );
-   }
+    int iii;
+    for ( iii = 0 ; iii <= 2 ; iii++ )
+    {
+        v3.push_back( 2 * iii );
+    }
 
-   cout << "Vector v1 is ( " ;
-   for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
-      cout << *Iter1 << " ";
-   cout << ")." << endl;
+    cout << "Vector v1 is ( " ;
+    for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
+        cout << *Iter1 << " ";
+    cout << ")." << endl;
 
-   cout << "Vector v2 is ( " ;
-   for ( Iter2 = v2.begin( ) ; Iter2 != v2.end( ) ; Iter2++ )
-      cout << *Iter2 << " ";
-   cout << ")." << endl;
+    cout << "Vector v2 is ( " ;
+    for ( Iter2 = v2.begin( ) ; Iter2 != v2.end( ) ; Iter2++ )
+        cout << *Iter2 << " ";
+    cout << ")." << endl;
 
-   cout << "Vector v3 is ( " ;
-   for ( Iter3 = v3.begin( ) ; Iter3 != v3.end( ) ; Iter3++ )
-      cout << *Iter3 << " ";
-   cout << ")." << endl;
+    cout << "Vector v3 is ( " ;
+    for ( Iter3 = v3.begin( ) ; Iter3 != v3.end( ) ; Iter3++ )
+        cout << *Iter3 << " ";
+    cout << ")." << endl;
 
-   v4 = max ( v1, v2 );
-   v5 = max ( v1, v3 );
+    v4 = max ( v1, v2 );
+    v5 = max ( v1, v3 );
 
-   cout << "Vector v4 = max (v1,v2) is ( " ;
-   for ( Iter4 = v4.begin( ) ; Iter4 != v4.end( ) ; Iter4++ )
-      cout << *Iter4 << " ";
-   cout << ")." << endl;
+    cout << "Vector v4 = max (v1,v2) is ( " ;
+    for ( Iter4 = v4.begin( ) ; Iter4 != v4.end( ) ; Iter4++ )
+        cout << *Iter4 << " ";
+    cout << ")." << endl;
 
-   cout << "Vector v5 = max (v1,v3) is ( " ;
-   for ( Iter5 = v5.begin( ) ; Iter5 != v5.end( ) ; Iter5++ )
-      cout << *Iter5 << " ";
-   cout << ")." << endl;
+    cout << "Vector v5 = max (v1,v3) is ( " ;
+    for ( Iter5 = v5.begin( ) ; Iter5 != v5.end( ) ; Iter5++ )
+        cout << *Iter5 << " ";
+    cout << ")." << endl;
 }
 ```
 
@@ -3899,51 +4001,59 @@ Vector v4 = max (v1,v2) is ( 0 1 2 ).
 Vector v5 = max (v1,v3) is ( 0 2 4 ).
 ```
 
-## <a name="max_element"></a> max_element
+## <a name="max_element"></a>max_element
 
 Belirtilen bir aralıktaki en büyük öğenin geçtiği ilk yeri bulur, burada sıralama ölçütü bir ikili koşula göre belirtilebilir.
 
 ```cpp
 template<class ForwardIterator>
-constexpr ForwardIterator max_element(ForwardIterator first, ForwardIterator last );
+constexpr ForwardIterator max_element(
+    ForwardIterator first,
+    ForwardIterator last );
 
-template<class ForwardIterator, class BinaryPredicate>
-constexpr ForwardIterator max_element(ForwardIterator first, ForwardIterator last, BinaryPredicate comp );
+template<class ForwardIterator, class Compare>
+constexpr ForwardIterator max_element(
+    ForwardIterator first,
+    ForwardIterator last,
+    Compare pred );
 
 template<class ExecutionPolicy, class ForwardIterator>
 ForwardIterator max_element(
     ExecutionPolicy&& exec,
-    ForwardIterator first, 
+    ForwardIterator first,
     ForwardIterator last);
 
 template<class ExecutionPolicy, class ForwardIterator, class Compare>
 ForwardIterator max_element(
     ExecutionPolicy&& exec,
-    ForwardIterator first, 
+    ForwardIterator first,
     ForwardIterator last,
-    Compare comp);
+    Compare pred);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*ilk*\
-En büyük öğe için aranacak aralıktaki ilk öğenin konumunu bulan ileriye doğru yineleyici.
+*Exec*\
+Kullanılacak yürütme ilkesi.
 
-*Son*\
-En büyük öğe için aranacak aralıktaki son öğeden sonraki birinci konum ele alan ileriye doğru yineleyici.
+*adı*\
+En büyük öğe için aranacak aralıktaki ilk öğenin konumunu ele alarak ileriye doğru bir yineleyici.
 
-*Comp*\
-Bir öğenin diğerinden daha büyük olan algılama tanımlayan kullanıcı tanımlı işlevin doğrulama nesnesi. İkili koşulu, iki bağımsız değişkeni alır ve döndürmelidir **true** ilk öğe olduğunda ikinci öğe küçüktür ve **false** Aksi takdirde.
+*soyadına*\
+En büyük öğe için Aranmak üzere aralıktaki son öğeden bir önceki konumu ele alarak ileriye doğru bir yineleyici.
 
-### <a name="return-value"></a>Dönüş Değeri
+*pred*\
+Bir öğenin diğerinden küçük olduğu anlamlı olduğunu tanımlayan Kullanıcı tanımlı koşul işlevi nesnesi. Karşılaştırma koşulu iki bağımsız değişken alır ve ilk öğe ikinci öğeden küçük olduğunda **true** , aksi durumda **false** döndürmelidir.
 
-Aralıktaki en büyük öğenin geçtiği ilk yeri konumunu bulan ileriye doğru yineleyici aranır.
+### <a name="return-value"></a>Dönüş değeri
+
+Aranan aralıktaki en büyük öğenin ilk oluşum konumunu ele alarak ileriye doğru bir yineleyici.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Başvurulan aralık geçerli olmalı; Tüm İşaretçiler tekrar başvurulabilir olmalı ve her dizi içinde son konuma ilk konumdan erişilebilmelidir.
+Başvurulan Aralık geçerli olmalıdır; Tüm işaretçiler, her bir sırada bir kez başvurulmalıdır ve en son konum, artırılamadı tarafından ilk kez erişilebilir.
 
-Karmaşıklığı doğrusal: (`last` - `first`) - 1 karşılaştırmaları için boş bir aralık gereklidir.
+Karmaşıklık doğrusal: `(last - first) - 1` boş olmayan bir Aralık için karşılaştırmalar gereklidir.
 
 ### <a name="example"></a>Örnek
 
@@ -3963,91 +4073,91 @@ ostream& operator<<( ostream& osIn, const CInt& rhs );
 class CInt
 {
 public:
-   CInt( int n = 0 ) : m_nVal( n ){}
-   CInt( const CInt& rhs ) : m_nVal( rhs.m_nVal ){}
-   CInt& operator=( const CInt& rhs ) {m_nVal =
-   rhs.m_nVal; return *this;}
-   bool operator<( const CInt& rhs ) const
-      {return ( m_nVal < rhs.m_nVal );}
-   friend ostream& operator<<( ostream& osIn, const CInt& rhs );
+    CInt( int n = 0 ) : m_nVal( n ){}
+    CInt( const CInt& rhs ) : m_nVal( rhs.m_nVal ){}
+    CInt& operator=( const CInt& rhs ) {m_nVal =
+    rhs.m_nVal; return *this;}
+    bool operator<( const CInt& rhs ) const
+        {return ( m_nVal < rhs.m_nVal );}
+    friend ostream& operator<<( ostream& osIn, const CInt& rhs );
 
 private:
-   int m_nVal;
+    int m_nVal;
 };
 
 inline ostream& operator<<(ostream& osIn, const CInt& rhs)
 {
-   osIn << "CInt( " << rhs.m_nVal << " )";
-   return osIn;
+    osIn << "CInt( " << rhs.m_nVal << " )";
+    return osIn;
 }
 
 // Return whether modulus of elem1 is greater than modulus of elem2
 bool mod_lesser ( int elem1, int elem2 )
 {
-   if ( elem1 < 0 )
-      elem1 = - elem1;
-   if ( elem2 < 0 )
-      elem2 = - elem2;
-   return elem1 < elem2;
+    if ( elem1 < 0 )
+        elem1 = - elem1;
+    if ( elem2 < 0 )
+        elem2 = - elem2;
+    return elem1 < elem2;
 };
 
 int main()
 {
-   // Searching a set container with elements of type CInt
-   // for the maximum element
-   CInt c1 = 1, c2 = 2, c3 = -3;
-   set<CInt> s1;
-   set<CInt>::iterator s1_Iter, s1_R1_Iter, s1_R2_Iter;
+    // Searching a set container with elements of type CInt
+    // for the maximum element
+    CInt c1 = 1, c2 = 2, c3 = -3;
+    set<CInt> s1;
+    set<CInt>::iterator s1_Iter, s1_R1_Iter, s1_R2_Iter;
 
-   s1.insert ( c1 );
-   s1.insert ( c2 );
-   s1.insert ( c3 );
+    s1.insert ( c1 );
+    s1.insert ( c2 );
+    s1.insert ( c3 );
 
-   cout << "s1 = (";
-   for ( s1_Iter = s1.begin( ); s1_Iter != --s1.end( ); s1_Iter++ )
-      cout << " " << *s1_Iter << ",";
-   s1_Iter = --s1.end( );
-   cout << " " << *s1_Iter << " )." << endl;
+    cout << "s1 = (";
+    for ( s1_Iter = s1.begin( ); s1_Iter != --s1.end( ); s1_Iter++ )
+        cout << " " << *s1_Iter << ",";
+    s1_Iter = --s1.end( );
+    cout << " " << *s1_Iter << " )." << endl;
 
-   s1_R1_Iter = max_element ( s1.begin( ), s1.end( ) );
+    s1_R1_Iter = max_element ( s1.begin( ), s1.end( ) );
 
-   cout << "The largest element in s1 is: " << *s1_R1_Iter << endl;
-   cout << endl;
+    cout << "The largest element in s1 is: " << *s1_R1_Iter << endl;
+    cout << endl;
 
-   // Searching a vector with elements of type int for the maximum
-   // element under default less than & mod_lesser binary predicates
-   vector <int> v1;
-   vector <int>::iterator v1_Iter, v1_R1_Iter, v1_R2_Iter;
+    // Searching a vector with elements of type int for the maximum
+    // element under default less than & mod_lesser binary predicates
+    vector<int> v1;
+    vector<int>::iterator v1_Iter, v1_R1_Iter, v1_R2_Iter;
 
-   int i;
-   for ( i = 0 ; i <= 3 ; i++ )
-   {
-      v1.push_back( i );
-   }
+    int i;
+    for ( i = 0 ; i <= 3 ; i++ )
+    {
+        v1.push_back( i );
+    }
 
-   int ii;
-   for ( ii = 1 ; ii <= 4 ; ii++ )
-   {
-      v1.push_back( - 2 * ii );
-   }
+    int ii;
+    for ( ii = 1 ; ii <= 4 ; ii++ )
+    {
+        v1.push_back( - 2 * ii );
+    }
 
-   cout << "Vector v1 is ( " ;
-   for ( v1_Iter = v1.begin( ) ; v1_Iter != v1.end( ) ; v1_Iter++ )
-      cout << *v1_Iter << " ";
-   cout << ")." << endl;
+    cout << "Vector v1 is ( " ;
+    for ( v1_Iter = v1.begin( ) ; v1_Iter != v1.end( ) ; v1_Iter++ )
+        cout << *v1_Iter << " ";
+    cout << ")." << endl;
 
-   v1_R1_Iter = max_element ( v1.begin( ), v1.end( ) );
-   v1_R2_Iter = max_element ( v1.begin( ), v1.end( ), mod_lesser);
+    v1_R1_Iter = max_element ( v1.begin( ), v1.end( ) );
+    v1_R2_Iter = max_element ( v1.begin( ), v1.end( ), mod_lesser);
 
-   cout << "The largest element in v1 is: " << *v1_R1_Iter << endl;
-   cout << "The largest element in v1 under the mod_lesser"
-        << "\n binary predicate is: " << *v1_R2_Iter << endl;
+    cout << "The largest element in v1 is: " << *v1_R1_Iter << endl;
+    cout << "The largest element in v1 under the mod_lesser"
+            << "\n binary predicate is: " << *v1_R2_Iter << endl;
 }
 ```
 
-## <a name="merge"></a> Birleştirme
+## <a name="merge"></a>birleþtirmek
 
-İki sıralanmış kaynak aralıktaki tüm öğeleri, burada sıralama ölçütü bir ikili koşula göre belirtilebilir bir tek, sıralanmış aralıkta birleştirir.
+İki sıralanmış kaynak aralığından tüm öğeleri, sıralama ölçütünün bir ikili koşula göre belirtilebileceği tek, sıralanmış bir hedef aralıkla birleştirir.
 
 ```cpp
 template<class InputIterator1, class InputIterator2, class OutputIterator>
@@ -4058,76 +4168,77 @@ OutputIterator merge(
     InputIterator2 last2,
     OutputIterator result );
 
-template<class InputIterator1, class InputIterator2, class OutputIterator, class BinaryPredicate>
+template<class InputIterator1, class InputIterator2, class OutputIterator, class Compare>
 OutputIterator merge(
     InputIterator1 first1,
     InputIterator1 last1,
     InputIterator2 first2,
     InputIterator2 last2,
     OutputIterator result,
-    BinaryPredicate comp );
-    
-template<class ExecutionPolicy, class ForwardIterator1, class ForwardIterator2,
-class ForwardIterator>
+    Compare pred );
+
+template<class ExecutionPolicy, class ForwardIterator1, class ForwardIterator2, class ForwardIterator>
 ForwardIterator merge(
     ExecutionPolicy&& exec,
-    ForwardIterator1 first1, 
+    ForwardIterator1 first1,
     ForwardIterator1 last1,
-    ForwardIterator2 first2, 
+    ForwardIterator2 first2,
     ForwardIterator2 last2,
     ForwardIterator result);
 
-template<class ExecutionPolicy, class ForwardIterator1, class ForwardIterator2,
-class ForwardIterator, class Compare>
+template<class ExecutionPolicy, class ForwardIterator1, class ForwardIterator2, class ForwardIterator, class Compare>
 ForwardIterator merge(
     ExecutionPolicy&& exec,
-    ForwardIterator1 first1, 
+    ForwardIterator1 first1,
     ForwardIterator1 last1,
-    ForwardIterator2 first2, 
+    ForwardIterator2 first2,
     ForwardIterator2 last2,
-    ForwardIterator result, 
-    Compare comp);
+    ForwardIterator result,
+    Compare pred);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
+*Exec*\
+Kullanılacak yürütme ilkesi.
+
 *first1*\
-Birleştirilir ve tek bir aralığa sıralanmış için iki sıralanmış kaynak aralıktaki ilk ilk öğenin konumunu ele alan bir giriş yineleyici.
+Bir giriş yineleyicisi, birleştirilmiş iki kaynak aralıktaki ilk öğenin, birleştirilmek ve tek bir aralığa göre sıralanarak konumunu ele alıyor.
 
 *last1*\
-Bir önceki öğenin konumunu son öğeden ilk iki sıralanmış kaynak aralığa birleştirilir ve tek bir aralığa sıralanmış için ele alan giriş yineleyici.
+Bir giriş yineleyicisi, birleştirilmiş iki kaynak aralığın ilki olan son öğeden sonra tek bir aralığa göre sıralanarak konumunu ele alıyor.
 
 *first2*\
-Birleştirilir ve tek bir aralığa sıralanmış için iki ardışık sıralanmış kaynak aralığa saniye içinde ilk öğenin konumunu ele alan giriş yineleyici.
+Art arda iki sıralı kaynak aralığının ikinci kısmında yer aldığı ve tek bir aralığa sıralanmış bir giriş Yineleyici.
 
-*Soyadı2*\
-Birleştirilir ve tek bir aralığa sıralanmış için iki ardışık sıralanmış kaynak aralığa saniye olarak geçen son öğe konumu ele alan bir giriş yineleyici.
+*last2*\
+Art arda iki sıralı kaynak aralığının ikinci kısmında son öğeden geçen ve tek bir aralığa sıralanmış bir giriş Yineleyici.
 
-*Sonuç*\
-Tek bir sıralanmış aralıkta birleştirilmek üzere iki kaynak aralıktaki olduğu hedef aralıktaki ilk öğenin konumunu bulan çıktı yineleyici.
+*kaynaklanan*\
+İkinci kaynak aralıklarının tek bir sıralanmış aralıkta birleştirileceği hedef aralıktaki ilk öğenin konumunu ele aldığı çıkış Yineleyici.
 
-*Comp*\
-Bir öğenin diğerinden daha büyük olan algılama tanımlayan kullanıcı tanımlı işlevin doğrulama nesnesi. İkili koşulu, iki bağımsız değişkeni alır ve döndürmelidir **true** ilk öğe olduğunda ikinci öğe küçüktür ve **false** Aksi takdirde.
+*pred*\
+Bir öğenin diğerinden küçük olduğu anlamlı olduğunu tanımlayan Kullanıcı tanımlı koşul işlevi nesnesi. Karşılaştırma koşulu iki bağımsız değişken alır ve ilk öğe ikinci öğeden küçük olduğunda **true** , değilse **false** döndürmelidir.
 
-### <a name="return-value"></a>Dönüş Değeri
+### <a name="return-value"></a>Dönüş değeri
 
-Sıralanmış hedef aralığın son öğesinde geçmiş konumu ele alan çıkış yineleyici.
+Sıralanmış hedef aralıktaki son öğeden sonraki konumu ele alarak çıkış Yineleyici.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Başvurulan sıralanmış kaynak aralık geçerli olmalıdır; Tüm İşaretçiler tekrar başvurulabilir olmalı ve her dizi içinde son konuma ilk konumdan erişilebilir olmalıdır erişilebilmelidir.
+Başvurulan sıralanmış kaynak aralıkları geçerli olmalıdır; Tüm işaretçilerin erişilebilir olması gerekir ve her bir dizide en son konum artırılamadı tarafından ilk kez ulaşılabilir olmalıdır.
 
-Hedef aralığı ya da kaynak aralıkları çakışmamalı ve hedef aralığı içerecek kadar büyük olmalıdır.
+Hedef Aralık, kaynak aralıklarından biriyle çakışmamalıdır ve hedef aralığı içerecek kadar büyük olmalıdır.
 
-Sıralanmış kaynak aralığa her uygulama için bir önkoşul olarak düzenlenmelidir `merge` olarak aynı sıralamaya uygun şekilde algoritmasıdır birleştirilmiş aralıkları Sıralama algoritması tarafından kullanılacak.
+Sıralanmış kaynak aralıklarının her biri, algoritma tarafından Birleşik aralıkları sıralamak için kullanılan aynı sıralamaya uygun `merge` olarak, algoritmanın uygulamasına bir ön koşul olarak düzenlenmelidir.
 
-Her aralık içindeki öğelerin göreli sırasını hedef aralığı korunduğu kalıcı bir işlemdir. Kaynak aralıkları algoritması tarafından değiştirilmez `merge`.
+Her aralıktaki öğelerin göreli sırası hedef aralıkta korunduğu için işlem kararlı değildir. Kaynak aralıkları algoritma `merge`tarafından değiştirilmez.
 
-Giriş Yineleyicilerin değer türlerinin daha küçük olması-sıralanmalıdır daha karşılaştırılabilir, iki öğe belirtildiğinde, (yani birinin diğerinden diğerinden daha küçük olmadığı anlamında) eşit veya birinin diğerinden küçük olduğu belirlenebilir. Bu, denk olmayan öğeler arasında bir sıralamaya neden olur. Hem kaynak aralıklardaki eşdeğer öğelerin olduğunda, ilk aralıktaki öğeleri hedef aralığında ikinci aralığın öğelerden koyun.
+Giriş yineleyicilerinin değer türlerinin sıralanabilmesi için kıyasla daha az olması gerekir, böylece iki öğe söz konusu olduğunda, eşdeğer oldukları (Yani bunlardan daha küçük olmayan) ya da birinin diğerinin daha küçük olduğu belirlenebilir. Bu, denk olmayan öğeler arasında bir sıralamaya neden olur. Her iki kaynak aralığında da eşdeğer öğeler olduğunda, ilk aralıktaki öğeler, hedef aralıktaki ikinci kaynak aralığından öğeden önce gelmelidir.
 
-Algoritmanın karmaşıklığı, en fazla ile doğrusal (*last1* - *first1*)-(*Soyadı2* - *first2*) - 1 karşılaştırmalar.
+Algoritmanın karmaşıklığı, en çok `(last1 - first1) - (last2 - first2) - 1` karşılaştırmalar ile doğrusal olarak belirlenir.
 
-[Listesinde sınıfı](../standard-library/list-class.md) bir üye işlev "iki listenin öğelerini birleştirmek için Birleştir" sağlar.
+[Liste sınıfı](../standard-library/list-class.md) , iki listenin öğelerini birleştirmek için "Merge" üye işlevini sağlar.
 
 ### <a name="example"></a>Örnek
 
@@ -4141,105 +4252,105 @@ Algoritmanın karmaşıklığı, en fazla ile doğrusal (*last1* - *first1*)-(*S
 
 // Return whether modulus of elem1 is less than modulus of elem2
 bool mod_lesser ( int elem1, int elem2 ) {
-   if (elem1 < 0)
-      elem1 = - elem1;
-   if (elem2 < 0)
-      elem2 = - elem2;
-   return elem1 < elem2;
+    if (elem1 < 0)
+        elem1 = - elem1;
+    if (elem2 < 0)
+        elem2 = - elem2;
+    return elem1 < elem2;
 }
 
 int main() {
-   using namespace std;
-   vector <int> v1a, v1b, v1 ( 12 );
-   vector <int>::iterator Iter1a,  Iter1b, Iter1;
+    using namespace std;
+    vector<int> v1a, v1b, v1 ( 12 );
+    vector<int>::iterator Iter1a, Iter1b, Iter1;
 
-   // Constructing vector v1a and v1b with default less than ordering
-   int i;
-   for ( i = 0 ; i <= 5 ; i++ )
-      v1a.push_back(  i );
+    // Constructing vector v1a and v1b with default less than ordering
+    int i;
+    for ( i = 0 ; i <= 5 ; i++ )
+        v1a.push_back( i );
 
-   int ii;
-   for ( ii =-5 ; ii <= 0 ; ii++ )
-      v1b.push_back(  ii  );
+    int ii;
+    for ( ii =-5 ; ii <= 0 ; ii++ )
+        v1b.push_back( ii );
 
-   cout << "Original vector v1a with range sorted by the\n "
-        << "binary predicate less than is  v1a = ( " ;
-   for ( Iter1a = v1a.begin( ) ; Iter1a != v1a.end( ) ; Iter1a++ )
-      cout << *Iter1a << " ";
-   cout << ")." << endl;
+    cout << "Original vector v1a with range sorted by the\n "
+            << "binary predicate less than is v1a = ( " ;
+    for ( Iter1a = v1a.begin( ) ; Iter1a != v1a.end( ) ; Iter1a++ )
+        cout << *Iter1a << " ";
+    cout << ")." << endl;
 
-   cout << "Original vector v1b with range sorted by the\n "
-        << "binary predicate less than is  v1b = ( " ;
-   for ( Iter1b = v1b.begin( ) ; Iter1b != v1b.end( ) ; Iter1b++ )
-      cout << *Iter1b << " ";
-   cout << ")." << endl;
+    cout << "Original vector v1b with range sorted by the\n "
+            << "binary predicate less than is v1b = ( " ;
+    for ( Iter1b = v1b.begin( ) ; Iter1b != v1b.end( ) ; Iter1b++ )
+        cout << *Iter1b << " ";
+    cout << ")." << endl;
 
-   // Constructing vector v2 with ranges sorted by greater
-   vector <int> v2a ( v1a ) , v2b ( v1b ) ,  v2 ( v1 );
-   vector <int>::iterator Iter2a,  Iter2b, Iter2;
-   sort ( v2a.begin( ), v2a.end( ), greater<int>( ) );
-   sort ( v2b.begin( ), v2b.end( ), greater<int>( ) );
+    // Constructing vector v2 with ranges sorted by greater
+    vector<int> v2a ( v1a ) , v2b ( v1b ) , v2 ( v1 );
+    vector<int>::iterator Iter2a, Iter2b, Iter2;
+    sort ( v2a.begin( ), v2a.end( ), greater<int>( ) );
+    sort ( v2b.begin( ), v2b.end( ), greater<int>( ) );
 
-   cout << "Original vector v2a with range sorted by the\n "
-        <<  "binary predicate greater is   v2a =  ( " ;
-   for ( Iter2a = v2a.begin( ) ; Iter2a != v2a.end( ) ; Iter2a++ )
-      cout << *Iter2a << " ";
-   cout << ")." << endl;
+    cout << "Original vector v2a with range sorted by the\n "
+            << "binary predicate greater is   v2a = ( " ;
+    for ( Iter2a = v2a.begin( ) ; Iter2a != v2a.end( ) ; Iter2a++ )
+        cout << *Iter2a << " ";
+    cout << ")." << endl;
 
-   cout << "Original vector v2b with range sorted by the\n "
-        <<  "binary predicate greater is   v2b =  ( " ;
-   for ( Iter2b = v2b.begin( ) ; Iter2b != v2b.end( ) ; Iter2b++ )
-      cout << *Iter2b << " ";
-   cout << ")." << endl;
+    cout << "Original vector v2b with range sorted by the\n "
+            << "binary predicate greater is   v2b = ( " ;
+    for ( Iter2b = v2b.begin( ) ; Iter2b != v2b.end( ) ; Iter2b++ )
+        cout << *Iter2b << " ";
+    cout << ")." << endl;
 
-   // Constructing vector v3 with ranges sorted by mod_lesser
-   vector <int> v3a ( v1a ), v3b ( v1b ) ,  v3 ( v1 );
-   vector <int>::iterator Iter3a,  Iter3b, Iter3;
-   sort ( v3a.begin( ), v3a.end( ), mod_lesser );
-   sort ( v3b.begin( ), v3b.end( ), mod_lesser );
+    // Constructing vector v3 with ranges sorted by mod_lesser
+    vector<int> v3a( v1a ), v3b( v1b ) , v3( v1 );
+    vector<int>::iterator Iter3a, Iter3b, Iter3;
+    sort ( v3a.begin( ), v3a.end( ), mod_lesser );
+    sort ( v3b.begin( ), v3b.end( ), mod_lesser );
 
-   cout << "Original vector v3a with range sorted by the\n "
-        << "binary predicate mod_lesser is   v3a =  ( " ;
-   for ( Iter3a = v3a.begin( ) ; Iter3a != v3a.end( ) ; Iter3a++ )
-      cout << *Iter3a << " ";
-   cout << ")." << endl;
+    cout << "Original vector v3a with range sorted by the\n "
+            << "binary predicate mod_lesser is   v3a = ( " ;
+    for ( Iter3a = v3a.begin( ) ; Iter3a != v3a.end( ) ; Iter3a++ )
+        cout << *Iter3a << " ";
+    cout << ")." << endl;
 
-   cout << "Original vector v3b with range sorted by the\n "
-        << "binary predicate mod_lesser is   v3b =  ( " ;
-   for ( Iter3b = v3b.begin( ) ; Iter3b != v3b.end( ) ; Iter3b++ )
-      cout << *Iter3b << " ";
-   cout << ")." << endl;
+    cout << "Original vector v3b with range sorted by the\n "
+            << "binary predicate mod_lesser is   v3b = ( " ;
+    for ( Iter3b = v3b.begin( ) ; Iter3b != v3b.end( ) ; Iter3b++ )
+        cout << *Iter3b << " ";
+    cout << ")." << endl;
 
-   // To merge inplace in ascending order with default binary
-   // predicate less <int>( )
-   merge ( v1a.begin( ), v1a.end( ), v1b.begin( ), v1b.end( ), v1.begin( ) );
-   cout << "Merged inplace with default order,\n vector v1mod =  ( " ;
-   for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
-      cout << *Iter1 << " ";
-   cout << ")." << endl;
+    // To merge inplace in ascending order with default binary
+    // predicate less<int>( )
+    merge ( v1a.begin( ), v1a.end( ), v1b.begin( ), v1b.end( ), v1.begin( ) );
+    cout << "Merged inplace with default order,\n vector v1mod = ( " ;
+    for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
+        cout << *Iter1 << " ";
+    cout << ")." << endl;
 
-   // To merge inplace in descending order, specify binary
-   // predicate greater<int>( )
-   merge ( v2a.begin( ), v2a.end( ), v2b.begin( ), v2b.end( ),
-       v2.begin( ),  greater <int>( ) );
-   cout << "Merged inplace with binary predicate greater specified,\n "
-        << "vector v2mod  = ( " ;
-   for ( Iter2 = v2.begin( ) ; Iter2 != v2.end( ) ; Iter2++ )
-      cout << *Iter2 << " ";
-   cout << ")." << endl;
+    // To merge inplace in descending order, specify binary
+    // predicate greater<int>( )
+    merge ( v2a.begin( ), v2a.end( ), v2b.begin( ), v2b.end( ),
+        v2.begin( ), greater<int>( ) );
+    cout << "Merged inplace with binary predicate greater specified,\n "
+            << "vector v2mod = ( " ;
+    for ( Iter2 = v2.begin( ) ; Iter2 != v2.end( ) ; Iter2++ )
+        cout << *Iter2 << " ";
+    cout << ")." << endl;
 
-   // Applying A user-defined (UD) binary predicate mod_lesser
-   merge ( v3a.begin( ), v3a.end( ), v3b.begin( ), v3b.end( ),
-       v3.begin( ),  mod_lesser );
-   cout << "Merged inplace with binary predicate mod_lesser specified,\n "
-        << "vector v3mod  = ( " ; ;
-   for ( Iter3 = v3.begin( ) ; Iter3 != v3.end( ) ; Iter3++ )
-      cout << *Iter3 << " ";
-   cout << ")." << endl;
+    // Applying A user-defined (UD) binary predicate mod_lesser
+    merge ( v3a.begin( ), v3a.end( ), v3b.begin( ), v3b.end( ),
+        v3.begin( ), mod_lesser );
+    cout << "Merged inplace with binary predicate mod_lesser specified,\n "
+            << "vector v3mod = ( " ; ;
+    for ( Iter3 = v3.begin( ) ; Iter3 != v3.end( ) ; Iter3++ )
+        cout << *Iter3 << " ";
+    cout << ")." << endl;
 }
 ```
 
-## <a name="min"></a> Min
+## <a name="min"></a>Min
 
 İki nesneyi karşılaştırır ve ikisinden küçük olanı döndürür, burada sıralama ölçütü ikili bir koşula göre belirtilebilir.
 
@@ -4248,41 +4359,44 @@ template<class Type>
 constexpr const Type& min(
     const Type& left,
     const Type& right);
+
 template<class Type, class Pr>
 constexpr const Type& min(
     const Type& left,
     const Type& right,
-    BinaryPredicate comp);
+    BinaryPredicate pred);
+
 template<class Type>
 constexpr Type min(
-    initializer_list<Type> );
+    initializer_list<Type> ilist);
+
 template<class Type, class Pr>
 constexpr Type min(
-    initializer_list<Type>,
-    BinaryPredicate comp);
+    initializer_list<Type> ilist,
+    BinaryPredicate pred);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*\
-İlk Karşılaştırılan iki nesne.
+*tarafta*\
+Karşılaştırılan iki nesnenin ilki.
 
-*sağ*\
-İkinci Karşılaştırılan iki nesne.
+*Right*\
+Karşılaştırılan iki nesnenin ikincisi.
 
-*Comp*\
-İki nesneleri karşılaştırmak için kullanılan bir ikili koşul.
+*pred*\
+İki nesneyi karşılaştırmak için kullanılan bir ikili koşul.
 
-*_IList*\
-Karşılaştırılacak üyeleri içeren initializer_list.
+*liste tümce*\
+`initializer_list` Karşılaştırılacak üyeleri içeren.
 
-### <a name="return-value"></a>Dönüş Değeri
+### <a name="return-value"></a>Dönüş değeri
 
-Hiçbiri daha az olmadığı sürece ikisinden küçük olanı, nesneleri; Bu durumda, ilk iki nesne döndürür. Bir initializer_list söz konusu olduğunda, en az nesneleri listesinde döndürür.
+İki nesnenin daha küçük olması, ikisi de değilse; Bu durumda, iki nesnenin ilki döndürülür. Bir `initializer_list`durumunda, listedeki nesnelerin en az birini döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`min` Algoritmasıdır parametre olarak geçirilen nesneleri etmeyle olağan dışı. Çoğu standart C++ Kitaplığı algoritmaları konumu parametre olarak geçirilen yineleyiciler tarafından belirtilen öğelerin bir aralığını üzerinde çalışır. Öğe aralığını kullanan bir işlev ihtiyacınız varsa, [min_element](../standard-library/algorithm-functions.md#min_element). [constexpr](../cpp/constexpr-cpp.md) üzerinde etkin `initializer_list` Visual Studio 2017'de aşırı yüklemeleri.
+`min` Algoritma parametre olarak geçirilme sırasında olağandışı bir şekilde yapılır. Çoğu C++ standart kitaplık algoritmaları, konumu parametre olarak geçirilen yineleyiciler tarafından belirtilen bir dizi öğe üzerinde çalışır. Bir dizi öğe kullanan bir işleve ihtiyacınız varsa, [min_element](../standard-library/algorithm-functions.md#min_element)kullanın. [](../cpp/constexpr-cpp.md) Visual Studio 2017 ' deki `initializer_list` aşırı yüklemeler üzerinde constexpr etkinleştirildi.
 
 ### <a name="example"></a>Örnek
 
@@ -4317,7 +4431,7 @@ private:
 inline ostream& operator<<( ostream& osIn, const CInt& rhs )
 {
     osIn << "CInt( " << rhs.m_nVal << " )";
-       return osIn;
+    return osIn;
 }
 
 // Return whether modulus of elem1 is less than modulus of elem2
@@ -4344,7 +4458,7 @@ int main()
         << result2 << "." << endl;
     cout << endl;
 
-// Comparing the members of an initializer_list
+    // Comparing the members of an initializer_list
     const int& result3 = min({ a, c });
     const int& result4 = min({ a, b }, mod_lesser);
 
@@ -4355,7 +4469,7 @@ int main()
     cout << endl;
 
     // Comparing set containers with elements of type CInt
-       // using the min algorithm
+    // using the min algorithm
     CInt c1 = 1, c2 = 2, c3 = 3;
     set<CInt> s1, s2, s3;
     set<CInt>::iterator s1_Iter, s2_Iter, s3_Iter;
@@ -4385,8 +4499,8 @@ int main()
     cout << " " << *s3_Iter << " )." << endl << endl;
 
     // Comparing vectors with integer elements using min algorithm
-    vector <int> v1, v2, v3, v4, v5;
-    vector <int>::iterator Iter1, Iter2, Iter3, Iter4, Iter5;
+    vector<int> v1, v2, v3, v4, v5;
+    vector<int>::iterator Iter1, Iter2, Iter3, Iter4, Iter5;
 
     int i;
     for ( i = 0 ; i <= 2 ; i++ )
@@ -4451,54 +4565,59 @@ Vector v4 = min ( v1,v2 ) is ( 0 1 2 ).
 Vector v5 = min ( v1,v3 ) is ( 0 1 2 ).
 ```
 
-## <a name="min_element"></a> min_element
+## <a name="min_element"></a>min_element
 
 Belirtilen bir aralıktaki en küçük öğenin geçtiği ilk yeri bulur, burada sıralama ölçütü bir ikili koşula göre belirtilebilir.
 
 ```cpp
 template<class ForwardIterator>
-constexpr ForwardIterator min_element(ForwardIterator first, ForwardIterator last );
+constexpr ForwardIterator min_element(
+    ForwardIterator first,
+    ForwardIterator last );
 
-template<class ForwardIterator, class BinaryPredicate>
+template<class ForwardIterator, class Compare>
 constexpr ForwardIterator min_element(
     ForwardIterator first,
     ForwardIterator last,
-    BinaryPredicate comp);
+    Compare pred);
 
 template<class ExecutionPolicy, class ForwardIterator>
 ForwardIterator min_element(
     ExecutionPolicy&& exec,
-    ForwardIterator first, 
+    ForwardIterator first,
     ForwardIterator last);
 
 template<class ExecutionPolicy, class ForwardIterator, class Compare>
 ForwardIterator min_element(
     ExecutionPolicy&& exec,
-    ForwardIterator first, 
+    ForwardIterator first,
     ForwardIterator last,
-    Compare comp);
+    Compare pred);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*ilk*\
-En küçük öğe için aranacak aralıktaki ilk öğenin konumunu bulan ileriye doğru yineleyici.
+*Exec*\
+Kullanılacak yürütme ilkesi.
 
-*Son*\
-En küçük öğe için aranacak aralıktaki son öğeden sonraki birinci konum ele alan ileriye doğru yineleyici.
+*adı*\
+En küçük öğe için aranacak aralıktaki ilk öğenin konumunu ele alarak ileriye doğru bir yineleyici.
 
-*Comp*\
-Bir öğenin diğerinden daha büyük olan algılama tanımlayan kullanıcı tanımlı işlevin doğrulama nesnesi. İkili koşulu, iki bağımsız değişkeni alır ve döndürmelidir **true** ilk öğe olduğunda ikinci öğe küçüktür ve **false** Aksi takdirde.
+*soyadına*\
+En küçük öğe için Aranmak üzere aralıktaki son öğeden bir önceki konumu ele alarak ileriye doğru bir yineleyici.
 
-### <a name="return-value"></a>Dönüş Değeri
+*pred*\
+Bir öğenin diğerinden küçük olduğu anlamlı olduğunu tanımlayan Kullanıcı tanımlı koşul işlevi nesnesi. Karşılaştırma koşulu iki bağımsız değişken alır ve ilk öğe ikinci öğeden küçük olduğunda **true** , değilse **false** döndürmelidir.
 
-Aralıktaki en küçük öğenin geçtiği ilk yeri konumunu bulan ileriye doğru yineleyici aranır.
+### <a name="return-value"></a>Dönüş değeri
+
+Aranan aralıktaki en küçük öğenin ilk oluşum konumunu ele alarak ileriye doğru bir yineleyici.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Başvurulan aralık geçerli olmalı; Tüm İşaretçiler tekrar başvurulabilir olmalı ve her dizi içinde son konuma ilk konumdan erişilebilmelidir.
+Başvurulan Aralık geçerli olmalıdır; Tüm işaretçiler, her bir sırada bir kez başvurulmalıdır ve en son konum, artırılamadı tarafından ilk kez erişilebilir.
 
-Karmaşıklığı doğrusal: (`last` - `first`) - 1 karşılaştırmaları için boş bir aralık gereklidir.
+Karmaşıklık doğrusal: `(last - first) - 1` boş olmayan bir Aralık için karşılaştırmalar gereklidir.
 
 ### <a name="example"></a>Örnek
 
@@ -4518,84 +4637,84 @@ ostream& operator<<( ostream& osIn, const CInt& rhs );
 class CInt
 {
 public:
-   CInt( int n = 0 ) : m_nVal( n ){}
-   CInt( const CInt& rhs ) : m_nVal( rhs.m_nVal ){}
-   CInt& operator=( const CInt& rhs ) {m_nVal =
-   rhs.m_nVal; return *this;}
-   bool operator<( const CInt& rhs ) const
-      {return ( m_nVal < rhs.m_nVal );}
-   friend ostream& operator<<( ostream& osIn, const CInt& rhs );
+    CInt( int n = 0 ) : m_nVal( n ){}
+    CInt( const CInt& rhs ) : m_nVal( rhs.m_nVal ){}
+    CInt& operator=( const CInt& rhs ) {m_nVal =
+    rhs.m_nVal; return *this;}
+    bool operator<( const CInt& rhs ) const
+        {return ( m_nVal < rhs.m_nVal );}
+    friend ostream& operator<<( ostream& osIn, const CInt& rhs );
 
 private:
-   int m_nVal;
+    int m_nVal;
 };
 
 inline ostream& operator<<( ostream& osIn, const CInt& rhs )
 {
-   osIn << "CInt( " << rhs.m_nVal << " )";
-   return osIn;
+    osIn << "CInt( " << rhs.m_nVal << " )";
+    return osIn;
 }
 
 // Return whether modulus of elem1 is less than modulus of elem2
 bool mod_lesser ( int elem1, int elem2 )
 {
-   if ( elem1 < 0 )
-      elem1 = - elem1;
-   if ( elem2 < 0 )
-      elem2 = - elem2;
-   return elem1 < elem2;
+    if ( elem1 < 0 )
+        elem1 = - elem1;
+    if ( elem2 < 0 )
+        elem2 = - elem2;
+    return elem1 < elem2;
 };
 
 int main()
 {
-   // Searching a set container with elements of type CInt
-   // for the minimum element
-   CInt c1 = 1, c2 = 2, c3 = -3;
-   set<CInt> s1;
-   set<CInt>::iterator s1_Iter, s1_R1_Iter, s1_R2_Iter;
+    // Searching a set container with elements of type CInt
+    // for the minimum element
+    CInt c1 = 1, c2 = 2, c3 = -3;
+    set<CInt> s1;
+    set<CInt>::iterator s1_Iter, s1_R1_Iter, s1_R2_Iter;
 
-   s1.insert ( c1 );
-   s1.insert ( c2 );
-   s1.insert ( c3 );
+    s1.insert ( c1 );
+    s1.insert ( c2 );
+    s1.insert ( c3 );
 
-   cout << "s1 = (";
-   for ( s1_Iter = s1.begin( ); s1_Iter != --s1.end( ); s1_Iter++ )
-      cout << " " << *s1_Iter << ",";
-   s1_Iter = --s1.end( );
-   cout << " " << *s1_Iter << " )." << endl;
+    cout << "s1 = (";
+    for ( s1_Iter = s1.begin( ); s1_Iter != --s1.end( ); s1_Iter++ )
+        cout << " " << *s1_Iter << ",";
+    s1_Iter = --s1.end( );
+    cout << " " << *s1_Iter << " )." << endl;
 
-   s1_R1_Iter = min_element ( s1.begin( ), s1.end( ) );
+    s1_R1_Iter = min_element ( s1.begin( ), s1.end( ) );
 
-   cout << "The smallest element in s1 is: " << *s1_R1_Iter << endl;
-   cout << endl;
+    cout << "The smallest element in s1 is: " << *s1_R1_Iter << endl;
+    cout << endl;
 
-   // Searching a vector with elements of type int for the maximum
-   // element under default less than & mod_lesser binary predicates
-   vector <int> v1;
-   vector <int>::iterator v1_Iter, v1_R1_Iter, v1_R2_Iter;
+    // Searching a vector with elements of type int for the maximum
+    // element under default less than & mod_lesser binary predicates
+    vector<int> v1;
+    vector<int>::iterator v1_Iter, v1_R1_Iter, v1_R2_Iter;
 
-   int i;
-   for ( i = 0 ; i <= 3 ; i++ )
-   {
-      v1.push_back( i );
-   }
+    int i;
+    for ( i = 0 ; i <= 3 ; i++ )
+    {
+        v1.push_back( i );
+    }
 
-   int ii;
-   for ( ii = 1 ; ii <= 4 ; ii++ )
-   {
-      v1.push_back( - 2 * ii );
-   }
+    int ii;
+    for ( ii = 1 ; ii <= 4 ; ii++ )
+    {
+        v1.push_back( - 2 * ii );
+    }
 
-   cout << "Vector v1 is ( " ;
-   for ( v1_Iter = v1.begin( ) ; v1_Iter != v1.end( ) ; v1_Iter++ )
-      cout << *v1_Iter << " ";
-   cout << ")." << endl;
+    cout << "Vector v1 is ( " ;
+    for ( v1_Iter = v1.begin( ) ; v1_Iter != v1.end( ) ; v1_Iter++ )
+        cout << *v1_Iter << " ";
+    cout << ")." << endl;
 
-   v1_R1_Iter = min_element ( v1.begin( ), v1.end( ) );
-   v1_R2_Iter = min_element ( v1.begin( ), v1.end( ), mod_lesser);
+    v1_R1_Iter = min_element ( v1.begin( ), v1.end( ) );
+    v1_R2_Iter = min_element ( v1.begin( ), v1.end( ), mod_lesser);
 
-   cout << "The smallest element in v1 is: " << *v1_R1_Iter << endl;
-   cout << "The smallest element in v1 under the mod_lesser"
+    cout << "The smallest element in v1 is: " << *v1_R1_Iter << endl;
+    cout << "The smallest element in v1 under the mod_lesser"
         << "\n binary predicate is: " << *v1_R2_Iter << endl;
 }
 ```
@@ -4610,227 +4729,229 @@ The smallest element in v1 under the mod_lesser
 binary predicate is: 0
 ```
 
-## <a name="minmax_element"></a> minmax_element
+## <a name="minmax_element"></a>minmax_element
 
-Tarafından gerçekleştirilen işi yapar `min_element` ve `max_element` tek bir çağrıdaki.
+`min_element` Ve`max_element` tek bir çağrıda gerçekleştirilen işleri gerçekleştirir.
 
 ```cpp
 template<class ForwardIterator>
 constexpr pair<ForwardIterator, ForwardIterator> minmax_element(
     ForwardIterator first,
-    ForwardIterator Last);
-template<class ForwardIterator, class BinaryPredicate>
+    ForwardIterator last);
+
+template<class ForwardIterator, class Compare>
 constexpr pair<ForwardIterator, ForwardIterator> minmax_element(
-    ForwardIterator  first,
-    ForwardIterator Last,
-    BinaryPredicate  comp);
-    
+    ForwardIterator first,
+    ForwardIterator last,
+    Compare pred);
+
 template<class ExecutionPolicy, class ForwardIterator>
-pair<ForwardIterator, ForwardIterator>
-minmax_element(
+pair<ForwardIterator, ForwardIterator> minmax_element(
     ExecutionPolicy&& exec,
-    ForwardIterator first, 
+    ForwardIterator first,
     ForwardIterator last);
 
 template<class ExecutionPolicy, class ForwardIterator, class Compare>
-pair<ForwardIterator, ForwardIterator>
-minmax_element(
+pair<ForwardIterator, ForwardIterator> minmax_element(
     ExecutionPolicy&& exec,
-    ForwardIterator first, 
-    ForwardIterator last, 
-    Compare comp);
+    ForwardIterator first,
+    ForwardIterator last,
+    Compare pred);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*ilk*\
-Bir aralık başlangıcını gösteren bir ileriye doğru yineleyici.
+*Exec*\
+Kullanılacak yürütme ilkesi.
 
-*Son*\
-Bir aralığın sonunu gösteren bir ileriye doğru yineleyici.
+*adı*\
+Bir aralığın başlangıcını gösteren bir ileri Yineleyici.
 
-*Comp*\
-Sipariş öğeleri için kullanılan isteğe bağlı bir test.
+*soyadına*\
+Bir aralığın sonunu gösteren bir ileri Yineleyici.
 
-### <a name="return-value"></a>Dönüş Değeri
+*pred*\
+Bir öğenin diğerinden küçük olduğu anlamlı olduğunu tanımlayan Kullanıcı tanımlı koşul işlevi nesnesi. Karşılaştırma koşulu iki bağımsız değişken alır ve ilki ikinciden küçükse **true** , aksi takdirde **false** döndürmelidir.
+
+### <a name="return-value"></a>Dönüş değeri
 
 Döndürür
 
-`pair<ForwardIterator, ForwardIterator>`
-
-`(` [min_element](../standard-library/algorithm-functions.md#min_element)`(first, last), `[max_element](../standard-library/algorithm-functions.md#max_element)`(first, last))`.
+`pair<ForwardIterator, ForwardIterator>( min_element(first, last), max_element(first, last))`.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk şablon işlevi döndürür
+İlk şablon işlevi şunu döndürür
 
-`pair<ForwardIterator,ForwardIterator>`
+`pair<ForwardIterator,ForwardIterator>(min_element(first,last), max_element(first,last))`.
 
-`(min_element(_First,Last), max_element(_First,Last))`.
+İkinci şablon işlevi aynı şekilde davranır, ancak ile `operator<(X, Y)` `pred(X, Y)`değiştirilir.
 
-Değiştirir dışında ikinci şablon işlevi aynı şekilde davranır `operator<(X, Y)` ile `comp (X, Y)`.
+Dizi boş değilse, işlev en çok `3 * (last - first - 1) / 2` karşılaştırmalarda gerçekleştirilir.
 
-İşlev sırası boş ise, en fazla gerçekleştirir `3 * (last - first - 1) / 2` karşılaştırmalar.
+## <a name="minmax"></a>MinMax
 
-## <a name="minmax"></a> minmax
-
-İki giriş parametresini karşılaştırır ve bunları sırasına, bir çift olarak döndürür daha küçük.
+İki giriş parametresini karşılaştırır ve bunları daha küçük bir şekilde bir çift olarak döndürür.
 
 ```cpp
 template<class Type>
 constexpr pair<const Type&, const Type&> minmax(
     const Type& left,
     const Type& right);
+
 template<class Type, class BinaryPredicate>
 constexpr pair<const Type&, const Type&> minmax(
     const Type& left,
     const Type& right,
-    BinaryPredicate comp);
+    BinaryPredicate pred);
+
 template<class Type>
 constexpr pair<Type&, Type&> minmax(
-    initializer_list<Type> );
+    initializer_list<Type> ilist);
+
 template<class Type, class BinaryPredicate>
 constexpr pair<Type&, Type&> minmax(
-    initializer_list<Type>,
-    BinaryPredicate comp);
+    initializer_list<Type> ilist,
+    BinaryPredicate pred);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*\
-İlk Karşılaştırılan iki nesne.
+*tarafta*\
+Karşılaştırılan iki nesnenin ilki.
 
-*sağ*\
-İkinci Karşılaştırılan iki nesne.
+*Right*\
+Karşılaştırılan iki nesnenin ikincisi.
 
-*Comp*\
-İki nesneleri karşılaştırmak için kullanılan bir ikili koşul.
+*pred*\
+İki nesneyi karşılaştırmak için kullanılan bir ikili koşul.
 
-*_IList*\
-Karşılaştırılacak üyeleri içeren initializer_list.
+*liste tümce*\
+`initializer_list` Karşılaştırılacak üyeleri içeren.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk şablon işlevinin döndürdüğü `pair<const Type&, const Type&>( right , left )` varsa *doğru* olduğu küçüktür *sol*. Aksi halde `pair<const Type&, const Type&>( left , right )`.
+Eğer *Right* , *Left*değerinden `pair<const Type&, const Type&>( right, left )` küçükse ilk şablon işlevi döndürür. Aksi takdirde, döndürür `pair<const Type&, const Type&>( left, right )`.
 
-İkinci üye işlevi burada ilk öğeyi küçük olanı ve ikinci koşul tarafından karşılaştırıldığında büyük bir çiftini döndürür *comp*.
+İkinci üye işlevi, ilk öğenin daha küçük olduğu bir çift döndürür ve ikinci değer *Pred*ile karşılaştırıldığında daha büyüktür.
 
-Bunlar değiştirir hariç, kalan şablon işlevleri aynı şekilde davranır *sol* ve *doğru* parametrelerle *_IList*.
+Kalan şablon işlevleri, *sol* ve *sağ* parametrelerin *ınlist*ile yerini alacak şekilde aynı şekilde davranır.
 
 İşlev tam olarak bir karşılaştırma gerçekleştirir.
 
-## <a name="mismatch"></a> uyuşmazlığı
+## <a name="mismatch"></a>mez
 
-İki aralığı öğe öğe karşılaştırır ve farkın oluştuğu ilk yeri bulur.
+İki Aralık öğesini öğesiyle karşılaştırır ve bir farkın gerçekleştiği ilk konumu bulur.
 
-İkinci aralığı için tek bir yineleyici yalnızca aşırı farklar algılamaz ikinci aralığın ilk aralığından daha uzun ve ikinci aralığı kısaysa tanımsız davranışlara neden çünkü çift aralıklı C ++ 14 kodda aşırı yüklemeleri kullanın ilk aralığından daha.
+İkinci Aralık için yalnızca tek bir yineleyici alan aşırı yüklemeler ikinci aralığın ilk aralıktan daha uzun olması fark etmez ve ikinci Aralık daha kısaysa tanımsız davranışlara neden olacak şekilde, C++ 14 kodunda çift aralıklı aşırı yüklemeleri kullanın. ilk aralıktan fazla.
 
 ```cpp
 template<class InputIterator1, class InputIterator2>
 pair<InputIterator1, InputIterator2>>
 mismatch(
-    InputIterator1 First1,
-    InputIterator1 Last1,
-    InputIterator2 First2 );
+    InputIterator1 first1,
+    InputIterator1 last1,
+    InputIterator2 first2 );
 
 template<class InputIterator1, class InputIterator2, class BinaryPredicate> pair<InputIterator1, InputIterator2>>
 mismatch(
-    InputIterator1 First1,
-    InputIterator1 Last1,
-    InputIterator2 First2,
-    BinaryPredicate Comp );
+    InputIterator1 first1,
+    InputIterator1 last1,
+    InputIterator2 first2,
+    BinaryPredicate pred );
 
 //C++14
 template<class InputIterator1, class InputIterator2>
 pair<InputIterator1, InputIterator2>>
 mismatch(
-    InputIterator1 First1,
-    InputIterator1 Last1,
-    InputIterator2 First2,
-    InputIterator2 Last2 );
+    InputIterator1 first1,
+    InputIterator1 last1,
+    InputIterator2 first2,
+    InputIterator2 last2 );
 
 template<class InputIterator1, class InputIterator2, class BinaryPredicate> pair<InputIterator1, InputIterator2>>
 mismatch(
-    InputIterator1 First1,
-    InputIterator1 Last1,
-    InputIterator2 First2,
-    InputIterator2 Last2,
-    BinaryPredicate Comp);
+    InputIterator1 first1,
+    InputIterator1 last1,
+    InputIterator2 first2,
+    InputIterator2 last2,
+    BinaryPredicate pred);
 
 //C++17
 template<class ExecutionPolicy, class ForwardIterator1, class ForwardIterator2>
 pair<ForwardIterator1, ForwardIterator2>
 mismatch(
     ExecutionPolicy&& exec,
-    ForwardIterator1 first1, 
+    ForwardIterator1 first1,
     ForwardIterator1 last1,
     ForwardIterator2 first2);
 
-template<class ExecutionPolicy, class ForwardIterator1, class ForwardIterator2,
-class BinaryPredicate>
+template<class ExecutionPolicy, class ForwardIterator1, class ForwardIterator2, class BinaryPredicate>
 pair<ForwardIterator1, ForwardIterator2>
 mismatch(
     ExecutionPolicy&& exec,
-    ForwardIterator1 first1, 
+    ForwardIterator1 first1,
     ForwardIterator1 last1,
-    ForwardIterator2 first2, 
+    ForwardIterator2 first2,
     BinaryPredicate pred);
 
 template<class ExecutionPolicy, class ForwardIterator1, class ForwardIterator2>
 pair<ForwardIterator1, ForwardIterator2>
 mismatch(
     ExecutionPolicy&& exec,
-    ForwardIterator1 first1, 
+    ForwardIterator1 first1,
     ForwardIterator1 last1,
-    ForwardIterator2 first2, 
+    ForwardIterator2 first2,
     ForwardIterator2 last2);
 
-template<class ExecutionPolicy, class ForwardIterator1, class ForwardIterator2,
-class BinaryPredicate>
+template<class ExecutionPolicy, class ForwardIterator1, class ForwardIterator2, class BinaryPredicate>
 pair<ForwardIterator1, ForwardIterator2>
 mismatch(
     ExecutionPolicy&& exec,
-    ForwardIterator1 first1, 
+    ForwardIterator1 first1,
     ForwardIterator1 last1,
-    ForwardIterator2 first2, 
+    ForwardIterator2 first2,
     ForwardIterator2 last2,
     BinaryPredicate pred);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
+*Exec*\
+Kullanılacak yürütme ilkesi.
+
 *first1*\
-Test edilecek ilk aralıktaki ilk öğenin konumunu ele alan bir giriş yineleyici.
+Sınanacak ilk aralıktaki ilk öğenin konumunu ele aldığı bir giriş Yineleyici.
 
 *last1*\
-Test edilecek ilk aralığın son öğesinde geçmiş konumu ele alan bir giriş yineleyici.
+Test edilecek ilk aralıktaki son öğeden sonraki konumu ele aldığı bir giriş Yineleyici.
 
 *first2*\
-Test edilecek ikinci aralıktaki ilk öğenin konumunu ele alan bir giriş yineleyici.
+Test edilecek ikinci aralıktaki ilk öğenin konumunu ele aldığı bir giriş Yineleyici.
 
-*Soyadı2*\
-Test edilecek ikinci aralıktaki son öğeden bir öncekine konumu ele alan bir giriş yineleyici.
+*last2*\
+Test edilecek ikinci aralıktaki son öğeden bir önceki öğenin konumunu ele aldığı bir giriş Yineleyici.
 
-*Comp*\
-Her aralığında geçerli öğe karşılaştırır ve eşdeğer olup olmadığını belirleyen kullanıcı tanımlı işlevin doğrulama nesnesi. Döndürür **true** karşılanmazsa ve **false** koşullar karşılanırsa.
+*pred*\
+Her aralıktaki geçerli öğeleri karşılaştıran ve eşdeğer olup olmadığını belirleyen Kullanıcı tanımlı koşul işlevi nesnesi. Memnun olmadığında **true** , **false** değeri döndürür.
 
-### <a name="return-value"></a>Dönüş Değeri
+### <a name="return-value"></a>Dönüş değeri
 
-İki aralığın uyuşmazlık, ilk bileşen yineleyici ilk aralığındaki konumu için ve ikinci aralığı konumuna ikinci bileşen yineleyici konumlarını adresleme Yineleyicilerin bir çifti. Karşılaştırıldığında aralıklardaki öğeler arasındaki fark varsa veya ikinci sürüm İkili koşulda iki aralıktaki tüm öğe çifti tarafından sağlanıyorsa, ardından ilk bileşen yineleyici konum son öğeden ilk işaret aralığı ve ikinci bileşen yineleyici son öğeden konuma ikinci aralığında test.
+İki aralıktaki uyuşmazlığın konumlarını, ilk bileşen yineleyicisini ilk aralıktaki konuma ve ikinci bileşen yineleyicisini ikinci aralıktaki konuma adresleyen yineleyiciler çifti. Aralıklardaki öğeler arasında bir fark yoksa veya ikinci sürümdeki ikili koşulun iki aralıktaki tüm öğe çiftleri tarafından karşılanmasını içeriyorsa, ilk bileşen yineleyicisi ilk öğe için son öğeden önceki konuma işaret eder İkinci aralıkta test edilen son öğeden sonraki bir konumdan konumlandırmak için Aralık ve ikinci bileşen yineleyicisi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Olduğunu gibi birçok öğe olduğundan [first1 tarafından last1). Belirtilen aralıktaki first2 başlayan bir aralıktaki ilk şablon işlevi varsayar. Varsa ikinci aralığında daha fazla, bunlar yoksayılır; varsa daha az tanımsız davranışa neden olur.
+İlk şablon işlevi, [First1, last1) tarafından belirlenen aralıkta olduğu gibi, first2 adresinden başlayan aralıkta çok sayıda öğe olduğunu varsayar. İkinci aralıkta daha fazla varsa, bunlar yok sayılır; daha az varsa, tanımsız davranış sonucu olur.
 
-Aranacak aralık geçerli olmalı; Tüm yineleyiciler tekrar başvurulabilir olmalı ve son konuma ilk konumdan erişilebilmelidir.
+Aranacak Aralık geçerli olmalıdır; tüm yineleyiciler başvurulmalıdır ve en son konuma artırılamadı tarafından ilk kez ulaşılabilir.
 
-Zaman algoritmanın karmaşıklığı, doğrusal daha kısa bir aralık içinde yer alan öğelerin sayısı.
+Algoritmanın zaman karmaşıklığı, daha kısa bir aralıktaki öğe sayısında doğrusal bir değer içerir.
 
-Kullanıcı tanımlı koşul eşdeğerlik ilişkisi, simetrik, yansıma ve işlenenleri arasındaki geçişli dayatmak için gerekli değildir.
+Kullanıcı tanımlı koşul, işlenenleri arasında simetrik, yansımalı ve geçişli bir denklik ilişkisi uygulamak için gerekli değildir.
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki örnek, uyuşmazlığı kullanmayı gösterir. C ++ 03 aşırı yalnızca beklenmeyen bir sonuç nasıl üretebileceği göstermek için gösterilir.
+Aşağıdaki örnek, uyuşmazlığın nasıl kullanılacağını göstermektedir. C++ 03 aşırı yüklemesi yalnızca, nasıl beklenmeyen bir sonuç üretebileceğini göstermek için gösterilir.
 
 ```cpp
 #include <vector>
@@ -4917,13 +5038,13 @@ int main()
 C++03: vec_1 and vec_2 are a mismatch: false
 C++14: vec_1 and vec_2: mismatch. Left iterator at end right iterator at 30
 C++14 vec_1 v. vec_2 modified: mismatch. Left iterator at 15 right iterator at 42
-C++14 vec_3 v. vec_4 with pred:  match.
+C++14 vec_3 v. vec_4 with pred: match.
 C++14 vec_3 v. modified vec_4 with pred: mismatch. Left iterator at 60 right iterator at 31
 C++14: vec_1 and list_1 are a mismatch: false
 Press a key
 ```
 
-## <a name="alg_move"></a> &lt;algoritma&gt; Taşı
+## <a name="alg_move"></a>&lt;algTaşı&gt;
 
 Belirtilen aralıkla ilişkili öğeleri taşı.
 
@@ -4933,94 +5054,101 @@ OutputIterator move(
     InputIterator first,
     InputIterator last,
     OutputIterator dest);
-    
-template<class ExecutionPolicy, class ForwardIterator1,
-class ForwardIterator2>
+
+template<class ExecutionPolicy, class ForwardIterator1, class ForwardIterator2>
 ForwardIterator2 move(
-    ExecutionPolicy&& exec, 
-    ForwardIterator1 first, 
+    ExecutionPolicy&& exec,
+    ForwardIterator1 first,
     ForwardIterator1 last,
     ForwardIterator2 result);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*ilk*\
-Nereden başlayacağınızı taşımak için öğe aralığını gösteren bir giriş yineleyici.
+*Exec*\
+Kullanılacak yürütme ilkesi.
 
-*Son*\
-Taşıma öğelerin aralığının sonunu gösteren bir giriş yineleyici.
+*adı*\
+Taşınacak öğe aralığının nerede başlatılacağını gösteren bir giriş Yineleyici.
 
-*Hedef*\
-Taşınan öğeleri içeren için çıkış yineleyici.
+*soyadına*\
+Taşınacak öğe aralığının sonunu gösteren bir giriş Yineleyici.
+
+*HD*\
+Taşınan öğeleri içeren çıkış yineleyicisi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon işlevi değerlendirir `*(dest + N) = move(*(first + N))` her biri için bir kez `N` aralığında `[0, last - first)`, öğesinin artan değerleri için `N` en düşük değerden başlayarak. Ardından döndürür `dest + N`. Varsa `dest` ve *ilk* depolama bölgelerini belirlemek *dest* aralığında olmamalıdır `[first, last)`.
+Şablon işlevi, Aralık `*(dest + N) = move(*(first + N))` `N` `[0, last - first)`içinde her biri için bir kez değerlendirilir ve en düşük değer ile `N` başlangıç değerlerini kesin olarak artırır. Ardından döndürür `dest + N`. Ve `dest` *ilk* olarak depolama bölgelerini belirlerseniz, *hedef* Aralık `[first, last)`içinde olmamalıdır.
 
-## <a name="move_backward"></a> move_backward
+## <a name="move_backward"></a>move_backward
 
 Bir yineleyicinin öğelerini diğerine taşır. Hareket belirli bir aralıktaki son öğeyle başlar ve söz konusu aralıktaki ilk öğeyle biter.
 
 ```cpp
 template<class BidirectionalIterator1, class BidirectionalIterator2>
-   BidirectionalIterator2 move_backward(
-       BidirectionalIterator1 first,
-       BidirectionalIterator1 last,
-       BidirectionalIterator2 destEnd);
+BidirectionalIterator2 move_backward(
+    BidirectionalIterator1 first,
+    BidirectionalIterator1 last,
+    BidirectionalIterator2 destEnd);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*ilk*\
-Öğeleri buradan taşımak amacıyla aralığın başlangıcını gösteren yineleyici.
+*adı*\
+Öğelerin taşınacağı aralığın başlangıcını gösteren bir yineleyici.
 
-*Son*\
-Öğeleri buradan taşımak amacıyla aralığın sonunu gösteren yineleyici. Bu öğe taşınmaz.
+*soyadına*\
+Öğelerin taşınacağı aralığın sonunu gösteren bir yineleyici. Bu öğe taşınmadı.
 
 *destEnd*\
 Hedef aralıkta son öğeden bir önceki öğenin konumunu belirleyen çift yönlü yineleyici.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon işlevi değerlendirir `*(destEnd - N - 1) = move(*(last - N - 1))` her biri için bir kez `N` aralığında `[0, last - first)`, öğesinin artan değerleri için `N` en düşük değerden başlayarak. Ardından döndürür `destEnd - (last - first)`. Varsa *destEnd* ve *ilk* depolama bölgelerini belirlemek *destEnd* aralığında olmamalıdır `[first, last)`.
+Şablon işlevi, Aralık `*(destEnd - N - 1) = move(*(last - N - 1))` `N` `[0, last - first)`içinde her biri için bir kez değerlendirilir ve en düşük değer ile `N` başlangıç değerlerini kesin olarak artırır. Ardından döndürür `destEnd - (last - first)`. *DestEnd* ve *ilk* olarak Storage bölgelerini belirlerseniz, *DestEnd* 'in aralıkta `[first, last)`olmaması gerekir.
 
-`move` ve `move_backward` kullanmayla işlevsel olarak eşdeğerdir `copy` ve `copy_backward` taşıma yineleyicili.
+`move`ve `move_backward` , bir taşıma yineleyicisi `copy` ile `copy_backward` , ve işlev ile eşdeğerdir.
 
-## <a name="next_permutation"></a> next_permutation
+## <a name="next_permutation"></a>next_permutation
 
 Aralıktaki öğeleri yeniden sıralar, böylece özgün sıralama sözlüksel biçimde, varsa, bir sonraki permütasyon ile değiştirilir, burada sonraki bir ikili koşula göre belirtilebilir.
 
 ```cpp
 template<class BidirectionalIterator>
-bool next_permutation(BidirectionalIterator first, BidirectionalIterator last);
+bool next_permutation(
+    BidirectionalIterator first,
+    BidirectionalIterator last);
 
 template<class BidirectionalIterator, class BinaryPredicate>
-bool next_permutation(BidirectionalIterator first, BidirectionalIterator last, BinaryPredicate comp);
+bool next_permutation(
+    BidirectionalIterator first,
+    BidirectionalIterator last,
+    BinaryPredicate pred);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*ilk*\
-Dizilmiş için aralıktaki ilk öğenin konumuna işaret eden bir çift yönlü yineleyici.
+*adı*\
+Aralıktaki ilk öğenin konumunu gösteren çift yönlü bir yineleyici.
 
-*Son*\
-Dizilmiş için bir son öğeden aralığındaki konumu işaret eden bir çift yönlü yineleyici.
+*soyadına*\
+Çift yönlü bir yineleyici, aralıktaki son öğeden geçmiş bir konuma işaret ediyor.
 
-*Comp*\
-Sıralama, ardışık öğeleri tarafından karşılanması için karşılaştırma ölçütü tanımlayan kullanıcı tanımlı işlevin doğrulama nesnesi. İkili koşulu, iki bağımsız değişkeni alır ve döndürür **true** karşılanmazsa ve **false** koşullar karşılanırsa.
+*pred*\
+Sıralamada birbirini izleyen öğeler tarafından karşılanması gereken karşılaştırma ölçütünü tanımlayan Kullanıcı tanımlı koşul işlevi nesnesi. İkili koşul iki bağımsız değişken alır ve memnun olmadığında **true** ve **false** değeri döndürür.
 
-### <a name="return-value"></a>Dönüş Değeri
+### <a name="return-value"></a>Dönüş değeri
 
-**true** lexicographically sonraki permütasyon varsa ve aralığı; özgün sıralama değiştirilmiştir, aksi takdirde **false**, bu durumda sıralama sözlüksel en küçük dönüştürülür PERMÜTASYON.
+lexıgrafiksel bir sonraki permütasyon varsa ve aralığın orijinal sıralamasını değiştirse **doğru** ; Aksi takdirde **yanlış**, bu durumda sıralama lexıgrafiksel en küçük permütasyon 'e dönüştürülür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Başvurulan aralık geçerli olmalı; Tüm İşaretçiler tekrar başvurulabilir olmalı ve dizi içinde son konuma ilk konumdan erişilebilmelidir.
+Başvurulan Aralık geçerli olmalıdır; Tüm işaretçiler, en son artırılamadı tarafından ilk konumdan erişilebilir olması gerekir.
 
-Varsayılan ikili koşul küçüktür ve aralıktaki öğeleri sonraki permütasyon iyi tanımlanmış Sigortası küçüktür biçiminde karşılaştırılabilir olması gerekir.
+Varsayılan ikili koşul değerinden küçüktür ve sonraki permütasyonun iyi tanımlanmış olduğundan emin olmak için aralıktaki öğelerin karşılaştırıdan küçük olması gerekir.
 
-Karmaşıklığı en fazla ile doğrusal (* Soyadı - *) / 2 değiştirir.
+Karmaşıklık, en fazla `(last - first) / 2` takas ile doğrusal bir şekilde belirlenir.
 
 ### <a name="example"></a>Örnek
 
@@ -5040,102 +5168,102 @@ ostream& operator<<( ostream& osIn, const CInt& rhs );
 class CInt
 {
 public:
-   CInt( int n = 0 ) : m_nVal( n ){}
-   CInt( const CInt& rhs ) : m_nVal( rhs.m_nVal ){}
-   CInt&   operator=( const CInt& rhs ) {m_nVal =
-   rhs.m_nVal; return *this;}
-   bool operator<( const CInt& rhs ) const
-      { return ( m_nVal < rhs.m_nVal );}
-   friend   ostream& operator<<( ostream& osIn, const CInt& rhs );
+    CInt( int n = 0 ) : m_nVal( n ) {}
+    CInt( const CInt& rhs ) : m_nVal( rhs.m_nVal ) {}
+    CInt& operator=( const CInt& rhs ) {m_nVal =
+        rhs.m_nVal; return *this;}
+    bool operator<( const CInt& rhs ) const
+        { return ( m_nVal < rhs.m_nVal ); }
+    friend ostream& operator<<( ostream& osIn, const CInt& rhs );
 
 private:
-   int m_nVal;
+    int m_nVal;
 };
 
 inline ostream& operator<<( ostream& osIn, const CInt& rhs )
 {
-   osIn << "CInt( " << rhs.m_nVal << " )";
-   return osIn;
+    osIn << "CInt( " << rhs.m_nVal << " )";
+    return osIn;
 }
 
 // Return whether modulus of elem1 is less than modulus of elem2
 bool mod_lesser ( int elem1, int elem2 )
 {
-   if ( elem1 < 0 )
-      elem1 = - elem1;
-   if ( elem2 < 0 )
-      elem2 = - elem2;
-   return elem1 < elem2;
+    if ( elem1 < 0 )
+        elem1 = - elem1;
+    if ( elem2 < 0 )
+        elem2 = - elem2;
+    return elem1 < elem2;
 };
 
 int main()
 {
-   // Reordering the elements of type CInt in a deque
-   // using the prev_permutation algorithm
-   CInt c1 = 5, c2 = 1, c3 = 10;
-   bool deq1Result;
-   deque<CInt> deq1, deq2, deq3;
-   deque<CInt>::iterator d1_Iter;
+    // Reordering the elements of type CInt in a deque
+    // using the prev_permutation algorithm
+    CInt c1 = 5, c2 = 1, c3 = 10;
+    bool deq1Result;
+    deque<CInt> deq1, deq2, deq3;
+    deque<CInt>::iterator d1_Iter;
 
-   deq1.push_back ( c1 );
-   deq1.push_back ( c2 );
-   deq1.push_back ( c3 );
+    deq1.push_back ( c1 );
+    deq1.push_back ( c2 );
+    deq1.push_back ( c3 );
 
-   cout << "The original deque of CInts is deq1 = (";
-   for ( d1_Iter = deq1.begin( ); d1_Iter != --deq1.end( ); d1_Iter++ )
-      cout << " " << *d1_Iter << ",";
-   d1_Iter = --deq1.end( );
-   cout << " " << *d1_Iter << " )." << endl;
+    cout << "The original deque of CInts is deq1 = (";
+    for ( d1_Iter = deq1.begin( ); d1_Iter != --deq1.end( ); d1_Iter++ )
+        cout << " " << *d1_Iter << ",";
+    d1_Iter = --deq1.end( );
+    cout << " " << *d1_Iter << " )." << endl;
 
-   deq1Result = next_permutation ( deq1.begin( ), deq1.end( ) );
+    deq1Result = next_permutation ( deq1.begin( ), deq1.end( ) );
 
-   if ( deq1Result )
-      cout << "The lexicographically next permutation "
-           << "exists and has\nreplaced the original "
-           << "ordering of the sequence in deq1." << endl;
-   else
-      cout << "The lexicographically next permutation doesn't "
-           << "exist\n and the lexicographically "
-           << "smallest permutation\n has replaced the "
-           << "original ordering of the sequence in deq1." << endl;
+    if ( deq1Result )
+        cout << "The lexicographically next permutation "
+            << "exists and has\nreplaced the original "
+            << "ordering of the sequence in deq1." << endl;
+    else
+        cout << "The lexicographically next permutation doesn't "
+            << "exist\n and the lexicographically "
+            << "smallest permutation\n has replaced the "
+            << "original ordering of the sequence in deq1." << endl;
 
-   cout << "After one application of next_permutation,\n deq1 = (";
-   for ( d1_Iter = deq1.begin( ); d1_Iter != --deq1.end( ); d1_Iter++ )
-      cout << " " << *d1_Iter << ",";
-   d1_Iter = --deq1.end( );
-   cout << " " << *d1_Iter << " )." << endl << endl;
+    cout << "After one application of next_permutation,\n deq1 = (";
+    for ( d1_Iter = deq1.begin( ); d1_Iter != --deq1.end( ); d1_Iter++ )
+        cout << " " << *d1_Iter << ",";
+    d1_Iter = --deq1.end( );
+    cout << " " << *d1_Iter << " )." << endl << endl;
 
-   // Permuting vector elements with binary function mod_lesser
-   vector <int> v1;
-   vector <int>::iterator Iter1;
+    // Permuting vector elements with binary function mod_lesser
+    vector<int> v1;
+    vector<int>::iterator Iter1;
 
-   int i;
-   for ( i = -3 ; i <= 3 ; i++ )
-   {
-      v1.push_back( i );
-   }
+    int i;
+    for ( i = -3 ; i <= 3 ; i++ )
+    {
+        v1.push_back( i );
+    }
 
-   cout << "Vector v1 is ( " ;
-   for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
-      cout << *Iter1 << " ";
-   cout << ")." << endl;
+    cout << "Vector v1 is ( " ;
+    for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
+        cout << *Iter1 << " ";
+    cout << ")." << endl;
 
-   next_permutation ( v1.begin( ), v1.end( ), mod_lesser );
+    next_permutation ( v1.begin( ), v1.end( ), mod_lesser );
 
-   cout << "After the first next_permutation, vector v1 is:\n v1 = ( " ;
-   for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
-      cout << *Iter1 << " ";
-   cout << ")." << endl;
+    cout << "After the first next_permutation, vector v1 is:\n v1 = ( " ;
+    for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
+        cout << *Iter1 << " ";
+    cout << ")." << endl;
 
-   int iii = 1;
-   while ( iii <= 5 ) {
-      next_permutation ( v1.begin( ), v1.end( ), mod_lesser );
-      cout << "After another next_permutation of vector v1,\n v1 =   ( " ;
-      for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ;Iter1 ++ )
-         cout << *Iter1  << " ";
-      cout << ")." << endl;
-      iii++;
-   }
+    int iii = 1;
+    while ( iii <= 5 ) {
+        next_permutation ( v1.begin( ), v1.end( ), mod_lesser );
+        cout << "After another next_permutation of vector v1,\n v1 =   ( " ;
+        for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ;Iter1 ++ )
+            cout << *Iter1 << " ";
+        cout << ")." << endl;
+        iii++;
+    }
 }
 ```
 
@@ -5161,56 +5289,66 @@ After another next_permutation of vector v1,
 v1 =   ( -3 -2 -1 1 0 2 3 ).
 ```
 
-## <a name="nth_element"></a> nth_element
+## <a name="nth_element"></a>nth_element
 
-Doğru şekilde bularak öğelerin bir aralığını bölümler *n*öğedeki aralığındaki dizinin önündeki tüm öğeler ona eşit veya ve sırayla izleyen tüm öğeler, böylece büyük th olan bir ya da ona eşit.
+Aralıktaki sıranın *n*. öğesini doğru bir şekilde bulur ve bu sayede dizideki tüm öğelerin bu değerden küçük veya ona eşit olması ve dizide izleyen tüm öğelerin bu değerden büyük veya ona eşit olması için bir dizi öğeyi bölümler.
 
 ```cpp
 template<class RandomAccessIterator>
-void nth_element( RandomAccessIterator first, RandomAccessIterator _Nth, RandomAccessIterator last);
+void nth_element(
+    RandomAccessIterator first,
+    RandomAccessIterator nth,
+    RandomAccessIterator last);
 
-template<class RandomAccessIterator, class BinaryPredicate>
-void nth_element( RandomAccessIterator first, RandomAccessIterator _Nth, RandomAccessIterator last, BinaryPredicate comp);
+template<class RandomAccessIterator, class Compare>
+void nth_element(
+    RandomAccessIterator first,
+    RandomAccessIterator nth,
+    RandomAccessIterator last,
+    Compare pred);
 
 template<class ExecutionPolicy, class RandomAccessIterator>
 void nth_element(
     ExecutionPolicy&& exec,
-    RandomAccessIterator first, 
+    RandomAccessIterator first,
     RandomAccessIterator nth,
     RandomAccessIterator last);
 
 template<class ExecutionPolicy, class RandomAccessIterator, class Compare>
 void nth_element(
     ExecutionPolicy&& exec,
-    RandomAccessIterator first, 
+    RandomAccessIterator first,
     RandomAccessIterator nth,
-    RandomAccessIterator last, 
-    Compare comp);
+    RandomAccessIterator last,
+    Compare pred);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*ilk*\
-Bölümlenecek aralıktaki ilk öğenin konumunu bulan bir rasgele erişim yineleyicisi.
+*Exec*\
+Kullanılacak yürütme ilkesi.
 
-*_Nth*\
-Bölüm sınırında doğru sıralanmalıdır öğenin konumunu bulan bir rasgele erişim yineleyicisi.
+*adı*\
+Bölümlendirilmek üzere aralıktaki ilk öğenin konumunu ele alarak rastgele erişimli bir yineleyici.
 
-*Son*\
-Bölümlenecek aralığın son öğesinde geçmiş konumu ele alan bir rasgele erişim yineleyicisi.
+*dereceden*\
+Bölümün sınırında doğru sıralanabilmesi için öğenin konumunu ele alan Rastgele erişimli bir yineleyici.
 
-*Comp*\
-Sıralama, ardışık öğeleri tarafından karşılanması için karşılaştırma ölçütü tanımlayan kullanıcı tanımlı işlevin doğrulama nesnesi. İkili koşulu, iki bağımsız değişkeni alır ve döndürür **true** karşılanmazsa ve **false** koşullar karşılanırsa.
+*soyadına*\
+Bölümlendirilmek üzere aralıktaki son öğeden geçmiş bir konumu ele alarak rastgele erişimli bir yineleyici.
+
+*pred*\
+Sıralamada birbirini izleyen öğeler tarafından karşılanması gereken karşılaştırma ölçütünü tanımlayan Kullanıcı tanımlı koşul işlevi nesnesi. Karşılaştırma koşulu iki bağımsız değişken alır ve memnun olmadığında **true** ve **false** değeri döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Başvurulan aralık geçerli olmalı; Tüm İşaretçiler tekrar başvurulabilir olmalı ve dizi içinde son konuma ilk konumdan erişilebilmelidir.
+Başvurulan Aralık geçerli olmalıdır; Tüm işaretçiler, en son artırılamadı tarafından ilk konumdan erişilebilir olması gerekir.
 
-`nth_element` Algoritması alt aralıklara öğeleri ya da yan garantilemez, *n*öğedeki sıralanır. Bu nedenle daha az garantisi kolaylaştırır `partial_sort`, aşağıda seçilen öğeyi aralıktaki öğeleri sıralar ve daha hızlı alternatif olarak kullanılabilir `partial_sort` olduğunda alt aralığı sıralama gerekli değildir.
+Algoritma, n. öğesinin iki tarafındaki alt aralıklardaki öğelerin sıralanacağını garanti etmez.  `nth_element` Bu sayede `partial_sort`, seçilen bazı öğelerin altındaki aralıktaki öğeleri sipariş eden ve alt aralığın sıralaması gerekmediği `partial_sort` zaman daha hızlı bir alternatif olarak kullanılabilen daha az garanti verir.
 
-Öğeleri eşdeğerdir, ancak mutlaka eşittir, hiçbiri diğerinden olduğu.
+Öğeler eşdeğer, ancak eşit değildir, ancak ikisi de küçüktür.
 
-Ortalama bir sıralama karmaşıklık ilişkilendirilebilmesi için doğrusal * soyadı - *.
+Sıralama karmaşıklığına ilişkin ortalama, *en son birinciyle*karşılaştırıldığında doğrusal bir şekilde belirlenir.
 
 ### <a name="example"></a>Örnek
 
@@ -5224,96 +5362,102 @@ Ortalama bir sıralama karmaşıklık ilişkilendirilebilmesi için doğrusal * 
 
 // Return whether first element is greater than the second
 bool UDgreater ( int elem1, int elem2 ) {
-   return elem1 > elem2;
+    return elem1 > elem2;
 }
 
 int main() {
-   using namespace std;
-   vector <int> v1;
-   vector <int>::iterator Iter1;
+    using namespace std;
+    vector<int> v1;
+    vector<int>::iterator Iter1;
 
-   int i;
-   for ( i = 0 ; i <= 5 ; i++ )
-      v1.push_back( 3 * i );
+    int i;
+    for ( i = 0 ; i <= 5 ; i++ )
+        v1.push_back( 3 * i );
 
-   int ii;
-   for ( ii = 0 ; ii <= 5 ; ii++ )
-      v1.push_back( 3 * ii + 1 );
+    int ii;
+    for ( ii = 0 ; ii <= 5 ; ii++ )
+        v1.push_back( 3 * ii + 1 );
 
-   int iii;
-   for ( iii = 0 ; iii <= 5 ; iii++ )
-      v1.push_back( 3 * iii +2 );
+    int iii;
+    for ( iii = 0 ; iii <= 5 ; iii++ )
+        v1.push_back( 3 * iii +2 );
 
-   cout << "Original vector:\n v1 = ( " ;
-   for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
-      cout << *Iter1 << " ";
-   cout << ")" << endl;
+    cout << "Original vector:\n v1 = ( " ;
+    for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
+        cout << *Iter1 << " ";
+    cout << ")" << endl;
 
-   nth_element(v1.begin( ), v1.begin( ) + 3, v1.end( ) );
-   cout << "Position 3 partitioned vector:\n v1 = ( " ;
-   for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
-      cout << *Iter1 << " ";
-   cout << ")" << endl;
+    nth_element(v1.begin( ), v1.begin( ) + 3, v1.end( ) );
+    cout << "Position 3 partitioned vector:\n v1 = ( " ;
+    for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
+        cout << *Iter1 << " ";
+    cout << ")" << endl;
 
-   // To sort in descending order, specify binary predicate
-   nth_element( v1.begin( ), v1.begin( ) + 4, v1.end( ),
-          greater<int>( ) );
-   cout << "Position 4 partitioned (greater) vector:\n v1 = ( " ;
-   for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
-      cout << *Iter1 << " ";
-   cout << ")" << endl;
+    // To sort in descending order, specify binary predicate
+    nth_element( v1.begin( ), v1.begin( ) + 4, v1.end( ),
+            greater<int>( ) );
+    cout << "Position 4 partitioned (greater) vector:\n v1 = ( " ;
+    for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
+        cout << *Iter1 << " ";
+    cout << ")" << endl;
 
-   random_shuffle( v1.begin( ), v1.end( ) );
-   cout << "Shuffled vector:\n v1 = ( " ;
-   for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
-      cout << *Iter1 << " ";
-   cout << ")" << endl;
+    random_shuffle( v1.begin( ), v1.end( ) );
+    cout << "Shuffled vector:\n v1 = ( " ;
+    for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
+        cout << *Iter1 << " ";
+    cout << ")" << endl;
 
-   // A user-defined (UD) binary predicate can also be used
-   nth_element( v1.begin( ), v1.begin( ) + 5, v1.end( ), UDgreater );
-   cout << "Position 5 partitioned (UDgreater) vector:\n v1 = ( " ;
-   for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
-      cout << *Iter1 << " ";
-   cout << ")" << endl;
+    // A user-defined (UD) binary predicate can also be used
+    nth_element( v1.begin( ), v1.begin( ) + 5, v1.end( ), UDgreater );
+    cout << "Position 5 partitioned (UDgreater) vector:\n v1 = ( " ;
+    for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
+        cout << *Iter1 << " ";
+    cout << ")" << endl;
 }
 ```
 
-## <a name="none_of"></a> none_of
+## <a name="none_of"></a>none_of
 
-Döndürür **true** koşul olduğunda hiçbir zaman verilen aralıktaki öğeler arasında yok.
+Verilen aralıktaki öğeler arasında hiçbir zaman bir koşul mevcut olmadığında **true** döndürür.
 
 ```cpp
-template<class InputIterator, class BinaryPredicate>
-bool none_of(InputIterator first, InputIterator last, BinaryPredicate comp);
+template<class InputIterator, class UnaryPredicate>
+bool none_of(
+    InputIterator first,
+    InputIterator last,
+    UnaryPredicate pred);
 
-template <class ExecutionPolicy, class ForwardIterator, class Predicate>
+template <class ExecutionPolicy, class ForwardIterator, class UnaryPredicate>
 bool none_of(
     ExecutionPolicy&& exec,
-    ForwardIterator first, 
-    ForwardIterator last, 
-    Predicate pred);
+    ForwardIterator first,
+    ForwardIterator last,
+    UnaryPredicate pred);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*ilk*\
-Bir koşul için öğelerin bir aralığını denetlemek başlangıç noktası gösteren bir giriş yineleyici.
+*Exec*\
+Kullanılacak yürütme ilkesi.
 
-*Son*\
-Öğe aralığını sonuna belirten bir giriş yineleyici.
+*adı*\
+Bir koşul için bir dizi öğeyi denetlemeye nereden başlayacağını belirten bir giriş Yineleyici.
 
-*Comp*\
-Sınanacak koşulu. Bu koşulu tanımlayan bir kullanıcı tanımlı işlevin doğrulama nesnesi tarafından sağlanır. Bir koşulu, tek bir bağımsız değişken alır ve döndürür **true** veya **false**.
+*soyadına*\
+Bir öğe aralığının sonunu gösteren bir giriş Yineleyici.
 
-### <a name="return-value"></a>Dönüş Değeri
+*pred*\
+Sınanacak koşul. Bu, koşulu tanımlayan Kullanıcı tanımlı bir koşul işlevi nesnesi tarafından sağlanır. Birli koşul tek bir bağımsız değişken alır ve **true** veya **false**değerini döndürür.
 
-Döndürür **true** koşul belirtilen aralığında en az bir kez algılanmazsa ve **false** koşul algılanırsa.
+### <a name="return-value"></a>Dönüş değeri
+
+Koşul, belirtilen aralıkta en az bir kez saptanmamışsa **true** , koşul algılanırsa **false** değerini döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon işlevinin döndürdüğü **true** yalnızca şu durumlarda, bazı `N` aralığında `[0, last - first)`, koşul `comp(*(first + N))` her zaman **false**.
+Şablon işlevi yalnızca `N` , Aralık `[0, last - first)`içinde, `pred(*(first + N))` koşul her zaman **false**olduğunda **true** döndürür.
 
-## <a name="partial_sort"></a> partial_sort
+## <a name="partial_sort"></a>partial_sort
 
 Bir aralıktaki daha küçük öğelerin belirtilen sayısını azalmayan şekilde veya bir ikili koşul tarafından belirtilen bir sıralama ölçütüne göre düzenler.
 
@@ -5324,13 +5468,13 @@ void partial_sort(
     RandomAccessIterator sortEnd,
     RandomAccessIterator last);
 
-template<class RandomAccessIterator, class BinaryPredicate>
+template<class RandomAccessIterator, class Compare>
 void partial_sort(
     RandomAccessIterator first,
     RandomAccessIterator sortEnd,
     RandomAccessIterator last
-    BinaryPredicate comp);
-    
+    Compare pred);
+
 template<class ExecutionPolicy, class RandomAccessIterator>
 void partial_sort(
     ExecutionPolicy&& exec,
@@ -5343,31 +5487,34 @@ void partial_sort(
     ExecutionPolicy&& exec,
     RandomAccessIterator first,
     RandomAccessIterator middle,
-    RandomAccessIterator last, 
-    Compare comp);
+    RandomAccessIterator last,
+    Compare pred);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*ilk*\
-Sıralanacak aralıktaki ilk öğenin konumunu bulan bir rasgele erişim yineleyicisi.
+*Exec*\
+Kullanılacak yürütme ilkesi.
+
+*adı*\
+Sıralanacak aralıktaki ilk öğenin konumunu ele alarak rastgele erişimli bir yineleyici.
 
 *sortEnd*\
-Sıralanacak alt aralığı son öğesinde geçmiş konumu ele alan bir rasgele erişim yineleyicisi.
+Sıralama yapılacak alt aralıktaki son öğeden bir önceki konumu ele alarak rastgele erişimli bir yineleyici.
 
-*Son*\
-Kısmen sıralanacak bir son öğeden aralığındaki konumu ele alan bir rasgele erişim yineleyicisi.
+*soyadına*\
+Kısmen sıralanacak aralıktaki son öğeden geçmiş bir konumu ele alarak rastgele erişimli bir yineleyici.
 
-*Comp*\
-Sıralama, ardışık öğeleri tarafından karşılanması için karşılaştırma ölçütü tanımlayan kullanıcı tanımlı işlevin doğrulama nesnesi. İkili koşulu, iki bağımsız değişkeni alır ve döndürür **true** karşılanmazsa ve **false** koşullar karşılanırsa.
+*pred*\
+Sıralamada birbirini izleyen öğeler tarafından karşılanması gereken karşılaştırma ölçütünü tanımlayan Kullanıcı tanımlı koşul işlevi nesnesi. İkili koşul iki bağımsız değişken alır ve memnun olmadığında **true** ve **false** değeri döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Başvurulan aralık geçerli olmalı; Tüm İşaretçiler tekrar başvurulabilir olmalı ve dizi içinde son konuma ilk konumdan erişilebilmelidir.
+Başvurulan Aralık geçerli olmalıdır; Tüm işaretçiler, en son artırılamadı tarafından ilk konumdan erişilebilir olması gerekir.
 
-Öğeleri eşdeğerdir, ancak mutlaka eşittir, hiçbiri diğerinden olduğu. `sort` Algoritması kararlı değilse ve öğeleri, eşdeğer öğelerin göreli sıralamasını korunur olduğunu garanti etmez. Algoritma `stable_sort` bu özgün sıralamasını koruması.
+Öğeler eşdeğer, ancak eşit değildir, ancak ikisi de küçüktür. `sort` Algoritma kararlı değildir ve denk öğelerin göreli sıralamasına karşı korunmayacağını garanti etmez. Algoritma `stable_sort` bu orijinal sıralamayı korur.
 
-Ortalama kısmi sıralama karmaşıklığı *O*((`last`- `first`) günlük (`sortEnd`- `first`)).
+Ortalama Kısmi sıralama karmaşıklığı *O*`last`((`first`- ) log (`sortEnd`- ))`first`.
 
 ### <a name="example"></a>Örnek
 
@@ -5382,52 +5529,51 @@ Ortalama kısmi sıralama karmaşıklığı *O*((`last`- `first`) günlük (`sor
 // Return whether first element is greater than the second
 bool UDgreater ( int elem1, int elem2 )
 {
-   return elem1 > elem2;
+    return elem1 > elem2;
 }
 
 int main()
 {
-   using namespace std;
-   vector <int> v1;
-   vector <int>::iterator Iter1;
+    using namespace std;
+    vector<int> v1;
+    vector<int>::iterator Iter1;
 
-   int i;
-   for ( i = 0 ; i <= 5 ; i++ )
-   {
-      v1.push_back( 2 * i );
-   }
+    int i;
+    for ( i = 0 ; i <= 5 ; i++ )
+    {
+        v1.push_back( 2 * i );
+    }
 
-   int ii;
-   for ( ii = 0 ; ii <= 5 ; ii++ )
-   {
-      v1.push_back( 2 * ii +1 );
-   }
+    int ii;
+    for ( ii = 0 ; ii <= 5 ; ii++ )
+    {
+        v1.push_back( 2 * ii +1 );
+    }
 
-   cout << "Original vector:\n v1 = ( " ;
-   for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
-      cout << *Iter1 << " ";
-   cout << ")" << endl;
+    cout << "Original vector:\n v1 = ( " ;
+    for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
+        cout << *Iter1 << " ";
+    cout << ")" << endl;
 
-   partial_sort(v1.begin( ), v1.begin( ) + 6, v1.end( ) );
-   cout << "Partially sorted vector:\n v1 = ( " ;
-   for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
-      cout << *Iter1 << " ";
-   cout << ")" << endl;
+    partial_sort(v1.begin( ), v1.begin( ) + 6, v1.end( ) );
+    cout << "Partially sorted vector:\n v1 = ( " ;
+    for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
+        cout << *Iter1 << " ";
+    cout << ")" << endl;
 
-   // To partially sort in descending order, specify binary predicate
-   partial_sort(v1.begin( ), v1.begin( ) + 4, v1.end( ), greater<int>( ) );
-   cout << "Partially resorted (greater) vector:\n v1 = ( " ;
-   for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
-      cout << *Iter1 << " ";
-   cout << ")" << endl;
+    // To partially sort in descending order, specify binary predicate
+    partial_sort(v1.begin( ), v1.begin( ) + 4, v1.end( ), greater<int>( ) );
+    cout << "Partially resorted (greater) vector:\n v1 = ( " ;
+    for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
+        cout << *Iter1 << " ";
+    cout << ")" << endl;
 
-   // A user-defined (UD) binary predicate can also be used
-   partial_sort(v1.begin( ), v1.begin( ) + 8, v1.end( ),
-UDgreater );
-   cout << "Partially resorted (UDgreater) vector:\n v1 = ( " ;
-   for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
-      cout << *Iter1 << " ";
-   cout << ")" << endl;
+    // A user-defined (UD) binary predicate can also be used
+    partial_sort(v1.begin( ), v1.begin( ) + 8, v1.end( ), UDgreater );
+    cout << "Partially resorted (UDgreater) vector:\n v1 = ( " ;
+    for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
+        cout << *Iter1 << " ";
+    cout << ")" << endl;
 }
 ```
 
@@ -5442,7 +5588,7 @@ Partially resorted (UDgreater) vector:
 v1 = ( 11 10 9 8 7 6 5 4 0 1 2 3 )
 ```
 
-## <a name="partial_sort_copy"></a> partial_sort_copy
+## <a name="partial_sort_copy"></a>partial_sort_copy
 
 Öğeleri bir kaynak aralığından bir hedef aralığa kopyalar, burada kaynak öğeleri daha küçük olana ya da belirtilen başka bir ikili koşula göre sıralanır.
 
@@ -5454,59 +5600,61 @@ RandomAccessIterator partial_sort_copy(
     RandomAccessIterator first2,
     RandomAccessIterator last2 );
 
-template<class InputIterator, class RandomAccessIterator, class BinaryPredicate>
+template<class InputIterator, class RandomAccessIterator, class Compare>
 RandomAccessIterator partial_sort_copy(
     InputIterator first1,
     InputIterator last1,
     RandomAccessIterator first2,
     RandomAccessIterator last2,
-    BinaryPredicate comp);
-    
+    Compare pred);
+
 template<class ExecutionPolicy, class ForwardIterator, class RandomAccessIterator>
 RandomAccessIterator partial_sort_copy(
     ExecutionPolicy&& exec,
-    ForwardIterator first, 
+    ForwardIterator first,
     ForwardIterator last,
     RandomAccessIterator result_first,
     RandomAccessIterator result_last);
 
-template<class ExecutionPolicy, class ForwardIterator, class RandomAccessIterator,
-class Compare>
+template<class ExecutionPolicy, class ForwardIterator, class RandomAccessIterator, class Compare>
 RandomAccessIterator partial_sort_copy(
     ExecutionPolicy&& exec,
-    ForwardIterator first, 
+    ForwardIterator first,
     ForwardIterator last,
     RandomAccessIterator result_first,
     RandomAccessIterator result_last,
-    Compare comp);
+    Compare pred);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
+*Exec*\
+Kullanılacak yürütme ilkesi.
+
 *first1*\
-Kaynak aralıktaki ilk öğenin konumunu ele alan giriş yineleyici.
+Kaynak aralıktaki ilk öğenin konumunu ele aldığı bir giriş Yineleyici.
 
 *last1*\
-Bir önceki öğenin konumunu son öğesi kaynak aralıktaki ele alan giriş yineleyici.
+Kaynak aralıktaki son öğeden sonraki konumu ele aldığı bir giriş Yineleyici.
 
 *first2*\
-Sıralanmış bir hedef aralıktaki ilk öğenin konumunu bulan bir rastgele erişim yineleyicisi.
+Sıralanmış hedef aralıktaki ilk öğenin konumunu ele alarak rastgele erişimli bir yineleyici.
 
-*Soyadı2*\
-Bir önceki öğenin konumunu son öğesi sıralanmış bir hedef aralıktaki rastgele erişim yineleyici.
+*last2*\
+Sıralanmış hedef aralıktaki son öğeden sonraki konumu ele alarak rastgele erişimli bir yineleyici.
 
-*Comp*\
-Gerçekleştirilecek iki öğe varsa karşılanması koşul tanımlayan kullanıcı tanımlı işlevin doğrulama nesnesi olarak eşdeğer. İkili koşulu, iki bağımsız değişkeni alır ve döndürür **true** karşılanmazsa ve **false** koşullar karşılanırsa.
+*pred*\
+Sıralamada birbirini izleyen öğeler tarafından karşılanması gereken karşılaştırma ölçütünü tanımlayan Kullanıcı tanımlı koşul işlevi nesnesi. İkili koşul iki bağımsız değişken alır ve memnun olmadığında **true** ve **false** değeri döndürür.
 
-### <a name="return-value"></a>Dönüş Değeri
+### <a name="return-value"></a>Dönüş değeri
 
-Bir kaynak aralığındaki son öğeden hedef aralığı bir ötesindeki öğeyi ele alan bir rastgele erişim yineleyicisini eklenir.
+Hedef aralıktaki öğeyi, kaynak aralıktan açılan son öğeden sonraki bir konuma adresleyen Rastgele erişimli bir yineleyici.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kaynak ve hedef aralıklar çakışmaması gerekir ve geçerli olmalıdır; Tüm İşaretçiler tekrar başvurulabilir olmalı ve her dizi içinde son konuma ilk konumdan erişilebilir olmalıdır erişilebilmelidir.
+Kaynak ve hedef aralıklar çakışmamalı ve geçerli olmalıdır; Tüm işaretçilerin erişilebilir olması gerekir ve her bir dizide en son konum artırılamadı tarafından ilk kez ulaşılabilir olmalıdır.
 
-İkili koşul, böylece denk olmayan öğelerin sıralama katı zayıf sağlamanız gerekir, ancak eşdeğer olan öğeler değildir. İki öğe altında daha az daha eşdeğerdir, ancak mutlaka eşittir, hiçbiri diğerinden olan.
+Eşdeğer olmayan öğelerin sıralanabilmesi, ancak eşdeğer olan öğelerin olmaması için ikili koşulun katı zayıf bir sıralama sağlaması gerekir. İki öğe küçüktür, ancak eşit değildir, ancak ikisi de küçüktür.
 
 ### <a name="example"></a>Örnek
 
@@ -5584,47 +5732,50 @@ int main() {
 }
 ```
 
-## <a name="partition"></a> Bölüm
+## <a name="partition"></a>bölümünüzün
 
 Bir aralıktaki öğeleri, onları karşılamada yetersiz koşulu önceleyen birli koşulu sağlayan öğelerle iki ayrık kümede sınıflandırır.
 
 ```cpp
-template<class BidirectionalIterator, class Predicate>
+template<class BidirectionalIterator, class UnaryPredicate>
 BidirectionalIterator partition(
     BidirectionalIterator first,
     BidirectionalIterator last,
-    Predicate comp);
-    
-template<class ExecutionPolicy, class ForwardIterator, class Predicate>
+    UnaryPredicate pred);
+
+template<class ExecutionPolicy, class ForwardIterator, class UnaryPredicate>
 ForwardIterator partition(
     ExecutionPolicy&& exec,
     ForwardIterator first,
     ForwardIterator last,
-    Predicate pred);
+    UnaryPredicate pred);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*ilk*\
-Bölümlenecek aralıktaki ilk öğenin konumunu bulan bir çift yönlü yineleyici.
+*Exec*\
+Kullanılacak yürütme ilkesi.
 
-*Son*\
-Bölümlenecek aralığın son öğesinde geçmiş konumu ele alan bir çift yönlü yineleyici.
+*adı*\
+Bölümlendirilmek üzere aralıktaki ilk öğenin konumunu ele alarak çift yönlü bir yineleyici.
 
-*Comp*\
-Bir öğe sınıflandırılmaya ise karşılanması koşul tanımlayan kullanıcı tanımlı işlevin doğrulama nesnesi. Bir koşulu, tek bir bağımsız değişken alır ve döndürür **true** veya **false**.
+*soyadına*\
+Bölümlendirilmek üzere aralıktaki son öğeden geçmiş bir konumu ele alarak çift yönlü bir yineleyici.
 
-### <a name="return-value"></a>Dönüş Değeri
+*pred*\
+Bir öğe sınıflandırılabildiğinde karşılanması gereken koşulu tanımlayan Kullanıcı tanımlı koşul işlevi nesnesi. Birli koşul tek bir bağımsız değişken alır ve **true** veya **false**değerini döndürür.
 
-Koşul durumu değil karşılamak için aralıktaki ilk öğenin konumunu bulan bir çift yönlü yineleyici.
+### <a name="return-value"></a>Dönüş değeri
+
+Koşul koşulunu yerine getirmek için aralıktaki ilk öğenin konumunu ele alarak çift yönlü bir yineleyici.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Başvurulan aralık geçerli olmalı; Tüm İşaretçiler tekrar başvurulabilir olmalı ve dizi içinde son konuma ilk konumdan erişilebilmelidir.
+Başvurulan Aralık geçerli olmalıdır; Tüm işaretçiler, en son artırılamadı tarafından ilk konumdan erişilebilir olması gerekir.
 
-Öğeleri *bir* ve *b* eşdeğerdir, ancak mutlaka, her iki eşit *çekme isteği* ( *bir*, *b*) false'tur ve *çekme isteği* ( *b*, *bir*) false ise, burada *çekme isteği* parametre tarafından belirtilen bir koşuldur. `partition` Algoritması kararlı değilse ve öğeleri, eşdeğer öğelerin göreli sıralamasını korunur olduğunu garanti etmez. Algoritma `stable_ partition` bu özgün sıralamasını koruması.
+*A* ve *b* öğeleri eşdeğerdir, ancak her ikisi de false ise eşit değildir `pred( a, b )` ve `pred( b, a )` false ise, her ikisi de parametre belirtilen *koşul olur.* `partition` Algoritma kararlı değildir ve denk öğelerin göreli sıralamasına karşı korunmayacağını garanti etmez. Algoritma `stable_partition` bu orijinal sıralamayı korur.
 
-Karmaşıklığı doğrusal: vardır (`last` - `first`) uygulamalarının *comp* ve en fazla (`last` - `first`) / 2 değiştirir.
+Karmaşıklık doğrusal değildir: *Pred* ve `(last - first)` en çok `(last - first)/2` takas eden uygulamalar vardır.
 
 ### <a name="example"></a>Örnek
 
@@ -5635,154 +5786,161 @@ Karmaşıklığı doğrusal: vardır (`last` - `first`) uygulamalarının *comp*
 #include <algorithm>
 #include <iostream>
 
-bool greater5 ( int value ) {
-   return value > 5;
+bool greater5 ( int value )
+{
+    return value > 5;
 }
 
-int main() {
-   using namespace std;
-   vector <int> v1, v2;
-   vector <int>::iterator Iter1, Iter2;
+int main()
+{
+    using namespace std;
+    vector<int> v1, v2;
+    vector<int>::iterator Iter1, Iter2;
 
-   int i;
-   for ( i = 0 ; i <= 10 ; i++ )
-   {
-      v1.push_back( i );
-   }
-   random_shuffle( v1.begin( ), v1.end( ) );
+    int i;
+    for ( i = 0 ; i <= 10 ; i++ )
+    {
+        v1.push_back( i );
+    }
+    random_shuffle( v1.begin( ), v1.end( ) );
 
-   cout << "Vector v1 is ( " ;
-   for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
-      cout << *Iter1 << " ";
-   cout << ")." << endl;
+    cout << "Vector v1 is ( " ;
+    for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
+        cout << *Iter1 << " ";
+    cout << ")." << endl;
 
-   // Partition the range with predicate greater10
-   partition ( v1.begin( ), v1.end( ), greater5 );
-   cout << "The partitioned set of elements in v1 is: ( " ;
-   for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
-      cout << *Iter1 << " ";
-   cout << ")." << endl;
+    // Partition the range with predicate greater10
+    partition ( v1.begin( ), v1.end( ), greater5 );
+    cout << "The partitioned set of elements in v1 is: ( " ;
+    for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
+        cout << *Iter1 << " ";
+    cout << ")." << endl;
 }
 ```
 
-## <a name="partition_copy"></a> partition_copy
+## <a name="partition_copy"></a>partition_copy
 
-Bir koşul olduğu öğeleri kopyalar **true** bir hedef ve koşulun **false** diğerine. Öğeler belirtilen bir aralıktan gelmelidir.
+, Koşulun bir hedefe **doğru** olması için ve koşulun **yanlış** olduğu bir diğerinin olduğu öğeleri kopyalar. Öğeler belirtilen bir aralıktan gelmelidir.
 
 ```cpp
-template<class InputIterator, class OutputIterator1, class OutputIterator2, class Predicate>
-pair<OutputIterator1, OutputIterator2>
-    partition_copy(
+template<class InputIterator, class OutputIterator1, class OutputIterator2, class UnaryPredicate>
+pair<OutputIterator1, OutputIterator2> partition_copy(
     InputIterator first,
     InputIterator last,
     OutputIterator1 dest1,
     OutputIterator2 dest2,
-    Predicate pred);
-    
-template <class ExecutionPolicy, class ForwardIterator, class ForwardIterator1,
-class ForwardIterator2, class Predicate>
-pair<ForwardIterator1, ForwardIterator2>
-partition_copy(
+    UnaryPredicate pred);
+
+template <class ExecutionPolicy, class ForwardIterator, class ForwardIterator1, class ForwardIterator2, class UnaryPredicate>
+pair<ForwardIterator1, ForwardIterator2> partition_copy(
     ExecutionPolicy&& exec,
-    ForwardIterator first, 
+    ForwardIterator first,
     ForwardIterator last,
-    ForwardIterator1 out_true, 
+    ForwardIterator1 out_true,
     ForwardIterator2 out_false,
-    Predicate pred);
+    UnaryPredicate pred);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*ilk*\
-Bir koşulu kontrol etmek için bir aralık başlangıcını gösteren bir giriş yineleyici.
+*Exec*\
+Kullanılacak yürütme ilkesi.
 
-*Son*\
-Bir aralığın sonunu gösteren bir giriş yineleyici.
+*adı*\
+Bir koşulu denetlemek için aralığın başlangıcını gösteren bir giriş Yineleyici.
+
+*soyadına*\
+Bir aralığın sonunu gösteren bir giriş yineleyicisi.
 
 *dest1*\
-Çıkış yineleyici için bir koşul true döndüren öğeleri kopyalamak için kullanılan test kullanarak *_Pred*.
+*Pred*kullanılarak test edilen bir koşul için doğru döndüren öğeleri kopyalamak için kullanılan bir çıkış yineleyicisi.
 
 *dest2*\
-Çıkış yineleyici için bir koşul false döndüren öğeleri kopyalamak için kullanılan test kullanarak *_Pred*.
+*Pred*kullanılarak test edilen bir koşul için yanlış döndüren öğeleri kopyalamak için kullanılan bir çıkış yineleyicisi.
 
-*_Pred*\
-Sınanacak koşulu. Bu test edilecek koşulu tanımlayan bir kullanıcı tanımlı işlevin doğrulama nesnesi tarafından sağlanır. Bir koşulu, tek bir bağımsız değişken alır ve döndürür **true** veya **false**.
+*pred*\
+Sınanacak koşul. Bu, test edilecek koşulu tanımlayan Kullanıcı tanımlı bir koşul işlevi nesnesi tarafından sağlanır. Birli koşul tek bir bağımsız değişken alır ve **true** veya **false**değerini döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon işlevi her öğe kopyalar `X` içinde `[first,last)` için `*dest1++` varsa `_Pred(X)` true ise veya `*dest2++` Aksi takdirde. Döndürür `pair<OutputIterator1, OutputIterator2>(dest1, dest2)`.
+Şablon işlevi, true ise, `X` veya `[first,last)` `*dest1++` `pred(X)` değilse`*dest2++` öğesine öğesine her öğeyi kopyalar. Döndürür `pair<OutputIterator1, OutputIterator2>(dest1, dest2)`.
 
-## <a name="partition_point"></a> partition_point
+## <a name="partition_point"></a>partition_point
 
 Koşulu karşılamayan verili aralıktaki ilk öğeyi döndürür. Öğeler koşulu karşılayanlar karşılamayanlardan önce gelecek şekilde sıralanır.
 
 ```cpp
-template<class ForwardIterator, class Predicate>
+template<class ForwardIterator, class UnaryPredicate>
 ForwardIterator partition_point(
     ForwardIterator first,
     ForwardIterator last,
-    Predicate comp);
+    UnaryPredicate pred);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*ilk*\
-A `ForwardIterator` denetlemek için bir koşul için bir aralık başlangıcını gösterir.
+*adı*\
+Bir `ForwardIterator` koşulu denetlemek için aralığın başlangıcını belirten bir.
 
-*Son*\
-A `ForwardIterator` bir aralığın sonunu belirtir.
+*soyadına*\
+Bir `ForwardIterator` aralığın sonunu gösteren bir.
 
-*Comp*\
-Sınanacak koşulu. Bu öğe, aranan tarafından karşılanması koşul tanımlayan bir kullanıcı tanımlı işlevin doğrulama nesnesi tarafından sağlanır. Bir koşulu, tek bir bağımsız değişken alır ve döndürür **true** veya **false**.
+*pred*\
+Sınanacak koşul. Bu, aranmakta olan öğe tarafından yerine getirilmesi gereken koşulu tanımlayan Kullanıcı tanımlı bir koşul işlevi nesnesi tarafından sağlanır. Birli koşul tek bir bağımsız değişken alır ve **true** veya **false**değerini döndürür.
 
-### <a name="return-value"></a>Dönüş Değeri
+### <a name="return-value"></a>Dönüş değeri
 
-Döndürür bir `ForwardIterator` tarafından test koşul yerine getirmiyor ilk öğeye başvuran *comp*, ya da döndürür *son* bir bulunamaması durumunda.
+`ForwardIterator` *Pred*tarafından test edilmiş koşulu yerine getirmeyen ilk öğeye başvuran bir döndürür veya bir tane bulunamazsa *son* ' u döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon işlevi ilk yineleyicisi bulur `it` içinde `[first, last)` hangi `comp(*it)` olduğu **false**. Sıralı olarak sıralanmalıdır *comp*.
+Şablon işlevi `it` ' de **false**' `[first, last)` `pred(*it)` olan ilk yineleyiciyi bulur. Sıra, *Pred*tarafından sıralanmalıdır.
 
-## <a name="pop_heap"></a> pop_heap
+## <a name="pop_heap"></a>pop_heap
 
 En büyük öğeyi bir yığının önünden aralıktaki bir sonraki son konuma kaldırır ve ardından kalan öğelerden yeni bir yığın oluşturur.
 
 ```cpp
 template<class RandomAccessIterator>
-void pop_heap( RandomAccessIterator first, RandomAccessIterator last);
+void pop_heap(
+    RandomAccessIterator first,
+    RandomAccessIterator last);
 
 template<class RandomAccessIterator, class BinaryPredicate>
-void pop_heap(RandomAccessIterator first, RandomAccessIterator last, BinaryPredicate comp);
+void pop_heap(
+    RandomAccessIterator first,
+    RandomAccessIterator last,
+    BinaryPredicate pred);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*ilk*\
-Yığındaki ilk öğenin konumunu ele alan bir rastgele erişim yineleyicisi.
+*adı*\
+Yığın içindeki ilk öğenin konumunu ele alarak rastgele erişimli bir yineleyici.
 
-*Son*\
-Bir önceki öğenin konumunu son öğesi yığınındaki rastgele erişim yineleyici.
+*soyadına*\
+Yığın içindeki son öğeden sonraki konumu ele alarak rastgele erişimli bir yineleyici.
 
-*Comp*\
-Bir öğenin daha az olan algılama tanımlayan kullanıcı tanımlı işlevin doğrulama nesnesi. İkili koşulu, iki bağımsız değişkeni alır ve döndürür **true** karşılanmazsa ve **false** koşullar karşılanırsa.
+*pred*\
+Bir öğenin diğerinden küçük olduğu anlamlı olduğunu tanımlayan Kullanıcı tanımlı koşul işlevi nesnesi. İkili koşul iki bağımsız değişken alır ve memnun olmadığında **true** ve **false** değeri döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`pop_heap` Algoritmasıdır, aralığın sondan sonraki konumunda bir öğe eklenen öğe eklenen söz konusu, aralıktaki önceki öğeleri içeren bir yığın push_heap algoritması tarafından gerçekleştirilen işlem tersini yığın yığınındaki öğelerden daha büyüktür.
+`pop_heap` Algoritma, Push_heap algoritması tarafından gerçekleştirilen işlemin tersidir, bu, bir aralığın bir sonraki-son konumundaki bir öğenin aralıktaki önceki öğelerden oluşan bir yığına eklendiği, bu durumda öğe, yığın, yığında zaten bulunan öğelerden daha büyük.
 
-Yığınlar iki özelliğe sahiptir:
+Heap 'ler iki özelliğe sahiptir:
 
-- İlk öğe her zaman daha büyüktür.
+- İlk öğe her zaman en büyüktür.
 
-- Öğeleri eklenebilir veya Logaritmik süre kaldırıldı.
+- Öğeler, logaritmik bir zamanda eklenebilir veya kaldırılabilir.
 
-Yığınlar öncelikli kuyruklardaki uygulamak için ideal bir yol ve bunlar uygulamasında kullanılır C++ standart kitaplığı kapsayıcı bağdaştırıcısı [priority_queue sınıfı](../standard-library/priority-queue-class.md).
+Heap 'ler, öncelik kuyruklarını uygulamanın ideal bir yoludur ve C++ standart kitaplık kapsayıcı bağdaştırıcısı [priority_queue sınıfının](../standard-library/priority-queue-class.md)uygulamasında kullanılır.
 
-Başvurulan aralık geçerli olmalı; Tüm İşaretçiler tekrar başvurulabilir olmalı ve dizi içinde son konuma ilk konumdan erişilebilmelidir.
+Başvurulan Aralık geçerli olmalıdır; Tüm işaretçiler, en son artırılamadı tarafından ilk konumdan erişilebilir olması gerekir.
 
-Yeni eklenen son öğe dışlama aralığı, bir yığın olması gerekir.
+Sonundaki yeni eklenen öğeyi hariç tutma bir yığın olmalıdır.
 
-Karmaşıklığı en fazla günlük gerektiren Logaritmik (* Soyadı - *) karşılaştırmalar.
+Karmaşıklık, en çok `log (last - first)` karşılaştırmaların gerektirmesi için karmaşıktır.
 
 ### <a name="example"></a>Örnek
 
@@ -5794,61 +5952,62 @@ Karmaşıklığı en fazla günlük gerektiren Logaritmik (* Soyadı - *) karş�
 #include <functional>
 #include <iostream>
 
-int main()  {
-   using namespace std;
-   vector <int> v1;
-   vector <int>::iterator Iter1, Iter2;
+int main()
+{
+    using namespace std;
+    vector<int> v1;
+    vector<int>::iterator Iter1, Iter2;
 
-   int i;
-   for ( i = 1 ; i <= 9 ; i++ )
-      v1.push_back( i );
+    int i;
+    for ( i = 1 ; i <= 9 ; i++ )
+        v1.push_back( i );
 
-   // Make v1 a heap with default less than ordering
-   random_shuffle( v1.begin( ), v1.end( ) );
-   make_heap ( v1.begin( ), v1.end( ) );
-   cout << "The heaped version of vector v1 is ( " ;
-   for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
-      cout << *Iter1 << " ";
-   cout << ")." << endl;
+    // Make v1 a heap with default less than ordering
+    random_shuffle( v1.begin( ), v1.end( ) );
+    make_heap ( v1.begin( ), v1.end( ) );
+    cout << "The heaped version of vector v1 is ( " ;
+    for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
+        cout << *Iter1 << " ";
+    cout << ")." << endl;
 
-   // Add an element to the back of the heap
-   v1.push_back( 10 );
-   push_heap( v1.begin( ), v1.end( ) );
-   cout << "The reheaped v1 with 10 added is ( " ;
-   for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
-      cout << *Iter1 << " ";
-   cout << ")." << endl;
+    // Add an element to the back of the heap
+    v1.push_back( 10 );
+    push_heap( v1.begin( ), v1.end( ) );
+    cout << "The reheaped v1 with 10 added is ( " ;
+    for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
+        cout << *Iter1 << " ";
+    cout << ")." << endl;
 
-   // Remove the largest element from the heap
-   pop_heap( v1.begin( ), v1.end( ) );
-   cout << "The heap v1 with 10 removed is ( " ;
-   for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
-      cout << *Iter1 << " ";
-   cout << ")." << endl << endl;
+    // Remove the largest element from the heap
+    pop_heap( v1.begin( ), v1.end( ) );
+    cout << "The heap v1 with 10 removed is ( " ;
+    for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
+        cout << *Iter1 << " ";
+    cout << ")." << endl << endl;
 
-   // Make v1 a heap with greater-than ordering with a 0 element
-   make_heap ( v1.begin( ), v1.end( ), greater<int>( ) );
-   v1.push_back( 0 );
-   push_heap( v1.begin( ), v1.end( ), greater<int>( ) );
-   cout << "The 'greater than' reheaped v1 puts the smallest "
+    // Make v1 a heap with greater-than ordering with a 0 element
+    make_heap ( v1.begin( ), v1.end( ), greater<int>( ) );
+    v1.push_back( 0 );
+    push_heap( v1.begin( ), v1.end( ), greater<int>( ) );
+    cout << "The 'greater than' reheaped v1 puts the smallest "
         << "element first:\n ( " ;
-   for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
-      cout << *Iter1 << " ";
-   cout << ")." << endl;
+    for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
+        cout << *Iter1 << " ";
+    cout << ")." << endl;
 
-   // Application of pop_heap to remove the smallest element
-   pop_heap( v1.begin( ), v1.end( ), greater<int>( ) );
-   cout << "The 'greater than' heaped v1 with the smallest element\n "
+    // Application of pop_heap to remove the smallest element
+    pop_heap( v1.begin( ), v1.end( ), greater<int>( ) );
+    cout << "The 'greater than' heaped v1 with the smallest element\n "
         << "removed from the heap is: ( " ;
-   for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
-      cout << *Iter1 << " ";
-   cout << ")." << endl;
+    for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
+        cout << *Iter1 << " ";
+    cout << ")." << endl;
 }
 ```
 
-## <a name="prev_permutation"></a> prev_permutation
+## <a name="prev_permutation"></a>prev_permutation
 
-Bir aralıktaki öğeleri yeniden sıralar, böylece, önceki anlamı bir ikili koşula sahip burada belirtilebilir varsa özgün sıralama sözlüksel önceki permütasyon ile değiştirilir.
+Bir aralıktaki öğeleri yeniden sıralar, böylece özgün sıralama, varsa sözcüıgrafik önceki daha büyük permütasyon ile değiştirilmelidir, bu durumda Previous 'in anlamı bir ikili koşula göre belirtilebilir.
 
 ```cpp
 template<class BidirectionalIterator>
@@ -5860,31 +6019,31 @@ template<class BidirectionalIterator, class BinaryPredicate>
 bool prev_permutation(
     BidirectionalIterator first,
     BidirectionalIterator last,
-    BinaryPredicate comp);
+    BinaryPredicate pred);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*ilk*\
-Dizilmiş için aralıktaki ilk öğenin konumuna işaret eden bir çift yönlü yineleyici.
+*adı*\
+Aralıktaki ilk öğenin konumunu gösteren çift yönlü bir yineleyici.
 
-*Son*\
-Dizilmiş için bir son öğeden aralığındaki konumu işaret eden bir çift yönlü yineleyici.
+*soyadına*\
+Çift yönlü bir yineleyici, aralıktaki son öğeden geçmiş bir konuma işaret ediyor.
 
-*Comp*\
-Sıralama, ardışık öğeleri tarafından karşılanması için karşılaştırma ölçütü tanımlayan kullanıcı tanımlı işlevin doğrulama nesnesi. İkili koşulu, iki bağımsız değişkeni alır ve döndürür **true** karşılanmazsa ve **false** koşullar karşılanırsa.
+*pred*\
+Sıralamada birbirini izleyen öğeler tarafından karşılanması gereken karşılaştırma ölçütünü tanımlayan Kullanıcı tanımlı koşul işlevi nesnesi. İkili koşul iki bağımsız değişken alır ve memnun olmadığında **true** ve **false** değeri döndürür.
 
-### <a name="return-value"></a>Dönüş Değeri
+### <a name="return-value"></a>Dönüş değeri
 
-**true** lexicographically önceki permütasyon varsa ve aralığı; özgün sıralama değiştirilmiştir, aksi takdirde **false**, bu durumda sıralama sözlüksel en büyük dönüştürülür PERMÜTASYON.
+lexıgrafik önceki permütasyon varsa ve aralığın orijinal sıralamasını değiştirse **doğru** ; Aksi takdirde **yanlış**, bu durumda sıralama lexıgrafiksel en büyük PERMÜTASYONA dönüştürülür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Başvurulan aralık geçerli olmalı; Tüm İşaretçiler tekrar başvurulabilir olmalı ve dizi içinde son konuma ilk konumdan erişilebilmelidir.
+Başvurulan Aralık geçerli olmalıdır; Tüm işaretçiler, en son artırılamadı tarafından ilk konumdan erişilebilir olması gerekir.
 
-Varsayılan ikili koşul küçüktür aralıktaki öğeleri daha küçük olması gerekir-daha önceki permütasyon iyi tanımlanmış olduğundan emin olmak için karşılaştırılabilir.
+Varsayılan ikili koşul değerinden küçüktür ve önceki permütasyon 'nin iyi tanımlanmış olduğundan emin olmak için aralıktaki öğelerin karşılaştırılabilir olması gerekir.
 
-Karmaşıklığı en fazla ile doğrusal (`last` -  `first`) / 2 değiştirir.
+Karmaşıklık, en çok (`last` - `first`)/2 takas ile doğrusal bir değer.
 
 ### <a name="example"></a>Örnek
 
@@ -5903,97 +6062,98 @@ ostream& operator<<( ostream& osIn, const CInt& rhs );
 
 class CInt {
 public:
-   CInt( int n = 0 ) : m_nVal( n ){}
-   CInt( const CInt& rhs ) : m_nVal( rhs.m_nVal ){}
-   CInt&   operator=( const CInt& rhs ) {m_nVal =
-   rhs.m_nVal; return *this;}
-   bool operator<( const CInt& rhs ) const
-      {return ( m_nVal < rhs.m_nVal );}
-   friend ostream& operator<<( ostream& osIn, const CInt& rhs );
+    CInt( int n = 0 ) : m_nVal( n ){}
+    CInt( const CInt& rhs ) : m_nVal( rhs.m_nVal ){}
+    CInt&   operator=( const CInt& rhs ) {m_nVal =
+    rhs.m_nVal; return *this;}
+    bool operator<( const CInt& rhs ) const
+        {return ( m_nVal < rhs.m_nVal );}
+    friend ostream& operator<<( ostream& osIn, const CInt& rhs );
 
 private:
-   int m_nVal;
+    int m_nVal;
 };
 
 inline ostream& operator<<( ostream& osIn, const CInt& rhs ) {
-   osIn << "CInt( " << rhs.m_nVal << " )";
-   return osIn;
+    osIn << "CInt( " << rhs.m_nVal << " )";
+    return osIn;
 }
 
 // Return whether modulus of elem1 is less than modulus of elem2
 bool mod_lesser (int elem1, int elem2 ) {
-   if ( elem1 < 0 )
-      elem1 = - elem1;
-   if ( elem2 < 0 )
-      elem2 = - elem2;
-   return elem1 < elem2;
+    if ( elem1 < 0 )
+        elem1 = - elem1;
+    if ( elem2 < 0 )
+        elem2 = - elem2;
+    return elem1 < elem2;
 };
 
-int main() {
-   // Reordering the elements of type CInt in a deque
-   // using the prev_permutation algorithm
-   CInt c1 = 1, c2 = 5, c3 = 10;
-   bool deq1Result;
-   deque<CInt> deq1, deq2, deq3;
-   deque<CInt>::iterator d1_Iter;
+int main()
+{
+    // Reordering the elements of type CInt in a deque
+    // using the prev_permutation algorithm
+    CInt c1 = 1, c2 = 5, c3 = 10;
+    bool deq1Result;
+    deque<CInt> deq1, deq2, deq3;
+    deque<CInt>::iterator d1_Iter;
 
-   deq1.push_back ( c1 );
-   deq1.push_back ( c2 );
-   deq1.push_back ( c3 );
+    deq1.push_back ( c1 );
+    deq1.push_back ( c2 );
+    deq1.push_back ( c3 );
 
-   cout << "The original deque of CInts is deq1 = (";
-   for ( d1_Iter = deq1.begin( ); d1_Iter != --deq1.end( ); d1_Iter++ )
-      cout << " " << *d1_Iter << ",";
-   d1_Iter = --deq1.end( );
-   cout << " " << *d1_Iter << " )." << endl;
+    cout << "The original deque of CInts is deq1 = (";
+    for ( d1_Iter = deq1.begin( ); d1_Iter != --deq1.end( ); d1_Iter++ )
+        cout << " " << *d1_Iter << ",";
+    d1_Iter = --deq1.end( );
+    cout << " " << *d1_Iter << " )." << endl;
 
-   deq1Result = prev_permutation ( deq1.begin( ), deq1.end( ) );
+    deq1Result = prev_permutation ( deq1.begin( ), deq1.end( ) );
 
-   if ( deq1Result )
-      cout << "The lexicographically previous permutation "
-           << "exists and has \nreplaced the original "
-           << "ordering of the sequence in deq1." << endl;
-   else
-      cout << "The lexicographically previous permutation doesn't "
-           << "exist\n and the lexicographically "
-           << "smallest permutation\n has replaced the "
-           << "original ordering of the sequence in deq1." << endl;
+    if ( deq1Result )
+        cout << "The lexicographically previous permutation "
+            << "exists and has \nreplaced the original "
+            << "ordering of the sequence in deq1." << endl;
+    else
+        cout << "The lexicographically previous permutation doesn't "
+            << "exist\n and the lexicographically "
+            << "smallest permutation\n has replaced the "
+            << "original ordering of the sequence in deq1." << endl;
 
-   cout << "After one application of prev_permutation,\n deq1 = (";
-   for ( d1_Iter = deq1.begin( ); d1_Iter != --deq1.end( ); d1_Iter++ )
-      cout << " " << *d1_Iter << ",";
-   d1_Iter = --deq1.end( );
-   cout << " " << *d1_Iter << " )." << endl << endl;
+    cout << "After one application of prev_permutation,\n deq1 = (";
+    for ( d1_Iter = deq1.begin( ); d1_Iter != --deq1.end( ); d1_Iter++ )
+        cout << " " << *d1_Iter << ",";
+    d1_Iter = --deq1.end( );
+    cout << " " << *d1_Iter << " )." << endl << endl;
 
-   // Permutating vector elements with binary function mod_lesser
-   vector <int> v1;
-   vector <int>::iterator Iter1;
+    // Permutating vector elements with binary function mod_lesser
+    vector<int> v1;
+    vector<int>::iterator Iter1;
 
-   int i;
-   for ( i = -3 ; i <= 3 ; i++ )
-      v1.push_back( i );
+    int i;
+    for ( i = -3 ; i <= 3 ; i++ )
+        v1.push_back( i );
 
-   cout << "Vector v1 is ( " ;
-   for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
-      cout << *Iter1 << " ";
-   cout << ")." << endl;
+    cout << "Vector v1 is ( " ;
+    for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
+        cout << *Iter1 << " ";
+    cout << ")." << endl;
 
-   prev_permutation ( v1.begin( ), v1.end( ), mod_lesser );
+    prev_permutation ( v1.begin( ), v1.end( ), mod_lesser );
 
-   cout << "After the first prev_permutation, vector v1 is:\n v1 = ( " ;
-   for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
-      cout << *Iter1 << " ";
-   cout << ")." << endl;
+    cout << "After the first prev_permutation, vector v1 is:\n v1 = ( " ;
+    for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
+        cout << *Iter1 << " ";
+    cout << ")." << endl;
 
-   int iii = 1;
-   while ( iii <= 5 ) {
-      prev_permutation ( v1.begin( ), v1.end( ), mod_lesser );
-      cout << "After another prev_permutation of vector v1,\n v1 =   ( " ;
-      for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ;Iter1 ++ )
-         cout << *Iter1  << " ";
-      cout << ")." << endl;
-      iii++;
-   }
+    int iii = 1;
+    while ( iii <= 5 ) {
+        prev_permutation ( v1.begin( ), v1.end( ), mod_lesser );
+        cout << "After another prev_permutation of vector v1,\n v1 =   ( " ;
+        for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ;Iter1 ++ )
+            cout << *Iter1 << " ";
+        cout << ")." << endl;
+        iii++;
+    }
 }
 ```
 
@@ -6020,46 +6180,51 @@ After another prev_permutation of vector v1,
 v1 =   ( -3 -2 0 2 -1 1 3 ).
 ```
 
-## <a name="push_heap"></a> push_heap
+## <a name="push_heap"></a>push_heap
 
 Aralığın sonundaki bir öğeyi aralıktaki önceki öğeleri içeren mevcut yığına ekler.
 
 ```cpp
 template<class RandomAccessIterator>
-void push_heap( RandomAccessIterator first, RandomAccessIterator last );
+void push_heap(
+    RandomAccessIterator first,
+    RandomAccessIterator last );
 
 template<class RandomAccessIterator, class BinaryPredicate>
-void push_heap( RandomAccessIterator first, RandomAccessIterator last, BinaryPredicate comp);
+void push_heap(
+    RandomAccessIterator first,
+    RandomAccessIterator last,
+    BinaryPredicate pred);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*ilk*\
-Yığındaki ilk öğenin konumunu ele alan bir rastgele erişim yineleyicisi.
+*adı*\
+Yığın içindeki ilk öğenin konumunu ele alarak rastgele erişimli bir yineleyici.
 
-*Son*\
-Yığına dönüştürülmesi aralığın son öğesinde geçmiş konumu ele alan bir rastgele erişim yineleyicisi.
+*soyadına*\
+Bir yığına dönüştürülecek aralıktaki son öğeden geçmiş bir konumu ele alarak rastgele erişimli bir yineleyici.
 
-*Comp*\
-Bir öğenin daha az olan algılama tanımlayan kullanıcı tanımlı işlevin doğrulama nesnesi. İkili koşulu, iki bağımsız değişkeni alır ve döndürür **true** karşılanmazsa ve **false** koşullar karşılanırsa.
+*pred*\
+Bir öğenin diğerinden küçük olduğu anlamlı olduğunu tanımlayan Kullanıcı tanımlı koşul işlevi nesnesi. İkili koşul iki bağımsız değişken alır ve memnun olmadığında **true** ve **false** değeri döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Öğesi ilk geri sonuna mevcut yığına itilecek gerekir ve ardından bu öğenin varolan bir yığın eklemek için algoritma kullanılır.
+Öğe önce var olan bir yığının sonuna geri itilmeli ve ardından bu öğeyi mevcut yığına eklemek için algoritma kullanılır.
 
-Yığınlar iki özelliğe sahiptir:
+Heap 'ler iki özelliğe sahiptir:
 
-- İlk öğe her zaman daha büyüktür.
+- İlk öğe her zaman en büyüktür.
 
-- Öğeleri eklenebilir veya Logaritmik süre kaldırıldı.
+- Öğeler, logaritmik bir zamanda eklenebilir veya kaldırılabilir.
 
-Yığınlar öncelikli kuyruklardaki uygulamak için ideal bir yol ve bunlar uygulamasında kullanılır C++ standart kitaplığı kapsayıcı bağdaştırıcısı [priority_queue sınıfı](../standard-library/priority-queue-class.md).
+Heap 'ler, öncelik kuyruklarını uygulamanın ideal bir yoludur ve C++ standart kitaplık kapsayıcı bağdaştırıcısı [priority_queue sınıfının](../standard-library/priority-queue-class.md)uygulamasında kullanılır.
 
-Başvurulan aralık geçerli olmalı; Tüm İşaretçiler tekrar başvurulabilir olmalı ve dizi içinde son konuma ilk konumdan erişilebilmelidir.
+Başvurulan Aralık geçerli olmalıdır; Tüm işaretçiler, en son artırılamadı tarafından ilk konumdan erişilebilir olması gerekir.
 
-Yeni eklenen son öğe dışlama aralığı, bir yığın olması gerekir.
+Sonundaki yeni eklenen öğeyi hariç tutma bir yığın olmalıdır.
 
-Karmaşıklığı en fazla günlük gerektiren Logaritmik ( *- Soyadı*) karşılaştırmalar.
+Karmaşıklık, en çok `log(last - first)` karşılaştırmaların gerektirmesi için karmaşıktır.
 
 ### <a name="example"></a>Örnek
 
@@ -6072,108 +6237,114 @@ Karmaşıklığı en fazla günlük gerektiren Logaritmik ( *- Soyadı*) karşı
 #include <iostream>
 
 int main() {
-   using namespace std;
-   vector <int> v1, v2;
-   vector <int>::iterator Iter1, Iter2;
+    using namespace std;
+    vector<int> v1, v2;
+    vector<int>::iterator Iter1, Iter2;
 
-   int i;
-   for ( i = 1 ; i <= 9 ; i++ )
-      v1.push_back( i );
+    int i;
+    for ( i = 1 ; i <= 9 ; i++ )
+        v1.push_back( i );
 
-   random_shuffle( v1.begin( ), v1.end( ) );
+    random_shuffle( v1.begin( ), v1.end( ) );
 
-   cout << "Vector v1 is ( " ;
-   for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
-      cout << *Iter1 << " ";
-   cout << ")." << endl;
+    cout << "Vector v1 is ( " ;
+    for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
+        cout << *Iter1 << " ";
+    cout << ")." << endl;
 
-   // Make v1 a heap with default less than ordering
-   make_heap ( v1.begin( ), v1.end( ) );
-   cout << "The heaped version of vector v1 is ( " ;
-   for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
-      cout << *Iter1 << " ";
-   cout << ")." << endl;
+    // Make v1 a heap with default less than ordering
+    make_heap ( v1.begin( ), v1.end( ) );
+    cout << "The heaped version of vector v1 is ( " ;
+    for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
+        cout << *Iter1 << " ";
+    cout << ")." << endl;
 
-   // Add an element to the heap
-   v1.push_back( 10 );
-   cout << "The heap v1 with 10 pushed back is ( " ;
-   for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
-      cout << *Iter1 << " ";
-   cout << ")." << endl;
+    // Add an element to the heap
+    v1.push_back( 10 );
+    cout << "The heap v1 with 10 pushed back is ( " ;
+    for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
+        cout << *Iter1 << " ";
+    cout << ")." << endl;
 
-   push_heap( v1.begin( ), v1.end( ) );
-   cout << "The reheaped v1 with 10 added is ( " ;
-   for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
-      cout << *Iter1 << " ";
-   cout << ")." << endl << endl;
+    push_heap( v1.begin( ), v1.end( ) );
+    cout << "The reheaped v1 with 10 added is ( " ;
+    for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
+        cout << *Iter1 << " ";
+    cout << ")." << endl << endl;
 
-   // Make v1 a heap with greater than ordering
-   make_heap ( v1.begin( ), v1.end( ), greater<int>( ) );
-   cout << "The greater-than heaped version of v1 is\n ( " ;
-   for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
-      cout << *Iter1 << " ";
-   cout << ")." << endl;
+    // Make v1 a heap with greater than ordering
+    make_heap ( v1.begin( ), v1.end( ), greater<int>( ) );
+    cout << "The greater-than heaped version of v1 is\n ( " ;
+    for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
+        cout << *Iter1 << " ";
+    cout << ")." << endl;
 
-   v1.push_back(0);
-   cout << "The greater-than heap v1 with 11 pushed back is\n ( " ;
-   for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
-      cout << *Iter1 << " ";
-   cout << ")." << endl;
+    v1.push_back(0);
+    cout << "The greater-than heap v1 with 11 pushed back is\n ( " ;
+    for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
+        cout << *Iter1 << " ";
+    cout << ")." << endl;
 
-   push_heap( v1.begin( ), v1.end( ), greater<int>( ) );
-   cout << "The greater than reheaped v1 with 11 added is\n ( " ;
-   for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
-      cout << *Iter1 << " ";
-   cout << ")." << endl;
+    push_heap( v1.begin( ), v1.end( ), greater<int>( ) );
+    cout << "The greater than reheaped v1 with 11 added is\n ( " ;
+    for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
+        cout << *Iter1 << " ";
+    cout << ")." << endl;
 }
 ```
 
-## <a name="random_shuffle"></a> random_shuffle
+## <a name="random_shuffle"></a>random_shuffle
 
-Std::random_shuffle() işlevi yerine kullanım dışı [std::shuffle](../standard-library/algorithm-functions.md#shuffle). Bir kod örneği ve daha fazla bilgi için bkz: [ \<rastgele >](../standard-library/random.md) ve Stack Overflow post [neden std::random_shuffle yöntemleri kaldırılmaktadır C ++ 14'te?](https://go.microsoft.com/fwlink/p/?linkid=397954).
+Std:: random_shuffle () işlevi kullanım dışıdır ve [std:: karıştır](../standard-library/algorithm-functions.md#shuffle)ile değiştirilmiştir. Bir kod örneği ve daha fazla bilgi için, bkz [ \<. Random >](../standard-library/random.md) ve Stack Overflow Post, [c++ 14 ' te neden kullanım dışı bırakılıyor?](https://go.microsoft.com/fwlink/p/?linkid=397954).
 
-## <a name="remove"></a> Kaldır
+## <a name="remove"></a>temizlenmesine
 
 Kalan öğelerin sırasını bozmadan ve belirtilen değerin yeni aralığının sonunu boş döndürerek verili aralıktaki belirtilen bir değeri ortadan kaldırır.
 
 ```cpp
 template<class ForwardIterator, class Type>
-ForwardIterator remove(ForwardIterator first, ForwardIterator last, const Type& val);
+ForwardIterator remove(
+    ForwardIterator first,
+    ForwardIterator last,
+    const Type& value);
 
-template<class ExecutionPolicy, class ForwardIterator, class T>
+template<class ExecutionPolicy, class ForwardIterator, class Type>
 ForwardIterator remove(
     ExecutionPolicy&& exec,
-    ForwardIterator first, 
+    ForwardIterator first,
     ForwardIterator last,
-    const T& value);
+    const Type& value);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*ilk*\
-Öğeleri kaldırılmakta olan aralıktaki ilk öğenin konumunu bulan ileriye doğru yineleyici.
+*Exec*\
+Kullanılacak yürütme ilkesi.
 
-*Son*\
-Öğeleri kaldırılmakta olan aralıktaki son öğeden sonraki birinci konum ele alan ileriye doğru yineleyici.
+*adı*\
+Öğelerin kaldırıldığı aralıktaki ilk öğenin konumunu ele veren ileriye doğru bir yineleyici.
 
-*VAL*\
-Aralıktan kaldırılacak olan değer.
+*soyadına*\
+Öğelerin kaldırıldığı aralıktaki son öğeden bir önceki konumu ele veren ileriye doğru bir yineleyici.
 
-### <a name="return-value"></a>Dönüş Değeri
+*deeri*\
+Aralıktan kaldırılacak değer.
 
-Yeni değiştirilmiş aralığı, işlemi dizisi için belirtilen değer boş son öğeden bir önceki son konumunu bulan ileriye doğru yineleyici.
+### <a name="return-value"></a>Dönüş değeri
+
+Değiştirilen aralığın yeni bitiş konumunu ele aldığı bir ileriye doğru yineleyici, bir tane, belirtilen değerin en son öğesi boş olan bir sonraki dizi öğesidir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Başvurulan aralık geçerli olmalı; Tüm İşaretçiler tekrar başvurulabilir olmalı ve dizi içinde son konuma ilk konumdan erişilebilmelidir.
+Başvurulan Aralık geçerli olmalıdır; Tüm işaretçiler, en son artırılamadı tarafından ilk konumdan erişilebilir olması gerekir.
 
-Kaldırılmaz öğelerin sırasını tutarlı kalır.
+Kaldırılmayan öğelerin sırası kararlı kalır.
 
-`operator==` Eşitlik öğeler arasındaki bir eşdeğerlik ilişkisi işlenenleri arasındaki dayatır gerekir belirlemek için kullanılır.
+Öğeler `operator==` arasındaki eşitliğin belirlenmesi için kullanılan, işlenenleri arasında bir denklik ilişkisi getirmelidir.
 
-Karmaşıklığı doğrusal; vardır (`last` - `first`) eşitlik karşılaştırmaları.
+Karmaşıklık doğrusal; eşitlik için karşılaştırmalar`last`( - `first`) vardır.
 
-[Listesinde sınıfı](../standard-library/list-class.md) daha verimli bir üye işlev sürümüne sahip `remove`, hangi ayrıca i işaretçileri.
+[Liste sınıfının](../standard-library/list-class.md) daha verimli bir üye işlev sürümü `remove`vardır ve bu da işaretçileri yeniden bağlar.
 
 ### <a name="example"></a>Örnek
 
@@ -6184,90 +6355,97 @@ Karmaşıklığı doğrusal; vardır (`last` - `first`) eşitlik karşılaştır
 #include <algorithm>
 #include <iostream>
 
-int main() {
-   using namespace std;
-   vector <int> v1;
-   vector <int>::iterator Iter1, Iter2, new_end;
+int main()
+{
+    using namespace std;
+    vector<int> v1;
+    vector<int>::iterator Iter1, Iter2, new_end;
 
-   int i;
-   for ( i = 0 ; i <= 9 ; i++ )
-      v1.push_back( i );
+    int i;
+    for ( i = 0 ; i <= 9 ; i++ )
+        v1.push_back( i );
 
-   int ii;
-   for ( ii = 0 ; ii <= 3 ; ii++ )
-      v1.push_back( 7 );
+    int ii;
+    for ( ii = 0 ; ii <= 3 ; ii++ )
+        v1.push_back( 7 );
 
-   random_shuffle ( v1.begin( ), v1.end( ) );
-   cout << "Vector v1 is ( " ;
-   for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
-      cout << *Iter1 << " ";
-   cout << ")." << endl;
+    random_shuffle ( v1.begin( ), v1.end( ) );
+    cout << "Vector v1 is ( " ;
+    for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
+        cout << *Iter1 << " ";
+    cout << ")." << endl;
 
-   // Remove elements with a value of 7
-   new_end = remove ( v1.begin( ), v1.end( ), 7 );
+    // Remove elements with a value of 7
+    new_end = remove ( v1.begin( ), v1.end( ), 7 );
 
-   cout << "Vector v1 with value 7 removed is ( " ;
-   for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
-      cout << *Iter1 << " ";
-   cout << ")." << endl;
+    cout << "Vector v1 with value 7 removed is ( " ;
+    for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
+        cout << *Iter1 << " ";
+    cout << ")." << endl;
 
-   // To change the sequence size, use erase
-   v1.erase (new_end, v1.end( ) );
+    // To change the sequence size, use erase
+    v1.erase (new_end, v1.end( ) );
 
-   cout << "Vector v1 resized with value 7 removed is ( " ;
-   for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
-      cout << *Iter1 << " ";
-   cout << ")." << endl;
+    cout << "Vector v1 resized with value 7 removed is ( " ;
+    for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
+        cout << *Iter1 << " ";
+    cout << ")." << endl;
 }
 ```
 
-## <a name="remove_copy"></a> remove_copy
+## <a name="remove_copy"></a>remove_copy
 
 Öğeleri, belirtilen değerin kopyalanmayan öğeleri hariç, kalan öğelerin sırasını bozmadan ve yeni hedef aralığın sonuna döndürerek bir kaynak aralıktan bir hedef aralığa kopyalar.
 
 ```cpp
 template<class InputIterator, class OutputIterator, class Type>
-OutputIterator remove_copy(InputIterator first, InputIterator last, OutputIterator result, const Type& val);
+OutputIterator remove_copy(
+    InputIterator first,
+    InputIterator last,
+    OutputIterator result,
+    const Type& value);
 
-template<class ExecutionPolicy, class ForwardIterator1, class ForwardIterator2,
-class T>
+template<class ExecutionPolicy, class ForwardIterator1, class ForwardIterator2, class Type>
 ForwardIterator2 remove_copy(
     ExecutionPolicy&& exec,
-    ForwardIterator1 first, 
+    ForwardIterator1 first,
     ForwardIterator1 last,
-    ForwardIterator2 result, 
-    const T& value);
+    ForwardIterator2 result,
+    const Type& value);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*ilk*\
-Öğeleri kaldırılmakta olan aralıktaki ilk öğenin konumunu ele alan giriş yineleyici.
+*Exec*\
+Kullanılacak yürütme ilkesi.
 
-*Son*\
-Öğeleri kaldırılmakta olan aralıktaki son öğeden sonraki birinci konum ele alan bir giriş yineleyici.
+*adı*\
+Öğelerin kaldırıldığı aralıktaki ilk öğenin konumunu ele veren bir giriş Yineleyici.
 
-*Sonuç*\
-Öğeleri kaldırılmakta olan hedef aralıktaki ilk öğenin konumunu bulan çıktı yineleyici.
+*soyadına*\
+Öğelerin kaldırıldığı aralıktaki son öğeden önceki konumu ele veren bir giriş Yineleyici.
 
-*VAL*\
-Aralıktan kaldırılacak olan değer.
+*kaynaklanan*\
+Bir çıkış yineleyicisi, öğelerin kaldırıldığı hedef aralıktaki ilk öğenin konumunu ele alıyor.
 
-### <a name="return-value"></a>Dönüş Değeri
+*deeri*\
+Aralıktan kaldırılacak değer.
 
-Yeni Hedef aralığın, kopyalama işlemi dizisi için belirtilen değer boş son öğeden bir öncekine son konumunu bulan ileriye doğru yineleyici.
+### <a name="return-value"></a>Dönüş değeri
+
+Hedef aralığın yeni bitiş konumunu ele alarak bir ileri Yineleyici, belirtilen değerin Remnant sırasının bir kopyasının son öğesinden geçmiş.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Başvurulan kaynak ve hedef aralıklar geçerli olmalıdır; Tüm İşaretçiler tekrar başvurulabilir olmalı ve dizi içinde son konuma ilk konumdan erişilebilmelidir.
+Başvurulan kaynak ve hedef aralıkları geçerli olmalıdır; Tüm işaretçiler, en son artırılamadı tarafından ilk konumdan erişilebilir olması gerekir.
 
-Belirtilen değerin kaldırıldıktan sonra kopyalanacak işlemi öğeleri içerecek şekilde hedef aralığı yeterli boş alan olmalıdır.
+Hedef aralıkta, belirtilen değerin öğeleri kaldırıldıktan sonra kopyalanacak Remnant öğelerini içerecek kadar yeterli alan olması gerekir.
 
-Kaldırılmaz öğelerin sırasını tutarlı kalır.
+Kaldırılmayan öğelerin sırası kararlı kalır.
 
-`operator==` Eşitlik öğeler arasındaki bir eşdeğerlik ilişkisi işlenenleri arasındaki dayatır gerekir belirlemek için kullanılır.
+Öğeler `operator==` arasındaki eşitliğin belirlenmesi için kullanılan, işlenenleri arasında bir denklik ilişkisi getirmelidir.
 
-Karmaşıklığı doğrusal; vardır (`last` - `first`) eşitliği ve en çok karşılaştırmaları (`last` - `first`) atamaları.
+Karmaşıklık doğrusal; eşitlik ve en`last`çok ( - `first``last`)atamalariçin()karşılaştırmalarvardır. - `first`
 
 ### <a name="example"></a>Örnek
 
@@ -6278,89 +6456,96 @@ Karmaşıklığı doğrusal; vardır (`last` - `first`) eşitliği ve en çok ka
 #include <algorithm>
 #include <iostream>
 
-int main() {
-   using namespace std;
-   vector <int> v1, v2(10);
-   vector <int>::iterator Iter1, Iter2, new_end;
+int main()
+{
+    using namespace std;
+    vector<int> v1, v2(10);
+    vector<int>::iterator Iter1, Iter2, new_end;
 
-   int i;
-   for ( i = 0 ; i <= 9 ; i++ )
-      v1.push_back( i );
+    int i;
+    for ( i = 0 ; i <= 9 ; i++ )
+        v1.push_back( i );
 
-   int ii;
-   for ( ii = 0 ; ii <= 3 ; ii++ )
-      v1.push_back( 7 );
+    int ii;
+    for ( ii = 0 ; ii <= 3 ; ii++ )
+        v1.push_back( 7 );
 
-   random_shuffle (v1.begin( ), v1.end( ) );
-   cout << "The original vector v1 is:     ( " ;
-   for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
-      cout << *Iter1 << " ";
-   cout << ")." << endl;
+    random_shuffle (v1.begin( ), v1.end( ) );
+    cout << "The original vector v1 is:     ( " ;
+    for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
+        cout << *Iter1 << " ";
+    cout << ")." << endl;
 
-   // Remove elements with a value of 7
-   new_end = remove_copy ( v1.begin( ), v1.end( ), v2.begin( ), 7 );
+    // Remove elements with a value of 7
+    new_end = remove_copy ( v1.begin( ), v1.end( ), v2.begin( ), 7 );
 
-   cout << "Vector v1 is left unchanged as ( " ;
-   for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
-      cout << *Iter1 << " ";
-   cout << ")." << endl;
+    cout << "Vector v1 is left unchanged as ( " ;
+    for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
+        cout << *Iter1 << " ";
+    cout << ")." << endl;
 
-   cout << "Vector v2 is a copy of v1 with the value 7 removed:\n ( " ;
-   for ( Iter2 = v2.begin( ) ; Iter2 != v2.end( ) ; Iter2++ )
-      cout << *Iter2 << " ";
-   cout << ")." << endl;
+    cout << "Vector v2 is a copy of v1 with the value 7 removed:\n ( " ;
+    for ( Iter2 = v2.begin( ) ; Iter2 != v2.end( ) ; Iter2++ )
+        cout << *Iter2 << " ";
+    cout << ")." << endl;
 }
 ```
 
-## <a name="remove_copy_if"></a> remove_copy_if
+## <a name="remove_copy_if"></a>remove_copy_if
 
-Öğeleri, bir koşulu karşılayan kopyalanmayan öğeler hariç, kalan öğelerin sırasını bozmadan ve yeni hedef aralığın sonuna döndürerek bir kaynak aralıktan bir hedef aralığa kopyalar.
+Bir koşulu karşılayan öğeler hariç, bir kaynak aralıktaki öğeleri bir hedef aralığa kopyalar. Öğeler kalan öğelerin sırasını bozmadan kopyalanır. Yeni bir hedef aralığın sonunu döndürür.
 
 ```cpp
-template<class InputIterator, class OutputIterator, class Predicate>
-OutputIterator remove_copy_if(InputIterator first, InputIterator Last, OutputIterator result, Predicate pred);
+template<class InputIterator, class OutputIterator, class UnaryPredicate>
+OutputIterator remove_copy_if(
+    InputIterator first,
+    InputIterator last,
+    OutputIterator result,
+    UnaryPredicate pred);
 
-template<class ExecutionPolicy, class ForwardIterator1, class ForwardIterator2,
-class Predicate>
+template<class ExecutionPolicy, class ForwardIterator1, class ForwardIterator2, class UnaryPredicate>
 ForwardIterator2 remove_copy_if(
     ExecutionPolicy&& exec,
-    ForwardIterator1 first, 
+    ForwardIterator1 first,
     ForwardIterator1 last,
-    ForwardIterator2 result, 
-    Predicate pred);
+    ForwardIterator2 result,
+    UnaryPredicate pred);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*ilk*\
-Öğeleri kaldırılmakta olan aralıktaki ilk öğenin konumunu ele alan giriş yineleyici.
+*Exec*\
+Kullanılacak yürütme ilkesi.
 
-*Son*\
-Öğeleri kaldırılmakta olan aralıktaki son öğeden sonraki birinci konum ele alan bir giriş yineleyici.
+*adı*\
+Öğelerin kaldırıldığı aralıktaki ilk öğenin konumunu ele veren bir giriş Yineleyici.
 
-*Sonuç*\
-Öğeleri kaldırılmakta olan hedef aralıktaki ilk öğenin konumunu bulan çıktı yineleyici.
+*soyadına*\
+Öğelerin kaldırıldığı aralıktaki son öğeden önceki konumu ele veren bir giriş Yineleyici.
 
-*_Pred*\
-Karşılanması gereken birli koşul, bir öğenin değerini değiştirilecek olan ' dir.
+*kaynaklanan*\
+Bir çıkış yineleyicisi, öğelerin kaldırıldığı hedef aralıktaki ilk öğenin konumunu ele alıyor.
 
-### <a name="return-value"></a>Dönüş Değeri
+*pred*\
+Karşılanması gereken birli koşul, bir öğenin değerinin değiştirilmesini sağlar.
 
-Yeni Hedef aralığın, koşulu karşılayan öğeleri ücretsiz işlemi dizisi son öğeden bir önceki son konumunu bulan ileriye doğru yineleyici.
+### <a name="return-value"></a>Dönüş değeri
+
+Hedef aralığın yeni bitiş konumunu ele eden bir ileriye doğru yineleyici, bir tane, koşulun yerine geçen öğelerin boş olan Remnant dizisinin son öğesi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Başvurulan kaynak aralık geçerli olmalı; Tüm İşaretçiler tekrar başvurulabilir olmalı ve dizi içinde son konuma ilk konumdan erişilebilmelidir.
+Başvurulan kaynak aralığı geçerli olmalıdır; Tüm işaretçiler, en son artırılamadı tarafından ilk konumdan erişilebilir olması gerekir.
 
-Belirtilen değerin kaldırıldıktan sonra kopyalanacak işlemi öğeleri içerecek şekilde hedef aralığı yeterli boş alan olmalıdır.
+Hedef aralıkta, belirtilen değerin öğeleri kaldırıldıktan sonra kopyalanacak Remnant öğelerini içerecek kadar yeterli alan olması gerekir.
 
-Kaldırılmaz öğelerin sırasını tutarlı kalır.
+Kaldırılmayan öğelerin sırası kararlı kalır.
 
-`operator==` Eşitlik öğeler arasındaki bir eşdeğerlik ilişkisi işlenenleri arasındaki dayatır gerekir belirlemek için kullanılır.
+Öğeler `operator==` arasındaki eşitliğin belirlenmesi için kullanılan, işlenenleri arasında bir denklik ilişkisi getirmelidir.
 
-Karmaşıklığı doğrusal: vardır (`last` - `first`) eşitliği ve en çok karşılaştırmaları (`last` - `first`) atamaları.
+Karmaşıklık doğrusal: eşitlik ve en çok (`last``last``first` -  - )atamalarayönelikkarşılaştırmalarvardır`first`.
 
-Bu işlevlerin nasıl davrandığı hakkında daha fazla bilgi için bkz: [Checked Iterators](../standard-library/checked-iterators.md).
+Bu işlevlerin nasıl davrandığına ilişkin bilgi için bkz. [Checked Iterators](../standard-library/checked-iterators.md).
 
 ### <a name="example"></a>Örnek
 
@@ -6372,91 +6557,95 @@ Bu işlevlerin nasıl davrandığı hakkında daha fazla bilgi için bkz: [Check
 #include <iostream>
 
 bool greater6 ( int value ) {
-   return value > 6;
+    return value > 6;
 }
 
-int main() {
-   using namespace std;
-   vector <int> v1, v2(10);
-   vector <int>::iterator Iter1, Iter2, new_end;
+int main()
+{
+    using namespace std;
+    vector<int> v1, v2(10);
+    vector<int>::iterator Iter1, Iter2, new_end;
 
-   int i;
-   for ( i = 0 ; i <= 9 ; i++ )
-      v1.push_back( i );
+    int i;
+    for ( i = 0 ; i <= 9 ; i++ )
+        v1.push_back( i );
 
-   int ii;
-   for ( ii = 0 ; ii <= 3 ; ii++ )
-      v1.push_back( 7 );
+    int ii;
+    for ( ii = 0 ; ii <= 3 ; ii++ )
+        v1.push_back( 7 );
 
-   random_shuffle ( v1.begin( ), v1.end( ) );
-   cout << "The original vector v1 is:      ( " ;
-   for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
-      cout << *Iter1 << " ";
-   cout << ")." << endl;
+    random_shuffle ( v1.begin( ), v1.end( ) );
+    cout << "The original vector v1 is:      ( " ;
+    for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
+        cout << *Iter1 << " ";
+    cout << ")." << endl;
 
-   // Remove elements with a value greater than 6
-   new_end = remove_copy_if ( v1.begin( ), v1.end( ),
-      v2.begin( ), greater6 );
+    // Remove elements with a value greater than 6
+    new_end = remove_copy_if ( v1.begin( ), v1.end( ),
+        v2.begin( ), greater6 );
 
-   cout << "After the appliation of remove_copy_if to v1,\n "
-        << "vector v1 is left unchanged as ( " ;
-   for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
-      cout << *Iter1 << " ";
-   cout << ")." << endl;
+    cout << "After the appliation of remove_copy_if to v1,\n "
+         << "vector v1 is left unchanged as ( " ;
+    for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
+        cout << *Iter1 << " ";
+    cout << ")." << endl;
 
-   cout << "Vector v2 is a copy of v1 with values greater "
-        << "than 6 removed:\n ( " ;
-   for ( Iter2 = v2.begin( ) ; Iter2 != new_end ; Iter2++ )
-      cout << *Iter2 << " ";
-   cout << ")." << endl;
+    cout << "Vector v2 is a copy of v1 with values greater "
+         << "than 6 removed:\n ( " ;
+    for ( Iter2 = v2.begin( ) ; Iter2 != new_end ; Iter2++ )
+        cout << *Iter2 << " ";
+    cout << ")." << endl;
 }
 ```
 
-## <a name="remove_if"></a> remove_if
+## <a name="remove_if"></a>remove_if
 
 Kalan öğelerin sırasını bozmadan ve belirtilen değerin yeni aralığının sonunu boş döndürerek verili aralıktaki bir koşulu karşılayan öğeleri ortadan kaldırır.
 
 ```cpp
-template<class ForwardIterator, class Predicate>
+template<class ForwardIterator, class UnaryPredicate>
 ForwardIterator remove_if(
     ForwardIterator first,
     ForwardIterator last,
-    Predicate pred);
-    
-template<class ExecutionPolicy, class ForwardIterator, class Predicate>
+    UnaryPredicate pred);
+
+template<class ExecutionPolicy, class ForwardIterator, class UnaryPredicate>
 ForwardIterator remove_if(
     ExecutionPolicy&& exec,
-    ForwardIterator first, 
+    ForwardIterator first,
     ForwardIterator last,
-    Predicate pred);
+    UnaryPredicate pred);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*ilk*\
-Öğeleri kaldırılmakta olan aralıktaki ilk öğenin konumunu gösteren bir ileriye doğru yineleyici.
+*Exec*\
+Kullanılacak yürütme ilkesi.
 
-*Son*\
-Öğeleri kaldırılmakta olan aralıktaki son öğeden sonraki birinci konum için işaret eden bir ileriye doğru yineleyici.
+*adı*\
+Öğelerin kaldırıldığı aralıktaki ilk öğenin konumunu işaret eden ileriye doğru bir yineleyici.
 
-*_Pred*\
-Karşılanması gereken birli koşul, bir öğenin değerini değiştirilecek olan ' dir.
+*soyadına*\
+Bir ileri Yineleyici, öğelerin kaldırıldığı aralıktaki son öğeden bir önceki konumu işaret ediyor.
 
-### <a name="return-value"></a>Dönüş Değeri
+*pred*\
+Karşılanması gereken birli koşul, bir öğenin değerinin değiştirilmesini sağlar.
 
-Yeni değiştirilmiş aralığı, işlemi dizisi için belirtilen değer boş son öğeden bir önceki son konumunu bulan ileriye doğru yineleyici.
+### <a name="return-value"></a>Dönüş değeri
+
+Değiştirilen aralığın yeni bitiş konumunu ele aldığı bir ileriye doğru yineleyici, bir tane, belirtilen değerin en son öğesi boş olan bir sonraki dizi öğesidir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Başvurulan aralık geçerli olmalı; Tüm İşaretçiler tekrar başvurulabilir olmalı ve dizi içinde son konuma ilk konumdan erişilebilmelidir.
+Başvurulan Aralık geçerli olmalıdır; Tüm işaretçiler, en son artırılamadı tarafından ilk konumdan erişilebilir olması gerekir.
 
-Kaldırılmaz öğelerin sırasını tutarlı kalır.
+Kaldırılmayan öğelerin sırası kararlı kalır.
 
-`operator==` Eşitlik öğeler arasındaki bir eşdeğerlik ilişkisi işlenenleri arasındaki dayatır gerekir belirlemek için kullanılır.
+Öğeler `operator==` arasındaki eşitliğin belirlenmesi için kullanılan, işlenenleri arasında bir denklik ilişkisi getirmelidir.
 
-Karmaşıklığı doğrusal: vardır (`last` - `first`) eşitlik karşılaştırmaları.
+Karmaşıklık doğrusal: eşitlik için (`last` - `first`) karşılaştırmalar vardır.
 
-Liste, işaretçiler i Kaldır daha verimli bir üye işlev sürümü vardır.
+Listenin, yeniden bağlantı işaretçilerini Kaldır ' ın daha verimli bir üye işlev sürümü vardır.
 
 ### <a name="example"></a>Örnek
 
@@ -6467,48 +6656,50 @@ Liste, işaretçiler i Kaldır daha verimli bir üye işlev sürümü vardır.
 #include <algorithm>
 #include <iostream>
 
-bool greater6 ( int value ) {
-   return value > 6;
+bool greater6 ( int value )
+{
+    return value > 6;
 }
 
-int main() {
-   using namespace std;
-   vector <int> v1, v2;
-   vector <int>::iterator Iter1, Iter2, new_end;
+int main()
+{
+    using namespace std;
+    vector<int> v1, v2;
+    vector<int>::iterator Iter1, Iter2, new_end;
 
-   int i;
-   for ( i = 0 ; i <= 9 ; i++ )
-      v1.push_back( i );
+    int i;
+    for ( i = 0 ; i <= 9 ; i++ )
+        v1.push_back( i );
 
-   int ii;
-   for ( ii = 0 ; ii <= 3 ; ii++ )
-      v1.push_back( 7 );
+    int ii;
+    for ( ii = 0 ; ii <= 3 ; ii++ )
+        v1.push_back( 7 );
 
-   random_shuffle ( v1.begin( ), v1.end( ) );
-   cout << "Vector v1 is ( " ;
-   for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
-      cout << *Iter1 << " ";
-   cout << ")." << endl;
+    random_shuffle ( v1.begin( ), v1.end( ) );
+    cout << "Vector v1 is ( " ;
+    for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
+        cout << *Iter1 << " ";
+    cout << ")." << endl;
 
-   // Remove elements satisfying predicate greater6
-   new_end = remove_if (v1.begin( ), v1.end( ), greater6 );
+    // Remove elements satisfying predicate greater6
+    new_end = remove_if (v1.begin( ), v1.end( ), greater6 );
 
-   cout << "Vector v1 with elements satisfying greater6 removed is\n ( " ;
-   for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
-      cout << *Iter1 << " ";
-   cout << ")." << endl;
+    cout << "Vector v1 with elements satisfying greater6 removed is\n ( " ;
+    for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
+        cout << *Iter1 << " ";
+    cout << ")." << endl;
 
-   // To change the sequence size, use erase
-   v1.erase (new_end, v1.end( ) );
+    // To change the sequence size, use erase
+    v1.erase (new_end, v1.end( ) );
 
-   cout << "Vector v1 resized elements satisfying greater6 removed is\n ( " ;
-   for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
-      cout << *Iter1 << " ";
-   cout << ")." << endl;
+    cout << "Vector v1 resized elements satisfying greater6 removed is\n ( " ;
+    for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
+        cout << *Iter1 << " ";
+    cout << ")." << endl;
 }
 ```
 
-## <a name="replace"></a> Değiştir
+## <a name="replace"></a>değiştirin
 
 Bir aralıktaki tüm öğeleri inceler ve belirtilen bir değerle eşleşiyorsa değiştirir.
 
@@ -6519,39 +6710,42 @@ void replace(
     ForwardIterator last,
     const Type& oldVal,
     const Type& newVal);
-    
-template<class ExecutionPolicy, class ForwardIterator, class T>
+
+template<class ExecutionPolicy, class ForwardIterator, class Type>
 void replace(
     ExecutionPolicy&& exec,
-    ForwardIterator first, 
+    ForwardIterator first,
     ForwardIterator last,
-    const T& old_value, 
-    const T& new_value);
+    const Type& oldVal,
+    const Type& newVal);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*ilk*\
-Öğeleri değiştirilmekte aralıktaki ilk öğenin konumunu gösteren bir ileriye doğru yineleyici.
+*Exec*\
+Kullanılacak yürütme ilkesi.
 
-*Son*\
-Öğeleri değiştirilmekte aralığın son öğesinde geçmiş konumu bir işaret eden bir ileriye doğru yineleyici.
+*adı*\
+Öğelerin değiştirildiği aralıktaki ilk öğenin konumunu işaret eden ileri Yineleyici.
 
-*_OldVal*\
+*soyadına*\
+İleri Yineleyici, öğelerin değiştirilmekte olduğu aralıktaki son öğeden geçmiş bir konuma işaret ediyor.
+
+*oldVal*\
 Değiştirilmekte olan öğelerin eski değeri.
 
-*_NewVal*\
-Eski değerle öğelerine atanan yeni değer.
+*newVal*\
+Eski değer ile öğelere atanmakta olan yeni değer.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Başvurulan aralık geçerli olmalı; Tüm İşaretçiler tekrar başvurulabilir olmalı ve dizi içinde son konuma ilk konumdan erişilebilmelidir.
+Başvurulan Aralık geçerli olmalıdır; Tüm işaretçiler, en son artırılamadı tarafından ilk konumdan erişilebilir olması gerekir.
 
-Değiştirilmemişse öğelerin sırasını tutarlı kalır.
+Değiştirilmeyen öğelerin sırası kararlı kalır.
 
-`operator==` Eşitlik öğeler arasındaki bir eşdeğerlik ilişkisi işlenenleri arasındaki dayatır gerekir belirlemek için kullanılır.
+Öğeler `operator==` arasındaki eşitliğin belirlenmesi için kullanılan, işlenenleri arasında bir denklik ilişkisi getirmelidir.
 
-Karmaşıklığı doğrusal; vardır (`last` - `first`) eşitliği ve en çok karşılaştırmaları (`last` - `first`) atamaları yeni değerler.
+Karmaşıklık doğrusal;  - `last``first`eşitlik için karşılaştırmalar ve yeni değerlerin en çok () atamaları vardır.`last` - `first`
 
 ### <a name="example"></a>Örnek
 
@@ -6562,36 +6756,37 @@ Karmaşıklığı doğrusal; vardır (`last` - `first`) eşitliği ve en çok ka
 #include <algorithm>
 #include <iostream>
 
-int main() {
-   using namespace std;
-   vector <int> v1;
-   vector <int>::iterator Iter1;
+int main()
+{
+    using namespace std;
+    vector<int> v1;
+    vector<int>::iterator Iter1;
 
-   int i;
-   for ( i = 0 ; i <= 9 ; i++ )
-      v1.push_back( i );
+    int i;
+    for ( i = 0 ; i <= 9 ; i++ )
+        v1.push_back( i );
 
-   int ii;
-   for ( ii = 0 ; ii <= 3 ; ii++ )
-      v1.push_back( 7 );
+    int ii;
+    for ( ii = 0 ; ii <= 3 ; ii++ )
+        v1.push_back( 7 );
 
-   random_shuffle (v1.begin( ), v1.end( ) );
-   cout << "The original vector v1 is:\n ( " ;
-   for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
-      cout << *Iter1 << " ";
-   cout << ")." << endl;
+    random_shuffle (v1.begin( ), v1.end( ) );
+    cout << "The original vector v1 is:\n ( " ;
+    for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
+        cout << *Iter1 << " ";
+    cout << ")." << endl;
 
-   // Replace elements with a value of 7 with a value of 700
-   replace (v1.begin( ), v1.end( ), 7 , 700);
+    // Replace elements with a value of 7 with a value of 700
+    replace (v1.begin( ), v1.end( ), 7 , 700);
 
-   cout << "The vector v1 with a value 700 replacing that of 7 is:\n ( " ;
-   for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
-      cout << *Iter1 << " ";
-   cout << ")." << endl;
+    cout << "The vector v1 with a value 700 replacing that of 7 is:\n ( " ;
+    for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
+        cout << *Iter1 << " ";
+    cout << ")." << endl;
 }
 ```
 
-## <a name="replace_copy"></a> replace_copy
+## <a name="replace_copy"></a>replace_copy
 
 Bir kaynak aralığındaki her öğeyi inceler ve sonuç yeni bir hedef aralığına kopyalanırken öğe belirtilen değerle eşleşiyorsa, onu değiştirir.
 
@@ -6603,47 +6798,50 @@ OutputIterator replace_copy(
     OutputIterator result,
     const Type& oldVal,
     const Type& newVal);
-    
-template<class ExecutionPolicy, class ForwardIterator1, class ForwardIterator2, class T>
+
+template<class ExecutionPolicy, class ForwardIterator1, class ForwardIterator2, class Type>
 ForwardIterator2 replace_copy(
     ExecutionPolicy&& exec,
-    ForwardIterator1 first, 
+    ForwardIterator1 first,
     ForwardIterator1 last,
     ForwardIterator2 result,
-    const T& old_value, 
-    const T& new_value);
+    const Type& oldVal,
+    const Type& newVal);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*ilk*\
-Öğeleri değiştirilmekte aralıktaki ilk öğenin konumunu gösteren bir giriş yineleyici.
+*Exec*\
+Kullanılacak yürütme ilkesi.
 
-*Son*\
-Bir önceki öğenin konumunu son öğeyi aralıktaki öğeleri değiştirilmekte işaret eden bir giriş yineleyici.
+*adı*\
+Öğelerin değiştirildiği aralıktaki ilk öğenin konumunu gösteren bir giriş Yineleyici.
 
-*Sonuç*\
-Değiştirilen öğeleri dizisi kopyalandığı hedef aralıktaki ilk öğeyi gösteren bir çıkış yineleyici.
+*soyadına*\
+Bir giriş yineleyicisi, öğelerin değiştirildiği aralıktaki son öğeden önceki konuma işaret ediyor.
 
-*_OldVal*\
+*kaynaklanan*\
+Değiştirilen öğe sırasının kopyalandığı hedef aralıktaki ilk öğeyi gösteren bir çıkış yineleyicisi.
+
+*oldVal*\
 Değiştirilmekte olan öğelerin eski değeri.
 
-*_NewVal*\
-Eski değerle öğelerine atanan yeni değer.
+*newVal*\
+Eski değer ile öğelere atanmakta olan yeni değer.
 
-### <a name="return-value"></a>Dönüş Değeri
+### <a name="return-value"></a>Dönüş değeri
 
-Bir önceki öğenin konumunu son öğesi değiştirilmiş öğe dizisi kopyalandığı hedef aralıktaki işaret eden bir çıkış yineleyici.
+Bir çıkış yineleyicisi, hedef aralıktaki son öğeden geçen bir konuma işaret eden, değiştirilen öğe dizisi öğesine kopyalanır.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Başvurulan kaynak ve hedef aralıklar çakışmaması gerekir ve her ikisi de geçerli olmalıdır: tüm işaretçiler tekrar başvurulabilir olmalı ve dizileri içinde son konuma ilk konumdan erişilebilmelidir.
+Başvurulan kaynak ve hedef aralıkları çakışmamalı ve her ikisi de geçerli olmalıdır: tüm işaretçiler, artırılamadı tarafından ilk konumun erişilebilir olması gerekir.
 
-Değiştirilmemişse öğelerin sırasını tutarlı kalır.
+Değiştirilmeyen öğelerin sırası kararlı kalır.
 
-`operator==` Eşitlik öğeler arasındaki bir eşdeğerlik ilişkisi işlenenleri arasındaki dayatır gerekir belirlemek için kullanılır.
+Öğeler `operator==` arasındaki eşitliğin belirlenmesi için kullanılan, işlenenleri arasında bir denklik ilişkisi getirmelidir.
 
-Karmaşıklığı doğrusal: vardır (`last` - `first`) karşılaştırmalar eşitlik ve en çok (`last` - `first`) atamaları yeni değerler.
+Karmaşıklık doğrusal: eşitlik`last`için ( - `first`) ve yeni değerlerin en çok (`last` - `first`) atamalarına yönelik karşılaştırmalar vardır.
 
 ### <a name="example"></a>Örnek
 
@@ -6655,107 +6853,110 @@ Karmaşıklığı doğrusal: vardır (`last` - `first`) karşılaştırmalar eş
 #include <algorithm>
 #include <iostream>
 
-int main() {
-   using namespace std;
-   vector <int> v1;
-   list <int> L1 (15);
-   vector <int>::iterator Iter1;
-   list <int>::iterator L_Iter1;
+int main()
+{
+    using namespace std;
+    vector<int> v1;
+    list<int> L1 (15);
+    vector<int>::iterator Iter1;
+    list<int>::iterator L_Iter1;
 
-   int i;
-   for ( i = 0 ; i <= 9 ; i++ )
-      v1.push_back( i );
+    int i;
+    for ( i = 0 ; i <= 9 ; i++ )
+        v1.push_back( i );
 
-   int ii;
-   for ( ii = 0 ; ii <= 3 ; ii++ )
-      v1.push_back( 7 );
+    int ii;
+    for ( ii = 0 ; ii <= 3 ; ii++ )
+        v1.push_back( 7 );
 
-   random_shuffle ( v1.begin( ), v1.end( ) );
+    random_shuffle ( v1.begin( ), v1.end( ) );
 
-   int iii;
-   for ( iii = 0 ; iii <= 15 ; iii++ )
-      v1.push_back( 1 );
+    int iii;
+    for ( iii = 0 ; iii <= 15 ; iii++ )
+        v1.push_back( 1 );
 
-   cout << "The original vector v1 is:\n ( " ;
-   for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
-      cout << *Iter1 << " ";
-   cout << ")." << endl;
+    cout << "The original vector v1 is:\n ( " ;
+    for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
+        cout << *Iter1 << " ";
+    cout << ")." << endl;
 
-   // Replace elements in one part of a vector with a value of 7
-   // with a value of 70 and copy into another part of the vector
-   replace_copy ( v1.begin( ), v1.begin( ) + 14,v1.end( ) -15, 7 , 70);
+    // Replace elements in one part of a vector with a value of 7
+    // with a value of 70 and copy into another part of the vector
+    replace_copy ( v1.begin( ), v1.begin( ) + 14,v1.end( ) -15, 7 , 70);
 
-   cout << "The vector v1 with a value 70 replacing that of 7 is:\n ( " ;
-   for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
-      cout << *Iter1 << " ";
-   cout << ")." << endl;
+    cout << "The vector v1 with a value 70 replacing that of 7 is:\n ( " ;
+    for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
+        cout << *Iter1 << " ";
+    cout << ")." << endl;
 
-   // Replace elements in a vector with a value of 70
-   // with a value of 1 and copy into a list
-   replace_copy ( v1.begin( ), v1.begin( ) + 14,L1.begin( ), 7 , 1);
+    // Replace elements in a vector with a value of 70
+    // with a value of 1 and copy into a list
+    replace_copy ( v1.begin( ), v1.begin( ) + 14,L1.begin( ), 7 , 1);
 
-   cout << "The list copy L1 of v1 with the value 0 replacing "
-        << "that of 7 is:\n ( " ;
-   for ( L_Iter1 = L1.begin( ) ; L_Iter1 != L1.end( ) ; L_Iter1++ )
-      cout << *L_Iter1 << " ";
-   cout << ")." << endl;
+    cout << "The list copy L1 of v1 with the value 0 replacing "
+            << "that of 7 is:\n ( " ;
+    for ( L_Iter1 = L1.begin( ) ; L_Iter1 != L1.end( ) ; L_Iter1++ )
+        cout << *L_Iter1 << " ";
+    cout << ")." << endl;
 }
 ```
 
-## <a name="replace_copy_if"></a> replace_copy_if
+## <a name="replace_copy_if"></a>replace_copy_if
 
 Bir kaynak aralığındaki her öğeyi inceler ve sonuç yeni bir hedef aralığına kopyalanırken öğe belirtilen bir koşulu karşılıyorsa, onu değiştirir.
 
 ```cpp
-template<class InputIterator, class OutputIterator, class Predicate, class Type>
+template<class InputIterator, class OutputIterator, class UnaryPredicate, class Type>
 OutputIterator replace_copy_if(
     InputIterator first,
     InputIterator last,
     OutputIterator result,
-    Predicate pred,
-    const Type& val);
-    
-template<class ExecutionPolicy, class ForwardIterator1, class ForwardIterator2,
-class Predicate, class T>
+    UnaryPredicate pred,
+    const Type& value);
+
+template<class ExecutionPolicy, class ForwardIterator1, class ForwardIterator2, class UnaryPredicate, class Type>
 ForwardIterator2 replace_copy_if(
     ExecutionPolicy&& exec,
-    ForwardIterator1 first, 
+    ForwardIterator1 first,
     ForwardIterator1 last,
     ForwardIterator2 result,
-    Predicate pred, 
-    const T& new_value);
+    UnaryPredicate pred,
+    const Type& value);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*ilk*\
-Öğeleri değiştirilmekte aralıktaki ilk öğenin konumunu gösteren bir giriş yineleyici.
+*Exec*\
+Kullanılacak yürütme ilkesi.
 
-*Son*\
-Bir önceki öğenin konumunu son öğeyi aralıktaki öğeleri değiştirilmekte işaret eden bir giriş yineleyici.
+*adı*\
+Öğelerin değiştirildiği aralıktaki ilk öğenin konumunu gösteren bir giriş Yineleyici.
 
-*Sonuç*\
-Öğeleri kopyalandığı hedef aralıktaki ilk öğenin konumuna işaret eden bir çıkış yineleyici.
+*soyadına*\
+Bir giriş yineleyicisi, öğelerin değiştirildiği aralıktaki son öğeden önceki konuma işaret ediyor.
 
-*_Pred*\
-Karşılanması gereken birli koşul, bir öğenin değerini değiştirilecek olan ' dir.
+*kaynaklanan*\
+Bir çıkış yineleyicisi, öğelerin kopyalandığı hedef aralıktaki ilk öğenin konumunu işaret eder.
 
-*VAL*\
-Eski değeri koşulu karşılayan öğelerine atanan yeni değer.
+*pred*\
+Karşılanması gereken birli koşul, bir öğenin değerinin değiştirilmesini sağlar.
 
-### <a name="return-value"></a>Dönüş Değeri
+*deeri*\
+Eski değeri koşulu karşılayan öğelere atanmakta olan yeni değer.
 
-Bir önceki öğenin konumunu son öğesi değiştirilmiş öğe dizisi kopyalandığı hedef aralıktaki işaret eden bir çıkış yineleyici.
+### <a name="return-value"></a>Dönüş değeri
+
+Bir çıkış yineleyicisi, hedef aralıktaki son öğeden geçen bir konuma işaret eden, değiştirilen öğe dizisi öğesine kopyalanır.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Başvurulan kaynak ve hedef aralıklar çakışmaması gerekir ve her ikisi de geçerli olmalıdır: tüm işaretçiler tekrar başvurulabilir olmalı ve dizileri içinde son konuma ilk konumdan erişilebilmelidir.
+Başvurulan kaynak ve hedef aralıkları çakışmamalı ve her ikisi de geçerli olmalıdır: tüm işaretçiler, artırılamadı tarafından ilk konumun erişilebilir olması gerekir.
 
-Değiştirilmemişse öğelerin sırasını tutarlı kalır.
+Değiştirilmeyen öğelerin sırası kararlı kalır.
 
-`operator==` Eşitlik öğeler arasındaki bir eşdeğerlik ilişkisi işlenenleri arasındaki dayatır gerekir belirlemek için kullanılır.
+Öğeler `operator==` arasındaki eşitliğin belirlenmesi için kullanılan, işlenenleri arasında bir denklik ilişkisi getirmelidir.
 
-Karmaşıklığı doğrusal; vardır (`last` - `first`) eşitliği ve en çok karşılaştırmaları (`last` - `first`) atamaları yeni değerler.
+Karmaşıklık doğrusal;  - `last``first`eşitlik için karşılaştırmalar ve yeni değerlerin en çok () atamaları vardır.`last` - `first`
 
 ### <a name="example"></a>Örnek
 
@@ -6767,106 +6968,111 @@ Karmaşıklığı doğrusal; vardır (`last` - `first`) eşitliği ve en çok ka
 #include <algorithm>
 #include <iostream>
 
-bool greater6 ( int value ) {
-   return value > 6;
+bool greater6 ( int value )
+{
+    return value > 6;
 }
 
-int main() {
-   using namespace std;
-   vector <int> v1;
-   list <int> L1 (13);
-   vector <int>::iterator Iter1;
-   list <int>::iterator L_Iter1;
+int main()
+{
+    using namespace std;
+    vector<int> v1;
+    list<int> L1 (13);
+    vector<int>::iterator Iter1;
+    list<int>::iterator L_Iter1;
 
-   int i;
-   for ( i = 0 ; i <= 9 ; i++ )
-      v1.push_back( i );
+    int i;
+    for ( i = 0 ; i <= 9 ; i++ )
+        v1.push_back( i );
 
-   int ii;
-   for ( ii = 0 ; ii <= 3 ; ii++ )
-      v1.push_back( 7 );
+    int ii;
+    for ( ii = 0 ; ii <= 3 ; ii++ )
+        v1.push_back( 7 );
 
-   random_shuffle ( v1.begin( ), v1.end( ) );
+    random_shuffle ( v1.begin( ), v1.end( ) );
 
-   int iii;
-   for ( iii = 0 ; iii <= 13 ; iii++ )
-      v1.push_back( 1 );
+    int iii;
+    for ( iii = 0 ; iii <= 13 ; iii++ )
+        v1.push_back( 1 );
 
-   cout << "The original vector v1 is:\n ( " ;
-   for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
-      cout << *Iter1 << " ";
-   cout << ")." << endl;
+    cout << "The original vector v1 is:\n ( " ;
+    for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
+        cout << *Iter1 << " ";
+    cout << ")." << endl;
 
-   // Replace elements with a value of 7 in the 1st half of a vector
-   // with a value of 70 and copy it into the 2nd half of the vector
-   replace_copy_if ( v1.begin( ), v1.begin( ) + 14,v1.end( ) -14,
-      greater6 , 70);
+    // Replace elements with a value of 7 in the 1st half of a vector
+    // with a value of 70 and copy it into the 2nd half of the vector
+    replace_copy_if ( v1.begin( ), v1.begin( ) + 14,v1.end( ) -14,
+        greater6 , 70);
 
-   cout << "The vector v1 with values of 70 replacing those greater"
+    cout << "The vector v1 with values of 70 replacing those greater"
         << "\n than 6 in the 1st half & copied into the 2nd half is:\n ( " ;
-   for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
-      cout << *Iter1 << " ";
-   cout << ")." << endl;
+    for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
+        cout << *Iter1 << " ";
+    cout << ")." << endl;
 
-   // Replace elements in a vector with a value of 70
-   // with a value of 1 and copy into a list
-   replace_copy_if ( v1.begin( ), v1.begin( ) + 13,L1.begin( ),
-      greater6 , -1 );
+    // Replace elements in a vector with a value of 70
+    // with a value of 1 and copy into a list
+    replace_copy_if ( v1.begin( ), v1.begin( ) + 13,L1.begin( ),
+        greater6 , -1 );
 
-   cout << "A list copy of vector v1 with the value -1\n replacing "
+    cout << "A list copy of vector v1 with the value -1\n replacing "
         << "those greater than 6 is:\n ( " ;
-   for ( L_Iter1 = L1.begin( ) ; L_Iter1 != L1.end( ) ; L_Iter1++ )
-      cout << *L_Iter1 << " ";
-   cout << ")." << endl;
+    for ( L_Iter1 = L1.begin( ) ; L_Iter1 != L1.end( ) ; L_Iter1++ )
+        cout << *L_Iter1 << " ";
+    cout << ")." << endl;
 }
 ```
 
-## <a name="replace_if"></a> replace_if
+## <a name="replace_if"></a>replace_if
 
 Bir aralıktaki tüm öğeleri inceler ve belirtilen bir koşulu karşılıyorsa değiştirir.
 
 ```cpp
-template<class ForwardIterator, class Predicate, class Type>
+template<class ForwardIterator, class UnaryPredicate, class Type>
 void replace_if(
     ForwardIterator first,
     ForwardIterator last,
-    Predicate pred,
-    const Type& val);
-    
-template<class ExecutionPolicy, class ForwardIterator, class Predicate, class T>
+    UnaryPredicate pred,
+    const Type& value);
+
+template<class ExecutionPolicy, class ForwardIterator, class UnaryPredicate, class Type>
 void replace_if(
     ExecutionPolicy&& exec,
-    ForwardIterator first, 
+    ForwardIterator first,
     ForwardIterator last,
-    Predicate pred, 
-    const T& new_value);
+    UnaryPredicate pred,
+    const Type& value);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*ilk*\
-Öğeleri değiştirilmekte aralıktaki ilk öğenin konumunu gösteren bir ileriye doğru yineleyici.
+*Exec*\
+Kullanılacak yürütme ilkesi.
 
-*Son*\
-Öğeleri değiştirilmekte aralığın son öğesinde geçmiş konumu bir işaret eden bir yineleyici.
+*adı*\
+Öğelerin değiştirildiği aralıktaki ilk öğenin konumunu işaret eden ileri Yineleyici.
 
-*_Pred*\
-Karşılanması gereken birli koşul, bir öğenin değerini değiştirilecek olan ' dir.
+*soyadına*\
+Öğelerin değiştirilmekte olduğu aralıktaki son öğeden önceki konuma işaret eden bir yineleyici.
 
-*VAL*\
-Eski değeri koşulu karşılayan öğelerine atanan yeni değer.
+*pred*\
+Karşılanması gereken birli koşul, bir öğenin değerinin değiştirilmesini sağlar.
+
+*deeri*\
+Eski değeri koşulu karşılayan öğelere atanmakta olan yeni değer.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Başvurulan aralık geçerli olmalı; Tüm İşaretçiler tekrar başvurulabilir olmalı ve dizi içinde son konuma ilk konumdan erişilebilmelidir.
+Başvurulan Aralık geçerli olmalıdır; Tüm işaretçiler, en son artırılamadı tarafından ilk konumdan erişilebilir olması gerekir.
 
-Değiştirilmemişse öğelerin sırasını tutarlı kalır.
+Değiştirilmeyen öğelerin sırası kararlı kalır.
 
-Algoritma `replace_if` Genelleştirme algoritması olan `replace`, belirtilen sabit değer eşitliği yerine belirtilmesi için herhangi bir koşulu izin verme.
+Algoritma `replace_if` , belirli bir sabit değere eşitlik yerine `replace`her koşulun belirtilmesini sağlayan algoritmanın genelleştirmesidir.
 
-`operator==` Eşitlik öğeler arasındaki bir eşdeğerlik ilişkisi işlenenleri arasındaki dayatır gerekir belirlemek için kullanılır.
+Öğeler `operator==` arasındaki eşitliğin belirlenmesi için kullanılan, işlenenleri arasında bir denklik ilişkisi getirmelidir.
 
-Karmaşıklığı doğrusal: vardır (`last` - `first`) karşılaştırmalar eşitlik ve en çok (`last` - `first`) atamaları yeni değerler.
+Karmaşıklık doğrusal: eşitlik`last`için ( - `first`) ve yeni değerlerin en çok (`last` - `first`) atamalarına yönelik karşılaştırmalar vardır.
 
 ### <a name="example"></a>Örnek
 
@@ -6877,67 +7083,74 @@ Karmaşıklığı doğrusal: vardır (`last` - `first`) karşılaştırmalar eş
 #include <algorithm>
 #include <iostream>
 
-bool greater6 ( int value ) {
-   return value > 6;
+bool greater6 ( int value )
+{
+    return value > 6;
 }
 
-int main() {
-   using namespace std;
-   vector <int> v1;
-   vector <int>::iterator Iter1;
+int main()
+{
+    using namespace std;
+    vector<int> v1;
+    vector<int>::iterator Iter1;
 
-   int i;
-   for ( i = 0 ; i <= 9 ; i++ )
-      v1.push_back( i );
+    int i;
+    for ( i = 0 ; i <= 9 ; i++ )
+        v1.push_back( i );
 
-   int ii;
-   for ( ii = 0 ; ii <= 3 ; ii++ )
-      v1.push_back( 7 );
+    int ii;
+    for ( ii = 0 ; ii <= 3 ; ii++ )
+        v1.push_back( 7 );
 
-   random_shuffle ( v1.begin( ), v1.end( ) );
-   cout << "The original vector v1 is:\n ( " ;
-   for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
-      cout << *Iter1 << " ";
-   cout << ")." << endl;
+    random_shuffle ( v1.begin( ), v1.end( ) );
+    cout << "The original vector v1 is:\n ( " ;
+    for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
+        cout << *Iter1 << " ";
+    cout << ")." << endl;
 
-   // Replace elements satisfying the predicate greater6
-   // with a value of 70
-   replace_if ( v1.begin( ), v1.end( ), greater6 , 70);
+    // Replace elements satisfying the predicate greater6
+    // with a value of 70
+    replace_if ( v1.begin( ), v1.end( ), greater6 , 70);
 
-   cout << "The vector v1 with a value 70 replacing those\n "
-        << "elements satisfying the greater6 predicate is:\n ( " ;
-   for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
-      cout << *Iter1 << " ";
-   cout << ")." << endl;
+    cout << "The vector v1 with a value 70 replacing those\n "
+         << "elements satisfying the greater6 predicate is:\n ( " ;
+    for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
+        cout << *Iter1 << " ";
+    cout << ")." << endl;
 }
 ```
 
-## <a name="reverse"></a> geriye doğru
+## <a name="reverse"></a>tersini
 
 Bir aralık içindeki öğelerin sırasını tersine çevirir.
 
 ```cpp
 template<class BidirectionalIterator>
-void reverse(BidirectionalIterator first, BidirectionalIterator last);
+void reverse(
+    BidirectionalIterator first,
+    BidirectionalIterator last);
 
 template<class ExecutionPolicy, class BidirectionalIterator>
 void reverse(
     ExecutionPolicy&& exec,
-    BidirectionalIterator first, 
+    BidirectionalIterator first,
     BidirectionalIterator last);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*ilk*\
-İçinde öğeleri dizilmiş aralıktaki ilk öğenin konumuna işaret eden bir çift yönlü yineleyici.
+*Exec*\
+Kullanılacak yürütme ilkesi.
 
-*Son*\
-Bir önceki öğenin konumunu son öğesi içinde öğeleri dizilmiş aralıktaki işaret eden bir çift yönlü yineleyici.
+*adı*\
+Öğelerin daha fazla kapalı olduğu aralıktaki ilk öğenin konumunu gösteren çift yönlü bir yineleyici.
+
+*soyadına*\
+Öğelerin, öğelerin en son kullanıldığı aralıktaki son öğeden geçmiş bir konuma işaret eden çift yönlü bir yineleyici.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Başvurulan kaynak aralık geçerli olmalı; Tüm İşaretçiler tekrar başvurulabilir olmalı ve dizi içinde son konuma ilk konumdan erişilebilmelidir.
+Başvurulan kaynak aralığı geçerli olmalıdır; Tüm işaretçiler, en son artırılamadı tarafından ilk konumdan erişilebilir olması gerekir.
 
 ### <a name="example"></a>Örnek
 
@@ -6948,29 +7161,30 @@ Başvurulan kaynak aralık geçerli olmalı; Tüm İşaretçiler tekrar başvuru
 #include <algorithm>
 #include <iostream>
 
-int main() {
-   using namespace std;
-   vector <int> v1;
-   vector <int>::iterator Iter1;
+int main()
+{
+    using namespace std;
+    vector<int> v1;
+    vector<int>::iterator Iter1;
 
-   int i;
-   for ( i = 0 ; i <= 9 ; i++ )
-   {
-      v1.push_back( i );
-   }
+    int i;
+    for ( i = 0 ; i <= 9 ; i++ )
+    {
+        v1.push_back( i );
+    }
 
-   cout << "The original vector v1 is:\n ( " ;
-   for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
-      cout << *Iter1 << " ";
-   cout << ")." << endl;
+    cout << "The original vector v1 is:\n ( " ;
+    for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
+        cout << *Iter1 << " ";
+    cout << ")." << endl;
 
-   // Reverse the elements in the vector
-   reverse (v1.begin( ), v1.end( ) );
+    // Reverse the elements in the vector
+    reverse (v1.begin( ), v1.end( ) );
 
-   cout << "The modified vector v1 with values reversed is:\n ( " ;
-   for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
-      cout << *Iter1 << " ";
-   cout << ")." << endl;
+    cout << "The modified vector v1 with values reversed is:\n ( " ;
+    for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
+        cout << *Iter1 << " ";
+    cout << ")." << endl;
 }
 ```
 
@@ -6981,7 +7195,7 @@ The modified vector v1 with values reversed is:
 ( 9 8 7 6 5 4 3 2 1 0 ).
 ```
 
-## <a name="reverse_copy"></a> reverse_copy
+## <a name="reverse_copy"></a>reverse_copy
 
 Bir hedef aralığına kopyalanırken bir kaynak aralığındaki öğelerin sırasını tersine çevirir
 
@@ -6989,9 +7203,9 @@ Bir hedef aralığına kopyalanırken bir kaynak aralığındaki öğelerin sır
 template<class BidirectionalIterator, class OutputIterator>
 OutputIterator reverse_copy(
     BidirectionalIterator first,
-    BidirectionalIterator Last,
+    BidirectionalIterator last,
     OutputIterator result);
-    
+
 template<class ExecutionPolicy, class BidirectionalIterator, class ForwardIterator>
 ForwardIterator reverse_copy(
     ExecutionPolicy&& exec,
@@ -7002,22 +7216,25 @@ ForwardIterator reverse_copy(
 
 ### <a name="parameters"></a>Parametreler
 
-*ilk*\
-İçinde öğeleri dizilmiş kaynak aralıktaki ilk öğenin konumuna işaret eden bir çift yönlü yineleyici.
+*Exec*\
+Kullanılacak yürütme ilkesi.
 
-*Son*\
-Bir önceki öğenin konumunu son öğesi içinde öğeleri dizilmiş kaynak aralıktaki işaret eden bir çift yönlü yineleyici.
+*adı*\
+Bir çift yönlü yineleyiciden, öğelerin bir aralıktaki ilk öğenin konumunu gösteren bir çift yönlü Yineleyici.
 
-*Sonuç*\
-Öğeleri kopyalandığı hedef aralıktaki ilk öğenin konumuna işaret eden bir çıkış yineleyici.
+*soyadına*\
+Çift yönlü bir yineleyici, öğelerin, öğelerin, içindeki son öğeden en sonda yer aldığı bir konuma işaret ediyor.
 
-### <a name="return-value"></a>Dönüş Değeri
+*kaynaklanan*\
+Bir çıkış yineleyicisi, öğelerin kopyalandığı hedef aralıktaki ilk öğenin konumunu işaret eder.
 
-Bir önceki öğenin konumunu son öğesi değiştirilmiş öğe dizisi kopyalandığı hedef aralıktaki işaret eden bir çıkış yineleyici.
+### <a name="return-value"></a>Dönüş değeri
+
+Bir çıkış yineleyicisi, hedef aralıktaki son öğeden geçen bir konuma işaret eden, değiştirilen öğe dizisi öğesine kopyalanır.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Başvurulan kaynak ve hedef aralıklar geçerli olmalıdır; Tüm İşaretçiler tekrar başvurulabilir olmalı ve dizi içinde son konuma ilk konumdan erişilebilmelidir.
+Başvurulan kaynak ve hedef aralıkları geçerli olmalıdır; Tüm işaretçiler, en son artırılamadı tarafından ilk konumdan erişilebilir olması gerekir.
 
 ### <a name="example"></a>Örnek
 
@@ -7028,38 +7245,39 @@ Başvurulan kaynak ve hedef aralıklar geçerli olmalıdır; Tüm İşaretçiler
 #include <algorithm>
 #include <iostream>
 
-int main() {
-   using namespace std;
-   vector <int> v1, v2( 10 );
-   vector <int>::iterator Iter1, Iter2;
+int main()
+{
+    using namespace std;
+    vector<int> v1, v2( 10 );
+    vector<int>::iterator Iter1, Iter2;
 
-   int i;
-   for ( i = 0 ; i <= 9 ; i++ )
-   {
-      v1.push_back( i );
-   }
+    int i;
+    for ( i = 0 ; i <= 9 ; i++ )
+    {
+        v1.push_back( i );
+    }
 
-   cout << "The original vector v1 is:\n ( " ;
-   for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
-      cout << *Iter1 << " ";
-   cout << ")." << endl;
+    cout << "The original vector v1 is:\n ( " ;
+    for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
+        cout << *Iter1 << " ";
+    cout << ")." << endl;
 
-   // Reverse the elements in the vector
-   reverse_copy (v1.begin( ), v1.end( ), v2.begin( ) );
+    // Reverse the elements in the vector
+    reverse_copy (v1.begin( ), v1.end( ), v2.begin( ) );
 
-   cout << "The copy v2 of the reversed vector v1 is:\n ( " ;
-   for ( Iter2 = v2.begin( ) ; Iter2 != v2.end( ) ; Iter2++ )
-      cout << *Iter2 << " ";
-   cout << ")." << endl;
+    cout << "The copy v2 of the reversed vector v1 is:\n ( " ;
+    for ( Iter2 = v2.begin( ) ; Iter2 != v2.end( ) ; Iter2++ )
+        cout << *Iter2 << " ";
+    cout << ")." << endl;
 
-   cout << "The original vector v1 remains unmodified as:\n ( " ;
-   for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
-      cout << *Iter1 << " ";
-   cout << ")." << endl;
+    cout << "The original vector v1 remains unmodified as:\n ( " ;
+    for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
+        cout << *Iter1 << " ";
+    cout << ")." << endl;
 }
 ```
 
-## <a name="rotate"></a> Döndürme
+## <a name="rotate"></a>Boyut
 
 İki bitişik aralık içindeki öğeleri birbiriyle değiştirir.
 
@@ -7069,7 +7287,7 @@ void rotate(
     ForwardIterator first,
     ForwardIterator middle,
     ForwardIterator last);
-    
+
 template<class ExecutionPolicy, class ForwardIterator>
 ForwardIterator rotate(
     ExecutionPolicy&& exec,
@@ -7080,20 +7298,23 @@ ForwardIterator rotate(
 
 ### <a name="parameters"></a>Parametreler
 
-*ilk*\
-Döndürülecek aralıktaki ilk öğenin konumunu bulan ileriye doğru yineleyici.
+*Exec*\
+Kullanılacak yürütme ilkesi.
 
-*Orta*\
-Sınır aralıktaki öğeleri de aralık ilk kısmı ile değiştirilecek olan aralığın ikinci bölümü ilk öğenin konumunu ele alan tanımlama ileriye doğru yineleyici.
+*adı*\
+Bir ileri Yineleyici, döndürülmek üzere aralıktaki ilk öğenin konumunu ele alıyor.
 
-*Son*\
-Döndürülecek bir önceki öğenin konumunu son öğeden bir aralıktaki ileriye doğru yineleyici.
+*Beceri*\
+Aralığı içindeki ilk öğenin, öğeleri aralığın ilk bölümünde olacak şekilde değiştirilecek olan aralığın ikinci parçasındaki konumunu tanımlayan bir ileriye doğru yineleyici.
+
+*soyadına*\
+Bir ileri Yineleyici, döndürülmek üzere aralıktaki son öğeden sonraki konumu ele alıyor.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Başvurulan aralıkların geçerli olması gerekir; Tüm İşaretçiler tekrar başvurulabilir olmalı ve dizi içinde son konuma ilk konumdan erişilebilmelidir.
+Başvurulan aralıklar geçerli olmalıdır; Tüm işaretçiler, en son artırılamadı tarafından ilk konumdan erişilebilir olması gerekir.
 
-Karmaşıklığı en fazla ile doğrusal (`last` - `first`) değiştirir.
+Karmaşıklık, en çok (`last` - `first`) değiştirmeleri ile doğrusal bir değer.
 
 ### <a name="example"></a>Örnek
 
@@ -7106,49 +7327,49 @@ Karmaşıklığı en fazla ile doğrusal (`last` - `first`) değiştirir.
 #include <iostream>
 
 int main() {
-   using namespace std;
-   vector <int> v1;
-   deque <int> d1;
-   vector <int>::iterator v1Iter1;
-   deque<int>::iterator d1Iter1;
+    using namespace std;
+    vector<int> v1;
+    deque<int> d1;
+    vector<int>::iterator v1Iter1;
+    deque<int>::iterator d1Iter1;
 
-   int i;
-   for ( i = -3 ; i <= 5 ; i++ )
-   {
-      v1.push_back( i );
-   }
+    int i;
+    for ( i = -3 ; i <= 5 ; i++ )
+    {
+        v1.push_back( i );
+    }
 
-   int ii;
-   for ( ii =0 ; ii <= 5 ; ii++ )
-   {
-      d1.push_back( ii );
-   }
+    int ii;
+    for ( ii =0 ; ii <= 5 ; ii++ )
+    {
+        d1.push_back( ii );
+    }
 
-   cout << "Vector v1 is ( " ;
-   for ( v1Iter1 = v1.begin( ) ; v1Iter1 != v1.end( ) ;v1Iter1 ++ )
-      cout << *v1Iter1  << " ";
-   cout << ")." << endl;
+    cout << "Vector v1 is ( " ;
+    for ( v1Iter1 = v1.begin( ) ; v1Iter1 != v1.end( ) ;v1Iter1 ++ )
+        cout << *v1Iter1 << " ";
+    cout << ")." << endl;
 
-   rotate ( v1.begin( ), v1.begin( ) + 3 , v1.end( ) );
-   cout << "After rotating, vector v1 is ( " ;
-   for ( v1Iter1 = v1.begin( ) ; v1Iter1 != v1.end( ) ;v1Iter1 ++ )
-      cout << *v1Iter1  << " ";
-   cout << ")." << endl;
+    rotate ( v1.begin( ), v1.begin( ) + 3 , v1.end( ) );
+    cout << "After rotating, vector v1 is ( " ;
+    for ( v1Iter1 = v1.begin( ) ; v1Iter1 != v1.end( ) ;v1Iter1 ++ )
+        cout << *v1Iter1 << " ";
+    cout << ")." << endl;
 
-   cout << "The original deque d1 is ( " ;
-   for ( d1Iter1 = d1.begin( ) ; d1Iter1 != d1.end( ) ;d1Iter1 ++ )
-      cout << *d1Iter1  << " ";
-   cout << ")." << endl;
+    cout << "The original deque d1 is ( " ;
+    for ( d1Iter1 = d1.begin( ) ; d1Iter1 != d1.end( ) ;d1Iter1 ++ )
+        cout << *d1Iter1 << " ";
+    cout << ")." << endl;
 
-   int iii = 1;
-   while ( iii <= d1.end( ) - d1.begin( ) ) {
-      rotate ( d1.begin( ), d1.begin( ) + 1 , d1.end( ) );
-      cout << "After the rotation of a single deque element to the back,\n d1 is   ( " ;
-      for ( d1Iter1 = d1.begin( ) ; d1Iter1 != d1.end( ) ;d1Iter1 ++ )
-         cout << *d1Iter1  << " ";
-      cout << ")." << endl;
-      iii++;
-   }
+    int iii = 1;
+    while ( iii <= d1.end( ) - d1.begin( ) ) {
+        rotate ( d1.begin( ), d1.begin( ) + 1 , d1.end( ) );
+        cout << "After the rotation of a single deque element to the back,\n d1 is   ( " ;
+        for ( d1Iter1 = d1.begin( ) ; d1Iter1 != d1.end( ) ;d1Iter1 ++ )
+            cout << *d1Iter1 << " ";
+        cout << ")." << endl;
+        iii++;
+    }
 }
 ```
 
@@ -7170,7 +7391,7 @@ After the rotation of a single deque element to the back,
 d1 is   ( 0 1 2 3 4 5 ).
 ```
 
-## <a name="rotate_copy"></a> rotate_copy
+## <a name="rotate_copy"></a>rotate_copy
 
 Bir kaynak aralık içindeki iki bitişik aralıktaki öğeleri birbiriyle değiştirir ve sonucu bir hedef aralığına kopyalar.
 
@@ -7181,39 +7402,42 @@ OutputIterator rotate_copy(
     ForwardIterator middle,
     ForwardIterator last,
     OutputIterator result );
-    
+
 template<class ExecutionPolicy, class ForwardIterator1, class ForwardIterator2>
 ForwardIterator2 rotate_copy(
     ExecutionPolicy&& exec,
-    ForwardIterator1 first, 
+    ForwardIterator1 first,
     ForwardIterator1 middle,
-    ForwardIterator1 last, 
+    ForwardIterator1 last,
     ForwardIterator2 result);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*ilk*\
-Döndürülecek aralıktaki ilk öğenin konumunu bulan ileriye doğru yineleyici.
+*Exec*\
+Kullanılacak yürütme ilkesi.
 
-*Orta*\
-Sınır aralıktaki öğeleri de aralık ilk kısmı ile değiştirilecek olan aralığın ikinci bölümü ilk öğenin konumunu ele alan tanımlama ileriye doğru yineleyici.
+*adı*\
+Bir ileri Yineleyici, döndürülmek üzere aralıktaki ilk öğenin konumunu ele alıyor.
 
-*Son*\
-Döndürülecek bir önceki öğenin konumunu son öğeden bir aralıktaki ileriye doğru yineleyici.
+*Beceri*\
+Aralığı içindeki ilk öğenin, öğeleri aralığın ilk bölümünde olacak şekilde değiştirilecek olan aralığın ikinci parçasındaki konumunu tanımlayan bir ileriye doğru yineleyici.
 
-*Sonuç*\
-Hedef aralıktaki ilk öğenin konumunu bulan çıktı yineleyici.
+*soyadına*\
+Bir ileri Yineleyici, döndürülmek üzere aralıktaki son öğeden sonraki konumu ele alıyor.
 
-### <a name="return-value"></a>Dönüş Değeri
+*kaynaklanan*\
+Hedef aralıktaki ilk öğenin konumunu ele alarak çıkış Yineleyici.
 
-Hedef aralıktaki son öğeden sonraki birinci konum ele alan çıkış yineleyici.
+### <a name="return-value"></a>Dönüş değeri
+
+Hedef aralıktaki son öğeden sonraki konumu ele alarak çıkış Yineleyici.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Başvurulan aralıkların geçerli olması gerekir; Tüm İşaretçiler tekrar başvurulabilir olmalı ve dizi içinde son konuma ilk konumdan erişilebilmelidir.
+Başvurulan aralıklar geçerli olmalıdır; Tüm işaretçiler, en son artırılamadı tarafından ilk konumdan erişilebilir olması gerekir.
 
-Karmaşıklığı en fazla ile doğrusal (`last` - `first`) değiştirir.
+Karmaşıklık, en çok (`last` - `first`) değiştirmeleri ile doğrusal bir değer.
 
 ### <a name="example"></a>Örnek
 
@@ -7225,66 +7449,69 @@ Karmaşıklığı en fazla ile doğrusal (`last` - `first`) değiştirir.
 #include <algorithm>
 #include <iostream>
 
-int main() {
-   using namespace std;
-   vector <int> v1 , v2 ( 9 );
-   deque <int> d1 , d2 ( 6 );
-   vector <int>::iterator v1Iter , v2Iter;
-   deque<int>::iterator d1Iter , d2Iter;
+int main()
+{
+    using namespace std;
+    vector<int> v1 , v2 ( 9 );
+    deque<int> d1 , d2 ( 6 );
+    vector<int>::iterator v1Iter , v2Iter;
+    deque<int>::iterator d1Iter , d2Iter;
 
-   int i;
-   for ( i = -3 ; i <= 5 ; i++ )
-      v1.push_back( i );
+    int i;
+    for ( i = -3 ; i <= 5 ; i++ )
+        v1.push_back( i );
 
-   int ii;
-   for ( ii =0 ; ii <= 5 ; ii++ )
-      d1.push_back( ii );
+    int ii;
+    for ( ii =0 ; ii <= 5 ; ii++ )
+        d1.push_back( ii );
 
-   cout << "Vector v1 is ( " ;
-   for ( v1Iter = v1.begin( ) ; v1Iter != v1.end( ) ;v1Iter ++ )
-      cout << *v1Iter  << " ";
-   cout << ")." << endl;
+    cout << "Vector v1 is ( " ;
+    for ( v1Iter = v1.begin( ) ; v1Iter != v1.end( ) ;v1Iter ++ )
+        cout << *v1Iter << " ";
+    cout << ")." << endl;
 
-   rotate_copy ( v1.begin( ), v1.begin( ) + 3 , v1.end( ), v2.begin( ) );
-   cout << "After rotating, the vector v1 remains unchanged as:\n v1 = ( " ;
-   for ( v1Iter = v1.begin( ) ; v1Iter != v1.end( ) ;v1Iter ++ )
-      cout << *v1Iter  << " ";
-   cout << ")." << endl;
+    rotate_copy ( v1.begin( ), v1.begin( ) + 3 , v1.end( ), v2.begin( ) );
+    cout << "After rotating, the vector v1 remains unchanged as:\n v1 = ( " ;
+    for ( v1Iter = v1.begin( ) ; v1Iter != v1.end( ) ;v1Iter ++ )
+        cout << *v1Iter << " ";
+    cout << ")." << endl;
 
-   cout << "After rotating, the copy of vector v1 in v2 is:\n v2 = ( " ;
-   for ( v2Iter = v2.begin( ) ; v2Iter != v2.end( ) ;v2Iter ++ )
-      cout << *v2Iter  << " ";
-   cout << ")." << endl;
+    cout << "After rotating, the copy of vector v1 in v2 is:\n v2 = ( " ;
+    for ( v2Iter = v2.begin( ) ; v2Iter != v2.end( ) ;v2Iter ++ )
+        cout << *v2Iter << " ";
+    cout << ")." << endl;
 
-   cout << "The original deque d1 is ( " ;
-   for ( d1Iter = d1.begin( ) ; d1Iter != d1.end( ) ;d1Iter ++ )
-      cout << *d1Iter  << " ";
-   cout << ")." << endl;
+    cout << "The original deque d1 is ( " ;
+    for ( d1Iter = d1.begin( ) ; d1Iter != d1.end( ) ;d1Iter ++ )
+        cout << *d1Iter << " ";
+    cout << ")." << endl;
 
-   int iii = 1;
-   while ( iii <= d1.end( ) - d1.begin( ) )
-   {
-      rotate_copy ( d1.begin( ), d1.begin( ) + iii , d1.end( ), d2.begin( ) );
-      cout << "After the rotation of a single deque element to the back,\n d2 is   ( " ;
-      for ( d2Iter = d2.begin( ) ; d2Iter != d2.end( ) ;d2Iter ++ )
-         cout << *d2Iter  << " ";
-      cout << ")." << endl;
-      iii++;
-   }
+    int iii = 1;
+    while ( iii <= d1.end( ) - d1.begin( ) )
+    {
+        rotate_copy ( d1.begin( ), d1.begin( ) + iii , d1.end( ), d2.begin( ) );
+        cout << "After the rotation of a single deque element to the back,\n d2 is   ( " ;
+        for ( d2Iter = d2.begin( ) ; d2Iter != d2.end( ) ;d2Iter ++ )
+            cout << *d2Iter << " ";
+        cout << ")." << endl;
+        iii++;
+    }
 }
 ```
 
-## <a name="sample"></a> Örnek
+## <a name="sample"></a>örnekli
 
 ```cpp
-template<class PopulationIterator, class SampleIterator,
-class Distance, class UniformRandomBitGenerator>
-SampleIterator sample(PopulationIterator first, PopulationIterator last,
-SampleIterator out, Distance n,
-UniformRandomBitGenerator&& g);
+template<class PopulationIterator, class SampleIterator, class Distance, class UniformRandomBitGenerator>
+SampleIterator sample(
+    PopulationIterator first,
+    PopulationIterator last,
+    SampleIterator out,
+    Distance n,
+    UniformRandomBitGenerator&& g);
 ```
 
-## <a name="search"></a> Arama
+## <a name="search"></a>aramanız
 
 Öğeleri verili bir öğe dizisi içindekilerle eşit olan veya öğeleri verili bir dizi öğe için ikili bir koşula göre belirtildiği şekilde denk olan bir hedef aralığındaki dizinin ilk geçtiği yeri arar.
 
@@ -7296,67 +7523,72 @@ ForwardIterator1 search(
     ForwardIterator2 first2,
     ForwardIterator2 last2);
 
-template<class ForwardIterator1, class ForwardIterator2, class Predicate>
+template<class ForwardIterator1, class ForwardIterator2, class BinaryPredicate>
 ForwardIterator1 search(
     ForwardIterator1 first1,
     ForwardIterator1 last1,
     ForwardIterator2 first2,
     ForwardIterator2 last2
-    Predicate comp);
-    
+    BinaryPredicate pred);
+
 template<class ExecutionPolicy, class ForwardIterator1, class ForwardIterator2>
 ForwardIterator1 search(
     ExecutionPolicy&& exec,
-    ForwardIterator1 first1, 
+    ForwardIterator1 first1,
     ForwardIterator1 last1,
-    ForwardIterator2 first2, 
+    ForwardIterator2 first2,
     ForwardIterator2 last2);
-    
-template<class ExecutionPolicy, class ForwardIterator1, class ForwardIterator2,
-class BinaryPredicate>
+
+template<class ExecutionPolicy, class ForwardIterator1, class ForwardIterator2, class BinaryPredicate>
 ForwardIterator1 search(
     ExecutionPolicy&& exec,
-    ForwardIterator1 first1, 
+    ForwardIterator1 first1,
     ForwardIterator1 last1,
-    ForwardIterator2 first2, 
+    ForwardIterator2 first2,
     ForwardIterator2 last2,
     BinaryPredicate pred);
-    
+
 template <class ForwardIterator, class Searcher>
 ForwardIterator search(
-    ForwardIterator first, 
+    ForwardIterator first,
     ForwardIterator last,
     const Searcher& searcher);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
+*Exec*\
+Kullanılacak yürütme ilkesi.
+
 *first1*\
-Aranacak aralıktaki ilk öğenin konumunu bulan ileriye doğru yineleyici.
+Aranacak aralıktaki ilk öğenin konumunu adresleyen ileri Yineleyici.
 
 *last1*\
-Aranacak Konum son öğeden bir aralıktaki ileriye doğru yineleyici.
+Bir ileriye doğru yineleyici, aranacak aralıktaki son öğeden sonraki konumu ele alıyor.
 
 *first2*\
-Eşleştirilecek aralıktaki ilk öğenin konumunu bulan ileriye doğru yineleyici.
+Eşleştirilecek aralıktaki ilk öğenin konumunu ele alarak ileriye doğru bir yineleyici.
 
-*Soyadı2*\
-Eşleştirilecek konum son öğeden bir aralıktaki ileriye doğru yineleyici.
+*last2*\
+Bir ileri Yineleyici, eşleştirilecek aralıktaki son öğeden sonraki konumu ele alıyor.
 
-*Comp*\
-Gerçekleştirilecek iki öğe varsa karşılanması koşul tanımlayan kullanıcı tanımlı işlevin doğrulama nesnesi olarak eşdeğer. İkili koşulu, iki bağımsız değişkeni alır ve döndürür **true** karşılanmazsa ve **false** koşullar karşılanırsa.
+*pred*\
+İki öğenin eşdeğer olarak alınması durumunda karşılanması gereken koşulu tanımlayan Kullanıcı tanımlı koşul işlevi nesnesi. İkili koşul iki bağımsız değişken alır ve memnun olmadığında **true** ve **false** değeri döndürür.
 
-### <a name="return-value"></a>Dönüş Değeri
+*Arayıcının*\
+Aranacak kalıbı ve kullanılacak arama algoritmasını kapsülleyen Arayıcının.
 
-Belirtilen sıra veya eşleşen ilk diziyi ilk öğenin konumunu bulan ileriye doğru yineleyici bir ikili koşula göre belirtilen anlamda eşdeğerdir.
+### <a name="return-value"></a>Dönüş değeri
+
+Bir ileri Yineleyici, belirtilen sırayla eşleşen veya bir ikili koşula göre belirtilen bir Sense ile eşdeğer olan ilk alt dizinin ilk öğesinin konumunu ele alıyor.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`operator==` Eşleşen bir öğe ile belirtilen değer arasında bir eşdeğerlik ilişkisi işlenenleri arasındaki dayatır gerekir belirlemek için kullanılır.
+Bir `operator==` öğe ile belirtilen değer arasındaki eşleşmeyi belirlemede kullanılan, işlenenleri arasında bir denklik ilişkisi getirmelidir.
 
-Başvurulan aralıkların geçerli olması gerekir; Tüm İşaretçiler tekrar başvurulabilir olmalı ve her dizi içinde son konuma ilk konumdan erişilebilmelidir.
+Başvurulan aralıklar geçerli olmalıdır; Tüm işaretçiler, her bir sırada bir kez başvurulmalıdır ve en son konum, artırılamadı tarafından ilk kez erişilebilir.
 
-Ortalama karmaşıklığı göre Aranan aralığın boyutu ile doğrusal ve en kötü durum karmaşıklığı da doğrusal Aranan dizisi bağlı ise.
+Ortalama karmaşıklık, aranan aralığın boyutuna göre doğrusal ve en kötü durum karmaşıklığının, aranmakta olan sıranın boyutuyla ilgili olarak doğrusal olması gerekir.
 
 ### <a name="example"></a>Örnek
 
@@ -7371,77 +7603,78 @@ Ortalama karmaşıklığı göre Aranan aralığın boyutu ile doğrusal ve en k
 // Return whether second element is twice the first
 bool twice (int elem1, int elem2 )
 {
-   return 2 * elem1 == elem2;
+    return 2 * elem1 == elem2;
 }
 
-int main() {
-   using namespace std;
-   vector <int> v1, v2;
-   list <int> L1;
-   vector <int>::iterator Iter1, Iter2;
-   list <int>::iterator L1_Iter, L1_inIter;
+int main()
+{
+    using namespace std;
+    vector<int> v1, v2;
+    list<int> L1;
+    vector<int>::iterator Iter1, Iter2;
+    list<int>::iterator L1_Iter, L1_inIter;
 
-   int i;
-   for ( i = 0 ; i <= 5 ; i++ )
-   {
-      v1.push_back( 5 * i );
-   }
-   for ( i = 0 ; i <= 5 ; i++ )
-   {
-      v1.push_back( 5 * i );
-   }
+    int i;
+    for ( i = 0 ; i <= 5 ; i++ )
+    {
+        v1.push_back( 5 * i );
+    }
+    for ( i = 0 ; i <= 5 ; i++ )
+    {
+        v1.push_back( 5 * i );
+    }
 
-   int ii;
-   for ( ii = 4 ; ii <= 5 ; ii++ )
-   {
-      L1.push_back( 5 * ii );
-   }
+    int ii;
+    for ( ii = 4 ; ii <= 5 ; ii++ )
+    {
+        L1.push_back( 5 * ii );
+    }
 
-   int iii;
-   for ( iii = 2 ; iii <= 4 ; iii++ )
-   {
-      v2.push_back( 10 * iii );
-   }
+    int iii;
+    for ( iii = 2 ; iii <= 4 ; iii++ )
+    {
+        v2.push_back( 10 * iii );
+    }
 
-   cout << "Vector v1 = ( " ;
-   for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
-      cout << *Iter1 << " ";
-   cout << ")" << endl;
+    cout << "Vector v1 = ( " ;
+    for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
+        cout << *Iter1 << " ";
+    cout << ")" << endl;
 
-   cout << "List L1 = ( " ;
-   for ( L1_Iter = L1.begin( ) ; L1_Iter!= L1.end( ) ; L1_Iter++ )
-      cout << *L1_Iter << " ";
-   cout << ")" << endl;
+    cout << "List L1 = ( " ;
+    for ( L1_Iter = L1.begin( ) ; L1_Iter!= L1.end( ) ; L1_Iter++ )
+        cout << *L1_Iter << " ";
+    cout << ")" << endl;
 
-   cout << "Vector v2 = ( " ;
-   for ( Iter2 = v2.begin( ) ; Iter2 != v2.end( ) ; Iter2++ )
-      cout << *Iter2 << " ";
-      cout << ")" << endl;
+    cout << "Vector v2 = ( " ;
+    for ( Iter2 = v2.begin( ) ; Iter2 != v2.end( ) ; Iter2++ )
+        cout << *Iter2 << " ";
+        cout << ")" << endl;
 
-   // Searching v1 for first match to L1 under identity
-   vector <int>::iterator result1;
-   result1 = search (v1.begin( ), v1.end( ), L1.begin( ), L1.end( ) );
+    // Searching v1 for first match to L1 under identity
+    vector<int>::iterator result1;
+    result1 = search (v1.begin( ), v1.end( ), L1.begin( ), L1.end( ) );
 
-   if ( result1 == v1.end( ) )
-      cout << "There is no match of L1 in v1."
-           << endl;
-   else
-      cout << "There is at least one match of L1 in v1"
-           << "\n and the first one begins at "
-           << "position "<< result1 - v1.begin( ) << "." << endl;
+    if ( result1 == v1.end( ) )
+        cout << "There is no match of L1 in v1."
+            << endl;
+    else
+        cout << "There is at least one match of L1 in v1"
+            << "\n and the first one begins at "
+            << "position "<< result1 - v1.begin( ) << "." << endl;
 
-   // Searching v1 for a match to L1 under the binary predicate twice
-   vector <int>::iterator result2;
-   result2 = search  (v1.begin( ), v1.end( ), v2.begin( ), v2.end( ), twice );
+    // Searching v1 for a match to L1 under the binary predicate twice
+    vector<int>::iterator result2;
+    result2 = search (v1.begin( ), v1.end( ), v2.begin( ), v2.end( ), twice );
 
-   if ( result2 == v1.end( ) )
-      cout << "There is no match of L1 in v1."
-           << endl;
-   else
-      cout << "There is a sequence of elements in v1 that "
-           << "are equivalent\n to those in v2 under the binary "
-           << "predicate twice\n and the first one begins at position "
-           << result2 - v1.begin( ) << "." << endl;
+    if ( result2 == v1.end( ) )
+        cout << "There is no match of L1 in v1."
+            << endl;
+    else
+        cout << "There is a sequence of elements in v1 that "
+            << "are equivalent\n to those in v2 under the binary "
+            << "predicate twice\n and the first one begins at position "
+            << result2 - v1.begin( ) << "." << endl;
 }
 ```
 
@@ -7456,7 +7689,7 @@ to those in v2 under the binary predicate twice
 and the first one begins at position 2.
 ```
 
-## <a name="search_n"></a> search_n
+## <a name="search_n"></a>search_n
 
 Belirli bir değere veya ikili bir koşula göre belirtilen değerle bir ilişkiye sahip olan öğelerin belirli bir sayısının aralığındaki ilk diziyi arar.
 
@@ -7466,62 +7699,65 @@ ForwardIterator1 search_n(
     ForwardIterator1 first1,
     ForwardIterator1 last1,
     Diff2 count,
-    const Type& val);
+    const Type& value);
 
 template<class ForwardIterator1, class Diff2, class Type, class BinaryPredicate>
 ForwardIterator1 search_n(
     ForwardIterator1 first1,
     ForwardIterator1 last1,
     Diff2 count,
-    const Type& val,
-    BinaryPredicate comp);
-    
-template<class ExecutionPolicy, class ForwardIterator, class Size, class T>
-ForwardIterator search_n(
-    ExecutionPolicy&& exec,
-    ForwardIterator first, 
-    ForwardIterator last,
-    Size count, const T& value);
+    const Type& value,
+    BinaryPredicate pred);
 
-template<class ExecutionPolicy, class ForwardIterator, class Size, class T,
-class BinaryPredicate>
+template<class ExecutionPolicy, class ForwardIterator, class Size, class Type>
 ForwardIterator search_n(
     ExecutionPolicy&& exec,
-    ForwardIterator first, 
+    ForwardIterator first,
     ForwardIterator last,
-    Size count, 
-    const T& value,
+    Size count,
+    const Type& value);
+
+template<class ExecutionPolicy, class ForwardIterator, class Size, class Type, class BinaryPredicate>
+ForwardIterator search_n(
+    ExecutionPolicy&& exec,
+    ForwardIterator first,
+    ForwardIterator last,
+    Size count,
+    const Type& value,
     BinaryPredicate pred);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
+*Exec*\
+Kullanılacak yürütme ilkesi.
+
 *first1*\
-Aranacak aralıktaki ilk öğenin konumunu bulan ileriye doğru yineleyici.
+Aranacak aralıktaki ilk öğenin konumunu adresleyen ileri Yineleyici.
 
 *last1*\
-Aranacak Konum son öğeden bir aralıktaki ileriye doğru yineleyici.
+Bir ileriye doğru yineleyici, aranacak aralıktaki son öğeden sonraki konumu ele alıyor.
 
-*Sayısı*\
-Aranan alt dizi boyutu.
+*biriktirme*\
+Aranmakta olan alt dizinin boyutu.
 
-*VAL*\
+*deeri*\
 Aranan dizideki öğelerin değeri.
 
-*Comp*\
-Gerçekleştirilecek iki öğe varsa karşılanması koşul tanımlayan kullanıcı tanımlı işlevin doğrulama nesnesi olarak eşdeğer. İkili koşulu, iki bağımsız değişkeni alır ve döndürür **true** karşılanmazsa ve **false** koşullar karşılanırsa.
+*pred*\
+İki öğenin eşdeğer olarak alınması durumunda karşılanması gereken koşulu tanımlayan Kullanıcı tanımlı koşul işlevi nesnesi. İkili koşul iki bağımsız değişken alır ve memnun olmadığında **true** ve **false** değeri döndürür.
 
-### <a name="return-value"></a>Dönüş Değeri
+### <a name="return-value"></a>Dönüş değeri
 
-Belirtilen sıra veya eşleşen ilk diziyi ilk öğenin konumunu bulan ileriye doğru yineleyici bir ikili koşula göre belirtilen anlamda eşdeğerdir.
+Bir ileri Yineleyici, belirtilen sırayla eşleşen veya bir ikili koşula göre belirtilen bir Sense ile eşdeğer olan ilk alt dizinin ilk öğesinin konumunu ele alıyor.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`operator==` Eşleşen bir öğe ile belirtilen değer arasında bir eşdeğerlik ilişkisi işlenenleri arasındaki dayatır gerekir belirlemek için kullanılır.
+Bir `operator==` öğe ile belirtilen değer arasındaki eşleşmeyi belirlemede kullanılan, işlenenleri arasında bir denklik ilişkisi getirmelidir.
 
-Başvurulan aralık geçerli olmalı; Tüm İşaretçiler tekrar başvurulabilir olmalı ve dizi içinde son konuma ilk konumdan erişilebilmelidir.
+Başvurulan Aralık geçerli olmalıdır; Tüm işaretçiler, en son artırılamadı tarafından ilk konumdan erişilebilir olması gerekir.
 
-Karmaşıklık boyutu ile doğrusal Aranan göre.
+Karmaşıklık, arandığı boyuta göre doğrusal bir yoldur.
 
 ### <a name="example"></a>Örnek
 
@@ -7536,65 +7772,65 @@ Karmaşıklık boyutu ile doğrusal Aranan göre.
 // Return whether second element is 1/2 of the first
 bool one_half ( int elem1, int elem2 )
 {
-   return elem1 == 2 * elem2;
+    return elem1 == 2 * elem2;
 }
 
 int main()
 {
-   using namespace std;
-   vector <int> v1, v2;
-   vector <int>::iterator Iter1;
+    using namespace std;
+    vector<int> v1, v2;
+    vector<int>::iterator Iter1;
 
-   int i;
-   for ( i = 0 ; i <= 5 ; i++ )
-   {
-      v1.push_back( 5 * i );
-   }
+    int i;
+    for ( i = 0 ; i <= 5 ; i++ )
+    {
+        v1.push_back( 5 * i );
+    }
 
-   for ( i = 0 ; i <= 2 ; i++ )
-   {
-      v1.push_back( 5  );
-   }
+    for ( i = 0 ; i <= 2 ; i++ )
+    {
+        v1.push_back( 5 );
+    }
 
-   for ( i = 0 ; i <= 5 ; i++ )
-   {
-      v1.push_back( 5 * i );
-   }
+    for ( i = 0 ; i <= 5 ; i++ )
+    {
+        v1.push_back( 5 * i );
+    }
 
-   for ( i = 0 ; i <= 2 ; i++ )
-   {
-      v1.push_back( 10  );
-   }
+    for ( i = 0 ; i <= 2 ; i++ )
+    {
+        v1.push_back( 10 );
+    }
 
-   cout << "Vector v1 = ( " ;
-   for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
-      cout << *Iter1 << " ";
-   cout << ")" << endl;
+    cout << "Vector v1 = ( " ;
+    for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
+        cout << *Iter1 << " ";
+    cout << ")" << endl;
 
-   // Searching v1 for first match to (5 5 5) under identity
-   vector <int>::iterator result1;
-   result1 = search_n ( v1.begin( ), v1.end( ), 3, 5 );
+    // Searching v1 for first match to (5 5 5) under identity
+    vector<int>::iterator result1;
+    result1 = search_n ( v1.begin( ), v1.end( ), 3, 5 );
 
-   if ( result1 == v1.end( ) )
-      cout << "There is no match for a sequence ( 5 5 5 ) in v1."
-           << endl;
-   else
-      cout << "There is at least one match of a sequence ( 5 5 5 )"
-           << "\n in v1 and the first one begins at "
-           << "position "<< result1 - v1.begin( ) << "." << endl;
+    if ( result1 == v1.end( ) )
+        cout << "There is no match for a sequence ( 5 5 5 ) in v1."
+            << endl;
+    else
+        cout << "There is at least one match of a sequence ( 5 5 5 )"
+            << "\n in v1 and the first one begins at "
+            << "position "<< result1 - v1.begin( ) << "." << endl;
 
-   // Searching v1 for first match to (5 5 5) under one_half
-   vector <int>::iterator result2;
-   result2 = search_n (v1.begin( ), v1.end( ), 3, 5, one_half );
+    // Searching v1 for first match to (5 5 5) under one_half
+    vector<int>::iterator result2;
+    result2 = search_n (v1.begin( ), v1.end( ), 3, 5, one_half );
 
-   if ( result2 == v1.end( ) )
-      cout << "There is no match for a sequence ( 5 5 5 ) in v1"
-           << " under the equivalence predicate one_half." << endl;
-   else
-      cout << "There is a match of a sequence ( 5 5 5 ) "
-           << "under the equivalence\n predicate one_half "
-           << "in v1 and the first one begins at "
-           << "position "<< result2 - v1.begin( ) << "." << endl;
+    if ( result2 == v1.end( ) )
+        cout << "There is no match for a sequence ( 5 5 5 ) in v1"
+            << " under the equivalence predicate one_half." << endl;
+    else
+        cout << "There is a match of a sequence ( 5 5 5 ) "
+            << "under the equivalence\n predicate one_half "
+            << "in v1 and the first one begins at "
+            << "position "<< result2 - v1.begin( ) << "." << endl;
 }
 ```
 
@@ -7606,87 +7842,88 @@ There is a match of a sequence ( 5 5 5 ) under the equivalence
 predicate one_half in v1 and the first one begins at position 15.
 ```
 
-## <a name="set_difference"></a> set_difference
+## <a name="set_difference"></a>set_difference
 
 Sıralanmış ikinci bir kaynak aralığına sahip olanları değil, sıralanmış bir kaynak aralığına sahip öğelerin tümünü tek, sıralanmış bir hedef aralığı içinde birleştirir, burada sıralama ölçütü ikili bir koşula göre belirtilebilir.
 
 ```cpp
 template<class InputIterator1, class InputIterator2, class OutputIterator>
 OutputIterator set_difference(
-    InputIterator1  first1,
-    InputIterator1  last1,
-    InputIterator2  first2,
-    InputIterator2  last2,
-    OutputIterator  result );
+    InputIterator1 first1,
+    InputIterator1 last1,
+    InputIterator2 first2,
+    InputIterator2 last2,
+    OutputIterator result );
 
-template<class InputIterator1, class InputIterator2, class OutputIterator, class BinaryPredicate>
+template<class InputIterator1, class InputIterator2, class OutputIterator, class Compare>
 OutputIterator set_difference(
-    InputIterator1  first1,
-    InputIterator1  last1,
-    InputIterator2  first2,
-    InputIterator2  last2,
-    OutputIterator  result,
-    BinaryPredicate  comp );
-    
-template<class ExecutionPolicy, class ForwardIterator1, class ForwardIterator2,
-class ForwardIterator>
+    InputIterator1 first1,
+    InputIterator1 last1,
+    InputIterator2 first2,
+    InputIterator2 last2,
+    OutputIterator result,
+    Compare pred );
+
+template<class ExecutionPolicy, class ForwardIterator1, class ForwardIterator2, class ForwardIterator>
 ForwardIterator set_difference(
     ExecutionPolicy&& exec,
-    ForwardIterator1 first1, 
+    ForwardIterator1 first1,
     ForwardIterator1 last1,
-    ForwardIterator2 first2, 
+    ForwardIterator2 first2,
     ForwardIterator2 last2,
     ForwardIterator result);
 
-template<class ExecutionPolicy, class ForwardIterator1, class ForwardIterator2,
-class ForwardIterator, class Compare>
+template<class ExecutionPolicy, class ForwardIterator1, class ForwardIterator2, class ForwardIterator, class Compare>
 ForwardIterator set_difference(
     ExecutionPolicy&& exec,
-    ForwardIterator1 first1, 
+    ForwardIterator1 first1,
     ForwardIterator1 last1,
-    ForwardIterator2 first2, 
+    ForwardIterator2 first2,
     ForwardIterator2 last2,
-    ForwardIterator result, 
-    Compare comp);
+    ForwardIterator result,
+    Compare pred);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
+*Exec*\
+Kullanılacak yürütme ilkesi.
+
 *first1*\
-Birleşik ve iki kaynak aralıktaki fark temsil eden tek bir aralığa sıralanmış ilk iki sıralanmış kaynak aralıktaki ilk öğenin konumu ele alan giriş yineleyici.
+İki kaynak aralığının farkını temsil eden tek bir aralığa Birleşik ve sıralanan iki sıralı kaynak aralıktaki ilk öğenin konumunu ele almak için bir giriş Yineleyici.
 
 *last1*\
-Birleşik ve iki kaynak aralıktaki fark temsil eden tek bir aralığa sıralanmış bir önceki öğenin konumunu son öğeden ilk iki sıralanmış kaynak aralığa, ele alan bir giriş yineleyici.
+İki kaynak aralığının farkını temsil eden tek bir aralığa Birleşik ve sıralanan iki sıralı kaynak aralığının ilk öğesinden bir kez geçen bir giriş Yineleyici.
 
 *first2*\
-Art arda iki saniye içinde ilk öğenin konumunu ele alan giriş yineleyici birleşik ve iki kaynak aralıktaki fark temsil eden tek bir aralığa sıralanmış kaynak aralığa sıralanır.
+Art arda iki sıralı kaynak aralığının ikinci kısmında birinci öğenin konumunu ele alarak, iki kaynak aralığının farkını temsil eden tek bir aralığa göre bir giriş Yineleyici.
 
-*Soyadı2*\
-Geçmiş konumu ele alan giriş yineleyici art arda iki saniye içindeki son öğeden birleşik ve iki kaynak aralıktaki fark temsil eden tek bir aralığa sıralanmış kaynak aralığa sıralanır.
+*last2*\
+Art arda iki sıralı kaynak aralığının ikinci ve iki kaynak aralığının farkını temsil eden tek bir aralığa sıralanmış en son öğeden geçen bir giriş Yineleyici.
 
-*Sonuç*\
-İki kaynak aralıktaki iki kaynak aralıktaki fark temsil eden tek bir sıralanmış aralıkta birleşik olduğu hedef aralıktaki ilk öğenin konumunu bulan çıktı yineleyici.
+*kaynaklanan*\
+İki kaynak aralığının iki kaynak aralığının farkını temsil eden tek bir sıralanmış aralığa Birleşik olarak bulunacağı, hedef aralıktaki ilk öğenin konumunu ele aldığı çıkış Yineleyici.
 
-*Comp*\
-Bir öğenin diğerinden daha büyük olan algılama tanımlayan kullanıcı tanımlı işlevin doğrulama nesnesi. İkili koşulu, iki bağımsız değişkeni alır ve döndürmelidir **true** ilk öğe olduğunda ikinci öğe küçüktür ve **false** Aksi takdirde.
+*pred*\
+Bir öğenin diğerinden küçük olduğu anlamlı olduğunu tanımlayan Kullanıcı tanımlı koşul işlevi nesnesi. İkili koşul iki bağımsız değişkeni alır ve ilk öğe ikinci öğeden küçük olduğunda **true** , aksi durumda **false** döndürmelidir.
 
-### <a name="return-value"></a>Dönüş Değeri
+### <a name="return-value"></a>Dönüş değeri
 
-İki kaynak aralıktaki farkını gösteren sıralanmış bir hedef aralıktaki son öğeden geçmiş konumu ele alan çıkış yineleyici.
+İki kaynak aralığının farkını temsil eden sıralanmış hedef aralıktaki son öğeden sonraki konumu ele alarak bir çıkış yineleyicisi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Başvurulan sıralanmış kaynak aralık geçerli olmalıdır; Tüm İşaretçiler tekrar başvurulabilir olmalı ve her dizi içinde son konuma ilk konumdan erişilebilir olmalıdır erişilebilmelidir.
+Başvurulan sıralanmış kaynak aralıkları geçerli olmalıdır; Tüm işaretçilerin erişilebilir olması gerekir ve her bir dizide en son konum artırılamadı tarafından ilk kez ulaşılabilir olmalıdır.
 
-Hedef aralığı ya da kaynak aralıkları çakışmamalı ve ilk kaynak aralığı içerecek kadar büyük olmalıdır.
+Hedef Aralık, kaynak aralıklarından biriyle çakışmamalıdır ve ilk kaynak aralığını içerecek kadar büyük olmalıdır.
 
-Sıralanmış kaynak aralığa her uygulama için bir önkoşul olarak düzenlenmelidir `set_difference` olarak aynı sıralamaya uygun şekilde algoritmasıdır birleştirilmiş aralıkları Sıralama algoritması tarafından kullanılacak.
+Sıralanmış kaynak aralıklarının her biri, algoritma tarafından Birleşik aralıkları sıralamak için kullanılan aynı sıralamaya uygun `set_difference` olarak, algoritmanın uygulamasına bir ön koşul olarak düzenlenmelidir.
 
-Her aralık içindeki öğelerin göreli sırasını hedef aralığı korunduğu kalıcı bir işlemdir. Kaynak aralıkları algoritması birleştirme tarafından değiştirilmez.
+Her aralıktaki öğelerin göreli sırası hedef aralıkta korunduğu için işlem kararlı değildir. Kaynak aralıkları, algoritma birleştirme tarafından değiştirilmez.
 
-Giriş Yineleyicilerin değer türlerinin olması daha az daha-karşılaştırılabilir sipariş için iki öğe belirtildiğinde, belirlenemiyor (yani birinin diğerinden diğerinden daha küçük olmadığı anlamında) eşit veya birinin diğerinden küçük olduğu. Bu, denk olmayan öğeler arasında bir sıralamaya neden olur. Hem kaynak aralıklardaki eşdeğer öğelerin olduğunda, ilk aralıktaki öğeleri hedef aralığında ikinci aralığın öğelerden koyun. Kaynak aralıkları, yinelenen bir öğe içeriyorsa şu şekilde daha ilk kaynak Aralıktaki ikinci, hedef aralığı, oluşumunu bu öğeler kaynak aralıktaki ilk oluşumunu aşan numarasını içerecek daha ikinci kaynak aralıktaki bu öğeleri.
+Giriş yineleyicilerinin değer türlerinin sıralanabilmesi için daha az karşılaştırılabilir olması gerekir. böylece, iki öğe verildiğinde, eşdeğer oldukları (Yani bunlardan daha küçük olmadığı anlamda) veya birinin diğerinin daha küçük olduğu belirlenebilir. Bu, denk olmayan öğeler arasında bir sıralamaya neden olur. Her iki kaynak aralığında da eşdeğer öğeler olduğunda, ilk aralıktaki öğeler, hedef aralıktaki ikinci kaynak aralığından öğeden önce gelmelidir. Kaynak aralıkları, ikinciden daha fazla ilk kaynak aralığında daha fazla olması gibi bir öğenin yinelemelerini içeriyorsa, hedef Aralık ilk kaynak aralıktaki bu öğelerin tekrarlarının oluşum sayısını aşacak şekilde ikinci kaynak aralıktaki öğeler.
 
-Algoritmanın karmaşıklığı, en fazla 2 ile doğrusal \* (( *last1 - first1*)-( *Soyadı2 - first2*)) - 1 karşılaştırmalar için boş olmayan kaynak aralık.
+Algoritmanın karmaşıklığı, boş olmayan kaynak aralıkları için en çok `2 * ((last1 - first1) - (last2 - first2)) - 1` karşılaştırmalar ile doğrusal bir şekilde yapılır.
 
 ### <a name="example"></a>Örnek
 
@@ -7701,113 +7938,113 @@ Algoritmanın karmaşıklığı, en fazla 2 ile doğrusal \* (( *last1 - first1*
 // Return whether modulus of elem1 is less than modulus of elem2
 bool mod_lesser (int elem1, int elem2 )
 {
-   if (elem1 < 0)
-      elem1 = - elem1;
-   if (elem2 < 0)
-      elem2 = - elem2;
-   return elem1 < elem2;
+    if (elem1 < 0)
+        elem1 = - elem1;
+    if (elem2 < 0)
+        elem2 = - elem2;
+    return elem1 < elem2;
 }
 
 int main()
 {
-   using namespace std;
-   vector <int> v1a, v1b, v1 ( 12 );
-   vector <int>::iterator Iter1a,  Iter1b, Iter1, Result1;
+    using namespace std;
+    vector<int> v1a, v1b, v1 ( 12 );
+    vector<int>::iterator Iter1a, Iter1b, Iter1, Result1;
 
-   // Constructing vectors v1a & v1b with default less-than ordering
-   int i;
-   for ( i = -1 ; i <= 4 ; i++ )
-   {
-      v1a.push_back(  i );
-   }
+    // Constructing vectors v1a & v1b with default less-than ordering
+    int i;
+    for ( i = -1 ; i <= 4 ; i++ )
+    {
+        v1a.push_back( i );
+    }
 
-   int ii;
-   for ( ii =-3 ; ii <= 0 ; ii++ )
-   {
-      v1b.push_back(  ii  );
-   }
+    int ii;
+    for ( ii =-3 ; ii <= 0 ; ii++ )
+    {
+        v1b.push_back( ii );
+    }
 
-   cout << "Original vector v1a with range sorted by the\n "
-        <<  "binary predicate less than is  v1a = ( " ;
-   for ( Iter1a = v1a.begin( ) ; Iter1a != v1a.end( ) ; Iter1a++ )
-      cout << *Iter1a << " ";
-   cout << ")." << endl;
+    cout << "Original vector v1a with range sorted by the\n "
+         << "binary predicate less than is v1a = ( " ;
+    for ( Iter1a = v1a.begin( ) ; Iter1a != v1a.end( ) ; Iter1a++ )
+        cout << *Iter1a << " ";
+    cout << ")." << endl;
 
-   cout << "Original vector v1b with range sorted by the\n "
-        <<  "binary predicate less than is  v1b = ( " ;
-   for ( Iter1b = v1b.begin( ) ; Iter1b != v1b.end( ) ; Iter1b++ )
-      cout << *Iter1b << " ";
-   cout << ")." << endl;
+    cout << "Original vector v1b with range sorted by the\n "
+         << "binary predicate less than is v1b = ( " ;
+    for ( Iter1b = v1b.begin( ) ; Iter1b != v1b.end( ) ; Iter1b++ )
+        cout << *Iter1b << " ";
+    cout << ")." << endl;
 
-   // Constructing vectors v2a & v2b with ranges sorted by greater
-   vector <int> v2a ( v1a ) , v2b ( v1b ) ,  v2 ( v1 );
-   vector <int>::iterator Iter2a, Iter2b, Iter2, Result2;
-   sort ( v2a.begin( ), v2a.end( ), greater<int>( ) );
-   sort ( v2b.begin( ), v2b.end( ), greater<int>( ) );
+    // Constructing vectors v2a & v2b with ranges sorted by greater
+    vector<int> v2a ( v1a ) , v2b ( v1b ) , v2 ( v1 );
+    vector<int>::iterator Iter2a, Iter2b, Iter2, Result2;
+    sort ( v2a.begin( ), v2a.end( ), greater<int>( ) );
+    sort ( v2b.begin( ), v2b.end( ), greater<int>( ) );
 
-   cout << "Original vector v2a with range sorted by the\n "
-        <<  "binary predicate greater is   v2a =  ( " ;
-   for ( Iter2a = v2a.begin( ) ; Iter2a != v2a.end( ) ; Iter2a++ )
-      cout << *Iter2a << " ";
-   cout << ")." << endl;
+    cout << "Original vector v2a with range sorted by the\n "
+         << "binary predicate greater is   v2a = ( " ;
+    for ( Iter2a = v2a.begin( ) ; Iter2a != v2a.end( ) ; Iter2a++ )
+        cout << *Iter2a << " ";
+    cout << ")." << endl;
 
-   cout << "Original vector v2b with range sorted by the\n "
-        <<  "binary predicate greater is   v2b =  ( " ;
-   for ( Iter2b = v2b.begin( ) ; Iter2b != v2b.end( ) ; Iter2b++ )
-      cout << *Iter2b << " ";
-   cout << ")." << endl;
+    cout << "Original vector v2b with range sorted by the\n "
+         << "binary predicate greater is   v2b = ( " ;
+    for ( Iter2b = v2b.begin( ) ; Iter2b != v2b.end( ) ; Iter2b++ )
+        cout << *Iter2b << " ";
+    cout << ")." << endl;
 
-   // Constructing vectors v3a & v3b with ranges sorted by mod_lesser
-   vector <int> v3a ( v1a ), v3b ( v1b ) ,  v3 ( v1 );
-   vector <int>::iterator Iter3a,  Iter3b, Iter3, Result3;
-   sort ( v3a.begin( ), v3a.end( ), mod_lesser );
-   sort ( v3b.begin( ), v3b.end( ), mod_lesser  );
+    // Constructing vectors v3a & v3b with ranges sorted by mod_lesser
+    vector<int> v3a ( v1a ), v3b ( v1b ) , v3 ( v1 );
+    vector<int>::iterator Iter3a, Iter3b, Iter3, Result3;
+    sort ( v3a.begin( ), v3a.end( ), mod_lesser );
+    sort ( v3b.begin( ), v3b.end( ), mod_lesser );
 
-   cout << "Original vector v3a with range sorted by the\n "
-        <<  "binary predicate mod_lesser is   v3a =  ( " ;
-   for ( Iter3a = v3a.begin( ) ; Iter3a != v3a.end( ) ; Iter3a++ )
-      cout << *Iter3a << " ";
-   cout << ")." << endl;
+    cout << "Original vector v3a with range sorted by the\n "
+         << "binary predicate mod_lesser is   v3a = ( " ;
+    for ( Iter3a = v3a.begin( ) ; Iter3a != v3a.end( ) ; Iter3a++ )
+        cout << *Iter3a << " ";
+    cout << ")." << endl;
 
-   cout << "Original vector v3b with range sorted by the\n "
-        <<  "binary predicate mod_lesser is   v3b =  ( " ;
-   for ( Iter3b = v3b.begin( ) ; Iter3b != v3b.end( ) ; Iter3b++ )
-      cout << *Iter3b << " ";
-   cout << ")." << endl;
+    cout << "Original vector v3b with range sorted by the\n "
+         << "binary predicate mod_lesser is   v3b = ( " ;
+    for ( Iter3b = v3b.begin( ) ; Iter3b != v3b.end( ) ; Iter3b++ )
+        cout << *Iter3b << " ";
+    cout << ")." << endl;
 
-   // To combine into a difference in asscending
-   // order with the default binary predicate less <int>( )
-   Result1 = set_difference ( v1a.begin( ), v1a.end( ),
-      v1b.begin( ), v1b.end( ), v1.begin( ) );
-   cout << "Set_difference of source ranges with default order,"
-        << "\n vector v1mod =  ( " ;
-   for ( Iter1 = v1.begin( ) ; Iter1 != Result1 ; Iter1++ )
-      cout << *Iter1 << " ";
-   cout << ")." << endl;
+    // To combine into a difference in asscending
+    // order with the default binary predicate less<int>( )
+    Result1 = set_difference ( v1a.begin( ), v1a.end( ),
+        v1b.begin( ), v1b.end( ), v1.begin( ) );
+    cout << "Set_difference of source ranges with default order,"
+         << "\n vector v1mod = ( " ;
+    for ( Iter1 = v1.begin( ) ; Iter1 != Result1 ; Iter1++ )
+        cout << *Iter1 << " ";
+    cout << ")." << endl;
 
-   // To combine into a difference in descending
-   // order specify binary predicate greater<int>( )
-   Result2 = set_difference ( v2a.begin( ), v2a.end( ),
-      v2b.begin( ), v2b.end( ),v2.begin( ), greater <int>( ) );
-   cout << "Set_difference of source ranges with binary"
-        << "predicate greater specified,\n vector v2mod  = ( " ;
-   for ( Iter2 = v2.begin( ) ; Iter2 != Result2 ; Iter2++ )
-      cout << *Iter2 << " ";
-   cout << ")." << endl;
+    // To combine into a difference in descending
+    // order specify binary predicate greater<int>( )
+    Result2 = set_difference ( v2a.begin( ), v2a.end( ),
+        v2b.begin( ), v2b.end( ),v2.begin( ), greater<int>( ) );
+    cout << "Set_difference of source ranges with binary"
+         << "predicate greater specified,\n vector v2mod = ( " ;
+    for ( Iter2 = v2.begin( ) ; Iter2 != Result2 ; Iter2++ )
+        cout << *Iter2 << " ";
+    cout << ")." << endl;
 
-   // To combine into a difference applying a user
-   // defined binary predicate mod_lesser
-   Result3 = set_difference (  v3a.begin( ), v3a.end( ),
-      v3b.begin( ), v3b.end( ), v3.begin( ), mod_lesser );
-   cout << "Set_difference of source ranges with binary "
-        << "predicate mod_lesser specified,\n vector v3mod  = ( " ; ;
-   for ( Iter3 = v3.begin( ) ; Iter3 != Result3 ; Iter3++ )
-      cout << *Iter3 << " ";
-   cout << ")." << endl;
+    // To combine into a difference applying a user
+    // defined binary predicate mod_lesser
+    Result3 = set_difference ( v3a.begin( ), v3a.end( ),
+        v3b.begin( ), v3b.end( ), v3.begin( ), mod_lesser );
+    cout << "Set_difference of source ranges with binary "
+         << "predicate mod_lesser specified,\n vector v3mod = ( " ; ;
+    for ( Iter3 = v3.begin( ) ; Iter3 != Result3 ; Iter3++ )
+        cout << *Iter3 << " ";
+    cout << ")." << endl;
 }
 ```
 
-## <a name="set_intersection"></a> set_intersection
+## <a name="set_intersection"></a>set_intersection
 
 Her iki sıralanmış kaynak aralığa sahip öğelerin tümünü tek, sıralanmış bir aralıkta birleştirir, burada sıralama ölçütü bir ikili koşula göre belirtilebilir.
 
@@ -7818,75 +8055,77 @@ OutputIterator set_intersection(
     InputIterator1 last1,
     InputIterator2 first2,
     InputIterator2 last2,
-    OutputIterator result );
+    OutputIterator result);
 
-template<class InputIterator1, class InputIterator2, class OutputIterator, class BinaryPredicate>
+template<class InputIterator1, class InputIterator2, class OutputIterator, class Compare>
 OutputIterator set_intersection(
     InputIterator1 first1,
     InputIterator1 last1,
     InputIterator2 first2,
     InputIterator2 last2,
     OutputIterator result,
-    BinaryPredicate comp );
-    
-template<class ExecutionPolicy, class ForwardIterator1, class ForwardIterator2,
-class ForwardIterator>
+    Compare pred);
+
+template<class ExecutionPolicy, class ForwardIterator1, class ForwardIterator2, class ForwardIterator>
 ForwardIterator set_intersection(
     ExecutionPolicy&& exec,
-    ForwardIterator1 first1, 
+    ForwardIterator1 first1,
     ForwardIterator1 last1,
-    ForwardIterator2 first2, 
+    ForwardIterator2 first2,
     ForwardIterator2 last2,
     ForwardIterator result);
 
-template<class ExecutionPolicy, class ForwardIterator1, class ForwardIterator2,
-class ForwardIterator, class Compare>
+template<class ExecutionPolicy, class ForwardIterator1, class ForwardIterator2, class ForwardIterator, class Compare>
 ForwardIterator set_intersection(
     ExecutionPolicy&& exec,
-    ForwardIterator1 first1, 
+    ForwardIterator1 first1,
     ForwardIterator1 last1,
-    ForwardIterator2 first2, 
+    ForwardIterator2 first2,
     ForwardIterator2 last2,
-    ForwardIterator result, 
-    Compare comp);
+    ForwardIterator result,
+    Compare pred);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
+*Exec*\
+Kullanılacak yürütme ilkesi.
+
 *first1*\
-Birleşik ve iki kaynak aralıktaki kesişimi temsil eden tek bir aralığa sıralanmış ilk iki sıralanmış kaynak aralıktaki ilk öğenin konumu ele alan giriş yineleyici.
+İki kaynak aralığının kesişimini temsil eden tek bir aralığa Birleşik ve sıralanan iki sıralı kaynak aralıktaki ilk öğenin konumunu ele almak için bir giriş Yineleyici.
 
 *last1*\
-Birleşik ve iki kaynak aralıktaki kesişimi temsil eden tek bir aralığa sıralanmış bir önceki öğenin konumunu son öğeden ilk iki sıralanmış kaynak aralığa, ele alan bir giriş yineleyici.
+İki kaynak aralığının kesişimini temsil eden tek bir aralığa Birleşik ve sıralanan iki sıralı kaynak aralığının ilk öğesinden bir kez geçen bir giriş Yineleyici.
 
 *first2*\
-Art arda iki saniye içinde ilk öğenin konumunu ele alan giriş yineleyici birleşik ve iki kaynak aralıktaki kesişimi temsil eden tek bir aralığa sıralanmış kaynak aralığa sıralanır.
+Art arda iki sıralı kaynak aralığının ikinci kısmında birinci öğenin konumunu ele alarak, iki kaynak aralığın kesişimini temsil eden tek bir aralığa göre bir giriş Yineleyici.
 
-*Soyadı2*\
-Geçmiş konumu ele alan giriş yineleyici art arda iki saniye içindeki son öğeden birleşik ve iki kaynak aralıktaki kesişimi temsil eden tek bir aralığa sıralanmış kaynak aralığa sıralanır.
+*last2*\
+Art arda iki sıralı kaynak aralığının ikinci ve iki kaynak aralığının kesişimini temsil eden tek bir aralığa sıralanmış en son öğeden geçen bir giriş Yineleyici.
 
-**_** *Sonucu* aralıkları iki kaynak yeri hedef aralıktaki ilk öğenin konumunu bulan çıktı yineleyici olan iki kaynak kesişimi temsil eden tek bir sıralanmış aralıkta birleşik için aralıkları.
+*kaynaklanan*\
+İki kaynak aralığının iki kaynak aralığının kesişimini temsil eden tek bir sıralanmış aralığa Birleşik olarak bulunacağı, hedef aralıktaki ilk öğenin konumunu ele aldığı çıkış Yineleyici.
 
-*Comp*\
-Bir öğenin diğerinden daha büyük olan algılama tanımlayan kullanıcı tanımlı işlevin doğrulama nesnesi. İkili koşulu, iki bağımsız değişkeni alır ve döndürmelidir **true** ilk öğe olduğunda ikinci öğe küçüktür ve **false** Aksi takdirde.
+*pred*\
+Bir öğenin diğerinden küçük olduğu anlamlı olduğunu tanımlayan Kullanıcı tanımlı koşul işlevi nesnesi. İkili koşul iki bağımsız değişkeni alır ve ilk öğe ikinci öğeden küçük olduğunda **true** , aksi durumda **false** döndürmelidir.
 
-### <a name="return-value"></a>Dönüş Değeri
+### <a name="return-value"></a>Dönüş değeri
 
-İki kaynak aralıktaki kesişimi temsil eden sıralanmış bir hedef aralıktaki son öğeyi geçmiş konumu ele alan çıkış yineleyici.
+İki kaynak aralığının kesişimini temsil eden sıralanmış hedef aralıktaki son öğeden geçen bir çıkış yineleyicisi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Başvurulan sıralanmış kaynak aralık geçerli olmalıdır; Tüm İşaretçiler tekrar başvurulabilir olmalı ve her dizi içinde son konuma ilk konumdan erişilebilir olmalıdır erişilebilmelidir.
+Başvurulan sıralanmış kaynak aralıkları geçerli olmalıdır; Tüm işaretçilerin erişilebilir olması gerekir ve her bir dizide en son konum artırılamadı tarafından ilk kez ulaşılabilir olmalıdır.
 
-Hedef aralığı ya da kaynak aralıkları çakışmamalı ve hedef aralığı içerecek kadar büyük olmalıdır.
+Hedef Aralık, kaynak aralıklarından biriyle çakışmamalıdır ve hedef aralığı içerecek kadar büyük olmalıdır.
 
-Sıralanmış kaynak aralık her uygulama olarak aynı sıralamaya uygun birleştirme algoritmasının bir önkoşulu olarak düzenlenmiş olması gerekir, birleştirilmiş aralıkları Sıralama algoritması tarafından kullanılacak olan.
+Sıralanmış kaynak aralıklarının her biri, birleştirilmiş aralıkları sıralamak için algoritma tarafından kullanılacak şekilde, birleştirme algoritmasının uygulamanın bir önkoşulu olarak düzenlenmelidir.
 
-Her aralık içindeki öğelerin göreli sırasını hedef aralığı korunduğu kalıcı bir işlemdir. Kaynak aralıkları algoritması tarafından değiştirilmez.
+Her aralıktaki öğelerin göreli sırası hedef aralıkta korunduğu için işlem kararlı değildir. Kaynak aralıkları algoritma tarafından değiştirilmez.
 
-Giriş Yineleyicilerin değer türlerinin daha küçük olması-sıralanmalıdır daha karşılaştırılabilir, iki öğe belirtildiğinde, (yani birinin diğerinden diğerinden daha küçük olmadığı anlamında) eşit veya birinin diğerinden küçük olduğu belirlenebilir. Bu, denk olmayan öğeler arasında bir sıralamaya neden olur. Hem kaynak aralıklardaki eşdeğer öğelerin olduğunda, ilk aralıktaki öğeleri hedef aralığında ikinci aralığın öğelerden koyun. Kaynak aralıkları yinelenen bir öğe içeriyorsa, hedef aralığı sayısı iki kaynak aralıklardaki oluşan bu öğeleri içerir.
+Giriş yineleyicilerinin değer türlerinin sıralanabilmesi için kıyasla daha az olması gerekir, böylece iki öğe söz konusu olduğunda, eşdeğer oldukları (Yani bunlardan daha küçük olmayan) ya da birinin diğerinin daha küçük olduğu belirlenebilir. Bu, denk olmayan öğeler arasında bir sıralamaya neden olur. Her iki kaynak aralığında da eşdeğer öğeler olduğunda, ilk aralıktaki öğeler, hedef aralıktaki ikinci kaynak aralığından öğeden önce gelmelidir. Kaynak aralıkları bir öğenin yinelemelerini içeriyorsa, hedef Aralık her iki kaynak aralığında gerçekleşen bu öğelerin en fazla sayısını içerir.
 
-Algoritmanın karmaşıklığı, en fazla 2 ile doğrusal \* (( *last1 - first1*) + ( *Soyadı2 - first2*)) - 1 karşılaştırmalar için boş olmayan kaynak aralık.
+Algoritmanın karmaşıklığı, boş olmayan kaynak aralıkları için en çok `2 * ((last1 - first1) + (last2 - first2)) - 1` karşılaştırmalar ile doğrusal bir şekilde yapılır.
 
 ### <a name="example"></a>Örnek
 
@@ -7899,109 +8138,111 @@ Algoritmanın karmaşıklığı, en fazla 2 ile doğrusal \* (( *last1 - first1*
 #include <iostream>
 
 // Return whether modulus of elem1 is less than modulus of elem2
-bool mod_lesser (int elem1, int elem2 ) {
-   if ( elem1 < 0 )
-      elem1 = - elem1;
-   if ( elem2 < 0 )
-      elem2 = - elem2;
-   return elem1 < elem2;
+bool mod_lesser (int elem1, int elem2 )
+{
+    if ( elem1 < 0 )
+        elem1 = - elem1;
+    if ( elem2 < 0 )
+        elem2 = - elem2;
+    return elem1 < elem2;
 }
 
-int main() {
-   using namespace std;
-   vector <int> v1a, v1b, v1 ( 12 );
-   vector <int>::iterator Iter1a,  Iter1b, Iter1, Result1;
+int main()
+{
+    using namespace std;
+    vector<int> v1a, v1b, v1 ( 12 );
+    vector<int>::iterator Iter1a, Iter1b, Iter1, Result1;
 
-   // Constructing vectors v1a & v1b with default less than ordering
-   int i;
-   for ( i = -1 ; i <= 3 ; i++ )
-      v1a.push_back( i );
+    // Constructing vectors v1a & v1b with default less than ordering
+    int i;
+    for ( i = -1 ; i <= 3 ; i++ )
+        v1a.push_back( i );
 
-   int ii;
-   for ( ii =-3 ; ii <= 1 ; ii++ )
-      v1b.push_back( ii );
+    int ii;
+    for ( ii =-3 ; ii <= 1 ; ii++ )
+        v1b.push_back( ii );
 
-   cout << "Original vector v1a with range sorted by the\n "
-        <<  "binary predicate less than is  v1a = ( " ;
-   for ( Iter1a = v1a.begin( ) ; Iter1a != v1a.end( ) ; Iter1a++ )
-      cout << *Iter1a << " ";
-   cout << ")." << endl;
+    cout << "Original vector v1a with range sorted by the\n "
+         << "binary predicate less than is v1a = ( " ;
+    for ( Iter1a = v1a.begin( ) ; Iter1a != v1a.end( ) ; Iter1a++ )
+        cout << *Iter1a << " ";
+    cout << ")." << endl;
 
-   cout << "Original vector v1b with range sorted by the\n "
-        <<  "binary predicate less than is  v1b = ( " ;
-   for ( Iter1b = v1b.begin( ) ; Iter1b != v1b.end( ) ; Iter1b++ )
-      cout << *Iter1b << " ";
-   cout << ")." << endl;
+    cout << "Original vector v1b with range sorted by the\n "
+         << "binary predicate less than is v1b = ( " ;
+    for ( Iter1b = v1b.begin( ) ; Iter1b != v1b.end( ) ; Iter1b++ )
+        cout << *Iter1b << " ";
+    cout << ")." << endl;
 
-   // Constructing vectors v2a & v2b with ranges sorted by greater
-   vector <int> v2a ( v1a ) , v2b ( v1b ) , v2 ( v1 );
-   vector <int>::iterator Iter2a, Iter2b, Iter2, Result2;
-   sort ( v2a.begin( ), v2a.end( ), greater<int>( ) );
-   sort ( v2b.begin( ), v2b.end( ), greater<int>( ) );
+    // Constructing vectors v2a & v2b with ranges sorted by greater
+    vector<int> v2a ( v1a ) , v2b ( v1b ) , v2 ( v1 );
+    vector<int>::iterator Iter2a, Iter2b, Iter2, Result2;
+    sort ( v2a.begin( ), v2a.end( ), greater<int>( ) );
+    sort ( v2b.begin( ), v2b.end( ), greater<int>( ) );
 
-   cout << "Original vector v2a with range sorted by the\n "
-        << "binary predicate greater is   v2a =  ( " ;
-   for ( Iter2a = v2a.begin( ) ; Iter2a != v2a.end( ) ; Iter2a++ )
-      cout << *Iter2a << " ";
-   cout << ")." << endl;
+    cout << "Original vector v2a with range sorted by the\n "
+         << "binary predicate greater is   v2a = ( " ;
+    for ( Iter2a = v2a.begin( ) ; Iter2a != v2a.end( ) ; Iter2a++ )
+        cout << *Iter2a << " ";
+    cout << ")." << endl;
 
-   cout << "Original vector v2b with range sorted by the\n "
-        << "binary predicate greater is   v2b =  ( " ;
-   for ( Iter2b = v2b.begin( ) ; Iter2b != v2b.end( ) ; Iter2b++ )
-      cout << *Iter2b << " ";
-   cout << ")." << endl;
+    cout << "Original vector v2b with range sorted by the\n "
+         << "binary predicate greater is   v2b = ( " ;
+    for ( Iter2b = v2b.begin( ) ; Iter2b != v2b.end( ) ; Iter2b++ )
+        cout << *Iter2b << " ";
+    cout << ")." << endl;
 
-   // Constructing vectors v3a & v3b with ranges sorted by mod_lesser
-   vector <int> v3a ( v1a ), v3b ( v1b ) , v3 ( v1 );
-   vector <int>::iterator Iter3a,  Iter3b, Iter3, Result3;
-   sort ( v3a.begin( ), v3a.end( ), mod_lesser );
-   sort ( v3b.begin( ), v3b.end( ), mod_lesser );
+    // Constructing vectors v3a & v3b with ranges sorted by mod_lesser
+    vector<int> v3a ( v1a ), v3b ( v1b ) , v3 ( v1 );
+    vector<int>::iterator Iter3a, Iter3b, Iter3, Result3;
+    sort ( v3a.begin( ), v3a.end( ), mod_lesser );
+    sort ( v3b.begin( ), v3b.end( ), mod_lesser );
 
-   cout << "Original vector v3a with range sorted by the\n "
-        <<  "binary predicate mod_lesser is   v3a =  ( " ;
-   for ( Iter3a = v3a.begin( ) ; Iter3a != v3a.end( ) ; Iter3a++ )
-      cout << *Iter3a << " ";
-   cout << ")." << endl;
+    cout << "Original vector v3a with range sorted by the\n "
+         << "binary predicate mod_lesser is   v3a = ( " ;
+    for ( Iter3a = v3a.begin( ) ; Iter3a != v3a.end( ) ; Iter3a++ )
+        cout << *Iter3a << " ";
+    cout << ")." << endl;
 
-   cout << "Original vector v3b with range sorted by the\n "
-           <<  "binary predicate mod_lesser is   v3b =  ( " ;
-   for ( Iter3b = v3b.begin( ) ; Iter3b != v3b.end( ) ; Iter3b++ )
-      cout << *Iter3b << " ";
-   cout << ")." << endl;
+    cout << "Original vector v3b with range sorted by the\n "
+         << "binary predicate mod_lesser is   v3b = ( " ;
+    for ( Iter3b = v3b.begin( ) ; Iter3b != v3b.end( ) ; Iter3b++ )
+        cout << *Iter3b << " ";
+    cout << ")." << endl;
 
-   // To combine into an intersection in asscending order with the
-   // default binary predicate less <int>( )
-   Result1 = set_intersection ( v1a.begin( ), v1a.end( ),
-      v1b.begin( ), v1b.end( ), v1.begin( ) );
-   cout << "Intersection of source ranges with default order,"
-        << "\n vector v1mod =  ( " ;
-   for ( Iter1 = v1.begin( ) ; Iter1 != Result1 ; ++Iter1 )
-      cout << *Iter1 << " ";
-   cout << ")." << endl;
+    // To combine into an intersection in asscending order with the
+    // default binary predicate less<int>( )
+    Result1 = set_intersection ( v1a.begin( ), v1a.end( ),
+        v1b.begin( ), v1b.end( ), v1.begin( ) );
+    cout << "Intersection of source ranges with default order,"
+         << "\n vector v1mod = ( " ;
+    for ( Iter1 = v1.begin( ) ; Iter1 != Result1 ; ++Iter1 )
+        cout << *Iter1 << " ";
+    cout << ")." << endl;
 
-   // To combine into an intersection in descending order, specify
-   // binary predicate greater<int>( )
-   Result2 = set_intersection ( v2a.begin( ), v2a.end( ),
-      v2b.begin( ), v2b.end( ),v2.begin( ), greater <int>( ) );
-   cout << "Intersection of source ranges with binary predicate"
-        << " greater specified,\n vector v2mod  = ( " ;
-   for ( Iter2 = v2.begin( ) ; Iter2 != Result2 ; ++Iter2 )
-      cout << *Iter2 << " ";
-   cout << ")." << endl;
+    // To combine into an intersection in descending order, specify
+    // binary predicate greater<int>( )
+    Result2 = set_intersection ( v2a.begin( ), v2a.end( ),
+        v2b.begin( ), v2b.end( ),v2.begin( ), greater<int>( ) );
+    cout << "Intersection of source ranges with binary predicate"
+            << " greater specified,\n vector v2mod = ( " ;
+    for ( Iter2 = v2.begin( ) ; Iter2 != Result2 ; ++Iter2 )
+        cout << *Iter2 << " ";
+    cout << ")." << endl;
 
-   // To combine into an intersection applying a user-defined
-   // binary predicate mod_lesser
-   Result3 = set_intersection ( v3a.begin( ), v3a.end( ),
-      v3b.begin( ), v3b.end( ), v3.begin( ), mod_lesser );
-   cout << "Intersection of source ranges with binary predicate "
-        << "mod_lesser specified,\n vector v3mod  = ( " ; ;
-   for ( Iter3 = v3.begin( ) ; Iter3 != Result3 ; ++Iter3 )
-      cout << *Iter3 << " ";
-   cout << ")." << endl;
+    // To combine into an intersection applying a user-defined
+    // binary predicate mod_lesser
+    Result3 = set_intersection ( v3a.begin( ), v3a.end( ),
+        v3b.begin( ), v3b.end( ), v3.begin( ), mod_lesser );
+    cout << "Intersection of source ranges with binary predicate "
+            << "mod_lesser specified,\n vector v3mod = ( " ; ;
+    for ( Iter3 = v3.begin( ) ; Iter3 != Result3 ; ++Iter3 )
+        cout << *Iter3 << " ";
+    cout << ")." << endl;
 }
 ```
 
-## <a name="set_symmetric_difference"></a> set_symmetric_difference
+## <a name="set_symmetric_difference"></a>set_symmetric_difference
 
 İki değil, tek bir sıralanmış kaynak aralığa sahip öğelerin tümünü tek, sıralanmış bir aralıkta birleştirir, burada sıralama ölçütü bir ikili koşula göre belirtilebilir.
 
@@ -8014,73 +8255,75 @@ OutputIterator set_symmetric_difference(
     InputIterator2 last2,
     OutputIterator result );
 
-template<class InputIterator1, class InputIterator2, class OutputIterator, class BinaryPredicate>
+template<class InputIterator1, class InputIterator2, class OutputIterator, class Compare>
 OutputIterator set_symmetric_difference(
     InputIterator1 first1,
     InputIterator1 last1,
     InputIterator2 first2,
     InputIterator2 last2,
     OutputIterator result,
-    BinaryPredicate comp );
-    
-template<class ExecutionPolicy, class ForwardIterator1, class ForwardIterator2,
-class ForwardIterator>
+    Compare pred );
+
+template<class ExecutionPolicy, class ForwardIterator1, class ForwardIterator2, class ForwardIterator>
 ForwardIterator set_symmetric_difference(
     ExecutionPolicy&& exec,
-    ForwardIterator1 first1, 
+    ForwardIterator1 first1,
     ForwardIterator1 last1,
-    ForwardIterator2 first2, 
+    ForwardIterator2 first2,
     ForwardIterator2 last2,
     ForwardIterator result);
-    
-template<class ExecutionPolicy, class ForwardIterator1, class ForwardIterator2,
-class ForwardIterator, class Compare>
+
+template<class ExecutionPolicy, class ForwardIterator1, class ForwardIterator2, class ForwardIterator, class Compare>
 ForwardIterator set_symmetric_difference(
     ExecutionPolicy&& exec,
-    ForwardIterator1 first1, 
+    ForwardIterator1 first1,
     ForwardIterator1 last1,
-    ForwardIterator2 first2, 
+    ForwardIterator2 first2,
     ForwardIterator2 last2,
-    ForwardIterator result, 
-    Compare comp);
+    ForwardIterator result,
+    Compare pred);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
+*Exec*\
+Kullanılacak yürütme ilkesi.
+
 *first1*\
-Birleşik ve iki kaynak aralıktaki simetrik fark temsil eden tek bir aralığa sıralanmış ilk iki sıralanmış kaynak aralıktaki ilk öğenin konumu ele alan giriş yineleyici.
+İki kaynak aralığının simetrik farkını temsil eden tek bir aralığa Birleşik ve sıralanan iki sıralı kaynak aralıktaki ilk öğenin konumunu ele almak için bir giriş Yineleyici.
 
 *last1*\
-Birleşik ve iki kaynak aralıktaki simetrik fark temsil eden tek bir aralığa sıralanmış bir önceki öğenin konumunu son öğeden ilk iki sıralanmış kaynak aralığa, ele alan bir giriş yineleyici.
+İki kaynak aralığının simetrik farkını temsil eden tek bir aralığa Birleşik ve sıralanan iki sıralı kaynak aralığının ilk öğesinden bir kez geçen bir girdi yineleyicisi.
 
 *first2*\
-Art arda iki saniye içinde ilk öğenin konumunu ele alan giriş yineleyici birleşik ve iki kaynak aralıktaki simetrik fark temsil eden tek bir aralığa sıralanmış kaynak aralığa sıralanır.
+Art arda iki sıralı kaynak aralığının ikinci kısmında birinci öğenin konumunu ele alarak, iki kaynak aralığının simetrik farkını temsil eden tek bir aralığa göre bir giriş Yineleyici.
 
-*Soyadı2*\
-Geçmiş konumu ele alan giriş yineleyici art arda iki saniye içindeki son öğeden birleşik ve iki kaynak aralıktaki simetrik fark temsil eden tek bir aralığa sıralanmış kaynak aralığa sıralanır.
+*last2*\
+Art arda iki sıralı kaynak aralığının ikinci ve iki kaynak aralığının simetrik farkını temsil eden tek bir aralığa sıralanmış en son öğeden geçen bir giriş Yineleyici.
 
-**_** *Sonucu* aralıkları iki kaynak yeri hedef aralıktaki ilk öğenin konumunu bulan çıktı yineleyici iki simetrik fark temsil eden tek bir sıralanmış aralıkta birleşik üzeresiniz Kaynak aralıkları.
+*kaynaklanan*\
+İki kaynak aralığının iki kaynak aralığının simetrik farkını temsil eden tek bir sıralanmış aralığa Birleşik olarak bulunacağı, hedef aralıktaki ilk öğenin konumunu ele aldığı çıkış yineleyicisi.
 
-*Comp*<br/>
-Bir öğenin diğerinden daha büyük olan algılama tanımlayan kullanıcı tanımlı işlevin doğrulama nesnesi. İkili koşulu, iki bağımsız değişkeni alır ve döndürmelidir **true** ilk öğe olduğunda ikinci öğe küçüktür ve **false** Aksi takdirde.
+*pred*\
+Bir öğenin diğerinden küçük olduğu anlamlı olduğunu tanımlayan Kullanıcı tanımlı koşul işlevi nesnesi. İkili koşul iki bağımsız değişkeni alır ve ilk öğe ikinci öğeden küçük olduğunda **true** , aksi durumda **false** döndürmelidir.
 
-### <a name="return-value"></a>Dönüş Değeri
+### <a name="return-value"></a>Dönüş değeri
 
-Bir önceki öğenin konumunu son öğeyi temsil eden iki kaynak aralıktaki simetrik fark sıralanmış bir hedef aralıktaki ele alan çıkış yineleyici.
+İki kaynak aralığının simetrik farkını temsil eden sıralanmış hedef aralıktaki son öğeden geçen bir çıkış yineleyicisi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Başvurulan sıralanmış kaynak aralık geçerli olmalıdır; Tüm İşaretçiler tekrar başvurulabilir olmalı ve her dizi içinde son konuma ilk konumdan erişilebilir olmalıdır erişilebilmelidir.
+Başvurulan sıralanmış kaynak aralıkları geçerli olmalıdır; Tüm işaretçilerin erişilebilir olması gerekir ve her bir dizide en son konum artırılamadı tarafından ilk kez ulaşılabilir olmalıdır.
 
-Hedef aralığı ya da kaynak aralıkları çakışmamalı ve hedef aralığı içerecek kadar büyük olmalıdır.
+Hedef Aralık, kaynak aralıklarından biriyle çakışmamalıdır ve hedef aralığı içerecek kadar büyük olmalıdır.
 
-Sıralanmış kaynak aralığa her uygulama için bir önkoşul olarak düzenlenmelidir `merge*` olarak aynı sıralamaya uygun şekilde algoritmasıdır birleştirilmiş aralıkları Sıralama algoritması tarafından kullanılacak.
+Sıralanmış kaynak aralıklarının her biri, algoritma tarafından Birleşik aralıkları sıralamak için kullanılan aynı sıralamaya uygun `merge*` olarak, algoritmanın uygulamasına bir ön koşul olarak düzenlenmelidir.
 
-Her aralık içindeki öğelerin göreli sırasını hedef aralığı korunduğu kalıcı bir işlemdir. Kaynak aralıkları algoritması birleştirme tarafından değiştirilmez.
+Her aralıktaki öğelerin göreli sırası hedef aralıkta korunduğu için işlem kararlı değildir. Kaynak aralıkları, algoritma birleştirme tarafından değiştirilmez.
 
-Giriş Yineleyicilerin değer türlerinin daha küçük olması-sıralanmalıdır daha karşılaştırılabilir, iki öğe belirtildiğinde, (yani birinin diğerinden diğerinden daha küçük olmadığı anlamında) eşit veya birinin diğerinden küçük olduğu belirlenebilir. Bu, denk olmayan öğeler arasında bir sıralamaya neden olur. Hem kaynak aralıklardaki eşdeğer öğelerin olduğunda, ilk aralıktaki öğeleri hedef aralığında ikinci aralığın öğelerden koyun. Kaynak aralıkları yinelenen bir öğe içeriyorsa, hedef aralığı kaynak aralıktaki birinde söz konusu öğelerin oluşumları aşıyor oluşumları ikinci kaynağında söz konusu öğelerin sayının mutlak değerini ardından içerecek Aralık.
+Giriş yineleyicilerinin değer türlerinin sıralanabilmesi için kıyasla daha az olması gerekir, böylece iki öğe söz konusu olduğunda, eşdeğer oldukları (Yani bunlardan daha küçük olmayan) ya da birinin diğerinin daha küçük olduğu belirlenebilir. Bu, denk olmayan öğeler arasında bir sıralamaya neden olur. Her iki kaynak aralığında da eşdeğer öğeler olduğunda, ilk aralıktaki öğeler, hedef aralıktaki ikinci kaynak aralığından öğeden önce gelmelidir. Kaynak aralıkları bir öğenin yinelemelerini içeriyorsa, hedef Aralık, kaynak aralıklarından birindeki bu öğelerin oluşumlarının ikinci kaynaktaki bu öğelerin oluşumlarını aştığında sayının mutlak değerini içerir aralığı.
 
-Algoritmanın karmaşıklığı, en fazla 2 ile doğrusal \* ((*last1 - first1*)-(*Soyadı2 - first2*)) - 1 karşılaştırmalar için boş olmayan kaynak aralık.
+Algoritmanın karmaşıklığı, boş olmayan kaynak aralıkları için en çok `2 * ((last1 - first1) - (last2 - first2)) - 1` karşılaştırmalar ile doğrusal bir şekilde yapılır.
 
 ### <a name="example"></a>Örnek
 
@@ -8095,113 +8338,113 @@ Algoritmanın karmaşıklığı, en fazla 2 ile doğrusal \* ((*last1 - first1*)
 // Return whether modulus of elem1 is less than modulus of elem2
 bool mod_lesser (int elem1, int elem2 )
 {
-   if ( elem1 < 0 )
-      elem1 = - elem1;
-   if ( elem2 < 0 )
-      elem2 = - elem2;
-   return elem1 < elem2;
+    if ( elem1 < 0 )
+        elem1 = - elem1;
+    if ( elem2 < 0 )
+        elem2 = - elem2;
+    return elem1 < elem2;
 }
 
 int main()
 {
-   using namespace std;
-   vector <int> v1a, v1b, v1 ( 12 );
-   vector <int>::iterator Iter1a,  Iter1b, Iter1, Result1;
+    using namespace std;
+    vector<int> v1a, v1b, v1 ( 12 );
+    vector<int>::iterator Iter1a, Iter1b, Iter1, Result1;
 
-   // Constructing vectors v1a & v1b with default less-than ordering
-   int i;
-   for ( i = -1 ; i <= 4 ; i++ )
-   {
-      v1a.push_back(  i );
-   }
+    // Constructing vectors v1a & v1b with default less-than ordering
+    int i;
+    for ( i = -1 ; i <= 4 ; i++ )
+    {
+        v1a.push_back( i );
+    }
 
-   int ii;
-   for ( ii =-3 ; ii <= 0 ; ii++ )
-   {
-      v1b.push_back(  ii  );
-   }
+    int ii;
+    for ( ii =-3 ; ii <= 0 ; ii++ )
+    {
+        v1b.push_back( ii );
+    }
 
-   cout << "Original vector v1a with range sorted by the\n "
-        <<  "binary predicate less than is  v1a = ( " ;
-   for ( Iter1a = v1a.begin( ) ; Iter1a != v1a.end( ) ; Iter1a++ )
-      cout << *Iter1a << " ";
-   cout << ")." << endl;
+    cout << "Original vector v1a with range sorted by the\n "
+         << "binary predicate less than is v1a = ( " ;
+    for ( Iter1a = v1a.begin( ) ; Iter1a != v1a.end( ) ; Iter1a++ )
+        cout << *Iter1a << " ";
+    cout << ")." << endl;
 
-   cout << "Original vector v1b with range sorted by the\n "
-        <<  "binary predicate less than is  v1b = ( " ;
-   for ( Iter1b = v1b.begin( ) ; Iter1b != v1b.end( ) ; Iter1b++ )
-      cout << *Iter1b << " ";
-   cout << ")." << endl;
+    cout << "Original vector v1b with range sorted by the\n "
+         << "binary predicate less than is v1b = ( " ;
+    for ( Iter1b = v1b.begin( ) ; Iter1b != v1b.end( ) ; Iter1b++ )
+        cout << *Iter1b << " ";
+    cout << ")." << endl;
 
-   // Constructing vectors v2a & v2b with ranges sorted by greater
-   vector <int> v2a ( v1a ) , v2b ( v1b ) ,  v2 ( v1 );
-   vector <int>::iterator Iter2a, Iter2b, Iter2, Result2;
-   sort ( v2a.begin( ), v2a.end( ), greater<int>( ) );
-   sort ( v2b.begin( ), v2b.end( ), greater<int>( ) );
+    // Constructing vectors v2a & v2b with ranges sorted by greater
+    vector<int> v2a ( v1a ) , v2b ( v1b ) , v2 ( v1 );
+    vector<int>::iterator Iter2a, Iter2b, Iter2, Result2;
+    sort ( v2a.begin( ), v2a.end( ), greater<int>( ) );
+    sort ( v2b.begin( ), v2b.end( ), greater<int>( ) );
 
-   cout << "Original vector v2a with range sorted by the\n "
-        <<  "binary predicate greater is   v2a =  ( " ;
-   for ( Iter2a = v2a.begin( ) ; Iter2a != v2a.end( ) ; Iter2a++ )
-      cout << *Iter2a << " ";
-   cout << ")." << endl;
+    cout << "Original vector v2a with range sorted by the\n "
+         << "binary predicate greater is   v2a = ( " ;
+    for ( Iter2a = v2a.begin( ) ; Iter2a != v2a.end( ) ; Iter2a++ )
+        cout << *Iter2a << " ";
+    cout << ")." << endl;
 
-   cout << "Original vector v2b with range sorted by the\n "
-        <<  "binary predicate greater is   v2b =  ( " ;
-   for ( Iter2b = v2b.begin( ) ; Iter2b != v2b.end( ) ; Iter2b++ )
-      cout << *Iter2b << " ";
-   cout << ")." << endl;
+    cout << "Original vector v2b with range sorted by the\n "
+         << "binary predicate greater is   v2b = ( " ;
+    for ( Iter2b = v2b.begin( ) ; Iter2b != v2b.end( ) ; Iter2b++ )
+        cout << *Iter2b << " ";
+    cout << ")." << endl;
 
-   // Constructing vectors v3a & v3b with ranges sorted by mod_lesser
-   vector <int> v3a ( v1a ), v3b ( v1b ) ,  v3 ( v1 );
-   vector <int>::iterator Iter3a, Iter3b, Iter3, Result3;
-   sort ( v3a.begin( ), v3a.end( ), mod_lesser );
-   sort ( v3b.begin( ), v3b.end( ), mod_lesser  );
+    // Constructing vectors v3a & v3b with ranges sorted by mod_lesser
+    vector<int> v3a ( v1a ), v3b ( v1b ) , v3 ( v1 );
+    vector<int>::iterator Iter3a, Iter3b, Iter3, Result3;
+    sort ( v3a.begin( ), v3a.end( ), mod_lesser );
+    sort ( v3b.begin( ), v3b.end( ), mod_lesser );
 
-   cout << "Original vector v3a with range sorted by the\n "
-        <<  "binary predicate mod_lesser is   v3a =  ( " ;
-   for ( Iter3a = v3a.begin( ) ; Iter3a != v3a.end( ) ; Iter3a++ )
-      cout << *Iter3a << " ";
-   cout << ")." << endl;
+    cout << "Original vector v3a with range sorted by the\n "
+         << "binary predicate mod_lesser is   v3a = ( " ;
+    for ( Iter3a = v3a.begin( ) ; Iter3a != v3a.end( ) ; Iter3a++ )
+        cout << *Iter3a << " ";
+    cout << ")." << endl;
 
-   cout << "Original vector v3b with range sorted by the\n "
-        <<  "binary predicate mod_lesser is   v3b =  ( " ;
-   for ( Iter3b = v3b.begin( ) ; Iter3b != v3b.end( ) ; Iter3b++ )
-      cout << *Iter3b << " ";
-   cout << ")." << endl;
+    cout << "Original vector v3b with range sorted by the\n "
+         << "binary predicate mod_lesser is   v3b = ( " ;
+    for ( Iter3b = v3b.begin( ) ; Iter3b != v3b.end( ) ; Iter3b++ )
+        cout << *Iter3b << " ";
+    cout << ")." << endl;
 
-   // To combine into a symmetric difference in ascending
-   // order with the default binary predicate less <int>( )
-   Result1 = set_symmetric_difference ( v1a.begin( ), v1a.end( ),
-      v1b.begin( ), v1b.end( ), v1.begin( ) );
-   cout << "Set_symmetric_difference of source ranges with default order,"
-        << "\n vector v1mod =  ( " ;
-   for ( Iter1 = v1.begin( ) ; Iter1 != Result1 ; Iter1++ )
-      cout << *Iter1 << " ";
-   cout << ")." << endl;
+    // To combine into a symmetric difference in ascending
+    // order with the default binary predicate less<int>( )
+    Result1 = set_symmetric_difference ( v1a.begin( ), v1a.end( ),
+        v1b.begin( ), v1b.end( ), v1.begin( ) );
+    cout << "Set_symmetric_difference of source ranges with default order,"
+         << "\n vector v1mod = ( " ;
+    for ( Iter1 = v1.begin( ) ; Iter1 != Result1 ; Iter1++ )
+        cout << *Iter1 << " ";
+    cout << ")." << endl;
 
-   // To combine into a symmetric difference in descending
-   // order, specify binary predicate greater<int>( )
-   Result2 = set_symmetric_difference ( v2a.begin( ), v2a.end( ),
-      v2b.begin( ), v2b.end( ),v2.begin( ), greater <int>( ) );
-   cout << "Set_symmetric_difference of source ranges with binary"
-        << "predicate greater specified,\n vector v2mod  = ( " ;
-   for ( Iter2 = v2.begin( ) ; Iter2 != Result2 ; Iter2++ )
-      cout << *Iter2 << " ";
-   cout << ")." << endl;
+    // To combine into a symmetric difference in descending
+    // order, specify binary predicate greater<int>( )
+    Result2 = set_symmetric_difference ( v2a.begin( ), v2a.end( ),
+        v2b.begin( ), v2b.end( ),v2.begin( ), greater<int>( ) );
+    cout << "Set_symmetric_difference of source ranges with binary"
+         << "predicate greater specified,\n vector v2mod = ( " ;
+    for ( Iter2 = v2.begin( ) ; Iter2 != Result2 ; Iter2++ )
+        cout << *Iter2 << " ";
+    cout << ")." << endl;
 
-   // To combine into a symmetric difference applying a user
-   // defined binary predicate mod_lesser
-   Result3 = set_symmetric_difference ( v3a.begin( ), v3a.end( ),
-      v3b.begin( ), v3b.end( ), v3.begin( ), mod_lesser );
-   cout << "Set_symmetric_difference of source ranges with binary "
-        << "predicate mod_lesser specified,\n vector v3mod  = ( " ; ;
-   for ( Iter3 = v3.begin( ) ; Iter3 != Result3 ; Iter3++ )
-      cout << *Iter3 << " ";
-   cout << ")." << endl;
+    // To combine into a symmetric difference applying a user
+    // defined binary predicate mod_lesser
+    Result3 = set_symmetric_difference ( v3a.begin( ), v3a.end( ),
+        v3b.begin( ), v3b.end( ), v3.begin( ), mod_lesser );
+    cout << "Set_symmetric_difference of source ranges with binary "
+         << "predicate mod_lesser specified,\n vector v3mod = ( " ; ;
+    for ( Iter3 = v3.begin( ) ; Iter3 != Result3 ; Iter3++ )
+        cout << *Iter3 << " ";
+    cout << ")." << endl;
 }
 ```
 
-## <a name="set_union"></a> set_union
+## <a name="set_union"></a>set_union
 
 İki sıralanmış kaynak aralığından en az birine sahip öğelerin tümünü tek, sıralanmış bir aralıkta birleştirir, burada sıralama ölçütü bir ikili koşula göre belirtilebilir.
 
@@ -8214,73 +8457,75 @@ OutputIterator set_union(
     InputIterator2 last2,
     OutputIterator result );
 
-template<class InputIterator1, class InputIterator2, class OutputIterator, class BinaryPredicate>
+template<class InputIterator1, class InputIterator2, class OutputIterator, class Compare>
 OutputIterator set_union(
     InputIterator1 first1,
     InputIterator1 last1,
     InputIterator2 first2,
     InputIterator2 last2,
     OutputIterator result,
-    BinaryPredicate comp );
-    
-template<class ExecutionPolicy, class ForwardIterator1, class ForwardIterator2,
-class ForwardIterator>
+    Compare pred );
+
+template<class ExecutionPolicy, class ForwardIterator1, class ForwardIterator2, class ForwardIterator>
 ForwardIterator set_union(
     ExecutionPolicy&& exec,
-    ForwardIterator1 first1, 
+    ForwardIterator1 first1,
     ForwardIterator1 last1,
-    ForwardIterator2 first2, 
+    ForwardIterator2 first2,
     ForwardIterator2 last2,
     ForwardIterator result);
 
-template<class ExecutionPolicy, class ForwardIterator1, class ForwardIterator2,
-class ForwardIterator, class Compare>
+template<class ExecutionPolicy, class ForwardIterator1, class ForwardIterator2, class ForwardIterator, class Compare>
 ForwardIterator set_union(
     ExecutionPolicy&& exec,
-    ForwardIterator1 first1, 
+    ForwardIterator1 first1,
     ForwardIterator1 last1,
-    ForwardIterator2 first2, 
+    ForwardIterator2 first2,
     ForwardIterator2 last2,
-    ForwardIterator result, 
-    Compare comp);
+    ForwardIterator result,
+    Compare pred);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
+*Exec*\
+Kullanılacak yürütme ilkesi.
+
 *first1*\
-Birleşik ve iki kaynak aralıktaki birleşimi temsil eden tek bir aralığa sıralanmış ilk iki sıralanmış kaynak aralıktaki ilk öğenin konumu ele alan giriş yineleyici.
+İki kaynak aralığın birleşimini temsil eden tek bir aralığa Birleşik ve sıralanan iki sıralı kaynak aralıktaki ilk öğenin konumunu ele almak için bir giriş Yineleyici.
 
 *last1*\
-Birleşik ve iki kaynak aralıktaki birleşimi temsil eden tek bir aralığa sıralanmış bir önceki öğenin konumunu son öğeden ilk iki sıralanmış kaynak aralığa, ele alan bir giriş yineleyici.
+İki kaynak aralığın birleşimini temsil eden tek bir aralığa Birleşik ve sıralanan iki sıralı kaynak aralığının ilk öğesinden bir kez geçen bir giriş Yineleyici.
 
 *first2*\
-Art arda iki saniye içinde ilk öğenin konumunu ele alan giriş yineleyici birleşik ve iki kaynak aralıktaki birleşimi temsil eden tek bir aralığa sıralanmış kaynak aralığa sıralanır.
+Art arda iki sıralı kaynak aralığının ikinci kısmında birinci öğenin konumunu ele alarak, iki kaynak aralığın birleşimini temsil eden tek bir aralığa göre bir giriş Yineleyici.
 
-*Soyadı2*\
-Geçmiş konumu ele alan giriş yineleyici art arda iki saniye içindeki son öğeden birleşik ve iki kaynak aralıktaki birleşimi temsil eden tek bir aralığa sıralanmış kaynak aralığa sıralanır.
+*last2*\
+Art arda iki sıralı kaynak aralığının ikincisine göre son öğeden geçen ve iki kaynak aralığının birleşimini temsil eden tek bir aralığa sıralanan bir giriş Yineleyici.
 
-**_** *Sonucu* aralıkları iki kaynak yeri hedef aralıktaki ilk öğenin konumunu bulan çıktı yineleyici iki kaynak aralıktaki birleşimi temsil eden tek bir sıralanmış aralıkta birleşik üzeresiniz.
+*kaynaklanan*\
+İki kaynak aralığının iki kaynak aralığın birleşimini temsil eden tek bir sıralanmış aralığa Birleşik olarak bulunacağı, hedef aralıktaki ilk öğenin konumunu ele aldığı çıkış Yineleyici.
 
-*Comp*<br/>
-Bir öğenin diğerinden daha büyük olan algılama tanımlayan kullanıcı tanımlı işlevin doğrulama nesnesi. İkili koşulu, iki bağımsız değişkeni alır ve döndürmelidir **true** ilk öğe olduğunda ikinci öğe küçüktür ve **false** Aksi takdirde.
+*pred*\
+Bir öğenin diğerinden küçük olduğu anlamlı olduğunu tanımlayan Kullanıcı tanımlı koşul işlevi nesnesi. İkili koşul iki bağımsız değişkeni alır ve ilk öğe ikinci öğeden küçük olduğunda **true** , aksi durumda **false** döndürmelidir.
 
-### <a name="return-value"></a>Dönüş Değeri
+### <a name="return-value"></a>Dönüş değeri
 
-İki kaynak aralıktaki birleşimi temsil eden sıralanmış bir hedef aralıktaki son öğeyi geçmiş konumu ele alan çıkış yineleyici.
+İki kaynak aralığının birleşimini temsil eden sıralanmış hedef aralıktaki son öğeden sonraki konumu ele alarak bir çıkış yineleyicisi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Başvurulan sıralanmış kaynak aralık geçerli olmalıdır; Tüm İşaretçiler tekrar başvurulabilir olmalı ve her dizi içinde son konuma ilk konumdan erişilebilir olmalıdır erişilebilmelidir.
+Başvurulan sıralanmış kaynak aralıkları geçerli olmalıdır; Tüm işaretçilerin erişilebilir olması gerekir ve her bir dizide en son konum artırılamadı tarafından ilk kez ulaşılabilir olmalıdır.
 
-Hedef aralığı ya da kaynak aralıkları çakışmamalı ve hedef aralığı içerecek kadar büyük olmalıdır.
+Hedef Aralık, kaynak aralıklarından biriyle çakışmamalıdır ve hedef aralığı içerecek kadar büyük olmalıdır.
 
-Sıralanmış kaynak aralığa her uygulama için bir önkoşul olarak düzenlenmelidir `merge` olarak aynı sıralamaya uygun şekilde algoritmasıdır birleştirilmiş aralıkları Sıralama algoritması tarafından kullanılacak.
+Sıralanmış kaynak aralıklarının her biri, algoritma tarafından Birleşik aralıkları sıralamak için kullanılan aynı sıralamaya uygun `merge` olarak, algoritmanın uygulamasına bir ön koşul olarak düzenlenmelidir.
 
-Her aralık içindeki öğelerin göreli sırasını hedef aralığı korunduğu kalıcı bir işlemdir. Kaynak aralıkları algoritması tarafından değiştirilmez `merge`.
+Her aralıktaki öğelerin göreli sırası hedef aralıkta korunduğu için işlem kararlı değildir. Kaynak aralıkları algoritma `merge`tarafından değiştirilmez.
 
-Giriş Yineleyicilerin değer türlerinin daha küçük olması-sıralanmalıdır daha karşılaştırılabilir, iki öğe belirtildiğinde, (yani birinin diğerinden diğerinden daha küçük olmadığı anlamında) eşit veya birinin diğerinden küçük olduğu belirlenebilir. Bu, denk olmayan öğeler arasında bir sıralamaya neden olur. Hem kaynak aralıklardaki eşdeğer öğelerin olduğunda, ilk aralıktaki öğeleri hedef aralığında ikinci aralığın öğelerden koyun. Kaynak aralıkları yinelenen bir öğe içeriyorsa, hedef aralığı sayısı iki kaynak aralıklardaki oluşan bu öğeleri içerir.
+Giriş yineleyicilerinin değer türlerinin sıralanabilmesi için kıyasla daha az olması gerekir, böylece iki öğe söz konusu olduğunda, eşdeğer oldukları (Yani bunlardan daha küçük olmayan) ya da birinin diğerinin daha küçük olduğu belirlenebilir. Bu, denk olmayan öğeler arasında bir sıralamaya neden olur. Her iki kaynak aralığında da eşdeğer öğeler olduğunda, ilk aralıktaki öğeler, hedef aralıktaki ikinci kaynak aralığından öğeden önce gelmelidir. Kaynak aralıkları bir öğenin yinelemelerini içeriyorsa, hedef Aralık her iki kaynak aralığında gerçekleşen bu öğelerin en fazla sayısını içerir.
 
-Algoritmanın karmaşıklığı, en fazla 2 ile doğrusal \* (( *last1 - first1*)-( *Soyadı2 - first2*)) - 1 karşılaştırmalar.
+Algoritmanın karmaşıklığı, en çok `2 * ((last1 - first1) - (last2 - first2)) - 1` karşılaştırmalar ile doğrusal olarak belirlenir.
 
 ### <a name="example"></a>Örnek
 
@@ -8295,186 +8540,190 @@ Algoritmanın karmaşıklığı, en fazla 2 ile doğrusal \* (( *last1 - first1*
 // Return whether modulus of elem1 is less than modulus of elem2
 bool mod_lesser ( int elem1, int elem2 )
 {
-   if ( elem1 < 0 )
-      elem1 = - elem1;
-   if ( elem2 < 0 )
-      elem2 = - elem2;
-   return elem1 < elem2;
+    if ( elem1 < 0 )
+        elem1 = - elem1;
+    if ( elem2 < 0 )
+        elem2 = - elem2;
+    return elem1 < elem2;
 }
 
 int main()
 {
-   using namespace std;
-   vector <int> v1a, v1b, v1 ( 12 );
-   vector <int>::iterator Iter1a, Iter1b, Iter1, Result1;
+    using namespace std;
+    vector<int> v1a, v1b, v1 ( 12 );
+    vector<int>::iterator Iter1a, Iter1b, Iter1, Result1;
 
-   // Constructing vectors v1a & v1b with default less than ordering
-   int i;
-   for ( i = -1 ; i <= 3 ; i++ )
-   {
-      v1a.push_back(  i );
-   }
+    // Constructing vectors v1a & v1b with default less than ordering
+    int i;
+    for ( i = -1 ; i <= 3 ; i++ )
+    {
+        v1a.push_back( i );
+    }
 
-   int ii;
-   for ( ii =-3 ; ii <= 1 ; ii++ )
-   {
-      v1b.push_back(  ii  );
-   }
+    int ii;
+    for ( ii =-3 ; ii <= 1 ; ii++ )
+    {
+        v1b.push_back( ii );
+    }
 
-   cout << "Original vector v1a with range sorted by the\n "
-        <<  "binary predicate less than is  v1a = ( " ;
-   for ( Iter1a = v1a.begin( ) ; Iter1a != v1a.end( ) ; Iter1a++ )
-      cout << *Iter1a << " ";
-   cout << ")." << endl;
+    cout << "Original vector v1a with range sorted by the\n "
+         << "binary predicate less than is v1a = ( " ;
+    for ( Iter1a = v1a.begin( ) ; Iter1a != v1a.end( ) ; Iter1a++ )
+        cout << *Iter1a << " ";
+    cout << ")." << endl;
 
-   cout << "Original vector v1b with range sorted by the\n "
-        <<  "binary predicate less than is  v1b = ( " ;
-   for ( Iter1b = v1b.begin( ) ; Iter1b != v1b.end( ) ; Iter1b++ )
-      cout << *Iter1b << " ";
-   cout << ")." << endl;
+    cout << "Original vector v1b with range sorted by the\n "
+         << "binary predicate less than is v1b = ( " ;
+    for ( Iter1b = v1b.begin( ) ; Iter1b != v1b.end( ) ; Iter1b++ )
+        cout << *Iter1b << " ";
+    cout << ")." << endl;
 
-   // Constructing vectors v2a & v2b with ranges sorted by greater
-   vector <int> v2a ( v1a ) , v2b ( v1b ) , v2 ( v1 );
-   vector <int>::iterator Iter2a,  Iter2b, Iter2, Result2;
-   sort ( v2a.begin( ), v2a.end( ), greater<int>( ) );
-   sort ( v2b.begin( ), v2b.end( ), greater<int>( ) );
+    // Constructing vectors v2a & v2b with ranges sorted by greater
+    vector<int> v2a ( v1a ) , v2b ( v1b ) , v2 ( v1 );
+    vector<int>::iterator Iter2a, Iter2b, Iter2, Result2;
+    sort ( v2a.begin( ), v2a.end( ), greater<int>( ) );
+    sort ( v2b.begin( ), v2b.end( ), greater<int>( ) );
 
-   cout << "Original vector v2a with range sorted by the\n "
-        <<  "binary predicate greater is   v2a =  ( " ;
-   for ( Iter2a = v2a.begin( ) ; Iter2a != v2a.end( ) ; Iter2a++ )
-      cout << *Iter2a << " ";
-   cout << ")." << endl;
+    cout << "Original vector v2a with range sorted by the\n "
+         << "binary predicate greater is   v2a = ( " ;
+    for ( Iter2a = v2a.begin( ) ; Iter2a != v2a.end( ) ; Iter2a++ )
+        cout << *Iter2a << " ";
+    cout << ")." << endl;
 
-   cout << "Original vector v2b with range sorted by the\n "
-        <<  "binary predicate greater is   v2b =  ( " ;
-   for ( Iter2b = v2b.begin( ) ; Iter2b != v2b.end( ) ; Iter2b++ )
-      cout << *Iter2b << " ";
-   cout << ")." << endl;
+    cout << "Original vector v2b with range sorted by the\n "
+         << "binary predicate greater is   v2b = ( " ;
+    for ( Iter2b = v2b.begin( ) ; Iter2b != v2b.end( ) ; Iter2b++ )
+        cout << *Iter2b << " ";
+    cout << ")." << endl;
 
-   // Constructing vectors v3a & v3b with ranges sorted by mod_lesser
-   vector <int> v3a ( v1a ), v3b ( v1b ) ,  v3 ( v1 );
-   vector <int>::iterator Iter3a, Iter3b, Iter3, Result3;
-   sort ( v3a.begin( ), v3a.end( ), mod_lesser );
-   sort ( v3b.begin( ), v3b.end( ), mod_lesser  );
+    // Constructing vectors v3a & v3b with ranges sorted by mod_lesser
+    vector<int> v3a ( v1a ), v3b ( v1b ) , v3 ( v1 );
+    vector<int>::iterator Iter3a, Iter3b, Iter3, Result3;
+    sort ( v3a.begin( ), v3a.end( ), mod_lesser );
+    sort ( v3b.begin( ), v3b.end( ), mod_lesser );
 
-   cout << "Original vector v3a with range sorted by the\n "
-        <<  "binary predicate mod_lesser is   v3a =  ( " ;
-   for ( Iter3a = v3a.begin( ) ; Iter3a != v3a.end( ) ; Iter3a++ )
-      cout << *Iter3a << " ";
-   cout << ")." << endl;
+    cout << "Original vector v3a with range sorted by the\n "
+         << "binary predicate mod_lesser is   v3a = ( " ;
+    for ( Iter3a = v3a.begin( ) ; Iter3a != v3a.end( ) ; Iter3a++ )
+        cout << *Iter3a << " ";
+    cout << ")." << endl;
 
-   cout << "Original vector v3b with range sorted by the\n "
-        <<  "binary predicate mod_lesser is   v3b =  ( " ;
-   for ( Iter3b = v3b.begin( ) ; Iter3b != v3b.end( ) ; Iter3b++ )
-      cout << *Iter3b << " ";
-   cout << ")." << endl;
+    cout << "Original vector v3b with range sorted by the\n "
+         << "binary predicate mod_lesser is   v3b = ( " ;
+    for ( Iter3b = v3b.begin( ) ; Iter3b != v3b.end( ) ; Iter3b++ )
+        cout << *Iter3b << " ";
+    cout << ")." << endl;
 
-   // To combine into a union in ascending order with the default
-    // binary predicate less <int>( )
-   Result1 = set_union ( v1a.begin( ), v1a.end( ),
-      v1b.begin( ), v1b.end( ), v1.begin( ) );
-   cout << "Union of source ranges with default order,"
-        << "\n vector v1mod =  ( " ;
-   for ( Iter1 = v1.begin( ) ; Iter1 != Result1 ; Iter1++ )
-      cout << *Iter1 << " ";
-   cout << ")." << endl;
+    // To combine into a union in ascending order with the default
+        // binary predicate less<int>( )
+    Result1 = set_union ( v1a.begin( ), v1a.end( ),
+        v1b.begin( ), v1b.end( ), v1.begin( ) );
+    cout << "Union of source ranges with default order,"
+         << "\n vector v1mod = ( " ;
+    for ( Iter1 = v1.begin( ) ; Iter1 != Result1 ; Iter1++ )
+        cout << *Iter1 << " ";
+    cout << ")." << endl;
 
-   // To combine into a union in descending order, specify binary
-   // predicate greater<int>( )
-   Result2 = set_union (  v2a.begin( ), v2a.end( ),
-      v2b.begin( ), v2b.end( ),v2.begin( ), greater <int>( ) );
-   cout << "Union of source ranges with binary predicate greater "
-        << "specified,\n vector v2mod  = ( " ;
-   for ( Iter2 = v2.begin( ) ; Iter2 != Result2 ; Iter2++ )
-      cout << *Iter2 << " ";
-   cout << ")." << endl;
+    // To combine into a union in descending order, specify binary
+    // predicate greater<int>( )
+    Result2 = set_union ( v2a.begin( ), v2a.end( ),
+        v2b.begin( ), v2b.end( ),v2.begin( ), greater<int>( ) );
+    cout << "Union of source ranges with binary predicate greater "
+         << "specified,\n vector v2mod = ( " ;
+    for ( Iter2 = v2.begin( ) ; Iter2 != Result2 ; Iter2++ )
+        cout << *Iter2 << " ";
+    cout << ")." << endl;
 
-   // To combine into a union applying a user-defined
-   // binary predicate mod_lesser
-   Result3 = set_union ( v3a.begin( ), v3a.end( ),
-      v3b.begin( ), v3b.end( ), v3.begin( ), mod_lesser );
-   cout << "Union of source ranges with binary predicate "
-        << "mod_lesser specified,\n vector v3mod  = ( " ; ;
-   for ( Iter3 = v3.begin( ) ; Iter3 != Result3 ; Iter3++ )
-      cout << *Iter3 << " ";
-   cout << ")." << endl;
+    // To combine into a union applying a user-defined
+    // binary predicate mod_lesser
+    Result3 = set_union ( v3a.begin( ), v3a.end( ),
+        v3b.begin( ), v3b.end( ), v3.begin( ), mod_lesser );
+    cout << "Union of source ranges with binary predicate "
+         << "mod_lesser specified,\n vector v3mod = ( " ; ;
+    for ( Iter3 = v3.begin( ) ; Iter3 != Result3 ; Iter3++ )
+        cout << *Iter3 << " ";
+    cout << ")." << endl;
 }
 ```
 
-## <a name="shuffle"></a> karışık
+## <a name="shuffle"></a>çalmayı
 
-Bir rastgele sayı üreticisinin kullanarak verilen bir aralıktaki öğeleri seçeneği (düzenlemelerinin).
+Rastgele bir sayı Oluşturucu kullanarak belirli bir Aralık için öğeleri karışık (yeniden düzenler).
 
 ```cpp
 template<class RandomAccessIterator, class UniformRandomNumberGenerator>
-void shuffle(RandomAccessIterator first,
+void shuffle(
+    RandomAccessIterator first,
     RandomAccessIterator last,
     UniformRandomNumberGenerator&& gen);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*ilk*\
-Karıştırılmış (dahil) için bir yineleyici aralıktaki ilk öğeyi. Gereksinimlerini karşılamalıdır `RandomAccessIterator` ve `ValueSwappable`.
+*adı*\
+Bir yineleyici, dahil olmak üzere, karıştırılan aralıktaki ilk öğe. , `RandomAccessIterator` Ve`ValueSwappable`gereksinimlerinin karşılanması gerekir.
 
-*Son*\
-Karıştırılmış, özel bir yineleyici aralıktaki son öğeyi için. Gereksinimlerini karşılamalıdır `RandomAccessIterator` ve `ValueSwappable`.
+*soyadına*\
+Bir yineleyiciden, tek başına karıştırılmış ve dışlamalı son öğe. , `RandomAccessIterator` Ve`ValueSwappable`gereksinimlerinin karşılanması gerekir.
 
-*Genel*\
-Rastgele sayı üreticisinin, `shuffle()` işlem için işlevi kullanır. Gereksinimlerini karşılamalıdır bir `UniformRandomNumberGenerator`.
+*alanına*\
+`shuffle()` İşlevin işlem için kullanacağı rastgele sayı Oluşturucu. , Öğesinin `UniformRandomNumberGenerator`gereksinimleriyle Buluşmalıdır.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Daha fazla bilgi ve kullandığı bir kod örneği için `shuffle()`, bkz: [ \<rastgele >](../standard-library/random.md).
+Daha fazla bilgi ve tarafından kullanılan `shuffle()`bir kod örneği için bkz [ \<. Random >](../standard-library/random.md).
 
-## <a name="sort"></a> Sıralama
+## <a name="sort"></a>düzenine
 
 Belirtilen bir aralıktaki öğeleri azalmayan şekilde veya bir ikili koşul tarafından belirtilen bir sıralama ölçütüne göre düzenler.
 
 ```cpp
 template<class RandomAccessIterator>
-   void sort(
-      RandomAccessIterator first,
-      RandomAccessIterator last);
+void sort(
+    RandomAccessIterator first,
+    RandomAccessIterator last);
 
-template<class RandomAccessIterator, class Predicate>
-   void sort(
-      RandomAccessIterator first,
-      RandomAccessIterator last,
-      Predicate comp);
-      
+template<class RandomAccessIterator, class Compare>
+void sort(
+    RandomAccessIterator first,
+    RandomAccessIterator last,
+    Compare pred);
+
 template<class ExecutionPolicy, class RandomAccessIterator>
 void sort(
     ExecutionPolicy&& exec,
-    RandomAccessIterator first, 
+    RandomAccessIterator first,
     RandomAccessIterator last);
 
 template<class ExecutionPolicy, class RandomAccessIterator, class Compare>
 void sort(
     ExecutionPolicy&& exec,
-    RandomAccessIterator first, 
+    RandomAccessIterator first,
     RandomAccessIterator last,
-    Compare comp);
+    Compare pred);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*ilk*\
-Sıralanacak aralıktaki ilk öğenin konumunu bulan bir rasgele erişim yineleyicisi.
+*Exec*\
+Kullanılacak yürütme ilkesi.
 
-*Son*\
-Sıralanacak aralığın son öğesinde geçmiş konumu ele alan bir rasgele erişim yineleyicisi.
+*adı*\
+Sıralanacak aralıktaki ilk öğenin konumunu ele alarak rastgele erişimli bir yineleyici.
 
-*Comp*\
-Sıralama, ardışık öğeleri tarafından karşılanması için karşılaştırma ölçütü tanımlayan kullanıcı tanımlı işlevin doğrulama nesnesi. Bu ikili koşulu, iki bağımsız değişkeni alır ve döndürür **true** iki bağımsız değişken sıradaysa ve **false** Aksi takdirde. Bu bir karşılaştırıcı işlevi, katı bir zayıf çiftlerini dizisindeki öğelerin sıralama dayatır gerekir. Daha fazla bilgi için [algoritmaları](../standard-library/algorithms.md).
+*soyadına*\
+Sıralanacak aralıktaki son öğeden sonraki konumu ele alarak rastgele erişimli bir yineleyici.
+
+*pred*\
+Sıralamada birbirini izleyen öğeler tarafından karşılanması gereken karşılaştırma ölçütünü tanımlayan Kullanıcı tanımlı koşul işlevi nesnesi. Bu ikili koşul iki bağımsız değişken alır ve iki bağımsız değişken sıradaysa **true** , aksi takdirde **false** döndürür. Bu karşılaştırıcı işlevi, dizideki öğe çiftlerine katı bir zayıf sıralama getirmelidir. Daha fazla bilgi için bkz. [algoritmalar](../standard-library/algorithms.md).
 
 ### <a name="remarks"></a>Açıklamalar
 
-Başvurulan aralık geçerli olmalı; Tüm İşaretçiler tekrar başvurulabilir olmalı ve dizi içinde son konuma ilk konumdan erişilebilmelidir.
+Başvurulan Aralık geçerli olmalıdır; Tüm işaretçiler, en son artırılamadı tarafından ilk konumdan erişilebilir olması gerekir.
 
-Öğeleri eşdeğerdir, ancak mutlaka eşittir, hiçbiri diğerinden olduğu. `sort` Algoritması kararlı değilse ve bu nedenle öğeleri, eşdeğer öğelerin göreli sıralamasını korunur olduğunu garanti etmez. Algoritma `stable_sort` bu özgün sıralamasını koruması.
+Öğeler eşdeğer, ancak eşit değildir, ancak ikisi de küçüktür. `sort` Algoritma kararlı değildir ve bu nedenle denk öğelerin göreli sıralamasına karşı korunmayacağını garanti etmez. Algoritma `stable_sort` bu orijinal sıralamayı korur.
 
-Sıralama karmaşıklığı ortalamasıdır *O*( *N* günlük *N*), burada *N* =  *son - ilk*.
+Sıralama karmaşıklığına `O( N log N )`ilişkin ortalama,*en son* -  *N* = *birinciden*oluşur.
 
 ### <a name="example"></a>Örnek
 
@@ -8489,51 +8738,51 @@ Sıralama karmaşıklığı ortalamasıdır *O*( *N* günlük *N*), burada *N* =
 // Return whether first element is greater than the second
 bool UDgreater ( int elem1, int elem2 )
 {
-   return elem1 > elem2;
+    return elem1 > elem2;
 }
 
 int main()
 {
-   using namespace std;
-   vector <int> v1;
-   vector <int>::iterator Iter1;
+    using namespace std;
+    vector<int> v1;
+    vector<int>::iterator Iter1;
 
-   int i;
-   for ( i = 0 ; i <= 5 ; i++ )
-   {
-      v1.push_back( 2 * i );
-   }
+    int i;
+    for ( i = 0 ; i <= 5 ; i++ )
+    {
+        v1.push_back( 2 * i );
+    }
 
-   int ii;
-   for ( ii = 0 ; ii <= 5 ; ii++ )
-   {
-      v1.push_back( 2 * ii + 1 );
-   }
+    int ii;
+    for ( ii = 0 ; ii <= 5 ; ii++ )
+    {
+        v1.push_back( 2 * ii + 1 );
+    }
 
-   cout << "Original vector v1 = ( " ;
-   for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
-      cout << *Iter1 << " ";
-   cout << ")" << endl;
+    cout << "Original vector v1 = ( " ;
+    for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
+        cout << *Iter1 << " ";
+    cout << ")" << endl;
 
-   sort( v1.begin( ), v1.end( ) );
-   cout << "Sorted vector v1 = ( " ;
-   for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
-      cout << *Iter1 << " ";
-   cout << ")" << endl;
+    sort( v1.begin( ), v1.end( ) );
+    cout << "Sorted vector v1 = ( " ;
+    for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
+        cout << *Iter1 << " ";
+    cout << ")" << endl;
 
-   // To sort in descending order. specify binary predicate
-   sort( v1.begin( ), v1.end( ), greater<int>( ) );
-   cout << "Resorted (greater) vector v1 = ( " ;
-   for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
-      cout << *Iter1 << " ";
-   cout << ")" << endl;
+    // To sort in descending order. specify binary predicate
+    sort( v1.begin( ), v1.end( ), greater<int>( ) );
+    cout << "Resorted (greater) vector v1 = ( " ;
+    for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
+        cout << *Iter1 << " ";
+    cout << ")" << endl;
 
-   // A user-defined (UD) binary predicate can also be used
-   sort( v1.begin( ), v1.end( ), UDgreater );
-   cout << "Resorted (UDgreater) vector v1 = ( " ;
-   for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
-      cout << *Iter1 << " ";
-   cout << ")" << endl;
+    // A user-defined (UD) binary predicate can also be used
+    sort( v1.begin( ), v1.end( ), UDgreater );
+    cout << "Resorted (UDgreater) vector v1 = ( " ;
+    for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
+        cout << *Iter1 << " ";
+    cout << ")" << endl;
 }
 ```
 
@@ -8544,51 +8793,51 @@ Resorted (greater) vector v1 = ( 11 10 9 8 7 6 5 4 3 2 1 0 )
 Resorted (UDgreater) vector v1 = ( 11 10 9 8 7 6 5 4 3 2 1 0 )
 ```
 
-## <a name="sort_heap"></a> sort_heap
+## <a name="sort_heap"></a>sort_heap
 
 Bir yığını sıralanmış bir aralığa dönüştürür.
 
 ```cpp
 template<class RandomAccessIterator>
-   void sort_heap(
-      RandomAccessIterator first,
-      RandomAccessIterator last);
+void sort_heap(
+    RandomAccessIterator first,
+    RandomAccessIterator last);
 
-template<class RandomAccessIterator, class Predicate>
-   void sort_heap(
-      RandomAccessIterator first,
-      RandomAccessIterator last,
-      Predicate comp);
+template<class RandomAccessIterator, class Compare>
+void sort_heap(
+    RandomAccessIterator first,
+    RandomAccessIterator last,
+    Compare pred);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*ilk*\
-Hedef yığınındaki ilk öğenin konumunu bulan bir rastgele erişim yineleyicisi.
+*adı*\
+Hedef yığında ilk öğenin konumunu ele alarak rastgele erişimli bir yineleyici.
 
-*Son*\
-Hedef yığın içindeki son öğeden sonraki birinci konum ele alan bir rastgele erişim yineleyicisi.
+*soyadına*\
+Hedef yığında son öğeden sonraki konumu ele alarak rastgele erişimli bir yineleyici.
 
-*Comp*\
-Bir öğenin daha az olan algılama tanımlayan kullanıcı tanımlı işlevin doğrulama nesnesi. İkili koşulu, iki bağımsız değişkeni alır ve döndürür **true** karşılanmazsa ve **false** koşullar karşılanırsa.
+*pred*\
+Bir öğenin diğerinden küçük olduğu anlamlı olduğunu tanımlayan Kullanıcı tanımlı koşul işlevi nesnesi. Karşılaştırma koşulu iki bağımsız değişken alır ve memnun olmadığında **true** ve **false** değeri döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yığınlar iki özelliğe sahiptir:
+Heap 'ler iki özelliğe sahiptir:
 
-- İlk öğe her zaman daha büyüktür.
+- İlk öğe her zaman en büyüktür.
 
-- Öğeleri eklenebilir veya Logaritmik süre kaldırıldı.
+- Öğeler, logaritmik bir zamanda eklenebilir veya kaldırılabilir.
 
-Bu algoritma, aralığın uygulandığı, sonra uygulamanın bir yığın artık değil.
+Uygulama bu algoritmadan sonra, uygulandığı Aralık artık bir yığın değildir.
 
-Eşdeğer öğelerin göreli sırasını değil gerekmeyen korunduğu için bu tutarlı bir sıralama değildir.
+Denk öğelerin göreli sırası korunmadığı için bu kararlı bir sıralama değildir.
 
-Yığınlar öncelikli kuyruklardaki uygulamak için ideal bir yol ve bunlar uygulamasında kullanılır C++ standart kitaplığı kapsayıcı bağdaştırıcısı [priority_queue sınıfı](../standard-library/priority-queue-class.md).
+Heap 'ler, öncelik kuyruklarını uygulamanın ideal bir yoludur ve C++ standart kitaplık kapsayıcı bağdaştırıcısı [priority_queue sınıfının](../standard-library/priority-queue-class.md)uygulamasında kullanılır.
 
-Başvurulan aralık geçerli olmalı; Tüm İşaretçiler tekrar başvurulabilir olmalı ve dizi içinde son konuma ilk konumdan erişilebilmelidir.
+Başvurulan Aralık geçerli olmalıdır; Tüm işaretçiler, en son artırılamadı tarafından ilk konumdan erişilebilir olması gerekir.
 
-Karmaşıklığı en fazla olan *N* günlük *N*burada *N* = ( *- Soyadı*).
+Karmaşıklık en çok `N log N`, burada *N* = *son* - *ilk*.
 
 ### <a name="example"></a>Örnek
 
@@ -8603,19 +8852,23 @@ Karmaşıklığı en fazla olan *N* günlük *N*burada *N* = ( *- Soyadı*).
 #include <vector>
 using namespace std;
 
-void print(const string& s, const vector<int>& v) {
+void print(const string& s, const vector<int>& v)
+{
     cout << s << ": ( ";
 
-    for (auto i = v.begin(); i != v.end(); ++i) {
+    for (auto i = v.begin(); i != v.end(); ++i)
+    {
         cout << *i << " ";
     }
 
     cout << ")" << endl;
 }
 
-int main() {
+int main()
+{
     vector<int> v;
-    for (int i = 1; i <= 9; ++i) {
+    for (int i = 1; i <= 9; ++i)
+    {
         v.push_back(i);
     }
     print("Initially", v);
@@ -8640,45 +8893,48 @@ int main() {
 }
 ```
 
-## <a name="stable_partition"></a> stable_partition
+## <a name="stable_partition"></a>stable_partition
 
 Bir aralıktaki öğeleri, eşdeğer öğelerin göreli sırasını koruyaraktan, onları karşılamada yetersiz koşulu önceleyen birli koşulu sağlayan öğelerle iki ayrık kümede sınıflandırır.
 
 ```cpp
-template<class BidirectionalIterator, class Predicate>
+template<class BidirectionalIterator, class UnaryPredicate>
 BidirectionalIterator stable_partition(
     BidirectionalIterator first,
     BidirectionalIterator last,
-    Predicate pred );
-    
-template<class ExecutionPolicy, class BidirectionalIterator, class Predicate>
+    UnaryPredicate pred );
+
+template<class ExecutionPolicy, class BidirectionalIterator, class UnaryPredicate>
 BidirectionalIterator stable_partition(
     ExecutionPolicy&& exec,
     BidirectionalIterator first,
     BidirectionalIterator last,
-    Predicate pred);
+    UnaryPredicate pred);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*ilk*\
-Bölümlenecek aralıktaki ilk öğenin konumunu bulan bir çift yönlü yineleyici.
+*Exec*\
+Kullanılacak yürütme ilkesi.
 
-*Son*\
-Bölümlenecek aralığın son öğesinde geçmiş konumu ele alan bir çift yönlü yineleyici.
+*adı*\
+Bölümlendirilmek üzere aralıktaki ilk öğenin konumunu ele alarak çift yönlü bir yineleyici.
 
-*_Pred*\
-Bir öğe sınıflandırılmaya ise karşılanması koşul tanımlayan kullanıcı tanımlı işlevin doğrulama nesnesi. Bir koşulu, tek bir bağımsız değişken alır ve döndürür **true** veya **false**.
+*soyadına*\
+Bölümlendirilmek üzere aralıktaki son öğeden geçmiş bir konumu ele alarak çift yönlü bir yineleyici.
 
-### <a name="return-value"></a>Dönüş Değeri
+*pred*\
+Bir öğe sınıflandırılabildiğinde karşılanması gereken koşulu tanımlayan Kullanıcı tanımlı koşul işlevi nesnesi. Birli koşul tek bir bağımsız değişken alır ve memnun olursa **true** , aksi takdirde **false** döndürür.
 
-Koşul durumu değil karşılamak için aralıktaki ilk öğenin konumunu bulan bir çift yönlü yineleyici.
+### <a name="return-value"></a>Dönüş değeri
+
+Koşul koşulunu yerine getirmek için aralıktaki ilk öğenin konumunu ele alarak çift yönlü bir yineleyici.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Başvurulan aralık geçerli olmalı; Tüm İşaretçiler tekrar başvurulabilir olmalı ve dizi içinde son konuma ilk konumdan erişilebilmelidir.
+Başvurulan Aralık geçerli olmalıdır; Tüm işaretçiler, en son artırılamadı tarafından ilk konumdan erişilebilir olması gerekir.
 
-Öğeleri *bir* ve *b* eşdeğerdir, ancak mutlaka, her iki eşit *çekme isteği* ( *bir*, *b*) false'tur ve *çekme isteği* ( *b*, *bir*) false ise, burada *çekme isteği* parametre tarafından belirtilen bir koşuldur. `stable_ partition` Algoritması kararlı ve öğeleri, eşdeğer öğelerin göreli sıralamasını korunur, garanti eder. Algoritma `partition` mu mutlaka Koru bu özgün sıralama.
+*A* ve *b* öğeleri eşdeğerdir, ancak her ikisi de false ise eşit değildir `pred( a, b )` ve `pred( b, a )` false ise, her ikisi de parametre belirtilen *koşul olur.* `stable_partition` Algoritma kararlı olur ve denk öğelerin göreli sıralamasını korunacaktır. Algoritma `partition` bu orijinal sıralamayı korumayabilir.
 
 ### <a name="example"></a>Örnek
 
@@ -8689,88 +8945,95 @@ Başvurulan aralık geçerli olmalı; Tüm İşaretçiler tekrar başvurulabilir
 #include <algorithm>
 #include <iostream>
 
-bool greater5 ( int value ) {
-   return value > 5;
+bool greater5 ( int value )
+{
+    return value > 5;
 }
 
-int main() {
-   using namespace std;
-   vector <int> v1, v2;
-   vector <int>::iterator Iter1, Iter2, result;
+int main()
+{
+    using namespace std;
+    vector<int> v1, v2;
+    vector<int>::iterator Iter1, Iter2, result;
 
-   int i;
-   for ( i = 0 ; i <= 10 ; i++ )
-      v1.push_back( i );
+    int i;
+    for ( i = 0 ; i <= 10 ; i++ )
+        v1.push_back( i );
 
-   int ii;
-   for ( ii = 0 ; ii <= 4 ; ii++ )
-      v1.push_back( 5 );
+    int ii;
+    for ( ii = 0 ; ii <= 4 ; ii++ )
+        v1.push_back( 5 );
 
-   random_shuffle(v1.begin( ), v1.end( ) );
+    random_shuffle(v1.begin( ), v1.end( ) );
 
-   cout << "Vector v1 is ( " ;
-   for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
-      cout << *Iter1 << " ";
-   cout << ")." << endl;
+    cout << "Vector v1 is ( " ;
+    for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
+        cout << *Iter1 << " ";
+    cout << ")." << endl;
 
-   // Partition the range with predicate greater10
-   result = stable_partition (v1.begin( ), v1.end( ), greater5 );
-   cout << "The partitioned set of elements in v1 is:\n ( " ;
-   for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
-      cout << *Iter1 << " ";
-   cout << ")." << endl;
+    // Partition the range with predicate greater10
+    result = stable_partition (v1.begin( ), v1.end( ), greater5 );
+    cout << "The partitioned set of elements in v1 is:\n ( " ;
+    for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
+        cout << *Iter1 << " ";
+    cout << ")." << endl;
 
-   cout << "The first element in v1 to fail to satisfy the"
-        << "\n predicate greater5 is: " << *result << "." << endl;
+    cout << "The first element in v1 to fail to satisfy the"
+         << "\n predicate greater5 is: " << *result << "." << endl;
 }
 ```
 
-## <a name="stable_sort"></a> stable_sort
+## <a name="stable_sort"></a>stable_sort
 
 Belirtilen bir aralıktaki öğeleri, eşdeğer öğelerin göreli sıralamasını koruyaraktan, azalmayan şekilde veya bir ikili koşul tarafından belirtilen bir sıralama ölçütüne göre düzenler.
 
 ```cpp
 template<class BidirectionalIterator>
-void stable_sort( BidirectionalIterator first, BidirectionalIterator last );
+void stable_sort(
+    BidirectionalIterator first,
+    BidirectionalIterator last );
 
-template<class BidirectionalIterator, class BinaryPredicate>
+template<class BidirectionalIterator, class Compare>
 void stable_sort(
     BidirectionalIterator first,
     BidirectionalIterator last,
-    BinaryPredicate comp );
-    
+    Compare pred );
+
 template<class ExecutionPolicy, class RandomAccessIterator>
 void stable_sort(
     ExecutionPolicy&& exec,
-    RandomAccessIterator first, 
+    RandomAccessIterator first,
     RandomAccessIterator last);
 
 template<class ExecutionPolicy, class RandomAccessIterator, class Compare>
 void stable_sort(
     ExecutionPolicy&& exec,
-    RandomAccessIterator first, 
+    RandomAccessIterator first,
     RandomAccessIterator last,
-    Compare comp);
+    Compare pred);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*ilk*\
-Sıralanacak aralıktaki ilk öğenin konumunu bulan bir çift yönlü yineleyici.
+*Exec*\
+Kullanılacak yürütme ilkesi.
 
-*Son*\
-Sıralanacak aralığın son öğesinde geçmiş konumu ele alan bir çift yönlü yineleyici.
+*adı*\
+Sıralanacak aralıktaki ilk öğenin konumunu ele alarak çift yönlü bir yineleyici.
 
-*Comp*\
-Sıralama, ardışık öğeleri tarafından karşılanması için karşılaştırma ölçütü tanımlayan kullanıcı tanımlı işlevin doğrulama nesnesi. İkili koşulu, iki bağımsız değişkeni alır ve döndürür **true** karşılanmazsa ve **false** koşullar karşılanırsa.
+*soyadına*\
+Sıralanacak aralıktaki son öğeden bir tane olan konumu ele alarak çift yönlü bir yineleyici.
+
+*pred*\
+Sıralamada birbirini izleyen öğeler tarafından karşılanması gereken karşılaştırma ölçütünü tanımlayan Kullanıcı tanımlı koşul işlevi nesnesi. İkili koşul iki bağımsız değişken alır ve memnun olmadığında **true** ve **false** değeri döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Başvurulan aralık geçerli olmalı; Tüm İşaretçiler tekrar başvurulabilir olmalı ve dizi içinde son konuma ilk konumdan erişilebilmelidir.
+Başvurulan Aralık geçerli olmalıdır; Tüm işaretçiler, en son artırılamadı tarafından ilk konumdan erişilebilir olması gerekir.
 
-Öğeleri eşdeğerdir, ancak mutlaka eşittir, hiçbiri diğerinden olduğu. `sort` Algoritması kararlı ve öğeleri, eşdeğer öğelerin göreli sıralamasını korunur, garanti eder.
+Öğeler eşdeğer, ancak eşit değildir, ancak ikisi de küçüktür. `sort` Algoritma kararlı olur ve denk öğelerin göreli sıralamasını korunacaktır.
 
-Çalışma zamanı karmaşıklığı `stable_sort` kullanılabilir bellek miktarına bağlıdır ancak (yeterli bellek verilir) en iyi durumda *O*( *N* günlük *N*) ve en kötü durumu olan *O*( *N* (günlük *N* ) 2), burada *N* =   *- soyadı.* Genellikle, `sort` algoritmasıdır kıyasla önemli ölçüde daha hızlı `stable_sort`.
+Çalışma `stable_sort` zamanı karmaşıklığı kullanılabilir bellek miktarına bağlıdır, ancak en iyi durum (yeterli bellek verilir `O(N log N)` ) `O(N (log N)^2)`ve en kötü durum, burada *N* = *son*  -   *ilk*olarak. Genellikle, `sort` algoritma şundan `stable_sort`önemli ölçüde daha hızlıdır.
 
 ### <a name="example"></a>Örnek
 
@@ -8785,50 +9048,50 @@ Başvurulan aralık geçerli olmalı; Tüm İşaretçiler tekrar başvurulabilir
 // Return whether first element is greater than the second
 bool UDgreater (int elem1, int elem2 )
 {
-   return elem1 > elem2;
+    return elem1 > elem2;
 }
 
 int main()
 {
-   using namespace std;
-   vector <int> v1;
-   vector <int>::iterator Iter1;
+    using namespace std;
+    vector<int> v1;
+    vector<int>::iterator Iter1;
 
-   int i;
-   for ( i = 0 ; i <= 5 ; i++ )
-   {
-      v1.push_back( 2 * i );
-   }
+    int i;
+    for ( i = 0 ; i <= 5 ; i++ )
+    {
+        v1.push_back( 2 * i );
+    }
 
-   for ( i = 0 ; i <= 5 ; i++ )
-   {
-      v1.push_back( 2 * i  );
-   }
+    for ( i = 0 ; i <= 5 ; i++ )
+    {
+        v1.push_back( 2 * i );
+    }
 
-   cout << "Original vector v1 = ( " ;
-   for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
-      cout << *Iter1 << " ";
-   cout << ")" << endl;
+    cout << "Original vector v1 = ( " ;
+    for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
+        cout << *Iter1 << " ";
+    cout << ")" << endl;
 
-   stable_sort(v1.begin( ), v1.end( ) );
-   cout << "Sorted vector v1 = ( " ;
-   for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
-      cout << *Iter1 << " ";
-   cout << ")" << endl;
+    stable_sort(v1.begin( ), v1.end( ) );
+    cout << "Sorted vector v1 = ( " ;
+    for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
+        cout << *Iter1 << " ";
+    cout << ")" << endl;
 
-   // To sort in descending order, specify binary predicate
-   stable_sort(v1.begin( ), v1.end( ), greater<int>( ) );
-   cout << "Resorted (greater) vector v1 = ( " ;
-   for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
-      cout << *Iter1 << " ";
-   cout << ")" << endl;
+    // To sort in descending order, specify binary predicate
+    stable_sort(v1.begin( ), v1.end( ), greater<int>( ) );
+    cout << "Resorted (greater) vector v1 = ( " ;
+    for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
+        cout << *Iter1 << " ";
+    cout << ")" << endl;
 
-   // A user-defined (UD) binary predicate can also be used
-   stable_sort(v1.begin( ), v1.end( ), UDgreater );
-   cout << "Resorted (UDgreater) vector v1 = ( " ;
-   for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
-      cout << *Iter1 << " ";
-   cout << ")" << endl;
+    // A user-defined (UD) binary predicate can also be used
+    stable_sort(v1.begin( ), v1.end( ), UDgreater );
+    cout << "Resorted (UDgreater) vector v1 = ( " ;
+    for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
+        cout << *Iter1 << " ";
+    cout << ")" << endl;
 }
 ```
 
@@ -8839,32 +9102,32 @@ Resorted (greater) vector v1 = ( 10 10 8 8 6 6 4 4 2 2 0 0 )
 Resorted (UDgreater) vector v1 = ( 10 10 8 8 6 6 4 4 2 2 0 0 )
 ```
 
-## <a name="swap"></a> değiştirme
+## <a name="swap"></a>Kur
 
-Geçersiz kılma ilk iki nesnenin değerlerini birbiriyle değiştirir. İkinci geçersiz kılma değerleri iki nesne dizileri arasında değiş tokuş eder.
+İlk geçersiz kılma iki nesnenin değerlerini değiş tokuş eder. İkinci geçersiz kılma, iki nesne dizisi arasındaki değerleri değiş tokuş eder.
 
 ```cpp
 template<class Type>
-   void swap(
-      Type& left,
-      Type& right);
+void swap(
+    Type& left,
+    Type& right);
 template<class Type, size_t N>
-   void swap(
-      Type (& left)[N],
-      Type (& right)[N]);\r
+void swap(
+    Type (& left)[N],
+    Type (& right)[N]);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*\
-İlk geçersiz kılma için değiştirilen içeriği sağlamak için ilk nesne. İkinci geçersiz kılma için ilk içeriğinin değiş tokuş için nesneler dizisi.
+*tarafta*\
+İlk geçersiz kılma için, içeriğini değiş tokuş eden ilk nesne. İkinci geçersiz kılma için, içeriklerinin değiş tokuş edilecek ilk nesne dizisi.
 
-*sağ*\
-İlk geçersiz kılma için değiştirilen içeriği sağlamak için ikinci nesne. İkinci için geçersiz kılma, ikinci içeriğini değiş tokuş için nesneleri dizisi.
+*Right*\
+İlk geçersiz kılma için, içeriğini değiş tokuş eden ikinci nesne. İkinci geçersiz kılma için, içeriğini değiş tokuş edilecek ikinci nesne dizisi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk aşırı yükleme tek nesneler üzerinde çalışmak üzere tasarlanmıştır. İkinci aşırı yükleme iki diziler arasında nesneleri içeriğini değiştirir.
+İlk aşırı yükleme ayrı nesneler üzerinde çalışacak şekilde tasarlanmıştır. İkinci aşırı yükleme, nesnelerin içeriğini iki dizi arasında değiştirir.
 
 ### <a name="example"></a>Örnek
 
@@ -8877,41 +9140,41 @@ template<class Type, size_t N>
 
 int main()
 {
-   using namespace std;
-   vector <int> v1, v2;
-   vector <int>::iterator Iter1, Iter2, result;
+    using namespace std;
+    vector<int> v1, v2;
+    vector<int>::iterator Iter1, Iter2, result;
 
-   for ( int i = 0 ; i <= 10 ; i++ )
-   {
-      v1.push_back( i );
-   }
+    for ( int i = 0 ; i <= 10 ; i++ )
+    {
+        v1.push_back( i );
+    }
 
-   for ( int ii = 0 ; ii <= 4 ; ii++ )
-   {
-      v2.push_back( 5 );
-   }
+    for ( int ii = 0 ; ii <= 4 ; ii++ )
+    {
+        v2.push_back( 5 );
+    }
 
-   cout << "Vector v1 is ( " ;
-   for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
-      cout << *Iter1 << " ";
-   cout << ")." << endl;
+    cout << "Vector v1 is ( " ;
+    for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
+        cout << *Iter1 << " ";
+    cout << ")." << endl;
 
-   cout << "Vector v2 is ( " ;
-   for ( Iter2 = v2.begin( ) ; Iter2 != v2.end( ) ; Iter2++ )
-      cout << *Iter2 << " ";
-   cout << ")." << endl;
+    cout << "Vector v2 is ( " ;
+    for ( Iter2 = v2.begin( ) ; Iter2 != v2.end( ) ; Iter2++ )
+        cout << *Iter2 << " ";
+    cout << ")." << endl;
 
-   swap( v1, v2 );
+    swap( v1, v2 );
 
-   cout << "Vector v1 is ( " ;
-   for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
-      cout << *Iter1 << " ";
-   cout << ")." << endl;
+    cout << "Vector v1 is ( " ;
+    for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
+        cout << *Iter1 << " ";
+    cout << ")." << endl;
 
-   cout << "Vector v2 is ( " ;
-   for ( Iter2 = v2.begin( ) ; Iter2 != v2.end( ) ; Iter2++ )
-      cout << *Iter2 << " ";
-   cout << ")." << endl;
+    cout << "Vector v2 is ( " ;
+    for ( Iter2 = v2.begin( ) ; Iter2 != v2.end( ) ; Iter2++ )
+        cout << *Iter2 << " ";
+    cout << ")." << endl;
 }
 ```
 
@@ -8922,7 +9185,7 @@ Vector v1 is ( 5 5 5 5 5 ).
 Vector v2 is ( 0 1 2 3 4 5 6 7 8 9 10 ).
 ```
 
-## <a name="swap_ranges"></a> swap_ranges
+## <a name="swap_ranges"></a>swap_ranges
 
 Bir aralığın öğelerini eşit büyüklükteki bir diğerinin öğeleriyle değiştirir.
 
@@ -8932,35 +9195,38 @@ ForwardIterator2 swap_ranges(
    ForwardIterator1 first1,
    ForwardIterator1 last1,
    ForwardIterator2 first2 );
-   
+
 template<class ExecutionPolicy, class ForwardIterator1, class ForwardIterator2>
 ForwardIterator2 swap_ranges(
     ExecutionPolicy&& exec,
-    ForwardIterator1 first1, 
+    ForwardIterator1 first1,
     ForwardIterator1 last1,
     ForwardIterator2 first2);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
+*Exec*\
+Kullanılacak yürütme ilkesi.
+
 *first1*\
-Değiştirilecek öğeleri olan ilk aralığının ilk konuma işaret eden bir ileriye doğru yineleyici.
+İleri Yineleyici, öğeleri değiş tokuş edilecek ilk aralığın ilk konumunu işaret eder.
 
 *last1*\
-Bir öncekine değiştirilecek öğeleri olan ilk aralığın son konumunu işaret eden bir ileriye doğru yineleyici.
+Öğeleri değiş tokuş edilecek ilk aralığın son konumunu işaret eden bir ileri Yineleyici.
 
 *first2*\
-Değiştirilecek öğeleri olan ikinci aralığının ilk konuma işaret eden bir ileriye doğru yineleyici.
+İleri Yineleyici, öğeleri değiş tokuş edilecek ikinci aralığın ilk konumunu işaret eder.
 
-### <a name="return-value"></a>Dönüş Değeri
+### <a name="return-value"></a>Dönüş değeri
 
-Bir öncekine değiştirilecek öğeleri olan ikinci aralığın son konumunu işaret eden bir ileriye doğru yineleyici.
+Bir ileri Yineleyici, öğeleri değiş tokuş edilecek ikinci aralığın son konumunu işaret ediyor.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Başvurulan aralıkların geçerli olması gerekir; Tüm İşaretçiler tekrar başvurulabilir olmalı ve her dizi içinde son konuma ilk konumdan erişilebilmelidir. Aralığın ilk büyük olacak şekilde ikinci aralığı vardır.
+Başvurulan aralıklar geçerli olmalıdır; Tüm işaretçiler, her bir sırada bir kez başvurulmalıdır ve en son konum, artırılamadı tarafından ilk kez erişilebilir. İkinci Aralık ilk Aralık kadar büyük olmalıdır.
 
-Karmaşıklığı ile doğrusal *last1* - *first1* takasları gerçekleştirilir. Öğeleri aynı türde kapsayıcılar takas varsa, bunları `swap` bu kapsayıcı üye işlevi kullanılmalıdır, üye işlevi genellikle sabit karmaşası olduğundan.
+Karmaşıklık, *last1* - *first1* takas gerçekleştirilen doğrusal bir şekilde karmaşıktır. Aynı türdeki kapsayıcılardan öğeler takas edilmekte ise, `swap` üye işlevi genellikle sabit karmaşıklığa sahip olduğundan, bu kapsayıcıdan üye işlevi kullanılmalıdır.
 
 ### <a name="example"></a>Örnek
 
@@ -8974,45 +9240,45 @@ Karmaşıklığı ile doğrusal *last1* - *first1* takasları gerçekleştirilir
 
 int main()
 {
-   using namespace std;
-   vector <int> v1;
-   deque <int> d1;
-   vector <int>::iterator v1Iter1;
-   deque<int>::iterator d1Iter1;
+    using namespace std;
+    vector<int> v1;
+    deque<int> d1;
+    vector<int>::iterator v1Iter1;
+    deque<int>::iterator d1Iter1;
 
-   int i;
-   for ( i = 0 ; i <= 5 ; i++ )
-   {
-      v1.push_back( i );
-   }
+    int i;
+    for ( i = 0 ; i <= 5 ; i++ )
+    {
+        v1.push_back( i );
+    }
 
-   int ii;
-   for ( ii =4 ; ii <= 9 ; ii++ )
-   {
-      d1.push_back( 6 );
-   }
+    int ii;
+    for ( ii =4 ; ii <= 9 ; ii++ )
+    {
+        d1.push_back( 6 );
+    }
 
-   cout << "Vector v1 is ( " ;
-   for ( v1Iter1 = v1.begin( ) ; v1Iter1 != v1.end( ) ;v1Iter1 ++ )
-      cout << *v1Iter1  << " ";
-   cout << ")." << endl;
+    cout << "Vector v1 is ( " ;
+    for ( v1Iter1 = v1.begin( ) ; v1Iter1 != v1.end( ) ;v1Iter1 ++ )
+        cout << *v1Iter1 << " ";
+    cout << ")." << endl;
 
-   cout << "Deque d1 is  ( " ;
-   for ( d1Iter1 = d1.begin( ) ; d1Iter1 != d1.end( ) ;d1Iter1 ++ )
-      cout << *d1Iter1  << " ";
-   cout << ")." << endl;
+    cout << "Deque d1 is  ( " ;
+    for ( d1Iter1 = d1.begin( ) ; d1Iter1 != d1.end( ) ;d1Iter1 ++ )
+        cout << *d1Iter1 << " ";
+    cout << ")." << endl;
 
-   swap_ranges ( v1.begin( ), v1.end( ), d1.begin( ) );
+    swap_ranges ( v1.begin( ), v1.end( ), d1.begin( ) );
 
-   cout << "After the swap_range, vector v1 is ( " ;
-   for ( v1Iter1 = v1.begin( ) ; v1Iter1 != v1.end( ) ;v1Iter1 ++ )
-      cout << *v1Iter1 << " ";
-   cout << ")." << endl;
+    cout << "After the swap_range, vector v1 is ( " ;
+    for ( v1Iter1 = v1.begin( ) ; v1Iter1 != v1.end( ) ;v1Iter1 ++ )
+        cout << *v1Iter1 << " ";
+    cout << ")." << endl;
 
-   cout << "After the swap_range deque d1 is   ( " ;
-   for ( d1Iter1 = d1.begin( ) ; d1Iter1 != d1.end( ) ;d1Iter1 ++ )
-      cout << *d1Iter1 << " ";
-   cout << ")." << endl;
+    cout << "After the swap_range deque d1 is   ( " ;
+    for ( d1Iter1 = d1.begin( ) ; d1Iter1 != d1.end( ) ;d1Iter1 ++ )
+        cout << *d1Iter1 << " ";
+    cout << ")." << endl;
 }
 ```
 
@@ -9023,7 +9289,7 @@ After the swap_range, vector v1 is ( 6 6 6 6 6 6 ).
 After the swap_range deque d1 is   ( 0 1 2 3 4 5 ).
 ```
 
-## <a name="transform"></a> Dönüştürme
+## <a name="transform"></a>Dönüşümler
 
 Belirtilen işlev nesnesini bir kaynak aralıktaki her bir öğeye veya iki kaynak aralıktaki bir öğe çiftine uygular ve işlev nesnenin dönüş değerlerini bir hedef aralığa kopyalar.
 
@@ -9042,55 +9308,56 @@ OutputIterator transform(
     InputIterator2 first2,
     OutputIterator result,
     BinaryFunction func );
-    
-template<class ExecutionPolicy, class ForwardIterator1, class ForwardIterator2,
-class UnaryOperation>
+
+template<class ExecutionPolicy, class ForwardIterator1, class ForwardIterator2, class UnaryOperation>
 ForwardIterator2 transform(
     ExecutionPolicy&& exec,
-    ForwardIterator1 first, 
+    ForwardIterator1 first,
     ForwardIterator1 last,
-    ForwardIterator2 result, 
+    ForwardIterator2 result,
     UnaryOperation op);
 
-template<class ExecutionPolicy, class ForwardIterator1, class ForwardIterator2,
-class ForwardIterator, class BinaryOperation>
+template<class ExecutionPolicy, class ForwardIterator1, class ForwardIterator2, class ForwardIterator, class BinaryOperation>
 ForwardIterator transform(
     ExecutionPolicy&& exec,
-    ForwardIterator1 first1, 
+    ForwardIterator1 first1,
     ForwardIterator1 last1,
-    ForwardIterator2 first2, 
+    ForwardIterator2 first2,
     ForwardIterator result,
     BinaryOperation binary_op);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
+*Exec*\
+Kullanılacak yürütme ilkesi.
+
 *first1*\
-Üzerinde yapılacak ilk kaynak aralıktaki ilk öğenin konumunu ele alan giriş yineleyici.
+Üzerinde çalıştırılacak ilk kaynak aralıktaki ilk öğenin konumunu ele alan bir giriş Yineleyici.
 
 *last1*\
-İşlenemeyen ilk kaynak aralıktaki son öğeden sonraki birinci konum ele alan giriş yineleyici.
+Üzerinde çalıştırılan ilk kaynak aralıktaki son öğeden önceki konumu ele alan bir giriş Yineleyici.
 
 *first2*\
-Üzerinde yapılacak ikinci kaynak aralıktaki ilk öğenin konumunu ele alan giriş yineleyici.
+Üzerinde çalıştırılacak ikinci kaynak aralıktaki ilk öğenin konumunu ele alan bir giriş Yineleyici.
 
-*Sonuç*\
-Hedef aralıktaki ilk öğenin konumunu bulan çıktı yineleyici.
+*kaynaklanan*\
+Hedef aralıktaki ilk öğenin konumunu ele alarak çıkış Yineleyici.
 
-*_Func*\
-Kullanıcı tanımlı tekli ilk kaynak aralıktaki her öğeye uygulanan algoritması ilk sürümünde kullanılan nesnesi veya ikili, ileriye doğru sırada uygulanan algoritma ikinci sürümünde kullanılan bir kullanıcı tanımlı (UD) ikili fonksiyon nesnesi işlevi , iki kaynak aralıkları.
+*melerinin*\
+İlk kaynak aralıktaki her bir öğeye veya bir Kullanıcı tanımlı (UD) ikili işlev nesnesine, bir ileriye doğru şekilde uygulanmış olan algoritmanın ikinci sürümünde kullanılan, algoritmanın ilk sürümünde kullanılan Kullanıcı tanımlı birli işlev nesnesi , iki kaynak aralığına.
 
-### <a name="return-value"></a>Dönüş Değeri
+### <a name="return-value"></a>Dönüş değeri
 
-İşlev nesnesi tarafından dönüştürülmüş çıktı öğeleri alan hedef aralığın son öğesinde geçmiş konumu ele alan çıkış yineleyici.
+İşlev nesnesi tarafından dönüştürülen çıkış öğelerini alan hedef aralıktaki son öğeden önceki konumu ele alan bir çıkış Yineleyici.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Başvurulan aralıkların geçerli olması gerekir; Tüm İşaretçiler tekrar başvurulabilir olmalı ve her dizi içinde son konuma ilk konumdan erişilebilir olmalıdır erişilebilmelidir. Hedef aralığı dönüştürülmüş kaynak aralığı içerecek kadar büyük olmalıdır.
+Başvurulan aralıklar geçerli olmalıdır; Tüm işaretçilerin erişilebilir olması gerekir ve her bir dizide en son konum artırılamadı tarafından ilk kez ulaşılabilir olmalıdır. Hedef Aralık, dönüştürülmüş kaynak aralığını içerecek kadar büyük olmalıdır.
 
-Varsa *sonucu* eşit olarak ayarlanır *first1* algoritma ilk sürümünde, ardından kaynak ve hedef aralıklar aynı olacaktır ve sıra yerinde değiştirilecek. Ancak *sonucu* aralık içinde bir konuma adres değil [`first1` + 1, `last1`).
+*Sonuç* , algoritmanın ilk sürümünde *first1* değerine eşitse, kaynak ve hedef aralıklar aynı olur ve sıra yerinde değiştirilir. Ancak *sonuç* [`first1` + 1, `last1`) aralığı içinde bir konumu ele vermeyebilir.
 
-Karmaşıklığı en fazla ile doğrusal (`last1` - `first1`) karşılaştırmalar.
+Karmaşıklık, en çok (`last1` - `first1`) karşılaştırmalarda doğrusal olarak belirlenir.
 
 ### <a name="example"></a>Örnek
 
@@ -9106,70 +9373,69 @@ Karmaşıklığı en fazla ile doğrusal (`last1` - `first1`) karşılaştırmal
 template <class Type>
 class MultValue
 {
-   private:
-      Type Factor;   // The value to multiply by
-   public:
-      // Constructor initializes the value to multiply by
-      MultValue ( const Type& val ) : Factor ( val ) {
-      }
+private:
+    Type Factor;   // The value to multiply by
+public:
+    // Constructor initializes the value to multiply by
+    MultValue ( const Type& value ) : Factor ( value ) { }
 
-      // The function call for the element to be multiplied
-      Type operator( ) ( Type& elem ) const
-      {
-         return elem * Factor;
-      }
+    // The function call for the element to be multiplied
+    Type operator( ) ( Type& elem ) const
+    {
+        return elem * Factor;
+    }
 };
 
 int main()
 {
-   using namespace std;
-   vector <int> v1, v2 ( 7 ), v3 ( 7 );
-   vector <int>::iterator Iter1, Iter2 , Iter3;
+    using namespace std;
+    vector<int> v1, v2 ( 7 ), v3 ( 7 );
+    vector<int>::iterator Iter1, Iter2 , Iter3;
 
-   // Constructing vector v1
-   int i;
-   for ( i = -4 ; i <= 2 ; i++ )
-   {
-      v1.push_back(  i );
-   }
+    // Constructing vector v1
+    int i;
+    for ( i = -4 ; i <= 2 ; i++ )
+    {
+        v1.push_back( i );
+    }
 
-   cout << "Original vector  v1 = ( " ;
-   for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
-      cout << *Iter1 << " ";
-   cout << ")." << endl;
+    cout << "Original vector v1 = ( " ;
+    for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
+        cout << *Iter1 << " ";
+    cout << ")." << endl;
 
-   // Modifying the vector v1 in place
-   transform (v1.begin( ), v1.end( ), v1.begin( ), MultValue<int> ( 2 ) );
-   cout << "The elements of the vector v1 multiplied by 2 in place gives:"
-        << "\n v1mod = ( " ;
-   for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
-      cout << *Iter1 << " ";
-   cout << ")." << endl;
+    // Modifying the vector v1 in place
+    transform (v1.begin( ), v1.end( ), v1.begin( ), MultValue<int> ( 2 ) );
+    cout << "The elements of the vector v1 multiplied by 2 in place gives:"
+            << "\n v1mod = ( " ;
+    for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
+        cout << *Iter1 << " ";
+    cout << ")." << endl;
 
-   // Using transform to multiply each element by a factor of 5
-   transform ( v1.begin( ), v1.end( ), v2.begin( ), MultValue<int> ( 5 ) );
+    // Using transform to multiply each element by a factor of 5
+    transform ( v1.begin( ), v1.end( ), v2.begin( ), MultValue<int> ( 5 ) );
 
-   cout << "Multiplying the elements of the vector v1mod\n "
-        <<  "by the factor 5 & copying to v2 gives:\n v2 = ( " ;
-   for ( Iter2 = v2.begin( ) ; Iter2 != v2.end( ) ; Iter2++ )
-      cout << *Iter2 << " ";
-   cout << ")." << endl;
+    cout << "Multiplying the elements of the vector v1mod\n "
+            << "by the factor 5 & copying to v2 gives:\n v2 = ( " ;
+    for ( Iter2 = v2.begin( ) ; Iter2 != v2.end( ) ; Iter2++ )
+        cout << *Iter2 << " ";
+    cout << ")." << endl;
 
-   // The second version of transform used to multiply the
-   // elements of the vectors v1mod & v2 pairwise
-   transform ( v1.begin( ), v1.end( ),  v2.begin( ), v3.begin( ),
-      multiplies <int>( ) );
+    // The second version of transform used to multiply the
+    // elements of the vectors v1mod & v2 pairwise
+    transform ( v1.begin( ), v1.end( ), v2.begin( ), v3.begin( ),
+        multiplies<int>( ) );
 
-   cout << "Multiplying elements of the vectors v1mod and v2 pairwise "
-        <<  "gives:\n v3 = ( " ;
-   for ( Iter3 = v3.begin( ) ; Iter3 != v3.end( ) ; Iter3++ )
-      cout << *Iter3 << " ";
-   cout << ")." << endl;
+    cout << "Multiplying elements of the vectors v1mod and v2 pairwise "
+            << "gives:\n v3 = ( " ;
+    for ( Iter3 = v3.begin( ) ; Iter3 != v3.end( ) ; Iter3++ )
+        cout << *Iter3 << " ";
+    cout << ")." << endl;
 }
 ```
 
 ```Output
-Original vector  v1 = ( -4 -3 -2 -1 0 1 2 ).
+Original vector v1 = ( -4 -3 -2 -1 0 1 2 ).
 The elements of the vector v1 multiplied by 2 in place gives:
 v1mod = ( -8 -6 -4 -2 0 2 4 ).
 Multiplying the elements of the vector v1mod
@@ -9179,64 +9445,67 @@ Multiplying elements of the vectors v1mod and v2 pairwise gives:
 v3 = ( 320 180 80 20 0 20 80 ).
 ```
 
-## <a name="unique"></a> benzersiz
+## <a name="unique"></a>eşi
 
 Belirli bir aralıktaki birbirine bitişik yinelenen öğeleri kaldırır.
 
 ```cpp
 template<class ForwardIterator>
-   ForwardIterator unique(
-      ForwardIterator first,
-      ForwardIterator last);
+ForwardIterator unique(
+    ForwardIterator first,
+    ForwardIterator last);
 
-template<class ForwardIterator, class Predicate>
-   ForwardIterator unique(
-      ForwardIterator first,
-      ForwardIterator last,
-      Predicate comp);
-      
+template<class ForwardIterator, class BinaryPredicate>
+ForwardIterator unique(
+    ForwardIterator first,
+    ForwardIterator last,
+    BinaryPredicate pred);
+
 template<class ExecutionPolicy, class ForwardIterator>
 ForwardIterator unique(
     ExecutionPolicy&& exec,
-    ForwardIterator first, 
+    ForwardIterator first,
     ForwardIterator last);
 
 template<class ExecutionPolicy, class ForwardIterator, class BinaryPredicate>
 ForwardIterator unique(
     ExecutionPolicy&& exec,
-    ForwardIterator first, 
+    ForwardIterator first,
     ForwardIterator last,
     BinaryPredicate pred);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*ilk*\
-Yinelenen kaldırma taranacak aralıktaki ilk öğenin konumunu bulan ileriye doğru yineleyici.
+*Exec*\
+Kullanılacak yürütme ilkesi.
 
-*Son*\
-Bir son öğeden aralığındaki konumu için yinelenen kaldırma taranacak bulan ileriye doğru yineleyici.
+*adı*\
+Yinelenen kaldırma için Taranacak aralıktaki ilk öğenin konumunu ele alarak ileriye doğru bir yineleyici.
 
-*Comp*\
-Gerçekleştirilecek iki öğe varsa karşılanması koşul tanımlayan kullanıcı tanımlı işlevin doğrulama nesnesi olarak eşdeğer. İkili koşulu, iki bağımsız değişkeni alır ve döndürür **true** karşılanmazsa ve **false** koşullar karşılanırsa.
+*soyadına*\
+Yinelenen kaldırma için taranacak olan aralıktaki son öğeden bir önceki konumu ele alarak ileriye doğru bir yineleyici.
 
-### <a name="return-value"></a>Dönüş Değeri
+*pred*\
+İki öğenin eşdeğer olarak alınması durumunda karşılanması gereken koşulu tanımlayan Kullanıcı tanımlı koşul işlevi nesnesi. İkili koşul iki bağımsız değişken alır ve memnun olmadığında **true** ve **false** değeri döndürür.
 
-Bir önceki öğenin konumunu kaldırılmaz son öğeyi ele alan ileriye doğru yineleyici ardışık yinelemelere içeren değiştirilmiş bir dizi yeni sonuna.
+### <a name="return-value"></a>Dönüş değeri
+
+Art arda yinelenen olmayan yineleme içermeyen değiştirilmiş sıranın yeni sonuna bir iletme yineleyicisi, son öğeden çıkarılan konumu ele alır.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Her iki biçimi algoritmasının ikinci yinelenen eşit öğelerin art arda çifti kaldırın.
+Her iki algoritma formu, birbirini izleyen eşit öğelerin çiftinin ikinci yinelemesini kaldırır.
 
-Böylece silinmeyen öğelerin göreli sırasını değiştirilmez algoritmasının kalıcı bir işlemdir.
+Algoritma işlemi, silinmeyen öğelerin göreli sırası değiştirilmemesi için kararlı bir işlemdir.
 
-Başvurulan aralık geçerli olmalı; Tüm İşaretçiler tekrar başvurulabilir olmalı ve dizi içinde son konuma ilk konumdan erişilebilmelidir. Dizideki öğelerin sayısı o algoritması tarafından değiştirilmez `unique` ve öğeler değiştirilmiş dizinin sonundan tekrar başvurulabilir ancak belirtilmedi.
+Başvurulan Aralık geçerli olmalıdır; Tüm işaretçiler, en son artırılamadı tarafından ilk konumdan erişilebilir olması gerekir. dizideki öğe sayısı, algoritma `unique` tarafından değiştirilmez ve değiştirilen sıranın sonundaki öğeler geçersiz olur ancak belirtilmez.
 
-Doğrusal gerektiren karmaşıklığı (`last` - `first`) - 1 karşılaştırmalar.
+Karmaşıklık, karşılaştırmalar gerektiren `(last - first) - 1` doğrusal bir değer.
 
-Liste daha verimli bir üye işlevi "benzersiz" daha iyi gerçekleştirebilir sağlar.
+Liste, daha iyi gerçekleştirebilen daha verimli bir "Unique" üye işlevi sağlar.
 
-Bu algoritmalar ilişkilendirilebilir bir kapsayıcı üzerinde kullanılamaz.
+Bu algoritmalar ilişkilendirilebilir bir kapsayıcıda kullanılamaz.
 
 ### <a name="example"></a>Örnek
 
@@ -9254,63 +9523,63 @@ using namespace std;
 // Return whether modulus of elem1 is equal to modulus of elem2
 bool mod_equal ( int elem1, int elem2 )
 {
-   if ( elem1 < 0 )
-      elem1 = - elem1;
-   if ( elem2 < 0 )
-      elem2 = - elem2;
-   return elem1 == elem2;
+    if ( elem1 < 0 )
+        elem1 = - elem1;
+    if ( elem2 < 0 )
+        elem2 = - elem2;
+    return elem1 == elem2;
 };
 
 int main()
 {
-   vector <int> v1;
-   vector <int>::iterator v1_Iter1, v1_Iter2, v1_Iter3,
-         v1_NewEnd1, v1_NewEnd2, v1_NewEnd3;
+    vector<int> v1;
+    vector<int>::iterator v1_Iter1, v1_Iter2, v1_Iter3,
+            v1_NewEnd1, v1_NewEnd2, v1_NewEnd3;
 
-   int i;
-   for ( i = 0 ; i <= 3 ; i++ )
-   {
-      v1.push_back( 5 );
-      v1.push_back( -5 );
-   }
+    int i;
+    for ( i = 0 ; i <= 3 ; i++ )
+    {
+        v1.push_back( 5 );
+        v1.push_back( -5 );
+    }
 
-   int ii;
-   for ( ii = 0 ; ii <= 3 ; ii++ )
-   {
-      v1.push_back( 4 );
-   }
-   v1.push_back( 7 );
+    int ii;
+    for ( ii = 0 ; ii <= 3 ; ii++ )
+    {
+        v1.push_back( 4 );
+    }
+    v1.push_back( 7 );
 
-   cout << "Vector v1 is ( " ;
-   for ( v1_Iter1 = v1.begin( ) ; v1_Iter1 != v1.end( ) ; v1_Iter1++ )
-      cout << *v1_Iter1 << " ";
-   cout << ")." << endl;
+    cout << "Vector v1 is ( " ;
+    for ( v1_Iter1 = v1.begin( ) ; v1_Iter1 != v1.end( ) ; v1_Iter1++ )
+        cout << *v1_Iter1 << " ";
+    cout << ")." << endl;
 
-   // Remove consecutive duplicates
-   v1_NewEnd1 = unique ( v1.begin( ), v1.end( ) );
+    // Remove consecutive duplicates
+    v1_NewEnd1 = unique ( v1.begin( ), v1.end( ) );
 
-   cout << "Removing adjacent duplicates from vector v1 gives\n ( " ;
-   for ( v1_Iter1 = v1.begin( ) ; v1_Iter1 != v1_NewEnd1 ; v1_Iter1++ )
-      cout << *v1_Iter1 << " ";
-   cout << ")." << endl;
+    cout << "Removing adjacent duplicates from vector v1 gives\n ( " ;
+    for ( v1_Iter1 = v1.begin( ) ; v1_Iter1 != v1_NewEnd1 ; v1_Iter1++ )
+        cout << *v1_Iter1 << " ";
+    cout << ")." << endl;
 
-   // Remove consecutive duplicates under the binary prediate mod_equals
-   v1_NewEnd2 = unique ( v1.begin( ), v1_NewEnd1 , mod_equal );
+    // Remove consecutive duplicates under the binary prediate mod_equals
+    v1_NewEnd2 = unique ( v1.begin( ), v1_NewEnd1 , mod_equal );
 
-   cout << "Removing adjacent duplicates from vector v1 under the\n "
-        << " binary predicate mod_equal gives\n ( " ;
-   for ( v1_Iter2 = v1.begin( ) ; v1_Iter2 != v1_NewEnd2 ; v1_Iter2++ )
-      cout << *v1_Iter2 << " ";
-   cout << ")." << endl;
+    cout << "Removing adjacent duplicates from vector v1 under the\n "
+            << " binary predicate mod_equal gives\n ( " ;
+    for ( v1_Iter2 = v1.begin( ) ; v1_Iter2 != v1_NewEnd2 ; v1_Iter2++ )
+        cout << *v1_Iter2 << " ";
+    cout << ")." << endl;
 
-   // Remove elements if preceded by an element that was greater
-   v1_NewEnd3 = unique ( v1.begin( ), v1_NewEnd2, greater<int>( ) );
+    // Remove elements if preceded by an element that was greater
+    v1_NewEnd3 = unique ( v1.begin( ), v1_NewEnd2, greater<int>( ) );
 
-   cout << "Removing adjacent elements satisfying the binary\n "
-        << " predicate mod_equal from vector v1 gives ( " ;
-   for ( v1_Iter3 = v1.begin( ) ; v1_Iter3 != v1_NewEnd3 ; v1_Iter3++ )
-      cout << *v1_Iter3 << " ";
-   cout << ")." << endl;
+    cout << "Removing adjacent elements satisfying the binary\n "
+            << " predicate mod_equal from vector v1 gives ( " ;
+    for ( v1_Iter3 = v1.begin( ) ; v1_Iter3 != v1_NewEnd3 ; v1_Iter3++ )
+        cout << *v1_Iter3 << " ";
+    cout << ")." << endl;
 }
 ```
 
@@ -9325,64 +9594,70 @@ Removing adjacent elements satisfying the binary
   predicate mod_equal from vector v1 gives ( 5 7 ).
 ```
 
-## <a name="unique_copy"></a> unique_copy
+## <a name="unique_copy"></a>unique_copy
 
 Birbirine bitişik yinelenen öğeler hariç bir kaynak aralıktaki öğeleri hedef aralığa kopyalar.
 
 ```cpp
 template<class InputIterator, class OutputIterator>
-OutputIterator unique_copy( InputIterator first,
+OutputIterator unique_copy(
+    InputIterator first,
     InputIterator last,
     OutputIterator result );
 
 template<class InputIterator, class OutputIterator, class BinaryPredicate>
-OutputIterator unique_copy( InputIterator first,
+OutputIterator unique_copy(
+    InputIterator first,
     InputIterator last,
     OutputIterator result,
-    BinaryPredicate comp );
-    
+    BinaryPredicate pred );
+
 template<class ExecutionPolicy, class ForwardIterator1, class ForwardIterator2>
-ForwardIterator2 unique_copy(ExecutionPolicy&& exec,
-    ForwardIterator1 first, 
+ForwardIterator2 unique_copy(
+    ExecutionPolicy&& exec,
+    ForwardIterator1 first,
     ForwardIterator1 last,
     ForwardIterator2 result);
 
 template<class ExecutionPolicy, class ForwardIterator1, class ForwardIterator2,
 class BinaryPredicate>
 ForwardIterator2 unique_copy(ExecutionPolicy&& exec,
-    ForwardIterator1 first, 
+    ForwardIterator1 first,
     ForwardIterator1 last,
-    ForwardIterator2 result, 
+    ForwardIterator2 result,
     BinaryPredicate pred);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*ilk*\
-Kopyalanacak kaynak aralıktaki ilk öğenin konumunu bulan ileriye doğru yineleyici.
+*Exec*\
+Kullanılacak yürütme ilkesi.
 
-*Son*\
-Kopyalanacak kaynak aralıktaki son öğeden sonraki birinci konum ele alan ileriye doğru yineleyici.
+*adı*\
+Kopyalanacak kaynak aralıktaki ilk öğenin konumunu ele alarak ileriye doğru bir yineleyici.
 
-*Sonuç*\
-Birbirini izleyen yinelemeler ile kopyayı alan hedef aralıktaki ilk öğenin konumunu bulan çıktı yineleyici kaldırıldı.
+*soyadına*\
+Kaynak aralıktaki kopyalanacak son öğeden bir önceki konumu ele alarak ileriye doğru bir yineleyici.
 
-*Comp*\
-Gerçekleştirilecek iki öğe varsa karşılanması koşul tanımlayan kullanıcı tanımlı işlevin doğrulama nesnesi olarak eşdeğer. İkili koşulu, iki bağımsız değişkeni alır ve döndürür **true** karşılanmazsa ve **false** koşullar karşılanırsa.
+*kaynaklanan*\
+Bir çıkış yineleyicisi, bir kopyayı ardışık yinelemeler kaldırılmış şekilde alan hedef aralıktaki ilk öğenin konumunu ele alıyor.
 
-### <a name="return-value"></a>Dönüş Değeri
+*pred*\
+İki öğenin eşdeğer olarak alınması durumunda karşılanması gereken koşulu tanımlayan Kullanıcı tanımlı koşul işlevi nesnesi. İkili koşul iki bağımsız değişken alır ve memnun olmadığında **true** ve **false** değeri döndürür.
 
-Birbirini izleyen yinelemeler ile kopyayı alan hedef aralığın son öğesinde geçmiş konumu ele alan çıkış yineleyici kaldırıldı.
+### <a name="return-value"></a>Dönüş değeri
+
+Arka arkaya yinelenen kopyaları kaldırılmış şekilde kopyayı alan hedef aralıktaki son öğeden bir önceki konumu ele alan çıkış Yineleyici.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Her iki biçimi algoritmasının ikinci yinelenen eşit öğelerin art arda çifti kaldırın.
+Her iki algoritma formu, birbirini izleyen eşit öğelerin çiftinin ikinci yinelemesini kaldırır.
 
-Böylece silinmeyen öğelerin göreli sırasını değiştirilmez algoritmasının kalıcı bir işlemdir.
+Algoritma işlemi, silinmeyen öğelerin göreli sırası değiştirilmemesi için kararlı bir işlemdir.
 
-Başvurulan aralıkların geçerli olması gerekir; Tüm İşaretçiler tekrar başvurulabilir olmalı ve bir dizi içinde son konuma ilk konumdan erişilebilmelidir.
+Başvurulan aralıklar geçerli olmalıdır; Tüm işaretçiler, bir dizi içinde ve en son konum ilk artırılamadı tarafından erişilebilir olmalıdır.
 
-Doğrusal gerektiren karmaşıklığı (`last` - `first`) karşılaştırmalar.
+Karmaşıklık, doğrusal, (`last` - `first`) karşılaştırmaları gerektirir.
 
 ### <a name="example"></a>Örnek
 
@@ -9399,111 +9674,111 @@ using namespace std;
 
 // Return whether modulus of elem1 is equal to modulus of elem2
 bool mod_equal ( int elem1, int elem2 ) {
-   if ( elem1 < 0 )
-      elem1 = - elem1;
-   if ( elem2 < 0 )
-      elem2 = - elem2;
-   return elem1 == elem2;
+    if ( elem1 < 0 )
+        elem1 = - elem1;
+    if ( elem2 < 0 )
+        elem2 = - elem2;
+    return elem1 == elem2;
 };
 
 int main() {
-   vector <int> v1;
-   vector <int>::iterator v1_Iter1, v1_Iter2,
-         v1_NewEnd1, v1_NewEnd2;
+    vector<int> v1;
+    vector<int>::iterator v1_Iter1, v1_Iter2,
+            v1_NewEnd1, v1_NewEnd2;
 
-   int i;
-   for ( i = 0 ; i <= 1 ; i++ ) {
-      v1.push_back( 5 );
-      v1.push_back( -5 );
-   }
+    int i;
+    for ( i = 0 ; i <= 1 ; i++ ) {
+        v1.push_back( 5 );
+        v1.push_back( -5 );
+    }
 
-   int ii;
-   for ( ii = 0 ; ii <= 2 ; ii++ )
-      v1.push_back( 4 );
-   v1.push_back( 7 );
+    int ii;
+    for ( ii = 0 ; ii <= 2 ; ii++ )
+        v1.push_back( 4 );
+    v1.push_back( 7 );
 
-   int iii;
-   for ( iii = 0 ; iii <= 5 ; iii++ )
-      v1.push_back( 10 );
+    int iii;
+    for ( iii = 0 ; iii <= 5 ; iii++ )
+        v1.push_back( 10 );
 
-   cout << "Vector v1 is\n ( " ;
-   for ( v1_Iter1 = v1.begin( ) ; v1_Iter1 != v1.end( ) ; v1_Iter1++ )
-      cout << *v1_Iter1 << " ";
-   cout << ")." << endl;
+    cout << "Vector v1 is\n ( " ;
+    for ( v1_Iter1 = v1.begin( ) ; v1_Iter1 != v1.end( ) ; v1_Iter1++ )
+        cout << *v1_Iter1 << " ";
+    cout << ")." << endl;
 
-   // Copy first half to second, removing consecutive duplicates
-   v1_NewEnd1 = unique_copy ( v1.begin( ), v1.begin( ) + 8, v1.begin( ) + 8 );
+    // Copy first half to second, removing consecutive duplicates
+    v1_NewEnd1 = unique_copy ( v1.begin( ), v1.begin( ) + 8, v1.begin( ) + 8 );
 
-   cout << "Copying the first half of the vector to the second half\n "
-        << "while removing adjacent duplicates gives\n ( " ;
-   for ( v1_Iter1 = v1.begin( ) ; v1_Iter1 != v1_NewEnd1 ; v1_Iter1++ )
-      cout << *v1_Iter1 << " ";
-   cout << ")." << endl;
+    cout << "Copying the first half of the vector to the second half\n "
+            << "while removing adjacent duplicates gives\n ( " ;
+    for ( v1_Iter1 = v1.begin( ) ; v1_Iter1 != v1_NewEnd1 ; v1_Iter1++ )
+        cout << *v1_Iter1 << " ";
+    cout << ")." << endl;
 
-   int iv;
-   for ( iv = 0 ; iv <= 7 ; iv++ )
-      v1.push_back( 10 );
+    int iv;
+    for ( iv = 0 ; iv <= 7 ; iv++ )
+        v1.push_back( 10 );
 
-   // Remove consecutive duplicates under the binary prediate mod_equals
-   v1_NewEnd2 = unique_copy ( v1.begin( ), v1.begin( ) + 14,
-      v1.begin( ) + 14 , mod_equal );
+    // Remove consecutive duplicates under the binary prediate mod_equals
+    v1_NewEnd2 = unique_copy ( v1.begin( ), v1.begin( ) + 14,
+        v1.begin( ) + 14 , mod_equal );
 
-   cout << "Copying the first half of the vector to the second half\n "
-        << " removing adjacent duplicates under mod_equals gives\n ( " ;
-   for ( v1_Iter2 = v1.begin( ) ; v1_Iter2 != v1_NewEnd2 ; v1_Iter2++ )
-      cout << *v1_Iter2 << " ";
-   cout << ")." << endl;
+    cout << "Copying the first half of the vector to the second half\n "
+            << " removing adjacent duplicates under mod_equals gives\n ( " ;
+    for ( v1_Iter2 = v1.begin( ) ; v1_Iter2 != v1_NewEnd2 ; v1_Iter2++ )
+        cout << *v1_Iter2 << " ";
+    cout << ")." << endl;
 }
 ```
 
-## <a name="upper_bound"></a> upper_bound
+## <a name="upper_bound"></a>upper_bound
 
 Belirtilenden daha büyük bir değere sahip sıralı bir aralıktaki ilk öğenin konumunu bulur, burada sıralama ölçütü bir ikili koşula göre belirtilebilir.
 
 ```cpp
 template<class ForwardIterator, class Type>
-   ForwardIterator upper_bound(
-      ForwardIterator first,
-      ForwardIterator last,
-      const Type& value);
+ForwardIterator upper_bound(
+    ForwardIterator first,
+    ForwardIterator last,
+    const Type& value);
 
-template<class ForwardIterator, class Type, class Predicate>
-   ForwardIterator upper_bound(
-      ForwardIterator first,
-      ForwardIterator last,
-      const Type& value,
-      Predicate comp);
+template<class ForwardIterator, class Type, class Compare>
+ForwardIterator upper_bound(
+    ForwardIterator first,
+    ForwardIterator last,
+    const Type& value,
+    Compare pred);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*ilk*\
+*adı*\
 Aranacak aralıktaki ilk öğenin konumu.
 
-*Son*\
-Bir önceki öğenin konumunu son öğesi aranacak aralıktaki.
+*soyadına*\
+Aranacak aralıktaki son öğeden geçen bir konum.
 
-*Değer*\
-Sıralanmış aralıktaki tarafından döndürülen yineleyici tarafından ele alınan öğenin değeri olması gereken değer.
+*deeri*\
+Sıralanmış aralıktaki, döndürülen Yineleyici tarafından belirtilen öğenin değeri ile aşılması gereken değer.
 
-*Comp*\
-Bir öğenin daha az olan algılama tanımlayan kullanıcı tanımlı işlevin doğrulama nesnesi. İkili koşulu, iki bağımsız değişkeni alır ve döndürür **true** karşılanmazsa ve **false** koşullar karşılanırsa.
+*pred*\
+Bir öğenin diğerinden küçük olduğu anlamlı olduğunu tanımlayan Kullanıcı tanımlı karşılaştırma koşulu işlev nesnesi. Karşılaştırma koşulu iki bağımsız değişken alır ve memnun olmadığında **true** ve **false** değeri döndürür.
 
-### <a name="return-value"></a>Dönüş Değeri
+### <a name="return-value"></a>Dönüş değeri
 
-Belirtilen değerden daha büyük bir değere sahip ilk öğenin konumuna ileriye doğru yineleyici.
+Belirtilen değerden daha büyük bir değere sahip ilk öğenin konumuna ileriye doğru bir yineleyici.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Başvurulan sıralanmış kaynak aralık geçerli olmalı; Tüm yineleyiciler tekrar başvurulabilir olmalı ve dizi içinde son konuma ilk konumdan erişilebilir olmalıdır erişilebilmelidir.
+Başvurulan sıralanmış kaynak aralığı geçerli olmalıdır; tüm yineleyiciler, en başta artırılamadı 'e başvurulamamalıdır.
 
-Bir sıralanmış aralıkta kullanımının ön koşuludur `upper_bound` ve sıralama ölçütü ikili koşul tarafından belirtildiği gibi aynı.
+Sıralanmış bir Aralık, kullanımı `upper_bound` ve sıralama ölçütünün karşılaştırma koşulu tarafından belirtilen şekilde aynı olduğu bir önkoşuludur.
 
-Aralığın değiştirilmez `upper_bound`.
+Aralık tarafından `upper_bound`değiştirilmez.
 
-İleriye doğru Yineleyicilerin değer türlerinin daha küçük olması-sıralanmalıdır daha karşılaştırılabilir, iki öğe belirtildiğinde, (yani birinin diğerinden diğerinden daha küçük olmadığı anlamında) eşit veya birinin diğerinden küçük olduğu belirlenebilir. Bu bir sıralamaya neden olur öğeler arasında neden olur
+İleriye doğru yineleyicilerin değer türlerinin sıralanabilmesi için kıyasla daha az karşılaştırılabilir olması gerekir. bu sayede, iki öğe verildiğinde, eşdeğer oldukları (Yani bunlardan daha küçük olmadığı anlamda) ya da birinin diğerinin daha küçük olduğu belirlenebilir. Bu, eşdeğer olmayan öğeler arasında bir sıralamaya neden olur
 
-Algoritmanın karmaşıklığı, rasgele erişim yineleyicileri için logaritmik ve doğrusal Aksi takdirde doğrusaldır adım sayısı ile (`last - first`).
+Algoritmanın karmaşıklığı Rastgele erişimli yineleyiciler ve doğrusal olarak, diğer bir deyişle, diğer bir deyişle, diğer bir deyişle, (`last - first`) ile orantılıdır.
 
 ### <a name="example"></a>Örnek
 
@@ -9533,12 +9808,12 @@ int main()
     // Constructing vector v1 with default less-than ordering
     for ( auto i = -1 ; i <= 4 ; ++i )
     {
-        v1.push_back(  i );
+        v1.push_back( i );
     }
 
     for ( auto ii =-3 ; ii <= 0 ; ++ii )
     {
-        v1.push_back(  ii  );
+        v1.push_back( ii );
     }
 
     cout << "Starting vector v1 = ( " ;
@@ -9569,7 +9844,7 @@ int main()
     sort(v3.begin(), v3.end(), mod_lesser);
 
     cout << "Original vector v3 with range sorted by the\n "
-        <<  "binary predicate mod_lesser is v3 = ( " ;
+        << "binary predicate mod_lesser is v3 = ( " ;
     for (const auto &Iter : v3)
         cout << Iter << " ";
     cout << ")." << endl;
@@ -9588,8 +9863,8 @@ int main()
     cout << "The upper_bound in v2 for the element with a value of 3 is: "
         << *Result << "." << endl;
 
-    // upper_bound of 3 in v3 with the binary predicate  mod_lesser
-    Result = upper_bound(v3.begin(), v3.end(), 3,  mod_lesser);
+    // upper_bound of 3 in v3 with the binary predicate mod_lesser
+    Result = upper_bound(v3.begin(), v3.end(), 3, mod_lesser);
     cout << "The upper_bound in v3 for the element with a value of 3 is: "
         << *Result << "." << endl;
 }

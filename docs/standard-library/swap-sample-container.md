@@ -1,5 +1,5 @@
 ---
-title: Swap (&lt;örnek kapsayıcı&gt;)
+title: swap (&lt;örnek kapsayıcı&gt;)
 ms.date: 11/04/2016
 f1_keywords:
 - std.swap
@@ -8,19 +8,19 @@ f1_keywords:
 helpviewer_keywords:
 - swap function
 ms.assetid: d8dd6436-fb97-46ed-bec5-052cfd710462
-ms.openlocfilehash: 48238e4a67fb656eac714a8732ee071e26847768
-ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.openlocfilehash: 8d89a59e90c3e4258c8ca7bf9e981536f3779d4b
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65220301"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68450345"
 ---
-# <a name="swap-ltsample-containergt"></a>Swap (&lt;örnek kapsayıcı&gt;)
+# <a name="swap-ltsample-containergt"></a>swap (&lt;örnek kapsayıcı&gt;)
 
 > [!NOTE]
-> Bu konu Microsoft olan C++ kullanılan kapsayıcıları işlevsiz bir örnek olarak belgeleri C++ standart kitaplığı. Daha fazla bilgi için [C++ Standart Kitaplığı kapsayıcıları](../standard-library/stl-containers.md).
+> Bu konu, C++ standart kitaplıkta kullanılan C++ kapsayıcıların Işlevsel bir örneği olarak Microsoft belgelerimde yer almaktadır. Daha fazla bilgi için bkz [ C++ . standart kitaplık kapsayıcıları](../standard-library/stl-containers.md).
 
-Yürütür `left.` [takas](../standard-library/container-class-swap.md)`(right)`.
+Değiştirmeyi `left.`yürütür`(right)`. [](../standard-library/container-class-swap.md)
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -33,4 +33,4 @@ void swap(
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[\<Örnek kapsayıcı >](../standard-library/sample-container.md)<br/>
+[\<örnek kapsayıcı >](../standard-library/sample-container.md)

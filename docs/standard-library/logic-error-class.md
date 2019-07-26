@@ -6,16 +6,16 @@ f1_keywords:
 helpviewer_keywords:
 - logic_error class
 ms.assetid: b290d73d-94e1-4288-af86-2bb5d71f677a
-ms.openlocfilehash: 56470040365f1b1aa0e311f43937d7ec33f7f148
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 9b7c432a649b566b455109f6de1f7bcc0734ff9b
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62413131"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68453798"
 ---
 # <a name="logicerror-class"></a>logic_error Sınıfı
 
-Sınıf, mantıksal önkoşulları ihlalleri gibi program yürütülmeden önce büyük olasılıkla algılanabilir rapor hataları için oluşturulan tüm özel durumlar için temel sınıf olarak görev yapar.
+Sınıfı, program yürütmeden önce, mantıksal önkoşulların ihlalleri gibi, hataları bildirmek üzere oluşan tüm özel durumlar için temel sınıf görevi görür.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -31,7 +31,7 @@ public:
 
 ## <a name="remarks"></a>Açıklamalar
 
-Tarafından döndürülen değer [ne](../standard-library/exception-class.md) bir kopyasıdır **ileti**`.`[veri](../standard-library/basic-string-class.md#data).
+**İleti**[](../standard-library/basic-string-class.md#data) [](../standard-library/exception-class.md) verilerininbirkopyasıolan`.`tarafından döndürülen değer.
 
 ## <a name="example"></a>Örnek
 
@@ -62,11 +62,11 @@ Type: class std::logic_error
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** \<stdexcept >
+**Üst bilgi:** \<stdexcept >
 
-**Namespace:** std
+**Ad alanı:** std
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[exception Sınıfı](../standard-library/exception-class.md)<br/>
-[C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
+[özel durum sınıfı](../standard-library/exception-class.md)\
+[C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)

@@ -18,16 +18,16 @@ helpviewer_keywords:
 - std::istreambuf_iterator [C++], traits_type
 - std::istreambuf_iterator [C++], equal
 ms.assetid: 39002da2-61a6-48a5-9d0c-5df8271f6038
-ms.openlocfilehash: 41298909b53de1c7acf3cb8ae4b999eb6260765d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 0a2bbc69d4f2d3af0ee6e00a2672436a5f15ab67
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62413274"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68448127"
 ---
 # <a name="istreambufiterator-class"></a>istreambuf_iterator Sınıfı
 
-Şablon sınıfı istreambuf_iterator karakter öğelerini bir giriş akışı arabellek, işaretçi türüne depoladığı nesneyle erişir ayıklar bir giriş yineleyici nesnesini açıklar `basic_streambuf` \< **CharType** , **Nitelikler**>.
+Şablon sınıfı istreambuf_iterator, bir giriş akışı arabelleğinden karakter öğelerini çıkaran bir giriş Yineleyici nesnesini açıklar, bu, `basic_streambuf` **CharType** \< **işaretçisinin türü olan bir nesne üzerinden erişir, Nitelikler**>.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -39,57 +39,57 @@ class istreambuf_iterator
 
 ### <a name="parameters"></a>Parametreler
 
-*CharType*<br/>
+*CharType*\
 istreambuf_iterator için karakter türünü temsil eden tür.
 
-*Nitelikler*<br/>
+*Lerdir*\
 istreambuf_iterator için karakter türünü temsil eden tür. Bu bağımsız değişken isteğe bağlıdır ve varsayılan değer `char_traits` \< *CharType >.*
 
 ## <a name="remarks"></a>Açıklamalar
 
 istreambuf_iterator sınıfının, bir giriş yineleyici için gereksinimleri karşılaması gerekir.
 
-Veya istreambuf_iterator öğesini null olmayan depolanmış bir işaretçi bir nesne artırılmasının ardından, nesne etkili bir şekilde ayıklayın ve türünde bir nesne depolamayı dener *CharType* ilişkili giriş akışından. Ayıklama, ancak nesne başvurusu kaldırılana veya kopyalanana kadar gecikebilir. Ayıklama işlemi başarısız olursa, nesne etkili bir şekilde depolanan işaretçinin yerini alır, böylece bir dizi sonu gösterge oluşturur.
+Null olmayan bir saklı işaretçiyle istreambuf_iterator sınıfının bir nesnesini oluşturduktan veya artırdıktan sonra, nesne, ilişkili giriş akışından *CharType* türünde bir nesneyi ayıklamaya ve depolamaya etkin bir şekilde çalışır. Ayıklama, ancak nesne başvurusu kaldırılana veya kopyalanana kadar gecikebilir. Ayıklama işlemi başarısız olursa, nesne etkili bir şekilde depolanan işaretçinin yerini alır, böylece bir dizi sonu gösterge oluşturur.
 
 ### <a name="constructors"></a>Oluşturucular
 
 |Oluşturucu|Açıklama|
 |-|-|
-|[istreambuf_iterator](#istreambuf_iterator)|Oluşturur bir `istreambuf_iterator` karakter giriş akışından okunacak başlatılır.|
+|[istreambuf_iterator](#istreambuf_iterator)|Giriş akışından `istreambuf_iterator` karakter okumak için başlatılan bir oluşturur.|
 
 ### <a name="typedefs"></a>Tür tanımları
 
 |Tür adı|Açıklama|
 |-|-|
-|[char_type](#char_type)|İçin karakter türünü sağlayan bir tür `ostreambuf_iterator`.|
-|[int_type](#int_type)|Bir tamsayı türü sağlayan bir tür bir `istreambuf_iterator`.|
-|[istream_type](#istream_type)|Akış türü için sağlayan bir tür `istream_iterator`.|
-|[streambuf_type](#streambuf_type)|Akış türü için sağlayan bir tür `istreambuf_iterator`.|
-|[traits_type](../standard-library/istream-iterator-class.md#traits_type)|Karakter nitelikleri için sağlayan bir tür türü `istream_iterator`.|
+|[char_type](#char_type)|Öğesinin karakter türü için sağlayan bir tür `ostreambuf_iterator`.|
+|[int_type](#int_type)|İçin tamsayı türü sağlayan bir tür `istreambuf_iterator`.|
+|[istream_type](#istream_type)|Akış türü `istream_iterator`için sağlayan bir tür.|
+|[streambuf_type](#streambuf_type)|Akış türü `istreambuf_iterator`için sağlayan bir tür.|
+|[traits_type](../standard-library/istream-iterator-class.md#traits_type)|Öğesinin karakter nitelikleri türü için sağlayan bir tür `istream_iterator`.|
 
 ### <a name="member-functions"></a>Üye işlevleri
 
 |Üye işlevi|Açıklama|
 |-|-|
-|[eşittir](#equal)|İki giriş akışı önbelleği yineleyicisi arasındaki eşitliği sınar.|
+|[sıfıra](#equal)|İki giriş akışı önbelleği yineleyicisi arasındaki eşitliği sınar.|
 
 ### <a name="operators"></a>İşleçler
 
 |İşleç|Açıklama|
 |-|-|
-|[operator *](#op_star)|Başvuru kaldırma işleci akıştaki sonraki karakteri döndürür.|
-|[operator ++](#op_add_add)|Giriş akışındaki sonraki öğeyi döndürür ya da artırmadan önce nesneyi kopyalar ve kopyayı döndürür.|
-|[-> işleci](#op_arrow)|Varsa, bir üyenin değerini döndürür.|
+|[işlecinde](#op_star)|Başvuru kaldırma işleci akıştaki sonraki karakteri döndürür.|
+|[işleç + +](#op_add_add)|Giriş akışındaki sonraki öğeyi döndürür ya da artırmadan önce nesneyi kopyalar ve kopyayı döndürür.|
+|[operator->](#op_arrow)|Varsa, bir üyenin değerini döndürür.|
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** \<yineleyici >
+**Üst bilgi:** \<Yineleyici >
 
-**Namespace:** std
+**Ad alanı:** std
 
-## <a name="char_type"></a>  istreambuf_iterator::char_type
+## <a name="char_type"></a>istreambuf_iterator::char_type
 
-İçin karakter türünü sağlayan bir tür `ostreambuf_iterator`.
+Öğesinin karakter türü için sağlayan bir tür `ostreambuf_iterator`.
 
 ```cpp
 typedef CharType char_type;
@@ -97,7 +97,7 @@ typedef CharType char_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon parametresi için bir eşanlamlı türüdür *CharType*.
+Tür, *CharType*şablon parametresi için bir eş anlamlı.
 
 ### <a name="example"></a>Örnek
 
@@ -132,9 +132,9 @@ int main( )
 }
 ```
 
-## <a name="equal"></a>  istreambuf_iterator::Equal
+## <a name="equal"></a>istreambuf_iterator:: eşittir
 
-İki giriş akışı arabelleğe yineleyici arasındaki eşitliği sınar.
+İki giriş akışı arabellek yineleyiciler arasındaki denklik için testler.
 
 ```cpp
 bool equal(const istreambuf_iterator<CharType, Traits>& right) const;
@@ -142,16 +142,16 @@ bool equal(const istreambuf_iterator<CharType, Traits>& right) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*sağ*<br/>
-Eşitlik için denetleyin istediğiniz yineleyici.
+*Right*\
+Eşitlik için denetlenecek Yineleyici.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**doğru** hem `istreambuf_iterator`s: akış uç yineleyiciler veya birinin diğerinden stream bitiş yineleyici; olup olmadığını aksi **false**.
+her iki s `istreambuf_iterator`de akış yineleyiciler ise veya ikisi de bir akış son yinelemeliyse, aksi takdirde **yanlış**olur.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir aralık tarafından tanımlanan `istreambuf_iterator` geçerli konumu ve akış bitiş Yineleyici, ancak tüm olmayan-end-of akışı beri yineleyiciler altında eşdeğer `equal` üye işlevi, bunu kullanarak herhangi bir alt aralıklara tanımlamak mümkün değildir `istreambuf_iterator`s. `==` Ve `!=` işleçleri ile aynı semantiğe sahip.
+Bir Aralık, `istreambuf_iterator` ile geçerli konum ve akış sonu yineleyicisi tarafından tanımlanır, ancak tüm uç olmayan akış yineleyiciler `equal` üye işlevi altında eşdeğer olduğundan, herhangi bir alt Aralık `istreambuf_iterator`tanımlamak mümkün değildir. `==` Ve`!=` işleçleri aynı semantiğe sahiptir.
 
 ### <a name="example"></a>Örnek
 
@@ -181,9 +181,9 @@ int main( )
 }
 ```
 
-## <a name="int_type"></a>  istreambuf_iterator::int_type
+## <a name="int_type"></a>istreambuf_iterator::int_type
 
-Bir tamsayı türü sağlayan bir tür bir `istreambuf_iterator`.
+İçin tamsayı türü sağlayan bir tür `istreambuf_iterator`.
 
 ```cpp
 typedef typename traits_type::int_type int_type;
@@ -191,7 +191,7 @@ typedef typename traits_type::int_type int_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Türü eşanlamlıdır `Traits::int_type`.
+Tür için `Traits::int_type`bir eş anlamlı.
 
 ### <a name="example"></a>Örnek
 
@@ -212,9 +212,9 @@ The inttype1 = 100.
 */
 ```
 
-## <a name="istream_type"></a>  istreambuf_iterator::istream_type
+## <a name="istream_type"></a>istreambuf_iterator::istream_type
 
-Akış türü için sağlayan bir tür `istreambuf_iterator`.
+Akış türü `istreambuf_iterator`için sağlayan bir tür.
 
 ```cpp
 typedef basic_istream<CharType, Traits> istream_type;
@@ -222,15 +222,15 @@ typedef basic_istream<CharType, Traits> istream_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Türü eşanlamlıdır `basic_istream` \< **CharType**, **nitelikler**>.
+`basic_istream` Tür, **CharType**, **nitelikler**> için \< bir eş anlamlı.
 
 ### <a name="example"></a>Örnek
 
-Bkz: [istreambuf_iterator](#istreambuf_iterator) bildirme ve kullanma konusunda bir örnek için `istream_type`.
+Bildirme [](#istreambuf_iterator) ve kullanma `istream_type`hakkında bir örnek için bkz. istreambuf_iterator.
 
-## <a name="istreambuf_iterator"></a>  istreambuf_iterator::istreambuf_iterator
+## <a name="istreambuf_iterator"></a>istreambuf_iterator::istreambuf_iterator
 
-Girdi akışından karakterleri okumak için başlatılan bir istreambuf_iterator oluşturur.
+Giriş akışından karakter okumak için başlatılan bir istreambuf_iterator oluşturur.
 
 ```cpp
 istreambuf_iterator(streambuf_type* strbuf = 0) throw();
@@ -239,15 +239,15 @@ istreambuf_iterator(istream_type& _Istr) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*strbuf*<br/>
-Giriş akışı arabelleğe `istreambuf_iterator` iliştirilmekte.
+*strarabelleğe*\
+Eklendiği giriş akış arabelleği `istreambuf_iterator` .
 
-*_Istr*<br/>
-Giriş akışı hangi `istreambuf_iterator` iliştirilmekte.
+*_Istr*\
+Eklendiği giriş akışı `istreambuf_iterator` .
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk Oluşturucu başlatır ve giriş akış arabelleği işaretçiyle *strbuf*. İkinci oluşturucu başlatır ve giriş akış arabelleği işaretçiyle *_Istr*. `rdbuf`ve ardından sonunda çıkarmayı ve depolamayı bir nesne türü çalışır `CharType`.
+İlk Oluşturucu, giriş akışı arabellek işaretçisini strBuffer ile başlatır . İkinci Oluşturucu, giriş akışı arabellek işaretçisini *_Istr*ile başlatır. `rdbuf`ve sonuç olarak, sonunda türünde `CharType`bir nesne ayıklamaya ve depolamaya çalışır.
 
 ### <a name="example"></a>Örnek
 
@@ -281,7 +281,7 @@ int main( )
 }
 ```
 
-## <a name="op_star"></a>  istreambuf_iterator::operator *
+## <a name="op_star"></a>istreambuf_iterator:: operator *
 
 Başvuru kaldırma işleci akıştaki sonraki karakteri döndürür.
 
@@ -291,7 +291,7 @@ CharType operator*() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Akıştaki sonraki karakteri.
+Akıştaki sonraki karakter.
 
 ### <a name="example"></a>Örnek
 
@@ -332,11 +332,11 @@ istreambuf_iterator<CharType, Traits> operator++(int);
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir `istreambuf_iterator` veya bir başvuru bir `istreambuf_iterator`.
+Bir `istreambuf_iterator` veya başvurusu. `istreambuf_iterator`
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk işleç sonunda ayıklayın ve türünde bir nesne depolamayı dener `CharType` ilişkili giriş akışından. İkinci işleç, nesnenin bir kopyasını oluşturur, nesne artırır ve kopyayı döndürür.
+İlk operatör sonunda, ilişkili giriş akışından bir nesne türünü `CharType` ayıklamaya ve depolamaya çalışır. İkinci işleç nesnenin bir kopyasını yapar, nesneyi artırır ve sonra kopyayı döndürür.
 
 ### <a name="example"></a>Örnek
 
@@ -366,7 +366,7 @@ int main( )
 }
 ```
 
-## <a name="op_arrow"></a>  istreambuf_iterator::operator-&gt;
+## <a name="op_arrow"></a>istreambuf_iterator:: operator-&gt;
 
 Varsa, bir üyenin değerini döndürür.
 
@@ -376,11 +376,11 @@ const Elem* operator->() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İşleç döndürür  **& \* \*bu**.
+İşleci bunu döndürür  **& \*. \***
 
-## <a name="streambuf_type"></a>  istreambuf_iterator::streambuf_type
+## <a name="streambuf_type"></a>istreambuf_iterator::streambuf_type
 
-İstreambuf_iterator türü akış için sağlayan bir tür.
+İstreambuf_iterator akış türü için sağlayan bir tür.
 
 ```cpp
 typedef basic_streambuf<CharType, Traits> streambuf_type;
@@ -388,15 +388,15 @@ typedef basic_streambuf<CharType, Traits> streambuf_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Türü eşanlamlıdır `basic_streambuf` \< **CharType**, **nitelikler**>.
+`basic_streambuf` Tür, **CharType**, **nitelikler**> için \< bir eş anlamlı.
 
 ### <a name="example"></a>Örnek
 
-Bkz: [istreambuf_iterator](#istreambuf_iterator) bildirme ve kullanma konusunda bir örnek için `istreambuf_type`.
+Bildirme [](#istreambuf_iterator) ve kullanma `istreambuf_type`hakkında bir örnek için bkz. istreambuf_iterator.
 
-## <a name="traits_type"></a>  istreambuf_iterator::traits_type
+## <a name="traits_type"></a>istreambuf_iterator::traits_type
 
-Karakter nitelikleri için sağlayan bir tür türü `istream_iterator`.
+Öğesinin karakter nitelikleri türü için sağlayan bir tür `istream_iterator`.
 
 ```cpp
 typedef Traits traits_type;
@@ -404,7 +404,7 @@ typedef Traits traits_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon parametresi için bir eşanlamlı türüdür *nitelikler*.
+Tür, şablon parametresi *nitelikleri*için bir eş anlamlı.
 
 ### <a name="example"></a>Örnek
 
@@ -441,7 +441,7 @@ int main( )
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[iterator Yapısı](../standard-library/iterator-struct.md)<br/>
-[\<Yineleyici >](../standard-library/iterator.md)<br/>
-[C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
-[C++ Standart Kitaplığı Başvurusu](../standard-library/cpp-standard-library-reference.md)<br/>
+[Yineleyici yapısı](../standard-library/iterator-struct.md)\
+[\<Yineleyici >](../standard-library/iterator.md)\
+[C++ Standart kitaplıkta Iş parçacığı güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)\
+[C++ Standart Kitaplığı Başvurusu](../standard-library/cpp-standard-library-reference.md)

@@ -94,16 +94,16 @@ helpviewer_keywords:
 - std::basic_streambuf [C++], xsgetn
 - std::basic_streambuf [C++], xsputn
 ms.assetid: 136af6c3-13bf-4501-9288-b93da26efac7
-ms.openlocfilehash: 581652ea39d0729079666dc675b7214b4b3a4da3
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 0e51831dde9461a3d52cdaaf37d1f6c87966caeb
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62414184"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68453353"
 ---
 # <a name="basicstreambuf-class"></a>basic_streambuf Sınıfı
 
-Belirli bir gösterimiyse bir akış, gelen ve giden öğeleri aktarımını denetleyen bir akış arabelleğinin türetmek için Özet temel sınıf tanımlar.
+Bir akışın belirli bir gösterimine ve öğesinden öğelerin aktarılmasını denetleyen bir akış arabelleği türetmek için soyut bir temel sınıf tanımlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -114,125 +114,125 @@ class basic_streambuf;
 
 ### <a name="parameters"></a>Parametreler
 
-*Elem*<br/>
-A [char_type](#char_type).
+*Elem*\
+Bir [char_type](#char_type).
 
-*tr*<br/>
-Karakter [traits_type](#traits_type).
+*Tr*\
+[Traits_type](#traits_type)karakteri.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Şablon sınıfı, belirli bir gösterimiyse bir akış, gelen ve giden öğeleri aktarımını denetleyen bir akış arabelleğinin türetmek için Özet temel sınıf tanımlar. Sınıfın bir nesnesi `basic_streambuf` yardımcı denetim türünde öğelere sahip bir akış *Tr*olarak da bilinen [char_type](#char_type), olan karakter nitelikleri sınıfı tarafından belirlenen [char_traits](../standard-library/char-traits-struct.md)olarak da bilinen [traits_type](#traits_type).
+Şablon sınıfı, akış arabelleği türetmede bir soyut temel sınıf tanımlar. Bu, bir akışın belirli bir gösteriminden ve öğesinden öğelerin aktarılmasını denetler. Sınıfının `basic_streambuf` bir nesnesi, [char_type](#char_type)olarak da bilinen, karakter nitelikleri [traits_type](#traits_type)olarak da bilinen [char_traits](../standard-library/char-traits-struct.md)sınıfı tarafından belirlendiği şekilde, *se türünde öğeleri*olan bir akışı denetlemeye yardımcı olur.
 
-Her akış arabelleği kavramsal olarak iki bağımsız akışları denetler: ayıklamalar (giriş) için diğeri eklemeler (çıkış) için. Belirli bir gösterimiyse ancak, bu akışlardan ya da erişilemez olmasına neden olabilir. Genellikle, iki akışları arasında bazı ilişki tutar. Çıkış akışına eklediğiniz bir [basic_stringbuf](../standard-library/basic-stringbuf-class.md)< `Elem`, `Tr`> Örneğin, nesnesidir ne, daha sonra giriş akışından ayıklar. Bir akışı konumlandırma ne zaman bir [basic_filebuf](../standard-library/basic-filebuf-class.md)< `Elem`, `Tr`> Nesne, diğer akış dağıtımınızla getirin.
+Her akış arabelleği kavramsal olarak iki bağımsız akışı denetler: biri ayıklamaları (input) ve biri Eklenenler (output) için. Ancak belirli bir gösterim, bu akışların her birini veya her ikisini de erişilemez hale getirebilir. Genellikle iki akış arasında bir ilişki sağlar. Bir [basic_stringbuf](../standard-library/basic-stringbuf-class.md)< `Elem` çıkışakışınaeklediğinizözellikler,örneğin,>nesnesi,dahasonragirişakışından`Tr`ayıkladıklarınız. Bir [basic_filebuf](../standard-library/basic-filebuf-class.md)<  >nesnesininbir`Tr`akışını konumlandırdığınızda, diğer akışı art arda konumlandırabilirsiniz.`Elem`
 
-Şablon sınıfı ortak arabiriminin `basic_streambuf` ancak özelleştirilmiş tüm akış arabellekleri için ortak olan işlemler sağlar. Korumalı kullanıcı arabirimi, işlemini gerçekleştirmek için belirli bir gösterimi bir akış için gereken işlemleri sağlar. Korumalı sanal üye işlevleri, bir türetilmiş akış arabelleği için bir akış belirli bir gösterimiyse davranışını uyumlu hale getirmenizi sağlar. Her türetilmiş akış arabelleği bu kitaplıktaki korumalı sanal üye işlevleri davranışını nasıl konusunda uzmanlaşmış açıklar. Genellikle olduğundan, hiçbir şey yapma, temel sınıfı için varsayılan davranış, bu konuda açıklanmıştır.
+Şablon sınıfına `basic_streambuf` genel arabirim, ancak özelleşmiş tüm akış arabelleklerinde ortak olan işlemleri sağlar. Korumalı arabirim, işini yapmak için bir akışın belirli bir temsili için gereken işlemleri sağlar. Korunan sanal üye işlevleri, bir akışın belirli bir temsili için türetilmiş bir akış arabelleğinin davranışını uyarlamanızı sağlar. Bu kitaplıktaki her türetilmiş akış arabelleği, korunan sanal üye işlevlerinin davranışını nasıl uzmanlık sağladığını açıklar. Temel sınıf için genellikle hiçbir şey yapmak için varsayılan davranış, bu konuda açıklanmaktadır.
 
-Kalan üye işlevleri denetimi ve arabellek istemcileriniz için sağlanan herhangi bir depolama alanı ve akışları kopyalamak korumalı. Örneğin, bir giriş arabellek, tarafından belirlenir:
+Kalan korumalı üye işlevleri, akış ve akışlara yönelik arabellek iletimlerinin sağladığı herhangi bir depolama alanına ve bunlardan kopyalanmasını denetler. Örneğin, bir giriş arabelleğinin şu şekilde belirlenir:
 
-- [eback](#eback), arabelleğin başına bir işaretçi.
+- arabelleğin başlangıcına yönelik bir işaretçi olan [eback](#eback).
 
-- [gptr](#gptr), okunacak sonraki öğeye bir işaretçi.
+- [gptr](#gptr), okunacak bir sonraki öğeye yönelik bir işaretçi.
 
-- [egptr](#egptr), yalnızca arabellek bitişini geçen bir işaretçi.
+- [egptr](#egptr), bir işaretçi yalnızca arabelleğin sonunu geçti.
 
 Benzer şekilde, bir çıkış arabelleği tarafından belirlenir:
 
-- [pbase](#pbase), arabelleğin başına bir işaretçi.
+- [pbase](#pbase), arabelleğin başlangıcına yönelik bir işaretçi.
 
-- [pptr](#pptr), yazmak için sonraki öğeye bir işaretçi.
+- [pptr](#pptr), yazılacak bir sonraki öğeye yönelik bir işaretçi.
 
-- [epptr](#epptr), yalnızca arabellek bitişini geçen bir işaretçi.
+- [epptr](#epptr), bir işaretçi yalnızca arabelleğin sonunu geçti.
 
-Herhangi bir arabellek için aşağıdaki protokolü kullanılır:
+Herhangi bir arabellek için aşağıdaki protokol kullanılır:
 
-- Sonraki işaretçisi, null ise, hiçbir arabellek bulunmaktadır. Aksi takdirde, tüm üç işaretçi aynı dizi gelin. Sipariş için güvenli bir şekilde karşılaştırılabilir.
+- Sonraki işaretçi null ise, arabellek yok demektir. Aksi halde, üç işaretçinin hepsi aynı sırada yer noktasıdır. Bunlar, sipariş için güvenli şekilde karşılaştırılabilir.
 
-- Sonraki işaretçisi son işaretçi sayısından az karşılaştırırsa, bir çıkış arabelleği için sonraki işaretçisi tarafından belirlenen yazma konumunda bir öğe depolayabilirsiniz.
+- Bir çıkış arabelleği için, sonraki işaretçi bitiş işaretçisinden daha az karşılaştırıyorsa, bir öğeyi sonraki işaretçi tarafından belirlenen yazma konumunda saklayabilirsiniz.
 
-- Sonraki işaretçisi son işaretçi sayısından az karşılaştırırsa, bir giriş arabellek için sonraki işaretçisi tarafından belirlenen okuma konumunda bir öğe okuyabilirsiniz.
+- Bir giriş arabelleği için, bir sonraki işaretçi bitiş işaretçisinden daha küçük bir şekilde karşılaştırıyorsa, sonraki işaretçi tarafından belirlenen okuma konumunda bir öğeyi okuyabilirsiniz.
 
-- Başlangıç işaretçisi sonraki işaretçisi sayısından az karşılaştırırsa bir giriş arabellek için geri öğenin indirildiği sonraki işaretçisi tarafından belirlenen putback konumunda koyabilirsiniz.
+- Bir giriş arabelleği için, Başlangıç işaretçisi bir sonraki işaretçiden daha küçük bir şekilde karşılaştırıyorsa, bir öğeyi, daha az bir sonraki işaretçiye göre belirlenen putback konumuna geri koyabilirsiniz.
 
-Herhangi bir sanal üye işlev öğesinden türetilmiş bir sınıf için yazma korumalı `basic_streambuf` <  `Elem`, `Tr`> Bu protokolü sürdürmeye işbirliği gerekir.
+`basic_streambuf`' Den <  `Tr`türetilen bir sınıf için yazdığınız tüm korumalı sanal üye işlevleri, > Bu protokolü sürdürmek için birlikte çalışmalıdır. `Elem`
 
-Sınıfın bir nesnesi `basic_streambuf` <  `Elem`, `Tr`> daha önce açıklanan altı işaretçileri depolar. Ayrıca türünde bir nesne bir yerel ayar nesnesini depolar [yerel ayar](../standard-library/locale-class.md) olası kullanımına türetilmiş akış arabelleği.
+`basic_streambuf`> Sınıfının <  birnesnesi`Tr`, daha önce açıklanan altı işaretçiyi depolar. `Elem` Ayrıca, bir yerel ayar nesnesini, türetilmiş bir akış arabelleği tarafından olası kullanım için [Yerel](../standard-library/locale-class.md) türdeki bir nesnede depolar.
 
 ### <a name="constructors"></a>Oluşturucular
 
 |Oluşturucu|Açıklama|
 |-|-|
-|[basic_streambuf](#basic_streambuf)|Türünde bir nesne oluşturur `basic_streambuf`.|
+|[basic_streambuf](#basic_streambuf)|Türünde `basic_streambuf`bir nesne oluşturur.|
 
 ### <a name="typedefs"></a>Tür tanımları
 
 |Tür adı|Açıklama|
 |-|-|
-|[char_type](#char_type)|Bir tür adıyla ilişkilendirir `Elem` şablon parametresi.|
-|[int_type](#int_type)|İçinde bir tür adını ilişkilendirir `basic_streambuf` ile kapsam `Elem` şablon parametresi.|
-|[off_type](#off_type)|İçinde bir tür adını ilişkilendirir `basic_streambuf` ile kapsam `Elem` şablon parametresi.|
-|[pos_type](#pos_type)|İçinde bir tür adını ilişkilendirir `basic_streambuf` ile kapsam `Elem` şablon parametresi.|
-|[traits_type](#traits_type)|Bir tür adıyla ilişkilendirir `Tr` şablon parametresi.|
+|[char_type](#char_type)|Bir tür adını `Elem` şablon parametresiyle ilişkilendirir.|
+|[int_type](#int_type)|`basic_streambuf` Kapsam`Elem` içindeki bir tür adını şablon parametresiyle ilişkilendirir.|
+|[off_type](#off_type)|`basic_streambuf` Kapsam`Elem` içindeki bir tür adını şablon parametresiyle ilişkilendirir.|
+|[pos_type](#pos_type)|`basic_streambuf` Kapsam`Elem` içindeki bir tür adını şablon parametresiyle ilişkilendirir.|
+|[traits_type](#traits_type)|Bir tür adını `Tr` şablon parametresiyle ilişkilendirir.|
 
 ### <a name="member-functions"></a>Üye işlevleri
 
 |Üye işlevi|Açıklama|
 |-|-|
-|[eback](#eback)|Bir korumalı işlev giriş arabelleği başlangıcına bir işaretçi döndürür.|
-|[egptr](#egptr)|Bir korumalı işlevi yalnızca giriş arabelleği sonunu geçen bir işaretçi döndürür.|
-|[epptr](#epptr)|Bir korumalı işlevi yalnızca çıkış arabelleği sonunu geçen bir işaretçi döndürür.|
-|[gbump](#gbump)|Ekleyen korumalı işlevi `count` için giriş arabelleği için sonraki işaretçisi.|
-|[getloc](#getloc)|Alır `basic_streambuf` nesnenin yerel ayar.|
-|[gptr](#gptr)|Bir korumalı işlev giriş arabelleği sonraki öğeye bir işaretçi döndürür.|
-|[imbue](#imbue)|Korumalı, çağrılan sanal işlev [pubimbue](#pubimbue).|
-|[in_avail](#in_avail)|Arabellekteki okumak hazır olan öğelerin sayısını döndürür.|
-|[taşma](#overflow)|Yeni bir karakteri tam bir arabelleğe eklendiğinde çağrılabilir korumalı sanal işlev.|
-|[pbackfail](#pbackfail)|Bir öğe giriş akışa geri koymak çalışır bir korumalı sanal üye işlevi ardından sunun (sonraki işaretçisi tarafından işaret edilen) geçerli öğe.|
-|[pbase](#pbase)|Çıkış arabelleği başlangıcına bir işaretçi döndüren korumalı bir işlev.|
-|[pbump](#pbump)|Ekleyen korumalı işlevi `count` çıkış arabelleği için sonraki işaretçisi için.|
-|[pptr](#pptr)|Çıkış arabelleği sonraki öğeye bir işaretçi döndüren korumalı bir işlev.|
-|[pubimbue](#pubimbue)|Kümeleri `basic_streambuf` nesnenin yerel ayar.|
-|[pubseekoff](#pubseekoff)|Çağrıları [seekoff](#seekoff), korumalı türetilen bir sınıfta geçersiz kılınmış sanal işlev.|
-|[pubseekpos](#pubseekpos)|Çağrıları [seekpos](#seekpos), korunan sanal işlev türetilen bir sınıfta geçersiz kılınır ve geçerli işaretçisi konumuna sıfırlar.|
-|[pubsetbuf](#pubsetbuf)|Çağrıları [setbuf](#setbuf), korumalı türetilen bir sınıfta geçersiz kılınmış sanal işlev.|
-|[pubsync](#pubsync)|Çağrıları [eşitleme](#sync), korunan sanal işlev türetilen bir sınıfta geçersiz kılınır ve bu arabellek ile ilişkili dış akış güncelleştirir.|
-|[sbumpc](#sbumpc)|Okur ve taşıma akış işaretçisini geçerli öğeye döndürür.|
-|[seekoff](#seekoff)|Korumalı sanal üye işlevi, geçerli konumlar denetimli akışları için alter dener.|
-|[seekpos](#seekpos)|Korumalı sanal üye işlevi, geçerli konumlar denetimli akışları için alter dener.|
-|[setbuf](#setbuf)|Korumalı sanal üye işlevi her türetilmiş akış arabelleği için bir işlemi belirli gerçekleştirir.|
-|[setg](#setg)|Depolayan bir korumalı işlevi `_Gbeg` başlangıç işaretçisi olarak `_Gnext` sonraki işaretçisi olarak ve `_Gend` içinde giriş arabelleği sonu işaretçisi.|
-|[setp](#setp)|Depolayan bir korumalı işlevi `_Pbeg` başlangıç işaretçisi olarak ve `_Pend` içinde çıkış arabelleği sonu işaretçisi.|
-|[sgetc](#sgetc)|Geçerli öğe akışta konumu değiştirmeden döndürür.|
-|[sgetn](#sgetn)|Okuma öğelerin sayısını döndürür.|
-|[showmanyc](#showmanyc)|Korumalı sanal üye işlevi, giriş akışından ayıklanabileceği ve program belirsiz bir bekleme tabi olmayacağı olun karakter sayısını döndürür.|
-|[snextc](#snextc)|Geçerli öğe okur ve aşağıdaki öğeyi döndürür.|
-|[sputbackc](#sputbackc)|Koyar bir `char_type` akış.|
-|[sputc](#sputc)|Bir karakter akışı halinde yerleştirir.|
+|[eback](#eback)|Giriş arabelleğinin başlangıcına bir işaretçi döndüren korumalı bir işlev.|
+|[egptr](#egptr)|Giriş arabelleğinin sonunu geçen bir işaretçi döndüren korumalı bir işlev.|
+|[epptr](#epptr)|Yalnızca çıkış arabelleğinin sonunu geçen bir işaretçi döndüren korumalı bir işlev.|
+|[gbump](#gbump)|Giriş arabelleğinin sonraki işaretçisine ekleyen `count` korumalı bir işlev.|
+|[getloc](#getloc)|`basic_streambuf` Nesnenin yerel ayarını alır.|
+|[gptr](#gptr)|Giriş arabelleğinin bir sonraki öğesine bir işaretçi döndüren korumalı bir işlev.|
+|[imbue](#imbue)|[Pubimbue](#pubimbue)tarafından çağrılan korumalı, sanal bir işlev.|
+|[in_avail](#in_avail)|Arabellekten okunmaya izin veren öğe sayısını döndürür.|
+|[taşma](#overflow)|Tam arabelleğe yeni bir karakter eklendiğinde çağrılabilen, korunan bir sanal işlev.|
+|[pbackfail](#pbackfail)|Giriş akışına bir öğe geri döndürmeye çalışan korumalı bir sanal üye işlevi, ardından bunu geçerli öğe yapın (sonraki işaretçi tarafından işaret edilen).|
+|[pbase](#pbase)|Çıkış arabelleğinin başlangıcına bir işaretçi döndüren korumalı bir işlev.|
+|[pbump](#pbump)|Çıkış arabelleğinin sonraki işaretçisine ekleyen `count` korumalı bir işlev.|
+|[pptr](#pptr)|Çıkış arabelleğinin bir sonraki öğesine bir işaretçi döndüren korumalı bir işlev.|
+|[pubimbue](#pubimbue)|`basic_streambuf` Nesnenin yerel ayarını ayarlar.|
+|[pubseekoff](#pubseekoff)|Türetilmiş bir sınıfta geçersiz kılınan korumalı bir sanal işlev olan [seekoff](#seekoff)öğesini çağırır.|
+|[pubseekpos](#pubseekpos)|Türetilmiş bir sınıfta geçersiz kılınan korumalı bir sanal işlev olan [seekpos](#seekpos)'u çağırır ve geçerli işaretçi konumunu sıfırlar.|
+|[pubsetbuf](#pubsetbuf)|Türetilmiş bir sınıfta geçersiz kılınan korumalı bir sanal işlev olan [setarabelleğe](#setbuf)çağırır.|
+|[pubsync](#pubsync)|Türetilmiş bir sınıfta geçersiz kılınan ve bu arabellekle ilişkili dış akışı güncelleştiren korunan bir sanal işlev olan [eşitleme](#sync)çağırır.|
+|[sbumpc](#sbumpc)|Akış işaretçisini taşıyarak geçerli öğeyi okur ve döndürür.|
+|[seekoff](#seekoff)|Korumalı sanal üye işlevi, denetlenen akışlar için geçerli pozisyonları değiştirmeye çalışır.|
+|[seekpos](#seekpos)|Korumalı sanal üye işlevi, denetlenen akışlar için geçerli pozisyonları değiştirmeye çalışır.|
+|[setbuf](#setbuf)|Korumalı sanal üye işlevi, her türetilmiş akış arabelleği için bir işlem gerçekleştirir.|
+|[setg](#setg)|Başlangıç işaretçisine, `_Gnext` sonraki işaretçiye `_Gbeg` ve `_Gend` giriş arabelleğinin bitiş işaretçisine depolayan korumalı bir işlev.|
+|[setp](#setp)|Başlangıç işaretçisine ve `_Pend` çıkış arabelleğinin `_Pbeg` bitiş işaretçisine depolayan korumalı bir işlev.|
+|[sgetc](#sgetc)|Akışta konum değişikliği yapmadan geçerli öğeyi döndürür.|
+|[sgetn](#sgetn)|Okunan öğe sayısını döndürür.|
+|[showmanyc](#showmanyc)|Giriş akışından ayıklanabilen karakter sayısının sayısını döndüren ve programın sonsuz bir beklemeye tabi olmamasını sağlamak için korunan sanal üye işlevi.|
+|[snextc](#snextc)|Geçerli öğeyi okur ve aşağıdaki öğeyi döndürür.|
+|[sputbackc](#sputbackc)|Akışa bir `char_type` ekler.|
+|[sputc](#sputc)|Akışa bir karakter koyar.|
 |[sputn](#sputn)|Akışa bir karakter dizesi koyar.|
-|[stossc](#stossc)|Akıştaki geçerli öğe geçmiş taşıyın.|
-|[sungetc](#sungetc)|Bir karakter akıştan alır.|
-|[değiştirme](#swap)|Bu nesne için sağlanan değerler değerleri değiştirir `basic_streambuf` parametresi nesne.|
-|[Eşitleme](#sync)|Denetlenen akışları ilişkili herhangi bir dış akışlarla eşitlemeye çalışır korumalı bir sanal işlev.|
-|[uflow](#uflow)|Geçerli öğe girdi akışından ayıklar korumalı bir sanal işlev.|
-|[yetersiz kalması](#underflow)|Geçerli öğe girdi akışından ayıklar korumalı bir sanal işlev.|
-|[xsgetn](#xsgetn)|Öğeleri girdi akışından ayıklar korumalı bir sanal işlev.|
-|[xsputn](#xsputn)|Öğe çıkış akışına ekler; korumalı bir sanal işlev.|
+|[stossc](#stossc)|Akıştaki geçerli öğeyi geçmiş olarak taşıyın.|
+|[sungetc](#sungetc)|Akıştan bir karakter alır.|
+|[Kur](#swap)|Bu nesnedeki değerleri, belirtilen `basic_streambuf` nesne parametresindeki değerler için değiştirir.|
+|[Eşitleme](#sync)|Denetlenen akışları ilişkili dış akışlarla eşitlemeye çalışan korumalı bir sanal işlev.|
+|[uflow](#uflow)|Giriş akışından geçerli öğeyi çıkaran korumalı bir sanal işlev.|
+|[öğe](#underflow)|Giriş akışından geçerli öğeyi çıkaran korumalı bir sanal işlev.|
+|[xsgetn](#xsgetn)|Giriş akışından öğeleri çıkaran korumalı bir sanal işlev.|
+|[xsputn](#xsputn)|Çıkış akışına öğeler ekleyen korumalı bir sanal işlev.|
 
 ### <a name="operators"></a>İşleçler
 
 |İşleç|Açıklama|
 |-|-|
-|[operator=](#op_eq)|Bu nesnenin değerlerini birbirinden atar `basic_streambuf` nesne.|
+|[operator=](#op_eq)|Bu nesnenin değerlerini başka bir `basic_streambuf` nesneden atar.|
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** \<streambuf >
+**Üst bilgi:** \<streamarabelleğe >
 
-**Namespace:** std
+**Ad alanı:** std
 
-## <a name="basic_streambuf"></a>  basic_streambuf::basic_streambuf
+## <a name="basic_streambuf"></a>basic_streambuf::basic_streambuf
 
-Türünde bir nesne oluşturur `basic_streambuf`.
+Türünde `basic_streambuf`bir nesne oluşturur.
 
 ```cpp
 basic_streambuf();
@@ -242,26 +242,26 @@ basic_streambuf(const basic_streambuf& right);
 
 ### <a name="parameters"></a>Parametreler
 
-*sağ*<br/>
-Bir lvalue başvurusuna `basic_streambuf` bu değerleri ayarlamak için kullanılan nesne `basic_streambuf` nesne.
+*Right*\
+`basic_streambuf` Bu`basic_streambuf` nesnenin değerlerini ayarlamak için kullanılan nesneye bir lvalue başvurusu.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk korumalı Oluşturucu tüm işaretçilerin giriş arabelleği ve çıkış arabelleği denetleme null bir işaretçi depolar. Ayrıca depolar `locale::classic` yerel ayar nesnesi içinde. Daha fazla bilgi için [locale::classic](../standard-library/locale-class.md#classic).
+İlk korumalı Oluşturucu, giriş arabelleğini ve çıkış arabelleğini denetleyen tüm işaretçilerde boş bir işaretçi depolar. Ayrıca yerel ayar `locale::classic` nesnesinde depolar. Daha fazla bilgi için bkz. [locale:: klasik](../standard-library/locale-class.md#classic).
 
-İşaretçiler ve yerel ayardan ikinci korumalı Oluşturucu kopyalar *doğru*.
+İkinci korumalı Oluşturucu işaretçileri ve yerel ayarı *sağdan*kopyalar.
 
-## <a name="char_type"></a>  basic_streambuf::char_type
+## <a name="char_type"></a>basic_streambuf::char_type
 
-Bir tür adıyla ilişkilendirir **Elem** şablon parametresi.
+Bir tür adını Elemtemplate  parametresiyle ilişkilendirir.
 
 ```cpp
 typedef Elem char_type;
 ```
 
-## <a name="eback"></a>  basic_streambuf::eback
+## <a name="eback"></a>basic_streambuf:: eback
 
-Bir korumalı işlev giriş arabelleği başlangıcına bir işaretçi döndürür.
+Giriş arabelleğinin başlangıcına bir işaretçi döndüren korumalı bir işlev.
 
 ```cpp
 char_type *eback() const;
@@ -269,11 +269,11 @@ char_type *eback() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Giriş arabelleği başlangıcına bir işaretçi.
+Giriş arabelleğinin başlangıcına yönelik bir işaretçi.
 
-## <a name="egptr"></a>  basic_streambuf::egptr
+## <a name="egptr"></a>basic_streambuf:: egptr
 
-Bir korumalı işlevi yalnızca giriş arabelleği sonunu geçen bir işaretçi döndürür.
+Giriş arabelleğinin sonunu geçen bir işaretçi döndüren korumalı bir işlev.
 
 ```cpp
 char_type *egptr() const;
@@ -281,11 +281,11 @@ char_type *egptr() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yalnızca giriş arabelleği sonunu geçen bir işaretçi.
+İşaretçi yalnızca giriş arabelleğinin sonunu geçti.
 
-## <a name="epptr"></a>  basic_streambuf::epptr
+## <a name="epptr"></a>basic_streambuf:: epptr
 
-Bir korumalı işlevi yalnızca çıkış arabelleği sonunu geçen bir işaretçi döndürür.
+Yalnızca çıkış arabelleğinin sonunu geçen bir işaretçi döndüren korumalı bir işlev.
 
 ```cpp
 char_type *epptr() const;
@@ -293,11 +293,11 @@ char_type *epptr() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yalnızca çıkış arabelleği sonunu geçen bir işaretçi.
+Bir işaretçi yalnızca çıkış arabelleğinin sonunu geçti.
 
-## <a name="gbump"></a>  basic_streambuf::gbump
+## <a name="gbump"></a>basic_streambuf:: gbump
 
-Ekleyen korumalı işlevi *sayısı* için giriş arabelleği için sonraki işaretçisi.
+Giriş arabelleğinin sonraki işaretçisine *sayı* ekleyen korumalı bir işlev.
 
 ```cpp
 void gbump(int count);
@@ -305,12 +305,12 @@ void gbump(int count);
 
 ### <a name="parameters"></a>Parametreler
 
-*Sayısı*<br/>
-Tutarı işaretçi ilerleyin.
+*biriktirme*\
+İşaretçinin ilerleme miktarı.
 
-## <a name="getloc"></a>  basic_streambuf::getloc
+## <a name="getloc"></a>basic_streambuf:: getloc
 
-Basic_streambuf nesnenin yerel alır.
+Basic_streambuf nesnesinin yerel ayarını alır.
 
 ```cpp
 locale getloc() const;
@@ -322,7 +322,7 @@ Depolanan yerel ayar nesnesi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlgili bilgiler için bkz. [ios_base::getloc](../standard-library/ios-base-class.md#getloc).
+İlgili bilgiler için bkz. [ios_base:: getloc](../standard-library/ios-base-class.md#getloc).
 
 ### <a name="example"></a>Örnek
 
@@ -342,9 +342,9 @@ int main( )
 C
 ```
 
-## <a name="gptr"></a>  basic_streambuf::gptr
+## <a name="gptr"></a>basic_streambuf:: gptr
 
-Bir korumalı işlev giriş arabelleği sonraki öğeye bir işaretçi döndürür.
+Giriş arabelleğinin bir sonraki öğesine bir işaretçi döndüren korumalı bir işlev.
 
 ```cpp
 char_type *gptr() const;
@@ -352,11 +352,11 @@ char_type *gptr() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Giriş arabelleği sonraki öğeye bir işaretçi.
+Giriş arabelleğinin bir sonraki öğesine yönelik bir işaretçi.
 
-## <a name="imbue"></a>  basic_streambuf::imbue
+## <a name="imbue"></a>basic_streambuf:: imbue
 
-Korumalı sanal işlevi çağıran [pubimbue](#pubimbue).
+[Pubimbue](#pubimbue)tarafından çağrılan korumalı bir sanal işlev.
 
 ```cpp
 virtual void imbue(const locale& _Loc);
@@ -364,16 +364,16 @@ virtual void imbue(const locale& _Loc);
 
 ### <a name="parameters"></a>Parametreler
 
-*_Loc*<br/>
-Bir yerel ayar için bir başvuru.
+*_Loc*\
+Bir yerel ayara başvuru.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Hiçbir şey yapmamak için varsayılan davranıştır.
+Varsayılan davranış hiçbir şey yapmaz.
 
-## <a name="in_avail"></a>  basic_streambuf::in_avail
+## <a name="in_avail"></a>basic_streambuf::in_avail
 
-Arabellekteki okumak hazır olan öğelerin sayısını döndürür.
+Arabellekten okunmaya izin veren öğe sayısını döndürür.
 
 ```cpp
 streamsize in_avail();
@@ -381,11 +381,11 @@ streamsize in_avail();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Arabellekteki okumak hazır olan öğe sayısı.
+Arabellekten okunmaya izin veren öğe sayısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsa bir [okuyun konum](../standard-library/basic-streambuf-class.md) üye işlevinin döndürdüğü kullanılabilir [egptr](#egptr) - [gptr](#gptr). Aksi halde [showmanyc](#showmanyc).
+Bir [okuma konumu](../standard-library/basic-streambuf-class.md) varsa, üye işlevi [egptr](#egptr) - [gptr](#gptr)döndürür. Aksi takdirde, [showmanyc](#showmanyc)döndürür.
 
 ### <a name="example"></a>Örnek
 
@@ -405,25 +405,25 @@ int main( )
 }
 ```
 
-## <a name="int_type"></a>  basic_streambuf::int_type
+## <a name="int_type"></a>basic_streambuf::int_type
 
-Basic_streambuf kapsam içinde bir tür adı, bir şablon parametresi türlerini ilişkilendirir.
+Basic_streambuf Scope içindeki bir tür adını bir şablon parametresindeki türlerden biriyle ilişkilendirir.
 
 ```cpp
 typedef typename traits_type::int_type int_type;
 ```
 
-## <a name="off_type"></a>  basic_streambuf::off_type
+## <a name="off_type"></a>basic_streambuf::off_type
 
-Basic_streambuf kapsam içinde bir tür adı, bir şablon parametresi türlerini ilişkilendirir.
+Basic_streambuf Scope içindeki bir tür adını bir şablon parametresindeki türlerden biriyle ilişkilendirir.
 
 ```cpp
 typedef typename traits_type::off_type off_type;
 ```
 
-## <a name="op_eq"></a>  basic_streambuf::operator =
+## <a name="op_eq"></a>basic_streambuf:: operator =
 
-Bu nesnenin değerlerini birbirinden atar `basic_streambuf` nesne.
+Bu nesnenin değerlerini başka bir `basic_streambuf` nesneden atar.
 
 ```cpp
 basic_streambuf& operator=(const basic_streambuf& right);
@@ -431,16 +431,16 @@ basic_streambuf& operator=(const basic_streambuf& right);
 
 ### <a name="parameters"></a>Parametreler
 
-*sağ*<br/>
-Bir lvalue başvurusuna `basic_streambuf` değerleri bu nesneye atamak için kullanılan nesne.
+*Right*\
+Bu nesneye değer atamak için `basic_streambuf` kullanılan nesneye bir lvalue başvurusu.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Korumalı üye işleci alanından kopyalar *doğru* giriş arabelleği ve çıkış arabelleği kontrol işaretçileri. Ayrıca depolar `right.` [getloc()](#getloc) içinde `locale object`. Döndürür `*this`.
+Korumalı üye işleci, giriş arabelleğini ve çıkış arabelleğini denetleyen işaretçilerin *sağına* kopyalar. Ayrıca, `right.` içinde`locale object` [getloc ()](#getloc) depolar. Döndürür `*this`.
 
-## <a name="overflow"></a>  basic_streambuf::Overflow
+## <a name="overflow"></a>basic_streambuf:: overflow
 
-Yeni bir karakteri tam bir arabelleğe eklendiğinde çağrılabilir korumalı sanal işlev.
+Tam arabelleğe yeni bir karakter eklendiğinde çağrılabilen, korunan bir sanal işlev.
 
 ```cpp
 virtual int_type overflow(int_type _Meta = traits_type::eof());
@@ -448,34 +448,34 @@ virtual int_type overflow(int_type _Meta = traits_type::eof());
 
 ### <a name="parameters"></a>Parametreler
 
-*_Meta*<br/>
-Karakter arabelleğine ekleme veya **traits_type::**[eof](../standard-library/char-traits-struct.md#eof).
+*_Meta*\
+Arabelleğe eklenecek karakter veya **traits_type::** [EOF](../standard-library/char-traits-struct.md#eof).
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İşlev başarılı olursa, döndürür **traits_type::eof** veya bir özel durum oluşturur. Aksi halde **traits_type::**[not_eof](../standard-library/char-traits-struct.md#not_eof)(_ *Meta*). Döndürülecek varsayılan davranıştır **traits_type::eof**.
+İşlev başarılı olmazsa, **traits_type:: EOF** döndürür veya bir özel durum oluşturur. Aksi takdirde, **traits_type::** [Not_eof](../standard-library/char-traits-struct.md#not_eof)(_ *meta*) döndürür. Varsayılan davranış **traits_type:: EOF**döndürecek.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsa  *\_Meta* eşit karşılaştırmaz **traits_type::eof**, korumalı sanal üye işlevi endeavors öğe eklemek **traits_type::** [ to_char_type](../standard-library/char-traits-struct.md#to_char_type)(*\_Meta*) çıkış akışına içine. Bunu çeşitli yöntemlerle yapabilirsiniz:
+*Eğer\_meta* şuna eşit **traits_type:: EOF**, **traits_type::** [to_char_type](../standard-library/char-traits-struct.md#to_char_type)( *\_meta*) öğesini çıkışa eklemek için endeavors korumalı sanal üye işlevi ka. Bunu çeşitli yollarla yapabilirsiniz:
 
-- Varsa bir `write position` olan kullanılabilir, bu öğe yazma konumuna depolayabilir ve çıkış arabelleği için sonraki işaretçisine artırılacak.
+- Bir varsa `write position` , öğeyi yazma konumuna saklayabilir ve çıkış arabelleği için bir sonraki işaretçiyi artırabilirsiniz.
 
-- Çıkış arabelleği için yeni veya ek depolama alanı ayırarak bunu yazma konumunu kullanılabilir duruma getirebilirsiniz.
+- Çıktı arabelleği için yeni veya ek depolama alanı ayırarak bir yazma konumu kullanılabilir hale getirir.
 
-- Bu yazma konumunu kullanılabilir tarafından kullanıma, dış bazı hedef, bazı veya tüm öğeleri arasında başına yazmayı ve sonraki işaretçileri çıkış arabelleği için yapabilirsiniz.
+- Bir yazma konumunu, bazı dış hedeflere, bazı veya tüm öğeleri, çıkış arabelleğinin başlangıç ve sonraki işaretçileri arasında yazarak kullanılabilir hale getirebilirsiniz.
 
-İle birlikte sanal taşma işlevi [eşitleme](#sync) ve [underflow](#underflow) İşlevler, streambuf türetilmiş sınıf özelliklerini tanımlayan. Her bir türetilmiş sınıf taşma farklı uygulayabilir, ancak arabirim çağıran stream sınıfı ile aynıdır.
+[Eşitleme](#sync) ve [yetersiz](#underflow) yer işlevleriyle birlikte sanal taşma işlevi, streamarabelleğe türetilmiş sınıfın özelliklerini tanımlar. Türetilmiş her sınıf farklı taşma uygulayabilir, ancak çağıran Stream sınıfına sahip arabirim aynıdır.
 
-`overflow` Genel tarafından en sık çağrıldığında `streambuf` gibi işlev `sputc` ve `sputn` zaman put alanı dolu olduğundan, ancak stream sınıfları da dahil olmak üzere, diğer sınıflar çağırabilirsiniz `overflow` zaman.
+`streambuf` `sputc` `overflow` İşlevi, put alanı dolduğunda ve`sputn` gibi genel işlevler tarafından en sık çağrılır, ancak akış sınıfları dahil diğer sınıflar her zaman çağırabilir. `overflow`
 
-İşlev karakter arasında bir yerleştirme alanında tüketir `pbase` ve `pptr` işaretçileri ve sonra put alan yeniden başlatır. `overflow` İşlevi gerekir ayrıca tüketen `nCh` (varsa `nCh` değil `EOF`), veya sonraki çağrıda tüketilir şekilde karakter yeni alan yerleştirmek koymak isteyebilirsiniz.
+İşlevi, `pbase` ve `pptr` işaretçileri arasındaki put alanındaki karakterleri kullanır ve ardından put alanını yeniden başlatır. İşlevin Ayrıca kullanması `nCh` gerekir `nCh` (`EOF`değilse) veya bir sonraki çağrıda tüketilebilmesi için bu karakteri yeni put alanına koymak tercih edebilir. `overflow`
 
-Tüket tanımını türetilmiş sınıflar arasında değişir. Örneğin, `filebuf` sınıfı, karakter bir dosyaya yazar while `strstreambuf` sınıfı bunları kendi arabellekte tutar ve arabellek taşmasına çağrısına (arabellek dinamik olarak belirlendiyse) genişletir. Bu genişleme eski arabellek boşaltma ve yeni, daha büyük bir tane ile değiştirerek elde edilir. İşaretçileri gerektiğinde ayarlanır.
+Tüketme tanımı türetilmiş sınıflar arasında farklılık gösterir. Örneğin, `filebuf` sınıfı dosyalarını bir dosyaya yazar, `strstreambuf` ancak sınıf bu dosyaları arabellekte tutar ve (arabellek dinamik olarak belirlendiyse), taşmaya bir çağrıya yanıt olarak arabelleği genişletir. Bu genişleme, eski arabelleği serbest bırakarak ve yeni, daha büyük bir ile değiştirilerek elde edilir. İşaretçiler gerektiği şekilde ayarlanır.
 
-## <a name="pbackfail"></a>  basic_streambuf::pbackfail
+## <a name="pbackfail"></a>basic_streambuf::p backfail
 
-Bir öğe giriş akışa geri koymak çalışır bir korumalı sanal üye işlevi ardından sunun (sonraki işaretçisi tarafından işaret edilen) geçerli öğe.
+Giriş akışına bir öğe geri döndürmeye çalışan korumalı bir sanal üye işlevi, ardından bunu geçerli öğe yapın (sonraki işaretçi tarafından işaret edilen).
 
 ```cpp
 virtual int_type pbackfail(int_type _Meta = traits_type::eof());
@@ -483,26 +483,26 @@ virtual int_type pbackfail(int_type _Meta = traits_type::eof());
 
 ### <a name="parameters"></a>Parametreler
 
-*_Meta*<br/>
-Karakter arabelleğine ekleme veya **traits_type::**[eof](../standard-library/char-traits-struct.md#eof).
+*_Meta*\
+Arabelleğe eklenecek karakter veya **traits_type::** [EOF](../standard-library/char-traits-struct.md#eof).
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İşlev başarılı olursa, döndürür **traits_type::eof** veya bir özel durum oluşturur. Aksi takdirde, başka bir değer döndürür. Döndürülecek varsayılan davranıştır **traits_type::eof**.
+İşlev başarılı olmazsa, **traits_type:: EOF** döndürür veya bir özel durum oluşturur. Aksi takdirde, başka bir değer döndürür. Varsayılan davranış **traits_type:: EOF**döndürecek.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsa  *\_Meta* karşılaştırır eşit **traits_type::eof**, geri göndermek için etkili bir şekilde akış önce geçerli öğe zaten bir öğedir. Aksi takdirde, bu öğe tarafından değiştirilir **traits_type::**[to_char_type](../standard-library/char-traits-struct.md#to_char_type)(*\_Meta*). İşlevi, öğenin çeşitli yollarla geri koyabilirsiniz:
+Meta, **traits_type:: EOF**değerine eşitse, geri gönderme öğesi geçerli öğeden önceki akışta etkin bir şekilde olur.  *\_* Aksi takdirde, bu öğe **traits_type::** [to_char_type](../standard-library/char-traits-struct.md#to_char_type)( *\_meta*) ile değiştirilmiştir. İşlevi bir öğeyi çeşitli yollarla geri alabilir:
 
-- Putback konumu varsa, bu öğe putback konumda depolamak ve sonraki işaretçisi giriş arabelleği için azaltma.
+- Bir Putback konumu varsa, öğesini putback konumuna saklayabilir ve giriş arabelleği için bir sonraki işaretçiyi azalsaklayabilir.
 
-- Giriş arabelleği için yeni veya ek depolama alanı ayırarak bu putback konum kullanılabilir hale getirebilirsiniz.
+- Giriş arabelleği için yeni veya ek depolama alanı ayırarak bir Putback konumu kullanılabilir hale getirir.
 
-- Bir akış arabelleği için ortak bir giriş ve çıkış akışları, putback konum kullanılabilir tarafından kullanıma, dış bazı hedef, bazı veya tüm öğeleri arasında başına yazmayı ve sonraki işaretçileri çıkış arabelleği için zorlaştırabilir.
+- Ortak giriş ve Çıkış akışlarına sahip bir akış arabelleği için, bir geri alma konumunu, bazı dış hedeflere, bazı veya tüm öğeleri, çıkış arabelleğinin başlangıç ve sonraki işaretçileri arasında yazarak kullanılabilir hale getirebilirsiniz.
 
-## <a name="pbase"></a>  basic_streambuf::pbase
+## <a name="pbase"></a>basic_streambuf::p taban
 
-Çıkış arabelleği başlangıcına bir işaretçi döndüren korumalı bir işlev.
+Çıkış arabelleğinin başlangıcına bir işaretçi döndüren korumalı bir işlev.
 
 ```cpp
 char_type *pbase() const;
@@ -510,11 +510,11 @@ char_type *pbase() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Çıkış arabelleği başlangıcına bir işaretçi.
+Çıkış arabelleğinin başlangıcına yönelik bir işaretçi.
 
-## <a name="pbump"></a>  basic_streambuf::pbump
+## <a name="pbump"></a>basic_streambuf::p çarpın
 
-Ekleyen korumalı işlevi *sayısı* çıkış arabelleği için sonraki işaretçisi için.
+Çıkış arabelleğinin sonraki işaretçisine *sayı* ekleyen korumalı bir işlev.
 
 ```cpp
 void pbump(int count);
@@ -522,20 +522,20 @@ void pbump(int count);
 
 ### <a name="parameters"></a>Parametreler
 
-*Sayısı*<br/>
-Yazma konumunu ilerlemek karakter sayısı.
+*biriktirme*\
+Yazma konumunun ileri doğru taşınacağı karakter sayısı.
 
-## <a name="pos_type"></a>  basic_streambuf::pos_type
+## <a name="pos_type"></a>basic_streambuf::p os_type
 
-Basic_streambuf kapsam içinde bir tür adı, bir şablon parametresi türlerini ilişkilendirir.
+Basic_streambuf Scope içindeki bir tür adını bir şablon parametresindeki türlerden biriyle ilişkilendirir.
 
 ```cpp
 typedef typename traits_type::pos_type pos_type;
 ```
 
-## <a name="pptr"></a>  basic_streambuf::pptr
+## <a name="pptr"></a>basic_streambuf::p PTR
 
-Çıkış arabelleği sonraki öğeye bir işaretçi döndüren korumalı bir işlev.
+Çıkış arabelleğinin bir sonraki öğesine bir işaretçi döndüren korumalı bir işlev.
 
 ```cpp
 char_type *pptr() const;
@@ -543,11 +543,11 @@ char_type *pptr() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Çıkış arabelleği sonraki öğeye bir işaretçi.
+Çıkış arabelleğinin bir sonraki öğesine yönelik bir işaretçi.
 
-## <a name="pubimbue"></a>  basic_streambuf::pubimbue
+## <a name="pubimbue"></a>basic_streambuf::p ubimbue
 
-Basic_streambuf nesnenin yerel ayarlar.
+Basic_streambuf nesnesinin yerel ayarını ayarlar.
 
 ```cpp
 locale pubimbue(const locale& _Loc);
@@ -555,8 +555,8 @@ locale pubimbue(const locale& _Loc);
 
 ### <a name="parameters"></a>Parametreler
 
-*_Loc*<br/>
-Bir yerel ayar için bir başvuru.
+*_Loc*\
+Bir yerel ayara başvuru.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -564,15 +564,15 @@ Yerel ayar nesnesinde depolanan önceki değer.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi, _ depolar *Loc* çağrıları ve yerel ayar nesnesi [imbue](#imbue).
+Üye işlevi _ *loc* ' i yerel ayar nesnesinde depolar ve [Imbue](#imbue)çağırır.
 
 ### <a name="example"></a>Örnek
 
-Bkz: [basic_ios::imbue](../standard-library/basic-ios-class.md#imbue) kullanan bir örnek için `pubimbue`.
+Tarafından kullanılan `pubimbue`bir örnek için bkz. [basic_ios:: imbue](../standard-library/basic-ios-class.md#imbue) .
 
-## <a name="pubseekoff"></a>  basic_streambuf::pubseekoff
+## <a name="pubseekoff"></a>basic_streambuf::p ubseekoff
 
-Çağrıları [seekoff](#seekoff), korumalı türetilen bir sınıfta geçersiz kılınmış sanal işlev.
+Türetilmiş bir sınıfta geçersiz kılınan korumalı bir sanal işlev olan [seekoff](#seekoff)öğesini çağırır.
 
 ```cpp
 pos_type pubseekoff(off_type _Off,
@@ -582,26 +582,26 @@ pos_type pubseekoff(off_type _Off,
 
 ### <a name="parameters"></a>Parametreler
 
-*_Off*<br/>
-Arama için göreli konumunu *_Way*.
+*_Kapatma*\
+*_Yönteme*göre arama yapılacak konum.
 
-*_Way*<br/>
-İşlemleri için başlangıç noktası. Bkz: [seekdir](../standard-library/ios-base-class.md#seekdir) için olası değerler.
+*_Yol*\
+Dengeleme işlemleri için başlangıç noktası. Olası değerler için bkz. [seekdir](../standard-library/ios-base-class.md#seekdir) .
 
-*_Which*<br/>
-İşaretçisi konumunu modunu belirtir. Değiştirme okuma ve yazma konumları olanak tanımak için varsayılandır.
+*_Hangisi*\
+İşaretçi konumunun modunu belirtir. Varsayılan değer, okuma ve yazma konumlarını değiştirmenize izin verir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yeni bir konuma veya geçersiz akış konumunu döndürür ( [seekoff](#seekoff)(_ *kapalı*, `_Way`, `_Which`)).
+Yeni konumu veya geçersiz bir akış konumunu döndürür ( [seekoff](#seekoff)(_ *kapalı*, `_Way`, `_Which`)).
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşaretçi göreli olarak hareket *_Way*.
+İşaretçiyi *_Way*'e göre kaydırır.
 
-## <a name="pubseekpos"></a>  basic_streambuf::pubseekpos
+## <a name="pubseekpos"></a>basic_streambuf::p ubseekpos
 
-Çağrıları [seekpos](#seekpos), korunan sanal işlev türetilen bir sınıfta geçersiz kılınır ve geçerli işaretçisi konumuna sıfırlar.
+Türetilmiş bir sınıfta geçersiz kılınan korumalı bir sanal işlev olan [seekpos](#seekpos)'u çağırır ve geçerli işaretçi konumunu sıfırlar.
 
 ```cpp
 pos_type pubseekpos(pos_type _Sp, ios_base::openmode _Which = ios_base::in | ios_base::out);
@@ -609,23 +609,23 @@ pos_type pubseekpos(pos_type _Sp, ios_base::openmode _Which = ios_base::in | ios
 
 ### <a name="parameters"></a>Parametreler
 
-*_Sp*<br/>
-Arama konumu.
+*_Sp*\
+Arama yapılacak konum.
 
-*_Which*<br/>
-İşaretçisi konumunu modunu belirtir. Değiştirme okuma ve yazma konumları olanak tanımak için varsayılandır.
+*_Hangisi*\
+İşaretçi konumunun modunu belirtir. Varsayılan değer, okuma ve yazma konumlarını değiştirmenize izin verir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yeni bir konuma veya geçersiz akış konumu. Akış konumu geçersiz olup olmadığını belirlemek için dönüş değeri ile karşılaştırmak `pos_type(off_type(-1))`.
+Yeni konum veya geçersiz akış konumu. Akış konumunun geçersiz olup olmadığını anlamak için dönüş değerini ile `pos_type(off_type(-1))`karşılaştırın.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevinin döndürdüğü [seekpos](#seekpos)(_ *Sp*, `_Which`).
+Üye işlevi [seekpos](#seekpos)(_ *SP*, `_Which`) döndürür.
 
-## <a name="pubsetbuf"></a>  basic_streambuf::pubsetbuf
+## <a name="pubsetbuf"></a>basic_streambuf::p ubsetarabelleğe
 
-Çağrıları [setbuf](#setbuf), korumalı türetilen bir sınıfta geçersiz kılınmış sanal işlev.
+Türetilmiş bir sınıfta geçersiz kılınan korumalı bir sanal işlev olan [setarabelleğe](#setbuf)çağırır.
 
 ```cpp
 basic_streambuf<Elem, Tr> *pubsetbuf(
@@ -635,19 +635,19 @@ basic_streambuf<Elem, Tr> *pubsetbuf(
 
 ### <a name="parameters"></a>Parametreler
 
-*_Buffer*<br/>
-Bir işaretçi `char_type` bu örneklemesi için.
+*_Arabellek*\
+Bu örnek oluşturma `char_type` için bir işaretçi.
 
-*Sayısı*<br/>
-Arabellek boyutu.
+*biriktirme*\
+Arabelleğin boyutu.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Returns [setbuf](#setbuf)( `_Buffer`, `count`).
+[Setarabelleğe](#setbuf)( `_Buffer`, `count`) döndürür.
 
-## <a name="pubsync"></a>  basic_streambuf::pubsync
+## <a name="pubsync"></a>basic_streambuf::p ubsync
 
-Çağrıları [eşitleme](#sync), korunan sanal işlev türetilen bir sınıfta geçersiz kılınır ve bu arabellek ile ilişkili dış akış güncelleştirir.
+Türetilmiş bir sınıfta geçersiz kılınan korumalı bir sanal işlev olan [eşitleme](#sync)çağırır ve bu arabellekle ilişkili dış akışı güncelleştirir.
 
 ```cpp
 int pubsync();
@@ -655,11 +655,11 @@ int pubsync();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Döndürür [eşitleme](#sync) veya -1 hata.
+[Eşitleme](#sync) veya hata durumunda-1 döndürür.
 
-## <a name="sbumpc"></a>  basic_streambuf::sbumpc
+## <a name="sbumpc"></a>basic_streambuf:: ssekmeli c
 
-Okur ve taşıma akış işaretçisini geçerli öğeye döndürür.
+Akış işaretçisini taşıyarak geçerli öğeyi okur ve döndürür.
 
 ```cpp
 int_type sbumpc();
@@ -671,7 +671,7 @@ Geçerli öğe.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Okuma konumuna kullanılabilir değilse, üye işlevi döndürür **traits_type::**[to_int_type](../standard-library/char-traits-struct.md#to_int_type)( <strong>\*</strong> [gptr](#gptr)) ve giriş arabelleği için sonraki işaretçisi artırır. Aksi halde [uflow](#uflow).
+Bir okuma konumu varsa, üye işlevi **traits_type::** [to_int_type](../standard-library/char-traits-struct.md#to_int_type)( <strong>\*</strong> [gptr](#gptr)) döndürür ve giriş arabelleği için bir sonraki işaretçiyi arttırır. Aksi takdirde, [uflow](#uflow)döndürür.
 
 ### <a name="example"></a>Örnek
 
@@ -698,9 +698,9 @@ int main( )
 51
 ```
 
-## <a name="seekoff"></a>  basic_streambuf::seekoff
+## <a name="seekoff"></a>basic_streambuf:: seekoff
 
-Denetlenen akışlar için geçerli konumları alter dener ve korumalı sanal üye işlevi.
+Denetlenen akışlar için geçerli pozisyonları değiştirmeye çalışan korumalı bir sanal üye işlevi.
 
 ```cpp
 virtual pos_type seekoff(
@@ -711,36 +711,36 @@ virtual pos_type seekoff(
 
 ### <a name="parameters"></a>Parametreler
 
-*_Off*<br/>
-Arama için göreli konumunu *_Way*.
+*_Kapatma*\
+*_Yönteme*göre arama yapılacak konum.
 
-*_Way*<br/>
-İşlemleri için başlangıç noktası. Bkz: [seekdir](../standard-library/ios-base-class.md#seekdir) için olası değerler.
+*_Yol*\
+Dengeleme işlemleri için başlangıç noktası. Olası değerler için bkz. [seekdir](../standard-library/ios-base-class.md#seekdir) .
 
-*_Which*<br/>
-İşaretçisi konumunu modunu belirtir. Değiştirme okuma ve yazma konumları olanak tanımak için varsayılandır.
+*_Hangisi*\
+İşaretçi konumunun modunu belirtir. Varsayılan değer, okuma ve yazma konumlarını değiştirmenize izin verir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yeni bir konuma veya geçersiz akış konumunu döndürür ( `seekoff` (_ *kapalı*, `_Way`, `_Which`)).
+Yeni konumu ya da geçersiz bir akış konumunu döndürür ( `seekoff` (_ *off*, `_Way`, `_Which`)).
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yeni konumu şu şekilde belirlenir:
+Yeni konum aşağıdaki gibi belirlenir:
 
-- Varsa `_Way`  ==  `ios_base::beg`, yeni konuma stream yanı sıra _ başlangıcıdır *kapalı*.
+- İse `_Way` , == Yenikonum akışın başlangıcının ve _ kapalı olur.  `ios_base::beg`
 
-- Varsa `_Way`  ==  `ios_base::cur`, yeni geçerli akış konumu artı _ konumdur *kapalı*.
+- İse `_Way` , == Yenikonum geçerli akış konumu artı _ kapalı ' dır.  `ios_base::cur`
 
-- Varsa `_Way`  ==  `ios_base::end`, akış ve _ sonuna yeni konumudur *kapalı*.
+- İse `_Way` , == Yenikonum akışın sonu artı _ off olur.  `ios_base::end`
 
-Genellikle, **hangi & ios_base::in** olan sıfır olmayan, Giriş akışı etkilenir ve **hangi & ios_base::out** olan sıfır olmayan, çıkış akışına etkilenir. Bu parametrenin gerçek kullanım ancak türetilmiş akış arabellekleri arasında farklılık gösterir.
+Genellikle, **& ios_base:: ın** sıfır dışında olduğunda, giriş akışı etkilenir ve **hangi & ios_base:: Out** sıfır değilse, çıkış akışı etkilenir. Bu parametrenin gerçek kullanımı, türetilmiş akış arabellekleri arasında farklılık gösterir.
 
-Akış konum veya konumlarını değiştirme işlev başarılı olursa, akış konumu veya elde edilen akışı konumları birini döndürür. Aksi takdirde geçersiz akış konumu döndürür. Geçersiz akış konumu döndürmek için varsayılan davranıştır.
+İşlev, akış konumunu veya konumlarını değiştirmek için başarılı olursa, sonuçta elde edilen akış konumunu veya sonuç akış konumlarından birini döndürür. Aksi takdirde, geçersiz bir akış konumu döndürür. Varsayılan davranış, geçersiz bir akış konumu döndürmaktır.
 
-## <a name="seekpos"></a>  basic_streambuf::seekpos
+## <a name="seekpos"></a>basic_streambuf:: seekpos
 
-Denetlenen akışlar için geçerli konumları alter dener ve korumalı sanal üye işlevi.
+Denetlenen akışlar için geçerli pozisyonları değiştirmeye çalışan korumalı bir sanal üye işlevi.
 
 ```cpp
 virtual pos_type seekpos(pos_type _Sp, ios_base::openmode _Which = ios_base::in | ios_base::out);
@@ -748,27 +748,27 @@ virtual pos_type seekpos(pos_type _Sp, ios_base::openmode _Which = ios_base::in 
 
 ### <a name="parameters"></a>Parametreler
 
-*_Sp*<br/>
-Arama konumu.
+*_Sp*\
+Arama yapılacak konum.
 
-*_Which*<br/>
-İşaretçisi konumunu modunu belirtir. Değiştirme okuma ve yazma konumları olanak tanımak için varsayılandır.
+*_Hangisi*\
+İşaretçi konumunun modunu belirtir. Varsayılan değer, okuma ve yazma konumlarını değiştirmenize izin verir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yeni konumunu veya geçersiz akış konumu. Akış konumu geçersiz olup olmadığını belirlemek için dönüş değeri ile karşılaştırmak `pos_type(off_type(-1))`.
+Yeni konum veya geçersiz akış konumu. Akış konumunun geçersiz olup olmadığını anlamak için dönüş değerini ile `pos_type(off_type(-1))`karşılaştırın.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yeni konumudur _ *Sp*.
+Yeni konum _ *SP*'dir.
 
-Genellikle, **hangi & ios_base::in** olan sıfır olmayan, Giriş akışı etkilenir ve **hangi & ios_base::out** olan sıfır olmayan, çıkış akışına etkilenir. Bu parametrenin gerçek kullanım ancak türetilmiş akış arabellekleri arasında farklılık gösterir.
+Genellikle, **& ios_base:: ın** sıfır dışında olduğunda, giriş akışı etkilenir ve **hangi & ios_base:: Out** sıfır değilse, çıkış akışı etkilenir. Bu parametrenin gerçek kullanımı, türetilmiş akış arabellekleri arasında farklılık gösterir.
 
-Akış konum veya konumlarını değiştirme işlev başarılı olursa, akış konumu veya elde edilen akışı konumları birini döndürür. Aksi takdirde, bir geçersiz akış konumu (-1) döndürür. Geçersiz akış konumu döndürmek için varsayılan davranıştır.
+İşlev, akış konumunu veya konumlarını değiştirmek için başarılı olursa, sonuçta elde edilen akış konumunu veya sonuç akış konumlarından birini döndürür. Aksi takdirde, geçersiz bir akış konumu döndürür (-1). Varsayılan davranış, geçersiz bir akış konumu döndürmaktır.
 
-## <a name="setbuf"></a>  basic_streambuf::setbuf
+## <a name="setbuf"></a>basic_streambuf:: setarabelleğe
 
-Her türetilmiş akış arabelleği için bir işlemi belirli gerçekleştiren bir korumalı sanal üye işlevi.
+Her türetilmiş akış arabelleğine özgü bir işlem gerçekleştiren korumalı bir sanal üye işlevi.
 
 ```cpp
 virtual basic_streambuf<Elem, Tr> *setbuf(
@@ -778,23 +778,23 @@ virtual basic_streambuf<Elem, Tr> *setbuf(
 
 ### <a name="parameters"></a>Parametreler
 
-*_Buffer*<br/>
-Arabellek için işaretçi.
+*_Arabellek*\
+Arabellek işaretçisi.
 
-*Sayısı*<br/>
-Arabellek boyutu.
+*biriktirme*\
+Arabelleğin boyutu.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Döndürülecek varsayılan davranıştır **bu**.
+Varsayılan davranış **bunu**döndürmemelidir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bkz: [basic_filebuf](../standard-library/basic-filebuf-class.md). `setbuf` bir alan için bellek sunar `streambuf` kullanılacak nesne. Arabellek nasıl kullanıldığına türetilmiş sınıflarda tanımlanır.
+Bkz. [basic_filebuf](../standard-library/basic-filebuf-class.md). `setbuf``streambuf` nesnenin kullanacağı bir bellek alanı sağlar. Arabelleğin türetilmiş sınıflarda tanımlı olarak nasıl kullanıldığı.
 
-## <a name="setg"></a>  basic_streambuf::setg
+## <a name="setg"></a>basic_streambuf:: setg
 
-_ Depolayan bir korumalı işlevi *Gbeg* başlangıç işaretçisi olarak `_Gnext` sonraki işaretçisi olarak ve `_Gend` içinde giriş arabelleği sonu işaretçisi.
+_ *Gbeg* 'yi başlangıç işaretçisine, `_Gnext` sonraki işaretçiye ve `_Gend` giriş arabelleğinin bitiş işaretçisine depolayan korumalı bir işlev.
 
 ```cpp
 void setg(char_type* _Gbeg,
@@ -804,18 +804,18 @@ void setg(char_type* _Gbeg,
 
 ### <a name="parameters"></a>Parametreler
 
-*_Gbeg*<br/>
-Arabelleğin başına bir işaretçi.
+*_Gbeg*\
+Arabelleğin başlangıcına yönelik bir işaretçi.
 
-*_Gnext*<br/>
-Yere bir işaretçi arabellek ortasında.
+*_Gnext*\
+Arabelleğin ortasında bir yere işaretçi.
 
-*_Gend*<br/>
-Arabelleğin sonuna bir işaretçi.
+*_Gend*\
+Arabelleğin sonuna yönelik bir işaretçi.
 
-## <a name="setp"></a>  basic_streambuf::setp
+## <a name="setp"></a>basic_streambuf:: setp
 
-Depolayan bir korumalı işlevi *_Pbeg* başlangıç işaretçisi olarak ve *_Pend* içinde çıkış arabelleği sonu işaretçisi.
+Başlangıç İşaretçisinde *_Pbeg* depolayan ve çıkış arabelleğinin bitiş Işaretçisine *_bekleyen* korumalı bir işlev.
 
 ```cpp
 void setp(char_type* _Pbeg, char_type* _Pend);
@@ -823,15 +823,15 @@ void setp(char_type* _Pbeg, char_type* _Pend);
 
 ### <a name="parameters"></a>Parametreler
 
-*_Pbeg*<br/>
-Arabelleğin başına bir işaretçi.
+*_Pbeg*\
+Arabelleğin başlangıcına yönelik bir işaretçi.
 
-*_Pend*<br/>
-Arabelleğin sonuna bir işaretçi.
+*_Beklet*\
+Arabelleğin sonuna yönelik bir işaretçi.
 
-## <a name="sgetc"></a>  basic_streambuf::sgetc
+## <a name="sgetc"></a>basic_streambuf:: sgetc
 
-Geçerli öğe akışta konumu değiştirmeden döndürür.
+Akışta konum değişikliği yapmadan geçerli öğeyi döndürür.
 
 ```cpp
 int_type sgetc();
@@ -843,7 +843,7 @@ Geçerli öğe.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Okuma konumuna kullanılabilir değilse, üye işlevi döndürür **traits_type::**[to_int_type](../standard-library/char-traits-struct.md#to_int_type)( `*` [gptr](#gptr)). Aksi halde [underflow](#underflow).
+Bir okuma konumu varsa, üye işlevi **traits_type::** [to_int_type](../standard-library/char-traits-struct.md#to_int_type)( `*` [gptr](#gptr)) döndürür. Aksi takdirde, bu, [yetersiz kalması](#underflow)sonucunu döndürür.
 
 ### <a name="example"></a>Örnek
 
@@ -865,11 +865,11 @@ int main( )
 }
 ```
 
-## <a name="sgetn"></a>  basic_streambuf::sgetn
+## <a name="sgetn"></a>basic_streambuf:: sgetn
 
-En fazla ayıklar *sayısı* karakterler giriş ara bellekten ve sağlanan arabelleğinde depolar *ptr*.
+Giriş arabelleğinden karakter *sayısına* kadar ayıklar ve bunları, belirtilen arabellek *PTR*içinde depolar.
 
-Geçirilen değerlerin doğru olduğunu kontrol etmek için arayan olmasına olduğundan bu güvensiz olabilecek bir yöntemdir.
+Bu yöntem, geçilen değerlerin doğru olup olmadığını denetlemek için çağrıyı yapana bağlı olduğundan güvenli olmayabilir.
 
 ```cpp
 streamsize sgetn(
@@ -879,19 +879,19 @@ streamsize sgetn(
 
 ### <a name="parameters"></a>Parametreler
 
-*ptr*<br/>
+*kaydetmeye*\
 Ayıklanan karakterleri içeren arabellek.
 
-*Sayısı*<br/>
+*biriktirme*\
 Okunacak öğe sayısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Öğe sayısını okuyun. Bkz: [streamsize](../standard-library/ios-typedefs.md#streamsize) daha fazla bilgi için.
+Okunan öğe sayısı. Daha fazla bilgi için bkz. [streamsize](../standard-library/ios-typedefs.md#streamsize) .
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevinin döndürdüğü [xsgetn](#xsgetn)( `ptr`, `count`).
+Üye işlevi, [xsgetn](#xsgetn)( `ptr`, `count`) döndürür.
 
 ### <a name="example"></a>Örnek
 
@@ -920,9 +920,9 @@ int main()
 }
 ```
 
-## <a name="showmanyc"></a>  basic_streambuf::showmanyc
+## <a name="showmanyc"></a>basic_streambuf:: showmanyc
 
-Girdi akışından ayıklanabileceği ve program belirsiz bir bekleme tabi olmayacağı olun karakter sayısını döndüren bir korumalı sanal üye işlevi.
+Giriş akışından ayıklanabilen karakter sayısının sayısını döndüren ve programın sonsuz bir beklemeye tabi olmamasını sağlamak için korunan bir sanal üye işlevi.
 
 ```cpp
 virtual streamsize showmanyc();
@@ -930,11 +930,11 @@ virtual streamsize showmanyc();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Sıfır döndürülecek varsayılan davranışıdır.
+Varsayılan davranış sıfır değerini döndürmemelidir.
 
-## <a name="snextc"></a>  basic_streambuf::snextc
+## <a name="snextc"></a>basic_streambuf:: snextc
 
-Geçerli öğe okur ve aşağıdaki öğeyi döndürür.
+Geçerli öğeyi okur ve aşağıdaki öğeyi döndürür.
 
 ```cpp
 int_type snextc();
@@ -946,7 +946,7 @@ Akıştaki sonraki öğe.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlev çağrıları [sbumpc](#sbumpc) ve bu işlev döndürürse **traits_type::**[eof](../standard-library/char-traits-struct.md#eof), döndürür **traits_type::eof**. Aksi halde [sgetc](#sgetc).
+Üye işlevi [ssekmeli c](#sbumpc) çağırır ve bu işlev **traits_type::** [EOF](../standard-library/char-traits-struct.md#eof)döndürürse, **traits_type:: EOF**döndürür. Aksi takdirde, [sgetc](#sgetc)döndürür.
 
 ### <a name="example"></a>Örnek
 
@@ -972,9 +972,9 @@ aa
 aa97
 ```
 
-## <a name="sputbackc"></a>  basic_streambuf::sputbackc
+## <a name="sputbackc"></a>basic_streambuf:: sputbackc
 
-Stream'de bir char_type koyar.
+Akışa bir char_type koyar.
 
 ```cpp
 int_type sputbackc(char_type _Ch);
@@ -982,16 +982,16 @@ int_type sputbackc(char_type _Ch);
 
 ### <a name="parameters"></a>Parametreler
 
-*_Ch*<br/>
+*_Ch*\
 Karakter.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir karakter ya da hata verir.
+Karakteri veya hatayı döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Putback konumu varsa ve *_Ch* karşılaştırır sonraki işaretçiyi döndürür ve giriş arabelleği için üye işlevi azaltır, bu konumda depolanan bir karaktere eşit **traits_type::** [ to_int_type](../standard-library/char-traits-struct.md#to_int_type)( `_Ch`). Aksi halde [pbackfail](#pbackfail)( `_Ch`).
+Bir Putback konumu kullanılabiliyorsa ve *_Ch* , bu konumda depolanan karakter ile eşit olarak karşılaştırıyorsa, üye işlevi giriş arabelleği için bir sonraki işaretçiyi azaltır ve **traits_type::** [to_int_type](../standard-library/char-traits-struct.md#to_int_type)( `_Ch`) döndürür. Aksi takdirde, [pbackfail](#pbackfail)( `_Ch`) döndürür.
 
 ### <a name="example"></a>Örnek
 
@@ -1020,9 +1020,9 @@ int main( )
 }
 ```
 
-## <a name="sputc"></a>  basic_streambuf::sputc
+## <a name="sputc"></a>basic_streambuf:: sputc
 
-Bir karakter akışı halinde yerleştirir.
+Akışa bir karakter koyar.
 
 ```cpp
 int_type sputc(char_type _Ch);
@@ -1030,7 +1030,7 @@ int_type sputc(char_type _Ch);
 
 ### <a name="parameters"></a>Parametreler
 
-*_Ch*<br/>
+*_Ch*\
 Karakter.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -1039,7 +1039,7 @@ Başarılı olursa karakteri döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsa bir `write position` , kullanılabilir üye işlevi depoları *_Ch* çıkış arabelleği için sonraki işaretçisi yazma konumu artırır ve döndürür **traits_type::**[to_int_type ](../standard-library/char-traits-struct.md#to_int_type)( `_Ch`). Aksi halde [taşma](#overflow)( `_Ch`).
+Bir `write position` varsa, üye işlevi *_Ch* 'yi yazma konumunda depolar, çıkış arabelleği için sonraki işaretçiyi artırır ve **traits_type::** [to_int_type](../standard-library/char-traits-struct.md#to_int_type)( `_Ch`) döndürür. Aksi takdirde, [taşma](#overflow)( `_Ch`) döndürür.
 
 ### <a name="example"></a>Örnek
 
@@ -1063,7 +1063,7 @@ a
 a
 ```
 
-## <a name="sputn"></a>  basic_streambuf::sputn
+## <a name="sputn"></a>basic_streambuf:: sputn
 
 Akışa bir karakter dizesi koyar.
 
@@ -1073,19 +1073,19 @@ streamsize sputn(const char_type* ptr, streamsize count);
 
 ### <a name="parameters"></a>Parametreler
 
-*ptr*<br/>
+*kaydetmeye*\
 Karakter dizesi.
 
-*Sayısı*<br/>
+*biriktirme*\
 Karakter sayısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Aslında akışa eklenen karakter sayısı.
+Akışa gerçekten akışa yerleştirilmiş olan karakter sayısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevinin döndürdüğü [xsputn](#xsputn)( `ptr`, `count`). Daha fazla bilgi için bu üyeye ilişkin açıklamalar bölümüne bakın.
+Üye işlevi [xsputn](#xsputn)( `ptr`, `count`) döndürür. Daha fazla bilgi için bu üyenin açıklamalar bölümüne bakın.
 
 ### <a name="example"></a>Örnek
 
@@ -1109,9 +1109,9 @@ test
 4
 ```
 
-## <a name="stossc"></a>  basic_streambuf::stossc
+## <a name="stossc"></a>basic_streambuf:: stossc
 
-Akıştaki geçerli öğe geçmiş taşıyın.
+Akıştaki geçerli öğeyi geçmiş olarak taşıyın.
 
 ```cpp
 void stossc();
@@ -1119,7 +1119,7 @@ void stossc();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlev çağrıları [sbumpc](#sbumpc). Bir uygulama olmadığına dikkat edin, bu üye işlevi sağlamak için gereklidir.
+Üye işlevi [stamponc](#sbumpc)çağırır. Bu üye işlevi sağlamak için bir uygulamanın gerekli olmadığına unutmayın.
 
 ### <a name="example"></a>Örnek
 
@@ -1140,9 +1140,9 @@ int main( )
 }
 ```
 
-## <a name="sungetc"></a>  basic_streambuf::sungetc
+## <a name="sungetc"></a>basic_streambuf:: sungetc
 
-Bir karakter akıştan alır.
+Akıştan bir karakter alır.
 
 ```cpp
 int_type sungetc();
@@ -1150,11 +1150,11 @@ int_type sungetc();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Karakter ya da hata döndürür.
+Karakteri ya da başarısızlığı döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye putback konumu varsa, döndürür ve giriş arabelleği için sonraki işaretçisi azaltır işlev `traits_type::` [to_int_type](../standard-library/char-traits-struct.md#to_int_type)( `*` [gptr](#gptr)). Ancak, her zaman geçerli arabelleğini durumda yakalanabilir böylece son karakter okuma belirlemek mümkün değildir. Bu durum geçerlidir sonra işlevi döndürür [pbackfail](#pbackfail). Bu durumu önlemek için yeniden yerleştirin ve çağırmak için karakter izlemek `sputbackc(ch)`, sağlanan başarısız olmasına neden olmaz, bu akış, başında çağırmaz ve birden fazla karakter geri koymak çalışmayın.
+Bir Putback konumu kullanılabiliyorsa, üye işlevi giriş arabelleği için bir sonraki işaretçiyi azaltır `traits_type::`ve [to_int_type](../standard-library/char-traits-struct.md#to_int_type)( `*` [gptr](#gptr)) döndürür. Ancak, geçerli arabelleğin yakalanabilmesi için son karakterin okunmasının belirlenmesi her zaman mümkün değildir. Bu doğruysa, işlev [pbackfail](#pbackfail)değerini döndürür. Bu durumdan kaçınmak için, geri dönüp çağrılacak `sputbackc(ch)`karakteri takip edin, bu da başarısız olmayacak ve bu, akışın başlangıcında çağırmazsınız ve birden fazla karakter geri yerleştirmenize çalışmayın.
 
 ### <a name="example"></a>Örnek
 
@@ -1190,9 +1190,9 @@ int main( )
 }
 ```
 
-## <a name="swap"></a>  basic_streambuf::Swap
+## <a name="swap"></a>basic_streambuf:: swap
 
-Bu nesne için sağlanan değerler değerleri değiştirir `basic_streambuf` nesne.
+Bu nesnedeki değerleri, belirtilen `basic_streambuf` nesnedeki değerler için değiştirir.
 
 ```cpp
 void swap(basic_streambuf& right);
@@ -1202,15 +1202,15 @@ void swap(basic_streambuf& right);
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|*sağ*|Bir lvalue başvurusuna `basic_streambuf` değerleri değişimi için kullanılan nesne.|
+|*Right*|Değer değişimi için kullanılan `basic_streambuf` nesneye bir lvalue başvurusu.|
 
 ### <a name="remarks"></a>Açıklamalar
 
-Korumalı üye işlevi değiştirir ile *doğru* denetleme işaretçileri `input buffer` ve `output buffer`. Ayrıca birbiriyle değiştirir `right.` [getloc()](#getloc) ile `locale` nesne.
+Korumalı üye işlevi, `input buffer` ve ' i  `output buffer`denetleyen tüm işaretçilerle birlikte değiş tokuş eder. Ayrıca, `right.` nesnesiilegetloc()öğesinidedeğiştokuşeder.`locale` [](#getloc)
 
-## <a name="sync"></a>  basic_streambuf::Sync
+## <a name="sync"></a>basic_streambuf:: Sync
 
-Denetlenen akışları ilişkili herhangi bir dış akışlarla eşitlemeye çalışır korumalı bir sanal işlev.
+Denetlenen akışları ilişkili dış akışlarla eşitlemeye çalışan korumalı bir sanal işlev.
 
 ```cpp
 virtual int sync();
@@ -1218,23 +1218,23 @@ virtual int sync();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İşlev başarılı ise -1 döndürür. Sıfır döndürülecek varsayılan davranışıdır.
+İşlev başarılı olmazsa,-1 döndürür. Varsayılan davranış sıfır değerini döndürmemelidir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`sync` çıkış arabelleği için başlangıç ve sonraki işaretçileri arasında herhangi bir öğe kullanıma yazma içerir. Sonraki arasında herhangi bir öğe geri yerleştirme içermeyen ve son giriş arabellek için işaretçi.
+`sync`çıkış arabelleği için başlangıç ve sonraki işaretçiler arasındaki öğelerin yazılmasını içerir. Giriş arabelleğinin sonraki ve bitiş işaretçileri arasında herhangi bir öğenin geri yerleştirilmesi gerekmez.
 
-## <a name="traits_type"></a>  basic_streambuf::traits_type
+## <a name="traits_type"></a>basic_streambuf::traits_type
 
-Bir tür adıyla ilişkilendirir **Tr** şablon parametresi.
+Bir tür adını **tr** şablon parametresiyle ilişkilendirir.
 
 ```cpp
 typedef Tr traits_type;
 ```
 
-## <a name="uflow"></a>  basic_streambuf::uflow
+## <a name="uflow"></a>basic_streambuf:: uflow
 
-Geçerli öğe girdi akışından ayıklar korumalı bir sanal işlev.
+Giriş akışından geçerli öğeyi çıkaran korumalı bir sanal işlev.
 
 ```cpp
 virtual int_type uflow();
@@ -1246,19 +1246,19 @@ Geçerli öğe.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Korumalı sanal üye işlevi, geçerli öğe ayıklamak dener **ch** giriş akışından sonra geçerli stream konumuna ilerleyin ve öğenin iade **traits_type::** [ to_int_type](../standard-library/char-traits-struct.md#to_int_type)( **ch**). Bunu çeşitli yöntemlerle yapabilirsiniz:
+Korumalı sanal üye işlevi, giriş akışından o **geçerli öğeyi çıkarmaya** çalışır, sonra geçerli akış konumunu ilerletin ve öğeyi **traits_type::** [to_int_type](../standard-library/char-traits-struct.md#to_int_type)( **ch**) olarak döndürür. Bunu çeşitli yollarla yapabilirsiniz:
 
-- Okuma konumuna kullanılabilir haldeyse, sürdüğünü **ch** öğesi salt okunur bir konumda depolanan ve giriş arabelleği için sonraki işaretçisi ilerler.
+- Bir okuma konumu varsa, okuma konumunda depolanan öğe **olarak girer** ve giriş arabelleği için sonraki işaretçiyi ilerletir.
 
-- Bir öğeyi doğrudan, bir dış kaynaktan okumak ve değeri olarak teslim **ch**.
+- Bir öğeyi bir dış kaynaktan doğrudan okuyabilir ve bu değeri **ch**değeri olarak teslim edebilir.
 
-- Ortak bir giriş ve çıkış akışları ile bir akış arabelleği için bir okuma konumuna kullanılabilir tarafından kullanıma, dış bazı hedef, bazı veya tüm öğeleri arasında başına yazmayı ve sonraki işaretçileri çıkış arabelleği için zorlaştırabilir. Veya yeni veya ek depolama için giriş arabelleği ayırabilirsiniz. İşlev daha sonra bir dış kaynaktan bir veya daha fazla öğe okur.
+- Ortak giriş ve Çıkış akışlarına sahip bir akış arabelleği için, bir okuma konumunu, bazı dış hedeflere, bazı veya tüm öğeleri, çıkış arabelleğinin başlangıç ve sonraki işaretçileri arasında yazarak kullanılabilir hale getirebilirsiniz. Ya da giriş arabelleği için yeni veya ek depolama alanı ayırabilirler. Daha sonra işlevi, bazı dış kaynaklardan, bir veya daha fazla öğeden ' de okur.
 
-İşlev başarılı olursa, döndürür **traits_type::**[eof](../standard-library/char-traits-struct.md#eof), veya bir özel durum oluşturur. Aksi takdirde, geçerli öğe döndürür `ch` yukarıda açıklandığı gibi giriş akışında dönüştürülür ve giriş arabelleği için sonraki işaretçisi ilerler. Çağırmak için varsayılan davranıştır [underflow](#underflow) ve bu işlev döndürürse **traits_type::eof**döndürülmesini **traits_type::eof**. Aksi halde, işlev geçerli öğeyi döndürür **ch** giriş akışında dönüştürülür daha önce açıklandığı gibi ve giriş arabelleği için sonraki işaretçisi ilerler.
+İşlev başarılı olmazsa, **traits_type::** [EOF](../standard-library/char-traits-struct.md#eof)döndürür veya bir özel durum oluşturur. Aksi halde, yukarıda açıklandığı gibi dönüştürülmüş `ch` olarak çevrilmiş şekilde, giriş akışındaki geçerli öğeyi döndürür ve giriş arabelleği için sonraki işaretçiyi ilerletir. Varsayılan davranış, [yetersiz kalması](#underflow) ve bu işlev **traits_type:** : EOF döndürürse **traits_type:: EOF**döndürmek için kullanılır. Aksi takdirde, işlev giriş akışında **ch** öğesini döndürür, daha önce açıklandığı gibi dönüştürülür ve giriş arabelleği için sonraki işaretçiyi ilerletir.
 
-## <a name="underflow"></a>  basic_streambuf::underflow
+## <a name="underflow"></a>basic_streambuf:: yetersiz
 
-Korumalı, geçerli öğe girdi akışından ayıklanacak sanal işlev.
+Geçerli öğeyi giriş akışından ayıklamak için korumalı, sanal işlev.
 
 ```cpp
 virtual int_type underflow();
@@ -1270,27 +1270,27 @@ Geçerli öğe.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Korumalı sanal üye işlevi endeavors geçerli öğe ayıklanacak **ch** giriş akışından ilerledikten olmadan geçerli akış konumu ve olarak iade `traits_type::` [to_int_type](../standard-library/char-traits-struct.md#to_int_type)() **ch**). Bunu çeşitli yöntemlerle yapabilirsiniz:
+Korumalı sanal üye işlevi, geçerli akış konumunu ilerlemeden ve bunu [to_int_type](../standard-library/char-traits-struct.md#to_int_type)( **ch**) olarak `traits_type::`döndürecek şekilde, **geçerli öğeyi giriş** akışından ayıklamak için endeavors. Bunu çeşitli yollarla yapabilirsiniz:
 
-- Okuma konumuna varsa **ch** salt okunur bir konumda depolanan bir öğe. Bunun hakkında daha fazla bilgi için Açıklamalar bölümüne bakın. [basic_streambuf sınıfı](../standard-library/basic-streambuf-class.md).
+- Bir okuma konumu varsa **ch** , okuma konumunda saklanan öğedir. Bunun hakkında daha fazla bilgi için [Basic_streambuf sınıfının](../standard-library/basic-streambuf-class.md)açıklamalar bölümüne bakın.
 
-- Ardından, bir veya daha fazla öğe bir dış kaynaktan okunurken giriş arabelleği için yeni veya ek depolama alanı ayırarak bunu okuyun konum kullanılabilir hale getirebilirsiniz. Bunun hakkında daha fazla bilgi için Açıklamalar bölümüne bakın. [basic_streambuf sınıfı](../standard-library/basic-streambuf-class.md).
+- Giriş arabelleği için yeni veya ek depolama alanı ayırarak, daha sonra bazı dış kaynaklardan, bir veya daha fazla öğeden okunarak bir okuma konumu kullanılabilir hale getirir. Bunun hakkında daha fazla bilgi için [Basic_streambuf sınıfının](../standard-library/basic-streambuf-class.md)açıklamalar bölümüne bakın.
 
-İşlev başarılı olursa, döndürür `traits_type::` [eof](../standard-library/char-traits-struct.md#eof) `()` veya bir özel durum oluşturur. Aksi takdirde, daha önce açıklandığı gibi geçerli öğe dönüştürülerek giriş akışına döndürür. Döndürülecek varsayılan davranıştır `traits_type::eof()`.
+İşlev başarılı olmazsa, `traits_type::` [EOF](../standard-library/char-traits-struct.md#eof) `()` döndürür veya bir özel durum oluşturur. Aksi halde, daha önce açıklandığı gibi çevrilmiş şekilde, giriş akışındaki geçerli öğeyi döndürür. Varsayılan davranış `traits_type::eof()`döndürülür.
 
-Sanal `underflow` işlevi ile [eşitleme](#sync) ve [taşma](#overflow) İşlevler, özelliklerini tanımlayan `streambuf`-türetilmiş sınıf. Her bir türetilmiş sınıf uygulayabilir `underflow` farklı, ancak arabirim çağıran stream sınıfı ile aynıdır.
+[Eşitleme](#sync) ve `underflow` [taşma](#overflow) işlevleri ile sanal işlev, `streambuf`-türetilmiş sınıfın özelliklerini tanımlar. Her türetilmiş sınıf farklı şekilde `underflow` uygulayabilir, ancak çağıran Stream sınıfına sahip arabirim aynı olur.
 
-`underflow` Genel tarafından en sık çağrıldığında `streambuf` gibi işlev [sgetc](#sgetc) ve [sgetn](#sgetn) zaman get alan boşsa, ancak stream sınıfları da dahil olmak üzere, diğer sınıfların çağırabilir `underflow` zaman.
+[](#sgetn) `underflow` `streambuf` [](#sgetc) İşlevi, Get alanı boş olduğunda en sık sgetc ve sgetn gibi genel işlevlerle çağrılır, ancak Stream sınıfları dahil diğer sınıflar her zaman çağırabilir. `underflow`
 
-`underflow` İşlevi, giriş kaynağı karakteri ile get alanı sağlar. Get alan karakterler içeriyorsa `underflow` ilk karakteri döndürür. Get alan boşsa, get alanı doldurur ve (Bu veriler get alanında dışına) sonraki karakteri döndürür. Daha fazla karakter kullanılabilir olduğunda, ardından `underflow` döndürür `EOF` ve get alanın boş bırakır.
+`underflow` İşlevi, giriş kaynağındaki karakterlerle Get alanını sağlar. Get alanı karakterler içeriyorsa, `underflow` ilk karakteri döndürür. Get alanı boşsa, Get alanını doldurur ve sonraki karakteri (get alanında bırakır) döndürür. Kullanılabilecek daha fazla karakter yoksa, `underflow` `EOF` Get alanını boş bırakır.
 
-İçinde `strstreambuf` sınıfı `underflow` ayarlar [egptr](#egptr) işaretçisi için bir çağrı tarafından dinamik olarak ayrılan erişim depolama `overflow`.
+Sınıfında, birçağrısıyla`overflow`dinamik olarak ayrılan depolamaya erişmek için [egptr](#egptr) işaretçisini ayarlar. `underflow` `strstreambuf`
 
-## <a name="xsgetn"></a>  basic_streambuf::xsgetn
+## <a name="xsgetn"></a>basic_streambuf:: xsgetn
 
-Korumalı öğeleri girdi akışından ayıklanacak sanal işlev.
+Giriş akışından öğeleri ayıklamak için korumalı, sanal işlev.
 
-Geçirilen değerlerin doğru olduğunu kontrol etmek için arayan olmasına olduğundan bu güvensiz olabilecek bir yöntemdir.
+Bu yöntem, geçilen değerlerin doğru olup olmadığını denetlemek için çağrıyı yapana bağlı olduğundan güvenli olmayabilir.
 
 ```cpp
 virtual streamsize xsgetn(
@@ -1300,10 +1300,10 @@ virtual streamsize xsgetn(
 
 ### <a name="parameters"></a>Parametreler
 
-*ptr*<br/>
+*kaydetmeye*\
 Ayıklanan karakterleri içeren arabellek.
 
-*Sayısı*<br/>
+*biriktirme*\
 Ayıklanacak öğe sayısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -1312,11 +1312,11 @@ Ayıklanan öğe sayısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Korumalı sanal üye işlevi kadar ayıklar *sayısı* giriş akışından öğeleri olarak da, yinelenen çağrısına [sbumpc](#sbumpc)ve dizi başında depolar *ptr*. Aslında ayıklanan öğelerin sayısını döndürür.
+Korumalı sanal üye işlevi, giriş akışındaki öğeleri *saymak* için, yinelenen [ssekmeli c](#sbumpc)çağrıları tarafından olduğu gibi ayıklar ve bunları *PTR*'den başlayan dizide depolar. Aslında ayıklanan öğe sayısını döndürür.
 
-## <a name="xsputn"></a>  basic_streambuf::xsputn
+## <a name="xsputn"></a>basic_streambuf:: xsputn
 
-Korumalı öğeleri çıkış akımına eklenecek sanal işlev.
+Çıkış akışına öğe eklemek için korumalı, sanal işlev.
 
 ```cpp
 virtual streamsize xsputn(const char_type* ptr, streamsize count);
@@ -1324,22 +1324,22 @@ virtual streamsize xsputn(const char_type* ptr, streamsize count);
 
 ### <a name="parameters"></a>Parametreler
 
-*ptr*<br/>
-Öğeleri eklemeye yönelik işaretçi.
+*kaydetmeye*\
+Eklenecek öğelere yönelik işaretçi.
 
-*Sayısı*<br/>
+*biriktirme*\
 Eklenecek öğe sayısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Aslında akışa eklenen öğe sayısı.
+Gerçekten akışa ekli olan öğe sayısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Korumalı sanal üye işlevi en fazla ekler *sayısı* yinelenen çağrıları gibi tarafından öğeye çıkış akışı [sputc](#sputc), dizinin başından *ptr*. Karakterleri çıkış akışına içine ekleme kez durdurulur *sayısı* karakter yazılı, veya çağırma `sputc( count)` döndürecekti `traits::eof()`. Aslında eklenen öğelerin sayısını döndürür.
+Korumalı sanal üye işlevi,, *PTR*'den başlayan diziden yinelenen [sputc](#sputc)çağrıları tarafından gösterildiği gibi, çıkış akışına en *fazla öğe ekler* . Çıkış akışına karakter ekleme, tüm *sayma* karakterleri yazıldıktan sonra veya çağırma `sputc( count)` geri dönebilmesine `traits::eof()`sonra duraklar. Gerçekte ekli olan öğe sayısını döndürür.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
-[iostream Programlaması](../standard-library/iostream-programming.md)<br/>
-[iostreams Kuralları](../standard-library/iostreams-conventions.md)<br/>
+[C++ Standart kitaplıkta Iş parçacığı güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)\
+[iostream programlama](../standard-library/iostream-programming.md)\
+[iostreams Kuralları](../standard-library/iostreams-conventions.md)

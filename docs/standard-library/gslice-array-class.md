@@ -6,16 +6,16 @@ f1_keywords:
 helpviewer_keywords:
 - gslice_array class
 ms.assetid: ad1b4514-b14a-4baf-a293-d5a8e8674c75
-ms.openlocfilehash: 1485b68f29651c0c42048fea02a8320ced8748aa
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 37c54d09fdfe920c832c4baa7984fee4e090d04a
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62159567"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68448929"
 ---
 # <a name="gslicearray-class"></a>gslice_array Sınıfı
 
-Genel bir valarray dilim tarafından tanımlanan alt diziler arasındaki işlemleri sağlayarak genel dilimi nesneleri destekleyen bir iç, yardımcı Şablon sınıfı.
+Bir valarray genel dilimi tarafından tanımlanan alt küme dizileri arasında işlemler sağlayarak genel dilim nesnelerini destekleyen iç, yardımcı şablon sınıfı.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -54,15 +54,15 @@ public:
 
 ## <a name="remarks"></a>Açıklamalar
 
-Sınıfı bir nesneye bir başvuru depolayan nesneyi tanımlar `va` sınıfın [valarray](../standard-library/valarray-class.md)**\<türü >**, nesneyle birlikte `gs` sınıfın [ gslice](../standard-library/gslice-class.md) seçim yapılacak öğe dizisi açıklayan `valarray<Type>` nesne.
+Sınıfı, `va` [valarray](../standard-library/valarray-class.md) `gs` [](../standard-library/gslice-class.md) **Type>sınıfınınbirnesnesinebirbaşvurudepolayanbirnesnetanımlarvebirgslicesınıfınınarasındanseçilecek\<** öğelerin dizisini açıklayan bir nesneyle birlikte `valarray<Type>` nesnesi.
 
-Oluşturmak bir `gslice_array<Type>` biçiminde bir ifade yazarak yalnızca nesne [va&#91;gs&#93;](../standard-library/valarray-class.md#op_at). Gslice_array sınıfı üye işlevleri sonra karşılık gelen işlev imzası için tanımlanan gibi davranmasını `valarray<Type>`dışında yalnızca seçilen öğelerin sırası etkilenmez.
+Yalnızca form `gslice_array<Type>` [VA&#91;GS&#93;](../standard-library/valarray-class.md#op_at)ifadesi yazarak bir nesne oluşturursunuz. Gslice_array sınıfının üye işlevleri, için `valarray<Type>`tanımlanan karşılık gelen işlev imzaları gibi davranır, ancak yalnızca seçili öğelerin sırası etkilenir.
 
-Şablon sınıfı, belirli valarray işlemleri tarafından dolaylı olarak oluşturulur ve programda doğrudan kullanılamaz. Bir iç yardımcı Şablon sınıfı, bunun yerine dilim alt simge işleci tarafından kullanılır:
+Şablon sınıfı belirli valarray işlemleri tarafından dolaylı olarak oluşturulur ve programda doğrudan kullanılamaz. Bunun yerine iç yardımcı şablon sınıfı, dilim alt simge işleci tarafından kullanılır:
 
-`gslice_array`\< **Tür** >  `valarray` \< **türü**>:: `operator[]` ( **constgslice &**).
+`gslice_array`\<**Tür** >   >: :`operator[]` (Constgslice &) yazın. `valarray` \<
 
-Oluşturmak bir `gslice_array<Type>` biçiminde bir ifade yazarak yalnızca nesne `va[gsl]`, bir dilimin `gsl` valarray, `va`. Gslice_array sınıfı üye işlevleri sonra karşılık gelen işlev imzası için tanımlanan gibi davranmasını `valarray<Type>`dışında yalnızca seçilen öğelerin sırası etkilenmez. Gslice_array tarafından denetlenen dizinin ilk dilim, her bir dilimi ve her öğeler arasındaki uzaklık içindeki öğelerin sayısını ilk öğenin dizinini dilim oluşturucunun üç parametreyle tanımlanır.
+Bir `gslice_array<Type>` nesnesi, bir valarray `va[gsl]` `gsl` dilimi`va`için yalnızca formun bir ifadesini yazarak oluşturursunuz. Gslice_array sınıfının üye işlevleri, için `valarray<Type>`tanımlanan karşılık gelen işlev imzaları gibi davranır, ancak yalnızca seçili öğelerin sırası etkilenir. Gslice_array tarafından denetlenen sıra, dilim oluşturucusunun üç parametresi, ilk dilimdeki ilk öğenin dizini, her bir dilimdeki öğelerin sayısı ve her bir dilimdeki öğeler arasındaki mesafe tarafından tanımlanır.
 
 Aşağıdaki örnekte:
 
@@ -75,18 +75,18 @@ const valarray<size_t> len(lv, 2), str(dv, 2);
 //   indices 3, 5, 7, 10, 12, 14
 ```
 
-Dizinleri yordamın geçerli olması için geçerli olmalıdır.
+Yordamın geçerli olması için dizinlerin geçerli olması gerekir.
 
 ## <a name="example"></a>Örnek
 
-Örneğin bakın [gslice::gslice](../standard-library/gslice-class.md#gslice) bildirme ve bir slice_array kullanma konusunda bir örnek.
+Bir slice_array nasıl bildirilemeyeceğini ve kullanacağınızı gösteren bir örnek için [gslice:: gslice](../standard-library/gslice-class.md#gslice) örneğine bakın.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** \<valarray >
+**Üst bilgi:** \<valarray >
 
-**Namespace:** std
+**Ad alanı:** std
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
+[C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)

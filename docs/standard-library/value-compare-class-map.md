@@ -1,5 +1,5 @@
 ---
-title: value_compare sınıfı (&lt;harita&gt;)
+title: value_compare sınıfı (&lt;eşleme&gt;)
 ms.date: 11/04/2016
 f1_keywords:
 - std::value_compare
@@ -9,16 +9,16 @@ f1_keywords:
 helpviewer_keywords:
 - std::value_compare
 ms.assetid: ea97c1d0-04b2-4d42-8d96-23522c04cc41
-ms.openlocfilehash: 69b484944c9ce30dc28fceacfb082051da31c053
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: d098e947aec1ea543f29c168a632d1f4c9412e82
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62365022"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68448319"
 ---
-# <a name="valuecompare-class-ltmapgt"></a>value_compare sınıfı (&lt;harita&gt;)
+# <a name="valuecompare-class-ltmapgt"></a>value_compare sınıfı (&lt;eşleme&gt;)
 
-Bir eşlemin öğelerini haritadaki kendi göreli sıralarını belirlemek için anahtarlarına değerlerini karşılaştırarak karşılaştıran bir işlev nesnesi sağlar.
+Haritadaki göreli sıralarını tespit etmek için anahtarlarının değerlerini karşılaştırarak bir haritanın öğelerini karşılaştırabilen bir işlev nesnesi sağlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -35,22 +35,22 @@ protected:
 
 ## <a name="remarks"></a>Açıklamalar
 
-Tarafından sağlanan karşılaştırma ölçütü `value_compare` arasında `value_types` eşlemesi tarafından bulunan tüm öğelerin yardımcı sınıf oluşturma ile ilgili öğelerin anahtarlarını arasında bir karşılaştırma alanından kaynaklanan. Üye işlevi işleci nesnenin kullandığı `comp` türü `key_compare` tarafından sağlanan işlev nesnede depolanan `value_compare` iki öğeyi sıralama anahtarı bileşenlerinin karşılaştırmak için.
+Bir harita tarafından içerilen tüm `value_compare` öğelerin `value_types` arasına verilen karşılaştırma ölçütü, yardımcı sınıf oluşturma işlemi tarafından ilgili öğelerin anahtarları arasındaki bir karşılaştırmadan alınmış olur. Üye işlevi işleci, iki öğenin sıralama `comp` anahtarı bileşenlerini `key_compare` karşılaştırmak için tarafından `value_compare` belirtilen işlev nesnesinde depolanan tür nesnesini kullanır.
 
-Ayarlar ve basit kapsayıcılar anahtar değerlerinin olduğu öğe değerlerin aynı olan multisets `value_compare` eşdeğerdir `key_compare`; Haritalar ve bunlar değil, türü değeri olarak multimaps `pair` öğeleri aynı değil öğenin anahtar değeri.
+Anahtar değerlerinin öğe değerleriyle `value_compare` `key_compare`özdeş olduğu basit kapsayıcılar olan kümeler ve çoklu kümeler için, tür `pair` öğelerinin değeri ile aynı olmadığı için, ' nin eşit olduğu, eşlemeler ve çoklu haritalar için. öğe anahtarının değeri.
 
 ## <a name="example"></a>Örnek
 
-Örneğin bakın [value_comp](../standard-library/map-class.md#value_comp) bildirme ve kullanma konusunda bir örnek için `value_compare`.
+Bildirme ve kullanma [](../standard-library/map-class.md#value_comp) `value_compare`hakkında bir örnek için bkz. value_comp.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** \<harita >
+**Üst bilgi:** \<eşleme >
 
-**Namespace:** std
+**Ad alanı:** std
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[binary_function Yapısı](../standard-library/binary-function-struct.md)<br/>
-[C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
-[C++ Standart Kitaplığı Başvurusu](../standard-library/cpp-standard-library-reference.md)<br/>
+[binary_function yapısı](../standard-library/binary-function-struct.md)\
+[C++ Standart kitaplıkta Iş parçacığı güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)\
+[C++ Standart Kitaplığı Başvurusu](../standard-library/cpp-standard-library-reference.md)

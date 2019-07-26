@@ -7,22 +7,22 @@ helpviewer_keywords:
 - input streams
 - input stream objects
 ms.assetid: f14d8954-8f8c-4c3c-8b99-14ddb3683f94
-ms.openlocfilehash: 0f56f5ffc8e61c0881eddbbd65e1c431b9219674
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 5dc3fa0af76f73897fe1181d944eb34c8d05bc64
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62404929"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68449321"
 ---
 # <a name="input-streams"></a>Giriş Akışları
 
-Bir giriş akışı nesnesine bir bayt kaynağıdır. En önemli üç Giriş akışı sınıfları [istream](../standard-library/basic-istream-class.md), [ifstream](../standard-library/basic-ifstream-class.md), ve [istringstream](../standard-library/basic-istringstream-class.md).
+Giriş akışı nesnesi bayt kaynağıdır. En önemli üç giriş akışı sınıfı IStream [](../standard-library/basic-istream-class.md), [ifstream](../standard-library/basic-ifstream-class.md)ve [ıtringstream](../standard-library/basic-istringstream-class.md)' dir.
 
-`istream` Sınıfı sıralı metin modunda girişi için en iyi şekilde kullanılır. Sınıfın nesneleri yapılandırabileceğiniz `istream` için arabelleğe alınan veya arabellekten çıkarılan işlemi. Temel sınıfın tüm işlevselliği `ios`, dahildir `istream`. Sınıf nesneleri nadiren oluşturmak `istream`. Bunun yerine, genel olarak önceden tanımlanmış kullanacağınız `cin` gerçekten sınıfın bir nesnesi nesne [ostream](../standard-library/basic-ostream-class.md). Bazı durumlarda, atadığınız `cin` program başlatma sonra diğer akışı nesneleri için.
+Sınıf `istream` , ardışık metin modu girişi için en iyi seçenektir. Ara belleğe alınmış veya arabelleğe alınmamış `istream` işlem için sınıfın nesnelerini yapılandırabilirsiniz. Temel sınıfının `ios`tüm işlevleri ' de `istream`bulunur. Sınıfından `istream`nadiren nesne oluşturacaksınız. Bunun yerine, genellikle [ostream](../standard-library/basic-ostream-class.md)sınıfının bir `cin` nesnesi olan önceden tanımlanmış nesneyi kullanırsınız. Bazı durumlarda, program başlatıldıktan sonra diğer `cin` Stream nesnelerine atayabilirsiniz.
 
-`ifstream` Sınıfı, disk dosyası girişini destekler. Gerekirse bir disk dosyası, sınıfın bir nesnesi oluşturmak yalnızca salt giriş `ifstream`. İkili veya metin modunda veri belirtebilirsiniz. Oluşturucuda bir filename belirtirseniz, bir nesne oluşturulduğunda dosya otomatik olarak açılır. Aksi takdirde, kullanabileceğiniz `open` sonra varsayılan oluşturucuyu çağırma işlevi. Çok sayıda biçimlendirme seçenekleri ve üye işlevler uygulamak `ifstream` nesneleri. Tüm temel sınıflar işlevselliğini `ios` ve `istream` dahil `ifstream`.
+Sınıfı `ifstream` , disk dosyası girişini destekler. Yalnızca giriş diski dosyası gerekiyorsa, sınıfının `ifstream`bir nesnesini oluşturun. İkili veya metin modu verileri belirtebilirsiniz. Oluşturucuda bir dosya adı belirtirseniz, nesne oluşturulduğunda dosya otomatik olarak açılır. Aksi takdirde, varsayılan oluşturucuyu çağırdıktan sonra `open` işlevi kullanabilirsiniz. Birçok biçimlendirme seçeneği ve üye işlevleri nesneler için `ifstream` geçerlidir. Temel sınıfların `ios` tüm işlevleri ve `istream` ' de `ifstream`bulunur.
 
-Kitaplığı işlev gibi `sscanf_s`, `istringstream` sınıfı, bellek içi dizeleri girişten destekler. Bir null Sonlandırıcı bir karakter dizisinden verileri ayıklamak için ayırmak ve dizesini başlatır ve ardından sınıfın bir nesnesi oluşturmak `istringstream`.
+Kitaplık işlevi `sscanf_s`gibi `istringstream` , sınıfı bellek içi dizelerdeki girişi destekler. Null Sonlandırıcı içeren bir karakter dizisindeki verileri ayıklamak için, dizeyi ayırıp başlatın ve sonra sınıfının `istringstream`bir nesnesini oluşturun.
 
 ## <a name="in-this-section"></a>Bu Bölümde
 
@@ -40,4 +40,4 @@ Kitaplığı işlev gibi `sscanf_s`, `istringstream` sınıfı, bellek içi dize
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[iostream Programlaması](../standard-library/iostream-programming.md)<br/>
+[iostream Programlaması](../standard-library/iostream-programming.md)

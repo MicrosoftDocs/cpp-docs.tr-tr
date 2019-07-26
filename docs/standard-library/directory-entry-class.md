@@ -34,16 +34,16 @@ helpviewer_keywords:
 - std::experimental::filesystem::directory_entry::operator&lt;=
 - std::experimental::filesystem::directory_entry::operator&gt;
 - std::experimental::filesystem::directory_entry::operator&gt;=
-ms.openlocfilehash: c1b68aefd44d8f0ac60c36307dee93333d801bb9
-ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
+ms.openlocfilehash: 35b0dc55bf5db2f799d9ade28cd5968ceab3332b
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "64342982"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68458955"
 ---
 # <a name="directoryentry-class"></a>directory_entry Sınıfı
 
-Tarafından döndürülen bir nesne tanımlayan `*X`burada *X* olduğu bir [directory_iterator](../standard-library/directory-iterator-class.md) veya [recursive_directory_iterator](../standard-library/recursive-directory-iterator-class.md).
+Tarafından `*X`döndürülen bir nesneyi açıklar; burada *X* , bir [Directory_iterator](../standard-library/directory-iterator-class.md) veya [recursive_directory_iterator](../standard-library/recursive-directory-iterator-class.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -53,48 +53,48 @@ class directory_entry;
 
 ## <a name="remarks"></a>Açıklamalar
 
-Sınıf türünden bir nesne depolar [yolu](../standard-library/path-class.md). Depolanan `path` örneği olabilir [path sınıfı](../standard-library/path-class.md) veya türetilmiş bir türde `path`. İkisi de depolar [file_type](../standard-library/filesystem-enumerations.md#file_type) değerleri; depolanan dosya adının durumunu hakkında bilinen temsil eden, diğeri, dosya adı sembolik bağlantı durumunu hakkında bilinen temsil eder.
+Sınıfı, [Path](../standard-library/path-class.md)türünde bir nesne depolar. Depolanan `path` , [yol sınıfının](../standard-library/path-class.md) bir örneği veya öğesinden `path`türetilmiş bir tür olabilir. Ayrıca iki [file_type](../standard-library/filesystem-enumerations.md#file_type) değeri de depolar; Bunlardan biri, depolanan dosya adının durumu hakkında ne olduğunu ve dosya adının sembolik bağlantı durumu hakkında bilindiklerinizi temsil eden başka bir şeydir.
 
-Daha fazla bilgi ve kod örnekleri için bkz. [dosya sistemi gezintisi (C++)](../standard-library/file-system-navigation.md).
+Daha fazla bilgi ve kod örneği için bkz. [dosya sistemi gezintisiC++()](../standard-library/file-system-navigation.md).
 
 ### <a name="constructors"></a>Oluşturucular
 
 |Oluşturucu|Açıklama|
 |-|-|
-|[directory_entry](#directory_entry)|Varsayılan haline getirilen oluşturucular beklendiği gibi davranır. Dördüncü Oluşturucu başlatır `mypath` için *pval*, `mystat` için *stat_arg*, ve `mysymstat` için *symstat_arg*.|
+|[directory_entry](#directory_entry)|Varsayılan olarak belirlenen oluşturucular beklendiği gibi davranır. `mypath` Dördüncü Oluşturucu *Pval*, `mystat` *stat_arg*ve `mysymstat` *symstat_arg*için başlatılır.|
 
 ### <a name="member-functions"></a>Üye işlevleri
 
 |Üye işlevi|Açıklama|
 |-|-|
-|[Ata](#assign)|Üye işlevi atar *pval* için `mypath`, *stat* için `mystat`, ve *symstat* için `mysymstat`.|
-|[Yolu](#path)|Üye işlevinin döndürdüğü `mypath`.|
-|[replace_filename](#replace_filename)|Üye işlevini değiştiren `mypath` ile `mypath.parent_path()`  /  *pval*, `mystat` ile *stat_arg*, ve `mysymstat` ile *symstat_arg*|
-|[Durumu](#status)|Her iki üye işlev dönüş `mystat` büyük olasılıkla ilk değiştirilemez.|
-|[symlink_status](#symlink_status)|Her iki üye işlev dönüş `mysymstat` büyük olasılıkla ilk değiştirilemez.|
+|[ata](#assign)|Üye işlevi *Pval* `mypath`'yi, *stat* `mystat`ve *symstat* `mysymstat`'yı atar.|
+|[Yolu](#path)|Üye işlevi döndürür `mypath`.|
+|[replace_filename](#replace_filename)|Üye işlevi `mypath` , *stat_arg*ve `mypath.parent_path()` `mystat`  /    symstat_arg ile birlikte Pval iledeğiştirilir`mysymstat`|
+|[status](#status)|Her iki üye işlevi `mystat` de önce değiştirilmiş olabilir.|
+|[symlink_status](#symlink_status)|Her iki üye işlevi `mysymstat` de önce değiştirilmiş olabilir.|
 
 ### <a name="operators"></a>İşleçler
 
 |İşleç|Açıklama|
 |-|-|
-|[operator!=](#op_neq)|Listenin öğelerini başka bir liste kopyasıyla değiştirir.|
-|[operator=](#op_as)|Varsayılan haline getirilen üye atama işleçleri, beklendiği gibi davranır.|
+|[operator!=](#op_neq)|Liste öğelerini başka bir listenin kopyasıyla değiştirir.|
+|[operator=](#op_as)|Varsayılan olarak ayarlanmış üye atama işleçleri beklenen şekilde davranır.|
 |[operator==](#op_eq)|Döndürür `mypath == right.mypath`.|
 |[işleç <](#op_lt)|Döndürür `mypath < right.mypath`.|
-|[operator < =](#op_lteq)|Döndürür `!(right < *this)`.|
-|[operator >](#op_gt)|Döndürür `right < *this`.|
+|[işleç < =](#op_lteq)|Döndürür `!(right < *this)`.|
+|[işleç >](#op_gt)|Döndürür `right < *this`.|
 |[operator>=](#op_gteq)|Döndürür `!(*this < right)`.|
-|[işleci const path_type &](#path_type)|Döndürür `mypath`.|
+|[işleç const path_type &](#path_type)|Döndürür `mypath`.|
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** \<Deneysel/dosya sistemi&gt;
+**Üst bilgi:** \<deneysel/dosya sistemi&gt;
 
-**Namespace:** std::experimental::filesystem
+**Ad alanı:** std:: deneysel:: FileSystem
 
-## <a name="assign"></a> Ata
+## <a name="assign"></a>ata
 
-Üye işlevi atar *pval* için `mypath`, *stat_arg* için `mystat`, ve *symstat_arg* için `mysymstat`.
+Üye işlevi *Pval* to `mypath`, *stat_arg* to `mystat`ve *symstat_arg* to 'a `mysymstat`atar.
 
 ```cpp
 void assign(const std::experimental::filesystem::path& pval,
@@ -104,18 +104,18 @@ void assign(const std::experimental::filesystem::path& pval,
 
 ### <a name="parameters"></a>Parametreler
 
-*pval*<br/>
+*Pval*\
 Depolanan dosya adı yolu.
 
-*stat_arg*<br/>
-Depolanan dosya adındaki durumu.
+*stat_arg*\
+Depolanan dosya adının durumu.
 
-*symstat_arg*<br/>
-Depolanan dosya adındaki sembolik bağlantı durumu.
+*symstat_arg*\
+Depolanan dosya adının sembolik bağlantı durumu.
 
-## <a name="directory_entry"></a> directory_entry
+## <a name="directory_entry"></a>directory_entry
 
-Varsayılan haline getirilen oluşturucular beklendiği gibi davranır. Dördüncü Oluşturucu başlatır `mypath` için *pval*, `mystat` için *stat_arg*, ve `mysymstat` için *symstat_arg*.
+Varsayılan olarak belirlenen oluşturucular beklendiği gibi davranır. `mypath` Dördüncü Oluşturucu *Pval*, `mystat` *stat_arg*ve `mysymstat` *symstat_arg*için başlatılır.
 
 ```cpp
 directory_entry() = default;
@@ -128,18 +128,18 @@ explicit directory_entry(const std::experimental::filesystem::path& pval,
 
 ### <a name="parameters"></a>Parametreler
 
-*pval*<br/>
+*Pval*\
 Depolanan dosya adı yolu.
 
-*stat_arg*<br/>
-Depolanan dosya adındaki durumu.
+*stat_arg*\
+Depolanan dosya adının durumu.
 
-*symstat_arg*<br/>
-Depolanan dosya adındaki sembolik bağlantı durumu.
+*symstat_arg*\
+Depolanan dosya adının sembolik bağlantı durumu.
 
-## <a name="op_neq"></a> işleç! =
+## <a name="op_neq"></a>işleç! =
 
-Üye işlevinin döndürdüğü `!(*this == right)`.
+Üye işlevi döndürür `!(*this == right)`.
 
 ```cpp
 bool operator!=(const directory_entry& right) const noexcept;
@@ -147,12 +147,12 @@ bool operator!=(const directory_entry& right) const noexcept;
 
 ### <a name="parameters"></a>Parametreler
 
-*sağ*<br/>
-[Directory_entry](../standard-library/directory-entry-class.md) karşılaştırılan `directory_entry`.
+*Right*\
+İle [](../standard-library/directory-entry-class.md) karşılaştırılan `directory_entry`directory_entry.
 
-## <a name="op_as"></a> işleç =
+## <a name="op_as"></a>işleç =
 
-Varsayılan haline getirilen üye atama işleçleri, beklendiği gibi davranır.
+Varsayılan olarak ayarlanmış üye atama işleçleri beklenen şekilde davranır.
 
 ```cpp
 directory_entry& operator=(const directory_entry&) = default;
@@ -161,12 +161,12 @@ directory_entry& operator=(directory_entry&&) noexcept = default;
 
 ### <a name="parameters"></a>Parametreler
 
-*sağ*<br/>
-[Directory_entry](../standard-library/directory-entry-class.md) içine kopyalanan `directory_entry`.
+*Right*\
+İçine`directory_entry`Kopyalanmakta olan [directory_entry](../standard-library/directory-entry-class.md) .
 
-## <a name="op_eq"></a> işleç ==
+## <a name="op_eq"></a>işleç = =
 
-Üye işlevinin döndürdüğü `mypath == right.mypath`.
+Üye işlevi döndürür `mypath == right.mypath`.
 
 ```cpp
 bool operator==(const directory_entry& right) const noexcept;
@@ -174,12 +174,12 @@ bool operator==(const directory_entry& right) const noexcept;
 
 ### <a name="parameters"></a>Parametreler
 
-*sağ*<br/>
-[Directory_entry](../standard-library/directory-entry-class.md) karşılaştırılan `directory_entry`.
+*Right*\
+İle [](../standard-library/directory-entry-class.md) karşılaştırılan `directory_entry`directory_entry.
 
-## <a name="op_lt"></a> İşleci&lt;
+## <a name="op_lt"></a>işlecinde&lt;
 
-Üye işlevinin döndürdüğü `mypath < right.mypath`.
+Üye işlevi döndürür `mypath < right.mypath`.
 
 ```cpp
 bool operator<(const directory_entry& right) const noexcept;
@@ -187,12 +187,12 @@ bool operator<(const directory_entry& right) const noexcept;
 
 ### <a name="parameters"></a>Parametreler
 
-*sağ*<br/>
-[Directory_entry](../standard-library/directory-entry-class.md) karşılaştırılan `directory_entry`.
+*Right*\
+İle [](../standard-library/directory-entry-class.md) karşılaştırılan `directory_entry`directory_entry.
 
-## <a name="op_lteq"></a> İşleci&lt;=
+## <a name="op_lteq"></a>işlecinde&lt;=
 
-Üye işlevinin döndürdüğü `!(right < *this)`.
+Üye işlevi döndürür `!(right < *this)`.
 
 ```cpp
 bool operator&lt;=(const directory_entry& right) const noexcept;
@@ -200,12 +200,12 @@ bool operator&lt;=(const directory_entry& right) const noexcept;
 
 ### <a name="parameters"></a>Parametreler
 
-*sağ*<br/>
-[Directory_entry](../standard-library/directory-entry-class.md) karşılaştırılan `directory_entry`.
+*Right*\
+İle [](../standard-library/directory-entry-class.md) karşılaştırılan `directory_entry`directory_entry.
 
-## <a name="op_gt"></a> İşleci&gt;
+## <a name="op_gt"></a>işlecinde&gt;
 
-Üye işlevinin döndürdüğü `right < *this`.
+Üye işlevi döndürür `right < *this`.
 
 ```cpp
 bool operator&gt;(const directory_entry& right) const noexcept;
@@ -213,12 +213,12 @@ bool operator&gt;(const directory_entry& right) const noexcept;
 
 ### <a name="parameters"></a>Parametreler
 
-*sağ*<br/>
-[Directory_entry](../standard-library/directory-entry-class.md) karşılaştırılan `directory_entry`.
+*Right*\
+İle [](../standard-library/directory-entry-class.md) karşılaştırılan `directory_entry`directory_entry.
 
-## <a name="op_gteq"></a> İşleci&gt;=
+## <a name="op_gteq"></a>işlecinde&gt;=
 
-Üye işlevinin döndürdüğü `!(*this < right)`.
+Üye işlevi döndürür `!(*this < right)`.
 
 ```cpp
 bool operator&gt;=(const directory_entry& right) const noexcept;
@@ -226,10 +226,10 @@ bool operator&gt;=(const directory_entry& right) const noexcept;
 
 ### <a name="parameters"></a>Parametreler
 
-*sağ*<br/>
-[Directory_entry](../standard-library/directory-entry-class.md) karşılaştırılan `directory_entry`.
+*Right*\
+İle [](../standard-library/directory-entry-class.md) karşılaştırılan `directory_entry`directory_entry.
 
-## <a name="path_type"></a> işleci const path_type &
+## <a name="path_type"></a>işleç const path_type &
 
 Üye işleci döndürür `mypath`.
 
@@ -237,17 +237,17 @@ bool operator&gt;=(const directory_entry& right) const noexcept;
 operator const std::experimental::filesystem::path&() const;
 ```
 
-## <a name="path"></a> Yolu
+## <a name="path"></a>Yolun
 
-Üye işlevinin döndürdüğü `mypath`.
+Üye işlevi döndürür `mypath`.
 
 ```cpp
 const std::experimental::filesystem::path& path() const noexcept;
 ```
 
-## <a name="replace_filename"></a> replace_filename
+## <a name="replace_filename"></a>replace_filename
 
-Üye işlevini değiştiren `mypath` ile `mypath.parent_path()`  /  *pval*, `mystat` ile *stat_arg*, ve `mysymstat` ile *symstat_arg*
+Üye işlevi `mypath` , *stat_arg*ve `mypath.parent_path()` `mystat`  /    symstat_arg ile birlikte Pval iledeğiştirilir`mysymstat`
 
 ```cpp
 void replace_filename(
@@ -258,22 +258,22 @@ void replace_filename(
 
 ### <a name="parameters"></a>Parametreler
 
-*pval*<br/>
+*Pval*\
 Depolanan dosya adı yolu.
 
-*stat_arg*<br/>
-Depolanan dosya adındaki durumu.
+*stat_arg*\
+Depolanan dosya adının durumu.
 
-*symstat_arg*<br/>
-Depolanan dosya adındaki sembolik bağlantı durumu.
+*symstat_arg*\
+Depolanan dosya adının sembolik bağlantı durumu.
 
-## <a name="status"></a> Durumu
+## <a name="status"></a>durumlarına
 
-Her iki üye işlev dönüş `mystat` büyük olasılıkla ilk gibi değiştirilemez:
+Her iki üye işlevi `mystat` de önce aşağıdaki gibi değiştirilmiştir:
 
-1. Varsa `status_known(mystat)` hiçbir şey yapma.
+1. `status_known(mystat)` Ardından hiçbir şey yapmaz.
 
-1. Aksi takdirde `!status_known(mysymstat) && !is_symlink(mysymstat)` ardından `mystat = mysymstat`.
+1. Aksi takdirde, `!status_known(mysymstat) && !is_symlink(mysymstat)`. `mystat = mysymstat`
 
 ```cpp
 file_status status() const;
@@ -282,12 +282,12 @@ file_status status(error_code& ec) const noexcept;
 
 ### <a name="parameters"></a>Parametreler
 
-*EC*<br/>
+*EC*\
 Durum hata kodu.
 
-## <a name="symlink_status"></a> symlink_status
+## <a name="symlink_status"></a>symlink_status
 
-Her iki üye işlev dönüş `mysymstat` büyük olasılıkla ilk gibi değiştirilemez: Varsa `status_known(mysymstat)` hiçbir şey yapma. Aksi takdirde, `mysymstat = symlink_status(mypval)`.
+Her iki üye işlevi `mysymstat` de önce aşağıdaki gibi değiştirilmiştir: `status_known(mysymstat)` Ardından hiçbir şey yapmaz. Aksi takdirde `mysymstat = symlink_status(mypval)`,.
 
 ```cpp
 file_status symlink_status() const;
@@ -296,10 +296,10 @@ file_status symlink_status(error_code& ec) const noexcept;
 
 ### <a name="parameters"></a>Parametreler
 
-*EC*<br/>
+*EC*\
 Durum hata kodu.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Üstbilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md)<br/>
-[\<dosya sistemi&gt;](../standard-library/filesystem.md)<br/>
+[Üst bilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md)\
+[\<Biçimlendiri&gt;](../standard-library/filesystem.md)

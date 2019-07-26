@@ -7,40 +7,40 @@ helpviewer_keywords:
 - output_iterator_tag class
 - output_iterator_tag struct
 ms.assetid: c23a4331-b069-4fa0-9c3a-1c9be7095553
-ms.openlocfilehash: cb2a59d2c81e6d7cc80de2714ba86476c5fa837f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 942e2214f42f97e262d4daf7836e8b6ced0e0ab2
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62370859"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68453014"
 ---
 # <a name="outputiteratortag-struct"></a>output_iterator_tag Yapısı
 
-Bir dönüş türü sağlayan sınıf `iterator_category` çıktı yineleyicisini temsil eden bir işlev.
+Bir çıkış yineleyicisini temsil eden işlev için `iterator_category` dönüş türü sağlayan bir sınıf.
 
 ## <a name="syntax"></a>Sözdizimi
 
-output_iterator_tag yapısı {};
+struct output_iterator_tag {};
 
 ## <a name="remarks"></a>Açıklamalar
 
-Kategori etiketi sınıfları algoritması seçimi için etiketler derleme gibi kullanılır. Derleme zamanında en verimli algoritması kullanabilirsiniz, böylece en belirgin kategori yineleyici bağımsız değişkeninin bulmak şablon işlevi gerekir. Her yineleyici türü için `Iterator`, `iterator_traits` <  `Iterator` >  **:: iterator_category** yineleyicinin davranışını tanımlar en belirgin kategori etiketi olarak tanımlanması gerekir.
+Kategori etiketi sınıfları, algoritma seçimi için derleme etiketleri olarak kullanılır. Şablon işlevinin, derleme zamanında en verimli algoritmayı kullanabilmesi için yineleyici bağımsız değişkeninin en belirli kategorisini bulması gerekir. `Iterator` **:: İterator_category** türündeki her Yineleyici `iterator_traits`için, <  `Iterator` > yineleyicinin davranışını açıklayan en özel kategori etiketi olacak şekilde tanımlanmalıdır.
 
-Aynı türdür **yineleyici** \< **Iter**> **:: iterator_category** olduğunda `Iter` olarak hizmet verebilen bir nesneyi tanımlayan bir Çıkış yineleyici.
+Tür, bir çıkış yineleyicisi olarak işlev görebilecek bir nesne açıkladığı `Iter` zaman **Yineleyici** \< **Iter**>  **:: iterator_category** ile aynıdır.
 
-Bu etiket üzerinde parametreli getirilemedi `value_type` veya `difference_type` yineleyici için diğer yineleyici etiketlere sahip olarak, çıkış yineleyicileri ya da sahip olmadığınızdan bir `value_type` veya `difference_type`.
+Bu etiket, diğer Yineleyici etiketlerinde olduğu `value_type` gibi `difference_type` , ya da Yineleyici için parametreli değildir, çünkü çıkış yineleyiciler bir `value_type` veya `difference_type`olarak değil.
 
 ## <a name="example"></a>Örnek
 
-Bkz: [iterator_traits](../standard-library/iterator-traits-struct.md) veya [random_access_iterator_tag](../standard-library/random-access-iterator-tag-struct.md) nasıl kullanılacağına ilişkin bir örnek `iterator_tag`s.
+' [](../standard-library/iterator-traits-struct.md) Nin `iterator_tag`nasıl kullanılacağına ilişkin bir örnek için bkz. iterator_traits veya [random_access_iterator_tag](../standard-library/random-access-iterator-tag-struct.md) .
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** \<yineleyici >
+**Üst bilgi:** \<Yineleyici >
 
-**Namespace:** std
+**Ad alanı:** std
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
-[C++ Standart Kitaplığı Başvurusu](../standard-library/cpp-standard-library-reference.md)<br/>
+[C++ Standart kitaplıkta Iş parçacığı güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)\
+[C++ Standart Kitaplığı Başvurusu](../standard-library/cpp-standard-library-reference.md)

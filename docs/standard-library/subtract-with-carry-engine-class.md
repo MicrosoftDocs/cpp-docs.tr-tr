@@ -16,16 +16,16 @@ helpviewer_keywords:
 - std::subtract_with_carry_engine [C++], max
 - std::subtract_with_carry_engine [C++], seed
 ms.assetid: 94a055f2-a620-4a22-ac34-c156924bab31
-ms.openlocfilehash: 76981df1f4a642cca1a57a9619f20aa4cebd63bb
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 17091e33c504df60c0b6b8e346d2a6fd3893679c
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62412197"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68447412"
 ---
 # <a name="subtractwithcarryengine-class"></a>subtract_with_carry_engine Sınıfı
 
-Rastgele bir sıra çıkarma-ile-taşıma (geciktirmiştir Fibonacci) algoritması tarafından üretir.
+Birlikte tut (sırasında geride Fibonaccı) algoritması ile rastgele bir sıra üretir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -36,17 +36,17 @@ class subtract_with_carry_engine;
 
 ### <a name="parameters"></a>Parametreler
 
-*UIntType*<br/>
-İşeritsiz tamsayı sonuç türü. Olası türleri için bkz: [ \<rastgele >](../standard-library/random.md).
+*UIntType*\
+İşaretsiz tamsayı sonuç türü. Olası türler için bkz [ \<. Random >](../standard-library/random.md).
 
-*W*<br/>
-**Word boyutu**. Her sözcüğün bitlerini durum sırası boyutu. **Önkoşul**: `0 < W ≤ numeric_limits<UIntType>::digits`
+*ANLATIMI*\
+**Sözcük boyutu**. Durum sırasının bit cinsinden her bir sözcüğün boyutu. **Önkoşul**:`0 < W ≤ numeric_limits<UIntType>::digits`
 
-*S*<br/>
-**Kısa bir gecikme**. Tamsayı değerleri sayısı. **Önkoşul**: `0 < S < R`
+*MALAR*\
+**Kısa gecikme**. Tamsayı değerlerinin sayısı. **Önkoşul**:`0 < S < R`
 
-*R*<br/>
-**Uzun lag**. Yinelenme oluşturulan serisindeki belirler.
+*R*\
+**Uzun gecikme**. Oluşturulan serideki yinelemeyi belirler.
 
 ## <a name="members"></a>Üyeler
 
@@ -54,34 +54,34 @@ class subtract_with_carry_engine;
 |-|-|-|
 |`subtract_with_carry_engine::subtract_with_carry_engine`|`subtract_with_carry_engine::min`|`subtract_with_carry_engine::discard`|
 |`subtract_with_carry_engine::operator()`|`subtract_with_carry_engine::max`|`subtract_with_carry_engine::seed`|
-|`default_seed` üye sabit, olarak tanımlı `19780503u`için varsayılan parametre değeri olarak kullanılır `subtract_with_carry_engine::seed` ve tek değer Oluşturucusu.|||
+|`default_seed``19780503u`, için`subtract_with_carry_engine::seed` varsayılan parametre değeri olarak kullanılan, ve tek değer Oluşturucusu olarak tanımlanmış bir üye sabiti.|||
 
-Altyapısı üyeleri hakkında daha fazla bilgi için bkz. [ \<rastgele >](../standard-library/random.md).
+Altyapı üyeleri hakkında daha fazla bilgi için bkz [ \<. Random >](../standard-library/random.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-`substract_with_carry_engine` Şablon sınıfı, bir geliştirme üzerinden [linear_congruential_engine](../standard-library/linear-congruential-engine-class.md). Bu altyapılar için ne kadar hızlı mi yüksek kaliteli sonuçlar olarak [mersenne_twister_engine](../standard-library/mersenne-twister-engine-class.md).
+Şablon sınıfı linear_congruential_engine üzerinde bir iyileştirmedir. [](../standard-library/linear-congruential-engine-class.md) `substract_with_carry_engine` Bu altyapılar için ne kadar hızlı veya [mersenne_twister_engine](../standard-library/mersenne-twister-engine-class.md)olarak yüksek kaliteli sonuçlar vardır.
 
-Yinelenme ilişkisini kullanarak bir kullanıcı tarafından belirtilen işaretsiz tamsayı türü değerleri bu altyapısı üretir ( *süresi*) `x(i) = (x(i - R) - x(i - S) - cy(i - 1)) mod M`burada `cy(i)` değerine sahip `1` varsa `x(i - S) - x(i - R) - cy(i - 1) < 0`, aksi takdirde `0`, ve `M` değerine sahip `2` <sup>W</sup>. Altyapının durumu olan bir taşıma göstergesi artı *R* değerleri. Bu değerler son oluşur *R* değerleri döndürülen if `operator()` en az adlı *R* zaman, aksi takdirde `N` geri dönmüş olan değerleri ve son `R - N` Çekirdek değerleri.
+Bu altyapı, bir kullanıcı tarafından belirtilen işaretsiz integral türünün değerlerini, yineleme ilişkisini ( *period*) `x(i) = (x(i - R) - x(i - S) - cy(i - 1)) mod M`kullanarak üretir; `1` burada `cy(i)` `x(i - S) - x(i - R) - cy(i - 1) < 0`,, aksi durumda ve `M` `0` , <sup>W</sup>değerine `2`sahiptir. Altyapının durumu bir taşıma göstergesi artı *R* değerleridir. Bu değerler, en az `N` *R* kez çağrılırsa döndürülen `operator()` son *r* değerlerinden oluşur, aksi takdirde döndürülen değerler ve çekirdek değerinin son `R - N` değerleridir.
 
-Şablon bağımsız değişkeni `UIntType` değerleri içerebilecek kadar büyük olmalıdır `M - 1`.
+Şablon bağımsız değişkeni `UIntType` , değerleri `M - 1`en fazla tutmak için yeterince büyük olmalıdır.
 
-Doğrudan bu altyapısından bir oluşturucuyu oluşturmak olsa da, önceden tanımlanmış bu tür tanımlarından birini de kullanabilirsiniz:
+Bu altyapıdan doğrudan bir Oluşturucu oluşturabilseniz de, önceden tanımlanmış aşağıdaki Typedefs 'lerden birini de kullanabilirsiniz:
 
-`ranlux24_base`: İçin bir temel olarak kullanılan `ranlux24`.
+`ranlux24_base`: İçin `ranlux24`temel olarak kullanılır.
 `typedef subtract_with_carry_engine<unsigned int, 24, 10, 24> ranlux24_base;`
 
-`ranlux48_base`: İçin bir temel olarak kullanılan `ranlux48`.
+`ranlux48_base`: İçin `ranlux48`temel olarak kullanılır.
 `typedef subtract_with_carry_engine<unsigned long long, 48, 5, 12> ranlux48_base;`
 
-Wikipedia makalesinin carry altyapısı algoritmayla subract hakkında ayrıntılı bilgi için bkz. [Geciktirmiştir Fibonacci Oluşturucu](https://en.wikipedia.org/wiki/Lagged_Fibonacci_generator).
+Taşıma altyapısı algoritması ile ilgili ayrıntılı bilgi için bkz. [sırasında geride Fibonaccı Oluşturucu](https://en.wikipedia.org/wiki/Lagged_Fibonacci_generator).
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** \<rastgele >
+**Üst bilgi:** \<rastgele >
 
-**Namespace:** std
+**Ad alanı:** std
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[\<rastgele >](../standard-library/random.md)<br/>
+[\<Rastgele >](../standard-library/random.md)

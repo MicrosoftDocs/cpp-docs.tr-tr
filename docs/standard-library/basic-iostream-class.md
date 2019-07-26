@@ -7,16 +7,16 @@ f1_keywords:
 helpviewer_keywords:
 - basic_iostream class
 ms.assetid: 294b680b-eb49-4066-8db2-6d52dac9d6e3
-ms.openlocfilehash: 80aad69f05b7473b508447d6f69f1d92edbeeca3
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 052271e2e2cc929875489e27abde2147bc5c070a
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62400649"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68460096"
 ---
 # <a name="basiciostream-class"></a>basic_iostream Sınıfı
 
-Hem giriş ve çıkış yapabileceği bir akışı sınıfı.
+Hem giriş hem de çıkış yapan bir akış sınıfı.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -35,35 +35,35 @@ public:
 
 ## <a name="remarks"></a>Açıklamalar
 
-Şablon sınıfı, temel sınıfı aracılığıyla eklemeler denetleyen bir nesneyi tanımlayan [basic_ostream](../standard-library/basic-ostream-class.md)< `Elem`, `Tr`> ve temel sınıfı aracılığıyla ayıklama [basic_ istream](../standard-library/basic-istream-class.md)< `Elem`, `Tr`>. İki nesnenin ortak bir sanal temel sınıf paylaşma [basic_ios](../standard-library/basic-ios-class.md)< `Elem`, `Tr`>. Ayrıca türünde öğelere sahip ortak bir akış arabelleğinin yönettikleri `Elem`, olan karakter nitelikleri sınıfı tarafından belirlenen `Tr`. Oluşturucusu aracılığıyla temel sınıflarını başlatır `basic_istream`( **strbuf**) ve `basic_ostream`( **strbuf**).
+Şablon sınıfı, temel sınıfı [basic_ostream](../standard-library/basic-ostream-class.md)< `Elem`, `Tr`> ve Dışlamalar aracılığıyla eklemeleri denetleyen bir nesneyi temel sınıf [basic_istream](../standard-library/basic-istream-class.md) <  aracılığıylaaçıklar.`Elem` ,`Tr`>. İki nesne,< `Elem` [](../standard-library/basic-ios-class.md) >ortakbirsanaltemelsınıfıpaylaşır`Tr`basic_ios. Ayrıca, karakter nitelikleri sınıfı `Elem` `Tr`tarafından belirlendiği şekilde, türündeki öğelerle ortak bir akış arabelleğini yönetir. Oluşturucu, temel sınıflarını `basic_istream`( **strarabelleğe**) ve `basic_ostream`( **strarabelleğe**) ile başlatır.
 
 ### <a name="constructors"></a>Oluşturucular
 
 |Oluşturucu|Açıklama|
 |-|-|
-|[basic_iostream](#basic_iostream)|Oluşturma bir `basic_iostream` nesne.|
+|[basic_iostream](#basic_iostream)|Bir `basic_iostream` nesne oluşturun.|
 
 ### <a name="member-functions"></a>Üye işlevleri
 
 |Üye işlevi|Açıklama|
 |-|-|
-|[değiştirme](#swap)|Sağlanan içeriğini birbiriyle değiştirir `basic_iostream` bu nesnenin içeriği için nesne.|
+|[Kur](#swap)|Bu nesnenin içeriği için belirtilen `basic_iostream` nesnenin içeriğini değiş tokuş eder.|
 
 ### <a name="operators"></a>İşleçler
 
 |İşleç|Açıklama|
 |-|-|
-|[operator=](#op_eq)|Belirtilen bir değeri atar `basic_iostream` bu nesne için nesne. Bu, bir taşıma ataması ilgili bir `rvalue` , olmayan bir kopyasını gerisine bırakmak.|
+|[operator=](#op_eq)|Belirtilen `basic_iostream` nesnenin değerini bu nesneye atar. Bu, arkasında bir kopya bırakmayan `rvalue` bir taşıma atamasıdır.|
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** \<istream >
+**Üst bilgi:** \<IStream >
 
-**Namespace:** std
+**Ad alanı:** std
 
-## <a name="basic_iostream"></a>  basic_iostream::basic_iostream
+## <a name="basic_iostream"></a>basic_iostream::basic_iostream
 
-Oluşturma bir `basic_iostream` nesne.
+Bir `basic_iostream` nesne oluşturun.
 
 ```cpp
 explicit basic_iostream(basic_streambuf<Elem, Tr>* strbuf);
@@ -75,21 +75,21 @@ basic_iostream();
 
 ### <a name="parameters"></a>Parametreler
 
-*strbuf*<br/>
+*strarabelleğe*\
 Varolan bir `basic_streambuf` nesnesi.
 
-*sağ*<br/>
-Mevcut bir `basic_iostream` yeni oluşturmak için kullanılan nesne `basic_iostream`.
+*Right*\
+`basic_iostream` Yeni`basic_iostream`bir oluşturmak için kullanılan varolan bir nesne.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk Oluşturucu sunar temel nesnelere başlatır `basic_istream(strbuf)` ve `basic_ostream(strbuf)`.
+İlk Oluşturucu temel nesneleri `basic_istream(strbuf)` ve `basic_ostream(strbuf)`şeklinde başlatır.
 
-İkinci oluşturucu çağırarak temel nesnelere başlatır `move(right)`.
+İkinci Oluşturucu çağırarak `move(right)`temel nesneleri başlatır.
 
-## <a name="op_eq"></a>  basic_iostream::operator =
+## <a name="op_eq"></a>basic_iostream:: operator =
 
-Belirli bir değer atamak `basic_iostream` bu nesne için nesne. Bir kopya bırakmaz arkasındaki bir rvalue içeren bir taşıma ataması budur.
+Belirtilen `basic_iostream` nesnenin değerini bu nesneye atayın. Bu, arkasına kopya bırakmayan bir rvalue içeren bir taşıma atamasıdır.
 
 ```cpp
 basic_iostream& operator=(basic_iostream&& right);
@@ -97,16 +97,16 @@ basic_iostream& operator=(basic_iostream&& right);
 
 ### <a name="parameters"></a>Parametreler
 
-*sağ*<br/>
-Bir `rvalue` başvurusu bir `basic_iostream` nesnesine atayın.
+*Right*\
+Atanacak bir`basic_iostream` nesneye başvuru. `rvalue`
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işleci çağrıları `swap(right)`.
+Üye işleci çağırır `swap(right)`.
 
-## <a name="swap"></a>  basic_iostream::Swap
+## <a name="swap"></a>basic_iostream:: swap
 
-Sağlanan içeriğini birbiriyle değiştirir `basic_iostream` bu nesnenin içeriği için nesne.
+Bu nesnenin içeriği için belirtilen `basic_iostream` nesnenin içeriğini değiş tokuş eder.
 
 ```cpp
 void swap(basic_iostream& right);
@@ -114,15 +114,15 @@ void swap(basic_iostream& right);
 
 ### <a name="parameters"></a>Parametreler
 
-*sağ*<br/>
-`basic_iostream` Değiştirilecek nesne.
+*Right*\
+Takas `basic_iostream` edilecek nesne.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlev çağrıları `swap(right)`.
+Üye işlevi çağırır `swap(right)`.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
-[iostream Programlaması](../standard-library/iostream-programming.md)<br/>
-[iostreams Kuralları](../standard-library/iostreams-conventions.md)<br/>
+[C++ Standart kitaplıkta Iş parçacığı güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)\
+[iostream programlama](../standard-library/iostream-programming.md)\
+[iostreams Kuralları](../standard-library/iostreams-conventions.md)

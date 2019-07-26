@@ -6,16 +6,16 @@ f1_keywords:
 helpviewer_keywords:
 - is_error_code_enum class
 ms.assetid: cee5be2d-7c20-4cec-a352-1ab8b7d32601
-ms.openlocfilehash: bc4ed7cd2e058414448c9366011b9efab97ee3d5
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.openlocfilehash: 4080c62034b224a9553eca2787aa1c2f2cf69ab8
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68245183"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68454613"
 ---
 # <a name="iserrorcodeenum-class"></a>is_error_code_enum Sınıfı
 
-İçin test eden bir tür koşulu temsil eden [error_code](../standard-library/error-code-class.md) sabit listesi.
+[Error_code](../standard-library/error-code-class.md) numaralandırması için test edilen bir tür koşulunu temsil eder.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -26,10 +26,10 @@ template <_Enum>
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu örneği [tür koşulu](../standard-library/type-traits.md) ayrı tutma true ise tür `_Enum` bir sabit listesi değeri türünde bir nesne depolamak için uygundur `error_code`.
+Türü türünde bir `error_code`nesnede [](../standard-library/type-traits.md) depolamaya uygun bir numaralandırma değeri `_Enum` ise, bu tür koşulunun bir örneği true olarak tutulur.
 
-Kullanıcı tanımlı türler için bu tür uzmanlıklar eklemek için izin verilebilir.
+Kullanıcı tanımlı türler için bu türe uzmanlık eklemek için izin verilir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[<type_traits>](../standard-library/type-traits.md)<br/>
+[<type_traits>](../standard-library/type-traits.md)
