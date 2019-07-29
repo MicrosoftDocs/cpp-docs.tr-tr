@@ -1,26 +1,26 @@
 ---
 title: MFC Uygulaması Oluşturma
-ms.date: 11/04/2016
+ms.date: 07/28/2019
 helpviewer_keywords:
 - applications [MFC]
 - MFC, creating applications
 - MFC applications
 ms.assetid: b8b8aa08-9c49-404c-8078-b42079ac18f0
-ms.openlocfilehash: 0f16fe577f1dc02dc9a2fc0cffb5899b16ad8cca
-ms.sourcegitcommit: fc1de63a39f7fcbfe2234e3f372b5e1c6a286087
+ms.openlocfilehash: 454a994da6db2841317d41ea1cdacfd36b0705e4
+ms.sourcegitcommit: 720b74dddb1cdf4e570d55103158304ee1df81f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65708242"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68606471"
 ---
 # <a name="creating-an-mfc-application"></a>MFC Uygulaması Oluşturma
 
-Bir MFC uygulaması, Microsoft Foundation Class (MFC) kitaplığına dayalı Windows için yürütülebilir bir uygulamadır. Bir MFC uygulaması oluşturmak için en kolay yolu MFC Uygulama Sihirbazı'nı kullanmaktır.
+MFC uygulaması, Microsoft Foundation Class (MFC) kitaplığı 'nı temel alan Windows için yürütülebilir bir uygulamadır. MFC uygulaması oluşturmanın en kolay yolu MFC Uygulama Sihirbazı 'Nı kullanmaktır (Visual Studio 2019 ' de**MFC Uygulama Projesi** ). Bir MFC konsol uygulaması oluşturmak için, Windows Masaüstü Sihirbazı 'Nı kullanın ve **konsol uygulaması** ve **MFC üstbilgileri** seçeneklerini belirleyin.
 
 > [!IMPORTANT]
->  MFC projeleri Visual Studio Express sürümlerinde desteklenmez.
+>  MFC projeleri Visual Studio Express sürümlerde desteklenmez.
 
-MFC yürütülebilir dosyaları genelde beş türe ayrılır ayrılır: standart Windows uygulamaları, iletişim kutuları, form tabanlı uygulamalar, Explorer stilinde uygulamalar ve Web tarayıcısı stilinde uygulamalar. Daha fazla bilgi için bkz.:
+MFC yürütülebilir dosyaları genellikle beş türe ayrılır: standart Windows uygulamaları, iletişim kutuları, form tabanlı uygulamalar, Gezgin stili uygulamalar ve Web tarayıcı stili uygulamalar. Daha fazla bilgi için bkz.:
 
 - [Windows uygulamaları yazmak için sınıfları kullanma](../../mfc/using-the-classes-to-write-applications-for-windows.md)
 
@@ -32,22 +32,22 @@ MFC yürütülebilir dosyaları genelde beş türe ayrılır ayrılır: standart
 
 - [Web Tarayıcısı Stilinde MFC Uygulaması Oluşturma](../../mfc/reference/creating-a-web-browser-style-mfc-application.md)
 
-MFC Uygulama Sihirbazı uygun sınıf ve tüm uygulamalar, sihirbazda seçtiğiniz seçeneklere bağlı olarak bu tür dosyaları oluşturur.
+MFC Uygulama Sihirbazı, sihirbazda belirlediğiniz seçeneklere bağlı olarak, bu tür uygulamalardan herhangi biri için uygun sınıfları ve dosyaları oluşturur.
 
-### <a name="to-create-an-mfc-application-using-the-mfc-application-wizard"></a>MFC Uygulama Sihirbazı'nı kullanarak bir MFC uygulaması oluşturmak için
+### <a name="to-create-an-mfc-application-using-the-mfc-application-wizard"></a>MFC Uygulama Sihirbazı 'Nı kullanarak bir MFC uygulaması oluşturmak için
 
-1. Yardım konusundaki yönergeleri izleyerek [C++ konsol uygulama projesi oluşturma](../../get-started/tutorial-console-cpp.md).
+1. Konsol uygulaması projesi oluşturma yardım konusundaki yönergeleri izleyin. [ C++ ](../../get-started/tutorial-console-cpp.md)
 
-1. İçinde **yeni proje** iletişim kutusunda **MFC uygulaması** sihirbazını açmak için şablonlar bölmesindeki.
+1. **Yeni proje** iletişim kutusunda, Sihirbazı açmak için şablonlar bölmesindeki **MFC uygulaması** ' nı seçin.
 
-1. Kullanarak uygulama ayarlarınızı tanımlayın [MFC Uygulama Sihirbazı](../../mfc/reference/mfc-application-wizard.md).
+1. [MFC Uygulama Sihirbazı 'nı](../../mfc/reference/mfc-application-wizard.md)kullanarak uygulama ayarlarınızı tanımlayın.
 
     > [!NOTE]
-    >  Sihirbaz tutmak için bu adımı atlayın varsayılan ayarlar.
+    >  Sihirbazın varsayılan ayarlarını korumak için bu adımı atlayın.
 
-1. Tıklayın **son** sihirbazı kapatın ve geliştirme ortamında yeni projenizi açın.
+1. Sihirbazı kapatmak için **son** ' a tıklayın ve yeni projenizi geliştirme ortamında açın.
 
-Projeniz oluşturulduktan sonra oluşturulan dosyalar görüntüleyebileceğiniz **Çözüm Gezgini**. Projeniz için sihirbaz dosyaları hakkında daha fazla bilgi için proje tarafından oluşturulan ReadMe.txt dosyasına bakın. Dosya türleri hakkında daha fazla bilgi için bkz. [Visual Studio için oluşturulan dosya türleri C++ projeleri](../../build/reference/file-types-created-for-visual-cpp-projects.md).
+Projeniz oluşturulduktan sonra, **Çözüm Gezgini**oluşturulan dosyaları görüntüleyebilirsiniz. Sihirbazın projeniz için oluşturduğu dosyalar hakkında daha fazla bilgi için, proje tarafından oluşturulan ReadMe. txt dosyasına bakın. Dosya türleri hakkında daha fazla bilgi için bkz. [Visual Studio C++ projeleri Için oluşturulan dosya türleri](../../build/reference/file-types-created-for-visual-cpp-projects.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

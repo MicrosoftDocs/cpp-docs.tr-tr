@@ -429,18 +429,7 @@
                 - name: NMake özellik sayfaları
                   href: build/reference/nmake-property-page.md
                 - name: Bildirim aracı özellik sayfaları
-                  expanded: false
-                  items:
-                    - name: Bildirim aracı özellik sayfaları
-                      href: build/reference/manifest-tool-property-pages.md
-                    - name: 'Genel, Bildirim aracı, Yapılandırma Özellikleri, <Projectname> özellik sayfaları iletişim kutusu'
-                      href: build/reference/general-manifest-tool-configuration-properties.md
-                    - name: 'Girdi ve Çıktı, Bildirim Aracı, Yapılandırma Özellikleri, <Projectname> özellik sayfaları iletişim kutusu'
-                      href: build/reference/input-and-output-manifest-tool.md
-                    - name: 'Yalıtılmış COM, Bildirim Aracı, Yapılandırma Özellikleri, <Projectname> özellik sayfaları iletişim kutusu'
-                      href: build/reference/isolated-com-manifest-tool.md
-                    - name: 'Gelişmiş, Bildirim Aracı, Yapılandırma Özellikleri, <Projectname> özellik sayfaları iletişim kutusu'
-                      href: build/reference/advanced-manifest-tool.md
+                  href: build/reference/manifest-tool-property-pages.md
                 - name: Kaynaklar özellik sayfaları
                   href: build/reference/resources-property-pages.md
                 - name: Yönetilen kaynaklar özellik sayfası
@@ -456,16 +445,7 @@
                 - name: 'Özel derleme adımı özellik sayfası: Genel'
                   href: build/reference/custom-build-step-property-page-general.md
                 - name: HLSL özellik sayfaları
-                  expanded: false
-                  items:
-                    - name: HLSL özellik sayfaları
-                      href: build/reference/hlsl-property-pages.md
-                    - name: 'HLSL özellik sayfaları: Genel'
-                      href: build/reference/hlsl-property-pages-general.md
-                    - name: 'HLSL özellik sayfaları: Gelişmiş'
-                      href: build/reference/hlsl-property-pages-advanced.md
-                    - name: 'HLSL özellik sayfaları: Çıkış dosyaları'
-                      href: build/reference/hlsl-property-pages-output-files.md
+                  href: build/reference/hlsl-property-pages.md
         - name: MSVC derleyicisi başvurusu
           expanded: false
           items:
@@ -1607,10 +1587,10 @@
 - name: Windows masaüstü geliştirme
   expanded: false
   items:
-    - name: C++ içinde Masaüstü Uygulamaları
-      href: windows/desktop-applications-visual-cpp.md
     - name: C++ içinde Windows programlamasına genel bakış
       href: windows/overview-of-windows-programming-in-cpp.md
+    - name: C++ içinde Masaüstü Uygulamaları
+      href: windows/desktop-applications-visual-cpp.md
     - name: 'İzlenecek yol: Standart bir C++ programı oluşturma'
       href: windows/walkthrough-creating-a-standard-cpp-program-cpp.md
     - name: 'İzlenecek yol: Windows Masaüstü uygulamaları oluşturma'
