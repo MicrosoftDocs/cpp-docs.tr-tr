@@ -405,7 +405,7 @@
                   href: build/reference/vcxproj-file-structure.md
                 - name: Örnek proje dosyası
                   href: build/reference/project-files.md
-            - name: C++ proje özellikleri başvurusu
+            - name: C++ proje özelliği sayfaları
               expanded: false
               items:
                 - name: C++ proje özellikleri başvurusu
@@ -416,6 +416,8 @@
                   href: build/reference/general-property-page-file.md
                 - name: Gelişmiş özellik sayfası
                   href: build/reference/advanced-property-page.md
+                - name: Hata ayıklama özelliği sayfaları
+                  href: build/reference/debugging-prop-pages.md
                 - name: VC++ Dizinleri özellik sayfası
                   href: build/reference/vcpp-directories-property-page.md
                 - name: C/C++ özellik sayfaları
@@ -4351,6 +4353,13 @@
                   href: cpp/assertion-and-user-supplied-messages-cpp.md
                 - name: static_assert
                   href: cpp/static-assert.md
+            - name: Modüller
+              expanded: false
+              items:
+                - name: C++ içindeki modüllere genel bakış
+                  href: cpp/modules-cpp.md
+                - name: 'modül, içeri aktarma, dışarı aktarma'
+                  href: cpp/import-export-module.md
             - name: Şablonlar
               expanded: false
               items:
