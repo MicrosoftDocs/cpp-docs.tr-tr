@@ -1,29 +1,29 @@
 ---
 title: if-else Deyimi (C++)
-ms.date: 07/17/2017
+ms.date: 07/20/2019
+description: Koşullu dallanmayı denetlemek için içinde C++ If-Else deyimlerini kullanın.
 f1_keywords:
 - else_cpp
 - if_cpp
 helpviewer_keywords:
 - if keyword [C++]
 - else keyword [C++]
-- if keyword [C++], if-else
 ms.assetid: f8c45cde-6bce-42ae-81db-426b3dbd4caa
-ms.openlocfilehash: 16aa65ab64d9fd855ae3306da88f8eb14eec759c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 0e9de2d39e09e148c7e4f3ea82c3dadb173c2d0c
+ms.sourcegitcommit: 20a1356193fbe0ddd1002e798b952917eafc3439
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62183654"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68661634"
 ---
 # <a name="if-else-statement-c"></a>if-else Deyimi (C++)
 
-Koşullu dallanmayı denetler. Deyimlerinde *If Bloğu* yalnızca yürütülen *IF ifadesi* bir sıfır olmayan bir değer (veya TRUE) değerlendirir. Varsa değerini *ifade* sıfır değilse, *Deyim1* bloğundaki herhangi bir deyim yürütülür ve else-bloğu, varsa atlanır. Varsa değerini *ifade* sıfırsa, ardından If Bloğu atlanır ve else-bloğu, varsa yürütülür. Sıfır olmayan için değerlendirme ifadeler
+Koşullu dallanmayı denetler. *IF-Block* içindeki deyimler yalnızca *If-expression* sıfır olmayan BIR değer (veya true) olarak değerlendirilirse yürütülür. *İfadenin* değeri sıfır değilse, *Deyim1* ve bloktaki diğer deyimler yürütülür ve varsa Else-Block atlanır. *İfadenin* değeri sıfırsa, IF-Block atlanır ve varsa Else bloğu yürütülür. Sıfır olmayan şekilde değerlendiren ifadeler
 
 - TRUE
-- bir null olmayan işaretçi
-- sıfır olmayan aritmetik değerdeki, veya
-- bir aritmetik, mantıksal değer veya işaretçi belirsiz bir dönüştürmesini tanımlayan bir sınıf adı yazın. (Dönüştürmeler hakkında daha fazla bilgi için bkz. [standart dönüştürmeler](../cpp/standard-conversions.md).)
+- null olmayan bir işaretçi,
+- sıfır olmayan aritmetik değer veya
+- aritmetik, Boole veya işaretçi türüne belirsiz bir dönüştürme tanımlayan bir sınıf türü. (Dönüşümler hakkında bilgi için bkz. [Standart dönüştürmeler](../cpp/standard-conversions.md).)
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -39,7 +39,7 @@ else  // optional
    ...
 }
 
-// Visual Studio 2017 version 15.3 and later:
+// C++17 - Visual Studio 2017 version 15.3 and later:
 if ( initialization; expression )
 {
    statement1;
@@ -51,7 +51,7 @@ else  // optional
    ...
 }
 
-// Visual Studio 2017 version 15.3 and later:
+// C++17 - Visual Studio 2017 version 15.3 and later:
 if constexpr (expression)
 {
     statement1;
@@ -111,9 +111,9 @@ int main()
 }
 ```
 
-## <a name="if_with_init"></a> bir başlatıcı with deyimi
+## <a name="if_with_init"></a>Başlatıcı ile IF deyimleri
 
-**Visual Studio 2017 sürüm 15.3 ve üzeri** (bulunan [/Std: c ++ 17](../build/reference/std-specify-language-standard-version.md)): Bir **varsa** ifadesi bildirir ve adlandırılmış bir değişken başlatır bir ifade içerebilir. If Bloğu kapsamında değişken yalnızca gerektiğinde bu tür bir IF deyimi kullanın.
+**Visual Studio 2017 sürüm 15,3 ve üzeri** ( [/std: c++ 17](../build/reference/std-specify-language-standard-version.md)ile kullanılabilir): Bir **IF** deyimi, adlandırılmış bir değişkeni bildiren ve Başlatan bir ifade da içerebilir. Değişken yalnızca If-Block kapsamında gerektiğinde If-ifadesinin bu formunu kullanın.
 
 ## <a name="example"></a>Örnek
 
@@ -159,13 +159,13 @@ int main()
 }
 ```
 
-İçindeki tüm biçimlerinin **varsa** deyimi *ifade*, bir yapı dışında herhangi bir değer olan değerlendirilir, tüm yan etkileri de dahil olmak üzere. Denetim geçer **varsa** deyimi programdaki sonraki deyime sürece birini *deyimi*s içeren bir [sonu](../cpp/break-statement-cpp.md), [Devam](../cpp/continue-statement-cpp.md), veya [goto](../cpp/goto-statement-cpp.md).
+**IF** deyiminin tüm formlarında, bir yapı dışında herhangi bir değere sahip olabilen *ifade*, tüm yan etkiler dahil değerlendirilir. Denetim, **IF** ifadesinden bir [Break](../cpp/break-statement-cpp.md), [Continue](../cpp/continue-statement-cpp.md)veya [goto](../cpp/goto-statement-cpp.md)içermiyorsa, programdaki Next ifadesine geçer.
 
-**Başka** yan tümcesi bir `if...else` deyimi en yakın ilişkili önceki **varsa** deyimi karşılık gelen sahip değil aynı kapsamda **başka** deyimi.
+Bir `if...else` deyimin else yan tümcesi, aynı kapsamda karşılık gelen bir **Else** deyimi olmayan en yakın önceki if ifadesiyle ilişkilidir.
 
-## <a name="a-nameifconstexpr-if-constexpr-statements"></a><a name="if_constexpr"> constexpr deyimleri
+## <a name="a-nameifconstexpr-if-constexpr-statements"></a><a name="if_constexpr">Eğer constexpr deyimleri
 
-**Visual Studio 2017 sürüm 15.3 ve üzeri** (bulunan [/Std: c ++ 17](../build/reference/std-specify-language-standard-version.md)): İşlev şablonları kullanabilirsiniz bir **, constexpr** derleme zamanı dallanma için birden çok işlev aşırı yüklemelerinin başvurmadan gerek kalmadan kararları vermek için deyimi. Örneğin, tek bir işlev, (hiçbir sıfır parametresi aşırı yüklemesi gerekli değildir) bu tanıtıcıları parametresi açmak yazabilirsiniz:
+**Visual Studio 2017 sürüm 15,3 ve üzeri** ( [/std: c++ 17](../build/reference/std-specify-language-standard-version.md)ile kullanılabilir): İşlev şablonlarında, birden çok işlev aşırı yüküne gerek duymadan derleme zamanı dallanma kararları almak için bir **IF constexpr** ifadesini kullanabilirsiniz. Örneğin, parametre açma işlemi gerçekleştiren tek bir işlev yazabilirsiniz (sıfır parametre aşırı yüklemesi gerekmez):
 
 ```cpp
 template <class T, class... Rest>

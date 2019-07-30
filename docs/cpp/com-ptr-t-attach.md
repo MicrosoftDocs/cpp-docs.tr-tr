@@ -37,9 +37,9 @@ TRUE ise, `AddRef` çağrılır. FALSE ise `_com_ptr_t` Nesne sahipliği çağı
 
 ## <a name="remarks"></a>Açıklamalar
 
-- **Ekleme (***pInterface***)** `AddRef` çağrılmaz. Arabirim sahipliğinin için geçirilen `_com_ptr_t` nesne. `Release` daha önce Kapsüllenen işaretçi için başvuru sayısını azaltma için çağrılır.
+- **Ekleme (** *pInterface* **)** `AddRef` çağrılmaz. Arabirim sahipliğinin için geçirilen `_com_ptr_t` nesne. `Release` daha önce Kapsüllenen işaretçi için başvuru sayısını azaltma için çağrılır.
 
-- **Ekleme (***pInterface* **,***fAddRef***)** varsa *fAddRef* TRUE ise `AddRef`kapsüllenmiş arabirim işaretçisini için başvuru sayısını artırmak için çağrılır. Varsa *fAddRef* yanlış, bu `_com_ptr_t` Nesne sahipliği çağırmadan ham arabirim işaretçisi alır `AddRef`. `Release` daha önce Kapsüllenen işaretçi için başvuru sayısını azaltma için çağrılır.
+- **Ekleme (** *pInterface* **,** *fAddRef* **)** varsa *fAddRef* TRUE ise `AddRef`kapsüllenmiş arabirim işaretçisini için başvuru sayısını artırmak için çağrılır. Varsa *fAddRef* yanlış, bu `_com_ptr_t` Nesne sahipliği çağırmadan ham arabirim işaretçisi alır `AddRef`. `Release` daha önce Kapsüllenen işaretçi için başvuru sayısını azaltma için çağrılır.
 
 **END Microsoft özgü**
 

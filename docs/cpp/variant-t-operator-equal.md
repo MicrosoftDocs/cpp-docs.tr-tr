@@ -119,35 +119,35 @@ _variant_t& operator=(
 
 İşleç, `_variant_t` nesnesine yeni bir değer atar:
 
-- **operator = (***varSrc***)** varolan atar `VARIANT` için bir `_variant_t` nesne.
+- **operator = (** *varSrc* **)** varolan atar `VARIANT` için bir `_variant_t` nesne.
 
-- **operator = (***pVarSrc***)** varolan atar `VARIANT` için bir `_variant_t` nesne.
+- **operator = (** *pVarSrc* **)** varolan atar `VARIANT` için bir `_variant_t` nesne.
 
-- **operator = (***; var_t_src &***)** varolan atar `_variant_t` nesnesini bir `_variant_t` nesne.    
+- **operator = (** *; var_t_src &* **)** varolan atar `_variant_t` nesnesini bir `_variant_t` nesne.
 
-- **operator = (***sSrc***)** atar bir **kısa** tamsayı değerini bir `_variant_t` nesne.
+- **operator = (** *sSrc* **)** atar bir **kısa** tamsayı değerini bir `_variant_t` nesne.
 
-- **operator = (**`lSrc`**)** atar bir **uzun** tamsayı değerini bir `_variant_t` nesne.
+- **operator = (** `lSrc` **)** atar bir **uzun** tamsayı değerini bir `_variant_t` nesne.
 
-- **operator = (***; fltsrc &***)** atar bir **float** sayısal değeri bir `_variant_t` nesne.
+- **operator = (** *; fltsrc &* **)** atar bir **float** sayısal değeri bir `_variant_t` nesne.
 
-- **operator = (***; dblsrc &***)** atar bir **çift** sayısal değeri bir `_variant_t` nesne.
+- **operator = (** *; dblsrc &* **)** atar bir **çift** sayısal değeri bir `_variant_t` nesne.
 
-- **operator = (***cysrc &***)** atar bir `CY` nesnesini bir `_variant_t` nesne.
+- **operator = (** *cysrc &* **)** atar bir `CY` nesnesini bir `_variant_t` nesne.
 
-- **operator = (***bstrSrc***)** atar bir `BSTR` nesnesini bir `_variant_t` nesne.
+- **operator = (** *bstrSrc* **)** atar bir `BSTR` nesnesini bir `_variant_t` nesne.
 
-- **operator = (***; wstrsrc &***)** atar bir Unicode dizesini bir `_variant_t` nesne.
+- **operator = (** *; wstrsrc &* **)** atar bir Unicode dizesini bir `_variant_t` nesne.
 
-- **operator = (**`strSrc`**)** çok baytlı bir string'e atar bir `_variant_t` nesne.
+- **operator = (** `strSrc` **)** çok baytlı bir string'e atar bir `_variant_t` nesne.
 
 - **operator = (** `bSrc` **)** atar bir **bool** değerini bir `_variant_t` nesne.
 
-- **operator = (***; pdispsrc &***)** atar bir `VT_DISPATCH` nesnesini bir `_variant_t` nesne.
+- **operator = (** *; pdispsrc &* **)** atar bir `VT_DISPATCH` nesnesini bir `_variant_t` nesne.
 
-- **operator = (***pıunknownsrc &***)** atar bir `VT_UNKNOWN` nesnesini bir `_variant_t` nesne.
+- **operator = (** *pıunknownsrc &* **)** atar bir `VT_UNKNOWN` nesnesini bir `_variant_t` nesne.
 
-- **operator = (***decSrc***)** atar bir `DECIMAL` değerini bir `_variant_t` nesne.
+- **operator = (** *decSrc* **)** atar bir `DECIMAL` değerini bir `_variant_t` nesne.
 
 - **operator = (** `bSrc` **)** atar bir `BYTE` değerini bir `_variant_t` nesne.
 

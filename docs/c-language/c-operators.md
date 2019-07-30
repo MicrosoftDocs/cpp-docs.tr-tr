@@ -44,11 +44,11 @@ Soldan sağa ilişkilendirilen ikili işleçler. C, aşağıdaki ikili işleçle
 |**&&** **&#124;&#124;**|Mantıksal işleçler|
 |**,**|Sıralı değerlendirme işleci|
 
-Temel işleç (**: >**), Microsoft 16 bit C derleyicisinin önceki sürümleri tarafından desteklenen, açıklanan [C dili sözdizimi özeti](../c-language/c-language-syntax-summary.md).
+Temel işleç ( **: >** ), Microsoft 16 bit C derleyicisinin önceki sürümleri tarafından desteklenen, açıklanan [C dili sözdizimi özeti](../c-language/c-language-syntax-summary.md).
 
 Koşullu ifade işleci, ikili ifadelere göre daha düşük önceliğe sahiptir ve sağla ilişkilendirilebilir olduğu için onlardan farklıdır.
 
-İşleçlere sahip ifadeler, tekli veya ikili atama işleçleri kullanan atama ifadeleri de içerir. Tekli atama işleçleri, artırma olan (**++**) ve azaltma (**--**) işleçleridir; ikili atama işleçleri basit atama işleci (olan**=**) ve bileşik atama işleçleridir. Her bileşik atama işleci, başka bir ikili işlecin basit atama işleciyle birleşiminden oluşur.
+İşleçlere sahip ifadeler, tekli veya ikili atama işleçleri kullanan atama ifadeleri de içerir. Tekli atama işleçleri, artırma olan ( **++** ) ve azaltma ( **--** ) işleçleridir; ikili atama işleçleri basit atama işleci (olan **=** ) ve bileşik atama işleçleridir. Her bileşik atama işleci, başka bir ikili işlecin basit atama işleciyle birleşiminden oluşur.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

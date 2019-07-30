@@ -200,39 +200,39 @@ Bir **unsigned __int64** yeni içine kopyalanacak değeri `_variant_t` nesne.
 
 - **_variant_t ()** boş yapıları `_variant_t` nesnesi `VT_EMPTY`.
 
-- **_variant_t (değişken &***varSrc***)** oluşturan bir `_variant_t` nesnesinin bir kopyasını `VARIANT` nesne.     Değişken türü korunur.
+- **_variant_t (değişken &** *varSrc* **)** oluşturan bir `_variant_t` nesnesinin bir kopyasını `VARIANT` nesne. Değişken türü korunur.
 
-- **_variant_t (değişken**<strong>\*</strong>*pVarSrc***)** oluşturan bir `_variant_t` nesnesinin bir kopyasını `VARIANT` nesne.     Değişken türü korunur.
+- **_variant_t (değişken**<strong>\*</strong>*pVarSrc* **)** oluşturan bir `_variant_t` nesnesinin bir kopyasını `VARIANT` nesne. Değişken türü korunur.
 
-- **_variant_t (_variant_t &***; var_t_src &***)** oluşturan bir `_variant_t` başka bir nesne `_variant_t` nesne.     Değişken türü korunur.
+- **_variant_t (_variant_t &** *; var_t_src &* **)** oluşturan bir `_variant_t` başka bir nesne `_variant_t` nesne. Değişken türü korunur.
 
-- **_variant_t (değişken &***varSrc* **, bool**`fCopy`**)** oluşturan bir `_variant_t` mevcut bir nesne `VARIANT` nesne.       Varsa *fCopy* olduğu **false**, **değişken** nesne yeni nesneye bir kopyası oluşturmadan eklenir.
+- **_variant_t (değişken &** *varSrc* **, bool**`fCopy` **)** oluşturan bir `_variant_t` mevcut bir nesne `VARIANT` nesne. Varsa *fCopy* olduğu **false**, **değişken** nesne yeni nesneye bir kopyası oluşturmadan eklenir.
 
-- **_variant_t (kısa***sSrc* **, VARTYPE**`vtSrc`**VT_I2 =)** oluşturan bir `_variant_t` nesne türünün VT_I2 veya VT_BOOL bir **kısa** tamsayı değeri.       Diğer `VARTYPE` E_INVALIDARG hatayla sonuçlanır.
+- **_variant_t (kısa***sSrc* **, VARTYPE**`vtSrc`**VT_I2 =)** oluşturan bir `_variant_t` nesne türünün VT_I2 veya VT_BOOL bir **kısa** tamsayı değeri. Diğer `VARTYPE` E_INVALIDARG hatayla sonuçlanır.
 
-- **_variant_t (uzun** `lSrc` **, VARTYPE**`vtSrc`**VT_I4 =)** oluşturan bir `_variant_t` VT_I4, VT_BOOL veya gelen VT_ERROR türündeki nesne bir **uzun**  tamsayı değeri.       Diğer `VARTYPE` E_INVALIDARG hatayla sonuçlanır.
+- **_variant_t (uzun** `lSrc` **, VARTYPE**`vtSrc`**VT_I4 =)** oluşturan bir `_variant_t` VT_I4, VT_BOOL veya gelen VT_ERROR türündeki nesne bir **uzun**  tamsayı değeri. Diğer `VARTYPE` E_INVALIDARG hatayla sonuçlanır.
 
-- **_variant_t (float**`fltSrc`**)** oluşturan bir `_variant_t` VT_R4 türünden nesnenin bir **float** sayısal değer.    
+- **_variant_t (float**`fltSrc` **)** oluşturan bir `_variant_t` VT_R4 türünden nesnenin bir **float** sayısal değer.
 
-- **_variant_t (çift** `dblSrc` **, VARTYPE**`vtSrc`**VT_R8 =)** oluşturan bir `_variant_t` VT_R8 veya gelen VT_DATE türündeki nesne bir **çift** sayısal değer.       Diğer `VARTYPE` E_INVALIDARG hatayla sonuçlanır.
+- **_variant_t (çift** `dblSrc` **, VARTYPE**`vtSrc`**VT_R8 =)** oluşturan bir `_variant_t` VT_R8 veya gelen VT_DATE türündeki nesne bir **çift** sayısal değer. Diğer `VARTYPE` E_INVALIDARG hatayla sonuçlanır.
 
-- **_variant_t (CY &**`cySrc`**)** oluşturan bir `_variant_t` nesnesi türü alanından VT_CY bir `CY` nesne.    
+- **_variant_t (CY &** `cySrc` **)** oluşturan bir `_variant_t` nesnesi türü alanından VT_CY bir `CY` nesne.
 
-- **_variant_t (_bstr_t &**`bstrSrc`**)** oluşturan bir `_variant_t` nesnesi türü alanından VT_BSTR bir `_bstr_t` nesne.     Yeni bir `BSTR` ayrılır.
+- **_variant_t (_bstr_t &** `bstrSrc` **)** oluşturan bir `_variant_t` nesnesi türü alanından VT_BSTR bir `_bstr_t` nesne. Yeni bir `BSTR` ayrılır.
 
-- **_variant_t (wchar_t** <strong>\*</strong> *; wstrsrc &***)** oluşturan bir `_variant_t` bir Unicode dize VT_BSTR türünden nesne.   Yeni bir `BSTR` ayrılır.
+- **_variant_t (wchar_t** <strong>\*</strong> *; wstrsrc &* **)** oluşturan bir `_variant_t` bir Unicode dize VT_BSTR türünden nesne. Yeni bir `BSTR` ayrılır.
 
-- **_variant_t (char**<strong>\*</strong>`strSrc`**)** oluşturan bir `_variant_t` bir dizeden VT_BSTR türündeki nesne.     Yeni bir `BSTR` ayrılır.
+- **_variant_t (char**<strong>\*</strong>`strSrc` **)** oluşturan bir `_variant_t` bir dizeden VT_BSTR türündeki nesne. Yeni bir `BSTR` ayrılır.
 
-- **_variant_t (bool**`bSrc`**)** oluşturan bir `_variant_t` nesnesi türü alanından VT_BOOL bir **bool** değeri.    
+- **_variant_t (bool**`bSrc` **)** oluşturan bir `_variant_t` nesnesi türü alanından VT_BOOL bir **bool** değeri.
 
-- **_variant_t (IUnknown** <strong>\*</strong> `pIUknownSrc` **, bool**`fAddRef`**= true)** oluşturan bir `_variant_t` nesne türü Bir COM arabirimi işaretçiden VT_UNKNOWN.       Varsa `fAddRef` olan **true**, ardından `AddRef` çağrısı eşleştirmek için sağlanan arabirim işaretçisi olarak adlandırılan `Release` , gerçekleşir olduğunda `_variant_t` nesnesi yok edildiğinde. Size kalmıştır çağrılacak olan `Release` üzerinde sağlanan arabirim işaretçisi. Varsa `fAddRef` olduğu **false**, bu Oluşturucusu sağlanan arabirim işaretçisi sahipliğini alır; çağırmayın `Release` üzerinde sağlanan arabirim işaretçisi.
+- **_variant_t (IUnknown** <strong>\*</strong> `pIUknownSrc` **, bool**`fAddRef` **= true)** oluşturan bir `_variant_t` nesne türü Bir COM arabirimi işaretçiden VT_UNKNOWN. Varsa `fAddRef` olan **true**, ardından `AddRef` çağrısı eşleştirmek için sağlanan arabirim işaretçisi olarak adlandırılan `Release` , gerçekleşir olduğunda `_variant_t` nesnesi yok edildiğinde. Size kalmıştır çağrılacak olan `Release` üzerinde sağlanan arabirim işaretçisi. Varsa `fAddRef` olduğu **false**, bu Oluşturucusu sağlanan arabirim işaretçisi sahipliğini alır; çağırmayın `Release` üzerinde sağlanan arabirim işaretçisi.
 
-- **_variant_t (IDispatch** <strong>\*</strong> `pDispSrc` **, bool**`fAddRef`**= true)** oluşturan bir `_variant_t` nesnesi gt; vt_dıspatch & bir COM arabirimi işaretçiden türe ayarlar.       Varsa `fAddRef` olan **true**, ardından `AddRef` çağrısı eşleştirmek için sağlanan arabirim işaretçisi olarak adlandırılan `Release` , gerçekleşir olduğunda `_variant_t` nesnesi yok edildiğinde. Size kalmıştır çağrılacak olan `Release` üzerinde sağlanan arabirim işaretçisi. Varsa `fAddRef` olduğu **false**, bu Oluşturucusu sağlanan arabirim işaretçisi sahipliğini alır; çağırmayın `Release` üzerinde sağlanan arabirim işaretçisi.
+- **_variant_t (IDispatch** <strong>\*</strong> `pDispSrc` **, bool**`fAddRef` **= true)** oluşturan bir `_variant_t` nesnesi gt; vt_dıspatch & bir COM arabirimi işaretçiden türe ayarlar. Varsa `fAddRef` olan **true**, ardından `AddRef` çağrısı eşleştirmek için sağlanan arabirim işaretçisi olarak adlandırılan `Release` , gerçekleşir olduğunda `_variant_t` nesnesi yok edildiğinde. Size kalmıştır çağrılacak olan `Release` üzerinde sağlanan arabirim işaretçisi. Varsa `fAddRef` olduğu **false**, bu Oluşturucusu sağlanan arabirim işaretçisi sahipliğini alır; çağırmayın `Release` üzerinde sağlanan arabirim işaretçisi.
 
-- **_variant_t (ondalık &**`decSrc`**)** oluşturan bir `_variant_t` nesnesi türü alanından VT_DECIMAL bir `DECIMAL` değeri.    
+- **_variant_t (ondalık &** `decSrc` **)** oluşturan bir `_variant_t` nesnesi türü alanından VT_DECIMAL bir `DECIMAL` değeri.
 
-- **_variant_t (bayt**`bSrc`**)** oluşturan bir `_variant_t` türündeki nesne `VT_UI1` gelen bir `BYTE` değeri.    
+- **_variant_t (bayt**`bSrc` **)** oluşturan bir `_variant_t` türündeki nesne `VT_UI1` gelen bir `BYTE` değeri.
 
 **END Microsoft özgü**
 

@@ -1,19 +1,17 @@
 ---
 title: Başlatıcılar
-ms.date: 11/19/2018
+ms.date: 07/29/2019
+description: İçinde C++sınıfları, yapıları, dizileri ve temel türleri başlatma.
 helpviewer_keywords:
-- array-element initializers
-- initializing arrays [C++], initializers
 - arrays [C++], array-element initializers
-- declarators, as initializers
-- initializers, array element
+- aggregate initializers [C++]
 ms.assetid: ce301ed8-aa1c-47b2-bb39-9f0541b4af85
-ms.openlocfilehash: 1890899fb2ad63bff06d514ae8b18f9dc3ff9e21
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: fd926177dd7540d8dc1e8512e9f17e20a0b8238c
+ms.sourcegitcommit: 20a1356193fbe0ddd1002e798b952917eafc3439
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62183532"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68661610"
 ---
 # <a name="initializers"></a>Başlatıcılar
 
@@ -53,7 +51,7 @@ Başlatıcılar şu biçimleri alabilir:
     string s = "hello";
     ```
 
-- Bir küme ayracıyla belirtilen başlatıcı listesi. Liste boş olabilir veya listeleri, aşağıdaki örnekte olduğu gibi bir dizi oluşabilir:
+- Bir küme ayracıyla belirtilen başlatıcı listesi. Liste boş olabilir veya aşağıdaki örnekte olduğu gibi bir liste kümesinden oluşabilir:
 
     ```cpp
     struct Point{
@@ -83,11 +81,11 @@ Sıfır başlatma, sıfır değerindeki bir değişken ayarının örtülü olar
 
 - Sayısal değişkenler 0 olarak başlatılır (ya da 0.0 ya da 0.0000000000 vb.).
 
-- Char değişkenleri başlatıldığı `'\0'`.
+- Char değişkenleri olarak `'\0'`başlatılır.
 
-- İşaretçileri başlatıldığı **nullptr**.
+- İşaretçiler **nullptr**olarak başlatılır.
 
-- Diziler, [POD](../standard-library/is-pod-class.md) sınıflar, yapılar ve birleşimlerin bir sıfır değeri olarak başlatılan üyeleri vardır.
+- Diziler, [Pod](../standard-library/is-pod-class.md) sınıfları, yapılar ve birleşimler, üyelerine sıfır değer olarak başlatılmış.
 
 Farklı zamanlarda sıfır başlatma gerçekleştirilir:
 
@@ -116,9 +114,9 @@ int main() {
 }
 ```
 
-### <a name="default_initialization"></a> Varsayılan başlatma
+### <a name="default_initialization"></a>Varsayılan başlatma
 
-Sınıflar, yapılar ve birleşimler için varsayılan başlatma varsayılan bir Oluşturucu ile başlatma ' dir. Varsayılan oluşturucu veya hiçbir başlatma ifadesi ile çağrılabilir **yeni** anahtar sözcüğü:
+Sınıflar, yapılar ve birleşimler için varsayılan başlatma varsayılan bir oluşturucuyla başlatma. Varsayılan Oluşturucu, başlatma ifadesi olmadan veya **New** anahtar sözcüğüyle çağrılabilir:
 
 ```cpp
 MyClass mc1;
@@ -127,7 +125,7 @@ MyClass* mc3 = new MyClass;
 
 Sınıf, yapı veya birleşim varsayılan oluşturucuya sahip değilse, derleyici bir hata gösterir.
 
-Skaler değişkenleri, hiçbir başlatma ifadesiyle tanımlandıklarında varsayılan kullanılabilir. Belirsiz değerlere sahiptirler.
+Skalar değişkenler, başlatma ifadesi olmadan tanımlandıklarında varsayılan olarak başlatılır. Belirsiz değerlere sahiptirler.
 
 ```cpp
 int i1;
@@ -135,7 +133,7 @@ float f;
 char c;
 ```
 
-Hiçbir başlatma ifadesiyle tanımlandıklarında varsayılan dizilerdir. Bir dizi varsayılan olarak başlatıldığında, üyeleri varsayılan ve aşağıdaki örnekte olduğu gibi belirsiz değerlere sahip:
+Diziler, başlatma ifadesi olmadan tanımlandıklarında varsayılan olarak başlatılır. Bir dizi varsayılan olarak başlatıldığında, üyeleri varsayılan olarak başlatılmış olur ve aşağıdaki örnekte olduğu gibi belirsiz değerlere sahiptir:
 
 ```cpp
 int int_arr[3];
@@ -145,7 +143,7 @@ Dizi üyeleri varsayılan bir oluşturucuya sahip değilse, derleyici bir hata g
 
 #### <a name="default-initialization-of-constant-variables"></a>Sabit değişkenlerin varsayılan başlatması
 
-Sabit değişkenlerin bir başlatıcı ile birlikte bildirilmesi gerekir. Skaler türler olmaları durumunda, bunlar bir derleyici hatasına neden ve bunlar bir varsayılan oluşturucuya sahip sınıf türleriyse bir uyarıya neden olurlar:
+Sabit değişkenlerin bir başlatıcı ile birlikte bildirilmesi gerekir. Skalar türlerse, bir derleyici hatasına neden olur ve varsayılan bir oluşturucuya sahip sınıf türlerse bir uyarıya neden olur:
 
 ```cpp
 class MyClass{};
@@ -158,7 +156,7 @@ int main() {
 
 #### <a name="default-initialization-of-static-variables"></a>Statik değişkenlerin varsayılan başlatması
 
-Başlatıcı ile bildirilen statik değişkenler 0 (örtük olarak türe dönüştürülür) başlatılır.
+Başlatıcı olmadan belirtilen statik değişkenler 0 olarak başlatılır (örtük olarak türüne dönüştürülür).
 
 ```cpp
 class MyClass {
@@ -175,27 +173,27 @@ int main() {
 }
 ```
 
-Genel statik nesnelerin başlatılması hakkında daha fazla bilgi için bkz: [ek başlatma konuları](../cpp/additional-startup-considerations.md).
+Genel statik nesnelerin başlatılması hakkında daha fazla bilgi için bkz. [ek başlatma konuları](../cpp/additional-startup-considerations.md).
 
 ### <a name="value-initialization"></a>Değer başlatma
 
 Değer başlatma aşağıdaki durumlarda oluşur:
 
-- Adlandırılmış değer boş ayraç başlatma kullanılarak başlatılır.
+- adlandırılmış bir değer, boş küme ayracı başlatması kullanılarak başlatılır
 
-- Anonim bir geçici nesne boş ayraçlar veya küme ayraçları kullanılarak başlatılır
+- anonim bir geçici nesne, boş parantezler veya küme ayraçları kullanılarak başlatılır
 
-- bir nesne ile başlatılır **yeni** anahtar sözcüğünün yanında boş ayraçlar veya küme ayraçları
+- bir nesne **Yeni** anahtar sözcükle ve boş parantezlerle veya küme ayraçları ile başlatılır
 
-Değer başlatma şunu yapar:
+Değer başlatma şunları yapar:
 
-- en az bir ortak oluşturucuya sahip sınıflar için varsayılan oluşturucu çağrılır
+- en az bir ortak oluşturucuya sahip sınıflar için varsayılan Oluşturucu çağırılır
 
-- hiçbir bildirilen oluşturuculara sahip olmayan birliksiz sınıflar, nesne sıfır olarak başlatılır ve varsayılan oluşturucu çağrılır
+- tanımlı oluşturucuları olmayan birleşim olmayan sınıflar için, nesne sıfır olarak başlatılır ve varsayılan Oluşturucu çağırılır
 
-- diziler için her öğe değer ile başlatılır
+- diziler için her öğe değer tarafından başlatılır
 
-- Diğer durumlarda, değişken başlatılmamış sıfırdır
+- diğer tüm durumlarda, değişken sıfır olarak başlatılır
 
 ```cpp
 class BaseClass {
@@ -212,23 +210,23 @@ int main() {
 }
 ```
 
-### <a name="copy-initialization"></a>Kopya başlatma
+### <a name="copy-initialization"></a>Kopyalama başlatması
 
-Kopya başlatma, farklı bir nesne kullanarak bir nesnenin başlatmadır. Bunu, aşağıdaki durumlarda oluşur:
+Kopya başlatma, farklı bir nesne kullanan bir nesnenin başlatımı. Aşağıdaki durumlarda meydana gelir:
 
-- bir değişken eşittir işareti kullanılarak başlatılır.
+- bir değişken eşittir işareti kullanılarak başlatılır
 
 - bir bağımsız değişken bir işleve geçirilir
 
-- bir nesne bir işlevden döndürülür
+- bir işlevden bir nesne döndürülür
 
-- bir özel durum oluşturulur veya yakalanır
+- bir özel durum oluşturuldu veya yakalandı
 
-- Statik olmayan veri üyesi, eşittir işareti kullanılarak başlatılır
+- statik olmayan bir veri üyesi, eşittir işareti kullanılarak başlatılır
 
-- sınıf, yapı ve birlik üyeleri toplama başlatması sırasında kopya başlatma tarafından başlatılır. Bkz: [toplama başlatma](#agginit) örnekler.
+- sınıf, yapı ve birleşim üyeleri, toplu başlatma sırasında kopya başlatma tarafından başlatılır. Örnekler için bkz. [toplu başlatma](#agginit) .
 
-Aşağıdaki kod, birden fazla kopya başlatma örneklerini gösterir:
+Aşağıdaki kod, kopya başlatma için birkaç örnek gösterir:
 
 ```cpp
 #include <iostream>
@@ -272,19 +270,19 @@ Bazı durumlarda, sınıfın kopya oluşturucusu silinmişse veya erişilemezse,
 
 ### <a name="direct-initialization"></a>Doğrudan başlatma
 
-Doğrudan başlatma (boş olmayan) küme ayraçları veya ayraçlar kullanarak başlatma işlemi. Kopya başlatmanın aksine açık oluşturucuları çağırabilir: Bunu, aşağıdaki durumlarda oluşur:
+Doğrudan başlatma, (boş olmayan) kaşlı ayraçlar veya parantezler kullanılarak başlatma. Kopya başlatmanın aksine açık oluşturucuları çağırabilir: Aşağıdaki durumlarda meydana gelir:
 
-- bir değişken boş olmayan küme ayraçları veya ayraçlar ile başlatılır.
+- değişken boş olmayan küme ayraçları veya ayraçları ile başlatılır
 
-- bir değişken ile başlatılır **yeni** anahtar sözcüğünün yanında boş olmayan küme ayraçları veya ayraçlar
+- bir değişken **Yeni** anahtar sözcükle ve boş olmayan küme ayraçları veya parantezler ile başlatılır
 
-- bir değişken ile başlatılır **static_cast**
+- bir değişken **static_cast** ile başlatılır
 
 - bir oluşturucuda, temel sınıflar ve statik olmayan üyeler bir başlatıcı listesiyle başlatılır
 
-- bir lambda ifadesi içinde yakalanan bir değişkenin kopyalama
+- bir lambda ifadesi içinde yakalanan bir değişkenin kopyasında
 
-Aşağıdaki kod, bazı doğrudan başlatma örneklerini gösterir:
+Aşağıdaki kod, doğrudan başlatmanın bazı örneklerini göstermektedir:
 
 ```cpp
 class BaseClass{
@@ -315,23 +313,23 @@ int main(){
 
 ### <a name="list-initialization"></a>Liste başlatma
 
-Bir değişken bir küme ayracıyla belirtilen başlatıcı listesi kullanılarak başlatıldığında liste başlatma gerçekleşir. Küme ayracıyla belirtilen Başlatıcı Listeleri aşağıdaki durumlarda kullanılabilir:
+Bir değişken, bir örgü Başlatıcı listesi kullanılarak başlatıldığında liste başlatma gerçekleşir. Aşağıdaki durumlarda, örgü başlatıcı listeleri kullanılabilir:
 
-- bir değişken başlatılır
+- bir değişken başlatıldı
 
-- bir sınıf ile başlatılır **yeni** anahtar sözcüğü
+- **Yeni** anahtar sözcüğüyle bir sınıf başlatılır
 
-- bir nesne bir işlevden döndürülür
+- bir işlevden bir nesne döndürülür
 
-- bir işleve geçirilen bağımsız değişken
+- işleve geçirilen bir bağımsız değişken
 
-- doğrudan başlatmadaki bağımsız değişkenlerden biri
+- doğrudan başlatmada bağımsız değişkenlerden biri
 
-- bir statik olmayan veri üyesi başlatıcıları
+- statik olmayan bir veri üyesi başlatıcısında
 
-- bir oluşturucu başlatıcı listesinde
+- bir Oluşturucu başlatıcı listesinde
 
-Aşağıdaki kod, bazı liste başlatma örneklerini gösterir:
+Aşağıdaki kod, liste başlatmanın bazı örneklerini göstermektedir:
 
 ```cpp
 class MyClass {
@@ -364,22 +362,22 @@ int main() {
 }
 ```
 
-### <a name="agginit"></a> Toplama başlatma
+### <a name="agginit"></a>Toplu başlatma
 
 Toplama başlatma diziler veya sınıf türleri için (çoğunlukla yapılar veya birlikler) şunlara sahip olan bir liste başlatma biçimidir:
 
-- hiçbir özel veya korumalı üyeler
+- özel veya korumalı üye yok
 
-- açıkça varsayılan yapılmış veya silinmiş oluşturucular dışında hiçbir kullanıcı tarafından sağlanan oluşturucular
+- açıkça varsayılan olarak ayarlanmış veya silinmiş oluşturucular dışında Kullanıcı tarafından sunulan oluşturucular yok
 
-- temel olmayan sınıflar
+- temel sınıf yok
 
-- sanal üye işlev yok
+- sanal üye işlevi yok
 
 > [!NOTE]
-> <!--conformance note-->Visual Studio 2015 ve önceki sürümlerinde, bir toplama statik olmayan üyeler için küme ayracı-veya-eşittir Başlatıcısı için izin verilmiyor. Bu kısıtlama C ++ 14 standartı'kaldırıldı ve Visual Studio 2017'de uygulanır.
+> <!--conformance note-->Visual Studio 2015 ve önceki sürümlerde, bir toplamanın statik olmayan üyeler için küme ayracı veya eşit başlatıcılara sahip olmasına izin verilmez. Bu kısıtlama, C++ 14 standardında kaldırılmıştır ve Visual Studio 2017 ' de uygulanır.
 
-Toplama başlatıcıları ile veya aşağıdaki örnekteki gibi bir eşittir işareti olmadan bir küme ayracıyla belirtilen başlatma listesinden oluşur:
+Toplama başlatıcıları, aşağıdaki örnekte olduğu gibi, bir eşittir işareti olan veya olmayan bir yerleşik başlatma listesinden oluşur:
 
 ```cpp
 #include <iostream>
@@ -390,9 +388,14 @@ struct MyAggregate{
     char myChar;
 };
 
+struct MyAggregate2{
+    int myInt;
+    char myChar = 'Z'; // member-initializer OK in C++14
+};
+
 int main() {
     MyAggregate agg1{ 1, 'c' };
-
+    MyAggregate2 agg2{2};
     cout << "agg1: " << agg1.myChar << ": " << agg1.myInt << endl;
     cout << "agg2: " << agg2.myChar << ": " << agg2.myInt << endl;
 
@@ -418,17 +421,17 @@ Aşağıdaki çıktıyı görmeniz gerekir:
 
 ```Output
 agg1: c: 1
-agg2: d: 2
+agg2: Z: 2
 myArr1: 1 2 3 4
 myArr3: 8 9 10 0 0
 ```
 
 > [!IMPORTANT]
-> Bildirilmiş ancak toplama başlatma sırasında açıkça başlatılan dizi üyeleri sıfır başlatılır olarak `myArr3` yukarıda.
+> Toplanan, ancak toplama başlatma sırasında açıkça başlatılmamış dizi üyeleri, `myArr3` yukarıdaki gibi sıfır olarak başlatılır.
 
-#### <a name="initializing-unions-and-structs"></a>Birleşimleri ve yapıları başlatma
+#### <a name="initializing-unions-and-structs"></a>Birleşimler ve yapıları başlatma
 
-Bir birleşimin bir oluşturucu yoksa, tek bir değer (veya başka bir örneği bir birleşim ile) başlatabilirsiniz. Değer, ilk statik olmayan alanı başlatmak için kullanılır. Bu, içinde ilk alanı başlatmak için kullanılan ilk değerin, ikinci alanı başlatmak için ikincinin vb. bulunduğu yapı başlatmadan farklıdır. Başlatma birleşimlerin ve yapıların aşağıdaki örnekte karşılaştırın:
+Bir birleşimin Oluşturucusu yoksa, bunu tek bir değer (veya başka bir birleşim örneğiyle) başlatabilirsiniz. Değer, ilk statik olmayan alanı başlatmak için kullanılır. Bu, içinde ilk alanı başlatmak için kullanılan ilk değerin, ikinci alanı başlatmak için ikincinin vb. bulunduğu yapı başlatmadan farklıdır. Aşağıdaki örnekte birleşimler ve yapıların başlatılmasını karşılaştırın:
 
 ```cpp
 struct MyStruct {
@@ -459,9 +462,9 @@ int main() {
 }
 ```
 
-#### <a name="initializing-aggregates-that-contain-aggregates"></a>Toplamları içeren toplamaları başlatma
+#### <a name="initializing-aggregates-that-contain-aggregates"></a>Toplamaları içeren toplamaları başlatma
 
-Toplama türleri diğer toplama türleri, örneğin dizilerin dizileri, dizi yapılar vb. içerebilir. Bu tür, örneğin, ayraçlarının iç içe kümeleri kullanarak başlatılır:
+Toplam türler, dizi dizileri, yapı dizileri ve benzeri diğer toplama türlerini içerebilir. Bu türler, iç içe parantez kümesi kullanılarak başlatılır, örneğin:
 
 ```cpp
 struct MyStruct {
@@ -477,7 +480,7 @@ int main() {
 
 ### <a name="reference-initialization"></a>Başvuru başlatma
 
-Başvuru türü değişkenler, bir nesnenin bir başvuru türü türetilen türünü veya başvuru türü türetildiği türüne dönüştürülebilen bir türde bir nesne ile başlatılmalıdır. Örneğin:
+Başvuru türündeki değişkenler, başvuru türünün türetildiği türden bir nesne ile veya başvuru türünün türetildiği türe dönüştürülebilen bir türde bir nesne ile başlatılmış olmalıdır. Örneğin:
 
 ```cpp
 // initializing_references.cpp
@@ -494,15 +497,15 @@ int main()
 }
 ```
 
-Geçici bir nesne ile bir başvuruyu başlatmak üzere tek bir sabit geçici nesne başlatmak için yoludur. Başlatıldıktan sonra bir başvuru türü değişken her zaman aynı nesneye işaret eder; başka bir nesneye işaret edecek şekilde değiştirilemez.
+Geçici bir nesne ile başvuru başlatmanın tek yolu, sabit bir geçici nesneyi başlatmaktır. Başlatıldıktan sonra, bir başvuru türü değişkeni her zaman aynı nesneye işaret eder; başka bir nesneyi işaret etmek için değiştirilemez.
 
-Sözdizimi Başvuru türü değişkenlerin ve atama için aynı, başlatma olsa da, başvuru türü değişkenler anlamsal olarak farklı. Atamalar, önceki örnekte, değiştirme `iVar` ve `lVar` başlatmalar için benzer, ancak başka etkileri olabilir. Başlatma, başvuru türü değişkenin işaret ettiği nesnenin belirtir. başvurulan nesne başvurusu aracılığıyla atama atar.
+Söz dizimi aynı olsa da, başvuru türü değişkenlerinin başlatılması ve başvuru türü değişkenlerine atanması anlam olarak farklılık görebilir. Önceki örnekte, değişen `iVar` ve `lVar` başlatmaları gibi görünen atamalar, ancak farklı etkileri vardır. Başlatma, başvuru türü değişkenin işaret ettiği nesneyi belirtir; atama, başvuru aracılığıyla başvurulan nesnesine atar.
 
-Başvuru türünde bir bağımsız değişken bir işleve nasıl geçirileceğini hem başvuru türünde bir değer döndüren bir işlevden başlatmalar olduğundan, döndürülen başvuru olarak bir işlevin biçimsel bağımsız değişkenleri doğru başlatılır.
+Hem başvuru türünün bir bağımsız değişkenini bir işleve geçirme hem de bir işlevden başvuru türü değeri döndürme nedeniyle, döndürülen başvurular gibi bir işleve biçimsel bağımsız değişkenler doğru şekilde başlatılır.
 
-Başvuru türü değişkenler yalnızca içinde aşağıdaki başlatıcılar olmadan bildirilebilir:
+Başvuru türü değişkenleri yalnızca, başlatıcılar olmadan bildirilemez:
 
-- İşlev bildirimleri (prototipler). Örneğin:
+- İşlev bildirimleri (prototürler). Örneğin:
 
     ```cpp
     int func( int& );
@@ -514,27 +517,27 @@ Başvuru türü değişkenler yalnızca içinde aşağıdaki başlatıcılar olm
     int& func( int& );
     ```
 
-- Bir başvuru türü sınıf üyesinin bildirimi. Örneğin:
+- Başvuru türü sınıf üyesinin bildirimi. Örneğin:
 
     ```cpp
     class c {public:   int& i;};
     ```
 
-- Açıkça belirtilen bir değişkenin bildirimi **extern**. Örneğin:
+- Açıkça **extern**olarak belirtilen bir değişken bildirimi. Örneğin:
 
     ```cpp
     extern int& iVal;
     ```
 
-Derleyici aşağıdaki şekilde gösterilen karar grafiği bir başvuru türü değişken başlatılırken bir nesneye bir başvuru veya başvurunun işaret ettiği geçici bir nesne oluşturarak arasında seçmek için kullanır.
+Bir başvuru türü değişkeni başlatırken, derleyici bir nesneye başvuru oluşturma veya başvurunun işaret ettiği geçici bir nesne oluşturma arasında seçim yapmak için aşağıdaki şekilde gösterilen karar grafiğini kullanır.
 
-![Başvuru türlerinin başlatma için karar grafiği](../cpp/media/vc38s71.gif "karar grafiği başvuru türleri başlatma") <br/>
-Başvuru türlerinin başlatma için karar grafiği
+![Başvuru türlerinin başlatılması Için karar grafiği](../cpp/media/vc38s71.gif "Başvuru türlerinin başlatılması Için karar grafiği") <br/>
+Başvuru türlerinin başlatılması için karar grafiği
 
-Başvurular **geçici** türleri (olarak bildirilen **geçici** *typename* <strong>&</strong> *tanımlayıcısı*) ile başlatılabilir **geçici** nesneleri aynı türde veya olarak bildirilmemiş nesnelerle **geçici**. Olamaz, ancak, ile başlatılması **const** nesnelerin türü. Benzer şekilde, başvurular **const** türleri (olarak bildirilen **const** *typename* <strong>&</strong> *tanımlayıcısı* ) ile başlatılabilir **const** nesneleri aynı türdeki (veya bir dönüştürme türü veya nesnelerle olarak bildirilmemiş olan herhangi bir şeyi **const**). Olamaz, ancak, ile başlatılması **geçici** nesnelerin türü.
+**Geçici** türlere ( **geçici** *TypeName* <strong>&</strong> *tanımlayıcısı*olarak belirtilen) yapılan başvurular, aynı türdeki **geçici** nesnelerle veya **geçici** olarak bildirilmemiş nesnelerle başlatılabilir . Ancak, bu tür **const** nesneleriyle başlatılamaz. Benzer şekilde, **const** türlerine yapılan başvurular ( **const** *TypeName* <strong>&</strong> *tanımlayıcısı*olarak bildirilmiştir) aynı türdeki **const** nesneleriyle (veya bu türe ya da nesnelerle dönüştürmeye sahip olan herhangi bir şekilde) başlatılabilir **const**olarak bildirilmemiş). Ancak, bu türdeki **geçici** nesnelerle başlatılamaz.
 
-İle yetkili değil başvuruları **const** veya **geçici** anahtar sözcüğü, yalnızca hiçbiri bildirilen nesneler ile başlatılabilir **const** ya da  **volatile**.
+**Const** veya **volatile** anahtar sözcüğü ile nitelenen başvurular yalnızca **const** veya **volatile**olarak belirtilen nesneler ile başlatılabilir.
 
-### <a name="initialization-of-external-variables"></a>Dış değişkenleri başlatma
+### <a name="initialization-of-external-variables"></a>Dış değişkenlerin başlatılması
 
-Otomatik, statik ve dış değişkenler bildirimleri başlatıcılar içerebilir. Ancak, yalnızca değişkenleri olarak bildirilmedikçe dış değişkenlerin bildirimleri Başlatıcı içerebilir **extern**.
+Otomatik, statik ve dış değişkenlerin bildirimleri başlatıcılar içerebilir. Ancak, dış değişkenlerin bildirimleri yalnızca değişkenler **extern**olarak bildirilmemiş ise başlatıcılar içerebilir.
