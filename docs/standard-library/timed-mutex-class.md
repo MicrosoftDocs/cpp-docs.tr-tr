@@ -18,16 +18,16 @@ helpviewer_keywords:
 - std::timed_mutex [C++], try_lock_for
 - std::timed_mutex [C++], try_lock_until
 - std::timed_mutex [C++], unlock
-ms.openlocfilehash: 9aae1205866a0bf982ab7c41b792aac0f63ea149
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 6b9785dc41791be63d585d18802953eade370b2a
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62411961"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68459917"
 ---
 # <a name="timedmutex-class"></a>timed_mutex Sınıfı
 
-Temsil eden bir *mutex türünü zaman aşımına*. Bu tür nesneler bir program içindeki süre sınırlı engelleme üzerinden karşılıklı dışlama uygulamak için kullanılır.
+Süreli bir *mutex türünü*temsil eder. Bu türden nesneler, bir program içindeki zaman sınırlı engelleme aracılığıyla karşılıklı dışlamayı zorlamak için kullanılır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -41,28 +41,28 @@ class timed_mutex;
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[timed_mutex](#timed_mutex)|Oluşturur bir `timed_mutex` kilitli olmayan bir nesne.|
-|[timed_mutex:: ~ timed_mutex yıkıcısı](#dtortimed_mutex_destructor)|Tarafından kullanılan kaynakları serbest `timed_mutex` nesne.|
+|[timed_mutex](#timed_mutex)|Kilitli olmayan `timed_mutex` bir nesne oluşturur.|
+|[timed_mutex:: ~ timed_mutex yıkıcısı](#dtortimed_mutex_destructor)|`timed_mutex` Nesnesi tarafından kullanılan tüm kaynakları serbest bırakır.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[lock](#lock)|İş parçacığı sahipliğini alana kadar çağıran iş parçacığını engeller `mutex`.|
-|[try_lock](#try_lock)|Sahipliğini almayı dener `mutex` engelleme olmadan.|
-|[try_lock_for](#try_lock_for)|Sahipliğini almayı dener `mutex` belirtilen zaman aralığı için.|
-|[try_lock_until](#try_lock_until)|Sahipliğini almayı dener `mutex` belirli bir süre kadar.|
-|[Kilit açma](#unlock)|İn sahipliğini bırakır `mutex`.|
+|[lock](#lock)|İş parçacığı sahipliğini `mutex`alıncaya kadar çağıran iş parçacığını engeller.|
+|[try_lock](#try_lock)|`mutex` Engellemeden sahipliğini almaya çalışır.|
+|[try_lock_for](#try_lock_for)|Belirtilen zaman aralığı `mutex` için sahipliğini almaya çalışır.|
+|[try_lock_until](#try_lock_until)|Belirtilen bir zamana `mutex` kadar sahipliğini almaya çalışır.|
+|[kaldırın](#unlock)|Öğesinin sahipliğini yayınlar `mutex`.|
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** \<mutex >
+**Üst bilgi:** \<mutex >
 
-**Namespace:** std
+**Ad alanı:** std
 
-## <a name="lock"></a>  timed_mutex::LOCK
+## <a name="lock"></a>timed_mutex:: Lock
 
-İş parçacığı sahipliğini alana kadar çağıran iş parçacığını engeller `mutex`.
+İş parçacığı sahipliğini `mutex`alıncaya kadar çağıran iş parçacığını engeller.
 
 ```cpp
 void lock();
@@ -70,19 +70,19 @@ void lock();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çağıran iş parçacığı zaten sahipse `mutex`, davranış tanımlanmamıştır.
+Çağıran iş parçacığı öğesine zaten sahipse `mutex`, davranış tanımsızdır.
 
-## <a name="timed_mutex"></a>  timed_mutex::timed_mutex Oluşturucusu
+## <a name="timed_mutex"></a>timed_mutex:: timed_mutex Oluşturucusu
 
-Oluşturur bir `timed_mutex` kilitli olmayan bir nesne.
+Kilitli olmayan `timed_mutex` bir nesne oluşturur.
 
 ```cpp
 timed_mutex();
 ```
 
-## <a name="dtortimed_mutex_destructor"></a>  timed_mutex:: ~ timed_mutex yıkıcısı
+## <a name="dtortimed_mutex_destructor"></a>timed_mutex:: ~ timed_mutex yıkıcısı
 
-Tarafından kullanılan kaynakları serbest `mutex` nesne.
+`mutex` Nesnesi tarafından kullanılan tüm kaynakları serbest bırakır.
 
 ```cpp
 ~timed_mutex();
@@ -90,11 +90,11 @@ Tarafından kullanılan kaynakları serbest `mutex` nesne.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yıkıcı çalıştığında nesne kilitli değilse davranış tanımlanmamıştır.
+Yıkıcı çalıştırıldığında nesne kilitliyse, davranış tanımsızdır.
 
-## <a name="try_lock"></a>  timed_mutex::try_lock
+## <a name="try_lock"></a>timed_mutex::try_lock
 
-Sahipliğini almayı dener `mutex` engelleme olmadan.
+`mutex` Engellemeden sahipliğini almaya çalışır.
 
 ```cpp
 bool try_lock();
@@ -102,15 +102,15 @@ bool try_lock();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**doğru** yöntemi başarıyla sahipliğini elde ederse `mutex`; Aksi takdirde **false**.
+Yöntem öğesinin `mutex`sahipliğini başarıyla alırsa doğru, aksi takdirde **yanlış**olur.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çağıran iş parçacığı zaten sahipse `mutex`, davranış tanımlanmamıştır.
+Çağıran iş parçacığı öğesine zaten sahipse `mutex`, davranış tanımsızdır.
 
-## <a name="try_lock_for"></a>  timed_mutex::try_lock_for
+## <a name="try_lock_for"></a>timed_mutex::try_lock_for
 
-Sahipliğini almayı dener `mutex` engelleme olmadan.
+`mutex` Engellemeden sahipliğini almaya çalışır.
 
 ```cpp
 template <class Rep, class Period>
@@ -119,20 +119,20 @@ bool try_lock_for(const chrono::duration<Rep, Period>& Rel_time);
 
 ### <a name="parameters"></a>Parametreler
 
-*Rel_time*<br/>
-A [chrono::duration](../standard-library/duration-class.md) yöntemi sahipliğini almayı dener en uzun süreyi belirten nesne `mutex`.
+*Rel_time*\
+Bir zaman hatası: yöntemin sahipliğini `mutex`almaya çalıştığı maksimum süreyi belirten [:d uration](../standard-library/duration-class.md) nesnesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**doğru** yöntemi başarıyla sahipliğini elde ederse `mutex`; Aksi takdirde **false**.
+Yöntem öğesinin `mutex`sahipliğini başarıyla alırsa doğru, aksi takdirde **yanlış**olur.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çağıran iş parçacığı zaten sahipse `mutex`, davranış tanımlanmamıştır.
+Çağıran iş parçacığı öğesine zaten sahipse `mutex`, davranış tanımsızdır.
 
-## <a name="try_lock_until"></a>  timed_mutex::try_lock_until
+## <a name="try_lock_until"></a>timed_mutex::try_lock_until
 
-Sahipliğini almayı dener `mutex` engelleme olmadan.
+`mutex` Engellemeden sahipliğini almaya çalışır.
 
 ```cpp
 template <class Clock, class Duration>
@@ -143,20 +143,20 @@ bool try_lock_until(const xtime* Abs_time);
 
 ### <a name="parameters"></a>Parametreler
 
-*Abs_time*<br/>
-Sonra yöntemi artık girişimlerini sahipliğini almayı eşiği belirten zaman içinde nokta `mutex`.
+*Abs_time*\
+Bir zaman içinde, `mutex`yöntemin sahipliğini elde etme girişiminde bulunmayan eşiği belirten bir nokta.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**doğru** yöntemi başarıyla sahipliğini elde ederse `mutex`; Aksi takdirde **false**.
+Yöntem öğesinin `mutex`sahipliğini başarıyla alırsa doğru, aksi takdirde **yanlış**olur.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çağıran iş parçacığı zaten sahipse `mutex`, davranış tanımlanmamıştır.
+Çağıran iş parçacığı öğesine zaten sahipse `mutex`, davranış tanımsızdır.
 
 ## <a name="unlock"></a>  timed_mutex::unlock
 
-İn sahipliğini bırakır `mutex`.
+Öğesinin sahipliğini yayınlar `mutex`.
 
 ```cpp
 void unlock();
@@ -164,9 +164,9 @@ void unlock();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çağıran iş parçacığına ait olmayan, `mutex`, davranış tanımlanmamıştır.
+Çağıran iş parçacığı öğesine sahip `mutex`değilse, davranış tanımsızdır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Üstbilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md)<br/>
-[\<Mutex >](../standard-library/mutex.md)<br/>
+[Üst bilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md)\
+[\<mutex >](../standard-library/mutex.md)

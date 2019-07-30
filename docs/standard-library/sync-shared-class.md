@@ -12,16 +12,16 @@ helpviewer_keywords:
 - stdext::sync_shared [C++], deallocate
 - stdext::sync_shared [C++], equals
 ms.assetid: cab3af9e-3d1a-4f2c-8580-0f89e5687d8e
-ms.openlocfilehash: c368e99eb9f128963e90cdc1d39bdb9d4569efe9
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 72ed21d3a0fb519bca2e19b7fbface05d5ac64ce
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62412247"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68450245"
 ---
 # <a name="syncshared-class"></a>sync_shared Sınıfı
 
-Açıklayan bir [eşitleme filtresi](../standard-library/allocators-header.md) tüm ayırıcılar tarafından paylaşılan bir önbellek nesnesi erişimi bir mutex kullanan.
+Tüm ayırıcılar tarafından paylaşılan bir önbellek nesnesine erişimi denetlemek için bir mutex kullanan bir [eşitleme filtresi](../standard-library/allocators-header.md) tanımlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -34,25 +34,25 @@ class sync_shared
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|*Önbellek*|Eşitleme filtresiyle ilişkili önbellek türü. Bu, [cache_chunklist](../standard-library/cache-chunklist-class.md), [cache_freelist](../standard-library/cache-freelist-class.md), veya [cache_suballoc](../standard-library/cache-suballoc-class.md).|
+|*Önbellek*|Eşitleme filtresiyle ilişkili önbelleğin türü. Bu, [cache_chunklist](../standard-library/cache-chunklist-class.md), [cache_freelist](../standard-library/cache-freelist-class.md)veya [cache_suballoc](../standard-library/cache-suballoc-class.md)olabilir.|
 
 ### <a name="member-functions"></a>Üye işlevleri
 
 |Üye işlevi|Açıklama|
 |-|-|
-|[allocate](#allocate)|Bir bellek bloğu ayırır.|
-|[Serbest Bırak](#deallocate)|Belirtilen konumda depolama başından nesneleri belirtilen sayıda serbest bırakır.|
-|[equals](#equals)|Eşitlik için iki önbellekler karşılaştırır.|
+|[allocate](#allocate)|Bellek bloğunu ayırır.|
+|[kaldırmak](#deallocate)|Belirli bir konumdan başlayarak depolama alanından belirtilen sayıda nesneyi serbest bırakır.|
+|[equals](#equals)|, Eşitlik için iki önbelleği karşılaştırır.|
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** \<ayırıcılar >
+**Üst bilgi:** \<ayrıcılar >
 
-**Namespace:** stdext
+**Ad alanı:** stdext
 
-## <a name="allocate"></a>  sync_shared::allocate
+## <a name="allocate"></a>sync_shared:: allocate
 
-Bir bellek bloğu ayırır.
+Bellek bloğunu ayırır.
 
 ```cpp
 void *allocate(std::size_t count);
@@ -62,19 +62,19 @@ void *allocate(std::size_t count);
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|*Sayısı*|Ayrılacak dizideki öğelerin sayısı.|
+|*biriktirme*|Ayrılacak dizideki öğelerin sayısı.|
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Ayrılmış bir nesneye yönelik bir işaretçi.
+Ayrılan nesneye yönelik bir işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlev çağrıları mutex kilitler `cache.allocate(count)`karşılıklı dışlama kilidini açar ve önceki çağrı sonucunu döndürür `cache.allocate(count)`. `cache` Geçerli önbellek nesnesini temsil eder.
+Üye işlevi mutex 'i kilitler, çağırır `cache.allocate(count)`, mutex 'i kaldırır ve önceki `cache.allocate(count)`çağrının sonucunu döndürür. `cache`geçerli önbellek nesnesini temsil eder.
 
-## <a name="deallocate"></a>  sync_shared::deallocate
+## <a name="deallocate"></a>sync_shared::d eallocate
 
-Belirtilen konumda depolama başından nesneleri belirtilen sayıda serbest bırakır.
+Belirli bir konumdan başlayarak depolama alanından belirtilen sayıda nesneyi serbest bırakır.
 
 ```cpp
 void deallocate(void* ptr, std::size_t count);
@@ -84,16 +84,16 @@ void deallocate(void* ptr, std::size_t count);
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|*ptr*|Depolama alanından serbest bırakılması ilk nesneye bir işaretçi.|
-|*Sayısı*|Depolama alanından serbest bırakılması nesne sayısı.|
+|*ptr*|Depolamadan serbest bırakmak için ilk nesneye yönelik bir işaretçi.|
+|*biriktirme*|Depolamadan serbest bırakmak için nesne sayısı.|
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlev çağrıları mutex kilitler `cache.deallocate(ptr, count)`burada `cache` önbellek nesnesini temsil eder ve ardından karşılıklı dışlama kilidini açar.
+Bu üye işlevi, önbellek nesnesini `cache.deallocate(ptr, count)` `cache` temsil eden ve sonra mutex 'in kilidini eden mutex, çağrılarını kilitler.
 
-## <a name="equals"></a>  sync_shared::Equals
+## <a name="equals"></a>sync_shared:: Equals
 
-Eşitlik için iki önbellekler karşılaştırır.
+, Eşitlik için iki önbelleği karşılaştırır.
 
 ```cpp
 bool equals(const sync_shared<Cache>& Other) const;
@@ -103,15 +103,15 @@ bool equals(const sync_shared<Cache>& Other) const;
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|*Önbellek*|Eşitleme filtresiyle ilişkili önbellek türü.|
-|*Diğer*|Eşitlik için karşılaştırma önbellek.|
+|*Önbellek*|Eşitleme filtresiyle ilişkili önbelleğin türü.|
+|*Diğer*|Eşitlik için Karşılaştırılacak önbellek.|
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**doğru** varsa sonucunu `cache.equals(Other.cache)`burada `cache` önbellek nesnesini temsil eder, olan **true**; Aksi takdirde **false**.
+sonucu`cache.equals(Other.cache)`, Cache nesnesinitemsil eden, true ise true, aksi durumda false. `cache`
 
 ### <a name="remarks"></a>Açıklamalar
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[\<Ayırıcılar >](../standard-library/allocators-header.md)<br/>
+[\<ayrıcılar >](../standard-library/allocators-header.md)

@@ -18,16 +18,16 @@ helpviewer_keywords:
 - std::recursive_timed_mutex [C++], try_lock_for
 - std::recursive_timed_mutex [C++], try_lock_until
 - std::recursive_timed_mutex [C++], unlock
-ms.openlocfilehash: 2cb6fe8588f4b81ae5c67533c4b9124ae8c9b252
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 6ae61d17084cc744cac8819ac2c0ca48eb59add7
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62370079"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68460115"
 ---
 # <a name="recursivetimedmutex-class"></a>recursive_timed_mutex Sınıfı
 
-Temsil eden bir *mutex türünü zaman aşımına*. Bu tür nesneler bir program içindeki süre sınırlı engelleme kullanarak karşılıklı dışlama uygulamak için kullanılır. Türündeki nesneler aksine [timed_mutex](../standard-library/timed-mutex-class.md), kilitleme yöntemleri çağırma etkisini `recursive_timed_mutex` nesneleri, iyi tanımlanmış.
+Süreli bir *mutex türünü*temsil eder. Bu türden nesneler, bir program içindeki zaman sınırlı engellemeyi kullanarak karşılıklı dışlamanın uygulanmasını sağlamak için kullanılır. [Timed_mutex](../standard-library/timed-mutex-class.md)türündeki nesnelerden farklı olarak, nesneler için `recursive_timed_mutex` kilitleme yöntemlerinin çağrılması iyi bir şekilde tanımlanır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -41,28 +41,28 @@ class recursive_timed_mutex;
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[recursive_timed_mutex](#recursive_timed_mutex)|Oluşturur bir `recursive_timed_mutex` kilitli olmayan bir nesne.|
-|[~recursive_timed_mutex Destructor](#dtorrecursive_timed_mutex_destructor)|Tarafından kullanılan kaynakları serbest `recursive_timed_mutex` nesne.|
+|[recursive_timed_mutex](#recursive_timed_mutex)|Kilitli olmayan `recursive_timed_mutex` bir nesne oluşturur.|
+|[~recursive_timed_mutex Destructor](#dtorrecursive_timed_mutex_destructor)|`recursive_timed_mutex` Nesnesi tarafından kullanılan tüm kaynakları serbest bırakır.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[lock](#lock)|İş parçacığı sahipliğini alana kadar çağıran iş parçacığını engeller `mutex`.|
-|[try_lock](#try_lock)|Sahipliğini almayı dener `mutex` engelleme olmadan.|
-|[try_lock_for](#try_lock_for)|Sahipliğini almayı dener `mutex` belirtilen zaman aralığı için.|
-|[try_lock_until](#try_lock_until)|Sahipliğini almayı dener `mutex` belirli bir süre kadar.|
-|[Kilit açma](#unlock)|İn sahipliğini bırakır `mutex`.|
+|[lock](#lock)|İş parçacığı sahipliğini `mutex`alıncaya kadar çağıran iş parçacığını engeller.|
+|[try_lock](#try_lock)|`mutex` Engellemeden sahipliğini almaya çalışır.|
+|[try_lock_for](#try_lock_for)|Belirtilen zaman aralığı `mutex` için sahipliğini almaya çalışır.|
+|[try_lock_until](#try_lock_until)|Belirtilen bir zamana `mutex` kadar sahipliğini almaya çalışır.|
+|[kaldırın](#unlock)|Öğesinin sahipliğini yayınlar `mutex`.|
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** \<mutex >
+**Üst bilgi:** \<mutex >
 
-**Namespace:** std
+**Ad alanı:** std
 
-## <a name="lock"></a>  Kilit
+## <a name="lock"></a>ine
 
-İş parçacığı sahipliğini alana kadar çağıran iş parçacığını engeller `mutex`.
+İş parçacığı sahipliğini `mutex`alıncaya kadar çağıran iş parçacığını engeller.
 
 ```cpp
 void lock();
@@ -70,19 +70,19 @@ void lock();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çağıran iş parçacığı zaten sahipse `mutex`, yöntem hemen döner ve önceki kilidi yürürlükte kalır.
+Çağıran iş parçacığı öğesine zaten sahipse `mutex`, yöntemi hemen döndürür ve önceki kilit etkin kalır.
 
-## <a name="recursive_timed_mutex"></a>  recursive_timed_mutex Oluşturucusu
+## <a name="recursive_timed_mutex"></a>recursive_timed_mutex Oluşturucusu
 
-Oluşturur bir `recursive_timed_mutex` kilitli olmayan bir nesne.
+Kilitli olmayan `recursive_timed_mutex` bir nesne oluşturur.
 
 ```cpp
 recursive_timed_mutex();
 ```
 
-## <a name="dtorrecursive_timed_mutex_destructor"></a>  ~ recursive_timed_mutex yıkıcısı
+## <a name="dtorrecursive_timed_mutex_destructor"></a>~ recursive_timed_mutex yıkıcısı
 
-Tarafından kullanılan kaynakları serbest `recursive_timed_mutex` nesne.
+`recursive_timed_mutex` Nesnesi tarafından kullanılan tüm kaynakları serbest bırakır.
 
 ```cpp
 ~recursive_timed_mutex();
@@ -90,11 +90,11 @@ Tarafından kullanılan kaynakları serbest `recursive_timed_mutex` nesne.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yıkıcı çalıştığında nesne kilitli değilse davranış tanımlanmamıştır.
+Yıkıcı çalıştırıldığında nesne kilitliyse, davranış tanımsızdır.
 
-## <a name="try_lock"></a>  try_lock
+## <a name="try_lock"></a>try_lock
 
-Sahipliğini almayı dener `mutex` engelleme olmadan.
+`mutex` Engellemeden sahipliğini almaya çalışır.
 
 ```cpp
 bool try_lock() noexcept;
@@ -102,15 +102,15 @@ bool try_lock() noexcept;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**doğru** yöntemi başarıyla sahipliğini aldıysanız `mutex` veya çağıran iş parçacığı zaten sahipse `mutex`; Aksi takdirde **false**.
+yöntemi, çağıran `mutex` `mutex`iş parçacığının zaten sahip olduğu veya sahip olduğu durumlarda, yanlış bir şekilde sahipliyse **true** ; Aksi takdirde, **false**.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çağıran iş parçacığı zaten sahipse `mutex`, işlevi hemen döndürür **true**, ve önceki kilidi yürürlükte kalır.
+Çağıran iş parçacığı öğesine zaten sahipse `mutex`, işlev hemen **true**değerini döndürür ve önceki kilit etkin kalır.
 
-## <a name="try_lock_for"></a>  try_lock_for
+## <a name="try_lock_for"></a>try_lock_for
 
-Sahipliğini almayı dener `mutex` engelleme olmadan.
+`mutex` Engellemeden sahipliğini almaya çalışır.
 
 ```cpp
 template <class Rep, class Period>
@@ -119,20 +119,20 @@ bool try_lock_for(const chrono::duration<Rep, Period>& Rel_time);
 
 ### <a name="parameters"></a>Parametreler
 
-*Rel_time*<br/>
-A [chrono::duration](../standard-library/duration-class.md) yöntemi sahipliğini almayı dener en uzun süreyi belirten nesne `mutex`.
+*Rel_time*\
+Bir zaman hatası: yöntemin sahipliğini `mutex`almaya çalıştığı maksimum süreyi belirten [:d uration](../standard-library/duration-class.md) nesnesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**doğru** yöntemi başarıyla sahipliğini elde ederse `mutex` veya çağıran iş parçacığı zaten sahipse `mutex`; Aksi takdirde **false**.
+yöntemi, `mutex` çağıran`mutex`iş parçacığının zaten sahip olduğu bir veya ' nin sahipliğini alırsa doğru, aksi takdirde yanlış olur.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çağıran iş parçacığı zaten sahipse `mutex`, yöntem hemen döner **true**, ve önceki kilidi yürürlükte kalır.
+Çağıran iş parçacığı zaten öğesine sahipse `mutex`, yöntemi hemen **true**döndürür ve önceki kilit etkin kalır.
 
-## <a name="try_lock_until"></a>  try_lock_until
+## <a name="try_lock_until"></a>try_lock_until
 
-Sahipliğini almayı dener `mutex` engelleme olmadan.
+`mutex` Engellemeden sahipliğini almaya çalışır.
 
 ```cpp
 template <class Clock, class Duration>
@@ -143,20 +143,20 @@ bool try_lock_until(const xtime* Abs_time);
 
 ### <a name="parameters"></a>Parametreler
 
-*Abs_time*<br/>
-Sonra yöntemi artık girişimlerini sahipliğini almayı eşiği belirten zaman içinde nokta `mutex`.
+*Abs_time*\
+Bir zaman içinde, `mutex`yöntemin sahipliğini elde etme girişiminde bulunmayan eşiği belirten bir nokta.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**doğru** yöntemi başarıyla sahipliğini elde ederse `mutex` veya çağıran iş parçacığı zaten sahipse `mutex`; Aksi takdirde **false**.
+yöntemi, `mutex` çağıran`mutex`iş parçacığının zaten sahip olduğu bir veya ' nin sahipliğini alırsa doğru, aksi takdirde yanlış olur.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çağıran iş parçacığı zaten sahipse `mutex`, yöntem hemen döner **true**, ve önceki kilidi yürürlükte kalır.
+Çağıran iş parçacığı zaten öğesine sahipse `mutex`, yöntemi hemen **true**döndürür ve önceki kilit etkin kalır.
 
-## <a name="unlock"></a>  Kilit açma
+## <a name="unlock"></a>kaldırın
 
-İn sahipliğini bırakır `mutex`.
+Öğesinin sahipliğini yayınlar `mutex`.
 
 ```cpp
 void unlock();
@@ -164,11 +164,11 @@ void unlock();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem sahipliğini serbest `mutex` yalnızca olarak sayıda çağrıldıktan sonra [kilit](#lock), [try_lock](#try_lock), [try_lock_for](#try_lock_for), ve [try_lock_ kadar](#try_lock_until) üzerinde başarıyla çağrılmışsa `recursive_timed_mutex` nesne.
+`mutex` Bu yöntem, `recursive_timed_mutex` nesne üzerinde [Lock](#lock), [try_lock](#try_lock), [try_lock_for](#try_lock_for)ve [try_lock_until](#try_lock_until) başarıyla çağrıldıkça, öğesinin sahipliğini yalnızca bir kez çağırılır.
 
-Çağıran iş parçacığına ait olmayan, `mutex`, davranış tanımlanmamıştır.
+Çağıran iş parçacığı öğesine sahip `mutex`değilse, davranış tanımsızdır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Üstbilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md)<br/>
-[\<Mutex >](../standard-library/mutex.md)<br/>
+[Üst bilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md)\
+[\<mutex >](../standard-library/mutex.md)

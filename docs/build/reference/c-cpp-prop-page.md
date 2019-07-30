@@ -3,14 +3,12 @@ title: C/C++ proje özellikleri (Visual Studio)
 ms.date: 7/18/2019
 ms.topic: article
 ms.assetid: 16375038-4917-4bd0-9a2a-26343c1708b7
-author: mikeblome
-ms.author: mblome
-ms.openlocfilehash: bf457366f1818593e937d4c9e95651f48db64528
-ms.sourcegitcommit: 0867d648e0955ebad7260b5fbebfd6cd4d58f3c7
-ms.translationtype: HT
+ms.openlocfilehash: 91edf30ef0e5f38088727c0280d2edf07cdebfa5
+ms.sourcegitcommit: 7b039b5f32f6c59be6c6bb1cffafd69c3bfadd35
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68342247"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68537573"
 ---
 # <a name="cc-property-pages"></a>C/C++ Özellik sayfaları
 
@@ -482,7 +480,7 @@ Varsayılan kitaplık adlarını. obj dosyalarına eklemeyin. [/Zl](zl-omit-defa
 
 - **Rapor gönderme** -iç derleyici hataları hakkında raporlar toplanmayacak veya Microsoft 'a gönderilmez.
 - **Istem hemen** , iç derleyici hatası aldığınızda rapor göndermenizi ister.
-- **Sonraki oturum açma sırası** -hata raporunu sıralar. Yönetici ayrıcalıklarıyla oturum açtığınızda, bir açılır pencere görüntülenir ve en son oturum açtığınız zamandan bu yana herhangi bir başarısızlık raporu göndermenizi sağlar (her üç günde birden çok kez rapor göndermeniz istenmez). kuyruk, komut satırında bir uygulama derlenirken varsayılandır.
+- **Sonraki oturum açma sırası** -hata raporunu sıralar. Yönetici ayrıcalıklarıyla oturum açtığınızda, bir açılır pencere görüntülenir ve en son oturum açışınızda oluşan tüm sorunları raporlayabilmeniz gerekir (her üç günde birden çok kez rapor göndermeniz istenmez). kuyruk, komut satırında bir uygulama derlenirken varsayılandır.
 - **Otomatik olarak gönder** -iç derleyici hatalarının raporlarını otomatik olarak Microsoft 'a gönderir. Bu seçeneği etkinleştirmek için öncelikle Microsoft% 27s veri toplama ilkesini kabul etmelisiniz. /ErrorReport: bir bilgisayara Gönder ' i ilk kez belirttiğinizde, bir derleyici iletisi sizi Microsoft% 27s veri toplama ilkesini içeren bir Web sitesine başvuracaktır.
 
 ### <a name="treat-specific-warnings-as-errors"></a>Belirli uyarıları hata olarak değerlendir
