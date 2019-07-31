@@ -1,6 +1,6 @@
 ---
-title: shared_ptr Sınıfı
-ms.date: 11/04/2016
+title: shared_ptr sınıfı
+ms.date: 07/29/2019
 f1_keywords:
 - memory/std::shared_ptr
 - memory/std::shared_ptr::element_type
@@ -31,14 +31,14 @@ helpviewer_keywords:
 - std::shared_ptr [C++], unique
 - std::shared_ptr [C++], use_count
 ms.assetid: 1469fc51-c658-43f1-886c-f4530dd84860
-ms.openlocfilehash: ca427bd364a5ab66112f23e0a920598ad8ba190b
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.openlocfilehash: 59346dfded63aec315304f76c9bed753a4db1224
+ms.sourcegitcommit: 725e86dabe2901175ecc63261c3bf05802dddff4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68246368"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68682436"
 ---
-# <a name="sharedptr-class"></a>shared_ptr Sınıfı
+# <a name="sharedptr-class"></a>shared_ptr sınıfı
 
 Dinamik olarak tahsis edilen bir nesnenin çevresine bir başvuru sayılan akıllı işaretçi sarar.
 
@@ -46,18 +46,18 @@ Dinamik olarak tahsis edilen bir nesnenin çevresine bir başvuru sayılan akıl
 
 ```cpp
 template <class T>
-    class shared_ptr;
+class shared_ptr;
 ```
 
 ## <a name="remarks"></a>Açıklamalar
 
-Shared_ptr sınıfı, kaynakları yönetmek için referans sayımı kullanan bir nesneyi tanımlar. A `shared_ptr` nesne kaynak sahibi veya bir null işaretçiyi tuttuğu için etkili bir şekilde bir işaretçi tutar. Kaynak birden fazla tarafından sahiplenilebilir `shared_ptr` nesne; olduğunda son `shared_ptr` belirli bir kaynağa sahip nesnesi yok edildiğinde, kaynak serbest bırakılır.
+Sınıfı `shared_ptr` , kaynakları yönetmek için başvuru sayımı kullanan bir nesneyi tanımlar. Bir `shared_ptr` nesne, sahip olduğu veya null bir işaretçi tutan kaynak işaretçisini etkin bir şekilde tutar. Bir kaynak birden fazla `shared_ptr` nesneye ait olabilir; belirli bir kaynağa sahip olan son `shared_ptr` nesne yok edildiğinde, kaynak serbest bırakılır.
 
-A `shared_ptr` yeniden atandığında veya sıfırlandığında kaynağa sahip olmayı durdurur.
+Yeniden `shared_ptr` atandığında veya sıfırlandığında bir kaynağın sahip olduğu bir yanıt vermez.
 
-Şablon bağımsız değişkeni `T` belirli üye işlevleri belirtilenler dışında bir eksik tür olabilir.
+Şablon bağımsız değişkeni `T` , belirli üye işlevleri için belirtilmedikçe, tamamlanmamış bir tür olabilir.
 
-Olduğunda bir `shared_ptr<T>` nesnesi, bir kaynak türü işaretçisinden oluşturulduğunda `G*` veya bir `shared_ptr<G>`, işaretçi türünün `G*` dönüştürülebilmelidir `T*`. Yüklü değilse, kod derlemeyecektir. Örneğin:
+`G*` `shared_ptr<G>` `G*` Bir nesne türü veya bir kaynak işaretçisinden oluşturulduğunda, işaretçi türü öğesine `T*`dönüştürülebilir olmalıdır. `shared_ptr<T>` Dönüştürülemeyen kod derlenmez. Örneğin:
 
 ```cpp
 #include <memory>
@@ -75,133 +75,93 @@ shared_ptr<int> sp5(new G); // error, G* not convertible to int*
 shared_ptr<int> sp6(sp2);   // error, template parameter int and argument shared_ptr<F>
 ```
 
-A `shared_ptr` nesnesi bir kaynağa sahiptir:
+Bir `shared_ptr` nesne bir kaynağa sahip:
 
-- Bu kaynağa bir işaretçi ile oluşturulmuşsa,
+- Bu kaynak için bir işaretçi ile oluşturulduysa,
 
-- öğesinden oluşturulmuşsa bir `shared_ptr` bu kaynağa sahip nesne
+- Bu kaynağın sahibi olan bir `shared_ptr` nesneden oluşturulmuşsa,
 
-- öğesinden oluşturulmuşsa bir [weak_ptr sınıfı](../standard-library/weak-ptr-class.md) konusu kaynağı işaret eden bir nesne veya
+- Bu kaynağı işaret eden bir [weak_ptr](weak-ptr-class.md) nesnesinden oluşturulduysa veya
 
-- Bu kaynağın sahipliği ona ile atanmışsa [shared_ptr::operator =](#op_eq) veya üye işlevini çağırarak [shared_ptr::reset](#reset).
+- Bu kaynağın sahipliği kendisine atanmışsa, [shared_ptr:: operator =](#op_eq) ve [shared_ptr:: Reset](#reset)üye işlevini çağırarak.
 
-`shared_ptr` Bir kaynağa sahip nesneleri bir denetim bloğunu paylaşır. Denetim bloğu şunları tutar:
+Bir kaynağın sahibi olan nesnelerbirdenetimbloğunupaylaşır.`shared_ptr` Denetim bloğu şunları barındırır:
 
-- sayısını `shared_ptr` kaynağa sahip nesneleri
+- kaynağa sahip olan `shared_ptr` nesne sayısı,
 
-- sayısını `weak_ptr` kaynağa işaret nesneleri
+- kaynağı işaret eden `weak_ptr` nesne sayısı,
 
-- varsa, o kaynak için Silici,
+- varsa, bu kaynak için silici
 
-- varsa, Denetim bloğunun özel bellek ayırıcısı.
+- Denetim bloğunun varsa özel ayırıcısı.
 
-A `shared_ptr` bir null işaretçi kullanılarak başlatılan bir nesne bir denetim bloğu yoktur ve boş değil. Sonra bir `shared_ptr` nesnesi bir kaynağı serbest bıraktıktan, artık bu kaynağa sahip değildir. Sonra bir `weak_ptr` nesnesi bir kaynağı serbest bıraktıktan, artık o kaynağa işaret eder.
+Null işaretçi kullanılarak başlatılan bir nesnedenetimbloğunasahipveboşdeğil.`shared_ptr` Bir `shared_ptr` nesne bir kaynağı yayınladıktan sonra, o kaynağa artık sahip olmaz. Bir `weak_ptr` nesne bir kaynağı yayınladıktan sonra, o kaynağa artık işaret alınmaz.
 
-Zaman sayısını `shared_ptr` kendi kaynak sıfır olduğunda, kaynak, silmek ya da adresini kaynağının sahipliğinin orijinal olarak nasıl oluşturulduğuna bağlı olarak bir Silici geçirerek serbest nesneleri. Zaman sayısını `shared_ptr` bir kaynağa sahip nesneleri, sıfır ve sayısını, `weak_ptr` nesneleri işaret kaynak sıfırsa, denetim bloğu, varsa, denetim bloğu özel ayırıcı kullanılarak serbest bırakılır.
+Bir kaynağa sahip olan `shared_ptr` nesne sayısı sıfır olduğunda, kaynak onu silerek ya da kaynağın sahipliğinin ilk olarak oluşturulma şekline bağlı olarak bir silice geçirerek kaynak serbest bırakılır. Bir kaynağa sahip olan `shared_ptr` nesne sayısı sıfır olduğunda ve bu kaynağı işaret eden `weak_ptr` nesne sayısı sıfır olduğunda, denetim bloğu, varsa denetim bloğu için özel ayırıcı kullanılarak serbest bırakılır.
 
-Boş bir `shared_ptr` nesnesi bir kaynağı bulunmaz ve denetim bloğu yoktur.
+Boş `shared_ptr` bir nesne herhangi bir kaynağa sahip değildir ve denetim bloğuna sahip değildir.
 
-Silici üye işleve sahip bir işlev nesnesidir `operator()`. Türü kopya atmamalıdır olmalıdır ve kopya oluşturucusu ve yıkıcısı özel durum oluşturmamalıdır. Bu, bir parametre, silinecek nesneyi kabul eder.
+Bir silici, üye işlevine `operator()`sahip bir işlev nesnesidir. Türünün kopya oluşturulabilir olması gerekir ve kopya Oluşturucusu ve yıkıcısı özel durum oluşturmamalıdır. Bir parametreyi kabul eder, silinecek nesne.
 
-Bazı işlevler ortaya çıkan özelliklerini tanımlayan bir bağımsız değişken listesi alır `shared_ptr<T>` veya `weak_ptr<T>` nesne. Böyle bir bağımsız değişken listesini birkaç şekilde belirtebilirsiniz:
+Bazı işlevler, sonuçta elde edilen `shared_ptr<T>` veya `weak_ptr<T>` nesnesinin özelliklerini tanımlayan bir bağımsız değişken listesi alır. Böyle bir bağımsız değişken listesini birkaç şekilde belirtebilirsiniz:
 
-bağımsız değişken yok--sonuç nesnesi boş bir `shared_ptr` nesnesidir veya boş bir `weak_ptr` nesne.
+bağımsız değişken yok--elde edilen nesne boş `shared_ptr` bir nesne veya boş `weak_ptr` bir nesne.
 
-`ptr` --türünde bir işaretçi `Other*` yönetilecek kaynağa. `T` tam bir tür olmalıdır. (Denetim bloğu ayrılamadığından), işlev başarısız olursa ifadesini değerlendirir `delete ptr`.
+`ptr`--yönetilecek kaynağa bir tür `Other*` işaretçisi. `T`tamamen bir tür olmalıdır. İşlev başarısız olursa (denetim bloğu ayrılamadığından), ifadeyi `delete ptr`değerlendirir.
 
-`ptr, dtor` --türünde bir işaretçi `Other*` kaynağın yönetilmesini ve bu kaynak için Silici. (Denetim bloğu ayrılamadığından), işlev başarısız olursa çağrı `dtor(ptr)`, iyi tanımlanmış olmalıdır.
+`ptr, deleter`--yönetilecek kaynağa bir tür `Other*` işaretçisi ve bu kaynak için bir silici. İşlev başarısız olursa (denetim bloğu ayrılamadığından), iyi tanımlanmış olması gereken, çağırır `deleter(ptr)`.
 
-`ptr, dtor, alloc` --türünde bir işaretçi `Other*` yönetilecek kaynağın, ayrılan ve serbest gereken herhangi bir depolama alanı yönetmek için ayırıcı yanı sıra bu kaynak için Silici. (Denetim bloğu ayrılamadığından), işlev başarısız olursa çağrı `dtor(ptr)`, iyi tanımlanmış olmalıdır.
+`ptr, deleter, alloc`--yönetilecek kaynağa bir tür `Other*` işaretçisi, bu kaynak için bir silici ve ayrılması ve serbest olması gereken herhangi bir depolamayı yönetmek için bir ayırıcı. İşlev başarısız olursa (denetim bloğu ayrılamadığından), iyi tanımlanmış olması gereken, çağırır `deleter(ptr)`.
 
-`sp` --bir `shared_ptr<Other>` yönetilecek kaynağın sahibi nesne.
+`sp`--yönetilecek `shared_ptr<Other>` kaynağın sahibi olan bir nesne.
 
-`wp` --bir `weak_ptr<Other>` yönetilecek kaynağı işaret eden bir nesne.
+`wp`--yönetilecek `weak_ptr<Other>` kaynağı işaret eden bir nesnesi.
 
-`ap` --bir `auto_ptr<Other>` yönetilecek kaynağa bir işaretçi tutan nesne. İsteğe bağlı olarak işlev çağrıları başarılı olursa `ap.release()`; Aksi halde bırakır `ap` değişmez.
+`ap`-- `auto_ptr<Other>` yönetilecek kaynak için bir işaretçi tutan nesne. İşlev başarılı olursa, çağırır `ap.release()`; Aksi takdirde `ap` , değiştirilmez.
 
-Tüm durumlarda, işaretçi türünün `Other*` dönüştürülebilmelidir `T*`.
+Her durumda, işaretçi türü `Other*` öğesine `T*`dönüştürülebilir olmalıdır.
 
 ## <a name="thread-safety"></a>İş Parçacığı Güvenliği
 
-Birden çok iş parçacığı okuma ve yazma farklı `shared_ptr` nesneler bu paylaşım sahipliğinin kopyası bile aynı anda nesneleri.
+Birden çok iş parçacığı, aynı anda `shared_ptr` farklı nesneleri okuyabilir ve yazabilir, ancak nesneler paylaşımın sahipliğini paylaşan kopyalardır.
 
 ## <a name="members"></a>Üyeler
 
-### <a name="constructors"></a>Oluşturucular
-
 |||
 |-|-|
-|[shared_ptr](#shared_ptr)|Oluşturur bir `shared_ptr`.|
-|[~ shared_ptr](#dtorshared_ptr)|Yok eder bir `shared_ptr`.|
-
-### <a name="typedefs"></a>Tür tanımları
-
-|||
-|-|-|
+| **Oluşturucular** | |
+|[shared_ptr](#shared_ptr)|Bir `shared_ptr`oluşturur.|
+|[~ shared_ptr](#dtorshared_ptr)|Yok eder `shared_ptr`.|
+| **Tür tanımları** | |
 |[element_type](#element_type)|Öğenin türü.|
-
-### <a name="functions"></a>İşlevler
-
-|||
-|-|-|
-|[allocate_shared](#allocate_shared)||
-|[const_pointer_cast](#const_pointer_cast)||
-|[dynamic_pointer_cast](#dynamic_pointer_cast)||
-|[get](#get)|Sahip olunan kaynağının adresini alır.|
-|[get_deleter](#get_deleter)||
-|[make_shared](#make_shared)||
-|[owner_before](#owner_before)|Bu, true döndürür `shared_ptr` önceyse (veya küçüktür) sağlanan işaretçi.|
-|[reinterpret_pointer_cast](#reinterpret_pointer_cast)||
-|[Sıfırlama](#reset)|Sahip olunan Kaynağı Değiştir.|
-|[static_pointer_cast](#static_pointer_cast)||
-|[değiştirme](#swap)|İki değiştirir `shared_ptr` nesneleri.|
-|[unique](#unique)|Sahip olunan kaynağın benzersiz olup olmadığını sınar.|
-|[use_count](#use_count)|Kaynak sahiplerinin sayısını sayar.|
-
-### <a name="operators"></a>İşleçler
-
-|||
-|-|-|
-|[bool işleci](#op_bool)|Sahip olunan bir kaynağın varolup olmadığını test eder.|
-|[operator *](#op_star)|Belirtilen değeri alır.|
+|[weak_type](#weak_type)|Bir öğeye zayıf işaretçinin türü.|
+| **Üye işlevleri** | |
+|[get](#get)|Sahip olunan kaynağın adresini alır.|
+|[owner_before](#owner_before)|Bu `shared_ptr` , belirtilen işaretçiden önce (veya ondan küçük) daha önce sipariş alıyorsa true değerini döndürür.|
+|[döndürmek](#reset)|Sahip olunan kaynağı değiştirin.|
+|[Kur](#swap)|İki `shared_ptr` nesneyi değiştirir.|
+|[unique](#unique)|Sahip olunan kaynak benzersiz ise sınar.|
+|[use_count](#use_count)|Kaynak sahiplerinin numaralarını sayar.|
+| **İşleçler** | |
+|[işleç bool](#op_bool)|Sahip olunan bir kaynağın mevcut olup olmadığını sınar.|
+|[işlecinde](#op_star)|Belirlenen değeri alır.|
 |[operator=](#op_eq)|Sahip olunan kaynağı değiştirir.|
-|[operator-&gt;](#op_arrow)|Belirtilen değer için bir işaretçi alır.|
-|[İşleci&lt;&lt;](#op_arrowarrow)||
+|[işlecinde&gt;](#op_arrow)|Belirlenen değere bir işaretçi alır.|
 
-### <a name="allocate_shared"></a> allocate_shared
-
-```cpp
-template<class T, class A, class... Args>
-    shared_ptr<T> allocate_shared(const A& a, Args&&... args);
-```
-
-### <a name="const_pointer_cast"></a> const_pointer_cast
-
-```cpp
-template<class T, class U>
-    shared_ptr<T> const_pointer_cast(const shared_ptr<U>& r) noexcept;
-```
-
-### <a name="dynamic_pointer_cast"></a> dynamic_pointer_cast
-
-```cpp
-template<class T, class U>
-    shared_ptr<T> dynamic_pointer_cast(const shared_ptr<U>& r) noexcept;
-```
-
-### <a name="element_type"></a> ELEMENT_TYPE
+## <a name="element_type"></a>element_type
 
 Öğenin türü.
 
 ```cpp
-typedef T element_type;
+typedef T element_type;                  // before C++17
+using element_type = remove_extent_t<T>; // C++17
 ```
 
-#### <a name="remarks"></a>Açıklamalar
+### <a name="remarks"></a>Açıklamalar
 
-Şablon parametresi için bir eşanlamlı türüdür `T`.
+Tür, şablon parametresi `T`için bir eş anlamlı. `element_type`
 
-#### <a name="example"></a>Örnek
+### <a name="example"></a>Örnek
 
 ```cpp
 // std__memory__shared_ptr_element_type.cpp
@@ -224,19 +184,19 @@ int main()
 *sp0 == 5
 ```
 
-### <a name="get"></a> Al
+## <a name="get"></a>Al
 
-Sahip olunan kaynağının adresini alır.
+Sahip olunan kaynağın adresini alır.
 
 ```cpp
-T *get() const;
+element_type* get() const noexcept;
 ```
 
-#### <a name="remarks"></a>Açıklamalar
+### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi, sahip olunan kaynağının adresini döndürür. Nesnesi bir kaynağa sahip değilse, 0 döndürür.
+Üye işlevi, sahip olunan kaynağın adresini döndürür. Nesne bir kaynak içermiyorsa, 0 döndürür.
 
-#### <a name="example"></a>Örnek
+### <a name="example"></a>Örnek
 
 ```cpp
 // std__memory__shared_ptr_get.cpp
@@ -262,33 +222,19 @@ sp0.get() == 0 == true
 *sp1.get() == 5
 ```
 
-### <a name="get_deleter"></a> get_deleter
+## <a name="op_bool"></a>işleç bool
 
-```cpp
-template<class D, class T>
-    D* get_deleter(const shared_ptr<T>& p) noexcept;
-```
-
-### <a name="make_shared"></a> make_shared
-
-```cpp
-template<class T, class... Args>
-    shared_ptr<T> make_shared(Args&&... args);
-```
-
-### <a name="op_bool"></a> bool işleci
-
-Sahip olunan bir kaynağın varolup olmadığını test eder.
+Sahip olunan bir kaynağın mevcut olup olmadığını sınar.
 
 ```cpp
 explicit operator bool() const noexcept;
 ```
 
-#### <a name="remarks"></a>Açıklamalar
+### <a name="remarks"></a>Açıklamalar
 
-İşleç değerini döndürür **true** olduğunda `get() != nullptr`, aksi takdirde **false**.
+İşleci **true** `get() != nullptr`, değilse **false**değerini döndürür.
 
-#### <a name="example"></a>Örnek
+### <a name="example"></a>Örnek
 
 ```cpp
 // std__memory__shared_ptr_operator_bool.cpp
@@ -315,19 +261,19 @@ int main()
 (bool)sp1 == true
 ```
 
-### <a name="op_star"></a> operator *
+## <a name="op_star"></a>işlecinde
 
-Belirtilen değeri alır.
+Belirlenen değeri alır.
 
 ```cpp
-T& operator*() const;
+T& operator*() const noexcept;
 ```
 
-#### <a name="remarks"></a>Açıklamalar
+### <a name="remarks"></a>Açıklamalar
 
-Yöneltme işleci döndürür `*get()`. Bu nedenle, depolanmış işaretçiyi null olmamalıdır.
+Yöneltme işleci döndürülür `*get()`. Bu nedenle, saklı işaretçi null olmamalıdır.
 
-#### <a name="example"></a>Örnek
+### <a name="example"></a>Örnek
 
 ```cpp
 // std__memory__shared_ptr_operator_st.cpp
@@ -349,42 +295,50 @@ int main()
 *sp0 == 5
 ```
 
-### <a name="op_eq"></a> işleç =
+## <a name="op_eq"></a>işleç =
 
 Sahip olunan kaynağı değiştirir.
 
 ```cpp
-shared_ptr& operator=(const shared_ptr& sp);
+shared_ptr& operator=(const shared_ptr& sp) noexcept;
+
+shared_ptr& operator=(shared_ptr&& sp) noexcept;
 
 template <class Other>
-    shared_ptr& operator=(const shared_ptr<Other>& sp);
+shared_ptr& operator=(const shared_ptr<Other>& sp) noexcept;
 
 template <class Other>
-    shared_ptr& operator=(auto_ptr<Other>& ap);
+shared_ptr& operator=(shared_ptr<Other>&& sp) noexcept;
 
 template <class Other>
-    shared_ptr& operator=(auto_ptr<Other>& ap);
+shared_ptr& operator=(auto_ptr<Other>&& ap);    // deprecated in C++11, removed in C++17
 
-template <class Other>
-    shared_ptr& operator=(auto_ptr<Other>&& ap);
-
-template <class Other, class Deletor>
-    shared_ptr& operator=(unique_ptr<Other, Deletor>&& ap);
+template <class Other, class Deleter>
+shared_ptr& operator=(unique_ptr<Other, Deleter>&& up);
 ```
 
-#### <a name="parameters"></a>Parametreler
+### <a name="parameters"></a>Parametreler
 
-*SP*\
-Kopyalamak için paylaşılan işaretçi.
+*SP2*\
+Kopyalanacak veya taşınacak paylaşılan işaretçi.
 
-*AP*\
-Kopyalamak için otomatik işaretçi.
+*sıfırlan*\
+Taşınacak otomatik işaretçi. Aşırı `auto_ptr` yükleme, c++ 11 ' de kullanımdan kaldırılmıştır ve c++ 17 ' de kaldırılır.
 
-#### <a name="remarks"></a>Açıklamalar
+*ayarlama*\
+Sahipliğini benimsemek için nesnenin benzersiz işaretçisi. çağrıdan sonra hiç *nesne sahibi yok* .
 
-Tüm işleçleri tarafından sahip olunan kaynağı için başvuru sayısını azaltma `*this` ve işlenen dizinin tarafından adlı kaynağın sahipliğini Ata `*this`. Başvuru sayısı sıfıra düşerse, kaynak serbest bırakılır. İsteğe bağlı olarak bir işleç leaves başarısız olursa `*this` değişmez.
+*Farklı*\
+*SP*, *AP*veya *up*tarafından işaret edilen nesnenin türü.
 
-#### <a name="example"></a>Örnek
+*Silici*\
+Nesnenin daha sonra silinmesi için depolanan, sahip olunan nesnenin silici türü.
+
+### <a name="remarks"></a>Açıklamalar
+
+İşleçler, tarafından `*this` sahip olunan kaynak için başvuru sayısını azaltır ve işlenen `*this`dizi tarafından adlandırılan kaynağın sahipliğini atar. Başvuru sayısı sıfıra düşerse, kaynak serbest bırakılır. Bir operatör başarısız olursa, `*this` değiştirilmez.
+
+### <a name="example"></a>Örnek
 
 ```cpp
 // std__memory__shared_ptr_operator_as.cpp
@@ -396,12 +350,12 @@ int main()
 {
     std::shared_ptr<int> sp0;
     std::shared_ptr<int> sp1(new int(5));
-    std::auto_ptr<int> ap(new int(10));
+    std::unique_ptr<int> up(new int(10));
 
     sp0 = sp1;
     std::cout << "*sp0 == " << *sp0 << std::endl;
 
-    sp0 = ap;
+    sp0 = up;
     std::cout << "*sp0 == " << *sp0 << std::endl;
 
     return (0);
@@ -413,19 +367,19 @@ int main()
 *sp0 == 10
 ```
 
-### <a name="op_arrow"></a> operator-&gt;
+## <a name="op_arrow"></a>operator->
 
-Belirtilen değer için bir işaretçi alır.
+Belirlenen değere bir işaretçi alır.
 
 ```cpp
-T * operator->() const;
+T* operator->() const noexcept;
 ```
 
-#### <a name="remarks"></a>Açıklamalar
+### <a name="remarks"></a>Açıklamalar
 
-Seçim operatörü döndürür `get()`, böylece ifade `sp->member` gibi davranır `(sp.get())->member` burada `sp` sınıfın bir nesnesi `shared_ptr<T>`. Bu nedenle, depolanmış işaretçiyi null olmamalıdır ve `T` sınıf, yapı veya birleşim türü bir üyeyle olmalıdır `member`.
+Seçim `get()`işleci döndürülür, böylece ifade `sp` `(sp.get())->member` `sp->member` sınıfının birnesnesiolduğu`shared_ptr<T>`ile aynı şekilde davranır. Bu nedenle, saklı işaretçi null olmamalı ve `T` üye `member`içeren bir sınıf, yapı veya birleşim türü olmalıdır.
 
-#### <a name="example"></a>Örnek
+### <a name="example"></a>Örnek
 
 ```cpp
 // std__memory__shared_ptr_operator_ar.cpp
@@ -450,83 +404,74 @@ sp0->first == 1
 sp0->second == 2
 ```
 
-### <a name="op_arrowarrow"></a> İşleci&lt;&lt;
+## <a name="owner_before"></a>owner_before
 
-```cpp
-template<class E, class T, class Y>
-    basic_ostream<E, T>& operator<< (basic_ostream<E, T>& os, const shared_ptr<Y>& p);
-```
-
-### <a name="owner_before"></a> owner_before
-
-Bu, true döndürür `shared_ptr` önceyse (veya küçüktür) sağlanan işaretçi.
+Bu `shared_ptr` , belirtilen işaretçiden önce (veya ondan küçük) daha önce sipariş alıyorsa true değerini döndürür.
 
 ```cpp
 template <class Other>
-    bool owner_before(const shared_ptr<Other>& ptr);
+bool owner_before(const shared_ptr<Other>& ptr) const noexcept;
 
 template <class Other>
-    bool owner_before(const weak_ptr<Other>& ptr);
+bool owner_before(const weak_ptr<Other>& ptr) const noexcept;
 ```
 
-#### <a name="parameters"></a>Parametreler
+### <a name="parameters"></a>Parametreler
 
-*PTR*\
-Bir `lvalue` başvuru ya da bir `shared_ptr` veya `weak_ptr`.
+*kaydetmeye*\
+`shared_ptr` Bir`weak_ptr`veya öğesine lvalue başvurusu.
 
-#### <a name="remarks"></a>Açıklamalar
+### <a name="remarks"></a>Açıklamalar
 
-Şablon üye işlev true döndürür `*this` olduğu `ordered before` `ptr`.
+Şablon üye işlevi, daha önce `*this` `ptr`sıralandıysanız true değerini döndürür.
 
-### <a name="reinterpret_pointer_cast"></a> reinterpret_pointer_cast
+## <a name="reset"></a>döndürmek
 
-```cpp
-template<class T, class U>
-    shared_ptr<T> reinterpret_pointer_cast(const shared_ptr<U>& r) noexcept;
-```
-
-### <a name="reset"></a> Sıfırlama
-
-Sahip olunan Kaynağı Değiştir.
+Sahip olunan kaynağı değiştirin.
 
 ```cpp
-void reset();
+void reset() noexcept;
 
 template <class Other>
-    void reset(Other *ptr;);
+void reset(Other *ptr);
 
-template <class Other, class D>
-    void reset(Other *ptr, D dtor);
+template <class Other, class Deleter>
+void reset(
+    Other *ptr,
+    Deleter deleter);
 
-template <class Other, class D, class A>
-    void reset(Other *ptr, D dtor, A alloc);
+template <class Other, class Deleter, class Allocator>
+void reset(
+    Other *ptr,
+    Deleter deleter,
+    Allocator alloc);
 ```
 
-#### <a name="parameters"></a>Parametreler
+### <a name="parameters"></a>Parametreler
 
-*Diğer*\
-Bağımsız değişken işaretçiyle kontrol edilen tür.
+*Farklı*\
+Bağımsız değişken işaretçisi tarafından denetlenen tür.
 
-*D*\
-Silici türü.
+*Silici*\
+Deleter türü.
 
-*PTR*\
-Kopya işaretçisi.
+*kaydetmeye*\
+Kopyalanacak işaretçi.
 
-*dtor*\
-Kopyalamak için Silici.
+*silici*\
+Kopyalanacak silici.
 
-*A*\
+*Öğe*\
 Ayırıcı türü.
 
-*Ayırma*\
-Kopyalanacak kaynak ayırıcı.
+*tahsis*\
+Kopyalanacak ayırıcı.
 
-#### <a name="remarks"></a>Açıklamalar
+### <a name="remarks"></a>Açıklamalar
 
-Tüm işleçleri tarafından sahip olunan kaynağı için başvuru sayısını azaltma `*this` ve işlenen dizinin tarafından adlı kaynağın sahipliğini Ata `*this`. Başvuru sayısı sıfıra düşerse, kaynak serbest bırakılır. İsteğe bağlı olarak bir işleç leaves başarısız olursa `*this` değişmez.
+İşleçler, tarafından `*this` sahip olunan kaynak için başvuru sayısını azaltır ve işlenen `*this`dizi tarafından adlandırılan kaynağın sahipliğini atar. Başvuru sayısı sıfıra düşerse, kaynak serbest bırakılır. Bir operatör başarısız olursa, `*this` değiştirilmez.
 
-#### <a name="example"></a>Örnek
+### <a name="example"></a>Örnek
 
 ```cpp
 // std__memory__shared_ptr_reset.cpp
@@ -572,90 +517,113 @@ int main()
 *sp == 15
 ```
 
-### <a name="shared_ptr"></a> shared_ptr
+## <a name="shared_ptr"></a>shared_ptr
 
-Oluşturur bir `shared_ptr`.
+Bir `shared_ptr`oluşturur.
 
 ```cpp
-shared_ptr();
+constexpr shared_ptr() noexcept;
 
-shared_ptr(nullptr_t);
+constexpr shared_ptr(nullptr_t) noexcept : shared_ptr() {}
 
-shared_ptr(const shared_ptr& sp);
+shared_ptr(const shared_ptr& sp) noexcept;
 
-shared_ptr(shared_ptr&& sp);
-
-template <class Other>
-    explicit shared_ptr(Other* ptr);
-
-template <class Other, class D>
-    shared_ptr(Other* ptr, D dtor);
-
-template <class D>
-    shared_ptr(nullptr_t ptr, D dtor);
-
-template <class Other, class D, class A>
-    shared_ptr(Other* ptr, D dtor, A  alloc);
-
-template <class D, class A>
-    shared_ptr(nullptr_t ptr, D dtor, A alloc);
+shared_ptr(shared_ptr&& sp) noexcept;
 
 template <class Other>
-    shared_ptr(const shared_ptr<Other>& sp);
+explicit shared_ptr(Other* ptr);
+
+template <class Other, class Deleter>
+shared_ptr(
+    Other* ptr,
+    Deleter deleter);
+
+template <class Deleter>
+shared_ptr(
+    nullptr_t ptr,
+    Deleter deleter);
+
+template <class Other, class Deleter, class Allocator>
+shared_ptr(
+    Other* ptr,
+    Deleter deleter,
+    Allocator alloc);
+
+template <class Deleter, class Allocator>
+shared_ptr(
+    nullptr_t ptr,
+    Deleter deleter,
+    Allocator alloc);
 
 template <class Other>
-    shared_ptr(const weak_ptr<Other>& wp);
+shared_ptr(
+    const shared_ptr<Other>& sp) noexcept;
+
+template <class Other>
+explicit shared_ptr(
+    const weak_ptr<Other>& wp);
 
 template <class &>
-    shared_ptr(std::auto_ptr<Other>& ap);
+shared_ptr(
+    std::auto_ptr<Other>& ap);
 
 template <class &>
-    shared_ptr(std::auto_ptr<Other>&& ap);
+shared_ptr(
+    std::auto_ptr<Other>&& ap);
 
-template <class Other, class D>
-    shared_ptr(unique_ptr<Other, D>&& up);
+template <class Other, class Deleter>
+shared_ptr(
+    unique_ptr<Other, Deleter>&& up);
 
 template <class Other>
-    shared_ptr(const shared_ptr<Other>& sp, T* ptr);
+shared_ptr(
+    const shared_ptr<Other>& sp,
+    element_type* ptr) noexcept;
 
-template <class Other, class D>
-    shared_ptr(const unique_ptr<Other, D>& up) = delete;
+template <class Other>
+shared_ptr(
+    shared_ptr<Other>&& sp,
+    element_type* ptr) noexcept;
+
+template <class Other, class Deleter>
+shared_ptr(
+    const unique_ptr<Other, Deleter>& up) = delete;
 ```
 
-#### <a name="parameters"></a>Parametreler
+### <a name="parameters"></a>Parametreler
 
-*Diğer*\
-Bağımsız değişken işaretçiyle kontrol edilen tür.
+*Farklı*\
+Bağımsız değişken işaretçisi tarafından denetlenen tür.
 
-*PTR*\
-Kopya işaretçisi.
+*kaydetmeye*\
+Kopyalanacak işaretçi.
 
-*D*\
-Silici türü.
+*Silici*\
+Deleter türü.
 
-*A*\
+*Öğe*\
 Ayırıcı türü.
 
-*dtor*\
+*silici*\
 Silici.
 
-*etmeni*\
+*tahsis*\
 Ayırıcı.
 
-*SP*\
-Kopyalamak için akıllı işaretçi.
+*SP2*\
+Kopyalanacak akıllı işaretçi.
 
-*WP*\
+*WB*\
 Zayıf işaretçi.
 
-*AP*\
-Kopyalamak için otomatik işaretçi.
+*sıfırlan*\
+Kopyalamanın otomatik işaretçisi.
 
-#### <a name="remarks"></a>Açıklamalar
+### <a name="remarks"></a>Açıklamalar
 
-Her oluşturucular tarafından işlenen dizisi adlı kaynağına sahip olan bir nesne oluşturur. Oluşturucu `shared_ptr(const weak_ptr<Other>& wp)` türünde bir özel durum nesnesi oluşturur [bad_weak_ptr sınıfı](../standard-library/bad-weak-ptr-class.md) varsa `wp.expired()`.
+Oluşturucular her biri, işlenen sırası tarafından adlandırılan kaynağa sahip bir nesne oluşturur. Oluşturucu `shared_ptr(const weak_ptr<Other>& wp)` , [bad_weak_ptr](bad-weak-ptr-class.md) if `wp.expired()`türünde bir özel durum nesnesi oluşturur.
 
-#### <a name="example"></a>Örnek
+### <a name="example"></a>Örnek
 
 ```cpp
 // std__memory__shared_ptr_construct.cpp
@@ -707,33 +675,25 @@ int main()
 *sp5 == 15
 ```
 
-### <a name="dtorshared_ptr"></a> ~ shared_ptr
+## <a name="dtorshared_ptr"></a>~ shared_ptr
 
-Yok eder bir `shared_ptr`.
+Yok eder `shared_ptr`.
 
 ```cpp
 ~shared_ptr();
 ```
 
-#### <a name="remarks"></a>Açıklamalar
+### <a name="remarks"></a>Açıklamalar
 
-Yıkıcı azaltır sahibi şu anda kaynak başvuru sayımını `*this`. Başvuru sayısı sıfıra düşerse, kaynak serbest bırakılır.
+Yıkıcı, tarafından `*this`sahip olunan kaynağın başvuru sayısını azaltır. Başvuru sayısı sıfıra düşerse, kaynak serbest bırakılır.
 
-#### <a name="example"></a>Örnek
+### <a name="example"></a>Örnek
 
 ```cpp
 // std__memory__shared_ptr_destroy.cpp
 // compile with: /EHsc
 #include <memory>
 #include <iostream>
-
-struct deleter
-{
-    void operator()(int *p)
-    {
-        delete p;
-    }
-};
 
 int main()
 {
@@ -762,45 +722,30 @@ use count == 2
 use count == 1
 ```
 
-### <a name="static_pointer_cast"></a> static_pointer_cast
+## <a name="swap"></a>Kur
+
+İki `shared_ptr` nesneyi değiştirir.
 
 ```cpp
-template<class T, class U>
-shared_ptr<T> static_pointer_cast(const shared_ptr<U>& r) noexcept;
+void swap(shared_ptr& sp) noexcept;
 ```
 
-### <a name="swap"></a> değiştirme
+### <a name="parameters"></a>Parametreler
 
-İki değiştirir `shared_ptr` nesneleri.
+*SP2*\
+İle takas edilecek paylaşılan işaretçi.
 
-```cpp
-void swap(shared_ptr& sp);
-```
+### <a name="remarks"></a>Açıklamalar
 
-#### <a name="parameters"></a>Parametreler
+Üye işlevi, `*this` bundan sonra *SP*tarafından sahip olunan kaynağı ve bundan sonra `*this` *SP* tarafından sahip olunan kaynak olan kaynağı bırakır. İşlev, iki kaynağın başvuru sayısını değiştirmez ve hiçbir özel durum oluşturmaz.
 
-*SP*\
-Paylaşılan işaretçi ile değiştirilecek.
-
-#### <a name="remarks"></a>Açıklamalar
-
-Üye işlevi başlangıçta tarafından sahip olunan kaynağı bırakır `*this` sonradan tarafından sahip olunan *sp*ve başlangıçta tarafından sahip olunan kaynağı *sp* sonradan tarafından sahip olunan `*this`. İşlev iki kaynaklar için başvuru sayılarını değiştirmez ve özel durumlar oluşturmaz.
-
-#### <a name="example"></a>Örnek
+### <a name="example"></a>Örnek
 
 ```cpp
 // std__memory__shared_ptr_swap.cpp
 // compile with: /EHsc
 #include <memory>
 #include <iostream>
-
-struct deleter
-{
-    void operator()(int *p)
-    {
-        delete p;
-    }
-};
 
 int main()
 {
@@ -833,39 +778,30 @@ int main()
 *sp1 == 5
 *sp1 == 10
 *sp1 == 5
-
 *wp1 == 5
 *wp1 == 10
 *wp1 == 5
 ```
 
-### <a name="unique"></a> benzersiz
+## <a name="unique"></a>eşi
 
-Sahip olunan kaynağın benzersiz olup olmadığını sınar.
+Sahip olunan kaynak benzersiz ise sınar. Bu işlev C++ 17 ' de kullanımdan kaldırılmıştır ve C++ 20 ' de kaldırılmıştır.
 
 ```cpp
-bool unique() const;
+bool unique() const noexcept;
 ```
 
-#### <a name="remarks"></a>Açıklamalar
+### <a name="remarks"></a>Açıklamalar
 
-Üye işlevinin döndürdüğü **true** başka hiçbir varsa `shared_ptr` nesnenin sahibi tarafından sahip olunan kaynağı `*this`, aksi takdirde **false**.
+Üye işlevi, sahip olduğu kaynağa sahip başka `shared_ptr` `*this`bir nesne yoksa true değerini döndürür, aksi takdirde **false**.
 
-#### <a name="example"></a>Örnek
+### <a name="example"></a>Örnek
 
 ```cpp
 // std__memory__shared_ptr_unique.cpp
 // compile with: /EHsc
 #include <memory>
 #include <iostream>
-
-struct deleter
-{
-    void operator()(int *p)
-    {
-        delete p;
-    }
-};
 
 int main()
 {
@@ -886,19 +822,19 @@ sp1.unique() == true
 sp1.unique() == false
 ```
 
-### <a name="use_count"></a> use_count
+## <a name="use_count"></a>use_count
 
-Kaynak sahiplerinin sayısını sayar.
+Kaynak sahiplerinin numaralarını sayar.
 
 ```cpp
-long use_count() const;
+long use_count() const noexcept;
 ```
 
-#### <a name="remarks"></a>Açıklamalar
+### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi döndürür `shared_ptr` tarafından sahip olunan bir kaynağa sahip nesneleri `*this`.
+Üye işlevi, `*this`sahip olduğu kaynağa sahip `shared_ptr` olan nesne sayısını döndürür.
 
-#### <a name="example"></a>Örnek
+### <a name="example"></a>Örnek
 
 ```cpp
 // std__memory__shared_ptr_use_count.cpp
@@ -924,3 +860,22 @@ int main()
 sp1.use_count() == 1
 sp1.use_count() == 2
 ```
+
+## <a name="weak_type"></a>weak_type
+
+Bir öğeye zayıf işaretçinin türü.
+
+```cpp
+using weak_type = weak_ptr<T>; // C++17
+```
+
+### <a name="remarks"></a>Açıklamalar
+
+`weak_type` Tanım c++ 17 ' ye eklenmiştir.
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[Üst bilgi dosyaları başvurusu](cpp-standard-library-header-files.md)\
+[\<bellek >](memory.md)\
+[unique_ptr](unique-ptr-class.md)\
+[weak_ptr sınıfı](weak-ptr-class.md)

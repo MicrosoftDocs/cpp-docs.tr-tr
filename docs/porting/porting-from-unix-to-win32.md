@@ -1,70 +1,23 @@
 ---
-title: UNIX'ten Win32'ye Bağlantı Noktası Oluşturma
-ms.date: 05/02/2019
+title: Windows 'da Linux programlarını çalıştırma
+ms.date: 07/31/2019
 helpviewer_keywords:
-- APIs [C++], porting to Win32
-- Windows API [C++], migrating from UNIX
-- migration [C++]
-- UNIX [C++], porting to Win32
-- porting to Win32 [C++], from UNIX
-- porting to Win32 [C++]
-- Win32 applications [C++], migrating from UNIX
+- Linux [C++], porting to Win32
 ms.assetid: 3837e4fe-3f96-4f24-b2a1-7be94718a881
-ms.openlocfilehash: 66ac5b478929a42b37d6d0b712063552cfae9104
-ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
+ms.openlocfilehash: 6b59d7685aaada3ba44c03da2e5c27c75c8a473a
+ms.sourcegitcommit: 725e86dabe2901175ecc63261c3bf05802dddff4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2019
-ms.locfileid: "65449017"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68682383"
 ---
-# <a name="porting-from-unix-to-win32"></a>UNIX'ten Win32'ye Bağlantı Noktası Oluşturma
+# <a name="running-linux-programs-on-windows"></a>Windows 'da Linux programlarını çalıştırma
 
-Uygulamalar için Windows UNIX içinden geçiş için birkaç seçeneğiniz vardır:
+Windows üzerinde bir Linux programı çalıştırmak için şu seçeneklere sahipsiniz:
 
-- UNIX'ten Win32 uygulamalarına bağlantı noktası UNIX kitaplıklarını kullanma
+- Programı Linux (WSL) için Windows alt sisteminde olduğu gibi çalıştırın. WSL 'de, programınız bir sanal makinede değil doğrudan makine donanımında yürütülür. WSL ayrıca Windows ve Linux sistemleri arasında doğrudan dosya sistemi çağrılarını, SSL taşıması gereksinimini ortadan kaldırır. WSL, bir komut satırı ortamı olarak tasarlanmıştır ve grafik yoğun uygulamalar için önerilmez. Daha fazla bilgi için bkz. [Linux Için Windows alt sistemi belgeleri](/windows/wsl/about).
+- Programı yerel makinenizde veya Azure 'da bir Linux sanal makinesinde ya da Docker kapsayıcısında olduğu gibi çalıştırın. Daha fazla bilgi için bkz. Azure 'da [sanal makineler](https://azure.microsoft.com/services/virtual-machines/) ve [Docker](https://docs.microsoft.com/azure/docker/).
+- Linux 'tan Windows Sistem çağrılarına bir çeviri katmanı sağlayan [MinGW](http://MinGW.org/) veya [MinGW-W64](https://MinGW-w64.org/doku.php) ortamlarında GCC veya Clang kullanarak programı derleyin.
+- Windows üzerinde MinGW veya MinGW-W64 ile karşılaştırıldığında daha tam bir Linux ortamı sağlayan [Cygwin](https://www.cygwin.com/) ortamındaki GCC veya Clang kullanarak programı derleyin ve çalıştırın.
+- Linux 'tan kodunuzu el ile bağlantı noktası ile Microsoft C++ (MSVC) kullanarak Windows için derleyin. Bu, platformdan bağımsız kodu ayrı kitaplıklara yeniden düzenlemeyi ve sonra Windows 'a özel kod (örneğin, Win32 veya DirectX API 'Leri) kullanmak için Linux 'a özgü kodu yeniden yazmayı içerir. Yüksek performanslı grafikler gerektiren uygulamalar için bu büyük olasılıkla en iyi seçenektir.
 
-- UNIX'ten Win32 uygulamaları yerel olarak taşıma
-
-- POSIX alt sistemini kullanarak Windows üzerinde çalışan UNIX uygulamalar
-
-## <a name="unix-libraries"></a>UNIX kitaplıkları
-
-Bir seçenek UNIX programcılar normalde düşünün, UNIX kodu derleme bir Win32 çalıştırılabilir dosyası olarak izin vermek için üçüncü taraf UNIX benzeri kitaplıkları kullanıyor. Birçok ticari (ve en az bir ortak etki alanı) kitaplıkları bunu. Bazı uygulamalar için bir seçenek budur. Bu kitaplıkları taşıma avantajı, bunlar ilk taşıma çabasını en aza olmasıdır. Bir rekabet yazılım ürünü için ana olumsuz bir uygulamanın yerel bir Win32 bağlantı noktası genellikle daha hızlı olacak ve daha fazla işlevsellik kaçınılmaz olarak gerekir ' dir. Daha fazla güç Windows almak için Win32 çağrıları yapması gerektiğinde, UNIX kabuğunun dışında adım uygulamanın garip olabilir.
-
-Aşağıdaki listede, Microsoft ve üçüncü taraf kaynakları taşıma ve UNIX geçiş Visual c++ destek sağlar:
-
-### <a name="unix-migration-guides"></a>UNIX geçiş kılavuzları
-
-[UNIX özel uygulama Geçiş Kılavuzu](https://technet.microsoft.com/library/bb656290.aspx) Teknik Yardım kod geçiş UNIX'ten Win32 ortamı sağlar.
-
-[UNIX geçiş Proje Kılavuzu](https://technet.microsoft.com/library/bb656287.aspx) üst düzey Yardım geçirme önemli projeleri UNIX'ten Win32'ye sağlayarak UNIX özel uygulama geçiş kılavuzunu tamamlar. Kılavuz, her proje geçişi aşamasında göz önüne almanız gereken sorunlar hakkında öneriler sağlar.
-
-### <a name="c-boost-web-site"></a>C++ Destek Web sitesi
-
-[https://www.boost.org/](https://www.boost.org/)
-
-## <a name="porting-unix-applications-directly-to-win32"></a>UNIX uygulamalarını doğrudan Win32 taşıma
-
-Başka bir seçenek, UNIX uygulamalarını doğrudan Win32 taşımaktır. ANSI C/C++ kitaplıkları ve ticari C Derleyici kitaplıklarını kullanarak, birçok geleneksel sistem çağrıları UNIX uygulamalar tarafından yararlandı Win32 uygulamalarında kullanılabilir.
-
-Çıktı modelinin **stdio**-tabanlı uygulamaları API'leri taklit Win32 konsol beri değiştirilmiş gerekmez **stdio** modeli ve sürümleri *curses* kullanan mevcut Win32 konsol API'leri. Daha fazla bilgi için [SetConsoleCursorPosition](/windows/console/setconsolecursorposition).
-
-Win32 uygulamaları olarak çalışmak için çok az değişiklik Berkeley yuva tabanlı uygulamaları gerekir. Windows Sockets arabirimini taşınabilirlik sayesinde WinSock belirtiminin giriş olarak bölümlerde belirtilmiştir minimum değişiklikle BSD yuva için tasarlanmıştır.
-
-Windows uyumlu DCE RPC desteklediğinden, RPC-tabanlı uygulamaları kolayca kullanılabilir. Bkz: [RPC işlevleri](/windows/desktop/Rpc/rpc-functions).
-
-En büyük alanlarından farkı, işlem modelinde yer alır. UNIX `fork`; Win32 değildir. Kullanımına bağlı olarak `fork` ve kod tabanının Win32 kullanılabilecek iki API vardır: `CreateProcess` ve `CreateThread`. Birden çok kopyalarını çatallar bir UNIX uygulama birden çok işlem ya da birden çok iş parçacığı ile tek bir işlem için Win32'de yeniden. Birden çok işlem kullandıysanız, işlemler arasında iletişim kurmak için kullanılan IPC, birden fazla yöntem vardır (ve belki de kod ve üst öğe gibi olması için yeni bir işlem verileri güncelleştirmek için İşlevler, `fork` sağlar gereklidir). IPC hakkında daha fazla bilgi için bkz. [Ara işlem iletişimleri](/windows/desktop/ipc/interprocess-communications).
-
-Windows ve UNIX grafik modelleri çok farklıdır. GDI Windows kullanan UNIX X penceresi sistem GUI kullanır. Benzer kavramsal rağmen GDI API'sine X API'sinin basit eşlemesi yok. Ancak, OpenGL desteği geçirme UNIX OpenGL tabanlı uygulamalar için kullanılabilir. Ve X istemcileri ve sunucuları için Windows X. Bkz: [cihaz bağlamları](/windows/desktop/gdi/device-contexts) GDI hakkında bilgi için.
-
-Visual c++ Windows üzerinde çalışan çok CGI uygulaması gibi temel UNIX uygulamaları kolayca aktarılabilir. Gibi işlev `open`, `fopen`, `read`, `write` ve diğer Visual C++ Çalışma Zamanı Kitaplığı'nda kullanılabilir. Ayrıca, UNIX API'leri C ve Win32 API'ları arasında bire bir eşleme yoktur: `open` için `CreateFile`, `read` için `ReadFile`, `write` için `WriteFile`, `ioctl` için `DeviceIOControl`, `close` için`CloseFile`ve benzeri.
-
-## <a name="windows-posix-subsystem"></a>Windows POSIX alt sistemi
-
-Başka bir seçenek UNIX programcılar göz Windows POSIX alt sistemi ' dir. Ancak, yalnızca Windows NT oluşturulduğunda standartlaştırılmış yalnızca POSIX sürümün POSIX 1003.1 destekler. O zamandan bu yana var. Bu alt genişletmek için çok az talep nedeniyle çoğu uygulama için Win32 dönüştürüldü Çok sayıda özellik içermediğinden 1003.1 tam özellikli uygulamalar için sınırlı ilgi sistemidir (1003.2 penceresindekilerle gibi ağ desteği vb.). Windows POSIX altında çalışan tam özellikli uygulamaların Windows özelliklerine bellek eşlemeli dosyalar, ağ ve grafikler gibi Win32 uygulamalarına erişiminiz yok. VI ve LS GREP gibi Windows POSIX alt ana hedeflerini gösterilebilir.
-
-## <a name="see-also"></a>Ayrıca bkz.
-
-[Visual C++ Taşıma ve Yükseltme Kılavuzu](visual-cpp-change-history-2003-2015.md)<br/>
-[UNIX](../c-runtime-library/unix.md)<br/>
-[Çıkarım Kuralları](../build/reference/inference-rules.md)

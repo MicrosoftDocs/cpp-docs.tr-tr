@@ -10,16 +10,16 @@ helpviewer_keywords:
 - CD2DRectF [MFC], CD2DRectF
 - CD2DRectF [MFC], IsNull
 ms.assetid: 87c12d87-9d18-4a19-ba14-0f51d6b6835a
-ms.openlocfilehash: 8e5c22fe15ce0d930f81dd16673927d5299bf630
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 9b91cfaec3827a61152c4116b56e817a436606be
+ms.sourcegitcommit: 725e86dabe2901175ecc63261c3bf05802dddff4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62396281"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68682397"
 ---
 # <a name="cd2drectf-class"></a>CD2DRectF sınıfı
 
-İçin sarmalayıcı `D2D1_RECT_F`.
+İçin `D2D1_RECT_F`bir sarmalayıcı.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -33,19 +33,19 @@ class CD2DRectF : public D2D1_RECT_F;
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[CD2DRectF::CD2DRectF](#cd2drectf)|Fazla Yüklendi. Oluşturur bir `CD2DRectF` nesnesinden `D2D1_RECT_F` nesne.|
+|[CD2DRectF::CD2DRectF](#cd2drectf)|Fazla Yüklendi. Nesnesinden`D2D1_RECT_F` bir `CD2DRectF` nesne oluşturur.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[CD2DRectF::IsNull](#isnull)|Döndürür bir **Boole** bir ifade (NULL) geçerli olmayan veri içerip içermediğini gösteren bir değer.|
+|[CD2DRectF:: IsNull](#isnull)|Bir ifadenin geçerli veri içerip içermediğini gösteren bir **Boole** değeri döndürür (null).|
 
 ### <a name="public-operators"></a>Ortak İşleçler
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[CD2DRectF::operator CRect](#operator_crect)|Dönüştürür `CD2DRectF` için `CRect` nesne.|
+|[CD2DRectF:: operator ekibi](#operator_crect)|Nesnesine dönüştürür `CD2DRectF`. `CRect`|
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -55,16 +55,16 @@ class CD2DRectF : public D2D1_RECT_F;
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxrendertarget.h
+**Üstbilgi:** afxrendertarget. h
 
-##  <a name="cd2drectf"></a>  CD2DRectF::CD2DRectF
+##  <a name="cd2drectf"></a>CD2DRectF::CD2DRectF
 
-CRect nesnesinden CD2DRectF bir nesne oluşturur.
+CRect nesnesinden bir CD2DRectF nesnesi oluşturur.
 
 ```
 CD2DRectF(const CRect& rect);
 CD2DRectF(const D2D1_RECT_F& rect);
-  CD2DRectF(const D2D1_RECT_F* rect);
+CD2DRectF(const D2D1_RECT_F* rect);
 
 CD2DRectF(
     FLOAT fLeft = 0.,
@@ -76,23 +76,23 @@ CD2DRectF(
 ### <a name="parameters"></a>Parametreler
 
 *Rect*<br/>
-Kaynak dikdörtgenin
+Kaynak dikdörtgeni
 
 *fLeft*<br/>
-Kaynak sol koordinatı
+Kaynak Sol koordinatı
 
 *fTop*<br/>
 Kaynak üst koordinat
 
 *fRight*<br/>
-Kaynak şu koordinat
+Kaynak sağ koordinatı
 
 *fBottom*<br/>
 kaynak alt koordinat
 
-##  <a name="isnull"></a>  CD2DRectF::IsNull
+##  <a name="isnull"></a>CD2DRectF:: IsNull
 
-Bir ifade (Null) geçerli olmayan veri içerip içermediğini gösteren bir Boole değeri döndürür.
+Bir ifadenin geçerli veri içerip içermediğini gösteren bir Boole değeri döndürür (null).
 
 ```
 BOOL IsNull() const;
@@ -100,11 +100,11 @@ BOOL IsNull() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Dikdörtgenin üst, sol, alt ve sağ değerlerin tüm 0'a eşit ise TRUE; Aksi durumda FALSE.
+Dikdörtgenin üst, sol, alt ve sağ değerlerinin tümü 0 ' a eşit ise TRUE; Aksi halde yanlış.
 
-##  <a name="operator_crect"></a>  CD2DRectF::operator CRect
+##  <a name="operator_crect"></a>CD2DRectF:: operator ekibi
 
-CD2DRectF CRect nesnesine dönüştürür.
+CD2DRectF öğesini CRect nesnesine dönüştürür.
 
 ```
 operator CRect();
@@ -112,7 +112,7 @@ operator CRect();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-D2D dikdörtgen geçerli değeri.
+D2D dikdörtgeninin geçerli değeri.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -1,21 +1,21 @@
 ---
 title: İşlev Şablonlarının Kısmi Sıralanması (C++)
-ms.date: 11/04/2016
+ms.date: 07/30/2019
 helpviewer_keywords:
 - partial ordering of function templates
 ms.assetid: 0c17347d-0e80-47ad-b5ac-046462d9dc73
-ms.openlocfilehash: 9a3dc687f197770f7a11440699163787b1dc48ef
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 0c4f11b4b3e02504c4786ea34441362b542959d6
+ms.sourcegitcommit: 725e86dabe2901175ecc63261c3bf05802dddff4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62183384"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68682419"
 ---
 # <a name="partial-ordering-of-function-templates-c"></a>İşlev Şablonlarının Kısmi Sıralanması (C++)
 
 İşlev çağrısının bağımsız değişken listesiyle eşleşen birden fazla işlev şablonu kullanılabilir. C++, hangi işlevin çağrılması gerektiğini belirtmek için işlev şablonlarının kısmi bir sıralamasını tanımlar. Sıralama, eşit şekilde özel olarak kabul edilen bazı şablonlar olabileceği için kısmidir.
 
-Derleyici, olası eşleşmeler arasından en özel şablon işlevini seçer. Örneğin, bir işlev şablonu bir türünü alan __T__ve başka bir işlev şablonu alma __T\*__  kullanılabilir __T\*__  sürüm söyledi Daha fazla özelleştirilmiş ve genel tercih edilen __T__ hem izin verilen eşleşme olsa bağımsız değişken işaretçi türünde olduğunda sürümü.
+Derleyici, olası eşleşmeler arasından en özel şablon işlevini seçer. Örneğin, bir işlev şablonu bir tür `T` alırsa ve kullanılabilir başka bir işlev şablonu `T*` varsa, `T*` sürüm daha özelleştirilmiş olarak kabul edilir. Bağımsız değişken bir işaretçi türü olduğunda `T` , her ikisi de izin verilen eşleşmeler olsa da, genel sürüm üzerinden tercih edilir.
 
 Bir işlev şablonu adayının daha özel olup olmadığını belirlemek için aşağıdaki işlemi kullanın:
 
@@ -27,28 +27,27 @@ Bir işlev şablonu adayının daha özel olup olmadığını belirlemek için a
 
 1. Aynı işlemi T1 ve T2'yi ters çevirerek tekrarlayın.
 
-1. Bir şablon diğer şablon için geçerli bir şablon bağımsız değişken listesiyse, ancak bunun tersi doğru değilse, bu şablon diğer şablona göre daha az özel olarak değerlendirilir. Önceki adım form geçerli bağımsız değişkenleri birbirine kullanan iki şablon, ardından bunların eşit şekilde özel olarak kabul edilir ve belirsiz bir çağrı sonuçları bunları kullanmak istediğinizde.
+1. Bir şablon diğer şablon için geçerli bir şablon bağımsız değişken listese, ancak bu değer doğru değilse, bu şablon diğer şablondan daha az özelleştirilmiş olarak değerlendirilir. Önceki adımı kullanarak her iki şablon da bir diğeri için geçerli bağımsız değişkenler oluşturduklarında, eşit olarak özelleştirilmiş olarak değerlendirilir ve bunları kullanmaya çalıştığınızda belirsiz bir çağrı sonucu oluşur.
 
 1. Bu kuralları kullanarak:
 
    1. Belirli bir tür için bir şablonu özelleştirme, genel türden bir bağımsız değişken alan özelleştirmeye göre daha özeldir.
 
-   1. Bir şablon yalnızca alma __T\*__  yalnızca bir alan daha fazla özelleştirilmiş __T__, çünkü bir kuramsal türü __X\*__  için geçerli bir bağımsız değişken bir __T__ şablon bağımsız değişkeni, ancak __X__ için geçerli bir bağımsız değişken değil bir __T\*__  şablon bağımsız değişkeni.
+   1. Bir şablon bağımsız değişkeni `T*` `X*` `T` için`X` geçerli bir bağımsız değişken olduğundan, yalnızca bir alma işlemi yalnızca bir tane daha özelleştirilmiştir. `T` `T*`şablon bağımsız değişkeni.
 
-   1. __const T__ göre daha özeldir __T__, çünkü __const X__ için geçerli bir bağımsız değişken bir __T__ şablon bağımsız değişkeni, ancak __X__ olduğu değil geçerli bir bağımsız değişken için bir __const T__ şablon bağımsız değişkeni.
+   1. `const T``T`, bir `const T` `const X` `X` şablon bağımsız değişkeni için geçerli bir bağımsız değişken olduğundan, ancak şablon bağımsız değişkeni için geçerli bir bağımsız değişken olmadığından, daha özelleştirilmiş. `T`
 
-   1. __const T\*__  göre daha özeldir __T\*__, çünkü __const X\*__  için geçerli bir bağımsız değişken bir __T\*__  şablon bağımsız değişkeni, ancak __X\*__  için geçerli bir bağımsız değişken değil bir __const T\*__  şablon bağımsız değişkeni.
+   1. `const T*``T*`, bir `const T*` `const X*` `X*` şablon bağımsız değişkeni için geçerli bir bağımsız değişken olduğundan, ancak şablon bağımsız değişkeni için geçerli bir bağımsız değişken olmadığından, daha özelleştirilmiş. `T*`
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, standart belirtildiği gibi çalışır:
+Aşağıdaki örnek, standart olarak belirtilen şekilde çalışmaktadır:
 
 ```cpp
 // partial_ordering_of_function_templates.cpp
 // compile with: /EHsc
 #include <iostream>
 
-extern "C" int printf(const char*,...);
 template <class T> void f(T) {
    printf_s("Less specialized function called\n");
 }
