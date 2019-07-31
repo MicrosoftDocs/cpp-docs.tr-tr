@@ -17,7 +17,7 @@ ms.locfileid: "62402534"
 
 ' * /' açıklama dışında bulundu
 
-Kapanış açıklama sınırlayıcısı bir açılış bir açıklama sınırlayıcısı gelmelidir değil. Yıldız arasında bir boşluk derleyici varsayar (<strong>\**</strong>) ve eğik çizgi (/).
+Kapanış açıklama sınırlayıcısı bir açılış bir açıklama sınırlayıcısı gelmelidir değil. Yıldız arasında bir boşluk derleyici varsayar (<strong>\*</strong>) ve eğik çizgi (/).
 
 ## <a name="example"></a>Örnek
 

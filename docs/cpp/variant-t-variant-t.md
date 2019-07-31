@@ -208,7 +208,7 @@ Bir **unsigned __int64** yeni içine kopyalanacak değeri `_variant_t` nesne.
 
 - **_variant_t (değişken &** *varSrc* **, bool**`fCopy` **)** oluşturan bir `_variant_t` mevcut bir nesne `VARIANT` nesne. Varsa *fCopy* olduğu **false**, **değişken** nesne yeni nesneye bir kopyası oluşturmadan eklenir.
 
-- **_variant_t (kısa***sSrc* **, VARTYPE**`vtSrc`**VT_I2 =)** oluşturan bir `_variant_t` nesne türünün VT_I2 veya VT_BOOL bir **kısa** tamsayı değeri. Diğer `VARTYPE` E_INVALIDARG hatayla sonuçlanır.
+- **_variant_t (kısa** *sSrc* **, VARTYPE**`vtSrc`**VT_I2 =)** oluşturan bir `_variant_t` nesne türünün VT_I2 veya VT_BOOL bir **kısa** tamsayı değeri. Diğer `VARTYPE` E_INVALIDARG hatayla sonuçlanır.
 
 - **_variant_t (uzun** `lSrc` **, VARTYPE**`vtSrc`**VT_I4 =)** oluşturan bir `_variant_t` VT_I4, VT_BOOL veya gelen VT_ERROR türündeki nesne bir **uzun**  tamsayı değeri. Diğer `VARTYPE` E_INVALIDARG hatayla sonuçlanır.
 
