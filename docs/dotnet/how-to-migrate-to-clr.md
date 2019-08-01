@@ -1,5 +1,5 @@
 ---
-title: "Nasıl yapılır: -CLR'ye geçiş"
+title: "Nasıl yapılır: -clr'ye geçiş"
 ms.custom: get-started-article
 ms.date: 09/18/2018
 helpviewer_keywords:
@@ -10,22 +10,22 @@ helpviewer_keywords:
 - migration [C++], /clr compiler option
 - /clr compiler option [C++], porting to
 ms.assetid: c9290b8b-436a-4510-8b56-eae51f4a9afc
-ms.openlocfilehash: 9abc85227d6091005d7e097d3305150f4ca347a1
-ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
+ms.openlocfilehash: 337dc69b60537fba8484837981fc6be0971c69cb
+ms.sourcegitcommit: 40ffe764244784c715b086c79626ac390b855d47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2019
-ms.locfileid: "65448091"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "68711136"
 ---
-# <a name="how-to-migrate-to-clr"></a>Nasıl yapılır: / CLR'ye geçiş
+# <a name="how-to-migrate-to-clr"></a>Nasıl yapılır: /Clr 'e geçiş
 
-Bu konuda, yerel kod ile derleme yaparken ortaya çıkan sorunları ele alınmıştır **/CLR** (bkz [/CLR (ortak dil çalışma zamanı derlemesi)](../build/reference/clr-common-language-runtime-compilation.md) daha fazla bilgi için). **/ CLR** yerel C++ kodunu çağırır ve diğer yerel C++ kod yanı sıra .NET derlemelerinden çağrılmasına olanak sağlar. Bkz: [karışık (yerel ve yönetilen) derlemeler](../dotnet/mixed-native-and-managed-assemblies.md) ve [Native ve .NET ile birlikte çalışabilirlik](../dotnet/native-and-dotnet-interoperability.md) avantajları hakkında daha fazla bilgi ile derlenen **/CLR**.
+Bu konuda, yerel kodu **/clr** ile derlerken ortaya çıkan sorunlar ele alınmaktadır (daha fazla bilgi için bkz. [/clr (ortak dil çalışma zamanı derlemesi)](../build/reference/clr-common-language-runtime-compilation.md) ). **/clr** , yerel C++ kodun diğer yerel C++ koda ek olarak .net derlemelerinden çağrılmasını ve çağrılmasını sağlar. **/Clr**ile derlemenin avantajları hakkında daha fazla bilgi için bkz. [karma (yerel ve yönetilen) derlemeler](../dotnet/mixed-native-and-managed-assemblies.md) ve [yerel ve .net birlikte çalışabilirliği](../dotnet/native-and-dotnet-interoperability.md) .
 
-## <a name="known-issues-compiling-library-projects-with-clr"></a>Bilinen sorunlar derlenirken kitaplık projeleri/CLR ile
+## <a name="known-issues-compiling-library-projects-with-clr"></a>Clr ile kitaplık projelerini derleme bilinen sorunları
 
-Visual Studio, kitaplık projeleri ile derleme yaparken bazı bilinen sorunlar içeren **/CLR**:
+Visual Studio, **/clr**ile kitaplık projelerini derlerken bazı bilinen sorunları içerir:
 
-- Kodunuzu türleri ile çalışma zamanında sorgulayabilir [CRuntimeClass::FromName](../mfc/reference/cruntimeclass-structure.md#fromname). Ancak, bir türü bir MSIL .dll ise (ile derlenmiş **/CLR**), çağrı `FromName` statik oluşturucular (görmezsiniz Bu sorun kod sahip olduktan sonra FromName çağrısı olursa yönetilen .dll çalıştırmadan önce gerçekleşirse başarısız olabilir Yönetilen .dll yürütülür). Bu sorunu gidermek için bir işlev içinde yönetilen .dll tanımlama, vermek ve yerel bir MFC uygulamasından çağırma tarafından yönetilen statik oluşturucunun oluşumu zorlayabilirsiniz. Örneğin:
+- Kodunuz, [CRuntimeClass:: FromName](../mfc/reference/cruntimeclass-structure.md#fromname)ile çalışma zamanında türleri sorgulayabilir. Ancak, bir tür MSIL. dll ' de ( **/clr**ile derlenmiş) ise, statik oluşturucular yönetilen. `FromName` dll ' de çalıştırılmadan önce gerçekleşirse, çağrısı başarısız olabilir (Bu sorunu, bu durum, yönetilen bir kod yürütüldüğünde, FromName çağrısı gerçekleşirse bu sorunu görmezsiniz. dll). Bu sorunu geçici olarak çözmek için yönetilen. dll ' de bir işlev tanımlayarak, dışarı aktararak ve yerel MFC uygulamasından çağırarak, yönetilen statik oluşturucunun oluşturulmasını zorlayabilirsiniz. Örneğin:
 
     ```
     // MFC extension DLL Header file:
@@ -35,36 +35,36 @@ Visual Studio, kitaplık projeleri ile derleme yaparken bazı bilinen sorunlar i
     }
     ```
 
-## <a name="compile-with-visual-c"></a>Visual C++ ile derleme
+## <a name="compile-with-visual-c"></a>Görsele derleC++
 
-Kullanmadan önce **/CLR** , projenizdeki herhangi bir modülü üzerinde derleyin ve Visual Studio 2010 ile yerel projenize bağlayın.
+Projenizdeki herhangi bir modülde **/clr** kullanmadan önce, önce Visual Studio 2010 ile yerel projenizi derleyin ve bağlayın.
 
-Sırayla aşağıdaki adımlar, kolay yolunu belirtin. bir **/CLR** derleme. Derlemek ve bu adımların her biri sonra projenizi çalıştırmak önemlidir.
+Aşağıdaki adımlar sırayla bir **/clr** derlemesinin en kolay yolunu sağlar. Bu adımların her biri sonrasında projenizi derlemek ve çalıştırmak önemlidir.
 
-### <a name="versions-prior-to-visual-studio-2003"></a>Visual Studio 2003 önceki sürümler
+### <a name="versions-prior-to-visual-studio-2003"></a>Visual Studio 2003 öncesi sürümler
 
-Visual Studio 2010 için Visual Studio 2003'ten önceki bir sürümden yükseltiyorsanız, Gelişmiş ilgili derleyici hataları görebilirsiniz C++ Visual Studio 2003 standard uyumluluğu
+Visual Studio 2003 ' den önceki bir sürümden Visual Studio 2010 ' e yükseltiyorsanız, Visual 2003 Studio 'da Gelişmiş C++ standart uyumsuzlukla ilgili derleyici hataları görebilirsiniz.
 
-### <a name="upgrading-from-visual-studio-2003"></a>Visual Studio 2003'ten yükseltme
+### <a name="upgrading-from-visual-studio-2003"></a>Visual Studio 2003 ' den yükseltme
 
-Önceki Visual Studio 2003 ile oluşturulan projeleri de ilk derlenmelidir olmadan **/CLR** gibi Visual Studio artık ANSI/ISO uyumluluk ve bazı önemli değişiklikler arttı. Büyük olasılıkla en dikkat etmeniz gereken değişiklik [CRT'deki güvenlik özellikleri](../c-runtime-library/security-features-in-the-crt.md). CRT kullanan kodu kullanımdan kaldırma uyarıları üretmek neredeyse kesindir. Bu uyarı bastırılabilir, ancak yeni geçirme [CRT işlevleri, Security-Enhanced sürümleri](../c-runtime-library/security-enhanced-versions-of-crt-functions.md) daha iyi güvenlik sağlar ve güvenlik sorunlarını kodunuzda gösterebilir tercih edilen, aynıdır.
+Visual Studio 2003 ile daha önce oluşturulmuş Projeler, Visual Studio artık ANSI/ISO uyumluluğunu ve bazı önemli değişiklikleri arttığı için ilk olarak **/clr** olmadan derlenmelidir. En çok dikkat gerektiren değişiklikler [CRT 'Daki güvenlik özellikleridir](../c-runtime-library/security-features-in-the-crt.md). CRT kullanan kodun kullanımdan kaldırma uyarıları üretme olasılığı yüksektir. Bu uyarılar bastırılabilir, ancak daha iyi güvenlik sağladığı ve kodunuzda güvenlik sorunlarını açığa çıkarmayabilecekleri [CRT işlevlerinin yeni güvenlik Gelişmiş sürümlerine](../c-runtime-library/security-enhanced-versions-of-crt-functions.md) geçiş tercih edilir.
 
-### <a name="upgrading-from-managed-extensions-for-c"></a>C++ için Yönetilen Uzantılar'dan yükseltme
+### <a name="upgrading-from-managed-extensions-for-c"></a>İçin Yönetilen Uzantılardan yükseltmeC++
 
-Visual Studio 2005'te başlayarak, C++ için Yönetilen Uzantılar'ile yazılan kod altında derlenemeyecektir **/CLR**.
+Visual Studio 2005 ' den başlayarak, için C++ yönetilen uzantılar ile yazılan kod **/clr**altında derlenmez.
 
-## <a name="convert-c-code-to-c"></a>C++ için C kodu Dönüştür
+## <a name="convert-c-code-to-c"></a>C kodunu şu şekilde DönüştürC++
 
-Visual Studio C dosyaları derleyeceği olsa da, bunları C++ için dönüştürmek gerekli olan bir **/CLR** derleme. Gerçek dosya adının değiştirilmesi gerekmez; kullanabileceğiniz **/Tp** (bkz [/Tc, /Tp, /TC, /TP (kaynak dosya türünü belirtin)](../build/reference/tc-tp-tc-tp-specify-source-file-type.md).) C++ kaynak kodu dosyaları için gerekli olmasına rağmen dikkat **/CLR**, nesne yönelimli paradigmalarını kullanmak için kodunuzu yeniden etkimesi gerekli değildir.
+Visual Studio C dosyalarını derleyebilse de, bir C++ **/clr** derlemesi için ' a dönüştürmeniz gerekir. Gerçek dosya adının değiştirilmesi gerekmez; **/TP** kullanabilirsiniz (bkz. [/TC,/TP,/TC,/TP (kaynak dosya türünü belirtin)](../build/reference/tc-tp-tc-tp-specify-source-file-type.md).) Kaynak kodu dosyalarının C++ **/clr**için gerekli olmasına karşın, nesne odaklı paradigmalarına kullanmak üzere kodunuzun yeniden çarpanının sağlanması gerekmez.
 
-C kodu bir C++ dosyası olarak derlenmiş değişiklikleri gerektirilecek olasılıktır. C++ tür güvenliği kuralları strict, olduğundan tür dönüştürmeleri yayınları ile açık olarak yapılmalıdır. Örneğin, malloc void bir işaretçi döndürür, ancak c herhangi bir türü ile bir atama bir işaretçiye atanabilir:
+C kodu bir C++ dosya olarak derlenirken değişiklik yapılmasını çok olasıdır. C++ Tür güvenlik kuralları katı, bu nedenle tür dönüştürmeleriyle açık yapılmalıdır. Örneğin, malloc void bir işaretçi döndürür, ancak Cast ile C içindeki herhangi bir tür işaretçisine atanabilir:
 
 ```
 int* a = malloc(sizeof(int));   // C code
 int* b = (int*)malloc(sizeof(int));   // C++ equivalent
 ```
 
-Ayrıca işlev işaretçileri kesinlikle tür kullanımı uyumlu C++'da olduğundan, aşağıdaki C kodu değişikliği gerektiriyor. C++'da oluşturmak en iyi bir `typedef` işlev işaretçisi türü tanımlar ve ardından işlev işaretçilerine dönüştürme için söz konusu türünü kullanın:
+İşlev işaretçileri ' C++de kesinlikle tür açısından güvenlidir, bu nedenle aşağıdaki C kodu değişiklik gerektirir. İçinde C++ , işlev işaretçisi türünü tanımlayan bir `typedef` oluşturmak ve ardından işlev işaretçilerini atamak için bu türü kullanmak en iyisidir:
 
 ```
 NewFunc1 = GetProcAddress( hLib, "Func1" );   // C code
@@ -72,9 +72,9 @@ typedef int(*MYPROC)(int);   // C++ equivalent
 NewFunc2 = (MYPROC)GetProcAddress( hLib, "Func2" );
 ```
 
-C++ aynı zamanda gerektirir işlevleri prototipli ya da tam olarak tanımlanmış ya da bunlar başvurulan veya çağrılan yüklenmeden önce.
+C++Ayrıca, başvurulmadan veya çağrılabilecek şekilde işlevlerin prototip veya tam olarak tanımlanması gerekir.
 
-C++ anahtar sözcükleri hareketlidir C kod içinde kullanılan tanımlayıcıları (gibi **sanal**, **yeni**, **Sil**, **bool**, **true** , **false**, vs.) kaydedilmelidir. Bu, genellikle basit arama ve değiştirme işlemlerini ile yapılabilir.
+C C++ kodunda ( **sanal**, **Yeni**, **Delete**, **bool**, **true**, **false**, vb. gibi) anahtar sözcük olarak gerçekleşen tanımlayıcılar yeniden adlandırılması gerekir. Bu, genellikle basit arama ve değiştirme işlemleri ile yapılabilir.
 
 ```
 COMObj1->lpVtbl->Method(COMObj, args);  // C code
@@ -83,80 +83,78 @@ COMObj2->Method(args);  // C++ equivalent
 
 ## <a name="reconfigure-project-settings"></a>Proje ayarlarını yeniden yapılandırın
 
-Projenizi derler ve Visual Studio 2010'da çalışan sonra yeni proje yapılandırmaları için oluşturmalısınız **/CLR** varsayılan yapılandırmaları değiştirmek yerine. **/ CLR** bazı derleyici seçenekleri ile uyumlu değildir ve ayrı yapılandırmaları projeniz yerel veya yönetilen olarak oluşturmanızı sağlar. Zaman **/CLR** özellik sayfaları iletişim kutusu, proje ayarları ile uyumlu değil olarak seçili **/CLR** devre dışı bırakıldı (ve devre dışı bırakılan seçeneklerin otomatik olarak geri yüklenmez varsa **/CLR** sonradan seçildiyse).
+Projeniz Visual Studio 2010 ' de derlendikten ve çalıştıktan sonra, varsayılan yapılandırmalarda değişiklik yapmak yerine **/clr** için yeni proje konfigürasyonları oluşturmanız gerekir. **/clr** bazı derleyici seçenekleriyle uyumsuzdur ve ayrı yapılandırma oluşturma, projenizi yerel veya yönetilen olarak oluşturmanıza imkan tanır. Özellik sayfaları iletişim kutusunda **/clr** seçildiğinde, **/clr** ile uyumlu olmayan proje ayarları devre dışı bırakılır (ve **/clr** daha sonra seçili değilse devre dışı bırakma seçenekleri otomatik olarak geri yüklenmez).
 
-### <a name="create-new-project-configurations"></a>Yeni proje yapılandırmaları oluşturma
+### <a name="create-new-project-configurations"></a>Yeni proje yapılandırması oluştur
 
-Kullanabileceğiniz **Ayarları Şuradan Kopyala** seçeneğini **yeni proje yapılandırma iletişim kutusu** (**derleme** > **Configuration Manager**  >  **Etkin çözüm yapılandırması** > **yeni**) var olan proje ayarlarınızı temel alan bir proje yapılandırması oluşturmak için. Bu kez hata ayıklama yapılandırması için ve yayın yapılandırması için bir kez yaparsınız. Sonraki değişiklikler ardından uygulanabilir **/CLR** -özgün proje yapılandırmalarını dokunmadan özgü yapılandırmalar.
+**Yeni proje yapılandırması iletişim kutusundaki** **Ayarları Kopyala** seçeneğini kullanabilirsiniz (**derleme** > **Configuration Manager** > **etkin çözüm yapılandırması** > **Yeni**) Mevcut proje ayarlarınıza göre bir proje yapılandırması oluşturmak için. Bunu hata ayıklama yapılandırması için ve yayın yapılandırması için bir kez yapın. Daha sonra, sonraki değişiklikler yalnızca **/clr** 'e özgü yapılandırmalara uygulanabilir ve özgün proje yapılandırmalarının bozulmadan bırakılır.
 
-Özel derleme kuralları kullanan projeler çok dikkat gerektirebilir.
+Özel yapı kuralları kullanan projeler, fazladan dikkat gerektirebilir.
 
-Bu adım, derleme görevleri dosyalarını kullanan projeler için farklı etkilere sahiptir. Bu durumda, ayrı bir yapı hedefi yapılandırılabilir veya sürüme özgü **/CLR** derleme özgün bir kopyasından oluşturulabilir.
+Bu adımın, makefiles kullanan projeler için farklı etkileri vardır. Bu durumda, ayrı bir yapı hedefi yapılandırılabilir veya **/clr** derlemesine özgü sürüm, orijinalin bir kopyasından oluşturulabilir.
 
 ### <a name="change-project-settings"></a>Proje ayarlarını değiştir
 
-**/ CLR** yönergelerini takip ederek geliştirme ortamında seçilebilir [/CLR (ortak dil çalışma zamanı derlemesi)](../build/reference/clr-common-language-runtime-compilation.md). Daha önce belirtildiği gibi bu adımı çakışan proje ayarları devre dışı bırakır.
+/clr [(ortak dil çalışma zamanı derlemesi)](../build/reference/clr-common-language-runtime-compilation.md)içindeki yönergeleri izleyerek, **/clr** geliştirme ortamında seçilebilir. Daha önce belirtildiği gibi, bu adım çakışan proje ayarlarını otomatik olarak devre dışı bırakır.
 
 > [!NOTE]
->  Yönetilen kitaplık veya web hizmeti projesi Visual Studio 2003'ten yükseltme yaparken **/Zl** eklenen derleyici seçeneği olacak **komut satırı** özellik sayfası. Bu, LNK2001 neden olur. Kaldırma **/Zl** gelen **komut satırı** çözmek için özellik sayfası. Bkz: [/Zl (varsayılan kitaplık adını atla)](../build/reference/zl-omit-default-library-name.md) ve [derleyici ayarlayın ve derleme özellikleri](../build/working-with-project-properties.md) daha fazla bilgi için. Veya, msvcrt.lib ve msvcmrt.lib bağlayıcıya ait ekleme **ek bağımlılıklar** özelliği.
+>  Yönetilen bir kitaplığı veya Web hizmeti projesini Visual Studio 2003 ' den yükseltirken, **/zl** derleyici seçeneği **komut satırı** Özellik sayfasına eklenir. Bu, LNK2001 neden olur. Çözümlemek için **komut satırı** özellik sayfasından **/zl** 'yi kaldırın. Daha fazla bilgi için bkz. [/zl (varsayılan kitaplık adını atla)](../build/reference/zl-omit-default-library-name.md) ve [derleyici ve derleme özelliklerini ayarlayın](../build/working-with-project-properties.md) . Veya, bağlayıcının **ek bağımlılıklar** özelliğine Msvcrt. lib ve msvcmrt. lib ekleyin.
 
-Derleme görevleri dosyası ile oluşturulan projeleri için uyumlu derleyici seçenekleri el ile bir kez devre dışı bırakılmalıdır **/CLR** eklenir. Bkz: /[/CLR kısıtlamalar](../build/reference/clr-restrictions.md) ile uyumlu derleyici seçenekleri hakkında bilgi için **/CLR**.
+Makefiles ile oluşturulmuş projeler için, **/clr** eklendikten sonra uyumsuz derleyici seçeneklerinin el ile devre dışı bırakılması gerekir. **/Clr**ile uyumlu olmayan derleyici seçenekleri hakkında bilgi için bkz./[/clr kısıtlamaları](../build/reference/clr-restrictions.md) .
 
-### <a name="precompiled-headers"></a>Önceden derlenmiş üst bilgiler
+### <a name="precompiled-headers"></a>Önceden derlenmiş üstbilgiler
 
-Önceden derlenmiş üst bilgiler desteklenen altında **/CLR**. Ancak, yalnızca CPP dosyalarınızdan bazıları derlerseniz **/CLR** (rest yerel olarak derleme) bazı değişiklikler ile oluşturulan önceden derlenmiş üstbilgiler gerekli olacaktır **/CLR** olanlar uyumlu değil olmadan oluşturulan **/CLR**. Bu uyumsuzluk olduğu Bunun nedeni, **/CLR** oluşturur ve meta verileri gerektirir. Derlenmiş modüller **/CLR** meta verileri içermez önceden derlenmiş üst bilgiler kullanamaz ve olmayan **/CLR** modülleri, meta verileri içeren önceden derlenmiş üst bilgi dosyaları kullanamaz.
+Ön derlenmiş üstbilgiler **/clr**altında desteklenir. Ancak, CPP dosyalarından bazılarını **/clr** ile derlerseniz (geri kalanı yerel olarak derlerken), **/clr** ile oluşturulan önceden derlenmiş üstbilgiler **/clr**olmadan oluşturulanlarla uyumlu olmadığından bazı değişiklikler yapmanız gerekir. Bu uyumsuzluk, **/clr** ' ın oluşturduğu ve meta verileri gerektiren olguyu nedeniyle yapılır. Bu nedenle **, derlenen modüller** meta verileri içermeyen önceden derlenmiş üstbilgiler kullanamaz ve **/clr** olmayan modüller meta veri içeren önceden derlenmiş üst bilgi dosyalarını kullanamaz.
 
-Burada bazı modüller derlendiği bir projeyi derlemek için en kolay yolu **/CLR** önceden derlenmiş üst bilgiler tamamen devre dışı bırakmaktır. (Proje özellik sayfaları iletişim kutusu C/C++ düğümünü açın ve önceden derlenmiş üst bilgiler seçin. Ardından önceden derlenmiş üst bilgi Oluştur/Kullan özelliğini "Kullanarak önceden derlenmiş üstbilgi için" olarak değiştirin.)
+Bazı **modüllerin derlendiği** bir projeyi derlemenin en kolay yolu, önceden derlenmiş üst bilgilerin tamamen devre dışı bırakılması. (Proje özellik sayfaları iletişim kutusunda C/C++ düğümünü açın ve önceden derlenmiş üstbilgiler ' i seçin. Daha sonra önceden derlenmiş üstbilgiler oluştur/kullan özelliğini "önceden derlenmiş üst bilgileri kullanma" olarak değiştirin.
 
-Ancak, özellikle büyük projeler için bu özelliği devre dışı bırakmayı tercih, yani çok daha iyi derleme hızı önceden derlenmiş üst bilgiler sağlar. Bu durumda yapılandırmak en iyi **/CLR** ve olmayan **/CLR** ayrı önceden derlenmiş üstbilgileri kullanmak için dosyaları. Bu, tek bir adımda tarafından yapılabilir çoklu seçilen derlenmesi için modülleri **/CLR** kullanarak **Çözüm Gezgini**grubuna sağ tıklayın ve Özellikler'i seçerek. Ardından farklı bir üst bilgi dosyası adını ve PCH dosyası sırasıyla kullanılacak dosya üzerinden PCH Oluştur/Kullan ve önceden derlenmiş üst bilgi dosyası özelliklerini değiştirin.
+Ancak, özellikle büyük projeler için, önceden derlenmiş üstbilgiler çok daha iyi derleme hızı sağlar, bu nedenle bu özelliğin devre dışı bırakılması istenmez. Bu durumda, **/clr** ve **/clr** olmayan dosyaları ayrı önceden derlenmiş üst bilgileri kullanacak şekilde yapılandırmak en iyisidir. Bu, **Çözüm Gezgini**kullanılarak **/clr** derlenecek, gruba sağ tıklanarak özellikler seçilerek tek bir adımda yapılabilir. Ardından, sırasıyla farklı bir üstbilgi dosya adı ve PCH dosyası kullanmak için dosya ve önceden derlenmiş üst bilgi dosyası özelliklerini kullanarak oluşturma/kullanma PCH 'yi değiştirin.
 
 ## <a name="fixing-errors"></a>Hataları düzeltme
 
-İle derlerken **/CLR** derleyici, bağlayıcı veya çalışma zamanı hatalarına neden olabilir. Bu bölümde, en yaygın sorunlar ele alınmaktadır.
+**/Clr** ile derleme, derleyici, bağlayıcı veya çalışma zamanı hatalarına neden olabilir. Bu bölümde en yaygın sorunlar ele alınmaktadır.
 
 ### <a name="metadata-merge"></a>Meta veri birleştirme
 
-Veri türleri farklı sürümleri, bağlayıcının iki tür için oluşturulan meta verileri eşleşmediğinden başarısız olmasına neden olabilir. (Bu genellikle bir türün üyeleri koşullu olarak tanımlanmıştır, ancak koşulları türünü kullanan tüm CPP dosyalarına aynı olmayan neden olur.) Bu durumda yalnızca sembol adı ve türü tanımlandığı ikinci OBJ dosyası adını raporlama bir bağlayıcı başarısız. Genellikle, bir veri türü sürümü konumunu bulmak için OBJ dosyaları bağlayıcıya gönderilir sırasını döndürmek kullanışlıdır.
+Farklı veri türleri sürümleri, iki tür için oluşturulan meta veriler eşleşmediğinden bağlayıcının başarısız olmasına neden olabilir. (Bu durum genellikle, bir tür üyelerinin koşullu olarak tanımlanmasından kaynaklanır ancak koşulların türü kullanan tüm CPP dosyaları için aynı değildir.) Bu durumda bağlayıcı başarısız olur, yalnızca sembol adını ve türün tanımlandığı ikinci OBJ dosyasının adını rapor edin. Veri türünün diğer sürümünün konumunu öğrenmek için OBJ dosyalarının bağlayıcıya gönderilme sırasını döndürmek genellikle yararlıdır.
 
 ### <a name="loader-lock-deadlock"></a>Yükleyici kilidi kilitlenmesi
 
-"Yükleyici kilidi kilitlenmesi" oluşabilir, ancak kararlı ve algılanır ve çalışma zamanında bildirdi. Bkz: [karışık derlemeleri başlatma](../dotnet/initialization-of-mixed-assemblies.md) ayrıntılı arka plan, rehberlik ve çözümler.
+"Yükleyici kilidi kilitlenmesi" oluşabilir, ancak bu durum belirleyici olur ve çalışma zamanında algılanır ve raporlanır. Ayrıntılı arka plan, kılavuz ve çözümler için [Karışık derlemelerin başlatılmasına](../dotnet/initialization-of-mixed-assemblies.md) bakın.
 
-### <a name="data-exports"></a>Verileri dışarı aktarma
+### <a name="data-exports"></a>Veri dışarı aktarmaları
 
-DLL'leri dışarı aktarma, hata yapmaya açık ve önerilmez. Bir DLL veri bölümünü yönetilen DLL kısmı yürütülene kadar başlatılması garanti edilmez olmasıdır. Başvuru meta verileriyle [#using yönergesi](../preprocessor/hash-using-directive-cpp.md).
+DLL verilerini dışa aktarma işlemi hataya açıktır ve önerilmez. Bunun nedeni, dll 'nin bazı yönetilen kısımları yürütülene kadar bir DLL 'nin veri bölümünün başlatılmayacağından garanti edilmez. [#Using yönergesi](../preprocessor/hash-using-directive-cpp.md)ile meta verilere başvur.
 
 ### <a name="type-visibility"></a>Tür Görünürlüğü
 
-Yerel türler varsayılan olarak özeldir. Bu, DLL dışında görünür olmadığı bir yerel tür içinde sonuçlanabilir. Ekleyerek bu hatayı gidermek `public` bu türleri için.
+Yerel türler varsayılan olarak özeldir. Bu, yerel bir türün DLL dışında görünmediğine yol açabilir. Bu türlere ekleyerek `public` bu hatayı çözün.
 
-### <a name="floating-point-and-alignment-issues"></a>Nokta ve hizalama sorunları kayan
+### <a name="floating-point-and-alignment-issues"></a>Kayan nokta ve hizalama sorunları
 
-`__controlfp` Ortak dil çalışma zamanı üzerinde desteklenmiyor (bkz [_control87, _controlfp, \__control87_2](../c-runtime-library/reference/control87-controlfp-control87-2.md) daha fazla bilgi için). CLR ayrıca değil uyar [hizalama](../cpp/align-cpp.md).
+`__controlfp`ortak dil çalışma zamanında desteklenmez (daha fazla bilgi için bkz. [_control87, _controlfp, \__control87_2](../c-runtime-library/reference/control87-controlfp-control87-2.md) ). CLR de [hizalı](../cpp/align-cpp.md)olmaz.
 
-### <a name="com-initialization"></a>COM başlatması
+### <a name="com-initialization"></a>COM Başlatma
 
-Bir modül başlatıldığında ortak dil çalışma zamanı COM otomatik olarak başlatır (COM otomatik olarak başlatıldığında, bunu MTA gibi yapılır). Sonuç olarak, açıkça COM başlatılıyor, COM zaten başlatılmış olduğunu gösteren dönüş kodları verir. CLR başka bir iş parçacığı modeline COM önceden başlatıldı, COM ile bir iş parçacığı modeli açıkça başlatılmaya çalışılırken, uygulamanızın başarısız olmasına neden olabilir.
+Ortak dil çalışma zamanı, bir modül başlatıldığında COM otomatik olarak başlatılır (yani, COM otomatik olarak başlatıldığında MTA olarak yapılır). Sonuç olarak com, com 'un Zaten başlatılmış olduğunu belirten dönüş kodlarını açıkça başlatma. CLR 'nin COM 'ı başka bir iş parçacığı modeline zaten başlatması durumunda bir iş parçacığı modeliyle COM başlatılmaya çalışılıyor uygulamanızın başarısız olmasına neden olabilir.
 
-Ortak dil çalışma zamanı, varsayılan olarak COM MTA başlatır; kullanma [/CLRTHREADATTRIBUTE (CLR iş parçacığı özniteliğini Ayarla)](../build/reference/clrthreadattribute-set-clr-thread-attribute.md) değiştirmek için.
+Ortak dil çalışma zamanı, COM 'yi varsayılan olarak MTA olarak başlatır; Bunu değiştirmek için [/CLRTHREADATTRIBUTE (clr Iş parçacığı özniteliğini ayarla)](../build/reference/clrthreadattribute-set-clr-thread-attribute.md) kullanın.
 
 ### <a name="performance-issues"></a>Performans sorunları
 
-Yerel C++ yöntemler için MSIL oluşturulan dolaylı olarak çağrıldığında, performansın görebilirsiniz (sanal işlev çağrıları veya işlev işaretçilerine kullanarak). Bunun hakkında daha fazla bilgi edinmek için [çift dönüştürme](../dotnet/double-thunking-cpp.md).
+MSIL 'e oluşturulan yerel C++ Yöntemler dolaylı olarak çağrıldığında (sanal işlev çağrıları veya işlev işaretçileri kullanarak) daha düşük performans görebilirsiniz. Bunun hakkında daha fazla bilgi için bkz. [Double thunking](../dotnet/double-thunking-cpp.md).
 
-MSIL Yerelden taşırken, çalışma kümenizin boyutunu artış fark edeceksiniz. Ortak dil çalışma zamanı programların doğru çalışmasını sağlamak için birçok özellik sağlar olmasıdır. Varsa, **/CLR** uygulama düzgün çalışmıyorsa, C4793 etkinleştirmek isteyebilirsiniz (varsayılan olarak kapalıdır) bkz [Derleyici Uyarısı (düzey 1 ve 3) C4793](../error-messages/compiler-warnings/compiler-warning-level-1-and-3-c4793.md) daha fazla bilgi için.
+Yerelden MSIL 'e geçiş yaparken, çalışma kümesinin boyutunda bir artış olduğunu fark edeceksiniz. Bunun nedeni, ortak dil çalışma zamanının programların doğru şekilde çalışmasını sağlamak için birçok özellik sağlamaktır. **/Clr** uygulamanız doğru çalışmıyorsa, C4793 (varsayılan olarak kapalı) özelliğini etkinleştirmek isteyebilirsiniz. daha fazla bilgi için bkz. [Derleyici Uyarısı (düzey 1 ve 3) C4793](../error-messages/compiler-warnings/compiler-warning-level-1-and-3-c4793.md) .
 
-### <a name="program-crashes-on-shutdown"></a>Kapatma sırasında program kilitleniyor
+### <a name="program-crashes-on-shutdown"></a>Program kapatılırken kilitleniyor
 
-Bazı durumlarda, CLR kapatılabilir yönetilen kodunuzun bitirmeden önce çalışıyor. Kullanarak `std::set_terminate` ve `SIGTERM` bu neden olabilir. Bkz: [sinyal sabitleri](../c-runtime-library/signal-constants.md) ve [set_terminate](../c-runtime-library/abnormal-termination.md) daha fazla bilgi için.
+Bazı durumlarda, yönetilen kodunuzun çalışması tamamlanmadan önce CLR kapanıyor. `std::set_terminate` Ve`SIGTERM` kullanarak buna neden olabilir. Daha fazla bilgi için bkz. [sinyal sabitleri](../c-runtime-library/signal-constants.md) ve [set_terminate](../c-runtime-library/abnormal-termination.md) .
 
-## <a name="using-new-visual-c-features"></a>Yeni Visual C++ özellikleri kullanma
+## <a name="using-new-visual-c-features"></a>Yeni görsel C++ özellikleri kullanma
 
-Uygulama derlerken, bağlantılar ve çalıştırmaları sonra herhangi bir modüle ile derlenmiş .NET özellikleri kullanmaya başlayabilirsiniz **/CLR**. Daha fazla bilgi için [çalışma zamanı platformları için bileşen uzantıları](../extensions/component-extensions-for-runtime-platforms.md).
+Uygulamanız derlendikten, bağlanır ve çalıştıktan sonra **/clr**ile derlenen herhangi bir modülde .NET özelliklerini kullanmaya başlayabilirsiniz. Daha fazla bilgi için bkz. [çalışma zamanı platformları Için bileşen uzantıları](../extensions/component-extensions-for-runtime-platforms.md).
 
-C++ için Yönetilen Uzantılar'ı kullandıysanız, kodunuzu yeni söz dizimini kullanacak şekilde dönüştürebilirsiniz. Ayrıntılar için Yönetilen Uzantılar dönüştürme için C++, bkz: [ C++CLI geçiş öncüsü](../dotnet/cpp-cli-migration-primer.md).
-
-Visual c++'ta .NET hakkında bilgi için bkz:
+Visual C++ Studio 'da .NET programlama hakkında bilgi için bkz.:
 
 - [C++/CLI (Visual C++) ile .NET Programlama](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)
 
