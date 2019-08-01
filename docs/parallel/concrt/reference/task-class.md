@@ -1,6 +1,6 @@
 ---
 title: task Sınıfı (Eşzamanlılık Çalışma Zamanı)
-ms.date: 11/04/2016
+ms.date: 07/30/2019
 f1_keywords:
 - task
 - PPLTASKS/concurrency::task
@@ -14,74 +14,68 @@ f1_keywords:
 helpviewer_keywords:
 - task class
 ms.assetid: cdc3a8c0-5cbe-45a0-b5d5-e9f81d94df1a
-ms.openlocfilehash: 99676ac0fff9584cd8453562f8918f6cadd66666
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e0f876b3c0971e70763f36622fb72a3dea671461
+ms.sourcegitcommit: 725e86dabe2901175ecc63261c3bf05802dddff4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62385212"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68682526"
 ---
 # <a name="task-class-concurrency-runtime"></a>task Sınıfı (Eşzamanlılık Çalışma Zamanı)
 
-Paralel Desen kitaplığı (PPL) `task` sınıfı. A `task` nesnesi zaman uyumsuz olarak ve diğer görevleri aynı anda yürütülebilecek ve Eşzamanlılık Çalışma zamanında paralel algoritmalar tarafından üretilen iş paralel çalışmayı temsil eder. Türünün bir sonucu üretir `_ResultType` başarıyla tamamlandığında. Görev türü `task<void>` hiç sonuç vermez. Bir görev beklenebilir ve diğer görevlerden bağımsız olarak iptal edildi. Devamlılıkları kullanarak başka görevlerle de oluşabilir ( `then`) ve birleştirme ( `when_all`) ve seçim ( `when_any`) desenleri.
+Paralel Desenler kitaplığı (ppl) `task` sınıfı. Bir `task` nesnesi, eşzamanlılık çalışma zamanı zaman uyumsuz olarak yürütülebilen ve diğer görevlerle eşzamanlı olarak yürütülebilecek çalışmayı ve paralel algoritmalar tarafından üretilen paralel çalışmayı temsil eder. Başarıyla tamamlanmasıyla `_ResultType` ilgili bir sonuç üretir. Tür `task<void>` görevleri sonuç üretmez. Bir görev, diğer görevlerden bağımsız olarak bekleve iptal edilebilir. Ayrıca, devamlılıklar ( `then`) ve JOIN ( `when_all`) ve Choice `when_any`() desenleri kullanılarak diğer görevlerle da oluşturulabilir. Bir görev nesnesi yeni bir değişkene atandığında, davranışı ' dır `std::shared_ptr`; diğer bir deyişle, her iki nesne de aynı temel görevi temsil eder.
 
 ## <a name="syntax"></a>Sözdizimi
 
 ```
-template <typename T>
-class task;
-
 template <>
 class task<void>;
 
-template<typename _ReturnType>
+template<typename _ResultType>
 class task;
 ```
 
 #### <a name="parameters"></a>Parametreler
 
-*T*<br/>
-Görev nesnesi türü.
-
-*_ReturnType*<br/>
-Bu görevin sonuç türü.
+*_ResultType*<br/>
+Görevin ürettiği sonucun türü. 
 
 ## <a name="members"></a>Üyeler
 
-### <a name="public-typedefs"></a>Genel Typedefler
+### <a name="public-typedefs"></a>Ortak tür tanımları
 
 |Ad|Açıklama|
 |----------|-----------------|
-|`result_type`|Sonuç türü, bu sınıfın bir nesnesi oluşturur.|
+|`result_type`|Bu sınıfın bir nesnesinin oluşturduğu sonucun türü.|
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[Görev](#ctor)|Fazla Yüklendi. Oluşturur bir `task` nesne.|
+|[görevinin](#ctor)|Fazla Yüklendi. Bir `task` nesnesi oluşturur.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[get](#get)|Fazla Yüklendi. Bu görevin ürettiği sonucu döndürür. Görev bir terminal durumunda değilse, durum, bir çağrı `get` görevin tamamlanmasını bekler. Bu yöntem bir görevde çağrıldığında bir değer döndürmeyen bir `result_type` , `void`.|
-|[is_apartment_aware](#is_apartment_aware)|Görev bir Windows çalışma zamanı kaydırmayacağını belirler `IAsyncInfo` çıkarırsa veya böyle bir görevden gelen görevdir.|
+|[get](#get)|Fazla Yüklendi. Bu görevin ürettiği sonucu döndürür. Görev bir terminal durumunda değilse, için `get` bir çağrısı görevin bitmesini bekler. Bu yöntem `result_type` , `void`içeren bir görevde çağrıldığında bir değer döndürmez.|
+|[is_apartment_aware](#is_apartment_aware)|Görevin bir Windows çalışma zamanı `IAsyncInfo` arabirimini kaydırıp sarmadığını ya da bu türden bir görevden mi ait olduğunu belirler.|
 |[is_done](#is_done)|Görevin tamamlanıp tamamlanmadığını belirler.|
-|[scheduler](#scheduler)|Bu görev için Zamanlayıcıyı döndürür|
-|[Ardından](#then)|Fazla Yüklendi. Bu göreve bir devamlılık görevi ekler.|
-|[bekleme](#wait)|Bu görev bir terminal durumuna ulaşmasını bekler. Mümkündür `wait` tüm görevleri bağımlılıkları karşılanır ve bu zaten yürütme için bir arka plan çalışanı tarafından teslim alındı değil için görev satıriçi yürütülecek.|
+|[scheduler](#scheduler)|Bu görev için zamanlayıcıyı döndürür|
+|[ni](#then)|Fazla Yüklendi. Bu göreve bir devamlılık görevi ekler.|
+|[bekleneceğini](#wait)|Bu görevin Terminal durumuna ulaşmasını bekler. Tüm görev bağımlılıkları karşılanmışsa ve bir arka plan çalışanı tarafından yürütülmek üzere henüz çekilmediğinde, görevin satır içi yürütülmesi mümkündür `wait` .|
 
 ### <a name="public-operators"></a>Ortak İşleçler
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[operator!=](#operator_neq)|Fazla Yüklendi. İki olup olmadığını belirleyen `task` nesneleri farklı iç görevleri temsil eder.|
-|[operator=](#operator_eq)|Fazla Yüklendi. Bir içeriğini değiştirir `task` başka bir nesne.|
-|[operator==](#operator_eq_eq)|Fazla Yüklendi. İki olup olmadığını belirleyen `task` nesneleri aynı iç görevi temsil eder.|
+|[operator!=](#operator_neq)|Fazla Yüklendi. İki `task` nesnenin farklı iç görevleri temsil ettiğini belirler.|
+|[operator=](#operator_eq)|Fazla Yüklendi. Bir `task` nesnenin içeriğini başka bir nesneyle değiştirir.|
+|[operator==](#operator_eq_eq)|Fazla Yüklendi. İki `task` nesnenin aynı dahili görevi temsil ettiğini belirtir.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Daha fazla bilgi için [görev Paralelliği](../../../parallel/concrt/task-parallelism-concurrency-runtime.md).
+Daha fazla bilgi için bkz. [Görev Paralelliği](../../../parallel/concrt/task-parallelism-concurrency-runtime.md).
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -89,34 +83,34 @@ Daha fazla bilgi için [görev Paralelliği](../../../parallel/concrt/task-paral
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** ppltasks.h
+**Üstbilgi:** ppltasks. h
 
-**Namespace:** eşzamanlılık
+**Ad alanı:** eşzamanlılık
 
-##  <a name="get"></a> Al
+##  <a name="get"></a>Al
 
-Bu görevin ürettiği sonucu döndürür. Görev bir terminal durumunda değilse, durum, bir çağrı `get` görevin tamamlanmasını bekler. Bu yöntem bir görevde çağrıldığında bir değer döndürmeyen bir `result_type` , `void`.
+Bu görevin ürettiği sonucu döndürür. Görev bir terminal durumunda değilse, için `get` bir çağrısı görevin bitmesini bekler. Bu yöntem `result_type` , `void`içeren bir görevde çağrıldığında bir değer döndürmez.
 
 ```
-_ReturnType get() const;
+_ResultType get() const;
 
 void get() const;
 ```
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Görev sonucu.
+Görevin sonucu.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Görev iptal edilirse bir çağrı `get` oluşturmaz bir [task_canceled](task-canceled-class.md) özel durum. Görev farklı bir özel durum karşılaştıysa veya öncül bir görevden buna özel durum yayıldığı, görev, bir çağrı `get` o özel durum oluşturur.
+Görev iptal edilirse, öğesine `get` yapılan bir çağrı, bir [task_canceled](task-canceled-class.md) özel durumu oluşturur. Görev farklı bir özel durumla karşılaşılırsa veya bir öncül görevden buna bir özel durum yayıldıysa, öğesine `get` yapılan bir çağrı o özel durumu oluşturur.
 
 > [!IMPORTANT]
->  Bir evrensel Windows Platformu (UWP) uygulaması çağırmayın [CONCURRENCY::Task:: wait](#wait) veya `get` ( `wait` çağrıları `get`) kodda kullanıcı arabirimi iş parçacığında çalışır. Aksi takdirde, çalışma zamanı oluşturur [concurrency::invalid_operation](invalid-operation-class.md) çünkü bu yöntem geçerli iş parçacığını engeller ve uygulamanın yanıt veremez duruma gelmesine neden olabilir. Ancak, çağırabilirsiniz `get` sonuç hemen kullanılabilir olduğundan, bir görev tabanlı devamlılık içinde öncül görevin sonucunu almak için yöntemi.
+>  Evrensel Windows platformu (UWP) uygulamasında, Kullanıcı arabirimi iş parçacığında çalışan kodda [concurrency:: task:: wait](#wait) `get` veya `wait` ( `get`çağrılar) çağırmayın. Aksi takdirde, çalışma zamanı [eşzamanlılık:: invalid_operation](invalid-operation-class.md) atar çünkü bu yöntemler geçerli iş parçacığını engeller ve uygulamanın yanıt vermemesine neden olabilir. Ancak, sonuç hemen kullanılabilir olduğundan `get` , öncül görevin sonucunu görev tabanlı devamlıya almak için yöntemini çağırabilirsiniz.
 
 ##  <a name="is_apartment_aware"></a> is_apartment_aware
 
-Görev bir Windows çalışma zamanı kaydırmayacağını belirler `IAsyncInfo` çıkarırsa veya böyle bir görevden gelen görevdir.
+Görevin bir Windows çalışma zamanı `IAsyncInfo` arabirimini kaydırıp sarmadığını ya da bu türden bir görevden mi ait olduğunu belirler.
 
 ```
 bool is_apartment_aware() const;
@@ -124,9 +118,9 @@ bool is_apartment_aware() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**doğru** görev indirilirse bir `IAsyncInfo` çıkarırsa veya böyle bir görevden gelen görevdir **false** Aksi takdirde.
+görev bir `IAsyncInfo` arabirimi sarıp sarmamışsa ya da bu türden bir görevden diğerine eşitse true, aksi durumda **false** .
 
-##  <a name="is_done"></a>  Task::is_done metodu (eşzamanlılık çalışma zamanı)
+##  <a name="is_done"></a>Task:: is_done yöntemi (Eşzamanlılık Çalışma Zamanı)
 
 Görevin tamamlanıp tamamlanmadığını belirler.
 
@@ -136,18 +130,18 @@ bool is_done() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Görevi tamamlandı, true, false Aksi takdirde.
+Görev tamamlanırsa true, aksi takdirde false.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Görev tamamlandıysa veya (ile veya kullanıcı özel durum olmadan) iptal edildiyse işlev true döndürür.
+Görev tamamlandığında veya iptal edildiğinde (Kullanıcı özel durumuyla veya olmadan), işlev true değerini döndürür.
 
-##  <a name="operator_neq"></a> işleç! =
+##  <a name="operator_neq"></a>işleç! =
 
-İki olup olmadığını belirleyen `task` nesneleri farklı iç görevleri temsil eder.
+İki `task` nesnenin farklı iç görevleri temsil ettiğini belirler.
 
 ```
-bool operator!= (const task<_ReturnType>& _Rhs) const;
+bool operator!= (const task<_ResultType>& _Rhs) const;
 
 bool operator!= (const task<void>& _Rhs) const;
 ```
@@ -155,15 +149,15 @@ bool operator!= (const task<void>& _Rhs) const;
 ### <a name="parameters"></a>Parametreler
 
 *_Rhs*<br/>
-Karşılaştır görevi.
+Karşılaştırılacak görev.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**doğru** nesneler farklı arka plan görevlerine başvuruyorsa ve **false** Aksi takdirde.
+nesneler farklı temel görevlere başvuracaksa **true** , aksi takdirde **false** .
 
-##  <a name="operator_eq"></a> işleç =
+##  <a name="operator_eq"></a>işleç =
 
-Bir içeriğini değiştirir `task` başka bir nesne.
+Bir `task` nesnenin içeriğini başka bir nesneyle değiştirir.
 
 ```
 task& operator= (const task& _Other);
@@ -180,14 +174,14 @@ Kaynak `task` nesne.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Olarak `task` bir kopya atamasından sonra bu akıllı bir işaretçi gibi davranır `task` nesnelerini aynı gerçek görevi temsil eden `_Other` yapar.
+Bir `task` kopyalama atamasından sonra, akıllı bir işaretçi gibi `_Other` davrandığı gibi `task` , bu nesneler de aynı gerçek görevi temsil eder.
 
-##  <a name="operator_eq_eq"></a> işleç ==
+##  <a name="operator_eq_eq"></a>işleç = =
 
-İki olup olmadığını belirleyen `task` nesneleri aynı iç görevi temsil eder.
+İki `task` nesnenin aynı dahili görevi temsil ettiğini belirtir.
 
 ```
-bool operator== (const task<_ReturnType>& _Rhs) const;
+bool operator== (const task<_ResultType>& _Rhs) const;
 
 bool operator== (const task<void>& _Rhs) const;
 ```
@@ -195,15 +189,15 @@ bool operator== (const task<void>& _Rhs) const;
 ### <a name="parameters"></a>Parametreler
 
 *_Rhs*<br/>
-Karşılaştır görevi.
+Karşılaştırılacak görev.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**doğru** nesneler aynı arka plan görevlerine başvuruyorsa ve **false** Aksi takdirde.
+nesneler aynı temel göreve başvuracaksa **true** , aksi takdirde **false** .
 
-##  <a name="scheduler"></a>  Task::Scheduler metodu (eşzamanlılık çalışma zamanı)
+##  <a name="scheduler"></a>Task:: Scheduler yöntemi (Eşzamanlılık Çalışma Zamanı)
 
-Bu görev için Zamanlayıcıyı döndürür
+Bu görev için zamanlayıcıyı döndürür
 
 ```
 scheduler_ptr scheduler() const;
@@ -213,9 +207,9 @@ scheduler_ptr scheduler() const;
 
 Zamanlayıcı işaretçisi
 
-##  <a name="ctor"></a> Görev
+##  <a name="ctor"></a>görevinin
 
-Oluşturur bir `task` nesne.
+Bir `task` nesnesi oluşturur.
 
 ```
 task();
@@ -237,35 +231,35 @@ task(
 
 ### <a name="parameters"></a>Parametreler
 
-*T*<br/>
-Görevin kendisinden oluşturulacağı parametre türü.
+*ŞI*<br/>
+Görevin oluşturulması gereken parametrenin türü.
 
 *_Param*<br/>
-İçinden görevin kendisinden oluşturulacağı parametre. Bu bir lambda, bir işlev nesnesi olabilir bir `task_completion_event<result_type>` nesne ya da Windows çalışma zamanı uygulamanızda görevler kullanıyorsanız bir Windows::Foundation:: ıasyncınfo. Lambda veya işlev nesnesi bir tür eşdeğeri olmalıdır `std::function<X(void)>`, burada X türünde bir değişken olabilir `result_type`, `task<result_type>`, veya Windows çalışma zamanı uygulamalarındaki bir Windows::Foundation:: ıasyncınfo.
+Görevin oluşturulması gereken parametre. Windows çalışma zamanı uygulamanızda görevler kullanıyorsanız, bu bir lambda, bir işlev `task_completion_event<result_type>` nesnesi, bir nesnesi veya bir Windows:: Foundation:: IAsyncInfo olabilir. Lambda veya işlev nesnesi ile `std::function<X(void)>`eşdeğer bir tür olmalıdır; burada X, Windows çalışma zamanı uygulamalarda, `task<result_type>`veya bir Windows: `result_type`: Foundation:: IAsyncInfo türünde bir değişken olabilir.
 
 *_TaskOptions*<br/>
-Görev seçenekleri iptal belirteci, Zamanlayıcı vb. içerir.
+Görev seçenekleri iptal belirteci, Zamanlayıcı vb. içerir
 
 *_Diğer*<br/>
 Kaynak `task` nesne.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İçin varsayılan oluşturucu bir `task` yalnızca kapsayıcılarda kullanılacak görevlere izin vermek için bulunur. Geçerli bir görev atayıncaya kadar oluşturulmuş varsayılan görev kullanılamaz. Yöntemler gibi `get`, `wait` veya `then` oluşturmaz bir [invalid_argument](../../../standard-library/invalid-argument-class.md) bir varsayılan oluşturulmuş göreve çağrıldığında bir özel durum.
+İçin `task` varsayılan Oluşturucu yalnızca kapsayıcılar içinde görevlerin kullanılmasına izin vermek için vardır. Varsayılan olarak oluşturulmuş bir görev, kendisine geçerli bir görev atamaz kadar kullanılamaz. Ya `get` `wait` da gibi yöntemler, varsayılan olarak oluşturulmuş bir görevde çağrıldığında bir [invalid_argument](../../../standard-library/invalid-argument-class.md) özel durumu oluşturur. `then`
 
-İçinden oluşturulan bir görev bir `task_completion_event` tamamlanır (ve devamlılıkları zamanlanır) görev tamamlama olayı ayarlandığında.
+Görev tamamlama olayı ayarlandığında, öğesinden oluşturulan `task_completion_event` bir görev tamamlanır (ve devamlılıkları zamanlandı).
 
-İptali belirteci alan oluşturucu sürümü kullanarak iptal edebilecek bir görev oluşturur `cancellation_token_source` belirtecin elde edildiği. Bir iptal belirteci olmadan oluşturulmuş görevler iptal edilebilir değildir.
+İptal belirteci alan oluşturucunun sürümü, ' den elde edilen belirteç kullanılarak `cancellation_token_source` iptal edilebilir bir görev oluşturur. İptal belirteci olmadan oluşturulan görevler iptal edilemez.
 
-Oluşturulan görevler bir `Windows::Foundation::IAsyncInfo` arabirimi veya döndüren bir lambda bir `IAsyncInfo` arabirimi, kapalı Windows çalışma zamanı zaman uyumsuz işlem veya eylem tamamlandığında terminal durumuna ulaşın. Benzer şekilde, döndüren bir lamdadan oluşturulan görevler bir `task<result_type>` iç görev terminal durumuna ulaştığında ve lamda döndürmediği zaman terminal durumuna ulaşın.
+Bir `Windows::Foundation::IAsyncInfo` arabirimden veya bir `IAsyncInfo` arabirim döndüren bir lambda tarafından oluşturulan görevler, iliştirilmiş Windows çalışma zamanı zaman uyumsuz işlem veya Eylem tamamlandığında, Terminal durumlarına ulaşmalıdır. Benzer şekilde, iç görev, lamdadan döndürüldüğünde değil, `task<result_type>` Terminal durumuna ulaştığında, bir lamdadan tarafından oluşturulan görevler.
 
-`task` Akıllı bir işaretçi gibi davranır ve değerine göre etrafından güvenlidir. Kilide gerek kalmadan birden çok iş parçacığı tarafından erişilebilir.
+`task`akıllı bir işaretçi gibi davranır ve değere göre geçiş yapmak için güvenlidir. Kilitlere gerek olmadan birden çok iş parçacığı tarafından erişilebilir.
 
-Bir Windows::Foundation:: ıasyncınfo arabirimi veya böyle bir arabirim döndüren bir lambda alan oluşturucu aşırı yüklemeleri yalnızca Windows çalışma zamanı uygulamaları için kullanılabilir.
+Windows:: Foundation:: IAsyncInfo arabirimini alan Oluşturucu aşırı yüklemeleri veya böyle bir arabirim döndüren bir lambda yalnızca Windows Çalışma Zamanı uygulamalar tarafından kullanılabilir.
 
-Daha fazla bilgi için [görev Paralelliği](../../../parallel/concrt/task-parallelism-concurrency-runtime.md).
+Daha fazla bilgi için bkz. [Görev Paralelliği](../../../parallel/concrt/task-parallelism-concurrency-runtime.md).
 
-##  <a name="then"></a> Ardından
+##  <a name="then"></a>ni
 
 Bu göreve bir devamlılık görevi ekler.
 
@@ -273,20 +267,20 @@ Bu göreve bir devamlılık görevi ekler.
 template<typename _Function>
 __declspec(
     noinline) auto then(const _Function& _Func) const -> typename details::_ContinuationTypeTraits<_Function,
-    _ReturnType>::_TaskOfType;
+    _ResultType>::_TaskOfType;
 
 template<typename _Function>
 __declspec(
     noinline) auto then(const _Function& _Func,
     const task_options& _TaskOptions) const -> typename details::_ContinuationTypeTraits<_Function,
-    _ReturnType>::_TaskOfType;
+    _ResultType>::_TaskOfType;
 
 template<typename _Function>
 __declspec(
     noinline) auto then(const _Function& _Func,
     cancellation_token _CancellationToken,
     task_continuation_context _ContinuationContext) const -> typename details::_ContinuationTypeTraits<_Function,
-    _ReturnType>::_TaskOfType;
+    _ResultType>::_TaskOfType;
 
 template<typename _Function>
 __declspec(
@@ -308,30 +302,30 @@ __declspec(
 Bu görev tarafından çağrılacak işlev nesnesinin türü.
 
 *_Func*<br/>
-Bu görev tamamlandığında yürütülecek devam işlevi. Bu devamlılık işlevi olarak almalıdır değişkenini giriş `result_type` veya `task<result_type>`burada `result_type` bu görevin ürettiği sonuç türüdür.
+Bu görev tamamlandığında yürütülecek devamlılık işlevi. Bu devamlılık işlevi, ya da `result_type` , `result_type` bu görevin ürettiği sonuç `task<result_type>`türü olan bir veya değişkeni olarak alınmalıdır.
 
 *_TaskOptions*<br/>
-Görev seçenekleri iptal belirteci, Zamanlayıcı ve devam bağlamını içerir. Varsayılan olarak önceki 3 seçenek öncül görevden devralınır.
+Görev seçenekleri iptal belirteci, Zamanlayıcı ve devamlılık bağlamını içerir. Varsayılan olarak, önceki 3 seçenek öncül görevden devralınır
 
 *_CancellationToken*<br/>
-Devam göreviyle ilişkilendirilecek iptal belirteci. Bir iptal belirteci olmadan oluşturulan bir devamlılık görevi, öncül görevinin belirtecini devralır.
+Devamlılık göreviyle ilişkilendirilecek iptal belirteci. İptal belirteci olmadan oluşturulan bir devamlılık görevi, öncül görevinin belirtecini miras alacak.
 
 *_ContinuationContext*<br/>
-Devamlılığın nerede yürütülmesi belirten bir değişken. Bu değişken, yalnızca bir UWP uygulamasında kullanıldığında yararlıdır. Daha fazla bilgi için [task_continuation_context](task-continuation-context-class.md)
+Devamlılığın nerede yürütüleceğini belirten bir değişken. Bu değişken yalnızca UWP uygulamasında kullanıldığında yararlıdır. Daha fazla bilgi için bkz. [task_continuation_context](task-continuation-context-class.md)
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yeni oluşturulan devam görevi. Döndürülen görevin sonuç türü ne tarafından belirlenir `_Func` döndürür.
+Yeni oluşturulan devamlılık görevi. Döndürülen görevin sonuç türü, ne `_Func` getirdiğinize göre belirlenir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Aşırı Yüklemeleri `then` bir lambda veya bir Windows::Foundation:: ıasyncınfo arabirimi döndüren bir functor, yalnızca Windows çalışma zamanı uygulamaları için kullanılabilir.
+Bir Windows: `then` : Foundation:: IAsyncInfo arabirimini döndüren bir lambda veya functor alan aşırı yüklemeleri yalnızca Windows çalışma zamanı uygulamalar tarafından kullanılabilir.
 
-Zaman uyumsuz çalışma oluşturmak için görev devamlılıklarının kullanma hakkında daha fazla bilgi için bkz. [görev Paralelliği](../../../parallel/concrt/task-parallelism-concurrency-runtime.md).
+Zaman uyumsuz iş oluşturmak için görev devamlılıklarını kullanma hakkında daha fazla bilgi için bkz. [Görev Paralelliği](../../../parallel/concrt/task-parallelism-concurrency-runtime.md).
 
-##  <a name="wait"></a> bekleme
+##  <a name="wait"></a>bekleneceğini
 
-Bu görev bir terminal durumuna ulaşmasını bekler. Mümkündür `wait` tüm görevleri bağımlılıkları karşılanır ve bu zaten yürütme için bir arka plan çalışanı tarafından teslim alındı değil için görev satıriçi yürütülecek.
+Bu görevin Terminal durumuna ulaşmasını bekler. Tüm görev bağımlılıkları karşılanmışsa ve bir arka plan çalışanı tarafından yürütülmek üzere henüz çekilmediğinde, görevin satır içi yürütülmesi mümkündür `wait` .
 
 ```
 task_status wait() const;
@@ -339,12 +333,12 @@ task_status wait() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-A `task_status` olabilecek değeri `completed` veya `canceled`. Görev yürütme sırasında bir özel durumla karşılaştı veya öncül bir görevden buna özel durum yayıldığı `wait` o özel durum oluşturur.
+Ya `task_status` da`canceled`olabilecek bir değer. `completed` Görev yürütme sırasında bir özel durumla karşılaşılırsa veya bir öncül görevden buna bir özel durum yayıldıysa, `wait` bu özel durumu oluşturur.
 
 ### <a name="remarks"></a>Açıklamalar
 
 > [!IMPORTANT]
->  Bir evrensel Windows Platformu (UWP) uygulaması çağırmayın `wait` kodda kullanıcı arabirimi iş parçacığında çalışır. Aksi takdirde, çalışma zamanı oluşturur [concurrency::invalid_operation](invalid-operation-class.md) çünkü bu yöntem geçerli iş parçacığını engeller ve uygulamanın yanıt veremez duruma gelmesine neden olabilir. Ancak, çağırabilirsiniz [CONCURRENCY::Task:: get](#get) görev tabanlı devamlılık içinde öncül görevin sonucunu almak için yöntemi.
+>  Evrensel Windows platformu (UWP) uygulamasında, Kullanıcı arabirimi iş parçacığında çalışan `wait` kodda çağrı kullanmayın. Aksi takdirde, çalışma zamanı [eşzamanlılık:: invalid_operation](invalid-operation-class.md) atar çünkü bu yöntem geçerli iş parçacığını engeller ve uygulamanın yanıt vermemesine neden olabilir. Ancak, görev tabanlı devamlılık içinde öncül görevin sonucunu almak için [concurrency:: task:: Get](#get) yöntemini çağırabilirsiniz.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
