@@ -200,12 +200,12 @@ helpviewer_keywords:
 - std::count_if [C++]
 - std::partition_copy [C++]
 - std::swap [C++]
-ms.openlocfilehash: cf6c1267b1dea86c2cad62708192a4c0a1970ed8
-ms.sourcegitcommit: 610751254a01cba6ad15fb1e1764ecb2e71f66bf
+ms.openlocfilehash: f389d38cf84f8f72d12242e798010d53a26f81a8
+ms.sourcegitcommit: 20a1356193fbe0ddd1002e798b952917eafc3439
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "68313392"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68661535"
 ---
 # <a name="ltalgorithmgt-functions"></a>&lt;algoritma&gt; işlevleri
 
@@ -366,7 +366,7 @@ Belirtilen aralıktaki her öğede koşul algılanırsa veya Aralık boşsa **tr
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon **işlevi yalnızca,** `N` `[0, last - first)` Aralık içinde her biri için true değerini döndürür `pred(*(first + N))` .
+Şablon **işlevi yalnızca,** `N` `[0, last - first)`Aralık içinde her biri için true değerini döndürür `pred(*(first + N))` .
 
 ### <a name="example"></a>Örnek
 
@@ -442,7 +442,7 @@ Koşul, belirtilen aralıkta en az bir kez algılanırsa **true** , koşul hiç 
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon işlevi yalnızca,  Aralık içinde bazıları `N` için true değerini döndürür
+Şablon işlevi yalnızca, Aralık içinde bazıları `N` için true değerini döndürür
 
 `[0, last - first)`, koşul `pred(*(first + N))` true 'dur.
 
@@ -609,6 +609,14 @@ int main()
         cout << "There is not an element with a value equivalent to -3 "
         << "under mod_lesser." << endl;
 }
+```
+
+```Output
+List1 = ( 5 10 20 25 30 50 )
+There is an element in list List1 with a value equal to 10.
+There is an element in list List1 with a value greater than 10 under greater than.
+Ordered using mod_lesser, vector v1 = ( 0 -1 1 -2 2 3 4 )
+There is an element with a value equivalent to -3 under mod_lesser.
 ```
 
 ## <a name="clamp"></a>Clamp
@@ -845,6 +853,13 @@ int main() {
 }
 ```
 
+```Output
+v1 = ( 0 10 20 30 40 50 )
+v2 = ( 0 3 6 9 12 15 18 21 24 27 30 )
+v2 with v1 insert = ( 0 3 6 9 0 10 20 21 24 27 30 )
+v2 with shifted insert = ( 0 3 6 9 0 10 0 10 20 27 30 )
+```
+
 ## <a name="copy_if"></a>copy_if
 
 Bir dizi öğe içinde, belirtilen koşul için **doğru** olan öğeleri kopyalar.
@@ -894,6 +909,61 @@ Koşulu yerine getiren her öğe için bir kez *hedefe* eşit olan bir çıkış
 `if (pred(*first + N)) * dest++ = *(first + N))`
 
 `N` aralıkta `N` herbiriiçinbirkez,endüşükdeğerlebaşlayandeğerlerikesinlikleartırmakiçin.`[0, last - first)` *Hedef* ve *ilk* olarak depolama bölgelerini belirlerseniz, *hedef* Aralık `[ first, last )`içinde olmamalıdır.
+
+### <a name="example"></a>Örnek
+
+```cpp
+// alg_copy_if.cpp
+// compile with: /EHsc
+#include <list>
+#include <algorithm>
+#include <iostream>
+
+void listlist(std::list<int> l)
+{
+    std::cout << "( ";
+    for (auto const& el : l)
+        std::cout << el << " ";
+    std::cout << ")" << std::endl;
+}
+
+int main()
+{
+    using namespace std;
+    list<int> li{ 46, 59, 88, 72, 79, 71, 60, 5, 40, 84 };
+    list<int> le(li.size()); // le = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+    list<int> lo(li.size()); // lo = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+
+    cout << "li = ";
+    listlist(li);
+
+    // is_even checks if the element is even.
+    auto is_even = [](int const elem) { return !(elem % 2); };
+    // use copy_if to select only even elements from li 
+    // and copy them to le, starting from le's begin position
+    auto ec = copy_if(li.begin(),li.end(), le.begin(), is_even);
+    le.resize(std::distance(le.begin(), ec));  // shrink le to new size
+
+    cout << "Even numbers are le = ";
+    listlist(le);
+
+    // is_odd checks if the element is odd.
+    auto is_odd = [](int const elem) { return (elem % 2); };
+    // use copy_if to select only odd elements from li
+    // and copy them to lo, starting from lo's begin position
+    auto oc = copy_if(li.begin(), li.end(), lo.begin(), is_odd);
+    lo.resize(std::distance(lo.begin(), oc));  // shrink lo to new size
+
+    cout << "Odd numbers are lo = ";
+    listlist(lo);
+}
+```
+
+```Output
+li = ( 46 59 88 72 79 71 60 5 40 84 )
+Even numbers are le = ( 46 88 72 60 40 84 )
+Odd numbers are lo = ( 59 79 71 5 )
+```
 
 ## <a name="copy_n"></a>copy_n
 
@@ -3016,7 +3086,7 @@ Bir koşul için **doğru** test eden belirtilen aralıktaki tüm öğelerin, **
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon işlevi yalnızca içindeki  `[first, last)` tüm öğeler *Pred*tarafından bölümlenmiş ise true değerini döndürür `X` ; diğer bir `pred (X)` deyişle, `Y` içindeki `[first, last)` tüm öğeler `pred (Y)` **yanlış**.
+Şablon işlevi yalnızca içindeki `[first, last)` tüm öğeler *Pred*tarafından bölümlenmiş ise true değerini döndürür `X` ; diğer bir `pred (X)` deyişle, `Y` içindeki `[first, last)` tüm öğeler `pred (Y)` **yanlış**.
 
 ## <a name="is_permutation"></a>is_permutation
 
@@ -3240,7 +3310,7 @@ Sıralı düzende `ForwardIterator` son öğeye bir küme döndürür. Sıralanm
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk `next` şablon işlevi ' de `[first, last]` son yineleyiciyi döndürür, bu `[first, next)` nedenle tarafından `operator<`sıralanan sıralanmış bir sıra. 2 ' den küçükse, işlev son ' u döndürür.  `distance()`
+İlk `next` şablon işlevi ' de `[first, last]` son yineleyiciyi döndürür, bu `[first, next)` nedenle tarafından `operator<`sıralanan sıralanmış bir sıra. 2 ' den küçükse, işlev son ' u döndürür. `distance()`
 
 İkinci şablon işlevi aynı şekilde davranır, ancak ile `operator<(X, Y)` `pred(X, Y)`değiştirilir.
 
@@ -5344,7 +5414,7 @@ Sıralamada birbirini izleyen öğeler tarafından karşılanması gereken karş
 
 Başvurulan Aralık geçerli olmalıdır; Tüm işaretçiler, en son artırılamadı tarafından ilk konumdan erişilebilir olması gerekir.
 
-Algoritma, n. öğesinin iki tarafındaki alt aralıklardaki öğelerin sıralanacağını garanti etmez.  `nth_element` Bu sayede `partial_sort`, seçilen bazı öğelerin altındaki aralıktaki öğeleri sipariş eden ve alt aralığın sıralaması gerekmediği `partial_sort` zaman daha hızlı bir alternatif olarak kullanılabilen daha az garanti verir.
+Algoritma, n. öğesinin iki tarafındaki alt aralıklardaki öğelerin sıralanacağını garanti etmez. `nth_element` Bu sayede `partial_sort`, seçilen bazı öğelerin altındaki aralıktaki öğeleri sipariş eden ve alt aralığın sıralaması gerekmediği `partial_sort` zaman daha hızlı bir alternatif olarak kullanılabilen daha az garanti verir.
 
 Öğeler eşdeğer, ancak eşit değildir, ancak ikisi de küçüktür.
 
