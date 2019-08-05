@@ -47,12 +47,12 @@ f1_keywords:
 - VC.Project.VCMidlTool.RedirectOutputAndErrors
 - VC.Project.VCMidlTool.MinimumTargetSystem
 - vc.project.AdditionalOptionsPage
-ms.openlocfilehash: 8174f6382ea2dab4ef2a49f5d30a6e27e8af3f5b
-ms.sourcegitcommit: ce3393846c86e7905ff0c86e4cd6610476809585
+ms.openlocfilehash: 0113fbd68d7687236b91b098ead2ac6b8338fee9
+ms.sourcegitcommit: af4ab63866ed09b5988ed53f1bb6996a54f02484
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "68492158"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68787069"
 ---
 # <a name="midl-property-pages"></a>MIDL Özellik Sayfaları
 
@@ -129,15 +129,15 @@ Hangi ortamın hedeflenecek olduğunu belirtir ([/env](/windows/win32/midl/-env)
 
 ### <a name="generate-stubless-proxies"></a>Saplamasız proxy oluşturma
 
-Nesne arabirimleri için Uzantılar ve saplamasız proxy 'leriyle tamamen yorumlanan saplamalar oluşturun ([/Oıcf](/windows/win32/midl/-Oicf), [/OIF](/windows/win32/midl/-Oif) ).
+Nesne arabirimleri için Uzantılar ve saplamasız proxy 'leriyle tamamen yorumlanan saplamalar oluşturun ([/Oıcf](/windows/win32/midl/-oi), [/OIF](/windows/win32/midl/-oi) ).
 
 ### <a name="suppress-compiler-warnings"></a>Derleyici Uyarılarını Engelleme
 
-Derleyici uyarı iletilerini engelle ([/no_warn](/windows/win32/midl/-no_warn)).
+Derleyici uyarı iletilerini engelle ([/no_warn](/windows/win32/midl/-no-warn)).
 
 ### <a name="application-configuration-mode"></a>Uygulama yapılandırma modu
 
-IDL dosyasında seçilen ACF özniteliklerine izin ver ([/app_config](/windows/win32/midl/-app_config)).
+IDL dosyasında seçilen ACF özniteliklerine izin ver ([/app_config](/windows/win32/midl/-app-config)).
 
 ### <a name="locale-id"></a>Yerel ayar kimliği
 
@@ -220,7 +220,7 @@ Tür kitaplığı dosya biçimini belirtir ([/oldtlb |/newtlb]).
 
 ### <a name="c-preprocess-options"></a>C ön Işleme seçenekleri
 
-C derleyicisi önişlemcisi 'ne geçirilecek anahtarları belirtir ([/cpp_opt](/windows/win32/midl/-cpp_opt) Switches).
+C derleyicisi önişlemcisi 'ne geçirilecek anahtarları belirtir ([/cpp_opt](/windows/win32/midl/-cpp-opt) Switches).
 
 ### <a name="undefine-preprocessor-definitions"></a>Önişlemci tanımlarının tanımı kaldırılıyor
 
@@ -258,19 +258,19 @@ Sunucu tarafı saplama verileri geçerliliği için ek denetim yayma ([/Error](/
 
 ### <a name="prepend-with-abi-namespace"></a>' ABı ' ad alanıyla Prepend
 
-' ABı ' ad alanını tüm türlere ekleyin.  ([/ns_prefix](/windows/win32/midl/-ns_prefix)).
+' ABı ' ad alanını tüm türlere ekleyin.  ([/ns_prefix](/windows/win32/midl/-ns-prefix)).
 
 ### <a name="validate-parameters"></a>Parametreleri doğrula
 
-Parametreleri doğrulamak için ek bilgi oluşturun ([/dayanıklı](/windows/win32/midl/-robust) | [/dayanıklı](/windows/win32/midl/-no_robust)).
+Parametreleri doğrulamak için ek bilgi oluşturun ([/dayanıklı](/windows/win32/midl/-robust) | [/no_dayanıklı](/windows/win32/midl/-no-robust)).
 
 ### <a name="struct-member-alignment"></a>Struct üye hizalaması
 
-Hedef sistemdeki yapıların paket düzeyini belirtir ([/ZPN](/windows/win32/midl/-zpn)).
+Hedef sistemdeki yapıların paket düzeyini belirtir (/ZpN).
 
 **Yapabileceği**
 
-- Ayarlanmadı **-ayarlanmadı**
+- Ayarlanmadı-ayarlanmadı
 - **1 bayt** -ZP1
 - **2 bayt** -ZP2
 - **4 bayt** -ZP4
