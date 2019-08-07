@@ -10,16 +10,16 @@ helpviewer_keywords:
 - CMFCRibbonApplicationButton [MFC], CMFCRibbonApplicationButton
 - CMFCRibbonApplicationButton [MFC], SetImage
 ms.assetid: beb81757-fabd-4641-9130-876ba8505b78
-ms.openlocfilehash: 01b6937ee597766922597fda5664c78f75be6b67
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.openlocfilehash: d1dc8ef6e801623aa96cb4b47936413cd17f24f0
+ms.sourcegitcommit: c3bf94210bdb73be80527166264d49e33784152c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58772169"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68821246"
 ---
 # <a name="cmfcribbonapplicationbutton-class"></a>CMFCRibbonApplicationButton sınıfı
 
-Uygular uygulama penceresinin sol üst köşedeki özel bir düğme bulunur. Tıklandığında, düğmeyi genellikle ortak içeren bir menü açılır **dosya** gibi komutlar **açık**, **Kaydet**, ve **çıkış**.
+Uygulama penceresinin sol üst köşesinde bulunan özel bir düğme uygular. Tıklandığında düğme, genellikle **Open**, **Save**ve **Exit**gibi ortak **Dosya** komutlarını içeren bir menü açar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -27,25 +27,25 @@ Uygular uygulama penceresinin sol üst köşedeki özel bir düğme bulunur. Tı
 class CMFCRibbonApplicationButton : public CMFCRibbonButton
 ```
 
-## <a name="members"></a>Üyeler
+## <a name="members"></a>Members
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[CMFCRibbonApplicationButton::CMFCRibbonApplicationButton](#cmfcribbonapplicationbutton)|Oluşturur ve başlatır bir `CMFCRibbonApplicationButton` nesne.|
+|[CMFCRibbonApplicationButton:: CMFCRibbonApplicationButton](#cmfcribbonapplicationbutton)|Bir `CMFCRibbonApplicationButton` nesnesi oluşturur ve başlatır.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
 |Ad|Açıklama|
 |----------|-----------------|
-|`CMFCRibbonApplicationButton::CreateObject`|Bu sınıf türünün dinamik bir örneğini oluşturmak için framework tarafından kullanılır.|
-|`CMFCRibbonApplicationButton::GetThisClass`|Bir işaretçi alma için framework tarafından kullanılan [CRuntimeClass](../../mfc/reference/cruntimeclass-structure.md) bu sınıfı türü ile ilişkilendirilmiş nesne.|
-|[CMFCRibbonApplicationButton::SetImage](#setimage)|Görüntü şeridi uygulama düğmeyi atar.|
+|`CMFCRibbonApplicationButton::CreateObject`|Framework tarafından bu sınıf türünün dinamik bir örneğini oluşturmak için kullanılır.|
+|`CMFCRibbonApplicationButton::GetThisClass`|Bu sınıf türüyle ilişkili [CRuntimeClass](../../mfc/reference/cruntimeclass-structure.md) nesnesine bir işaretçi almak için Framework tarafından kullanılır.|
+|[CMFCRibbonApplicationButton:: SetImage](#setimage)|Şerit uygulama düğmesine bir görüntü atar.|
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, çeşitli yöntemlerin nasıl kullanılacağını gösterir `CMFCRibbonApplicationButton` sınıfı. Örnek uygulama düğmeyi görüntü atama ve araç ipucu ayarlama işlemini gösterir. Bu kod parçacığı parçasıdır [çizmek istemci örneği](../../overview/visual-cpp-samples.md).
+Aşağıdaki örnek, `CMFCRibbonApplicationButton` sınıfında çeşitli yöntemlerin nasıl kullanıldığını gösterir. Örnek, uygulama düğmesine nasıl bir görüntü atanacağını ve araç ipucunu nasıl ayarlayacağınızı gösterir. Bu kod parçacığı, [Çizim istemci örneğinin](../../overview/visual-cpp-samples.md)bir parçasıdır.
 
 [!code-cpp[NVC_MFC_DrawClient#4](../../mfc/reference/codesnippet/cpp/cmfcribbonapplicationbutton-class_1.h)]
 [!code-cpp[NVC_MFC_DrawClient#5](../../mfc/reference/codesnippet/cpp/cmfcribbonapplicationbutton-class_2.cpp)]
@@ -56,39 +56,39 @@ Aşağıdaki örnek, çeşitli yöntemlerin nasıl kullanılacağını gösterir
 
 [CMFCRibbonBaseElement](../../mfc/reference/cmfcribbonbaseelement-class.md)
 
-[CMFCRibbonButton](../../mfc/reference/cmfcribbonbutton-class.md)
+[Cmfcribbondüğmesi](../../mfc/reference/cmfcribbonbutton-class.md)
 
 [CMFCRibbonApplicationButton](../../mfc/reference/cmfcribbonapplicationbutton-class.md)
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxRibbonBar.h
+**Üstbilgi:** afxRibbonBar. h
 
-##  <a name="cmfcribbonapplicationbutton"></a>  CMFCRibbonApplicationButton::CMFCRibbonApplicationButton
+##  <a name="cmfcribbonapplicationbutton"></a>CMFCRibbonApplicationButton:: CMFCRibbonApplicationButton
 
-Oluşturur ve başlatır bir [CMFCRibbonApplicationButton](../../mfc/reference/cmfcribbonapplicationbutton-class.md) nesne.
+Bir [CMFCRibbonApplicationButton](../../mfc/reference/cmfcribbonapplicationbutton-class.md) nesnesi oluşturur ve başlatır.
 
 ```
 CMFCRibbonApplicationButton();
 CMFCRibbonApplicationButton(UINT uiBmpResID);
-  CMFCRibbonApplicationButton(HBITMAP hBmp);
+CMFCRibbonApplicationButton(HBITMAP hBmp);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*uiBmpResID*<br/>
-Uygulama çubuğunda görüntülemek için kaynak Kimliğini görüntü.
+*Uıımpresd*<br/>
+Uygulama düğmesinde görüntülenecek görüntünün kaynak KIMLIĞI.
 
 *hBmp*<br/>
-Uygulama çubuğunda görüntülenecek bir bit eşlem işleyici.
+Uygulama düğmesinde görüntülenecek bir bit eşlem tutamacı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şerit uygulaması uygulama penceresinin sol üst köşede bulunan özel bir düğme düğmesidir. Bir kullanıcı bu düğmeyi tıkladığında, uygulama genellikle ortak içeren bir menü açılır **dosya** gibi komutlar **açık**, **Kaydet**, ve **çıkış**.
+Şerit uygulaması düğmesi, uygulama penceresinin sol üst köşesinde bulunan özel bir düğmedir. Kullanıcı bu düğmeye tıkladığında, uygulama, genellikle **Aç**, **Kaydet**ve **Çıkış**gibi ortak **Dosya** komutlarını içeren bir menü açar.
 
-##  <a name="setimage"></a>  CMFCRibbonApplicationButton::SetImage
+##  <a name="setimage"></a>CMFCRibbonApplicationButton:: SetImage
 
-Görüntü uygulama düğmeyi atar.
+Uygulama düğmesine bir görüntü atar.
 
 ```
 void SetImage(UINT uiBmpResID);
@@ -97,15 +97,15 @@ void SetImage(HBITMAP hBmp);
 
 ### <a name="parameters"></a>Parametreler
 
-*uiBmpResID*<br/>
-[in] Uygulama çubuğunda görüntülemek için kaynak Kimliğini görüntü.
+*Uıımpresd*<br/>
+'ndaki Uygulama düğmesinde görüntülenecek görüntünün kaynak KIMLIĞI.
 
 *hBmp*<br/>
-[in] Uygulama çubuğunda görüntülenecek bir bit eşlem işleyici.
+'ndaki Uygulama düğmesinde görüntülenecek bir bit eşlem tutamacı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Düğme oluşturduktan sonra yeni bir görüntü için Şerit uygulama düğmesini atamak için bu yöntemi kullanın. Uygulama düğmesi, uygulama penceresinin sol üst köşede bulunur.
+Düğmeyi oluşturduktan sonra şerit uygulaması düğmesine yeni bir görüntü atamak için bu yöntemi kullanın. Uygulama düğmesi uygulama penceresinin sol üst köşesinde bulunur.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

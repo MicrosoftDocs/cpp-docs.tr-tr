@@ -132,16 +132,16 @@ helpviewer_keywords:
 - CFileDialog [MFC], OnTypeChange
 - CFileDialog [MFC], m_ofn
 ms.assetid: fda4fd3c-08b8-4ce0-8e9d-7bab23f8c6c0
-ms.openlocfilehash: fe4994b91813e2965972b47c838ddaf5333cc5f0
-ms.sourcegitcommit: ecf274bcfe3a977c48745aaa243e5e731f1fdc5f
+ms.openlocfilehash: a7287b2e3011159573f44e9247e016d81d893491
+ms.sourcegitcommit: c3bf94210bdb73be80527166264d49e33784152c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "66503770"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68821076"
 ---
 # <a name="cfiledialog-class"></a>CFileDialog sınıfı
 
-Açık bir dosya veya dosya kaydetme işlemi için kullanılan yaygın bir iletişim kutusunu kapsüller.
+Dosya açma veya dosya kaydetme işlemleri için kullanılan ortak iletişim kutusunu kapsüller.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -149,140 +149,140 @@ Açık bir dosya veya dosya kaydetme işlemi için kullanılan yaygın bir ileti
 class CFileDialog : public CCommonDialog
 ```
 
-## <a name="members"></a>Üyeler
+## <a name="members"></a>Members
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[CFileDialog::CFileDialog](#cfiledialog)|Oluşturur bir `CFileDialog` nesne.|
+|[CFileDialog:: CFileDialog](#cfiledialog)|Bir `CFileDialog` nesnesi oluşturur.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[CFileDialog::AddCheckButton](#addcheckbutton)|İletişim kutusu bir onay düğmesini ekler.|
-|[CFileDialog::AddComboBox](#addcombobox)|Birleşik giriş kutusu iletişim kutusuna ekler.|
-|[CFileDialog::AddControlItem](#addcontrolitem)|Bir kapsayıcı denetimi iletişim kutusunda bir öğe ekler.|
-|[CFileDialog::AddEditBox](#addeditbox)|İletişim kutusuna bir düzenleme kutusuna ekler.|
-|[CFileDialog::AddMenu](#addmenu)|Bir menü iletişim kutusuna ekler.|
-|[CFileDialog::AddPlace](#addplace)|Fazla Yüklendi. Bir klasör listesine açmak veya öğeleri kaydetmek kullanıcılar için uygun basamak ekler.|
-|[CFileDialog::AddPushButton](#addpushbutton)|İletişim için bir düğme ekler.|
-|[CFileDialog::AddRadioButtonList](#addradiobuttonlist)|Seçenek düğmesi (radyo düğmesi olarak da bilinir) grubu iletişim kutusuna ekler.|
-|[CFileDialog::AddSeparator](#addseparator)|Ayırıcı iletişim kutusuna ekler.|
-|[CFileDialog::AddText](#addtext)|Metin içeriği iletişim kutusuna ekler.|
-|[CFileDialog::ApplyOFNToShellDialog](#applyofntoshelldialog)|Durumunu güncelleştirir `CFileDialog` parametreler ve depolanan bayrakları eşleştirilecek `m_ofn` üye değişkeni.|
-|[CFileDialog::DoModal](#domodal)|İletişim kutusunu görüntüler ve kullanıcının seçim yapmanıza olanak tanır.|
-|[CFileDialog::EnableOpenDropDown](#enableopendropdown)|Aşağı açılan listesini etkinleştirir **açık** veya **Kaydet** iletişim düğmesi.|
-|[CFileDialog::EndVisualGroup](#endvisualgroup)|İletişim kutusunda visual gruba öğelerin eklenmesi durdurur.|
-|[CFileDialog::GetCheckButtonState](#getcheckbuttonstate)|İletişim kutusundaki onay düğmesine (onay kutusu) geçerli durumunu alır.|
-|[CFileDialog::GetControlItemState](#getcontrolitemstate)|İletişim kutusundaki bir kapsayıcı denetimi içinde bir öğe geçerli durumunu alır.|
-|[CFileDialog::GetControlState](#getcontrolstate)|Geçerli görünürlüğünü alır ve belirli bir denetim durumlarını etkin.|
-|[CFileDialog::GetEditBoxText](#geteditboxtext)|Geçerli metin düzenleme kutusu denetimi alır.|
-|[CFileDialog::GetFileExt](#getfileext)|Seçilen dosyanın Dahili hat numarasını döndürür.|
-|[CFileDialog::GetFileName](#getfilename)|Seçili dosya dosya adını döndürür.|
-|[CFileDialog::GetFileTitle](#getfiletitle)|Seçili dosya adını döndürür.|
-|[CFileDialog::GetFolderPath](#getfolderpath)|Bir Gezgin stili için açık klasör veya dizin yolunu alır **açın** veya **Kaydet** ortak iletişim kutusu.|
-|[CFileDialog::GetIFileDialogCustomize](#getifiledialogcustomize)|İç COM nesnesi için özelleştirilmiş alır `CFileDialog` nesne.|
-|[CFileDialog::GetIFileOpenDialog](#getifileopendialog)|İç COM nesnesi için alır bir `CFileDialog` olarak kullanılan bir **açık** dosya iletişim kutusu.|
-|[CFileDialog::GetIFileSaveDialog](#getifilesavedialog)|İç COM nesnesi için alır bir `CFileDialog` olarak kullanılan bir **Kaydet** dosya iletişim kutusu.|
-|[CFileDialog::GetNextPathName](#getnextpathname)|Sonraki Seçili dosyanın tam yolunu döndürür.|
-|[CFileDialog::GetOFN](#getofn)|Alır `OPENFILENAME` yapısını `CFileDialog` nesne.|
-|[CFileDialog::GetPathName](#getpathname)|Seçilen dosyanın tam yolunu döndürür.|
-|[CFileDialog::GetReadOnlyPref](#getreadonlypref)|Seçili dosya salt okunur durumunu döndürür.|
-|[CFileDialog::GetResult](#getresult)|Kullanıcı iletişim kutusunda yapılan seçim alır.|
-|[CFileDialog::GetResults](#getresults)|Kullanıcı seçenekleri birden çok seçime izin veren bir iletişim kutusunda alır.|
-|[CFileDialog::GetSelectedControlItem](#getselectedcontrolitem)|Belirtilen kapsayıcı denetimler iletişim kutusunda belirli bir öğe alır.|
-|[CFileDialog::GetStartPosition](#getstartposition)|Dosya adı listesinin ilk öğenin konumunu döndürür.|
-|[CFileDialog::HideControl](#hidecontrol)|Gezgin stili belirtilen denetiminde gizler **açık** veya **Kaydet** ortak iletişim kutusu.|
-|[CFileDialog::IsPickFoldersMode](#ispickfoldersmode)|Belirler geçerli iletişim kutusundaki klasör Seçici modunda.|
-|[CFileDialog::MakeProminent](#makeprominent)|Basamak iletişim kutusunda bir denetimi eklenen diğer denetimlere karşılaştırıldığında, böylece öne çıkar.|
-|[CFileDialog::RemoveControlItem](#removecontrolitem)|Bir kapsayıcı denetimi iletişim kutusunda bir öğe kaldırır.|
-|[CFileDialog::SetCheckButtonState](#setcheckbuttonstate)|İletişim kutusunda bir onay düğmesine (onay kutusu) geçerli durumunu ayarlar.|
-|[CFileDialog::SetControlItemState](#setcontrolitemstate)|İletişim kutusundaki bir kapsayıcı denetimi içinde bir öğe geçerli durumunu ayarlar.|
-|[CFileDialog::SetControlItemText](#setcontrolitemtext)|Bir denetim öğesini metnini ayarlar. Örneğin, bir radyo düğmesi veya bir menüsündeki bir öğeyi eşlik eden metin.|
-|[CFileDialog::SetControlLabel](#setcontrollabel)|Düğme metni veya bir düzenleme kutusuna etiket gibi bir denetim ile ilişkili metin ayarlar.|
-|[CFileDialog::SetControlState](#setcontrolstate)|Geçerli görünürlüğünü ayarlar ve belirli bir denetim durumlarını etkin.|
-|[CFileDialog::SetControlText](#setcontroltext)|Metnin belirtilen denetimi için ayarlar bir Gezgini stilinde **açık** veya **Kaydet** ortak iletişim kutusu.|
-|[CFileDialog::SetDefExt](#setdefext)|Varsayılan dosya adı uzantısı Gezgini stili için ayarlar **açık** veya **Kaydet** ortak iletişim kutusu.|
-|[CFileDialog::SetEditBoxText](#seteditboxtext)|Geçerli metin düzenleme kutusu denetimi ayarlar.|
-|[CFileDialog::SetProperties](#setproperties)|Kaydedilen öğesi için kullanılacak varsayılan değerlerini tanımlayan bir özellik deposu sağlar.|
-|[CFileDialog::SetSelectedControlItem](#setselectedcontrolitem)|Seçenek düğmesi grubu ya da iletişim kutusunda bulunan bir birleşik giriş kutusu belirli bir öğe seçili durumunu ayarlar.|
-|[CFileDialog::SetTemplate](#settemplate)|İletişim kutusunda şablon için ayarlar `CFileDialog` nesne.|
-|[CFileDialog::StartVisualGroup](#startvisualgroup)|Bir görsel grubu iletişim bildirir. "Ekle" herhangi bir yönteme yapılan sonraki çağrılar, bu öğeler bu gruba ekleyin.|
-|[CFileDialog::UpdateOFNFromShellDialog](#updateofnfromshelldialog)|Depolanan veriler güncelleştirmeleri `m_ofn` dosya iletişim kutusu geçerli durumunu eşleştirmek için üye değişkeni.|
+|[CFileDialog:: AddCheckButton](#addcheckbutton)|İletişim kutusuna bir onay düğmesi ekler.|
+|[CFileDialog:: AddComboBox](#addcombobox)|İletişim kutusuna bir açılan kutu ekler.|
+|[CFileDialog:: Addcontrolıdıtem](#addcontrolitem)|İletişim kutusunda bir kapsayıcı denetimine bir öğe ekler.|
+|[CFileDialog:: AddEditBox](#addeditbox)|İletişim kutusuna bir düzenleme kutusu ekler.|
+|[CFileDialog:: MenüEkle](#addmenu)|İletişim kutusuna bir menü ekler.|
+|[CFileDialog:: AddPlace](#addplace)|Fazla Yüklendi. Kullanıcının öğeleri açması veya kaydetmesi için kullanılabilir yer listesine bir klasör ekler.|
+|[CFileDialog:: Addbasma](#addpushbutton)|İletişim kutusuna bir düğme ekler.|
+|[CFileDialog:: AddRadioButtonList](#addradiobuttonlist)|İletişim kutusuna bir seçenek düğmesi (radyo düğmesi olarak da bilinir) ekler.|
+|[CFileDialog:: AddSeparator](#addseparator)|İletişim kutusuna bir ayırıcı ekler.|
+|[CFileDialog:: AddText](#addtext)|İletişim kutusuna metin içeriği ekler.|
+|[CFileDialog:: ApplyOFNToShellDialog](#applyofntoshelldialog)|Öğesinin `CFileDialog` durumunu `m_ofn` üye değişkeninde depolanan parametrelerle ve bayraklarla eşleşecek şekilde güncelleştirir.|
+|[CFileDialog::D oModal](#domodal)|İletişim kutusunu görüntüler ve kullanıcının seçim yapmasına olanak sağlar.|
+|[CFileDialog:: EnableOpenDropDown](#enableopendropdown)|İletişim kutusunda **Aç** veya **Kaydet** düğmesine açılan bir liste sunar.|
+|[CFileDialog:: EndVisualGroup](#endvisualgroup)|İletişim kutusundaki görsel gruba öğelerin eklenmesini engeller.|
+|[CFileDialog:: GetCheckButtonState](#getcheckbuttonstate)|İletişim kutusundaki onay düğmesinin (onay kutusu) geçerli durumunu alır.|
+|[CFileDialog:: Getcontrolıtemstate](#getcontrolitemstate)|İletişim kutusunda bulunan bir kapsayıcı denetimindeki bir öğenin geçerli durumunu alır.|
+|[CFileDialog:: GetControlState](#getcontrolstate)|Belirli bir denetimin geçerli görünürlüğünü ve etkin durumlarını alır.|
+|[CFileDialog:: GetEditBoxText](#geteditboxtext)|Bir düzenleme kutusu denetimindeki geçerli metni alır.|
+|[CFileDialog:: GetFileExt](#getfileext)|Seçili dosyanın uzantısını döndürür.|
+|[CFileDialog:: GetFileName](#getfilename)|Seçili dosyanın dosya adını döndürür.|
+|[CFileDialog:: GetFileTitle](#getfiletitle)|Seçili dosyanın başlığını döndürür.|
+|[CFileDialog:: GetFolderPath](#getfolderpath)|Bir gezgin stili **Aç** veya ortak **olarak kaydet** iletişim kutusu için şu anda açık olan klasör veya dizinin yolunu alır.|
+|[CFileDialog:: Getifitadialogcustomize](#getifiledialogcustomize)|Özelleştirilmiş `CFileDialog` bir nesne için iç com nesnesini alır.|
+|[CFileDialog:: Getifitaopendialog](#getifileopendialog)|Dosya Aç iletişim kutusu olarak kullanılan bir `CFileDialog` için iç com nesnesini alır .|
+|[CFileDialog:: Getifitasavedialog](#getifilesavedialog)|Dosya Kaydet iletişim kutusu olarak kullanılan bir `CFileDialog` için iç com nesnesini alır .|
+|[CFileDialog:: GetNextPathName](#getnextpathname)|Sonraki seçili dosyanın tam yolunu döndürür.|
+|[CFileDialog:: GetOFN](#getofn)|`CFileDialog` Nesnesinin `OPENFILENAME` yapısını alır.|
+|[CFileDialog:: GetPathName](#getpathname)|Seçili dosyanın tam yolunu döndürür.|
+|[CFileDialog:: GetReadOnlyPref](#getreadonlypref)|Seçili dosyanın salt okunurdur durumunu döndürür.|
+|[CFileDialog:: GetResult](#getresult)|Kullanıcının iletişim kutusunda yaptığı seçimi alır.|
+|[CFileDialog:: GetResults](#getresults)|Birden çok seçime izin veren bir iletişim kutusunda kullanıcının seçimlerini alır.|
+|[CFileDialog:: Getselectedcontrolıdıtem](#getselectedcontrolitem)|İletişim kutusunda belirtilen kapsayıcı denetimlerinden belirli bir öğeyi alır.|
+|[CFileDialog:: GetStartPosition](#getstartposition)|Dosya adı listesinin ilk öğesinin konumunu döndürür.|
+|[CFileDialog:: HideControl](#hidecontrol)|Bir gezgin stili **Aç** veya ortak **olarak kaydet** iletişim kutusunda belirtilen denetimi gizler.|
+|[CFileDialog:: IsPickFoldersMode](#ispickfoldersmode)|Klasör Seçici modunda geçerli iletişim kutusunun olup olmadığını belirler.|
+|[CFileDialog:: Makebelirgin](#makeprominent)|İletişim kutusuna, diğer eklenen denetimlerle karşılaştırıldığında bir denetim koyar.|
+|[CFileDialog:: Removecontrolıdıtem](#removecontrolitem)|İletişim kutusundaki kapsayıcı denetiminden bir öğeyi kaldırır.|
+|[CFileDialog:: SetCheckButtonState](#setcheckbuttonstate)|İletişim kutusundaki onay düğmesinin (onay kutusu) geçerli durumunu ayarlar.|
+|[CFileDialog:: Setcontrolıtemstate](#setcontrolitemstate)|İletişim kutusunda bulunan bir kapsayıcı denetimindeki bir öğenin geçerli durumunu ayarlar.|
+|[CFileDialog:: Setcontrolıtemtext](#setcontrolitemtext)|Bir denetim öğesinin metnini ayarlar. Örneğin, bir radyo düğmesine eşlik eden metin veya menüdeki bir öğe.|
+|[CFileDialog:: SetControlLabel](#setcontrollabel)|Düğme metni veya düzenleme kutusu etiketi gibi bir denetimle ilişkili metni ayarlar.|
+|[CFileDialog:: SetControlState](#setcontrolstate)|Belirli bir denetimin geçerli görünürlüğünü ve etkin durumlarını ayarlar.|
+|[CFileDialog:: SetControlText](#setcontroltext)|Bir gezgin stili **Aç** veya ortak **olarak kaydet** iletişim kutusunda belirtilen denetimin metnini ayarlar.|
+|[CFileDialog:: SetDefExt](#setdefext)|Bir gezgin stili **Aç** veya ortak **olarak kaydet** iletişim kutusu için varsayılan dosya adı uzantısını ayarlar.|
+|[CFileDialog:: SetEditBoxText](#seteditboxtext)|Bir düzenleme kutusu denetimindeki geçerli metni ayarlar.|
+|[CFileDialog:: SetProperties](#setproperties)|Kaydedilmekte olan öğe için kullanılacak varsayılan değerleri tanımlayan bir özellik deposu sağlar.|
+|[CFileDialog:: Setselectedcontrolıdıtem](#setselectedcontrolitem)|Bir seçenek düğmesi grubundaki belirli bir öğenin seçili durumunu veya iletişim kutusunda bulunan Birleşik giriş kutusunu ayarlar.|
+|[CFileDialog:: SetTemplate](#settemplate)|`CFileDialog` Nesne için iletişim kutusu şablonunu ayarlar.|
+|[CFileDialog:: StartVisualGroup](#startvisualgroup)|İletişim kutusunda bir görsel grubu bildirir. "Ekle" yöntemine sonraki çağrılar bu öğeleri bu gruba ekler.|
+|[CFileDialog:: UpdateOFNFromShellDialog](#updateofnfromshelldialog)|`m_ofn` Üye değişkeninde depolanan verileri, dosya iletişim kutusunun geçerli durumuyla eşleşecek şekilde güncelleştirir.|
 
 ### <a name="protected-methods"></a>Korumalı Yöntemler
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[CFileDialog::OnButtonClicked](#onbuttonclicked)|Düğmeye tıklandığında çağırılır.|
-|[CFileDialog::OnCheckButtonToggled](#oncheckbuttontoggled)|Onay kutusu işaretli/işaretsiz olduğunda çağrılır.|
-|[CFileDialog::OnControlActivating](#oncontrolactivating)|Denetimin etkin olduğunda çağrılır.|
-|[CFileDialog::OnFileNameChange](#onfilenamechange)|Wm_notıfy CDN_SELCHANGE iletisini işler.|
-|[CFileDialog::OnFileNameOK](#onfilenameok)|İletişim kutusuna girilen dosya adını doğrular.|
-|[CFileDialog::OnFolderChange](#onfolderchange)|Wm_notıfy CDN_FOLDERCHANGE iletisini işler.|
-|[CFileDialog::OnInitDone](#oninitdone)|Wm_notıfy cdn_ınıtdone iletisini işler.|
-|[CFileDialog::OnItemSelected](#onitemselected)|Kapsayıcı öğe seçildiğinde çağrılır.|
-|[CFileDialog::OnLBSelChangedNotify](#onlbselchangednotify)|Dosya Seçimi değiştiğinde özel eylemler gerçekleştirmenizi sağlar.|
-|[CFileDialog::OnShareViolation](#onshareviolation)|Tanıtıcıları ihlalleri paylaşın.|
-|[CFileDialog::OnTypeChange](#ontypechange)|Wm_notıfy CDN_TYPECHANGE iletisini işler.|
+|[CFileDialog:: OnButtonClicked](#onbuttonclicked)|Düğmeye tıklandığında çağırılır.|
+|[CFileDialog:: Oncheckbuttondeğiştirildi](#oncheckbuttontoggled)|Onay kutusu işaretli/işaretsiz olduğunda çağırılır.|
+|[CFileDialog:: OnControlActivating](#oncontrolactivating)|Denetim etkin olduğunda çağırılır.|
+|[CFileDialog:: Ondosyaadıdeğişikliği](#onfilenamechange)|WM_NOTIFY CDN_SELCHANGE iletisini işler.|
+|[CFileDialog:: OnFileNameOK](#onfilenameok)|İletişim kutusuna girilen dosya adını doğrular.|
+|[CFileDialog:: OnFolderChange](#onfolderchange)|WM_NOTIFY CDN_FOLDERCHANGE iletisini işler.|
+|[CFileDialog:: Onınitdone](#oninitdone)|WM_NOTIFY CDN_INITDONE iletisini işler.|
+|[CFileDialog:: Onıtemselected](#onitemselected)|Kapsayıcı öğesi seçildiğinde çağırılır.|
+|[CFileDialog:: Onlbselchangednotıfy](#onlbselchangednotify)|Dosya seçimi değiştiğinde özel eylemler gerçekleştirmenizi sağlar.|
+|[CFileDialog:: onshareihla](#onshareviolation)|Paylaşma ihlallerini işler.|
+|[CFileDialog:: OnTypeChange](#ontypechange)|WM_NOTIFY CDN_TYPECHANGE iletisini işler.|
 
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[CFileDialog::m_ofn](#m_ofn)|Windows `OPENFILENAME` yapısı. Temel dosya iletişim kutusu parametrelerini erişim sağlar.|
+|[CFileDialog:: m_ofn](#m_ofn)|Windows `OPENFILENAME` yapısı. Temel dosya iletişim kutusu parametrelerine erişim sağlar.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Genel dosya iletişim kutularında dosya seçimi iletişim kutuları, örneğin, uygulamanıza izin **açık dosya** ve **Kaydet**, Windows standartlarına tutarlı bir şekilde.
+Ortak dosya iletişim kutuları, dosya seçimi iletişim kutuları uygulamanıza olanak sağlar. Örneğin, **Dosya** seçme ve **farklı kaydetme gibi**Windows standartları ile tutarlı bir şekilde.
 
-Kullanabileceğiniz `CFileDialog` sağlanan Oluşturucu ile olduğu gibi veya kendi iletişim kutusu sınıftan türetilip `CFileDialog` ve ihtiyaçlarınıza uyacak şekilde bir oluşturucu yazma. Öğesinden türetilen her iki durumda da, bu iletişim kutularından standart MFC iletişim kutuları gibi davranacak [CCommonDialog sınıfı](../../mfc/reference/ccommondialog-class.md). `CFileDialog` üzerinde COMMDLG kullanır. Windows içinde bulunan DLL dosyası.
+, ' I `CFileDialog` sunulan Oluşturucu ile birlikte kullanabilir veya kendi iletişim kutusu sınıfınızı ' dan `CFileDialog` türetebilir ve gereksinimlerinize uyacak bir Oluşturucu yazabilirsiniz. Her iki durumda da, [CCommonDialog sınıfından](../../mfc/reference/ccommondialog-class.md)türetildiklerinden, bu iletişim KUTULARı standart MFC iletişim kutuları gibi davranır. `CFileDialog`, COMMDLG 'e dayanır. DLL dosyası Windows 'a dahildir.
 
-Görünümünü ve işlevini hem `CFileDialog` Windows Vista veya sonraki'Windows ' ın önceki sürümlerinden farklı. Varsayılan `CFileDialog` yeni Windows Vista veya sonraki stil kod değişikliği yapmadan bir program derlenmiş ve altındaki Windows Vista veya üzerini ise otomatik olarak kullanır. Kullanım *bVistaStyle* el ile bu otomatik güncelleştirme geçersiz kılmak için oluşturucuda parametresi. Otomatik güncelleştirme için özelleştirilmiş iletişim kutuları istisnadır. Bunlar yeni stil dönüştürülmez. Oluşturucu hakkında daha fazla bilgi için bkz: [CFileDialog::CFileDialog](#cfiledialog).
-
-> [!NOTE]
->  Kullandığınızda Windows Vista veya sonraki Windows sürümlerinde denetim kimliği sistemin farklı bir `CFileDialog`. Tüm başvuruları güncelleştirmelisiniz `CFileDialog` projenizi Windows, önceki bir sürümünden bağlantı noktası önce kod denetimleri.
-
-Bazı `CFileDialog` yöntemleri altında Windows Vista veya sonraki desteklenmez. Yöntem desteklenip hakkında bilgi için tek yöntem konuda denetleyin. Ayrıca, devralınan aşağıdaki işlevleri altında Windows Vista veya sonraki desteklenmez:
-
-- [CDialog::OnInitDialog](../../mfc/reference/cdialog-class.md#oninitdialog)
-
-- [CDialog::OnSetFont](../../mfc/reference/cdialog-class.md#onsetfont)
-
-Windows iletileri `CFileDialog` sınıfı hangi işletim sistemine göre değişir. Örneğin, Windows XP desteklemediği [CDialog::OnCancel](../../mfc/reference/cdialog-class.md#oncancel) ve [CDialog::OnOK](../../mfc/reference/cdialog-class.md#onok) için `CFileDialog` sınıfı. Ancak, Windows Vista ve sonraki işletim sistemlerinde bunları destekler. Oluşturulan farklı iletileri ve bunlar alınan sırası hakkında daha fazla bilgi için bkz: [CFileDialog örnek: Günlük olayı sırası](../../overview/visual-cpp-samples.md).
-
-Kullanılacak bir `CFileDialog` nesne, ilk kullanarak nesne oluşturma `CFileDialog` Oluşturucusu. İletişim kutusu oluşturulmuş sonra ayarlayabilir veya herhangi bir değer değiştirme [CFileDialog::m_ofn](#m_ofn) yapısı değerleri veya iletişim kutusu denetimleri durumları başlatılamadı. `m_ofn` Yapısıdır türünü `OPENFILENAME`. Daha fazla bilgi için [LPSTRFİLE](/windows/desktop/api/commdlg/ns-commdlg-tagofna) Windows SDK'sındaki yapısı.
-
-İletişim kutusu denetimleri başlatmak sonra çağırma [CFileDialog::DoModal](#domodal) iletişim kutusunu görüntülemek için yöntemi kutusunu kullanıcı yolu ve dosya adını yazabilirsiniz. `DoModal` Kullanıcı (IDOK) Tamam veya iptal edin (IDCANCEL) düğmeye tıkladı döndürür. Varsa `DoModal` IDOK, döndürür birini kullanabilirsiniz `CFileDialog` bilgileri almak için genel üye işlevleri koymak kullanıcı tarafından.
+Windows Vista veya üzeri `CFileDialog` ile ' nin görünümü ve işlevselliği, Windows 'un önceki sürümlerinden farklıdır. Varsayılan değer `CFileDialog` , bir program derlenirse ve Windows Vista veya sonraki sürümlerde çalışıyorsa, otomatik olarak yeni Windows Vista veya sonraki stili kod değişikliği olmadan kullanır. Bu otomatik güncelleştirmeyi el ile geçersiz kılmak için oluşturucuda *bVistaStyle* parametresini kullanın. Otomatik güncelleştirmenin özel durumu özelleştirilmiş iletişim kutularıdır. Yeni stile dönüştürülmeyecektir. Oluşturucu hakkında daha fazla bilgi için bkz. [CFileDialog:: CFileDialog](#cfiledialog).
 
 > [!NOTE]
-> Birden çok altında Windows Vista veya sonraki çağrılar [IFileDialog::SetFileTypes](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-ifiledialog-setfiletypes) bir hataya neden olur. İçin yapılan ikinci çağrı `SetFileTypes` herhangi bir örneği için bir `CFileDialog` Windows Vista veya sonraki sürümlerde E_UNEXPECTED döndürür. Bazı `CFileDialog` yöntemi işlev çağrısı `SetFileTypes`. Örneğin, iki için çağırdığı `CFileDialog::DoModal` aynı örneği için bir `CFileDialog` oluşturur [ASSERT](diagnostic-services.md#assert).
+>  Denetim KIMLIĞI sistemi, Windows Vista veya sonraki sürümlerde Windows 'un `CFileDialog`önceki sürümlerinden farklıdır. Windows 'un önceki bir sürümünden projenizin `CFileDialog` bağlantı noktası oluşturabilmeniz için önce koddaki denetimlere yapılan tüm başvuruları güncelleştirmeniz gerekir.
 
-`CFileDialog` Paylaşım ihlali, dosya adı doğrulama ve liste kutusu değişiklik bildirimi özel işleme yapmanızı sağlayan birkaç korumalı üyeleri içerir. Çoğu uygulama, varsayılan işleme otomatik olarak uygulandığından kullanın gerekmez. geri çağırma işlevleri bu korumalı üyeleridir. Bu işlevler için ileti eşlemesi girişleri gerekli değildir, çünkü bunlar standart sanal işlev.
+Bazı `CFileDialog` Yöntemler Windows Vista veya sonraki sürümlerinde desteklenmez. Yöntemin desteklenip desteklenmediğini öğrenmek için bağımsız Yöntem konusuna bakın. Ayrıca, aşağıdaki devralınmış işlevler Windows Vista veya sonraki sürümlerinde desteklenmez:
 
-Windows kullanabileceğiniz [CommDlgExtendedError](/windows/desktop/api/commdlg/nf-commdlg-commdlgextendederror) işlevi bir hata iletişim kutusunun başlatma sırasında oluşup oluşmadığını belirleyin ve hata hakkında daha fazla bilgi edinin.
+- [CDialog:: OnInitDialog](../../mfc/reference/cdialog-class.md#oninitdialog)
 
-Yok edilmesini `CFileDialog` nesneleri otomatik olarak gerçekleştirilir. Çağrı gerekmez [CDialog::EndDialog](../../mfc/reference/cdialog-class.md#enddialog).
+- [CDialog:: OnSetFont](../../mfc/reference/cdialog-class.md#onsetfont)
 
-Birden çok dosya seçin, çağırmadan önce OFN_ALLOWMULTISELECT bayrağı ayarlar izin vermek için `DoModal`. Kendi dosya adı arabelleği döndürülen birden çok dosya adları listesi uyum sağlayacak şekilde sağlamanız gerekir. Değiştirerek bunu `m_ofn.lpstrFile` , oluşturduktan sonra bir arabellek için bir işaretçi ile, ayrılan `CFileDialog`, ancak çağırmadan önce `DoModal`.
+`CFileDialog` Sınıfı için Windows iletileri, kullanmakta olduğunuz işletim sistemine göre farklılık gösterir. Örneğin, Windows XP, `CFileDialog` sınıfı için [CDialog:: OnCancel](../../mfc/reference/cdialog-class.md#oncancel) ve [CDialog:: OnOK](../../mfc/reference/cdialog-class.md#onok) desteklemez. Ancak, Windows Vista ve sonraki işletim sistemleri bunları destekler. Oluşturulan farklı iletiler ve alındıkları sıra hakkında daha fazla bilgi için bkz [. CFileDialog Sample: Olay sırası](../../overview/visual-cpp-samples.md)günlüğe kaydediliyor.
 
-Ayrıca, ayarlamalısınız `m_ofn.nMaxFile` karakter sayısı tarafından işaret edilen arabellek kullanarak `m_ofn.lpstrFile`. Seçilecek dosyaları sayısı ayarlarsanız `n`, gerekli arabellek boyutu `n * (_MAX_PATH + 1) + 1`. Arabellekte döndürülen ilk öğeyi dosyaları burada seçilen klasör yoludur. Windows Vista veya sonraki Stili iletişim kutuları için dizin ve dosya adı null ile sonlandırılmış, son dosya adından sonra ek bir null karakterle dizelerdir. Gezgin Stili iletişim kutuları, boşluklar uzun dosya adları döndürmek Bu biçim sağlar. Eski stil iletişim kutuları için dizin ve dosya adı dizelerinin boşlukla ayrılır ve işlev alanları ile dosya adlarını kısa dosya adlarını kullanır.
+Bir `CFileDialog` nesnesi kullanmak için, önce `CFileDialog` oluşturucuyu kullanarak nesnesini oluşturun. İletişim kutusu oluşturulduktan sonra, iletişim kutusu denetimlerinin değerlerini veya durumlarını başlatmak için [CFileDialog:: m_ofn](#m_ofn) yapısındaki herhangi bir değeri ayarlayabilir veya değiştirebilirsiniz. `m_ofn` Yapı türü`OPENFILENAME`. Daha fazla bilgi için Windows SDK [OpenFileName](/windows/win32/api/commdlg/ns-commdlg-openfilenamew) yapısına bakın.
 
-Aşağıdaki örnek, bir arabellek almak ve birden çok dosya adlarını listelemek için nasıl kullanılacağını gösterir.
+İletişim kutusu denetimlerini başlattıktan sonra, kullanıcının yolu ve dosya adını yazabilmesi için iletişim kutusunu göstermek üzere [CFileDialog::D oModal](#domodal) yöntemini çağırın. `DoModal`kullanıcının Tamam (IDOK) veya Iptal (ıDCANCEL) düğmesine tıkladığını döndürür. IDOK `CFileDialog`döndürürse, Kullanıcı tarafından yerleştirilecek bilgileri almak için ortak üye işlevlerinden birini kullanabilirsiniz. `DoModal`
+
+> [!NOTE]
+> Windows Vista veya sonraki sürümlerinde, [IFileDialog:: SetFileTypes](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-ifiledialog-setfiletypes) için birden çok çağrı hataya neden olur. Herhangi bir `SetFileTypes` `CFileDialog` örneğine yönelik ikinci çağrı, Windows Vista veya sonraki sürümlerde E_UNEXPECTED döndürür. Bazı `CFileDialog` yöntem işlevleri çağırır `SetFileTypes`. Örneğin, aynı bir oluşturma örneği `CFileDialog::DoModal` için yapılan iki çağrı, bir `CFileDialog` onay [](diagnostic-services.md#assert)oluşturur.
+
+`CFileDialog`, paylaşma ihlallerinin, dosya adı doğrulamasının ve liste kutusu değişiklik bildiriminin özel işlenmesini yapmanızı sağlayan birkaç korumalı üye içerir. Varsayılan işleme otomatik olarak yapıldığından, bu korumalı Üyeler çoğu uygulamanın kullanmak zorunda olmadığı geri çağırma işlevleridir. Bu işlevlere ait ileti eşleme girdileri standart sanal işlevler olduklarından gerekli değildir.
+
+İletişim kutusunun başlatılması sırasında oluşan bir hata olup olmadığını ve hata hakkında daha fazla bilgi edinmek için Windows [Commdlextende,](/windows/desktop/api/commdlg/nf-commdlg-commdlgextendederror) işlevini kullanabilirsiniz.
+
+`CFileDialog` Nesneleri yok etme işlemi otomatik olarak işlenir. [CDialog:: EndDialog](../../mfc/reference/cdialog-class.md#enddialog)çağrısı yapmanız gerekmez.
+
+Kullanıcının birden çok dosya seçmesini sağlamak için, çağrısı `DoModal`yapmadan önce OFN_ALLOWMULTISELECT bayrağını ayarlayın. Birden çok dosya adının döndürülen listesini karşılamak için kendi dosya adı arabelleğini sağlamanız gerekir. Bunu, ayırmış `m_ofn.lpstrFile` `CFileDialog`olduğunuz arabelleğin bir işaretçisi ile değiştirerek,,,, ' yi çağrısından `DoModal`önce yaparak yapın.
+
+Ayrıca, arabelleğin gösterdiği `m_ofn.nMaxFile` `m_ofn.lpstrFile`karakter sayısını kullanarak ayarlamanız gerekir. Seçilecek en fazla dosya `n`sayısını ayarlarsanız, gereken arabellek boyutu olur. `n * (_MAX_PATH + 1) + 1` Arabellekte döndürülen ilk öğe, dosyaların seçildiği klasörün yoludur. Windows Vista veya üzeri stil iletişim kutularında, dizin ve dosya adı dizeleri, son dosya adından sonra fazladan bir null karakter ile null olarak sonlandırılır. Bu biçim, Gezgin stili iletişim kutularının boşluklar içeren uzun dosya adlarını döndürmesini sağlar. Eski stil iletişim kutularında dizin ve dosya adı dizeleri boşluklarla ayrılır ve işlev, boşluk içeren dosya adları için kısa dosya adları kullanır.
+
+Aşağıdaki örnek, birden çok dosya adını almak ve listelemek için bir arabelleğin nasıl kullanılacağını gösterir.
 
 [!code-cpp[NVC_MFCFiles#23](../../atl-mfc-shared/reference/codesnippet/cpp/cfiledialog-class_1.cpp)]
 
-Birden çok dosya adlarını seçme kullanıcıya yanıt arabelleği boyutu değiştirmek için yeni bir sınıftan türetilmelidir `CFileDialog` ve geçersiz kılma [CFileDialog::OnFileNameChange](#onfilenamechange) yöntemi.
+Kullanıcıya birden çok dosya adı seçen arabellek boyutunu değiştirmek için, ' dan `CFileDialog` yeni bir sınıf türetmeniz ve [CFileDialog:: OnFileNameChange](#onfilenamechange) metodunu geçersiz kılmanız gerekir.
 
-Yeni bir sınıf türetirseniz `CFileDialog`, iletileri işlemek için ileti eşlemesi kullanabilirsiniz. Varsayılan ileti işleme genişletmek için öğesinden bir sınıf türetin `CFileDialog`, yeni sınıfa ileti eşlemesi eklemek ve yeni iletileri için üye işlevleri sağlar. Bir kanca işlevini Özelleştir iletişim kutusu için sağlamanız gerekmez.
+' Dan `CFileDialog`yeni bir sınıf türetirsiniz, herhangi bir ileti işlemek için ileti eşlemesi kullanabilirsiniz. Varsayılan ileti işlemeyi genişletmek için, öğesinden `CFileDialog`bir sınıf türetebilir, yeni sınıfa bir ileti haritası ekleyin ve yeni iletiler için üye işlevleri sağlayın. İletişim kutusunu özelleştirmek için bir kanca işlevi sağlamanız gerekmez.
 
-Özelleştir iletişim kutusu için öğesinden bir sınıf türetin `CFileDialog`özel iletişim kutusu olan bir şablonu sağlar ve genişletilmiş denetimlerden bildirim iletilerini işlemek için ileti eşlemesi ekleyin. İşlenmemiş tüm iletiler için temel sınıf geçirin. Kanca işlevini Özelleştir gerekmez.
+İletişim kutusunu özelleştirmek için, öğesinden `CFileDialog`bir sınıf türetebilir, özel bir iletişim kutusu şablonu sağlayın ve genişletilmiş denetimlerden gelen bildirim iletilerini işlemek için bir ileti haritası ekleyin. İşlenmemiş iletileri temel sınıfa geçirin. Kanca işlevini özelleştirmek zorunda değilsiniz.
 
-Kullanırken Windows Vista veya sonraki stilini `CFileDialog`, ileti eşlemeleri ve iletişim kutusu şablonları kullanamazsınız. Bunun yerine, COM arabirimleri için benzer işlevsellik kullanmanız gerekir.
+`CFileDialog`' Nin Windows Vista veya sonraki bir stilini kullanırken ileti haritaları ve iletişim kutusu şablonları kullanamazsınız. Bunun yerine, benzer işlevler için COM arabirimlerini kullanmanız gerekir.
 
-Nasıl kullanılacağı hakkında daha fazla bilgi için `CFileDialog`, bkz: [ortak iletişim kutusu sınıfları](../../mfc/common-dialog-classes.md).
+' Nin nasıl kullanılacağı `CFileDialog`hakkında daha fazla bilgi için bkz. [ortak iletişim kutusu sınıfları](../../mfc/common-dialog-classes.md).
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -300,11 +300,11 @@ Nasıl kullanılacağı hakkında daha fazla bilgi için `CFileDialog`, bkz: [or
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxdlgs.h
+**Üstbilgi:** afxdlgs. h
 
-##  <a name="addcheckbutton"></a>  CFileDialog::AddCheckButton
+##  <a name="addcheckbutton"></a>CFileDialog:: AddCheckButton
 
-İletişim kutusu bir onay düğmesini ekler.
+İletişim kutusuna bir onay düğmesi ekler.
 
 ```
 HRESULT AddCheckButton(
@@ -316,19 +316,19 @@ HRESULT AddCheckButton(
 ### <a name="parameters"></a>Parametreler
 
 *dwIDCtl*<br/>
-Eklemek için onay düğmesine kimliği.
+Eklenecek onay düğmesinin KIMLIĞI.
 
 *strLabel*<br/>
-Onay düğmesine adı.
+Onay düğmesi adı.
 
 *bChecked*<br/>
-Onay düğmesine geçerli durumunu gösteren bir Boole değeri. Eğer denetlenmişse TRUE; FALSE Aksi takdirde
+Onay düğmesinin geçerli durumunu gösteren bir Boole değeri. İşaretliyse doğru; Aksi halde yanlış
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="addcombobox"></a>  CFileDialog::AddComboBox
+##  <a name="addcombobox"></a>CFileDialog:: AddComboBox
 
-Birleşik giriş kutusu iletişim kutusuna ekler.
+İletişim kutusuna bir açılan kutu ekler.
 
 ```
 HRESULT AddComboBox(DWORD dwIDCtl);
@@ -337,13 +337,13 @@ HRESULT AddComboBox(DWORD dwIDCtl);
 ### <a name="parameters"></a>Parametreler
 
 *dwIDCtl*<br/>
-Eklemek için birleşik giriş kutusu kimliği.
+Eklenecek Birleşik giriş kutusunun KIMLIĞI.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="addcontrolitem"></a>  CFileDialog::AddControlItem
+##  <a name="addcontrolitem"></a>CFileDialog:: Addcontrolıdıtem
 
-Bir kapsayıcı denetimi iletişim kutusunda bir öğe ekler.
+İletişim kutusunda bir kapsayıcı denetimine bir öğe ekler.
 
 ```
 HRESULT AddControlItem(
@@ -355,19 +355,19 @@ HRESULT AddControlItem(
 ### <a name="parameters"></a>Parametreler
 
 *dwIDCtl*<br/>
-Öğenin ekleneceği kapsayıcı denetimin kimliği.
+Öğenin ekleneceği kapsayıcı denetiminin KIMLIĞI.
 
-*dwIDItem*<br/>
-Öğe kimliği.
+*Dwidıtem*<br/>
+Öğenin KIMLIĞI.
 
 *strLabel*<br/>
 Öğenin metni.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="addeditbox"></a>  CFileDialog::AddEditBox
+##  <a name="addeditbox"></a>CFileDialog:: AddEditBox
 
-İletişim kutusuna bir düzenleme kutusuna ekler.
+İletişim kutusuna bir düzenleme kutusu ekler.
 
 ```
 HRESULT AddEditBox(
@@ -378,16 +378,16 @@ HRESULT AddEditBox(
 ### <a name="parameters"></a>Parametreler
 
 *dwIDCtl*<br/>
-Ekleme düzenleme kutusunun kimliği.
+Eklenecek düzenleme kutusunun KIMLIĞI.
 
 *strText*<br/>
 Düzenleme kutusu adı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="addmenu"></a>  CFileDialog::AddMenu
+##  <a name="addmenu"></a>CFileDialog:: MenüEkle
 
-Bir menü iletişim kutusuna ekler.
+İletişim kutusuna bir menü ekler.
 
 ```
 HRESULT AddMenu(
@@ -398,16 +398,16 @@ HRESULT AddMenu(
 ### <a name="parameters"></a>Parametreler
 
 *dwIDCtl*<br/>
-Eklemek için menü kimliği.
+Eklenecek menünün KIMLIĞI.
 
 *strLabel*<br/>
 Menü adı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="addplace"></a>  CFileDialog::AddPlace
+##  <a name="addplace"></a>CFileDialog:: AddPlace
 
-Bir klasör listesine açmak veya öğeleri kaydetmek kullanıcılar için uygun basamak ekler.
+Kullanıcının öğeleri açması veya kaydetmesi için kullanılabilir yer listesine bir klasör ekler.
 
 ```
 void AddPlace(
@@ -422,19 +422,19 @@ void AddPlace(
 ### <a name="parameters"></a>Parametreler
 
 *lpszFolder*<br/>
-Kullanıcı tarafından kullanılabilir hale klasör yolu. Bu, yalnızca bir klasör olabilir.
+Kullanıcının kullanımına açık hale getirilme klasörünün yolu. Bu yalnızca bir klasör olabilir.
 
 *fdap*<br/>
-Klasör listesi içinde nereye yerleştirileceğini belirtir.
+Klasörün, listenin içine yerleştirileceğini belirtir.
 
-*psi*<br/>
-Kullanıcı tarafından kullanılabilir olmasını klasörünü temsil eden bir IShellItem işaretçisi. Bu, yalnızca bir klasör olabilir.
+*PSI*<br/>
+Kullanıcının kullanımına açık hale getirilme klasörünü temsil eden bir ıhellitem işaretçisi. Bu yalnızca bir klasör olabilir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="addpushbutton"></a>  CFileDialog::AddPushButton
+##  <a name="addpushbutton"></a>CFileDialog:: Addbasma
 
-İletişim için bir düğme ekler.
+İletişim kutusuna bir düğme ekler.
 
 ```
 HRESULT AddPushButton(
@@ -445,16 +445,16 @@ HRESULT AddPushButton(
 ### <a name="parameters"></a>Parametreler
 
 *dwIDCtl*<br/>
-Eklemek için düğme kimliği.
+Eklenecek düğmenin KIMLIĞI.
 
 *strLabel*<br/>
 Düğme adı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="addradiobuttonlist"></a>  CFileDialog::AddRadioButtonList
+##  <a name="addradiobuttonlist"></a>CFileDialog:: AddRadioButtonList
 
-Seçenek düğmesi (radyo düğmesi olarak da bilinir) grubu iletişim kutusuna ekler.
+İletişim kutusuna bir seçenek düğmesi (radyo düğmesi olarak da bilinir) ekler.
 
 ```
 HRESULT AddRadioButtonList(DWORD dwIDCtl);
@@ -463,13 +463,13 @@ HRESULT AddRadioButtonList(DWORD dwIDCtl);
 ### <a name="parameters"></a>Parametreler
 
 *dwIDCtl*<br/>
-Eklemek için seçenek düğmesi grubunun kimliği.
+Eklenecek seçenek düğmesi grubunun KIMLIĞI.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="addseparator"></a>  CFileDialog::AddSeparator
+##  <a name="addseparator"></a>CFileDialog:: AddSeparator
 
-Ayırıcı iletişim kutusuna ekler.
+İletişim kutusuna bir ayırıcı ekler.
 
 ```
 HRESULT AddSeparator(DWORD dwIDCtl);
@@ -478,13 +478,13 @@ HRESULT AddSeparator(DWORD dwIDCtl);
 ### <a name="parameters"></a>Parametreler
 
 *dwIDCtl*<br/>
-Ayırıcı kimliği ekleyin.
+Ayırıcı ekleme KIMLIĞI.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="addtext"></a>  CFileDialog::AddText
+##  <a name="addtext"></a>CFileDialog:: AddText
 
-Metin iletişim kutusuna ekler.
+İletişim kutusuna metin ekler.
 
 ```
 HRESULT AddText(
@@ -495,16 +495,16 @@ HRESULT AddText(
 ### <a name="parameters"></a>Parametreler
 
 *dwIDCtl*<br/>
-Eklenecek metin kimliği.
+Eklenecek metnin KIMLIĞI.
 
 *strText*<br/>
 Metin adı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="applyofntoshelldialog"></a>  CFileDialog::ApplyOFNToShellDialog
+##  <a name="applyofntoshelldialog"></a>CFileDialog:: ApplyOFNToShellDialog
 
-Geçerli durumunu güncelleştirir [CFileDialog](../../mfc/reference/cfiledialog-class.md) depolanan değerleri temel `m_ofn` veri yapısı.
+`m_ofn` Veri yapısında depolanan değerlere göre [CFileDialog](../../mfc/reference/cfiledialog-class.md) geçerli durumunu güncelleştirir.
 
 ```
 void ApplyOFNToShellDialog();
@@ -512,19 +512,19 @@ void ApplyOFNToShellDialog();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Windows Vista, üye önce Windows sürümlerinde [LPSTRFİLE](/previous-versions/windows/embedded/ms911906\(v=msdn.10\)) veri yapısı ile durumunu sürekli olarak eşitlenmiş `CFileDialog`. Herhangi bir değişiklik [m_ofn](#m_ofn) üye değişkeni iletişim kutusunun durumunda hemen yansıtılmasını. Ayrıca, herhangi bir değişiklik iletişim kutusunun durumunu hemen güncelleştirmek `m_ofn` üye değişkeni.
+Windows Vista 'Dan önceki Windows sürümlerinde, [OpenFileName](/previous-versions/windows/embedded/ms911906\(v=msdn.10\)) veri yapısı üyenin durumuyla `CFileDialog`sürekli olarak eşitlenir. [M_ofn](#m_ofn) üye değişkeninde yapılan tüm değişiklikler iletişim kutusunun durumuna hemen yansıtılır. Ayrıca, iletişim kutusunun durumundaki değişiklikler `m_ofn` üye değişkenini hemen güncelleştirir.
 
-Windows Vista veya sonraki sürümlerde, değerler `m_ofn` üye değişkeni ve durumunu `CFileDialog` eşitlenmiş garanti edilmez. Bu işlev zorlar durumu `CFileDialog` eşleşecek şekilde güncelleştirilecek `m_ofn` yapısı. Windows sırasında otomatik olarak bu işlevi çağıran [CFileDialog::DoModal](#domodal).
+Windows Vista veya sonraki sürümlerde, `m_ofn` üye değişkeninde ve durumunun `CFileDialog` içindeki değerlerin eşitlenmesi garanti edilmez. Bu işlev, `CFileDialog` öğesinin durumunu `m_ofn` yapıyla eşleşecek şekilde güncelleştirilmesini zorlar. Windows, CFileDialog sırasında bu işlevi otomatik olarak çağırır [::D oModal](#domodal).
 
-Nasıl kullanılacağı hakkında daha fazla bilgi için `CFileDialog` sınıfı altında Windows Vista veya daha sonra bkz [CFileDialog sınıfı](../../mfc/reference/cfiledialog-class.md).
+`CFileDialog` Sınıfının Windows Vista veya sonraki sürümlerinde nasıl kullanılacağı hakkında daha fazla bilgi için bkz. [CFileDialog Class](../../mfc/reference/cfiledialog-class.md).
 
 ### <a name="example"></a>Örnek
 
-  Örneğin bakın [CFileDialog::UpdateOFNFromShellDialog](#updateofnfromshelldialog).
+  [CFileDialog:: UpdateOFNFromShellDialog](#updateofnfromshelldialog)örneğine bakın.
 
-##  <a name="cfiledialog"></a>  CFileDialog::CFileDialog
+##  <a name="cfiledialog"></a>CFileDialog:: CFileDialog
 
-Standart Windows dosya iletişim kutusu oluşturmak için bu işlevi çağırın.
+Standart bir Windows dosyası iletişim kutusu oluşturmak için bu işlevi çağırın.
 
 ```
 explicit CFileDialog(
@@ -541,62 +541,62 @@ explicit CFileDialog(
 ### <a name="parameters"></a>Parametreler
 
 *bOpenFileDialog*<br/>
-[in] Parametresi ne tür iletişim kutusunun oluşturulacağını belirtir. Oluşturmak için TRUE olarak ayarlanmış bir **Dosya Aç** iletişim kutusu. Oluşturmak için FALSE olarak ayarlanmış bir **dosyayı farklı Kaydet** iletişim kutusu.
+'ndaki Oluşturulacak iletişim kutusu türünü belirten parametre. **Dosya Aç** iletişim kutusu oluşturmak IÇIN bunu true olarak ayarlayın. **Dosya farklı kaydet** iletişim kutusu oluşturmak IÇIN bunu yanlış olarak ayarlayın.
 
 *lpszDefExt*<br/>
-[in] Varsayılan dosya adı uzantısı. Kullanıcı dosya adı kutusuna bilinen bir uzantı (bir kullanıcının bilgisayarında bir ilişkisi) içermiyorsa, belirtilen uzantısı tarafından *lpszDefExt* dosya adına otomatik olarak eklenir. Bu parametre NULL ise, hiçbir uzantı eklenir.
+'ndaki Varsayılan dosya adı uzantısı. Kullanıcı, bilinen bir uzantıyı (kullanıcının bilgisayarında bir ilişkisi olan biri) dosya adı kutusuna içermiyorsa, *lpszDefExt* tarafından belirtilen uzantı otomatik olarak dosya adına eklenir. Bu parametre NULL ise, uzantı eklenmez.
 
 *lpszFileName*<br/>
-[in] Dosya adı kutusunda görünen ilk dosya adı. NULL ise, ilk dosya adı görüntülenir.
+'ndaki Dosya adı kutusunda görünen ilk dosya adı. NULL ise, ilk dosya adı görüntülenmez.
 
-*CertOpenStore*<br/>
-[in] Özelleştir iletişim kutusu için kullanabileceğiniz bir veya daha fazla bayrakların birleşimi. Bu bayraklar açıklaması için bkz: [LPSTRFİLE](/windows/desktop/api/commdlg/ns-commdlg-tagofna) Windows SDK'sındaki yapısı. Değiştirirseniz `m_ofn.Flags` yapı üyesi, varsayılan davranışı korumak için değişikliklerinizi bir bit düzeyinde OR işleci kullanın.
+*dwFlags*<br/>
+'ndaki İletişim kutusunu özelleştirmek için kullanabileceğiniz bir veya daha fazla bayrak birleşimi. Bu bayrakların bir açıklaması için Windows SDK [OpenFileName](/windows/win32/api/commdlg/ns-commdlg-openfilenamew) yapısına bakın. `m_ofn.Flags` Yapı üyesini değiştirirseniz, varsayılan davranışı bozulmadan korumak için değişikliklerinizi bir bit düzeyinde OR işleci kullanın.
 
 *lpszFilter*<br/>
-[in] Bir dizi filtreleri belirten bir dize çiftleri dosyaya uygulayabilirsiniz. Dosya filtreleri belirtirseniz, yalnızca filtre ölçütüyle eşleşen dosyaları dosya listesinde görünür. Dosya filtreleri ile çalışma hakkında daha fazla bilgi için Açıklamalar bölümüne bakın.
+'ndaki Dosyaya uygulayabileceğiniz filtreleri belirten bir dizi dize çiftleri. Dosya filtrelerini belirtirseniz, yalnızca filtre ölçütleriyle eşleşen dosyalar dosyalar listesinde görünür. Dosya filtreleriyle çalışma hakkında daha fazla bilgi için açıklamalar bölümüne bakın.
 
 *pParentWnd*<br/>
-[in] Dosya iletişim kutusunun üst veya sahip penceresine bir işaretçi.
+'ndaki Dosya iletişim kutusunun üst veya sahip penceresine yönelik bir işaretçi.
 
 *dwSize*<br/>
-[in] Boyutu `OPENFILENAME` yapısı. Bu değer, işletim sistemi sürümüne bağlıdır. MFC iletişim kutusu oluşturmak için uygun türünü belirlemek için bu parametreyi kullanılır. Varsayılan boyutu MFC kodu kullanmak için doğru iletişim kutusunun boyutu programın çalıştığı işletim sistemi sürümüne göre belirleyen 0 anlamına gelir.
+'ndaki `OPENFILENAME` Yapının boyutu. Bu değer, işletim sistemi sürümüne bağlıdır. MFC, oluşturulacak ilgili iletişim kutusunu öğrenmek için bu parametreyi kullandı. Varsayılan değer olan 0, MFC kodunun programın çalıştırıldığı işletim sistemi sürümüne göre kullanılacak doğru iletişim kutusu boyutunu belirleyeceğini belirtir.
 
 *bVistaStyle*<br/>
-[in] **Not** bu parametresi olacaktır ve üzeri Visual Studio 2008'de kullanılabilir ve yalnızca Windows Vista veya sonraki sürümlerde çalıştırıyorsanız, kullanılacak yeni stil iletişim neden olur.
+'ndaki **Göz önünde** Bu parametre, Visual Studio 2008 ve üzeri sürümlerde kullanılabilir ve yeni stil iletişim kutusunun yalnızca Windows Vista veya sonraki sürümlerde çalıştırıyorsanız kullanılmasına neden olur.
 
-Parametresi dosya iletişim kutusu stilini belirtir. İçin dosya iletişim kutularını kullanın ve yeni Vista stil true ayarlayın. Aksi takdirde, eski stil iletişim kutularının kullanılır. Vista altında çalışan daha fazla bilgi için Açıklamalar bölümüne bakın.
+Dosya iletişim kutusunun stilini belirten parametre. Yeni Vista stil dosyası iletişim kutularını kullanmak için bunu TRUE olarak ayarlayın. Aksi takdirde, iletişim kutularının eski stili kullanılacaktır. Vista altında çalışma hakkında daha fazla bilgi için açıklamalar bölümüne bakın.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Ya da bir **Dosya Aç** veya **dosyayı farklı Kaydet** iletişim kutusu oluşturulur, bağlı olarak değeri *bOpenFileDialog*.
+*BOpenFileDialog*değerine bağlı olarak bir **Dosya Aç** veya **dosya farklı kaydet** iletişim kutusu oluşturulur.
 
-Kullanarak bir varsayılan uzantısı belirterek *lpszDefExt* nadiren hangi uzantıların dosya ilişkilendirmeleri kullanıcının bilgisayarında sahip tahmin edilebilir olduğu için beklediğiniz davranışı vermeyebilir. Varsayılan bir uzantı ekleme hakkında daha fazla denetime ihtiyacınız varsa, kendi sınıfınızı türetebilirsiniz `CFileDialog`ve geçersiz kılma `CFileDialog::OnFileNameOK` kendi uzantı işleme gerçekleştirmek için yöntemi.
+*LpszDefExt* kullanarak varsayılan bir uzantı belirtmek, Kullanıcı bilgisayarında hangi uzantıların dosya ilişkilerinin olduğunu nadiren tahmin ettiğinden, beklediğiniz davranışı oluşturmayabilir. Varsayılan bir uzantının eklenmesi üzerinde daha fazla denetime ihtiyacınız varsa, kendi sınıfınızı ' dan `CFileDialog`türetebilir ve kendi uzantı işleme işlemini gerçekleştirmek için `CFileDialog::OnFileNameOK` yöntemini geçersiz kılabilirsiniz.
 
-Birden çok dosya seçmesini etkinleştirmek için çağırmadan önce OFN_ALLOWMULTISELECT bayrağı ayarlayın [DoModal](#domodal). Kendi dosya adı arabelleği döndürülen birden çok dosya adları listesi depolamak için sağlamanız gerekir. Değiştirerek bunu `m_ofn.lpstrFile` , oluşturduktan sonra bir arabellek için bir işaretçi ile, ayrılan [CFileDialog](../../mfc/reference/cfiledialog-class.md), ancak çağırmadan önce `DoModal`. Ayrıca, ayarlamalısınız `m_ofn.nMaxFile` tarafından işaret edilen arabellek karakter sayısı ile `m_ofn.lpstrFile`. Seçilecek dosyaları sayısı ayarlarsanız *n*, gerekli arabellek boyutu `n`*(_MAX_PATH + 1) + 1. Örneğin:
+Kullanıcının birden çok dosya seçmesini etkinleştirmek için, [Dokalıcı](#domodal)çağrısı yapmadan önce OFN_ALLOWMULTISELECT bayrağını ayarlayın. Birden çok dosya adının döndürülen listesini depolamak için kendi dosya adı arabelleğini sağlamanız gerekir. Bunu, ayırmış `m_ofn.lpstrFile` olduğunuz bir arabelleğin işaretçisi ile değiştirerek, [CFileDialog](../../mfc/reference/cfiledialog-class.md)oluşturduktan sonra, ancak çağrısından `DoModal`önce yapın. Ayrıca, arabellek tarafından `m_ofn.nMaxFile` `m_ofn.lpstrFile`işaret edilen arabellekteki karakter sayısıyla ayarlamanız gerekir. Seçilecek en fazla dosya sayısını *n*olarak ayarlarsanız, gerekli arabellek boyutu * (_MAX_PATH + `n`1) + 1 ' dir. Örneğin:
 
 [!code-cpp[NVC_MFCFiles#23](../../atl-mfc-shared/reference/codesnippet/cpp/cfiledialog-class_1.cpp)]
 
-Klavye veya fare kullanarak bir Gezgin Stili iletişim kutusunu yeniden boyutlandırmak kullanıcının etkinleştirmek için OFN_ENABLESIZING bayrağını ayarlayın. Bu bayrak ayarlandığında, yalnızca bir kanca yordam veya özel bir şablon sağlarsanız gereklidir. Bayrağı yalnızca bir Gezgin Stili iletişim kutusuyla çalışır; eski stil iletişim kutuları yeniden boyutlandırılamaz.
+Kullanıcının fare veya klavyeyi kullanarak bir gezgin stili iletişim kutusunu yeniden boyutlandırmasını etkinleştirmek için OFN_ENABLESIZING bayrağını ayarlayın. Bu bayrağı ayarlamak yalnızca bir kanca yordamı veya özel şablon sağlarsanız gereklidir. Bayrak yalnızca bir gezgin stili iletişim kutusuyla birlikte kullanılabilir; eski stil iletişim kutuları yeniden boyutlandırılamaz.
 
-*LpszFilter* parametresi, dosya adı bir dosya, dosya listesinde görüntülenecek olmalıdır türünü belirlemek için kullanılır. Filtre dizesi çiftindeki ilk dize açıklar; İkinci dize kullanılacak dosya adı uzantısını belirtir. Sınırlayıcı noktalı virgül (';' karakter) kullanarak birden fazla uzantı belirtilebilir. Dize iki ile sona erer '&#124;' karakter, bir NULL karakter. Ayrıca bir [CString](../../atl-mfc-shared/using-cstring.md) Bu parametre için bir nesne.
+*LpszFilter* parametresi, dosyanın dosya listesinde görüntülenmesi gereken dosya adı türünü belirlemekte kullanılır. Dize çiftindeki ilk dize filtreyi açıklar; ikinci dize kullanılacak dosya adı uzantısını belirtir. Ayırıcı olarak noktalı virgül ('; ' karakteri) kullanılarak birden çok uzantı belirtilebilir. Dize, iki '&#124;' karakteriyle ve ardından bir null karakterle bitiyor. Bu parametre için bir [CString](../../atl-mfc-shared/using-cstring.md) nesnesi de kullanabilirsiniz.
 
-Örneğin, Microsoft Excel uzantıları .xlc (grafik) veya .xls (çalışma sayfası), diğerlerinin yanı sıra dosyaları açmasına izin verir. Excel için filtre olarak yazılabilir:
+Örneğin, Microsoft Excel, kullanıcıların uzantıları. xlc (grafik) veya. xls (çalışma sayfası) olan dosyaları diğerleri arasında açmasına olanak sağlar. Excel filtresi şöyle yazılabilir:
 
 [!code-cpp[NVC_MFCFiles#24](../../atl-mfc-shared/reference/codesnippet/cpp/cfiledialog-class_2.cpp)]
 
-Ancak, bu dize doğrudan'ı kullanmayı planlıyorsanız, güncelleştirme `OPENFILENAME` yapısı, null karakteri, '\0' dikey çubuklar yerine dizelerinizle sınırlandırmak ('&#124;').
+Ancak, `OPENFILENAME` yapıyı doğrudan güncelleştirmek için bu dizeyi kullanmayı planlıyorsanız, dizelerinizi dikey çubuklar ('&#124;') yerine ' \ 0 ' boş karakteriyle sınırlandırabilirsiniz.
 
-*BVistaStyle* yalnızca Windows Vista ya da daha sonra çalıştırırken parametre uygulanabilir. Önceki Windows sürümlerinde bu parametre yoksayılır. Varsa *bVistaStyle* , Visual Studio 2008 veya sonraki sürümlerde, bir program derlerken yeni Vista stil TRUE olarak ayarlanmış **dosya iletişim kutusu** kullanılır. Aksi takdirde önceki MFC stili **dosya iletişim kutusu** kullanılır.
+*BVistaStyle* parametresi yalnızca Windows Vista veya üzeri sürümlerde çalışırken uygulanabilir. Windows 'un önceki sürümlerinde bu parametre yok sayılır. *BVistaStyle* değeri true olarak ayarlanırsa, Visual Studio 2008 veya sonraki bir sürümü ile bir program derlerken yeni Vista stil **dosyası iletişim kutusu** kullanılacaktır. Aksi halde, önceki MFC stil **dosyası Iletişim kutusu** kullanılacaktır.
 
-İletişim kutusu şablonları temel iletişim kutuları hakkında desteklenmez *bVistaStyle*
+İletişim kutusu şablonları *bVistaStyle* tabanlı iletişim kutularında desteklenmez
 
 ### <a name="example"></a>Örnek
 
-  Örneğin bakın [CFileDialog::DoModal](#domodal).
+  [CFileDialog::D oModal](#domodal)için örneğe bakın.
 
-##  <a name="domodal"></a>  CFileDialog::DoModal
+##  <a name="domodal"></a>CFileDialog::D oModal
 
-Kullanıcı dosyaları ve dizinleri göz atın ve bir dosya adı girin ve Windows genel dosya iletişim kutusunu görüntülemek için bu işlevi çağırın.
+Windows ortak dosya iletişim kutusunu göstermek ve kullanıcının dosyalara ve dizinlere gözatmasına izin vermek ve bir dosya adı girmek için bu işlevi çağırın.
 
 ```
 virtual INT_PTR DoModal();
@@ -604,27 +604,27 @@ virtual INT_PTR DoModal();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-IDOK veya IDCANCEL. IDCANCEL döndürülürse, Windows Arama [CommDlgExtendedError](/windows/desktop/api/commdlg/nf-commdlg-commdlgextendederror) hata oluşup oluşmadığını belirlemek için işlevi.
+IDOK veya ıDCANCEL. IDCANCEL döndürülürse, bir hatanın oluşup oluşmadığını öğrenmek için Windows [Commıdextendebir](/windows/desktop/api/commdlg/nf-commdlg-commdlgextendederror) işlevini çağırın.
 
-IDOK ve IDCANCEL kullanıcı Tamam'ı veya iptal düğmesi seçili olup olmadığını gösteren sabittir.
+IDOK ve ıDCANCEL, kullanıcının Tamam veya Iptal düğmesini seçip seçmediğini belirten sabitlerdir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çeşitli dosya iletişim kutusu seçenekleri üyeleri ayarlayarak başlatmak istiyorsanız `m_ofn` yapısı, bunu çağırmadan önce yapmalısınız `DoModal`, ancak iletişim nesnesi oluşturulur.
+`m_ofn` Yapının üyelerini ayarlayarak çeşitli dosya iletişim kutusu seçeneklerini başlatmak isterseniz, bunu çağırmadan `DoModal`önce, ancak iletişim kutusu nesnesi oluşturulduktan sonra yapmanız gerekir.
 
-Birden çok dosya seçin kullanıcıya izin vermek istiyorsanız, örneğin, çağırmadan önce OFN_ALLOWMULTISELECT bayrağı ayarlayın `DoModal`, bu konuda aşağıdaki kod örneğinde gösterildiği gibi.
+Örneğin, kullanıcının birden çok dosya seçmesine izin vermek istiyorsanız, bu konudaki kod örneğinde gösterildiği gibi çağrılmadan `DoModal`önce OFN_ALLOWMULTISELECT bayrağını ayarlayın.
 
-İletişim kutusunun iletişim kutusunun Tamam'ı veya İptal düğmeleri veya seçer kapatma seçeneğini kullanıcı tıklama menüsünde denetlediğinde, uygulamanıza döndürülür. Diğer üye işlevlerini ayarları veya bilgi almak için iletişim kutusuna kullanıcı girişleri çağırın.
+Kullanıcı iletişim kutusunun Tamam veya Iptal düğmelerini tıklattığında veya iletişim kutusunun denetim menüsünden Kapat seçeneğini seçerse, denetim uygulamanıza döndürülür. Daha sonra, Kullanıcı girişlerini iletişim kutusuna almak için diğer üye işlevlerini çağırabilirsiniz.
 
-`DoModal` Geçersiz kılınan sınıftan sanal bir işlev `CDialog`.
+`DoModal`bir sanal işlev sınıfından `CDialog`geçersiz kılındı.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFCFiles#25](../../atl-mfc-shared/reference/codesnippet/cpp/cfiledialog-class_3.cpp)]
 
-##  <a name="enableopendropdown"></a>  CFileDialog::EnableOpenDropDown
+##  <a name="enableopendropdown"></a>CFileDialog:: EnableOpenDropDown
 
-Açık veya Kaydet düğmesine iletişim kutusunda aşağı açılan listesini sağlar.
+İletişim kutusunda Aç veya Kaydet düğmesine açılan bir liste sunar.
 
 ```
 HRESULT EnableOpenDropDown(DWORD dwIDCtl);
@@ -633,13 +633,13 @@ HRESULT EnableOpenDropDown(DWORD dwIDCtl);
 ### <a name="parameters"></a>Parametreler
 
 *dwIDCtl*<br/>
-Aşağı açılan liste kimliği.
+Açılan listenin KIMLIĞI.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="endvisualgroup"></a>  CFileDialog::EndVisualGroup
+##  <a name="endvisualgroup"></a>CFileDialog:: EndVisualGroup
 
-İletişim kutusunda visual gruba öğelerin eklenmesi durdurur.
+İletişim kutusundaki görsel gruba öğelerin eklenmesini engeller.
 
 ```
 HRESULT EndVisualGroup();
@@ -647,13 +647,13 @@ HRESULT EndVisualGroup();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılıysa; başarılıysa S_OK döndürür Aksi takdirde bir hata değeri.
+Başarılıysa S_OK döndürür; Aksi halde bir hata değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="getcheckbuttonstate"></a>  CFileDialog::GetCheckButtonState
+##  <a name="getcheckbuttonstate"></a>CFileDialog:: GetCheckButtonState
 
-İletişim kutusundaki onay düğmesine (onay kutusu) geçerli durumunu alır.
+İletişim kutusundaki onay düğmesinin (onay kutusu) geçerli durumunu alır.
 
 ```
 HRESULT GetCheckButtonState(
@@ -664,16 +664,16 @@ HRESULT GetCheckButtonState(
 ### <a name="parameters"></a>Parametreler
 
 *dwIDCtl*<br/>
-Onay kutusu kimliği.
+Onay kutusunun KIMLIĞI.
 
 *bChecked*<br/>
-Onay kutusunu durumu. TRUE, işaretli gösterir; FALSE denetlenmeyen gösterir.
+Onay kutusunun durumu. TRUE, işaretli olduğunu belirtir; FALSE, unchecked değerini gösterir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="getcontrolitemstate"></a>  CFileDialog::GetControlItemState
+##  <a name="getcontrolitemstate"></a>CFileDialog:: Getcontrolıtemstate
 
-İletişim kutusundaki bir kapsayıcı denetimi içinde bir öğe geçerli durumunu alır.
+İletişim kutusunda bulunan bir kapsayıcı denetimindeki bir öğenin geçerli durumunu alır.
 
 ```
 HRESULT GetControlItemState(
@@ -685,19 +685,19 @@ HRESULT GetControlItemState(
 ### <a name="parameters"></a>Parametreler
 
 *dwIDCtl*<br/>
-Kapsayıcı denetiminin kimliği.
+Kapsayıcı denetiminin KIMLIĞI.
 
-*dwIDItem*<br/>
-Öğe kimliği.
+*Dwidıtem*<br/>
+Öğenin KIMLIĞI.
 
 *dwState*<br/>
-Daha fazla değerlerden biri denetimi geçerli durumunu gösteren CDCONTROLSTATE numaralandırmasından alan değişken başvuru.
+CDCONTROLSTATE numaralandırmasından daha fazla değerden birini alan ve denetimin geçerli durumunu gösteren bir değişkene başvuru.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="getcontrolstate"></a>  CFileDialog::GetControlState
+##  <a name="getcontrolstate"></a>CFileDialog:: GetControlState
 
-Geçerli görünürlüğünü alır ve belirli bir denetim durumlarını etkin.
+Belirli bir denetimin geçerli görünürlüğünü ve etkin durumlarını alır.
 
 ```
 HRESULT GetControlState(
@@ -708,16 +708,16 @@ HRESULT GetControlState(
 ### <a name="parameters"></a>Parametreler
 
 *dwIDCtl*<br/>
-Denetimin kimliği.
+Denetimin KIMLIĞI.
 
 *dwState*<br/>
-Bir veya daha fazla değer denetimi geçerli durumunu gösteren CDCONTROLSTATE numaralandırmasından alan değişken başvuru.
+CDCONTROLSTATE numaralandırmasından, denetimin geçerli durumunu gösteren bir veya daha fazla değer alan bir değişkene başvuru.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="geteditboxtext"></a>  CFileDialog::GetEditBoxText
+##  <a name="geteditboxtext"></a>CFileDialog:: GetEditBoxText
 
-Geçerli metin düzenleme kutusu denetimi alır.
+Bir düzenleme kutusu denetimindeki geçerli metni alır.
 
 ```
 HRESULT GetEditBoxText(
@@ -728,16 +728,16 @@ HRESULT GetEditBoxText(
 ### <a name="parameters"></a>Parametreler
 
 *dwIDCtl*<br/>
-Düzenleme kutusu kimliği.
+Düzenleme kutusunun KIMLIĞI.
 
 *strText*<br/>
 Metin değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="getfileext"></a>  CFileDialog::GetFileExt
+##  <a name="getfileext"></a>CFileDialog:: GetFileExt
 
-İletişim kutusuna girilen dosya adı uzantısını almak için bu işlevi çağırın.
+İletişim kutusuna girilen dosya adının uzantısını almak için bu işlevi çağırın.
 
 ```
 CString GetFileExt() const;
@@ -745,17 +745,17 @@ CString GetFileExt() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Dosya adı uzantısı.
+Dosya adının uzantısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Örneğin veri girilen dosya adıdır. TXT, `GetFileExt` "TXT" döndürür.
+Örneğin, girilen dosyanın adı VERI ise. Txt, `GetFileExt` "txt" döndürür.
 
-Varsa `m_ofn.Flags` OFN_ALLOWMULTISELECT bayrağı ayarlanmış ayarlanırsa, bu dize ile dizin yolu dosya grubunun seçili olan ilk dize null ile sonlandırılmış dizeler dizisi içerir kullanıcı tarafından seçilen tüm dosyaların adlarını ardından. Dosya yol adlarını almak için kullanın [GetStartPosition](#getstartposition) ve [GetNextPathName](#getnextpathname) üye işlevleri.
+`m_ofn.Flags` OFN_ALLOWMULTISELECT bayrağı ayarlandıysa, bu dize, ilk dize seçili dosya grubunun dizin yolu ve ardından Kullanıcı tarafından seçilen tüm dosyaların adları ile birlikte null ile sonlandırılmış dizeler dizisi içerir. Dosya yolu adlarını almak için [GetStartPosition](#getstartposition) ve [GetNextPathName](#getnextpathname) üye işlevlerini kullanın.
 
-##  <a name="getfilename"></a>  CFileDialog::GetFileName
+##  <a name="getfilename"></a>CFileDialog:: GetFileName
 
-İletişim kutusuna girilen dosya adını almak için bu işlevi çağırın.
+İletişim kutusuna girilen dosya adının adını almak için bu işlevi çağırın.
 
 ```
 CString GetFileName() const;
@@ -767,13 +767,13 @@ Dosyanın adı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Gerek önek, gerekse de uzantı dosya adını içerir. Örneğin, `GetFileName` döndürür "metin. DAT"C:\FILES\TEXT.DAT dosya için.
+Dosyanın adı hem öneki hem de uzantıyı içerir. Örneğin, `GetFileName` "metin" döndürür. DAT "dosya için C:\FILES\TEXT. dat.
 
-Varsa `m_ofn.Flags` sahip `OFN_ALLOWMULTISELECT` bayrağı ayarlanmış, çağırmalısınız [GetStartPosition](#getstartposition) ve [GetNextPathName](#getnextpathname) dosyasının yol adı alınamadı.
+Bayrak ayarlandıysa, bir dosya yol adı almak için [GetStartPosition](#getstartposition) ve [GetNextPathName](#getnextpathname) ' i çağırmanız gerekir. `m_ofn.Flags` `OFN_ALLOWMULTISELECT`
 
-##  <a name="getfiletitle"></a>  CFileDialog::GetFileTitle
+##  <a name="getfiletitle"></a>CFileDialog:: GetFileTitle
 
-İletişim kutusuna girilen dosya adını almak için bu işlevi çağırın.
+İletişim kutusuna girilen dosyanın başlığını almak için bu işlevi çağırın.
 
 ```
 CString GetFileTitle() const;
@@ -785,17 +785,17 @@ Dosyanın başlığı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Başlık dosyasının yolu veya uzantısı olmadan kendi öneki yalnızca içerir. Örneğin, `GetFileTitle` "Metin" C:\FILES\TEXT.DAT dosyayı döndürür.
+Dosyanın başlığı, yolu veya uzantısı olmadan yalnızca önekini içerir. Örneğin, `GetFileTitle` c:\files\text.exe dosyası için "metin" döndürür.
 
-Varsa `m_ofn.Flags` OFN_ALLOWMULTISELECT bayrağı ayarlanmış ayarlanırsa, bu dize ile dizin yolu dosya grubunun seçili olan ilk dize null ile sonlandırılmış dizeler dizisi içerir kullanıcı tarafından seçilen tüm dosyaların adlarını ardından. Bu nedenle, kullanın [GetStartPosition](#getstartposition) ve [GetNextPathName](#getnextpathname) listedeki sonraki dosya adını almak için üye işlevleri.
+`m_ofn.Flags` OFN_ALLOWMULTISELECT bayrağı ayarlandıysa, bu dize, ilk dize seçili dosya grubunun dizin yolu ve ardından Kullanıcı tarafından seçilen tüm dosyaların adları ile birlikte null ile sonlandırılmış dizeler dizisi içerir. Bu nedenle, listedeki bir sonraki dosya adını almak için [GetStartPosition](#getstartposition) ve [GetNextPathName](#getnextpathname) üye işlevlerini kullanın.
 
 ### <a name="example"></a>Örnek
 
-  Örneğin bakın [CFileDialog::DoModal](#domodal).
+  [CFileDialog::D oModal](#domodal)için örneğe bakın.
 
-##  <a name="getfolderpath"></a>  CFileDialog::GetFolderPath
+##  <a name="getfolderpath"></a>CFileDialog:: GetFolderPath
 
-Şu anda açık bir klasörün veya bir Gezgin stili açık veya farklı kaydet ortak iletişim kutusu için dizin yolunu almak için bu üye işlevini çağırın.
+Bir gezgin stili aç veya ortak olarak Kaydet iletişim kutusu için şu anda açık olan klasör veya dizinin yolunu almak için bu üye işlevi çağırın.
 
 ```
 CString GetFolderPath() const;
@@ -803,17 +803,17 @@ CString GetFolderPath() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-A [CString](../../atl-mfc-shared/reference/cstringt-class.md) açık klasör veya dizin içeren nesne.
+Şu anda açık olan klasörü veya dizini içeren bir [CString](../../atl-mfc-shared/reference/cstringt-class.md) nesnesi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İletişim kutusu ile OFN_EXPLORER stili oluşturulmuş olması gerekir; Aksi takdirde yöntem bir onaylama işlemi başarısız olur.
+İletişim kutusu OFN_EXPLORER stiliyle oluşturulmuş olmalıdır; Aksi halde Yöntem bir onaylama işlemiyle başarısız olur.
 
-Yalnızca iletişim kutusu görüntüleniyor ancak bu yöntem çağırabilirsiniz. İletişim kutusu kapatıldıktan sonra bu işlev artık çalışmayacak ve yöntem bir onaylama işlemi başarısız olur.
+Bu yöntemi yalnızca iletişim kutusu görüntülenirken çağırabilirsiniz. İletişim kutusu kapatıldıktan sonra, bu işlev artık çalışmaz ve yöntem bir onaylama işlemiyle başarısız olur.
 
-##  <a name="getifiledialogcustomize"></a>  CFileDialog::GetIFileDialogCustomize
+##  <a name="getifiledialogcustomize"></a>CFileDialog:: Getifitadialogcustomize
 
-İç COM nesnesine bir işaretçi alır bir verilen [CFileDialog](../../mfc/reference/cfiledialog-class.md).
+Belirli bir [CFileDialog](../../mfc/reference/cfiledialog-class.md)IÇIN iç com nesnesine bir işaretçi alır.
 
 ```
 IFileDialogCustomize* GetIFileDialogCustomize();
@@ -821,23 +821,23 @@ IFileDialogCustomize* GetIFileDialogCustomize();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İç COM nesnesi için işaretçi `CFileDialog`. Bu işaretçi uygun şekilde serbest bırakmak için sizin sorumluluğunuzdur.
+İçin iç COM nesnesi işaretçisi `CFileDialog`. Bu işaretçiyi uygun şekilde serbest bırakmak sizin sorumluluğunuzdadır.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev yalnızca altında Windows Vista veya sonraki sahip bir nesne ile *bVistaStyle* TRUE olarak ayarlayın. Bu işlev kullanırsanız, *bVistaStyle* yanlış, bu yayın modunda NULL döndürür ve hata ayıklama modunda bir onaylama işlemi oluşturur.
+Bu işlevi yalnızca Windows Vista veya sonraki sürümlerde, *bVistaStyle* değeri true olarak ayarlanmış bir nesneyle kullanın. *BVistaStyle* yanlış olduğunda bu işlevi kullanırsanız, yayın modunda null döndürür ve hata ayıklama modunda bir onaylama oluşturur.
 
-Hakkında daha fazla bilgi için `IFileDialogCustomize` arabirim için bkz: [IFileDialogCustomize](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-ifiledialogcustomize).
+`IFileDialogCustomize` Arabirim hakkında daha fazla bilgi için, bkz. [IFileDialogCustomize](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-ifiledialogcustomize).
 
 ### <a name="example"></a>Örnek
 
-Bu örnekte, iç COM nesnesi alır. Bu kod örneğini çalıştırmak için Windows Vista ya da daha sonra derlemeniz gerekir.
+Bu örnek, iç COM nesnesini alır. Bu kod örneğini çalıştırmak için, Windows Vista veya sonraki bir sürümü altında derlemeniz gerekir.
 
 [!code-cpp[NVC_MFC_CFileDialog#4](../../mfc/reference/codesnippet/cpp/cfiledialog-class_4.cpp)]
 
-##  <a name="getifileopendialog"></a>  CFileDialog::GetIFileOpenDialog
+##  <a name="getifileopendialog"></a>CFileDialog:: Getifitaopendialog
 
-İç COM nesnesine bir işaretçi alır bir verilen `CFileDialog`.
+Verilen `CFileDialog`için iç com nesnesine bir işaretçi alır.
 
 ```
 IFileOpenDialog* GetIFileOpenDialog();
@@ -845,23 +845,23 @@ IFileOpenDialog* GetIFileOpenDialog();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İç COM nesnesi için işaretçi `CFileDialog`. Bu işaretçi uygun şekilde serbest bırakmak için sizin sorumluluğunuzdur.
+İçin iç COM nesnesi işaretçisi `CFileDialog`. Bu işaretçiyi uygun şekilde serbest bırakmak sizin sorumluluğunuzdadır.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev yalnızca altında Windows Vista veya sonraki sahip bir nesne ile *bVistaStyle* TRUE olarak ayarlayın. Bu işlev NULL döndürür `CFileDialog` değil bir **açık** iletişim kutusu veya *bVistaStyle* FALSE olarak ayarlanır. Son bu durumda, işlev yalnızca NULL döndürür. yayın modunda - hata ayıklama modunda, bir onaylama işlemi oluşturur.
+Bu işlevi yalnızca Windows Vista veya sonraki sürümlerde, *bVistaStyle* değeri true olarak ayarlanmış bir nesneyle kullanın. Bu işlev **Açık** bir iletişim kutusu `CFileDialog` değilse veya *bVistaStyle* yanlış olarak ayarlandıysa null değerini döndürür. Bu son durumda, işlev yalnızca yayın modunda NULL döndürür-hata ayıklama modunda, bir onaylama işlemi oluşturur.
 
-Hakkında daha fazla bilgi için `IFileOpenDialog` arabirim için bkz: [IFileOpenDialog](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-ifileopendialog).
+`IFileOpenDialog` Arabirim hakkında daha fazla bilgi için, bkz. [IFileOpenDialog](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-ifileopendialog).
 
 ### <a name="example"></a>Örnek
 
-Bu örnekte, iç COM nesnesi alır. Bu kodu çalıştırmak için Windows Vista ya da daha sonra derlemeniz gerekir.
+Bu örnek, iç COM nesnesini alır. Bu kodu çalıştırmak için, Windows Vista veya sonraki bir sürümü altında derlemeniz gerekir.
 
 [!code-cpp[NVC_MFC_CFileDialog#2](../../mfc/reference/codesnippet/cpp/cfiledialog-class_5.cpp)]
 
-##  <a name="getifilesavedialog"></a>  CFileDialog::GetIFileSaveDialog
+##  <a name="getifilesavedialog"></a>CFileDialog:: Getifitasavedialog
 
-İç COM nesnesine bir işaretçi alır bir verilen `CFileDialog`.
+Verilen `CFileDialog`için iç com nesnesine bir işaretçi alır.
 
 ```
 IFileSaveDialog* GetIFileSaveDialog();
@@ -869,23 +869,23 @@ IFileSaveDialog* GetIFileSaveDialog();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İç COM nesnesi için işaretçi `CFileDialog`. Bu işaretçi uygun şekilde serbest bırakmak için sizin sorumluluğunuzdur.
+İçin iç COM nesnesi işaretçisi `CFileDialog`. Bu işaretçiyi uygun şekilde serbest bırakmak sizin sorumluluğunuzdadır.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev yalnızca altında Windows Vista veya sonraki sahip bir nesne ile *bVistaStyle* TRUE olarak ayarlayın. Bu işlev NULL döndürür `CFileDialog` değil bir **Kaydet** iletişim kutusu veya *bVistaStyle* FALSE olarak ayarlanır. Son bu durumda, işlev yalnızca NULL döndürür. yayın modunda - hata ayıklama modunda, bir onaylama işlemi oluşturur.
+Bu işlevi yalnızca Windows Vista veya sonraki sürümlerde, *bVistaStyle* değeri true olarak ayarlanmış bir nesneyle kullanın. Bu işlev, `CFileDialog` bir **Kaydet** iletişim kutusu değilse veya *bVistaStyle* yanlış olarak ayarlandıysa null döndürür. Bu son durumda, işlev yalnızca yayın modunda NULL döndürür-hata ayıklama modunda, bir onaylama işlemi oluşturur.
 
-Hakkında daha fazla bilgi için `IFileSaveDialog` arabirim için bkz: [IFileSaveDialog](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-ifilesavedialog).
+`IFileSaveDialog` Arabirim hakkında daha fazla bilgi için, bkz. [IFileSaveDialog](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-ifilesavedialog).
 
 ### <a name="example"></a>Örnek
 
-Bu örnekte, iç COM nesnesi alır. Bu kod örneğini çalıştırmak için Windows Vista ya da daha sonra derlemeniz gerekir.
+Bu örnek, iç COM nesnesini alır. Bu kod örneğini çalıştırmak için, Windows Vista veya sonraki bir sürümü altında derlemeniz gerekir.
 
 [!code-cpp[NVC_MFC_CFileDialog#3](../../mfc/reference/codesnippet/cpp/cfiledialog-class_6.cpp)]
 
-##  <a name="getnextpathname"></a>  CFileDialog::GetNextPathName
+##  <a name="getnextpathname"></a>CFileDialog:: GetNextPathName
 
-İletişim kutusunda seçili grubu sonraki dosya adını almak için bu işlevi çağırın.
+İletişim kutusunda seçilen gruptaki bir sonraki dosya adını almak için bu işlevi çağırın.
 
 ```
 CString GetNextPathName(POSITION& pos) const;
@@ -893,8 +893,8 @@ CString GetNextPathName(POSITION& pos) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*POS*<br/>
-Bir önceki tarafından döndürülen bir konum değeri başvurusu `GetNextPathName` veya `GetStartPosition` işlev çağrısı. Listesinin sonuna ulaşıldı yoksa NULL.
+*'un*<br/>
+Önceki `GetNextPathName` veya`GetStartPosition` işlev çağrısı tarafından döndürülen bir konum değerine başvuru. Listenin sonuna ulaşılırsa NULL.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -902,13 +902,13 @@ Dosyanın tam yolu.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Dosya yolu, dosyanın başlığı artı tüm dizin yolu içerir. Örneğin, `GetNextPathName` "C:\FILES\TEXT. döndürür DAT"C:\FILES\TEXT.DAT dosya için. Kullanabileceğiniz `GetNextPathName` çağrısıyla ilk konumunu kurarsanız ileriye doğru yineleme döngüsünde `GetStartPosition`.
+Dosya adının yolu dosyanın başlığını ve tüm dizin yolunu içerir. Örneğin, `GetNextPathName` "c:\files\text" döndürür. DAT "dosya için C:\FILES\TEXT. dat. `GetNextPathName` Bir`GetStartPosition`çağrısıyla ilk konumu oluşturursanız bir ileri yineleme döngüsünde kullanabilirsiniz.
 
-Seçimi tek bir dosya içeriyorsa, bu dosya adı döndürülür.
+Seçim yalnızca bir dosya içeriyorsa, bu dosya adı döndürülür.
 
-##  <a name="getofn"></a>  CFileDialog::GetOFN
+##  <a name="getofn"></a>CFileDialog:: GetOFN
 
-İlişkili alır `OPENFILENAME` yapısı.
+İlişkili `OPENFILENAME` yapıyı alır.
 
 ```
 const OPENFILENAME& GetOFN() const;
@@ -918,15 +918,15 @@ OPENFILENAME& GetOFN();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir [LPSTRFİLE](/windows/desktop/api/commdlg/ns-commdlg-tagofna) yapısı.
+[OpenFileName](/windows/win32/api/commdlg/ns-commdlg-openfilenamew) yapısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Görünümünü başlatmak için bu işlevi ikinci sürümünü kullanan bir **Dosya Aç** veya **dosyayı farklı Kaydet** iletişim kutusunda, oluşturduğu sonra ancak ile görüntülenmeden önce `DoModal` üye işlevi. Örneğin, ayarlayabilirsiniz `lpstrTitle` üyesi `m_ofn` için iletişim kutusunu istediğiniz resim yazısı.
+Bu işlevin ikinci sürümünü kullanarak, oluşturulduktan sonra, ancak `DoModal` üye işleviyle görüntülenmeden önce **Dosya Aç** veya **dosya farklı kaydet** iletişim kutusunun görünümünü başlatın. Örneğin, öğesinin `lpstrTitle` `m_ofn` üyesini iletişim kutusunun sahip olmasını istediğiniz açıklamalı alt yazı olarak ayarlayabilirsiniz.
 
-##  <a name="getpathname"></a>  CFileDialog::GetPathName
+##  <a name="getpathname"></a>CFileDialog:: GetPathName
 
-İletişim kutusuna girilen dosyasının tam yolunu almak için bu işlevi çağırın.
+İletişim kutusuna girilen dosyanın tam yolunu almak için bu işlevi çağırın.
 
 ```
 CString GetPathName() const;
@@ -938,17 +938,17 @@ Dosyanın tam yolu.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Dosya yolu, dosyanın başlığı artı tüm dizin yolu içerir. Örneğin, `GetPathName` "C:\FILES\TEXT. döndürür DAT"C:\FILES\TEXT.DAT dosya için.
+Dosya adının yolu dosyanın başlığını ve tüm dizin yolunu içerir. Örneğin, `GetPathName` "c:\files\text" döndürür. DAT "dosya için C:\FILES\TEXT. dat.
 
-Varsa `m_ofn.Flags` OFN_ALLOWMULTISELECT bayrağına sahip ayarlanırsa, bu dize dizisi içeren dizelerle dizinyolu dosya grubunun seçili olan ilk dize null teminated kullanıcı tarafından seçilen tüm dosyaların adlarını ardından. Bu nedenle, kullanın [GetStartPosition](#getstartposition) ve [GetNextPathName](#getnextpathname) listedeki sonraki dosya adını almak için üye işlevleri.
+`m_ofn.Flags` OFN_ALLOWMULTISELECT bayrağı ayarlandıysa, bu dize, ilk dize seçili dosya grubunun dizin yolu olan ve ardından Kullanıcı tarafından seçilen tüm dosyaların adları olan bir null-teminated dizeleri dizisi içerir. Bu nedenle, listedeki bir sonraki dosya adını almak için [GetStartPosition](#getstartposition) ve [GetNextPathName](#getnextpathname) üye işlevlerini kullanın.
 
 ### <a name="example"></a>Örnek
 
-  Örneğin bakın [CFileDialog::DoModal](#domodal).
+  [CFileDialog::D oModal](#domodal)için örneğe bakın.
 
-##  <a name="getreadonlypref"></a>  CFileDialog::GetReadOnlyPref
+##  <a name="getreadonlypref"></a>CFileDialog:: GetReadOnlyPref
 
-Windows standart dosya Aç ve dosyayı farklı Kaydet iletişim kutularında salt okunur onay kutusunun seçili olup olmadığını belirlemek için bu işlevi çağırın.
+Windows standart dosya aç ve dosya farklı Kaydet iletişim kutularında salt oku onay kutusunun işaretli olup olmadığını öğrenmek için bu işlevi çağırın.
 
 ```
 BOOL GetReadOnlyPref() const;
@@ -956,18 +956,18 @@ BOOL GetReadOnlyPref() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Sıfır olmayan iletişim kutusunda salt okunur onay kutusu seçiliyse, Aksi durumda 0.
+İletişim kutusundaki salt oku onay kutusu seçiliyse sıfır olmayan bir değer varsa, Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-OFN_HIDEREADONLY stili ayarlayarak salt okunur onay kutusunu gizleyebilirsiniz `CFileDialog` Oluşturucusu.
+`CFileDialog` Oluşturucuda OFN_HIDEREADONLY stilini ayarlayarak salt okuma onay kutusunu gizleyebilirsiniz.
 
 > [!NOTE]
-> Windows Vista veya sonraki bir stil `CFileDialog` nesneler bu işlevi desteklemiyor. Bu işlev, bir Windows Vista veya sonraki bir stil kullanmayı denemeden `CFileDialog` oluşturmaz [CNotSupportedException](../../mfc/reference/cnotsupportedexception-class.md).
+> Windows Vista veya üzeri stil `CFileDialog` nesneleri bu işlevi desteklemez. Bu işlevi Windows Vista veya sonraki bir stilde `CFileDialog` kullanma girişimi [CNotSupportedException](../../mfc/reference/cnotsupportedexception-class.md)oluşturacak.
 
-##  <a name="getresult"></a>  CFileDialog::GetResult
+##  <a name="getresult"></a>CFileDialog:: GetResult
 
-Kullanıcı iletişim kutusunda yapılan seçim alır.
+Kullanıcının iletişim kutusunda yaptığı seçimi alır.
 
 ```
 IShellItem* GetResult() throw();
@@ -975,13 +975,13 @@ IShellItem* GetResult() throw();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Kullanıcının seçimi temsil eden bir IShellItem işaretçisi.
+Kullanıcının seçimini temsil eden bir ıhellıtıtem işaretçisi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="getresults"></a>  CFileDialog::GetResults
+##  <a name="getresults"></a>CFileDialog:: GetResults
 
-Kullanıcının birden çok seçime izin veren bir iletişim kutusu seçenekleri alır.
+Çoklu seçime izin veren bir iletişim kutusunda kullanıcının seçimlerini alır.
 
 ```
 IShellItemArray* GetResults() throw();
@@ -989,13 +989,13 @@ IShellItemArray* GetResults() throw();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İletişim kutusunda seçilen öğeleri erişilebilen bir IShellItemArray işaretçisi.
+İletişim kutusunda seçilen öğelerin erişilebileceği bir ıshellarray işaretçisi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="getselectedcontrolitem"></a>  CFileDialog::GetSelectedControlItem
+##  <a name="getselectedcontrolitem"></a>CFileDialog:: Getselectedcontrolıdıtem
 
-Belirtilen kapsayıcı denetimi iletişim kutusunda belirli bir öğe alır.
+İletişim kutusunda belirtilen kapsayıcı denetiminden belirli bir öğeyi alır.
 
 ```
 HRESULT GetSelectedControlItem(
@@ -1006,16 +1006,16 @@ HRESULT GetSelectedControlItem(
 ### <a name="parameters"></a>Parametreler
 
 *dwIDCtl*<br/>
-Kapsayıcı denetiminin kimliği.
+Kapsayıcı denetiminin KIMLIĞI.
 
-*dwIDItem*<br/>
-Kullanıcı denetiminde seçilen öğenin kimliği.
+*Dwidıtem*<br/>
+Kullanıcının denetimde seçtiği öğenin KIMLIĞI.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="getstartposition"></a>  CFileDialog::GetStartPosition
+##  <a name="getstartposition"></a>CFileDialog:: GetStartPosition
 
-İlk dosya yol konumu listesinde, almak için bu üye işlevini çağırmaya `m_ofn.Flags` ayarlamak OFN_ALLOWMULTISELECT bayrağı vardır.
+OFN_ALLOWMULTISELECT bayrağı ayarlandıysa, `m_ofn.Flags` listedeki ilk dosya yol adının konumunu almak için bu üye işlevi çağırın.
 
 ```
 POSITION GetStartPosition() const;
@@ -1023,11 +1023,11 @@ POSITION GetStartPosition() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yineleme için kullanılabilecek bir konum değeri; Liste boş ise NULL değerini DÖNDÜRÜR.
+Yineleme için kullanılabilen bir konum değeri; Liste boşsa NULL.
 
-##  <a name="hidecontrol"></a>  CFileDialog::HideControl
+##  <a name="hidecontrol"></a>CFileDialog:: HideControl
 
-Gezgin stili açık veya farklı kaydet ortak iletişim kutusunda belirtilen denetimi gizlemek için bu üye işlevini çağırın.
+Belirtilen denetimi bir gezgin stili aç veya ortak olarak Kaydet iletişim kutusunda gizlemek için bu üye işlevi çağırın.
 
 ```
 void HideControl(int nID);
@@ -1035,16 +1035,16 @@ void HideControl(int nID);
 
 ### <a name="parameters"></a>Parametreler
 
-*nID*<br/>
-Gizlemek için denetimin kimliği.
+*NID*<br/>
+Gizlenecek denetimin KIMLIĞI.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İletişim kutusu ile OFN_EXPLORER stili oluşturulmuş olması gerekir; Aksi takdirde işlev bir onaylama işlemi başarısız olur.
+İletişim kutusu OFN_EXPLORER stiliyle oluşturulmuş olmalıdır; Aksi takdirde, işlev bir onaylama işlemiyle başarısız olur.
 
-##  <a name="ispickfoldersmode"></a>  CFileDialog::IsPickFoldersMode
+##  <a name="ispickfoldersmode"></a>CFileDialog:: IsPickFoldersMode
 
-Geçerli iletişim kutusundaki klasör Seçici modunda olup olmadığını belirler.
+Geçerli iletişim kutusunun klasör seçici modunda olup olmadığını belirler.
 
 ```
 BOOL IsPickFoldersMode() const;
@@ -1052,23 +1052,23 @@ BOOL IsPickFoldersMode() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Klasör Seçici modunda iletişim ise TRUE; Aksi durumda FALSE.
+İletişim kutusu Klasör Seçici modundaysa doğru; Aksi halde yanlış.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="m_ofn"></a>  CFileDialog::m_ofn
+##  <a name="m_ofn"></a>CFileDialog:: m_ofn
 
-`m_ofn` bir yapı türü `OPENFILENAME`. Bu yapı verilerinde geçerli durumunu temsil eden `CFileDialog`.
+`m_ofn`, türünde `OPENFILENAME`bir yapıdır. Bu yapıdaki veriler öğesinin `CFileDialog`geçerli durumunu temsil eder.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Görünümünü başlatmak için bu yapıyı kullanan bir **Dosya Aç** veya **dosyayı farklı Kaydet** iletişim kutusunda, oluşturduktan sonra ancak onunla görüntülemeden önce [DoModal](#domodal) yöntemi. Örneğin, ayarlayabilirsiniz *lpstrTitle* üyesi `m_ofn` için iletişim kutusunu istediğiniz resim yazısı.
+Bu yapıyı, bir **dosya açma** veya **dosya farklı kaydet** iletişim kutusunun görünümünü oluşturduktan sonra, ancak onu [DoModal](#domodal) yöntemiyle görüntülemeden önce başlatmak için kullanın. Örneğin, *lpstrTitle* üyesini `m_ofn` , iletişim kutusunun olmasını istediğiniz resim yazısına ayarlayabilirsiniz.
 
-Windows Vista veya sonraki stilini [CFileDialog](../../mfc/reference/cfiledialog-class.md), `m_ofn` iletişim kutusunun durumu her zaman eşleştirilecek desteklenmeyebilir. Önceki Windows sürümlerinde iletişim kutusu ile eşitlenir. Bkz: [CFileDialog::ApplyOFNToShellDialog](#applyofntoshelldialog) ve [CFileDialog::UpdateOFNFromShellDialog](#updateofnfromshelldialog) eşitleme hakkında daha fazla bilgi için `m_ofn` yapısı ve `CFileDialog` durumu altında Windows Vista veya üzeri.
+Windows Vista veya sonraki bir [CFileDialog](../../mfc/reference/cfiledialog-class.md)stili ile, `m_ofn` iletişim kutusunun durumuyla her zaman eşleşmesi garanti edilmez. Windows 'un önceki sürümlerindeki iletişim kutusuyla eşitlenir. `m_ofn` Yapıyı ve`CFileDialog` durumu Windows Vista veya üzeri kapsamında eşitleme hakkında daha fazla bilgi için bkz. [CFileDialog:: ApplyOFNToShellDialog](#applyofntoshelldialog) ve [CFileDialog:: UpdateOFNFromShellDialog](#updateofnfromshelldialog) .
 
-Windows Vista veya sonraki stil dosya iletişim desteklemez belirli üyeleri ve bayraklarını `CFileDialog`. Sonuç olarak, bunlar hiçbir etkisi olmaz.
+Windows Vista veya üzeri stil dosya iletişimleri, `CFileDialog`belirli üyelerini ve bayraklarını desteklemez. Sonuç olarak, bunlar hiçbir etkiye sahip olmaz.
 
-Windows Vista veya sonraki desteklenen üyelerin listesi verilmiştir:
+Aşağıda Windows Vista veya sonraki sürümler tarafından desteklenmeyen üyelerin listesi verilmiştir:
 
 - `lpstrCustomFilter`
 
@@ -1080,7 +1080,7 @@ Windows Vista veya sonraki desteklenen üyelerin listesi verilmiştir:
 
 - `lpTemplateName`
 
-Aşağıdaki bayraklar desteklenmez ve Windows Vista veya sonraki stilini kullandığınızda, bu nedenle hiçbir etkisi yok `CFileDialog`:
+Aşağıdaki bayraklar desteklenmez ve bu nedenle Windows Vista veya sonraki bir `CFileDialog`sürümü stilini kullandığınızda etkisizdir:
 
 - OFN_ENABLEHOOK
 
@@ -1096,21 +1096,21 @@ Aşağıdaki bayraklar desteklenmez ve Windows Vista veya sonraki stilini kullan
 
 - OFN_HIDEREADONLY
 
-- OFN_LONGNAMES - her zaman etkili bir şekilde üzerinde Windows Vista veya üzeri
+- OFN_LONGNAMES-Windows Vista veya sonraki sürümlerde etkin her zaman açık
 
-- OFN_NOLONGNAMES - her zaman etkili bir şekilde kapalı Windows Vista veya üzeri
+- OFN_NOLONGNAMES-Windows Vista veya sonraki sürümlerde etkin olarak her zaman kapat
 
-- OFN_NONETWORKBUTTON - her zaman etkili bir şekilde üzerinde Windows Vista veya üzeri
+- OFN_NONETWORKBUTTON-Windows Vista veya sonraki sürümlerde etkin her zaman açık
 
 - OFN_READONLY
 
 - OFN_SHOWHELP
 
-Bu yapı hakkında daha fazla bilgi için bkz: [LPSTRFİLE](/windows/desktop/api/commdlg/ns-commdlg-tagofna) Windows SDK'sındaki yapısı.
+Bu yapı hakkında daha fazla bilgi için Windows SDK [OpenFileName](/windows/win32/api/commdlg/ns-commdlg-openfilenamew) yapısına bakın.
 
-##  <a name="makeprominent"></a>  CFileDialog::MakeProminent
+##  <a name="makeprominent"></a>CFileDialog:: Makebelirgin
 
-Basamak iletişim kutusunda bir denetimi diğer denetimlere karşılaştırıldığında, böylece öne çıkar.
+İletişim kutusuna, diğer denetimlerle karşılaştırıldığında bir denetim koyar.
 
 ```
 HRESULT MakeProminent(DWORD dwIDCtl);
@@ -1119,11 +1119,11 @@ HRESULT MakeProminent(DWORD dwIDCtl);
 ### <a name="parameters"></a>Parametreler
 
 *dwIDCtl*<br/>
-Denetimin kimliği.
+Denetimin KIMLIĞI.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="onbuttonclicked"></a>  CFileDialog::OnButtonClicked
+##  <a name="onbuttonclicked"></a>CFileDialog:: OnButtonClicked
 
 Düğmeye tıklandığında çağırılır.
 
@@ -1134,13 +1134,13 @@ virtual void OnButtonClicked(DWORD dwIDCtl);
 ### <a name="parameters"></a>Parametreler
 
 *dwIDCtl*<br/>
-Düğme kimliği.
+Düğmenin KIMLIĞI.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="oncheckbuttontoggled"></a>  CFileDialog::OnCheckButtonToggled
+##  <a name="oncheckbuttontoggled"></a>CFileDialog:: Oncheckbuttondeğiştirildi
 
-Onay kutusunu işaretli veya işaretsiz olduğunda çağrılır.
+Onay kutusu işaretli veya işaretlenmemiş olduğunda çağırılır.
 
 ```
 virtual void OnCheckButtonToggled(
@@ -1151,16 +1151,16 @@ virtual void OnCheckButtonToggled(
 ### <a name="parameters"></a>Parametreler
 
 *dwIDCtl*<br/>
-Onay kutusu kimliği.
+Onay kutusunun KIMLIĞI.
 
 *bChecked*<br/>
-İşaretli veya işaretsiz.
+İşaretli veya işaretlenmemiş.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="oncontrolactivating"></a>  CFileDialog::OnControlActivating
+##  <a name="oncontrolactivating"></a>CFileDialog:: OnControlActivating
 
-Denetimi etkinleştirildiğinde çağırılır.
+Denetim etkinleştirildiğinde çağırılır.
 
 ```
 virtual void OnControlActivating(DWORD dwIDCtl);
@@ -1169,13 +1169,13 @@ virtual void OnControlActivating(DWORD dwIDCtl);
 ### <a name="parameters"></a>Parametreler
 
 *dwIDCtl*<br/>
-Denetimin kimliği.
+Denetimin KIMLIĞI.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="onfilenamechange"></a>  CFileDialog::OnFileNameChange
+##  <a name="onfilenamechange"></a>CFileDialog:: Ondosyaadıdeğişikliği
 
-Wm_notıfy CDN_SELCHANGE iletisini işlemek istiyorsanız bu yöntemi yok sayın.
+WM_NOTIFY CDN_SELCHANGE iletisini işlemek istiyorsanız bu yöntemi geçersiz kılın.
 
 ```
 virtual void OnFileNameChange();
@@ -1183,13 +1183,13 @@ virtual void OnFileNameChange();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kullanıcı dosya listesinde yeni bir dosya veya klasör seçtiğinde sistem CDN_SELCHANGE iletisini gönderir **açık** veya **Kaydet** iletişim kutusu. Bu iletiye yanıt olarak herhangi bir eylem gerçekleştirmek istiyorsanız bu yöntemi yok sayın.
+Kullanıcı **Aç** veya **farklı kaydet** iletişim kutusunun dosya listesinde yeni bir dosya veya klasör seçtiğinde, sistem cdn_selchange iletisini gönderir. Bu iletiye yanıt olarak herhangi bir eylem gerçekleştirmek istiyorsanız bu yöntemi geçersiz kılın.
 
-İletişim kutusu açıkken OFN_EXPLORER bayrağı ile oluşturulmuşsa sistem bu iletiyi gönderir. Bildirimi hakkında daha fazla bilgi için bkz. [CDN_SELCHANGE](/windows/desktop/dlgbox/cdn-selchange). OFN_EXPLORER bayrağı hakkında daha fazla bilgi için bkz. [LPSTRFİLE](/windows/desktop/api/commdlg/ns-commdlg-tagofna) yapısı ve [açık ve iletişim kutuları olarak Kaydet](/windows/desktop/dlgbox/open-and-save-as-dialog-boxes).
+Sistem bu iletiyi yalnızca, iletişim kutusu OFN_EXPLORER bayrağı açık olarak oluşturulduysa gönderir. Bildirim hakkında daha fazla bilgi için bkz. [cdn_selchange](/windows/desktop/dlgbox/cdn-selchange). OFN_EXPLORER bayrağı hakkında daha fazla bilgi için [OpenFileName](/windows/win32/api/commdlg/ns-commdlg-openfilenamew) yapısına ve [Aç ve farklı Kaydet iletişim kutularına](/windows/desktop/dlgbox/open-and-save-as-dialog-boxes)bakın.
 
-##  <a name="onfilenameok"></a>  CFileDialog::OnFileNameOK
+##  <a name="onfilenameok"></a>CFileDialog:: OnFileNameOK
 
-Bu işlev, yalnızca bir genel dosya iletişim kutusuna girilen dosya adları, özel doğrulama sağlamak istiyorsanız geçersiz kılar.
+Yalnızca ortak bir dosya iletişim kutusuna girilen dosya adlarının özel doğrulanmasını sağlamak istiyorsanız bu işlevi geçersiz kılın.
 
 ```
 virtual BOOL OnFileNameOK();
@@ -1197,17 +1197,17 @@ virtual BOOL OnFileNameOK();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Dosya adı geçerli bir dosya adı değilse, 1; Aksi durumda 0.
+dosya adı geçerli bir dosya adı değilse 1; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev, uygulamaya özgü herhangi bir nedenden dolayı bir dosya adı Reddet olanak tanır. Normalde, çünkü framework varsayılan dosya adlarını doğrulanmasını sağlar ve geçersiz dosya adı girildiğinde bir ileti kutusu görüntüler. Bu işlevi kullanın gerekmez.
+Bu işlev, uygulamaya özgü herhangi bir nedenden dolayı bir dosya adını reddetmeye olanak sağlar. Normalde bu işlevi kullanmanız gerekmez, çünkü Framework dosya adlarının varsayılan doğrulamasını sağlar ve geçersiz bir dosya adı girilirse bir ileti kutusu görüntüler.
 
-1 döndürülürse, iletişim kutusunda kullanıcı başka bir dosya adı girmeniz görüntülenmeye devam eder. Dönüş 0 ise iletişim yordamı iletişim atar. Diğer sıfır olmayan değerler şu anda ayrılmıştır ve kullanılmamalıdır döndürür.
+1 döndürülürse, kullanıcının başka bir dosya adı girmesi için iletişim kutusu görüntülenmeyecektir. Dönüş 0 ise iletişim kutusu yordamı iletişim kutusunu kapatır. Sıfır olmayan diğer dönüş değerleri şu anda ayrılmıştır ve kullanılmamalıdır.
 
-##  <a name="onfolderchange"></a>  CFileDialog::OnFolderChange
+##  <a name="onfolderchange"></a>CFileDialog:: OnFolderChange
 
-Bu işlev WM_NOTIFYCDN_FOLDERCHANGE iletisini işlemek için geçersiz kılın.
+WM_NOTIFYCDN_FOLDERCHANGE iletisini işlemek için bu işlevi geçersiz kılın.
 
 ```
 virtual void OnFolderChange();
@@ -1215,13 +1215,13 @@ virtual void OnFolderChange();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yeni bir klasör içinde açık veya Farklı Kaydet iletişim kutusu açıldığında bildirim iletisi gönderilir.
+Bildirim iletisi, aç veya farklı Kaydet iletişim kutusunda yeni bir klasör açıldığında gönderilir.
 
-İletişim kutusu OFN_EXPLORER stiliyle oluşturulduysa bildirim gönderilir. Bildirimi hakkında daha fazla bilgi için bkz. [CDN_FOLDERCHANGE](/windows/desktop/dlgbox/cdn-folderchange). OFN_EXPLORER stili hakkında daha fazla bilgi için bkz. [LPSTRFİLE](/windows/desktop/api/commdlg/ns-commdlg-tagofna) yapısı ve [açık ve iletişim kutuları olarak Kaydet](/windows/desktop/dlgbox/open-and-save-as-dialog-boxes).
+Bildirim yalnızca, iletişim kutusu OFN_EXPLORER stiliyle oluşturulduysa gönderilir. Bildirim hakkında daha fazla bilgi için bkz. [CDN_FOLDERCHANGE](/windows/desktop/dlgbox/cdn-folderchange). OFN_EXPLORER stili hakkında daha fazla bilgi için [OpenFileName](/windows/win32/api/commdlg/ns-commdlg-openfilenamew) yapısına ve [Aç ve farklı Kaydet iletişim kutularına](/windows/desktop/dlgbox/open-and-save-as-dialog-boxes)bakın.
 
-##  <a name="oninitdone"></a>  CFileDialog::OnInitDone
+##  <a name="oninitdone"></a>CFileDialog:: Onınitdone
 
-Wm_notıfy cdn_ınıtdone iletisini işlemek için bu işlevi geçersiz kılar.
+WM_NOTIFY CDN_INITDONE iletisini işlemek için bu işlevi geçersiz kılın.
 
 ```
 virtual void OnInitDone();
@@ -1229,16 +1229,16 @@ virtual void OnInitDone();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Sistem denetimleri düzenleme bittiğinde, sistem bu bildirim iletisi gönderen **açık** veya **Kaydet** alt iletişim kutusunun denetimleri için yer açmak için iletişim kutusu.
+Sistem, alt iletişim kutusunun denetimleri için yer açmak üzere **Aç** veya **farklı kaydet** iletişim kutusundaki denetimleri düzenleme işlemini tamamladığında sistem bu bildirim iletisini gönderir.
 
-İletişim kutusu OFN_EXPLORER stiliyle oluşturulmuşsa sistem bu gönderir. Bildirimi hakkında daha fazla bilgi için bkz. [cdn_ınıtdone](/windows/desktop/dlgbox/cdn-initdone). OFN_EXPLORER stili hakkında daha fazla bilgi için bkz. [LPSTRFİLE](/windows/desktop/api/commdlg/ns-commdlg-tagofna) yapısı ve [açık ve iletişim kutuları olarak Kaydet](/windows/desktop/dlgbox/open-and-save-as-dialog-boxes).
+Sistem bunu yalnızca iletişim kutusu OFN_EXPLORER stiliyle oluşturulduysa gönderir. Bildirim hakkında daha fazla bilgi için bkz. [CDN_INITDONE](/windows/desktop/dlgbox/cdn-initdone). OFN_EXPLORER stili hakkında daha fazla bilgi için [OpenFileName](/windows/win32/api/commdlg/ns-commdlg-openfilenamew) yapısına ve [Aç ve farklı Kaydet iletişim kutularına](/windows/desktop/dlgbox/open-and-save-as-dialog-boxes)bakın.
 
 > [!NOTE]
-> Bu işlev, Windows Vista veya sonraki stil dosya iletişim desteklemez. Bu işlev bir Windows Vista veya sonraki stili dosya iletişim kutusu kullanılmaya çalışılıyor oluşturur [CNotSupportedException](../../mfc/reference/cnotsupportedexception-class.md).
+> Windows Vista veya üzeri stil dosya iletişimleri bu işlevi desteklemez. Bu işlevi Windows Vista veya sonraki bir stil dosyası iletişim kutusunda kullanma girişimi [CNotSupportedException](../../mfc/reference/cnotsupportedexception-class.md)oluşturacak.
 
-##  <a name="onitemselected"></a>  CFileDialog::OnItemSelected
+##  <a name="onitemselected"></a>CFileDialog:: Onıtemselected
 
-Kapsayıcı öğe seçildiğinde çağrılır.
+Kapsayıcı öğesi seçildiğinde çağırılır.
 
 ```
 virtual void OnItemSelected(
@@ -1249,16 +1249,16 @@ virtual void OnItemSelected(
 ### <a name="parameters"></a>Parametreler
 
 *dwIDCtl*<br/>
-Kapsayıcı denetiminin kimliği.
+Kapsayıcı denetiminin KIMLIĞI.
 
-*dwIDItem*<br/>
-Öğe kimliği.
+*Dwidıtem*<br/>
+Öğenin KIMLIĞI.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="onlbselchangednotify"></a>  CFileDialog::OnLBSelChangedNotify
+##  <a name="onlbselchangednotify"></a>CFileDialog:: Onlbselchangednotıfy
 
-Geçerli seçim liste kutusu, değiştirilmek üzere olduğunda bu işlev çağrılır.
+Bu işlev, bir liste kutusundaki geçerli seçim her değişiklik için olduğunda çağrılır.
 
 ```
 virtual void OnLBSelChangedNotify(
@@ -1269,30 +1269,30 @@ virtual void OnLBSelChangedNotify(
 
 ### <a name="parameters"></a>Parametreler
 
-*nIDBox*<br/>
-Liste kutusu ya da seçimi oluştuğu birleşik giriş kutusu kimliği.
+*Nıdbox*<br/>
+Seçimin gerçekleştiği liste kutusu veya Birleşik giriş kutusunun KIMLIĞI.
 
-*iCurSel*<br/>
-Geçerli seçimi dizini.
+*ıcursel*<br/>
+Geçerli seçimin dizini.
 
 *nCode*<br/>
-Denetim bildirimi kod. Bu parametre aşağıdaki değerlerden birine sahip olmalıdır:
+Denetim bildirim kodu. Bu parametre aşağıdaki değerlerden birine sahip olmalıdır:
 
-- CD_LBSELCHANGE belirtir *iCurSel* tek seçim listesinde seçili öğe.
+- CD_LBSELCHANGE, tek seçimli liste kutusunda *ıursel* 'in seçili öğe olduğunu belirtir.
 
-- CD_LBSELSUB belirtir *iCurSel* artık multiselection liste kutusunda seçilir.
+- CD_LBSELSUB çok seçimli liste kutusunda *ısesel* 'in artık seçili olmadığını belirtir.
 
-- CD_LBSELADD belirtir *iCurSel* multiselection liste kutusunda seçilir.
+- CD_LBSELADD birden çok seçim listesi kutusunda *ıcursel* 'in seçili olduğunu belirtir.
 
-- CD_LBSELNOITEMS multiselection liste kutusunda herhangi bir seçim var olan belirtir.
+- CD_LBSELNOITEMS çok seçimli liste kutusunda hiçbir seçim bulunmadığını belirtir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Liste kutusunda seçim değişiklikleri özel işleme sağlamak için bu işlevi geçersiz kılar. Örneğin, erişim haklarını görüntülemek için bu işlevi kullanın veya tarih-son değiştirilme her dosyanın kullanıcının seçtiği.
+Liste kutusunda seçim değişikliklerinin özel işlemesini sağlamak için bu işlevi geçersiz kılın. Örneğin, kullanıcının seçtiği her bir dosyanın erişim haklarını veya son değiştirilme tarihini göstermek için bu işlevi kullanabilirsiniz.
 
-##  <a name="onshareviolation"></a>  CFileDialog::OnShareViolation
+##  <a name="onshareviolation"></a>CFileDialog:: onshareihla
 
-Paylaşım ihlali özel işleme sağlamak için bu işlevi geçersiz kılar.
+Paylaşma ihlallerinin özel işlemesini sağlamak için bu işlevi geçersiz kılın.
 
 ```
 virtual UINT OnShareViolation(LPCTSTR lpszPathName);
@@ -1301,27 +1301,27 @@ virtual UINT OnShareViolation(LPCTSTR lpszPathName);
 ### <a name="parameters"></a>Parametreler
 
 *lpszPathName*<br/>
-Paylaşım ihlali gerçekleştiği dosyasının yolu.
+Paylaşımın ihlalin gerçekleştiği dosyanın yolu.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 Aşağıdaki değerlerden biri:
 
-- İletişim kutusundan OFN_SHAREFALLTHROUGH dosya adı döndürülür.
+- OFN_SHAREFALLTHROUGH filename iletişim kutusundan döndürülür.
 
-- Daha fazla eylem yapılması gereken OFN_SHARENOWARN yok.
+- OFN_SHARENOWARN başka bir eylem yapılması gerekmez.
 
-- OFN_SHAREWARN kullanıcı bu hata için standart uyarı iletisini alır.
+- OFN_SHAREWARN bu hata için Kullanıcı standart uyarı iletisini alır.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Normalde, çünkü framework paylaşımı ihlalleri denetimi varsayılan sağlar ve bir paylaşım ihlali meydana gelirse bir ileti kutusu görüntüler. Bu işlevi kullanın gerekmez.
+Normalde bu işlevi kullanmanız gerekmez, çünkü Framework, paylaşma ihlallerinin varsayılan denetimini sağlar ve bir paylaşma ihlali oluşursa bir ileti kutusu görüntüler.
 
-Paylaşım ihlali denetimini devre dışı bırakmak istiyorsanız, ' % s'bayrağı OFN_SHAREAWARE birleştirmek için bit düzeyinde OR işleci kullanın ile `m_ofn.Flags`.
+Paylaşma ihlali denetimini devre dışı bırakmak istiyorsanız, OFN_SHAREAWARE bayrağını ile `m_ofn.Flags`birleştirmek IÇIN bit düzeyinde OR işlecini kullanın.
 
-##  <a name="ontypechange"></a>  CFileDialog::OnTypeChange
+##  <a name="ontypechange"></a>CFileDialog:: OnTypeChange
 
-Bu işlev WM_NOTIFYCDN_TYPECHANGE iletisini işlemek için geçersiz kılın.
+WM_NOTIFYCDN_TYPECHANGE iletisini işlemek için bu işlevi geçersiz kılın.
 
 ```
 virtual void OnTypeChange();
@@ -1329,13 +1329,13 @@ virtual void OnTypeChange();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kullanıcı, açık dosya türlerinin listeden yeni dosya türü veya Farklı Kaydet iletişim kutusu seçtiğinde bildirim iletisi gönderilir.
+Kullanıcı aç veya farklı Kaydet iletişim kutusunda dosya türleri listesinden yeni bir dosya türü seçtiğinde bildirim iletisi gönderilir.
 
-İletişim kutusu OFN_EXPLORER stiliyle oluşturulduysa bildirim gönderilir. Bildirimi hakkında daha fazla bilgi için bkz. [CDN_TYPECHANGE](/windows/desktop/dlgbox/cdn-typechange). OFN_EXPLORER stili hakkında daha fazla bilgi için bkz. [LPSTRFİLE](/windows/desktop/api/commdlg/ns-commdlg-tagofna) yapısı ve [açık ve iletişim kutuları olarak Kaydet](/windows/desktop/dlgbox/open-and-save-as-dialog-boxes).
+Bildirim yalnızca, iletişim kutusu OFN_EXPLORER stiliyle oluşturulduysa gönderilir. Bildirim hakkında daha fazla bilgi için bkz. [CDN_TYPECHANGE](/windows/desktop/dlgbox/cdn-typechange). OFN_EXPLORER stili hakkında daha fazla bilgi için [OpenFileName](/windows/win32/api/commdlg/ns-commdlg-openfilenamew) yapısına ve [Aç ve farklı Kaydet iletişim kutularına](/windows/desktop/dlgbox/open-and-save-as-dialog-boxes)bakın.
 
-##  <a name="removecontrolitem"></a>  CFileDialog::RemoveControlItem
+##  <a name="removecontrolitem"></a>CFileDialog:: Removecontrolıdıtem
 
-Bir kapsayıcı denetimi iletişim kutusunda bir öğe kaldırır.
+İletişim kutusundaki kapsayıcı denetiminden bir öğeyi kaldırır.
 
 ```
 HRESULT RemoveControlItem(
@@ -1346,16 +1346,16 @@ HRESULT RemoveControlItem(
 ### <a name="parameters"></a>Parametreler
 
 *dwIDCtl*<br/>
-Öğeyi kaldırmak için kapsayıcı denetimin kimliği.
+Öğenin kaldırılacağı kapsayıcı denetiminin KIMLIĞI.
 
-*dwIDItem*<br/>
-Öğe kimliği.
+*Dwidıtem*<br/>
+Öğenin KIMLIĞI.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="setcheckbuttonstate"></a>  CFileDialog::SetCheckButtonState
+##  <a name="setcheckbuttonstate"></a>CFileDialog:: SetCheckButtonState
 
-İletişim kutusunda bir onay düğmesine (onay kutusu) geçerli durumunu ayarlar.
+İletişim kutusundaki onay düğmesinin (onay kutusu) geçerli durumunu ayarlar.
 
 ```
 HRESULT SetCheckButtonState(
@@ -1366,16 +1366,16 @@ HRESULT SetCheckButtonState(
 ### <a name="parameters"></a>Parametreler
 
 *dwIDCtl*<br/>
-Onay kutusu kimliği.
+Onay kutusunun KIMLIĞI.
 
 *bChecked*<br/>
-Onay kutusunu durumu. TRUE, işaretli gösterir; YANLIŞ işaretlenmemiş gösterir.
+Onay kutusunun durumu. TRUE, işaretli olduğunu belirtir; FALSE, unchecked değerini gösterir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="setcontrolitemstate"></a>  CFileDialog::SetControlItemState
+##  <a name="setcontrolitemstate"></a>CFileDialog:: Setcontrolıtemstate
 
-İletişim kutusundaki bir kapsayıcı denetimi içinde bir öğe geçerli durumunu ayarlar.
+İletişim kutusunda bulunan bir kapsayıcı denetimindeki bir öğenin geçerli durumunu ayarlar.
 
 ```
 HRESULT SetControlItemState(
@@ -1387,19 +1387,19 @@ HRESULT SetControlItemState(
 ### <a name="parameters"></a>Parametreler
 
 *dwIDCtl*<br/>
-Kapsayıcı denetiminin kimliği.
+Kapsayıcı denetiminin KIMLIĞI.
 
-*dwIDItem*<br/>
-Öğe kimliği.
+*Dwidıtem*<br/>
+Öğenin KIMLIĞI.
 
 *dwState*<br/>
-Yeni denetim durumunu gösteren bir veya daha fazla değerlerinden CDCONTROLSTATE sabit listesi.
+CDCONTROLSTATE numaralandırmasındaki, denetimin yeni durumunu gösteren bir veya daha fazla değer.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="setcontrolitemtext"></a>  CFileDialog::SetControlItemText
+##  <a name="setcontrolitemtext"></a>CFileDialog:: Setcontrolıtemtext
 
-Bir denetim öğesini metnini ayarlar. Örneğin, bir radyo düğmesi veya bir menüsündeki bir öğeyi eşlik eden metin.
+Bir denetim öğesinin metnini ayarlar. Örneğin, bir radyo düğmesine eşlik eden metin veya menüdeki bir öğe.
 
 ```
 HRESULT SetControlItemText(
@@ -1411,19 +1411,19 @@ HRESULT SetControlItemText(
 ### <a name="parameters"></a>Parametreler
 
 *dwIDCtl*<br/>
-Kapsayıcı denetiminin kimliği.
+Kapsayıcı denetiminin KIMLIĞI.
 
-*dwIDItem*<br/>
-Öğe kimliği.
+*Dwidıtem*<br/>
+Öğenin KIMLIĞI.
 
 *strLabel*<br/>
 Öğenin metni.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="setcontrollabel"></a>  CFileDialog::SetControlLabel
+##  <a name="setcontrollabel"></a>CFileDialog:: SetControlLabel
 
-Düğme metni veya bir düzenleme kutusuna etiket gibi bir denetim ile ilişkili metin ayarlar.
+Düğme metni veya düzenleme kutusu etiketi gibi bir denetimle ilişkili metni ayarlar.
 
 ```
 HRESULT SetControlLabel(
@@ -1434,16 +1434,16 @@ HRESULT SetControlLabel(
 ### <a name="parameters"></a>Parametreler
 
 *dwIDCtl*<br/>
-Denetimin kimliği.
+Denetimin KIMLIĞI.
 
 *strLabel*<br/>
 Denetim adı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="setcontrolstate"></a>  CFileDialog::SetControlState
+##  <a name="setcontrolstate"></a>CFileDialog:: SetControlState
 
-Geçerli görünürlüğünü ayarlar ve belirli bir denetim durumlarını etkin.
+Belirli bir denetimin geçerli görünürlüğünü ve etkin durumlarını ayarlar.
 
 ```
 HRESULT SetControlState(
@@ -1454,16 +1454,16 @@ HRESULT SetControlState(
 ### <a name="parameters"></a>Parametreler
 
 *dwIDCtl*<br/>
-Denetimin kimliği.
+Denetimin KIMLIĞI.
 
 *dwState*<br/>
-Denetim geçerli durumunu belirten bir veya daha fazla değerlerinden CDCONTROLSTATE sabit listesi.
+CDCONTROLSTATE numaralandırmasındaki, denetimin geçerli durumunu gösteren bir veya daha fazla değer.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="setcontroltext"></a>  CFileDialog::SetControlText
+##  <a name="setcontroltext"></a>CFileDialog:: SetControlText
 
-Bir Gezgini stilinde belirtilen denetim metnini ayarlamak için bu yöntemi çağırın **açık** veya **Kaydet** iletişim kutusu.
+Bir gezgin stili **Aç** veya **farklı kaydet** iletişim kutusunda belirtilen denetimin metnini ayarlamak için bu yöntemi çağırın.
 
 ```
 void SetControlText(
@@ -1477,21 +1477,21 @@ void SetControlText(
 
 ### <a name="parameters"></a>Parametreler
 
-*nID*<br/>
-[in] Metni ayarlamak istediğiniz denetiminin kimliği.
+*NID*<br/>
+'ndaki Metnin ayarlanacağı denetimin KIMLIĞI.
 
 *lpsz*<br/>
-[in] Denetim için ayarlanacak metni içeren dize işaretçisi.
+'ndaki Denetim için ayarlanacak metni içeren dizeye yönelik bir işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev her iki sürümü de Unicode kullanan uygulamalar için geçerlidir. Ancak, yalnızca sürüm LPCSTR türüyle ANSI kullanan uygulamalar için geçerlidir.
+Bu işlevin her iki sürümü de Unicode kullanan uygulamalar için geçerlidir. Ancak, ANSI kullanan uygulamalar için yalnızca LPCSTR türündeki sürüm geçerlidir.
 
-Bu yöntemi kullanmak için iletişim kutusu OFN_EXPLORER stiliyle oluşturmanız gerekir. Aksi takdirde işlev bir onaylama işlemi başarısız olur.
+Bu yöntemi kullanmak için, iletişim kutusunu OFN_EXPLORER stiliyle oluşturmanız gerekir. Aksi takdirde, işlev bir onaylama işlemiyle başarısız olur.
 
-##  <a name="setdefext"></a>  CFileDialog::SetDefExt
+##  <a name="setdefext"></a>CFileDialog:: SetDefExt
 
-Bir Gezgin stili açık veya farklı kaydet ortak iletişim kutusu için varsayılan dosya adı uzantısı ayarlamak için bu işlevi çağırın.
+Bir gezgin stili aç veya ortak olarak Kaydet iletişim kutusu için varsayılan dosya adı uzantısını ayarlamak için bu işlevi çağırın.
 
 ```
 void SetDefExt(LPCSTR lpsz);
@@ -1500,15 +1500,15 @@ void SetDefExt(LPCSTR lpsz);
 ### <a name="parameters"></a>Parametreler
 
 *lpsz*<br/>
-İletişim kutusu nesne için kullanılacak varsayılan uzantısı içeren bir dize işaretçisi. Bu dize bir nokta (.) içermemelidir.
+İletişim kutusu nesnesi için kullanılacak varsayılan uzantıyı içeren bir dize işaretçisi. Bu dize bir nokta (.) içermemelidir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İletişim kutusu ile OFN_EXPLORER stili oluşturulmuş olması gerekir; Aksi takdirde işlev bir onaylama işlemi başarısız olur.
+İletişim kutusu OFN_EXPLORER stiliyle oluşturulmuş olmalıdır; Aksi takdirde, işlev bir onaylama işlemiyle başarısız olur.
 
-##  <a name="seteditboxtext"></a>  CFileDialog::SetEditBoxText
+##  <a name="seteditboxtext"></a>CFileDialog:: SetEditBoxText
 
-Geçerli metin düzenleme kutusu denetimi ayarlar.
+Bir düzenleme kutusu denetimindeki geçerli metni ayarlar.
 
 ```
 HRESULT SetEditBoxText(
@@ -1519,16 +1519,16 @@ HRESULT SetEditBoxText(
 ### <a name="parameters"></a>Parametreler
 
 *dwIDCtl*<br/>
-Düzenleme kutusu kimliği.
+Düzenleme kutusunun KIMLIĞI.
 
 *strText*<br/>
 Metin değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="setproperties"></a>  CFileDialog::SetProperties
+##  <a name="setproperties"></a>CFileDialog:: SetProperties
 
-Kaydedilen öğesi için kullanılacak varsayılan değerlerini tanımlayan bir özellik deposu sağlar.
+Kaydedilmekte olan öğe için kullanılacak varsayılan değerleri tanımlayan bir özellik deposu sağlar.
 
 ```
 BOOL SetProperties(LPCWSTR lpszPropList);
@@ -1537,13 +1537,13 @@ BOOL SetProperties(LPCWSTR lpszPropList);
 ### <a name="parameters"></a>Parametreler
 
 *lpszPropList*<br/>
-Önceden tanımlanmış özellikler listesini ayırarak ";". Bayrakların listesi için bkz. **bayrakları** bölümünü [LPSTRFİLE](/windows/desktop/api/commdlg/ns-commdlg-tagofna).
+";" İle ayrılmış önceden tanımlanmış özelliklerin listesi. Bayrakların bir listesi için, [OpenFileName](/windows/win32/api/commdlg/ns-commdlg-openfilenamew)'in **Flags** bölümüne bakın.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="setselectedcontrolitem"></a>  CFileDialog::SetSelectedControlItem
+##  <a name="setselectedcontrolitem"></a>CFileDialog:: Setselectedcontrolıdıtem
 
-Seçenek düğmesi grubu ya da iletişim kutusunda bulunan bir birleşik giriş kutusu belirli bir öğe seçili durumunu ayarlar.
+Bir seçenek düğmesi grubundaki belirli bir öğenin seçili durumunu veya iletişim kutusunda bulunan Birleşik giriş kutusunu ayarlar.
 
 ```
 HRESULT SetSelectedControlItem(
@@ -1554,16 +1554,16 @@ HRESULT SetSelectedControlItem(
 ### <a name="parameters"></a>Parametreler
 
 *dwIDCtl*<br/>
-Kapsayıcı denetiminin kimliği.
+Kapsayıcı denetiminin KIMLIĞI.
 
-*dwIDItem*<br/>
-Kullanıcı denetiminde seçilen öğenin kimliği.
+*Dwidıtem*<br/>
+Kullanıcının denetimde seçtiği öğenin KIMLIĞI.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="settemplate"></a>  CFileDialog::SetTemplate
+##  <a name="settemplate"></a>CFileDialog:: SetTemplate
 
-İletişim kutusunda şablon için ayarlar [CFileDialog](../../mfc/reference/cfiledialog-class.md) nesne.
+[CFileDialog](../../mfc/reference/cfiledialog-class.md) nesnesinin iletişim kutusu şablonunu ayarlar.
 
 ```
 void SetTemplate(
@@ -1578,27 +1578,27 @@ void SetTemplate(
 ### <a name="parameters"></a>Parametreler
 
 *nWin3ID*<br/>
-[in] Şablon kaynağı olmayan-Explorer kimliği sayısını içeren `CFileDialog` nesne. Bu şablon, yalnızca Windows NT 3.51 veya OFN_EXPLORER stili mevcut olmadığında kullanılır.
+'ndaki Gezgin `CFileDialog` olmayan nesne için şablon kaynağının kimlik numarasını içerir. Bu şablon yalnızca Windows NT 3,51 'de veya OFN_EXPLORER stili mevcut olmadığında kullanılır.
 
 *nWin4ID*<br/>
-[in] Şablon kaynağı kimliği numarasını Gezgini içerir `CFileDialog` nesne. Bu şablon, yalnızca Windows NT 4.0 ve üzeri sürümleri, Windows 95 ve sonraki sürümler üzerinde veya OFN_EXPLORER stili olduğunda kullanılır.
+'ndaki Gezgin `CFileDialog` nesnesi için şablon kaynağının kimlik numarasını içerir. Bu şablon yalnızca Windows NT 4,0 ve üzeri sürümlerde, Windows 95 ve sonraki sürümlerde veya OFN_EXPLORER stili mevcut olduğunda kullanılır.
 
 *lpWin3ID*<br/>
-[in] Şablon kaynağı olmayan-Explorer adında `CFileDialog` nesne. Bu şablon, yalnızca Windows NT 3.51 veya OFN_EXPLORER stili mevcut olmadığında kullanılır.
+'ndaki Gezgin `CFileDialog` olmayan nesne için şablon kaynağının adını içerir. Bu şablon yalnızca Windows NT 3,51 'de veya OFN_EXPLORER stili mevcut olmadığında kullanılır.
 
 *lpWin4ID*<br/>
-[in] Şablon kaynağı Explorer'ın adını içeren `CFileDialog` nesne. Bu şablon, yalnızca Windows NT 4.0 ve üzeri sürümleri, Windows 95 ve sonraki sürümler üzerinde veya OFN_EXPLORER stili olduğunda kullanılır.
+'ndaki Gezgin `CFileDialog` nesnesinin şablon kaynağının adını içerir. Bu şablon yalnızca Windows NT 4,0 ve üzeri sürümlerde, Windows 95 ve sonraki sürümlerde veya OFN_EXPLORER stili mevcut olduğunda kullanılır.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Sistem, belirtilen şablonları yalnızca birini kullanın. Sistem OFN_EXPLORER stil ve uygulamanın üzerinde çalıştığı işletim sistemi olup olmamasına hangi şablonun kullanılacağını belirler. Explorer olmayan ve Gezgin stili şablonu belirterek, Windows NT 3.51, Windows NT 4.0 ve üzeri sürümler ve Windows 95 ve sonraki sürümleri desteklemek kolaydır.
+Sistem belirtilen şablonlardan yalnızca birini kullanacaktır. Sistem, OFN_EXPLORER stilinin varlığına ve uygulamanın üzerinde çalıştığı işletim sistemine göre hangi şablonun kullanılacağını belirler. Gezgin olmayan ve gezgin stili bir şablon belirterek, Windows NT 3,51, Windows NT 4,0 ve sonraki sürümlerini ve Windows 95 ve sonraki sürümlerini desteklemek kolaydır.
 
 > [!NOTE]
-> Windows Vista veya sonraki stil dosya iletişim kutularında bu işlevi desteklemiyor. Bu işlev bir Windows Vista veya sonraki stili dosya iletişim kutusu kullanılmaya çalışılıyor oluşturur [CNotSupportedException](../../mfc/reference/cnotsupportedexception-class.md). Özelleştirilmiş bir iletişim kutusunu kullanmaya alternatiftir. Özel bir kullanma hakkında daha fazla bilgi için `CFileDialog`, bkz: [IFileDialogCustomize](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-ifiledialogcustomize).
+> Windows Vista veya üzeri stil dosyası iletişim kutuları bu işlevi desteklemez. Bu işlevi bir Windows Vista veya sonraki bir stil dosyası iletişim kutusunda kullanmaya çalışılması [CNotSupportedException](../../mfc/reference/cnotsupportedexception-class.md)oluşturacak. Diğer bir seçenek de özelleştirilmiş bir iletişim kutusu kullanmaktır. Özel `CFileDialog`kullanma hakkında daha fazla bilgi için, bkz. [IFileDialogCustomize](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-ifiledialogcustomize).
 
-##  <a name="startvisualgroup"></a>  CFileDialog::StartVisualGroup
+##  <a name="startvisualgroup"></a>CFileDialog:: StartVisualGroup
 
-Bir görsel grubu iletişim bildirir. "Ekle" herhangi bir yönteme yapılan sonraki çağrılar, bu öğeler bu gruba ekleyin.
+İletişim kutusunda bir görsel grubu bildirir. "Ekle" yöntemine sonraki çağrılar bu öğeleri bu gruba ekler.
 
 ```
 HRESULT StartVisualGroup(
@@ -1609,16 +1609,16 @@ HRESULT StartVisualGroup(
 ### <a name="parameters"></a>Parametreler
 
 *dwIDCtl*<br/>
-Görsel grubun kimliği.
+Görsel grubun KIMLIĞI.
 
 *strLabel*<br/>
 Grup adı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="updateofnfromshelldialog"></a>  CFileDialog::UpdateOFNFromShellDialog
+##  <a name="updateofnfromshelldialog"></a>CFileDialog:: UpdateOFNFromShellDialog
 
-Güncelleştirmeleri `m_ofn` veri yapısını [CFileDialog](../../mfc/reference/cfiledialog-class.md) iç nesnenin geçerli durumuna bağlı.
+`m_ofn` [CFileDialog](../../mfc/reference/cfiledialog-class.md) 'in veri yapısını, iç nesnenin geçerli durumuna göre güncelleştirir.
 
 ```
 void UpdateOFNFromShellDialog();
@@ -1626,15 +1626,15 @@ void UpdateOFNFromShellDialog();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Windows Vista, üye önce Windows sürümlerinde [LPSTRFİLE](/previous-versions/windows/embedded/ms911906\(v=msdn.10\)) veri yapısı ile durumunu sürekli olarak eşitlenmiş `CFileDialog`. Herhangi bir değişiklik [m_ofn](#m_ofn) üye değişkeni doğrudan iletişim kutusunun durumu etkilenir. Ayrıca, herhangi bir değişiklik iletişim durumunu hemen m_ofn üye değişkeni güncelleştirildi.
+Windows Vista 'Dan önceki Windows sürümlerinde, [OpenFileName](/previous-versions/windows/embedded/ms911906\(v=msdn.10\)) veri yapısı üyenin durumuyla `CFileDialog`sürekli olarak eşitlenir. [M_ofn](#m_ofn) member değişkeninde yapılan tüm değişiklikler, iletişim kutusunun durumunu doğrudan etkiler. Ayrıca, iletişim kutusunun durumundaki değişiklikler m_ofn üye değişkenini hemen güncelleştirirler.
 
-Windows Vista veya sonraki sürümlerde, `m_ofn` veri yapısı otomatik olarak güncelleştirilmez. Verilerin doğruluğunu garanti etmek için `m_ofn` üye değişkeni çağırmalıdır `UpdateOFNFromShellDialog` verilere erişmeden önce işlevi. Windows çağıran bu işlev otomatik olarak işlenmesi sırasında [IFileDialog::OnFileOK](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-ifiledialogevents-onfileok).
+Windows Vista veya sonraki sürümlerde `m_ofn` veri yapısı otomatik olarak güncellenmez. `m_ofn` Üye değişkenindeki verilerin doğruluğunu garantilemek için, verileri erişmeden önce `UpdateOFNFromShellDialog` işlevini çağırmanız gerekir. Windows, [IFileDialog:: OnFileOK](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-ifiledialogevents-onfileok)işlemi sırasında bu işlevi otomatik olarak çağırır.
 
-Nasıl kullanılacağı hakkında daha fazla bilgi için `CFileDialog` sınıfı altında Windows Vista veya daha sonra bkz [CFileDialog sınıfı](../../mfc/reference/cfiledialog-class.md).
+`CFileDialog` Sınıfının Windows Vista veya sonraki sürümlerinde nasıl kullanılacağı hakkında daha fazla bilgi için bkz. [CFileDialog Class](../../mfc/reference/cfiledialog-class.md).
 
 ### <a name="example"></a>Örnek
 
-Bu örnekte güncelleştirmeleri `CFileDialog` görüntülemeden önce. Güncelleştirmeden önce `m_ofn` üye değişkeni ihtiyacımız iletişim kutusu geçerli durumu için eşitlenecek.
+Bu örnek, `CFileDialog` görüntülemeden önce günceller. `m_ofn` Üye değişkenini güncelleştirmeden önce, onu iletişim kutusunun geçerli durumuyla eşitlememiz gerekir.
 
 [!code-cpp[NVC_MFC_CFileDialog#1](../../mfc/reference/codesnippet/cpp/cfiledialog-class_7.cpp)]
 

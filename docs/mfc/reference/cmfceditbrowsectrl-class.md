@@ -1,5 +1,5 @@
 ---
-title: CMFCEditBrowseCtrl Class
+title: CMFCEditBrowseCtrl sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CMFCEditBrowseCtrl
@@ -26,16 +26,16 @@ helpviewer_keywords:
 - CMFCEditBrowseCtrl [MFC], OnIllegalFileName
 - CMFCEditBrowseCtrl [MFC], SetBrowseButtonImage
 ms.assetid: 69cfd886-3d35-4bee-8901-7c88fcf9520f
-ms.openlocfilehash: 0c6fb39e17e22bcac60d50b87f7370c6a9f91db9
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 31fadc0a960ddfcf216951e1af481983b122ea0f
+ms.sourcegitcommit: c3bf94210bdb73be80527166264d49e33784152c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62237648"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68821308"
 ---
-# <a name="cmfceditbrowsectrl-class"></a>CMFCEditBrowseCtrl Class
+# <a name="cmfceditbrowsectrl-class"></a>CMFCEditBrowseCtrl sınıfı
 
-`CMFCEditBrowseCtrl` Sınıfı, isteğe bağlı olarak bir Gözat düğmesi içeren düzenlenebilir metin kutusu olan düzenleme Gözat denetimini destekler. Kullanıcı gözatma düğmesini tıkladığında denetim özel bir eylem gerçekleştirir veya dosya Gezgini veya klasör Gezgini içeren standart iletişim kutusunu görüntüler.
+`CMFCEditBrowseCtrl` Sınıfı, isteğe bağlı olarak bir tarama düğmesi içeren düzenlenebilir bir metin kutusu olan düzenleme gözden geçirme denetimini destekler. Kullanıcı, gözatma düğmesine tıkladığında, Denetim özel bir eylem gerçekleştirir veya bir dosya tarayıcısı ya da klasör tarayıcısı içeren standart bir iletişim kutusu görüntüler.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -43,7 +43,7 @@ ms.locfileid: "62237648"
 class CMFCEditBrowseCtrl : public CEdit
 ```
 
-## <a name="members"></a>Üyeler
+## <a name="members"></a>Members
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
@@ -56,55 +56,55 @@ class CMFCEditBrowseCtrl : public CEdit
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[CMFCEditBrowseCtrl::EnableBrowseButton](#enablebrowsebutton)|Etkinleştirir ya da (gizler) devre dışı bırakır Gözat düğmesini.|
-|[CMFCEditBrowseCtrl::EnableFileBrowseButton](#enablefilebrowsebutton)|Gözat düğmesini etkinleştirir ve düzenleme Gözat denetimini koyar *dosya tarayıcısı* modu.|
-|[CMFCEditBrowseCtrl::EnableFolderBrowseButton](#enablefolderbrowsebutton)|Gözat düğmesini etkinleştirir ve düzenleme Gözat denetimini koyar *klasör tarayıcısı* modu.|
-|[CMFCEditBrowseCtrl::GetMode](#getmode)|Geçerli gözatma modunu döndürür.|
-|[CMFCEditBrowseCtrl::OnAfterUpdate](#onafterupdate)|Düzenleme Gözat denetimini bir Gözat eylemi sonuçları ile güncelleştirildikten sonra framework tarafından çağırılır.|
-|[CMFCEditBrowseCtrl::OnBrowse](#onbrowse)|Kullanıcı Gözat düğmesine tıkladıktan sonra framework tarafından çağırılır.|
-|[CMFCEditBrowseCtrl::OnChangeLayout](#onchangelayout)|Geçerli düzenleme Gözat denetimini yeniden çizer.|
-|[CMFCEditBrowseCtrl::OnDrawBrowseButton](#ondrawbrowsebutton)|Göz at düğmesine çizmek için framework tarafından çağırılır.|
-|[CMFCEditBrowseCtrl::OnIllegalFileName](#onillegalfilename)|Geçersiz dosya adı düzenleme denetimine girilen framework tarafından çağırılır.|
-|`CMFCEditBrowseCtrl::PreTranslateMessage`|Pencere iletileri için dağıtılmadan önce çevirir [TranslateMessage](/windows/desktop/api/winuser/nf-winuser-translatemessage) ve [DispatchMessage](/windows/desktop/api/winuser/nf-winuser-dispatchmessage) Windows işlevleri. Söz dizimi ve daha fazla bilgi için bkz: [CWnd::PreTranslateMessage](../../mfc/reference/cwnd-class.md#pretranslatemessage).|
-|[CMFCEditBrowseCtrl::SetBrowseButtonImage](#setbrowsebuttonimage)|Özel bir görüntü için göz at düğmesine ayarlar.|
+|[CMFCEditBrowseCtrl::EnableBrowseButton](#enablebrowsebutton)|, Gözden geçirme düğmesini etkinleştirilir veya devre dışı bırakır (gizler).|
+|[CMFCEditBrowseCtrl::EnableFileBrowseButton](#enablefilebrowsebutton)|Gözden geçirme düğmesine izin verir ve düzenleme gözden geçirme denetimini *dosya tarama* moduna geçirir.|
+|[CMFCEditBrowseCtrl::EnableFolderBrowseButton](#enablefolderbrowsebutton)|Gözden geçirme düğmesine izin verir ve düzenleme gözden geçirme denetimini *klasör tarama* moduna geçirir.|
+|[CMFCEditBrowseCtrl:: GetMode](#getmode)|Geçerli tarama modunu döndürür.|
+|[CMFCEditBrowseCtrl:: OnAfterUpdate](#onafterupdate)|Düzenleme gözden geçirme denetiminden sonra, bir tarama eylemi sonucuyla birlikte bu çerçeve tarafından çağırılır.|
+|[CMFCEditBrowseCtrl:: Onzat](#onbrowse)|Kullanıcı, gezinme düğmesine tıkladıktan sonra Framework tarafından çağırılır.|
+|[CMFCEditBrowseCtrl:: OnChangeLayout](#onchangelayout)|Geçerli düzenleme tarama denetimini yeniden çizer.|
+|[CMFCEditBrowseCtrl::OnDrawBrowseButton](#ondrawbrowsebutton)|, Gezinme düğmesini çizmek için Framework tarafından çağırılır.|
+|[CMFCEditBrowseCtrl::OnIllegalFileName](#onillegalfilename)|Düzenleme denetimine geçersiz bir dosya adı girildiğinde Framework tarafından çağırılır.|
+|`CMFCEditBrowseCtrl::PreTranslateMessage`|[TranslateMessage](/windows/desktop/api/winuser/nf-winuser-translatemessage) ve [DispatchMessage](/windows/desktop/api/winuser/nf-winuser-dispatchmessage) Windows işlevlerine dağıtılmadan önce pencere iletilerini çevirir. Sözdizimi ve daha fazla bilgi için bkz. [CWnd::P reTranslateMessage](../../mfc/reference/cwnd-class.md#pretranslatemessage).|
+|[CMFCEditBrowseCtrl::SetBrowseButtonImage](#setbrowsebuttonimage)|Tarama düğmesi için özel bir görüntü ayarlar.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bir dosya veya klasör adı seçmek için bir düzenleme Gözat denetimini kullanın. İsteğe bağlı olarak, bir iletişim kutusu gibi özel bir eylem gerçekleştirmek için denetimi kullanın. Görüntülemek veya görüntülememek Gözat düğmesini ve düğme üzerinde bir özel etiket veya görüntü uygulanabilir.
+Bir dosya veya klasör adı seçmek için bir düzenleme tarayıcı denetimi kullanın. İsteğe bağlı olarak, bir iletişim kutusu görüntüleme gibi özel bir eylem gerçekleştirmek için denetimi kullanın. Görüntüle düğmesini gösterebilir veya görüntüleyemezsiniz, düğme üzerinde özel bir etiket veya resim uygulayabilirsiniz.
 
-*Modu Gözat* olup bir Gözat düğmesi görüntüler ve hangi eylemin düğmesine tıklandığında gerçekleşir düzenleme Gözat denetimi belirler. Daha fazla bilgi için [GetMode](#getmode) yöntemi.
+Düzenleme gözden geçirme denetiminin gözatmasına ilişkin tarama *modu* , düğme tıklandığında bir gözatın ve bir eylemin ne olduğunu belirler. Daha fazla bilgi için bkz. [GetMode](#getmode) yöntemi.
 
-`CMFCEditBrowseCtrl` Sınıfı aşağıdaki modlarını destekler.
+`CMFCEditBrowseCtrl` Sınıfı aşağıdaki modları destekler.
 
 - **özel mod**
 
-   Kullanıcı Gözat düğmesine tıkladığında, özel bir eylem gerçekleştirilir. Örneğin, bir uygulamaya özgü iletişim kutusunu görüntüleyebilirsiniz.
+   Kullanıcı, tarayıcı düğmesine tıkladığında bir özel eylem gerçekleştirilir. Örneğin, uygulamaya özgü bir iletişim kutusu görüntüleyebilirsiniz.
 
 - **dosya modu**
 
-   Kullanıcı Gözat düğmesine tıkladığında, standart dosya seçimi iletişim kutusu görüntülenir.
+   Kullanıcı, gözden geçirme düğmesine tıkladığında standart bir dosya seçimi iletişim kutusu görüntülenir.
 
-- **Klasör modunda**
+- **klasör modu**
 
-   Kullanıcı gözatma düğmesini tıkladığında bir standart klasör seçimi iletişim kutusu görüntülenir.
+   Kullanıcı, gözden geçirme düğmesine tıkladığında bir standart klasör seçimi iletişim kutusu görüntülenir.
 
-## <a name="how-to-specify-an-edit-browse-control"></a>Nasıl yapılır: Bir düzenleme Gözat denetimi belirtin
+## <a name="how-to-specify-an-edit-browse-control"></a>Nasıl yapılır: Bir düzenleme tarama denetimi belirtin
 
-Uygulamanızdaki bir düzenleme Gözat denetimini eklemek için aşağıdaki adımları gerçekleştirin:
+Uygulamanızda bir düzenleme tarama denetimi eklemek için aşağıdaki adımları gerçekleştirin:
 
-1. Özel gözatma modu uygulamak istiyorsanız, kendi sınıfından türetilir `CMFCEditBrowseCtrl` sınıf ve geçersiz kılın [CMFCEditBrowseCtrl::OnBrowse](#onbrowse) yöntemi. Geçersiz kılınan yönteminde özel Gözat eylemi yürütmek ve düzenleme Gözat denetimini sonucu ile güncelleştirin.
+1. Özel bir tarama modu uygulamak istiyorsanız, `CMFCEditBrowseCtrl` sınıfından kendi sınıfınızı türetirsiniz ve ardından [CMFCEditBrowseCtrl:: ongözatıt](#onbrowse) metodunu geçersiz kılın. Geçersiz kılınan yöntemde, özel bir gözden geçirme eylemi yürütün ve sonuçla düzenleme gözden geçirme denetimini güncelleştirin.
 
-1. Ya da ekleme `CMFCEditBrowseCtrl` veya üst pencere nesnesi içine türetilmiş düzenleme Gözat denetimi nesne.
+1. Üst pencere nesnesine nesne veya türetilmiş düzenleme Gözat denetim nesnesini ekleyin. `CMFCEditBrowseCtrl`
 
-1. Kullanırsanız **sınıf Sihirbazı** Oluştur iletişim kutusu için bir düzenleme denetimi ekleyin ( `CEdit`) iletişim kutusu form. Ayrıca, erişim denetimi, üstbilgi dosyasında için bir değişken ekleyin. Üst bilgi dosyanızda değişkenin türünü değiştirme `CEdit` için `CMFCEditBrowseCtrl`. Düzenleme Gözat denetimini otomatik olarak oluşturulur. Kullanmıyorsanız, **sınıf Sihirbazı**, ekleme bir `CMFCEditBrowseCtrl` üstbilgi dosyasını ve ardından bir çağrı değişkenini kendi `Create` yöntemi.
+1. Bir iletişim kutusu oluşturmak için **sınıf sihirbazını** kullanırsanız, iletişim kutusu formuna bir düzenleme denetimi ( `CEdit`) ekleyin. Ayrıca, üst bilgi dosyanızdaki denetime erişmek için bir değişken ekleyin. Üst bilgi dosyanızda değişkeninin `CEdit` türünü olarak `CMFCEditBrowseCtrl`değiştirin. Düzenleme gözden geçirme denetimi otomatik olarak oluşturulur. **Sınıf Sihirbazı**'nı kullanmıyorsanız, üst bilgi dosyanıza bir `CMFCEditBrowseCtrl` değişken ekleyin `Create` ve sonra metodunu çağırın.
 
-1. Bir iletişim kutusu için bir düzenleme Gözat denetimi eklerseniz, kullanın **ClassWizard** ayarlamak veri Exchange'i yedeklemek için aracı.
+1. Bir iletişim kutusuna bir düzenleme Gözat denetimi eklerseniz, veri değişimini ayarlamak için **ClassWizard** aracını kullanın.
 
-1. Çağrı [EnableFolderBrowseButton](#enablefolderbrowsebutton), [EnableFileBrowseButton](#enablefilebrowsebutton), veya [EnableBrowseButton](#enablebrowsebutton) gözatma modu ayarlamak ve Gözat düğmesini görüntülemek için yöntemi. Çağrı [GetMode](#getmode) geçerli gözatma modu elde etmek için yöntemi.
+1. [EnableFolderBrowseButton](#enablefolderbrowsebutton), [EnableFileBrowseButton](#enablefilebrowsebutton)veya [EnableBrowseButton](#enablebrowsebutton) metodunu çağırıp, tarama modunu ayarlayın ve tarayıcı düğmesini görüntüleyin. Geçerli tarama modunu almak için [GetMode](#getmode) metodunu çağırın.
 
-1. Özel bir görüntü için Gözat düğmesini sağlamak için çağrı [SetBrowseButtonImage](#setbrowsebuttonimage) yöntemi veya geçersiz kılma [OnDrawBrowseButton](#ondrawbrowsebutton) yöntemi.
+1. Tarayıcı düğmesine özel bir görüntü sağlamak için, [SetBrowseButtonImage](#setbrowsebuttonimage) yöntemini çağırın veya [OnDrawBrowseButton](#ondrawbrowsebutton) metodunu geçersiz kılın.
 
-1. Düzenleme Gözat denetimi Gözat düğmesini kaldırmak için çağrı [EnableBrowseButton](#enablebrowsebutton) yöntemiyle *bSistemlerde* parametresini FALSE olarak ayarlayın.
+1. Düzenle gözden geçirme denetiminden Kaldır düğmesini kaldırmak için, [EnableBrowseButton](#enablebrowsebutton) yöntemini *BENABLE* parametresi false olarak ayarlanmış şekilde çağırın.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -120,18 +120,18 @@ Uygulamanızdaki bir düzenleme Gözat denetimini eklemek için aşağıdaki ad�
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek iki yöntemi kullanarak gösterilmektedir `CMFCEditBrowseCtrl` sınıfı: `EnableFolderBrowseButton` ve `EnableFileBrowseButton`. Bu örneğin parçasıdır [yeni denetimler örnek](../../overview/visual-cpp-samples.md).
+Aşağıdaki örnek, `CMFCEditBrowseCtrl` sınıfında iki yöntemin nasıl kullanılacağını gösterir: `EnableFolderBrowseButton` ve `EnableFileBrowseButton`. Bu örnek, [Yeni denetimler örneğinin](../../overview/visual-cpp-samples.md)bir parçasıdır.
 
 [!code-cpp[NVC_MFC_NewControls#6](../../mfc/reference/codesnippet/cpp/cmfceditbrowsectrl-class_1.h)]
 [!code-cpp[NVC_MFC_NewControls#7](../../mfc/reference/codesnippet/cpp/cmfceditbrowsectrl-class_2.cpp)]
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxeditbrowsectrl.h
+**Üstbilgi:** afxeditbrowsectrl. h
 
-##  <a name="enablebrowsebutton"></a>  CMFCEditBrowseCtrl::EnableBrowseButton
+##  <a name="enablebrowsebutton"></a>CMFCEditBrowseCtrl::EnableBrowseButton
 
-Görüntüler veya göz at düğmesine geçerli düzenleme Gözat denetimini görüntülemez.
+Geçerli düzenleme gözden geçirme denetimindeki gözden geçirme düğmesini görüntüler veya görüntülemez.
 
 ```
 void EnableBrowseButton(
@@ -141,21 +141,21 @@ void EnableBrowseButton(
 
 ### <a name="parameters"></a>Parametreler
 
-*bSistemlerde*<br/>
-Gözat düğmesini görüntülemek için TRUE; Göz at düğmesine görüntülememek için FALSE. Varsayılan değer True'dur.
+*bEnable*<br/>
+Tarama düğmesini göstermek için TRUE; Tarama düğmesinin görüntülenmesi yanlış. Varsayılan değer TRUE 'dur.
 
 *szLabel*<br/>
-Gözat düğmesini görüntülenen etiketi. Varsayılan değer " **...** ".
+Tarayıcı düğmesinde görüntülenen etiket. Varsayılan değer " **...** " değeridir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsa *bSistemlerde* parametresi TRUE, göz at düğmesine tıklandığında gerçekleştirilecek özel bir eylem uygulayın. Özel bir eylem gerçekleştirmek için öğesinden bir sınıf türetin `CMFCEditBrowseCtrl` sınıfı ve daha sonra geçersiz alt [OnBrowse](#onbrowse) yöntemi.
+*BEnable* parametresi true ise, gözden geçirme düğmesine tıklandığında gerçekleştirilecek özel bir eylem uygulayın. Özel bir eylem uygulamak için `CMFCEditBrowseCtrl` sınıfından bir sınıf türetirsiniz ve sonra [ongözatıt](#onbrowse) yöntemini geçersiz kılın.
 
-Varsa *bSistemlerde* parametresi TRUE, denetimin gözatma modu `BrowseMode_Default`; Aksi takdirde, gözatma modu `BrowseMode_None`. Göz atma modları hakkında daha fazla bilgi için bkz. [GetMode](#getmode) yöntemi.
+*BEnable* parametresi true ise, denetimin tarama modu olur `BrowseMode_Default`; Aksi takdirde, tarama modu olur. `BrowseMode_None` Tarama modları hakkında daha fazla bilgi için bkz. [GetMode](#getmode) yöntemi.
 
-##  <a name="enablefilebrowsebutton"></a>  CMFCEditBrowseCtrl::EnableFileBrowseButton
+##  <a name="enablefilebrowsebutton"></a>CMFCEditBrowseCtrl::EnableFileBrowseButton
 
-Geçerli düzenleme Gözat denetimini Gözat düğmesini görüntüler ve denetim koyar *dosya tarayıcısı* modu.
+Geçerli düzenleme gözden geçirme denetimindeki gözden geçirme düğmesini görüntüler ve denetimi *dosya tarama* moduna geçirir.
 
 ```
 void EnableFileBrowseButton(
@@ -167,23 +167,23 @@ void EnableFileBrowseButton(
 ### <a name="parameters"></a>Parametreler
 
 *lpszDefExt*<br/>
-Dosya Seçimi iletişim kutusunda kullanılan varsayılan dosya adı uzantısını belirtir. Varsayılan değer NULL olur.
+Dosya seçimi iletişim kutusunda kullanılan varsayılan dosya adı uzantısını belirtir. Varsayılan değer NULL.
 
 *lpszFilter*<br/>
-Dosya Seçimi iletişim kutusunda kullanılan varsayılan filtre dizesi belirtir. Varsayılan değer NULL olur.
+Dosya seçimi iletişim kutusunda kullanılan varsayılan filtre dizesini belirtir. Varsayılan değer NULL.
 
-*CertOpenStore*<br/>
-İletişim kutusu bayraklar. Bitsel bir birleşimi (veya) OFN_HIDEREADONLY ve OFN_OVERWRITEPROMPT varsayılan değerdir.
+*dwFlags*<br/>
+İletişim kutusu bayrakları. Varsayılan değer, OFN_HIDEREADONLY ve OFN_OVERWRITEPROMPT bit düzeyinde birleşimidir (veya).
 
 ### <a name="remarks"></a>Açıklamalar
 
-Düzenleme Gözat denetimini dosya gözatma modunda olduğunda ve kullanıcı gözatma düğmesini tıkladığında denetim standart dosya seçimi iletişim kutusunu görüntüler.
+Düzenle gözden geçirme denetimi dosya tarama modunda olduğunda ve Kullanıcı, gözden geçirme düğmesine tıkladığında, denetim standart dosya seçimi iletişim kutusunu görüntüler.
 
-Kullanılabilir bayrakları tam bir listesi için bkz. [LPSTRFİLE yapısı](/windows/desktop/api/commdlg/ns-commdlg-tagofna).
+Kullanılabilir bayrakların tam listesi için bkz. [OpenFileName yapısı](/windows/win32/api/commdlg/ns-commdlg-openfilenamew).
 
-##  <a name="enablefolderbrowsebutton"></a>  CMFCEditBrowseCtrl::EnableFolderBrowseButton
+##  <a name="enablefolderbrowsebutton"></a>CMFCEditBrowseCtrl::EnableFolderBrowseButton
 
-Geçerli düzenleme Gözat denetimini Gözat düğmesini görüntüler ve denetim koyar *klasör tarayıcısı* modu.
+Geçerli düzenleme gözden geçirme denetimindeki gözden geçirme düğmesini görüntüler ve denetimi *klasör tarama* moduna geçirir.
 
 ```
 void EnableFolderBrowseButton();
@@ -191,11 +191,11 @@ void EnableFolderBrowseButton();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Düzenleme Gözat denetimini klasör gözatma modunda olduğunda ve kullanıcı gözatma düğmesini tıkladığında denetim standart klasör seçimi iletişim kutusunu görüntüler.
+Edit gözatmaya yönelik denetim, klasör tarama modunda olduğunda ve Kullanıcı, gözden geçirme düğmesine tıkladığında, denetim standart klasör seçimi iletişim kutusunu görüntüler.
 
-##  <a name="getmode"></a>  CMFCEditBrowseCtrl::GetMode
+##  <a name="getmode"></a>CMFCEditBrowseCtrl:: GetMode
 
-Gözatma modu geçerli düzenleme Gözat denetimi alır.
+Geçerli düzenleme tarama denetiminin tarama modunu alır.
 
 ```
 CMFCEditBrowseCtrl::BrowseMode GetMode() const;
@@ -203,7 +203,7 @@ CMFCEditBrowseCtrl::BrowseMode GetMode() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Geçerli düzenleme modu belirten numaralandırma değerlerinden biri denetim göz atın. Gözatma modu olup framework Gözat düğmesini görüntüler ve hangi eylemin bir kullanıcı bu düğmeyi tıkladığında gerçekleşir belirler.
+Düzenleme tarama denetiminin geçerli modunu belirten sabit listesi değerlerinden biri. Tarama modu, Framework 'ün, bir Kullanıcı bu düğmeye tıkladığında ne olduğunu ve bu düğmeyi tıkladığını gösterir.
 
 Aşağıdaki tabloda olası dönüş değerleri listelenmektedir.
 
@@ -211,16 +211,16 @@ Aşağıdaki tabloda olası dönüş değerleri listelenmektedir.
 |-----------|-----------------|
 |`BrowseMode_Default`|**özel mod**. Programcı tanımlı bir eylem gerçekleştirilir.|
 |`BrowseMode_File`|**dosya modu**. Standart dosya tarayıcısı iletişim kutusu görüntülenir.|
-|`BrowseMode_Folder`|**Klasör modunda**. Standart klasör Tarayıcı iletişim kutusu görüntülenir.|
-|`BrowseMode_None`|Göz at düğmesine görüntülenmez.|
+|`BrowseMode_Folder`|**klasör modu**. Standart klasör tarayıcısı iletişim kutusu görüntülenir.|
+|`BrowseMode_None`|Tarayıcı düğmesi görüntülenmez.|
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsayılan olarak, bir `CMFCEditBrowseCtrl` nesne için başlatılan `BrowseMode_None` modu. Gözatma modu ile değiştirmek [CMFCEditBrowseCtrl::EnableBrowseButton](#enablebrowsebutton), [CMFCEditBrowseCtrl::EnableFileBrowseButton](#enablefilebrowsebutton), ve [CMFCEditBrowseCtrl::EnableFolderBrowseButton ](#enablefolderbrowsebutton) yöntemleri.
+Varsayılan olarak, bir `CMFCEditBrowseCtrl` nesne `BrowseMode_None` moduna başlatılır. [CMFCEditBrowseCtrl:: EnableBrowseButton](#enablebrowsebutton), [CMFCEditBrowseCtrl:: EnableFileBrowseButton](#enablefilebrowsebutton)ve [CMFCEditBrowseCtrl:: EnableFolderBrowseButton](#enablefolderbrowsebutton) yöntemleriyle, tarama modunu değiştirin.
 
-##  <a name="onafterupdate"></a>  CMFCEditBrowseCtrl::OnAfterUpdate
+##  <a name="onafterupdate"></a>CMFCEditBrowseCtrl:: OnAfterUpdate
 
-Düzenleme Gözat denetimini bir Gözat eylemi sonuçları ile güncelleştirildikten sonra framework tarafından çağırılır.
+Düzenleme gözden geçirme denetiminden sonra, bir tarama eylemi sonucuyla birlikte bu çerçeve tarafından çağırılır.
 
 ```
 virtual void OnAfterUpdate();
@@ -228,11 +228,11 @@ virtual void OnAfterUpdate();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Türetilen bir sınıfta bir özel eylem uygulamak için bu yöntemi yok sayın.
+Özel bir eylem uygulamak için türetilmiş bir sınıfta bu yöntemi geçersiz kılın.
 
-##  <a name="onbrowse"></a>  CMFCEditBrowseCtrl::OnBrowse
+##  <a name="onbrowse"></a>CMFCEditBrowseCtrl:: Onzat
 
-Kullanıcı düzenleme Gözat denetimini öğesinin gözatma düğmesine tıkladıktan sonra framework tarafından çağırılır.
+Kullanıcı düzenleme gözden geçirme denetiminin tarayıcı düğmesine tıkladıktan sonra Framework tarafından çağırılır.
 
 ```
 virtual void OnBrowse();
@@ -240,11 +240,11 @@ virtual void OnBrowse();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kullanıcı düzenleme Gözat denetimini öğesinin gözatma düğmesine tıkladığında, özel kod yürütmek için bu yöntemi kullanın. Kendi sınıfından türetilir `CMFCEditBrowseCtrl` sınıf ve geçersiz kılma kendi `OnBrowse` yöntemi. Bu yöntemde özel Gözat eylemi uygulayan ve isteğe bağlı olarak düzenleme Gözat denetimini metin kutusuna güncelleştirin. Uygulamanızda kullanmak [EnableBrowseButton](#enablebrowsebutton) düzenleme Gözat denetimini yerleştirmek için gereken yöntemini *özel tarayıcı* modu.
+Kullanıcı düzenleme gözden geçirme denetiminin tarayıcı düğmesine tıkladığında özel kodu yürütmek için bu yöntemi kullanın. `CMFCEditBrowseCtrl` Sınıfından kendi sınıfınızı türetirsiniz ve `OnBrowse` metodunu geçersiz kılın. Bu yöntemde, özel bir gözden geçirme eylemi uygulayın ve isteğe bağlı olarak düzenleme tarama denetiminin metin kutusunu güncelleştirin. Uygulamanızda, düzenleme gözden geçirme denetimini *özel tarama* modunda yerleştirmek için [EnableBrowseButton](#enablebrowsebutton) yöntemini kullanın.
 
-##  <a name="onchangelayout"></a>  CMFCEditBrowseCtrl::OnChangeLayout
+##  <a name="onchangelayout"></a>CMFCEditBrowseCtrl:: OnChangeLayout
 
-Geçerli düzenleme Gözat denetimini yeniden çizer.
+Geçerli düzenleme tarama denetimini yeniden çizer.
 
 ```
 virtual void OnChangeLayout();
@@ -252,11 +252,11 @@ virtual void OnChangeLayout();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Gözatma modunu düzenleme Gözat denetimi değiştiğinde framework bu yöntemi çağırır. Daha fazla bilgi için [CMFCEditBrowseCtrl::GetMode](#getmode).
+Düzenleme gözden geçirme denetim denetiminin tarama modu değiştiğinde Framework bu yöntemi çağırır. Daha fazla bilgi için bkz. [CMFCEditBrowseCtrl:: GetMode](#getmode).
 
-##  <a name="ondrawbrowsebutton"></a>  CMFCEditBrowseCtrl::OnDrawBrowseButton
+##  <a name="ondrawbrowsebutton"></a>CMFCEditBrowseCtrl::OnDrawBrowseButton
 
-Gözat düğmesi üzerinde düzenleme Gözat denetimi çizmek için framework tarafından çağırılır.
+Düzenleme gözden geçirme denetimine Gözat düğmesi çizmek için Framework tarafından çağırılır.
 
 ```
 virtual void OnDrawBrowseButton(
@@ -268,25 +268,25 @@ virtual void OnDrawBrowseButton(
 
 ### <a name="parameters"></a>Parametreler
 
-*pDC*<br/>
-Bir cihaz bağlamı için bir işaretçi.
+*Kökündeki*<br/>
+Cihaz bağlamına yönelik bir işaretçi.
 
 *Rect*<br/>
-Göz at düğmesine sınırlayıcı dikdörtgenini.
+Tarama düğmesinin sınırlayıcı dikdörtgeni.
 
-*bIsButtonPressed*<br/>
-Düğme denetimine basıldıysa TRUE; Aksi takdirde FALSE.
+*Bisbuttonbasıldı*<br/>
+Düğmeye basıldığında doğru; Aksi takdirde, FALSE.
 
 *bIsButtonHot*<br/>
-Düğmesi vurgulanmış TRUE; Aksi takdirde FALSE.
+Düğme vurgulanmışsa doğru; Aksi takdirde, FALSE.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev Gözat düğmesini görünümünü özelleştirmek için türetilen bir sınıfta geçersiz kılar.
+Bu işlevi, gezinme düğmesinin görünümünü özelleştirmek için türetilmiş bir sınıfta geçersiz kılın.
 
-##  <a name="setbrowsebuttonimage"></a>  CMFCEditBrowseCtrl::SetBrowseButtonImage
+##  <a name="setbrowsebuttonimage"></a>CMFCEditBrowseCtrl::SetBrowseButtonImage
 
-Özel bir görüntü düzenleme Gözat denetimi Gözat düğmesini ayarlar.
+Düzenleme tarama denetiminin gözatmasına özel bir görüntü ayarlar.
 
 ```
 void SetBrowseButtonImage(
@@ -302,25 +302,25 @@ void SetBrowseButtonImage(UINT uiBmpResId);
 
 ### <a name="parameters"></a>Parametreler
 
-*hIcon*<br/>
-Simge tanıtıcı.
+*HICON*<br/>
+Bir simgenin tutamacı.
 
-*Hbıtmap*<br/>
-Bir bit eşlem tanıtıcısı.
+*HBITMAP*<br/>
+Bit eşlemin tutamacı.
 
-*uiBmpResId*<br/>
-Bir bit eşlemi kaynak kimliği.
+*Uıımpresd*<br/>
+Bit eşlemin kaynak KIMLIĞI.
 
 *bAutoDestroy*<br/>
-Bu yöntem çıktığında belirtilen simge ya da bit eşlem silmek için TRUE; Aksi takdirde FALSE. Varsayılan değer True'dur.
+Bu yöntem çıktığında belirtilen simgeyi veya bit eşlemi silmek için TRUE; Aksi takdirde, FALSE. Varsayılan değer TRUE 'dur.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Özel bir görüntü için Gözat düğmesini uygulamak için bu yöntemi kullanın. Düzenleme Gözat denetimini olduğunda varsayılan olarak, framework standart bir görüntü alır. *dosya tarayıcısı* veya *klasör tarayıcısı* modu.
+Bu yöntemi, gözden geçirme düğmesine özel bir görüntü uygulamak için kullanın. Varsayılan olarak, düzenleme gözden geçirme denetimi *Dosya gözatmayı* veya *klasör tarama* modunda olduğunda çerçeve standart bir görüntü alır.
 
-##  <a name="onillegalfilename"></a>  CMFCEditBrowseCtrl::OnIllegalFileName
+##  <a name="onillegalfilename"></a>CMFCEditBrowseCtrl::OnIllegalFileName
 
-Geçersiz dosya adı düzenleme denetimine girilen framework tarafından çağırılır.
+Düzenleme denetimine geçersiz bir dosya adı girildiğinde Framework tarafından çağırılır.
 
 ```
 virtual BOOL OnIllegalFileName(CString& strFileName);
@@ -333,7 +333,7 @@ Geçersiz dosya adını belirtir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bu dosya adı, dosya iletişim kutusu daha fazla sınırlandıramazsınız geçirilemez değilse FALSE döndürmelidir. Bu durumda, odak yeniden düzenleme denetimine ise ve kullanıcı düzenlemeye devam etmek. Varsayılan uygulama, kullanıcı hakkında geçersiz dosya adı bildiren bir ileti kutusu görüntüler ve false değerini döndürür. Bu yöntemi yok sayın, dosya adını düzeltin ve daha ayrıntılı işleme için TRUE döndürür.
+Bu dosya adı dosya iletişim kutusuna geçirilmemişse, FALSE döndürmelidir. Bu durumda, odak düzenleme denetimine geri ayarlanır ve Kullanıcı düzenlemeye devam etmelidir. Varsayılan uygulama, kullanıcıya geçersiz dosya adı hakkında söylediğini belirten bir ileti kutusu görüntüler ve FALSE döndürür. Bu yöntemi geçersiz kılabilir, dosya adını düzeltebilir ve daha fazla işleme için TRUE değerini döndürebilirsiniz.
 
 ### <a name="remarks"></a>Açıklamalar
 
