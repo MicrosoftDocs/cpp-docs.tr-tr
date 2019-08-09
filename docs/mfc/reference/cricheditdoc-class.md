@@ -1,5 +1,5 @@
 ---
-title: CRichEditDoc Class
+title: CRichEditDoc sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CRichEditDoc
@@ -14,16 +14,16 @@ helpviewer_keywords:
 - CRichEditDoc [MFC], GetView
 - CRichEditDoc [MFC], m_bRTF
 ms.assetid: c936ec18-d516-49d4-b7fb-c9aa0229eddc
-ms.openlocfilehash: 4cc3af7649d30a153b67cd8269e595c11018833f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: d296185fe2ea2216f4abe17b191f71b6fa36e1f9
+ms.sourcegitcommit: 46d24d6e70c03e05484923d9efc6ed5150e96a64
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62372094"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68916716"
 ---
-# <a name="cricheditdoc-class"></a>CRichEditDoc Class
+# <a name="cricheditdoc-class"></a>CRichEditDoc sınıfı
 
-İle [CRichEditView](../../mfc/reference/cricheditview-class.md) ve [Cricheditcntrıtem](../../mfc/reference/cricheditcntritem-class.md), MFC'nin belge görüntüleme mimarisi bağlamında zengin düzenleme denetimi işlevlerini sağlar.
+[CRichEditView](../../mfc/reference/cricheditview-class.md) ve [Cricheditcntridıtem](../../mfc/reference/cricheditcntritem-class.md)ile, MFC 'nin belge görünümü mimarisinin bağlamı içinde zengin düzenleme denetiminin işlevlerini sağlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -37,25 +37,25 @@ class CRichEditDoc : public COleServerDoc
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[CRichEditDoc::CreateClientItem](#createclientitem)|Belgenin temizleme işlemini gerçekleştirmek için çağrılır.|
-|[CRichEditDoc::GetStreamFormat](#getstreamformat)|Stream giriş ve çıkışı biçimlendirme bilgileri içerip içermeyeceğini belirtir.|
-|[CRichEditDoc::GetView](#getview)|Asssociated alır [CRichEditView](../../mfc/reference/cricheditview-class.md) nesne.|
+|[CRichEditDoc:: Createclientıtem](#createclientitem)|Belgeyi temizleme işlemini gerçekleştirmek için çağırılır.|
+|[CRichEditDoc:: GetStreamFormat](#getstreamformat)|Akış girişi ve çıkışının biçimlendirme bilgilerini içerip içermediğini belirtir.|
+|[CRichEditDoc:: GetView](#getview)|Asssocilandırılmış [CRichEditView](../../mfc/reference/cricheditview-class.md) nesnesini alır.|
 
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[CRichEditDoc::m_bRTF](#m_brtf)|Akış g/ç biçimlendirme içerip içermeyeceğini belirtir.|
+|[CRichEditDoc:: m_bRTF](#m_brtf)|Akış g/ç 'nin biçimlendirme içerip içermediğini belirtir.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-"Zengin düzenleme denetimi" kullanıcı girin ve metin düzenleme bir penceredir. Metnin karakteri ve paragraf biçimlendirme atanabilir ve katıştırılmış OLE nesnelerine içerebilir. Zengin düzenleme denetimleri, metin biçimlendirmesi için bir programlama arabirimi sağlar. Ancak, bir uygulamanın tüm biçimlendirme işlemlerini kullanıcı tarafından kullanılabilir hale getirmek için gerekli olan kullanıcı arabirimi bileşenleri uygulamalıdır.
+"Zengin düzenleme denetimi", kullanıcının metin girebileceği ve düzenleyebileceği bir penceredir. Metne karakter ve paragraf biçimlendirme atanabilir ve katıştırılmış OLE nesneleri dahil edilebilir. Zengin düzenleme denetimleri, metin biçimlendirme için bir programlama arabirimi sağlar. Ancak, bir uygulamanın biçimlendirme işlemlerini Kullanıcı için kullanılabilir hale getirmek için gereken herhangi bir kullanıcı arabirimi bileşenini uygulaması gerekir.
 
-`CRichEditView` metin biçimlendirme özelliği ve metin tutar. `CRichEditDoc` Görünüm olan istemci öğeleri listesini tutar. `CRichEditCntrItem` OLE istemci öğeleri kapsayıcı tarafı erişim sağlar.
+`CRichEditView`metnin metin ve biçimlendirme özelliklerini korur. `CRichEditDoc`görünümdeki istemci öğelerinin listesini tutar. `CRichEditCntrItem`OLE istemci öğelerine kapsayıcı tarafı erişimi sağlar.
 
-Bu Windows ortak denetimi (ve bu nedenle [CRichEditCtrl](../../mfc/reference/cricheditctrl-class.md) ve ilgili sınıflar) ve üzeri yalnızca Windows 95/98 ve Windows NT sürümler 3.51 altında çalışan programlar için kullanılabilir.
+Bu Windows ortak denetimi (ve bu nedenle [CRichEditCtrl](../../mfc/reference/cricheditctrl-class.md) ve ilgili sınıflar) yalnızca Windows 95/98 ve Windows NT sürümleri 3,51 ve üzeri sürümlerde çalışan programlar için kullanılabilir.
 
-Bir MFC uygulamasında bir zengin düzenleme belge kullanma örneği için bkz: [WORDPAD](../../overview/visual-cpp-samples.md) örnek uygulama.
+Bir MFC uygulamasında zengin düzenleme belgesi kullanmanın bir örneği için bkz. [WordPad](../../overview/visual-cpp-samples.md) örnek uygulaması.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -65,21 +65,21 @@ Bir MFC uygulamasında bir zengin düzenleme belge kullanma örneği için bkz: 
 
 [CDocument](../../mfc/reference/cdocument-class.md)
 
-[COleDocument](../../mfc/reference/coledocument-class.md)
+[Colet belgesi](../../mfc/reference/coledocument-class.md)
 
-[COleLinkingDoc](../../mfc/reference/colelinkingdoc-class.md)
+[Cotalinkingdoc](../../mfc/reference/colelinkingdoc-class.md)
 
-[COleServerDoc](../../mfc/reference/coleserverdoc-class.md)
+[Cotaserverdoc](../../mfc/reference/coleserverdoc-class.md)
 
 `CRichEditDoc`
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxrich.h
+**Üstbilgi:** afxrich. h
 
-##  <a name="createclientitem"></a>  CRichEditDoc::CreateClientItem
+##  <a name="createclientitem"></a>CRichEditDoc:: Createclientıtem
 
-Oluşturmak için bu işlevi çağırın bir `CRichEditCntrItem` nesne ve bu belgeye ekleyin.
+Bir `CRichEditCntrItem` nesne oluşturmak ve bu belgeye eklemek için bu işlevi çağırın.
 
 ```
 virtual CRichEditCntrItem* CreateClientItem(REOBJECT* preo = NULL) const = 0;
@@ -87,22 +87,22 @@ virtual CRichEditCntrItem* CreateClientItem(REOBJECT* preo = NULL) const = 0;
 
 ### <a name="parameters"></a>Parametreler
 
-*preo*<br/>
-İşaretçi bir [REOBJECT](/windows/desktop/api/richole/ns-richole-_reobject) OLE öğesini tanımlayan yapısı. Yeni `CRichEditCntrItem` nesne bu OLE öğesini yapılandırılmıştır. Varsa *preo* null, yeni istemci öğesi boş.
+*Preo*<br/>
+Bir OLE öğesini açıklayan bir [reobject](/windows/desktop/api/richole/ns-richole-reobject) yapısına yönelik işaretçi. Yeni `CRichEditCntrItem` nesne bu ole öğesi etrafında oluşturulur. *Preo* null ise, yeni istemci öğesi boştur.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yeni bir işaretçi [Cricheditcntrıtem](../../mfc/reference/cricheditcntritem-class.md) bu belgeye eklenmiş olan nesne.
+Bu belgeye eklenen yeni bir [Cricheditcntridıtem](../../mfc/reference/cricheditcntritem-class.md) nesnesine yönelik işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev, tüm OLE başlatma gerçekleştirmez.
+Bu işlev herhangi bir OLE başlatması gerçekleştirmez.
 
-Daha fazla bilgi için [REOBJECT](/windows/desktop/api/richole/ns-richole-_reobject) Windows SDK'sındaki yapısı.
+Daha fazla bilgi için Windows SDK [reobject](/windows/desktop/api/richole/ns-richole-reobject) yapısına bakın.
 
-##  <a name="getstreamformat"></a>  CRichEditDoc::GetStreamFormat
+##  <a name="getstreamformat"></a>CRichEditDoc:: GetStreamFormat
 
-Zengin düzenleme içeriğini akış için metin biçimini belirlemek için bu işlevi çağırın.
+Zengin düzenlemenin içeriğini akışa alma metin biçimini öğrenmek için bu işlevi çağırın.
 
 ```
 int GetStreamFormat() const;
@@ -110,19 +110,19 @@ int GetStreamFormat() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Aşağıdaki bayraklar biri:
+Aşağıdaki bayraklardan biri:
 
-- Zengin düzenleme denetiminden SF_TEXT gösterir, biçimlendirme bilgilerini korumaz.
+- SF_TEXT, zengin düzenleme denetiminin biçimlendirme bilgilerini korumadığını gösterir.
 
-- Zengin düzenleme denetiminden SF_RTF gösterir, biçimlendirme bilgilerini koruyun.
+- SF_RTF, zengin düzenleme denetiminin biçimlendirme bilgilerini korudığını gösterir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Dönüş değeri dayanır [m_bRTF](#m_brtf) veri üyesi. Bu işlev SF_RTF döndürür `m_bRTF` TRUE; Aksi takdirde, SF_TEXT.
+Dönüş değeri [m_bRTF](#m_brtf) veri üyesine göre belirlenir. Bu işlev true ise SF_RTF `m_bRTF` döndürür; Aksi durumda, SF_TEXT.
 
-##  <a name="getview"></a>  CRichEditDoc::GetView
+##  <a name="getview"></a>CRichEditDoc:: GetView
 
-Erişim için bu işlevi çağırın [CRichEditView](../../mfc/reference/cricheditview-class.md) bununla ilişkili nesne `CRichEditDoc` nesne.
+Bu`CRichEditDoc` nesneyle ilişkili [CRichEditView](../../mfc/reference/cricheditview-class.md) nesnesine erişmek için bu işlevi çağırın.
 
 ```
 virtual CRichEditView* GetView() const;
@@ -130,15 +130,15 @@ virtual CRichEditView* GetView() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İşaretçi `CRichEditView` belgeyle ilişkili nesne.
+Belgeyle ilişkili nesne işaretçisi. `CRichEditView`
 
 ### <a name="remarks"></a>Açıklamalar
 
-Metin ve biçimlendirme bilgileri bulunan `CRichEditView` nesne. `CRichEditDoc` Nesne seri hale getirme için OLE öğeleri tutar. Bulunmamalıdır tek `CRichEditView` her `CRichEditDoc`.
+Metin ve biçimlendirme bilgileri `CRichEditView` nesnenin içinde yer alır. `CRichEditDoc` Nesnesi serileştirme için OLE öğelerini tutar. `CRichEditView` Her`CRichEditDoc`biri için yalnızca bir tane olmalıdır.
 
-##  <a name="m_brtf"></a>  CRichEditDoc::m_bRTF
+##  <a name="m_brtf"></a>CRichEditDoc:: m_bRTF
 
-TRUE olduğunda belirten [CRichEditCtrl::StreamIn](../../mfc/reference/cricheditctrl-class.md#streamin) ve [CRichEditCtrl::StreamOut](../../mfc/reference/cricheditctrl-class.md#streamout) paragraf ve karakter biçimlendirme özelliklerine depolamanız gerekir.
+DOĞRU olduğunda, [CRichEditCtrl:: StreamIn](../../mfc/reference/cricheditctrl-class.md#streamin) ve [CRichEditCtrl:: StreamOut](../../mfc/reference/cricheditctrl-class.md#streamout) 'ın paragraf ve karakter biçimlendirme özelliklerini depolaması gerektiğini gösterir.
 
 ```
 BOOL m_bRTF;

@@ -1,112 +1,111 @@
 ---
-title: Visual Studio'da C++ derleme görevleri dosyası projesi oluşturma
-ms.date: 05/16/2019
+title: Visual Studio C++ 'da derleme görevleri dosyası projesi oluşturma
+ms.date: 08/05/2019
 f1_keywords:
 - vc.appwiz.makefile.project
 helpviewer_keywords:
-- Makefile projects, creating
-- project files [C++], Makefile projects
+- Makefile projects [C++]
 ms.assetid: dd077af3-97a8-48fb-baaa-cf7e07ddef61
-ms.openlocfilehash: b460b16b3a64818501187b00e503ad0179d26443
-ms.sourcegitcommit: a10c9390413978d36b8096b684d5ed4cf1553bc8
+ms.openlocfilehash: 861cd88440a697ce5a3abc83109526227ae42f8e
+ms.sourcegitcommit: bd7ddc044f9083246614b602ef6a758775313214
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65837388"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68866126"
 ---
-# <a name="create-a-c-makefile-project"></a>C++ derleme görevleri dosyası projesi oluşturma
+# <a name="create-a-c-makefile-project"></a>C++ Derleme görevleri dosyası projesi oluşturma
 
-A *derleme görevleri dosyası* derleme ve bağlama ilişkin yönergeleri içeren bir metin dosyasıdır (veya *derleme*) C++ kaynak kodu dosyaları kümesi. A *olun* program derleme görevleri dosyası okur ve bir derleyici, bağlayıcı ve büyük olasılıkla diğer programları yürütülebilir bir dosya olmak için çağırır. Microsoft'un *olun* program çağrılır [NMAKE](nmake-reference.md);
+*Derleme görevleri* dosyası, bir C++ kaynak kod dosyaları kümesini derlemek ve bağlamak (veya *oluşturmak*) için yönergeler içeren bir metin dosyasıdır. Bir *Make* programı, derleme görevleri dosyasını okur ve bir derleyici, bağlayıcı ve büyük olasılıkla diğer programları bir yürütülebilir dosya yapmak için çağırır. Microsoft 'un *Make* programı uygulamasına [NMAKE](nmake-reference.md)adı verilir.
 
-Mevcut bir derleme görevleri dosyası projesi varsa, kod ve/veya Visual Studio IDE içinde hata ayıklamak istiyorsanız bu seçeneğiniz vardır:
+Mevcut bir derleme görevleri dosyası projeniz varsa, Visual Studio IDE 'de kod ve/veya hata ayıklama yapmak istiyorsanız, bu seçeneklere sahip olursunuz:
 
-- Visual Studio'da Visual Studio IntelliSense için kullanacağı bir .vcxproj dosyası yapılandırmak için mevcut derleme görevleri dosyası kullanan bir derleme görevleri dosyası projesi oluşturun. (, Yerel bir MSBuild projesi ile aldığınız tüm IDE özelliklerini yoktur.) Bkz: [makefile projesi oluşturmak için](#create_a_makefile_project) aşağıda.
-- Kullanım **varolan kod dosyalarından yeni proje oluştur** kaynak kodunuzu yerel bir MSBuild projesi oluşturmak için Sihirbazı. Orijinal derleme görevleri dosyası bundan sonra kullanılmaz. Daha fazla bilgi için [nasıl yapılır: Varolan koddan C++ projesi oluşturma](../how-to-create-a-cpp-project-from-existing-code.md).
-- **Visual Studio 2017 ve üzeri**: Kullanım **Klasör Aç** düzenleyin ve bir derleme görevleri dosyası projesi olarak oluşturmak için özellik-tüm MSBuild sistemi katılımı olduğu. Daha fazla bilgi için [C++ açık klasörü projelerde](../open-folder-projects-cpp.md).
-- **Visual Studio 2019 ve üzeri**: Linux için UNIX makefile projesi oluşturun.
+- Visual Studio 'da, Visual Studio 'nun IntelliSense için kullanacağı bir. vcxproj dosyasını yapılandırmak için mevcut derleme görevleri dosyasını kullanan bir derleme görevleri dosyası projesi oluşturun. (Yerel bir MSBuild projesiyle aldığınız tüm IDE özelliklerine sahip değilsiniz.) Aşağıdaki [bir derleme görevleri dosyası projesi oluşturmak için](#create_a_makefile_project) bölümüne bakın.
+- Kaynak kodunuzda yerel bir MSBuild projesi oluşturmak için **varolan kod dosyalarından yeni proje oluşturma** Sihirbazı 'nı kullanın. Özgün derleme görevleri dosyası bundan sonra kullanılmaz. Daha fazla bilgi için [nasıl yapılır: Varolan koddan C++ ](../how-to-create-a-cpp-project-from-existing-code.md)bir proje oluşturun.
+- **Visual Studio 2017 ve üzeri**: MSBuild sisteminin herhangi bir katılımı olmadan bir derleme görevleri dosyası projesi düzenlemek ve oluşturmak için **klasörü aç** özelliğini kullanın. Daha fazla bilgi için bkz. [klasör projelerini C++açın ](../open-folder-projects-cpp.md).
+- **Visual Studio 2019 ve üzeri**: Linux için UNIX derleme görevleri dosyası projesi oluşturun.
 
-## <a name="a-namecreateamakefileproject-to-create-a-makefile-project-with-the-makefile-project-template"></a><a name="create_a_makefile_project"> Derleme görevleri dosyası proje şablonuyla bir derleme görevleri dosyası projesi oluşturmak için
+## <a name="a-namecreate_a_makefile_project-to-create-a-makefile-project-with-the-makefile-project-template"></a><a name="create_a_makefile_project">Derleme görevleri dosyası projesi şablonu ile bir Makefile projesi oluşturmak için
 
-Visual Studio 2017 ve sonraki sürümlerinde, C++ masaüstü geliştirme iş yükü yüklendiğinde Makefile projesi şablonunu kullanılabilir.
+Visual Studio 2017 ve üzeri sürümlerde, derleme görevleri dosyası proje şablonu C++ masaüstü geliştirme iş yükü yüklenirken kullanılabilir.
 
-Komutlar ve ortam, derleme görevleri dosyası tarafından kullanılan belirtmek için sihirbazı izleyin. Ardından bu projeyi Visual Studio'da, kodunuzu derlemek için de kullanabilirsiniz.
+Derleme görevleri dosyası tarafından kullanılan komutları ve ortamı belirtmek için Sihirbazı izleyin. Daha sonra bu projeyi, Visual Studio 'da kodunuzu oluşturmak için kullanabilirsiniz.
 
-Varsayılan olarak, derleme görevleri dosyası projesi hiçbir dosya Çözüm Gezgini'nde görüntüler. Derleme görevleri dosyası proje, projenin özellik sayfasına yansıyan derleme ayarlarını belirtir.
+Varsayılan olarak, makefile projesi Çözüm Gezgini dosya görüntülemez. Derleme görevleri dosyası projesi, projenin özellik sayfasına yansıtılan derleme ayarlarını belirtir.
 
-Projede belirttiğiniz çıktı dosyasının, derleme komut dosyasının oluşturduğu ad üzerinde hiçbir etkisi yoktur; yalnızca bir amaç belirtir. Derleme görevleri dosyası yine de derleme işlemini denetler ve yapı hedeflerini belirtir.
+Projede belirttiğiniz çıktı dosyasının, derleme komut dosyasının oluşturduğu ad üzerinde hiçbir etkisi yoktur; yalnızca bir amaç belirtir. Derleme görevleri dosyası derleme işlemini hala denetler ve derleme hedeflerini belirler.
 
 ::: moniker range="vs-2019"
 
-### <a name="to-create-a-makefile-project-in-visual-studio-2019"></a>Visual Studio 2019 içinde bir derleme görevleri dosyası projesi oluşturmak için
+### <a name="to-create-a-makefile-project-in-visual-studio-2019"></a>Visual Studio 2019 ' de bir Makefile projesi oluşturmak için
 
-1. Visual Studio ana menüden seçin **dosya** > **yeni** > **proje** ve arama kutusuna "derleme görevleri dosyası" yazın. Veya **yeni proje** iletişim kutusunda **Visual C++**   >  **genel** (Visual Studio 2015) veya **diğer** () Visual Studio 2017) ve ardından olup, Windows veya Linux hedefleyecektir bağlı olarak iki seçenek seçin.
+1. Visual Studio ana menüsünde **Dosya** > **Yeni** > **Proje** ' yi seçin ve arama kutusuna "Makefile" yazın. Ya da **Yeni proje** iletişim kutusunda,  >  **Visual C++**  **genel** (Visual Studio 2015) veya **diğer** (Visual Studio 2017) ' i genişletin ve ardından, Windows 'un mi hedeflendirilip yoksa iki seçenekten istediğinizi seçin 'Un.
 
-1. **Yalnızca Windows**: İçinde **hata ayıklama yapılandırma ayarlarını** sayfasında, komut çıktısında, temizleme ve yeniden oluşturma bilgileri için hata ayıklama ve perakende derlemeleri sağlayın. Tıklayın **sonraki** yayın yapılandırması için farklı ayarlar belirlemek istiyorsanız.
+1. **Yalnızca Windows**: **Hata ayıklama yapılandırma ayarları** sayfasında hata ayıklama ve perakende yapılar için komut, çıkış, temizleme ve yeniden oluşturma bilgilerini girin. Bir yayın yapılandırması için farklı ayarlar belirtmek istiyorsanız **İleri** ' ye tıklayın.
 
-1. Tıklayın **son** iletişim kutusunu kapatmak ve yeni oluşturulan projeyi **Çözüm Gezgini**.
+1. İletişim kutusunu kapatmak ve **Çözüm Gezgini**yeni oluşturulan projeyi açmak için **son** ' a tıklayın.
 
 ::: moniker-end
 
 ::: moniker range="<=vs-2017"
 
-### <a name="to-create-a-makefile-project-in-visual-studio-2015-or-visual-studio-2017"></a>Visual Studio 2015 veya Visual Studio 2017 derleme görevleri dosyası projesi oluşturmak için
+### <a name="to-create-a-makefile-project-in-visual-studio-2015-or-visual-studio-2017"></a>Visual Studio 2015 veya Visual Studio 2017 ' de bir Makefile projesi oluşturmak için
 
-1. "Derleme görevleri dosyası" yazın Visual Studio başlangıç sayfasından **yeni proje** arama kutusu. Veya **yeni proje** iletişim kutusunda **Visual C++** > **genel** (Visual Studio 2015) veya **diğer** (görsel Studio 2017'de) ve ardından **derleme görevleri dosyası projesi** Proje Sihirbazı'nı açmak için şablonlar bölmesindeki.
+1. Visual Studio başlangıç sayfasından **Yeni proje** arama kutusuna "Makefile" yazın.  > Ya da **Yeni proje** iletişim kutusunda, **Visual C++**  **genel** (Visual Studio 2015) veya **diğer** (Visual Studio 2017) ' i genişletin ve ardından Şablonlar bölmesinde **makefile projesi** öğesini seçerek projeyi açın ekleme.
 
-1. İçinde **uygulama ayarları** sayfasında, komut çıktısında, temizleme ve yeniden oluşturma bilgileri için hata ayıklama ve perakende derlemeleri sağlayın.
+1. **Uygulama ayarları** sayfasında hata ayıklama ve perakende Derlemeleriyle ilgili komut, çıkış, temizleme ve yeniden oluşturma bilgilerini sağlayın.
 
-1. Tıklayın **son** sihirbazı kapatın ve yeni oluşturulan projeyi **Çözüm Gezgini**.
+1. Sihirbazı kapatmak için **son** ' a tıklayın ve yeni oluşturulan projeyi **Çözüm Gezgini**açın.
 
 ::: moniker-end
 
-Özellik sayfasında projenin özelliklerini görüntüleyebilir ve düzenleyebilirsiniz. Bkz: [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md) özellik sayfasını görüntüleme hakkında bilgi.
+Özellik sayfasında projenin özelliklerini görüntüleyebilir ve düzenleyebilirsiniz. Özellik sayfasını görüntüleme hakkında bilgi için bkz. [Visual Studio 'da derleyici ve derleme özelliklerini ayarlama C++ ](../working-with-project-properties.md) .
 
-## <a name="makefile-project-wizard"></a>Derleme görevleri dosyası projesi Sihirbazı
+## <a name="makefile-project-wizard"></a>Derleme görevleri dosyası proje Sihirbazı
 
-Bir derleme görevleri dosyası projesi oluşturduktan sonra görüntüleyebilir ve her biri aşağıdaki seçenekleri Düzenle **Nmake** sayfası proje özellik sayfası.
+Derleme görevleri dosyası projesi oluşturduktan sonra, projenin özellik sayfasının **NMAKE** sayfasında aşağıdaki seçeneklerden her birini görüntüleyebilir ve düzenleyebilirsiniz.
 
-- **Komut satırı derleme:** Kullanıcı yapı derle menüsünde seçtiğinde çalıştırılacak komut satırını belirtir. Nmake sayfasında projenin özellik sayfasının derleme komut satırı alanında görüntülenir.
+- **Derleme komut satırı:** Kullanıcı Build menüsünden Build ' i seçtiğinde çalıştırılacak komut satırını belirtir. Projenin Özellik sayfasının NMAKE sayfasında yer alan derleme komut satırı alanında gösterilir.
 
-- **Çıkış:** Çıkış komut satırı içerecek dosyanın adını belirtir. Varsayılan olarak, bu seçenek, proje adını temel alır. Nmake sayfasında projenin özellik sayfasının çıkış alanında görüntülenir.
+- **Çıkış:** Komut satırı için çıktıyı içerecek dosyanın adını belirtir. Varsayılan olarak, bu seçenek proje adına dayalıdır. Projenin Özellik sayfasının NMAKE sayfasında çıktı alanında gösterilir.
 
-- **Temiz komutlar:** Kullanıcı derle menüsünde temiz seçtiğinde çalıştırılacak komut satırını belirtir. Nmake sayfasında projenin özellik sayfasının temiz komut satırı alanında görüntülenir.
+- **Temizleme komutları:** Kullanıcı derleme menüsünden temiz seçtiğinde çalıştırılacak komut satırını belirtir. Projenin Özellik sayfasının NMAKE sayfasında bulunan komut satırını temizle alanında gösterilir.
 
-- **Yeniden derle komut satırı:** Kullanıcı yeniden derle menüsünde seçtiğinde çalıştırılacak komut satırını belirtir. Yeniden tüm komut satırı alanı projenin özellik sayfası Nmake sayfasında görüntülenir.
+- **Komut satırını yeniden oluştur:** Kullanıcı derleme menüsünden yeniden oluştur seçildiğinde çalıştırılacak komut satırını belirtir. Projenin Özellik sayfasının NMAKE sayfasında tüm komut satırını yeniden oluştur alanında gösterilir.
 
-## <a name="how-to-enable-intellisense-for-makefile-projects"></a>Nasıl yapılır: Derleme görevleri dosyası projeleri için IntelliSense'i etkinleştirme
+## <a name="how-to-enable-intellisense-for-makefile-projects"></a>Nasıl yapılır: Makefile projeleri için IntelliSense 'i etkinleştir
 
-Belirli proje ayarları veya derleyici seçenekleri hatalı ayarlandığında IntelliSense içinde derleme görevleri dosyası projeleri başarısız olur. Derleme görevleri dosyası projeleri IntelliSense beklendiği gibi çalıştığını şekilde yapılandırmak için şu adımları izleyin:
+Belirli proje ayarları veya derleyici seçenekleri hatalı ayarlandığında IntelliSense, derleme görevleri dosyası projelerinde başarısız olur. IntelliSense 'in beklendiği gibi çalışması için derleme görevleri dosyası projelerini yapılandırmak için aşağıdaki adımları izleyin:
 
-1. Açık **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
+1. **Özellik sayfaları** iletişim kutusunu açın. Ayrıntılar için bkz. [Visual C++ Studio 'da derleyici ve derleme özelliklerini ayarlama](../working-with-project-properties.md).
 
-1. Genişletin **yapılandırma özellikleri** düğümü.
+1. **Yapılandırma özellikleri** düğümünü genişletin.
 
-1. Seçin **NMake** özellik sayfa ve Özellikler altında değiştirin **IntelliSense** uygun şekilde.
+1. **NMAKE** özellik sayfasını seçin ve ardından **IntelliSense** altındaki özellikleri uygun şekilde değiştirin.
 
-   - Ayarlama **önişlemci tanımları** derleme görevleri dosyası projenize önişlemci simgeleri tanımlamak için özellik. Bkz: [/D (önişlemci tanımları)](d-preprocessor-definitions.md), daha fazla bilgi için.
+   - **Önişlemci tanımları** özelliğini, derleme görevleri dosyası projenizdeki herhangi bir Önişlemci sembolü tanımlamak için ayarlayın. Daha fazla bilgi için bkz. [/d (Önişlemci tanımları)](d-preprocessor-definitions.md).
 
-   - Ayarlama **arama yolu Ekle** özelliği, derleme görevleri dosyası projesi ön işlemci yönergelerinde geçirilen dosya başvurularını çözümlemek için derleyicinin arama yapacağı dizinleri listesini belirtin. Bkz: [/ı (ek içeren dizinler)](i-additional-include-directories.md), daha fazla bilgi için.
+   - Derleme görevleri dosyası projenizdeki Önişlemci yönergelerine geçirilen dosya başvurularını çözümlemek üzere arama yapılacak dizinlerin listesini belirtmek için **arama yolunu dahil etme** özelliğini ayarlayın. Daha fazla bilgi için bkz. [/i (ek ekleme dizinleri)](i-additional-include-directories.md).
 
-    - CL kullanılarak oluşturulan projeler için. Komut penceresinden EXE ayarlamak **INCLUDE** önişlemci yönergeleri, derleme görevleri dosyası projesi içinde geçirilen dosya başvurularını çözümlemek için derleyicinin arama yapacağı dizinleri belirlemenize imkan ortam değişkeni.
+    - CL kullanılarak oluşturulan projeler için. EXE komut penceresinden, **Include** ortam değişkenini, derleyicinin derleme görevleri dosyası projenizdeki Önişlemci yönergelerine geçirilen dosya başvurularını çözümlemek üzere arayacağını belirtmek için ayarlayın.
 
-   - Ayarlama **zorunlu içerir** özelliği, derleme görevleri dosyası projesi oluşturma sırasında hangi başlığı işlenecek dosyaları belirtmek için. Bkz: [/FI (zorla dahil dosyasını Adlandır)](fi-name-forced-include-file.md), daha fazla bilgi için.
+   - Derleme görevleri dosyası projenizi oluştururken hangi başlık dosyalarının işlemesini belirtmek için **zorunlu içerme** özelliğini ayarlayın. Daha fazla bilgi için bkz. [/Fi (zorunlu Içerme dosyasını adlandırma)](fi-name-forced-include-file.md).
 
-   - Ayarlama **bütünleştirilmiş kod arama yolu** özelliği, projenizdeki .NET derlemelerin başvurularını çözümlemek için derleyicinin arama yapacağı dizinleri listesini belirtin. Bkz: [/AI (meta veri dizinlerini belirtin)](ai-specify-metadata-directories.md), daha fazla bilgi için.
+   - Derleyicinin, projenizdeki .NET derlemelerine başvuruları çözümlemek üzere arayacağını belirten dizinlerin listesini belirtmek için **Derleme arama yolu** özelliğini ayarlayın. Daha fazla bilgi için bkz. [/AI (meta veri dizinlerini belirt)](ai-specify-metadata-directories.md).
 
-   - Ayarlama **kullanarak derlemeleri zorunlu** özelliği, derleme görevleri dosyası projesi oluşturma sırasında işlenecek hangi .NET derlemelerini belirtin. Bkz: [/FU (zorlanan adı #using)](fu-name-forced-hash-using-file.md), daha fazla bilgi için.
+   - Derleme görevleri dosyası projenizi oluştururken hangi .NET derlemelerinin işlemesini belirtmek için **zorlamalı using derlemeler** özelliğini ayarlayın. Daha fazla bilgi için bkz. [/Fu (zorlanan #using dosyasına ad)](fu-name-forced-hash-using-file.md).
 
-   - Ayarlama **ek seçenekler** özelliği C++ dosyaları ayrıştırılırken IntelliSense tarafından kullanılacak ek derleyici anahtarlarını belirtin.
+   - Dosya ayrıştırılırken C++ IntelliSense tarafından kullanılacak ek derleyici anahtarlarını belirtmek Için **ek seçenekler** özelliğini ayarlayın.
 
-1. Tıklayın **Tamam** özellik sayfalarını kapatmak için.
+1. Özellik sayfalarını kapatmak için **Tamam** ' ı tıklatın.
 
-1. Kullanım **Tümünü Kaydet** değiştirilen proje ayarları kaydetmek için komutu.
+1. Değiştirilen proje ayarlarını kaydetmek için **Tümünü Kaydet** komutunu kullanın.
 
-Sonraki açışınızda, derleme görevleri dosyası projesi çalıştırma Visual Studio geliştirme ortamında **çözümü Temizle** komutunu ve ardından **Çözümü Derle** derleme görevleri dosyası projenize komutu. IntelliSense, IDE'de düzgün çalışması gerekir.
+Visual Studio geliştirme ortamında derleme görevleri dosyası projenizi bir sonraki açışınızda, **Clean Solution** komutunu ve sonra derleme görevleri dosyası projenizden **Build Solution** komutunu çalıştırın. IntelliSense IDE 'de düzgün çalışmalıdır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [IntelliSense Kullanma](/visualstudio/ide/using-intellisense)<br>
 [NMAKE Başvurusu](nmake-reference.md)<br>
-[Nasıl yapılır: Varolan koddan C++ projesi oluşturma](../how-to-create-a-cpp-project-from-existing-code.md)
-[derleme görevleri dosyasındaki özel karakterler](special-characters-in-a-makefile.md)<br/>
+[Nasıl yapılır: Derleme görevleri C++ dosyasındaki mevcut koddan](../how-to-create-a-cpp-project-from-existing-code.md)
+[özel karakterlerden](special-characters-in-a-makefile.md) proje oluşturma<br/>
 [Derleme Görevleri Dosyası İçeriği](contents-of-a-makefile.md)<br/>

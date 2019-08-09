@@ -1,7 +1,7 @@
 ---
 title: Dize ve karakter değişmez değerleriC++()
 description: İçindeki C++dize ve karakter değişmez değerlerini bildirme ve tanımlama.
-ms.date: 07/29/2019
+ms.date: 08/06/2019
 f1_keywords:
 - R
 - L
@@ -14,14 +14,14 @@ helpviewer_keywords:
 - literal strings [C++]
 - string literals [C++]
 ms.assetid: 61de8f6f-2714-4e7b-86b6-a3f885d3b9df
-ms.openlocfilehash: 9fce1ef9636aaa85be71cafffb5c4247e5c2e2d9
-ms.sourcegitcommit: 20a1356193fbe0ddd1002e798b952917eafc3439
+ms.openlocfilehash: df690bea81b9799b30ae91313ce7157400ef8413
+ms.sourcegitcommit: bd7ddc044f9083246614b602ef6a758775313214
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68661519"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68866090"
 ---
-# <a name="string-and-character-literals--c"></a>Dize ve karakter değişmez değerleriC++()
+# <a name="string-and-character-literals-c"></a>Dize ve karakter değişmez değerleriC++()
 
 C++çeşitli dize ve karakter türlerini destekler ve bu türlerin her birinin sabit değerlerini ifade etmek için yollar sağlar. Kaynak kodunuzda karakter kümesi kullanarak karakter ve dize sabit değerlerinin içeriğini ifade edersiniz. Evrensel karakter adları ve kaçış karakterleri yalnızca temel kaynak karakter kümesini kullanarak herhangi bir dize ifade etmeniz için izin verir. Ham dize değişmez değeri kaçış karakterleri kullanmaktan kaçınmanızı sağlar ve tüm dize sabit değerlerini ifade etmek için kullanılabilir. Ek oluşturma veya dönüştürme `std::string` adımları gerçekleştirmek zorunda kalmadan de sabit değerler oluşturabilirsiniz.
 
@@ -37,6 +37,9 @@ int main()
     auto c2 =  L'A'; // wchar_t
     auto c3 =  u'A'; // char16_t
     auto c4 =  U'A'; // char32_t
+
+    // Multicharacter literals
+    auto m0 = 'abcd'; // int, value 0x61626364
 
     // String literals
     auto s0 =   "hello"; // const char*
@@ -76,7 +79,7 @@ Bir *karakter sabit değeri* sabit bir karakterden oluşur. Tek tırnak işaretl
 
 - Örneğin, **char**türünde normal karakter sabit değerleri`'a'`
 
-- Örneğin, **char**türünde UTF-8 karakter sabit değerleri`u8'a'`
+- Örneğin, **char** türünde UTF-8 karakter değişmez değerleri (c++ 20 ' de**char8_t** ), örneğin`u8'a'`
 
 - Türünde `wchar_t`geniş karakter sabit değerleri, örneğin`L'a'`
 
@@ -90,9 +93,9 @@ Bir karakter sabiti için kullanılan karakter, ayrılmış karakterler ters eğ
 
 Karakter değişmez değerleri, ön ekine göre farklı şekilde kodlanır.
 
-- Öneki olmayan bir karakter sabit değeri, normal bir karakter sabit değeri değildir. Yürütme karakter kümesinde gösterilebilen tek bir karakter, kaçış sırası veya evrensel karakter adı içeren sıradan bir karakter sabit değerinin değeri, yürütme karakter kümesindeki kodlamasının sayısal değerine eşit bir değere sahiptir. Birden fazla karakter, kaçış dizisi veya evrensel karakter adı içeren sıradan bir karakter sabit değeri *çok karakterli bir sabit*değerdir. Çok karakterli sabit değer veya yürütme karakter kümesinde temsil edilemeyecek normal bir karakter sabit değeri koşullu olarak desteklenir, **int**türünde ve değeri uygulama tanımlı olur.
+- Öneki olmayan bir karakter sabit değeri, normal bir karakter sabit değeri değildir. Yürütme karakter kümesinde gösterilebilen tek bir karakter, kaçış sırası veya evrensel karakter adı içeren sıradan bir karakter sabit değerinin değeri, yürütme karakter kümesindeki kodlamasının sayısal değerine eşit bir değere sahiptir. Birden fazla karakter, kaçış dizisi veya evrensel karakter adı içeren sıradan bir karakter sabit değeri *çok karakterli bir sabit*değerdir. Bir çok karakterli sabit değer veya yürütme karakter kümesinde temsil edilemeyecek normal bir karakter sabit değeri **int**türünde ve değeri uygulama tanımlı. MSVC için aşağıdaki Microsoft 'a **özgü** bölümüne bakın.
 
-- `L` Önekiyle başlayan bir karakter sabit değeri, geniş karakterli bir sabit değerdir. Tek bir karakter, kaçış dizisi veya evrensel karakter adı içeren geniş karakterli bir sabit değerin değeri, bir karakter sabiti için bir temsil olmadığından, yürütme geniş karakter kümesindeki kodlamasının sayısal değerine eşittir. yürütme geniş karakter kümesi, bu durumda değer uygulama tanımlı olur. Birden çok karakter, kaçış sırası veya evrensel karakter adı içeren bir geniş karakterli sabit değerin değeri uygulama tanımlı.
+- `L` Önekiyle başlayan bir karakter sabit değeri, geniş karakterli bir sabit değerdir. Tek bir karakter, kaçış dizisi veya evrensel karakter adı içeren geniş karakterli bir sabit değerin değeri, bir karakter sabiti için bir temsil olmadığından, yürütme geniş karakter kümesindeki kodlamasının sayısal değerine eşittir. yürütme geniş karakter kümesi, bu durumda değer uygulama tanımlı olur. Birden çok karakter, kaçış sırası veya evrensel karakter adı içeren bir geniş karakterli sabit değerin değeri uygulama tanımlı. MSVC için aşağıdaki Microsoft 'a **özgü** bölümüne bakın.
 
 - `u8` Önekiyle başlayan bir karakter sabit değeri utf-8 karakter sabiti olur. Tek bir karakter, kaçış dizisi veya evrensel karakter adı içeren bir UTF-8 karakter sabit değerinin değeri, tek bir UTF-8 kod birimi ile temsil edilebilir (C0 denetimlerine ve temel Latin 'e karşılık gelen) ISO 10646 kod noktası değerine eşit bir değere sahiptir Unicode bloğu). Değer tek bir UTF-8 kod birimi ile temsil ediülmediği takdirde, program hatalı biçimlendirilmiş olur. Birden fazla karakter, kaçış sırası veya evrensel karakter adı içeren UTF-8 karakter sabit değeri hatalı biçimlendirilmiş.
 
@@ -121,6 +124,10 @@ Karakter değişmez değerleri, ön ekine göre farklı şekilde kodlanır.
 | uyarı (zil) | \\a |
 | onaltılık | \\xhhh |
 
+Sekizlik kaçış sırası, bir ters eğik çizgidir ve bir ile üç sekizlik basamak dizisini izler. Sekizlik kaçış sırası, üçüncü sayıdan daha önce karşılaşılırsa, sekizlik basamak olmayan ilk karakterden sona erer. Mümkün olan `\377`en yüksek sekizlik değer.
+
+Onaltılı kaçış sırası, ardından karakter `x`ve ardından bir veya daha fazla onaltılı basamak dizisi gelen bir ters eğik çizgidir. Öndeki sıfırlar yok sayılır. Sıradan veya U8 önekli bir karakter sabit değerinde, en yüksek onaltılı değer 0xFF ' dir. L önekli veya u önekli geniş karakter sabit değerinde en yüksek onaltılı değer 0xFFFF ' dir. U ön eki olan geniş karakter sabit değerinde, en yüksek onaltılı değer 0xFFFFFFFF ' dir.
+
 Bu örnek kod, normal karakter değişmez değerleri kullanılarak atlanan karakterlerin bazı örneklerini gösterir. Aynı kaçış dizisi sözdizimi, diğer karakter sabit türleri için geçerlidir.
 
 ```cpp
@@ -143,23 +150,26 @@ int main() {
 }
 ```
 
+Ters eğik çizgi karakteri\\() satırın sonuna yerleştirildiğinde bir satır devamlılık karakteridir. Ters eğik çizgi karakterinin bir karakter sabit değeri olarak görünmesini istiyorsanız, bir satıra (`\\`) iki ters eğik çizgi yazmanız gerekir. Satır devamlılık karakteri hakkında daha fazla bilgi için bkz. [Çeviri aşamaları](../preprocessor/phases-of-translation.md).
+
 **Microsoft 'a özgü**
 
-Normal bir karakter değişmez değerinden (ön ek olmadan) bir değer oluşturmak için, derleyici karakter veya karakter dizisini 32 bitlik bir tamsayı içindeki tek tırnak arasına 8 bitlik değerlere dönüştürür. Sabit değerindeki birden fazla karakter, gereken baytları yüksek sıralı ve düşük sıraya göre doldurur. Bir **char** değeri oluşturmak için, derleyici düşük sıra baytı alır. **Wchar_t** veya `char16_t` değer oluşturmak için, derleyici düşük sıralı kelimeyi alır. Derleyici, atanan Byte veya Word üzerinde herhangi bir bit ayarlandıysa sonucun kesileceğini uyarır.
+Dar çok karakterli bir değişmez değerden değer oluşturmak için, derleyici karakter veya karakter dizisini 32 bitlik bir tamsayı içindeki tek tırnak arasına 8 bitlik değerlere dönüştürür. Sabit değerindeki birden fazla karakter, gereken baytları yüksek sıralı ve düşük sıraya göre doldurur. Daha sonra derleyici, her zamanki kuralları takip eden hedef türüne göre tamsayıyı dönüştürür. Örneğin, bir **char** değeri oluşturmak için, derleyici düşük sıra baytı alır. **Wchar_t** veya `char16_t` değer oluşturmak için, derleyici düşük sıralı kelimeyi alır. Derleyici, atanan Byte veya Word üzerinde herhangi bir bit ayarlandıysa sonucun kesileceğini uyarır.
 
 ```cpp
 char c0    = 'abcd';    // C4305, C4309, truncates to 'd'
 wchar_t w0 = 'abcd';    // C4305, C4309, truncates to '\x6364'
+int i0     = 'abcd';    // 0x61626364
 ```
 
-Sekizlik kaçış sırası, en fazla 3 sekizlik basamağa kadar bir ters eğik çizgidir. Üçten fazla basamak içeren bir Sekizli kaçış sırasının davranışı, 3 basamaklı sekizlik bir sıra olarak değerlendirilir ve ardından, izleyen basamaklar karakter olarak işlenir ve bu da ortaya çıkan sonuçlara izin verebilir. Örneğin:
+Üçten fazla basamak içeren bir Sekizli kaçış dizisi, 3 basamaklı sekizlik bir sıra olarak değerlendirilir ve ardından, daha sonra gelen basamaklar çok karakterli bir değişmez değer olarak daha sonra, ortaya çıkan sonuçlara izin verebilir. Örneğin:
 
 ```cpp
 char c1 = '\100';   // '@'
 char c2 = '\1000';  // C4305, C4309, truncates to '0'
 ```
 
-Sekizlik olmayan karakterler içeren kaçış dizileri, son sekizlik karaktere kadar sekizlik bir sıra olarak değerlendirilir ve ardından kalan karakterler gelir. Örneğin:
+Sekizlik olmayan karakterler içeren kaçış dizileri, son sekizlik karaktere kadar sekizlik bir sıra olarak değerlendirilir ve ardından kalan karakterler çok karakterli bir değişmez değerde sonraki karakterler olarak değerlendirilir. İlk sekizlik olmayan karakter ondalık bir sayı ise, uyarı C4125 oluşturulur. Örneğin:
 
 ```cpp
 char c3 = '\009';   // '9'
@@ -167,14 +177,16 @@ char c4 = '\089';   // C4305, C4309, truncates to '9'
 char c5 = '\qrs';   // C4129, C4305, C4309, truncates to 's'
 ```
 
-Bir onaltılı kaçış sırası, ardından, bir ters eğik çizgiden `x`sonra karakter ve onaltılık basamak dizisi. Onaltılık basamaklar içermeyen bir kaçış sırası, derleyici hatası C2153: "onaltılı değişmez değerler en az bir onaltılı basamak içermelidir". Öndeki sıfırlar yok sayılır. Onaltılık ve onaltılık olmayan karakterler içeren bir kaçış dizisi, son onaltılı karaktere, ardından onaltılık olmayan karakterler tarafından onaltılık kaçış sırası olarak değerlendirilir. Sıradan veya U8 önekli bir karakter sabit değerinde, en yüksek onaltılı değer 0xFF ' dir. L önekli veya u önekli geniş karakter sabit değerinde en yüksek onaltılı değer 0xFFFF ' dir. U ön eki olan geniş karakter sabit değerinde, en yüksek onaltılı değer 0xFFFFFFFF ' dir.
+Daha yüksek bir değere `\377` sahip sekizlik kaçış sırası, hataya neden C2022: ' Decimal-of *-Decimal*': karakter için çok büyük.
+
+Onaltılık ve onaltılık olmayan karakterler içeren bir kaçış dizisi, son onaltılı karaktere kadar bir onaltılık kaçış sırası içeren çok karakterli değişmez değer olarak değerlendirilir ve ardından onaltılık olmayan karakterler gelir. Onaltılı basamaklar içermeyen bir onaltılı kaçış dizisi, derleyici hatası C2153: "onaltılı değişmez değerler en az bir onaltılı basamak içermelidir".
 
 ```cpp
 char c6 = '\x0050'; // 'P'
 char c7 = '\x0pqr'; // C4305, C4309, truncates to 'r'
 ```
 
-Önekli geniş bir karakter sabit değeri birden `L` fazla karakter içeriyorsa, değer ilk karakterden alınır. Sonraki karakterler, eşdeğer normal karakter sabit değerinin davranışının aksine yok sayılır.
+Önekli geniş bir karakter sabit değeri çok `L` karakterli bir dizi içeriyorsa, değer ilk karakterden alınır ve derleyici uyarı C4066 başlatır. Sonraki karakterler, eşdeğer sıradan çoklu karakter sabit değerinin davranışının aksine yok sayılır.
 
 ```cpp
 wchar_t w1 = L'\100';   // L'@'
@@ -186,9 +198,7 @@ wchar_t w6 = L'\x0050'; // L'P'
 wchar_t w7 = L'\x0pqr'; // C4066 L'\0', pqr ignored
 ```
 
-**SON Microsoft 'a özgü**
-
-Ters eğik çizgi karakteri\\() satırın sonuna yerleştirildiğinde bir satır devamlılık karakteridir. Ters eğik çizgi karakterinin bir karakter sabit değeri olarak görünmesini istiyorsanız, bir satıra (`\\`) iki ters eğik çizgi yazmanız gerekir. Satır devamlılık karakteri hakkında daha fazla bilgi için bkz. [Çeviri aşamaları](../preprocessor/phases-of-translation.md).
+**Son Microsoft 'a özgü**
 
 ###  <a name="bkmk_UCN"></a>Evrensel karakter adları
 
@@ -241,7 +251,7 @@ const wchar_t* wide = L"zyxw";
 const wchar_t* newline = L"hello\ngoodbye";
 ```
 
-#### <a name="char16t-and-char32t-c11"></a>char16_t ve char32_t (C++ 11)
+#### <a name="char16_t-and-char32_t-c11"></a>char16_t ve char32_t (C++ 11)
 
 C++ 11 taşınabilir `char16_t` (16 bit Unicode) ve `char32_t` (32 bit Unicode) karakter türlerini tanıtır:
 
@@ -333,7 +343,7 @@ wchar_t* str = L"hello";
 str[2] = L'a'; // run-time error: access violation
 ```
 
-[/Zc: strictStrings (dize sabit değer dönüştürme dönüşümü devre dışı bırak)](../build/reference/zc-strictstrings-disable-string-literal-type-conversion.md) derleyici seçeneğini belirlediğinizde, bir dize sabit değeri bir non_const karakter işaretçisine dönüştürüldüğünde derleyicinin hata vermesine neden olabilir. Standart uyumlu taşınabilir kod için önerilir. Ayrıca, doğru (const) türünde çözümlendiğinden, dize sabit değeri başlatılmış işaretçiler bildirmek için **Auto** anahtar sözcüğünü kullanmak iyi bir uygulamadır. Örneğin, bu kod örneği derleme zamanında bir dize hazır bilgisine yazma girişimini yakalar:
+Bir dize sabit değeri, [/Zc: strictStrings (dize sabit değer dönüştürme dönüşümü devre dışı bırak)](../build/reference/zc-strictstrings-disable-string-literal-type-conversion.md) derleyici seçeneğini belirlediğinizde bir hata, sabit olmayan karakter işaretçisine dönüştürüldüğünde derleyicinin hata vermesine neden olabilir. Standart uyumlu taşınabilir kod için önerilir. Ayrıca, doğru (const) türünde çözümlendiğinden, dize sabit değeri başlatılmış işaretçiler bildirmek için **Auto** anahtar sözcüğünü kullanmak iyi bir uygulamadır. Örneğin, bu kod örneği derleme zamanında bir dize hazır bilgisine yazma girişimini yakalar:
 
 ```cpp
 auto str = L"hello";
@@ -410,6 +420,6 @@ const char32_t* s5 = U"😎 = \U0001F60E is B-)";
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Karakter Kümeleri](../cpp/character-sets.md)<br/>
-[Sayısal, Boole ve İşaretçi Değişmez Değerleri](../cpp/numeric-boolean-and-pointer-literals-cpp.md)<br/>
+[Karakter kümeleri](../cpp/character-sets.md)\
+[Sayısal, Boole ve Işaretçi değişmez değerleri](../cpp/numeric-boolean-and-pointer-literals-cpp.md)\
 [Kullanıcı Tanımlı Sabit Değerler](../cpp/user-defined-literals-cpp.md)

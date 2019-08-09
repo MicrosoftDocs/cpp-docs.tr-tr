@@ -1,5 +1,5 @@
 ---
-title: CMFCRibbonGalleryMenuButton sınıfı
+title: Cmfcribbongallermenubtan sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CMFCRibbonGalleryMenuButton
@@ -18,17 +18,17 @@ helpviewer_keywords:
 - CMFCRibbonGalleryMenuButton [MFC], HasButton
 - CMFCRibbonGalleryMenuButton [MFC], IsEmptyMenuAllowed
 ms.assetid: 4d459d9b-8b1a-4371-92f6-dc4ce6cc42c8
-ms.openlocfilehash: b63eab7c1e4d03a9103795892603b819eb7d02f3
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 0ec295fa64b835064435992a398d4292ccf26f38
+ms.sourcegitcommit: bd7ddc044f9083246614b602ef6a758775313214
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62236951"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68866186"
 ---
-# <a name="cmfcribbongallerymenubutton-class"></a>CMFCRibbonGalleryMenuButton sınıfı
+# <a name="cmfcribbongallerymenubutton-class"></a>Cmfcribbongallermenubtan sınıfı
 
-Şerit galerilerini içeren bir Şerit menüsü düğmesi uygular.
-Daha fazla ayrıntı için bulunan kaynak koduna bakın **VC\\atlmfc\\src\\mfc** Visual Studio yüklemenizin klasör.
+Şerit galerileri içeren bir şerit menü düğmesi uygular.
+Daha ayrıntılı bilgi için Visual Studio yüklemenizin **VC\\atlmfc\\\\src MFC** klasöründe bulunan kaynak koduna bakın.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -42,60 +42,62 @@ class CMFCRibbonGalleryMenuButton : public CMFCToolBarMenuButton
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[CMFCRibbonGalleryMenuButton::CMFCRibbonGalleryMenuButton](#cmfcribbongallerymenubutton)|Oluşturur ve başlatır bir `CMFCRibbonGalleryMenuButton` nesne.|
+|[Cmfcribbongallermenubtan:: Cmfcribbongallermenubtan](#cmfcribbongallerymenubutton)|Bir `CMFCRibbonGalleryMenuButton` nesnesi oluşturur ve başlatır.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[CMFCRibbonGalleryMenuButton::CopyFrom](#copyfrom)|(Geçersiz kılmaları [CMFCToolBarMenuButton::CopyFrom](../../mfc/reference/cmfctoolbarmenubutton-class.md#copyfrom).)|
-|[CMFCRibbonGalleryMenuButton::CreatePopupMenu](#createpopupmenu)|(Geçersiz kılmaları [CMFCToolBarMenuButton::CreatePopupMenu](../../mfc/reference/cmfctoolbarmenubutton-class.md#createpopupmenu).)|
-|[CMFCRibbonGalleryMenuButton::GetPalette](#getpalette)||
-|[CMFCRibbonGalleryMenuButton::HasButton](#hasbutton)|(Geçersiz kılmaları `CMFCToolBarMenuButton::HasButton`.)|
-|[CMFCRibbonGalleryMenuButton::IsEmptyMenuAllowed](#isemptymenuallowed)|(Geçersiz kılmaları [CMFCToolBarMenuButton::IsEmptyMenuAllowed](../../mfc/reference/cmfctoolbarmenubutton-class.md#isemptymenuallowed).)|
+|[Cmfcribbongallermenubtan:: CopyFrom](#copyfrom)|( [Cmfctoolbarmenubtan:: CopyFrom](../../mfc/reference/cmfctoolbarmenubutton-class.md#copyfrom)geçersiz kılar.)|
+|[Cmfcribbongallermenubtan:: CreatePopupMenu](#createpopupmenu)|( [Cmfctoolbarmenubtan:: CreatePopupMenu](../../mfc/reference/cmfctoolbarmenubutton-class.md#createpopupmenu)geçersiz kılar.)|
+|[Cmfcribbongallermenubtan:: GetPalette](#getpalette)||
+|[Cmfcribbongallermenubtan:: HasButton](#hasbutton)|(Geçersiz `CMFCToolBarMenuButton::HasButton`kılmalar.)|
+|[Cmfcribbongallermenubtan:: IsEmptyMenuAllowed](#isemptymenuallowed)|( [Cmfctoolbarmenubtan:: IsEmptyMenuAllowed](../../mfc/reference/cmfctoolbarmenubutton-class.md#isemptymenuallowed)geçersiz kılınır.)|
 
 ### <a name="remarks"></a>Açıklamalar
 
-Galeri menü düğmesine bir ok ile bir açılır menü olarak görüntülenir. Galeri görüntüleri, kullanıcı bu düğmeyi tıkladığında görüntülenir. Bir galeri menü düğmesi oluştururken, bu görüntüleri içeren bir görüntü listesini belirtmeniz gerekir.
+Galeri menü düğmesi, ok ile bir açılır menü olarak görüntülenir. Kullanıcı bu düğmeye tıkladığında bir görüntü Galerisi görüntülenir. Galeri menü düğmesi oluşturduğunuzda, bu görüntüleri içeren bir görüntü listesi belirtmeniz gerekir.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, bir menü düğmesine madde işaretleri galeri görüntülenecek gösterilmektedir:
+Aşağıdaki örnek, bir menü düğmesinde madde işaretlerinin bir galerinin nasıl görüntüleneceğini gösterir:
 
-```
+```cpp
 BOOL CMainFrame::OnShowPopupMenu (CMFCPopupMenu* pMenuPopup)
 {
     int nBulletIndex = pMenuBar->CommandToIndex (ID_PARA_BULLETS);
 
     if (nBulletIndex>= 0)
-{
-    CMFCToolBarButton* pExButton =
-    pMenuBar->GetButton(nBulletIndex);
-ASSERT_VALID (pExButton);
+    {
+        CMFCToolBarButton* pExButton =
+        pMenuBar->GetButton(nBulletIndex);
+        ASSERT_VALID (pExButton);
 
-    CMFCRibbonGalleryMenuButton paletteBullet (
-    pExButton->m_nID,
-    pExButton->GetImage (),
-    pExButton->m_strText);
+        CMFCRibbonGalleryMenuButton paletteBullet (
+        pExButton->m_nID,
+        pExButton->GetImage (),
+        pExButton->m_strText);
 
-InitBulletPalette (&paletteBullet.GetPalette ());
+        InitBulletPalette (&paletteBullet.GetPalette ());
 
-    pMenuBar->ReplaceButton (ID_PARA_BULLETS,
-    paletteBullet);
-
-}
+        pMenuBar->ReplaceButton (ID_PARA_BULLETS,
+        paletteBullet);
+    }
 }
 ```
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[CObject](../../mfc/reference/cobject-class.md) [CMFCToolBarButton](../../mfc/reference/cmfctoolbarbutton-class.md) [CMFCToolBarMenuButton](../../mfc/reference/cmfctoolbarmenubutton-class.md) [CMFCRibbonGalleryMenuButton](../../mfc/reference/cmfcribbongallerymenubutton-class.md)
+[CObject](../../mfc/reference/cobject-class.md)\
+└&nbsp;[CMFCToolBarButton](../../mfc/reference/cmfctoolbarbutton-class.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;└&nbsp;[Cmfctoolbarmenubtan](../../mfc/reference/cmfctoolbarmenubutton-class.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└&nbsp;[Cmfcribbongallermenubtan](../../mfc/reference/cmfcribbongallerymenubutton-class.md)
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxRibbonPaletteGallery.h
+**Üstbilgi:** afxribbonpalettegallery. h
 
-##  <a name="copyfrom"></a>  CMFCRibbonGalleryMenuButton::CopyFrom
+##  <a name="copyfrom"></a>Cmfcribbongallermenubtan:: CopyFrom
 
 ```
 virtual void CopyFrom(const CMFCToolBarButton& src);
@@ -103,13 +105,13 @@ virtual void CopyFrom(const CMFCToolBarButton& src);
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *src*<br/>
+'ndaki *src*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="cmfcribbongallerymenubutton"></a>  CMFCRibbonGalleryMenuButton::CMFCRibbonGalleryMenuButton
+##  <a name="cmfcribbongallerymenubutton"></a>Cmfcribbongallermenubtan:: Cmfcribbongallermenubtan
 
-Oluşturur ve başlatır bir [CMFCRibbonGalleryMenuButton](../../mfc/reference/cmfcribbongallerymenubutton-class.md) nesne.
+Bir [Cmfcribbongallermenubtan](../../mfc/reference/cmfcribbongallerymenubutton-class.md) nesnesi oluşturur ve başlatır.
 
 ```
 CMFCRibbonGalleryMenuButton(
@@ -128,35 +130,35 @@ CMFCRibbonGalleryMenuButton(
 
 ### <a name="parameters"></a>Parametreler
 
-*uiID*<br/>
-Düğme komut kimliği. Bu, kullanıcı bu düğmeyi tıkladığında WM_COMMAND ileti içinde gönderilen değerdir.
+*Uııd*<br/>
+Düğmenin komut KIMLIĞI. Bu, Kullanıcı bu düğmeye tıkladığında WM_COMMAND iletisinde gönderilen değerdir.
 
-*iImage*<br/>
-Galeri menü düğmesine ile görüntüyü dizini. Bu görüntüler şuraya kaydedilir *imagesPalette* parametresi.
+*IImage*<br/>
+Galeri menü düğmesiyle görüntülenecek görüntünün dizini. Görüntüler *ımabir palet* parametresinde depolanır.
 
 *lpszText*<br/>
-Menü düğmesine görüntülenecek metin.
+Menü düğmesinde görüntülenecek metin.
 
-*imagesPalette*<br/>
-Galeride görüntülenecek görüntü listesini içerir.
+*Imate paleti*<br/>
+Galeride görüntülenecek görüntülerin listesini içerir.
 
-*uiImagesPaletteResID*<br/>
-Galeride görüntülenecek kaynak kimliği görüntüleri için resim listesi.
+*Uııma, Paletteresid*<br/>
+Galeride görüntülenecek görüntülerin görüntü listesinin kaynak KIMLIĞI.
 
-*cxPaletteImage*<br/>
+*Cxpaletteımage*<br/>
 Galeride görüntülenecek resmin piksel cinsinden genişliğini belirtir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Galeri menü düğmesine bir ok olan bir açılır menü olarak görüntülenir. Galeri görüntüleri, kullanıcı bu düğmeyi tıkladığında görüntülenir.
+Galeri menü düğmesi, ok içeren bir açılır menü olarak görüntülenir. Kullanıcı bu düğmeye tıkladığında bir görüntü Galerisi görüntülenir.
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki örnek oluşturucusuna kullanımı gösterilmiştir `CMFCRibbonGalleryMenuButton` sınıfı. Bu kod parçacığı parçasıdır [MS Office 2007 Demo örnek](../../overview/visual-cpp-samples.md).
+Aşağıdaki örnek, `CMFCRibbonGalleryMenuButton` sınıfının oluşturucusunun nasıl kullanılacağını göstermektedir. Bu kod parçacığı, [MS Office 2007 demo örneğinin](../../overview/visual-cpp-samples.md)bir parçasıdır.
 
 [!code-cpp[NVC_MFC_MSOffice2007Demo#8](../../mfc/reference/codesnippet/cpp/cmfcribbongallerymenubutton-class_1.cpp)]
 
-##  <a name="createpopupmenu"></a>  CMFCRibbonGalleryMenuButton::CreatePopupMenu
+##  <a name="createpopupmenu"></a>Cmfcribbongallermenubtan:: CreatePopupMenu
 
 ```
 virtual CMFCPopupMenu* CreatePopupMenu();
@@ -166,7 +168,7 @@ virtual CMFCPopupMenu* CreatePopupMenu();
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="getpalette"></a>  CMFCRibbonGalleryMenuButton::GetPalette
+##  <a name="getpalette"></a>Cmfcribbongallermenubtan:: GetPalette
 
 ```
 CMFCRibbonGallery& GetPalette();
@@ -176,7 +178,7 @@ CMFCRibbonGallery& GetPalette();
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="hasbutton"></a>  CMFCRibbonGalleryMenuButton::HasButton
+##  <a name="hasbutton"></a>Cmfcribbongallermenubtan:: HasButton
 
 ```
 virtual BOOL HasButton() const;
@@ -186,7 +188,7 @@ virtual BOOL HasButton() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="isemptymenuallowed"></a>  CMFCRibbonGalleryMenuButton::IsEmptyMenuAllowed
+##  <a name="isemptymenuallowed"></a>Cmfcribbongallermenubtan:: IsEmptyMenuAllowed
 
 ```
 virtual BOOL IsEmptyMenuAllowed() const;

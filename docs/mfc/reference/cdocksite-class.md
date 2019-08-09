@@ -86,18 +86,18 @@ helpviewer_keywords:
 - CDockSite [MFC], ShowRow
 - CDockSite [MFC], SwapRows
 ms.assetid: 0fcfff79-5f50-4281-b2de-a55653bbea40
-ms.openlocfilehash: ccd1bc115f92e0c2605fe5f587a0567f672c6c09
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 9c154fe621fb88a6dc96a9835fae95c4b86763de
+ms.sourcegitcommit: bd7ddc044f9083246614b602ef6a758775313214
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62391172"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68866199"
 ---
 # <a name="cdocksite-class"></a>CDockSite sınıfı
 
-Daha fazla ayrıntı için bulunan kaynak koduna bakın **VC\\atlmfc\\src\\mfc** Visual Studio yüklemenizin klasör.
+Daha ayrıntılı bilgi için Visual Studio yüklemenizin **VC\\atlmfc\\\\src MFC** klasöründe bulunan kaynak koduna bakın.
 
-Öğesinden türetilen bölmeleri düzenlemek için işlevsellik sağlar [CPane sınıfı](../../mfc/reference/cpane-class.md) satır kümelerine.
+[CPane sınıfından](../../mfc/reference/cpane-class.md) türetilmiş bölmeleri satır kümelerine yerleştirmek için işlevsellik sağlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -111,70 +111,72 @@ class CDockSite: public CBasePane
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[CDockSite::AddRow](#addrow)||
-|[CDockSite::AdjustDockingLayout](#adjustdockinglayout)|(Geçersiz kılmaları [CBasePane::AdjustDockingLayout](../../mfc/reference/cbasepane-class.md#adjustdockinglayout).)|
-|[CDockSite::AdjustLayout](#adjustlayout)|(Geçersiz kılmaları [CBasePane::AdjustLayout](../../mfc/reference/cbasepane-class.md#adjustlayout).)|
-|[CDockSite::AlignDockSite](#aligndocksite)||
-|[CDockSite::CalcFixedLayout](#calcfixedlayout)|(Geçersiz kılmaları [CBasePane::CalcFixedLayout](../../mfc/reference/cbasepane-class.md#calcfixedlayout).)|
-|[CDockSite::CanAcceptPane](#canacceptpane)|(Geçersiz kılmaları [CBasePane::CanAcceptPane](../../mfc/reference/cbasepane-class.md#canacceptpane).)|
-|[CDockSite::CreateEx](#createex)|(Geçersiz kılmaları [CBasePane::CreateEx](../../mfc/reference/cbasepane-class.md#createex).)|
-|[CDockSite::CreateRow](#createrow)||
-|[CDockSite::DockPane](#dockpane)|(Geçersiz kılmaları [CBasePane::DockPane](../../mfc/reference/cbasepane-class.md#dockpane).)|
-|[CDockSite::DoesAllowDynInsertBefore](#doesallowdyninsertbefore)|(Geçersiz kılmaları [CBasePane::DoesAllowDynInsertBefore](../../mfc/reference/cbasepane-class.md#doesallowdyninsertbefore).)|
-|[CDockSite::FindRowIndex](#findrowindex)||
-|[CDockSite::FixupVirtualRects](#fixupvirtualrects)||
-|[CDockSite::GetDockSiteID](#getdocksiteid)||
-|[CDockSite::GetDockSiteRowsList](#getdocksiterowslist)||
-|[CDockSite::IsAccessibilityCompatible](#isaccessibilitycompatible)|(Geçersiz kılmaları `CBasePane::IsAccessibilityCompatible`.)|
-|[CDockSite::IsDragMode](#isdragmode)||
-|[CDockSite::IsLastRow](#islastrow)||
-|[CDockSite::IsRectWithinDockSite](#isrectwithindocksite)||
-|[CDockSite::IsResizable](#isresizable)|(Geçersiz kılmaları [CBasePane::IsResizable](../../mfc/reference/cbasepane-class.md#isresizable).)|
-|[CDockSite::MovePane](#movepane)||
-|[CDockSite::OnInsertRow](#oninsertrow)||
-|[CDockSite::OnRemoveRow](#onremoverow)||
-|[CDockSite::OnResizeRow](#onresizerow)||
-|[CDockSite::OnSetWindowPos](#onsetwindowpos)||
-|[CDockSite::OnShowRow](#onshowrow)||
-|[CDockSite::OnSizeParent](#onsizeparent)||
-|[CDockSite::PaneFromPoint](#panefrompoint)|Belirtilen parametre tarafından belirtilen bir noktada dock sitesiyle yerleştirildiğini bölme döndürür.|
-|[CDockSite::DockPaneLeftOf](#dockpaneleftof)|Bir bölme, başka bir bölmesinin solunda docks.|
-|[CDockSite::FindPaneByID](#findpanebyid)|Verilen kimliğe göre tanımlanan bölmesinde döndürür|
-|[CDockSite::GetPaneList](#getpanelist)|Dock sitede yerleşik bölmeler listesini döndürür.|
-|[CDockSite::RectSideFromPoint](#rectsidefrompoint)||
-|[CDockSite::RemovePane](#removepane)||
-|[CDockSite::RemoveRow](#removerow)||
-|[CDockSite::ReplacePane](#replacepane)||
-|[CDockSite::RepositionPanes](#repositionpanes)||
-|[CDockSite::ResizeDockSite](#resizedocksite)||
-|[CDockSite::ResizeRow](#resizerow)||
-|[CDockSite::ShowPane](#showpane)|Bölmesi gösterir.|
-|[CDockSite::ShowRow](#showrow)||
-|[CDockSite::SwapRows](#swaprows)||
+|[Cdocksıte:: AddRow](#addrow)||
+|[Cdocksıte:: AdjustDockingLayout](#adjustdockinglayout)|( [CBasePane:: AdjustDockingLayout](../../mfc/reference/cbasepane-class.md#adjustdockinglayout)geçersiz kılar.)|
+|[Cdocksıte:: AdjustLayout](#adjustlayout)|( [CBasePane:: AdjustLayout](../../mfc/reference/cbasepane-class.md#adjustlayout).) öğesini geçersiz kılar|
+|[Cdocksıte:: hizalaması Docksite](#aligndocksite)||
+|[Cdocksıte:: CalcFixedLayout](#calcfixedlayout)|( [CBasePane:: CalcFixedLayout](../../mfc/reference/cbasepane-class.md#calcfixedlayout).) öğesini geçersiz kılar|
+|[Cdocksıte:: CanAcceptPane](#canacceptpane)|( [CBasePane:: CanAcceptPane](../../mfc/reference/cbasepane-class.md#canacceptpane).)|
+|[Cdocksıte:: CreateEx](#createex)|( [CBasePane:: CreateEx](../../mfc/reference/cbasepane-class.md#createex)geçersiz kılar.)|
+|[Cdocksıte:: CreateRow](#createrow)||
+|[Cdocksıte::D ockPane](#dockpane)|( [CBasePane 'yi geçersiz kılar::D ockPane](../../mfc/reference/cbasepane-class.md#dockpane).)|
+|[CDockSite::D Oesallowdynınsertbefore](#doesallowdyninsertbefore)|( [CBasePane::D Oesallowdynınsertbefore](../../mfc/reference/cbasepane-class.md#doesallowdyninsertbefore)geçersiz kılar.)|
+|[Cdocksıte:: Findrowındex](#findrowindex)||
+|[Cdocksıte:: FixupVirtualRects](#fixupvirtualrects)||
+|[Cdocksıte:: Getdocksiteıd](#getdocksiteid)||
+|[Cdocksıte:: Getdocksıterowslist](#getdocksiterowslist)||
+|[Cdocksıte:: IsAccessibilityCompatible](#isaccessibilitycompatible)|(Geçersiz `CBasePane::IsAccessibilityCompatible`kılmalar.)|
+|[Cdocksıte:: ısdragmode](#isdragmode)||
+|[Cdocksıte:: ıslastrow](#islastrow)||
+|[Cdocksıte:: Isrectwithındocksite](#isrectwithindocksite)||
+|[Cdocksıte:: ısyeniden boyutlandırılabilir](#isresizable)|( [CBasePane:: ısyeniden boyutlandırılabilir](../../mfc/reference/cbasepane-class.md#isresizable).)|
+|[Cdocksıte:: MovePane](#movepane)||
+|[Cdocksıte:: Onınsertrow](#oninsertrow)||
+|[Cdocksıte:: OnRemoveRow](#onremoverow)||
+|[Cdocksıte:: OnResizeRow](#onresizerow)||
+|[Cdocksıte:: OnSetWindowPos](#onsetwindowpos)||
+|[Cdocksıte:: OnShowRow](#onshowrow)||
+|[Cdocksıte:: OnSizeParent](#onsizeparent)||
+|[CDockSite::P aneFromPoint](#panefrompoint)|Verilen parametre tarafından belirtilen noktada Dock sitesine yerleştirilmiş bir bölmeyi döndürür.|
+|[Cdocksıte::D ockPaneLeftOf](#dockpaneleftof)|Başka bir bölmenin solunda bir bölme noktası oluşturma.|
+|[Cdocksıte:: Findbölmesi Byıd](#findpanebyid)|Verilen KIMLIK tarafından tanımlanan bölmeyi döndürür.|
+|[Cdocksıte:: Getbölmesi listesi](#getpanelist)|Dock sitesinde yerleştirilmiş olan bölmelerin bir listesini döndürür.|
+|[Cdocksıte:: RectSideFromPoint](#rectsidefrompoint)||
+|[Cdocksıte:: RemovePane](#removepane)||
+|[Cdocksıte:: RemoveRow](#removerow)||
+|[Cdocksıte:: ReplacePane](#replacepane)||
+|[CDockSite:: Depotiona bölmeleri](#repositionpanes)||
+|[Cdocksıte:: ResizeDockSite](#resizedocksite)||
+|[Cdocksıte:: ResizeRow](#resizerow)||
+|[Cdocksıte:: ShowPane](#showpane)|Bölmeyi gösterir.|
+|[Cdocksıte:: ShowRow](#showrow)||
+|[Cdocksıte:: SwapRows](#swaprows)||
 
 ## <a name="remarks"></a>Açıklamalar
 
-Framework oluşturur `CDockSite` otomatik olarak çağırdığınızda nesneleri [CFrameWndEx::EnableDocking](../../mfc/reference/cframewndex-class.md#enabledocking). Dock sitesine windows ana çerçeve penceresinin istemci alanına kenarında yerleştirilir.
+Framework, `CDockSite` [CFrameWndEx:: enabletakmayı](../../mfc/reference/cframewndex-class.md#enabledocking)çağırdığınızda nesneleri otomatik olarak oluşturur. Site pencerelerini yerleştir, ana çerçeve penceresindeki istemci alanının kenarına yerleştirilir.
 
-Genellikle çünkü dock site tarafından sağlanan hizmetleri çağıran gerekmez [CFrameWndEx sınıfı](../../mfc/reference/cframewndex-class.md) hizmetlerin işler.
+Bu hizmetleri, [CFrameWndEx sınıfı](../../mfc/reference/cframewndex-class.md) tarafından işletiğinden, genellikle dock sitesi tarafından sunulan hizmetleri çağırmanız gerekmez.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, bir nesnenin oluşturulacağı gösterilmektedir `CDockSite` sınıfı.
+Aşağıdaki örnek, `CDockSite` sınıfının bir nesnesinin nasıl oluşturulacağını gösterir.
 
 [!code-cpp[NVC_MFC_RibbonApp#27](../../mfc/reference/codesnippet/cpp/cdocksite-class_1.cpp)]
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[CObject](../../mfc/reference/cobject-class.md) [CCmdTarget](../../mfc/reference/ccmdtarget-class.md) [CWnd](../../mfc/reference/cwnd-class.md)
-
-[CBasePane](../../mfc/reference/cbasepane-class.md) [CDockSite](../../mfc/reference/cdocksite-class.md)
+[CObject](../../mfc/reference/cobject-class.md)\
+└&nbsp;[CCmdTarget](../../mfc/reference/ccmdtarget-class.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;└&nbsp;[CWnd](../../mfc/reference/cwnd-class.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└&nbsp;[CBasePane](../../mfc/reference/cbasepane-class.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└&nbsp;[CDockSite](../../mfc/reference/cdocksite-class.md)
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxDockSite.h
+**Üstbilgi:** afxDockSite. h
 
-##  <a name="addrow"></a>  CDockSite::AddRow
+##  <a name="addrow"></a>Cdocksıte:: AddRow
 
 ```
 CDockingPanesRow* AddRow(
@@ -184,15 +186,15 @@ CDockingPanesRow* AddRow(
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *pos*<br/>
+'ndaki *POS*<br/>
 
-[in] *nHeight*<br/>
+'ndaki *nHeight*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="adjustdockinglayout"></a>  CDockSite::AdjustDockingLayout
+##  <a name="adjustdockinglayout"></a>Cdocksıte:: AdjustDockingLayout
 
 ```
 virtual void AdjustDockingLayout();
@@ -200,7 +202,7 @@ virtual void AdjustDockingLayout();
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="adjustlayout"></a>  CDockSite::AdjustLayout
+##  <a name="adjustlayout"></a>Cdocksıte:: AdjustLayout
 
 ```
 virtual void AdjustLayout();
@@ -208,7 +210,7 @@ virtual void AdjustLayout();
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="aligndocksite"></a>  CDockSite::AlignDockSite
+##  <a name="aligndocksite"></a>Cdocksıte:: hizalaması Docksite
 
 ```
 void AlignDockSite(
@@ -219,15 +221,15 @@ void AlignDockSite(
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *rectToAlignBy*<br/>
+'ndaki *Recttohizalaması*<br/>
 
-[in] *rectResult*<br/>
+'ndaki *rectResult*<br/>
 
-[in] *bMoveImmediately*<br/>
+'ndaki *Bmovehemen*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="calcfixedlayout"></a>  CDockSite::CalcFixedLayout
+##  <a name="calcfixedlayout"></a>Cdocksıte:: CalcFixedLayout
 
 ```
 virtual CSize CalcFixedLayout(
@@ -237,15 +239,15 @@ virtual CSize CalcFixedLayout(
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *bStretch*<br/>
+'ndaki *Besnetme*<br/>
 
-[in] *bHorz*<br/>
+'ndaki *bHorz*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="canacceptpane"></a>  CDockSite::CanAcceptPane
+##  <a name="canacceptpane"></a>Cdocksıte:: CanAcceptPane
 
 ```
 virtual BOOL CanAcceptPane(const CBasePane* pBar) const;
@@ -253,13 +255,13 @@ virtual BOOL CanAcceptPane(const CBasePane* pBar) const;
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *pBar*<br/>
+'ndaki *pBar*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="createex"></a>  CDockSite::CreateEx
+##  <a name="createex"></a>Cdocksıte:: CreateEx
 
 ```
 virtual BOOL CreateEx(
@@ -273,23 +275,23 @@ virtual BOOL CreateEx(
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *dwStyleEx*<br/>
+'ndaki *dwStyleEx*<br/>
 
-[in] *dwStyle*<br/>
+'ndaki *dwStyle*<br/>
 
-[in] *dikdörtgen*<br/>
+'ndaki *Rect*<br/>
 
-[in] *pParentWnd*<br/>
+'ndaki *pParentWnd*<br/>
 
-[in] *dwControlBarStyle*<br/>
+'ndaki *dwControlBarStyle*<br/>
 
-[in] *pContext*<br/>
+'ndaki *pContext*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="createrow"></a>  CDockSite::CreateRow
+##  <a name="createrow"></a>Cdocksıte:: CreateRow
 
 ```
 virtual CDockingPanesRow* CreateRow(
@@ -300,17 +302,17 @@ virtual CDockingPanesRow* CreateRow(
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *pParentDockBar*<br/>
+'ndaki *Pparentdockbar*<br/>
 
-[in] *nOffset*<br/>
+'ndaki *nKonum*<br/>
 
-[in] *nRowHeight*<br/>
+'ndaki *Nrowheight*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="dockpane"></a>  CDockSite::DockPane
+##  <a name="dockpane"></a>Cdocksıte::D ockPane
 
 ```
 virtual void DockPane(
@@ -321,17 +323,17 @@ virtual void DockPane(
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *pWnd*<br/>
+'ndaki *pWnd*<br/>
 
-[in] *dockMethod*<br/>
+'ndaki *Dockyöntemi*<br/>
 
-[in] *lpRect*<br/>
+'ndaki *lpRect*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="dockpaneleftof"></a>  CDockSite::DockPaneLeftOf
+##  <a name="dockpaneleftof"></a>Cdocksıte::D ockPaneLeftOf
 
-Bir bölme, başka bir bölmesinin solunda docks.
+Başka bir bölmenin solunda bir bölme noktası oluşturma.
 
 ```
 virtual BOOL DockPaneLeftOf(
@@ -342,18 +344,18 @@ virtual BOOL DockPaneLeftOf(
 ### <a name="parameters"></a>Parametreler
 
 *pBarToDock*<br/>
-[out içinde] Bir işaretçi solunda yerleştirilemediğinde bölmesine *pTargetBar*.
+[in, out] *PTargetBar*'un soluna yerleştirilen bölmeye yönelik bir işaretçi.
 
 *pTargetBar*<br/>
-[out içinde] Hedef bölmesi için bir işaretçi.
+[in, out] Hedef bölmeye yönelik bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bölmesinde başarıyla yerleştirildiğini TRUE; Aksi takdirde FALSE.
+Bölme başarıyla sabitliyse doğru; Aksi takdirde, FALSE.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="doesallowdyninsertbefore"></a>  CDockSite::DoesAllowDynInsertBefore
+##  <a name="doesallowdyninsertbefore"></a>CDockSite::D Oesallowdynınsertbefore
 
 ```
 virtual BOOL DoesAllowDynInsertBefore() const;
@@ -363,9 +365,9 @@ virtual BOOL DoesAllowDynInsertBefore() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="findpanebyid"></a>  CDockSite::FindPaneByID
+##  <a name="findpanebyid"></a>Cdocksıte:: Findbölmesi Byıd
 
-Belirtilen kimliğe sahip bölmesinde döndürür
+Verilen KIMLIĞE sahip bölmeyi döndürür.
 
 ```
 CPane* FindPaneByID(UINT nID);
@@ -373,16 +375,16 @@ CPane* FindPaneByID(UINT nID);
 
 ### <a name="parameters"></a>Parametreler
 
-*nID*<br/>
-[in] Bulunacak komut kimliği bölmesi.
+*NID*<br/>
+'ndaki Bulunan bölmenin komut KIMLIĞI.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Belirtilen komut kimliği ya da bölmesinde bulunamazsa NULL içeren bölme için bir işaretçi.
+Belirtilen komut KIMLIĞINE sahip bölme işaretçisi veya bölme bulunamazsa NULL.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="findrowindex"></a>  CDockSite::FindRowIndex
+##  <a name="findrowindex"></a>Cdocksıte:: Findrowındex
 
 ```
 int FindRowIndex(CDockingPanesRow* pRow);
@@ -390,13 +392,13 @@ int FindRowIndex(CDockingPanesRow* pRow);
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *pRow*<br/>
+'ndaki *Prow*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="fixupvirtualrects"></a>  CDockSite::FixupVirtualRects
+##  <a name="fixupvirtualrects"></a>Cdocksıte:: FixupVirtualRects
 
 ```
 virtual void FixupVirtualRects();
@@ -404,7 +406,7 @@ virtual void FixupVirtualRects();
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="getdocksiteid"></a>  CDockSite::GetDockSiteID
+##  <a name="getdocksiteid"></a>Cdocksıte:: Getdocksiteıd
 
 ```
 virtual UINT GetDockSiteID() const;
@@ -414,7 +416,7 @@ virtual UINT GetDockSiteID() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="getdocksiterowslist"></a>  CDockSite::GetDockSiteRowsList
+##  <a name="getdocksiterowslist"></a>Cdocksıte:: Getdocksıterowslist
 
 ```
 const CObList& GetDockSiteRowsList() const;
@@ -424,9 +426,9 @@ const CObList& GetDockSiteRowsList() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="getpanelist"></a>  CDockSite::GetPaneList
+##  <a name="getpanelist"></a>Cdocksıte:: Getbölmesi listesi
 
-Bir dock sitesine yerleştirilebilen bölmeleri listesini döndürür.
+Dock sitesinde yerleştirilmiş olan bölmelerin bir listesini döndürür.
 
 ```
 const CObList& GetPaneList() const;
@@ -434,9 +436,9 @@ const CObList& GetPaneList() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Salt okunur başvuru bölmeleri listesine şu anda yerleştirme çubuğunda yerleştirilmiş.
+Takma çubuğuna yerleştirilmiş olan bölme listesine yönelik salt okunurdur bir başvuru.
 
-##  <a name="isaccessibilitycompatible"></a>  CDockSite::IsAccessibilityCompatible
+##  <a name="isaccessibilitycompatible"></a>Cdocksıte:: IsAccessibilityCompatible
 
 ```
 virtual BOOL IsAccessibilityCompatible();
@@ -446,7 +448,7 @@ virtual BOOL IsAccessibilityCompatible();
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="isdragmode"></a>  CDockSite::IsDragMode
+##  <a name="isdragmode"></a>Cdocksıte:: ısdragmode
 
 ```
 virtual BOOL IsDragMode() const;
@@ -456,7 +458,7 @@ virtual BOOL IsDragMode() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="islastrow"></a>  CDockSite::IsLastRow
+##  <a name="islastrow"></a>Cdocksıte:: ıslastrow
 
 ```
 bool IsLastRow(CDockingPanesRow* pRow) const;
@@ -464,13 +466,13 @@ bool IsLastRow(CDockingPanesRow* pRow) const;
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *pRow*<br/>
+'ndaki *Prow*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="isrectwithindocksite"></a>  CDockSite::IsRectWithinDockSite
+##  <a name="isrectwithindocksite"></a>Cdocksıte:: Isrectwithındocksite
 
 ```
 BOOL IsRectWithinDockSite(
@@ -480,15 +482,15 @@ BOOL IsRectWithinDockSite(
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *dikdörtgen*<br/>
+'ndaki *Rect*<br/>
 
-[in] *ptDelta*<br/>
+'ndaki *Ptdelta*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="isresizable"></a>  CDockSite::IsResizable
+##  <a name="isresizable"></a>Cdocksıte:: ısyeniden boyutlandırılabilir
 
 ```
 virtual BOOL IsResizable() const;
@@ -498,7 +500,7 @@ virtual BOOL IsResizable() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="movepane"></a>  CDockSite::MovePane
+##  <a name="movepane"></a>Cdocksıte:: MovePane
 
 ```
 virtual BOOL MovePane(
@@ -509,17 +511,17 @@ virtual BOOL MovePane(
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *pWnd*<br/>
+'ndaki *pWnd*<br/>
 
-[in] *nFlags*<br/>
+'ndaki *nFlags*<br/>
 
-[in] *ptOffset*<br/>
+'ndaki *ptOffset*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="oninsertrow"></a>  CDockSite::OnInsertRow
+##  <a name="oninsertrow"></a>Cdocksıte:: Onınsertrow
 
 ```
 virtual void OnInsertRow(POSITION pos);
@@ -527,11 +529,11 @@ virtual void OnInsertRow(POSITION pos);
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *pos*<br/>
+'ndaki *POS*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="onremoverow"></a>  CDockSite::OnRemoveRow
+##  <a name="onremoverow"></a>Cdocksıte:: OnRemoveRow
 
 ```
 virtual void OnRemoveRow(
@@ -541,13 +543,13 @@ virtual void OnRemoveRow(
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *pos*<br/>
+'ndaki *POS*<br/>
 
-[in] *bByShow*<br/>
+'ndaki *Bbyshow*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="onresizerow"></a>  CDockSite::OnResizeRow
+##  <a name="onresizerow"></a>Cdocksıte:: OnResizeRow
 
 ```
 virtual int OnResizeRow(
@@ -557,15 +559,15 @@ virtual int OnResizeRow(
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *pRowToResize*<br/>
+'ndaki *Prowtoresize*<br/>
 
-[in] *nOffset*<br/>
+'ndaki *nKonum*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="onsizeparent"></a>  CDockSite::OnSizeParent
+##  <a name="onsizeparent"></a>Cdocksıte:: OnSizeParent
 
 ```
 virtual void OnSizeParent(
@@ -577,17 +579,17 @@ virtual void OnSizeParent(
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *rectAvailable*<br/>
+'ndaki *Rectavailable*<br/>
 
-[in] *nSide*<br/>
+'ndaki *Nsıde*<br/>
 
-[in] *bExpand*<br/>
+'ndaki *Bexpand*<br/>
 
-[in] *nOffset*<br/>
+'ndaki *nKonum*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="onsetwindowpos"></a>  CDockSite::OnSetWindowPos
+##  <a name="onsetwindowpos"></a>Cdocksıte:: OnSetWindowPos
 
 ```
 virtual BOOL OnSetWindowPos(
@@ -598,17 +600,17 @@ virtual BOOL OnSetWindowPos(
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *pWndInsertAfter*<br/>
+'ndaki *pWndInsertAfter*<br/>
 
-[in] *rectWnd*<br/>
+'ndaki *Rectwnd*<br/>
 
-[in] *nFlags*<br/>
+'ndaki *nFlags*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="onshowrow"></a>  CDockSite::OnShowRow
+##  <a name="onshowrow"></a>Cdocksıte:: OnShowRow
 
 ```
 virtual void OnShowRow(
@@ -618,15 +620,15 @@ virtual void OnShowRow(
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *pos*<br/>
+'ndaki *POS*<br/>
 
-[in] *bBilgi Göster*<br/>
+'ndaki *bShow*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="panefrompoint"></a>  CDockSite::PaneFromPoint
+##  <a name="panefrompoint"></a>CDockSite::P aneFromPoint
 
-Belirtilen parametre tarafından belirtilen bir noktada dock sitesiyle yerleştirildiğini bölme döndürür.
+Verilen parametre tarafından belirtilen noktada Dock sitesine yerleştirilmiş bir bölmeyi döndürür.
 
 ```
 virtual CPane* PaneFromPoint(CPoint pt);
@@ -634,16 +636,16 @@ virtual CPane* PaneFromPoint(CPoint pt);
 
 ### <a name="parameters"></a>Parametreler
 
-*PT*<br/>
-[in] Ekran koordinatlarında alınacak bölmesi için bir nokta.
+*yönergelerinin*<br/>
+'ndaki Bölmenin alınması için bir nokta, Ekran koordinatlarında.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Belirtilen adreste bulunan bölmesinde bir işaretçiye işaret veya hiçbir bölmesi belirli bir noktada mevcut değilse NULL.
+Belirtilen noktada bir bölme yoksa, belirtilen noktada veya NULL üzerinde bulunan bölmeye yönelik bir işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="rectsidefrompoint"></a>  CDockSite::RectSideFromPoint
+##  <a name="rectsidefrompoint"></a>Cdocksıte:: RectSideFromPoint
 
 ```
 static int __stdcall RectSideFromPoint(
@@ -653,15 +655,15 @@ static int __stdcall RectSideFromPoint(
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *dikdörtgen*<br/>
+'ndaki *Rect*<br/>
 
-[in] *noktası*<br/>
+'ndaki *nokta*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="removepane"></a>  CDockSite::RemovePane
+##  <a name="removepane"></a>Cdocksıte:: RemovePane
 
 ```
 virtual void RemovePane(
@@ -671,13 +673,13 @@ virtual void RemovePane(
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *pWnd*<br/>
+'ndaki *pWnd*<br/>
 
-[in] *dockMethod*<br/>
+'ndaki *Dockyöntemi*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="removerow"></a>  CDockSite::RemoveRow
+##  <a name="removerow"></a>Cdocksıte:: RemoveRow
 
 ```
 void RemoveRow(CDockingPanesRow* pRow);
@@ -685,11 +687,11 @@ void RemoveRow(CDockingPanesRow* pRow);
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *pRow*<br/>
+'ndaki *Prow*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="replacepane"></a>  CDockSite::ReplacePane
+##  <a name="replacepane"></a>Cdocksıte:: ReplacePane
 
 ```
 BOOL ReplacePane(
@@ -699,15 +701,15 @@ BOOL ReplacePane(
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *pOldBar*<br/>
+'ndaki *Poldbar*<br/>
 
-[in] *pNewBar*<br/>
+'ndaki *pNewBar*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="repositionpanes"></a>  CDockSite::RepositionPanes
+##  <a name="repositionpanes"></a>CDockSite:: Depotiona bölmeleri
 
 ```
 virtual void RepositionPanes(CRect& rectNewClientArea);
@@ -715,11 +717,11 @@ virtual void RepositionPanes(CRect& rectNewClientArea);
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *rectNewClientArea*<br/>
+'ndaki *rectNewClientArea*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="resizedocksite"></a>  CDockSite::ResizeDockSite
+##  <a name="resizedocksite"></a>Cdocksıte:: ResizeDockSite
 
 ```
 void ResizeDockSite(
@@ -729,13 +731,13 @@ void ResizeDockSite(
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *nNewWidth*<br/>
+'ndaki *Nnewwidth*<br/>
 
-[in] *nNewHeight*<br/>
+'ndaki *Nnewheight*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="resizerow"></a>  CDockSite::ResizeRow
+##  <a name="resizerow"></a>Cdocksıte:: ResizeRow
 
 ```
 int ResizeRow(
@@ -746,19 +748,19 @@ int ResizeRow(
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *pRow*<br/>
+'ndaki *Prow*<br/>
 
-[in] *nNewSize*<br/>
+'ndaki *Nnewsize*<br/>
 
-[in] *bAdjustLayout*<br/>
+'ndaki *Roztlayout*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="showpane"></a>  CDockSite::ShowPane
+##  <a name="showpane"></a>Cdocksıte:: ShowPane
 
-Bölmesi gösterir.
+Bölmeyi gösterir.
 
 ```
 virtual BOOL ShowPane(
@@ -771,26 +773,26 @@ virtual BOOL ShowPane(
 ### <a name="parameters"></a>Parametreler
 
 *pBar*<br/>
-[out içinde] Bölmesinde gösterilen veya gizli bir işaretçi.
+[in, out] Görüntülenecek veya gizlenecek bölmeye yönelik bir işaretçi.
 
-*bBilgi Göster*<br/>
-[in] Gösterilecek bölme olduğunu belirtmek için TRUE; Bölmenin gizli olduğunu belirtmek için FALSE.
+*bShow*<br/>
+'ndaki Bölmenin gösterilmekte olduğunu belirtmek için TRUE; Bölmenin gizlenmeyeceğini belirtmek için FALSE.
 
 *bDelay*<br/>
-[in] Bölmesinde gösterilen sonra kadar bölmesinde düzenini geciktirileceğini belirtmek için TRUE; Aksi takdirde FALSE.
+'ndaki Bölme gösterilene kadar bölmenin düzeninin geciktirileceğini belirtmek için TRUE. Aksi takdirde, FALSE.
 
-*bActivate*<br/>
-[in] Bu parametre kullanılmaz.
+*Bacetkinleştir*<br/>
+'ndaki Bu parametre kullanılmaz.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bölmesinde gösterilen veya gizli başarıyla gerekiyorsa TRUE. Belirtilen bölmesinde bu dock sitesine ait değilse FALSE.
+Bölme başarıyla gösteriliyorsa veya gizliyse doğru. Belirtilen bölme bu yerleştirme sitesine ait değilse FALSE.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yerleşik bölmeleri göstermek veya gizlemek için bu yöntemi çağırın. Normalde, çağrı gerekmez `CDockSite::ShowPane` doğrudan temel bölmesinde veya ana çerçeve penceresi tarafından çağrıldığından.
+Sabitlenmiş bölmeleri göstermek veya gizlemek için bu yöntemi çağırın. Normalde, üst çerçeve penceresi veya temel bölme `CDockSite::ShowPane` tarafından çağrıldığı için doğrudan çağırmanız gerekmez.
 
-##  <a name="showrow"></a>  CDockSite::ShowRow
+##  <a name="showrow"></a>Cdocksıte:: ShowRow
 
 ```
 void ShowRow(
@@ -801,15 +803,15 @@ void ShowRow(
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *pRow*<br/>
+'ndaki *Prow*<br/>
 
-[in] *bBilgi Göster*<br/>
+'ndaki *bShow*<br/>
 
-[in] *bAdjustLayout*<br/>
+'ndaki *Roztlayout*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="swaprows"></a>  CDockSite::SwapRows
+##  <a name="swaprows"></a>Cdocksıte:: SwapRows
 
 ```
 void SwapRows(
@@ -819,9 +821,9 @@ void SwapRows(
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *pFirstRow*<br/>
+'ndaki *Pfirstrow*<br/>
 
-[in] *pSecondRow*<br/>
+'ndaki *Psecondrow*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
