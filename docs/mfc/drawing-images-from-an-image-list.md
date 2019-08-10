@@ -7,28 +7,28 @@ helpviewer_keywords:
 - image lists [MFC], drawing images from
 - images [MFC], drawing
 ms.assetid: 2f6063fb-1c28-45f8-a333-008c064db11c
-ms.openlocfilehash: e2058c727620c9aae4ccd9a3fbeaae02c78ce8c6
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e4e60f0e6e4ee22712e4bbce344fd6437cf3db7e
+ms.sourcegitcommit: 46d24d6e70c03e05484923d9efc6ed5150e96a64
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62262807"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68916418"
 ---
 # <a name="drawing-images-from-an-image-list"></a>Resim Listesinden Resim Çizme
 
-Görüntü çizmek için [CImageList::Draw](../mfc/reference/cimagelist-class.md#draw) üye işlevi. Bir cihaz bağlamı nesnesi, çizmek için cihaz bağlamı veren görüntü çizme konumda görüntünün dizinini ve çizim stilini belirtmek için bayrakları bir dizi işaretçi belirteceksiniz.
+Bir görüntü çizmek için, [CImageList::D RAW](../mfc/reference/cimagelist-class.md#draw) üye işlevini kullanın. Bir cihaz bağlam nesnesi, çizilecek görüntünün dizini, görüntünün çizildiği cihaz bağlamındaki konum ve çizim stilini göstermek için bir bayraklar kümesi belirteceksiniz.
 
-Belirttiğinizde **ILD_TRANSPARENT** stili `Draw` maskelenmiş bir görüntü çizin için iki adımlı bir işlem kullanır. İlk olarak, bir mantıksal gerçekleştirir- ve işlem bit görüntünün ve bit maskesi. Ardından bir mantıksal XOR işlemi ilk işlemin sonuçları ve arka plan BITS hedef cihaz bağlamının gerçekleştirir. Bu işlem, saydam alanlara içinde elde edilen görüntü oluşturur; diğer bir deyişle, her beyaz bir bit maskesi içinde saydam olarak elde edilen görüntü içinde karşılık gelen bit neden olur.
+**ILD_TRANSPARENT** stilini belirttiğinizde, `Draw` maskelenmiş bir görüntü çizmek için iki adımlı bir işlem kullanır. İlk olarak, görüntünün bitleri ve maskenin bitleri üzerinde bir mantıksal ve işlem gerçekleştirir. Ardından, ilk işlemin sonuçlarında ve hedef cihaz bağlamının arka plan bitlerinin bir mantıksal-XOR işlemi gerçekleştirir. Bu işlem, sonuçta elde edilen görüntüde saydam alanlar oluşturur; diğer bir deyişle, maskede her bir beyaz bit, sonuçta elde edilen görüntüde karşılık gelen bitin saydam olmasına neden olur.
 
-Düz renk arka plan üzerinde maskelenmiş bir görüntü çizmeden önce kullanmanız gereken [SetBkColor](../mfc/reference/cimagelist-class.md#setbkcolor) hedef aynı renge görüntü listesi arka plan rengini ayarlamak için üye işlevi. Rengi ayarlama saydam alanlara görüntüyü oluşturma ihtiyacını ortadan kaldırır ve sağlar `Draw` yalnızca performansın önemli bir artış výsledek hedef cihaz bağlamının görüntüyü kopyalamak için. Resim çizmek için belirtin **ILD_NORMAL** stil çağırdığınızda `Draw`.
+Maskelenmiş bir görüntüyü düz bir arka planda çizmadan önce, görüntü listesinin arka plan rengini hedefle aynı renge ayarlamak için [SetBkColor](../mfc/reference/cimagelist-class.md#setbkcolor) üye işlevini kullanmanız gerekir. Rengin ayarlanması görüntüde saydam alanlar oluşturma gereksinimini ortadan kaldırır ve `Draw` görüntüyü hedef cihaz bağlamına kopyalamanız sayesinde performansı önemli ölçüde artırır. Görüntüyü çizmek için, çağırdığınızda `Draw` **ILD_NORMAL** stilini belirtin.
 
-Maskeli görüntü listesi arka plan rengini ayarlayabilirsiniz ([Cımagelist](../mfc/reference/cimagelist-class.md)) olan herhangi bir düz arka plan üzerinde doğru şekilde çizer. Bu nedenle, istediğiniz zaman. Arka plan rengini ayarlamak **CLR_NONE** şeffaf bir şekilde varsayılan olarak çizilecek görüntüleri neden olur. Görüntü listesi arka plan rengini almak için kullanın [GetBkColor](../mfc/reference/cimagelist-class.md#getbkcolor) üye işlevi.
+Bir maskelenmiş görüntü listesi ([CImageList](../mfc/reference/cimagelist-class.md)) için arka plan rengini dilediğiniz zaman, herhangi bir katı arka plana doğru bir şekilde çizmiş olacak şekilde ayarlayabilirsiniz. Arka plan renginin **CLR_NONE** olarak ayarlanması görüntülerin varsayılan olarak saydam olarak çizilmesini sağlar. Bir görüntü listesinin arka plan rengini almak için [GetBkColor](../mfc/reference/cimagelist-class.md#getbkcolor) üye işlevini kullanın.
 
-**ILD_BLEND25** ve **ILD_BLEND50** stilleri titreme sistem vurgulama rengiyle görüntü. Kullanıcının seçebileceği bir nesneyi göstermek için maskelenmiş bir görüntü kullanırsanız, bu stilleri yararlıdır. Örneğin, kullanabileceğiniz **ILD_BLEND50** stilini kullanıcı seçtiğinde bir görüntü çizin.
+**ILD_BLEND25** ve **ILD_BLEND50** stilleri, görüntüyü sistem vurgu rengi ile renk taklidi. Bu stiller, kullanıcının seçim kullanabileceği bir nesneyi temsil etmek için maskelenmiş bir görüntü kullanırsanız faydalıdır. Örneğin, **ILD_BLEND50** stilini kullanıcının seçtiği zaman görüntüyü çizmek için kullanabilirsiniz.
 
-Hedef cihaz kullanarak bağlamı nonmasked görüntü kopyalanır `SRCCOPY` ızgara işlemi. Görüntü renkleri arka plan rengi cihaz bağlamının bağımsız olarak aynı görünür. Belirtilen çizim stili `Draw` ayrıca nonmasked görüntünün görünümünü üzerinde hiçbir etkisi yoktur.
+Maskelenmiş olmayan bir görüntü, `SRCCOPY` tarama işlemi kullanılarak hedef cihaz bağlamına kopyalanır. Görüntüdeki renkler, cihaz bağlamının arka plan rengine bakılmaksızın aynı görüntülenir. ' De `Draw` belirtilen çizim stillerinin, maskeli olmayan bir görüntünün görünümü üzerinde hiçbir etkisi yoktur.
 
-Çizme üye işlevi, başka bir işlev yanı sıra [DrawIndirect](../mfc/reference/cimagelist-class.md#drawindirect), görüntü işleme olanağına genişletir. `DrawIndirect` gerçekleştirilen işlemlerin, parametre olarak bir [IMAGELISTDRAWPARAMS](/windows/desktop/api/commctrl/ns-commctrl-_imagelistdrawparams) yapısı. Bu yapı, işleme ızgara işlemi (KIRPMA) kodları kullanımı dahil olmak üzere geçerli görüntünün özelleştirmek için kullanılabilir. KIRPMA kodları hakkında daha fazla bilgi için bkz. [ızgara işlemi kodları](/windows/desktop/gdi/raster-operation-codes) ve [Fırçalar bit eşlemleri](/windows/desktop/gdi/bitmaps-as-brushes) Windows SDK.
+Çiz üye işlevine ek olarak, başka bir işlev olan [DrawIndirect](../mfc/reference/cimagelist-class.md#drawindirect), bir görüntüyü işleme yeteneğini genişletir. `DrawIndirect`, bir [IMAGELISTDRAWPARAMS](/windows/desktop/api/commctrl/ns-commctrl-imagelistdrawparams) yapısı olan bir parametre olarak alır. Bu yapı, raster işlem (ROP) kodlarının kullanımı da dahil olmak üzere geçerli görüntünün işlenmesini özelleştirmek için kullanılabilir. ROP kodları hakkında daha fazla bilgi için, Windows SDK fırçalar olarak [raster Işlem kodları](/windows/desktop/gdi/raster-operation-codes) ve [bit eşlemler](/windows/desktop/gdi/bitmaps-as-brushes) bölümüne bakın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

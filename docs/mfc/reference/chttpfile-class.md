@@ -26,16 +26,16 @@ helpviewer_keywords:
 - CHttpFile [MFC], SendRequest
 - CHttpFile [MFC], SendRequestEx
 ms.assetid: 399e7c68-bbce-4374-8c55-206e9c7baac6
-ms.openlocfilehash: a637ef8feb28396b1427341c8174e9a7adaa69a9
-ms.sourcegitcommit: ecf274bcfe3a977c48745aaa243e5e731f1fdc5f
+ms.openlocfilehash: ff050a89a10c68c639c141891dd51b1b2d58e105
+ms.sourcegitcommit: 46d24d6e70c03e05484923d9efc6ed5150e96a64
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "66503502"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68915992"
 ---
 # <a name="chttpfile-class"></a>CHttpFile sınıfı
 
-İstemek ve bir HTTP sunucusunda dosyaları okumak için gereken işlevleri sağlar.
+Bir HTTP sunucusunda dosya isteme ve okuma işlevlerini sağlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -49,27 +49,27 @@ class CHttpFile : public CInternetFile
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[CHttpFile::CHttpFile](#chttpfile)|Oluşturur bir `CHttpFile` nesne.|
+|[CHttpFile::CHttpFile](#chttpfile)|Bir `CHttpFile` nesnesi oluşturur.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[CHttpFile::AddRequestHeaders](#addrequestheaders)|Bir HTTP sunucusuna gönderilen istek üst bilgileri ekler.|
-|[CHttpFile::EndRequest](#endrequest)|Bir HTTP sunucusu ile gönderilen bir istek [SendRequestEx](#sendrequestex) üye işlevi.|
-|[CHttpFile::GetFileURL](#getfileurl)|Belirtilen dosya için URL'yi alır.|
-|[CHttpFile::GetObject](#getobject)|Fiili hedef nesneye bir HTTP sunucusuna bir istek alır.|
-|[CHttpFile::GetVerb](#getverb)|Bir HTTP sunucusu bir istekte kullanılan fiili alır.|
-|[CHttpFile::QueryInfo](#queryinfo)|HTTP sunucusundan yanıt veya istek üst bilgileri döndürür.|
-|[CHttpFile::QueryInfoStatusCode](#queryinfostatuscode)|Bir HTTP isteği ile ilişkili durum kodunu alır ve sağlanan yerleştirir `dwStatusCode` parametresi.|
-|[CHttpFile::SendRequest](#sendrequest)|Bir isteği HTTP sunucusuna gönderir.|
-|[CHttpFile::SendRequestEx](#sendrequestex)|Bir isteği kullanılarak bir HTTP sunucusuna gönderir [yazma](../../mfc/reference/cinternetfile-class.md#write) veya [WriteString](../../mfc/reference/cinternetfile-class.md#writestring) yöntemlerinin `CInternetFile`.|
+|[CHttpFile:: AddRequestHeaders](#addrequestheaders)|HTTP sunucusuna gönderilen istek için üst bilgiler ekler.|
+|[CHttpFile:: EndRequest](#endrequest)|[SendRequestEx](#sendrequestex) üye işleviyle http sunucusuna gönderilen isteği sonlandırır.|
+|[CHttpFile:: GetFileURL](#getfileurl)|Belirtilen dosyanın URL 'sini alır.|
+|[CHttpFile:: GetObject](#getobject)|Bir HTTP sunucusuna yapılan istekte fiilin hedef nesnesini alır.|
+|[CHttpFile:: GetVerb](#getverb)|HTTP sunucusuna yapılan bir istekte kullanılan fiili 'i alır.|
+|[CHttpFile:: QueryInfo](#queryinfo)|HTTP sunucusundan gelen yanıt veya istek üst bilgilerini döndürür.|
+|[CHttpFile:: Querınınfostatuscode](#queryinfostatuscode)|Bir HTTP isteğiyle ilişkili durum kodunu alır ve sağlanan `dwStatusCode` parametreye koyar.|
+|[CHttpFile:: SendRequest](#sendrequest)|HTTP sunucusuna bir istek gönderir.|
+|[CHttpFile:: SendRequestEx](#sendrequestex)|Bir HTTP sunucusuna, ' ın `CInternetFile` [Write](../../mfc/reference/cinternetfile-class.md#write) veya [WriteString](../../mfc/reference/cinternetfile-class.md#writestring) yöntemlerini kullanarak bir istek gönderir.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Internet oturumunuz bir HTTP sunucusundan veri okuyorsa, örneğini oluşturmalısınız `CHttpFile`.
+Internet oturumunuz bir HTTP sunucusundan verileri okuyorsa, bir örneği `CHttpFile`oluşturmanız gerekir.
 
-Hakkında daha fazla bilgi edinmek için `CHttpFile` diğer Internet MFC sınıfları ile çalışır, başlıklı makaleye bakın [Winınet'in Internet programlama](../../mfc/win32-internet-extensions-wininet.md).
+Diğer MFC Internet sınıflarıyla nasıl `CHttpFile` çalıştığı hakkında daha fazla bilgi edinmek için bkz. [WinINet ile Internet programlama](../../mfc/win32-internet-extensions-wininet.md)makalesi.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -79,17 +79,17 @@ Hakkında daha fazla bilgi edinmek için `CHttpFile` diğer Internet MFC sınıf
 
 [CStdioFile](../../mfc/reference/cstdiofile-class.md)
 
-[Cınternetfile](../../mfc/reference/cinternetfile-class.md)
+[CInternetFile](../../mfc/reference/cinternetfile-class.md)
 
 `CHttpFile`
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxinet.h
+**Üstbilgi:** AFXINET. h
 
-##  <a name="addrequestheaders"></a>  CHttpFile::AddRequestHeaders
+##  <a name="addrequestheaders"></a>CHttpFile:: AddRequestHeaders
 
-Eklemek için bu üye işlevi çağrısı veya daha fazla HTTP isteği için HTTP istek üstbilgilerinin işlemek.
+HTTP istek tanıtıcısına bir veya daha fazla HTTP istek üst bilgisi eklemek için bu üye işlevi çağırın.
 
 ```
 BOOL AddRequestHeaders(
@@ -105,39 +105,39 @@ BOOL AddRequestHeaders(
 ### <a name="parameters"></a>Parametreler
 
 *pstrHeaders*<br/>
-Üst bilgi veya isteği eklemek için üst bilgileri içeren bir dize işaretçisi. Her üst bilgisi tarafından bir CR/LF çiftleri bitmelidir.
+İsteğe eklenecek üstbilgiyi veya üstbilgileri içeren bir dizeye yönelik işaretçi. Her üst bilgi bir CR/LF çifti tarafından sonlandırılmalıdır.
 
-*CertOpenStore*<br/>
-Yeni üst bilgileri semantiği değiştirir. Aşağıdakilerden biri olabilir:
+*dwFlags*<br/>
+Yeni üstbilgilerin semantiğini değiştirir. Aşağıdakilerden biri olabilir:
 
-- Sonraki başlıkta bulunan ilk başlık eklemek için bu bayrağı kullanarak aynı ada sahip üstbilgileri HTTP_ADDREQ_FLAG_COALESCE birleştirir. Örneğin, "kabul et: metin /\*" ardından "kabul et: ses /\*" sonuçları tek üstbilginin oluşturulması "kabul et: metin /\*, ses /\*". Bu birleşik veya ayrı başlıkları gönderilen istekleri tarafından alınan veriler göre cohesive bir düzeni emin olmak için çağıran uygulama kadar olur.
+- HTTP_ADDREQ_FLAG_COALESCE, Sonraki üstbilgiye bulunan ilk üstbilgiyi eklemek için bayrağını kullanarak aynı ada sahip üst bilgileri birleştirir. Örneğin, "kabul et: Text/\*" in ardından "Accept: Audio/\*", tek üstbilginin "Accept: Text/\*, Audio/\*" olarak sonuçlanır. Birleştirme veya ayrı üst bilgiler ile gönderilen isteklere göre alınan verilerle ilgili olarak, birbirine bağlı bir düzen sağlamak için çağıran uygulamaya çalışır.
 
-- HTTP_ADDREQ_FLAG_REPLACE bir kaldırma gerçekleştirir ve geçerli üstbilgi değiştirilecek ekleyin. Tam değeri yeni üst bilgiyi eklemek için kullanılan ve üst bilgi adı geçerli üstbilgiyi kaldırmak için kullanılır. Üst bilgi değeri boş ise ve üst bilgi bulundu, kaldırılır. Aksi halde üst bilgi değeri boş değiştirilir.
+- HTTP_ADDREQ_FLAG_REPLACE, geçerli üst bilgiyi değiştirecek bir Remove ve Add uygular. Üstbilgi adı geçerli üstbilgiyi kaldırmak için kullanılır ve yeni üst bilgiyi eklemek için tam değer kullanılır. Üst bilgi değeri boşsa ve üst bilgi bulunursa, kaldırılır. Boş değilse, üst bilgi değeri değiştirilmiştir.
 
-- Zaten yoksa, yalnızca HTTP_ADDREQ_FLAG_ADD_IF_NEW üstbilgisi ekler. Varsa, hata döndürülür.
+- HTTP_ADDREQ_FLAG_ADD_IF_NEW yalnızca, zaten mevcut değilse üstbilgiyi ekler. Varsa, bir hata döndürülür.
 
-- HTTP_ADDREQ_FLAG_ADD kullanılan değiştirin. Mevcut olmaması halinde üstbilgisi ekler.
+- HTTP_ADDREQ_FLAG_ADD, REPLACE ile kullanılır. Mevcut değilse üst bilgiyi ekler.
 
 *dwHeadersLen*<br/>
-Karakter cinsinden uzunluğu, *pstrHeaders*. Bu,-1 L ardından ise *pstrHeaders* Sıfırla sonlandırılmış olarak kabul edilir ve uzunluğu hesaplanır.
+*PstrHeaders*için karakter cinsinden uzunluk. Bu-1L ise, *pstrHeaders* 'in sıfır ile sonlandırıldığını ve uzunluğunun hesaplandığını kabul edilir.
 
-*str*<br/>
-Bir başvuru bir [CString](../../atl-mfc-shared/reference/cstringt-class.md) eklenecek üst bilgileri ve istek üst bilgisi içeren nesne.
+*üstbilgisine*<br/>
+Eklenecek istek üst bilgisini veya üst bilgileri içeren bir [CString](../../atl-mfc-shared/reference/cstringt-class.md) nesnesine başvuru.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa sıfır dışı; Aksi durumda 0. Çağrı başarısız olursa, Win32 işlevini [GetLastError](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) hatanın nedenini belirlemek için çağrılabilir.
+Başarılı olursa sıfır dışı; Aksi takdirde 0. Çağrı başarısız olursa, hatanın nedenini öğrenmek için [](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) WIN32 Win32 işlevi çağrılabilir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`AddRequestHeaders` ek olarak, serbest biçimli üstbilgileri için HTTP istek işleyicisi ekler. Bu HTTP sunucusuna gönderilen tam istek üzerinde ayrıntılı denetime ihtiyaç duyan Gelişmiş istemciler tarafından kullanılması amaçlanmıştır.
+`AddRequestHeaders`HTTP istek tanıtıcısına ek, serbest biçimli üstbilgiler ekler. HTTP sunucusuna gönderilen tam istek üzerinde ayrıntılı denetim gerektiren Gelişmiş istemciler tarafından kullanılmak üzere tasarlanmıştır.
 
 > [!NOTE]
->  Uygulama birden çok üst bilgilerinde geçirebilirsiniz *pstrHeaders* veya *str* için bir `AddRequestHeaders` HTTP_ADDREQ_FLAG_ADD veya HTTP_ADDREQ_FLAG_ADD_IF_NEW kullanarak çağırın. Uygulamayı kaldırın veya değiştirin HTTP_ADDREQ_FLAG_REMOVE veya HTTP_ADDREQ_FLAG_REPLACE kullanarak üstbilgi çalışırsa, yalnızca bir üst bilgi sağlanabilir *lpszHeaders*.
+>  Uygulama, HTTP_ADDREQ_FLAG_ADD veya HTTP_ADDREQ_FLAG_ADD_IF_NEW kullanarak bir `AddRequestHeaders` çağrı için *pstrHeaders* veya *Str* içinde birden fazla üst bilgi geçirebilir. Uygulama HTTP_ADDREQ_FLAG_REMOVE veya HTTP_ADDREQ_FLAG_REPLACE kullanarak bir üst bilgiyi kaldırmaya veya değiştirmeye çalışırsa, *lpszHeaders*içinde yalnızca bir üst bilgi sağlanabilir.
 
-##  <a name="chttpfile"></a>  CHttpFile::CHttpFile
+##  <a name="chttpfile"></a>CHttpFile::CHttpFile
 
-Bu üye işlevi oluşturmak için çağrılan bir `CHttpFile` nesne.
+Bu üye işlevi bir `CHttpFile` nesne oluşturmak için çağırılır.
 
 ```
 CHttpFile(
@@ -157,36 +157,36 @@ CHttpFile(
 
 ### <a name="parameters"></a>Parametreler
 
-*Hfıle*<br/>
-Bir Internet dosyaya tanıtıcı.
+*hFile*<br/>
+Internet dosyası için bir tanıtıcı.
 
 *hSession*<br/>
-Bir Internet oturumu için bir tanıtıcı.
+Bir Internet oturumu için tanıtıcı.
 
 *pstrObject*<br/>
-İçeren bir dize işaretçisi `CHttpFile` nesne.
+`CHttpFile` Nesneyi içeren bir dize işaretçisi.
 
 *pstrServer*<br/>
 Sunucu adını içeren bir dize işaretçisi.
 
 *pstrVerb*<br/>
-İstek gönderilirken kullanılacak yöntemi içeren bir dize işaretçisi. POST, HEAD, olması veya alma kullanabilirsiniz.
+İstek gönderilirken kullanılacak yöntemi içeren bir dizeye yönelik işaretçi. GÖNDERI, baş veya GET olabilir.
 
 *dwContext*<br/>
-İçerik tanımlayıcısı `CHttpFile` nesne. Bkz: **açıklamalar** Bu parametre hakkında daha fazla bilgi için.
+`CHttpFile` Nesnenin bağlam tanımlayıcısı. Bu parametre hakkında daha fazla bilgi için bkz. **açıklamalar** .
 
 *pConnection*<br/>
-Bir işaretçi bir [CHttpConnection](../../mfc/reference/chttpconnection-class.md) nesne.
+[CHttpConnection](../../mfc/reference/chttpconnection-class.md) nesnesine yönelik bir işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Hiçbir zaman oluşturmak bir `CHttpFile` doğrudan nesne; bunun yerine çağrı [CInternetSession::OpenURL](../../mfc/reference/cinternetsession-class.md#openurl) veya [CHttpConnection::OpenRequest](../../mfc/reference/chttpconnection-class.md#openrequest) yerine.
+Hiçbir şey doğrudan bir `CHttpFile` nesne oluşturun; bunun yerine [CInternetSession:: OpenURL](../../mfc/reference/cinternetsession-class.md#openurl) veya [CHttpConnection:: OpenRequest](../../mfc/reference/chttpconnection-class.md#openrequest) ' i çağırın.
 
-İçin varsayılan değer `dwContext` MFC'ye tarafından gönderilen `CHttpFile` nesnesinden [Cınternetsession](../../mfc/reference/cinternetsession-class.md) oluşturulan nesne `CHttpFile` nesne. Çağırdığınızda `CInternetSession::OpenURL` veya `CHttpConnection` oluşturmak için bir `CHttpFile` nesne bağlamı tanımlayıcısını bir değere ayarlamak için varsayılan kılabilir. İçerik tanımlayıcısı döndürülür [CInternetSession::OnStatusCallback](../../mfc/reference/cinternetsession-class.md#onstatuscallback) durumu ile belirtilen nesneye sağlamak için. Makaleye göz atın [Internet ilk adımlar: WinINet](../../mfc/wininet-basics.md) bağlam tanımlayıcısı hakkında daha fazla bilgi.
+Varsayılan değeri `dwContext` , MFC `CHttpFile` tarafından `CHttpFile` nesneyi oluşturan [CInternetSession](../../mfc/reference/cinternetsession-class.md) nesnesinden nesnesine gönderilir. Bir nesne oluşturduğunuzda `CHttpConnection` `CHttpFile` veya bir nesnesi oluşturmak için, bağlam tanımlayıcısını seçtiğiniz bir değere ayarlamak için varsayılanı geçersiz kılabilirsiniz. `CInternetSession::OpenURL` Bağlam tanımlayıcısı, tanımlanan nesne üzerinde durum sağlamak için [CInternetSession:: OnStatusCallback](../../mfc/reference/cinternetsession-class.md#onstatuscallback) öğesine döndürülür. Bkz. [Internet ilk adımlar: Bağlam](../../mfc/wininet-basics.md) tanımlayıcısı hakkında daha fazla bilgi için WinINet.
 
-##  <a name="endrequest"></a>  CHttpFile::EndRequest
+##  <a name="endrequest"></a>CHttpFile:: EndRequest
 
-Bir HTTP sunucusu ile gönderilen bir istek sonlandırmak için bu üye işlevi çağrısı [SendRequestEx](#sendrequestex) üye işlevi.
+[SendRequestEx](#sendrequestex) üye IŞLEVIYLE bir http sunucusuna gönderilen isteği sonlandırmak için bu üye işlevini çağırın.
 
 ```
 BOOL EndRequest(
@@ -197,26 +197,26 @@ BOOL EndRequest(
 
 ### <a name="parameters"></a>Parametreler
 
-*CertOpenStore*<br/>
-İşlemi tanımlayan bayraklar. Uygun bayrakların listesi için bkz. [HttpEndRequest](/windows/desktop/api/wininet/nf-wininet-httpendrequesta) Windows SDK.
+*dwFlags*<br/>
+İşlemi açıklayan bayraklar. Uygun bayrakların bir listesi için, Windows SDK [HttpEndRequest](/windows/desktop/api/wininet/nf-wininet-httpendrequesta) bölümüne bakın.
 
 *lpBuffIn*<br/>
-Başlatılan bir işaretçiye [INTERNET_BUFFERS](/windows/desktop/api/wininet/ns-wininet-_internet_buffersa) işlemi için kullanılan giriş arabelleği açıklar.
+İşlem için kullanılan giriş arabelleğini açıklayan başlatılmış bir [INTERNET_BUFFERS](/windows/desktop/api/wininet/ns-wininet-internet_buffersa) işaretçisi.
 
 *dwContext*<br/>
-İçerik tanımlayıcısı `CHttpFile` işlemi. Açıklamalar Bu parametre hakkında daha fazla bilgi için bkz.
+`CHttpFile` İşlemin bağlam tanımlayıcısı. Bu parametre hakkında daha fazla bilgi için bkz. açıklamalar.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa sıfır dışı; Aksi durumda 0. Oluşturulan inceleyerek çağrı başarısız olursa hatanın nedenini belirlemek [Cınternetexception](../../mfc/reference/cinternetexception-class.md) nesne.
+Başarılı olursa sıfır dışı; Aksi takdirde 0. Çağrı başarısız olursa, oluşturulan [CInternetException](../../mfc/reference/cinternetexception-class.md) nesnesini inceleyerek hatanın nedenini saptayın.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İçin varsayılan değer *dwContext* MFC'ye tarafından gönderilen `CHttpFile` nesnesinden [Cınternetsession](../../mfc/reference/cinternetsession-class.md) oluşturulan nesne `CHttpFile` nesne. Çağırdığınızda [CInternetSession::OpenURL](../../mfc/reference/cinternetsession-class.md#openurl) veya [CHttpConnection](../../mfc/reference/chttpconnection-class.md) oluşturmak için bir `CHttpFile` nesne bağlamı tanımlayıcısını bir değere ayarlamak için varsayılan kılabilir. İçerik tanımlayıcısı döndürülür [CInternetSession::OnStatusCallback](../../mfc/reference/cinternetsession-class.md#onstatuscallback) durumu ile belirtilen nesneye sağlamak için. Makalesine bakın [Internet ilk adımlar: WinINet](../../mfc/wininet-basics.md) bağlam tanımlayıcısı hakkında daha fazla bilgi.
+*DwContext* için varsayılan değer, MFC `CHttpFile` tarafından `CHttpFile` nesneyi oluşturan [CInternetSession](../../mfc/reference/cinternetsession-class.md) nesnesinden nesnesine gönderilir. Bir`CHttpFile` nesne oluşturmak için [CInternetSession:: OpenURL](../../mfc/reference/cinternetsession-class.md#openurl) veya [CHttpConnection](../../mfc/reference/chttpconnection-class.md) ' ı çağırdığınızda, bağlam tanımlayıcısını seçtiğiniz bir değere ayarlamak için varsayılanı geçersiz kılabilirsiniz. Bağlam tanımlayıcısı, tanımlanan nesne üzerinde durum sağlamak için [CInternetSession:: OnStatusCallback](../../mfc/reference/cinternetsession-class.md#onstatuscallback) öğesine döndürülür. Bkz. [Internet 'te ilk adımlar: Bağlam](../../mfc/wininet-basics.md) tanımlayıcısı hakkında daha fazla bilgi için WinINet.
 
-##  <a name="getfileurl"></a>  CHttpFile::GetFileURL
+##  <a name="getfileurl"></a>CHttpFile:: GetFileURL
 
-URL olarak HTTP dosyasının adını almak için bu üye işlevini çağırın.
+HTTP dosyasının adını bir URL olarak almak için bu üye işlevi çağırın.
 
 ```
 virtual CString GetFileURL() const;
@@ -224,15 +224,15 @@ virtual CString GetFileURL() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-A [CString](../../atl-mfc-shared/reference/cstringt-class.md) bu dosyayla ilişkili kaynak başvuran bir URL içeren bir nesne.
+Bu dosyayla ilişkili kaynağa başvuran bir URL içeren bir [CString](../../atl-mfc-shared/reference/cstringt-class.md) nesnesi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yalnızca başarılı çağrısı yapıldıktan sonra bu üye işlevi kullanın [SendRequest](#sendrequest) veya bir `CHttpFile` başarıyla tarafından oluşturulan nesne [OpenURL](../../mfc/reference/cinternetsession-class.md#openurl).
+Bu üye işlevini yalnızca [SendRequest](#sendrequest) 'e başarılı bir çağrıdan veya [OpenURL](../../mfc/reference/cinternetsession-class.md#openurl)tarafından başarıyla `CHttpFile` oluşturulan bir nesnede kullanın.
 
-##  <a name="getobject"></a>  CHttpFile::GetObject
+##  <a name="getobject"></a>CHttpFile:: GetObject
 
-Bununla ilişkili nesnenin adını almak için bu üye işlevi çağrısı `CHttpFile`.
+Bununla ilişkili `CHttpFile`nesnenin adını almak için bu üye işlevi çağırın.
 
 ```
 CString GetObject() const;
@@ -240,15 +240,15 @@ CString GetObject() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-A [CString](../../atl-mfc-shared/reference/cstringt-class.md) nesnesinin adını içeren bir nesne.
+Nesnenin adını içeren bir [CString](../../atl-mfc-shared/reference/cstringt-class.md) nesnesi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yalnızca başarılı çağrısı yapıldıktan sonra bu üye işlevi kullanın [SendRequest](#sendrequest) veya bir `CHttpFile` başarıyla tarafından oluşturulan nesne [OpenURL](../../mfc/reference/cinternetsession-class.md#openurl).
+Bu üye işlevini yalnızca [SendRequest](#sendrequest) 'e başarılı bir çağrıdan veya [OpenURL](../../mfc/reference/cinternetsession-class.md#openurl)tarafından başarıyla `CHttpFile` oluşturulan bir nesnede kullanın.
 
-##  <a name="getverb"></a>  CHttpFile::GetVerb
+##  <a name="getverb"></a>CHttpFile:: GetVerb
 
-HTTP fiili (veya yöntem) ile ilişkili almak için bu üye işlevi çağrısı `CHttpFile`.
+Bu `CHttpFile`üye işlevini, bununla ilişkili http fiilini (veya yöntemini) almak için çağırın.
 
 ```
 CString GetVerb() const;
@@ -256,15 +256,15 @@ CString GetVerb() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-A [CString](../../atl-mfc-shared/reference/cstringt-class.md) HTTP fiili (veya yöntem) adını içeren bir nesne.
+HTTP fiilinin adını (veya yöntemini) içeren bir [CString](../../atl-mfc-shared/reference/cstringt-class.md) nesnesi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yalnızca başarılı çağrısı yapıldıktan sonra bu üye işlevi kullanın [SendRequest](#sendrequest) veya bir `CHttpFile` başarıyla tarafından oluşturulan nesne [OpenURL](../../mfc/reference/cinternetsession-class.md#openurl).
+Bu üye işlevini yalnızca [SendRequest](#sendrequest) 'e başarılı bir çağrıdan veya [OpenURL](../../mfc/reference/cinternetsession-class.md#openurl)tarafından başarıyla `CHttpFile` oluşturulan bir nesnede kullanın.
 
-##  <a name="queryinfo"></a>  CHttpFile::QueryInfo
+##  <a name="queryinfo"></a>CHttpFile:: QueryInfo
 
-Yanıt döndürmesine veya bir HTTP isteğinden istek üst bilgileri, bu üye işlevini çağırın.
+HTTP isteğinden yanıt veya istek üst bilgilerini döndürmek için bu üye işlevi çağırın.
 
 ```
 BOOL QueryInfo(
@@ -287,55 +287,55 @@ BOOL QueryInfo(
 ### <a name="parameters"></a>Parametreler
 
 *dwInfoLevel*<br/>
-Öznitelik sorgu ve istenen bilgi türünü belirten aşağıdaki bayrakları birleşimi:
+Sorgulanacak özniteliğin bir birleşimi ve istenen bilgi türünü belirten aşağıdaki bayraklar:
 
-- HTTP_QUERY_CUSTOM üst bilgi adı bulur ve bu değeri döndürür *lpvBuffer* çıktıyı. Üst bilgi bulunamazsa HTTP_QUERY_CUSTOM bir onaylama işlemi oluşturur.
+- HTTP_QUERY_CUSTOM üst bilgi adını bulur ve çıktıda *lpvBuffer* içinde bu değeri döndürür. HTTP_QUERY_CUSTOM, üst bilgi bulunmazsa bir onaylama işlemi oluşturur.
 
-- Uygulama yanıt üstbilgilerini genellikle HTTP_QUERY_FLAG_REQUEST_HEADERS sorgular, ancak bir uygulama da istek üst bilgilerini bu bayrağı kullanarak sorgulayabilirsiniz.
+- HTTP_QUERY_FLAG_REQUEST_HEADERS genellikle uygulama, yanıt üst bilgilerini sorgular, ancak bir uygulama bu bayrağı kullanarak istek üstbilgilerini de sorgulayabilir.
 
-- HTTP_QUERY_FLAG_SYSTEMTIME değeri olan "En son değiştiren-zamanı" gibi bir tarih/saat dizesinin bu üst bilgiler için bu bayrağı döndürür üst bilgi değeri olarak standart bir Win32 [SYSTEMTIME](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime) uygulamaya gerektirmeyen yapısı ayrıştırılması denenecek veriler. Bu bayrağı kullanmanız durumunda kullanmak isteyebilirsiniz `SYSTEMTIME` işlevi geçersiz kılar.
+- HTTP_QUERY_FLAG_SYSTEMTIME değeri bir tarih/saat dizesi olan ("son değiştirilme zamanı" gibi), bu bayrak üst bilgi değerini uygulamanın verileri ayrıştırmasına gerek olmayan standart bir Win32 [SystemTime](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime) yapısı olarak döndürür. Bu bayrağı kullanırsanız, işlevini `SYSTEMTIME` geçersiz kılmayı kullanmak isteyebilirsiniz.
 
-- HTTP_QUERY_FLAG_NUMBER durum kodu gibi bir sayı olan değerdir, bu üst bilgiler için bu bayrağı veri 32 bit bir sayı döndürür.
+- Değer, durum kodu gibi bir sayı olan bu üstbilgiler Için HTTP_QUERY_FLAG_NUMBER, bu bayrak, verileri 32 bitlik bir sayı olarak döndürür.
 
-Bkz: **açıklamalar** bölümünde bir liste için olası değerler.
+Olası değerlerin listesi için **açıklamalar** bölümüne bakın.
 
 *lpvBuffer*<br/>
-Bilgileri alan arabellek için işaretçi.
+Bilgileri alan arabelleğin işaretçisi.
 
 *lpdwBufferLength*<br/>
-Girişte veri arabelleği karakter veya bayt cinsinden uzunluğunu içeren bir değeri bu işaret eder. Bkz: **açıklamalar** Bu parametre hakkında daha fazla ayrıntı için bölüm.
+Girişte, bu, karakter veya bayt sayısı cinsinden veri arabelleğinin uzunluğunu içeren bir değere işaret eder. Bu parametre hakkında daha ayrıntılı bilgi için **açıklamalar** bölümüne bakın.
 
 *lpdwIndex*<br/>
-Sıfır tabanlı üstbilgi dizini için bir işaretçi. NULL olabilir. Aynı ada sahip birden çok üst bilgi numaralandırmak için bu bayrağı kullanın. Giriş üzerinde *lpdwIndex* döndürmek için belirtilen üstbilgi dizinini gösterir. Çıktıyı *lpdwIndex* sonraki üstbilgi dizinini gösterir. Sonraki dizin bulunamazsa ERROR_HTTP_HEADER_NOT_FOUND döndürülür.
+Sıfır tabanlı üst bilgi dizinine yönelik bir işaretçi. NULL olabilir. Aynı ada sahip birden fazla üstbilgiyi numaralandırmak için bu bayrağı kullanın. Giriş sayfasında *lpdwIndex* , döndürülecek belirtilen üstbilginin dizinini gösterir. Çıkışta, *Lpdwını* , sonraki üstbilginin dizinini gösterir. Sonraki dizin bulunamazsa, ERROR_HTTP_HEADER_NOT_FOUND döndürülür.
 
-*str*<br/>
-Bir başvuru [CString](../../atl-mfc-shared/reference/cstringt-class.md) döndürülen bilgileri alan nesne.
+*üstbilgisine*<br/>
+Döndürülen bilgileri alan [CString](../../atl-mfc-shared/reference/cstringt-class.md) nesnesine bir başvuru.
 
 *dwIndex*<br/>
-Bir dizin değeri. Bkz: *lpdwIndex*.
+Bir dizin değeri. Bkz. *lpdwIndex*.
 
 *pSysTime*<br/>
-Bir Win32 işaretçisi [SYSTEMTIME](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime) yapısı.
+Win32 [SystemTime](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime) yapısına yönelik bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa sıfır dışı; Aksi durumda 0. Çağrı başarısız olursa, Win32 işlevini [GetLastError](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) hatanın nedenini belirlemek için çağrılabilir.
+Başarılı olursa sıfır dışı; Aksi takdirde 0. Çağrı başarısız olursa, hatanın nedenini öğrenmek için [](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) WIN32 Win32 işlevi çağrılabilir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yalnızca başarılı çağrısı yapıldıktan sonra bu üye işlevi kullanın [SendRequest](#sendrequest) veya bir `CHttpFile` başarıyla tarafından oluşturulan nesne [OpenURL](../../mfc/reference/cinternetsession-class.md#openurl).
+Bu üye işlevini yalnızca [SendRequest](#sendrequest) 'e başarılı bir çağrıdan veya [OpenURL](../../mfc/reference/cinternetsession-class.md#openurl)tarafından başarıyla `CHttpFile` oluşturulan bir nesnede kullanın.
 
-Aşağıdaki türde verileri alabilirsiniz `QueryInfo`:
+Aşağıdaki veri türlerini şuradan `QueryInfo`alabilirsiniz:
 
-- dize (varsayılan)
+- dizeler (varsayılan)
 
-- `SYSTEMTIME` (için "veri:" "Expires:" vb., üst bilgiler)
+- `SYSTEMTIME`("veri:" "süre sonu:" vb. başlıklar)
 
-- DWORD (için STATUS_CODE CONTENT_LENGTH, vs.)
+- DWORD (STATUS_CODE, CONTENT_LENGTH vb.)
 
-Bir dizeyi arabelleğe yazılır ve üye işlevi başarılı, `lpdwBufferLength` uzunluğu eksi sondaki boş karakter için 1 karakter dizesi içerir.
+Bir dize, arabelleğe yazıldığında ve üye işlevi başarılı olursa, Sonlandırıcı null karakteri için `lpdwBufferLength` , karakter cinsinden bir dizenin uzunluğunu eksi 1 olarak içerir.
 
-Olası *dwInfoLevel* değerler şunlardır:
+Olası *dwInfoLevel* değerleri şunlardır:
 
 - HTTP_QUERY_MIME_VERSION
 
@@ -383,9 +383,9 @@ Olası *dwInfoLevel* değerler şunlardır:
 
 - HTTP_QUERY_RAW_HEADERS_CRLF
 
-##  <a name="queryinfostatuscode"></a>  CHttpFile::QueryInfoStatusCode
+##  <a name="queryinfostatuscode"></a>CHttpFile:: Querınınfostatuscode
 
-Bir HTTP isteği ile ilişkili durum kodunu almak için bu üye işlevini çağırın ve sağlanan yerleştirin *dwStatusCode* parametresi.
+Bir HTTP isteğiyle ilişkili durum kodunu almak ve sağlanan *dwStatusCode* parametresine yerleştirmek için bu üye işlevi çağırın.
 
 ```
 BOOL QueryInfoStatusCode(DWORD& dwStatusCode) const;
@@ -394,17 +394,17 @@ BOOL QueryInfoStatusCode(DWORD& dwStatusCode) const;
 ### <a name="parameters"></a>Parametreler
 
 *dwStatusCode*<br/>
-Bir durum kodu bir başvuru. Durum kodları, başarı veya başarısızlık istenen olay gösterir. Bkz: **açıklamalar** durum kodu tanımları seçimi için.
+Bir durum koduna başvuru. Durum kodları, istenen olayın başarısını veya başarısızlığını gösterir. Durum kodu açıklamaları seçimine ilişkin **açıklamalar** bölümüne bakın.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa sıfır dışı; Aksi durumda 0. Çağrı başarısız olursa, Win32 işlevini [GetLastError](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) hatanın nedenini belirlemek için çağrılabilir.
+Başarılı olursa sıfır dışı; Aksi takdirde 0. Çağrı başarısız olursa, hatanın nedenini öğrenmek için [](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) WIN32 Win32 işlevi çağrılabilir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yalnızca başarılı çağrısı yapıldıktan sonra bu üye işlevi kullanın [SendRequest](#sendrequest) veya bir `CHttpFile` başarıyla tarafından oluşturulan nesne [OpenURL](../../mfc/reference/cinternetsession-class.md#openurl).
+Bu üye işlevini yalnızca [SendRequest](#sendrequest) 'e başarılı bir çağrıdan veya [OpenURL](../../mfc/reference/cinternetsession-class.md#openurl)tarafından başarıyla `CHttpFile` oluşturulan bir nesnede kullanın.
 
-HTTP durum kodları başarılı veya başarısız istek belirten gruplara ayrılır. Aşağıdaki tabloda ana hatlarıyla durumu kod gruplarını ve en yaygın HTTP durum kodları.
+HTTP durum kodları, isteğin başarısını veya başarısızlığını belirten gruplara girer. Aşağıdaki tablolarda durum kodu grupları ve en sık kullanılan HTTP durum kodları ana hatlarıyla verilmiştir.
 
 |Grup|Açıklama|
 |-----------|-------------|
@@ -417,16 +417,16 @@ Ortak HTTP durum kodları:
 
 |Durum kodu|Açıklama|
 |-----------------|-------------|
-|200|İletim bulunan URL izler|
-|400|Anlamsız isteği|
+|200|URL bulunuyor, iletim takip ediyor|
+|400|Anlaşılır olmayan istek|
 |404|İstenen URL bulunamadı|
 |405|Sunucu istenen yöntemi desteklemiyor|
 |500|Bilinmeyen sunucu hatası|
-|503|Sunucu kapasitesini ulaşıldı|
+|503|Sunucu kapasitesine ulaşıldı|
 
-##  <a name="sendrequest"></a>  CHttpFile::SendRequest
+##  <a name="sendrequest"></a>CHttpFile:: SendRequest
 
-Bir HTTP sunucusuna bir istek göndermek için bu üye işlevini çağırın.
+Bir HTTP sunucusuna istek göndermek için bu üye işlevi çağırın.
 
 ```
 BOOL SendRequest(
@@ -444,27 +444,27 @@ BOOL SendRequest(
 ### <a name="parameters"></a>Parametreler
 
 *pstrHeaders*<br/>
-Üst bilgileri gönderme adını içeren bir dize işaretçisi.
+Gönderileceği üst bilgilerin adını içeren bir dize işaretçisi.
 
 *dwHeadersLen*<br/>
-Tarafından tanımlanan Üstbilgi uzunluğu *pstrHeaders*.
+*PstrHeaders*tarafından tanımlanan üst bilgilerin uzunluğu.
 
-*lpOptional*<br/>
-İstek üstbilgilerini hemen sonra göndermek için isteğe bağlı tüm veriler. Bu, genellikle POST ve PUT işlemleri için kullanılır. İsteğe bağlı veri göndermek için yoksa bu boş olabilir.
+*Lpopıll*<br/>
+İstek üstbilgilerinden hemen sonra göndermek için isteğe bağlı veriler. Bu genellikle POST ve PUT işlemlerinde kullanılır. Bu, göndermek için isteğe bağlı veri yoksa NULL olabilir.
 
 *dwOptionalLen*<br/>
-Uzunluğunu *lpOptional*.
+*Lpopsel*uzunluğu.
 
 *strHeaders*<br/>
-Gönderilen istek için üstbilgileri adını içeren bir dize.
+Gönderilmekte olan istek için üst bilgilerin adını içeren bir dize.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa sıfır dışı; Aksi durumda 0. Oluşturulan inceleyerek çağrı başarısız olursa hatanın nedenini belirlemek [Cınternetexception](../../mfc/reference/cinternetexception-class.md) nesne.
+Başarılı olursa sıfır dışı; Aksi takdirde 0. Çağrı başarısız olursa, oluşturulan [CInternetException](../../mfc/reference/cinternetexception-class.md) nesnesini inceleyerek hatanın nedenini saptayın.
 
-##  <a name="sendrequestex"></a>  CHttpFile::SendRequestEx
+##  <a name="sendrequestex"></a>CHttpFile:: SendRequestEx
 
-Bir HTTP sunucusuna bir istek göndermek için bu üye işlevini çağırın.
+Bir HTTP sunucusuna istek göndermek için bu üye işlevi çağırın.
 
 ```
 BOOL SendRequestEx(
@@ -484,33 +484,33 @@ BOOL SendRequestEx(
 *dwTotalLen*<br/>
 İstekte gönderilecek bayt sayısı.
 
-*CertOpenStore*<br/>
-İşlemi tanımlayan bayraklar. Uygun bayrakları bir listesi için bkz. [HttpSendRequestEx](/windows/desktop/api/wininet/nf-wininet-httpsendrequestexa) Windows SDK.
+*dwFlags*<br/>
+İşlemi açıklayan bayraklar. Uygun bayrakların bir listesi için, Windows SDK bkz. [HttpSendRequestEx](/windows/desktop/api/wininet/nf-wininet-httpsendrequestexa) .
 
 *dwContext*<br/>
-İçerik tanımlayıcısı `CHttpFile` işlemi. Açıklamalar Bu parametre hakkında daha fazla bilgi için bkz.
+`CHttpFile` İşlemin bağlam tanımlayıcısı. Bu parametre hakkında daha fazla bilgi için bkz. açıklamalar.
 
 *lpBuffIn*<br/>
-Başlatılan bir işaretçiye [INTERNET_BUFFERS](/windows/desktop/api/wininet/ns-wininet-_internet_buffersa) işlemi için kullanılan giriş arabelleği açıklar.
+İşlem için kullanılan giriş arabelleğini açıklayan başlatılmış bir [INTERNET_BUFFERS](/windows/desktop/api/wininet/ns-wininet-internet_buffersa) işaretçisi.
 
 *lpBuffOut*<br/>
-İşlem için kullanılan çıkış arabelleği açıklayan bir başlatılmış INTERNET_BUFFERS işaretçisi.
+İşlem için kullanılan çıkış arabelleğini açıklayan başlatılmış bir INTERNET_BUFFERS işaretçisi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa sıfır dışı. Oluşturulan inceleyerek çağrı başarısız olursa hatanın nedenini belirlemek [Cınternetexception](../../mfc/reference/cinternetexception-class.md) nesne.
+Başarılı olursa sıfır dışı. Çağrı başarısız olursa, oluşturulan [CInternetException](../../mfc/reference/cinternetexception-class.md) nesnesini inceleyerek hatanın nedenini saptayın.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Uygulamanızı kullanarak veri göndermek bu işlevi sağlayan [yazma](../../mfc/reference/cinternetfile-class.md#write) ve [WriteString](../../mfc/reference/cinternetfile-class.md#writestring) yöntemlerinin `CInternetFile`. Bu işlevin ya da geçersiz kılma çağırmadan önce gönderilecek veri uzunluğu bilmeniz gerekir. İlk geçersiz kılma göndermek istediğiniz verilerin belirtmenizi sağlar. İkinci geçersiz kılma arabellek çok ayrıntılı olarak tanımlamak için kullanılabilecek INTERNET_BUFFERS yapılarına işaretçileri kabul eder.
+Bu işlev, uygulamanızın [Write](../../mfc/reference/cinternetfile-class.md#write) ve [WriteString](../../mfc/reference/cinternetfile-class.md#writestring) yöntemlerini `CInternetFile`kullanarak veri göndermesini sağlar. Bu işlevin geçersiz kılınması çağrılmadan önce göndermek için verilerin uzunluğunu bilmeniz gerekir. İlk geçersiz kılma, göndermek istediğiniz verilerin uzunluğunu belirtmenize olanak tanır. İkinci geçersiz kılma, INTERNET_BUFFERS yapılarının işaretçilerini kabul eder ve bu da, arabelleği en iyi şekilde tanımlayan şekilde kullanılabilir.
 
-İçeriği dosyaya yazıldıktan sonra çağırma [EndRequest](#endrequest) işlemi sonlandırmak için.
+İçerik dosyaya yazıldıktan sonra, işlemi sonlandırmak için [EndRequest](#endrequest) ' i çağırın.
 
-İçin varsayılan değer *dwContext* MFC'ye tarafından gönderilen `CHttpFile` nesnesinden [Cınternetsession](../../mfc/reference/cinternetsession-class.md) oluşturulan nesne `CHttpFile` nesne. Çağırdığınızda [CInternetSession::OpenURL](../../mfc/reference/cinternetsession-class.md#openurl) veya [CHttpConnection](../../mfc/reference/chttpconnection-class.md) oluşturmak için bir `CHttpFile` nesne bağlamı tanımlayıcısını bir değere ayarlamak için varsayılan kılabilir. İçerik tanımlayıcısı döndürülür [CInternetSession::OnStatusCallback](../../mfc/reference/cinternetsession-class.md#onstatuscallback) durumu ile belirtilen nesneye sağlamak için. Makaleye göz atın [Internet ilk adımlar: WinINet](../../mfc/wininet-basics.md) bağlam tanımlayıcısı hakkında daha fazla bilgi.
+*DwContext* için varsayılan değer, MFC `CHttpFile` tarafından `CHttpFile` nesneyi oluşturan [CInternetSession](../../mfc/reference/cinternetsession-class.md) nesnesinden nesnesine gönderilir. Bir`CHttpFile` nesne oluşturmak için [CInternetSession:: OpenURL](../../mfc/reference/cinternetsession-class.md#openurl) veya [CHttpConnection](../../mfc/reference/chttpconnection-class.md) ' ı çağırdığınızda, bağlam tanımlayıcısını seçtiğiniz bir değere ayarlamak için varsayılanı geçersiz kılabilirsiniz. Bağlam tanımlayıcısı, tanımlanan nesne üzerinde durum sağlamak için [CInternetSession:: OnStatusCallback](../../mfc/reference/cinternetsession-class.md#onstatuscallback) öğesine döndürülür. Bkz. [Internet ilk adımlar: Bağlam](../../mfc/wininet-basics.md) tanımlayıcısı hakkında daha fazla bilgi için WinINet.
 
 ### <a name="example"></a>Örnek
 
-Bu kod parçasını MFCISAPI adlı bir DLL için bir dize içeriği gönderir. DLL LOCALHOST sunucusunda. Bu örnekte yalnızca bir çağrı sırasında `WriteString`, bloklarında veri göndermek için birden çok çağrı kullanarak kabul edilebilir.
+Bu kod parçası, bir dizenin içeriğini MFCıSAPı adlı bir DLL 'ye gönderir. DLL 'yi LOCALHOST sunucusunda yapın. Bu örnek için `WriteString`yalnızca bir çağrısı kullandığından, blok halinde veri göndermek için birden çok çağrı kullanılması kabul edilebilir.
 
 [!code-cpp[NVC_MFCWinInet#9](../../mfc/codesnippet/cpp/chttpfile-class_1.cpp)]
 

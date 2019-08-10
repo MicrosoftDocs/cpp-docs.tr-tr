@@ -7,18 +7,18 @@ helpviewer_keywords:
 - CRichEditCtrl class [MFC], paragraph formatting in
 - formatting [MFC], paragraphs
 ms.assetid: 0df2e4c9-2074-4e41-b913-87cb8c1b4d43
-ms.openlocfilehash: baee4863bee9b96e7a850e70b8f13388f69b41cf
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 0988e7940c8d8947b86e97a35d71586f8f5c316a
+ms.sourcegitcommit: 46d24d6e70c03e05484923d9efc6ed5150e96a64
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62218838"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68916370"
 ---
 # <a name="paragraph-formatting-in-rich-edit-controls"></a>Zengin Düzenleme Denetimlerinde Paragraf Biçimlendirme
 
-Zengin Düzenleme denetiminin üye işlevleri kullanabilirsiniz ([CRichEditCtrl](../mfc/reference/cricheditctrl-class.md)) paragraflar biçimlendirmek ve biçimlendirme bilgileri alınamıyor. Hizalama, sekmeler, girintileri ve numaralandırma paragraf biçimlendirme öznitelikleri içerir.
+Paragrafları biçimlendirmek ve biçimlendirme bilgilerini almak için zengin düzenleme denetiminin ([CRichEditCtrl](../mfc/reference/cricheditctrl-class.md)) üye işlevlerini kullanabilirsiniz. Paragraf biçimlendirme öznitelikleri hizalama, sekmeler, girintiler ve numaralandırma içerir.
 
-Paragraf kullanarak biçimlendirme uygulayabilirsiniz [SetParaFormat](../mfc/reference/cricheditctrl-class.md#setparaformat) üye işlevi. Seçili metin için geçerli paragraf belirlemek için [GetParaFormat](../mfc/reference/cricheditctrl-class.md#getparaformat) üye işlevi. [PARAFORMAT](/windows/desktop/api/richedit/ns-richedit-_paraformat) yapısı, paragraf öznitelikleri belirtmek için bu üye işlevleri ile kullanılır. Önemli üyelerinden birinde **PARAFORMAT** olduğu *dwMask*. İçinde `SetParaFormat`, *dwMask* paragraf öznitelikleri bu işlev çağrısına göre ayarlanacağını belirtir. `GetParaFormat` Seçimdeki ilk paragrafa özniteliklerini bildirir; *dwMask* seçimi tutarlı öznitelikleri belirtir.
+[SetParaFormat](../mfc/reference/cricheditctrl-class.md#setparaformat) üye işlevini kullanarak paragraf biçimlendirme uygulayabilirsiniz. Seçili metin için geçerli paragraf biçimlendirmesini öğrenmek için [GetParaFormat](../mfc/reference/cricheditctrl-class.md#getparaformat) üye işlevini kullanın. [Paraformat](/windows/desktop/api/richedit/ns-richedit-paraformat) yapısı, paragraf özniteliklerini belirtmek için bu üye işlevlerle birlikte kullanılır. **Paraformat** 'ın önemli üyelerinden biri *dwMask*. ' `SetParaFormat`De, *dwMask* bu işlev çağrısı tarafından ayarlanacak paragraf özniteliklerini belirtir. `GetParaFormat`seçimdeki ilk paragrafın özniteliklerini raporlar; *dwMask* seçim boyunca tutarlı olan öznitelikleri belirtir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

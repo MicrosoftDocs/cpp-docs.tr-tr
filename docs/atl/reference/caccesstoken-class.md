@@ -52,19 +52,19 @@ f1_keywords:
 helpviewer_keywords:
 - CAccessToken class
 ms.assetid: bb5c5945-56a5-4083-b442-76573cee83ab
-ms.openlocfilehash: d66b126ce5fd6c3da80d2bb4e6322f8180f0b8cf
-ms.sourcegitcommit: 9b904e490b1e262293a602bd1291a8f3045e755b
+ms.openlocfilehash: fa50282f3aa1f4db3ebf6306fa9dc3dab1311d1b
+ms.sourcegitcommit: 46d24d6e70c03e05484923d9efc6ed5150e96a64
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67552188"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68915906"
 ---
 # <a name="caccesstoken-class"></a>CAccessToken sınıfı
 
-Bir erişim belirteci için bir sarmalayıcı sınıftır.
+Bu sınıf, erişim belirtecinin sarmalayıcısıdır.
 
 > [!IMPORTANT]
->  Bu sınıf ve üyelerine, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz.
+>  Bu sınıf ve üyeleri Windows Çalışma Zamanı yürütülen uygulamalarda kullanılamaz.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -78,71 +78,71 @@ class CAccessToken
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[CAccessToken:: ~ CAccessToken](#dtor)|Yıkıcı.|
+|[CAccessToken:: ~ CAccessToken](#dtor)|Yok edicisi.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[CAccessToken::Attach](#attach)|Belirli bir erişim belirteci işleyici sahipliğini almak için bu yöntemi çağırın.|
-|[CAccessToken::CheckTokenMembership](#checktokenmembership)|Belirtilen SID içinde etkin olup olmadığını belirlemek için bu yöntemi çağırın `CAccessToken` nesne.|
-|[CAccessToken::CreateImpersonationToken](#createimpersonationtoken)|Yeni bir kimliğe bürünme erişim belirteci oluşturmak için bu yöntemi çağırın.|
-|[CAccessToken::CreatePrimaryToken](#createprimarytoken)|Yeni bir birincil belirteç oluşturmak için bu yöntemi çağırın.|
-|[CAccessToken::CreateProcessAsUser](#createprocessasuser)|Tarafından temsil edilen kullanıcı güvenlik bağlamında çalışan yeni bir işlem oluşturmak için bu yöntemi çağırın `CAccessToken` nesne.|
-|[CAccessToken::CreateRestrictedToken](#createrestrictedtoken)|Yeni, oluşturmak için bu yöntemi çağırın kısıtlı `CAccessToken` nesne.|
-|[CAccessToken::Detach](#detach)|Erişim belirteci sahipliğini iptal etmek için bu yöntemi çağırın.|
-|[CAccessToken::DisablePrivilege](#disableprivilege)|Bir ayrıcalık devre dışı bırakmak için bu yöntemi çağırın `CAccessToken` nesne.|
-|[CAccessToken::DisablePrivileges](#disableprivileges)|Bir veya daha fazla ayrıcalık devre dışı bırakmak için bu yöntemi çağırın `CAccessToken` nesne.|
-|[CAccessToken::EnablePrivilege](#enableprivilege)|Bir ayrıcalık etkinleştirmek için bu yöntemi çağırın `CAccessToken` nesne.|
-|[CAccessToken::EnablePrivileges](#enableprivileges)|Bir veya daha fazla ayrıcalık etkinleştirmek için bu yöntemi çağırın `CAccessToken` nesne.|
-|[CAccessToken::GetDefaultDacl](#getdefaultdacl)|Döndürmek için bu yöntemi çağırın `CAccessToken` nesnenin varsayılan DACL.|
-|[CAccessToken::GetEffectiveToken](#geteffectivetoken)|Almak için bu yöntemi çağırın `CAccessToken` nesne geçerli iş parçacığı için geçerli erişim belirteci eşittir.|
-|[CAccessToken::GetGroups](#getgroups)|Döndürmek için bu yöntemi çağırın `CAccessToken` nesnesinin belirteç grupları.|
-|[CAccessToken::GetHandle](#gethandle)|İşleyici erişim belirteci almak için bu yöntemi çağırın.|
-|[CAccessToken::GetImpersonationLevel](#getimpersonationlevel)|Kimliğe bürünme düzeyi erişim belirteci almak için bu yöntemi çağırın.|
-|[CAccessToken::GetLogonSessionId](#getlogonsessionid)|İlişkili oturum açma oturumu Kimliği almak için bu yöntemi çağırın `CAccessToken` nesne.|
-|[CAccessToken::GetLogonSid](#getlogonsid)|İlişkili oturum açma SID almak için bu yöntemi çağırın `CAccessToken` nesne.|
-|[CAccessToken::GetOwner](#getowner)|İle ilişkili sahibini almak için bu yöntemi çağırın `CAccessToken` nesne.|
-|[CAccessToken::GetPrimaryGroup](#getprimarygroup)|İlişkili birincil grubu almak için bu yöntemi çağırın `CAccessToken` nesne.|
-|[CAccessToken::GetPrivileges](#getprivileges)|İle ilişkili ayrıcalıklar almak için bu yöntemi çağırın `CAccessToken` nesne.|
-|[CAccessToken::GetProcessToken](#getprocesstoken)|Başlatmak için bu yöntemi çağırın `CAccessToken` verilen işlemdeki erişim belirteci ile.|
-|[CAccessToken::GetProfile](#getprofile)|İle ilişkili kullanıcı profili işaret tanıtıcı almak için bu yöntemi çağırın `CAccessToken` nesne.|
-|[CAccessToken::GetSource](#getsource)|Kaynağını almak için bu yöntemi çağırın `CAccessToken` nesne.|
-|[CAccessToken::GetStatistics](#getstatistics)|İle ilgili bilgi almak için bu yöntemi çağırın `CAccessToken` nesne.|
-|[CAccessToken::GetTerminalServicesSessionId](#getterminalservicessessionid)|Terminal Hizmetleri oturum kimliği ile ilişkili almak için bu yöntemi çağırın `CAccessToken` nesne.|
-|[CAccessToken::GetThreadToken](#getthreadtoken)|Başlatmak için bu yöntemi çağırın `CAccessToken` belirtilen iş parçacığından belirtecine sahip.|
-|[CAccessToken::GetTokenId](#gettokenid)|Belirteç ile ilişkili Kimliği almak için bu yöntemi çağırın `CAccessToken` nesne.|
-|[CAccessToken::GetType](#gettype)|Belirteç türünü almak için bu yöntemi çağırın `CAccessToken` nesne.|
-|[CAccessToken::GetUser](#getuser)|İle ilişkili kullanıcıyı tanımlamak için bu yöntemi çağırın `CAccessToken` nesne.|
-|[CAccessToken::HKeyCurrentUser](#hkeycurrentuser)|İle ilişkili kullanıcı profili işaret tanıtıcı almak için bu yöntemi çağırın `CAccessToken` nesne.|
-|[CAccessToken::Impersonate](#impersonate)|Bir kimliğe bürünme atamak için bu yöntemi çağırın `CAccessToken` bir iş parçacığına.|
-|[CAccessToken::ImpersonateLoggedOnUser](#impersonateloggedonuser)|Güvenlik bağlamı bir oturum açan kullanıcının kimliğine bürünmek çağıran iş parçacığına izin vermek için bu yöntemi çağırın.|
-|[CAccessToken::IsTokenRestricted](#istokenrestricted)|Test için bu yöntemi çağırın `CAccessToken` nesne kısıtlı SID bir listesini içerir.|
-|[CAccessToken::LoadUserProfile](#loaduserprofile)|İle ilişkili kullanıcı profili yüklemek için bu yöntemi çağıran `CAccessToken` nesne.|
-|[CAccessToken::LogonUser](#logonuser)|Verilen kimlik bilgileriyle ilişkili kullanıcı için bir oturum açma oturumu oluşturmak için bu yöntemi çağırın.|
-|[CAccessToken::OpenCOMClientToken](#opencomclienttoken)|İşleme başlatmak için bir çağrı bir istemciden bir COM sunucusu bu yöntemi çağırın `CAccessToken` COM istemcisi erişim belirteci ile.|
-|[CAccessToken::OpenNamedPipeClientToken](#opennamedpipeclienttoken)|Bir sunucu içinde Bu yöntemden alma isteği başlatmak için bir adlandırılmış kanal üzerinde çağrı `CAccessToken` istemci erişim belirteciyle.|
-|[CAccessToken::OpenRPCClientToken](#openrpcclienttoken)|Bir sunucu başlatmak için bir RPC istemcisini bir çağrıdan işleme içinde bu yöntemi çağırın `CAccessToken` istemci erişim belirteciyle.|
-|[CAccessToken::OpenThreadToken](#openthreadtoken)|Kimliğe bürünme düzeyini ayarlayın ve ardından başlatmak için bu yöntemi çağırın `CAccessToken` belirtilen iş parçacığından belirtecine sahip.|
-|[CAccessToken::PrivilegeCheck](#privilegecheck)|Belirtilen bir ayrıcalık kümesi etkin içinde olup olmadığını belirlemek için bu yöntemi çağırın `CAccessToken` nesne.|
-|[CAccessToken::Revert](#revert)|Kimliğe bürünme belirtecini kullanarak bir iş parçacığını durdurmak için bu yöntemi çağırın.|
-|[CAccessToken::SetDefaultDacl](#setdefaultdacl)|Varsayılan değer ayarlamak için bu yöntemi çağırın'ın DACL `CAccessToken` nesne.|
-|[CAccessToken::SetOwner](#setowner)|Sahibi ayarlamak için bu yöntemi çağırın `CAccessToken` nesne.|
-|[CAccessToken::SetPrimaryGroup](#setprimarygroup)|Birincil grup ayarlamak için bu yöntemi çağırın `CAccessToken` nesne.|
+|[CAccessToken:: Attach](#attach)|Verilen erişim belirteci tanıtıcısının sahipliğini almak için bu yöntemi çağırın.|
+|[CAccessToken:: CheckTokenMembership](#checktokenmembership)|`CAccessToken` Nesnede belirtilen bir SID 'nin etkinleştirilip etkinleştirilmediğini anlamak için bu yöntemi çağırın.|
+|[CAccessToken:: Createımpersonationtoken](#createimpersonationtoken)|Yeni bir kimliğe bürünme erişim belirteci oluşturmak için bu yöntemi çağırın.|
+|[CAccessToken:: CreatePrimaryToken](#createprimarytoken)|Yeni bir birincil belirteç oluşturmak için bu yöntemi çağırın.|
+|[CAccessToken:: CreateProcessAsUser](#createprocessasuser)|`CAccessToken` Nesne tarafından temsil edilen kullanıcının güvenlik bağlamında çalışan yeni bir işlem oluşturmak için bu yöntemi çağırın.|
+|[CAccessToken:: CreateRestrictedToken](#createrestrictedtoken)|Yeni, kısıtlı `CAccessToken` bir nesne oluşturmak için bu yöntemi çağırın.|
+|[CAccessToken::D etach](#detach)|Erişim belirtecinin sahipliğini iptal etmek için bu yöntemi çağırın.|
+|[CAccessToken::D isablePrivilege](#disableprivilege)|`CAccessToken` Nesnedeki bir ayrıcalığı devre dışı bırakmak için bu yöntemi çağırın.|
+|[CAccessToken::D isablePrivileges](#disableprivileges)|`CAccessToken` Nesnedeki bir veya daha fazla ayrıcalığı devre dışı bırakmak için bu yöntemi çağırın.|
+|[CAccessToken:: EnablePrivilege](#enableprivilege)|`CAccessToken` Nesnede bir ayrıcalığı etkinleştirmek için bu yöntemi çağırın.|
+|[CAccessToken:: EnablePrivileges](#enableprivileges)|`CAccessToken` Nesnedeki bir veya daha fazla ayrıcalığı etkinleştirmek için bu yöntemi çağırın.|
+|[CAccessToken:: GetDefaultDacl](#getdefaultdacl)|Nesnenin varsayılan DACL 'sini `CAccessToken` döndürmek için bu yöntemi çağırın.|
+|[CAccessToken:: GetEffectiveToken](#geteffectivetoken)|`CAccessToken` Nesnenin geçerli iş parçacığı için geçerli olan erişim belirtecine eşit olması için bu yöntemi çağırın.|
+|[CAccessToken:: GetGroups](#getgroups)|`CAccessToken` Nesnenin belirteç gruplarını döndürmek için bu yöntemi çağırın.|
+|[CAccessToken:: GetHandle](#gethandle)|Erişim belirtecine bir tanıtıcı almak için bu yöntemi çağırın.|
+|[CAccessToken:: GetImpersonationLevel](#getimpersonationlevel)|Erişim belirtecinden kimliğe bürünme düzeyini almak için bu yöntemi çağırın.|
+|[CAccessToken:: Getlogonsessionıd](#getlogonsessionid)|`CAccessToken` Nesneyle ilişkili oturum açma oturum kimliğini almak için bu yöntemi çağırın.|
+|[CAccessToken:: GetLogonSid](#getlogonsid)|`CAccessToken` Nesneyle ilişkili oturum açma SID 'sini almak için bu yöntemi çağırın.|
+|[CAccessToken:: GetOwner](#getowner)|`CAccessToken` Nesneyle ilişkili sahibi almak için bu yöntemi çağırın.|
+|[CAccessToken:: GetPrimaryGroup](#getprimarygroup)|`CAccessToken` Nesneyle ilişkili birincil grubu almak için bu yöntemi çağırın.|
+|[CAccessToken:: GetPrivileges](#getprivileges)|`CAccessToken` Nesneyle ilişkili ayrıcalıkları almak için bu yöntemi çağırın.|
+|[CAccessToken:: GetProcessToken](#getprocesstoken)|Verilen işlemden erişim belirteci `CAccessToken` ile başlatmak için bu yöntemi çağırın.|
+|[CAccessToken:: GetProfile](#getprofile)|`CAccessToken` Nesneyle ilişkili kullanıcı profiline işaret eden tanıtıcıyı almak için bu yöntemi çağırın.|
+|[CAccessToken:: GetSource](#getsource)|`CAccessToken` Nesnenin kaynağını almak için bu yöntemi çağırın.|
+|[CAccessToken:: GetStatistics](#getstatistics)|`CAccessToken` Nesneyle ilişkili bilgileri almak için bu yöntemi çağırın.|
+|[CAccessToken:: Getterminalservicessessionıd](#getterminalservicessessionid)|`CAccessToken` Nesneyle ilişkili Terminal Hizmetleri oturum kimliğini almak için bu yöntemi çağırın.|
+|[CAccessToken:: GetThreadToken](#getthreadtoken)|Verilen iş parçacığından belirteç `CAccessToken` ile başlatmak için bu yöntemi çağırın.|
+|[CAccessToken:: Gettokenıd](#gettokenid)|`CAccessToken` Nesneyle ilişkili belirteç kimliğini almak için bu yöntemi çağırın.|
+|[CAccessToken:: GetType](#gettype)|`CAccessToken` Nesnenin belirteç türünü almak için bu yöntemi çağırın.|
+|[CAccessToken:: GetUser](#getuser)|`CAccessToken` Nesneyle ilişkili kullanıcıyı tanımlamak için bu yöntemi çağırın.|
+|[CAccessToken:: HKeyCurrentUser](#hkeycurrentuser)|`CAccessToken` Nesneyle ilişkili kullanıcı profiline işaret eden tanıtıcıyı almak için bu yöntemi çağırın.|
+|[CAccessToken:: Impersonate](#impersonate)|Bir iş parçacığına kimliğe bürünme `CAccessToken` atamak için bu yöntemi çağırın.|
+|[CAccessToken:: ImpersonateLoggedOnUser](#impersonateloggedonuser)|Çağıran iş parçacığının, oturum açmış bir kullanıcının güvenlik bağlamını taklit etmesine izin vermek için bu yöntemi çağırın.|
+|[CAccessToken:: ıstokenrestricted](#istokenrestricted)|`CAccessToken` Nesnenin kısıtlı SID 'lerin bir listesini içerip içermiyorsa test etmek için bu yöntemi çağırın.|
+|[CAccessToken:: LoadUserProfile](#loaduserprofile)|`CAccessToken` Nesneyle ilişkili kullanıcı profilini yüklemek için bu yöntemi çağırın.|
+|[CAccessToken:: LogonUser](#logonuser)|Verilen kimlik bilgileriyle ilişkili kullanıcı için bir oturum açma oturumu oluşturmak için bu yöntemi çağırın.|
+|[CAccessToken:: OpenCOMClientToken](#opencomclienttoken)|Com istemcisinden erişim belirteci `CAccessToken` ile başlatmak için bir istemciden çağrıyı işleyen bir com sunucusu içinden bu yöntemi çağırın.|
+|[CAccessToken:: OpenNamedPipeClientToken](#opennamedpipeclienttoken)|İstemciden erişim belirteci `CAccessToken` ile başlatmak için adlandırılmış bir kanal üzerinden istek alan bir sunucu içinden bu yöntemi çağırın.|
+|[CAccessToken:: OpenRPCClientToken](#openrpcclienttoken)|İstemciden erişim belirteci `CAccessToken` ile başlatmak için bir RPC istemcisinden çağrıyı işleyen bir sunucu içinden bu yöntemi çağırın.|
+|[CAccessToken:: OpenThreadToken](#openthreadtoken)|Kimliğe bürünme düzeyini ayarlamak için bu yöntemi çağırın ve ardından öğesini verilen `CAccessToken` iş parçacığından belirteç ile başlatın.|
+|[CAccessToken::P rivilegeCheck](#privilegecheck)|`CAccessToken` Nesnede belirtilen ayrıcalık kümesinin etkinleştirilip etkinleştirilmeyeceğini anlamak için bu yöntemi çağırın.|
+|[CAccessToken:: çevir](#revert)|Kimliğe bürünme belirtecini kullanan bir iş parçacığını durdurmak için bu yöntemi çağırın.|
+|[CAccessToken:: SetDefaultDacl](#setdefaultdacl)|`CAccessToken` Nesnenin varsayılan DACL 'sini ayarlamak için bu yöntemi çağırın.|
+|[CAccessToken:: SetOwner](#setowner)|`CAccessToken` Nesnenin sahibini ayarlamak için bu yöntemi çağırın.|
+|[CAccessToken:: SetPrimaryGroup](#setprimarygroup)|`CAccessToken` Nesnenin birincil grubunu ayarlamak için bu yöntemi çağırın.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bir [erişim belirteci](/windows/desktop/SecAuthZ/access-tokens) bir işlem veya iş parçacığı güvenlik bağlamı açıklayan ve Windows sisteminde oturum açmış her kullanıcı için ayrılan bir nesnedir.
+[Erişim belirteci](/windows/desktop/SecAuthZ/access-tokens) bir işlemin veya iş parçacığının güvenlik bağlamını açıklayan ve bir Windows sisteminde oturum açan her kullanıcıya ayrılan bir nesnedir.
 
-Windows, erişim denetimi modeli için bir giriş için bkz [erişim denetimi](/windows/desktop/SecAuthZ/access-control) Windows SDK.
+Windows 'daki erişim denetim modeline giriş için Windows SDK [Access Control](/windows/desktop/SecAuthZ/access-control) bakın.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atlsecurity.h
+**Üstbilgi:** atlsecurity. h
 
-##  <a name="attach"></a>  CAccessToken::Attach
+##  <a name="attach"></a>CAccessToken:: Attach
 
-Belirli bir erişim belirteci işleyici sahipliğini almak için bu yöntemi çağırın.
+Verilen erişim belirteci tanıtıcısının sahipliğini almak için bu yöntemi çağırın.
 
 ```
 void Attach(HANDLE hToken) throw();
@@ -151,15 +151,15 @@ void Attach(HANDLE hToken) throw();
 ### <a name="parameters"></a>Parametreler
 
 *hToken*<br/>
-Erişim belirteci işleyici.
+Erişim belirtecine yönelik bir tanıtıcı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Hata ayıklama yapılarında, onaylama işlemi hatası meydana gelir `CAccessToken` nesnesi zaten bir erişim belirteci sahipliğini sahiptir.
+Hata ayıklama yapılarında, `CAccessToken` nesne zaten bir erişim belirtecinin sahipliğini içeriyorsa bir onaylama hatası oluşur.
 
-##  <a name="dtor"></a>  CAccessToken:: ~ CAccessToken
+##  <a name="dtor"></a>CAccessToken:: ~ CAccessToken
 
-Yıkıcı.
+Yok edicisi.
 
 ```
 virtual ~CAccessToken() throw();
@@ -169,9 +169,9 @@ virtual ~CAccessToken() throw();
 
 Ayrılan tüm kaynakları serbest bırakır.
 
-##  <a name="checktokenmembership"></a>  CAccessToken::CheckTokenMembership
+##  <a name="checktokenmembership"></a>CAccessToken:: CheckTokenMembership
 
-Belirtilen SID içinde etkin olup olmadığını belirlemek için bu yöntemi çağırın `CAccessToken` nesne.
+`CAccessToken` Nesnede belirtilen bir SID 'nin etkinleştirilip etkinleştirilmediğini anlamak için bu yöntemi çağırın.
 
 ```
 bool CheckTokenMembership(
@@ -181,26 +181,26 @@ bool CheckTokenMembership(
 
 ### <a name="parameters"></a>Parametreler
 
-*rSid*<br/>
-Başvuru bir [CSid sınıfı](../../atl/reference/csid-class.md) nesne.
+*Rsıd*<br/>
+Bir [CSID sınıfı](../../atl/reference/csid-class.md) nesnesine başvuru.
 
 *pbIsMember*<br/>
-Sonuçlarını alır bir değişken işaretçisi.
+Çekin sonuçlarını alan bir değişkene yönelik işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olduğunda TRUE döndürür başarısız olduğunda FALSE.
+Başarılı olduğunda TRUE, hatada FALSE döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`CheckTokenMembership` Yöntemi SID kullanıcı ve Grup SID erişim belirtecinin varlığını denetler. SID varsa ve SE_GROUP_ENABLED özniteliğine sahip *pbIsMember* olduğunu ayarlamak için TRUE; tersi durumda FALSE olarak ayarlanır.
+`CheckTokenMembership` Yöntemi, erişim belirtecinin Kullanıcı ve Grup SID 'lerine ait SID varlığını denetler. SID varsa ve SE_GROUP_ENABLED özniteliği varsa, *Pbismember* değeri true olarak ayarlanır; Aksi takdirde, FALSE olarak ayarlanır.
 
-Hata ayıklama yapılarında, onaylama işlemi hatası meydana gelir *pbIsMember* geçerli bir işaretçi değil.
+Hata ayıklama yapılarında, *Pbismember* geçerli bir işaretçi değilse bir onaylama hatası oluşur.
 
 > [!NOTE]
->  `CAccessToken` Kimliğe bürünme belirtecini ve bir birincil belirteç nesnesi olması gerekir.
+>  Nesne `CAccessToken` , birincil belirteç değil, kimliğe bürünme belirteci olmalıdır.
 
-##  <a name="createimpersonationtoken"></a>  CAccessToken::CreateImpersonationToken
+##  <a name="createimpersonationtoken"></a>CAccessToken:: Createımpersonationtoken
 
 Kimliğe bürünme erişim belirteci oluşturmak için bu yöntemi çağırın.
 
@@ -213,20 +213,20 @@ bool CreateImpersonationToken(
 ### <a name="parameters"></a>Parametreler
 
 *pImp*<br/>
-İşaretçi yeni `CAccessToken` nesne.
+Yeni `CAccessToken` nesne işaretçisi.
 
 *Sil*<br/>
-Belirtir bir [SECURITY_IMPERSONATION_LEVEL](/windows/desktop/api/winnt/ne-winnt-_security_impersonation_level) listelenmiş yeni belirteç kimliğe bürünme düzeyini sağlayan türü.
+Yeni belirtecin kimliğe bürünme düzeyini sağlayan bir [SECURITY_IMPERSONATION_LEVEL](/windows/desktop/api/winnt/ne-winnt-security_impersonation_level) numaralandırılmış türü belirtir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olduğunda TRUE döndürür başarısız olduğunda FALSE.
+Başarılı olduğunda TRUE, hatada FALSE döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`CreateImpersonationToken` çağrıları [DuplicateToken](/windows/desktop/api/securitybaseapi/nf-securitybaseapi-duplicatetoken) yeni bir özellik alma belirteci oluşturmak için.
+`CreateImpersonationToken`Yeni bir kimliğe bürünme belirteci oluşturmak için [DuplicateToken](/windows/desktop/api/securitybaseapi/nf-securitybaseapi-duplicatetoken) çağırır.
 
-##  <a name="createprimarytoken"></a>  CAccessToken::CreatePrimaryToken
+##  <a name="createprimarytoken"></a>CAccessToken:: CreatePrimaryToken
 
 Yeni bir birincil belirteç oluşturmak için bu yöntemi çağırın.
 
@@ -240,25 +240,25 @@ bool CreatePrimaryToken(
 ### <a name="parameters"></a>Parametreler
 
 *pPri*<br/>
-İşaretçi yeni `CAccessToken` nesne.
+Yeni `CAccessToken` nesne işaretçisi.
 
 *dwDesiredAccess*<br/>
-Yeni belirteç için istenen erişim haklarını belirtir. Varsayılan olarak, MAXIMUM_ALLOWED arayan için geçerli olan tüm erişim hakları ister. Bkz: [erişim hakları ve erişim maskesi](/windows/desktop/SecAuthZ/access-rights-and-access-masks) üzerinde daha fazla erişim hakları için.
+Yeni belirteç için istenen erişim haklarını belirtir. Varsayılan, MAXIMUM_ALLOWED, çağıran için geçerli olan tüm erişim haklarını ister. Erişim hakları hakkında daha fazla bilgi için bkz. [erişim hakları ve erişim maskeleri](/windows/desktop/SecAuthZ/access-rights-and-access-masks) .
 
 *pTokenAttributes*<br/>
-İşaretçi bir [SECURITY_ATTRIBUTES](/previous-versions/windows/desktop/legacy/aa379560\(v=vs.85\)) yapısı, yeni belirteç için bir güvenlik tanımlayıcısının belirtir ve alt işlemlerin belirteç devralınabilir olup olmadığını belirler. Varsa *pTokenAttributes* NULL, varsayılan bir güvenlik tanımlayıcısı belirteci alır ve tanıtıcı devralınamaz.
+Yeni belirteç için bir güvenlik tanımlayıcısı belirten ve alt işlemlerin belirteci devralmasını belirleyen bir [SECURITY_ATTRIBUTES](/previous-versions/windows/desktop/legacy/aa379560\(v=vs.85\)) yapısına yönelik işaretçi. *PTokenAttributes* null ise, belirteç varsayılan bir güvenlik tanımlayıcısı alır ve tanıtıcı devralınamaz.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olduğunda TRUE döndürür başarısız olduğunda FALSE.
+Başarılı olduğunda TRUE, hatada FALSE döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`CreatePrimaryToken` çağrıları [DuplicateTokenEx](/windows/desktop/api/securitybaseapi/nf-securitybaseapi-duplicatetokenex) yeni bir birincil belirteç oluşturmak için.
+`CreatePrimaryToken`Yeni bir birincil belirteç oluşturmak için [DuplicateTokenEx](/windows/desktop/api/securitybaseapi/nf-securitybaseapi-duplicatetokenex) çağırır.
 
-##  <a name="createprocessasuser"></a>  CAccessToken::CreateProcessAsUser
+##  <a name="createprocessasuser"></a>CAccessToken:: CreateProcessAsUser
 
-Tarafından temsil edilen kullanıcı güvenlik bağlamında çalışan yeni bir işlem oluşturmak için bu yöntemi çağırın `CAccessToken` nesne.
+`CAccessToken` Nesne tarafından temsil edilen kullanıcının güvenlik bağlamında çalışan yeni bir işlem oluşturmak için bu yöntemi çağırın.
 
 ```
 bool CreateProcessAsUser(
@@ -277,48 +277,48 @@ bool CreateProcessAsUser(
 ### <a name="parameters"></a>Parametreler
 
 *pApplicationName*<br/>
-Yürütülecek modülü belirtiyorsa null ile sonlandırılmış bir dize işaretçisi. Bu parametre NULL olamaz.
+Yürütülecek modülü belirten, null ile sonlandırılmış bir dize işaretçisi. Bu parametre NULL olmayabilir.
 
 *pCommandLine*<br/>
-Yürütülecek komut satırı belirten bir null ile sonlandırılmış dize işaretçisi.
+Yürütülecek komut satırını belirten, null ile sonlandırılmış bir dize işaretçisi.
 
 *pProcessInformation*<br/>
-İşaretçi bir [PROCESS_INFORMATION yapısı](/windows/win32/api/processthreadsapi/ns-processthreadsapi-process_information) , yeni işlem ile ilgili kimlik bilgilerini alır.
+Yeni işlemle ilgili tanımlama bilgilerini alan bir [PROCESS_INFORMATION yapısına](/windows/win32/api/processthreadsapi/ns-processthreadsapi-process_information) yönelik işaretçi.
 
-*pStartupInfo*<br/>
-İşaretçi bir [değeri](/windows/desktop/api/processthreadsapi/ns-processthreadsapi-_startupinfoa) yeni işlemin ana penceresi nasıl görünmelidir belirten yapısı.
+*Pstartupınfo*<br/>
+Yeni işlemin ana penceresinin nasıl görüntüleneceğini belirten bir [STARTUPINFO](/windows/desktop/api/processthreadsapi/ns-processthreadsapi-startupinfoa) yapısına yönelik işaretçi.
 
 *dwCreationFlags*<br/>
-Öncelik sınıfı ve işlem oluşturmayı denetleyen ek bayrakları belirtir. Win32 işlevi görmek [CreateProcessAsUser](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-createprocessasusera) bayrakların listesi için.
+Öncelik sınıfını ve işlemin oluşturulmasını denetleyen ek bayrakları belirtir. Bayrakların listesi için [CreateProcessAsUser](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-createprocessasusera) Win32 işlevine bakın.
 
 *bLoadProfile*<br/>
-TRUE ise, kullanıcının profili ile yüklenir [LoadUserProfile](/windows/desktop/api/userenv/nf-userenv-loaduserprofilea).
+TRUE ise, kullanıcının profili [LoadUserProfile](/windows/desktop/api/userenv/nf-userenv-loaduserprofilea)ile yüklenir.
 
 *pProcessAttributes*<br/>
-İşaretçi bir [SECURITY_ATTRIBUTES](/previous-versions/windows/desktop/legacy/aa379560\(v=vs.85\)) yapısı yeni işlem için bir güvenlik açıklayıcısı belirtir ve döndürülen tanıtıcının alt işlemler devralınabilir olup olmadığını belirler. Varsa *pProcessAttributes* NULL, işlem varsayılan bir güvenlik açıklayıcısı alır ve tanıtıcı devralınamaz.
+Yeni işlem için bir güvenlik tanımlayıcısı belirten ve alt işlemlerin döndürülen tanıtıcıyı alıp almadığını belirleyen bir [SECURITY_ATTRIBUTES](/previous-versions/windows/desktop/legacy/aa379560\(v=vs.85\)) yapısına yönelik işaretçi. *PProcessAttributes* null ise, işlem varsayılan bir güvenlik tanımlayıcısı alır ve tanıtıcı devralınmaz.
 
 *pThreadAttributes*<br/>
-İşaretçi bir [SECURITY_ATTRIBUTES](/previous-versions/windows/desktop/legacy/aa379560\(v=vs.85\)) yapısı, yeni iş parçacığı için bir güvenlik açıklayıcısı belirtir ve döndürülen tanıtıcının alt işlemler devralınabilir olup olmadığını belirler. Varsa *pThreadAttributes* NULL, iş parçacığı bir varsayılan güvenlik tanımlayıcısını alır ve tanıtıcı devralınamaz.
+Yeni iş parçacığı için bir güvenlik tanımlayıcısı belirten ve alt işlemlerin döndürülen tanıtıcıyı devralmasını isteyip olmayacağını belirleyen bir [SECURITY_ATTRIBUTES](/previous-versions/windows/desktop/legacy/aa379560\(v=vs.85\)) yapısına yönelik işaretçi. *PThreadAttributes* null ise, iş parçacığı varsayılan bir güvenlik tanımlayıcısı alır ve tanıtıcı devralınamaz.
 
 *bInherit*<br/>
-Yeni işlem çağırma işlemden tanıtıcıları devralıp almadığını gösterir. TRUE ise, her devralınabilir açık tanıtıcı çağıran işlemin içinde yeni bir işlem tarafından devralınır. Devralınan tanıtıcıları özgün tanıtıcıları aynı değeri ve erişim ayrıcalıklarına sahiptir.
+Yeni işlemin, çağıran işlemden tutamaçları devralıp almadığını gösterir. TRUE ise, çağıran işlemdeki her devralınabilir açık tanıtıcı yeni işlem tarafından devralınır. Devralınan tutamaçlar, özgün tanıtıcılarla aynı değere ve erişim ayrıcalıklarına sahiptir.
 
 *pCurrentDirectory*<br/>
-Geçerli bir sürücü ve dizini yeni işlemin belirten bir null ile sonlandırılmış dize işaretçisi. Dize, bir sürücü harfi içeren tam bir yol olmalıdır. Bu parametre NULL ise, yeni işlem çağırma işlemi aynı geçerli sürücü ve dizine sahip.
+Yeni işlemin geçerli sürücüsünü ve dizinini belirten, null ile sonlandırılmış bir dize işaretçisi. Dize, bir sürücü harfi içeren bir tam yol olmalıdır. Bu parametre NULL ise, yeni işlem çağıran işlemle aynı geçerli sürücü ve dizine sahip olur.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olduğunda TRUE döndürür başarısız olduğunda FALSE.
+Başarılı olduğunda TRUE, hatada FALSE döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`CreateProcessAsUser` kullanan `CreateProcessAsUser` tarafından temsil edilen kullanıcı güvenlik bağlamında çalışan yeni bir işlem oluşturmak için Win32 işlevini `CAccessToken` nesne. Açıklamasını görmek [CreateProcessAsUser](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-createprocessasusera) Gerekli Parametreler tam bir irdelemesi için işlevi.
+`CreateProcessAsUser`, nesnesine göre temsil edilen kullanıcının güvenlik bağlamında çalışan yeni bir işlem oluşturmak için Win32işlevinikullanır.`CreateProcessAsUser` `CAccessToken` Gerekli parametrelerin tam bir tartışması için [CreateProcessAsUser](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-createprocessasusera) işlevinin açıklamasına bakın.
 
-Başarılı olması bu yöntemin `CAccessToken` (kısıtlı bir belirteç olmadığı sürece), nesne AssignPrimaryToken tutun gerekir ve IncreaseQuota ayrıcalıkları.
+Bu yöntemin başarılı olması için, `CAccessToken` nesne atamaprimarytoken 'ı (kısıtlı bir belirteç olmadığı müddetçe) ve IncreaseQuota ayrıcalıklarını tutmalıdır.
 
-##  <a name="createrestrictedtoken"></a>  CAccessToken::CreateRestrictedToken
+##  <a name="createrestrictedtoken"></a>CAccessToken:: CreateRestrictedToken
 
-Yeni, oluşturmak için bu yöntemi çağırın kısıtlı `CAccessToken` nesne.
+Yeni, kısıtlı `CAccessToken` bir nesne oluşturmak için bu yöntemi çağırın.
 
 ```
 bool CreateRestrictedToken(
@@ -333,29 +333,29 @@ bool CreateRestrictedToken(
 *pRestrictedToken*<br/>
 Yeni, kısıtlı `CAccessToken` nesne.
 
-*SidsToDisable*<br/>
-A `CTokenGroups` yalnızca SID belirten bir nesne.
+*Sıdstodisable*<br/>
+Yalnızca `CTokenGroups` reddetme SID 'lerini belirten bir nesne.
 
 *SidsToRestrict*<br/>
-A `CTokenGroups` kısıtlama SID belirten bir nesne.
+Kısıtlama SID 'lerini belirten nesne.`CTokenGroups`
 
 *PrivilegesToDelete*<br/>
-A `CTokenPrivileges` nesnesini silmek için ayrıcalıkları sınırlı belirteci belirtir. Varsayılan değer boş bir nesne oluşturur.
+Kısıtlanmış belirteçte silinecek ayrıcalıkları belirten nesne.`CTokenPrivileges` Varsayılan değer boş bir nesne oluşturur.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olduğunda TRUE döndürür başarısız olduğunda FALSE.
+Başarılı olduğunda TRUE, hatada FALSE döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`CreateRestrictedToken` kullanan [CreateRestrictedToken](/windows/desktop/api/securitybaseapi/nf-securitybaseapi-createrestrictedtoken) yeni bir Win32 işlevini `CAccessToken` kısıtlama nesnesi.
+`CreateRestrictedToken`, kısıtlamalarla yeni `CAccessToken` bir nesne oluşturmak için [CreateRestrictedToken](/windows/desktop/api/securitybaseapi/nf-securitybaseapi-createrestrictedtoken) Win32 işlevini kullanır.
 
 > [!IMPORTANT]
->  Kullanırken `CreateRestrictedToken`, aşağıdaki işlemleri yapmalısınız: mevcut bir belirteç geçerli (ve kullanıcı tarafından girilen) ve *SidsToDisable* ve *PrivilegesToDelete* hem geçerli (hem de kullanıcı tarafından girilen). Yöntem FALSE döndürürse, işlevselliği reddet.
+>  Kullanırken `CreateRestrictedToken`, aşağıdakilerden emin olun: mevcut belirteç geçerli (ve Kullanıcı tarafından girilmemiş) ve *sıdstodisable* ve *PrivilegesToDelete* öğelerinin her ikisi de geçerlidir (ve Kullanıcı tarafından girilmez). Yöntem FALSE döndürürse, reddetme işlevselliği.
 
-##  <a name="detach"></a>  CAccessToken::Detach
+##  <a name="detach"></a>CAccessToken::D etach
 
-Erişim belirteci sahipliğini iptal etmek için bu yöntemi çağırın.
+Erişim belirtecinin sahipliğini iptal etmek için bu yöntemi çağırın.
 
 ```
 HANDLE Detach() throw();
@@ -363,15 +363,15 @@ HANDLE Detach() throw();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Tanıtıcısını döndürür `CAccessToken` , ayrılmış.
+Ayrılan `CAccessToken` olan tanıtıcıyı döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem iptal eder `CAccessToken`'s sahipliğini erişim belirteci.
+Bu yöntem, `CAccessToken`erişim belirtecinin sahipliğini iptal eder.
 
-##  <a name="disableprivilege"></a>  CAccessToken::DisablePrivilege
+##  <a name="disableprivilege"></a>CAccessToken::D isablePrivilege
 
-Bir ayrıcalık devre dışı bırakmak için bu yöntemi çağırın `CAccessToken` nesne.
+`CAccessToken` Nesnedeki bir ayrıcalığı devre dışı bırakmak için bu yöntemi çağırın.
 
 ```
 bool DisablePrivilege(
@@ -382,18 +382,18 @@ bool DisablePrivilege(
 ### <a name="parameters"></a>Parametreler
 
 *pszPrivilege*<br/>
-Devre dışı bırakmak için ayrıcalık içeren bir dize işaretçisine `CAccessToken` nesne.
+`CAccessToken` Nesnede devre dışı bırakmak için ayrıcalıkları içeren bir dize işaretçisi.
 
 *pPreviousState*<br/>
-İşaretçi bir `CTokenPrivileges` ayrıcalıkları önceki durumunu içeren bir nesne.
+Ayrıcalıkların önceki durumunu `CTokenPrivileges` içeren bir nesne işaretçisi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olduğunda TRUE döndürür başarısız olduğunda FALSE.
+Başarılı olduğunda TRUE, hatada FALSE döndürür.
 
-##  <a name="disableprivileges"></a>  CAccessToken::DisablePrivileges
+##  <a name="disableprivileges"></a>CAccessToken::D isablePrivileges
 
-Bir veya daha fazla ayrıcalık devre dışı bırakmak için bu yöntemi çağırın `CAccessToken` nesne.
+`CAccessToken` Nesnedeki bir veya daha fazla ayrıcalığı devre dışı bırakmak için bu yöntemi çağırın.
 
 ```
 bool DisablePrivileges(
@@ -404,18 +404,18 @@ bool DisablePrivileges(
 ### <a name="parameters"></a>Parametreler
 
 *rPrivileges*<br/>
-Bir dizinin devre dışı bırakmak için ayrıcalıkları içeren bir dize işaretçisi `CAccessToken` nesne.
+`CAccessToken` Nesnede devre dışı bırakmak için ayrıcalıkları içeren dizeler dizisine yönelik işaretçi.
 
 *pPreviousState*<br/>
-İşaretçi bir `CTokenPrivileges` ayrıcalıkları önceki durumunu içeren bir nesne.
+Ayrıcalıkların önceki durumunu `CTokenPrivileges` içeren bir nesne işaretçisi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olduğunda TRUE döndürür başarısız olduğunda FALSE.
+Başarılı olduğunda TRUE, hatada FALSE döndürür.
 
-##  <a name="enableprivilege"></a>  CAccessToken::EnablePrivilege
+##  <a name="enableprivilege"></a>CAccessToken:: EnablePrivilege
 
-Bir ayrıcalık etkinleştirmek için bu yöntemi çağırın `CAccessToken` nesne.
+`CAccessToken` Nesnede bir ayrıcalığı etkinleştirmek için bu yöntemi çağırın.
 
 ```
 bool EnablePrivilege(
@@ -426,18 +426,18 @@ bool EnablePrivilege(
 ### <a name="parameters"></a>Parametreler
 
 *pszPrivilege*<br/>
-Etkinleştirmek için ayrıcalık içeren bir dize işaretçisine `CAccessToken` nesne.
+`CAccessToken` Nesnede etkinleştirilecek ayrıcalığını içeren bir dizeye yönelik işaretçi.
 
 *pPreviousState*<br/>
-İşaretçi bir `CTokenPrivileges` ayrıcalıkları önceki durumunu içeren bir nesne.
+Ayrıcalıkların önceki durumunu `CTokenPrivileges` içeren bir nesne işaretçisi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olduğunda TRUE döndürür başarısız olduğunda FALSE.
+Başarılı olduğunda TRUE, hatada FALSE döndürür.
 
-##  <a name="enableprivileges"></a>  CAccessToken::EnablePrivileges
+##  <a name="enableprivileges"></a>CAccessToken:: EnablePrivileges
 
-Bir veya daha fazla ayrıcalık etkinleştirmek için bu yöntemi çağırın `CAccessToken` nesne.
+`CAccessToken` Nesnedeki bir veya daha fazla ayrıcalığı etkinleştirmek için bu yöntemi çağırın.
 
 ```
 bool EnablePrivileges(
@@ -448,18 +448,18 @@ bool EnablePrivileges(
 ### <a name="parameters"></a>Parametreler
 
 *rPrivileges*<br/>
-Bir dizinin etkinleştirmek için ayrıcalıkları içeren bir dize işaretçisi `CAccessToken` nesne.
+`CAccessToken` Nesnede etkinleştirilecek ayrıcalıkları içeren dizeler dizisine yönelik işaretçi.
 
 *pPreviousState*<br/>
-İşaretçi bir `CTokenPrivileges` ayrıcalıkları önceki durumunu içeren bir nesne.
+Ayrıcalıkların önceki durumunu `CTokenPrivileges` içeren bir nesne işaretçisi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olduğunda TRUE döndürür başarısız olduğunda FALSE.
+Başarılı olduğunda TRUE, hatada FALSE döndürür.
 
-##  <a name="getdefaultdacl"></a>  CAccessToken::GetDefaultDacl
+##  <a name="getdefaultdacl"></a>CAccessToken:: GetDefaultDacl
 
-Döndürmek için bu yöntemi çağırın `CAccessToken` nesnenin varsayılan DACL.
+Nesnenin varsayılan DACL 'sini `CAccessToken` döndürmek için bu yöntemi çağırın.
 
 ```
 bool GetDefaultDacl(CDacl* pDacl) const throw(...);
@@ -468,15 +468,15 @@ bool GetDefaultDacl(CDacl* pDacl) const throw(...);
 ### <a name="parameters"></a>Parametreler
 
 *pDacl*<br/>
-İşaretçi [CDacl sınıfı](../../atl/reference/cdacl-class.md) alacak nesne `CAccessToken` nesnenin varsayılan DACL.
+Nesnenin varsayılan DACL 'sini `CAccessToken` alacak olan [CDacl sınıf](../../atl/reference/cdacl-class.md) nesnesi işaretçisi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-' % S'varsayılan DACL kurtarılan, yanlış Aksi durumda kalıp kalmadığını TRUE döndürür.
+Varsayılan DACL kurtarılırsa TRUE, aksi takdirde FALSE döndürür.
 
-##  <a name="geteffectivetoken"></a>  CAccessToken::GetEffectiveToken
+##  <a name="geteffectivetoken"></a>CAccessToken:: GetEffectiveToken
 
-Almak için bu yöntemi çağırın `CAccessToken` nesne geçerli iş parçacığı için geçerli erişim belirteci eşittir.
+`CAccessToken` Nesnenin geçerli iş parçacığı için geçerli olan erişim belirtecine eşit olması için bu yöntemi çağırın.
 
 ```
 bool GetEffectiveToken(DWORD dwDesiredAccess) throw();
@@ -485,15 +485,15 @@ bool GetEffectiveToken(DWORD dwDesiredAccess) throw();
 ### <a name="parameters"></a>Parametreler
 
 *dwDesiredAccess*<br/>
-İstenen erişim belirtecini erişim türlerini belirten bir erişim maskesi belirtir. Bu istenen erişim türleri, hangi erişimlerin verildiğini veya verilmediğini belirlemek için belirtecin DACL'si ile karşılaştırılır.
+Erişim belirtecine istenen erişim türlerini belirten bir erişim maskesini belirtir. Bu istenen erişim türleri, hangi erişimlerin verildiğini veya reddedildiğini belirleyen belirtecin DACL 'si ile karşılaştırılır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olduğunda TRUE döndürür başarısız olduğunda FALSE.
+Başarılı olduğunda TRUE, hatada FALSE döndürür.
 
-##  <a name="getgroups"></a>  CAccessToken::GetGroups
+##  <a name="getgroups"></a>CAccessToken:: GetGroups
 
-Döndürmek için bu yöntemi çağırın `CAccessToken` nesnesinin belirteç grupları.
+`CAccessToken` Nesnenin belirteç gruplarını döndürmek için bu yöntemi çağırın.
 
 ```
 bool GetGroups(CTokenGroups* pGroups) const throw(...);
@@ -501,16 +501,16 @@ bool GetGroups(CTokenGroups* pGroups) const throw(...);
 
 ### <a name="parameters"></a>Parametreler
 
-*pGroups*<br/>
-İşaretçi [CTokenGroups sınıfı](../../atl/reference/ctokengroups-class.md) grup bilgilerini alacak nesne.
+*Pgruplar*<br/>
+Grup bilgilerini alacak [CTokenGroups sınıf](../../atl/reference/ctokengroups-class.md) nesnesine yönelik işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olduğunda TRUE döndürür başarısız olduğunda FALSE.
+Başarılı olduğunda TRUE, hatada FALSE döndürür.
 
-##  <a name="gethandle"></a>  CAccessToken::GetHandle
+##  <a name="gethandle"></a>CAccessToken:: GetHandle
 
-İşleyici erişim belirteci almak için bu yöntemi çağırın.
+Erişim belirtecine bir tanıtıcı almak için bu yöntemi çağırın.
 
 ```
 HANDLE GetHandle() const throw();
@@ -518,11 +518,11 @@ HANDLE GetHandle() const throw();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İçin bir tanıtıcı döndürür `CAccessToken` nesnenin erişim belirteci.
+`CAccessToken` Nesnenin erişim belirtecine bir tanıtıcı döndürür.
 
-##  <a name="getimpersonationlevel"></a>  CAccessToken::GetImpersonationLevel
+##  <a name="getimpersonationlevel"></a>CAccessToken:: GetImpersonationLevel
 
-Kimliğe bürünme düzeyi erişim belirteci almak için bu yöntemi çağırın.
+Erişim belirtecinden kimliğe bürünme düzeyini almak için bu yöntemi çağırın.
 
 ```
 bool GetImpersonationLevel(
@@ -531,16 +531,16 @@ bool GetImpersonationLevel(
 
 ### <a name="parameters"></a>Parametreler
 
-*pImpersonationLevel*<br/>
-İşaretçi bir [SECURITY_IMPERSONATION_LEVEL](/windows/desktop/api/winnt/ne-winnt-_security_impersonation_level) kimliğe bürünme düzeyi bilgileri alacak numaralandırma türü.
+*Pımpersonationlevel*<br/>
+Kimliğe bürünme düzeyi bilgilerini alacak bir [SECURITY_IMPERSONATION_LEVEL](/windows/desktop/api/winnt/ne-winnt-security_impersonation_level) numaralandırma türüne yönelik işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olduğunda TRUE döndürür başarısız olduğunda FALSE.
+Başarılı olduğunda TRUE, hatada FALSE döndürür.
 
-##  <a name="getlogonsessionid"></a>  CAccessToken::GetLogonSessionId
+##  <a name="getlogonsessionid"></a>CAccessToken:: Getlogonsessionıd
 
-İlişkili oturum açma oturumu Kimliği almak için bu yöntemi çağırın `CAccessToken` nesne.
+`CAccessToken` Nesneyle ilişkili oturum açma oturum kimliğini almak için bu yöntemi çağırın.
 
 ```
 bool GetLogonSessionId(LUID* pluid) const throw(...);
@@ -548,20 +548,20 @@ bool GetLogonSessionId(LUID* pluid) const throw(...);
 
 ### <a name="parameters"></a>Parametreler
 
-*pluid*<br/>
-İşaretçi bir [LUID'ini](/windows/desktop/api/winnt/ns-winnt-_luid) hangi alır oturum açma oturumu kimliği
+*plualıd*<br/>
+Oturum açma oturum KIMLIĞINI alacak bir [LUID](/windows/desktop/api/winnt/ns-winnt-luid) işaretçisi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olduğunda TRUE döndürür başarısız olduğunda FALSE.
+Başarılı olduğunda TRUE, hatada FALSE döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Hata ayıklama yapılarında, onaylama işlemi hatası meydana gelir *pluid* geçersiz bir değerdir.
+Hata ayıklama yapılarında, *pluıd* geçersiz bir değer olduğunda bir onaylama hatası oluşur.
 
-##  <a name="getlogonsid"></a>  CAccessToken::GetLogonSid
+##  <a name="getlogonsid"></a>CAccessToken:: GetLogonSid
 
-İlişkili oturum açma SID almak için bu yöntemi çağırın `CAccessToken` nesne.
+`CAccessToken` Nesneyle ilişkili oturum açma SID 'sini almak için bu yöntemi çağırın.
 
 ```
 bool GetLogonSid(CSid* pSid) const throw(...);
@@ -569,20 +569,20 @@ bool GetLogonSid(CSid* pSid) const throw(...);
 
 ### <a name="parameters"></a>Parametreler
 
-*Psıd*<br/>
-İşaretçi bir [CSid sınıfı](../../atl/reference/csid-class.md) nesne.
+*PSID*<br/>
+[CSID sınıfı](../../atl/reference/csid-class.md) nesnesine yönelik işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olduğunda TRUE döndürür başarısız olduğunda FALSE.
+Başarılı olduğunda TRUE, hatada FALSE döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Hata ayıklama yapılarında, onaylama işlemi hatası meydana gelir *Psıd* geçersiz bir değerdir.
+Hata ayıklama Derlemeleriyle, *PSID* geçersiz bir değer ise bir onaylama hatası meydana gelir.
 
-##  <a name="getowner"></a>  CAccessToken::GetOwner
+##  <a name="getowner"></a>CAccessToken:: GetOwner
 
-İle ilişkili sahibini almak için bu yöntemi çağırın `CAccessToken` nesne.
+`CAccessToken` Nesneyle ilişkili sahibi almak için bu yöntemi çağırın.
 
 ```
 bool GetOwner(CSid* pSid) const throw(...);
@@ -590,20 +590,20 @@ bool GetOwner(CSid* pSid) const throw(...);
 
 ### <a name="parameters"></a>Parametreler
 
-*Psıd*<br/>
-İşaretçi bir [CSid sınıfı](../../atl/reference/csid-class.md) nesne.
+*PSID*<br/>
+[CSID sınıfı](../../atl/reference/csid-class.md) nesnesine yönelik işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olduğunda TRUE döndürür başarısız olduğunda FALSE.
+Başarılı olduğunda TRUE, hatada FALSE döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Sahip, bu erişim belirtecinin geçerli olduğu sırada oluşturulan tüm nesneler üzerinde varsayılan olarak ayarlanır.
+Sahip, bu erişim belirteci etkin durumdayken oluşturulan tüm nesnelerde varsayılan olarak ayarlanır.
 
-##  <a name="getprimarygroup"></a>  CAccessToken::GetPrimaryGroup
+##  <a name="getprimarygroup"></a>CAccessToken:: GetPrimaryGroup
 
-İlişkili birincil grubu almak için bu yöntemi çağırın `CAccessToken` nesne.
+`CAccessToken` Nesneyle ilişkili birincil grubu almak için bu yöntemi çağırın.
 
 ```
 bool GetPrimaryGroup(CSid* pSid) const throw(...);
@@ -611,20 +611,20 @@ bool GetPrimaryGroup(CSid* pSid) const throw(...);
 
 ### <a name="parameters"></a>Parametreler
 
-*Psıd*<br/>
-İşaretçi bir [CSid sınıfı](../../atl/reference/csid-class.md) nesne.
+*PSID*<br/>
+[CSID sınıfı](../../atl/reference/csid-class.md) nesnesine yönelik işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olduğunda TRUE döndürür başarısız olduğunda FALSE.
+Başarılı olduğunda TRUE, hatada FALSE döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Grup, bu erişim belirtecinin geçerli olduğu sırada oluşturulan tüm nesneler üzerinde varsayılan olarak ayarlanır.
+Bu erişim belirteci etkin durumdayken oluşturulan tüm nesnelerde grup varsayılan olarak ayarlanır.
 
-##  <a name="getprivileges"></a>  CAccessToken::GetPrivileges
+##  <a name="getprivileges"></a>CAccessToken:: GetPrivileges
 
-İle ilişkili ayrıcalıklar almak için bu yöntemi çağırın `CAccessToken` nesne.
+`CAccessToken` Nesneyle ilişkili ayrıcalıkları almak için bu yöntemi çağırın.
 
 ```
 bool GetPrivileges(CTokenPrivileges* pPrivileges) const throw(...);
@@ -633,15 +633,15 @@ bool GetPrivileges(CTokenPrivileges* pPrivileges) const throw(...);
 ### <a name="parameters"></a>Parametreler
 
 *pPrivileges*<br/>
-İşaretçi bir [CTokenPrivileges sınıfı](../../atl/reference/ctokenprivileges-class.md) ayrıcalıkları alacak nesne.
+Ayrıcalıkları alacak bir [CTokenPrivileges sınıfı](../../atl/reference/ctokenprivileges-class.md) nesnesine yönelik işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olduğunda TRUE döndürür başarısız olduğunda FALSE.
+Başarılı olduğunda TRUE, hatada FALSE döndürür.
 
-##  <a name="getprocesstoken"></a>  CAccessToken::GetProcessToken
+##  <a name="getprocesstoken"></a>CAccessToken:: GetProcessToken
 
-Başlatmak için bu yöntemi çağırın `CAccessToken` verilen işlemdeki erişim belirteci ile.
+Verilen işlemden erişim belirteci `CAccessToken` ile başlatmak için bu yöntemi çağırın.
 
 ```
 bool GetProcessToken(DWORD dwDesiredAccess, HANDLE hProcess = NULL) throw();
@@ -650,22 +650,22 @@ bool GetProcessToken(DWORD dwDesiredAccess, HANDLE hProcess = NULL) throw();
 ### <a name="parameters"></a>Parametreler
 
 *dwDesiredAccess*<br/>
-İstenen erişim belirtecini erişim türlerini belirten bir erişim maskesi belirtir. Bu istenen erişim türleri, hangi erişimlerin verildiğini veya verilmediğini belirlemek için belirtecin DACL'si ile karşılaştırılır.
+Erişim belirtecine istenen erişim türlerini belirten bir erişim maskesini belirtir. Bu istenen erişim türleri, hangi erişimlerin verildiğini veya reddedildiğini belirleyen belirtecin DACL 'si ile karşılaştırılır.
 
 *hProcess*<br/>
-Erişim belirteci açık işlem işleyicisi. NULL varsayılan değeri kullanılıyorsa geçerli işlem kullanılır.
+Erişim belirteci açık olan işlem için tanıtıcı. Varsayılan NULL değeri kullanılırsa, geçerli işlem kullanılır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olduğunda TRUE döndürür başarısız olduğunda FALSE.
+Başarılı olduğunda TRUE, hatada FALSE döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çağrıları [OpenProcessToken](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-openprocesstoken) Win32 işlevi.
+[OpenProcessToken](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-openprocesstoken) Win32 işlevini çağırır.
 
-##  <a name="getprofile"></a>  CAccessToken::GetProfile
+##  <a name="getprofile"></a>CAccessToken:: GetProfile
 
-İle ilişkili kullanıcı profili işaret tanıtıcı almak için bu yöntemi çağırın `CAccessToken` nesne.
+`CAccessToken` Nesneyle ilişkili kullanıcı profiline işaret eden tanıtıcıyı almak için bu yöntemi çağırın.
 
 ```
 HANDLE GetProfile() const throw();
@@ -673,11 +673,11 @@ HANDLE GetProfile() const throw();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Profil yok, kullanıcı profili veya NULL işaret eden bir tanıtıcı döndürür.
+Kullanıcı profiline işaret eden bir tanıtıcı döndürür veya profil yoksa NULL değeri döndürür.
 
-##  <a name="getsource"></a>  CAccessToken::GetSource
+##  <a name="getsource"></a>CAccessToken:: GetSource
 
-Kaynağını almak için bu yöntemi çağırın `CAccessToken` nesne.
+`CAccessToken` Nesnenin kaynağını almak için bu yöntemi çağırın.
 
 ```
 bool GetSource(TOKEN_SOURCE* pSource) const throw(...);
@@ -686,15 +686,15 @@ bool GetSource(TOKEN_SOURCE* pSource) const throw(...);
 ### <a name="parameters"></a>Parametreler
 
 *pSource*<br/>
-İşaretçi bir [TOKEN_SOURCE](/windows/desktop/api/winnt/ns-winnt-_token_source) yapısı.
+[TOKEN_SOURCE](/windows/desktop/api/winnt/ns-winnt-token_source) yapısına yönelik işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olduğunda TRUE döndürür başarısız olduğunda FALSE.
+Başarılı olduğunda TRUE, hatada FALSE döndürür.
 
-##  <a name="getstatistics"></a>  CAccessToken::GetStatistics
+##  <a name="getstatistics"></a>CAccessToken:: GetStatistics
 
-İle ilgili bilgi almak için bu yöntemi çağırın `CAccessToken` nesne.
+`CAccessToken` Nesneyle ilişkili bilgileri almak için bu yöntemi çağırın.
 
 ```
 bool GetStatistics(TOKEN_STATISTICS* pStatistics) const throw(...);
@@ -702,16 +702,16 @@ bool GetStatistics(TOKEN_STATISTICS* pStatistics) const throw(...);
 
 ### <a name="parameters"></a>Parametreler
 
-*pStatistics*<br/>
-İşaretçi bir [TOKEN_STATISTICS](/windows/desktop/api/winnt/ns-winnt-_token_statistics) yapısı.
+*Pstatıstıcs*<br/>
+[TOKEN_STATISTICS](/windows/desktop/api/winnt/ns-winnt-token_statistics) yapısına yönelik işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olduğunda TRUE döndürür başarısız olduğunda FALSE.
+Başarılı olduğunda TRUE, hatada FALSE döndürür.
 
-##  <a name="getterminalservicessessionid"></a>  CAccessToken::GetTerminalServicesSessionId
+##  <a name="getterminalservicessessionid"></a>CAccessToken:: Getterminalservicessessionıd
 
-Terminal Hizmetleri oturum kimliği ile ilişkili almak için bu yöntemi çağırın `CAccessToken` nesne.
+`CAccessToken` Nesneyle ilişkili Terminal Hizmetleri oturum kimliğini almak için bu yöntemi çağırın.
 
 ```
 bool GetTerminalServicesSessionId(DWORD* pdwSessionId) const throw(...);
@@ -720,15 +720,15 @@ bool GetTerminalServicesSessionId(DWORD* pdwSessionId) const throw(...);
 ### <a name="parameters"></a>Parametreler
 
 *pdwSessionId*<br/>
-Terminal Hizmetleri oturum kimliği
+Terminal Hizmetleri oturum KIMLIĞI.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olduğunda TRUE döndürür başarısız olduğunda FALSE.
+Başarılı olduğunda TRUE, hatada FALSE döndürür.
 
-##  <a name="getthreadtoken"></a>  CAccessToken::GetThreadToken
+##  <a name="getthreadtoken"></a>CAccessToken:: GetThreadToken
 
-Başlatmak için bu yöntemi çağırın `CAccessToken` belirtilen iş parçacığından belirtecine sahip.
+Verilen iş parçacığından belirteç `CAccessToken` ile başlatmak için bu yöntemi çağırın.
 
 ```
 bool GetThreadToken(
@@ -740,23 +740,23 @@ bool GetThreadToken(
 ### <a name="parameters"></a>Parametreler
 
 *dwDesiredAccess*<br/>
-İstenen erişim belirtecini erişim türlerini belirten bir erişim maskesi belirtir. Bu istenen erişim türleri, hangi erişimlerin verildiğini veya verilmediğini belirlemek için belirtecin DACL'si ile karşılaştırılır.
+Erişim belirtecine istenen erişim türlerini belirten bir erişim maskesini belirtir. Bu istenen erişim türleri, hangi erişimlerin verildiğini veya reddedildiğini belirleyen belirtecin DACL 'si ile karşılaştırılır.
 
 *hThread*<br/>
-Erişim belirteci açık iş parçacığına işleyin.
+Erişim belirteci açık olan iş parçacığına yönelik tanıtıcı.
 
 *bOpenAsSelf*<br/>
-Erişim denetimi iş parçacığı arama güvenlik bağlamında karşı yapılacak olup olmadığını belirten `GetThreadToken` yöntem veya işlem çağıran iş parçacığı için güvenlik bağlamı.
+Erişim denetiminin, `GetThreadToken` yöntemi çağıran iş parçacığının güvenlik bağlamına veya çağıran iş parçacığı için işlemin güvenlik bağlamına karşı yapılıp yapılmayacağını belirtir.
 
-Bu parametre FALSE ise, erişim denetimi, çağıran iş parçacığı için güvenlik bağlamı kullanılarak gerçekleştirilir. İş parçacığı bir istemci kimliğine bürünme, bu güvenlik bağlamı, istemci işlemi olabilir. Bu parametre TRUE ise, erişim denetimi, çağıran iş parçacığı için işlem güvenlik bağlamını kullanarak yapılır.
+Bu parametre FALSE ise, erişim denetimi çağıran iş parçacığının güvenlik bağlamı kullanılarak gerçekleştirilir. İş parçacığı bir istemciyi taklit alıyorsa, bu güvenlik bağlamı bir istemci işlemi olabilir. Bu parametre TRUE ise, erişim denetimi çağıran iş parçacığı için işlemin güvenlik bağlamı kullanılarak yapılır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olduğunda TRUE döndürür başarısız olduğunda FALSE.
+Başarılı olduğunda TRUE, hatada FALSE döndürür.
 
-##  <a name="gettokenid"></a>  CAccessToken::GetTokenId
+##  <a name="gettokenid"></a>CAccessToken:: Gettokenıd
 
-Belirteç ile ilişkili Kimliği almak için bu yöntemi çağırın `CAccessToken` nesne.
+`CAccessToken` Nesneyle ilişkili belirteç kimliğini almak için bu yöntemi çağırın.
 
 ```
 bool GetTokenId(LUID* pluid) const throw(...);
@@ -764,16 +764,16 @@ bool GetTokenId(LUID* pluid) const throw(...);
 
 ### <a name="parameters"></a>Parametreler
 
-*pluid*<br/>
-İşaretçi bir [LUID'ini](/windows/desktop/api/winnt/ns-winnt-_luid) hangi alır belirteç kimliği
+*plualıd*<br/>
+Belirteç KIMLIĞINI alacak bir [LUID](/windows/desktop/api/winnt/ns-winnt-luid) işaretçisi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olduğunda TRUE döndürür başarısız olduğunda FALSE.
+Başarılı olduğunda TRUE, hatada FALSE döndürür.
 
-##  <a name="gettype"></a>  CAccessToken::GetType
+##  <a name="gettype"></a>CAccessToken:: GetType
 
-Belirteç türünü almak için bu yöntemi çağırın `CAccessToken` nesne.
+`CAccessToken` Nesnenin belirteç türünü almak için bu yöntemi çağırın.
 
 ```
 bool GetType(TOKEN_TYPE* pType) const throw(...);
@@ -782,19 +782,19 @@ bool GetType(TOKEN_TYPE* pType) const throw(...);
 ### <a name="parameters"></a>Parametreler
 
 *pType*<br/>
-Adresi [TOKEN_TYPE](/windows/desktop/api/winnt/ne-winnt-_token_type) değişkeni, başarı, belirtecin türü alır.
+Başarı durumunda belirtecin türünü alan [TOKEN_TYPE](/windows/desktop/api/winnt/ne-winnt-token_type) değişkeninin adresi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olduğunda TRUE döndürür başarısız olduğunda FALSE.
+Başarılı olduğunda TRUE, hatada FALSE döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-TOKEN_TYPE numaralandırma türü, bir birincil belirteç kimliğe bürünme belirtecini ayırt değerlerini içerir.
+TOKEN_TYPE sabit listesi türü, bir birincil belirteç ve bir kimliğe bürünme belirteci ayırt eden değerleri içerir.
 
-##  <a name="getuser"></a>  CAccessToken::GetUser
+##  <a name="getuser"></a>CAccessToken:: GetUser
 
-İle ilişkili kullanıcıyı tanımlamak için bu yöntemi çağırın `CAccessToken` nesne.
+`CAccessToken` Nesneyle ilişkili kullanıcıyı tanımlamak için bu yöntemi çağırın.
 
 ```
 bool GetUser(CSid* pSid) const throw(...);
@@ -802,16 +802,16 @@ bool GetUser(CSid* pSid) const throw(...);
 
 ### <a name="parameters"></a>Parametreler
 
-*Psıd*<br/>
-İşaretçi bir [CSid sınıfı](../../atl/reference/csid-class.md) nesne.
+*PSID*<br/>
+[CSID sınıfı](../../atl/reference/csid-class.md) nesnesine yönelik işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olduğunda TRUE döndürür başarısız olduğunda FALSE.
+Başarılı olduğunda TRUE, hatada FALSE döndürür.
 
-##  <a name="hkeycurrentuser"></a>  CAccessToken::HKeyCurrentUser
+##  <a name="hkeycurrentuser"></a>CAccessToken:: HKeyCurrentUser
 
-İle ilişkili kullanıcı profili işaret tanıtıcı almak için bu yöntemi çağırın `CAccessToken` nesne.
+`CAccessToken` Nesneyle ilişkili kullanıcı profiline işaret eden tanıtıcıyı almak için bu yöntemi çağırın.
 
 ```
 HKEY HKeyCurrentUser() const throw();
@@ -819,11 +819,11 @@ HKEY HKeyCurrentUser() const throw();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Profil yok, kullanıcı profili veya NULL işaret eden bir tanıtıcı döndürür.
+Kullanıcı profiline işaret eden bir tanıtıcı döndürür veya profil yoksa NULL değeri döndürür.
 
-##  <a name="impersonate"></a>  CAccessToken::Impersonate
+##  <a name="impersonate"></a>CAccessToken:: Impersonate
 
-Bir kimliğe bürünme atamak için bu yöntemi çağırın `CAccessToken` bir iş parçacığına.
+Bir iş parçacığına kimliğe bürünme `CAccessToken` atamak için bu yöntemi çağırın.
 
 ```
 bool Impersonate(HANDLE hThread = NULL) const throw(...);
@@ -832,21 +832,21 @@ bool Impersonate(HANDLE hThread = NULL) const throw(...);
 ### <a name="parameters"></a>Parametreler
 
 *hThread*<br/>
-İş parçacığı için kimliğe bürünme belirtecini atamak için işleyin. Bu işleyici TOKEN_IMPERSONATE erişim haklarıyla açılmış olmalıdır. Varsa *hThread* null, yöntem bir kimliğe bürünme belirteci durdurmak iş parçacığı neden olur.
+Kimliğe bürünme belirtecini atamak için iş parçacığına olan tanıtıcı. Bu tanıtıcı, TOKEN_IMPERSONATE erişim haklarıyla açılmış olmalıdır. *HThread* null ise, yöntemi, iş parçacığının kimliğe bürünme belirtecini kullanmayı durdurmasına neden olur.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olduğunda TRUE döndürür başarısız olduğunda FALSE.
+Başarılı olduğunda TRUE, hatada FALSE döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Hata ayıklama yapılarında, onaylama işlemi hatası meydana gelir `CAccessToken` belirteç geçerli bir işaretçi yok.
+Hata ayıklama yapılarında, belirteç için geçerli bir işaretçi yoksa `CAccessToken` bir onaylama hatası meydana gelir.
 
-[Cautorevertımpersonation sınıfı](../../atl/reference/cautorevertimpersonation-class.md) başkasının kimliğine bürünülerek gerçekleştirilen bir erişim belirteci otomatik olarak geri almak için kullanılabilir.
+[CAutoRevertImpersonation sınıfı](../../atl/reference/cautorevertimpersonation-class.md) , kimliğe bürünme erişim belirteçlerini otomatik olarak dönüştürmek için kullanılabilir.
 
-##  <a name="impersonateloggedonuser"></a>  CAccessToken::ImpersonateLoggedOnUser
+##  <a name="impersonateloggedonuser"></a>CAccessToken:: ImpersonateLoggedOnUser
 
-Güvenlik bağlamı bir oturum açan kullanıcının kimliğine bürünmek çağıran iş parçacığına izin vermek için bu yöntemi çağırın.
+Çağıran iş parçacığının, oturum açmış bir kullanıcının güvenlik bağlamını taklit etmesine izin vermek için bu yöntemi çağırın.
 
 ```
 bool ImpersonateLoggedOnUser() const throw(...);
@@ -854,16 +854,16 @@ bool ImpersonateLoggedOnUser() const throw(...);
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olduğunda TRUE döndürür başarısız olduğunda FALSE.
+Başarılı olduğunda TRUE, hatada FALSE döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
 > [!IMPORTANT]
->  Kimliğe bürünme işlevi çağrısı için herhangi bir nedenle başarısız olursa, istemci kimliğine bürünülen değildir ve istemci isteği Çağrının yapıldığı işlem güvenlik bağlamında yapılır. İşlem yüksek ayrıcalıklı bir hesap çalışıyor ya da bir yönetim grubunun bir üyesi olarak kullanıcı eylemleri gerçekleştiremezsiniz olabilir isterse aksi izni. Bu nedenle, bu işlevin dönüş değeri her zaman onaylanması.
+>  Kimliğe bürünme işlevine yapılan bir çağrı herhangi bir nedenle başarısız olursa, istemci kimliğine bürünülemez ve istemci isteği Çağrının yapıldığı işlemin güvenlik bağlamında yapılır. İşlem yüksek ayrıcalıklı bir hesap olarak çalışıyorsa veya bir yönetim grubunun üyesi olarak, Kullanıcı Aksi takdirde izin verilmeyen eylemler gerçekleştirebilir. Bu nedenle, bu işlevin dönüş değeri her zaman onaylanır.
 
-##  <a name="istokenrestricted"></a>  CAccessToken::IsTokenRestricted
+##  <a name="istokenrestricted"></a>CAccessToken:: ıstokenrestricted
 
-Test için bu yöntemi çağırın `CAccessToken` nesne kısıtlı SID bir listesini içerir.
+`CAccessToken` Nesnenin kısıtlı SID 'lerin bir listesini içerip içermiyorsa test etmek için bu yöntemi çağırın.
 
 ```
 bool IsTokenRestricted() const throw();
@@ -871,11 +871,11 @@ bool IsTokenRestricted() const throw();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Nesne hiçbir kısıtlama SID varsa SID yanlış sınırlama listesi içeriyorsa veya yöntem başarısız olursa TRUE değerini döndürür.
+Nesne bir kısıtlama SID listesi içeriyorsa TRUE, hiçbir SID kısıtlaması yoksa veya yöntem başarısız olursa FALSE döndürür.
 
-##  <a name="loaduserprofile"></a>  CAccessToken::LoadUserProfile
+##  <a name="loaduserprofile"></a>CAccessToken:: LoadUserProfile
 
-İle ilişkili kullanıcı profili yüklemek için bu yöntemi çağıran `CAccessToken` nesne.
+`CAccessToken` Nesneyle ilişkili kullanıcı profilini yüklemek için bu yöntemi çağırın.
 
 ```
 bool LoadUserProfile() throw(...);
@@ -883,13 +883,13 @@ bool LoadUserProfile() throw(...);
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olduğunda TRUE döndürür başarısız olduğunda FALSE.
+Başarılı olduğunda TRUE, hatada FALSE döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Hata ayıklama yapılarında, onaylama işlemi hatası meydana gelir `CAccessToken` geçerli bir belirteç içermiyor veya bir kullanıcı zaten profil yoksa.
+Hata ayıklama yapılarında, geçerli bir belirteç içermiyorsa veya bir Kullanıcı `CAccessToken` profili zaten varsa bir onaylama hatası oluşur.
 
-##  <a name="logonuser"></a>  CAccessToken::LogonUser
+##  <a name="logonuser"></a>CAccessToken:: LogonUser
 
 Verilen kimlik bilgileriyle ilişkili kullanıcı için bir oturum açma oturumu oluşturmak için bu yöntemi çağırın.
 
@@ -905,31 +905,31 @@ bool LogonUser(
 ### <a name="parameters"></a>Parametreler
 
 *pszUserName*<br/>
-Kullanıcı adını belirten bir null ile sonlandırılmış dizeye yönelik işaretçi. Bu oturum için kullanıcı hesabının adıdır.
+Kullanıcı adını belirten, null ile sonlandırılmış bir dize işaretçisi. Bu, oturum açmak için Kullanıcı hesabının adıdır.
 
 *pszDomain*<br/>
-Etki alanı ya da içeren, hesap veritabanı sunucusu adını belirten bir null ile sonlandırılmış dize işaretçisine *pszUserName* hesabı.
+Hesap veritabanı *pszUserName* hesabını içeren etki alanı veya sunucu adını belirten null ile sonlandırılmış bir dize işaretçisi.
 
 *pszPassword*<br/>
-Belirtilen kullanıcı hesabı için düz metin parolayı belirtir null ile sonlandırılmış bir dize işaretçisi *pszUserName*.
+*PszUserName*tarafından belirtilen kullanıcı hesabının şifresiz metin parolasını belirten null ile sonlandırılmış bir dize işaretçisi.
 
 *dwLogonType*<br/>
-Oturum açma işlemi gerçekleştirmek için türünü belirtir. Bkz: [LogonUser](/windows/desktop/api/winbase/nf-winbase-logonusera) daha fazla ayrıntı için.
+Gerçekleştirilecek oturum açma işlemi türünü belirtir. Daha fazla ayrıntı için bkz. [LogonUser](/windows/desktop/api/winbase/nf-winbase-logonusera) .
 
 *dwLogonProvider*<br/>
-Oturum açma sağlayıcısını belirtir. Bkz: [LogonUser](/windows/desktop/api/winbase/nf-winbase-logonusera) daha fazla ayrıntı için.
+Oturum açma sağlayıcısını belirtir. Daha fazla ayrıntı için bkz. [LogonUser](/windows/desktop/api/winbase/nf-winbase-logonusera) .
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olduğunda TRUE döndürür başarısız olduğunda FALSE.
+Başarılı olduğunda TRUE, hatada FALSE döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Erişim belirteci üzerinden oturum açma kaynaklanan ile ilişkili olabilir `CAccessToken`. Başarılı olması bu yöntemin `CAccessToken` nesnesi SE_TCB_NAME ayrıcalıklar, güvenilen bir bilgisayar temel bir parçası olarak sahibi tanımlayan tutar. Bkz: [LogonUser](/windows/desktop/api/winbase/nf-winbase-logonusera) gereken ayrıcalıklar ilgili daha fazla bilgi.
+Oturum açma işleminden kaynaklanan erişim belirteci ile `CAccessToken`ilişkilendirilir. Bu yöntemin başarılı olması için, `CAccessToken` nesnenin, güvenilir bilgisayar tabanının bir parçası olarak sahibini tanımlayarak SE_TCB_NAME ayrıcalıklarını tutması gerekir. Gerekli ayrıcalıklar hakkında daha fazla bilgi için bkz. [LogonUser](/windows/desktop/api/winbase/nf-winbase-logonusera) .
 
-##  <a name="opencomclienttoken"></a>  CAccessToken::OpenCOMClientToken
+##  <a name="opencomclienttoken"></a>CAccessToken:: OpenCOMClientToken
 
-İşleme başlatmak için bir çağrı bir istemciden bir COM sunucusu bu yöntemi çağırın `CAccessToken` COM istemcisi erişim belirteci ile.
+Com istemcisinden erişim belirteci `CAccessToken` ile başlatmak için bir istemciden çağrıyı işleyen bir com sunucusu içinden bu yöntemi çağırın.
 
 ```
 bool OpenCOMClientToken(
@@ -941,27 +941,27 @@ bool OpenCOMClientToken(
 ### <a name="parameters"></a>Parametreler
 
 *dwDesiredAccess*<br/>
-İstenen erişim belirtecini erişim türlerini belirten bir erişim maskesi belirtir. Bu istenen erişim türleri, hangi erişimlerin verildiğini veya verilmediğini belirlemek için belirtecin DACL'si ile karşılaştırılır.
+Erişim belirtecine istenen erişim türlerini belirten bir erişim maskesini belirtir. Bu istenen erişim türleri, hangi erişimlerin verildiğini veya reddedildiğini belirleyen belirtecin DACL 'si ile karşılaştırılır.
 
 *bImpersonate*<br/>
-Bu çağrının başarıyla tamamlanırsa TRUE ise, geçerli iş parçacığı çağıran COM istemci kimliğine bürünür. FALSE ise, erişim belirtecini açılır, ancak bu çağrı tamamlandığında iş parçacığı kimliğe bürünme belirtecini olmaz.
+TRUE ise, bu çağrı başarıyla tamamlanırsa, geçerli iş parçacığı çağıran COM istemcisinin kimliğine bürünecektir. FALSE ise, erişim belirteci açılır, ancak bu çağrı tamamlandığında iş parçacığı kimliğe bürünme belirtecine sahip olmaz.
 
 *bOpenAsSelf*<br/>
-Erişim denetimi iş parçacığı arama güvenlik bağlamında karşı yapılacak olup olmadığını belirten [GetThreadToken](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-getcurrentthread) yöntem veya işlem çağıran iş parçacığı için güvenlik bağlamı.
+Erişim denetiminin, [GetThreadToken](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-getcurrentthread) metodunu çağıran iş parçacığının güvenlik bağlamına veya çağıran iş parçacığı için işlemin güvenlik bağlamına karşı yapılıp yapılmayacağını belirtir.
 
-Bu parametre FALSE ise, erişim denetimi, çağıran iş parçacığı için güvenlik bağlamı kullanılarak gerçekleştirilir. İş parçacığı bir istemci kimliğine bürünme, bu güvenlik bağlamı, istemci işlemi olabilir. Bu parametre TRUE ise, erişim denetimi, çağıran iş parçacığı için işlem güvenlik bağlamını kullanarak yapılır.
+Bu parametre FALSE ise, erişim denetimi çağıran iş parçacığının güvenlik bağlamı kullanılarak gerçekleştirilir. İş parçacığı bir istemciyi taklit alıyorsa, bu güvenlik bağlamı bir istemci işlemi olabilir. Bu parametre TRUE ise, erişim denetimi çağıran iş parçacığı için işlemin güvenlik bağlamı kullanılarak yapılır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olduğunda TRUE döndürür başarısız olduğunda FALSE.
+Başarılı olduğunda TRUE, hatada FALSE döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-[Cautorevertımpersonation sınıfı](../../atl/reference/cautorevertimpersonation-class.md) otomatik olarak ayarlanarak oluşturulmuş başkasının kimliğine bürünülerek gerçekleştirilen erişim belirteçleri geri almak için kullanılan *bImpersonate* bayrağı true.
+[CAutoRevertImpersonation sınıfı](../../atl/reference/cautorevertimpersonation-class.md) , *BIMPERSONATE* bayrağı true olarak ayarlanarak oluşturulan kimliğe bürünme erişim belirteçlerini otomatik olarak geri almak için kullanılabilir.
 
-##  <a name="opennamedpipeclienttoken"></a>  CAccessToken::OpenNamedPipeClientToken
+##  <a name="opennamedpipeclienttoken"></a>CAccessToken:: OpenNamedPipeClientToken
 
-Bir sunucu içinde Bu yöntemden alma isteği başlatmak için bir adlandırılmış kanal üzerinde çağrı `CAccessToken` istemci erişim belirteciyle.
+İstemciden erişim belirteci `CAccessToken` ile başlatmak için adlandırılmış bir kanal üzerinden istek alan bir sunucu içinden bu yöntemi çağırın.
 
 ```
 bool OpenNamedPipeClientToken(
@@ -974,30 +974,30 @@ bool OpenNamedPipeClientToken(
 ### <a name="parameters"></a>Parametreler
 
 *hPipe*<br/>
-Bir adlandırılmış kanala işleyin.
+Adlandırılmış kanal için tanıtıcı.
 
 *dwDesiredAccess*<br/>
-İstenen erişim belirtecini erişim türlerini belirten bir erişim maskesi belirtir. Bu istenen erişim türleri, hangi erişimlerin verildiğini veya verilmediğini belirlemek için belirtecin DACL'si ile karşılaştırılır.
+Erişim belirtecine istenen erişim türlerini belirten bir erişim maskesini belirtir. Bu istenen erişim türleri, hangi erişimlerin verildiğini veya reddedildiğini belirleyen belirtecin DACL 'si ile karşılaştırılır.
 
 *bImpersonate*<br/>
-Bu çağrının başarıyla tamamlanırsa TRUE ise, geçerli iş parçacığı çağıran kanal istemci kimliğine bürünür. FALSE ise, erişim belirtecini açılır, ancak bu çağrı tamamlandığında iş parçacığı kimliğe bürünme belirtecini olmaz.
+TRUE ise, bu çağrı başarıyla tamamlanırsa, geçerli iş parçacığı çağıran kanal istemcisinin kimliğine bürünecektir. FALSE ise, erişim belirteci açılır, ancak bu çağrı tamamlandığında iş parçacığı kimliğe bürünme belirtecine sahip olmaz.
 
 *bOpenAsSelf*<br/>
-Erişim denetimi iş parçacığı arama güvenlik bağlamında karşı yapılacak olup olmadığını belirten [GetThreadToken](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-getcurrentthread) yöntem veya işlem çağıran iş parçacığı için güvenlik bağlamı.
+Erişim denetiminin, [GetThreadToken](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-getcurrentthread) metodunu çağıran iş parçacığının güvenlik bağlamına veya çağıran iş parçacığı için işlemin güvenlik bağlamına karşı yapılıp yapılmayacağını belirtir.
 
-Bu parametre FALSE ise, erişim denetimi, çağıran iş parçacığı için güvenlik bağlamı kullanılarak gerçekleştirilir. İş parçacığı bir istemci kimliğine bürünme, bu güvenlik bağlamı, istemci işlemi olabilir. Bu parametre TRUE ise, erişim denetimi, çağıran iş parçacığı için işlem güvenlik bağlamını kullanarak yapılır.
+Bu parametre FALSE ise, erişim denetimi çağıran iş parçacığının güvenlik bağlamı kullanılarak gerçekleştirilir. İş parçacığı bir istemciyi taklit alıyorsa, bu güvenlik bağlamı bir istemci işlemi olabilir. Bu parametre TRUE ise, erişim denetimi çağıran iş parçacığı için işlemin güvenlik bağlamı kullanılarak yapılır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olduğunda TRUE döndürür başarısız olduğunda FALSE.
+Başarılı olduğunda TRUE, hatada FALSE döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-[Cautorevertımpersonation sınıfı](../../atl/reference/cautorevertimpersonation-class.md) otomatik olarak ayarlanarak oluşturulmuş başkasının kimliğine bürünülerek gerçekleştirilen erişim belirteçleri geri almak için kullanılan *bImpersonate* bayrağı true.
+[CAutoRevertImpersonation sınıfı](../../atl/reference/cautorevertimpersonation-class.md) , *BIMPERSONATE* bayrağı true olarak ayarlanarak oluşturulan kimliğe bürünme erişim belirteçlerini otomatik olarak geri almak için kullanılabilir.
 
-##  <a name="openrpcclienttoken"></a>  CAccessToken::OpenRPCClientToken
+##  <a name="openrpcclienttoken"></a>CAccessToken:: OpenRPCClientToken
 
-Bir sunucu başlatmak için bir RPC istemcisini bir çağrıdan işleme içinde bu yöntemi çağırın `CAccessToken` istemci erişim belirteciyle.
+İstemciden erişim belirteci `CAccessToken` ile başlatmak için bir RPC istemcisinden çağrıyı işleyen bir sunucu içinden bu yöntemi çağırın.
 
 ```
 bool OpenRPCClientToken(
@@ -1010,30 +1010,30 @@ bool OpenRPCClientToken(
 ### <a name="parameters"></a>Parametreler
 
 *BindingHandle*<br/>
-Bağlama işleci otomatik olarak sunucunun bir istemciye bağlamayı temsil eder.
+Bir istemciye bağlamayı temsil eden sunucuda bağlama tanıtıcısı.
 
 *dwDesiredAccess*<br/>
-İstenen erişim belirtecini erişim türlerini belirten bir erişim maskesi belirtir. Bu istenen erişim türleri, hangi erişimlerin verildiğini veya verilmediğini belirlemek için belirtecin DACL'si ile karşılaştırılır.
+Erişim belirtecine istenen erişim türlerini belirten bir erişim maskesini belirtir. Bu istenen erişim türleri, hangi erişimlerin verildiğini veya reddedildiğini belirleyen belirtecin DACL 'si ile karşılaştırılır.
 
 *bImpersonate*<br/>
-Bu çağrının başarıyla tamamlanırsa TRUE ise, geçerli iş parçacığı çağıran RPC istemci kimliğine bürünür. FALSE ise, erişim belirtecini açılır, ancak bu çağrı tamamlandığında iş parçacığı kimliğe bürünme belirtecini olmaz.
+DOĞRU ise, bu çağrı başarıyla tamamlanırsa, geçerli iş parçacığı çağıran RPC istemcisinin kimliğine bürünecektir. FALSE ise, erişim belirteci açılır, ancak bu çağrı tamamlandığında iş parçacığı kimliğe bürünme belirtecine sahip olmaz.
 
 *bOpenAsSelf*<br/>
-Erişim denetimi iş parçacığı arama güvenlik bağlamında karşı yapılacak olup olmadığını belirten [GetThreadToken](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-getcurrentthread) yöntem veya işlem çağıran iş parçacığı için güvenlik bağlamı.
+Erişim denetiminin, [GetThreadToken](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-getcurrentthread) metodunu çağıran iş parçacığının güvenlik bağlamına veya çağıran iş parçacığı için işlemin güvenlik bağlamına karşı yapılıp yapılmayacağını belirtir.
 
-Bu parametre FALSE ise, erişim denetimi, çağıran iş parçacığı için güvenlik bağlamı kullanılarak gerçekleştirilir. İş parçacığı bir istemci kimliğine bürünme, bu güvenlik bağlamı, istemci işlemi olabilir. Bu parametre TRUE ise, erişim denetimi, çağıran iş parçacığı için işlem güvenlik bağlamını kullanarak yapılır.
+Bu parametre FALSE ise, erişim denetimi çağıran iş parçacığının güvenlik bağlamı kullanılarak gerçekleştirilir. İş parçacığı bir istemciyi taklit alıyorsa, bu güvenlik bağlamı bir istemci işlemi olabilir. Bu parametre TRUE ise, erişim denetimi çağıran iş parçacığı için işlemin güvenlik bağlamı kullanılarak yapılır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olduğunda TRUE döndürür başarısız olduğunda FALSE.
+Başarılı olduğunda TRUE, hatada FALSE döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-[Cautorevertımpersonation sınıfı](../../atl/reference/cautorevertimpersonation-class.md) otomatik olarak ayarlanarak oluşturulmuş başkasının kimliğine bürünülerek gerçekleştirilen erişim belirteçleri geri almak için kullanılan *bImpersonate* bayrağı true.
+[CAutoRevertImpersonation sınıfı](../../atl/reference/cautorevertimpersonation-class.md) , *BIMPERSONATE* bayrağı true olarak ayarlanarak oluşturulan kimliğe bürünme erişim belirteçlerini otomatik olarak geri almak için kullanılabilir.
 
-##  <a name="openthreadtoken"></a>  CAccessToken::OpenThreadToken
+##  <a name="openthreadtoken"></a>CAccessToken:: OpenThreadToken
 
-Kimliğe bürünme düzeyini ayarlayın ve ardından başlatmak için bu yöntemi çağırın `CAccessToken` belirtilen iş parçacığından belirtecine sahip.
+Kimliğe bürünme düzeyini ayarlamak için bu yöntemi çağırın ve ardından öğesini verilen `CAccessToken` iş parçacığından belirteç ile başlatın.
 
 ```
 bool OpenThreadToken(
@@ -1046,32 +1046,32 @@ bool OpenThreadToken(
 ### <a name="parameters"></a>Parametreler
 
 *dwDesiredAccess*<br/>
-İstenen erişim belirtecini erişim türlerini belirten bir erişim maskesi belirtir. Bu istenen erişim türleri, hangi erişimlerin verildiğini veya verilmediğini belirlemek için belirtecin DACL'si ile karşılaştırılır.
+Erişim belirtecine istenen erişim türlerini belirten bir erişim maskesini belirtir. Bu istenen erişim türleri, hangi erişimlerin verildiğini veya reddedildiğini belirleyen belirtecin DACL 'si ile karşılaştırılır.
 
 *bImpersonate*<br/>
-Bu yöntem tamamlandığında iş parçacığının TRUE ise istenen kimliğe bürünme düzeyinde kalır. FALSE ise, iş parçacığının kendi özgün kimliğe bürünme düzeyini döner.
+TRUE ise, bu yöntem tamamlandıktan sonra iş parçacığı istenen kimliğe bürünme düzeyinde bırakılır. YANLıŞ ise, iş parçacığı özgün kimliğe bürünme düzeyine döndürülür.
 
 *bOpenAsSelf*<br/>
-Erişim denetimi iş parçacığı arama güvenlik bağlamında karşı yapılacak olup olmadığını belirten [GetThreadToken](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-getcurrentthread) yöntem veya işlem çağıran iş parçacığı için güvenlik bağlamı.
+Erişim denetiminin, [GetThreadToken](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-getcurrentthread) metodunu çağıran iş parçacığının güvenlik bağlamına veya çağıran iş parçacığı için işlemin güvenlik bağlamına karşı yapılıp yapılmayacağını belirtir.
 
-Bu parametre FALSE ise, erişim denetimi, çağıran iş parçacığı için güvenlik bağlamı kullanılarak gerçekleştirilir. İş parçacığı bir istemci kimliğine bürünme, bu güvenlik bağlamı, istemci işlemi olabilir. Bu parametre TRUE ise, erişim denetimi, çağıran iş parçacığı için işlem güvenlik bağlamını kullanarak yapılır.
+Bu parametre FALSE ise, erişim denetimi çağıran iş parçacığının güvenlik bağlamı kullanılarak gerçekleştirilir. İş parçacığı bir istemciyi taklit alıyorsa, bu güvenlik bağlamı bir istemci işlemi olabilir. Bu parametre TRUE ise, erişim denetimi çağıran iş parçacığı için işlemin güvenlik bağlamı kullanılarak yapılır.
 
 *Sil*<br/>
-Belirtir bir [SECURITY_IMPERSONATION_LEVEL](/windows/desktop/api/winnt/ne-winnt-_security_impersonation_level) listelenmiş belirteç kimliğe bürünme düzeyini sağlayan türü.
+Belirtecin kimliğe bürünme düzeyini sağlayan bir [SECURITY_IMPERSONATION_LEVEL](/windows/desktop/api/winnt/ne-winnt-security_impersonation_level) numaralandırılmış türü belirtir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olduğunda TRUE döndürür başarısız olduğunda FALSE.
+Başarılı olduğunda TRUE, hatada FALSE döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`OpenThreadToken` benzer [CAccessToken::GetThreadToken](#getthreadtoken), ancak başlatmadan önce kimliğe bürünme düzeyini ayarlar `CAccessToken` gelen iş parçacığının erişim belirteci.
+`OpenThreadToken`, [CAccessToken:: GetThreadToken](#getthreadtoken)öğesine benzerdir, ancak iş parçacığının erişim belirtecinden başlatmadan önce `CAccessToken` kimliğe bürünme düzeyini ayarlar.
 
-[Cautorevertımpersonation sınıfı](../../atl/reference/cautorevertimpersonation-class.md) otomatik olarak ayarlanarak oluşturulmuş başkasının kimliğine bürünülerek gerçekleştirilen erişim belirteçleri geri almak için kullanılan *bImpersonate* bayrağı true.
+[CAutoRevertImpersonation sınıfı](../../atl/reference/cautorevertimpersonation-class.md) , *BIMPERSONATE* bayrağı true olarak ayarlanarak oluşturulan kimliğe bürünme erişim belirteçlerini otomatik olarak geri almak için kullanılabilir.
 
-##  <a name="privilegecheck"></a>  CAccessToken::PrivilegeCheck
+##  <a name="privilegecheck"></a>CAccessToken::P rivilegeCheck
 
-Belirtilen bir ayrıcalık kümesi etkin içinde olup olmadığını belirlemek için bu yöntemi çağırın `CAccessToken` nesne.
+`CAccessToken` Nesnede belirtilen ayrıcalık kümesinin etkinleştirilip etkinleştirilmeyeceğini anlamak için bu yöntemi çağırın.
 
 ```
 bool PrivilegeCheck(
@@ -1082,22 +1082,22 @@ bool PrivilegeCheck(
 ### <a name="parameters"></a>Parametreler
 
 *RequiredPrivileges*<br/>
-İşaretçi bir [PRIVILEGE_SET](/windows/desktop/api/winnt/ns-winnt-_privilege_set) yapısı.
+[PRIVILEGE_SET](/windows/desktop/api/winnt/ns-winnt-privilege_set) yapısına yönelik işaretçi.
 
 *pbResult*<br/>
-Yöntem bir değere işaretçi ayarlar tüm belirtilen ayrıcalık içinde etkin olup olmadığını belirtmek için `CAccessToken` nesne.
+Yöntemin bir değere işaretçisi, belirtilen ayrıcalığın herhangi birinin veya tümünün `CAccessToken` nesnede etkin olup olmadığını belirtmek için ayarlanır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olduğunda TRUE döndürür başarısız olduğunda FALSE.
+Başarılı olduğunda TRUE, hatada FALSE döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Zaman `PrivilegeCheck` döndürür, `Attributes` her üyesi [LUID_AND_ATTRIBUTES konusuna](/windows/desktop/api/winnt/ns-winnt-_luid_and_attributes) karşılık gelen ayrıcalık etkinse yapısı SE_PRIVILEGE_USED_FOR_ACCESS için ayarlanır. Bu yöntemin çağırdığı [PrivilegeCheck](/windows/desktop/api/securitybaseapi/nf-securitybaseapi-privilegecheck) Win32 işlevi.
+Döndüğünde, karşılık gelen ayrıcalık etkinse her bir [LUID_AND_ATTRIBUTES](/windows/desktop/api/winnt/ns-winnt-luid_and_attributes) yapısının üyesiSE_PRIVILEGE_USED_FOR_ACCESSolarakayarlanır.`Attributes` `PrivilegeCheck` Bu yöntem, [PrivilegeCheck](/windows/desktop/api/securitybaseapi/nf-securitybaseapi-privilegecheck) Win32 işlevini çağırır.
 
-##  <a name="revert"></a>  CAccessToken::Revert
+##  <a name="revert"></a>CAccessToken:: çevir
 
-Kimliğe bürünme belirtecini kullanarak bir iş parçacığını durdurmak için bu yöntemi çağırın.
+Bir iş parçacığını kimliğe bürünme belirtecini kullanarak durdurmak için bu yöntemi çağırın.
 
 ```
 bool Revert(HANDLE hThread = NULL) const throw();
@@ -1106,19 +1106,19 @@ bool Revert(HANDLE hThread = NULL) const throw();
 ### <a name="parameters"></a>Parametreler
 
 *hThread*<br/>
-İş parçacığı kimliğe bürünme geri dönmek için işleyin. Varsa *hThread* boş, geçerli iş parçacığı varsayılır.
+Kimliğe bürünme işleminden dönmek için iş parçacığına işleyin. *HThread* null ise, geçerli iş parçacığı kabul edilir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olduğunda TRUE döndürür başarısız olduğunda FALSE.
+Başarılı olduğunda TRUE, hatada FALSE döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Geri Al'kimliğe bürünme belirteçleri ile otomatik olarak gerçekleştirilebilir [Cautorevertımpersonation sınıfı](../../atl/reference/cautorevertimpersonation-class.md).
+Kimliğe bürünme belirteçlerinin yeniden sürümü [CAutoRevertImpersonation sınıfıyla](../../atl/reference/cautorevertimpersonation-class.md)otomatik olarak gerçekleştirilebilir.
 
-##  <a name="setdefaultdacl"></a>  CAccessToken::SetDefaultDacl
+##  <a name="setdefaultdacl"></a>CAccessToken:: SetDefaultDacl
 
-Varsayılan değer ayarlamak için bu yöntemi çağırın'ın DACL `CAccessToken` nesne.
+`CAccessToken` Nesnenin varsayılan DACL 'sini ayarlamak için bu yöntemi çağırın.
 
 ```
 bool SetDefaultDacl(const CDacl& rDacl) throw(...);
@@ -1131,15 +1131,15 @@ Yeni varsayılan [CDacl sınıfı](../../atl/reference/cdacl-class.md) bilgileri
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olduğunda TRUE döndürür başarısız olduğunda FALSE.
+Başarılı olduğunda TRUE, hatada FALSE döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-DACL yeni nesneleri bu erişim belirteciyle yürürlükte oluşturulduğunda, varsayılan olarak kullanılan DACL varsayılandır.
+Varsayılan DACL, bu erişim belirteci etkin olarak yeni nesneler oluşturulduğunda varsayılan olarak kullanılan DACL 'dir.
 
-##  <a name="setowner"></a>  CAccessToken::SetOwner
+##  <a name="setowner"></a>CAccessToken:: SetOwner
 
-Sahibi ayarlamak için bu yöntemi çağırın `CAccessToken` nesne.
+`CAccessToken` Nesnenin sahibini ayarlamak için bu yöntemi çağırın.
 
 ```
 bool SetOwner(const CSid& rSid) throw(...);
@@ -1147,20 +1147,20 @@ bool SetOwner(const CSid& rSid) throw(...);
 
 ### <a name="parameters"></a>Parametreler
 
-*rSid*<br/>
-[CSid sınıfı](../../atl/reference/csid-class.md) sahibi bilgi içeren nesne.
+*Rsıd*<br/>
+Sahip bilgilerini içeren [CSID sınıfı](../../atl/reference/csid-class.md) nesnesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olduğunda TRUE döndürür başarısız olduğunda FALSE.
+Başarılı olduğunda TRUE, hatada FALSE döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu erişim belirteci etkin durumdayken oluşturulan yeni nesneler için kullanılan varsayılan sahibi sahibidir.
+Bu erişim belirteci etkin durumdayken oluşturulan yeni nesneler için kullanılan varsayılan sahibdir.
 
-##  <a name="setprimarygroup"></a>  CAccessToken::SetPrimaryGroup
+##  <a name="setprimarygroup"></a>CAccessToken:: SetPrimaryGroup
 
-Birincil grup ayarlamak için bu yöntemi çağırın `CAccessToken` nesne.
+`CAccessToken` Nesnenin birincil grubunu ayarlamak için bu yöntemi çağırın.
 
 ```
 bool SetPrimaryGroup(const CSid& rSid) throw(...);
@@ -1168,19 +1168,19 @@ bool SetPrimaryGroup(const CSid& rSid) throw(...);
 
 ### <a name="parameters"></a>Parametreler
 
-*rSid*<br/>
-[CSid sınıfı](../../atl/reference/csid-class.md) birincil grup bilgilerini içeren bir nesne.
+*Rsıd*<br/>
+Birincil grup bilgilerini içeren [CSID sınıfı](../../atl/reference/csid-class.md) nesnesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olduğunda TRUE döndürür başarısız olduğunda FALSE.
+Başarılı olduğunda TRUE, hatada FALSE döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu erişim belirteci etkin durumdayken oluşturulan yeni nesneler için varsayılan grup birincil grubudur.
+Birincil grup, bu erişim belirteci etkin durumdayken oluşturulan yeni nesneler için varsayılan gruptur.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[ATLSecurity örnek](../../overview/visual-cpp-samples.md)<br/>
+[ATLSecurity örneği](../../overview/visual-cpp-samples.md)<br/>
 [Erişim belirteçleri](/windows/desktop/SecAuthZ/access-tokens)<br/>
-[Sınıfına genel bakış](../../atl/atl-class-overview.md)
+[Sınıfa genel bakış](../../atl/atl-class-overview.md)

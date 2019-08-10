@@ -1,6 +1,6 @@
 ---
 title: /Ob (Satır İçi İşlev Genişletmesi)
-ms.date: 09/25/2017
+ms.date: 08/08/2019
 f1_keywords:
 - VC.Project.VCCLWCECompilerTool.InlineFunctionExpansion
 - VC.Project.VCCLCompilerTool.InlineFunctionExpansion
@@ -24,52 +24,77 @@ helpviewer_keywords:
 - Ob0 compiler option [C++]
 - inline expansion, compiler option
 ms.assetid: f134e6df-e939-4980-a01d-47425dbc562a
-ms.openlocfilehash: 6bf16e5725916e81e64d80c0a1f96bf502c8826c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 7eb3db1e359349eaf5125a6c8a46a3ac7d847f2f
+ms.sourcegitcommit: 46d24d6e70c03e05484923d9efc6ed5150e96a64
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62320233"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68915478"
 ---
 # <a name="ob-inline-function-expansion"></a>/Ob (Satır İçi İşlev Genişletmesi)
 
-İşlevlerin satır içi genişlemeyi denetler.
+İşlevlerin satır içi genişletmesini denetler. Varsayılan olarak, iyileştirildiğinde, genişletme derleyicinin tüm işlevlerde (genellikle *Otomatik*olarak ifade edilir) meydana gelir.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> /OB {0 | 1 | 2}
+::: moniker range=">=vs-2019"
+
+> **/Ob** {**0**|12|**3**}|
+
+::: moniker-end
+
+::: moniker range="<=vs-2017"
+
+> **/Ob** {**0**|12|}
+
+::: moniker-end
 
 ## <a name="arguments"></a>Arguments
 
-**0**<br/>
-Satır içi genişletme devre dışı bırakır. Varsayılan olarak, genişletme derleyicinin tüm işlevlerde ortaya genellikle olarak adlandırılan *auto-inlining*.
+**0**\
+[/Od](od-disable-debug.md)altındaki varsayılan değer. Satır içi genişleimleri devre dışı bırakır.
 
-**1**<br/>
-Olarak işaretlenmiş işlevler yalnızca genişlemesini sağlar [satır içi](../../cpp/inline-functions-cpp.md), `__inline`, veya `__forceinline`, veya bir sınıf bildiriminde tanımlanan C++ üye işlevi.
+**1**\
+Yalnızca [satır içi](../../cpp/inline-functions-cpp.md), [__inline](../../cpp/inline-functions-cpp.md)veya [__forceinline](../../cpp/inline-functions-cpp.md)olarak işaretlenen işlevlerin genişlemesine veya sınıf bildiriminde tanımlanan C++ bir üye işleve izin verir.
 
-**2**<br/>
-Varsayılan değeri. Genişletme olarak işaretlenmiş işlevler sağlayan `inline`, `__inline`, veya `__forceinline`ve derleyicinin seçtiği diğer işlevleri.
+**iki**\
+[/O1](o1-o2-minimize-size-maximize-speed.md) ve [/O2](o1-o2-minimize-size-maximize-speed.md)altındaki varsayılan değer. Derleyicinin hiçbir satır için açıkça işaretlenmemiş herhangi bir işlevi genişletmesine izin verir.
 
-**/ Ob2** içinde etkisi yoktur olan [/O1, / O2 (boyutu en aza indirmek, hızı en üst düzeye)](o1-o2-minimize-size-maximize-speed.md) veya [/Ox (etkinleştirme en hız iyileştirmelerini)](ox-full-optimization.md) kullanılır.
+::: moniker range=">=vs-2019"
 
-Bu seçenek, en iyi duruma getirme kullanarak etkinleştirmenizi istemektedir **/O1**, **/O2**, **/Ox**, veya **/Og**.
+**03**\
+Bu seçenek **/Ob2**' den daha agresif bir giriş belirtir, ancak aynı kısıtlamalara sahiptir. **/Ob3** seçeneği, Visual Studio 2019 ' den itibaren kullanılabilir.
+
+::: moniker-end
 
 ## <a name="remarks"></a>Açıklamalar
 
-Derleyici, satır içi genişleme seçeneklerine ve anahtar sözcüklerine öneri olarak davranır. Herhangi bir işlevi satır içi olarak genişletilen olmasını garanti yoktur. Satır içi genişletme devre dışı bırakabilirsiniz, ancak belirli bir işlevi satır içi derleyiciye kullanırken bile zorlayamaz `__forceinline` anahtar sözcüğü.
+Derleyici, satır içi genişleme seçeneklerine ve anahtar sözcüklerine öneri olarak davranır. Herhangi bir işlevin satır içi olarak genişletilmeyeceği garantisi yoktur. Satır içi genişleimleri devre dışı bırakabilirsiniz ancak, `__forceinline` anahtar sözcüğü kullanılırken bile derleyiciyi belirli bir işlevi satır içi olarak zorlayamaz.
 
-Kullanabileceğiniz `#pragma` [auto_inline](../../preprocessor/auto-inline.md) işlevleri satır içi genişletme için aday olarak düşünmeniz dışlanacak yönergesi. Ayrıca bkz: `#pragma` [iç](../../preprocessor/intrinsic.md) yönergesi.
+İşlevlerin satır içi genişletme için aday olarak dikkate alınması dışında, [__declspec (noinline)](../../cpp/noinline.md)veya [#pragma auto_inline (off)](../../preprocessor/auto-inline.md) ve [#pragma auto_inline (on)](../../preprocessor/auto-inline.md) yönergeleriyle işaretlenmiş bir bölgeyi kullanabilirsiniz. Derleyiciye iç ipuçları sağlamanın başka bir yolu hakkında daha fazla bilgi için, [#pragma iç](../../preprocessor/intrinsic.md) yönergesine bakın.
 
 > [!NOTE]
-> Test çalıştırmalarını profil oluşturmadan toplanan bilgileri geçersiz kılar belirtirseniz, aksi takdirde etkili olacak en iyi duruma getirme **/Ob**, **/Os**, veya **/Ot**. Daha fazla bilgi için [permutasyonları iyileştirmeleri](../profile-guided-optimizations.md).
+> Profil oluşturma testi çalıştırmalarından toplanan bilgiler, **/ob**, **/OS**veya **/ot**belirttiğiniz için, aksi takdirde geçerli olacak iyileştirmeleri geçersiz kılar. Daha fazla bilgi için bkz. [Profil temelli iyileştirmeler](../profile-guided-optimizations.md).
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
+1. Projenin **Özellik sayfaları** iletişim kutusunu açın. Ayrıntılar için bkz. [Visual C++ Studio 'da derleyici ve derleme özelliklerini ayarlama](../working-with-project-properties.md).
 
-1. Genişletin **yapılandırma özellikleri**, **C/C++** seçip **iyileştirme**.
+1. **Yapılandırma özellikleri** > **C/C++** optimizasyon > özellik sayfasını seçin.
 
-1. Değiştirme **satır içi işlev genişletmesi** özelliği.
+1. **Satır Içi Işlev genişletme** özelliğini değiştirin.
+
+::: moniker range=">=vs-2019"
+
+**/Ob3** seçeneği, **satır içi işlev genişletme** özelliğinde kullanılamaz. **/Ob3**ayarlamak için:
+
+1. Projenin **Özellik sayfaları** iletişim kutusunu açın. Ayrıntılar için bkz. [Visual C++ Studio 'da derleyici ve derleme özelliklerini ayarlama](../working-with-project-properties.md).
+
+1. **Yapılandırma özellikleri** > **CC++ /** komut> **satırı** Özellik sayfası ' nı seçin.
+
+1. **Ek seçeneklere** **/OB3** girin.
+
+::: moniker-end
 
 ### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için
 
@@ -77,6 +102,6 @@ Kullanabileceğiniz `#pragma` [auto_inline](../../preprocessor/auto-inline.md) i
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[/O Seçenekler (Kodu İyileştir)](o-options-optimize-code.md)<br/>
-[MSVC Derleyicisi Seçenekleri](compiler-options.md)<br/>
+[/O seçenekler (kodu Iyileştirme)](o-options-optimize-code.md)\
+[MSVC derleyici seçenekleri](compiler-options.md)\
 [MSVC Derleyicisi Komut Satırı Söz Dizimi](compiler-command-line-syntax.md)

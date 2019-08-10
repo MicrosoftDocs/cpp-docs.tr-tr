@@ -42,19 +42,19 @@ helpviewer_keywords:
 - registry, writing to
 - registry, deleting keys
 ms.assetid: 3afce82b-ba2c-4c1a-8404-dc969e1af74b
-ms.openlocfilehash: 58b7b180f5b4925f64078f8c799036252003549e
-ms.sourcegitcommit: ecf274bcfe3a977c48745aaa243e5e731f1fdc5f
+ms.openlocfilehash: bce5a16dd8d6564b6a0d3fa0344fe5cb2303764f
+ms.sourcegitcommit: 46d24d6e70c03e05484923d9efc6ed5150e96a64
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "66503233"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68915785"
 ---
 # <a name="cregkey-class"></a>CRegKey sınıfı
 
-Bu sınıf girişleri sistem kayıt defterinde yönlendirmeye yönelik yöntemleri sağlar.
+Bu sınıf, sistem kayıt defterindeki girdileri işlemek için yöntemler sağlar.
 
 > [!IMPORTANT]
->  Bu sınıf ve üyelerine, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz.
+>  Bu sınıf ve üyeleri Windows Çalışma Zamanı yürütülen uygulamalarda kullanılamaz.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -68,74 +68,74 @@ class CRegKey
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[CRegKey::CRegKey](#cregkey)|Oluşturucu.|
-|[CRegKey::~CRegKey](#dtor)|Yıkıcı.|
+|[CRegKey:: CRegKey](#cregkey)|Oluşturucu.|
+|[CRegKey:: ~ CRegKey](#dtor)|Yok edicisi.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[CRegKey::Attach](#attach)|İçin bir HKEY eklemek için bu yöntemi çağırın `CRegKey` ayarlayarak nesne [m_hKey](#m_hkey) üye tanıtıcısını `hKey`.|
-|[CRegKey::Close](#close)|Serbest bırakmak için bu yöntemi çağıran [m_hKey](#m_hkey) üye işlemek ve NULL olarak ayarlayın.|
-|[CRegKey::Create](#create)|Bir alt yoksa, belirtilen anahtar oluşturmak için bu yöntemi çağırın `hKeyParent`.|
-|[CRegKey::DeleteSubKey](#deletesubkey)|Belirtilen anahtarı kayıt defterinden kaldırmak için bu yöntemi çağırın.|
-|[CRegKey::DeleteValue](#deletevalue)|Bir değer alanı kaldırmak için bu yöntemi çağırın [m_hKey](#m_hkey).|
-|[CRegKey::Detach](#detach)|Ayırma için bu yöntemi çağırın [m_hKey](#m_hkey) üye tanıtıcıdan `CRegKey` ayarlayın ve nesne `m_hKey` null.|
-|[CRegKey::EnumKey](#enumkey)|Kayıt defteri anahtarı alt anahtarları numaralandır için bu yöntemi çağırın.|
-|[CRegKey::Flush](#flush)|Tüm kayıt defteri anahtarı öznitelikleri kayıt defterine yazmak için bu yöntemi çağırın.|
-|[CRegKey::GetKeySecurity](#getkeysecurity)|Kayıt defteri anahtarı koruyan güvenlik tanımlayıcısı bir kopyasını almak için bu yöntemi çağırın.|
-|[CRegKey::NotifyChangeKeyValue](#notifychangekeyvalue)|Bu yöntemi çağıran öznitelikleri veya kayıt defteri anahtarı içeriğini değişiklikleri hakkında bilgilendirir.|
-|[CRegKey::Open](#open)|Belirtilen anahtarı'nı açın ve ayarlamak için bu yöntemi çağırın [m_hKey](#m_hkey) bu anahtarın işlenecek.|
-|[CRegKey::QueryBinaryValue](#querybinaryvalue)|Belirtilen değer adı için ikili verileri almak için bu yöntemi çağırın.|
-|[CRegKey::QueryDWORDValue](#querydwordvalue)|Belirtilen değer adı için DWORD verileri almak için bu yöntemi çağırın.|
-|[CRegKey::QueryGUIDValue](#queryguidvalue)|Belirtilen değer adı için GUID verileri almak için bu yöntemi çağırın.|
-|[CRegKey::QueryMultiStringValue](#querymultistringvalue)|Belirtilen değer adı için çok dizeli verileri almak için bu yöntemi çağırın.|
-|[CRegKey::QueryQWORDValue](#queryqwordvalue)|Belirtilen değer adı için QWORD verileri almak için bu yöntemi çağırın.|
-|[CRegKey::QueryStringValue](#querystringvalue)|Belirtilen değer adı için dize verileri almak için bu yöntemi çağırın.|
-|[CRegKey::QueryValue](#queryvalue)|Belirtilen değer alanı için verileri almak için bu yöntemi çağırın [m_hKey](#m_hkey). Bu yöntemin önceki sürümleri artık desteklenmemektedir ve ATL_DEPRECATED işaretlenir.|
-|[CRegKey::RecurseDeleteKey](#recursedeletekey)|Belirtilen anahtarı kayıt defterinden kaldırabilir ve tüm alt açıkça kaldırmak için bu yöntemi çağırın.|
-|[CRegKey::SetBinaryValue](#setbinaryvalue)|İkili kayıt defteri anahtarı değerini ayarlamak için bu yöntemi çağırın.|
-|[CRegKey::SetDWORDValue](#setdwordvalue)|Kayıt defteri anahtarı DWORD değerini ayarlamak için bu yöntemi çağırın.|
-|[CRegKey::SetGUIDValue](#setguidvalue)|Kayıt defteri anahtarının GUID değeri ayarlamak için bu yöntemi çağırın.|
-|[CRegKey::SetKeySecurity](#setkeysecurity)|Kayıt defteri anahtarının güvenliğini ayarlamak için bu yöntemi çağırın.|
-|[CRegKey::SetKeyValue](#setkeyvalue)|Belirtilen anahtar belirtilen değer alanında verileri depolamak için bu yöntemi çağırın.|
-|[CRegKey::SetMultiStringValue](#setmultistringvalue)|Kayıt defteri anahtarının çok dizeli değer ayarlamak için bu yöntemi çağırın.|
-|[CRegKey::SetQWORDValue](#setqwordvalue)|QWORD kayıt defteri anahtarı değerini ayarlamak için bu yöntemi çağırın.|
-|[CRegKey::SetStringValue](#setstringvalue)|Kayıt defteri anahtarının dize değerini ayarlamak için bu yöntemi çağırın.|
-|[CRegKey::SetValue](#setvalue)|Belirtilen değer alanında verileri depolamak için bu yöntemi çağırın [m_hKey](#m_hkey). Bu yöntemin önceki sürümleri artık desteklenmemektedir ve ATL_DEPRECATED işaretlenir.|
+|[CRegKey:: Attach](#attach)|`CRegKey` [M_hKey](#m_hkey) üye tanıtıcısını olarak `hKey`ayarlayarak nesnesine bir HKEY eklemek için bu yöntemi çağırın.|
+|[CRegKey:: Close](#close)|[M_hKey](#m_hkey) üye tanıtıcısını serbest BıRAKMAK ve null olarak ayarlamak için bu yöntemi çağırın.|
+|[CRegKey:: Create](#create)|Bir alt anahtarı `hKeyParent`olarak mevcut değilse, belirtilen anahtarı oluşturmak için bu yöntemi çağırın.|
+|[CRegKey::D Eletealtanahtar](#deletesubkey)|Belirtilen anahtarı kayıt defterinden kaldırmak için bu yöntemi çağırın.|
+|[CRegKey::D eleteValue](#deletevalue)|[M_hKey](#m_hkey)öğesinden bir değer alanı kaldırmak için bu yöntemi çağırın.|
+|[CRegKey::D etach](#detach)|[M_hKey](#m_hkey) üye tanıtıcısını `CRegKey` nesneden ayırmak ve null olarak ayarlamak `m_hKey` için bu yöntemi çağırın.|
+|[CRegKey:: EnumKey](#enumkey)|Açık kayıt defteri anahtarının alt anahtarlarını numaralandırmak için bu yöntemi çağırın.|
+|[CRegKey:: Flush](#flush)|Açık kayıt defteri anahtarının tüm özniteliklerini kayıt defterine yazmak için bu yöntemi çağırın.|
+|[CRegKey:: GetKeySecurity](#getkeysecurity)|Açık kayıt defteri anahtarını koruyan güvenlik tanımlayıcısının bir kopyasını almak için bu yöntemi çağırın.|
+|[CRegKey:: NotifyChangeKeyValue](#notifychangekeyvalue)|Bu yöntem, çağrıyı yapana, açık kayıt defteri anahtarının özniteliklerine veya içeriğine ilişkin değişiklikler hakkında bilgilendirir.|
+|[CRegKey:: Open](#open)|Belirtilen anahtarı açmak için bu yöntemi çağırın ve bu anahtarın tanıtıcısına [m_hKey](#m_hkey) ayarlayın.|
+|[CRegKey:: QueryBinaryValue](#querybinaryvalue)|Belirtilen değer adı için ikili verileri almak üzere bu yöntemi çağırın.|
+|[CRegKey:: QueryDWORDValue](#querydwordvalue)|Belirtilen değer adı için DWORD verilerini almak üzere bu yöntemi çağırın.|
+|[CRegKey:: Queryguıddeğeri](#queryguidvalue)|Belirtilen değer adı için GUID verilerini almak üzere bu yöntemi çağırın.|
+|[CRegKey:: QueryMultiStringValue](#querymultistringvalue)|Belirtilen değer adı için çok dizeli verileri almak üzere bu yöntemi çağırın.|
+|[CRegKey:: QueryQWORDValue](#queryqwordvalue)|Belirtilen değer adı için QWORD verilerini almak üzere bu yöntemi çağırın.|
+|[CRegKey:: QueryStringValue](#querystringvalue)|Belirtilen değer adı için dize verilerini almak üzere bu yöntemi çağırın.|
+|[CRegKey:: QueryValue](#queryvalue)|[M_hKey](#m_hkey)öğesinin belirtilen değer alanı için verileri almak üzere bu yöntemi çağırın. Bu yöntemin önceki sürümleri artık desteklenmemektedir ve ATL_DEPRECATED olarak işaretlenir.|
+|[CRegKey:: RecurseDeleteKey](#recursedeletekey)|Belirtilen anahtarı kayıt defterinden kaldırmak ve tüm alt anahtarları açıkça kaldırmak için bu yöntemi çağırın.|
+|[CRegKey:: SetBinaryValue](#setbinaryvalue)|Kayıt defteri anahtarının ikili değerini ayarlamak için bu yöntemi çağırın.|
+|[CRegKey:: SetDWORDValue](#setdwordvalue)|Kayıt defteri anahtarının DWORD değerini ayarlamak için bu yöntemi çağırın.|
+|[CRegKey:: Setguiddeğeri](#setguidvalue)|Kayıt defteri anahtarının GUID değerini ayarlamak için bu yöntemi çağırın.|
+|[CRegKey:: SetKeySecurity](#setkeysecurity)|Kayıt defteri anahtarının güvenliğini ayarlamak için bu yöntemi çağırın.|
+|[CRegKey:: SetKeyValue](#setkeyvalue)|Belirtilen bir anahtarın belirtilen bir değer alanındaki verileri depolamak için bu yöntemi çağırın.|
+|[CRegKey:: SetMultiStringValue](#setmultistringvalue)|Kayıt defteri anahtarının MultiString değerini ayarlamak için bu yöntemi çağırın.|
+|[CRegKey:: SetQWORDValue](#setqwordvalue)|Kayıt defteri anahtarının QWORD değerini ayarlamak için bu yöntemi çağırın.|
+|[CRegKey:: SetStringValue](#setstringvalue)|Kayıt defteri anahtarının dize değerini ayarlamak için bu yöntemi çağırın.|
+|[CRegKey:: SetValue](#setvalue)|[M_hKey](#m_hkey)'in belirtilen değer alanına veri depolamak için bu yöntemi çağırın. Bu yöntemin önceki sürümleri artık desteklenmemektedir ve ATL_DEPRECATED olarak işaretlenir.|
 
 ### <a name="public-operators"></a>Ortak İşleçler
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[CRegKey::operator HKEY](#operator_hkey)|Dönüştürür bir `CRegKey` bir HKEY için nesne.|
-|[CRegKey::operator =](#operator_eq)|Atama işleci.|
+|[CRegKey:: operator HKEY](#operator_hkey)|Bir `CRegKey` nesneyi bir HKEY öğesine dönüştürür.|
+|[CRegKey:: operator =](#operator_eq)|Atama işleci.|
 
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[CRegKey::m_hKey](#m_hkey)|İle ilişkili kayıt defteri anahtarının bir tanıtıcı içeren `CRegKey` nesne.|
-|[CRegKey::m_pTM](#m_ptm)|İşaretçi `CAtlTransactionManager` nesnesi|
+|[CRegKey:: m_hKey](#m_hkey)|`CRegKey` Nesnesiyle ilişkili kayıt defteri anahtarının bir işleyicisini içerir.|
+|[CRegKey:: m_pTM](#m_ptm)|`CAtlTransactionManager` Nesne işaretçisi|
 
 ## <a name="remarks"></a>Açıklamalar
 
-`CRegKey` anahtarları ve değerleri sistem kayıt defterinde oluşturma ve silme için yöntemler sağlar. Kayıt defteri bir yükleme özel yazılım sürüm numaraları, donanımla ve COM nesneleri fiziksel mantıksal eşleme gibi sistem bileşenleri için tanımları içerir.
+`CRegKey`Sistem kayıt defterinde anahtar ve değer oluşturmak ve silmek için yöntemler sağlar. Kayıt defteri, yazılım sürüm numaraları, yüklü donanımın mantıksal-fiziksek eşlemeleri ve COM nesneleri gibi sistem bileşenleri için yüklemeye özgü bir tanımlar kümesi içerir.
 
-`CRegKey` belirli bir makine için sistem kayıt defterine bir programlama arabirimi sağlar. Örneğin, belirli kayıt defteri anahtarını açmak için çağrı `CRegKey::Open`. Almak ya da bir veri değeri değiştirmek için çağrı `CRegKey::QueryValue` veya `CRegKey::SetValue`sırasıyla. Bir anahtar kapatmak için çağrı `CRegKey::Close`.
+`CRegKey`belirli bir makine için sistem kayıt defterine bir programlama arabirimi sağlar. Örneğin, belirli bir kayıt defteri anahtarını açmak için çağrısı `CRegKey::Open`yapın. Bir veri değerini almak veya değiştirmek için sırasıyla veya `CRegKey::QueryValue` `CRegKey::SetValue`' ı çağırın. Bir anahtarı kapatmak için çağrısı `CRegKey::Close`yapın.
 
-Bir anahtar kapattığınızda, kayıt defteri verilerini (boşaltılıyorsa) sabit diske yazılır. Bu işlem birkaç saniye sürebilir. Uygulamanızın açıkça kayıt defteri verisi sabit diske yazmanız gerekiyorsa çağırabilirsiniz [RegFlushKey](/windows/desktop/api/winreg/nf-winreg-regflushkey) Win32 işlevi. Ancak, `RegFlushKey` birçok sistem kaynaklarını kullanır ve yalnızca gerçekten gerekli olduğunda çağrılmalıdır.
+Bir anahtarı kapattığınızda, kayıt defteri verileri sabit diske yazılır (temizlenir). Bu işlem birkaç saniye sürebilir. Uygulamanızın kayıt defteri verilerini sabit diske açıkça yazması gerekiyorsa, [RegFlushKey](/windows/desktop/api/winreg/nf-winreg-regflushkey) Win32 işlevini çağırabilirsiniz. Ancak, `RegFlushKey` birçok sistem kaynağını kullanır ve yalnızca kesinlikle gerekli olduğunda çağrılmalıdır.
 
 > [!IMPORTANT]
->  Bir kayıt defteri konumu belirtmek çağrıyı yapanın herhangi bir yöntem, güvenilir olmayan verileri okumak için potansiyeline sahiptir. Olun yöntemleri kullanımını [RegQueryValueEx](/windows/desktop/api/winreg/nf-winreg-regqueryvalueexa) bu işlev, NULL sonlandırılan dize açıkça işlemez dikkate almalıdır. Her iki koşul için çağıran kod tarafından denetlenmelidir.
+>  Çağıranın bir kayıt defteri konumu belirtmesini sağlayan yöntemlerin, güvenilir olmayan verileri okuma olasılığı vardır. [RegQueryValueEx](/windows/desktop/api/winreg/nf-winreg-regqueryvalueexa) 'yi kullanan Yöntemler, bu işlevin null olarak sonlandırılmış dizeleri açıkça işlemediğini dikkate almalıdır. Her iki koşul de çağıran kod tarafından denetlenmelidir.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atlbase.h
+**Üstbilgi:** atlbase. h
 
-##  <a name="attach"></a>  CRegKey::Attach
+##  <a name="attach"></a>CRegKey:: Attach
 
-İçin bir HKEY eklemek için bu yöntemi çağırın `CRegKey` ayarlayarak nesne [m_hKey](#m_hkey) üye tanıtıcısını *hKey*.
+`CRegKey` [M_hKey](#m_hkey) üye tanıtıcısını *HKEY*olarak ayarlayarak nesnesine bir HKEY eklemek için bu yöntemi çağırın.
 
 ```
 void Attach(HKEY hKey) throw();
@@ -144,15 +144,15 @@ void Attach(HKEY hKey) throw();
 ### <a name="parameters"></a>Parametreler
 
 *hKey*<br/>
-Bir kayıt defteri anahtarının tanıtıcısı.
+Kayıt defteri anahtarının tanıtıcısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`Attach` varsa onay `m_hKey` NULL değil.
+`Attach``m_hKey` null değilse onay olur.
 
-##  <a name="close"></a>  CRegKey::Close
+##  <a name="close"></a>CRegKey:: Close
 
-Serbest bırakmak için bu yöntemi çağıran [m_hKey](#m_hkey) üye işlemek ve NULL olarak ayarlayın.
+[M_hKey](#m_hkey) üye tanıtıcısını serbest BıRAKMAK ve null olarak ayarlamak için bu yöntemi çağırın.
 
 ```
 LONG Close() throw();
@@ -162,9 +162,9 @@ LONG Close() throw();
 
 Başarılı olursa, ERROR_SUCCESS döndürür; Aksi takdirde bir hata değeri döndürür.
 
-##  <a name="create"></a>  CRegKey::Create
+##  <a name="create"></a>CRegKey:: Create
 
-Bir alt yoksa, belirtilen anahtar oluşturmak için bu yöntemi çağırın *hKeyParent*.
+Bir *hKeyParent*alt anahtarı olarak yoksa, belirtilen anahtarı oluşturmak için bu yöntemi çağırın.
 
 ```
 LONG Create(
@@ -180,35 +180,35 @@ LONG Create(
 ### <a name="parameters"></a>Parametreler
 
 *hKeyParent*<br/>
-Açık bir anahtar tanıtıcısı.
+Açık bir anahtarın tanıtıcısı.
 
 *lpszKeyName*<br/>
-Oluşturulacak veya açılan bir anahtarın adını belirtir. Bu ad, bir alt olmalıdır *hKeyParent*.
+Oluşturulacak veya açılacak bir anahtarın adını belirtir. Bu ad, *hKeyParent*'nin bir alt anahtarı olmalıdır.
 
 *lpszClass*<br/>
-Açılan veya oluşturulacak anahtar sınıfını belirtir. REG_NONE varsayılan değerdir.
+Oluşturulacak veya açılacak anahtarın sınıfını belirtir. Varsayılan değer REG_NONE ' dir.
 
 *dwOptions*<br/>
-Anahtar seçenekleri. REG_OPTION_NON_VOLATILE varsayılan değerdir. Olası değerler ve açıklamaları listesi için bkz. [RegCreateKeyEx](/windows/desktop/api/winreg/nf-winreg-regcreatekeyexa) Windows SDK.
+Anahtar seçenekleri. Varsayılan değer REG_OPTION_NON_VOLATILE ' dir. Olası değerler ve açıklamaların bir listesi için, bkz. [RegCreateKeyEx](/windows/desktop/api/winreg/nf-winreg-regcreatekeyexa) in Windows SDK.
 
 *samDesired*<br/>
-Güvenlik erişim anahtarı. Varsayılan değer: KEY_READ &#124; KEY_WRITE. Olası değerler ve açıklamaları listesi için bkz. `RegCreateKeyEx`.
+Anahtar için güvenlik erişimi. Varsayılan değer KEY_READ &#124; KEY_WRITE ' dir. Olası değerler ve açıklamaların bir listesi için bkz `RegCreateKeyEx`.
 
 *lpSecAttr*<br/>
-Bir işaretçi bir [SECURITY_ATTRIBUTES](/previous-versions/windows/desktop/legacy/aa379560\(v=vs.85\)) tanıtıcı anahtarının bir alt işlem tarafından devralınıp alınmayacağını belirten yapısı. Varsayılan olarak, bu parametre NULL (tanıtıcı devralınamaz anlamına gelir) olur.
+Anahtar tanıtıcısının bir alt işlem tarafından devralınıp alınmayacağını belirten bir [SECURITY_ATTRIBUTES](/previous-versions/windows/desktop/legacy/aa379560\(v=vs.85\)) yapısına yönelik işaretçi. Varsayılan olarak, bu parametre NULL (tanıtıcı devralınamaz anlamına gelir).
 
 *lpdwDisposition*<br/>
-[out] (Anahtar vardı ve açıldı varsa) NULL olmayan, REG_CREATED_NEW_KEY (anahtar yoktu ve oluşturulan ise) ya da REG_OPENED_EXISTING_KEY alır.
+dışı NULL olmayan, REG_CREATED_NEW_KEY (anahtar yoksa ve oluşturulduysa) ya da REG_OPENED_EXISTING_KEY (anahtar varsa ve açılırsa) alır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa, ERROR_SUCCESS döndürür ve anahtarı'nı açar. Yöntem başarısız olursa, dönüş değeri WINERROR içinde tanımlanan bir sıfır olmayan hata kodudur. H
+Başarılı olursa, ERROR_SUCCESS döndürür ve anahtarı açar. Yöntem başarısız olursa, dönüş değeri, WINERROR 'da tanımlanan sıfır dışı bir hata kodudur. Olsun.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`Create` Ayarlar [m_hKey](#m_hkey) üye bu anahtarın işlenecek.
+`Create`[m_hKey](#m_hkey) üyesini bu anahtarın tanıtıcısına ayarlar.
 
-##  <a name="cregkey"></a>  CRegKey::CRegKey
+##  <a name="cregkey"></a>CRegKey:: CRegKey
 
 Oluşturucu.
 
@@ -222,21 +222,21 @@ CRegKey(CAtlTransactionManager* pTM) throw();
 ### <a name="parameters"></a>Parametreler
 
 *anahtar*<br/>
-Bir başvuru bir `CRegKey` nesne.
+Bir `CRegKey` nesneye başvuru.
 
 *hKey*<br/>
-Bir kayıt defteri anahtarı için bir tanıtıcı.
+Kayıt defteri anahtarı için bir tanıtıcı.
 
 *pTM*<br/>
-CAtlTransactionManager nesne işaretçisi
+CAtlTransactionManager nesnesine yönelik işaretçi
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yeni bir oluşturur `CRegKey` nesne. Varolan bir nesne oluşturulabilir `CRegKey` nesnesi veya bir kayıt defteri anahtarı için bir tanıtıcı.
+Yeni `CRegKey` bir nesne oluşturur. Nesne varolan `CRegKey` bir nesneden veya bir işleyicinizden bir kayıt defteri anahtarına oluşturulabilir.
 
-##  <a name="dtor"></a>  CRegKey::~CRegKey
+##  <a name="dtor"></a>CRegKey:: ~ CRegKey
 
-Yıkıcı.
+Yok edicisi.
 
 ```
 ~CRegKey() throw();
@@ -246,7 +246,7 @@ Yıkıcı.
 
 Yıkıcı yayınlar `m_hKey`.
 
-##  <a name="deletesubkey"></a>  CRegKey::DeleteSubKey
+##  <a name="deletesubkey"></a>CRegKey::D Eletealtanahtar
 
 Belirtilen anahtarı kayıt defterinden kaldırmak için bu yöntemi çağırın.
 
@@ -257,19 +257,19 @@ LONG DeleteSubKey(LPCTSTR lpszSubKey) throw();
 ### <a name="parameters"></a>Parametreler
 
 *lpszSubKey*<br/>
-Silinecek anahtar adını belirtir. Bu ad, bir alt olmalıdır [m_hKey](#m_hkey).
+Silinecek anahtarın adını belirtir. Bu ad [m_hKey](#m_hkey)bir alt anahtar olmalıdır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa, ERROR_SUCCESS döndürür. Yöntem başarısız olursa, dönüş değeri WINERROR içinde tanımlanan bir sıfır olmayan hata kodudur. H
+Başarılı olursa, ERROR_SUCCESS döndürür. Yöntem başarısız olursa, dönüş değeri, WINERROR 'da tanımlanan sıfır dışı bir hata kodudur. Olsun.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`DeleteSubKey` yalnızca hiçbir alt anahtarları bir anahtar silebilirsiniz. Anahtarı alt anahtarları varsa, çağrı [RecurseDeleteKey](#recursedeletekey) yerine.
+`DeleteSubKey`yalnızca alt anahtarı olmayan bir anahtar silinebilir. Anahtarın alt anahtarları varsa, bunun yerine [RecurseDeleteKey](#recursedeletekey) çağırın.
 
-##  <a name="deletevalue"></a>  CRegKey::DeleteValue
+##  <a name="deletevalue"></a>CRegKey::D eleteValue
 
-Bir değer alanı kaldırmak için bu yöntemi çağırın [m_hKey](#m_hkey).
+[M_hKey](#m_hkey)öğesinden bir değer alanı kaldırmak için bu yöntemi çağırın.
 
 ```
 LONG DeleteValue(LPCTSTR lpszValue) throw();
@@ -278,15 +278,15 @@ LONG DeleteValue(LPCTSTR lpszValue) throw();
 ### <a name="parameters"></a>Parametreler
 
 *lpszValue*<br/>
-Kaldırmak için değer alanını belirtir.
+Kaldırılacak değer alanını belirtir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa, ERROR_SUCCESS döndürür. Yöntem başarısız olursa, dönüş değeri WINERROR içinde tanımlanan bir sıfır olmayan hata kodudur. H
+Başarılı olursa, ERROR_SUCCESS döndürür. Yöntem başarısız olursa, dönüş değeri, WINERROR 'da tanımlanan sıfır dışı bir hata kodudur. Olsun.
 
-##  <a name="detach"></a>  CRegKey::Detach
+##  <a name="detach"></a>CRegKey::D etach
 
-Ayırma için bu yöntemi çağırın [m_hKey](#m_hkey) üye tanıtıcıdan `CRegKey` ayarlayın ve nesne `m_hKey` null.
+[M_hKey](#m_hkey) üye tanıtıcısını `CRegKey` nesneden ayırmak ve null olarak ayarlamak `m_hKey` için bu yöntemi çağırın.
 
 ```
 HKEY Detach() throw();
@@ -294,11 +294,11 @@ HKEY Detach() throw();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-HKEY ilişkili `CRegKey` nesne.
+`CRegKey` Nesneyle ilişkili HKEY.
 
-##  <a name="enumkey"></a>  CRegKey::EnumKey
+##  <a name="enumkey"></a>CRegKey:: EnumKey
 
-Kayıt defteri anahtarı alt anahtarları numaralandır için bu yöntemi çağırın.
+Açık kayıt defteri anahtarının alt anahtarlarını numaralandırmak için bu yöntemi çağırın.
 
 ```
 LONG EnumKey(
@@ -310,29 +310,29 @@ LONG EnumKey(
 
 ### <a name="parameters"></a>Parametreler
 
-*İIndex*<br/>
-Alt anahtar dizini. Bu parametre için ilk çağrı sıfır olmalıdır ve ardından sonraki çağrılar için artar
+*IIndex*<br/>
+Alt anahtar dizini. Bu parametre ilk çağrı için sıfır olmalı ve ardından sonraki çağrılar için artırılır
 
 *pszName*<br/>
-Sondaki null karakter de dahil olmak üzere alt anahtar adı alan arabellek için işaretçi. Arabellek için tam anahtar hiyerarşisini değil yalnızca alt anahtar adı kopyalanır.
+Sonlandırıcı null karakteri de dahil olmak üzere alt anahtarın adını alan bir arabelleğin işaretçisi. Tam anahtar hiyerarşisine değil, yalnızca alt anahtarın adı arabelleğe kopyalanır.
 
 *pnNameLength*<br/>
-TCHARs, tarafından belirtilen arabellek boyutunu belirten bir değişken işaretçisi *pszName* parametresi. Bu boyutu sondaki null karakter içermelidir. Bu yöntem döndürdüğünde, işaret ettiği değişken *pnNameLength* arabellekteki depolanan karakterlerin sayısını içerir. Bu sayı, döndürülen sondaki boş karakter içermez.
+*PszName* parametresi tarafından belirtilen arabelleğin TCHARs cinsinden boyutunu belirten bir değişkene yönelik işaretçi. Bu boyut, Sonlandırıcı null karakterini içermelidir. Yöntem döndüğünde, *pnNameLength* tarafından işaret edilen değişken arabellekte depolanan karakter sayısını içerir. Döndürülen sayı, Sonlandırıcı null karakterini içermiyor.
 
 *pftLastWriteTime*<br/>
-Zaman alan bir değişken işaretçisi numaralandırılmış alt son için yazılmıştır.
+Numaralandırılmış alt anahtarın son yazıldığı saati alan bir değişkene yönelik işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yöntem başarılı olursa, döndürülen değer ERROR_SUCCESS olur. Yöntem başarısız olursa, dönüş değeri WINERROR içinde tanımlanan bir sıfır olmayan hata kodudur. H
+Yöntem başarılı olursa, dönüş değeri ERROR_SUCCESS olur. Yöntem başarısız olursa, dönüş değeri, WINERROR 'da tanımlanan sıfır dışı bir hata kodudur. Olsun.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Alt anahtarları numaralandır çağrısı `CRegKey::EnumKey` sıfır dizine sahip. Dizin değeri artırmak ve yöntem ERROR_NO_MORE_ITEMS dönene kadar tekrarlayın. Daha fazla bilgi için [RegEnumKeyEx](/windows/desktop/api/winreg/nf-winreg-regenumkeyexa) Windows SDK.
+Alt anahtarları numaralandırmak için, sıfır `CRegKey::EnumKey` diziniyle çağırın. Dizin değerini artırın ve Yöntem ERROR_NO_MORE_ITEMS dönene kadar tekrarlayın. Daha fazla bilgi için Windows SDK [RegEnumKeyEx](/windows/desktop/api/winreg/nf-winreg-regenumkeyexa) bakın.
 
-##  <a name="flush"></a>  CRegKey::Flush
+##  <a name="flush"></a>CRegKey:: Flush
 
-Tüm kayıt defteri anahtarı öznitelikleri kayıt defterine yazmak için bu yöntemi çağırın.
+Açık kayıt defteri anahtarının tüm özniteliklerini kayıt defterine yazmak için bu yöntemi çağırın.
 
 ```
 LONG Flush() throw();
@@ -340,15 +340,15 @@ LONG Flush() throw();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yöntem başarılı olursa, döndürülen değer ERROR_SUCCESS olur. Yöntem başarısız olursa, dönüş değeri WINERROR içinde tanımlanan bir sıfır olmayan hata kodudur. H
+Yöntem başarılı olursa, dönüş değeri ERROR_SUCCESS olur. Yöntem başarısız olursa, dönüş değeri, WINERROR 'da tanımlanan sıfır dışı bir hata kodudur. Olsun.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Daha fazla bilgi için [RegEnumFlush](/windows/desktop/api/winreg/nf-winreg-regflushkey) Windows SDK.
+Daha fazla bilgi için Windows SDK bkz. [RegEnumFlush](/windows/desktop/api/winreg/nf-winreg-regflushkey) .
 
-##  <a name="getkeysecurity"></a>  CRegKey::GetKeySecurity
+##  <a name="getkeysecurity"></a>CRegKey:: GetKeySecurity
 
-Kayıt defteri anahtarı koruyan güvenlik tanımlayıcısı bir kopyasını almak için bu yöntemi çağırın.
+Açık kayıt defteri anahtarını koruyan güvenlik tanımlayıcısının bir kopyasını almak için bu yöntemi çağırın.
 
 ```
 LONG GetKeySecurity(
@@ -359,34 +359,34 @@ LONG GetKeySecurity(
 
 ### <a name="parameters"></a>Parametreler
 
-*sı*<br/>
-[SECURITY_INFORMATION](/windows/desktop/SecAuthZ/security-information) istenen güvenlik bilgilerini belirten değer.
+*ortası*<br/>
+İstenen güvenlik bilgilerini gösteren [SECURITY_INFORMATION](/windows/desktop/SecAuthZ/security-information) değeri.
 
 *PSD*<br/>
-İstenen güvenlik tanımlayıcısı bir kopyasını alan arabellek için işaretçi.
+İstenen güvenlik tanımlayıcısının kopyasını alan bir arabelleğin işaretçisi.
 
 *pnBytes*<br/>
-İşaret ettiği arabelleğin bayt cinsinden boyutu *psd*.
+*PSD*tarafından işaret edilen arabelleğin bayt cinsinden boyutu.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yöntem başarılı olursa, döndürülen değer ERROR_SUCCESS olur. Yöntem başarısız olursa, dönüş WINERROR içinde tanımlanan sıfır olmayan hata kodu değeridir. H
+Yöntem başarılı olursa, dönüş değeri ERROR_SUCCESS olur. Yöntem başarısız olursa, dönüş değeri bir sıfır dışı hata kodu, WINERROR içinde tanımlanır. Olsun.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Daha fazla bilgi için [RegGetKeySecurity](/windows/desktop/api/winreg/nf-winreg-reggetkeysecurity).
+Daha fazla bilgi için bkz. [RegGetKeySecurity](/windows/desktop/api/winreg/nf-winreg-reggetkeysecurity).
 
-##  <a name="m_hkey"></a>  CRegKey::m_hKey
+##  <a name="m_hkey"></a>CRegKey:: m_hKey
 
-İle ilişkili kayıt defteri anahtarının bir tanıtıcı içeren `CRegKey` nesne.
+`CRegKey` Nesnesiyle ilişkili kayıt defteri anahtarının bir işleyicisini içerir.
 
 ```
 HKEY m_hKey;
 ```
 
-##  <a name="m_ptm"></a>  CRegKey::m_pTM
+##  <a name="m_ptm"></a>CRegKey:: m_pTM
 
-İşaretçi bir `CAtlTransactionManager` nesne.
+Bir `CAtlTransactionManager` nesne işaretçisi.
 
 ```
 CAtlTransactionManager* m_pTM;
@@ -394,9 +394,9 @@ CAtlTransactionManager* m_pTM;
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="notifychangekeyvalue"></a>  CRegKey::NotifyChangeKeyValue
+##  <a name="notifychangekeyvalue"></a>CRegKey:: NotifyChangeKeyValue
 
-Bu yöntemi çağıran öznitelikleri veya kayıt defteri anahtarı içeriğini değişiklikleri hakkında bilgilendirir.
+Bu yöntem, çağrıyı yapana, açık kayıt defteri anahtarının özniteliklerine veya içeriğine ilişkin değişiklikler hakkında bilgilendirir.
 
 ```
 LONG NotifyChangeKeyValue(
@@ -409,38 +409,38 @@ LONG NotifyChangeKeyValue(
 ### <a name="parameters"></a>Parametreler
 
 *bWatchSubtree*<br/>
-Belirtilen anahtarı ve tüm alt anahtarlarını veya yalnızca belirtilen anahtarı değişiklikleri rapor gösteren bir bayrak belirtir. Bu parametre TRUE ise, yöntem anahtarında ve onun alt değişiklikleri bildirir. Bu parametre FALSE ise, yöntemi yalnızca anahtar değişiklik bildirir.
+Belirtilen anahtarda ve tüm alt anahtarlarından veya yalnızca belirtilen anahtarda değişiklik yapılıp yapılmayacağını belirten bir bayrak belirtir. Bu parametre TRUE ise, yöntemi anahtardaki ve alt anahtarlarından değişiklikleri raporlar. Parametre FALSE ise, yöntem yalnızca anahtardaki değişiklikleri raporlar.
 
 *dwNotifyFilter*<br/>
-Hangi değişiklikleri denetleyen bayrak kümesi bildirileceğini belirtir. Bu parametre aşağıdaki değerleri birleşimi olabilir:
+Hangi değişikliklerin bildirilmesi gerektiğini denetleyen bir bayrak kümesi belirtir. Bu parametre aşağıdaki değerlerin bir birleşimi olabilir:
 
 |Değer|Açıklama|
 |-----------|-------------|
-|REG_NOTIFY_CHANGE_NAME|Bir alt eklediyseniz veya çağıranın bildirin.|
-|REG_NOTIFY_CHANGE_ATTRIBUTES|Güvenlik açıklayıcı bilgisi gibi anahtar özniteliklerini değişiklikleri çağıran bildirin.|
-|REG_NOTIFY_CHANGE_LAST_SET|Anahtar değerini değişiklikleri çağıran bildirin. Bu, ekleme veya silme bir değer ya da var olan bir değer değiştirme içerebilir.|
-|REG_NOTIFY_CHANGE_SECURITY|Güvenlik tanımlayıcısı anahtarının değişiklikleri çağıran bildirin.|
+|REG_NOTIFY_CHANGE_NAME|Bir alt anahtar eklendiğinde veya silinirse çağrıyı yapana bildirin.|
+|REG_NOTIFY_CHANGE_ATTRIBUTES|Güvenlik tanımlayıcısı bilgileri gibi, anahtarın özniteliklerinde değişiklik çağıranına bildirim gönderin.|
+|REG_NOTIFY_CHANGE_LAST_SET|Anahtarın bir değerindeki değişiklik çağıranına bildirim gönderin. Bu, bir değer ekleme veya silme ya da varolan bir değeri değiştirme içerebilir.|
+|REG_NOTIFY_CHANGE_SECURITY|Anahtarın güvenlik tanımlayıcısına çağrı çağıranına bildirin.|
 
 *hEvent*<br/>
-Bir olay tanıtıcısı olarak ekleyin. Varsa *bAsync* parametre TRUE ise yöntem hemen döner ve değişiklikler, bu olayın sinyal tarafından raporlanır. Varsa *bAsync* false değerine *hEvent* göz ardı edilir.
+Bir olayı işleyin. *BAsync* parametresi true ise, yöntem hemen döndürülür ve değişiklikler bu olaya sinyal vererek raporlanır. *BAsync* yanlış Ise, *hEvent* yok sayılır.
 
 *bAsync*<br/>
-Yöntem değişiklikleri nasıl raporları gösteren bir bayrak belirtir. Bu parametre TRUE ise, yöntem hemen döner ve belirtilen olaya sinyal tarafından değişiklikler raporlar. Bu parametre FALSE olduğunda, bir değişiklik meydana gelene kadar yöntemi döndürmez. Varsa *hEvent* geçerli bir olay belirtmiyor *bAsync* parametresi TRUE olamaz.
+Yöntemin değişiklikleri nasıl raporlandığını gösteren bir bayrak belirtir. Bu parametre TRUE ise, yöntemi hemen döndürür ve belirtilen olay sinyallere göre değişiklikleri raporlar. Bu parametre FALSE olduğunda, bir değişiklik gerçekleşene kadar Yöntem döndürmez. *HEvent* geçerli bir olay belirtmezse *BASYNC* parametresi true olamaz.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yöntem başarılı olursa, döndürülen değer ERROR_SUCCESS olur. Yöntem başarısız olursa, dönüş değeri WINERROR içinde tanımlanan bir sıfır olmayan hata kodudur. H
+Yöntem başarılı olursa, dönüş değeri ERROR_SUCCESS olur. Yöntem başarısız olursa, dönüş değeri, WINERROR 'da tanımlanan sıfır dışı bir hata kodudur. Olsun.
 
 ### <a name="remarks"></a>Açıklamalar
 
 > [!NOTE]
->  Belirtilen anahtarı silinirse bu yöntemi çağıran bilgilendirmez.
+>  Bu yöntem, belirtilen anahtar silinirse çağrıyı yapana bildirmez.
 
-Daha fazla bilgi ve örnek programı için bkz. [RegNotifyChangeKeyValue](/windows/desktop/api/winreg/nf-winreg-regnotifychangekeyvalue).
+Daha fazla bilgi ve örnek program için bkz. [RegNotifyChangeKeyValue](/windows/desktop/api/winreg/nf-winreg-regnotifychangekeyvalue).
 
-##  <a name="open"></a>  CRegKey::Open
+##  <a name="open"></a>CRegKey:: Open
 
-Belirtilen anahtarı'nı açın ve ayarlamak için bu yöntemi çağırın [m_hKey](#m_hkey) bu anahtarın işlenecek.
+Belirtilen anahtarı açmak için bu yöntemi çağırın ve bu anahtarın tanıtıcısına [m_hKey](#m_hkey) ayarlayın.
 
 ```
 LONG Open(
@@ -452,33 +452,33 @@ LONG Open(
 ### <a name="parameters"></a>Parametreler
 
 *hKeyParent*<br/>
-Açık bir anahtar tanıtıcısı.
+Açık bir anahtarın tanıtıcısı.
 
 *lpszKeyName*<br/>
-Oluşturulacak veya açılan bir anahtarın adını belirtir. Bu ad, bir alt olmalıdır *hKeyParent*.
+Oluşturulacak veya açılacak bir anahtarın adını belirtir. Bu ad, *hKeyParent*'nin bir alt anahtarı olmalıdır.
 
 *samDesired*<br/>
-Güvenlik erişim anahtarı. KEY_ALL_ACCESS varsayılan değerdir. Olası değerler ve açıklamaları listesi için bkz. [RegCreateKeyEx](/windows/desktop/api/winreg/nf-winreg-regcreatekeyexa) Windows SDK.
+Anahtar için güvenlik erişimi. Varsayılan değer KEY_ALL_ACCESS ' dir. Olası değerler ve açıklamaların bir listesi için, bkz. [RegCreateKeyEx](/windows/desktop/api/winreg/nf-winreg-regcreatekeyexa) in Windows SDK.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa, ERROR_SUCCESS döndürür; Aksi takdirde, sıfır olmayan hata değeri WINERROR içinde tanımlanır. H
+Başarılı olursa, ERROR_SUCCESS döndürür; Aksi halde, WINERROR 'da sıfır olmayan bir hata değeri tanımlandı. Olsun.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsa *lpszKeyName* parametredir NULL veya noktaları boş bir dize `Open` tarafından tanımlanan anahtarın yeni bir tanıtıcı açılır *hKeyParent*, ancak herhangi bir önceden açılmış tutamacı kapatmaz.
+*LpszKeyName* parametresi null veya boş bir dizeye işaret ediyorsa, `Open` *hKeyParent*tarafından tanımlanan anahtarın yeni bir işleyicisini açar, ancak daha önce açılmış bir tanıtıcıyı kapatmaz.
 
-Farklı [CRegKey::Create](#create), `Open` belirtilen anahtar mevcut değilse oluşturulmaz.
+[CRegKey:: Create](#create)' in `Open` aksine, mevcut değilse belirtilen anahtarı oluşturmaz.
 
-##  <a name="operator_hkey"></a>  CRegKey::operator HKEY
+##  <a name="operator_hkey"></a>CRegKey:: operator HKEY
 
-Dönüştürür bir `CRegKey` bir HKEY için nesne.
+Bir `CRegKey` nesneyi bir HKEY öğesine dönüştürür.
 
 ```
 operator HKEY() const throw();
 ```
 
-##  <a name="operator_eq"></a>  CRegKey::operator =
+##  <a name="operator_eq"></a>CRegKey:: operator =
 
 Atama işleci.
 
@@ -489,19 +489,19 @@ CRegKey& operator= (CRegKey& key) throw();
 ### <a name="parameters"></a>Parametreler
 
 *anahtar*<br/>
-Kopyalamak için anahtar.
+Kopyalanacak anahtar.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yeni anahtar için bir başvuru döndürür.
+Yeni anahtara bir başvuru döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işleç ayırır *anahtarı* kendi geçerli nesneden ve buna atayan `CRegKey` bunun yerine nesne.
+Bu işleç, *anahtarı* geçerli nesnesinden ayırır ve bunun yerine `CRegKey` nesnesine atar.
 
-##  <a name="querybinaryvalue"></a>  CRegKey::QueryBinaryValue
+##  <a name="querybinaryvalue"></a>CRegKey:: QueryBinaryValue
 
-Belirtilen değer adı için ikili verileri almak için bu yöntemi çağırın.
+Belirtilen değer adı için ikili verileri almak üzere bu yöntemi çağırın.
 
 ```
 LONG QueryBinaryValue(
@@ -513,28 +513,28 @@ LONG QueryBinaryValue(
 ### <a name="parameters"></a>Parametreler
 
 *pszValueName*<br/>
-Sorgu için değerin adını içeren null ile sonlandırılmış bir dize işaretçisi.
+Sorgulanacak değerin adını içeren, null ile sonlandırılmış bir dize işaretçisi.
 
 *pValue*<br/>
-Değer verisini alan arabellek için işaretçi.
+Değerin verilerini alan bir arabelleğin işaretçisi.
 
 *pnBytes*<br/>
-Arabelleğin bayt cinsinden boyutunu belirten bir değişken işaretçisi tarafından işaret edilen *pValue* parametresi. Yöntem döndürüldüğünde, bu değişken arabelleğe kopyalanan verilerin boyutunu içerir.
+*PValue* parametresi tarafından işaret edilen arabelleğin bayt cinsinden boyutunu belirten bir değişkene yönelik işaretçi. Yöntem döndüğünde, bu değişken arabelleğe kopyalanmış verilerin boyutunu içerir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yöntem başarılı olursa ERROR_SUCCESS döndürülür. Bir değer okumak yöntem başarısız olursa WINERROR içinde tanımlanan bir sıfır olmayan hata kodu döndürür. H Başvurulan veri türü REG_BINARY değil, ERROR_INVALID_DATA döndürülür.
+Yöntem başarılı olursa, ERROR_SUCCESS döndürülür. Yöntem bir değeri okuyamazsa, WINERROR 'da tanımlanan sıfır olmayan bir hata kodu döndürür. Olsun. Başvurulan veriler REG_BıNARY türünde değilse, ERROR_INVALID_DATA döndürülür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntemi kullanır `RegQueryValueEx` ve doğru veri türünü verdiğini onaylar. Bkz: [RegQueryValueEx](/windows/desktop/api/winreg/nf-winreg-regqueryvalueexa) daha fazla ayrıntı için.
+Bu yöntem, ' nin `RegQueryValueEx` kullanımını sağlar ve doğru türde verilerin döndürüldüğünü onaylar. Daha fazla ayrıntı için bkz. [RegQueryValueEx](/windows/desktop/api/winreg/nf-winreg-regqueryvalueexa) .
 
 > [!IMPORTANT]
->  Bu yöntem, güvenilir olmayan verileri okunurken, herhangi bir kayıt defteri konumu belirtmek çağıranın sağlar. Ayrıca, [RegQueryValueEx](/windows/desktop/api/winreg/nf-winreg-regqueryvalueexa) bu yöntem tarafından kullanılan işlevi, NULL sonlandırılan dize açıkça işlemez. Her iki koşul için çağıran kod tarafından denetlenmelidir.
+>  Bu yöntem, çağıranın hiçbir kayıt defteri konumu belirtmesini sağlar. Bu, güvenilmez olmayan verileri okuyabilir. Ayrıca, bu yöntem tarafından kullanılan [RegQueryValueEx](/windows/desktop/api/winreg/nf-winreg-regqueryvalueexa) IşLEVI, null olarak sonlandırılmış dizeleri açıkça işlemez. Her iki koşul de çağıran kod tarafından denetlenmelidir.
 
-##  <a name="querydwordvalue"></a>  CRegKey::QueryDWORDValue
+##  <a name="querydwordvalue"></a>CRegKey:: QueryDWORDValue
 
-Belirtilen değer adı için DWORD verileri almak için bu yöntemi çağırın.
+Belirtilen değer adı için DWORD verilerini almak üzere bu yöntemi çağırın.
 
 ```
 LONG QueryDWORDValue(
@@ -545,25 +545,25 @@ LONG QueryDWORDValue(
 ### <a name="parameters"></a>Parametreler
 
 *pszValueName*<br/>
-Sorgu için değerin adını içeren null ile sonlandırılmış bir dize işaretçisi.
+Sorgulanacak değerin adını içeren, null ile sonlandırılmış bir dize işaretçisi.
 
 *dwValue*<br/>
-DWORD alan arabellek için işaretçi.
+DWORD değerini alan bir arabelleğin işaretçisi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yöntem başarılı olursa ERROR_SUCCESS döndürülür. Bir değer okumak yöntem başarısız olursa WINERROR içinde tanımlanan bir sıfır olmayan hata kodu döndürür. H Başvurulan veri türü REG_DWORD değil, ERROR_INVALID_DATA döndürülür.
+Yöntem başarılı olursa, ERROR_SUCCESS döndürülür. Yöntem bir değeri okuyamazsa, WINERROR 'da tanımlanan sıfır olmayan bir hata kodu döndürür. Olsun. Başvurulan veriler REG_DWORD türünde değilse, ERROR_INVALID_DATA döndürülür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntemi kullanır `RegQueryValueEx` ve doğru veri türünü verdiğini onaylar. Bkz: [RegQueryValueEx](/windows/desktop/api/winreg/nf-winreg-regqueryvalueexa) daha fazla ayrıntı için.
+Bu yöntem, ' nin `RegQueryValueEx` kullanımını sağlar ve doğru türde verilerin döndürüldüğünü onaylar. Daha fazla ayrıntı için bkz. [RegQueryValueEx](/windows/desktop/api/winreg/nf-winreg-regqueryvalueexa) .
 
 > [!IMPORTANT]
->  Bu yöntem, güvenilir olmayan verileri okunurken, herhangi bir kayıt defteri konumu belirtmek çağıranın sağlar. Ayrıca, [RegQueryValueEx](/windows/desktop/api/winreg/nf-winreg-regqueryvalueexa) bu yöntem tarafından kullanılan işlevi, NULL sonlandırılan dize açıkça işlemez. Her iki koşul için çağıran kod tarafından denetlenmelidir.
+>  Bu yöntem, çağıranın hiçbir kayıt defteri konumu belirtmesini sağlar. Bu, güvenilmez olmayan verileri okuyabilir. Ayrıca, bu yöntem tarafından kullanılan [RegQueryValueEx](/windows/desktop/api/winreg/nf-winreg-regqueryvalueexa) IşLEVI, null olarak sonlandırılmış dizeleri açıkça işlemez. Her iki koşul de çağıran kod tarafından denetlenmelidir.
 
-##  <a name="queryguidvalue"></a>  CRegKey::QueryGUIDValue
+##  <a name="queryguidvalue"></a>CRegKey:: Queryguıddeğeri
 
-Belirtilen değer adı için GUID verileri almak için bu yöntemi çağırın.
+Belirtilen değer adı için GUID verilerini almak üzere bu yöntemi çağırın.
 
 ```
 LONG QueryGUIDValue(
@@ -574,25 +574,25 @@ LONG QueryGUIDValue(
 ### <a name="parameters"></a>Parametreler
 
 *pszValueName*<br/>
-Sorgu için değerin adını içeren null ile sonlandırılmış bir dize işaretçisi.
+Sorgulanacak değerin adını içeren, null ile sonlandırılmış bir dize işaretçisi.
 
-*guidValue*<br/>
-GUID alan bir değişken işaretçisi.
+*GUIDDeğeri*<br/>
+GUID 'ı alan bir değişkene yönelik işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yöntem başarılı olursa ERROR_SUCCESS döndürülür. Bir değer okumak yöntem başarısız olursa WINERROR içinde tanımlanan bir sıfır olmayan hata kodu döndürür. H Başvurulan veriler geçerli bir GUID değil, ERROR_INVALID_DATA döndürülür.
+Yöntem başarılı olursa, ERROR_SUCCESS döndürülür. Yöntem bir değeri okuyamazsa, WINERROR 'da tanımlanan sıfır olmayan bir hata kodu döndürür. Olsun. Başvurulan veriler geçerli bir GUID değilse, ERROR_INVALID_DATA döndürülür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntemi kullanır `CRegKey::QueryStringValue` ve kullanarak bir GUID dizesi dönüştürür [CLSIDFromString](/windows/desktop/api/combaseapi/nf-combaseapi-clsidfromstring).
+Bu yöntem, ' nin `CRegKey::QueryStringValue` kullanımını sağlar ve [clsidfromstring](/windows/desktop/api/combaseapi/nf-combaseapi-clsidfromstring)kullanarak dizeyi bir GUID 'ye dönüştürür.
 
 > [!IMPORTANT]
->  Bu yöntem, güvenilir olmayan verileri okunurken, herhangi bir kayıt defteri konumu belirtmek çağıranın sağlar.
+>  Bu yöntem, çağıranın hiçbir kayıt defteri konumu belirtmesini sağlar. Bu, güvenilmez olmayan verileri okuyabilir.
 
-##  <a name="querymultistringvalue"></a>  CRegKey::QueryMultiStringValue
+##  <a name="querymultistringvalue"></a>CRegKey:: QueryMultiStringValue
 
-Belirtilen değer adı için çok dizeli verileri almak için bu yöntemi çağırın.
+Belirtilen değer adı için çok dizeli verileri almak üzere bu yöntemi çağırın.
 
 ```
 LONG QueryMultiStringValue(
@@ -604,28 +604,28 @@ LONG QueryMultiStringValue(
 ### <a name="parameters"></a>Parametreler
 
 *pszValueName*<br/>
-Sorgu için değerin adını içeren null ile sonlandırılmış bir dize işaretçisi.
+Sorgulanacak değerin adını içeren, null ile sonlandırılmış bir dize işaretçisi.
 
 *pszValue*<br/>
-Çok dizeli verileri alan bir arabellek için işaretçi. Bir multistring iki null karakter ile sona erdi, null ile sonlandırılmış dizeler dizisidir.
+Çok dizeli verileri alan bir arabelleğin işaretçisi. Çoklu dize, null ile sonlandırılmış dizelerin dizileridir ve iki null karakterle sonlandırılır.
 
-*pnChars*<br/>
-TCHARs, işaret ettiği arabellek büyüklüğü *pszValue*. Yöntem döndürüldüğünde *pnChars* multistring alındığında, bir sonlandırıcı null karakter de dahil olmak üzere, bir TCHARs boyutunu içerir.
+*pnChar 'lar*<br/>
+*PszValue*tarafından işaret edilen arabelleğin, TCHARs cinsinden boyutu. Yöntem döndürüldüğünde, *pnChar* , bir Sonlandırıcı null karakteri de dahil olmak üzere çok dizeli alınan, TCHARs cinsinden boyutu içerir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yöntem başarılı olursa ERROR_SUCCESS döndürülür. Bir değer okumak yöntem başarısız olursa WINERROR içinde tanımlanan bir sıfır olmayan hata kodu döndürür. H Başvurulan veri türü REG_MULTI_SZ değil, ERROR_INVALID_DATA döndürülür.
+Yöntem başarılı olursa, ERROR_SUCCESS döndürülür. Yöntem bir değeri okuyamazsa, WINERROR 'da tanımlanan sıfır olmayan bir hata kodu döndürür. Olsun. Başvurulan veriler REG_MULTI_SZ türünde değilse, ERROR_INVALID_DATA döndürülür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntemi kullanır `RegQueryValueEx` ve doğru veri türünü verdiğini onaylar. Bkz: [RegQueryValueEx](/windows/desktop/api/winreg/nf-winreg-regqueryvalueexa) daha fazla ayrıntı için.
+Bu yöntem, ' nin `RegQueryValueEx` kullanımını sağlar ve doğru türde verilerin döndürüldüğünü onaylar. Daha fazla ayrıntı için bkz. [RegQueryValueEx](/windows/desktop/api/winreg/nf-winreg-regqueryvalueexa) .
 
 > [!IMPORTANT]
->  Bu yöntem, güvenilir olmayan verileri okunurken, herhangi bir kayıt defteri konumu belirtmek çağıranın sağlar. Ayrıca, [RegQueryValueEx](/windows/desktop/api/winreg/nf-winreg-regqueryvalueexa) bu yöntem tarafından kullanılan işlevi, NULL sonlandırılan dize açıkça işlemez. Her iki koşul için çağıran kod tarafından denetlenmelidir.
+>  Bu yöntem, çağıranın hiçbir kayıt defteri konumu belirtmesini sağlar. Bu, güvenilmez olmayan verileri okuyabilir. Ayrıca, bu yöntem tarafından kullanılan [RegQueryValueEx](/windows/desktop/api/winreg/nf-winreg-regqueryvalueexa) IşLEVI, null olarak sonlandırılmış dizeleri açıkça işlemez. Her iki koşul de çağıran kod tarafından denetlenmelidir.
 
-##  <a name="queryqwordvalue"></a>  CRegKey::QueryQWORDValue
+##  <a name="queryqwordvalue"></a>CRegKey:: QueryQWORDValue
 
-Belirtilen değer adı için QWORD verileri almak için bu yöntemi çağırın.
+Belirtilen değer adı için QWORD verilerini almak üzere bu yöntemi çağırın.
 
 ```
 LONG QueryQWORDValue(
@@ -636,25 +636,25 @@ LONG QueryQWORDValue(
 ### <a name="parameters"></a>Parametreler
 
 *pszValueName*<br/>
-Sorgu için değerin adını içeren null ile sonlandırılmış bir dize işaretçisi.
+Sorgulanacak değerin adını içeren, null ile sonlandırılmış bir dize işaretçisi.
 
 *qwValue*<br/>
-QWORD alan arabellek için işaretçi.
+QWORD alan bir arabelleğin işaretçisi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yöntem başarılı olursa ERROR_SUCCESS döndürülür. Bir değer okumak yöntem başarısız olursa WINERROR içinde tanımlanan bir sıfır olmayan hata kodu döndürür. H Başvurulan veri türü REG_QWORD değil, ERROR_INVALID_DATA döndürülür.
+Yöntem başarılı olursa, ERROR_SUCCESS döndürülür. Yöntem bir değeri okuyamazsa, WINERROR 'da tanımlanan sıfır olmayan bir hata kodu döndürür. Olsun. Başvurulan veriler REG_QWORD türünde değilse, ERROR_INVALID_DATA döndürülür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntemi kullanır `RegQueryValueEx` ve doğru veri türünü verdiğini onaylar. Bkz: [RegQueryValueEx](/windows/desktop/api/winreg/nf-winreg-regqueryvalueexa) daha fazla ayrıntı için.
+Bu yöntem, ' nin `RegQueryValueEx` kullanımını sağlar ve doğru türde verilerin döndürüldüğünü onaylar. Daha fazla ayrıntı için bkz. [RegQueryValueEx](/windows/desktop/api/winreg/nf-winreg-regqueryvalueexa) .
 
 > [!IMPORTANT]
->  Bu yöntem, güvenilir olmayan verileri okunurken, herhangi bir kayıt defteri konumu belirtmek çağıranın sağlar. Ayrıca, [RegQueryValueEx](/windows/desktop/api/winreg/nf-winreg-regqueryvalueexa) bu yöntem tarafından kullanılan işlevi, NULL sonlandırılan dize açıkça işlemez. Her iki koşul için çağıran kod tarafından denetlenmelidir.
+>  Bu yöntem, çağıranın hiçbir kayıt defteri konumu belirtmesini sağlar. Bu, güvenilmez olmayan verileri okuyabilir. Ayrıca, bu yöntem tarafından kullanılan [RegQueryValueEx](/windows/desktop/api/winreg/nf-winreg-regqueryvalueexa) IşLEVI, null olarak sonlandırılmış dizeleri açıkça işlemez. Her iki koşul de çağıran kod tarafından denetlenmelidir.
 
-##  <a name="querystringvalue"></a>  CRegKey::QueryStringValue
+##  <a name="querystringvalue"></a>CRegKey:: QueryStringValue
 
-Belirtilen değer adı için dize verileri almak için bu yöntemi çağırın.
+Belirtilen değer adı için dize verilerini almak üzere bu yöntemi çağırın.
 
 ```
 LONG QueryStringValue(
@@ -666,28 +666,28 @@ LONG QueryStringValue(
 ### <a name="parameters"></a>Parametreler
 
 *pszValueName*<br/>
-Sorgu için değerin adını içeren null ile sonlandırılmış bir dize işaretçisi.
+Sorgulanacak değerin adını içeren, null ile sonlandırılmış bir dize işaretçisi.
 
 *pszValue*<br/>
-Dize verileri alan arabellek için işaretçi.
+Dize verilerini alan bir arabelleğin işaretçisi.
 
-*pnChars*<br/>
-TCHARs, işaret ettiği arabellek büyüklüğü *pszValue*. Yöntem döndürüldüğünde *pnChars* TCHARs, bir sonlandırıcı null karakter de dahil olmak üzere alınan, dizenin boyutunu içerir.
+*pnChar 'lar*<br/>
+*PszValue*tarafından işaret edilen arabelleğin, TCHARs cinsinden boyutu. Yöntemi döndürüldüğünde, *pnChar* , bir Sonlandırıcı null karakteri de dahil olmak üzere, alınan dizenin TCHARs cinsinden boyutunu içerir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yöntem başarılı olursa ERROR_SUCCESS döndürülür. Bir değer okumak yöntem başarısız olursa WINERROR içinde tanımlanan bir sıfır olmayan hata kodu döndürür. H Başvurulan veri türü REG_SZ değil, ERROR_INVALID_DATA döndürülür. Yöntemi, ERROR_MORE_DATA döndürürse *pnChars* eşittir sıfır, gerekli arabellek boyutu bayt cinsinden değil.
+Yöntem başarılı olursa, ERROR_SUCCESS döndürülür. Yöntem bir değeri okuyamazsa, WINERROR 'da tanımlanan sıfır olmayan bir hata kodu döndürür. Olsun. Başvurulan veriler REG_SZ türünde değilse, ERROR_INVALID_DATA döndürülür. Yöntem ERROR_MORE_DATA döndürürse, *pnChar* 'lar, gerekli arabellek boyutunu bayt cinsinden değil, sıfıra eşit.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntemi kullanır `RegQueryValueEx` ve doğru veri türünü verdiğini onaylar. Bkz: [RegQueryValueEx](/windows/desktop/api/winreg/nf-winreg-regqueryvalueexa) daha fazla ayrıntı için.
+Bu yöntem, ' nin `RegQueryValueEx` kullanımını sağlar ve doğru türde verilerin döndürüldüğünü onaylar. Daha fazla ayrıntı için bkz. [RegQueryValueEx](/windows/desktop/api/winreg/nf-winreg-regqueryvalueexa) .
 
 > [!IMPORTANT]
->  Bu yöntem, güvenilir olmayan verileri okunurken, herhangi bir kayıt defteri konumu belirtmek çağıranın sağlar. Ayrıca, [RegQueryValueEx](/windows/desktop/api/winreg/nf-winreg-regqueryvalueexa) bu yöntem tarafından kullanılan işlevi, NULL sonlandırılan dize açıkça işlemez. Her iki koşul için çağıran kod tarafından denetlenmelidir.
+>  Bu yöntem, çağıranın hiçbir kayıt defteri konumu belirtmesini sağlar. Bu, güvenilmez olmayan verileri okuyabilir. Ayrıca, bu yöntem tarafından kullanılan [RegQueryValueEx](/windows/desktop/api/winreg/nf-winreg-regqueryvalueexa) IşLEVI, null olarak sonlandırılmış dizeleri açıkça işlemez. Her iki koşul de çağıran kod tarafından denetlenmelidir.
 
-##  <a name="queryvalue"></a>  CRegKey::QueryValue
+##  <a name="queryvalue"></a>CRegKey:: QueryValue
 
-Belirtilen değer alanı için verileri almak için bu yöntemi çağırın [m_hKey](#m_hkey). Bu yöntemin önceki sürümleri artık desteklenmemektedir ve ATL_DEPRECATED işaretlenir.
+[M_hKey](#m_hkey)öğesinin belirtilen değer alanı için verileri almak üzere bu yöntemi çağırın. Bu yöntemin önceki sürümleri artık desteklenmemektedir ve ATL_DEPRECATED olarak işaretlenir.
 
 ```
 LONG QueryValue(
@@ -709,45 +709,45 @@ ATL_DEPRECATED LONG QueryValue(
 ### <a name="parameters"></a>Parametreler
 
 *pszValueName*<br/>
-Sorgu için değerin adını içeren null ile sonlandırılmış bir dize işaretçisi. Varsa *pszValueName* NULL veya boş bir dize, "", yöntemi türünü alır ve anahtarı için veri adlandırılmamış veya varsa varsayılan değer.
+Sorgulanacak değerin adını içeren, null ile sonlandırılmış bir dize işaretçisi. *PszValueName* null veya boş bir dize, "" ise, yöntemi anahtarın adlandırılmamış veya varsayılan değeri için türü ve verileri alır.
 
 *pdwType*<br/>
-Belirtilen değerde depolanan verilerin türünü gösteren bir kod alan bir değişken işaretçisi. *PdwType* parametresi türü kodu gerekmiyorsa NULL olabilir.
+Belirtilen değerde depolanan veri türünü gösteren bir kod alan bir değişkene yönelik işaretçi. Tür kodu gerekmiyorsa *pdwType* parametresi null olabilir.
 
 *pData*<br/>
-Değer verisini alan arabellek için işaretçi. Veriler gerekli değilse bu parametre NULL olabilir.
+Değerin verilerini alan bir arabelleğin işaretçisi. Veriler gerekmiyorsa bu parametre NULL olabilir.
 
 *pnBytes*<br/>
-Arabelleğin bayt cinsinden boyutunu belirten bir değişken işaretçisi tarafından işaret edilen *pData* parametresi. Yöntem döndürüldüğünde, bu değişken kopyalanan verilerin boyutunu içeren *pData.*
+*PData* parametresi tarafından işaret edilen arabelleğin bayt cinsinden boyutunu belirten bir değişkene yönelik işaretçi. Yöntem döndüğünde, bu değişken *pData* 'a kopyalanmış verilerin boyutunu içerir.
 
 *dwValue*<br/>
-Değer alanın sayısal veriler.
+Değer alanının sayısal verileri.
 
 *lpszValueName*<br/>
 Sorgulanacak değer alanını belirtir.
 
 *szValue*<br/>
-Değer alanın dize verileri.
+Değer alanının dize verileri.
 
 *pdwCount*<br/>
-Dize veri boyutu. Değerini başlangıçta boyutuna ayarlanır *szValue* arabellek.
+Dize verilerinin boyutu. Değeri başlangıçta *szValue* arabelleğinin boyutuna ayarlanır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa, ERROR_SUCCESS döndürür; Aksi takdirde, sıfır olmayan hata kodu WINERROR içinde tanımlanır. H
+Başarılı olursa, ERROR_SUCCESS döndürür; Aksi halde, WINERROR 'da tanımlanmış sıfır olmayan bir hata kodu. Olsun.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İki özgün sürümü `QueryValue` artık desteklenmemektedir ve ATL_DEPRECATED işaretlenir. Bu formlar kullanılırsa derleyici bir uyarı verir.
+Öğesinin `QueryValue` iki orijinal sürümü artık desteklenmemektedir ve ATL_DEPRECATED olarak işaretlenir. Bu formlar kullanılıyorsa derleyici bir uyarı oluşturur.
 
-RegQueryValueEx kalan yöntemi çağırır.
+Kalan Yöntem RegQueryValueEx çağırır.
 
 > [!IMPORTANT]
->  Bu yöntem, güvenilir olmayan verileri okunurken, herhangi bir kayıt defteri konumu belirtmek çağıranın sağlar. Ayrıca, bu yöntem tarafından kullanılan RegQueryValueEx işlevi, NULL sonlandırılan dize açıkça işlemez. Her iki koşul için çağıran kod tarafından denetlenmelidir.
+>  Bu yöntem, çağıranın hiçbir kayıt defteri konumu belirtmesini sağlar. Bu, güvenilmez olmayan verileri okuyabilir. Ayrıca, bu yöntem tarafından kullanılan RegQueryValueEx işlevi, NULL olarak sonlandırılmış dizeleri açıkça işlemez. Her iki koşul de çağıran kod tarafından denetlenmelidir.
 
-##  <a name="recursedeletekey"></a>  CRegKey::RecurseDeleteKey
+##  <a name="recursedeletekey"></a>CRegKey:: RecurseDeleteKey
 
-Belirtilen anahtarı kayıt defterinden kaldırabilir ve tüm alt açıkça kaldırmak için bu yöntemi çağırın.
+Belirtilen anahtarı kayıt defterinden kaldırmak ve tüm alt anahtarları açıkça kaldırmak için bu yöntemi çağırın.
 
 ```
 LONG RecurseDeleteKey(LPCTSTR lpszKey) throw();
@@ -756,19 +756,19 @@ LONG RecurseDeleteKey(LPCTSTR lpszKey) throw();
 ### <a name="parameters"></a>Parametreler
 
 *lpszKey*<br/>
-Silinecek anahtar adını belirtir. Bu ad, bir alt olmalıdır [m_hKey](#m_hkey).
+Silinecek anahtarın adını belirtir. Bu ad [m_hKey](#m_hkey)bir alt anahtar olmalıdır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa, ERROR_SUCCESS döndürür; Aksi takdirde, sıfır olmayan hata değeri WINERROR içinde tanımlanır. H
+Başarılı olursa, ERROR_SUCCESS döndürür; Aksi halde, WINERROR 'da sıfır olmayan bir hata değeri tanımlandı. Olsun.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Anahtarı alt anahtarları varsa, anahtarı silmek için bu yöntemi çağırmanız gerekir.
+Anahtarın alt anahtarları varsa, anahtarı silmek için bu yöntemi çağırmanız gerekir.
 
-##  <a name="setbinaryvalue"></a>  CRegKey::SetBinaryValue
+##  <a name="setbinaryvalue"></a>CRegKey:: SetBinaryValue
 
-İkili kayıt defteri anahtarı değerini ayarlamak için bu yöntemi çağırın.
+Kayıt defteri anahtarının ikili değerini ayarlamak için bu yöntemi çağırın.
 
 ```
 LONG SetBinaryValue(
@@ -780,25 +780,25 @@ LONG SetBinaryValue(
 ### <a name="parameters"></a>Parametreler
 
 *pszValueName*<br/>
-Ayarlanacak değerin adını içeren bir dize işaretçisi. Bu ada sahip bir değer zaten yoksa, yöntem anahtara ekler.
+Ayarlanacak değerin adını içeren bir dize işaretçisi. Bu ada sahip bir değer zaten yoksa, yöntemi anahtara ekler.
 
 *pValue*<br/>
-Belirtilen değer adı ile depolanacak verileri içeren bir arabellek için işaretçi.
+Belirtilen değer adıyla depolanacak verileri içeren bir arabelleğin işaretçisi.
 
 *nBytes*<br/>
-İşaret ettiği bilgiler bayt cinsinden boyutunu belirtir *pValue* parametresi.
+*PValue* parametresi tarafından işaret edilen bilgilerin boyutunu bayt cinsinden belirtir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yöntem başarılı olursa, döndürülen değer ERROR_SUCCESS olur. Yöntem başarısız olursa, dönüş değeri WINERROR içinde tanımlanan bir sıfır olmayan hata kodudur. H
+Yöntem başarılı olursa, dönüş değeri ERROR_SUCCESS olur. Yöntem başarısız olursa, dönüş değeri, WINERROR 'da tanımlanan sıfır dışı bir hata kodudur. Olsun.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntemde [RegSetValueEx](/windows/desktop/api/winreg/nf-winreg-regsetvalueexa) değeri kayıt defterine yazmak için.
+Bu yöntem, kayıt defterine değeri yazmak için [RegSetValueEx](/windows/desktop/api/winreg/nf-winreg-regsetvalueexa) kullanır.
 
-##  <a name="setdwordvalue"></a>  CRegKey::SetDWORDValue
+##  <a name="setdwordvalue"></a>CRegKey:: SetDWORDValue
 
-Kayıt defteri anahtarı DWORD değerini ayarlamak için bu yöntemi çağırın.
+Kayıt defteri anahtarının DWORD değerini ayarlamak için bu yöntemi çağırın.
 
 ```
 LONG SetDWORDValue(LPCTSTR pszValueName, DWORD dwValue) throw();
@@ -807,22 +807,22 @@ LONG SetDWORDValue(LPCTSTR pszValueName, DWORD dwValue) throw();
 ### <a name="parameters"></a>Parametreler
 
 *pszValueName*<br/>
-Ayarlanacak değerin adını içeren bir dize işaretçisi. Bu ada sahip bir değer zaten yoksa, yöntem anahtara ekler.
+Ayarlanacak değerin adını içeren bir dize işaretçisi. Bu ada sahip bir değer zaten yoksa, yöntemi anahtara ekler.
 
 *dwValue*<br/>
-Belirtilen değer adı ile depolanacak DWORD veriler.
+Belirtilen değer adıyla depolanacak DWORD verileri.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yöntem başarılı olursa, döndürülen değer ERROR_SUCCESS olur. Yöntem başarısız olursa, dönüş değeri WINERROR içinde tanımlanan bir sıfır olmayan hata kodudur. H
+Yöntem başarılı olursa, dönüş değeri ERROR_SUCCESS olur. Yöntem başarısız olursa, dönüş değeri, WINERROR 'da tanımlanan sıfır dışı bir hata kodudur. Olsun.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntemde [RegSetValueEx](/windows/desktop/api/winreg/nf-winreg-regsetvalueexa) değeri kayıt defterine yazmak için.
+Bu yöntem, kayıt defterine değeri yazmak için [RegSetValueEx](/windows/desktop/api/winreg/nf-winreg-regsetvalueexa) kullanır.
 
-##  <a name="setguidvalue"></a>  CRegKey::SetGUIDValue
+##  <a name="setguidvalue"></a>CRegKey:: Setguiddeğeri
 
-Kayıt defteri anahtarının GUID değeri ayarlamak için bu yöntemi çağırın.
+Kayıt defteri anahtarının GUID değerini ayarlamak için bu yöntemi çağırın.
 
 ```
 LONG SetGUIDValue(LPCTSTR pszValueName, REFGUID guidValue) throw();
@@ -831,22 +831,22 @@ LONG SetGUIDValue(LPCTSTR pszValueName, REFGUID guidValue) throw();
 ### <a name="parameters"></a>Parametreler
 
 *pszValueName*<br/>
-Ayarlanacak değerin adını içeren bir dize işaretçisi. Bu ada sahip bir değer zaten yoksa, yöntem anahtara ekler.
+Ayarlanacak değerin adını içeren bir dize işaretçisi. Bu ada sahip bir değer zaten yoksa, yöntemi anahtara ekler.
 
-*guidValue*<br/>
-Belirtilen değer adı ile depolanacak GUID başvuru.
+*GUIDDeğeri*<br/>
+Belirtilen değer adıyla depolanacak GUID 'ye başvuru.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yöntem başarılı olursa, döndürülen değer ERROR_SUCCESS olur. Yöntem başarısız olursa, dönüş değeri WINERROR içinde tanımlanan bir sıfır olmayan hata kodudur. H
+Yöntem başarılı olursa, dönüş değeri ERROR_SUCCESS olur. Yöntem başarısız olursa, dönüş değeri, WINERROR 'da tanımlanan sıfır dışı bir hata kodudur. Olsun.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntemi kullanır `CRegKey::SetStringValue` ve kullanarak bir dize GUID dönüştürür [StringFromGUID2](/windows/desktop/api/combaseapi/nf-combaseapi-stringfromguid2).
+Bu yöntem, kullanımını `CRegKey::SetStringValue` sağlar ve [StringFromGUID2](/windows/desktop/api/combaseapi/nf-combaseapi-stringfromguid2)kullanarak GUID 'yi bir dizeye dönüştürür.
 
-##  <a name="setkeyvalue"></a>  CRegKey::SetKeyValue
+##  <a name="setkeyvalue"></a>CRegKey:: SetKeyValue
 
-Belirtilen anahtar belirtilen değer alanında verileri depolamak için bu yöntemi çağırın.
+Belirtilen bir anahtarın belirtilen bir değer alanındaki verileri depolamak için bu yöntemi çağırın.
 
 ```
 LONG SetKeyValue(
@@ -858,23 +858,23 @@ LONG SetKeyValue(
 ### <a name="parameters"></a>Parametreler
 
 *lpszKeyName*<br/>
-Açılan veya oluşturulacak anahtar adını belirtir. Bu ad, bir alt olmalıdır [m_hKey](#m_hkey).
+Oluşturulacak veya açılacak anahtarın adını belirtir. Bu ad [m_hKey](#m_hkey)bir alt anahtar olmalıdır.
 
 *lpszValue*<br/>
-Depolanan verileri belirtir. Bu parametre NULL olmayan olmalıdır.
+Depolanacak verileri belirtir. Bu parametre NULL olmayan bir değer olmalıdır.
 
 *lpszValueName*<br/>
-Ayarlanacak değer alanını belirtir. Bu ada sahip bir değer alanı anahtarı zaten mevcut değilse eklenir.
+Ayarlanacak değer alanını belirtir. Bu ada sahip bir değer alanı anahtarda zaten yoksa, eklenir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa, ERROR_SUCCESS döndürür; Aksi takdirde, sıfır olmayan hata kodu WINERROR içinde tanımlanır. H
+Başarılı olursa, ERROR_SUCCESS döndürür; Aksi halde, WINERROR 'da tanımlanmış sıfır olmayan bir hata kodu. Olsun.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Açmak veya oluşturmak için bu yöntemi çağırın *lpszKeyName* anahtar ve depolamak *lpszValue* verilerinde *lpszValueName* değeri alanı.
+*LpszKeyName* anahtarını oluşturmak veya açmak ve *lpszValue* verilerini *lpszValueName* value alanına depolamak için bu yöntemi çağırın.
 
-##  <a name="setkeysecurity"></a>  CRegKey::SetKeySecurity
+##  <a name="setkeysecurity"></a>CRegKey:: SetKeySecurity
 
 Kayıt defteri anahtarının güvenliğini ayarlamak için bu yöntemi çağırın.
 
@@ -884,30 +884,30 @@ LONG SetKeySecurity(SECURITY_INFORMATION si, PSECURITY_DESCRIPTOR psd) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*sı*<br/>
-Ayarlamak için güvenlik tanımlayıcısı bileşenlerini belirtir. Değer aşağıdaki değerlerinin bir birleşimi olabilir:
+*ortası*<br/>
+Ayarlanacak güvenlik tanımlayıcısının bileşenlerini belirtir. Değer aşağıdaki değerlerin bir birleşimi olabilir:
 
 |Değer|Açıklama|
 |-----------|-------------|
-|DACL_SECURITY_INFORMATION|Anahtarın isteğe bağlı erişim denetimi listesini (DACL) ayarlar. Çağırma işlemi nesnenin sahibi olmanız gerekir veya anahtar WRITE_DAC erişimi olmalıdır.|
-|GROUP_SECURITY_INFORMATION|Anahtarın birincil grup güvenlik tanımlayıcısını (SID) ayarlar. Çağırma işlemi nesnenin sahibi olmanız gerekir veya anahtar WRITE_OWNER erişimi olmalıdır.|
-|OWNER_SECURITY_INFORMATION|Anahtarın sahibi SID'si ayarlar. Anahtar WRITE_OWNER erişiminiz olmalıdır veya çağırma işlemine nesnenin sahibi olmanız veya etkin SE_TAKE_OWNERSHIP_NAME ayrıcalığına sahip olması gerekir.|
-|SACL_SECURITY_INFORMATION|Anahtarın sistem erişim denetimi listesini (SACL) ayarlar. Anahtar ACCESS_SYSTEM_SECURITY erişiminiz olmalıdır. Bu erişim elde etmek için en uygun yolu SE_SECURITY_NAME etkinleştirmektir [ayrıcalık](/windows/desktop/secauthz/privileges) çağıranın geçerli erişim belirteci ACCESS_SYSTEM_SECURITY erişim için tanıtıcı açın ve ayrıcalık devre dışı bırakın.|
+|DACL_SECURITY_INFORMATION|Anahtarın isteğe bağlı erişim denetimi listesini (DACL) ayarlar. Anahtarın WRITE_DAC erişimi olmalıdır veya çağırma işleminin nesnenin sahibi olması gerekir.|
+|GROUP_SECURITY_INFORMATION|Anahtarın birincil grup güvenlik tanımlayıcısını (SID) ayarlar. Anahtarın WRITE_OWNER erişimi olmalıdır veya çağırma işleminin nesnenin sahibi olması gerekir.|
+|OWNER_SECURITY_INFORMATION|Anahtarın sahip SID 'sini ayarlar. Anahtarın WRITE_OWNER erişimi olmalıdır ya da çağıran işlem, nesnenin sahibi olmalı veya SE_TAKE_OWNERSHIP_NAME ayrıcalığının etkin olmalıdır.|
+|SACL_SECURITY_INFORMATION|Anahtarın sistem erişim denetimi listesini (SACL) ayarlar. Anahtarın ACCESS_SYSTEM_SECURITY erişimi olmalıdır. Bu erişimi almanın doğru yolu, çağıranın geçerli erişim belirtecindeki SE_SECURITY_NAME [ayrıcalığını](/windows/desktop/secauthz/privileges) ETKINLEŞTIRMEK, ACCESS_SYSTEM_SECURITY Access için tanıtıcıyı açmak ve ardından ayrıcalığını devre dışı bırakmanız olur.|
 
 *PSD*<br/>
-İşaretçi bir [SECURITY_DESCRIPTOR](/windows/desktop/api/winnt/ns-winnt-_security_descriptor) belirtilen anahtar için ayarlanacak güvenlik özniteliklerini belirten yapısı.
+Belirtilen anahtar için ayarlanacak güvenlik özniteliklerini belirten bir [SECURITY_DESCRIPTOR](/windows/desktop/api/winnt/ns-winnt-security_descriptor) yapısına yönelik işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yöntem başarılı olursa, döndürülen değer ERROR_SUCCESS olur. Yöntem başarısız olursa, dönüş değeri WINERROR içinde tanımlanan bir sıfır olmayan hata kodudur. H
+Yöntem başarılı olursa, dönüş değeri ERROR_SUCCESS olur. Yöntem başarısız olursa, dönüş değeri, WINERROR 'da tanımlanan sıfır dışı bir hata kodudur. Olsun.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Anahtarın güvenlik öznitelikleri ayarlar. Bkz: [RegSetKeySecurity](/windows/desktop/api/winreg/nf-winreg-regsetkeysecurity) daha fazla ayrıntı için.
+Anahtarın güvenlik özniteliklerini ayarlar. Daha fazla ayrıntı için bkz. [RegSetKeySecurity](/windows/desktop/api/winreg/nf-winreg-regsetkeysecurity) .
 
-##  <a name="setmultistringvalue"></a>  CRegKey::SetMultiStringValue
+##  <a name="setmultistringvalue"></a>CRegKey:: SetMultiStringValue
 
-Kayıt defteri anahtarının çok dizeli değer ayarlamak için bu yöntemi çağırın.
+Kayıt defteri anahtarının MultiString değerini ayarlamak için bu yöntemi çağırın.
 
 ```
 LONG SetMultiStringValue(LPCTSTR pszValueName, LPCTSTR pszValue) throw();
@@ -916,22 +916,22 @@ LONG SetMultiStringValue(LPCTSTR pszValueName, LPCTSTR pszValue) throw();
 ### <a name="parameters"></a>Parametreler
 
 *pszValueName*<br/>
-Ayarlanacak değerin adını içeren bir dize işaretçisi. Bu ada sahip bir değer zaten yoksa, yöntem anahtara ekler.
+Ayarlanacak değerin adını içeren bir dize işaretçisi. Bu ada sahip bir değer zaten yoksa, yöntemi anahtara ekler.
 
 *pszValue*<br/>
-Belirtilen değer adı ile depolanacak çok dizeli veri işaretçisi. Bir multistring iki null karakter ile sona erdi, null ile sonlandırılmış dizeler dizisidir.
+Belirtilen değer adıyla depolanacak çok dizeli verilerin işaretçisi. Çoklu dize, null ile sonlandırılmış dizelerin dizileridir ve iki null karakterle sonlandırılır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yöntem başarılı olursa, döndürülen değer ERROR_SUCCESS olur. Yöntem başarısız olursa, dönüş değeri WINERROR içinde tanımlanan bir sıfır olmayan hata kodudur. H
+Yöntem başarılı olursa, dönüş değeri ERROR_SUCCESS olur. Yöntem başarısız olursa, dönüş değeri, WINERROR 'da tanımlanan sıfır dışı bir hata kodudur. Olsun.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntemde [RegSetValueEx](/windows/desktop/api/winreg/nf-winreg-regsetvalueexa) değeri kayıt defterine yazmak için.
+Bu yöntem, kayıt defterine değeri yazmak için [RegSetValueEx](/windows/desktop/api/winreg/nf-winreg-regsetvalueexa) kullanır.
 
-##  <a name="setqwordvalue"></a>  CRegKey::SetQWORDValue
+##  <a name="setqwordvalue"></a>CRegKey:: SetQWORDValue
 
-QWORD kayıt defteri anahtarı değerini ayarlamak için bu yöntemi çağırın.
+Kayıt defteri anahtarının QWORD değerini ayarlamak için bu yöntemi çağırın.
 
 ```
 LONG SetQWORDValue(LPCTSTR pszValueName, ULONGLONG qwValue) throw();
@@ -940,20 +940,20 @@ LONG SetQWORDValue(LPCTSTR pszValueName, ULONGLONG qwValue) throw();
 ### <a name="parameters"></a>Parametreler
 
 *pszValueName*<br/>
-Ayarlanacak değerin adını içeren bir dize işaretçisi. Bu ada sahip bir değer zaten yoksa, yöntem anahtara ekler.
+Ayarlanacak değerin adını içeren bir dize işaretçisi. Bu ada sahip bir değer zaten yoksa, yöntemi anahtara ekler.
 
 *qwValue*<br/>
-Belirtilen değer adı ile depolanacak QWORD veriler.
+Belirtilen değer adıyla depolanacak olan QWORD verileri.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yöntem başarılı olursa, döndürülen değer ERROR_SUCCESS olur. Yöntem başarısız olursa, dönüş değeri WINERROR içinde tanımlanan bir sıfır olmayan hata kodudur. H
+Yöntem başarılı olursa, dönüş değeri ERROR_SUCCESS olur. Yöntem başarısız olursa, dönüş değeri, WINERROR 'da tanımlanan sıfır dışı bir hata kodudur. Olsun.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntemde [RegSetValueEx](/windows/desktop/api/winreg/nf-winreg-regsetvalueexa) değeri kayıt defterine yazmak için.
+Bu yöntem, kayıt defterine değeri yazmak için [RegSetValueEx](/windows/desktop/api/winreg/nf-winreg-regsetvalueexa) kullanır.
 
-##  <a name="setstringvalue"></a>  CRegKey::SetStringValue
+##  <a name="setstringvalue"></a>CRegKey:: SetStringValue
 
 Kayıt defteri anahtarının dize değerini ayarlamak için bu yöntemi çağırın.
 
@@ -967,25 +967,25 @@ LONG SetStringValue(
 ### <a name="parameters"></a>Parametreler
 
 *pszValueName*<br/>
-Ayarlanacak değerin adını içeren bir dize işaretçisi. Bu ada sahip bir değer zaten yoksa, yöntem anahtara ekler.
+Ayarlanacak değerin adını içeren bir dize işaretçisi. Bu ada sahip bir değer zaten yoksa, yöntemi anahtara ekler.
 
 *pszValue*<br/>
-Belirtilen değer adı ile depolanacak dize veri işaretçisi.
+Belirtilen değer adıyla depolanacak dize verileri işaretçisi.
 
 *dwType*<br/>
-Kayıt defterine yazılacak dizenin türü: REG_SZ (varsayılan) veya REG_EXPAND_SZ (çoklu dizeler için).
+Kayıt defterine yazılacak dizenin türü: REG_SZ (varsayılan) ya da REG_EXPAND_SZ (çok dizeli dizeler için).
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yöntem başarılı olursa, döndürülen değer ERROR_SUCCESS olur. Yöntem başarısız olursa, dönüş değeri WINERROR içinde tanımlanan bir sıfır olmayan hata kodudur. H
+Yöntem başarılı olursa, dönüş değeri ERROR_SUCCESS olur. Yöntem başarısız olursa, dönüş değeri, WINERROR 'da tanımlanan sıfır dışı bir hata kodudur. Olsun.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntemde [RegSetValueEx](/windows/desktop/api/winreg/nf-winreg-regsetvalueexa) değeri kayıt defterine yazmak için.
+Bu yöntem, kayıt defterine değeri yazmak için [RegSetValueEx](/windows/desktop/api/winreg/nf-winreg-regsetvalueexa) kullanır.
 
-##  <a name="setvalue"></a>  CRegKey::SetValue
+##  <a name="setvalue"></a>CRegKey:: SetValue
 
-Belirtilen değer alanında verileri depolamak için bu yöntemi çağırın [m_hKey](#m_hkey). Bu yöntemin önceki sürümleri artık desteklenmemektedir ve ATL_DEPRECATED işaretlenir.
+[M_hKey](#m_hkey)'in belirtilen değer alanına veri depolamak için bu yöntemi çağırın. Bu yöntemin önceki sürümleri artık desteklenmemektedir ve ATL_DEPRECATED olarak işaretlenir.
 
 ```
 LONG SetValue(
@@ -1014,49 +1014,49 @@ ATL_DEPRECATED LONG SetValue(
 ### <a name="parameters"></a>Parametreler
 
 *pszValueName*<br/>
-Ayarlanacak değerin adını içeren bir dize işaretçisi. Bu ada sahip bir değer anahtar mevcut değilse, yöntem anahtara ekler. Varsa *pszValueName* NULL veya boş bir dize, "", yöntem türünü ayarlar ve anahtarı için veri adlandırılmamış veya varsayılan değer.
+Ayarlanacak değerin adını içeren bir dize işaretçisi. Bu ada sahip bir değer anahtarda zaten yoksa, yöntemi anahtara ekler. *PszValueName* null veya boş bir dize ise, "" yöntemi, anahtarın adlandırılmamış veya varsayılan değeri için türü ve verileri ayarlar.
 
 *dwType*<br/>
-İşaret ettiği veri türünü gösteren bir kod belirtir *pValue* parametresi.
+*PValue* parametresinin işaret ettiği veri türünü gösteren bir kodu belirtir.
 
 *pValue*<br/>
-Belirtilen değer adı ile depolanacak verileri içeren bir arabellek için işaretçi.
+Belirtilen değer adıyla depolanacak verileri içeren bir arabelleğin işaretçisi.
 
 *nBytes*<br/>
-İşaret ettiği bilgiler bayt cinsinden boyutunu belirtir *pValue* parametresi. Veri türü REG_SZ, REG_EXPAND_SZ veya REG_MULTI_SZ ise *nBytes* sondaki boş karakter boyutunu eklemeniz gerekir.
+*PValue* parametresi tarafından işaret edilen bilgilerin boyutunu bayt cinsinden belirtir. Veriler REG_SZ, REG_EXPAND_SZ veya REG_MULTI_SZ türünde ise, *nBytes* Sonlandırıcı null karakterinin boyutunu içermelidir.
 
 *hKeyParent*<br/>
-Açık bir anahtar tanıtıcısı.
+Açık bir anahtarın tanıtıcısı.
 
 *lpszKeyName*<br/>
-Oluşturulacak veya açılan bir anahtarın adını belirtir. Bu ad, bir alt olmalıdır *hKeyParent*.
+Oluşturulacak veya açılacak bir anahtarın adını belirtir. Bu ad, *hKeyParent*'nin bir alt anahtarı olmalıdır.
 
 *lpszValue*<br/>
-Depolanan verileri belirtir. Bu parametre NULL olmayan olmalıdır.
+Depolanacak verileri belirtir. Bu parametre NULL olmayan bir değer olmalıdır.
 
 *lpszValueName*<br/>
-Ayarlanacak değer alanını belirtir. Bu ada sahip bir değer alanı anahtarı zaten mevcut değilse eklenir.
+Ayarlanacak değer alanını belirtir. Bu ada sahip bir değer alanı anahtarda zaten yoksa, eklenir.
 
 *dwValue*<br/>
-Depolanan verileri belirtir.
+Depolanacak verileri belirtir.
 
 *bMulti*<br/>
-False ise, dize türünde REG_SZ gösterir. TRUE ise, dize türü REG_MULTI_SZ bir multistring gösterilir.
+Yanlışsa, dizenin REG_SZ türünde olduğunu gösterir. True ise, dizenin REG_MULTI_SZ türünde çok dizeli olduğunu gösterir.
 
 *nValueLen*<br/>
-Varsa *bMulti* true ise *nValueLen* uzunluğu *lpszValue* karakter dizesi. Varsa *bMulti* yanlış, -1 değeri gösterir yöntemi uzunluğu otomatik olarak hesaplar.
+*BMulti* true Ise *Nvaluelen* , *lpszValue* dizesinin karakter cinsinden uzunluğudur. *BMulti* yanlış ise,-1 değeri yöntemin uzunluğu otomatik olarak hesaplayacağını belirtir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa, ERROR_SUCCESS döndürür; Aksi takdirde, sıfır olmayan hata kodu WINERROR içinde tanımlanır. H
+Başarılı olursa, ERROR_SUCCESS döndürür; Aksi halde, WINERROR 'da tanımlanmış sıfır olmayan bir hata kodu. Olsun.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İki özgün sürümü `SetValue` ATL_DEPRECATED işaretlenir ve artık kullanılmamalıdır. Bu formlar kullanılırsa derleyici bir uyarı verir.
+Öğesinin `SetValue` iki orijinal sürümü ATL_DEPRECATED olarak işaretlenir ve artık kullanılmamalıdır. Bu formlar kullanılıyorsa derleyici bir uyarı oluşturur.
 
-Üçüncü yöntem çağrılarını [RegSetValueEx](/windows/desktop/api/winreg/nf-winreg-regsetvalueexa).
+Üçüncü yöntem [RegSetValueEx](/windows/desktop/api/winreg/nf-winreg-regsetvalueexa)çağırır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[DCOM örnek](../../overview/visual-cpp-samples.md)<br/>
-[Sınıfına genel bakış](../../atl/atl-class-overview.md)
+[DCOM örneği](../../overview/visual-cpp-samples.md)<br/>
+[Sınıfa genel bakış](../../atl/atl-class-overview.md)

@@ -7,16 +7,16 @@ helpviewer_keywords:
 - TOOLTIPTEXT structure [MFC]
 - tool tips [MFC], notifications
 ms.assetid: 547591bf-80f5-400e-a2a7-0708cfffbb5d
-ms.openlocfilehash: 7d77ca7dc55273e6084e919323ed71e55fa68a2c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 2eb899e66acbadbe45aae2c8adbb356bf4730191
+ms.sourcegitcommit: 46d24d6e70c03e05484923d9efc6ed5150e96a64
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62181853"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68915244"
 ---
 # <a name="tooltiptext-structure"></a>TOOLTIPTEXT Yapısı
 
-Yazma, [araç ipucu bildirimi işleyicisi](../mfc/handling-ttn-needtext-notification-for-tool-tips.md), kullanmanız gereken **TOOLTIPTEXT** yapısı. Üyeleri **TOOLTIPTEXT** yapısı şunlardır:
+[Araç ipucu bildirim işleyicinizi](../mfc/handling-ttn-needtext-notification-for-tool-tips.md)yazarken **ToolTipText** yapısını kullanmanız gerekir. **ToolTipText** yapısının üyeleri şunlardır:
 
 ```cpp
 typedef struct {
@@ -30,25 +30,25 @@ typedef struct {
 } TOOLTIPTEXT, FAR *LPTOOLTIPTEXT;
 ```
 
-*HDR*<br/>
-Metin gereken aracı tanımlar. Bu yapının ihtiyacınız olabilecek tek üyesi denetimin komut kimliğidir. Denetimin komut kimliği olacak *idFrom* üyesi **NMHDR** yapısı, söz dizimi ile erişilen `hdr.idFrom`. Bkz: [NMHDR](/windows/desktop/api/richedit/ns-richedit-_nmhdr) üyelerinin bir tartışma için **NMHDR** yapısı.
+*görüntüsünde*<br/>
+Metin gerektiren aracı tanımlar. Bu yapının yalnızca ihtiyaç duyduğunuz tek üyesi, denetimin komut KIMLIĞIDIR. Denetimin komut KIMLIĞI, sözdizimiyle `hdr.idFrom`erişilen, **nmhdr** yapısının *ıdfrom* üyesi içinde olacaktır. **Nmhdr** yapısının üyelerinin tartışılması için bkz. [nmhdr](/windows/desktop/api/richedit/ns-richedit-nmhdr) .
 
 *lpszText*<br/>
-Bir aracı için metin almak için bir dize adresi.
+Bir aracın metnini alacak dizenin adresi.
 
 *szText*<br/>
-Araç ipucu metnini alır arabelleği. Bir uygulama metni bir dize adresi alternatif olarak bu arabelleğin kopyalayın.
+Araç ipucu metnini alan arabellek. Bir uygulama, bir dize adresi belirtmeye alternatif olarak metni bu arabelleğe kopyalayabilir.
 
 *hinst*<br/>
-Araç İpucu olarak kullanılacak bir dize içeren örneğinin tutamacını. Varsa *lpszText* adresi araç ipucu metni, bu üye NULL olur.
+Araç ipucu metni olarak kullanılacak bir dize içeren örneğin tanıtıcısı. *LpszText* , araç ipucu metninin adresidir, bu üye null olur.
 
-Ne zaman işleneceğini `TTN_NEEDTEXT` bildirim iletisi, aşağıdaki yollardan biriyle görüntülenecek dizeyi belirtin:
+`TTN_NEEDTEXT` Bildirim iletisini işlerken, aşağıdaki yollarla görüntülenecek dizeyi belirtin:
 
-- Tarafından belirtilen arabellek için metin kopyalamak *szText* üyesi.
+- Metni *szText* üyesi tarafından belirtilen arabelleğe kopyalayın.
 
-- Metni içeren arabellek adresini kopyalayın *lpszText* üyesi.
+- Metni içeren arabelleğin adresini *lpszText* üyesine kopyalayın.
 
-- Kopyalamak için bir dize kaynağının tanımlayıcısını *lpszText* üye ve kopyalama kaynağı içeren örneğinin tutamacını *hinst* üyesi.
+- Bir dize kaynağının tanımlayıcısını *lpszText* üyesine kopyalayın ve kaynağı içeren örneğin tanıtıcısını *hinst* üyesine kopyalayın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

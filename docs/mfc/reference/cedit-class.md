@@ -94,12 +94,12 @@ helpviewer_keywords:
 - CEdit [MFC], ShowBalloonTip
 - CEdit [MFC], Undo
 ms.assetid: b1533c30-7f10-4663-88d3-8b7f2c9f7024
-ms.openlocfilehash: a66597f7a43e0730ae8b32369235ac860f51a0f1
-ms.sourcegitcommit: 878a164fe6d550ca81ab87d8425c8d3cd52fe384
+ms.openlocfilehash: ccf7445100977e1205bbcffe230e1919ac33adea
+ms.sourcegitcommit: 46d24d6e70c03e05484923d9efc6ed5150e96a64
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68375849"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68916135"
 ---
 # <a name="cedit-class"></a>Cedıt sınıfı
 
@@ -1205,9 +1205,9 @@ Bir parola karakteri ayarlandığında, bu karakter Kullanıcı türlerindeki he
 
 Bu üye işlevin çok satırlı bir düzenleme denetimi üzerinde hiçbir etkisi yoktur.
 
-Üye işlevi çağrıldığında, `CEdit` tüm görünür karakterleri ch tarafından belirtilen karakteri kullanarak yeniden çizer.  `SetPasswordChar`
+Üye işlevi çağrıldığında, `CEdit` tüm görünür karakterleri ch tarafından belirtilen karakteri kullanarak yeniden çizer. `SetPasswordChar`
 
-Düzenleme denetimi [ES_PASSWORD](styles-used-by-mfc.md#edit-styles) stiliyle oluşturulduysa, varsayılan parola karakteri bir yıldız işareti ( <strong>\*</strong>) olarak ayarlanır. Ch kümesi 0 olarak çağrılırsa `SetPasswordChar` bu stil kaldırılır  .
+Düzenleme denetimi [ES_PASSWORD](styles-used-by-mfc.md#edit-styles) stiliyle oluşturulduysa, varsayılan parola karakteri bir yıldız işareti ( <strong>\*</strong>) olarak ayarlanır. Ch kümesi 0 olarak çağrılırsa `SetPasswordChar` bu stil kaldırılır .
 
 Daha fazla bilgi için Windows SDK [EM_SETPASSWORDCHAR](/windows/desktop/Controls/em-setpasswordchar) bakın.
 
@@ -1400,10 +1400,10 @@ BOOL ShowBalloonTip(
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|*pEditBalloonTip*|'ndaki Balon ipucunu açıklayan bir [EDITBALLOONTIP](/windows/desktop/api/commctrl/ns-commctrl-_tageditballoontip) yapısına yönelik işaretçi.|
+|*pEditBalloonTip*|'ndaki Balon ipucunu açıklayan bir [EDITBALLOONTIP](/windows/desktop/api/commctrl/ns-commctrl-editballoontip) yapısına yönelik işaretçi.|
 |*lpszTitle*|'ndaki Balon ipucunun başlığını içeren bir Unicode dize işaretçisi.|
 |*lpszText*|'ndaki Balon ipucu metnini içeren bir Unicode dize işaretçisi.|
-|*ttiIcon*|'ndaki Balon ipucuyla ilişkilendirilecek simgenin türünü belirten bir **Int** . Varsayılan değer TTI_NONE ' dir. Daha fazla bilgi için [EDITBALLOONTIP](/windows/desktop/api/commctrl/ns-commctrl-_tageditballoontip) yapısının `ttiIcon` üyesine bakın.|
+|*ttiIcon*|'ndaki Balon ipucuyla ilişkilendirilecek simgenin türünü belirten bir **Int** . Varsayılan değer TTI_NONE ' dir. Daha fazla bilgi için [EDITBALLOONTIP](/windows/desktop/api/commctrl/ns-commctrl-editballoontip) yapısının `ttiIcon` üyesine bakın.|
 
 ### <a name="return-value"></a>Dönüş Değeri
 

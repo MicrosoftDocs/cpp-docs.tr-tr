@@ -1,5 +1,5 @@
 ---
-title: CPrintDialogEx Class
+title: CPrintDialogEx sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CPrintDialogEx
@@ -38,16 +38,16 @@ helpviewer_keywords:
 - CPrintDialogEx [MFC], PrintSelection
 - CPrintDialogEx [MFC], m_pdex
 ms.assetid: 1d506703-ee1c-44cc-b4ce-4e778fec26b8
-ms.openlocfilehash: 3959eb01e5c0a36410129925e7c3f53898e99196
-ms.sourcegitcommit: ecf274bcfe3a977c48745aaa243e5e731f1fdc5f
+ms.openlocfilehash: ebef892e174525c0b907818c02b7d34b1b41f850
+ms.sourcegitcommit: 46d24d6e70c03e05484923d9efc6ed5150e96a64
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "66504793"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68916890"
 ---
-# <a name="cprintdialogex-class"></a>CPrintDialogEx Class
+# <a name="cprintdialogex-class"></a>CPrintDialogEx sınıfı
 
-Windows Print özellik sayfası tarafından sağlanan hizmetleri kapsüller.
+Windows yazdırma özelliği sayfası tarafından sunulan hizmetleri kapsüller.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -61,52 +61,52 @@ class CPrintDialogEx : public CCommonDialog
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[CPrintDialogEx::CPrintDialogEx](#cprintdialogex)|Oluşturur bir `CPrintDialogEx` nesne.|
+|[CPrintDialogEx::CPrintDialogEx](#cprintdialogex)|Bir `CPrintDialogEx` nesnesi oluşturur.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[CPrintDialogEx::CreatePrinterDC](#createprinterdc)|Yazdır iletişim kutusu görüntülenmeden yazıcı cihaz bağlamı oluşturur.|
-|[CPrintDialogEx::DoModal](#domodal)|İletişim kutusunu görüntüler ve kullanıcının seçim yapmanızı sağlar.|
-|[CPrintDialogEx::GetCopies](#getcopies)|İstenen kopya sayısını alır.|
-|[CPrintDialogEx::GetDefaults](#getdefaults)|Cihaz Varsayılanları iletişim kutusu görüntülenmeden alır.|
-|[CPrintDialogEx::GetDeviceName](#getdevicename)|Şu anda seçili yazıcı cihazın adını alır.|
-|[CPrintDialogEx::GetDevMode](#getdevmode)|Alır `DEVMODE` yapısı.|
-|[CPrintDialogEx::GetDriverName](#getdrivername)|Sistem tarafından tanımlanan yazıcı aygıt sürücüsünün adını alır.|
-|[CPrintDialogEx::GetPortName](#getportname)|Şu anda seçili yazıcı bağlantı noktasını adını alır.|
-|[CPrintDialogEx::GetPrinterDC](#getprinterdc)|Yazıcı cihaz bağlamı için bir tanıtıcı alır.|
-|[CPrintDialogEx::PrintAll](#printall)|Belgenin tüm sayfalarının yazdırılıp yazdırılmayacağını belirler.|
-|[CPrintDialogEx::PrintCollate](#printcollate)|Kopya istenen Harmanlanmış olup olmadığını belirler.|
-|[CPrintDialogEx::PrintCurrentPage](#printcurrentpage)|Belgenin geçerli sayfayı yazdır belirler.|
-|[CPrintDialogEx::PrintRange](#printrange)|Sayfa için belirtilen bir aralıktaki yazdırılıp yazdırılmayacağını belirler.|
-|[CPrintDialogEx::PrintSelection](#printselection)|Yalnızca şu anda seçtiğiniz öğelerin yazdırılıp yazdırılmayacağını belirler.|
+|[CPrintDialogEx:: CreatePrinterDC](#createprinterdc)|Yazdır iletişim kutusunu görüntülemeden bir yazıcı cihaz bağlamı oluşturur.|
+|[CPrintDialogEx::DoModal](#domodal)|İletişim kutusunu görüntüler ve kullanıcının seçim yapmasına izin verir.|
+|[CPrintDialogEx:: Getkopyaların](#getcopies)|İstenen kopya sayısını alır.|
+|[CPrintDialogEx:: GetDefaults](#getdefaults)|Bir iletişim kutusu görüntülemeden cihaz varsayılanlarını alır.|
+|[CPrintDialogEx:: Getaygıtadı](#getdevicename)|Şu anda seçili olan yazıcı cihazının adını alır.|
+|[CPrintDialogEx:: GetDevMode](#getdevmode)|`DEVMODE` Yapıyı alır.|
+|[CPrintDialogEx:: Getsürücüadı](#getdrivername)|Sistem tanımlı yazıcı aygıtı sürücüsünün adını alır.|
+|[CPrintDialogEx:: GetPortName](#getportname)|Şu anda seçili olan yazıcı bağlantı noktasının adını alır.|
+|[CPrintDialogEx::GetPrinterDC](#getprinterdc)|Yazıcı cihaz bağlamına bir tanıtıcı alır.|
+|[CPrintDialogEx::P Rinyüksekliğinde](#printall)|Belgenin tüm sayfalarının yazdırılması gerekip gerekmediğini belirler.|
+|[CPrintDialogEx::P rintCollate](#printcollate)|Harmanlanmış kopyaların istenip istenmediğini belirler.|
+|[CPrintDialogEx::P rintCurrentPage](#printcurrentpage)|Belgenin geçerli sayfasının yazdırılması gerekip gerekmediğini belirler.|
+|[CPrintDialogEx::P rintRange](#printrange)|Yalnızca belirli bir sayfa aralığının mi yazdırılacağını belirler.|
+|[CPrintDialogEx::P rintSelection](#printselection)|Yalnızca şu anda seçili olan öğelerin yazdırılması gerekip gerekmediğini belirler.|
 
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[CPrintDialogEx::m_pdex](#m_pdex)|Özelleştirmek için kullanılan bir yapının bir `CPrintDialogEx` nesne.|
+|[CPrintDialogEx::m_pdex](#m_pdex)|Bir `CPrintDialogEx` nesneyi özelleştirmek için kullanılan bir yapı.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Yazdırma işlemi uygulamanız için birçok yönden işlemek için Framework güvenebilirsiniz. Yazdırma görevleri işlemek için çerçeve kullanma hakkında daha fazla bilgi için bkz [yazdırma](../../mfc/printing.md).
+Uygulamanız için yazdırma sürecinin birçok yönlerini işlemek üzere çerçevesini kullanabilirsiniz. Yazdırma görevlerini işlemek için Framework 'ü kullanma hakkında daha fazla bilgi için [yazdırma](../../mfc/printing.md)makalesine bakın.
 
-Uygulamanızın framework'ün katılımı olmadan yazdırmak işlemesini istiyorsanız, kullanabileceğiniz `CPrintDialogEx` sağlanan oluşturucuyla "olduğu gibi" sınıf ya da kendi iletişim sınıftan türetilip `CPrintDialogEx` ve ihtiyaçlarınıza uyacak şekilde bir oluşturucu yazma. Sınıfından türetildiği her iki durumda da, bu iletişim kutularından standart MFC iletişim kutuları gibi davranır `CCommonDialog`.
+Uygulamanızın, Framework 'ün katılımı olmadan yazdırmayı işlemesini istiyorsanız, "olduğu gibi" `CPrintDialogEx` sınıfını, sağlanmış Oluşturucu ile kullanabilir veya kendi iletişim `CPrintDialogEx` sınıfınızı kendi iletişim sınıfınızı türetebilir ve gereksinimlerinize uyacak şekilde bir Oluşturucu yazabilirsiniz. Her iki durumda da, bu iletişim kutuları sınıfından `CCommonDialog`TÜRETILDIKLERINDEN standart MFC iletişim kutuları gibi davranır.
 
-Kullanılacak bir `CPrintDialogEx` nesne, ilk nesnesini kullanarak oluşturun `CPrintDialogEx` Oluşturucusu. İletişim kutusu oluşturulmuş bir kez ayarlayabilir veya herhangi bir değer değiştirme [m_pdex](#m_pdex) Yapısı iletişim kutusunun denetimleri değerlerini başlatılamadı. `m_pdex` Yapısıdır türünü [PRINTDLGEX](/windows/desktop/api/commdlg/ns-commdlg-tagpdexa). Bu yapı hakkında daha fazla bilgi için Windows SDK'sı bakın.
+Bir `CPrintDialogEx` nesnesi kullanmak için, önce `CPrintDialogEx` oluşturucuyu kullanarak nesnesini oluşturun. İletişim kutusu oluşturulduktan sonra, iletişim kutusu denetimlerinin değerlerini başlatmak için [m_pdex](#m_pdex) yapısındaki herhangi bir değeri ayarlayabilir veya değiştirebilirsiniz. Yapı PRINTDLGEX türündedir. [](/windows/desktop/api/commdlg/ns-commdlg-tagpdexa) `m_pdex` Bu yapı hakkında daha fazla bilgi için Windows SDK bakın.
 
-Kendi işleyicileri sağlamazsanız `m_pdex` için `hDevMode` ve `hDevNames` üyeleri, Windows işlevi çağırma mutlaka `GlobalFree` iletişim kutusu ile işiniz bittiğinde bu tanıtıcıları için.
+`m_pdex` `GlobalFree` Ve üyeleri`hDevNames` için kendi tanıtıcılarınızı sağlamadıysanız, iletişim kutusuyla işiniz bittiğinde bu tutamaçlar için Windows işlevini çağırdığınızdan `hDevMode` emin olun.
 
-İletişim kutusu denetimleri başlatılıyor sonra çağrı `DoModal` iletişim kutusunu görüntülemek ve yazdırma seçeneklerini seçmesini sağlamak için üye işlevi. Zaman `DoModal` döndürür, kullanıcı Tamam, Uygula veya iptal düğmesi seçili olup olmadığını belirleyebilirsiniz.
+İletişim kutusu denetimlerini başlattıktan sonra, iletişim kutusunu göstermek `DoModal` ve kullanıcının yazdırma seçeneklerini seçmesine izin vermek için üye işlevini çağırın. ' `DoModal` İ döndüğünde, kullanıcının Tamam, Uygula veya iptal düğmesini seçmiş olup olmadığını belirleyebilirsiniz.
 
-Kullanıcı Tamam basıldıysa kullanabileceğiniz `CPrintDialogEx`ait üye işlevleri tarafından kullanıcı giriş bilgileri alınamıyor.
+Kullanıcı Tamam 'a basıldığında, Kullanıcı tarafından bilgi girişi `CPrintDialogEx`almak için üye işlevlerini kullanabilirsiniz.
 
-`CPrintDialogEx::GetDefaults` Üye işlevi, geçerli bir yazıcı Varsayılanları iletişim kutusu görüntülenmeden almak için kullanışlıdır. Bu yöntem, kullanıcı etkileşimi gerektirir.
+`CPrintDialogEx::GetDefaults` Üye işlevi, geçerli yazıcı varsayılanlarını bir iletişim kutusu görüntülemeden almak için yararlıdır. Bu yöntem için Kullanıcı etkileşimi gerekmez.
 
-Windows kullanabileceğiniz `CommDlgExtendedError` işlevi bir hata iletişim kutusunun başlatma sırasında oluşup oluşmadığını belirleyin ve hata hakkında daha fazla bilgi edinin. Bu işlev hakkında daha fazla bilgi için Windows SDK'sı bakın.
+İletişim kutusunun başlatılması sırasında hata `CommDlgExtendedError` oluşup oluşmadığını ve hata hakkında daha fazla bilgi için Windows işlevini kullanabilirsiniz. Bu işlev hakkında daha fazla bilgi için Windows SDK bakın.
 
-Kullanma hakkında daha fazla bilgi için `CPrintDialogEx`, bkz: [ortak iletişim kutusu sınıfları](../../mfc/common-dialog-classes.md).
+Kullanma `CPrintDialogEx`hakkında daha fazla bilgi için bkz. [ortak iletişim kutusu sınıfları](../../mfc/common-dialog-classes.md).
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -128,11 +128,11 @@ Kullanma hakkında daha fazla bilgi için `CPrintDialogEx`, bkz: [ortak iletişi
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxdlgs.h
+**Üstbilgi:** afxdlgs. h
 
-##  <a name="cprintdialogex"></a>  CPrintDialogEx::CPrintDialogEx
+##  <a name="cprintdialogex"></a>CPrintDialogEx::CPrintDialogEx
 
-Bir Windows Print özellik sayfası oluşturur.
+Windows yazdırma özellik sayfası oluşturur.
 
 ```
 CPrintDialogEx(
@@ -142,19 +142,19 @@ CPrintDialogEx(
 
 ### <a name="parameters"></a>Parametreler
 
-*CertOpenStore*<br/>
-Bit düzeyinde OR işleci kullanılarak birleştirilen iletişim kutusunun ayarlarını özelleştirmek için kullanabileceğiniz bir veya daha fazla bayraklar. Örneğin, PD_ALLPAGES bayrağı, tüm belge sayfaları varsayılan yazdırma aralığı ayarlar. Bkz: [PRINTDLGEX](/windows/desktop/api/commdlg/ns-commdlg-tagpdexa) yapısı içinde bu bayraklar hakkında daha fazla bilgi için Windows SDK'sı.
+*dwFlags*<br/>
+Bit düzeyinde OR işleci kullanılarak birleştirilen iletişim kutusunun ayarlarını özelleştirmek için kullanabileceğiniz bir veya daha fazla bayrak. Örneğin, PD_ALLPAGES bayrağı varsayılan yazdırma aralığını belgenin tüm sayfalarına ayarlar. Bu bayraklar hakkında daha fazla bilgi için Windows SDK [PRINTDLGEX](/windows/desktop/api/commdlg/ns-commdlg-tagpdexa) yapısına bakın.
 
 *pParentWnd*<br/>
-İletişim kutusunun üst veya sahip penceresine bir işaretçi.
+İletişim kutusunun üst veya sahip penceresine yönelik bir işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi yalnızca bir nesne oluşturur. Kullanım `DoModal` iletişim kutusunu görüntülemek için üye işlevi.
+Bu üye işlevi yalnızca nesnesini oluşturur. İletişim kutusunu göstermek için üyeişlevinikullanın.`DoModal`
 
-##  <a name="createprinterdc"></a>  CPrintDialogEx::CreatePrinterDC
+##  <a name="createprinterdc"></a>CPrintDialogEx:: CreatePrinterDC
 
-Bir yazıcı cihaz bağlamı (DC) oluşturur [DEVMODE](/windows/desktop/api/wingdi/ns-wingdi-_devicemodea) ve [DEVNAMES](/windows/desktop/api/commdlg/ns-commdlg-tagdevnames) yapıları.
+[DEVMODE](/windows/win32/api/wingdi/ns-wingdi-devmodea) ve [DEVNAMES](/windows/desktop/api/commdlg/ns-commdlg-tagdevnames) yapılarından bir yazıcı cihaz bağlamı (DC) oluşturur.
 
 ```
 HDC CreatePrinterDC();
@@ -162,17 +162,17 @@ HDC CreatePrinterDC();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yeni oluşturulan yazıcı cihaz bağlamına işleyin.
+Yeni oluşturulan yazıcı cihaz bağlamına yönelik tanıtıcı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Döndürülen etki alanı denetleyicisi de depolanan `hDC` üyesi [m_pdex](#m_pdex).
+Döndürülen DC, `hDC` [m_pdex](#m_pdex)üyesinde de depolanır.
 
-Bu DC'nin geçerli yazıcı DC olarak kabul edilir ve daha önce edindiğiniz diğer yazıcı DC'leri silinmesi gerekir. Bu işlev çağrılabilir ve Yazdır iletişim kutusu görüntülenmeden elde edilen DC kullanılır.
+Bu DC 'nin geçerli yazıcı DC olduğu varsayılır ve daha önce edinilen diğer yazıcı DC 'leri silinmelidir. Bu işlev çağrılabilir ve yazdırma iletişim kutusu görüntülenmeden, sonuçta elde edilen DC kullanılır.
 
-##  <a name="domodal"></a>  CPrintDialogEx::DoModal
+##  <a name="domodal"></a>CPrintDialogEx::D oModal
 
-Windows yazdırma özellik sayfasını görüntüleyin ve kopyalar, sayfa aralığı sayısı gibi çeşitli yazdırma seçeneklerini seçmesini sağlamak için bu işlevi çağırın ve kopya Harmanlanmış.
+Windows yazdırma özelliği sayfasını göstermek ve kullanıcının kopya sayısı, sayfa aralığı ve kopyaların harmanlanmasının gerekip gerekmediğini belirlemek için bu işlevi çağırın.
 
 ```
 virtual INT_PTR DoModal();
@@ -180,19 +180,19 @@ virtual INT_PTR DoModal();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-INT_PTR dönüş değeri gerçekten HRESULT:. Dönüş değerleri bölümüne bakın [PrintDlgEx](/previous-versions/windows/desktop/legacy/ms646942\(v=vs.85\)) Windows SDK.
+INT_PTR dönüş değeri aslında HRESULT olur. Windows SDK içindeki [PrintDlgEx](/previous-versions/windows/desktop/legacy/ms646942\(v=vs.85\)) Içindeki dönüş değerleri bölümüne bakın.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çeşitli Yazdır iletişim kutusu seçenekleri üyeleri ayarlayarak başlatmak istiyorsanız `m_pdex` yapısı, bunu çağırmadan önce yapmalısınız `DoModal`, ancak iletişim nesnesi oluşturulur.
+`m_pdex` Yapının üyelerini ayarlayarak çeşitli yazdırma iletişim kutusu seçeneklerini başlatmak isterseniz, bunu çağırmadan `DoModal`önce, ancak iletişim kutusu nesnesi oluşturulduktan sonra yapmanız gerekir.
 
-Arama sonra `DoModal`, diğer üye işlevleri, kullanıcı giriş bilgileri ve Ayarları iletişim kutusuna alınacak çağırabilirsiniz.
+Öğesini çağırdıktan `DoModal`sonra, Kullanıcı tarafından iletişim kutusuna ayarları veya bilgi girişini almak için diğer üye işlevlerini çağırabilirsiniz.
 
-Çağrılırken PD_RETURNDC bayrağı kullanılırsa `DoModal`, yazıcı DC içinde döndürülen `hDC` üyesi [m_pdex](#m_pdex). Bu DC çağrısı ile serbest bırakılmalıdır [DeleteDC](/windows/desktop/api/wingdi/nf-wingdi-deletedc) çağıran tarafından `CPrintDialogEx`.
+Çağrılırken `DoModal`pd_returndc bayrağı kullanılırsa, `hDC` [m_pdex](#m_pdex)üyesine bir yazıcı DC 'si döndürülür. Bu DC, çağıran `CPrintDialogEx`tarafından bir [DeleteDC](/windows/desktop/api/wingdi/nf-wingdi-deletedc) çağrısıyla serbest bırakılmalıdır.
 
-##  <a name="getcopies"></a>  CPrintDialogEx::GetCopies
+##  <a name="getcopies"></a>CPrintDialogEx:: Getkopyaların
 
-Çağırdıktan sonra bu işlevi çağırın `DoModal` istenen kopya sayısı alınamıyor.
+İstenen kopya sayısını almak için `DoModal` çağrıldıktan sonra bu işlevi çağırın.
 
 ```
 int GetCopies() const;
@@ -202,9 +202,9 @@ int GetCopies() const;
 
 İstenen kopya sayısı.
 
-##  <a name="getdefaults"></a>  CPrintDialogEx::GetDefaults
+##  <a name="getdefaults"></a>CPrintDialogEx:: GetDefaults
 
-Varsayılan yazıcı cihaz varsayılan bir iletişim kutusu görüntülenmeden almak için bu işlevi çağırın.
+Bir iletişim kutusu görüntülemeden varsayılan yazıcının cihaz varsayılanlarını almak için bu işlevi çağırın.
 
 ```
 BOOL GetDefaults();
@@ -212,19 +212,19 @@ BOOL GetDefaults();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı, aksi takdirde FALSE ise TRUE.
+Başarılı olursa TRUE, aksi durumda FALSE.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir yazıcı cihaz bağlamı (DC) oluşturur [DEVMODE](/windows/desktop/api/wingdi/ns-wingdi-_devicemodea) ve [DEVNAMES](/windows/desktop/api/commdlg/ns-commdlg-tagdevnames) yapıları.
+[DEVMODE](/windows/win32/api/wingdi/ns-wingdi-devmodea) ve [DEVNAMES](/windows/desktop/api/commdlg/ns-commdlg-tagdevnames) yapılarından bir yazıcı cihaz bağlamı (DC) oluşturur.
 
-`GetDefaults` Print özellik sayfası görüntülenmez. Bunun yerine, ayarlar `hDevNames` ve `hDevMode` üyeleri [m_pdex](#m_pdex) tanıtıcıları için [DEVMODE](/windows/desktop/api/wingdi/ns-wingdi-_devicemodea) ve [DEVNAMES](/windows/desktop/api/commdlg/ns-commdlg-tagdevnames) için başlatılan yapıları Sistem varsayılan yazıcı. Her ikisi de `hDevNames` ve `hDevMode` NULL olmalı veya `GetDefaults` başarısız olur.
+`GetDefaults`Yazdırma özelliği sayfasını görüntülemez. Bunun `hDevNames` yerine, [](#m_pdex) m_pdex `hDevMode` üyelerini, sistem varsayılan yazıcısı için başlatılan [DEVMODE](/windows/win32/api/wingdi/ns-wingdi-devmodea) ve [DEVNAMES](/windows/desktop/api/commdlg/ns-commdlg-tagdevnames) yapılarına işleyecek şekilde ayarlar. Her ikisi de `hDevNames` null veya `GetDefaults` başarısız olmalıdır.`hDevMode`
 
-PD_RETURNDC bayrağı ayarlandıysa, bu işlev değil yalnızca döndürür `hDevNames` ve `hDevMode` (bulunan `m_pdex.hDevNames` ve `m_pdex.hDevMode`) çağırana, ancak ayrıca yazıcıya DC döndürür `m_pdex.hDC`. DC yazıcı silip Windows çağrı çağıranın sorumluluğundadır [GlobalFree](/windows/desktop/api/winbase/nf-winbase-globalfree) işlevi ile işiniz bittiğinde tutamaçları üzerinde `CPrintDialogEx` nesne.
+Pd_returndc bayrağı ayarlandıysa, bu işlev yalnızca `hDevNames` çağırana geri dönmez ve `hDevMode` (ve `m_pdex.hDevMode`içinde `m_pdex.hDevNames` bulunur), Ayrıca, içinde `m_pdex.hDC`bir yazıcı DC 'si döndürür. Bu, çağıranın yazıcı DC 'sini silme ve `CPrintDialogEx` nesne ile işiniz bittiğinde Tanıtıcılarda Windows [GlobalFree](/windows/desktop/api/winbase/nf-winbase-globalfree) işlevini çağırma sorumluluğundadır.
 
-##  <a name="getdevicename"></a>  CPrintDialogEx::GetDeviceName
+##  <a name="getdevicename"></a>CPrintDialogEx:: Getaygıtadı
 
-Çağırdıktan sonra bu işlevi çağırın [DoModal](#domodal) şu anda seçili yazıcının veya arama sonra adı almak için [GetDefaults](#getdefaults) varsayılan yazıcının adını almak için.
+Şu anda seçili olan yazıcının adını almak için [DoModal](#domodal) çağrıldıktan sonra veya varsayılan yazıcının adını almak Için [GetDefaults](#getdefaults) çağrıldıktan sonra bu işlevi çağırın.
 
 ```
 CString GetDeviceName() const;
@@ -232,15 +232,15 @@ CString GetDeviceName() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Seçili yazıcının adı.
+Şu anda seçili olan yazıcının adı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir işaretçi kullanın `CString` tarafından döndürülen nesne `GetDeviceName` değeri olarak `lpszDeviceName` çağrıda [CDC::CreateDC](../../mfc/reference/cdc-class.md#createdc).
+`CString` [CDC:: CreateDC](../../mfc/reference/cdc-class.md#createdc)çağrısında değeri `GetDeviceName` `lpszDeviceName` olarak döndürülen nesneye yönelik bir işaretçi kullanın.
 
-##  <a name="getdevmode"></a>  CPrintDialogEx::GetDevMode
+##  <a name="getdevmode"></a>CPrintDialogEx:: GetDevMode
 
-Çağırdıktan sonra bu işlevi çağırın [DoModal](#domodal) veya [GetDefaults](#getdefaults) yazdırma cihaz hakkında bilgi almak için.
+Yazdırma aygıtı hakkında bilgi almak için [DoModal](#domodal) veya [GetDefaults](#getdefaults) çağrıldıktan sonra bu işlevi çağırın.
 
 ```
 LPDEVMODE GetDevMode() const;
@@ -248,11 +248,11 @@ LPDEVMODE GetDevMode() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-[DEVMODE](/windows/desktop/api/wingdi/ns-wingdi-_devicemodea) cihaz başlatma ve yazdırma sürücüsü ortamı hakkında bilgi içeren veri yapısı. Windows ile bu yapı tarafından gerçekleştirilecek bellek kilidini açmanız gerekir [GlobalUnlock](/windows/desktop/api/winbase/nf-winbase-globalunlock) Windows SDK'da açıklanan işlevi.
+Cihaz başlatma ve yazdırma sürücüsünün ortamı hakkında bilgi içeren [DEVMODE](/windows/win32/api/wingdi/ns-wingdi-devmodea) veri yapısı. Windows SDK açıklanan Windows [GlobalUnlock](/windows/desktop/api/winbase/nf-winbase-globalunlock) işleviyle bu yapı tarafından alınan belleğin kilidini açmanız gerekir.
 
-##  <a name="getdrivername"></a>  CPrintDialogEx::GetDriverName
+##  <a name="getdrivername"></a>CPrintDialogEx:: Getsürücüadı
 
-Çağırdıktan sonra bu işlevi çağırın [DoModal](#domodal) veya [GetDefaults](#getdefaults) sistem tarafından tanımlanan yazıcı aygıt sürücüsünün adını alamadı.
+Sistem tanımlı yazıcı cihazı sürücüsünün adını almak için [DoModal](#domodal) veya [GetDefaults](#getdefaults) çağrıldıktan sonra bu işlevi çağırın.
 
 ```
 CString GetDriverName() const;
@@ -260,15 +260,15 @@ CString GetDriverName() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-A `CString` sistem tarafından tanımlanan sürücü adı belirtme.
+Sistem tarafından tanımlanan sürücü adını belirtme.`CString`
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir işaretçi kullanın `CString` tarafından döndürülen nesne `GetDriverName` değeri olarak *lpszDriverName* çağrıda [CDC::CreateDC](../../mfc/reference/cdc-class.md#createdc).
+`CString` [CDC:: CreateDC](../../mfc/reference/cdc-class.md#createdc)çağrısında *lpszDriverName* değeri `GetDriverName` olarak döndürülen nesneye yönelik bir işaretçi kullanın.
 
-##  <a name="getportname"></a>  CPrintDialogEx::GetPortName
+##  <a name="getportname"></a>CPrintDialogEx:: GetPortName
 
-Çağırdıktan sonra bu işlevi çağırın [DoModal](#domodal) veya [GetDefaults](#getdefaults) seçili yazıcı bağlantı noktasını adını almak için.
+Şu anda seçili olan yazıcı bağlantı noktasının adını almak için [DoModal](#domodal) veya [GetDefaults](#getdefaults) çağrıldıktan sonra bu işlevi çağırın.
 
 ```
 CString GetPortName() const;
@@ -276,11 +276,11 @@ CString GetPortName() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Şu anda seçili yazıcı bağlantı noktasını adı.
+Şu anda seçili olan yazıcı bağlantı noktasının adı.
 
-##  <a name="getprinterdc"></a>  CPrintDialogEx::GetPrinterDC
+##  <a name="getprinterdc"></a>CPrintDialogEx:: GetPrinterDC
 
-Yazıcı cihaz bağlamı için bir tanıtıcı döndürür.
+Yazıcı cihaz bağlamına bir tanıtıcı döndürür.
 
 ```
 HDC GetPrinterDC() const;
@@ -292,11 +292,11 @@ Yazıcı cihaz bağlamı için bir tanıtıcı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Windows çağırmalıdır [DeleteDC](/windows/desktop/api/wingdi/nf-wingdi-deletedc) işlevi işiniz bittiğinde, cihaz bağlam silmek için onu kullanarak.
+Kullanmayı bitirdiğinizde cihaz bağlamını silmek için Windows [DeleteDC](/windows/desktop/api/wingdi/nf-wingdi-deletedc) işlevini çağırmanız gerekir.
 
-##  <a name="m_pdex"></a>  CPrintDialogEx::m_pdex
+##  <a name="m_pdex"></a>CPrintDialogEx::m_pdex
 
-Üyeleri iletişim nesnesinin özelliklerini depolamak bir PRINTDLGEX yapısı.
+Üyeleri iletişim kutusu nesnesinin özelliklerini depolayan bir PRINTDLGEX yapısı.
 
 ```
 PRINTDLGEX m_pdex;
@@ -304,13 +304,13 @@ PRINTDLGEX m_pdex;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Oluşturma sonrasında bir `CPrintDialogEx` nesne kullanabileceğiniz `m_pdex` çeşitli yönlerini çağırmadan önce iletişim kutusunda ayarlanacak [DoModal](#domodal) üye işlevi. Daha fazla bilgi için `m_pdex` yapısı için bkz: [PRINTDLGEX](/windows/desktop/api/commdlg/ns-commdlg-tagpdexa) Windows SDK.
+Bir `CPrintDialogEx` nesne oluşturduktan sonra, [DoModal](#domodal) üye `m_pdex` işlevini çağırmadan önce iletişim kutusunun çeşitli yönlerini ayarlamak için kullanabilirsiniz. `m_pdex` Yapı hakkında daha fazla bilgi için Windows SDK [PRINTDLGEX](/windows/desktop/api/commdlg/ns-commdlg-tagpdexa) bakın.
 
-Değiştirirseniz `m_pdex` veri üyesi doğrudan, hiçbir varsayılan davranışı geçersiz kılar.
+`m_pdex` Veri üyesini doğrudan değiştirirseniz, varsayılan davranışı geçersiz kılarsınız.
 
-##  <a name="printall"></a>  CPrintDialogEx::PrintAll
+##  <a name="printall"></a>CPrintDialogEx::P Rinyüksekliğinde
 
-Çağırdıktan sonra bu işlevi çağırın `DoModal` belgedeki tüm sayfalarını yazdırma belirlemek için.
+Belgedeki tüm sayfaların yazdırılması gerekip `DoModal` gerekmediğini anlamak için çağrıldıktan sonra bu işlevi çağırın.
 
 ```
 BOOL PrintAll() const;
@@ -318,11 +318,11 @@ BOOL PrintAll() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Belgedeki tüm sayfalar yazdırılır ise TRUE; Aksi durumda FALSE.
+Belgedeki tüm sayfalar yazdırıldıysa TRUE; Aksi halde yanlış.
 
-##  <a name="printcollate"></a>  CPrintDialogEx::PrintCollate
+##  <a name="printcollate"></a>CPrintDialogEx::P rintCollate
 
-Çağırdıktan sonra bu işlevi çağırın `DoModal` yazıcı belge yazdırılan tüm kopyalarını collate olup olmadığını belirlemek için.
+Yazıcının belgenin tüm yazdırılan kopyalarını `DoModal` harmanlamaları gerekip gerekmediğini belirleme ' yı çağırdıktan sonra bu işlevi çağırın.
 
 ```
 BOOL PrintCollate() const;
@@ -330,11 +330,11 @@ BOOL PrintCollate() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Kullanıcı iletişim kutusundaki collate onay kutusunu seçer TRUE; Aksi durumda FALSE.
+Kullanıcı iletişim kutusunda Harmanla onay kutusunu seçerse TRUE; Aksi halde yanlış.
 
-##  <a name="printcurrentpage"></a>  CPrintDialogEx::PrintCurrentPage
+##  <a name="printcurrentpage"></a>CPrintDialogEx::P rintCurrentPage
 
-Çağırdıktan sonra bu işlevi çağırın `DoModal` belgedeki geçerli sayfayı yazdır belirlemek için.
+Geçerli sayfanın belgede yazdırılması gerekip `DoModal` gerekmediğini anlamak için bu işlevi çağırın.
 
 ```
 BOOL PrintCurrentPage() const;
@@ -342,11 +342,11 @@ BOOL PrintCurrentPage() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-TRUE ise **geçerli sayfayı Yazdır** olduğu yazdırma iletişim kutusunda seçili; Aksi takdirde FALSE.
+Yazdır iletişim kutusunda **geçerli sayfayı yazdır** seçiliyse true; Aksi halde yanlış.
 
-##  <a name="printrange"></a>  CPrintDialogEx::PrintRange
+##  <a name="printrange"></a>CPrintDialogEx::P rintRange
 
-Çağırdıktan sonra bu işlevi çağırın `DoModal` yalnızca bir dizi belgedeki sayfa yazdırma belirlemek için.
+Belgedeki yalnızca bir sayfa aralığını `DoModal` yazdırıp yazdırmayacağını anlamak için çağrıldıktan sonra bu işlevi çağırın.
 
 ```
 BOOL PrintRange() const;
@@ -354,15 +354,15 @@ BOOL PrintRange() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir belgedeki sayfa aralığı yalnızca yazdırılması için TRUE; Aksi durumda FALSE.
+Yalnızca belgedeki bir sayfa aralığının yazdırılması gerekiyorsa TRUE; Aksi halde yanlış.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Belirtilen sayfa aralıklarını gelen belirlenebilir [m_pdex](#m_pdex) (bkz `nPageRanges`, `nMaxPageRanges`, ve `lpPageRanges` içinde [PRINTDLGEX](/windows/desktop/api/commdlg/ns-commdlg-tagpdexa) Windows SDK'sındaki yapısı).
+Belirtilen sayfa aralıkları [m_pdex](#m_pdex) ' dan `nPageRanges`belirlenebilir (Windows SDK, `nMaxPageRanges`, ve `lpPageRanges` [PRINTDLGEX](/windows/desktop/api/commdlg/ns-commdlg-tagpdexa) yapısında bkz.).
 
-##  <a name="printselection"></a>  CPrintDialogEx::PrintSelection
+##  <a name="printselection"></a>CPrintDialogEx::P rintSelection
 
-Çağırdıktan sonra bu işlevi çağırın `DoModal` yalnızca şu anda seçtiğiniz öğelerin yazdırma belirlemek için.
+Yalnızca şu anda seçili olan `DoModal` öğelerin yazdırılması gerekip gerekmediğini anlamak için çağrıldıktan sonra bu işlevi çağırın.
 
 ```
 BOOL PrintSelection() const;
@@ -370,7 +370,7 @@ BOOL PrintSelection() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Seçili öğeleri yazdırılması, yalnızca TRUE; Aksi durumda FALSE.
+Yalnızca seçilen öğeler yazdırılabiliyorsa TRUE; Aksi halde yanlış.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

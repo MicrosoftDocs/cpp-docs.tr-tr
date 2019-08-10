@@ -26,19 +26,19 @@ helpviewer_keywords:
 - CGopherFileFind [MFC], GetScreenName
 - CGopherFileFind [MFC], IsDots
 ms.assetid: 8465a979-6323-496d-ab4b-e81383fb999d
-ms.openlocfilehash: bced5a95f65713915a1f06094bfe059db79aab2d
-ms.sourcegitcommit: ecf274bcfe3a977c48745aaa243e5e731f1fdc5f
+ms.openlocfilehash: 31b013a14f24dcd59b9e7f23bc5284d882039990
+ms.sourcegitcommit: 46d24d6e70c03e05484923d9efc6ed5150e96a64
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "66503634"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68916185"
 ---
 # <a name="cgopherfilefind-class"></a>CGopherFileFind sınıfı
 
-Gopher sunucularına, Internet dosyası aramalarındaki Yardımcıları.
+Gopher sunucularının Internet dosya aramalarında yardımlıklar.
 
 > [!NOTE]
->  Sınıfları `CGopherConnection`, `CGopherFile`, `CGopherFileFind`, `CGopherLocator` ve üyeleri bırakılmıştır, Windows XP platformu üzerinde çalışmaz, ancak önceki platformları üzerinde çalışmaya devam eder.
+>  Sınıflar `CGopherConnection`, `CGopherFile`, veüyeleriWindows`CGopherLocator` XP platformunda çalışmadıklarından kullanım dışı bırakılmıştır, ancak önceki platformlarda çalışmaya devam ederler. `CGopherFileFind`
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -52,30 +52,30 @@ class CGopherFileFind : public CFileFind
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[CGopherFileFind::CGopherFileFind](#cgopherfilefind)|Oluşturur bir `CGopherFileFind` nesne.|
+|[CGopherFileFind:: CGopherFileFind](#cgopherfilefind)|Bir `CGopherFileFind` nesnesi oluşturur.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[CGopherFileFind::FindFile](#findfile)|Bir gopher sunucusunda bir dosya bulur.|
-|[CGopherFileFind::FindNextFile](#findnextfile)|Bir önceki çağrıya bir dosya aramaya devam [FindFile](#findfile).|
-|[CGopherFileFind::GetCreationTime](#getcreationtime)|Belirtilen dosyanın oluşturulduğu saati alır.|
-|[CGopherFileFind::GetLastAccessTime](#getlastaccesstime)|Belirtilen dosya son erişilme zamanı alır.|
-|[CGopherFileFind::GetLastWriteTime](#getlastwritetime)|Belirtilen dosya için son yazıldığı zaman alır.|
-|[CGopherFileFind::GetLength](#getlength)|Bulunan dosyasının bayt cinsinden uzunluğunu alır.|
-|[CGopherFileFind::GetLocator](#getlocator)|Alma bir `CGopherLocator` nesne.|
-|[CGopherFileFind::GetScreenName](#getscreenname)|Bir gopher ekran adını alır.|
-|[CGopherFileFind::IsDots](#isdots)|Dosyaları aracılığıyla yineleme sırasında geçerli dizin ve üst dizini işaretlerinin sınar.|
+|[CGopherFileFind:: FindFile](#findfile)|Gopher sunucusunda bir dosya bulur.|
+|[CGopherFileFind:: FindNextFile](#findnextfile)|Önceki bir [FindFile](#findfile)çağrısından bir dosya aramaya devam eder.|
+|[CGopherFileFind:: GetCreationTime](#getcreationtime)|Belirtilen dosyanın oluşturulduğu saati alır.|
+|[CGopherFileFind:: GetLastAccessTime](#getlastaccesstime)|Belirtilen dosyanın son erişildiği saati alır.|
+|[CGopherFileFind:: GetLastWriteTime](#getlastwritetime)|Belirtilen dosyanın son yazıldığı saati alır.|
+|[CGopherFileFind:: GetLength](#getlength)|Bulunan dosyanın uzunluğunu bayt cinsinden alır.|
+|[CGopherFileFind:: GetLocator](#getlocator)|Bir `CGopherLocator` nesne alın.|
+|[CGopherFileFind:: GetScreenName](#getscreenname)|Bir gopher ekranının adını alır.|
+|[CGopherFileFind:: ısnoktalar](#isdots)|Dosyalar arasında yineleme yaparken geçerli dizin ve üst dizin işaretleyicilerini sınar.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-`CGopherFileFind` bir arama başlatır, bir dosyayı bulun ve dönüş bir dosyanın URL'si üye işlevleri içerir.
+`CGopherFileFind`arama işlemine başlayan üye işlevlerini içerir, dosyayı bulur ve bir dosyanın URL 'sini döndürür.
 
-Internet ve Aranan yerel dosya eklemek için tasarlanmış diğer MFC sınıfları [CFtpFileFind](../../mfc/reference/cftpfilefind-class.md) ve [CFileFind](../../mfc/reference/cfilefind-class.md). İle birlikte `CGopherFileFind`, bu sınıflar, sunucu protokolü, dosya türü veya konum (yerel makine veya uzak bir sunucuya.) bağımsız olarak, belirli dosyaları bulmak kullanıcı için sorunsuz bir mekanizma sağlar. HTTP aramaları tarafından gerekli doğrudan dosyasının düzenlenmesini desteklemediği için HTTP sunucularına arama için MFC sınıfı yok olduğuna dikkat edin.
+Internet ve yerel dosya için tasarlanan diğer MFC sınıfları, [CFtpFileFind](../../mfc/reference/cftpfilefind-class.md) ve [CFileFind](../../mfc/reference/cfilefind-class.md)' i içerir. İle `CGopherFileFind`birlikte, bu sınıflar, kullanıcının sunucu protokolüne, dosya türüne veya konumdan (yerel makine ya da uzak bir sunucu) bağımsız olarak belirli dosyaları bulması için sorunsuz bir mekanizma sağlar. HTTP sunucularında arama yapmak için MFC sınıfı olmadığını unutmayın çünkü HTTP, aramalar için gereken doğrudan dosya işlemesini desteklemez.
 
 > [!NOTE]
-> `CGopherFileFind` Aşağıdaki üye işlevleri kendi taban sınıfının desteklemiyor [CFileFind](../../mfc/reference/cfilefind-class.md):
+> `CGopherFileFind`, temel sınıfının [CFileFind](../../mfc/reference/cfilefind-class.md)öğesinin aşağıdaki üye işlevlerini desteklemez:
 
 - [GetRoot](../../mfc/reference/cfilefind-class.md#getroot)
 
@@ -87,9 +87,9 @@ Internet ve Aranan yerel dosya eklemek için tasarlanmış diğer MFC sınıflar
 
 - [GetFileURL](../../mfc/reference/cfilefind-class.md#getfileurl)
 
-Ayrıca, ile kullanıldığında `CGopherFileFind`, `CFileFind` üye işlevi [IsDots](../../mfc/reference/cfilefind-class.md#isdots) her zaman false'tur.
+Ayrıca, ile birlikte `CGopherFileFind`kullanıldığında `CFileFind` , üye işlevi [ısnoktalarla](../../mfc/reference/cfilefind-class.md#isdots) her zaman false olur.
 
-Nasıl kullanılacağı hakkında daha fazla bilgi için `CGopherFileFind` ve diğer WinINet sınıfları başlıklı makaleye bakın [Winınet'in Internet programlama](../../mfc/win32-internet-extensions-wininet.md).
+Ve diğer WinINet sınıflarının kullanımı `CGopherFileFind` hakkında daha fazla bilgi için bkz. [Wininet ile Internet programlama](../../mfc/win32-internet-extensions-wininet.md)makalesi.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -101,11 +101,11 @@ Nasıl kullanılacağı hakkında daha fazla bilgi için `CGopherFileFind` ve di
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxinet.h
+**Üstbilgi:** AFXINET. h
 
-##  <a name="cgopherfilefind"></a>  CGopherFileFind::CGopherFileFind
+##  <a name="cgopherfilefind"></a>CGopherFileFind:: CGopherFileFind
 
-Bu üye işlevi oluşturmak için çağrılan bir `CGopherFileFind` nesne.
+Bu üye işlevi bir `CGopherFileFind` nesne oluşturmak için çağırılır.
 
 ```
 explicit CGopherFileFind(
@@ -116,18 +116,18 @@ explicit CGopherFileFind(
 ### <a name="parameters"></a>Parametreler
 
 *pConnection*<br/>
-Bir işaretçi bir [CGopherConnection](../../mfc/reference/cgopherconnection-class.md) nesne.
+[CGopherConnection](../../mfc/reference/cgopherconnection-class.md) nesnesine yönelik bir işaretçi.
 
 *dwContext*<br/>
-İşlem bağlamı tanımlayıcısı. Bkz: **açıklamalar** hakkında daha fazla bilgi için *dwContext*.
+İşlemin bağlam tanımlayıcısı. *DwContext*hakkında daha fazla bilgi için bkz. **açıklamalar** .
 
 ### <a name="remarks"></a>Açıklamalar
 
-İçin varsayılan değer *dwContext* MFC'ye tarafından gönderilen `CGopherFileFind` nesnesinden [Cınternetsession](../../mfc/reference/cinternetsession-class.md) oluşturulan nesne `CGopherFileFind` nesne. Oluşturduğunuzda bir `CGopherFileFind` nesne bağlamı tanımlayıcısını bir değere ayarlamak için varsayılan kılabilir. İçerik tanımlayıcısı döndürülür [CInternetSession::OnStatusCallback](../../mfc/reference/cinternetsession-class.md#onstatuscallback) durumu ile belirtilen nesneye sağlamak için. Makaleye göz atın [Internet ilk adımlar: WinINet](../../mfc/wininet-basics.md) bağlam tanımlayıcısı hakkında daha fazla bilgi.
+*DwContext* için varsayılan değer, MFC `CGopherFileFind` tarafından `CGopherFileFind` nesneyi oluşturan [CInternetSession](../../mfc/reference/cinternetsession-class.md) nesnesinden nesnesine gönderilir. Bir `CGopherFileFind` nesne oluşturduğunuzda, bağlam tanımlayıcıyı seçtiğiniz bir değere ayarlamak için varsayılanı geçersiz kılabilirsiniz. Bağlam tanımlayıcısı, tanımlanan nesne üzerinde durum sağlamak için [CInternetSession:: OnStatusCallback](../../mfc/reference/cinternetsession-class.md#onstatuscallback) öğesine döndürülür. Bkz. [Internet ilk adımlar: Bağlam](../../mfc/wininet-basics.md) tanımlayıcısı hakkında daha fazla bilgi için WinINet.
 
-##  <a name="findfile"></a>  CGopherFileFind::FindFile
+##  <a name="findfile"></a>CGopherFileFind:: FindFile
 
-Bir gopher dosyayı bulmak için bu üye işlevini çağırın.
+Bir gopher dosyası bulmak için bu üye işlevini çağırın.
 
 ```
 virtual BOOL FindFile(
@@ -143,33 +143,33 @@ virtual BOOL FindFile(
 ### <a name="parameters"></a>Parametreler
 
 *refLocator*<br/>
-Bir başvuru bir [CGopherLocator](../../mfc/reference/cgopherlocator-class.md) nesne.
+[CGopherLocator](../../mfc/reference/cgopherlocator-class.md) nesnesine bir başvuru.
 
 *pstrString*<br/>
 Dosya adını içeren bir dize işaretçisi.
 
-*CertOpenStore*<br/>
-Bu oturumda nasıl ele alınacağını açıklayan bayrakları. Geçerli bayraklar:
+*dwFlags*<br/>
+Bu oturumun nasıl işleneceğini açıklayan bayraklar. Geçerli bayraklar şunlardır:
 
-- INTERNET_FLAG_RELOAD veri alma Uzak sunucudan bile yerel olarak önbelleğe alınır.
+- INTERNET_FLAG_RELOAD yerel olarak önbelleğe alınmış olsa bile, uzak sunucudan verileri alın.
 
-- INTERNET_FLAG_DONT_CACHE önbelleğe almaz verileri yerel olarak veya herhangi bir ağ geçidi.
+- INTERNET_FLAG_DONT_CACHE, yerel olarak veya herhangi bir ağ geçidi içinde verileri önbelleğe almaz.
 
-- Güvenli Yuva Katmanı veya yüzdesi Tel üzerinde güvenli işlemler INTERNET_FLAG_SECURE iste Bu bayrağı yalnızca HTTP istekleri için geçerlidir.
+- INTERNET_FLAG_SECURE veya PCT ile tel karşı güvenli işlem Istekleri Güvenli Yuva Katmanı. Bu bayrak yalnızca HTTP istekleri için geçerlidir.
 
-- INTERNET_FLAG_USE_EXISTING varsa mümkün tekrar sunucuya varolan bağlantılar yeni `FindFile` her istek için yeni bir oturum oluşturmak yerine istekleri.
+- INTERNET_FLAG_USE_EXISTING, mümkünse, her istek için yeni bir oturum oluşturmak yerine yeni `FindFile` istekler için sunucuya mevcut bağlantıları yeniden kullanın.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa sıfır dışı; Aksi durumda 0. Genişletilmiş hata bilgilerini almak için Win32 işlevini çağırmak [GetLastError](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror).
+Başarılı olursa sıfır dışı; Aksi takdirde 0. Genişletilmiş hata bilgilerini almak için, WIN32 işlevini çağırın [](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror).
 
 ### <a name="remarks"></a>Açıklamalar
 
-Arama sonra `FindFile` ilk gopher nesnesini almak için çağırabilirsiniz ['larını](#findnextfile) sonraki gopher dosyaları almak için.
+İlk Gopher `FindFile` nesnesini almak için çağrıldıktan sonra, sonraki Gopher dosyalarını almak için [FindNextFile](#findnextfile) öğesini çağırabilirsiniz.
 
-##  <a name="findnextfile"></a>  CGopherFileFind::FindNextFile
+##  <a name="findnextfile"></a>CGopherFileFind:: FindNextFile
 
-Bu üye işlevi çağrısı ile başlamış bir dosya aramaya devam etmek için arama [CGopherFileFind::FindFile](#findfile).
+Bir dosya aramasının bir [CGopherFileFind:: FindFile](#findfile)çağrısıyla çalışmaya devam etmesi için bu üye işlevini çağırın.
 
 ```
 virtual BOOL FindNextFile();
@@ -177,11 +177,11 @@ virtual BOOL FindNextFile();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Daha fazla dosya yoksa sıfır; sıfır. dosya bulundu sonuncu dizininde olması veya bir hata oluştu. Genişletilmiş hata bilgilerini almak için Win32 işlevini çağırmak [GetLastError](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror). Son dosya dizininde dosyası bulunamadı veya hiçbir eşleşen dosyaları bulunabilir, `GetLastError` ERROR_NO_MORE_FILES işlevi döndürür.
+Daha fazla dosya varsa sıfır dışı; Dosya, dizinde sonuncu ise veya bir hata oluştuysa sıfır olur. Genişletilmiş hata bilgilerini almak için, WIN32 işlevini çağırın [](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror). Bulunan dosya dizindeki son dosya ise veya eşleşen dosya bulunamazsa `GetLastError` , işlev ERROR_NO_MORE_FILES döndürür.
 
-##  <a name="getcreationtime"></a>  CGopherFileFind::GetCreationTime
+##  <a name="getcreationtime"></a>CGopherFileFind:: GetCreationTime
 
-Geçerli dosya için oluşturulma zamanını alır.
+Geçerli dosyanın oluşturulma saatini alır.
 
 ```
 virtual BOOL GetCreationTime(FILETIME* pTimeStamp) const;
@@ -191,25 +191,25 @@ virtual BOOL GetCreationTime(CTime& refTime) const;
 ### <a name="parameters"></a>Parametreler
 
 *pTimeStamp*<br/>
-Bir işaretçi bir [FILETIME](/windows/desktop/api/minwinbase/ns-minwinbase-filetime) yapısı içeren dosyanın oluşturulduğu zaman.
+Dosya oluşturulduğu saati içeren bir [filetime](/windows/desktop/api/minwinbase/ns-minwinbase-filetime) yapısına yönelik işaretçi.
 
 *refTime*<br/>
-Bir başvuru bir [CTime](../../atl-mfc-shared/reference/ctime-class.md) nesne.
+[CTime](../../atl-mfc-shared/reference/ctime-class.md) nesnesine bir başvuru.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa sıfır dışı; işlem başarısız olursa 0. `GetCreationTime` yalnızca 0 döndürür ['larını](#findnextfile) hiçbir zaman bu çağrıldıktan `CGopherFileFind` nesne.
+Başarılı olursa sıfır dışı; başarısız ise 0. `GetCreationTime`Bu`CGopherFileFind` nesnede [FindNextFile](#findnextfile) hiç çağrılmadıysa 0 değerini döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çağırmalısınız ['larını](#findnextfile) çağırmadan önce en az bir kez `GetCreationTime`.
+Çağrılmadan`GetCreationTime`önce [FindNextFile](#findnextfile) öğesini en az bir kez çağırmanız gerekir.
 
 > [!NOTE]
->  Tüm dosya sistemleri, bu işlev tarafından döndürülen zaman damgası uygulamak için aynı semantiğe kullanın. Bu işlev, temel alınan dosya sistemi veya sunucu zaman öznitelik tutma desteklemiyorsa, diğer zaman damgası işlevleri tarafından döndürülen aynı değer döndürebilir. Bkz: [WIN32_FIND_DATA](/windows/desktop/api/minwinbase/ns-minwinbase-_win32_find_dataa) yapısı saat biçimleri hakkında bilgi için. Bazı işletim sistemlerinde, döndürülen saat dilimi yerel makineye olan dosyasının bulunduğu saat şöyledir. Win32 bkz [FileTimeToLocalFileTime](/windows/desktop/api/fileapi/nf-fileapi-filetimetolocalfiletime) API daha fazla bilgi için.
+>  Tüm dosya sistemleri bu işlev tarafından döndürülen zaman damgasını uygulamak için aynı semantiğini kullanmaz. Bu işlev, temeldeki dosya sistemi veya sunucusu zaman özniteliğini tutmayı desteklemiyorsa, diğer zaman damgası işlevleri tarafından döndürülen değeri döndürebilir. Zaman biçimleri hakkında bilgi için bkz. [Win32_FIND_DATA](/windows/desktop/api/minwinbase/ns-minwinbase-win32_find_dataa) yapısı. Bazı işletim sistemlerinde döndürülen süre, makinenin yerel olarak bulunduğu saat dilimindedir. Daha fazla bilgi için bkz. Win32 [FileTimeToLocalFileTime](/windows/desktop/api/fileapi/nf-fileapi-filetimetolocalfiletime) API.
 
-##  <a name="getlastaccesstime"></a>  CGopherFileFind::GetLastAccessTime
+##  <a name="getlastaccesstime"></a>CGopherFileFind:: GetLastAccessTime
 
-Belirtilen dosya son erişilme zamanı alır.
+Belirtilen dosyanın son erişildiği saati alır.
 
 ```
 virtual BOOL GetLastAccessTime(CTime& refTime) const;
@@ -219,25 +219,25 @@ virtual BOOL GetLastAccessTime(FILETIME* pTimeStamp) const;
 ### <a name="parameters"></a>Parametreler
 
 *refTime*<br/>
-Bir başvuru bir [CTime](../../atl-mfc-shared/reference/ctime-class.md) nesne.
+[CTime](../../atl-mfc-shared/reference/ctime-class.md) nesnesine bir başvuru.
 
 *pTimeStamp*<br/>
-Bir işaretçi bir [FILETIME](/windows/desktop/api/minwinbase/ns-minwinbase-filetime) içeren dosyanın son erişildi zaman yapısı.
+Dosyanın son erişildiği saati içeren bir [filetime](/windows/desktop/api/minwinbase/ns-minwinbase-filetime) yapısına yönelik işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa sıfır dışı; işlem başarısız olursa 0. `GetLastAccessTime` yalnızca 0 döndürür ['larını](#findnextfile) hiçbir zaman bu çağrıldıktan `CGopherFileFind` nesne.
+Başarılı olursa sıfır dışı; başarısız ise 0. `GetLastAccessTime`Bu`CGopherFileFind` nesnede [FindNextFile](#findnextfile) hiç çağrılmadıysa 0 değerini döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çağırmalısınız ['larını](#findnextfile) çağırmadan önce en az bir kez `GetLastAccessTime`.
+Çağrılmadan`GetLastAccessTime`önce [FindNextFile](#findnextfile) öğesini en az bir kez çağırmanız gerekir.
 
 > [!NOTE]
->  Tüm dosya sistemleri, bu işlev tarafından döndürülen zaman damgası uygulamak için aynı semantiğe kullanın. Bu işlev, temel alınan dosya sistemi veya sunucu zaman öznitelik tutma desteklemiyorsa, diğer zaman damgası işlevleri tarafından döndürülen aynı değer döndürebilir. Bkz: [WIN32_FIND_DATA](/windows/desktop/api/minwinbase/ns-minwinbase-_win32_find_dataa) yapısı saat biçimleri hakkında bilgi için. Bazı işletim sistemlerinde, döndürülen saat dilimi yerel makineye olan dosyasının bulunduğu saat şöyledir. Win32 bkz [FileTimeToLocalFileTime](/windows/desktop/api/fileapi/nf-fileapi-filetimetolocalfiletime) API daha fazla bilgi için.
+>  Tüm dosya sistemleri bu işlev tarafından döndürülen zaman damgasını uygulamak için aynı semantiğini kullanmaz. Bu işlev, temeldeki dosya sistemi veya sunucusu zaman özniteliğini tutmayı desteklemiyorsa, diğer zaman damgası işlevleri tarafından döndürülen değeri döndürebilir. Zaman biçimleri hakkında bilgi için bkz. [Win32_FIND_DATA](/windows/desktop/api/minwinbase/ns-minwinbase-win32_find_dataa) yapısı. Bazı işletim sistemlerinde döndürülen süre, makinenin yerel olarak bulunduğu saat dilimindedir. Daha fazla bilgi için bkz. Win32 [FileTimeToLocalFileTime](/windows/desktop/api/fileapi/nf-fileapi-filetimetolocalfiletime) API.
 
-##  <a name="getlastwritetime"></a>  CGopherFileFind::GetLastWriteTime
+##  <a name="getlastwritetime"></a>CGopherFileFind:: GetLastWriteTime
 
-Dosya değiştirildiği son saati alır.
+Dosyanın son değiştirildiği zamanı alır.
 
 ```
 virtual BOOL GetLastWriteTime(FILETIME* pTimeStamp) const;
@@ -247,25 +247,25 @@ virtual BOOL GetLastWriteTime(CTime& refTime) const;
 ### <a name="parameters"></a>Parametreler
 
 *pTimeStamp*<br/>
-Bir işaretçi bir [FILETIME](/windows/desktop/api/minwinbase/ns-minwinbase-filetime) içeren dosyanın son kaydedilmişti zaman yapısı.
+Dosyanın son yazıldığı saati içeren bir [filetime](/windows/desktop/api/minwinbase/ns-minwinbase-filetime) yapısına yönelik işaretçi.
 
 *refTime*<br/>
-Bir başvuru bir [CTime](../../atl-mfc-shared/reference/ctime-class.md) nesne.
+[CTime](../../atl-mfc-shared/reference/ctime-class.md) nesnesine bir başvuru.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa sıfır dışı; işlem başarısız olursa 0. `GetLastWriteTime` yalnızca 0 döndürür ['larını](#findnextfile) hiçbir zaman bu çağrıldıktan `CGopherFileFind` nesne.
+Başarılı olursa sıfır dışı; başarısız ise 0. `GetLastWriteTime`Bu`CGopherFileFind` nesnede [FindNextFile](#findnextfile) hiç çağrılmadıysa 0 değerini döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çağırmalısınız ['larını](#findnextfile) çağırmadan önce en az bir kez `GetLastWriteTime`.
+Çağrılmadan`GetLastWriteTime`önce [FindNextFile](#findnextfile) öğesini en az bir kez çağırmanız gerekir.
 
 > [!NOTE]
->  Tüm dosya sistemleri, bu işlev tarafından döndürülen zaman damgası uygulamak için aynı semantiğe kullanın. Bu işlev, temel alınan dosya sistemi veya sunucu zaman öznitelik tutma desteklemiyorsa, diğer zaman damgası işlevleri tarafından döndürülen aynı değer döndürebilir. Bkz: [WIN32_FIND_DATA](/windows/desktop/api/minwinbase/ns-minwinbase-_win32_find_dataa) yapısı saat biçimleri hakkında bilgi için. Bazı işletim sistemlerinde, döndürülen saat dilimi yerel makineye olan dosyasının bulunduğu saat şöyledir. Win32 bkz [FileTimeToLocalFileTime](/windows/desktop/api/fileapi/nf-fileapi-filetimetolocalfiletime) API daha fazla bilgi için.
+>  Tüm dosya sistemleri bu işlev tarafından döndürülen zaman damgasını uygulamak için aynı semantiğini kullanmaz. Bu işlev, temeldeki dosya sistemi veya sunucusu zaman özniteliğini tutmayı desteklemiyorsa, diğer zaman damgası işlevleri tarafından döndürülen değeri döndürebilir. Zaman biçimleri hakkında bilgi için bkz. [Win32_FIND_DATA](/windows/desktop/api/minwinbase/ns-minwinbase-win32_find_dataa) yapısı. Bazı işletim sistemlerinde döndürülen süre, makinenin yerel olarak bulunduğu saat dilimindedir. Daha fazla bilgi için bkz. Win32 [FileTimeToLocalFileTime](/windows/desktop/api/fileapi/nf-fileapi-filetimetolocalfiletime) API.
 
-##  <a name="getlength"></a>  CGopherFileFind::GetLength
+##  <a name="getlength"></a>CGopherFileFind:: GetLength
 
-Bulunan dosyayı bayt cinsinden uzunluğunu almak için bu üye işlevini çağırın.
+Bulunan dosyanın uzunluğunu bayt olarak almak için bu üye işlevini çağırın.
 
 ```
 virtual ULONGLONG GetLength() const;
@@ -273,22 +273,22 @@ virtual ULONGLONG GetLength() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Uzunluğu, bayt cinsinden bulunan dosya.
+Bulunan dosyanın bayt cinsinden uzunluğu.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`GetLength` Win32 yapısını kullanır [WIN32_FIND_DATA](/windows/desktop/api/minwinbase/ns-minwinbase-_win32_find_dataa) bayt cinsinden boyutu değerini almak için.
+`GetLength`Dosya boyutu değerini bayt olarak almak için Win32 yapısını [WIN32_FIND_DATA](/windows/desktop/api/minwinbase/ns-minwinbase-win32_find_dataa) kullanır.
 
 > [!NOTE]
->  MFC 7.0 itibarıyla `GetLength` 64-bit tamsayı türlerini destekler. Bu kitaplığı daha yeni sürümü ile oluşturulan önceden varolan kod kesme uyarıların sonuçlanabilir.
+>  MFC 7,0 `GetLength` itibariyle 64 bit tamsayı türlerini destekler. Kitaplığın bu yeni sürümüyle oluşturulan önceden varolan kod, kesme uyarılarına neden olabilir.
 
 ### <a name="example"></a>Örnek
 
-  Örneğin bakın [CFile::GetLength](../../mfc/reference/cfile-class.md#getlength) (temel sınıf uygulamasına).
+  [CFile:: GetLength](../../mfc/reference/cfile-class.md#getlength) (temel sınıf uygulama) için örneğe bakın.
 
-##  <a name="getlocator"></a>  CGopherFileFind::GetLocator
+##  <a name="getlocator"></a>CGopherFileFind:: GetLocator
 
-Almak için bu üye işlevi çağrısı [CGopherLocator](../../mfc/reference/cgopherlocator-class.md) nesnesinin [FindFile](#findfile) gopher dosyayı bulmak için kullanır.
+[FindFile](#findfile) 'ın Gopher dosyasını bulmak Için kullandığı [CGopherLocator](../../mfc/reference/cgopherlocator-class.md) nesnesini almak için bu üye işlevi çağırın.
 
 ```
 CGopherLocator GetLocator() const;
@@ -298,9 +298,9 @@ CGopherLocator GetLocator() const;
 
 A `CGopherLocator` nesne.
 
-##  <a name="getscreenname"></a>  CGopherFileFind::GetScreenName
+##  <a name="getscreenname"></a>CGopherFileFind:: GetScreenName
 
-Gopher ekranın adını almak için bu üye işlevini çağırın.
+Gopher ekranının adını almak için bu üye işlevini çağırın.
 
 ```
 CString GetScreenName() const;
@@ -308,11 +308,11 @@ CString GetScreenName() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Gopher ekranın adı.
+Gopher ekranının adı.
 
-##  <a name="isdots"></a>  CGopherFileFind::IsDots
+##  <a name="isdots"></a>CGopherFileFind:: ısnoktalar
 
-Dosyaları aracılığıyla yineleme sırasında geçerli dizin ve üst dizini işaretlerinin sınar.
+Dosyalar arasında yineleme yaparken geçerli dizin ve üst dizin işaretleyicilerini sınar.
 
 ```
 virtual BOOL IsDots() const;
@@ -320,11 +320,11 @@ virtual BOOL IsDots() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Sıfır dışında bulunan dosya adı varsa "."veya"...", bulunan dosyanın aslında bir dizin olduğunu gösterir. Aksi durumda 0.
+Bulunan dosyanın adı "." veya ".." ise, bulunan dosyanın gerçekten bir dizin olduğunu gösterir. Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çağırmalısınız ['larını](#findnextfile) çağırmadan önce en az bir kez `IsDots`.
+Çağrılmadan`IsDots`önce [FindNextFile](#findnextfile) öğesini en az bir kez çağırmanız gerekir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

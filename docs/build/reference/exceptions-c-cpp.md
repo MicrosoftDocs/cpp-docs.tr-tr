@@ -12,22 +12,22 @@ helpviewer_keywords:
 - ERROR_SEVERITY_ERROR exception
 - ERROR_MOD_NOT_FOUND exception
 ms.assetid: c03be05d-1c39-4f35-84cf-00c9af3bae9a
-ms.openlocfilehash: f80b99943b103dcf90c05d59df3169e0e05d79f4
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: cf38af464f08e143ed9073befe30f6aeb8b913b6
+ms.sourcegitcommit: 46d24d6e70c03e05484923d9efc6ed5150e96a64
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62271638"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68915473"
 ---
 # <a name="exceptions-cc"></a>Özel Durumlar (C/C++)
 
-Hataları karşılaştığında, iki özel durum kodları yükseltilebilir:
+Hatalarla karşılaşıldığında iki özel durum kodu ortaya çıkar:
 
-- İçin bir **LoadLibrary** hatası
+- Bir **LoadLibrary** hatası için
 
-- İçin bir **GetProcAddress** hatası
+- **GetProcAddress** hatası için
 
-Özel durum bilgilerini şu şekildedir:
+Özel durum bilgileri aşağıda verilmiştir:
 
 ```
 //
@@ -37,11 +37,11 @@ Hataları karşılaştığında, iki özel durum kodları yükseltilebilir:
 #define VcppException(sev,err)  ((sev) | (FACILITY_VISUALCPP<<16) | err)
 ```
 
-Oluşturulan özel durum kodları şunlardır: standart VcppException (error_severıty_error, ERROR_MOD_NOT_FOUND) ve VcppException (error_severıty_error, ERROR_PROC_NOT_FOUND) değerleri. İşaretçi özel durum geçirir bir **DelayLoadInfo** yapısı tarafından alınabilen LPDWORD değerindeki **Getexceptionınformation** içinde [exceptıon_record](/windows/desktop/api/winnt/ns-winnt-_exception_record) yapısı, ExceptionInformation [0] alan.
+Oluşturulan özel durum kodları standart VcppException (ERROR_SEVERITY_ERROR, ERROR_MOD_NOT_FOUND) ve VcppException (ERROR_SEVERITY_ERROR, ERROR_PROC_NOT_FOUND) değerlerdir. Özel durum, [EXCEPTION_RECORD](/windows/desktop/api/winnt/ns-winnt-exception_record) yapısı, ExceptionInformation [0] alanındaki **GetExceptionInformation** tarafından alınabilecek lpdword değerindeki bir **DelayLoadInfo** yapısına bir işaretçi geçirir.
 
-Ayrıca, yanlış BITS grAttrs alanında ayarlarsanız, özel durum ERROR_INVALID_PARAMETER oluşturulur. Bu, için tüm intents ve purposes, önemli istisnadır.
+Ayrıca, grAttrs alanında yanlış bitler ayarlandıysa, ERROR_INVALID_PARAMETER özel durumu oluşturulur. Bu özel durum, tüm amaçlar ve amaçlar için önemli.
 
-Bkz: [yapı ve sabit tanımları](structure-and-constant-definitions.md) daha fazla bilgi için.
+Daha fazla bilgi için bkz. [Yapı ve sabit tanımlar](structure-and-constant-definitions.md) .
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

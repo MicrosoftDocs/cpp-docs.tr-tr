@@ -7,24 +7,24 @@ helpviewer_keywords:
 - rich edit controls [MFC], current selection in
 - selection, current in CRichEditCtrl
 ms.assetid: f6b2a2b6-5481-4ad3-9720-6dd772ea6fc8
-ms.openlocfilehash: 4516c4506419169ac3ab284e6c59cae71595be59
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e493f46e2a2b5bec695177e8c8da9c09de13376d
+ms.sourcegitcommit: 46d24d6e70c03e05484923d9efc6ed5150e96a64
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62241812"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68916448"
 ---
 # <a name="current-selection-in-a-rich-edit-control"></a>Bir Zengin Düzenleme Denetimindeki Geçerli Bölüm
 
-Kullanıcı bir zengin düzenleme denetiminde metin seçebilirsiniz ([CRichEditCtrl](../mfc/reference/cricheditctrl-class.md)) klavye veya fare kullanarak. Geçerli seçimi seçili karakter aralığı veya herhangi bir karakter, ekleme noktasını konumunu seçilir. Uygulamanın geçerli seçimi hakkında bilgi edinin, geçerli seçimi ayarla, ne zaman geçerli seçimi değişiklikleri ve Göster veya gizle seçimi vurgulayın belirleyin.
+Kullanıcı, fareyi veya klavyeyi kullanarak bir zengin düzenleme denetimindeki ([CRichEditCtrl](../mfc/reference/cricheditctrl-class.md)) metin seçebilir. Geçerli seçim, seçilen karakterlerin aralığıdır veya hiçbir karakter seçilmezse ekleme noktasının konumudur. Bir uygulama geçerli seçim hakkında bilgi alabilir, geçerli seçimi ayarlayabilir, geçerli seçimin ne zaman değişeni belirleyebilir ve seçim vurgulamasını gösterebilir veya gizleyebilirler.
 
-Bir zengin düzenleme denetimindeki geçerli bölüm belirlemek için [GetSel](../mfc/reference/cricheditctrl-class.md#getsel) üye işlevi. Geçerli seçimi ayarlamak için kullanın [SetSel](../mfc/reference/cricheditctrl-class.md#setsel) üye işlevi. [CHARRANGE](/windows/desktop/api/richedit/ns-richedit-_charrange) yapısına sahip bu işlevlerin da karakter aralığını belirtmek için kullanılır. Geçerli seçimin içeriğine hakkında bilgi almak için kullanabileceğiniz [GetSelectionType](../mfc/reference/cricheditctrl-class.md#getselectiontype) üye işlevi.
+Bir zengin düzenleme denetimindeki geçerli seçimi öğrenmek için [GetSel](../mfc/reference/cricheditctrl-class.md#getsel) member işlevini kullanın. Geçerli seçimi ayarlamak için [SetSel](../mfc/reference/cricheditctrl-class.md#setsel) üye işlevini kullanın. [Charrange](/windows/desktop/api/richedit/ns-richedit-charrange) yapısı, Bu işlevlerle birlikte bir karakter aralığı belirtmek için kullanılır. Geçerli seçimin içeriği hakkında bilgi almak için [GetSelectionType](../mfc/reference/cricheditctrl-class.md#getselectiontype) üye işlevini kullanabilirsiniz.
 
-Varsayılan olarak, bir zengin düzenleme denetimi gösterir ve seçim Vurgusu kazanır ve odağı kaybettiğinde gizler. Göstermek veya seçim Vurgusu kullanarak herhangi bir zamanda Gizle [HideSelection](../mfc/reference/cricheditctrl-class.md#hideselection) üye işlevi. Örneğin, bir uygulama bir zengin düzenleme denetiminde metni bulmak için arama iletişim kutusu sağlayabilirsiniz. Uygulama iletişim kutusunu kapatmadan eşleşen metin seçebilirsiniz, bu durumda kullanmanız gerekir `HideSelection` seçimi vurgulayın.
+Varsayılan olarak, zengin bir düzenleme denetimi, odak kazanırsa ve kaybettiğinde seçim vurgulamasını gösterir ve gizler. Seçim vurgulamasını dilediğiniz zaman [HideSelection](../mfc/reference/cricheditctrl-class.md#hideselection) üye işlevini kullanarak gösterebilir veya gizleyebilirsiniz. Örneğin, bir uygulama bir zengin düzenleme denetiminde metin bulmak için bir arama iletişim kutusu sağlayabilir. Uygulama, iletişim kutusunu kapatmadan eşleşen metin seçebilir ve bu durumda seçimi vurgulamak için kullanılması `HideSelection` gerekir.
 
-Seçili metnin bir zengin düzenleme denetimini almak için kullanın [GetSelText](../mfc/reference/cricheditctrl-class.md#getseltext) üye işlevi. Metnin belirtilen karakter dizisine kopyalanır. Dizisinin seçili metni artı bir sonlandırıcı null karakteri alacak kadar büyük olduğundan emin olmanız gerekir.
+Seçili metni bir zengin düzenleme denetiminde almak için [GetSelText](../mfc/reference/cricheditctrl-class.md#getseltext) üye işlevini kullanın. Metin, belirtilen karakter dizisine kopyalanır. Dizinin seçili metni tutabilecek kadar büyük ve bir Sonlandırıcı null karakteri içerdiğinden emin olmanız gerekir.
 
-Bir zengin düzenleme denetimindeki bir dize kullanarak arayabilirsiniz [FindText](../mfc/reference/cricheditctrl-class.md#findtext) üye işlevi [FINDTEXTEX](/windows/desktop/api/richedit/ns-richedit-_findtextexa) bu işlevle kullanılan yapısı metin aralığı arama yapma ve aranacak dizeyi belirtir. Bu seçenekler ayrıca arama büyük/küçük harfe olup olarak da belirtebilirsiniz.
+[FindText](../mfc/reference/cricheditctrl-class.md#findtext) üye işlevini kullanarak bir dizeyi zengin düzenleme denetiminde arayabilirsiniz. bu Işlevle kullanılan [findtextex](/windows/desktop/api/richedit/ns-richedit-findtextexa) yapısı, arama yapılacak metin aralığını ve aranacak dizeyi belirtir. Ayrıca, aramanın büyük/küçük harfe duyarlı olup olmadığı için bu seçenekleri de belirtebilirsiniz.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

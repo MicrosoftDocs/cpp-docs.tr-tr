@@ -6,32 +6,32 @@ helpviewer_keywords:
 - dispatch maps [MFC]
 - dispatch map macros [MFC]
 ms.assetid: bef9d08b-ad35-4c3a-99d8-04150c7c04e2
-ms.openlocfilehash: a1baa5274dbd33bb1e88b57ccfab2b5ed2085f6d
-ms.sourcegitcommit: 934cb53fa4cb59fea611bfeb9db110d8d6f7d165
+ms.openlocfilehash: f1afa95d7c20d54f2015255a7e4e0d7ad9ae9c2b
+ms.sourcegitcommit: 46d24d6e70c03e05484923d9efc6ed5150e96a64
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65611302"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68916522"
 ---
 # <a name="dispatch-maps"></a>Eşlemeleri Dağıtma
 
-OLE Otomasyonu nesnesi etkin yöntemlerini çağırmaya ve uygulamalar arasında özelliklerine erişmek için bir yol sağlar. Bu istekleri gönderme için Microsoft Foundation Class Kitaplığı tarafından sağlanan "nesne işlevleri ve özellikleri yanı sıra, Özellikler'in ve veri türleri, iç ve dış adları atayan dağıtım eşlemesi" mekanizmasıdır işlev bağımsız değişkenleri.
+OLE Otomasyonu yöntemleri çağırmak ve uygulamalar arasında özelliklere erişmek için yollar sağlar. Bu istekleri göndermek için Microsoft Foundation Class Kitaplığı tarafından sağlanan mekanizma, nesne işlevlerinin ve özelliklerinin iç ve dış adlarını, özelliklerinin ve bunların kendilerine ait veri türlerini ve işlev bağımsız değişkenleri.
 
-|Dağıtım eşlemesi makrosu|Açıklama|
+|Harita makrosunu dağıtma|Açıklama|
 |-|-|
-|[DECLARE_DISPATCH_MAP](#declare_dispatch_map)|Dağıtım eşlemesi bir sınıfın yöntemlerini ve özelliklerini (sınıf bildirimi içinde kullanılmalıdır) kullanıma sunmak için kullanılacak bildirir.|
-|[BEGIN_DISPATCH_MAP](#begin_dispatch_map)|Dağıtım eşlemesi tanımını başlatır.|
-|[END_DISPATCH_MAP](#end_dispatch_map)|Dağıtım eşlemesi tanımını sonlandırır.|
-|[DISP_FUNCTION](#disp_function)|Bir dağıtım haritasında, bir OLE Otomasyon işlevi tanımlamak için kullanılır.|
-|[DISP_PROPERTY](#disp_property)|Bir OLE Otomasyon özelliği tanımlar.|
-|[DISP_PROPERTY_EX](#disp_property_ex)|Bir OLE Otomasyon özelliği tanımlar ve Get ve Set işlevlerini adları.|
-|[DISP_PROPERTY_NOTIFY](#disp_property_notify)|Bildirim ile bir OLE Otomasyon özelliği tanımlar.|
-|[DISP_PROPERTY_PARAM](#disp_property_param)|Parametreler ve adları Get ve Set işlevlerini alır bir OLE Otomasyon özelliği tanımlar.|
-|[DISP_DEFVALUE](#disp_defvalue)|Varolan bir özellik bir nesnenin varsayılan değerini getirir.|
+|[DECLARE_DISPATCH_MAP](#declare_dispatch_map)|Bir dağıtım eşlemesinin, bir sınıfın yöntemlerini ve özelliklerini göstermek için kullanılacağını bildirir (sınıf bildiriminde kullanılması gerekir).|
+|[BEGIN_DISPATCH_MAP](#begin_dispatch_map)|Bir dağıtım eşlemesinin tanımını başlatır.|
+|[END_DISPATCH_MAP](#end_dispatch_map)|Bir dağıtım eşlemesinin tanımını sonlandırır.|
+|[DISP_FUNCTION](#disp_function)|Bir OLE Otomasyonu işlevi tanımlamak için bir dağıtım eşlemesinde kullanılır.|
+|[DISP_PROPERTY](#disp_property)|OLE Otomasyonu özelliğini tanımlar.|
+|[DISP_PROPERTY_EX](#disp_property_ex)|OLE Otomasyonu özelliğini tanımlar ve Get ve set işlevlerini adlandırır.|
+|[DISP_PROPERTY_NOTIFY](#disp_property_notify)|Bildirimi olan bir OLE Otomasyonu özelliğini tanımlar.|
+|[DISP_PROPERTY_PARAM](#disp_property_param)|Parametreleri alan ve Get ve set işlevlerini isimuygulayan bir OLE Otomasyonu özelliği tanımlar.|
+|[DISP_DEFVALUE](#disp_defvalue)|Varolan bir özelliği bir nesnenin varsayılan değeri yapar.|
 
-## <a name="declare_dispatch_map"></a>  DECLARE_DISPATCH_MAP
+## <a name="declare_dispatch_map"></a>DECLARE_DISPATCH_MAP
 
-Varsa bir `CCmdTarget`-OLE sınıfı yöntemleri ve özellikleri göstermek için bir dağıtım eşlemesi sağlamalısınız Otomasyonu, programınızı türetilen sınıfta destekler.
+Programınızda türetilmiş `CCmdTarget`bir sınıf OLE Otomasyonu destekliyorsa, bu sınıf, yöntemlerini ve özelliklerini sunmak için bir dağıtım Haritası sağlamalıdır.
 
 ```cpp
 DECLARE_DISPATCH_MAP()
@@ -39,12 +39,12 @@ DECLARE_DISPATCH_MAP()
 
 ### <a name="remarks"></a>Açıklamalar
 
-Declare_dıspatch_map makrosu, sınıf bildiriminin sonuna kullanın. Ardından. Sınıfın üye işlevleri tanımlar CPP dosyasına begın_dıspatch_map makrosu kullanın. Ardından makrosu girişleri her sınıfınızın kullanıma sunulan yöntemleri ve özellikleri (dısp_functıon, dısp_property ve benzeri) içerir. Son olarak, end_dıspatch_map makrosu kullanın.
+Sınıf bildirimindeki sonundaki DECLARE_DISPATCH_MAP makrosunu kullanın. Ardından içinde. Sınıf için üye işlevlerini tanımlayan CPP dosyası, BEGIN_DISPATCH_MAP makrosunu kullanın. Ardından, sınıfınızın sunulan yöntemlerin ve özelliklerin her biri için makro girdilerini ekleyin (DISP_FUNCTION, DISP_PROPERTY vb.). Son olarak, END_DISPATCH_MAP makrosunu kullanın.
 
 > [!NOTE]
-> Declare_dıspatch_map sonra herhangi bir üye bildirirseniz, yeni bir erişim türü belirtmeniz gerekir ( **genel**, **özel**, veya **korumalı**) için bunları.
+> DECLARE_DISPATCH_MAP sonra herhangi bir üye bildirirseniz, bunlar için yeni bir erişim türü ( **genel**, **özel**veya **korumalı**) belirtmeniz gerekir.
 
-Uygulama Sihirbazı ve kod sihirbazları Otomasyon sınıfları oluşturma ve gönderme eşlemeleri Bakımı yardımcı olur. Eşlemeleri dağıtma hakkında daha fazla bilgi için bkz. [otomasyon sunucuları](../../mfc/automation-servers.md).
+Uygulama Sihirbazı ve kod sihirbazları, Otomasyon sınıfları oluşturmaya ve dağıtım haritalarını sürdürmesine yardımcı olur. Dağıtım haritaları hakkında daha fazla bilgi için bkz. [Automation Servers](../../mfc/automation-servers.md).
 
 ### <a name="example"></a>Örnek
 
@@ -52,11 +52,11 @@ Uygulama Sihirbazı ve kod sihirbazları Otomasyon sınıfları oluşturma ve g�
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxwin.h
+**Üstbilgi:** Afxwin. h
 
-## <a name="begin_dispatch_map"></a>  BEGIN_DISPATCH_MAP
+## <a name="begin_dispatch_map"></a>BEGIN_DISPATCH_MAP
 
-Gönderme haritanızı tanımını bildirir.
+Dağıtım haritaınızın tanımını bildirir.
 
 ```cpp
 BEGIN_DISPATCH_MAP(theClass, baseClass)
@@ -64,23 +64,23 @@ BEGIN_DISPATCH_MAP(theClass, baseClass)
 
 ### <a name="parameters"></a>Parametreler
 
-*Sınıfın*<br/>
-Bu dağıtım eşlemesi sahip olan sınıfın adını belirtir.
+*Sınıf*<br/>
+Bu dağıtım eşlemesine sahip olan sınıfın adını belirtir.
 
 *baseClass*<br/>
-Temel sınıfın adını belirtir *sınıfın*.
+Sınıfın temel sınıf adını belirtir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Sınıfınız için üye işlevleri tanımlayan uygulama dosyasında (.cpp), dağıtım eşlemesi begın_dıspatch_map makrosu ile Başlat, her dağıtım işlevleri ve özellikleri için makro girişler ekleyin ve END_DISPATCH_ ile dağıtım eşlemesi tamamlayın Harita makrosu.
+Sınıfınız için üye işlevlerini tanımlayan uygulama (. cpp) dosyasında, dağıtım haritasını BEGIN_DISPATCH_MAP makrosu ile başlatın, dağıtım işlevlerinizin ve özelliklerinin her biri için makro girişleri ekleyin ve END_DISPATCH_ ile dağıtım haritasını doldurun Makroyu EŞLEYIN.
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxdisp.h
+**Üstbilgi:** AfxDisp. h
 
-## <a name="end_dispatch_map"></a>  END_DISPATCH_MAP
+## <a name="end_dispatch_map"></a>END_DISPATCH_MAP
 
-Gönderme haritanızı tanımını sonlandırır.
+Dağıtım haritaınızın tanımını sonlandırır.
 
 ```cpp
 END_DISPATCH_MAP()
@@ -88,45 +88,45 @@ END_DISPATCH_MAP()
 
 ### <a name="remarks"></a>Açıklamalar
 
-Begın_dıspatch_map ile birlikte kullanılması gerekir.
+BEGIN_DISPATCH_MAP ile birlikte kullanılması gerekir.
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxdisp.h
+**Üstbilgi:** AfxDisp. h
 
-## <a name="disp_function"></a>  DISP_FUNCTION
+## <a name="disp_function"></a>DISP_FUNCTION
 
-Bir OLE Otomasyon işlevi, bir dağıtım haritasında tanımlar.
+Bir dağıtım haritasında OLE Otomasyonu işlevini tanımlar.
 
 ```cpp
 DISP_FUNCTION(
-  theClass,
-  pszName,
-  pfnMember,
-  vtRetVal,
-  vtsParams)
+    theClass,
+    pszName,
+    pfnMember,
+    vtRetVal,
+    vtsParams)
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*Sınıfın*<br/>
+*Sınıf*<br/>
 Sınıfın adı.
 
 *pszName*<br/>
-İşlev dış adı.
+İşlevin dış adı.
 
 *pfnMember*<br/>
 Üye işlevinin adı.
 
 *vtRetVal*<br/>
-İşlevin dönüş türünü belirten bir değeri.
+İşlevin dönüş türünü belirten bir değer.
 
 *vtsParams*<br/>
-İşlevin parametre listesi belirten bir veya daha fazla sabitleri boşlukla ayrılmış listesi.
+İşlevin parametre listesini belirten bir veya daha fazla sabitin boşlukla ayrılmış listesi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-*VtRetVal* VARTYPE tür olmayan bağımsız değişken. Bu bağımsız değişkeni aşağıdaki değerlerden alınmıştır `VARENUM` sabit listesi:
+*VtRetVal* BAĞıMSıZ değişkeni VarType türünde. Bu bağımsız değişken için aşağıdaki olası değerler `VARENUM` numaralandırmada alınır:
 
 |Sembol|Dönüş türü|
 |------------|-----------------|
@@ -135,7 +135,7 @@ Sınıfın adı.
 |VT_I4|**long**|
 |VT_R4|**float**|
 |VT_R8|**double**|
-|VT_CY|CY|
+|VT_CY|LI|
 |VT_DATE|DATE|
 |VT_BSTR|BSTR|
 |VT_DISPATCH|LPDISPATCH|
@@ -144,13 +144,13 @@ Sınıfın adı.
 |VT_VARIANT|VARIANT|
 |VT_UNKNOWN|LPUNKNOWN|
 
-*VtsParams* bağımsız değişken değerlerini boşlukla ayrılmış bir listesi verilmiştir `VTS_*` sabitler. Bir veya daha fazla boşluk (virgül değil) ile ayırarak bu değerleri işlevin parametre listesi belirtir. Örneğin,
+*VtsParams* bağımsız değişkeni, `VTS_*` sabitlerin değerlerinin boşlukla ayrılmış bir listesidir. Boşluklarla (virgüller değil) ayrılmış bir veya daha fazla değer, işlevin parametre listesini belirtir. Örneğin,
 
 [!code-cpp[NVC_MFCAutomation#14](../../mfc/codesnippet/cpp/dispatch-maps_2.cpp)]
 
-kısa bir tamsayı olarak bir işaretçi tarafından izlenen bir kısa tamsayı içeren bir liste belirtir.
+kısa bir tamsayı içeren bir liste ve ardından kısa bir tamsayıya yönelik işaretçiyi belirtir.
 
-`VTS_` Sabitleri ve bunların anlamları şu şekildedir:
+`VTS_` Sabitler ve anlamları aşağıdaki gibidir:
 
 |Sembol|Parametre türü|
 |------------|--------------------|
@@ -166,10 +166,10 @@ kısa bir tamsayı olarak bir işaretçi tarafından izlenen bir kısa tamsayı 
 |VTS_BOOL|BOOL|
 |VTS_VARIANT|`const VARIANT*` veya `VARIANT&`|
 |VTS_UNKNOWN|LPUNKNOWN|
-|VTS_PI2|__kısa\*__|
-|VTS_PI4|__uzun\*__|
-|VTS_PR4|__kayan nokta\*__|
-|VTS_PR8|__çift\*__|
+|VTS_PI2|__kısadır\*__|
+|VTS_PI4|__kalacağını\*__|
+|VTS_PR4|__float\*__|
+|VTS_PR8|__Çift\*__|
 |VTS_PCY|`CY*`|
 |VTS_PDATE|`DATE*`|
 |VTS_PBSTR|`BSTR*`|
@@ -182,37 +182,37 @@ kısa bir tamsayı olarak bir işaretçi tarafından izlenen bir kısa tamsayı 
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxdisp.h
+**Üstbilgi:** AfxDisp. h
 
-## <a name="disp_property"></a>  DISP_PROPERTY
+## <a name="disp_property"></a>DISP_PROPERTY
 
-Bir OLE Otomasyon özelliği, bir dağıtım haritasında tanımlar.
+Bir dağıtım haritasında OLE Otomasyonu özelliğini tanımlar.
 
 ```cpp
 DISP_PROPERTY(
-  theClass,
-  pszName,
-  memberName,
-  vtPropType)
+    theClass,
+    pszName,
+    memberName,
+    vtPropType)
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*Sınıfın*<br/>
+*Sınıf*<br/>
 Sınıfın adı.
 
 *pszName*<br/>
 Özelliğin dış adı.
 
 *memberName*<br/>
-Özellik depolandığı üye değişkeninin adı.
+Özelliğin depolandığı üye değişkeninin adı.
 
 *vtPropType*<br/>
-Özelliğin türü belirten bir değeri.
+Özelliğin türünü belirten bir değer.
 
 ### <a name="remarks"></a>Açıklamalar
 
-*VtPropType* bağımsız değişken türü ise **VARTYPE**. Bu bağımsız değişken için olası değerler VARENUM sabit listesinden alınmış alınır:
+*VtPropType* bağımsız değişkeni **VarType**türünde. Bu bağımsız değişken için olası değerler, VARENUM numaralandırmasından alınır:
 
 |Sembol|Özellik türü|
 |------------|-----------------------|
@@ -220,7 +220,7 @@ Sınıfın adı.
 |VT_I4|**long**|
 |VT_R4|**float**|
 |VT_R8|**double**|
-|VT_CY|CY|
+|VT_CY|LI|
 |VT_DATE|DATE|
 |VT_BSTR|`CString`|
 |VT_DISPATCH|LPDISPATCH|
@@ -229,87 +229,87 @@ Sınıfın adı.
 |VT_VARIANT|VARIANT|
 |VT_UNKNOWN|LPUNKNOWN|
 
-Özelliği tarafından belirtilen üye değişkeninin değeri değiştiğinde bir dış istemci *memberName* değiştirir; değişikliği bildirim yoktur.
+Bir dış istemci özelliğini değiştirdiğinde, *Üyei* değişiklikleri tarafından belirtilen üye değişkeninin değeri; değişiklik bildirimi yok.
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxdisp.h
+**Üstbilgi:** AfxDisp. h
 
-## <a name="disp_property_ex"></a>  DISP_PROPERTY_EX
+## <a name="disp_property_ex"></a>DISP_PROPERTY_EX
 
-Bir OLE Otomasyon özelliği ve adı almak ve bir dağıtım haritasında özelliğin değerini ayarlamak için kullanılan işlevleri tanımlar.
+Bir OLE Otomasyonu özelliği tanımlar ve bir dağıtım eşlemesindeki özelliğin değerini almak ve ayarlamak için kullanılan işlevleri adlandırın.
 
 ```cpp
 DISP_PROPERTY_EX(
-  theClass,
-  pszName,
-  memberGet,
-  memberSet,
-  vtPropType)
+    theClass,
+    pszName,
+    memberGet,
+    memberSet,
+    vtPropType)
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*Sınıfın*<br/>
+*Sınıf*<br/>
 Sınıfın adı.
 
 *pszName*<br/>
 Özelliğin dış adı.
 
 *memberGet*<br/>
-Özelliği almak için kullanılan bir üye işlevin adı.
+Özelliği almak için kullanılan üye işlevinin adı.
 
 *memberSet*<br/>
-Özelliği ayarlamak için kullanılan bir üye işlevin adı.
+Özelliği ayarlamak için kullanılan üye işlevinin adı.
 
 *vtPropType*<br/>
-Özelliğin türü belirten bir değeri.
+Özelliğin türünü belirten bir değer.
 
 ### <a name="remarks"></a>Açıklamalar
 
-*MemberGet* ve *memberSet* işlevlerde tarafından belirlenen imzaları *vtPropType* bağımsız değişken. *MemberGet* işlev hiçbir bağımsız değişkeni alır ve belirtilen türde bir değer döndürür *vtPropType*. *MemberSet* işlevi bağımsız değişken tarafından belirtilen türü alır *vtPropType* ve nothing döndürür.
+*MemberGet* ve *memberSet* Işlevlerinin, *vtPropType* bağımsız değişkeni tarafından belirlenen imzaları vardır. *MemberGet* işlevi bağımsız değişken almaz ve *vtPropType*tarafından belirtilen türde bir değer döndürür. *MemberSet* Işlevi, *vtPropType* tarafından belirtilen türde bir bağımsız değişken alır ve hiçbir şey döndürmez.
 
-*VtPropType* VARTYPE tür olmayan bağımsız değişken. Bu bağımsız değişken için olası değerler VARENUM sabit listesinden alınmış alınır. Açıklamalar için bu değerlerin listesi için bkz. *vtRetVal* parametresinde [dısp_functıon](#disp_function). Dısp_functıon Açıklamalar içinde listelenen VT_EMPTY, özellik veri türü izin verilmiyor unutmayın.
+*VtPropType* BAĞıMSıZ değişkeni VarType türünde. Bu bağımsız değişken için olası değerler, VARENUM numaralandırmasından alınır. Bu değerlerin bir listesi için, [DISP_FUNCTION](#disp_function)'Deki *vtRetVal* parametresine yönelik açıklamalara bakın. DISP_FUNCTION açıklamalarında listelenen VT_EMPTY Özellik veri türü olarak izin verilmediğini unutmayın.
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxdisp.h
+**Üstbilgi:** AfxDisp. h
 
-## <a name="disp_property_notify"></a>  DISP_PROPERTY_NOTIFY
+## <a name="disp_property_notify"></a>DISP_PROPERTY_NOTIFY
 
-Bir OLE Otomasyon özelliği ile bildirim gönderme eşlemesinde tanımlar.
+Bir dağıtım eşlemesinde bildirimi olan bir OLE Otomasyonu özelliği tanımlar.
 
 ```cpp
 DISP_PROPERTY_NOTIFY(
-  theClass,
-  szExternalName,
-  memberName,
-  pfnAfterSet,
-  vtPropType)
+    theClass,
+    szExternalName,
+    memberName,
+    pfnAfterSet,
+    vtPropType)
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*Sınıfın*<br/>
+*Sınıf*<br/>
 Sınıfın adı.
 
 *szExternalName*<br/>
 Özelliğin dış adı.
 
 *memberName*<br/>
-Özellik depolandığı üye değişkeninin adı.
+Özelliğin depolandığı üye değişkeninin adı.
 
 *pfnAfterSet*<br/>
-Bildirim işlevi adı *szExternalName*.
+*SzExternalName*için bildirim işlevinin adı.
 
 *vtPropType*<br/>
-Özelliğin türü belirten bir değeri.
+Özelliğin türünü belirten bir değer.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Dısp_property ile tanımlanan özelliklerin aksine, dısp_property_notıfy ile tanımlanmış bir özellik tarafından belirtilen işlev otomatik olarak çağırır *pfnAfterSet* özelliği değiştiği.
+DISP_PROPERTY ile tanımlanan özelliklerden farklı olarak, DISP_PROPERTY_NOTIFY ile tanımlanan bir özellik, özellik değiştirildiğinde *pfnAfterSet* tarafından belirtilen işlevi otomatik olarak çağırır.
 
-*VtPropType* VARTYPE tür olmayan bağımsız değişken. Bu bağımsız değişken için olası değerler VARENUM sabit listesinden alınmış alınır:
+*VtPropType* BAĞıMSıZ değişkeni VarType türünde. Bu bağımsız değişken için olası değerler, VARENUM numaralandırmasından alınır:
 
 |Sembol|Özellik türü|
 |------------|-----------------------|
@@ -317,7 +317,7 @@ Dısp_property ile tanımlanan özelliklerin aksine, dısp_property_notıfy ile 
 |VT_I4|**long**|
 |VT_R4|**float**|
 |VT_R8|**double**|
-|VT_CY|CY|
+|VT_CY|LI|
 |VT_DATE|DATE|
 |VT_BSTR|`CString`|
 |VT_DISPATCH|LPDISPATCH|
@@ -328,71 +328,71 @@ Dısp_property ile tanımlanan özelliklerin aksine, dısp_property_notıfy ile 
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxdisp.h
+**Üstbilgi:** AfxDisp. h
 
-## <a name="disp_property_param"></a>  DISP_PROPERTY_PARAM
+## <a name="disp_property_param"></a>DISP_PROPERTY_PARAM
 
-Erişilen ayrı bir özelliğini tanımlar `Get` ve `Set` üye işlevleri.
+Ayrı `Get` ve`Set` üye işlevlerle erişilen bir özelliği tanımlar.
 
 ```cpp
 DISP_PROPERTY_PARAM(
-  theClass,
-  pszExternalName,
-  pfnGet,
-  pfnSet,
-  vtPropType,
-  vtsParams)
+    theClass,
+    pszExternalName,
+    pfnGet,
+    pfnSet,
+    vtPropType,
+    vtsParams)
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*Sınıfın*<br/>
+*Sınıf*<br/>
 Sınıfın adı.
 
 *pszExternalName*<br/>
 Özelliğin dış adı.
 
 *pfnGet*<br/>
-Özelliği almak için kullanılan bir üye işlevin adı.
+Özelliği almak için kullanılan üye işlevinin adı.
 
 *pfnSet*<br/>
-Özelliği ayarlamak için kullanılan bir üye işlevin adı.
+Özelliği ayarlamak için kullanılan üye işlevinin adı.
 
 *vtPropType*<br/>
-Özelliğin türü belirten bir değeri.
+Özelliğin türünü belirten bir değer.
 
 *vtsParams*<br/>
-Boşlukla ayrılmış bir dizi `VTS_*` değişken parametre türleri, her parametre için bir tane.
+Her parametre için bir tane olmak `VTS_*` üzere boşlukla ayrılmış değişken parametre türleri dizesi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Dısp_property_ex makrosu Bu makroyu özelliğinin bir parametre listesini belirtmenizi sağlar. Bu dizine veya parametreli özellikleri uygulamak için kullanışlıdır.
+DISP_PROPERTY_EX makrosunun aksine, bu makro özellik için bir parametre listesi belirtmenize olanak tanır. Bu, dizini oluşturulmuş veya parametreli olan özellikleri uygulamak için yararlıdır.
 
 ### <a name="example"></a>Örnek
 
-Get aşağıdaki bildirimini düşünün ve üye özelliğine erişirken bir özel satır ve sütun istemek kullanıcının olanak tanıyan işlevler ayarlayın:
+Kullanıcının özelliğe erişirken belirli bir satır ve sütun istemesine izin veren get ve set üye işlevlerinin aşağıdaki bildirimini göz önünde bulundurun:
 
 [!code-cpp[NVC_MFCActiveXControl#9](../../mfc/codesnippet/cpp/dispatch-maps_3.h)]
 
-Bunlar aşağıdaki dısp_property_param makrosu denetim gönderme eşlemesindeki karşılık gelir:
+Bunlar, denetim dağıtım eşlemesindeki aşağıdaki DISP_PROPERTY_PARAM makroya karşılık gelir:
 
 [!code-cpp[NVC_MFCActiveXControl#10](../../mfc/codesnippet/cpp/dispatch-maps_4.cpp)]
 
-Başka bir örnek olarak aşağıdaki get göz önünde bulundurun ve üye işlevleri ayarlayın:
+Diğer bir örnek olarak, aşağıdaki get ve set üye işlevlerini göz önünde bulundurun:
 
 [!code-cpp[NVC_MFCActiveXControl#11](../../mfc/codesnippet/cpp/dispatch-maps_5.h)]
 
-Bunlar aşağıdaki dısp_property_param makrosu denetim gönderme eşlemesindeki karşılık gelir:
+Bunlar, denetim dağıtım eşlemesindeki aşağıdaki DISP_PROPERTY_PARAM makroya karşılık gelir:
 
 [!code-cpp[NVC_MFCActiveXControl#12](../../mfc/codesnippet/cpp/dispatch-maps_6.cpp)]
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxdisp.h
+**Üstbilgi:** AfxDisp. h
 
-## <a name="disp_defvalue"></a>  DISP_DEFVALUE
+## <a name="disp_defvalue"></a>DISP_DEFVALUE
 
-Varolan bir özellik bir nesnenin varsayılan değerini getirir.
+Varolan bir özelliği bir nesnenin varsayılan değeri yapar.
 
 ```cpp
 DISP_DEFVALUE(theClass, pszName)
@@ -400,22 +400,22 @@ DISP_DEFVALUE(theClass, pszName)
 
 ### <a name="parameters"></a>Parametreler
 
-*Sınıfın*<br/>
+*Sınıf*<br/>
 Sınıfın adı.
 
 *pszName*<br/>
-Nesnenin "value" temsil eden özelliğin dış adı.
+Nesnenin "değerini" temsil eden özelliğin dış adı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsayılan bir değer kullanarak Visual Basic uygulamaları için daha basit, Otomasyon nesnesi programlama yapabilirsiniz.
+Varsayılan bir değer kullanmak, Otomasyon nesnenizin Visual Basic uygulamalar için daha kolay programlama yapmasını sağlayabilir.
 
-Nesne "varsayılan değer" olan veya bir özellik veya üye işlevi bir nesneye bir başvuru belirtmediğinde ayarlamak özelliğidir.
+Nesnenizin "varsayılan değeri", bir nesne başvurusu bir özellik veya üye işlevi belirtmezse alınan veya ayarlanan özelliktir.
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxdisp.h
+**Üstbilgi:** AfxDisp. h
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Makroları ve genel öğeleri](../../mfc/reference/mfc-macros-and-globals.md)
+[Makrolar ve genel öğeler](../../mfc/reference/mfc-macros-and-globals.md)

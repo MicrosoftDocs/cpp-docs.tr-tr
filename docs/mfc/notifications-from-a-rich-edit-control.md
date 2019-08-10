@@ -7,28 +7,28 @@ helpviewer_keywords:
 - rich edit controls [MFC], notifications
 - notifications [MFC], from CRichEditCtrl
 ms.assetid: eb5304fe-f4f3-4557-9ebf-3095dea383c4
-ms.openlocfilehash: fcb1dda1d915dc13e01effed9ba99070b825a15e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: bc4c027ff26df89539b22c6d04f1d1dc95fc459a
+ms.sourcegitcommit: 46d24d6e70c03e05484923d9efc6ed5150e96a64
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62238216"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68916394"
 ---
 # <a name="notifications-from-a-rich-edit-control"></a>Bir Zengin Düzenleme Denetiminden Bildirim
 
-Rapor olayları etkileyen bir zengin düzenleme denetimi bildirim iletileri ([CRichEditCtrl](../mfc/reference/cricheditctrl-class.md)). İleti yansıması kullanarak tarafından zengin düzenleme denetiminden kendisini veya ana pencere tarafından işlenebilir. Zengin düzenleme denetimlerinde birkaç bulunmakla yanı sıra düzenleme denetimleri ile kullanılan tüm bildirim iletileri destekler. Bildirim iletileri "olay maskesini." ayarlayarak bir zengin düzenleme denetiminin üst pencereye gönderir belirleyebilirsiniz.
+Bildirim iletileri bir zengin düzenleme denetimini ([CRichEditCtrl](../mfc/reference/cricheditctrl-class.md)) etkileyen olayları bildirir. Bunlar, üst pencere veya ileti yansıtma kullanılarak, zengin düzenleme denetiminin kendisi tarafından işlenebilir. Zengin düzenleme denetimleri, düzenleme denetimleriyle birlikte kullanılan tüm bildirim iletilerini ve çeşitli ek olanları destekler. "Olay maskesini" ayarlayarak, bir zengin düzenleme denetiminin üst penceresini göndereceğini belirten bildirim iletilerini belirleyebilirsiniz.
 
-Bir zengin düzenleme denetimi için olay maskeyi ayarlamak için kullanın [SetEventMask](../mfc/reference/cricheditctrl-class.md#seteventmask) üye işlevi. Bir zengin düzenleme denetiminden kullanarak için geçerli olay maskesini alabilirsiniz [GetEventMask](../mfc/reference/cricheditctrl-class.md#geteventmask) üye işlevi.
+Bir zengin düzenleme denetimine yönelik olay maskesini ayarlamak için [SetEventMask](../mfc/reference/cricheditctrl-class.md#seteventmask) üye işlevini kullanın. Bir zengin düzenleme denetimi için geçerli olay maskesini [GetEventMask](../mfc/reference/cricheditctrl-class.md#geteventmask) üye işlevini kullanarak alabilirsiniz.
 
-Aşağıdaki paragraflara birkaç belirli bildirimleri ve kullanımlarının listesi:
+Aşağıdaki paragraflarda bazı özel bildirimler ve kullanımları listelenmektedir:
 
-- EN_MSGFILTER EN_MSGFILTER bildirimi bir sınıf ya da zengin düzenleme denetimi veya tüm klavye ve fare girişi denetimi için filtre üst pencereye sağlar. İşleyici klavye veya fare iletisini işlenmekte olan engelleyebilir veya ileti belirtilen değiştirerek değiştirebilirsiniz [MSGFILTER](/windows/desktop/api/richedit/ns-richedit-_msgfilter) yapısı.
+- EN_MSGFILTER bildirimini Işleme EN_MSGFILTER, zengin düzenleme denetimi veya üst penceresi olan bir sınıfın tüm klavye ve fare girişini denetime göre filtrelemesine olanak tanır. İşleyici, klavye veya fare iletisinin işlenmesini önleyebilir veya belirtilen [Msgfilter](/windows/desktop/api/richedit/ns-richedit-msgfilter) yapısını değiştirerek iletiyi değiştirebilir.
 
-- EN_PROTECTED EN_PROTECTED bildirim iletisi, kullanıcı korumalı bir metin değiştirme girişiminde bulunduğunda algılamak için işler. Bir metin aralığını korumalı olarak işaretlemek için korumalı karakter etkisi ayarlayabilirsiniz. Daha fazla bilgi için [zengin düzenleme denetimlerinde karakter biçimlendirme](../mfc/character-formatting-in-rich-edit-controls.md).
+- EN_PROTECTED, kullanıcının korunan metni değiştirme girişiminde bulunduğu zaman algılamak için EN_PROTECTED bildirim iletisini Işleyin. Bir metin aralığını korumalı olarak işaretlemek için korumalı karakter efektini ayarlayabilirsiniz. Daha fazla bilgi için bkz. [zengin düzenleme denetimlerinde karakter biçimlendirme](../mfc/character-formatting-in-rich-edit-controls.md).
 
-- EN_DROPFILES EN_DROPFILES bildirim iletisi işleyerek bir zengin düzenleme denetimindeki dosyalarını bırakmaya kullanıcı etkinleştirebilirsiniz. Belirtilen [ENDROPFILES](/windows/desktop/api/richedit/ns-richedit-_endropfiles) yapısı bırakılmakta dosyalarla ilgili bilgiler içerir.
+- EN_DROPFILES EN_DROPFILES bildirim iletisini işleyerek kullanıcının bir zengin düzenleme denetimine dosya bırakması için izin verebilirsiniz. Belirtilen [Endropfiles](/windows/desktop/api/richedit/ns-richedit-endropfiles) yapısı bırakılmakta olan dosyalarla ilgili bilgiler içerir.
 
-- Geçerli seçimi EN_SELCHANGE bildirim iletisi işleyerek değiştiğinde EN_SELCHANGE uygulama algılayabilir. Bildirim iletisi belirtir bir [SELCHANGE](/windows/desktop/api/richedit/ns-richedit-_selchange) yeni seçimi hakkında bilgi içeren yapıya.
+- EN_SELCHANGE bir uygulama, EN_SELCHANGE bildirim iletisini işleyerek geçerli seçimin ne zaman değiştiğini algılayabilir. Bildirim iletisi, yeni seçim hakkında bilgi içeren bir [SelChange](/windows/desktop/api/richedit/ns-richedit-selchange) yapısını belirtir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

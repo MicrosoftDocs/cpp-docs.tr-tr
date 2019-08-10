@@ -1,5 +1,5 @@
 ---
-title: CPrivateObjectSecurityDesc Class
+title: CPrivateObjectSecurityDesc sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CPrivateObjectSecurityDesc
@@ -12,16 +12,16 @@ f1_keywords:
 helpviewer_keywords:
 - CPrivateObjectSecurityDesc class
 ms.assetid: 2c4bbb13-bf99-4833-912a-197f6815bb5d
-ms.openlocfilehash: cc726892515ea38a559bdf182affa96f84be3449
-ms.sourcegitcommit: ecf274bcfe3a977c48745aaa243e5e731f1fdc5f
+ms.openlocfilehash: c1ac15d4d8254107a66e577321edb3c40578f240
+ms.sourcegitcommit: 46d24d6e70c03e05484923d9efc6ed5150e96a64
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "66503297"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68915803"
 ---
-# <a name="cprivateobjectsecuritydesc-class"></a>CPrivateObjectSecurityDesc Class
+# <a name="cprivateobjectsecuritydesc-class"></a>CPrivateObjectSecurityDesc sınıfı
 
-Bu sınıf, bir özel nesneye güvenli tanımlayıcısı nesnesi temsil eder.
+Bu sınıf bir özel nesne güvenlik tanımlayıcısı nesnesini temsil eder.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -35,17 +35,17 @@ class CPrivateObjectSecurityDesc : public CSecurityDesc
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[CPrivateObjectSecurityDesc::CPrivateObjectSecurityDesc](#cprivateobjectsecuritydesc)|Oluşturucu.|
-|[CPrivateObjectSecurityDesc::~CPrivateObjectSecurityDesc](#dtor)|Yıkıcı.|
+|[CPrivateObjectSecurityDesc:: CPrivateObjectSecurityDesc](#cprivateobjectsecuritydesc)|Oluşturucu.|
+|[CPrivateObjectSecurityDesc:: ~ CPrivateObjectSecurityDesc](#dtor)|Yok edicisi.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[CPrivateObjectSecurityDesc::ConvertToAutoInherit](#converttoautoinherit)|Güvenlik tanımlayıcısı ve onun erişim denetim listelerini (ACL'ler) otomatik yayma devralınabilir erişim denetimi girişlerinin (ACE'ler) destekleyen bir biçime dönüştürmek için bu yöntemi çağırın.|
-|[CPrivateObjectSecurityDesc::Create](#create)|Ayırın ve çağrı kaynak yöneticisi tarafından oluşturulan özel nesne kendine bağlı güvenlik tanımlayıcısı'nı başlatmak için bu yöntemi çağırın.|
-|[CPrivateObjectSecurityDesc::Get](#get)|Özel bir nesnenin güvenlik tanımlayıcısından bilgileri almak için bu yöntemi çağırın.|
-|[CPrivateObjectSecurityDesc::Set](#set)|Özel bir nesnenin güvenlik tanımlayıcısını değiştirmek için bu yöntemi çağırın.|
+|[CPrivateObjectSecurityDesc:: Converttooto Inherit](#converttoautoinherit)|Bir güvenlik tanımlayıcısını ve erişim denetimi listelerini (ACL 'Ler), devralınabilir erişim denetimi girişlerinin (ACE 'Ler) otomatik yayılmasını destekleyen bir biçime dönüştürmek için bu yöntemi çağırın.|
+|[CPrivateObjectSecurityDesc:: Create](#create)|Çağıran Resource Manager tarafından oluşturulan özel nesne için kendine göreli bir güvenlik tanımlayıcısı ayırmak ve başlatmak için bu yöntemi çağırın.|
+|[CPrivateObjectSecurityDesc:: Get](#get)|Özel bir nesnenin güvenlik tanımlayıcısından bilgi almak için bu yöntemi çağırın.|
+|[CPrivateObjectSecurityDesc:: set](#set)|Bir özel nesnenin güvenlik tanımlayıcısını değiştirmek için bu yöntemi çağırın.|
 
 ### <a name="operators"></a>İşleçler
 
@@ -55,9 +55,9 @@ class CPrivateObjectSecurityDesc : public CSecurityDesc
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu sınıf, türetilen [CSecurityDesc](../../atl/reference/csecuritydesc-class.md), oluşturmak ve özel bir nesnenin güvenlik tanımlayıcısını yönetme için yöntemleri sağlar.
+[CSecurityDesc](../../atl/reference/csecuritydesc-class.md)öğesinden türetilen bu sınıf, özel bir nesnenin güvenlik tanımlayıcısını oluşturmak ve yönetmek için yöntemler sağlar.
 
-Windows, erişim denetimi modeli için bir giriş için bkz [erişim denetimi](/windows/desktop/SecAuthZ/access-control) Windows SDK.
+Windows 'daki erişim denetim modeline giriş için Windows SDK [Access Control](/windows/desktop/SecAuthZ/access-control) bakın.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -67,11 +67,11 @@ Windows, erişim denetimi modeli için bir giriş için bkz [erişim denetimi](/
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atlsecurity.h
+**Üstbilgi:** atlsecurity. h
 
-##  <a name="converttoautoinherit"></a>  CPrivateObjectSecurityDesc::ConvertToAutoInherit
+##  <a name="converttoautoinherit"></a>CPrivateObjectSecurityDesc:: Converttooto Inherit
 
-Güvenlik tanımlayıcısı ve onun erişim denetim listelerini (ACL'ler) otomatik yayma devralınabilir erişim denetimi girişlerinin (ACE'ler) destekleyen bir biçime dönüştürmek için bu yöntemi çağırın.
+Bir güvenlik tanımlayıcısını ve erişim denetimi listelerini (ACL 'Ler), devralınabilir erişim denetimi girişlerinin (ACE 'Ler) otomatik yayılmasını destekleyen bir biçime dönüştürmek için bu yöntemi çağırın.
 
 ```
 bool ConvertToAutoInherit(
@@ -84,16 +84,16 @@ bool ConvertToAutoInherit(
 ### <a name="parameters"></a>Parametreler
 
 *pParent*<br/>
-İşaretçi bir [CSecurityDesc](../../atl/reference/csecuritydesc-class.md) nesnenin üst kapsayıcısını başvuran nesne. Hiçbir üst kapsayıcı mevcut değilse bu parametre NULL olur.
+Nesnenin üst kapsayıcısına başvuran bir [CSecurityDesc](../../atl/reference/csecuritydesc-class.md) nesnesine yönelik işaretçi. Üst kapsayıcı yoksa, bu parametre NULL olur.
 
-*ObjectType*<br/>
-İşaretçi bir `GUID` geçerli nesneyle ilişkili nesne türünü tanımlayan yapısı. Ayarlama *ObjectType* nesne bir GUID yoksa null.
+*Nesne*<br/>
+Geçerli nesneyle ilişkili `GUID` nesne türünü tanımlayan bir yapıya yönelik işaretçi. Nesne bir GUID içermiyorsa *ObjectType* öğesini null olarak ayarlayın.
 
-*bIsDirectoryObject*<br/>
-Yeni nesne diğer nesneleri içerip içeremeyeceğini belirtir. True değeri yeni nesneye bir kapsayıcı olduğunu gösterir. False değeri yeni nesneye bir kapsayıcı olmadığını gösterir.
+*Bıdirectoryobject*<br/>
+Yeni nesnenin diğer nesneleri içerip içeremeyeceğini belirtir. True değeri, yeni nesnenin bir kapsayıcı olduğunu gösterir. False değeri, yeni nesnenin bir kapsayıcı olmadığını gösterir.
 
 *GenericMapping*<br/>
-İşaretçi bir [GENERIC_MAPPING](/windows/desktop/api/winnt/ns-winnt-_generic_mapping) eşlemesi genel her nesne için belirli haklar sağdan belirtiyor yapısı.
+Nesne için her bir genel sağdan belirli haklara eşlemeyi belirten bir [GENERIC_MAPPING](/windows/desktop/api/winnt/ns-winnt-generic_mapping) yapısına yönelik işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -101,9 +101,9 @@ Başarılı olma durumunda true, aksi durumda false değerini döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem denemeleri ACE isteğe bağlı erişim denetimi listesinin (DACL) belirlemek için ve geçerli güvenlik tanımlayıcısının sistem erişim denetimi listesini (SACL) üst güvenlik tanımlayıcısı ' devralınan. Çağrı [ConvertToAutoInheritPrivateObjectSecurity](/windows/desktop/api/securitybaseapi/nf-securitybaseapi-converttoautoinheritprivateobjectsecurity) işlevi.
+Bu yöntem, geçerli güvenlik tanımlayıcısının isteğe bağlı erişim denetimi listesi (DACL) ve sistem erişim denetimi listesi (SACL) içindeki Ace 'lerden üst güvenlik tanımlayıcısından devralınıp alınmayacağını saptamaya çalışır. [Converttooto ınherprınesnegüvenliği](/windows/desktop/api/securitybaseapi/nf-securitybaseapi-converttoautoinheritprivateobjectsecurity) işlevini çağırır.
 
-##  <a name="cprivateobjectsecuritydesc"></a>  CPrivateObjectSecurityDesc::CPrivateObjectSecurityDesc
+##  <a name="cprivateobjectsecuritydesc"></a>CPrivateObjectSecurityDesc:: CPrivateObjectSecurityDesc
 
 Oluşturucu.
 
@@ -113,11 +113,11 @@ CPrivateObjectSecurityDesc() throw();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Başlatır `CPrivateObjectSecurityDesc` nesne.
+`CPrivateObjectSecurityDesc` Nesnesini başlatır.
 
-##  <a name="dtor"></a>  CPrivateObjectSecurityDesc::~CPrivateObjectSecurityDesc
+##  <a name="dtor"></a>CPrivateObjectSecurityDesc:: ~ CPrivateObjectSecurityDesc
 
-Yıkıcı.
+Yok edicisi.
 
 ```
 ~CPrivateObjectSecurityDesc() throw();
@@ -125,11 +125,11 @@ Yıkıcı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yok edici ayrılan tüm kaynakları serbest bırakır ve özel bir nesnenin güvenlik tanımlayıcısını siler.
+Yıkıcı, ayrılan tüm kaynakları serbest bırakır ve özel nesnenin güvenlik tanımlayıcısını siler.
 
-##  <a name="create"></a>  CPrivateObjectSecurityDesc::Create
+##  <a name="create"></a>CPrivateObjectSecurityDesc:: Create
 
-Ayırın ve çağrı kaynak yöneticisi tarafından oluşturulan özel nesne kendine bağlı güvenlik tanımlayıcısı'nı başlatmak için bu yöntemi çağırın.
+Çağıran Resource Manager tarafından oluşturulan özel nesne için kendine göreli bir güvenlik tanımlayıcısı ayırmak ve başlatmak için bu yöntemi çağırın.
 
 ```
 bool Create(
@@ -152,28 +152,28 @@ bool Create(
 ### <a name="parameters"></a>Parametreler
 
 *pParent*<br/>
-İşaretçi bir [CSecurityDesc](../../atl/reference/csecuritydesc-class.md) başvuran üst dizini içinde yeni bir nesne oluşturulmakta olan nesne. Üst dizini yok ise NULL olarak ayarlayın.
+Yeni bir nesnenin oluşturulduğu üst dizine başvuran bir [CSecurityDesc](../../atl/reference/csecuritydesc-class.md) nesnesine yönelik işaretçi. Üst dizin yoksa, NULL olarak ayarlayın.
 
 *pCreator*<br/>
-Nesnesinin oluşturucusu tarafından sağlanan bir güvenlik tanımlayıcısının işaretçisi. Nesnenin oluşturucusu yeni bir nesne için güvenlik bilgileri açıkça geçemezse, bu parametre NULL olarak ayarlayın.
+Nesnenin oluşturucusu tarafından belirtilen bir güvenlik tanımlayıcısına yönelik işaretçi. Nesnenin Oluşturucusu yeni nesne için güvenlik bilgilerini açıkça geçirmezse, bu parametreyi NULL olarak ayarlayın.
 
-*bIsDirectoryObject*<br/>
-Yeni nesne diğer nesneleri içerip içeremeyeceğini belirtir. True değeri yeni nesneye bir kapsayıcı olduğunu gösterir. False değeri yeni nesneye bir kapsayıcı olmadığını gösterir.
+*Bıdirectoryobject*<br/>
+Yeni nesnenin diğer nesneleri içerip içeremeyeceğini belirtir. True değeri, yeni nesnenin bir kapsayıcı olduğunu gösterir. False değeri, yeni nesnenin bir kapsayıcı olmadığını gösterir.
 
-*Belirteç*<br/>
-Başvuru [CAccessToken](../../atl/reference/caccesstoken-class.md) adına nesnesi oluşturulurken istemci işlemi için nesne.
+*Simgesinde*<br/>
+Adına nesnesi oluşturulmakta olan istemci işlemi için [CAccessToken](../../atl/reference/caccesstoken-class.md) nesnesine başvuru.
 
 *GenericMapping*<br/>
-İşaretçi bir [GENERIC_MAPPING](/windows/desktop/api/winnt/ns-winnt-_generic_mapping) eşlemesi genel her nesne için belirli haklar sağdan belirtiyor yapısı.
+Nesne için her bir genel sağdan belirli haklara eşlemeyi belirten bir [GENERIC_MAPPING](/windows/desktop/api/winnt/ns-winnt-generic_mapping) yapısına yönelik işaretçi.
 
-*ObjectType*<br/>
-İşaretçi bir `GUID` geçerli nesneyle ilişkili nesne türünü tanımlayan yapısı. Ayarlama *ObjectType* nesne bir GUID yoksa null.
+*Nesne*<br/>
+Geçerli nesneyle ilişkili `GUID` nesne türünü tanımlayan bir yapıya yönelik işaretçi. Nesne bir GUID içermiyorsa *ObjectType* öğesini null olarak ayarlayın.
 
 *bIsContainerObject*<br/>
-Yeni nesne diğer nesneleri içerip içeremeyeceğini belirtir. True değeri yeni nesneye bir kapsayıcı olduğunu gösterir. False değeri yeni nesneye bir kapsayıcı olmadığını gösterir.
+Yeni nesnenin diğer nesneleri içerip içeremeyeceğini belirtir. True değeri, yeni nesnenin bir kapsayıcı olduğunu gösterir. False değeri, yeni nesnenin bir kapsayıcı olmadığını gösterir.
 
-*AutoInheritFlags*<br/>
-Erişim denetimi girdileri (ACE) öğesinden devralınan nasıl kontrol bit bayrakları kümesini *pParent*. Bkz: [CreatePrivateObjectSecurityEx](/windows/desktop/api/securitybaseapi/nf-securitybaseapi-createprivateobjectsecurityex) daha fazla ayrıntı için.
+*Oto devralma bayrakları*<br/>
+Erişim denetimi girişlerinin (ACE 'Ler) *pParent*'dan nasıl devralındığını denetleyen bir bit bayrakları kümesi. Daha fazla ayrıntı için bkz. [CreatePrivateObjectSecurityEx](/windows/desktop/api/securitybaseapi/nf-securitybaseapi-createprivateobjectsecurityex) .
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -181,16 +181,16 @@ Başarılı olma durumunda true, aksi durumda false değerini döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntemin çağırdığı [CreatePrivateObjectSercurity](/windows/desktop/api/securitybaseapi/nf-securitybaseapi-createprivateobjectsecurity) veya [CreatePrivateObjectSecurityEx](/windows/desktop/api/securitybaseapi/nf-securitybaseapi-createprivateobjectsecurityex).
+Bu yöntem [CreatePrivateObjectSercurity](/windows/desktop/api/securitybaseapi/nf-securitybaseapi-createprivateobjectsecurity) veya [CreatePrivateObjectSecurityEx](/windows/desktop/api/securitybaseapi/nf-securitybaseapi-createprivateobjectsecurityex)öğesini çağırır.
 
-İkinci yöntem yeni nesnenin nesne türü GUID belirterek veya ACE nasıl devralınır denetleme izin verir.
+İkinci yöntem, yeni nesnenin nesne türü GUID 'INI belirtmeye veya Ace 'Leri nasıl devralındığını denetlemeye izin verir.
 
 > [!NOTE]
->  Bitişik bir bellek bloğu içinde tüm güvenlik bilgilerini depolayan bir güvenlik tanımlayıcısı kendine bağlı güvenlik tanımlayıcısıdır.
+>  Kendi kendine göreli güvenlik tanımlayıcısı, tüm güvenlik bilgilerini ardışık bir bellek bloğunda depolayan bir güvenlik tanımlayıcısıdır.
 
-##  <a name="get"></a>  CPrivateObjectSecurityDesc::Get
+##  <a name="get"></a>CPrivateObjectSecurityDesc:: Get
 
-Özel bir nesnenin güvenlik tanımlayıcısından bilgileri almak için bu yöntemi çağırın.
+Özel bir nesnenin güvenlik tanımlayıcısından bilgi almak için bu yöntemi çağırın.
 
 ```
 bool Get(
@@ -200,11 +200,11 @@ bool Get(
 
 ### <a name="parameters"></a>Parametreler
 
-*sı*<br/>
-Almak için güvenlik tanımlayıcısı bölümlerini gösteren bit bayrakları kümesini. Bu değer bir birleşimi olabilir [SECURITY_INFORMATION](/windows/desktop/SecAuthZ/security-information) bit bayrakları.
+*ortası*<br/>
+Alınacak güvenlik tanımlayıcısının parçalarını gösteren bir bit bayrakları kümesi. Bu değer, [SECURITY_INFORMATION](/windows/desktop/SecAuthZ/security-information) bit bayraklarının bir birleşimi olabilir.
 
 *pResult*<br/>
-İşaretçi bir [CSecurityDesc](../../atl/reference/csecuritydesc-class.md) nesnesini belirtilen güvenlik tanımlayıcısından istenen bilgilerin bir kopyasını alır.
+Belirtilen güvenlik tanımlayıcısından istenen bilgilerin bir kopyasını alan bir [CSecurityDesc](../../atl/reference/csecuritydesc-class.md) nesnesi işaretçisi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -212,9 +212,9 @@ Başarılı olma durumunda true, aksi durumda false değerini döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Güvenlik tanımlayıcısı yapısı ve güvenli kılınabilir nesne için güvenlik bilgilerini içeren ilişkili veri olduğu.
+Güvenlik tanımlayıcısı, güvenli kılınabilir bir nesne için güvenlik bilgilerini içeren bir yapıdır ve ilişkili bir veri.
 
-##  <a name="operator_eq"></a>  CPrivateObjectSecurityDesc::operator =
+##  <a name="operator_eq"></a>CPrivateObjectSecurityDesc:: operator =
 
 Atama işleci.
 
@@ -224,16 +224,16 @@ CPrivateObjectSecurityDesc& operator= (const CPrivateObjectSecurityDesc& rhs) th
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*<br/>
-`CPrivateObjectSecurityDesc` Nesne geçerli nesneye atamak için.
+*sağ taraftan*<br/>
+Geçerli nesneye atanacak nesne. `CPrivateObjectSecurityDesc`
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Güncelleştirilmiş döndürür `CPrivateObjectSecurityDesc` nesne.
+Güncelleştirilmiş `CPrivateObjectSecurityDesc` nesneyi döndürür.
 
-##  <a name="set"></a>  CPrivateObjectSecurityDesc::Set
+##  <a name="set"></a>CPrivateObjectSecurityDesc:: set
 
-Özel bir nesnenin güvenlik tanımlayıcısını değiştirmek için bu yöntemi çağırın.
+Bir özel nesnenin güvenlik tanımlayıcısını değiştirmek için bu yöntemi çağırın.
 
 ```
 bool Set(
@@ -252,20 +252,20 @@ bool Set(
 
 ### <a name="parameters"></a>Parametreler
 
-*sı*<br/>
-Ayarlamak için güvenlik tanımlayıcısı bölümlerini gösteren bit bayrakları kümesini. Bu değer bir birleşimi olabilir [SECURITY_INFORMATION](/windows/desktop/SecAuthZ/security-information) bit bayrakları.
+*ortası*<br/>
+Ayarlanacak güvenlik tanımlayıcısının parçalarını gösteren bir bit bayrakları kümesi. Bu değer, [SECURITY_INFORMATION](/windows/desktop/SecAuthZ/security-information) bit bayraklarının bir birleşimi olabilir.
 
-*Değiştirme*<br/>
-İşaretçi bir [CSecurityDesc](../../atl/reference/csecuritydesc-class.md) nesne. Bu güvenlik tanımlayıcısı bölümlerini gösterilen *sı* parametresi, nesnenin güvenlik tanımlayıcısına uygulanır.
+*Gerektirmeden*<br/>
+[CSecurityDesc](../../atl/reference/csecuritydesc-class.md) nesnesine yönelik işaretçi. Bu güvenlik tanımlayıcısının, *sı* parametresi tarafından belirtilen kısımları nesnenin güvenlik tanımlayıcısına uygulanır.
 
 *GenericMapping*<br/>
-İşaretçi bir [GENERIC_MAPPING](/windows/desktop/api/winnt/ns-winnt-_generic_mapping) eşlemesi genel her nesne için belirli haklar sağdan belirtiyor yapısı.
+Nesne için her bir genel sağdan belirli haklara eşlemeyi belirten bir [GENERIC_MAPPING](/windows/desktop/api/winnt/ns-winnt-generic_mapping) yapısına yönelik işaretçi.
 
-*Belirteç*<br/>
-Başvuru [CAccessToken](../../atl/reference/caccesstoken-class.md) adına nesnesi oluşturulurken istemci işlemi için nesne.
+*Simgesinde*<br/>
+Adına nesnesi oluşturulmakta olan istemci işlemi için [CAccessToken](../../atl/reference/caccesstoken-class.md) nesnesine başvuru.
 
-*AutoInheritFlags*<br/>
-Erişim denetimi girdileri (ACE) öğesinden devralınan nasıl kontrol bit bayrakları kümesini *pParent*. Bkz: [CreatePrivateObjectSecurityEx](/windows/desktop/api/securitybaseapi/nf-securitybaseapi-createprivateobjectsecurityex) daha fazla ayrıntı için.
+*Oto devralma bayrakları*<br/>
+Erişim denetimi girişlerinin (ACE 'Ler) *pParent*'dan nasıl devralındığını denetleyen bir bit bayrakları kümesi. Daha fazla ayrıntı için bkz. [CreatePrivateObjectSecurityEx](/windows/desktop/api/securitybaseapi/nf-securitybaseapi-createprivateobjectsecurityex) .
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -273,11 +273,11 @@ Başarılı olma durumunda true, aksi durumda false değerini döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İkinci yöntem, nesnenin nesne türü GUID belirterek veya ACE nasıl devralınır denetleme izin verir.
+İkinci yöntem, nesnenin nesne türü GUID 'INI belirtmeye veya Ace 'Leri nasıl devralındığını denetlemeye izin verir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[SECURITY_DESCRIPTOR](/windows/desktop/api/winnt/ns-winnt-_security_descriptor)<br/>
-[Sınıfına genel bakış](../../atl/atl-class-overview.md)<br/>
+[SECURITY_DESCRIPTOR](/windows/desktop/api/winnt/ns-winnt-security_descriptor)<br/>
+[Sınıfa genel bakış](../../atl/atl-class-overview.md)<br/>
 [Güvenlik Genel İşlevleri](../../atl/reference/security-global-functions.md)<br/>
 [CSecurityDesc Sınıfı](../../atl/reference/csecuritydesc-class.md)

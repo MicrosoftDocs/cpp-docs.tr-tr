@@ -5,16 +5,16 @@ ms.topic: reference
 helpviewer_keywords:
 - NotifyHandler function
 ms.assetid: 5ff953ec-de35-42bc-8b3c-d384d636c139
-ms.openlocfilehash: 292a1c6606585dc0694ee678ba8bc9b5fbc42681
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: d875a039b01b7458a1df46a2539cf5c68aa67e41
+ms.sourcegitcommit: 46d24d6e70c03e05484923d9efc6ed5150e96a64
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62261452"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68915930"
 ---
 # <a name="notifyhandler"></a>NotifyHandler
 
-İleti haritanızı NOTIFY_HANDLER makroda'öğesinin üçüncü parametresi tarafından belirtilen işlevin adı.
+İleti Haritalarınızın NOTIFY_HANDLER makrosunun üçüncü parametresi tarafından tanımlanan işlevin adı.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -27,25 +27,25 @@ LRESULT NotifyHandler(
 
 #### <a name="parameters"></a>Parametreler
 
-*idCtrl*<br/>
-İletiyi gönderen denetim tanımlayıcısı.
+*ıdctrl*<br/>
+İletiyi gönderen denetimin tanımlayıcısı.
 
-*pnmh*<br/>
-Adresi bir [NMHDR](/windows/desktop/api/richedit/ns-richedit-_nmhdr) bildirimi kodunu ve ek bilgiler içeren yapısı. Bazı bildirim iletileri için bu parametreyi olan daha büyük bir yapısına işaret `NMHDR` yapısı olarak kendi ilk üyesi.
+*PNMH*<br/>
+Bildirim kodu ve ek bilgiler içeren bir [nmhdr](/windows/desktop/api/richedit/ns-richedit-nmhdr) yapısının adresi. Bazı bildirim iletileri için, bu parametre, ilk üyesi olarak `NMHDR` yapısına sahip daha büyük bir yapıya işaret eder.
 
-*bHandled*<br/>
-İleti eşleme kümeleri *bHandled* önce true *NotifyHandler* çağrılır. Varsa *NotifyHandler* tam iletiyi işlemez ayarlamanız gerekir *bHandled* için **FALSE** ihtiyaç daha fazla işleme belirtmek için.
+*Bişlenmiş*<br/>
+Çağrılan ileti haritası, *NotifyHandler* çağrılmadan önce true değerine ayarlanır. *NotifyHandler* iletiyi tam olarak işlemezse, iletinin daha fazla işleme ihtiyacı olduğunu göstermek Için *Bişlenmiş* olarak **false** olarak ayarlanmalıdır.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-İleti işleme sonucu. başarılıysa 0.
+İleti işlemenin sonucu. başarılı olursa 0.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu ileti işleyicisi bir ileti eşlemede kullanma örneği için bkz: [NOTIFY_HANDLER](reference/message-map-macros-atl.md#notify_handler)).
+Bu ileti işleyicisini bir ileti eşlemesinde kullanmanın bir örneği için bkz. [NOTIFY_HANDLER](reference/message-map-macros-atl.md#notify_handler)).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Pencere Uygulama](../atl/implementing-a-window.md)<br/>
-[İleti eşlemeleri](../atl/message-maps-atl.md)<br/>
+[İleti haritaları](../atl/message-maps-atl.md)<br/>
 [WM_NOTIFY](/windows/desktop/controls/wm-notify)

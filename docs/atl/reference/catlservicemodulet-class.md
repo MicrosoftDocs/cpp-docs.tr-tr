@@ -1,5 +1,5 @@
 ---
-title: CAtlServiceModuleT Class
+title: CAtlServiceModuleT sınıfı
 ms.date: 05/06/2019
 f1_keywords:
 - CAtlServiceModuleT
@@ -35,19 +35,19 @@ f1_keywords:
 helpviewer_keywords:
 - CAtlServiceModuleT class
 ms.assetid: 8fc753ce-4a50-402b-9b4a-0a4ce5dd496c
-ms.openlocfilehash: 1d44e356d907afcb261c0b4a765f8807bb54dc19
-ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.openlocfilehash: 095d909fefe0053b742368f260cf61937c2f5426
+ms.sourcegitcommit: 46d24d6e70c03e05484923d9efc6ed5150e96a64
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65221179"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68915866"
 ---
-# <a name="catlservicemodulet-class"></a>CAtlServiceModuleT Class
+# <a name="catlservicemodulet-class"></a>CAtlServiceModuleT sınıfı
 
-Bu sınıf, bir hizmet uygular.
+Bu sınıf bir hizmeti uygular.
 
 > [!IMPORTANT]
->  Bu sınıf ve üyelerine, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz.
+>  Bu sınıf ve üyeleri Windows Çalışma Zamanı yürütülen uygulamalarda kullanılamaz.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -58,11 +58,11 @@ class ATL_NO_VTABLE CAtlServiceModuleT : public CAtlExeModuleT<T>
 
 #### <a name="parameters"></a>Parametreler
 
-*T*<br/>
-Sınıfınıza türetilen `CAtlServiceModuleT`.
+*ŞI*<br/>
+Sınıfınız öğesinden `CAtlServiceModuleT`türetilir.
 
-*nServiceNameID*<br/>
-Hizmet kaynak tanımlayıcısı.
+*Nservicenameıd*<br/>
+Hizmetin kaynak tanımlayıcısı.
 
 ## <a name="members"></a>Üyeler
 
@@ -70,50 +70,50 @@ Hizmet kaynak tanımlayıcısı.
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[CAtlServiceModuleT::CAtlServiceModuleT](#catlservicemodulet)|Oluşturucu.|
+|[CAtlServiceModuleT:: Catlservicemodület](#catlservicemodulet)|Oluşturucu.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[CAtlServiceModuleT::Handler](#handler)|İşleyici rutinini hizmeti.|
-|[CAtlServiceModuleT::InitializeSecurity](#initializesecurity)|Varsayılan hizmet için güvenlik ayarları sağlar.|
-|[CAtlServiceModuleT::Install](#install)|Yükler ve hizmeti oluşturur.|
-|[CAtlServiceModuleT::IsInstalled](#isinstalled)|Hizmetinin yüklendiğini doğrular.|
-|[CAtlServiceModuleT::LogEvent](#logevent)|Olay günlüğüne yazar.|
-|[CAtlServiceModuleT::OnContinue](#oncontinue)|Hizmeti sürdürmek için bu yöntemi yok sayın.|
-|[CAtlServiceModuleT::OnInterrogate](#oninterrogate)|Hizmet aracıyı sorgulamak için bu yöntemi yok sayın.|
-|[CAtlServiceModuleT::OnPause](#onpause)|Hizmeti duraklatmak için bu yöntemi yok sayın.|
-|[CAtlServiceModuleT::OnShutdown](#onshutdown)|Hizmeti kapatmak için bu yöntemi geçersiz kılın|
-|[CAtlServiceModuleT::OnStop](#onstop)|Hizmeti durdurmak için bu yöntemi geçersiz kılın|
-|[CAtlServiceModuleT::OnUnknownRequest](#onunknownrequest)|Bilinmeyen hizmet isteklerini işlemek için bu yöntemi geçersiz kılın|
-|[CAtlServiceModuleT::ParseCommandLine](#parsecommandline)|Komut satırı ayrıştırır ve gerekirse kayıt gerçekleştirir.|
-|[CAtlServiceModuleT::PreMessageLoop](#premessageloop)|Bu yöntem, ileti döngüsü girmeden hemen önce çağrılır.|
-|[CAtlServiceModuleT::RegisterAppId](#registerappid)|Hizmet kayıt defterinde kaydeder.|
-|[CAtlServiceModuleT::Run](#run)|Hizmet çalışır.|
-|[CAtlServiceModuleT::ServiceMain](#servicemain)|Hizmet Denetimi Yöneticisi tarafından çağrılan yöntemi.|
-|[CAtlServiceModuleT::SetServiceStatus](#setservicestatus)|Hizmet durumunu güncelleştirir.|
-|[CAtlServiceModuleT::Start](#start)|Çağıran `CAtlServiceModuleT::WinMain` hizmet başladığında.|
-|[CAtlServiceModuleT::Uninstall](#uninstall)|Durdurur ve hizmeti kaldırır.|
-|[CAtlServiceModuleT::Unlock](#unlock)|Hizmetin kilit sayısını azaltır.|
-|[CAtlServiceModuleT::UnregisterAppId](#unregisterappid)|Hizmet kayıt defterinden kaldırır.|
-|[CAtlServiceModuleT::WinMain](#winmain)|Bu yöntem, hizmeti çalıştırmak için gerekli kodu uygular.|
+|[CAtlServiceModuleT:: Handler](#handler)|Hizmetin işleyici yordamı.|
+|[CAtlServiceModuleT:: InitializeSecurity](#initializesecurity)|Hizmeti için varsayılan güvenlik ayarlarını sağlar.|
+|[CAtlServiceModuleT:: Install](#install)|Hizmeti yükleyip oluşturur.|
+|[CAtlServiceModuleT:: IsInstalled](#isinstalled)|Hizmetin yüklendiğini onaylar.|
+|[CAtlServiceModuleT:: LogEvent](#logevent)|Olay günlüğüne yazar.|
+|[CAtlServiceModuleT:: OnContinue](#oncontinue)|Hizmete devam etmek için bu yöntemi geçersiz kılın.|
+|[CAtlServiceModuleT:: OnInterrogate](#oninterrogate)|Hizmeti sorgulanamıyor için bu yöntemi geçersiz kılın.|
+|[CAtlServiceModuleT:: OnPause](#onpause)|Hizmeti duraklatmak için bu yöntemi geçersiz kılın.|
+|[CAtlServiceModuleT:: Onkapatmalar](#onshutdown)|Hizmeti kapatmak için bu yöntemi geçersiz kılın|
+|[CAtlServiceModuleT:: OnStop](#onstop)|Hizmeti durdurmak için bu yöntemi geçersiz kılın|
+|[CAtlServiceModuleT:: OnUnknownRequest](#onunknownrequest)|Hizmete yönelik bilinmeyen istekleri işlemek için bu yöntemi geçersiz kılın|
+|[CAtlServiceModuleT::P arseCommandLine](#parsecommandline)|Komut satırını ayrıştırır ve gerekirse kayıt gerçekleştirir.|
+|[CAtlServiceModuleT::P reMessageLoop](#premessageloop)|Bu yöntem ileti döngüsüne girmeden hemen önce çağrılır.|
+|[CAtlServiceModuleT:: Registerappıd](#registerappid)|Hizmeti kayıt defterine kaydeder.|
+|[CAtlServiceModuleT:: Run](#run)|Hizmeti çalıştırır.|
+|[CAtlServiceModuleT:: ServiceMain](#servicemain)|Hizmet denetimi yöneticisi tarafından çağrılan yöntem.|
+|[CAtlServiceModuleT:: SetServiceStatus](#setservicestatus)|Hizmet durumunu güncelleştirir.|
+|[CAtlServiceModuleT:: Start](#start)|`CAtlServiceModuleT::WinMain` Hizmet başladığında çağırılır.|
+|[CAtlServiceModuleT:: Uninstall](#uninstall)|Hizmeti durdurup kaldırır.|
+|[CAtlServiceModuleT:: unlock](#unlock)|Hizmetin kilit sayısını azaltır.|
+|[CAtlServiceModuleT:: Unregisterappıd](#unregisterappid)|Hizmeti kayıt defterinden kaldırır.|
+|[CAtlServiceModuleT:: WinMain](#winmain)|Bu yöntem, hizmeti çalıştırmak için gereken kodu uygular.|
 
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[CAtlServiceModuleT::m_bService](#m_bservice)|Program, hizmet olarak çalışıyor belirten bayrak.|
-|[CAtlServiceModuleT::m_dwThreadID](#m_dwthreadid)|Üye değişkeni iş parçacığı tanıtıcısını depolama.|
-|[CAtlServiceModuleT::m_hServiceStatus](#m_hservicestatus)|Üye değişkeni depolamak için geçerli hizmet durumu bilgileri yapısına bir tanıtıcı.|
-|[CAtlServiceModuleT::m_status](#m_status)|Üye değişkeni depolamak için geçerli hizmet durumu bilgileri yapısı.|
-|[CAtlServiceModuleT::m_szServiceName](#m_szservicename)|Kayıtlı hizmet adı.|
+|[CAtlServiceModuleT:: m_bService](#m_bservice)|Programın hizmet olarak çalıştığını belirten bayrak.|
+|[CAtlServiceModuleT:: m_dwThreadID](#m_dwthreadid)|İş parçacığı tanımlayıcısını depolayan üye değişkeni.|
+|[CAtlServiceModuleT:: m_hServiceStatus](#m_hservicestatus)|Geçerli hizmet için bir tanıtıcıyı durum bilgisi yapısına depolayan üye değişkeni.|
+|[CAtlServiceModuleT:: m_status](#m_status)|Geçerli hizmet için durum bilgisi yapısını depolayan üye değişkeni.|
+|[CAtlServiceModuleT:: m_szServiceName](#m_szservicename)|Kaydolmakta olan hizmetin adı.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-`CAtlServiceModuleT`, öğesinden türetilen [CAtlExeModuleT](../../atl/reference/catlexemodulet-class.md), ATL hizmeti modülü uygular. `CAtlServiceModuleT` komut satırı işlemeyi, yükleme, kaydetme ve kaldırma için yöntemler sağlar. Ek işlevler gerekiyorsa, bunlar ve diğer yöntemleri geçersiz kılınabilir.
+`CAtlServiceModuleT`[Catlexemodüle Let](../../atl/reference/catlexemodulet-class.md)'ten TÜRETILMIŞ bir ATL hizmeti modülü uygular. `CAtlServiceModuleT`komut satırı işleme, yükleme, kaydetme ve kaldırma için yöntemler sağlar. Ek işlevsellik gerekliyse, bunlar ve diğer Yöntemler geçersiz kılınabilir.
 
-Bu sınıf artık kullanılmıyor değiştirir [CComModule sınıfı](../../atl/reference/ccommodule-class.md) ATL önceki sürümlerinde kullanılan Bkz: [ATL modül sınıfları](../../atl/atl-module-classes.md) daha fazla ayrıntı için.
+Bu sınıf, ATL 'nin önceki sürümlerinde kullanılan eski [CComModule sınıfının](../../atl/reference/ccommodule-class.md) yerini alır. Daha fazla ayrıntı için bkz. [ATL modül sınıfları](../../atl/atl-module-classes.md) .
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -121,17 +121,17 @@ Bu sınıf artık kullanılmıyor değiştirir [CComModule sınıfı](../../atl/
 
 [CAtlModule](../../atl/reference/catlmodule-class.md)
 
-[CAtlModuleT](../../atl/reference/catlmodulet-class.md)
+[Catlmodület](../../atl/reference/catlmodulet-class.md)
 
-[CAtlExeModuleT](../../atl/reference/catlexemodulet-class.md)
+[Catlexemodüle Let](../../atl/reference/catlexemodulet-class.md)
 
 `CAtlServiceModuleT`
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atlbase.h
+**Üstbilgi:** atlbase. h
 
-##  <a name="catlservicemodulet"></a>  CAtlServiceModuleT::CAtlServiceModuleT
+##  <a name="catlservicemodulet"></a>CAtlServiceModuleT:: Catlservicemodület
 
 Oluşturucu.
 
@@ -141,11 +141,11 @@ CAtlServiceModuleT() throw();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Veri üyeleri başlatır ve ilk hizmet durumunu ayarlar.
+Veri üyelerini başlatır ve ilk hizmet durumunu ayarlar.
 
-##  <a name="handler"></a>  CAtlServiceModuleT::Handler
+##  <a name="handler"></a>CAtlServiceModuleT:: Handler
 
-İşleyici rutinini hizmeti.
+Hizmetin işleyici yordamı.
 
 ```
 void Handler(DWORD dwOpcode) throw();
@@ -154,27 +154,27 @@ void Handler(DWORD dwOpcode) throw();
 ### <a name="parameters"></a>Parametreler
 
 *dwOpcode*<br/>
-İşleyici işlemi tanımlayan anahtar. Ayrıntılar için konusundaki yorumlara bakın.
+İşleyici işlemini tanımlayan bir anahtar. Ayrıntılar için bkz. açıklamalar.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Hizmet Denetimi Yöneticisi (SCM) çağrılarını duraklatmak veya durdurma gibi hizmet ve sorunu yönergeleri durumunu almak için kod budur. İşlem için aşağıda gösterilen kodu SCM geçirir `Handler` hizmet ne yapması gerektiğini belirtmek için.
+Bu, hizmet Denetim Yöneticisi 'nin (SCM) hizmet durumunu almak ve Durdur veya Duraklat gibi yönergeler vermek için çağırdığı koddur. SCM, hizmetin ne yapması gerektiğini göstermek `Handler` için, aşağıda gösterildiği gibi bir işlem kodu geçirir.
 
 |İşlem kodu|Açıklama|
 |--------------------|-------------|
-|SERVICE_CONTROL_STOP|Hizmetini durdurur. Bu yöntemi yok sayın [CAtlServiceModuleT::OnStop](#onstop) davranışını değiştirmek için atlbase.h içinde.|
-|SERVICE_CONTROL_PAUSE|Kullanıcı uygulanır. Boş yöntemi yok sayın [CAtlServiceModuleT::OnPause](#onpause) hizmeti duraklatma atlbase.h içinde.|
-|SERVICE_CONTROL_CONTINUE|Kullanıcı uygulanır. Boş yöntemi yok sayın [CAtlServiceModuleT::OnContinue](#oncontinue) hizmeti sürdürmek için atlbase.h içinde.|
-|SERVICE_CONTROL_INTERROGATE|Kullanıcı uygulanır. Boş yöntemi yok sayın [CAtlServiceModuleT::OnInterrogate](#oninterrogate) sorgulama hizmeti için atlbase.h içinde.|
-|SERVICE_CONTROL_SHUTDOWN|Kullanıcı uygulanır. Boş yöntemi yok sayın [CAtlServiceModuleT::OnShutdown](#onshutdown) atlbase.h kapatma hizmeti içinde.|
+|SERVICE_CONTROL_STOP|Hizmeti sonlandırır. Davranışı değiştirmek için atlbase. h içinde [CAtlServiceModuleT:: OnStop](#onstop) yöntemini geçersiz kılın.|
+|SERVICE_CONTROL_PAUSE|Kullanıcı uygulandı. Hizmeti duraklatmak için atlbase. h içinde boş olan [CAtlServiceModuleT:: OnPause](#onpause) metodunu geçersiz kılın.|
+|SERVICE_CONTROL_CONTINUE|Kullanıcı uygulandı. Service 'e devam etmek için atlbase. h içinde boş olan [CAtlServiceModuleT:: OnContinue](#oncontinue) metodunu geçersiz kılın.|
+|SERVICE_CONTROL_INTERROGATE|Kullanıcı uygulandı. Atlbase. h içindeki boş ' [OnInterrogate](#oninterrogate) ' metodunu hizmeti sorgulanamıyor için geçersiz kılın.|
+|SERVICE_CONTROL_SHUTDOWN|Kullanıcı uygulandı. Hizmeti kapatmaya yönelik atlbase. h 'de boş olan [CAtlServiceModuleT:: Onkapatılmasını](#onshutdown) metodunu geçersiz kılın.|
 
-İşlem kodu tanınmıyorsa yöntemi [CAtlServiceModuleT::OnUnknownRequest](#onunknownrequest) çağrılır.
+İşlem kodu tanınmazsa, [CAtlServiceModuleT:: OnUnknownRequest](#onunknownrequest) yöntemi çağırılır.
 
-ATL tarafından oluşturulan varsayılan hizmet durdurma yönergesi yalnızca işler. SCM durdurma yönerge geçerse, service, SCM program durmak için olduğunu söyler. Sonra hizmeti çağırır `PostThreadMessage` kendisine bir çıkış iletisi göndermek için. Bu ileti döngüsü sonlanır ve hizmet sonuçta kapatın.
+Varsayılan ATL tarafından oluşturulan bir hizmet yalnızca durdurma yönergesini işler. SCM durdurma yönergesini geçerse, hizmet SCM 'ye programın durmak üzere olduğunu söyler. Hizmet daha sonra bir `PostThreadMessage` çıkış iletisi göndermek için çağırır. Bu ileti döngüsünü sonlandırır ve hizmet sonunda kapatılacak.
 
-##  <a name="initializesecurity"></a>  CAtlServiceModuleT::InitializeSecurity
+##  <a name="initializesecurity"></a>CAtlServiceModuleT:: InitializeSecurity
 
-Varsayılan hizmet için güvenlik ayarları sağlar.
+Hizmeti için varsayılan güvenlik ayarlarını sağlar.
 
 ```
 HRESULT InitializeSecurity() throw();
@@ -182,25 +182,25 @@ HRESULT InitializeSecurity() throw();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.
+Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Öğesinden türetilen herhangi bir sınıf `CAtlServiceModuleT` bu yöntem, türetilen sınıfta uygulamalıdır.
+Öğesinden `CAtlServiceModuleT` türetilen herhangi bir sınıf türetilmiş sınıfta bu yöntemi gerçekleştirmelidir.
 
-Çağrısında PKT düzeyi kimlik doğrulama, kimliğe bürünme düzeyi rpc_c_ımp_level_ıdentıfy'nın ve uygun null olmayan güvenlik tanımlayıcısı'nı kullanmak `CoInitializeSecurity`.
+Çağrısı içinde, PKT düzeyi kimlik doğrulaması, RPC_C_IMP_LEVEL_IDENTIFY kimliğe bürünme düzeyi ve uygun bir null olmayan güvenlik tanımlayıcısı kullanın `CoInitializeSecurity`.
 
-Sihirbazın ürettiği nonattributed hizmet projeleri için bu içinde olacaktır
+Sihirbaz tarafından oluşturulan, öznitelik atanmış olmayan hizmet projeleri için
 
 [!code-cpp[NVC_ATL_Service#1](../../atl/reference/codesnippet/cpp/catlservicemodulet-class_1.cpp)]
 
-Öznitelikli hizmet projeleri için bu içinde olacaktır
+Öznitelikli hizmet projeleri için bu durum
 
 [!code-cpp[NVC_ATL_ServiceAttrib#1](../../atl/reference/codesnippet/cpp/catlservicemodulet-class_2.cpp)]
 
-##  <a name="install"></a>  CAtlServiceModuleT::Install
+##  <a name="install"></a>CAtlServiceModuleT:: Install
 
-Yükler ve hizmeti oluşturur.
+Hizmeti yükleyip oluşturur.
 
 ```
 BOOL Install() throw();
@@ -208,15 +208,15 @@ BOOL Install() throw();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olduğunda TRUE döndürür başarısız olduğunda FALSE.
+Başarılı olduğunda TRUE, hatada FALSE döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Hizmeti Hizmet Denetim Yöneticisi (SCM) veritabanına yükler ve ardından hizmet nesnesi oluşturur. Hizmet oluşturulamadı, bir ileti kutusu görüntülenir ve yöntem FALSE döndürür.
+Hizmeti Hizmet Denetim Yöneticisi (SCM) veritabanına yükleyip ardından hizmet nesnesini oluşturur. Hizmet oluşturulanmadıysa bir ileti kutusu görüntülenir ve Yöntem FALSE döndürür.
 
-##  <a name="isinstalled"></a>  CAtlServiceModuleT::IsInstalled
+##  <a name="isinstalled"></a>CAtlServiceModuleT:: IsInstalled
 
-Hizmetinin yüklendiğini doğrular.
+Hizmetin yüklendiğini onaylar.
 
 ```
 BOOL IsInstalled() throw();
@@ -224,9 +224,9 @@ BOOL IsInstalled() throw();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Hizmet yoksa yüklenen, FALSE ise TRUE döndürür.
+Hizmet yüklenmişse TRUE, aksi takdirde FALSE döndürür.
 
-##  <a name="logevent"></a>  CAtlServiceModuleT::LogEvent
+##  <a name="logevent"></a>CAtlServiceModuleT:: LogEvent
 
 Olay günlüğüne yazar.
 
@@ -237,18 +237,18 @@ void __cdecl LogEvent(LPCTSTR pszFormat, ...) throw();
 ### <a name="parameters"></a>Parametreler
 
 *pszFormat*<br/>
-Olay günlüğüne yazmak için dize.
+Olay günlüğüne yazılacak dize.
 
 *...*<br/>
-Olay günlüğüne yazılması için isteğe bağlı ek dizeleri.
+Olay günlüğüne yazılacak isteğe bağlı ek dizeler.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem ayrıntıları bir olay işlevi kullanarak günlüğüne yazıyor [ReportEvent](/windows/desktop/api/winbase/nf-winbase-reporteventa). Dize, hiçbir hizmet çalışıyorsa, konsola gönderilir.
+Bu yöntem, ayrıntıları [ReportEvent](/windows/desktop/api/winbase/nf-winbase-reporteventa)işlevini kullanarak bir olay günlüğüne yazar. Hiçbir hizmet çalışmıyorsa, dize konsola gönderilir.
 
-##  <a name="m_bservice"></a>  CAtlServiceModuleT::m_bService
+##  <a name="m_bservice"></a>CAtlServiceModuleT:: m_bService
 
-Program, hizmet olarak çalışıyor belirten bayrak.
+Programın hizmet olarak çalıştığını belirten bayrak.
 
 ```
 BOOL m_bService;
@@ -256,11 +256,11 @@ BOOL m_bService;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir uygulama exe dosyasını hizmet EXE ayırt etmek için kullanılır.
+Bir Service EXE 'yi bir uygulama EXE 'sinden ayırt etmek için kullanılır.
 
-##  <a name="m_dwthreadid"></a>  CAtlServiceModuleT::m_dwThreadID
+##  <a name="m_dwthreadid"></a>CAtlServiceModuleT:: m_dwThreadID
 
-Üye değişkeni depolama hizmetinin iş parçacığı tanımlayıcısı.
+Hizmetin iş parçacığı tanımlayıcısını depolayan üye değişkeni.
 
 ```
 DWORD m_dwThreadID;
@@ -268,11 +268,11 @@ DWORD m_dwThreadID;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu değişken, geçerli iş parçacığının iş parçacığı kimliğini depolar.
+Bu değişken, geçerli iş parçacığının iş parçacığı tanımlayıcısını depolar.
 
-##  <a name="m_hservicestatus"></a>  CAtlServiceModuleT::m_hServiceStatus
+##  <a name="m_hservicestatus"></a>CAtlServiceModuleT:: m_hServiceStatus
 
-Üye değişkeni depolamak için geçerli hizmet durumu bilgileri yapısına bir tanıtıcı.
+Geçerli hizmet için bir tanıtıcıyı durum bilgisi yapısına depolayan üye değişkeni.
 
 ```
 SERVICE_STATUS_HANDLE m_hServiceStatus;
@@ -280,11 +280,11 @@ SERVICE_STATUS_HANDLE m_hServiceStatus;
 
 ### <a name="remarks"></a>Açıklamalar
 
-[SERVICE_STATUS](/windows/desktop/api/winsvc/ns-winsvc-_service_status) yapısı bir hizmeti hakkında bilgiler içerir.
+[SERVICE_STATUS](/windows/desktop/api/winsvc/ns-winsvc-service_status) yapısı, bir hizmet hakkındaki bilgileri içerir.
 
-##  <a name="m_status"></a>  CAtlServiceModuleT::m_status
+##  <a name="m_status"></a>CAtlServiceModuleT:: m_status
 
-Üye değişkeni depolamak için geçerli hizmet durumu bilgileri yapısı.
+Geçerli hizmet için durum bilgisi yapısını depolayan üye değişkeni.
 
 ```
 SERVICE_STATUS m_status;
@@ -292,11 +292,11 @@ SERVICE_STATUS m_status;
 
 ### <a name="remarks"></a>Açıklamalar
 
-[SERVICE_STATUS](/windows/desktop/api/winsvc/ns-winsvc-_service_status) yapısı bir hizmeti hakkında bilgiler içerir.
+[SERVICE_STATUS](/windows/desktop/api/winsvc/ns-winsvc-service_status) yapısı, bir hizmet hakkındaki bilgileri içerir.
 
-##  <a name="m_szservicename"></a>  CAtlServiceModuleT::m_szServiceName
+##  <a name="m_szservicename"></a>CAtlServiceModuleT:: m_szServiceName
 
-Kayıtlı hizmet adı.
+Kaydolmakta olan hizmetin adı.
 
 ```
 TCHAR [256] m_szServiceName;
@@ -304,51 +304,51 @@ TCHAR [256] m_szServiceName;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Hizmetin adını depolayan bir null ile sonlandırılmış dize.
+Hizmetin adını depolayan, null ile sonlandırılmış bir dize.
 
-##  <a name="oncontinue"></a>  CAtlServiceModuleT::OnContinue
+##  <a name="oncontinue"></a>CAtlServiceModuleT:: OnContinue
 
-Hizmeti sürdürmek için bu yöntemi yok sayın.
+Hizmete devam etmek için bu yöntemi geçersiz kılın.
 
 ```
 void OnContinue() throw();
 ```
 
-##  <a name="oninterrogate"></a>  CAtlServiceModuleT::OnInterrogate
+##  <a name="oninterrogate"></a>CAtlServiceModuleT:: OnInterrogate
 
-Hizmet aracıyı sorgulamak için bu yöntemi yok sayın.
+Hizmeti sorgulanamıyor için bu yöntemi geçersiz kılın.
 
 ```
 void OnInterrogate() throw();
 ```
 
-##  <a name="onpause"></a>  CAtlServiceModuleT::OnPause
+##  <a name="onpause"></a>CAtlServiceModuleT:: OnPause
 
-Hizmeti duraklatmak için bu yöntemi yok sayın.
+Hizmeti duraklatmak için bu yöntemi geçersiz kılın.
 
 ```
 void OnPause() throw();
 ```
 
-##  <a name="onshutdown"></a>  CAtlServiceModuleT::OnShutdown
+##  <a name="onshutdown"></a>CAtlServiceModuleT:: Onkapatmalar
 
-Hizmeti kapatmak için bu yöntemi yok sayın.
+Hizmeti kapatmak için bu yöntemi geçersiz kılın.
 
 ```
 void OnShutdown() throw();
 ```
 
-##  <a name="onstop"></a>  CAtlServiceModuleT::OnStop
+##  <a name="onstop"></a>CAtlServiceModuleT:: OnStop
 
-Hizmeti durdurmak için bu yöntemi yok sayın.
+Hizmeti durdurmak için bu yöntemi geçersiz kılın.
 
 ```
 void OnStop() throw();
 ```
 
-##  <a name="onunknownrequest"></a>  CAtlServiceModuleT::OnUnknownRequest
+##  <a name="onunknownrequest"></a>CAtlServiceModuleT:: OnUnknownRequest
 
-Bilinmeyen hizmet isteklerini işlemek için bu yöntemi yok sayın.
+Hizmete yönelik bilinmeyen istekleri işlemek için bu yöntemi geçersiz kılın.
 
 ```
 void OnUnknownRequest(DWORD /* dwOpcode*/) throw();
@@ -357,11 +357,11 @@ void OnUnknownRequest(DWORD /* dwOpcode*/) throw();
 ### <a name="parameters"></a>Parametreler
 
 *dwOpcode*<br/>
-Ayrılmış.
+Ayrılamadı.
 
-##  <a name="parsecommandline"></a>  CAtlServiceModuleT::ParseCommandLine
+##  <a name="parsecommandline"></a>CAtlServiceModuleT::P arseCommandLine
 
-Komut satırı ayrıştırır ve gerekirse kayıt gerçekleştirir.
+Komut satırını ayrıştırır ve gerekirse kayıt gerçekleştirir.
 
 ```
 bool ParseCommandLine(LPCTSTR lpCmdLine, HRESULT* pnRetCode) throw();
@@ -372,20 +372,20 @@ bool ParseCommandLine(LPCTSTR lpCmdLine, HRESULT* pnRetCode) throw();
 *lpCmdLine*<br/>
 Komut satırı.
 
-*pnRetCode*<br/>
-Kayıt için (bir yerde gerçekleştirirse) karşılık gelen HRESULT.
+*Pnekcode*<br/>
+Kayda karşılık gelen HRESULT (Eğer gerçekleştiyse).
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı veya yanlış komut satırında sağlanan RGS dosyası kaydedilemedi true döndürür.
+Başarılı olduğunda true, komut satırında sağlanan RGS dosyası kaydedilüyorsa false döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Komut satırı ayrıştırır ve kaydeder veya sağlanan RGS dosyası gerekirse kaydını siler. Bu yöntemin çağırdığı [CAtlExeModuleT::ParseCommandLine](../../atl/reference/catlexemodulet-class.md#parsecommandline) denetlemek için **/regserver** ve **/Unregserver**. Bağımsız değişken ekleyerek **- / Service** hizmet kaydeder.
+Komut satırını ayrıştırır ve gerekirse sağlanan RGS dosyasını kaydeder veya kaydını siler. Bu yöntem, **/regserver** ve **/Unregserver**'ı denetlemek Için [catlexemodület::P arsecommandline](../../atl/reference/catlexemodulet-class.md#parsecommandline) öğesini çağırır. **-/Service** bağımsız değişkeninin eklenmesi hizmeti kaydeder.
 
-##  <a name="premessageloop"></a>  CAtlServiceModuleT::PreMessageLoop
+##  <a name="premessageloop"></a>CAtlServiceModuleT::P reMessageLoop
 
-Bu yöntem, ileti döngüsü girmeden hemen önce çağrılır.
+Bu yöntem ileti döngüsüne girmeden hemen önce çağrılır.
 
 ```
 HRESULT PreMessageLoop(int nShowCmd) throw();
@@ -394,19 +394,19 @@ HRESULT PreMessageLoop(int nShowCmd) throw();
 ### <a name="parameters"></a>Parametreler
 
 *nShowCmd*<br/>
-Bu parametre için geçirilen [CAtlExeModuleT::PreMessageLoop](../../atl/reference/catlexemodulet-class.md#premessageloop).
+Bu parametre [CAtlExeModuleT::P reMessageLoop](../../atl/reference/catlexemodulet-class.md#premessageloop)öğesine geçirilir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.
+Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Hizmet için özel başlatma kodu eklemek için bu yöntemi yok sayın.
+Hizmet için özel başlatma kodu eklemek için bu yöntemi geçersiz kılın.
 
-##  <a name="registerappid"></a>  CAtlServiceModuleT::RegisterAppId
+##  <a name="registerappid"></a>CAtlServiceModuleT:: Registerappıd
 
-Hizmet kayıt defterinde kaydeder.
+Hizmeti kayıt defterine kaydeder.
 
 ```
 inline HRESULT RegisterAppId(bool bService = false) throw();
@@ -415,15 +415,15 @@ inline HRESULT RegisterAppId(bool bService = false) throw();
 ### <a name="parameters"></a>Parametreler
 
 *bService*<br/>
-Hizmet olarak kaydetmek için doğru olması gerekir.
+Hizmet olarak kaydolmak için true olmalıdır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.
+Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
 
-##  <a name="run"></a>  CAtlServiceModuleT::Run
+##  <a name="run"></a>CAtlServiceModuleT:: Run
 
-Hizmet çalışır.
+Hizmeti çalıştırır.
 
 ```
 HRESULT Run(int nShowCmd = SW_HIDE) throw();
@@ -432,17 +432,17 @@ HRESULT Run(int nShowCmd = SW_HIDE) throw();
 ### <a name="parameters"></a>Parametreler
 
 *nShowCmd*<br/>
-Pencerenin nasıl mı belirtir. Bu parametre ele değerlerden biri olabilir [WinMain](/windows/desktop/api/winbase/nf-winbase-winmain) bölümü. SW_HIDE varsayılan değerdir.
+Pencerenin nasıl gösterileceğini belirtir. Bu parametre, [WinMain](/windows/desktop/api/winbase/nf-winbase-winmain) bölümünde ele alınan değerlerden biri olabilir. Varsayılan değer SW_HIDE ' dir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.
+Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çağrılan sonra `Run` çağrıları [CAtlServiceModuleT::PreMessageLoop](#premessageloop), [CAtlExeModuleT::RunMessageLoop](../../atl/reference/catlexemodulet-class.md#runmessageloop), ve [CAtlExeModuleT::PostMessageLoop](../../atl/reference/catlexemodulet-class.md#postmessageloop).
+Çağrıldıktan `Run` sonra [CAtlServiceModuleT::P remessageloop](#premessageloop), [catlexemodület:: RunMessageLoop](../../atl/reference/catlexemodulet-class.md#runmessageloop)ve [CAtlExeModuleT::P ostmessageloop](../../atl/reference/catlexemodulet-class.md#postmessageloop)çağrılır.
 
-##  <a name="servicemain"></a>  CAtlServiceModuleT::ServiceMain
+##  <a name="servicemain"></a>CAtlServiceModuleT:: ServiceMain
 
 Bu yöntem, hizmet denetimi yöneticisi tarafından çağrılır.
 
@@ -460,11 +460,11 @@ Argv bağımsız değişkeni.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Hizmet Denetimi Yöneticisi (SCM) çağrıları `ServiceMain` Denetim Masası'ndaki Hizmetler uygulamasını açtığınızda, hizmeti seçin ve Başlat'a tıklayın.
+Hizmet Denetim Yöneticisi (SCM), Denetim `ServiceMain` masası 'nda hizmetler uygulamasını açtığınızda çağırır, hizmeti seçin ve Başlat ' a tıklayın.
 
-SCM sonra çağıran `ServiceMain`, hizmet bir işleyici işlevi SCM vermeniz gerekir. Bu işlev, hizmetin durum elde edilir ve özel yönergeler (örneğin, duraklatmak veya durdurma) geçirmeniz SCM sağlar. Sonuç olarak, [CAtlServiceModuleT::Run](#run) hizmet ana iş gerçekleştirmek üzere çağırılır. `Run` Hizmet durduruluncaya kadar yürütmeye devam eder.
+SCM çağrıldıktan sonra `ServiceMain`, bir hizmetin SCM 'ye bir işleyici işlevi vermesi gerekir. Bu işlev, SCM 'nin hizmetin durumunu almasına ve belirli yönergeleri geçirmeye (duraklatma veya durdurma gibi) olanak tanır. Daha sonra, bir hizmetin ana işini gerçekleştirmek için [CAtlServiceModuleT:: Run](#run) çağırılır. `Run`hizmet durduruluncaya kadar yürütülmeye devam eder.
 
-##  <a name="setservicestatus"></a>  CAtlServiceModuleT::SetServiceStatus
+##  <a name="setservicestatus"></a>CAtlServiceModuleT:: SetServiceStatus
 
 Bu yöntem, hizmet durumunu güncelleştirir.
 
@@ -475,15 +475,15 @@ void SetServiceStatus(DWORD dwState) throw();
 ### <a name="parameters"></a>Parametreler
 
 *dwState*<br/>
-Yeni durum. Bkz: [artırılmış](/windows/desktop/api/winsvc/nf-winsvc-setservicestatus) için olası değerler.
+Yeni durum. Olası değerler için bkz. [SetServiceStatus](/windows/desktop/api/winsvc/nf-winsvc-setservicestatus) .
 
 ### <a name="remarks"></a>Açıklamalar
 
-Hizmeti için Hizmet Denetimi Yöneticisi'nin durum bilgilerini güncelleştirir. Tarafından çağrılır [CAtlServiceModuleT::Run](#run), [CAtlServiceModuleT::ServiceMain](#servicemain) ve diğer işleyici yöntemleri. Durum da üye değişkeni depolanan [CAtlServiceModuleT::m_status](#m_status).
+Hizmeti için hizmet denetimi yöneticisinin durum bilgilerini güncelleştirir. [CAtlServiceModuleT:: Run](#run), [Catlservicemodület:: ServiceMain](#servicemain) ve diğer işleyici yöntemleri tarafından çağrılır. Durum ayrıca [CAtlServiceModuleT:: m_status](#m_status)üye değişkeninde da depolanır.
 
-##  <a name="start"></a>  CAtlServiceModuleT::Start
+##  <a name="start"></a>CAtlServiceModuleT:: Start
 
-Çağıran `CAtlServiceModuleT::WinMain` hizmet başladığında.
+`CAtlServiceModuleT::WinMain` Hizmet başladığında çağırılır.
 
 ```
 HRESULT Start(int nShowCmd) throw();
@@ -492,19 +492,19 @@ HRESULT Start(int nShowCmd) throw();
 ### <a name="parameters"></a>Parametreler
 
 *nShowCmd*<br/>
-Pencerenin nasıl mı belirtir. Bu parametre ele değerlerden biri olabilir [WinMain](/windows/desktop/api/winbase/nf-winbase-winmain) bölümü.
+Pencerenin nasıl gösterileceğini belirtir. Bu parametre, [WinMain](/windows/desktop/api/winbase/nf-winbase-winmain) bölümünde ele alınan değerlerden biri olabilir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.
+Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-[CAtlServiceModuleT::WinMain](#winmain) yöntemi kayıt hem yükleme işler yanı sıra görevler kayıt defteri girdileri kaldırılıyor ve modül kaldırma dahil. Hizmet çalıştırıldığında `WinMain` çağrıları `Start`.
+[CAtlServiceModuleT:: WinMain](#winmain) yöntemi hem kayıt hem de yüklemeyi ve kayıt defteri girişlerini kaldırmaya ve modülün kaldırılmasına dahil olan görevleri işler. Hizmet çalıştırıldığında, `WinMain` çağırır `Start`.
 
-##  <a name="uninstall"></a>  CAtlServiceModuleT::Uninstall
+##  <a name="uninstall"></a>CAtlServiceModuleT:: Uninstall
 
-Durdurur ve hizmeti kaldırır.
+Hizmeti durdurup kaldırır.
 
 ```
 BOOL Uninstall() throw();
@@ -512,13 +512,13 @@ BOOL Uninstall() throw();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olduğunda TRUE döndürür başarısız olduğunda FALSE.
+Başarılı olduğunda TRUE, hatada FALSE döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çalışmasını hizmetini durdurur ve Hizmet Denetim Yöneticisi veritabanından kaldırır.
+Hizmetin çalışmasını sonlandırır ve hizmet denetimi Yöneticisi veritabanından kaldırır.
 
-##  <a name="unlock"></a>  CAtlServiceModuleT::Unlock
+##  <a name="unlock"></a>CAtlServiceModuleT:: unlock
 
 Hizmetin kilit sayısını azaltır.
 
@@ -528,11 +528,11 @@ LONG Unlock() throw();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Tanılama için kullanışlı ve hata ayıklama olabilir kilit sayacını döndürür.
+Tanılama ve hata ayıklama için yararlı olabilecek kilit sayısını döndürür.
 
-##  <a name="unregisterappid"></a>  CAtlServiceModuleT::UnregisterAppId
+##  <a name="unregisterappid"></a>CAtlServiceModuleT:: Unregisterappıd
 
-Hizmet kayıt defterinden kaldırır.
+Hizmeti kayıt defterinden kaldırır.
 
 ```
 HRESULT UnregisterAppId() throw();
@@ -540,11 +540,11 @@ HRESULT UnregisterAppId() throw();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.
+Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
 
-##  <a name="winmain"></a>  CAtlServiceModuleT::WinMain
+##  <a name="winmain"></a>CAtlServiceModuleT:: WinMain
 
-Hizmeti başlatmak için gerekli kodu bu yöntemi uygular.
+Bu yöntem, hizmeti başlatmak için gereken kodu uygular.
 
 ```
 int WinMain(int nShowCmd) throw();
@@ -553,17 +553,17 @@ int WinMain(int nShowCmd) throw();
 ### <a name="parameters"></a>Parametreler
 
 *nShowCmd*<br/>
-Pencerenin nasıl mı belirtir. Bu parametre ele değerlerden biri olabilir [WinMain](/windows/desktop/api/winbase/nf-winbase-winmain) bölümü.
+Pencerenin nasıl gösterileceğini belirtir. Bu parametre, [WinMain](/windows/desktop/api/winbase/nf-winbase-winmain) bölümünde ele alınan değerlerden biri olabilir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Hizmetin dönüş değeri döndürür.
+Hizmetin dönüş değerini döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, komut satırında işler (ile [CAtlServiceModuleT::ParseCommandLine](#parsecommandline)) ve ardından hizmeti başlatır (kullanarak [CAtlServiceModuleT::Start](#start)).
+Bu yöntem, komut satırını işler ( [CAtlServiceModuleT::P arseCommandLine](#parsecommandline)) ve ardından hizmeti başlatır ( [CAtlServiceModuleT:: Start](#start)kullanılarak).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [CAtlExeModuleT Sınıfı](../../atl/reference/catlexemodulet-class.md)<br/>
-[Sınıfına genel bakış](../../atl/atl-class-overview.md)
+[Sınıfa genel bakış](../../atl/atl-class-overview.md)

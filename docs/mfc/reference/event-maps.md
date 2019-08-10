@@ -4,54 +4,54 @@ ms.date: 06/20/2018
 helpviewer_keywords:
 - event maps [MFC]
 ms.assetid: 1ed53aee-bc53-43cd-834a-6fb935c0d29b
-ms.openlocfilehash: 98614aa41d3131d28c9e0c7584e5a88c2249ef97
-ms.sourcegitcommit: 934cb53fa4cb59fea611bfeb9db110d8d6f7d165
+ms.openlocfilehash: ef730574b26a4c3619df886b72770ce7e035a40e
+ms.sourcegitcommit: 46d24d6e70c03e05484923d9efc6ed5150e96a64
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65612240"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68916462"
 ---
 # <a name="event-maps"></a>Olay Eşlemeleri
 
-Bir denetim kapsayıcısı (örneğin, bir tuş vuruşu, fare tıklatın veya denetimin durumunu değişiklik) gerçekleşen bazı eylemleri (denetim geliştiricisi tarafından belirlenir) bildirmek istediği her bir olay tetikleyicisinin tetikleme işlevi çağırır. Bu işlev, bazı önemli eylem ilgili olay tetikleme tarafından oluştu denetim kapsayıcısı bildirir.
+Her denetim, kapsayıcısını (denetim geliştiricisi tarafından belirlenir) bir işlemin (örneğin, bir tuş vuruşu, fare tıklaması veya denetimin durumunda bir değişiklik) meydana geldiğini bildirdiğinde olay tetikleme işlevini çağırır. Bu işlev, ilgili olayı tetikleyerek denetim kapsayıcısını bazı önemli bir eylemin oluştuğunu bildirir.
 
-Microsoft Foundation Class Kitaplığı olayları tetikleme için en iyi duruma getirilmiş bir programlama modeli sunar. Bu modelde, "olay eşlemeleri" belirli bir denetim için hangi olayların hangi işlevleri yangın belirlemek için kullanılır. Olay eşlemeleri, her olay için bir makro içerir. Örneğin, bir olay eşlemesi, hisse senedi Click olay şuna benzeyebilir başlatılır:
+Microsoft Foundation Class Kitaplığı, olayları tetikiçin iyileştirilmiş bir programlama modeli sunar. Bu modelde, belirli bir denetim için hangi işlevlerin hangi işlevleri tetiklediği belirlemek için "olay haritaları" kullanılır. Olay haritaları her olay için bir makro içerir. Örneğin, bir stok tıklama olayını harekete uygulayan bir olay haritası şuna benzeyebilir:
 
 [!code-cpp[NVC_MFCAxCtl#16](../../mfc/reference/codesnippet/cpp/event-maps_1.cpp)]
 
-`EVENT_STOCK_CLICK` Makrosu gösteren denetimi hisse senedi tıklatın, bir fare algıladığı her zaman olay ateşlenir. Stok diğer olaylar daha ayrıntılı bir listesi için bkz [ActiveX denetimleri: Olayları](../../mfc/mfc-activex-controls-events.md). Makrolar özel olayları göstermek de kullanılabilir.
+`EVENT_STOCK_CLICK` Makro, denetimin fare tıklaması her algıladığında bir stok tıklama olayını tetikleyeceği anlamına gelir. Diğer stok olaylarının daha ayrıntılı bir listesi için bkz [. ActiveX denetimleri: Olaylar](../../mfc/mfc-activex-controls-events.md). Makrolar özel olayları göstermek için de kullanılabilir.
 
-Olay eşleme makroları önemli olsa da, genellikle bunları doğrudan eklediğiniz değil. Özellikler penceresinde olay eşleme girişleri olay tetikleyicisinin tetikleme işlevleri olaylarla ilişkilendirmek için kullandığınızda, kaynak dosyaları otomatik olarak oluşturur. olmasıdır. Düzenlemek veya bir olay eşlemesi giriş eklemek için istediğiniz zaman, Özellikler penceresini kullanabilirsiniz.
+Olay eşleme makroları önemli olsa da, genellikle bunları doğrudan eklemeyin. Bunun nedeni, olay tetikleme işlevlerini olaylar ile ilişkilendirmek için kullandığınızda Özellikler penceresi kaynak dosyalarınızda otomatik olarak olay eşleme girişleri oluşturmasıdır. Herhangi bir olay eşleme girişi düzenlemek veya eklemek istediğiniz zaman, Özellikler penceresi kullanabilirsiniz.
 
-Olay eşlemeleri desteklemek için aşağıdaki makroları MFC sağlar:
+MFC, olay eşlemelerini desteklemek için aşağıdaki makroları sağlar:
 
-## <a name="event-map-macros"></a>Olay eşleme makroları
+## <a name="event-map-macros"></a>Olay haritası makroları
 
-### <a name="event-map-declaration-and-demarcation"></a>Olay eşleme bildirim ve düzenleme
+### <a name="event-map-declaration-and-demarcation"></a>Olay eşleme bildirimi ve demarcation
 
 |||
 |-|-|
-|[DECLARE_EVENT_MAP](#declare_event_map)|Bir olay eşlemesi bir sınıf içinde olay tetikleyicisinin tetikleme işlevleri (sınıf bildirimi içinde kullanılmalıdır) olayları eşleştirmek için kullanılacak bildirir.|
-|[BEGIN_EVENT_MAP](#begin_event_map)|Bir olay eşlemesi (sınıfı uygulamasında kullanılmalıdır) tanımını başlar.|
-|[END_EVENT_MAP](#end_event_map)|Bir olay eşlemesi (sınıfı uygulamasında kullanılmalıdır) tanımını sonlandırır.|
+|[DECLARE_EVENT_MAP](#declare_event_map)|Olay eşlemesinin olayları olay tetikleme işlevlerine eşlemek için bir sınıfta kullanılacağını bildirir (sınıf bildiriminde kullanılması gerekir).|
+|[BEGIN_EVENT_MAP](#begin_event_map)|Bir olay eşlemesinin tanımını başlatır (sınıf uygulamasında kullanılması gerekir).|
+|[END_EVENT_MAP](#end_event_map)|Bir olay eşlemesinin tanımını sonlandırır (sınıf uygulamasında kullanılması gerekir).|
 
 ### <a name="event-mapping-macros"></a>Olay eşleme makroları
 
 |||
 |-|-|
-|[EVENT_CUSTOM](#event_custom)|Hangi olay tetikleyicisinin tetikleme işlevi belirtilen olay harekete gösterir.|
-|[EVENT_CUSTOM_ID](#event_custom_id)|Hangi olay tetikleyicisinin tetikleme işlevi bir belirtilen dağıtım kimliği ile belirtilen bir olay harekete gösterir|
+|[EVENT_CUSTOM](#event_custom)|Hangi olay tetikleme işlevinin belirtilen olayı tetikleyemedi belirtir.|
+|[EVENT_CUSTOM_ID](#event_custom_id)|Belirtilen bir dağıtım KIMLIĞIYLE, belirtilen olayı hangi olay tetikleme işlevinin tetiklendirilecektir.|
 
 ### <a name="message-mapping-macros"></a>İleti eşleme makroları
 
 |||
 |-|-|
-|[ON_OLEVERB](#on_oleverb)|OLE denetim tarafından işlenen özel bir eylem belirtir.|
-|[ON_STDOLEVERB](#on_stdoleverb)|OLE denetim standart fiili eşlemesi geçersiz kılar.|
+|[ON_OLEVERB](#on_oleverb)|OLE denetimi tarafından işlenen özel bir fiil gösterir.|
+|[ON_STDOLEVERB](#on_stdoleverb)|OLE denetiminin standart bir fiil eşlemesini geçersiz kılar.|
 
-##  <a name="declare_event_map"></a>  DECLARE_EVENT_MAP
+##  <a name="declare_event_map"></a>DECLARE_EVENT_MAP
 
-Her `COleControl`-programınızı türetilen sınıfta denetiminiz yangın olayları belirtmek için bir olay eşlemesi sağlayabilir.
+Programınızdaki `COleControl`her türetilmiş sınıf, denetiminizin tetikleneceği olayları belirtmek için bir olay eşlemesi sağlayabilir.
 
 ```cpp
 DECLARE_EVENT_MAP()
@@ -59,17 +59,17 @@ DECLARE_EVENT_MAP()
 
 ### <a name="remarks"></a>Açıklamalar
 
-DECLARE_EVENT_MAP makrosu, sınıf bildiriminin sonuna kullanın. Ardından, sınıfın üye işlevleri tanımlar .cpp dosyası begın_event_map makrosu, makro girişleri her biri denetim olaylarını ve END_EVENT_MAP makrosu için olay listesinin sonuna bildirmek için kullanın.
+Sınıf bildirimindeki sonundaki DECLARE_EVENT_MAP makrosunu kullanın. Ardından, sınıfının üye işlevlerini tanımlayan. cpp dosyasında, denetim olaylarının her biri için BEGIN_EVENT_MAP makrosunu, makro girişlerini ve olay listesinin sonunu bildirmek için END_EVENT_MAP makrosunu kullanın.
 
-Olay eşlemeleri hakkında daha fazla bilgi için bkz [ActiveX denetimleri: Olayları](../../mfc/mfc-activex-controls-events.md).
+Olay haritaları hakkında daha fazla bilgi için bkz [. ActiveX denetimleri: Olaylar](../../mfc/mfc-activex-controls-events.md).
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi** afxctl.h
+**Başlık** afxctl. h
 
-## <a name="begin_event_map"></a>  BEGIN_EVENT_MAP
+## <a name="begin_event_map"></a>BEGIN_EVENT_MAP
 
-Olay haritanızı tanımını başlar.
+Olay haritaınızın tanımını başlatır.
 
 ```cpp
 BEGIN_EVENT_MAP(theClass,  baseClass)
@@ -77,25 +77,25 @@ BEGIN_EVENT_MAP(theClass,  baseClass)
 
 ### <a name="parameters"></a>Parametreler
 
-*Sınıfın*<br/>
-Bu olayı harita denetimi sınıfın adını belirtir.
+*Sınıf*<br/>
+Olay haritasını bu olan denetim sınıfının adını belirtir.
 
 *baseClass*<br/>
-Taban sınıfının adını belirtir *sınıfın*.
+Sınıfın temel sınıfının adını belirtir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Sınıfınız için üye işlevleri tanımlayan uygulama dosyasında (.cpp), olay eşlemesi begın_event_map makrosu ile Başlat sonra her olaylarınızı makrosu girişler ekleyin ve olay eşlemesi END_EVENT_MAP makrosu ile tamamlayın.
+Sınıfınız için üye işlevlerini tanımlayan uygulama (. cpp) dosyasında, BEGIN_EVENT_MAP makrosu ile olay haritasını başlatın, sonra olaylarınızın her biri için makro girdilerini ekleyin ve olay haritasını END_EVENT_MAP makrosu ile doldurun.
 
-Olay eşlemeleri ve begın_event_map makrosu hakkında daha fazla bilgi için bkz [ActiveX denetimleri: Olayları](../../mfc/mfc-activex-controls-events.md).
+Olay haritaları ve BEGIN_EVENT_MAP makrosu hakkında daha fazla bilgi için bkz [. ActiveX denetimleri: Olaylar](../../mfc/mfc-activex-controls-events.md).
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi** afxctl.h
+**Başlık** afxctl. h
 
-##  <a name="end_event_map"></a>  END_EVENT_MAP
+##  <a name="end_event_map"></a>END_EVENT_MAP
 
-END_EVENT_MAP makrosu, olay eşlemesi tanımını sonlandırmak için kullanın.
+Olay haritaınızın tanımını sonlandırmak için END_EVENT_MAP makrosunu kullanın.
 
 ```cpp
 END_EVENT_MAP()
@@ -103,11 +103,11 @@ END_EVENT_MAP()
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi** afxctl.h
+**Başlık** afxctl. h
 
-## <a name="event_custom"></a>  EVENT_CUSTOM
+## <a name="event_custom"></a>EVENT_CUSTOM
 
-Özel bir olay için bir olay eşlemesi giriş tanımlar.
+Özel bir olay için bir olay eşleme girişi tanımlar.
 
 ```cpp
 EVENT_CUSTOM(pszName, pfnFire,  vtsParams)
@@ -119,20 +119,20 @@ EVENT_CUSTOM(pszName, pfnFire,  vtsParams)
 Olayın adı.
 
 *pfnFire*<br/>
-İşlev olay adı.
+Olay tetikleme işlevinin adı.
 
 *vtsParams*<br/>
-İşlevin parametre listesi belirten bir veya daha fazla sabitleri boşlukla ayrılmış listesi.
+İşlevin parametre listesini belirten bir veya daha fazla sabitin boşlukla ayrılmış listesi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-*VtsParams* parametresi, boşlukla ayrılmış bir liste değerleri `VTS_` sabitler. Bir veya daha fazla boşluk (virgül değil) ile ayırarak bu değerleri işlevin parametre listesi belirtir. Örneğin:
+*VtsParams* parametresi, `VTS_` sabitlerin değerlerinin boşlukla ayrılmış bir listesidir. Boşluklarla (virgüller değil) ayrılmış bir veya daha fazla değer, işlevin parametre listesini belirtir. Örneğin:
 
 [!code-cpp[NVC_MFCActiveXControl#13](../../mfc/codesnippet/cpp/event-maps_2.cpp)]
 
-bir RGB temsil eden bir 32 bit tamsayı içeren bir liste işaretçisi ardından değer rengi belirtir `IFontDisp` OLE yazı tipi nesnesinin arabirimi.
+bir RGB renk değerini temsil eden 32 bitlik bir tamsayı ve ardından OLE yazı tipi nesnesinin `IFontDisp` arabirimine yönelik bir işaretçi içeren bir liste belirtir.
 
-`VTS_` Sabitleri ve bunların anlamları şu şekildedir:
+`VTS_` Sabitler ve anlamları aşağıdaki gibidir:
 
 |Sembol|Parametre türü|
 |------------|--------------------|
@@ -141,12 +141,12 @@ bir RGB temsil eden bir 32 bit tamsayı içeren bir liste işaretçisi ardından
 |VTS_R4|**float**|
 |VTS_R8|**double**|
 |VTS_COLOR|OLE_COLOR|
-|VTS_CY|PARA BİRİMİ|
+|VTS_CY|BIRIMINDEKI|
 |VTS_DATE|DATE|
 |VTS_BSTR|**const** __char\*__|
 |VTS_DISPATCH|LPDISPATCH|
 |VTS_FONT|`IFontDispatch*`|
-|VTS_HANDLE|TANITICI|
+|VTS_HANDLE|TUTAMAÇLARDAN|
 |VTS_SCODE|SCODE|
 |VTS_BOOL|BOOL|
 |VTS_VARIANT|`const VARIANT*`|
@@ -165,22 +165,22 @@ bir RGB temsil eden bir 32 bit tamsayı içeren bir liste işaretçisi ardından
 |VTS_YSIZE_HIMETRIC|OLE_YSIZE_HIMETRIC|
 
 > [!NOTE]
-> Değişken veri sabit bir işaretçi sağlayan tüm değişken türleri için VTS_FONT ve vts_pıcture, hariç olmak üzere ek değişken sabitleri tanımlanmadı. Bu sabitler kullanılarak adlandırılır `VTS_Pconstantname` kuralı. Örneğin, VTS_PCOLOR VTS_COLOR sabiti bir işaretçisidir.
+> Değişken veri sabitine bir işaretçi sağlayan, VTS_FONT ve VTS_PICTURE hariç olmak üzere tüm değişken türleri için ek VARIANT sabitleri tanımlanmıştır. Bu sabitler, `VTS_Pconstantname` kuralı kullanılarak adlandırılmaktadır. Örneğin, VTS_PCOLOR, VTS_COLOR sabiti için bir işaretçidir.
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi** afxctl.h
+**Başlık** afxctl. h
 
-## <a name="event_custom_id"></a>  EVENT_CUSTOM_ID
+## <a name="event_custom_id"></a>EVENT_CUSTOM_ID
 
-İşlev tarafından belirtilen dağıtım kimliği ait özel bir olay için tetikleme bir olayı tanımlar *DISPID*.
+*DISPID*tarafından BELIRTILEN dağıtım kimliğine ait özel bir olay için olay tetikleme işlevini tanımlar.
 
 ```cpp
 EVENT_CUSTOM_ID(
-  pszName,
-  dispid,
-  pfnFire,
-  vtsParams)
+    pszName,
+    dispid,
+    pfnFire,
+    vtsParams)
 ```
 
 ### <a name="parameters"></a>Parametreler
@@ -188,32 +188,32 @@ EVENT_CUSTOM_ID(
 *pszName*<br/>
 Olayın adı.
 
-*DISPID*<br/>
-Olay tetikleme denetim tarafından kullanılan dağıtım kimliği.
+*dı*<br/>
+Olayı tetikleyerek denetim tarafından kullanılan dağıtım KIMLIĞI.
 
 *pfnFire*<br/>
-İşlev olay adı.
+Olay tetikleme işlevinin adı.
 
 *vtsParams*<br/>
-Olay tetiklendiğinde parametrelerinin bir değişken listesi denetimi kapsayıcıya geçirildi.
+Olay harekete geçirildiğinde denetim kapsayıcısına geçirilen parametrelerin değişken listesi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-*VtsParams* bağımsız değişken değerlerini boşlukla ayrılmış bir listesi verilmiştir `VTS_` sabitler. Bir veya daha fazla değil virgül, boşluk ile ayırarak bu değerleri işlevin parametre listesi belirtir. Örneğin:
+*VtsParams* bağımsız değişkeni, `VTS_` sabitlerin değerlerinin boşlukla ayrılmış bir listesidir. Bu değerlerden bir veya daha fazla virgül değil, boşluklarla ayrılmış, işlevin parametre listesini belirtir. Örneğin:
 
 [!code-cpp[NVC_MFCActiveXControl#13](../../mfc/codesnippet/cpp/event-maps_2.cpp)]
 
-bir RGB temsil eden bir 32 bit tamsayı içeren bir liste işaretçisi ardından değer rengi belirtir `IFontDisp` OLE yazı tipi nesnesinin arabirimi.
+bir RGB renk değerini temsil eden 32 bitlik bir tamsayı ve ardından OLE yazı tipi nesnesinin `IFontDisp` arabirimine yönelik bir işaretçi içeren bir liste belirtir.
 
-Bir listesi için `VTS_` sabitleri bkz [EVENT_CUSTOM](#event_custom).
+`VTS_` Sabitlerin listesi için bkz. [event_custom](#event_custom).
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi** afxctl.h
+**Başlık** afxctl. h
 
-## <a name="on_oleverb"></a>  ON_OLEVERB
+## <a name="on_oleverb"></a>ON_OLEVERB
 
-Bu makro, özel bir fiil denetiminiz için bir özel üye işlevini eşlemeleri bir ileti eşleme girişi tanımlar.
+Bu makro özel bir fiili, denetiminizin belirli bir üye işlevine eşleyen bir ileti eşleme girişi tanımlar.
 
 ```cpp
 ON_OLEVERB(idsVerbName,  memberFxn)
@@ -222,16 +222,16 @@ ON_OLEVERB(idsVerbName,  memberFxn)
 ### <a name="parameters"></a>Parametreler
 
 *idsVerbName*<br/>
-Fiili'nın adı dize kaynak kimliği.
+Fiil adının dize kaynak KIMLIĞI.
 
 *memberFxn*<br/>
-Framework tarafından fiil çağrıldığında çağrılan işlev.
+Fiil çağrıldığında Framework tarafından çağrılan işlev.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kaynak Düzenleyicisi dize tablonuza eklenen özel eylem adları oluşturmak için kullanılabilir.
+Kaynak Düzenleyicisi, dize tablonuza eklenen özel fiil adları oluşturmak için kullanılabilir.
 
-İşlev prototipi *memberFxn* olan:
+*MemberFxn* için işlev prototipi:
 
 ```cpp
 BOOL memberFxn(
@@ -240,15 +240,15 @@ BOOL memberFxn(
    LPCRECT  lpRect);
 ```
 
-Değerlerini *lpMsg*, *hWndParent*, ve *lpRect* parametreleri, karşılık gelen parametrelerinden alınır `IOleObject::DoVerb` üye işlevi.
+*LpMsg*, *hwndParent*ve *lpRect* parametrelerinin değerleri, `IOleObject::DoVerb` üye işlevinin karşılık gelen parametrelerinden alınır.
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi** afxole.h
+**Başlık** afxole. h
 
-## <a name="on_stdoleverb"></a>  ON_STDOLEVERB
+## <a name="on_stdoleverb"></a>ON_STDOLEVERB
 
-Standart fiil varsayılan davranışı geçersiz kılmak için bu makroyu kullanın.
+Standart fiilin varsayılan davranışını geçersiz kılmak için bu makroyu kullanın.
 
 ```cpp
 ON_STDOLEVERB(iVerb, memberFxn)
@@ -256,22 +256,22 @@ ON_STDOLEVERB(iVerb, memberFxn)
 
 ### <a name="parameters"></a>Parametreler
 
-*iVerb*<br/>
-Geçersiz kılınmasını fiil için standart fiili dizini.
+*ıverb*<br/>
+Geçersiz kılınmakta olan fiil için standart fiil dizini.
 
 *memberFxn*<br/>
-Framework tarafından fiil çağrıldığında çağrılan işlev.
+Fiil çağrıldığında Framework tarafından çağrılan işlev.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Standart fiili dizini biçimindedir `OLEIVERB_`takip eden eylem. OLEIVERB_SHOW OLEIVERB_HIDE ve OLEIVERB_UIACTIVATE standart fiiller bazı örnekleridir.
+Standart fiil dizini `OLEIVERB_`, bir eylem tarafından izlenir. OLEIVERB_SHOW, OLEIVERB_HIDE ve OLEIVERB_UIACTIVATE Standart fiillerin bazı örnekleridir.
 
-Bkz: [ON_OLEVERB](#on_oleverb) olarak kullanılmak üzere işlev prototipi açıklamasını *memberFxn* parametresi.
+*MemberFxn* parametresi olarak kullanılacak işlev prototipinin açıklaması için bkz. [ON_OLEVERB](#on_oleverb) .
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi** afxole.h
+**Başlık** afxole. h
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Makroları ve genel öğeleri](../../mfc/reference/mfc-macros-and-globals.md)
+[Makrolar ve genel öğeler](../../mfc/reference/mfc-macros-and-globals.md)
