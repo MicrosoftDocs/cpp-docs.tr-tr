@@ -818,12 +818,12 @@ helpviewer_keywords:
 - CWnd [MFC], WindowProc
 - CWnd [MFC], m_hWnd
 ms.assetid: 49a832ee-bc34-4126-88b3-bc1d9974f6c4
-ms.openlocfilehash: b5da26c617c23f4dc1e95f3055dbe8dde9319756
-ms.sourcegitcommit: c3bf94210bdb73be80527166264d49e33784152c
+ms.openlocfilehash: 91acc8255cd5f22092790f9dcf45558012caf7dc
+ms.sourcegitcommit: 46d24d6e70c03e05484923d9efc6ed5150e96a64
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "68821334"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68916789"
 ---
 # <a name="cwnd-class"></a>CWnd sınıfı
 
@@ -835,7 +835,7 @@ Microsoft Foundation Class Kitaplığı tüm pencere sınıflarının temel işl
 class CWnd : public CCmdTarget
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Üyeler
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
@@ -1818,7 +1818,7 @@ Sınanacak noktanın istemci koordinatlarını belirtir.
 *nFlags*<br/>
 Hangi alt pencerelerin atlayamayacağını belirtir. Bu parametre aşağıdaki değerlerin bir birleşimi olabilir:
 
-|Value|Anlamı|
+|Değer|Açıklama|
 |-----------|-------------|
 |CWP_ALL|Herhangi bir alt pencere atlama|
 |CWP_SKIPINVISIBLE|Görünmeyen alt pencereleri atla|
@@ -1966,7 +1966,7 @@ virtual HRESULT CreateAccessibleProxy(
 *wParam*<br/>
 Etkin Erişilebilirlik proxy 'si tarafından erişilen nesneyi tanımlar. Aşağıdaki değerlerden biri olabilir
 
-|Value|Anlamı|
+|Değer|Açıklama|
 |-----------|-------------|
 |OBJID_CLIENT|Pencerenin istemci alanına başvurur.|
 
@@ -6121,7 +6121,7 @@ Yineleme sayısını, Kullanıcı anahtarı tuttuğunda tuş vuruşlarının ka�
 *nFlags*<br/>
 Aşağıdaki listede gösterildiği gibi tarama kodu, anahtar geçişi kodu, önceki anahtar durumu ve bağlam kodunu içerir:
 
-|Değer|Anlamı|
+|Değer|Açıklama|
 |-----------|-------------|
 |0-15|Yineleme sayısını belirtir. Değer, anahtarın basılı tutulduğu kullanıcının sonucu olarak tuş vuruşu tekrarlanma sayısıdır.|
 |16-23|Tarama kodunu belirtir. Değer, özgün ekipman üreticisine (OEM) bağlıdır|
@@ -6338,11 +6338,11 @@ Birleşik giriş veya liste kutusundaki iki öğe için tanımlayıcıları ve u
 
 İki öğenin göreli konumunu gösterir. Aşağıdaki değerlerden herhangi biri olabilir:
 
-|Value|Anlamı|
+|Değer|Açıklama|
 |-----------|-------------|
 |-1|Öğe 1 öğe 2 ' den önce sıralar.|
 |0|Öğe 1 ve öğe 2 aynı şekilde sıralayın.|
-|1|Öğe 1 öğe 2 ' den sonra sıralar.|
+|1\.|Öğe 1 öğe 2 ' den sonra sıralar.|
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -6536,7 +6536,7 @@ Yineleme sayısını belirtir.
 *nFlags*<br/>
 Aşağıdaki listede gösterildiği gibi tarama kodu, anahtar geçişi kodu, önceki anahtar durumu ve bağlam kodunu belirtir:
 
-|Value|Açıklama|
+|Değer|Açıklama|
 |-----------|-----------------|
 |0-7|Tarama kodu (OEM 'e bağlı değer). Yüksek sıralı sözcük için düşük bayt.|
 |8|Bir işlev anahtarı veya sayısal tuş takımında bir anahtar (genişletilmiş bir anahtarsa 1, yoksa 0) gibi genişletilmiş anahtar.|
@@ -7380,7 +7380,7 @@ Yineleme sayısı (anahtar, anahtarı tutan kullanıcının sonucu olarak tuş v
 *nFlags*<br/>
 Aşağıdaki listede gösterildiği gibi tarama kodu, anahtar geçişi kodu, önceki anahtar durumu ve bağlam kodunu belirtir:
 
-|Value|Açıklama|
+|Değer|Açıklama|
 |-----------|-----------------|
 |0-7|Tarama kodu (OEM 'e bağlı değer).|
 |8|Bir işlev anahtarı veya sayısal tuş takımında bir anahtar (genişletilmiş anahtarsa 1) gibi genişletilmiş anahtar.|
@@ -7425,7 +7425,7 @@ Yineleme sayısı (anahtar, anahtarı tutan kullanıcının sonucu olarak tuş v
 *nFlags*<br/>
 Aşağıdaki listede gösterildiği gibi tarama kodu, anahtar geçişi kodu, önceki anahtar durumu ve bağlam kodunu belirtir:
 
-|Value|Açıklama|
+|Değer|Açıklama|
 |-----------|-----------------|
 |0-7|Tarama kodu (OEM 'e bağlı değer). Yüksek sıralı sözcük için düşük bayt.|
 |8|Bir işlev anahtarı veya sayısal tuş takımında bir anahtar (genişletilmiş bir anahtarsa 1, yoksa 0) gibi genişletilmiş anahtar.|
@@ -7751,7 +7751,7 @@ Seçili `CMenu`için bir işaretçi içerir. İşaretçi geçici olabilir ve dep
 
 Dönüş değerinin yüksek düzen sözcüğü aşağıdaki komut kodlarından birini içermelidir:
 
-|Value|Açıklama|
+|Değer|Açıklama|
 |-----------|-----------------|
 |0|Windows 'un kullanıcıya basılan karakteri atıp sistem konuşmacısı üzerinde kısa bir bip sesi oluşturduğunu söyler.|
 |1\.|Windows 'un geçerli menüyü kapatmasını söyler.|
@@ -7785,7 +7785,7 @@ afx_msg UINT OnMenuDrag(
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-|Dönüş Değeri|Anlamı|
+|Dönüş Değeri|Açıklama|
 |------------------|-------------|
 |MND_CONTINUE|Menü etkin kalmalıdır. Fare yayımlanmışsa, göz ardı edilmelidir.|
 |MND_ENDMENU|Menünün sonlandırılması gerekir.|
@@ -7813,7 +7813,7 @@ afx_msg UINT OnMenuGetObject(MENUGETOBJECTINFO* pMenuGetObjectInfo);
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-|Dönüş Değeri|Anlamı|
+|Dönüş Değeri|Açıklama|
 |------------------|-------------|
 |MNGO_NOERROR|`pvObj` [Menugetobjectınfo](/windows/desktop/api/winuser/ns-winuser-tagmenugetobjectinfo) yapısının üyesinde bırakma ve sürükleme işlemlerini destekleyen bir arabirim işaretçisi döndürülür. Şu anda yalnızca [IDropTarget](/windows/desktop/api/oleidl/nn-oleidl-idroptarget) arabirimi destekleniyor.|
 |MNGO_NOINTERFACE|Bırakma ve sürükleme arabirimi desteklenmez.|
@@ -8730,7 +8730,7 @@ afx_msg UINT OnNotifyFormat(
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-|Dönüş değeri|Anlamı|
+|Dönüş değeri|Açıklama|
 |------------------|-------------|
 |NFR_ANSI|ANSI yapıları, denetim tarafından gönderilen WM_NOTIFY iletilerinde kullanılmalıdır.|
 |NFR_UNICODE|Unicode yapıları, denetim tarafından gönderilen WM_NOTIFY iletilerinde kullanılmalıdır.|
@@ -9518,7 +9518,7 @@ Yineleme sayısını belirtir (anahtar, anahtarı tutan kullanıcının sonucu o
 *nFlags*<br/>
 *NFlags* parametresi şu değerlere sahip olabilir:
 
-|Value|Anlamı|
+|Değer|Açıklama|
 |-----------|-------------|
 |0-15|Yineleme sayısını belirtir. Değer, anahtarın basılı tutulduğu kullanıcının bir sonucu olarak tuş vuruşu tekrarlanma sayısıdır.|
 |16-23|Tarama kodunu belirtir. Değer, özgün ekipman üreticisine (OEM) bağlıdır|
@@ -9642,7 +9642,7 @@ Yineleme sayısını belirtir.
 *nFlags*<br/>
 Aşağıdaki listede gösterildiği gibi tarama kodu, anahtar geçişi kodu, önceki anahtar durumu ve bağlam kodunu belirtir:
 
-|Value|Anlamı|
+|Değer|Açıklama|
 |-----------|-------------|
 |0-7|Tarama kodu (OEM 'e bağlı değer). Yüksek sıralı sözcük için düşük bayt.|
 |8|Bir işlev anahtarı veya sayısal tuş takımında bir anahtar (genişletilmiş bir anahtarsa 1, yoksa 0) gibi genişletilmiş anahtar.|
@@ -9681,7 +9681,7 @@ Yineleme sayısını belirtir.
 *nFlags*<br/>
 Aşağıdaki listede gösterildiği gibi tarama kodu, anahtar geçişi kodu, önceki anahtar durumu ve bağlam kodunu belirtir:
 
-|Value|Anlamı|
+|Değer|Açıklama|
 |-----------|-------------|
 |0-7|Tarama kodu (OEM 'e bağlı değer). Yüksek sıralı sözcük için düşük bayt.|
 |8|Bir işlev anahtarı veya sayısal tuş takımında bir anahtar (genişletilmiş bir anahtarsa 1, yoksa 0) gibi genişletilmiş anahtar.|
@@ -9728,7 +9728,7 @@ Yineleme sayısını belirtir.
 *nFlags*<br/>
 Aşağıdaki listede gösterildiği gibi tarama kodu, anahtar geçişi kodu, önceki anahtar durumu ve bağlam kodunu belirtir:
 
-|Value|Anlamı|
+|Değer|Açıklama|
 |-----------|-------------|
 |0-7|Tarama kodu (OEM 'e bağlı değer). Yüksek sıralı sözcük için düşük bayt.|
 |8|Bir işlev anahtarı veya sayısal tuş takımında bir anahtar (genişletilmiş bir anahtarsa 1, yoksa 0) gibi genişletilmiş anahtar.|
@@ -9750,7 +9750,7 @@ IBM gelişmiş 101-ve 102 tuşlu klavyeler için, Gelişmiş Anahtarlar, klavyen
 
 U ve dışı öğeleri için. Gelişmiş 102 anahtar klavyeler, sağ ALT tuşu, CTRL + ALT tuş bileşimi olarak işlenir. Aşağıda, Kullanıcı bu anahtarı bastığında ve serbest bıraktığında oluşan ileti ve çağrı dizisi gösterilmektedir:
 
-|Dizisi|İşleve erişildi|İleti geçti|
+|Sequence|İşleve erişildi|İleti geçti|
 |--------------|-----------------------|--------------------|
 |1.|[WM_KEYDOWN](#onkeydown)|VK_CONTROL|
 |2.|[WM_KEYDOWN](#onkeydown)|VK_MENU|
@@ -11474,7 +11474,7 @@ BOOL SetLayeredWindowAttributes(
 Katmanlı pencereyi oluştururken kullanılacak saydamlık rengi anahtarını belirten bir COLORREF değeri işaretçisi. Bu renkteki pencere tarafından boyanan tüm pikseller saydam olacaktır. COLORREF oluşturmak için RGB makrosunu kullanın.
 
 *bAlpha*<br/>
-Katmanlı pencerenin opaklığını anlatmak için kullanılan alfa değeri. Daha fazla bilgi için [BLENDFUNCTION](/windows/desktop/api/wingdi/ns-wingdi-_blendfunction) yapısının `SourceConstantAlpha` üyesine bakın. *BAlpha* 0 olduğunda pencere tamamen saydamdır. *BAlpha* 255 olduğunda pencere donuk olur.
+Katmanlı pencerenin opaklığını anlatmak için kullanılan alfa değeri. Daha fazla bilgi için [BLENDFUNCTION](/windows/desktop/api/wingdi/ns-wingdi-blendfunction) yapısının `SourceConstantAlpha` üyesine bakın. *BAlpha* 0 olduğunda pencere tamamen saydamdır. *BAlpha* 255 olduğunda pencere donuk olur.
 
 *dwFlags*<br/>
 Gerçekleştirilecek eylemi belirtir. Bu parametre aşağıdaki değerlerden biri veya daha fazlası olabilir. Olası değerler listesi için bkz. [SetLayeredWindowAttributes](/windows/desktop/api/winuser/nf-winuser-setlayeredwindowattributes).
@@ -12258,7 +12258,7 @@ Cihaz bağlamındaki katmanın `POINT` konumunu belirten yapıya yönelik işare
 Katmanlı pencereyi oluştururken kullanılacak saydamlık rengi anahtarını belirten bir COLORREF değeri işaretçisi. Bu renkteki pencere tarafından boyanan tüm pikseller saydam olacaktır. COLORREF oluşturmak için RGB makrosunu kullanın.
 
 *pblend*<br/>
-Katmanlı pencere oluştururken kullanılacak saydamlık değerini belirten bir [BLENDFUNCTION](/windows/desktop/api/wingdi/ns-wingdi-_blendfunction) yapısına yönelik işaretçi.
+Katmanlı pencere oluştururken kullanılacak saydamlık değerini belirten bir [BLENDFUNCTION](/windows/desktop/api/wingdi/ns-wingdi-blendfunction) yapısına yönelik işaretçi.
 
 *dwFlags*<br/>
 Gerçekleştirilecek eylemi belirtir. Bu parametre aşağıdaki değerlerden biri veya daha fazlası olabilir. Olası değerler listesi için bkz. [UpdateLayeredWindow](/windows/desktop/api/winuser/nf-winuser-updatelayeredwindow).
