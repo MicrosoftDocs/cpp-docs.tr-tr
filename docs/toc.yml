@@ -10529,22 +10529,8 @@
                   items:
                     - name: C ve Win32 ile Çoklu İş Parçacığı Kullanımı
                       href: parallel/multithreading-with-c-and-win32.md
-                    - name: Çoklu iş parçacığı kullanan programlar
-                      href: parallel/multithread-programs.md
-                    - name: Çoklu iş parçacığı kullanımı için kitaplık desteği
-                      href: parallel/library-support-for-multithreading.md
-                    - name: Çoklu iş parçacığı kullanımı için dosyaları ekleme
-                      href: parallel/include-files-for-multithreading.md
-                    - name: İş parçacığı denetimi için C Çalışma Süresi kitaplık işlevleri
-                      href: parallel/c-run-time-library-functions-for-thread-control.md
                     - name: Örnek çoklu iş parçacığı kullanan C programı
                       href: parallel/sample-multithread-c-program.md
-                    - name: Çoklu iş parçacığı kullanan Win32 programı yazma
-                      href: parallel/writing-a-multithreaded-win32-program.md
-                    - name: Çoklu iş parçacığı kullanan programları derleme ve bağlama
-                      href: parallel/compiling-and-linking-multithread-programs.md
-                    - name: Çoklu iş parçacığı kullanan programlarda sorun alanlarından kaçınma
-                      href: parallel/avoiding-problem-areas-with-multithread-programs.md
                     - name: İş parçacığı yerel depolaması (TLS)
                       href: parallel/thread-local-storage-tls.md
                 - name: C++ ve MCF ile Çoklu İş Parçacığı Kullanımı
