@@ -1,18 +1,18 @@
 ---
 title: '&lt;bellek&gt;'
-ms.date: 04/04/2019
+ms.date: 08/04/2019
 f1_keywords:
 - memory/std::<memory>
 - <memory>
 - std::<memory>
 helpviewer_keywords:
 - memory header
-ms.openlocfilehash: 7c30a44de70675af69648fdba79325a173ab62fc
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: 869a7590d880beba7ccc1d324fd1ba227eeac4e0
+ms.sourcegitcommit: 16c0392fc8d96e814c3a40b0c5346d7389aeb525
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68451884"
+ms.lasthandoff: 08/12/2019
+ms.locfileid: "68957083"
 ---
 # <a name="ltmemorygt"></a>&lt;bellek&gt;
 
@@ -91,9 +91,9 @@ Bir sınıfı, işleci ve nesneleri ayırmaya ve serbest bırakmaya yardımcı �
 
 |||
 |-|-|
-|[allocator](../standard-library/allocator-class.md)|Şablon sınıfı, türünde nesne dizileri için depolama ayırmayı ve boşaltmayı yöneten bir nesneyi **tanımlar.**|
+|[allocator](../standard-library/allocator-class.md)|Şablon sınıfı, türünde nesne dizileri için depolama ayırmayı ve boşaltmayı yöneten bir nesneyi tanımlar.|
 |[allocator_traits](../standard-library/allocator-traits-class.md)|Ayırıcı tarafından etkinleştirilen kapsayıcı tarafından gerek duyulan bilgilerin tamamını belirleyen nesneyi tanımlar.|
-|[auto_ptr](../standard-library/auto-ptr-class.md)|Şablon sınıfı, kapsayan auto_ptr yok edilirken onun işaret ettiği nesnenin **silindiğini** <strong>\*</strong> sağlayan türü tür bir ayrılmış nesneye bir işaretçi depolayan bir nesneyi tanımlar.|
+|[auto_ptr](../standard-library/auto-ptr-class.md)|Şablon sınıfı, kapsayan auto_ptr yok edilirken onun işaret ettiği nesnenin silindiğini <strong>\*</strong> sağlayan türü tür bir ayrılmış nesneye bir işaretçi depolayan bir nesneyi tanımlar.|
 |[bad_weak_ptr](../standard-library/bad-weak-ptr-class.md)|Bozuk weak_ptr özel durumunu raporlar.|
 |[enabled_shared_from_this](../standard-library/enable-shared-from-this-class.md)|Bir `shared_ptr`oluşturulmasına yardımcı olur.|
 |[pointer_traits](../standard-library/pointer-traits-struct.md)|İşaretçi türündeki `allocator_traits` `Ptr`bir ayırıcıyı tanımlayan şablon sınıfının bir nesnesi için gereken bilgileri sağlar.|
@@ -108,7 +108,7 @@ Bir sınıfı, işleci ve nesneleri ayırmaya ve serbest bırakmaya yardımcı �
 |-|-|
 |[allocator_arg_t](../standard-library/allocator-class.md#allocator_arg_t)||
 |[default_delete](../standard-library/default-delete-struct.md)||
-|[yla]()||
+|hash|`unique_ptr` Ve`shared_ptr`için özelleştirilmiş aşırı yüklemeler sağlar.|
 |[owner_less](../standard-library/memory-functions.md#owner_less)|Paylaşılan ve zayıf işaretçilerin sahiplik temelli karışık karşılaştırmalarını sağlar.|
 |[uses_allocator](../standard-library/allocator-class.md#uses_allocator)||
 
@@ -116,7 +116,7 @@ Bir sınıfı, işleci ve nesneleri ayırmaya ve serbest bırakmaya yardımcı �
 
 |||
 |-|-|
-|[ayırıcı\<void >](../standard-library/allocator-void-class.md)|Yalnızca bu özelleştirilen içerikte anlamlı üye türleri tanımlayarak void türüne şablon sınıf ayırıcı uzmanlığı.|
+|[ayırıcı\<void >](../standard-library/allocator-void-class.md)|Yalnızca bu özelleşmiş içerikte anlamlı üye türleri tanımlayarak **void**türüne şablon sınıf ayırıcı özelleştirmesi.|
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -200,12 +200,12 @@ helpviewer_keywords:
 - std::count_if [C++]
 - std::partition_copy [C++]
 - std::swap [C++]
-ms.openlocfilehash: f389d38cf84f8f72d12242e798010d53a26f81a8
-ms.sourcegitcommit: 20a1356193fbe0ddd1002e798b952917eafc3439
+ms.openlocfilehash: b08d45ac065fe63f6f51e3b63a49e8714a486988
+ms.sourcegitcommit: 16c0392fc8d96e814c3a40b0c5346d7389aeb525
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68661535"
+ms.lasthandoff: 08/12/2019
+ms.locfileid: "68956982"
 ---
 # <a name="ltalgorithmgt-functions"></a>&lt;algoritma&gt; işlevleri
 
@@ -366,7 +366,7 @@ Belirtilen aralıktaki her öğede koşul algılanırsa veya Aralık boşsa **tr
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon **işlevi yalnızca,** `N` `[0, last - first)`Aralık içinde her biri için true değerini döndürür `pred(*(first + N))` .
+Şablon işlevi yalnızca, `N` `[0, last - first)`Aralık içinde her biri için true değerini döndürür. `pred(*(first + N))`
 
 ### <a name="example"></a>Örnek
 
@@ -5843,7 +5843,7 @@ Koşul koşulunu yerine getirmek için aralıktaki ilk öğenin konumunu ele ala
 
 Başvurulan Aralık geçerli olmalıdır; Tüm işaretçiler, en son artırılamadı tarafından ilk konumdan erişilebilir olması gerekir.
 
-*A* ve *b* öğeleri eşdeğerdir, ancak her ikisi de false ise eşit değildir `pred( a, b )` ve `pred( b, a )` false ise, her ikisi de parametre belirtilen *koşul olur.* `partition` Algoritma kararlı değildir ve denk öğelerin göreli sıralamasına karşı korunmayacağını garanti etmez. Algoritma `stable_partition` bu orijinal sıralamayı korur.
+*A* ve *b* öğeleri eşdeğerdir, ancak her ikisi de false ise eşit değildir `pred( a, b )` ve `pred( b, a )` false ise, her ikisi de parametre belirtilen koşul olur. `partition` Algoritma kararlı değildir ve denk öğelerin göreli sıralamasına karşı korunmayacağını garanti etmez. Algoritma `stable_partition` bu orijinal sıralamayı korur.
 
 Karmaşıklık doğrusal değildir: *Pred* ve `(last - first)` en çok `(last - first)/2` takas eden uygulamalar vardır.
 
@@ -7646,7 +7646,7 @@ Bir ileri Yineleyici, eşleştirilecek aralıktaki son öğeden sonraki konumu e
 İki öğenin eşdeğer olarak alınması durumunda karşılanması gereken koşulu tanımlayan Kullanıcı tanımlı koşul işlevi nesnesi. İkili koşul iki bağımsız değişken alır ve memnun olmadığında **true** ve **false** değeri döndürür.
 
 *Arayıcının*\
-Aranacak kalıbı ve kullanılacak arama algoritmasını kapsülleyen Arayıcının.
+Aranacak kalıbı ve kullanılacak arama algoritmasını kapsülleyen Arayıcının. Aramacılar hakkında daha fazla bilgi için bkz. [default_searcher Class](default-searcher-class.md), [boyer_moore_horspool_searcher Class](boyer-moore-horspool-searcher-class.md)ve [boyer_moore_searcher Class](boyer-moore-searcher-class.md).
 
 ### <a name="return-value"></a>Dönüş değeri
 
@@ -9004,7 +9004,7 @@ Koşul koşulunu yerine getirmek için aralıktaki ilk öğenin konumunu ele ala
 
 Başvurulan Aralık geçerli olmalıdır; Tüm işaretçiler, en son artırılamadı tarafından ilk konumdan erişilebilir olması gerekir.
 
-*A* ve *b* öğeleri eşdeğerdir, ancak her ikisi de false ise eşit değildir `pred( a, b )` ve `pred( b, a )` false ise, her ikisi de parametre belirtilen *koşul olur.* `stable_partition` Algoritma kararlı olur ve denk öğelerin göreli sıralamasını korunacaktır. Algoritma `partition` bu orijinal sıralamayı korumayabilir.
+*A* ve *b* öğeleri eşdeğerdir, ancak her ikisi de false ise eşit değildir `pred( a, b )` ve `pred( b, a )` false ise, her ikisi de parametre belirtilen koşul olur. `stable_partition` Algoritma kararlı olur ve denk öğelerin göreli sıralamasını korunacaktır. Algoritma `partition` bu orijinal sıralamayı korumayabilir.
 
 ### <a name="example"></a>Örnek
 

@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - string header
 ms.assetid: a2fb9d00-d7ae-4170-bfea-2dc337aa37cf
-ms.openlocfilehash: fda00cd5a8f8768688c8e10f25a0d1f2370a256f
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: 80d5d297cc28cfb019dae99e9e9736e4b2eb654f
+ms.sourcegitcommit: 16c0392fc8d96e814c3a40b0c5346d7389aeb525
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68459196"
+ms.lasthandoff: 08/12/2019
+ms.locfileid: "68957124"
 ---
 # <a name="ltstringgt"></a>&lt;string&gt;
 
@@ -32,7 +32,7 @@ C++ Dil ve C++ standart kitaplık iki tür dizeyi destekler:
 
 - Genellikle C dizeleri olarak adlandırılan null ile sonlandırılmış karakter dizileri.
 
-- Tüm char benzeri şablon bağımsız değişkenlerini `basic_string`işleyen türündeki şablon sınıfı nesneleri.
+- Tüm char benzeri şablon bağımsız değişkenlerini `basic_string`işleyen türündeki şablon sınıfınesneleri.
 
 ### <a name="typedefs"></a>Tür tanımları
 
@@ -61,7 +61,7 @@ C++ Dil ve C++ standart kitaplık iki tür dizeyi destekler:
 
 |||
 |-|-|
-|[yla]()||
+|hash|Bir dizenin karmasını üretir.|
 |[Kur](../standard-library/string-functions.md#swap)|İki dizenin karakter dizilerini değiş tokuş eder.|
 |[stod](../standard-library/string-functions.md#stod)|Bir karakter dizisini **Double**'a dönüştürür.|
 |[stof](../standard-library/string-functions.md#stof)|Bir karakter dizisini **float**öğesine dönüştürür.|

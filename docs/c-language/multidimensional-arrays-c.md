@@ -7,10 +7,10 @@ helpviewer_keywords:
 - subscript expressions
 ms.assetid: 4ba5c360-1f17-4575-b370-45f62e1f2bc2
 ms.openlocfilehash: 34f5c60ba9ba5da869426ae4971808a5d75fee2f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.sourcegitcommit: 16c0392fc8d96e814c3a40b0c5346d7389aeb525
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 08/12/2019
 ms.locfileid: "62233369"
 ---
 # <a name="multidimensional-arrays-c"></a>Çok Boyutlu Diziler (C)
@@ -21,7 +21,7 @@ Bir alt simge ifadesinde de aşağıdaki gibi birden fazla alt simge olabilir:
 expression1 [ expression2 ] [ expression3 ] ...
 ```
 
-Alt simge ifadeleri soldan sağa ilişkilendirilir. En soldaki alt simge ifadesi *İfade1* **[** *expression2* **]**, ilk olarak değerlendirilir. Eklemesini sonuçları adresi *İfade1* ve *expression2* bir işaretçi ifadesi; forms ardından *ifade3* yeni bir form için bu işaretçi ifadesine eklenir vb. son alt simge ifadesi eklenene dek işaretçi ifadesi. Yöneltme işleci (<strong>\*</strong>) (aşağıdaki örneklere bakın), son işaretçi değeri adresleri bir dizi türüne yönelik olmadığı sürece son simgeli ifade değerinden sonra uygulanır.
+Alt simge ifadeleri soldan sağa ilişkilendirilir. En soldaki indis ifadesi, *İfade1* **[** *İfade2* **]** , önce değerlendirilir. *İfade1* ve *Deyim2* ekleme işleminden elde edilen adres bir işaretçi ifadesi; ardından, yeni bir işaretçi ifadesi oluşturmak için bu işaretçi ifadesine *expression3* eklenir ve son alt simge ifadesi eklenene kadar bu şekilde devam eder. Son simge değeri bir<strong>\*</strong>dizi türüne (aşağıdaki örneklere bakın) bağlanmamışsa, yöneltme işleci () son alt indislenmiş ifadeden sonra uygulanır.
 
 Birden çok alt simgeye sahip ifadeler, "çok boyutlu dizilerin" öğelerine başvurur. Çok boyutlu bir dizi, öğeleri dizi olan bir dizidir. Örneğin, üç boyutlu bir dizinin ilk öğesi iki boyutlu bir dizidir.
 

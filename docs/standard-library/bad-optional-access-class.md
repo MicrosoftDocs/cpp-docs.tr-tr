@@ -1,25 +1,33 @@
 ---
 title: bad_optional_access sınıfı
-ms.date: 11/04/2016
+ms.date: 08/06/2019
 f1_keywords:
 - optional/std::bad_optional_access
-ms.assetid: 89a3b805-ab60-4858-b772-5855130c11b1
-ms.openlocfilehash: f898d1e30dd173339192bdb3b75581d12b62fca7
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.openlocfilehash: 043b0360c7e0be48267c8f406dbfea50eeb5a8e3
+ms.sourcegitcommit: 16c0392fc8d96e814c3a40b0c5346d7389aeb525
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68268098"
+ms.lasthandoff: 08/12/2019
+ms.locfileid: "68957096"
 ---
-# <a name="badoptionalaccess-class"></a>bad_optional_access sınıfı
+# <a name="bad_optional_access-class"></a>bad_optional_access sınıfı
 
-Burada denemesi yapıldığında değerini erişmek için durum raporlamak için özel durumlar olarak oluşturulan nesnelerin türünü tanımlayan bir `optional` nesnesini bir değer içermiyor.
+Değer içermeyen bir `optional` nesnenin değerine erişmek için bir girişimde bulunuldu durumu raporlamak için özel durum olarak oluşturulan nesne türlerini tanımlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 class bad_optional_access : public exception
 {
-    public: bad_optional_access();
+public:
+    bad_optional_access() noexcept;
+    bad_optional_access(const bad_optional_access&) noexcept;
+    bad_optional_access& operator=(const bad_optional_access&) noexcept;
+    const char* what() const noexcept override;
 };
 ```
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[\<isteğe bağlı >](optional.md)\
+[isteğe bağlı sınıf](optional-class.md)

@@ -11,84 +11,84 @@ helpviewer_keywords:
 - MFC, exceptions
 - exceptions [MFC], MFC throwing functions
 ms.assetid: 26d4457c-8350-48f5-916e-78f919787c30
-ms.openlocfilehash: e1d70505013553e27130d9d9042b0c8e5c074ab5
-ms.sourcegitcommit: 934cb53fa4cb59fea611bfeb9db110d8d6f7d165
+ms.openlocfilehash: 337fe03ab09a6ed3da283f45dd4eb58aaaad5bc5
+ms.sourcegitcommit: 16c0392fc8d96e814c3a40b0c5346d7389aeb525
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65612205"
+ms.lasthandoff: 08/12/2019
+ms.locfileid: "68957497"
 ---
 # <a name="exception-processing"></a>Özel Durum İşleme
 
-Bir programı yürütüldüğünde, bir dizi anormal koşullar ve "özel durumlar" adlı hataları oluşabilir. Bu işlem, bellek, kaynak ayırma hatalarını ve dosyaları bulmak için hata bitmesi içerebilir.
+Bir program yürütüldüğünde, "özel durumlar" adlı bir dizi olağan dışı koşul ve hata oluşabilir. Bunlar bellek yetersiz, kaynak ayırma hataları ve dosya bulma hatası içerebilir.
 
-Microsoft Foundation Class Kitaplığı, C++ için ANSI standartları komitesi tarafından önerilen sonra yakından modellenmiş bir özel durum işleme düzeni kullanır. Bir işlevi çağırmak, olağan dışı bir durum karşılaşabilirsiniz önce bir özel durum işleyicisi ayarlanması gerekir. İşlev olağan dışı bir koşul karşılaşırsa, bir özel durum oluşturur ve denetimi özel durum işleyicisine geçirilir.
+Microsoft Foundation Class Kitaplığı, için C++ANSI standartları komite tarafından önerilmiş bir şekilde modellenen bir özel durum işleme düzeni kullanır. Olağan dışı bir durumla karşılaşabilecekleri bir işlev çağrılmadan önce bir özel durum işleyicisi ayarlanmalıdır. İşlev olağan dışı bir koşulla karşılaşırsa, bir özel durum oluşturur ve denetim özel durum işleyicisine geçirilir.
 
-Microsoft Foundation Class Kitaplığı ile dahil çeşitli makrolar, özel durum işleyicileri ' ayarlanır. Gerekirse, özelleştirilmiş özel durumlar oluşturma ve programları, sonlandırma için çok sayıda diğer genel işlev yardımcı olur. Bu makrolar ve genel işlevler aşağıdaki kategorilere ayrılır:
+Microsoft Foundation Class Kitaplığı eklenen birkaç makro özel durum işleyicilerini ayarlar. Gerekirse, özel özel durumlar oluşturma ve programları sonlandırma konusunda çok sayıda genel işlev vardır. Bu makrolar ve genel işlevler aşağıdaki kategorilere ayrılır:
 
-- Yapısı, özel durum işleyicisi özel durum makroları.
+- Özel durum işleyicinizi oluşturan özel durum makroları.
 
-- İşlevleri Exception-throwing), belirli bir tür özel durumlar oluşturun.
+- Belirli türlerin özel durumlarını oluşturan özel durum oluşturma işlevleri.
 
-- Program sonlandırma neden sonlandırma işlevleri.
+- Sonlandırma işlevleri, program sonlandırmasına neden olur.
 
-Örnekler ve daha fazla ayrıntı için bkz [özel durumları](../../mfc/exception-handling-in-mfc.md).
+Örnekler ve daha fazla ayrıntı için bkz. Makale [özel durumları](../../mfc/exception-handling-in-mfc.md).
 
 ### <a name="exception-macros"></a>Özel durum makroları
 
 |||
 |-|-|
-|[DENEYİN](#try)|Özel durum işleme için bir kod bloğunu belirler.|
-|[YAKALAMA](#catch)|Önceki bir özel durum yakalamak için bir kod bloğunu atayan **deneyin** blok.|
-|[CATCH_ALL](#catch_all)|Önceki tüm özel durumları yakalama için bir kod bloğunu atayan **deneyin** blok.|
-|[AND_CATCH](#and_catch)|Önceki ek özel durum türlerini yakalamak için bir kod bloğunu atayan **deneyin** blok.|
-|[AND_CATCH_ALL](#and_catch_all)|Bir önceki durum diğer tüm ek özel durum türlerini yakalamak için bir kod bloğunu atayan **deneyin** blok.|
-|[END_CATCH](#end_catch)|Son sona erer **CATCH** veya **AND_CATCH** kod bloğu.|
-|[END_CATCH_ALL](#end_catch_all)|Son sona erer **CATCH_ALL** kod bloğu.|
-|[THROW](#throw)|Belirtilen bir özel durum oluşturur.|
-|[THROW_LAST](#throw_last)|Dış bir sonraki işleyici için şu anda işlenen özel durum oluşturur.|
+|[ALMAYA](#try)|Özel durum işleme için bir kod bloğu belirler.|
+|[YAKALAYA](#catch)|Önceki **TRY** bloğundan özel durum yakalamak için bir kod bloğu belirler.|
+|[CATCH_ALL](#catch_all)|Önceki **TRY** bloğundan tüm özel durumları yakalamak için bir kod bloğu belirler.|
+|[AND_CATCH](#and_catch)|Önceki **TRY** bloğundan ek özel durum türlerini yakalamak için bir kod bloğu belirler.|
+|[AND_CATCH_ALL](#and_catch_all)|Önceki **TRY** bloğunda oluşturulan diğer tüm ek özel durum türlerini yakalamak için bir kod bloğu belirler.|
+|[END_CATCH](#end_catch)|Son **catch** veya **AND_CATCH** kod bloğunu sonlandırır.|
+|[END_CATCH_ALL](#end_catch_all)|Son **CATCH_ALL** kod bloğunu sonlandırır.|
+|[YARATIR](#throw)|Belirtilen özel durumu oluşturur.|
+|[THROW_LAST](#throw_last)|Şu anda işlenmiş özel durumu sonraki dış işleyiciye atar.|
 
-### <a name="exception-throwing-functions"></a>Özel durum atma işlevleri
+### <a name="exception-throwing-functions"></a>Özel durum atma Işlevleri
 
 |||
 |-|-|
-|[AfxThrowArchiveException](#afxthrowarchiveexception)|Bir arşiv özel durum oluşturur.|
-|[AfxThrowFileException](#afxthrowfileexception)|Dosya özel durum oluşturur.|
-|[AfxThrowInvalidArgException](#afxthrowinvalidargexception)|Geçersiz bağımsız değişken özel durum oluşturur.|
+|[AfxThrowArchiveException](#afxthrowarchiveexception)|Bir arşiv özel durumu oluşturur.|
+|[AfxThrowFileException](#afxthrowfileexception)|Bir dosya özel durumu oluşturur.|
+|[AfxThrowInvalidArgException](#afxthrowinvalidargexception)|Geçersiz bir bağımsız değişken özel durumu oluşturur.|
 |[AfxThrowMemoryException](#afxthrowmemoryexception)|Bir bellek özel durumu oluşturur.|
 |[AfxThrowNotSupportedException](#afxthrownotsupportedexception)|Desteklenmeyen bir özel durum oluşturur.|
-|[AfxThrowResourceException](#afxthrowresourceexception)|Bir Windows kaynak bulunamadı özel durum oluşturur.|
-|[AfxThrowUserException](#afxthrowuserexception)|Program kullanıcı tarafından başlatılan bir eylemde bir özel durum oluşturur.|
+|[AfxThrowResourceException](#afxthrowresourceexception)|Windows kaynak bulunamadı özel durumu oluşturur.|
+|[AfxThrowUserException](#afxthrowuserexception)|Kullanıcı tarafından başlatılan bir program eyleminde özel durum oluşturur.|
 
-MFC özel OLE özel durumları için iki özel durum atma işlevleri sağlar:
+MFC özellikle OLE özel durumları için iki özel durum atma işlevi sağlar:
 
-### <a name="ole-exception-functions"></a>OLE özel işlevler
-
-|||
-|-|-|
-|[AfxThrowOleDispatchException](#afxthrowoledispatchexception)|Bir OLE Otomasyon işlevi içinde özel durum oluşturur.|
-|[AfxThrowOleException](#afxthrowoleexception)|Bir OLE özel durum oluşturur.|
-
-Veritabanı özel durumları desteklemek için iki özel durum sınıfları, veritabanı sınıfları sağlar `CDBException` ve `CDaoException`ve özel durum türlerini desteklemek için genel işlevler:
-
-### <a name="dao-exception-functions"></a>DAO özel işlevler
+### <a name="ole-exception-functions"></a>OLE özel durum Işlevleri
 
 |||
 |-|-|
-|[AfxThrowDAOException](#afxthrowdaoexception)|Oluşturur bir [CDaoException](../../mfc/reference/cdaoexception-class.md) kendi kod.|
-|[AfxThrowDBException](#afxthrowdbexception)|Oluşturur bir [CDBException](../../mfc/reference/cdbexception-class.md) kendi kod.|
+|[AfxThrowOleDispatchException](#afxthrowoledispatchexception)|OLE Otomasyonu işlevi içinde bir özel durum oluşturur.|
+|[AfxThrowOleException](#afxthrowoleexception)|OLE özel durumu oluşturur.|
 
-MFC aşağıdaki sonlandırma işlevi sağlar:
+Veritabanı sınıfları, veritabanı özel durumlarını desteklemek için, özel durum türlerini desteklemek `CDBException` için `CDaoException`iki özel durum sınıfı, ve ve genel işlevler sağlar:
 
-### <a name="termination-functions"></a>Sonlandırma işlevleri
+### <a name="dao-exception-functions"></a>DAO özel durum Işlevleri
 
 |||
 |-|-|
-|[AfxAbort](#afxabort)|Önemli bir hata oluştuğunda bir uygulamayı sonlandırmak için çağırılır gerçekleşir.|
+|[AfxThrowDAOException](#afxthrowdaoexception)|Kendi kodunuzda bir [Cdaoözel durumu](../../mfc/reference/cdaoexception-class.md) oluşturur.|
+|[AfxThrowDBException](#afxthrowdbexception)|Kendi kodınızdan bir [CDBException](../../mfc/reference/cdbexception-class.md) oluşturur.|
 
-##  <a name="try"></a>  DENEYİN
+MFC aşağıdaki sonlandırma işlevini sağlar:
 
-Ayarlayan bir **deneyin** blok.
+### <a name="termination-functions"></a>Sonlandırma Işlevleri
+
+|||
+|-|-|
+|[AfxAbort](#afxabort)|Önemli bir hata oluştuğunda bir uygulamayı sonlandırmak için çağırılır.|
+
+##  <a name="try"></a>ALMAYA
+
+Bir **TRY** bloğu ayarlar.
 
 ```
 TRY
@@ -96,21 +96,21 @@ TRY
 
 ### <a name="remarks"></a>Açıklamalar
 
-A **deneyin** bloğu özel durumları fırlatabilir bir kod bloğunu tanımlar. Bu özel durumların aşağıdaki işlenme **CATCH** ve **AND_CATCH** engeller. Özyineleme izin verilir: özel durumlar geçirilecek bir dış **deneyin** blok, bunları yoksayılıyor veya THROW_LAST makrosu kullanarak. Son **deneyin** bloğu ile bir END_CATCH veya END_CATCH_ALL makrosu.
+**TRY** bloğu özel durum oluşturabilecek bir kod bloğunu tanımlar. Bu özel durumlar aşağıdaki **catch** ve **AND_CATCH** bloklarındaki işlenir. Özyineleme için izin verildi: özel durumlar, bir dış **TRY** bloğuna ya da onları yoksayarak ya da THROW_LAST makrosu kullanılarak geçirilebilir. **TRY** bloğunu bir END_CATCH veya END_CATCH_ALL makrosu ile sonlandırın.
 
-Daha fazla bilgi için bkz [özel durumları](../../mfc/exception-handling-in-mfc.md).
+Daha fazla bilgi için bkz. Makale [özel durumları](../../mfc/exception-handling-in-mfc.md).
 
 ### <a name="example"></a>Örnek
 
-Örneğin bakın [CATCH](#catch).
+[Catch](#catch)örneğine bakın.
 
 ### <a name="requirements"></a>Gereksinimler
 
-Üstbilgi: afx.h
+Üstbilgi: AFX. h
 
-##  <a name="catch"></a>  YAKALAMA
+##  <a name="catch"></a>YAKALAYA
 
-Önceki durum ilk özel durum türü yakalayan bir kod bloğunu tanımlar **deneyin** blok.
+Önceki **TRY** bloğunda oluşturulan ilk özel durum türünü yakalayan bir kod bloğunu tanımlar.
 
 ```
 CATCH(exception_class, exception_object_pointer_name)
@@ -119,31 +119,31 @@ CATCH(exception_class, exception_object_pointer_name)
 ### <a name="parameters"></a>Parametreler
 
 *exception_class*<br/>
-Test etmek için özel durum türünü belirtir. Standart özel durum sınıfları listesi için bkz. [CException](../../mfc/reference/cexception-class.md).
+Test edilecek özel durum türünü belirtir. Standart özel durum sınıflarının listesi için bkz. Class [CException](../../mfc/reference/cexception-class.md).
 
 *exception_object_pointer_name*<br/>
-Makro tarafından oluşturulan bir özel durum nesnesi işaretçisi için bir ad belirtir. Bir işaretçi adı içinde özel durum nesnesine erişmek için kullanabileceğiniz **CATCH** blok. Bu değişken, size bildirilir.
+Makro tarafından oluşturulacak özel durum nesnesi işaretçisi için bir ad belirtir. **Catch** bloğu içindeki özel durum nesnesine erişmek için işaretçi adını kullanabilirsiniz. Bu değişken sizin için bildirilmiştir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Özel durum işleme kodu özel durum nesnesi uygunsa, özel durumun belirli nedeni hakkında daha fazla bilgi almak sorgulayın. Sonraki çerçeveyi dıştaki özel durum işleme kaydırılacak THROW_LAST makrosu çağırın. Son **deneyin** END_CATCH makrosu blok.
+Özel durumun özel nedeni hakkında daha fazla bilgi almak için özel durum işleme kodu uygunsa özel durum nesnesini sorgulanamıyor olabilir. THROW_LAST makrosunu bir sonraki dış özel durum çerçevesine kaydırmak için çağırın. **TRY** bloğunu bir END_CATCH makrosu ile sonlandırın.
 
-Varsa *exception_class* sınıf `CException`, sonra tüm özel durum türleri yakalandı. Kullanabileceğiniz [CObject::IsKindOf](../../mfc/reference/cobject-class.md#iskindof) hangi belirli özel durum oluştu belirlemek için üye işlevi. Sıralı kullanmak için çeşitli türlerde özel durumları yakalamak için daha iyi bir yolu olan **AND_CATCH** deyimleri, her biri farklı bir özel durum türü.
+*Exception_class* sınıfı `CException`ise, tüm özel durum türleri yakalanacaktır. Hangi özel durumun oluşturulduğunu öğrenmek için [CObject:: IsKindOf](../../mfc/reference/cobject-class.md#iskindof) üye işlevini kullanabilirsiniz. Çeşitli özel durumları yakalamak için daha iyi bir yol, her biri farklı bir özel durum türüne sahip sıralı **AND_CATCH** deyimlerini kullanmaktır.
 
-Özel durum nesnesi işaretçisini makro tarafından oluşturulur. Kendiniz bildirmek gerekmez.
+Özel durum nesnesi işaretçisi makro tarafından oluşturulur. Kendiniz bildirmeniz gerekmez.
 
 > [!NOTE]
->  **CATCH** blok ayraçları makaleyle C++ kapsam olarak tanımlanır. Bu kapsam içinde değişkenlere bildirirseniz, sadece ilgili kapsam içinde erişilebilir. Bu durum için de geçerlidir *exception_object_pointer_name*.
+>  **Catch** bloğu, küme ayraçları tarafından belirlenen C++ bir kapsam olarak tanımlanır. Bu kapsamda değişkenler bildirirseniz, bunlar yalnızca o kapsam içinde erişilebilir. Bu, *exception_object_pointer_name*için de geçerlidir.
 
-Özel durumlar ve CATCH makrosu hakkında daha fazla bilgi için bkz [özel durumları](../../mfc/exception-handling-in-mfc.md).
+Özel durumlar ve CATCH makrosu hakkında daha fazla bilgi için, bkz. Makale [özel durumları](../../mfc/exception-handling-in-mfc.md).
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFCExceptions#26](../../mfc/codesnippet/cpp/exception-processing_1.cpp)]
 
-##  <a name="catch_all"></a>  CATCH_ALL
+##  <a name="catch_all"></a>CATCH_ALL
 
-Önceki durum tüm özel durum türleri yakalayan bir kod bloğunu tanımlar **deneyin** blok.
+Önceki **TRY** bloğunda oluşan tüm özel durum türlerini yakalayan bir kod bloğunu tanımlar.
 
 ```
 CATCH_ALL(exception_object_pointer_name)
@@ -152,28 +152,28 @@ CATCH_ALL(exception_object_pointer_name)
 ### <a name="parameters"></a>Parametreler
 
 *exception_object_pointer_name*<br/>
-Makro tarafından oluşturulan bir özel durum nesnesi işaretçisi için bir ad belirtir. Bir işaretçi adı içinde özel durum nesnesine erişmek için kullanabileceğiniz `CATCH_ALL` blok. Bu değişken, size bildirilir.
+Makro tarafından oluşturulacak özel durum nesnesi işaretçisi için bir ad belirtir. `CATCH_ALL` Blok içindeki özel durum nesnesine erişmek için işaretçi adı ' nı kullanabilirsiniz. Bu değişken sizin için bildirilmiştir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Özel durum işleme kodu özel durum nesnesi uygunsa, özel durumun belirli nedeni hakkında daha fazla bilgi almak sorgulayın. Çağırma `THROW_LAST` sonraki çerçeveye dıştaki özel durum işleme kaydırılacak makrosu. Kullanırsanız **CATCH_ALL**, son **deneyin** END_CATCH_ALL makrosu blok.
+Özel durumun özel nedeni hakkında daha fazla bilgi almak için özel durum işleme kodu uygunsa özel durum nesnesini sorgulanamıyor olabilir. İşlemeyi bir sonraki dış özel durum çerçevesine kaydırmak için makroyuçağırın.`THROW_LAST` **CATCH_ALL**kullanıyorsanız, **TRY** bloğunu bir END_CATCH_ALL makrosu ile sonlandırın.
 
 > [!NOTE]
->  **CATCH_ALL** blok olarak tanımlanmış olan bir C++ ayraçları makaleyle kapsam. Bu kapsam içinde değişkenlere bildirirseniz, sadece ilgili kapsam içinde erişilebilir.
+>  **CATCH_ALL** bloğu, küme ayraçları tarafından belirlenen C++ bir kapsam olarak tanımlanır. Bu kapsamda değişkenler bildirirseniz, bunlar yalnızca o kapsam içinde erişilebilir.
 
-Özel durumları hakkında daha fazla bilgi için bkz [özel durumları](../../mfc/exception-handling-in-mfc.md).
+Özel durumlar hakkında daha fazla bilgi için, bkz. [özel durumlar](../../mfc/exception-handling-in-mfc.md).
 
 ### <a name="example"></a>Örnek
 
-Örneğin bakın [CFile::Abort](../../mfc/reference/cfile-class.md#abort).
+[CFile:: Abort](../../mfc/reference/cfile-class.md#abort)örneğine bakın.
 
 ### <a name="requirements"></a>Gereksinimler
 
-  **Üst bilgi** afx.h
+  **Üst bilgi** AFX. h
 
-##  <a name="and_catch"></a>  AND_CATCH
+##  <a name="and_catch"></a>AND_CATCH
 
-Bir önceki durum ek özel durum türlerini yakalamak için bir kod bloğunu tanımlar **deneyin** blok.
+Önceki **TRY** bloğunda oluşturulan ek özel durum türlerini yakalamak için bir kod bloğu tanımlar.
 
 ```
 AND_CATCH(exception_class, exception_object_pointer_name)
@@ -182,30 +182,30 @@ AND_CATCH(exception_class, exception_object_pointer_name)
 ### <a name="parameters"></a>Parametreler
 
 *exception_class*<br/>
-Test etmek için özel durum türünü belirtir. Standart özel durum sınıfları listesi için bkz. [CException](../../mfc/reference/cexception-class.md).
+Test edilecek özel durum türünü belirtir. Standart özel durum sınıflarının listesi için bkz. Class [CException](../../mfc/reference/cexception-class.md).
 
 *exception_object_pointer_name*<br/>
-Makro tarafından oluşturulan bir özel durum nesnesi işaretçisi için bir ad. Bir işaretçi adı içinde özel durum nesnesine erişmek için kullanabileceğiniz **AND_CATCH** blok. Bu değişken, size bildirilir.
+Makro tarafından oluşturulacak özel durum nesnesi işaretçisi için bir ad. **AND_CATCH** bloğundaki özel durum nesnesine erişmek için işaretçi adı ' nı kullanabilirsiniz. Bu değişken sizin için bildirilmiştir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir özel durum türü yakalamak için CATCH makrosu sonra sonraki her tür yakalamak için AND_CATCH makrosu kullanın. Son **deneyin** END_CATCH makrosu blok.
+Bir özel durum türünü yakalamak için CATCH makrosunu, ardından gelen her bir türü yakalamak için AND_CATCH makrosunu kullanın. **TRY** bloğunu bir END_CATCH makrosu ile sonlandırın.
 
-Özel durum işleme kodu özel durum nesnesi uygunsa, özel durumun belirli nedeni hakkında daha fazla bilgi almak sorgulayın. THROW_LAST makrosu içinde çağrı **AND_CATCH** sonraki çerçeveye dıştaki özel durum işleme shift engelleyin. **AND_CATCH** önceki sonunu işaretler **CATCH** veya **AND_CATCH** blok.
+Özel durumun özel nedeni hakkında daha fazla bilgi almak için özel durum işleme kodu uygunsa özel durum nesnesini sorgulanamıyor olabilir. THROW_LAST makrosunu bir sonraki dış özel durum çerçevesine kaydırmak için **AND_CATCH** bloğu içinde çağırın. **AND_CATCH** önceki **catch** veya **AND_CATCH** bloğunun sonunu işaretler.
 
 > [!NOTE]
->  **AND_CATCH** blok olarak tanımlanmış olan bir C++ kapsamı (küme ayraçları işaretleriyle). Bu kapsam içinde değişkenlere bildirirseniz, sadece ilgili kapsam içinde erişilebilir olduklarını unutmayın. Bu durum için de geçerlidir *exception_object_pointer_name* değişkeni.
+>  **AND_CATCH** bloğu bir C++ kapsam olarak tanımlanır (küme ayraçları tarafından belirlenir). Bu kapsamda değişkenler bildirirseniz, bunların yalnızca o kapsam içinde erişilebilir olduğunu unutmayın. Bu, *exception_object_pointer_name* değişkeni için de geçerlidir.
 
 ### <a name="example"></a>Örnek
 
-Örneğin bakın [CATCH](#catch).
+[Catch](#catch)örneğine bakın.
 
 ### <a name="requirements"></a>Gereksinimler
 
-  **Üst bilgi** afx.h
-##  <a name="and_catch_all"></a>  AND_CATCH_ALL
+  **Üst bilgi** AFX. h
+##  <a name="and_catch_all"></a>AND_CATCH_ALL
 
-Bir önceki durum ek özel durum türlerini yakalamak için bir kod bloğunu tanımlar **deneyin** blok.
+Önceki **TRY** bloğunda oluşturulan ek özel durum türlerini yakalamak için bir kod bloğu tanımlar.
 
 ```
 AND_CATCH_ALL(exception_object_pointer_name)
@@ -214,24 +214,24 @@ AND_CATCH_ALL(exception_object_pointer_name)
 ### <a name="parameters"></a>Parametreler
 
 *exception_object_pointer_name*<br/>
-Makro tarafından oluşturulan bir özel durum nesnesi işaretçisi için bir ad. Bir işaretçi adı içinde özel durum nesnesine erişmek için kullanabileceğiniz **AND_CATCH_ALL** blok. Bu değişken, size bildirilir.
+Makro tarafından oluşturulacak özel durum nesnesi işaretçisi için bir ad. **AND_CATCH_ALL** bloğundaki özel durum nesnesine erişmek için işaretçi adı ' nı kullanabilirsiniz. Bu değişken sizin için bildirilmiştir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kullanım **CATCH** bir özel durum türü yakalamak için makro ve diğer tüm sonraki türleri yakalamak için AND_CATCH_ALL makrosu. AND_CATCH_ALL kullanırsanız, son **deneyin** END_CATCH_ALL makrosu blok.
+Bir özel durum türünü yakalamak için **catch** makrosunu, ardından gelen diğer tüm diğer türleri yakalamak için AND_CATCH_ALL makrosunu kullanın. AND_CATCH_ALL kullanıyorsanız, **TRY** bloğunu bir END_CATCH_ALL makrosu ile sonlandırın.
 
-Özel durum işleme kodu özel durum nesnesi uygunsa, özel durumun belirli nedeni hakkında daha fazla bilgi almak sorgulayın. THROW_LAST makrosu içinde çağrı **AND_CATCH_ALL** sonraki çerçeveye dıştaki özel durum işleme shift engelleyin. **AND_CATCH_ALL** önceki sonunu işaretler **CATCH** veya **AND_CATCH_ALL** blok.
+Özel durumun özel nedeni hakkında daha fazla bilgi almak için özel durum işleme kodu uygunsa özel durum nesnesini sorgulanamıyor olabilir. THROW_LAST makrosunu bir sonraki dış özel durum çerçevesine kaydırmak için **AND_CATCH_ALL** bloğu içinde çağırın. **AND_CATCH_ALL** önceki **catch** veya **AND_CATCH_ALL** bloğunun sonunu işaretler.
 
 > [!NOTE]
->  **AND_CATCH_ALL** blok olarak tanımlanmış olan bir C++ kapsamı (ayraçları işaretleriyle). Bu kapsam içinde değişkenlere bildirirseniz, sadece ilgili kapsam içinde erişilebilir olduklarını unutmayın.
+>  **AND_CATCH_ALL** bloğu bir C++ kapsam olarak tanımlanır (küme ayraçları tarafından belirlenir). Bu kapsamda değişkenler bildirirseniz, bunların yalnızca o kapsam içinde erişilebilir olduğunu unutmayın.
 
 ### <a name="requirements"></a>Gereksinimler
 
-  **Üst bilgi** afx.h
+  **Üst bilgi** AFX. h
 
-##  <a name="end_catch"></a>  END_CATCH
+##  <a name="end_catch"></a>END_CATCH
 
-Son sonunu işaretleyen **CATCH** veya **AND_CATCH** blok.
+Son **catch** veya **AND_CATCH** bloğunun sonunu işaretler.
 
 ```
 END_CATCH
@@ -239,15 +239,15 @@ END_CATCH
 
 ### <a name="remarks"></a>Açıklamalar
 
-END_CATCH makrosu hakkında daha fazla bilgi için bkz [özel durumları](../../mfc/exception-handling-in-mfc.md).
+END_CATCH makrosu hakkında daha fazla bilgi için, bkz. [özel durumlar](../../mfc/exception-handling-in-mfc.md).
 
 ### <a name="requirements"></a>Gereksinimler
 
-  **Üst bilgi** afx.h
+  **Üst bilgi** AFX. h
 
-##  <a name="end_catch_all"></a>  END_CATCH_ALL
+##  <a name="end_catch_all"></a>END_CATCH_ALL
 
-Son sonunu işaretleyen <strong>CATCH_ALL88 veya ** AND_CATCH_ALL</strong> blok.
+Son **CATCH_ALL88** veya **AND_CATCH_ALL** bloğunun sonunu işaretler.
 
 ```
 END_CATCH_ALL
@@ -255,11 +255,11 @@ END_CATCH_ALL
 
 ### <a name="requirements"></a>Gereksinimler
 
-  **Üst bilgi** afx.h
+  **Üst bilgi** AFX. h
 
-##  <a name="throw"></a>  THROW (MFC)
+##  <a name="throw"></a>THROW (MFC)
 
-Belirtilen özel durum oluşturur.
+Belirtilen özel durumu oluşturur.
 
 ```
 THROW(exception_object_pointer)
@@ -268,21 +268,21 @@ THROW(exception_object_pointer)
 ### <a name="parameters"></a>Parametreler
 
 *exception_object_pointer*<br/>
-Bir özel durum nesnesini noktalarına türetilen `CException`.
+Öğesinden `CException`türetilen bir özel durum nesnesine işaret eder.
 
 ### <a name="remarks"></a>Açıklamalar
 
-**THROW** kesme programı ilişkili denetim geçirme yürütme **CATCH** programınızda engelleyin. Sağlanmadığında **CATCH** denetimi, bir hata iletisi ve çıkar Microsoft Foundation Class Kitaplığı modülü geçirilir sonra engelleyin.
+Bir kesme programı yürütmesi **oluşturun** ve denetim, programınızda ilişkili **catch** bloğuna geçer. **Catch** bloğunu sağlamadıysanız, denetim bir hata iletisi yazdıran ve çıkış yapan bir Microsoft Foundation Class Kitaplığı modüle geçirilir.
 
-Daha fazla bilgi için bkz [özel durumları](../../mfc/exception-handling-in-mfc.md).
+Daha fazla bilgi için bkz. Makale [özel durumları](../../mfc/exception-handling-in-mfc.md).
 
 ### <a name="requirements"></a>Gereksinimler
 
-  **Üst bilgi** afx.h
+  **Üst bilgi** AFX. h
 
-##  <a name="throw_last"></a>  THROW_LAST
+##  <a name="throw_last"></a>THROW_LAST
 
-Özel durum geri sonraki oluşturur dış **CATCH** blok.
+Bir sonraki dış **catch** bloğuna geri dönüş özel durumunu oluşturur.
 
 ```
 THROW_LAST()
@@ -290,21 +290,21 @@ THROW_LAST()
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu makro, yerel olarak oluşturulan bir özel durum oluşturmasına olanak tanır. Yalnızca yakalanan bir özel durum denerseniz, normalde kapsam dışına gider ve silinecek. İle **THROW_LAST**, özel durum doğru sonraki geçirilen **CATCH** işleyici.
+Bu makro yerel olarak oluşturulan bir özel durum oluşturmanıza olanak sağlar. Az önce yakalandığı bir özel durum yapmayı denerseniz, normalde kapsam dışına gider ve silinir. **THROW_LAST**ile, özel durum bir sonraki **catch** işleyicisine doğru şekilde geçirilir.
 
-Daha fazla bilgi için bkz [özel durumları](../../mfc/exception-handling-in-mfc.md).
+Daha fazla bilgi için bkz. Makale [özel durumları](../../mfc/exception-handling-in-mfc.md).
 
 ### <a name="example"></a>Örnek
 
-Örneğin bakın [CFile::Abort](../../mfc/reference/cfile-class.md#abort).
+[CFile:: Abort](../../mfc/reference/cfile-class.md#abort)örneğine bakın.
 
 ### <a name="requirements"></a>Gereksinimler
 
-  **Üst bilgi** afx.h
+  **Üst bilgi** AFX. h
 
-##  <a name="afxthrowarchiveexception"></a>  AfxThrowArchiveException
+##  <a name="afxthrowarchiveexception"></a>AfxThrowArchiveException
 
-Bir arşiv özel durum oluşturur.
+Bir arşiv özel durumu oluşturur.
 
 ```
 void  AfxThrowArchiveException(int cause, LPCTSTR lpszArchiveName);
@@ -312,19 +312,19 @@ void  AfxThrowArchiveException(int cause, LPCTSTR lpszArchiveName);
 
 ### <a name="parameters"></a>Parametreler
 
-*Bunun nedeni*<br/>
-Özel durumun nedenini belirten bir tamsayı belirtir. Olası değerler listesi için bkz. [CArchiveException::m_cause](../../mfc/reference/carchiveexception-class.md#m_cause).
+*sağlamak*<br/>
+Özel durumun nedenini gösteren bir tamsayı belirtir. Olası değerler listesi için bkz. [CArchiveException:: m_cause](../../mfc/reference/carchiveexception-class.md#m_cause).
 
 *lpszArchiveName*<br/>
-İşaret adı içeren bir dizeye `CArchive` (varsa) özel duruma neden olan nesne.
+Özel duruma neden olan `CArchive` nesnenin adını içeren bir dizeye işaret eder (varsa).
 
 ### <a name="requirements"></a>Gereksinimler
 
-  **Üst bilgi** afx.h
+  **Üst bilgi** AFX. h
 
-##  <a name="afxthrowfileexception"></a>  AfxThrowFileException
+##  <a name="afxthrowfileexception"></a>AfxThrowFileException
 
-Dosya özel durum oluşturur.
+Bir dosya özel durumu oluşturur.
 
 ```
 void AfxThrowFileException(
@@ -335,26 +335,26 @@ void AfxThrowFileException(
 
 ### <a name="parameters"></a>Parametreler
 
-*Bunun nedeni*<br/>
-Özel durumun nedenini belirten bir tamsayı belirtir. Olası değerler listesi için bkz. [CFileException::m_cause](../../mfc/reference/cfileexception-class.md#m_cause).
+*sağlamak*<br/>
+Özel durumun nedenini gösteren bir tamsayı belirtir. Olası değerlerin listesi için bkz. [CFileException:: m_cause](../../mfc/reference/cfileexception-class.md#m_cause).
 
 *lOsError*<br/>
-İşletim sistemi hata numarasına (varsa) içeren özel durumun nedenini belirten. Hata kodlarının listesi için işletim sistemi kılavuzuna bakın.
+Özel durumun nedenini belirten işletim sistemi hata numarasını (varsa) içerir. Hata kodlarının listelenmesi için bkz. işletim sistemi el kitabı.
 
 *lpszFileName*<br/>
-(Varsa) özel duruma neden dosya adını içeren bir dize işaret eder.
+Özel duruma neden olan dosyanın adını içeren bir dizeye işaret eder (varsa).
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşletim sistemi hata koduna göre nedenini belirlemek için sorumlu olursunuz.
+İşletim sistemi hata koduna göre nedeni belirlemekten siz sorumlusunuz.
 
 ### <a name="requirements"></a>Gereksinimler
 
-  **Üst bilgi** afx.h
+  **Üst bilgi** AFX. h
 
-## <a name="afxthrowinvalidargexception"></a>  AfxThrowInvalidArgException
+## <a name="afxthrowinvalidargexception"></a>AfxThrowInvalidArgException
 
-Geçersiz bağımsız değişken özel durum oluşturur.
+Geçersiz bir bağımsız değişken özel durumu oluşturur.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -368,9 +368,9 @@ Geçersiz bağımsız değişkenler kullanıldığında bu işlev çağrılır.
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afx.h
+**Üstbilgi:** AFX. h
 
-##  <a name="afxthrowmemoryexception"></a>  AfxThrowMemoryException
+##  <a name="afxthrowmemoryexception"></a>AfxThrowMemoryException
 
 Bir bellek özel durumu oluşturur.
 
@@ -380,15 +380,15 @@ void AfxThrowMemoryException();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsa bu işlevi çağırın. temel alınan sistem bellek ayırıcılar çağrıları (gibi **malloc** ve [GlobalAlloc](/windows/desktop/api/winbase/nf-winbase-globalalloc) Windows işlevi) başarısız. Bunun için çağrı gerekmez **yeni** çünkü **yeni** bellek ayırma başarısız olursa bir bellek özel durumu otomatik olarak atar.
+Temeldeki sistem bellek ayırıcıları ( **malloc** ve [GlobalAlloc](/windows/desktop/api/winbase/nf-winbase-globalalloc) Windows işlevi) çağrıları başarısız olursa bu işlevi çağırın. Bellek ayırma başarısız olursa **Yeni** bir bellek özel durumu otomatik olarak oluşturabileceğinden yeni için bu dosyayı çağırmanız gerekmez.
 
 ### <a name="requirements"></a>Gereksinimler
 
-  **Üst bilgi** afx.h
+  **Üst bilgi** AFX. h
 
-##  <a name="afxthrownotsupportedexception"></a>  AfxThrowNotSupportedException
+##  <a name="afxthrownotsupportedexception"></a>AfxThrowNotSupportedException
 
-Desteklenmeyen bir özellik isteğinden kaynaklanan bir özel durum oluşturur.
+Desteklenmeyen bir özellik için isteğin sonucu olan bir özel durum oluşturur.
 
 ```
 void AfxThrowNotSupportedException();
@@ -396,11 +396,11 @@ void AfxThrowNotSupportedException();
 
 ### <a name="requirements"></a>Gereksinimler
 
-  **Üst bilgi** afx.h
+  **Üst bilgi** AFX. h
 
-##  <a name="afxthrowresourceexception"></a>  AfxThrowResourceException
+##  <a name="afxthrowresourceexception"></a>AfxThrowResourceException
 
-Bir kaynak özel durum oluşturur.
+Bir kaynak özel durumu oluşturur.
 
 ```
 void  AfxThrowResourceException();
@@ -408,15 +408,15 @@ void  AfxThrowResourceException();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev, normalde Windows Kaynak yüklendiğinde çağrılır.
+Bu işlev, normalde bir Windows kaynağı yüklenemediğinde çağrılır.
 
 ### <a name="requirements"></a>Gereksinimler
 
-  **Üst bilgi** afx.h
+  **Üst bilgi** AFX. h
 
-##  <a name="afxthrowuserexception"></a>  AfxThrowUserException
+##  <a name="afxthrowuserexception"></a>AfxThrowUserException
 
-Son kullanıcı işlemini durdurmak için bir özel durum oluşturur.
+Son Kullanıcı işlemini durdurmak için bir özel durum oluşturur.
 
 ```
 void AfxThrowUserException();
@@ -424,15 +424,15 @@ void AfxThrowUserException();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev normalde hemen sonra çağrılır `AfxMessageBox` kullanıcıya bir hata bildirdi.
+Bu işlev genellikle kullanıcıya bir hata bildirdikten hemen sonra `AfxMessageBox` çağrılır.
 
 ### <a name="requirements"></a>Gereksinimler
 
-  **Üst bilgi** afx.h
+  **Üst bilgi** AFX. h
 
-##  <a name="afxthrowoledispatchexception"></a>  AfxThrowOleDispatchException
+##  <a name="afxthrowoledispatchexception"></a>AfxThrowOleDispatchException
 
-Bir OLE Otomasyon işlevi içinde bir özel durum oluşturmak için bu işlevi kullanın.
+OLE Otomasyonu işlevi içinde bir özel durum oluşturmak için bu işlevi kullanın.
 
 ```
 void AFXAPI AfxThrowOleDispatchException(
@@ -448,21 +448,21 @@ void AFXAPI AfxThrowOleDispatchException(
 
 ### <a name="parameters"></a>Parametreler
 
-*WCode*<br/>
-Uygulamanıza özgü bir hata kodu.
+*wCode*<br/>
+Uygulamanıza özel bir hata kodu.
 
 *lpszDescription*<br/>
-Sözlü hatanın açıklaması.
+Hatanın cobilanço açıklaması.
 
-*nDescriptionID*<br/>
-Sözlü hata açıklamasını kaynak kimliği.
+*Ndescriptionıd*<br/>
+Cobilanço hata açıklaması için kaynak KIMLIĞI.
 
-*nHelpID*<br/>
-Uygulamanızın Yardım için Yardım içeriğini (. HLP) dosyası.
+*Nhelpıd*<br/>
+Uygulamanızın yardımı için yardım bağlamı (. HLP) dosyası.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev için sağlanan bilgileri sürüş uygulama (Microsoft Visual Basic veya başka bir OLE Otomasyon istemci uygulaması) tarafından görüntülenebilir.
+Bu işleve sunulan bilgiler, itici uygulama (Microsoft Visual Basic veya başka bir OLE Otomasyon istemci uygulaması) tarafından görüntülenebilir.
 
 ### <a name="example"></a>Örnek
 
@@ -470,11 +470,11 @@ Bu işlev için sağlanan bilgileri sürüş uygulama (Microsoft Visual Basic ve
 
 ### <a name="requirements"></a>Gereksinimler
 
-  **Üst bilgi** afx.h
+  **Üst bilgi** AFX. h
 
-##  <a name="afxthrowoleexception"></a>  AfxThrowOleException
+##  <a name="afxthrowoleexception"></a>AfxThrowOleException
 
-Türünde bir nesne oluşturur `COleException` ve bir özel durum oluşturur.
+Türünde `COleException` bir nesne oluşturur ve özel durum oluşturur.
 
 ```
 void AFXAPI AfxThrowOleException(SCODE sc);
@@ -483,23 +483,23 @@ void AFXAPI AfxThrowOleException(HRESULT hr);
 
 ### <a name="parameters"></a>Parametreler
 
-*sc*<br/>
+*SC*<br/>
 Özel durumun nedenini gösteren bir OLE durum kodu.
 
-*İK*<br/>
-Özel durumun nedenini belirten bir sonuç kodu için işleyin.
+*HR*<br/>
+Özel durumun nedenini gösteren bir sonuç kodu için tanıtıcı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bağımsız değişken olarak bir HRESULT alan sürümü, sonuç kodu karşılık gelen SCODE dönüştürür. HRESULT ve SCODE hakkında daha fazla bilgi için bkz. [yapısı COM hata kodlarını](/windows/desktop/com/structure-of-com-error-codes) Windows SDK.
+Bir HRESULT bağımsız değişkeni olarak alan sürüm, bu sonuç kodunu ilgili SCODE 'a dönüştürür. HRESULT ve SCODE hakkında daha fazla bilgi için, bkz. Windows SDK [com hata kodları yapısı](/windows/desktop/com/structure-of-com-error-codes) .
 
 ### <a name="requirements"></a>Gereksinimler
 
-  **Üst bilgi** afxdao.h
+  **Header** afxdao. h
 
-##  <a name="afxthrowdaoexception"></a>  AfxThrowDaoException
+##  <a name="afxthrowdaoexception"></a>AfxThrowDaoException
 
-Özel durum türü için bu işlevi çağırın [CDaoException](../../mfc/reference/cdaoexception-class.md) kendi kod.
+Kendi kodunuzda [CDaoException](../../mfc/reference/cdaoexception-class.md) türünde bir özel durum oluşturmak için bu işlevi çağırın.
 
 ```
 void AFXAPI AfxThrowDaoException(
@@ -510,24 +510,24 @@ void AFXAPI AfxThrowDaoException(
 ### <a name="parameters"></a>Parametreler
 
 *nAfxDaoError*<br/>
-Hata kodu genişletilmiş bir DAO temsil eden bir tamsayı değeri olan değerlerden biri altında listelenebilir [CDaoException::m_nAfxDaoError](../../mfc/reference/cdaoexception-class.md#m_nafxdaoerror).
+Bir DAO genişletilmiş hata kodunu temsil eden bir tamsayı değeri, bu, [CDaoException:: m_nAfxDaoError](../../mfc/reference/cdaoexception-class.md#m_nafxdaoerror)altında listelenen değerlerden biri olabilir.
 
 *SCODE*<br/>
-DAO, SCODE türünde bir OLE hata kodu. Bilgi için [CDaoException::m_scode](../../mfc/reference/cdaoexception-class.md#m_scode).
+SCODE türünde bir DAO 'dan OLE hata kodu. Bilgi için bkz. [CDaoException:: m_scode](../../mfc/reference/cdaoexception-class.md#m_scode).
 
 ### <a name="remarks"></a>Açıklamalar
 
-Framework de çağırır `AfxThrowDaoException`. Çağrınızda, parametrelerden biri veya her ikisini de geçirebilirsiniz. Aşağıdakilerden birini yükseltmek istiyorsanız, örneğin, hataları tanımlanan **CDaoException::nAfxDaoError** ancak verdiğiniz değil *scode* parametresi, geçerli bir kod geçirmek *nAfxDaoError* parametresi için varsayılan değeri kabul *scode*.
+Framework Ayrıca çağırır `AfxThrowDaoException`. Çağrın içinde, parametrelerden birini veya her ikisini de geçirebilirsiniz. Örneğin, **CDaoException:: nAfxDaoError** içinde tanımlanan hatalardan birini yükseltmek istiyorsanız ancak *SCODE* parametresini ilgilenmezseniz, *nAfxDaoError* parametresinde geçerli bir kod geçirin ve *SCODE*için varsayılan değeri kabul edin.
 
-MFC DAO sınıflarına ilgili özel durumları hakkında daha fazla bilgi için bkz. `CDaoException` bu kitap ve makale [özel durumlar: Veritabanı özel durumları](../../mfc/exceptions-database-exceptions.md).
+MFC DAO sınıflarıyla ilgili özel durumlar hakkında daha fazla bilgi için, bu `CDaoException` kitapta bulunan sınıf ve makale [özel durumları: Veritabanı özel](../../mfc/exceptions-database-exceptions.md)durumları.
 
 ### <a name="requirements"></a>Gereksinimler
 
-  **Üst bilgi** afxdb.h
+  **Başlık** Afxdb. h
 
-##  <a name="afxthrowdbexception"></a>  AfxThrowDBException
+##  <a name="afxthrowdbexception"></a>AfxThrowDBException
 
-Özel durum türü için bu işlevi çağırın `CDBException` kendi kod.
+Kendi kodunuzda türünde `CDBException` bir özel durum oluşturmak için bu işlevi çağırın.
 
 ```
 void AfxThrowDBException(
@@ -538,26 +538,26 @@ void AfxThrowDBException(
 
 ### <a name="parameters"></a>Parametreler
 
-*nRetCode*<br/>
-Özel durum oluşturulmasına neden olan hata türünü tanımlayan RETCODE, türünde bir değer.
+*Nekcode*<br/>
+Özel durumun oluşturulmasına neden olan hata türünü tanımlayarak, RETCODE türünde bir değer.
 
 *pdb*<br/>
-Bir işaretçi `CDatabase` özel durum olduğu ilişkili veri kaynağı bağlantısını temsil eden nesne.
+Özel durumun ilişkilendirildiği veri `CDatabase` kaynağı bağlantısını temsil eden nesneye yönelik bir işaretçi.
 
-*hstmt*<br/>
-Özel durum ilişkilendirildiği deyim tanıtıcı belirtir bir ODBC HSTMT tanıtıcısı.
+*bağlayıcıları*<br/>
+Özel durumun ilişkilendirildiği deyim tanıtıcısını belirten bir ODBC HSTMT tanıtıcısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Framework çağrıları `AfxThrowDBException` ne zaman bir ODBC RETCODE bir ODBC API işlevine bir çağrı aldığında ve RETCODE expectable hata yerine olağanüstü bir koşul olarak yorumlar. Örneğin, bir veri erişim işlemi, bir disk okuma hatası nedeniyle başarısız olabilir.
+Framework, ODBC `AfxThrowDBException` API işlevine yapılan çağrıdan bir ODBC ekcode aldığında ve expectable hatası yerine redıcode 'u olağanüstü bir koşul olarak yorumladığı zaman çağırır. Örneğin, bir disk okuma hatası nedeniyle bir veri erişim işlemi başarısız olabilir.
 
-ODBC tarafından tanımlanan RETCODE değerler hakkında daha fazla bilgi için "Alma durumu ve hata bilgileri için" Bölüm 8, Windows SDK'yı bakın. MFC uzantıları için bu kodları hakkında daha fazla bilgi için bkz. [CDBException](../../mfc/reference/cdbexception-class.md).
+ODBC tarafından tanımlanan EKCODE değerleri hakkında daha fazla bilgi için, Windows SDK bölümünde "durum ve hata bilgilerini alma" başlıklı Bölüm 8 ' i inceleyin. Bu kodlara MFC uzantıları hakkında daha fazla bilgi için bkz. Class [CDBException](../../mfc/reference/cdbexception-class.md).
 
 ### <a name="requirements"></a>Gereksinimler
 
-  **Üst bilgi** afx.h
+  **Üst bilgi** AFX. h
 
-##  <a name="afxabort"></a>  AfxAbort
+##  <a name="afxabort"></a>AfxAbort
 
 MFC tarafından sağlanan varsayılan sonlandırma işlevi.
 
@@ -567,18 +567,18 @@ void  AfxAbort();
 
 ### <a name="remarks"></a>Açıklamalar
 
-`AfxAbort` işlenemez yakalanmayan bir özel durum gibi önemli bir hata olduğunda, MFC üye işlevleri tarafından dahili olarak çağrılır. Çağırabilirsiniz `AfxAbort` , olamaz kurtarma işlemi yıkıcı hatayla karşılaşırsanız, nadir durumda.
+`AfxAbort`, işlenmeyen bir yakalanamayan özel durum gibi önemli bir hata olduğunda MFC üye işlevleri tarafından dahili olarak çağrılır. Kurtulamadığında çok `AfxAbort` zararlı bir hatayla karşılaştığınızda, nadir bir hata durumunda çağırabilirsiniz.
 
 ### <a name="example"></a>Örnek
 
-Örneğin bakın [CATCH](#catch).
+[Catch](#catch)örneğine bakın.
 
 ### <a name="requirements"></a>Gereksinimler
 
-  **Üst bilgi** afx.h
+  **Üst bilgi** AFX. h
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Makroları ve genel öğeleri](mfc-macros-and-globals.md)<br/>
+[Makrolar ve genel öğeler](mfc-macros-and-globals.md)<br/>
 [CException Sınıfı](cexception-class.md)<br/>
 [CInvalidArgException Sınıfı](cinvalidargexception-class.md)
