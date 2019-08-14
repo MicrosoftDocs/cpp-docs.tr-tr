@@ -1,6 +1,6 @@
 ---
 title: delete İşleci (C++)
-ms.date: 11/04/2016
+ms.date: 08/12/2019
 f1_keywords:
 - delete_cpp
 helpviewer_keywords:
@@ -8,12 +8,12 @@ helpviewer_keywords:
 - delete keyword [C++], deallocating objects
 - delete keyword [C++]
 ms.assetid: de39c900-3f57-489c-9598-dcb73c4b3930
-ms.openlocfilehash: 5e4f5685ea1bb8cd7c405373ba774fe36af08672
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: d6e1be0b06beed8cf68a1ec90571281b592af21d
+ms.sourcegitcommit: db1ed91fa7451ade91c3fb76bc7a2b857f8a5eef
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62398972"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "68980462"
 ---
 # <a name="delete-operator-c"></a>delete İşleci (C++)
 
@@ -21,14 +21,11 @@ Bellek bloğunu kaldırır.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
-[::] delete cast-expression
-[::] delete [ ] cast-expression
-```
+> [`::`] `delete` *Cast ifadesi* [`::`] Cast`delete []` *ifadesi*
 
 ## <a name="remarks"></a>Açıklamalar
 
-*Atama ifadesini* bağımsız değişkeni olmalıdır daha önce oluşturulmuş bir nesne için ayrılan bellek bloğuna işaretçi [new işleci](../cpp/new-operator-cpp.md). **Sil** işleci bir sonuç türü olan **void** ve bu nedenle bir değer döndürmez. Örneğin:
+*Cast ifadesi* bağımsız değişkeni, [New işleciyle](../cpp/new-operator-cpp.md)oluşturulmuş bir nesne için daha önce ayrılmış bir bellek bloğunun işaretçisi olmalıdır. **Delete** işlecinin **void** türünde bir sonucu vardır ve bu nedenle bir değer döndürmez. Örneğin:
 
 ```cpp
 CDialog* MyDialog = new CDialog;
@@ -36,9 +33,9 @@ CDialog* MyDialog = new CDialog;
 delete MyDialog;
 ```
 
-Kullanarak **Sil** ile ayrılmamış bir nesnenin işaretçisinde **yeni** beklenmeyen sonuçlar verir. Ancak, kullanabileceğiniz **Sil** değeri 0 olan bir işaretçi üzerinde. Bu olmayacağı anlamına gelir, **yeni** başarısız sonucu silme, hata durumunda 0 döndürür **yeni** işlemdir zararsız. Bkz: [yeni ve delete işleçleri](../cpp/new-and-delete-operators.md) daha fazla bilgi için.
+**Yeni** ile ayrılmamış bir nesnenin işaretçisi üzerinde **Delete** kullanılması öngörülemeyen sonuçlara neden olur. Ancak, 0 değeriyle bir işaretçi üzerinde **Delete** kullanabilirsiniz. Bu sağlama, **Yeni** hata durumunda 0 döndürdüğünde, başarısız olan **Yeni** bir işlemin sonucunun silinmesinin zararsız olduğu anlamına gelir. Daha fazla bilgi için bkz. [New ve delete işleçleri](../cpp/new-and-delete-operators.md).
 
-**Yeni** ve **Sil** işleçleri diziler de dahil olmak üzere yerleşik türler için de kullanılabilir. `pointer` bir diziye başvuruyorsa, `pointer` öncesinde boş köşeli ayraçlar yerleştirin.
+**New** ve **Delete** işleçleri diziler dahil yerleşik türler için de kullanılabilir. `pointer` bir diziye başvuruyorsa, `pointer` öncesinde boş köşeli ayraçlar yerleştirin.
 
 ```cpp
 int* set = new int[100];
@@ -46,15 +43,17 @@ int* set = new int[100];
 delete [] set;
 ```
 
-Kullanarak **Sil** işlecini bir nesne üzerinde kullanmak onun belleğini kaldırır. Nesne silindikten sonra bir işaretçinin başvurusunu kaldıran bir program öngörülemeyen sonuçlara veya çökmeye neden olabilir.
+Bir nesne üzerinde **Delete** işlecinin kullanılması belleği ayırır. Nesne silindikten sonra bir işaretçinin başvurusunu kaldıran bir program öngörülemeyen sonuçlara veya çökmeye neden olabilir.
 
-Zaman **Sil** olan bir C++ sınıfı nesne için bellek ayırması için kullanılan (nesnenin bir yok Edicisi varsa) nesnenin belleği kaldırılmadan önce nesnenin yok Edicisi çağrılır.
+Bir C++ sınıf nesnesi için belleği serbest bırakmak için silme kullanıldığında, nesnenin yıkıcısı, nesne bellekten serbest bırakılmadan önce çağrılır (nesne bir yıkıcı içeriyorsa).
 
-İşlenenin **Sil** işleci değiştirilebilir bir l-değeri ise, nesne silindikten sonra değeri tanımsızdır.
+**Delete** işlecinin işleneni değiştirilebilir bir l-değeri ise, nesne silindikten sonra değeri tanımsız olur.
+
+[/SDL (ek güvenlik denetimlerini etkinleştir)](/cpp/build/reference/sdl-enable-additional-security-checks) derleyici seçeneği belirtilmişse, **Delete** işlecinin işleneni, nesne silindikten sonra geçersiz bir değere ayarlanır.
 
 ## <a name="using-delete"></a>delete Kullanma
 
-İçin söz dizimi iki çeşidi vardır [delete işleci](../cpp/delete-operator-cpp.md): tek nesneleri ve diğer nesne dizileri için. Aşağıdaki kod parçası bu farkı göstermektedir:
+[Delete işleci](../cpp/delete-operator-cpp.md)için bir tane olmak üzere iki sözdizimi vardır: tek nesneler ve diğeri de nesne dizileri için. Aşağıdaki kod parçası bunların nasıl farklı olduğunu gösterir:
 
 ```cpp
 // expre_Using_delete.cpp
@@ -80,20 +79,20 @@ int main()
 }
 ```
 
-Aşağıdaki iki durum tanımsız sonuçlar: dizi biçimi Sil (delete []) bir nesne üzerinde ve bir dizi üzerinde silme formülü biçimini kullanarak.
+Aşağıdaki iki durum tanımsız sonuçlar üretir: bir nesnede Delete () dizi formunu kullanarak`delete []`ve dizi üzerinde Delete () dizi olmayan formunu kullanarak.
 
 ## <a name="example"></a>Örnek
 
-Kullanım örnekleri **Sil**, bkz: [new işleci](../cpp/new-operator-cpp.md).
+**Delete**kullanma örnekleri için, bkz. [New işleci](../cpp/new-operator-cpp.md).
 
-## <a name="how-delete-works"></a>Delete nasıl çalışır
+## <a name="how-delete-works"></a>Silme nasıl kullanılır?
 
-Delete işlecinin işlevi çağıran **delete işleci**.
+Delete işleci, **Delete işlev işlecini**çağırır.
 
-Sınıf türündeki nesneler için ([sınıfı](../cpp/class-cpp.md), [yapı](../cpp/struct-cpp.md), veya [birleşim](../cpp/unions.md)), genel delete işleci çağrılır. Sınıf türü nesneler için ifadeyi silmenin birli kapsam çözümleme işleci (:) ile başlıyorsa ayırmayı kaldırma işlevinin adını genel kapsamda çözülür. Aksi takdirde, delete işleci (işaretçi null değilse) belleğini önce nesnenin yok Edicisi çağırır. Delete işleci, sınıf başına temelinde tanımlanabilir; belirli bir sınıfın tür tanımı yok ise, global işleci silme çağrılır. Sanal bir yıkıcı statik türü olan bir sınıf nesnesi ayırması için ifadeyi silmenin kullandıysanız, ayırmayı kaldırma işlevi nesne dinamik türden sanal yıkıcı çözümlenir.
+Sınıf türü olmayan nesneler için ([Class](../cpp/class-cpp.md), [struct](../cpp/struct-cpp.md)veya [Union](../cpp/unions.md)), genel delete işleci çağrılır. Sınıf türündeki nesneler için, DELETE ifadesi birli kapsam çözümleme işleci (::) ile başlıyorsa, ayırmayı kaldırma işlevinin adı genel kapsamda çözümlenir. Aksi takdirde, delete işleci, bellek ayırmayı yapmadan önce bir nesne için yıkıcıyı çağırır (işaretçi null değilse). Delete işleci sınıf başına ayrı olarak tanımlanabilir; belirli bir sınıf için böyle bir tanım yoksa, genel işleç silme işlemi çağrılır. Statik türünün sanal yok edicisi olan bir sınıf nesnesini serbest bırakmak için Delete ifadesi kullanılırsa, ayırmayı kaldırma işlevi nesnenin dinamik türünün sanal yıkıcısı aracılığıyla çözümlenir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Birli İşleçli İfadeler](../cpp/expressions-with-unary-operators.md)<br/>
-[Anahtar Sözcükler](../cpp/keywords-cpp.md)<br/>
+[anahtar sözcükler](../cpp/keywords-cpp.md)<br/>
 [new ve delete İşleçleri](../cpp/new-and-delete-operators.md)

@@ -1124,16 +1124,7 @@
                 - name: Visual Studio'daki NMAKE projeleri
                   href: build/reference/creating-a-makefile-project.md
                 - name: NMAKE Çalıştırma
-                  expanded: false
-                  items:
-                    - name: NMAKE Çalıştırma
-                      href: build/reference/running-nmake.md
-                    - name: NMAKE seçenekleri
-                      href: build/reference/nmake-options.md
-                    - name: Tools.ini ve NMAKE
-                      href: build/reference/tools-ini-and-nmake.md
-                    - name: NMAKE çıkış kodları
-                      href: build/reference/exit-codes-from-nmake.md
+                  href: build/reference/running-nmake.md
                 - name: Derleme görevleri dosyası içeriği
                   expanded: false
                   items:
