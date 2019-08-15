@@ -8,12 +8,12 @@ helpviewer_keywords:
 - delete keyword [C++], deallocating objects
 - delete keyword [C++]
 ms.assetid: de39c900-3f57-489c-9598-dcb73c4b3930
-ms.openlocfilehash: d6e1be0b06beed8cf68a1ec90571281b592af21d
-ms.sourcegitcommit: db1ed91fa7451ade91c3fb76bc7a2b857f8a5eef
+ms.openlocfilehash: 3b00bf78d286ba530dee85240236a2a9ea171113
+ms.sourcegitcommit: a146b169664c001406a0cccc7fbda1b8d7be5078
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "68980462"
+ms.lasthandoff: 08/14/2019
+ms.locfileid: "69024642"
 ---
 # <a name="delete-operator-c"></a>delete İşleci (C++)
 
@@ -21,7 +21,8 @@ Bellek bloğunu kaldırır.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> [`::`] `delete` *Cast ifadesi* [`::`] Cast`delete []` *ifadesi*
+> [`::`] `delete` *Cast ifadesi*\
+> [`::`] `delete []` *Cast ifadesi*
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -35,7 +36,7 @@ delete MyDialog;
 
 **Yeni** ile ayrılmamış bir nesnenin işaretçisi üzerinde **Delete** kullanılması öngörülemeyen sonuçlara neden olur. Ancak, 0 değeriyle bir işaretçi üzerinde **Delete** kullanabilirsiniz. Bu sağlama, **Yeni** hata durumunda 0 döndürdüğünde, başarısız olan **Yeni** bir işlemin sonucunun silinmesinin zararsız olduğu anlamına gelir. Daha fazla bilgi için bkz. [New ve delete işleçleri](../cpp/new-and-delete-operators.md).
 
-**New** ve **Delete** işleçleri diziler dahil yerleşik türler için de kullanılabilir. `pointer` bir diziye başvuruyorsa, `pointer` öncesinde boş köşeli ayraçlar yerleştirin.
+**New** ve **Delete** işleçleri diziler dahil yerleşik türler için de kullanılabilir. Bir diziye `pointer`başvuruyorsa, önüne boş köşeli ayraçlar (`[]`) yerleştirin: `pointer`
 
 ```cpp
 int* set = new int[100];
@@ -89,10 +90,10 @@ Aşağıdaki iki durum tanımsız sonuçlar üretir: bir nesnede Delete () dizi 
 
 Delete işleci, **Delete işlev işlecini**çağırır.
 
-Sınıf türü olmayan nesneler için ([Class](../cpp/class-cpp.md), [struct](../cpp/struct-cpp.md)veya [Union](../cpp/unions.md)), genel delete işleci çağrılır. Sınıf türündeki nesneler için, DELETE ifadesi birli kapsam çözümleme işleci (::) ile başlıyorsa, ayırmayı kaldırma işlevinin adı genel kapsamda çözümlenir. Aksi takdirde, delete işleci, bellek ayırmayı yapmadan önce bir nesne için yıkıcıyı çağırır (işaretçi null değilse). Delete işleci sınıf başına ayrı olarak tanımlanabilir; belirli bir sınıf için böyle bir tanım yoksa, genel işleç silme işlemi çağrılır. Statik türünün sanal yok edicisi olan bir sınıf nesnesini serbest bırakmak için Delete ifadesi kullanılırsa, ayırmayı kaldırma işlevi nesnenin dinamik türünün sanal yıkıcısı aracılığıyla çözümlenir.
+Sınıf türü olmayan nesneler için ([Class](../cpp/class-cpp.md), [struct](../cpp/struct-cpp.md)veya [Union](../cpp/unions.md)), genel delete işleci çağrılır. Sınıf türündeki nesneler için, DELETE ifadesi birli kapsam çözümleme işleci (`::`) ile başlıyorsa, ayırmayı kaldırma işlevinin adı genel kapsamda çözümlenir. Aksi takdirde, delete işleci, bellek ayırmayı yapmadan önce bir nesne için yıkıcıyı çağırır (işaretçi null değilse). Delete işleci sınıf başına ayrı olarak tanımlanabilir; belirli bir sınıf için böyle bir tanım yoksa, genel işleç silme işlemi çağrılır. Statik türünün sanal yok edicisi olan bir sınıf nesnesini serbest bırakmak için Delete ifadesi kullanılırsa, ayırmayı kaldırma işlevi nesnenin dinamik türünün sanal yıkıcısı aracılığıyla çözümlenir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Birli İşleçli İfadeler](../cpp/expressions-with-unary-operators.md)<br/>
-[anahtar sözcükler](../cpp/keywords-cpp.md)<br/>
+[Birli İşleçli İfadeler](../cpp/expressions-with-unary-operators.md)\
+[Lerimi](../cpp/keywords-cpp.md)\
 [new ve delete İşleçleri](../cpp/new-and-delete-operators.md)
