@@ -1,21 +1,21 @@
 ---
-title: Denetim (C++ COM özniteliği)
+title: Denetim (C++ com özniteliği)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.control
 helpviewer_keywords:
 - Control attribute
 ms.assetid: 3d046bb2-4afe-4cb8-a762-233b296e1975
-ms.openlocfilehash: 223acf774d1cc90d84aed2d0d0c8cb59fc778fa1
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 12cf98b49b43b7a67834ea5401994ecdc749aa3b
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62148282"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69501773"
 ---
-# <a name="control"></a> denetimi
+# <a name="control"></a>denetimi
 
-Kullanıcı tanımlı tür bir denetimi olduğunu belirtir.
+Kullanıcı tanımlı türün bir denetim olduğunu belirtir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -25,7 +25,7 @@ Kullanıcı tanımlı tür bir denetimi olduğunu belirtir.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Denetimi** özniteliği gelir [coclass'ı](coclass.md) özniteliği. **Denetimi** C++ özniteliği ile aynı işlevlere sahip [denetimi](/windows/desktop/Midl/control) MIDL özniteliği.
+**Denetim** özniteliği [coclass](coclass.md) özniteliğini belirtir. **Denetim** C++ özniteliği [Control](/windows/win32/Midl/control) MIDL özniteliğiyle aynı işlevselliğe sahiptir.
 
 ## <a name="example"></a>Örnek
 
@@ -50,12 +50,12 @@ class CTest : public ICustom {};
 
 |||
 |-|-|
-|**İçin geçerlidir**|**sınıf**, **yapısı**|
+|**Uygulama hedefi**|**sınıf**, **Yapı**|
 |**Tekrarlanabilir**|Hayır|
-|**Gerekli öznitelikleri**|Yok.|
+|**Gerekli öznitelikler**|Yok.|
 |**Geçersiz öznitelikler**|Yok.|
 
-Öznitelik bağlamları hakkında daha fazla bilgi için bkz: [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
+Öznitelik bağlamları hakkında daha fazla bilgi için bkz. [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

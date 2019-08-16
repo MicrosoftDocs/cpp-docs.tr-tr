@@ -6,88 +6,88 @@ f1_keywords:
 helpviewer_keywords:
 - language strings
 ms.assetid: bbee63b1-af0b-4e44-9eaf-dd3e265c05fd
-ms.openlocfilehash: 143f06a0cf22265734d6d77f8fca4efd5ac3031b
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: a9e6eaa65516b5b49022526f24e220dec83b2c26
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62343166"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69500069"
 ---
 # <a name="language-strings"></a>Dil Dizeleri
 
-[Setlocale](../c-runtime-library/reference/setlocale-wsetlocale.md) ve [_create_locale](../c-runtime-library/reference/create-locale-wcreate-locale.md) işlevleri Unicode kod sayfası kullanmayın işletim sistemlerinde Windows NLS API desteklenen dilleri kullanabilirsiniz. İşletim sistemi sürümü tarafından desteklenen dillerin bir listesi için bkz. [ek A: Ürün davranışı](https://msdn.microsoft.com/library/cc233982.aspx) [MS-LCID] içinde: Windows dil kodu tanımlayıcı (LCID) başvuru. Dil dizesi değerleri olabilir **dil** ve **dil etiketi** sütunlarının desteklenen dillerin listesi. Kullanılabilen yerel veri adları ve ilgili değerleri numaralandırır kod örneği için bkz: [NLS: Ad tabanlı API'ler örnek](/windows/desktop/intl/nls--name-based-apis-sample).
+[Setlocale](../c-runtime-library/reference/setlocale-wsetlocale.md) ve [_create_locale](../c-runtime-library/reference/create-locale-wcreate-locale.md) işlevleri, Unicode kod sayfasını kullanmayan işletim sistemlerinde Windows nls API 'si tarafından desteklenen dilleri kullanabilir. İşletim sistemi sürümüne göre desteklenen dillerin listesi için bkz [. ek a: [MS](https://msdn.microsoft.com/library/cc233982.aspx) -LCID] içinde ürün davranışı: Windows dil kodu tanımlayıcısı (LCıD) başvurusu. Dil dizesi, desteklenen diller listesinin **dil** ve **Dil etiketi** sütunlarındaki değerlerden herhangi biri olabilir. Kullanılabilir yerel ayar adlarını ve ilgili değerleri gösteren bir kod örneği için bkz [. NLS: Ad tabanlı API 'Ler örneği](/windows/win32/intl/nls--name-based-apis-sample).
 
-## <a name="additional-supported-language-strings"></a>Ek desteklenen dil dizeleri
+## <a name="additional-supported-language-strings"></a>Desteklenen ek dil dizeleri
 
-Microsoft C çalışma zamanı kitaplığı uygulaması da bu dil dizeleri destekler:
+Microsoft C çalışma zamanı kitaplığı uygulamasında da bu dil dizeleri desteklenir:
 
 |Dil dizesi|Eşdeğer yerel ayar adı|
 |---------------------|----------------------------|
-|American|en-US|
+|İngilizcesi|en-US|
 |Amerikan İngilizcesi|en-US|
-|Amerikan İngilizcesi|en-US|
-|Avustralya|tr-AU|
-|Belçika|NL-olabilir|
-|Kanada|CA tr|
+|Amerikan-İngilizce|en-US|
+|ticari|tr-AU|
+|Belçika|nl-|
+|alı|CA tr|
 |CHH|zh-HK|
-|Chi|zh-SG|
+|kikare dağılımı|zh-SG|
 |Çince|zh|
-|chinese-hongkong|zh-HK|
-|Çince (Basitleştirilmiş)|zh-CN|
+|Çince-Hongkong|zh-HK|
+|Çince-Basitleştirilmiş|zh-CN|
 |Çince-Singapur|zh-SG|
-|Çince (Geleneksel)|zh-TW|
-|Hollanda dili-Belçika|NL-olabilir|
-|İngilizce-Amerika|en-US|
+|Çince-Geleneksel|zh-TW|
+|Felemenkçe-Belçika|nl-|
+|İngilizce-American|en-US|
 |İngilizce-Avustralya|tr-AU|
-|İngilizce-belize|tr BZ|
+|İngilizce-Belize|En-BZ|
 |İngilizce-can|CA tr|
-|İngilizce-Karayipler|tr 029|
-|İngilizce-Bitir|IE tr|
-|İngilizce-Jamaika|JM tr|
-|english-nz|tr NZ|
-|İngilizce-Güney Afrika|tr-ZA|
-|İngilizce-trinidad ve tobago|tr TT|
-|İngilizce-Birleşik Krallık|en-GB|
+|İngilizce-Karayipler|En-029|
+|İngilizce-ire|IE tr|
+|İngilizce-Jamaika|En-JM|
+|İngilizce-NZ|tr NZ|
+|İngilizce-Güney Afrika|En-ZA|
+|İngilizce-Trinidad y Tobago|En-TT|
+|İngilizce-UK|en-GB|
 |İngilizce-ABD|en-US|
 |İngilizce-ABD|en-US|
-|Fransızca-Belçika|FR-olabilir|
-|French-Canadian|fr-CA|
-|Fransızca-Lüksemburg|FR-LU|
+|Fransızca-Belçika|fr-of|
+|Fransızca-Kanada|fr-CA|
+|Fransızca-Lüksemburg|fr-LU|
 |Fransızca-İsviçre|FR-CH|
 |Almanca-Avusturya|de-AT|
-|Almanca-lichtenstein|de-LI|
+|Almanca-Lichtenstein|de LI|
 |Almanca-Lüksemburg|de-LU|
 |Almanca-İsviçre|de-CH|
-|İrlanda dili-İngilizce|IE tr|
-|İtalyanca-İsviçre|BT CH|
-|Norveç dili|Yok|
-|Norveççe bokmal|NB-yok|
-|Norveççe nynorsk|nn yok|
+|İrlanda Dili-İngilizce|IE tr|
+|İtalyanca-İsviçre|It-CH|
+|Norveç dili|eşleşen|
+|Norveççe-Bokmal|NB-yok|
+|Norveççe-Nynorsk|nn-Hayır|
 |Portekizce-Brezilya|pt-BR|
 |İspanyolca-Arjantin|es-AR|
-|İspanyolca-Bolivya|ES BO|
-|İspanyolca-Şili|ES-CL|
-|İspanyolca-Kolombiya|ES-CO|
+|İspanyolca-Bolivya|es-BO|
+|İspanyolca-Şili|es-CL|
+|İspanyolca-Kolombiya|es-CO|
 |İspanyolca-Kosta Rika|es-CR|
-|İspanyolca-Dominik Cumhuriyeti|ES yapın|
-|İspanyolca-Ekvador|ES-EC|
-|İspanyolca-el salvador|es-SV|
-|İspanyolca-guatemala|ES-GT|
-|İspanyolca-honduras|ES HN|
+|İspanyolca-Dominik Cumhuriyeti|es-DO|
+|İspanyolca-Ekvador|es-EC|
+|İspanyolca-El Salvador|es-ZF|
+|İspanyolca-Guatemala|es-GT|
+|İspanyolca-Honduras|es-HN|
 |İspanyolca-Meksika|es-MX|
 |İspanyolca-modern|es-ES|
-|İspanyolca-Nikaragua|ES-nı|
-|İspanyolca-panama|ES-PA|
-|İspanyolca-paraguay|ES-Kopyala|
-|İspanyolca-peru|ES PE|
-|İspanyolca-Porto Riko|ES-çekme isteği|
-|İspanyolca-uruguay|es-UY|
-|spanish-venezuela|ES Kaydet|
-|İsveççe-Finlandiya|sv-FI|
-|İsviçre|de-CH|
-|Birleşik Krallık|en-GB|
+|İspanyolca-Nikaragua|es-nı|
+|İspanyolca-Panama|es-PA|
+|İspanyolca-Paraguay|es-Kopyala|
+|İspanyolca-Peru|es-PE|
+|İspanyolca-Porto Riko|es-PR|
+|İspanyolca-Uruguay|es-UY|
+|İspanyolca-Venezuela|es-VE|
+|İsveççe-Finlandiya|ZF-FI|
+|Alman|de-CH|
+|tr|en-GB|
 |ABD|en-US|
-|USA|en-US|
+|ABD|en-US|
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -8,16 +8,16 @@ helpviewer_keywords:
 - -ALLOWISOLATION linker option
 - /ALLOWISOLATION linker option
 ms.assetid: 6d41851e-b3c1-4bdf-beaa-031773089d6f
-ms.openlocfilehash: fe76e0d40a2a19a002136a7e095875ad2903d434
-ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
+ms.openlocfilehash: 7c799f3d44428643bccc2869255ffa4e9d194d70
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "64341076"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69493131"
 ---
 # <a name="allowisolation-manifest-lookup"></a>/ALLOWISOLATION (Bildirim Arama)
 
-Bildirim arama davranışını belirtir.
+Bildirim arama için davranışı belirtir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -27,23 +27,23 @@ Bildirim arama davranışını belirtir.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**/ALLOWISOLATION:No** DLL'ler yüklü hiçbir bildirim olduysa olarak gösterir ve ayarlamak bağlayıcı neden `IMAGE_DLLCHARACTERISTICS_NO_ISOLATION` isteğe bağlı üst bilgisinde ait bit `DllCharacteristics` alan.
+**/Allowisolation: Hayır** , hiçbir bildirim olmadığı gibi dll 'lerin yüklendiğini ve bağlayıcının isteğe bağlı üst bilgi `IMAGE_DLLCHARACTERISTICS_NO_ISOLATION` `DllCharacteristics` alanında biti ayarlamaya neden olduğunu gösterir.
 
-**/ ALLOWISOLATION** aramalar ve yükleri bildirim işletim sisteminin neden olur.
+**/Allowısolation** , işletim sisteminin bildirim aramalarını ve yüklemelerini sağlar.
 
-**/ ALLOWISOLATION** varsayılandır.
+**/Allowisolation** varsayılandır.
 
-Bir yürütülebilir dosya için yalıtım devre dışı bırakıldığında, yeni oluşturulan işlem için bir uygulama bildirimi bulmak Windows Yükleyici denemez. Yeni işlem olsa bile bir bildirim yürütülebilir veya yürütülebilir dosya adı ile aynı dizine yerleştirilmiştir içinde varsayılan etkinleştirme bağlamı olmaz <em>yürütülebilir dosya adı</em>**. exe.manifest**.
+Bir yürütülebilir dosya için yalıtım devre dışı bırakıldığında, Windows yükleyicisi yeni oluşturulan işlem için bir uygulama bildirimi bulmaya çalışmaz. Yürütülebilir dosya içinde bir bildirim olsa veya çalıştırılabilir <em>-adı</em> **. exe. manifest**adlı yürütülebilir dosya ile aynı dizine yerleştirilmiş olsa bile, yeni işlem varsayılan etkinleştirme bağlamına sahip olmayacaktır.
 
-Daha fazla bilgi için [bildirim dosyaları başvuru](/windows/desktop/SbsCs/manifest-files-reference).
+Daha fazla bilgi için bkz. [bildirim dosyaları başvurusu](/windows/win32/SbsCs/manifest-files-reference).
 
 ### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio geliştirme ortamındaki bu bağlayıcı seçeneğini ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
+1. Projenin **Özellik sayfaları** iletişim kutusunu açın. Ayrıntılar için bkz. [Visual C++ Studio 'da derleyici ve derleme özelliklerini ayarlama](../working-with-project-properties.md).
 
-1. Seçin **yapılandırma özellikleri** > **bağlayıcı** > **bildirim dosyası** özellik sayfası.
+1. **Yapılandırma özellikleri** > bağlayıcıbildirim > **dosyası** özellik sayfasını seçin.
 
-1. Değiştirme **izin yalıtım** özelliği.
+1. Yalıtıma **Izin ver** özelliğini değiştirin.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

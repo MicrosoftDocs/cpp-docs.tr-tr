@@ -1,21 +1,21 @@
 ---
-title: ms_union (C++ COM özniteliği)
+title: ms_union (C++ com özniteliği)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.ms_union
 helpviewer_keywords:
 - ms_union attribute
 ms.assetid: bb548689-6962-457e-af56-8ffdf68987eb
-ms.openlocfilehash: 3f83eeff4fd9b2177b862b101b7a2d4faeaaab87
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 26207c3c2c20fb039eb39e26f4d24e141c4dff07
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62409115"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69514372"
 ---
-# <a name="msunion"></a>ms_union
+# <a name="ms_union"></a>ms_union
 
-Nonencapsulated birleşimler ağ veri gösterimi hizalamasını denetler.
+Kapsüllenolmayan birleşimlerin ağ verisi gösterimi hizalamasını denetler.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -25,11 +25,11 @@ Nonencapsulated birleşimler ağ veri gösterimi hizalamasını denetler.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Ms_union** C++ özniteliği ile aynı işlevlere sahip [ms_union](/windows/desktop/Midl/ms-union-attrib) MIDL özniteliği.
+**Ms_union** C++ özniteliği, [ms_union](/windows/win32/Midl/ms-union-attrib) MIDL özniteliğiyle aynı işlevselliğe sahiptir.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki kodda gösterildiği yerleşimini **ms_union**:
+Aşağıdaki kod **ms_union**yerleşimini gösterir:
 
 ```cpp
 // cpp_attr_ref_ms_union.cpp
@@ -60,12 +60,12 @@ __interface IFireTabCtrl {
 
 |||
 |-|-|
-|**İçin geçerlidir**|Nonencapsulated birleşimler|
+|**Uygulama hedefi**|Kapsüllenmiş olmayan birleşimler|
 |**Tekrarlanabilir**|Hayır|
-|**Gerekli öznitelikleri**|None|
+|**Gerekli öznitelikler**|Yok.|
 |**Geçersiz öznitelikler**|`dispinterface`|
 
-Daha fazla bilgi için [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
+Daha fazla bilgi için bkz. [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
