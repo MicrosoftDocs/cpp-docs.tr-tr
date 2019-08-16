@@ -240,7 +240,7 @@
             - name: Kayıt Şirketi betiklerini oluşturma
               href: creating-registrar-scripts.md
             - name: Backus-Naur formu (BNF) söz dizimini anlama
-              href: understanding-backus-nauer-form-bnf-syntax.md
+              href: understanding-backus-naur-form-bnf-syntax.md
             - name: Ayrıştırma ağaçlarını anlama
               href: understanding-parse-trees.md
             - name: Kayıt defteri betik oluşturma örnekleri
